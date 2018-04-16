@@ -1,0 +1,16 @@
+- name: Aloittaminen
+  href: 'gettingstarted.yml#step-0'
+- name: Tietojen hankkiminen
+  href: 'gettingdata.yml#step-0'
+- name: Mallintaminen
+  href: 'modeling.yml#step-0'
+- name: Visualisoinnit
+  href: 'visualizations.yml#step-0'
+- name: Tietojen tutkiminen
+  href: 'exploringdata.yml#step-0'
+- name: Power BI ja Excel
+  href: 'powerbiandexcel.yml#step-0'
+- name: Julkaiseminen ja jakaminen
+  href: 'publishingandsharing.yml#step-0'
+- name: Johdanto DAXiin
+  href: 'introductiontodax.yml#step-0'
