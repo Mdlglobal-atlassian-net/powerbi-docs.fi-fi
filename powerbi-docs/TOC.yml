@@ -846,10 +846,12 @@
           href: desktop-send-smile-privacy-statement.md
     - name: Vianmääritys
       items:
-        - name: Access-tietokantojen ja Excel-laskentataulukoiden tuomisen ongelmien korjaaminen Power BI Desktopissa ja Power Queryssa
-          href: desktop-access-database-errors.md
+        - name: Power BI Desktopin sisäänkirjautumisongelmien korjaaminen
+          href: desktop-troubleshooting-sign-in.md
         - name: Power BI Desktopin käynnistysongelmien korjaaminen
           href: desktop-error-launching-desktop.md
+        - name: Access-tietokantojen ja Excel-laskentataulukoiden tuomisen ongelmien korjaaminen Power BI Desktopissa ja Power Queryssa
+          href: desktop-access-database-errors.md
 - name: Power BI -mobiilisovellukset
   items:
     - name: Aloittaminen
@@ -1070,9 +1072,9 @@
           href: 'https://go.microsoft.com/fwlink/?linkid=848709'
         - name: Suorituskykyilmaisimien käyttö
           href: 'https://go.microsoft.com/fwlink/?linkid=849021'
-        - name: Tuetut tietolähteet
+        - name: Power BI -raportin (.pbix) tietolähteet
           href: report-server/data-sources.md
-        - name: Tietolähteisiin yhdistäminen
+        - name: Sivutetun raportin (.rdl) tietolähteet
           href: report-server/connect-data-sources.md
         - name: 'Jaettujen tietojoukkojen käyttö OData-syötteinä '
           href: report-server/access-dataset-odata.md
