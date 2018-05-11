@@ -15,14 +15,14 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 02/05/2018
+ms.date: 05/02/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: d0386f384698e0e66ce927466975eca7f25656db
-ms.sourcegitcommit: ae4d771b883b654358a6a94dd784ea9bdf3d3aa3
+ms.openlocfilehash: dbf8edbc884848249ed215211440d6a88aa13f53
+ms.sourcegitcommit: f679c05d029ad0765976d530effde744eac23af5
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="using-the-analytics-pane-in-power-bi-desktop"></a>Analytiikka-ruudun käyttäminen Power BI Desktopissa
 **Power BI Desktopin** **Analytiikka**-ruudussa voit lisätä dynaamisia *viiteviivoja* visualisointeihin ja määrittää kohdistuksen tärkeille trendeille tai merkityksellisille tiedoille. **Analytiikka**-ruutu sijaitsee Power BI Desktopin **Visualisoinnit**-alueella.
@@ -117,7 +117,7 @@ Lopuksi tulee huomioida, että **Analytiikka**-ruudusta valittavia dynaamisia vi
 Prosenttipisteviiva on käytettävissä vain, kun käytetään tuotuja tietoja **Power BI Desktopissa** tai kun muodostetaan reaaliaikainen yhteys malliin palvelimessa, jossa on käytössä **Analysis Service 2016** tai uudempi, **Azure Analysis Services** -tietokantaan tai Power BI -palvelun tietojoukkoon. 
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
-Voit tehdä kaikenlaista Power BI Desktopin avulla. Saat lisätietoja sen toiminnoista seuraavista resursseista:
+Voit tehdä kaikenlaista Power BI Desktopilla. Saat lisätietoja sen toiminnoista seuraavista resursseista:
 
 * [Power BI Desktopin uudet ominaisuudet](desktop-latest-update.md)
 * [Power BI Desktopin lataaminen](desktop-get-the-desktop.md)
