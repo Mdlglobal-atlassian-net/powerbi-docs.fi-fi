@@ -17,11 +17,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 01/11/2018
 ms.author: maghan
-ms.openlocfilehash: c6b9edb929934a80886874fe421f11cc7462dbd8
-ms.sourcegitcommit: 6e693f9caf98385a2c45890cd0fbf2403f0dbb8a
+ms.openlocfilehash: 779ae9a6df285b58c83021f87ed593af9ec0b3fb
+ms.sourcegitcommit: 3f2f254f6e8d18137bae879ddea0784e56b66895
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="embed-a-power-bi-dashboard-tile-or-report-into-your-application"></a>Power BI -koontinäytön, -ruudun tai -raportin upottaminen sovellukseen
 Lue, miten voit integroida tai upottaa koontinäytön, ruudun tai raportin verkkosovellukseen Power BI .NET SDK:n ja Power BI JavaScript -ohjelmointirajapinnan avulla upotuksen aikana asiakkaille. Tämä on yleensä ISV-skenaario.
@@ -126,7 +126,7 @@ Report report = reports.Value.FirstOrDefault();
 Sinun on luotava upotettu tunnus, jota voidaan käyttää JavaScript-ohjelmointirajapinnasta. Upotettu tunnus liittyy erityisesti upotettavaan kohteeseen. Tämä tarkoittaa sitä, että kun upotat tietyn Power BI -sisällön, sinun on luotava sille uusi upotettu tunnus. Katso lisätietoja tästä ja käytettävästä **käyttöoikeustasosta** artikkelista [GenerateToken-ohjelmointirajapinta](https://msdn.microsoft.com/library/mt784614.aspx).
 
 > [!IMPORTANT]
-> Koska upotetut tunnukset on tarkoitettu vain kehitystestaukseen, Power BI -päätilin luomien upotettujen tunnusten määrää on rajoitettu. [Sinun on ostettava kapasiteettia](https://docs.microsoft.com/power-bi/developer/embedded-faq#technical) upotusskenaarioiden tuottamiseksi. Kun kapasiteettia on ostettu, voit luoda upotettuja tunnuksia rajattomasti.
+> Koska upotetut tunnukset on tarkoitettu vain kehitystestaukseen, Power BI -päätilin luomien upotettujen tunnusten määrää on rajoitettu. [Sinun on ostettava kapasiteettia](https://docs.microsoft.com/power-bi/developer/embedded-faq#technical) upotusskenaarioiden tuottamiseksi. Kun kapasiteettia on ostettu, voit luoda upotettuja tunnuksia rajattomasti. [Hanki käytettävissä olevia ominaisuuksia](https://msdn.microsoft.com/en-us/library/mt846473.aspx) -kohdassa voit tarkistaa, kuinka monta maksutonta upotettua tunnusta on käytetty.
 
 Malli tästä on saatavilla artikkelin [Organisaation mallin upotus](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/App%20Owns%20Data) kohdasta **Controllers\HomeController.cs**.
 

@@ -18,11 +18,11 @@ ms.workload: powerbi
 ms.date: 03/09/2018
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: bb0800dc6a61efe1d7b331a6049460275b4412a3
-ms.sourcegitcommit: 8552a34df8e6141eb704314c1a019992901d6e78
+ms.openlocfilehash: 344e6ecc31748d58f0803f95aed53badfa6be4f2
+ms.sourcegitcommit: 3f2f254f6e8d18137bae879ddea0784e56b66895
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/08/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="use-kerberos-for-sso-single-sign-on-from-power-bi-to-on-premises-data-sources"></a>Kerberoksen käyttäminen SSO:ta (kertakirjautumista) varten Power BI:stä paikallisiin tietolähteisiin
 Voit saada saumattoman kertakirjautumisen, jolloin Power BI -raportit ja -koontinäytöt päivitetään paikallisista tiedoista, määrittämällä Kerberoksen paikalliseen tietoyhdyskäytävään. Paikallinen tietoyhdyskäytävä helpottaa kertakirjautumista (SSO) DirectQueryllä, jota se käyttää yhteyden muodostamiseen paikallisiin tietolähteisiin.
@@ -64,19 +64,18 @@ Seuraavassa on lisätietoja näistä vaiheista:
 
 
 > [!NOTE]
-> Jos haluat ottaa SAP HANAn kertakirjautumisen käyttöön, sinun on varmistettava, että seuraavat SAP HANA -kohtaiset määritykset täyttyvät SAP:n osalta:
-> 1. Varmista, että SAP HANA -palvelin käyttää vaadittua vähimmäisversiota, joka riippuu SAP HANA -palvelimesi käyttöympäristötasosta:
-> * [HANA 2 SP 01 Rev 012.03](https://launchpad.support.sap.com/#/notes/2557386)
-> * [HANA 2 SPS 02 Rev 22](https://launchpad.support.sap.com/#/notes/2547324)
-> * [HANA 1 SP 12 Rev 122.13](https://launchpad.support.sap.com/#/notes/2528439)
+> SSO:n ottaminen käyttöön SAP HANAssa:
 >
-> 2. Asenna yhdyskäytävätietokoneeseen SAP:n uusin HANA ODBC -ohjain.  Vähimmäisversio on HANA ODBC 2.00.020.00 elokuulta 2017.
+> - Varmista, että SAP HANA -palvelin käyttää vaadittua vähimmäisversiota, joka riippuu SAP HANA -palvelimesi käyttöympäristötasosta:
+>     - [HANA 2 SP 01 Rev 012.03](https://launchpad.support.sap.com/#/notes/2557386)
+>     - [HANA 2 SPS 02 Rev 22](https://launchpad.support.sap.com/#/notes/2547324)
+>     - [HANA 1 SP 12 Rev 122.13](https://launchpad.support.sap.com/#/notes/2528439)
 >
-> Seuraavista linkeistä SAP:n korjauksiin ja päivityksiin voi olla hyötyä. Huomaa, että sinun on kirjauduttava seuraaviin resursseihin SAP:n tukitililläsi ja että SAP voi muuttaa tai päivittää näitä linkkejä.
-> 
-> * [HANA 2 SP 01 Rev 012.03](https://launchpad.support.sap.com/#/notes/2557386) 
-> * [HANA 2 SPS 02 Rev 22](https://launchpad.support.sap.com/#/notes/2547324) 
-> * [HANA 1 SP 12 Rev 122.13](https://launchpad.support.sap.com/#/notes/2528439)
+> - Asenna yhdyskäytävätietokoneeseen SAP:n uusin HANA ODBC -ohjain.  Vähimmäisversio on HANA ODBC 2.00.020.00 elokuulta 2017.
+>
+> Lisätietoja kertakirjautumisen määrittämisestä SAP HANAssa Kerberoksen avulla on aiheessa [Single Sign-on Using Kerberos (Kertakirjautuminen Kerberoksen avulla)](https://help.sap.com/viewer/b3ee5778bc2e4a089d3299b82ec762a7/2.0.03/en-US/1885fad82df943c2a1974f5da0eed66d.html) SAP HANA -suojausoppaassa. Sivun linkit tarjoavat myös lisätietoja. Katso erityisesti SAP Note 1837331 – HOWTO HANA DBSSO Kerberos/Active Directory]. 
+>
+>
 
 
 ## <a name="errors-from-an-insufficient-kerberos-configuration"></a>Puutteellisesta Kerberos-määrityksestä johtuvat virheet

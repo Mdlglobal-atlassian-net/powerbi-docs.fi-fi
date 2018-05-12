@@ -1,6 +1,6 @@
 ---
 title: Power BI -raporttien tietolähteet Power BI -raporttipalvelimessa
-description: Power BI -raportteja voi yhdistää eri tietolähteisiin. Käytettävissä on eri tietolähteitä riippuen siitä, miten tietoja käytetään.
+description: Power BI -raportit (.pbix) voivat muodostaa yhteyden useisiin tietolähteisiin. Käytettävissä on eri tietolähteitä riippuen siitä, miten tietoja käytetään.
 services: powerbi
 documentationcenter: ''
 author: markingmyname
@@ -15,23 +15,22 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 04/02/2018
+ms.date: 04/23/2018
 ms.author: maghan
-ms.openlocfilehash: bc490834b215af45df1063fd06b94ed9b735d852
-ms.sourcegitcommit: 8132f7edc6879eda824c900ba90b29cb6b8e3b21
+ms.openlocfilehash: a32ef2e1e85b252a2a1071cb95c80149486c2604
+ms.sourcegitcommit: 3f2f254f6e8d18137bae879ddea0784e56b66895
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="power-bi-report-data-sources-in-power-bi-report-server"></a>Power BI -raporttien tietolähteet Power BI -raporttipalvelimessa
-Power BI -raportteja voi yhdistää eri tietolähteisiin. Käytettävissä on eri tietolähteitä riippuen siitä, miten tietoja käytetään. Tiedot voidaan tuoda tai tiedoille voidaan tehdä kyselyitä suoraan DirectQuerylla tai reaaliaikaisella SQL Server Analysis Services -yhteydellä.
+# <a name="power-bi-report-pbix-data-sources-in-power-bi-report-server"></a>Power BI -raporttien (.pbix) tietolähteet Power BI -raporttipalvelimessa
+Power BI -raportit voivat muodostaa yhteyden useisiin tietolähteisiin. Käytettävissä on eri tietolähteitä riippuen siitä, miten tietoja käytetään. Tiedot voidaan tuoda tai tiedoille voidaan tehdä kyselyitä suoraan DirectQuerylla tai reaaliaikaisella SQL Server Analysis Services -yhteydellä.
 
-Nämä tietotyypit koskevat Power BI -raportteja, joita käytetään Power BI -raporttipalvelimessa. Jos haluat lisätietoja tietolähteistä, joita tuetaan sivutetuissa raporteissa, tutustu ohjeartikkeliin [Reporting Servicesin tukemat tietolähteet](https://docs.microsoft.com/sql/reporting-services/report-data/data-sources-supported-by-reporting-services-ssrs).
+Nämä tietotyypit koskevat Power BI -raportteja, joita käytetään Power BI -raporttipalvelimessa. Jos haluat lisätietoja tietolähteistä, joita tuetaan sivutetuissa raporteissa (.rdl), tutustu ohjeartikkeliin [Reporting Servicesin tukemat tietolähteet](https://docs.microsoft.com/sql/reporting-services/report-data/data-sources-supported-by-reporting-services-ssrs).
 
 > [!IMPORTANT]
-> Kaikkien Power BI Desktop -raportin tietolähteiden täytyy olla tuettuja, jotta ajoitettu päivitys voidaan määrittää.
-> 
-> 
+> Kaikkien Power BI Desktop -raportin tietolähteiden on tuettava ajoitetun päivityksen määrittämistä.
+>  
 
 ## <a name="list-of-supported-data-sources"></a>Luettelo tuetuista tietolähteistä
 
@@ -216,7 +215,7 @@ Power BI -raporttipalvelin ei tue OAuth-pohjaista todennusta DirectQuerylle.
 
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
-Nyt kun tietolähteesi on valittu, voit [luoda sen tiedoista raportin](quickstart-create-powerbi-report.md).
+Nyt kun olet muodostanut yhteyden tietolähteeseen, voit [luoda Power BI -raportin](quickstart-create-powerbi-report.md) sen tiedoista.
 
-Onko sinulla muuta kysyttävää? [Voit kysyä kysymyksiäsi Power BI -yhteisössä](https://community.powerbi.com/)
+Onko sinulla muuta kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
 

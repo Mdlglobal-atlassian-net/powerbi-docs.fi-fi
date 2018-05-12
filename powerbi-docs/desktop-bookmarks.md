@@ -15,14 +15,14 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 03/06/2018
+ms.date: 04/24/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 1660f129ef5c93cf5aed5a3a5eda3c835e1885c1
-ms.sourcegitcommit: 65426de556cd7207cbc4f478198664e25c33a769
+ms.openlocfilehash: 492eed949fd47b8f057bc67b127ba774b2218887
+ms.sourcegitcommit: 3f2f254f6e8d18137bae879ddea0784e56b66895
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/30/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="use-bookmarks-to-share-insights-and-build-stories-in-power-bi"></a>Kirjanmerkkien avulla voit jakaa merkityksellisiä tietoja ja koostaa tarinoita Power BI:ssä 
 Käyttämällä **kirjanmerkkejä** Power BI:ssä voit tallentaa raporttisivun senhetkisen määritetyn näkymän suodatukset ja visualisointien tila mukaan lukien. Voit myöhemmin palata tähän tilaan valitsemalla tallennetun kirjanmerkin. 
@@ -69,6 +69,10 @@ Määritä raporttisivu sellaiseksi kuin haluat sen näkyvän kirjanmerkissä. K
 
 Kun olet lisännyt kirjanmerkin, saat sen näkyviin napsauttamalla sitä **Kirjanmerkit**-ruudussa. 
 
+Voit myös valita, käyttääkö kukin kirjanmerkki *tieto*-ominaisuuksia, kuten suodattimia ja osittajia, *näyttö*-ominaisuuksia, kuten korostus ja sen näkyvyys, ja sivun muutoksia, jotka esittävät sen sivun, joka oli näkyvissä lisättäessä kirjanmerkkiä. Nämä ominaisuudet ovat hyödyllisiä, kun haluat vaihtaa visualisointityyppien välillä kirjanmerkkien avulla – tässä tapauksessa haluat todennäköisesti poistaa käytöstä tieto-ominaisuudet, jotta suodattimia ei palauteta käyttäjien muuttaessa visualisointityyppejä. 
+
+Tee muutokset valitsemalla kirjanmerkin nimen vieressä olevan ellipsin edellisen kuvan mukaisesti ja valitsemalla valintaruudut tai poistamalla niiden valinta *Tiedot*-, *Näyttö*- ja muiden ohjausobjektien kohdalla. 
+
 ## <a name="arranging-bookmarks"></a>Kirjanmerkkien järjestäminen
 Kun luot kirjanmerkkejä, niiden luontijärjestys ei välttämättä ole sama kuin missä haluat esittää ne yleisöllesi. Se ei ole ongelma, sillä voit helposti muuttaa kirjanmerkkien järjestystä.
 
@@ -105,13 +109,13 @@ Kun kirjanmerkki lisätään, samalla tallennetaan myös kunkin objektin näkyvy
 On tärkeää huomata, että **osittajat** jatkavat raporttisivun suodattamista riippumatta siitä, ovatko ne näkyvissä. Voit luoda monia eri kirjanmerkkejä käyttämällä eri osittajan asetuksia, jolloin yhden ja saman raporttisivun saa näyttämään hyvin erilaiselta eri kirjanmerkeissä. Niissä voi myös korostaa eri tietoja.
 
 ## <a name="bookmarks-for-shapes-and-images"></a>Muotojen ja kuvien kirjanmerkit
-Kirjanmerkkeihin voi linkittää muotoja ja kuvia. Kun napsautat objektia, tämän ominaisuuden ansiosta näet siihen liittyvän kirjanmerkin. 
+Kirjanmerkkeihin voi linkittää muotoja ja kuvia. Kun napsautat objektia, tämän ominaisuuden ansiosta näet siihen liittyvän kirjanmerkin. Tämä voi olla erityisen hyödyllistä käsiteltäessä painikkeita; voit lukea lisätietoja [Power BI:n painikkeita](desktop-buttons.md) käsittelevässä artikkelissa. 
 
-Liitä kirjanmerkki objektin valitsemalla objekti ja sitten **Muotoile muoto** -ruudusta **Linkki** seuraavassa kuvassa esitetyllä tavalla.
+Liitä kirjanmerkki objektiin valitsemalla objekti ja laajentamalla **Muotoile muoto** -ruudussa **Toiminto**-osion seuraavassa kuvassa esitetyllä tavalla.
 
 ![Kirjanmerkkilinkin lisääminen objektiin](media/desktop-bookmarks/bookmarks_10.png)
 
-Kun otat **Linkki**-liukusäätimen **käyttöön**, voit valita, onko objekti on linkki vai kirjanmerkki. Jos valitset kirjanmerkin, voit valita, mihin kirjanmerkkiisi objekti on linkitetty.
+Kun otat **Toiminto**-liukusäätimen **käyttöön**, voit valita, onko objekti Takaisin-painike, kirjanmerkki vai Q&A-komento. Jos valitset kirjanmerkin, voit valita, mihin kirjanmerkkiisi objekti on linkitetty.
 
 Objekteihin linkitetyt kirjanmerkit avaavat monia hyödyllisiä mahdollisuuksia. Voit luoda visuaalisen sisällysluettelon raporttisivullesi tai tarjota samoista tiedoista erilaisia näkymiä, kuten visualisointityyppejä – vain objektia napsauttamalla.
 
@@ -138,9 +142,7 @@ Sen sijaan kun **korostus**tila valitaan visualisoinnin ellipsivalikosta, sivu n
 Jos kohdistus- tai korostustila on valittuna, kun kirjanmerkki lisätään, kyseinen tila säilytetään kirjanmerkissä.
 
 ## <a name="bookmarks-in-the-power-bi-service"></a>Kirjanmerkit Power BI -palvelussa
-Kun julkaiset vähintään yhden kirjanmerkin sisältävän raportin **Power BI -palveluun**, voit tarkastella ja käyttää näitä kirjanmerkkejä **Power BI -palvelussa**. Jokaiseen julkaistavaan raporttiin on luotava vähintään yksi kirjanmerkki ennen julkaisua, jotta kirjanmerkkiominaisuus olisi käytettävissä **Power BI -palvelussa**.
-
-Kun kirjanmerkit ovat käytettävissä raportissa, voit valita **Näytä > Valinta-ruutu** tai **Näytä > Kirjanmerkit-ruutu**, kun haluat nähdä jommankumman ruudun.
+Kun julkaiset vähintään yhden kirjanmerkin sisältävän raportin **Power BI -palveluun**, voit tarkastella ja käyttää näitä kirjanmerkkejä **Power BI -palvelussa**. Kun kirjanmerkit ovat käytettävissä raportissa, voit valita **Näytä > Valinta-ruutu** tai **Näytä > Kirjanmerkit-ruutu**, kun haluat nähdä jommankumman ruudun.
 
 ![Tarkastele Kirjanmerkit- ja Valinta-ruutuja Power BI -palvelussa](media/desktop-bookmarks/bookmarks_14.png)
 
@@ -151,11 +153,10 @@ Huomaa, että kirjanmerkkien selaaminen tapahtuu käyttämällä harmaata kirjan
 ## <a name="limitations-and-considerations"></a>Rajoitukset ja huomioitavat asiat
 Tähän versioon **kirjanmerkkitoiminnosta** liittyy tiettyjä rajoituksia ja huomioitavia asioita.
 
-* Mukautetut visualisoinnit eivät toimi kirjanmerkkien kanssa, jos ne ovat suodattimen *lähteenä*. Jos käytät mukautettuja visualisointeja sivun elementtien suodattamiseen (esimerkiksi chiclet-osittajaa), sivu voidaan suodattaa, mutta mukautettua visualisointia ei päivitetä näyttämään, miten sivu suodatetaan. 
-* Raporttiruudun ristiinkorostuksen tilaa *ei* tallenneta, kun luot kirjanmerkin. 
+* Useimmat mukautetut visualisoinnit toimivat yleensä hyvin kirjanmerkeissä. Jos kohtaat ongelmia kirjanmerkkien ja mukautetun visualisoinnin kanssa, ota yhteyttä kyseisen visualisoinnin tekijään ja pyydä häntä lisäämään kirjanmerkkituen visualisointiin. 
 * Jos lisäät visualisoinnin raporttisivulle kirjanmerkin luomisen jälkeen, visualisointi näkyy oletustilassaan. Tämä tarkoittaa myös sitä, että jos lisäät osittajan sivulle, jolle on aiemmin luotu kirjanmerkkejä, osittaja toimii oletustilassaan.
 * Visualisointien siirtely kirjanmerkin luomisen jälkeen näkyy kirjanmerkissä. 
-* Raportissa *on oltava* vähintään yksi kirjanmerkki, kun se julkaistaan **Power BI -palveluun**, jotta kirjanmerkit olisivat käytettävissä palvelussa. Tämä vaatimus koskee jokaista julkaisemaasi raporttia.
+
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 Seuraavissa artikkeleissa on lisätietoja ominaisuuksista, jotka muistuttavat kirjanmerkkejä tai toimivat niiden kanssa:

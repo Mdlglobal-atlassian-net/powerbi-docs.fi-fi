@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/05/2017
+ms.date: 04/23/2018
 ms.author: maghan
-ms.openlocfilehash: cc9a4c7a29ddb84e6230d42f31a9c6a0427008f1
-ms.sourcegitcommit: 6e693f9caf98385a2c45890cd0fbf2403f0dbb8a
+ms.openlocfilehash: e3d0e8b98135e232809cd2b5e3fc06827b1f480e
+ms.sourcegitcommit: 3f2f254f6e8d18137bae879ddea0784e56b66895
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="register-an-azure-ad-app-to-embed-power-bi-content"></a>Azure AD -sovelluksen rekisteröinti Power BI -sisällön upottamiseksi
 Lue, miten voit rekisteröidä sovelluksen Azure Active Directoryssä (Azure AD) Power BI -sisällön upottamiseksi.
@@ -59,6 +59,22 @@ Voit rekisteröidä sovelluksen Power BI -sovelluksen rekisteröintityökalun av
    
     Saat sitten **asiakastunnuksen**. Jos valitsit **Server-side Web -sovelluksen**, saat myös **asiakkaan salasanan**. **Asiakastunnus** voidaan noutaa Azure-portaalista myöhemmin tarvittaessa. Jos kadotat **asiakkaan salasanan**, sinun on luotava uusi asiakkaan salasana Azure-portaalissa.
 
+8. Sinun on siirryttävä Azureen ja valittava **Myönnä käyttöoikeuksia**.
+> [!Note]
+    > Tähän tarvitaan yleisen järjestelmänvalvojan oikeudet Azure-vuokraajassa.
+>
+
+* Siirry Azureen.
+* Etsi ja valitse **Sovelluksen rekisteröinnit**.
+* Valitse sovelluksesi.
+* Valitse **Asetukset**.
+* Valitse **Käyttöoikeudet vaaditaan**.
+* Valitse **Power BI -palvelu**, jotta voit vahvistaa sovelluksen rekisteröintisivustossa valitsemasi käyttöoikeudet.
+* Valitse **Myönnä käyttöoikeuksia**.
+
+
+
+
 Voit nyt käyttää rekisteröityä sovellusta osana mukautettua sovellusta Power BI -palvelun käyttämiseksi.
 
 > [!IMPORTANT]
@@ -77,8 +93,8 @@ Toinen vaihtoehto sovelluksen rekisteröintiin on tehdä se suoraan Azure-portaa
     ![](media/register-app/azuread-new-app-registration.png)
 5. Noudata kehotteita ja luo uusi sovellus.
    
-   * Anna verkkosovelluksille kertakirjautumisen URL-osoite. Se on sovelluksen perus-URL-osoite, jossa käyttäjät voivat kirjautua sisään esimerkiksi osoitteessa http://localhost:13526.
-   * Anna Native-sovelluksille uudelleenohjaus-URL-osoite, jonka avulla Azure AD palauttaa tunnusvastaukset. Anna sovellukseen liittyvä arvo, kuten http://myapplication/redirect.
+   * Anna verkkosovelluksille kirjautumisen URL-osoite. Se on sovelluksen perus-URL-osoite, jossa käyttäjät voivat kirjautua sisään. Esimerkki: http://localhost:13526.
+   * Anna Native-sovelluksille uudelleenohjaus-URL-osoite, jonka avulla Azure AD palauttaa tunnusvastaukset. Anna sovellukseen liittyvä arvo. Esimerkki: http://myapplication/redirect
 
 Katso lisätietoja siitä, miten voit rekisteröidä sovelluksia Azure Active Directoryssä, artikkelista [Sovellusten integrointi Azure Active Directoryyn](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications).
 
@@ -190,4 +206,5 @@ Sinun on kirjauduttava sisään joko *päätilillä*, jota käytetään upotukse
 Kun olet nyt rekisteröinyt sovelluksesi Azure AD:ssä, sinun on todennettava sovelluksessa olevat käyttäjät. Lue lisää artikkelista [Käyttäjien todentaminen ja Azure AD -käyttöoikeustietueen hankinta Power BI -sovellukselle](get-azuread-access-token.md).
 
 Onko sinulla muuta kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)
+
 
