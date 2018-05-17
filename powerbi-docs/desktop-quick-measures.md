@@ -15,14 +15,14 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 02/05/2018
+ms.date: 05/02/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: a7f877512d5b0f897fb98d2db205d1418d25c71a
-ms.sourcegitcommit: 65426de556cd7207cbc4f478198664e25c33a769
+ms.openlocfilehash: 992282438ceac88dce759b60dc26f0767d0b1f86
+ms.sourcegitcommit: 9fa954608e78dcdb8d8a503c3c9b01c43ca728ab
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/30/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="use-quick-measures-to-easily-perform-common-and-powerful-calculations"></a>Pikamittareiden avulla voit suorittaa helposti yleisiä ja tehokkaita laskutoimituksia.
 **Pikamittareiden** avulla voit suorittaa helposti sekä nopeasti yleisiä ja tehokkaita laskutoimituksia. **Pikamittari** suorittaa joukon DAX-komentoja taustalla (sinun ei tarvitse kirjoittaa DAX-kaavaa, se tehdään puolestasi) sen perusteella, mitä tietoja annat valintaikkunassa, ja näyttää sitten tulokset, joita voit käyttää raportissa. Parasta on se, että näet pikamittarin suorittaman DAX-kaavan, minkä ansiosta voit laajentaa ja parantaa omaa DAX-osaamistasi.
@@ -43,8 +43,6 @@ Sinun täytyy käynnistää **Power BI Desktop** uudelleen tämän jälkeen.
 Kun haluat käyttää **pikamittaria**, napsauta mitä tahansa**Power BI Desktopin** **Kentät**-kohdan kenttää hiiren kakkospainikkeella ja valitse näyttöön avautuvasta valikosta **Pikamittari**.
 
 ![](media/desktop-quick-measures/quick-measures_01.png)
-
-**Pikamittarit** ovat käytettävissä vain, kun mallinnus on käytössä tällä hetkellä ladatussa tietojoukossa. Tämän johdosta reaaliaikaisissa yhteyksissä (esimerkiksi yhteys Power BI -palvelun tietojoukkoon) ei näytetä **Pikamittarit**-valikkokohdetta, kun napsautat **Kentät**-luetteloa hiiren kakkospainikkeella (reaaliaikaisia SSAS-yhteyksiä lukuun ottamatta). 
 
 Kun käytät reaaliaikaisia SQL Server Analysis Services (SSAS) -yhteyksiä, jotkin **pikamittarit** ovat käytettävissä. **Power BI Desktop** näyttää vain ne **pikamittarit**, joita se SSAS-versio tukee, johon yhteys on muodostettu. Jos siis olet yhteydessä reaaliaikaiseen SSAS-tietolähteeseen ja et näe luettelossa tiettyjä **pikamittareita**, tämä johtuu siitä, että yhdistetty SSAS-versio ei tue DAX-mittayksikköä, jolla nämä **pikamittarit** toteutetaan.
 
@@ -141,9 +139,10 @@ Kun pikamittari vastaa tarpeitasi, voit myös vaihtaa sen nimeä hiiren kakkospa
 ## <a name="limitations-and-considerations"></a>Rajoitukset ja huomioon otettavia seikkoja
 Muutamat rajoitukset ja tärkeät seikat on syytä huomioida.
 
-* **Pikamittarit** ovat käytettävissä vain, jos voit muokata mallia. Tämä ei ole mahdollista, kun käytät DirectQuerya tai useimpia reaaliaikaisia yhteyksiä (reaaliaikaisia SSAS-yhteyksiä tuetaan, kuten aiemmin mainittiin).
+* **Pikamittarit** ovat käytettävissä vain, jos voit muokata mallia. Tämä ei ole mahdollista, kun käytät joitakin reaaliaikaisia yhteyksiä (SSAS:n taulukkomuotoisia reaaliaikaisia yhteyksiä tuetaan, kuten aiemmin mainittiin).
 * **Kentät**-kohtaan lisätty pikamittaria voi käyttää missä tahansa raportin visualisoinnissa.
 * Näet aina **pikamittarin** DAX-kaavan **kaavarivillä** valitsemalla mittarin **Kentät**-kohdasta.
+* Et voi luoda aikatietojen pikamittareita, kun työskentelet DirectQuery-tilassa. Näissä pikamittareissa käytettyjen DAX-funktioiden suorituskyky muuttuu, kun ne käännetään T-SQL-lausekkeiksi, jotka lähetetään tietolähteeseesi.
 
 > [!WARNING]
 > Tällä hetkellä pikamittarit luovat *ainoastaan* DAX-lausekkeita, joissa argumentit erotellaan pilkuin. Jos **Power BI Desktop** -versiosi on lokalisoitu kielellä, jossa pilkkuja käytetään desimaalierottimina, pikamittarit eivät toimi oikein.
@@ -151,7 +150,7 @@ Muutamat rajoitukset ja tärkeät seikat on syytä huomioida.
 > 
 
 ### <a name="time-intelligence-and-quick-measures"></a>Aikatiedot ja pikamittarit
-**Power BI Desktopin** lokakuun 2017 päivityksestä alkaen voit käyttää omia mukautettuja päivämäärätietoja **pikamittareiden** aikatiedoissa. Jos tietomallissasi on mukautettu päivämäärätaulukko, voit käyttää sen ensisijaista päivämääräsaraketta aikatietojen pikamittareissa. Sinun *täytyy* varmistaa, että taulukon ensisijainen päivämääräsarake on merkitty päivämääräsarakkeeksi taulukkoa luotaessa. Saat ohjeet [tästä artikkelista](https://docs.microsoft.com/sql/analysis-services/tabular-models/specify-mark-as-date-table-for-use-with-time-intelligence-ssas-tabular).
+**Power BI Desktopin** lokakuun 2017 päivityksestä alkaen voit käyttää omia mukautettuja päivämäärätietoja **pikamittareiden** aikatiedoissa. Jos käytät ulkoista taulukkomallia, varmista, että taulukon ensisijainen päivämääräsarake on merkitty päivämääräsarakkeeksi taulukkoa luotaessa. Saat ohjeet [tästä artikkelista](https://docs.microsoft.com/sql/analysis-services/tabular-models/specify-mark-as-date-table-for-use-with-time-intelligence-ssas-tabular). Jos tuot oman päivämäärätaulukon, muista merkitä se päivämäärätaulukoksi [tämän artikkelin](https://docs.microsoft.com/power-bi/desktop-date-tables) ohjeiden mukaisesti
 
 ### <a name="additional-information-and-examples"></a>Lisätiedot ja esimerkit
 Aiomme tarjota esimerkkejä ja ohjeita kaikille **pikamittarilaskutoimituksille**, joten tarkista päivitykset asiaankuuluvista artikkeleista pian.
