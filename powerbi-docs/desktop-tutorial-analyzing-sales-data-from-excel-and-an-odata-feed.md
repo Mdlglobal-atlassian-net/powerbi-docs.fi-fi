@@ -29,7 +29,7 @@ ms.lasthandoff: 04/04/2018
 
 On yleistä, että tiedot ovat hajallaan useissa tietolähteissä: esimerkiksi tuotetiedot voivat olla yhdessä tietokannassa ja myyntitiedot toisessa. Opit tässä opetusohjelmassa käyttämään tietolähteenä Excel-työkirjaa ja OData-syötettä, mutta voit soveltaa näitä tekniikoita myös muiden tietolähteiden kanssa, esimerkiksi SQL Server -kyselyiden, CSV-tiedostojen ja minkä tahansa muun Power BI Desktopin tietolähteen kanssa.
 
-Tässä opetusohjelmassa tuot tietoja (tuotetietoja) Excelistä ja OData-syötteestä (tilaustietoja). Suoritat muuntamis- ja koostamisvaiheet sekä yhdistät molempien lähteiden tiedot ja luot **Total Sales per Product and Year** -raportin, joka sisältää vuorovaikutteisia visualisointeja. 
+Tässä opetusohjelmassa tuot tietoja Excelistä (tuotetietoja) ja OData-syötteestä (tilaustietoja). Suoritat muuntamis- ja koostamisvaiheet sekä yhdistät molempien lähteiden tiedot ja luot **Total Sales per Product and Year** -raportin, joka sisältää vuorovaikutteisia visualisointeja. 
 
 Lopullinen raportti näyttää tältä:
 
@@ -37,7 +37,7 @@ Lopullinen raportti näyttää tältä:
 
 Tarvitset tämän opetusohjelman seuraamiseen Products-työkirjan, jonka voit ladata: **[lataa Products.xlsx napsauttamalla tätä](http://download.microsoft.com/download/1/4/E/14EDED28-6C58-4055-A65C-23B4DA81C4DE/Products.xlsx)**.
 
-Anna **Tallenna nimellä** -valintaikkunassa tiedostolle nimeksi **Products.xlsx**.
+Anna **Tallenna nimellä** -valintaikkunassa tiedoston nimeksi **Products.xlsx**.
 
 ## <a name="task-1-get-product-data-from-an-excel-workbook"></a>Tehtävä 1: tuotetietojen hakeminen Excel-työkirjasta
 Tässä tehtävässä tuot tuotteet Products.xlsx-tiedostosta Power BI Desktopiin.
@@ -54,11 +54,11 @@ Tässä tehtävässä tuot tuotteet Products.xlsx-tiedostosta Power BI Desktopii
    ![](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/t_excelodata_2.png)
 
 ### <a name="step-2-remove-other-columns-to-only-display-columns-of-interest"></a>Vaihe 2: muiden sarakkeiden poistaminen vain tarvittavien sarakkeiden näyttämiseksi
-Tässä vaiheessa poistat kaikki muut sarakkeet paitsi **ProductID**-, **ProductName**-, **UnitsInStock**- ja **QuantityPerUnit**-sarakkeet. Power BI Desktopissa on usein muutamia eri tapoja tehdä sama asia. Voit esimerkiksi tehdä samoja toimintoja kuin monilla valintanauhan painikkeilla napsauttamalla saraketta tai solua hiiren kakkospainikkeella ja valitsemalla sitten toiminnon.
+Tässä vaiheessa poistat kaikki muut sarakkeet paitsi **ProductID**-, **ProductName**-, **UnitsInStock**- ja **QuantityPerUnit**-sarakkeet. Power BI Desktopissa on usein eri tapoja tehdä sama asia. Voit esimerkiksi tehdä samoja toimintoja kuin monilla valintanauhan painikkeilla napsauttamalla saraketta tai solua hiiren kakkospainikkeella ja valitsemalla sitten toiminnon.
 
 Power BI Desktop sisältää kyselyeditorin, jolla voit muokata ja muuntaa tietoyhteyksiä. Kyselyeditori avautuu automaattisesti, kun valitset **siirtymistoiminnossa** **Muokkaa**. Voit avata kyselyeditorin myös valitsemalla Power BI Desktopin **Aloitus**-valintanauhasta **Muokkaa kyselyitä**. Seuraavat vaiheet suoritetaan kyselyeditorissa.
 
-1. Valitse kyselyeditorissa **ProductID**-, **ProductName**-, **QuantityPerUnit**- ja **UnitsInStock** -sarakkeet (voit valita useita sarakkeita painamalla **Ctrl-näppäintä koko ajan samalla, kun napsautat** sarakkeita, ja valita useita vierekkäisiä sarakkeita painamalla **Vaihto-näppäintä koko ajan samalla, kun napsautat** sarakkeita).
+1. Valitse kyselyeditorissa **ProductID**-, **ProductName**-, **QuantityPerUnit**- ja **UnitsInStock** -sarakkeet (voit valita useita sarakkeita painamalla **Ctrl-näppäintä samalla, kun napsautat** sarakkeita, ja valita useita vierekkäisiä sarakkeita painamalla **Vaihto-näppäintä samalla, kun napsautat** sarakkeita).
 2. Valitse valintanauhasta **Poista sarakkeet** \> **Poista muut sarakkeet** tai napsauta sarakeotsikkoa hiiren kakkospainikkeella ja valitse **Poista muut sarakkeet**.
 
 ![](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/anlayzingsalesdata_removeothercolumns.png)
@@ -72,8 +72,8 @@ Kun kyselyeditori muodostaa yhteyden tietoihin, se tarkistaa jokaisen kentän ja
    
    ![](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/anlayzingsalesdata_wholenumber.png)      
 
-### <a name="power-bi-desktop-steps-created"></a>Power BI Desktopin luodut vaiheet
-Kun suoritat kyselytoimintoja kyselyeditorissa, kyselyn vaiheet luodaan ja luetellaan **Kyselyasetukset**-ruudun **Käytössä olevat vaiheet** -luettelossa. Jokaisella kyselyvaiheella on sitä vastaava kaava, jota kutsutaan M-kieleksi. Jos haluat lisätietoja M-kaavakielestä, lue ohjeartikkeli [Lisätietoja Power BI -kaavoista](https://support.office.com/Article/Learn-about-Power-Query-formulas-6bc50988-022b-4799-a709-f8aafdee2b2f).
+### <a name="power-bi-desktop-steps-created"></a>Luodut Power BI Desktopin vaiheet
+Kun suoritat kyselytoimintoja kyselyeditorissa, kyselyn vaiheet luodaan ja luetellaan **Kyselyasetukset**-ruudun **Käytössä olevat vaiheet** -luettelossa. Jokaisella kyselyn vaiheella on sitä vastaava kaava, jota kutsutaan M-kieleksi. Jos haluat lisätietoja M-kaavakielestä, lue ohjeartikkeli [Lisätietoja Power BI -kaavoista](https://support.office.com/Article/Learn-about-Power-Query-formulas-6bc50988-022b-4799-a709-f8aafdee2b2f).
 
 | Tehtävä | Kyselyn vaihe | Kaava |
 | --- | --- | --- |
@@ -83,7 +83,7 @@ Kun suoritat kyselytoimintoja kyselyeditorissa, kyselyn vaiheet luodaan ja luete
 | Tietotyypin vaihtaminen |Changed Type |Table.TransformColumnTypes(\#"Removed Other Columns",{{"UnitsInStock", Int64.Type}}) |
 
 ## <a name="task-2-import-order-data-from-an-odata-feed"></a>Tehtävä 2: tilaustietojen tuominen OData-syötteestä
-Tässä tehtävässä tuot tilaustiedot. Tässä vaiheessa muodostat yhteyden myyntijärjestelmään. Tuot tiedot Power BI Desktopiin OData-syötteestä (tässä esimerkissä sen nimi on Northwind), joka löytyy seuraavasta URL-osoitteesta, jonka voit kopioida ja sitten liittää alla olevien vaiheiden avulla: <http://services.odata.org/V3/Northwind/Northwind.svc/> 
+Tässä tehtävässä tuot tilaustiedot. Tässä vaiheessa muodostat yhteyden myyntijärjestelmään. Tuot tiedot Power BI Desktopiin OData-syötteestä (tässä esimerkissä sen nimi on Northwind), joka löytyy seuraavasta URL-osoitteesta ja jonka voit kopioida ja sitten liittää alla olevien vaiheiden avulla: <http://services.odata.org/V3/Northwind/Northwind.svc/> 
 
 ### <a name="step-1-connect-to-an-odata-feed"></a>Vaihe 1: OData-syötteeseen yhdistäminen
 1. Valitse kyselyeditorin **Aloitus**-valintanauhavälilehdessä **Nouda tiedot**.
@@ -121,8 +121,8 @@ Tässä vaiheessa poistat kaikki muut sarakkeet paitsi **OrderDate-, ShipCity-**
 
 1. Valitse **kyselynäkymässä** kaikki sarakkeet suorittamalla kohdat a. ja b. seuraavasti:
    1. Napsauta ensimmäistä saraketta (**OrderID**).
-   2. Paina Vaihto-näppäin pohjaan ja napsauta samalla viimeistä saraketta (**Shipper**).
-   3. Nyt kun kaikki sarakkeet on valittuna, poista seuraavien sarakkeiden valinta painamalla Ctrl-näppäin pohjaan ja napsauttamalla samalla seuraavia sarakkeita: **OrderDate**-, **ShipCity**-, **ShipCountry**-, **Order\_Details.ProductID**-, **Order\_Details.UnitPrice**- ja **Order\_Details.Quantity**.
+   2. Paina vaihtonäppäintä samalla, kun napsautat viimeistä saraketta (**Shipper**).
+   3. Nyt kun kaikki sarakkeet on valittu, poista seuraavien sarakkeiden valinta painamalla Ctrl-näppäintä samalla, kun napautat sarakkeita **OrderDate**, **ShipCity**, **ShipCountry**, **Order\_Details.ProductID**, **Order\_Details.UnitPrice** ja **Order\_Details.Quantity**.
 2. Nyt kun valittuna ovat vain sarakkeet, jotka haluamme poistaa, napsauta hiiren kakkospainikkeella minkä tahansa valitun sarakkeen otsikkoa ja valitse **Poista sarakkeet**.
 
 ### <a name="step-4-calculate-the-line-total-for-each-orderdetails-row"></a>Vaihe 4: jokaisen Order\_Details-rivin kokonaissumman laskeminen
@@ -153,7 +153,7 @@ Tässä vaiheessa viimeistelet mallin ja teet siitä helppokäyttöisemmän rapo
    ![](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/10.png)
 2. Poista *Order\_Details.*-etuliite **Order\_Details.ProductID**-, **Order\_Details.UnitPrice**- ja **Order\_Details.Quantity**-sarakkeista kaksoisnapsauttamalla kutakin sarakeotsikkoa ja poistamalla sitten teksti sarakkeen nimestä.
 
-### <a name="power-bi-desktop-steps-created"></a>Power BI Desktopin luodut vaiheet
+### <a name="power-bi-desktop-steps-created"></a>Luodut Power BI Desktopin vaiheet
 Kun suoritat kyselytoimintoja kyselyeditorissa, kyselyn vaiheet luodaan ja luetellaan **Kyselyasetukset**-ruudun **Käytössä olevat vaiheet** -luettelossa. Jokaisella kyselyvaiheella on sitä vastaava Power Query -kaava, jota kutsutaan M-kieleksi. Jos haluat lisätietoja M-kaavakielestä, lue ohjeartikkeli [Lisätietoja Power BI -kaavoista](https://support.office.com/Article/Learn-about-Power-Query-formulas-6bc50988-022b-4799-a709-f8aafdee2b2f "Lisätietoja Power BI -kaavoista").
 
 | Tehtävä | Kyselyn vaihe | Kaava |
@@ -180,7 +180,7 @@ Tässä tehtävässä varmistat, että Power BI Desktopissa on luotu suhde **Pro
 3. Kun tiedot on ladattu, valitse **Aloitus**-valintanauhan **Suhteiden hallinta** -painike.
    
    ![](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/t_excelodata_5.png)
-4. Valitse **New…**-painike. painike
+4. Valitse **Uusi…**- painike
    
    ![](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/t_excelodata_6.png)
 5. Kun yritämme luoda suhdetta, näemme, että sellainen on jo olemassa! Kuten **Luo suhde** -valintaikkunasta näkyy (himmennetyistä sarakkeista), kummankin kyselyn **ProductID**-kentille on jo luotu suhde.
@@ -189,7 +189,7 @@ Tässä tehtävässä varmistat, että Power BI Desktopissa on luotu suhde **Pro
 6. Valitse **Peruuta** ja valitse sitten Power BI Desktopin **suhdenäkymä**.
    
    ![](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/t_excelodata_7.png)
-7. Näemme seuraavan, josta näemme visuaalisesti kyselyiden välisen suhteen.
+7. Näemme seuraavan tapauksen, joka visualisoi kyselyiden välisen suhteen.
    
    ![](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/t_excelodata_8.png)
 8. Kun kaksoisnapsautat kyselyt yhdistävää viivaa, näyttöön avautuu **Muokkaa suhdetta** -valintaikkuna.

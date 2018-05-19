@@ -18,11 +18,11 @@ ms.workload: powerbi
 ms.date: 04/13/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: d9500f2c3d385e96b9133a3b634fe06f9769936e
-ms.sourcegitcommit: df94efc51f261113fa90ebdf3fe68dd149cc4936
+ms.openlocfilehash: f1b92cf370dfdfdbeadd71ee954030aa8a79d338
+ms.sourcegitcommit: 493f160d04ed411ff4741c599adc63ba1f65230f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="tips-and-tricks-for-creating-reports-in-power-bi-desktop-and-power-bi-service"></a>Vinkkejä tyylikkäiden raporttien luomiseen Power BI Desktopissa ja Power BI -palvelussa
 Joskus voi tarvita hieman ylimääräistä apua, jotta tiedoista saa kaiken hyödyn irti. Olemme koonneet yhteen muutamia vinkkejä, joita voit hyödyntää, kun luot raportteja Microsoftin Power BI Desktopissa, Power BI -palvelussa *ja* Microsoft Excel 2016:ssa. Niistä on hyötyä myös Excel 2013 Pro Plus -versioissa, joissa Power Pivot -apuohjelma on otettu käyttöön sekä Power Query asennettuna ja käytössä.
@@ -166,7 +166,7 @@ Toisinaan on hyödyllistä laskea tietojoukolle yhteenvetotilastot.  Helppo tapa
 ### <a name="using-dax-for-the-first-time"></a>DAX:n käyttäminen ensimmäistä kertaa
 DAX on Power BI Desktopissa käytettävä laskutoimitusten kaavakieli.  Se on optimoitu liiketoimintatietojen analytiikkaa varten.  Se poikkeaa jonkun verran totutusta, jos olet käyttänyt vain SQL-tyyppistä kyselykieltä. DAX:n opetteluun on paljon hyvää materiaalia verkossa ja painetussa muodossa.
 
-[Pikaopas: DAX-perusteet Power BI Desktopissa](desktop-quickstart-learn-dax-basics.md)
+[Opettele DAX-perusteet Power BI Desktopissa](desktop-quickstart-learn-dax-basics.md)
 
 [Data Analysis Expressions (DAX) -viittaukset](https://msdn.microsoft.com/library/gg413422.aspx)
 

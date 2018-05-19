@@ -27,12 +27,12 @@ ms.lasthandoff: 04/04/2018
 # <a name="shape-maps-in-power-bi-desktop-preview"></a>Muotokartat Power BI Desktopissa (esikatselu)
 Power BI Desktopissa voit luoda **Muotokartta**-visualisoinnin, jolla näytät alueiden suhteellisia vertailuja kartalla näyttämällä eri alueet eri värein. **Kartta**-visualisointiin verrattuna **Muotokartta**-visualisoinnilla ei voi näyttää arvopisteiden tarkkoja maantieteellisiä sijainteja kartalla. Muotokartan päätarkoitus on sen sijaan näyttää alueiden suhteellisia vertailuja kartalla siten, että eri alueilla on eri värit.
 
-**Muotokartta**-visualisoinnit perustuvat ESRI/TopoJSON-karttoihin, jotka tarjoavat mielenkiintoisen mahdollisuuden käyttää mukautettuja karttoja eli omia karttoja, joita voit luoda. Tällaisia karttoja voivat olla esimerkiksi maantieteelliset kartat, istumakartat, pohjapiirrokset ja muut. **Muotokarttojen** tämä esikatseluversio ei kuitenkaan tarjoa mahdollisuutta mukautettujen karttojen käyttöön.
+**Muotokartta**-visualisoinnit perustuvat ESRI/TopoJSON-karttoihin, jotka tarjoavat mielenkiintoisen mahdollisuuden käyttää mukautettuja karttoja eli omia karttoja, joita voit luoda. Tällaisia karttoja voivat olla esimerkiksi maantieteelliset kartat, istumapaikkakartat, pohjapiirrokset ja muut. **Muotokarttojen** tämä esikatseluversio ei kuitenkaan tarjoa mahdollisuutta mukautettujen karttojen käyttöön.
 
 ## <a name="creating-shape-maps"></a>Muotokarttojen luominen
 Voit testata **Muotokartta**-ohjausobjektia kartoilla, jotka sisältyvät tähän esikatseluversioon, tai voit käyttää omaa mukautettua karttaa, kunhan se täyttää vaatimukset, jotka on määritetty seuraavassa **Mukautettujen karttojen käyttäminen** -osiossa.
 
-**Muotokartta**-visualisointi on esikatseluvaiheessa. Sen täytyy olla käytössä Power BI Desktopissa. Jos haluat ottaa **Muotokartta**-toiminnon käyttöön, valitse **Tiedosto > Asetukset ja vaihtoehdot > Asetukset > Esiversio-ominaisuudet** ja valitse sitten **Muotokartta-visualisoinnin** valintaruutu. Sinun täytyy käynnistää Power BI Desktop uudelleen tämän jälkeen.
+**Muotokartta**-visualisointi on esikatseluvaiheessa. Sen täytyy olla käytössä Power BI Desktopissa. Jos haluat ottaa **Muotokartta**-toiminnon käyttöön, valitse **Tiedosto > Asetukset ja vaihtoehdot > Asetukset > Esiversio-ominaisuudet** ja valitse sitten **Muotokartta-visualisointi**-valintaruutu. Sinun täytyy käynnistää Power BI Desktop uudelleen tämän jälkeen.
 
 ![](media/desktop-shape-map/shape-map_1a.png)
 
@@ -54,7 +54,7 @@ Voit luoda **muotokartan** seuraavasti:
    > 
    
    ![](media/desktop-shape-map/shape-map_3a.png)
-2. Laajenna **Muoto**-asetusruudun **Muoto**-kohta ja valitse avattavasta **Vakiokartat**-valikosta näyttääksesi tiedot. Tässä vaiheessa et näe vielä mitään, kuten seuraava kuva osoittaa.
+2. Laajenna **Muotoile**-asetusruudun **Muoto**-kohta ja valitse avattavasta **Vakiokartat**-valikosta näyttääksesi tiedot. Tässä vaiheessa et näe vielä mitään, kuten seuraava kuva osoittaa.
    
    ![](media/desktop-shape-map/shape-map_3b.png)
    
@@ -62,15 +62,15 @@ Voit luoda **muotokartan** seuraavasti:
 > Tämän artikkelin lopussa oleva **Aluetunnukset**-osio sisältää kokoelman taulukoista, jotka sisältävät kartta-aluetunnuksia, joilla voit testata **Muotokartta**-visualisointia.
    > 
    > 
-3. Voit sitten muokata karttaprojektiota ja zoomausasetuksia sekä arvopisteiden värejä **Muoto**-asetusruudussa. Voit muokata myös zoomausasetuksia. Voit esimerkiksi vaihtaa värejä, määrittää vähimmäis- sekä enimmäisarvot ja niin edelleen.
+3. Voit sitten muokata karttaprojektiota ja zoomausasetuksia sekä arvopisteiden värejä **Muotoile**-asetusruudussa. Voit muokata myös zoomausasetuksia. Voit esimerkiksi vaihtaa värejä, määrittää vähimmäis- sekä enimmäisarvot ja niin edelleen.
    
    ![](media/desktop-shape-map/shape-map_3d.png)
 4. Voit myös lisätä luokkatietojen sarakkeen **Selite**-säilöön ja luokitella kartta-alueet luokkien perusteella.
 
 ## <a name="use-custom-maps"></a>Mukautettujen karttojen käyttäminen
-Voit käyttää **Muotokartta**-visualisoinnin kanssa mukautettuja karttoja, kunhan ne ovat **TopoJSON**-muodossa. Jos karttasi on muussa muodossa, voit muuntaa *shapefiles*- tai *GeoJSON*-karttasi **TopoJSON**-muotoon verkkotyökaluilla, esimerkiksi [**MapShaper**](http://mapshaper.org/)-työkalulla.
+Voit käyttää **Muotokartta**-visualisoinnin kanssa mukautettuja karttoja, kunhan ne ovat **TopoJSON**-muodossa. Jos karttasi on muussa muodossa, voit muuntaa *shapefile*- tai *GeoJSON*-karttasi **TopoJSON**-muotoon verkkotyökaluilla, esimerkiksi [**MapShaper**](http://mapshaper.org/)-työkalulla.
 
-Jos haluat käyttää **TopoJSON**-karttatiedostoasi, lisää Muotokartta-visualisointi raporttiisi ja lisää joitain tietoja *Sijainti*- sekä *Värikylläisyys*-säilöihin. Avaa sitten **Visualisoinnit**-ruudun **Muoto**-osio (kuten kohdassa (1) seuraavassa kuvassa), laajenna **Muoto**-osio ja valitse **+ Lisää kartta**.
+Jos haluat käyttää **TopoJSON**-karttatiedostoasi, lisää Muotokartta-visualisointi raporttiisi ja lisää joitain tietoja *Sijainti*- sekä *Värikylläisyys*-säilöihin. Avaa sitten **Visualisoinnit**-ruudun **Muotoile**-osio (kuten kohdassa (1) seuraavassa kuvassa), laajenna **Muoto**-osio ja valitse **+ Lisää kartta**.
 
 ![](media/desktop-shape-map/shape-map_6.png)
 
@@ -96,7 +96,7 @@ Voit hakea nopeasti tietoja malliin, jotta voit testata **muotokarttaa**. Voit t
 
 ![](media/desktop-shape-map/shape-map_4.png)
 
-Jos tiedoissa on useita sarakkeita, sinun täytyy liittää tiedot editorilla (esimerkiksi Excelillä) ja kopioida sitten kukin tietosarake yksitellen. Tämän jälkeen voit liittää tiedot Power BI Desktopiin. Ylin rivi tunnistetaan automaattisesti otsikoksi.
+Jos tiedoissa on useita sarakkeita, sinun täytyy liittää tiedot editorilla (esimerkiksi Excelillä) ja kopioida sitten kukin tietosarake yksitellen. Tämän jälkeen voit liittää tiedot Power BI Desktopiin. Ylin rivi tunnistetaan automaattisesti otsikkoriviksi.
 
 ![](media/desktop-shape-map/shape-map_5.png)
 
@@ -112,7 +112,7 @@ Voit lisätä uuden sarakkeen kirjoittamalla uuden sarakkeen nimen (tyhjään sa
 ## <a name="preview-behavior-and-requirements"></a>Esikatseluversion toiminta ja vaatimukset
 Sinun täytyy ottaa huomioon muutamia seikkoja ja vaatimuksia, kun käytät tätä **Muotokartta**-toiminnon esikatseluversiota:
 
-* **Muotokartta**-visualisointi on esikatseluvaiheessa. Sen täytyy olla käytössä Power BI Desktopissa. Jos haluat ottaa **Muotokartta**-toiminnon käyttöön, valitse **Tiedosto > Asetukset ja vaihtoehdot > Asetukset > Esiversio-ominaisuudet** ja valitse sitten **Muotokartta-visualisoinnin** valintaruutu.
+* **Muotokartta**-visualisointi on esikatseluvaiheessa. Sen täytyy olla käytössä Power BI Desktopissa. Jos haluat ottaa **Muotokartta**-toiminnon käyttöön, valitse **Tiedosto > Asetukset ja vaihtoehdot > Asetukset > Esiversio-ominaisuudet** ja valitse sitten **Muotokartta-visualisointi**-valintaruutu.
 * Tällä hetkellä myös **Värikylläisyys**-säilön täytyy olla määritettynä, jotta **Selite**-luokittelu toimii oikein.
 * **Muotokartta**-toiminnon lopullisessa julkaisuversiossa on käyttöliittymä, josta näet tällä hetkellä valitun kartan karttatunnukset. (Lopullista julkaisupäivämäärää ei ole vielä päätetty. **Muotokartta**-toiminto on tällä hetkellä edelleen esikatseluvaiheessa.) Tässä esikatseluversiossa voit käyttää kartta-alueiden tunnisteita, jotka löytyvät tämän artikkelin **Aluetunnukset**-osion taulukoista.
 * **Muotokartta**-visualisointi voi näyttää enintään 1 000 arvopistettä.
@@ -120,8 +120,8 @@ Sinun täytyy ottaa huomioon muutamia seikkoja ja vaatimuksia, kun käytät tät
 ## <a name="region-keys"></a>Aluetunnukset
 Kun testaat **muotokarttaa** tässä esikatseluversiossa, käytä **seuraavia aluetunnuksia**.
 
-### <a name="australia-states"></a>Australia: States
-| id | abbr | iso | name | postal |
+### <a name="australia-states"></a>Australia: osavaltio
+| tunnus | lyhenne | ISO-koodi | nimi | postinumerotunnus |
 | --- | --- | --- | --- | --- |
 | au-wa |WA |AU-WA |Western Australia |WA |
 | au-vic |Vic |AU-VIC |Victoria |VIC |
@@ -132,8 +132,8 @@ Kun testaat **muotokarttaa** tässä esikatseluversiossa, käytä **seuraavia al
 | au-nsw |NSW |AU-NSW |New South Wales |NSW |
 | au-act |ACT |AU-ACT |Australian Capital Territory |ACT |
 
-### <a name="austria-states"></a>Austria: States
-| id | iso | name | name-en | postal |
+### <a name="austria-states"></a>Itävalta: osavaltiot
+| tunnus | ISO-koodi | nimi | englanninkielinen nimi | postinumerotunnus |
 | --- | --- | --- | --- | --- |
 | at-wi |AT-9 |Wien |Vienna |WI |
 | at-vo |AT-8 |Vorarlberg |Vorarlberg |VO |
@@ -145,8 +145,8 @@ Kun testaat **muotokarttaa** tässä esikatseluversiossa, käytä **seuraavia al
 | at-ka |AT-2 |Kärnten |Carinthia |KA |
 | at-bu |AT-1 |Burgenland |Burgenland |BU |
 
-### <a name="brazil-states"></a>Brazil: States
-| id |
+### <a name="brazil-states"></a>Brasilia: osavaltiot
+| tunnus |
 | --- |
 | Tocantins |
 | Pernambuco |
@@ -180,8 +180,8 @@ Kun testaat **muotokarttaa** tässä esikatseluversiossa, käytä **seuraavia al
 | Litigated Zone 3 |
 | Litigated Zone 4 |
 
-### <a name="canada-provinces"></a>Canada: Provinces
-| id | iso | name | postal |
+### <a name="canada-provinces"></a>Kanada: provinssit ja territoriot
+| tunnus | ISO-koodi | nimi | postinumerotunnus |
 | --- | --- | --- | --- |
 | ca-nu |CA-NU |Nunavut |NU |
 | ca-nt |CA-NT |Northwest Territories |NT |
@@ -197,8 +197,8 @@ Kun testaat **muotokarttaa** tässä esikatseluversiossa, käytä **seuraavia al
 | ca-bc |CA-BC |British Columbia |BC |
 | ca-ab |CA-AB |Alberta |AB |
 
-### <a name="france-regions"></a>France: Regions
-| id | name | name-en |
+### <a name="france-regions"></a>Ranska: alueet
+| tunnus | nimi | englanninkielinen nimi |
 | --- | --- | --- |
 | Alsace |Alsace |Alsace |
 | Rhone-Alpes |Rhône-Alpes |Rhone-Alpes |
@@ -223,8 +223,8 @@ Kun testaat **muotokarttaa** tässä esikatseluversiossa, käytä **seuraavia al
 | Auvergne |Auvergne |Auvergne |
 | Aquitaine |Aquitaine |Aquitaine |
 
-### <a name="germany-states"></a>Germany: States
-| id | iso | name | name-en | postal |
+### <a name="germany-states"></a>Saksa: osavaltiot
+| tunnus | ISO-koodi | nimi | englanninkielinen nimi | postinumerotunnus |
 | --- | --- | --- | --- | --- |
 | de-be |DE-BE |Berlin |Berlin |BE |
 | de-th |DE-TH |Thüringen |Thuringia |TH |
@@ -243,8 +243,8 @@ Kun testaat **muotokarttaa** tässä esikatseluversiossa, käytä **seuraavia al
 | de-by |DE-BY |Bayern |Bavaria |BY |
 | de-bw |DE-BW |Baden-Württemberg |Baden-Wurttemberg |BW |
 
-### <a name="ireland-counties"></a>Ireland: Counties
-| id |
+### <a name="ireland-counties"></a>Irlanti: maakunnat
+| tunnus |
 | --- |
 | Wicklow |
 | Wexford |
@@ -273,8 +273,8 @@ Kun testaat **muotokarttaa** tässä esikatseluversiossa, käytä **seuraavia al
 | Cavan |
 | Carlow |
 
-### <a name="italy-regions"></a>Italy: Regions
-| id | iso | name | name-en | postal |
+### <a name="italy-regions"></a>Italia: alueet
+| tunnus | ISO-koodi | nimi | englanninkielinen nimi | postinumerotunnus |
 | --- | --- | --- | --- | --- |
 | it-vn |IT-34 |Veneto |Veneto |VN |
 | it-vd |IT-23 |Valle d'Aosta |Aosta Valley |VD |
@@ -297,8 +297,8 @@ Kun testaat **muotokarttaa** tässä esikatseluversiossa, käytä **seuraavia al
 | it-pu |IT-75 |Apulia |Puglia |PU |
 | it-ab |IT-65 |Abruzzo |Abruzzo |AB |
 
-### <a name="mexico-states"></a>Mexico: States
-| id | abreviatura | iso | name | name-en | postal |
+### <a name="mexico-states"></a>Meksiko: osavaltiot
+| tunnus | lyhenne | ISO-koodi | nimi | englanninkielinen nimi | postinumerotunnus |
 | --- | --- | --- | --- | --- | --- |
 | mx-zac |Zac. |MX-ZAC |Zacatecas |Zacatecas |ZA |
 | mx-yuc |Yuc. |MX-YUC |Yucatán |Yucatan |YU |
@@ -333,8 +333,8 @@ Kun testaat **muotokarttaa** tässä esikatseluversiossa, käytä **seuraavia al
 | mx-bcn |B.C. |MX-BCN |Baja California |Baja California |BN |
 | mx-agu |Ags. |MX-AGU |Aguascalientes |Aguascalientes |AG |
 
-### <a name="netherlands-provinces"></a>Netherlands: Provinces
-| id | iso | name | name-en |
+### <a name="netherlands-provinces"></a>Alankomaat: provinssit
+| tunnus | ISO-koodi | nimi | englanninkielinen nimi |
 | --- | --- | --- | --- |
 | nl-zh |NL-ZH |Zuid-Holland |South Holland |
 | nl-ze |NL-ZE |Zeeland |Zeeland |
@@ -349,16 +349,16 @@ Kun testaat **muotokarttaa** tässä esikatseluversiossa, käytä **seuraavia al
 | nl-fl |NL-FL |Flevoland |Flevoland |
 | nl-dr |NL-DR |Drenthe |Drenthe |
 
-### <a name="uk-countries"></a>UK: Countries
-| id | iso | name |
+### <a name="uk-countries"></a>Yhdistynyt kuningaskunta: maat
+| tunnus | ISO-koodi | nimi |
 | --- | --- | --- |
 | gb-wls |GB-WLS |Wales |
 | gb-sct |GB-SCT |Scotland |
 | gb-nir |GB-NIR |Northern Ireland |
 | gb-eng |GB-ENG |England |
 
-### <a name="usa-states"></a>USA: States
-| id | name | postal |
+### <a name="usa-states"></a>Yhdysvallat: osavaltiot
+| tunnus | nimi | postinumerotunnus |
 | --- | --- | --- |
 | us-mi |Michigan |MI |
 | us-ak |Alaska |AK |

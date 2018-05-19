@@ -15,17 +15,17 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 02/05/2018
+ms.date: 05/02/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: de40c8ee25c5facc1c4396c807d38784c11e8bca
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: c1c7eeeb1592b6a043dd25c5664ecd505e7975fc
+ms.sourcegitcommit: f679c05d029ad0765976d530effde744eac23af5
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="use-the-matrix-visual-in-power-bi-desktop"></a>Matriisivisualisoinnin käyttö Power BI Desktopissa
-**Matriisivisualisoinnin** avulla voit luoda myös *matriisitaulukoiksi* kutsuttuja visualisointeja **Power BI Desktop** -raporteissa ja korostaa matriisin sisältämiä elementtejä ristiin muiden visualisointien kanssa. Lisäksi voit valita rivejä, sarakkeita ja jopa yksittäisiä soluja ristiinkorostettavaksi. Matriisivisualisointi tukee porrastettua asettelua, jonka avulla voit hyödyntää asettelun tilan entistä paremmin.
+**Matriisi**-visualisointiominaisuuden avulla voit luoda myös *matriisitaulukoiksi* kutsuttuja visualisointeja **Power BI Desktop** -raporteissa ja korostaa matriisin sisältämiä elementtejä ristiin muiden visualisointien kanssa. Lisäksi voit valita rivejä, sarakkeita ja jopa yksittäisiä soluja ristiinkorostettavaksi. Matriisivisualisointi tukee porrastettua asettelua, jonka avulla voit hyödyntää asettelun tilan entistä paremmin.
 
 ![](media/desktop-matrix-visual/matrix-visual_2a.png)
 
@@ -63,7 +63,7 @@ Kun visualisointiin luodaan ryhmittely **Rivit**-osioon, itse visualisoinnissa n
 
 ![](media/desktop-matrix-visual/matrix-visual_5.png)
 
-Kuten muidenkin visualisointien poraus- ja laajennustoiminnoissa, näiden painikkeiden valitseminen mahdollistaa poraamisen hierarkian mukaisesti ylös- tai alaspäin. Tässä tapauksessa voit porata *Luokasta* *Aliluokkaan*. Kuvassa yhden tason poraamiskuvake (talikko) on valittu.
+Kuten muidenkin visualisointien poraus- ja laajennustoiminnoissa, näiden painikkeiden valitseminen mahdollistaa poraamisen hierarkian mukaisesti ylös- tai alaspäin. Tässä tapauksessa voit porata *Luokasta* *Aliluokkaan*. Seuraavassa kuvassa yhden tason alas poraamisen kuvake (talikko) on valittu.
 
 ![](media/desktop-matrix-visual/matrix-visual_6.png)
 
@@ -81,7 +81,7 @@ Voit palata edelliseen ylimmän tason näkymään napsauttamalla **Poraudu ylös
 
 ![](media/desktop-matrix-visual/matrix-visual_8a.png)
 
-Kun napsautat **Poraudu ylöspäin** vasemmasta yläkulmasta, matriisi näyttää kaikki ylimmän tason luokat. Napsauta uudelleen hiiren kakkospainikkeella ja valitse **Laajenna seuraavalle tasolle**, niin näet seuraavan:
+Kun napsautat **Poraudu ylöspäin** -kuvaketta vasemmasta yläkulmasta, matriisi näyttää kaikki ylimmän tason luokat. Napsauta uudelleen hiiren kakkospainikkeella ja valitse **Laajenna seuraavalle tasolle**, niin näet seuraavan:
 
 ![](media/desktop-matrix-visual/matrix-visual_9.png)
 
@@ -100,7 +100,7 @@ Kun **Poraudu alaspäin** valitaan, *Deluxe*-otsikon sarakehierarkian seuraava t
 
 ![](media/desktop-matrix-visual/matrix-visual_12.png)
 
-Hiiren kakkospainikkeen valikon muut kohteet toimivat sarakkeilla samoin kuin riveillä (ks. edellinen osio: **Rivien otsikoiden poraaminen**). Voit myös **Näyttää seuraavan tason**, **Laajentaa seuraavalle tasolle** ja **Sisällyttää** tai **Sulkea pois** sarakkeita samoin kuin rivejä.
+Hiiren kakkospainikkeen valikon muut kohteet toimivat sarakkeilla samoin kuin riveillä (katso edellinen osio, **Rivien otsikoiden poraaminen**). Voit myös **Näyttää seuraavan tason**, **Laajentaa seuraavalle tasolle** ja **Sisällyttää** tai **Sulkea pois** sarakkeita samoin kuin rivejä.
 
 > [!NOTE]
 > Matriisivisualisoinnin vasemmassa yläkulmassa olevat ylös ja alas poraamisen kuvakkeet koskevat vain rivejä. Sarakkeiden alaspäin poraaminen edellyttää hiiren kakkospainikkeen valikon käyttöä.
@@ -108,9 +108,9 @@ Hiiren kakkospainikkeen valikon muut kohteet toimivat sarakkeilla samoin kuin ri
 > 
 
 ## <a name="stepped-layout-with-matrix-visuals"></a>Porrastettu asettelu matriisivisualisoinneissa
-**Matriisinvisualisointi** sisentää hierarkian alaluokat automaattisesti kunkin ylätaso alle. Tätä kutsutaan **porrastetuksi asetteluksi**.
+**Matriisivisualisointi** sisentää hierarkian alaluokat automaattisesti kunkin ylätason alle. Tätä kutsutaan **porrastetuksi asetteluksi**.
 
-*Alkuperäisessä* matriisivisualisoinnin versiossa aliluokat näytettiin täysin eri sarakkeella, mikä vei visualisoinnista paljon tilaa. Seuraavassa kuvassa taulukko näytetään alkuperäisessä **matriisivisualisoinnissa**; huomaa, että aliluokat ovat täysin erillisessä sarakkeessa.
+*Alkuperäisessä* matriisivisualisoinnin versiossa aliluokat näytettiin täysin eri sarakkeella, mikä vei visualisoinnista paljon tilaa. Seuraavassa kuvassa taulukko näytetään alkuperäisessä **matriisivisualisoinnissa**. Huomaa, että aliluokat ovat täysin erillisessä sarakkeessa.
 
 ![](media/desktop-matrix-visual/matrix-visual_14.png)
 
@@ -118,7 +118,7 @@ Seuraavassa kuvassa näytetään **matriisivisualisointi** **porrastetulla asett
 
 ![](media/desktop-matrix-visual/matrix-visual_13.png)
 
-Voit helposti säätää **porrastetun asettelun** asetuksia. Kun **matriisivisualisointi** on valittu, siirry **Muotoilu**-osioon (telakuvake) **Visualisoinnit**-ruudulla ja laajenna **Rivien otsikot**-osio. Asetuksia on kaksi: **porrastetun asettelun** kytkin (käytössä / pois käytöstä) ja **Porrastetun asettelun sisennys** (määrittää sisennyksen kuvapisteinä).
+Voit helposti säätää porrastetun asettelun asetuksia. Kun **matriisivisualisointi** on valittu, siirry **Muotoilu**-osioon (telakuvake) **Visualisoinnit**-ruudulla ja laajenna **Rivien otsikot**-osio. Asetuksia on kaksi: **porrastetun asettelun** kytkin (käytössä / pois käytöstä) ja **Porrastetun asettelun sisennys** (määrittää sisennyksen kuvapisteinä).
 
 ![](media/desktop-matrix-visual/matrix-visual_15.png)
 
@@ -138,7 +138,7 @@ Voit tehdä saman sarakkeiden välisummille.
 ## <a name="cross-highlighting-with-matrix-visuals"></a>Ristiinkorostus matriisivisualisoinneissa
 **Matriisivisualisoinneissa** matriisin elementtejä voidaan valita ristiinkorostuksen perustaksi. Valitse **Matriisin** sarake, niin kyseinen sarake korostetaan, kuten muutkin raporttisivun visualisoinnit. Tämä on muiden visualisointien ja arvopisteen valinnan yleinen ominaisuus, joka on nyt laajennettu **matriisivisualisointeihin**.
 
-Myös CTRL + napsautus -valinta toimii ristiinkorostuksessa. Esimerkiksi seuraavassa kuvassa **matriisivisualisoinnista** valittiin kokoelma aliluokkia. Huomaa, miten visualisoinnin valitsemattomat nimikkeet näkyvät harmaina ja miten sivun muut visualisoinnit kuvastavat **matriisivisualisoinnissa** tehtyjä valintoja.
+Myös Ctrl + napsautus -valinta toimii ristiinkorostuksessa. Esimerkiksi seuraavassa kuvassa **matriisivisualisoinnista** valittiin kokoelma aliluokkia. Huomaa, miten visualisoinnin valitsemattomat nimikkeet näkyvät harmaina ja miten sivun muut visualisoinnit kuvastavat **matriisivisualisoinnissa** tehtyjä valintoja.
 
 ![](media/desktop-matrix-visual/matrix-visual_16.png)
 
@@ -150,7 +150,7 @@ Voit käyttää ehdollista muotoilua, jommallakummalla seuraavista keinoista mat
 * Napsauta **Kentät**-ruutua hiiren kakkospainikkeella ja valitse valikosta **Ehdollinen muotoilu**.
   
   ![](media/desktop-matrix-visual/matrix-visual_17.png)
-* Voit vaihtoehtoisesti siirtyä **Muotoilu**-ruutuun, laajentaa **ehdollinen muotoilu** -kortin ja asettaa **Taustan väriasteikot**- tai **Fontin väriasteikot** -kytkimen **Käytössä**-asentoon. Jos otat käyttöön kumman tahansa asetuksen, näet *Lisäasetukset*-linkin, jonka avulla voit mukauttaa värejä ja värin muotoilun arvoja.
+* Voit vaihtoehtoisesti siirtyä **Muotoilu**-ruutuun, laajentaa **ehdollinen muotoilu** -kortin ja asettaa **Taustan väriasteikot**- tai **Fontin väriasteikot** -kytkimen **Käytössä**-asentoon. Jos otat käyttöön kumman tahansa vaihtoehdon, näet *Lisäasetukset*-linkin, jonka avulla voit mukauttaa värejä ja värin muotoilun arvoja.
   
   ![](media/desktop-matrix-visual/matrix-visual_18.png)
 

@@ -15,17 +15,17 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/19/2018
+ms.date: 04/19/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 2189351b1645d1da495ccb4b0d539de0baee0a2e
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 3fa4de000f553693c75439bd1e956e0882efb179
+ms.sourcegitcommit: bdb1fee3612bcc66153dcad8c4db2e99fb041014
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="high-density-line-sampling-in-power-bi"></a>Suuren tiheyden viivaotanta Power BI:ssä
-Kesäkuussa 2017 julkaistussa **Power BI Desktop** -versiossa ja **Power BI -palvelun** -päivityksissä otettiin käyttöön uusi näytteenottoalgoritmi, joka parantaa visualisointeja, joissa käytetään suuren tiheyden viivaotantaa. Saatat esimerkiksi luoda viivakaavion vähittäismyymälöidesi myyntituloksista, ja jokaisella myymälällä on yli 10 000 myyntikuittia joka vuosi. Tällaisten myyntitietojen viivakaavio ottaa näytteen jokaisen myymälän tiedoista, jotta niistä saadaan tuotettua merkityksellinen esitys ajallisen myyntivaihtelun kuvaamiseksi. Näytteistä luodaan pohjana olevia tietoja kuvaava monijaksoinen viivakaavio. Tämä on yleinen tapa suuren tiheyden tietojen visualisoinnissa. Power BI Desktopin suuren tiheyden näytteenottoa on parannettu, ja sitä kuvataan nyt tarkemmin tässä artikkelissa.
+Kesäkuussa 2017 julkaistussa **Power BI Desktop** -versiossa ja **Power BI -palvelun** päivityksissä otettiin käyttöön uusi näytteenottoalgoritmi, joka parantaa visualisointeja, joissa käytetään suuren tiheyden viivaotantaa. Saatat esimerkiksi luoda viivakaavion vähittäismyymälöidesi myyntituloksista, ja jokaisella myymälällä on yli 10 000 myyntikuittia joka vuosi. Tällaisten myyntitietojen viivakaavio ottaa näytteen jokaisen myymälän tiedoista, jotta niistä saadaan tuotettua merkityksellinen esitys ajallisen myyntivaihtelun kuvaamiseksi. Näytteistä luodaan pohjana olevia tietoja kuvaava monijaksoinen viivakaavio. Tämä on yleinen tapa suuren tiheyden tietojen visualisoinnissa. Power BI Desktopin suuren tiheyden näytteenottoa on parannettu, ja sitä kuvataan nyt tarkemmin tässä artikkelissa.
 
 ![](media/desktop-high-density-sampling/high-density-sampling_01.png)
 
@@ -37,14 +37,14 @@ Kesäkuussa 2017 julkaistussa **Power BI Desktop** -versiossa ja **Power BI -pal
 ## <a name="how-high-density-line-sampling-works"></a>Suuren tiheyden viivaotannan toimintaperiaate
 Aiemmin **Power BI** valitsi näytteen arvopisteitä koko pohjana olevasta tietojoukosta deterministisesti. Esimerkiksi yhtä kalenterivuotta kuvaavassa visualisoinnissa, jonka pohjana on suuren tiheyden tietoa, saatettiin esittää 350 arvopisteen otos. Sillä pyrittiin varmistamaan, että koko tietojoukko (eli kaikki pohjatiedot) esitettiin visualisoinnissa. Asian havainnollistamiseksi voidaan ajatella esimerkiksi osakkeen hintaa yhden vuoden ajalta. Sitä kuvataan viivakaaviovisualisoinnilla, johon valitaan 365 arvopistettä eli yksi arvopiste jokaiselle päivälle.
 
-Tässä tilanteessa osakkeen hinnalla on monia arvoja jokaisena päivänä. Luonnollisesti osakkeella on alin ja ylin hinta, mutta ne voivat ilmetä mihin tahansa aikaan sellaisina päivinä, kun osakkeilla käydään kauppaa. Suuren tiheyden viivaotannassa näytteet pohjatiedoista saatetaan ottaa klo 10.30 ja klo 12.00, jolloin tuloksena on edustava tilannevedos pohjatiedoista eli hinnasta kyseisinä ajankohtina. Tämä näyte ei kuitenkaan välittämättä taltioi tietopisteen eli kyseisen päivän alinta ja ylintä osakehintaa. Tässä ja monissa muissa tilanteissa näyte kuvaa pohjatietoja edustavasti mutta ei aina pysty taltioimaan tärkeitä kohtia, kuten tässä tapauksessa osakkeen alimpia ja ylimpiä hintoja päivittäin.
+Tässä tilanteessa osakkeen hinnalla on monia arvoja jokaisena päivänä. Luonnollisesti osakkeella on alin ja ylin hinta, mutta ne voivat ilmetä mihin tahansa aikaan sellaisina päivinä, joina osakkeilla käydään kauppaa. Suuren tiheyden viivaotannassa näytteet pohjatiedoista saatetaan ottaa joka päivä klo 10.30 ja klo 24.00, jolloin tuloksena on edustava tilannevedos pohjatiedoista eli hinnasta kyseisinä ajankohtina. Tämä näyte ei kuitenkaan välittämättä taltioi tietopisteen eli kyseisen päivän alinta ja ylintä osakehintaa. Tässä ja monissa muissa tilanteissa näyte kuvaa pohjatietoja edustavasti mutta ei aina pysty taltioimaan tärkeitä seikkoja, kuten tässä tapauksessa osakkeen alimpia ja ylimpiä hintoja päivittäin.
 
-Suuren tiheyden tiedoista otetaan näytteitä siksi, että visualisoinnit voidaan luoda kohtuullisen nopeasti ja että niiden vuorovaikutteisuus säilyy. Jos visualisoinnissa on liikaa arvopisteitä, sen käyttö hidastuu ja trendit voivat jäädä hahmottamatta. Näytteenottoalgoritmeja kehitetään puolestaan sen takia, että tällaisista tiedoista saataisiin tuotettua parhaita mahdollisia visualisointeja. Power BI Desktopin käyttämää algoritmia on parannettu siten, että se tarjoaa parhaan vasteajan ja esityksen. Sen tavoitteena on lisäksi ollut taltioida tärkeimmät arvopisteet jokaisesta näytteistetystä ajankohdasta.
+Suuren tiheyden tiedoista otetaan näytteitä siksi, että voidaan luoda kohtuullisen nopeasti visualisointeja, joiden vuorovaikutteisuus säilyy. Jos visualisoinnissa on liikaa arvopisteitä, sen käyttö hidastuu ja trendit voivat jäädä hahmottamatta. Näytteenottoalgoritmeja kehitetään siis sen takia, että tällaisista tiedoista saataisiin tuotettua parhaita mahdollisia visualisointeja. Power BI Desktopin käyttämää algoritmia on parannettu siten, että se tarjoaa parhaan vasteajan ja esityksen. Sen tavoitteena on lisäksi taltioida tärkeimmät arvopisteet jokaisesta näytteistetystä ajankohdasta.
 
 ## <a name="how-the-new-line-sampling-algorithm-works"></a>Uuden viivaotanta-algoritmin toimintaperiaate
 Suuren tiheyden viivaotannan uusi algoritmi on käytettävissä jatkuvan X-akselin sisältävien viivakaavioiden ja aluekaavioiden visualisointiin.
 
-Visualisointia varten **Power BI** viipaloi älykkäästi suuren tiheyden tiedot lohkoihin ja poimii sitten tärkeät arvopisteet jokaisen lohkon esittämiseksi. Suuren tiheyden tietojen viipalointiprosessi on säädetty erityisesti sen varmistamiseksi, että tuloksena syntyvää kaaviota ei voi visuaalisesti erottaa kaaviosta, joka syntyisi kaikista pohjana olevista arvopisteistä. Visualisointi on kuitenkin koko tietomäärästä luotua paljon nopeampi ja vuorovaikutteisempi.
+Suuren tiheyden visualisointia varten **Power BI** viipaloi älykkäästi suuren tiheyden tiedot lohkoihin ja poimii sitten tärkeät arvopisteet edustamaan kutakin lohkoa. Suuren tiheyden tietojen viipalointiprosessi on säädetty erityisesti sen varmistamiseksi, että tuloksena syntyvää kaaviota ei voi visuaalisesti erottaa kaaviosta, joka syntyisi kaikista pohjana olevista arvopisteistä. Visualisointi on kuitenkin koko tietomäärästä luotua paljon nopeampi ja vuorovaikutteisempi.
 
 ### <a name="minimum-and-maximum-values-for-high-density-line-visuals"></a>Suuren tiheyden viivavisualisointien vähimmäis- ja enimmäisarvot
 Kaikkia visualisointeja koskevat seuraavat rajoitukset:
@@ -63,16 +63,16 @@ Jokaisen sarjan pienin askelvälimäärä on 350 pistettä ja suurin 3 500.
 
 Jokainen lokero esitetään kahdella arvopisteellä, joista muodostetaan lokeroa edustavat arvopisteet visualisointiin. Arvopisteet ovat yksinkertaisesti lokeron ylin ja alin arvo. Valitsemalla nämä arvot lokerointiprosessi varmistaa, että visualisointiin tallennetaan ja hahmonnetaan kaikki mahdolliset tärkeät ylimmät ja alimmat arvot.
 
-Tämä saattaa kuulostaa siltä kuin satunnaisten poikkeavien havaintojen taltiointiin ja visualisointiin käytettäisiin paljon analysointia – ja näin myös on. Juuri siitä syystä uusi algoritmi ja lokerointiprosessi on kehitetty.
+Tämä saattaa kuulostaa siltä kuin satunnaisten poikkeavien havaintojen taltiointia ja visualisointia analysoitaisiin paljon – ja näin myös on. Juuri siitä syystä uusi algoritmi ja lokerointiprosessi on kehitetty.
 
 ## <a name="tooltips-and-high-density-line-sampling"></a>Työkaluvihjeet ja suuren tiheyden viivaotanta
-On tärkeää huomioida, että tämä lokerointiprosessi, jossa lokeron enimmäis- ja vähimmäisarvot taltioidaan ja esitetään visualisoinnissa, saattaa vaikuttaa työkaluvihjeiden näyttämiin tietoihin, kun hiiri viedään arvopisteiden ylle. Käytetään mallina artikkelin aiempaa esimerkkiä osakkeiden hinnoista.
+On tärkeää huomioida, että tämä lokerointiprosessi, jossa lokeron enimmäis- ja vähimmäisarvot taltioidaan ja esitetään visualisoinnissa, saattaa vaikuttaa työkaluvihjeiden näyttämiin tietoihin, kun hiiri viedään arvopisteiden ylle. Käytetään mallina aiempaa esimerkkiä osakkeiden hinnoista.
 
-Oletetaan tilanne, että olet luomassa visualisointia osakkeen hinnasta ja vertaat kahta eri osaketta, joista kummassakin käytetään **suuren tiheyden näytteenottoa**. Kummankin sarjan pohjatiedoissa on paljon arvopisteitä, kuten osakkeen hinta päivän jokaisena sekuntina. Suuren tiheyden näytteenottoalgoritmi lokeroi kummankin sarjan erillään toisistaan.
+Oletetaan, että olet luomassa visualisointia osakkeen hinnasta ja vertaat kahta eri osaketta, joista kummassakin käytetään **suuren tiheyden näytteenottoa**. Kummankin sarjan pohjatiedoissa on paljon arvopisteitä, kuten osakkeen hinta päivän jokaisena sekuntina. Suuren tiheyden näytteenottoalgoritmi lokeroi kunkin sarjan erillään toisistaan.
 
-Oletetaan sitten, että ensimmäisen osakkeen hinta nousee klo 12.02 ja laskee nopeasti kymmenen sekuntia myöhemmin – tämä on tärkeä arvopiste. Kun osake lokeroidaan, klo 12.02:n hintapiikki muodostuu lokeron edustavaksi arvopisteeksi.
+Oletetaan sitten, että ensimmäisen osakkeen hinta nousee kello 12.02 ja laskee nopeasti kymmenen sekuntia myöhemmin. Tämä on tärkeä arvopiste. Kun osake lokeroidaan, klo 12.02:n hintapiikki muodostuu lokeron edustavaksi arvopisteeksi.
 
-Toisen osakkeen hinta puolestaan ei klo 12.02 ollut nousussa tai laskussa tämän ajan sisältävässä lokerossa. Ehkä nousu tai lasku lokerolle, joka sisältää 12.02:n, ilmeni kolme minuuttia myöhemmin. Kun tässä tilanteessa viivakaavio on luotu ja viet hiiren klo 12.02:n ylle, näet työkaluvihjeessä ensimmäisen osakkeen arvon, koska se nousi klo 12.02 ja arvo valittiin tämän lokeron ylimmäksi arvopisteeksi. *Et* kuitenkaan näe mitään arvoa toisen osakkeen klo 12.02:n työkaluvihjeessä. Tämä johtuu siitä, että toisella osakkeella ei ollut ylintä tai alinta arvoa lokerossa, joka sisältää klo 12.02:n. Toisen osakkeen hinnalle ei siis ole näytettävää arvoa klo 12.02 eikä näin ollen näytettävää tietoa työkaluvihjeessäkään.
+Toisen osakkeen ylin tai alin arvo ei kuitenkaan osunut ajan 12.02 sisältävään lokeroon. Lokeron, joka sisältää klo 12.02:n, ylin ja alin arvo saattoivat ilmetä kolme minuuttia myöhemmin. Kun tässä tilanteessa viivakaavio on luotu ja viet hiiren klo 12.02:n ylle, näet työkaluvihjeessä ensimmäisen osakkeen arvon, koska se nousi klo 12.02 ja arvo valittiin tämän lokeron ylimmäksi arvopisteeksi. *Et* kuitenkaan näe mitään arvoa toisen osakkeen klo 12.02:n työkaluvihjeessä. Tämä johtuu siitä, että toisella osakkeella ei ollut ylintä tai alinta arvoa lokerossa, joka sisältää klo 12.02:n. Toisen osakkeen hinnalle ei siis ole näytettävää arvoa klo 12.02 eikä näin ollen näytettävää tietoa työkaluvihjeessäkään.
 
 Tämä tilanne toistuu työkaluvihjeissä usein. Tietyn lokeron ylimmät ja alimmat arvot eivät välttämättä täysin täsmää tasaisesti skaalatun X-akselin arvopisteiden kanssa, ja siksi työkaluvihje ei näytä arvoa.  
 
@@ -84,7 +84,7 @@ Oletusarvoisesti uusi algoritmi on **käytössä**. Voit muuttaa tätä asetusta
 ## <a name="considerations-and-limitations"></a>Huomioon otettavat seikat ja rajoitukset
 Suuren tiheyden viivaotannan uusi algoritmi on merkittävä parannus Power BI:hin, mutta suuren tiheyden arvojen ja tietojen käsittelyssä on muutamia huomioon otettavia seikkoja.
 
-* Parannettu askelväli ja lokerointiprosessi saattavat aiheuttaa sen, että **työkaluvihjeet** näyttävät arvon vain, jos kohdistimen paikkaa vastaa edustava arvopiste. Lisätietoja on tämän artikkelin **työkaluvihjeitä** käsittelevässä osiossa.
+* Parannettu askelväli ja lokerointiprosessi saattavat aiheuttaa sen, että **työkaluvihjeet** näyttävät arvon vain, jos kohdistimen paikkaa vastaa edustava arvopiste. Katso lisätietoja tämän artikkelin *Työkaluvihjeet ja suuren tiheyden viivaotanta* -osiosta.
 * Kun tietolähteen koko on liian suuri, uusi algoritmi jättää käsittelemättä sarjoja (selitteen osia) tietojen tuomisen enimmäisrajoitusten noudattamiseksi.
   
   * Tässä tilanteessa uusi algoritmi järjestää selitesarjat aakkosjärjestykseen ja alkaa käydä läpi selitteen osien luetteloa aakkosjärjestyksessä, kunnes tietojen tuomisen enimmäisraja täyttyy. Sen jälkeen lisäsarjoja ei tuoda.
