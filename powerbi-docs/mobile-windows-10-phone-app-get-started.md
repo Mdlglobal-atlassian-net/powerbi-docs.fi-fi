@@ -1,27 +1,19 @@
 ---
 title: Windows 10:n Power BI -mobiilisovelluksen käytön aloittaminen
 description: Windows 10:n Power BI -mobiilisovellus tuo ajan tasalla olevan, kosketuskäyttöisen mobiiliyhteyden yritystietoihisi tabletissa tai puhelimessa.
-services: powerbi
-documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-mobile
+ms.topic: conceptual
 ms.date: 12/05/2017
 ms.author: maggies
-ms.openlocfilehash: 97fb3625848210f6222317cf3fc48eea305ef04d
-ms.sourcegitcommit: 7248b5e449b2495d6baef385470d18edfacec457
+ms.openlocfilehash: 6cd1c8aec1bf31a8cae43074531014cbeef71bd5
+ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/08/2017
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="get-started-with-the-power-bi-mobile-app-for-windows-10"></a>Windows 10:n Power BI -mobiilisovelluksen käytön aloittaminen
 Windows 10:n Power BI -mobiilisovellus tuo Power BI:n tablettiin tai puhelimeen ja sen myötä ajan tasalla olevan, kosketuskäyttöisen mobiiliyhteyden yritystietoihisi. Tarkastele ja käytä yrityksesi koontinäyttöjä missä tahansa kätevästi [Windowsin Aloitusnäytöllä](mobile-pin-dashboard-start-screen-windows-10-phone-app.md).
@@ -33,7 +25,7 @@ Voit [luoda koontinäyttöjä ja raportteja Power BI -palvelussa](service-get-st
 Sitten voit käyttää koontinäyttöjä ja raportteja, tutkia tietoja ja jakaa niitä – kaikki voidaan tehdä Windows 10:n Power BI -mobiilisovelluksesta käsin.
 
 ## <a name="first-things-first"></a>Aloitetaan tärkeimmästä
-* [**Hanki Windows 10:n Power BI -mobiilisovellus**  ](http://go.microsoft.com/fwlink/?LinkID=526478) Windows Storesta.
+* [**Hanki Windows 10:n Power BI -mobiilisovellus ** ](http://go.microsoft.com/fwlink/?LinkID=526478) Windows Storesta.
   
   Laitteessa on oltava käytössä Windows 10. Sovellusta voidaan käyttää laitteissa, joissa on vähintään 3 Gigatavua RAM-muistia ja 8 Gigatavua tallennustilaa.
    

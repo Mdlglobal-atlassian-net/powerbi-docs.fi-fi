@@ -1,28 +1,20 @@
 ---
 title: Muotokarttojen käyttö Power BI Desktopissa (esikatselu)
 description: Alueiden suhteellisten vertailujen luominen muotokartoilla Power BI Desktopissa
-services: powerbi
-documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 01/16/2018
+ms.component: powerbi-desktop
+ms.topic: conceptual
+ms.date: 05/02/2018
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 0b2ff8d7b7367e29e62b373ca9cb1312f7ddd10f
-ms.sourcegitcommit: afa10c016433cf72d6d366c024b862187a8692fd
+ms.openlocfilehash: 019aa1425d05fcfdc4415570acdc29e7a684dc25
+ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="shape-maps-in-power-bi-desktop-preview"></a>Muotokartat Power BI Desktopissa (esikatselu)
 Power BI Desktopissa voit luoda **Muotokartta**-visualisoinnin, jolla näytät alueiden suhteellisia vertailuja kartalla näyttämällä eri alueet eri värein. **Kartta**-visualisointiin verrattuna **Muotokartta**-visualisoinnilla ei voi näyttää arvopisteiden tarkkoja maantieteellisiä sijainteja kartalla. Muotokartan päätarkoitus on sen sijaan näyttää alueiden suhteellisia vertailuja kartalla siten, että eri alueilla on eri värit.

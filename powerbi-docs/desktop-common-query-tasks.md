@@ -1,28 +1,20 @@
 ---
 title: Yleiset kyselytehtävät Power BI Desktopissa
 description: Yleiset kyselytehtävät Power BI Desktopissa
-services: powerbi
-documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 12/06/2017
+ms.component: powerbi-desktop
+ms.topic: conceptual
+ms.date: 04/24/2018
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 37c5e55d426d308fe8ea7de5c6604a9c66f81896
-ms.sourcegitcommit: afa10c016433cf72d6d366c024b862187a8692fd
+ms.openlocfilehash: 6f80c1cc5d0b97318fe9e9b0653d166d571d1310
+ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="common-query-tasks-in-power-bi-desktop"></a>Yleiset kyselytehtävät Power BI Desktopissa
 Power BI Desktopin **kyselyeditorissa** on muutamia usein käytettyjä tehtäviä. Tässä asiakirjassa kerrotaan näistä yleisistä tehtävistä ja annetaan linkkejä lisätietoihin. 

@@ -1,27 +1,19 @@
 ---
 title: Rivitason suojaus Power BI:n upotetussa sisällössä
 description: Lue ohjeet, miten voit upottaa Power BI -sisältöä sovellukseesi.
-services: powerbi
-documentationcenter: ''
 author: markingmyname
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-developer
+ms.topic: conceptual
 ms.date: 02/22/2018
 ms.author: maghan
-ms.openlocfilehash: 0d7127d43e2764e1dcd15f7052b3367c8629d2f6
-ms.sourcegitcommit: 4217430c3419046c3a90819c34f133ec7905b6e7
+ms.openlocfilehash: 218f4cd0aaaa5ffc8cab3a06b06af9544b02143d
+ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="use-row-level-security-with-power-bi-embedded-content"></a>Rivitason suojaus Power BI:n upotetussa sisällössä
 Rivitason suojauksen (row level security, RLS) avulla käyttäjien käyttöoikeuksia koontinäyttöjen, ruutujen, raporttien ja tietojoukkojen tietoihin voidaan rajoittaa. Eri käyttäjät voivat nähdä eri tiedot käyttäessään kyseisiä kohteita. Upottaminen tukee rivitason suojausta.
