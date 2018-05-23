@@ -4,13 +4,13 @@ Teit sen! **Onnittelut!** Olet suorittanut Power BI:n **Ohjattu oppiminen** -kur
 
 Tämä on kurssin viimeinen osio (ja viimeinen aihe, ellet halua opetella DAX:n käyttöä). Jos siis suoritit kaikki osiot järjestyksessä, voit nyt onnitella itseäsi. Hienoa työtä! Osaat ja tunnet nyt kaikki seuraavat **tärkeät käsitteet** ja asiat:
 
-* [Power BI:n kuvaus](../gettingstarted.yml#step-1)
-* Power BI:n [osat](../gettingstarted.yml#step-3)
-* tietojen [hankkiminen](../gettingdata.yml#step-3) ja [mallintaminen](../modeling.yml#step-1)
-* [visualisoinnit](../visualizations.yml#step-1)
-* [tietojen analysointi](../exploringdata.yml#step-1) Power BI -palvelussa
-* [Excelin ja Power BI:n](../powerbiandexcel.yml#step-1) käyttäminen yhdessä
-* omien töiden [julkaiseminen ja jakaminen](../publishingandsharing.yml#step-1).
+* [Power BI:n kuvaus](../gettingstarted.yml?tutorial-step=1)
+* Power BI:n [osat](../gettingstarted.yml?tutorial-step=3)
+* tietojen [hankkiminen](../gettingdata.yml?tutorial-step=3) ja [mallintaminen](../modeling.yml?tutorial-step=1)
+* [visualisoinnit](../visualizations.yml?tutorial-step=1)
+* [tietojen analysointi](../exploringdata.yml?tutorial-step=1) Power BI -palvelussa
+* [Excelin ja Power BI:n](../powerbiandexcel.yml?tutorial-step=1) käyttäminen yhdessä
+* omien töiden [julkaiseminen ja jakaminen](../publishingandsharing.yml?tutorial-step=1).
 
 Olet siis oppinut paljon, joten nyt on aika panna oppimasi hyvään käyttöön! Tässä on joitain **linkkejä ladattaviin resursseihin** sekä selaimen **yhdistämiseen Power BI -palveluun**:
 

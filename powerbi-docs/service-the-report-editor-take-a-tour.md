@@ -1,29 +1,21 @@
 ---
-title: 'Pikaopas – Raporttieditori: esittely'
+title: 'Raporttieditori: esittely'
 description: 'Raporttieditori: esittely'
-services: powerbi
-documentationcenter: ''
 author: mihart
 manager: kfile
-backup: ''
-editor: ''
+ms.reviewer: ''
 featuredvideoid: IkJda4O7oGs
-tags: ''
-qualityfocus: no
-qualitydate: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 02/28/2018
+ms.component: powerbi-service
+ms.topic: conceptual
+ms.date: 04/11/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: ea40bafdc3c210771e5dd02368df41d3d9287baf
-ms.sourcegitcommit: 5e1f7d2673efe25c47b9b9f315011055bfe92c8f
+ms.openlocfilehash: ef05531ee6080593d232e48a2118a9be7e8cbd19
+ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="the-report-editortake-a-tour"></a>Raporttieditori: esittely
 ## <a name="editing-reports-in-power-bi-service-and-power-bi-desktop"></a>Raporttien muokkaus Power BI -palvelussa ja Power BI Desktopissa
@@ -56,7 +48,6 @@ Raporttieditorissa näytetty sisältö vaihtelee raportin piirtoalustassa tehtyj
 |  |  |
 | --- | --- |
 | ![](media/service-the-report-editor-take-a-tour/power-bi-panes.png) |<ul><li>Visualisointi-ruudun yläosassa määritetään käytettävän visualisoinnin tyyppi eli tässä esimerkissä yhdistelmäpylväskaavio.<br><br></li> <li>Visualisointi-ruudun alaosassa (sinun on ehkä vieritettävä alaspäin) näytetään visualisoinnissa käytettävät kentät. Tässä kaaviossa käytetään Verokuukausi-, Aluepäällikkö- ja  Kokonaismyyntivaihtelu-kenttiä. <br><br></li><li>Suodattimet-ruudussa (sinun on ehkä vieritettävä alaspäin) näytetään kaikki sovelletut suodattimet. <br><br></li><li>Kentät-ruudussa luetteloidaan saatavilla olevat taulukot ja, jos laajennat taulukon nimeä, tämän taulukon perustana olevat kentät. Keltainen fontti kertoo, että visualisoinnissa käytetään vähintään yhtä tämän taulukon kenttää.<br><br></li><li>![maalirullakuvake](media/service-the-report-editor-take-a-tour/power-bi-paint-roller-icon.png) Voit näyttää valitun visualisoinnin muotoiluruudun valitsemalla maalirullakuvakkeen.<br><br></li><li>![suurennuslasikuvake](media/service-the-report-editor-take-a-tour/power-bi-magnifying-icon.png) Voit näyttää Analytiikka-ruudun valitsemalla suurennuslasikuvakkeen.</ul> |
-|  | |
 
 ## <a name="the-visualizations-pane-from-top-to-bottom"></a>Visualisoinnit-ruutu (ylhäältä alaspäin)
 ![Visualisointi-ruudun yläosa](media/service-the-report-editor-take-a-tour/selectviz.png)

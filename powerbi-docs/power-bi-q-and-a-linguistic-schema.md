@@ -1,28 +1,20 @@
 ---
 title: Q&A:n lingvistisen rakenteen muokkaaminen ja muotoilujen lisääminen
 description: Power BI Q&A:n käyttämän lingvistisen rakenteen muokkaaminen Power BI Desktopin avulla.
-services: powerbi
-documentationcenter: ''
 author: willthom
 manager: kfile
-backup: mihart
-editor: ''
-tags: ''
-qualityfocus: ''
-qualitydate: ''
+ms.reviewer: mihart
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 04/20/2018
 ms.author: mihart
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 3be0422e914b4f78826715f03c9ddcd92baa7ead
-ms.sourcegitcommit: 493f160d04ed411ff4741c599adc63ba1f65230f
+ms.openlocfilehash: b7fb59e7fca6a3211b542b2a942565d6865e560c
+ms.sourcegitcommit: 998b79c0dd46d0e5439888b83999945ed1809c94
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="language-modeling-and-the-linguistic-schema"></a>Kielen mallintaminen ja lingvistinen rakenne 
 Yleisien lauseiden ja luonnollisen kielen käyttäminen tiedoista esitettävissä kysymyksissä on tehokasta. Vielä tehokkaampaa on, kun tiedot vastaavat, minkä Power BI:n Q&A-toiminto mahdollistaa. Kun esität Power BI Q&A:lle kysymyksen, se pyrkii parhaansa mukaan vastaamaan oikein. 
@@ -353,4 +345,4 @@ Jos teet .lsdl.yaml-tiedostoon muutoksen, joka ei vastaa lingvistisen rakenteen 
     ![yaml file showing errors](media/power-bi-q-and-a-linguistic-schema/power-bi-yaml-errors.png)
 
 
-Onko sinulla muuta kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
+Ilmenikö muuta kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
