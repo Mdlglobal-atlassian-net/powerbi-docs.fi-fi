@@ -1,27 +1,19 @@
 ---
 title: Power BI -raportin integrointi sovellukseen organisaatiolle
 description: Lue, miten voit integroida tai upottaa raportin verkkosovellukseen Power BI -ohjelmointirajapintojen avulla.
-services: powerbi
-documentationcenter: ''
 author: markingmyname
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: get-started-article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-developer
+ms.topic: conceptual
 ms.date: 10/05/2017
 ms.author: maghan
-ms.openlocfilehash: 9ed341eb4428795bb4714ae8f1a34fd11c1bcbcd
-ms.sourcegitcommit: 6e693f9caf98385a2c45890cd0fbf2403f0dbb8a
+ms.openlocfilehash: d2fa65587fdbd85aabd429d531b79e9e614d2f49
+ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="integrate-a-report-into-an-app-for-your-organization"></a>Raportin integrointi sovellukseen organisaatiolle
 Lue, miten voit integroida tai upottaa raportin verkkosovellukseen REST-ohjelmointirajapinnan kutsujen ja Power BI JavaScript -ohjelmointirajapinnan avulla organisaatiolle.
@@ -48,7 +40,7 @@ Jos olet ladannut [integrate-report-web-app](https://github.com/Microsoft/PowerB
 ![](media/integrate-report/powerbi-embed-dashboard-register-app4.png)
 
 ## <a name="step-2---get-an-access-token-from-azure-ad"></a>Vaihe 2 – Hanki käyttöoikeustietue Azure AD:stä
-Sinun on ensin saatava sovelluksessa **käyttöoikeustietue** Azure AD:stä ennen kuin voit lähettää kutsuja Power BI REST -ohjelmointirajapintaan. Katso lisätietoja artikkelista [Käyttäjien todentaminen ja Azure AD -käyttöoikeustietueen saanti Power BI -sovellukselle](get-azuread-access-token.md).
+Sinun on hankittava sovelluksessa **käyttöoikeustietue** Azure AD:stä, ennen kuin voit lähettää kutsuja Power BI REST -ohjelmointirajapintaan. Katso lisätietoja artikkelista [Käyttäjien todentaminen ja Azure AD -käyttöoikeustietueen saanti Power BI -sovellukselle](get-azuread-access-token.md).
 
 ## <a name="step-3---get-a-report"></a>Vaihe 3 – Hanki raportti
 Voit hankkia **Power BI** -raportin käyttämällä [Hanki raportit](https://msdn.microsoft.com/library/mt634543.aspx) -toimintoa, joka antaa **Power BI** -raporttien luettelon. Saat raporttien luettelosta raporttitunnuksen.
