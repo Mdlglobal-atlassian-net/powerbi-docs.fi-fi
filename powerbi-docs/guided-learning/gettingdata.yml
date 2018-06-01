@@ -1,0 +1,69 @@
+### YamlMime:Tutorial
+title: Tietojen hankkiminen
+metadata:
+  title: Tietojen hankkiminen | Microsoft Power BI
+  description: Tutustu moneen eri tapaan hankkia ja käsitellä tietoja Power BI:ssä.
+  audience: Business User
+  level: Beginner
+  nextTutorialHref: modeling
+  nextTutorialTitle: Mallintaminen
+  displayType: one-column
+  author: davidiseminger
+  manager: kfile
+  ms.service: powerbi
+  ms.topic: get-started-article
+  ms.date: 12/05/2017
+  ms.author: davidi
+  ms.openlocfilehash: 7a825054ddafc5277988df6b3760bca42a508704
+  ms.sourcegitcommit: 7bf22bb1136fdb0f962422e16e837187f090827c
+  ms.translationtype: HT
+  ms.contentlocale: fi-FI
+  ms.lasthandoff: 02/06/2018
+  ms.locfileid: "29704615"
+items:
+- durationInMinutes: 1
+  content: >
+    Tiedot ovat Power BI:n ydin. Tässä **ohjatun oppimisen** osiossa opit hankkimaan ja käyttämään tietoja Power BI:n avulla.
+- title: Power BI Desktopin yleiskatsaus
+  durationInMinutes: 4
+  content: >
+    > [!Video https://www.youtube.com/embed/mdy-eRev6HM?rel=0]
+
+
+    [!INCLUDE [](includes/1-1-overview-of-power-bi-desktop.md)]
+- title: Power BI Desktopin käytön aloittaminen
+  durationInMinutes: 9
+  content: >
+    > [!Video https://www.youtube.com/embed/1Bo1BrpR3AY?rel=0]
+
+
+    [!INCLUDE [](includes/0-2-get-started-power-bi-desktop.md)]
+- title: Yhteyden muodostaminen tietolähteisiin Power BI Desktopissa
+  durationInMinutes: 8
+  content: >
+    > [!Video https://www.youtube.com/embed/S6s0osmRCZ4?rel=0]
+
+
+    [!INCLUDE [](includes/1-2-connect-to-data-sources-in-power-bi-desktop.md)]
+- title: Tietojen puhdistaminen ja muuntaminen kyselyeditorilla
+  durationInMinutes: 8
+  content: >
+    > [!Video https://www.youtube.com/embed/o-sinon5JYY?rel=0]
+
+
+    [!INCLUDE [](includes/1-3-clean-and-transform-data-with-query-editor.md)]
+- title: Kehittyneemmät tietolähteet ja muuntaminen
+  durationInMinutes: 8
+  content: >
+    > [!Video https://www.youtube.com/embed/8WsY0R2V_bw?rel=0]
+
+
+    [!INCLUDE [](includes/1-4-advanced-data-sources-and-transformation.md)]
+- title: Epäsäännöllisesti muotoiltujen tietojen puhdistaminen
+  durationInMinutes: 8
+  content: >
+    > [!Video https://www.youtube.com/embed/74KQmzdvFV8?rel=0]
+
+
+    [!INCLUDE [](includes/1-5-cleaning-irregular-data.md)]
+- content: Hyvää työtä! Olet suorittanut Microsoft Power BI:n ohjatun oppimisen **Tietojen hankkiminen** -osion. Seuraava vaihe on tietojen **mallinnus**, johon tutustutaan seuraavassa osiossa.
