@@ -1,29 +1,21 @@
 ---
 title: Ohjeet Power BI Premiumin ostamiseen
 description: Lue, miten voit hallita Power BI Premiumia ja sallia sisällön käytön koko organisaatiossa.
-services: powerbi
-documentationcenter: ''
 author: mgblythe
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-admin
+ms.topic: conceptual
 ms.date: 10/17/2017
 ms.author: mblythe
 LocalizationGroup: Premium
-ms.openlocfilehash: e5bf5f4995c628640de2400f1097e89969eded7d
-ms.sourcegitcommit: 8552a34df8e6141eb704314c1a019992901d6e78
+ms.openlocfilehash: 2789f2e3e8198ddc0363fb07488f5fe8f39441a6
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/08/2018
-ms.locfileid: "30932521"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34297373"
 ---
 # <a name="how-to-purchase-power-bi-premium"></a>Ohjeet Power BI Premiumin ostamiseen
 Opi, miten voit ostaa organisaatiollesi Power BI Premiumin kapasiteettia.

@@ -1,29 +1,21 @@
 ---
 title: Raportit Power BI:ssä
 description: Raportit Power BI:ssä
-services: powerbi
-documentationcenter: ''
 author: mihart
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 03/01/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 664e07b1a772c0eb5d14372061511bc86c671b64
-ms.sourcegitcommit: 5e1f7d2673efe25c47b9b9f315011055bfe92c8f
+ms.openlocfilehash: 0d11c1bd865aade1ad54a361a0616f6426da1a67
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/09/2018
-ms.locfileid: "30974737"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34248407"
 ---
 # <a name="reports-in-power-bi"></a>Raportit Power BI:ssä
 ## <a name="what-is-a-power-bi-report"></a>Mikä on Power BI -raportti?
