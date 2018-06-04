@@ -1,28 +1,20 @@
 ---
 title: Ajoitetun päivityksen vianmääritys Power BI -raporttipalvelimessa
 description: Tässä artikkelissa kerrotaan resursseista, joita on saatavilla ajoitetun päivityksen vianmääritykseen Power BI -raporttipalvelimessa.
-services: powerbi
-documentationcenter: ''
 author: markingmyname
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-report-server
+ms.topic: conceptual
 ms.date: 11/01/2017
 ms.author: maghan
-ms.openlocfilehash: 466505ae2c4050629e8bbcc4ff90cde520d31375
-ms.sourcegitcommit: 6e693f9caf98385a2c45890cd0fbf2403f0dbb8a
+ms.openlocfilehash: a90f22c262a314b50981be94121e2573f9fe525a
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/30/2018
-ms.locfileid: "30973192"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34296361"
 ---
 # <a name="troubleshoot-scheduled-refresh-in-power-bi-report-server"></a>Ajoitetun päivityksen vianmääritys Power BI -raporttipalvelimessa
 Tässä artikkelissa kerrotaan resursseista, joita on saatavilla ajoitetun päivityksen vianmääritykseen Power BI -raporttipalvelimessa.
@@ -61,7 +53,6 @@ Seuraavien asetusten avulla voidaan vaikuttaa ajoitettuun päivitykseen. SQL Ser
 
 | Asetus | Kuvaus |
 | --- | --- |
-| EnablePowerBIReportEmbeddedModels |Ottaa käyttöön tai poistaa käytöstä mahdollisuuden käyttää tuotuja tietoja raporteissasi. Kelvollisia arvoja ovat True tai False. |
 | MaxFileSizeMb |Ladattujen raporttien suurin sallittu tiedostokoko. Oletus on 1 000 Mt (1 Gt). Suurin sallittu arvo on 2 000 Mt (2 Gt). |
 | ModelCleanupCycleMinutes |Määrittää, kuinka usein malli tarkistetaan sen häätämiseksi muistista. Oletus on 15 minuuttia. |
 | ModelExpirationMinutes |Määrittää ajan siihen, kunnes malli vanhenee viimeisimmän käyttöajan perusteella ja se häädetään. Oletus on 60 minuuttia. |
