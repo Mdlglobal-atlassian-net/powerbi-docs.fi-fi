@@ -1,30 +1,22 @@
 ---
 title: Power BI -palvelun ja Power BI Desktopin raporttien visualisointien yleiskatsaus
 description: Microsoft Power BI:n raporttien visualisointien yleiskatsaus.
-services: powerbi
-documentationcenter: ''
 author: mihart
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
+ms.reviewer: ''
 featuredvideoid: SYk_gWrtKvM
-qualityfocus: no
-qualitydate: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 01/21/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: f6846a58642dd65545016a7159f6bb461edaf373
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: f0e0dc02fc07849c68c00ce857da0ccbeb2d76df
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/24/2018
-ms.locfileid: "30974357"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34240183"
 ---
 # <a name="visualizations-in-power-bi-reports"></a>Visualisoinnit Power BI -raporteissa
 Visualisoinnit näyttävät merkityksellisiä tietoja datasta. Power BI -raportissa voi olla yksittäinen visualisointi yhdellä sivulla tai sivukaupalla visualisointeja. Power BI -palvelussa visualisointeja voi [kiinnittää raporteista koontinäyttöihin](service-dashboard-pin-tile-from-report.md). 
