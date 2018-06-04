@@ -1,29 +1,21 @@
 ---
 title: Visualisoinnin siirtäminen, koon muuttaminen ja ponnahduskäyttö
 description: Visualisoinnin siirtäminen ja koon muuttaminen Power BI- palvelussa ja työpöydällä
-services: powerbi
-documentationcenter: ''
 author: mihart
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 12/20/2017
+ms.component: powerbi-desktop
+ms.topic: conceptual
+ms.date: 03/23/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: a46df6e225a5546f58e4f111d9cd3920a128614c
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 38c8787592407e15711617f0baac10f2a81790dd
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/24/2018
-ms.locfileid: "30973832"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34291600"
 ---
 # <a name="move-and-resize-a-visualization-in-a-report-in-power-bi-service-and-power-bi-desktop"></a>Visualisoinnin siirtäminen ja koon muuttaminen palvelussa ja työpöydällä
 Vain raportin luojat ja omistajat voivat siirtää visualisointeja ja muuttaa niiden kokoa. Power BI -palvelussa (app.powerbi.com) se tarkoittaa raportin avaamista  [Muokkausnäkymässä](service-reading-view-and-editing-view.md).
@@ -44,9 +36,5 @@ Avaa Power BI:ssa raportti, jossa on vähintään yksi visualisointi tai [luo uu
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 [Visualisoinnin koon muuttaminen raporttinäkymässä](service-dashboard-edit-tile.md)  
-
-[Visualisoinnit Power BI -raporteissa](power-bi-report-visualizations.md)  
-
-[Power BI:n peruskäsitteet](service-basic-concepts.md)  
 
 Onko sinulla muuta kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)

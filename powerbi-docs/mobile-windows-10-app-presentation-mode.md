@@ -1,28 +1,20 @@
 ---
 title: Power BI:n käyttö esitystilassa Surface Hubilla, Windows 10 - Power BI I
 description: Lue miten Power BI -raportteja näytetään surface Hubilla ja miten Power BI -raporttinäkymiä, raportteja ja ruutuja näytetään Windows 10 -laitteilla koko näytön tilassa.
-services: powerbi
-documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-mobile
+ms.topic: conceptual
 ms.date: 10/13/2017
 ms.author: maggies
-ms.openlocfilehash: cd4fa5d694b76a93ccb017ec17473e8f2775ed85
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: 13bfd1d587d59c1c87f03605dbe62f60fa90f5c6
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/13/2017
-ms.locfileid: "30972022"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34293417"
 ---
 # <a name="view-reports-in-presentation-mode-on-surface-hub-and-windows-10---power-bi"></a>Raporttien esittäminen esitystilassa Surface Hubilla ja Windows 10 -laitteilla - Power BI
 Voit esittää raportteja Surface Hubin esitystilassa ja raporttinäkymiä, raportteja ja ruutuja Windows 10 -laitteiden koko näytön tilassa. 

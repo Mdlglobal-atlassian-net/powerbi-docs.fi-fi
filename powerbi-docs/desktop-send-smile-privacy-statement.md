@@ -1,29 +1,21 @@
 ---
 title: Power BI Desktopin Send a Smile -tietosuojatiedot
 description: Power BI Desktopin Send a Smile -tietosuojatiedot
-services: powerbi
-documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-desktop
+ms.topic: conceptual
 ms.date: 03/06/2018
 ms.author: davidi
 LocalizationGroup: Learn more
-ms.openlocfilehash: ac61259fc0f02e8f84a94502e9f8dd89d5ca4b96
-ms.sourcegitcommit: 85d18d9f11a4ce4d4ed65e4544d13da6c2d9b1d4
+ms.openlocfilehash: ff42531dbff46dd95c92832c6aee2d341eb3d93f
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/08/2018
-ms.locfileid: "30975062"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34288218"
 ---
 # <a name="power-bi-desktop-send-a-smile-privacy-statement"></a>Power BI Desktopin Send a Smile -tietosuojatiedot
 

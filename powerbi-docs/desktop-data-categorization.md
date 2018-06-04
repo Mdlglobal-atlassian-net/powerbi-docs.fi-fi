@@ -1,29 +1,21 @@
 ---
 title: Tietojen luokittelu Power BI Desktopissa
 description: Tietojen luokittelu Power BI Desktopissa
-services: powerbi
-documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 12/06/2017
+ms.component: powerbi-desktop
+ms.topic: conceptual
+ms.date: 05/02/2018
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: cc66655e49860160b43afa5d1acb688c37468212
-ms.sourcegitcommit: c80fbf5b12754ce217cb47a17cb5400b1036a8f2
+ms.openlocfilehash: 9fa7310b3d0a20a588b2cc26fc0df177f3d0ab70
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/06/2018
-ms.locfileid: "30976952"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34285412"
 ---
 # <a name="data-categorization-in-power-bi-desktop"></a>Tietojen luokittelu Power BI Desktopissa
 **Power BI Desktopissa** voit määrittää sarakkeen tietoluokan, jolloin Power BI Desktop tietää, miten sen on käsiteltävä kyseisen sarakkeen arvoja visualisoinnissa.

@@ -1,29 +1,21 @@
 ---
 title: OData-syötteeseen yhdistäminen Power BI Desktopissa
 description: OData-syötteeseen yhdistäminen ja sen käyttäminen helposti Power BI Desktopissa
-services: powerbi
-documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 12/06/2017
+ms.component: powerbi-desktop
+ms.topic: conceptual
+ms.date: 04/24/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 3b95ccf558484670f8bacd8a031e94f9b0dbbddd
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 1b744676deecbd84890057af84e331d6e7a15e90
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/24/2018
-ms.locfileid: "30973672"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34290932"
 ---
 # <a name="connect-to-odata-feeds-in-power-bi-desktop"></a>OData-syötteisiin yhdistäminen Power BI Desktopissa
 Power BI Desktopissa voi muodostaa yhteyden **OData-syötteeseen** ja käyttää sen tietoja samaan tapaan kuin muita tietolähteitä käytetään Power BI Desktopissa.

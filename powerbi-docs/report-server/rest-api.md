@@ -1,33 +1,27 @@
 ---
 title: Power BI -raporttipalvelimen julkaisutiedot
 description: REST-ohjelmointirajapinta tarjoaa ohjelmallinen pääsyn Power BI -raporttipalvelimen hakemiston objekteihin.
-services: powerbi
-documentationcenter: ''
 author: markingmyname
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 11/01/2017
+ms.component: powerbi-report-server
+ms.topic: conceptual
+ms.date: 05/25/2018
 ms.author: maghan
-ms.openlocfilehash: 554270d3b7bdbd3de88a7d5865dae8cdf226a6b2
-ms.sourcegitcommit: 6e693f9caf98385a2c45890cd0fbf2403f0dbb8a
+ms.openlocfilehash: a1cbcc6d265504bc93ef6447a6be381ca6399063
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/30/2018
-ms.locfileid: "30973152"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34721750"
 ---
 # <a name="develop-with-the-rest-apis-for-power-bi-report-server"></a>Power BI -raporttipalvelimen REST-ohjelmointirajapintojen käyttö ohjelmankehityksessä
 Power BI-raporttipalvelin tukee Representational State Transfer (REST) -rajapintoja. REST-ohjelmointirajapinnat ovat palvelun päätepisteitä, jotka tukevat tiettyjä HTTP-toimintoja (menetelmät), jotka tarjoavat pääsyn raporttipalvelimen sisältämien resurssien luomiseen, hakemiseen, päivittämiseen tai poistamiseen.
 
 REST-ohjelmointirajapinta tarjoaa ohjelmallinen pääsyn Power BI -raporttipalvelimen hakemiston objekteihin. Objekteja ovat esimerkiksi kansiot, raportit, suorituskykyilmaisimet, tietolähteet, tietojoukot, päivityssuunnitelmat, tilaukset ynnä muut. REST-ohjelmointirajapinnan avulla voit esimerkiksi siirtyä kansiohierarkiassa, tutustua kansion sisältöön tai ladata raporttimäärityksen. Voit myös luoda, päivittää ja poistaa objekteja. Esimerkkejä objektien kanssa työskentelemisestä ovat raportin lataaminen, päivityssuunnitelman toteuttaminen ja niin edelleen.
+
+[!INCLUDE [GDPR-related guidance](../includes/gdpr-hybrid-note.md)]
 
 ## <a name="components-of-a-rest-api-requestresponse"></a>REST-ohjelmointirajapinnan pyynnön/vastauksen osat
 REST-ohjelmointirajapinnan pyyntö/vastaus-pari voidaan jakaa viiteen osaan:

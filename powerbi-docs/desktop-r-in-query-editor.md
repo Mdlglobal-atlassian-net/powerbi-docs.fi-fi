@@ -1,29 +1,21 @@
 ---
 title: R:n käyttäminen Power BI:n kyselyeditorissa
 description: Käytä R:ää Power BI Desktopin kyselyeditorissa kehittyneeseen analyysiin
-services: powerbi
-documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 01/24/2018
+ms.component: powerbi-desktop
+ms.topic: conceptual
+ms.date: 05/02/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: ab6d935eb955dea5e2362a1cc52cf30657f4f8df
-ms.sourcegitcommit: 4217430c3419046c3a90819c34f133ec7905b6e7
+ms.openlocfilehash: 091f17e89bd4fb9658e777f63ac2017239e32b71
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/12/2018
-ms.locfileid: "30975162"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34287321"
 ---
 # <a name="using-r-in-query-editor"></a>R:n käyttö kyselyeditorissa
 Voit käyttää tilastoijien, tiedemiesten ja tietoanalysoijien käyttämää **R**-ohjelmointikieltä Power BI Desktopin **kyselyeditorissa**. Tämän R:n **kyselyeditoriin** integroinnin avulla voit suorittaa tietojen puhdistamisen R:llä ja suorittaa kehittynyttä tietojen muotoilemista ja analyysia tietojoukoissa, kuten puuttuvien tietojen täydentämistä, ennusteita ja klusterointia. **R** on tehokas kieli, ja sitä voidaan käyttää **kyselyeditorissa** valmistelemaan tietomallisi ja raporttien luomiseen.

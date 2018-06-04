@@ -1,27 +1,20 @@
 ---
 title: Power BI -käyttöoikeudet
 description: Power BI -käyttöoikeudet
-services: powerbi
-documentationcenter: ''
 author: markingmyname
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-developer
+ms.topic: conceptual
 ms.date: 09/05/2017
 ms.author: maghan
-ms.openlocfilehash: 61c910731be4ca80cc13784d623720431cd511e7
-ms.sourcegitcommit: 6e693f9caf98385a2c45890cd0fbf2403f0dbb8a
+ms.openlocfilehash: 4ba0e62dd8c9ba537f56c97489541591ec0bf2bc
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34289414"
 ---
 # <a name="power-bi-permissions"></a>Power BI -käyttöoikeudet
 ## <a name="permission-scopes"></a>Käyttöoikeuden vaikutusalueet

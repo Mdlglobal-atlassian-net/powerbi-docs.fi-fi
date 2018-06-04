@@ -1,28 +1,21 @@
 ---
 title: Raportin tallentaminen Power BI:ssä
 description: Raportin tallentaminen Power BI -palvelussa ja Power BI Desktopissa
-services: powerbi
-documentationcenter: ''
 author: mihart
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 03/01/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: b31ad6f31404b563f6a5fe3805e77027671a5870
-ms.sourcegitcommit: 5e1f7d2673efe25c47b9b9f315011055bfe92c8f
+ms.openlocfilehash: 0e462fa6faf8d83bfcdb8658e2fcb852aeac5c3b
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34248903"
 ---
 # <a name="save-a-report-in-power-bi-service-and-power-bi-desktop"></a>Raportin tallentaminen Power BI -palvelussa ja Power BI Desktopissa
 Kun olet tehnyt muutoksia raporttiin Power BI:ssä, voit tallentaa sen, tallentaa sen uudella nimellä tai sulkea sen tallentamatta muutoksia. Oletetaan, että avaat raportin, luot visualisoinnin ja kiinnität sen raporttinäkymään. Jos suljet sen tallentamatta muutoksia, ruutu säilyy raporttinäkymässä, mutta visualisointia ei tallenneta raporttiin. Kun napsautat kyseistä ruutua raporttinäkymässä, raportti avautuu, mutta visualisointia ei ole raportissa.

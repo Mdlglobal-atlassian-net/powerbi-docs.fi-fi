@@ -1,29 +1,21 @@
 ---
 title: Organisaation sisältöpaketin etsiminen ja siihen yhdistäminen – Power BI
 description: Organisaation sisältöpaketin etsiminen ja avaaminen Power BI:ssä
-services: powerbi
-documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
-backup: ajayan
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ajayan
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 10/12/2017
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 56766f6b2170a6bc7d22d1b9581db2d3bde441ad
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: f1580aeeb25d5159eff7fcb4759bb426e5ff0bfd
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/24/2018
-ms.locfileid: "30815269"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34251387"
 ---
 # <a name="find-and-connect-to-an-organizational-content-pack"></a>Organisaation sisältöpaketin etsiminen ja siihen yhdistäminen
 > [!NOTE]
@@ -59,5 +51,5 @@ Jos sisältöpaketin omistaja muuttaa sisältöpakettia, ja:
 ## <a name="next-steps"></a>Seuraavat vaiheet
 * [Organisaation sisältöpakettien esittely](service-organizational-content-pack-introduction.md)  
 * [Sovelluksen luominen ja jakaminen Power BI:ssä](service-create-distribute-apps.md)
-* Ilmenikö kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)
+* Onko sinulla kysymyksiä? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)
 

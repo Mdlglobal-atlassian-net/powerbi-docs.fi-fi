@@ -11,10 +11,11 @@ ms.date: 04/13/2018
 ms.author: mihart
 LocalizationGroup: Reports
 ms.openlocfilehash: 8305b9eab95e2b13f9104de6bcefe3f03a95d2f5
-ms.sourcegitcommit: 998b79c0dd46d0e5439888b83999945ed1809c94
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34254874"
 ---
 # <a name="tips-and-tricks-for-creating-reports-in-power-bi-desktop-and-power-bi-service"></a>Vinkkejä tyylikkäiden raporttien luomiseen Power BI Desktopissa ja Power BI -palvelussa
 Joskus voi tarvita hieman ylimääräistä apua, jotta tiedoista saa kaiken hyödyn irti. Olemme koonneet yhteen muutamia vinkkejä, joita voit hyödyntää, kun luot raportteja Microsoftin Power BI Desktopissa, Power BI -palvelussa *ja* Microsoft Excel 2016:ssa. Niistä on hyötyä myös Excel 2013 Pro Plus -versioissa, joissa Power Pivot -apuohjelma on otettu käyttöön sekä Power Query asennettuna ja käytössä.
@@ -206,7 +207,7 @@ Vältä erilaisten visualisointien lisäämistä vain vaihtelun vuoksi.  Visuali
 * Yritä myös välttää suurten ja pienten mittayksiköitten yhdistelemistä samalle asteikolle esimerkiksi viivakaaviona ja palkkikaaviona.  Esimerkki tällaisesta on, että yksi mittayksikkö on miljoonia ja toinen tuhansia.  Tällainen suuressa mittakaavassa tuhansia mittaavan kaavion eroja voi olla vaikea havaita.  Jos yhdistely on välttämätöntä, valitse visualisoinniksi esimerkiksi yhdistelmäkaavio, jossa voi käyttää toista akselia.    
 * Vältä kaavioiden täyttämistä arvopisteiden nimillä, jotka eivät ole välttämättömiä. ***Riittävän suuressa*** palkkikaavioissa arvot ovat yleensä helposti ymmärrettävissä ilman varsinaisia lukuja.   
 * Kiinnitä huomiota [kaavioiden lajitteluun](power-bi-report-change-sort.md).  Jos haluat kiinnittää huomiota suurimpaan tai pienimpään lukuun, lajittele mittayksikön mukaan.  Jos haluat, että tietty luokka on nopeasti löydettävissä useiden muiden joukosta, lajittele akselin mukaan.  
-* Ympyräkaaviot ovat parhaimmillaan, kun niissä on alle kahdeksan luokkaa. Koska ympyräkaaviossa arvoja ei voi näe rinnakkain, niiden vertaaminen on vaikeampaa kuin palkki- ja pylväskaavioissa. Ympyräkaaviot toimivat parhaiten, kun osien vertailun sijaan tarkastellaan tietyn osan suhdetta kokonaisuuteen. Mittarikaaviot puolestaan ovat hyviä nykyisen tilanteen esittämisessä suhteessa tavoitteeseen.    
+* Ympyräkaaviot ovat parhaimmillaan, kun niissä on alle kahdeksan luokkaa. Koska arvoja ei voi tarkastella rinnakkain ympyräkaaviossa, niiden vertaaminen on vaikeampaa kuin palkki- ja pylväskaavioissa. Ympyräkaaviot toimivat parhaiten, kun osien vertailun sijaan tarkastellaan tietyn osan suhdetta kokonaisuuteen. Mittarikaaviot puolestaan ovat hyviä nykyisen tilanteen esittämisessä suhteessa tavoitteeseen.    
 
 Lisää visualisointikohtaisia ohjeita on artikkelissa [Visualisointityypit Power BI:ssä](power-bi-visualization-types-for-reports-and-q-and-a.md).  
 

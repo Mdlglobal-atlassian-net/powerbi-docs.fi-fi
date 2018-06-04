@@ -1,28 +1,21 @@
 ---
 title: Tietojen päivittäminen Power BI:ssä
 description: Tietojen päivittäminen Power BI:ssä
-services: powerbi
-documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 01/19/2018
+ms.component: powerbi-service
+ms.topic: conceptual
+ms.date: 05/02/2018
 ms.author: davidi
 LocalizationGroup: Data refresh
-ms.openlocfilehash: decd8a072ba644c9d67a7a0005b752423d32984a
-ms.sourcegitcommit: 1fe3ababba34c4e7aea08adb347ec5430e0b38e4
+ms.openlocfilehash: 779bfb3e69a76d0fe9e9a34d6576b2054de89cc1
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34253615"
 ---
 # <a name="data-refresh-in-power-bi"></a>Tietojen päivittäminen Power BI:ssä
 Varmista, että saat käyttöösi aina uusimmat tiedot päätöksenteon tueksi. Olet todennäköisesti jo käyttänyt Nouda tiedot -toimintoa Power BI:ssä yhteyden muodostamiseksi ja tietojen lataamiseksi sekä luonut raportteja ja raporttinäkymän. Nyt haluat varmistaa, että tiedot todella ovat uusimpia ja ajan tasalla.
@@ -176,7 +169,7 @@ Kun määrität tietolähteen käyttämään paikallista tietoyhdyskäytävää,
 | **Tietolähde** | **Reaaliaikainen yhteys / DirectQuery** | **Käyttäjän määrittämä manuaalinen tai ajoitettu päivitys** | **Yhdyskäytävä tarvitaan** |
 | --- | --- | --- | --- |
 | Analysis Services -taulukkomuoto |Kyllä |Kyllä |Kyllä |
-| Analysis Services Multidimensional |Kyllä |Kyllä |Kyllä |
+| Moniulotteinen Analysis Services -muoto |Kyllä |Kyllä |Kyllä |
 | SQL Server |Kyllä |Kyllä |Kyllä |
 | SAP HANA |Kyllä |Kyllä |Kyllä |
 | Oracle |Kyllä |Kyllä |Kyllä |

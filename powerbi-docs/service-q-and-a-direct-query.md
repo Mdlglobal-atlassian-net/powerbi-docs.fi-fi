@@ -1,29 +1,21 @@
 ---
 title: Q&A:n käyttäminen reaaliaikaisten yhteyksien kautta
 description: Dokumentaatio Power BI:n Q&A-toiminnon käyttämiseen luonnollisella kielellä ilmaistujen kyselyiden esittämistä varten, kun käytössä on reaaliaikainen yhteys Analysis Services ‑tietoihin sekä paikalliseen tietoyhdyskäytävään.
-services: powerbi
-documentationcenter: ''
 author: mihart
 manager: kfile
-backup: mihart
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: mihart
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 03/01/2018
 ms.author: mihart
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: c6fa26d85d362af0d66276509f4e52ba718d338a
-ms.sourcegitcommit: 65426de556cd7207cbc4f478198664e25c33a769
+ms.openlocfilehash: 7402bc638f27175e1c8e1f733fefd508850d9943
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/30/2018
-ms.locfileid: "30816029"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34245578"
 ---
 # <a name="enable-qa-for-live-connections"></a>Q&A:n ottaminen käyttöön reaaliaikaisia yhteyksiä varten
 ## <a name="what-is-on-premises-data-gateway--what-is-a-live-connection"></a>Mikä on paikallinen tietoyhdyskäytävä?  Mikä on reaaliaikainen yhteys?
