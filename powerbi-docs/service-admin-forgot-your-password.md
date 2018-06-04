@@ -1,28 +1,21 @@
 ---
 title: Unohditko Power BI -salasanasi?
 description: Unohditko Power BI -salasanasi?
-services: powerbi
-documentationcenter: ''
 author: mgblythe
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 06/28/2017
 ms.author: mblythe
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: 1a35aa822fe4b223fc217d568e136dbf1a6ea9df
-ms.sourcegitcommit: 8552a34df8e6141eb704314c1a019992901d6e78
+ms.openlocfilehash: e15b3d9b43f2cd203075d8dc9397b81a8240de6e
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/08/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34238220"
 ---
 # <a name="forgot-your-password-for-power-bi"></a>Unohditko Power BI -salasanasi?
 Jos olet unohtanut salasanasi, voit käyttää seuraavaa linkkiä pyytääksesi salasanasi palauttamista.
