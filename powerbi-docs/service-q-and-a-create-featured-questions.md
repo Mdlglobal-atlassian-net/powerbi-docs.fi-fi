@@ -1,30 +1,22 @@
 ---
 title: Power BI:n Q&A-toiminnon suositeltujen kysymysten luominen
 description: Power BI:n Q&A-toiminnon suositeltujen kysymysten luomisohjeet
-services: powerbi
-documentationcenter: ''
 author: mihart
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
+ms.reviewer: ''
 featuredvideoid: E1mIAyEXuF4
-qualityfocus: no
-qualitydate: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 03/01/2018
 ms.author: mihart
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 38cb04269937aa0b56589e4831eb7a3b027986d0
-ms.sourcegitcommit: 5e1f7d2673efe25c47b9b9f315011055bfe92c8f
+ms.openlocfilehash: f3a9e8aabbd45cb476866158165e2e37a3d8f652
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/09/2018
-ms.locfileid: "30815989"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34242383"
 ---
 # <a name="create-featured-questions-for-power-bi-qa"></a>Power BI:n Q&A-toiminnon suositeltujen kysymysten luominen
 Jos omistat tietojoukon, voit lisätä siihen omia suositeltuja kysymyksiä.  Power BI Q&A näyttää sitten kyseiset kysymykset tietojoukkoa käyttäville (*kuluttaville*) työtovereille.  Suositellut kysymykset antavat työtovereille ideoita kysymyksistä, joita he voivat kysyä tietojoukosta. Sinä valitset lisättävät suositellut kysymykset – voit lisätä suosittuja kysymyksiä, kiinnostavia vastauksia antavia kysymyksiä tai kysymyksiä, joita voi olla vaikea muotoilla.

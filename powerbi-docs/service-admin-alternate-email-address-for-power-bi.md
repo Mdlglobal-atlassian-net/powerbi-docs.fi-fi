@@ -1,29 +1,21 @@
 ---
 title: Vaihtoehtoisen sähköpostiosoitteen käyttö
 description: Vaihtoehtoisen sähköpostiosoitteen käyttö
-services: powerbi
-documentationcenter: ''
 author: mgblythe
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 03/08/2018
 ms.author: mblythe
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: ca7fe8f91a7d70740435af9c044f1cd57c01d8a5
-ms.sourcegitcommit: 8552a34df8e6141eb704314c1a019992901d6e78
+ms.openlocfilehash: 5013c70e4d3998eb39e0de2a92f890417175fd62
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/08/2018
-ms.locfileid: "30976997"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34240902"
 ---
 # <a name="using-an-alternate-email-address"></a>Vaihtoehtoisen sähköpostiosoitteen käyttö
 Oletusarvoisesti sinulle lähetetään Power BI:n toimintaa koskevat päivitykset sähköpostiosoitteeseen, jota käytit rekisteröityessäsi Power BI:hin.  Jos joku esimerkiksi lähettää sinulle jakamiskutsun, se lähetetään sinulle kyseiseen osoitteeseen.
