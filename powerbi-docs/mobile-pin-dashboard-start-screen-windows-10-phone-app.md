@@ -1,28 +1,20 @@
 ---
 title: Koontinäytön kiinnittäminen Windows 10 -aloitusnäyttöön – Power BI -mobiilisovellus
 description: Lue, miten voit kiinnittää Power BI -koontinäytön Windows 10 -aloitusnäyttöön Power BI -mobiilisovelluksesta, niin näet tärkeät arvot yhdellä silmäyksellä.
-services: powerbi
-documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-mobile
+ms.topic: conceptual
 ms.date: 01/25/2018
 ms.author: maggies
-ms.openlocfilehash: f06793bc6620e27ab5937a0043e9dc6a94119110
-ms.sourcegitcommit: be5223b62e9a5d57c52f8588d4e539d814751dd6
+ms.openlocfilehash: 5492ed25dc5bd803661186694e7f9d3f4e19c30f
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/29/2018
-ms.locfileid: "30973037"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34291554"
 ---
 # <a name="pin-a-dashboard-to-your-windows-10-start-screen-from-the-power-bi-mobile-app"></a>Koontinäytön kiinnittäminen Windows 10 -aloitusnäyttöön Power BI -mobiilisovelluksesta
 Voit kiinnittää Power BI -koontinäyttöjä Windowsin aloitusnäyttöön Power BI -mobiilisovelluksesta Windows 10:lle. Niistä tulee *tapahtumaruutuja*. Kun napautat ruutua aloitusnäytössä, koontinäyttö avautuu Power BI -mobiilisovelluksessa Windows 10:lle.
@@ -42,6 +34,6 @@ Voit kiinnittää Power BI -koontinäyttöjä Windowsin aloitusnäyttöön Power
 ## <a name="next-steps"></a>Seuraavat vaiheet
 * [Lataa Power BI -mobiilisovellus Windows 10:lle](http://go.microsoft.com/fwlink/?LinkID=526478) Windows-kaupasta  
 * [Aloita Windows 10:lle tarkoitetun Power BI -mobiilisovelluksen käyttäminen](mobile-windows-10-phone-app-get-started.md)  
-* [Aloita Power BI:n käyttäminen](service-get-started.md)
-* Ilmenikö kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)
+* [Power BI:n käytön aloittaminen](service-get-started.md)
+* Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)
 

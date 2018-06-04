@@ -1,29 +1,21 @@
 ---
 title: Esittely Power BI:n käytettävissä olevista malleista
 description: Power BI:n mallit sisältöpaketeista, PBIX-tiedostoista ja Excel-tietojoukoista
-services: powerbi
-documentationcenter: ''
 author: mihart
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: monitoring
-qualitydate: 03/05/2017
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 03/13/2018
+ms.component: powerbi-service
+ms.topic: conceptual
+ms.date: 05/22/2018
 ms.author: mihart
 LocalizationGroup: Samples
-ms.openlocfilehash: 8a2b330ee134bf8aeb94315b90e71824ec1eb8ef
-ms.sourcegitcommit: 00b4911ab5fbf4c2d5ffc000a3d95b3149909c28
+ms.openlocfilehash: b6ef85549b729b1a91aa4a9a5f4686dcbbabaeb1
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/15/2018
-ms.locfileid: "29897248"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34471981"
 ---
 # <a name="what-sample-data-is-available-to-use-with-power-bi"></a>Millaista mallidataa Power BI:tä varten on saatavilla?
 Olet ehkä aloittanut vasta Power BI:n käytön ja haluat kokeilla sen toimintaa, mutta sinulla ei ole vielä tietoja, joilla testata sitä.  Tai ehkä sinulla onkin valmiina tietojoukko, mutta koska et ymmärrä (vielä) Power BI:n toimintaa kovin hyvin, pelkäät aiheuttavasi tietojoukollesi jotakin vahinkoa.
@@ -183,14 +175,14 @@ Kaikki mallisisältöpaketit ovat saatavilla myös Power BI:n .pbix-tiedostoina.
 
 1. Lataa tiedostot yksitellen alla olevista linkeistä.
 
-   * [Jälleenmyyntianalyysimalli](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail Analysis Sample PBIX.pbix)
+   * [Jälleenmyyntianalyysimalli](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail-Analysis-Sample-PBIX.pbix)
    * [Toimittajan laatuanalyysimalli](http://download.microsoft.com/download/8/C/6/8C661638-C102-4C04-992E-9EA56A5D319B/Supplier-Quality-Analysis-Sample-PBIX.pbix)
-   * [Henkilöstöhallintomalli](http://download.microsoft.com/download/6/9/5/69503155-05A5-483E-829A-F7B5F3DD5D27/Human Resources Sample PBIX.pbix)
-   * [Asiakkaan tuottavuuden malli](http://download.microsoft.com/download/6/A/9/6A93FD6E-CBA5-40BD-B42E-4DCAE8CDD059/Customer Profitability Sample PBIX.pbix)
-   * [Mahdollisuuksien seurantamalli](http://download.microsoft.com/download/9/1/5/915ABCFA-7125-4D85-A7BD-05645BD95BD8/Opportunity Analysis Sample PBIX.pbix)
-   * [IT-kulutusanalyysimalli](http://download.microsoft.com/download/E/9/8/E98CEB6D-CEBB-41CF-BA2B-1A1D61B27D87/IT Spend Analysis Sample PBIX.pbix)
-   * [Hankinta-analyysimalli](http://download.microsoft.com/download/D/5/3/D5390069-F723-413B-8D27-5888500516EB/Procurement Analysis Sample PBIX.pbix)
-   * [Myynti- ja markkinointimalli](http://download.microsoft.com/download/9/7/6/9767913A-29DB-40CF-8944-9AC2BC940C53/Sales and Marketing Sample PBIX.pbix)
+   * [Henkilöstöhallintomalli](http://download.microsoft.com/download/6/9/5/69503155-05A5-483E-829A-F7B5F3DD5D27/Human-Resources-Sample-PBIX.pbix)
+   * [Asiakkaan tuottavuuden malli](http://download.microsoft.com/download/6/A/9/6A93FD6E-CBA5-40BD-B42E-4DCAE8CDD059/Customer-Profitability-Sample-PBIX.pbix)
+   * [Mahdollisuuksien seurantamalli](http://download.microsoft.com/download/9/1/5/915ABCFA-7125-4D85-A7BD-05645BD95BD8/Opportunity-Analysis-Sample-PBIX.pbix)
+   * [IT-kulutusanalyysimalli](http://download.microsoft.com/download/E/9/8/E98CEB6D-CEBB-41CF-BA2B-1A1D61B27D87/IT-Spend-Analysis-Sample-PBIX.pbix)
+   * [Hankinta-analyysimalli](http://download.microsoft.com/download/D/5/3/D5390069-F723-413B-8D27-5888500516EB/Procurement-Analysis-Sample-PBIX.pbix)
+   * [Myynti- ja markkinointimalli](http://download.microsoft.com/download/9/7/6/9767913A-29DB-40CF-8944-9AC2BC940C53/Sales-and-Marketing-Sample-PBIX.pbix)
 2. Tallenna ladattu tiedosto.
 3. Valitse Desktopissa **Tiedosto > Avaa** ja siirry sijaintiin, johon tallensit mallin .pbix-tiedoston.
 

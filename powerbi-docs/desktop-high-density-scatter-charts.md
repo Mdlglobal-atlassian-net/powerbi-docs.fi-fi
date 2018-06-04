@@ -11,10 +11,11 @@ ms.date: 04/19/2018
 ms.author: davidi
 LocalizationGroup: Create reports
 ms.openlocfilehash: 6df40c8229575a7e6167e75b773228cbd18d1243
-ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34291116"
 ---
 # <a name="high-density-sampling-in-power-bi-scatter-charts"></a>Suuren tiheyden näytteenotto Power BI:n pistekaavioissa
 Syyskuussa 2017 julkaistussa **Power BI Desktop** -versiossa ja **Power BI -palvelun** päivityksissä otettiin käyttöön uusi näytteenottoalgoritmi, joka parantaa sitä, kuinka pistekaaviot esittävät suuren tiheyden tiedot.
@@ -79,7 +80,7 @@ Voit ottaa **suuren tiheyden näytteenoton** käyttöön valitsemalla pistekaavi
 > 
 > 
 
-## <a name="considerations-and-limitations"></a>Huomioon otettavat seikat ja rajoitukset
+## <a name="considerations-and-limitations"></a>Huomioitavat asiat ja rajoitukset
 Suuren tiheyden näytteenoton uusi algoritmi on merkittävä parannus Power BI:hin, mutta suuren tiheyden arvojen ja pistekaavioiden käsittelyssä on muutamia huomioon otettavia seikkoja.
 
 * **Suuren tiheyden näytteenoton** algoritmi toimii vain käytettäessä reaaliaikaisia yhteyksiä Power BI -palveluun pohjautuviin malleihin, tuotuihin malleihin tai DirectQueryyn.

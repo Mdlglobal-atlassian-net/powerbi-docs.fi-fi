@@ -1,29 +1,21 @@
 ---
 title: Koontinäyttöruudut Power BI -palvelussa
 description: Kaikki koontinäyttöruuduista Power BI:ssä. Tämä sisältää ruudut, jotka on luotu SQL Server Reporting Servicesistä (SSRS).
-services: powerbi
-documentationcenter: ''
 author: mihart
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: ''
-qualitydate: 03/15/2016
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 03/02/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 3b6d8c31c9ba03b0119635af5f9270a584081139
-ms.sourcegitcommit: 5e1f7d2673efe25c47b9b9f315011055bfe92c8f
+ms.openlocfilehash: e53945e0a112d9498dc6798e2441dd3d925a64c1
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/09/2018
-ms.locfileid: "29924938"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34249064"
 ---
 # <a name="dashboard-tiles-in-power-bi"></a>Koontinäyttöruudut Power BI:ssä
 Koontinäytöt ja koontinäyttöruudut ovat Power BI -palvelun ominaisuus eivätkä Power BI Desktopin. Vaikka koontinäyttöruutuja ei voi luoda tai kiinnittää Power BI -mobiilisovelluksessa, [niitä voidaan tarkastella ja jakaa](mobile-tiles-in-the-mobile-apps.md). Power BI -mobiilisovelluksessa voit [lisätä kuvia koontinäyttöösi iPhone-sovelluksella](mobile-iphone-app-get-started.md).

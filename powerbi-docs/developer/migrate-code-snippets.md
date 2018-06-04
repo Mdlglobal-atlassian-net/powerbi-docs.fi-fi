@@ -1,28 +1,20 @@
 ---
 title: Koodikatkelmia sisällön siirtämiseen Power BI Embeddedistä
 description: Tässä on joitakin koodikatkelmia perustoimintoihin, joita tarvitaan sisällön siirtämisessä
-services: powerbi
-documentationcenter: ''
 author: markingmyname
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-developer
+ms.topic: conceptual
 ms.date: 03/06/2018
 ms.author: maghan
-ms.openlocfilehash: d293f2184f0f9a314a77c362312de4ab6a4dc5df
-ms.sourcegitcommit: ee5d044db99e253c27816e0ea6bdeb9e39a2cf41
+ms.openlocfilehash: ea323419e38aab7360bb817a56ae4c7c662998ed
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/08/2018
-ms.locfileid: "30974877"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34689845"
 ---
 # <a name="code-snippets-for-migrating-content-from-power-bi-workspace-collection"></a>Koodikatkelmia sisällön siirtämiseen Power BI Workspace Collectionista
 Tässä on joitakin koodikatkelmia perustoimintoihin, joita tarvitaan sisällön siirtämisessä. Katso lisätietoja tiettyjen raporttityyppien asiaan liittyvistä työkuluista artikkelista [Miten Power BI -työtilakokoelman sisältö siirretään Power BI Embeddediin](migrate-from-powerbi-embedded.md#content-migration).
@@ -150,7 +142,7 @@ Tässä koodikatkelmassa käytetään salaamattomia tunnistetietoja yksinkertais
     }
 
     var basicCreds = new BasicCreds() { user = <sqldb_username>, pwd = <sqldb_password> };
-    var body = new SetCredsRequestBody() { credentialType = "Basic", basicCreds = basicCreds };
+    var body = new SetCredsRequestBody() { credentialType = "Basic", basicCredentials = basicCreds };
 
     var url = string.Format("https://api.powerbi.com/v1.0/myorg/gateways/{0}/datasources/{1}", <gateway_id>, <datasource_id>);
     var request = new HttpRequestMessage(new HttpMethod("PATCH"), url);

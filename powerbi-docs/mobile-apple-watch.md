@@ -1,28 +1,20 @@
 ---
 title: Power BI -tietojen selaaminen Apple Watch -mobiilisovelluksessa
 description: Power BI:n Apple Watch -sovellus
-services: powerbi
-documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-mobile
+ms.topic: conceptual
 ms.date: 10/13/2017
 ms.author: maggies
-ms.openlocfilehash: 0c24afa30ff2fa4c6107c1af78926a09672b22d5
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+ms.openlocfilehash: 495b47319b8ac69ddae1d727ae9471d24fa37c6c
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/15/2017
-ms.locfileid: "30972212"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34294247"
 ---
 # <a name="explore-your-data-in-the-power-bi-mobile-app-on-your-apple-watch"></a>Power BI -tietojen tarkastelu Apple Watch -mobiilisovelluksessa
 Power BI Apple Watch -sovelluksella voit tarkastella suorituskykymittareita ja korttiruutuja Power BI-raporttinäkymästä omassa kellossasi. Suorituskykymittarit ja korttiruudut sopivat parhaiten sykkeen mittaamiseen pienellä näytöllä. Voit päivittää raporttinäkymän iPhonesta tai itse kellosta.

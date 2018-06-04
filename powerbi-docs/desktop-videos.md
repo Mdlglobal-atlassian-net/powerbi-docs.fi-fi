@@ -1,29 +1,21 @@
 ---
 title: Power BI Desktop -videot
 description: Power BI Desktop -videot
-services: powerbi
-documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: get-started-article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 12/06/2017
+ms.component: powerbi-desktop
+ms.topic: conceptual
+ms.date: 05/02/2018
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: e354378412a94c37394eb8b5abb2c80f3c5268df
-ms.sourcegitcommit: 00b4911ab5fbf4c2d5ffc000a3d95b3149909c28
+ms.openlocfilehash: 2c027cef97d858cf64febb096e0674742e4c80bc
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/15/2018
-ms.locfileid: "30975317"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34286194"
 ---
 # <a name="power-bi-desktop-videos"></a>Power BI Desktop -videot
 Meillä on [YouTube-kanava Power BI:lle](http://www.youtube.com/playlist?list=PL1N57mwBHtN2q1WbU5O29rrn_A0lkVv9p)!

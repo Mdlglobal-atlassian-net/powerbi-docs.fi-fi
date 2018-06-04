@@ -1,28 +1,20 @@
 ---
 title: Power BI -videot
 description: Power BI -videoita ja linkki YouTube-kanavalle.
-services: powerbi
-documentationcenter: ''
 author: mihart
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: get-started-article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 01/19/2018
+ms.component: powerbi-service
+ms.topic: conceptual
+ms.date: 05/19/2018
 ms.author: mihart
-ms.openlocfilehash: 4ef3991fc285adc84cdcb5efca00c2f9486e9825
-ms.sourcegitcommit: 2ae323fbed440c75847dc55fb3e21e9c744cfba0
+ms.openlocfilehash: bf196ccf45e964f6fc1044723f7232eaf60230e7
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/23/2018
-ms.locfileid: "30972977"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34471797"
 ---
 # <a name="power-bi-videos"></a>Power BI -videot
 Meillä on YouTube-kanava Power BI:lle! Voit käydä [kanavallamme](https://www.youtube.com/user/mspowerbi/videos) ja, jos olet uusi Power BI:n käyttäjä, hyvä aloituspaikka on [Tietojen analysointi ja visualisointi Power BI -soittolistan avulla](https://www.youtube.com/playlist?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP).

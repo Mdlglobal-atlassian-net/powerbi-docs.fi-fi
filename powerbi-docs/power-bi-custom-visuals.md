@@ -1,29 +1,21 @@
 ---
 title: Mukautetut visualisoinnit Power BI:ssä
 description: Mukautetut visualisoinnit Power BI:ssä
-services: powerbi
-documentationcenter: ''
 author: markingmyname
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-desktop
+ms.topic: conceptual
 ms.date: 02/06/2018
 ms.author: maghan
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 6e5459492879cccbd2f18c572140eabfd0ab0f1c
-ms.sourcegitcommit: afa10c016433cf72d6d366c024b862187a8692fd
+ms.openlocfilehash: d8c3a33a3ae6166d33ea7a613917616613b84696
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/04/2018
-ms.locfileid: "30976692"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34721451"
 ---
 # <a name="custom-visuals-in-power-bi"></a>Mukautetut visualisoinnit Power BI:ssä
 Kun luot tai muokkaat Power BI -raporttia, käytettävissäsi on monia eri visualisointityyppejä. Nämä visualisoinnit näkyvät **Visualisoinnit**-ruudussa. Kun lataat Power BI Desktopin tai avaa Power BI -palvelun (app.powerbi.com), visualisointijoukko tulee valmiina pakettina.
@@ -62,10 +54,10 @@ Mikä AppSource on? Lyhyesti sanottuna se on paikka, josta löydät sovelluksia,
 
 ### <a name="certified-visuals"></a>Sertifioidut visualisoinnit
 
-Power BI -sertifioidut visualisoinnit ovat Marketplacen visualisointeja, jotka ovat läpäisseet ylimääräisen tiukan laatutestauksen ja joita tuetaan lisätilanteissa, kuten [sähköpostitilauksissa](https://docs.microsoft.com/en-us/power-bi/service-report-subscribe) ja [PowerPointiin viennissä](https://docs.microsoft.com/en-us/power-bi/service-publish-to-powerpoint).
-Jos haluat tarkastella luetteloa sertifioiduista mukautetuista visualisoinneista tai lähettää oman, lue artikkeli [Sertifioidut mukautetut visualisoinnit](https://docs.microsoft.com/en-us/power-bi/power-bi-custom-visuals-certified).
+Power BI -sertifioidut visualisoinnit ovat Marketplacen visualisointeja, jotka ovat läpäisseet ylimääräisen tiukan laatutestauksen ja joita tuetaan lisätilanteissa, kuten [sähköpostitilauksissa](https://docs.microsoft.com/power-bi/service-report-subscribe) ja [PowerPointiin viennissä](https://docs.microsoft.com/power-bi/service-publish-to-powerpoint).
+Jos haluat tarkastella luetteloa sertifioiduista mukautetuista visualisoinneista tai lähettää oman, lue artikkeli [Sertifioidut mukautetut visualisoinnit](https://docs.microsoft.com/power-bi/power-bi-custom-visuals-certified).
 
-Oletko Web-kehittäjä ja kiinnostunut omien visualisointien luomisesta ja niiden lisäämisestä AppSourceen? Katso artikkeli [Kehittäjien työkalujen käytön aloittaminen](https://docs.microsoft.com/en-us/power-bi/service-custom-visuals-getting-started-with-developer-tools) ja lue lisää [mukautettujen visualisointien julkaisemisesta AppSourcessa](https://appsource.microsoft.com/en-us/marketplace/apps?product=power-bi-visuals).
+Oletko Web-kehittäjä ja kiinnostunut omien visualisointien luomisesta ja niiden lisäämisestä AppSourceen? Katso artikkeli [Kehittäjien työkalujen käytön aloittaminen](https://docs.microsoft.com/power-bi/service-custom-visuals-getting-started-with-developer-tools) ja lue lisää [mukautettujen visualisointien julkaisemisesta AppSourcessa](https://appsource.microsoft.com/en-us/marketplace/apps?product=power-bi-visuals).
 
 ### <a name="import-a-custom-visuals-from-a-file"></a>Mukautettujen visualisointien tuominen tiedostosta
 

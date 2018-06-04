@@ -1,28 +1,20 @@
 ---
 title: Kattava koodiluettelo
 description: Opastus tietojen syöttämiseen – kattava koodiluettelo
-services: powerbi
-documentationcenter: ''
 author: markingmyname
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: get-started-article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-developer
+ms.topic: conceptual
 ms.date: 08/10/2017
 ms.author: maghan
-ms.openlocfilehash: ce495ac4089f471686b34a2d6963ba85a7cdd53d
-ms.sourcegitcommit: 6e693f9caf98385a2c45890cd0fbf2403f0dbb8a
+ms.openlocfilehash: e5866b249d95cd3b05c7d769fe0cdbab984a978d
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/30/2018
-ms.locfileid: "30973057"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34289920"
 ---
 # <a name="push-data-to-a-dataset-complete-code-listing"></a>Syötä tiedot tietojoukon kattavaan koodiluetteloon
 Tämä artikkeli on osa vaiheittaisia ohjeita, joilla [tiedot syötetään tietojoukkoon](walkthrough-push-data.md).
