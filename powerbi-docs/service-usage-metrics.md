@@ -1,36 +1,27 @@
 ---
 title: Koontinäyttöjen ja raporttien käyttötiedot
 description: Opi tarkastelemaan, tallentamaan ja käyttämään Power BI:n koontinäyttöjen ja raporttien käyttötietoja. Mittaa ja paranna vaikutustasi sisällöntekijöiden käyttötiedoilla.
-services: powerbi
-documentationcenter: ''
 author: mihart
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
+ms.reviewer: ''
 featuredvideoid: ''
-qualityfocus: no
-qualitydate: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 04/11/2018
+ms.component: powerbi-service
+ms.topic: conceptual
+ms.date: 05/27/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: d12f59f768b98bbc974258592f236176ecf52b3f
-ms.sourcegitcommit: df94efc51f261113fa90ebdf3fe68dd149cc4936
+ms.openlocfilehash: 82015b3e0c497f58b0505804adc852ebfb7a0202
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31449601"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34584319"
 ---
 # <a name="usage-metrics-for-dashboards-and-reports"></a>Koontinäyttöjen ja raporttien käyttötiedot
 Jos luot koontinäyttöjä ja raportteja, käyttötiedot auttavat ymmärtämään niiden vaikutusta. Käyttötietojen avulla saat selville, miten koontinäyttöjä ja raportteja käytetään koko organisaatiossa: mitä käytetään, kuka käyttää ja mihin tarkoitukseen.  
 
-> [!NOTE]
-> Käyttötiedoissa seurataan SharePoint Onlineen upotettujen raporttien käyttöä. Niissä seurataan myös koontinäyttöjen ja raporttien upottamista sekä käyttäjän omistamien tunnistetietojen että sovelluksen omistamien tunnistetietojen kautta. Käyttötiedoissa ei seurata [Julkaise verkkoon](service-publish-to-web.md) -toiminnolla upotettujen raporttien käyttöä.
+Käyttötiedoissa seurataan SharePoint Onlineen upotettujen raporttien käyttöä. Niissä seurataan myös koontinäyttöjen ja raporttien upottamista sekä käyttäjän omistamien tunnistetietojen että sovelluksen omistamien tunnistetietojen kautta. Käyttötiedoissa ei seurata [Julkaise verkkoon](service-publish-to-web.md) -toiminnolla upotettujen raporttien käyttöä.
 
 Käyttötietoraportit ovat vain luku -tyyppiä. Voit kuitenkin mukauttaa käyttötietoraportteja käyttämällä Tallenna nimellä -toimintoa. Toiminto luo täysin uuden tietojoukon ja muuntaa vain luku -raportin täydeksi Power BI -raportiksi, jota voi muokata. Mukautettu raportti sisältää valitun koontinäytön käyttötiedot, minkä lisäksi oletussuodattimen poistamalla saat käyttöösi valitun työtilan kaikkien koontinäyttöjen tai kaikkien raporttien käyttötiedot.
 
@@ -178,5 +169,5 @@ V:    Käyttötietoraporttiin sisällytetään vain raportit (tai koontinäytöt
 ## <a name="next-steps"></a>Seuraavat vaiheet
 [Koontinäytön lisääminen suosikkeihin](service-dashboard-favorite.md)
 
-Onko sinulla muuta kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
+Ilmenikö muuta kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
 

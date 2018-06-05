@@ -1,29 +1,21 @@
 ---
 title: Kapasiteettien hallinta Power BI Premiumissa ja Power BI Embeddedissä
 description: Lue, miten voit hallita Power BI Premiumia ja sallia sisällön käytön koko organisaatiossa.
-services: powerbi
-documentationcenter: ''
 author: mgblythe
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-admin
+ms.topic: conceptual
 ms.date: 10/10/2017
 ms.author: mblythe
 LocalizationGroup: Premium
-ms.openlocfilehash: 611a8cd1f2ff3da16d700f8d2b9f15787dda8475
-ms.sourcegitcommit: 509be8852ba7595b9441c9479224f9dca298b26d
+ms.openlocfilehash: d1535dcdd818c3c49c71df9b1b08f115f6091cfc
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/09/2018
-ms.locfileid: "33923427"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34295832"
 ---
 # <a name="manage-capacities-within-power-bi-premium-and-power-bi-embedded"></a>Kapasiteettien hallinta Power BI Premiumissa ja Power BI Embeddedissä
 Lue, miten voit hallita Power BI Premiumin ja Power BI Embeddedin kapasiteettia, joka sisältää erilliset resurssit sisällöllesi.

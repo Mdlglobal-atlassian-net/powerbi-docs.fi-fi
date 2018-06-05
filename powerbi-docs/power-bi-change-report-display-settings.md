@@ -1,29 +1,21 @@
 ---
 title: Raportin sivun koon muuttaminen
 description: Power BI -raportin sivun näyttöasetusten muuttaminen
-services: powerbi
-documentationcenter: ''
 author: mihart
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: modifying
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 01/24/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 8381f3100676b6e20f7fb748045c4852b30c45b9
-ms.sourcegitcommit: 493f160d04ed411ff4741c599adc63ba1f65230f
+ms.openlocfilehash: c2b9a106c4007af868cf69902ce511da8e03e75f
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33812399"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34244557"
 ---
 # <a name="change-the-size-of-a-report-page"></a>Raportin sivun koon muuttaminen
 Opit [edellisessä artikkelissa ja videossa](power-bi-report-display-settings.md) kaksi tapaa hallita Power BI -raporttien sivun näyttöä: **Näkymä** ja **Sivun koko**. Sivun Näkymä ja Sivun koko ovat käytettävissä sekä Power BI -palvelussa että Power BI Desktopissa. Niiden ulkonäkö ja toiminnot ovat lähes samat, mutta tässä opetusohjelmassa käytämme Power BI -palvelua.
