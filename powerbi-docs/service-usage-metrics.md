@@ -16,14 +16,15 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 02/28/2018
+ms.date: 04/11/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 1ad8425917153f2f9662041dc594817857f8f499
-ms.sourcegitcommit: 5e1f7d2673efe25c47b9b9f315011055bfe92c8f
+ms.openlocfilehash: d12f59f768b98bbc974258592f236176ecf52b3f
+ms.sourcegitcommit: df94efc51f261113fa90ebdf3fe68dd149cc4936
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 04/18/2018
+ms.locfileid: "31449601"
 ---
 # <a name="usage-metrics-for-dashboards-and-reports"></a>Koontinäyttöjen ja raporttien käyttötiedot
 Jos luot koontinäyttöjä ja raportteja, käyttötiedot auttavat ymmärtämään niiden vaikutusta. Käyttötietojen avulla saat selville, miten koontinäyttöjä ja raportteja käytetään koko organisaatiossa: mitä käytetään, kuka käyttää ja mihin tarkoitukseen.  
@@ -53,7 +54,7 @@ Kun valitset **Käyttötiedot**-vaihtoehdon tai ![käyttötietokuvakkeen](media/
 
 Käyttötietoraportit eivät näy **Viimeaikaiset**-, **Työtilat**-, **Suosikit**- tai muissa sisältöluetteloissa. Niitä ei voi lisätä sovellukseen. Jos kiinnität ruudun käyttötietoraportista koontinäyttöön, koontinäyttöä ei voi lisätä sovellukseen tai sisältöpakettiin.
 
-Jos haluat pureutua raporttitietoihin tai luoda omia raporttejasi tästä tietojoukosta, käytä **Tallenna nimellä** -vaihtoehtoa. Lisätietoja on osiossa [Käyttötietoraportin tallentaminen täytenä Power BI -raporttina](#save-the-usage-metrics-report-as-a-full-featured-power-bi-report).
+Jos haluat pureutua raporttitietoihin tai luoda omia raporttejasi tästä tietojoukosta, käytä **Tallenna nimellä** -vaihtoehtoa. Lisätietoja on osiossa [Käyttötietoraportin tallentaminen täytenä Power BI -raporttina](#Save-the-Usage-Metrics-report-as-a-full-featured-Power-BI-report-(personalize)).
 
 ## <a name="open-a-usage-metrics-report-for-a-dashboard-or-report"></a>Käyttötietoraportin avaaminen koontinäyttöä tai raporttia varten
 1. Aloita työtilasta, joka sisältää koontinäytön tai raportin.
