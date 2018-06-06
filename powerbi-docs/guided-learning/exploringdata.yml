@@ -1,0 +1,97 @@
+### YamlMime:Tutorial
+title: Tietojen tutkiminen
+metadata:
+  title: Tietojen tutkiminen | Microsoft Power BI
+  description: Lue, miten voit etsiä, muodostaa yhteyden ja käsitellä tietoja Power BI:ssä.
+  audience: Business User
+  level: Beginner
+  nextTutorialHref: powerbiandexcel
+  nextTutorialTitle: Power BI ja Excel
+  displayType: one-column
+  author: davidiseminger
+  manager: kfile
+  ms.service: powerbi
+  ms.topic: get-started-article
+  ms.date: 12/05/2017
+  ms.author: davidi
+  ms.openlocfilehash: aa974a0f3448efde8a4410fabcf0e4f78a5050fd
+  ms.sourcegitcommit: 7bf22bb1136fdb0f962422e16e837187f090827c
+  ms.translationtype: HT
+  ms.contentlocale: fi-FI
+  ms.lasthandoff: 02/06/2018
+  ms.locfileid: "29704625"
+items:
+- durationInMinutes: 1
+  content: >
+    Tervetuloa käyttämään **Tietojen tarkasteleminen** -opetusohjelmaa. Tässä opit, miten voit etsiä, muodostaa yhteyden ja käsitellä tietoja Power BI:ssä.
+- title: Johdanto Power BI -palveluun
+  durationInMinutes: 2
+  content: >
+    > [!Video https://www.youtube.com/embed/B2vd4MQrz4M?rel=0]
+
+
+    [!INCLUDE [](includes/4-0-intro-power-bi-service.md)]
+- title: Nopeat merkitykselliset tiedot Power BI:ssä
+  durationInMinutes: 5
+  content: >
+    > [!Video https://www.youtube.com/embed/et_MLSL2sA8?rel=0]
+
+
+    [!INCLUDE [](includes/4-1a-quick-insights.md)]
+- title: Koontinäytön luominen ja määrittäminen
+  durationInMinutes: 6
+  content: >
+    > [!Video https://www.youtube.com/embed/lJKgWnvl6bQ?rel=0]
+
+
+    [!INCLUDE [](includes/4-2-create-configure-dashboards.md)]
+- title: Kysymysten esittäminen tiedoista luonnollisella kielellä
+  durationInMinutes: 9
+  content: >
+    > [!Video https://www.youtube.com/embed/qMf7OLJfCz8?rel=0]
+
+
+    [!INCLUDE [](includes/4-3-asking-questions-natural-language.md)]
+- title: Mukautettujen kysymys- ja vastausehdotusten luominen
+  durationInMinutes: 4
+  content: >
+    > [!Video https://www.youtube.com/embed/E1mIAyEXuF4?rel=0]
+
+
+    [!INCLUDE [](includes/4-3a-suggested-questions.md)]
+- title: Koontinäyttöjen jakaminen organisaation sisällä
+  durationInMinutes: 7
+  content: >
+    > [!Video https://www.youtube.com/embed/0tUwn8DHo3s?rel=0]
+
+
+    [!INCLUDE [](includes/4-4-share-dashboards.md)]
+- title: Visualisointien ja ruutujen näyttäminen koko näytössä
+  durationInMinutes: 4
+  content: >
+    > [!Video https://www.youtube.com/embed/LoApjhwTse0?rel=0]
+
+
+    [!INCLUDE [](includes/4-4b-display-visuals-tiles-fullscreen.md)]
+- title: Ruudun tietojen muokkaus ja pienoissovellusten lisääminen
+  durationInMinutes: 6
+  content: >
+    > [!Video https://www.youtube.com/embed/XhqVbHqd5jQ?rel=0]
+
+
+    [!INCLUDE [](includes/4-4d-change-tile-details.md)]
+- title: Koontinäytön tilan lisääminen
+  durationInMinutes: 5
+  content: >
+    > [!Video https://www.youtube.com/embed/c31gZkyvC54?rel=0]
+
+
+    [!INCLUDE [](includes/4-4e-get-more-dashboard-space.md)]
+- title: Power BI Personal Gatewayn asentaminen ja määrittäminen
+  durationInMinutes: 11
+  content: >
+    > [!Video https://www.youtube.com/embed/xjcO5tNvjGs?rel=0]
+
+
+    [!INCLUDE [](includes/4-6-install-configure-personal-gateway.md)]
+- content: Tämä **tietojen hakeminen** -osa on valmistellut sinua käsittelemään eri tietotyyppejä. Seuraavassa opetusohjelmassa opit käyttämään yleistä tietolähdettä, Exceliä.

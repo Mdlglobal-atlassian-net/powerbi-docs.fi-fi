@@ -1,0 +1,67 @@
+### YamlMime:Tutorial
+title: Johdanto DAXiin
+metadata:
+  title: Johdanto DAXiin | Microsoft Power BI
+  description: Opi asiantuntijalta, miten voit luoda ja käsitellä DAXia.
+  audience: Business User
+  level: Beginner
+  displayType: one-column
+  author: davidiseminger
+  manager: kfile
+  ms.service: powerbi
+  ms.topic: get-started-article
+  ms.date: 12/05/2017
+  ms.author: davidi
+  ms.openlocfilehash: 5553a2b4dc3856cb90f1d392709fb313acf3c4d8
+  ms.sourcegitcommit: 7bf22bb1136fdb0f962422e16e837187f090827c
+  ms.translationtype: HT
+  ms.contentlocale: fi-FI
+  ms.lasthandoff: 02/06/2018
+  ms.locfileid: "29704645"
+items:
+- durationInMinutes: 1
+  content: >
+    Opi asiantuntijalta, miten voit luoda ja käsitellä DAXia.
+- title: Johdanto DAXiin
+  durationInMinutes: 9
+  content: >
+    > [!Video https://www.youtube.com/embed/lRhOJP3bZCo?rel=0]
+
+
+    [!INCLUDE [](includes/7-1-intro-to-dax.md)]
+- title: DAX-laskentatyypit
+  durationInMinutes: 22
+  content: >
+    > [!Video https://www.youtube.com/embed/BVlijY68wp8?rel=0]
+
+
+    [!INCLUDE [](includes/7-2-dax-calculation-types.md)]
+- title: DAX-funktiot
+  durationInMinutes: 17
+  content: >
+    > [!Video https://www.youtube.com/embed/siTnzquk1SU?rel=0]
+
+
+    [!INCLUDE [](includes/7-3-dax-functions.md)]
+- title: Muuttujien käyttäminen DAX-lausekkeissa
+  durationInMinutes: 4
+  content: >
+    > [!Video https://www.youtube.com/embed/kd4tgKxhRTU?rel=0]
+
+
+    [!INCLUDE [](includes/7-4-dax-expressions.md)]
+- title: Taulukkosuhteet ja DAX
+  durationInMinutes: 13
+  content: >
+    > [!Video https://www.youtube.com/embed/yec1f5A08mc?rel=0]
+
+
+    [!INCLUDE [](includes/7-5-table-relationships-and-dax.md)]
+- title: DAX-taulukot ja suodattaminen
+  durationInMinutes: 32
+  content: >
+    > [!Video https://www.youtube.com/embed/6eAoDI4VDFs?rel=0]
+
+
+    [!INCLUDE [](includes/7-6-dax-tables-and-filtering.md)]
+- content: Olet suorittanut Power BI:n ohjatun oppimisen **Johdanto DAXiin** -osion. Mikä matka! Jos olet suorittanut nämä opetusohjelmat järjestyksessä, olet nyt suorittanut kaikki **ohjatun oppimisen** osiot. Hyvää työtä! Siirry nyt luomaan **Power BI:n** avulla monipuolisia raportteja ja koontinäyttöjä tarinasi tueksi.

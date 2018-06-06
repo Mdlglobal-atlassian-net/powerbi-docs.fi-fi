@@ -1,0 +1,53 @@
+### YamlMime:Tutorial
+title: Aloittaminen
+metadata:
+  title: Aloitus | Microsoft Power BI
+  description: Opit, mikä Power BI on, miten sen rakenneosat toimivat yhdessä ja miten voit käyttää niitä merkityksellisten tietojen kohdalla.
+  audience: Business User
+  level: Beginner
+  nextTutorialHref: gettingdata
+  nextTutorialTitle: Tietojen hankkiminen
+  displayType: one-column
+  author: davidiseminger
+  manager: kfile
+  ms.service: powerbi
+  ms.topic: get-started-article
+  ms.date: 12/05/2017
+  ms.author: davidi
+  ms.openlocfilehash: 0a7456720b041b9dda176a5182f945a0b1fa63b5
+  ms.sourcegitcommit: 7bf22bb1136fdb0f962422e16e837187f090827c
+  ms.translationtype: HT
+  ms.contentlocale: fi-FI
+  ms.lasthandoff: 02/06/2018
+  ms.locfileid: "29704600"
+items:
+- durationInMinutes: 1
+  content: >
+    Tässä **ohjatun oppimisen** osassa opit, mikä Power BI on, miten sen rakenneosat toimivat yhdessä ja miten voit käyttää niitä merkityksellisten tietojen kohdalla.
+- title: Power BI:n esittely
+  durationInMinutes: 5
+  content: >
+    [!INCLUDE [](includes/0-0-what-is-power-bi.md)]
+- title: Power BI:n käyttäminen
+  durationInMinutes: 4
+  content: >
+    > [!Video https://www.youtube.com/embed/1c01r_pAZdk?rel=0]
+
+
+    [!INCLUDE [](includes/0-1-intro-using-power-bi.md)]
+- title: Power BI:n osat
+  durationInMinutes: 6
+  content: >
+    [!INCLUDE [](includes/0-0b-building-blocks-power-bi.md)]
+- title: Power BI -palvelun yleiskatsaus
+  durationInMinutes: 9
+  content: >
+    > [!Video https://www.youtube.com/embed/5srP3h3RJf8?rel=0]
+
+
+    [!INCLUDE [](includes/0-3-dashboards-cloud-services.md)]
+- title: Kertaus ja seuraavat vaiheet
+  durationInMinutes: 5
+  content: >
+    [!INCLUDE [](includes/0-4-summary-of-intro-to-power-bi.md)]
+- content: Olet suorittanut Microsoft Power BI ohjatun oppimisen **Aloitus**-osion. Hyvää työtä! Nyt voit siirtyä seuraavaan ohjatun oppimisen kohtaan, joka on **Tietojen hakeminen**. Valitse **Tietojen hakeminen** alta jatkaaksesi.
