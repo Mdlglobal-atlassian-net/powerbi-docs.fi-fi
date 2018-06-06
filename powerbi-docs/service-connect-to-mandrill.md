@@ -1,29 +1,21 @@
 ---
 title: Yhteyden muodostaminen Mandrilliin Power BI:llä
 description: Mandrill Power BI:lle
-services: powerbi
-documentationcenter: ''
 author: SarinaJoan
 manager: kfile
-backup: maggiesMSFT
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: maggiesMSFT
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 2e0d0b43d148642e4c96dbc4c3f9a4f6f94d1774
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 5e12e32d947779f4ebc5bc2d238125c7359c08fe
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/24/2018
-ms.locfileid: "30815304"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34242291"
 ---
 # <a name="connect-to-mandrill-with-power-bi"></a>Yhteyden muodostaminen Mandrilliin Power BI:llä
 Power BI -sisältöpaketti hakee tietoja Mandrill-tililtäsi ja luo koontinäytön, joukon raportteja ja tietojoukon, joiden avulla voit tarkastella tietojasi. Mandrillin analytiikan avulla saat nopeasti merkityksellisiä tietoja uutiskirjeestäsi tai markkinointikampanjastasi. Tiedot on määritetty päivittymään päivittäin, niin että seuraamasi tiedot ovat varmasti ajan tasalla.
@@ -49,10 +41,10 @@ Muodosta yhteys [Mandrill-sisältöpakettiin Power BI:lle.](http://app.powerbi.c
 
 **Mitä seuraavaksi?**
 
-* Kokeile [kysymyksen esittämistä Q&A-ruudussa](power-bi-q-and-a.md) koontinäytön yläreunassa
+* Kokeile [kysymyksen esittämistä raporttinäkymän yläreunassa olevassa Q&A-ruudussa](power-bi-q-and-a.md).
 * [Muuta koontinäytön ruutuja](service-dashboard-edit-tile.md).
 * [Valitse jokin ruutu](service-dashboard-tiles.md), jolloin siihen liittyvä raportti avautuu.
-* Tietojoukko on ajastettu päivittymään päivittäin, mutta voit muuttaa päivitysaikataulua tai kokeilla tietojoukon päivittämistä haluamanasi ajankohtana toiminnolla **Päivitä nyt**
+* Tietojoukko on ajastettu päivittymään päivittäin, mutta voit muuttaa päivitysaikataulua tai kokeilla tietojoukon päivittämistä **Päivitä nyt** -toiminnolla haluamanasi ajankohtana
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 [Power BI:n käytön aloittaminen](service-get-started.md)

@@ -1,29 +1,21 @@
 ---
 title: Excel-työkirjasta luodun tietojoukon päivittäminen – paikallinen
 description: Excel-työkirjasta luodun tietojoukon päivittäminen paikallisessa asemassa
-services: powerbi
-documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 12/06/2017
+ms.component: powerbi-service
+ms.topic: conceptual
+ms.date: 05/02/2018
 ms.author: davidi
 LocalizationGroup: Data refresh
-ms.openlocfilehash: 903f53378f2a9c8efce5bc8c6028f89add7df8c5
-ms.sourcegitcommit: 1fe3ababba34c4e7aea08adb347ec5430e0b38e4
+ms.openlocfilehash: 1acfa9c0e2e88c98dd74b2b92f7a3c6d27b25b00
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/22/2018
-ms.locfileid: "30975827"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34245312"
 ---
 # <a name="refresh-a-dataset-created-from-an-excel-workbook-on-a-local-drive"></a>Excel-työkirjasta luodun tietojoukon päivittäminen paikallisessa asemassa
 ## <a name="whats-supported"></a>Tuetut toiminnot:

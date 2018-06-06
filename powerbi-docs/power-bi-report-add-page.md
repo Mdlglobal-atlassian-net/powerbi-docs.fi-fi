@@ -1,29 +1,21 @@
 ---
 title: Sivun lisääminen tai monistaminen raportissa
 description: Sivun lisääminen Power BI -raporttiin Power BI -palvelussa ja Power BI Desktopissa
-services: powerbi
-documentationcenter: ''
 author: mihart
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 12/20/2017
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: da162a5377b9ba2979e38910b97924396fc921b9
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 48980bf4ded44f9c383b38606747d14b5a5725c8
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/24/2018
-ms.locfileid: "30973847"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34237426"
 ---
 # <a name="add-a-page-to-a-power-bi-report-in-power-bi-service-and-power-bi-desktop"></a>Sivun lisääminen Power BI -raporttiin Power BI -palvelussa ja Power BI Desktopissa
 Raportin sivua ei tarvitse ahtaa täyteen, sillä voit vain lisätä uuden tyhjän sivun. 

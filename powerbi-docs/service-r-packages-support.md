@@ -1,29 +1,21 @@
 ---
 title: Lue tietoja siitä, millä R-paketeilla voidaan luoda ja käyttää R-komentosarjoja Power BI:ssä
 description: R-paketit, joita tuetaan ja joita ei tueta Power BI:ssä
-services: powerbi
-documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 12/06/2017
+ms.component: powerbi-desktop
+ms.topic: conceptual
+ms.date: 05/02/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 189e9ed8bb63df4fdbebc5eaa11625bef4592d38
-ms.sourcegitcommit: 4217430c3419046c3a90819c34f133ec7905b6e7
+ms.openlocfilehash: 39c6c11e4815df507431648b1d317f9a62a4b1c3
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/12/2018
-ms.locfileid: "30975242"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34299190"
 ---
 # <a name="r-packages-in-the-power-bi-service"></a>R-paketit Power BI -palvelussa
 Voit käyttää tehokasta [R-ohjelmointikieltä](https://www.r-project.org/) visualisointien luomiseksi Power BI -palvelussa. Monet R-paketit ovat tuettuja Power BI -palvelussa (ja lisää tuetaan jatkuvasti), mutta joitakin paketteja ei tueta.

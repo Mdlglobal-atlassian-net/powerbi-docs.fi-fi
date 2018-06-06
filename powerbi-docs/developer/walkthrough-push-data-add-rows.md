@@ -1,28 +1,20 @@
 ---
 title: Rivien lisääminen taulukkoon
 description: Tietojen työntäminen vaihe vaiheelta – Rivien lisääminen Power BI -taulukkoon
-services: powerbi
-documentationcenter: ''
 author: markingmyname
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: get-started-article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-developer
+ms.topic: conceptual
 ms.date: 08/10/2017
 ms.author: maghan
-ms.openlocfilehash: 643ac2c333aa1ab2bf05ceca60f218e975d786db
-ms.sourcegitcommit: 6e693f9caf98385a2c45890cd0fbf2403f0dbb8a
+ms.openlocfilehash: 382d600a6e50d926fc61163ea1b0e4f1273fdcc9
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/30/2018
-ms.locfileid: "30973112"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34287528"
 ---
 # <a name="step-5-add-rows-to-a-power-bi-table"></a>Vaihe 5: Rivien lisääminen Power BI -taulukkoon
 Tämä artikkeli on osa vaiheittaisia ohjeita, joilla [tiedot työnnetään tietojoukkoon](walkthrough-push-data.md).

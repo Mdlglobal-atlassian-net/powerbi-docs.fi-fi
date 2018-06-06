@@ -1,28 +1,20 @@
 ---
 title: Tietoilmoitusten määrittäminen Power BI -mobiilisovelluksissa
 description: Lue, miten Power BI -mobiilisovellukseen asetetaan tietoilmoituksia, jotka ilmoittavat, kun koontinäytön tiedot muuttuvat asettamiesi rajojen ulkopuolelle.
-services: powerbi
-documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-mobile
+ms.topic: conceptual
 ms.date: 12/18/2017
 ms.author: maggies
-ms.openlocfilehash: c6406a6d1ad4269352ce8421b91f4304fd35c78f
-ms.sourcegitcommit: ea247cb3cfc1cac076d4b076c1ad8e2fc37e15a1
+ms.openlocfilehash: aa4aac1b0628fb0670a4265095ba2abcae3c1dcf
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/19/2017
-ms.locfileid: "30972602"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34292566"
 ---
 # <a name="set-data-alerts-in-the-power-bi-mobile-apps"></a>Tietoilmoitusten määrittäminen Power BI -mobiilisovelluksissa
 Koskee seuraavia:

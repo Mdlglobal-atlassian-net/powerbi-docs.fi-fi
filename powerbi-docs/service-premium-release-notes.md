@@ -1,29 +1,21 @@
 ---
 title: Power BI Premiumin julkaisutiedot
 description: Lue organisaation tai tiimin kapasiteetille sovitetun Power BI Premiumin julkaisutiedot.
-services: powerbi
-documentationcenter: ''
-author: markingmyname
+author: mgblythe
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: get-started-article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-admin
+ms.topic: conceptual
 ms.date: 09/11/2017
-ms.author: maghan
+ms.author: mgblythe
 LocalizationGroup: Premium
-ms.openlocfilehash: e25677f615f4aa5b1489604814cebc6916809c41
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 3cf20899e705328c9f63bdbede4c30bd69488762
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/24/2018
-ms.locfileid: "29706610"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34298316"
 ---
 # <a name="power-bi-premium-release-notes"></a>Power BI Premiumin julkaisutiedot
 Nämä ovat Power BI Premiumin julkaisutiedot. Se tarjoaa organisaatiolle tai tiimille varatun kapasiteetin, luotettavamman suorituskyvyn, suuremman tietomäärän ja mahdollisuuden jakaa sisältöä ilman katselijoiden käyttäjäkohtaisia käyttöoikeuksia.

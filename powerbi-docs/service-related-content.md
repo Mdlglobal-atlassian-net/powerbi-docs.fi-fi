@@ -1,30 +1,22 @@
 ---
 title: Tarkastele aiheeseen liittyvää sisältöä Power BI -palvelussa
 description: Siirtymistä on helpotettu, tarkastele aiheeseen liittyvää sisältöä raporttinäkymissä, raporteissa ja tietojoukoissa
-services: powerbi
-documentationcenter: ''
 author: mihart
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
+ms.reviewer: ''
 featuredvideoid: B2vd4MQrz4M
-qualityfocus: no
-qualitydate: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 03/01/2018
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 43dffab862173779068f1180f83bc6c92bf98013
-ms.sourcegitcommit: 5e1f7d2673efe25c47b9b9f315011055bfe92c8f
+ms.openlocfilehash: 9aa0169f76515dd2f05a3e9debb8bc3d10cbdd07
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/09/2018
-ms.locfileid: "29722671"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34250142"
 ---
 # <a name="view-related-content-in-power-bi-service"></a>Tarkastele aiheeseen liittyvää sisältöä Power BI -palvelussa
 **Aiheeseen liittyvä sisältö** -ruutu näyttää, miten Power BI -palvelun sisältösi -- koontinäytöt, raportit ja tietojoukot --on yhdistetty toisiinsa.  Ja vielä paranee, tässä ruudussa voit suorittaa yleisiä tehtäviä, kuten päivittää, nimetä uudelleen, luoda merkityksellistä tietoa sekä paljon muuta. Valitse aiheeseen liittyvä raportti tai raporttinäkymä ja se avautuu Power BI -työtilassasi.   

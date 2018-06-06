@@ -1,28 +1,20 @@
 ---
 title: Power BI -raportin ajoitettu päivitys Power BI -raporttipalvelimessa
 description: Power BI -raportteja voi yhdistää eri tietolähteisiin. Käytettävissä on eri tietolähteitä riippuen siitä, miten tietoja käytetään.
-services: powerbi
-documentationcenter: ''
 author: markingmyname
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-report-server
+ms.topic: conceptual
 ms.date: 11/01/2017
 ms.author: maghan
-ms.openlocfilehash: 1c6020a84ccaa1827a347049b7959313cd09f173
-ms.sourcegitcommit: 6e693f9caf98385a2c45890cd0fbf2403f0dbb8a
+ms.openlocfilehash: 1e29898ed2c72b3a28bc2fd90dd430e45b5cde03
+ms.sourcegitcommit: b25ae650643b0a62f33d7c1741307137b9cec316
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/30/2018
-ms.locfileid: "30973067"
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34799529"
 ---
 # <a name="power-bi-report-scheduled-refresh-in-power-bi-report-server"></a>Power BI -raportin ajoitettu päivitys Power BI -raporttipalvelimessa
 Power BI -raporttien ajoitetun päivityksen avulla raportin tiedot pysyvät ajan tasalla.
@@ -69,11 +61,8 @@ Lisätietoja Analysis Services -esiintymän seurannasta on kohdassa [Analysis Se
 
 Katso Analysis Services -muistiasetuksia koskevia tietoja kohdasta [Muistin ominaisuudet](https://docs.microsoft.com/sql/analysis-services/server-properties/memory-properties).
 
-### <a name="authentication-and-kerberos"></a>Todentaminen ja Kerberos
-Jos tietolähde on määritetty käyttämään Windows-tunnistetietoja, saatetaan sen toimimiseksi vaatia rajoitettua Kerberos-delegointia. Lisätietoja on artikkelissa [Windows-todennuksen määrittäminen raporttipalvelimessa](https://docs.microsoft.com/sql/reporting-services/security/configure-windows-authentication-on-the-report-server).
-
 ## <a name="next-steps"></a>Seuraavat vaiheet
 Power BI -raportin [ajoitetun päivityksen](configure-scheduled-refresh.md) määrittäminen.
 
-Onko sinulla muuta kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
+Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
 

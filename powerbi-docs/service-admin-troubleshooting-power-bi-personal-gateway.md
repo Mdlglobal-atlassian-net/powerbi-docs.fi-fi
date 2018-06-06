@@ -1,29 +1,21 @@
 ---
 title: Power BI Gateway - Personal -yhdyskäytävän vianmääritys
 description: Power BI Gateway - Personal -yhdyskäytävän vianmääritys
-services: powerbi
-documentationcenter: ''
-author: davidiseminger
+author: mgblythe
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 12/06/2017
-ms.author: davidi
+ms.author: mblythe
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: 1063f8a34041e4c27b481085608d69c3eb32558a
-ms.sourcegitcommit: 1fe3ababba34c4e7aea08adb347ec5430e0b38e4
+ms.openlocfilehash: 58e6dc99198eb4f031dd28b5c80cc8babb03dbfb
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/22/2018
-ms.locfileid: "30975857"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34247260"
 ---
 # <a name="troubleshooting-power-bi-gateway---personal"></a>Power BI Gateway - Personal -yhdyskäytävän vianmääritys
 Seuraavassa käydään läpi joitakin yleisiä ongelmia, joita saatat kohdata käyttäessäsi Power BI Gateway - Personal -yhdyskäytävää.
@@ -77,11 +69,11 @@ Saatat saada tämän virheilmoituksen \<tietojoukon\> asetuksissa, jos olet ajoi
 
 **Virhe: [Tietojen yhdistäminen ei onnistu] &lt;kyselyosa&gt;/&lt;…&gt;/&lt;…&gt; {0} käyttää tietolähteitä, joiden yksityisyystasoja ei voi käyttää yhdessä. Muodosta tämä tietoyhdistelmä uudelleen.**
 
-**Ratkaisu**: tämä virhe johtuu tietosuojatason rajoituksista ja käyttämiesi tietolähteiden tyypeistä. [Lue lisää](refresh-enable-fast-combine.md)
+**Ratkaisu**: tämä virhe johtuu tietosuojatason rajoituksista ja käyttämiesi tietolähteiden tyypeistä.
 
 **Virhe: Tietolähdevirhe: arvoa ”\[Table\]” ei voi muuntaa tyypiksi Table.**
 
-**Ratkaisu**: tämä virhe johtuu tietosuojatason rajoituksista ja käyttämiesi tietolähteiden tyypeistä. [Lue lisää](refresh-enable-fast-combine.md)
+**Ratkaisu**: tämä virhe johtuu tietosuojatason rajoituksista ja käyttämiesi tietolähteiden tyypeistä.
 
 **Virhe: tälle riville ei ole tarpeeksi tilaa.**
 

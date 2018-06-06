@@ -1,30 +1,22 @@
 ---
 title: Kuvan, tekstin, videon ja virtautettavien tietojen lisääminen koontinäyttöön
 description: Ohjeet kuvan, videon, tekstiruudun, verkkokoodin ja virtautettavien tietojen ruudun lisäämiseen koontinäyttöön Lisää ruutu -pienoissovelluksen avulla.
-services: powerbi
-documentationcenter: ''
 author: mihart
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
+ms.reviewer: ''
 featuredvideoid: e2PD8m1Q0vU
-qualityfocus: identified
-qualitydate: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 03/02/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: cb1db61a3e0017adf56314862a5bb71fe1288dc6
-ms.sourcegitcommit: 5e1f7d2673efe25c47b9b9f315011055bfe92c8f
+ms.openlocfilehash: 064de8e84edd50f3216c814ddd235452d573d0a0
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/09/2018
-ms.locfileid: "29924983"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34247707"
 ---
 # <a name="add-image-text-video-and-more-to-your-dashboard"></a>Kuvan, tekstin, videon ja muiden elementtien lisääminen koontinäyttöön
 <iframe width="560" height="315" src="https://www.youtube.com/embed/e2PD8m1Q0vU" frameborder="0" allowfullscreen></iframe>

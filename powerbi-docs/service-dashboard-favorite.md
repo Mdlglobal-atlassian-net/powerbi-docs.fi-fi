@@ -1,30 +1,22 @@
 ---
 title: Suosikit Power BI -palvelussa (koontinäytöt, raportit, sovellukset)
 description: Ohjeet koontinäyttöjen, raporttien ja sovellusten määrittämisestä suosikeiksi Power BI -palvelussa
-services: powerbi
-documentationcenter: ''
 author: mihart
 manager: kfile
-backup: ''
-editor: ''
+ms.reviewer: ''
 featuredvideoid: G26dr2PsEpk
-tags: ''
-qualityfocus: no
-qualitydate: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 03/02/2018
 ms.author: mihart
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 82f8575c019790820aa46c75e095f8ef64bb6fde
-ms.sourcegitcommit: 5e1f7d2673efe25c47b9b9f315011055bfe92c8f
+ms.openlocfilehash: 920e61ed173e979a92958e56f9e0276f26288b3f
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/09/2018
-ms.locfileid: "29751759"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34250671"
 ---
 # <a name="favorite-dashboards-reports-and-apps-in-power-bi-service"></a>Power BI -palvelun suosikkikoontinäytöt, -raportit ja -sovellukset
 Kun lisäät sisällön *suosikkeihin*, voit käyttää sitä kaikista työtiloistasi.  Suosikit ovat yleensä sisältöä, jota käytät useimmin.
@@ -84,7 +76,7 @@ Etkö enää käytä raporttia yhtä usein kuin aiemmin?  Voit poistaa sen suosi
 > 
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
-[Aloita Power BI:n käyttäminen](service-get-started.md)
+[Power BI:n käytön aloittaminen](service-get-started.md)
 
 [Power BI:n peruskäsitteet](service-basic-concepts.md)
 

@@ -1,29 +1,21 @@
 ---
 title: Tietojen hakeminen Power BI Desktop -tiedostoista
 description: Opi noutamaan tietoja ja raportteja Power BI Desktopista Power BI:hin
-services: powerbi
-documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: complete
-qualitydate: 03/30/2016
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 12/06/2017
+ms.component: powerbi-service
+ms.topic: conceptual
+ms.date: 05/02/2018
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 3ebe9edbd77bf1661effd34c798c822305e265ae
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 5429e6acafcad706d6d445086c612f50e22bf01c
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/24/2018
-ms.locfileid: "30973902"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34241526"
 ---
 # <a name="get-data-from-power-bi-desktop-files"></a>Tietojen hakeminen Power BI Desktop -tiedostoista
 ![](media/service-desktop-files/pbid_file_icon.png)
@@ -35,9 +27,9 @@ Kun olet tuonut tiedot **Power BI Desktopiin** ja luonut muutamia raportteja, on
 ## <a name="where-your-file-is-saved-makes-a-difference"></a>Tiedoston tallennussijainnilla on merkitystä
 **Paikallinen** – Jos tallennat tiedoston tietokoneesi paikalliseen asemaan tai toiseen sijaintiin organisaatiossasi, voit *tuoda* tiedoston tai *julkaista* sen Power BI Desktopista siirtääksesi sen tiedot ja raportit Power BI:hin. Todellisuudessa tiedosto säilyy paikallisessa asemassa, joten koko tiedostoa ei ole varsinaisesti siirretty Power BI:hin. Käytännössä Power BI:hin luodaan uusi tietojoukko, johon Power BI Desktop -tiedoston tiedot ja tietomalli ladataan. Jos tiedostossa on raportteja, ne näkyvät Power BI -sivuston Raportit-kohdassa.
 
-**OneDrive – yritys** – Ehdottomasti tehokkain tapa, jolla voit pitää Power Bi Desktop -työsi ja Power BI:n tietojoukon, raportit ja koontinäytöt synkronoituina, on käyttää OneDrive for Businessia ja kirjautua siihen sisään samalla tilillä kuin Power BI:hinkin. Koska sekä Power BI että OneDrive toimivat pilvipalvelussa, Power BI *muodostaa yhteyden* OneDrivessa sijaitsevaan tiedostoon noin tunnin välein. Jos muutoksia löytyy, Power BI:n tietojoukko, raportit ja koontinäytöt päivitetään automaattisesti.
+**OneDrive – yritys** – Ehdottomasti tehokkain tapa, jolla voit pitää Power Bi Desktop -työsi ja Power BI:n tietojoukon, raportit ja koontinäytöt synkronoituina, on käyttää OneDrive for Businessia ja kirjautua siihen sisään samalla tilillä kuin Power BI:hinkin. Koska sekä Power BI että OneDrive toimivat pilvipalvelussa, Power BI *muodostaa yhteyden* OneDrivessa sijaitsevaan tiedostoon noin tunnin välein. Jos muutoksia löytyy, Power BI:n tietojoukko, raportit ja raporttinäkymät päivitetään automaattisesti.
 
-**OneDrive – henkilökohtainen** – Jos tallennat tiedostot henkilökohtaiseen OneDrive-tiliisi, saat monia samoja etuja kuin käyttäessäsi OneDrive for Businessia. Suurin ero on, että kun muodostat ensimmäisen kerran yhteyden tiedostoon (valitsemalla Nouda tiedot > Tiedostot > OneDrive – henkilökohtainen), sinun on kirjauduttava OneDriveen Microsoft-tililläsi, joka on yleensä erilainen kuin Power BI -kirjautumisessa käyttämäsi tili. Kun kirjaudut OneDriveen käyttämällä Microsoft-tiliäsi, muista valita Pidä minut kirjautuneena -asetus. Näin Power BI voi muodostaa yhteyden tiedostoon noin tunnin välein ja varmistaa, että Power BI:n tietojoukko on synkronoitu.
+**OneDrive – henkilökohtainen** – Jos tallennat tiedostot henkilökohtaiseen OneDrive-tiliisi, saat monia samoja etuja kuin käyttäessäsi OneDrive for Businessia. Suurin ero on, että sinun on kirjauduttava sisään OneDriveen käyttämällä Microsoft-tiliäsi, kun muodostat ensimmäisen kerran yhteyden tiedostoon (Nouda tiedot > Tiedostot > OneDrive - henkilökohtainen). Yleensä Microsoft-tili on eri kuin tili, jota käytetään Power BI:hin kirjautumiseen. Kun kirjaudut sisään OneDriveen käyttämällä Microsoft-tiliäsi, muista valita asetus Pidä minut sisäänkirjautuneena. Näin Power BI voi muodostaa yhteyden tiedostoon noin tunnin välein ja varmistaa, että Power BI:n tietojoukko on synkronoitu.
 
 **SharePoint-työryhmäsivustot** – Power BI Desktop -tiedostojen tallentaminen SharePoint-työryhmäsivustoihin tapahtuu lähes samoin kuin tallentaminen OneDrive for Businessiin. Suurin ero on siinä, miten yhteys Power BI:stä tiedostoon muodostetaan. Voit määrittää URL-osoitteen tai muodostaa yhteyden pääkansioon.
 

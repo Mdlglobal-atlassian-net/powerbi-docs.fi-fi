@@ -1,30 +1,22 @@
 ---
 title: Minulle jaetun Power BI ‑sisällön näyttäminen
 description: ohjeita Power BI:n Jaettu kanssani ‑näkymästä
-services: powerbi
-documentationcenter: ''
 author: mihart
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
+ms.reviewer: ''
 featuredvideoid: G26dr2PsEpk
-qualityfocus: no
-qualitydate: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 02/28/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 6c29f0915009fced89c80e05f40b91c467e505ce
-ms.sourcegitcommit: 5e1f7d2673efe25c47b9b9f315011055bfe92c8f
+ms.openlocfilehash: b95ca140322c207c6c352597e42d50d18a48e52e
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/09/2018
-ms.locfileid: "29924883"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34298707"
 ---
 # <a name="display-the-power-bi-dashboards-that-have-been-shared-with-me"></a>Minulle jaettujen Power BI ‑koontinäyttöjen tarkastelu
 ## <a name="shared-with-me"></a>Jaettu kanssani

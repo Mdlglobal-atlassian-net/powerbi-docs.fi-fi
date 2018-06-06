@@ -1,29 +1,21 @@
 ---
 title: 'Project Online: tietoihin yhdistäminen Power BI Desktopilla'
 description: 'Project Online: tietoihin yhdistäminen Power BI Desktopilla'
-services: powerbi
-documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 12/06/2017
+ms.component: powerbi-desktop
+ms.topic: conceptual
+ms.date: 05/02/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 0577c6e3ce89e51c767273b634f6d3d88875eead
-ms.sourcegitcommit: 1fe3ababba34c4e7aea08adb347ec5430e0b38e4
+ms.openlocfilehash: 6cae9bdfbb89e8c3a11e8ee3fec45327296319b3
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/22/2018
-ms.locfileid: "30975927"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34288908"
 ---
 # <a name="project-online-connect-to-data-through-power-bi-desktop"></a>Project Online: tietoihin yhdistäminen Power BI Desktopilla
 Voit muodostaa Power BI Desktopilla yhteyden Project Onlinessa oleviin tietoihin.

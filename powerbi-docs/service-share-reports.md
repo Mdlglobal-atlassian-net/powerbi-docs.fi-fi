@@ -1,30 +1,22 @@
 ---
 title: Power BI -raporttien suodattaminen ja jakaminen työtovereiden kanssa
 description: Opi jakamaan suodatettu Power BI -raportti työtovereidesi kanssa organisaatiossa.
-services: powerbi
-documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
-backup: lukaszp
-editor: ''
-tags: ''
+ms.reviewer: lukaszp
 featuredvideoid: 0tUwn8DHo3s
-qualityfocus: complete
-qualitydate: 06/22/2016
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 01/18/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 3e3e8c315baa96d1af1eeaf40c7b60648d0b797e
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: bc5fe4c1e1fedc700fcbadd182f01e9e50348e3e
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/24/2018
-ms.locfileid: "30815754"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34257225"
 ---
 # <a name="share-a-filtered-power-bi-report-with-your-coworkers"></a>Suodatetun Power BI -raportin jakaminen työtovereiden kanssa
 *Jakaminen* on kätevä keino myöntää parille henkilölle käyttöoikeus luomiisi koontinäyttöihin ja raportteihin. Power BI tarjoaa myös [useita muita tapoja tehdä yhteistyötä ja jakaa raportteja](service-how-to-collaborate-distribute-dashboards-reports.md).

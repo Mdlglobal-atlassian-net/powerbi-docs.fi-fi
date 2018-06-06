@@ -1,29 +1,21 @@
 ---
 title: Muodosta yhteys Application Insightsiin Yhdistä Power BI:hin
 description: Application Insights Power BI:hin
-services: powerbi
-documentationcenter: ''
 author: SarinaJoan
 manager: kfile
-backup: maggiesMSFT
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: maggiesMSFT
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 04cc92bd33f342097b9952a744d8dfffced22bb3
-ms.sourcegitcommit: d91b7bf18d5c504037134f375886633379f28ede
+ms.openlocfilehash: 6ccf112a78e69e006a4ca3d6e8a7cd372adf5f05
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/27/2018
-ms.locfileid: "30815964"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34244245"
 ---
 # <a name="connect-to-application-insights-with-power-bi"></a>Application Insightsin yhdistäminen Power BI:hin
 Power BI:n avulla voit luoda tehokkaita mukautettuja raporttinäkymiä [Application Insights](https://azure.microsoft.com/documentation/articles/app-insights-overview/) -telemetriatiedoista. Näet sovellustelemetrian uusilla tavoilla. Yhdistä mittareita useista sovelluksista tai komponenttipalveluista yhteen raporttinäkymään. Power BI -sisältöpaketin ensimmäisessä Application Insights -julkaisussa on pienoissovelluksia yleisiä käyttöön liittyviä arvoja varten. Näitä ovat muun muassa aktiiviset käyttäjät, sivunäkymä, istunnot, selain- ja käyttöjärjestelmäversiot sekä käyttäjien maantieteellinen jakauma kartalla.
@@ -55,10 +47,10 @@ Muodosta yhteys [Application Insights -sisältöpakettiin Power BI:tä varten](h
 
 **Mitä seuraavaksi?**
 
-* Kokeile [kysymyksen esittämistä koontinäytön yläreunassa olevassa Q&A-ruudussa](power-bi-q-and-a.md)
+* Kokeile [kysymyksen esittämistä raporttinäkymän yläreunassa olevassa Q&A-ruudussa](power-bi-q-and-a.md).
 * [Muuta koontinäytön ruutuja](service-dashboard-edit-tile.md).
 * [Valitse jokin ruutu](service-dashboard-tiles.md), jolloin siihen liittyvä raportti avautuu.
-* Tietojoukko on ajastettu päivittymään päivittäin, mutta voit muuttaa päivitysaikataulua tai kokeilla tietojoukon päivittämistä **Päivitä nyt** -toiminnolla haluamanasi ajankohtana.
+* Tietojoukko on ajastettu päivittymään päivittäin, mutta voit muuttaa päivitysaikataulua tai kokeilla tietojoukon päivittämistä **Päivitä nyt** -toiminnolla haluamanasi ajankohtana
 
 ## <a name="whats-included"></a>Paketin sisältö
 Application Insights -sisältöpaketti sisältää seuraavat taulukot ja arvot:  
@@ -94,7 +86,7 @@ Kopioi ja liitä nämä Power BI:n kenttiin:
 ![Application Insights -parametrit](media/service-connect-to-application-insights/pbi_contpkappinsitparam2.png)
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
-[Aloita Power BI:n käyttö](service-get-started.md)
+[Power BI:n käytön aloittaminen](service-get-started.md)
 
-[Nouda tietoja Power BI:ssä](service-get-data.md)
+[Tietojen noutaminen Power BI:ssä](service-get-data.md)
 

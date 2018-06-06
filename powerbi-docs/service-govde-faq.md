@@ -1,29 +1,21 @@
 ---
 title: Usein kysyttyjä kysymyksiä Power BI:n Saksan valtionhallinnon asiakkaille
 description: Vastauksia usein kysyttyihin kysymyksiin Saksan valtionhallinnon asiakkaille Power BI:n Saksan valtionhallinnon palvelusta
-services: powerbi
-documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 12/06/2017
+ms.component: powerbi-service
+ms.topic: conceptual
+ms.date: 05/02/2018
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 911e75cb0d9f81c2696575942a13531e5799218e
-ms.sourcegitcommit: 65426de556cd7207cbc4f478198664e25c33a769
+ms.openlocfilehash: 909d524416b04654dc6f511a71b675381ec74e3a
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/30/2018
-ms.locfileid: "30274799"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34310259"
 ---
 # <a name="frequently-asked-questions-for-power-bi-for-germany-cloud-customers"></a>Usein kysyttyjä kysymyksiä Power BI:n pilvipalvelun saksalaisille asiakkaille
 **Power BI -palvelusta** on saatavilla Euroopan unionin ja Euroopan Vapaakauppajärjestön sopimuksen (EU/EFTA) asiakkaille versio, johon viitataan usein nimellä Microsoft Cloud Deutschland (MCD). Tässä artikkelissa kuvattu **Power BI -palvelun** versio on suunniteltu erityisesti EU/EFTA -asiakkaille ja on erillinen ja erilainen kuin **Power BI -palvelun** kaupallinen versio, joka on tarjolla valtionhallinnon asiakkaille.
@@ -43,7 +35,7 @@ Seuraavat kysymykset ja vastaukset tarjoavat tärkeää tietoa Microsoft Cloud D
    Kyllä. Osana rekisteröitymisprosessia, voit vaihtoehtoisesti kirjautua sisään olemassa olevalla Saksan pilvipalvelun vuokraajan järjestelmänvalvojatilillä, ja lisätä Power BI Pro -palvelun käyttöoikeuden olemassa olevaan Saksan pilvipalvelun vuokraajan. Huomioi, että Saksan pilvipalvelun vuokraajat ja käyttäjätilit eroavat Power BI -palvelu Saksan pilvipalvelun vastaavista.
 4. **Onko olemassa maksutonta Power Bi Saksan pilvipalvelua?**
    
-   Nro Emme tarjoa ilmaisia käyttöoikeusversioita Power BI Saksan pilvipalvelusta. Voit kuitenkin rekisteröityä [ilmaiseksi Power Bi:n julkiseen pilvipalveluun](https://powerbi.microsoft.com/get-started/) jos yrityksesi tarpeet on mahdollista tyydyttää ilmaisen Power BI -palvelun avulla.
+   Ei. Emme tarjoa ilmaisia käyttöoikeusversioita Power BI Saksan pilvipalvelusta. Voit kuitenkin rekisteröityä [ilmaiseksi Power Bi:n julkiseen pilvipalveluun](https://powerbi.microsoft.com/get-started/) jos yrityksesi tarpeet on mahdollista tyydyttää ilmaisen Power BI -palvelun avulla.
 5. **Voinko käyttää Power BI Desktopia, Power BI -mobiilisovellusta, paikallisia tietoyhdyskäytäviä ja Publisher for Exceliä Power BI Saksan pilvipalvelussa?**
    
    Kyllä. Olemme päivittäneet Power BI -tuotteemme toimimaan saumattomasti Power BI Saksan pilvipalvelun kanssa. Kirjaudu sisään Power BI Saksan pilvipalvelutilillesi käyttääksesi samoja asiakastuotteita Power BI Saksan pilvipalvelussa. Voit ladata viimeisimmän version asiakastuotteista seuraavista paikoista:
@@ -79,7 +71,7 @@ Seuraavat kysymykset ja vastaukset tarjoavat tärkeää tietoa Microsoft Cloud D
 ### <a name="next-steps"></a>Seuraavat vaiheet
 Voit tehdä Power BI:llä kaikenlaista. Saat lisätietoja ja kursseja, mukaan lukien artikkelin, jossa näytetään, miten voit rekisteröityä palveluun, tutustumalla seuraaviin resursseihin:
 
-* [Power BI:n ohjattu oppiminen](guided-learning/gettingstarted.yml#step-1)
+* [Power BI:n ohjattu oppiminen](guided-learning/gettingstarted.yml?tutorial-step=1)
 * [Power BI -palvelun käytön aloittaminen](service-get-started.md)
 * [Power BI Desktopin käytön aloittaminen](desktop-getting-started.md)
 

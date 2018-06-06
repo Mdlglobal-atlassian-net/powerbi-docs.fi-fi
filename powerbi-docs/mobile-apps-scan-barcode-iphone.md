@@ -1,28 +1,20 @@
 ---
 title: Viivakoodin skannaaminen iPhonella Power BI -mobiilisovelluksesta
 description: Voit skannata viivakoodeja todellisessa maailmassa ja siirtyä suoraan suodatettuihin BI-tietoihin Power BI -mobiilisovelluksessa.
-services: powerbi
-documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-mobile
+ms.topic: conceptual
 ms.date: 10/13/2017
 ms.author: maggies
-ms.openlocfilehash: 7ae11cf40620b4170823ca518a9c7c37c8c4dd61
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: e5a61f1649e32def68afd01130c3c903c9f90a3c
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/13/2017
-ms.locfileid: "30972087"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34294038"
 ---
 # <a name="scan-a-barcode-with-your-iphone-from-the-power-bi-mobile-app"></a>Viivakoodin skannaaminen iPhonella Power BI -mobiilisovelluksesta
 Voit skannata viivakoodeja todellisessa maailmassa ja siirtyä suoraan suodatettuihin BI-tietoihin Power BI -mobiilisovelluksessa.
@@ -38,7 +30,7 @@ Kun skannaat tuotteen viivakoodin iPhonen Power BI -sovelluksen skannerilla, nä
 2. Vieritä alaspäin **Skanneri**-kohtaan ja valitse se. 
    
     ![](media/mobile-apps-scan-barcode-iphone/power-bi-scanner.png)
-3. Jos kamerasi ei ole käytössä, sinun on sallittava Power BI -sovelluksen kameran käyttö. Tämä on yhden kerran suoritettava hyväksyntä. 
+3. Jos kamerasi ei ole käytössä, sinun on sallittava Power BI -sovellukselle kameran käyttö. Tämä on yhden kerran suoritettava hyväksyntä. 
 4. Osoita skannerilla tuotteen viivakoodia. 
    
     Näet luettelon kyseiseen viivakoodiin liittyvistä raporteista.

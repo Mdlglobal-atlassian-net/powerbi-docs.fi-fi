@@ -1,28 +1,20 @@
 ---
 title: Koontinäytön integrointi sovellukseen organisaatiolle
 description: Lue, miten voit integroida tai upottaa koontinäytön verkkosovellukseen Power BI -ohjelmointirajapintojen avulla.
-services: powerbi
-documentationcenter: ''
 author: markingmyname
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: get-started-article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-developer
+ms.topic: conceptual
 ms.date: 02/13/2018
 ms.author: maghan
-ms.openlocfilehash: e85b745798fd33ffbb5061f4c156054d2218bfb1
-ms.sourcegitcommit: 2ceea44d3606c15b57142c37649c9d481ec4becc
+ms.openlocfilehash: 979b76350b9867bbc684a70bd89a82f88993e625
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/15/2018
-ms.locfileid: "30973617"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34290265"
 ---
 # <a name="integrate-a-dashboard-into-an-app-for-your-organization"></a>Koontinäytön integrointi sovellukseen organisaatiolle
 Lue, miten voit integroida tai upottaa koontinäytön verkkosovellukseen REST-ohjelmointirajapinnan kutsujen ja Power BI JavaScript -ohjelmointirajapinnan avulla organisaatiolle.
@@ -41,14 +33,14 @@ Voit integroida koontinäytön verkkosovellukseen **Power BI** REST -ohjelmointi
 ## <a name="download-the-sample"></a>Mallin lataaminen
 Tässä artikkelissa näytetään koodi, jota käytetään [integrate-dashboard-web-app](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/User%20Owns%20Data/integrate-dashboard-web-app)-mallissa GitHubissa. Voit ladata mallin, jonka avulla voit noudattaa näitä vaiheittaisia ohjeita.
 
-## <a name="step-1---register-an-app-in-azure-ad"></a>Vaihe 1 – Rekisteröi sovellus Azure AD:ssä
+## <a name="step-1---register-an-app-in-azure-ad"></a>Vaihe 1 – rekisteröi sovellus Azure AD:ssä
 Sinun on rekisteröitävä sovellus Azure AD:ssä REST-ohjelmointirajapinnan kutsujen tekemiseksi. Saat lisätietoja artikkelista [Azure AD -sovelluksen rekisteröinti Power BI -sisällön upottamista varten](register-app.md).
 
-Jos latasit [koontinäytön integrointimallin](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/User%20Owns%20Data/integrate-dashboard-web-app), käytä rekisteröinnin jälkeen saamaasi **asiakastunnusta** ja **asiakkaan salaista koodia**, jotta Azure AD voi todentaa mallin. Jos haluat konfiguroida mallia, vaihda **asiakastunnus** ja **asiakkaan salainen koodi** *cloud.config*-tiedostossa.
+Jos latasit [koontinäytön integrointimallin](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/User%20Owns%20Data/integrate-dashboard-web-app), käytä rekisteröinnin jälkeen saamaasi **asiakastunnusta** ja **asiakkaan salaista koodia**, jotta Azure AD voi todentaa mallin. Voit konfiguroida mallin muuttamalla **asiakastunnusta** ja **asiakkaan salasanaa** *cloud.config*-tiedostossa.
 
 ![](media/integrate-dashboard/powerbi-embed-dashboard-register-app4.png)
 
-## <a name="step-2---get-an-access-token-from-azure-ad"></a>Vaihe 2 – Hanki käyttöoikeustietue Azure AD:stä
+## <a name="step-2---get-an-access-token-from-azure-ad"></a>Vaihe 2 – hanki käyttöoikeustietue Azure AD:stä
 Sinun on hankittava sovelluksessa **käyttöoikeustietue** Azure AD:stä, ennen kuin voit lähettää kutsuja Power BI REST -ohjelmointirajapintaan. Saat lisätietoja artikkelista [Käyttäjien todentaminen ja Azure AD -käyttöoikeustietueen hankkiminen Power BI -sovellukselle](get-azuread-access-token.md).
 
 ## <a name="step-3---get-a-dashboard"></a>Vaihe 3 – Hanki koontinäyttö

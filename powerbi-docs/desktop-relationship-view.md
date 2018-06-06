@@ -1,29 +1,21 @@
 ---
 title: Suhteet-näkymä Power BI Desktopissa
 description: Suhteet-näkymä Power BI Desktopissa
-services: powerbi
-documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 12/06/2017
+ms.component: powerbi-desktop
+ms.topic: conceptual
+ms.date: 05/02/2018
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: e94977a8b9a106798f0facd962d6e766f6410da3
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 58886dc1ae5490113d4d0ba9af00d16aefecbe71
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/24/2018
-ms.locfileid: "30973742"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34287022"
 ---
 # <a name="relationship-view-in-power-bi-desktop"></a>Suhteet-näkymä Power BI Desktopissa
 **Suhteet-näkymässä** näytetään kaikki mallin taulukot, sarakkeet ja suhteet. Tästä voi olla hyötyä etenkin silloin, kun mallin taulukoiden välillä on monimutkaisia suhteita.

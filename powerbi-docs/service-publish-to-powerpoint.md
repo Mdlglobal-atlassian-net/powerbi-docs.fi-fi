@@ -1,29 +1,21 @@
 ---
 title: Raporttien vieminen Power BI:stä PowerPointiin (esikatselu)
 description: Lue, miten voit viedä Power BI -raportin PowerPointiin.
-services: powerbi
-documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: complete
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 01/22/2018
+ms.component: powerbi-service
+ms.topic: conceptual
+ms.date: 05/02/2018
 ms.author: davidi
 LocalizationGroup: Share your work
-ms.openlocfilehash: fccb8575ac6ce238f0d5fb8fe64d9c16efa96c07
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 1d4b825cd7301af020f01de215e00968d21f972c
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/24/2018
-ms.locfileid: "30815899"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34250004"
 ---
 # <a name="export-reports-from-power-bi-to-powerpoint-preview"></a>Raporttien vieminen Power BI:stä PowerPointiin (esikatselu)
 Voit nyt julkaista Power BI:llä raportin **Microsoft PowerPointiin** ja luoda helposti Power BI -raporttiin perustuvan diasarjan. **PowerPointiin vietäessä** tapahtuu seuraavaa:

@@ -1,29 +1,22 @@
 ---
 title: Kanssasi jaetun ArcGIS-kartan käsitteleminen
 description: 'ArcGis-kartan käyttäminen lukunäkymässä '
-services: powerbi
-documentationcenter: ''
 author: mihart
 manager: kfile
-backup: ''
-editor: ''
+ms.reviewer: ''
 tags: power bi, service, desktop, mobile
 featuredvideoid: ''
-qualityfocus: monitoring
-qualitydate: 06/23/2017
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 02/28/2018
 ms.author: mihart
-ms.openlocfilehash: 3a4c722144b1d3d44dee0f742b5ae90ccef53fe3
-ms.sourcegitcommit: c45498071d582dcca264216863906ffaae382523
+ms.openlocfilehash: 2a5e654062c056308431b2a94f7e2da4e3d46d17
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/01/2018
-ms.locfileid: "30974717"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34240879"
 ---
 # <a name="interacting-with-arcgis-maps-in-power-bi"></a>ArcGIS-karttojen käsittely Power BI:ssä
 Tämä ohjeaihe on kirjoitettu sellaisen käyttäjän näkökulmasta, joka on ArcGIS-kartan *kuluttaja* ja tarkastelee karttaa Power BI -palvelussa, Desktopissa tai mobiililaitteelta. Kun ArcGIS-kartan tehnyt henkilö jakaa kartan sinulle, voit toimia kartan kanssa monin eri tavoin.  Jos haluat lisätietoa ArcGIS-karttojen luomisesta, katso [opetusohjelma Esrin ArcGIS-kartoista](power-bi-visualization-arcgis.md).

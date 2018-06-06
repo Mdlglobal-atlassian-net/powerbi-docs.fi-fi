@@ -1,29 +1,21 @@
 ---
 title: Power BI:n Talousmalli-työkirjan lataaminen
 description: Power BI:n Talousmalli-työkirjan lataaminen
-services: powerbi
-documentationcenter: ''
 author: mihart
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 10/28/2017
+ms.component: powerbi-desktop
+ms.topic: sample
+ms.date: 05/21/2018
 ms.author: amac
 LocalizationGroup: Samples
-ms.openlocfilehash: 966c64e45db296888e7927130f263c288d7e714d
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 8a586561ea91fc8a66d70099938818372456df98
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/24/2018
-ms.locfileid: "29706600"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34456044"
 ---
 # <a name="download-the-financial-sample-workbook-for-power-bi"></a>Power BI:n Talousmalli-työkirjan lataaminen
 Tarvitsetko tietoja, joiden avulla voit kokeilla Power BI -palvelua? Voit ladata meiltä yksinkertaisen Excel-työkirjan, jossa on mallitaloustietoja.  Voit ladata työkirjan näin:

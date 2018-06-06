@@ -1,29 +1,21 @@
 ---
 title: Azure ja Power BI
 description: Azure ja Power BI
-services: powerbi
-documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 12/06/2017
+ms.component: powerbi-service
+ms.topic: conceptual
+ms.date: 05/02/2018
 ms.author: davidi
 LocalizationGroup: Data from databases
-ms.openlocfilehash: f07abb6b878ba96c1e5a84168ded6e466c8fb18e
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: a656866b1c9cdc0d1eb83b67c0edf79c182d1a71
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/24/2018
-ms.locfileid: "30973907"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34244429"
 ---
 # <a name="azure-and-power-bi"></a>Azure ja Power BI
 **Azure**-palveluiden ja **Power BI:n avulla** voit siirtää tietojenkäsittelyllä saamasi tiedot analyyseihin ja raporttien, joilla saadaan reaaliaikaisia tietoja yrityksestäsi. Oli tietojen käsittely sitten pilvipohjaista tai paikallista, yksinkertaista tai monimutkaista, yhdestä lähteestä tai massiivisesti skaalattua, tallennettua tai reaaliaikaisia, Azure ja Power BI sisältävät kiinteän liitännän ja integraation yrityksesi liiketoimintatiedon hallintaa varten.

@@ -1,29 +1,21 @@
 ---
 title: Oleta viite-eheys -asetus Power BI Desktopissa
 description: DirectQuery antaa lisätietoja siitä, miten Power BI Desktop olettaa viite-eheys-asetuksen
-services: powerbi
-documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 01/24/2018
+ms.component: powerbi-desktop
+ms.topic: conceptual
+ms.date: 04/24/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 9494b7774c8ba7d91398b14fb6ae2f21649050fa
-ms.sourcegitcommit: e31fc1f6e4af427f8b480c8dbc537c3617c9b2c0
+ms.openlocfilehash: 15edc53e88ba46d3edd41b2a28d76deaabd28659
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/22/2018
-ms.locfileid: "30975707"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34290587"
 ---
 # <a name="assume-referential-integrity-settings-in-power-bi-desktop"></a>Oleta viite-eheys -asetus Power BI Desktopissa
 Muodostettaessa yhteyttä tietolähteeseen **DirectQueryn**avulla voit käyttää **Oleta viite-eheys** -valintaa tehokkaamman kyselyiden suorittamisen varmistamiseksi tietolähdettä vasten. Tämä ominaisuus sisältää joitakin vaatimuksia pohjana olevista tiedoista, ja se on käytettävissä vain, kun käytät **DirectQuerya**.

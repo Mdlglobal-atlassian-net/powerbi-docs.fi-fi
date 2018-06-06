@@ -1,29 +1,21 @@
 ---
 title: Saman tilin käyttö Power BI:een ja Azureen
 description: Samalla tilillä kirjautuminen Power BI:hin ja Azureen
-services: powerbi
-documentationcenter: ''
 author: mgblythe
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 06/28/2017
 ms.author: mblythe
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: fac2faac6ddd62bbc5f8a74ba1764b10e597f58d
-ms.sourcegitcommit: 8552a34df8e6141eb704314c1a019992901d6e78
+ms.openlocfilehash: 375a251e7515ad33396cc4cf5ebb0ee715ab0330
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/08/2018
-ms.locfileid: "30976992"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34254029"
 ---
 # <a name="using-the-same-account-for-power-bi-and-azure"></a>Saman tilin käyttö Power BI:een ja Azureen
 Jos olet Power BI- ja Azure-käyttäjä, haluat ehkä käyttää samaa kirjautumistunnusta molempiin palveluihin niin, että sinun ei tarvitse kirjoittaa salasanaasi kahdesti.

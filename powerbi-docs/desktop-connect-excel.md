@@ -1,29 +1,21 @@
 ---
 title: Exceliin yhdistäminen Power BI Desktopissa
 description: Excel-työkirjan tietoihin yhdistäminen ja tietojen käyttäminen helposti Power BI Desktopissa
-services: powerbi
-documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 12/06/2017
+ms.component: powerbi-desktop
+ms.topic: conceptual
+ms.date: 04/24/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: cb5021187a5263739c576795108edeb726fb2e62
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: bb35e8762b4cbe79e8efe2aede15bcac66f2ac8b
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/24/2018
-ms.locfileid: "30973677"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34289782"
 ---
 # <a name="connect-to-excel-in-power-bi-desktop"></a>Exceliin yhdistäminen Power BI Desktopissa
 Excel-työkirjaan yhdistäminen Power BI Desktopista on helppoa, ja tässä artikkelissa kerrotaan, miten se tehdään.

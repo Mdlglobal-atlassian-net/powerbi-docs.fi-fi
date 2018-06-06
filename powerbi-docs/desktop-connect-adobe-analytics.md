@@ -1,29 +1,21 @@
 ---
 title: Adobe Analyticsiin yhdistäminen Power BI Desktopissa
 description: Adobe Analyticsiin yhdistäminen ja Adobe Analyticsin käyttäminen helposti Power BI Desktopissa
-services: powerbi
-documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 04/04/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 4488cd373fae22c4494ac697602536496ffc9b00
-ms.sourcegitcommit: e571de2afa3f34fac06a6aab0df0e8940cb00a0d
+ms.openlocfilehash: f54aa5a67739a3ad6f9ea0a42f8a2b872e51d52d
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/05/2018
-ms.locfileid: "30976772"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34230918"
 ---
 # <a name="connect-to-adobe-analytics-in-power-bi-desktop"></a>Adobe Analyticsiin yhdistäminen Power BI Desktopissa 
 Voit **Power BI Desktopissa** yhdistää **Adobe Analyticsiin** ja käyttää pohjana olevia tietoja samalla tavalla kuin mitä tahansa muuta tietolähdettä Power BI Desktopissa. 

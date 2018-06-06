@@ -1,29 +1,21 @@
 ---
 title: R-komentosarjojen suorittaminen Power BI Desktopissa
 description: R-komentosarjojen suorittaminen Power BI Desktopissa
-services: powerbi
-documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 12/06/2017
+ms.component: powerbi-desktop
+ms.topic: conceptual
+ms.date: 05/02/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 34e756a661ec580e2c0eea8fc53378566eccf305
-ms.sourcegitcommit: 4217430c3419046c3a90819c34f133ec7905b6e7
+ms.openlocfilehash: acadd84fbd8d0cf7f44b23362474d08608107f24
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/12/2018
-ms.locfileid: "30975127"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34286447"
 ---
 # <a name="run-r-scripts-in-power-bi-desktop"></a>Suorita R-komentosarat Power BI Desktopissa
 Voit suorittaa R-komentosarjoja suoraan **Power BI Desktopissa** ja tuoda tietojoukot Power BI Desktopin tietomallin.

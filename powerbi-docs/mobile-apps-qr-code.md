@@ -1,28 +1,20 @@
 ---
 title: Power BI:n QR-koodin lukeminen mobiililaitteella
 description: Power BI:n QR-koodien avulla voit yhdistää mitä tahansa todellisesta maailmasta suoraan siihen liittyviin BI-tietoihin iPhone- ja Android-laitteissa toimivissa Power BI ‑mobiilisovelluksissa.
-services: powerbi
-documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-mobile
+ms.topic: conceptual
 ms.date: 03/13/2018
 ms.author: maggies
-ms.openlocfilehash: 2716452f285d8df0aa0d3b89c2b9b36aa87cc5cc
-ms.sourcegitcommit: 00b4911ab5fbf4c2d5ffc000a3d95b3149909c28
+ms.openlocfilehash: 9ce22194c6896865d231cfe9f33049f8da21083e
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/15/2018
-ms.locfileid: "30975382"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34296085"
 ---
 # <a name="scan-a-power-bi-qr-code-from-your-mobile-device"></a>Power BI:n QR-koodin lukeminen mobiililaitteella
 Koskee seuraavia:

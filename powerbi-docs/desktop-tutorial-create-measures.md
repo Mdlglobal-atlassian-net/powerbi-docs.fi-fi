@@ -1,29 +1,21 @@
 ---
 title: 'Opetusohjelma: omien mittayksiköiden luominen Power BI Desktopissa'
 description: 'Opetusohjelma: omien mittayksiköiden luominen Power BI Desktopissa'
-services: powerbi
-documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 12/06/2017
+ms.component: powerbi-desktop
+ms.topic: tutorial
+ms.date: 05/21/2018
 ms.author: davidi
 LocalizationGroup: Learn more
-ms.openlocfilehash: f3a58d8acc7d8eb24954e9db0c0db91eacad2f9a
-ms.sourcegitcommit: 65426de556cd7207cbc4f478198664e25c33a769
+ms.openlocfilehash: 8cfa3190acd4ef2ae2e1123f22d8f6221147afb1
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/30/2018
-ms.locfileid: "30976167"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34456084"
 ---
 # <a name="tutorial-create-your-own-measures-in-power-bi-desktop"></a>Opetusohjelma: omien mittayksiköiden luominen Power BI Desktopissa
 Voit luoda tehokkaimpiin kuuluvia tietojen analysointiratkaisuja Power BI Desktopissa käyttämällä mittayksiköitä. Mittayksiköt auttavat suorittamalla tiedoillesi laskutoimituksia samalla, kun käsittelet raporttejasi. Tässä opetusohjelmassa kerrotaan Power BI Desktopin mittayksiköistä ja siitä, kuinka voit luoda omia perusmittayksiköitä.

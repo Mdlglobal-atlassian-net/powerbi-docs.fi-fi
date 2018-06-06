@@ -1,29 +1,21 @@
 ---
 title: Yhteyden muodostaminen Planview Enterpriseen Power BI:llä
 description: Planview Enterprise for Power BI
-services: powerbi
-documentationcenter: ''
 author: SarinaJoan
 manager: kfile
-backup: maggiesMSFT
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: maggiesMSFT
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 2376b639ad6a6ca843f997e52cedcce4c9832a7a
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 4641fc0c36ad7fb64cc5da08ee8eda180f4ccc31
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/24/2018
-ms.locfileid: "30815369"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34240485"
 ---
 # <a name="connect-to-planview-enterprise-with-power-bi"></a>Yhteyden muodostaminen Planview Enterpriseen Power BI:llä
 Planview Enterprise -sisältöpaketin avulla voit visualisoida resurssien ja työn hallinnan tietoja kokonaan uudella tavalla suoraan Power BI:ssä. Käytä Planview Enterprise-tunnistetietojasi, niin näet vuorovaikutteisesti portfolio-sijoituksesi kulutuksen sekä budjetin ylitykset ja alitukset. Näin saat tietää, kuinka hyvin projektisi kohdistuvat yrityksen strategisiin prioriteetteihin. Voit myös laajentaa valmista raporttinäkymää ja raportteja, jotta saat sinulle tärkeimmät merkitykselliset tiedot.
@@ -53,9 +45,9 @@ Yhteyden muodostaminen [Planview Enterprise -sisältöpakettiin Power BI:ssä](h
 **Mitä seuraavaksi?**
 
 * Kokeile [kysymyksen esittämistä raporttinäkymän yläreunassa olevassa Q&A-ruudussa](power-bi-q-and-a.md).
-* [Muuta raporttinäkymän ruutuja](service-dashboard-edit-tile.md).
+* [Muuta koontinäytön ruutuja](service-dashboard-edit-tile.md).
 * [Valitse jokin ruutu](service-dashboard-tiles.md), jolloin siihen liittyvä raportti avautuu.
-* Tietojoukko on ajastettu päivittymään päivittäin, mutta voit muuttaa päivitysaikataulua tai kokeilla tietojoukon päivittämistä **Päivitä nyt** -toiminnolla haluamanasi ajankohtana.
+* Tietojoukko on ajastettu päivittymään päivittäin, mutta voit muuttaa päivitysaikataulua tai kokeilla tietojoukon päivittämistä **Päivitä nyt** -toiminnolla haluamanasi ajankohtana
 
 ## <a name="system-requirements"></a>Järjestelmävaatimukset
 Tuodaksesi Planview Enterprise -tietosi Power BI:hin sinun on oltava Planview Enterprise -käyttäjä, jonka roolissa on käytössä Reporting Portal Viewer -ominaisuus. Lisävaatimukset ovat alla.

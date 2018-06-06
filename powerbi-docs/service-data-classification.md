@@ -1,29 +1,21 @@
 ---
 title: Koontinäytön tietojen luokittelu
 description: Lue lisätietoja koontinäytön tietojen luokittelusta, mukaan lukien siitä, miten järjestelmänvalvojan tulisi se määrittää ja miten koontinäytön omistajat voivat muuttaa luokitusta.
-services: powerbi
-documentationcenter: ''
 author: amandacofsky
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: complete
-qualitydate: 03/15/2016
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 08/10/2017
 ms.author: amac
 LocalizationGroup: Dashboards
-ms.openlocfilehash: aed13e5bc7a21caa87e4c5b25fd61d55dcfc6129
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: f08e4199af06a4a7fd74cb525e918a67a27165a8
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/24/2018
-ms.locfileid: "29924823"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34251318"
 ---
 # <a name="dashboard-data-classification"></a>Koontinäytön tietojen luokittelu
 Jokainen koontinäyttö on erilainen ja riippuen yhdistetystä tietolähteestä, havaitset luultavasti, että sinun ja työtovereidesi, joiden kanssa jaat tietoja, on suoritettava eri varotoimia tietojen arkaluontoisuuden mukaisesti. Joitakin koontinäyttöjä ei pitäisi koskaan jakaa yrityksen ulkopuolisille henkilöille tai tulostaa, kun taas osa voidaan jakaa vapaasti. Käyttämällä koontinäytön tietojen luokitusta, pystyt nostamaan tietoisuutta koontinäyttösi tarkastelijoiden keskuudessa siitä, mitä suojaustasoa tulisi käyttää. Voit lisätä koontinäyttöösi tunnisteen, jossa luokitukset on määritelty yrityksesi IT-osaston mukaan, joten kaikilla ketkä katselevat sisältöä, on saman tasoinen ymmärrys tietojen arkaluontoisuudesta.

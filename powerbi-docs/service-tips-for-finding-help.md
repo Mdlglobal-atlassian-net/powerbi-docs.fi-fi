@@ -1,29 +1,21 @@
 ---
 title: 10 vinkkiä ohjeiden saamiseen, kun sinulla on Power BI:tä koskevia kysymyksiä
 description: Tässä on 10 tapaa, joilla voit saada ohjeita, kun sinulla on kysyttävää Power BI:n toiminnasta
-services: powerbi
-documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: get-started-article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 10/12/2017
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: 0984e00dbe6b82a2b5b9cfc07f318ded03961f64
-ms.sourcegitcommit: 4217430c3419046c3a90819c34f133ec7905b6e7
+ms.openlocfilehash: 297805d187ccdea2c04e0b79ad86723ec80d3f80
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/12/2018
-ms.locfileid: "29859852"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34310057"
 ---
 # <a name="10-tips-for-getting-help-with-your-power-bi-questions"></a>10 vinkkiä ohjeiden saamiseen, kun sinulla on Power BI:tä koskevia kysymyksiä
 Turhaudutko joskus Power BI:tä käyttäessäsi tai oletko pulassa, koska et saa vastauksia Power BI:tä koskeviin kysymyksiisi juuri silloin kun tarvitset niitä? 
@@ -53,7 +45,7 @@ Sopivatko videot paremmin oppimistyyliisi? YouTubessa on kaksi Power BI -videojo
 ## <a name="6-attend-training"></a>6 Osallistu koulutukseen
 Käytettävissäsi olevat koulutusvaihtoehdot ovat lähes rajattomat – henkilökohtaisesta laboratoriokoulutuksesta lyhyisiin videoihin.
 
-* [Ohjattu oppiminen](guided-learning/gettingstarted.yml#step-1) Power BI -sivustossa.
+* [Ohjattu oppiminen](guided-learning/gettingstarted.yml?tutorial-step=1) Power BI -sivustossa.
 * Reaaliaikaiset, on-demand-perusteiset [ilmaiset Power BI -verkkoseminaarit](webinars.md) Power BI-sivustossa.
 
 Voit etsiä verkosta seuraavien kaltaisia lisävaihtoehtoja:

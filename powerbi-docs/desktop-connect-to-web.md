@@ -1,29 +1,21 @@
 ---
 title: Verkkosivuun yhdistäminen Power BI Desktopista
 description: Verkkosivuun yhdistäminen ja tietojen käyttäminen helposti Power BI Desktopissa
-services: powerbi
-documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 12/06/2017
+ms.component: powerbi-desktop
+ms.topic: conceptual
+ms.date: 05/02/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 23984d8e64445d869062e942eb6155ff58b0d0ae
-ms.sourcegitcommit: 00b4911ab5fbf4c2d5ffc000a3d95b3149909c28
+ms.openlocfilehash: b9a157b9a7302ed7e02f0b3e8f17a905b9b65d93
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/15/2018
-ms.locfileid: "30975342"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34287229"
 ---
 # <a name="connect-to-a-web-page-from-power-bi-desktop"></a>Verkkosivuun yhdistäminen Power BI Desktopista
 Voit muodostaa yhteyden verkkosivuun ja tuoda sen tiedot Power BI Desktopiin visualisoinneissa ja tietomalleissa käyttöä varten.

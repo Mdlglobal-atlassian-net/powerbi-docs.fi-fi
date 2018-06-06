@@ -1,29 +1,21 @@
 ---
 title: Yhteistyö Power BI -sovelluksen työtilassa
 description: Lue lisätietoja Power BI Desktop -tiedostojen yhteistyöstä sovelluksen työtilassa sekä Office 365-palveluista kuten tiedostojen jakamisesta OneDrive for Business -palvelussa, keskusteluista Exchange-palvelussa, kalenterista ja tehtävistä.
-services: powerbi
-documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
-backup: ajayan
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ajayan
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 01/29/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 1837bc36ac4707663b5583699b0090ac9a692eb7
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: cab0f0513d73a865407574d43f8cd65ca5d75a9e
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/24/2018
-ms.locfileid: "30815404"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34245450"
 ---
 # <a name="collaborate-in-your-power-bi-app-workspace"></a>Yhteiskäyttö Power BI -sovelluksen työtilassa
 Power BI -sovelluksen työtilat on käteviä paikkoja tehdä yhteistyötä työtovereidesi kanssa raporttinäkymässä, raporteissa ja tietojoukoissa *sovellusten* luomiseksi. Sillä yhteistyötä varten työtiloja on suunniteltu. Sen jälkeen, kun lopetat yhteiskäytön raporttinäkymässä ja raporttien parissa työtovereiden kanssa, voit pakata sen sovellukseksi ja jakaa sitä. Lue lisää [sovellusten ja sovelluksen työtilojen luomisesta Power BI:ssa](service-create-distribute-apps.md). 

@@ -1,29 +1,21 @@
 ---
 title: Merkityksellisten tietojen käyttö Power BI Desktopissa (esikatselu)
 description: Saat helposti merkityksellistä tietoa Power BI Desktopin nousuista ja laskuista
-services: powerbi
-documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 12/25/2017
+ms.component: powerbi-desktop
+ms.topic: conceptual
+ms.date: 05/02/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 17a66c362124616796eb48a7052d89226555df3b
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 2b5959049b65d32eebf7f484e8485ff59a10f459
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/24/2018
-ms.locfileid: "30973707"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34286079"
 ---
 # <a name="use-insights-in-power-bi-desktop-preview"></a>Merkityksellisten tietojen käyttö Power BI Desktopissa (esikatselu)
 Voit käyttää **Power BI Desktopia** selittämään nousut ja laskut kaavioissa ja saada nopeasti ja automaattisesti merkityksellistä analyysia tiedoistasi. Napsauta vain arvopistettä hiiren kakkospainikkeella ja valitse **Analysoi > Selitä lasku** (tai nousu, jos edellinen palkki oli pienempi) ja merkityksellinen tieto toimitetaan sinulle helppokäyttöisessä ikkunassa.

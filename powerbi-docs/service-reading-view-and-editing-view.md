@@ -1,29 +1,21 @@
 ---
 title: Raportin lukunäkymä ja muokkausnäkymä Power BI -palvelussa
 description: Korkean tason yleiskatsaus eroista Power BI -palvelun raporttien lukunäkymän ja muokkausnäkymän välillä
-services: powerbi
-documentationcenter: ''
 author: mihart
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 03/13/2018
+ms.component: powerbi-service
+ms.topic: conceptual
+ms.date: 04/13/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: a9cb6e3d3fe244a3d530efeb2624e3cc5a799e55
-ms.sourcegitcommit: 00b4911ab5fbf4c2d5ffc000a3d95b3149909c28
+ms.openlocfilehash: eacadb04935dd0c929a85904335b613f3d5d4d58
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/15/2018
-ms.locfileid: "30975397"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34251663"
 ---
 # <a name="reading-view-and-editing-view-in-power-bi-service-reports"></a>Lukunäkymä ja muokkausnäkymä Power BI -palvelun raporteissa
 Power BI -palvelussa (ei koske Power BI Desktopia) raportteja voi tarkastella ja käyttää kahdessa tilassa: lukunäkymässä ja muokkausnäkymässä. Lukunäkymä on kaikkien käyttäjien käytettävissä, ja se on suunniteltu erityisesti tietojen *kuluttajille*, kun taas muokkausnäkymää voivat käyttää vain raporttien *tekijät* ja omistajat.
@@ -49,7 +41,6 @@ Tässä kaaviossa ei luetella Power BI -palvelun kaikkia raporttiominaisuuksia. 
 |Tehtävä  | Lukunäkymä  | Muokkausnäkymä |
 |-------------------------|-------|-------|
 |**Raportit kokonaisuutena**  |
-||||
 | [Raportin luominen tai muokkaaminen](service-report-create-new.md) | Ei  | Kyllä |
 | [Raportin jakaminen](service-share-reports.md)| Kyllä | Kyllä, ja myös käyttöoikeuksien hallinta on mahdollista, mukaan lukien *omistajan* käyttöoikeuksien antaminen muille. |
 | [Pysyvien visuaalisen tason, alirakennetason, sivutason ja raporttitason suodattimien luominen Suodattimet-ruudusta](power-bi-report-add-filter.md) | Ei  | Kyllä |
@@ -64,12 +55,10 @@ Tässä kaaviossa ei luetella Power BI -palvelun kaikkia raporttiominaisuuksia. 
 | [Raportin tallentaminen](service-report-save.md) | Kyllä, mutta vain käyttämällä **Tallenna nimellä** -komentoa. | Kyllä |
 | [Raportin poistaminen](service-delete.md) | Ei  | Kyllä |
 |**Raporttisivut** |
-||||
 | [Raporttisivun lisääminen tai nimeäminen uudelleen](power-bi-report-add-page.md)  | Ei  | Kyllä  |
 | [Raporttisivun monistaminen](power-bi-report-copy-paste-page.md) | Ei  | Kyllä |
 | [Raporttisivun poistaminen](service-delete.md) | ei | kyllä |
 |**Raportin visualisointien käyttäminen**|
-||||
 | [Visualisointien lisääminen raporttiin](power-bi-report-add-visualizations-i.md) | Ei  | Kyllä |
 | [Tekstiruutujen ja muotojen lisääminen raporttiin](power-bi-reports-add-text-and-shapes.md) | Ei  | Kyllä |
 | [Raportin Muotoilu-ruudun käyttäminen](service-the-report-editor-take-a-tour.md) | Ei | Kyllä |

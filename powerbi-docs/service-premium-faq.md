@@ -1,29 +1,21 @@
 ---
 title: Power BI Premiumin usein kysytyt kysymykset
 description: Selaa Power BI Premium -tarjoomaa koskevien usein kysyttyjen kysymysten ja vastausten luetteloa.
-services: powerbi
-documentationcenter: ''
-author: markingmyname
+author: mgblythe
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-admin
+ms.topic: conceptual
 ms.date: 09/20/2017
-ms.author: maghan
+ms.author: mblythe
 LocalizationGroup: Premium
-ms.openlocfilehash: c5d96b0aa9ce02abf3e88d83718d70a3b8033897
-ms.sourcegitcommit: 65426de556cd7207cbc4f478198664e25c33a769
+ms.openlocfilehash: 25340ac8349e112b2424496274441feedebe7052
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/30/2018
-ms.locfileid: "30274922"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34298845"
 ---
 # <a name="power-bi-premium-faq"></a>Power BI Premiumin usein kysytyt kysymykset
 Selaa Power BI Premium -tarjoomaa koskevien usein kysyttyjen kysymysten ja vastausten luetteloa.
@@ -135,7 +127,7 @@ Maksuttoman palvelun aktiiviset käyttäjät, joihin 1.6.2017 voimaan astuvat mu
 Maksuttoman palvelun käyttäjät, jotka ovat olleet aktiivisia kuluneen vuoden aikana, saavat 12 kuukauden laajennetun Power BI Pro -kokeiluversion ilmaiseksi. Kokeiluversio tarjoaa Power BI Pron täydet ominaisuudet, jotta käyttäjillä on riittävästi aikaa sopeutua palvelun käyttöön. Lisätietoja laajennetusta Pro-kokeiluversion tarjoomasta on artikkelissa [Laajennetun Pro-kokeiluversion aktivointi](service-extended-pro-trial.md).
 
 **Menettävätkö käyttäjät silloin pääsyn sisältöönsä (raporttinäkymiin ja raportteihin)?**  
-Nro Käyttäjät eivät menetä pääsyä sisältöön, jonka he ovat ladanneet Power BI -palveluun. Muiden kanssa jaettu sisältö ei ehkä ole enää vastaanottajien käytettävissä 1.6.2017 alkaen. Samalla tavalla heillä ei ehkä ole enää pääsyä sisältöön, jonka muut ovat jakaneet heidän kanssaan.
+Ei. Käyttäjät eivät menetä pääsyä sisältöön, jonka he ovat ladanneet Power BI -palveluun. Muiden kanssa jaettu sisältö ei ehkä ole enää vastaanottajien käytettävissä 1.6.2017 alkaen. Samalla tavalla heillä ei ehkä ole enää pääsyä sisältöön, jonka muut ovat jakaneet heidän kanssaan.
 
 Maksuttoman palvelun käyttäjät, jotka ovat olleet aktiivisia kuluneen vuoden aikana, saavat 12 kuukauden laajennetun Power BI Pro -kokeiluversion ilmaiseksi. Kokeiluversio tarjoaa Power BI Pron täydet ominaisuudet, jotta käyttäjillä on riittävästi aikaa sopeutua palvelun käyttöön. Lisätietoja laajennetusta Pro-kokeiluversion tarjoomasta on artikkelissa [Laajennetun Pro-kokeiluversion aktivointi](service-extended-pro-trial.md).
 
@@ -158,7 +150,7 @@ Power BI Pro -versioon ei ole tulossa muutoksia.
 Kyllä. Power BI Pro sisältyy jatkossakin Office 365 E5:een.
 
 **Voinko palauttaa Power BI Pro -käyttöoikeuteni, jos haluan vaihtaa Power BI Premiumiin?**  
-Nro Power BI Premium on Power BI Pron lisäosa, minkä vuoksi Premiumin käyttö edellyttää Pro-käyttöoikeutta.
+Ei. Power BI Premium on Power BI Pron lisäosa, minkä vuoksi Premiumin käyttö edellyttää Pro-käyttöoikeutta.
 
 **Miksi Power BI Pro on tarpeen? Eikö minun vain kannata hankkia Power BI Premium?**  
 Power BI Premium on kapasiteettipohjainen käyttöoikeus, kun taas Power BI Pro on käyttäjäpohjainen käyttöoikeus. Se on tarkoitettu nopeaan ja helppokäyttöiseen omatoimiseen analysointiin sellaisille käyttäjille, jotka tarvitsevat yhteistyöominaisuudet, raporttinäkymien jakamismahdollisuuden, ad-hoc-analyyseja ja mahdollisuuden julkaista raportteja, kuten:
@@ -213,7 +205,7 @@ Power BI -raporttipalvelin on käytettävissä Power BI Premiumin kautta tai etu
 Power BI -raporttipalvelin on sellaisten SQL Server -asiakkaiden käytettävissä, joilla on EE- ja SA-käyttöoikeudet. Se on myös ostettavissa Power BI Premiumin kautta. Power BI on SaaS-palvelu, ja Power BI -raporttipalvelin noudattaa samaa tilauspohjaista toimitusmallia.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
-[Power BI Premium – mikä se on?](service-premium.md)  
+[Mikä on Power BI Premium?](service-premium.md)  
 [Power BI Premiumin julkaisutiedot](service-premium-release-notes.md)  
 [Microsoft Power BI Premiumin tekninen raportti](https://aka.ms/pbipremiumwhitepaper)  
 [Power BI:n yrityskäyttöönoton suunnittelemisen tekninen raportti](https://aka.ms/pbienterprisedeploy)  

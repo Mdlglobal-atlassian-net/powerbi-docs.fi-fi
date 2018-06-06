@@ -1,29 +1,21 @@
 ---
 title: Tietotyypit Power BI Desktopissa
 description: Tietotyypit Power BI Desktopissa
-services: powerbi
-documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 12/06/2017
+ms.component: powerbi-desktop
+ms.topic: reference
+ms.date: 05/21/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 71a2908357164cf93870800947ae5fa0aa04c75c
-ms.sourcegitcommit: 4217430c3419046c3a90819c34f133ec7905b6e7
+ms.openlocfilehash: 14b5f3d4b571df8ae672ee9731ed97555c476abd
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/12/2018
-ms.locfileid: "30975167"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34456023"
 ---
 # <a name="data-types-in-power-bi-desktop"></a>Tietotyypit Power BI Desktopissa
 Tässä artikkelissa kuvataan tietotyypit, joita Power BI Desktop ja Data Analysis Expressions (DAX) tukevat. 
@@ -99,9 +91,9 @@ Suoritettavan muunnoksen tyyppi määräytyy operaattorin mukaan. Operaattori mu
 
 **Yhteenlasku (+)**
 
-| Operaattori (+) | KOKONAISLUKU | VALUUTTA | TOSI | Päivämäärä/kellonaika |
+| Operaattori (+) | KOKONAISLUKU | VALUUTTA | REAALI | Päivämäärä/kellonaika |
 | --- | --- | --- | --- | --- |
-| KOKONAISLUKU |KOKONAISLUKU |VALUUTTA |TOSI |Päivämäärä/kellonaika |
+| KOKONAISLUKU |KOKONAISLUKU |VALUUTTA |REAALI |Päivämäärä/kellonaika |
 | VALUUTTA |VALUUTTA |VALUUTTA |REAALI |Päivämäärä/kellonaika |
 | REAALI |REAALI |REAALI |REAALI |Päivämäärä/kellonaika |
 | Päivämäärä/kellonaika |Päivämäärä/kellonaika |Päivämäärä/kellonaika |Päivämäärä/kellonaika |Päivämäärä/kellonaika |

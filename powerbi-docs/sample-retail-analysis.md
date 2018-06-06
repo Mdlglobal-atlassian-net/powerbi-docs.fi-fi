@@ -1,29 +1,21 @@
 ---
 title: 'Jälleenmyyntianalyysimalli Power BI:lle: esittely'
 description: 'Jälleenmyyntianalyysimalli Power BI:lle: esittely'
-services: powerbi
-documentationcenter: ''
 author: mihart
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 01/18/2018
+ms.component: powerbi-desktop
+ms.topic: conceptual
+ms.date: 05/18/2018
 ms.author: mihart
 LocalizationGroup: Samples
-ms.openlocfilehash: dda92ff8280295e6112cf2ab6a51f4606e5c474d
-ms.sourcegitcommit: 8132f7edc6879eda824c900ba90b29cb6b8e3b21
+ms.openlocfilehash: 3382562459c461d9864cfce7163fb0d049deb494
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/03/2018
-ms.locfileid: "30301612"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34481804"
 ---
 # <a name="retail-analysis-sample-for-power-bi-take-a-tour"></a>Jälleenmyyntianalyysimalli Power BI:lle: esittely
 
@@ -33,7 +25,8 @@ Tämä alan malliraporttinäkymä ja siihen liittyvä raportti analysoivat useid
 
 ## <a name="prerequisites"></a>Edellytykset
 
- Ennen kuin voit käyttää mallia, se on ensin ladattava [sisältöpakettina](https://docs.microsoft.com/en-us/power-bi/sample-datasets#get-and-open-a-sample-content-pack-in-power-bi-service), [.pbix-tiedostona](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix) tai [Excel-työkirjana](http://go.microsoft.com/fwlink/?LinkId=529778).
+ Ennen kuin voit käyttää mallia, se on ensin ladattava [sisältöpakettina](https://docs.microsoft.com/power-bi/sample-datasets#get-and-open-a-sample-content-pack-in-power-bi-service), [.pbix-tiedostona](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail-Analysis-Sample-PBIX.pbix) tai [Excel-työkirjana](http://go.microsoft.com/fwlink/?LinkId=529778).
+
 
 ### <a name="get-the-content-pack-for-this-sample"></a>Mallin sisältöpaketin noutaminen
 
@@ -48,7 +41,7 @@ Tämä alan malliraporttinäkymä ja siihen liittyvä raportti analysoivat useid
   
    ![Jälleenmyyntianalyysimalli](media/sample-retail-analysis/retail16.png)
    
-5. Power BI tuo sisältöpaketin ja lisää uuden raporttinäkymän, raportin ja tietojoukon senhetkiseen työtilaasi. Uusi sisältö merkitään keltaisella tähdellä. 
+5. Power BI tuo sisältöpaketin ja lisää uuden koontinäytön, raportin ja tietojoukon senhetkiseen työtilaasi. Uusi sisältö merkitään keltaisella tähdellä. 
    
    ![Jälleenmyyntianalyysimalli](media/sample-retail-analysis/retail17.png)
   

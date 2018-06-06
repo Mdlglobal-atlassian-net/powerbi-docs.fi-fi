@@ -1,29 +1,21 @@
 ---
 title: Power BI Desktopin tietosuoja
 description: Power BI Desktopin tietosuoja-asetukset
-services: powerbi
-documentationcenter: ''
 author: MI77
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 03/14/2018
 ms.author: willt
 LocalizationGroup: Learn more
-ms.openlocfilehash: 0218d454f580d20e03d8a737ff466bb3ee0bbe6e
-ms.sourcegitcommit: 00b4911ab5fbf4c2d5ffc000a3d95b3149909c28
+ms.openlocfilehash: 61ff03f4f17561208bbbadc9ee7dfade61322ae2
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/15/2018
-ms.locfileid: "30975337"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34227284"
 ---
 # <a name="power-bi-desktop-privacy"></a>Power BI Desktopin tietosuoja
 

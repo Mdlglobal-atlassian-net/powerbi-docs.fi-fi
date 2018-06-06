@@ -1,28 +1,20 @@
 ---
 title: Oikeiden tietojen käyttö Power BI -mobiilisovelluksissa
 description: Power BI-mobiilisovelluksissa voit yhdistää reaalimaailman suoraan aiheeseen liittyviin BI-tietoihin ilman hakutoimintoa.
-services: powerbi
-documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-mobile
+ms.topic: conceptual
 ms.date: 03/13/2018
 ms.author: maggies
-ms.openlocfilehash: f4ad86ddf6604e2e8bd9d562249b3f2865a3ec7d
-ms.sourcegitcommit: 00b4911ab5fbf4c2d5ffc000a3d95b3149909c28
+ms.openlocfilehash: d6896686f89cc5b5eba1ec5f5e23d1e857da3c9c
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/15/2018
-ms.locfileid: "30975372"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34297626"
 ---
 # <a name="get-data-from-the-real-world-with-the-power-bi-mobile-apps"></a>Reaalimaailman tietojen saaminen Power BI -mobiilisovellusten avulla
 Power BI-mobiilisovelluksissa voit yhdistää reaalimaailman suoraan aiheeseen liittyviin BI-tietoihin monilla eri tavoilla. 

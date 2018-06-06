@@ -1,29 +1,21 @@
 ---
 title: Tietojen noutaminen Excel-työkirjatiedostoista
 description: Lue lisää siitä, miten voit noutaa tietoja Excel-työkirjatiedostoista Power BI:hin
-services: powerbi
-documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: complete
-qualitydate: 05/25/2016
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 12/06/2017
+ms.component: powerbi-service
+ms.topic: conceptual
+ms.date: 05/02/2018
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 8e85924dd4ceab7836408b7ef3431525eebc9163
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 2005069d6497fcbaeeda0fe9275f2c88b0e1999d
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/24/2018
-ms.locfileid: "30973967"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34252159"
 ---
 # <a name="get-data-from-excel-workbook-files"></a>Tietojen noutaminen Excel-työkirjatiedostoista
 ![](media/service-excel-workbook-files/excel_icon.png)

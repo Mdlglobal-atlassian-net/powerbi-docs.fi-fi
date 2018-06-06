@@ -1,29 +1,21 @@
 ---
 title: 'Hankinta-analyysimalli: esittely'
 description: 'Hankinta-analyysimalli Power BI:lle: esittely'
-services: powerbi
-documentationcenter: ''
 author: mihart
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 01/20/2018
+ms.component: powerbi-desktop
+ms.topic: conceptual
+ms.date: 05/20/2018
 ms.author: mihart
 LocalizationGroup: Samples
-ms.openlocfilehash: 3bca6f79b3a1b92243948fb64660e8946aedca7c
-ms.sourcegitcommit: 743e44fc8730fea0f7149916080b0c6d7eb6359d
+ms.openlocfilehash: aea76437664ca531b65601007783aee10fd90f19
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/28/2018
-ms.locfileid: "29706960"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34721980"
 ---
 # <a name="procurement-analysis-sample-for-power-bi-take-a-tour"></a>Hankinta-analyysimalli Power BI:lle: esittely
 
@@ -40,7 +32,7 @@ Tämä malli kuuluu sarjaan, jossa esitellään, miten Power BI:tä voidaan käy
 
 ## <a name="prerequisites"></a>Edellytykset
 
- Ennen kuin voit käyttää mallia, se on ensin ladattava [sisältöpakettina](https://docs.microsoft.com/en-us/power-bi/sample-procurement#get-the-content-pack-for-this-sample), [.pbix-tiedostona](http://download.microsoft.com/download/D/5/3/D5390069-F723-413B-8D27-5888500516EB/Procurement Analysis Sample PBIX.pbix) tai [Excel-työkirjana](http://go.microsoft.com/fwlink/?LinkId=529784).
+ Ennen kuin voit käyttää mallia, se on ensin ladattava [sisältöpakettina](https://docs.microsoft.com/power-bi/sample-procurement#get-the-content-pack-for-this-sample), [.pbix-tiedostona](http://download.microsoft.com/download/D/5/3/D5390069-F723-413B-8D27-5888500516EB/Procurement-Analysis-Sample-PBIX.pbix) tai [Excel-työkirjana](http://go.microsoft.com/fwlink/?LinkId=529784).
 
 ### <a name="get-the-content-pack-for-this-sample"></a>Mallin sisältöpaketin noutaminen
 
@@ -55,7 +47,7 @@ Tämä malli kuuluu sarjaan, jossa esitellään, miten Power BI:tä voidaan käy
   
    ![Nouda tiedot](media/sample-procurement/procurement1a.png)
    
-5. Power BI tuo sisältöpaketin ja lisää uuden raporttinäkymän, raportin ja tietojoukon senhetkiseen työtilaasi. Uusi sisältö merkitään keltaisella tähdellä. 
+5. Power BI tuo sisältöpaketin ja lisää uuden koontinäytön, raportin ja tietojoukon senhetkiseen työtilaasi. Uusi sisältö merkitään keltaisella tähdellä. 
    
    ![Tähti](media/sample-procurement/procurement1b.png)
   

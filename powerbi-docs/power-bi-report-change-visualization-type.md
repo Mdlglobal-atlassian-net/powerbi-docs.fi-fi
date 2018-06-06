@@ -1,29 +1,21 @@
 ---
 title: Visualisointityypin vaihtaminen raportissa
 description: Raportin visualisointityypin vaihtaminen Power BI -palvelun ja Power BI Desktopin välillä
-services: powerbi
-documentationcenter: ''
 author: mihart
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 12/20/2017
+ms.component: powerbi-desktop
+ms.topic: conceptual
+ms.date: 03/20/2017
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: c6a5759be3df141e2a93fe8c969a45cdc0b004be
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 126a805f49e98f34cb9cfdcbb7ce7e886f67ce76
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/24/2018
-ms.locfileid: "30973752"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34291991"
 ---
 # <a name="change-the-type-of-visualization-in-a-power-bi-report"></a>Power BI -raportin visualisointityypin vaihtaminen
 Kokeile erityyppisiä visualisointeja Power BI -palvelussa ja Power BI Desktopissa, niin näet, kummassa tiedot kuvataan paremmin. 
@@ -41,7 +33,7 @@ Kokeile erityyppisiä visualisointeja Power BI -palvelussa ja Power BI Desktopis
 Jos muutat raportin visualisointityyppiä sen jälkeen, kun visualisointi on kiinnitetty koontinäyttöön, ruutu ei päivity automaattisesti. Jos siis olet kiinnittänyt visualisoinnin viivakaaviona ja sitten vaihtanut sen raportissa palkkikaavioon, näiden tietojen jo kiinnitetty versio säilyy viivakaaviossa. Kiinnitä palkkikaavio, niin näet myös sen koontinäytössä.
 
 ### <a name="next-steps"></a>Seuraavat vaiheet
-Lisätietoja [visualisoinneista Power BI -raporteissa](power-bi-report-visualizations.md)
+Lisätietoja [Power BI -raporttien visualisoinneista](power-bi-report-visualizations.md)
 
 [Power BI:n peruskäsitteet](service-basic-concepts.md)
 

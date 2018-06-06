@@ -1,29 +1,21 @@
 ---
-title: 'Opetusohjelma: Excel-työkirjasta upeaksi raportiksi nopeasti'
-description: 'Opetusohjelma: Excel-työkirjasta upeaksi raportiksi nopeasti'
-services: powerbi
-documentationcenter: ''
+title: Excel-työkirjasta upeaksi raportiksi nopeasti
+description: Excel-työkirjasta upeaksi raportiksi nopeasti
 author: mihart
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 02/28/2018
 ms.author: mihart
 LocalizationGroup: Data from files
-ms.openlocfilehash: 64872b94d13f30cbab08d67530cc6ae0ccbe8fc3
-ms.sourcegitcommit: 5e1f7d2673efe25c47b9b9f315011055bfe92c8f
+ms.openlocfilehash: f24d4055bd5fcf5fdee058112c268a1a0e197012
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/09/2018
-ms.locfileid: "30974767"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34247168"
 ---
 # <a name="from-excel-workbook-to-stunning-report-in-no-time"></a>Excel-työkirjasta upeaksi raportiksi nopeasti
 Esimiehesi haluaa raportin viimeisimmistä myyntiluvuista yhdistettynä viimeisimmän kampanjan näyttökertoihin vielä tämän päivän aikana. Uusimmat tiedot sijaitsevat kuitenkin erilaisissa kolmannen osapuolen järjestelmissä ja kannettavan tietokoneesi tiedostoissa. Aiemmin visualisointien luominen ja raportin muotoilu on vienyt tunteja. Tunnet, kuinka ahdistus alkaa vallata alaa.

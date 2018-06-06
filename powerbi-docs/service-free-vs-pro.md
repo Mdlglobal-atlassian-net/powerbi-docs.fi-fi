@@ -1,29 +1,21 @@
 ---
 title: Power BI:n maksuttoman version ja Pro-version vertailu
 description: Power BI:n jokainen käyttäjä on joko ilmais- tai Pro-käyttäjiä. On hyödyllistä ymmärtää erot näiden käyttäjien välillä.
-services: powerbi
-documentationcenter: ''
-author: markingmyname
+author: mgblythe
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: get-started-article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 02/13/2018
-ms.author: maghan
+ms.author: mblythe
 LocalizationGroup: Get started
-ms.openlocfilehash: 0d6282f1b0e89fbe1deb4fbea6a578b831fafd98
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: b472ba4ddd194fae668961b0601b6ab749c598e7
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/24/2018
-ms.locfileid: "29706805"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34251341"
 ---
 # <a name="power-bi-free-vs-pro"></a>Power BI:n maksuttoman version ja Pro-version vertailu
 Power BI:n jokainen käyttäjä on joko ilmais- tai Pro-käyttäjiä. On hyödyllistä ymmärtää erot näiden käyttäjien välillä.

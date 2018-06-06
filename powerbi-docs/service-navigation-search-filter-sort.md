@@ -1,29 +1,21 @@
 ---
 title: Sisällön hakeminen ja lajitteleminen Power BI -palvelussa
 description: lajitteluohjeet ja Power BI -työtiloissa olevan sisällön lajitteleminen
-services: powerbi
-documentationcenter: ''
 author: mihart
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 03/13/2018
+ms.component: powerbi-service
+ms.topic: conceptual
+ms.date: 05/25/2018
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 8a98780e0854b997e00a88f1ab3a5002e8c2fb10
-ms.sourcegitcommit: 00b4911ab5fbf4c2d5ffc000a3d95b3149909c28
+ms.openlocfilehash: 421ef9609872515ae462de574d67528835bb78ab
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/15/2018
-ms.locfileid: "29896693"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34722835"
 ---
 # <a name="navigation-searching-finding-and-sorting-content-in-power-bi-service"></a>Siirtyminen: sisällön hakeminen, löytäminen ja lajitteleminen Power BI -palvelussa
 Sisältöön voi siirtyä monella tavalla Power BI -palvelussa. Sisältö on jaettu työtiloissa tyypin mukaan koontinäyttöihin, raportteihin, työkirjoihin ja tietojoukkoihin.  Lisäksi sisältö on järjestetty käytön mukaan suosikkeihin, viimeksi avattuihin, sovelluksiin, kanssani jaettuihin ja esiteltyihin. Näiden eri kulkureittien kautta löydät tarvitsemasi sisällön nopeasti Power BI -palvelussa.  

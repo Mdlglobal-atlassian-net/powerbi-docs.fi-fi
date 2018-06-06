@@ -1,30 +1,22 @@
 ---
 title: 'Koko raporttisivun kiinnittäminen Power BI:n koontinäyttöön '
 description: Ohjeet koko reaaliaikaisen raporttisivun kiinnittämiseksi Power BI:n koontinäyttöön raportista.
-services: powerbi
-documentationcenter: ''
 author: mihart
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
+ms.reviewer: ''
 featuredvideoid: ''
-qualityfocus: no
-qualitydate: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 03/02/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 3638c99b0dfafa8a90a6c911051e203f3e6037c4
-ms.sourcegitcommit: 5e1f7d2673efe25c47b9b9f315011055bfe92c8f
+ms.openlocfilehash: 7703709361a6233b6d04d6fb2131ba41f109ca36
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/09/2018
-ms.locfileid: "29924928"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34249866"
 ---
 # <a name="pin-an-entire-report-page-as-a-live-tile-to-a-power-bi-dashboard"></a>Koko raporttisivun kiinnittäminen tapahtumaruutuna Power BI:n koontinäyttöön
 Toinen tapa lisätä uusi [koontinäytön ruutu](service-dashboard-tiles.md) on kiinnittää koko raporttisivu. Se on helppo tapa kiinnittää kerralla useita visualisointeja.  Kun kiinnität koko sivun, ruudut ovat *reaaliaikaisia*. Voit käsitellä niitä suoraan koontinäytössä. Jos teet visualisointeihin muutoksia raporttieditorissa, kuten lisäät suodattimen tai muutat kaaviossa käytettäviä kenttiä, muutokset näkyvät myös koontinäytön ruudussa.  

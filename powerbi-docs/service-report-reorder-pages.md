@@ -1,29 +1,21 @@
 ---
 title: Power BI -raportin sivujen järjestäminen uudelleen
 description: Raportin sivujen järjestäminen uudelleen Power BI -palvelussa ja Power BI Desktopissa
-services: powerbi
-documentationcenter: ''
 author: mihart
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 03/01/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: e137a0af200da7c32d3261eb43d53c9d82a3b476
-ms.sourcegitcommit: 5e1f7d2673efe25c47b9b9f315011055bfe92c8f
+ms.openlocfilehash: 205df68a380c9c8b33ce11fae5509c555ec506cb
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/09/2018
-ms.locfileid: "30974757"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34237462"
 ---
 # <a name="reorder-pages-in-a-report-in-power-bi"></a>Power BI -raportin sivujen järjestäminen uudelleen
 Power BI -raportissa on vähintään yksi sivu.  Jokaisen sivun alareunassa on välilehti.  Voit järjestää raportin uudelleen valitsemalla tämän välilehden ja vetämällä sen uuteen sijaintiin.

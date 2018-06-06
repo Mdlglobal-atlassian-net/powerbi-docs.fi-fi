@@ -1,29 +1,21 @@
 ---
 title: Tietojen hakeminen .CSV-tiedostosta
 description: Lue lisää siitä, miten voit noutaa tietoja .CSV-tiedostoista Power BI:hin
-services: powerbi
-documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: complete
-qualitydate: 03/30/2016
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 12/06/2017
+ms.component: powerbi-service
+ms.topic: conceptual
+ms.date: 05/02/2018
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 2d736a4fbc3367d4ccddfa422f637323c8dbf404
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 194993f1cd27e173b831850639b8e88a43b3f5aa
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/24/2018
-ms.locfileid: "30973877"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34243378"
 ---
 # <a name="get-data-from-comma-separated-value-csv-files"></a>Tietojen hakeminen .CSV-tiedostosta
 ![](media/service-comma-separated-value-files/csv_icon.png)

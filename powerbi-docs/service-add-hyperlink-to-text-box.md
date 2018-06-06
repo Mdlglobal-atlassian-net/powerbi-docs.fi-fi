@@ -1,33 +1,25 @@
 ---
 title: Hyperlinkin lisääminen tekstiruutuun raportissa
 description: Hyperlinkin lisääminen tekstiruutuun Power BI -palvelussa ja Desktopissa
-services: powerbi
-documentationcenter: ''
 author: mihart
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
+ms.reviewer: ''
 featuredvideoid: ''
-qualityfocus: no
-qualitydate: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 12/20/2017
+ms.component: powerbi-desktop
+ms.topic: conceptual
+ms.date: 03/23/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 95352c72dfca1c1439f89d532dbcfcc5cd26758c
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: e8a03cdd666f84b788d3bd90b8ebf2a84fc12a9b
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/24/2018
-ms.locfileid: "30973812"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34294061"
 ---
 # <a name="add-a-hyperlink-to-a-text-box-in-a-report"></a>Hyperlinkin lisääminen tekstiruutuun raportissa
-Tekstiruutuja voidaan lisätä raportteihin, kiinnittää koontinäyttöön raporteista ja lisätä suoraan koontinäyttöön. Hyperlinkit voidaan lisätä tekstiruutuun riippumatta siitä, missä se sijaitsee. **Tässä artikkelissa käsitellään Power BI-palvelun (ei Power BI Desktopin) raporttien tekstiruutuja.**
+Tekstiruutuja voidaan lisätä raportteihin, kiinnittää koontinäyttöön raporteista ja lisätä suoraan koontinäyttöön. Hyperlinkit voidaan lisätä tekstiruutuun riippumatta siitä, missä se sijaitsee.  
 
 > **Huomautus**: hyperlinkkien tiedot Power BI-taulukoissa ja matriiseissa on annettu kohdassa [Taulukoiden hyperlinkit](power-bi-hyperlinks-in-tables.md). Saat lisätietoja tekstiruutujen lisäämisestä **koontinäyttöön** kohdasta [ruudun lisääminen suoraan koontinäyttöön ](service-dashboard-add-widget.md). 
 > 
@@ -63,7 +55,5 @@ Tekstiruutuja voidaan lisätä raportteihin, kiinnittää koontinäyttöön rapo
 ## <a name="next-steps"></a>Seuraavat vaiheet
 [Tekstiruudut Power BI -raporteissa](power-bi-reports-add-text-and-shapes.md)
 
-[Tekstiruudun lisääminen koontinäyttöön](service-dashboard-add-widget.md)
-
-Onko sinulla muuta kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
+Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
 

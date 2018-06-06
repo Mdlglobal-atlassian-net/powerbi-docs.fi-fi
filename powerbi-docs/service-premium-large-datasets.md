@@ -1,29 +1,21 @@
 ---
 title: Power BI Premiumin suurten tietojoukkojen tuki
 description: Power BI Premium tukee nyt enintään 10 gigatavun tietojoukkoja.
-services: powerbi
-documentationcenter: ''
-author: MarkMcGeeAtAquent
+author: jocaplan
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-admin
+ms.topic: conceptual
 ms.date: 02/27/2018
 ms.author: jocaplan
 LocalizationGroup: Premium
-ms.openlocfilehash: def06965692644c0328dae7a1d0ade8d13cc0d6c
-ms.sourcegitcommit: 743e44fc8730fea0f7149916080b0c6d7eb6359d
+ms.openlocfilehash: fa05fd6808ebe78d5d17e2ad3d93fbcf22f7d3c9
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/28/2018
-ms.locfileid: "29706955"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34298592"
 ---
 # <a name="power-bi-premium-support-for-large-datasets"></a>Power BI Premiumin suurten tietojoukkojen tuki
 
@@ -55,7 +47,7 @@ Tässä osassa esitetään suurten tietojoukkojen käsittelemisen parhaat käyt�
 **Vaikka kyselykohtaiset muisti- ja aikarajoitukset ovat paljon suuremmat Premium-kapasiteetissa**, on suositeltavaa rajoittaa visualisoinnit näyttämään vain tarpeellinen sisältö käyttämällä suodattimia ja osittajia.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
-[Power BI Premium – mikä se on?](service-premium.md)  
+[Mikä on Power BI Premium?](service-premium.md)  
 [Power BI Premiumin julkaisutiedot](service-premium-release-notes.md)  
 [Microsoft Power BI Premiumin tekninen raportti](https://aka.ms/pbipremiumwhitepaper)  
 [Power BI:n yrityskäyttöönoton suunnittelemisen tekninen raportti](https://aka.ms/pbienterprisedeploy)  
