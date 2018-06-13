@@ -1,5 +1,5 @@
 ---
-title: Power BI -raporttipalvelimen julkaisutiedot
+title: Power BI -raporttipalvelimen REST-ohjelmointirajapintojen käyttö ohjelmankehityksessä
 description: REST-ohjelmointirajapinta tarjoaa ohjelmallinen pääsyn Power BI -raporttipalvelimen hakemiston objekteihin.
 author: markingmyname
 manager: kfile
@@ -9,14 +9,15 @@ ms.component: powerbi-report-server
 ms.topic: conceptual
 ms.date: 05/25/2018
 ms.author: maghan
-ms.openlocfilehash: a1cbcc6d265504bc93ef6447a6be381ca6399063
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 08c8075fe275ff1472d3e9845f954ef4d029b373
+ms.sourcegitcommit: 49570ab8f5b5cd5bab4cd388f4281b1372bcb80b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34721750"
+ms.lasthandoff: 06/09/2018
+ms.locfileid: "35250426"
 ---
 # <a name="develop-with-the-rest-apis-for-power-bi-report-server"></a>Power BI -raporttipalvelimen REST-ohjelmointirajapintojen käyttö ohjelmankehityksessä
+
 Power BI-raporttipalvelin tukee Representational State Transfer (REST) -rajapintoja. REST-ohjelmointirajapinnat ovat palvelun päätepisteitä, jotka tukevat tiettyjä HTTP-toimintoja (menetelmät), jotka tarjoavat pääsyn raporttipalvelimen sisältämien resurssien luomiseen, hakemiseen, päivittämiseen tai poistamiseen.
 
 REST-ohjelmointirajapinta tarjoaa ohjelmallinen pääsyn Power BI -raporttipalvelimen hakemiston objekteihin. Objekteja ovat esimerkiksi kansiot, raportit, suorituskykyilmaisimet, tietolähteet, tietojoukot, päivityssuunnitelmat, tilaukset ynnä muut. REST-ohjelmointirajapinnan avulla voit esimerkiksi siirtyä kansiohierarkiassa, tutustua kansion sisältöön tai ladata raporttimäärityksen. Voit myös luoda, päivittää ja poistaa objekteja. Esimerkkejä objektien kanssa työskentelemisestä ovat raportin lataaminen, päivityssuunnitelman toteuttaminen ja niin edelleen.
@@ -24,6 +25,7 @@ REST-ohjelmointirajapinta tarjoaa ohjelmallinen pääsyn Power BI -raporttipalve
 [!INCLUDE [GDPR-related guidance](../includes/gdpr-hybrid-note.md)]
 
 ## <a name="components-of-a-rest-api-requestresponse"></a>REST-ohjelmointirajapinnan pyynnön/vastauksen osat
+
 REST-ohjelmointirajapinnan pyyntö/vastaus-pari voidaan jakaa viiteen osaan:
 
 * **Pyynnön URI**, joka koostuu: `{URI-scheme} :// {URI-host} / {resource-path} ? {query-string}`. Vaikka pyynnön URI-tunnus on mukana pyynnön otsikossa, esitämme sen erikseen tässä, koska useimmat kielet tai kehitysmenetelmät edellyttävät sen välittämistä pyyntöviestistä erillään.
@@ -46,15 +48,17 @@ REST-ohjelmointirajapinnan pyyntö/vastaus-pari voidaan jakaa viiteen osaan:
   * MIME-koodatut vastausobjektit palautetaan HTTP-vastauksen tekstiosassa, kuten tiedot palauttava GET-menetelmän vastaus. Yleensä nämä objektit palautetaan jäsennellyssä muodossa, kuten JSON tai XML, jota on merkitty `Content-type` vastauksen otsikkoon.
 
 ## <a name="api-documentation"></a>Rajapintadokumentaatio
+
 Nykyaikainen REST-rajapinta vaatii nykyaikaisen rajapintadokumentaation. REST-rajapinta perustuu OpenAPI-määritykseen (tunnetaan swagger-määrityksenä) ja ohjeita on käytettävissä [SwaggerHubissa](https://app.swaggerhub.com/apis/microsoft-rs/PBIRS/2.0). Rajapinnan dokumentoinnin lisäksi SwaggerHub auttaa luomaan asiakaskirjaston valitulla ohjelmointikielellä – JavaScript, TypeScript, C#, Java, Python, Ruby ja monia muita.
 
 ## <a name="testing-api-calls"></a>API-kutsujen testaaminen
+
 [Fiddler](http://www.telerik.com/fiddler) on työkalu, jolla voidaan testata HTTP-pyyntö/vastausviestejä. Fiddler on maksuton virheenkorjausvälityspalvelin verkossa, joka voi siepata REST-pyynnöt, mikä tekee HTTP-pyyntö/vastausviestien vianmäärityksestä helppoa.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
+
 Selaa [SwaggerHubissa](https://app.swaggerhub.com/apis/microsoft-rs/PBIRS/2.0) käytettävissä olevia rajapintoja.
 
 Esimerkkejä ovat käytettävissä [GitHubissa](https://github.com/Microsoft/Reporting-Services). Malleihin lukeutuu TypeScriptillä, Reactillä ja verkkopaketilla rakennettu HTML5-sovellus sekä PowerShell-esimerkki.
 
 Onko sinulla muuta kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
-

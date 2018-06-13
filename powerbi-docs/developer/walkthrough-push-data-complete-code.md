@@ -9,12 +9,12 @@ ms.component: powerbi-developer
 ms.topic: conceptual
 ms.date: 08/10/2017
 ms.author: maghan
-ms.openlocfilehash: e5866b249d95cd3b05c7d769fe0cdbab984a978d
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: a41acec10e2801d046185d34c64e4d51b5e9dae0
+ms.sourcegitcommit: 8ee0ebd4d47a41108387d13a3bc3e7e2770cbeb8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34289920"
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34813085"
 ---
 # <a name="push-data-to-a-dataset-complete-code-listing"></a>Syötä tiedot tietojoukon kattavaan koodiluetteloon
 Tämä artikkeli on osa vaiheittaisia ohjeita, joilla [tiedot syötetään tietojoukkoon](walkthrough-push-data.md).
@@ -228,7 +228,7 @@ Kun olet suorittanut toimet 2-5 kohdasta **tietojen syöttäminen tietojoukkoon*
 [Tietojoukon luominen Power BI:ssä](walkthrough-push-data-create-dataset.md)  
 [Tietojoukon hankkiminen rivien lisäämiseksi Power BI -taulukkoon](walkthrough-push-data-get-datasets.md)  
 [Rivien lisääminen Power BI -taulukkoon](walkthrough-push-data-add-rows.md)  
-[Power BI:n REST-ohjelmointirajapinnan viite](https://msdn.microsoft.com/library/mt147898.aspx)  
+[Power BI:n REST-ohjelmointirajapinnan viite](https://docs.microsoft.com/rest/api/power-bi/)  
 [Power BI REST -ohjelmointirajapinnan yleiskatsaus](overview-of-power-bi-rest-api.md)  
 
 
