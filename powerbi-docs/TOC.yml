@@ -900,8 +900,18 @@
           href: developer/embed-sample-for-customers.md
     - name: Käsitteet
       items:
-        - name: 'Mitä voin tehdä Power BI:n ohjelmointirajapinnalla?'
-          href: developer/overview-of-power-bi-rest-api.md
+        - name: Power BI REST -ohjelmointirajapintojen käyttäminen
+          items:
+            - name: 'Mitä voin tehdä Power BI:n ohjelmointirajapinnalla?'
+              href: developer/overview-of-power-bi-rest-api.md
+            - name: Power BI REST -ohjelmointirajapinnan rajoitukset
+              href: developer/api-rest-api-limitations.md
+            - name: Tietojoukon ominaisuudet
+              href: developer/api-dataset-properties.md
+            - name: Tietomallin versiointi
+              href: developer/api-data-model-versioning.md
+        - name: Mukautetun visualisoinnin luominen kehittäjätyökaluilla
+          href: service-custom-visuals-getting-started-with-developer-tools.md
         - name: Power BI -käyttöoikeudet
           href: developer/power-bi-permissions.md
         - name: Rivitason suojaus (RLS)
@@ -968,6 +978,8 @@
               href: developer/walkthrough-push-data-add-rows.md
             - name: Kattava koodiluettelo
               href: developer/walkthrough-push-data-complete-code.md
+            - name: Automaattinen reaaliaikaisten tietojen säilytyskäytäntö
+              href: developer/api-automatic-retention-policy-for-real-time-data.md
         - name: Sisältöpakettisertifiointi
           items:
             - name: Sisältöpakettisertifiointiohjelma
