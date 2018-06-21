@@ -1,28 +1,21 @@
 ---
 title: Power BI -hallintaportaali
 description: Hallintaportaalissa voit hallita organisaatiosi Power BI -vuokraajia. Hallintaportaali sisältää esimerkiksi käyttömittareita ja asetuksia. Sen kautta voit käyttää myös Office 365 -hallintakeskusta.
-services: powerbi
-documentationcenter: ''
 author: mgblythe
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-admin
+ms.topic: conceptual
 ms.date: 04/02/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: f60822dced9cea4aab47956cb3e9dea40ef20a55
-ms.sourcegitcommit: 8552a34df8e6141eb704314c1a019992901d6e78
+ms.openlocfilehash: 376fb2a6167e020e5d65c7d634ef05cd366b1aa2
+ms.sourcegitcommit: b3b32b9b3935706d7caa091833bd32259d7ff6ee
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/08/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34755135"
 ---
 # <a name="power-bi-admin-portal"></a>Power BI -hallintaportaali
 
@@ -99,7 +92,7 @@ Kun napsautat **Siirry O365-hallintakeskukseen**, sinut siirretään Office 365 
 
 ## <a name="audit-logs"></a>Valvontalokit
 
-Hallintaportaalin kolmas välilehti on nimeltään **Valvontalokit**. Lokit sijaitsevat Office 365:n tietoturva- ja yhteensopivuuskeskuksessa. Tämän osion kautta pääset nopeasti tietoturva- ja yhteensopivuuskeskukseen Office 365:ssä. 
+Hallintaportaalin kolmas välilehti on nimeltään **Valvontalokit**. Lokit sijaitsevat Office 365:n tietoturva- ja yhteensopivuuskeskuksessa. Tämän osion kautta pääset nopeasti tietoturva- ja yhteensopivuuskeskukseen Office 365:ssä.
 
 Saat lisätietoja valvontalokeista ohjeartikkeleista [Organisaation Power BI:n valvonta](service-admin-auditing.md).
 
@@ -158,10 +151,10 @@ Käyttäjät näkevät käyttöliittymässä eri asetuksia sen mukaan, mikä hei
 
 |Toiminto |Otettu käyttöön koko organisaatiolle |Otettu käyttöön koko organisaatiolle |Tietyt käyttöoikeusryhmät   |
 |---------|---------|---------|---------|
-|Raportin **Tiedosto**-valikon **Julkaise verkkoon** -toiminto|Käytössä kaikilla|Ei näkyvissä kaikille|On näkyvissä vain oikeudet omaaville käyttäjille tai ryhmille.|
-|**Asetukset**-valikon **Upotettujen koodien hallinta** -toiminto|Käytössä kaikilla|Käytössä kaikilla|Käytössä kaikilla<br><br>* **Poista**-toiminto on käytössä vain oikeudet omaavilla käyttäjillä tai ryhmillä.<br>* **Hae koodit** -toiminto on käytössä kaikilla.|
-|**Upotuskoodit**-toiminto hallintaportaalissa|Tila ilmaisee jotain seuraavista:<br>* Aktiivinen<br>* Ei tuettu<br>* Estetty.|Tilana näytetään **Ei käytössä**|Tila ilmaisee jotain seuraavista:<br>* Aktiivinen<br>* Ei tuettu<br>* Estetty.<br><br>Jos käyttäjälle ei ole annettu oikeuksia vuokraaja-asetuksissa, tilana näytetään **Loukannut**.|
-|Olemassa olevat julkaistut raportit|Kaikki käytössä|Kaikki poissa käytöstä|Raportit näytetään jatkossakin kaikille.|
+|Raportin **Tiedosto**-valikon **Julkaise verkkoon** -toiminto|Käytössä kaikille|Ei näkyvissä kaikille|Näkyvissä vain valtuutetuille käyttäjille tai ryhmille.|
+|**Asetukset**-valikon **Upotuskoodien hallinta**|Käytössä kaikille|Käytössä kaikille|Käytössä kaikille<br><br>* **Poista**-vaihtoehto vain valtuutetuille käyttäjille tai ryhmille.<br>* **Hae koodit** käytössä kaikille.|
+|**Upotuskoodit** hallintaportaalissa|Tila ilmaisee jotain seuraavista:<br>* Aktiivinen<br>* Ei tuettu<br>* Estetty|Tilana näytetään **Ei käytössä**|Tila ilmaisee jotain seuraavista:<br>* Aktiivinen<br>* Ei tuettu<br>* Estetty<br><br>Jos käyttäjälle ei ole annettu oikeuksia vuokraaja-asetuksissa, tilana näytetään **Loukannut**.|
+|Aiemmin luodut julkaistut raportit|Kaikki käytössä|Kaikki poissa käytöstä|Raportit näytetään jatkossakin kaikille.|
 
 ### <a name="export-data"></a>Tietojen vieminen
 
@@ -217,7 +210,7 @@ Täältä voit lukea lisätietoja [sovellusten lähettämisestä](service-create
 Organisaation käyttäjät voivat kysyä kysymyksiä tiedoistaan Cortanan avulla.
 
 > [!NOTE]
-> Tämä asetus koskee koko organisaatiota, joten sitä ei voi rajoittaa ryhmien avulla.
+> Tämä asetus koskee koko organisaatiota, joten sitä ei rajoittaa ryhmien avulla.
 
 ### <a name="use-analyze-in-excel-with-on-premises-datasets"></a>Analysoi Excelissä -toiminnon käyttäminen paikallisten tietojoukkojen kanssa
 Organisaation käyttäjät voivat käyttää paikallisia Power BI -tietojoukkoja Excelillä. [Lue lisätietoja.](service-analyze-in-excel.md)
@@ -232,9 +225,7 @@ Organisaation käyttäjät voivat käyttää Esrin tarjoamaa ArcGIS Maps for Pow
 
 ## <a name="custom-visuals-settings"></a>Mukautettujen visualisointien asetukset
 ### <a name="enable-custom-visuals-for-the-entire-organization"></a>Mukautettujen visualisointien käyttöön ottaminen koko organisaatiossa
-Organisaation käyttäjät voivat käyttää mukautettuja visualisointeja ja jakaa niitä. [Lue lisätietoja.](power-bi-custom-visuals.md)
-
-![Mukautettujen visualisointien asetukset](media/service-admin-portal/powerbi-admin-custom-visuals.png)
+Organisaation käyttäjät voivat käyttää mukautettuja visualisointeja ja jakaa niitä. [Lue lisää](power-bi-custom-visuals.md)
 
 > [!NOTE]
 > Tämä asetus koskee koko organisaatiota, joten sitä ei rajoittaa ryhmien avulla.
@@ -243,10 +234,10 @@ Organisaation käyttäjät voivat käyttää mukautettuja visualisointeja ja jak
 
 ### <a name="interact-with-an-dshare-r-visuals"></a>R-visualisointien käyttäminen
 
-Organisaation käyttäjät voivat käyttää R-komentosarjoilla luotuja visualisointeja ja jakaa niitä. [Lue lisätietoja.](service-r-visuals.md)
+Organisaation käyttäjät voivat käyttää R-komentosarjoilla luotuja visualisointeja ja jakaa niitä. [Lue lisää](service-r-visuals.md)
 
 > [!NOTE]
-> Tämä asetus koskee koko organisaatiota, joten sitä ei voi rajoittaa ryhmien avulla.
+> Tämä asetus koskee koko organisaatiota, joten sitä ei rajoittaa ryhmien avulla.
 
 ## <a name="audit-settings"></a>Valvonta-asetukset
 
@@ -254,19 +245,19 @@ Organisaation käyttäjät voivat käyttää R-komentosarjoilla luotuja visualis
 
 Organisaation käyttäjät voivat valvoa muiden käyttäjien Power BI:ssä tekemiä toimia. [Lue lisätietoja.](service-admin-auditing.md)
 
-Tämän asetuksen täytyy olla käytössä, jotta valvontalokiin kirjataan merkintöjä.
+Tämän asetuksen täytyy olla käytössä, jotta valvontalokiin kirjataan merkintöjä. Valvonnan käyttöönoton ja valvontatietojen tarkastelumahdollisuuden välillä voi olla jopa 48 tunnin viive. Jos et näe tietoja välittömästi, tarkista valvontalokit myöhemmin. Jos haet oikeuksia hallintalokien tarkasteluun, samanlainen viive voi esiintyä, ennen kuin oikeudet on myönnetty.
 
 > [!NOTE]
-> Tämä asetus koskee koko organisaatiota, joten sitä ei voi rajoittaa ryhmien avulla.
+> Tämä asetus koskee koko organisaatiota, joten sitä ei rajoittaa ryhmien avulla.
 
 ## <a name="dashboard-settings"></a>Koontinäytön asetukset
 
 ### <a name="data-classification-for-dashboards"></a>Koontinäyttöjen tietojen luokittelu
 
-Organisaation käyttäjät voivat merkitä koontinäyttöjä luokituksilla, jotka ilmaisevat koontinäyttöjen suojaustasoja. [Lue lisätietoja.](service-data-classification.md)
+Organisaation käyttäjät voivat merkitä koontinäyttöjä luokituksilla, jotka ilmaisevat koontinäyttöjen suojaustasoja. [Lue lisää](service-data-classification.md)
 
 > [!NOTE]
-> Tämä asetus koskee koko organisaatiota, joten sitä ei voi rajoittaa ryhmien avulla.
+> Tämä asetus koskee koko organisaatiota, joten sitä ei rajoittaa ryhmien avulla.
 
 ## <a name="developer-settings"></a>Kehittäjäasetukset
 

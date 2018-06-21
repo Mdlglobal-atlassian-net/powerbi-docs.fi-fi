@@ -1,168 +1,188 @@
 ---
-title: 'Opetusohjelma: verkkosivun tietojen tuominen ja analysointi Power BI Desktopissa'
-description: 'Opetusohjelma: verkkosivun tietojen tuominen ja analysointi Power BI Desktopissa'
-services: powerbi
-documentationcenter: ''
+title: 'Opetusohjelma: verkkosivun tietojen tuonti ja analysointi Power BI Desktopissa'
+description: 'Opetusohjelma: verkkosivun tietojen tuonti ja analysointi Power BI Desktopissa'
 author: davidiseminger
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 12/06/2017
+ms.component: powerbi-desktop
+ms.topic: tutorial
+ms.date: 05/21/2018
 ms.author: davidi
 LocalizationGroup: Learn more
-ms.openlocfilehash: 9650f0be6ca795fdea3395721c0eb02e80464821
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 20bcc45fa95bcff6eb8a761dae58c67a875f55cd
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34455992"
 ---
-# <a name="analyzing-web-page-data-using-power-bi-desktop-tutorial"></a>Verkkosivun tietojen analysointi Power BI Desktopissa (opetusohjelma)
-Tässä opetusohjelmassa saat tietää, miten tuot tietoja verkkosivulla olevasta taulukosta ja luot raportin tietojen visualisointiin. Osana tätä prosessia siirryt verkkosivulla olevien taulukoiden välillä ja suoritat tiedonmuunnosvaiheita taulukon muodon muuntamista varten.
+# <a name="tutorial-analyze-web-page-data-using-power-bi-desktop"></a>Opetusohjelma: Verkkosivun tietojen analysointi Power BI Desktopissa
 
- Tässä artikkelissa:
+Pitkäaikaisena jalkapallofanina haluat raportin UEFA Euroopan mestaruuskisojen voittajista. Power BI Desktopilla voit tuoda nämä tiedot verkkosivulta raporttiin ja luoda visualisointeja näyttämään tietoja. Tässä opetusohjelmassa opit miten Power BI Desktopilla:
 
-* **Tehtävä 1:** yhteyden muodostaminen verkkotietolähteeseen
-* **Tehtävä 2:** tietojen muotoilu kyselynäkymässä
-  * Vaihe 1: muiden sarakkeiden poistaminen ja vain tarvittavien sarakkeiden näyttäminen
-  * Vaihe 2: arvojen korjaaminen ja valitussa sarakkeessa olevien arvojen puhdistaminen
-  * Vaihe 3: sarakkeiden arvojen suodattaminen
-  * Vaihe 4: sarakkeen nimeäminen uudelleen
-  * Vaihe 5: sarakkeiden nolla-arvojen suodattaminen
-  * Vaihe 6: kyselyn nimeäminen uudelleen
-  * Kyselyvaiheet luotu
-* **Tehtävä 3:** visualisointien luominen raporttinäkymän avulla
-  * Vaihe 1: kyselyn lataaminen raporttiin
-  * Vaihe 2: karttavisualisoinnin luominen
+- Muodostetaan yhteys verkkotietolähteeseen ja siirrytään käytettävissä olevien taulukoiden välillä,
+- muotoillaan ja muunnetaan tietoa **Power Query -editorissa**,
+- annetaan kyselylle nimi ja tuodaan se Power BI Desktop -raporttiin ja 
+- luodaan ja mukautetaan kartan ja ympyräkaavio visualisointeja.
 
-## <a name="task-1-connect-to-a-web-data-source"></a>Tehtävä 1: yhteyden muodostaminen verkkotietolähteeseen
- Tehtävässä 1 turnauksen yhteenvetotaulukko tuodaan UEFA:n jalkapallon Euroopan-mestaruuskilpailuiden Wikipedia-sivulta, jonka osoite on: http://en.wikipedia.org/wiki/UEFA\_European\_Football\_Championship
+## <a name="connect-to-a-web-data-source"></a>Yhteyden muodostaminen verkkotietolähteeseen
 
-![](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage1.png)
+Voit saada UEFA voittajatiedot tulostaulukosta UEFA mestaruuskisojen Wikipedia-sivulta osoitteesta http://en.wikipedia.org/wiki/UEFA_European_Football_Championship. 
 
-### <a name="add-a-wikipedia-page-data-source"></a>Wikipedia-sivun tietolähteen lisääminen
-1. **Aloittaminen-valintaikkunassa** tai **Aloitus**-valintanauhassa valitse **Nouda tiedot**.
-2. Tämä tuo näkyviin **Nouda tiedot** -valintaikkunan, jonka kautta voit tuoda tietoja useista tietolähteistä Power BI Desktopiin. Valitsemme **Verkko**, joka on käytettävissä **Kaikki**- tai **Muut**-ryhmän alla.
-3. **Verkkosisältö**-valintaikkunassa liimaa **URL-osoite**-tekstikenttään Wikipedian URL-osoite (http://en.wikipedia.org/wiki/UEFA\_European\_Football\_Championship).
-4. Valitse **OK**.
+![Wikipedian tulostaulukko](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage1.png)
 
-Kun olet luonut yhteyden verkkosivuun, näet **Siirtymistoiminto**-valintaikkunassa luettelon käytettävissä olevia taulukoista kyseisellä Wikipedia-sivulla. Voit esikatsella kunkin taulukon tietoja napsauttamalla niitä kerran.
+Tietojen tuominen:
 
-Vasemmalla olevassa **Siirtymistoiminto**-ruudussa valitse **Tulokset[muokkaa]**-taulukko turnauksen yhteenvetotulosten näkemiseksi tai valitse **Tulokset[Muokkaa]**-taulukko ja valitse **Muokkaa**. Tämä sallii kyseisen taulukon uudelleenmuotoilun ennen sen lataamista raporttiin, sillä tiedot eivät ole analyysin edellyttämässä muodossa.
+1. Power BI Desktopin **Koti** -valintanauhan välilehdeltä, avaa nuoli **Nouda tiedot**-kohdan vierestä ja valitse sitten **Verkko**.
+   
+   ![Tietojen noutaminen valintanauhasta](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/get-data-web3.png) 
+   
+   >[!NOTE]
+   >Voit myös valita **Nouda tiedot** kohteen itse, tai valita **Nouda tiedot** Power BI:n **Aloita** -valintaikkunasta, valitse sitten **Verkko** ja **Kaikki** tai **Muut** **Nouda tiedot** -valintaikkunasta ja valitse vielä **Yhdistä**.
+   
+2. Liitä URL-osoite **Verkosta** `http://en.wikipedia.org/wiki/UEFA_European_Football_Championship`-valintaikkunan **URL** -tekstiruutuun ja valitse sitten **OK**.
+   
+    ![Tietojen noutaminen valintaikkunasta](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/get-data-web2.png)
+   
+   Kun olet yhdistänyt Wikipedia-verkkosivuun, Power BI **Navigator** -valintaikkunassa näkyy luettelo sivun käytettävissä olevista taulukoista. Voit valita minkä tahansa taulukon nimen tarkastellaksesi sen sisältämiä tietoja. **Tulokset [muokkaa]** -tauluko sisältää haluamasi tiedot, vaikka ne eivät olekaan tarkalleen haluamassasi muodossa. Voit uudelleenmuotoilla ja puhdistaa tiedot ennen niiden lataamista raporttiin. 
+   
+   ![Siirtymistoiminto-valintaikkuna](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/tutorialimanaly_navigator.png)
+   
+   >[!NOTE]
+   >**Esikatselu**-ruutu näyttää viimeisimmän valitun taulukon, mutta kaikki valitut taulukot ladataan **Power Query -editoriin** kun valitset **Muokkaa** tai **Lataa**. 
+   
+3. Valitse **Tulokset [muokkaa]** -taulukko **Siirtymistoiminto**-luettelosta ja valitse sitten **Muokkaa**. 
+   
+   Taulukon esikatselu avautuu **Power Query -editoriin**, jonka avulla voit muokata ja puhdistaa tietoja. 
+   
+   ![Power Query -editori](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage3.png)
+   
+## <a name="shape-data-in-power-query-editor"></a>Tietojen muotoileminen Power Query -editorissa
 
-![](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/tutorialimanaly_navigator.png)
+Haluat tehdä tietojen tarkastelemisesta helpompaa näyttämällä vain vuodet sekä voittajamaat. Voit käyttää **Power Query -editoria** tietojen muotoilemiseen ja puhdistamiseen.
 
-Tämä tuo esikatseluversion taulukosta kyselynäkymään, jossa voidaan suorittaa erinäisiä muunnosvaiheita tietojen puhdistamiseksi.
+Poista taulukosta ensin kaikki sarakkeet lukuun ottamatta sarakkeita **Vuosi** ja **Finaalin voittajat** -sarakkeita.
 
-![](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage3.png)
+1. Valitse **Power Query -editorin** ruudukosta **Vuosi** ja **Finaalin voittajat** -sarakkeet (pidä **Ctrl**-näppäin pohjassa valitaksesi useita kohteita).
+   
+2. Napsauta hiiren kakkospainiketta ja valitse avautuvasta valikosta **Poista muut sarakkeet** tai **Poista sarakkeet** > **Poista muut sarakkeet** **Hallitse sarakkeita** -ryhmästä **Koti**-valintanauhan välilehdeltä, poistaaksesi kaikki muut sarakkeet taulukosta. 
+   
+   ![Poista muut sarakkeet -valikko](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/get-data-web6.png) tai ![Poista muut sarakkeet -valintanauha](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage4.png)
 
-## <a name="task-2-shape-data-in-the-subject-table"></a>Tehtävä 2: tietojen muotoilu aihetaulukossa
-Nyt, kun aihetaulukko on valittuna tietokyselyyn, kerromme, miten voit suorittaa erilaisia tietojen muotoilu- ja puhdistusvaiheita.
-
-**Vaihe 1:** muiden sarakkeiden poistaminen vain tarvittavien sarakkeiden näyttämiseksi
-
-Tässä vaiheessa poistat kaikki sarakkeet lukuun ottamatta sarakkeita **Vuosi** ja **Finaalin voittajat**.
-
-1. **Kyselyn esikatselu** -ruudukossa valitse **Vuosi**- ja **Finaalin voittajat** -sarakkeet (**CTRL** + **napsautus**).
-2. Napsauta sarakeotsikkoa hiiren kakkospainikkeella **Kyselyn esikatselu** -ruudukossa ja valitse **Poista muut sarakkeet** valitsemattomien sarakkeiden poistamiseksi. Huomaa, että tämä toiminto on käytettävissä myös **Aloitus**-valintanauhan **Sarakkeiden hallinta** -ryhmässä.
-
-![](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage4.png)
-
-**Vaihe 2:** arvojen korjaaminen ja valitussa sarakkeessa olevien arvojen puhdistaminen
-
-Tässä vaiheessa korvaat Tiedot-liitteen **Vuosi**-sarakkeessa. Huomaa, että tämä liite on uudella rivillä, joten se ei näy taulukon esikatselussa. Mutta, jos valitset jonkin solun, jolla on numeerinen arvo Vuosi-sarakkeessa, näet koko arvon yksityiskohtaisessa näkymässä.
-
-![](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage5.png)
+Poista seuraavaksi ylimääräinen **Tiedot**-sana **Vuosi** -sarakkeen soluista.
 
 1. Valitse **Vuosi**-sarake.
-2. **Kyselynäkymä**-valintanauhassa valitse **Korvaa arvot** **Aloitus**-välilehdellä tai napsauta hiiren kakkospainikkeella **Vuosi**-saraketta ja valitse **Korvaa arvot** tietojen korvaamiseksi tyhjällä tekstillä.
-3. **Korvaa arvot** -valintaikkunassa syötä Tiedot **Etsittävä arvo** -tekstiruutuun ja jätä **Korvaa kohteella** -tekstiruutu tyhjäksi.
-4. Valitse **OK**.
-
-![](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage6.png)
-
- **Vaihe 3:** sarakkeiden arvojen suodattaminen
-
-Tässä vaiheessa suodatat **Vuosi**-sarakkeen näyttääksesi rivit, jotka eivät sisällä ”Vuotta”.
-
-1. Napsauta suodatuksen avausnuolta **Vuosi**-sarakkeessa.
-2. Avattavassa **Suodatus**-valikossa poista **Vuosi**-vaihtoehto.
-3. Valitse **OK**.
-
-![](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage7.png)
-
-**Vaihe 4:** sarakkeen nimeäminen uudelleen
-
-Nyt kun **Vuosi**-sarakkeen tiedot on puhdistettu, siirrymme **Finaalin voittaja** -sarakkeeseen.
-
-Koska käsittelemme ainoastaan voittajaluetteloa, voimme antaa tämän sarakkeen uudeksi nimeksi **Maa**.
-
-1. Valitse **Finaalin voittaja** -sarake kyselyn esikatselussa.
-2. **Kyselynäkymä**-valintanauhassa, **Muunna**-välilehdellä ja **Mikä tahansa sarake** -ryhmässä on kohta **Nimeä uudelleen**.
-3. Se sallii sarakkeen nimen muokkaamisen. Annamme tämän sarakkeen nimeksi **Maa**.
-
-**Vaihe 5:** sarakkeiden nolla-arvojen suodattaminen pois
-
-Meidän on suodatettava myös nolla-arvot pois **Maa**-sarakkeesta. Voimme käyttää siihen suodatusvalikkoa kuten vaiheessa 3. Vaihtoehtoisesti voimme toimia seuraavasti:
-
-1. Napsauta hiiren kakkospainikkeella jotakin nolla-arvon sisältävää solua **Maa**-sarakkeessa.
-2. Valitse pikavalikossa **Tekstisuodattimet -\> ei ole yhtä suuri kuin**.
-3. Tämä luo uuden suodatinvaiheen, joka poistaa nolla-arvorivit **Maa**-sarakkeesta.
-
-**Vaihe 6:** kyselyn nimeäminen
-
-Tässä vaiheessa annat lopullisen kyselyn nimeksi **Euroopan-mestaruuskisojen voittajat**.
-
-1. **Kyselyasetukset**-ruudun **Nimi**-tekstikenttään syötä **Euroopan-mestaruuskisojen voittajat**.
    
-   ![](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage8.png)
-
-## <a name="task-3-create-visualizations-using-the-report-view"></a>Tehtävä 3: visualisointien luominen raporttinäkymän avulla
-Nyt kun olemme muuntaneet tiedot analyysin edellyttämään muotoon, voimme ladata tulostaulukon raporttiin ja luoda muutamia visualisointeja.
-
-**Vaihe 1:** kyselyn lataaminen raporttiin
-
-Kyselyn tulosten lataamiseksi Power BI Desktopiin ja raportin luomiseksi valitsemme **Sulje ja lataa** **Aloitus**-valintanauhassa.
-
-![](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage9.png)
-
-Tämä käynnistää kyselyn arvioinnin ja taulukon tulosten lataamisen raporttiin. Power BI Desktopissa valitse **Raportti**-kuvake. Näet Power BI Desktopin raporttinäkymässä.
-
-![](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage10.png)
-
-Näet taulukon tuloskentät **Kentät-ruudussa** **Raporttinäkymän** oikeassa reunassa.
-
-![](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage11.png)
-
-**Vaihe 2:** karttavisualisoinnin luominen
-
-Visualisoinnin luomiseksi voimme vetää kenttiä **Kenttä-luettelosta** ja pudottaa ne **raporttipohjaan**.
-
-1. Vedä **Maa**-kenttää ja pudota se **raporttipohjaan**. Tämä luo uuden visualisoinnin **raporttipohjassa**. Tässä tapauksessa, koska meillä on luettelo maista, se luo **karttavisualisoinnin**.
+2. Napsauta hiiren kakkospainiketta ja valitse avautuvasta valikosta **Korvaa arvot** tai valitse **Korvaa arvot** **Muunna** -ryhmän **Koti**-välilehden valintanauhalta (löytyy myös **Mikä tahansa sarake** -ryhmän **Muunna** välilehdeltä). 
    
-   ![](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage12.png)
-2. Voimme helposti muuttaa visualisoinnin tyyppiä napsauttamalla eri kuvaketta **Visualisointi**-ruudussa.
+   ![Korvaa arvot -valikko](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/get-data-web7.png) tai ![Korvaa arvot -valintanauha](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/get-data-web8a.png)
    
-   ![](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage13.png)
-3. Pysymme **Kartta**-visualisointityypissä. Voimme myös muokata visualisoinnin kokoa vetämällä sitä yhdestä kulmasta, kunnes se on halutun kokoinen.
+3. Syötä **Korvaa arvot** -valintaikkunassa **Tiedot**-teksti **Etsittävä arvo** -tekstiruutuun ja jätä **Korvaa arvolla** -tekstiruutu tyhjäksi. Valitse sitten **OK** poistaaksesi “Tiedot” **Vuosi**-sarakkeen soluista.
    
-   ![](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage14.png)
-4. Huomaa, että tällä hetkellä kartan kaikki pisteet ovat saman kokoisia. Haluamme muuttaa tätä, niin että maat, jotka ovat voittaneet Euroopan-mestaruuskisat useamman kerran, näkyvät kartalla suurempina pisteinä. Jotta voimme tehdä näin, voimme vetää **Vuosi**-kentän **Kenttä-luettelossa** **Arvot**-valintaikkunaan **Kentät-ruudun** alareunassa.
+   ![](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage6.png)
+
+Jotkin **Vuosi**-sarakkeen solut sisältävät vain sana ”vuosi” numeraalisen arvon sijaan. Voit suodattaa **Vuosi**-sarakkeen näyttämään vain rivit, jotka eivät sisällä sanaa “vuosi”. 
+
+1. Napsauta **Vuosi**-sarakkeen suodatinnuolta.
+   
+2. Vieritä avautuvaa valikkoa alas ja tyhjennä valintaruutu **Vuosi** -vaihtoehdon vieressä. Valitse sitten **OK** poistaaksesi **Vuosi**-sarakkeen rivit, joissa on vain sana ”vuosi”. 
+
+   ![Tietojen suodatus](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage7.png)
+
+Kun **Vuosi**-sarakkeen tiedot on puhdistettu, voit siirtyä työstämään **Finaalin voittaja** -saraketta. Koska käsittelemme ainoastaan finaalien voittajatietoja, voimme nimetä tämän sarakkeen uudelleen **Maa**-sarakkeeksi. Sarakkeen uudelleennimeäminen:
+
+1. Kaksoisnapsauta tai napauta ja pidä pohjassa **Finaalin voittaja** -sarakeotsikkoa, tai 
+   - napsauta hiiren kakkospainikkeella **Finaalin voittaja** -sarakeotsikkoa ja valitse avautuvasta valikosta **Nimeä uudelleen**, tai 
+   - valitse **Finaalin voittaja** -sarake ja valitse **Nimeä uudelleen** **Mikä tahansa sarake** -ryhmän valintanauhan **Muunna** -välilehdeltä. 
+   
+   ![Nimeä uudelleen -valikko](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage7a.png) tai ![Nimeä uudelleen -valintanauha](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/get-data-web8.png)
+   
+2. Syötä sana **Maa** otsikkoon ja paina **Enter** nimetäksesi sarakkeen uudelleen.
+
+Voit myös suodattaa **Maa**-sarakkeesta pois rivit, jotka eivät sisällä käypiä arvoja, kuten ”2020”. Voit käyttää suodatinvalikkoa samalla tavalla kuin suodattaessasi **Vuosi**-sarakkeen arvoja, tai voit:
+
+1. napsauttaa hiiren kakkospainikketta **Maa**-solun **2020**-rivillä, jonka on arvo *tyhjä*. 
+2. Valitse **Tekstisuodattimet** > **Ei ole yhtä suuri kuin**-pikavalikosta rivit, jotka sisältävät solun arvon.
+   
+   ![Tekstisuodatin](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/get-data-web11.png)
+   
+## <a name="import-the-query-into-report-view"></a>Kyselyn tuominen raporttinäkymään
+
+Nyt kun olet muotoillut tietoja haluamallasi tavalla, voit nimetä kyselysi ”Euroopan-mestaruus voittajat”-nimiseksi ja tuoda sen raporttiisi.
+
+1. Syötä **Euroopan-mestaruus voittajat****Kyselyasetukset**-ruudun **Nimi**-tekstikenttään ja paina **Enter**.
+   
+   ![Kyselyn nimeäminen](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage8.png)
+
+2. Valitse **Sulje ja ota käyttöön** > **Sulje ja ota käyttöön** **Koti** -valintanauhan välilehdeltä.
+   
+   ![Sulje ja ota käyttöön](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage9.png)
+   
+Kysely ladataan Power BI Desktopin **Raporttinäkymään**, jossa se näkyy **Kentät** -ruudussa. 
+   
+   ![Kentät-ruutu](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage11.png)
+>[!TIP]
+>Pääset aina takaisin **Power Query -editoriin**, jossa voit muokata ja parannella kyselyäsi:
+>- valitsemalla **Lisäasetuksista** kolme pistettä (**...** ) **Euroopan-mestaruus voittajat** -kohdan vierestä **Kentät**-ruudusta ja valitsemalla avautuvasta valikosta **Muokkaa kyselyä** tai
+>- valitsemalla **Muokkaa kyselyitä** > **Muokkaa kyselyitä****Ulkoiset tiedot** - ryhmästä raporttinäkymän **Koti** -valintanauhasta. 
+
+## <a name="create-a-visualization"></a>Visualisoinnin luominen
+
+Luodaksesi tietoihin perustuvan visualisoinnin: 
+
+1. Valitse **Maa** -kenttä **Kentät**-ruudusta tai vedä se raporttipohjaan. Power BI Desktop tunnistaa tiedot maan niminä ja luo automaattisesti **Kartta** -visualisoinnin. 
+   
+   ![Kartta-visualisointi](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/get-data-web14.png)
+   
+2. Suurenna karttaa vetämällä kulmien kahvoista, jotta kaikki maiden nimet ovat näkyvissä.  
+
+   ![Suurenna kartta](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage14.png)
+   
+3. Kartassa näkyvät kaikki identtiset arvopisteet jokaisesta maasta, jotka on voittanut Euro Cup -turnauksen. Saadaksesi kunkin arvopisteen koon kuvastamaan kuinka usein maan on voittanut, vedä **Vuosi**-kenttä **Vedä tietokentät tähän** -kohtaan **Koko**-valikon alla, **Visualisoinnit**-ruudun alaosassa. Kenttä muuttuu automaattisesti **Vuosien määrä** -mittayksiköksi ja kartan visualisointi näyttää nyt niiden maiden arvopisteet suurempina, jotka ovat voittaneet useimpia turnauksia. 
    
    ![](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage15.png)
+   
 
-Kuten näet, on helppoa mukauttaa raporttien visualisointeja ja esittää tiedot halutulla tavalla. Power BI Desktop tarjoaa saumattoman kokemuksen alusta loppuun. Sen avulla voit hakea tietoja laajasta tietolähteiden joukosta ja muotoilla ne analyysitarpeidesi mukaan ja visualisoida tiedot monipuolisilla ja vuorovaikutteisilla tavoilla. Kun raportti on valmis, voit [ladata sen Power BI:hin](desktop-upload-desktop-files.md) ja luoda siihen perustuvia koontinäyttöjä, joita voit jakaa muiden Power BI -käyttäjien kanssa.
+## <a name="customize-the-visualization"></a>Visualisointien mukauttaminen
 
-Tähän päättyy **Tietojen tuominen verkosta** -opetusohjelma. Voit ladata tämän valmiin Power BI Desktop -tiedoston [täältä](http://download.microsoft.com/download/1/4/E/14EDED28-6C58-4055-A65C-23B4DA81C4DE/Analyzing_Data_From_The_Web.pbix).
+Visualisointien luominen tietojen perusteella on siis hyvin helppoa. Helppoa on myös niiden mukauttaminen halutusti niin, että ne esittävät tiedot paremmin. 
 
-## <a name="where-else-can-i-get-more-information"></a>Mistä muualta saan lisätietoja?
+### <a name="format-the-map"></a>Kartan muotoileminen
+Voit muuttaa visualisoinnin ulkoasua valitsemalla sen ja valitsemalla sitten **Muotoile**-kuvakkeen (maalirulla) **Visualisoinnit**-ruudussa. Visualisointisi Saksa-arvopisteet saattavat olla esimerkiksi harhaanjohtavia, koska Länsi-Saksan on voittanut kaksi turnausta ja Saksa yhden, ja kartta puolestaan kerrostaa nämä kaksi arvopistettä, sen sijaan, että ne erotettaisiin toisistaan tai lisättäisiin yhteen. Voit määrittää kyseisille pisteille eri värit, korostaaksesi tätä. Voit myös antaa kartalle sitä paremmin kuvaavan ja kiinnostavamman otsikon. 
+
+1. Kun visualisointi on valittu, valitse **Muotoile**-kuvake ja sitten **Tietojen värit**, avataksesi tietojen värit -valikon. 
+   
+   ![Tietojen värien muotoileminen](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/get-data-web15.png)
+   
+2. Aseta **Näytä kaikki** **Päällä**-tilaan, ja valitse sitten **Länsi-Saksan**vieressä olevasta avautuvasta valikosta keltainen väri. 
+   
+   ![Värin muuttaminen](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/get-data-web16.png)
+   
+3. Valitse **Otsikko** avataksesi otsikon asetukset ja syötä **Otsikkoteksti**-kenttään nykyisen otsikon paikalle **Euroopan-mestaruus voittajat**. 
+4. Vaihda **Tekstin väri** punaiseksi, **Tekstikooksi** **12** ja **Fonttiperheeksi** **Segoe (lihavoitu)**. 
+   
+   ![Tietojen värien muotoileminen](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/get-data-web17.png)
+   
+
+Kartta-visualisointi näyttää nyt tältä:
+
+![Kartan visualisointien muotoileminen](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/get-data-web18.png)
+   
+### <a name="change-the-visualization-type"></a>Visualisointityypin muuttaminen
+Voit muuttaa visualisoinnin tyyppiä valitsemalla sen ja valitsemalla sitten eri kuvakkeen **Visualisointi**-ruudun yläreunasta. Kartan visualisoinnista puuttuu esimerkiksi Neuvostoliiton ja Tšekkoslovakian tiedot, koska nämä maat ei ole enää olemassa maailman kartalla. Toinen visualisointityyppi, kuten puukaavio tai ympyräkaavio, voi olla tarkempi, koska siinä näkyvät kaikki arvot. 
+
+Jos haluat muuttaa kartan ympyräkaavioksi, valitse kartta ja valitse sitten **Ympyräkaavio**-kuvake **Visualisointi**-ruudussa. 
+   
+![](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/get-data-web19.png)
+
+>[!TIP]
+>- Voit käyttää **Tietojen värit** -muotoiluasetuksia ja tehdä ”Saksasta” ja ”Länsi-Saksasta” saman väriset. 
+>- Ryhmitelläksesi eniten voittaneet maat yhteen ympyräkaaviossa, valitse kolme pistettä (**...** ) visualisoinnin oikeassa yläkulmassa ja valitse sitten avautuvasta luettelosta **Lajittele vuosimäärän perusteella**. 
+
+Power BI Desktop tarjoaa saumattoman kokemuksen alusta loppuun. Sen avulla voit hakea tietoja laajasta tietolähteiden joukosta ja muotoilla ne analyysitarpeidesi mukaan ja visualisoida tiedot monipuolisilla ja vuorovaikutteisilla tavoilla. Kun raportti on valmis, voit [ladata sen Power BI:hin](desktop-upload-desktop-files.md) ja luoda siihen perustuvia koontinäyttöjä, joita voit jakaa muiden Power BI -käyttäjien kanssa.
+
+## <a name="see-also"></a>Katso myös
 * [Lue muita Power BI Desktop -opetusohjelmia](http://go.microsoft.com/fwlink/?LinkID=521937)
 * [Katso Power BI Desktop -videoita](http://go.microsoft.com/fwlink/?LinkID=519322)
 * [Käy Power BI -keskustelupalstalla](http://go.microsoft.com/fwlink/?LinkID=519326)

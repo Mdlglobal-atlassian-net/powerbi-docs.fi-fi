@@ -1,29 +1,21 @@
 ---
 title: Zendeskiin yhdistäminen Power BI:n avulla
 description: Zendesk Power BI:lle
-services: powerbi
-documentationcenter: ''
 author: SarinaJoan
 manager: kfile
-backup: maggiesMSFT
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: maggiesMSFT
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 52adef9d30ec269e6e3a954632a54814b241623d
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 997dd8b598e67d590723c72fb35245c3b3486c8b
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/24/2018
-ms.locfileid: "30815319"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34242442"
 ---
 # <a name="connect-to-zendesk-with-power-bi"></a>Zendeskiin yhdistäminen Power BI:n avulla
 Zendesk-sisältöpaketti tarjoaa Power BI -koontinäytön ja sarjan Power BI -raportteja, jotka tarjoavat merkityksellisiä tietoja lippujesi määrästä ja agentin suorituskyvystä. Voit käyttää annettua raporttinäkymää ja raportteja tai mukauttaa niitä, jotta niissä korostuvat itseäsi eniten kiinnostavat tiedot.  Tiedot päivitetään automaattisesti kerran päivässä. 
@@ -43,7 +35,7 @@ Muodosta yhteys [Zendesk-sisältöpakettiin](https://app.powerbi.com/getdata/ser
 3. Valitse **Zendesk** \> **Nouda.**
    
    ![](media/service-connect-to-zendesk/zendesk.png)
-4. Anna tiliisi liitetty URL-osoite. Tämä on muodossa **https://company.zendesk.com**. Tiedot parametrien hakuun [löytyvät](#FindingParams) alta.
+4. Anna tiliisi liitetty URL-osoite. Tämä on muodossa **https://company.zendesk.com**. Tiedot [parametrien hakuun](#FindingParams) löytyvät alta.
    
    ![](media/service-connect-to-zendesk/pbi_zendeskconnect.png)
 5. Anna pyydettäessä Zendesk-tunnistetiedot.  Valitse todennusmenetelmäksi **oAuth 2** ja valitse **Kirjaudu sisään**. Noudata Zendesk-todennuksen työnkulkua. Jos olet jo kirjautunut Zendeskiin selaimessa, tunnistetietoja ei välttämättä pyydetä.
@@ -63,7 +55,7 @@ Muodosta yhteys [Zendesk-sisältöpakettiin](https://app.powerbi.com/getdata/ser
 
 **Mitä seuraavaksi?**
 
-* Kokeile [kysymyksen esittämistä koontinäytön yläreunassa olevassa Q&A-ruudussa](power-bi-q-and-a.md)
+* Kokeile [kysymyksen esittämistä raporttinäkymän yläreunassa olevassa Q&A-ruudussa](power-bi-q-and-a.md).
 * [Muuta koontinäytön ruutuja](service-dashboard-edit-tile.md).
 * [Valitse jokin ruutu](service-dashboard-tiles.md), jolloin siihen liittyvä raportti avautuu.
 * Tietojoukko on ajastettu päivittymään päivittäin, mutta voit muuttaa päivitysaikataulua tai kokeilla tietojoukon päivittämistä **Päivitä nyt** -toiminnolla haluamanasi ajankohtana

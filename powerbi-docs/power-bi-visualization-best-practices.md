@@ -1,28 +1,21 @@
 ---
 title: Raporttien ja visualisointien parhaat suunnittelukäytännöt (tekninen raportti)
 description: 'Tekninen raportti: parhaat käytännöt raporttien suunnitteluun Power BI:ssä'
-services: powerbi
-documentationcenter: ''
 author: mihart
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: ''
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 12/21/2017
+ms.component: powerbi-desktop
+ms.topic: conceptual
+ms.date: 04/11/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 868d05891d1b2cb24dfae60b7f3bee405ff7d08f
-ms.sourcegitcommit: ee5d044db99e253c27816e0ea6bdeb9e39a2cf41
+ms.openlocfilehash: 8716e6b5b75c7cd3db1b8daecfaae240f0647a50
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34297258"
 ---
 # <a name="best-design-practices-for-reports-and-visuals"></a>Raporttien ja visualisointien parhaat suunnittelukäytännöt
 <!-- Shared newnav Include -->
@@ -655,7 +648,7 @@ Jos viivakaavioita käytetään yleensä tietojen tarkastelemiseen ajan kuluessa
 
 Lisätietoja palkki- ja pylväskaavioista:
 
-* [Palkkikaaviot 101](http://blog.newscred.com/article/data-visualization-101-bar-charts/3c53044d4add7c31e79a3f80128771f4?page=thankyou)
+* [Palkkikaaviot 101](http://blog.newscred.com/article/data-visualization-101-bar-charts)
 * [Tietojen visualisoinnin luettelo: palkkikaavio](http://www.datavizcatalogue.com/methods/bar_chart.html#.VYV-hY3bLJw)
 * [Tietojen visualisoinnin luettelo: monijoukkokaavio](http://www.datavizcatalogue.com/methods/multiset_barchart.html#.VYV_gI3bLJw)
 
@@ -734,7 +727,7 @@ Avaa tätä varten muotoiluruutu, laajenna **Y-akselia** ja ota  **Näytä toiss
 
 Lisätietoja:
 
-* [Opetusohjelma: Yhdistelmäkaavio Power BI:ssä](power-bi-visualization-combo-chart.md)
+* [Yhdistelmäkaavio Power BI:ssä](power-bi-visualization-combo-chart.md)
 * [Kaksoisskaalattujen akseleiden vaara visualisoinneissa](http://www.perceptualedge.com/articles/visual_business_intelligence/dual-scaled_axes.pdf)
 
 ### <a name="scatter-chart"></a>Pistekaavio
@@ -750,7 +743,7 @@ Alla olevassa Etelä-Amerikkaa koskevassa kuplakaaviossa verrataan toisiinsa asu
 
 **Kuva 62: Etelä-Amerikan BKT ja asukasluku kuplakaaviona**
 
-Jos lisäät toistoakselin, voit pitää itseäsi Hans Roslingina ja kertoa tarinan ajan kuluessa (https://www.youtube.com/watch?v=PbaDBJWCeD4). Jos haluat lisätä toistoakselin, vedä päivä/aikakenttä **toistoakselille**.
+Jos lisäät toistoakselin, voit pitää itseäsi Hans Roslingina ja kertoa tarinan ajan kuluessa (https://www.youtube.com/watch?v=PbaDBJWCeD4)). Jos haluat lisätä toistoakselin, vedä päivä/aikakenttä **toistoakselille**.
 
 #### <a name="best-practices"></a>Parhaat käytännöt
 * Piste- ja kuplakaaviot ovat mainioita tarinankertojia. Ne eivät ole kuitenkaan yhtä hyödyllisiä tietojen tarkastelussa.  Stephen Few huomauttaa tästä alla olevassa kappaleessa *. Tämän lähestymistavan vahvuus näkyy silloin, kun sitä käytetään tarinan kertomiseen. Kun Rosling kertoo, mitä kaaviossa tapahtuu kun kuplat liikkuvat ympäriinsä ja niiden arvo muuttuu sen mukaan, mitä hän haluaa meille näyttää, tiedot heräävät henkiin. Animoidut kuplakaaviot sopivat kuitenkin selvästi huonommin omatoimiseen tietojen tarkasteluun ja tulkintaan. Rosling ei epäilemättä käytä tätä menetelmää uusiin tarinoihin vaan kertoo vain tunnettuja tarinoita. Emme voi nähdä useampaa kuin yhden kuplan kerralla, koska ne liikkuvat ympäriinsä, joten meidän on pakko toistaa animaatio useamman kerran käsityksen saamiseksi tilanteesta. Voimme lisätä merkintöjä kuplien valitsemiseksi ja nähdä sitten näiden kuplien täydelliset polut. Jos merkintöjä käytetään useampaan kuin pariin kuplaan, kaaviosta tulee nopeasti sekava. Haluan lähinnä osoittaa, ettei tämä ole paras keino näyttää näitä tietoja tarkastelua ja analyysiä varten.*
@@ -810,8 +803,8 @@ Suorituskykyilmaisimet näyttävät arvon, tilan, varianssin tavoitteesta ja tre
 
 Lisätietoja:
 
-* [Opetusohjelma: Sädemittarikaaviot Power BI:ssä](power-bi-visualization-radial-gauge-charts.md)
-* [Opetusohjelma: Suorituskykyilmaisimet Power BI:ssä](power-bi-visualization-kpi.md)
+* [Viisarimittarikaaviot Power BI:ssä](power-bi-visualization-radial-gauge-charts.md)
+* [Suorituskykyilmaisimet Power BI:ssä](power-bi-visualization-kpi.md)
 
 ## <a name="conclusion"></a>Päätelmät
 Nyt on aika testata näitä parhaita käytäntöjä.  Voit kertoa meille myös omista parhaista käytännöistäsi. Etkä ole samaa mieltä suosituksistamme tai löysitkö hyvän syyn ”poiketa säännöistä”?  Haluamme myös kuulla mielellämme niitä koskevia kommentteja.  

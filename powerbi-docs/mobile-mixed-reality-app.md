@@ -1,33 +1,25 @@
 ---
 title: Power BI ja tehostettu todellisuus -sovellus (esikatselu)
-description: Tarkastele koontinäyttöjä ja raportteja Power BI:n tehostettu todellisuus -sovelluksessa, joko virtuaaliseen maailmaan upotettuna tai omassa ympäristössäsi.
-services: powerbi
-documentationcenter: ''
+description: Tarkastele raporttinäkymiä ja raportteja Power BI:n tehostettu todellisuus -sovelluksessa (esikatselu), joko virtuaaliseen maailmaan upotettuna tai omassa ympäristössäsi.
 author: maggiesMSFT
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: ''
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: ''
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 03/13/2018
+ms.component: powerbi-mobile
+ms.topic: conceptual
+ms.date: 06/05/2018
 ms.author: maggies
-ms.openlocfilehash: 4226973fa48470faf46db68509b05eb02d88c113
-ms.sourcegitcommit: 00b4911ab5fbf4c2d5ffc000a3d95b3149909c28
+ms.openlocfilehash: 15c59d25814a50ce09b5b52accd0f88d74871a34
+ms.sourcegitcommit: b25ae650643b0a62f33d7c1741307137b9cec316
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/15/2018
-ms.locfileid: "30975402"
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34799322"
 ---
 # <a name="power-bi-for-mixed-reality-app-preview"></a>Power BI ja tehostettu todellisuus -sovellus (esikatselu)
-Tarkastele koontinäyttöjä ja raportteja Power BI:n tehostettu todellisuus -sovelluksessa, joko virtuaalimaailmassa tai sijoita niitä tiettyihin kohtiin omassa ympäristössäsi. 
+Tarkastele koontinäyttöjä ja raportteja Power BI:n tehostettu todellisuus -sovelluksessa (esikatselu), joko virtuaalimaailmassa tai sijoita niitä tiettyihin kohtiin omassa ympäristössäsi. 
 
-Lataa Power BI:n tehostettu todellisuus -sovelluksen esikatseluversio Windows Storesta tarkastellaksesi koontinäyttöjä ja raportteja. Käsittele niitä virtuaalimaailmassa ja valitse sitten ne, jotka haluat sijoittaa. 
+[Lataa Power BI ja tehostettu todellisuus](https://www.microsoft.com/p/power-bi-mobile/9nblgggzlxn1?activetab=pivot%3aoverviewtab) -sovellus Windows-kaupasta, josta se löytyy nimellä “Power BI -mobiilisovellus” Käsittele raporttinäkymiä ja raportteja virtuaalimaailmassa ja valitse sitten ne, jotka haluat sijoittaa. 
 
 ## <a name="two-views-windows-classic-and-holographic"></a>Kaksi näkymää: perinteinen Windows ja holografinen
 

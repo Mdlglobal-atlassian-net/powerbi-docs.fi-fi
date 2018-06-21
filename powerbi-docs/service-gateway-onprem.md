@@ -1,31 +1,24 @@
 ---
 title: Paikallinen tietoyhdyskäytävä
 description: Tämä on yleiskatsaus paikallisesta tietoyhdyskäytävästä Power BI:lle. Voit käyttää tätä yhdyskäytävää DirectQueryn tietolähteiden kanssa. Voit käyttää myös tätä yhdyskäytävää päivittämään pilvipalvelun tietojoukkoja paikallisten tietojen kanssa.
-services: powerbi
-documentationcenter: ''
 author: mgblythe
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 03/26/2018
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: c6c924095e3aaf4839f1c9422e027ba5373b9ad4
-ms.sourcegitcommit: 8552a34df8e6141eb704314c1a019992901d6e78
+ms.openlocfilehash: 4eb9f8e0b8548fbecd4e5d2e2fd47c4c3acd2bd6
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/08/2018
-ms.locfileid: "30977052"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34722812"
 ---
 # <a name="on-premises-data-gateway"></a>Paikallinen tietoyhdyskäytävä
+
 Paikallinen tietoyhdyskäytävä toimii siltana tarjoten nopean ja turvallisen tiedonsiirron paikallisten tietojen (eli tietojen, jotka eivät sijaitse pilvipalvelussa) ja Power BI-, Microsoft Flow-, Logic Apps- ja PowerApps-palveluiden välillä.
 
 Voit käyttää yhtä yhdyskäytävää eri palveluiden kanssa samaan aikaan. Jos käytössäsi on Power BI sekä PowerApps, yhtä yhdyskäytävää voi käyttää molempiin. Se on riippuvainen tilistä, jolle olet kirjautunut sisään.
@@ -96,6 +89,16 @@ Kun lisäät tietolähteen yhdyskäytävään, sinun on annettava tunnistetiedot
 * [Azure Information Protection](https://docs.microsoft.com/en-us/microsoft-365/enterprise/protect-files-with-aip
 ) -toimintoa ei tueta tällä hetkellä
 * [Access Online](https://products.office.com/en-us/access) ei tueta tällä hetkellä
+
+## <a name="tenant-level-administration"></a>Vuokraajatason hallinta 
+
+Tällä hetkellä ei ole yhtä paikkaa, jossa vuokraajan järjestelmänvalvojat voivat hallita kaikkia yhdyskäytäviä, jotka on asennettu ja määritetty muiden käyttäjien toimesta.  Jos olet vuokraajan järjestelmänvalvojaa, suosittelemme, että pyydät organisaatiosi käyttäjiä lisäämään sinut järjestelmänvalvojaksi jokaiseen organisaatioosi asennettuun yhdyskäytävään. Näin voit hallita organisaatiosi kaikkia yhdyskäytäviä yhdyskäytävän asetukset -sivun kautta tai [PowerShell-komentojen](https://docs.microsoft.com/power-bi/service-gateway-high-availability-clusters#powershell-support-for-gateway-clusters) avulla. 
+
+## <a name="enabling-outbound-azure-connections"></a>Lähtevien Azure-yhteyksien käyttöön ottaminen 
+Paikallinen tietoyhdyskäytävä on riippuvainen Azure palveluväylän yhteydestä pilvipalveluun ja muodostaa vastaavasti lähteviä yhteyksiä siihen liittyvään Azure-alueeseen. Oletusarvoisesti tämä on Power BI -vuokraajan sijainti. Katso missä [Power BI -vuokraajasi sijaitsee](https://powerbi.microsoft.com/en-us/documentation/powerbi-admin-where-is-my-tenant-located/)
+Jos palomuuri estää lähtevät yhteydet, sinun on määritettävä palomuuri sallimaan paikallisesta tietoyhdyskäytävästä lähtevät yhteydet siihen liittyvään Azure-alueeseen. Saat tarkempia tietoja kunkin Azure palvelinkeskuksen IP-osoitteiden alueista [Microsoft Azuren palvelinkeskusten IP-osoiteluettelosta](https://www.microsoft.com/en-us/download/details.aspx?id=41653).
+> [!NOTE]
+> IP-osoitteiden alueet saattavat muuttua ajan kuluessa, joten varmista, että lataat säännöllisesti uusimmat tiedot. 
 
 ## <a name="troubleshooting"></a>Vianmääritys
 Jos sinulla on ongelmia, kun asennat tai määrität yhdyskäytävää, varmista, että luet kohdan [Paikallisen tietoyhdyskäytävän vianmääritys](service-gateway-onprem-tshoot.md). Jos epäilet, että sinulla on ongelma palomuurin kanssa, katso [palomuuria tai välityspalvelinta](service-gateway-onprem-tshoot.md#firewall-or-proxy) koskeva osa vianmääritysartikkelista.

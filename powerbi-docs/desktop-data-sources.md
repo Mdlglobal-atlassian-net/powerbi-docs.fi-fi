@@ -1,40 +1,32 @@
 ---
 title: Power BI Desktopin tietolähteet
 description: Power BI Desktopin tietolähteet
-services: powerbi
-documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: complete
-qualitydate: 04/29/2016
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 03/06/2018
+ms.component: powerbi-desktop
+ms.topic: conceptual
+ms.date: 05/08/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 4bfdbaaa305f80195fd08155ecca744444495aeb
-ms.sourcegitcommit: 00b4911ab5fbf4c2d5ffc000a3d95b3149909c28
+ms.openlocfilehash: b7e08f586c0c1f0bf7409735683bc9c1cd6aa969
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/15/2018
-ms.locfileid: "30975472"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34286861"
 ---
 # <a name="data-sources-in-power-bi-desktop"></a>Power BI Desktopin tietolähteet
 Power BI Desktopin avulla voit yhdistää tietoja monista eri lähteistä. Täydellinen luettelo käytettävissä olevista tietolähteistä on tämän sivun alareunassa.
 
 Muodosta yhteys tietoihin valitsemalla **Aloitus**-valintanauhassa **Nouda tiedot**. Jos valitset alanuolen tai **Nouda tiedot** -painikkeen, näyttöön tulee **yleisimpien** tietotyyppien valikko, joka näkyy seuraavassa kuvassa:
 
-![](media/desktop-data-sources/data-sources_1.png)
+![Nouda tiedot Power BI Desktopissa](media/desktop-data-sources/data-sources_01.png)
 
 Valitsemalla **Lisää...** **Yleisimmät**-valikossa saat **Nouda tiedot** -ikkunan näkyviin. Voit myös tuoda **Nouda tiedot** -ikkunan (ja ohittaa **Yleisimmät**-valikon) valitsemalla suoraan **Nouda tiedot** **-kuvakepainikkeen**.
 
-![](media/desktop-data-sources/data-sources_2.png)
+![Nouda tiedot -painike](media/desktop-data-sources/data-sources_02.png)
 
 > [!NOTE]
 > Power BI -tiimi laajentaa jatkuvasti **Power BI Desktopin** ja **Power BI -palvelun** käytettävissä olevia tietolähteitä. Näet näin ollen usein keskeneräisten tietolähteiden varhaisia versioita, joissa on merkintä *beeta* tai *esikatselu*. Tietolähteen, jolla on merkintä *beeta* tai *esikatselu*, tuki ja toiminnallisuus ovat rajoitettua, eikä sitä tulisi käyttää tuotantoympäristössä.
@@ -47,6 +39,7 @@ Kaikki tietotyypit on järjestelty seuraaviin luokkiin:
 * Kaikki
 * Tiedosto
 * Tietokanta
+* Power BI
 * Azure
 * Online-palvelut
 * Muut
@@ -64,12 +57,7 @@ Kaikki tietotyypit on järjestelty seuraaviin luokkiin:
 
 Seuraavassa kuvassa näkyy **Tiedosto**-luokan **Nouda tiedot** -ikkuna.
 
-![](media/desktop-data-sources/data-sources_3.png)
-
-> [!NOTE]
-> Power BI Desktopin aiemmissa versioissa **CSV** ja **Teksti** olivat erillisiä tietoyhteystyyppejä. Nämä tietoyhdistimet on yhdistetty **CSV/teksti**-luokaksi.
-> 
-> 
+![Nouda tiedot > Tiedosto](media/desktop-data-sources/data-sources_03.png)
 
 **Tietokanta**-luokka tarjoaa seuraavat tietoyhteydet:
 
@@ -89,8 +77,9 @@ Seuraavassa kuvassa näkyy **Tiedosto**-luokan **Nouda tiedot** -ikkuna.
 * SAP Business Warehouse -viestipalvelin (beeta)
 * Amazon Redshift
 * Impala
-* Google BigQuery (beeta)
+* Google BigQuery
 * Snowflake
+* Exasol
 
 > [!NOTE]
 > Jotkin tietokannan yhdistimet edellyttävät, että otat ne käyttöön valitsemalla **Tiedosto > Asetukset ja vaihtoehdot > Asetukset** ja valitsemalla **Esikatselutoiminnot** ja ottamalla yhdistin käyttöön. Jos et näe joitakin edellä mainituista yhdistimistä ja haluat käyttää niitä, tarkista **Esikatselutoiminnot**-asetukset. Huomaa myös, että tietolähteen, jolla on merkintä *beeta* tai *esikatselu*, tuki ja toiminnallisuus ovat rajoitettua, eikä sitä tulisi käyttää tuotantoympäristössä.
@@ -99,7 +88,16 @@ Seuraavassa kuvassa näkyy **Tiedosto**-luokan **Nouda tiedot** -ikkuna.
 
 Seuraavassa kuvassa näkyy **Tietokanta**-luokan **Nouda tiedot** -ikkuna.
 
-![](media/desktop-data-sources/data-sources_4.png)
+![Nouda tiedot > Tietokannat](media/desktop-data-sources/data-sources_04.png)
+
+**Power BI** -luokka tarjoaa seuraavat tietoyhteydet:
+
+* Power BI -tietojoukot
+* Power BI -tietosarjat (beeta)
+
+Seuraavassa kuvassa näkyy **Power BI** -luokan **Nouda tiedot** -ikkuna.
+
+![Nouda tiedot > Power BI](media/desktop-data-sources/data-sources_05.png)
 
 **Azure**-luokka tarjoaa seuraavat tietoyhteydet:
 
@@ -113,19 +111,20 @@ Seuraavassa kuvassa näkyy **Tietokanta**-luokan **Nouda tiedot** -ikkuna.
 * Azure HDInsight (HDFS)
 * Azure HDInsight Spark (beeta)
 * HDInsight Interactive Query (beeta)
+* Azure KustoDB (beeta)
 
 Seuraavassa kuvassa näkyy **Azure**-luokan **Nouda tiedot** -ikkuna.
 
-![](media/desktop-data-sources/data-sources_5.png)
+![Nouda tiedot > Azure](media/desktop-data-sources/data-sources_06.png)
 
 **Online-palvelut**-luokka tarjoaa seuraavat tietoyhteydet:
 
-* Power BI -palvelu
 * SharePoint Online -luettelo
 * Microsoft Exchange Online
 * Dynamics 365 (online)
 * Dynamics NAV (beeta)
-* Dynamics 365 for Financials (beeta)
+* Dynamics 365 Business Central
+* Common Data Service for Apps (beeta)
 * Common Data Service (beeta)
 * Microsoft Azure Consumption Insights (beeta)
 * Visual Studio Team Services (beeta)
@@ -154,15 +153,15 @@ Seuraavassa kuvassa näkyy **Azure**-luokan **Nouda tiedot** -ikkuna.
 * tyGraph (beeta)
 * Webtrends (beeta)
 * Zendesk (beeta)
+* TeamDesk (beeta)
 
 Seuraavassa kuvassa näkyy **Online-palvelut**-luokan **Nouda tiedot** -ikkuna.
 
-![](media/desktop-data-sources/data-sources_6b.png)
+![Nouda tiedot > Online-palvelut](media/desktop-data-sources/data-sources_07.png)
 
 **Muut**-luokka tarjoaa seuraavat tietoyhteydet:
 
 * Vertica (beeta)
-* Kusto (beeta)
 * Verkko
 * SharePoint List
 * OData-syöte
@@ -177,7 +176,7 @@ Seuraavassa kuvassa näkyy **Online-palvelut**-luokan **Nouda tiedot** -ikkuna.
 
 Seuraavassa kuvassa näkyy **Muut**-luokan **Nouda tiedot** -ikkuna.
 
-![](media/desktop-data-sources/data-sources_7a.png)
+![Nouda tiedot > Muut](media/desktop-data-sources/data-sources_08.png)
 
 > [!NOTE]
 > Tällä hetkellä ei ole mahdollista muodostaa yhteyttä mukautettuihin tietolähteisiin, jotka suojattu Azure Active Directorylla.
@@ -187,15 +186,15 @@ Seuraavassa kuvassa näkyy **Muut**-luokan **Nouda tiedot** -ikkuna.
 ## <a name="connecting-to-a-data-source"></a>Yhteyden muodostaminen tietolähteeseen
 Jos haluat muodostaa yhteyden tietolähteeseen, valitse tietolähde **Nouda tiedot** -ikkunassa ja valitse **Muodosta yhteys**. Seuraavassa kuvassa **Muut**-tietoyhteysluokasta on valittu **WWW**.
 
-![](media/desktop-data-sources/data-sources_7b.png)
+![Yhdistä verkkoon](media/desktop-data-sources/data-sources_08a.png)
 
 Näyttöön tulee tietoyhteyden mukainen yhteysikkuna. Jos tunnistetietoja vaaditaan, sinua pyydetään antamaan ne. Seuraavassa kuvassa näytetään URL-osoitteen kirjoittaminen WWW-tietolähteeseen yhdistämistä varten.
 
-![](media/desktop-data-sources/datasources_fromwebbox.png)
+![syötä URL-verkko-osoite](media/desktop-data-sources/datasources_fromwebbox.png)
 
 Kun URL-osoite tai resurssiyhteyden tiedot on annettu, valitse **OK**. Power BI Desktop muodostaa yhteyden tietolähteeseen ja esittää saatavilla olevat tietolähteet **siirtymistoiminnossa**.
 
-![](media/desktop-data-sources/datasources_fromnavigatordialog.png)
+![Siirtymistoimintonäyttö](media/desktop-data-sources/datasources_fromnavigatordialog.png)
 
 Voit joko ladata tiedot valitsemalla **Lataa**-painike **Siirtymistoiminto**-ruudun alareunassa tai muokata kyselyä ennen tietojen lataamista valitsemalla **Muokkaa**-painike.
 

@@ -1,35 +1,27 @@
 ---
 title: Tietojen tarkastelu iOS-laitteiden Power BI -mobiilisovelluksessa
 description: Tarkastele ja käytä Power BI -koontinäyttöjä ja -raportteja sekä Reporting Servicesin mobiiliraportteja ja suorituskykyilmaisimia iPadilla, iPhonella, Apple Watchilla ja iPod Touchilla.
-services: powerbi
-documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-mobile
+ms.topic: conceptual
 ms.date: 10/13/2017
 ms.author: maggies
-ms.openlocfilehash: 0b09706b8d8f7f4dbf9c2f8d3f6fc844383ce6be
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: b0785555e288084f97d06d05161ebef78d21731c
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/13/2017
-ms.locfileid: "30972082"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34292957"
 ---
 # <a name="explore-your-data-on-the-power-bi-mobile-app-for-ios-devices"></a>Tietojen tarkastelu iOS-laitteiden Power BI -mobiilisovelluksessa
 Microsoft Power BI -sovellus iOS-käyttöjärjestelmälle tarjoaa BI-mobiilikäyttökokemuksen iPadiin, iPhoneen, Apple Watchiin ja iPod Touchiin. Sovellukset tarjoavat tärkeiden liiketoimintaan liittyvien tietojen reaaliaikaisen, kosketuskäyttöisen mobiilikäytön, joten voit tarkastella ja käsitellä organisaation Power BI -koontinäyttöjä ja -raportteja sekä Reporting Servicesin mobiiliraportteja ja suorituskykyilmaisimia missä tahansa. Tarkastele tietoja koontinäytöissä ja jaa ne sähköpostitse tai tekstiviestillä työtovereiden kanssa.
 
 ![iPhone ja iPad](media/mobile-ios-ipad-iphone-apps/pbi_ipad_iphonedevices.png)
 
-Siirry Power BI:hin (https://powerbi.com) ja rekisteröidy Power BI -palveluun.
+Siirry Power BI:hin (https://powerbi.com)) ja rekisteröidy Power BI -palveluun.
 
 Tutustu [Power BI -mobiilisovellusten uusiin ominaisuuksiin](mobile-whats-new-in-the-mobile-apps.md).
 

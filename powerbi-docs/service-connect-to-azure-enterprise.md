@@ -1,29 +1,21 @@
 ---
 title: Muodosta yhteys Microsoft Azure Enterpriseen Power BI:llä
 description: Microsoft Azure Enterprise Power BI:lle
-services: powerbi
-documentationcenter: ''
 author: SarinaJoan
 manager: kfile
-backup: maggiesMSFT
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: maggiesMSFT
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 60bcad86af5fcaa09d6b2fb16b581ec7c37264ae
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 7425e194bd6bda51442a128d146fb4061a77af81
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/24/2018
-ms.locfileid: "30815259"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34243191"
 ---
 # <a name="connect-to-microsoft-azure-enterprise-with-power-bi"></a>Muodosta yhteys Microsoft Azure Enterpriseen Power BI:llä
 Tutustu ja valvo Microsoft Azure Enterprise -tietojasi Power BI:ssä Power BI -sisältöpaketin avulla. Tiedot päivitetään automaattisesti kerran päivässä.
@@ -52,10 +44,10 @@ Muodosta yhteys Power BI:n [Microsoft Azure Enterprise -sisältöpakettiin](http
 
 **Mitä seuraavaksi?**
 
-* Kokeile [kysymyksen esittämistä koontinäytön yläreunassa olevassa Q&A-ruudussa](power-bi-q-and-a.md)
+* Kokeile [kysymyksen esittämistä raporttinäkymän yläreunassa olevassa Q&A-ruudussa](power-bi-q-and-a.md).
 * [Muuta koontinäytön ruutuja](service-dashboard-edit-tile.md).
 * [Valitse jokin ruutu](service-dashboard-tiles.md), jolloin siihen liittyvä raportti avautuu.
-* Tietojoukko on ajoitettu päivittymään päivittäin, mutta voit muuttaa päivitysaikataulua tai kokeilla tietojoukon päivittämistä **Päivitä nyt** -toiminnolla haluamanasi ajankohtana
+* Tietojoukko on ajastettu päivittymään päivittäin, mutta voit muuttaa päivitysaikataulua tai kokeilla tietojoukon päivittämistä **Päivitä nyt** -toiminnolla haluamanasi ajankohtana
 
 ## <a name="whats-included"></a>Paketin sisältö
 Azure Enterprise -sisältöpaketti sisältää kuukausittaiset raporttitiedot sille kuukausialueelle, jonka olet antanut yhteystyönkulun aikana. Alue on liikkuva ikkunassa, joten alueeseen kuuluvat päivämäärät päivittyvät, kun tietojoukko päivittyy.
@@ -76,7 +68,7 @@ Power BI -raportointi on käytettävissä EA Directille, kumppaneille ja välill
 
 **Kuukausien määrä**
 
-* Tämä on oltava luku välillä 1–36, joka edustaa niiden kuukausien lukumäärää (tästä päivästä), joiden tiedot haluat tuoda.
+* Tämän on oltava luku välillä 1–36, joka edustaa niiden kuukausien lukumäärää (tästä päivästä lähtien), joiden tiedot haluat tuoda.
 
 **Rekisteröintinumero**
 

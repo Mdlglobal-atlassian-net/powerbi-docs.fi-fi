@@ -1,28 +1,20 @@
 ---
 title: Lisää kommentteja raporttiin raporttipalvelimessa – Power BI -raporttipalvelin
 description: Lue, miten voit lisätä kommentteja Power BI- tai sivutettuun raporttiin Power BI -raporttipalvelimessa tai SQL Server Reporting Services -raporttipalvelimessa.
-services: powerbi
-documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 10/12/2017
+ms.component: powerbi-report-server
+ms.topic: conceptual
+ms.date: 05/18/2018
 ms.author: maggies
-ms.openlocfilehash: 24848b978ae88ae890cbd5b6eea24146cd01e542
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: 08a7740d1a44c4a5e8ef961100c38f3bc4622fd8
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/13/2017
-ms.locfileid: "30972032"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34721957"
 ---
 # <a name="add-comments-to-a-report-in-a-report-server"></a>Lisää kommentteja raporttiin raporttipalvelimessa
 Voit lisätä kommentteja raportteihin, mukaan lukien Power BI -raportteihin, raporttipalvelimen verkkoportaalissa. Kommentit näkyvät raportissa reaaliajassa, kaikki, joilla on tarvittavat oikeudet, näkevät raportin kommentit. Lisätietoa on alla [Käyttöoikeudet](#permissions)-kohdassa.
@@ -53,7 +45,7 @@ Käyttöoikeuksistasi riippuen:
 * Näet kaikki kommentit, voit julkaista, muokata ja poistaa omia kommentteja ja voit poistaa muiden käyttäjien kommentteja.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
-* [Power BI -raporttipalvelimen käyttöopas](user-handbook-overview.md)  
+* [Mikä on Power BI -raporttipalvelin?](get-started.md)  
 
-Onko sinulla muuta kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
+Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
 

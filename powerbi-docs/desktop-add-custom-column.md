@@ -1,29 +1,21 @@
 ---
 title: Mukautettujen sarakkeiden lisääminen Power BI Desktopissa
 description: Luo uusi mukautettu sarake nopeasti Power BI Desktopissa
-services: powerbi
-documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 01/24/2018
+ms.component: powerbi-desktop
+ms.topic: conceptual
+ms.date: 04/24/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 7408d7f5c0dff6d1f04ea42a3f4dfefc8600524f
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 30f39cd2b79792e9d4d3c41a1d60a8ddce6802f6
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/24/2018
-ms.locfileid: "30974322"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34290495"
 ---
 # <a name="add-a-custom-column-in-power-bi-desktop"></a>Mukautettujen sarakkeiden lisääminen Power BI Desktopissa
 Voit helposti lisätä uuden mukautetun tietosarakkeen mallin avulla **Kyselyeditoria** - **Power BI Desktopia**. Voit luoda ja nimetä mukautetun sarakkeen helppokäyttöisten painikkeiden avulla käyttämällä [M-kaavoja](https://msdn.microsoft.com/library/mt270235.aspx) , joka määrittävät mukautetun sarakkeen. M-kaava on [kattavan funktion viittauksen sisältöjoukko](https://msdn.microsoft.com/library/mt779182.aspx). 
@@ -41,10 +33,10 @@ Kun **Kyselyeditori** on käynnistetty ja sinulla on joitakin ladattuja tietoja,
 
 ![](media/desktop-add-custom-column/add-custom-column_02.png)
 
-Kun teet niin, esiin tulee **Lisää mukautettu sarake** -ikkuna, jota käsittelemme seuraavassa osassa.
+**Lisää mukautettu sarake** -ikkuna ilmestyy näkyviin. Se kuvaillaan seuraavassa osassa.
 
 ## <a name="the-add-custom-column-window"></a>Lisää mukautettu sarake -ikkuna
-**Lisää mukautettu sarake** -ikkunassa näkyviin ruutuun oikealla ylhäällä tulee luettelo käytettävissä olevista kentistä (voit nimetä sen uudelleen kirjoittamalla uuden nimen kyseiseen tekstiruutuun), sekä [ **M** -kaava](https://msdn.microsoft.com/library/mt779182.aspx) , jonka luot (tai kirjoitat) perusteena lisättävät kentät oikealla, lisäämällä operaattorit ja kehittämällä muulla tavoin kaavan, jolle uusi mukautettu sarake määritetään. 
+**Lisää mukautettu sarake** -ikkunassa näkyviin ruutuun oikealla ylhäällä tulee luettelo käytettävissä olevista kentistä (voit nimetä sen uudelleen kirjoittamalla uuden nimen kyseiseen tekstiruutuun), sekä [ **M** -kaava](https://msdn.microsoft.com/library/mt779182.aspx), jonka luot (tai kirjoitat) perusteena lisättävät kentät oikealla, lisäämällä operaattorit ja kehittämällä muulla tavoin kaavan, jolle uusi mukautettu sarake määritetään. 
 
 ![](media/desktop-add-custom-column/add-custom-column_03.png)
 

@@ -1,29 +1,21 @@
 ---
 title: Power BI:n sertifioidut mukautetut visualisoinnit
 description: Mukautetun visualisoinnin sertifioinnin edellytykset ja lähettämisprosessi. Lisäksi luettelo jo sertifioiduista mukautetuista visualisoinneista.
-services: powerbi
-documentationcenter: ''
 author: mihart
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
+ms.reviewer: ''
 featuredvideoid: ''
-qualityfocus: no
-qualitydate: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-developer
+ms.topic: conceptual
 ms.date: 02/13/2018
 ms.author: mihart
-ms.openlocfilehash: ceb101d02fcacecacb8410052b2d9eaba01d46fd
-ms.sourcegitcommit: e571de2afa3f34fac06a6aab0df0e8940cb00a0d
+ms.openlocfilehash: a1d3a18fd2f325cd82cd682feb52205f17dacf93
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/05/2018
-ms.locfileid: "30976787"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34297005"
 ---
 # <a name="getting-a-custom-visual-certified"></a>Mukautetun visualisoinnin *sertifioinnin* hankkiminen
 ## <a name="what-is-meant-by-certified"></a>Mitä *sertifioinnilla* tarkoitetaan?
@@ -106,11 +98,13 @@ Microsoft saattaa harkintansa mukaan poistaa visualisoinnin sertifioitujen luett
 | [Kuvaruudukko](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104381355) | |
 | [Infografiikan suunnitteluvisualisointi](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380898) | |
 | [Akvelonin KPI-kaavio](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104381432) | |
+| [MAQ Softwaren KPI-sarake](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380996) | [Video](https://youtu.be/rU0xoOlIq1U) |
 | [KPI-ilmaisin](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380832) | |
 | [MAQ Softwaren KPI-vaihtaja](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380946) | [Video](https://youtu.be/cudG4gsZ2V8) |
 | [MAQ Softwaren palkkimittari](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380821) | [Video](https://youtu.be/7_jFaM30dkc) |
 | [Viiva-pallokaavio](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380766) | |
 | [Mekko-kaavio](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380785) | [Video](https://youtu.be/90FLCKpgicA) |
+| [CloudScopen yleiskatsaus](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104381477) | |
 | [Akselin toisto (dynaaminen osittaja)](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380981) | |
 | [Power KPI](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104381083) | [Video](https://youtu.be/IvfIP3E6-1Q) |
 | [Power KPI ‑taulukko](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104381299) | [Video](https://youtu.be/1enze8pcGzY) |
@@ -146,5 +140,5 @@ Microsoft saattaa harkintansa mukaan poistaa visualisoinnin sertifioitujen luett
 [Visualisoinnit Power BI:ssä](power-bi-report-visualizations.md)  
 [Mukautetut visualisoinnit Power BI:ssä](power-bi-custom-visuals.md)  
 [Mukautettujen visualisointien julkaiseminen Microsoft AppSourcessa](developer/office-store.md)  
-Onko sinulla muuta kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
+Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
 

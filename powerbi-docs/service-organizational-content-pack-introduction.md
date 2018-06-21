@@ -1,29 +1,21 @@
 ---
 title: Power BI:n organisaation sisältöpakettien esittely
 description: Lue lisätietoja koontinäyttöjen, raporttien, Excel-työkirjojen ja tietojoukkojen pakkaamisesta organisaation sisältöpaketeiksi, joita voit jakaa työtovereillesi.
-services: powerbi
-documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
-backup: ajayan
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ajayan
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 10/12/2017
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 00ddec3dbf4087935a7c3583138dabb2a83f0ae5
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: f88ad90ddf0cd9315a3a3830a01b038d7300c1c9
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/24/2018
-ms.locfileid: "30815329"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34247316"
 ---
 # <a name="intro-to-organizational-content-packs-in-power-bi"></a>Power BI:n organisaation sisältöpakettien esittely
 > [!NOTE]
@@ -70,7 +62,7 @@ Elinkaari näyttää suunnilleen tältä:
 5. Luoja päivittää koontinäyttöä ja julkaisee sisältöpaketista uuden version.
    
    * Toinen jakeluryhmän jäsen ei ole mukauttanut alkuperäistä sisältöpakettia. Uudet muutokset otetaan automaattisesti käyttöön hänen sisältöpakettiversiossaan.  
-   * Jäsen, joka aiemmin mukautti sisältöpakettia, saa ilmoituksen uudesta versiosta.  Hän voi siirtyä AppSourceen ja hakea päivitetyn sisältöpaketin menettämättä omaa mukautettua versiotaan. Hänellä on nyt kaksi versiota: oma mukautettu versio ja päivitetty sisältöpaketti.
+   * Tässä esimerkissä yksi poistetuista jäsenistä on kuitenkin muokannut sisältöpakettia. Hän saa ilmoituksen uudesta versiosta.  Hän voi siirtyä AppSourceen ja hakea päivitetyn sisältöpaketin menettämättä omaa mukautettua versiotaan. Hänellä on nyt kaksi versiota: oma mukautettu versio ja päivitetty sisältöpaketti.
 6. Sisältöpaketin luoja voi muuttaa sen suojausasetuksia. Tällöin jäsenet eivät enää pääse käyttämään sisältöä. Jäseniä voi myös poistaa jakeluryhmästä.
    
    * Sisältö poistetaan automaattisesti ryhmästä poistetuilta jäseniltä, elleivät he ole muokanneet alkuperäistä sisältöpakettia. 

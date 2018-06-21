@@ -1,35 +1,27 @@
 ---
 title: Tekstiruudut ja muodot Power BI -raporteissa
 description: Ohjeista tekstiruutujen ja muotojen lisäämisestä ja luomisesta raportissa käyttämällä Microsoft Power BI -palvelua.
-services: powerbi
-documentationcenter: ''
 author: mihart
 manager: kfile
-backup: ''
-editor: ''
+ms.reviewer: ''
 featuredvideoid: _3q6VEBhGew
-tags: ''
-qualityfocus: no
-qualitydate: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 01/22/2018
+ms.component: powerbi-desktop
+ms.topic: conceptual
+ms.date: 03/22/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 8ce10e5d7b0ea2247655a9f93bfc3534086106f2
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 7a002bb99cb80d805298d29916d4eb56f692b479
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/24/2018
-ms.locfileid: "30974557"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34310287"
 ---
 # <a name="static-content-in-power-bi-reports"></a>Staattinen sisältö Power BI -raporteissa
-Raportteihin voi lisätä tekstiruutuja ja muotoja käyttämällä Power BI -palvelua ja Power BI Desktopia. Kummassakin tapauksessa sinulla on oltava raportin muokkausoikeudet. Jos raportti on jaettu kanssasi, et voi käyttää muokkausnäkymää. 
+Raportteihin voi lisätä tekstiruutuja ja muotoja käyttämällä Power BI -palvelua ja Power BI Desktopia. Kummassakin tapauksessa sinulla on oltava raportin muokkausoikeudet. Jos raportti on jaettu kanssasi Power BI -palvelussa, sinulla ei ole raportin muokkausoikeuksia. 
 
-Katso, miten Will käyttää Power BI Desktopia ja [lisää staattisia kuvia raporttiin](guided-learning/visualizations.yml#step-11). Kokeile sitten lisäämistä itse alla olevien ohjeiden avulla ja käytä Power BI -palvelua sen sijaan.
+Katso, miten Will käyttää Power BI Desktopia ja [lisää staattisia kuvia raporttiin](guided-learning/visualizations.yml?tutorial-step=11). Kokeile sitten lisäämistä itse alla olevien ohjeiden avulla ja käytä Power BI -palvelua sen sijaan.
 > 
 > <iframe width="560" height="315" src="https://www.youtube.com/embed/_3q6VEBhGew" frameborder="0" allowfullscreen></iframe>
 > 

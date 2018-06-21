@@ -1,32 +1,24 @@
 ---
-title: Suorituskykyilmaisimen visualisoinnit (opetusohjelma)
+title: Suorituskykyilmaisimien visualisoinnit
 description: Suorituskykyilmaisimen luominen Power BI -palvelussa ja Power BI Desktopissa
-services: powerbi
-documentationcenter: ''
 author: mihart
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
+ms.reviewer: ''
 featuredvideoid: xmja6EpqaO0
-qualityfocus: no
-qualitydate: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 12/21/2017
+ms.component: powerbi-desktop
+ms.topic: conceptual
+ms.date: 03/21/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 1a937b77135d6ad7843a6e0be779c235a1073f46
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 2fc84d82e67b1c1e4a4b37655a13bd5415abf816
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/24/2018
-ms.locfileid: "30973777"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34292589"
 ---
-# <a name="kpi-visuals-tutorial"></a>Suorituskykyilmaisimen visualisoinnit (opetusohjelma)
+# <a name="kpi-visuals"></a>Suorituskykyilmaisimien visualisoinnit
 Suorituskykyilmaisin (KPI) on visuaalinen vihje, joka kertoo edistymisen määrän kohti mitattavissa olevaa tavoitetta. Katso lisätietoja suorituskykyilmaisimista [Microsoft Developer Networkista](https://msdn.microsoft.com/library/hh272050).
 
 ## <a name="when-to-use-a-kpi"></a>Milloin suorituskykyilmaisinta kannattaa käyttää?
@@ -77,11 +69,8 @@ Suorituskykyilmaisimet ovat myös käytettävissä mobiililaitteissa – voit si
 * Jos suorituskykyilmaisimesi ei näytä samalta kuin edellä, sinun täytyy ehkä lajitella kuukauden mukaan. Koska suorituskykyilmaisimissa ei ole lajitteluasetusta, sinun täytyy lajitella kuukauden mukaan *ennen* visualisoinnin muuntamista suorituskykyilmaisimeksi.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
-[Raportit Power BI:ssä](service-reports.md)
 
 [Visualisoinnit Power BI -raporteissa](power-bi-report-visualizations.md)
 
-[Power BI:n peruskäsitteet](service-basic-concepts.md)
-
-Onko sinulla muuta kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
+Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
 

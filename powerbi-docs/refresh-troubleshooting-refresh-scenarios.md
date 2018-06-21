@@ -1,29 +1,21 @@
 ---
 title: Päivitystilanteiden vianmääritys
 description: Päivitystilanteiden vianmääritys
-services: powerbi
-documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 01/24/2018
+ms.component: powerbi-service
+ms.topic: conceptual
+ms.date: 05/02/2018
 ms.author: davidi
 LocalizationGroup: Data refresh
-ms.openlocfilehash: d94e25b78edef2aefaa5e63c788e5f11dc948791
-ms.sourcegitcommit: 1fe3ababba34c4e7aea08adb347ec5430e0b38e4
+ms.openlocfilehash: 6e1b2960eee8f436f8dbce660e755a5d0b39a68e
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/22/2018
-ms.locfileid: "30975807"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34721566"
 ---
 # <a name="troubleshooting-refresh-scenarios"></a>Päivitystilanteiden vianmääritys
 Täältä löydät eri skenaarioita koskevia tietoja, joita saatat kohdata Power BI -palvelun tietojen päivittämisen yhteydessä.
@@ -65,6 +57,14 @@ Tuodun tietojoukon enimmäiskoko **Power BI-palveluun** on 1 Gt. Nämä tietojou
 
 ## <a name="scheduled-refresh-timeout"></a>Ajoitetun päivityksen aikakatkaisu
 Tuotujen tietojoukkojen ajoitettu päivitys aikakatkaistaan kahden tunnin kuluttua. Aikakatkaisu on kasvanut viiteen tuntiin **Premium** -työtilojen tietojoukoissa. Jos tämä raja tulee vastaan, harkitse tietojoukkosi koon tai monimutkaisuuden pienentämistä tai tietojoukon jakamista pienempiin osiin.
+
+## <a name="access-to-the-resource-is-forbidden"></a>Resurssin käyttö on kielletty  
+Tämä virhe voi ilmetä vanhentuneiden välimuistissa olevien tunnistetietojen vuoksi. Tyhjennä internet-selaimen välimuisti kirjautumalla Power BI:hin ja siirtymällä kohtaan https://app.powerbi.com?alwaysPromptForContentProviderCreds=true. Tämä pakottaa tunnistetietojen päivityksen. 
+    
+    
+## <a name="data-refresh-failure-because-of-password-change-or-expired-credentials"></a>Tietojen päivittämisen epäonnistuminen salasanan vaihtamisen tai vanhentuneiden tunnistetietojen vuoksi 
+Tietojen päivittäminen voi epäonnistua myös vanhentuneiden välimuistissa olevien tunnistetietojen vuoksi. Tyhjennä internet-selaimen välimuisti kirjautumalla Power BI:hin ja siirtymällä kohtaan https://app.powerbi.com?alwaysPromptForContentProviderCreds=true. Tämä pakottaa tunnistetietojen päivityksen.
+
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 [Tietojen päivittäminen](refresh-data.md)  

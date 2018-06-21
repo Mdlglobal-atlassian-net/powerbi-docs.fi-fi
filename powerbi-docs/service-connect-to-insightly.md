@@ -1,29 +1,21 @@
 ---
 title: Yhteyden muodostaminen Insightlyyn Power BI:llä
 description: Insightly Power BI:tä varten
-services: powerbi
-documentationcenter: ''
 author: SarinaJoan
 manager: kfile
-backup: maggiesMSFT
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: maggiesMSFT
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: a49260a90647178e0737e728804b00c004b21376
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: fe5e061913713c76f64995876dda047f7cdc5fea
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/24/2018
-ms.locfileid: "30815324"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34244452"
 ---
 # <a name="connect-to-insightly-with-power-bi"></a>Yhteyden muodostaminen Insightlyyn Power BI:llä
 Visualisoi ja jaa Insightlyn CRM-tietoja Power BI:ssä Insightly-sisältöpaketin avulla. Yhdistä Power BI:hin käyttämällä Insightlyn ohjelmointirajapinnan avainta, jotta voit tarkastella ja luoda raportteja ja koontinäyttöjä CRM-tietojesi pohjalta. Power BI:llä voit analysoida tietoja uusilla tavoilla, luoda tehokkaita kaavioita ja näyttää kontaktit, liidit ja organisaatiot kartalla.
@@ -31,7 +23,7 @@ Visualisoi ja jaa Insightlyn CRM-tietoja Power BI:ssä Insightly-sisältöpaketi
 Muodosta yhteys [Insightly-sisältöpakettiin](https://app.powerbi.com/getdata/services/insightly) Power BI:tä varten.
 
 ## <a name="how-to-connect"></a>Yhteyden muodostaminen
-1. Valitse vasemman siirtymisruudun alareunasta **Nouda tiedot**.
+1. Valitse vasemman siirtymisruudun alareunassa **Nouda tiedot**.
    
    ![](media/service-connect-to-insightly/getdata.png)
 2. Valitse **Palvelut**-ruudussa **Nouda**.
@@ -43,16 +35,16 @@ Muodosta yhteys [Insightly-sisältöpakettiin](https://app.powerbi.com/getdata/s
 4. Valitse todennusmenetelmäksi **Avain** ja anna Insightlyn ohjelmointirajapinta-avain. Valitse sitten **Kirjaudu sisään**. Lisätietoja [sen etsimisestä](#FindingParams) on alla.
    
    ![](media/service-connect-to-insightly/creds.png)
-5. Hyväksymisen jälkeen tuontiprosessi alkaa automaattisesti. Kun kaikki on valmista, uusi koontinäyttö, raportti ja malli näkyvät siirtymisruudussa. Voit tarkastella tuotuja tietoja valitsemalla koontinäytön.
+5. Hyväksymisen jälkeen tuontiprosessi alkaa automaattisesti. Kun kaikki on valmista, uusi raporttinäkymä, raportti ja malli näkyvät siirtymisruudussa. Voit tarkastella tuotuja tietoja valitsemalla raporttinäkymän.
    
      ![](media/service-connect-to-insightly/dashboard.png)
 
 **Mitä seuraavaksi?**
 
-* Kokeile [kysymyksen esittämistä koontinäytön yläreunassa olevassa Q&A-ruudussa](power-bi-q-and-a.md)
+* Kokeile [kysymyksen esittämistä raporttinäkymän yläreunassa olevassa Q&A-ruudussa](power-bi-q-and-a.md).
 * [Muuta koontinäytön ruutuja](service-dashboard-edit-tile.md).
 * [Valitse jokin ruutu](service-dashboard-tiles.md), jolloin siihen liittyvä raportti avautuu.
-* Tietojoukko on ajastettu päivittymään päivittäin, mutta voit muuttaa päivitysaikataulua tai kokeilla tietojoukon päivittämistä **Päivitä nyt** -toiminnolla haluamanasi ajankohtana.
+* Tietojoukko on ajastettu päivittymään päivittäin, mutta voit muuttaa päivitysaikataulua tai kokeilla tietojoukon päivittämistä **Päivitä nyt** -toiminnolla haluamanasi ajankohtana
 
 ## <a name="whats-included"></a>Paketin sisältö
 Sisältöpaketti sisältää seuraavat taulukot ja seuraavien tietueiden kentät:
@@ -84,12 +76,12 @@ Voit kopioida ohjelmointirajapinta-avaimesi Insightlysta valitsemalla käyttäj�
 ![](media/service-connect-to-insightly/findapi.png)
 
 ## <a name="troubleshooting"></a>Vianmääritys
-Tiedot tuodaan Insightlyn API-ohjelmointirajapinnan kautta. Se sisältää päivittäisen rajoituksen Insightly-tilauksesi sopimustason mukaan. Rajat luetellaan API-ohjelmointirajapintaohjeiden kohdassa Rate Limiting/Throttling Requests: https://api.insight.ly/v2.2/Help#!/Overview/Introduction#ratelimit
+Tiedot tuodaan Insightlyn API-ohjelmointirajapinnan kautta. Se sisältää päivittäisen rajoituksen Insightly-tilauksesi sopimustason mukaan. Rajat luetellaan ohjelmointirajapintaohjeiden kohdassa Rate Limiting/Throttling Requests: https://api.insight.ly/v2.2/Help#!/Overview/Introduction#ratelimit
 
 Esitetyissä raporteissa käytetään Insightlyn oletusarvoisia kenttiä, eikä niissä saa olla omia mukautuksia. Voit tarkastella kaikkia käytettävissä olevia kenttiä muokkaamalla raporttia.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
-[Aloita Power BI:n käyttö](service-get-started.md)
+[Power BI:n käytön aloittaminen](service-get-started.md)
 
-[Nouda tietoja Power BI:ssä](service-get-data.md)
+[Tietojen noutaminen Power BI:ssä](service-get-data.md)
 

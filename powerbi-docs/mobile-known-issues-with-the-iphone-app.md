@@ -1,39 +1,22 @@
 ---
-title: 'Virhe: '
-communication: ''
-failures": ''
-in: ''
-ios: ''
-mobile: ''
-apps: ''
-'-': ''
-power: ''
-bi": ''
+title: ”tietoliikennevirheitä” iOS-mobiilisovelluksissa – Power BI -ongelman korjaaminen
 description: 'Tämä artikkeli saattaa auttaa, jos saat seuraavan ilmoituksen: ”Havaittiin tietoliikennevirheitä. Virheet saattavat liittyä WLAN-yhteytesi välityspalvelinasetuksiin.”'
-services: powerbi
-documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: complete
-qualitydate: 03/07/2016
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 10/13/2017
+ms.component: powerbi-mobile
+ms.topic: conceptual
+ms.date: 05/21/2018
 ms.author: maggies
-ms.openlocfilehash: 52b6876165c6760bf76715b8eb051299eb07fe0c
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: 0bb0a221455311854ec52092d062defbc715cdfa
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/13/2017
-ms.locfileid: "30972012"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34721405"
 ---
-# <a name="error-communication-failures-in-ios-mobile-apps---power-bi"></a>Virhe: ”tietoliikennevirheitä” iOS-mobiilisovelluksissa – Power BI
+# <a name="fixing-communication-failures-in-ios-mobile-apps---power-bi"></a>”tietoliikennevirheitä” iOS-mobiilisovelluksissa – Power BI -ongelman korjaaminen
 | ![iPhone](media/mobile-known-issues-with-the-iphone-app/iphone-logo-50-px.png) | ![iPad](media/mobile-known-issues-with-the-iphone-app/ipad-logo-50-px.png) |
 |:--- |:--- |
 | iPhonet |iPadit |

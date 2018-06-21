@@ -1,30 +1,24 @@
 ---
-title: 'Opetusohjelma: dynaaminen rivitason suojaus Analysis Servicen Power BI -taulukkomallissa'
-description: 'Opetusohjelma: dynaaminen rivitason suojaus Analysis Servicen taulukkomallissa'
-services: powerbi
-documentationcenter: ''
+title: Dynaaminen rivitason suojaus Analysis Servicen Power BI -taulukkomallissa
+description: Dynaaminen rivitason suojaus Analysis Servicen taulukkomallissa
 author: selvarms
 manager: amitaro
-backup: davidi
+ms.reviewer: davidi
 editor: davidi
-tags: ''
-qualityfocus: no
-qualitydate: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 10/12/2017
+ms.component: powerbi-desktop
+ms.topic: tutorial
+ms.date: 10/21/2017
 ms.author: selvar
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 34ad1c6568dfd73dc65d561e4fed7bf8c4c63fbc
-ms.sourcegitcommit: e31fc1f6e4af427f8b480c8dbc537c3617c9b2c0
+ms.openlocfilehash: f8c1aae757e80c0c2adbc321345c242eba25098c
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34456130"
 ---
-# <a name="tutorial-dynamic-row-level-security-with-analysis-services-tabular-model"></a>Opetusohjelma: dynaaminen rivitason suojaus Analysis Servicen taulukkomallissa
+# <a name="dynamic-row-level-security-with-analysis-services-tabular-model"></a>Dynaaminen rivitason suojaus Analysis Servicen taulukkomallissa
 Tässä opetusohjelmassa esitellään **rivitason suojauksen** toteuttamiseen tarvittavat vaiheet **Analysis Services -taulukkomallissa** ja näytetään, miten voit käyttää sitä Power BI -raportissa. Tämän opetusohjelman ohjeet on suunniteltu niin, että voit niitä seuraamalla opetella esimerkkitietojoukon kokoamisen.
 
 Tämän opetusohjelman aikana seuraavat vaiheet on kuvattu yksityiskohtaisesti, mikä auttaa sinua ymmärtämään, miten voit toteuttaa dynaamisen rivitason suojauksen Analysis Services -taulukkomallissa:

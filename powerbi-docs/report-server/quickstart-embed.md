@@ -1,109 +1,107 @@
 ---
 title: Raportin upottaminen iFramea käyttäen
-description: Power BI -raporttipalvelimen asentaminen käy erittäin nopeasti. Palvelimen pitäisi toimia muutamassa minuutissa, kun tarvittavat tiedot on ladattu, asennettu ja määritetty.
-services: powerbi
-documentationcenter: ''
+description: Power BI -raporttipalvelimen raportin upottaminen iFrameen SharePoint-palvelimessa
 author: markingmyname
-manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
-ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 11/09/2017
 ms.author: maghan
-ms.openlocfilehash: 56835bfb25c8c930099fadf710137f69fa89fc2e
-ms.sourcegitcommit: 6e693f9caf98385a2c45890cd0fbf2403f0dbb8a
+ms.date: 05/04/2018
+ms.topic: quickstart
+ms.service: powerbi
+ms.component: powerbi-report-server
+ms.custom: mvc
+manager: kfile
+ms.openlocfilehash: 8d7653e6f390959df745fa2b19076ee89b26b1bc
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/30/2018
-ms.locfileid: "30973107"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34293693"
 ---
-# <a name="quickstart-embed-a-power-bi-report-using-an-iframe-and-url-parameters"></a>Pikaopas: Power BI -raportin upottaminen iFrame- ja URL-parametreja käyttäen
+# <a name="quickstart-embed-a-power-bi-report-server-report-using-an-iframe-in-sharepoint-server"></a>Pikaopas: Power BI -raporttipalvelimen raportin upottaminen iFramella SharePoint-palvelimessa
 
-Voit upottaa minkä tahansa raportin käyttämällä iFramea sovelluksessasi. 
+Tässä pikaoppaassa opit upottamaan Power BI -raporttipalvelimen raportin iFramella SharePoint-sivuun. Jos käytät SharePoint Onlinea, Power BI -raporttipalvelimen on oltava julkisesti käytettävissä. SharePoint Onlinessa Power BI:n verkko-osa, joka toimii Power BI -palvelun kanssa, ei toimi Power BI -raporttipalvelimen kanssa. 
 
-## <a name="url-parameter"></a>URL-parametri
+![iFrame-malli](media/quickstart-embed/quickstart_embed_01.png)
+## <a name="prerequisites"></a>Edellytykset
+* Sinulla on oltava [Power BI -raporttipalvelin](https://powerbi.microsoft.com/en-us/report-server/) asennettuna ja määritettynä.
+* Sinulla on oltava asennettuna [Power BI -raporttipalvelimelle optimoitu Power BI Desktop](install-powerbi-desktop.md).
+* Sinulla on oltava [SharePoint](https://docs.microsoft.com/en-us/sharepoint/install/install)-ympäristö asennettuna ja määritettynä.
 
-Voit lisätä minkä tahansa URL-osoite raporttiin kyselymerkkijonoparametrin `?rs:Embed=true`.
+## <a name="creating-the-power-bi-report-server-report-url"></a>Power BI -raporttipalvelimen raportin URL-osoitteen luominen
 
-Esimerkki:
+1. Lataa malli GitHubista – [blogiesittely](https://github.com/Microsoft/powerbi-desktop-samples).
 
-```
-http://myserver/reports/powerbi/Sales?rs:embed=true
-```
+    ![Lataa PBIX-mallitiedosto](media/quickstart-embed/quickstart_embed_14.png)
 
-Tämä toimii kaikilla Power BI -raporttipalvelimen raporttityypeillä.
+2. Avaa PBIX-mallitiedosto GitHubista **Power BI -raporttipalvelimelle optimoidussa Power BI Desktopissa**.
 
-## <a name="iframe"></a>iFrame
+    ![PBI RS Desktop -työkalu](media/quickstart-embed/quickstart_embed_02.png)
 
-Kun sinulla on URL-osoite, voit luoda verkkosivustolla iFramen, jonka sisällä raportti isännöidään.
+3. Tallenna raportti **Power BI -raporttipalvelimeen**. 
 
-Esimerkki:
+    ![PBI RS Save](media/quickstart-embed/quickstart_embed_03.png)
 
-```
-<iframe width="800" height="600" src="http://myserver/reports/powerbi/Sales?rs:embed=true" frameborder="0" allowFullScreen="true"></iframe>
-```
+4. Tarkastele raporttia **verkkoportaalissa**.
 
-## <a name="url-filter"></a>URL-suodatin
+    ![Verkkoportaali](media/quickstart-embed/quickstart_embed_04.png)
 
-Voit lisätä merkkijonon kyselyparametrin URL-osoitteeseen suodattamaan Power BI -raportilta palautetut tiedot.
+### <a name="capturing-the-url-parameter"></a>URL-parametrin sieppaaminen
 
-Syntaksi on yksinkertainen: aloita raportin URL-osoitteella, lisää kysymysmerkki ja lisää sitten suodattimen syntaksi.
+Kun sinulla on URL-osoite, voit luoda SharePoint-sivulla iFramen, jonka sisällä raportti isännöidään. Voit lisätä mitä tahansa Power BI -raporttipalvelimen raportin URL-osoitetta varten querystring-parametrin `?rs:embed=true` upottaaksesi raportin iFrameen. 
 
-URL?filter=***Table***/***Field*** eq '***value***'
+   Esimerkki:
+    ``` 
+    http://myserver/reports/powerbi/Sales?rs:embed=true
+    ```
+## <a name="embedding-a-power-bi-report-server-report-in-a-sharepoint-iframe"></a>Power BI -raporttipalvelimen raportin upottaminen iFrameen SharePointissa
 
-Pidä seuraavat asiat mielessä:
+1. Siirry SharePointin **Sivuston sisältö** -sivulle.
 
-- **Taulukko-** ja **Kenttä**-nimissä merkkikoko on merkitsevä, **arvo** ei ole.
-- Voit suodattaa raportilla kenttiä, jotka on piilotettu raporttinäkymässä.
-- **Arvo** on sijoitettava puolilainausmerkkeihin.
-- Kenttätyypin on oltava merkkijono.
-- Taulukoiden ja kenttien nimissä ei voi olla välilyöntejä.
+    ![Sivuston sisältö -sivu](media/quickstart-embed/quickstart_embed_05.png)
 
-###  <a name="example-filter-on-a-field"></a>Esimerkki: Kentän suodattaminen
+2. Valitse sivu, johon haluat lisätä raporttiin.
 
-Otetaan esimerkiksi [Jälleenmyyntianalyysimalli](../sample-datasets.md). Jos tämä olisi raportin URL-osoite raporttipalvelimella kansiossa, jonka nimi on ”power-bi”:
+    ![Sivuston sisältö -sivun sovellus](media/quickstart-embed/quickstart_embed_06.png)
 
-```
-https://report-server/reports/power-bi/Retail-Analysis-Sample
-```
+3. Valitse hammasrataskuvake ylimpänä oikealla ja valitse **Muokkaa sivua**.
 
-Näet, että jälleenmyyntianalyysimallin karttavisualisoinnissa näkyvät Pohjois-Carolinan ja muiden Yhdysvaltojen osavaltioiden myymälät.
+    ![Muokkaa sivua -vaihtoehto](media/quickstart-embed/quickstart_embed_07.png)
 
-![Jälleenmyyntianalyysimallin karttavisualisointi](media/quickstart-embed/report-server-retail-analysis-sample-map.png)
+4. Valitse **Lisää verkko-osa**.
 
-*NC* on Pohjois-Carolinan myymälöille tallennettu arvo **Store**-taulukon **Alue**-kentässä. Jos haluat suodattaa raportin näyttämään tiedot vain Pohjois-Carolinan myymälöille, lisää URL-osoitteeseen seuraava:
+    ![Lisää verkko-osa](media/quickstart-embed/quickstart_embed_08.png)
 
-?filter=Store/Territory eq 'NC'
+5. Valitse **Luokat**-kohdasta **Media ja sisältö**, valitse **Osat**-kohdasta **Sisällön muokkaus**, ja valitse sitten **Lisää** .
 
-Nyt raportti on suodatettu Pohjois-Carolinassa. Kaikki raporttisivun visualisoinnit näkyvät vain Pohjois-Carolinassa.
+    ![Valitse Verkko-osan sisällön muokkaus](media/quickstart-embed/quickstart_embed_09.png) ![Valitse Lisää](media/quickstart-embed/quickstart_embed_091.png)
 
-![Jälleenmyyntianalyysimallin suodatetut visualisoinnit](media/quickstart-embed/report-server-retail-analysis-sample-filtered-map.png)
+6. Valitse **Lisää uutta sisältöä napsauttamalla tästä**.
 
-### <a name="create-a-dax-formula-to-filter-on-multiple-values"></a>DAX-kaavan luominen useiden arvojen suodattamiseksi
+    ![Lisää uutta sisältöä](media/quickstart-embed/quickstart_embed_10.png)
 
-Toinen tapa suodattaa useita kenttiä on luoda Power BI Desktopissa laskettu sarake, joka yhdistää kaksi kenttää yhdeksi arvoksi. Sitten voit suodattaa tuon arvon.
+7. Valitse valintanauhasta **Muotoile tekstiä** -välilehti ja valitse sitten **Muokkaa lähdettä**.
 
-Meillä on esimerkiksi Jälleenmyyntianalyysimallissa kaksi kenttää: Alue ja Ketju. Voit luoda Power BI Desktopissa [lasketun sarakkeen](../desktop-tutorial-create-calculated-columns.md) (kenttä), jota kutsutaan nimellä TerritoryChain (alueketju). Muista, että **kentän** nimessä ei voi olla välilyöntejä. Tässä on kyseisen sarakkeen DAX-kaava.
+     ![Muokkaa lähdettä](media/quickstart-embed/quickstart_embed_11.png)
 
-TerritoryChain = [Territory] & "-" & [Chain]
+8. Liitä iFrame-koodi Muokkaa lähdettä -ikkunaan ja valitse OK.
 
-Julkaise raportti Power BI -raporttipalvelimella ja suodata URL-kyselymerkkijonon avulla näyttämään vain Lindseys- myymälät, NC.
+    ![iFrame-koodi](media/quickstart-embed/quickstart_embed_12.png)
 
-```
-https://report-server/reports/power-bi/Retail-Analysis-Sample?filter=Store/TerritoryChain eq 'NC-Lindseys'
+     Esimerkki:
+     ```
+     <iframe width="800" height="600" src="http://myserver/reports/powerbi/Sales?rs:embed=true" frameborder="0" allowFullScreen="true"></iframe>
+     ```
 
-```
+9. Valitse valintanauhasta **Sivu**-välilehti ja valitse **Lopeta muokkaaminen**.
+
+    ![Lopeta muokkaaminen](media/quickstart-embed/quickstart_embed_13.png)
+
+10. Raportin pitäisi nyt näkyä sivulla.
+
+    ![iFrame-malli](media/quickstart-embed/quickstart_embed_01.png)
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
 [Pikaopas: Power BI -raportin luominen Power BI -raporttipalvelimeen](quickstart-create-powerbi-report.md)  
 [Pikaopas: Sivutetun raportin luominen Power BI -raporttipalvelimeen](quickstart-create-paginated-report.md)  
 
-Onko sinulla muuta kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
+Onko sinulla muuta kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/) 

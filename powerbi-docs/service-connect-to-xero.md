@@ -1,29 +1,21 @@
 ---
 title: Yhteyden muodostaminen Xeroon Power BI:n avulla
 description: Xero for Power BI
-services: powerbi
-documentationcenter: ''
 author: SarinaJoan
 manager: kfile
-backup: maggiesMSFT
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: maggiesMSFT
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: d9f61067f89fb031926428109ef5dac5bcfd6392
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: d3074602af73d937e64a9155d3d197b91b1b1ae8
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/24/2018
-ms.locfileid: "30815859"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34246905"
 ---
 # <a name="connect-to-xero-with-power-bi"></a>Yhteyden muodostaminen Xeroon Power BI:n avulla
 Xero on helppokäyttöinen verkkokirjanpito-ohjelmisto, joka on suunniteltu erityisesti pienille yrityksille. Tämän Power BI -sisältöpaketin avulla voit luoda vaikuttavia visualisointeja Xeron taloustietojen pohjalta. Oletuskoontinäyttö sisältää useita pienyritysten mittareita, kuten käteistilanteen, tuoton vs kulut, voiton ja tappion trendin, velallisen maksupäivät ja sijoitetun pääoman tuoton.
@@ -48,16 +40,16 @@ Muodosta yhteys Power BI:n [Xero-sisältöpakettiin](https://app.powerbi.com/get
     ![](media/service-connect-to-xero/creds.png)
    
     ![](media/service-connect-to-xero/creds2.png)
-6. Tuontiprosessi alkaa automaattisesti hyväksymisen jälkeen. Kun kaikki on valmista, uusi koontinäyttö, raportti ja malli näkyvät siirtymisruudussa. Voit tarkastella tuotuja tietoja valitsemalla koontinäytön.
+6. Tuontiprosessi alkaa automaattisesti hyväksymisen jälkeen. Kun kaikki on valmista, uusi raporttinäkymä, raportti ja malli näkyvät siirtymisruudussa. Voit tarkastella tuotuja tietoja valitsemalla raporttinäkymän.
    
      ![](media/service-connect-to-xero/dashboard.png)
 
 **Mitä seuraavaksi?**
 
-* Kokeile [kysymyksen esittämistä koontinäytön yläreunassa olevassa Q&A-ruudussa](power-bi-q-and-a.md).
+* Kokeile [kysymyksen esittämistä raporttinäkymän yläreunassa olevassa Q&A-ruudussa](power-bi-q-and-a.md).
 * [Muuta koontinäytön ruutuja](service-dashboard-edit-tile.md).
 * [Valitse jokin ruutu](service-dashboard-tiles.md), jolloin siihen liittyvä raportti avautuu.
-* Tietojoukko ajastetaan päivittymään päivittäin, mutta voit muuttaa päivitysaikataulua tai kokeilla tietojoukon päivittämistä **Päivitä nyt** -toiminnolla haluamanasi ajankohtana.
+* Tietojoukko on ajastettu päivittymään päivittäin, mutta voit muuttaa päivitysaikataulua tai kokeilla tietojoukon päivittämistä **Päivitä nyt** -toiminnolla haluamanasi ajankohtana
 
 ## <a name="whats-included"></a>Paketin sisältö
 Sisältöpaketin koontinäyttö sisältää ruutuja ja mittareita eri alueilta sekä vastaavat, lisätietoja sisältävät raportit:  
@@ -106,7 +98,7 @@ Anna organisaatiollesi nimi, jolla sitä voi seurata Power BI:ssä. Näin voit m
 Muissa ongelmatilanteissa tee palvelupyyntö osoitteessa http://support.powerbi.com, jos ongelma jatkuu.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
-[Aloita Power BI:n käyttö](service-get-started.md)
+[Power BI:n käytön aloittaminen](service-get-started.md)
 
-[Nouda tietoja Power BI:ssä](service-get-data.md)
+[Tietojen noutaminen Power BI:ssä](service-get-data.md)
 

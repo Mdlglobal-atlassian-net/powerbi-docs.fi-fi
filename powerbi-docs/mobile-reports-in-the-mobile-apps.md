@@ -1,28 +1,20 @@
 ---
 title: Raporttien tutkiminen Power BI -mobiilisovelluksissa
-description: 'Lue lisätietoja raporttien tarkastelemisesta ja käsittelemisestä Power BI -mobiilisovelluksissa puhelimella tai tabletilla. Voit luoda raportteja Power BI -palvelussa tai Power BI Desktopissa ja käsitellä niitä sitten mobiilisovelluksissa. '
-services: powerbi
-documentationcenter: ''
+description: Lue lisätietoja raporttien tarkastelemisesta ja käsittelemisestä Power BI -mobiilisovelluksissa puhelimella tai tabletilla. Voit luoda raportteja Power BI -palvelussa tai Power BI Desktopissa ja käsitellä niitä sitten mobiilisovelluksissa.
 author: maggiesMSFT
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 03/22/2018
+ms.component: powerbi-mobile
+ms.topic: conceptual
+ms.date: 06/05/2018
 ms.author: maggies
-ms.openlocfilehash: 6edd5a6e9606150d4b489a79cdb5ca57ac2f8cce
-ms.sourcegitcommit: fe859130099d923ee30da6091efcc70a264dcba6
+ms.openlocfilehash: 5b4d5ea7970dd44cfebadca6935452688515aef5
+ms.sourcegitcommit: b25ae650643b0a62f33d7c1741307137b9cec316
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/28/2018
-ms.locfileid: "30975982"
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34799414"
 ---
 # <a name="explore-reports-in-the-power-bi-mobile-apps"></a>Raporttien tutkiminen Power BI -mobiilisovelluksissa
 Koskee seuraavia:
@@ -51,7 +43,7 @@ Power BI -raportit tallennetaan eri paikkoihin mobiilisovelluksessa sen mukaan, 
   ![Puhelinraportti vaakatilassa](media/mobile-reports-in-the-mobile-apps/power-bi-iphone-report-landscape.png)
 
 ## <a name="view-reports-optimized-for-phones"></a>Puhelimille optimoitujen raporttien tarkasteleminen
-Power BI -raportin tekijät voivat luoda erityisesti puhelimille optimoidun raportin asettelun. Puhelimille optimoiduilla raportin sivuilla on lisätoiminto: voit esimerkiksi porautua visualisointeihin ja lajitella niitä kohdistustilassa ja voit käyttää [suodattimia, jotka raportin tekijä on lisännyt raporttisivulle](mobile-apps-view-phone-report.md#filter-the-report-page-on-a-phone). Raportti avautuu puhelimessa suodatettuna verkossa olevassa raportissa suodatettuihin arvoihin ja saat ilmoituksen, että sivulla on aktiivisia suodattimia. Voit muuttaa suodattimia puhelimessasi.
+Power BI -raportin tekijät voivat luoda erityisesti puhelimille optimoidun raportin asettelun. Puhelimille optimoiduille raporttisivuille on lisätty toimintoja: voit esimerkiksi porautua visualisointeihin ja lajitella niitä, voit käyttää [suodattimia, jotka raportin tekijä on lisännyt raporttisivulle](mobile-apps-view-phone-report.md#filter-the-report-page-on-a-phone). Raportti avautuu puhelimessa suodatettuna verkossa olevassa raportissa suodatettuihin arvoihin ja saat ilmoituksen, että sivulla on aktiivisia suodattimia. Voit muuttaa suodattimia puhelimessasi.
 
 Optimoidulla raportilla on erityinen kuvake raporttiluettelossa ![Puhelinraportin kuvake](media/mobile-reports-in-the-mobile-apps/power-bi-phone-report-icon.png):
 
@@ -65,7 +57,7 @@ Kun tarkastelet raporttia puhelimessa, se avautuu pystynäkymässä.
 
 Lue lisätietoja [puhelinnäkymään optimoiduista raporteista](mobile-apps-view-phone-report.md).
 
-## <a name="use-slicers-to-filter-a-report-page"></a>Raporttisivun suodattaminen osittajien avulla
+## <a name="use-slicers-to-filter-a-report"></a>Raportin suodattaminen osittajien avulla
 Kun suunnittelet raporttia Power BI Desktopissa tai Power BI -palvelussa, harkitse [osittajien lisäämistä raporttisivulle](power-bi-visualization-slicers.md). Sinä ja työtoverisi voitte käyttää osittajia sivun suodattamiseen selaimessa ja mobiilisovelluksissa. Kun tarkastelet raporttia puhelimessa, näet osittajat ja voit käyttää niitä vaakatilassa ja puhelimen pystytilaan optimoidulla sivulla. Jos valitset osittajan tai suodattimen arvon selaimessa, arvo valitaan myös, kun tarkastelet sivua mobiilisovelluksessa. Saat ilmoituksen siitä, että sivulla on aktiivisia suodattimia.  
 
 * Kun valitset osittajan arvon raporttisivulla, se suodattaa sivun muut visualisoinnit.
@@ -74,7 +66,7 @@ Kun suunnittelet raporttia Power BI Desktopissa tai Power BI -palvelussa, harkit
   
   Tässä kuvassa osittaja suodattaa pylväskaavion näyttämään vain heinäkuun arvot.
 
-## <a name="cross-filter-and-highlight-a-power-bi-report-page"></a>Power BI -raporttisivun ristisuodatus ja korostaminen
+## <a name="cross-filter-and-highlight-a-report"></a>Raportin ristisuodatus ja korostaminen
 Kun valitset arvon visualisoinnissa, se ei suodata muita visualisointeja. Se korostaa liittyvät arvot muissa visualisoinneissa.
 
 * Napauta arvoa visualisoinnissa.
@@ -89,25 +81,30 @@ Kun valitset arvon visualisoinnissa, se ei suodata muita visualisointeja. Se kor
    ![Visualisoinnin lajitteleminen](media/mobile-reports-in-the-mobile-apps/power-bi-android-tablet-report-sort.png)
 * Voit muuttaa lajittelujärjestyksen käänteiseksi napauttamalla kolmea pistettä (**...**) uudelleen ja valitsemalla saman kentän nimen.
 
-## <a name="drill-down-and-up-in-a-visual-on-an-ipad-or-a-tablet"></a>Alas- ja ylöspäin porautuminen visualisoinnissa iPadilla tai tabletilla
-Jos raportin tekijä on lisännyt tämän ominaisuuden visualisointiin, voit porautua iPadilla tai tabletilla alaspäin, jotta näet arvot, jotka muodostavat osan visualisoinnista. Voit [lisätä alaspäin porautumisen visualisointiin](power-bi-visualization-drill-down.md) Power BI Desktopissa tai Power BI -palvelussa. 
+## <a name="drill-down-and-up-in-a-visual"></a>Porautuminen alas- ja ylöspäin visualisoinnissa
+Jos raportin tekijä on lisännyt porautumisominaisuuden visualisointiin, voit porautua visualisointiin nähdäksesi arvot, jotka muodostavat osan siitä. Voit [lisätä alaspäin porautumisen visualisointiin](power-bi-visualization-drill-down.md) Power BI Desktopissa tai Power BI -palvelussa. 
 
-> [!NOTE]
-> Tällä hetkellä alaspäin porautuminen ei toimi kartoissa iPadissa tai tabletissa.
-> 
-> 
+* Napauta arvopistettä visualisoinnissa nähdäksesi sen työkaluvihjeen. Jos siihen voi porautua, alemmassa työkaluvihjeessä on napautettavissa olevia nuolia. 
+  
+  ![Porautuminen alaspäin visualisoinnissa](media/mobile-reports-in-the-mobile-apps/power-bi-mobile-drill-down-tooltip.png)
 
-* Napauta visualisointia. Jos sen yläkulmissa on ylä- ja alanuolet ![Ylös- ja alaspäin porautumisen kuvakkeet](media/mobile-reports-in-the-mobile-apps/power-bi-mobile-drill-up-down.png), voit porautua alaspäin. Jos haluat porautua alaspäin yhden arvon, napauta oikeassa yläkulmassa olevaa nuolta ja sitten arvoa visualisoinnissa – tässä tapauksessa tummansinistä FD-04-kuplaa.
+* Porautuaksesi takaisin ylös, napauta ylöspäin osoittavaa nuolta työkaluvihjeessä.
   
-  ![Porautuminen alaspäin visualisoinnissa](media/mobile-reports-in-the-mobile-apps/power-bi-mobile-drill-down-one.png)
-* Jos haluat porautua takaisin ylöspäin, napauta ylänuolta vasemmassa yläkulmassa.
-  
-  ![Porautuminen ylöspäin](media/mobile-reports-in-the-mobile-apps/power-bi-mobile-drill-up.png)
+  ![Porautuminen ylöspäin](media/mobile-reports-in-the-mobile-apps/power-bi-mobile-drill-up-tooltip.png)
 
-## <a name="go-back-to-my-workspace"></a>Siirtyminen takaisin Omaan työtilaan
-* Napauta raportin nimen vieressä olevaa nuolta > valitse **Oma työtila**.
-  
-  ![Palaa takaisin ylös](media/mobile-reports-in-the-mobile-apps/power-bi-iphone-report-back.png)
+* Voit porautua alaspäin kaikissa visualisoinnin arvopisteissä. Avaa kohdistustila, napauta tutkimiskuvaketta ja valitse sitten näytä kaikki seuraavalla tasolla, tai laajenna nähdäksesi nykyisen ja seuraavan tason.
+
+   ![Power BI poraudu alaspäin kaikissa](media/mobile-reports-in-the-mobile-apps/power-bi-drill-down-all.png)
+
+## <a name="drill-through-from-one-page-to-another"></a>Poraudu yhden sivun läpi seuraavaan
+
+Kun napautat tiettyä kohtaa visualisoinnissa, voit *porautumalla* siirtyä Power BI:ssä raportin eri sivulle, joka suodatetaan napauttamasi arvon mukaisesti. Raportin tekijä voi määrittää yhden tai useampia porautumisvaihtoehtoja, joista jokainen siirtää sinut eri sivulle. Voit siinä tapauksessa valita mihin sivuun haluat porautua. Seuraavassa esimerkissä, napauttaessasi mittarin arvoa, voit valita poraudutko joko **käyttö liiketoiminta-alueen mukaan**-sivulle vai **suunnittelu liiketoiminta-alueen mukaan**-sivulle.
+
+![Porautuminen raportissa Power BI -mobiilisovelluksessa](media/mobile-reports-in-the-mobile-apps/power-bi-mobile-drill-through-it-spent-report.png)
+
+Takaisin-painike vie sinut takaisin raportin edelliselle sivulle.
+
+Lue lisää [porautumisen lisäämisestä Power BI Desktopiin](desktop-drillthrough.md).
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 * [Puhelimelle optimoitujen Power BI -raporttien tarkasteleminen ja käyttäminen](mobile-apps-view-phone-report.md)

@@ -1,36 +1,28 @@
 ---
 title: Muuttujien visualisointi Entä jos -parametrien avulla Power BI Desktopissa
 description: Luo oma Entä jos -muuttujasi, jolla voit kuvitella ja visualisoida muuttujia Power BI -raporteissa
-services: powerbi
-documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 01/24/2018
+ms.component: powerbi-desktop
+ms.topic: conceptual
+ms.date: 05/02/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 5222b6ba99c9e61d1070f66115b90aa29099fd8d
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: daedbb480f09dbd8fc71044d78a532a1ea96b1ac
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/24/2018
-ms.locfileid: "30974337"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34286746"
 ---
 # <a name="create-and-use-a-what-if-parameter-to-visualize-variables-in-power-bi-desktop"></a>Entä jos -parametrin luominen ja käyttäminen muuttujien visualisointiin Power BI Desktopissa
 Elokuussa 2017 julkaistusta **Power BI Desktop** -versiosta lähtien voit luoda raportteihin **Entä jos** -muuttujia, käsitellä muuttujaa osittajana ja näin visualisoida ja kvantifioida eri avainarvoja raporteissasi.
 
 ![](media/desktop-what-if/what-if_01.png)
 
-**Entä jos** -parametrin voi valita **Power BI Desktopin** **Mallinnus**-välilehdessä. Tällöin näyttöön tulee valintaikkuna, jossa voit määrittää parametrin.
+**Entä jos** -parametri on **Power BI Desktopin** **Mallinnus**-välilehdessä. Sen valitsemisen myötä näyttöön tulee valintaikkuna, jossa voit määrittää parametrin.
 
 ## <a name="creating-a-what-if-parameter"></a>Entä jos -parametrin luominen
 Voit luoda **Entä jos** -parametrin **Power BI Desktopin** **Mallinnus**-välilehdessä sijaitsevalla **Entä jos** -painikkeella. Seuraavassa kuvassa on luotu *Alennusprosentti*-parametri, jonka tietotyypiksi on määritetty *Desimaaliluku.* *Pienin* arvo on nolla, *suurin* taas 0,50 (viisikymmentä prosenttia). *Lisäykseksi* on määritetty 0,05 eli viisi prosenttia. Tämän arvon verran parametria säädetään, kun sitä käsitellään raportissa.
@@ -38,7 +30,7 @@ Voit luoda **Entä jos** -parametrin **Power BI Desktopin** **Mallinnus**-välil
 ![](media/desktop-what-if/what-if_02.png)
 
 > [!NOTE]
-> Kun käytät desimaalilukuja, varmista, että ne alkavat nollalla. Kirjoita siis ruutuun 0,50 äläkä vain .50. Muussa tapauksessa lukua ei voida vahvistaa eikä **OK**-painike ole valittavissa.
+> Kun käytät desimaalilukuja, varmista, että ne alkavat nollalla. Kirjoita siis 0,50 äläkä vain .50. Muussa tapauksessa lukua ei voida vahvistaa eikä **OK**-painike ole valittavissa.
 > 
 > 
 
@@ -50,7 +42,7 @@ Kun **Entä jos** -parametri luodaan, luodaan itse parametrin lisäksi myös mit
 
 ![](media/desktop-what-if/what-if_04.png)
 
-On tärkeää ja hyödyllistä tietää, että **Entä jos** -parametrin luomisen jälkeen sekä parametrista että mittarista tulee osa malliasi. Ne ovat siis käytettävissä koko raportissa, ja niitä voi käyttää raportin muilla sivuilla. Koska ne ovat osa mallia, voit poistaa osittajan raporttisivulta ja saat sen helposti takaisin halutessasi. Voit palauttaa **Entä jos** -parametrin raporttiin tarttumalla **Entä jos** -parametriin **Kentät**-luettelossa ja vetämällä sen pohjaan (muuta visualisointi tämän jälkeen osittajaksi).
+On tärkeää ja hyödyllistä tietää, että **Entä jos** -parametrin luomisen jälkeen sekä parametrista että mittarista tulee osa malliasi. Ne ovat siis käytettävissä koko raportissa, ja niitä voi käyttää raportin muilla sivuilla. Koska ne ovat osa mallia, voit poistaa osittajan raporttisivulta ja saat sen helposti takaisin halutessasi. Voit palauttaa parametrin raporttiin tarttumalla **Entä jos** -parametriin **Kentät**-luettelossa ja vetämällä sen pohjaan (muuta visualisointi tämän jälkeen osittajaksi).
 
 ## <a name="using-a-what-if-parameter"></a>Entä jos -parametrin käyttäminen
 Luodaan seuraavaksi yksinkertainen esimerkki **Entä jos** -parametrin käyttämisestä. Edellisessä osiossa loimme **Entä jos** -parametrin, ja nyt otamme sen käyttöön luomalla uuden mittarin, jonka arvoa säädetään liukusäätimellä. Teemme tämän luomalla uuden mittarin.
@@ -63,7 +55,7 @@ Kun mittarin kaava on kirjoitettu kaavariville ja sille on annettu nimeksi **Myy
 
 ![](media/desktop-what-if/what-if_06.png)
 
-Seuraavaksi luomme pylväskaavion, jonka akseliksi valitaan *OrderDate* ja arvoiksi sekä *SalesAmount* että juuri luomamme mittari *Myynti alennuksen jälkeen*.
+Seuraavaksi luomme pylväskaavion, jonka akseliksi valitaan *Tilauspäivä* ja arvoiksi sekä *Myynnin määrä* että juuri luomamme mittari *Myynti alennuksen jälkeen*.
 
 ![](media/desktop-what-if/what-if_07.png)
 

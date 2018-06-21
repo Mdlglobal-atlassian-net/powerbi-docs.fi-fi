@@ -1,29 +1,21 @@
 ---
 title: Visualisointi-, sivu-, porautumis- tai raporttisuodattimen lisääminen raporttiin
 description: Sivu-, visualisointi- tai raporttisuodattimen lisääminen raporttiin Power BI:ssä
-services: powerbi
-documentationcenter: ''
 author: mihart
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: monitoring
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 03/13/2018
+ms.component: powerbi-service
+ms.topic: conceptual
+ms.date: 05/26/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: e222b9bddc3e7c204a728e207b8969cdf13d605f
-ms.sourcegitcommit: 00b4911ab5fbf4c2d5ffc000a3d95b3149909c28
+ms.openlocfilehash: e5e257fd245687f2aeb83a9ee45c0342cf16392d
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/15/2018
-ms.locfileid: "30975367"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34561697"
 ---
 # <a name="add-a-filter-to-a-power-bi-service-report-in-editing-view"></a>Suodattimen lisääminen Power BI -palvelun raporttiin (muokkausnäkymässä)
 > [!TIP]
@@ -37,7 +29,7 @@ Tämän artikkelin esimerkeissä on käytetty Power BI-palvelua. Vaiheet ovat ku
 Raportteja voidaan käsitellä kahdessa eri näkymässä: [lukunäkymässä](service-reading-view-and-editing-view.md) ja [muokkausnäkymässä](service-interact-with-a-report-in-editing-view.md).  Käytettävissä olevat suodatusominaisuudet vaihtelevat näkymän mukaan.
 
 * Muokkausnäkymässä voit lisätä raportti- ja sivusuodattimia sekä visuaalisia suodattimia. Suodattimet tallennetaan raporttiin. Lukunäkymässä raporttia katsovat käyttäjät voivat käsitellä lisäämiäsi suodattimia.
-* Lukunäkymässä voit käsitellä raportissa olevia raportti-, porautumis- ja sivusuodattimia sekä visuaalisia suodattimia, mutta et voi lisätä uusia suodattimia. Suodattimet-ruudussa tekemäsi muutokset tallennetaan raporttiin myös silloin, kun tarkastelet raporttia mobiilisovelluksessa.  
+* Lukunäkymässä voit käsitellä raportissa olevia raportti-, porautumis- ja sivusuodattimia sekä visuaalisia suodattimia, mutta et voi lisätä uusia suodattimia. Suodattimet-ruudussa tekemäsi muutokset tallennetaan raporttiin myös silloin, kun tarkastelet raporttia mobiilisovelluksessa tai poistut raportista ja palaat siihen myöhemmin.  
 
 > [!NOTE]
 > Tässä artikkelissa kerrotaan, miten voit luoda suodattimia raporttiin **muokkausnäkymässä**.  Lisätietoja lukunäkymän suodattimista on artikkelissa [Suodattimien käsitteleminen raportissa lukunäkymässä](service-reading-view-and-editing-view.md).
@@ -53,7 +45,11 @@ Käytössä on neljä erilaista suodatinta:
 - **porautumissuodatin** koskee mitä tahansa raportin entiteettiä    
 - **raporttisuodatin** koskee kaikkia raportin sivuja.    
 
-    ![](media/power-bi-report-add-filter/power-bi-add-filter-reading-view.png)
+    ![Suodattimet-ruutu Lukunäkymässä](media/power-bi-report-add-filter/power-bi-add-filter-reading-view.png)
+
+Koska suodattimet *pysyvät*, kun siirryt pois raportista, Power BI säilyttää suodattimet, osittajan ja muut tietojen näkymän muutokset, jotka olet tehnyt. Näin voit jatkaa siitä, mihin jäit, kun palaat raporttiin. Jos et halua suodattimen muutosten säilyvän, valitse **Palauta oletukset** ylävalikosta.
+
+![Pysyvät suodattimet -painike](media/power-bi-report-add-filter/power-bi-reset-to-default.png)
 
 ## <a name="add-a-filter-to-a-specific-visualization-aka-visual-filter"></a>Suodattimen lisääminen tiettyyn visualisointiin (visuaalinen suodatin)
 Voit tehdä tämän seuraavilla tavoilla: 
@@ -144,12 +140,13 @@ Katsotaan, miten porautumissuodatin toimii.
 1. Palaa edelliselle raporttisivulle valitsemalla taaksepäin osoittava nuoli.
 
 ## <a name="considerations-and-troubleshooting"></a>Huomioon otettavat seikat ja vianmääritys
-### <a name="why-your-visual-level-filter-and-page-level-filter-may-return-different-results"></a>Miksi visuaalisen tason suodatin ja sivutason suodatin palauttavat eri arvot?
-Kun lisäät visuaalisen tason suodattimen, Power BI suodattaa kootut tulokset.  Oletuskooste on Summa, mutta voit [muuttaa koostetyyppiä](service-aggregates.md).  
 
-Kun lisäät sivutason suodattimen, Power BI suodattaa ilman tietojen koostamista.  Tämä johtuu siitä, että sivulla voi olla useita visualisointeja, joista jokainen voi hyödyntää eri koostetyyppiä.  Suodatinta käytetään siis jokaisella tietorivillä.
+- Joissakin tilanteissa visuaalisen tason suodatin ja sivutason suodatin voivat palauttaa eri tuloksia.  Esimerkiksi, kun lisäät visuaalisen tason suodattimen, Power BI suodattaa kootut tulokset.  Oletuskooste on Summa, mutta voit [muuttaa koostetyyppiä](service-aggregates.md).  
 
-Jos Kentät-ruutu ei ole näkyvissä, varmista, että valittuna on raportin [muokkausnäkymä](service-interact-with-a-report-in-editing-view.md).
+    Kun lisäät sivutason suodattimen, Power BI suodattaa ilman koostamista.  Tämä johtuu siitä, että sivulla voi olla useita visualisointeja, joista jokainen voi hyödyntää eri koostetyyppiä.  Suodatinta käytetään siis jokaisella tietorivillä.
+
+- Jos Kentät-ruutu ei ole näkyvissä, varmista, että valittuna on raportin [muokkausnäkymä](service-interact-with-a-report-in-editing-view.md).    
+- Jos olet tehnyt paljon muutoksia suodattimiin ja haluat palata raportin tekijän oletusasetuksiin, valitse **Palauta oletukset** ylävalikosta.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
  [Raporttisuodattimien käyttäminen](power-bi-how-to-report-filter.md)

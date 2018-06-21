@@ -1,28 +1,21 @@
 ---
 title: Paikallinen tietoyhdyskäytävä tarkemmin
 description: Tässä artikkelissa tarkastellaan paikallista yhdyskäytävää tarkemmin. Artikkelissa kerrotaan, miten palvelu toimii Azure Active Directoryn ja paikallisen Active Directoryn kanssa Analysis Servicesiä käytettäessä.
-services: powerbi
-documentationcenter: ''
 author: mgblythe
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: powerbi
+ms.component: powerbi-gateways
+ms.topic: conceptual
 ms.date: 12/06/2017
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 5f081dff246c478f1b9ee3c918de2099b8382100
-ms.sourcegitcommit: 8552a34df8e6141eb704314c1a019992901d6e78
+ms.openlocfilehash: 8b0121dbfe633eca9c438dfd272d3aeb56fd59a4
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/08/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34298569"
 ---
 # <a name="on-premises-data-gateway-in-depth"></a>Paikallinen tietoyhdyskäytävä tarkemmin
 Organisaatiosi käyttäjät voivat käyttää paikallisia tietoja (joihin heillä on jo käyttöoikeus), mutta ennen kuin kyseiset käyttäjät voivat muodostaa yhteyden paikalliseen tietolähteeseen, paikallinen tietoyhdyskäytävä on asennettava ja määritettävä. Yhdyskäytävä helpottaa nopeaa ja turvallista taustaviestintää pilvipalvelussa olevalta käyttäjältä paikalliselle tietolähteelle ja takaisin pilvipalveluun.
@@ -87,10 +80,7 @@ Pilvipalvelut tuntevat vain Azure Active Directoryn tilit. Vaikka olisit lisänn
    Voit luoda tilin Azure-portaalissa tai Office 365 -hallintaportaalissa, ja tilin nimi vastaa paikallisen Active Directoryn tilin täydellistä käyttäjätunnusta.
 2. Voit synkronoida paikalliset tilit Azure Active Directory -vuokraajan kanssa [Azure AD Connect](https://azure.microsoft.com/documentation/articles/active-directory-aadconnect/) -työkalun avulla.
    
-   Azure AD Connect -työkalun asetusten avulla hakemistot ja salasanat voidaan synkronoida. Jos et ole vuokraajan järjestelmänvalvoja tai paikallisen toimialueen järjestelmänvalvoja, sinun on pyydettävä IT-järjestelmänvalvojaasi tekemään määritykset.
-3. Voit määrittää Active Directory -liittoutumispalvelut (ADFS).
-   
-   Voit liittää ADFS-palvelimen AAD-vuokraajaan [Azure AD Connect](https://azure.microsoft.com/documentation/articles/active-directory-aadconnect/) -työkalun avulla. ADFS käyttää edellä käsiteltyä hakemistosynkronointia mutta sallii kertakirjautumisen (SSO). Jos esimerkiksi käytät työpaikan verkkoa siirtyessäsi pilvipalveluun, sinulta ei ehkä kirjautumisvaiheessa pyydetä käyttäjänimeä tai salasanaa. Ota yhteyttä IT-järjestelmänvalvojaasi saadaksesi tietää, onko tämä ominaisuus käytettävissä organisaatiossasi.
+   Azure AD Connect -työkalulla voidaan synkronoida hakemistot ja määrittää todentaminen, mukaan lukien salasanan hajautuksen synkronointi, läpivientitodentaminen ja liittoutuminen. Jos et ole vuokraajan järjestelmänvalvoja tai paikallisen toimialueen järjestelmänvalvoja, sinun on pyydettävä IT-järjestelmänvalvojaasi tekemään määritykset.
 
 Azure AD Connectin käyttäminen varmistaa, että AAD:n ja paikallisen Active Directoryn täydelliset käyttäjätunnukset vastaavat toisiaan.
 

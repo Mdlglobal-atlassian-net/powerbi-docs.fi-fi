@@ -1,29 +1,21 @@
 ---
 title: Yhteyden muodostaminen QuickBooks Onlineen Power BI:llä
 description: Power BI:n QuickBooks Online
-services: powerbi
-documentationcenter: ''
 author: SarinaJoan
 manager: kfile
-backup: maggiesMSFT
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: maggiesMSFT
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 770daa9965f44d655fb60b8b723f83e260daccb6
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 7caf471674c20607826550fc14f8ebc8e772b61a
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/24/2018
-ms.locfileid: "30815639"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34584250"
 ---
 # <a name="connect-to-quickbooks-online-with-power-bi"></a>Yhteyden muodostaminen QuickBooks Onlineen Power BI:llä
 Kun muodostat yhteyden QuickBooks Onlinen tietoihin Power BI:stä, saat heti Power BI:n koontinäytön ja Power BI:n raportit, jotka antavat merkityksellisiä tietoja muun muassa yrityksesi kassavirrasta, kannattavuudesta ja asiakkaista. Voit käyttää koontinäyttöä ja raportteja sellaisinaan tai mukauttaa niitä, jotta niissä korostuvat itseäsi eniten kiinnostavat tiedot. Tiedot päivitetään automaattisesti kerran päivässä.
@@ -31,10 +23,10 @@ Kun muodostat yhteyden QuickBooks Onlinen tietoihin Power BI:stä, saat heti Pow
 Muodosta yhteys [QuickBooks Online -sisältöpakettiin](https://dxt.powerbi.com/getdata/services/quickbooks-online) Power BI:tä varten.
 
 >[!NOTE]
->Jos haluat tuoda QuickBooks Online -tietosi Power BI:hin, sinun on oltava järjestelmänvalvoja QuickBooks Online -tilissäsi ja kirjauduttava sisään järjestelmänvalvojan tilin tunnistetiedoilla.
+>Jos haluat tuoda QuickBooks Online -tietosi Power BI:hin, sinun on oltava järjestelmänvalvoja QuickBooks Online -tilissäsi ja kirjauduttava sisään järjestelmänvalvojan tilin tunnistetiedoilla. Et voi käyttää tätä liitintä QuickBooks Desktop -ohjelmalla. 
 
 ## <a name="how-to-connect"></a>Yhteyden muodostaminen
-1. Valitse vasemman siirtymisruudun alareunasta **Nouda tiedot**.
+1. Valitse vasemman siirtymisruudun alareunassa **Nouda tiedot**.
    
    ![](media/service-connect-to-quickbooks-online/pbi_getdata.png) 
 2. Valitse **Palvelut**-ruudussa **Nouda**.
@@ -63,10 +55,10 @@ Muodosta yhteys [QuickBooks Online -sisältöpakettiin](https://dxt.powerbi.com/
 
 **Mitä seuraavaksi?**
 
-* Kokeile [kysymyksen esittämistä koontinäytön yläreunassa olevassa Q&A-ruudussa](power-bi-q-and-a.md).
+* Kokeile [kysymyksen esittämistä raporttinäkymän yläreunassa olevassa Q&A-ruudussa](power-bi-q-and-a.md).
 * [Muuta koontinäytön ruutuja](service-dashboard-edit-tile.md).
 * [Valitse jokin ruutu](service-dashboard-tiles.md), jolloin siihen liittyvä raportti avautuu.
-* Tietojoukko on ajastettu päivittymään päivittäin, mutta voit muuttaa päivitysaikataulua tai kokeilla tietojoukon päivittämistä **Päivitä nyt** -toiminnolla haluamanasi ajankohtana.
+* Tietojoukko on ajastettu päivittymään päivittäin, mutta voit muuttaa päivitysaikataulua tai kokeilla tietojoukon päivittämistä **Päivitä nyt** -toiminnolla haluamanasi ajankohtana
 
 ## <a name="troubleshooting"></a>Vianmääritys
 **Oho! Havaittiin virhe.**

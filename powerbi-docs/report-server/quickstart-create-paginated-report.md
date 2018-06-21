@@ -1,30 +1,22 @@
 ---
-title: 'Pikaopas: Sivutetun raportin luominen Power BI -raporttipalvelimeen'
+title: Sivutetun raportin luominen Microsoft Power BI -raporttipalvelimeen
 description: Ohjeet sivutetun raportin luomiseen Power BI -raporttipalvelimelle helposti ja nopeasti.
-services: powerbi
-documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 10/12/2017
+ms.component: powerbi-report-server
+ms.topic: conceptual
+ms.date: 05/18/2018
 ms.author: maggies
-ms.openlocfilehash: 1e77a1ef92826010d6bc2fa28749a2ee17bbe723
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: e996b1399ff4dde96d122e747cf1f07db3a44876
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/13/2017
-ms.locfileid: "30972117"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34721819"
 ---
-# <a name="quickstart-create-a-paginated-report-for-power-bi-report-server"></a>Pikaopas: Sivutetun raportin luominen Power BI -raporttipalvelimeen
+# <a name="create-a-paginated-report-for-power-bi-report-server"></a>Sivutetun raportin luominen Microsoft Power BI -raporttipalvelimeen
 Nimensä mukaisesti sivutetuissa raporteissa voi olla useita sivuja. Niiden asettelu on kiinteässä muodossa ja ne tarjoavat tarkan mukautuksen. Sivutetut raportit ovat .rdl-tiedostoja.
 
 Voit tallentaa ja käsitellä sivutettuja raportteja Power BI -raporttipalvelimen verkkoportaalissa, samalla tavalla kuin SQL Server Reporting Services (SSRS) -verkkoportaalissa. Voit luoda ja muokata niitä Raportin muodostimessa tai Raportin suunnitteluohjelmassa SQL Server Data Toolsissa (SSDT). Sen jälkeen voit julkaista ne jommankumman verkkoportaalin kautta. Raportin lukijat organisaatiossasi voivat tarkastella niitä selaimessa tai Power BI -mobiilisovelluksessa mobiililaitteillaan.
@@ -102,7 +94,7 @@ Kun raportti on valmis, tallenna se Power BI -raporttipalvelimelle.
 Käytettävissä on useita hyviä resursseja raporttien suunnitteluun Raportin muodostimessa ja Raporttien suunnitteluohjelmassa SQL Server Data Toolsissa. Raportin muodostimen opetusohjelmat ovat hyvä paikka aloittaa.
 
 * [Raportin muodostimen opetusohjelmat](https://docs.microsoft.com/sql/reporting-services/report-builder-tutorials)
-* [Power BI -raporttipalvelimen käyttöopas](user-handbook-overview.md)  
+* [Mikä on Power BI -raporttipalvelin?](get-started.md)  
 
-Ilmenikö muuta kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
+Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
 

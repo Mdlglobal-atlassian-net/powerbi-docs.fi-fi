@@ -1,28 +1,20 @@
 ---
 title: Asenna Power BI -raporttipalvelimelle optimoitu Power BI Desktop
 description: Opi asentamaan Power BI -raporttipalvelimelle optimoitu Power BI Desktop
-services: powerbi
-documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 03/22/2018
+ms.component: powerbi-report-server
+ms.topic: conceptual
+ms.date: 05/24/2018
 ms.author: maggies
-ms.openlocfilehash: c22e909130767abd1dc6f0aa00d76e1fb6b99ee7
-ms.sourcegitcommit: fe859130099d923ee30da6091efcc70a264dcba6
+ms.openlocfilehash: 368f2692933b37d833c864fb9fea6a22423bbb77
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/28/2018
-ms.locfileid: "30975977"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34481827"
 ---
 # <a name="install-power-bi-desktop-optimized-for-power-bi-report-server"></a>Asenna Power BI -raporttipalvelimelle optimoitu Power BI Desktop
 Opi asentamaan Power BI -raporttipalvelimelle optimoitu Power BI Desktop.
@@ -110,10 +102,8 @@ Jos raporttipalvelimesi on aiempi versio, tarvitset vastaavan version Power BI D
 ## <a name="next-steps"></a>Seuraavat vaiheet
 Nyt kun sinulla on Power BI Desktop asennettuna, voit aloittaa Power BI -raporttien luomisen.
 
-[Pikaopas: Power BI -raportin luominen Power BI -raporttipalvelimeen](quickstart-create-powerbi-report.md)  
-[Aloita Power BI Desktopin käyttö](../desktop-getting-started.md)  
-Ohjattu oppiminen: [Power BI Desktopin käytön aloittaminen](../guided-learning/gettingdata.yml#step-2)  
-[Yleiskatsaus käyttöoppaasta, Power BI -raporttipalvelin](user-handbook-overview.md)
+[Power BI -raportin luominen Power BI -raporttipalvelimeen](quickstart-create-powerbi-report.md)  
+[Mikä on Power BI -raporttipalvelin?](get-started.md)
 
-Onko sinulla muuta kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
+Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
 

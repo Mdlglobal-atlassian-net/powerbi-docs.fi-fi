@@ -1,36 +1,28 @@
 ---
-title: 'Opetusohjelma – Asiakkaan tuottavuuden malli Power BI:lle: esittely'
+title: 'Asiakkaan tuottavuuden malli Power BI:lle: esittely'
 description: 'Asiakkaan tuottavuuden malli Power BI:lle: esittely'
-services: powerbi
-documentationcenter: ''
 author: amandacofsky
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 03/13/2018
+ms.component: powerbi-desktop
+ms.topic: conceptual
+ms.date: 05/22/2018
 ms.author: mihart
 LocalizationGroup: Samples
-ms.openlocfilehash: b7931cb97ff1c409cc2524e31d079dd770160ec4
-ms.sourcegitcommit: 00b4911ab5fbf4c2d5ffc000a3d95b3149909c28
+ms.openlocfilehash: f20fe4595236381106b6cb2a676ffd3d3baa3971
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/15/2018
-ms.locfileid: "29898005"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34471774"
 ---
 # <a name="customer-profitability-sample-for-power-bi-take-a-tour"></a>Asiakkaan tuottavuuden malli Power BI:lle: esittely
 
 ## <a name="overview-of-the-customer-profitability-sample"></a>Asiakkaan tuottavuuden mallin yleiskatsaus
 Asiakkaan tuottavuuden malli -sisältöpaketti sisältää koontinäytön, raportin ja tietojoukon yritykselle, joka valmistaa markkinointimateriaalia. Talousjohtaja loi tämän koontinäytön nähdäkseen tärkeitä arvoja viidestä liiketoimintayksikön johtajasta, tuotteista, asiakkaista ja myyntikatteista. Hän näkee yhdellä vilkaisulla, mitkä tekijät vaikuttavat kannattavuuteen.
 
-![](media/sample-customer-profitability/power-bi-dash.png)
+![power bi -koontinäyttö](media/sample-customer-profitability/power-bi-dash.png)
 
 Tämä malli kuuluu sarjaan, jossa esitellään, miten Power BI:tä voidaan käyttää liiketoimintaan suuntautuneiden tietojen, raporttien ja koontinäyttöjen kanssa. Nämä ovat obviEnceltä ([www.obvience.com](http://www.obvience.com/)) saatuja oikeita tietoja, jotka on tehty nimettömiksi. Tiedot ovat käytettävissä useissa muodoissa: sisältöpaketti/sovellus, Excel-työkirja tai Power BI Desktopin .pbix-tiedosto. Katso [Mallitietojoukot](sample-datasets.md).
 
@@ -42,10 +34,10 @@ Haluatko seurata mukana? Tässä opetusohjelmassa käytetään Power BI -palvelu
 1. Avaa Power BI -palvelu (app.powerbi.com) ja kirjaudu sisään.
 2. Valitse vasemmasta alakulmasta **Nouda tiedot**.
 
-    ![](media/sample-datasets/power-bi-get-data.png)
+    ![hae tiedot](media/sample-datasets/power-bi-get-data.png)
 3. Valitse ilmestyvältä Nouda tiedot -sivulta **Mallit**-kuvake.
 
-   ![](media/sample-datasets/power-bi-samples-icon.png)
+   ![mallit-kuvake](media/sample-datasets/power-bi-samples-icon.png)
 4. Valitse **Asiakkaan tuottavuuden malli** ja valitse sitten **Yhdistä**.  
 
    ![Nouda tiedot](media/sample-customer-profitability/get-supplier-sample.png)
@@ -56,7 +48,7 @@ Haluatko seurata mukana? Tässä opetusohjelmassa käytetään Power BI -palvelu
 ### <a name="get-the-pbix-file-for-this-sample"></a>Hae tämän mallin .pbix-tiedosto
 
 Vaihtoehtoisesti voit ladata näytteen .pbix-tiedostona, joka on suunniteltu käytettäväksi Power BI Desktopilla.
-[Asiakkaan tuottavuuden malli](http://download.microsoft.com/download/6/A/9/6A93FD6E-CBA5-40BD-B42E-4DCAE8CDD059/Customer Profitability Sample PBIX.pbix)
+[Asiakkaan tuottavuuden malli](http://download.microsoft.com/download/6/A/9/6A93FD6E-CBA5-40BD-B42E-4DCAE8CDD059/Customer-Profitability-Sample-PBIX.pbix)
 
 ### <a name="get-the-excel-workbook-for-this-sample"></a>Hae tämän näytteen Excel-työkirja
 
@@ -74,7 +66,7 @@ Etsi **Oma työtila** -kohdasta asiakkaan tuottavuuden mallin koontinäyttö:
 
 2. Tarkista koontinäytön vasemmalla puolella olevat ruudut.
 
-    ![](media/sample-customer-profitability/power-bi-manager.png)
+    ![ruudut esimiehille](media/sample-customer-profitability/power-bi-manager.png)
 
 - Yrityksen myyntikate on 42,5.
 - Asiakkaita on 80.
@@ -87,7 +79,7 @@ Etsi **Oma työtila** -kohdasta asiakkaan tuottavuuden mallin koontinäyttö:
 ### <a name="manager-specific-dashboard-tiles"></a>Esimieskohtaiset koontinäytön ruudut
 Koontinäytön oikeassa reunassa olevat ruudut sisältävät tiimin tuloskortin. Talousjohtajan on seurattava esimiehiä ja näiden ruutujen kautta hän näkee tuotosta korkean tason yleiskatsauksen käyttämällä myyntikatetta. Jos myyntikatetrendi on odottamaton kenelle tahansa esimiehelle, hän voi tutkia asiaa tarkemmin.
 
-![](media/sample-customer-profitability/power-bi-manager2.png)
+![myyntikate esimiehille](media/sample-customer-profitability/power-bi-manager2.png)
 
 - Kaikki johtajat Carlosta lukuun ottamatta ovat jo ylittäneet myyntitavoitteensa. Mutta Carloksen toteutunut myynti on suurin.
 - Annelien myyntikate on pienin, mutta kasvu oli tasaista maaliskuun jälkeen.
@@ -100,7 +92,7 @@ Tämä koontinäyttö sisältää ruutuja, jotka on yhdistetty raporttiin ja Exc
 ### <a name="open-the-excel-online-data-source"></a>Excel Online -tietolähteen avaaminen
 Kaksi tämän koontinäytön ruutua, ”Tavoite vs. toteutunut” ja ”Tulojen kasvu vuosittain”, on kiinnitetty Excel-työkirjasta. Kun valitset jommankumman näistä ruuduista, Power BI avaa tietolähteen eli tässä tapauksessa Excel Onlinen.
 
-![](media/sample-customer-profitability/power-bi-excel-online.png)
+![Excel online](media/sample-customer-profitability/power-bi-excel-online.png)
 
 1. Valitse kumpi tahansa Excelistä kiinnitetyistä ruuduista. Excel Online avautuu Power BI -palvelussa.
 2. Huomaa, että työkirjassa on 3 välilehteä täynnä tietoa. Avaa Tuotto.
@@ -108,11 +100,11 @@ Kaksi tämän koontinäytön ruutua, ”Tavoite vs. toteutunut” ja ”Tulojen 
     a. Valitse Johtaja-liukusäätimestä **Carlos Grilo**.   
     b. Ensimmäisen Pivot-taulukon mukaan Carloksen parhaan tuotteen Primuksen tuotto on pudonnut 152 % edellisestä vuodesta. Vuosittaisessa kaaviossa näkyy, että hän jää budjetoidun alle useimpina kuukausina.  
 
-    ![](media/sample-customer-profitability/power-bi-pivotchart.png)
+    ![Pivot-taulukko](media/sample-customer-profitability/power-bi-pivotchart.png)
 
-    ![](media/sample-customer-profitability/power-bi-carlos.png)
+    ![Carlosin tulokset](media/sample-customer-profitability/power-bi-carlos.png)
 
-4. Jatka tutkiminen. Jos löydät jotakin mielenkiintoisia, valitse **PIN-koodi** ![](media/sample-customer-profitability/power-bi-excel-pin.png) oikeassa yläkulmassa ja [kiinnitä se koontinäyttöön](service-dashboard-pin-tile-from-excel.md).
+4. Jatka tutkimista. Jos löydät jotakin mielenkiintoista, valitse **Kiinnitä** ![kiinnitä-kuvake](media/sample-customer-profitability/power-bi-excel-pin.png) oikeassa yläkulmassa ja [kiinnitä se koontinäyttöön](service-dashboard-pin-tile-from-excel.md).
 
 5. Palaa koontinäyttöön selaimen taaksepäin osoittavalla nuolella.
 
@@ -123,14 +115,14 @@ Valtaosa Asiakkaan tuottavuuden mallin koontinäytön ruuduista on kiinnitetty p
 
 2. Raportissa on 3 sivua. Raportin alareunan jokainen välilehti edustaa yhtä sivua.
 
-    ![](media/sample-customer-profitability/power-bi-report-tabs.png)
+    ![3 välilehteä alareunassa](media/sample-customer-profitability/power-bi-report-tabs.png)
 
     * Tiimin tuloskortissa keskitytään 5 johtajan suoritukseen ja asiakaskokoonpanoon.
     * Alakateanalyysin avulla on helppo analysoida kannattavuutta verrattuna koko alan kannattavuuteen.
     * Johtajan tuloskortti tarjoaa näkymän kustakin johtajasta muotoiltuna tarkastelua varten Cortanassa.
 
 ### <a name="team-scorecard-page"></a>Tiimin tuloskortti -sivu
-![](media/sample-customer-profitability/customer2.png)
+![Tiimin tuloskortti -raporttisivu](media/sample-customer-profitability/customer2.png)
 
 Seuraavaksi tarkastellaan kahta tiimin jäsentä yksityiskohtaisesti, jotta näemme, mitä merkityksellistä tietoa voidaan saada. Valitse vasemmalla olevasta osittajasta Andrew’n nimi, jotta raporttisivu suodatetaan näyttämään vain Andrew'n tiedot.
 
@@ -139,7 +131,7 @@ Seuraavaksi tarkastellaan kahta tiimin jäsentä yksityiskohtaisesti, jotta näe
 * Koko vuoden tulot ja tulovarianssiprosentti budjettiin kuukausittain -raportti näyttää tasaisen tulokehityksen. Kun suodatat tiedot **Keski**-alueen mukaan alueen puukartassa, huomaat, että Andrew’lla on tuloa vain maaliskuussa ja vain Indianasta. Onko tämä tarkoituksellista vai pitääkö tähän perehtyä tarkemmin?
 
 Siirrytään Valeryyn. Valitse osittajasta Valeryn nimi, jotta raporttisivu suodatetaan näyttämään vain Valeryn tiedot.  
-![](media/sample-customer-profitability/customer3.png)
+![sektori johtajalle Valery Ushalov](media/sample-customer-profitability/customer3.png)
 
 * Huomaa punainen suorituskykyilmaisin **Koko vuoden tulojen tilassa**. Tätä on ehdottomasti tutkittava tarkemmin.
 * Hänen tulovarianssinsa muodostaa myös huolestuttavan kuvan – hän ei saavuta myyntikatettaan.
@@ -151,7 +143,7 @@ Jatketaan tietojen tutkimista, jotta saamme selville, miksi Valeryn alue ei toim
 
 ### <a name="industry-margin-analysis"></a>Alakateanalyysi
 Tällä raporttisivulla tiedot ovat eri sektorista. Sivulla tarkastellaan koko alan myyntikatetta eriteltynä segmenteittäin. Talousjohtaja käyttää tätä sivua yrityksen ja liiketoimintayksikön arvojen vertaamiseen koko alan arvoihin. Tietojen avulla voidaan tutkia trendejä ja kannattavuutta. Saatat ihmetellä, miksi ”Myyntikate kuukauden ja johtajan nimen mukaan” -aluekaavio on tällä sivulla, koska se on tiimikohtainen. Kun se on täällä, voimme suodattaa sivun liiketoimintayksikön johtajan mukaan.  
-![](media/sample-customer-profitability/customer6.png)
+![Alakateanalyysi-raporttisivu](media/sample-customer-profitability/customer6.png)
 
 Miten kannattavuus vaihtelee aloittain? Miten tuotteet ja asiakkaat voidaan eritellä alan mukaan? Valitse vasemmasta yläkulmasta ainakin yksi toimiala. (Aloita kuluttajatuotteista.) Voit tyhjentää suodattimen valitsemalla Pyyhin-kuvakkeen.
 
@@ -173,11 +165,11 @@ Analyysia varten olisi hyödyllistä määrittää, mikä toimiala tuottaa enite
 
 2.  Valitse yläreunan valikkoriviltä **Esitä kysymys**, jotta Q&A-kysymysruutu avautuu.
 
-    ![](media/sample-customer-profitability/power-bi-ask-question.png)
+    ![Esitä tietojasi koskeva kysymys](media/sample-customer-profitability/power-bi-ask-question.png)
 
 3. Kirjoita **kokonaistulot alan mukaan: Valery**. Huomaa, miten visualisointi päivittyy, kun kirjoitat kysymyksen.
 
-    ![](media/sample-customer-profitability/power-bi-qna.png)
+    ![kirjoita kysymys kysymysruutuun](media/sample-customer-profitability/power-bi-qna.png)
 
    Jakelu on Valeryn suurin tuottoalue.
 
@@ -187,15 +179,15 @@ Tutustutaan *Jakelu*-alaan.
 1. Avaa Alakateanalyysi-raporttisivu.
 2. Laajenna oikeassa reunassa oleva suodatinruutu (jos sitä ei ole vielä laajennettu) valitsematta mitään raporttisivun visualisointia. Suodattimet-ruudussa pitäisi näkyä vain sivutason suodattimet.  
 
-   ![](media/sample-customer-profitability/power-bi-filters.png)
+   ![Sivutason suodattimet](media/sample-customer-profitability/power-bi-filters.png)
 3. Etsi **Toimiala**-suodatin ja laajenna luettelo valitsemalla nuoli. Lisätään Jakelu-alaan sivutason suodatin. Poista ensin kaikki valinnat tyhjentämällä **Valitse kaikki** -valintaruutu. Valitse sitten vain **Jakelu.**  
 
-   ![](media/sample-customer-profitability/customer7.png)
+   ![suodatin Jakelulle](media/sample-customer-profitability/customer7.png)
 4. Myyntikate kuukauden ja johtajan nimen mukaan -aluekaavio näyttää, että vain Valerylla ja Tinalla on asiakkaita tällä toimialalla. Vain Valery on työskennellyt tämän toimialan parissa kesäkuusta marraskuuhun.   
 5. Valitse **Tina** ja valitse sitten **Valery** Myyntikate kuukauden ja johtajan nimen mukaan -aluekaavion selitteessä. Huomaa, että Tinan osuus Kokonaistuotto tuotteittain -arvosta on erittäin pieni verrattuna Valeryyn.
 6. Näet todelliset tulot esittämällä Q&A:ssa kysymyksen **kokonaistulot johtajan mukaan: jakauma skenaariokohtaisesti**.  
 
-     ![](media/sample-customer-profitability/power-bi-qna2.png)
+     ![tuo palkkikaavio näkyviin kirjoittamalla kysymys kysymysruutuun](media/sample-customer-profitability/power-bi-qna2.png)
 
     Voimme tutkia vastaavasti muita aloja ja jopa lisätä asiakkaita visualisointeihin, jotta ymmärrämme Valeryn suorituskyvyn syyt.
 

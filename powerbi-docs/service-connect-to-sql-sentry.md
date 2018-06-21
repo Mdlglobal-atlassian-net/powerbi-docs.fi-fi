@@ -1,29 +1,21 @@
 ---
 title: Yhteyden muodostaminen SQL Sentry -palveluun Power BI:llä
 description: SQL Sentry Power BI:lle
-services: powerbi
-documentationcenter: ''
 author: SarinaJoan
 manager: kfile
-backup: maggiesMSFT
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: maggiesMSFT
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: c73502381e99bf64a8e342ca46ee1bb7089b6825
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 8ad41917c887cff7db991051aa35d5dad6b6a8fa
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/24/2018
-ms.locfileid: "30815279"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34242419"
 ---
 # <a name="connect-to-sql-sentry-with-power-bi"></a>Yhteyden muodostaminen SQL Sentry -palveluun Power BI:llä
 SQL Sentryn keräämien suorituskykytietojen analysoiminen on helppoa Power BI:llä. Power BI noutaa tiedot ja laatii sitten oletuskoontinäytön ja siihen liittyvät raportit kyseisten tietojen perusteella.
@@ -31,7 +23,7 @@ SQL Sentryn keräämien suorituskykytietojen analysoiminen on helppoa Power BI:l
 Muodosta yhteys [SQL Sentry -sisältöpakettiin](https://app.powerbi.com/groups/me/getdata/services/sql-sentry) Power BI:tä varten.
 
 >[!NOTE]
->Yhteyden muodostaminen edellyttää SQL Sentry-tilin käyttöä, jota käytät muodostettaessa yhteyttä http://cloud.sqlsentry.com -palveluun sekä tietokantatunnusta, jota itse valvot.  Ohjeet tietokantatunnuksen löytämiseen ovat alla.
+>Yhteyden muodostaminen edellyttää SQL Sentry-tilin käyttöä, jota käytät muodostettaessa yhteyttä kohteeseen http://cloud.sqlsentry.com, sekä tietokantatunnusta, jota itse valvot.  Ohjeet tietokantatunnuksen löytämiseen ovat alla.
 
 ## <a name="how-to-connect"></a>Yhteyden muodostaminen
 1. Valitse vasemman siirtymisruudun alareunassa **Nouda tiedot**.
@@ -66,10 +58,10 @@ Muodosta yhteys [SQL Sentry -sisältöpakettiin](https://app.powerbi.com/groups/
 
 **Mitä seuraavaksi?**
 
-* Kokeile [kysymyksen esittämistä koontinäytön yläreunassa olevassa Q&A-ruudussa](power-bi-q-and-a.md)
+* Kokeile [kysymyksen esittämistä raporttinäkymän yläreunassa olevassa Q&A-ruudussa](power-bi-q-and-a.md).
 * [Muuta koontinäytön ruutuja](service-dashboard-edit-tile.md).
 * [Valitse jokin ruutu](service-dashboard-tiles.md), jolloin siihen liittyvä raportti avautuu.
-* Tietojoukko on ajoitettu päivittymään päivittäin, mutta voit muuttaa päivitysaikataulua tai kokeilla tietojoukon päivittämistä **Päivitä nyt** -toiminnolla haluamanasi ajankohtana
+* Tietojoukko on ajastettu päivittymään päivittäin, mutta voit muuttaa päivitysaikataulua tai kokeilla tietojoukon päivittämistä **Päivitä nyt** -toiminnolla haluamanasi ajankohtana
 
 ## <a name="whats-included"></a>Paketin sisältö
 Seuraavat tiedot ovat käytettävissä SQL Sentrystä Power BI:ssä:
@@ -77,7 +69,7 @@ Seuraavat tiedot ovat käytettävissä SQL Sentrystä Power BI:ssä:
 | Taulukon nimi | Kuvaus |
 | --- | --- |
 | Yhteys |Tämä taulukko sisältää tietoja SQL Sentrylle määritetyistä yhteyksistä. |
-| Päivämäärä<br /> |Tämä taulukko sisältää päivämääriä tästä päivästä taaksepäin aikaisimpaan päivämäärään, josta suorituskykytietoja on kerätty ja säilytetty. |
+| Date<br /> |Tämä taulukko sisältää päivämääriä tästä päivästä taaksepäin aikaisimpaan päivämäärään, josta suorituskykytietoja on kerätty ja säilytetty. |
 | Käyttämättömyysaika<br /> |Tämä taulukko sisältää käyttämättömyysaikaan ja käyttöaikaan liittyviä tietoja jokaisesta palvelimesta, jota ympäristössäsi seurataan. |
 | Muistin käyttö<br /> |Tässä taulukossa on tietoja siitä, paljonko muistia on käytettävissä tai vapaana kullakin palvelimellasi.<br /> |
 | Palvelin<br /> |Tässä taulukossa on tallennetietoja ympäristösi jokaisesta palvelimesta. |

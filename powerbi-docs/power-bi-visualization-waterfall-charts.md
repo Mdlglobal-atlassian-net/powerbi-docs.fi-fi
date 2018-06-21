@@ -1,32 +1,24 @@
 ---
-title: Vesiputouskaaviot Power BI:ssä (opetusohjelma)
-description: 'Opetusohjelma: vesiputouskaaviot BI:ssä'
-services: powerbi
-documentationcenter: ''
+title: Vesiputouskaaviot Power BI:ssä
+description: Vesiputouskaaviot Power BI:ssä
 author: mihart
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
+ms.reviewer: ''
 featuredvideoid: maTzOJSRB3g
-qualityfocus: no
-qualitydate: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-desktop
+ms.topic: conceptual
 ms.date: 01/20/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 0755f888e6828aab467f3988ce0052e029bc51e3
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: c35e0f6bc039a1a0e97983349c8c7fc3ad25f273
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/24/2018
-ms.locfileid: "30973757"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34295510"
 ---
-# <a name="waterfall-charts-in-power-bi-tutorial"></a>Vesiputouskaaviot Power BI:ssä (opetusohjelma)
+# <a name="waterfall-charts-in-power-bi"></a>Vesiputouskaaviot Power BI:ssä
 Vesiputouskaavio näyttää juoksevan summan, kun arvoja lisätään tai vähennetään. On hyödyllistä ymmärtää, kuinka positiivisten ja negatiivisten muutosten sarja vaikuttaa alkuarvoon (esimerkiksi nettotuloon).
 
 Sarakkeet ovat värillisiä, jotta näet nopeasti nousut ja laskut. Alkuarvon ja lopullisen arvon sarakkeet usein [alkavat vaaka-akselilla](https://support.office.com/article/Create-a-waterfall-chart-in-Office-2016-for-Windows-8de1ece4-ff21-4d37-acd7-546f5527f185#BKMK_Float "alkavat vaaka-akselilla"), kun taas keskitason arvot ovat irrallisia sarakkeita. Tämän ulkoasun vuoksi vesiputouskaavioita kutsutaan myös siltakaavioiksi.

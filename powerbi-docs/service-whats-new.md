@@ -1,28 +1,21 @@
 ---
 title: Power BI -palvelun uudet toiminnot ja ominaisuudet
 description: Power BI -palvelun uudet toiminnot ja ominaisuudet
-services: powerbi
-documentationcenter: ''
 author: mihart
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: get-started-article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 03/23/2018
+ms.component: powerbi-service
+ms.topic: conceptual
+ms.date: 05/09/2018
 ms.author: nikhilga
 LocalizationGroup: Get started
-ms.openlocfilehash: 7b8d3b4202ff08b5b97765fe20abe37c41518a31
-ms.sourcegitcommit: 65426de556cd7207cbc4f478198664e25c33a769
+ms.openlocfilehash: db32f7d0d3f7ca7b6943ca5347dc349c8c44be85
+ms.sourcegitcommit: 4b61588e3ab3c8bbb17276402dbf7fa00085a266
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/30/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35301845"
 ---
 ---
 # <a name="whats-new-in-the-power-bi-service"></a>Power BI -palvelun uudet toiminnot ja ominaisuudet
@@ -31,18 +24,22 @@ Tarkista tältä sivulta **Power BI -palvelun** tunnetut ongelmat ja hiljattain 
 - [Power BI Desktopin uudet ominaisuudet](desktop-latest-update.md)  
 - [Power BI -mobiilisovellusten uudet ominaisuudet](mobile-whats-new-in-the-mobile-apps.md)  
 - [Power BI -tiimin blogi](https://powerbi.microsoft.com/blog/)
-- [Business Applications -sovellusten kevään 2018 julkaisutiedot](https://aka.ms/bagspring2018releasenotes_internal) Dynamics 365:stä: Yrityssovellusten uusimmat päivitykset ja uudet ominaisuudet sovellusten ja laajennusten kehittämistä varten ympäristössämme. 
+- [Business Applications -sovellusten kevään 2018 julkaisutiedot](http://aka.ms/businessappsreleasenotes) Dynamics 365:stä: Yrityssovellusten uusimmat päivitykset ja uudet ominaisuudet sovellusten ja laajennusten kehittämistä varten ympäristössämme. 
 
 Saat lisätietoja uusista toiminnoista ja ominaisuuksista myös YouTube-kanavista.
 
 * [Microsoft Power BI (YouTube)](https://www.youtube.com/channel/UCy--PYvwBwAeuYaR8JLmrfg)
 * [Kaveri kuutiossa (YouTube)](https://www.youtube.com/channel/UCFp1vaKzpfvoGai0vE5VJ0w)
 
-## <a name="march-2018"></a>Maaliskuu 2018
+## <a name="april-2018"></a>Huhtikuu 2018
+* [Power BI:n GDPR-julkaisu](http://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=5bd4c466-277b-4726-b9e0-f816ac12872d&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers)
+* Power BI -palvelun [valvontalokit](https://docs.microsoft.com/power-bi/service-admin-auditing) ovat oletuksena käytössä Office 365:n vuokraajille.
+
+## <a name="previous-months-2018"></a>Edelliset kuukaudet (2018)
+### <a name="march-2018"></a>Maaliskuu 2018
 * [Pysyvät suodattimet](https://powerbi.microsoft.com/en-us/blog/announcing-persistent-filters-in-the-service/) Power BI-palvelussa.
 * Jaa sisältöä käyttäjien kanssa heidän omien sähköpostitiliensä avulla. [Azure Active Directory B2B:n](https://powerbi.microsoft.com/en-us/blog/power-bi-expands-access-to-intelligence-for-external-guest-users/) laajennus.
 
-## <a name="previous-months-2018"></a>Edelliset kuukaudet (2018)
 ### <a name="february-2018"></a>Helmikuu 2018
 * Asenna [Power BI -sovellukset](https://docs.microsoft.com/en-us/power-bi/service-create-distribute-apps) automaattisesti käyttäjille.
 * P4- ja P5-kapasiteetit Power BI Premiumissa
@@ -666,5 +663,5 @@ Saat lisätietoja [blogista](http://blogs.msdn.com/b/powerbi/archive/2015/10/06/
 ## <a name="next-steps"></a>Seuraavat vaiheet
 [Power BI:n käytön aloittaminen](service-get-started.md)  
 
-Onko sinulla muuta kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)
+Ilmenikö muuta kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)
 

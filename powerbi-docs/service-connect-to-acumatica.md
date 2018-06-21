@@ -1,28 +1,21 @@
 ---
 title: Yhteyden muodostaminen Acumaticaan Power BI:n avulla
 description: Acumatica Power BI:lle
-services: powerbi
-documentationcenter: ''
 author: SarinaJoan
 manager: kfile
-backup: maggiesMSFT
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: maggiesMSFT
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: af1a34d280aaa1a795a7a2490c97874e0c4d1838
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: ea5ce2e1e635149c91fbcf38d84e3093af7915c9
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34243841"
 ---
 # <a name="connect-to-acumatica-with-power-bi"></a>Yhteyden muodostaminen Acumaticaan Power BI:n avulla
 Power BI Acumatica -sisältöpaketin avulla saat nopeasti merkityksellisiä tietoja mahdollisuustiedoistasi. Power BI noutaa tiedot, esimerkiksi mahdollisuudet, tilit ja asiakkaat, ja laatii sitten oletuskoontinäytön ja siihen liittyvät raportit kyseisten tietojen perusteella.
@@ -58,10 +51,10 @@ Muodosta yhteys [Acumatica-sisältöpakettiin](https://app.powerbi.com/getdata/s
 
 **Mitä nyt?**
 
-* Kokeile [kysymyksen esittämistä koontinäytön yläreunassa olevassa Q&A-ruudussa](power-bi-q-and-a.md).
+* Kokeile [kysymyksen esittämistä raporttinäkymän yläreunassa olevassa Q&A-ruudussa](power-bi-q-and-a.md).
 * [Muuta koontinäytön ruutuja](service-dashboard-edit-tile.md).
 * [Valitse jokin ruutu](service-dashboard-tiles.md), jolloin siihen liittyvä raportti avautuu.
-* Tietojoukko on ajastettu päivittymään päivittäin, mutta voit muuttaa päivitysaikataulua tai kokeilla tietojoukon päivittämistä **Päivitä nyt** -toiminnolla haluamanasi ajankohtana.
+* Tietojoukko on ajastettu päivittymään päivittäin, mutta voit muuttaa päivitysaikataulua tai kokeilla tietojoukon päivittämistä **Päivitä nyt** -toiminnolla haluamanasi ajankohtana
 
 ## <a name="system-requirements"></a>Järjestelmävaatimukset
 Tämä sisältöpaketti edellyttää Acumatica v5.2:ta tai uudempaa. Varmista versio Acumatica-järjestelmänvalvojalta.
@@ -73,7 +66,7 @@ Acumatica OData -päätepiste on muodoltaan seuraavanlainen ja sen pitäisi käy
 
     https://[sitedomain]/odata/[companyname]
 
-Kun olet kirjautunut Acumaticaan, sovelluksen sivuston toimialue näkyy selaimen osoiterivillä. Seuraavassa esimerkissä sivuston toimialue on https://pbi.acumatica.com, joten OData-päätepiste on annettava muodossa https://pbi.acumatica.com/odata.
+Kun olet kirjautunut Acumaticaan, sovelluksen sivuston toimialue näkyy selaimen osoiterivillä. Alla olevassa esimerkissä sivuston toimialue on ”https://pbi.acumatica.com”, joten OData-päätepiste olisi ”https://pbi.acumatica.com/odata”.
 
  ![](media/service-connect-to-acumatica/url.png)
 
@@ -89,7 +82,7 @@ Jos kirjautuminen ei onnistu, tarkista, että antamasi Acumatica OData -päätep
 Jos yhteyden muodostamisessa on ongelmia, varmista käyttämäsi Acumatica-versio järjestelmänvalvojalta. Tämä sisältöpaketti edellyttää versiota 5.2 tai sitä uudempaa versiota.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
-[Aloita Power BI:n käyttö](service-get-started.md)
+[Power BI:n käytön aloittaminen](service-get-started.md)
 
-[Nouda tietoja Power BI:ssä](service-get-data.md)
+[Tietojen noutaminen Power BI:ssä](service-get-data.md)
 

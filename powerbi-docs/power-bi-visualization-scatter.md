@@ -1,32 +1,24 @@
 ---
-title: Pistekaaviot Power BI:ssä (opetusohjelma)
-description: 'Opetusohjelma: pistekaaviot Power BI:ssä'
-services: powerbi
-documentationcenter: ''
+title: Pistekaaviot Power BI:ssä
+description: Pistekaaviot Power BI:ssä
 author: mihart
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
+ms.reviewer: ''
 featuredvideoid: PVcfPoVE3Ys
-qualityfocus: identified
-qualitydate: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 02/28/2018
+ms.component: powerbi-desktop
+ms.topic: conceptual
+ms.date: 05/28/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 6b5467456321b171116cf984ec276c3694b4030b
-ms.sourcegitcommit: 0a16dc12bb2d39c19e6b0002b673a8c1d81319c9
+ms.openlocfilehash: 91836970bda7e72c99977f360e2c0531a20bef20
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/02/2018
-ms.locfileid: "30974842"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34584112"
 ---
-# <a name="scatter-charts-and-bubble-charts-in-power-bi-tutorial"></a>Pistekaaviot ja kuplakaaviot Power BI:ssä (opetusohjelma)
+# <a name="scatter-charts-and-bubble-charts-in-power-bi"></a>Pistekaaviot ja kuplakaaviot Power BI:ssä
 Pistekaaviossa on aina kaksi arvoakselia, jotka näyttävät yhden numeerisen tietosarjan vaakasuuntaisella akselilla ja toisen numeerisen arvosarjan pystysuuntaisella akselilla. Kaaviossa näytetään arvopisteet numeerisen arvon X ja Y leikkauskohdassa yhdistämällä nämä kaksi arvoa yhdeksi arvopisteeksi. Nämä arvopisteet voidaan jakaa tasaisesti tai epätasaisesti vaakasuuntaiselle akselille tietojen mukaan.
 
 Kuplakaaviossa arvopisteet korvataan kuplilla ja kuplan *koko* kuvastaa tietojen muuta dimensiota.
@@ -89,7 +81,7 @@ Nyt lisätään kolmas dimensio.
    
     ![](media/power-bi-visualization-scatter/pbi_scatter_chart_hover.png)
 
-3. Voit määrittää kuplakaaviossa näkyvien arvopisteiden määrän laajentamalla **Visualisoinnit**-ruudun **Muoto**-osiossa olevan kortin **Yleistä** ja säätämällä kohtaa **Tietojen määrä**. Voit määrittää tietojen enimmäismääräksi minkä tahansa luvun, joka on enintään 10 000 (oletusarvo on 3 500).
+3. Voit määrittää kuplakaaviossa näkyvien arvopisteiden määrän laajentamalla **Visualisoinnit**-ruudun **Muoto**-osiossa olevan kortin **Yleistä** ja säätämällä kohtaa **Tietojen määrä**. Voit määrittää tietojen enimmäismääräksi minkä tahansa luvun, joka on enintään 10 000. Suurten lukujen yhteydessä on suositeltavaa testata toiminta ensin hyvän suorituskyvyn varmistamiseksi. 
 
     ![Tietojen määrä](media/power-bi-visualization-scatter/pbi_scatter_data_volume.png) 
 

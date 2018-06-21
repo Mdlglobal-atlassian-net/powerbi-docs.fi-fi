@@ -1,28 +1,20 @@
 ---
 title: iPadin Power BI -mobiilisovelluksen käytön aloittaminen
 description: Lue, miten Microsoft Power BI for iOS -sovellus iPadissa tuo Power BI:n taskuusi, jotta pääset työtietoihisi mobiilisti sekä paikallisesti että pilvipalvelussa.
-services: powerbi
-documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: identified
-qualitydate: 08/08/2016
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-mobile
+ms.topic: conceptual
 ms.date: 01/25/2018
 ms.author: maggies
-ms.openlocfilehash: a35197e7775fb1b0dfec5c0905706f44d6f14494
-ms.sourcegitcommit: ee5d044db99e253c27816e0ea6bdeb9e39a2cf41
+ms.openlocfilehash: ded3ad829a0c9a2d4892a5a06250f60a93662c61
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/08/2018
-ms.locfileid: "30974902"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34294774"
 ---
 # <a name="get-started-with-the-power-bi-mobile-app-on-an-ipad"></a>iPadin Power BI -mobiilisovelluksen käytön aloittaminen
 Microsoft Power BI for iOS iPadilla tarjoaa BI-mobiilikäyttökokemuksen Power BI:lle, Power BI-raporttipalvelimelle ja Reporting Services -palveluille. Voit tarkastella ja käsitellä yrityksen koontinäyttöjä paikallisesti ja pilvipalvelussa missä tahansa, live-tilassa kosketusnäytöllisessä mobiilikäytössä. Tarkastele tietoja koontinäytöissä ja jaa sähköpostitse tai tekstiviestillä työtovereiden kanssa. 
@@ -47,7 +39,7 @@ Katso [Power BI -mobiilisovellusten uudet ominaisuudet](mobile-whats-new-in-the-
 > 
 
 ## <a name="sign-up-for-the-power-bi-service"></a>Rekisteröidy Power BI -palveluun
-Siirry Power BI:hin (https://powerbi.com) ja rekisteröidy Power BI -palveluun, jos et vielä sitä ole tehnyt. Ei maksa mitään.
+Siirry Power BI:hin (https://powerbi.com)) ja rekisteröidy palveluun, jos et vielä sitä ole tehnyt. Ei maksa mitään.
 
 ## <a name="get-started-with-the-power-bi-app"></a>Power BI -sovelluksen käytön aloittaminen
 1. Avaa Power BI -sovellus iPadissa.

@@ -1,29 +1,21 @@
 ---
 title: R:ää hyödyntävien mukautettujen visualisointien käyttö Power BI:ssä
 description: R:ää hyödyntävien mukautettujen visualisointien käyttö Power BI:ssä
-services: powerbi
-documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 12/06/2017
+ms.component: powerbi-desktop
+ms.topic: conceptual
+ms.date: 05/02/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: d43b9ec0d471c8a824d3c4d081a38f3bea6ad1e9
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: d7170ce02294c3eadbfa38f0a25a2ab58777720b
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/24/2018
-ms.locfileid: "30974352"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34289322"
 ---
 # <a name="use-r-powered-custom-visuals-in-power-bi"></a>R:ää hyödyntävien mukautettujen visualisointien käyttö Power BI:ssä
 **Power BI Desktopissa** ja **Power BI -palvelussa** voit käyttää R:ää hyödyntäviä mukautettuja visualisointeja ilman etukäteistietoa R:stä ja ilman R-komentosarjoja. Tämä mahdollistaa R-visualisointien ja R-komentosarjojen analyyttisen ja visuaalisen tehon ottamisen käyttöön ilman, että sinun pitää opetella R:n käyttöä tai ohjelmoida itse.
@@ -35,25 +27,24 @@ Jos haluat käyttää R:ää hyödyntäviä mukautettuja visualisointeja, valits
 Seuraavissa osissa kuvataan, miten voit valita, ladata ja käyttää R:ää hyödyntäviä visualisointeja **Power BI Desktopissa**.
 
 ## <a name="use-r-custom-visuals"></a>Mukautettujen R-visualisointien käyttäminen
-Jos haluat käyttää R:ää hyödyntäviä mukautettuja visualisointeja, sinun on ladattava jokainen visualisointi **mukautettujen visualisointien** kirjastosta, minkä jälkeen voit käyttää visualisointia kuten mitä tahansa toista visualisointia **Power BI Desktopissa**. Saat mukautettuja visualisointeja kahdella tavalla: voit ladata ne verkosta **AppSource**-sivustosta tai voit selata ja hankkia ne sisäisesti **Power BI Desktopista**. 
+Jos haluat käyttää R:ää hyödyntäviä mukautettuja visualisointeja, lataa jokainen visualisointi **mukautettujen visualisointien** kirjastosta, minkä jälkeen voit käyttää visualisointia kuten mitä tahansa muuta visualisointityyppiä **Power BI Desktopissa**. Saat mukautettuja visualisointeja kahdella tavalla: voit ladata ne verkosta **AppSource**-sivustosta tai voit selata ja hankkia ne sisäisesti **Power BI Desktopista**. 
 
 ### <a name="get-custom-visuals-from-appsource"></a>Mukautettujen visualisointien hankkiminen AppSourcesta
 
-Seuraavassa on ohjeita visualisointien selaamiseen ja valitsemiseen verkossa **AppSource**-sivustossa:
+Alla on ohjeet visualisointien selaamiseen ja valitsemiseen verkossa **AppSource**-sivustossa:
 
-1. Siirry [Power BI:n visualisoinnit](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals&page=1) -kirjastoon osoitteeseen [https://appsource.microsoft.com](https://appsource.microsoft.com/). Valitse *Power BI -sovellukset* -valintaruutu kohdassa *Tarkenna tuotteen mukaan*, ja valitse sitten **Näytä kaikki** -linkki.
+1. Siirry Power BI:n visualisoinnit -kirjastoon osoitteessa [https://appsource.microsoft.com](https://appsource.microsoft.com/). Valitse *Power BI -sovellukset* -valintaruutu kohdassa *Tarkenna tuotteen mukaan*, ja valitse sitten **Näytä kaikki** -linkki.
    
    ![](media/desktop-r-powered-custom-visuals/powerbi-r-powered-custom-viz_2a.png)
 
-2. Valitse **Power BI:n visualisoinnit** apuohjelmien luettelosta vasemmanpuoleisessa ruudussa. 
-
+2. Valitse **Power BI -visualisoinnit** [Power BI:n visualisoinnit](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals&page=1) -kirjastosivun vasemman ruudun apuohjelmaluettelosta.
 
    ![](media/desktop-r-powered-custom-visuals/powerbi-r-powered-custom-viz_2b.png)
 
 3. Valitse valikoimasta **visualisointi**, josta olet kiinnostunut, jonka jälkeen siirryt sivulle, jossa kuvaillaan visualisointia. Lataa se valitsemalla **Hanki se nyt** -painike.
    
    > [!NOTE]
-> Sisällön tuottamista varten **Power BI Desktopissa** sinulla on oltava R asennettuna paikallisessa tietokoneessa. Mutta kun käyttäjät haluavat tarkastella R:ää hyödyntäviä visualisointia **Power BI -palvelussa**, R:n *ei* tarvitse olla asennettuna paikallisesti.
+    > Sisällön tuottamista varten **Power BI Desktopissa** sinulla on oltava R asennettuna paikallisessa tietokoneessa. Mutta kun käyttäjät haluavat tarkastella R:ää hyödyntäviä visualisointia **Power BI -palvelussa**, R:n ei tarvitse olla asennettuna paikallisesti.
    > 
    > 
    
@@ -64,7 +55,7 @@ Seuraavassa on ohjeita visualisointien selaamiseen ja valitsemiseen verkossa **A
    * [CRAN](https://cran.r-project.org/)
    * [MRO](https://mran.microsoft.com/)
 
-4. Kun visualisointi on ladattu (joka on aivan kuin minkä tahansa tiedoston lataaminen selaimesta), siirry kohtaan **Power BI Desktop** ja napsauta kolmea pistettä (...) **Visualisoinnit**-ruudussa ja valitse **Tuo tiedostosta**.
+4. Kun visualisointi on ladattu (kuin mikä tahansa selaimesta ladattu tiedosto), siirry **Power BI Desktopiin** ja napsauta kolmea pistettä (...) **Visualisoinnit**-ruudussa ja valitse **Tuo tiedostosta**.
    
    ![](media/desktop-r-powered-custom-visuals/powerbi-r-powered-custom-viz_4a.png)
 5. Näytössä näkyy varoitus mukautettujen visualisointien tuomisesta seuraavassa kuvassa esitetyllä tavalla:
@@ -80,23 +71,23 @@ Seuraavassa on ohjeita visualisointien selaamiseen ja valitsemiseen verkossa **A
    
    ![](media/desktop-r-powered-custom-visuals/powerbi-r-powered-custom-viz_8.png)
 
-Sieltä voit lisätä tietoja visualisointiin samalla tavalla kuin muihinkin **Power BI Desktop** -visualisointeihin. Kun olet valmis, näet valmiin visualisoinnin piirtoalustalla. Seuraavassa visualisoinnissa R:ää hyödyntävää **Ennustaminen**-visualisointia käytettiin YK:n syntyvyysennusteissa (vasemmanpuoleinen visualisointi).
+9. Sieltä voit lisätä tietoja visualisointiin samalla tavalla kuin muihinkin **Power BI Desktop** -visualisointeihin. Kun olet valmis, näet valmiin visualisoinnin piirtoalustalla. Seuraavassa visualisoinnissa R:ää hyödyntävää **Ennustaminen**-visualisointia käytettiin YK:n syntyvyysennusteissa (vasemmanpuoleinen visualisointi).
 
-![](media/desktop-r-powered-custom-visuals/powerbi-r-powered-custom-viz_10.png)
+    ![](media/desktop-r-powered-custom-visuals/powerbi-r-powered-custom-viz_10.png)
 
-Muiden **Power BI Desktop** -visualisointien tavoin voit julkaista tämän raportin R:ää hyödyntävillä visualisoinneilla **Power BI -palveluun** ja jakaa sen muiden kanssa.
+    Muiden **Power BI Desktop** -visualisointien tavoin voit julkaista tämän raportin R:ää hyödyntävillä visualisoinneilla **Power BI -palveluun** ja jakaa sen muiden kanssa.
 
-Tarkista kirjasto usein, koska uusia visualisointeja lisätään jatkuvasti.
+    Tarkista kirjasto usein, koska uusia visualisointeja lisätään jatkuvasti.
 
 ### <a name="get-custom-visuals-from-within-power-bi-desktop"></a>Mukautettujen visualisointien hankkiminen **Power BI Desktopista**
 
-Voit myös hankkia mukautettuja visualisointeja **Power BI Desktopista**. Napsauta **Power BI Desktopissa** hiiren kakkospainikkeella kolmea pistettä (...) **Visualisoinnit**-ruudussa ja valitse **Tuo Storesta**.
+1. Voit myös hankkia mukautettuja visualisointeja **Power BI Desktopista**. Napsauta **Power BI Desktopissa** hiiren kakkospainikkeella kolmea pistettä (...) **Visualisoinnit**-ruudussa ja valitse **Tuo marketplacesta**.
    
    ![](media/desktop-r-powered-custom-visuals/powerbi-r-powered-custom-viz_4a.png)
 
-Kun teet niin, näkyviin tulee **Power BI:n mukautetut visualisoinnit** -valintaikkuna, jossa voit selata käytettävissä olevia mukautettuja visualisointeja ja valita haluamasi. Voit etsiä nimen mukaan, valita luokan tai vain selata käytettävissä olevia visualisointeja. Kun olet valmis, valitsemalla **Lisää** voit lisätä mukautetun visualisoinnin **Power BI Desktopiin**.
+2. Kun teet niin, näkyviin tulee **Power BI -visualisoinnit** -valintaikkuna, jossa voit selata käytettävissä olevia mukautettuja visualisointeja ja valita haluamasi. Voit etsiä nimen mukaan, valita luokan tai vain selata käytettävissä olevia visualisointeja. Kun olet valmis, valitsemalla **Lisää** voit lisätä mukautetun visualisoinnin **Power BI Desktopiin**.
 
-![](media/desktop-r-powered-custom-visuals/powerbi-r-powered-custom-viz_12.png)
+   ![](media/desktop-r-powered-custom-visuals/powerbi-r-powered-custom-viz_12.png)
 
 ## <a name="contribute-r-powered-custom-visuals"></a>Osallistuminen R:ää hyödyntäviin mukautettuihin visualisointeihin
 Jos luot omat R-visualisoinnit käytettäväksi raporteissa, voit jakaa kyseiset visualisoinnit koko maailmalle osallistumalla mukautetulla visualisoinnilla **mukautettujen visualisointien valikoimaan**. Voit osallistua GitHubin kautta, ja prosessi on jäsennelty seuraavassa sijainnissa:
@@ -110,24 +101,27 @@ R:ää hyödyntävillä mukautetuilla visualisoinneilla on tiettyjä riippuvuuss
 * Virhe R-komentosarjassa, johon visualisointi perustuu.
 * R-paketit puuttuvat tai ovat vanhentuneet.
 
-Seuraavassa osassa kuvataan vianmääritysohjeita, jotka auttavat ongelman korjaamisessa.
+Seuraavassa osassa kuvataan vianmääritysohjeita, jotka auttavat mahdollisten ongelmien korjaamisessa.
 
 ### <a name="missing-or-outdated-r-packages"></a>Puuttuvat tai vanhentuneet R-paketit
 Kun yrität asentaa R:ää hyödyntävän mukautetun visualisoinnin, voit kohdata virheitä, jos R-paketteja puuttuu tai ne ovat vanhentuneita. Tämä johtuu yleensä jostakin seuraavista syistä:
 
-* R-asennus ei ole yhteensopiva R-paketin kanssa.
-* Palomuuri, virustorjuntaohjelmisto tai välityspalvelimen asetukset estävät R:n Internet-yhteyden muodostamisen.
-* Internet-yhteys on hidas tai Internet-yhteyden kanssa on ongelmia.
+* R-asennus ei ole yhteensopiva R-paketin kanssa
+* Palomuuri, virustorjuntaohjelmisto tai välityspalvelimen asetukset estävät R:n Internet-yhteyden muodostamisen
+* Internet-yhteys on hidas tai Internet-yhteyden kanssa on ongelmia
 
 Power BI -tiimi työskentelee aktiivisesti ratkaistakseen nämä ongelmat ennen niiden vaikuttamista sinuun, ja seuraava Power BI Desktop sisältää päivityksiä näiden ongelmien ratkaisemiseen. Siihen asti voit ehkäistä ongelmia tekemällä seuraavat toimet:
 
 1. Poista mukautettu visualisointi ja asenna se uudelleen. Tämä käynnistää R-pakettien uudelleenasennuksen.
-2. Jos R-asennuksesi ei ole ajan tasalla, päivitä-R-asennus ja sitten poista tai asenna uudelleen mukautettu visualisointi edellisessä vaiheessa kuvatulla tavalla.
+2. Jos R-asennuksesi ei ole ajan tasalla, päivitä R-asennus ja sen jälkeen poista tai asenna uudelleen mukautettu visualisointi edellisessä vaiheessa kuvatulla tavalla.
    
-   * Tuetut R-versiot on lueteltu jokaisen R:ää hyödyntävän mukautetun visualisoinnin kohdalla seuraavassa kuvassa esitetyllä tavalla.
+   Tuetut R-versiot on lueteltu jokaisen R:ää hyödyntävän mukautetun visualisoinnin kohdalla seuraavassa kuvassa esitetyllä tavalla.
+   
      ![](media/desktop-r-powered-custom-visuals/powerbi-r-powered-custom-viz_11.png)
      > [!NOTE]
-> Voit säilyttää alkuperäisen R-asennuksen ja liittää Power BI Desktopin asentamaasi nykyiseen versioon. Valitse **Tiedosto > Asetukset ja vaihtoehdot > Asetukset > R-komentosarja**.
+    > Voit säilyttää alkuperäisen R-asennuksen ja liittää Power BI Desktopin asentamaasi nykyiseen versioon. Valitse **Tiedosto > Asetukset ja vaihtoehdot > Asetukset > R-komentosarja**.
+    >
+    >
 3. Asenna R-paketit manuaalisesti minkä tahansa R-konsolin avulla. Tämän lähestymistavan vaiheet ovat seuraavat:
    
    a.  Lataa R:ää hyödyntävän visualisoinnin asennuksen komentosarja ja tallenna tiedosto paikalliseen asemaan.

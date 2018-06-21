@@ -1,234 +1,260 @@
 ---
-title: 'Opetusohjelma: Excelin ja OData-syötteen myyntitietojen analysointi Power BI Desktopissa'
-description: 'Opetusohjelma: Excelin ja OData-syötteen myyntitietojen analysointi'
-services: powerbi
-documentationcenter: ''
+title: 'Opetusohjelma: Excelin ja OData-syötteen tietojen yhdistäminen Power BI Desktopissa'
+description: 'Opetusohjelma: Excelin ja OData-syötteen tietojen yhdistäminen'
 author: davidiseminger
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 01/24/2018
-ms.author: davidi
+ms.component: powerbi-desktop
+ms.topic: tutorial
+ms.date: 05/21/2018
+ms.author: v-thepet
 LocalizationGroup: Learn more
-ms.openlocfilehash: aad93a6c636fb0d75ad89f9e3d9eb70ec203cc88
-ms.sourcegitcommit: afa10c016433cf72d6d366c024b862187a8692fd
+ms.openlocfilehash: c6cd75efd44259c2812f98a37875cf716d4843ad
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34456199"
 ---
-# <a name="tutorial-analyzing-sales-data-from-excel-and-an-odata-feed"></a>Opetusohjelma: Excelin ja OData-syötteen myyntitietojen analysointi
-**Power BI Desktopilla** voit muodostaa yhteyden kaikenlaisiin tietolähteisiin ja yhdistää sekä muokata sitten tietoja tavoin, joilla voit analysoida ja visualisoida tietoja mielenkiintoisesti sekä tehokkaasti. Tässä opetusohjelmassa opit yhdistämään tietoja kahdesta tietolähteestä. 
+# <a name="tutorial-combine-sales-data-from-excel-and-an-odata-feed"></a>Opetusohjelma: Excelin ja OData-syötteen myyntitietojen yhdistäminen
 
-On yleistä, että tiedot ovat hajallaan useissa tietolähteissä: esimerkiksi tuotetiedot voivat olla yhdessä tietokannassa ja myyntitiedot toisessa. Opit tässä opetusohjelmassa käyttämään tietolähteenä Excel-työkirjaa ja OData-syötettä, mutta voit soveltaa näitä tekniikoita myös muiden tietolähteiden kanssa, esimerkiksi SQL Server -kyselyiden, CSV-tiedostojen ja minkä tahansa muun Power BI Desktopin tietolähteen kanssa.
+On yleistä, että tiedot ovat hajallaan useissa tietolähteissä: esimerkiksi tuotetiedot voivat olla yhdessä tietokannassa ja myyntitiedot toisessa. **Power BI Desktopissa** voit yhdistää tietoja eri lähteistä ja luoda kiinnostavia tietojen analyysejä ja visualisointeja. 
 
-Tässä opetusohjelmassa tuot tietoja Excelistä (tuotetietoja) ja OData-syötteestä (tilaustietoja). Suoritat muuntamis- ja koostamisvaiheet sekä yhdistät molempien lähteiden tiedot ja luot **Total Sales per Product and Year** -raportin, joka sisältää vuorovaikutteisia visualisointeja. 
-
-Lopullinen raportti näyttää tältä:
-
-![](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/18.png)
-
-Tarvitset tämän opetusohjelman seuraamiseen Products-työkirjan, jonka voit ladata: **[lataa Products.xlsx napsauttamalla tätä](http://download.microsoft.com/download/1/4/E/14EDED28-6C58-4055-A65C-23B4DA81C4DE/Products.xlsx)**.
-
-Anna **Tallenna nimellä** -valintaikkunassa tiedoston nimeksi **Products.xlsx**.
-
-## <a name="task-1-get-product-data-from-an-excel-workbook"></a>Tehtävä 1: tuotetietojen hakeminen Excel-työkirjasta
-Tässä tehtävässä tuot tuotteet Products.xlsx-tiedostosta Power BI Desktopiin.
-
-### <a name="step-1-connect-to-an-excel-workbook"></a>Vaihe 1: Excel-työkirjaan yhdistäminen
-1. Käynnistä Power BI Desktop.
-2. Valitse Aloitus-valintanauhasta **Nouda tiedot**. Excel on yksi **Yleisin**-tietolähteistä, joten voit valita sen suoraan **Nouda tiedot** -valikosta.
-   
-   ![](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/t_excelodata_1.png)
-3. Jos napsautat suoraan Nouda tiedot -painiketta, voit myös valita **Tiedosto \> Excel** ja valita sitten **Yhdistä**.
-4. Valitse **Avaa tiedosto** -valintaikkunassa **Products.xlsx**-tiedosto.
-5. Valitse **Siirtymistoiminto**-ruudussa **Products**-taulukko ja valitse sitten **Muokkaa**.
-   
-   ![](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/t_excelodata_2.png)
-
-### <a name="step-2-remove-other-columns-to-only-display-columns-of-interest"></a>Vaihe 2: muiden sarakkeiden poistaminen vain tarvittavien sarakkeiden näyttämiseksi
-Tässä vaiheessa poistat kaikki muut sarakkeet paitsi **ProductID**-, **ProductName**-, **UnitsInStock**- ja **QuantityPerUnit**-sarakkeet. Power BI Desktopissa on usein eri tapoja tehdä sama asia. Voit esimerkiksi tehdä samoja toimintoja kuin monilla valintanauhan painikkeilla napsauttamalla saraketta tai solua hiiren kakkospainikkeella ja valitsemalla sitten toiminnon.
-
-Power BI Desktop sisältää kyselyeditorin, jolla voit muokata ja muuntaa tietoyhteyksiä. Kyselyeditori avautuu automaattisesti, kun valitset **siirtymistoiminnossa** **Muokkaa**. Voit avata kyselyeditorin myös valitsemalla Power BI Desktopin **Aloitus**-valintanauhasta **Muokkaa kyselyitä**. Seuraavat vaiheet suoritetaan kyselyeditorissa.
-
-1. Valitse kyselyeditorissa **ProductID**-, **ProductName**-, **QuantityPerUnit**- ja **UnitsInStock** -sarakkeet (voit valita useita sarakkeita painamalla **Ctrl-näppäintä samalla, kun napsautat** sarakkeita, ja valita useita vierekkäisiä sarakkeita painamalla **Vaihto-näppäintä samalla, kun napsautat** sarakkeita).
-2. Valitse valintanauhasta **Poista sarakkeet** \> **Poista muut sarakkeet** tai napsauta sarakeotsikkoa hiiren kakkospainikkeella ja valitse **Poista muut sarakkeet**.
-
-![](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/anlayzingsalesdata_removeothercolumns.png)
-
-### <a name="step-3-change-the-data-type-of-the-unitsinstock-column"></a>Vaihe 3: UnitsInStock-sarakkeen tietotyypin vaihtaminen
-Kun kyselyeditori muodostaa yhteyden tietoihin, se tarkistaa jokaisen kentän ja määrittää parhaan tietotyypin. Excel-työkirjassa varastossa olevien tuotteiden arvo on kokonaisluku, joten tässä vaiheessa varmistat, että **UnitsInStock**-sarakkeen tietotyyppiasetus on Kokonaisluku.
-
-1. Valitse **UnitsInStock**-sarake.
-2. Valitse **Aloitus**-valintanauhan avattava **Tietotyyppi**-painike.
-3. Jos tietotyyppinä ei ole jo kokonaisluku, valitse avattavasta painikkeesta **Kokonaisluku** (**Tietotyyppi:**-painike näyttää myös nykyisen valinnan tietotyypin).
-   
-   ![](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/anlayzingsalesdata_wholenumber.png)      
-
-### <a name="power-bi-desktop-steps-created"></a>Luodut Power BI Desktopin vaiheet
-Kun suoritat kyselytoimintoja kyselyeditorissa, kyselyn vaiheet luodaan ja luetellaan **Kyselyasetukset**-ruudun **Käytössä olevat vaiheet** -luettelossa. Jokaisella kyselyn vaiheella on sitä vastaava kaava, jota kutsutaan M-kieleksi. Jos haluat lisätietoja M-kaavakielestä, lue ohjeartikkeli [Lisätietoja Power BI -kaavoista](https://support.office.com/Article/Learn-about-Power-Query-formulas-6bc50988-022b-4799-a709-f8aafdee2b2f).
-
-| Tehtävä | Kyselyn vaihe | Kaava |
-| --- | --- | --- |
-| Excel-työkirjaan yhdistäminen |Source |Source{[Name="Products"]}[Data] |
-| Ensimmäisen rivin ylentäminen taulukon sarakeotsikoiksi |FirstRowAsHeader |[Table.PromoteHeaders](https://support.office.com/Article/TablePromoteHeaders-b8eaeb95-042a-42e1-9164-6d3c646acadc "Table.PromoteHeaders") <br /> (Products) |
-| Muiden sarakkeiden poistaminen vain tarvittavien sarakkeiden näyttämiseksi |RemovedOtherColumns |[Table.SelectColumns](https://support.office.com/Article/TableSelectColumns-20bb9e28-9fd3-4cd2-a21b-97972c82ec22 "Table.SelectColumns")  <br />(FirstRowAsHeader,{"ProductID", "ProductName", "QuantityPerUnit", "UnitsInStock"}) |
-| Tietotyypin vaihtaminen |Changed Type |Table.TransformColumnTypes(\#"Removed Other Columns",{{"UnitsInStock", Int64.Type}}) |
-
-## <a name="task-2-import-order-data-from-an-odata-feed"></a>Tehtävä 2: tilaustietojen tuominen OData-syötteestä
-Tässä tehtävässä tuot tilaustiedot. Tässä vaiheessa muodostat yhteyden myyntijärjestelmään. Tuot tiedot Power BI Desktopiin OData-syötteestä (tässä esimerkissä sen nimi on Northwind), joka löytyy seuraavasta URL-osoitteesta ja jonka voit kopioida ja sitten liittää alla olevien vaiheiden avulla: <http://services.odata.org/V3/Northwind/Northwind.svc/> 
-
-### <a name="step-1-connect-to-an-odata-feed"></a>Vaihe 1: OData-syötteeseen yhdistäminen
-1. Valitse kyselyeditorin **Aloitus**-valintanauhavälilehdessä **Nouda tiedot**.
-2. Siirry selaamalla tietolähteeseen **OData-syöte**.
-3. Liitä **OData-syöte**-valintaikkunassa Northwind OData -syötteen **URL**-osoite.
-4. Valitse **OK**.
-5. Valitse **Siirtymistoiminto**-ruudussa **Orders**-taulukko ja valitse sitten **Muokkaa**.
-   
-   ![](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/anlayzingsalesdata_odatafeed.png)
+Tässä opetusohjelmassa opit yhdistämään tietoja kahdesta tietolähteestä: Excel-työkirjasta, joka sisältää tuotetiedot, ja OData-syötteestä, joka sisältää tilausten tiedot. Kun olet tuonut kunkin tietojoukon ja suorittanut muuntamis- ja koostamisvaiheet, voit käyttää kummankin lähteen tietoja luodaksesi myyntianalyysiraportin, jossa on vuorovaikutteisia visualisointeja. Näitä menetelmiä voi käyttää myös SQL Server -kyselyitä, CSV-tiedostoja ja muita tietolähteitä varten Power BI Desktopissa.
 
 >[!NOTE]
->Näet esikatselun napsauttamalla taulukon nimeä valitsematta valintaruutua.
+>Power BI Desktopissa tehtävä voidaan suorittaa usein monilla eri tavoilla. Esimerkiksi monet valintanauhan valinnat ovat käytettävissä myös hiiren kakkospainikkeella tai sarakkeen tai solun **Lisäasetukset**-valikosta. Useita vaihtoehtoisia menetelmiä on kuvattu alla olevissa vaiheissa. 
 
-### <a name="step-2-expand-the-orderdetails-table"></a>Vaihe 2: Order\_Details-taulukon laajentaminen
-**Orders**-taulukko sisältää viittauksen **Details**-taulukkoon, joka sisältää kuhunkin tilaukseen sisältyneet yksittäiset tuotteet. Kun muodostat yhteyksiä tietolähteisiin, joissa on useita taulukoita (esimerkiksi relaatiotietokantaan), voit muodostaa kyselyn tällaisten viittausten avulla. 
+## <a name="import-the-product-data-from-excel"></a>Tuotetietojen tuominen Excelistä
 
-Tässä vaiheessa laajennat **Order\_Details**-taulukon, joka liittyy **Orders**-taulukkoon, yhdistääksesi **ProductID**-, **UnitPrice**- ja **Quantity**-sarakkeet **Order\_Details**-taulukosta **Orders**-taulukkoon. Tässä esitetään näiden taulukoiden tiedot:
+Tuo ensin tuotetiedot Excelin Products.xlsx-työkirjasta Power BI Desktopiin.
 
-![](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/orderdetails.png)
+1. [Lataa Products.xlsx-niminen Excel-työkirja](http://download.microsoft.com/download/1/4/E/14EDED28-6C58-4055-A65C-23B4DA81C4DE/Products.xlsx) ja tallenna se nimellä **Products.xlsx**.
+   
+2. Valitse avattavan valikon nuoli kohdassa **Nouda tiedot** **Aloitus**-välilehdellä Power BI Desktopin nauhassa, ja valitse sitten **Excel**-vaihtoehto avattavasta **Yleisin**-valikosta. 
+   
+   ![Nouda tiedot](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/t_excelodata_1.png)
+   
+   >[!NOTE]
+   >Voit myös valita **Nouda tiedot** -kohteen itse tai valita **Nouda tiedot** Power BI:n **Aloittaminen**-valintaikkunasta. Valitse sitten **Excel** tai **Tiedosto** > **Excel** **Nouda tiedot** -valintaikkunassa, ja valitse sitten **Yhdistä**.
+   
+3. Siirry **Avaa**-valintaikkunassa tiedoston **Products.xlsx** kohdalle, ja valitse sitten **Avaa**.
+   
+4. Valitse **Siirtymistoiminto**-ruudussa **Products**-taulukko ja valitse sitten **Muokkaa**.
+   
+   ![Excelin siirtymisruutu](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/t_excelodata_2.png)
+   
+Taulukon esikatselu avautuu **Power Query -editoriin**, jossa voit ottaa käyttöön muunnoksia tietojen siistimiseksi. 
+   
+![Power Query -editori](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/t_excelodata_3.png)
+   
+>[!NOTE]
+>Voit avata **Power Query -editorin** myös valitsemalla **Muokkaa kyselyitä** > **Muokkaa kyselyitä** Power BI Desktopin **Aloitus**-valintanauhasta tai napsauttamalla sitä hiiren kakkospainikkeella tai valitsemalla **Lisäasetukset** minkä tahansa kyselyn kohdalla **raporttinäkymässä**, ja valitsemalla sitten **Muokkaa kyselyä**.
 
-**Laajenna**-toiminto yhdistää sarakkeet liittyvästä taulukosta aihetaulukkoon. Kun kysely suoritetaan, rivit liittyvästä taulukosta (**Order\_Details**) yhdistetään aihetaulukon (**Orders**) riveihin.
+## <a name="clean-up-the-products-columns"></a>Tuotesarakkeiden siistiminen
 
-Kun laajennat **Order\_Details** -taulukon, kolme uutta saraketta ja lisärivejä lisätään **Orders**-taulukkoon, yksi kullekin riville sisäkkäisessä tai liittyvässä taulukossa.
+Yhdistetty raportti käyttää vain Excel-työkirjan **ProductID**-, **ProductName**-, **QuantityPerUnit**-, ja **UnitsInStock**-sarakkeita , joten voit poistaa muut sarakkeet. 
 
-1. Siirry **kyselynäkymässä** **Order\_Details**-sarakkeeseen.
-2. Valitse **Order\_Details**-sarakkeen laajennuskuvake (![](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/expand.png)).
+1. Valitse **Power Query -editorissa** **ProductID**-, **ProductName**-, **QuantityPerUnit**- ja **UnitsInStock**-sarakkeet (voit valita useita sarakkeita painamalla **Ctrl**+**napsautus** tai useita vierekkäisiä sarakkeita painamalla **Vaihto**+**napsautus**).
+   
+2. Napsauta hiiren kakkospainikkeella jotakin valituista otsikoista ja valitse **Poista muut sarakkeet** avattavasta valikosta poistaaksesi taulukosta kaikki paitsi valitut sarakkeet. 
+   Voit myös valita **Poista sarakkeet** > **Poista muut sarakkeet** **Hallitse sarakkeita** -ryhmässä **Aloitus**-valintanauhassa. 
+   
+   ![Poista muut sarakkeet](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/analyzingsalesdata_removeothercolumns.png)
+
+## <a name="import-the-order-data-from-an-odata-feed"></a>Tilaustietojen tuominen OData-syötteestä
+
+Tuo seuraavaksi tilaustiedot järjestelmästä mallin Northwind-myyntijärjestelmän OData-syötteestä. 
+
+1. Valitse **Power Query -editorissa** **Uusi lähde** ja valitse sitten **OData-syöte avattavasta**  **Yleisin**-luettelosta. 
+   
+   ![Hanki OData](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/get_odata.png)
+   
+2. Liitä **OData-syöte**-valintaikkunaan Northwind OData -syötteen URL-osoite, `http://services.odata.org/V3/Northwind/Northwind.svc/`, ja valitse sitten **OK**.
+   
+   ![OData-syötteen valintaikkuna](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/get_odata2.png)
+   
+3. Valitse **siirtymisruudussa** **Orders**-taulukko, ja valitse sitten **OK** ladataksesi tiedot **Power Query -editoriin**.
+   
+   ![ODatan siirtymisruutu](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/analyzingsalesdata_odatafeed.png)
+   
+   >[!NOTE]
+   >**Siirtymisruudussa** voit nähdä esikatselun valitsemalla minkä tahansa taulukon nimen valintaruutua valitsematta.
+
+## <a name="expand-the-order-data"></a>Laajenna tilaustiedot
+
+Kun yhdistät tietolähteisiin, joissa on useita taulukoita, kuten relaatiotietokantoja tai Northwind OData -syöte, voit käyttää viittauksia taulukoiden välillä kyselyjen laatimiseksi. **Tilaukset**-taulukko sisältää viittauksia useisiin liittyviin taulukoihin. Voit lisätä **ProductID**-, **UnitPrice**- ja **Quantity**-sarakkeet liittyvästä **Order_Details**-taulukosta kohdetaulukkoon ( **Orders**) käyttämällä **Laajenna**-toimintoa. 
+
+1. Vieritä oikealle **Orders**-taulukossa, kunnes näet **Order_Details**-sarakkeen. Huomaa, että tietojen sijaan se sisältää viittauksia toiseen taulukkoon.
+   
+   ![Order_Details-sarake](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/7.png)
+   
+2. Valitse **Laajenna**-kuvake (![Laajenna-kuvake](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/expand.png)) **Order_Details**-sarakkeen otsikossa. 
+   
 3. Toimi avattavassa **Expand**-valikossa seuraavasti:
+   
    1. Jos haluat tyhjentää kaikki sarakkeet, valitse **(Valitse kaikki sarakkeet)**.
-   2. Valitse **ProductID**, **UnitPrice** ja **Quantity**.
-   3. Valitse **OK**.
-      ![](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/7.png)
+      
+   2. Valitse **ProductID**, **UnitPrice** ja **Quantity**, ja valitse sitten **OK**.
+      
+      ![Laajenna-valintaikkuna](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/8.png)
 
-### <a name="step-3-remove-other-columns-to-only-display-columns-of-interest"></a>Vaihe 3: muiden sarakkeiden poistaminen vain tarvittavien sarakkeiden näyttämiseksi
-Tässä vaiheessa poistat kaikki muut sarakkeet paitsi **OrderDate-, ShipCity-**, **ShipCountry**-, **Order\_Details.ProductID**-, **Order\_Details.UnitPrice**- ja **Order\_Details.Quantity**-sarakkeet. Edellisessä vaiheessa käytit **Poista muut sarakkeet** -toimintoa. Tässä tehtävässä poista valitut sarakkeet.
+Kun olet laajentanut **Order_Details**-taulukon, **Order_Details**-sarake korvataan kolmella uudella sarakkeella sisäkkäisestä taulukosta ja taulukossa on uusia rivejä kunkin tilauksen lisättyjä tietoja varten. 
 
-1. Valitse **kyselynäkymässä** kaikki sarakkeet suorittamalla kohdat a. ja b. seuraavasti:
-   1. Napsauta ensimmäistä saraketta (**OrderID**).
-   2. Paina vaihtonäppäintä samalla, kun napsautat viimeistä saraketta (**Shipper**).
-   3. Nyt kun kaikki sarakkeet on valittu, poista seuraavien sarakkeiden valinta painamalla Ctrl-näppäintä samalla, kun napautat sarakkeita **OrderDate**, **ShipCity**, **ShipCountry**, **Order\_Details.ProductID**, **Order\_Details.UnitPrice** ja **Order\_Details.Quantity**.
-2. Nyt kun valittuna ovat vain sarakkeet, jotka haluamme poistaa, napsauta hiiren kakkospainikkeella minkä tahansa valitun sarakkeen otsikkoa ja valitse **Poista sarakkeet**.
+![Laajennetut sarakkeet](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/9.png)
 
-### <a name="step-4-calculate-the-line-total-for-each-orderdetails-row"></a>Vaihe 4: jokaisen Order\_Details-rivin kokonaissumman laskeminen
-Power BI Desktopilla voit luoda laskelmia sarakkeista, joita tuot. Näin voit monipuolistaa tietoja, joihin muodostat yhteyden. Tässä vaiheessa luot **mukautetun sarakkeen**, jolla lasket jokaisen **Order\_Details**-rivin kokonaissumman.
+## <a name="create-a-custom-calculated-column"></a>Mukautetun lasketun sarakkeen luominen
 
-Voit laskea jokaisen **Order\_Details**-rivin kokonaissumman seuraavasti:
+Power Query -editorin avulla voit luoda laskutoimituksia ja täydentää tietoja mukautetuilla kentillä. Luo mukautettu sarake, joka laskee yhteen tilauksen kunkin rivinimikkeen hinnan kertomalla yksikköhinnan nimikemäärällä.
 
-1. Valitse **Lisää sarake** -valintanauhavälilehdestä **Lisää** **mukautettu sarake**.
-   
-   ![](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/t_excelodata_4.png)
-2. Kirjoita **Lisää mukautettu sarake** -valintaikkunan **Mukautettu sarakekaava** -tekstiruutuun **[Order\_Details.UnitPrice]** \* **[Order\_Details.Quantity]**.
-3. Kirjoita **Uuden sarakkeen nimi** -tekstiruutuun **LineTotal**.
-   
-   ![](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/8.png)
-4. Valitse **OK**.
-
-### <a name="step-5-set-the-datatype-of-the-linetotal-field"></a>Vaihe 5: LineTotal-kentän tietotyypin määrittäminen
-1. Napsauta **LineTotal**-saraketta hiiren kakkospainikkeella.
-2. Valitse **Muuta tyyppi** ja sitten **Desimaaliluku**.
-   
-   ![](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/9.png)
-
-### <a name="step-6-rename-and-reorder-columns-in-the-query"></a>Vaihe 6: kyselyn sarakkeiden uudelleennimeäminen ja -järjestäminen
-Tässä vaiheessa viimeistelet mallin ja teet siitä helppokäyttöisemmän raporttien luomisen yhteydessä nimeämällä lopulliset sarakkeet uudelleen ja vaihtamalla niiden järjestystä.
-
-1. Vedä **kyselyeditorissa** **LineTotal**-sarake vasemmalle **ShipCountry**-sarakkeen perään.
+1. Valitse Power Query -editorin **Lisää sarake** -valintanauhavälilehdeltä **Mukautettu sarake**.
    
    ![](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/10.png)
-2. Poista *Order\_Details.*-etuliite **Order\_Details.ProductID**-, **Order\_Details.UnitPrice**- ja **Order\_Details.Quantity**-sarakkeista kaksoisnapsauttamalla kutakin sarakeotsikkoa ja poistamalla sitten teksti sarakkeen nimestä.
-
-### <a name="power-bi-desktop-steps-created"></a>Luodut Power BI Desktopin vaiheet
-Kun suoritat kyselytoimintoja kyselyeditorissa, kyselyn vaiheet luodaan ja luetellaan **Kyselyasetukset**-ruudun **Käytössä olevat vaiheet** -luettelossa. Jokaisella kyselyvaiheella on sitä vastaava Power Query -kaava, jota kutsutaan M-kieleksi. Jos haluat lisätietoja M-kaavakielestä, lue ohjeartikkeli [Lisätietoja Power BI -kaavoista](https://support.office.com/Article/Learn-about-Power-Query-formulas-6bc50988-022b-4799-a709-f8aafdee2b2f "Lisätietoja Power BI -kaavoista").
-
-| Tehtävä | Kyselyn vaihe | Kaava |
-| --- | --- | --- |
-| OData-syötteeseen yhdistäminen |Source |Source{[Name="Orders"]}[Data] |
-| Order\_Details-taulukon laajentaminen |Expand Order\_Details |[Table.ExpandTableColumn](https://support.office.com/Article/TableExpandTableColumn-54903f25-75a2-4a44-a9a3-52a9d895ee98 "Table.ExpandTableColumn") <br /> (Orders, "Order\_Details", {"ProductID", "UnitPrice", "Quantity"}, {"Order\_Details.ProductID", "Order\_Details.UnitPrice", "Order\_Details.Quantity"}) |
-| Muiden sarakkeiden poistaminen vain tarvittavien sarakkeiden näyttämiseksi |RemovedColumns |[Table.RemoveColumns](https://support.office.com/Article/TableRemoveColumns-6265190e-2f58-4300-85b8-df88fc1a67d3 "Table.RemoveColumns") <br />(\#"Expand Order\_Details",{"OrderID", "CustomerID", "EmployeeID", "RequiredDate", "ShippedDate", "ShipVia", "Freight", "ShipName", "ShipAddress", "ShipCity", "ShipRegion", "ShipPostalCode", "ShipCountry", "Customer", "Employee", "Shipper"}) |
-| Jokaisen Order\_Details-rivin kokonaissumman laskeminen |InsertedColumn |[Table.AddColumn](https://support.office.com/Article/TableAddColumn-6c64d0a5-9654-4d15-bfb6-9cc380aaf3c0 "Table.AddColumn") <br /> (RemovedColumns, "Custom", each [Order\_Details.UnitPrice] \* [Order\_Details.Quantity]) |
-
-## <a name="task-3-combine-the-products-and-total-sales-queries"></a>Tehtävä 3: Products- ja Total Sales -kyselyiden yhdistäminen
-Power BI Desktop ei vaadi kyselyiden yhdistämistä, jotta voit raportoida niistä. Voit sen sijaan luoda tietojoukkojen välille **suhteita**. Voit luoda näitä suhteita missä tahansa sarakkeessa, joka on yhteinen tietojoukoillesi. Saat lisätietoja ohjeartikkelista [Suhteiden luominen ja hallinta](desktop-create-and-manage-relationships.md).
-
-Tässä opetusohjelmassa meillä on Orders- ja Products-tietoja, joilla on yhteinen ProductID-kenttä, joten meidän täytyy varmistaa, että niiden välillä on yhteys mallissa, jota käytämme Power BI Desktopissa. Määritä Power BI Desktopissa, että kummankin taulukon sarakkeet liittyvät toisiinsa (eli sarakkeet, joilla on samat arvot). Power BI Desktop määrittää suhteen suunnan ja kardinaliteetin puolestasi. Joissain tapauksissa se jopa tunnistaa suhteita automaattisesti.
-
-Tässä tehtävässä varmistat, että Power BI Desktopissa on luotu suhde **Products**- ja **Total Sales**-kyselyiden välille.
-
-### <a name="step-1-confirm-the-relationship-between-products-and-total-sales"></a>Vaihe 1: Products- ja Total Sales -kyselyiden välisen suhteen vahvistaminen
-1. Ensin meidän täytyy ladata kyselyeditorilla luomamme malli Power BI Desktopiin. Valitse kyselyeditorin **Aloitus**-valintanauhavälilehdessä **Sulje ja lataa**.
    
-   ![](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/t_excelodata_4.png)
-2. Power BI Desktop lataa tiedot kahdesta kyselystä.
+2. Kirjoita **Mukautettu sarake** -valintaikkunassa **LineTotal** **Uuden sarakkeen nimi** -kenttään.
+
+3. **Mukautettu sarakkeen kaava** -kentässä, kohdan **=** jälkeen, syötä **[Order_Details.UnitPrice]** \* **[Order_ Details.Quantity]**. (Voit myös valita kenttien nimet **Käytettävissä olevat sarakkeet** -vieritysruudusta ja valita **<< Lisää** niiden kirjoittamisen sijaan.) 
+3. Valitse **OK**.
    
-   ![](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/11.png)      
-3. Kun tiedot on ladattu, valitse **Aloitus**-valintanauhan **Suhteiden hallinta** -painike.
+   ![Mukautettu sarake -valintaikkuna](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/11.png)
+
+Uusi **LineTotal**-kenttä näkyy viimeisenä sarakkeena **Tilaukset**-taulukossa.
+
+## <a name="set-the-data-type-for-the-new-field"></a>Määritä uuden kentän tietotyyppi
+
+Kun Power Query -editori muodostaa yhteyden tietoihin, se määrittää kullekin kentälle parhaan tietotyypin ja näyttää tiedot sen mukaisesti. Kentille määritetyt tietotyypit näkyvät otsikoiden kuvakkeina tai **Tietotyyppi**-kohdassa **Muunnos**-ryhmässä **Aloitus**-valintanauhassa. 
+
+Uuden **LineTotal**-sarakkeen tietotyyppi on **Mikä tahansa**, mutta sen arvot ovat valuuttana. Voit määrittää tietotyypin napsauttamalla hiiren kakkospainikkeella **LineTotal**-sarakeotsikkoa, valitsemalla **Vaihda tietotyyppiä** -vaihtoehdon avattavasta valikosta ja valitsemalla sitten **Kiinteä desimaaliluku**. 
+
+![Vaihda tietotyyppiä](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/12.png)
+
+>[!NOTE]
+>Voit myös valita **LineTotal**-sarakkeen ja painaa sitten alanuolipainiketta **Tietotyyppi**-kohdassa **Muunnos**-alueella **Aloitus**-valintanauhavälilehdessä, ja valita sitten **Kiinteä desimaaliluku** -vaihtoehdon.
+
+## <a name="clean-up-the-orders-columns"></a>Puhdista tilaussarakkeet
+
+Voit poistaa, nimetä uudelleen ja järjestää uudelleen muutamia sarakkeita, jotta malli toimii paremmin raporttien kanssa.
+
+Raporttisi käyttää vain **OrderDate**-, **ShipCity**-, **ShipCountry**-, **Order_Details.ProductID**-, **Order_Details.UnitPrice**- ja **Order_Details.Quantity**-sarakkeita. Voit valita nämä sarakkeet ja käyttää **Poista muut sarakkeet** -toimintoa, kuten teit Excel-tietojen kanssa, tai voit valita kaikki muut paitsi nämä sarakkeet, napsauttaa niitä hiiren kakkospainikkeella ja poistaa ne kaikki valitsemalla **Poista sarakkeet**. 
+
+Voit tehdä **Order_Details.ProductID**-, **Order_Details.UnitPrice**- ja **Order_Details.Quantity**-sarakkeista helpommin tunnistettavia poistamalla *Order_Details.* -etuliitteet sarakkeiden nimistä. Anna sarakkeille siten nimiksi **ProductID**, **UnitPrice** ja **Quantity**:
+
+1. Kaksoisnapsauta tai napauta ja pidä painettuna kutakin sarakeotsikkoa, tai napauta hiiren kakkospainikkeella sarakeotsikkoa, ja valitse **Nimeä uudelleen** avattavasta valikosta. 
+2. Poista *Order_Details.* -etuliite kunkin sarakkeen nimestä ja paina **Enter**.
+
+Tee vielä lopuksi **LineTotal**-sarakkeesta helpommin käytettävä vetämällä ja pudottamalla se vasemmalle, aivan **ShipCountry**-sarakkeen oikealle puolelle.
+
+![Puhdistettu taulukko](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/14.png)
+
+## <a name="review-the-query-steps"></a>Kyselyn vaiheiden tarkistaminen
+
+Kun muotoilit ja muunsit tietoja Power Query -editorissa, kukin vaihe tallennettiin **Käytössä olevat vaiheet** -alueelle, joka on Power Query -editorin oikealla puolella olevassa **Kyselyasetukset**-ruudussa. Voit palata takaisin käytössä oleviin vaiheisiin, jos haluat nähdä, mitä muutoksia olet tehnyt, ja muokata tai poistaa niitä tai järjestää ne tarvittaessa uudelleen (vaikka tämä voi olla riskialtista, koska edeltävien vaiheiden muuttaminen voi haitata myöhempiä vaiheita). 
+
+Valitse kaikki kyselyt **Kyselyt**-luettelossa Power Query -editorin vasemmalla puolella ja tarkista **Käytössä olevat vaiheet** kohdassa **Kyselyasetukset**. Kun olet ottanut aiemmat tietojen muunnokset käyttöön, kahden kyselyn käytössä olevien vaiheiden pitäisi näyttää seuraavalta:
+
+![Tuotteiden kyselyn käytössä olevat vaiheet](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/15.png) &nbsp;&nbsp; ![Tilausten kyselyn käytössä olevat vaiheet](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/17.png)
+
+>[!TIP]
+>Käytössä olevien vaiheiden pohjana ovat **Power Query -kielellä** eli **M**-kielellä kirjoitetut kaavat. Voit tarkastella ja muokata kaavoja valitsemalla **Laajennettu editori** valintanauhan Aloitus-välilehden **Kysely**-ryhmästä. 
+
+## <a name="import-the-transformed-queries"></a>Muunnettujen kyselyjen tuominen
+
+Kun olet tyytyväinen muunnettuihin tietoihin, valitse **Sulje ja ota käyttöön** > **Sulje ja ota käyttöön** **Sulje**-ryhmässä valintanauhan **Aloitus**-välilehdeltä, jolloin tiedot tuodaan Power BI Desktopin raporttinäkymään. 
+
+![Sulje ja ota käyttöön](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/t_excelodata_4.png)
+
+Kun tiedot on ladattu, kyselyt näkyvät Power BI Desktopin raporttinäkymän **Kentät**-luettelossa.
+
+![Kyselyt Kentät-luettelossa](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/18.png)
+
+## <a name="manage-the-relationship-between-the-datasets"></a>Tietojoukkojen välisen suhteen hallinta
+
+Power BI Desktop ei vaadi kyselyiden yhdistämistä, jotta voit raportoida niistä. Voit kuitenkin käyttää tietojoukkojen välisiä suhteita niiden yhteisten kenttien perusteella raporttiesi laajentamiseksi ja täydentämiseksi. Power BI Desktop voi havaita suhteet automaattisesti tai voit luoda ne Power BI Desktopin **Suhteiden hallinta** -valintaikkunassa. Lisätietoja suhteista Power BI Desktopissa on artikkelissa [Suhteiden luominen ja hallinta](desktop-create-and-manage-relationships.md).
+
+Tässä opetusohjelmassa tilausten ja tuotteiden tietojoukoilla on yhteinen *ProductID*-kenttä, joten niiden välillä on kyseiseen sarakkeeseen perustuva suhde. 
+
+1. Valitse Power BI Desktopin raporttinäkymässä **Suhteiden hallinta** -vaihtoehto **Suhteet**-alueella **Aloitus**-välilehden valintanauhassa.
    
-   ![](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/t_excelodata_5.png)
-4. Valitse **Uusi…**- painike
+   ![Suhteiden hallinta -valintanauha](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/t_excelodata_5.png)
    
-   ![](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/t_excelodata_6.png)
-5. Kun yritämme luoda suhdetta, näemme, että sellainen on jo olemassa! Kuten **Luo suhde** -valintaikkunasta näkyy (himmennetyistä sarakkeista), kummankin kyselyn **ProductID**-kentille on jo luotu suhde.
+2. Huomaa **Suhteiden hallinta** -valintaikkunassa, että Power BI Desktop on jo havainnut ja listannut aktiiviset suhteet tuotteiden ja tilausten taulukoiden välillä. Jos haluat tarkastella suhdetta, valitse **Muokkaa**. 
    
-    ![](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/12.png)
-6. Valitse **Peruuta** ja valitse sitten Power BI Desktopin **suhdenäkymä**.
+   ![Suhteiden hallinta -valintaikkuna](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/t_excelodata_6.png)
    
-   ![](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/t_excelodata_7.png)
-7. Näemme seuraavan tapauksen, joka visualisoi kyselyiden välisen suhteen.
+   **Muokkaa suhdetta** -valintaikkuna avautuu ja näyttää kyseisen suhteen tiedot.  
    
-   ![](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/t_excelodata_8.png)
-8. Kun kaksoisnapsautat kyselyt yhdistävää viivaa, näyttöön avautuu **Muokkaa suhdetta** -valintaikkuna.
+   ![Muokkaa suhdetta -valintaikkuna](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/t_excelodata_7.png)
    
-   ![](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/t_excelodata_9.png)
-9. Meidän ei tarvitse tehdä muutoksia, joten suljen **Muokkaa suhdetta** -valintaikkunan valitsemalla **Peruuta**.
+3. Power BI Desktop on havainnut suhteen oikein, joten voit valita **Peruuta** ja sitten **Sulje** poistuaksesi suhteen valintaikkunoista.
 
-## <a name="task-4-build-visuals-using-your-data"></a>Tehtävä 4: tietoihin perustuvien visualisointien luominen
-Power BI Desktopissa voit luoda useita erilaisia visualisointeja, joiden avulla voit analysoida tietojasi. Voit luoda raportteja, joissa on useita sivuja, joista jokainen voi sisältää useita visualisointeja. Visualisointien toimintojen avulla voit analysoida ja tutkia tietojasi. Saat lisätietoja raporttien muokkaamisesta ohjeartikkelista [Raportin muokkaaminen](service-interact-with-a-report-in-editing-view.md).
+Voit myös tarkastella ja hallita suhteita kyselyiden välillä valitsemalla **Suhde**-näkymän Power BI Desktop -ikkunan vasemmassa reunassa. Kaksoisnapsauta nuolta rivillä, joka yhdistää kaksi kyselyä, niin **Muokkaa suhdetta** -valintaikkuna avautuu suhteen tarkastelua ja muokkausta varten. 
 
-Tässä tehtävässä luot raportin, joka perustuu aiemmin ladattuihin tietoihin. Valitset Kentät-ruudussa sarakkeet, joista luot visualisoinnit.
+![Suhdenäkymä](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/t_excelodata_8.png)
 
-### <a name="step-1-create-charts-showing-units-in-stock-by-product-and-total-sales-by-year"></a>Vaihe 1: Units in Stock by Product- ja Total Sales by Year -tiedot näyttävien kaavioiden luominen
-Vedä **UnitsInStock** kenttäruudusta (se on näytön oikeassa reunassa) tyhjään kohtaan alustalla. Ohjelma luo Taulukko-visualisoinnin. Vedä sitten ProductName Akseli-ruutuun, joka löytyy Visualisoinnit-ruudun alemmasta puoliskosta. Valitse **Lajitteluperuste \> UnitsInStock** visualisoinnin oikeasta yläkulmasta.
+Voit palata raporttinäkymään Suhteet-näkymästä valitsemalla **Raporttinäkymä**-kuvakkeen. 
 
-![](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/14.png)
+![Raporttinäkymäkuvake](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/t_excelodata_9.png)
 
-Vedä **OrderDate** alustalle ensimmäisen kaavion alle ja vedä sitten LineTotal (taas Kentät-ruudusta) visualisointiin ja valitse sitten Viivakaavio. Ohjelma luo seuraavan visualisoinnin.
+## <a name="create-visualizations-using-your-data"></a>Visualisointien luonti tietojen avulla
 
-![](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/15.png)
+Power BI Desktopin raporttinäkymässä voit luoda useita erilaisia visualisointeja, joiden avulla voit analysoida tietojasi. Voit luoda raportteja, joissa on useita sivuja, joista jokainen voi sisältää useita visualisointeja. Visualisointien toimintojen avulla tietojasi voidaan analysoida ja tutkia. Lisätietoja raporttien tarkastelusta ja muokkauksesta Power BI -palvelussa (sivustosi) on kohdassa [Raportin muokkaaminen](service-interact-with-a-report-in-editing-view.md).
 
- Vedä sitten **ShipCountry** alustalle tyhjään kohtaan oikealle ylhäälle. Koska valitsit maantieteellisen kentän, ohjelma luo kartan automaattisesti. Vedä nyt **LineTotal** **Arvot**-kenttään. Kunkin maan ympyrät kartalla vastaavat suhteelliselta kooltaan **LineTotal**-rivin arvoa, joka kuvaa tiettyyn maahan toimitettujen tilausten kokonaismäärää.
+Voit käyttää kumpaakin tietojoukkoasi ja niiden välistä suhdetta myyntitietojesi visualisoinnin ja analysoinnin tukena. 
 
-![](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/17.png)
+Luo ensin pinottu pylväskaavio, joka käyttää kummankin kyselyn kenttiä kunkin tilatun tuotteen määrän näyttämiseksi. 
 
-### <a name="step-2-interact-with-your-report-visuals-to-analyze-further"></a>Vaihe 2: tarkemmat analyysit raportin visualisointien avulla
-Power BI Desktopissa voit käyttää visualisointeja, jotka ristiinkorostavat ja suodattavat toisiaan, jotta voit tunnistaa tiedoista tärkeitä asioita ja suuntauksia. Saat lisätietoja ohjeartikkelista [Suodattaminen ja korostaminen raporteissa](power-bi-reports-filters-and-highlighting.md).
-
-1. Napsauta vaaleansinistä ympyrää, joka on kartalla kohdassa **Canada.** Huomaatko, miten muut visualisoinnit suodatetaan näyttämään Stock-tiedot (**ShipCountry**) ja Total Orders -tiedot (**LineTotal**) vain Kanadasta.
+1. Valitse **Quantity**-kenttä **Orders**-kohdasta oikealla olevassa **Fields**-ruudussa tai vedä se tyhjään tilaan pohjalla. Tämä luo pinotun pylväskaavion, joka näyttää kaikkien tilattujen tuotteiden kokonaismäärän. 
    
-   ![](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/18.png)
+2. Valitse **ProductName**-kenttä **Products**-kohdasta **Fields**-ruudussa tai vedä se kaavioon kunkin tilatun tuotteen määrän näyttämiseksi. 
+   
+3. Lajittele tuotteet suurimmasta tilatusta määrästä pienimpään tilattuun määrään valitsemalla **Lisäasetukset** kolme pistettä (**...** ) visualisoinnin oikeassa yläkulmassa ja valitsemalla sitten **Lajittele määrän mukaan**.
+   
+4. Käytä kaavion kulmissa olevia kahvoja kaavion suurentamiseksi, jotta enemmän tuotenimiä tulee näkyviin. 
+   
+   ![Määrän osoittava palkkikaavio ProductName-sarakkeen mukaan](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/19.png)
 
-## <a name="complete-sales-analysis-report"></a>Kattava myyntianalyysiraportti
-Kun olet suorittanut kaikki nämä vaiheet, sinulla on myyntiraportti, joka yhdistää tietoja Products.xlsx-tiedostosta ja Northwind OData -syötteestä. Raportista näet visualisointeja, joiden avulla voit analysoida eri maiden myyntitietoja. Voit ladata tämän opetusohjelman valmiin Power BI Desktop tiedoston [täältä](http://download.microsoft.com/download/1/4/E/14EDED28-6C58-4055-A65C-23B4DA81C4DE/Analyzing_Sales_Data.pbix).
+Luo seuraavaksi kaavio, joka näyttää tilauksen dollarisummat (**LineTotal**) ajanjaksolla (**OrderDate**). 
+
+1. Kun mitään ei ole valittuna pohjalla, valitse **LineTotal** **Orders**-kohdasta **Fields**-ruudussa tai vedä se tyhjään kohtaan pohjalla. Pinottu pylväskaavio näyttää kaikkien tilausten dollarisumman. 
+   
+2. Kun kaavio on valittuna, valitse **OrderDate** kohteesta **Orders** tai vedä se kaavioon. Kaaviossa näkyvät nyt kunkin tilauspäivämäärän summat. 
+   
+3. Muuta visualisoinnin kokoa vetämällä sen kulmia, jotta näet enemmän tietoja. 
+   
+   ![Viivakaavio, joka näyttää LineTotals-arvot OrderDate-sarakkeen mukaan](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/20.png)
+   
+   >[!TIP]
+   >Jos kaaviossa näkyy vain vuodet (vain kolme arvopistettä), paina nuolta kohdan **OrderDate** vieressä **Akseli**-kentässä **Visualisoinnit**-ruudussa ja valitse **OrderDate**-vaihtoehto **Date Hierarchyn** sijaan. 
+
+Luo lopuksi kartta-visualisointi, joka näyttää kunkin maan tilausten summat. 
+
+1. Kun mitään ei ole valittuna pohjalla, valitse **ShipCountry** **Orders**-kohdasta **Fields**-ruudussa tai vedä se tyhjään kohtaan pohjalla. Power BI Desktop havaitsee, että tiedot ovat maan nimiä, ja luo automaattisesti kartta-visualisoinnin, jossa on arvopiste kullekin maalle, jossa on tilauksia. 
+   
+2. Muuta arvopisteiden koot vastaamaan kunkin maan tilauksen summia vetämällä **LineTotal**-kenttä kartalle (tai vetämällä se **Vedä tietokentät tähän** -kohtaan **Koko**-ruudussa, **Visualisoinnit**-ruudun alaosassa). Kartalla olevien ympyröiden koot vastaavat nyt kunkin maan tilausten dollarisummia. 
+   
+   ![Kartta-visualisointi, joka näyttää LineTotals-arvot ShipCountry-sarakkeen mukaan](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/21.png)
+
+## <a name="interact-with-your-report-visuals-to-analyze-further"></a>Analysoi tietoja tarkemmin raportin visualisointien avulla
+
+Power BI Desktopissa voit tunnistaa trendejä käsittelemällä visualisointeja, jotka korostavat ja suodattavat toisiaan. Saat lisätietoja ohjeartikkelista [Suodattaminen ja korostaminen raporteissa](power-bi-reports-filters-and-highlighting.md). 
+
+Kyselyjesi välisen suhteen vuoksi yhden visualisoinnin vuorovaikutukset vaikuttavat myös kaikkiin muihin sivulla oleviin visualisointeihin. 
+
+Valitse kartta-visualisoinnissa ympyrä, joka on keskitetty **Kanadaan**. Huomaa, että kaksi muuta visualisointia suodattuvat korostamaan vain Kanadaan liittyvät rivisummat ja tilausmäärät.
+
+![Kanadan suodatetut myyntitiedot](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/22.png)
+
+Jos valitset jonkin tuotteen **Quantity by ProductName** -kaaviossa, kartta ja päivämääräkaavio suodattuvat kyseisen tuotteen mukaan, ja jos valitset jonkin päivämäärän **LineTotal by OrderDate** -kaaviossa, kartta ja tuotekaavio suodattuvat kyseisen päivämäärän mukaan. 
+>[!TIP]
+>Poista valinta valitsemalla se uudelleen tai valitse jokin muu visualisointi. 
+
+## <a name="complete-the-sales-analysis-report"></a>Täydennä myyntianalyysiraportti
+
+Valmis raportti yhdistää tiedot Excelin Products.xlsx-tiedostosta ja Northwind OData -syötteestä visualisointeihin, jotka auttavat analysoimaan eri maiden, aikavälien ja tuotteiden tilaustietoja. Kun raportti on valmis, voit [ladata sen Power BI -palveluun](desktop-upload-desktop-files.md) ja jakaa sen muiden Power BI -käyttäjien kanssa.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 * [Lue muita Power BI Desktop -opetusohjelmia](http://go.microsoft.com/fwlink/?LinkID=521937)
 * [Katso Power BI Desktop -videoita](http://go.microsoft.com/fwlink/?LinkID=519322)
 * [Käy Power BI -keskustelupalstalla](http://go.microsoft.com/fwlink/?LinkID=519326)
 * [Lue Power BI -blogia](http://go.microsoft.com/fwlink/?LinkID=519327)
-
-

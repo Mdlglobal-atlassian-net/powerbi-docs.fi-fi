@@ -1,153 +1,136 @@
 ---
 title: 'Opetusohjelma: laskettujen sarakkeiden luominen Power BI Desktopissa'
 description: 'Opetusohjelma: laskettujen sarakkeiden luominen Power BI Desktopissa'
-services: powerbi
-documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 12/06/2017
+ms.component: powerbi-desktop
+ms.topic: tutorial
+ms.date: 05/21/2018
 ms.author: davidi
 LocalizationGroup: Learn more
-ms.openlocfilehash: acdaa95908cd03006170eb06ddfc780c836c64ac
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: d8d11d3f8cf61d01fb3c81519a2b11e729b8671c
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/24/2018
-ms.locfileid: "30973972"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34456222"
 ---
 # <a name="tutorial-create-calculated-columns-in-power-bi-desktop"></a>Opetusohjelma: laskettujen sarakkeiden luominen Power BI Desktopissa
-Joskus analysointisi kohteena olevat tiedot eivät vain sisällä tiettyä kenttää, jota tarvitsisit saadaksesi haluamiasi tuloksia. Tässä vaiheessa mukaan kuvaan tulevat lasketut sarakkeet. Laskettujen sarakkeiden arvojen laskemiseen käytetään Data Analysis Expressions (DAX) -kaavoja. Nämä arvot voivat olla lähes mitä vain, olipa kyseessä mallin eri sarakkeiden tekstiarvojen yhdistäminen tai numeerisen arvon laskeminen muista arvoista. Tiedoissasi voi olla esimerkiksi Kaupunki- ja Osavaltio-sarakkeet (kenttinä Kentät-luettelossa), mutta haluat yhden Sijainti-kentän, jossa nämä kumpikin ilmoitetaan yhtenä arvona, kuten Miami, FL. Lasketut sarakkeet on tarkoitettu juuri tähän tarkoitukseen.
 
-Lasketut sarakkeet muistuttavat mittayksiköitä siinä, että molemmat perustuvat DAX-kaavaan, mutta niiden käyttötavat ovat erilaiset. Mittayksiköitä käytetään useimmiten visualisoinnin Arvot-alueella, kun halutaan laskea tuloksia taulukon rivillä olevien muiden kenttien perusteella, tai visualisoinnin Akseli-, Selite- tai Ryhmä-alueilla. Laskettuja sarakkeita puolestaan käytetään, kun sarakkeen tulokset halutaan sijoittaa taulukon kyseiselle riville, tai Akseli-, Selite- tai Ryhmä-alueella.
+Joskus analysointisi kohteena olevat tiedot eivät sisällä tiettyä kenttää, jota tarvitsisit saadaksesi haluamiasi tuloksia. Tässä vaiheessa mukaan kuvaan tulevat *lasketut sarakkeet*. Lasketut sarakkeet määrittävät Data Analysis Expressions (DAX) -kaavojen avulla sarakkeen arvot, mikä voi tarkoittaa mitä tahansa aina tekstiarvojen yhdistämisestä muutamasta eri sarakkeesta numeerisen arvon laskemiseen muiden arvojen perusteella. Tiedoissasi voi olla esimerkiksi **Kaupunki**- ja **Osavaltio**-kentät, mutta haluat yhden **Sijainti**-kentän, jossa nämä kumpikin ilmoitetaan, kuten ”Miami, FL”. Lasketut sarakkeet on tarkoitettu juuri tähän tarkoitukseen.
 
-Tässä opetusohjelmassa kerrotaan Power BI Desktopin lasketuista sarakkeista ja siitä, kuinka voit luoda omia laskettuja sarakkeita. Se on tarkoitettu kehittyneempien mallien luomiseen Power BI -käyttäjille, joille Power BI Desktopin käyttö on jo tuttua. Edellytyksenä on, että osaat jo tuoda tietoja kyselyn avulla, työskennellä useiden toisiinsa liitettyjen taulukoiden kanssa ja lisätä kenttiä raporttipohjaan. Jos olet vasta aloittamassa Power BI Desktopin käyttöä, muista tutustua [Power BI Desktopin käytön aloittaminen](desktop-getting-started.md) -resurssiin.
+Lasketut sarakkeet muistuttavat [mittayksiköitä](desktop-tutorial-create-measures.md) siinä, että molemmat perustuvat DAX-kaavoihin, mutta niiden käyttötavat ovat erilaiset. Mittayksiköitä käytetään usein visualisoinnin **Arvot**-alueella, kun halutaan laskea tuloksia muiden kenttien perusteella. Laskettuja sarakkeita käytetään uusina **Kenttinä** visualisointien Rivit-, Akselit-, Selitteet- ja Ryhmä-alueilla.
 
-Jotta voit suorittaa tämän opetusohjelman vaiheet, sinun on ladattava [Contoso Sales Sample for Power BI Desktop](http://download.microsoft.com/download/4/6/A/46AB5E74-50F6-4761-8EDB-5AE077FD603C/Contoso%20Sales%20Sample%20for%20Power%20BI%20Desktop.zip) -tiedosto. Tämä on sama mallitiedosto kuin se, jota käytetään [Omien mittayksiköiden luominen Power BI Desktopissa](desktop-tutorial-create-measures.md) -opetusohjelmassa. Se sisältää kuvitteellisen yrityksen, Contoso, Inc:n, myyntitietoja. Koska tiedoston tiedot on tuotu tietokannasta, et voi muodostaa yhteyttä tietolähteeseen tai tarkastella niitä kyselyeditorissa. Kun tiedosto on tallennettu omalle tietokoneellesi, voit avata sen Power BI Desktopissa.
+Tässä opetusohjelmassa kerrotaan Power BI Desktopin lasketuista sarakkeista, niiden luomisesta sekä niiden käyttämisestä raportin visualisoinneista. 
 
-## <a name="lets-create-a-calculated-column"></a>Lasketun sarakkeen luominen
-Otetaan esimerkiksi tilanne, jossa haluamme tuoteluokat näkyviin yhdessä tuotealiluokkien kanssa yhtenä arvona riveillä, kuten Matkapuhelimet – Lisävarusteet, Matkapuhelimet – Älypuhelimet ja PDA-laitteet, ja niin edelleen. Jos tarkastelemme raportti- tai tietonäkymässä (käytämme tässä raporttinäkymää) Kentät-luettelon tuotetaulukoita, huomaamme, että mikään kenttä ei tarjoa haluamaamme. Saatavilla on kuitenkin ProductCategory- ja ProductSubcategory-kentät, kumpikin omassa taulukossaan.
+### <a name="prerequisites"></a>Edellytykset
+- Tämä opetusohjelma on tarkoitettu kehittyneempien mallien luomiseen Power BI -käyttäjille, joille Power BI Desktopin käyttö on jo tuttua. Edellytyksenä on, että osaat jo tuoda tietoja **Nouda tiedot** -toiminnon ja **Power Query Editorin** avulla, työskennellä useiden toisiinsa liitettyjen taulukoiden kanssa ja lisätä kenttiä raporttipohjaan. Jos olet vasta aloittamassa Power BI Desktopin käyttöä, muista tutustua [Power BI Desktopin käytön aloittaminen](desktop-getting-started.md) -resurssiin.
+  
+- Tämä opetusohjelma käyttää [Contoso Sales Sample for Power BI Desktop](http://download.microsoft.com/download/4/6/A/46AB5E74-50F6-4761-8EDB-5AE077FD603C/Contoso%20Sales%20Sample%20for%20Power%20BI%20Desktop.zip) -näytettä. Kyse on samasta näytteestä, jota käytetään [Omien mittayksiköiden luominen Power BI Desktopissa](desktop-tutorial-create-measures.md) -opetusohjelmassa. Kuvitteellisen yrityksen, Contoso, Inc:n, myyntitiedot on tuotu tietokannasta, joten et voi muodostaa yhteyttä tietolähteeseen tai tarkastella niitä Power Query Editorissa. Lataa ja pura tiedosto omalle tietokoneellesi ja avaa se Power BI Desktopissa.
 
- ![](media/desktop-tutorial-create-calculated-columns/calccol_fileds_nonewcol.png)
+## <a name="create-a-calculated-column-with-values-from-related-tables"></a>Lasketun sarakkeen luominen liittyvien sarakkeiden arvoilla
 
-Luomme uuden lasketun sarakkeen, jossa yhdistämme näiden kahden sarakkeen arvot uusiksi arvoiksi. Mielenkiintoiseksi tämän tekee se, että meidän on yhdistettävä tietoja kahdesta eri taulukosta yhteen sarakkeeseen. Koska aiomme käyttää uuden sarakkeen luomiseen DAX-kaavaa, voimme hyödyntää täydellisesti meillä jo ennestään olevan mallia, mukaan lukien jo olemassa olevien taulukoiden väliset suhteet.
+Myyntiraportissa haluat tuoteluokat ja aliluokat näkyviin yksittäisinä arvoina riveillä, kuten ”Matkapuhelimet – Lisävarusteet”, ”Matkapuhelimet – Älypuhelimet ja PDA-laitteet”, ja niin edelleen. **Kentät**-luettelossa ei ole näitä tietoja antava kenttää, mutta siellä on **ProductCategory**-kenttä ja **ProductSubcategory**-kenttä, kukin omassa taulukossa. Voit luoda lasketun sarakkeen, joka yhdistää näiden kahden sarakkeen arvot. DAX-kaavat voivat hyödyntää täydellisesti sinulla jo ennestään olevaa mallia, mukaan lukien jo olemassa olevien taulukoiden väliset suhteet. 
 
-### <a name="to-create-a-productfullcategory-column"></a>ProductFullCategory-sarakkeen luominen
-1.  Napsauta hiiren kakkospainikkeella Kentät-luettelon **ProductSubcategory**-taulukkoa tai napsauta alaspäin osoittavaa nuolta ja valitse **Uusi sarake**. Tällä varmistetaan, että uusi sarake lisätään ProductSubcategory-taulukkoon.
+ ![Sarakkeet Kentät-luettelossa](media/desktop-tutorial-create-calculated-columns/create1.png)
+
+1.  Valitse kolmea **Enemmän vaihtoehtoja** -pistettä (...) tai napsauta hiiren kakkospainikkeella Kentät-luettelon **ProductSubcategory**-taulukkoa ja valitse **Uusi sarake**. Tämä luo uuden sarakkeen ProductSubcategory-taulukkoon.
     
-    ![](media/desktop-tutorial-create-calculated-columns/calccol_fileds_newcolumn.png)
+    ![Uusi sarake](media/desktop-tutorial-create-calculated-columns/create2.png)
     
-    Kaavarivi näkyy raporttipohjan tai tietoruudukon yläosassa. Tällä rivillä voimme nimetä sarakkeen uudelleen ja antaa DAX-kaavan.
+    Raporttipohjan yläosaan tulee näkyviin kaavarivi, johon voit nimetä sarakkeen ja kirjoittaa DAX-kaavan.
     
-    ![](media/desktop-tutorial-create-calculated-columns/calccol_fileds_newcolumnformula.png)
+    ![Kaavarivi](media/desktop-tutorial-create-calculated-columns/create3.png)
     
-    Uuden sarakkeen nimi on oletusarvoisesti vain Sarake. Jos saraketta ei nimetä uudelleen ja luomme uusia sarakkeita, niiden nimeksi annetaan Sarake 2, Sarake 3 ja niin edelleen. Haluamme sarakkeiden olevan paremmin tunnistettavissa, joten annamme uudelle sarakkeelle uuden nimen.
+2.  Uuden sarakkeen nimi on oletusarvoisesti vain Sarake. Jos et nimeä sitä uudelleen, uusille sarakkeille annetaan nimeksi Sarake 2, Sarake 3 ja niin edelleen. Haluat varmasti sarakkeen olevan helpommin tunnistettava, joten koska **Sarake**-nimi on jo korostettu kaavarivillä, nimeä se uudelleen kirjoittamalla **ProductFullCategory** ja lisää sitten yhtäläisyysmerkki (**=**).
     
-2.  Koska **sarakkeen** nimi näkyy jo korostettuna kaavarivillä, sinun tarvitsee kirjoittaa siihen vain **ProductFullCategory**.
+3.  Haluat uudessa sarakkeessa olevien arvojen alkavan ProductCategory-nimellä. Koska tämä sarake on erilaisessa, mutta liittyvässä taulukossa, voit käyttää apuna sen hakemisessa [RELATED](https://msdn.microsoft.com/library/ee634202.aspx) (SUHTEET) -funktiota.
     
-    Nyt voimme aloittaa kaavan kirjoittamisen. Haluamme uudessa sarakkeessa olevien arvojen alkavan ProductCategory-nimellä, joka on saatu ProductCategory-taulukosta. Koska tämä sarake on erilaisessa, mutta liittyvässä taulukossa, käytämme apuna sen hakemisessa [RELATED](https://msdn.microsoft.com/library/ee634202.aspx) (SUHTEET) -funktiota.
+    Kirjoita yhtäläisyysmerkin jälkeen kirjain **r**. Avattava valikko näyttää kaikki kirjaimella R alkavat DAX-funktiot. Kunkin funktion valitseminen näyttää sen vaikutuksen kuvauksen. Kirjoittaessasi ehdotusluettelo Skaalaa lähemmäs tarvitsemaasi funktiota. Valitse **RELATED** (SUHTEET) ja paina **Enter**-painiketta.
     
-3.  Kirjoita yhtäläisyysmerkkien jälkeen kirjain **R**. Näkyviin tulee ehdotettujen kohteiden pudotusluettelo, joka sisältää kaikki R-kirjaimella alkavat DAX-funktiot. Mitä enemmän kirjoitamme, sitä lähemmäs etsimäämme funktiota ehdotusluettelo siirtyy. Funktion vieressä näkyy funktion kuvaus. Valitse **RELATED** (SUHTEET) selaamalla alaspäin ja painamalla Enter-näppäintä.
+    ![Valitse RELATED](media/desktop-tutorial-create-calculated-columns/create4.png)
     
-    ![](media/desktop-tutorial-create-calculated-columns/calccol_fileds_pfc_1.png)
+    Vasen sulkumerkki ilmestyy näkyviin yhdessä toisen ehdotusluettelon kanssa, joka sisältää RELATED-funktioon välitettävissä olevat liittyvät sarakkeet, sisältäen kuvauksia ja tietoja odotetuista parametreista. 
     
-    Näkyviin tulee vasen sulkumerkki ja toinen ehdotusluettelo kaikista saatavilla olevista sarakkeista, jotka voimme välittää RELATED (SUHTEET) -funktioon. Lisäksi näkyvissä on kuvaus ja tietoja odotetuista parametreista.
+    ![Valitse ProductCategory](media/desktop-tutorial-create-calculated-columns/create5.png)
     
-    ![](media/desktop-tutorial-create-calculated-columns/calccol_fileds_pfc_2.png)
-    
-    Lauseke näkyy aina vasemman ja oikean sulkumerkin välissä. Tässä tapauksessa lauseke tulee sisältämään yhden RELATED (SUHTEET) -funktioon välitetyn argumentin; liittyvä sarake, josta arvot palautetaan. Sarakeluettelo pienenee automaattisesti ja näyttää vain liittyvät sarakkeet. Tässä tapauksessa haluamme ProductCategory-taulukon ProductCategory-sarakkeen.
-    
-    Valitse **ProductCategory [ProductCategory]** ja kirjoita oikea sulkumerkki.
+4.  Haluat **ProductCategory**-taulukon **ProductCategory**-sarakkeen. Valitse **ProductCategory [ProductCategory]**, paina **Enter**-painiketta ja kirjoita oikea sulkumerkki.
     
     > [!TIP]
-    > Syntaksivirheiden syynä on useimmiten puuttuvat tai väärin sijoitetut loppusulkeet. Power BI Desktop lisää sen kuitenkin usein, jos itse unohdat.
-    > 
-    > 
+    > Syntaksivirheitä aiheutuvat useimmin puuttuvasta tai väärään paikkaan sijoitetusta loppusulkeesta, vaikka joskus Power BI Desktop lisää sen puolestasi.
     
-    ![](media/desktop-tutorial-create-calculated-columns/calccol_fileds_pfc_3.png)
+4. Haluat, että yhdysmerkit ja välilyönnit erottelevat ProductCategories- ja ProductSubcategories-arvot uusissa arvoissa, joten ensimmäinen lausekkeen loppusulkeen jälkeen lisää välilyönti, et-merkki (**&**), kaksinkertainen lainausmerkki (**”**), välilyönti, ajatusviiva (**-**), toinen välilyönti, toinen kaksinkertainen lainausmerkki ja toinen et-merkki. Kaavan pitäisi nyt näyttää tältä:
     
-4. Haluamme lisätä yhdysviivan erottaaksemme jokaisen arvon, joten kirjoita ensimmäisen lausekkeen loppusulkeen jälkeen välilyönti, et-merkki (&), lainausmerkki, välilyönti, yhdysviiva (-), toinen välilyönti, sulkeva lainausmerkki ja lopuksi toinen et-merkki. Kaavan pitäisi nyt näyttää tältä:
-    
-    **ProductFullCategory = RELATED(ProductCategory[ProductCategory]) & ”-” &**
+    `ProductFullCategory = RELATED(ProductCategory[ProductCategory]) & " - " &`
     
     > [!TIP]
-    > Laajenna kaavaeditoria napsauttamalla kaavarivin oikealla puolella olevaa alaspäin osoittavaa nuolta. Siirry seuraavalle riville napsauttamalla Alt- ja Enter-näppäimiä ja siirry kohteesta toiseen käyttämällä Tab-näppäintä.
-    > 
-    > 
+    > Jos tarvitset lisää tilaa, laajenna kaavaeditoria valitsemalla kaavarivin oikealla puolella oleva alaspäin osoittava nuoli. Editorissa siirry seuraavalle riville painamalla **Alt- ja Enter**-näppäimiä ja siirry kohteesta toiseen käyttämällä **Tab**-näppäintä.
     
-5.  Tee kaava valmiiksi kirjoittamalla lopuksi toinen loppuhakasulje ja valitsemalla **[ProductSubcategory]**-sarake. Kaavan pitäisi näyttää tältä:
+5.  Tee kaava valmiiksi kirjoittamalla avaava hakasulje (**[**) ja valitsemalla **[ProductSubcategory]**-sarake. 
     
-    ![](media/desktop-tutorial-create-calculated-columns/calccol_fileds_pfc_5.png)
+    ![Valitse ProductSubcategory](media/desktop-tutorial-create-calculated-columns/create6.png)
     
-    Huomaat, että emme käyttäneet toista RELATED (SUHDE) -funktiota toisessa lausekkeessa ProductSubcategory-saraketta kutsuttaessa. Tämä johtuu siitä, että tämä sarake on jo samassa taulukossa, johon olemme luomassa uutta saraketta. Voimme syöttää [ProductCategory]-sarakkeeseen taulukon nimen (täydellinen) tai jättää sen ilman (ei täydellinen).
+    Sinun ei tarvinnut käyttää toista RELATED-funktiota ProductSubcategory-taulukon kutsumiseksi toisessa lausekkeessa, koska olet luomassa laskettua saraketta tähän taulukkoon. Voit syöttää [ProductSubcategory]-sarakkeeseen taulukon nimen etuliitteen (täydellinen) tai jättää sen ilman (ei täydellinen).
     
-6.  Tee kaava valmiiksi painamalla Enter-näppäintä tai napsauttamalla kaavarivin valintamerkkiä. Kaava on nyt vahvistettu ja lisätty **ProductSubcategory**-taulukon kenttäluetteloon.
+6.  Tee kaava valmiiksi painamalla **Enter**-näppäintä tai valitsemalla kaavarivin valintamerkin. Kaava vahvistetaan, ja **ProductFullCategory**-sarakkeen nimi näkyy Kentät-luettelon **ProductSubcategory**-taulukossa. 
     
-    ![](media/desktop-tutorial-create-calculated-columns/calccol_fileds_pfc_6.png)
+    ![Valmis ProductFullCategory-sarake](media/desktop-tutorial-create-calculated-columns/create7.png)
     
-    Huomaat, että kenttäluettelossa laskettujen sarakkeiden yhteydessä näkyy erityiskuvake. Se kertoo, että ne sisältävät kaavan. Ne näkyvät näin vain Power BI Desktopissa. Power BI-palvelussa (Power BI -sivusto) kaavaa ei voi muuttaa, joten lasketun sarakkeen kentässä ei ole kuvaketta.
+    >[!NOTE]
+    >Power BI Desktopissa lasketut sarakkeet saavat kenttäluetteloon erityisen kuvakkeen, joka näyttää, että ne sisältävät kaavoja. Power BI -palvelussa (Power BI -sivusto) kaavoja ei voi muuttaa, joten lasketuissa sarakkeissa ei ole kuvakkeita.
     
-## <a name="lets-add-our-new-column-to-a-report"></a>Uuden sarakkeen lisääminen raporttiin
-Nyt voimme lisätä uuden ProductFullCategory-sarakkeen raporttipohjaan. Tarkastellaan seuraavaksi SalesAmount-arvoa ProductFullCategory-luokan mukaan.
+## <a name="use-your-new-column-in-a-report"></a>Uuden sarakkeen käyttäminen raportissa
 
-Vedä **ProductFullCategory**-sarake **ProductSubcategory**-taulukosta raporttipohjaan ja sen jälkeen **SalesAmount**-kenttä **Sales**-taulukosta kaavioon.
+Nyt voit käyttää uutta ProductFullCategory-saraketta SalesAmount-kaavion tarkasteluun ProductFullCategory-sarakkeen perusteella.
 
-![](media/desktop-tutorial-create-calculated-columns/calccol_fileds_report_1.png)
+1. Valitse tai vedä **ProductFullCategory**-sarake **ProductSubcategory**-taulukosta raporttipohjalle, jos haluat luoda taulukon, jossa näkyvät kaikki ProductFullCategory-nimet.
+   
+   ![ProductFullCategory-taulukko](media/desktop-tutorial-create-calculated-columns/vis1.png)
+    
+2. Valitse tai vedä **SalesAmount** -kenttä **Sales**-taulukosta taulukkoon, jos haluat näyttää kunkin ProductFullCategory-sarakkeen SalesAmount-arvon.
+   
+   ![SalesAmount-arvo ProductFullCategory-taulukon mukaan](media/desktop-tutorial-create-calculated-columns/vis2.png)
+    
+## <a name="create-a-calculated-column-that-uses-an-if-function"></a>IF-funktiota käyttävän lasketun sarakkeen luominen
 
-## <a name="lets-create-another"></a>Toisen sarakkeen luominen
-Nyt kun tiedät, miten laskettu sarake luodaan, voimme luoda toisen.
+Contoso Sales Sample sisältää sekä aktiivisten että passiivisten myymälöiden myyntitietoja. Voit varmistaa, että aktiivisen myymälän myynti on raportissa selvästi erillään passiivisen myymälän myynnistä, luomalla Active StoreName -kentän. Uudessa lasketussa Active StoreName -sarakkeessa kukin aktiivinen myymälä näkyy myymälän koko nimellä, kun taas passiiviset myymälät ryhmitellään yhteen ”Inactive”-kohtaan. 
 
-Contoso Sales Sample for Power BI Desktop -malli sisältää sekä aktiivisten että passiivisten myymälöiden myyntitietoja. Haluamme, että passiivisten myymälöiden yhteydessä näkyvät tiedot ovat selkeästi tunnistettavissa. Itse asiassa haluamme Active StoreName -nimisen kentän. Tätä varten luomme toisen sarakkeen. Tässä tapauksessa, kun myymälä on passiivinen, haluamme uuden Active StoreName -sarakkeen (kenttänä) näyttävän myymälän nimellä ”Inactive” (Passiivinen). Kun taas myymälä on aktiivinen, haluamme, että sarakkeessa näkyy sen todellinen nimi.
+Onneksi Stores-taulukossa on sarake nimeltä **Status**, jossa on arvot ”On” aktiivisille myymälöille ja ”Off” passiivisille myymälöille. Voimme käyttää niitä luomaan arvoja uutta Active StoreName-saraketta varten. DAX-kaava käyttää loogista [IF](https://msdn.microsoft.com/library/ee634824.aspx) (JOS) -funktiota testatakseen kunkin myymälän Status-tilan ja palauttaakseen tietyn arvon tuloksesta riippuen. Jos myymälän Status-tila on ”On” (Käytössä), kaava palauttaa myymälän nimen. Jos se on ”Off”, kaava määrittää Active StoreName -arvoksi ”Inactive”. 
 
-Myymälät-taulukossa on onneksi sarake nimeltä Tila, jossa aktiivisten myymälöiden arvona on Käytössä ja passiivisten myymälöiden arvona Ei käytössä. Voimme testata Tila-sarakkeessa olevien rivien arvot ja luoda uusia arvoja luomaamme uuteen sarakkeeseen.
 
-### <a name="to-create-an-active-storename-column"></a>Active StoreName -sarakkeen luominen
-1.  Luo **Myymälät**-taulukkoon uusi laskettu sarake nimellä **Active StoreName**.
+1.  Luo **Stores**-taulukkoon uusi laskettu sarake ja anna sille kaavarivillä nimeksi **Active StoreName**.
     
-    Tässä sarakkeessa jokaisen myymälän tila tullaan tarkistamaan DAX-kaavalla. Jos myymälän tila on On (Käytössä), kaava palauttaa myymälän nimen. Jos tila on Off (Ei käytössä), sen nimi on ”Inactive” (Passiivinen). Jotta voimme tehdä tämän, käytämme loogista [IF](https://msdn.microsoft.com/library/ee634824.aspx) (JOS) -funktiota testataksemme myymälän tilan ja palauttaaksemme tietyn arvon, jos tulos on tosi tai epätosi.
+2.  Merkin **=** jälkeen kirjoita **IF**. Ehdotusluettelo näyttää, mitä voit lisätä. Valitse **IF**.
     
-2.  Aloita kirjoittamaan **IF**-sanaa. Ehdotusluettelo näyttää, mitä voimme lisätä. Valitse **IF**.
+    ![Valitse IF](media/desktop-tutorial-create-calculated-columns/if1.png)
     
-    ![](media/desktop-tutorial-create-calculated-columns/calccol_activestore_1.png)
+3.  IF-funktion ensimmäinen argumentti on looginen testi siitä, onko myymälän tila ”On”. Kirjoita avaava hakasulje **[**, joka luetteloi sarakkeet Myymälät-taulukosta, ja valitse **[Status]** (tila).
     
-    IF-funktion ensimmäinen argumentti on looginen testi. Haluamme testata, onko myymälän tila On (Käytössä) vai ei.
+    ![Valitse [Status] (Tila)](media/desktop-tutorial-create-calculated-columns/if2.png)
     
-3.  Kirjoita avaava hakasulje **[**, jolloin voimme valita sarakkeita Myymälät-taulukosta. Valitse **[Status]** (Tila).
+4.  Kirjoita heti kohdan **[Status]** jälkeen **="On"** ja lisää sitten pilkku (**,**) lopettamaan argumentti. Työkaluvihje ehdottaa, että sinun on lisättävä arvo, joka palautetaan, kun tulos on TRUE.
     
-    ![](media/desktop-tutorial-create-calculated-columns/calccol_activestore_2.png)
+    ![TRUE-arvon lisääminen](media/desktop-tutorial-create-calculated-columns/if3.png)
     
-4.  Kirjoita heti **[Status]**-kohdan perään **="On"**,  ja lisää sen jälkeen pilkku (**,**), jotta voit syöttää toisen argumentin. Työkaluvihje ehdottaa, että meidän on lisättävä arvo, kun tulos on tosi.
+5.  Jos myymälän tila on ”On” (Käytössä), haluat näkyviin myymälän nimen. Kirjoita avaava hakasulje (**[**) ja valitse **[StoreName]**-sarake. Lisää sen jälkeen toinen pilkku. Työkaluvihje osoittaa, että sinun on nyt lisättävä arvo, joka palautetaan, kun tulos on FALSE. 
     
-    ![](media/desktop-tutorial-create-calculated-columns/calccol_activestore_3.png)
+    ![Lisää FALSE-arvo](media/desktop-tutorial-create-calculated-columns/if4.png)
     
-5.  Jos myymälän tila on On (Käytössä), haluamme näkyviin myymälän nimen. Kirjoita avaava hakasulje **[** ja valitse **[StoreName]**-sarake. Lisää sen jälkeen toinen pilkku, jotta voimme lisätä kolmannen argumentin.
+6.  Haluat arvon olevan *Inactive*, joten kirjoita **”Inactive”** ja täydennä sen jälkeen kaava painamalla **Enter**-painiketta tai valitsemalla valintamerkki kaavarivillä. Kaava vahvistetaan ja uuden sarakkeen nimi ilmestyy **Stores**-taulukkoon Kentät-luettelossa.
     
-    ![](media/desktop-tutorial-create-calculated-columns/calccol_activestore_step5.png)
+    ![Active StoreName -sarake](media/desktop-tutorial-create-calculated-columns/if5.png)
     
-6.  Meidän on lisättävä arvo, kun tulos on epätosi, tässä tapauksessa haluamme arvon olevan **”Inactive”** (Passiivinen).
+8.  Voit visualisoinneissa käyttää myös uutta Active StoreName -saraketta, aivan kuten mitä tahansa muuta kenttää. SalesAmounts by Active StoreName -taulukon näyttämiseksi valitse **Active StoreName** -kenttä tai vedä se pohjalle ja valitse **SalesAmount**-kenttä tai vedä se taulukkoon. Tämä taulukko näyttää aktiiviset kaupat erikseen nimen mukaan, mutta passiiviset myymälät on ryhmitelty yhdessä loppuun nimellä *Inactive*. 
     
-    ![](media/desktop-tutorial-create-calculated-columns/calccol_activestore_step6.png)
+    ![SalesAmount by Active StoreName -taulukko](media/desktop-tutorial-create-calculated-columns/if6.png)
     
-7.  Tee kaava valmiiksi painamalla Enter-näppäintä tai napsauttamalla kaavarivin valintamerkkiä. Kaava on nyt vahvistettu ja lisätty Myymälät-taulukon kenttäluetteloon.
-    
-    Kuten muitakin kenttiä, voimme visualisoinneissa käyttää myös uutta Active StoreName -saraketta. Tässä kaaviossa On (Käytössä) -tilassa olevat myymälät näkyvät eritellysti omalla nimellään, mutta Off (Ei käytössä) -tilassa olevat myymälät näkyvät ryhmiteltyinä yhteen nimellä Inactive (Passiivinen). 
-    
-    ![](media/desktop-tutorial-create-calculated-columns/calccol_activestore_viz.png)
-    
-## <a name="what-weve-learned"></a>Mitä olemme oppineet
-Laskettujen sarakkeiden avulla voimme rikastaa tietojamme ja saada helpommin merkityksellisiä tietoja. Olemme oppineet, kuinka laskettuja sarakkeita luodaan käyttämällä kaavariviä, kuinka ehdotusluetteloa käytetään ja kuinka uudet sarakkeet kannattaa nimetä.
+## <a name="what-youve-learned"></a>Opitut asiat
+Laskettujen sarakkeiden avulla voit rikastaa tietojasi ja saada helpommin merkityksellisiä tietoja. Olet oppinut, miten luodaan laskettuja sarakkeita kenttäluettelossa ja kaavarivillä, käytetään ehdotusluetteloita ja työkaluvihjeitä kaavojen muodostamisen apuna, kutsutaan DAX-funktioita, kuten RELATED ja IF, sopivilla argumenteilla ja käytetään laskettuja sarakkeita raportin visualisoinneissa.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
-Jos haluat tutustua tarkemmin DAX-kaavoihin ja siihen, miten laskettuja sarakkeita voi luoda edistyneemmillä DAX-kaavoilla, lue [DAX-perusteet Power BI Desktopissa](desktop-quickstart-learn-dax-basics.md). Tässä artikkelissa keskitytään DAX-peruskäsitteisiin, kuten syntaksiin ja funktioihin, ja annetaan tarkempaa tietoa kontekstista.
+Jos haluat tutustua tarkemmin DAX-kaavoihin ja siihen, miten laskettuja sarakkeita voi luoda edistyneemmillä kaavoilla, lue [DAX-perusteet Power BI Desktopissa](desktop-quickstart-learn-dax-basics.md). Tässä artikkelissa keskitytään DAX-peruskäsitteisiin, kuten syntaksiin ja funktioihin, ja annetaan tarkempaa tietoa kontekstista.
 
 Muista lisätä [Data Analysis Expressions (DAX) -viite](https://msdn.microsoft.com/library/gg413422.aspx) suosikkeihin. Sieltä saat tarkempia tietoja DAX-syntaksista ja -operaattoreista sekä yli 200 DAX-funktiosta.
 

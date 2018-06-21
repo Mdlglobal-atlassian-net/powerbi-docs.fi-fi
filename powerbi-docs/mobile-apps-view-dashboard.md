@@ -1,28 +1,20 @@
 ---
 title: Raporttinäkymien ja raporttien tarkastelu Power BI -mobiilisovelluksissa
 description: Luo raporttinäkymiä ja raportteja tai muodosta yhteys niihin Power BI -palvelussa. Sen jälkeen voit tarkastella niitä Power BI -mobiilisovelluksissa.
-services: powerbi
-documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: complete
-qualitydate: 07/08/2016
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 01/16/2018
+ms.component: powerbi-mobile
+ms.topic: conceptual
+ms.date: 05/07/2018
 ms.author: maggies
-ms.openlocfilehash: e91b9745663ad88d388b410feb83ac8dfdc791b6
-ms.sourcegitcommit: 259d7689bcb1683d4d63a245a9b02becea072139
+ms.openlocfilehash: 2e178d3c8961865fa7d728d50f118c882788247e
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/17/2018
-ms.locfileid: "30972892"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34295869"
 ---
 # <a name="view-dashboards-and-reports-in-the-power-bi-mobile-apps"></a>Raporttinäkymien ja raporttien tarkastelu Power BI -mobiilisovelluksissa
 Koskee seuraavia:
@@ -54,7 +46,7 @@ Tässä on Power BI -raporttinäkymä Power BI -palvelussa:
     ![Napauta raporttinäkymää](media/mobile-apps-view-dashboard/power-bi-iphone-dashboard-home.png)
    
    * Keltaiset tähdet ![Suosikkitähdet](media/mobile-apps-view-dashboard/power-bi-mobile-yes-favorite-icon.png) näyttävät, mitkä raporttinäkymät ovat suosikkeja. 
-   * Kunkin raporttinäkymän nimen (tässä tapauksessa ”MBI”) alapuolella oleva merkintä ![Tietojen luokitus](media/mobile-apps-view-dashboard/power-bi-dashboard-ios-medium-classification.png) kertoo, miten kunkin raporttinäkymän tiedot on luokiteltu. Lue lisää [tietojen luokittelusta Power BI:ssä](service-data-classification.md).
+   * Kunkin raporttinäkymän nimen (tässä tapauksessa "MBI") alapuolella oleva merkintä ![Tietojen luokitus](media/mobile-apps-view-dashboard/power-bi-dashboard-ios-medium-classification.png) kertoo, miten kunkin raporttinäkymän tiedot on luokiteltu. Lue lisää [tietojen luokittelusta Power BI:ssä](service-data-classification.md).
    
    Oletusarvoisesti Power BI -raporttinäkymät näyttävät hiukan erilaisilta iPhonessasi. Kaikki ruudut näkyvät samalla tavalla, ja ne on järjestetty peräkkäin ylhäältä alaspäin.
    
@@ -94,7 +86,7 @@ Voit lähentää ja loitontaa raporttinäkymän eri alueita nipistämällä ja s
    ![Raporttinäkymän aloitusnäkymä](media/mobile-apps-view-dashboard/power-bi-ipad-dashboard-home.png)
    
    * Keltaiset tähdet ![Suosikkitähti](media/mobile-apps-view-dashboard/power-bi-mobile-yes-favorite-icon.png) näyttävät, mitkä raporttinäkymät ovat suosikkeja. 
-   * Kunkin raporttinäkymän nimen (tässä tapauksessa ”MBI”) alapuolella oleva merkintä ![Tietojen luokitus](media/mobile-apps-view-dashboard/power-bi-dashboard-ios-medium-classification.png) kertoo, miten kunkin raporttinäkymän tiedot on luokiteltu. Lue lisää [tietojen luokittelusta Power BI:ssä](service-data-classification.md).
+   * Kunkin raporttinäkymän nimen (tässä tapauksessa "MBI") alapuolella oleva merkintä ![Tietojen luokitus](media/mobile-apps-view-dashboard/power-bi-dashboard-ios-medium-classification.png) kertoo, miten kunkin raporttinäkymän tiedot on luokiteltu. Lue lisää [tietojen luokittelusta Power BI:ssä](service-data-classification.md).
 3. Voit jakaa raporttinäkymän työtilastasi. Napauta raporttinäkymäruudun oikeassa alakulmassa kolmea pistettä (**...**) ja napauta **Kutsu muita** -kohtaa.
    
    ![Kutsu-kuvake](media/mobile-apps-view-dashboard/power-bi-ipad-tile-invite-others.png)
@@ -116,31 +108,21 @@ Voit lähentää ja loitontaa raporttinäkymän eri alueita nipistämällä ja s
    
    ![Raporttinäkymän aloitusnäkymä](media/mobile-apps-view-dashboard/power-bi-android-dashboards.png)
 
-     -     Keltaiset tähdet ![Suosikkitähti](media/mobile-apps-view-dashboard/power-bi-mobile-yes-favorite-icon.png) näyttävät, mitkä raporttinäkymät ovat suosikkeja. 
+    Keltaiset tähdet ![Suosikkitähti](media/mobile-apps-view-dashboard/power-bi-mobile-yes-favorite-icon.png) näyttävät, mitkä raporttinäkymät ovat suosikkeja. 
 
-     -     Raporttinäkymän nimen (tässä tapauksessa ”MBI”) alapuolella oleva merkintä ![Tietojen luokitus](media/mobile-apps-view-dashboard/power-bi-android-dashboard-medium-classification.png) kertoo, miten kunkin raporttinäkymän tiedot on luokiteltu. Lue lisää [tietojen luokittelusta Power BI:ssä](service-data-classification.md).
-
+    Raporttinäkymän nimen (tässä tapauksessa ”MBI”) alapuolella oleva merkintä ![Tietojen luokitus](media/mobile-apps-view-dashboard/power-bi-android-dashboard-medium-classification.png) kertoo, miten kunkin raporttinäkymän tiedot on luokiteltu. Lue lisää [tietojen luokittelusta Power BI:ssä](service-data-classification.md).
 
     Power BI -raporttinäkymät näyttävät hiukan erilaisilta Android-puhelimessasi. Kaikki ruudut näkyvät saman levyisinä, ja ne on järjestetty peräkkäin ylhäältä alaspäin.
 
     ![Raporttinäkymä pystysuunnassa](media/mobile-apps-view-dashboard/pbi_andr_dash.png)
 
-     Voit myös tarkastella ruutuja vaakasuunnassa kääntämällä puhelimesi sivuttain.
-
-    > [AZURE.TIP] Jos olet raporttinäkymän omistaja, Power BI -palvelussa voit [luoda raporttinäkymästä pystysuuntaisen näkymän puhelimille](service-create-dashboard-mobile-phone-view.md). 
+    Jos olet raporttinäkymän omistaja, Power BI -palvelussa voit [luoda raporttinäkymästä pystysuuntaisen näkymän puhelimille](service-create-dashboard-mobile-phone-view.md). 
 
 1. Raporttinäkymässä napauttamalla kolmea pystysuunnassa olevaa pistettä (...) nimen vieressä voit kutsua työtoverin, päivittää tai hakea tietoja raporttinäkymästä:
    
    ![Kolme pistettä -valikko](media/mobile-apps-view-dashboard/pbi_andr_dashellipsis.png)
 2. Katso kaikki [raporttinäkymän ruudut](mobile-tiles-in-the-mobile-apps.md) sipaisemalla ylös- ja alaspäin. 
 3. Siirry raporttinäkymien aloitussivulle napauttamalla raporttinäkymän nimeä, jolloin navigointipolku avautuu. Valitse sitten **Oma työtila**.   
-
-### <a name="view-dashboards-in-landscape-mode-on-your-android-phone"></a>Raporttinäkymien tarkastelu vaakasuunnassa Android-puhelimessa
-Voit myös tarkastella raporttinäkymiä vaakasuunnassa kääntämällä puhelintasi. Raporttinäkymän asettelu muuttuu ruuduista koko raporttinäkymän näkymään, jolloin näet kaikki raporttinäkymän ruudut sellaisina kuin ne ovat Power BI -palvelussa.
-
-![Raporttinäkymä vaakasuunnassa](media/mobile-apps-view-dashboard/power-bi-android-landscape-dashboard.png)
-
-Voit lähentää ja loitontaa raporttinäkymän eri alueita nipistämällä ja siirtyä näkymässä panoroimalla. Voit edelleen avata ruudun kohdistustilassa ja käsitellä tietojasi [napauttamalla ruutua](mobile-tiles-in-the-mobile-apps.md).
 
 ## <a name="view-dashboards-on-your-android-tablet"></a>Raporttinäkymien tarkastelu Android-tabletissa
 1. Avaa Android-tabletin Power BI -sovellus ja kirjaudu sisään.
@@ -214,5 +196,5 @@ Lue lisää [raporttinäkymän puhelinnäkymän luomisesta](service-create-dashb
 * [Android-sovelluksen lataaminen](http://go.microsoft.com/fwlink/?LinkID=544867) Google Play Kaupasta  
 * [Power BI:n Android-sovelluksen käytön aloittaminen](mobile-android-app-get-started.md)  
 * [Power BI:n käytön aloittaminen](service-get-started.md)
-* Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)
+* Onko sinulla kysymyksiä? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)
 

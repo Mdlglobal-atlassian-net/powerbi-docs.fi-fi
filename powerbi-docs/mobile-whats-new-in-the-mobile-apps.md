@@ -1,28 +1,20 @@
 ---
 title: Power BI -mobiilisovellusten uudet ominaisuudet
 description: Power BI -mobiilisovellusten uudet ominaisuudet
-services: powerbi
-documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: get-started-article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 03/20/2018
+ms.component: powerbi-mobile
+ms.topic: conceptual
+ms.date: 06/05/2018
 ms.author: maggies
-ms.openlocfilehash: 29241b4c0f059540e6f1496f04b3044ebbd7d68b
-ms.sourcegitcommit: fe859130099d923ee30da6091efcc70a264dcba6
+ms.openlocfilehash: 9cf6e1a0b4e711f696d9728850352a53ac8442f6
+ms.sourcegitcommit: b25ae650643b0a62f33d7c1741307137b9cec316
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/28/2018
-ms.locfileid: "30975997"
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34799621"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Power BI -mobiilisovellusten uudet ominaisuudet
 Lisätietoja aiheeseen liittyvistä uusista ominaisuuksista:
@@ -30,6 +22,40 @@ Lisätietoja aiheeseen liittyvistä uusista ominaisuuksista:
 * [Power BI -tiimin mobiilisovelluksia käsittelevä blogi](https://powerbi.microsoft.com/blog/tag/mobile/)
 * [Power BI Desktopin uudet ominaisuudet](desktop-latest-update.md)  
 * [Power BI -palvelun uudet ominaisuudet](service-whats-new.md)  
+
+## <a name="may-2018"></a>Toukokuu 2018
+
+### <a name="mobile-drill-through-all-mobile-apps"></a>Mobiili alirakenneraportti: kaikki mobiilisovellukset
+
+Voit porautua mobiilisovelluksissa valitusta arvopisteestä raportin toiselle sivulle, jos raportin tekijä on määrittänyt tämän toiminnon. 
+
+### <a name="back-button-all-mobile-apps"></a>Takaisin-painike: kaikki mobiilisovellukset
+
+Siirtyessäsi raportissa pyyhkäisyn avulla tai valitsemalla raportin sivu toimintorivistä tai porautumista käyttämällä, takaisin-painike vie sinut takaisin edelliselle tarkastelemallesi sivulle. 
+
+### <a name="dashboard-themes-all-mobile-apps"></a>Raporttinäkymän teemat: kaikki mobiilisovellukset
+
+Kun raportin tekijä mukauttaa raporttinäkymän teemoja Power BI -palvelussa, myös mobiilisovelluksen raporttinäkymän ulkoasu ja tuntuma muuttuvat. Taustakuvat eivät kuitenkaan näy.
+
+### <a name="ios-configure-power-bi-ios-mobile-app-access-to-a-report-server-remotely"></a>iOS: Raporttipalvelimen käyttöoikeuksien etämäärittäminen Power BI iOS -mobiilisovelluksella
+
+IT-järjestelmänvalvoja voi käyttää ydintietojen hallintatyökalua määrittääkseen raporttipalvelimelle Power BI iOS -mobiilisovelluksen käyttöoikeuden. Lisätietoja saat artikkelista [iOS: Raporttipalvelimen käyttöoikeuksien etämäärittäminen Power BI -iOS-mobiilisovelluksella](report-server/configure-powerbi-mobile-apps-remote.md).
+
+### <a name="power-bi-for-mixed-reality-app-preview"></a>Power BI ja tehostettu todellisuus -sovellus (esikatselu)
+
+Power BI ja tehostettu todellisuus -sovellus nyt Microsoft Storessa. Tarkastele koontinäyttöjen ja raportteja uppoutuneena virtuaalimaailmaan tai sijoita niitä tiettyihin sijainteihin ympäristösi kontekstissa ja tarkastele niitä siellä. Katso uusi [Power BI Holelensissä -esittelyvideo](https://www.youtube.com/watch?v=J_X_nOFUBss) tai lue artikkeli uudesta [Power BI ja tehostettu todellisuus sovelluksesta](mobile-mixed-reality-app.md).
+
+
+## <a name="april-2018"></a>Huhtikuu 2018
+
+### <a name="mobile-drill-down-and-drill-up"></a>Porautuminen alas- ja ylöspäin mobiililaitteella
+
+Voit porautua mobiililaiteellasi alas- ja ylöspäin raporttivisualisointeihin. Saadaksesi uuden toiminnon käyttöön, napauta ja pidä pohjassa, jolloin työkaluvihjevalikko avautuu raporttivisualisoinnissa. Napauta sitten poraus-painikkeita, tarkastellaksesi tietoja tarkemmin. Lisätietoja [Alas- ja ylöspäin porautumisesta mobiilisovelluksissa](https://powerbi.microsoft.com/blog/drill-down-up-in-power-bi-mobile-apps/).
+
+### <a name="persistent-filters"></a>Pysyvät suodattimet
+
+Päivitimme raporttisuodattimet ja -osittajat, niin että ne tallennetaan automaattisesti Power BI:n verkkosovelluksesta Power BI:n mobiilisovellukseen. Mobiilisovelluksessa asettamasi suodattimet ja osittajat tallennetaan nyt automaattisesti Power BI:n verkkosovellukseen.
+
 
 ## <a name="march-2018"></a>Maaliskuu 2018
 
@@ -261,7 +287,7 @@ Lue [marraskuun 2016 Power BI -mobiilisovellusten ominaisuusyhteenveto](https://
 #### <a name="android-devices"></a>Android-laitteet
 **Esikatselu: Intunen mobiilisovellusten hallinta** Power BI:n Microsoft Intune Mobile Application Manager (MAM) -tuki on nyt esikatseltavissa Power BI Pron käyttäjille Android-laitteissa. 
 
-**Suosikit** Merkitse suosikkikoontinäyttösi tunnisteella Android-laitteessa ja näet kaikki omat [suosikkeihin lisäämäsi Power BI -koontinäyttösi sekä Reporting Services -mobiiliraporttisi ja suorituskykyilmaisimet](mobile-android-tablet-app-get-started.md#view-your-favorite-dashboards-kpis-and-reports) yhdessä paikassa. 
+**Suosikit** Merkitse suosikkikoontinäyttösi tunnisteella Android-laitteessa ja näet kaikki omat [suosikkeihin lisäämäsi Power BI -koontinäyttösi sekä Reporting Services -mobiiliraporttisi ja suorituskykyilmaisimet](mobile-android-app-get-started.md#view-your-favorite-dashboards-kpis-and-reports) yhdessä paikassa. 
 
 #### <a name="ios-devices"></a>iOS-laitteet
 **Linkit** Ruutujen ja visualisointien URL-osoitteet ovat nyt napsautettavia ja ne avautuvat selaimessa.

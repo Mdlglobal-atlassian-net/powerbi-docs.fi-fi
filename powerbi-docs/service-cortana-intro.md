@@ -1,25 +1,20 @@
 ---
-title: Power BI -raporttien nopea etsiminen ja tarkastelu ja raporttinäkymien käyttö Cortanan avulla
+title: Etsi ja tarkastele raporttinäkymiäsi nopeasti Cortanan avulla
 description: Käytä Cortanaa Power BI:n kanssa saadaksesi vastauksia tiedoistasi. Tämä toimii tällä hetkellä raporttien ja raporttinäkymien kanssa.
-services: powerbi
-documentationcenter: ''
 author: mihart
 manager: kfile
-editor: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 01/13/2018
 ms.author: mihart
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 11bba0ec026650e59b8757b207f5f6d596499f0a
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 5d11fd66e8b0aff15648aba6d3e397cd7fdb9bb3
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/24/2018
-ms.locfileid: "30815424"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34251640"
 ---
 # <a name="quickly-find-and-view-your-power-bi-data-using-cortana-for-power-bi"></a>Power BI -tietojen nopea etsiminen ja tarkastelu Power BI:n Cortana-ominaisuuden avulla
 Saat heti vastauksia liiketoimintaa koskeviin tärkeisiin kysymyksiisi Windows 10 -laitteilla Cortanan avulla. Power BI -integraation avulla Cortana voi noutaa avaintietoja suoraan Power BI -raporttinäkymistä ja -raporteista. Tarvitset vain Windows 10:n marraskuun 2015 version tai sitä uudemman, Cortanan, Power BI:n ja vähintään yhden tietojoukon käyttöoikeudet.

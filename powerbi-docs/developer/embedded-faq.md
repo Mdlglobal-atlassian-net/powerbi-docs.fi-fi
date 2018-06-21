@@ -1,28 +1,20 @@
 ---
 title: Usein kysyttyjä kysymyksiä – Power BI Embedded
 description: Selaa Power BI Embeddediä koskevien usein kysyttyjen kysymysten ja vastausten luetteloa.
-services: powerbi
-documentationcenter: ''
 author: markingmyname
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 03/07/2018
+ms.component: powerbi-developer
+ms.topic: conceptual
+ms.date: 05/25/2018
 ms.author: maghan
-ms.openlocfilehash: 52ff1095c063be867354a23e0e8e4908a4b4e1d7
-ms.sourcegitcommit: ee5d044db99e253c27816e0ea6bdeb9e39a2cf41
+ms.openlocfilehash: 3e1b3b59fff26242e662d90365a6b8acc98259e6
+ms.sourcegitcommit: b3b32b9b3935706d7caa091833bd32259d7ff6ee
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/08/2018
-ms.locfileid: "30974907"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34754928"
 ---
 # <a name="frequently-asked-questions-about-power-bi-embedded"></a>Usein kysyttyjä kysymyksiä – Power BI Embedded
 
@@ -59,11 +51,7 @@ Joissain tapauksissa (tavallisesti suuri) ISV haluaa käyttää P-varastointiyks
 
 ### <a name="how-many-embed-tokens-can-i-create"></a>Kuinka monta upotettavaa tunnusta voit luoda?
 
-PRO-käyttöoikeudella upotettavat tunnukset on tarkoitettu vain kehitykseen ja kehitystestaukseen, joten Power BI -päätili voi luoda vain rajallisen määrän upotettavia tunnuksia. Tuotantoympäristössä upottamista varten täytyy [ostaa kapasiteettia](https://docs.microsoft.com/power-bi/developer/embedded-faq#technical). Kun olet ostanut kapasiteettia, voit luoda upotettavia tunnuksia rajattomasti.
-
-### <a name="when-will-power-bi-embedded-be-available-in-azure"></a>Milloin Power BI Embedded on käytettävissä Azuressa?
-
-Power BI Embedded on käytettävissä nyt.
+PRO-käyttöoikeudella upotettavat tunnukset on tarkoitettu kehitystestaukseen, joten Power BI -päätili voi luoda vain rajallisen määrän upotettavia tunnuksia. Tuotantoympäristössä upottamista varten täytyy [ostaa kapasiteettia](#technical). Kun olet ostanut kapasiteettia, voit luoda upotettavia tunnuksia rajattomasti. Siirry [Hae käytettävissä olevat ominaisuudet](https://msdn.microsoft.com/library/mt846473.aspx) -kohtaan tarkistaaksesi nykyisten upotuksien käyttöarvon prosentteina.
 
 ## <a name="technical"></a>Tekniset
 
@@ -75,7 +63,7 @@ Power BI Embedded on ohjelmointirajapintojen joukko, joiden avulla kehittäjät 
 
 Alla on osittainen luettelo eroista näiden ratkaisujen yhteydessä käytettävien ominaisuuksien välillä.
 
-|Ominaisuus  |Power BI Embedded<br>(A-varastointiyksiköt) |Power BI Premium -kapasiteetti<br>(EM-varastointiyksiköt)  |
+|Ominaisuus  |Power BI Embedded<br>(A-varastointiyksiköt) |Power BI Premium -kapasiteetti<br>(EM-varastointiyksiköt)  | 
 |---------|---------|---------|
 |Upotusartefaktit Power BI -sovelluksen työtiloista     |Azure-kapasiteetti |Office 365 -kapasiteetti |
 |Raporttien käyttämiseen vaadittu Power BI -käyttöoikeus |Ei  |Kyllä |
@@ -115,6 +103,8 @@ Sovelluksen käyttäjien todentamisen ja käyttöoikeuksien myöntämisen toteut
 
 Jos sinulla on jo Azure AD -vuokraaja, voit käyttää olemassa olevaa hakemistoa tai voit luoda uuden Azure AD-vuokraajan upotetun sovelluksen sisällön suojaamista varten.
 
+Voit käyttää Azure Active Directoryn todentamiskirjastoa saadaksesi AAD -tunnuksen - https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-authentication-libraries. Asiakaskirjastot ovat saatavilla useille alustoille.
+
 ### <a name="how-is-power-bi-embedded-different-from-other-azure-services"></a>Miten Power BI Embedded poikkeaa muista Azure-palveluista?
 
 ISV:llä/kehittäjällä on oltava Power BI -tili, jotta Power BI Embedded on mahdollista ostaa Azuressa. Oma Power BI Embedded -käyttöönottoalueesi määräytyy Power BI -tilisi mukaan. Hallitse Power BI Embedded -resurssia Azuressa seuraavien toimintojen suorittamiseksi:
@@ -139,14 +129,6 @@ Kaakkois-Australia; Brasilia, etelä; Kanada, keskinen; Itä-Yhdysvallat 2; Inti
 
 Power BI Embedded on saatavissa Azuren kautta.
 
-### <a name="how-power-bi-embedded-be-metered"></a>Miten Power BI Embeddedin käyttö laskutetaan?
-
-Power BI Embeddedin käyttö laskutetaan tuntiperusteisesti.
-
-### <a name="how-does-the-usage-of-power-bi-embedded-show-up-on-my-bill"></a>Miten Power BI Embeddedin käyttö näkyy laskussani?
-
-Power BI Embeddedin laskutus perustuu ennustettavissa olevaan tuntihintaan, joka pohjautuu käyttöön otetun solmun (tai käyttöön otettujen solmujen) tyyppiin. Ota huomioon, että sinua laskutetaan niin kauan kuin resurssi on aktiivinen, vaikka et käyttäisi sitä. Jos haluat laskutuksen loppuvan, sinun täytyy aktiivisesti keskeyttää resurssi. Keskeytys voidaan tehdä Azuren tai ARM-ohjelmointirajapintojen kautta.
-
 ### <a name="what-happens-if-i-already-purchased-power-bi-premium-and-now-i-want-some-of-the-benefits-of-power-bi-embedded-in-azure"></a>Mitä tapahtuu, jos olen jo ostanut Power BI Premiumin ja haluan nyt hyödyntää joitain Power BI Embeddedin etuja Azuressa?
 
 Asiakkaat jatkavat aiempien Power BI Premium -ostosten maksamista kuluvan sopimusjakson loppuun saakka ja voivat sitten vaihtaa Power BI Premium -ostoksiaan tarpeen mukaan.
@@ -154,6 +136,14 @@ Asiakkaat jatkavat aiempien Power BI Premium -ostosten maksamista kuluvan sopimu
 ### <a name="do-i-still-have-to-buy-power-bi-premium-to-get-access-to-power-bi-embedded"></a>Pitääkö minun yhä ostaa Power BI Premium, jotta voin käyttää Power BI Embeddediä?
 
 Ei. Power BI Embedded sisältää Azure-pohjaisen kapasiteetin. Sinun täytyy ottaa se käyttöön ja jakaa ratkaisusi asiakkaille.
+
+### <a name="whats-the-purchase-commitment-for-power-bi-embedded"></a>Mihin asiakkaan on sitouduttava, kun hän ostaa Power BI Embeddedin? 
+
+Asiakkaat voivat muuttaa käyttötapaansa tuntipohjaisesti. Power BI Embedded -palvelu ei vaadi kuukausittaista tai vuosittaista sitoutumista.
+
+### <a name="how-does-the-usage-of-power-bi-embedded-show-up-on-my-bill"></a>Miten Power BI Embeddedin käyttö näkyy laskussani?
+
+Power BI Embeddedin laskutus perustuu ennustettavissa olevaan tuntihintaan, joka pohjautuu käyttöön otetun solmun (tai käyttöön otettujen solmujen) tyyppiin. Ota huomioon, että sinua laskutetaan niin kauan kuin resurssi on aktiivinen, vaikka et käyttäisi sitä. Jos haluat laskutuksen loppuvan, sinun täytyy aktiivisesti keskeyttää resurssi.
 
 ### <a name="who-needs-a-power-bi-pro-license-for-power-bi-embedded-and-why"></a>Kuka tarvitsee Power BI Pro -käyttöoikeuden Power BI Embeddediä varten ja miksi?
 
@@ -169,16 +159,80 @@ Kyllä, voit käyttää [Azure-saldoasi](https://azure.microsoft.com/free/) Powe
 
 Power BI Embedded on osa Azurea, joten palvelua on mahdollista käyttää [rekisteröitymisen yhteydessä saadulla 170 euron saldolla](https://azure.microsoft.com/free/).
 
-### <a name="whats-the-purchase-commitment-for-power-bi-embedded"></a>Mihin asiakkaan on sitouduttava, kun hän ostaa Power BI Embeddedin? 
+### <a name="is-power-bi-embedded-available-for-sovereign-clouds-us-government-germany-china"></a>Onko Power BI Embedded saatavilla maakohtaisissa pilvipalveluissa (Yhdysvaltain julkishallinto, Saksa, Kiina)?
 
-Asiakkaat voivat muuttaa käyttötapaansa tuntipohjaisesti. Power BI Embedded -palvelu ei vaadi kuukausittaista tai vuosittaista sitoutumista.
-
-### <a name="where-is-power-bi-embedded-available-us-government-germany-china-what-is-the-timing"></a>Missä Power BI Embedded on käytettävissä? Yhdysvaltain julkishallinnossa? Saksassa? Kiinassa? Mikä on ajoitus?
-
-Power BI Embedded on käytettävissä Azuren kaupallisissa pilvipalveluissa ja Yhdysvaltain julkishallinnon pilvipalvelussa.  Käytettävyys maakohtaisissa pilvipalveluissa Saksassa ja Kiinassa lisätään tulevaisuudessa.
+Power BI Embedded on saatavilla joissakin [maakohtaisissa pilvipalveluissa](embed-sample-for-customers-sovereign-clouds.md). Se **EI** ole vielä saatavilla Kiinan pilvipalvelussa.
 
 ### <a name="is-power-bi-embedded-available-for-non-profits-and-educational"></a>Onko Power BI Embedded käytettävissä järjestö- ja opetustarkoituksiin?
 
 Voittoa tavoittelemattomat järjestöt ja oppilaitokset voivat ostaa Azuren. Näille asiakastyypeille ei ole erikoishinnoittelua Azuressa.
 
-Onko sinulla muuta kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
+## <a name="power-bi-workspace-collection"></a>Power BI ‑työtilakokoelma
+
+### <a name="what-is-power-bi-workspace-collection"></a>Mikä on Power BI ‑työtilakokoelma?
+
+**Power BI -työtilakokoelman** (**Power BI Embedded** Versio 1) on ratkaisu, joka perustuu **Power BI -työtilakokoelman** Azure-resurssiin. Sen avulla voit luoda asiakkaillesi **Power BI Embedded** -sovelluksia **Power BI -työtilakokoelma** -työkalun Power BI -sisältöä käyttämällä, erillisiä ohjelmointirajapintoja ja työtilakokoelma-avaimia antaaksesi sovellukselle käyttöoikeuden Power BI:hin.
+
+### <a name="can-i-migrate-from-power-bi-workspace-collection-to-power-bi-embedded"></a>Voinko siirtyä Power BI -työtilakokoelmasta Power BI Embeddediin?
+
+1. Voit käyttää siirtotyökalua kloonataksesi **Power BI -työtilakokoelma** -sisällön Power BI:hin - https://docs.microsoft.com/power-bi/developer/migrate-from-powerbi-embedded#content-migration.
+
+2. Aloita **Power BI Embedded** -sovelluksen soveltuvuusselitys, joka käyttää Power BI -sisältöä.
+
+3. Kun olet valmis tuotantoon, osta **Power BI Embeddedille** varattua kapasiteettia ja määritä Power BI sisältö (työtila) kyseiselle kapasiteetille.
+
+>[!Note]
+Voit jatkaa **Power BI t-työtilakokoelman** käyttöä sillä aikaa kun rinnakkaista työtilaa luodaan **Power BI Embedded** -ratkaisulla. Kun olet valmis, voit siirtää asiakkaasi uuteen **Power BI Embeddediin** ja poistaa **Power BI Workspace Collection** käytöstä.
+
+Katso lisätietoja artikkelista [Miten Power BI -työtilakokoelman sisältö siirretään Power Embeddediin](https://docs.microsoft.com/power-bi/developer/migrate-from-powerbi-embedded)
+
+### <a name="is-power-bi-workspace-collection-on-a-path-to-be-deprecated"></a>Ollaanko Power BI -työtilakokoelmaa lakkauttamassa?
+
+Kyllä, mutta asiakkaat, jotka käyttävät **Power BI -työtilakokoelmaa**, voivat jatkaa sen käyttöä kunnes se poistetaan käytöstä. Asiakkaat voivat luoda uusia työtilakokoelmia ja **Power BI Embedded** -sovelluksia, jotka käyttävät vielä **Power BI -työtilakokoelmaa**.
+
+Tämä tarkoittaa kuitenkin sitä, ettei uusia ominaisuuksia lisätä **Power BI -työtilakokoelmaan** ja asiakkaita kehotetaan valmistautumaan siirtymään uuteen **Power BI Embeddediin**.
+### <a name="when-will-power-bi-workspace-collection-support-be-discontinued"></a>Koska Power BI -työtilakokoelman tuki lakkautetaan?
+
+Asiakkaat, jotka käyttävät **Power BI -työtilakokoelmaa** voivat jatkaa sen käyttöä 2018 kesäkuun loppuun asti tai tukisopimuksensa loppuun asti.
+
+### <a name="in-what-regions-can-pbi-workspace-collection-be-created"></a>Millä alueilla PBI-työtilakokoelmia voi luoda?
+
+Saatavilla alueilla: Kaakkois-Australia; Brasilia, etelä; Kanada, keskinen; Itä-Yhdysvallat 2; Japani, itä; Yhdysvaltojen pohjoinen keskiosa; Pohjois-Eurooppa; Yhdysvaltojen eteläinen keskiosa; Kaakkois-Aasia; Yhdistynyt kuningaskunta, eteläinen; Länsi-Eurooppa; Intia, läntinen ja Länsi-Yhdysvallat.
+
+### <a name="why-should-i-migrate-from-pbi-workspace-collection-to-power-bi-embedded"></a>Miksi minun pitäisi siirtyä PBI -työtilakokoelmasta Power BI Embeddediin?
+
+**Power BI Embedded** sisältää uusia ominaisuuksia ja toimintoja, jotka eivät ole käytössä **Power BI -työtilakokoelmassa**.
+
+Seuraavassa joitakin ominaisuuksista:
+* Kaikki PBI-tietolähteet ovat tuettuja **Power BI -työtilakokoelman**sisältämän kahden tietolähteen sijaan). 
+* Uudet ominaisuudet, kuten usein kysytyt kysymykset, kirjamerkit, raporttinäkymä ja ruutu-upotukset, mukautettu valikko, jne. ovat tuettuina vain **Power BI Embeddedissä**.
+* Kapasiteettilaskutusmalli.
+
+## <a name="onboarding-experience-tool-for-embedding"></a>Upottamiseen tarkoitettu perehdyttämiskokemustyökalu
+
+### <a name="what-is-the-onboarding-experience-tool"></a>Mikä on upottamiseen tarkoitettu perehdyttämiskokemustyökalu?
+
+[Upottamiseen tarkoitetun perehdyttämiskokemustyökalun](https://aka.ms/embedsetup) avulla voit nopeasti aloittaa ja ladata mallisovelluksia, joilla voit aloittaa upottamisen Power BI:ssä.
+
+### <a name="which-solution-should-i-choose"></a>Kumpi ohjelma kannattaa valita?
+
+* [Asiakkaille tarkoitettu upotus](embedding.md#embedding-for-your-customers) mahdollistaa raporttinäkymien ja raporttien upottamisen käyttäjille, joilla ei ole Power BI -tiliä. Suorita [asiakkaille tarkoitettu upotus](https://aka.ms/embedsetup/AppOwnsData).
+* [Organisaatiolle tarkoitettu upotus](embedding.md#embedding-for-your-organization) mahdollistaa Power BI -palvelun laajentamisen. Suorita [organisaatiolle tarkoitettu upotus](https://aka.ms/embedsetup/UserOwnsData).
+
+### <a name="ive-downloaded-the-sample-app-which-solution-do-i-choose"></a>Olen ladannut mallisovelluksen, kumpaa ohjelmaa minun tulee käyttää?
+
+Jos käytät **asiakkaille tarkoitettua upotusta**, tallenna ja pura *PowerBI-Developer-Samples.zip* -tiedosto. Avaa sitten *PowerBI-Developer-Samples-master\App Owns Data*-kansio ja suorita *PowerBIEmbedded_AppOwnsData.sln*-tiedosto.
+
+Jos käytät **organisaatiolle tarkoitettua upotusta**, tallenna ja pura *PowerBI-Developer-Samples.zip* -tiedosto. Avaa sitten *PowerBI-Developer-Samples-master\User Owns Data\integrate-report-web-app* -kansio ja suorita *pbi-saas-embed-report.sln* -tiedosto.
+
+### <a name="how-can-i-edit-my-registered-application"></a>Miten voi muokata rekisteröityä sovellusta?
+
+Voit oppia muokkaamaan AAD-rekisteröityjä sovelluksia [täällä](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications#updating-an-application).
+
+### <a name="how-can-i-edit-my-power-bi-user-profile-or-data"></a>Miten voit muokata Power BI käyttäjäprofiilia tai tietoja?
+
+Voit oppia muokkaamaan Power BI -tietoja [täällä](https://docs.microsoft.com/en-us/power-bi/service-basic-concepts).
+
+Jos haluat lisätietoja, katso [upotettujen sovellusten vianmääritys](embedded-troubleshoot.md)
+
+Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)

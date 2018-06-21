@@ -1,44 +1,27 @@
 ---
-title: Yhteyden muodostaminen tietolähteeseen
-description: Lue lisätietoja siitä, millaisiin tietolähteisiin voit muodostaa yhteyden Power BI -raporttipalvelimessa.
-services: powerbi
-documentationcenter: ''
+title: Sivutetun raportin tietolähteet Power BI -raporttipalvelimessa
+description: Lisätietoja tietolähteistä, joihin sivutetut raportit (.rdl) voivat muodostaa yhteyden Power BI -raporttipalvelimessa.
 author: markingmyname
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 11/01/2017
+ms.component: powerbi-report-server
+ms.topic: conceptual
+ms.date: 05/17/2018
 ms.author: maghan
-ms.openlocfilehash: 35312fcf4301a7655893c1824b93b7718d6ae97f
-ms.sourcegitcommit: 6e693f9caf98385a2c45890cd0fbf2403f0dbb8a
+ms.openlocfilehash: d4775ad8c9ef5bd039c09d7cfb8bb3b881405754
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/30/2018
-ms.locfileid: "30973097"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34310517"
 ---
-# <a name="connecting-to-data-sources"></a>Yhteyden muodostaminen tietolähteeseen
-Lue lisätietoja siitä, millaisiin tietolähteisiin voit muodostaa yhteyden Power BI -raporttipalvelimessa.
-
-## <a name="power-bi-reports"></a>Power BI -raportit
-Power BI -raporteissa voit käsitellä tietoja, jotka on tuotu tai käytetty Analysis Services -live-yhteydellä sekä DirectQueryn avulla. Lokakuun 2017 julkaisu sisältää tuen muille kuin Analysis Services -live-yhteyksille. Tämä sisältää tuodut tiedot. Voit ladata lokakuun 2017 julkaisun osoitteesta [powerbi.com](https://powerbi.microsoft.com/report-server/).
-
-Katso tietoja siitä, mitä tietolähteitä tuetaan, kohdasta [Power BI -raporttien tietolähteet Power BI -raporttipalvelimessa](data-sources.md).
-
-## <a name="other-reports"></a>Muut raportit
-Muut raporttityypit tukevat samoja tietolähteitä, jotka SQL Server Reporting Services sisältää. Lisätietoja on artikkelissa [Reporting Services -palvelun tukemat tietolähteet](https://docs.microsoft.com/sql/reporting-services/report-data/data-sources-supported-by-reporting-services-ssrs).
+# <a name="paginated-report-data-sources--in-power-bi-report-server"></a>Sivutetun raportin tietolähteet Power BI -raporttipalvelimessa
+Reporting Servicesin sivutetut raportit Power BI -raporttipalvelimessa tukevat samoja tietolähteitä, joita tuetaan SQL Server Reporting Servicesissä. Lisätietoja on kohdassa [Reporting Services -palvelun tukemat tietolähteet](https://docs.microsoft.com/sql/reporting-services/report-data/data-sources-supported-by-reporting-services-ssrs).
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
-[Käyttöopas](user-handbook-overview.md)  
-[Pikaopas: sivutetut raportit](quickstart-create-paginated-report.md)  
-[Pikaopas: Power BI -raportit](quickstart-create-powerbi-report.md)
+Nyt kun olet yhdistänyt tietolähteeseen, [luo sivutettu raportti](quickstart-create-paginated-report.md).  
 
-Onko sinulla muuta kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
+
+Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
 

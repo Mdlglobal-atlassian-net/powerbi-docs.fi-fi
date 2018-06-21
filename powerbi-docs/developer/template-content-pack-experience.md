@@ -1,33 +1,25 @@
 ---
 title: Mallisisältöpaketin kokemukset Power BI:ssä
 description: Mallisisältöpaketin kokemukset
-services: powerbi
-documentationcenter: ''
 author: markingmyname
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-developer
+ms.topic: conceptual
 ms.date: 10/09/2017
 ms.author: maghan
-ms.openlocfilehash: fb1aaded94ce5411cf26257a1e561125cec9a347
-ms.sourcegitcommit: 6e693f9caf98385a2c45890cd0fbf2403f0dbb8a
+ms.openlocfilehash: 1a29767eb76122865e93927bbbec1fbdcebe5678
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/30/2018
-ms.locfileid: "30973072"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34290771"
 ---
 # <a name="template-content-pack-experiences-in-power-bi"></a>Mallisisältöpaketin kokemukset Power BI:ssä
 Tässä osassa esitellään tyypillinen käyttökokemus, kun käyttäjä muodostaa yhteyden ISV:n [sisältöpakettiin](../service-connect-to-services.md). 
 
-Kokeile yhdistämistä itse muodostamalla yhteys julkaistuun sisältöpakettiin osoitteessa https://app.powerbi.com/getdata/services (käytä esimerkiksi alla esitettyä [GitHub-sisältöpakettia](https://app.powerbi.com/getdata/services/github)).
+Kokeile yhdistämistä itse muodostamalla yhteys julkaistuun sisältöpakettiin osoitteessa https://app.powerbi.com/getdata/services (käytä esimerkiksi alla kuvailtua [GitHub-sisältöpakettia](https://app.powerbi.com/getdata/services/github)).
 
 ## <a name="connect"></a>Yhdistä
 Aluksi käyttäjä selaa sisältöpakettivalikoimaa ja valitsee sisältöpaketin, johon yhteys muodostetaan. Sisältöpakettimerkintä sisältää nimen, kuvakkeen ja kuvaavan tekstin, joka antaa lisätietoa käyttäjälle.

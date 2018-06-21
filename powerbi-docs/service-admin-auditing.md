@@ -1,79 +1,46 @@
 ---
 title: Valvonnan käyttö organisaatiossa
 description: Lue, miten voit Power BI:n avulla käyttää valvontaa toteutettujen toimien seuraamista ja tutkimista varten. Voit käyttää tietoturva- ja yhteensopivuuskeskusta tai PowerShelliä.
-services: powerbi
-documentationcenter: ''
 author: mgblythe
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 12/12/2017
+ms.component: powerbi-admin
+ms.topic: conceptual
+ms.date: 04/10/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 46f8d11d45423a9f7df96ac4d1e59c5d805304a7
-ms.sourcegitcommit: 8552a34df8e6141eb704314c1a019992901d6e78
+ms.openlocfilehash: bcf012d94dedfd912479c3e51e0de388b177c294
+ms.sourcegitcommit: b3b32b9b3935706d7caa091833bd32259d7ff6ee
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/08/2018
-ms.locfileid: "30977302"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34755020"
 ---
 # <a name="using-auditing-within-your-organization"></a>Valvonnan käyttö organisaatiossa
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/zj4kA39jV_4?showinfo=0" frameborder="0" allowfullscreen></iframe>
-
 Lue, miten voit Power BI:n avulla käyttää valvontaa toteutettujen toimien seuraamista ja tutkimista varten. Voit käyttää tietoturva- ja yhteensopivuuskeskusta tai PowerShelliä.
 
-Sen tietäminen, kuka tekee mitä toimia missäkin Power BI -vuokraajasi kohteissa, voi olla ratkaisevaa, kun autetaan organisaatiotasi toteuttamaan sille asetetut vaatimukset, kuten säädösten noudattaminen ja tietueiden hallinta.
+Sen tietäminen, kuka tekee mitä toimia missäkin Power BI -vuokraajasi kohteissa, voi olla ratkaisevaa, kun autetaan organisaatiotasi toteuttamaan sille asetetut vaatimukset, kuten säädösten noudattaminen ja tietueiden hallinta. Voit käyttää Power BI:n valvontatoimintoa valvoaksesi käyttäjien suorittamia toimia, kuten Näytä raportti ja Näytä koontinäyttö. Valvonnan avulla ei voi valvoa käyttöoikeuksia. 
 
 Voit suodattaa valvontatiedot päivämääräalueen, käyttäjän, koontinäytön, raportin, tietojoukon ja toimintatyypin mukaan. Voit myös ladata toimet CSV-tiedostoon (tiedosto, jonka arvot on erotettu luetteloerottimella) offline-tilassa analysointia varten.
-
-> [!NOTE]
-> Power BI:n valvontatoiminto on esikatselutilassa ja on käytettävissä kaikilla tietoalueilla.
 
 ## <a name="requirements"></a>Vaatimukset
 Seuraavat vaatimukset on täytettävä valvontalokien käyttämistä varten:
 
 - Jotta voisit käyttää Office 365:n tietoturva- ja yhteensopivuuskeskuksen valvontaosaa, sinulla on oltava Exchange Online -lisenssi (sisältyy Office 365 Enterprise E3- ja E5 -tilauksiin).
-- Sinun on joko oltava yleinen järjestelmänvalvoja tai sinulla on oltava Exchange-järjestelmänvalvojarooli, joka mahdollistaa valvontalokin käytön. 
 
-  Exchange-järjestelmänvalvojarooleja hallitaan Exchangen hallintakeskuksen kautta. Lisätietoja on kohdassa [Exchange Onlinen käyttöoikeudet](https://technet.microsoft.com/library/jj200692(v=exchg.150).aspx).
+- Sinun on joko oltava yleinen järjestelmänvalvoja tai sinulla on oltava Exchange-järjestelmänvalvojarooli, joka mahdollistaa valvontalokin käytön. Exchange-järjestelmänvalvojarooleja hallitaan Exchangen hallintakeskuksen kautta. Lisätietoja on kohdassa [Exchange Onlinen käyttöoikeudet](https://technet.microsoft.com/library/jj200692(v=exchg.150).aspx).
 
 - Jos pääset valvontalokiin, mutta et ole yleinen järjestelmänvalvoja tai Power BI -palvelun järjestelmänvalvoja, et voi käyttää Power BI -hallintaportaalia. Tässä tapauksessa sinun on saatava suora linkki Office 365:n tietoturva- ja yhteensopivuuskeskukseen.
 
-## <a name="enabling-auditing-functionality-in-the-power-bi-admin-portal"></a>Valvontatoiminnon käyttöönotto Power BI -hallintaportaalissa
-
-Sinun on otettava organisaatiosi osalta valvonta käyttöön, jotta voit käsitellä raportteja. Voit tehdä tämän hallintaportaalin vuokraaja-asetuksissa.
-
-1. Valitse **hammasrataskuvake** oikeasta yläkulmasta.
-
-2. Valitse **Hallintaportaali**.
-   
-   ![](media/service-admin-auditing/powerbi-admin.png)
-
-3. Valitse **Vuokraaja-asetukset**.
-   
-   ![](media/service-admin-auditing/powerbi-admin-tenant-settings.png)
-
-4. Kytke päälle **Valvontalokien luominen sisäisen toiminnan valvonnan ja vaatimustenmukaisuuden tarpeisiin**.
-
-5. Valitse **Käytä**.
-
-Power BI alkaa kirjata erilaisia toimia, joita käyttäjäsi suorittavat Power BI:ssä. Kestää jopa 48 tuntia, ennen kuin lokit näkyvät O365:n tietoturva- ja yhteensopivuuskeskuksessa. Lisätietoja kirjattavista toimista on kohdassa [Luettelo Power BI:n valvomista toimista](#list-of-activities-audited-by-power-bi).
-
-> [!NOTE]
-> Jos haluat ottaa Power BI:n valvonnan käyttöön vuokraajassasi, siinä on oltava vähintään yksi Exchange-postilaatikon käyttöoikeus.
+- Tarkastellaksesi vuokraajasi Power BI -valvontalokeja sinulla on oltava vähintään yksi vuokraajan Exchange-postilaatikko.
 
 ## <a name="accessing-your-audit-logs"></a>Valvontalokien käyttö
 
 Voit valvoa Power BI -lokeja käymällä O365:n tietoturva- ja yhteensopivuuskeskuksessa.
+
+Valvonnan käyttöönoton ja valvontatietojen tarkastelumahdollisuuden välillä voi olla jopa 48 tunnin viive. Jos et näe tietoja välittömästi, tarkista valvontalokit myöhemmin. Jos haet oikeuksia hallintalokien tarkasteluun, samanlainen viive voi esiintyä, ennen kuin oikeudet on myönnetty.
 
 1. Valitse **hammasrataskuvake** oikeasta yläkulmasta.
 
@@ -89,8 +56,7 @@ Voit valvoa Power BI -lokeja käymällä O365:n tietoturva- ja yhteensopivuuskes
 
 Vaihtoehtoisesti voit selata kohtaan [Office 365 | Tietoturva ja yhteensopivuus](https://protection.office.com/#/unifiedauditlog).
 
-> [!NOTE]
-> Voi sallia muille kuin järjestelmänvalvojatileille valvontalokin käytön myöntämällä oikeuksia Exchange Online -hallintakeskuksessa. Voit esimerkiksi määrittää käyttäjän olemassa olevaan rooliryhmään, kuten organisaation hallinta, tai luoda uuden rooliryhmän roolilla valvontalokit. Lisätietoja on artikkelissa [Exchange Onlinen käyttöoikeudet](https://technet.microsoft.com/library/jj200692\(v=exchg.150\).aspx).
+Voi sallia muille kuin järjestelmänvalvojatileille valvontalokin käytön myöntämällä oikeuksia Exchange Online -hallintakeskuksessa. Voit esimerkiksi määrittää käyttäjän olemassa olevaan rooliryhmään, kuten organisaation hallinta, tai luoda uuden rooliryhmän roolilla valvontalokit. Lisätietoja on artikkelissa [Exchange Onlinen käyttöoikeudet](https://technet.microsoft.com/library/jj200692\(v=exchg.150\).aspx).
 
 ## <a name="search-only-power-bi-activities"></a>Vain Power BI -toimien haku
 

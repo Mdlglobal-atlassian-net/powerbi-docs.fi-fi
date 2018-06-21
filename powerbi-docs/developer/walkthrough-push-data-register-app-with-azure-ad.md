@@ -1,28 +1,20 @@
 ---
 title: Sovelluksen Azure AD -rekisteröinti
 description: Vaihe vaiheelta - Tietojen syöttäminen tietojoukkoon - sovelluksen rekisteröinti Azure AD:n kanssa
-services: powerbi
-documentationcenter: ''
 author: markingmyname
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: get-started-article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-developer
+ms.topic: conceptual
 ms.date: 08/10/2017
 ms.author: maghan
-ms.openlocfilehash: 48ab2a51a479269b8846288b64089964a0544681
-ms.sourcegitcommit: 6e693f9caf98385a2c45890cd0fbf2403f0dbb8a
+ms.openlocfilehash: 660f79eab32ae7ade5cea990c6fc152bb9507297
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/30/2018
-ms.locfileid: "30973172"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34285964"
 ---
 # <a name="step-1-register-an-app-with-azure-ad"></a>Vaihe 1: Sovelluksen Azure AD -rekisteröinti
 Tämä artikkeli on osa vaiheittaisia ohjeita, joilla [tiedot syötetään tietojoukkoon](walkthrough-push-data.md).
@@ -40,7 +32,7 @@ Seuraavassa on ohjeet sovelluksen rekisteröimiseksi Azure AD:ssa.
 2. Valitse **Kirjaudu sisään nykyisellä tilillesi** ja kirjaudu sisään Power BI -tilillesi.
 3. Syötä **sovelluksen nimi**, kuten ”Tietojen syöttö tietojoukkoon”.
 4. Kohdasta **Sovelluksen tyyppi**,valitaan **Alkuperäinen sovellus**.
-5. Syötä **Uudelleenohjauksen URL-osoite**, kuten **https://login.live.com/oauth20_desktop.srf**. **Native client -sovelluksessa** uudelleenohjauksen url-osoite antaa **Azure AD:lle** lisätietoja tietystä sovelluksesta, joka sen todentaa. Client-sovelluksen vakio-url on https://login.live.com/oauth20_desktop.srf.
+5. Syötä **Uudelleenohjauksen URL-osoite**, kuten **https://login.live.com/oauth20_desktop.srf**. **Native client -sovelluksessa** uudelleenohjauksen url-osoite antaa **Azure AD:lle** lisätietoja tietystä sovelluksesta, joka sen todentaa. Asiakkaan sovelluksen vakio-Uri on https://login.live.com/oauth20_desktop.srf.
 6. **Käytettävien API-liittymien valintaa varten**  valitaan **Kaikkien tietojoukkojen luku- ja kirjoitusoikeus**. Lue lisää kaikkien Power BI-sovellusten käyttöoikeuksista kohdasta [Power BI -käyttöoikeudet](power-bi-permissions.md).
 7. Valitse **Rekisteröi sovellus** ja tallenna luotu **Asiakastunnus**. **Asiakastunnus** tunnistaa sovelluksen Azure AD:ssa.
 

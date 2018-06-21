@@ -4,8 +4,6 @@ Ongelmia voi esiintyä paljon, jos yhdyskäytävän versio on vanhentunut.  Hyv�
 ## <a name="common-issues"></a>Yleisiä ongelmia
 Seuraavassa on joitakin yleisiä ongelmia ja ratkaisuja, joista on ollut apua useille asiakkaille ympäristöissä, jotka rajoittavat internetin käyttöä.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/-t7RO6mHATI?showinfo=0" frameborder="0" allowfullscreen></iframe>
-
 ### <a name="authentication-to-proxy-server"></a>Välityspalvelimen todennus
 Välityspalvelin voi vaatia todennuksen toimialueen käyttäjätililtä. Oletusarvoisesti yhdyskäytävä käyttää palvelun SID-tunnusta Windows-palveluun kirjautuvalle käyttäjälle. Kirjautuvan käyttäjän muuttamisesta toimialueen käyttäjäksi voi olla tässä apua. Katso lisätietoja ohjeaiheesta [Yhdyskäytävän palvelutilin muuttaminen toimialueen käyttäjäksi](../service-gateway-proxy.md#changing-the-gateway-service-account-to-a-domain-user).
 
@@ -23,4 +21,7 @@ Voit pakottaa yhdyskäytävän vaihtamaan tietoja Azuren palveluväylän kanssa 
 ## <a name="installation"></a>Asennus
 ### <a name="error-failed-to-add-user-to-group---2147463168---pbiegwservice---performance-log-users---"></a>Virhe: Käyttäjän lisääminen ryhmään epäonnistui.  (-2147463168   PBIEgwService   Performance Log Users   )
 Voit saada tämän virheviestin, jos yrität asentaa yhdyskäytävää toimialueen ohjauskoneeseen. Toimialueen ohjauskoneen käyttöönottoa ei tueta. Sinun on otettava yhdyskäytävä käyttöön koneella, joka ei ole toimialueen ohjauskone.
+
+### <a name="installation-fails"></a>Asennuksen epäonnistuminen
+Asennusvirheitä saattaa ilmetä, jos tietokoneen virustentorjuntaohjelmisto on vanhentunut. Voit joko päivittää virustentorjuntaohjelmiston tai poistaa käytöstä virustentorjunnan vain yhdyskäytävän asennuksen ajaksi.
 

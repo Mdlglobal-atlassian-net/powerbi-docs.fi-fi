@@ -1,32 +1,24 @@
 ---
 title: Yhteyden muodostaminen Microsoft Dynamics NAViin Power BI:n avulla
 description: Microsoft Dynamics NAV Power BI:lle
-services: powerbi
-documentationcenter: ''
 author: SarinaJoan
 manager: kfile
-backup: maggiesMSFT
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: maggiesMSFT
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 10/16/2017
+ms.component: powerbi-service
+ms.topic: conceptual
+ms.date: 05/30/2018
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: b06e756732c2c12e822967fbcfeb208bcb1ae334
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 498a66c5e675fc8a394f3c3a0dc2ef7ff7fa99c2
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/24/2018
-ms.locfileid: "30815669"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34722424"
 ---
 # <a name="connect-to-microsoft-dynamics-nav-with-power-bi"></a>Yhteyden muodostaminen Microsoft Dynamics NAViin Power BI:n avulla
-Merkityksellisten tietojen saaminen Microsoft Dynamics NAV-tietoihin on helppoa Power BI:n avulla. Power BI noutaa sekä Myynti- että Rahoitus-tiedot ja luo niiden pohjalta sovelluksen raporttinäkymin ja raportein. Power BI edellyttää oikeuksia taulukoihin, joista tiedot on noudettu, tässä tapauksessa myynti- ja rahoitustiedot. Lisätietoja vaatimuksista on alla. Kun olet asentanut sovelluksen, voit tarkastella koontinäyttöä ja raportteja Power BI-palvelussa ([https://powerbi.com](https://powerbi.com)) ja Power BI -mobiilisovelluksissa. 
+Merkityksellisten tietojen saaminen Microsoft Dynamics NAV-tietoihin on helppoa Power BI:n avulla. Power BI noutaa sekä Myynti- että Rahoitus-tiedot ja luo niiden pohjalta sovelluksen raporttinäkymin ja raportein. Power BI edellyttää oikeuksia taulukoihin, joista tiedot on noudettu, tässä tapauksessa myynti- ja rahoitustiedot. Lisätietoja vaatimuksista on alla. Kun olet asentanut sovelluksen, voit tarkastella raporttinäkymää ja raportteja Power BI -palvelussa ([https://powerbi.com](https://powerbi.com)) ja Power BI -mobiilisovelluksissa. 
 
 [Yhteyden muodostaminen Microsoft Dynamics NAV for Power BI:n kanssa](https://app.powerbi.com/getdata/services/microsoft-dynamics-nav) tai Lue lisää [Dynamics NAV-integroinnista](https://powerbi.microsoft.com/integrations/microsoft-dynamics-nav) Power BI:n avulla.
 

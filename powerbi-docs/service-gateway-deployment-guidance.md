@@ -1,31 +1,24 @@
 ---
 title: Power BI:n tietoyhdyskäytävän käyttöönotto-ohjeet
 description: Opi parhaat käytännöt ja huomioon otettavia seikkoja Power BI:n tietoyhdyskäytävän käyttöönotosta.
-services: powerbi
-documentationcenter: ''
 author: mgblythe
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: powerbi
+ms.component: powerbi-gateways
+ms.topic: conceptual
 ms.date: 12/06/2017
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 899cef8c4e441c49f40acc7873348fe80a7b5f9d
-ms.sourcegitcommit: 8552a34df8e6141eb704314c1a019992901d6e78
+ms.openlocfilehash: 5e07575658ed25e3f4933a7840ef4bc970264b23
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/08/2018
-ms.locfileid: "30977092"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34296016"
 ---
 # <a name="guidance-for-deploying-a-data-gateway-for-power-bi"></a>Power BI:n tietoyhdyskäytävän käyttöönotto-ohjeet
+
 Tämä artikkeli sisältää ohjeita ja huomioon otettavia seikkoja, kun tietoyhdyskäytävä otetaan käyttöön verkko-ympäristössä. **Yhdyskäytävä** on ohjelmisto, joka helpottaa pääsyä yksityisessä paikallisessa verkossa oleviin tietoihin, jotta niitä voidaan käyttää myöhemmin Power BI:n kaltaisessa pilvipalvelussa. Tässä artikkelissa käydään läpi, kuinka **paikallinen tietoyhdyskäytävä** otetaan käyttöön, ja annetaan ohjeita sen määritykseen.
 
 ![](media/service-gateway-deployment-guidance/powerbi-gateway-deployment-guidance_01.png)
@@ -68,7 +61,7 @@ Tietokonetta, johon **paikallinen tietoyhdyskäytävä** asennetaan, koskevat se
 * Windows 2012 R2:n (tai uudemman) 64-bittinen versio
 
 ### <a name="location"></a>Sijainti
-Yhdyskäytäväasennuksen sijainnilla voi olla merkittävä vaikutus kyselyn suorituskykyyn, joten varmista, että yhdyskäytäväsi, tietolähteiden sijainnit ja Power BI -vuokraaja ovat mahdollisimman lähellä toisiaan verkon viiveen minimoimiseksi. Voit selvittää Power BI -vuokraajan sijainnin valitsemalla Power BI-palvelun oikeassa yläkulmassa näkyvän **?** -kuvakkeen ja sen jälkeen **Tietoja Power BI:stä** kohdan.
+Yhdyskäytäväasennuksen sijainnilla voi olla merkittävä vaikutus kyselyn suorituskykyyn, joten varmista, että yhdyskäytäväsi, tietolähteiden sijainnit ja Power BI -vuokraaja ovat mahdollisimman lähellä toisiaan verkon viiveen minimoimiseksi. Määritä Power BI -vuokraajan sijaintisi Power BI -palvelussa valitsemalla **?** -kuvake oikeassa yläkulmassa ja valitsemalla sitten **Tietoja Power BI:stä**.
 
 ![](media/service-gateway-deployment-guidance/powerbi-gateway-deployment-guidance_02.png)
 

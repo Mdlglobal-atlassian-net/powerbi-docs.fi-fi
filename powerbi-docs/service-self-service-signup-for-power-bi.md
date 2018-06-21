@@ -1,29 +1,21 @@
 ---
 title: Rekisteröityminen Power BI:hin yksityishenkilönä
 description: Ota selvää, miten voit rekisteröityä Power BI:n käyttäjäksi ja aloittaa sen käytön henkilökohtaisiin raportti- ja visualisointitarpeisiisi.
-services: powerbi
-documentationcenter: ''
-author: markingmyname
+author: mgblythe
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: monitoring
-qualitydate: 08/02/2017
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: get-started-article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 03/02/2018
-ms.author: maghan
+ms.author: mblythe
 LocalizationGroup: Get started
-ms.openlocfilehash: b098c87796306bedb8f9da43971d093f464dd4bd
-ms.sourcegitcommit: ee5d044db99e253c27816e0ea6bdeb9e39a2cf41
+ms.openlocfilehash: 060bebbc79db02d28755cc7832f4a4ef3d2d578f
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/08/2018
-ms.locfileid: "29782745"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34299489"
 ---
 # <a name="signing-up-for-power-bi-as-an-individual"></a>Rekisteröityminen Power BI:hin yksityishenkilönä
 Ota selvää, miten voit rekisteröityä Power BI:n käyttäjäksi ja aloittaa sen käytön henkilökohtaisiin raportti- ja visualisointitarpeisiisi.
@@ -89,7 +81,7 @@ Voit rekisteröityä Power BI:hin seuraavasti.
    
     ![](media/service-self-service-signup-for-power-bi/powerbi-free-signup4.png)
 6. Vahvista sähköpostiosoite valitsemalla sähköpostin linkki. Tämä vie sinut takaisin rekisteröintityönkulkuun. Sinun on ehkä annettava joitakin lisätietoja itsestäsi.
-7. Tämän jälkeen sinut ohjataan https://app.powerbi.com-sivulle ja voit aloittaa Power BI:n käytön maksuttomana käyttäjänä.
+7. Tämän jälkeen sinut ohjataan osoitteeseen https://app.powerbi.com ja voit aloittaa Power BI:n käytön maksuttomana käyttäjänä.
 
 ### <a name="what-this-looks-like-within-the-service"></a>Miltä tämä näyttää palvelun sisällä
 Kun olet sisällä palvelussa, voit tarkistaa, että sinulla on ilmainen tili napsauttamalla **rataskuvaketta** ja valitsemalla **Hallinnoi henkilökohtaista tallennustilaa**.

@@ -1,32 +1,24 @@
 ---
-title: Opetusohjelma – Yhdistelmäkaavio
+title: Yhdistelmäkaavio Power BI:ssä
 description: Tässä opetusohjelmassa kerrotaan yhdistelmäkaavioiden käytöstä ja luonnista Power BI -palvelussa ja Power BI Desktopissa.
-services: powerbi
-documentationcenter: ''
 author: mihart
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
+ms.reviewer: ''
 featuredvideoid: lnv66cTZ5ho
-qualityfocus: monitoring
-qualitydate: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 01/21/2018
+ms.component: powerbi-desktop
+ms.topic: conceptual
+ms.date: 05/27/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: b5e89a9a1f2e88ed793dff6457b58fd9ac609ef5
-ms.sourcegitcommit: e571de2afa3f34fac06a6aab0df0e8940cb00a0d
+ms.openlocfilehash: 6cc9b9cafe2b3efdb8e51e89c203e2cb123e909a
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/05/2018
-ms.locfileid: "30976777"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34584273"
 ---
-# <a name="combo-chart-in-power--tutorial"></a>Yhdistelmäkaavio Power BI:ssä (opetusohjelma)
+# <a name="combo-chart-in-power-bi"></a>Yhdistelmäkaavio Power BI:ssä
 Power BI:ssä yhdistelmäkaavio on yksittäinen visualisointi, joka yhdistää viivakaavion ja pylväskaavion. Näiden kahden kaavion yhdistäminen nopeuttaa tietojen vertailua.
 
 Yhdistelmäkaaviossa voi olla yksi tai kaksi Y-akselia.
@@ -79,7 +71,7 @@ Seuraavassa videossa luodaan yhdistelmäkaavio käyttämällä myynti- ja markki
 ## <a name="create-a-combo-chart-with-two-axes"></a>Kahden akselin yhdistelmäkaavion luominen
 Tässä tehtävässä verrataan myyntikatetta ja myyntiä.
 
-1. Luo uusi viivakaavio, joka seuraa **viime vuoden myyntikateprosenttia** **kuukauden** mukaan.  Myyntikate oli tammikuussa 35 %, huipussaan 45 % huhtikuussa, laski heinäkuussa ja nousi uudelleen elokuussa. Näemmekö samanlaisen kuvion myös tämän vuoden myynnissä?
+1. Luo uusi viivakaavio, joka seuraa **viime vuoden myyntikateprosenttia** **kuukauden** mukaan.  Myyntikate oli tammikuussa 35 %, huipussaan 45 % huhtikuussa, laski heinäkuussa ja nousi uudelleen elokuussa. Näemmekö samanlaisen kuvion edellisen ja tämän vuoden myynnissä?
 
    ![](media/power-bi-visualization-combo-chart/combo1_new.png)
 2. Lisää **Tämän vuoden myynti > Arvo** ja **Edellisen vuoden myynti** viivakaavioon. **Edellisen vuoden myyntikateprosentin** asteikko on paljon pienempi kuin **myynnin**, mikä vaikeuttaa vertailua.      
@@ -112,7 +104,8 @@ Tässä tehtävässä verrataan myyntikatetta ja myyntiä.
 Seuraavat toiminnot:
 
 * [Yhdistelmäkaavion lisääminen koontinäytön ruutuna](service-dashboard-tiles.md)
-* [Raportin tallentaminen](service-report-save.md)
+* [Tallenna raportti](service-report-save.md).
+* [Tee raportista helpommin käytettävä toimintarajoitteisille ihmisille](desktop-accessibility.md)
 
 ## <a name="cross-highlighting-and-cross-filtering"></a>Ristiinkorostaminen ja ristiinsuodatus
 

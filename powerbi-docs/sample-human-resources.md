@@ -1,29 +1,21 @@
 ---
 title: 'Henkilöstöhallintomalli: esittely'
 description: 'Power BI:n henkilöstöhallintomalli: esittely'
-services: powerbi
-documentationcenter: ''
 author: mihart
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 01/22/2018
+ms.component: powerbi-desktop
+ms.topic: conceptual
+ms.date: 05/22/2018
 ms.author: mihart
 LocalizationGroup: Samples
-ms.openlocfilehash: 7cd91ad5d6b43803745e5c6a12b6168e17f376af
-ms.sourcegitcommit: 743e44fc8730fea0f7149916080b0c6d7eb6359d
+ms.openlocfilehash: 770e200b0aa6916ac6d2de144902a04e9660e552
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/28/2018
-ms.locfileid: "29706970"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34482011"
 ---
 # <a name="human-resources-sample-for-power-bi-take-a-tour"></a>Power BI:n henkilöstöhallintomalli: esittely
 
@@ -40,7 +32,7 @@ Tämä malli kuuluu sarjaan, jossa esitellään, miten Power BI:tä voidaan käy
 
 ## <a name="prerequisites"></a>Edellytykset
 
- Ennen kuin voit käyttää mallia, se on ensin ladattava [sisältöpakettina](https://docs.microsoft.com/en-us/power-bi/sample-human-resources#get-the-content-pack-for-this-sample), [.pbix-tiedostona](http://download.microsoft.com/download/6/9/5/69503155-05A5-483E-829A-F7B5F3DD5D27/Human Resources Sample PBIX.pbix) tai [Excel-työkirjana](http://go.microsoft.com/fwlink/?LinkId=529780).
+ Ennen kuin voit käyttää mallia, se on ensin ladattava [sisältöpakettina](https://docs.microsoft.com/power-bi/sample-human-resources#get-the-content-pack-for-this-sample), [.pbix-tiedostona](http://download.microsoft.com/download/6/9/5/69503155-05A5-483E-829A-F7B5F3DD5D27/Human-Resources-Sample-PBIX.pbix) tai [Excel-työkirjana](http://go.microsoft.com/fwlink/?LinkId=529780).
 
 ### <a name="get-the-content-pack-for-this-sample"></a>Mallin sisältöpaketin noutaminen
 
@@ -97,7 +89,7 @@ Tutustutaan nykyisten aktiivisten työntekijöiden tietoihin sekä niiden työnt
 Koontinäytössä valitse **Aktiivisten työntekijöiden määrä ikäryhmän mukaan** -ruutu.  
 ![](media/sample-human-resources/pbi_hr_sample_activepie.png)
 
-Henkilöstöhallintomalli-raportin **Aktiiviset työntekijät verrattuna  irtisanoutumisiin**  -sivu avautuu.  
+Henkilöstöhallintomalli-raportin **Aktiiviset työntekijät verrattuna irtisanoutumisiin** -sivu avautuu.  
 ![](media/sample-human-resources/hr5.png)
 
 **Kiinnostuksen kohteet**:

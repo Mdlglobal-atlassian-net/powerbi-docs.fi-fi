@@ -1,29 +1,21 @@
 ---
 title: Yhteyden muodostaminen Microsoft Dynamicsiin Power BI:n avulla
 description: Microsoft Dynamics CRM for Power BI
-services: powerbi
-documentationcenter: ''
 author: SarinaJoan
 manager: kfile
-backup: maggiesMSFT
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: maggiesMSFT
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: e7bfb936bdff4ba7ddd5097c3f59003d48c70347
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 1dadb70f2d75596bb7180a5e7360cae19e1515b8
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/24/2018
-ms.locfileid: "30815429"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34251594"
 ---
 # <a name="connect-to-microsoft-dynamics-crm-with-power-bi"></a>Yhteyden muodostaminen Microsoft Dynamics CRM:ään Power BI:n avulla
 Power BI:lle kehitetyn Microsoft Dynamics CRM Onlinen avulla voit helposti käyttää ja analysoida tietojasi. Power BI luo OData-syötteen perusteella kuvaavan mallin, joka sisältää kaikki tarvittavat entiteetit ja mittaustiedot, kuten tilit, toiminnan, mahdollisuudet, tuotteen, liidit, käyttäjät ja muuta. Kun olet asentanut sovelluksen, voit tarkastella raporttinäkymää ja raportteja Power BI -palvelussa ([https://powerbi.com](https://powerbi.com)) ja Power BI -mobiilisovelluksissa. 
@@ -92,7 +84,7 @@ Seuraavassa taulukossa on lueteltu tässä palvelussa käytettävät CRM-entitee
 | Liidi |Kaikki liidit, joita on muokattu viimeisen 180 päivän aikana <br> [modifiedon] > tänään - 180 päivää |
 | Mahdollisuus |Kaikki mahdollisuudet, joita on muokattu viimeisen 365 päivän aikana <br> [modifiedon] > tänään - 365 päivää |
 | Mahdollisuuden tuote |Kaikki mahdollisuuksien tuotteet, joita on muokattu viimeisen 365 päivän aikana <br> [modifiedon] > tänään - 365 päivää |
-| Tuote |Kaikki aktiiviset tuotteet <br> [statecode] <> 1 |
+| Product |Kaikki aktiiviset tuotteet <br> [statecode] <> 1 |
 | Alue |Kaikki alueet |
 | Käyttäjä |Kaikki aktiiviset käyttäjät, jotka eivät ole delegoituja järjestelmänvalvojia <br>  [isdisabled] = false ja [accessmode] <> 4 |
 

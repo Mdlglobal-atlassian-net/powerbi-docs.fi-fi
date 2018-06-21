@@ -1,29 +1,21 @@
 ---
 title: Yhteyden muodostaminen Project Madeiraan Power BI:llä
 description: Project Madeira for Power BI
-services: powerbi
-documentationcenter: ''
 author: SarinaJoan
 manager: kfile
-backup: maggiesMSFT
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: maggiesMSFT
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 02b8c2e8ed9a8a4ca0c8aaf9848699f3ca3c24c8
-ms.sourcegitcommit: 5e1f7d2673efe25c47b9b9f315011055bfe92c8f
+ms.openlocfilehash: b4462d8ef5037cf4fe76a6ff061b7993e8d8ec44
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/09/2018
-ms.locfileid: "30815999"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34245601"
 ---
 # <a name="connect-to-project-madeira-with-power-bi"></a>Yhteyden muodostaminen Project ”Madeiraan” Power BI:llä
 Power BI:n ja Project ”Madeira” -sisältöpaketin avulla saat helposti merkityksellisiä tietoja Project ”Madeirasta”. Power BI noutaa sekä Myynti- että Rahoitus-tiedot ja luo niiden pohjalta valmiin koontinäytön ja raportit.
@@ -35,13 +27,13 @@ Muodosta yhteys Project ”Madeira” for Power BI:hin tai lue lisää Project �
 Muodosta yhteys Power BI:n [Project ”Madeira” Analytics -sisältöpakettiin](https://app.powerbi.com/getdata/services/project-madeira).
 
 ## <a name="how-to-connect"></a>Yhteyden muodostaminen
-1. Valitse vasemman siirtymisruudun alareunasta **Nouda tiedot**.  
+1. Valitse vasemman siirtymisruudun alareunassa **Nouda tiedot**.  
     ![](media/service-connect-to-project-madeira/getdata.png)
 2. Valitse **Palvelut**-ruudussa **Nouda**.  
     ![](media/service-connect-to-project-madeira/services.png)
 3. Valitse ensin **Project ”Madeira”** ja sitten **Nouda**.  
     ![](media/service-connect-to-project-madeira/projectmadeira.png)
-4. Anna pyydettäessä Project ”Madeiran” URL-osoite. URL-osoitteen on oltava täsmälleen seuraavan mallin mukainen: https://mycronusus.projectmadeira.com:7048/NAV/OData/Company('CRONUS%20US'), mutta käytä oman Project ”Madeira” -yrityksesi nimeä. Huomaa, että lopussa ei ole vinoviivaa, ja käytössä on oltava https-yhteys. Lisätietoja URL-osoitteen etsimisestä on [alla](#FindingParams).  
+4. Anna pyydettäessä Project ”Madeiran” URL-osoite. URL-osoitteen on oltava täsmälleen seuraavan mallin mukainen: https://mycronusus.projectmadeira.com:7048/NAV/OData/Company('CRONUS%20US'), jossa yrityksen nimi on Project ”Madeira”. Huomaa, että lopussa ei ole vinoviivaa, ja käytössä on oltava https-yhteys. Lisätietoja URL-osoitteen etsimisestä on [alla](#FindingParams).  
    
     ![](media/service-connect-to-project-madeira/params.png)
 5. Valitse pyydettäessä todennusmenetelmäksi Perus, kirjoita käyttäjänimeksi Project ”Madeira” -sähköpostiosoitteesi ja anna sitten salasanaksi Project ”Madeira” -tilisi verkkopalvelun käyttöoikeusavain. Jos olet jo kirjautunut Project ”Madeiraan” selaimessa, tunnistetietoja ei välttämättä pyydetä. Lisätietoja käyttöoikeusavaimen luomisesta on [alla](#FindingParams).  
@@ -56,10 +48,10 @@ Muodosta yhteys Power BI:n [Project ”Madeira” Analytics -sisältöpakettiin]
 
 **Mitä seuraavaksi?**
 
-* Kokeile [kysymyksen esittämistä koontinäytön yläreunassa olevassa Q&A-ruudussa](power-bi-q-and-a.md).
+* Kokeile [kysymyksen esittämistä raporttinäkymän yläreunassa olevassa Q&A-ruudussa](power-bi-q-and-a.md).
 * [Muuta koontinäytön ruutuja](service-dashboard-edit-tile.md).
 * [Valitse jokin ruutu](service-dashboard-tiles.md), jolloin siihen liittyvä raportti avautuu.
-* Tietojoukko on ajastettu päivittymään päivittäin, mutta voit muuttaa päivitysaikataulua tai kokeilla tietojoukon päivittämistä **Päivitä nyt** -toiminnolla haluamanasi ajankohtana.
+* Tietojoukko on ajastettu päivittymään päivittäin, mutta voit muuttaa päivitysaikataulua tai kokeilla tietojoukon päivittämistä **Päivitä nyt** -toiminnolla haluamanasi ajankohtana
 
 <a name="Requirements"></a>
 

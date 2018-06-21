@@ -9,12 +9,12 @@ ms.component: powerbi-developer
 ms.topic: conceptual
 ms.date: 02/13/2018
 ms.author: maghan
-ms.openlocfilehash: 979b76350b9867bbc684a70bd89a82f88993e625
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: dd7276eb436dfd9d842930f6a2c550a2a6b521f3
+ms.sourcegitcommit: 8ee0ebd4d47a41108387d13a3bc3e7e2770cbeb8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34290265"
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34812947"
 ---
 # <a name="integrate-a-dashboard-into-an-app-for-your-organization"></a>Koontinäytön integrointi sovellukseen organisaatiolle
 Lue, miten voit integroida tai upottaa koontinäytön verkkosovellukseen REST-ohjelmointirajapinnan kutsujen ja Power BI JavaScript -ohjelmointirajapinnan avulla organisaatiolle.
@@ -28,7 +28,7 @@ Jotta voit käydä läpi nämä vaiheittaiset ohjeet, tarvitset **Power BI** -ti
 > 
 > 
 
-Voit integroida koontinäytön verkkosovellukseen **Power BI** REST -ohjelmointirajapinnan tai Power BI C# SDK:n avulla ja noutaa koontinäytön käyttämällä Azure Active Directory (AD) -valtuutuksen **käyttöoikeustietuetta**. Voit sitten ladata koontinäytön käyttämällä samaa käyttöoikeustietuetta. **Power BI** -ohjelmointirajapinta tarjoaa ohjelmallisen käyttöoikeuden tiettyihin **Power BI** -resursseihin. Katso lisätietoja artikkelista [Power BI REST -ohjelmointirajapinnan yleiskatsaus](https://msdn.microsoft.com/library/dn877544.aspx) ja [Power BI JavaScript -ohjelmointirajapinta](https://github.com/Microsoft/PowerBI-JavaScript).
+Voit integroida koontinäytön verkkosovellukseen **Power BI** REST -ohjelmointirajapinnan tai Power BI C# SDK:n avulla ja noutaa koontinäytön käyttämällä Azure Active Directory (AD) -valtuutuksen **käyttöoikeustietuetta**. Voit sitten ladata koontinäytön käyttämällä samaa käyttöoikeustietuetta. **Power BI** -ohjelmointirajapinta tarjoaa ohjelmallisen käyttöoikeuden tiettyihin **Power BI** -resursseihin. Katso lisätietoja artikkeleista [Power BI REST -ohjelmointirajapinta](https://docs.microsoft.com/rest/api/power-bi/) ja [Power BI JavaScript -ohjelmointirajapinta](https://github.com/Microsoft/PowerBI-JavaScript).
 
 ## <a name="download-the-sample"></a>Mallin lataaminen
 Tässä artikkelissa näytetään koodi, jota käytetään [integrate-dashboard-web-app](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/User%20Owns%20Data/integrate-dashboard-web-app)-mallissa GitHubissa. Voit ladata mallin, jonka avulla voit noudattaa näitä vaiheittaisia ohjeita.
@@ -44,12 +44,12 @@ Jos latasit [koontinäytön integrointimallin](https://github.com/Microsoft/Powe
 Sinun on hankittava sovelluksessa **käyttöoikeustietue** Azure AD:stä, ennen kuin voit lähettää kutsuja Power BI REST -ohjelmointirajapintaan. Saat lisätietoja artikkelista [Käyttäjien todentaminen ja Azure AD -käyttöoikeustietueen hankkiminen Power BI -sovellukselle](get-azuread-access-token.md).
 
 ## <a name="step-3---get-a-dashboard"></a>Vaihe 3 – Hanki koontinäyttö
-Voit hankkia **Power BI** -koontinäytön käyttämällä [Hanki koontinäytöt](https://msdn.microsoft.com/library/mt465739.aspx) -toimintoa, joka antaa luettelon **Power BI** -koontinäytöistä. Koontinäyttöjen luettelosta saat koontinäytön tunnuksen.
+Voit hankkia **Power BI** -koontinäytön käyttämällä [Hanki koontinäytöt](https://docs.microsoft.com/rest/api/power-bi/dashboards/getdashboards) -toimintoa, joka antaa luettelon **Power BI** -koontinäytöistä. Koontinäyttöjen luettelosta saat koontinäytön tunnuksen.
 
 ![](media/integrate-dashboard/powerbi-embed-dashboard-get-dashboards.png)
 
 ### <a name="get-dashboards-using-an-access-token"></a>Koontinäytön hankkiminen käyttöoikeustietueen avulla
-Voit kutsua [Hanki koontinäytöt](https://msdn.microsoft.com/library/mt465739.aspx) ‑toimintoa [vaiheessa 2](#step-2-get-an-access-token-from-azure-ad) hankkimasi **käyttöoikeustietueen** avulla. [Hanki koontinäytöt](https://msdn.microsoft.com/library/mt465739.aspx) ‑toiminto palauttaa luettelon koontinäytöistä. Voit noutaa yksittäisen koontinäytön koontinäyttöjen luettelosta. Alla on koontinäytön hankkimisen koko C#-metodi. 
+Voit kutsua [Hanki koontinäytöt](https://docs.microsoft.com/rest/api/power-bi/dashboards/getdashboards) ‑toimintoa [vaiheessa 2](#step-2-get-an-access-token-from-azure-ad) hankkimasi **käyttöoikeustietueen** avulla. [Hanki koontinäytöt](https://docs.microsoft.com/rest/api/power-bi/dashboards/getdashboards) ‑toiminto palauttaa luettelon koontinäytöistä. Voit noutaa yksittäisen koontinäytön koontinäyttöjen luettelosta. Alla on koontinäytön hankkimisen koko C#-metodi. 
 
 REST-ohjelmointirajapinnan kutsu edellyttää, että sisällytät siihen määritteen *Authorization*, joka on muotoa *Bearer {käyttöoikeustietue}*.
 
@@ -258,7 +258,7 @@ Tile Clicked
 ```
 
 ## <a name="working-with-groups-app-workspaces"></a>Ryhmien käsitteleminen (sovelluksen työtilat)
-Jotta voit upottaa koontinäytön ryhmästä (sovelluksen työtila), sinun kannattaa noutaa ryhmän sisältämien kaikkien saatavilla olevien koontinäyttöjen luettelo seuraavan REST-ohjelmointirajapinnan kutsun avulla. Katso lisätietoja tästä REST-ohjelmointirajapinnan kutsusta ohjeaiheesta [Koontinäyttöjen hankkiminen](https://msdn.microsoft.com/library/mt465739.aspx). Tarvitset ryhmässä käyttöoikeuden pyynnölle, jotta tulokset voidaan palauttaa.
+Jotta voit upottaa koontinäytön ryhmästä (sovelluksen työtila), sinun kannattaa noutaa ryhmän sisältämien kaikkien saatavilla olevien koontinäyttöjen luettelo seuraavan REST-ohjelmointirajapinnan kutsun avulla. Katso lisätietoja tästä REST-ohjelmointirajapinnan kutsusta ohjeaiheesta [Koontinäyttöjen hankkiminen](https://docs.microsoft.com/rest/api/power-bi/dashboards/getdashboards). Tarvitset ryhmässä käyttöoikeuden pyynnölle, jotta tulokset voidaan palauttaa.
 
 ```
 https://api.powerbi.com/v1.0/myorg/groups/{groupId}/dashboards

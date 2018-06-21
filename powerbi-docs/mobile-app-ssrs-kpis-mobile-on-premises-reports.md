@@ -1,39 +1,33 @@
 ---
 title: Paikallisten raporttien ja suorituskykyilmaisimien tarkastelu Power BI -mobiilisovelluksissa
 description: Power BI -mobiilisovellukset tarjoavat reaaliaikaisen, kosketuskäyttöisten mobiiliyhteyden paikan päällä oleviin yritystietoihisi SQL Server Reporting Services -palvelussa ja Power BI -raporttipalvelimessa.
-services: powerbi
-documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 12/18/2017
+ms.component: powerbi-mobile
+ms.topic: conceptual
+ms.date: 05/21/2018
 ms.author: maggies
-ms.openlocfilehash: 5bbd2f09187e9fac16f6cc4b9ac3ff59a888ed7f
-ms.sourcegitcommit: ea247cb3cfc1cac076d4b076c1ad8e2fc37e15a1
+ms.openlocfilehash: 999fdf0376973d6550a5c4e214b4315db01e74e0
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/19/2017
-ms.locfileid: "30972597"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34482241"
 ---
 # <a name="view-on-premises-report-server-reports-and-kpis-in-the-power-bi-mobile-apps"></a>Paikallisten raporttipalvelinten raporttien ja suorituskykyilmaisimien tarkastelu Power BI -mobiilisovelluksissa
+
+Power BI -mobiilisovellukset tarjoavat reaaliaikaisen, kosketuskäyttöisten mobiiliyhteyden paikan päällä oleviin yritystietoihisi Power BI -raporttipalvelimessa ja SQL Server 2016 Reporting Services -palvelussa (SSRS).
+
 Koskee seuraavia:
 
 | ![iPhone](media/mobile-app-ssrs-kpis-mobile-on-premises-reports/iphone-logo-50-px.png) | ![iPad](media/mobile-app-ssrs-kpis-mobile-on-premises-reports/ipad-logo-50-px.png) | ![Android-puhelin](media/mobile-app-ssrs-kpis-mobile-on-premises-reports/android-phone-logo-50-px.png) | ![Android-tabletti](media/mobile-app-ssrs-kpis-mobile-on-premises-reports/android-tablet-logo-50-px.png) |
 |:--- |:--- |:--- |:--- |
 | iPhonet |iPadit |Android-puhelimet |Android-tabletit |
 
-Power BI -mobiilisovellukset tarjoavat reaaliaikaisen, kosketuskäyttöisten mobiiliyhteyden paikan päällä oleviin yritystietoihisi Power BI -raporttipalvelimessa ja SQL Server 2016 Reporting Services -palvelussa (SSRS). 
 
- ![Raporttipalvelimen aloitussivu mobiilisovelluksissa](media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-ipad-pbi-report-server-home.png)
+![Raporttipalvelimen aloitussivu mobiilisovelluksissa](media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-ipad-pbi-report-server-home.png)
 
 ## <a name="first-things-first"></a>Aloitetaan tärkeimmästä
 **Mobile-sovellukset sijaitsevat siellä, missä voit tarkastella Power BI-sisältöä, eivät siellä, missä ne luotiin.**
@@ -52,7 +46,7 @@ Vaikka sinulla ei olisikaan pääsyä Reporting Services -verkkoportaaliin, voit
    
    ![Reporting Services -mallit](media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-iphone-ssrs-samples.png)
 
-## <a name="connect-to-an-on-premises-server"></a>Yhteyden muodostaminen paikalliseen palvelimeen
+## <a name="connect-to-an-on-premises-report-server"></a>Yhteyden muodostaminen paikalliseen raporttipalvelimeen
 Voit myös katsella paikallisia Power BI -raportteja, Reporting Services -mobiiliraportteja ja suorituskykyilmaisimia Power BI -mobiilisovelluksissa. 
 
 1. Avaa Power BI -sovellus mobiililaitteessasi.
@@ -87,6 +81,24 @@ Voit myös katsella paikallisia Power BI -raportteja, Reporting Services -mobiil
    
    ![Raporttipalvelin vasemmanpuoleisessa siirtymisruudussa](media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-iphone-left-nav-report-server.png)
 
+## <a name="connect-to-an-on-premises-report-server-in-ios"></a>Yhteyden muodostaminen paikalliseen raporttipalvelimeen iOS-laitteessa
+
+Jos tarkastelet Power BI:tä iOS-mobiilisovelluksessa, IT-järjestelmänvalvojasi on saattanut määrittää sovelluksen määrityskäytännön. Tässä tapauksessa yhteyden muodostaminen raporttipalvelimeen on helppoa eikä sinun tarvitse antaa niin paljon tietoja muodostaessasi yhteyden raporttipalvelimeen. 
+
+1. Näyttöön tulee sanoma, jossa ilmoitetaan mobiilisovelluksen olevan määritetty raporttipalvelimen kanssa. Napauta **Kirjaudu sisään**.
+
+    ![Kirjaudu sisään raporttipalvelimeen](media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-config-server-sign-in.png)
+
+2.  **Muodosta yhteys palvelimeen** -sivulla raporttipalvelimen tiedot on valmiiksi täytetty. Napauta **Yhdistä**.
+
+    ![Raporttipalvelimen tiedot täytettynä](media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-ios-remote-configure-connect-server.png)
+
+3. Kirjoita salasana todennusta varten ja napauta sitten **Kirjaudu sisään**. 
+
+    ![Raporttipalvelimen tiedot täytettynä](media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-config-server-address.png)
+
+Nyt voit tarkastella ja käsitellä raporttipalvelimeen tallennettuja suorituskykyilmaisimia ja Power BI -raportteja.
+
 ## <a name="view-power-bi-reports-and-kpis-in-the-power-bi-app"></a>Power BI -raporttien ja suorituskykyilmaisinten tarkastelu Power BI-sovelluksessa
 Power BI -raportit, Reporting Services -mobiiliraportit ja suorituskykyilmaisimet näkyvät samoissa kansiossa, joissa ne ovat Reporting Services -verkkoportaalissa. 
 
@@ -118,5 +130,5 @@ Voit merkitä suorituskykyilmaisimia ja raportteja suosikeiksi verkkoportaalissa
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 * [Power BI:n käytön aloittaminen](service-get-started.md)  
-* Ilmenikö kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)
+* Onko sinulla kysymyksiä? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)
 

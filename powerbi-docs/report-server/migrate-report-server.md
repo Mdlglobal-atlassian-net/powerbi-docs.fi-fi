@@ -1,28 +1,20 @@
 ---
 title: Raporttipalvelimen asennuksen siirtäminen
 description: Opi siirtämään aiemmin luotu SQL Server Reporting Services ‑esiintymä esiintymäksi Microsoft Power BI -raporttipalvelimelle.
-services: powerbi
-documentationcenter: ''
 author: markingmyname
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-report-server
+ms.topic: conceptual
 ms.date: 09/05/2017
 ms.author: maghan
-ms.openlocfilehash: 67fe876bb9de92cc7f4c0c140f7c016f01216cdd
-ms.sourcegitcommit: 6e693f9caf98385a2c45890cd0fbf2403f0dbb8a
+ms.openlocfilehash: 0bfad6dba38cce4bd170bb3f3bd7f9a7877b6174
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/30/2018
-ms.locfileid: "30973102"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34480930"
 ---
 # <a name="migrate-a-report-server-installation"></a>Raporttipalvelimen asennuksen siirtäminen
 Opi siirtämään aiemmin luotu SQL Server Reporting Services (SSRS) ‑esiintymä esiintymäksi Microsoft Power BI -raporttipalvelimelle.
@@ -107,9 +99,9 @@ Siirtyminen yhdeltä Power BI -raporttipalvelimelta toiselle noudattaa samaa men
 * Tee vanhalle Power BI -raporttipalvelimen esiintymälle mahdollisesti tarvittavat puhdistustoimet.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
-[Järjestelmänvalvojien opas](admin-handbook-overview.md)  
-[Pikaopas: Power BI -raporttipalvelimen asentaminen](quickstart-install-report-server.md)  
+[Järjestelmänvalvojan yleiskatsaus](admin-handbook-overview.md)  
+[Power BI -raporttipalvelimen asentaminen](install-report-server.md)  
 [Komentosarjojen luominen rs.exe-apuohjelmaa ja verkkopalvelua käyttämällä](https://docs.microsoft.com/sql/reporting-services/tools/script-with-the-rs-exe-utility-and-the-web-service)
 
-Onko sinulla muuta kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
+Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
 

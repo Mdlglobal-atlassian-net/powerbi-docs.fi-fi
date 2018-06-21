@@ -1,29 +1,21 @@
 ---
-title: Koontinäytön, raportin, työkirjan, tietojoukon tai työtilan poistaminen Power BI:stä
+title: Koontinäytön, raportin, työkirjan, tietojoukon tai työtilan poistaminen
 description: Opi poistamaan melkein mitä tahansa Power BI:stä
-services: powerbi
-documentationcenter: ''
 author: mihart
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 03/03/2018
+ms.component: powerbi-service
+ms.topic: conceptual
+ms.date: 04/11/2018
 ms.author: mihart
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 9c8c7e7406b70f35f0669dfc3e565671777665ad
-ms.sourcegitcommit: 3841bcdb5e664568defe3d6a6e6b8cab3cd7087f
+ms.openlocfilehash: 5701176e362649d992fb6f9cd79e003abcf87bf5
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/23/2018
-ms.locfileid: "30153679"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34249386"
 ---
 # <a name="delete-almost-anything-in-power-bi-service"></a>Poista melkein mitä tahansa Power BI -palvelussa
 Tässä artikkelissa opetetaan, miten Power BI -palvelussa poistetaan koontinäyttö, raportti, työkirja, tietojoukko, sovellus, visualisointi ja työtila.

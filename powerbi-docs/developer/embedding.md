@@ -7,13 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: conceptual
-ms.date: 11/30/2017
+ms.date: 05/25/2018
 ms.author: maghan
-ms.openlocfilehash: 043bd43ac6d0abcd4cc4bae54f4ee57cc4ef2a41
-ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
+ms.openlocfilehash: 2e899593cbe3453381dd2d3457cec97467aec4d6
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34561743"
 ---
 # <a name="embedding-with-power-bi"></a>Upottaminen Power BI:llä
 Power BI tarjoaa ohjelmointirajapintoja, jotka mahdollistavat koontinäyttöjen ja raporttien upottamisen sovelluksiin. Power BI:n ohjelmointirajapinnat tarjoavat yhtenäisen ominaisuusjoukon ja mahdollistavat uusimpien Power BI -toimintojen, kuten koontinäyttöjen, yhdyskäytävien ja sovellustyötilojen, käytön sisällön upottamisessa.
@@ -32,11 +33,13 @@ Upottaminen organisaation käyttöön mahdollistaa Power BI -palvelun laajentami
 
 Organisaation käyttöön upottamisen osalta katso seuraavia ohjeaiheita:
 
+* [Raportin integrointi sovellukseen](integrate-report.md)
 * [Koontinäytön integrointi sovellukseen](integrate-dashboard.md)
 * [Ruudun integrointi sovellukseen](integrate-tile.md)
-* [Raportin integrointi sovellukseen](integrate-report.md)
 
 Itsepalvelutoiminnot, kuten muun muassa muokkaus ja tallennus, ovat käytettävissä [JavaScript-ohjelmointirajapinnassa](https://github.com/Microsoft/PowerBI-JavaScript), kun käytetään upotusta Power BI -käyttäjien käyttöön.
+
+Voit käyttää [yrityksesi käytössä olevaa upottamiseen tarkoitettua perehdyttämistyökalua](https://aka.ms/embedsetup/UserOwnsData), jonka avulla pääset nopeasti alkuun ja voit ladata mallisovelluksen, joka opastaa, miten raportti integroidaan yrityksessäsi.
 
 ## <a name="embedding-for-your-customers"></a>Upottaminen asiakkaiden käyttöön
 Upottaminen asiakkaiden käyttöön mahdollistaa koontinäyttöjen ja raporttien upottamisen käyttäjille, joilla ei ole Power BI -tiliä. Asiakkaiden ei tarvitse tietää mitään Power BI:stä. Upotetun sovelluksen luomiseen vaaditaan vähintään yksi Power BI Pro -tili. Power BI Pro -tili toimii sovelluksesi päätilinä. Voit ajatella sitä eräänlaisena välityspalvelimen tilinä. Power BI Pro -tilin avulla voit luoda myös upotustunnuksia, jotka mahdollistavat pääsyn sovelluksesi omistamiin/hallitsemiin koontinäyttöihin ja raportteihin Power BI -palvelussa. 
@@ -50,11 +53,12 @@ Käytät koontinäyttöjen, raporttien ja ruutujen upottamiseen samoja ohjelmoin
 > [!IMPORTANT]
 > Vaikka upottaminen on riippuvaista Power BI-palvelusta, asiakkaasi eivät ole riippuvaisia Power BI:stä. Heidän ei tarvitse rekisteröityä Power BI -käyttäjiksi, jotta he voisivat tarkastella upotettua sisältöä sovelluksessasi.
 > 
-> 
 
 Kun olet valmis siirtymään tuotantoon, sovellustyötilallesi täytyy määrittää tietty kapasiteetti. Microsoft Azureen sisältyvä Power BI Embedded tarjoaa kapasiteettia käyttöön sovellustesi kanssa.
 
 Saat upottamista koskevia yksityiskohtaisia tietoja artikkelista [Power BI:n koontinäyttöjen, raporttien ja ruutujen upottaminen](embedding-content.md).
+
+Voit käyttää [asiakkaidesi käytössä olevaa upottamiseen tarkoitettua perehdyttämistyökalua](https://aka.ms/embedsetup/AppOwnsData), jonka avulla pääset nopeasti alkuun ja voit ladata mallisovelluksen, joka opastaa, miten raportti integroidaan sovellukseen.
 
 Jos käytit Power BI Workspace Collections -palvelua Azuressa, katso artikkelista [Sisällön siirtäminen Azuren Power BI Workspace Collections -palvelusta](migrate-from-powerbi-embedded.md) lisätietoja siitä, miten voit siirtää sisältösi.
 

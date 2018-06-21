@@ -1,28 +1,20 @@
 ---
 title: Ohjeita kapasiteetin suunnitteluun Power BI -raporttipalvelimella
 description: Tämä artikkeli tarjoaa ohjeita kapasiteetin suunnitteluun Power BI -raporttipalvelimen avulla jakamalla eri kuormituksille tehtyjen kuormitustestien tuloksia.
-services: powerbi
-documentationcenter: ''
 author: parthsha
 manager: kfile
-backup: maghan
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: maghan
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-report-server
+ms.topic: conceptual
 ms.date: 3/5/2018
 ms.author: pashah
-ms.openlocfilehash: 36d12e520cd53abc0159e698f3f469f62f884c95
-ms.sourcegitcommit: ee5d044db99e253c27816e0ea6bdeb9e39a2cf41
+ms.openlocfilehash: 3c3295483112ae0b5475e15c2073faba86dfff30
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/08/2018
-ms.locfileid: "30974932"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34561812"
 ---
 # <a name="capacity-planning-guidance-for-power-bi-report-server"></a>Ohjeita kapasiteetin suunnitteluun Power BI -raporttipalvelimella
 Power BI -raporttipalvelin on omatoiminen liiketoiminta- ja yritystietojen raportointiratkaisu, jota asiakkaat voivat käyttää paikallisesti yrityksensä palomuurin suojaamana. Siinä yhdistyvät Power BI Desktopin vuorovaikutteinen raportointiominaisuus ja paikallinen SQL Server Reporting Services -palvelinympäristö. Yritysten raskas ja kasvava analytiikan käyttö ja raportointi ja yrityksen käyttäjäkannan skaalaamiseen tarvittavan laitteisto-infrastruktuurin ja ohjelmistolisenssien budjetointi voi olla haastavaa. Tämän artikkelin tarkoituksena on antaa ohjeita kapasiteetin suunnitteluun Power BI -raporttipalvelimen avulla jakamalla eri kuormituksille tehtyjen erilaisten kuormitustestien tuloksia. Organisaatioiden raportit, kyselyt ja käyttötavat vaihtelevat suuresti, mutta tässä artikkelissa esitetyt tulokset yhdessä varsinaisten testien ja niiden suoritustapojen yksityiskohtaisen kuvauksen kanssa toimivat vertailukohtana kaikille, jotka ovat aloittamassa suunnittelua Power BI -raporttipalvelimen käyttöönottamisesta.
@@ -58,7 +50,7 @@ Power BI -raporttipalvelimen käyttöönotto muodostui seuraavista näennäiskon
 Katso topologiassa käytettyjen näennäiskoneiden tarkat kokoonpanot liitteestä 1.1 Power BI -raporttipalvelimen topologia ja liitteestä 1.2 Power BI -raporttipalvelimen näennäiskonekokoonpano.
 
 ### <a name="tests"></a>Testit
-Kuormitustestisuorituksissa käytetyt testit ovat julkisesti käytettävissä GitHub-projektissa, jonka nimi on Reporting Services LoadTest (ks. https://github.com/Microsoft/Reporting-Services-LoadTest). Tämän työkalun avulla käyttäjät voivat tutkia SQL Server Reporting Servicesin ja Power BI -raporttipalvelimen suorituskyky-, luotettavuus-, skaalautuvuus- ja palautettavuusominaisuuksia. Tämä projekti sisältää neljä testitapausryhmää:
+Kuormitustestisuorituksissa käytetyt testit ovat julkisesti käytettävissä GitHub-projektissa, jonka nimi on [Reporting Services LoadTest](https://github.com/Microsoft/Reporting-Services-LoadTest). Tämän työkalun avulla käyttäjät voivat tutkia SQL Server Reporting Servicesin ja Power BI -raporttipalvelimen suorituskyky-, luotettavuus-, skaalautuvuus- ja palautettavuusominaisuuksia. Tämä projekti sisältää neljä testitapausryhmää:
 
 * testit, jotka simuloivat Power BI -raporttien hahmontamista
 * testit, jotka simuloivat mobiiliraporttien hahmontamista
@@ -122,7 +114,7 @@ Tässä artikkelissa esitetyt tulokset saatiin suorittamalla tietty raporttijouk
 ### <a name="1-topology"></a>1 Topologia
 **1.1 Power BI -raporttipalvelimen topologia**
 
-Jotta voitiin keskittyä pelkästään Power BI -raporttipalvelimen toimintaan eri kokoonpanoissa, jokaisen konetyypin (Power BI -raporttipalvelinta isännöivää konetta lukuun ottamatta) näennäiskonekokoonpano oli kiinteä. Jokainen kone valmisteltiin toisen sukupolven (v2) D-sarjan koneiden mukaisesti, joissa on Premium-tallennuslevyt. Tarkat tiedot kunkin näennäiskoneen koosta annetaan kohdassa “General Purpose” sivulla https://azure.microsoft.com/en-us/pricing/details/virtual-machines/windows/.
+Jotta voitiin keskittyä pelkästään Power BI -raporttipalvelimen toimintaan eri kokoonpanoissa, jokaisen konetyypin (Power BI -raporttipalvelinta isännöivää konetta lukuun ottamatta) näennäiskonekokoonpano oli kiinteä. Jokainen kone valmisteltiin toisen sukupolven (v2) D-sarjan koneiden mukaisesti, joissa on Premium-tallennuslevyt. Löydät kunkin näennäiskoneen lisätiedot Yleiskäsittely-osiosta kohdasta https://azure.microsoft.com/en-us/pricing/details/virtual-machines/windows/.
 
 | Näennäiskoneen tyyppi | Suoritin | Muisti | Azure-näennäiskoneen koko |
 | --- | --- | --- | --- |
@@ -132,7 +124,7 @@ Jotta voitiin keskittyä pelkästään Power BI -raporttipalvelimen toimintaan e
 
 **1.2 Power BI -raporttipalvelimen näennäiskonekokoonpano** 
 
-Power BI -raporttipalvelinta isännöivässä näennäiskoneessa käytettiin erilaisia suoritin- ja muistikokoonpanoja. Toisin kuin muut näennäiskoneet, tämä kone valmisteltiin kolmannen sukupolven (v3) D-sarjan koneiden mukaisesti, joissa on Premium-tallennuslevyt. Tarkat tiedot tämän näennäiskoneen koosta annetaan kohdassa “General Purpose” sivulla https://azure.microsoft.com/en-us/pricing/details/virtual-machines/windows/.
+Power BI -raporttipalvelinta isännöivässä näennäiskoneessa käytettiin erilaisia suoritin- ja muistikokoonpanoja. Toisin kuin muut näennäiskoneet, tämä kone valmisteltiin kolmannen sukupolven (v3) D-sarjan koneiden mukaisesti, joissa on Premium-tallennuslevyt. Löydät tämän näennäiskoneen lisätiedot Yleiskäsittely-osiosta kohdasta https://azure.microsoft.com/en-us/pricing/details/virtual-machines/windows/.
 
 | Näennäiskone | Suoritin | Muisti | Azure-näennäiskoneen koko |
 | --- | --- | --- | --- |
@@ -142,12 +134,12 @@ Power BI -raporttipalvelinta isännöivässä näennäiskoneessa käytettiin eri
 ### <a name="2-run-the-loadtest-tool"></a>2 LoadTest-työkalun suorittaminen
 Jos haluat suorittaa Reporting Servicesin LoadTest-työkalun käyttämällä omaasi tai Microsoft Azuren Power BI -raporttipalvelinympäristöä, noudata seuraavia ohjeita.
 
-1. Kloonaa Reporting Servicesin LoadTest-projekti GitHubista (https://github.com/Microsoft/Reporting-Services-LoadTest).
+1. Kloonaa Reporting Services LoadTest -projekti GitHubista (https://github.com/Microsoft/Reporting-Services-LoadTest).
 2. Projektin hakemistossa on ratkaisutiedosto, jonka nimi on RSLoadTests.sln. Avaa tämä tiedosto Visual Studion versiossa 2015 tai uudemmassa.
 3. Päätä, haluatko suorittaa työkalun käyttämällä omaa Power BI -raporttipalvelinympäristöäsi vai Microsoft Azuren Power BI -raporttipalvelinympäristöä. Jos aiot suorittaa sen käyttämällä omaa ympäristöäsi, siirry kohtaan 5.
-4. Luo Power BI -raporttipalvelinympäristö Azureen noudattamalla ohjeita, jotka annetaan osoitteessa https://github.com/Microsoft/Reporting-Services-LoadTest#create-a-sql-server-reporting-services-load-environment-in-azure.
-5. Kun olet ottanut ympäristön käyttöön, suorita testit noudattamalla ohjeita, jotka annetaan osoitteessa https://github.com/Microsoft/Reporting-Services-LoadTest#load-test-execution.
+4. Luo Microsoft Power BI -raporttipalvelinympäristö Azuressa noudattamalla ohjeita kohdassa https://github.com/Microsoft/Reporting-Services-LoadTest#create-a-sql-server-reporting-services-load-environment-in-azure.
+5. Kun olet valmis ottamaan ympäristön käyttöön, suorita testit noudattamalla ohjeita kohdassa https://github.com/Microsoft/Reporting-Services-LoadTest#load-test-execution.
 
-Onko sinulla muuta kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
+Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
 
 

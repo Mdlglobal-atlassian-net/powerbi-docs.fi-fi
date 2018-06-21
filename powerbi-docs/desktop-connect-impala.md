@@ -1,29 +1,21 @@
 ---
 title: Impala-tietokantaan yhdistäminen Power BI Desktopissa
 description: Impala-tietokantaan yhdistäminen ja tietokannan käyttäminen helposti Power BI Desktopissa
-services: powerbi
-documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 12/06/2017
+ms.component: powerbi-desktop
+ms.topic: conceptual
+ms.date: 04/24/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 196974bedcace4fbe51b7e7ac551bd0923f7a891
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 9b00120a0c4c22ba8f031663ab19d94d2c482d3b
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/24/2018
-ms.locfileid: "30973687"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34287689"
 ---
 # <a name="connect-to-an-impala-database-in-power-bi-desktop"></a>Impala-tietokantaan yhdistäminen Power BI Desktopissa
 Power BI Desktopissa voi muodostaa yhteyden **Impala**‑tietokantaan ja käyttää sen tietoja samaan tapaan kuin muita tietolähteitä käytetään Power BI Desktopissa.
@@ -37,7 +29,7 @@ Kirjoita tai liitä Impala-palvelimen nimi avautuvan **Impala**-ikkunan ruutuun 
 
 ![](media/desktop-connect-impala/connect_impala_3a.png)
 
-Anna kehotettaessa käyttäjänimesi ja salasanasi tai muodosta yhteys anonyymisti. Kumpaakin vaihtoehtoa tuetaan.
+Kirjoita pyydettäessä tunnistetiedot tai muodosta yhteys anonyymisti. Impala-liitin tukee anonyymiä todentamista, perustodentamista (käyttäjänimi ja salasana) sekä Windows-todentamista.
 
 ![](media/desktop-connect-impala/connect_impala_4.png)
 
@@ -53,7 +45,7 @@ Kun yhteyden muodostaminen onnistuu, näyttöön avautuu **Siirtymistoiminto**-i
 ## <a name="considerations-and-limitations"></a>Huomioitavat asiat ja rajoitukset
 Seuraavat **Impala**-liittimeen liittyvät rajoitukset ja tärkeät seikat on syytä huomioida:
 
-* Tulevat palvelupaketit sisältävät päivitystuen **Power BI Gatewayn** kautta.
+* Impala-liitintä tuetaan paikallisessa tietoyhdyskäytävässä, kun käytetään mitä tahansa kolmesta tuetusta todentamistavasta.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 Power BI Desktopin avulla voit muodostaa yhteyden hyvin monenlaisiin tietoihin. Lisätietoja näistä tietolähteistä saat seuraavista resursseista:

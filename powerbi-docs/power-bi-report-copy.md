@@ -1,31 +1,23 @@
 ---
-title: Kopioi Power BI -raportti
-description: Uuden raportin luominen toisesta raportista.
-services: powerbi
-documentationcenter: ''
+title: Raportin kopioiminen Power BI -palvelussa
+description: Uuden Power BI -raportin luominen toisesta raportista Power BI -palvelussa.
 author: mihart
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: ''
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 01/09/2018
+ms.component: powerbi-service
+ms.topic: conceptual
+ms.date: 03/24/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: f7b4230a6dc9089008928145863fe70977fb92f4
-ms.sourcegitcommit: fe859130099d923ee30da6091efcc70a264dcba6
+ms.openlocfilehash: 760eda5625bd52bf7129ba7cfe5f213921d469b7
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/28/2018
-ms.locfileid: "30975987"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34247799"
 ---
-# <a name="create-a-new-report-from-an-existing-report"></a>Uuden raportin luominen olemassa olevasta raportista
+# <a name="create-a-new-report-from-an-existing-report-copy-a-report"></a>Uuden raportin luominen olemassa olevasta raportista (raportin kopioiminen)
 Sinulla saattaa olla raportti, joka on jo yhteydessä tietojoukkoon ja joka käyttää visualisointeja, joita haluat käyttää uudelleen tai muokata.  Voit kopioida kyseisen raportin uuden raportin pohjaksi.  Toimi seuraavasti:
 
 1. [Avaa raportti](service-report-open.md).
@@ -48,3 +40,5 @@ Sinulla saattaa olla raportti, joka on jo yhteydessä tietojoukkoon ja joka käy
 [Luo uusia visualisointeja](power-bi-report-add-visualizations-ii.md)
 
 [Poista visualisointeja](service-delete.md), joita et tarvitse
+
+[Luo raportti käyttämällä Power BI Desktopia](desktop-report-view.md)

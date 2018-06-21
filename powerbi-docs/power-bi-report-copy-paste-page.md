@@ -1,33 +1,25 @@
 ---
 title: Raporttisivun monistaminen Power BI:ssä
 description: Raporttisivun monistaminen Power BI:ssä
-services: powerbi
-documentationcenter: ''
 author: mihart
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
+ms.reviewer: ''
 featuredvideoid: UOKbxTXZrWw
-qualityfocus: no
-qualitydate: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 12/20/2017
+ms.component: powerbi-service
+ms.topic: conceptual
+ms.date: 03/24/2017
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 39d33965c45efe9ca063e658b42c00dcaea8ef26
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: c75fd53b7aaa941e8e94518950e9f3ebaaa40c35
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/24/2018
-ms.locfileid: "30974537"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34237311"
 ---
 # <a name="duplicate-a-report-page-in-power-bi"></a>Raporttisivun monistaminen Power BI:ssä
-Raporttisivun monistaminen edellyttää raportin muokkausoikeuksia. Power BI -palvelussa tämä tarkoittaa raportin avaamista [muokkausnäkymässä](service-reading-view-and-editing-view.md). 
+Power BI-palveluun tai Power BI Desktopin raporttisivun monistaminen edellyttää muokkausoikeuksia raporttiin. Power BI -palvelussa tämä tarkoittaa raportin avaamista [muokkausnäkymässä](service-reading-view-and-editing-view.md). 
 
 
 1. Avaa Power BI:ssä raportti, jossa on vähintään yksi sivu. 
@@ -42,10 +34,9 @@ Raporttisivun monistaminen edellyttää raportin muokkausoikeuksia. Power BI -pa
    <iframe width="560" height="315" src="https://www.youtube.com/embed/UOKbxTXZrWw?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
 
 ### <a name="next-steps"></a>Seuraavat vaiheet
-Lisätietoja [visualisoinneista Power BI -raporteissa](power-bi-report-visualizations.md)
-[Uuden sivun lisääminen raporttiin](power-bi-report-add-page.md) 
-
-[Power BI:n peruskäsitteet](service-basic-concepts.md) 
+Lisätietoja [Power BI -raporttien visualisoinneista](power-bi-report-visualizations.md)    
+[Uuden sivun lisääminen raporttiin](power-bi-report-add-page.md)    
+[Power BI:n peruskäsitteet](service-basic-concepts.md)    
 
 Onko sinulla muuta kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
 

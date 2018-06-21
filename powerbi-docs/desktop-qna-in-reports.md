@@ -1,34 +1,31 @@
 ---
 title: Q&A:n käyttö Power BI Desktopissa
 description: Voit nyt käyttää luonnollisen kielen kyselyitä käyttämällä Power BI Desktopin Q&A-toimintoa
-services: powerbi
-documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 12/12/2017
+ms.component: powerbi-desktop
+ms.topic: conceptual
+ms.date: 05/02/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: d6075832d77f6bea7d7d8588719c4a002cdbf298
-ms.sourcegitcommit: 93e7362fc47319959b6992dfd037effdf831d010
+ms.openlocfilehash: e9f1bd3231182d66d2ded0abbb67b4d111941ee4
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/21/2018
-ms.locfileid: "30975657"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34289230"
 ---
 # <a name="use-qa-in-power-bi-desktop-for-natural-language-queries"></a>Tee kyselyitä luonnollisella kielellä käyttämällä Power BI Desktopin Q&A-toimintoa
 Yleisien lauseiden ja luonnollisen kielen käyttäminen tiedoista esitettävissä kysymyksissä on tehokasta. Vielä tehokkaampaa on, kun tiedot vastaavat, minkä **Power BI Desktopin** Q&A-toiminto mahdollistaa.
 
 Jotta Q&A pystyy tulkitsemaan onnistuneesti laajaa kysymysvalikoimaa, johon se pystyy vastaamaan, Q&A:n on tehtävä mallista oletuksia. Jos mallin rakenne ei vastaa vähintään yhtä näistä oletuksista, sinun on muutettava malliasi. Kyseiset Q&A:ta varten tehtävät muutokset ovat samat parhaiden käytäntöjen mukaiset optimoinnit kaikille malleille Power BI:ssä riippumatta siitä, käytätkö Q&A:ta. 
+
+> [!NOTE]
+> Q&A on käytettävissä vain käsiteltäessä mallia, joka sisältää **tuotuja** tietoja. Reaaliaikaisia yhteyksiä SSAS- ja DirectQuery-malleihin ei tueta.
+>
+>
 
 Seuraavissa osioissa kuvataan, minkälaisia muutoksia malliisi on tehtävä, jotta se toimii hyvin Power BI:n Q&A-toiminnon kanssa.
 

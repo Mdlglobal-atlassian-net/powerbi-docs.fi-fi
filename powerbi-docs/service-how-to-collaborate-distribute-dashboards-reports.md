@@ -1,29 +1,21 @@
 ---
 title: Miten voin tehdä yhteistyötä ja jakaa Power BI:ssä?
 description: Voit työstää raporttinäkymiä, raportteja, ruutuja ja sovelluksia yhdessä muiden kanssa ja jakaa niitä eri tavoilla Power BI:ssä. Jokaisella tavalla on omat etunsa.
-services: powerbi
-documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
-backup: lukaszp
-editor: ''
-tags: ''
-qualityfocus: monitoring
-qualitydate: 02/28/2017
+ms.reviewer: lukaszp
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 02/09/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: adcba818f60a66ecc4be5827e1ce7688618d0c72
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 7c0037534fa61c5340206354beb6af04d3fc1f4a
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/24/2018
-ms.locfileid: "30815799"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34249501"
 ---
 # <a name="how-should-i-collaborate-and-share-in-power-bi"></a>Miten voin tehdä yhteistyötä ja jakaa Power BI:ssä?
 
@@ -57,7 +49,7 @@ Oletetaan, että haluat jakaa raporttinäkymän laajalle yleisölle. Sinä ja ty
 
 ![Sovelluskuvakkeen julkaiseminen](media/service-how-to-collaborate-distribute-dashboards-reports/power-bi-app-publish-600.png)
 
-Sovelluksia on helppo löytää ja asentaa Power BI -palvelusta ([https://powerbi.com](https://powerbi.com)). Voit lähettää yrityskäyttäjille suoran linkin sovellukseen tai he voivat hakea sen AppSourcesta. Jos Power BI -järjestelmänvalvojasi antaa sinulle oikeudet, voit asentaa sovelluksen automaattisesti työtovereidesi Power BI -tileille. Lue lisää [sovellusten julkaisemisesta](service-create-distribute-apps.md#publish-your-app). 
+Sovelluksia on helppo löytää ja asentaa Power BI -palvelussa ([https://powerbi.com](https://powerbi.com)). Voit lähettää yrityskäyttäjille suoran linkin sovellukseen tai he voivat hakea sen AppSourcesta. Jos Power BI -järjestelmänvalvojasi antaa sinulle oikeudet, voit asentaa sovelluksen automaattisesti työtovereidesi Power BI -tileille. Lue lisää [sovellusten julkaisemisesta](service-create-distribute-apps.md#publish-your-app). 
 
 Sovelluksen asentamisen jälkeen he voivat tarkastella sitä selaimessa tai mobiililaitteessa.
 

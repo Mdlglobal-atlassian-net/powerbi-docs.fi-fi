@@ -9,12 +9,12 @@ ms.component: powerbi-developer
 ms.topic: conceptual
 ms.date: 02/13/2018
 ms.author: maghan
-ms.openlocfilehash: 6ad2138ab37b20fa16a5455ab167ec9e6b7e159c
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: afed2bc87e7e358d9ba02a465c43d223f6e7cba3
+ms.sourcegitcommit: 8ee0ebd4d47a41108387d13a3bc3e7e2770cbeb8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34288310"
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34813775"
 ---
 # <a name="integrate-a-tile-into-an-app-user-owns-data"></a>Ruudun integrointi sovellukseen (käyttäjä omistaa tiedot)
 Lue, miten voit integroida tai upottaa ruudun verkkosovellukseen REST-ohjelmointirajapinnan kutsujen ja Power BI JavaScript -ohjelmointirajapinnan avulla organisaatiolle.
@@ -28,7 +28,7 @@ Jotta voit käydä läpi nämä vaiheittaiset ohjeet, tarvitset **Power BI** -ti
 > 
 > 
 
-Voit integroida ruudun verkkosovellukseen **Power BI** REST -ohjelmointirajapinnan tai Power BI C# SDK:n avulla ja saada ruudun Azure Active Directory (AD) -valtuutuksen **käyttöoikeustietueen** avulla. Voit sitten ladata ruudun käyttämällä samaa käyttöoikeustietuetta. **Power BI** -ohjelmointirajapinta tarjoaa ohjelmallisen käyttöoikeuden tiettyihin **Power BI** -resursseihin. Katso lisätietoja artikkelista [Power BI REST -ohjelmointirajapinnan yleiskatsaus](https://msdn.microsoft.com/library/dn877544.aspx) ja [Power BI JavaScript -ohjelmointirajapinta](https://github.com/Microsoft/PowerBI-JavaScript).
+Voit integroida ruudun verkkosovellukseen **Power BI** REST -ohjelmointirajapinnan tai Power BI C# SDK:n avulla ja saada ruudun Azure Active Directory (AD) -valtuutuksen **käyttöoikeustietueen** avulla. Voit sitten ladata ruudun käyttämällä samaa käyttöoikeustietuetta. **Power BI** -ohjelmointirajapinta tarjoaa ohjelmallisen käyttöoikeuden tiettyihin **Power BI** -resursseihin. Katso lisätietoja artikkeleista [Power BI REST -ohjelmointirajapinta](https://docs.microsoft.com/rest/api/power-bi/) ja [Power BI JavaScript -ohjelmointirajapinta](https://github.com/Microsoft/PowerBI-JavaScript).
 
 ## <a name="download-the-sample"></a>Mallin lataaminen
 Tässä artikkelissa näytetään koodi, jota käytetään [integrate-tile-web-app](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/User%20Owns%20Data/integrate-tile-web-app)-mallissa GitHubissa. Voit ladata mallin, jonka avulla voit noudattaa näitä vaiheittaisia ohjeita.
@@ -44,12 +44,12 @@ Jos olet ladannut [integrate-tile-web-app](https://github.com/Microsoft/PowerBI-
 Sinun on hankittava sovelluksessa **käyttöoikeustietue** Azure AD:stä, ennen kuin voit lähettää kutsuja Power BI REST -ohjelmointirajapintaan. Saat lisätietoja artikkelista [Käyttäjien todentaminen ja Azure AD -käyttöoikeustietueen hankkiminen Power BI -sovellukselle](get-azuread-access-token.md).
 
 ## <a name="step-3---get-a-tile"></a>Vaihe 3 – hanki ruutu
-Voit hankkia **Power BI** -ruudun käyttämällä [Hanki ruudut](https://msdn.microsoft.com/library/mt465741.aspx) -toimintoa, joka antaa luettelon **Power BI** -ruuduista kyseisellä koontinäytöllä. Ruutujen luettelosta saat ruudun tunnuksen hankkiminen ja upotetun URL-osoitteen.
+Voit hankkia **Power BI** -ruudun käyttämällä [Hanki ruudut](https://docs.microsoft.com/rest/api/power-bi/dashboards/gettiles) -toimintoa, joka antaa luettelon **Power BI** -ruuduista kyseisellä koontinäytöllä. Ruutujen luettelosta saat ruudun tunnuksen hankkiminen ja upotetun URL-osoitteen.
 
 Koontinäyttötunnus on noudettava ensin, ennen kuin voit saada ruutua. Lisätietoja siitä, miten voit noutaa koontinäytön, on annettu kohdassa [Koontinäytön integrointi sovellukseen (käyttäjä omistaa tiedot)](integrate-dashboard.md).
 
 ### <a name="get-tiles-using-an-access-token"></a>Ruutujen hankkiminen käyttöoikeustietueen avulla
-Voit [vaiheessa 2](#step-2-get-an-access-token-from-azure-ad) saadun **käyttöoikeustietueen** avulla kutsua [Hanki ruudut](https://msdn.microsoft.com/library/mt465741.aspx) -toiminnon. [Hanki ruudut](https://msdn.microsoft.com/library/mt465741.aspx) -toiminto palauttaa ruutuluettelon. Voit noutaa yksittäisen ruudun ruutuluettelosta. Alla on täydellinen C#-menetelmä ruudun hankkimiseksi. 
+Voit [vaiheessa 2](#step-2-get-an-access-token-from-azure-ad) saadun **käyttöoikeustietueen** avulla kutsua [Hanki ruudut](https://docs.microsoft.com/rest/api/power-bi/dashboards/gettiles) -toiminnon. [Hanki ruudut](https://docs.microsoft.com/rest/api/power-bi/dashboards/gettiles) -toiminto palauttaa ruutuluettelon. Voit noutaa yksittäisen ruudun ruutuluettelosta. Alla on täydellinen C#-menetelmä ruudun hankkimiseksi. 
 
 Jotta voit lähettää REST-ohjelmointirajapinnan kutsun, sinun on sisällytettävä *Valtuutus*-otsikko *Haltija {käyttöoikeustietue}* -muodossa.
 
@@ -216,7 +216,7 @@ Jos latasit ja suoritit[integrate-tile-web-app](https://github.com/Microsoft/Pow
 ![Upotettu ruutu verkkosovelluksessa](media/integrate-tile/powerbi-embedded-tile.png)
 
 ## <a name="working-with-groups-app-workspaces"></a>Ryhmien käsitteleminen (sovelluksen työtilat)
-Jotta voit upottaa ruudun ryhmästä (sovelluksen työtila), voit noutaa kaikkien saatavilla olevien ruutujen luettelon ryhmän koontinäytöstä seuraavan REST-ohjelmointirajapinnan kutsun avulla. Katso lisätietoja tästä REST-ohjelmointirajapinnan kutsusta artikkelista [Hanki ruudut](https://msdn.microsoft.com/library/mt465741.aspx). Tarvitset käyttöoikeuden ryhmässä pyynnölle tulosten palauttamiseksi.
+Jotta voit upottaa ruudun ryhmästä (sovelluksen työtila), voit noutaa kaikkien saatavilla olevien ruutujen luettelon ryhmän koontinäytöstä seuraavan REST-ohjelmointirajapinnan kutsun avulla. Katso lisätietoja tästä REST-ohjelmointirajapinnan kutsusta artikkelista [Hanki ruudut](https://docs.microsoft.com/rest/api/power-bi/dashboards/gettiles). Tarvitset käyttöoikeuden ryhmässä pyynnölle tulosten palauttamiseksi.
 
 ```
 https://api.powerbi.com/v1.0/myorg/groups/{groupId}/dashboards/{dashboard_id}/tiles

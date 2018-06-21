@@ -1,29 +1,22 @@
 ---
-title: ESRI ArcGIS -karttojen luominen Power BI:ssä (opetusohjelma)
+title: ESRI ArcGIS -karttojen luominen Power BI:ssä
 description: 'ESRI ArcGIS -karttojen luominen Power BI:ssä '
-services: powerbi
-documentationcenter: ''
 author: mihart
 manager: kfile
-backup: lukaszp
-editor: ''
-tags: ''
+ms.reviewer: lukaszp
 featuredvideoid: EKVvOZmxg9s
-qualityfocus: no
-qualitydate: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-desktop
+ms.topic: conceptual
 ms.date: 02/28/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: e2a56510b409e001db94164d5856e4c036e3f391
-ms.sourcegitcommit: c45498071d582dcca264216863906ffaae382523
+ms.openlocfilehash: 7a43b5c210c0e7f2bd26eea03bdcd5d2fa975321
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/01/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34297304"
 ---
 # <a name="arcgis-maps-in-power-bi-service-and-power-bi-desktop-by-esri"></a>Esri ArcGIS -kartat Power BI -palvelussa ja Power BI Desktopissa
 Tämä opetusohjelma on kirjoitettu ArcGIS-karttaa luovan henkilön näkökulmasta. Kun tekijä jakaa ArcGIS-kartan työtoverille, kyseinen työtoveri voi tarkastella ja käsitellä karttaa mutta ei tallentaa muutoksia. Lisätietoja ArcGIS-kartan tarkastelemisesta on ohjeartikkelissa [ArcGIS-karttojen käsittely](power-bi-visualizations-arcgis.md).

@@ -1,32 +1,24 @@
 ---
-title: Täytetyt kartat (koropleettikartat) Power BI:ssä (opetusohjelma)
-description: Ohjeet – opetusohjelma täytettyjen karttojen (koropleettikarttojen) luomiseksi Power BI:ssä
-services: powerbi
-documentationcenter: ''
+title: Täytetyt kartat (koropleettikartat) Power BI:ssä
+description: Ohjeet täytettyjen karttojen (koropleettikarttojen) luomiseksi Power BI:ssä
 author: mihart
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
+ms.reviewer: ''
 featuredvideoid: ''
-qualityfocus: no
-qualitydate: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 01/19/2018
+ms.component: powerbi-desktop
+ms.topic: conceptual
+ms.date: 04/11/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: b0d4e1cd766cf5f1b35b5d0a6ca0946820efe9f3
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 5933404b9429ca773ed119addd81d86ad1a28597
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/24/2018
-ms.locfileid: "30973947"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34293049"
 ---
-# <a name="filled-maps-choropleths-in-power-bi-tutorial"></a>Täytetyt kartat (koropleettikartat) Power BI:ssä (opetusohjelma)
+# <a name="filled-maps-choropleths-in-power-bi"></a>Täytetyt kartat (koropleettikartat) Power BI:ssä
 Täytetyssä kartassa käytetään sävytystä tai kuvioita esittämään, miten arvot vaihtelevat suhteellisesti maantieteellisellä alueella.  Suhteelliset erot hahmottuvat nopeasti, kun sävytys vaihtelee vaaleammasta (tarkoittaen harvinaisempaa/pienempää) tummempaan (yleisempi/enemmän).    
 
 ![](media/power-bi-visualization-filled-maps-choropleths/large_map.png)
@@ -121,4 +113,4 @@ Lisäohjeita karttavisualisointien tekemiseen saat ohjeaiheesta [Vihjeitä ja vi
  [Visualisoinnin lisääminen raporttiin](power-bi-report-add-visualizations-i.md)  
  [Visualisointityypit Power BI:ssä](power-bi-visualization-types-for-reports-and-q-and-a.md)    
  [Käytettävän visualisoinnin tyypin vaihtaminen](power-bi-report-change-visualization-type.md)      
-Onko sinulla muuta kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
+Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)

@@ -7,22 +7,22 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 02/06/2018
+sktopms.date: 06/01/2018
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: e72e3bcca4254b957580775196d4919e88452773
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: e8af4695ba54fee91820552802cf18d8a758e8b0
+ms.sourcegitcommit: b3b32b9b3935706d7caa091833bd32259d7ff6ee
 ms.translationtype: HT
 ms.contentlocale: fi-FI
 ms.lasthandoff: 06/04/2018
-ms.locfileid: "34253089"
+ms.locfileid: "34755043"
 ---
 # <a name="frequently-asked-questions-about-power-bi"></a>Usein kysyttyjä kysymyksiä Power BI:stä
 * Jos sinulla on muita kysymyksiä, [voit esittää niitä Power BI -yhteisössä](http://community.powerbi.com/).
 * Eikö ongelma ratkennut? Käy [Power BI -tukisivulla](https://powerbi.microsoft.com/support/).
 
 ## <a name="what-is-microsoft-power-bi"></a>Mikä on Microsoft Power BI?
-[Power BI](https://powerbi.microsoft.com/) on pilvipohjainen yritysanalyysipalvelu, jonka ansiosta kaikki voivat visualisoida ja analysoida tietoja entistä nopeammin, tehokkaammin ja helpommin. Se tuo käyttäjien saataville laajan valikoiman tietoja ja esittää ne elävästi helppokäyttöisten koontinäyttöjen, vuorovaikutteisten raporttien ja vaikuttavien visualisointien avulla.
+Power BI on pilvipohjainen yritysanalyysipalvelu, jonka ansiosta kaikki voivat visualisoida ja analysoida tietoja nopeammin, tehokkaammin ja helpommin. Se tuo käyttäjien saataville laajan valikoiman tietoja ja esittää ne elävästi helppokäyttöisten koontinäyttöjen, vuorovaikutteisten raporttien ja vaikuttavien visualisointien avulla. Lue lisää siitä, [mikä on Power BI](power-bi-overview.md).
 
 ## <a name="whats-the-difference-between-power-bi-and-power-bi-pro"></a>Mitä eroa on Power BI:llä ja Power BI Prolla?
 Power BI tarjoaa erilaisia ominaisuuksia, joiden avulla voit aloittaa tietojen analysoinnin aivan uudella tavalla. Power BI Pro tarjoaa kaikki samat hienot ominaisuudet kuin Power BI, sekä muita ominaisuuksia, kuten suuremman tallennustilan, mahdollisuuden ajoittaa tiedot päivittymään useita kertoja päivässä, täysin vuorovaikutteiset reaaliaikaiset tietolähteet, ryhmät ja paljon muuta. Lue lisää [Power BI Pron ja ilmaisen Power BI:n eroista](https://powerbi.microsoft.com/pricing).
@@ -33,36 +33,20 @@ Power BI Desktop on ilmainen. Power BI Prosta on saatavilla 60 päivän ilmaine
 ## <a name="what-if-i-have-questions-about-power-bi-premium"></a>Entä jos minulla on kysyttävää Power BI Premiumista?
 Jos sinulla on Power BI Premiumiin liittyviä kysymyksiä, tutustu [Power BI Premiumin usein kysyttyihin kysymyksiin](service-premium-faq.md).
 
-## <a name="are-users-who-signed-up-after-may-3-2017-eligible-for-the-extended-pro-trial"></a>Ovatko 3. toukokuuta 2017 jälkeen rekisteröityneet käyttäjät oikeutettuja laajennettuun Pro-kokeiluversioon?
-3.5.2017 ja sen jälkeen rekisteröityneet uudet Power BI:n ilmaisversion käyttäjät eivät ole oikeutettuja laajennettuun Pro-kokeiluversioon. He ovat kuitenkin oikeutettuja tavalliseen 60 päivän Pro-kokeiluversioon.
-
-## <a name="how-do-i-find-out-who-in-my-organization-is-eligible-for-the-extended-pro-trial"></a>Kuinka voin tarkistaa, ketkä organisaationi käyttäjät ovat oikeutettuja laajennettuun Pro-kokeiluversioon?
-Et voi tarkistaa tätä suoraan, mutta Azure Active Directoryn integroidut sovellukset -raportti Power BI:lle sisältää tiedon organisaatiosi aktiivisista käyttäjistä. Aktiiviset ilmaisversion käyttäjät saavat tarjoukseen oikeutettuna ajanjaksona ilmoituksen ponnahdusikkunassa. Katso lisätiedot [Kirjautuneiden Power BI -käyttäjien etsiminen](service-admin-access-usage.md) -ohjeartikkelista.
-
-> [!NOTE]
-> Azure AD -raportti ei ilmaise, onko käyttäjä Power BI:n maksuttoman tai Pro-version käyttäjä. Se ilmoittaa vain, ketkä käyttäjät ovat kirjautuneet Power BI:hin ja milloin he kirjautuivat sisään. Tässä raportissa mainitut käyttäjät eivät välttämättä ole oikeutettuja laajennettuun Pro-kokeiluversioon.
-> 
-> 
+## <a name="how-do-i-find-out-who-in-my-organization-has-a-power-bi-account"></a>Kuinka saan selville, keillä organisaationi jäsenillä on Power BI -tili?
+Microsoft Azure Active Directoryn integroidut sovellukset -raportti Power BI:lle sisältää tiedon organisaatiosi aktiivisista käyttäjistä. Azure AD -raportti ei ilmaise, onko käyttäjä Power BI:n maksuttoman tai Pro-version käyttäjä. Se ilmoittaa vain, ketkä käyttäjät ovat kirjautuneet Power BI:hin ja milloin he kirjautuivat sisään. Katso lisätiedot [Kirjautuneiden Power BI -käyttäjien etsiminen](service-admin-access-usage.md) -ohjeartikkelista.
 
 ## <a name="what-is-power-bi-desktop"></a>Mikä on Power BI Desktop?
-[Power BI Desktop](https://powerbi.microsoft.com/designer) on maksuton työpöytäsovellus, jonka voit asentaa saman tien omalle tietokoneellesi. Power BI Desktop toimii yhdenmukaisesti Power BI -palvelun kanssa tarjoamalla kehittyneitä tietojen tarkastelu-, muovaamis-, mallinnus- ja raportointimahdollisuuksia sekä erittäin vuorovaikutteisia visualisointeja. Voit tallentaa työsi tiedostoon sekä julkaista tietoja ja raportteja suoraan Power BI -sivustoon muiden kanssa jaettavaksi.
+Power BI Desktop on maksuton työpöytäsovellus, jonka voit asentaa saman tien omalle tietokoneellesi. Power BI Desktop toimii yhdenmukaisesti Power BI -palvelun kanssa tarjoamalla kehittyneitä tietojen tarkastelu-, muovaamis-, mallinnus- ja raportointimahdollisuuksia sekä erittäin vuorovaikutteisia visualisointeja. Voit tallentaa työsi tiedostoon sekä julkaista tietoja ja raportteja suoraan Power BI -sivustoon muiden kanssa jaettavaksi. Lue lisää siitä, [mikä on Power BI Desktop](desktop-what-is-desktop.md).
 
 ## <a name="what-do-i-need-to-use-power-bi"></a>Mitä Power BI:n käyttämiseen tarvitaan?
-Selain ja työsähköpostiosoite riittävät.
-
->[!NOTE]
->Työsähköpostiosoitteita, joiden pääte on .gov tai .mil, ei tällä hetkellä tueta.
+Selain ja työsähköpostiosoite riittävät. Voit rekisteröityä .gov- tai .mil-sähköpostiosoitteella. Katso lisätietoja kohdasta [Rekisteröi Yhdysvaltain valtionhallinnon organisaatio Power BI -palveluun](service-govus-signup.md). 
 
 ## <a name="why-do-i-have-to-sign-up-with-my-work-email"></a>Miksi rekisteröitymiseen on käytettävä työsähköpostia?
 Power BI ei tue sähköpostin kuluttajapalvelujen tai tietoliikenteen palveluntarjoajien sähköpostiosoitteita. Lue lisää [Power BI:n omatoimisen rekisteröitymisen prosessista](service-self-service-signup-for-power-bi.md).
 
-## <a name="which-work-email-addresses-are-supported"></a>Mitä työsähköpostiosoitteita tuetaan?
-Tuettuja ovat työsähköpostiosoitteet, joiden pääte on **.edu** tai **.org**.
-
-Osoitteita, joiden pääte on **.gov** tai **.mil**, ei tällä hetkellä tueta.
-
 ## <a name="is-government-academic-and-non-profit-pricing-available-for-power-bi"></a>Käytetäänkö Power BI:n hinnoittelussa erillisiä julkishallinto-, oppilaitos- tai yhdistyshintoja?
-Kyllä, voittoa tavoittelemattomille yhdistyksille on erillinen hinnoittelu suoraan Microsoftilta ostettaessa. [Microsoft Product Donation](https://www.microsoft.com/about/philanthropies/product-donations/products/powerbi/) -sivustolla on lisätietoja ja rekisteröitymismahdollisuus. Julkishallinto- ja oppilaitoshinnoittelu on saatavilla MOSP/Direct-, EA- ja Open-käyttöoikeusohjelmien kautta. Julkishallintohinnoittelu on käytettävissä myös syndikoinnissa. Power BI ei ole vielä käytettävissä US Government Community Cloud (GCC) -palvelussa.
+Kyllä, voittoa tavoittelemattomille yhdistyksille on erillinen hinnoittelu suoraan Microsoftilta ostettaessa. [Microsoft Product Donation](https://www.microsoft.com/about/philanthropies/product-donations/products/powerbi/) -sivustolla on lisätietoja ja rekisteröitymismahdollisuus. Julkishallinto- ja oppilaitoshinnoittelu on saatavilla MOSP/Direct-, EA- ja Open-käyttöoikeusohjelmien kautta. Julkishallintohinnoittelu on käytettävissä myös syndikoinnissa. 
 
 ## <a name="is-power-bi-available-on-premises"></a>Onko Power BI käytettävissä paikallisesti?
 Power BI -palvelu [https://powerbi.com](https://powerbi.com) ei ole käytettävissä yksityisenä, sisäisenä pilvipalveluna. Tietojen paikalliseen tarkastelemiseen ja käsittelemiseen on kuitenkin kolme muuta vaihtoehtoa. 
@@ -152,6 +136,6 @@ Kuten monissa muissakin Microsoft-palveluissa ja -ohjelmistoissa, myös Power BI
 * Jos haluat **kumota** viimeisimmän toiminnon tai muutamia viimeisimpiä toimintoja, valitse CTRL + Z.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
-* Onko sinulla muuta kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)
+* Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)
 * Eikö ongelma ratkennut? Käy [Power BI -tukisivulla](https://powerbi.microsoft.com/support/)
 

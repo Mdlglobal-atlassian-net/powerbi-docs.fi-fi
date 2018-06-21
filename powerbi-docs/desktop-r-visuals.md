@@ -1,29 +1,21 @@
 ---
 title: Power BI -visualisointien luominen R:n avulla
 description: Power BI -visualisointien luominen R:n avulla
-services: powerbi
-documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 12/06/2017
+ms.component: powerbi-desktop
+ms.topic: conceptual
+ms.date: 05/02/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: e2e59e3b9d718fa2e0c8c3411968fd4ab66a5851
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 641a4f457782711902ee7e2414cb9afffb391afc
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/24/2018
-ms.locfileid: "30973827"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34286332"
 ---
 # <a name="create-power-bi-visuals-using-r"></a>Power BI -visualisointien luominen R:n avulla
 **Power BI Desktopin** kanssa voit käyttää **R**:ää tietojen visualisoimiseen.
@@ -42,21 +34,27 @@ Kun olet määrittänyt R-asennukset, olet valmis aloittamaan R-visualisointien 
 1. Valitse **R-visualisointi**-kuvake **Visualisointi**-ruudussa seuraavassa kuvassa esitetyllä tavalla, jos haluat lisätä R-visualisoinnin.
    
    ![](media/desktop-r-visuals/r-visuals-3.png)
-2. Kun haluat lisätä raporttiin R-visualisoinnin, **Power BI Desktop** toimii seuraavasti:
+
+   Kun haluat lisätä raporttiin R-visualisoinnin, **Power BI Desktop** toimii seuraavasti:
    
    - R-visualisoinnin kuvan paikkamerkki tulee näkyviin raportin piirtoalustalle.
    
    - **R-Komentosarjaeditori** näkyy keskimmäisen ruudun alareunassa.
    
    ![](media/desktop-r-visuals/r-visuals-4.png)
-3. Lisää seuraavaksi kentät, joita haluat käyttää R-komentosarjassa, **Arvot**-osioon **Kentät**-kohdassa samalla tavalla kuin muunkin **Power BI Desktop** -visualisoinnin. Vain kentät, jotka on lisätty **Kentät**-kohtaan, ovat käytettävissä R-komentosarjassa, ja voit lisätä uusia kenttiä tai poistaa tarpeettomia kenttiä **Kentät**-kohdasta käsitellessäsi R-komentosarjaasi **Power BI Desktopin R-komentosarjaeditorissa**. **Power BI Desktop** havaitsee automaattisesti, mitkä kentät on lisätty tai poistettu.
+
+2. Lisää seuraavaksi kentät, joita haluat käyttää R-komentosarjassa, **Arvot**-osioon **Kentät**-kohdassa samalla tavalla kuin muunkin **Power BI Desktop** -visualisoinnin. 
+    
+    Vain kentät, jotka on lisätty **Kentät**-kohtaan, ovat käytettävissä R-komentosarjaasi varten. Voit lisätä uusia kenttiä tai poistaa tarpeettomia kenttiä **Kentät**-kohdasta käsitellessäsi R-komentosarjaasi **Power BI Desktopin R-komentosarjaeditorissa**. **Power BI Desktop** havaitsee automaattisesti, mitkä kentät on lisätty tai poistettu.
    
    > [!NOTE]
    > R-visualisointien koostamisen oletustyyppi on *Älä tee yhteenvetoa*.
    > 
    > 
    
-1. Nyt voit luoda piirron valitsemiesi tietojen perusteella. Kun valitset kenttiä, **R-Komentosarjaeditori** luo tukevan R-komentosarjan sidontakoodin harmaassa osassa editoriruudun yläosassa tekemiesi valintojen perusteella. Kun valitset tai poistat lisäkenttiä, tukikoodi R-komentosarjaeditorissa luodaan tai poistetaan vastaavasti automaattisesti.
+3. Nyt voit luoda piirron valitsemiesi tietojen perusteella. 
+
+    Kun valitset kenttiä, **R-Komentosarjaeditori** luo tukevan R-komentosarjan sidontakoodin harmaassa osassa editoriruudun yläosassa tekemiesi valintojen perusteella. Kun valitset tai poistat lisäkenttiä, tukikoodi R-komentosarjaeditorissa luodaan tai poistetaan vastaavasti automaattisesti.
    
    Seuraavassa kuvassa olevassa esimerkissä valittiin kolme kenttää: hp, hammaspyörä ja drat. Näiden valintojen tuloksena R-komentosarjaeditori loi seuraavan sidontakoodin:
    
@@ -72,46 +70,46 @@ Kun olet määrittänyt R-asennukset, olet valmis aloittamaan R-visualisointien 
    > 
    > 
    
-   Luotu tietokehys on nimeltään **tietojoukko**, ja valittuja sarakkeita voidaan käyttää niiden nimillä. Esimerkiksi hammaspyöräkenttää voi käyttää kirjoittamalla *tietojoukko$hammaspyörä* R-komentosarjaan. Välilyöntejä tai erikoismerkkejä sisältävissä kentissä käytä heittomerkkejä.
-2. Valitsemasi kentät luovat tietokehyksen automaattisesti, joten olet valmis kirjoittamaan R-komentosarjan, joka johtaa piirron luomiseen R-oletuslaitteeseen. Kun komentosarja on valmis, valitse **Suorita** **R-komentosarjaeditorin** otsikkorivillä (**Suorita** on otsikkorivin oikealla puolella).
+   Luotu tietokehys on nimeltään **tietojoukko**, ja voit käyttää valittuja sarakkeita niiden nimillä. Esimerkiksi hammaspyöräkenttää voi käyttää kirjoittamalla *tietojoukko$hammaspyörä* R-komentosarjaan. Välilyöntejä tai erikoismerkkejä sisältävissä kentissä käytä heittomerkkejä.
+
+4. Valitsemasi kentät luovat tietokehyksen automaattisesti, joten olet valmis kirjoittamaan R-komentosarjan, joka johtaa piirron luomiseen R-oletuslaitteeseen. Kun komentosarja on valmis, valitse **Suorita** **R-komentosarjaeditorin** otsikkorivillä (**Suorita** on otsikkorivin oikealla puolella).
    
-    Kun **Suorita** on valittuna, **Power BI Desktop** tunnistaa piirron ja esittää sen piirtoalustalla.
-   Koska prosessi suoritetaan paikallisessa R-asennuksessa, varmista, että tarvittavat paketit asennetaan.
+    Kun **Suorita** on valittuna, **Power BI Desktop** tunnistaa piirron ja esittää sen piirtoalustalla. Koska prosessi suoritetaan paikallisessa R-asennuksessa, varmista, että tarvittavat paketit asennetaan.
    
    **Power BI Desktop** piirtää visualisoinnin uudelleen, kun jokin seuraavista tapahtumista tapahtuu:
    
-   * **Suorita** valitaan **R-komentosarjaeditorin** otsikkorivillä
+   * Kun valitset **Suorita** **R-komentosarjaeditorin** otsikkoriviltä
    * Aina kun tietoja muutetaan päivittämisen, suodattamisen tai korostamisen vuoksi
 
-Seuraavassa kuvassa on esimerkki korrelaation piirtokoodista, ja siinä piirretään korrelaatiot erityyppisten autojen määritteiden välillä.
+    Seuraavassa kuvassa on esimerkki korrelaation piirtokoodista, ja siinä piirretään korrelaatiot erityyppisten autojen määritteiden välillä.
 
-![](media/desktop-r-visuals/r-visuals-6.png)
+    ![](media/desktop-r-visuals/r-visuals-6.png)
 
-Saat visualisointeja suurempaan näkymään pienentämällä **R-komentosarjaeditorin**. Ja tietysti muiden visualisointien tapaan **Power BI Desktopissa** voit ristisuodattaa korrelaation piirron valitsemalla vain urheiluautot rengasvisualisoinnissa (pyöreä visualisointi oikealla yllä olevan esimerkin kuvassa).
+5. Saat visualisointeja suurempaan näkymään pienentämällä **R-komentosarjaeditorin**. Ja tietysti muiden visualisointien tapaan **Power BI Desktopissa** voit ristisuodattaa korrelaation piirron valitsemalla vain urheiluautot rengasvisualisoinnissa (pyöreä visualisointi oikealla yllä olevan esimerkin kuvassa).
 
-![](media/desktop-r-visuals/r-visuals-7.png)
+    ![](media/desktop-r-visuals/r-visuals-7.png)
 
-Voit myös muokata R-komentosarjaa visualisoinnin mukauttamiseksi ja hyödyntää R:n tehoa lisäämällä parametreja piirtokomentoon.
+6. Voit myös muokata R-komentosarjaa visualisoinnin mukauttamiseksi ja hyödyntää R:n tehoa lisäämällä parametreja piirtokomentoon.
 
-Alkuperäinen piirtokomento oli seuraavanlainen:
+    Alkuperäinen piirtokomento oli seuraavanlainen:
 
     corrplot(M, method = "color",  tl.cex=0.6, tl.srt = 45, tl.col = "black")
 
-Joidenkin R-komentosarjan muutosten jälkeen komento on nyt seuraava:
+    Joidenkin R-komentosarjan muutosten jälkeen komento on nyt seuraava:
 
     corrplot(M, method = "circle", tl.cex=0.6, tl.srt = 45, tl.col = "black", type= "upper", order="hclust")
 
-Tuloksena on, että R-visualisointi piirtää nyt ympyröitä, ottaa vain yläosan huomioon ja järjestää matriisin uudelleen tehdäkseen klusterin korreloiduista ominaisuuksista seuraavassa kuvassa esitetyllä tavalla.
+    Tuloksena on, että R-visualisointi piirtää nyt ympyröitä, ottaa vain yläosan huomioon ja järjestää matriisin uudelleen tehdäkseen klusterin korreloiduista ominaisuuksista seuraavassa kuvassa esitetyllä tavalla.
 
-![](media/desktop-r-visuals/r-visuals-8.png)
+    ![](media/desktop-r-visuals/r-visuals-8.png)
 
-Suoritettaessa R-komentosarjaa, jonka tuloksena on virhe, R-visualisointia ei piirretä ja virhesanoma tulee näkyviin piirtoalustalle. Lisätietoja virheestä saat valitsemalla **Näytä tiedot** R-visualisoinnin virheestä piirtoalustalla.
+    Suoritettaessa R-komentosarjaa, jonka tuloksena on virhe, R-visualisointia ei piirretä ja virhesanoma tulee näkyviin piirtoalustalle. Lisätietoja virheestä saat valitsemalla **Näytä tiedot** R-visualisoinnin virheestä piirtoalustalla.
 
-![](media/desktop-r-visuals/r-visuals-9.png)
+    ![](media/desktop-r-visuals/r-visuals-9.png)
 
-> **R-komentosarjojen suojaus:** R-visualisointeja luodaan R-komentosarjoista, joiden koodi voi sisältää suojaus- tai tietosuojariskejä. Kun yrität tarkastella tai käsitellä R-visualisointia ensimmäistä kertaa, käyttäjälle esitetään suojauksen varoitussanoma. Ota R-visualisoinnit käyttöön vain, jos luotat tekijään ja lähteeseen, tai sen jälkeen, kun olet tarkastanut R-komentosarjan ja tutustunut siihen.
-> 
-> 
+    > **R-komentosarjojen suojaus:** R-visualisointeja luodaan R-komentosarjoista, joiden koodi voi sisältää suojaus- tai tietosuojariskejä. Kun yrität tarkastella tai käsitellä R-visualisointia ensimmäistä kertaa, käyttäjälle esitetään suojauksen varoitussanoma. Ota R-visualisoinnit käyttöön vain, jos luotat tekijään ja lähteeseen, tai sen jälkeen, kun olet tarkastanut R-komentosarjan ja tutustunut siihen.
+    > 
+    > 
 
 ## <a name="known-limitations"></a>Tunnetut rajoitukset
 R-visualisoinneilla **Power BI Desktopissa** on joitakin rajoituksia:

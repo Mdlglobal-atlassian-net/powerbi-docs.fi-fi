@@ -1,28 +1,20 @@
 ---
 title: Power BI -raporttipalvelimen asentaminen
 description: Opi asentamaan Power BI -raporttipalvelin.
-services: powerbi
-documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-report-server
+ms.topic: conceptual
 ms.date: 03/19/2018
 ms.author: maggies
-ms.openlocfilehash: 8b8bb3867ec1630dc5163148e4aa20e10c0504b7
-ms.sourcegitcommit: 93e7362fc47319959b6992dfd037effdf831d010
+ms.openlocfilehash: 830c867c6f495c30bd28640db9adab964bc5e2bd
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/21/2018
-ms.locfileid: "30975647"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34721727"
 ---
 # <a name="install-power-bi-report-server"></a>Power BI -raporttipalvelimen asentaminen
 
@@ -139,7 +131,7 @@ Sinun on avattava TCP-portti, jonka olet määrittänyt verkkopalvelun URL-osoit
 * Jos haluat määrittää verkkoportaalin niin, että voit käyttää sitä raporttitietokoneessa raporttien tarkastelua ja hallintaa varten, katso [Palomuurin määrittäminen raporttipalvelimen käyttöä varten](https://docs.microsoft.com/sql/reporting-services/report-server/configure-a-firewall-for-report-server-access) ja [Raporttipalvelimen määrittäminen etähallintaa varten](https://docs.microsoft.com/sql/reporting-services/report-server/configure-a-report-server-for-remote-administration).
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
-[Järjestelmänvalvojien opas](admin-handbook-overview.md)  
+[Järjestelmänvalvojan yleiskatsaus](admin-handbook-overview.md)  
 [Raporttipalvelimen tuoteavaimen löytäminen](find-product-key.md)  
 [Asenna Power BI Desktop (optimoitu Power BI -raporttipalvelimelle)](install-powerbi-desktop.md)  
 [Raporttipalvelujen asennuksen tarkistaminen](https://docs.microsoft.com/sql/reporting-services/install-windows/verify-a-reporting-services-installation)  

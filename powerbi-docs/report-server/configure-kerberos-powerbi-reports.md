@@ -1,28 +1,20 @@
 ---
 title: Kerberoksen määrittäminen Power BI -raporttien käyttöön
 description: Opi määrittämään raporttipalvelimen Kerberos-todennus hajautetun ympäristön Power BI-raporteissa käytettyjä tietolähteitä varten.
-services: powerbi
-documentationcenter: ''
 author: markingmyname
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-report-server
+ms.topic: conceptual
 ms.date: 11/01/2017
 ms.author: maghan
-ms.openlocfilehash: 70d4992ad4680d2a412a6bdded895f4248f5dab1
-ms.sourcegitcommit: 6e693f9caf98385a2c45890cd0fbf2403f0dbb8a
+ms.openlocfilehash: a9173ba6b4689a6cc71eba679f9bcc0c54de048c
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/30/2018
-ms.locfileid: "30973232"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34481781"
 ---
 # <a name="configure-kerberos-to-use-power-bi-reports"></a>Kerberoksen määrittäminen Power BI -raporttien käyttöön
 <iframe width="640" height="360" src="https://www.youtube.com/embed/vCH8Fa3OpQ0?showinfo=0" frameborder="0" allowfullscreen></iframe>
@@ -223,8 +215,8 @@ Kun kaikki edellä kuvatut määritykset on tehty, raportin pitäisi näkyä oik
 Vaikka nämä määritykset toimivat useimmissa tapauksissa, Kerberosta käytettäessä voi olla erilaisia määrityksiä ympäristön mukaan. Jos raportti ei vieläkään lataudu, voit ottaa yhteyttä toimialueen järjestelmänvalvojaan tai tukeen.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
-[Järjestelmänvalvojien opas](admin-handbook-overview.md)  
-[Pikaopas: Power BI -raporttipalvelimen asentaminen](quickstart-install-report-server.md)  
+[Järjestelmänvalvojan yleiskatsaus](admin-handbook-overview.md)  
+[Power BI -raporttipalvelimen asentaminen](install-report-server.md)  
 
-Onko sinulla muuta kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
+Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
 

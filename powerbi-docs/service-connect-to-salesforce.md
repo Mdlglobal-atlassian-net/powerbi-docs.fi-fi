@@ -1,29 +1,21 @@
 ---
 title: Yhteyden muodostaminen Salesforceen Power BI:n avulla
 description: Power BI:n Salesforce
-services: powerbi
-documentationcenter: ''
 author: SarinaJoan
 manager: kfile
-backup: maggiesMSFT
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: maggiesMSFT
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 10/16/2017
+ms.component: powerbi-service
+ms.topic: conceptual
+ms.date: 05/30/2018
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 8089c796441fd4200b146da6330dd5c208bf8b30
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: e36cff803af74d212f4c1804fe3a955a11c193cf
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/24/2018
-ms.locfileid: "30815674"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34722447"
 ---
 # <a name="connect-to-salesforce-with-power-bi"></a>Yhteyden muodostaminen Salesforceen Power BI:n avulla
 Power BI:ssä voit muodostaa helposti yhteyden Salesforce.com-tiliisi. Kun yhteys on luotu, tietosi noudetaan ja koontinäyttö sekä tietoihisi perustuvat raportit esitetään automaattisesti.
@@ -71,19 +63,26 @@ Voit muokata tätä koontinäyttöä, jotta näet tiedot juuri haluamallasi tava
 * Kokeile [kysymyksen esittämistä koontinäytön yläreunassa olevassa Q&A-ruudussa](power-bi-q-and-a.md).
 * [Muuta koontinäytön ruutuja](service-dashboard-edit-tile.md).
 * [Valitse jokin ruutu](service-dashboard-tiles.md), jolloin siihen liittyvä raportti avautuu.
-* Tietojoukko on ajastettu päivittymään päivittäin, mutta voit muuttaa päivitysaikataulua tai kokeilla tietojoukon päivittämistä **Päivitä nyt** -toiminnolla haluamanasi ajankohtana.
+* Tietojoukko on ajastettu päivittymään päivittäin, mutta voit muuttaa päivitysaikataulua tai kokeilla tietojoukon päivittämistä **Päivitä nyt** -toiminnolla haluamanasi ajankohtana
 
-## <a name="system-requirements"></a>Järjestelmävaatimukset
-* Yhdistetty tuotannon Salesforce-tiliin, jossa API-ohjelmointirajapinnan käyttö on sallittu
-* Käyttöoikeudet on myönnetty Power BI -sovellukselle sisäänkirjautumisen aikana
-* Tilillä on käytettävissä riittävästi API-ohjelmointirajapintakutsuja tietojen vastaanottamiseen ja päivittämiseen
-* Päivitystä varten tarvitaan kelvollinen todennustunnus. Varmista, että tuotuna on enintään 5 Salesforce-tietojoukkoa, koska Salesforcessa todennustunnusten enimmäisraja sovellusta kohden on 5.
+## <a name="system-requirements-and-considerations"></a>Järjestelmävaatimukset ja huomioon otettavat seikat
+- Yhdistetty tuotannon Salesforce-tiliin, jossa API-ohjelmointirajapinnan käyttö on sallittu
+- Käyttöoikeudet on myönnetty Power BI -sovellukselle sisäänkirjautumisen aikana
+- Tilillä on käytettävissä riittävästi API-ohjelmointirajapintakutsuja tietojen vastaanottamiseen ja päivittämiseen
+- Päivitystä varten tarvitaan kelvollinen todennustunnus. Varmista, että tuotuna on enintään 5 Salesforce-tietojoukkoa, koska Salesforcessa todennustunnusten enimmäisraja sovellusta kohden on 5.
+- Salesforce-raporttien ohjelmointirajapinnassa on rajoitus, joka tukee enintään 2 000 riviä tietoja.
+
 
 ## <a name="troubleshooting"></a>Vianmääritys
 Jos kohtaat virheitä, tarkista edellä mainitut vaatimukset. Huomaa myös, että kirjautumista mukautettuun tai eristettyyn toimialueeseen ei tueta tällä hetkellä.
 
+### <a name="unable-to-connect-to-the-remote-server-message"></a>”Yhteyden muodostaminen etäpalvelimeen ei onnistu” -sanoma
+
+Jos näyttöön tulee sanoma ”Yhteyden muodostaminen etäpalvelimeen ei onnistu” yritettäessä muodostaa yhteyttä Salesforce-tiliisi, katso tämän ongelman ratkaisu Outsystems-keskustelupalstalla: [Salesforce Connector Log In Error Message: Unable to connect to the remote server](https://www.outsystems.com/forums/Forum_TopicView.aspx?TopicId=17674&TopicName=log-in-error-message-unable-to-connect-to-the-remote-server&)
+
+
 ## <a name="next-steps"></a>Seuraavat vaiheet
-[Aloita Power BI:n käyttäminen](service-get-started.md)
+[Power BI:n käytön aloittaminen](service-get-started.md)
 
 [Nouda tiedot](service-get-data.md)
 

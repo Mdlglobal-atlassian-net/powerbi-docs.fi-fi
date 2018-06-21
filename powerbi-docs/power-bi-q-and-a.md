@@ -1,35 +1,32 @@
 ---
 title: Power BI -palvelun ja Power BI Desktopin Q&A-toiminnon yleiskatsaus
 description: Yleiskatsaus aiheeseen Power BI:n Q&A-kyselyt luonnollisella kielellä.
-services: powerbi
-documentationcenter: ''
 author: mihart
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: ''
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 01/18/2018
 ms.author: mihart
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 814c4a4274b5f2e022074454ce5460d13a20f1e2
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: a1d39d10982f1d598ffce7e978c1b030e0a442d4
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/24/2018
-ms.locfileid: "30815664"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34295464"
 ---
 # <a name="qa-in-power-bi-service-and-power-bi-desktop"></a>Q&A Power BI -palvelussa ja Power BI Desktopissa
 ## <a name="what-is-qa"></a>Mikä on Q&A?
 Joskus nopein tapa saada vastauksia tiedoista on kysyä kysymyksiä luonnollisella kielellä. Esimerkiksi ”mikä oli viime vuoden kokonaismyynti”.  Q&A-toiminnolla voit tutkia tietojasi intuitiivisesti luonnollisella kielellä sekä saada vastauksia eri kaavioiden muodossa. Q&A eroaa hakukoneesta – Q&A antaa vain tuloksia Power BI:n tiedoista.
 
 Tämä artikkeli on hyvä aloituskohta Q&A-toiminnon käyttöön. Valitse linkki alta ja lue lisää Q&A-toiminnon käytöstä Power BI -palvelussa (koontinäytöt ja raportit), Power BI Desktopissa (raportit), Power BI Embeddedissä ja Power BI -mobiilisovelluksessa.  
+
+> [!NOTE]
+> **Power BI:n Q&A** tukee vastaamista vain englanniksi kysyttyihin, luonnollisella kielellä esitettyihin kyselyihin. Voit myös kokeilla espanjaksi kysyttyjen kysymysten esikatseluominaisuutta. Siirry **Power BI Desktopissa** kohtaan **Tiedosto**, **Asetukset ja vaihtoehdot**, **Asetukset** ja etsi sitten **Esikatseluominaisuudet**-välilehti. Valitse **Q&A:n espanjan kielen tuki** -valintaruutu.  
+>
+>
 
 ![](media/power-bi-q-and-a/pbi_qa_boxsalessqft.png)
 

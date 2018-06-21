@@ -1,32 +1,26 @@
 ---
 title: SAP BW -yhdistimen käyttö Power BI Desktopissa
 description: SAP BW -yhdistimen käyttö Power BI Desktopissa
-services: powerbi
-documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 03/06/2018
+ms.component: powerbi-desktop
+ms.topic: conceptual
+ms.date: 04/09/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 84ee8e7c6dd92c5400b6e9d44fab03ad347084d9
-ms.sourcegitcommit: e31fc1f6e4af427f8b480c8dbc537c3617c9b2c0
+ms.openlocfilehash: 79fcd556827c0c5c34615021e45e3abfadfd50e2
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/22/2018
-ms.locfileid: "30975742"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34288149"
 ---
 # <a name="use-the-sap-bw-connector-in-power-bi-desktop"></a>SAP BW -yhdistimen käyttö Power BI Desktopissa
-Voit nyt käyttää **SAP BusinessWarehouse (BW)** -tietoja Power BI Desktopilla.
+Voit nyt käyttää **SAP Business Warehouse (BW)** -tietoja Power BI Desktopilla.
+
+Tietoja siitä, miten SAP-asiakkaat voivat hyötyä yhdistämällä Power BI:n SAP Business Warehouse (BW) -järjestelmäänsä, saat [Power BI ja SAP BW -teknisestä raportista](https://aka.ms/powerbiandsapbw).
 
 ## <a name="installation-of-sap-bw-connector"></a>SAP BW -yhdistimen asentaminen
 Käyttääksesi **SAP BW -yhdistintä**, suorita asennus seuraavasti:
@@ -116,3 +110,4 @@ Lisätietoja SAP HANA -tietokannoista ja DirectQuery-kyselystä saat seuraavista
 * [DirectQuery ja SAP HANA](desktop-directquery-sap-hana.md)
 * [DirectQuery Power BI:ssä](desktop-directquery-about.md)
 * [DirectQueryn tukemat tietolähteet](desktop-directquery-data-sources.md)
+* [Power BI ja SAP BW tekninen raportti](https://aka.ms/powerbiandsapbw)

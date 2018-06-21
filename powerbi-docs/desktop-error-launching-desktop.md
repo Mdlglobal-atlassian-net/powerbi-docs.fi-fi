@@ -1,29 +1,21 @@
 ---
 title: Power BI Desktopin käynnistysongelmien ratkaiseminen
 description: Power BI Desktopin käynnistysongelmien ratkaiseminen
-services: powerbi
-documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 01/24/2018
+ms.component: powerbi-desktop
+ms.topic: conceptual
+ms.date: 04/24/2018
 ms.author: davidi
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: 43263afb63fa0350a240cae602f4a2acf8ef8edd
-ms.sourcegitcommit: 4217430c3419046c3a90819c34f133ec7905b6e7
+ms.openlocfilehash: 99ee9e87584202420239658a3522ad82cb383227
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/12/2018
-ms.locfileid: "30975147"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34286539"
 ---
 # <a name="resolve-issues-when-power-bi-desktop-will-not-launch"></a>Ratkaise ongelmat, kun Power BI Desktop ei käynnisty
 **Power BI Desktopissa** on mahdollista, että jos käyttäjällä on asennettuna ja käytössä aiempia versioita **Power BI:n paikallisesta tietoyhdyskäytävästä**, häneltä estetään Power BI Desktopin käynnistäminen, koska Power BI:n paikallisella yhdyskäytävällä on hallinnollisia käytäntöjä, joiden mukaan se rajoittaa nimettyjä putkia paikallisella koneella. 
@@ -40,10 +32,12 @@ Jos et enää tarvitse Power BI:n paikallista tietoyhdyskäytävää, voit poist
 ### <a name="resolution-3-run-power-bi-desktop-with-administrator-privilege"></a>Ratkaisu 3: Suorita Power BI Desktop järjestelmänvalvojan oikeuksilla
 Voit vaihtoehtoisesti käynnistää Power BI Desktopin järjestelmänvalvojana. On silti suositeltavaa, että asennat uusimman version Power BI:n paikallisesta tietoyhdyskäytävästä tässä artikkelissa aiemmin annettujen ohjeiden mukaisesti.
 
+On tärkeää huomata, että Power BI Desktop on suunniteltu moniajoarkkitehtuuriksi ja useat prosessit käyttävät kommunikoidessaan Windowsin nimettyjen putkia. Muut prosessit saattavat häiritä näiden nimettyjen putkien toimintaa. Yleisin syy tällaisille häiriöille on suojaus, mukaan lukien tilanteet, joissa virustentorjuntaohjelmisto tai palomuurit saattavat estää putkien toimintaa tai niiden liikennettä ohjataan tiettyyn porttiin. Power BI Desktopin käynnistäminen järjestelmänvalvojan oikeuksilla saattaa ratkaista ongelman. Jos käynnistäminen järjestelmänvalvojan oikeuksilla ei ole mahdollista, ota yhteys järjestelmänvalvojaan, selvittääksesi, mitkä suojaussäännöt estävät nimettyjä putkia kommunikoimasta oikein, ja lisää Power BI Desktop ja sen asianmukaiseen aliprosessit sallittujen prosessien listaan.
+
 ## <a name="help-with-other-issues-when-launching-power-bi-desktop"></a>Apua muihin Power BI Desktopin käynnistysongelmiin
 Pyrimme hoitamaan mahdollisimman monet **Power BI Desktopissa** ilmenevät ongelmat. Tutkimme säännöllisesti ongelmia, joita useilla asiakkailla saattaa ilmetä, ja lisäämme artikkeleihin niitä koskevat ohjeet.
 
-Jos **Power BI Desktopin** käynnistysongelma ei liity paikalliseen tietoyhdyskäytävään tai jos edellä mainitut ratkaisut eivät auta, voit lähettää [Power BI:n tukeen](https://support.powerbi.com) (https://support.powerbi.com) tukipyynnön, jotta ongelmasi saataisiin tunnistettua ja ratkaistua.
+Jos **Power BI Desktopin** käynnistysongelma ei liity paikalliseen tietoyhdyskäytävään tai jos edellä mainitut ratkaisut eivät auta, voit lähettää tukipyynnön [Power BI:n tukeen](https://support.powerbi.com) (https://support.powerbi.com), jotta ongelmasi saataisiin tunnistettua ja ratkaistua.
 
 Sen varalta että **Power BI Desktopissa** ilmenee vastaisuudessa muita ongelmia (toivottavasti ei ilmene tai ainakin vain hyvin vähän), voi olla hyödyllistä ottaa käyttöön seuranta ja kerätä lokitiedostot, jotka helpottavat ongelmien eristämisessä ja tunnistamisessa. Jos haluat ottaa seurannan käyttöön, valitse **Tiedosto > Asetukset ja vaihtoehdot > Asetukset**, valitse sitten **Diagnostiikka** ja valitse kohdasta *Diagnostiikka-asetukset* valintaruutu **Ota jäljitys käyttöön**. Olemme tietoisia siitä, että tämän asetuksen valitseminen edellyttää **Power BI Desktopin** käynnistymistä, joten siitä on hyötyä lähinnä tulevissa **Power BI Desktopin** käynnistysongelmissa.
 

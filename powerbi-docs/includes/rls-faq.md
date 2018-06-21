@@ -1,6 +1,6 @@
 ## <a name="faq"></a>Usein kysytyt kysymykset
-**Kysymys:** Entä jos olen aiemmin luonut rooleja/sääntöjä tietojoukolle Power BI -palvelussa? Toimivatko ne edelleen, jos en tee mitään?  
-**Vastaus**: Eivät. Visualisointeja ei hahmonneta oikein. Sinun on luotava roolit/säännöt uudelleen Power BI Desktopissa ja sen jälkeen julkaistava ne Power BI -palveluun.
+**Kysymys:** Entä jos olen aiemmin luonut rooleja ja sääntöjä tietojoukolle Power BI -palvelussa? Toimivatko ne edelleen, jos en tee mitään?  
+**Vastaus**: Eivät. Visualisointeja ei hahmonneta oikein. Sinun on luotava roolit ja säännöt uudelleen Power BI Desktopissa ja sen jälkeen julkaistava ne Power BI -palveluun.
 
 **Kysymys:** Voinko luoda nämä roolit Analysis Services -tietolähteille?  
 **Vastaus:** Voit, jos tiedot on tuotu Power BI Desktopiin. Jos käytössäsi on reaaliaikainen yhteys, et pysty määrittämään rivitason suojausta Power BI -palvelun sisällä. Se määritetään Analysis Services -mallissa paikallisesti.

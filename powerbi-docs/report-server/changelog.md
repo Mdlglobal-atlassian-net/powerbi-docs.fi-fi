@@ -1,27 +1,20 @@
 ---
 title: Power BI -raporttipalvelimen muutosloki
 description: Power BI -raporttipalvelimen muutoslokissa on listattu jokaisen koontiversion uudet ominaisuudet ja ohjelmavirhekorjaukset.
-services: powerbi
-documentationcenter: ''
 author: jtarquino
-manager: jonhp
-backup: maggies
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+manager: kfile
+ms.reviewer: maggies
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 12/11/2017
-ms.author: tankas
-ms.openlocfilehash: 67b9a162d689a8615a3e2459295eab6dad6d2364
-ms.sourcegitcommit: 312390f18b99de1123bf7a7674c6dffa8088529f
+ms.component: powerbi-report-server
+ms.topic: conceptual
+ms.date: 03/31/2018
+ms.author: jtarquino
+ms.openlocfilehash: e0f90ccade44960cf24fd133b4caf46280b4a511
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34482126"
 ---
 # <a name="changelog-for-power-bi-report-server"></a>Power BI -raporttipalvelimen muutosloki
 
@@ -31,6 +24,24 @@ Lisätietoja uusista ominaisuuksista on artikkelissa [Power BI -raporttipalvelin
 
 ## <a name="march-2018"></a>Maaliskuu 2018
 - **Power BI -raporttipalvelin**
+    - *Versio 1.2.6690.34729 (koontiversio 15.0.2.402), julkaistu 27.4.2018*
+        - Ohjelmavirhekorjauksia
+            - SQL Server Reporting Services 2017 -luetteloiden siirtämisen käyttöönotto
+            - Power BI -raportit (PBIX)
+                - Raportit voidaan päivittää, kun palvelin on määritetty käyttämään mukautettua tarkistusta
+                - Raportin ominaisuuksien muokkaaminen ei palauta tietolähteen tunnistetietoja
+            - Sivutetut raportit (RDL)
+                - Toiminnon `Lookup()` tai johdannaistoimintojen `LookupSet()` ja `MultiLookup()` käytöstä RDL Expressions -lausekkeissa ei enää seuraa `#Error`
+                - Linkitetyt raportit noudattavat kohderaportin sivukokoa tulostuksen yhteydessä
+                - Tilauksia voidaan luoda linkitetyille raporteille, jotka käyttävät johdannaisia parametrejä
+                - Moniarvoisten parametrien oletusarvoja voi muokata IE11:ssä
+                - Aineistoperäisen tilauksen toimitusasetukset ovat muokattavissa
+                - Tilauksia voi tarkastella ja muokata, kun tilausta suoritetaan
+                - Asetuksen tietolähteen tunnistetietojen määrittäminen ei poista lausekepohjaisia yhteysmerkkijonoja
+            - Suorituskyvyn mittarit
+                - Trendirivit päivitetään, kun tiedot päivitetään
+            - Yleiset parannukset vakauteen
+
     - *Versio 1.2.6660.39920 (koontiversio 15.0.2.389), julkaistu 28.3.2018*
         - Ohjelmavirhekorjauksia
             - Korjattu Power BI -raporttien (PBIX) ongelma, joka esti tietojen viemisen Power BI:n visualisoinneista.
@@ -120,7 +131,7 @@ Lisätietoja uusista ominaisuuksista on artikkelissa [Power BI -raporttipalvelin
 
     - *Koontiversio 14.0.600.301, julkaistu 11.7.2017*
         - Ohjelmavirhekorjauksia
-            - Korjattu ongelma, joka aiheutti {{UserId}}-tunnisteen ratkaisemisen tallennettuihin tunnistetietoihin sen sijaan, että raportti suoritettaisiin Power BI -raporteissa.
+            - Korjattu ongelma, joka aiheutti `{{UserId}}`-tunnisteen ratkaisemisen tallennettuihin tunnistetietoihin sen sijaan, että raportti suoritettaisiin Power BI -raporteissa.
             - Korjattu ongelma, joka esti tiettyjen kuvien piirtymisen Power BI -raporttipalvelimen raportteihin.
             - Korjattu ongelma, joka esti Power BI -raportin nimen muuttamisen Power BI -raporttipalvelimessa.
             - Korjattu ongelma, joka esti mukautettujen visualisointien lataamisen Power BI -mobiilisovellukseen ilman paikallisen välimuistin tyhjentämistä asentamalla mobiilisovellus uudelleen.
@@ -134,9 +145,9 @@ Lisätietoja uusista ominaisuuksista on artikkelissa [Power BI -raporttipalvelin
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
-[Käyttöopas](user-handbook-overview.md)  
-[Järjestelmänvalvojien opas](admin-handbook-overview.md)  
-[Pikaopas: Power BI -raporttipalvelimen asentaminen](quickstart-install-report-server.md)  
+[Mikä on Power BI -raporttipalvelin?](get-started.md)
+[Järjestelmänvalvojien yleiskatsaus](admin-handbook-overview.md)  
+[Power BI -raporttipalvelimen asentaminen](install-report-server.md)  
 [Raportin muodostimen asentaminen](https://docs.microsoft.com/sql/reporting-services/install-windows/install-report-builder)  
 [SQL Server Data Tools (SSDT) -työkalujen lataaminen](http://go.microsoft.com/fwlink/?LinkID=616714)
 

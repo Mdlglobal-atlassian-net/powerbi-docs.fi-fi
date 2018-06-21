@@ -1,30 +1,22 @@
 ---
 title: Lisää Power BI-raporttiparametreja URL-osoitteen kautta
 description: Voit suodattaa raportin käyttämällä URL-osoitteen kyselyparametreja ja jopa suodattaa useamman kuin yhden kentän.
-services: powerbi
-documentationcenter: ''
 author: mihart
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
+ms.reviewer: ''
 featuredvideoid: ''
-qualityfocus: no
-qualitydate: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 03/15/2018
+ms.component: powerbi-service
+ms.topic: conceptual
+ms.date: 05/18/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 72afa61316800e9636d7b1a1536ff9c43b66c453
-ms.sourcegitcommit: 00b4911ab5fbf4c2d5ffc000a3d95b3149909c28
+ms.openlocfilehash: aeaea6d14cf8f4fd62fbbf5098e68429fe40b96a
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/15/2018
-ms.locfileid: "30975412"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34471935"
 ---
 # <a name="filter-a-report-using-query-string-parameters-in-the-url"></a>Raportin suodattaminen URL-osoitteen kyselymerkkijonoparametrien avulla
 Kun avaat raportin Power BI -palvelussa, raportin jokaisella sivulla on oma yksilöllinen URL-osoitteensa. Voit suodattaa raporttisivun käyttämällä Suodattimet-ruutua raportin alustalla.  Voit myös lisätä kyselyparametrit URL-osoitteeseen raportin suodattamiseksi. Ehkäpä sinulla on raportti, jonka haluat näyttää työtovereille, ja haluat suodattaa sen heille valmiiksi. Eräs tapa tehdä tämä on aloittaa raportin oletusarvoisesta URL-osoitteesta ja lisätä suodatinparametreja URL-osoitteeseen ja lähettää sitten heille koko URL-osoite sähköpostilla.
@@ -99,16 +91,17 @@ TerritoryChain = [Territory] & " - " & [Chain]
 
 Julkaise raportti Power BI -palvelussa ja suodata URL-kyselymerkkijonon avulla näyttämään vain Lindseys- myymälät, NC.
 
-https://app.powerbi.com/groups/me/reports/8d6e300b-696f-498e-b611-41ae03366851/ReportSection3?filter=Store/TerritoryChain eq 'NC–Lindseys'
+    https://app.powerbi.com/groups/me/reports/8d6e300b-696f-498e-b611-41ae03366851/ReportSection3?filter=Store/TerritoryChain eq 'NC–Lindseys'
 
 ## <a name="pin-a-tile-from-a-filtered-report"></a>Kiinnitä ruutu suodatetusta raportista
 Kun olet suodattanut raportin käyttämällä kyselymerkkijonon parametreja, voit kiinnittää visualisointeja kyseisestä raportista raporttinäkymääsi. Raporttinäkymän ruutu tuo näkyviin suodatetut tiedot, ja valitsemalla kyseisen raporttinäkymän ruutu avaa raportin, jota käytettiin sen luomiseen.  Kuitenkin URL-osoitteen kautta tehtyä suodatusta ei tallenneta raportin kanssa, ja raporttinäkymä-ruutu on valittuna, jolloin raportti avautuu suodattamattomassa tilassa.  Tämä tarkoittaa, että raporttinäkymäruudussa näytettävät tiedot eivät vastaa raportin visualisoinnissa näkyviä tietoja.
 
 Saattaa olla tapauksia, joissa tästä on hyötyä, kun haluat nähdä eri tuloksia suodatettuna raporttinäkymässä ja suodattamattomana raportissa.
 
-## <a name="limitations-and-troubleshooting"></a>Rajoitukset ja vianmääritys
+## <a name="considerations-and-troubleshooting"></a>Huomioon otettavat seikat ja vianmääritys
 On muutamia asioita, jotka tulee ottaa huomioon merkkijonon kyselyparametreja käytettäessä.
 
+* Power BI -raporttipalvelimessa voit [välittää raporttiparametrit](https://docs.microsoft.com/sql/reporting-services/pass-a-report-parameter-within-a-url?view=sql-server-2017.md) sisällyttämällä ne raportin URL-osoitteeseen. Näissä URL-parametreissa ei ole etuliitettä, koska ne on välitetty suoraan raportin käsittelymoduuliin. 
 * Kyselyn merkkijonon suodatus ei toimi toiminnoissa [Julkaise verkkoon](service-publish-to-web.md) tai Power BI Embedded.   
 * Kenttätyypin on oltava luku tai merkkijono.
 * Taulukoiden ja kenttien nimissä ei voi olla välilyöntejä.

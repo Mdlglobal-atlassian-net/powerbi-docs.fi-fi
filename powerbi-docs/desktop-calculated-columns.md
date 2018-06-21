@@ -1,29 +1,21 @@
 ---
 title: Laskettujen sarakkeiden käyttäminen Power BI Desktopissa
 description: Lasketut sarakkeet Power BI Desktopissa
-services: powerbi
-documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 01/24/2018
+ms.component: powerbi-desktop
+ms.topic: conceptual
+ms.date: 04/24/2018
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: 4a47e707969b592ec27c79558699638ce14f8640
-ms.sourcegitcommit: c80fbf5b12754ce217cb47a17cb5400b1036a8f2
+ms.openlocfilehash: 3c1df2f08732a45b98e2de84684735171b004602
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/06/2018
-ms.locfileid: "30976847"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34290357"
 ---
 # <a name="using-calculated-columns-in-power-bi-desktop"></a>Laskettujen sarakkeiden käyttäminen Power BI Desktopissa
 Laskettujen sarakkeiden avulla voit lisätä uutta tietoa taulukkoon, joka on jo mallissasi. Sen sijaan, että hakisit ja lataisit arvoja uuteen sarakkeeseen tietolähteestä, luot Data Analysis Expressions (DAX) -kaavan, joka määrittää sarakkeen arvot. Power BI Desktopissa lasketut sarakkeet luodaan käyttämällä raporttinäkymän Uusi sarake -toimintoa.
@@ -60,7 +52,7 @@ Hän voi lisätä sen raporttipohjaansa yhdessä toimitusten määrän kanssa. J
 ![](media/desktop-calculated-columns/calccolinpbid_citystatemap.png)
 
 ## <a name="learn-more"></a>Lisätietoja
-Tässä on vain lyhyt esittely lasketuista sarakkeista. Suosittelemme, että katsot opetusohjelman [Laskettujen sarakkeiden luominen Power BI Desktopissa](desktop-tutorial-create-calculated-columns.md), josta voit ladata mallitiedoston ja saada vaiheittaiset ohjeet siitä, miten luodaan lisää sarakkeita. 
+Tässä on vain lyhyt esittely lasketuista sarakkeista. Suosittelemme, että katsot [Opetusohjelma: Laskettujen sarakkeiden luominen Power BI Desktopissa](desktop-tutorial-create-calculated-columns.md) -opetusohjelman, josta voit ladata mallitiedoston ja saat vaiheittaiset ohjeet lisäsarakkeiden luomiseen. 
 
 Lisätietoja DAX-kielestä on kohdassa [DAX-perusteet Power BI Desktopissa](desktop-quickstart-learn-dax-basics.md).
 

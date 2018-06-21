@@ -1,28 +1,20 @@
 ---
 title: Power BI -raporttipalvelimen selaintuki
 description: Tietoa siitä, mitä selainversioita tuetaan Power BI -raporttipalvelimen ja raporttien katseluohjelman ohjausobjektien hallintaan ja tarkasteluun.
-services: powerbi
-documentationcenter: ''
 author: markingmyname
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-report-server
+ms.topic: conceptual
 ms.date: 01/25/2018
 ms.author: maghan
-ms.openlocfilehash: 273a336280a371f694fb08a43d75e24535942e9a
-ms.sourcegitcommit: 6e693f9caf98385a2c45890cd0fbf2403f0dbb8a
+ms.openlocfilehash: b340ba2f2798c518d1705c03f7ec526a43bc019d
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/30/2018
-ms.locfileid: "30973077"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34721773"
 ---
 # <a name="browser-support-for-power-bi-report-server"></a>Power BI -raporttipalvelimen selaintuki
 Tietoa siitä, mitä selainversioita tuetaan Power BI -raporttipalvelimen ja raporttien katseluohjelman ohjausobjektien hallintaan ja tarkasteluun.
@@ -120,8 +112,8 @@ Käytä selainta, jossa on käytössä komentosarjojen tuki. Jos selain ei voi s
   **(+)**  Viimeisin suurelle yleisölle julkaistu versio
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
-[Järjestelmänvalvojien opas](admin-handbook-overview.md)  
-[Pikaopas: Power BI -raporttipalvelimen asentaminen](quickstart-install-report-server.md)  
+[Järjestelmänvalvojan yleiskatsaus](admin-handbook-overview.md)  
+[Power BI -raporttipalvelimen asentaminen](install-report-server.md)  
 [Raportin muodostimen asentaminen](https://docs.microsoft.com/sql/reporting-services/install-windows/install-report-builder)  
 [SQL Server Data Tools (SSDT) -työkalujen lataaminen](http://go.microsoft.com/fwlink/?LinkID=616714)
 

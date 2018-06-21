@@ -1,29 +1,21 @@
 ---
 title: Power BI:n suorituskykyä parantavat parhaat käytännöt
 description: Tässä artikkelissa annetaan ohjeita nopeiden ja luotettavien raporttien luomiseen Power BI:ssä
-services: powerbi
-documentationcenter: ''
 author: MarkMcGeeAtAquent
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: monitoring
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 12/12/2017
+ms.component: powerbi-service
+ms.topic: conceptual
+ms.date: 05/18/2018
 ms.author: v-mamcge
 LocalizationGroup: Reports
-ms.openlocfilehash: e584f48f5d3650821aac094ebfde7eef5261cc36
-ms.sourcegitcommit: 4217430c3419046c3a90819c34f133ec7905b6e7
+ms.openlocfilehash: 78dcd0ac0735bfbb3c22678d6bda1397120360cd
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/12/2018
-ms.locfileid: "30975172"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34310540"
 ---
 # <a name="power-bi-performance-best-practices"></a>Power BI:n suorituskykyä parantavat parhaat käytännöt 
 Tässä artikkelissa annetaan ohjeita nopeiden ja luotettavien raporttien luomiseen Power BI:ssä.  
@@ -97,8 +89,14 @@ Huomaa, että DirectQueryn ja Live-yhteyden kohdalla kyselyn välimuistia päivi
 ## <a name="understand-custom-visual-performance"></a>Tutustu mukautetun visualisoinnin suorituskykyyn 
 Muista testata jokainen mukautettu visualisointi, jotta niiden hyvä suorituskyky voidaan varmistaa. Huonosti optimoidut mukautetut visualisoinnit voivat vaikuttaa kielteisesti koko raportin suorituskykyyn. 
  
-## <a name="deep-dive-into-query-performance-with-sql-profiler-and-power-bi-desktop"></a>Tutustu tarkemmin kyselyiden suorituskykyyn SQL Profiler -työkalun ja Power BI Desktopin avulla 
-Saat tarkemman käsityksen siitä, mitkä visualisoinnit vievät eniten aikaa ja resursseja, yhdistämällä SQL Profiler -työkalun Power BI Desktopiin. Näin saat kokonaiskuvan kyselyn suorituskyvystä. Ohjeet ovat seuraavat: 
+## <a name="deep-dive-into-query-performance-with-sql-profiler-and-power-bi-desktop"></a>Tutustu tarkemmin kyselyiden suorituskykyyn SQL Profiler -työkalun ja Power BI Desktopin avulla
+
+Saat tarkemman käsityksen siitä, mitkä visualisoinnit vievät eniten aikaa ja resursseja, yhdistämällä SQL Profiler -työkalun Power BI Desktopiin. Näin saat kokonaiskuvan kyselyn suorituskyvystä.
+
+> [!NOTE]
+> Power BI Desktop tukee diagnostiikkaporttiin yhdistämistä. Diagnostiikkaportti sallii yhteydenmuodostuksen muilla työkaluilla ja sen avulla voidaan suorittaa jäljityksiä vianmääritystä varten. *Muutosten tekemistä malliin ei tueta! Malliin tehdyt muutokset saattavat johtaa vioittumiseen ja tietojen menettämiseen.*
+
+Ohjeet ovat seuraavat:
   
 1. **Asenna SQL Server Profiler ja suorita Power BI Desktop** 
 

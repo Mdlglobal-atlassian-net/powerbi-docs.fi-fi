@@ -1,27 +1,20 @@
 ---
 title: Power BI -raporttipalvelimen tuen aikajana
 description: Luettelo Power BI -raporttipalvelimen versioista ja saatavuudesta.
-services: powerbi
-documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 03/19/2018
+ms.component: powerbi-report-server
+ms.topic: conceptual
+ms.date: 05/19/2018
 ms.author: maggies
-ms.openlocfilehash: 995b1aab5547369ef9c4ceebae3f69c268107164
-ms.sourcegitcommit: 0473a155495a7a9ba4b899d0815100426718b7ac
+ms.openlocfilehash: a7012bf96ee0f8ac7e73d1db21e9a36f0fea88cb
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/20/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34481045"
 ---
 # <a name="support-timeline-for-power-bi-report-server"></a>Power BI -raporttipalvelimen tuen aikajana
 Power BI -raporttipalvelimen versioita julkaistaan muutaman kerran vuodessa. Tietoturvapäivityksiä ja tärkeitä päivityksiä on saatavilla, kunnes seuraava versio tulee yleiseen jakeluun. Seuraavan version julkaisemisen jälkeen edelliseen versioon julkaistaan tietoturvapäivityksiä version 12 kuukauden elinkaaren loppuosan ajan.
@@ -44,9 +37,9 @@ Lataa Power BI -raporttipalvelin ja Power BI -raporttipalvelimelle optimoitu Pow
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 [Power BI -raporttipalvelinten uudet ominaisuudet](whats-new.md)  
-[Käyttöopas](user-handbook-overview.md)  
-[Järjestelmänvalvojien opas](admin-handbook-overview.md)  
-[Pikaopas: Power BI -raporttipalvelimen asentaminen](quickstart-install-report-server.md)  
+[Mikä on Power BI -raporttipalvelin?](get-started.md)
+[Järjestelmänvalvojien yleiskatsaus](admin-handbook-overview.md)  
+[Power BI -raporttipalvelimen asentaminen](install-report-server.md)  
 
-Onko sinulla muuta kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
+Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
 

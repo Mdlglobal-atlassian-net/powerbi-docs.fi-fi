@@ -1,27 +1,20 @@
 ---
 title: Mukautettujen visualisointien luominen kehittäjätyökalujen avulla
 description: Voit mukautettujen visualisointien avulla vastata käyttäjiesi tarpeita ja sovelluksesi rakennetta. Lue, miten voit luoda mukautetun visualisoinnin Power BI:lle kehittäjätyökalujen avulla.
-services: powerbi
-documentationcenter: ''
 author: markingmyname
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-developer
+ms.topic: conceptual
 ms.date: 11/30/2017
 ms.author: maghan
-ms.openlocfilehash: c7ed6a9b8acc74c9d4e39ff21a10624a208847f4
-ms.sourcegitcommit: 5e1f7d2673efe25c47b9b9f315011055bfe92c8f
+ms.openlocfilehash: 8b5da248b6992c8ae3e8d30caf4f0fc6c47bdcf5
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34296294"
 ---
 # <a name="use-developer-tools-to-create-custom-visuals"></a>Mukautettujen visualisointien luominen kehittäjätyökalujen avulla
 Voit mukautettujen visualisointien avulla vastata käyttäjiesi tarpeita ja sovelluksesi rakennetta. Lue, miten voit luoda mukautetun visualisoinnin Power BI:lle kehittäjätyökalujen avulla.
@@ -87,7 +80,7 @@ Jotta voit luoda mukautetun visualisoinnin, sinun on asennettava NodeJS. NodeJS:
     --install-cert  Install localhost certificate
     </code></pre>
 
-<a name"ssl-setup"></a>
+<a name="ssl-setup"></a>
 
 ### <a name="server-certificate-setup"></a>Palvelinvarmenteen määritys
 Jotta voit ottaa käyttöön visualisoinnin reaaliaikaisen esikatselun, tarvitset luotettua https-palvelinta. Ennen kuin voit aloittaa, sinun on asennettava SSL-varmenne, jotta visualisointiresurssit voidaan ladata verkkoselaimeen. 
@@ -97,9 +90,24 @@ Jotta voit ottaa käyttöön visualisoinnin reaaliaikaisen esikatselun, tarvitse
 > 
 > 
 
-Voit *lisätä* varmenteen suorittamalla seuraavan komennon.
+Voit *luoda* varmenteen suorittamalla seuraavan komennon.
+
+    pbiviz --create-cert
+
+> [!NOTE]
+> Sinun pitäisi nähdä viesti, jossa on ilmoitettu varmenteen sijaintipolku ja juuri luotu tunnuslause.
+> 
+> 
+
+
+Voit *asentaa*  varmenteen suorittamalla seuraavan komennon.
 
     pbiviz --install-cert
+    
+> [!NOTE]
+> Sinun pitäisi nähdä viesti, jossa sinua pyydetään käyttämään juuri luotua tunnuslausetta PFX-varmenteen asentamiseen.
+> 
+> 
 
 **Windows-käyttöjärjestelmä**
 

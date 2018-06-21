@@ -1,35 +1,27 @@
 ---
 title: Tietojoukon luominen
 description: Vaihe vaiheelta – Tietojen työntäminen tietojoukkoon – Tietojoukon luominen Power BI:ssä
-services: powerbi
-documentationcenter: ''
 author: markingmyname
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: get-started-article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-developer
+ms.topic: conceptual
 ms.date: 08/10/2017
 ms.author: maghan
-ms.openlocfilehash: 31677a3d92ece6944825eccad190863f67c3a145
-ms.sourcegitcommit: 6e693f9caf98385a2c45890cd0fbf2403f0dbb8a
+ms.openlocfilehash: c94f0a94cfc2e59942a17b542efb7b1bb641174c
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/30/2018
-ms.locfileid: "30973132"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34290311"
 ---
 # <a name="step-3-create-a-dataset-in-power-bi"></a>Vaihe 3: Tietojoukon luominen Power BI:ssä
 Tämä artikkeli on osa vaiheittaisia ohjeita, joilla [tiedot työnnetään tietojoukkoon](walkthrough-push-data.md).
 
 Tietojen tietojoukkoon työntämisen **vaiheessa 2**, [Todennustunnuksen hankkiminen](walkthrough-push-data-get-token.md), sait tunnuksen **Microsoft Azure Active Directoryyn** todentamista varten. Käytät tässä vaiheessa tunnusta [Luo tietojoukko](https://msdn.microsoft.com/library/mt203562.aspx) -toiminnon kutsumiseen.
 
-REST-resurssin kutsumista varten käytät URL-osoitetta, jossa resurssi sijaitsee, ja lähetät JavaScript Object Notation (JSON) -merkkijonon, joka kuvailee tietojoukon, Power BI -palvelun resurssiin. REST-resurssi yksilöi käsiteltävän Power BI -palvelun osan. Tietojen työntämiseksi tietojoukkoon kohderesurssi on **Tietojoukko**. Tietojoukon yksilöivä URL-osoite on https://api.PowerBI.com/v1.0/myorg/datasets. Jos olet työntämässä tietoja ryhmän sisällä, URL-osoite on https://api.PowerBI.com/v1.0/myorg/groups/{group_id}/datasets.
+REST-resurssin kutsumista varten käytät URL-osoitetta, jossa resurssi sijaitsee, ja lähetät JavaScript Object Notation (JSON) -merkkijonon, joka kuvailee tietojoukon, Power BI -palvelun resurssiin. REST-resurssi yksilöi käsiteltävän Power BI -palvelun osan. Tietojen työntämiseksi tietojoukkoon kohderesurssi on **Tietojoukko**. Tietojoukon tunnistava URL-osoite on https://api.PowerBI.com/v1.0/myorg/datasets. Jos olet työntämässä tietoja ryhmässä, URL-osoite on https://api.PowerBI.com/v1.0/myorg/groups/{group_id}/datasets.
 
 Power BI:n REST-toiminnon todentamiseksi lisäät [Todennustunnuksen hankkiminen](walkthrough-push-data-get-token.md) -vaiheessa saamasi tunnuksen pyynnön otsikkoon:
 
@@ -238,7 +230,7 @@ Alla on [Kattava koodiluettelo](#code).
 [Todennustunnuksen hankkiminen](walkthrough-push-data-get-token.md)  
 [Tietojoukon luominen](https://msdn.microsoft.com/library/mt203562.aspx)  
 [Tietojen työntäminen Power BI -raporttinäkymään](walkthrough-push-data.md)  
-[Power BI:n REST-ohjelmointirajapinnan yleiskatsaus](overview-of-power-bi-rest-api.md)  
+[Power BI REST -ohjelmointirajapinnan yleiskatsaus](overview-of-power-bi-rest-api.md)  
 [Power BI:n REST-ohjelmointirajapinnan viite](https://msdn.microsoft.com/library/mt147898.aspx)  
 
 Onko sinulla muuta kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)

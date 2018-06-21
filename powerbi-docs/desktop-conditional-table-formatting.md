@@ -1,43 +1,97 @@
 ---
 title: Ehdollinen taulukkomuotoilu Power BI Desktopissa
 description: Mukautetun muotoilun käyttö taulukoissa
-services: powerbi
-documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 12/06/2017
+ms.component: powerbi-desktop
+ms.topic: conceptual
+ms.date: 05/17/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 30be54ccbc6f0ccdc322070d59ccb44de6460b78
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 70aa61d6a02bea1b7058a68b20718008ace1b8c8
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34480884"
 ---
-# <a name="conditional-formatting-in-tables"></a>Ehdollinen muotoilu taulukoissa
-Taulukoiden ehdollisen muotoilun avulla voit määrittää mukautettuja solujen taustavärejä perustuen solujen arvoihin. Voit käyttää myös liukuvärejä. Ehdollisen muotoilun käyttämiseksi valitse alaspäin osoittava nuoli Power BI Desktopin **Visualisoinnit**-ruudun **Kentät**-kohdassa sen **Arvon** vierestä, jota haluat muotoilla (tai napsauta kenttää hiiren kakkospainikkeella). Voit hallita kenttien ehdollista muotoilua ainoastaan **Kenttien** **Arvot**-alueella.
+# <a name="conditional-formatting-in-tables"></a>Ehdollinen muotoilu taulukoissa 
+Taulukoiden ehdollisen muotoilun avulla voit määrittää mukautettuja solujen värejä, jotka perustuvat solujen arvoihin tai muihin arvoihin tai kenttiin. Voit käyttää myös liukuvärejä. Voit myös näyttää solun arvot tietopalkeilla. 
 
-![](media/desktop-conditional-table-formatting/table-formatting_1.png)
+Ehdollisen muotoilun käyttämiseksi valitse alaspäin osoittava nuoli Power BI Desktopin **Visualisoinnit**-ruudun **Kentät**-kohdassa sen **Arvon** vierestä, jota haluat muotoilla (tai napsauta kenttää hiiren kakkospainikkeella). Voit hallita kenttien ehdollista muotoilua ainoastaan **Kenttien** **Arvot**-alueella.
 
-Voit valita avautuvassa valintaikkunassa värin sekä *Vähimmäis-* ja *Enimmäis*-arvot. Jos valitset **Erkautuva**-valinnan, voit määritellä myös valinnaisen *Keski*arvon.
+![Ehdollinen muotoilu -valikko](media/desktop-conditional-table-formatting/table-formatting-0-popup-menu.png)
 
-![](media/desktop-conditional-table-formatting/table-formatting_2.png)
+Seuraavissa osissa kuvataan kukin kolmesta ehdollisen muotoilun vaihtoehdoista. Yksi tai useampi vaihtoehto voidaan liittää yhteen taulukon sarakkeeseen.
 
-Taulukoissa yllä annettujen ohjeiden mukaisesti mukautettu muotoilu ohittaa mitkä tahansa ehdollisesti muotoilluissa soluissa käytetyt mukautetut taulukkotyylit.
+> [!NOTE]
+> Taulukkoon käytetty ehdollinen muotoilu ohittaa kaikki ehdollisesti muotoilluissa soluissa käytetyt mukautetut taulukkotyylit.
 
-![](media/desktop-conditional-table-formatting/table-formatting_3.png)
+Jos haluat poistaa ehdollisen muotoilun visualisoinnista, napsauta kenttää uudelleen hiiren kakkospainikkeella, valitse **Poista ehdollinen muotoilu** ja valitse sitten poistettavan muotoilun tyyppi.
 
-Jos haluat poistaa ehdollisen muotoilun visualisoinnista, napsauta vain kenttää uudelleen hiiren kakkospainikkeella ja valitse **Poista ehdollinen muotoilu**.
+![Poista ehdollinen muotoilu -valikko](media/desktop-conditional-table-formatting/table-formatting-1-remove.png)
 
-![](media/desktop-conditional-table-formatting/table-formatting_4.png)
+## <a name="background-color-scales"></a>Taustaväriasteikot
 
+Kun valitset **Ehdollisen muotoilun** ja sitten **Taustaväriasteikot**, seuraava valintaikkuna tulee näyttöön.
+
+![Taustaväriasteikot-valintaikkuna](media/desktop-conditional-table-formatting/table-formatting-1-default-dialog.png)
+
+Voit valita värien perusteena toimivan tietomallin kentän asettamalla **Värien peruste** -määritteen kyseiseen kenttään. Lisäksi voit määrittää valitulle kentälle koostetyypin **Yhteenveto**-arvolla. Väritettävä kenttä on määritetty **Väritettävä**-kentässä, jotta pysyt kärryillä. Voit määrittää ehdollisen muotoilun teksti- ja päivämääräkenttiin. Muista valita muotoilun perustaksi numeerinen arvo.
+
+![Kenttään perustuva väri](media/desktop-conditional-table-formatting/table-formatting-1-apply-color-to.png)
+
+Jos haluat erillisiä väriarvoja valituille alueille, valitse **Väri sääntöjen mukaan**. Jos haluat käyttää väriasteikkoa, jätä **Väri sääntöjen mukaan** valitsematta. 
+
+![Taustaväriasteikot-valintaikkuna](media/desktop-conditional-table-formatting/table-formatting-1-color-by-rules-dialog.png)
+
+### <a name="color-by-rules"></a>Väri sääntöjen mukaan
+
+Kun valitset **Väri sääntöjen mukaan** -asetuksen, voit antaa yhden tai useamman arvoalueen, joista kukin vastaa valittua väriä.  Kukin arvo alkaa *Jos-arvo* -ehdolla, *ja*-arvoehdolla ja värillä.
+
+![Väri sääntöjen mukaan -arvoalue](media/desktop-conditional-table-formatting/table-formatting-1-color-by-rules-if-value.png)
+
+Taulukkosolut, joissa kunkin alueen arvot on täytetty annetulla värillä. Seuraavassa kuvassa on kolme sääntöä.
+
+![Väri sääntöjen mukaan -esimerkki](media/desktop-conditional-table-formatting/table-formatting-1-color-by-rules.png)
+
+Esimerkkitaulukko näyttää nyt tältä:
+
+![Esimerkkitaulukko, joka sisältää värin sääntöjen mukaan](media/desktop-conditional-table-formatting/table-formatting-1-color-by-rules-table.png)
+
+
+### <a name="color-minimum-to-maximum"></a>Värin vähimmäis- ja enimmäisarvo
+
+Voit määrittää *vähimmäis-* ja *enimmäis*arvot ja niiden värit. Jos valitset **Erkautuva**-valinnan, voit määritellä myös valinnaisen *Keski*arvon.
+
+![Erkautuva-painike](media/desktop-conditional-table-formatting/table-formatting-1-diverging.png)
+
+Esimerkkitaulukko näyttää nyt tältä:
+
+![Esimerkkitaulukko, jossa on erkautuvia värejä](media/desktop-conditional-table-formatting/table-formatting-1-diverging-table.png)
+
+## <a name="font-color-scales"></a>Fonttiväriasteikot
+
+Kun valitset **Ehdollisen muotoilun** ja sitten **Fonttiväriasteikot**, seuraava valintaikkuna tulee näyttöön. Tämä valintaikkuna on samantapainen kuin **Taustaväriasteikot**-valintaikkuna, mutta sen kautta voit muuttaa fontin väriä solun taustavärin sijaan.
+
+![Fonttiväriasteikot-valintaikkuna](media/desktop-conditional-table-formatting/table-formatting-2-diverging.png)
+
+Esimerkkitaulukko näyttää nyt tältä:
+
+![Esimerkkitaulukko, jossa on fonttiväriasteikkoja](media/desktop-conditional-table-formatting/table-formatting-2-table.png)
+
+## <a name="data-bars"></a>Tietopalkit
+
+Kun valitset **Ehdollisen muotoilun** ja sitten **Tietopalkit**, seuraava valintaikkuna tulee näyttöön. 
+
+![Tietopalkit-valintaikkuna](media/desktop-conditional-table-formatting/table-formatting-3-default.png)
+
+Oletuksena **Näytä vain palkki** -asetusta ei ole valittu, jolloin taulukkosolu näyttää sekä palkin että todellisen arvon.
+
+![Esimerkkitaulukko, jossa on tietopalkkeja ja arvoja](media/desktop-conditional-table-formatting/table-formatting-3-default-table.png)
+
+Jos **Näytä vain palkki** -asetus on valittu, taulukkosolussa näkyy vain palkki.
+
+![Esimerkkitaulukko, jossa on vain tietopalkkeja](media/desktop-conditional-table-formatting/table-formatting-3-default-table-bars.png)

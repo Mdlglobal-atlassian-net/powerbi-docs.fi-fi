@@ -1,29 +1,21 @@
 ---
 title: Käyttämiesi palveluiden yhdistäminen Power BI:hin
 description: Yhdistä Power BI palveluihin, joita käytät liiketoiminnassasi, kuten Salesforce, Microsoft Dynamics CRM ja Google Analytics.
-services: powerbi
-documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 01/29/2018
 ms.author: maggies
 LocalizationGroup: Connect to services
-ms.openlocfilehash: c1df66100206198f3de32bea9859261d51d3774d
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 5b8a438ed354f246c5ac1d5ac0d0488db19633dd
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/24/2018
-ms.locfileid: "30815654"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34239254"
 ---
 # <a name="connect-to-the-services-you-use-with-power-bi"></a>Käyttämiesi palveluiden yhdistäminen Power BI:hin
 Voit yhdistää Power BI:n palveluihin, joita käytät liiketoiminnassasi, kuten Salesforce, Microsoft Dynamics ja Google Analytics. Power BI käynnistyy käyttäen tunnistetietojasi ja muodostaa yhteyden palveluun ja luo sitten Power BI -sovelluksen, jossa on koontinäyttö ja Power BI -raportteja, jotka näyttävät automaattisesti tietosi ja antavat visualisesti merkityksellistä tietoja liiketoiminnastasi. 
@@ -32,14 +24,14 @@ Kirjaudu sisään Power BI:hin ja voit tarkastella kaikkia [palveluita, joihin v
 
 ![AppSource-sovellukset](media/service-connect-to-services/overview.png)
 
-Kun olet asentanut sovelluksen, voit tarkastella koontinäyttöä ja raportteja Power BI-palvelussa ([https://powerbi.com](https://powerbi.com)) ja Power BI -mobiilisovelluksissa. 
+Kun olet asentanut sovelluksen, voit tarkastella raporttinäkymää ja raportteja Power BI -palvelussa ([https://powerbi.com](https://powerbi.com)) ja Power BI -mobiilisovelluksissa. 
 
 ![Google Analytics -sovellus Power BI -mobiilisovelluksessa](media/service-connect-to-services/power-bi-service-mobile-app-240.png)
 
 ## <a name="get-started"></a>Aloittaminen
 [!INCLUDE [powerbi-service-apps-get-more-apps](./includes/powerbi-service-apps-get-more-apps.md)]
 
-## <a name="view-the-dashboard-and-reports"></a>Tarkastele koontinäyttöä ja raportteja
+## <a name="view-the-dashboard-and-reports"></a>Tarkastele raporttinäkymä ja raportit
 Kun tuonti on valmis, uusi sovellus ilmestyy Sovellukset-sivulle.
 
 1. Valitse vasemmassa siirtymisruudussa **Sovellukset** ja valitse sovellus.

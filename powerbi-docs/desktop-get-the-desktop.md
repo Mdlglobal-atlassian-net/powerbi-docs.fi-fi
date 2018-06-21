@@ -1,28 +1,21 @@
 ---
 title: Power BI Desktopin hankkiminen
 description: Power BI Desktopin lataaminen ja asentaminen
-services: powerbi
-documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: monitoring
-qualitydate: 08/15/2017
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: get-started-article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 01/24/2018
+ms.component: powerbi-desktop
+ms.topic: conceptual
+ms.date: 05/02/2018
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: a03e859e769f880b0c627080a864b41e96fc138b
-ms.sourcegitcommit: 8132f7edc6879eda824c900ba90b29cb6b8e3b21
+ms.openlocfilehash: eee341314b309eda119dd282eafd18188f8fdfd0
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34286631"
 ---
 # <a name="get-power-bi-desktop"></a>Power BI Desktopin hankkiminen
 **Power BI Desktopilla** voit luoda tarkempia kyselyjä, malleja ja raportteja, jotka visualisoivat tietoja. **Power BI Desktopilla** voit luoda tietomalleja ja raportteja sekä jakaa töitäsi julkaisemalla niitä Power BI -palvelussa.  **Power BI Desktop** on ladattavissa maksutta.
@@ -82,7 +75,7 @@ Voit hankkia **Power BI Desktopin** myös Microsoft Storesta seuraavan linkin av
 > **Power BI Desktopin** ladattavan MSI-version ja **Microsoft Store** -version asentamista samaan tietokoneeseen tueta. (Tätä kutsutaan joskus *rinnakkaisasennukseksi*.) Poista **Power BI Desktopin** asennus manuaalisesti, ennen kuin lataat sen **Microsoft Storesta**.
 > 
 > [!NOTE]
-> **Power BI Desktopin** Power BI -raporttipalvelinversio on erillinen. Se on erillinen asennus verrattuna muihin tässä artikkelissa käsiteltyihin versioihin. Jos haluat lisätietoja **Power BI Desktopin** Raporttipalvelin-versiosta, lue ohjeartikkeli [Pikaopas: Power BI -raportin luominen Power BI -raporttipalvelimelle](report-server/quickstart-create-powerbi-report.md).
+> **Power BI Desktopin** Power BI -raporttipalvelinversio on erillinen. Se on erillinen asennus verrattuna muihin tässä artikkelissa käsiteltyihin versioihin. Jos haluat lisätietoja **Power BI Desktopin** raporttipalvelimen versiosta, katso artikkeli [Power BI -raportin luominen Power BI -raporttipalvelimelle](report-server/quickstart-create-powerbi-report.md).
 > 
 > 
 

@@ -1,96 +1,91 @@
 ---
 title: Tietojen ja tietueiden näyttäminen Power BI Desktop -visualisoinneissa
 description: Power BI Desktopin ominaisuuksien ”Näytä tiedot” ja ”Näytä tietueet” käyttäminen yksityiskohtiin pääsemiseksi
-services: powerbi
-documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-desktop
+ms.topic: conceptual
 ms.date: 02/22/2018
 ms.author: davidi
 LocalizationGroup: Learn more
-ms.openlocfilehash: c44a5140fe40217aac170abb0b351197803b6299
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 219687e7e5a98cecdaaa5d17291fc0841a4b165f
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/24/2018
-ms.locfileid: "30974502"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34285734"
 ---
 # <a name="use-see-data-and-see-records-in-power-bi-desktop"></a>Power BI Desktopin ominaisuuksien ”Näytä tiedot” ja ”Näytä tietueet” käyttäminen
-**Power BI Desktopissa** voit syventyä minkä tahansa visualisoinnin tietoihin ja nähdä tietojen tekstiesityksen tai yksittäiset tietoelementit valituista visualisoinneista. Näitä ominaisuuksia kutsutaan joskus nimellä *napsauttamalla tarkasteltava raportti* tai *alirakenneraportiksi* tai *alirakenneraporttien yksityiskohtien tiedoiksi*.
+**Power BI Desktopissa** voit syventyä minkä tahansa visualisoinnin tietoihin ja nähdä pohjana olevien tietojen tekstiesityksen tai yksittäiset tietueet valituista visualisoinneista. Näitä ominaisuuksia kutsutaan joskus nimellä *napsauttamalla tarkasteltava raportti* tai *alirakenneraportti* tai *alirakenneraporttien yksityiskohtien tiedot*.
 
-Voit käyttää **Näytä tietueet** tarkastelemaan yhden valitun tietoelementin pohjana olevia rivejä tai käyttää **Näytä tiedot** tekstimuotoisten versioiden visualisoinnissa käytettyjen arvojen näyttämiseksi. Toimintojen **Näytä tietueet** ja **Näytä tiedot** käyttöön liittyy joitakin rajoituksia, joita käsitellään tämän artikkelin lopussa.
+Voit käyttää **Näytä tiedot** -toimintoa yhden valitun tietoelementin pohjana olevien rivien tarkastelemiseksi tai käyttää **Näytä tietueet** -toimintoa yhden valitun tietueen tai arvopisteen kaikkien tietojen näyttämiseksi. 
 
-![](media/desktop-see-data-see-records/see-data-see-records_1.png)
+![Näytä tiedot ja Näytä tietueet](media/desktop-see-data-see-records/see-data-record.png)
 
-## <a name="using-see-data-in-power-bi-desktop"></a>Näytä tiedot -toiminnon käyttäminen Power BI Desktopissa
-**Näytä tiedot** -painike sijaitsee **Tiedot/poraudu** -välilehdellä **Visualisointityökalut** -osassa valintanauhaa.
+>[!IMPORTANT]
+>**Näytä tiedot** ja **Näytä tietueet** tukevat vain seuraavia visualisointityyppejä:
+>  - Palkkikaavio
+>  - Pylväskaavio
+>  - Rengaskaavio
+>  - Täytetty kartta
+>  - Suppilo
+>  - Kartta
+>  - Ympyräkaavio
+>  - Puukartta
 
-![](media/desktop-see-data-see-records/see-data-see-records_2.png)
+## <a name="use-see-data-in-power-bi-desktop"></a>Näytä tiedot -toiminto Power BI Desktopissa
 
-Voit myös käyttää **Näytä tiedot** -painiketta napsauttamalla visualisointia hiiren oikealla painikkeella ja valitsemalla sitten **Näytä tiedot** esiin tulevasta valikosta.
+**Näytä tiedot** näyttää visualisoinnin pohjana olevat tiedot. **Näytä tiedot** -painike ilmestyy **Tiedot/poraudu** -välilehdelle valintanauhan **Visualisointityökalut** -osaan, kun visualisointi valitaan.
 
-![](media/desktop-see-data-see-records/see-data-see-records_3.png)
+![Näytä tiedot valintanauhassa](media/desktop-see-data-see-records/see-data1.png)
+
+Näet tiedot myös painamalla hiiren kakkospainiketta visualisoinnissa ja valitsemalla sitten **Näytä tiedot** näkyviin tulevasta valikosta, tai valitsemalla **Lisää vaihtoehtoja** -kohdan kolme pistettä (...) visualisoinnin oikeassa yläkulmassa ja valitsemalla sitten **Näytä tiedot**.
+
+![Näytä tiedot napsauttamalla hiiren kakkospainikkeella](media/desktop-see-data-see-records/see-data2.png)&nbsp;&nbsp;![Näytä tiedot Lisää vaihtoehtoja](media/desktop-see-data-see-records/see-data3.png)
 
 > [!NOTE]
 > Sinun pitää siirtää hiiri visualisoinnin arvopisteen päälle, jotta hiiren kakkospainikkeen valikko olisi käytettävissä.
-> 
-> 
 
-Kun valitset **Näytä tiedot**, **Power BI Desktop** keskittyy valitsemaasi visualisointiin ja tietoihin, ja käyttää alustan tilan visualisoinnin ja datan tekstiesityksen näyttämiseksi. Visualisointi näkyy piirtoalustan yläosassa, ja tiedot näytetään alaosassa seuraavassa kuvassa esitetyllä tavalla. Tämä on *vaakasuuntainen* näkymä.
+Kun valitset **Näytä tiedot** tai **Näytä tiedot**, Power BI Desktop -pohjassa näkyvät sekä tietojen visualisointi että tietojen tekstiesitys. *Vaakasuuntaisessa näkymässä* visualisointi näkyy pohjan yläosassa ja tiedot näkyvät alaosassa. 
 
-![](media/desktop-see-data-see-records/see-data-see-records_4.png)
+![Vaakasuuntainen näkymä](media/desktop-see-data-see-records/see-data4a.png)
 
-Voit myös vaihtaa *pystysuuntaiseen näkymään* (tai takaisin *vaakanäkymään*) valitsemalla kuvake oikeassa yläkulmassa.
+Voit myös vaihdella *pystysuuntaiseen näkymän* ja vaakasuuntaisen näkymän välillä valitsemalla kuvakkeen pohjan oikeassa yläkulmassa.
 
-![](media/desktop-see-data-see-records/see-data-see-records_5.png)
+![Pystysuuntaisen näkymän valitsin](media/desktop-see-data-see-records/see-data4.png)
 
-Voit siirtyä raporttiin valitsemalla **< Takaisin raportin** piirtoalustan vasemmasta yläkulmasta.
+Voit siirtyä raporttiin valitsemalla **< Takaisin raporttiin** pohjan vasemmasta yläkulmasta.
 
-![](media/desktop-see-data-see-records/see-data-see-records_6.png)
+![Takaisin raporttiin](media/desktop-see-data-see-records/see-data5.png)
 
-## <a name="using-see-records-in-power-bi-desktop"></a>Näytä tietueet -toiminnon käyttäminen Power BI Desktopissa
-Voit myös keskittyä yhden tietoelementin visualisointiin ja porautua sen pohjana oleviin tietoihin. Kun visualisointi on valittu, on olemassa kaksi tapaa käyttää **Näytä tietueet** -toimintoa. Voit ottaa käyttöön **Näytä tietueet** -vaihtopainikkeen **Tiedot/poraudu** -valintanauhasta ja napsauta sitten tietoelementtiä tai napsauta tietoelementtiä hiiren kakkospainikkeella ja valitse **Näytä tietueet** esiin tulevasta valikosta.
+## <a name="use-see-records-in-power-bi-desktop"></a>Näytä tietueet -toiminnon käyttäminen Power BI Desktopissa
 
-![](media/desktop-see-data-see-records/see-data-see-records_7.png)
+Voit myös keskittyä yhden tietueen visualisointiin ja porautua sen pohjana oleviin tietoihin. Jos haluat käyttää **Näytä tietueet** -toimintoa, valitse visualisointi ja valitse sitten **Näytä tietueet** **Tiedot/poraudu** -välilehdessä valintanauhan **Visualisointityökalut** -osassa, ja valitse sitten arvopiste tai rivi visualisoinnissa. 
 
-> [!NOTE]
-> Jos valittu visualisointi ei tue **Näytä tietueet** -toimintoa, valintanauhan painike näkyy harmaana.
-> 
-> 
-
-Kun **Näytä tietueet** on valittuna, **Power BI Desktop** keskittyy yksittäiseen tietoelementtiin ja käyttää piirtoalustan aluetta kyseisen elementin tietojen näyttämiseen seuraavassa kuvassa esitetyllä tavalla.
-
-![](media/desktop-see-data-see-records/see-data-see-records_8.png)
+![Näytä tietueet valintanauhassa](media/desktop-see-data-see-records/see-record1.png)
 
 > [!NOTE]
-> Et voi tallentaa muutoksia tiedoista, joita tarkastellaan (tai joita käyttäjät muokkaavat) **Näytä tietueet** -toiminnossa raportin näkemiseksi.
+> Jos **Näytä tietueet** -painike on poistettu käytöstä ja himmennettynä valintanauhassa, se tarkoittaa, ettei valittu visualisointi tue **Näytä tietueet** -toimintoa.
 
-Voit siirtyä raporttiin valitsemalla **< Takaisin raportin** -painike piirtoalustan vasemmasta yläkulmasta.
+Voit myös napsauttaa tietoelementtiä hiiren kakkospainikkeella ja valita **Näytä tietueet** näkyviin tulevasta valikosta.
 
-## <a name="limitations"></a>Rajoitukset
-Joitakin rajoituksia on otettava huomioon käytettäessä toimintoja **Näytä tiedot** tai **Näytä tietueet**:
+![Näytä tietueet napsauttamalla hiiren kakkospainiketta](media/desktop-see-data-see-records/see-record2.png)
 
-* Vain seuraavia visualisointityyppejä tuetaan:
-  * **Palkki**
-  * **Sarake**
-  * **Kartta**
-  * **Puukartta**
-  * **Täytetty kartta**
-  * **Ympyräkaavio**
-  * **Ympyrä**
-  * **Suppilo**
-* Et voi käyttää **Näytä tietueet** -toimintoa, kun visualisointi käyttää laskettua mittayksikköä
-* Et voi käyttää **Näytä tietueet** -toimintoa, kun olet yhteydessä MD-malliin
+Kun valitset tietoelementiksi **Näytä tietueet**, Power BI Desktop -pohjassa näkyvät kaikki valittuun elementtiin liittyvät tiedot. 
+
+![](media/desktop-see-data-see-records/see-record3.png)
+
+Voit siirtyä raporttiin valitsemalla **< Takaisin raporttiin** pohjan vasemmasta yläkulmasta.
+
+![](media/desktop-see-data-see-records/see-record4.png)
+
+> [!NOTE]
+>**Näytä tietueet** -toiminnolla on seuraavat rajoitukset:
+> - Et voi muuttaa tietoja **Näytä tietueita** -näkymässä ja tallentaa niitä takaisin raporttiin.
+> - Et voi käyttää **Näytä tietueet** -toimintoa, kun visualisointi käyttää laskettua mittayksikköä.
+> - Et voi käyttää **Näytä tietueet** -toimintoa, kun olet yhteydessä reaaliaikaiseen MD-malliin.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 **Power BI Desktop** sisältää erilaisia ominaisuuksia raportin muotoiluun ja tietojen hallintatoimintoihin. Tutustu seuraaviin resursseihin ja niiden muutamiin esimerkkeihin:

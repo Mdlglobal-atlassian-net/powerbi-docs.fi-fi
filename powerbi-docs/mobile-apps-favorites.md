@@ -1,28 +1,20 @@
 ---
 title: Suosikit Power BI -mobiilisovelluksissa
 description: Miten luot ja selaat suosikkeja Power BI -koontinäytöillä, raporteilla ja sovelluksissa sekä Power BI -raporttipalvelimen ja Raporttipalveluiden raportit ja suorituskyvyn mittarit mobiilisovelluksissa.
-services: powerbi
-documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 02/09/2018
+ms.component: powerbi-mobile
+ms.topic: conceptual
+ms.date: 05/05/2018
 ms.author: maggies
-ms.openlocfilehash: d3b53618f43652fffcb53502fd9d55ef91f2aff3
-ms.sourcegitcommit: ad9bd4e52471b1179f46f847960d5ed79c0c0761
+ms.openlocfilehash: b6550eb49d33aba1399d169e0c5cdefce98760ba
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/11/2018
-ms.locfileid: "30973577"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34293969"
 ---
 # <a name="make-and-view-favorites-in-the-power-bi-mobile-apps"></a>Suosikkien luominen ja selaaminen Power BI -mobiilisovelluksissa
 Koskee seuraavia:
@@ -33,7 +25,7 @@ Koskee seuraavia:
 
 Miten luot ja selaat suosikkeja Power BI -koontinäytöillä, raporteilla ja sovelluksissa sekä paikallisista Power BI -raporttipalvelimen ja Raporttipalveluiden raporteista ja suorituskyvyn mittareista mobiilisovelluksissa.
 
-Kun teet suosikin Power BI -mobiilisovelluksessa, näet sen Power BI -palvelun  ([https://powerbi.com](https://powerbi.com)) ja kaikilla mobiililaitteillasi Suosikit-sivulla. 
+Kun teet suosikin Power BI -mobiilisovelluksessa, näet sen Power BI -palvelun ([https://powerbi.com](https://powerbi.com)) ja kaikkien mobiililaitteidesi Suosikit-sivulla. 
 
 ![Suosikit Power BI -mobiilisovelluksissa](media/mobile-apps-find-content-mobile-devices/power-bi-android-favorites-reports.png)
 
@@ -81,7 +73,7 @@ Voit tehdä koontinäytöstä tai raportista suosikin koontinäyttö- tai raport
     ![Android-laitteiden Suosikki-tähti](media/mobile-apps-favorites/power-bi-android-favorite-in-dashboard.png)
 
 ## <a name="make-favorite-power-bi-report-server-and-reporting-services-reports-and-kpis"></a>Tee suosikkeja Power BI -raporttipalvelimen ja Reportin Services -raporteista ja suorituskyvyn mittareista
-Voit selata suosikkejasi Power BI -raporttipalvelimen ja Reporting Services -raporteista ja suorituskykymittareista Power BI -mobiilisovelluksissa, mutta et voi tehdä niistä suosikkeja mobiilisovelluksissa. Sinun [tulee merkitä ne suosikeiksi verkkoportaalissa](report-server/getting-around.md#tag-your-favorite-reports-and-kpis). 
+Voit selata suosikkejasi Power BI -raporttipalvelimen ja Reporting Services -raporteista ja suorituskykymittareista Power BI -mobiilisovelluksissa, mutta et voi tehdä niistä suosikkeja mobiilisovelluksissa. Sinun [tulee merkitä ne suosikeiksi verkkoportaalissa](report-server/tutorial-explore-report-server-web-portal.md#tag-your-favorites). 
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 * [Suosikkikoontinäytöt Power BI -palvelussa](service-dashboard-favorite.md) 

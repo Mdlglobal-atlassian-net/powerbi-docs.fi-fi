@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 06/02/2018
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: e688561b6b669aab68c4251fa5e25157dc219cd6
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: e689e031395130bab8ad80d5d06936a9dabaf852
+ms.sourcegitcommit: b3b32b9b3935706d7caa091833bd32259d7ff6ee
 ms.translationtype: HT
 ms.contentlocale: fi-FI
 ms.lasthandoff: 06/04/2018
-ms.locfileid: "34722996"
+ms.locfileid: "34755066"
 ---
 # <a name="troubleshooting-the-on-premises-data-gateway"></a>Paikallisen tietoyhdyskäytävän vianmääritys
 Tässä artikkelissa käsitellään yleisiä ongelmia, joita saattaa ilmetä käyttäessäsi **paikallista tietoyhdyskäytävää**.
@@ -149,6 +149,9 @@ Sinun täytyy varmistaa toimialueiden luottamussuhde yhdessä toimialueiden jär
 **Tietoyhdyskäytävän tietolähteitä ei näe Power BI -palvelun Analysis Servicesin Nouda tiedot -näkymässä**
 
 Varmista, että tilisi on lueteltu tietolähteen **Käyttäjät**-välilehdellä yhdyskäytävän määrityksissä. Jos sinulla ei ole käyttöoikeuksia yhdyskäytävään, pyydä yhdyskäytävän järjestelmänvalvojaa antamaan ne. Vain **Käyttäjät**-luettelossa luetelluilla tileillä nähdään tietolähteet, jotka on lueteltu Analysis Services -luettelossa.
+
+### <a name="error-you-dont-have-any-gateway-installed-or-configured-for-the-data-sources-in-this-dataset"></a>Virhe: Sinulla ei ole yhdyskäytävää asennettuna tai määritettynä tämän tietojoukon tietolähteille
+Varmista, että olet lisännyt yhden tai useamman tietolähteen yhdyskäytävään kohdassa [Tietolähteen lisääminen](service-gateway-manage.md#add-a-data-source) kuvatulla tavalla. Jos yhdyskäytävä ei näy hallintaportaalin kohdassa **Yhdyskäytävien hallinta**, kokeile tyhjentää selaimen välimuisti tai kirjautua ulos palvelusta ja sitten takaisin sisään.
 
 ## <a name="datasets"></a>Tietojoukot
 ### <a name="error-there-is-not-enough-space-for-this-row"></a>Virhe: tälle riville ei ole tarpeeksi tilaa.

@@ -1,29 +1,21 @@
 ---
 title: Sarakkeen lisääminen esimerkistä Power BI Desktopissa
 description: Luo nopeasti uusi sarake Power BI Desktopissa käyttämällä olemassa olevia sarakkeita esimerkkeinä
-services: powerbi
-documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 11/21/2017
+ms.component: powerbi-desktop
+ms.topic: conceptual
+ms.date: 04/24/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 1fcdd2d8b1eff61e3e53ca919e082afb4ec8e835
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 84347678033f3042dc5fd15d311d8e04e855a336
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/24/2018
-ms.locfileid: "30974342"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34285895"
 ---
 # <a name="add-a-column-from-an-example-in-power-bi-desktop"></a>Sarakkeen lisääminen esimerkistä Power BI Desktopissa
 Huhtikuussa 2017 julkaistusta **Power BI Desktop** -versiosta alkaen voit lisätä uusia tietosarakkeita malliin **Kyselyeditorin** avulla antamalla vähintään yksi malliarvo uudelle sarakkeelle. Voit luoda uuden sarakkeen nykyisestä valinnasta tai syöttämällä tietoja perustuen kaikkiin (tai valittuihin) sarakkeisiin tietyssä taulukossa.
@@ -43,7 +35,7 @@ Luo uusi sarake esimerkistä käynnistämällä **Kyselyeditori**. Voit käynnis
 
 ![](media/desktop-add-column-from-example/add-column-from-example_02.png)
 
-Tässä artikkelissa käytetään tietoja seuraavasta Wikipedia-artikkelista (kyseessä on linkki, jota voit napsauttaa ja noutaa tiedot itsellesi artikkelin seuraamista varten):
+Jos haluat saada tietoja verkkosivulta, siirry **Aloitus**-välilehteen, valitse **Nouda tiedot > Verkko** ja liitä URL-osoite valintaikkunaan, joka tulee näkyviin. Tässä artikkelissa käytetään tietoja, jotka ovat peräisin Wikipedia-artikkelista. Voit noutaa tiedot itsellesi napsauttamalla seuraavaa linkkiä ja seuraamalla ohjeita:
 
 * [**Yhdysvaltain osavaltiot**](https://wikipedia.org/wiki/List_of_states_and_territories_of_the_United_States)
 
@@ -52,7 +44,7 @@ Kun olet käynnistänyt **Kyselyeditorin** ja ladannut tietoja, voit aloittaa sa
 ![](media/desktop-add-column-from-example/add-column-from-example_03.png)
 
 ## <a name="the-add-column-from-examples-pane"></a>Lisää sarake esimerkeistä -ruutu
-Kun valitsen uuden sarakkeen lisäämisen esimerkeistä, uusi ruutu tulee näkyviin kyseisen taulukon sarakkeilla (sinun on ehkä vieritettävä alaspäin nähdäksesi ne kaikki). Uusi **Sarake1** näkyy myös oikealla. Tämä on sarake, joka luodaan **Power BI Desktopissa** esimerkkien perusteella. Uuden **Sarake1**-otsikon alla on tyhjiä soluja, johon voit lisätä omia esimerkkejä, joiden avulla Power BI luo esimerkkien mukaisia sääntöjä ja muunnoksia.
+Kun valitsen uuden sarakkeen lisäämisen esimerkeistä, uusi ruutu tulee näkyviin kyseisen taulukon sarakkeilla (sinun on ehkä vieritettävä alaspäin nähdäksesi ne kaikki). Uusi **Sarake1** näkyy myös oikealla. Tämä on sarake, jonka **Power BI Desktop** luo esimerkkien perusteella. Uuden **Sarake1**-otsikon alla on tyhjiä soluja, johon voit lisätä omia esimerkkejä, joiden avulla Power BI luo esimerkkien mukaisia sääntöjä ja muunnoksia.
 
 Huomaa myös, että tämä on **Käytössä oleva vaihe** **Kyselyasetukset**-ruudussa. Tavalliseen tapaan **Kyselyeditori** tallentaa muunnosvaiheet ja käyttää niitä kyselyssä järjestyksessä.
 
@@ -67,9 +59,9 @@ Tätä kutsutaan **Lisää sarakkeita esimerkeistä** -ruuduksi, joka koostuu ne
 
 ![](media/desktop-add-column-from-example/add-column-from-example_05.png)
 
-Lisättäessä esimerkkiä uuteen sarakkeeseen, Power BI näyttää esikatselun sarakkeesta havaittujen muunnosten perusteella. Jos esimerkiksi kirjoitat *Alabama* ensimmäiselle riville vastaamaan taulukon ensimmäisen sarakkeen arvoa *Alabama*, Power BI täyttää sarakkeen tämän arvon perusteella, kun painat *Enter-näppäintä*.
+Kun olet kirjoittamassa esimerkkiä uuteen sarakkeeseen, Power BI näyttää esikatselun sarakkeesta havaittujen muunnosten perusteella. Jos kirjoitat esimerkiksi *Alabama* ensimmäiselle riville, se vastaa *Alabama*-arvoa taulukon ensimmäisessä sarakkeessa. Heti, kun painat *Enter*-näppäintä, Power BI täyttää sarakkeen kyseisen arvon mukaan.
 
-Jos sitten siirryt riville, joka sisältää arvon *Massachusetts [E]*, ja poistat *[E]*-osan (koska et halua sitä), Power BI havaitsee muutoksen ja luo muunnoksen käyttämällä tätä esimerkkiä. Huomaa muunnoksen selitys ylemmässä keskimmäisessä ruudussa.
+Jos kuitenkin siirryt sen jälkeen esimerkiksi riviin, jonka sisältö on *Massachusetts [E]* ja poistat lopussa olevan *[E]*-osan (koska et tarvitse sitä enää), Power BI havaitsee muutoksen ja luo muunnoksen esimerkin perusteella. Huomaa muunnoksen selitys keskimmäisessä yläruudussa.
 
 ![](media/desktop-add-column-from-example/add-column-from-example_06.png)
 
@@ -80,8 +72,8 @@ Haluatko nähdä tämän käytännössä? Seuraavassa videossa kuvataan toiminto
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/-ykbVW9wQfw" frameborder="0" allowfullscreen></iframe>
 
-## <a name="considerations-and-limitations"></a>Huomioon otettavat seikat ja rajoitukset
-Monia muunnoksia voi käyttää **lisättäessä saraketta esimerkeistä**, mutta ei kaikkia. Seuraavassa luettelossa on kaikki *tuetut* muunnokset.
+## <a name="considerations-and-limitations"></a>Huomioitavat asiat ja rajoitukset
+Monia muunnoksia voi käyttää **lisättäessä saraketta esimerkeistä**, mutta ei kaikkia. Seuraavassa luettelossa on kaikki tuetut muunnokset.
 
 * **Viittaus**
   

@@ -1,29 +1,21 @@
 ---
 title: Analysoi Excelissä
 description: Lue lisää Power BI -tietojoukkojen analysoimisesta Excelissä
-services: powerbi
-documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 02/05/2018
+ms.component: powerbi-service
+ms.topic: conceptual
+ms.date: 03/22/2018
 ms.author: davidi
 LocalizationGroup: Reports
-ms.openlocfilehash: 385a89d6b50507833c1e43327c405f02b2468ac2
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: f11493fac87643145dab168e23a1fb8e7b7a6e4e
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/24/2018
-ms.locfileid: "30973937"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34239625"
 ---
 # <a name="analyze-in-excel"></a>Analysoi Excelissä
 Joskus saatat haluta tarkastella ja käsitellä Power BI:ssä olevaa tietojoukkoa Excelillä. **Analysoi Excelissä** -toiminnon avulla voit tehdä niin ja käyttää pivot-taulukko-, kaavio- ja osittajaominaisuuksia Excelissä Power BI:ssä olevan tietojoukon perusteella.
@@ -106,3 +98,5 @@ Kun käyttäjä, jonka kanssa olet jakanut työkirjan, avaa työkirjan, hän nä
 
 Koska käyttäjien on päivitettävä tietojoukko, eikä ulkoisten yhteyksien päivittämistä tueta Excel Onlinessa, on suositeltavaa, että käyttäjät avaavat työkirjan Excelin työpöytäversiossa tietokoneellaan.
 
+## <a name="troubleshooting"></a>Vianmääritys
+Analysoi Excelissä -toiminto voi ajoittain antaa odottamattomia tuloksia tai toimia odottamattomalla tavalla. [Tämä sivu sisältää ratkaisuja yleisiin ongelmiin käytettäessä Analysoi Excelissä -toimintoa](desktop-troubleshooting-analyze-in-excel.md)

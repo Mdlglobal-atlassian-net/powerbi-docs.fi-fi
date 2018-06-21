@@ -1,37 +1,29 @@
 ---
 title: Esiversiotoimintojen käyttäminen
 description: Miten voit ottaa käyttöön (ja poistaa käytöstä) ominaisuuksia, jotka ovat esikatselussa.
-services: powerbi
-documentationcenter: ''
 author: mihart
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
+ms.reviewer: ''
 featuredvideoid: ''
-qualityfocus: ''
-qualitydate: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 03/01/2018
+ms.component: powerbi-service
+ms.topic: conceptual
+ms.date: 03/24/2018
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 45f10ab7fef7669adbbc836e67a4daaed267905e
-ms.sourcegitcommit: 5e1f7d2673efe25c47b9b9f315011055bfe92c8f
+ms.openlocfilehash: df676392c484239724cf631c208a4d586ca65e24
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/09/2018
-ms.locfileid: "29721619"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34249133"
 ---
-# <a name="opt-in-for-power-bi-preview-features"></a>Power BI:n esikatseluominaisuuksien käyttäminen
+# <a name="opt-in-for-power-bi-service-preview-features"></a>Power BI:n esikatseluominaisuuksien käyttäminen
 ## <a name="what-are-preview-features"></a>Mitä ovat *esikatseluominaisuudet*?
-Kun teemme parannuksia Power BI:hin, julkaisemme joitakin uusia toimintoja *esikatseluominaisuutena*. Esikatseluominaisuuksia voidaan ottaa käyttöön ja poistaa käytöstä niitä kokeiltaessa.
+Kun teemme parannuksia Power B -palveluun, julkaisemme joitakin uusia toimintoja *esikatseluominaisuutena*. Esikatseluominaisuuksia voidaan ottaa käyttöön ja poistaa käytöstä niitä kokeiltaessa.
 
 > [!TIP]
-> Onko sinulla kysyttävää tai haluatko antaa palautetta? [Käy Power BI -yhteisön keskustelupalstalla](http://community.powerbi.com/t5/Navigation-Preview-Forum/bd-p/NavigationPreview).
+> Esikatseluominaisuudet ovat käytettävissä myös Power BI Desktopissa. Lisätietoja on [Power BI Desktop -yhteisön keskustelupalstalla](https://community.powerbi.com/t5/Desktop/bd-p/power-bi-designer).
 > 
 > 
 

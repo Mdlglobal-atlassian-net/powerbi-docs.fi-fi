@@ -1,28 +1,20 @@
 ---
 title: Power BI -palvelun sisältöpakettiohjelman yleiskatsaus
 description: Sisältöpakettisertifiointiohjelma
-services: powerbi
-documentationcenter: ''
 author: markingmyname
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-developer
+ms.topic: conceptual
 ms.date: 02/20/2018
 ms.author: maghan
-ms.openlocfilehash: 2cc78b3d2a877e465d5f4bdc67f501b7de87f88e
-ms.sourcegitcommit: 5e1f7d2673efe25c47b9b9f315011055bfe92c8f
+ms.openlocfilehash: cfb9727a41d602ce14bfd2a403a87e82d2f0e94d
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/09/2018
-ms.locfileid: "30973637"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34290633"
 ---
 # <a name="overview-of-the-power-bi-service-content-pack-program"></a>Power BI -palvelun sisältöpakettiohjelman yleiskatsaus
 Sisältöpaketti on joukko valmista sisältöä, jonka avulla käyttäjät saavat välittömästi merkityksellistä tietoa lähteestä. Sisältöpaketti keskittyy yleensä tiettyyn liiketoimintaskenaarioon ja tarjoaa rooli-, toimialue- tai työnkulkukohtaista merkityksellistä tietoa.
@@ -86,7 +78,7 @@ Julkaistut sisältöpaketit voidaan päivittää kerran kuukaudessa. Päivityspy
 Voit lähettää kysymyksesi meille sähköpostilla osoitteeseen [pbiservicesapps@microsoft.com](mailto:pbiservicesapps@microsoft.com)
 
 ## <a name="support"></a>Tuki
-Jos tarvitset tukea kehityksen aikana, käytä yhteydenottoon sivua [https://powerbi.microsoft.com/support](https://powerbi.microsoft.com/support). Sitä valvotaan ja hallitaan aktiivisesti. Asiakastapaukset ohjataan nopeasti oikealle tiimille.
+Saat tukea kehityksen aikana osoitteesta [https://powerbi.microsoft.com/support](https://powerbi.microsoft.com/support). Sitä valvotaan ja hallitaan aktiivisesti. Asiakastapaukset ohjataan nopeasti oikealle tiimille.
 
 ## <a name="next-step"></a>Seuraava vaihe
 [Sisällön tuottaminen](template-content-pack-authoring.md)

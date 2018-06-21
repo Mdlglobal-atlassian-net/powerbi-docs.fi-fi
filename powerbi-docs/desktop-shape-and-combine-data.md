@@ -1,33 +1,34 @@
 ---
-title: Tietojen muotoilu ja yhdistäminen Power BI Desktopissa
-description: Tietojen muotoilu ja yhdistäminen Power BI Desktopissa
-services: powerbi
-documentationcenter: ''
+title: Tietojen muotoilu ja yhdistäminen useista lähteistä
+description: Tässä opetusohjelmassa opit tietojen muotoilun ja yhdistämisen Power BI Desktopissa
 author: davidiseminger
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 01/30/2018
+ms.component: powerbi-desktop
+ms.topic: tutorial
+ms.date: 05/03/2018
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 0bb2f8a8d9299d525085a8ba7d2ecabdcd9e6c78
-ms.sourcegitcommit: afa10c016433cf72d6d366c024b862187a8692fd
+ms.openlocfilehash: 27479add7839e1078e76bbb6523b287f10194566
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34288747"
 ---
-# <a name="shape-and-combine-data-in-power-bi-desktop"></a>Tietojen muotoilu ja yhdistäminen Power BI Desktopissa
-**Power BI Desktopilla** voit muodostaa yhteyksiä moniin erilaisiin tietolähteisiin ja muotoilla sitten tietoja tarpeidesi mukaisesti. Tietojen *muotoileminen* tarkoittaa tietojen muuntamista, esimerkiksi sarakkeiden tai taulukoiden nimeämistä uudelleen, tekstin muuntamista luvuiksi, rivien poistamista, ensimmäisen rivin määrittämistä otsikoiksi ja niin edelleen. Tietojen *yhdistäminen* tarkoittaa kahden tai useamman tietolähteen yhdistämistä, tietojen muotoilua tarvittaessa ja sitten tietojen yhdistämistä yhdeksi hyödylliseksi kyselyksi.
+# <a name="tutorial-shape-and-combine-data-in-power-bi-desktop"></a>Opetusohjelma: Tietojen muotoilu ja yhdistäminen Power BI Desktopissa
 
-Tässä artikkelissa näytetään, miten voit muotoilla kyselyä Power BI Desktopilla, sekä tuodaan esiin joitain yleisimpiä tehtäviä. Tässä käytetty kysely kuvataan tarkemmin ohjeartikkelissa [Power BI Desktopin käytön aloittaminen](desktop-getting-started.md), josta saat myös ohjeet kyselyn luomiseen kokonaan itse.
+**Power BI Desktopilla** voit muodostaa yhteyksiä moniin erilaisiin tietolähteisiin ja muotoilla sitten tietoja tarpeidesi mukaisesti. Näin voit luoda visuaalisia raportteja, joita voit jakaa muille. Tietojen *muotoileminen* tarkoittaa tietojen muuntamista, esimerkiksi sarakkeiden tai taulukoiden nimeämistä uudelleen, tekstin muuntamista luvuiksi, rivien poistamista, ensimmäisen rivin määrittämistä otsikoiksi ja niin edelleen. Tietojen *yhdistäminen* tarkoittaa kahden tai useamman tietolähteen yhdistämistä, tietojen muotoilua tarvittaessa ja sitten tietojen yhdistämistä yhdeksi hyödylliseksi kyselyksi.
+
+Tässä opetusohjelmassa opit:
+
+* Tietojen muotoilun käyttämällä **kyselyeditoria**
+* Yhdistäminen tietolähteeseen
+* Yhdistäminen toiseen tietolähteeseen
+* Kyseisten tietolähteiden yhdistäminen ja tietomallien luominen raportissasi käytettäviksi
+
+Tässä opetusohjelmassa näytetään, miten voit muotoilla kyselyä Power BI Desktopilla, sekä tuodaan esiin joitain yleisimpiä tehtäviä. Tässä käytetty kysely kuvataan tarkemmin ohjeartikkelissa [Power BI Desktopin käytön aloittaminen](desktop-getting-started.md), josta saat myös ohjeet kyselyn luomiseen kokonaan itse.
 
 Kannattaa huomioida, että Power BI Desktopin **kyselyeditorissa** käytetään runsaasti hiiren kakkospainikkeella avattavien valikoiden toimintoja sekä valintanauhan toimintoja. Useimmat toiminnot, jotka ovat valittavissa **Muunna**-valintanauhassa, ovat käytettävissä myös napsauttamalla kohdetta (esimerkiksi saraketta) hiiren kakkospainikkeella ja valitsemalla sitten toiminto näyttöön avautuvasta valikosta.
 
@@ -221,7 +222,7 @@ Jos haluat laajentaa yhdistetyn taulukon ja valita sisällytettävät sarakkeet,
 Tässä tapauksessa haluamme vain **State Code** -sarakkeen, joten valitse se ja valitse sitten **OK**. Poista Käytä alkuperäisen sarakkeen nimeä etuliitteenä -valintaruudun valinta, koska et halua tätä. Jos jätät tämän valituksi, yhdistetyn sarakkeen nimi olisi **NewColumn.State Code** (alkuperäisen sarakkeen nimi eli **NewColumn**, sitten piste ja sitten kyselyyn tuodun sarakkeen nimi).
 
 >[!NOTE]
->Haluatko kokeilla eri tapoja tuoda tämä **NewColumn**-taulukko? Voit kokeilla eri tapoja. Jos et pidä tuloksista, poista kyseinen vaihe **Kyselyasetukset**-ruudun **käytettyjen vaiheiden** luettelosta. Tämä palauttaa kyselysi tilaan, jossa se oli ennen tätä **laajennusvaihetta**. Voit siis kokeilla eri tapoja vapaasti niin monta kertaa kuin haluat, että saat laajennusprosessista haluamasi kaltaisen.
+>Haluatko kokeilla eri tapoja tuoda tämä **NewColumn**-taulukko? Voit kokeilla eri tapoja. Jos et pidä tuloksista, poista kyseinen vaihe **Kyselyasetukset**-ruudun **käytössä olevien vaiheiden** luettelosta. Tämä palauttaa kyselysi tilaan, jossa se oli ennen tätä **laajennusvaihetta**. Voit siis kokeilla eri tapoja vapaasti niin monta kertaa kuin haluat, kunnes saat laajennusprosessista haluamasi kaltaisen.
 
 Nyt meillä on yksi kysely (taulukko), joka yhdistää kaksi tietolähdettä, jotka kummatkin on muotoiltu tarpeidemme mukaisesti. Tämän kyselyn pohjalta voit luoda paljon muitakin kiinnostavia tietoyhteyksiä, esimerkiksi asumiskuluista, demografisista tiedoista tai työmahdollisuuksista missä tahansa osavaltiossa.
 

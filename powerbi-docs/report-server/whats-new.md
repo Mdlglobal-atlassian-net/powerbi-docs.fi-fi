@@ -1,39 +1,43 @@
 ---
 title: Power BI -raporttipalvelinten uudet ominaisuudet
 description: Lue Power BI -raporttipalvelimen uusista ominaisuuksista. Tämä koskee tärkeimpiä ominaisuuksia, ja tietoja päivitetään uusien julkaisujen myötä.
-services: powerbi
-documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 03/19/2018
+ms.component: powerbi-report-server
+ms.topic: conceptual
+ms.date: 05/21/2018
 ms.author: maggies
-ms.openlocfilehash: 4f149baccf551762589c17bd6d6ba17c36f4da37
-ms.sourcegitcommit: 0473a155495a7a9ba4b899d0815100426718b7ac
+ms.openlocfilehash: 07c393425d2a04376a4fcf81c2c35a0e115eeaee
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/20/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34481949"
 ---
 # <a name="whats-new-in-power-bi-report-server"></a>Power BI -raporttipalvelinten uudet ominaisuudet
 Lue Power BI -raporttipalvelimen uusista ominaisuuksista. Tämä koskee tärkeimpiä ominaisuuksia, ja tietoja päivitetään uusien julkaisujen myötä.
 
-Voit ladata Power BI -raporttipalvelimen ja Power BI-raporttipalvelimille optimoidun Power BI Desktopin [On-premises reporting with Power BI Report Server](https://powerbi.microsoft.com/report-server/) -kohdasta.
+Lataa Power BI -raporttipalvelin ja Power BI -raporttipalvelimelle optimoitu Power BI Desktop tutustumalla ohjeaiheeseen [Paikallinen raportointi Power BI -raporttipalvelimella](https://powerbi.microsoft.com/report-server/).
 
-Lisätietoa aiheeseen liittyvistä uusista ominaisuuksista:
+Katso myös seuraavat lähteet, joiden avulla pysyt ajan tasalla Power BI -raporttipalvelimen uusista ominaisuuksista.
+
+* [Microsoftin Power BI ‑blogi](https://powerbi.microsoft.com/blog/)
+* [SQL Server Reporting Services -tiimin blogi](https://blogs.msdn.microsoft.com/sqlrsteamblog/)
+* [Guy in a Cube ‑YouTube-kanava](https://aka.ms/guyinacube)
+
+Lisätietoja Power BI:hin liittyvistä uusista ominaisuuksista:
 
 * [Power BI -palvelun uudet ominaisuudet](../service-whats-new.md)
 * [Power BI Desktopin uudet ominaisuudet](../desktop-latest-update.md)
-* [Power BI mobiilisovellusten uudet ominaisuudet](../mobile-whats-new-in-the-mobile-apps.md)
-* [Power BI -tiimin blogi](https://powerbi.microsoft.com/blog/)
+* [Power BI -mobiilisovellusten uudet ominaisuudet](../mobile-whats-new-in-the-mobile-apps.md)
+
+## <a name="may-2018"></a>Toukokuu 2018
+
+### <a name="configure-power-bi-ios-mobile-apps-for-report-servers-remotely"></a>Power BI -iOS-mobiilisovellusten etämäärittäminen raporttipalvelimia varten
+
+IT-ylläpitäjänä voit käyttää organisaatiosi ydintietojen hallintatyökalua etämäärittääksesi raporttipalvelimen käyttöoikeudet Power BI -iOS-mobiilisovellukselle. Lisätietoja on kohdassa [Power BI -iOS-mobiilisovellusten etämäärittäminen raporttipalvelimia varten](configure-powerbi-mobile-apps-remote.md).
 
 ## <a name="march-2018-release"></a>Maaliskuun 2018 julkaisu
 
@@ -206,9 +210,9 @@ Power BI-raporttipalvelin tukee nyt uusia Power BI -taulukko- ja matriisivisuali
 * Parannellut yhteistyöominaisuudet kommentteja sisältävissä raporteissa
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
-[Käyttöopas](user-handbook-overview.md)  
+[Mikä onPower BI -raporttipalvelin?](get-started.md) 
 [Järjestelmänvalvojien opas](admin-handbook-overview.md)  
-[Pikaopas: Power BI -raporttipalvelimen asentaminen](quickstart-install-report-server.md)  
+[Power BI -raporttipalvelimen asentaminen](install-report-server.md)  
 [Raportin muodostimen asentaminen](https://docs.microsoft.com/sql/reporting-services/install-windows/install-report-builder)  
 [SQL Server Data Tools (SSDT) -työkalujen lataaminen](http://go.microsoft.com/fwlink/?LinkID=616714)
 

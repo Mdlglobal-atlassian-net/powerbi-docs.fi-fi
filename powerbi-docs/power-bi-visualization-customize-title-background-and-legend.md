@@ -1,32 +1,24 @@
 ---
-title: Power BI-visualisointien muotoilun aloittaminen (opetusohjelma)
-description: 'Opetusohjelma: visualisoinnin otsikon, taustan ja selitteen muokkaaminen'
-services: powerbi
-documentationcenter: ''
+title: Power BI -visualisointien muotoilun aloittaminen
+description: Visualisoinnin otsikon, taustan ja selitteen muokkaaminen
 author: mihart
 manager: kfile
-backup: ''
-editor: ''
+ms.reviewer: ''
 featuredvideoid: IkJda4O7oGs
-tags: ''
-qualityfocus: monitoring
-qualitydate: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-desktop
+ms.topic: conceptual
 ms.date: 01/22/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: e81f4e9ede3591accc94576291179b4fd40215e5
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: d65281539bcc27ce24971a6da0945908ba65e754
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/24/2018
-ms.locfileid: "30973957"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34297097"
 ---
-# <a name="customize-visualization-titles-legends-and-backgrounds-tutorial"></a>Mukauta visualisoinnin otsikoita, selitteitä ja taustoja (opetusohjelma)
+# <a name="customize-visualization-titles-legends-and-backgrounds"></a>Mukauta visualisoinnin otsikoita, selitteitä ja taustoja
 Tässä opetusohjelmassa opit mukauttamaan visualisointeja muutamalla eri tavalla.   Visualisointien mukauttamiseen on runsaasti vaihtoehtoja, joten paras tapa tutustua niihin kaikkiin on tutustua Muotoilu-ruutuun (valitse maalaustelan kuvake).  Jotta pääset alkuun, tässä artikkelissa kerrotaan, miten voit mukauttaa visualisoinnin otsikkoa, selitettä ja taustaa.  
 
 Kaikkia visualisointeja ei voi mukauttaa, [katso täydellinen luettelo](#list).  

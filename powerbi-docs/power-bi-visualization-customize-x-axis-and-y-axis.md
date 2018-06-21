@@ -1,32 +1,24 @@
 ---
-title: X- ja Y-akselin ominaisuuksien muokkaaminen (opetusohjelma)
-description: 'Opetusohjelma: X- ja Y-akselin ominaisuuksien muokkaaminen'
-services: powerbi
-documentationcenter: ''
+title: X- ja Y-akselin ominaisuuksien muokkaaminen
+description: X- ja Y-akselin ominaisuuksien muokkaaminen
 author: mihart
 manager: kfile
-backup: ''
+ms.reviewer: ''
 featuredvideoid: 9DeAKM4SNJM
-editor: ''
-tags: ''
-qualityfocus: complete
-qualitydate: 05/16/2017
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-desktop
+ms.topic: conceptual
 ms.date: 01/20/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: d4156429b728718fa89131a46ebd0f5dd5aabf67
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 372f00e7bd62068688bdcc22c1e983c3fe629f8a
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/24/2018
-ms.locfileid: "30974512"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34295694"
 ---
-# <a name="customize-x-axis-and-y-axis-properties-tutorial"></a>X- ja Y-akselin ominaisuuksien muokkaaminen (opetusohjelma)
+# <a name="customize-x-axis-and-y-axis-properties"></a>X- ja Y-akselin ominaisuuksien muokkaaminen
 Tässä opetusohjelmassa käydään läpi monia tapoja mukauttaa X-akselia ja Y-akselia visualisoinneissa. Kaikissa visualisoinneissa ei ole akseleita, tai niitä ei voi mukauttaa; esimerkiksi ympyräkaaviossa ei ole akseleita. Mukautusasetukset vaihtelevat myös visualisoinnista riippuen, joten yksi artikkeli ei riitä kaikkien vaihtoehtojen läpikäymiseen. Tämä artikkeli tarjoaa yleiskatsauksen useimmin käytettyihin akselien mukautuksiin ja visualisoinnin muotoiluvälilehteen Power BI -raporttipohjassa.  
 
 > [!NOTE]

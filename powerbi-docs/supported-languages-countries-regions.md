@@ -1,29 +1,21 @@
 ---
 title: Power BI:n tuetut kielet ja maat tai alueet
 description: Katso luettelot Power BI -palvelun, Power BI Desktopin ja Power BI:n dokumentaation tuetuista kielistä ja maista tai alueista.
-services: powerbi
-documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: get-started-article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 03/20/2018
+ms.component: powerbi-service
+ms.topic: conceptual
+ms.date: 04/13/2018
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: 0ca6a21e67e7ab1d2a0c0daa8da07052041db139
-ms.sourcegitcommit: fe859130099d923ee30da6091efcc70a264dcba6
+ms.openlocfilehash: 14890d93261c12e16756c8f65d9273d954f673dd
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/28/2018
-ms.locfileid: "30975972"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34256698"
 ---
 # <a name="supported-languages-and-countriesregions-for-power-bi"></a>Power BI:n tuetut kielet ja maat tai alueet
 
@@ -154,9 +146,9 @@ Riippumatta siitä, lataatko Power BI Desktopin vai asennatko sen Windows-kaupas
 
 1. Siirry Power BI Desktopissa kohtaan **Tiedosto** > **Asetukset ja vaihtoehdot** > **Asetukset**.
 2. Valitse kohdassa **Nykyinen tiedosto** **Aluekohtaiset asetukset**.
-3. Valitse **Aluekohtaiset asetukset** -ruudusta muut aluekohtaiset asetukset. 
+3. Valitse **Tuonnin aluekohtainen asetus** -ruudusta muu aluekohtainen asetus. 
    
-   ![Power BI Desktopin Asetukset-valintaikkuna](media/supported-languages-countries-regions/pbi_supptdlangs_locale.png)
+   ![Power BI Desktopin Asetukset-valintaikkuna](media/supported-languages-countries-regions/power-bi_supptdlangs-locale.png)
 4. Valitse **OK**.
 
 ### <a name="choose-the-language-for-the-model-in-power-bi-desktop"></a>Power BI Desktopin mallin kielen valitseminen
@@ -166,6 +158,11 @@ Power BI Desktop -sovelluksen kieliasetuksen lisäksi voit määrittää myös m
 - merkkijonojen vertailuun ja lajitteluun. Esimerkiksi koska turkin kielessä on kaksi i-kirjainta, ne voidaan lajitella eri järjestykseen tietokantasi lajittelun mukaan. 
 - Kieli, jota Power BI Desktop käyttää luodessaan piilotettuja päivämäärätaulukoita päivämääräkentistä. Kentän nimi voi olla esimerkiksi Kuukausi/Monat/Mois jne.
 
+> [!NOTE]
+> Power BI:n malli käyttää tällä hetkellä aluekohtaista asetusta, jossa kirjainkoko ei ole merkitsevä, joten ”ABC” ja ”abc” käsitellään toisiaan vastaavina. Jos ”ABC”ladataan tietokantaan ensin, muita merkkijonoja, jotka eroavat vain kirjainkooltaan (esim. ”Abc”), ei ladata erillisenä arvona.
+> 
+>
+
 Voit määrittää mallin kielen seuraavien ohjeiden mukaan.
 
 1. Siirry Power BI Desktopissa kohtaan **Tiedosto** > **Asetukset ja vaihtoehdot** > **Asetukset**.
@@ -174,6 +171,10 @@ Voit määrittää mallin kielen seuraavien ohjeiden mukaan.
 
     ![Mallin kielen määrittäminen Power BI Desktopissa](media/supported-languages-countries-regions/power-bi-supported-model-languages.png)
 
+> [!NOTE]
+> Power BI -mallin kieltä ei voi vaihtaa luonnin jälkeen.
+> 
+>
 
 ## <a name="languages-for-the-help-documentation"></a>Ohjeen kielet
 Ohje on lokalisoitu näille 10 kielelle: 

@@ -1,29 +1,21 @@
 ---
 title: Korttivisualisoinnit (eli suurten lukujen ruudut)
 description: Kortin visualisoinnin luominen Power BI:ssä
-services: powerbi
-documentationcenter: ''
 author: mihart
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 12/24/2017
+ms.component: powerbi-desktop
+ms.topic: conceptual
+ms.date: 03/26/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: f38f3bb19be268cba4745c88aa98d09c080c773e
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: ebf66b041a65c3b9f1e7c8a3a69ac4121970a5bd
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/24/2018
-ms.locfileid: "30973927"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34294751"
 ---
 # <a name="card-visualizations"></a>Kortin visualisoinnit
 Joskus yksittäinen luku on tärkein seikka, jota haluat seurata Power BI-raporttinäytöllä tai raportissa, kuten kokonaismyynti, markkinaosuus vuositasolla tai kokonaismahdollisuudet. Tämä visualisointi on nimeltään *Kortti*. Samoin kuin lähes kaikki alkuperäiset Power BI-visualisoinnit, kortit voidaan luoda käyttäen raporttieditoria tai Q&A:ta.
@@ -46,7 +38,7 @@ Näissä ohjeissa käytetään jälleenmyyntianalyysimallia. Jos haluat seurata 
    ![](media/power-bi-visualization-card/power-bi-pin-icon.png)
 7. Kiinnitä ruutu aiemmin luotuun koontinäyttöön tai uuteen koontinäyttöön.
 
-   * Aiemmin luotu koontinäyttö: valitse avattavasta luetteloruudusta koontinäytön nimi.
+   * Aiemmin luotu raporttinäkymä: valitse raporttinäkymän nimi avattavasta luettelosta.
    * Uusi koontinäyttö: anna nimi uudelle koontinäytölle.
 8. Valitse **Kiinnitä**.
 
@@ -92,6 +84,25 @@ Q&A-kysymysruutu on helpoin tapa tehdä kortti. Q&A-kysymysruutu on käytettävi
 - Jos kysymysruutu ei näy ollenkaan, ota yhteyttä järjestelmän tai vuokraajan järjestelmänvalvojaan.    
 - Jos käytössäsi on Desktop ja kaksoisnapsauttamalla tyhjää tilaa raportti ei avaa Q&A:a, voit joutua ottamaan sen käyttöön.  Valitse **Tiedosto > Asetukset ja vaihtoehdot > Asetukset > Esiversio-ominaisuudet > Q&A** ja käynnistä Desktop uudelleen.
 
+## <a name="format-a-card"></a>Muotoile kortti
+Käytössäsi on monia vaihtoehtoja otsikoiden, tekstin, värin ja monien muiden ominaisuuksien muuttamiseen. Opit parhaiten luomalla kortin ja tutustumalla sitten Muotoilu-ruutuun. Tässä on joitakin käytössäsi olevista muotoiluasetuksista. 
+
+1. Aloita avaamalla muotoiluruutu valitsemalla sivellinkuvake. 
+
+    ![](media/power-bi-visualization-card/power-bi-format-card.png)
+2. Laajenna **Arvopisteen otsikko** ja muuta väriä, kokoa ja fonttiperhettä. Jos sinulla olisi tuhansia myymälöitä, voisit käyttää **Näytä yksiköt** -toimintoa näyttääksesi myymälöiden määrän tuhansina ja hallitaksesi myös desimaalien määrää. Voit näyttää 125 832,00:n sijaan esimerkiksi 125,8 k.
+
+3.  Laajenna **Luokan nimi** ja muuta väriä ja kokoa.
+
+    ![](media/power-bi-visualization-card/power-bi-card-format.png)
+
+4. Laajenna **Tausta** ja siirrä liukusäädin Käytössä-asentoon.  Nyt voit muuttaa taustaväriä ja läpinäkyvyyttä.
+
+    ![](media/power-bi-visualization-card/power-bi-format-color.png)
+
+5. Jatka muotoiluasetusten tutkimista, kunnes kortti näyttää juuri siltä kuin haluat. 
+
+    ![](media/power-bi-visualization-card/power-bi-formatted.png)
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 [Koontinäyttöruudut Power BI:ssä](service-dashboard-tiles.md)

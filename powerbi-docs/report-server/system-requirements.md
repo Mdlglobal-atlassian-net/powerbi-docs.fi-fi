@@ -1,28 +1,20 @@
 ---
 title: Laitteisto- ja ohjelmistovaatimukset Power BI-raporttipalvelimen asentamista varten
 description: Täältä löydät laitteistoa ja ohjelmistoa koskevat vähimmäisvaatimukset Power BI-raporttipalvelimen asentamiseen ja suorittamiseen.
-services: powerbi
-documentationcenter: ''
 author: markingmyname
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 11/01/2017
+ms.component: powerbi-report-server
+ms.topic: conceptual
+ms.date: 05/18/2018
 ms.author: maghan
-ms.openlocfilehash: 44a1af1553aaa28a5f4abab13bad1fafa040003a
-ms.sourcegitcommit: 6e693f9caf98385a2c45890cd0fbf2403f0dbb8a
+ms.openlocfilehash: 3b0e9c148b86d8bf762a31cca5c3421df454502d
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/30/2018
-ms.locfileid: "30973197"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34481724"
 ---
 # <a name="hardware-and-software-requirements-for-installing-power-bi-report-server"></a>Laitteisto- ja ohjelmistovaatimukset Power BI-raporttipalvelimen asentamista varten
 Täältä löydät laitteistoa ja ohjelmistoa koskevat vähimmäisvaatimukset Power BI-raporttipalvelimen asentamiseen ja suorittamiseen.
@@ -66,7 +58,7 @@ Power BI-raporttipalvelin asentaa oletusarvot raporttipalvelimen ydinasetusten m
  Raporttipalvelin voidaan asentaa ympäristöön, jossa on Vain luku-toimialueen ohjain (RODC), mutta Reporting Services tarvitsee käyttöoikeuden luku- ja kirjoitus-toimialueen ohjaimelle toimiakseen oikein. Jos Reporting Services sisältää vain RODC-käyttöoikeuden, voi tulla virheitä, kun yrität hallita palvelua.
 
 ## <a name="power-bi-reports-and-analysis-services-live-connections"></a>Reaaliaikaisten Power BI -raporttien ja Analysis Services -yhteyksien käyttäminen
-Voit käyttää reaaliaikaista yhteyttä taulukkomuotoisiin tai moniulotteisiin esiintymiin. Analysis Services -palvelin on minulle oikea versio- ja se toimii oikein.
+Voit käyttää reaaliaikaista yhteyttä taulukkomuotoisiin tai moniulotteisiin esiintymiin. Analysis Services -palvelimen version on oltava oikea, jotta se toimii oikein.
 
 | **Palvelinversio** | **Pakollinen SKU** |
 | --- | --- |
@@ -75,9 +67,9 @@ Voit käyttää reaaliaikaista yhteyttä taulukkomuotoisiin tai moniulotteisiin 
 | 2016 tai uudemmat |Standard SKU tai uudempi versio |
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
-[Käyttöopas](user-handbook-overview.md)  
-[Järjestelmänvalvojien opas](admin-handbook-overview.md)  
-[Pikaopas: Power BI -raporttipalvelimen asentaminen](quickstart-install-report-server.md)  
+[Mikä on Power BI -raporttipalvelin?](get-started.md)  
+[Järjestelmänvalvojan yleiskatsaus](admin-handbook-overview.md)  
+[Power BI -raporttipalvelimen asentaminen](install-report-server.md)  
 [Raportin muodostimen asentaminen](https://docs.microsoft.com/sql/reporting-services/install-windows/install-report-builder)  
 [SQL Server Data Tools (SSDT) -työkalujen lataaminen](http://go.microsoft.com/fwlink/?LinkID=616714)
 

@@ -1,67 +1,59 @@
 ---
 title: Kooltaan muokattavan reagoivan osittajan luominen Power BI:ssa
 description: Lue, miten voit luoda reagoivan osittajan, jonka kokoa voidaan muokata sopimaan raporttiin.
-services: powerbi
-documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 12/08/2017
+ms.component: powerbi-desktop
+ms.topic: conceptual
+ms.date: 05/04/2018
 ms.author: maggies
 LocalizationGroup: Create reports
-ms.openlocfilehash: 2ab907dd15e43892147967902fbb94d09ef4125b
-ms.sourcegitcommit: 00b4911ab5fbf4c2d5ffc000a3d95b3149909c28
+ms.openlocfilehash: d5d57525e8aab3a3f7bfa1806661c4bf6e3ff981
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/15/2018
-ms.locfileid: "30975327"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34293877"
 ---
-# <a name="create-a-responsive-slicer-you-can-resize-in-power-bi-preview"></a>Kooltaan muokattavan reagoivan osittajan luominen Power BI:ssa (esikatselu)
+# <a name="create-a-responsive-slicer-you-can-resize-in-power-bi"></a>Kooltaan muokattavan reagoivan osittajan luominen Power BI:ssa
 
 Reagoivien osittajien kokoa voidaan muuttaa mihin tahansa raportin tilaan sopivaksi. Reagoivan osittajan avulla, voit muuttaa niiden kokoa eri kokoihin ja muotoihin, vaakasuuntaisesta pystysuuntaiseksi ja nelikulmaiseksi, ja osittajan arvot järjestävät itsensä kuin sinä. Power BI Desktopin ja Power BI -palvelun avulla voit saada aikaan vaakasuuntaisia osittajia ja reagoivia päivämäärä/alueosittajia. Päivämäärä-/alueosittajilla on myös parannetut kosketusalueet, joten niiden muuttaminen on helpompaa sormenpäällä. Voit tehdä reagoivista osittajista niin pieni tai suuria kuin haluat. Ne myös muuttuvat kooltaan automaattisesti sopimaan hyvin raportteihin Power BI -palvelussa ja Power BI -mobiilisovelluksissa. 
 
-![Reagoivilla osittajilla voi olla erilaisia muotoja](media/power-bi-slicer-filter-responsive/responsive-slicer-gif.gif)
+![Reagoivilla osittajilla voi olla erilaisia muotoja](media/power-bi-slicer-filter-responsive/power-bi-slicer-filter-responsive-0-slicer.gif)
 
 ## <a name="create-a-slicer"></a>Osittajan luominen
 
 Ensimmäinen vaihe dynaamisen osittajan luomisessa on perusosittajan luominen. 
 
-1. Valitse **Osittaja**-kuvake ![](media/power-bi-slicer-filter-responsive/power-bi-slicer-icon.png) **Visualisoinnit**-ruudusta.
+1. Valitse **Osittaja**-kuvake ![](media/power-bi-slicer-filter-responsive/power-bi-slicer-filter-responsive-0-slicer-icon.png) **Visualisoinnit**-ruudusta.
 2. Vedä kenttä, jonka haluat suodattaa, kohtaan **Kenttä**.
 
-    ![Kentän lisääminen osittajaan](media/power-bi-slicer-filter-responsive/power-bi-slicer-field.png)
+    ![Kentän lisääminen osittajaan](media/power-bi-slicer-filter-responsive/power-bi-slicer-filter-responsive-1-create.png)
 
 ## <a name="convert-to-a-horizontal-slicer"></a>Vaakasuuntainen osittajan muuntaminen
 
 1. Kun olet valinnut osittajan, tuo muotoiluasetukset näkyviin valitsemalla **Visualisoinnit**-ruudusta **Muotoile**-välilehti.
 2. Laajenna **Yleinen**-osaa ja sitten valitse kohdasta **Suunta** **vaakasuuntainen**.
 
-    ![Osittajan määrittäminen vaakasuuntaiseksi](media/power-bi-slicer-filter-responsive/power-bi-slicer-horizontal.png) 
+    ![Osittajan määrittäminen vaakasuuntaiseksi](media/power-bi-slicer-filter-responsive/power-bi-slicer-filter-responsive-2-horizontal.png) 
 
 1.  Luultavasti haluat tehdä siitä leveämmän, jotta voit näyttää enemmän arvoja.
 
-     ![Osittajan leventäminen](media/power-bi-slicer-filter-responsive/power-bi-slicer-wide-horizontal.png)
+     ![Osittajan leventäminen](media/power-bi-slicer-filter-responsive/power-bi-slicer-filter-responsive-3-wider.png)
 
 ## <a name="make-it-responsive-and-experiment-with-it"></a>Tee siitä reagoiva ja tee sillä kokeita
 
 Tämä on helppo vaihe. 
 
-1. Hetki kohdan **Suunta** alla **Yleiset**-osassa **Muoto** -välilehdessä työnnä **Reagoiva (esikatselu)** asentoon **On** .  
+1. Työnnä **Suunta**-kohdan alla **Yleiset**-osassa **Muoto**-välilehdessä **Reagoiva** asentoon **Käytössä**.  
 
-    ![Osittaja on nyt reagoiva](media/power-bi-slicer-filter-responsive/power-bi-slicer-wide-responsive.png)
+    ![Osittaja on nyt reagoiva](media/power-bi-slicer-filter-responsive/power-bi-slicer-filter-responsive-4-responsive-on.png)
 
 1. Nyt voit muokata sitä. Lyhennä, pidennä, levennä tai kavenna sitä vetämällä kulmista. Jos pienennät sitä riittävästi, siitä tulee pelkkä suodatinkuvake.
 
-    ![Niin pieni reagoiva osittaja, että se on suodatinkuvake](media/power-bi-slicer-filter-responsive/power-bi-slicer-small-filter-icon.png)
+    ![Niin pieni reagoiva osittaja, että se on suodatinkuvake](media/power-bi-slicer-filter-responsive/power-bi-slicer-filter-responsive-5-mini-icon.png)
 
 ## <a name="add-it-to-a-phone-report-layout"></a>Lisääminen puhelinraporttiasetteluun
 
@@ -69,11 +61,11 @@ Power BI Desktopissa voit luoda puhelinasettelun raportin jokaista sivua varten.
 
 1. Valitse **Näkymä**-valikosta **Puhelinasettelu**.
 
-     ![Puhelinasettelun kuvake, Näkymä-valikko](media/power-bi-slicer-filter-responsive/power-bi-phone-layout-menu.png)
+     ![Puhelinasettelun kuvake, Näkymä-valikko](media/power-bi-slicer-filter-responsive/power-bi-slicer-filter-responsive-6-phone-layout-button.png)
     
 1. Vedä kaikki puhelinraporttiin haluamasi visualisoinnit ruudukkoon. Kun vedät reagoivaa osittajaa, tee siitä haluamasi kokoinen, tässä tapauksessa vain suodatin-kuvakkeen kokoinen.
 
-    ![Osittajan lisääminen puhelinraporttiasetteluun](media/power-bi-slicer-filter-responsive/power-bi-slicer-phone-layout.png)
+    ![Osittajan lisääminen puhelinraporttiasetteluun](media/power-bi-slicer-filter-responsive/power-bi-slicer-filter-responsive-7-phone-slicer-icon.png)
 
 Lue lisää, kuinka luodaan [raportteja, jotka on optimoitu Power BI-mobiilisovelluksille](desktop-create-phone-report.md).
 
@@ -88,5 +80,5 @@ Voit seurata samoja vaiheita tehdessäsi ajan tai alueen osittajan reagoivaksi. 
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
-- [Opetusohjelma: Osittajat Power BI -palvelussa](power-bi-visualization-slicers.md)
-- Onko sinulla muuta kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)
+- [Osittajat Power BI -palvelussa](power-bi-visualization-slicers.md)
+- Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)

@@ -1,29 +1,21 @@
 ---
 title: Vinkkejä laadukkaiden Power BI -koontinäyttöjen suunnitteluun
 description: Vinkkejä laadukkaiden Power BI -koontinäyttöjen suunnitteluun
-services: powerbi
-documentationcenter: ''
 author: mihart
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 03/02/2018
+ms.component: powerbi-service
+ms.topic: conceptual
+ms.date: 03/22/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 769d669f00c87e6139d8ff2cb8640739d09edf7a
-ms.sourcegitcommit: 5e1f7d2673efe25c47b9b9f315011055bfe92c8f
+ms.openlocfilehash: 9c67aa0982733847cdca7d6079fa8887e6c1d1d2
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/09/2018
-ms.locfileid: "29924953"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34247043"
 ---
 # <a name="tips-for-designing-a-great-power-bi-dashboard"></a>Vinkkejä laadukkaiden Power BI -koontinäyttöjen suunnitteluun
 Nyt kun olet luonut koontinäytön ja lisännyt siihen ruutuja, mieti, miten voisit parantaa sen toiminnallisuutta. Yleensä tämä tarkoittaa tärkeimpien tietojen korostamista ja koontinäytön selkeyttämistä.
@@ -32,25 +24,28 @@ Tässä on joitakin vihjeitä.
 
 > [!TIP]
 > Useimpia raporttien suunnittelukäytäntöjä voi soveltaa myös koontinäyttöihin.  Lue tekninen raportti [Raporttien ja visualisointien parhaat suunnittelukäytännöt](power-bi-visualization-best-practices.md).
-> 
-> 
+>
+>
 
-### <a name="consider-your-audience"></a>Mieti yleisöäsi
+## <a name="watch-the-dashboard-makeover-webinarhttpsinfomicrosoftcomco-powerbi-wbnr-fy16-05may-12-dashboard-makeover-registrationhtml"></a>Katso [koontinäyttöjä käsittelevä verkkoseminaari](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-05May-12-Dashboard-Makeover-Registration.html)
+Siitä näet, miten Microsoftin ohjelmajohtaja ja Power BI -koontinäyttöjen asiantuntija Marc Reguera [uudistaa koontinäyttöjä](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-05May-12-Dashboard-Makeover-Registration.html).
+
+## <a name="consider-your-audience"></a>Mieti yleisöäsi
 Mitä ovat tärkeimpiä mittareita, jotka auttavat heitä tekemään päätöksiä? Miten koontinäyttöä käytetään? Mitkä opitut tai kulttuuriset olettamat saattavat vaikuttaa visualisointivalintoihin? Mitä tietoja yleisö tarvitsee onnistumiseen ja menestymiseen?
 
 Koontinäyttö on yhteenveto tietojen nykyisestä tilasta. Koontinäyttö perustuu pohjana oleviin raportteihin ja tietojoukkoihin, jotka voivat sisältää paljon tietoja. Lukijat voivat siirtyä raportteihin koontinäytöstä. Älä siis sijoita yksityiskohtia koontinäyttöön, ellet halua lukijoiden keskittyvän juuri niihin.
 
 Missä koontinäyttöä näytetään? Jos sitä näytetään suurikokoisessa näytössä, siihen voi lisätä paljon sisältöä. Jos käyttäjät tarkastelevat sitä tableteillaan, pienempi määrä ruutuja parantaa luettavuutta.
 
-### <a name="tell-a-story-and-keep-it-to-one-screen"></a>Tiivistä tarinasi yhteen näyttöön
+## <a name="tell-a-story-and-keep-it-to-one-screen"></a>Tiivistä tarinasi yhteen näyttöön
 Koska koontinäytöt on tarkoitettu tärkeiden tietojen tarkasteluun yhdellä silmäyksellä, kaikki ruudut yhdessä näytössä toimii parhaiten. Voitko välttää vierityspalkkien käyttämisen koontinäytössä?
 
 Onko koontinäyttö sekava?  Poista kaikki muut paitsi olennaisimmat tiedot, joita voi lukea ja tulkita helposti.
 
-### <a name="make-use-of-full-screen-mode"></a>Käytä koko näytön tilaa
+## <a name="make-use-of-full-screen-mode"></a>Käytä koko näytön tilaa
 Näytä koontinäyttö [koko näytön tilassa ](service-fullscreen-mode.md) ilman häiriötekijöitä.
 
-### <a name="make-the-most-important-information-biggest"></a>Näytä tärkeimmät tiedot suurimmassa koossa
+## <a name="make-the-most-important-information-biggest"></a>Näytä tärkeimmät tiedot suurimmassa koossa
 Jos koontinäytön teksti ja visualisoinnit ovat kaikki samaa kokoa, lukijan on vaikea keskittyä tärkeimpään asiaan. Esimerkiksi korttivisualisoinnit ovat hyvä tapa esittää tärkeitä lukuja näkyvästi:  
 ![Korttivisualisointi](media/service-dashboards-design-tips/pbi_card.png)
 
@@ -58,10 +53,10 @@ Muista tarjota konteksti.
 
 Lue lisätietoja [vain luvun sisältävän ruudun luonnista](power-bi-visualization-card.md).
 
-### <a name="put-the-most-important-information-in-the-upper-corner"></a>Sijoita tärkeimmät tiedot yläkulmaan
+## <a name="put-the-most-important-information-in-the-upper-corner"></a>Sijoita tärkeimmät tiedot yläkulmaan
 Useimmat henkilöt lukevat ylhäältä alas, joten sijoita tärkein tieto ylös ja näytä lisää yksityiskohtia katsojan lukusuunnan mukaisesti (vasemmalta oikealle, oikealta vasemmalle).
 
-### <a name="use-the-right-visualization-for-the-data-and-format-it-for-easy-reading"></a>Käytä tiedolle juuri oikeaa visualisointia ja muotoile se vaivattomasti luettavaksi
+## <a name="use-the-right-visualization-for-the-data-and-format-it-for-easy-reading"></a>Käytä tiedolle juuri oikeaa visualisointia ja muotoile se vaivattomasti luettavaksi
 Vältä erilaisten visualisointien lisäämistä vain vaihtelun vuoksi.  Visualisointien pitäisi maalata tietty kuva, joka on helppo sisäistää ja ymmärtää.  Joillekin tiedoille ja visualisoinneille riittää hyvin yksinkertainen grafiikka. Jotkin muut tiedot edellyttävät monimutkaisempaa visualisointia. Muista silloin käyttää otsikoita, nimiä ja muita lukijaa auttavia mukautuksia.  
 
 * [Valitse asianmukaiset tietojen visualisoinnit](http://blogs.msdn.com/b/microsoft_business_intelligence1/archive/2012/10/08/best-practices-in-data-visualization.aspx). Suhtaudu varoen todellisuutta vääristäviin kaavioihin, kuten 3D-kaavioihin. Pidä mielessä, että ympyrämuotojen tulkitseminen on ihmisaivoille vaativaa. Ympyräkaaviot, rengaskaaviot, mittarit ja muut pyöreät kaaviotyypit ovat hienoja, mutta ne eivät ole paras vaihtoehto tietojen visualisointiin.
@@ -85,7 +80,6 @@ Koontinäyttöjen rakenne liittyy läheisesti yleisiin hahmottamisen ja ryhmitte
 * Andrew Abela: *Advanced Presentations by Design*   
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
-[Koontinäytöt Power BI:ssä](service-dashboards.md)  
+[Koontinäytön luominen raportista](service-dashboard-create.md)  
 [Power BI:n peruskäsitteet](service-basic-concepts.md)  
 Onko sinulla muuta kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
-

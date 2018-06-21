@@ -1,39 +1,22 @@
 ---
-title: 'Virhe: '
-need: ''
-to: ''
-update: ''
-android: ''
-system: ''
-webview": ''
-'-': ''
-power: ''
-bi": ''
+title: Android System Webview pitää päivittää -ongelman korjaaminen – Power BI
 description: Kun kirjaudut sisään Android-mobiilisovellukseen, saatat saada sanoman, että sinun on päivitettävä Android System Webview.
-services: powerbi
-documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 10/13/2017
+ms.component: powerbi-mobile
+ms.topic: conceptual
+ms.date: 05/18/2018
 ms.author: maggies
-ms.openlocfilehash: 1a478d8465f05fcc4218d049101c239ed5559fc9
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: 143d3c2a48ca6dbe6ca39f4a097e45654accaa04
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/13/2017
-ms.locfileid: "30972097"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34721244"
 ---
-# <a name="error-need-to-update-android-system-webview---power-bi"></a>Virhe: ”Android System Webview pitää päivittää” - Power BI
+# <a name="fixing-need-to-update-android-system-webview"></a>Android System Webview pitää päivittää -ongelman korjaaminen
 Kun kirjaudut sisään Microsoft Power BI:n Android-mobiilisovellukseen, saatat saada sanoman, että sinun on päivitettävä Android System Webview. 
 
 Oletetaan, että menet Google Play -kauppaan ja päivität Android System Webview’n, jonka jälkeen siirryt takaisin ja yrität avata Power BI -mobiilisovelluksen uudelleen. 
@@ -48,5 +31,5 @@ Sinun pitääkin itse asiassa päivittää Chrome-sovellus.
 ## <a name="next-steps"></a>Seuraavat vaiheet
 * [Lataa Android-sovellus](http://go.microsoft.com/fwlink/?LinkID=544867) Androidin sovelluskaupasta.
 * [Power BI:n käytön aloittaminen](service-get-started.md)
-* Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)
+* Onko sinulla kysymyksiä? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)
 

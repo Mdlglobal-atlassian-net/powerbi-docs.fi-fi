@@ -1,33 +1,25 @@
 ---
-title: 'Osa I: Visualisointien lisääminen Power BI -raporttiin (opetusohjelma)'
-description: 'Opetusohjelma: visualisointien lisääminen Power BI -raporttiin (osa 1)'
-services: powerbi
-documentationcenter: ''
+title: Visualisointien lisääminen Power BI -raporttiin, osa 1
+description: Visualisointien lisääminen Power BI -raporttiin, osa 1
 author: mihart
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
+ms.reviewer: ''
 featuredvideoid: IkJda4O7oGs
-qualityfocus: no
-qualitydate: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 01/08/2018
+ms.component: powerbi-desktop
+ms.topic: conceptual
+ms.date: 03/23/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: b81061c25b453fc35e1490c3ded2d9c9770d4599
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 2203d6af692e80ffe5480a81a0e0f2312c62b905
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/24/2018
-ms.locfileid: "30973747"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34293762"
 ---
-# <a name="part-i-add-visualizations-to-a-power-bi-report-tutorial"></a>Osa I: Visualisointien lisääminen Power BI -raporttiin (opetusohjelma)
-Tässä artikkelissa annetaan lyhyt esittely visualisointien lisäämisestä raporttiin.  Katso lisätietoja edistyneemmästä sisällöstä [osasta II](power-bi-report-add-visualizations-ii.md). Katso kuinka Amanda esittelee joitakin eri tapoja, joilla raportille voidaan luoda visualisointeja ja kuinka niitä voidaan muokata ja muotoilla. Voit sitten kokeilla itse luomalla oman raportin [Myynti- ja markkinointimallista](sample-datasets.md).
+# <a name="part-i-add-visualizations-to-a-power-bi-report"></a>Visualisointien lisääminen Power BI -raporttiin, osa 1
+Tässä artikkelissa annetaan lyhyt esittely visualisointien lisäämisestä raporttiin joko Power BI -palvelulla tai Power BI Desktopilla.  Katso lisätietoja edistyneemmästä sisällöstä [osasta II](power-bi-report-add-visualizations-ii.md). Katso kuinka Amanda esittelee joitakin eri tapoja, joilla raportille voidaan luoda visualisointeja ja kuinka niitä voidaan muokata ja muotoilla. Voit sitten kokeilla itse luomalla oman raportin [Myynti- ja markkinointimallista](sample-datasets.md).
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/IkJda4O7oGs" frameborder="0" allowfullscreen></iframe>
 

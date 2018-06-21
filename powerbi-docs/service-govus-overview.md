@@ -1,29 +1,21 @@
 ---
 title: Power BI Yhdysvaltain valtionhallinnon asiakkaille - Yleiskuvaus
 description: Lisätietoja Yhdysvaltain valtionhallinnon asiakkaille Power BI US Government-palvelun ominaisuuksista ja rajoituksista
-services: powerbi
-documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 02/05/2018
+ms.component: powerbi-service
+ms.topic: conceptual
+ms.date: 06/02/2018
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: b3682deb1897647a7de6f32dc87a4d7ed8bc2c9f
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: e676ef85d982a59b7058bce9e6467e8482b7aa62
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/24/2018
-ms.locfileid: "29706910"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34722687"
 ---
 # <a name="power-bi-for-us-government-customers"></a>Power BI Yhdysvaltain valtionhallinnon asiakkaille
 **Power BI-palvelulla** on versio, joka on saatavilla Yhdysvaltain valtionhallinnon asiakkaille osana **Office 365 US Government Community** -tilauksia. Tässä artikkelissa kuvattu **Power BI -palvelun** versio on suunniteltu erityisesti Yhdysvaltain valtionhallinnon asiakkaille ja on erillinen ja erilainen kuin **Power BI -palvelun** kaupallinen versio.
@@ -62,10 +54,12 @@ Julkisessa pilvessä IP-tilat ovat saatavilla, mutta valtionhallinnon pilven osa
 ## <a name="limitations-of-power-bi-us-government"></a>Power BI US Governmentin rajoitukset
 Jotkin ominaisuudet, jotka ovat saatavilla **Power BI -palvelun** kaupallisessa versiossa, *eivät* ole saatavilla **Power BI -palvelussa** Yhdysvaltain valtionhallinnon asiakkaille. Power BI -tiimi pyrkii aktiivisesti saamaan nämä ominaisuudet Yhdysvaltain valtionhallinnon asiakkaille ja päivittää tämän artikkelin tiedot, kun nämä ominaisuudet tulevat saataville.
 
+* **Upottaminen SharePoint Onlinessa** - sisällön upottaminen ei ole mahdollista SharePoint Onlinen Power BI -verkko-osaa käyttämällä.
 * **Power BI US Government** on saatavilla vain **Pro**-käyttöoikeutena. Hallintaportaalin viittaukset Power BI (maksuton) -käyttöoikeuksiin (tai käyttäjinä) suoritetaan kaupallisessa Power BI -palvelun pilvessä.
-* **Valvonta** – valvontaa ei ole saatavilla Office 365:n tietoturva ja yhteensopivuus -portaalin kautta.
+* **Valvonta** – valvonta on saatavilla Office 365:n tietoturva ja yhteensopivuus -portaalin kautta, alkaen kesäkuussa 2018.
 * **Power BI -sisältö Cortanassa** – Power BI:n tulokset eivät näy Cortanan hakutuloksissa. Tämä sisältää Power BI -sisällön (koontinäytöt, raportit, sovellukset) tulokset sekä tulokset, jotka näyttävät Cortanalle optimoidut raporttisivujen avainsanat.
-* **Ulkoisen käyttäjän jakaminen** – jakaminen on sallittua vain Power BI -vuokralaisessa. Et voi jakaa käyttäjien kanssa Power BI -vuokraajan ulkopuolella.
+* **Ulkoisen käyttäjän kanssa jakaminen** – jakaminen on sallittua Power BI -vuokralaisen sisällä, ja alkaen kesäkuussa 2018 voita jakaa myös Power BI -vuokraajan ulkopuolisten käyttäjien kanssa.
+* **Raporttinäkymien ja raporttien käyttötilastot** – käyttötilastot eivät ole käytettävissä raporteille ja raporttinäkymille. Asiakkaat voivat käyttää valvontalokitietoja saadakseen organisaation sisäisen sisällön käyttötietoja.
 
 Jos sinulla on maksuttomia **Power BI** -käyttöoikeuksia määritettynä tilillesi, kyseiset tilit toimivat kaupallisessa**Power BI** -palvelun versiossa, joten ne ovat eivät ole osa **Power BI US Government** -tarjontaa. Voit kohdata seuraavia ongelmia maksuttomissa tileissä:
 
@@ -100,11 +94,11 @@ Seuraavat kysymykset (ja vastaukset) on toimitettu auttamaan sinua saamaan tarvi
 | https://app.powerbi.com/ |[https://app.powerbigov.us](https://app.powerbigov.us) |
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
-Voit tehdä kaikenlaista Power BI:llä. Saat lisätietoja ja kursseja, mukaan lukien artikkelin, jossa näytetään, miten voit rekisteröidy palveluun, tutustumalla seuraaviin resursseihin:
+Voit tehdä Power BI:llä kaikenlaista. Saat lisätietoja ja kursseja, mukaan lukien artikkelin, jossa näytetään, miten voit rekisteröidy palveluun, tutustumalla seuraaviin resursseihin:
 
 * [Rekisteröidy Yhdysvaltain valtionhallinnon Power BI:hin](service-govus-signup.md)
 * <a href="https://channel9.msdn.com/Blogs/Azure/Cognitive-Services-HDInsight-and-Power-BI-on-Azure-Government">Yhdysvaltain valtionhallinnon Power BI:n esittelyohjelma</a>
-* [Power BI:n ohjattu oppiminen](guided-learning/gettingstarted.yml#step-1)
+* [Power BI:n ohjattu oppiminen](guided-learning/gettingstarted.yml?tutorial-step=1)
 * [Power BI -palvelun käytön aloittaminen](service-get-started.md)
 * [Power BI Desktopin käytön aloittaminen](desktop-getting-started.md)
 

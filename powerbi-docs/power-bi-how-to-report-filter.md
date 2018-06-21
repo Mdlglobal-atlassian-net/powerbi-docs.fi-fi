@@ -1,29 +1,21 @@
 ---
 title: Power BI:n Suodattimet-ruudun yleiskatsaus
 description: Yleiskatsaus raportin Suodattimet-ruudusta Power BI -palvelussa ja Power BI Dashboardissa.
-services: powerbi
-documentationcenter: ''
 author: mihart
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: monitoring
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 03/15/2018
+ms.component: powerbi-service
+ms.topic: conceptual
+ms.date: 05/25/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 00b0b116aa59ebab1d963a8803f788040761d9f5
-ms.sourcegitcommit: 00b4911ab5fbf4c2d5ffc000a3d95b3149909c28
+ms.openlocfilehash: 6d0a1afe27372c808e63adb34fda96e978b2e2be
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/15/2018
-ms.locfileid: "30975347"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34721382"
 ---
 # <a name="take-a-tour-of-the-report-filters-pane"></a>Aloita raportin Suodattimet-ruudun esittely
 Tässä artikkelissa tutustutaan tarkemmin raportin Suodattimet-ruutuun. Ruutu näkyy [Power BI -palvelun muokkausnäkymässä ja lukunäkymässä](service-reading-view-and-editing-view.md) ja [Power BI Desktopin raporttinäkymässä](desktop-report-view.md).
@@ -31,7 +23,7 @@ Tässä artikkelissa tutustutaan tarkemmin raportin Suodattimet-ruutuun. Ruutu n
 Tietojen suodattaminen Power BI:ssä voidaan tehdä monella eri tavalla, ja suosittelemme lukemaan ensin kohdan [Tietoja suodattimista ja korostuksista](power-bi-reports-filters-and-highlighting.md).
 
 ## <a name="working-with-the-report-filters-pane"></a>Raportin Suodattimet-ruudun käyttäminen
-Power BI Desktopissa raportit avataan raporttinäkymässä. Power BI -palvelussa raportit voidaan avata [muokkausnäkymässä tai lukunäkymässä](service-reading-view-and-editing-view.md). Muokkausnäkymässä ja työpöydän raporttinäkymässä raportin omistajat voivat [lisätä suodattimia raporttiin](power-bi-report-add-filter.md), ja kyseiset suodattimet tallennetaan raportin kanssa. Lukunäkymässä raporttia tarkastelevat henkilöt voivat käsitellä suodattimia, mutta he eivät voi lisätä uusia suodattimia raporttiin.
+Power BI Desktopissa raportit avataan raporttinäkymässä. Power BI -palvelussa raportit voidaan avata [muokkausnäkymässä tai lukunäkymässä](service-reading-view-and-editing-view.md). Muokkausnäkymässä ja työpöydän raporttinäkymässä raportin omistajat voivat [lisätä suodattimia raporttiin](power-bi-report-add-filter.md), ja kyseiset suodattimet tallennetaan raportin kanssa. Lukunäkymässä raporttia tarkastelevat henkilöt voivat käsitellä suodattimia ja tallentaa muutokset, mutta he eivät voi lisätä uusia suodattimia raporttiin.
 
 Power BI -palvelussa raportit säilyttävät Suodattimet-ruudussa tekemäsi muutokset, ja muutokset siirtyvät myös raportin mobiiliversioon. Voit palauttaa suodatinruudun luojan oletusarvoihin valitsemalla **Palauta oletukset** yläreunan valikkoriviltä.     
 

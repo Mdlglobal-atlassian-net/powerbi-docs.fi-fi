@@ -1,28 +1,20 @@
 ---
 title: Koontinäyttöjä ja raportteja hyödyntävien sovellusten asentaminen ja käyttäminen Power BI:ssä
 description: Power BI:ssä sovellukset kokoavat toisiinsa liittyvät koontinäytöt ja raportit yhteen paikkaan.
-services: powerbi
-documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
-editor: ''
-tags: ''
-qualityfocus: monitoring
-qualitydate: 10/02/2017
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 01/24/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 406e1219296c5b2491e3b59d5a8cd6f50cfc2376
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: de566aa22a7c48a27682a9c577f84eb6015ac8b7
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/24/2018
-ms.locfileid: "30815749"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34242731"
 ---
 # <a name="install-and-use-apps-with-dashboards-and-reports-in-power-bi"></a>Koontinäyttöjä ja raportteja hyödyntävien sovellusten asentaminen ja käyttäminen Power BI:ssä
 Power BI:ssä *sovellukset* kokoavat toisiinsa liittyvät koontinäytöt ja raportit yhteen paikkaan. Organisaatioon kuuluvat henkilöt voivat luoda ja jakaa yrityksen avaintietoja sisältäviä sovelluksia. Myös käytössäsi mahdollisesti jo olevat [ulkoiset palvelut](service-connect-to-services.md), kuten Google Analytics ja Microsoft Dynamics CRM, tarjoavat Power BI -sovelluksia. 

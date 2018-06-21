@@ -1,32 +1,26 @@
 ---
-title: Raportin käsittely muokkausnäkymässä (opetusohjelma)
+title: Raportin käsittely muokkausnäkymässä
 description: Raportin käsittely Power BI -palvelun raportin muokkausnäkymässä
-services: powerbi
-documentationcenter: ''
 author: mihart
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: monitoring
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 03/02/2018
+ms.component: powerbi-service
+ms.topic: conceptual
+ms.date: 04/11/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: b3dda418f3493c91db1be75365192539757f0449
-ms.sourcegitcommit: 5e1f7d2673efe25c47b9b9f315011055bfe92c8f
+ms.openlocfilehash: 35bdf975d9df31ded5a7c3f5be26ae6181002169
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/09/2018
-ms.locfileid: "30974772"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34240426"
 ---
 # <a name="interact-with-a-report-in-editing-view-in-power-bi-service"></a>Raportin käsittely Power BI -palvelun muokkausnäkymässä
-Raportteja voi muokata Power BI -palvelussa ja Power BI Desktopissa, jos sinulla on omistajan käyttöoikeudet. Toisin kuin Desktopissa Power BI -palvelussa on kaksi erilaista tilaa raporttien käsittelyyn – [lukunäkymä](service-reading-view-and-editing-view.md) on tarkoitettu raporttien *kuluttajille* ja muokkausnäkymä raporttien omistajille ja tekijöille. Tässä artikkelissa käsitellään Power BI -palvelun muokkausnäkymää. 
+Raportteja voidaan luoda ja muokata Power BI -palvelussa ja Power BI Desktopissa. Power BI -palvelussa raportteja voidaan luoda ja muokata **muokkausnäkymässä**. Power BI Desktopissa raportteja voidaan luoda ja muokata [**raporttinäkymässä**](desktop-report-view.md). Tässä artikkelissa käsitellään Power BI -palvelun muokkausnäkymää. 
+
+Power BI -palvelussa on kaksi erilaista tilaa raporttien käsittelyyn – [lukunäkymä](service-reading-view-and-editing-view.md) on tarkoitettu raporttien *kuluttajille* ja muokkausnäkymä raporttien omistajille ja tekijöille.  Power BI Pro -käyttöoikeus vaaditaan raporttien jakamiseen sekä muiden luomien raporttien muokkaamiseen. Jos käytät Power BI:n ilmaisversiota, voit luoda raportteja, mutta et voi käyttää [jakamista](service-share-reports.md).    
 
 Raportin muokkausnäkymässä on paljon eri vaihtoehtoja raportin tarkastelemiseen ja suunnitteluun. Kaikki [lukunäkymän](service-reading-view-and-editing-view.md) toiminnot ovat käytettävissä, sekä paljon muita. Muokkausnäkymää voi käyttää vain raportin luonut henkilö tai hänen työtoverinsa, jotka [myös omistavat raportin sovellustyötilan jäsenenä tai järjestelmänvalvojana](service-create-distribute-apps.md).
 
@@ -44,9 +38,12 @@ Tutustu aiheiden luetteloon, joka on sisällysluettelon **Raportit**-otsikon all
 * Porautumisen määrittäminen
 * Raporttisivun monistaminen
 
+## <a name="considerations-and-troubleshooting"></a>Huomioon otettavat seikat ja vianmääritys
+Power BI Pro -käyttöoikeus vaaditaan muiden luomien raporttien muokkaamiseen sekä raporttiesi jakamiseen muiden kanssa.  Jos käytät Power BI:n ilmaisversiota, voit luoda raportteja, mutta et voi käyttää [jakamista](service-share-reports.md).
+
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 Takaisin kohtaan [Power BI -palvelun lukunäkymä ja muokkausnäkymä](service-reading-view-and-editing-view.md)
 
-Onko sinulla muuta kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
+Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
 

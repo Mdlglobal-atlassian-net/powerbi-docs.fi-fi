@@ -1,29 +1,21 @@
 ---
 title: Adobe Analyticsin yhdistäminen Power BI:hin
 description: Yhdistä Adobe Analyticsiin Power BI:stä sovellukseen, joka näyttää tilin tiedot koontinäytössä ja raporteissa.
-services: powerbi
-documentationcenter: ''
 author: SarinaJoan
 manager: kfile
-backup: maggiesMSFT
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: maggiesMSFT
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 452f970efda4c49e197ed578f5c5b05917aa43e7
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: e8e9b21e62f0a91234fccf78977a696e321ed8dc
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/24/2018
-ms.locfileid: "30815414"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34251617"
 ---
 # <a name="connect-to-adobe-analytics-with-power-bi"></a>Adobe Analyticsin yhdistäminen Power BI:hin
 Yhteyden muodostaminen Adobe Analyticsiin Power BI:n kautta alkaa muodostamalla yhteys Adobe Analytics Marketing Cloud -tiliin. Saat sovelluksen, jossa on Power BI:n koontinäyttö ja joukko Power BI -raportteja, jotka tarjoavat merkityksellisiä tietoja sivuston liikenne- ja käyttäjädimensioista. Tiedot päivitetään automaattisesti kerran päivässä. Voit käsitellä koontinäyttöä ja raportteja, mutta et voi tallentaa muutoksia.
@@ -104,5 +96,5 @@ Jos olet onnistuneesti antanut tunnistetiedot näytöllä ennen kuin virhe ilmen
 ## <a name="next-steps"></a>Seuraavat vaiheet
 * [Mitä ovat Power BI:n sovellukset?](service-install-use-apps.md)
 * [Tietojen noutaminen Power BI:ssä](service-get-data.md)
-* Ilmenikö muuta kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)
+* Onko sinulla muuta kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)
 

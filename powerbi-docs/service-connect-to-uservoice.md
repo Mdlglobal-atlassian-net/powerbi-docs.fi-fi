@@ -1,29 +1,21 @@
 ---
 title: Yhteyden muodostaminen Power BI:n UserVoiceen
 description: Power BI:n UserVoice
-services: powerbi
-documentationcenter: ''
 author: SarinaJoan
 manager: kfile
-backup: maggiesMSFT
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: maggiesMSFT
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: bc55031358fe27b5bb935b8255c8b6b1c191d4ab
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 2761b2bd1230e18b5dd4e0b69342e55ed33d0983
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/24/2018
-ms.locfileid: "30815394"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34250822"
 ---
 # <a name="connect-to-uservoice-with-power-bi"></a>Yhteyden muodostaminen Power BI:n UserVoiceen
 UserVoice-tietojen seuranta ja analysointi on helppoa Power BI-ja UserVoice -sisältöpaketin avulla. Power BI noutaa tietosi, mukaan lukien tukipyynnöt, ehdotukset ja tyytyväisyysluokitukset ja rakentaa sitten valmiin raporttinäkymän kyseisten tietojen perusteella.
@@ -43,7 +35,7 @@ Muodosta yhteys [UserVoice-sisältöpakettiin ](https://app.powerbi.com/getdata/
 3. Valitse **UserVoice** ja sitten **Nouda**.
    
    ![](media/service-connect-to-uservoice/uservoice.png)
-4. Kirjoita pyydettäessä UserVoicen URL-osoite. URL-osoitteen on noudatettava täsmälleen seuraavaa kaavaa: https://fabrikam.uservoice.com, jossa ”fabrikam” korvataan tuotteen tai palvelun nimellä.
+4. Kirjoita pyydettäessä UserVoicen URL-osoite. URL-osoitteen on noudatettava täsmälleen muotoa https://fabrikam.uservoice.com, jossa ”fabrikam” korvataan tuotteen tai palvelun nimellä.
    
    >[!NOTE]
    >Huomaa, että lopussa ei ole vinoviivaa, ja että yhteys on http**s**.
@@ -61,17 +53,17 @@ Muodosta yhteys [UserVoice-sisältöpakettiin ](https://app.powerbi.com/getdata/
 
 **Mitä seuraavaksi?**
 
-* Kokeile [kysymyksen esittämistä koontinäytön yläreunassa olevassa Q&A-ruudussa](power-bi-q-and-a.md)
+* Kokeile [kysymyksen esittämistä raporttinäkymän yläreunassa olevassa Q&A-ruudussa](power-bi-q-and-a.md).
 * [Muuta koontinäytön ruutuja](service-dashboard-edit-tile.md).
 * [Valitse jokin ruutu](service-dashboard-tiles.md), jolloin siihen liittyvä raportti avautuu.
-* Tietojoukko on ajastettu päivittymään päivittäin, mutta voit muuttaa päivitysaikataulua tai kokeilla tietojoukon päivittämistä **Päivitä nyt** -toiminnolla haluamanasi ajankohtana.
+* Tietojoukko on ajastettu päivittymään päivittäin, mutta voit muuttaa päivitysaikataulua tai kokeilla tietojoukon päivittämistä **Päivitä nyt** -toiminnolla haluamanasi ajankohtana
 
 ## <a name="troubleshooting"></a>Vianmääritys
 **"Parametrien vahvistaminen epäonnistui. Varmista, että kaikki parametrit ovat kelvollisia."**
 
 Jos näet tämän virheen UserVoice URL-osoitteen kirjoittamisen jälkeen. Varmista, että seuraavat edellytykset täyttyvät:
 
-* URL-osoite noudattaa täsmälleen muotoa https://fabrikam.uservoice.com, jossa ”fabrikam” korvataan oikealla UserVoice URL-etuliitteellä.
+* URL-osoite noudattaa täsmälleen muotoa https://fabrikam.uservoice.com, jossa ”fabrikam” korvataan oikealla UserVoice URL -etuliitteellä.
 * Varmista, että kaikki kirjaimet ovat pieniä.
 * Varmista, että URL-osoitteen alku on http**s**.
 * Varmista, että URL-osoitteen lopussa ei ole vinoviivaa.

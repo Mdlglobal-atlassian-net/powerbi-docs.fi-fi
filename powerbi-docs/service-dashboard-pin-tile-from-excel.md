@@ -1,30 +1,22 @@
 ---
 title: Ruudun kiinnittäminen Power BI -raporttinäkymään Excelistä
 description: Kiinnitä ruutu Power BI -raporttinäkymään Excelistä OneDrive for Businessissa. Alueiden, kaavioiden ja taulukoiden kiinnittäminen
-services: powerbi
-documentationcenter: ''
 author: mihart
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
+ms.reviewer: ''
 featuredvideoid: l8JoB7w0zJA
-qualityfocus: no
-qualitydate: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 03/02/2018
+ms.component: powerbi-service
+ms.topic: conceptual
+ms.date: 05/02/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: fdd014e513a794a72196a3173703b9536f06768a
-ms.sourcegitcommit: 5e1f7d2673efe25c47b9b9f315011055bfe92c8f
+ms.openlocfilehash: 6cdcff66d48ede031a635e44e3a40af4e321c0c5
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/09/2018
-ms.locfileid: "29924943"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34584066"
 ---
 # <a name="pin-a-tile-to-a-power-bi-dashboard-from-excel"></a>Ruudun kiinnittäminen Power BI -raporttinäkymään Excelistä
 Ennen kuin voit kiinnittää ruudun Excel-työkirjasta, yhdistät kyseisen työkirjan Power BI -palveluun (app.powerbi.com). Työkirjan yhdistäminen tuo linkitetyn vain luku -version kyseisestä työkirjasta Power BI -palveluun ja mahdollistaa alueiden kiinnittämisen raporttinäkymiin. Voit kiinnittää jopa kokonaisen laskentataulukon raporttinäkymään.  
@@ -42,20 +34,19 @@ Kun valitset **Yhdistä**, työkirjasi näkyy Power BI:ssä aivan samalla tavall
 Työkirjaa ei voi muokata Power BI:ssä. Jos muutoksia on tehtävä, voit valita kynäkuvakkeen työtilasi **Työkirjat**-välilehdestä ja valita sitten työkirjan muokkaamisen joko Excel Onlinessa tai tietokoneesi Excelissä. Tekemäsi muutokset tallennetaan työkirjaan OneDrivessa.
 
 1. Lataa työkirja OneDrive for Businessiin.
+
 2. [Yhdistä työkirjaan](service-excel-workbook-files.md) Power BI:ssä valitsemalla **Nouda tiedot > Tiedostot > OneDrive – Business** ja siirtymällä Excel-tiedoston tallennuspaikkaan. Valitse tiedosto ja sitten **Yhdistä > Yhdistä**.
 
-   ![OneDrive for Business -valintaikkuna](media/service-dashboard-pin-tile-from-excel/power-bi-connect.png)
+    ![OneDrive for Business -valintaikkuna](media/service-dashboard-pin-tile-from-excel/power-bi-connect.png)
 
 3. Power BI:ssä työkirja lisätään työtilasi **Työkirjat**-välilehteen.  ![Työkirjakuvake](media/service-dashboard-pin-tile-from-excel/pbi_workbookicon.png) ilmaisee, että kyseessä on Excel-työkirja ja keltainen tähti osoittaa, että se on uusi.
-   
     
-   ![Työkirjat-välilehti](media/service-dashboard-pin-tile-from-excel/power-bi-workbooks.png)
+    ![Työkirjat-välilehti](media/service-dashboard-pin-tile-from-excel/power-bi-workbooks.png)
 4. Avaa työkirja Power BI:ssä valitsemalla työkirjan nimi.
 
     Työkirjaan Power BI:ssä tekemiäsi muutoksia ei tallenneta, eivätkä ne vaikuta alkuperäiseen työkirjaan OneDrive for Businessissa. Jos lajittelet, suodatat tai muutat arvoja Power BI:ssä, kyseisiä muutoksia ei voi tallentaa tai kiinnittää. Jos sinun on tehtävä muutoksia, jotka tallennetaan, avaa työkirja Excel Onlinessa tai Excelissä muokkaamista varten valitsemalla **Muokkaa** oikeasta yläkulmasta. Näin tehtyjen muutosten päivittyminen raporttinäkymän ruutuihin voi kestää muutamia minuutteja.
    
-   
-   ![Excel Online Power BI:ssä](media/service-dashboard-pin-tile-from-excel/power-bi-opened.png)
+    ![Excel Online Power BI:ssä](media/service-dashboard-pin-tile-from-excel/power-bi-opened.png)
 
 ## <a name="pin-a-range-of-cells-to-a-dashboard"></a>Solualueen kiinnittäminen raporttinäkymään
 Uusi [raporttinäkymän ruutu](service-dashboard-tiles.md) voidaan lisätä Excel-työkirjasta Power BI:ssä. Alueita voidaan kiinnittää Excel-työkirjoista, jotka on tallennettu OneDrive for Businessiin tai toiseen ryhmän jakamaan tiedostokirjastoon. Alueet voivat sisältää tietoja, kaavioita, taulukoita, pivot-taulukoita, pivot-kaavioita ja muita Excel-osia.
@@ -75,14 +66,14 @@ Uusi [raporttinäkymän ruutu](service-dashboard-tiles.md) voidaan lisätä Exce
     ![Kiinnitetty koontinäyttöön -valintaikkuna](media/service-dashboard-pin-tile-from-excel/power-bi-go-to-dashboard.png)
 5. Valitse **Siirry raporttinäkymään**. Täällä kiinnitetty visualisointi voidaan [nimetä uudelleen, linkittää ja siirtää ja sen kokoa voidaan muuttaa](service-dashboard-edit-tile.md). Oletuksena kiinnitetyn ruudun valitseminen avaa työkirjan Power BI:ssä.
 
-## <a name="pin-an-entire-table-or-pivot-chart-to-a-dashboard"></a>Koko taulukon tai pivot-kaavion kiinnittäminen raporttinäkymään
-Noudata edellä olevia ohjeita, mutta valitse solualueen sijaan koko taulukko tai pivot-taulukko.
+## <a name="pin-an-entire-table-or-pivottable-to-a-dashboard"></a>Koko taulukon tai Pivot-taulukon kiinnittäminen raporttinäkymään
+Noudata edellä olevia ohjeita, mutta valitse solualueen sijaan koko taulukko tai Pivot-taulukko.
 
-Jos halua kiinnittää taulukon, valitse koko taulukon alue ja varmista, että otsikot sisältyvät alueeseen.  Jos haluat kiinnittää pivot-taulukon, sisällytä kaikki pivot-taulukon näkyvät osat mahdollisesti käytetyt suodattimet mukaan lukien.
+Jos halua kiinnittää taulukon, valitse koko taulukon alue ja varmista, että otsikot sisältyvät alueeseen.  Jos haluat kiinnittää Pivot-taulukon, sisällytä kaikki Pivot-taulukon näkyvät osat mahdollisesti käytetyt suodattimet mukaan lukien.
 
  ![solujen valitseminen](media/service-dashboard-pin-tile-from-excel/pbi_selecttable.png)
 
-Taulukosta tai pivot-taulukosta luotu ruutu näyttää koko taulukon.  Jos lisäät, poistat tai suodatat alkuperäisen työkirjan rivejä tai sarakkeita, myös ne lisätään, poistetaan tai suodatetaan ruudussa.
+Taulukosta tai Pivot-taulukosta luotu ruutu näyttää koko taulukon.  Jos lisäät, poistat tai suodatat alkuperäisen työkirjan rivejä tai sarakkeita, myös ne lisätään, poistetaan tai suodatetaan ruudussa.
 
 ## <a name="view-the-workbook-linked-to-the-tile"></a>Ruutuun linkitetyn työkirjan tarkasteleminen
 Työkirjan ruudun valitseminen avaa linkitetyn työkirjan Power BI:ssä. Koska työkirjatiedosto sijaitsee omistajan OneDrive for Businessissa, työkirjan tarkasteleminen edellyttää, että sinulla on työkirjan lukuoikeudet. Jos sinulla ei ole oikeuksia, saat virheilmoituksen.  

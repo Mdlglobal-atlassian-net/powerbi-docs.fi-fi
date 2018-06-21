@@ -1,31 +1,24 @@
 ---
-title: Opetusohjelma - Taulukkovisualisoinnit Power BI -raporteissa ja raporttinäkymissä (Opetusohjelma)
+title: Taulukkovisualisoinnit Power BI -raporteissa ja raporttinäkymissä
 description: Opetusohjelma siitä, miten Power BI -raporttien ja raporttinäkymien taulukkovisualisointien kanssa työskennellään ja miten sarakkeiden leveyksiä muutetaan.
-services: powerbi
-documentationcenter: ''
 author: mihart
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
+ms.reviewer: ''
 featuredvideoid: ''
-qualityfocus: ''
-qualitydate: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 01/22/2018
+ms.component: powerbi-desktop
+ms.topic: conceptual
+ms.date: 05/27/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: d41fd5085912ec74312fa4a4b25060cbd4afba94
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 22eb44048d8a4f681d8d112ce3fdb5a841d0511e
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34584227"
 ---
-# <a name="working-with-tables-in-power-bi-reports-and-dashboards-tutorial"></a>Taulukoiden käyttäminen Power BI -raporteissa ja raporttinäkymissä (Opetusohjelma)
+# <a name="working-with-tables-in-power-bi-reports-and-dashboards"></a>Taulukoiden käyttäminen Power BI -raporteissa ja raporttinäkymissä
 Taulukko on ruudukko, joka sisältää tietoja järjestettynä loogiseen sarjaan rivejä ja sarakkeita. Se voi sisältää myös otsikkoja ja summarivin. Taulukot toimivat hyvin kvantitatiivisessa vertailussa, jossa tarkastellaan moni arvoja tietystä kategoriasta. Esimerkiksi tässä taulukossa näkyvät **luokan** viisi eri mittayksikköä.
 
 ![](media/power-bi-visualization-tables/table.png)
@@ -69,15 +62,21 @@ Taulukkoa voi muotoilla erittäin monella tapaa, ja käsittelemme niistä täss�
 
 * Kokeile taulukkoruudukon muotoilemista. Tässä olemme lisänneet sinisen pystyruudukon, lisänneet riveihin tilaa, paksuntaneet ääriviivaa ja kasvattaneet hieman tekstin kokoa.
   
-    ![](media/power-bi-visualization-tables/power-bi-table-grid2-new.png)
+    ![](media/power-bi-visualization-tables/power-bi-table-gridnew.png)
   
     ![](media/power-bi-visualization-tables/power-bi-table-grid3.png)
 * Vaihdoimme sarakeotsikoiden taustaväriä, lisäsimme ääriviivan ja kasvatimme tekstin kokoa. 
   
-    ![](media/power-bi-visualization-tables/power-bi-table-column.png)
+    ![](media/power-bi-visualization-tables/power-bi-table-column-headers.png)
+
   
     ![](media/power-bi-visualization-tables/power-bi-table-column2.png)
-* Hieman lisämuokkausta ja tässä on lopullinen taulukkomme. Koska muotoiluvaihtoehtoja on niin paljon, paras tapa oppia on aloittaa tavallisesta taulukosta, avata Muotoilu-ruutu ![](media/power-bi-visualization-tables/power-bi-format.png)  ja aloittaa tutustuminen. 
+
+* Voit myös käyttää muotoilua yksittäisissä sarakkeissa ja sarakeotsikoissa. Aloita laajentamalla **Kentän muotoilu** ja valitsemalla muotoiltava sarake avattavasta luettelosta. Kentän muotoilun avulla voit tehdä esimerkiksi seuraavia määrityksiä sarakearvojen mukaan: näyttöyksiköt, fontin väri, desimaalipaikkojen määrä, tausta, tasaus ja paljon muuta. Kun olet säätänyt asetukset, valitse, otetaanko ne käyttöön myös otsikossa ja summariveissä.
+
+    ![](media/power-bi-visualization-tables/power-bi-field-formatting.png)
+
+* Hieman lisämuokkausta ja tässä on lopullinen taulukkomme. Koska muotoiluvaihtoehtoja on niin paljon, paras tapa oppia on aloittaa tavallisesta taulukosta, avata Muotoilu-ruutu ![](media/power-bi-visualization-tables/power-bi-format.png) ja aloittaa tutustuminen. 
   
     ![](media/power-bi-visualization-tables/power-bi-table-format.png)
 
@@ -121,5 +120,8 @@ Joskus Power BI katkaisee raportin tai näkymän sarakeotsikon. Nähdäksesi sar
 
 ![](media/power-bi-visualization-tables/resizetable.gif)
 
-Onko sinulla muuta kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
+## <a name="considerations-and-troubleshooting"></a>Huomioon otettavat seikat ja vianmääritys
+* Kun otat käyttöön sarakkeen muotoilun, voit valita vain yhden tasausasetuksen saraketta kohti: Automaattinen, Vasen, Keskitetty tai Oikea. Yleensä sarake sisältää vain tekstiä tai numeroita eikä niiden yhdistelmiä. Jos sarake sisältää sekä numeroita että tekstiä, **Automaattinen** tasaa tekstin vasemmalle ja numerot oikealle. Tämä tukee kieliä, joita luetaan vasemmalta oikealle.   
+
+Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
 

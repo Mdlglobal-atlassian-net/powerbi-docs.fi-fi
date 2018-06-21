@@ -1,39 +1,25 @@
 ---
-title: Määritä raporttipalvelin Excel-työkirjojen isännäksi Office Online Serverin (OOS) avulla
-description: Yrityskäyttäjät voivat paitsi tarkastella Power BI -raportteja verkkoportaalissa myös tehdä saman Excel-työkirjoille Power BI -raporttipalvelimella.
-services: powerbi
-documentationcenter: ''
+title: Excel-työkirjojen isännöinti Office Online Serverin (OOS) avulla - Power BI -raporttipalvelin
+description: Verkkoportaalissa tapahtuvan Power BI -raporttien tarkastelun lisäksi Power BI -raporttipalvelin voi isännöidä Excel-työkirjoja Office Online Serverin (OOS) avulla.
 author: markingmyname
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 08/23/2017
+ms.component: powerbi-report-server
+ms.topic: conceptual
+ms.date: 04/23/2018
 ms.author: maghan
-ms.openlocfilehash: a9d5c1b8da8935a535ed112030a5c2a40132f176
-ms.sourcegitcommit: 6e693f9caf98385a2c45890cd0fbf2403f0dbb8a
+ms.openlocfilehash: 705de47a1e89d765f34eadfcd35064ccde7aa66b
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34481896"
 ---
 # <a name="configure-your-report-server-to-host-excel-workbooks-using-office-online-server-oos"></a>Määritä raporttipalvelin Excel-työkirjojen isännäksi Office Online Serverin (OOS) avulla
-Yrityskäyttäjät voivat paitsi tarkastella Power BI -raportteja verkkoportaalissa myös tehdä saman Excel-työkirjoille Power BI -raporttipalvelimella. Näin he voivat julkaista ja tarkastella itse tuottamaansa Microsoft BI -sisältöä samassa paikassa.
+Verkkoportaalissa tapahtuvan Power BI -raporttien tarkastelun lisäksi Power BI -raporttipalvelin voi isännöidä Excel-työkirjoja [Office Online Serverin](https://docs.microsoft.com/officeonlineserver/office-online-server-overview) (OOS) avulla. Raporttipalvelimestasi voit julkaista ja katsella Microsoft BI-sisältöä itsepalveluna.
 
-> [!NOTE]
-> Tämä on esikatseluominaisuus, joka sisältyy elokuun 2017 esikatselujulkaisuun. Katso lisätietoja artikkelista [Power BI -raporttipalvelinten uudet ominaisuudet](whats-new.md).
-> 
-> 
-
-![Excelin raportteja tarkastellaan raporttipalvelimen verkkoportaalista.](media/excel-oos/excel-in-pbirs.png)
-
-Tämä toteutetaan hyödyntämällä [Office Online Serveriä](https://technet.microsoft.com/library/jj219437\(v=office.16\).aspx) (OOS).
+![Excelin raportteja tarkastellaan raporttipalvelimen verkkoportaalista](media/excel-oos/excel-in-pbirs.png)
 
 ## <a name="prepare-server-to-run-office-online-server"></a>Valmistele palvelin suorittamaan Office Online Server
 Suorita nämä toimenpiteet palvelimessa, joka suorittaa Office Online Serverin. Palvelimen on oltava Windows Server 2012 R2 tai Windows Server 2016. Windows Server 2016 edellyttää Office Online Serverin huhtikuun 2017 versiota tai uudempaa.
@@ -105,7 +91,7 @@ New-OfficeWebAppsFarm -InternalURL "http://servername" -AllowHttp
 
 **Parametrit**
 
-* **–InternalURL** on Office Online Severin suorittaman palvelimen nimi, kuten http://servername.
+* **–InternalURL** on Office Online Severin suorittavan palvelimen nimi, kuten http://servername.
 * **–AllowHttp** määrittää klusterin käyttämään HTTP:tä.
 
 ### <a name="verify-that-the-office-online-server-farm-was-created-successfully"></a>Varmista, että Office Online Server -klusterin luonti onnistui
@@ -182,8 +168,8 @@ Kun olet syöttänyt löytö-URL-osoitteen ja valinnut **Käytä**, Excel-työki
 * Sinulla on vain luku -oikeudet työkirjoissa.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
-[Järjestelmänvalvojien opas](admin-handbook-overview.md)  
-[Pikaopas: Power BI -raporttipalvelimen asentaminen](quickstart-install-report-server.md)  
+[Järjestelmänvalvojan yleiskatsaus](admin-handbook-overview.md)  
+[Power BI -raporttipalvelimen asentaminen](install-report-server.md)  
 [Raportin muodostimen asentaminen](https://docs.microsoft.com/sql/reporting-services/install-windows/install-report-builder)  
 [SQL Server Data Tools (SSDT) -työkalujen lataaminen](http://go.microsoft.com/fwlink/?LinkID=616714)
 

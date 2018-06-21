@@ -1,36 +1,32 @@
 ---
-title: Koontinäyttöjen, koontinäyttöruutujen, raporttisivujen ja raportin visualisointien näyttäminen koko näytön tilassa
+title: Koontinäyttöjen, ruutujen, raporttisivujen ja visualisointien näyttäminen koko näytön tilassa
 description: Voit näyttää koontinäyttöjä, koontinäyttöruutuja, raportin visualisointeja ja raporttisivuja koko näytön tilassa, jota kutsutaan myös *TV-tilaksi*.
-services: powerbi
-documentationcenter: ''
 author: mihart
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
+ms.reviewer: ''
 featuredvideoid: ''
-qualityfocus: ''
-qualitydate: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 03/01/2018
+ms.component: powerbi-service
+ms.topic: conceptual
+ms.date: 04/11/2018
 ms.author: mihart
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 23241edc3b7fec6b4cf10c422fc7744268ed2cdc
-ms.sourcegitcommit: 5e1f7d2673efe25c47b9b9f315011055bfe92c8f
+ms.openlocfilehash: 7b84b473f64b4ee2d37a3a39de9976f2cf147059
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/09/2018
-ms.locfileid: "29751782"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34244107"
 ---
-# <a name="full-screen-mode-in-power-bi"></a>Koko näytön tila Power BI:ssä
+# <a name="full-screen-mode-in-power-bi-service"></a>Koko näytön tila Power BI -palvelussa
 ## <a name="what-is-full-screen-mode"></a>Mikä on koko näytön tila?
 ![koontinäytön koko näytön tila ennen ja jälkeen](media/service-fullscreen-mode/power-bi-full-screen-comparison.png)
 
-Näytä sisältösi (koontinäytöt, raporttisivut, ruudut ja visualisoinnit) ilman valikoiden ja siirtymispalkkien aiheuttamia häiriöitä.  Saat sisältösi aidon, koko näytön näkymän yhdellä silmäyksellä keskeytyksettä. Tätä kutsutaan joskus myös TV-tilaksi. Koko näytön tilassa käytettävissä olevat toiminnot vaihtelevat sisällön mukaan.  
+Näytä Power BI -sisältösi (koontinäytöt, raporttisivut, ruudut ja visualisoinnit) ilman valikoiden ja siirtymispalkkien aiheuttamia häiriöitä.  Saat sisältösi aidon, koko näytön näkymän yhdellä silmäyksellä keskeytyksettä. Tätä kutsutaan joskus myös TV-tilaksi. Koko näytön tilassa käytettävissä olevat toiminnot vaihtelevat sisällön mukaan. 
+
+Jos käytät Power BI mobiilisovellusta, [koko näytön tila on käytettävissä Windows 10 -mobiilisovelluksia varten](mobile-windows-10-app-presentation-mode.md). Power BI Desktopissa ei ole koko näytön tilaa raporteille tai visualisoinneille, mutta siinä on Sovita sivulle -toiminto [Suhteet-näkymää](desktop-report-view.md) varten ja [kohdistustila raportin visualisointeja varten](service-focus-mode.md).
+
+ 
 
 Koko näytön tilan käyttötapoja:
 

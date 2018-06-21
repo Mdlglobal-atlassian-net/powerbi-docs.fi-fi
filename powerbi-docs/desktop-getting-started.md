@@ -1,29 +1,21 @@
 ---
 title: Power BI Desktopin käytön aloittaminen
 description: Power BI Desktopin käytön aloittaminen
-services: powerbi
-documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: get-started-article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 12/06/2017
+ms.component: powerbi-desktop
+ms.topic: conceptual
+ms.date: 05/02/2018
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 33908283e567cadc5ef8d4ffe2389ac8fef54b65
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 606ef1f1c69643852a94a7d83ece93cca8940e7a
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/24/2018
-ms.locfileid: "30973997"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34309919"
 ---
 # <a name="getting-started-with-power-bi-desktop"></a>Power BI Desktopin käytön aloittaminen
 Tervetuloa **Power BI Desktopin aloitusoppaaseen**. Tässä lyhyessä esittelyssä kerrotaan, miten Power BI Desktop toimii ja mitä sillä voi tehdä, ja autetaan sinua rakentamaan tehokkaita tietomalleja ja upeita raportteja, jotka vahvistavat liiketoimintatietojasi. 
@@ -337,6 +329,10 @@ Lisätietoja raporttinäkymien luomisesta, jakamisesta ja muokkaamisesta on kohd
 
 Power BI Desktopin ja Power BI -palvelun avulla voi tehdä erilaisia vakuuttavia tietoihin pohjautuvia koosteita ja visualisointeja. Katso lisätietoja seuraavasta osasta.
 
+## <a name="diagnostics"></a>Diagnostiikka
+
+Power BI Desktop tukee diagnostiikkaporttiin yhdistämistä. Diagnostiikkaportti sallii yhteydenmuodostuksen muilla työkaluilla ja sen avulla voidaan suorittaa jäljityksiä vianmääritystä varten. *Muutosten tekemistä malliin ei tueta! Malliin tehdyt muutokset saattavat johtaa vioittumiseen ja tietojen menettämiseen.*
+
 ## <a name="next-steps"></a>Seuraavat vaiheet
 Voit tehdä kaikenlaista Power BI Desktopilla. Saat lisätietoja sen toiminnoista seuraavista resursseista:
 
@@ -345,4 +341,3 @@ Voit tehdä kaikenlaista Power BI Desktopilla. Saat lisätietoja sen toiminnoist
 * [Tietoihin yhdistäminen Power BI Desktopissa](desktop-connect-to-data.md)
 * [Tietojen muotoilu ja yhdistäminen Power BI Desktopissa](desktop-shape-and-combine-data.md)
 * [Yleiset kyselytehtävät Power BI Desktopissa](desktop-common-query-tasks.md)   
-

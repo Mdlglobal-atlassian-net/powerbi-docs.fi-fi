@@ -1,29 +1,21 @@
 ---
 title: Raportin vieminen Power BI -palvelusta työasemaan (esikatselu)
 description: Raportin lataaminen Power BI -palvelusta Power BI Desktop -tiedostoon
-services: powerbi
-documentationcenter: ''
 author: mihart
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 03/02/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 0cda094f3104b32f9bad31bf5030e235eb7ce83d
-ms.sourcegitcommit: 5e1f7d2673efe25c47b9b9f315011055bfe92c8f
+ms.openlocfilehash: 938f7b5f905d156518f71a30b355575cf1c04683
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/09/2018
-ms.locfileid: "30974732"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34722539"
 ---
 # <a name="export-a-report-from-power-bi-service-to-desktop-preview"></a>Raportin vieminen Power BI -palvelusta työasemaan (esikatselu)
 Voit viedä (tai *ladata*) Power BI Desktopissa raportin Power BI -palveluun tallentamalla raportti ja valitsemalla **Julkaise**. Voit myös viedä toiseen suuntaan ja ladata raportin Power BI -palvelusta työpöydälle. Vietävien tiedostojen tiedostopääte kumpaankin suuntaan on *.pbix*.
@@ -39,7 +31,7 @@ Lataa .pbix-tiedosto toimimalla seuraavasti:
 2. Valitse valikkorivistä **Tiedosto > Lataa raportti**.
    
    > [!NOTE]
-   > Raportti on [luotava käyttäen Power BI Desktopia](guided-learning/publishingandsharing.yml#step-2) marraskuun 23. 2016 ja sen jälkeen tehdyissä päivityksissä raportin lataamiseksi. Jos näin ei ole, *Lataa raportti* -valikkovaihtoehto Power BI-palvelussa näkyy harmaana.
+   > Raportti on [luotava käyttäen Power BI Desktopia](guided-learning/publishingandsharing.yml?tutorial-step=2) marraskuun 23. 2016 ja sen jälkeen tehdyissä päivityksissä raportin lataamiseksi. Jos näin ei ole, *Lataa raportti* -valikkovaihtoehto Power BI-palvelussa näkyy harmaana.
    > 
    > 
 3. Kun .pbix-tiedostoa luodaan, edistyminen näkyy tilapalkissa. Kun tiedosto on valmis, sinua pyydetään avaamaan tai tallentamaan .pbix-tiedosto. Tiedoston nimi vastaa raportin otsikkoa.
@@ -66,6 +58,7 @@ On muutamia tärkeitä huomioon otettavia seikkoja ja rajoituksia, jotka liittyv
 * Tämä ominaisuus ei toimi raporteissa, jotka on alun perin luotu **Power BI-palvelussa**, mukaan lukien sisältöpaketit.
 * Sinun tulee aina käyttää **Power BI Desktopin** uusinta versiota, kun avaat ladattuja tiedostoja. Ladatut *.pbix*-tiedostot eivät välttämättä avaudu muissa kuin nykyisissä **Power BI Desktopin** versioissa.
 * Jos järjestelmänvalvojasi on poistanut käytöstä mahdollisuuden viedä tietoja, tämä ominaisuus ei ole näkyvissä **Power BI-palvelussa**.
+* Tietojoukkoa, jossa on lisäävä päivitys, ei voi ladata *.pbix*-tiedostoon.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 Näytä minuutin **Kaveri kuutiossa** -video tästä ominaisuudesta:

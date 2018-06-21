@@ -1,28 +1,21 @@
 ---
 title: Raporttiteemojen käyttö Power BI Desktopissa (esikatseluversio)
 description: Lue ohjeet mukautetun värivalikoiman käyttöön ja sen käyttöön kokonaisessa raportissa Power BI Desktopissa.
-services: powerbi
-documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 05/02/2018
+ms.component: powerbi-desktop
+ms.topic: conceptual
+ms.date: 06/02/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 8f4f8c257404eaca97f419603bac386da5bf7446
-ms.sourcegitcommit: f679c05d029ad0765976d530effde744eac23af5
+ms.openlocfilehash: 757c1465d2451da8ebf340c7b9bfe1f4d9ff04f1
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34721175"
 ---
 # <a name="use-report-themes-in-power-bi-desktop-preview"></a>Raporttiteemojen käyttö Power BI Desktopissa (esikatseluversio)
 **Raporttiteemojen** avulla voit käyttää väriteemaa koko raportissa. Tällä tavalla voit käyttää esimerkiksi yrityksen omaa väriteemaa, kausivärejä tai mitä tahansa muuta haluamaasi väriteemaa. Kun otat käyttöön **raporttiteeman**, kaikki raporttisi visualisoinnit käyttävät valitun teeman värejä (lukuun ottamatta muutamia poikkeuksia, jotka kuvataan myöhemmin tässä artikkelissa).
@@ -62,7 +55,7 @@ JSON-tiedosto sisältää seuraavat pakolliset rivit:
 
 * **name**: tämä on teeman nimi ja ainut pakollinen kenttä.
 * **dataColors**: tämä on luettelo Power BI Desktopin tietojen visualisointien värikoodien heksakoodeista. Luettelo voi sisältää haluamasi määrän värejä.
-* **background**, **foreground** ja **tableAccent**: nämä arvot ovat värejä, joita käytetään **taulukko**- ja **matriisivisualisoinneissa**. Näiden värien käyttö määräytyy käytetyn tietyn taulukko- tai matriisityylin perusteella. **Taulukko**- ja **matriisivisualisoinnit** käyttävät oletusarvoisesti näitä tyylejä.
+* **background**, **foreground** ja **tableAccent**: nämä arvot ovat värejä, joita käytetään eri visualisointityypeissä. **Foregroundia** käytetään tekstikenttien tekstissä, KPI-tavoitetekstissä, monirivisen kortin tekstissä, kortin arvon tekstissä, mittarin kuvaselitteen tekstissä, pystysuoran osittajaelementin tekstissä ja **taulukon** ja **matriisin** summan ja arvon tekstissä. **Backgroundia** käytetään painikkeen täytössä ja yhdistelmäkaavion otsikon taustassa. Näiden värien käyttö määräytyy käytetyn visualisointityylin mukaisesti. **Taulukko**- ja **matriisivisualisoinnit** käyttävät oletusarvoisesti näitä tyylejä.
 
 Jos haluat ottaa tyylin käyttöön **taulukko**- tai **matriisivisualisoinnissa**, valitse visualisointi ja laajenna sitten **Visualisoinnit**-ruudun **Muoto**-osion **Matriisityyli**-kohta ja valitse tyyli avattavasta **Tyyli**-valikosta.
 
@@ -149,7 +142,7 @@ JSON-perustiedostossa on viisi pakollista riviä:
 
 * **name**: tämä on teeman nimi ja ainut pakollinen kenttä.
 * **dataColors**: tämä on luettelo Power BI Desktopin tietojen visualisointien värikoodien heksakoodeista. Luettelo voi sisältää haluamasi määrän värejä.
-* **background**, **foreground** ja **tableAccent**: nämä arvot ovat värejä, joita käytetään **taulukko**- ja **matriisivisualisoinneissa**. Näiden värien käyttö määräytyy käytetyn tietyn taulukko- tai matriisityylin mukaisesti. **Taulukko**- ja **matriisivisualisoinnit** käyttävät oletusarvoisesti näitä tyylejä.
+* **background**, **foreground** ja **tableAccent**: nämä arvot ovat värejä, joita käytetään eri visualisointityypeissä. **Foregroundia** käytetään tekstikenttien tekstissä, KPI-tavoitetekstissä, monirivisen kortin tekstissä, kortin arvon tekstissä, mittarin kuvaselitteen tekstissä, pystysuoran osittajaelementin tekstissä ja **taulukon** ja **matriisin** summan ja arvon tekstissä. **Backgroundia** käytetään painikkeen täytössä ja yhdistelmäkaavion otsikon taustassa. Näiden värien käyttö määräytyy käytetyn visualisointityylin mukaisesti. **Taulukko**- ja **matriisivisualisoinnit** käyttävät oletusarvoisesti näitä tyylejä.
 
 Jos haluat luoda yksityiskohtaisemman JSON-tiedoston, jolla voit määrittää muotoilua tarkemmin, sinun täytyy lisätä JSON-tiedostoon **visualStyles**-osio ja asettaa muotoilun tarkemmat määritelmät tämän osion sisään. **visualStyles**-osio näyttää seuraavalta:
 

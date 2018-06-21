@@ -1,29 +1,21 @@
 ---
 title: Power BI -raportin kaavion lajittelutavan vaihtaminen
 description: Power BI -raportin kaavion lajittelutavan vaihtaminen
-services: powerbi
-documentationcenter: ''
 author: mihart
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 01/20/2018
+ms.component: powerbi-service
+ms.topic: conceptual
+ms.date: 05/20/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 8160011a30b54345d446f352148665e3840323d9
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 3c32fc3cc9dc2b16384016ca624d4dd3a773aacb
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/24/2018
-ms.locfileid: "30974552"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34561789"
 ---
 # <a name="change-how-a-chart-is-sorted-in-a-power-bi-report"></a>Power BI -raportin kaavion lajittelutavan vaihtaminen
 Power BI -raportin avulla voit lajitella useimmat visualisoinnit aakkosjärjestykseen kaavion luokkien nimien mukaan tai kunkin luokan numeeristen arvojen mukaan. Tässä esimerkissä kaavio lajitellaan myymälän nimen mukaan.
@@ -38,6 +30,13 @@ Lajittelu on helppo vaihtaa luokasta (myymälän nimi) arvoon (myynti/neliöjalk
    ![](media/power-bi-report-change-sort/sortby.gif)
 
    **HUOMAUTUS**: Kaikki visualisoinnit eivät ole lajiteltavissa.  Esimerkiksi seuraavia visualisointeja ei voi lajitella: Puukartta, Kartta, Täytetty kartta, Pistekaavio, Mittari, Kortti, Monirivinen kortti, Vesiputous.
+
+## <a name="saving-changes-you-make-to-sort-order"></a>Lajittelujärjestyksen muutosten tallentaminen
+Power BI -raportit säilyttävät suodattimet, osittajat, lajittelun ja muut tietojen näyttötapaan tekemäsi muutokset. Jos poistut raportista ja palaat myöhemmin takaisin, muutoksesi pysyvät voimassa.  Jos haluat palauttaa raportin laatijan asetukset takaisin käyttöön, valitse **Palauta oletukset** yläosan valikosta. 
+
+![pysyvä lajittelu](media/power-bi-report-change-sort/power-bi-reset-to-default.png)
+
+Jos **Palauta oletukset** -painike on harmaana, raportin tekijä on poistanut käytöstä mahdollisuuden tallentaa (pysyvät) muutokset.
 
 <a name="other"></a>
 ## <a name="sorting-using-other-criteria"></a>Lajittelu muilla ehdoilla

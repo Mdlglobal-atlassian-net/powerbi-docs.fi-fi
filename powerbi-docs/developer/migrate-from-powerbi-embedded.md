@@ -1,28 +1,19 @@
 ---
 title: Power BI -työtilakokoelman sisällön siirtäminen Power BI:hin
 description: Opi siirtämään Power BI ‑työtilakokoelma Power BI Embedded ‑palveluun ja hyödynnä sisällön upottamisesta sovelluksiin syntyvät edut.
-services: powerbi
-documentationcenter: ''
 author: markingmyname
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.Embedded: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 03/06/2018
+ms.topic: conceptual
+ms.date: 05/25/2018
 ms.author: maghan
-ms.openlocfilehash: c8ad315976dd1ca47d6b4dc2fd9a191a11e044c7
-ms.sourcegitcommit: ee5d044db99e253c27816e0ea6bdeb9e39a2cf41
+ms.openlocfilehash: d9dfdf3f77629a58b324945815a8608fa45f509f
+ms.sourcegitcommit: 8ee0ebd4d47a41108387d13a3bc3e7e2770cbeb8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/08/2018
-ms.locfileid: "30974912"
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34813499"
 ---
 # <a name="how-to-migrate-power-bi-workspace-collection-content-to-power-bi-embedded"></a>Power BI -työtilakokoelman sisällön siirtäminen Power BI Embedded -palveluun
 Opi siirtämään Power BI ‑työtilakokoelma Power BI Embedded ‑palveluun ja hyödynnä sisällön upottamisesta sovelluksiin syntyvät edut.
@@ -36,9 +27,14 @@ Nykyinen Power BI ‑työtilakokoelma on saatavilla vielä rajoitetun ajan. Ente
 > [!IMPORTANT]
 > Vaikka siirto muodostaa riippuvuuden Power BI Embedded ‑palveluun, Power BI:ssä ei muodostu riippuvuutta sovelluksesi käyttäjille, kun he käyttävät **upotettavaa tunnusta**. Heidän ei tarvitse rekisteröityä Power BI -käyttäjiksi, jotta he voisivat tarkastella upotettua sisältöä sovelluksessasi. Voit hyödyntää upottamista Embedded-palveluun käyttäjille, jotka eivät ole Power BI ‑käyttäjiä.
 > 
-> 
 
 ![](media/migrate-from-powerbi-embedded/powerbi-embed-flow.png)
+
+Ennen kuin aloitat uuteen Power BI Embeddediin siirtymiseen, voit käydä nopeasti läpi ohjeistuksen, joka auttaa määrittämään uuden Power BI Embedded -ympäristön [perehdytyskokemustyökalua](https://aka.ms/embedsetup) käyttämällä.
+
+Valitse ratkaisu, joka sopii sinulle:
+* **Asiakkaille tarkoitettu upotus** - kun olet kiinnostunut [sovellus omistaa tiedot](https://aka.ms/embedsetup/AppOwnsData) -ratkaisusta. [Asiakkaille tarkoitettu upotus](embedding.md#embedding-for-your-customers) mahdollistaa raporttinäkymien ja raporttien upottamisen käyttäjille, joilla ei ole Power BI -tiliä. 
+* **Organisaatiolle tarkoitettu upotus** - kun olet kiinnostunut [käyttäjä omistamaa tiedot](https://aka.ms/embedsetup/UserOwnsData) -ratkaisusta. [Organisaatiolle tarkoitettu upotus](embedding.md#embedding-for-your-organization) mahdollistaa Power BI -palvelun laajentamisen.
 
 ## <a name="prepare-for-the-migration"></a>Siirron valmisteleminen
 Sinun on tehtävä joitakin valmistelutoimia, ennen kuin voit siirtää Power BI ‑työtilakokoelman Power Bi Embedded ‑palveluun. Sinulla on oltava käytettävissä vuokraaja sekä käyttäjä, jolla on Power BI Pro ‑käyttöoikeus.
@@ -59,8 +55,7 @@ Vuokraajassa on oltava seuraavat tilit.
 
 > [!NOTE]
 > Näillä tileillä on oltava Power BI Pro ‑käyttöoikeudet, jotta ne voivat käyttää sovellustyötiloja.
-> 
-> 
+>
 
 1. Vuokraajan järjestelmänvalvojakäyttäjä.
    
@@ -72,10 +67,9 @@ Vuokraajassa on oltava seuraavat tilit.
    
     Sovellusten taustapalvelu tallentaa tämän tilin tunnistetiedot ja käyttää tiliä Azure AD ‑tunnuksen hankkimiseen Power BI REST ‑ohjelmointirajapintoja varten. Tiliä käytetään sovelluksen upotettavan tunnuksen luontiin. Lisäksi tämän tilin on oltava upottamista varten luotujen sovellustyötilojen järjestelmänvalvoja.
    
-   > [!NOTE]
-   > Tämä tarkoittaa yksinkertaisesti organisaatiosi tavallista käyttäjätiliä, jota käytetään upottamistarkoituksiin.
-   > 
-   > 
+> [!NOTE]
+> Tämä tarkoittaa yksinkertaisesti organisaatiosi tavallista käyttäjätiliä, jota käytetään upottamistarkoituksiin.
+>
 
 ## <a name="app-registration-and-permissions"></a>Sovelluksen rekisteröinti ja käyttöoikeudet
 Sinun on rekisteröitävä sovellus Azure AD:ssa ja myönnettävä sille tietyt käyttöoikeudet.
@@ -127,13 +121,13 @@ Välimuistissa olevat tietojoukot tarkoittavat PBIX-tiedostoja, joihin on tuotu 
 #### <a name="directquery-dataset--report"></a>DirectQuery-tietojoukko ja -raportti
 **Työnkulku**
 
-1. Kutsu GET-metodilla rajapintaa https://api.powerbi.com/v1.0/collections/{collection_id}/workspaces/{wid}/datasets/{dataset_id}/Default.GetBoundGatewayDataSources ja tallenna saatu yhteysmerkkijono.
+1. Kutsu GET https://api.powerbi.com/v1.0/collections/{collection_id}/workspaces/{wid}/datasets/{dataset_id}/Default.GetBoundGatewayDataSources ja tallenna vastaanotettu yhteysmerkkijono.
 2. Kutsu Download PBIX ‑ohjelmointirajapintaa PaaS-työtilasta.
 3. Tallenna PBIX.
 4. Kutsu Import PBIX ‑ohjelmointirajapinta SaaS-työtilaan.
-5. Päivitä yhteysmerkkijono kutsumalla POST-metodilla rajapintaa https://api.powerbi.com/v1.0/myorg/datasets/{dataset_id}/Default.SetAllConnections
-6. Nouda yhdyskäytävän tunnus ja tietolähteen tunnus kutsumalla GET-metodilla rajapintaa https://api.powerbi.com/v1.0/myorg/datasets/{dataset_id}/Default.GetBoundGatewayDataSources
-7. Päivitä käyttäjän tunnistetiedot kutsumalla PATCH-metodilla rajapintaa https://api.powerbi.com/v1.0/myorg/gateways/{gateway_id}/datasources/{datasource_id}
+5. Päivitä yhteysmerkkijono kutsumalla - POST  https://api.powerbi.com/v1.0/myorg/datasets/{dataset_id}/Default.SetAllConnections
+6. Hanki GW-tunnus ja tietolähdetunnus kutsumalla – GET https://api.powerbi.com/v1.0/myorg/datasets/{dataset_id}/Default.GetBoundGatewayDataSources
+7. Päivitä käyttäjän tunnistetiedot kutsumalla - PATCH https://api.powerbi.com/v1.0/myorg/gateways/{gateway_id}/datasources/{datasource_id}
 
 #### <a name="old-dataset--reports"></a>Vanha tietojoukko ja raportit
 Vanhoilla tietojoukoilla ja raporteilla tarkoitetaan ennen lokakuuta 2016 luotuja tietojoukkoja ja raportteja. Download PBIX ei tue PBIX-tiedostoja, jotka on ladattu järjestelmään ennen lokakuuta 2016.
@@ -165,7 +159,7 @@ Power BI ‑työtilakokoelmien sisällön siirtämisen lisäksi voit luoda rapor
 
 ## <a name="rebuild-your-application"></a>Sovelluksen luominen uudelleen
 1. Sinun on muokattava sovellustasi, jotta voit käyttää Power BI:n REST-ohjelmointirajapintoja ja powerbi.comissa olevaa raporttisijaintia.
-2. Luo uudelleen AuthN/AuthZ-todennus käyttämällä sovelluksesi *päätiliä*. Voit hyödyntää [upotettavaa tunnusta](https://msdn.microsoft.com/library/mt784614.aspx) siihen, että käyttäjä voi toimia muiden käyttäjien puolesta.
+2. Luo uudelleen AuthN/AuthZ-todennus käyttämällä sovelluksesi *päätiliä*. Voit hyödyntää [upotettavaa tunnusta](https://docs.microsoft.com/rest/api/power-bi/embedtoken) siihen, että käyttäjä voi toimia muiden käyttäjien puolesta.
 3. Upota raportit powerbi.comista sovellukseesi.
 
 ## <a name="map-your-users-to-a-power-bi-user"></a>Käyttäjien liittäminen Power BI ‑käyttäjään

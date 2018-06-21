@@ -1,31 +1,23 @@
 ---
-title: Perusaluekaavio (opetusohjelma)
-description: 'Opetusohjelma: perusaluekaavio.'
-services: powerbi
-documentationcenter: ''
+title: Perusaluekaavio
+description: Perusaluekaavio.
 author: mihart
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 01/20/2018
+ms.component: powerbi-desktop
+ms.topic: conceptual
+ms.date: 05/27/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: c4a7a90a8647b4a5d2c76cefbba5041a6e31607d
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 09322a1ead6ae4c3a00dc42e2b4a642dcc2d6181
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/24/2018
-ms.locfileid: "30973882"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34584135"
 ---
-# <a name="basic-area-chart-tutorial"></a>Perusaluekaavio (opetusohjelma)
+# <a name="basic-area-chart"></a>Perusaluekaavio
 Perusaluekaavio (eli kerrostettu aluekaavio) perustuu viivakaavioon. Akselin ja rivin välissä oleva alue täytetään väreillä osoittamaan määrää. 
 
 Aluekaaviot korostavat muutoksen suuruutta ajan kuluessa, ja niiden avulla voidaan kiinnittää huomio trendin kokonaisarvoon. Esimerkiksi tiedot, jotka edustavat tuottoa ajan kuluessa, voidaan kuvata aluekaaviossa kokonaistuoton korostamiseksi.
@@ -70,7 +62,9 @@ Lisätietoja Suodattimet-paneelin käyttämisestä saat ohjeaiheesta [Suodattime
 
 Voit korostaa kaavion tietyn alueen valitsemalla alueen tai sen yläreunan.  Toisin kuin muut visualisointityypit, jos muita visualisointeja on samalla sivulla, perusaluekaavion korostaminen ei ristiinsuodata muita visualisointeja raportin sivulla. Aluekaaviot ovat kuitenkin ristiinsuodatuksen kohteena muiden raportin sivulla olevien visualisointien käynnistämänä. Lisätietoja on artikkelissa [Visualisointitoimet raporteissa](service-reports-visual-interactions.md)
 
-## <a name="considerations-and-troubleshooting"></a>Huomioon otettavat seikat ja vianmääritys
+
+## <a name="considerations-and-troubleshooting"></a>Huomioon otettavat seikat ja vianmääritys   
+* [Tee raportista helpommin käytettävä toimintarajoitteisille ihmisille](desktop-accessibility.md)
 * Perusaluekaaviot eivät toimi arvojen vertailussa kerrostettujen alueiden eston vuoksi. Power BI käyttää läpinäkyvyyttä osoittamaan alueiden päällekkäisyyttä. Se kuitenkin toimii hyvin vain kahdella tai kolmella eri alueella. Kun haluat verrata trendiä yli kolmeen mittayksikköön, kokeile viivakaavioiden käyttämistä. Kun haluat verrata määrää yli kolmeen mittayksikköön, kokeile puukartan käyttämistä.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet

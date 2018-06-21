@@ -7,19 +7,19 @@ ms.reviewer: ajayan
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 10/12/2017
+ms.date: 06/08/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: f1580aeeb25d5159eff7fcb4759bb426e5ff0bfd
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 20352a729b43e15fd1cd67cb5d52c321c3d150d4
+ms.sourcegitcommit: b7839f2aa68c3626f55ee7e49c8392169d1ec67e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34251387"
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "34852252"
 ---
 # <a name="find-and-connect-to-an-organizational-content-pack"></a>Organisaation sisältöpaketin etsiminen ja siihen yhdistäminen
 > [!NOTE]
-> Oletko jo kuullut uusista *sovelluksista*? Sovellukset on uusi tapa jakaa sisältöä suurille kohderyhmille Power BI:ssä. Suosittelemme käyttämään sovelluksia organisaation sisältöpakettien tai vain luku -työtilojen sijaan. Lue [lisätietoja sovelluksista](service-install-use-apps.md).
+> Oletko jo kuullut uusista *sovelluksista*? Sovellukset on uusi tapa jakaa sisältöä suurille kohderyhmille Power BI:ssä. Ajan mittaan aiomme lakkauttaa organisaation sisältöpaketit, joten suosittelemme niiden sijaan sovellusten käyttöä. Lue [lisätietoja sovelluksista](service-install-use-apps.md).
 > 
 > 
 
@@ -51,5 +51,5 @@ Jos sisältöpaketin omistaja muuttaa sisältöpakettia, ja:
 ## <a name="next-steps"></a>Seuraavat vaiheet
 * [Organisaation sisältöpakettien esittely](service-organizational-content-pack-introduction.md)  
 * [Sovelluksen luominen ja jakaminen Power BI:ssä](service-create-distribute-apps.md)
-* Onko sinulla kysymyksiä? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)
+* Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)
 

@@ -1,30 +1,22 @@
 ---
-title: Kartan visualisointeihin ja Bing Maps -integrointiin liittyviä vinkkejä
+title: Vihjeitä ja vinkkejä karttoja varten (mukaan lukien Bing Map s-integrointi)
 description: 'Power BI:n kartan visualisointeihin, kuviin, sijainteihin, pituusasteisiin ja leveysasteisiin sekä niiden toimintaan Bing Mapsin kanssa liittyviä vinkkejä. '
-services: powerbi
-documentationcenter: ''
 author: mihart
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
+ms.reviewer: ''
 featuredvideoid: ajTPGNpthcg
-qualityfocus: monitoring
-qualitydate: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 01/18/2018
+ms.component: powerbi-desktop
+ms.topic: conceptual
+ms.date: 04/11/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 5a78481376d679025fe3ac8929dff8756eb61257
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 321ff4ec528ef9b72324758417e0f72d67258ac3
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/24/2018
-ms.locfileid: "30973977"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34295211"
 ---
 # <a name="tips-and-tricks-for-power-bi-map-visualizations"></a>Power BI:n kartan visualisointeihin liittyviä vinkkejä
 Power BI:n voi integroida Bing Mapsin kanssa, jolloin karttoja voidaan luoda oletusarvoisten karttakoordinaattien avulla (prosessia kutsutaan geokoodaukseksi). Power BI ja Bing Maps käyttävät algoritmeja oikean sijainnin määrittämiseen, mutta joskus sijainnin määritys perustuu parhaaseen arvaukseen. Jos Power BI ei pysty luomaan kartan visualisointia itse, se käyttää apuna Bing Mapsia. 

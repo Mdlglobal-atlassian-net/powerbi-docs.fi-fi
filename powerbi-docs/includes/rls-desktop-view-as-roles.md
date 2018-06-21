@@ -7,9 +7,9 @@ Sen jälkeen, kun olet luonut roolisi, voit testata roolin tuloksia Power BI Des
 
 ![](./media/rls-desktop-view-as-roles/powerbi-desktop-rls-view-as-roles-dialog.png)
 
-Valitse luomasi rooli ja valitse sitten **OK**, jotta voit ottaa käyttöön tarkastelemasi roolin. Raportit ainoastaan hahmontavat tiedot, jotka ovat merkittäviä kyseisen roolin kannalta.
+Valitse luomasi rooli ja valitse sitten **OK** ottaaksesi käyttöön tarkastelemasi roolin. Raportit ainoastaan hahmontavat tiedot, jotka ovat merkittäviä kyseisen roolin kannalta.
 
-Voit myös valita toisen käyttäjän ja määrittää tietyn käyttäjän. On parasta määrittää User Principal Name (UPN), jota Power BI -palvelu käyttää. Valitse **OK**, jolloin raportit hahmonnetaan sen perusteella, mitä käyttäjä näkee. 
+Voit myös valita **toisen käyttäjän** ja määrittää tietyn käyttäjän. On parasta määrittää Täydellinen käyttäjätunnus (UPN), jota Power BI -palvelu käyttää. Valitse **OK**, jolloin raportit hahmonnetaan sen perusteella, mitä käyttäjä näkee. 
 
 ![](./media/rls-desktop-view-as-roles/powerbi-desktop-rls-other-user.png)
 

@@ -1,33 +1,25 @@
 ---
 title: 'Organisaation sisältöpaketit: hallinta ja päivitys'
 description: Lue lisää organisaation sisältöpakettien hallitsemisesta, päivittämisestä ja poistamisesta Power BI:ssä.
-services: powerbi
-documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
-backup: ajayan
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ajayan
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 10/12/2017
+ms.component: powerbi-service
+ms.topic: conceptual
+ms.date: 06/08/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 4e48ce4269def6764630322ac798a8dd0e491861
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 1b7a111e1b240a37211c17bce4d497de2d864074
+ms.sourcegitcommit: b7839f2aa68c3626f55ee7e49c8392169d1ec67e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/24/2018
-ms.locfileid: "30815889"
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "34852298"
 ---
 # <a name="manage-update-and-delete-organizational-content-packs"></a>Organisaation sisältöpakettien hallinta, päivitys ja poistaminen
 > [!NOTE]
-> Oletko jo kuullut uusista *sovelluksista*? Sovellukset on uusi tapa jakaa sisältöä suurille kohderyhmille Power BI:ssä. Suosittelemme käyttämään sovelluksia organisaation sisältöpakettien tai vain luku -työtilojen sijaan. Lue [lisätietoja sovelluksista](service-install-use-apps.md).
+> Oletko jo kuullut uusista *sovelluksista*? Sovellukset on uusi tapa jakaa sisältöä suurille kohderyhmille Power BI:ssä. Ajan mittaan aiomme lakkauttaa organisaation sisältöpaketit, joten suosittelemme niiden sijaan sovellusten käyttöä. Lue [lisätietoja sovelluksista](service-install-use-apps.md).
 > 
 > 
 
@@ -80,7 +72,7 @@ Toinen sisältöpaketin luojien käytettävissä oleva muokkaustoiminto on sisä
 Sisältöpaketin luojana voit [ajastaa tietojoukkojen päivittymisen](refresh-data.md).  Kun luot sisältöpaketin ja lataat sen järjestelmään, sen mukana ladataan tietojoukkojen päivittymisaikataulu. Jos muutat päivittymisaikataulua, sinun on julkaistava sisältöpaketti uudelleen (katso edellä olevat ohjeet).
 
 ## <a name="delete-an-organizational-content-pack-from-appsource"></a>Organisaation sisältöpaketin poistaminen AppSourcesta
-Voit poistaa sisältöpaketin AppSourcesta vain, jos se olet itse luonut sen. 
+Voit poistaa sisältöpaketin AppSourcesta vain, jos se olet itse luonut sen. Jos olet luonut organisaation sisältöpaketin sovelluksen työtilaan ja päätät poistaa kyseisen työtilan, muista ensin poistaa sisältöpaketti. Jos poistat työtilan poistamatta ensin sisältöpakettia, menetät kaikki käyttöoikeudet kyseisiin sisältöpaketteihin ja sinun on otettava yhteyttä Microsoftin tukeen. 
 
 > [!TIP]
 > Lisäksi voit [poistaa yhteytesi sisältöpakettiin](service-organizational-content-pack-disconnect.md), jota et ole itse luonut. Se ei poista sisältöpakettia AppSourcesta.
@@ -96,5 +88,5 @@ Voit poistaa sisältöpaketin AppSourcesta vain, jos se olet itse luonut sen.
 ## <a name="next-steps"></a>Seuraavat vaiheet
 * [Johdanto organisaation sisältöpaketteihin](service-organizational-content-pack-introduction.md)
 * [Sovelluksen luonti ja jakaminen Power BI:ssä](service-create-distribute-apps.md) 
-* Onko sinulla muuta kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
+* Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
 

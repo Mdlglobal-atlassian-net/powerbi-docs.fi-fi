@@ -1,32 +1,24 @@
 ---
-title: Puukartat Power BI:ssä (Opetusohjelma)
-description: 'Opetusohjelma: puukartat Power BI:ssä'
-services: powerbi
-documentationcenter: ''
+title: Puukartat Power BI:ssä
+description: Puukartat Power BI:ssä
 author: mihart
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
+ms.reviewer: ''
 featuredvideoid: IkJda4O7oGs
-qualityfocus: no
-qualitydate: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-desktop
+ms.topic: conceptual
 ms.date: 01/23/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: a803256e5902ffc19e77c67a450d4895982b4b8b
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 8b3f49487677f00e1026c9eab813633f470e6b41
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/24/2018
-ms.locfileid: "30973837"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34295349"
 ---
-# <a name="treemaps-in-power-bi-tutorial"></a>Puukartat Power BI:ssä (Opetusohjelma)
+# <a name="treemaps-in-power-bi"></a>Puukartat Power BI:ssä
 Puukartoissa hierarkkiset tiedot näytetään sisäkkäisten suorakulmioiden joukkona.  Hierarkian kukin taso on edustettuna värillisenä suorakulmiona (jota kutsutaan usein ”haaraksi”), joka sisältää muita suorakulmioita (”lehtiä”).  Kunkin suorakulmion sisällä oleva alue määräytyy mitattavan kvantitatiivisen arvon perusteella, jolloin suorakulmiot järjestetään koon mukaan ylävasemmalta (suurin) alaoikealle (pienin).
 
 ![](media/power-bi-visualization-treemaps/pbi-nancy_viz_treemap.png)
@@ -90,5 +82,5 @@ Luokan tai Tietojen korostaminen yhdistelmäkaaviossa ristiinkorostaa ja ristiin
 [Visualisoinnin kiinnittäminen koontinäyttöön](service-dashboard-pin-tile-from-report.md)  
 [Power BI:n peruskäsitteet](service-basic-concepts.md)  
 
-Ilmenikö muuta kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)  
+Onko sinulla muuta kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)  
 

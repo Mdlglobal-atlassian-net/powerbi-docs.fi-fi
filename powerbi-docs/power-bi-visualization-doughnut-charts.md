@@ -1,31 +1,23 @@
 ---
-title: Rengaskaaviot Power BI:ssä (opetusohjelma)
-description: 'Opetusohjelma: rengaskaaviot Power BI:ssä'
-services: powerbi
-documentationcenter: ''
+title: Rengaskaaviot Power BI:ssä
+description: Rengaskaaviot Power BI:ssä
 author: mihart
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-desktop
+ms.topic: conceptual
 ms.date: 12/23/2017
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: dca772fd2a1b8f40fa61f1abc41145e8ff6e5a8a
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 5d8be3d160e8ea37ba9814c7bd78c3ad5a751d3b
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/24/2018
-ms.locfileid: "30973762"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34294192"
 ---
-# <a name="doughnut-charts-in-power-bi-tutorial"></a>Rengaskaaviot Power BI:ssä (opetusohjelma)
+# <a name="doughnut-charts-in-power-bi"></a>Rengaskaaviot Power BI:ssä
 Rengaskaavio muistuttaa ympyräkaaviota siten, että se näyttää osien suhteen kokonaisuuteen. Ainoa ero on se, että keskellä on tyhjää tilaa otsikkoa tai kuvaketta varten.
 
 ## <a name="create-a-doughnut-chart"></a>Rengaskaavion luominen

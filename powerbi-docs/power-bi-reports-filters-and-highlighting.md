@@ -1,29 +1,21 @@
 ---
 title: Tietoja Power BI -raporttien suodattimista ja korostamisesta
 description: Tietoja Power BI -raporttien suodattimista ja korostamisesta
-services: powerbi
-documentationcenter: ''
 author: mihart
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: monitoring
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 03/13/2018
+ms.component: powerbi-service
+ms.topic: conceptual
+ms.date: 05/26/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: ffbab0c1e203ce3fd8779b4eebca90debbb531e5
-ms.sourcegitcommit: 00b4911ab5fbf4c2d5ffc000a3d95b3149909c28
+ms.openlocfilehash: 7239351a7a9486aeeab53e4ab7fc5c3c3e877ff6
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/15/2018
-ms.locfileid: "30975432"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34561444"
 ---
 # <a name="about-filters-and-highlighting-in-power-bi-reports"></a>Tietoja Power BI -raporttien suodattimista ja korostamisesta
 ***Suodattimet*** poistavat kaikki muut tiedot paitsi ne, joihin haluat keskittyä.  ***Korostus*** ei suodata, koska se ei poista tietoja, vaan korostaa näkyvien tietojen alijoukon, jolloin korostamattomat tiedot pysyvät näkyvissä, mutta himmennettynä.
@@ -86,7 +78,7 @@ Valitse raportin kankaasta kenttä muun sivun suodattamiseksi ja korostamiseksi.
 
 ![](media/power-bi-reports-filters-and-highlighting/power-bi-adhoc-filter.gif)
 
-Kun suljet raportin, tekemäsi muutokset tallennetaan. Jos haluat kumota suodatuksen, valitse **Palauta oletusarvot** yläreunan valikkoriviltä.
+Kun suljet raportin, tekemäsi muutokset tallennetaan. Jos haluat kumota suodatuksen ja palata takaisin raportin laatijan oletusarvoiseen suodatukseen, jaotteluun, porautumiseen ja lajitteluun, valitse yläosan valikosta **Palauta oletukset**.
 
 ![](media/power-bi-reports-filters-and-highlighting/power-bi-reset-to-default.png)
 

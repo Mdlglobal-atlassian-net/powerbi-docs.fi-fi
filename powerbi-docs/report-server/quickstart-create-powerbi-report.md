@@ -1,30 +1,22 @@
 ---
-title: 'Pikaopas: Power BI -raportin luominen Power BI -raporttipalvelimeen'
+title: Power BI -raportin luominen Power BI -raporttipalvelimeen
 description: Ohjeet Power BI -raportin luomiseen Power BI -raporttipalvelimelle helposti ja nopeasti.
-services: powerbi
-documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 3/22/2018
+ms.component: powerbi-report-server
+ms.topic: conceptual
+ms.date: 05/18/2018
 ms.author: maggies
-ms.openlocfilehash: 7c0f7ad804a61aeade6f120f2a2d2bd048219ee2
-ms.sourcegitcommit: fe859130099d923ee30da6091efcc70a264dcba6
+ms.openlocfilehash: 0debedc6e768fb3158ebe5cb4bf820ed3dc14a58
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/28/2018
-ms.locfileid: "30976002"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34481413"
 ---
-# <a name="quickstart-create-a-power-bi-report-for-power-bi-report-server"></a>Pikaopas: Power BI -raportin luominen Power BI -raporttipalvelimeen
+# <a name="create-a-power-bi-report-for-power-bi-report-server"></a>Power BI -raportin luominen Power BI -raporttipalvelimeen
 Voit tallentaa ja hallita Power BI -raportteja Power BI -raporttipalvelimen verkkoportaalissa paikallisesti samalla tavalla kuin voit tallentaa Power BI -raportteja pilveen Power BI -palvelussa (https://powerbi.com). Luo ja muokkaa raportteja Power BI Desktopissa ja julkaise ne verkkoportaalissa. Raportin lukijat organisaatiossasi voivat tarkastella niitä selaimessa tai Power BI -mobiilisovelluksessa mobiililaitteillaan.
 
 ![Power BI -raportin verkkoportaali](media/quickstart-create-powerbi-report/report-server-powerbi-report.png)
@@ -132,14 +124,13 @@ Power BI -raporttipalvelimen raportit eivät tue näitä ominaisuuksia Power BI 
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 ### <a name="power-bi-desktop"></a>Power BI Desktop
-Power BI Desktop -raporttien luomiseen on olemassa runsaasti resursseja. Nämä linkit ovat hyvä kohta aloittaa.
+Power BI Desktop -raporttien luomiseen on olemassa runsaasti resursseja. Tämä linkki on hyvä aloituskohta.
 
 * [Aloita Power BI Desktopin käyttö](../desktop-getting-started.md)
-* Ohjattu oppiminen: [Power BI Desktopin käytön aloittaminen](../guided-learning/gettingdata.yml#step-2)
-
+* Ohjattu oppiminen: [Power BI Desktopin käytön aloittaminen](../guided-learning/gettingdata.yml?tutorial-step=2)
 
 ### <a name="power-bi-report-server"></a>Power BI -raporttipalvelin
 * [Asenna Power BI Desktop (optimoitu Power BI -raporttipalvelimelle)](install-powerbi-desktop.md)  
-* [Power BI -raporttipalvelimen käyttöopas](user-handbook-overview.md)  
+* [Mikä on Power BI -raporttipalvelin?](get-started.md)  
 
-Onko sinulla muuta kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
+Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
