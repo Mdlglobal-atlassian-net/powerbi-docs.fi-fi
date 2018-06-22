@@ -15,6 +15,7 @@ ms.sourcegitcommit: e6db826c2f43a69e4c63d5f4920baa8f66bc41be
 ms.translationtype: HT
 ms.contentlocale: fi-FI
 ms.lasthandoff: 05/23/2018
+ms.locfileid: "34455969"
 ---
 # <a name="power-bi-desktop-privacy-levels"></a>Power BI Desktopin yksityisyystasot
 **Power BI Desktopissa** yksityisyystasoilla määritetään eristystaso, jolla yksi tietolähde eristetään muista tietolähteistä. Rajoittava eristystaso estää tietojen vaihtamisen tietolähteiden välillä, mutta se voi myös rajoittaa toimintaa ja vaikuttaa suorituskykyyn.

@@ -14,6 +14,7 @@ ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
 ms.translationtype: HT
 ms.contentlocale: fi-FI
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34295257"
 ---
 # <a name="annotate-and-share-a-tile-report-or-visual-in-power-bi-mobile-apps"></a>Merkintöjen lisääminen ja ruudun, raportin tai visualisoinnin jakaminen Power BI -mobiilisovelluksissa
 Koskee seuraavia:

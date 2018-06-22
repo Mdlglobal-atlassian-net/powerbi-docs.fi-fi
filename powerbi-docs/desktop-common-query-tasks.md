@@ -15,6 +15,7 @@ ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
 ms.translationtype: HT
 ms.contentlocale: fi-FI
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34290656"
 ---
 # <a name="common-query-tasks-in-power-bi-desktop"></a>Yleiset kyselytehtävät Power BI Desktopissa
 Power BI Desktopin **kyselyeditorissa** on muutamia usein käytettyjä tehtäviä. Tässä asiakirjassa kerrotaan näistä yleisistä tehtävistä ja annetaan linkkejä lisätietoihin. 

@@ -15,6 +15,7 @@ ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
 ms.translationtype: HT
 ms.contentlocale: fi-FI
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34290863"
 ---
 # <a name="using-directquery-in-power-bi"></a>DirectQueryn käyttäminen Power BI:ssä
 Voit muodostaa yhteyksiä kaikenlaisiin tietolähteisiin, kun käytät **Power BI Desktopia** tai **Power BI -palvelua**. Lisäksi voit muodostaa näitä yhteyksiä eri tavoin. Voit joko *tuoda* tietoja Power BI:hin, mikä on yleisin tapa hakea, tai voit muodostaa yhteyden tietoihin suoraan niiden alkuperäisessä lähdesäilössä. Tätä tapaa kutsutaan nimellä **DirectQuery**. Tässä artikkelissa kerrotaan **DirectQuerystä** ja sen toiminnoista. Artikkelissa käsitellään seuraavia aiheita:

@@ -15,6 +15,7 @@ ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
 ms.translationtype: HT
 ms.contentlocale: fi-FI
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34290610"
 ---
 # <a name="directquery-and-sap-hana"></a>DirectQuery ja SAP HANA
 Voit muodostaa yhteyden **SAP HANA** -tietolähteisiin suoraan **DirectQueryn** avulla. Voit muodostaa yhteyden SAP HANA -tietolähteisiin kahdella tavalla:

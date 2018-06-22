@@ -1,28 +1,20 @@
 ---
 title: Tutustu ruutuihin Power BI -mobiilisovelluksissa
 description: Ruudut ovat reaaliaikaisia tilannevedoksia tiedoistasi kiinnitettyinä koontinäyttöön. Lue lisää vuorovaikutuksesta ruutujen kanssa Power BI -mobiilisovelluksissa.
-services: powerbi
-documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-mobile
+ms.topic: conceptual
 ms.date: 10/13/2017
 ms.author: maggies
-ms.openlocfilehash: 062031560c8b047837dffacb81b45fff4f06e0d9
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: 4680ab3709f1a2cbe56445e6719ea4de15396eb0
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/13/2017
-ms.locfileid: "30972067"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34297649"
 ---
 # <a name="explore-tiles-in-the-power-bi-mobile-apps"></a>Tutustu ruutuihin Power BI -mobiilisovelluksissa
 Koskee seuraavia:
@@ -134,6 +126,6 @@ Power BI -mobiilisovelluksissa avaat ruutuja kohdistustilassa ja olet vuorovaiku
 4. Sulkea ruudun ja palata koontinäyttöön napauttamalla taaksepäin osoittavaa nuolta tai takaisin-painiketta.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
-* [Aloita Power BI:n käyttäminen](service-get-started.md)
-* Ilmenikö kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)
+* [Power BI:n käytön aloittaminen](service-get-started.md)
+* Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)
 

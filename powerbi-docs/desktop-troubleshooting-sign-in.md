@@ -15,6 +15,7 @@ ms.sourcegitcommit: 998b79c0dd46d0e5439888b83999945ed1809c94
 ms.translationtype: HT
 ms.contentlocale: fi-FI
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34226709"
 ---
 # <a name="troubleshooting-sign-in-for-power-bi-desktop"></a>Power BI Desktopin kirjautumisongelmien vianmääritys
 Saatat **Power BI Desktopiin** kirjautuessasi kohdata ongelmia. Kirjautumisongelmiin on kaksi yleistä syitä: **välityspalvelimen todennusvirheet** ja **ei-HTTPS-protokollan URL-osoitteen uudelleenohjausvirheet**. 

@@ -15,6 +15,7 @@ ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
 ms.translationtype: HT
 ms.contentlocale: fi-FI
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34289989"
 ---
 # <a name="power-bi-data-source-prerequisites"></a>Power BI -tietolähde-edellytykset
 Power BI tukee objektien tietyn palvelun versiota jokaisella tietopalvelulla. Lisätietoja Power BI:ssä käytettävistä tietolähteistä on ohjeaiheessa [Tietolähteet](desktop-data-sources.md). Seuraavassa taulukossa kuvataan nämä vaatimukset.

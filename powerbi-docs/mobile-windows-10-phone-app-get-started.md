@@ -10,10 +10,11 @@ ms.topic: conceptual
 ms.date: 12/05/2017
 ms.author: maggies
 ms.openlocfilehash: 6cd1c8aec1bf31a8cae43074531014cbeef71bd5
-ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34295119"
 ---
 # <a name="get-started-with-the-power-bi-mobile-app-for-windows-10"></a>Windows 10:n Power BI -mobiilisovelluksen käytön aloittaminen
 Windows 10:n Power BI -mobiilisovellus tuo Power BI:n tablettiin tai puhelimeen ja sen myötä ajan tasalla olevan, kosketuskäyttöisen mobiiliyhteyden yritystietoihisi. Tarkastele ja käytä yrityksesi koontinäyttöjä missä tahansa kätevästi [Windowsin Aloitusnäytöllä](mobile-pin-dashboard-start-screen-windows-10-phone-app.md).
@@ -25,7 +26,7 @@ Voit [luoda koontinäyttöjä ja raportteja Power BI -palvelussa](service-get-st
 Sitten voit käyttää koontinäyttöjä ja raportteja, tutkia tietoja ja jakaa niitä – kaikki voidaan tehdä Windows 10:n Power BI -mobiilisovelluksesta käsin.
 
 ## <a name="first-things-first"></a>Aloitetaan tärkeimmästä
-* [**Hanki Windows 10:n Power BI -mobiilisovellus ** ](http://go.microsoft.com/fwlink/?LinkID=526478) Windows Storesta.
+* [**Hanki Windows 10:n Power BI -mobiilisovellus**  ](http://go.microsoft.com/fwlink/?LinkID=526478) Windows Storesta.
   
   Laitteessa on oltava käytössä Windows 10. Sovellusta voidaan käyttää laitteissa, joissa on vähintään 3 Gigatavua RAM-muistia ja 8 Gigatavua tallennustilaa.
    
@@ -121,5 +122,5 @@ Seuraavassa on joitakin muita asioita, voit tehdä Power BI -sovelluksessa Windo
 ## <a name="next-steps"></a>Seuraavat vaiheet
 * [Lataa Power BI -sovellus](http://go.microsoft.com/fwlink/?LinkID=526478) Windows Storesta  
 * [Aloita Power BI:n käyttäminen](service-get-started.md)
-* Ilmenikö kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)
+* Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)
 

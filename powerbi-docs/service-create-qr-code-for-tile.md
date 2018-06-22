@@ -1,29 +1,21 @@
 ---
 title: QR-koodin luominen ruutuun Power BI ‑mobiilisovelluksissa käytettäväksi
 description: Power BI:n QR-koodien avulla voit yhdistää mitä tahansa todellisesta maailmasta suoraan siihen liittyviin Power BI ‑mobiilisovelluksen BI-tietoihin ilman hakutoimintoja.
-services: powerbi
-documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 03/07/2018
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: e7f37a076f913d50f5a6b654aa79b50d61bc5add
-ms.sourcegitcommit: 00b4911ab5fbf4c2d5ffc000a3d95b3149909c28
+ms.openlocfilehash: 3b0bf5e54ad6486134eb641d276fc9233b001157
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/15/2018
-ms.locfileid: "29925048"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34249705"
 ---
 # <a name="create-a-qr-code-for-a-tile-in-power-bi-to-use-in-the-mobile-apps"></a>QR-koodin luominen Power BI:n ruutuun mobiilisovelluksissa käytettäväksi
 Power BI:n QR-koodien avulla voit yhdistää mitä tahansa todellisesta maailmasta suoraan siihen liittyviin BI-tietoihin – siirtymis- tai hakutoimintoja ei tarvita.
@@ -63,5 +55,5 @@ Power BI luo QR-koodin JPG-tiedostona, joka on valmis tulostettavaksi.
 * [Power BI:n yhdistäminen reaalimaailman tietoihin](mobile-apps-data-in-real-world-context.md) mobiilisovellusten avulla
 * [Power BI:n QR-koodin lukeminen mobiililaitteella](mobile-apps-qr-code.md)
 * [QR-koodin luominen raportista](service-create-qr-code-for-report.md)
-* Ilmenikö kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)
+* Onko sinulla kysymyksiä? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)
 
