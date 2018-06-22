@@ -1,29 +1,21 @@
 ---
 title: Power BI Desktopin kyselyiden yleiskatsaus
 description: Power BI Desktopin kyselyiden yleiskatsaus
-services: powerbi
-documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 12/06/2017
+ms.component: powerbi-desktop
+ms.topic: conceptual
+ms.date: 05/02/2018
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 937cbf39d08bd830c16e9b2634f3d5a747689f54
-ms.sourcegitcommit: 5e1f7d2673efe25c47b9b9f315011055bfe92c8f
+ms.openlocfilehash: 35171c5b1d61b9df860b72ee98d8fb63a875092d
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/09/2018
-ms.locfileid: "30975097"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34286378"
 ---
 # <a name="query-overview-in-power-bi-desktop"></a>Power BI Desktopin kyselyiden yleiskatsaus
 **Power BI Desktopilla** voit muodostaa yhteyden kasvavaan tietomäärään, luoda houkuttelevia ja perustavanlaatuisia raportteja ja jakaa työsi hedelmät muiden kanssa, jotka voivat taas hyödyntää niitä omassa työssään ja laajentaa liiketoimintatietojaan.

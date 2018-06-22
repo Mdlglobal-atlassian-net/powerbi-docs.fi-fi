@@ -14,6 +14,7 @@ ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
 ms.translationtype: HT
 ms.contentlocale: fi-FI
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34296260"
 ---
 # <a name="how-to-configure-power-bi-report-scheduled-refresh"></a>Power BI -raportin ajoitetun päivityksen määrittäminen
 Jotta voit päivittää Power BI -raportin tiedot, sinun on luotava ajoitetun päivityksen malli. Tämä tehdään Power BI -raportin *Hallinta*-alueella.

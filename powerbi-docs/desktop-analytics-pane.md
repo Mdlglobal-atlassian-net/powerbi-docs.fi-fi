@@ -15,6 +15,7 @@ ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
 ms.translationtype: HT
 ms.contentlocale: fi-FI
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34287666"
 ---
 # <a name="using-the-analytics-pane-in-power-bi-desktop"></a>Analytiikka-ruudun käyttäminen Power BI Desktopissa
 **Power BI Desktopin** **Analytiikka**-ruudussa voit lisätä dynaamisia *viiteviivoja* visualisointeihin ja määrittää kohdistuksen tärkeille trendeille tai merkityksellisille tiedoille. **Analytiikka**-ruutu sijaitsee Power BI Desktopin **Visualisoinnit**-alueella.

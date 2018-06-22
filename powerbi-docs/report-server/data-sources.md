@@ -10,10 +10,11 @@ ms.topic: conceptual
 ms.date: 05/17/2018
 ms.author: maghan
 ms.openlocfilehash: 0f06d5c3742ea5187ff41f6f8974c8a81e5d1d33
-ms.sourcegitcommit: dcde910817720c05880ffe24755034f916c9b890
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34310448"
 ---
 # <a name="power-bi-report-data-sources-in-power-bi-report-server"></a>Power BI -raporttien tietolähteet Power BI -raporttipalvelimessa
 Power BI -raportit voivat muodostaa yhteyden useisiin tietolähteisiin. Käytettävissä on eri tietolähteitä riippuen siitä, miten tietoja käytetään. Tiedot voidaan tuoda tai tiedoille voidaan tehdä kyselyitä suoraan DirectQuerylla tai reaaliaikaisella SQL Server Analysis Services -yhteydellä.
@@ -122,7 +123,7 @@ Power BI -raporttipalvelin ei tue OAuth-pohjaista todennusta mallipäivityksess�
 | SQL Server Analysis Services |Ei |Ei |Kyllä |Kyllä |
 | Verkko |Kyllä |Ei |Kyllä |Kyllä |
 | Azure SQL -tietokanta |Ei |Ei |Kyllä |Ei |
-| Azure SQL -tietovarasto |Ei |Ei |Kyllä |Ei |
+| Azure SQL Data Warehouse |Ei |Ei |Kyllä |Ei |
 | Active Directory |Ei |Ei |Kyllä |Kyllä |
 | Amazon Redshift |Ei |Ei |Ei |Ei |
 | Azure Blob Storage |Kyllä |Kyllä |Ei |Ei |
@@ -199,7 +200,7 @@ Power BI -raporttipalvelin ei tue OAuth-pohjaista todennusta DirectQuerylle.
 | SQL Server -tietokanta |Ei |Ei |Kyllä |Kyllä |Kyllä |
 | SQL Server Analysis Services |Ei |Ei |Kyllä |Kyllä |Kyllä |
 | Azure SQL -tietokanta |Ei |Ei |Kyllä |Ei |Ei |
-| Azure SQL -tietovarasto |Ei |Ei |Kyllä |Ei |Ei |
+| Azure SQL Data Warehouse |Ei |Ei |Kyllä |Ei |Ei |
 | Oracle-tietokanta |Ei |Ei |Kyllä |Kyllä |Kyllä |
 | SAP Business Warehouse -palvelin |Ei |Ei |Kyllä |Ei |Kyllä |
 | SAP HANA -tietokanta |Ei |Ei |Kyllä |Kyllä |Ei |
@@ -209,5 +210,5 @@ Power BI -raporttipalvelin ei tue OAuth-pohjaista todennusta DirectQuerylle.
 ## <a name="next-steps"></a>Seuraavat vaiheet
 Nyt kun olet muodostanut yhteyden tietolähteeseen, voit [luoda Power BI -raportin](quickstart-create-powerbi-report.md) sen tiedoista.
 
-Ilmenikö muuta kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
+Onko sinulla muuta kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
 

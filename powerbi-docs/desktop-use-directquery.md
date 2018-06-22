@@ -15,6 +15,7 @@ ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
 ms.translationtype: HT
 ms.contentlocale: fi-FI
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34289897"
 ---
 # <a name="use-directquery-in-power-bi-desktop"></a>DirectQueryn käyttö Power BI Desktopissa
 Kun muodostat yhteyden tietolähteeseen, voit **Power BI Desktopin** avulla aina tuoda kopion tiedoista **Power BI Desktopiin**. Joillekin tietolähteille on saatavilla vaihtoehtoinen menetelmä: yhteyden muodostaminen suoraan tietolähteeseen **DirectQueryn** avulla.
