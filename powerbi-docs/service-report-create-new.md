@@ -1,37 +1,29 @@
 ---
-title: 'Opetusohjelma - Uuden raportin luominen tietojoukosta '
+title: 'Uuden raportin luominen tietojoukosta '
 description: Uuden raportin luominen tietojoukosta.
-services: powerbi
-documentationcenter: ''
 author: mihart
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: monitoring
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 03/01/2018
+ms.component: powerbi-service
+ms.topic: conceptual
+ms.date: 03/24/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 7da16deb3e5919d509a5cbbb7fd845914c8c4ea4
-ms.sourcegitcommit: 5e1f7d2673efe25c47b9b9f315011055bfe92c8f
+ms.openlocfilehash: 377ea4acc1a6fb41101571ac3ed0be2f3e50889b
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/09/2018
-ms.locfileid: "30974752"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34246153"
 ---
-# <a name="create-a-new-power-bi-report-by-importing-a-dataset"></a>Uuden raportin luominen tuomalla tietojoukko
-Olet lukenut [Power BI -raportit](service-reports.md) ja haluat nyt luoda omasi. Voit luoda raportin monella eri tavalla, ja aloitamme tämän artikkelin luomalla hyvin perustasoisen raportin Excel-tietojoukosta. Kun ymmärrät raportin luomisen perusteet, **Seuraavat vaiheet** näytön alareunassa vievät sinut monimutkaisempia raportteja koskevaan aiheisiin.  
+# <a name="create-a-new-report-in-power-bi-service-by-importing-a-dataset"></a>Uuden raportin luominen Power BI -palvelussa tuomalla tietojoukko
+Olet lukenut [Power BI -raportit](service-reports.md) ja haluat nyt luoda omasi. Voit luoda raportin monella eri tavalla, ja aloitamme tämän artikkelin luomalla hyvin perustasoisen raportin Excel-tietojoukosta käyttämällä Power BI -palvelua. Kun ymmärrät raportin luomisen perusteet, **Seuraavat vaiheet** näytön alareunassa vievät sinut monimutkaisempia raportteja koskevaan aiheisiin.  
 
 > **VIHJE**: Voit luoda raportin kopioimalla aiemmin luodun raportin, katso [Kopioi raportti](power-bi-report-copy.md)
 > 
 ### <a name="prerequisites"></a>Edellytykset
-- Power BI -palvelu (katso raporttien luominen Power BI Desktopista kohdasta [Työpöydän raporttinäkymä](desktop-report-view.md)   
+- Power BI -palvelu (katso raporttien luominen Power BI Desktopissa kohdasta [Työpöydän raporttinäkymä](desktop-report-view.md) )  
 - Jälleenmyyntianalyysimallin tietojoukko
 
 ## <a name="import-the-dataset"></a>Tuo tietojoukko
