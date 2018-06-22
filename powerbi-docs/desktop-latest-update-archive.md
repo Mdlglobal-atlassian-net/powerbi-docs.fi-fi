@@ -1,40 +1,27 @@
 ---
 title: Power BI Desktopin aiemmat kuukausipäivitykset
 description: Ominaisuuspäivityksiä Power BI Desktopin aiemmista versioista
-services: powerbi
-documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: identified
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: get-started-article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 04/04/2018
+ms.component: powerbi-desktop
+ms.topic: conceptual
+ms.date: 05/07/2018
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 50dd3dcf791cd3f2e366957ad37c830b7f4c35f2
-ms.sourcegitcommit: e571de2afa3f34fac06a6aab0df0e8940cb00a0d
+ms.openlocfilehash: f371e9bd4e1681d2e8fa06b1aeabfcd58a5dc4d1
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/05/2018
-ms.locfileid: "30976792"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34291162"
 ---
 # <a name="previous-monthly-updates-to-power-bi-desktop"></a>Power BI Desktopin aiemmat kuukausipäivitykset
 
 Tämä artikkeli käsittelee **Power BI Desktopin** aiempia päivityksiä. Tiedot viimeisimmän kuukauden päivityksestä ovat ohjeaiheessa [ **Power BI Desktopin** uusimmat päivitykset](desktop-latest-update.md).
 
-Seuraavat osiot käsittelevät **Power BI Desktopin** aiempien kuukausien päivityksiä.
-
 Voit halutessasi [ladata Power BI Desktopin uusimman version](https://powerbi.microsoft.com/desktop). Jos käytössäsi on Windows 10, voit hankkia **Power BI Desktopin** Microsoft Storesta. Kuukausittaiset versiot ovat samat riippumatta siitä, millä tavoin asennat **Power BI Desktopin**. Lisätietoja on [tässä artikkelissa](desktop-get-the-desktop.md). 
-
-
-**Power BI Desktopiin** on maaliskuun päivityksessä julkaistu jälleen hienoja ominaisuuksia.
 
 Kunkin päivityksen vieressä olevat linkit tarkoittavat seuraavaa:
 
@@ -45,7 +32,57 @@ Kunkin päivityksen vieressä olevat linkit tarkoittavat seuraavaa:
 
 Voit myös katsoa **Uusimmat päivitykset** -videon, joka on aivan tämän artikkelin alussa. Napsauta päivitysluettelon alla olevan videokuvan **toistokuvaketta**.
 
-Seuraavat päivitykset olivat uutta **Power BI Desktopissa** tässä kuussa:
+Seuraavat osiot käsittelevät **Power BI Desktopin** aiempien kuukausien päivityksiä.
+
+## <a name="april-2018-update-2575068501"></a>Huhtikuun 2018 päivitys (2.57.5068.501)
+
+Olemme erittäin tyytyväisiä huhtikuun **Power BI Desktop** -päivityksiin. Päivityksiä on tehty useilla alueilla. Toivottavasti voit niiden myötä laajentaa tulevia raporttejasi upeilla ja kauniilla visualisoinneilla. 
+
+
+### <a name="reporting"></a>Raportointi
+
+* Q&A:n hallintatyökalu [[video]](https://youtu.be/W_Nb73Od_AI?t=13s)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2018-feature-summary/#Q&AExplorer) 
+* Painikkeet toimintojen käynnistämiseen [[video]](https://youtu.be/W_Nb73Od_AI?t=9m42s) [[artikkeli]](desktop-buttons.md)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2018-feature-summary/#buttons) 
+* Yhdistelmäkaavion viivatyylit  [[video]](https://youtu.be/W_Nb73Od_AI?t=16m55s)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2018-feature-summary/#comboLines) 
+* Parannettu visualisointien oletusarvoinen lajittelu  [[video]](https://youtu.be/W_Nb73Od_AI?t=19m21s)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2018-feature-summary/#sort) 
+* Numeerinen osittaja nyt yleisesti saatavilla [[video]](https://youtu.be/W_Nb73Od_AI?t=21m13s)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2018-feature-summary/#numericSlicer) 
+
+### <a name="analytics"></a>Analysointi
+
+* Lingvistisen rakenteen päivitys  [[video]](https://youtu.be/W_Nb73Od_AI?t=22m)  [[artikkeli]](power-bi-custom-visuals-organization.md)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2018-feature-summary/#linguisticSchema) 
+* Uusi DAX-funktio: COMBINEVALUES()  [[video]](https://youtu.be/W_Nb73Od_AI?t=23m37s)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2018-feature-summary/#combineValues) 
+
+### <a name="custom-visuals"></a>Mukautetut visualisoinnit
+
+* Mukautetut visualisoinnit nyt yleisesti saatavilla [[video]](https://youtu.be/W_Nb73Od_AI?t=26m11s)  [[artikkeli]](power-bi-custom-visuals-organization.md)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2018-feature-summary/#organizationalVisuals) 
+* Monia uusia mukautettuja visualisointeja  [[video]](https://youtu.be/W_Nb73Od_AI?t=28m8s)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2018-feature-summary/#overviewByCloudScope) 
+
+### <a name="data-connectivity"></a>Tietoyhteydet
+
+* Adobe Analytics -yhdistin nyt yleisesti saatavilla [[video]](https://youtu.be/kuI6MMzDh34?t=32m) [[artikkeli]](desktop-multi-select.md)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2018-feature-summary/#adobeAnalytics) 
+* SAP HANA -yhdistimen parannus: portin valinta  [[video]](https://youtu.be/kuI6MMzDh34?t=32m44s)  [[artikkeli]](desktop-directquery-sap-hana.md)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2018-feature-summary/#sapHana) 
+* Dynamics 365 Business Central -yhdistin  [[video]](https://youtu.be/kuI6MMzDh34?t=34m10s)  [[artikkeli]](desktop-directquery-sap-hana.md)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2018-feature-summary/#dynamics365BusinessCentral) 
+
+
+
+> [!NOTE]
+> Voit myös [tutustua kaikkiin Power BI Desktopille saatavilla oleviin tietolähteisiin](desktop-data-sources.md). Luettelo kasvaa jatkuvasti, joten se kannattaa tarkistaa usein.
+
+Haluatko lisätietoja näistä päivityksistä? Tutustu [blogikirjoitukseen](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2018-feature-summary), josta saat tarkempia tietoja kustakin uudesta ominaisuudesta (tämä on sama blogikirjoitus, johon viitataan yllä olevassa luettelossa).
+
+
+Seuraavassa videossa esitellään jokainen näistä päivityksistä. Näet videon myös blogikirjoituksen kautta.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/W_Nb73Od_AI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+> [!NOTE]
+> Sinua saattavat myös kiinnostaa [Power BI -palvelun uudet ominaisuudet](service-whats-new.md). Tutustu myös [Power BI -mobiilisovellusten uutuuksiin](mobile-whats-new-in-the-mobile-apps.md).
+
+
+
+## <a name="march-2018-update-"></a>Maaliskuun 2018 päivitys ()
+
+**Power BI Desktopiin** on maaliskuun päivityksessä julkaistu jälleen hienoja ominaisuuksia. Seuraavat päivitykset olivat uutta **Power BI Desktopissa** maaliskuussa 2017:
 
 ### <a name="reporting"></a>Raportointi
 
