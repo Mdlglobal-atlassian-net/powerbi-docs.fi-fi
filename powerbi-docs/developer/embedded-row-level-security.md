@@ -9,11 +9,12 @@ ms.component: powerbi-developer
 ms.topic: conceptual
 ms.date: 02/22/2018
 ms.author: maghan
-ms.openlocfilehash: 218f4cd0aaaa5ffc8cab3a06b06af9544b02143d
-ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
+ms.openlocfilehash: 806ec6051cf8b77dfe17664d82e6add40147f0ed
+ms.sourcegitcommit: 4b61588e3ab3c8bbb17276402dbf7fa00085a266
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35301730"
 ---
 # <a name="use-row-level-security-with-power-bi-embedded-content"></a>Rivitason suojaus Power BI:n upotetussa sisällössä
 Rivitason suojauksen (row level security, RLS) avulla käyttäjien käyttöoikeuksia koontinäyttöjen, ruutujen, raporttien ja tietojoukkojen tietoihin voidaan rajoittaa. Eri käyttäjät voivat nähdä eri tiedot käyttäessään kyseisiä kohteita. Upottaminen tukee rivitason suojausta.
@@ -75,9 +76,9 @@ Kun suodatinta käytetään näin, kaikki **Alue-**, **Myymälä-** ja **Myynti*
 ## <a name="applying-user-and-role-to-an-embed-token"></a>Käyttäjän ja roolin käyttäminen upotustunnukseen
 Nyt kun Power BI Desktop -roolit on määritetty, sovelluksesi on määritettävä, jotta voit hyödyntää rooleja.
 
-Sovelluksesi todentaa ja valtuuttaa käyttäjäsi, ja upotettavien tunnusten avulla heille voidaan myöntää käyttöoikeudet valittuun Power BI Embedded -raporttiin. Power BI Embedded ei sisällä tietoja siitä, kuka käyttäjä on. Jotta rivitason suojaus toimii, sinun on välitettävä käyttäjätietoja upotuksen tunnuksen osana. Voit tehdä tämän [GenerateToken](https://msdn.microsoft.com/library/mt784614.aspx)-ohjelmointirajapinnalla.
+Sovelluksesi todentaa ja valtuuttaa käyttäjäsi, ja upotettavien tunnusten avulla heille voidaan myöntää käyttöoikeudet valittuun Power BI Embedded -raporttiin. Power BI Embedded ei sisällä tietoja siitä, kuka käyttäjä on. Jotta rivitason suojaus toimii, sinun on välitettävä käyttäjätietoja upotuksen tunnuksen osana. Voit tehdä tämän [Tunnuksen upotus](https://docs.microsoft.com/rest/api/power-bi/embedtoken)-ohjelmointirajapinnalla.
 
-[GenerateToken](https://msdn.microsoft.com/library/mt784614.aspx)-ohjelmointirajapinta tukee käyttäjätietojen luetteloa, joka sisältää viittauksen oleellisiin tietojoukkoihin. Jotta rivitason suojaus toimii, sinun on välitettävä seuraavat tiedot osana käyttäjätietoja.
+Ohjelmointirajapinta tukee käyttäjätietojen luetteloa, joka sisältää viittauksen oleellisiin tietojoukkoihin. Jotta rivitason suojaus toimii, sinun on välitettävä seuraavat tiedot osana käyttäjätietoja.
 
 * **käyttäjänimi (pakollinen)** – Tämä on merkkijono, jonka avulla käyttäjä voidaan rivitason suojauksen sääntöjä käytettäessä. Luettelossa voi olla vain yksi käyttäjä.
 * **roolit (pakollinen)** – Merkkijono, joka sisältää rivitason suojausta käytettäessä valittavat säännöt. Jos välitettäviä rooleja on useampi kuin yksi, ne tulisi välittää merkkijonotaulukkona.
@@ -177,7 +178,7 @@ Jos muodostat yhteyden REST-ohjelmointirajapintaan, voit lisätä mukautettuja t
 * Käyttäjien määrittäminen rooleihin Power BI -palvelussa ei vaikuta rivitason suojaukseen upotuksen tunnusta käytettäessä.
 * Power BI -palvelu ei sovella rivitason suojauksen asetuksia järjestelmänvalvojiin tai jäseniin, joilla on muokkausoikeudet, mutta niitä sovelletaan tietoihin, kun annat upotustunnuksen sisältävät käyttäjätiedot.
 * Reaaliaikaisia Analysis Services -yhteyksiä tuetaan paikallisissa palvelimissa.
-* Reaaliaikaiset Azure Analysis Services -yhteydet tukevat suodattamista roolien mukaan, mutta eivät dynaamisesti käyttäjänimen mukaan.
+* Reaaliaikaiset Azure Analysis Services -yhteydet tukevat suodattamista roolien mukaan, mutta eivät dynaamisesti käyttäjänimen mukaan. Dynaaminen suodatus voidaan tehdä CustomData-toiminnon avulla.
 * Jos pohjana oleva tietojoukko ei vaadi rivitason suojausta, GenerateToken-pyyntö **ei** saa sisältää käytössä olevia käyttäjätietoja.
 * Jos pohjana oleva tietojoukko on pilvimalli (välimuistissa oleva tai DirectQuery-malli), käytössä olevien käyttäjätietojen on sisällettävä vähintään yksi rooli, tai roolimääritystä ei tehdä.
 * Käyttäjätietojen luettelo mahdollistaa useat käyttäjätietojen tunnukset koontinäyttöjen upotusta varten. Luettelo sisältää yksittäisen käyttäjän tiedot kaikille muille kohdetyypeille.

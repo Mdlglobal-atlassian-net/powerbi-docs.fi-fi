@@ -9,12 +9,12 @@ ms.component: powerbi-developer
 ms.topic: conceptual
 ms.date: 01/05/2017
 ms.author: maghan
-ms.openlocfilehash: 76d07c8384123a303c8801a45ecd05b9e6ed0321
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 96b29c9dc6c384b663ef375d4968dedb011bd05d
+ms.sourcegitcommit: 8ee0ebd4d47a41108387d13a3bc3e7e2770cbeb8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34289460"
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34813108"
 ---
 # <a name="push-data-into-a-power-bi-dataset"></a>Tietojen työntäminen Power BI -tietojoukkoon
 Power BI ‑ohjelmointirajapinnan avulla voit työntää tietoja Power BI -tietojoukkoon. Voit esimerkiksi laajentaa aiemmin luotua liiketoiminnan työnkulkua ja työntää avaintietoja tietojoukkoon. Tässä tapauksessa haluat työntää Tuote-taulukon sisältävän Myyntimarkkinointi-tietojoukon tietojoukkoon.
@@ -31,14 +31,14 @@ Tarvitset Azure Active Directoryn (Azure AD) ja [Power BI -tilin](create-an-azur
 Seuraava osa sisältää yleistä keskustelua Power BI -ohjelmointirajapinnan toiminnoista, joilla tiedot työnnetään.
 
 ## <a name="power-bi-api-operations-to-push-data"></a>Power BI -ohjelmointirajapinnan toiminnot tietojen työntämiseksi
-Power BI:n REST‑ohjelmointirajapinnan avulla voit työntää tietolähteitä Power BI:hin. Kun sovellus lisää rivejä tietojoukkoon, koontinäytön ruudut päivittyvät automaattisesti päivitetyillä tiedoilla. Käytät tietojen työntämiseen [Luo tietojoukko](https://msdn.microsoft.com/library/mt203562.aspx) -toimintoa yhdessä [Lisää rivejä](https://msdn.microsoft.com/library/mt203561.aspx) -toiminnon kanssa. Käytät tietojoukon löytämiseen [Hae tietojoukot](https://msdn.microsoft.com/library/mt203567.aspx) -toimintoa. Voit missä tahansa näistä toiminnoista välittää ryhmän tunnuksen ja käsitellä kyseistä ryhmää. Saat luettelon ryhmätunnuksista käyttämällä [Hae ryhmät](https://msdn.microsoft.com/library/mt243842.aspx) -toimintoa.
+Power BI:n REST‑ohjelmointirajapinnan avulla voit työntää tietolähteitä Power BI:hin. Kun sovellus lisää rivejä tietojoukkoon, koontinäytön ruudut päivittyvät automaattisesti päivitetyillä tiedoilla. Käytät tietojen työntämiseen [Julkaise tietojoukko](https://docs.microsoft.com/rest/api/power-bi/pushdatasets) -toimintoa yhdessä [Julkaise rivejä](https://docs.microsoft.com/rest/api/power-bi/pushdatasets/datasets_postrows) -toiminnon kanssa. Käytät tietojoukon löytämiseen [Hae tietojoukot](https://docs.microsoft.com/rest/api/power-bi/datasets/getdatasets) -toimintoa. Voit missä tahansa näistä toiminnoista välittää ryhmän tunnuksen ja käsitellä kyseistä ryhmää. Saat luettelon ryhmätunnuksista käyttämällä [Hae ryhmät](https://docs.microsoft.com/rest/api/power-bi/groups/getgroups) -toimintoa.
 
 Seuraavassa luetellaan toiminnot, jotka työntävät tietoja tietojoukkoon:
 
-* [Luo tietojoukko](https://msdn.microsoft.com/library/mt203562.aspx)
-* [Hae tietojoukot](https://msdn.microsoft.com/library/mt203567.aspx)
-* [Lisää rivejä](https://msdn.microsoft.com/library/mt203561.aspx)
-* [Hae ryhmät](https://msdn.microsoft.com/library/mt243842.aspx)
+* [Julkaise tietojoukko](https://docs.microsoft.com/rest/api/power-bi/pushdatasets/datasets_postdataset)
+* [Hae tietojoukot](https://docs.microsoft.com/rest/api/power-bi/datasets/getdatasets)
+* [Julkaise rivit](https://docs.microsoft.com/rest/api/power-bi/pushdatasets/datasets_postrows)
+* [Hae ryhmät](https://docs.microsoft.com/rest/api/power-bi/groups/getgroups)
 
 Voit luoda tietojoukon Power BI:ssä välittämällä JavaScript Object Notation (JSON) -merkkijonon Power BI -palveluun. Lisätietoja JSON:stä on artikkelissa [Esittelyssä JSON](http://json.org/).
 
@@ -112,11 +112,7 @@ Aloita tietojen työntäminen tietojoukkoon katsomalla vasemman reunan siirtymis
 [Seuraava vaihe >](walkthrough-push-data-register-app-with-azure-ad.md)
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
-[Rekisteröidy Power BI:hin](create-an-azure-active-directory-tenant.md)  
-[Luo tietojoukko](https://msdn.microsoft.com/library/mt203562.aspx)  
-[Hae tietojoukot](https://msdn.microsoft.com/library/mt203567.aspx)  
-[Lisää rivejä](https://msdn.microsoft.com/library/mt203561.aspx)  
-[Hae ryhmät](https://msdn.microsoft.com/library/mt243842.aspx)  
+[Rekisteröidy Power BI -palveluun](create-an-azure-active-directory-tenant.md)  
 [Esittelyssä JSON](http://json.org/)  
 [Power BI REST -ohjelmointirajapinnan yleiskatsaus](overview-of-power-bi-rest-api.md)  
 Onko sinulla muuta kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)

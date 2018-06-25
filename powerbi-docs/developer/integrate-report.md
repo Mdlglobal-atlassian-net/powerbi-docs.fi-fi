@@ -7,13 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: conceptual
-ms.date: 10/05/2017
+ms.date: 05/25/2018
 ms.author: maghan
-ms.openlocfilehash: d2fa65587fdbd85aabd429d531b79e9e614d2f49
-ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
+ms.openlocfilehash: 032e0ed05d56d2d7f1e2b41cfd922999ff43ea94
+ms.sourcegitcommit: 8ee0ebd4d47a41108387d13a3bc3e7e2770cbeb8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34813361"
 ---
 # <a name="integrate-a-report-into-an-app-for-your-organization"></a>Raportin integrointi sovellukseen organisaatiolle
 Lue, miten voit integroida tai upottaa raportin verkkosovellukseen REST-ohjelmointirajapinnan kutsujen ja Power BI JavaScript -ohjelmointirajapinnan avulla organisaatiolle.
@@ -27,26 +28,30 @@ Jotta voit käydä läpi nämä vaiheittaiset ohjeet, tarvitset **Power BI** -ti
 > 
 > 
 
-Voit integroida raportin verkkosovellukseen **Power BI** REST -ohjelmointirajapinnan tai Power BI C# SDK:n avulla ja saada raportin Azure Active Directory (AD) -valtuutuksen **käyttöoikeustietueen** avulla. Voit sitten ladata raportin käyttämällä samaa käyttöoikeustietuetta. **Power BI** -ohjelmointirajapinta tarjoaa ohjelmallisen käyttöoikeuden tiettyihin **Power BI** -resursseihin. Katso lisätietoja artikkelista [Power BI REST -ohjelmointirajapinnan yleiskatsaus](https://msdn.microsoft.com/library/dn877544.aspx) ja [Power BI JavaScript -ohjelmointirajapinta](https://github.com/Microsoft/PowerBI-JavaScript).
+Voit integroida raportin verkkosovellukseen **Power BI** REST -ohjelmointirajapinnan tai Power BI C# SDK:n avulla ja saada raportin Azure Active Directory (AD) -valtuutuksen **käyttöoikeustietueen** avulla. Voit sitten ladata raportin käyttämällä samaa käyttöoikeustietuetta. **Power BI** -ohjelmointirajapinta tarjoaa ohjelmallisen käyttöoikeuden tiettyihin **Power BI** -resursseihin. Katso lisätietoja artikkeleista [Power BI REST -ohjelmointirajapinta](https://docs.microsoft.com/rest/api/power-bi/) ja [Power BI JavaScript -ohjelmointirajapinta](https://github.com/Microsoft/PowerBI-JavaScript).
 
 ## <a name="download-the-sample"></a>Mallin lataaminen
-Tässä artikkelissa näytetään koodi, jota käytetään [integrate-report-web-app](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/User%20Owns%20Data/integrate-report-web-app)-mallissa GitHubissa. Näiden vaiheittaisten ohjeiden noudattamiseksi voit ladata mallin.
+Tässä artikkelissa näytetään koodi, jota käytetään [integrate-report-web-app](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/User%20Owns%20Data/integrate-report-web-app)-mallissa GitHubissa. Voit ladata mallin, jonka avulla voit noudattaa näitä vaiheittaisia ohjeita.
 
-## <a name="step-1---register-an-app-in-azure-ad"></a>Vaihe 1 – Rekisteröi sovellus Azure AD:ssä
+Voit käyttää [Perehdyttämiskokemustyökalua](https://aka.ms/embedsetup/UserOwnsData) ladataksesi mallisovelluksen ja päästäksesi aloittamaan nopeasti.
+
+Jos haluat määrittää ympäristön manuaalisesti, jatka lukemista.
+
+## <a name="step-1---register-an-app-in-azure-ad"></a>Vaihe 1 – rekisteröi sovellus Azure AD:ssä
 Sinun on rekisteröitävä sovellus Azure AD:ssä REST-ohjelmointirajapinnan kutsujen tekemiseksi. Katso lisätietoja artikkelista [Azure AD -sovelluksen rekisteröinti upotettuun Power BI -sisältöön](register-app.md).
 
 Jos olet ladannut [integrate-report-web-app](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/User%20Owns%20Data/integrate-report-web-app)-mallin, voit rekisteröinnin jälkeen saamasi **asiakastunnuksen** ja **asiakkaan salasanan** avulla todentaa mallin Azure AD:hen. Voit konfiguroida mallin muuttamalla **asiakastunnusta** ja **asiakkaan salasanaa** *cloud.config*-tiedostossa.
 
 ![](media/integrate-report/powerbi-embed-dashboard-register-app4.png)
 
-## <a name="step-2---get-an-access-token-from-azure-ad"></a>Vaihe 2 – Hanki käyttöoikeustietue Azure AD:stä
+## <a name="step-2---get-an-access-token-from-azure-ad"></a>Vaihe 2 – hanki käyttöoikeustietue Azure AD:stä
 Sinun on hankittava sovelluksessa **käyttöoikeustietue** Azure AD:stä, ennen kuin voit lähettää kutsuja Power BI REST -ohjelmointirajapintaan. Katso lisätietoja artikkelista [Käyttäjien todentaminen ja Azure AD -käyttöoikeustietueen saanti Power BI -sovellukselle](get-azuread-access-token.md).
 
 ## <a name="step-3---get-a-report"></a>Vaihe 3 – Hanki raportti
-Voit hankkia **Power BI** -raportin käyttämällä [Hanki raportit](https://msdn.microsoft.com/library/mt634543.aspx) -toimintoa, joka antaa **Power BI** -raporttien luettelon. Saat raporttien luettelosta raporttitunnuksen.
+Voit hankkia **Power BI** -raportin käyttämällä [Hanki raportit](https://docs.microsoft.com/rest/api/power-bi/reports/getreports) -toimintoa, joka antaa **Power BI** -raporttien luettelon. Saat raporttien luettelosta raporttitunnuksen.
 
 ### <a name="get-reports-using-an-access-token"></a>Hanki raportit käyttöoikeustietueen avulla
-Voit [vaiheessa 2](#step-2-get-an-access-token-from-azure-ad) saadun **käyttöoikeustietueen** avulla kutsua [Hanki raportit](https://msdn.microsoft.com/library/mt634543.aspx) -toiminnon. [Hanki raportit](https://msdn.microsoft.com/library/mt634543.aspx) -toiminto palauttaa raporttiluettelon. Voit noutaa yksittäisen raportin raporttiluettelosta. Alla on täydellinen C#-menetelmä raportin hankkimiseksi. 
+Voit [vaiheessa 2](#step-2-get-an-access-token-from-azure-ad) saadun **käyttöoikeustietueen** avulla kutsua [Hanki raportit](https://docs.microsoft.com/rest/api/power-bi/reports/getreports) -toiminnon. [Hanki raportit](https://docs.microsoft.com/rest/api/power-bi/reports/getreports) -toiminto palauttaa raporttiluettelon. Voit noutaa yksittäisen raportin raporttiluettelosta. Alla on täydellinen C#-menetelmä raportin hankkimiseksi. 
 
 Jotta voit lähettää REST-ohjelmointirajapinnan kutsun, sinun on sisällytettävä *Valtuutus*-otsikko *Haltija {käyttöoikeustietue}* -muodossa.
 
@@ -213,7 +218,7 @@ Jos latasit ja suoritit[integrate-report-web-app](https://github.com/Microsoft/P
 ![Upotetun raportin malli](media/integrate-report/powerbi-embedded-report.png)
 
 ## <a name="working-with-groups-app-workspaces"></a>Ryhmien käsitteleminen (sovelluksen työtilat)
-Jotta voit upottaa raportin ryhmästä (sovelluksen työtila), voit noutaa kaikkien saatavilla olevien raporttien luettelon ryhmän koontinäytöstä seuraavan REST-ohjelmointirajapinnan kutsun avulla. Katso lisätietoja tästä REST-ohjelmointirajapinnan kutsusta artikkelista [Hanki raportit](https://msdn.microsoft.com/library/mt634543.aspx). Tarvitset käyttöoikeuden ryhmässä pyynnölle tulosten palauttamiseksi.
+Jotta voit upottaa raportin ryhmästä (sovelluksen työtila), voit noutaa kaikkien saatavilla olevien raporttien luettelon ryhmän koontinäytöstä seuraavan REST-ohjelmointirajapinnan kutsun avulla. Katso lisätietoja tästä REST-ohjelmointirajapinnan kutsusta artikkelista [Hanki raportit](https://docs.microsoft.com/rest/api/power-bi/reports/getreports). Tarvitset käyttöoikeuden ryhmässä pyynnölle tulosten palauttamiseksi.
 
 ```
 https://api.powerbi.com/v1.0/myorg/groups/{group_id}/reports

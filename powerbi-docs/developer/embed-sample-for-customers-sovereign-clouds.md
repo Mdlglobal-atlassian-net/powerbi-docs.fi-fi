@@ -9,11 +9,12 @@ ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 03/28/2018
 ms.author: maghan
-ms.openlocfilehash: 59f045d142fdf5ba22f9d240913687a9306e6b43
-ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
+ms.openlocfilehash: ebbb004fe79bbae942243bc227e1c09fd51fa75f
+ms.sourcegitcommit: 8ee0ebd4d47a41108387d13a3bc3e7e2770cbeb8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34813706"
 ---
 # <a name="embed-a-power-bi-dashboard-tile-or-report-into-your-application-for-sovereign-clouds"></a>Power BI:n koontinäytön, ruudun tai raportin upottaminen maakohtaisen pilvipalvelun sovellukseen
 Lue ohjeet siihen, miten voit integroida tai upottaa koontinäytön, ruudun tai raportin verkkosovellukseen asiakkaillesi Power BI .NET SDK:n ja Power BI JavaScript -ohjelmointirajapinnan avulla upotuksen yhteydessä. Tämä on yleensä riippumattoman ohjelmistokehittäjän toteuttama skenaario.
@@ -36,7 +37,7 @@ Jotta voit käydä toimia näiden vaiheittaisten ohjeiden mukaisesti, tarvitset 
 > Haluatko sen sijaan upottaa koontinäytön organisaatiolle? Lue ohjeet artikkelista [Koontinäytön integrointi sovellukseen organisaatiolle](integrate-dashboard.md).
 >
 
-Voit integroida koontinäytön verkkosovellukseen **Power BI** -ohjelmointirajapinnalla ja hankkia koontinäytön Azure Active Directory (AD) -valtuutuksen **käyttöoikeustietueen** avulla. Tämän jälkeen voit ladata koontinäytön upotetun käyttöoikeustietueen avulla. **Power BI** -ohjelmointirajapinta tarjoaa ohjelmallisen käyttöoikeuden tiettyihin **Power BI** -resursseihin. Saat lisätietoja artikkelista [Power BI REST -ohjelmointirajapinnan yleiskatsaus](https://msdn.microsoft.com/library/dn877544.aspx), [Power BI .NET SDK](https://github.com/Microsoft/PowerBI-CSharp) ja [Power BI JavaScript -ohjelmointirajapinta](https://github.com/Microsoft/PowerBI-JavaScript).
+Voit integroida koontinäytön verkkosovellukseen **Power BI** -ohjelmointirajapinnalla ja hankkia koontinäytön Azure Active Directory (AD) -valtuutuksen **käyttöoikeustietueen** avulla. Tämän jälkeen voit ladata koontinäytön upotetun käyttöoikeustietueen avulla. **Power BI** -ohjelmointirajapinta tarjoaa ohjelmallisen käyttöoikeuden tiettyihin **Power BI** -resursseihin. Saat lisätietoja artikkeleista [Power BI REST -ohjelmointirajapinta](https://docs.microsoft.com/rest/api/power-bi/), [Power BI .NET SDK](https://github.com/Microsoft/PowerBI-CSharp) ja [Power BI JavaScript -ohjelmointirajapinta](https://github.com/Microsoft/PowerBI-JavaScript).
 
 ## <a name="download-the-sample"></a>Mallin lataaminen
 Tässä artikkelissa näytetään koodi, jolla [upotetaan asiakasmalli](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/App%20Owns%20Data/PowerBIEmbedded_AppOwnsData) GitHubissa. Voit ladata mallin, jonka avulla voit noudattaa näitä vaiheittaisia ohjeita.
@@ -201,7 +202,7 @@ Report report = reports.Value.FirstOrDefault();
 ```
 
 ### <a name="create-the-embed-token"></a>Upotustunnuksen luominen
-Sinun on luotava upotustunnus, jota voidaan käyttää JavaScript-ohjelmointirajapinnasta. Upotustunnus on yksilöllinen upotettavalle kohteelle. Tämä tarkoittaa sitä, että kun upotat tietyn Power BI -sisältökohteen, sinun on luotava sille uusi upotustunnus. Saat lisätietoja tästä ja käytettävästä **käyttöoikeustasosta** artikkelista [GenerateToken-ohjelmointirajapinta](https://msdn.microsoft.com/library/mt784614.aspx).
+Sinun on luotava upotustunnus, jota voidaan käyttää JavaScript-ohjelmointirajapinnasta. Upotustunnus on yksilöllinen upotettavalle kohteelle. Tämä tarkoittaa sitä, että kun upotat tietyn Power BI -sisältökohteen, sinun on luotava sille uusi upotustunnus. Saat lisätietoja tästä ja käytettävästä **käyttöoikeustasosta** artikkelista [Tunnuksen upottaminen](https://docs.microsoft.com/rest/api/power-bi/embedtoken).
 
 > [!IMPORTANT]
 > Koska upotustunnukset on tarkoitettu vain kehitystestaukseen, Power BI -päätilin luomien upotustunnusten määrää on rajoitettu. [Sinun on ostettava kapasiteettia](https://docs.microsoft.com/power-bi/developer/embedded-faq#technical), jos haluat toteuttaa upotusskenaarioita hyötykäytössä. Kun ostat kapasiteettia, voit luoda upotustunnuksia rajattomasti.

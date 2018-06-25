@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/02/2018
+ms.date: 06/05/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 3a27a3c39f1ddcee6a882184f511874313d77c9a
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: b1085c3715d9b4b75925cec1b94ec49b0f5792f7
+ms.sourcegitcommit: 8ee0ebd4d47a41108387d13a3bc3e7e2770cbeb8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34291185"
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34813131"
 ---
 # <a name="connect-to-amazon-redshift-in-power-bi-desktop"></a>Yhteyden muodostaminen Amazon Redshiftiin Power BI Desktopissa
 **Power BI Desktopissa** voi muodostaa yhteyden **Amazon Redshift** ‑tietokantaan ja käyttää sen tietoja samaan tapaan kuin muita tietolähteitä käytetään Power BI Desktopissa.
@@ -29,11 +29,11 @@ Kirjoita tai liitä näytölle avautuvan **Amazon Redshift** -ikkunan tekstikent
 
 ![](media/desktop-connect-redshift/connect_redshift_4.png)
 
-Kirjoita näytölle avautuvaan kehoteikkunaan käyttäjänimesi ja salasanasi.
+Kirjoita käyttäjänimesi ja salasanasi pyydettäessä. Käytä palvelimella virheiden välttämiseksi nimeä, joka vastaa tarkasti SSL-varmennetta. 
 
 ![](media/desktop-connect-redshift/connect_redshift_5.png)
 
-Kun yhteyden muodostaminen onnistuu, näytölle avautuu **Siirtymistoiminto**-ikkuna, jossa näet palvelimella käytettävissä olevat tiedot. Voit valita ikkunasta yhden tai useita elementtejä tuotavaksi **Power BI Desktopiin**.
+Kun yhteyden muodostaminen onnistuu, näyttöön avautuu **Siirtymistoiminto**-ikkuna, jossa näet palvelimella käytettävissä olevat tiedot. Voit valita ikkunasta yhden tai useita elementtejä tuotavaksi **Power BI Desktopiin**.
 
 ![](media/desktop-connect-redshift/connect_redshift_6.png)
 

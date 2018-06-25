@@ -1,26 +1,27 @@
 ---
-title: Reporting Servicesiin yhdistäminen OAuth-todennuksen avulla
-description: Tutustu siihen, kuinka voit määrittää ympäristösi tukemaan OAuth-todennusta Power BI -mobiilisovelluksella, jotta voit muodostaa yhteyden Reporting Services 2016:een tai uudempaan versioon.
+title: Yhdistäminen Power BI -raporttipalvelimeen ja SSRS-palvelimeen OAuthia käyttämällä
+description: Opi määrittämään ympäristö tukemaan OAuth-todennusta Power BI -mobiilisovelluksella ja muodostamaan yhteys SQL Server Reporting Services 2016:een tai uudempaan versioon.
 author: markingmyname
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-mobile
 ms.topic: conceptual
-ms.date: 08/10/2017
+ms.date: 06/07/2018
 ms.author: maghan
-ms.openlocfilehash: 4c9b2f5233ab984e57bf48978284441850c0c48f
-ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
+ms.openlocfilehash: ba8a0c6868e84cf9d675fff8f69a34b4befc9b61
+ms.sourcegitcommit: b7839f2aa68c3626f55ee7e49c8392169d1ec67e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "34852206"
 ---
-# <a name="using-oauth-to-connect-to-reporting-services"></a>Reporting Servicesiin yhdistäminen OAuth-todennuksen avulla
-Tutustu siihen, kuinka voit määrittää ympäristösi tukemaan OAuth-todennusta Power BI -mobiilisovelluksella, jotta voit muodostaa yhteyden Reporting Services 2016:een tai uudempaan versioon.
+# <a name="using-oauth-to-connect-to-power-bi-report-server-and-ssrs"></a>Yhdistäminen Power BI -raporttipalvelimeen ja SSRS-palvelimeen OAuthia käyttämällä
+Opi määrittämään ympäristö tukemaan OAuth-todennusta Power BI -mobiilisovelluksella ja muodostamaan yhteys Power BI -raporttipalvelimeen sekä SQL Server Reporting Services 2016:een tai uudempaan versioon.
 
 ![](media/mobile-oauth-ssrs/powerbi-mobile-oauth.png)
 
-Aikaisemmin Power BI -mobiilisovellus tuki vain perustodennusta HTTPS:n kautta Reporting Servicesiin mobiiliraporttien tai suorituskykyilmaisimien näyttämiseksi. Monet organisaatiot eivät salli tämän tyypin määritystä suojausongelmien vuoksi. Power BI -mobiilisovelluksen päivityksen myötä voit nyt muodostaa yhteyden Reporting Servicesiin OAuth-todennuksen avulla. Windows Server 2016 sisältää joitain Web Application Proxy -roolin parannuksia, jotka sallivat tällaisen todennuksen.
+Voit käyttää OAuthia muodostaessasi yhteyden Power BI-raporttipalvelimeen ja Reporting Servicesiin, tarkastellaksesi mobiiliraporttejasi tai suorituskykyilmaisimia. Windows Server 2016 sisältää joitain Web Application Proxy (WAP) -roolin parannuksia, jotka sallivat tällaisen todennuksen. Huomaa, että tämä määritys ei tue Power BI -raporttien tarkastelemista Power BI-mobiilisovelluksissa. Voit tarkastella niitä kuitenkin mobiililaitteessa selaimen avulla. Tarkastellaksesi Power BI-raportteja mobiilisovelluksessa, sinun on käytettävä Windows-todennusta.
 
 ## <a name="requirements"></a>Vaatimukset
 Web Application Proxy (WAP) -palvelimia ja Active Directory -liittoutumispalvelujen (ADFS) palvelimia varten vaaditaan Windows Server 2016. Windows 2016:n toiminnallisen tason toimialuetta ei tarvita.
@@ -202,7 +203,8 @@ Kun olet valinnut **Kirjaudu sisään**, näkyviin tulee elementtejä Reporting 
 Voit ottaa käyttöön monimenetelmäisen todentamisen lisäsuojauksen ottamiseksi käyttöön ympäristössäsi. Lisätietoja on artikkelissa [AD FS 2016:n ja Azure MFA:n määrittäminen](https://technet.microsoft.com/windows-server-docs/identity/ad-fs/operations/configure-ad-fs-2016-and-azure-mfa).
 
 ## <a name="troubleshooting"></a>Vianmääritys
-**Näyttöön tulee seuraava virheviesti: Kirjautuminen SSRS-palvelimeen epäonnistui. Tarkista välityspalvelimen määritykset.**
+
+### <a name="you-receive-the-error-failed-to-login-to-ssrs-server-please-verify-server-configuration"></a>Näyttöön tulee seuraava virheviesti: Kirjautuminen SSRS-palvelimeen epäonnistui. Tarkista välityspalvelimen määritykset.
 
 ![](media/mobile-oauth-ssrs/powerbi-mobile-error.png)
 

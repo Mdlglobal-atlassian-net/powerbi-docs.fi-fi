@@ -7,19 +7,19 @@ ms.reviewer: ajayan
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 10/12/2017
+ms.date: 06/08/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: a4c2eaed0e8d577359ad9b5ee191ad2894ada12b
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: c2d7a878189542d8a477933f6c54390b2636787e
+ms.sourcegitcommit: b7839f2aa68c3626f55ee7e49c8392169d1ec67e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34251111"
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "34852229"
 ---
 # <a name="organizational-content-packs-copy-refresh-and-get-access"></a>Organisaation sisältöpaketit: kopioiminen, päivittäminen ja käyttöoikeuksien hankkiminen
 > [!NOTE]
-> Oletko jo kuullut uusista *sovelluksista*? Sovellukset on uusi tapa jakaa sisältöä suurille kohderyhmille Power BI:ssä. Voit luoda sovelluksia *sovellustyötiloissa*, jotka korvaavat ryhmät ja ryhmätyötilat. Suosittelemme käyttämään sovelluksia organisaation sisältöpakettien tai vain luku -työtilojen sijaan. Lue [lisätietoja sovelluksista](service-install-use-apps.md).
+> Oletko jo kuullut uusista *sovelluksista*? Sovellukset on uusi tapa jakaa sisältöä suurille kohderyhmille Power BI:ssä. Ajan mittaan aiomme lakkauttaa organisaation sisältöpaketit, joten suosittelemme niiden sijaan sovellusten käyttöä. Lue [lisätietoja sovelluksista](service-install-use-apps.md).
 > 
 > 
 

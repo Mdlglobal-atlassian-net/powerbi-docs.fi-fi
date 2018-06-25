@@ -1,28 +1,20 @@
 ---
 title: Mitä Power BI:n ohjelmointirajapinnalla voi tehdä?
 description: Mitä Power BI:n ohjelmointirajapinnalla voi tehdä?
-services: powerbi
-documentationcenter: ''
 author: markingmyname
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: get-started-article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 07/20/2017
+ms.component: powerbi-developer
+ms.topic: conceptual
+ms.date: 05/25/2018
 ms.author: maghan
-ms.openlocfilehash: a65831e9ca04170464925efd13f02e43ad8027f0
-ms.sourcegitcommit: c80fbf5b12754ce217cb47a17cb5400b1036a8f2
+ms.openlocfilehash: 8a688f46a46dbb1015629c7785d96b62d4f8df26
+ms.sourcegitcommit: 8ee0ebd4d47a41108387d13a3bc3e7e2770cbeb8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/06/2018
-ms.locfileid: "30976927"
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34813230"
 ---
 # <a name="what-can-developers-do-with-the-power-bi-api"></a>Mitä kehittäjät voivat tehdä Power BI -ohjelmointirajapinnalla?
 Power BI esittää koontinäyttöjä, jotka ovat vuorovaikutteisia ja joita voi luoda ja päivittää useista eri tietolähteistä reaaliaikaisesti. Voit luoda Power BI ‑koontinäyttöihin integroituja reaaliaikaisia sovelluksia käyttämällä mitä tahansa ohjelmointikieltä, joka tukee REST-kutsuja. Voit myös integroida Power BI-ruutuja ja raportteja sovelluksiin.
@@ -35,7 +27,6 @@ Seuraavassa on joitakin asioita, joita voit tehdä Power BI -ohjelmointirajapinn
 | --- | --- |
 | Upottaa koontinäyttöjä, raportteja ja ruutuja sekä Power BI:tä käyttävien että Power BI:tä käyttämättömien (sovellus omistaa tiedot) käyttäjien saataville |[Power BI:n koontinäyttöjen, raporttien ja ruutujen upottaminen](embedding-content.md) |
 | Laajentaa aiemmin luotua liiketoiminnan työnkulkua työntääksesi avaintietoja Power BI ‑koontinäyttöön |[Tietojen lähettäminen koontinäyttöön](walkthrough-push-data.md) |
-| Tuoda järjestelmään Power BI Desktop ‑tiedosto |[PBIX-tiedoston tuominen](https://msdn.microsoft.com/library/mt243837.aspx) |
 | Todentaa käyttäjiä Power BI -palvelussa |[Power BI -palveluun todentaminen](get-azuread-access-token.md) |
 | Luoda mukautetun visualisoinnin |[Mukautettujen visualisointien luominen kehittäjätyökalujen avulla](../service-custom-visuals-getting-started-with-developer-tools.md) |
 
@@ -60,12 +51,17 @@ Power BI:n kehittäjämallit sisältävät kohteita, joita voi käyttää koonti
 ## <a name="developer-tools"></a>Kehitystyökalut
 Seuraavassa on työkaluja, joiden avulla voit kehittää omia Power BI ‑kohteitasi.
 
-* [JavaScript-upotuksen malli](https://microsoft.github.io/PowerBI-JavaScript/demo)
+Voit käyttää [Perehdyttämiskokemustyökalua](https://aka.ms/embedsetup) aloittaaksesi ja ladataksesi mallisovelluksen, jolla opit upottamaan Power BI -sisältöä.
+
+Valitse ratkaisu, joka sopii sinulle:
+* [Asiakkaille tarkoitettu upotus](embedding.md#embedding-for-your-customers) mahdollistaa raporttinäkymien ja raporttien upottamisen käyttäjille, joilla ei ole Power BI -tiliä. Suorita [asiakkaille tarkoitettu upotus](https://aka.ms/embedsetup/AppOwnsData).
+* [Organisaatiolle tarkoitettu upotus](embedding.md#embedding-for-your-organization) mahdollistaa Power BI -palvelun laajentamisen. Suorita [organisaatiolle tarkoitettu upotus](https://aka.ms/embedsetup/UserOwnsData).
+
+Voit käyttää [Playground-työkalua](https://microsoft.github.io/PowerBI-JavaScript/demo), saadaksesi käyttöösi kokonaisen mallin, joka käyttää JavaScript-ohjelmointirajapintaa. Tämä on nopea tapa kokeilla erilaisia Power BI Embedded -malleja. Saat lisätietoja JavaScript-ohjelmointirajapinnasta vierailemalla [Power BI-JavaScript wiki](https://github.com/Microsoft/powerbi-javascript/wiki) -sivulla.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 [Tietojen työntäminen tietojoukkoon](walkthrough-push-data.md)  
 [Mukautettujen visualisointien kehittäjätyökalujen käytön aloittaminen](../service-custom-visuals-getting-started-with-developer-tools.md) 
-[Power BI:n REST-ohjelmointirajapintaviittaus](https://msdn.microsoft.com/library/mt147898.aspx)  
+[Power BI:n REST-ohjelmointirajapintaviittaus](https://docs.microsoft.com/rest/api/power-bi/)  
 
-Onko sinulla muuta kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)
-
+Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)

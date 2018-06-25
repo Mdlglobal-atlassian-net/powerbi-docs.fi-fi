@@ -7,14 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/02/2018
+ms.date: 06/05/2018
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: 264071f314e4a05a3d0b283ab58d644dff4b44a1
-ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
+ms.openlocfilehash: f84e43a96243841b247530b5639f5f0c6ae1bb4f
+ms.sourcegitcommit: 8ee0ebd4d47a41108387d13a3bc3e7e2770cbeb8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34813660"
 ---
 # <a name="create-and-manage-relationships-in-power-bi-desktop"></a>Suhteiden luominen ja hallinta Power BI Desktopissa
 Useita taulukoita tuodessa aiotaan todennäköisesti luoda analyyseja käyttäen tietoja kaikista tuotavista taulukoista. Näiden taulukoiden välisiä suhteita tarvitaan tuloksien tarkkaan laskemiseen ja oikeiden tietojen esittämiseen raporteissa. Power BI Desktop tekee näiden suhteiden luomisesta helppoa. Itse asiassa useimmissa tapauksissa sinun ei tarvitse tehdä mitään, automaattinen tunnistus tekee kaiken puolestasi. Joissakin tapauksissa joudut ehkä luomaan suhteita itse tai muokkaamaan joitakin suhteita. Joka tapauksessa on tärkeää ymmärtää Power BI Desktopissa olevia suhteita ja miten niitä voi luoda ja muokata.
@@ -35,6 +36,16 @@ Valitse **Aloitus**-välilehdessä **Suhteiden hallinta** \> **Automaattinen tun
 ![](media/desktop-create-and-manage-relationships/manualrelationship2.gif)
 
 Oletusarvona Power BI Desktop määrittää automaattisesti kardinaliteetin (suunnan), ristisuodatussuunnan ja aktiiviset ominaisuudet. Voit kuitenkin muuttaa näitä tarvittaessa. Lisätietoja on tämän artikkelin Tietoja lisäasetuksista -osassa.
+
+Huomaa, että näet seuraavan virheilmoituksen: *Yhdellä sarakkeista on oltava yksilölliset arvot*, jos millään suhteen valitulla taulukolla ei ole yksilöllisiä arvoja. Vähintään yhdessä suhteen taulukossa *tulee olla* erillisiä, yksilöllisiä avainarvoja, mikä on yleinen vaatimus kaikissa relaatiotietokannan tekniikoissa. 
+
+Jos kohtaat virheen, on olemassa muutamia tapoja korjata ongelma:
+
+* ”Poista kaksinkertainen rivit” -toiminnon avulla voit luoda sarakkeen, jossa on yksilöllisiä arvoja. Tämän huono puoli on se, että menetät tietoa, kun rivien kaksoiskappaleet poistetaan, ja usein avain (rivin) kopioinnille on syynsä.
+* Lisää malliin listatuista erillisistä avainarvoista koostettu välitaulukko, joka yhdistetään suhteen molempiin alkuperäisiin sarakkeisiin.
+
+Lue lisätietoja [blogikirjoituksesta](https://blogs.technet.microsoft.com/cansql/2016/12/19/relationships-in-power-bi-fixing-one-of-the-columns-must-have-unique-values-error-message/), joka käsittelee tätä yksityiskohtaisesti.
+
 
 ## <a name="edit-a-relationship"></a>Suhteen muokkaaminen
 1. Valitse **Aloitus**-välilehdessä **Suhteiden hallinta**.

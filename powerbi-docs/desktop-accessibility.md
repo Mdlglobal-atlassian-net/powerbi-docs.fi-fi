@@ -7,14 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 04/24/2018
+ms.date: 06/05/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: bd0565420382fc22af67b1363b41f6d8ed6e92ab
-ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
+ms.openlocfilehash: 6147f41ea99ad4a0416f6aa9c01288102f792771
+ms.sourcegitcommit: 8ee0ebd4d47a41108387d13a3bc3e7e2770cbeb8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34812924"
 ---
 # <a name="accessibility-in-power-bi-desktop-reports"></a>Power BI Desktop -raporttien helppokäyttöisyys
 **Power BI Desktopissa** on ominaisuuksia, joiden avulla toimintarajoitteisten henkilöiden on helppo käyttää ja käsitellä **Power BI Desktop** -raportteja. Näitä ominaisuuksia ovat esimerkiksi mahdollisuus käyttää raporttia näppäimistön tai näytönlukuohjelman avulla, kohdistaminen sivun eri objekteihin sarkaimella sekä ymmärtäväinen merkkien käyttö visualisoinneissa.
@@ -66,7 +67,24 @@ Seuraavien vihjeiden avulla voit luoda entistä helppokäyttöisempiä **Power B
 * Käytä tekstin kokoa ja fontteja, jotka ovat helppoja lukea. Pieni teksti ja vaikeaselkoiset fontit heikentävät helppokäyttöisyyttä.
 * Sisällytä kaikkiin visualisointeihin otsikko, akselinimet ja arvopisteiden nimet.
 
-## <a name="considerations-and-limitations"></a>Huomioon otettavat seikat ja rajoitukset
+## <a name="high-contrast-support-for-reports"></a>Suuren kontrastin tuki raporteille
+
+Käytettäessä suuren kontrastin -tiloja Windowsissa, niiden asetukset ja valitsemasi värivalikoiman otetaan käyttöön myös **Power BI Desktopin** raporteissa. 
+
+![Suuren kontrastin Windows-asetukset](media/desktop-accessibility/accessibility_05.png)
+
+**Power BI Desktop** tunnistaa automaattisesti mikä suuren kontrastin teemaa Windows käyttää, ja käyttää näitä asetuksia raporteissasi. Suuren kontrastin värit säilyvät raportissa, kun se julkaistaan Power BI-palvelussa tai muualla.
+
+![Suuren kontrastin Windows-asetukset](media/desktop-accessibility/accessibility_05b.png)
+
+Power BI -palvelu yrittää myös tunnistaa Windowsille valitut suuren kontrastin -asetukset, mutta tunnistamisen tehokkuus ja tarkkuus riippuu Power BI-palvelun käyttämästä selaimesta. Jos haluat määrittää teeman manuaalisesti Power BI -palvelussa, valitse **Näkymä > Suuren kontrastin värit** ja valitse sitten teema, jota haluat raportissa käyttää.
+
+![Suuren kontrastin määrittäminen Power BI -palvelussa](media/desktop-accessibility/accessibility_06.png)
+
+**Power BI Desktopissa**on joitakin osia, kuten **Visualisoinnit**- ja **Kentät** -kentät, jotka eivät ilmennä valittua suuren kontrastin Windows-väriskaalaa.
+
+
+## <a name="considerations-and-limitations"></a>Huomioitavat asiat ja rajoitukset
 Helppokäyttötoimintoihin liittyy muutamia tunnettuja ongelmia ja rajoituksia, jotka on kuvattu seuraavassa luettelossa:
 
 * JAWS-tuki koskee raportteja, joita tarkastellaan **Power BI -palvelussa**, mukaan lukien upotetut raportit. JAWS-tuki koskee myös **Power BI Desktopia**, mutta sinun on avattava näytönlukuohjelma ennen **Power BI Desktop** -tiedostojen avaamista, jotta näytön luku toimii oikein.

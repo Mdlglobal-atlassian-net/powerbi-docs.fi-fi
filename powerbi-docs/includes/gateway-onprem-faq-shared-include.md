@@ -37,7 +37,7 @@ Voit käyttää kolmannen osapuolen [Azure Speed Test -sovellusta](http://azures
 **Kysymys:** Mihin tunnistetietoni tallennetaan?  
 **Vastaus:** Tietolähteelle antamasi tunnistetiedot tallennetaan salattuina yhdyskäytävän pilvipalveluun. Tunnistetietojen salaus puretaan paikallisessa yhdyskäytävässä.
 
-**Kysymys:** Voinko sijoittaa yhdyskäytävän edustaverkkoon (toiselta nimeltään DMZ tai suojattu aliverkko)?  
+**Kysymys:** Voinko sijoittaa yhdyskäytävän eteisverkkoon (toiselta nimeltään DMZ tai suojattu aliverkko)?  
 **Vastaus:** Yhdyskäytävä vaatii liitettävyyden tietolähteeseen. Jos tietolähde ei ole käytettävissä edustaverkossasi, yhdyskäytävä ei välttämättä voi muodostaa yhteyttä siihen. Esimerkiksi SQL Server ei voi olla edustaverkkosi. Et myöskään pysty muodostamaan yhteyttä SQL Serveriin -edustaverkosta. Jos asettaisit yhdyskäytävän edustaverkkoosi, se ei voisi muodostaa yhteyttä SQL Serveriin.
 
 **Kysymys:** Onko mahdollista pakottaa yhdyskäytävä käyttämään HTTPS-liikennettä Azuren palveluväylän kanssa TCP:n sijaan?  

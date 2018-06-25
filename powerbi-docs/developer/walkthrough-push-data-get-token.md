@@ -9,12 +9,12 @@ ms.component: powerbi-developer
 ms.topic: conceptual
 ms.date: 08/10/2017
 ms.author: maghan
-ms.openlocfilehash: 640c6dac9a896cff55bddad46ceef8bce7ccae14
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 238d068e5083c8f46ac3299faddd4e0872f0654d
+ms.sourcegitcommit: 8ee0ebd4d47a41108387d13a3bc3e7e2770cbeb8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34289368"
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34812625"
 ---
 # <a name="step-2-get-an-authentication-access-token"></a>Vaihe 2: Todennustunnuksen hankkiminen
 Tämä artikkeli on osa vaiheittaisia ohjeita, joilla [tiedot työnnetään tietojoukkoon](walkthrough-push-data.md).
@@ -104,7 +104,7 @@ Lisää tämä koodi kohtaan Program {...}.
        #endregion
 ```
 
-Kun olet saanut todennustunnuksen, voit kutsua mitä tahansa Power BI:n toimintoa. Seuraavassa vaiheessa näytetään, miten voit kutsua [Luo tietojoukko](https://msdn.microsoft.com/library/mt203562.aspx) -toimintoa ja luoda tietojoukon tietojen työntämiseksi raporttinäkymään.
+Kun olet saanut todennustunnuksen, voit kutsua mitä tahansa Power BI:n toimintoa. Seuraavaksi näytetään, miten voit kutsua [Julkaise tietojoukko](https://docs.microsoft.com/rest/api/power-bi/pushdatasets) -toiminnon ja luoda tietojoukon tietojen työntämiseksi raporttinäkymään.
 
 Seuraavassa vaiheessa näytetään, miten voit [luoda tietojoukon Power BI:ssä](walkthrough-push-data-create-dataset.md).
 
@@ -181,6 +181,6 @@ Alla on [Kattava koodiluettelo](#code).
 [Azure AD -todentamiskirjasto .NET NuGet -paketille](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/)  
 [Tietojen työntäminen Power BI -tietojoukkoon](walkthrough-push-data.md)  
 [Power BI:n REST-ohjelmointirajapinnan yleiskatsaus](overview-of-power-bi-rest-api.md)  
-[Power BI:n REST-ohjelmointirajapinnan viite](https://msdn.microsoft.com/library/mt147898.aspx)  
+[Power BI:n REST-ohjelmointirajapinnan viite](https://docs.microsoft.com/rest/api/power-bi/)  
 Onko sinulla muuta kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
 

@@ -9,19 +9,19 @@ ms.component: powerbi-developer
 ms.topic: conceptual
 ms.date: 08/10/2017
 ms.author: maghan
-ms.openlocfilehash: c550b911eef43ade98b3bc771e3f13929b805e11
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: ae8919bbe06c729cc43e230146c4c1a216a80168
+ms.sourcegitcommit: 8ee0ebd4d47a41108387d13a3bc3e7e2770cbeb8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34287620"
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34813229"
 ---
 # <a name="step-4-get-a-dataset-to-add-rows-into-a-power-bi-table"></a>Vaihe 4: Tietojoukon hankkiminen rivien lisäämiseksi Power BI -taulukkoon
 Tämä artikkeli on osa vaiheittaisia ohjeita, joilla [tiedot työnnetään tietojoukkoon](walkthrough-push-data.md).
 
-Tietojen tietojoukkoon työntämisen **vaiheessa 3**, [Tietojoukon luominen Power BI:ssä](walkthrough-push-data-create-dataset.md), kutsuit [Luo tietojoukko](https://msdn.microsoft.com/library/mt203562.aspx) -toiminnon tietojoukon luomiseksi Power BI:ssä. Tässä vaiheessa käytät [Nouda tietojoukkoja](https://msdn.microsoft.com/library/mt203567.aspx) -toimintoa ja Newtonsoft.Json-komentoa tietojoukon tunnuksen saamiseksi. Lisää rivejä tietojoukkoon käyttämällä vaiheen 4 tietojoukon tunnusta. 
+Tietojen tietojoukkoon työntämisen **vaiheessa 3**, [Tietojoukon luominen Power BI:ssä](walkthrough-push-data-create-dataset.md), kutsuit [Luo tietojoukko](https://docs.microsoft.com/rest/api/power-bi/datasets) -toiminnon tietojoukon luomiseksi Power BI:ssä. Tässä vaiheessa käytät [Nouda tietojoukkoja](https://docs.microsoft.com/rest/api/power-bi/getdatasets) -toimintoa ja Newtonsoft.Json-komentoa tietojoukon tunnuksen saamiseksi. Lisää rivejä tietojoukkoon käyttämällä vaiheen 4 tietojoukon tunnusta. 
 
-Jotta voit työntää tietoja Power BI:n tietojoukkoon, sinun on viitattava tietojoukossa olevaan taulukkoon. Jotta voit viitata tietojoukossa olevaan taulukkoon, sinun on saatava **tietojoukon tunnus**. Saat **tietojoukon tunnuksen** käyttämällä [Nouda tietojoukko](https://msdn.microsoft.com/library/mt203567.aspx) -toimintoa. **Nouda tietojoukko** -toiminto palauttaa JSON-merkkijonon, joka sisältää luettelon kaikista Power BI:n tietojoukoista. Suositeltu tapa JSON-merkkijonon sarjoituksen poistamiseen on [Newtonsoft.Json](http://www.newtonsoft.com/json).
+Jotta voit työntää tietoja Power BI:n tietojoukkoon, sinun on viitattava tietojoukossa olevaan taulukkoon. Jotta voit viitata tietojoukossa olevaan taulukkoon, sinun on saatava **tietojoukon tunnus**. Saat **tietojoukon tunnuksen** käyttämällä [Nouda tietojoukko tunnuksen mukaan](https://docs.microsoft.com/rest/api/power-bi/datasets/getdatasetbyid) -toimintoa. **Nouda tietojoukko tunnuksen mukaan** -toiminto palauttaa JSON-merkkijonon, joka sisältää luettelon kaikista Power BI:n tietojoukoista. Suositeltu tapa JSON-merkkijonon sarjoituksen poistamiseen on [Newtonsoft.Json](http://www.newtonsoft.com/json).
 
 Saat tietojoukon seuraavasti.
 
@@ -267,10 +267,10 @@ Alla on [Kattava koodiluettelo](#code).
 ## <a name="next-steps"></a>Seuraavat vaiheet
 [Rivien lisääminen Power BI -taulukkoon](walkthrough-push-data-add-rows.md)  
 [Newtonsoft.Json](http://www.newtonsoft.com/json)  
-[Nouda tietojoukot](https://msdn.microsoft.com/library/mt203567.aspx)  
+[Nouda tietojoukot](https://docs.microsoft.com/rest/api/power-bi/datasets/getdatasets)  
 [Tietojen työntäminen Power BI:hin](walkthrough-push-data.md)  
 [Power BI:n REST-ohjelmointirajapinnan yleiskatsaus](overview-of-power-bi-rest-api.md)  
-[Power BI:n REST-ohjelmointirajapinnan viite](https://msdn.microsoft.com/library/mt147898.aspx)  
+[Power BI:n REST-ohjelmointirajapinnan viite](https://docs.microsoft.com/rest/api/power-bi/)  
 
 Onko sinulla muuta kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
 
