@@ -5,21 +5,21 @@ metadata:
   description: Käytä Exceliä ja Power BI:tä yhdessä ja luo tehokkaita, yhdistettyjä raportteja ja visualisointeja.
   audience: Business User
   level: Beginner
-  nextTutorialHref: publishingandsharing
+  nextTutorialHref: publishingandsharing.yml
   nextTutorialTitle: Julkaiseminen ja jakaminen
   displayType: one-column
   author: davidiseminger
   manager: kfile
   ms.service: powerbi
   ms.topic: get-started-article
-  ms.date: 12/05/2017
+  ms.date: 05/02/2018
   ms.author: davidi
-  ms.openlocfilehash: cc4e7ae228222e696c481c53a2d4f87b8ed1a146
-  ms.sourcegitcommit: 7bf22bb1136fdb0f962422e16e837187f090827c
+  ms.openlocfilehash: 409b3c25c0d9841d21f8c9be1ee20af37dafe846
+  ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
   ms.translationtype: HT
   ms.contentlocale: fi-FI
-  ms.lasthandoff: 02/06/2018
-  ms.locfileid: "29704635"
+  ms.lasthandoff: 06/04/2018
+  ms.locfileid: "33079731"
 items:
 - durationInMinutes: 1
   content: >
