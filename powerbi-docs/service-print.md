@@ -12,10 +12,10 @@ ms.date: 03/01/2018
 ms.author: mihart
 LocalizationGroup: Common tasks
 ms.openlocfilehash: d5859c0b59717a4af432c5fb7b526fa62ff03f59
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/04/2018
+ms.lasthandoff: 06/26/2018
 ms.locfileid: "34242974"
 ---
 # <a name="printing-from-power-bi-service"></a>Power BI -palvelusta tulostaminen
@@ -91,5 +91,5 @@ Raportteja voi tulostaa yhden sivun kerrallaan.
 ## <a name="next-steps"></a>Seuraavat vaiheet
 [Koontinäyttöjen ja raporttien jakaminen työtovereiden ja muiden kanssa](service-share-dashboards.md)
 
-Onko sinulla muuta kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
+Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
 

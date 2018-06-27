@@ -11,10 +11,10 @@ ms.date: 04/13/2018
 ms.author: mihart
 LocalizationGroup: Reports
 ms.openlocfilehash: 8305b9eab95e2b13f9104de6bcefe3f03a95d2f5
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/04/2018
+ms.lasthandoff: 06/26/2018
 ms.locfileid: "34254874"
 ---
 # <a name="tips-and-tricks-for-creating-reports-in-power-bi-desktop-and-power-bi-service"></a>Vinkkejä tyylikkäiden raporttien luomiseen Power BI Desktopissa ja Power BI -palvelussa
@@ -99,7 +99,7 @@ Prosessin seuraava vaihe on määritellä suhde Jakaumat- ja Tiedot-kyselyjen v�
 
 Viimeinen vaihe on histogrammin luominen.  Vedä jakaumakenttä Jakaumat-taulukosta.  Poista oletuskenttä tuloksena saatavasta pylväskaaviosta.  Vedä histogrammikenttä samaan visualisointiin Tiedot-taulukosta.  Muuta kenttäsäilössä oletuskoosteeksi Määrä.  Tuloksena saat histogrammin. Jos luot Tiedot-taulukosta toisen visualisoinnin, kuten puukartan, valitse puukartasta arvopiste, niin histogrammi korostuu. Näet valitun arvopisteen histogrammin suhteessa koko tietojoukon trendiin.
 
-### <a name="histograms"></a>Histogrammi
+### <a name="histograms"></a>Histogrammit
 Power BI Desktopissa voit määrittää histogrammin lasketun kentän avulla.  Määritä taulukko ja sarake, joista haluat luoda histogrammin.  Kirjoita laskenta-alueelle seuraava kaava:
 
 > Frequency:=COUNTROWS(\<sarakkeen nimi\>)

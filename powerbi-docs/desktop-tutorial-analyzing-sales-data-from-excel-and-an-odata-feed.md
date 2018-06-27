@@ -11,10 +11,10 @@ ms.date: 05/21/2018
 ms.author: v-thepet
 LocalizationGroup: Learn more
 ms.openlocfilehash: c6cd75efd44259c2812f98a37875cf716d4843ad
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/04/2018
+ms.lasthandoff: 06/26/2018
 ms.locfileid: "34456199"
 ---
 # <a name="tutorial-combine-sales-data-from-excel-and-an-odata-feed"></a>Opetusohjelma: Excelin ja OData-syötteen myyntitietojen yhdistäminen
@@ -45,7 +45,7 @@ Tuo ensin tuotetiedot Excelin Products.xlsx-työkirjasta Power BI Desktopiin.
    
    ![Excelin siirtymisruutu](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/t_excelodata_2.png)
    
-Taulukon esikatselu avautuu **Power Query -editoriin**, jossa voit ottaa käyttöön muunnoksia tietojen siistimiseksi. 
+Taulukon esikatselu avautuu **Power Query -editoriin**, jonka avulla voit muokata ja puhdistaa tietoja. 
    
 ![Power Query -editori](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/t_excelodata_3.png)
    
