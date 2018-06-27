@@ -11,10 +11,10 @@ ms.date: 03/07/2018
 ms.author: maggies
 LocalizationGroup: Dashboards
 ms.openlocfilehash: 3b0bf5e54ad6486134eb641d276fc9233b001157
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/04/2018
+ms.lasthandoff: 06/26/2018
 ms.locfileid: "34249705"
 ---
 # <a name="create-a-qr-code-for-a-tile-in-power-bi-to-use-in-the-mobile-apps"></a>QR-koodin luominen Power BI:n ruutuun mobiilisovelluksissa käytettäväksi
@@ -55,5 +55,5 @@ Power BI luo QR-koodin JPG-tiedostona, joka on valmis tulostettavaksi.
 * [Power BI:n yhdistäminen reaalimaailman tietoihin](mobile-apps-data-in-real-world-context.md) mobiilisovellusten avulla
 * [Power BI:n QR-koodin lukeminen mobiililaitteella](mobile-apps-qr-code.md)
 * [QR-koodin luominen raportista](service-create-qr-code-for-report.md)
-* Onko sinulla kysymyksiä? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)
+* Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)
 
