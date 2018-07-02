@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 05/25/2018
 ms.author: v-thepet
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 75ae82e43987cb42b858fe4350330fda3692cf97
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 338b72ef39c5b9c9fe454c1063f26602e8ce2299
+ms.sourcegitcommit: 5eb8632f653b9ea4f33a780fd360e75bbdf53b13
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34721497"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36964787"
 ---
 # <a name="slicers-in-power-bi"></a>Osittajat Power BI:ssä
 Haluat, että raportinlukijasi voivat tarkastella yleisiä myyntitilastoja, mutta myös korostaa yksittäisten aluepäälliköiden suorituskykyä ja eri aikavälejä. Voit luoda erillisiä raportteja tai vertailukaavioita tai osittajia. Osittaja on vaihtoehtoinen suodatustapa, jolla voit rajoittaa tietojoukon osaa, joka näkyy muissa raportin visualisoinneissa. 
@@ -183,7 +183,7 @@ Muut muotoiluasetukset eivät ole oletusarvon mukaan käytössä. Kun **Käytös
 - **Reunus:** Lisää yhden pikselin reunuksen osittajan ympärille ja määrittää sen värin. (Tämä osittajan reunus on eri kuin yleisissä ääriviiva-asetuksissa määritetty reunus, ja yleisissä ääriviiva-asetuksissa määritetty reunus ei vaikuta tähän reunukseen.) 
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
-[Kokeile sitä – se on maksuton!](https://powerbi.com/)
+[Rekisteröi ilmainen kokeiluversio](https://powerbi.microsoft.com/get-started/)
 
 Onko sinulla ideoita Power BI:n parantamiseksi? [Lähetä idea](https://ideas.powerbi.com/forums/265200-power-bi-ideas).
 

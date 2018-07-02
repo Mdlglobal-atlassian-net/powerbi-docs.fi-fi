@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 12/20/2017
 ms.author: mihart
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 280b76bd7a950f9f66834b4707c1144485008a3c
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: adb5d744a8eb99fce056a07ddb97b6cd7a82a8b4
+ms.sourcegitcommit: 5eb8632f653b9ea4f33a780fd360e75bbdf53b13
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34250585"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36964856"
 ---
 # <a name="troubleshoot-cortana-for-power-bi"></a>Cortanan ja Power BI:n vianmääritys
 Tämä artikkeli on osa pidempää sarjaa. Jos et ole vielä lukenut aiempia osia, suosittelemme lukemaan seuraavat artikkelit:
@@ -30,7 +30,7 @@ Tämä artikkeli on osa pidempää sarjaa. Jos et ole vielä lukenut aiempia osi
 Jos sinulla on edelleen ongelmia Cortanan integroimisessa Power BI:hin, olet tullut oikean paikkaan. Tunnista ongelma ja korjaa se noudattamalla alla olevia ohjeita.
 
 ## <a name="why-doesnt-cortana-find-answers-from-my-power-bi-reports-or-dashboards"></a>Miksi Cortana ei löydä kysymyksiini vastauksia Power BI ‑raporteistani tai koontinäytöistäni?
-1. Onko sinulla Power BI ‑tili?  Jos ei, [rekisteröi tili maksutta](service-self-service-signup-for-power-bi.md).
+1. Onko sinulla Power BI ‑tili?  Jos ei, [rekisteröi ilmainen kokeiluversio](https://powerbi.microsoft.com/get-started/).
 2. Onko Cortana toiminnassa?  Näetkö Cortana-kuvakkeen tehtäväpalkissa?
 
     ![](media/service-cortana-troubleshoot/power-bi-cortana-icon.png)

@@ -10,12 +10,12 @@ ms.topic: conceptual
 sktopms.date: 06/01/2018
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: e8af4695ba54fee91820552802cf18d8a758e8b0
-ms.sourcegitcommit: b3b32b9b3935706d7caa091833bd32259d7ff6ee
+ms.openlocfilehash: 6341d5b3bba051cc31fe95f526450e03c14d4b69
+ms.sourcegitcommit: 5eb8632f653b9ea4f33a780fd360e75bbdf53b13
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34755043"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36964810"
 ---
 # <a name="frequently-asked-questions-about-power-bi"></a>Usein kysyttyjä kysymyksiä Power BI:stä
 * Jos sinulla on muita kysymyksiä, [voit esittää niitä Power BI -yhteisössä](http://community.powerbi.com/).
@@ -24,8 +24,10 @@ ms.locfileid: "34755043"
 ## <a name="what-is-microsoft-power-bi"></a>Mikä on Microsoft Power BI?
 Power BI on pilvipohjainen yritysanalyysipalvelu, jonka ansiosta kaikki voivat visualisoida ja analysoida tietoja nopeammin, tehokkaammin ja helpommin. Se tuo käyttäjien saataville laajan valikoiman tietoja ja esittää ne elävästi helppokäyttöisten koontinäyttöjen, vuorovaikutteisten raporttien ja vaikuttavien visualisointien avulla. Lue lisää siitä, [mikä on Power BI](power-bi-overview.md).
 
-## <a name="whats-the-difference-between-power-bi-and-power-bi-pro"></a>Mitä eroa on Power BI:llä ja Power BI Prolla?
-Power BI tarjoaa erilaisia ominaisuuksia, joiden avulla voit aloittaa tietojen analysoinnin aivan uudella tavalla. Power BI Pro tarjoaa kaikki samat hienot ominaisuudet kuin Power BI, sekä muita ominaisuuksia, kuten suuremman tallennustilan, mahdollisuuden ajoittaa tiedot päivittymään useita kertoja päivässä, täysin vuorovaikutteiset reaaliaikaiset tietolähteet, ryhmät ja paljon muuta. Lue lisää [Power BI Pron ja ilmaisen Power BI:n eroista](https://powerbi.microsoft.com/pricing).
+## <a name="whats-the-difference-between-power-bi-pro-and-power-bi-premium"></a>Mitä eroa on Power BI Prolla ja Power BI Premiumilla?
+Power BI Pro on yksittäinen käyttöoikeus, joka sallii kaiken sisällön ja kaikkien ominaisuuksien käytön Power BI -palvelussa, eli myös sisällön jakamisen ja yhteistyön muiden Pro-käyttäjien kanssa. Vain Pro-käyttäjät voivat julkaista ja käyttää sisältöä sovelluksen työtiloista, jakaa koontinäyttöjä sekä tilata koontinäyttöjä ja raportteja. 
+
+Premium tarjoaa varatun kapasiteetin, joka takaa tasaisemman suorituskyvyn ja tukee suurempia tietomääriä Power BI:ssä. Yksittäisten käyttäjien kohdalla Premium mahdollistaa myös Pro-version käyttäjien luoman sisällön laaja-alaisen jakamisen ilman, että sisältöä katselevilla vastaanottajilla on oltava käyttäjäkohtainen käyttöoikeus.
 
 ## <a name="how-much-does-power-bi-cost"></a>Kuinka paljon Power BI maksaa?
 Power BI Desktop on ilmainen. Power BI Prosta on saatavilla 60 päivän ilmainen kokeiluversio. Hinnoista kerrotaan [Power BI:n hinnoittelusivulla](https://powerbi.microsoft.com/pricing).
@@ -34,7 +36,7 @@ Power BI Desktop on ilmainen. Power BI Prosta on saatavilla 60 päivän ilmaine
 Jos sinulla on Power BI Premiumiin liittyviä kysymyksiä, tutustu [Power BI Premiumin usein kysyttyihin kysymyksiin](service-premium-faq.md).
 
 ## <a name="how-do-i-find-out-who-in-my-organization-has-a-power-bi-account"></a>Kuinka saan selville, keillä organisaationi jäsenillä on Power BI -tili?
-Microsoft Azure Active Directoryn integroidut sovellukset -raportti Power BI:lle sisältää tiedon organisaatiosi aktiivisista käyttäjistä. Azure AD -raportti ei ilmaise, onko käyttäjä Power BI:n maksuttoman tai Pro-version käyttäjä. Se ilmoittaa vain, ketkä käyttäjät ovat kirjautuneet Power BI:hin ja milloin he kirjautuivat sisään. Katso lisätiedot [Kirjautuneiden Power BI -käyttäjien etsiminen](service-admin-access-usage.md) -ohjeartikkelista.
+Microsoft Azure Active Directoryn integroidut sovellukset -raportti Power BI:lle sisältää tiedon organisaatiosi aktiivisista käyttäjistä. Azure AD -raportista ei käy ilmi, minkätyyppinen käyttöoikeus kullakin käyttäjällä on. Se ilmoittaa vain, ketkä käyttäjät ovat kirjautuneet Power BI:hin ja milloin he kirjautuivat sisään. Katso lisätiedot [Kirjautuneiden Power BI -käyttäjien etsiminen](service-admin-access-usage.md) -ohjeartikkelista.
 
 ## <a name="what-is-power-bi-desktop"></a>Mikä on Power BI Desktop?
 Power BI Desktop on maksuton työpöytäsovellus, jonka voit asentaa saman tien omalle tietokoneellesi. Power BI Desktop toimii yhdenmukaisesti Power BI -palvelun kanssa tarjoamalla kehittyneitä tietojen tarkastelu-, muovaamis-, mallinnus- ja raportointimahdollisuuksia sekä erittäin vuorovaikutteisia visualisointeja. Voit tallentaa työsi tiedostoon sekä julkaista tietoja ja raportteja suoraan Power BI -sivustoon muiden kanssa jaettavaksi. Lue lisää siitä, [mikä on Power BI Desktop](desktop-what-is-desktop.md).
