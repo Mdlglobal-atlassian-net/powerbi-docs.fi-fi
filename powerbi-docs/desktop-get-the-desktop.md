@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/02/2018
+ms.date: 06/05/2018
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: eee341314b309eda119dd282eafd18188f8fdfd0
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 52ef1f6526b83a54ba26fdffaf8150049c55880d
+ms.sourcegitcommit: 8ee0ebd4d47a41108387d13a3bc3e7e2770cbeb8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34286631"
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34813315"
 ---
 # <a name="get-power-bi-desktop"></a>Power BI Desktopin hankkiminen
 **Power BI Desktopilla** voit luoda tarkempia kyselyjä, malleja ja raportteja, jotka visualisoivat tietoja. **Power BI Desktopilla** voit luoda tietomalleja ja raportteja sekä jakaa töitäsi julkaisemalla niitä Power BI -palvelussa.  **Power BI Desktop** on ladattavissa maksutta.
@@ -98,6 +98,14 @@ Alla on lueteltu **Power BI Desktopin** käytön vähimmäisvaatimukset:
 * **Näyttö:** näytön tarkkuuden täytyy olla vähintään 1 440 x 900, suositus on 1 600 x 900 (16:9). Pienempiä näyttötarkkuuksia (esimerkiksi 1 024 x 768 tai 1 280 x 800) ei suositella, koska jotkin ohjausobjektit (esimerkiksi aloitusnäytön sulkemistoiminto) eivät näy kunnolla niillä.
 * **Windowsin näyttöasetukset**: Jos näyttöasetuksesi on määritetty siten, että tekstin, sovellusten tai muiden kohteiden koko on yli 100 %, et ehkä näe joitain valintaikkunoita, jotka täytyy sulkea tai joihin sinun täytyy reagoida, jotta voit jatkaa **Power BI Desktopin** käyttöä. Jos törmäät tähän ongelmaan, tarkista Windowsin **näyttöasetukset** valitsemalla **Asetukset > Järjestelmä > Näyttö** ja palauta näyttökoon asetus sataan prosenttiin liukusäätimellä.
 * **Suoritin:** suosittelemme vähintään yhden gigahertsin (GHz) x86-suoritinta tai x64-bittistä suoritinta tai tätä nopeampaa suoritinta.
+
+## <a name="considerations-and-limitations"></a>Huomioitavat asiat ja rajoitukset
+
+Jotkin käyttäjät ovat kohdanneet seuraavanlaisen virheen käyttäessään vanhentunutta versiota **Power BI Desktopista**: 
+
+    "We weren't able to restore the saved database to the model" 
+
+Power BI Desktopin päivitys nykyisen versioon ratkaisee yleensä ongelman.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 Kun olet asentanut **Power BI Desktopin**, seuraavan sisällön avulla voit aloittaa sen käytön nopeasti:

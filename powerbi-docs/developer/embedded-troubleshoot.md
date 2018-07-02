@@ -9,12 +9,12 @@ ms.component: powerbi-developer
 ms.topic: conceptual
 ms.date: 04/23/2018
 ms.author: maghan
-ms.openlocfilehash: fa142a34da003328ef509c319faf24d556023440
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: ad23161985cc2721562cfdfd9128e326db887ece
+ms.sourcegitcommit: 8ee0ebd4d47a41108387d13a3bc3e7e2770cbeb8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34720807"
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34813154"
 ---
 # <a name="troubleshooting-your-embedded-application"></a>Upotetun sovelluksen vianmääritys
 
@@ -108,7 +108,7 @@ Vaikka käyttäjätiedot olisivat voimassa GenerateToken voi epäonnistua muutam
 
 Selvittääksesi syyn, kokeile seuraavaa.
 
-* Suorita [tietojoukon hakeminen](https://msdn.microsoft.com/library/mt784653.aspx). Onko ominaisuus IsEffectiveIdentityRequired tosi?
+* Suorita [hae tietojoukko](https://docs.microsoft.com/rest/api/power-bi/datasets). Onko ominaisuus IsEffectiveIdentityRequired tosi?
 * Mikä tahansa EffectiveIdentity vaatii käyttäjänimen.
 * Mikäli IsEffectiveIdentityRolesRequired on tosi, rooli vaaditaan.
 * Tietojoukon tunnus on pakollinen, minkä tahansa EffectiveIdentityn kanssa.

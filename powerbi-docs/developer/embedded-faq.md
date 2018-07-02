@@ -9,12 +9,12 @@ ms.component: powerbi-developer
 ms.topic: conceptual
 ms.date: 05/25/2018
 ms.author: maghan
-ms.openlocfilehash: 3e1b3b59fff26242e662d90365a6b8acc98259e6
-ms.sourcegitcommit: b3b32b9b3935706d7caa091833bd32259d7ff6ee
+ms.openlocfilehash: bcdb20d22790b74b54caca5d21325039d6e718bf
+ms.sourcegitcommit: 8ee0ebd4d47a41108387d13a3bc3e7e2770cbeb8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34754928"
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34812740"
 ---
 # <a name="frequently-asked-questions-about-power-bi-embedded"></a>Usein kysyttyjä kysymyksiä – Power BI Embedded
 
@@ -51,7 +51,7 @@ Joissain tapauksissa (tavallisesti suuri) ISV haluaa käyttää P-varastointiyks
 
 ### <a name="how-many-embed-tokens-can-i-create"></a>Kuinka monta upotettavaa tunnusta voit luoda?
 
-PRO-käyttöoikeudella upotettavat tunnukset on tarkoitettu kehitystestaukseen, joten Power BI -päätili voi luoda vain rajallisen määrän upotettavia tunnuksia. Tuotantoympäristössä upottamista varten täytyy [ostaa kapasiteettia](#technical). Kun olet ostanut kapasiteettia, voit luoda upotettavia tunnuksia rajattomasti. Siirry [Hae käytettävissä olevat ominaisuudet](https://msdn.microsoft.com/library/mt846473.aspx) -kohtaan tarkistaaksesi nykyisten upotuksien käyttöarvon prosentteina.
+PRO-käyttöoikeudella upotettavat tunnukset on tarkoitettu kehitystestaukseen, joten Power BI -päätili voi luoda vain rajallisen määrän upotettavia tunnuksia. Tuotantoympäristössä upottamista varten täytyy [ostaa kapasiteettia](#technical). Kun olet ostanut kapasiteettia, voit luoda upotettavia tunnuksia rajattomasti. Siirry [Käytettävissä olevat ominaisuudet](https://docs.microsoft.com/rest/api/power-bi/availablefeatures) -kohtaan tarkistaaksesi käyttöarvon, joka ilmaisee nykyisen upotetun käytön prosenttilukuna.
 
 ## <a name="technical"></a>Tekniset
 

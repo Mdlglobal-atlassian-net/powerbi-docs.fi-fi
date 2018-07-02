@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 04/24/2018
+ms.date: 06/05/2018
 ms.author: davidi
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: 99ee9e87584202420239658a3522ad82cb383227
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: bdf3791d74510b1630bc13c279ed0cd5ebddc3ec
+ms.sourcegitcommit: 8ee0ebd4d47a41108387d13a3bc3e7e2770cbeb8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34286539"
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34813453"
 ---
 # <a name="resolve-issues-when-power-bi-desktop-will-not-launch"></a>Ratkaise ongelmat, kun Power BI Desktop ei käynnisty
 **Power BI Desktopissa** on mahdollista, että jos käyttäjällä on asennettuna ja käytössä aiempia versioita **Power BI:n paikallisesta tietoyhdyskäytävästä**, häneltä estetään Power BI Desktopin käynnistäminen, koska Power BI:n paikallisella yhdyskäytävällä on hallinnollisia käytäntöjä, joiden mukaan se rajoittaa nimettyjä putkia paikallisella koneella. 
@@ -33,6 +33,13 @@ Jos et enää tarvitse Power BI:n paikallista tietoyhdyskäytävää, voit poist
 Voit vaihtoehtoisesti käynnistää Power BI Desktopin järjestelmänvalvojana. On silti suositeltavaa, että asennat uusimman version Power BI:n paikallisesta tietoyhdyskäytävästä tässä artikkelissa aiemmin annettujen ohjeiden mukaisesti.
 
 On tärkeää huomata, että Power BI Desktop on suunniteltu moniajoarkkitehtuuriksi ja useat prosessit käyttävät kommunikoidessaan Windowsin nimettyjen putkia. Muut prosessit saattavat häiritä näiden nimettyjen putkien toimintaa. Yleisin syy tällaisille häiriöille on suojaus, mukaan lukien tilanteet, joissa virustentorjuntaohjelmisto tai palomuurit saattavat estää putkien toimintaa tai niiden liikennettä ohjataan tiettyyn porttiin. Power BI Desktopin käynnistäminen järjestelmänvalvojan oikeuksilla saattaa ratkaista ongelman. Jos käynnistäminen järjestelmänvalvojan oikeuksilla ei ole mahdollista, ota yhteys järjestelmänvalvojaan, selvittääksesi, mitkä suojaussäännöt estävät nimettyjä putkia kommunikoimasta oikein, ja lisää Power BI Desktop ja sen asianmukaiseen aliprosessit sallittujen prosessien listaan.
+
+## <a name="resolve-issues-when-connecting-to-sql-server"></a>Ratkaise ongelmat yhdistettäessä SQL-palvelimeen
+Jos kohtaat SQL Server-tietokantaan yhdistettäessä seuraavan kaltaisen virhesanoman, voit usein korjata ongelman käynnistämällä **Power BI Desktopin** järjestelmänvalvojana ja yhdistämällä tämän jälkeen SQL-palvelimeen:
+
+    "An error happened while reading data from the provider: 'Could not load file or assembly 'System.EnterpriseServices, Version=4.0.0.0, Culture=neutral, PublicKeyToken=xxxxxxxxxxxxx' or one of its dependencies. Either a required impersonation level was not provided, or the provided impersonation level is invalid. (Exception from HRESULT: 0x80070542)'"
+
+Järjestelmänvalvojana käynnistämisen ja yhteyden muodostamisen jälkeen, tarvittavat DLL-tiedostot on rekisteröity oikein. Tämän jälkeen Power BI Desktopin käynnistämistä järjestelmänvalvojana ei tarvitse suorittaa.
 
 ## <a name="help-with-other-issues-when-launching-power-bi-desktop"></a>Apua muihin Power BI Desktopin käynnistysongelmiin
 Pyrimme hoitamaan mahdollisimman monet **Power BI Desktopissa** ilmenevät ongelmat. Tutkimme säännöllisesti ongelmia, joita useilla asiakkailla saattaa ilmetä, ja lisäämme artikkeleihin niitä koskevat ohjeet.

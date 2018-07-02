@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/02/2018
+ms.date: 06/05/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 62f6c8ac23fad39dfb6942678cf92a37014de8bf
-ms.sourcegitcommit: b25ae650643b0a62f33d7c1741307137b9cec316
+ms.openlocfilehash: c16fe65d766c6a1c18d809a68b3b0f6af8047db0
+ms.sourcegitcommit: 8ee0ebd4d47a41108387d13a3bc3e7e2770cbeb8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34799575"
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34813338"
 ---
 # <a name="connect-to-ssas-multidimensional-models-in-power-bi-desktop"></a>Yhteyden muodostaminen SSAS-monidimensiomalleihin Power BI Desktopissa
 Power BI Desktopin kautta on mahdollista käyttää **SSAS-monidimensiomalleja**, jotka tunnetaan myös lyhenteellä **SSAS MD**.
@@ -75,11 +75,12 @@ Käyttäjähierarkioiden laskettuja jäseniä ei näytetä Power BI:ssä. Sen si
 ### <a name="security"></a>Suojaus
 Monidimensiomallit tukevat dimensio- ja solutason suojausta *roolien* kautta. Kun muodostat Power BI:llä yhteyden kuutioon, sinut todennetaan ja käyttöoikeuksiesi riittävyys arvioidaan. Kun käyttäjällä on käytössä *dimension suojaus*, käyttäjä ei näe Power BI:ssä vastaavan dimension jäseniä. Sen sijaan jos käyttäjälle on määritetty *solun suojauksen* käyttöoikeudet, joiden mukaan tietyt solut ovat rajoitettuja, kyseinen käyttäjä ei voi muodostaa yhteyttä kuutioon käyttämällä Power BI:tä.
 
-## <a name="limitations-of-ssas-multidimensional-models-in-power-bi-desktop"></a>SSAS-monidimensiomallien rajoitukset Power BI Desktopissa
+## <a name="considerations-and-limitations"></a>Huomioitavat asiat ja rajoitukset
 **SSAS MD**:n käytössä pätevät tietyt rajoitukset:
 
 * Jotta Power BI Desktopin SSAS MD ‑liitin toimisi oikein, palvelimissa on oltava käytössä Analysis Servicesistä versio SQL Server 2012 SP1 CU4 tai uudempi versio.
 * *Toiminnot* ja *Nimetyt joukot* eivät näy Power BI:ssä, mutta voit silti muodostaa yhteyden kuutioihin, jotka sisältävät myös *toimintoja* ja *nimettyjä joukkoja* ja luoda visualisointeja ja raportteja.
+* Voit kohdata ongelman, missä Power BI näyttää SSAS-mallin metatiedot, mutta et pysty hakemaan mallista tietoja. Tämä saattaa tapahtua, jos järjestelmään on asennettuna 32-bittinen MSOLAP-palvelun versio, eikä 64-bittinen versio. 64-bittisen version asentaminen saattaa ratkaista ongelman.
 
 ## <a name="supported-features-of-ssas-md-in-power-bi-desktop"></a>Power BI Desktopin tukemat SSAS MD:n ominaisuudet
 Power BI Desktop tukee seuraavia SSAS MD:n ominaisuuksia:
