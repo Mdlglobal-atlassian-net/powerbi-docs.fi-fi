@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 05/26/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: f0ac0ca1bd03f06e2b7679ab4afc1b9193286f5b
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: dbe98d69ce800ef57e6def59003dce56b7be56cd
+ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34584204"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37600916"
 ---
 # <a name="drill-mode-in-a-visualization-in-power-bi"></a>Visualisointiin porautumistila Power BI:ssä
 
@@ -179,11 +179,11 @@ Avaa [Jälleenmyyntianalyysimalli](sample-datasets.md) ja luo pinottu pylväskaa
 
 Vaikka akselin tietokenttä onkin **kuukausi**, se luo myös **Vuosi**-luokan **Akseli**-ruutuun. Tämä johtuu siitä, että Power BI tarjoaa täyden päivämäärä/aikarakenteen kaikille arvoille, jotka se lukee. Hierarkian yläosassa näkyvät vuotta koskevat tiedot.
 
-![](media\power-bi-visualization-drill-down/power-bi-hierarchical-axis-datetime-1.png)
+![](media/power-bi-visualization-drill-down/power-bi-hierarchical-axis-datetime-1.png)
 
 Kun Porautuminen alaspäin -tila on käytössä, siirry hierarkiassa yksi taso alaspäin napsauttamalla kaavion palkkia. Näet kolme palkkia käytettävissä olevista vuosineljännestiedoista. Valitse vasemman yläkulman kuvakkeista **Expand all down one level of the hierarchy** (Laajenna kaikki alaspäin yhden hierarkiatason verran). Tee tämän jälkeen sama uudelleen siirtyäksesi hierarkian alimmalle tasolle, joka näyttää jokaisen kuukauden tulokset.
 
-![](media\power-bi-visualization-drill-down/power-bi-hierarchical-axis-datetime-2.png)
+![](media/power-bi-visualization-drill-down/power-bi-hierarchical-axis-datetime-2.png)
 
 Visualisoinnin lisäksi näemme kussakin raportissa hahmonnettujen tietojen hierarkian. Seuraavassa taulukossa näkyvät **Näytä tiedot** -toiminnon tulokset raportissa, joka porautuu alaspäin yksittäisestä kuukaudesta tai kaikista kuukausista. 
 
@@ -192,8 +192,8 @@ Huomaa, että tiedot ovat samat vuosineljänneksen ja koko vuoden raporteissa, m
 
 |Laajennettu tila|Vuosi|Vuosineljännes|Kuukausi|Päivä|
 | ---|:---:|:---:|:---:|---|
-|Yksittäinen|![](media\power-bi-visualization-drill-down/power-bi-hierarchical-year.png)|![](media\power-bi-visualization-drill-down/power-bi-hierarchical-quarter.png)|![](media\power-bi-visualization-drill-down/power-bi-hierarchical-one-month.png)|![](media\power-bi-visualization-drill-down/power-bi-hierarchical-one-day.png)|
-|Kaikki|![](media\power-bi-visualization-drill-down/power-bi-hierarchical-year.png)|![](media\power-bi-visualization-drill-down/power-bi-hierarchical-quarter.png)|![](media\power-bi-visualization-drill-down/power-bi-hierarchical-all-month.png)|![](media\power-bi-visualization-drill-down/power-bi-hierarchical-all-day.png)|
+|Yksittäinen|![](media/power-bi-visualization-drill-down/power-bi-hierarchical-year.png)|![](media/power-bi-visualization-drill-down/power-bi-hierarchical-quarter.png)|![](media/power-bi-visualization-drill-down/power-bi-hierarchical-one-month.png)|![](media/power-bi-visualization-drill-down/power-bi-hierarchical-one-day.png)|
+|Kaikki|![](media/power-bi-visualization-drill-down/power-bi-hierarchical-year.png)|![](media/power-bi-visualization-drill-down/power-bi-hierarchical-quarter.png)|![](media/power-bi-visualization-drill-down/power-bi-hierarchical-all-month.png)|![](media/power-bi-visualization-drill-down/power-bi-hierarchical-all-day.png)|
 
 
 ### <a name="hierarchical-category-data"></a>Hierarkkiset luokkatiedot
@@ -201,20 +201,20 @@ Kokoelmista ja alikokoelmista mallinnetut tiedot ovat hierarkkisia. Hyvä esimer
 
 Avaa tätä esimerkkiä varten [Jälleenmyyntianalyysimalli](sample-datasets.md). Luo pinottu pylväskaaviovisualisointi, jossa tarkastellaan **yksiköiden kokonaismäärää tänä vuonna** (Arvot) **alueen**, **kaupungin**, **postinumeron** ja **nimen** (Ryhmä) mukaan.  
 
-![](media\power-bi-visualization-drill-down/power-bi-hierarchical-axis-category-1.png)
+![](media/power-bi-visualization-drill-down/power-bi-hierarchical-axis-category-1.png)
 
 Porautuminen alaspäin -tilan ollessa käytössä valitse vasemman yläkulman kuvakkeista **Expand all down one level of the hierarchy** (Laajenna kaikki alaspäin yhden hierarkiatason verran) -kuvake kolme kertaa.
 Sinun pitäisi olla hierarkian alimmalla tasolla, joka näyttää alueen, kaupungin ja postinumeron tulokset.
 
-![](media\power-bi-visualization-drill-down/power-bi-hierarchical-axis-category-2.png)
+![](media/power-bi-visualization-drill-down/power-bi-hierarchical-axis-category-2.png)
 
 Visualisoinnin lisäksi näemme kussakin raportissa hahmonnettujen tietojen hierarkian. Seuraavassa taulukossa näkyvät **Näytä tiedot** -toiminnon tulokset raportissa, joka porautuu alaspäin yhden alueen tiedoissa tai kaikkien alueiden tiedoissa. Porautuessasi alaspäin näet, miten yksittäinen raportti muuttuu yksityiskohtaisemmaksi ja ”kaikki alueet” -raportissa on enemmän tietoja.
 
 
 | Laajennettu tila|Alue|Kaupunki|Postinumero|Nimi|
 | ---|:---:|:---:|:---:|---|
-|Yksittäinen|![](media\power-bi-visualization-drill-down/power-bi-hierarchical-territory.png)|![](media\power-bi-visualization-drill-down/power-bi-hierarchical-one-territory-city.png)|![](media\power-bi-visualization-drill-down/power-bi-hierarchical-one-territory-city-postal.png)|![](media\power-bi-visualization-drill-down/power-bi-hierarchical-one-territory-city-postal-name.png)|
-|Kaikki|![](media\power-bi-visualization-drill-down/power-bi-hierarchical-territory.png)|![](media\power-bi-visualization-drill-down/power-bi-hierarchical-all-territory-city.png)|![](media\power-bi-visualization-drill-down/power-bi-hierarchical-all-territory-city-postal.png)|![](media\power-bi-visualization-drill-down/power-bi-hierarchical-all-territory-city-postal-name.png)|
+|Yksittäinen|![](media/power-bi-visualization-drill-down/power-bi-hierarchical-territory.png)|![](media/power-bi-visualization-drill-down/power-bi-hierarchical-one-territory-city.png)|![](media/power-bi-visualization-drill-down/power-bi-hierarchical-one-territory-city-postal.png)|![](media/power-bi-visualization-drill-down/power-bi-hierarchical-one-territory-city-postal-name.png)|
+|Kaikki|![](media/power-bi-visualization-drill-down/power-bi-hierarchical-territory.png)|![](media/power-bi-visualization-drill-down/power-bi-hierarchical-all-territory-city.png)|![](media/power-bi-visualization-drill-down/power-bi-hierarchical-all-territory-city-postal.png)|![](media/power-bi-visualization-drill-down/power-bi-hierarchical-all-territory-city-postal-name.png)|
 
 
 ## <a name="considerations-and-limitations"></a>Huomioon otettavat seikat ja rajoitukset

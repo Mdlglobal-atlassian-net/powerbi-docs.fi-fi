@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 05/02/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 6cdcff66d48ede031a635e44e3a40af4e321c0c5
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 90f32e96a6e2c7777c5d1535314e2c85989e1932
+ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34584066"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37599590"
 ---
 # <a name="pin-a-tile-to-a-power-bi-dashboard-from-excel"></a>Ruudun kiinnittäminen Power BI -raporttinäkymään Excelistä
 Ennen kuin voit kiinnittää ruudun Excel-työkirjasta, yhdistät kyseisen työkirjan Power BI -palveluun (app.powerbi.com). Työkirjan yhdistäminen tuo linkitetyn vain luku -version kyseisestä työkirjasta Power BI -palveluun ja mahdollistaa alueiden kiinnittämisen raporttinäkymiin. Voit kiinnittää jopa kokonaisen laskentataulukon raporttinäkymään.  
@@ -60,7 +60,7 @@ Uusi [raporttinäkymän ruutu](service-dashboard-tiles.md) voidaan lisätä Exce
    * Aiemmin luotu raporttinäkymä: valitse raporttinäkymän nimi avattavasta luettelosta.
    * Uusi raporttinäkymä: anna nimi uudelle raporttinäkymälle.
    
-    ![Kiinnitä koontinäyttöön -valintaikkuna](media/service-dashboard-pin-tile-from-excel/pbi_dashdialog1.png)
+     ![Kiinnitä koontinäyttöön -valintaikkuna](media/service-dashboard-pin-tile-from-excel/pbi_dashdialog1.png)
 4. Valitse **Kiinnitä**. Onnistumissanoma (lähellä oikeaa yläkulmaa) ilmaisee, että alue lisättiin ruutuna raporttinäkymään. 
    
     ![Kiinnitetty koontinäyttöön -valintaikkuna](media/service-dashboard-pin-tile-from-excel/power-bi-go-to-dashboard.png)
