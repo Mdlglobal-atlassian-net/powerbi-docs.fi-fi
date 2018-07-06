@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 04/24/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: a584d61e1f2f55c244b453e6c086f3222217ee9a
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 43119a700b3b660a2734d1a8f974291a2817ce8e
+ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34289000"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37597994"
 ---
 # <a name="bidirectional-cross-filtering-using-directquery-in-power-bi-desktop"></a>Kaksisuuntainen ristiinsuodatus DirectQueryn avulla Power BI Desktopissa
 
@@ -33,13 +33,11 @@ Ristisuodatuksen ottamiseksi käyttöön suhteen valintaikkunassa **Suhteen muok
 
 * **Ristiinsuodatussuunnaksi** on asetettava **Molemmat**
 * **Ota suojaussuodattimet käyttöön molempiin suuntiin** on myös oltava valittuna
-  
+
   ![](media/desktop-bidirectional-filtering/bidirectional-filtering_2.png)
 
 > [!NOTE]
-> Kun luot ristiinsuodatuksen DAX-kaavoja Power BI Desktopissa, käytä *UserPrincipalNamea* (joka on usein sama kuin käyttäjän kirjautumisnimi, kuten *joe@contoso.com*) *Käyttäjänimen* sijaan. Niinpä joudut ehkä luomaan vastaavan taulukon, joka yhdistää *Käyttäjänimen* (tai esimerkiksi työntekijätunnuksen) *UserPrincipleNameen*.
-> 
-> 
+> Kun luot ristiinsuodatuksen DAX-kaavoja Power BI Desktopissa, käytä *UserPrincipalNamea* (joka on usein sama kuin käyttäjän kirjautumisnimi, kuten <em>joe@contoso.com</em>) *Käyttäjänimen* sijaan. Siten joudut ehkä luomaan vastaavan taulukon, joka yhdistää *Käyttäjänimen* (tai esimerkiksi työntekijätunnuksen) *UserPrincipalNameen*.
 
 Saat lisätietoja ja esimerkkejä kaksisuuntaisen ristiinsuodatuksen toiminnasta tässä artikkelissa aiemmin mainitusta [teknisestä raportista](http://download.microsoft.com/download/2/7/8/2782DF95-3E0D-40CD-BFC8-749A2882E109/Bidirectional%20cross-filtering%20in%20Analysis%20Services%202016%20and%20Power%20BI.docx).
 

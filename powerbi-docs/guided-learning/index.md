@@ -2,12 +2,12 @@
 title: 'Microsoft Power BI: Ohjattu oppiminen'
 description: Aloita oppimisprosessi käymällä läpi kokoelma peräkkäisiä kursseja, joiden avulla opit tuntemaan Microsoft Power BI:n kattavat ja tehokkaat ominaisuudet.
 layout: LandingPage
-ms.openlocfilehash: f80886799a2cfc960e4d441d3572d94f3c09b22e
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 2cd748b60da6781ff9ea710b5802f3d68c3bc6b8
+ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34310149"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37600672"
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -272,7 +272,7 @@ Tietojen tutkiminen </h3>
                                 <span style="margin-left: 32px; align-self: center;">9 min</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="exploringdata.yml?tutorial-step=5">Mukautettujen kysymys- ja vastausehdotusten luominen</a>
+                                <a class="barLink" href="exploringdata.yml?tutorial-step=5">Mukautettujen kysymys&amp;- ja vastausehdotusten luominen</a>
                                 <span style="margin-left: 32px; align-self: center;">4 min</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
