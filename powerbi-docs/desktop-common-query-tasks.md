@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 04/24/2018
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 44756e45a6f9944f9d52afa98709b1a3f7b5b6e1
-ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
+ms.openlocfilehash: fde23a47bb0f4034e213a652d60241ff625921d3
+ms.sourcegitcommit: 001ea0ef95fdd4382602bfdae74c686de7dc3bd8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37137487"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38877327"
 ---
 # <a name="common-query-tasks-in-power-bi-desktop"></a>Yleiset kyselytehtävät Power BI Desktopissa
 Power BI Desktopin **kyselyeditorissa** on muutamia usein käytettyjä tehtäviä. Tässä asiakirjassa kerrotaan näistä yleisistä tehtävistä ja annetaan linkkejä lisätietoihin. 
@@ -38,7 +38,7 @@ Ensimmäinen tietoyhteys on Excel-työkirja. Toinen on verkkoresurssi, jota käy
 Yleiset kyselytehtävät alkavat yhteyden muodostamisella näihin tietolähteisiin.
 
 ## <a name="connect-to-data"></a>Tietoihin yhdistäminen
-Kun haluat muodostaa yhteyden tietoihin Power BI Desktopissa, napsauta valintanauhan **Aloitus**-välilehden **Nouda tiedot** -painiketta. Power BI Desktop näyttää valikon, jonka sisältää yleisimmät tietolähteet. Jos haluat nähdä luettelon kaikista tietolähteistä, joihin Power BI Desktop voi muodostaa yhteyden, valitse valikon alareunasta **Lisää...** Saat lisätietoja ohjeartikkelista [Power BI Desktopin tietolähteet](https://docs.microsoft.com/en-us/power-bi/desktop-data-sources).
+Kun haluat muodostaa yhteyden tietoihin Power BI Desktopissa, napsauta valintanauhan **Aloitus**-välilehden **Nouda tiedot** -painiketta. Power BI Desktop näyttää valikon, jonka sisältää yleisimmät tietolähteet. Jos haluat nähdä luettelon kaikista tietolähteistä, joihin Power BI Desktop voi muodostaa yhteyden, valitse valikon alareunasta **Lisää...** Saat lisätietoja ohjeartikkelista [Power BI Desktopin tietolähteet](https://docs.microsoft.com/power-bi/desktop-data-sources).
 
 ![](media/desktop-common-query-tasks/commonquerytasks_getdata.png)
 
@@ -60,10 +60,10 @@ Valitse **OK**. Kuten aiemminkin, Power BI Desktop tarkistaa työkirjan ja näyt
 
 Muut tietoyhteydet ovat samankaltaisia. Jos tietoyhteyden muodostaminen edellyttää todennusta, Power BI Desktop pyytää sinulta soveltuvia tunnistetietoja.
 
-Jos haluat vaiheittaiset ohjeet tietoihin yhdistämiseen Power BI Desktopissa, lue ohjeartikkeli [Tietoihin yhdistäminen Power BI Desktopissa](https://docs.microsoft.com/en-us/power-bi/desktop-connect-to-data).
+Jos haluat vaiheittaiset ohjeet tietoihin yhdistämiseen Power BI Desktopissa, lue ohjeartikkeli [Tietoihin yhdistäminen Power BI Desktopissa](https://docs.microsoft.com/power-bi/desktop-connect-to-data).
 
 ## <a name="shape-and-combine-data"></a>Tietojen muotoileminen ja yhdistäminen
-Kyselyeditorilla voit muotoilla ja yhdistää tietoja helposti. Tämä osio sisältää muutamia esimerkkejä tietojen muotoilemisesta. Jos haluat kattavamman esittelyn tietojen muotoilemisesta ja yhdistämisestä, lue ohjeartikkeli **[Tietojen muotoileminen ja yhdistäminen Power BI Desktopissa](https://docs.microsoft.com/en-us/power-bi/desktop-shape-and-combine-data)**.
+Kyselyeditorilla voit muotoilla ja yhdistää tietoja helposti. Tämä osio sisältää muutamia esimerkkejä tietojen muotoilemisesta. Jos haluat kattavamman esittelyn tietojen muotoilemisesta ja yhdistämisestä, lue ohjeartikkeli **[Tietojen muotoileminen ja yhdistäminen Power BI Desktopissa](https://docs.microsoft.com/power-bi/desktop-shape-and-combine-data)**.
 
 Edellisessä osiossa yhdistimme kaksi tietojoukkoa: Excel-työkirjan ja verkkoresurssin. Kun ne on ladattu kyselyeditoriin, näemme alla olevassa kuvassa näkyvät tiedot ja verkkosivun kyselyn valittuna (se on valittu kyselyeditorin vasemman puolen **Kyselyt**-ruudussa käytettävissä olevien kyselyiden luettelosta).
 

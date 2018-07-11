@@ -9,12 +9,12 @@ ms.component: powerbi-developer
 ms.topic: conceptual
 ms.date: 05/31/2018
 ms.author: maghan
-ms.openlocfilehash: f4aac424d448dcb3e2dd722efe54db99d318ba80
-ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
+ms.openlocfilehash: aa51d516e903908fb2b0121f9bbed41d54f5e670
+ms.sourcegitcommit: 001ea0ef95fdd4382602bfdae74c686de7dc3bd8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37599481"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38924997"
 ---
 # <a name="register-an-azure-ad-app-to-embed-power-bi-content"></a>Azure AD -sovelluksen rekisteröinti Power BI -sisällön upottamiseksi
 Lue, miten voit rekisteröidä sovelluksen Azure Active Directoryssä (Azure AD) Power BI -sisällön upottamiseksi.
@@ -23,7 +23,6 @@ Kun rekisteröit sovelluksen Azure AD:ssä, sovellus pääsee BI REST -ohjelmoin
 
 > [!IMPORTANT]
 > Ennen Power BI -sovelluksen rekisteröintiä tarvitset [Azure Active Directory -vuokraajan ja organisaation käyttäjän](create-an-azure-active-directory-tenant.md). Jos et ole vielä rekisteröitynyt Power BI:hin siten, että vuokraajassa on käyttäjä, sovelluksen rekisteröinti epäonnistuu.
-> 
 > 
 
 Voit rekisteröidä sovelluksen kahdella eri tavalla. Voit rekisteröidä sen [Power BI -sovelluksen rekisteröintityökalun](https://dev.powerbi.com/apps/) avulla tai rekisteröidä sen suoraan Azure-portaalissa. Power BI -sovelluksen rekisteröintityökalu on helpoin vaihtoehto, koska siinä on vain muutama täytettävä kenttä. Käytä Azure-portaalia, jos haluat tehdä muutoksia sovellukseen.
@@ -45,7 +44,7 @@ Voit rekisteröidä sovelluksen Power BI -sovelluksen rekisteröintityökalun av
    
     **Kotisivun URL-osoite** on käytettävissä vain, jos valitset sovellustyypille **Server-side Web -sovelluksen**.
    
-    *Asiakkaiden käyttöön tarkoitettu upottaminen*- ja *integrate-dashboard-web-app*-mallien uudelleenohjaus-URL-osoite on `http://localhost:13526/redirect`. Raportti- ja ruutumallien uudelleenohjaus-URL-osoite on `http://localhost:13526/`.
+    *Asiakkaiden käyttöön tarkoitettu upottaminen*- ja *integrate-dashboard-web-app*-mallien **uudelleenohjaus-URL-osoite** on `http://localhost:13526/Redirect`. Raportti- ja ruutumallien **uudelleenohjaus-URL-osoite** on `http://localhost:13526/`.
 6. Valitse sovellukselle ohjelmointirajapinnat, joilla on pääsy. Katso lisätietoja Power BI -käyttöoikeuksista artikkelista [Power BI -käyttöoikeudet](power-bi-permissions.md).
    
     ![](media/register-app/app-registration-apis.png)
@@ -83,7 +82,7 @@ Toinen vaihtoehto sovelluksen rekisteröintiin on tehdä se suoraan Azure-portaa
 5. Noudata kehotteita ja luo uusi sovellus.
    
    * Anna verkkosovelluksille kirjautumisen URL-osoite. Se toimii sovelluksen perus-URL-osoitteena, jossa käyttäjät voivat kirjautua sisään, esimerkiksi `http://localhost:13526`.
-   * Anna Native-sovelluksille uudelleenohjaus-URL-osoite, jonka avulla Azure AD palauttaa tunnusvastaukset. Anna sovellukseen liittyvä arvo. Esimerkki: `http://myapplication/redirect`
+   * Anna Native-sovelluksille **uudelleenohjaus-URL-osoite**, jonka avulla Azure AD palauttaa tunnusvastaukset. Anna sovellukseen liittyvä arvo. Esimerkki: `http://myapplication/Redirect`
 
 Katso lisätietoja siitä, miten voit rekisteröidä sovelluksia Azure Active Directoryssä, artikkelista [Sovellusten integrointi Azure Active Directoryyn](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications).
 
