@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/02/2018
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 606ef1f1c69643852a94a7d83ece93cca8940e7a
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 175852a05c4964e6a476abf50684d9ffc12c4468
+ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34309919"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37599865"
 ---
 # <a name="getting-started-with-power-bi-desktop"></a>Power BI Desktopin käytön aloittaminen
 Tervetuloa **Power BI Desktopin aloitusoppaaseen**. Tässä lyhyessä esittelyssä kerrotaan, miten Power BI Desktop toimii ja mitä sillä voi tehdä, ja autetaan sinua rakentamaan tehokkaita tietomalleja ja upeita raportteja, jotka vahvistavat liiketoimintatietojasi. 
@@ -313,7 +313,7 @@ Kun tiedosto on ladattu, voit valita sen Power BI -palvelun vasemmassa ruudussa 
 
 Voit tehdä raporttiin muutoksia **Power BI** -palvelussa valitsemalla raporttipohjan yläosassa **Muokkaa raporttia**.
 
-Tallenna raporttisi valitsemalla palvelussa **Tiedosto \> Tallenna nimellä**. **Power BI** -palvelussa voit luoda raportistasi erilaisia kiinnostavia visualisointeja, jotka voit kiinnittää *raporttinäkymään*. Lisätietoja **Power BI** -palvelun**[ raporttinäkymistä on raporttinäkymien suunnittelua koskevassa artikkelissa](service-dashboards-design-tips.md)**.
+Tallenna raporttisi valitsemalla palvelussa **Tiedosto \> Tallenna nimellä**. **Power BI** -palvelussa voit luoda raportistasi erilaisia kiinnostavia visualisointeja, jotka voit kiinnittää *raporttinäkymään*. Lisätietoja **Power BI** -palvelun<strong>[ raporttinäkymistä on raporttinäkymien suunnittelua koskevassa artikkelissa](service-dashboards-design-tips.md)</strong>.
 
  ![](media/desktop-getting-started/gsg_share5.png)
 

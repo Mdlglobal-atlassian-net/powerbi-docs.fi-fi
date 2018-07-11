@@ -1,4 +1,5 @@
 ## <a name="list-of-available-data-source-types"></a>Luettelo käytettävissä olevista tietolähdetyypeistä
+
 | **Tietolähde** | **Reaaliaikainen yhteys / DirectQuery** | **Käyttäjän määrittämä manuaalinen tai ajoitettu päivitys** |
 | --- | --- | --- | --- |
 | Analysis Services -taulukkomuoto |Kyllä |Kyllä |

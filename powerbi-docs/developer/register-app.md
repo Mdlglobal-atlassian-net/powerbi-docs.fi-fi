@@ -9,12 +9,12 @@ ms.component: powerbi-developer
 ms.topic: conceptual
 ms.date: 05/31/2018
 ms.author: maghan
-ms.openlocfilehash: 9988d108c33e086938aca76d088c6852bb1117a4
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: f4aac424d448dcb3e2dd722efe54db99d318ba80
+ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34813273"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37599481"
 ---
 # <a name="register-an-azure-ad-app-to-embed-power-bi-content"></a>Azure AD -sovelluksen rekisteröinti Power BI -sisällön upottamiseksi
 Lue, miten voit rekisteröidä sovelluksen Azure Active Directoryssä (Azure AD) Power BI -sisällön upottamiseksi.
@@ -54,9 +54,8 @@ Voit rekisteröidä sovelluksen Power BI -sovelluksen rekisteröintityökalun av
     Saat **asiakastunnuksen** ja jos olet valinnut **Server-side Web -sovelluksen**, saat myös **asiakkaan salasanan**. **Asiakastunnus** voidaan noutaa Azure-portaalista myöhemmin tarvittaessa. Jos kadotat **asiakkaan salasanan**, sinun on luotava uusi asiakkaan salasana Azure-portaalissa.
 
 8. Siirry Azureen ja valitse **Myönnä käyttöoikeuksia**.
-> [!Note]
-    > Tähän tarvitaan yleisen järjestelmänvalvojan oikeudet Azure-vuokraajassa.
->
+   > [!Note]
+   > Tähän tarvitaan yleisen järjestelmänvalvojan oikeudet Azure-vuokraajassa.
 
 * Siirry Azureen.
 * Etsi ja valitse **Sovelluksen rekisteröinnit**.
@@ -83,8 +82,8 @@ Toinen vaihtoehto sovelluksen rekisteröintiin on tehdä se suoraan Azure-portaa
     ![](media/register-app/azuread-new-app-registration.png)
 5. Noudata kehotteita ja luo uusi sovellus.
    
-   * Anna verkkosovelluksille kirjautumisen URL-osoite. Se toimii sovelluksen perus-URL-osoitteena, jossa käyttäjät voivat kirjautua sisään, esimerkiksi http://localhost:13526.
-   * Anna Native-sovelluksille uudelleenohjaus-URL-osoite, jonka avulla Azure AD palauttaa tunnusvastaukset. Anna sovellukseen liittyvä arvo. Esimerkki: http://myapplication/redirect
+   * Anna verkkosovelluksille kirjautumisen URL-osoite. Se toimii sovelluksen perus-URL-osoitteena, jossa käyttäjät voivat kirjautua sisään, esimerkiksi `http://localhost:13526`.
+   * Anna Native-sovelluksille uudelleenohjaus-URL-osoite, jonka avulla Azure AD palauttaa tunnusvastaukset. Anna sovellukseen liittyvä arvo. Esimerkki: `http://myapplication/redirect`
 
 Katso lisätietoja siitä, miten voit rekisteröidä sovelluksia Azure Active Directoryssä, artikkelista [Sovellusten integrointi Azure Active Directoryyn](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications).
 
@@ -161,44 +160,44 @@ Sinun on kirjauduttava sisään joko *päätilillä*, jota käytetään upotukse
    * **AllPrincipals**-arvoa voi käyttää vain vuokraajan järjestelmänvalvoja, myöntääkseen käyttöoikeuksia vuokraajan kaikkien käyttäjien puolesta.
    * **Principal**-arvoa käytetään käyttöoikeuksia myöntämiseen tietyn käyttäjän puolesta. Tässä tapauksessa lisäominaisuus tulee lisätä pyynnön runkoon - *principalId = {User_ObjectId}*.
     
-    *Myönnä käyttöoikeuksia* -toimintoa tarvitaan, jottei Azure AD pyydä päätililtä lupaa, mikä ei ole mahdollista, käytettäessä ei-vuorovaikutteista sisäänkirjautumista.
+     *Myönnä käyttöoikeuksia* -toimintoa tarvitaan, jottei Azure AD pyydä päätililtä lupaa, mikä ei ole mahdollista, käytettäessä ei-vuorovaikutteista sisäänkirjautumista.
    
-    ```
-    Post https://graph.microsoft.com/beta/OAuth2PermissionGrants
-    Authorization: Bearer ey..qw
-    Content-Type: application/json
-    { 
-    "clientId":"{Service_Plan_ID}",
-    "consentType":"AllPrincipals",
-    "resourceId":"c78b2585-1df6-41de-95f7-dc5aeb7dc98e",
-    "scope":"Dataset.ReadWrite.All Dashboard.Read.All Report.Read.All Group.Read Group.Read.All Content.Create Metadata.View_Any Dataset.Read.All Data.Alter_Any",
-    "expiryTime":"2018-03-29T14:35:32.4943409+03:00",
-    "startTime":"2017-03-29T14:35:32.4933413+03:00"
-    }
-    ```
+     ```
+     Post https://graph.microsoft.com/beta/OAuth2PermissionGrants
+     Authorization: Bearer ey..qw
+     Content-Type: application/json
+     { 
+     "clientId":"{Service_Plan_ID}",
+     "consentType":"AllPrincipals",
+     "resourceId":"c78b2585-1df6-41de-95f7-dc5aeb7dc98e",
+     "scope":"Dataset.ReadWrite.All Dashboard.Read.All Report.Read.All Group.Read Group.Read.All Content.Create Metadata.View_Any Dataset.Read.All Data.Alter_Any",
+     "expiryTime":"2018-03-29T14:35:32.4943409+03:00",
+     "startTime":"2017-03-29T14:35:32.4933413+03:00"
+     }
+     ```
 
-5.  Myönnä sovelluksen käyttöoikeudet Azure Active Directorylle (AAD)
+5. Myönnä sovelluksen käyttöoikeudet Azure Active Directorylle (AAD)
    
-    **ConsentType**-arvoksi voidaan antaa joko **AllPrincipals**- tai **Principal**-arvo.
+   **ConsentType**-arvoksi voidaan antaa joko **AllPrincipals**- tai **Principal**-arvo.
 
-    * **AllPrincipals**-arvoa voi käyttää vain vuokraajan järjestelmänvalvoja, myöntääkseen käyttöoikeuksia vuokraajan kaikkien käyttäjien puolesta.
-    * **Principal**-arvoa käytetään käyttöoikeuksia myöntämiseen tietyn käyttäjän puolesta. Tässä tapauksessa lisäominaisuus tulee lisätä pyynnön runkoon - *principalId = {User_ObjectId}*.
+   * **AllPrincipals**-arvoa voi käyttää vain vuokraajan järjestelmänvalvoja, myöntääkseen käyttöoikeuksia vuokraajan kaikkien käyttäjien puolesta.
+   * **Principal**-arvoa käytetään käyttöoikeuksia myöntämiseen tietyn käyttäjän puolesta. Tässä tapauksessa lisäominaisuus tulee lisätä pyynnön runkoon - *principalId = {User_ObjectId}*.
     
-    *Myönnä käyttöoikeuksia* -toimintoa tarvitaan, jottei Azure AD pyydä päätililtä lupaa, mikä ei ole mahdollista, käytettäessä ei-vuorovaikutteista sisäänkirjautumista.
+   *Myönnä käyttöoikeuksia* -toimintoa tarvitaan, jottei Azure AD pyydä päätililtä lupaa, mikä ei ole mahdollista, käytettäessä ei-vuorovaikutteista sisäänkirjautumista.
 
- ```
-    Post https://graph.microsoft.com/beta/OAuth2PermissionGrants
-    Authorization: Bearer ey..qw
-    Content-Type: application/json
-    { 
-    "clientId":"{Service_Plan_ID}",
-    "consentType":"AllPrincipals",
-    "resourceId":"61e57743-d5cf-41ba-bd1a-2b381390a3f1",
-    "scope":"User.Read Directory.AccessAsUser.All",
-    "expiryTime":"2018-03-29T14:35:32.4943409+03:00",
-    "startTime":"2017-03-29T14:35:32.4933413+03:00"
-    }
- ```
+   ```
+   Post https://graph.microsoft.com/beta/OAuth2PermissionGrants
+   Authorization: Bearer ey..qw
+   Content-Type: application/json
+   { 
+   "clientId":"{Service_Plan_ID}",
+   "consentType":"AllPrincipals",
+   "resourceId":"61e57743-d5cf-41ba-bd1a-2b381390a3f1",
+   "scope":"User.Read Directory.AccessAsUser.All",
+   "expiryTime":"2018-03-29T14:35:32.4943409+03:00",
+   "startTime":"2017-03-29T14:35:32.4933413+03:00"
+   }
+   ```
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 Kun olet nyt rekisteröinyt sovelluksesi Azure AD:ssä, sinun on todennettava sovelluksessa olevat käyttäjät. Lue lisää artikkelista [Käyttäjien todentaminen ja Azure AD -käyttöoikeustietueen hankinta Power BI -sovellukselle](get-azuread-access-token.md).

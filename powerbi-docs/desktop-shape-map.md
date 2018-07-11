@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/02/2018
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 019aa1425d05fcfdc4415570acdc29e7a684dc25
-ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
+ms.openlocfilehash: 88b8b4a50913cd45c5e4ff80a5d5e0ded2eb4cdb
+ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34290955"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37600743"
 ---
 # <a name="shape-maps-in-power-bi-desktop-preview"></a>Muotokartat Power BI Desktopissa (esikatselu)
 Power BI Desktopissa voit luoda **Muotokartta**-visualisoinnin, jolla näytät alueiden suhteellisia vertailuja kartalla näyttämällä eri alueet eri värein. **Kartta**-visualisointiin verrattuna **Muotokartta**-visualisoinnilla ei voi näyttää arvopisteiden tarkkoja maantieteellisiä sijainteja kartalla. Muotokartan päätarkoitus on sen sijaan näyttää alueiden suhteellisia vertailuja kartalla siten, että eri alueilla on eri värit.
@@ -40,23 +40,23 @@ Power BI Desktop luo tyhjän **Muotokartta**-visualisoinnin suunnittelualustan.
 Voit luoda **muotokartan** seuraavasti:
 
 1. Vedä **Kentät**-ruudussa tietokenttä, joka sisältää alueiden nimet (tai lyhenteet), **Sijainti**-säilöön ja tietomittayksikkökenttä **Värikylläisyys**-säilöön (et näe vielä karttaa).
-   
+
    > [!NOTE]
-> Alla olevasta **Karttatietojen hakeminen** -osiosta saat ohjeet siihen, miten voit hakea karttatiedot nopeasti **muotokartan** testaamiseksi.
+   > Alla olevasta **Karttatietojen hakeminen** -osiosta saat ohjeet siihen, miten voit hakea karttatiedot nopeasti **muotokartan** testaamiseksi.
    > 
    > 
-   
+
    ![](media/desktop-shape-map/shape-map_3a.png)
 2. Laajenna **Muotoile**-asetusruudun **Muoto**-kohta ja valitse avattavasta **Vakiokartat**-valikosta näyttääksesi tiedot. Tässä vaiheessa et näe vielä mitään, kuten seuraava kuva osoittaa.
-   
+
    ![](media/desktop-shape-map/shape-map_3b.png)
-   
+
    > [!NOTE]
-> Tämän artikkelin lopussa oleva **Aluetunnukset**-osio sisältää kokoelman taulukoista, jotka sisältävät kartta-aluetunnuksia, joilla voit testata **Muotokartta**-visualisointia.
+   > Tämän artikkelin lopussa oleva **Aluetunnukset**-osio sisältää kokoelman taulukoista, jotka sisältävät kartta-aluetunnuksia, joilla voit testata **Muotokartta**-visualisointia.
    > 
    > 
 3. Voit sitten muokata karttaprojektiota ja zoomausasetuksia sekä arvopisteiden värejä **Muotoile**-asetusruudussa. Voit muokata myös zoomausasetuksia. Voit esimerkiksi vaihtaa värejä, määrittää vähimmäis- sekä enimmäisarvot ja niin edelleen.
-   
+
    ![](media/desktop-shape-map/shape-map_3d.png)
 4. Voit myös lisätä luokkatietojen sarakkeen **Selite**-säilöön ja luokitella kartta-alueet luokkien perusteella.
 
@@ -114,6 +114,7 @@ Sinun täytyy ottaa huomioon muutamia seikkoja ja vaatimuksia, kun käytät tät
 Kun testaat **muotokarttaa** tässä esikatseluversiossa, käytä **seuraavia aluetunnuksia**.
 
 ### <a name="australia-states"></a>Australia: osavaltio
+
 | tunnus | lyhenne | ISO-koodi | nimi | postinumerotunnus |
 | --- | --- | --- | --- | --- |
 | au-wa |WA |AU-WA |Western Australia |WA |
@@ -126,6 +127,7 @@ Kun testaat **muotokarttaa** tässä esikatseluversiossa, käytä **seuraavia al
 | au-act |ACT |AU-ACT |Australian Capital Territory |ACT |
 
 ### <a name="austria-states"></a>Itävalta: osavaltiot
+
 | tunnus | ISO-koodi | nimi | englanninkielinen nimi | postinumerotunnus |
 | --- | --- | --- | --- | --- |
 | at-wi |AT-9 |Wien |Vienna |WI |
@@ -139,6 +141,7 @@ Kun testaat **muotokarttaa** tässä esikatseluversiossa, käytä **seuraavia al
 | at-bu |AT-1 |Burgenland |Burgenland |BU |
 
 ### <a name="brazil-states"></a>Brasilia: osavaltiot
+
 | tunnus |
 | --- |
 | Tocantins |
@@ -174,6 +177,7 @@ Kun testaat **muotokarttaa** tässä esikatseluversiossa, käytä **seuraavia al
 | Litigated Zone 4 |
 
 ### <a name="canada-provinces"></a>Kanada: provinssit ja territoriot
+
 | tunnus | ISO-koodi | nimi | postinumerotunnus |
 | --- | --- | --- | --- |
 | ca-nu |CA-NU |Nunavut |NU |
@@ -191,6 +195,7 @@ Kun testaat **muotokarttaa** tässä esikatseluversiossa, käytä **seuraavia al
 | ca-ab |CA-AB |Alberta |AB |
 
 ### <a name="france-regions"></a>Ranska: alueet
+
 | tunnus | nimi | englanninkielinen nimi |
 | --- | --- | --- |
 | Alsace |Alsace |Alsace |
@@ -217,6 +222,7 @@ Kun testaat **muotokarttaa** tässä esikatseluversiossa, käytä **seuraavia al
 | Aquitaine |Aquitaine |Aquitaine |
 
 ### <a name="germany-states"></a>Saksa: osavaltiot
+
 | tunnus | ISO-koodi | nimi | englanninkielinen nimi | postinumerotunnus |
 | --- | --- | --- | --- | --- |
 | de-be |DE-BE |Berlin |Berlin |BE |
@@ -237,6 +243,7 @@ Kun testaat **muotokarttaa** tässä esikatseluversiossa, käytä **seuraavia al
 | de-bw |DE-BW |Baden-Württemberg |Baden-Wurttemberg |BW |
 
 ### <a name="ireland-counties"></a>Irlanti: maakunnat
+
 | tunnus |
 | --- |
 | Wicklow |
@@ -267,6 +274,7 @@ Kun testaat **muotokarttaa** tässä esikatseluversiossa, käytä **seuraavia al
 | Carlow |
 
 ### <a name="italy-regions"></a>Italia: alueet
+
 | tunnus | ISO-koodi | nimi | englanninkielinen nimi | postinumerotunnus |
 | --- | --- | --- | --- | --- |
 | it-vn |IT-34 |Veneto |Veneto |VN |
@@ -291,6 +299,7 @@ Kun testaat **muotokarttaa** tässä esikatseluversiossa, käytä **seuraavia al
 | it-ab |IT-65 |Abruzzo |Abruzzo |AB |
 
 ### <a name="mexico-states"></a>Meksiko: osavaltiot
+
 | tunnus | lyhenne | ISO-koodi | nimi | englanninkielinen nimi | postinumerotunnus |
 | --- | --- | --- | --- | --- | --- |
 | mx-zac |Zac. |MX-ZAC |Zacatecas |Zacatecas |ZA |
@@ -327,6 +336,7 @@ Kun testaat **muotokarttaa** tässä esikatseluversiossa, käytä **seuraavia al
 | mx-agu |Ags. |MX-AGU |Aguascalientes |Aguascalientes |AG |
 
 ### <a name="netherlands-provinces"></a>Alankomaat: provinssit
+
 | tunnus | ISO-koodi | nimi | englanninkielinen nimi |
 | --- | --- | --- | --- |
 | nl-zh |NL-ZH |Zuid-Holland |South Holland |
@@ -343,6 +353,7 @@ Kun testaat **muotokarttaa** tässä esikatseluversiossa, käytä **seuraavia al
 | nl-dr |NL-DR |Drenthe |Drenthe |
 
 ### <a name="uk-countries"></a>Yhdistynyt kuningaskunta: maat
+
 | tunnus | ISO-koodi | nimi |
 | --- | --- | --- |
 | gb-wls |GB-WLS |Wales |
@@ -351,6 +362,7 @@ Kun testaat **muotokarttaa** tässä esikatseluversiossa, käytä **seuraavia al
 | gb-eng |GB-ENG |England |
 
 ### <a name="usa-states"></a>Yhdysvallat: osavaltiot
+
 | tunnus | nimi | postinumerotunnus |
 | --- | --- | --- |
 | us-mi |Michigan |MI |

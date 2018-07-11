@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/02/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 472be555bb4c46da41eb762c1eeae14ef991e742
-ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
+ms.openlocfilehash: ed9ab95aace7ab1ff0774732241bdd4a7fffcb15
+ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34290863"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37600985"
 ---
 # <a name="using-directquery-in-power-bi"></a>DirectQueryn käyttäminen Power BI:ssä
 Voit muodostaa yhteyksiä kaikenlaisiin tietolähteisiin, kun käytät **Power BI Desktopia** tai **Power BI -palvelua**. Lisäksi voit muodostaa näitä yhteyksiä eri tavoin. Voit joko *tuoda* tietoja Power BI:hin, mikä on yleisin tapa hakea, tai voit muodostaa yhteyden tietoihin suoraan niiden alkuperäisessä lähdesäilössä. Tätä tapaa kutsutaan nimellä **DirectQuery**. Tässä artikkelissa kerrotaan **DirectQuerystä** ja sen toiminnoista. Artikkelissa käsitellään seuraavia aiheita:
@@ -152,7 +152,7 @@ Kun käytät **DirectQueryä**, voit edelleen hyödyntää monia näistä mallin
     
     Syynä on se, että tällainen mittayksikkö saattaisi heikentää suorituskykyä, jos kohteita olisi erittäin paljon.
 * **Laskettuja taulukoita ei tueta:** laskettua taulukkoa ei voi määrittää DAX-lausekkeella DirectQuery-tilassa.
-* **Suhteiden suodatus on rajoitettu yhteen suuntaan:** Kun käytät DirectQueryä, et voi määrittää ristisuodatussuunnaksi molempia. Alla olevassa esimerkissä et voi luoda visualisointia, joka näyttää jokaisen asiakkaan sukupuolen (Customer[Gender]) ja kunkin asiakkaan ostamien tuotteiden (Product[Category]) määrän. Tällaisen kaksisuuntaisen suodatuksen käyttöä [käsitellään tässä raportissa](http://download.microsoft.com/download/2/7/8/2782DF95-3E0D-40CD-BFC8-749A2882E109/Bidirectional cross-filtering in Analysis Services 2016 and Power BI.docx), joka sisältää esimerkkejä SQL Server Analysis Servicesin käytöstä, mutta pääperiaatteet koskevat myös Power BI:tä.
+* **Suhteiden suodatus on rajoitettu yhteen suuntaan:** Kun käytät DirectQueryä, et voi määrittää ristisuodatussuunnaksi molempia. Alla olevassa esimerkissä et voi luoda visualisointia, joka näyttää jokaisen asiakkaan sukupuolen (Customer[Gender]) ja kunkin asiakkaan ostamien tuotteiden (Product[Category]) määrän. Tällaisen kaksisuuntaisen suodatuksen käyttöä [käsitellään tässä raportissa](http://download.microsoft.com/download/2/7/8/2782DF95-3E0D-40CD-BFC8-749A2882E109/Bidirectional%20cross-filtering%20in%20Analysis%20Services%202016%20and%20Power%20BI.docx), joka sisältää esimerkkejä SQL Server Analysis Servicesin käytöstä, mutta pääperiaatteet koskevat myös Power BI:tä.
   
   ![](media/desktop-directquery-about/directquery-about_01.png)
   

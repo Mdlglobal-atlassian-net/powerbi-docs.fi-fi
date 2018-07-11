@@ -9,12 +9,12 @@ ms.component: powerbi-report-server
 ms.topic: conceptual
 ms.date: 04/23/2018
 ms.author: maghan
-ms.openlocfilehash: 705de47a1e89d765f34eadfcd35064ccde7aa66b
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: c57ae7a0213ce324f673e53862ba3dfa38f57409
+ms.sourcegitcommit: 695c65629d6d1faba61db2e1570324f65f235dde
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34481896"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37092663"
 ---
 # <a name="configure-your-report-server-to-host-excel-workbooks-using-office-online-server-oos"></a>Määritä raporttipalvelin Excel-työkirjojen isännäksi Office Online Serverin (OOS) avulla
 Verkkoportaalissa tapahtuvan Power BI -raporttien tarkastelun lisäksi Power BI -raporttipalvelin voi isännöidä Excel-työkirjoja [Office Online Serverin](https://docs.microsoft.com/officeonlineserver/office-online-server-overview) (OOS) avulla. Raporttipalvelimestasi voit julkaista ja katsella Microsoft BI-sisältöä itsepalveluna.
@@ -78,7 +78,7 @@ New-OfficeWebAppsFarm -InternalUrl "https://server.contoso.com" -ExternalUrl "ht
 
 **Parametrit**
 
-* **–InternalURL** on Office Online Serverin suorittavan palvelimen täydellinen toimialuenimi (FQDN), kuten http://servername.contoso.com.
+* **–InternalURL** on Office Online Serverin suorittavan palvelimen täydellinen toimialuenimi (FQDN), kuten `http://servername.contoso.com`.
 * **–ExternalURL** on täydellinen toimialuenimi, jota voi käyttää Internetissä.
 * **– CertificateName** on varmenteen kutsumanimi.
 
@@ -91,7 +91,7 @@ New-OfficeWebAppsFarm -InternalURL "http://servername" -AllowHttp
 
 **Parametrit**
 
-* **–InternalURL** on Office Online Severin suorittavan palvelimen nimi, kuten http://servername.
+* **–InternalURL** on Office Online Severin suorittavan palvelimen nimi, kuten `http://servername`.
 * **–AllowHttp** määrittää klusterin käyttämään HTTP:tä.
 
 ### <a name="verify-that-the-office-online-server-farm-was-created-successfully"></a>Varmista, että Office Online Server -klusterin luonti onnistui

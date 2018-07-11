@@ -1,4 +1,5 @@
 ### <a name="on-premises-data-gateway"></a>Paikallinen tietoyhdyskäytävä
+
 | **Tietolähde** |
 | --- |
 | Analysis Services -taulukkomuoto |

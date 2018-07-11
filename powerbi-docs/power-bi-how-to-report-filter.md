@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/25/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 6d0a1afe27372c808e63adb34fda96e978b2e2be
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: c25a402138c209eb6a4a36bf39865c30c1c0e5b9
+ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34721382"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37598938"
 ---
 # <a name="take-a-tour-of-the-report-filters-pane"></a>Aloita raportin Suodattimet-ruudun esittely
 Tässä artikkelissa tutustutaan tarkemmin raportin Suodattimet-ruutuun. Ruutu näkyy [Power BI -palvelun muokkausnäkymässä ja lukunäkymässä](service-reading-view-and-editing-view.md) ja [Power BI Desktopin raporttinäkymässä](desktop-report-view.md).
@@ -77,7 +77,7 @@ Jos haluat näyttää tietyn suodattimen asetukset, valitse suodattimen nimen vi
 ## <a name="add-a-filter"></a>Suodattimen lisääminen
 * Desktopissa ja Power BI -palvelun muokkausnäkymässä lisää suodatin visualisointiin, sivulle, porautumiseen tai raporttiin valitsemalla kentän Kentät-ruudusta ja vetämällä sen sopivaan suodattimeen, jossa näet sanat **Vedä kentät tähän**. Kun kenttä on lisätty suodattimena, voit hienosäätää sitä perussuodatuksen ja lisäsuodatuksen ohjausobjekteilla (kuvattu alla).
 
-- **Uuden kentän vetäminen visuaalisen tason suodatinalueelle ei lisää kenttää visualisointiin**, mutta sen avulla voit suodattaa visualisoinnin tällä uudella kentällä. Alla olevassa esimerkissä **Ketju** lisätään uutena suodattimena visualisointiin. Huomaa, että pelkkä **Ketju**-suodattimen lisääminen ei muuta visualisointia, ennen kuin käytät perus- tai lisäsuodatuksen ohjausobjekteja.
+* **Uuden kentän vetäminen visuaalisen tason suodatinalueelle ei lisää kenttää visualisointiin**, mutta sen avulla voit suodattaa visualisoinnin tällä uudella kentällä. Alla olevassa esimerkissä **Ketju** lisätään uutena suodattimena visualisointiin. Huomaa, että pelkkä **Ketju**-suodattimen lisääminen ei muuta visualisointia, ennen kuin käytät perus- tai lisäsuodatuksen ohjausobjekteja.
 
     ![](media/power-bi-how-to-report-filter/power-bi-visual-filter.gif)
 

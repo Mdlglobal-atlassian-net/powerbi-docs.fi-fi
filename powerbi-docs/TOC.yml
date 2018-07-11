@@ -12,6 +12,8 @@
       items:
         - name: Yhdistä GitHub-malliin
           href: service-tutorial-connect-to-github.md
+        - name: 'Power BI:n käytön aloittaminen'
+          href: service-get-started.md
     - name: Käsitteet
       items:
         - name: Power BI -palvelun uudet toiminnot ja ominaisuudet
@@ -382,6 +384,8 @@
                   href: service-excel-workbook-files.md
                 - name: Tietojen hakeminen Power BI Desktop -tiedostoista
                   href: service-desktop-files.md
+                - name: Tietojoukkojen parametriasetukset
+                  href: service-parameters.md
                 - name: Tietojen hakeminen .csv-tiedostosta
                   href: service-comma-separated-value-files.md
                 - name: 'Reaaliaikainen suoratoisto Power BI:ssä (esikatselu)'
@@ -860,16 +864,12 @@
           items:
             - name: iOS-sovelluksen käytön aloittaminen
               href: mobile-iphone-app-get-started.md
-            - name: iPad-sovelluksen käytön aloittaminen
-              href: mobile-ipad-app-get-started.md
             - name: Q&A virtuaalinen analyytikko iOS-mobiilisovelluksissa
               href: mobile-apps-ios-qna.md
             - name: 'Power BI:n Apple Watch -sovellus'
               href: mobile-apple-watch.md
             - name: Viivakoodin lukeminen iPhone-sovelluksella
               href: mobile-apps-scan-barcode-iphone.md
-            - name: 'Power BI:n iOS-sovellukset'
-              href: mobile-ios-ipad-iphone-apps.md
         - name: iOS ja Android
           items:
             - name: Merkintöjen tekeminen ja jakaminen mobiilisovelluksissa
@@ -940,8 +940,6 @@
               href: developer/integrate-tile.md
             - name: Power BI -raportin integrointi sovellukseen (käyttäjä omistaa tiedot)
               href: developer/integrate-report.md
-            - name: Sisällön integrointi sovellukseen (sovellus omistaa tiedot)
-              href: developer/embed-sample-for-customers.md
             - name: Sisällön integrointi sovellukseen maakohtaisissa pilvipalveluissa (sovellus omistaa tiedot)
               href: developer/embed-sample-for-customers-sovereign-clouds.md
             - name: Omien asetteluiden upottaminen sovellukseen
@@ -1234,6 +1232,13 @@
           href: service-admin-syndication-partner.md
         - name: Mobiilisovellusten määrittäminen Intunella
           href: service-admin-mobile-intune.md
+    - name: Viittaus
+      items:
+        - name: 'PowerShell, REST-ohjelmointirajapinnat ja .NET SDK'
+          href: service-admin-reference.md
+        - name: 'Power BI:n cmdlet-komennot PowerShellille'
+          href: 'https://docs.microsoft.com/en-us/powershell/power-bi/'
+          maintainContext: true
     - name: Resurssit
       items:
         - name: 'Power BI:n hallinta- ja käyttöönottotavat'

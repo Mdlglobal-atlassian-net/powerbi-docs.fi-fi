@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 01/22/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: d65281539bcc27ce24971a6da0945908ba65e754
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 1a39b347a68cb5557ffff7758efbfba86884b5ce
+ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34297097"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37598997"
 ---
 # <a name="customize-visualization-titles-legends-and-backgrounds"></a>Mukauta visualisoinnin otsikoita, selitteitä ja taustoja
 Tässä opetusohjelmassa opit mukauttamaan visualisointeja muutamalla eri tavalla.   Visualisointien mukauttamiseen on runsaasti vaihtoehtoja, joten paras tapa tutustua niihin kaikkiin on tutustua Muotoilu-ruutuun (valitse maalaustelan kuvake).  Jotta pääset alkuun, tässä artikkelissa kerrotaan, miten voit mukauttaa visualisoinnin otsikkoa, selitettä ja taustaa.  
@@ -41,26 +41,26 @@ Seuraa mukana kirjautumalla sisään Power BI-palveluun (app.powerbi.com) ja ava
 
 1. Siirry raportin ”Uudet myymälät” -sivulle ja valitse ”Avoimien myymälöiden määrä aukiolokuukauden mukaan” -pylväskaavio.
 2. Voit näyttää muotoiluasetukset valitsemalla maalitelakuvakkeen Visualisoinnit-ruudussa.  ja valitse **Otsikko** osan laajentamiseksi.  
-   
+
    ![](media/power-bi-visualization-customize-title-background-and-legend/power-bi-formatting-menu.png)
 3. Ota **Otsikko** käyttöön tai poista se käytöstä liukusäätimellä. Ota se nyt **käyttöön**.  
-   
+
    ![](media/power-bi-visualization-customize-title-background-and-legend/onoffslider.png)
 4. Muuta **otsikkoteksti** kirjoittamalla **Myymälöiden määrä aukiolokuukauden mukaan** teksti-kenttään.  
 5. Muuta **fonttiväri** oranssiksi ja **taustaväri** keltaiseksi.
-   
+
    * Valitse avattava luettelo ja valitse väri **teemaväreistä**, **viimeksi käytetyt värit** tai **mukautetut värit**.
    * Valitse avattava luettelo väri-ikkunan sulkemiseksi.  
      ![](media/power-bi-visualization-customize-title-background-and-legend/customizecolorpicker.png)
-   
+
    Voit aina palata oletusvärit valitsemalla **Palauta oletusasetukseen** väri-ikkunassa.
 6. Suurenna tekstikooksi 12.
 7. Viimeinen mukautus, joita teemme kaavioon, on sen tasaaminen visualisoinnin keskelle. Otsikon sijainnin oletusarvo on tasattu vasemmalle.  
    ![](media/power-bi-visualization-customize-title-background-and-legend/customizealign.png)
-   
+
     Tässä vaiheessa opetusohjelmassa sarakkeen kaavion **otsikon** pitäisi näyttää tältä:  
     ![](media/power-bi-visualization-customize-title-background-and-legend/tutorialprogress1.png)
-   
+
     Jos haluat palauttaa kaikki tehdyt mukautukset, valitse **Palauta oletusasetukseen** **otsikon** mukauttamisruudun alareunassa.  
     ![](media/power-bi-visualization-customize-title-background-and-legend/revertall.png)
 
@@ -69,29 +69,30 @@ Kun sama sarakekaavio on valittuna, laajenna tausta-asetuksia.
 
 1. Ota tausta käyttöön tai poista se käytöstä liukusäätimellä. Ota se nyt **käyttöön**.
 2. Muuta taustaväriksi 74 % harmaa.
-   
+
    * Valitse avattava luettelo ja valitse harmaa väri kohdasta **teemaväri**, **Viimeksi käytetyt värit** tai **Mukautetut värit**.
    * Muuta läpinäkyvyydeksi 74 %.   
      ![](media/power-bi-visualization-customize-title-background-and-legend/power-bi-customize-background.png)
-   
+
    Jos haluat palauttaa kaikki toistaiseksi tekemämme taustan mukautukset, valitse **Palauta oletusasetukseen** **Taustan** mukauttamisruudun alareunassa.
 
 ## <a name="customize-visualization-legends"></a>Visualisoinnin selitteiden mukauttaminen
 1. Avaa **Yleiskatsaus**-raporttisivu ja valitse ”Kokonaismyynnin variaatioprosentti tilikauden kuukauden mukaan” -kaavio.
 2. Valitse Visualisointi-välilehdeltä muotoiluruudussa siveltimen kuvake.  
 3. Laajenna **Selitteen** asetuksia.
-   
+
       ![](media/power-bi-visualization-customize-title-background-and-legend/legend.png)
 4. Ota selite käyttöön tai poista se käytöstä liukusäätimellä. Ota se nyt **käyttöön**.
 5. Siirrä selite visualisoinnin vasemmalle puolelle.    
 6. Lisää selitteen otsikko siirtämällä **otsikon** asetukseksi **Käytössä** ja kirjoita **Selitteen nimi** -kenttään **Esimiehet**.
    ![](media/power-bi-visualization-customize-title-background-and-legend/legend-move.png)
-   
+
    Jos haluat palauttaa kaikki tehdyt mukautukset, valitse **Palauta oletusasetukseen** **selitteen** mukauttamisruudun alareunassa.
 
 <a name="list"></a>
 
 ## <a name="visualization-types-that-can-be-customized"></a>Mukautettavissa olevat visualisointityypit
+
 | Visualisointi | Nimi | Tausta | Selite |
 |:--- |:--- |:--- |:--- |
 | alue |kyllä |kyllä |kyllä |
