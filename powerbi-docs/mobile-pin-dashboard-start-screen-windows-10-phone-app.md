@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-mobile
 ms.topic: conceptual
-ms.date: 01/25/2018
+ms.date: 06/28/2018
 ms.author: maggies
-ms.openlocfilehash: 5492ed25dc5bd803661186694e7f9d3f4e19c30f
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 6ba62900206149f754f774f6bfd031aeb71f7437
+ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34291554"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37134842"
 ---
 # <a name="pin-a-dashboard-to-your-windows-10-start-screen-from-the-power-bi-mobile-app"></a>Koontinäytön kiinnittäminen Windows 10 -aloitusnäyttöön Power BI -mobiilisovelluksesta
 Voit kiinnittää Power BI -koontinäyttöjä Windowsin aloitusnäyttöön Power BI -mobiilisovelluksesta Windows 10:lle. Niistä tulee *tapahtumaruutuja*. Kun napautat ruutua aloitusnäytössä, koontinäyttö avautuu Power BI -mobiilisovelluksessa Windows 10:lle.
@@ -33,7 +33,7 @@ Voit kiinnittää Power BI -koontinäyttöjä Windowsin aloitusnäyttöön Power
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 * [Lataa Power BI -mobiilisovellus Windows 10:lle](http://go.microsoft.com/fwlink/?LinkID=526478) Windows-kaupasta  
-* [Aloita Windows 10:lle tarkoitetun Power BI -mobiilisovelluksen käyttäminen](mobile-windows-10-phone-app-get-started.md)  
-* [Power BI:n käytön aloittaminen](service-get-started.md)
+* [Windows 10:n Power BI -mobiilisovelluksen käytön aloittaminen](mobile-windows-10-phone-app-get-started.md)  
+* [Mikä on Power BI?](power-bi-overview.md)
 * Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)
 

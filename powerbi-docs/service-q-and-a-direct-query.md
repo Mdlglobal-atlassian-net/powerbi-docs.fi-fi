@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/01/2018
 ms.author: mihart
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 7402bc638f27175e1c8e1f733fefd508850d9943
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 75636885da6357a756508558841c99435aa5f442
+ms.sourcegitcommit: 695c65629d6d1faba61db2e1570324f65f235dde
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34245578"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37092180"
 ---
 # <a name="enable-qa-for-live-connections"></a>Q&A:n ottaminen käyttöön reaaliaikaisia yhteyksiä varten
 ## <a name="what-is-on-premises-data-gateway--what-is-a-live-connection"></a>Mikä on paikallinen tietoyhdyskäytävä?  Mikä on reaaliaikainen yhteys?
@@ -56,6 +56,7 @@ Tämän ominaisuuden esikatseluvaiheessa on useita rajoituksia:
 
 * Aluksi ominaisuus on käytettävissä vain taulukkomuotoisille SQL Server 2016 Analysis Services  ‑tietolähteille. Ominaisuus on optimoitu toimimaan taulukkomuotoisten tietojen kanssa. Jotkin toiminnot ovat käytettävissä monidimensioisille tietolähteille, mutta täyttä Q&A-käyttökokemusta ei vielä tueta monidimensioisena. Paikallisen tietoyhdyskäytävän tukemia tietolähteitä tuodaan lisää tarjolle ajan kuluessa.
 * SQL Server Analysis Services ‑palvelussa määritetylle rivitason suojaukselle ei ole aluksi saatavilla täyttä tukea julkisessa esikatselussa. Kun Q&A:ssa esitetään kysymyksiä, tekstin automaattinen täydennys saattaa kirjoittamisen aikana näyttää merkkijonoarvoja, joihin käyttäjällä ei ole käyttöoikeutta. Mallissa määritettyä rivitason suojausta kuitenkin kunnioitetaan raporttien ja kaaviovisualisointien osalta, eli taustalla olevia numeerisia tietoja ei paljastu. Tulevissa päivityksissä julkaistaan asetukset, joilla tätä käytöstä voi hallita.
+* Objektitason suojausta (OLS) ei tueta. Q&A ei kunnioita objektitason suojausta ja voi paljastaa taulukon tai sarakkeen nimet käyttäjille, joilla ei ole niihin käyttöoikeutta. Sinun on otettava käyttöön rivitason suojaus (RSL) sen varmistamiseksi, että myös data-arvot suojataan asianmukaisesti. 
 * Reaaliaikaisia yhteyksiä tuetaan vain paikallisen tietoyhdyskäytävän kanssa. Niitä ei voi käyttää henkilökohtaisen yhdyskäytävän kanssa.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet

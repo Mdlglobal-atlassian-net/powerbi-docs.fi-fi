@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 05/09/2018
+ms.date: 06/13/2018
 ms.author: maikelson
-ms.openlocfilehash: 29aba440f92f37763dd9887b5fa7511d6191a5f7
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 8a20e5b9807f9495183ebb1e6bd396e68f02c1a1
+ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34299282"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37137547"
 ---
 # <a name="power-bi-webinars"></a>Power BI -verkkoseminaarit
 
@@ -22,25 +22,9 @@ Rekisteröidy tuleviin reaaliaikaisiin verkkoseminaareihin tai katso nauhoitettu
 
 ## <a name="upcoming-webinars"></a>Tulevat verkkoseminaarit
 
-Rekisteröidy, jotta saat tietoa Power BI -asiantuntijoilta ja voit osallistua reaaliaikaisiin Q&A-istuntoihin
+Mitään verkkoseminaaria ei ole vielä ajoitettu. Palaa pian takaisin tarkistamaan muut tulevat tapahtumat.
 
-**Tarkastele oikeita tietoja Power BI:n ja Vision avulla**
-<br>tekijä: Shakun Grover
-<br>*22. toukokuuta 2018 10.00 PST, 13.00 EST*
-
-Liity seuraamme tähän verkkoseminaariin ja opi yhdistämään Power BI -koontinäyttöjä ja Microsoft Visio -kaavioita luodaksesi tehokkaita visualisointeja. Visio ja Power BI ovat erittäin visuaalisia ja luonnollisesti toisiaan täydentäviä. Vision avulla voit luoda kaavioita, kuten toisiinsa liittyviä työnkulkuja ja reaalimaailmaan perustuvia asetteluja. Power BI:llä voit laatia intuitiivisia koontinäyttöjä kaavioiden ja karttojen avulla suorituskykyilmaisimien mittaamiseksi ja tavoitteiden seuraamiseksi.
-
-[Rekisteröidy ja katso 22. toukokuuta](https://info.microsoft.com/ww-landing-powerbi-and-visio.html?Is=Website)
-
-**Tutustu Power BI Embeddediin 20 minuutissa**
-<br>tekijät: Megan Asarrane ja Colin Murphy
-<br>*23. toukokuuta 2018 10.00 PST, 13.00 EST*
-
-Tämä verkkoseminaari tarjoaa johdannon Power BI Embeddediin. Katsottuasi tämän webinaarin ymmärrät Power BI Embeddedin perusteet, voit perehtyä tarkemmin tuotteen käyttöön ja tiedät, mistä saat ohjeita ja tukea.
-
-[Rekisteröidy ja katso 23. toukokuuta](https://info.microsoft.com/ww-landing-power-bi-embedded-in-20-min.html?Is=Website)
-
->[Osallistu tuleviin Power BI -yhteisön verkkoseminaareihin](https://powerbi.microsoft.com/en-us/blog/tag/community-webinar?Is=Website)
+>[Osallistu tuleviin Power BI -yhteisön verkkoseminaareihin](https://powerbi.microsoft.com/en-us/blog/tag/community-webinars/?Is=Website)
 
 ## <a name="featured-webinars"></a>Esittelyssä verkkoseminaarit
 
@@ -78,15 +62,27 @@ Katso tallennetut istuntoja milloin tahansa
 <br>tekijä: Charles Sterling
 <br>[Katso nyt](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/5-3-17-Webinar-How-to-Design-Visually-Stunning-Power-BI-Reports/m-p/168204?Is=Website)
 
+**Tutustu Power BI Embeddediin 20 minuutissa**
+<br>tekijät: Megan Asarrane ja Colin Murphy
+<br>[Rekisteröidy ja katso nyt](https://info.microsoft.com/ww-landing-power-bi-embedded-in-20-min.html?Is=Website)
+
 **Laskentataulukkoa pidemmälle**
 <br>tekijä: Gohul Shanmugalingam
 <br>[Rekisteröidy ja katso nyt](https://info.microsoft.com/CA-PowerBI-WBNR-FY18-05May-09-DataBeyondtheSpreadsheet-MCW0006385_01Registration-ForminBody.html?Is=Website)
+
+**Tarkastele oikeita tietoja Power BI:n ja Vision avulla**
+<br>tekijä: Shakun Grover
+<br>[Rekisteröidy ja katso nyt](https://info.microsoft.com/ww-landing-powerbi-and-visio.html?Is=Website)
 
 **Raportin muuttaminen hyvästä erinomaiseksi**
 <br>tekijä: Reid Havens
 <br>[Katso nyt](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/Power-BI-Transforming-A-Report-From-Good-to-GREAT/m-p/315119?Is=Website)
 
 ### <a name="partners"></a>Kumppanit ###
+
+**Tehosta BI:n toimintaa sijaintitiedoilla**
+<br>tekijät: Scott Ball Esristä ja Enrique Plaza Microsoftista
+<br>[Rekisteröidy ja katso nyt](https://info.microsoft.com/ww-ondeamnd-boost-powerbi-with-arcgis.html?Is=Website)
 
 **Kannattavuuden vahvistaminen terveydenhuollossa**
 <br>tekijät: Stephen Cracknell ja Stuart Macanliss US Medical IT:stä
@@ -172,7 +168,7 @@ Katso tallennetut istuntoja milloin tahansa
 
 - [Microsoft Data Insights Summit 2017:n nauhoitetut istunnot](https://community.powerbi.com/t5/Data-Insights-Summit-2017-On/bd-p/DataInsightsSummit2017OnDemand?Is=Website)
 
-- [Power BI:n käytön aloittaminen](service-get-started.md)
+- [Mikä on Power BI?](power-bi-overview.md)
 
 - Seuraa [@MSPowerBI Twitterissä](https://twitter.com/mspowerbi)
 

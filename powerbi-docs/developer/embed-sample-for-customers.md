@@ -3,21 +3,21 @@ title: Power BI -sisällön upottaminen sovellukseen asiakkaille
 description: Opi integroimaan tai upottamaan raportteja, raporttinäkymiä tai ruutuja verkkosovellukseen asiakkaita varten, käyttämällä Power BI -ohjelmointirajapintoja.
 author: markingmyname
 ms.author: maghan
-ms.date: 05/25/2018
+ms.date: 06/20/2018
 ms.topic: tutorial
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.custom: mvc
 manager: kfile
-ms.openlocfilehash: ae683dfbeb7b3848575ab766c33b695eb823d497
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: d9e2f76c63ee9ebff01080686277a3fbb5af46f3
+ms.sourcegitcommit: d1a0da8638c5d957b884ca9412275ee8880d4b14
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34721037"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37900073"
 ---
 # <a name="tutorial-embed-a-power-bi-report-dashboard-or-tile-into-an-application-for-your-customers"></a>Opetusohjelma: Power BI -raportin, raporttinäkymän tai ruudun upottaminen sovellukseen asiakkaita varten
-**Azuren Power BI Embeddedin** avulla, voit upottaa sovellukseen raportteja, raporttinäkymiä tai ruutuja käyttämällä **app owns data** -hakemiston malleja. **App owns data**-hakemiston malleja käytetään kun kyseessä on sovellus, joka käyttää Power BI:tä upotettuna analyysiympäristönään. Kyseessä on yleensä **ISV-kehittäjä** -skenaario. **ISV-kehittäjänä** voit luoda Power BI -sisältöä, joka näyttää raportit, raporttinäkymät tai ruudut sovelluksessa, joka on täysin integroitu ja vuorovaikutteinen, edellyttämättä Power BI-käyttölupaa sovelluksen käyttäjiltä, tai jopa tiedostamatta, että sovellus käyttää Power BI:tä. Tämä opetusohjelma esittelee, miten raportti integroidaan sovellukseen käyttämällä **Power BI** .NET SDK:ta **Power BI** JavaScript -ohjelmointirajapinnan kanssa, kun käytössä on **Azuren Power BI Embedded** **app owns data**-malleja käyttävä asiakas.
+**Azuren Power BI Embeddedin** avulla, voit upottaa sovellukseen raportteja, raporttinäkymiä tai ruutuja käyttämällä **app owns data** -hakemiston malleja. **App owns data**-hakemiston malleja käytetään kun kyseessä on sovellus, joka käyttää Power BI:tä upotettuna analyysiympäristönään. Kyseessä on yleensä **ISV-kehittäjä** -skenaario. **ISV-kehittäjänä** voit luoda Power BI -sisältöä, joka näyttää raportit, koontinäytöt tai ruudut sovelluksessa, joka on täysin integroitu ja vuorovaikutteinen, edellyttämättä Power BI -käyttöoikeutta sovelluksen käyttäjiltä, tai jopa tiedostamatta, että sovellus käyttää Power BI:tä. Tämä opetusohjelma esittelee, miten raportti integroidaan sovellukseen käyttämällä **Power BI** .NET SDK:ta **Power BI** JavaScript -ohjelmointirajapinnan kanssa, kun käytössä on **Azuren Power BI Embedded** **app owns data**-malleja käyttävä asiakas.
 
 Tässä opetusohjelmassa opit:
 >[!div class="checklist"]
@@ -25,7 +25,7 @@ Tässä opetusohjelmassa opit:
 >* Upottamaan Power BI -raportin sovellukseen.
 
 ## <a name="prerequisites"></a>Edellytykset
-Sinulla täytyy olla **Power BI Pro** -tili, joka toimii **päätilinäsi**, sekä **Microsoft Azure** -tilaus aloittaaksesi.
+Sinulla täytyy olla **Power BI Pro** -tili (tämä on **päätilisi**) ja **Microsoft Azure** -tilaus aloittaaksesi.
 
 * Jos et ole rekisteröitynyt **Power BI:hin**, [rekisteröi ilmainen kokeiluversio](https://powerbi.microsoft.com/en-us/pricing/) ennen aloittamista.
 * Jos sinulla ei ole Azure-tilausta, luo [ilmainen tili](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) ennen aloittamista.
@@ -36,7 +36,7 @@ Sinulla täytyy olla **Power BI Pro** -tili, joka toimii **päätilinäsi**, sek
 
 Ennen kuin ryhdyt upottamaan raportteja, raporttinäkymiä tai ruutuja sovellukseesi, varmista, että ympäristösi on määritetty niin, että upottaminen on siinä sallittu. Määritys edellyttää myös seuraavia toimia:
 
-Voit käyttää [Perehdyttämiskokemustyökalua](https://aka.ms/embedsetup/AppOwnsData) päästäksesi nopeasti alkuun ja ladata mallisovelluksen, jossa käydään läpi sekä ympäristön luominen että raportin upottaminen.
+Voit käyttää [Perehdyttämiskokemustyökalua](https://aka.ms/embedsetup/AppOwnsData) päästäksesi nopeasti alkuun ja ladata mallisovelluksen, jossa käydään läpi sekä käyttöympäristön luominen että raportin upottaminen.
 
 Jos haluat määrittää ympäristön manuaalisesti, jatka lukemista.
 ### <a name="register-an-application-in-azure-active-directory-azure-ad"></a>Sovelluksen rekisteröiminen Azure Active Directoryyn (Azure AD)
@@ -54,13 +54,13 @@ Rekisteröi sovellus Azure Active Directoryyn, jotta sovellus saa käyttöoikeud
     ![Sovelluksen rekisteröinnin etsiminen](media/embed-sample-for-customers/embed-sample-for-customers-003.png)</br>
     ![Uuden sovelluksen rekisteröinti](media/embed-sample-for-customers/embed-sample-for-customers-004.png)
 
-4. Noudata kehotteita ja luo uusi sovellus. App owns data -mallin kanssa on valittava **Alkuperäinen** -sovellustyyppi. Sinun täytyy myös antaa **Uudelleenohjaus -URL-osoite**, jota **Azure AD** käyttää palauttaessaan tunnusvastauksia. Anna sovellukselle määritetty arvo (esimerkiksi: http://localhost:13526/redirect).
+4. Noudata kehotteita ja luo uusi sovellus. App owns data -mallin kanssa on valittava **Alkuperäinen** -sovellustyyppi. Sinun täytyy myös antaa **Uudelleenohjaus -URL-osoite**, jota **Azure AD** käyttää palauttaessaan tunnusvastauksia. Anna sovellukselle määritetty arvo (esimerkiksi: `http://localhost:13526/redirect`).
 
     ![Luo sovellus](media/embed-sample-for-customers/embed-sample-for-customers-005.png)
 
 ### <a name="apply-permissions-to-your-application-within-azure-active-directory"></a>Määritä sovellukselle käyttöoikeudet Azure Active Directorystä
 
-Sinun on otettava käyttöön lisäkäyttöoikeuksia sovelluksen rekisteröintisivulla annettujen käyttöoikeuksien lisäksi. Sinun on kirjauduttava sisään *päätililläsi*, jota käytetään upottamiseen ja jonka on oltava yleinen järjestelmänvalvoja -tili.
+Sinun on otettava käyttöön sovellukselle lisäkäyttöoikeuksia sovelluksen rekisteröintisivulla annettujen käyttöoikeuksien lisäksi. Sinun on kirjauduttava sisään *päätililläsi*, jota käytetään upottamiseen ja jonka on oltava yleinen järjestelmänvalvoja -tili.
 
 ### <a name="use-the-azure-active-directory-portal"></a>Azure Active Directory -portaalin käyttäminen
 
@@ -94,7 +94,7 @@ Sinun on otettava käyttöön lisäkäyttöoikeuksia sovelluksen rekisteröintis
 
 8. Valitse kohdasta **Tarvittavat käyttöoikeudet** **Myönnä käyttöoikeuksia**.
    
-    **Myönnä käyttöoikeuksia** -toimintoa tarvitaan sen välttämiseksi, ettei Azure AD pyydä lupaa *päätililtä*. Jos tämän toiminnon suorittava tili on yleinen järjestelmänvalvoja, myönnät käyttöoikeudet tähän sovellukseen organisaation kaikille käyttäjille. Jos tämän toiminnon suorittava tili on *päätili* eikä se ole yleinen järjestelmänvalvoja, myönnät käyttöoikeudet tähän sovellukseen vain *päätilille*.
+    **Myönnä käyttöoikeuksia** -toiminto edellyttää *päätiliä*, jotta Azure AD ei pyydä lupaa. Jos tämän toiminnon suorittava tili on yleinen järjestelmänvalvoja, tämän sovelluksen käyttöoikeudet on myönnettävä organisaation kaikille käyttäjille. Jos tämän toiminnon suorittava tili on *päätili* eikä se ole yleinen järjestelmänvalvoja, sovelluksen käyttöoikeudet on myönnettävä vain *päätilille*.
    
     ![Käyttöoikeuksien myöntäminen tarvittavassa käyttöoikeusikkunassa](media/embed-sample-for-customers/embed-sample-for-customers-016.png)
 
@@ -104,11 +104,11 @@ Sinun on otettava käyttöön lisäkäyttöoikeuksia sovelluksen rekisteröintis
 
 Jos upotat asiakkaille raportteja, raporttinäkymiä tai ruutuja, sinun tulee sijoittaa sisältösi sovelluksen työtilaan. *Päätilin* on oltava sovelluksen työtilan järjestelmänvalvoja.
 
-1. Aloita luomalla työtila. Valitse **Työtilat** > **Luo sovelluksen työtila**. Tänne sijoitetaan sisältö, jota sovelluksesi käyttää.
+1. Aloita luomalla työtila. Valitse **Työtilat** > **Luo sovelluksen työtila**. Tänne sijoitetaan sisältö, johon sovelluksesi on päästävä.
 
     ![Työtilan luominen](media/embed-sample-for-customers/embed-sample-for-customers-020.png)
 
-2. Anna työtilalle nimi. Jos vastaava **työtilan tunnus** ei ole käytettävissä, muokkaa nimeä niin, että saat yksilöllisen tunnuksen. Siitä tulee myös sovelluksen nimi.
+2. Anna työtilalle nimi. Jos vastaava **työtilan tunnus** ei ole käytettävissä, muokkaa nimeä niin, että saat yksilöllisen tunnuksen. Sen on oltava myös sovelluksen nimi.
 
     ![Työtila nimeäminen](media/embed-sample-for-customers/embed-sample-for-customers-021.png)
 
@@ -124,15 +124,15 @@ Jos upotat asiakkaille raportteja, raporttinäkymiä tai ruutuja, sinun tulee si
 
 5. Lisää niiden ihmisten sähköpostiosoitteet, joille haluat antaa työtilan käyttöoikeudet, ja valitse **Lisää**. Et voi lisätä ryhmien aliaksia, vain yksittäisiä ihmisiä.
 
-6. Päätä, onko kukin henkilö jäsen vai järjestelmänvalvoja. Järjestelmänvalvojat voivat muokata työtilaa itse ja muun muassa lisätä muita jäseniä. Jäsenet voivat muokata sisältöä työtilassa, ellei heillä ole käyttöoikeudet pelkästään tarkasteluun. Sekä järjestelmänvalvojat että jäsenet voivat julkaista sovelluksen.
+6. Päätä, onko kukin henkilö jäsen vai järjestelmänvalvoja. Järjestelmänvalvojat voivat muokata työtilaa itse ja muun muassa lisätä muita jäseniä. Jäsenet voivat muokata sisältöä työtilassa, ellei heillä ole käyttöoikeuksia pelkästään tarkasteluun. Sekä järjestelmänvalvojat että jäsenet voivat julkaista sovelluksen.
 
-Voit nyt tarkastella uutta työtilaa. Power BI luo työtilan ja avaa sen. Työtila ilmestyy luetteloon työtiloista, joiden jäsen olet. Järjestelmänvalvojana voit valita kolme pistettä (...) ja palata takaisin tekemään työtilaan muutoksia, lisäämään uusia jäseniä ja muuttamaan jäsenten käyttöoikeuksia.
+    Voit nyt tarkastella uutta työtilaa. Power BI luo työtilan ja avaa sen. Työtila ilmestyy luetteloon työtiloista, joiden jäsen olet. Järjestelmänvalvojana voit valita kolme pistettä (...) ja palata takaisin tekemään työtilaan muutoksia, lisäämään uusia jäseniä ja muuttamaan jäsenten käyttöoikeuksia.
 
-   ![Uusi työtila](media/embed-sample-for-customers/embed-sample-for-customers-025.png)
+    ![Uusi työtila](media/embed-sample-for-customers/embed-sample-for-customers-025.png)
 
 ### <a name="create-and-publish-your-reports"></a>Luo ja julkaise raportteja
 
-Voit luoda Power BI Desktopia käyttämällä raportteja ja tietojoukkoja ja julkaista raportit sitten sovellustyötilassa. Raportit julkaiseva loppukäyttäjä tarvitsee sovellustyötilassa julkaisemiseen Power BI Pro ‑käyttöoikeudet.
+Voit luoda Power BI Desktopia käyttämällä raportteja ja tietojoukkoja ja julkaista raportit sitten sovellustyötilassa. Raportit julkaiseva loppukäyttäjä tarvitsee Power BI Pro ‑käyttöoikeudet sovellustyötilassa julkaisemiseen.
 
 1. Lataa malli [blogiesittely](https://github.com/Microsoft/powerbi-desktop-samples) GitHubista.
 
@@ -144,15 +144,13 @@ Voit luoda Power BI Desktopia käyttämällä raportteja ja tietojoukkoja ja jul
 
 3. Julkaise **sovelluksen työtilassa**
 
-   ![PBI desktop -raportti](media/embed-sample-for-customers/embed-sample-for-customers-028.png)
+   ![Julkaise työpöydän raportti](media/embed-sample-for-customers/embed-sample-for-customers-028.png)
 
-    Nyt voit tarkastella raporttia verkossa Power BI-palvelussa
+    Voit nyt tarkastella raporttia verkossa Power BI -palvelussa.
 
-   ![PBI desktop -raportti](media/embed-sample-for-customers/embed-sample-for-customers-029.png)
+   ![PBI-työpöydän raporttinäkymä palvelussa](media/embed-sample-for-customers/embed-sample-for-customers-029.png)
 
-## <a name="embed-your-content"></a>Sisällön upottaminen
-
-Upottaaksesi sovellukseen sisältöä asiakkaillesi, tarvitset päätilillesi **käyttöoikeustietueen** **Azure AD:sta**. Sinun täytyy [hankkia Azure AD -käyttöoikeustietue](get-azuread-access-token.md#access-token-for-non-power-bi-users-app-owns-data) Power BI-sovelluksellesi, app owns data -hakemiston mallia käyttämällä, ennen kuin teet kutsuja Power BI -ohjelmointirajapintaan.
+## <a name="embed-your-content-using-the-sample-application"></a>Upota sisältöä saman mallisovelluksen avulla
 
 Seuraa näitä ohjeita aloittaaksesi sisällön upottamisen mallisovelluksen avulla.
 
@@ -162,35 +160,34 @@ Seuraa näitä ohjeita aloittaaksesi sisällön upottamisen mallisovelluksen avu
 
 2. Avaa mallisovelluksessa Web.config-tiedosto. Sinun on täytettävä viisi kenttää, jotta sovellus voidaan suorittaa onnistuneesti. **Asiakastunnus**, **ryhmätunnus**, **raporttitunnus**, **pbikäyttäjänimi** ja **pbisalasana**.
 
-      ![Web.config-tiedosto](media/embed-sample-for-customers/embed-sample-for-customers-030.png)
+    ![Web.config-tiedosto](media/embed-sample-for-customers/embed-sample-for-customers-030.png)
 
-    * Täytä **asiakastunnus**-tiedot **Sovellustunnuksilla** **Azuresta**. **Asiakastunnuksen** avulla sovellus tunnistautuu käyttäjille, joilta pyydät käyttöoikeuksia. Saat **asiakastunnuksen** seuraavasti:
+    Täytä **asiakastunnus**-tiedot **Sovellustunnuksilla** **Azuresta**. **Asiakastunnuksen** avulla sovellus tunnistautuu käyttäjille, joilta pyydät käyttöoikeuksia. Saat **asiakastunnuksen** seuraavasti:
 
-    1. Kirjaudu sisään [Azure-portaaliin](https://portal.azure.com).
+    Kirjaudu sisään [Azure-portaaliin](https://portal.azure.com).
 
-        ![Azure-pääportaali](media/embed-sample-for-customers/embed-sample-for-customers-002.png)
+    ![Azure-pääportaali](media/embed-sample-for-customers/embed-sample-for-customers-002.png)
 
-    2. Valitse vasemmassa siirtymisruudussa **Kaikki palvelut** ja sitten **Sovelluksen rekisteröinnit**.
+    Valitse vasemmassa siirtymisruudussa **Kaikki palvelut** ja sitten **Sovelluksen rekisteröinnit**.
 
-        ![Sovelluksen rekisteröinnin etsintä](media/embed-sample-for-customers/embed-sample-for-customers-003.png)
-    3. Valitse sovellus, jolle haluat **asiakastunnuksen**.
+    ![Sovelluksen rekisteröinnin haku](media/embed-sample-for-customers/embed-sample-for-customers-003.png) Valitse sovellus, jolle haluat saada **asiakastunnuksen**.
 
-        ![Sovelluksen valitseminen](media/embed-sample-for-customers/embed-sample-for-customers-006.png)
+    ![Sovelluksen valitseminen](media/embed-sample-for-customers/embed-sample-for-customers-006.png)
 
-    4. Sinun pitäisi nähdä **Sovellustunnus** , joka on merkitty GUID-tunnuksena. Käytä tätä **Sovellustunnusta** sovelluksen **asiakastunnuksena**.
+    Sinun pitäisi nähdä **Sovellustunnus** , joka on merkitty GUID-tunnuksena. Käytä tätä **Sovellustunnusta** sovelluksen **asiakastunnuksena**.
 
-        ![Asiakastunnus](media/embed-sample-for-customers/embed-sample-for-customers-007.png)     
+    ![Asiakastunnus](media/embed-sample-for-customers/embed-sample-for-customers-007.png)
 
-    * Täytä **ryhmätunnus** Power BI:n **sovelluksen työtila GUID** -tiedoilla.
+    Täytä **ryhmätunnus** Power BI:n **sovelluksen työtila GUID** -tiedoilla.
 
-        ![Ryhmätunnus](media/embed-sample-for-customers/embed-sample-for-customers-031.png)
+    ![Ryhmätunnus](media/embed-sample-for-customers/embed-sample-for-customers-031.png)
 
-    * Täytä **raporttitunnus** Power BI:n **raportin GUID** -tiedoilla.
+    Täytä **raporttitunnus** Power BI:n **raportin GUID** -tiedoilla.
 
-        ![Raporttitunnus](media/embed-sample-for-customers/embed-sample-for-customers-032.png)    
+    ![Raporttitunnus](media/embed-sample-for-customers/embed-sample-for-customers-032.png)
 
     * Täytä **pbikäyttäjätunnus** Power BI:n pääkäyttäjätilin tiedoilla.
-    * Täytä **pbisalasana** Power BI: pääkäyttäjätilin salasanalla.
+    * Täytä **pbisalasana** Power BI:n pääkäyttäjätilin salasanalla.
 
 3. Suorita sovellus!
 
@@ -201,35 +198,146 @@ Seuraa näitä ohjeita aloittaaksesi sisällön upottamisen mallisovelluksen avu
     Valitse sitten **Upota raportti**. Riippuen siitä mitä sisältöä valitset testattavaksi - raportteja, raporttinäkymiä vai ruutuja - valitse kyseinen vaihtoehto sovelluksessa .
 
     ![Sisällön valitseminen](media/embed-sample-for-customers/embed-sample-for-customers-034.png)
- 
+
     Voit nyt tarkastella raporttia mallisovelluksessa.
 
     ![Näytä sovellus](media/embed-sample-for-customers/embed-sample-for-customers-035.png)
 
+## <a name="embed-your-content-within-your-application"></a>Upota sisältö sovellukseen
+Vaikka sisältöä voidaan upottaa [Power BI REST -ohjelmointirajapintojen](https://docs.microsoft.com/rest/api/power-bi/) avulla, tässä artikkelissa kuvatut esimerkkikoodit on luotu **.NET SDK**:n avulla.
+
+Upottaaksesi sovellukseen sisältöä asiakkaillesi, tarvitset päätilillesi **käyttöoikeustietueen** **Azure AD:sta**. Sinun täytyy hankkia [Azure AD -käyttöoikeustietue](get-azuread-access-token.md#access-token-for-non-power-bi-users-app-owns-data) Power BI-sovelluksellesi **app owns data** -mallin avulla ennen kutsujen tekemistä [Power BI REST -ohjelmointirajapintoihin](https://docs.microsoft.com/rest/api/power-bi/).
+
+Jotta voit luoda Power BI -asiakasohjelman **käyttöoikeustietueen** avulla, sinun on luotava Power BI -asiakasohjelmaobjekti, joka mahdollistaa vuorovaikutuksen [Power BI REST -ohjelmointirajapintojen](https://docs.microsoft.com/rest/api/power-bi/) kanssa. Tämä tehdään sijoittamalla **käyttöoikeustietue** ***Microsoft.Rest.TokenCredentials***-objektiin.
+
+```csharp
+using Microsoft.IdentityModel.Clients.ActiveDirectory;
+using Microsoft.Rest;
+using Microsoft.PowerBI.Api.V2;
+
+var tokenCredentials = new TokenCredentials(authenticationResult.AccessToken, "Bearer");
+
+// Create a Power BI Client object. It is used to call Power BI APIs.
+using (var client = new PowerBIClient(new Uri(ApiUrl), tokenCredentials))
+{
+    // Your code to embed items.
+}
+```
+
+### <a name="get-the-content-item-you-want-to-embed"></a>Upotettavan sisältökohteen hankkiminen
+Power BI -asiakasohjelmaobjektin avulla voit noutaa viitteen upotettavalle kohteelle.
+
+Tässä on koodimalli siitä, miten voit noutaa ensimmäisen raportin tietystä työtilasta.
+
+*Malli sisältökohteen hankkimisesta sen mukaan, onko upotettava raportti, koontinäyttö tai ruutu saatavilla [mallisovelluksen](#embed-your-content-within-a-sample-application) Controllers\HomeController.cs-tiedostossa.*
+
+```csharp
+using Microsoft.PowerBI.Api.V2;
+using Microsoft.PowerBI.Api.V2.Models;
+
+// You need to provide the GroupID where the dashboard resides.
+ODataResponseListReport reports = client.Reports.GetReportsInGroupAsync(GroupId);
+
+// Get the first report in the group.
+Report report = reports.Value.FirstOrDefault();
+```
+
+### <a name="create-the-embed-token"></a>Upotustunnuksen luominen
+Sinun on luotava upotustunnus, jota voidaan käyttää JavaScript-ohjelmointirajapinnasta. Upotustunnus on yksilöllinen upotettavalle kohteelle. Siten kun upotat tietyn Power BI -sisältökohteen, sinun on luotava sille uusi upotustunnus. Saat lisätietoja tästä ja käytettävästä **käyttöoikeustasosta** artikkelista [GenerateToken-ohjelmointirajapinta](https://msdn.microsoft.com/library/mt784614.aspx).
+
+Tässä on malli upotustunnuksen lisäämisestä raporttia varten sovellukseen.
+
+*Malli upotustunnuksen luomisesta raporttia, koontinäyttöä tai ruutua varten on saatavilla [mallisovelluksen](#embed-your-content-within-a-sample-application) Controllers\HomeController.cs-tiedostossa.*
+
+```csharp
+using Microsoft.PowerBI.Api.V2;
+using Microsoft.PowerBI.Api.V2.Models;
+
+// Generate Embed Token.
+var generateTokenRequestParameters = new GenerateTokenRequest(accessLevel: "view");
+EmbedToken tokenResponse = client.Reports.GenerateTokenInGroup(GroupId, report.Id, generateTokenRequestParameters);
+
+// Generate Embed Configuration.
+var embedConfig = new EmbedConfig()
+{
+    EmbedToken = tokenResponse,
+    EmbedUrl = report.EmbedUrl,
+    Id = report.Id
+};
+```
+
+Tämä edellyttää luokan luomista kohteille **EmbedConfig** ja **TileEmbedConfig**. Malli näistä on saatavilla **Models\EmbedConfig.cs**-tiedostossa ja **Models\TileEmbedConfig.cs-tiedostossa**.
+
+### <a name="load-an-item-using-javascript"></a>Lataa kohde JavaScriptin avulla
+Voit JavaScriptin avulla ladata raportin verkkosivun jako-elementtiin. 
+
+Tässä mallissa käytetään **EmbedConfig**-mallia ja **TileEmbedConfig**-mallia yhdessä raportin näkymien kanssa.
+
+*Malli näkymän lisäämisestä raporttia, koontinäyttöä tai ruutua varten on saatavilla [mallisovelluksen](#embed-your-content-within-a-sample-application) Views\Home\EmbedReport.cshtml-, Views\Home\EmbedDashboard.cshtml- tai Views\Home\Embedtile.cshtml-tiedostoissa.*
+
+```javascript
+<script src="~/scripts/powerbi.js"></script>
+<div id="reportContainer"></div>
+<script>
+    // Read embed application token from Model
+    var accessToken = "@Model.EmbedToken.Token";
+
+    // Read embed URL from Model
+    var embedUrl = "@Html.Raw(Model.EmbedUrl)";
+
+    // Read report Id from Model
+    var embedReportId = "@Model.Id";
+
+    // Get models. models contains enums that can be used.
+    var models = window['powerbi-client'].models;
+
+    // Embed configuration used to describe the what and how to embed.
+    // This object is used when calling powerbi.embed.
+    // This also includes settings and options such as filters.
+    // You can find more information at https://github.com/Microsoft/PowerBI-JavaScript/wiki/Embed-Configuration-Details.
+    var config = {
+        type: 'report',
+        tokenType: models.TokenType.Embed,
+        accessToken: accessToken,
+        embedUrl: embedUrl,
+        id: embedReportId,
+        permissions: models.Permissions.All,
+        settings: {
+            filterPaneEnabled: true,
+            navContentPaneEnabled: true
+        }
+    };
+
+    // Get a reference to the embedded report HTML element
+    var reportContainer = $('#reportContainer')[0];
+
+    // Embed the report and display it within the div container.
+    var report = powerbi.embed(reportContainer, config);
+</script>
+```
+
+[Playground-työkalun](https://microsoft.github.io/PowerBI-JavaScript/demo) avulla saat kokonaisen mallin JavaScript-ohjelmointirajapinnan käytöstä. Tämä on nopea tapa kokeilla erilaisia Power BI Embedded -malleja. Saat lisätietoja JavaScript-ohjelmointirajapinnasta vierailemassa [Power BI-JavaScript wiki](https://github.com/Microsoft/powerbi-javascript/wiki) -sivulla.
+
 ## <a name="move-to-production"></a>Siirry tuotantoon
 
-Kun kehittämäsi sovellus on valmis, on aika varata sovelluksen työtilalle kapasiteettia. Varattua kapasiteettia tarvitaan kun siirrytään tuotantoon.
+Kun olet nyt kehittänyt sovelluksesi, on aika varata sovelluksen työtilalle kapasiteettia. Varattua kapasiteettia tarvitaan kun siirrytään tuotantoon.
 
 ### <a name="create-a-dedicated-capacity"></a>Luo varattua kapasiteettia
-Luomalla varattua kapasiteettia, voit hyödyntää asiakkaalle varattua resurssia. Jos työtiloille ei ole määritetty varattua kapasiteettia, ne käyttävät jaettua kapasiteettia. Voit luoda varattua kapasiteettia käyttämällä Azuren [Power BI Embeddedin varattu kapasiteetti](https://docs.microsoft.com/azure/power-bi-embedded/create-capacity) -ratkaisua.
+Luomalla varattua kapasiteettia voit hyötyä siitä, että asiakkaalle varataan tietty resurssi. Jos työtiloille ei ole määritetty varattua kapasiteettia, niiden on käytettävä jaettua kapasiteettia. Voit luoda varattua kapasiteettia käyttämällä Azuren [Power BI Embeddedin varattu kapasiteetti](https://docs.microsoft.com/azure/power-bi-embedded/create-capacity) -ratkaisua.
 
->[!Note]
->PRO-käyttöoikeuksien upotettavat tunnukset on tarkoitettu kehitystestaukseen, joten Power BI -päätili voi luoda vain rajallisen määrän upotettavia tunnuksia. Tuotantoympäristössä upottamista varten täytyy ostaa varattua kapasiteettia. Varatun kapasiteetin avulla luotavien upotettavien tunnuksien määrää ei ole rajoitettu. Siirry [Hae käytettävissä olevat ominaisuudet](https://msdn.microsoft.com/library/mt846473.aspx) -kohtaan tarkistaaksesi käyttöarvo, joka ilmaisee nykyisen upotetun käyttö prosenttilukuna.
->
+PRO-käyttöoikeuksien upotettavat tunnukset on tarkoitettu kehitystestaukseen, joten Power BI -päätili voi luoda vain rajallisen määrän upotettavia tunnuksia. Tuotantoympäristössä upottamista varten täytyy ostaa varattua kapasiteettia. Varatun kapasiteetin avulla luotavien upotettavien tunnuksien määrää ei ole rajoitettu. Siirry [Käytettävissä olevat ominaisuudet](https://docs.microsoft.com/rest/api/power-bi/availablefeatures/getavailablefeatures) -kohtaan tarkistaaksesi käyttöarvon, joka ilmaisee nykyisen upotetun käytön prosenttilukuna. Käytettävä määrä on päätilikohtainen.
 
-### <a name="assign-app-workspace-to-dedicated-capacity"></a>Sovellustyötilan määrittäminen varattuun kapasiteettiin
+### <a name="assign-an-app-workspace-to-a-dedicated-capacity"></a>Määritä sovellustyötila varattuun kapasiteettiin
 
 Kun varattu kapasiteetti on luotu, määritä sovellustyötila sille varattuun kapasiteettiin. Seuraa näitä ohjeita.
 
-1. Avaa työtilat **Power BI-palvelusta** ja valitse sen työtilan kolme pistettä, johon on tarkoitus upottaa sisältöä. Valitse **Muokkaa työtiloja**.
+1. Laajenna **Power BI -palvelussa** työtiloja ja valitse ellipsikuvake työtilalle, jotka käytät sisällön upottamiseen. Valitse **Muokkaa työtiloja**.
 
     ![Muokkaa työtilaa](media/embed-sample-for-customers/embed-sample-for-customers-036.png)
 
 2. Avaa **Lisäasetukset**, ota sitten käyttöön **Varattu kapasiteetti**, ja valitse luomasi varattu kapasiteetti. Valitse **Tallenna**.
 
     ![Määritä varattu kapasiteetti](media/embed-sample-for-customers/embed-sample-for-customers-024.png)
-
-Voit käyttää [Playground-työkalua](https://microsoft.github.io/PowerBI-JavaScript/demo), saadaksesi käyttöösi kokonaisen mallin, joka käyttää JavaScript-ohjelmointirajapintaa. Tämä on nopea tapa kokeilla erilaisia Power BI Embedded -malleja. Saat lisätietoja JavaScript-ohjelmointirajapinnasta vierailemassa [Power BI-JavaScript wiki](https://github.com/Microsoft/powerbi-javascript/wiki) -sivulla.
 
 Lisätietoja Power BI Embeddedistä saat [Usein kysytyt kysymykset](embedded-faq.md) -sivulta.  Jos sinulla on ongelmia Power Bi Embeddedin kanssa sovelluksessasi, siirry[Vianmääritys](embedded-troubleshoot.md)-sivulle.
 

@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 05/18/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: aeaea6d14cf8f4fd62fbbf5098e68429fe40b96a
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 52ef5b568e63d759b38ee8210873783b6c205a2a
+ms.sourcegitcommit: 5eb8632f653b9ea4f33a780fd360e75bbdf53b13
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34471935"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36965523"
 ---
 # <a name="filter-a-report-using-query-string-parameters-in-the-url"></a>Raportin suodattaminen URL-osoitteen kyselymerkkijonoparametrien avulla
 Kun avaat raportin Power BI -palvelussa, raportin jokaisella sivulla on oma yksilöllinen URL-osoitteensa. Voit suodattaa raporttisivun käyttämällä Suodattimet-ruutua raportin alustalla.  Voit myös lisätä kyselyparametrit URL-osoitteeseen raportin suodattamiseksi. Ehkäpä sinulla on raportti, jonka haluat näyttää työtovereille, ja haluat suodattaa sen heille valmiiksi. Eräs tapa tehdä tämä on aloittaa raportin oletusarvoisesta URL-osoitteesta ja lisätä suodatinparametreja URL-osoitteeseen ja lähettää sitten heille koko URL-osoite sähköpostilla.
@@ -108,7 +108,7 @@ On muutamia asioita, jotka tulee ottaa huomioon merkkijonon kyselyparametreja k�
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 [Visualisoinnin kiinnittäminen koontinäyttöön](service-dashboard-pin-tile-from-report.md)  
-[Kokeile sitä – se on ilmainen!](https://powerbi.com/)
+[Rekisteröi ilmainen kokeiluversio](https://powerbi.microsoft.com/get-started/)
 
-Onko sinulla muuta kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)
+Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)
 

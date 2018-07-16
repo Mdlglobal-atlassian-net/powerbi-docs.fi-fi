@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 2761b2bd1230e18b5dd4e0b69342e55ed33d0983
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: e44d4bb48289b515797167fb3b91a9bbf0d2bcdd
+ms.sourcegitcommit: 695c65629d6d1faba61db2e1570324f65f235dde
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34250822"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37092157"
 ---
 # <a name="connect-to-uservoice-with-power-bi"></a>Yhteyden muodostaminen Power BI:n UserVoiceen
 UserVoice-tietojen seuranta ja analysointi on helppoa Power BI-ja UserVoice -sisältöpaketin avulla. Power BI noutaa tietosi, mukaan lukien tukipyynnöt, ehdotukset ja tyytyväisyysluokitukset ja rakentaa sitten valmiin raporttinäkymän kyseisten tietojen perusteella.
@@ -35,7 +35,7 @@ Muodosta yhteys [UserVoice-sisältöpakettiin ](https://app.powerbi.com/getdata/
 3. Valitse **UserVoice** ja sitten **Nouda**.
    
    ![](media/service-connect-to-uservoice/uservoice.png)
-4. Kirjoita pyydettäessä UserVoicen URL-osoite. URL-osoitteen on noudatettava täsmälleen muotoa https://fabrikam.uservoice.com, jossa ”fabrikam” korvataan tuotteen tai palvelun nimellä.
+4. Kirjoita pyydettäessä UserVoicen URL-osoite. URL-osoitteen on noudatettava täsmälleen muotoa `https://fabrikam.uservoice.com`, jossa ”fabrikam” korvataan tuotteen tai palvelun nimellä.
    
    >[!NOTE]
    >Huomaa, että lopussa ei ole vinoviivaa, ja että yhteys on http**s**.
@@ -63,7 +63,7 @@ Muodosta yhteys [UserVoice-sisältöpakettiin ](https://app.powerbi.com/getdata/
 
 Jos näet tämän virheen UserVoice URL-osoitteen kirjoittamisen jälkeen. Varmista, että seuraavat edellytykset täyttyvät:
 
-* URL-osoite noudattaa täsmälleen muotoa https://fabrikam.uservoice.com, jossa ”fabrikam” korvataan oikealla UserVoice URL -etuliitteellä.
+* URL-osoite noudattaa täsmälleen muotoa `https://fabrikam.uservoice.com`, jossa ”fabrikam” korvataan oikealla UserVoice URL -etuliitteellä.
 * Varmista, että kaikki kirjaimet ovat pieniä.
 * Varmista, että URL-osoitteen alku on http**s**.
 * Varmista, että URL-osoitteen lopussa ei ole vinoviivaa.

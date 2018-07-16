@@ -7,15 +7,15 @@ ms.reviewer: mihart
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 05/22/2018
+ms.date: 06/22/2018
 ms.author: mihart
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: c504280257a959ccd7a46e61b9d377c22b76c14d
-ms.sourcegitcommit: 2b9ef93bbff5c741ba55ea0502f642632683d593
+ms.openlocfilehash: 08a65e7d312b0f57ec2824431bd00456c06860be
+ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/24/2018
-ms.locfileid: "34471889"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36945200"
 ---
 # <a name="language-modeling-and-the-linguistic-schema"></a>Kielen mallintaminen ja lingvistinen rakenne 
 Yleisien lauseiden ja luonnollisen kielen käyttäminen tiedoista esitettävissä kysymyksissä on tehokasta. Vielä tehokkaampaa on, kun tiedot vastaavat, minkä Power BI:n Q&A-toiminto mahdollistaa. Kun esität Power BI Q&A:lle kysymyksen, se pyrkii parhaansa mukaan vastaamaan oikein. 
@@ -340,7 +340,7 @@ Toinen esimerkki olisi vaihtoehtoisen muotoilun ”työntekijät myyvät asiakka
 ## <a name="considerations-and-troubleshooting"></a>Huomioon otettavat seikat ja vianmääritys
 Jos teet .lsdl.yaml-tiedostoon muutoksen, joka ei vastaa lingvistisen rakenteen muotoa, seuraavanlaiset vahvistusmerkit ilmoittavat ongelmista: 
 
-    ![yaml file showing errors](media/power-bi-q-and-a-linguistic-schema/power-bi-yaml-errors.png)
+![virheet näyttävä yaml-tiedosto](media/power-bi-q-and-a-linguistic-schema/power-bi-yaml-errors.png)
 
 
-Ilmenikö muuta kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
+Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 11073e7df57d4717e27fa73c6a5e1e315a9a8dcc
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 4e9e10f713be50707909c68b104f82cada6777b6
+ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34241132"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37599043"
 ---
 # <a name="connect-to-tygraph--with-power-bi"></a>Yhteyden muodostaminen tyGraphiin Power BI:n avulla
 Visualisoi ja tutki tyGraph-tietoja Power BI:ssä Power BI -sisältöpaketin avulla. Aloita yhdistämällä tyGraph-tiliisi ja lataamalla raporttinäkymän, raportit ja tietojoukon. Heti käytettävän sisältöön kuuluu merkityksellisiä tietoja, Aktiivisen osallistumisen mittaustiedot (Measure of Active Engagement, MAE) ja suosituimmat sisällönluojat. Voit mukauttaa sitä edelleen, jotta voit korostaa sinua eniten kiinnostavia tietoja.  Tiedot päivitetään automaattisesti määrittämäsi aikataulun mukaan.
@@ -42,7 +42,7 @@ Yhteyden muodostaminen [tyGraphiin Power BI:ssä](https://app.powerbi.com/getdat
    
     **Jos et ole varmennettu Yammer-järjestelmänvalvoja**
    
-    TyGraph-sisältöpaketti vaatii tyGraph-tilin, jonka varmennettu Yammer-järjestelmänvalvoja on luonut. Kun tili on luotu, organisaatioon kuuluville käyttäjille voidaan antaa täydentäviä avaimia. Jos varmennettu järjestelmänvalvoja ei ole vielä luonut tyGraph-tiliä, pyydä häntä tekemään niin. Jos tili on luotu, voit pyytää avaimen lähettämällä sähköpostia osoitteeseen <mailto:support@unlimitedviz.com>.
+    TyGraph-sisältöpaketti vaatii tyGraph-tilin, jonka varmennettu Yammer-järjestelmänvalvoja on luonut. Kun tili on luotu, organisaatioon kuuluville käyttäjille voidaan antaa täydentäviä avaimia. Jos varmennettu järjestelmänvalvoja ei ole vielä luonut tyGraph-tiliä, pyydä häntä tekemään niin. Jos tili on luotu, voit pyytää avaimen lähettämällä sähköpostia osoitteeseen <support@unlimitedviz.com>.
    
     ![](media/service-connect-to-tygraph/creds.png)
 6. Onnistuneen todennuksen jälkeen tuontiprosessi alkaa automaattisesti. Kun kaikki on valmista, uusi raporttinäkymä, raportti ja malli näkyvät siirtymisruudussa. Voit tarkastella tuotuja tietoja valitsemalla raporttinäkymän.

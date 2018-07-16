@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/02/2018
 ms.author: davidi
 LocalizationGroup: Data refresh
-ms.openlocfilehash: b7a49a04ed344d6977dba5ac739c0f0d41aca5b9
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 6be8c6b5837fc9e9a0b8456b7c545e7f942eabe5
+ms.sourcegitcommit: 695c65629d6d1faba61db2e1570324f65f235dde
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34239126"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37092203"
 ---
 # <a name="refresh-a-dataset-created-from-an-excel-workbook-on-onedrive-or-sharepoint-online"></a>Excel-työkirjasta luodun tietojoukon päivittäminen OneDrivessa tai SharePoint Onlinessa
 Voit tuoda Excel-työkirjoja, jotka on tallennettu paikalliseen tietokoneeseesi tai pilvitallennustilaan, kuten OneDrive for Business- tai SharePoint Online -palveluun. Tutustumme pilvitallennustilan käytön etuihin Excel-tiedostoja tallennettaessa. Katso lisätietoja Excel-tiedostojen tuomisesta Power BI:iin kohdasta [Nouda tiedot Excel-työkirjatiedostosta](service-excel-workbook-files.md).
@@ -45,7 +45,7 @@ Power BI, Päivitä nyt ja Ajoita päivitys ovat tuettuja tietojoukkoja, jotka o
 ## <a name="onedrive-or-onedrive-for-business-whats-the-difference"></a>OneDrive vai OneDrive for Business? Mikä niiden ero on?
 Jos sinulla on sekä henkilökohtainen OneDrive että OneDrive for Business, on suositeltavaa säilyttää tiedostot, jotka haluat tuoda Power BI:ssa OneDrive for Business -palveluun. Syynä on se, että todennäköisesti käytät kahta eri tiliä niille kirjautumista varten.
 
-Yhteyden muodostaminen OneDrive for Business -palveluun Power BI:ssa on yleensä saumaton, koska tili, jota käytit Power BI -kirjautumiseen on usein sama tili, jota käytetään kirjauduttaessa OneDrive for Business -palveluun. Henkilökohtaisen OneDrive olet todennäköisesti kuitenkin kirjautunut sisään toisella [Microsoft-tilillä](http://www.microsoft.com/account/default.aspx).
+Yhteyden muodostaminen OneDrive for Business -palveluun Power BI:ssa on yleensä saumaton, koska tili, jota käytit Power BI -kirjautumiseen on usein sama tili, jota käytetään kirjauduttaessa OneDrive for Business -palveluun. Henkilökohtaisen OneDrive olet todennäköisesti kuitenkin kirjautunut sisään toisella [Microsoft-tilillä](https://account.microsoft.com).
 
 Kun olet kirjautunut sisään Microsoft-tilillesi, muista valita Pysy kirjautuneena -vaihtoehto. Power BI voi tämän jälkeen synkronoida mitä tahansa tekemiäsi päivityksiä Power BI Desktop -tiedostoon ja Power BI -tietojoukkoihin  
     ![](media/refresh-excel-file-onedrive/refresh_signin_keepmesignedin.png)

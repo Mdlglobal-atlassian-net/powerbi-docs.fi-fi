@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: cd129d898f7ac958a3441754e87366aa1a9dddca
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: f4a7e8d0ad254f2b5130026d793629a0cf4cf3be
+ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34238243"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37137280"
 ---
 # <a name="connect-to-github-with-power-bi"></a>Yhteyden muodostaminen GitHubin Power BI:n välillä
 Power BI:n GitHub -sisältöpaketin avulla saat tietoa GitHub-säiliöstä, osallistumistiedoista, ongelmista, noutopyynnöistä sekä aktiivisista käyttäjistä.
@@ -97,5 +97,5 @@ Voit tarvittaessa varmistaa GitHub-tunnistetietosi.
 3. Koita seuraavaksi yhdistää GitHubiin Power BI:ssä. Käytä määritä GitHub -valintaikkunassa säilön ja säilön omistajan nimiä samalle säilölle.  
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
-* [Power BI:n käytön aloittaminen](service-get-started.md)
+* [Mikä on Power BI?](power-bi-overview.md)
 * [Nouda tiedot](service-get-data.md)

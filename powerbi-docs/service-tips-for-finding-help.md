@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 10/12/2017
+ms.date: 06/28/2018
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: 297805d187ccdea2c04e0b79ad86723ec80d3f80
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: f4d16a5694dde63b66dcb001f1a5375ed92d978c
+ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34310057"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37137165"
 ---
 # <a name="10-tips-for-getting-help-with-your-power-bi-questions"></a>10 vinkkiä ohjeiden saamiseen, kun sinulla on Power BI:tä koskevia kysymyksiä
 Turhaudutko joskus Power BI:tä käyttäessäsi tai oletko pulassa, koska et saa vastauksia Power BI:tä koskeviin kysymyksiisi juuri silloin kun tarvitset niitä? 
@@ -69,6 +69,6 @@ Jos mikään muu ei auta, viimeisenä vinkkinä on järjestelmän toiminnan tark
 Saatat esimerkiksi miettiä, voitko jakaa koontinäyttöjä käyttöoikeusryhmän kanssa. Saat tähän kysymykseen vastauksen siirtymällä jakovalintaikkunaan ja yrittämällä lisätä suojausryhmän. Kummassakin tapauksessa saat vastauksen tämän testin jälkeen.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
-* [Power BI:n käytön aloittaminen](service-get-started.md)
+* [Mikä on Power BI?](power-bi-overview.md)
 * Voit esittää kysymyksiä [Power BI -yhteisössä](http://community.powerbi.com/)
 * Eikö ongelma ratkennut? Käy [Power BI -tukisivulla](https://powerbi.microsoft.com/support/)

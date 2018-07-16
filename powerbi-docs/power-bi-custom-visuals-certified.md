@@ -10,12 +10,12 @@ ms.component: powerbi-developer
 ms.topic: conceptual
 ms.date: 02/13/2018
 ms.author: mihart
-ms.openlocfilehash: 691956dace3ad7592be6763c97517384b7560681
-ms.sourcegitcommit: 8ee0ebd4d47a41108387d13a3bc3e7e2770cbeb8
+ms.openlocfilehash: efddb15572705d6d1c7cb215250360e94a8546cb
+ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34813591"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37600352"
 ---
 # <a name="getting-a-custom-visual-certified"></a>Mukautetun visualisoinnin *sertifioinnin* hankkiminen
 ## <a name="what-is-meant-by-certified"></a>Mitä *sertifioinnilla* tarkoitetaan?
@@ -39,7 +39,7 @@ Oletko Web-kehittäjä ja kiinnostunut omien visualisointien luomisesta ja niide
 Jos haluat lähettää mukautetun visualisoinnin sertifiointia varten, toimi seuraavasti:
 
 1. Lähetä sähköpostia Power BI:n mukautettujen visualisointien tukeen (pbicvsupport@microsoft.com). Sisällytä viestiin seuraavat tiedot:    
-   
+
    * Otsikko: Visual Certification Request    
    * Linkki GitHub-säilöön, joka isännöi visualisoinnin lähdekoodia    
    * Edellä mainittujen vaatimuksien noudattaminen    
@@ -51,6 +51,7 @@ Jos haluat lähettää mukautetun visualisoinnin sertifiointia varten, toimi seu
 Microsoft saattaa harkintansa mukaan poistaa visualisoinnin sertifioitujen luettelosta.  
 
 ## <a name="list-of-custom-visuals-that-have-been-certified"></a>Luettelo mukautetuista visualisoinneista, jotka on sertifioitu
+
 | Linkki AppSourceen | Linkki videoon |
 | --- | --- |
 | [Asterikaavio](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380759) | |
@@ -100,6 +101,7 @@ Microsoft saattaa harkintansa mukaan poistaa visualisoinnin sertifioitujen luett
 | [Infografiikan suunnitteluvisualisointi](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380898) | |
 | [Akvelonin KPI-kaavio](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104381432) | |
 | [MAQ Softwaren KPI-sarake](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380996) | [Video](https://youtu.be/rU0xoOlIq1U) |
+| [MAQ Softwaren KPI-ruudukko](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380947) | [Video](https://youtu.be/dM4PvZh71V0) |
 | [KPI-ilmaisin](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380832) | |
 | [MAQ Softwaren KPI-vaihtaja](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380946) | [Video](https://youtu.be/cudG4gsZ2V8) |
 | [MAQ Softwaren palkkimittari](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380821) | [Video](https://youtu.be/7_jFaM30dkc) |
@@ -126,7 +128,9 @@ Microsoft saattaa harkintansa mukaan poistaa visualisoinnin sertifioitujen luett
 | [Tekstisuodatin](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104381309) | |
 | [MAQ Softwaren tekstin rivitin](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380826) | |
 | [MAQ Softwaren lämpömittari](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380847) | [Video](https://youtu.be/SPX9mgrAdBc) |
+| [Aikasiveltimen osittaja](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380798) | |
 | [Aikajanan osittaja](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380786) | [Video](https://youtu.be/ozMtZ4_NZ10) |
+| [CloudScopen aikajana](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104381427) | [Video](https://youtu.be/szNi9YgXFJc) |
 | [Tornadokuvaaja](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380768) | [Video](https://www.youtube.com/watch?v=AQvd2FhRyCI) |
 | [MAQ kaupankäyntikuvaaja](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380823) | [Video](https://youtu.be/xhTR6y6J9Ko) |
 | [Ylivoimainen varianssikuvaaja](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104381140) | [Video](https://youtu.be/pDYF8iZxERs) |

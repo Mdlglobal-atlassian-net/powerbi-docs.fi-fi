@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 06/08/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: f8b1e94ca0923c3e2ba509df266cec0f05596ab1
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: b95ff0d9102377b6aeb59488a565f7bcb9a65566
+ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34852183"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37598595"
 ---
 # <a name="create-and-publish-a-power-bi-organizational-content-pack-tutorial"></a>Organisaation sisältöpaketin luominen ja julkaiseminen Power BI:ssa (opetusohjelma)
 > [!NOTE]
@@ -43,24 +43,24 @@ Haluatko seurata mukana? Siirry [Power BI -palvelussa](https://powerbi.com) koht
    
    Pidä mielessä, että organisaatiosi sisältöpakettikirjastoon voi päättyä satoja sisältöpaketteja, jotka on julkaistu organisaatiolle tai ryhmille. Paneudu hetkeksi sisältöpaketin nimeämiseen, jotta se on kuvaava ja ottaa kohderyhmän huomioon.  Käytä sanoja, jotka helpottavat sisältöpaketin löytämistä haun avulla.
    
-   1.  Valitse **Tietyt ryhmät** ja anna täydelliset sähköpostiosoitteet henkilöille, [Office 365 -ryhmille](https://support.office.com/article/Create-a-group-in-Office-365-7124dc4c-1de9-40d4-b096-e8add19209e9), jakeluryhmille ja käyttöoikeusryhmille. Esimerkki:
+   1. Valitse **Tietyt ryhmät** ja anna täydelliset sähköpostiosoitteet henkilöille, [Office 365 -ryhmille](https://support.office.com/article/Create-a-group-in-Office-365-7124dc4c-1de9-40d4-b096-e8add19209e9), jakeluryhmille ja käyttöoikeusryhmille. Esimerkki:
       
-         salesmgrs@contoso.com; sales@contoso.com
+        salesmgrs@contoso.com; sales@contoso.com
       
       Tässä opetusohjelmassa voit kokeilla oman tai ryhmän sähköpostiosoitteen käyttämistä.
    
-   2.  Nimeä sisältöpaketti **Myyntimahdollisuudet**.
+   2. Nimeä sisältöpaketti **Myyntimahdollisuudet**.
    
       > [!TIP]
       > Harkitse, voiko sisältöpakein nimeen liittää raporttinäkymän nimen. Tällä tavoin työtoverisi löytää raporttinäkymän helpommin sen jälkeen, kun on muodostanut yhteyden sisältöpakettiisi.
       > 
       > 
    
-   3.  Suositus: Lisää **kuvaus**. Tämän avulla työtoverin on helppo löytää sisältöpaketteja, joita he tarvitsevat. Kuvauksen lisäksi lisää avainsanoja, joilla työtoverisi saattavat hakea tätä sisältöpakettia. Sisällytä myös yhteystiedot siltä varalta, että työtoverillasi on kysyttävää tai hän tarvitsee apua.
+   3. Suositus: Lisää **kuvaus**. Tämän avulla työtoverin on helppo löytää sisältöpaketteja, joita he tarvitsevat. Kuvauksen lisäksi lisää avainsanoja, joilla työtoverisi saattavat hakea tätä sisältöpakettia. Sisällytä myös yhteystiedot siltä varalta, että työtoverillasi on kysyttävää tai hän tarvitsee apua.
    
-   4.  **Lataa kuvan tai logo**, jotta ryhmän jäsenien on helpompi löytää sisältöpaketti &#151, sillä kuvan hakeminen on nopeampaa kuin tekstin. Olemme käyttäneet Mahdollisuuksien lukumäärä 100 % -pylväskaaviota alla näkyvän näyttökuvan mukaisesti.
+   4. **Lataa kuvan tai logo**, jotta ryhmän jäsenien on helpompi löytää sisältöpaketti &#151, sillä kuvan hakeminen on nopeampaa kuin tekstin. Olemme käyttäneet Mahdollisuuksien lukumäärä 100 % -pylväskaaviota alla näkyvän näyttökuvan mukaisesti.
    
-   5.  Valitse **Mahdollisuusanalyysimalli** -raporttinäkymä lisätäksesi sen sisältöpakettiin.  Power BI lisää automaattisesti liittyvän raportin ja tietojoukon. Voit lisätä myös muita, jos haluat.
+   5. Valitse **Mahdollisuusanalyysimalli** -raporttinäkymä lisätäksesi sen sisältöpakettiin.  Power BI lisää automaattisesti liittyvän raportin ja tietojoukon. Voit lisätä myös muita, jos haluat.
    
       > [!NOTE]
       >  Luettelossa on vain raporttinäkymiä, raportteja, tietojoukkoja ja työkirjoja, joita voit muokata. Näin ollen mitään kanssasi jaettuja ei ole luettelossa.
@@ -71,7 +71,7 @@ Haluatko seurata mukana? Siirry [Power BI -palvelussa](https://powerbi.com) koht
    
    6. Jos sinulla on Excel-työkirjoja, näet ne kohdassa Raportit Excel-kuvakkeella varustettuina. Voit lisätä ne myös sisältöpakettiin.
    
-     ![](media/service-organizational-content-pack-create-and-publish/pbi_orgcontpkexcel.png)
+      ![](media/service-organizational-content-pack-create-and-publish/pbi_orgcontpkexcel.png)
    
       > [!NOTE]
       > Jos ryhmän jäsenet eivät voi tarkastella Excel-työkirjaa, voit joutua [jakamaan työkirjan heidän kanssaan OneDrive for Business -palvelussa](https://support.office.com/en-us/article/Share-documents-or-folders-in-Office-365-1fe37332-0f9a-4719-970e-d2578da4941c).

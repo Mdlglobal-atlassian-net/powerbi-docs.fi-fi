@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 12/06/2017
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 024bdce00ba6ec7b9c1027163776a71e77aaf91d
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: c0090cb81ebaebc6b4cec70163374be4f1f37980
+ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34456107"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37135808"
 ---
 # <a name="power-bi-for-office-365-is-retired"></a>Power BI Office 365:lle on poistettu käytöstä
 Power BI Office 365:lle, joka on Power BI:n aiempi versio, on siirretty nykyiseen versioon [Power BI:hin](https://powerbi.microsoft.com). Käyttäjät, jotka ovat käyttäneet aiemmin versiota **Power BI Office 365:lle** voivat käyttää Power BI:n uusinta versiota. Lue [lisätietoja Power BI:stä](service-get-started.md).
@@ -28,8 +28,8 @@ Pääsy version **Power BI Office 365:lle** hallintaportaaliin ei ole enää kä
 Jos haluat lisätietoja, katso [Power BI:n hallintaportaali](service-admin-portal.md).
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
-[Power BI:n käytön aloittaminen](service-get-started.md)
+[Mikä on Power BI?](power-bi-overview.md)
 
-[Power BI Desktopin käytön aloittaminen](desktop-getting-started.md)
+[Mikä on Power BI Desktop?](desktop-what-is-desktop.md)
 
 [Power BI:n hallinta organisaatiossa](service-admin-administering-power-bi-in-your-organization.md)

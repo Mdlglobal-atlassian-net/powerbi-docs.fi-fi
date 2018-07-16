@@ -10,17 +10,17 @@ ms.topic: conceptual
 ms.date: 04/11/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 35bdf975d9df31ded5a7c3f5be26ae6181002169
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: a6b4795be959cfc1842a07f1ba0a74dd81109e89
+ms.sourcegitcommit: 5eb8632f653b9ea4f33a780fd360e75bbdf53b13
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34240426"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36965592"
 ---
 # <a name="interact-with-a-report-in-editing-view-in-power-bi-service"></a>Raportin käsittely Power BI -palvelun muokkausnäkymässä
 Raportteja voidaan luoda ja muokata Power BI -palvelussa ja Power BI Desktopissa. Power BI -palvelussa raportteja voidaan luoda ja muokata **muokkausnäkymässä**. Power BI Desktopissa raportteja voidaan luoda ja muokata [**raporttinäkymässä**](desktop-report-view.md). Tässä artikkelissa käsitellään Power BI -palvelun muokkausnäkymää. 
 
-Power BI -palvelussa on kaksi erilaista tilaa raporttien käsittelyyn – [lukunäkymä](service-reading-view-and-editing-view.md) on tarkoitettu raporttien *kuluttajille* ja muokkausnäkymä raporttien omistajille ja tekijöille.  Power BI Pro -käyttöoikeus vaaditaan raporttien jakamiseen sekä muiden luomien raporttien muokkaamiseen. Jos käytät Power BI:n ilmaisversiota, voit luoda raportteja, mutta et voi käyttää [jakamista](service-share-reports.md).    
+Power BI -palvelussa on kaksi erilaista tilaa raporttien käsittelyyn – [lukunäkymä](service-reading-view-and-editing-view.md) on tarkoitettu raporttien *kuluttajille* ja muokkausnäkymä raporttien omistajille ja tekijöille.  Power BI Pro -käyttöoikeus vaaditaan raporttien jakamiseen sekä muiden luomien raporttien muokkaamiseen. Jos sinulla ei ole Pro-käyttöoikeutta, voit edelleen luoda raportteja, mutta et voi [jakaa niitä](service-share-reports.md).    
 
 Raportin muokkausnäkymässä on paljon eri vaihtoehtoja raportin tarkastelemiseen ja suunnitteluun. Kaikki [lukunäkymän](service-reading-view-and-editing-view.md) toiminnot ovat käytettävissä, sekä paljon muita. Muokkausnäkymää voi käyttää vain raportin luonut henkilö tai hänen työtoverinsa, jotka [myös omistavat raportin sovellustyötilan jäsenenä tai järjestelmänvalvojana](service-create-distribute-apps.md).
 
@@ -39,7 +39,7 @@ Tutustu aiheiden luetteloon, joka on sisällysluettelon **Raportit**-otsikon all
 * Raporttisivun monistaminen
 
 ## <a name="considerations-and-troubleshooting"></a>Huomioon otettavat seikat ja vianmääritys
-Power BI Pro -käyttöoikeus vaaditaan muiden luomien raporttien muokkaamiseen sekä raporttiesi jakamiseen muiden kanssa.  Jos käytät Power BI:n ilmaisversiota, voit luoda raportteja, mutta et voi käyttää [jakamista](service-share-reports.md).
+Power BI Pro -käyttöoikeus vaaditaan muiden luomien raporttien muokkaamiseen sekä raporttiesi jakamiseen muiden kanssa.  Jos sinulla ei ole Pro-käyttöoikeutta, voit edelleen luoda raportteja, mutta et voi [jakaa niitä](service-share-reports.md).
 
 
 ## <a name="next-steps"></a>Seuraavat vaiheet

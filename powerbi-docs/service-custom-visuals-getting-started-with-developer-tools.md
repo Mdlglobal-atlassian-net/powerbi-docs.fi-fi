@@ -9,12 +9,12 @@ ms.component: powerbi-developer
 ms.topic: conceptual
 ms.date: 11/30/2017
 ms.author: maghan
-ms.openlocfilehash: 8b5da248b6992c8ae3e8d30caf4f0fc6c47bdcf5
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: a9663951035a697a9fb1f8732d2ce418950078f4
+ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34296294"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37600375"
 ---
 # <a name="use-developer-tools-to-create-custom-visuals"></a>Mukautettujen visualisointien luominen kehittäjätyökalujen avulla
 Voit mukautettujen visualisointien avulla vastata käyttäjiesi tarpeita ja sovelluksesi rakennetta. Lue, miten voit luoda mukautetun visualisoinnin Power BI:lle kehittäjätyökalujen avulla.
@@ -32,14 +32,14 @@ Jotta voit luoda mukautetun visualisoinnin, sinun on asennettava NodeJS. NodeJS:
 
 1. Lataa ja asenna [NodeJS](https://nodejs.org). Versio 4.0 tai uudempi on pakollinen, mutta suosittelemme versiota 5.0 tai uudempaa versiota.
 2. Asenna komentorivin työkalut. Suorita seuraava komento komentokehotteesta.
-   
+
         npm install -g powerbi-visuals-tools
 3. Voit vahvistaa työkalujen asentamisen suorittamalla seuraavan komennon ilman parametreja.
-   
+
         pbiviz
-   
+
     Näkyviin pitäisi tulla tulee Ohje-tuloste.
-   
+
     <pre><code>
          +syyso+/
     oms/+osyhdhyso/
@@ -59,22 +59,22 @@ Jotta voit luoda mukautetun visualisoinnin, sinun on asennettava NodeJS. NodeJS:
                /dmmh /mmmm/ /osyhhy/
                  //   dmmd
                        ++
-   
+
        PowerBI Custom Visual Tool
-   
+
     Usage: pbiviz [options] [command]
-   
+
     Commands:
-   
+
     new [name]        Create a new visual
     info              Display info about the current visual
     start             Start the current visual
     package           Package the current visual into a pbiviz file
     update [version]  Updates the api definitions and schemas in the current visual. Changes the version if specified
     help [cmd]        display help for [cmd]
-   
+
     Options:
-   
+
     -h, --help      output usage information
     -V, --version   output the version number
     --install-cert  Install localhost certificate
@@ -103,7 +103,7 @@ Voit *luoda* varmenteen suorittamalla seuraavan komennon.
 Voit *asentaa*  varmenteen suorittamalla seuraavan komennon.
 
     pbiviz --install-cert
-    
+
 > [!NOTE]
 > Sinun pitäisi nähdä viesti, jossa sinua pyydetään käyttämään juuri luotua tunnuslausetta PFX-varmenteen asentamiseen.
 > 
@@ -112,20 +112,20 @@ Voit *asentaa*  varmenteen suorittamalla seuraavan komennon.
 **Windows-käyttöjärjestelmä**
 
 1. Valitse **Asenna varmenne...**.
-   
+
     ![](media/service-custom-visuals-getting-started-with-developer-tools/install-ssl-certificate-windows.png)
 2. Valitse **Nykyinen käyttäjä** ja valitse sitten **Seuraava**.
-   
+
     ![](media/service-custom-visuals-getting-started-with-developer-tools/install-ssl-certificate-windows2.png)
 3. Valitse **Sijoita kaikki varmenteet seuraavaan paikkaan** ja valitse **Selaa...**.
 4. Valitse **Luotetut juurivarmennemyöntäjät** ja valitse sitten **OK**. Valitse **Seuraava**.
-   
+
     ![](media/service-custom-visuals-getting-started-with-developer-tools/install-ssl-certificate-windows3.png)
 5. Valitse **Valmis**.
-   
+
     ![](media/service-custom-visuals-getting-started-with-developer-tools/install-ssl-certificate-windows4.png)
 6. Valitse **Kyllä** suojauksen varoitusikkunasta.
-   
+
     ![](media/service-custom-visuals-getting-started-with-developer-tools/install-ssl-certificate-windows5.png)
 7. Sulje kaikki selaimet, jotka ovat avoinna.
 
@@ -137,13 +137,13 @@ Voit *asentaa*  varmenteen suorittamalla seuraavan komennon.
 **OSX**
 
 1. Jos lukko on lukittu vasemmassa yläkulmassa, avaa sen lukitus valitsemalla lukko. Hae *localhost* ja kaksoisnapsauta varmennetta.
-   
+
     ![](media/service-custom-visuals-getting-started-with-developer-tools/install-ssl-certificate-osx.png)
 2. Valitse **Luota aina** ja sulje ikkuna.
-   
+
     ![](media/service-custom-visuals-getting-started-with-developer-tools/install-ssl-certificate-osx2.png)
 3. Kirjoita käyttäjänimi ja salasana. Valitse **Päivitä asetukset**.
-   
+
     ![](media/service-custom-visuals-getting-started-with-developer-tools/install-ssl-certificate-osx3.png)
 4. Sulje kaikki selaimet, jotka ovat avoinna.
 
@@ -157,15 +157,15 @@ Voit ottaa mukautetun visualisoinnin reaaliaikaisen esikatselun käyttöön seur
 
 1. Selaa ja kirjaudu sisään [app.powerbi.comiin](https://app.powerbi.com).
 2. Valitse **hammaspyöräkuvake** ja valitse sitten **Asetukset**.
-   
+
     ![](media/service-custom-visuals-getting-started-with-developer-tools/powerbi-settings.png)
 3. Valitse **Kehittäjä** ja valitse sitten **Ota käyttöön kehittäjän visualisointi testausta varten**.
-   
+
     ![](media/service-custom-visuals-getting-started-with-developer-tools/powerbi-settings-enable-developer-live-preview.png)
 4. Valitse **Kehittäjän visualisointi** **Visualisointi**-ruudussa.
-   
+
     ![](media/service-custom-visuals-getting-started-with-developer-tools/powerbi-developer-visual-selection.png)
-   
+
    > [!NOTE]
    > Tämä edellyttää, että olet suorittanut `pbiviz start` visualisointikansiosta kehittäjän tietokoneessa. Katso lisätietoja visualisoinnin luomisesta tästä artikkelista [Uuden visualisoinnin luominen](#create-a-new-visual).
    > 
@@ -196,11 +196,11 @@ Voit suorittaa visualisoinnin toimimalla seuraavasti.
 1. Avaa kehote.
 2. Muuta hakemisto visualisointikansioksi. Tämä kansio sisältää `pbiviz.json`-tiedoston.
 3. Suorita seuraava komento.
-   
+
     ```
     pbiviz start
     ```
-   
+
     ![](media/service-custom-visuals-getting-started-with-developer-tools/powerbi-start-visual.png)
 
 Jos olet väärässä paikassa, näet seuraavanlaisen virheen.
@@ -249,7 +249,7 @@ Voit pakata visualisoinnin toimimalla seuraavasti.
 1. Avaa kehote.
 2. Muuta hakemisto visualisointikansioksi. Tämä kansio sisältää `pbiviz.json`-tiedoston.
 3. Suorita seuraava komento.
-   
+
     ```
     pbiviz package
     ```
@@ -294,6 +294,7 @@ Tämä päivittää visualisoinnin ohjelmointirajapintaversioon 1.2.0. Voit korv
 Visualisointiprojekti on kansio, joka luodaan, kun suoritat `pbiviz new`-komennon. 
 
 ### <a name="file-structure"></a>Tiedoston rakenne
+
 | Kohde | Kuvaus |
 | --- | --- |
 | assets/ |Käytetään visualisointiresurssien (kuvake, näyttökuvat jne.) tallentamiseen. |

@@ -10,26 +10,26 @@ ms.topic: conceptual
 ms.date: 06/28/2017
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: e7c0399072bfef35a1103a5db448da183f64f74c
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: a30c90b1c180277a584a152f26c7f92549284c7d
+ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34245358"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36944740"
 ---
 # <a name="manage-your-data-storage"></a>Tietoja tallennustilan hallinta
 Lue, miten voit hallita yksittäisten tai sovelluksen työtilan tallennustilaa ja varmistaa, että voit edelleen julkaista raportteja ja tietojoukkoja.
 
 Käyttäjillä ja sovelluksen työtiloilla on omat datakapasiteettinsa
 
-* Ilmais- ja Pro-käyttäjillä on enintään 10 gigatavua tallennustilaa.
-* Pro-käyttäjät voivat luoda sovelluksen työtiloja enintään 10 Gigatavua tietosäilöä kohden.
+* Kaikilla käyttäjillä on enintään 10 gigatavua tallennustilaa.
+* Käyttäjät, joilla on Power BI Pro -käyttöoikeus, voivat luoda sovelluksen työtiloja, joissa kussakin on enintään 10 gigatavua tallennustilaa.
 
 Vuokraajan tasolla kokonaiskäyttö voi olla enintään 10 Gigatavua Pro-käyttäjää kohden kaikkien Pro-käyttäjien osalta ja vuokraajan sovelluksen työtiloissa.
 
 Lue lisätietoja muista ominaisuuksista [Power BI -hinnoittelumallista](https://powerbi.microsoft.com/pricing).
 
-Tietoja tallennustila sisältää omat tietojoukkosi sekä Excel-raportit sekä tiedot, joita joku on sinulle luovuttanut. Tietojoukot ovat mitä tahansa tietolähteitä, jotka olet ladannut tai joihin olet yhteydessä, mukaan lukien Power BI Desktop -tiedostot ja Excel-työkirjat, joita käytät. Seuraavat sisältyvät myös datakapasiteettiin.
+Tallennustila sisältää omat tietojoukkosi sekä Excel-raportit sekä tiedot, joita joku on sinulle luovuttanut. Tietojoukot ovat mitä tahansa tietolähteitä, jotka olet ladannut tai joihin olet yhteydessä, mukaan lukien Power BI Desktop -tiedostot ja Excel-työkirjat, joita käytät. Seuraavat sisältyvät myös datakapasiteettiin.
 
 * Excel-alueet, jotka on kiinnitetty raporttinäkymään.
 * Reporting Servicesin paikalliset visualisoinnit, jotka on kiinnitetty Power BI -raporttinäkymään.

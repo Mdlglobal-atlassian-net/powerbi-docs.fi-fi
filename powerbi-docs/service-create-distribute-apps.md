@@ -6,15 +6,15 @@ manager: kfile
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 02/22/2018
+ms.date: 06/20/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 6efd54d868a5a1f2d8d657d352c7133d4036b0b6
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 25aa03c12b36bf19c05fe01dc6c24a0e4a3a2416
+ms.sourcegitcommit: 5eb8632f653b9ea4f33a780fd360e75bbdf53b13
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34254828"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36965293"
 ---
 # <a name="create-and-publish-apps-with-dashboards-and-reports-in-power-bi"></a>Koontinäyttöjä ja raportteja sisältävien sovellusten luominen ja julkaiseminen Power BI:ssä
 
@@ -22,17 +22,15 @@ Power BI:ssä voit luoda *sovelluksia* kaikkien koontinäyttöjen ja raporttien 
 
 ![Power BI -sovellukset](media/service-create-distribute-apps/power-bi-apps-left-nav.png)
 
-Yrityskäyttäjät tarvitsevat usein monia Power BI -koontinäyttöjä ja raportteja yrityksensä pyörittämisessä. Sovellukset liittävät kaikki palaset yhteen, joten käyttäjien ei tarvitse muistaa kaikkien koontinäyttöjen nimiä ja sijainteja.  
-
-Power BI -sovelluksilla voit nyt esikatselutilassa luoda kokoelmia koontinäytöistä ja raporteista ja julkaista nämä sovellukset koko organisaatiolle tai tietyille ihmisille tai ryhmille. Jos olet raporttien luoja tai järjestelmänvalvoja, sovellukset tekevät koontinäyttöjen kokoelmien käyttöoikeuksien hallinnasta helpompaa.
+Yrityskäyttäjät tarvitsevat usein monia Power BI -koontinäyttöjä ja raportteja yrityksensä pyörittämisessä. Sovellukset liittävät kaikki palaset yhteen, joten käyttäjien ei tarvitse muistaa kaikkien koontinäyttöjen nimiä ja sijainteja. Power BI -sovelluksilla voit luoda kokoelmia koontinäytöistä ja raporteista ja julkaista nämä sovellukset koko organisaatiolle tai tietyille ihmisille tai ryhmille. Jos olet raporttien luoja tai järjestelmänvalvoja, sovellukset tekevät koontinäyttöjen kokoelmien käyttöoikeuksien hallinnasta helpompaa.
 
 Yrityskäyttäjät saavat sovelluksesi käyttöönsä eri tavoin. Jos Power BI -järjestelmänvalvojasi antaa sinulle luvan, voit asentaa ne automaattisesti työtovereittesi Power BI -tileille. Muussa tapauksessa he voivat asentaa sovelluksesi Microsoft AppSourcesta tai voit lähettää heille suoran linkin. He voivat löytää ja palata lukemaan sisältöäsi helposti, koska kaikki on samassa paikassa. He saavat päivitykset automaattisesti, ja sinä voit määrittää, kuinka usein tiedot päivitetään. Lisätietoja [sovellusominaisuudesta yrityskäyttäjille](service-install-use-apps.md).
 
 ### <a name="licenses-for-apps"></a>Sovellusten käyttöoikeudet
-Sovellusten luojana tarvitset Power BI Pro -käyttöoikeudet. Sovelluksesi käyttäjillä on kaksi vaihtoehtoa.
+Sovellusten luojana tarvitset Power BI Pro -käyttöoikeudet. Sovelluksesi käyttäjillä on kaksi vaihtoehtoa tarkastella sovellusta.
 
-* Vaihtoehto 1: Kaikilla käyttäjillä pitää olla **Power BI Pro** -käyttöoikeudet sovelluksesi näkemiseksi. 
-* Vaihtoehto 2: Organisaatiosi ilmaiskäyttäjät voivat tarkastella sovelluksesi sisältöä, mikäli sovelluksesi sijaitsee Power BI Premium -kapasiteetissa. Lisätietoja on artikkelissa [Mikä on Power BI Premium?](service-premium.md)
+* Vaihtoehto 1: Sovelluksen käyttäjälle on määritetty **Power BI Pro** -käyttöoikeus. 
+* Vaihtoehto 2: Sovelluksen käyttäjälle ei ole määritetty **Power BI Pro** -käyttöoikeutta, mutta sovellus sijaitsee Power BI Premium -kapasiteetissa. Lisätietoja on artikkelissa [Mikä on Power BI Premium?](service-premium.md)
 
 ### <a name="apps-and-organizational-content-packs"></a>Sovellukset ja organisaation sisältöpaketit
 Sovellukset ovat organisaation sisältöpakettien seuraava kehitysaste. Jos sinulla on jo organisaation sisältöpaketteja, ne toimivat edelleen rinnakkain sovellusten kanssa.

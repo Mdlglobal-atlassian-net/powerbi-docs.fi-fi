@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: conceptual
-ms.date: 05/25/2018
+ms.date: 06/22/2018
 ms.author: maghan
-ms.openlocfilehash: 2e899593cbe3453381dd2d3457cec97467aec4d6
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 82a4c9c58567f5ace943363b7bed59fa744e85a5
+ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34561743"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36944096"
 ---
 # <a name="embedding-with-power-bi"></a>Upottaminen Power BI:llä
 Power BI tarjoaa ohjelmointirajapintoja, jotka mahdollistavat koontinäyttöjen ja raporttien upottamisen sovelluksiin. Power BI:n ohjelmointirajapinnat tarjoavat yhtenäisen ominaisuusjoukon ja mahdollistavat uusimpien Power BI -toimintojen, kuten koontinäyttöjen, yhdyskäytävien ja sovellustyötilojen, käytön sisällön upottamisessa.
@@ -29,7 +29,7 @@ Näyte siitä, kuinka upottaminen toimii, annetaan artikkelissa [JavaScript-upot
 ## <a name="embedding-for-your-organization"></a>Upottaminen organisaation käyttöön
 Upottaminen organisaation käyttöön mahdollistaa Power BI -palvelun laajentamisen. Tämä edellyttää, että sovelluksesi käyttäjät kirjautuvat Power BI -palveluun, kun he haluavat tarkastella sisältöään. Kun käyttäjä organisaatiossasi kirjautuu sisään, hän voi käyttää vain koontinäyttöjä ja raportteja, jotka hän omistaa tai jotka on jaettu hänen kanssaan Power BI -palvelussa. 
 
-*Sisäinen verkkosovellus, SharePoint Onlinen WWW-osa ja Microsoft Teams -integrointi ovat esimerkkejä upottamisesta organisaation käyttöön.*
+*Sisäinen verkkosovellus, SharePoint Onlinen WWW-osa ja [Microsoft Teams -integrointi ovat esimerkkejä upottamisesta organisaation käyttöön (sinulla on oltava järjestelmänvalvojan oikeudet)](https://powerbi.microsoft.com/en-us/blog/power-bi-teams-up-with-microsoft-teams/).*
 
 Organisaation käyttöön upottamisen osalta katso seuraavia ohjeaiheita:
 

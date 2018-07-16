@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 01/24/2018
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: aa4bc70fa67af4e3b82b8ed9a4eb16851d98eaeb
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: a4c931b671840ca78f340005c30aeb92454ca2a6
+ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34297143"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37599177"
 ---
 # <a name="manage-your-data-source---analysis-services"></a>Tietolähteen hallinta - Analysis Services
 Kun olet asentanut paikallisen tietoyhdyskäytävän, sinun on lisättävä tietolähteitä, joita voi käyttää kyseisen yhdyskäytävän kanssa. Tässä artikkelissa tarkastellaan yhdyskäytävien ja tietolähteiden käsittelyä. Voit käyttää Analysis Services -tietolähdettä joko ajoitettuihin päivityksiin tai reaaliaikaisiin yhteyksiin.
@@ -52,7 +52,7 @@ Yhdyskäytävän poistaminen poistaa myös kaikki kyseisen yhdyskäytävän alai
 
 1. Valitse hammaspyöräkuvake ![](media/service-gateway-enterprise-manage-ssas/pbi_gearicon.png) oikeasta yläkulmasta > **Yhdyskäytävien hallinta**.
 2. Yhdyskäytävä > **Poista**
-   
+
    ![](media/service-gateway-enterprise-manage-ssas/datasourcesettings7.png)
 
 ## <a name="add-a-data-source"></a>Tietolähteen lisääminen
@@ -119,15 +119,13 @@ Voit siirtyä UPN-liittämisnäyttöön seuraavasti.
 2. Laajenna yhdyskäytävä, joka sisältää Analysis Services -tietolähteen. Jos et ole luonut Analysis Services -tietolähdettä, voit tehdä sen tässä vaiheessa.
 3. Valitse tietolähde ja valitse sitten **Käyttäjät**-välilehti.
 4. Valitse **Käyttäjänimien liittäminen**.
-   
+
     ![](media/service-gateway-enterprise-manage-ssas/gateway-enterprise-map-user-names_02.png)
 
 Näyttöön tulee vaihtoehtoja sääntöjen lisäämiseksi ja testaamiseksi tietylle käyttäjälle.
 
 > [!NOTE]
-> Saatat vahingossa muuttaa käyttäjää, jolle muutoksia ei ollut tarkoitus tehdä. Jos esimerkiksi **Korvaa (alkuperäinen arvo)** on *@contoso.com* ja **Korvaava (uusi nimi)** on *@contoso.local*, kaikki käyttäjät, joiden kirjautumisnimi sisältää *@contoso.com*, korvataan arvolla *@contoso.local*. Jos **Korvaa (alkuperäinen nimi)** on *dave@contoso.com* ja **Korvaava (uusi nimi)** on *dave@contoso.local*, käyttäjä, jonka kirjautumistunnus on v-dave@contoso.com, lähetetään nimellä v-dave*@contoso.local*.
-> 
-> 
+> Saatat vahingossa muuttaa käyttäjää, jolle muutoksia ei ollut tarkoitus tehdä. Jos esimerkiksi **Korvaa (alkuperäinen arvo)** on <em>@contoso.com</em> ja **Korvaava (uusi nimi)** on <em>@contoso.local</em>, kaikki käyttäjät, joiden kirjautumisnimi sisältää <em>@contoso.com</em>, korvataan arvolla <em>@contoso.local</em>. Jos **Korvaa (alkuperäinen nimi)** on <em>dave@contoso.com</em> ja **Korvaava (uusi nimi)** on <em>dave@contoso.local</em>, käyttäjä, jonka kirjautumistunnus on v-dave@contoso.com, lähetetään nimellä v-dave<em>@contoso.local</em>.
 
 ### <a name="ad-lookup-mapping"></a>AD-valinnan liittäminen
 Voit suorittaa paikallisen AD-ominaisuuksien valinnan liittääksesi täydelliset AAD-käyttäjätunnukset täydelliset Active Directory -käyttäjiin tämän osan ohjeiden avulla. Katsotaan aluksi, miten tämä toimii.
@@ -147,17 +145,17 @@ Toimi mukautettuja käyttäjän yhdistämismäärityksiä sisältävän paikalli
 2. Etsi AD-henkilön määrite (kuten *sähköposti*) saapuvan UPN-merkkijonon perusteella (”firstName.lastName@contoso.com”) **Power BI -palvelusta**.
 3. Jos AD-haku epäonnistuu, se yrittää käyttää välitettyä täydellistä käyttäjätunnusta SSAS:n EffectiveUser-arvona.
 4. Jos AD-haku onnistuu, se hakee kyseisen AD-henkilön *UserPrincipalName*-arvon. 
-5. Se välittää *UserPrincipalName*-sähköpostiosoitteen *EffectiveUser-arvoksi*  SSAS:lle, esim. *Alias@corp.on-prem.contoso*
+5. Se välittää *UserPrincipalName*-sähköpostiosoitteen *EffectiveUser-arvoksi*  SSAS:lle, esim. <em>Alias@corp.on-prem.contoso</em>
 
 Yhdyskäytävän määrittäminen AD-haun suorittamiseen:
 
 1. Uusimman yhdyskäytävän lataaminen ja asentaminen
 2. Yhdyskäytävässä sinun on määritettävä **paikallinen tietoyhdyskäytäväpalvelu** suoritettavaksi toimialuetilin kanssa (paikallisen palvelutilin sijaan – muussa tapauksessa AD-haku ei toimi oikein suorituspalvelussa). Yhdyskäytäväpalvelu on käynnistettävä uudelleen, jotta muutos tulee voimaan.  Siirry laitteellasi yhdyskäytäväsovellukseen (hae ”paikallinen tietoyhdyskäytävä”). Voit tehdä tämän siirtymällä kohtaan **Palvelun asetukset > Palvelutilin vaihtaminen**. Varmista, että sinulla tämän yhdyskäytävän palautusavain, sillä sinun on palautettava se samalla tietokoneella, ellet halua luoda uutta yhdyskäytävää. 
 3. Siirry järjestelmänvalvojana yhdyskäytävän asennuskansioon, *C:\Program Files\On-premises data gateway* varmistaaksesi, että sinulla on oikeudet muokata seuraavaa tiedostoa ja tallentaa muutokset:
-   
+
        Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config 
 4. Muokkaa seuraavaa kahta määritysarvoa omiin AD-käyttäjiisi sovellettavien *omien* Active Directory -määritysten mukaan. Alla olevat määritysarvot ovat vain esimerkkejä – sinun on määritettävä ne Active Directory -määritystesi mukaisesti. 
-   
+
    ![](media/service-gateway-enterprise-manage-ssas/gateway-enterprise-map-user-names_03.png)
 5. Käynnistä **paikallinen tietoyhdyskäytävä**palvelu uudelleen, jotta määritysten muutokset tulevat voimaan.
 

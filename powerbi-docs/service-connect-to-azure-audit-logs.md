@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 02/06/2018
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 22020595b4f972f112f10e16fe7ae7d7fd4abed7
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 903f2a345ba4d87cb217ececa459a3cca14d72fa
+ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34241723"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37134635"
 ---
 # <a name="connect-to-azure-audit-logs-with-power-bi"></a>Muodosta yhteys Azure-valvontalokeihin Power BI:n avulla
 Azure-valvontalokien sisältöpaketissa voit analysoida ja visualisoida valvontalokeihin tallennettuja tietoja. Power BI noutaa tiedot ja laatii sitten valmiin koontinäytön ja siihen liittyvät raportit kyseisten tietojen perusteella.
@@ -69,6 +69,6 @@ Tilauksen tunnus on pitkä numero- ja merkkisarja, joka on samanlainen kuin esim
 Jos näet tunnistetietojen virheen tai virheen yritettäessä päivittää virheellisten tunnistetietojen vuoksi, yritä poistaa kaikki esiintymät Azure-valvontalokien sisältöpaketista ja yritä yhteyden muodostamista uudelleen.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
-[Power BI:n käytön aloittaminen](service-get-started.md)  
+[Mikä on Power BI?](power-bi-overview.md)  
 [Power BI:n peruskäsitteet](service-basic-concepts.md)  
 

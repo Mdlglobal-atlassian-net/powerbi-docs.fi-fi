@@ -10,12 +10,12 @@ ms.topic: tutorial
 ms.date: 05/03/2018
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 2dc47d1fdf539c20cc0aabadd65b0401dc172ae8
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 087813feb7db96a320c48ed6b2433a7183446c71
+ms.sourcegitcommit: 627918a704da793a45fed00cc57feced4a760395
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34298960"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37926509"
 ---
 # <a name="tutorial-connect-to-on-premises-data-in-sql-server"></a>Opetusohjelma: Yhteyden muodostaminen paikallisiin tietoihin SQL Serverissä
 
@@ -128,7 +128,7 @@ Nyt kun käytössäsi on mallitietoja, muodosta yhteys SQL Serveriin Power BI De
 
 ## <a name="add-sql-server-as-a-gateway-data-source"></a>SQL Serverin lisääminen yhdyskäytävän tietolähteeksi
 
-Power BI Desktopissa muodostat yhteyden suoraan SQL Serveriin, mutta Power BI -palvelu edellyttää siltana toimivaa yhdyskäytävää. Nyt voit lisätä SQL Server -esiintymän edellisessä artikkelissa luomasi yhdyskäytävän tietolähteeksi (lueteltu [Edellytykset](#prereqisites)-kohdassa). 
+Power BI Desktopissa muodostat yhteyden suoraan SQL Serveriin, mutta Power BI -palvelu edellyttää siltana toimivaa yhdyskäytävää. Nyt voit lisätä SQL Server -esiintymän edellisessä artikkelissa luomasi yhdyskäytävän tietolähteeksi (lueteltu [Edellytykset](#prerequisites)-kohdassa). 
 
 1. Valitse ![Asetukset-rataskuvake](media/service-gateway-sql-tutorial/icon-gear.png) >  Power BI -palvelun oikeasta yläkulmasta ja valitse sitten **Hallitse yhdyskäytäviä**.
 
@@ -142,15 +142,17 @@ Power BI Desktopissa muodostat yhteyden suoraan SQL Serveriin, mutta Power BI -p
 
     ![Anna tietolähdeasetukset](media/service-gateway-sql-tutorial/data-source-settings.png)
 
-    | Asetus | Arvo |
-    | ---    | ---   |
-    | **Tietolähteen nimi**       | test-sql-source      |
-    | **Tietolähteen tyyppi**       | SQL Server      |
-    | **Palvelin**       |  SQL Server -esiintymän nimi (tämän on oltava sama kuin Power BI Desktopissa määritetty nimi)    |
-    | **Tietokanta**       | TestGatewayDocs      |
-    | **Todennusmenetelmä**       | Windows      |
-    | **Käyttäjänimi**        |  Tili, kuten michael@contoso.com, jota käytät muodostaessasi yhteyden SQL Serveriin     |
-    | **Salasana**       |  Salasana, jota käytät muodostaessasi yhteyden SQL Serveriin    |
+
+   |          Asetus           |                                               Arvo                                                |
+   |---------------------------|----------------------------------------------------------------------------------------------------|
+   |   **Tietolähteen nimi**    |                                          test-sql-source                                           |
+   |   **Tietolähteen tyyppi**    |                                             SQL Server                                             |
+   |        **Palvelin**         | SQL Server -esiintymän nimi (tämän on oltava sama kuin Power BI Desktopissa määritetty nimi) |
+   |       **Tietokanta**        |                                          TestGatewayDocs                                           |
+   | **Todennusmenetelmä** |                                              Windows                                               |
+   |       **Käyttäjänimi**        |             Tili, kuten michael@contoso.com, jota käytät muodostaessasi yhteyden SQL Serveriin             |
+   |       **Salasana**        |                   Salasana, jota käytät muodostaessasi yhteyden SQL Serveriin                    |
+
 
 4. Valitse **Lisää**. *Yhteyden muodostaminen onnistui* -teksti tulee näkyviin, kun yhteys muodostettiin.
 

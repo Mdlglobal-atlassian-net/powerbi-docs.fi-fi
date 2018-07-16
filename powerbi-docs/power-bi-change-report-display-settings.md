@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 01/24/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: c2b9a106c4007af868cf69902ce511da8e03e75f
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: e4ffc542a9564ba3893245ef637b3edd01c38640
+ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34244557"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37598751"
 ---
 # <a name="change-the-size-of-a-report-page"></a>Raportin sivun koon muuttaminen
 Opit [edellisessä artikkelissa ja videossa](power-bi-report-display-settings.md) kaksi tapaa hallita Power BI -raporttien sivun näyttöä: **Näkymä** ja **Sivun koko**. Sivun Näkymä ja Sivun koko ovat käytettävissä sekä Power BI -palvelussa että Power BI Desktopissa. Niiden ulkonäkö ja toiminnot ovat lähes samat, mutta tässä opetusohjelmassa käytämme Power BI -palvelua.
@@ -31,19 +31,19 @@ Opit [edellisessä artikkelissa ja videossa](power-bi-report-display-settings.md
    ![](media/power-bi-change-report-display-settings/pbi_fit_to_page.png)
 2. Varmista, että piirtoalustalla ei ole valittu mitään visualisointia. Valitse **Näkymä** ja tarkista näyttöasetukset.
 
-    * Näet lukunäkymässä seuraavan.
+   * Näet lukunäkymässä seuraavan.
 
      ![](media/power-bi-change-report-display-settings/power-bi-page-view-menu-new.png)
-    * Näet muokkausnäkymässä seuraavan.
+   * Näet muokkausnäkymässä seuraavan.
 
-    ![](media/power-bi-change-report-display-settings/power-bi-view-editing-view.png)
+     ![](media/power-bi-change-report-display-settings/power-bi-view-editing-view.png)
 
-1. Katsotaanpa, miltä sivu näyttää käyttämällä **Todellinen koko** -asetusta.
+3. Katsotaanpa, miltä sivu näyttää käyttämällä **Todellinen koko** -asetusta.
 
    ![](media/power-bi-change-report-display-settings/power-bi-actal-size2.png)
 
    Ei kovin hyvältä, ja koontinäytössä on nyt kaksinkertaiset vierityspalkit.
-2. Vaihda asetukseksi **Sovita leveyteen**.
+4. Vaihda asetukseksi **Sovita leveyteen**.
 
    ![](media/power-bi-change-report-display-settings/pbi_fit_to_width.png)
 

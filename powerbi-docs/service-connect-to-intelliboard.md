@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: c397ec0f302ec558e0277c92a871a94dd7f28e87
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: db6361974fdbe7956979ac106e5cad5717f99d33
+ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34241503"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37135072"
 ---
 # <a name="connect-to-intelliboard-with-power-bi"></a>Yhteyden muodostaminen IntelliBoardiin Power BI:llä
 IntelliBoard tarjoaa yksinkertaistetun pääsyn oppimisen hallintajärjestelmäsi Moodlen tietoihin raportointipalveluiden avulla. IntelliBoard-sisältöpaketti Power BI:lle tarjoaa lisäanalytiikkaa, mukaan luettuina kursseja, rekisteröityjä käyttäjiä, yleistä suorituskykyä ja LMS:n toimintaa koskevia arvoja.
@@ -66,7 +66,7 @@ Sisältöpaketti sisältää tietoja seuraavista taulukoista:
 IntelliBoard-tili, jolla on edellä mainittujen taulukoiden käyttöoikeudet, on edellytys tämän sisältöpaketin alustamiselle.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
-[Power BI:n käytön aloittaminen](service-get-started.md)
+[Mikä on Power BI?](power-bi-overview.md)
 
 [Power BI:n peruskäsitteet](service-basic-concepts.md)
 

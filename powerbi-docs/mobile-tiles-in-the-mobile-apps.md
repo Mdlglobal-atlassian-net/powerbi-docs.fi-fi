@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-mobile
 ms.topic: conceptual
-ms.date: 10/13/2017
+ms.date: 06/28/2018
 ms.author: maggies
-ms.openlocfilehash: 4680ab3709f1a2cbe56445e6719ea4de15396eb0
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 5601ab79832f2d52622f5c13ecd23f346408f08e
+ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34297649"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37598619"
 ---
 # <a name="explore-tiles-in-the-power-bi-mobile-apps"></a>Tutustu ruutuihin Power BI -mobiilisovelluksissa
 Koskee seuraavia:
@@ -40,7 +40,7 @@ Power BI -mobiilisovelluksissa avaat ruutuja kohdistustilassa ja olet vuorovaiku
    
     ![](media/mobile-tiles-in-the-mobile-apps/power-bi-iphone-line-tile-values.png)
    
-   *Esimerkiksi tässä viivakaaviossa valitut arvot tarkoittavat **tämän vuoden myyntiä** ja **viime vuoden myyntiä** **elokuussa**.*  
+   <em>Esimerkiksi tässä viivakaaviossa valitut arvot tarkoittavat **tämän vuoden myyntiä</em>* ja **viime vuoden myyntiä** **elokuussa**.*  
    
    Ympyräkaaviossa napauttaa jotakin ympyrän sektoria, niin saat sektorin arvon näkyviin ympyrän yläreunaan.  
    
@@ -107,7 +107,7 @@ Power BI -mobiilisovelluksissa avaat ruutuja kohdistustilassa ja olet vuorovaiku
    
    ![](media/mobile-tiles-in-the-mobile-apps/pbi_win10ph_bartile0316.png)
    
-   *Tässä palkkikaaviossa palkin **Muotoilu** arvot näytetään kaavion yläreunassa.*
+   <em>Tässä palkkikaaviossa **Muotoilu</em>*-palkin arvot näytetään kaavion yläreunassa.*
    
    Napauttaa **Koko näyttö** -kuvaketta ![](media/mobile-tiles-in-the-mobile-apps/power-bi-full-screen-icon.png) avataksesi ruudun koko näytön tilassa ilman siirtymis- ja valikkorivejä.
    
@@ -126,6 +126,6 @@ Power BI -mobiilisovelluksissa avaat ruutuja kohdistustilassa ja olet vuorovaiku
 4. Sulkea ruudun ja palata koontinäyttöön napauttamalla taaksepäin osoittavaa nuolta tai takaisin-painiketta.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
-* [Power BI:n käytön aloittaminen](service-get-started.md)
-* Onko sinulla kysymyksiä? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)
+* [Mikä on Power BI?](power-bi-overview.md)
+* Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)
 

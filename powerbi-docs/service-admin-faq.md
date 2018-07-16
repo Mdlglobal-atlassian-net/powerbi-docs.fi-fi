@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/28/2017
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 4c8601e15a415e680028b2259a4c2b8e56dbd3b4
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: dce044a3f143ba85732c8345639ea57f44f05d5f
+ms.sourcegitcommit: 627918a704da793a45fed00cc57feced4a760395
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34297235"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37926585"
 ---
 # <a name="administering-power-bi---frequently-asked-questions-faq"></a>Power BI:n hallinnointi - usein kysytyt kysymykset (UKK)
 
@@ -41,14 +41,13 @@ Tämä artikkeli vastaa Power BI -hallinnoinnista usein kysyttyihin kysymyksiin.
 * [Miten voin poistaa Power BI:n käyttäjiltä, jotka ovat jo rekisteröityneet?](#how-do-i-remove-power-bi-for-users-that-already-signed-up)
 * [Mistä tiedän, milloin uudet käyttäjät ovat liittyneet vuokraajaani?](#how-do-i-know-when-new-users-have-joined-my-tenant)
 * [Onko muita asioita, joihin minun kannattaa valmistautua?](#are-there-any-additional-things-i-should-be-prepared-for)
-* [Onko tämä ilmaista? Pitääkö minun maksaa näistä lisensseistä?](#is-this-free-will-i-be-charged-for-these-licenses)
 * [Missä Power BI -vuokraajani sijaitsee?](#where-is-my-power-bi-tenant-located)
 * [Mikä on Power BI:n palvelutasosopimus?](#what-is-the-power-bi-sla)
 
 **Suojaus Power BI:ssä**
 
 * [Onko Power BI kansallisten, alueellisten ja alakohtaisten vaatimusten mukainen?](#does-power-bi-meet-national-regional-and-industry-specific-compliance-requirements)
-* [Miten suojaus toimii Power BI:ssä?](#how-does-security-work-in-power-bi?)
+* [Miten suojaus toimii Power BI:ssä?](#how-does-security-work-in-power-bi)
 
 ## <a name="sign-up-for-power-bi"></a>Rekisteröidy Power BI:hin
 ### <a name="how-do-users-sign-up-for-power-bi"></a>Miten käyttäjät voivat rekisteröityä Power BI:hin?
@@ -232,9 +231,6 @@ Salasanan vaihtamispyyntöjä saattaa tulla enemmän. Lisätietoja tästä prose
 
 Voit poistaa käyttäjän vuokraajasta tavalliseen tapaan Office 365:n hallintakeskuksen kautta. Jos käyttäjällä on edelleen aktiivinen sähköpostiosoite organisaatiossasi, hän voi liittyä takaisin, ellet estä kaikkia käyttäjiä liittymästä.
 
-### <a name="is-this-free-will-i-be-charged-for-these-licenses"></a>Onko tämä ilmaista? Pitääkö minun maksaa näistä lisensseistä?
-**Power BI (maksuton)** -käyttöoikeudet on tarkoitettu Power BI:n maksutonta versiota varten. Jos olet kiinnostunut lisäominaisuuksista, tutustu [Power BI Pro -versioon](service-premium.md).
-
 ### <a name="where-is-my-power-bi-tenant-located"></a>Missä Power BI -vuokraajani sijaitsee?
 Jos haluat tietää, missä Power BI -vuokraajasi sijaitsee (kutsutaan myös tietoalueeksi), tutustu kohtaan [Missä Power BI -vuokraajani sijaitsee?](service-admin-where-is-my-tenant-located.md).
 
@@ -252,7 +248,6 @@ Power BI perustuu Office 365:een, joka puolestaan perustuu Azure-palveluihin, ku
 [Power BI -hallintaportaali](service-admin-portal.md)  
 [Power BI -järjestelmänvalvojaroolin kuvaus](service-admin-role.md)  
 [Omatoiminen kirjautuminen Power BI:hin](service-self-service-signup-for-power-bi.md)  
-[Power BI (ilmainen) organisaatiossasi](service-admin-service-free-in-your-organization.md)  
 [Power BI Pron ostaminen](service-admin-purchasing-power-bi-pro.md)  
 [Power BI Premium – mikä se on?](service-premium.md)  
 [Ohjeet Power BI Premiumin ostamiseen](service-admin-premium-purchase.md)  

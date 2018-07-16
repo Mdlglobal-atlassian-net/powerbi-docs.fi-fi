@@ -3,14 +3,18 @@
 1. Premium-kapasiteetin sisältämät kohteet
    
    * Sovellustyötilojen käyttäminen (jäsenenä tai järjestelmänvalvojana) edellyttää Power BI Pro -käyttöoikeutta.
-   * Sovelluksen lukijat voivat olla Power BI Pron käyttäjiä tai ilmaiskäyttäjiä.
-   * Jakaminen edellyttää Power BI Pro -käyttöoikeutta, mutta vastaanottajat voivat olla Power BI Pron käyttäjiä tai ilmaiskäyttäjiä.
-   * Koontinäyttöjen vastaanottajat voivat määrittää tietoilmoituksia riippumatta siitä, onko heillä Power BI Pro -käyttöoikeus vai ilmainen käyttöoikeus.
-   * REST API upottamiseen käytettävät REST-ohjelmointirajapinnat käyttävät palvelutiliä, jolla on Power BI Pro -käyttöoikeus, käyttäjätilin sijasta.
+
+   * Sovelluksen jakaminen edellyttää Pro-käyttöoikeutta, mutta sitä ei edellytetä sovellukseen käyttämiseen.
+
+   * Kaikki koontinäytön vastaanottajat voivat määrittää tietoilmoituksia heille myönnetystä käyttöoikeudesta riippumatta.
+
+   * Upottamiseen tarkoitetut REST-ohjelmointirajapinnat käyttävät käyttäjätilin sijasta palvelutiliä, jolla on Pro-käyttöoikeus.
+
 2. Oma työtila jaetussa kapasiteetissa
    
-   * Jakaminen edellyttää Pro-käyttöoikeutta. Vastaanottajat tarvitsevat myös Pro-käyttöoikeudet.
+   * Sovelluksen jakaminen ja käyttäminen edellyttävät kumpikin Pro-käyttöoikeutta.
+
 3. Sovellustyötilat jaetussa kapasiteetissa
    
-   * Minkä tahansa sovelluksen käyttö edellyttää Pro-käyttöoikeuksia.
+   * Minkä tahansa sovelluksen käyttäminen edellyttää Pro-käyttöoikeutta.
 

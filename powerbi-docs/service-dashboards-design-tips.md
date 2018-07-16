@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 03/22/2018
+ms.date: 06/22/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 9c67aa0982733847cdca7d6079fa8887e6c1d1d2
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 7da86135a391f8a6206a913a1e13df423ad96fbd
+ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34247043"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36944970"
 ---
 # <a name="tips-for-designing-a-great-power-bi-dashboard"></a>Vinkkejä laadukkaiden Power BI -koontinäyttöjen suunnitteluun
 Nyt kun olet luonut koontinäytön ja lisännyt siihen ruutuja, mieti, miten voisit parantaa sen toiminnallisuutta. Yleensä tämä tarkoittaa tärkeimpien tietojen korostamista ja koontinäytön selkeyttämistä.
@@ -59,7 +59,7 @@ Useimmat henkilöt lukevat ylhäältä alas, joten sijoita tärkein tieto ylös 
 ## <a name="use-the-right-visualization-for-the-data-and-format-it-for-easy-reading"></a>Käytä tiedolle juuri oikeaa visualisointia ja muotoile se vaivattomasti luettavaksi
 Vältä erilaisten visualisointien lisäämistä vain vaihtelun vuoksi.  Visualisointien pitäisi maalata tietty kuva, joka on helppo sisäistää ja ymmärtää.  Joillekin tiedoille ja visualisoinneille riittää hyvin yksinkertainen grafiikka. Jotkin muut tiedot edellyttävät monimutkaisempaa visualisointia. Muista silloin käyttää otsikoita, nimiä ja muita lukijaa auttavia mukautuksia.  
 
-* [Valitse asianmukaiset tietojen visualisoinnit](http://blogs.msdn.com/b/microsoft_business_intelligence1/archive/2012/10/08/best-practices-in-data-visualization.aspx). Suhtaudu varoen todellisuutta vääristäviin kaavioihin, kuten 3D-kaavioihin. Pidä mielessä, että ympyrämuotojen tulkitseminen on ihmisaivoille vaativaa. Ympyräkaaviot, rengaskaaviot, mittarit ja muut pyöreät kaaviotyypit ovat hienoja, mutta ne eivät ole paras vaihtoehto tietojen visualisointiin.
+* [Valitse asianmukaiset tietojen visualisoinnit](https://www.youtube.com/watch?v=-tdkUYrzrio). Suhtaudu varoen todellisuutta vääristäviin kaavioihin, kuten 3D-kaavioihin. Pidä mielessä, että ympyrämuotojen tulkitseminen on ihmisaivoille vaativaa. Ympyräkaaviot, rengaskaaviot, mittarit ja muut pyöreät kaaviotyypit ovat hienoja, mutta ne eivät ole paras vaihtoehto tietojen visualisointiin.
 * Käytä akselien asteikkoja, ulottuvuuksien järjestystä ja dimensioarvoja kuvaavia värejä johdonmukaisesti kaaviosta toiseen.
 * Esitä kvantitatiiviset tiedot kompaktisti ja siististi. Älä käytä luvuissa yli kolmea tai neljää numeroa. Vältä runsasta desimaalien käyttöä ja skaalaa luvut mahdollisimman suuriin mittayksiköihin, kuten tuhansista miljooniin: ”3,4 miljoonaa” mieluummin kuin ”3 400 000”.
 * Älä yhdistä eri tarkkuuksia ja aikoja. Varmista, että käytetyt ajanjaksot on helppo käsittää.  Älä esimerkiksi laita samaan visualisointiin viime kuukautta kuvaavaa kaaviota ja suodatettuja kaavioita vuoden joltain muulta kuukaudelta rinnakkain.

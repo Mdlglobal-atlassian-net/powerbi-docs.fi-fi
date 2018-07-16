@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 0cc0125f35dc90a03eeaeed0d5e69c0a5c3115ae
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 56be5b6a0618dea28ac286f5cbaa0c019d9037d2
+ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34241155"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37135992"
 ---
 # <a name="connect-to-circuit-id-with-power-bi"></a>Yhteyden muodostaminen piiritunnukseen Power BI:n avulla
 Viestintätietojen analysointi piiritunnukselta on helppoa Power BI:n avulla. Power BI noutaa tiedot ja laatii sitten oletuskoontinäytön ja siihen liittyvät raportit kyseisten tietojen perusteella. Kun olet luonut yhteyden, voit tarkastella tietojasi ja mukauttaa koontinäyttöä tarpeidesi mukaan. Tiedot päivitetään automaattisesti joka päivä.
@@ -47,7 +47,7 @@ Muodosta yhteys [piiritunnuksen sisältöpakettiin](https://app.powerbi.com/getd
 * Tietojoukko on ajastettu päivittymään päivittäin, mutta voit muuttaa päivitysaikataulua tai kokeilla tietojoukon päivittämistä **Päivitä nyt** -toiminnolla haluamanasi ajankohtana
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
-[Power BI:n käytön aloittaminen](service-get-started.md)
+[Mikä on Power BI?](power-bi-overview.md)
 
 [Tietojen noutaminen Power BI:hin](service-get-data.md)
 

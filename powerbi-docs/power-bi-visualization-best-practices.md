@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 04/11/2018
+ms.date: 06/22/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 8716e6b5b75c7cd3db1b8daecfaae240f0647a50
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: e9b37ba2b44a23fa0f198bce7a649c67335ac0ed
+ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34297258"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36945131"
 ---
 # <a name="best-design-practices-for-reports-and-visuals"></a>Raporttien ja visualisointien parhaat suunnittelukäytännöt
 <!-- Shared newnav Include -->
@@ -787,8 +787,6 @@ Palkki-, pylväs- tai viivakaaviot sopivat yleensä useimpiin tilanteisiin. Ympy
 Ympyräkaavioista voi olla hänen mukaansa hyötyä yhdessä tilanteessa eli verrattaessa osien ja kokonaisuuden suhteita toisiinsa. Tosin tässäkin tapauksessa olisi parempi käyttää 100-prosentin pinottua palkkikaaviota.
 
 Toinen hauska ympyräkaaviota koskeva artikkeli (ja animaatio) löytyy [Darkhorse Analytics -sivustolta](http://www.darkhorseanalytics.com/blog/salvaging-the-pie).
-
-Voit myös lukea vastakkaisen näkökulman artikkelista [Why Tufte is flat-out wrong about pie charts](http://speakingppt.com/2013/03/18/why-tufte-is-flat-out-wrong-about-pie-charts/)
 
 #### <a name="radial-gauges--kpis"></a>Sädemittarit ja suorituskykyilmaisimet
 ![](media/power-bi-visualization-best-practices/power-bi-gauge.png)

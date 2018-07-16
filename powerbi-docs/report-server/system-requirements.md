@@ -7,19 +7,20 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-report-server
 ms.topic: conceptual
-ms.date: 05/18/2018
+ms.date: 06/13/2018
 ms.author: maghan
-ms.openlocfilehash: 3b0e9c148b86d8bf762a31cca5c3421df454502d
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: c2784bf8e8dca857ae2a1b55d1ad8560e552cafb
+ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34481724"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37780554"
 ---
 # <a name="hardware-and-software-requirements-for-installing-power-bi-report-server"></a>Laitteisto- ja ohjelmistovaatimukset Power BI-raporttipalvelimen asentamista varten
 Täältä löydät laitteistoa ja ohjelmistoa koskevat vähimmäisvaatimukset Power BI-raporttipalvelimen asentamiseen ja suorittamiseen.
 
 ## <a name="processor-memory-and-operating-system-requirements"></a>Suoritin, muisti ja käyttöjärjestelmävaatimukset
+
 | Komponentti | Vaatimus |
 | --- | --- |
 | .NET Framework |4.6<br><br>Voit asentaa .NET Frameworkin manuaalisesti kohdasta [Microsoft .NET Framework 4.6 (Web Installer) for Windows](http://support.microsoft.com/kb/3045560).<br/><br/> Lisätietoja, suosituksia ja ohjeita .NET Framework 4.6:lle saa kohdasta [.NET Framework-käyttöönotto-opas kehittäjille](http://msdn.microsoft.com/library/ee942965\(v=vs.110\).aspx).<br/><br/>Windows 8.1 ja Windows Server 2012 R2 edellyttävät [KB2919355:n](http://support.microsoft.com/kb/2919355) asentamista ennen kuin asennat .NET Framework 4.6:n. |
@@ -41,8 +42,6 @@ SQL Serveriä käytetään isännöimään raporttipalvelintietokantoja. SQL Ser
 * SQL Server 2016
 * SQL Server 2014
 * SQL Server 2012
-* SQL Server 2008 R2
-* SQL Server 2008
 
 Raporttipalvelimen tietokannan luominen etätietokoneessa edellyttää, että määrität yhteyden toimialueen käyttäjätiliin tai palvelutiliin, jolla on verkkoyhteys. Jos päätät käyttää SQL Server-etäesiintymää, kannattaa harkita huolellisesti, mitä tunnistetietoja raporttipalvelimen kannattaa käyttää SQL Server-esiintymään. Katso lisätietoja kohdasta [Raporttipalvelimen tietokantayhteyden määrittäminen](https://docs.microsoft.com/sql/reporting-services/install-windows/configure-a-report-server-database-connection-ssrs-configuration-manager).
 

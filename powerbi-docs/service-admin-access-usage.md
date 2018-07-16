@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/10/2017
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 50ace772c24b2a9e706e82ca16ddcb36d8b6b60c
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: c1ac019b0d6f80c3129b105336f71a71e0925648
+ms.sourcegitcommit: 627918a704da793a45fed00cc57feced4a760395
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34722197"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37926532"
 ---
 # <a name="find-power-bi-users-that-have-signed-in"></a>Kirjautuneena olevien Power BI -käyttäjien etsiminen
 Jos olet vuokraajan järjestelmänvalvoja ja haluat nähdä, kuka on kirjautuneena sisään Power BI:hin, voit katsoa sen Azure Active Directory ‑käyttöoikeudella käyttöraporteista.
@@ -25,9 +25,7 @@ Jos olet vuokraajan järjestelmänvalvoja ja haluat nähdä, kuka on kirjautunee
 Pääset tarkastelemaan toimintaraporttia sekä [uuden](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-activity-sign-ins) että [perinteisen](https://docs.microsoft.com/azure/active-directory/active-directory-view-access-usage-reports) Azure Active Directory (Azure AD) ‑portaalin kautta. Edellä olevalla videolla käsitellään esimerkkinä perinteistä portaalia, mutta tässä artikkelissa puhutaan uudesta portaalista.
 
 > [!NOTE]
-> Toimintaraportti sisältää sekä Power BI:n maksuttomat käyttäjät että Power BI Pro ‑käyttäjät, mutta siinä ei mainita kumpi käyttöoikeus kullakin käyttäjällä on.
-> 
-> 
+> Tämä toimintaraportti ei määritä kullakin käyttäjällä olevaa käyttöoikeustyyppiä.
 
 ## <a name="requirements"></a>Vaatimukset
 Kirjautumisen toimintaraportin tarkastelu edellyttää, että seuraavat ehdot täyttyvät.
@@ -70,7 +68,7 @@ Kirjautumiseen liittyviä tietoja voidaan pitää käytettävissä enintään 30
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 [Kirjautumisen toimintaraportit Azure Active Directory ‑portaalissa (uusi portaali)](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-activity-sign-ins)  
-[Käyttöraporttien tarkastelu (perinteinen portaali)](https://docs.microsoft.com/azure/active-directory/active-directory-view-access-usage-reports#view-or-download-a-report)  
+[Käyttöraporttien tarkastelu (perinteinen portaali)](https://docs.microsoft.com/azure/active-directory/active-directory-view-access-usage-reports)  
 [PowerShell-komentosarjamalli kirjautumiseen](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-sign-in-activity-samples#powershell-script)  
 [Azure Active Directoryn raporttien säilytyskäytännöt](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-retention)  
 [Valvonnan käyttö organisaatiossa](service-admin-auditing.md)  

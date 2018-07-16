@@ -1,6 +1,6 @@
 ---
-title: Power BI -palvelun käytön aloittaminen
-description: Power BI -palvelun käytön aloittaminen
+title: Power BI -palvelun (Power BI Online) käytön aloittaminen
+description: Power BI Onlinen (app.powerbi.com) käytön aloittaminen
 author: adamw
 manager: kfile
 ms.reviewer: ''
@@ -8,22 +8,37 @@ featuredvideoid: B2vd4MQrz4M
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 03/01/2018
+ms.date: 06/22/2018
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: d66653ebe9232cb6da2f3c53b01e791ca9966db9
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 1c4f710cd048fc2c2828f0386d23328c164bb3fb
+ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34310126"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37598655"
 ---
-# <a name="get-started-with-power-bi-service-apppowerbicom"></a>Power BI -palvelun (app.powerbi.com) käytön aloittaminen
-Tämä opasohjelma auttaa ***Power BI -palvelun*** aloittamisessa. Suosittelemme lukemaan [Mikä Power BI on](guided-learning/gettingstarted.yml?tutorial-step=1) -ohjeartikkelin, jotta saat käsityksen, miten Power BI -palvelu sopii yhteen muiden Power BI -tuotteiden kanssa.
+# <a name="tutorial-get-started-with-power-bi-service-apppowerbicom"></a>Opetusohjelma: Power BI -palvelun (app.powerbi.com) käytön aloittaminen
+Tämän opetusohjelman avulla pääset alkuun ***Power BI -palvelun*** kanssa. Suosittelemme lukemaan [Mikä on Power BI?](power-bi-overview.md) -ohjeartikkelin, jotta saat käsityksen, miten Power BI -palvelu sopii yhteen muiden Power BI -tuotteiden kanssa.
 
-![Desktopin, palvelun ja mobiilisovelluksen eroja esittävä kuva](media/service-get-started/power-bi-components.png)
+![Desktopin, palvelun ja mobiilisovelluksen suhdetta esittävä kuva](media/service-get-started/power-bi-components.png)
 
-Power BI -palvelusta on maksuton versio ja Pro-versio. *Jos sinulla on jo tili*, avaa Power BI -palvelu avaamalla selain ja kirjoittamalla app.powerbi.com käyttämästäsi versiosta riippumatta. Jos olet uusi käyttäjä, suosittelemme aloittamaan osoitteesta www.powerbi.com. Se sisältää lisätietoja Power BI:stä ennen palveluun kirjautumista.  Kun olet valmis kokeilemaan palvelua, napsauta oikeassa yläkulmassa näkyvää **Ilmainen rekisteröityminen** -linkkiä. Jos järjestelmänvalvoja on jo ottanut Power BI:n käyttöön puolestasi, älä käytä Ilmainen rekisteröityminen -painiketta, vaan siirry suoraan osoitteeseen app.powerbi.com. 
+Tässä opetusohjelmassa käyt läpi seuraavat vaiheet:
+
+> [!div class="checklist"]
+> * Etsi muuta aloittamista käsittelevää sisältöä Power BI -palvelulle
+> * Kirjaudu sisään Power BI Online -tilillesi tai rekisteröi tili, jos sinulla ei vielä sitä ole
+> * Avaa Power BI -palvelu
+> * Hae joitakin tietoja ja avaa ne raporttinäkymässä
+> * Käytä näitä tietoja visualisointien luomiseksi ja tallenna ne raporttina
+> * Luo koontinäyttö kiinnittämällä ruudut raportista
+> * Lisää toinen visualisointi koontinäyttöön luonnollisenkielisen Q&A-työkalun avulla
+> * Tyhjennä resurssit poistamalla tietojoukko, raportti ja koontinäyttö
+
+## <a name="sign-up-for-power-bi-service"></a>Rekisteröidy Power BI -palveluun
+Jos et ole rekisteröitynyt Power BI:hin, [rekisteröidy ilmaiseen Power BI Pro -kokeiluversioon](https://app.powerbi.com/signupredirect?pbi_source=web), ennen kuin aloitat.
+
+Jos sinulla on jo tili, avaa Power BI -palvelu avaamalla selain ja kirjoittamalla app.powerbi.com. 
 
 ![Kirjautuminen tai Ilmainen rekisteröityminen](media/service-get-started/power-bi-sign-up.png)
 
@@ -36,10 +51,9 @@ Tutustu [YouTube-soittolistaamme](https://www.youtube.com/playlist?list=PL1N57mw
 > 
 > <iframe width="560" height="315" src="https://www.youtube.com/embed/B2vd4MQrz4M" frameborder="0" allowfullscreen></iframe>
 > 
-> 
-> 
 
-Microsoft Power BI auttaa sinua pysymään ajan tasalla sinua kiinnostavista asioista.  Power BI -palvelun ***koontinäytöt*** auttavat sinua pitämään yrityksesi langat käsissäsi.  Koontinäytöissä näytetään ***ruutuja***, joita napsauttamalla voit avata ***raportteja*** tarkempaa tutustumista varten.  Yhdistä useisiin ***tietojoukkoihin*** ja kerää kaikki tarvittavat tiedot samaan paikkaan. Tarvitsetko apua Power BI:n rakenneosien kanssa?  Katso [Power BI - peruskäsitteet](service-basic-concepts.md).
+## <a name="what-is-power-bi-service"></a>Mikä on Power BI -palvelu?
+Microsoft Power BI -palveluun viitataan joskus nimellä Power BI Online tai app.powerbi.com. Power BI auttaa sinua pysymään ajan tasalla sinua kiinnostavista asioista.  Power BI -palvelun ***koontinäytöt*** auttavat sinua pitämään yrityksesi langat käsissäsi.  Koontinäytöissä näytetään ***ruutuja***, joita napsauttamalla voit avata ***raportteja*** tarkempaa tutustumista varten.  Yhdistä useisiin ***tietojoukkoihin*** ja kerää kaikki tarvittavat tiedot samaan paikkaan. Tarvitsetko apua Power BI:n rakenneosien kanssa?  Katso [Power BI - peruskäsitteet](service-basic-concepts.md).
 
 Jos sinulla on tärkeitä tietoja Excel- tai CSV-tiedostoissa, voit luoda Power BI -koontinäytön, jotta voit jakaa merkityksellisiä tietoja muiden kanssa ja pysyä ajan tasalla missä ikinä oletkin.  Onko sinulla SaaS-sovellustilaus, kuten Salesforce?  Ota varaslähtö yhdistämällä Salesforceen ja luo koontinäyttö automaattisesti sen tiedoista tai [Tutustu muihin SaaS-sovelluksiin](service-get-data.md), joihin voit muodostaa yhteyden. Jos kuulut johonkin organisaatioon, katso, onko sinua varten julkaistu [sovelluksia](service-create-distribute-apps.md).
 
@@ -48,7 +62,7 @@ Lue muista tavoista, joilla voit [hakea tietoja Power BI:hin](service-get-data.m
 ## <a name="step-1-get-data"></a>Vaihe 1: Tietojen hakeminen
 Tämä on esimerkki tietojen hakemisesta CSV-tiedostosta. Haluatko noudattaa tätä opasohjelmaa? [Lataa CSV-esimerkkitiedosto](http://go.microsoft.com/fwlink/?LinkID=521962).
 
-1. [Kirjaudu sisään Power BI:hin](http://www.powerbi.com/). Eikö sinulla ole tiliä? Ei huolta, voit rekisteröityä maksutta.
+1. [Kirjaudu sisään Power BI:hin](http://www.powerbi.com/). Eikö sinulla ole tiliä? Ei huolta, voit rekisteröityä ilmaiseen kokeiluversioon.
 2. Power BI avautuu selaimessa. Valitse vasemman siirtymisruudun alareunasta **Hae tiedot**.
    
    ![hae tiedot](media/service-get-started/getdata3.png)
@@ -94,23 +108,23 @@ Nyt kun olet muodostanut yhteyden tietoihin, voit aloittaa tutustumisen.  Kun ol
    
    ![kiinnitä-kuvake](media/service-get-started/pinnew.png)
 
-5. Koska kyseessä on uusi raportti, sinua pyydetään tallentamaan se ennen kuin voit kiinnittää visualisoinnin koontinäyttöön. Anna raportille nimi (esim. *Myynti ajan kuluessa*) ja valitse **Tallenna ja jatka**. 
+4. Koska kyseessä on uusi raportti, sinua pyydetään tallentamaan se ennen kuin voit kiinnittää visualisoinnin koontinäyttöön. Anna raportille nimi (esim. *Myynti ajan kuluessa*) ja valitse **Tallenna ja jatka**. 
    
    ![Raportin tallentaminen -valintaikkuna](media/service-get-started/pbi_getstartsaveb4pinnew.png)
    
-6. Kiinnitetään viivakaavio uuteen koontinäyttöön ja annetaan sen nimeksi ”Talousmalli opetusohjelmaa varten”. 
+5. Kiinnitetään viivakaavio uuteen koontinäyttöön ja annetaan sen nimeksi ”Talousmalli opetusohjelmaa varten”. 
    
    ![anna raportille nimi](media/service-get-started/power-bi-pin.png)
    
- 1. Valitse **Kiinnitä**.
+1. Valitse **Kiinnitä**.
    
     Onnistumissanoma (oikean yläkulman lähellä) ilmaisee, että visualisointi lisättiin ruutuna koontinäyttöön.
    
     ![Kiinnitetty koontinäyttöön -valintaikkuna](media/service-get-started/power-bi-pin-success.png)
 
-8. Voit tarkastella uuteen koontinäyttöösi ruutuna kiinnitettyä viivakaaviota valitsemalla **Siirry koontinäyttöön**. Voit parantaa koontinäyttöä entisestään lisäämällä visualisointiruutuja ja [nimeämällä ruutuja uudelleen, muuttamalla niiden kokoa, linkittämällä niitä ja muuttamalla niiden sijaintia](service-dashboard-edit-tile.md).
+6. Voit tarkastella uuteen koontinäyttöösi ruutuna kiinnitettyä viivakaaviota valitsemalla **Siirry koontinäyttöön**. Voit parantaa koontinäyttöä entisestään lisäämällä visualisointiruutuja ja [nimeämällä ruutuja uudelleen, muuttamalla niiden kokoa, linkittämällä niitä ja muuttamalla niiden sijaintia](service-dashboard-edit-tile.md).
    
-   ![koontinäyttö, johon on kiinnitetty visualisointi](media/service-get-started/power-bi-new-dashboard.png)
+   ![Koontinäyttö, johon on kiinnitetty visualisointi](media/service-get-started/power-bi-new-dashboard.png)
    
    Voit palata raporttiin milloin tahansa valitsemalla koontinäytön uuden ruudun. Power BI palauttaa sinut raporttieditorin lukunäkymään. Voit palata muokkausnäkymään valitsemalla **Muokkaa raporttia** yläreunan valikkorivistä. Kun olet muokkausnäkymässä, jatka tutkimista ja ruutujen kiinnittämistä. 
 
@@ -128,26 +142,21 @@ Nyt kun olet muodostanut yhteyden tietoihin, voit aloittaa tutustumisen.  Kun ol
 
    ![koontinäyttö, jossa on kiinnitettynä kaavio](media/service-get-started/power-bi-final-dashboard.png)
 
+## <a name="clean-up-resources"></a>Resurssien tyhjentäminen
+Nyt kun olet suorittanut opetusohjelman, voit poistaa tietojoukon, raportin ja koontinäytön. 
+
+1. Valitse vasemmassa siirtymispalkissa **Oma työtila**.
+2. Valitse **Tietojoukot**-välilehti ja etsi tätä opetusohjelmaa varten tuotu tietojoukko.  
+3. Valitse kolme pistettä (...) > **Poista**.
+
+    ![Tietojoukon poistaminen](media/service-get-started/power-bi-delete.jpg)
+
+    Tietojoukon poistaminen poistaa myös raportin ja koontinäytön. 
+
+
 ## <a name="next-steps"></a>Seuraavat vaiheet
 Oletko valmis kokeilemaan lisää?  Alla on joitakin käteviä tapoja tutkia Power BI:tä.
 
-* [Yhteyden muodostaminen toiseen tietojoukkoon](service-get-data.md).
-* [Koontinäytön jakaminen](service-share-dashboards.md) työtovereidesi kanssa.
-* [Vinkkejä koontinäyttöjen suunnitteluun](service-dashboards-design-tips.md).
-* Koontinäyttöjen tarkastelu [Power BI -mobiilisovelluksessa](mobile-apps-for-mobile-devices.md)
-
-Etkö ole vielä valmis hyppäämään mukaan? Aloita näistä otsikoista, jotka on suunniteltu tutustuttamaan Power BI:hin.
-
-* [Lue, miten raportit, tietojoukot, koontinäytöt ja ruudut sopivat yhteen](service-basic-concepts.md)
-* Tutustu [Power BI:n ohjattu oppiminen](guided-learning/index.md) -sivustoon ja käy muutamia (hyvin lyhyitä) kursseja
-* Katso joitakin [Power BI -videoita](videos.md)
-* [Katso, millaisia malleja käytössäsi on](sample-datasets.md)
-
-### <a name="stay-in-touch-with-power-bi"></a>Pidä yhteyttä Power BI:n avulla
-* Seuraa [@MSPowerBI Twitterissä](https://twitter.com/mspowerbi)
-* Tilaa Microsoftin [YouTube-videokanava](https://www.youtube.com/channel/UCy--PYvwBwAeuYaR8JLmrfg)
-* Katso Microsoftin [Power BI:n Aloitusopas -webinaari](webinars.md) suoratoistona
-* Etkö ole varma, mistä hakea apua? Tutustu [10 vinkkiä ohjeiden hakemiseen](service-tips-for-finding-help.md) -sivuumme
-
-Onko sinulla muuta kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)
+> [!div class="nextstepaction"]
+> [Käyttämiisi verkkopalveluihin yhdistäminen](./service-connect-to-services.md)
 

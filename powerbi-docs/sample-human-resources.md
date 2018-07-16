@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/22/2018
+ms.date: 06/26/2018
 ms.author: mihart
 LocalizationGroup: Samples
-ms.openlocfilehash: 770e200b0aa6916ac6d2de144902a04e9660e552
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 3c73476351671d9c37bea824b2ade0f7e79dd274
+ms.sourcegitcommit: db03649b8241bf34566968bbede8c9a0d35852fd
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34482011"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37067237"
 ---
 # <a name="human-resources-sample-for-power-bi-take-a-tour"></a>Power BI:n henkilöstöhallintomalli: esittely
 
@@ -32,7 +32,7 @@ Tämä malli kuuluu sarjaan, jossa esitellään, miten Power BI:tä voidaan käy
 
 ## <a name="prerequisites"></a>Edellytykset
 
- Ennen kuin voit käyttää mallia, se on ensin ladattava [sisältöpakettina](https://docs.microsoft.com/power-bi/sample-human-resources#get-the-content-pack-for-this-sample), [.pbix-tiedostona](http://download.microsoft.com/download/6/9/5/69503155-05A5-483E-829A-F7B5F3DD5D27/Human-Resources-Sample-PBIX.pbix) tai [Excel-työkirjana](http://go.microsoft.com/fwlink/?LinkId=529780).
+ Ennen kuin voit käyttää mallia, se on ensin ladattava [sisältöpakettina](https://docs.microsoft.com/power-bi/sample-human-resources#get-the-content-pack-for-this-sample), [.pbix-tiedostona](http://download.microsoft.com/download/6/9/5/69503155-05A5-483E-829A-F7B5F3DD5D27/Human%20Resources%20Sample%20PBIX.pbix) tai [Excel-työkirjana](http://go.microsoft.com/fwlink/?LinkId=529780).
 
 ### <a name="get-the-content-pack-for-this-sample"></a>Mallin sisältöpaketin noutaminen
 
@@ -54,7 +54,7 @@ Tämä malli kuuluu sarjaan, jossa esitellään, miten Power BI:tä voidaan käy
 
 Vaihtoehtoisesti voit ladata näytteen .pbix-tiedostona, joka on suunniteltu käytettäväksi Power BI Desktopilla. 
 
- * [Henkilöstöhallintomalli](http://download.microsoft.com/download/6/9/5/69503155-05A5-483E-829A-F7B5F3DD5D27/Human Resources Sample PBIX.pbix)
+ * [Henkilöstöhallintomalli PBIX](http://download.microsoft.com/download/6/9/5/69503155-05A5-483E-829A-F7B5F3DD5D27/Human%20Resources%20Sample%20PBIX.pbix)
 
 ### <a name="get-the-excel-workbook-for-this-sample"></a>Hae tämän näytteen Excel-työkirja
 Voit myös [ladata vain tietojoukon (Excel-työkirjan)](http://go.microsoft.com/fwlink/?LinkId=529780) tälle mallille. Työkirja sisältää Power View -taulukoita, joita voit tarkastella ja muokata. Raakatiedot saa näkyviin valitsemalla **Power Pivot > Hallinta**.

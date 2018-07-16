@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 3f7ad953f36830db74fb8e611dc9a0641498affd
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: d3051537298ac8f8fb5fc8661cfca998a07fc625
+ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34252458"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37135256"
 ---
 # <a name="connect-to-marketo-with-power-bi"></a>Yhteyden muodostaminen Marketoon Power BI:llä
 Power BI -sisältöpaketti Marketolle mahdollistaa merkityksellisten tietojen saamisen Marketo-tilistäsi liideihin ja niiden toimintaan liittyvillä tiedoilla. Tämän yhteyden luominen noutaa tietosi ja tarjoaa automaattisesti koontinäytön ja asiaankuuluvat raportit kyseisten tietojen perusteella.
@@ -86,7 +86,7 @@ Niiden API-kutsujen määrä, joita Power BI tekee Marketoon, riippuu Marketo-ti
 | **API-kutsuja yhteensä** | |**2 200** |
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
-[Power BI:n käytön aloittaminen](service-get-started.md)
+[Mikä on Power BI?](power-bi-overview.md)
 
 [Tietojen noutaminen Power BI:hin](service-get-data.md)
 

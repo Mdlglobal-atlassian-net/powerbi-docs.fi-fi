@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/02/2018
 ms.author: davidi
 LocalizationGroup: Data refresh
-ms.openlocfilehash: 42f5353c49d562f4fefeec81867fd9e9ff4831c2
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 5f64c32b2e4756d8815316cc45ddfd96a2167d71
+ms.sourcegitcommit: 695c65629d6d1faba61db2e1570324f65f235dde
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34239021"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37092272"
 ---
 # <a name="refresh-a-dataset-created-from-a-csv-file-on-onedrive-or-sharepoint-online"></a>OneDriven .csv-tiedostosta tai SharePoint Onlinesta luodun tietojoukon päivittäminen
 ## <a name="what-are-the-advantages"></a>Mitkä ovat edut?
@@ -31,7 +31,7 @@ Pilkuilla erotetut arvotiedostot ovat yksinkertaisia tekstitiedostoja, joten yht
 ## <a name="onedrive-or-onedrive-for-business-whats-the-difference"></a>OneDrive tai OneDrive for Business? Mikä niiden ero on?
 Jos sinulla on sekä henkilökohtainen OneDrive että OneDrive for Business, on suositeltavaa säilyttää tiedostot, jotka haluat yhdistää BI:ssa OneDrive for Business -palveluun. Syynä on se, että todennäköisesti käytät kahta eri tiliä niille kirjautumista varten.
 
-Yhteyden muodostaminen OneDrive for Business -palveluun Power BI:ssa on yleensä saumaton, koska tili, jota käytit Power BI -kirjautumiseen on usein sama tili, jota käytetään kirjauduttaessa OneDrive for Business -palveluun. Henkilökohtaisen OneDrive olet todennäköisesti kuitenkin kirjautunut sisään toisella [Microsoft-tilillä](http://www.microsoft.com/account/default.aspx).
+Yhteyden muodostaminen OneDrive for Business -palveluun Power BI:ssa on yleensä saumaton, koska tili, jota käytit Power BI -kirjautumiseen on usein sama tili, jota käytetään kirjauduttaessa OneDrive for Business -palveluun. Henkilökohtaisen OneDrive olet todennäköisesti kuitenkin kirjautunut sisään toisella [Microsoft-tilillä](https://account.microsoft.com).
 
 Kun olet kirjautunut sisään Microsoft-tilillesi, muista valita Pysy kirjautuneena -vaihtoehto. Power BI voi sitten synkronoida kaikki päivitykset Power BI:n tietojoukkoihin
 

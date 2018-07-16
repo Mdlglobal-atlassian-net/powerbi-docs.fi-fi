@@ -10,17 +10,17 @@ ms.topic: conceptual
 ms.date: 09/11/2017
 ms.author: mgblythe
 LocalizationGroup: Premium
-ms.openlocfilehash: 3cf20899e705328c9f63bdbede4c30bd69488762
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 52c6293bacb2cae1d74a7a0459c61fe3c3bc201f
+ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34298316"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36944349"
 ---
 # <a name="power-bi-premium-release-notes"></a>Power BI Premiumin julkaisutiedot
 Nämä ovat Power BI Premiumin julkaisutiedot. Se tarjoaa organisaatiolle tai tiimille varatun kapasiteetin, luotettavamman suorituskyvyn, suuremman tietomäärän ja mahdollisuuden jakaa sisältöä ilman katselijoiden käyttäjäkohtaisia käyttöoikeuksia.
 
-* Käyttäjät, joilla on Power BI Free -käyttöoikeus, voivat nyt tarkastella heille Premium-työtiloista jaettuja koontinäyttöjä Power BI -palvelussa.
+* Kaikki käyttäjät voivat nyt heille määritetystä käyttöoikeudesta riippumatta tarkastella heille Premium-työtiloista jaettuja koontinäyttöjä Power BI -palvelussa.
 * Kapasiteetin järjestelmänvalvojat saavat nyt automaattisesti käyttöoikeuden kapasiteetin määritykseen.
 * Dynaaminen rivitason suojaus (RLS) on nyt käytettävissä upotetuissa käyttötapauksissa. Lisätietoja on artikkelissa [Rivitason suojaus (RLS) ja upotetut analyysitoiminnot](developer/embedded-row-level-security.md).
 * Power BI -sovellusten jakamista muiden Azure Active Directory -vuokraajien käyttäjille powerbi.comin kautta ei vielä tueta. Ominaisuus pyritään ottamaan käyttöön.

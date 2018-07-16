@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: b4462d8ef5037cf4fe76a6ff061b7993e8d8ec44
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 1ce4fe4e80138995e7ec356b92f31e45f3a2c920
+ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34245601"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37599780"
 ---
 # <a name="connect-to-project-madeira-with-power-bi"></a>Yhteyden muodostaminen Project ”Madeiraan” Power BI:llä
 Power BI:n ja Project ”Madeira” -sisältöpaketin avulla saat helposti merkityksellisiä tietoja Project ”Madeirasta”. Power BI noutaa sekä Myynti- että Rahoitus-tiedot ja luo niiden pohjalta valmiin koontinäytön ja raportit.
@@ -33,7 +33,7 @@ Muodosta yhteys Power BI:n [Project ”Madeira” Analytics -sisältöpakettiin]
     ![](media/service-connect-to-project-madeira/services.png)
 3. Valitse ensin **Project ”Madeira”** ja sitten **Nouda**.  
     ![](media/service-connect-to-project-madeira/projectmadeira.png)
-4. Anna pyydettäessä Project ”Madeiran” URL-osoite. URL-osoitteen on oltava täsmälleen seuraavan mallin mukainen: https://mycronusus.projectmadeira.com:7048/NAV/OData/Company('CRONUS%20US'), jossa yrityksen nimi on Project ”Madeira”. Huomaa, että lopussa ei ole vinoviivaa, ja käytössä on oltava https-yhteys. Lisätietoja URL-osoitteen etsimisestä on [alla](#FindingParams).  
+4. Anna pyydettäessä Project ”Madeiran” URL-osoite. URL-osoitteen on oltava täsmälleen seuraavan mallin mukainen: <https://mycronusus.projectmadeira.com:7048/NAV/OData/Company('CRONUS%20US>'), jossa yrityksen nimi on Project ”Madeira”. Huomaa, että lopussa ei ole vinoviivaa, ja käytössä on oltava https-yhteys. Lisätietoja URL-osoitteen etsimisestä on [alla](#FindingParams).  
    
     ![](media/service-connect-to-project-madeira/params.png)
 5. Valitse pyydettäessä todennusmenetelmäksi Perus, kirjoita käyttäjänimeksi Project ”Madeira” -sähköpostiosoitteesi ja anna sitten salasanaksi Project ”Madeira” -tilisi verkkopalvelun käyttöoikeusavain. Jos olet jo kirjautunut Project ”Madeiraan” selaimessa, tunnistetietoja ei välttämättä pyydetä. Lisätietoja käyttöoikeusavaimen luomisesta on [alla](#FindingParams).  
@@ -93,10 +93,10 @@ Power BI -koontinäyttö käyttää yllä lueteltuja julkaistuja verkkopalveluit
 
 Jos näet tämän virhesanoman, kun olet antanut Project ”Madeiran” URL-osoitteen, varmista, että seuraavat edellytykset täyttyvät:  
 
-   - URL-osoite on täsmälleen seuraavan mallin mukainen: https://*mycronusus*.projectmadeira.com:7048/NAV/OData/Company('*CRONUS%20US*')  
-   - Poista kaikki sulkumerkeissä olevan yrityksen nimen perässä oleva teksti.  
-   - Varmista, että URL-osoitteen lopussa ei ole vinoviivaa.  
-   - Varmista, että URL-osoite on käyttää suojattua yhteyttä eli että URL-osoitteen alkuosana on https.  
+- URL-osoite on täsmälleen seuraavan mallin mukainen: https://*mycronusus*.projectmadeira.com:7048/NAV/OData/Company('<em>CRONUS%20US</em>')  
+- Poista kaikki sulkumerkeissä olevan yrityksen nimen perässä oleva teksti.  
+- Varmista, että URL-osoitteen lopussa ei ole vinoviivaa.  
+- Varmista, että URL-osoite on käyttää suojattua yhteyttä eli että URL-osoitteen alkuosana on https.  
 
 **”Sisäänkirjautuminen epäonnistui”** Jos yrität kirjautua koontinäyttöön Project ”Madeiran” tunnistetiedoilla ja näyttöön tulee kirjautumisen epäonnistumisesta kertova virhesanoma, syynä voi olla jokin seuraavista:  
 
@@ -104,16 +104,16 @@ Jos näet tämän virhesanoman, kun olet antanut Project ”Madeiran” URL-osoi
    - Project ”Madeira” -esiintymällä, johon yrität muodostaa yhteyden, ei ole kelvollista SSL-varmennetta. Tässä tapauksessa näkyviin tulee tarkempi virhesanoma (jonka mukaan luotettua SSL-suhdetta ei voi muodostaa). Huomaa, että itse allekirjoitettuja varmenteita ei tueta.  
 
 **”Virhe”** Jos todentamisvalintaikkunan jälkeen näyttöön tulee Virhe-valintaikkuna, syynä on useimmin ongelma yhteyden muodostamisessa sisältöpaketin tietoihin. Tarkista, että URL-osoite on aiemmin esitetyn mallin mukainen:  
-    https://*mycronusus*.projectmadeira.com:7048/NAV/OData/Company('*CRONUS%20US*')
+    https://*mycronusus*.projectmadeira.com:7048/NAV/OData/Company('<em>CRONUS%20US</em>')
 
 Yleinen virhe on määrittää jonkin verkkopalvelun täydellinen URL-osoite:  
-    https://*mycronusus*.projectmadeira.com:7048/NAV/OData/Company('*CRONUS%20US*')/powerbifinance
+    https://*mycronusus*.projectmadeira.com:7048/NAV/OData/Company('<em>CRONUS%20US</em>')/powerbifinance
 
 Olet myös saattanut unohtaa määrittää yrityksen nimen:   
-    https://*mycronusus*.projectmadeira.com:7048/NAV/OData/
+    https://<em>mycronusus</em>.projectmadeira.com:7048/NAV/OData/
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
-[Power BI:n käytön aloittaminen](service-get-started.md)
+[Mikä on Power BI?](power-bi-overview.md)
 
 [Power BI:n peruskäsitteet](service-basic-concepts.md)
 

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 21554c5addac0adad84783dad83b4861544a3425
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 1baccb5fd674d5e0037f112fc8cbee450b6bcb8a
+ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34242209"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37136360"
 ---
 # <a name="connect-to-at-internet-bridge-with-power-bi"></a>Yhteyden muodostaminen AT Internet Bridgeen Power BI:n avulla
 AT Internetin ja sen digitaalisen Analytics Suite -analyysialustan avulla voit poimia tiedoistasi välittömän arvon. Power BI:lle kehitetty AT Internet Bridge -sisältöpaketti sisältää tietoja, jotka koskevat sivuston vierailuja, lähteitä, lokalisointia ja laitteita.
@@ -59,7 +59,7 @@ Tämä sisältöpaketti sisältää viimeisen 45 päivän tiedot seuraavista tau
     - Vierailujen kokonaismäärä  
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
-[Power BI:n käytön aloittaminen](service-get-started.md)
+[Mikä on Power BI?](power-bi-overview.md)
 
 [Power BI:n peruskäsitteet](service-basic-concepts.md)
 

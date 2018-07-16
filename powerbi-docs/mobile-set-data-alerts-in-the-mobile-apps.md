@@ -9,12 +9,12 @@ ms.component: powerbi-mobile
 ms.topic: conceptual
 ms.date: 12/18/2017
 ms.author: maggies
-ms.openlocfilehash: aa4aac1b0628fb0670a4265095ba2abcae3c1dcf
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 2ca419e1e07485ad29c486d8626e78d9605c8468
+ms.sourcegitcommit: 5eb8632f653b9ea4f33a780fd360e75bbdf53b13
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34292566"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36965017"
 ---
 # <a name="set-data-alerts-in-the-power-bi-mobile-apps"></a>Tietoilmoitusten määrittäminen Power BI -mobiilisovelluksissa
 Koskee seuraavia:
@@ -25,7 +25,7 @@ Koskee seuraavia:
 
 Voit asettaa koontinäyttöilmoituksia Power BI -mobiilisovelluksissa ja Power BI -palvelussa. Ilmoitukset ilmoittavat, kun ruudun tiedot muuttuvat asettamiesi rajojen ulkopuolelle. Ilmoitukset toimivat ruuduilla, joissa on yksittäinen numero, kuten kortti- ja mittariruuduissa, mutta ei virtautettavien tietojen kohdalla. Voit asettaa tietoilmoituksia mobiililaitteessasi ja nähdä ne Power BI -palvelussa tai päinvastoin. Vain sinä näet määrittämäsi tietoilmoitukset, vaikka jakaisitkin koontinäytön tai ruudun tilannevedoksen.
 
-Voit määrittää ilmoituksia ruuduille, jos sinulla on Power BI Pro -lisenssi tai jos sinulla on maksuton Power BI -lisenssi ja jaetulla koontinäytöllä on Premium-kapasiteetti. 
+Voit määrittää ilmoituksia ruuduille, jos sinulla on Power BI Pro -käyttöoikeus tai jos jaetulla koontinäytöllä on Premium-kapasiteetti. 
 
 > [!WARNING]
 > Aineistoperäiset ilmoitukset antavat tietoja lähdetiedoistasi. Jos laitteesi varastetaan, suosittelemme Power BI -palvelun avaamista ja kaikkien aineistoperäisten ilmoitussääntöjen poistamista käytöstä. 

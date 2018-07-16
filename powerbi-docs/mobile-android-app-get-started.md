@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-mobile
 ms.topic: conceptual
-ms.date: 05/07/2018
+ms.date: 06/28/2018
 ms.author: maggies
-ms.openlocfilehash: 84a2fe350c1146591aa89c5900c10f2747e90cf3
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 3323258304f8c36131caf6ef269d9befa6cfbb96
+ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34297442"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37136521"
 ---
 # <a name="get-started-with-the-power-bi-mobile-app-on-android-devices"></a>Android-laitteiden Power BI -mobiilisovelluksen käytön aloittaminen
 Android-sovellus Microsoft Power BI:lle tarjoaa BI-mobiilikäyttökokemuksen Power BI:lle, Power BI-raporttipalvelimelle ja Reporting Services -palveluille. Voit tarkastella ja käsitellä yrityksen koontinäyttöjä paikallisesti ja pilvipalvelussa missä tahansa, live-tilassa kosketusnäytöllisessä mobiilikäytössä. Tarkastele tietoja koontinäytöissä ja jaa sähköpostitse tai tekstiviestillä työtovereiden kanssa. 
@@ -23,7 +23,7 @@ Android-sovellus Microsoft Power BI:lle tarjoaa BI-mobiilikäyttökokemuksen Pow
 
 Luo Power BI -raportteja Power BI Desktopissa ja julkaise ne:
 
-* [Julkaise Power BI -palvelussa](service-get-started.md) ja luo koontinäyttöjä.
+* [Julkaise Power BI -palvelussa](power-bi-overview.md) ja luo koontinäyttöjä.
 * [Julkaise paikallisesti Power BI -raporttipalvelimeen](report-server/quickstart-create-powerbi-report.md).
 
 Voit Androidin Power BI -sovelluksessa käsitellä koontinäyttöjä ja raportteja joko paikallisesti tai pilvipalvelussa.
@@ -136,7 +136,7 @@ Seuraavassa on mainittu eräitä muita asioita, joita voit tehdä Android-laitte
 
 ### <a name="see-also"></a>Katso myös
 * [Lataa Android-sovellus](http://go.microsoft.com/fwlink/?LinkID=544867) Androidin sovelluskaupasta.
-* [Power BI:n käytön aloittaminen](service-get-started.md)
-* Onko sinulla kysymyksiä? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)
+* [Mikä on Power BI?](power-bi-overview.md)
+* Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)
 
 

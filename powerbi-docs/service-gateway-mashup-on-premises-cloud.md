@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 06/06/2018
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 3550a3fc0cfc51b61e1d7e51a50c2a36325f2388
-ms.sourcegitcommit: 49570ab8f5b5cd5bab4cd388f4281b1372bcb80b
+ms.openlocfilehash: 2547be7f7bdadb7f991db54230d4fd791941838d
+ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/09/2018
-ms.locfileid: "35250608"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37600063"
 ---
 # <a name="merge-or-append-on-premises-and-cloud-data-sources"></a>Paikallisten ja pilvipalvelutietolähteiden yhdistäminen ja liittäminen
 
@@ -38,17 +38,17 @@ Paikallisen tietoyhdyskäytävän avulla voit yhdistää tai liittää paikallis
 
 4. Tässä yhdyskäytäväklusterissa voit lisätä kyselyissä käytettäviä [paikallisia tietolähteitä](service-gateway-enterprise-manage-scheduled-refresh.md#add-a-data-source). Sinun ei tarvitse lisätä tähän pilvipalvelutietolähteitä.
 
-4. Lataa Power BI -palveluun Power -tiedosto, joka sisältää kyselyt, jotka yhdistävät paikallisia ja pilvipalvelutietolähteitä.
+5. Lataa Power BI -palveluun Power -tiedosto, joka sisältää kyselyt, jotka yhdistävät paikallisia ja pilvipalvelutietolähteitä.
 
-5. Uuden tietojoukon **Tietojoukon asetukset** -sivulla:
+6. Uuden tietojoukon **Tietojoukon asetukset** -sivulla:
 
-    - Valitse kyseiseen tietolähteeseen liittyvän yhdyskäytävän paikallinen lähde.
+   - Valitse kyseiseen tietolähteeseen liittyvän yhdyskäytävän paikallinen lähde.
 
-    - Kohdasta **Tietolähteen tunnistetiedot**, muokkaa tarvittaessa tietolähteen tunnistetietoja.
+   - Kohdasta **Tietolähteen tunnistetiedot**, muokkaa tarvittaessa tietolähteen tunnistetietoja.
 
-    ![Tietojoukon asetukset](media/service-gateway-mashup-on-premises-cloud/dataset-settings.png)
+     ![Tietojoukon asetukset](media/service-gateway-mashup-on-premises-cloud/dataset-settings.png)
 
-6. Kun pilvipalvelun tunnistetiedot on määritetty, voit päivittää tietojoukon käyttämällä **Päivitä nyt** -vaihtoehtoa tai ajoittaa ajoittaisen päivityksen.
+7. Kun pilvipalvelun tunnistetiedot on määritetty, voit päivittää tietojoukon käyttämällä **Päivitä nyt** -vaihtoehtoa tai ajoittaa ajoittaisen päivityksen.
 
 
 ## <a name="next-steps"></a>Seuraavat vaiheet

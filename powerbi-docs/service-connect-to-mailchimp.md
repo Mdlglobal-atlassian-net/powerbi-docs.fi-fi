@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 6a62b97a4c7d75644bd3a824118414509ef8438f
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: f54841b77d79854334ddb6d93ccdc9b5926201ac
+ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34241178"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37136698"
 ---
 # <a name="connect-to-mailchimp-with-power-bi"></a>MailChimpiin yhdistäminen Power BI:n avulla
 Power BI -sisältöpaketti hakee tietoja MailChimp-tililtäsi ja luo koontinäytön, raportteja ja tietojoukon, joiden avulla voit tutkia tietojasi. Hae analytiikkatietoja, jotta voit luoda [MailChimp-koontinäyttöjä](https://powerbi.microsoft.com/integrations/mailchimp) ja tunnistaa kampanjoihin, raportteihin ja yksittäisiin tilaajiin liittyviä trendejä nopeasti. Tiedot on määritetty päivittymään päivittäin, niin että seuraamasi tiedot ovat varmasti ajan tasalla.
@@ -51,7 +51,7 @@ Yhdistä Power BI:n [MailChimp-sisältöpakettiin](https://app.powerbi.com/getda
 * Tietojoukko on ajastettu päivittymään päivittäin, mutta voit muuttaa päivitysaikataulua tai kokeilla tietojoukon päivittämistä **Päivitä nyt** -toiminnolla haluamanasi ajankohtana
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
-[Power BI:n käytön aloittaminen](service-get-started.md)
+[Mikä on Power BI?](power-bi-overview.md)
 
 [Power BI:n peruskäsitteet](service-basic-concepts.md)
 

@@ -1,7 +1,7 @@
 ## <a name="firewall-or-proxy"></a>Palomuuri tai välityspalvelin
 Jos tarvitset tietoa siitä, miten välityspalvelintiedot annetaan yhdyskäytävää varten, katso [Välityspalvelinasetusten määrittäminen Power BI ‑yhdyskäytäviä varten](../service-gateway-proxy.md).
 
-Voit testata, estääkö palomuurisi tai välityspalvelimesi yhteyksiä, suorittamalla PowerShell-komentoriviltä komennon [Test-NetConnection](https://technet.microsoft.com/library/dn372891.aspx). Se testaa yhdistettävyyden Azuren palveluväylään. Komento testaa vain verkon yhdistettävyyttä, eikä sillä ole mitään tekemistä pilvipalvelinpalvelun tai yhdyskäytävän kanssa. Se auttaa määrittämään, voiko koneesi muodostaa Internet-yhteyden.
+Voit testata, estääkö palomuurisi tai välityspalvelimesi yhteyksiä, suorittamalla PowerShell-komentoriviltä [Test-NetConnection](https://docs.microsoft.com/powershell/module/nettcpip/test-netconnection)-komennon. Se testaa yhdistettävyyden Azuren palveluväylään. Komento testaa vain verkon yhdistettävyyttä, eikä sillä ole mitään tekemistä pilvipalvelinpalvelun tai yhdyskäytävän kanssa. Se auttaa määrittämään, voiko koneesi muodostaa Internet-yhteyden.
 
     Test-NetConnection -ComputerName watchdog.servicebus.windows.net -Port 9350
 

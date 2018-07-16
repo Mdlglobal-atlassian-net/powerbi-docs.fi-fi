@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/02/2018
 ms.author: davidi
 LocalizationGroup: Administration
-ms.openlocfilehash: d3b3e077ac3dadf92a1c25d3704a4f59adea588b
-ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
+ms.openlocfilehash: ec8f1e40cac1c98bcfb5049d1fe8dd7397b616d6
+ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34296223"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37598843"
 ---
 # <a name="power-bi-security"></a>Power BI:n suojaus
 Saat yksityiskohtaisen kuvauksen Power BI:n suojauksesta [lataamalla Power BI:n suojauksen teknisen raportin](http://go.microsoft.com/fwlink/?LinkId=829185):
@@ -48,7 +48,7 @@ Pisteviiva **Back End** -klusterin kuvassa yllä osoittaa käyttäjien käytett�
 ## <a name="user-authentication"></a>Käyttäjän todennus
 Power BI käyttää Azure Active Directorya ([AAD](http://azure.microsoft.com/services/active-directory/)) Power BI -palveluun kirjautuvien käyttäjien todentamiseen, joka puolestaan käyttää Power BI -kirjautumistunnuksia aina, kun käyttäjä yrittää käyttää resursseja, jotka edellyttävät todennusta. Käyttäjät kirjautuvat Power BI -palveluun käyttämällä Power BI -tilinsä luomiseen käyttämäänsä sähköpostiosoitetta; Power BI käyttää kyseistä kirjautumissähköpostia *käytössä olevana käyttäjänimenä*, joka välitetään resursseille aina, kun käyttäjä yrittää muodostaa yhteyden tietoihin. *Käytössä oleva käyttäjänimi* yhdistetään sitten *täydelliseen käyttäjätunnukseen* ([UPN](https://msdn.microsoft.com/library/windows/desktop/aa380525\(v=vs.85\).aspx) ja ratkaistaan siihen liittyvään Windows-toimialuetilin, jota vastaan todennusta käytetään.
 
-Organisaatioissa, joissa käytetään työsähköpostiosoitteita Power BI:hin kirjautumiseen (esim. *david@contoso.com*), *käytössä oleva käyttäjänimi* on helppo yhdistää UPN:ään. Organisaatioissa, joissa ei käytetä työsähköpostiosoitteita Power BI:hin kirjautumiseen (esim. *david@contoso.onmicrosoft.com*), AAD:n ja paikallisten tunnistetietojen yhdistäminen edellyttää, että [hakemistosynkronointi](https://technet.microsoft.com/library/jj573653.aspx) toimii oikein.
+Organisaatioissa, joissa käytetään työsähköpostiosoitteita Power BI:hin kirjautumiseen (esim. <em>david@contoso.com</em>), *käytössä oleva käyttäjänimi* on helppo yhdistää UPN:ään. Organisaatioissa, joissa ei käytetä työsähköpostiosoitteita Power BI:hin kirjautumiseen (esim. <em>david@contoso.onmicrosoft.com</em>), AAD:n ja paikallisten tunnistetietojen yhdistäminen edellyttää, että [hakemistosynkronointi](https://technet.microsoft.com/library/jj573653.aspx) toimii oikein.
 
 Power BI -alustan suojaus sisältää myös usean palveltavan kohteen ympäristön suojauksen, verkon suojauksen ja mahdollisuuden lisätä AAD-pohjaisia suojausominaisuuksia.
 

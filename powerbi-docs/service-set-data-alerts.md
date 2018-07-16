@@ -11,17 +11,17 @@ ms.topic: conceptual
 ms.date: 02/28/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 321e66fd5ed185a92c98bf7832dc3b71944be98d
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: ffbad48df6665d5dff6c4eca97e86e6f2850565f
+ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34689710"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37137544"
 ---
 # <a name="data-alerts-in-power-bi-service"></a>Power BI -palvelun tietoilmoitukset
 Aseta ilmoituksia ilmoittamaan sinulle, kun koontinäyttösi tiedot muuttuvat asettamiesi rajojen ulkopuolelle. 
 
-Voit asettaa ruutujen hälytyksiä, jos sinulla on Power BI Pro- käyttöoikeus tai jos koontinäyttö on jaettu kanssasi [Premium-kapasiteetista](service-premium.md). Ilmoitukset voidaan määrittää vain ruuduille, jotka on kiinnitetty raportin visualisoineista, ja vain mittareissa, suorituskykyilmaisimissa ja korteissa. Ilmoitukset voidaan määrittää visualisoinneille, jotka on luotu virtautustietojoukoista, jotka on kiinnitetty koontinäyttöön raportista, mutta niitä ei voi määrittää virtautusruuduille, jotka on luotu suoraan koontinäytöstä valitsemalla **Lisää ruutu**  >  **Mukautetut virtautettavat tiedot** . 
+Voit asettaa ruutujen ilmoituksia, jos sinulla on Power BI Pro - käyttöoikeus tai jos koontinäyttö on jaettu kanssasi [Premium-kapasiteetista](service-premium.md). Ilmoitukset voidaan määrittää vain ruuduille, jotka on kiinnitetty raportin visualisoineista, ja vain mittareissa, suorituskykyilmaisimissa ja korteissa. Ilmoitukset voidaan määrittää visualisoinneille, jotka on luotu virtautustietojoukoista, jotka on kiinnitetty koontinäyttöön raportista, mutta niitä ei voi määrittää virtautusruuduille, jotka on luotu suoraan koontinäytöstä valitsemalla **Lisää ruutu**  >  **Mukautetut virtautettavat tiedot** . 
 
 Vain sinä näet asettamasi hälytykset, vaikka jakaisit koontinäyttösi. Tietoilmoitukset synkronoidaan täysin kaikissa ympäristöissä. Määritä ja tarkastele tietoilmoituksia [Power BI -mobiilisovelluksissa](mobile-set-data-alerts-in-the-mobile-apps.md) ja Power BI -palvelussa. Ne eivät ole käytettävissä Power BI Desktopissa. Ilmoitukset voidaan myös [automatisoida ja integroida Microsoft Flowin kanssa](https://flow.microsoft.com) - [kokeile itse](service-flow-integration.md).
 
@@ -104,6 +104,6 @@ Voit hallita ilmoituksia usealla tavalla: suoraan koontinäytön ruudusta, Power
 ## <a name="next-steps"></a>Seuraavat vaiheet
 [Luo Microsoft Flow, joka sisältää tietoilmoituksen](service-flow-integration.md)    
 [Määritä tietoilmoitukset mobiililaitteellasi](mobile-set-data-alerts-in-the-mobile-apps.md)    
-[Aloita Power BI:n käyttäminen](service-get-started.md)    
-Onko sinulla muuta kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)
+[Mikä on Power BI?](power-bi-overview.md)    
+Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)
 

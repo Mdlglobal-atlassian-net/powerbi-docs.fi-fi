@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 06/28/2017
 ms.author: maghan
 LocalizationGroup: Data from databases
-ms.openlocfilehash: 236a3d1bde84d4259d921d44730057a4e2fd3591
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: e1320135ba0abb737a487036948c2822d0c337ae
+ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34256744"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37136498"
 ---
 # <a name="spark-on-hdinsight-with-directquery"></a>Spark + HDInsight ja DirectQuery
 Azure HDInsightin Sparkin ja DirectQueryn avulla voit luoda dynaamisia raportteja niiden tietojen ja arvojen perusteella, joita sinulla jo on Spark-klusterissasi. DirectQueryn avulla kyselyt lähetetään takaisin Azure HDInsight Spark -klusteriin reaaliaikaisesti tutkiessasi tietoja raporttinäkymässä. Tätä kokemusta ehdotetaan käyttäjille, jotka ovat perehtyneet entiteetteihin, joihin he ovat muodostamassa yhteyttä.
@@ -27,7 +27,11 @@ Azure HDInsightin Sparkin ja DirectQueryn avulla voit luoda dynaamisia raporttej
 
 Seuraavien vaiheiden avulla voit muodostaa yhteyden Azure HDInsightin Spark-tietolähteeseen käyttäen Power BI -palveluun sisältyvää DirectQueryä.
 
-1. Valitse vasemman siirtymisruudun alareunasta **Nouda tiedot**.
+> [!Important]
+> Olemme parantaneet liitettävyyttämme Sparkiin.  Pystyt parhaiten muodostamaan yhteyden Spark-tietolähteeseen Power BI Desktopin avulla.  Kun olet luonut mallin ja raportin, voit julkaista sen Power BI -palvelussa.  Suora yhdistin Sparkille Power BI-palvelussa on nyt vanhentunut.
+>
+
+1. Valitse vasemman siirtymisruudun alareunassa **Nouda tiedot**.
    
      ![](media/spark-on-hdinsight-with-direct-connect/spark-getdata.png)
 2. Valitse **Tietokannat ja muut**.
@@ -71,7 +75,7 @@ Voit myös varata lisäresursseja Azure-portaalin kohdassa **Kokoonpano** > **Kl
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 [Aloittaminen: luo Apache Spark -klusteri HDInsight Linuxissa ja suorita vuorovaikutteisia kyselyitä Spark SQL:llä](https://azure.microsoft.com/documentation/articles/hdinsight-apache-spark-jupyter-spark-sql)  
-[Power BI:n käytön aloittaminen](service-get-started.md)  
+[Mikä on Power BI?](power-bi-overview.md)  
 [Tietojen noutaminen Power BI:hin](service-get-data.md)  
 Onko sinulla muuta kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
 

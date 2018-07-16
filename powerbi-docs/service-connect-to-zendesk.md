@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 997dd8b598e67d590723c72fb35245c3b3486c8b
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: afcaae9499aa1c7e1461030cfa6b5d7b35a47188
+ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34242442"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37136015"
 ---
 # <a name="connect-to-zendesk-with-power-bi"></a>Zendeskiin yhdistäminen Power BI:n avulla
 Zendesk-sisältöpaketti tarjoaa Power BI -koontinäytön ja sarjan Power BI -raportteja, jotka tarjoavat merkityksellisiä tietoja lippujesi määrästä ja agentin suorituskyvystä. Voit käyttää annettua raporttinäkymää ja raportteja tai mukauttaa niitä, jotta niissä korostuvat itseäsi eniten kiinnostavat tiedot.  Tiedot päivitetään automaattisesti kerran päivässä. 
@@ -84,6 +84,6 @@ Zendeskin URL-osoite on sama kuin URL-osoite, jota käytät kirjautuessasi Zende
 Jos sinulla on ongelmia yhteyden kanssa, tarkista Zendeskin URL-osoite ja varmista, että käytät Zendesk-järjestelmänvalvojatiliä.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
-* [Power BI:n käytön aloittaminen](service-get-started.md)
+* [Mikä on Power BI?](power-bi-overview.md)
 * [Nouda tiedot](service-get-data.md)
 

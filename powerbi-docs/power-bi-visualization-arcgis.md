@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 02/28/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 7a43b5c210c0e7f2bd26eea03bdcd5d2fa975321
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 85bf9630a8c272b513f27f38b24a5d8a77075444
+ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34297304"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37599616"
 ---
 # <a name="arcgis-maps-in-power-bi-service-and-power-bi-desktop-by-esri"></a>Esri ArcGIS -kartat Power BI -palvelussa ja Power BI Desktopissa
 Tämä opetusohjelma on kirjoitettu ArcGIS-karttaa luovan henkilön näkökulmasta. Kun tekijä jakaa ArcGIS-kartan työtoverille, kyseinen työtoveri voi tarkastella ja käsitellä karttaa mutta ei tallentaa muutoksia. Lisätietoja ArcGIS-kartan tarkastelemisesta on ohjeartikkelissa [ArcGIS-karttojen käsittely](power-bi-visualizations-arcgis.md).
@@ -262,7 +262,7 @@ Power BI Desktopin **IT-järjestelmänvalvojan asetukset** tukevat ArcGIS Maps f
 </tr>
 <tr>
 <td>avain</td>
-<td>Software\Policies\Microsoft\Power BI Desktop\</td>
+<td>Ohjelmisto\Käytännöt\Microsoft\Power BI Desktop&lt;/td&gt;
 </tr>
 <tr>
 <td>valueName</td>

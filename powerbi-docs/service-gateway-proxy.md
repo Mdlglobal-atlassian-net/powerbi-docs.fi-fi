@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/21/2017
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: ef554d7190709565610336169b4883d71970f822
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 621a5f92ebd9c7314b719b6643f5bfef958916c3
+ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34799552"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37599331"
 ---
 # <a name="configuring-proxy-settings-for-the-on-premises-data-gateway"></a>Paikallisen tietoyhdyskäytävän välityspalvelinasetusten määrittäminen
 Työympäristö saattaa edellyttää, että käytät Internetiä välityspalvelimen kautta. Se voi estää paikalliselta tietoyhdyskäytävältä yhteyden palveluun.
@@ -77,23 +77,23 @@ Kun määrität välityspalvelinasetukset käyttämään oletustunnistetietoja, 
 
 ### <a name="change-the-on-premises-data-gateway-service-account"></a>Paikallisen tietoyhdyskäytävän palvelutilin muuttaminen
 1. Vaihda **paikallisen tietoyhdyskäytävän** Windows-palvelutili.
-   
+
     Tämän palvelun oletustili on *NT SERVICE\PBIEgwService*. Sen tilalle kannattaa ehkä vaihtaa Active Directory -toimialueen sisällä oleva toimialueen käyttäjätili. Vaihtoehtoisesti voit käyttää hallittua palvelutiliä, jotta salasanoja ei tarvitse vaihtaa.
-   
+
     Haluat todennäköisesti vaihtaa **Kirjaudu**-välilehden tilin Windows-palvelun ominaisuuksissa.
 2. Käynnistä **Paikallinen tietoyhdyskäytävä -palvelu** uudelleen.
-   
+
     Syötä seuraavat komennot järjestelmänvalvojan komentoriville.
-   
+
         net stop PBIEgwService
-   
+
         net start PBIEgwService
 3. Käynnistä **paikallisen tietoyhdyskäytävän määritystoiminto**. Voit valita Windowsin Käynnistä-painikkeen ja tehdä haun *paikallinen tietoyhdyskäytävä*.
 4. Kirjaudu sisään Power BI:hin.
 5. Palauta yhdyskäytävä palautusavaimen avulla.
-   
+
     Tämän avulla uusi palvelutili voi purkaa tietolähteiden tallennetut tunnistetiedot.
-    
+
 > [!NOTE]
 > Käyttöoikeusluettelo ei päivity automaattisesti kun muutat palvelutiliä suoraan palvelun hallintapaneelista. Varmista, että uudella palvelutilillä on käyttöoikeudet asennustiedostoihin ja -kansioon. Yhdyskäytävän asennuskansio löytyy polusta C:\Ohjelmatiedostot\Paikallinen tietoyhdyskäytävä. 
 > 

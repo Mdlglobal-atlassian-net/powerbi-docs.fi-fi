@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 06/02/2018
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: e689e031395130bab8ad80d5d06936a9dabaf852
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: a99200707c8fc7de4fea2e32fe83238011bbf46c
+ms.sourcegitcommit: 627918a704da793a45fed00cc57feced4a760395
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34755066"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37926584"
 ---
 # <a name="troubleshooting-the-on-premises-data-gateway"></a>Paikallisen tietoyhdyskäytävän vianmääritys
 Tässä artikkelissa käsitellään yleisiä ongelmia, joita saattaa ilmetä käyttäessäsi **paikallista tietoyhdyskäytävää**.
@@ -31,10 +31,10 @@ Tässä artikkelissa käsitellään yleisiä ongelmia, joita saattaa ilmetä kä
 Yhdyskäytävä suoritetaan Windows-palveluna, joten voit käynnistää ja sammuttaa sen usein tavoin. Voit esimerkiksi avata komentokehotteen laajennetuin oikeuksin koneessa, jossa yhdyskäytävää suoritetaan, ja suorittaa jommankumman seuraavista komennoista:
 
 * Voit lopettaa palvelun suorittamalla seuraavan komennon:
-  
+
     '''   net stop PBIEgwService   '''
 * Voit käynnistää palvelun suorittamalla seuraavan komennon:
-  
+
     '''   net start PBIEgwService   '''
 
 ### <a name="error-failed-to-create-gateway-please-try-again"></a>Virhe: Yhdyskäytävän luominen epäonnistui. Yritä uudelleen.
@@ -70,7 +70,7 @@ Voit korjata tämän seuraavien ohjeiden avulla.
 
 1. Poista yhdyskäytävän asennus.
 2. Poista seuraava kansio.
-   
+
         c:\Program Files\On-premises data gateway
 3. Asenna yhdyskäytävä uudelleen.
 4. Voit myös palauttaa olemassa olevan yhdyskäytävän ottamalla käyttöön palautusavaimen.
@@ -129,11 +129,11 @@ Voit vahvistaa tämän toimimalla seuraavasti.
 
 1. Muodosta yhteys Analysis Services -koneeseen SQL Server Management Studiossa. Liitä Advanced Connection Properties -kohdassa kyseessä olevan käyttäjän EffectiveUserName ja tarkista, toistuuko ongelma.
 2. Dsacls Active Directory -työkalulla voit tarkistaa, onko määrite lueteltu. Työkalu löytyy yleensä toimialueen ohjauskoneesta. Sinun täytyy tietää tilin toimialueen DN-nimi ja välittää se työkalulle.
-   
+
         dsacls "CN=John Doe,CN=UserAccounts,DC=contoso,DC=com"
-   
+
     Tavoitteena on nähdä jotain samankaltaista tuloksissa.
-   
+
             Allow BUILTIN\Windows Authorization Access Group
                                           SPECIAL ACCESS for tokenGroupsGlobalAndUniversal
                                           READ PROPERTY
@@ -184,15 +184,15 @@ Voit tarkistaa tämän seuraavasti.
 
 1. Etsi käytössä oleva käyttäjänimi [yhdyskäytävälokeista](#logs).
 2. Kun sinulla on välitettävä arvo, tarkista, että se on oikea. Jos se on käyttäjäsi arvo, voit tarkistaa seuraavalla komentokehotteen komennolla, mikä täydellisen käyttäjätunnuksen tulisi olla. Täydellinen käyttäjätunnus näyttää sähköpostiosoitteelta.
-   
+
         whoami /upn
 
 Voit myös tarkistaa, mitä Power BI hakee Azure Active Directorysta.
 
-1. Siirry osoitteeseen [https://graphexplorer.cloudapp.net](https://graphexplorer.cloudapp.net).
+1. Siirry osoitteeseen [https://developer.microsoft.com/graph/graph-explorer](https://developer.microsoft.com/graph/graph-explorer).
 2. Valitse oikeasta yläkulmasta **Sign in**.
 3. Suorita seuraava kysely. Saat melko suuren JSON-vastauksen.
-   
+
         https://graph.windows.net/me?api-version=1.5
 4. Etsi **userPrincipalName**.
 
@@ -206,7 +206,7 @@ Tarkista oman tilauksesi palvelinkeskusalue seuraavasti:
 1. Valitse **?** Power BI -palvelun oikeasta yläkulmasta.
 2. Valitse **Tietoja Power BI:stä**.
 3. Näet palvelinkeskuksesi alueen kohdasta **Your data is stored in**.
-   
+
     ![](media/service-gateway-onprem-tshoot/power-bi-data-region.png)
 
 Jos et edelleenkään pääse mihinkään, voit kokeilla verkkojäljitystä [fiddlerin](#fiddler) tai netsh:n kaltaisella työkalulla. Ne ovat kuitenkin kehittyneitä keräystyökaluja, joten saatat tarvita apua kerättyjen tietojen analysointiin. Voit pyytää apua [tuesta](https://support.microsoft.com).
@@ -329,6 +329,7 @@ Vaihda tiedoston *Microsoft.PowerBI.DataMovement.Pipeline.Diagnostics.dll.config
 <a name="activities"></a>
 
 ### <a name="activity-types"></a>Tehtävätyypit
+
 | Tehtävätyyppi | Kuvaus |
 | --- | --- |
 | MGEQ |Nämä ovat suoritettuja ADO.NET-kyselyitä. Tämä käsittää DirectQuery-tietolähteet. |
@@ -342,9 +343,9 @@ Voit tarkistaa tietolähteen kyselyn keston seuraavasti.
 2. Etsi kysely [Activity Typen](#activities) avulla. Esimerkki tästä on vaikkapa MGEQ.
 3. Kirjaa muistiin toinen GUID, sillä se on pyynnön tunnus.
 4. Jatka MGEQ:n tarkistamista, kunnes löydät FireActivityCompletedSuccessfullyEvent-merkinnän, josta näet keston. Tarkista, että merkinnällä on sama pyyntötunnus. Kesto ilmoitetaan millisekunteina.
-   
+
         DM.EnterpriseGateway Verbose: 0 : 2016-09-26T23:08:56.7940067Z DM.EnterpriseGateway    baf40f21-2eb4-4af1-9c59-0950ef11ec4a    5f99f566-106d-c8ac-c864-c0808c41a606    MGEQ    21f96cc4-7496-bfdd-748c-b4915cb4b70c    B8DFCF12 [DM.Pipeline.Common.TracingTelemetryService] Event: FireActivityCompletedSuccessfullyEvent (duration=5004)
-   
+
    > [!NOTE]
    > FireActivityCompletedSuccessfullyEvent on yksityiskohtainen merkintä. Sitä ei kirjata ellei TraceVerbosity-asetus ole tasolla 5.
    > 
@@ -423,12 +424,12 @@ Saat virheen -10709 yhteyden epäonnistumisesta, jos delegointia ei ole määrit
 Kun käytät yhdyskäytävän ajoitettua päivitystä, **päivityshistoriasta** näet ilmenneet virheet sekä hyödyllisiä tietoja, jos sinun täytyy luoda tukipyyntö. Voit tarkistaa sekä ajoitetut päivitykset että pyynnöstä suoritetut päivitykset. Pääset **päivityshistoriaan seuraavasti**.
 
 1. Valitse Power BI:n siirtymisruudun **Tietojoukot**-kohdasta tietojoukko ja sitten &gt; Avaa valikko&gt; **Ajoita päivitys**.
-   
+
     ![](media/service-gateway-onprem-tshoot/scheduled-refresh.png)
 2. Valitse **Asetukset kohteelle...** &gt; **Ajoita päivitys** > **Päivityshistoria**.
-   
+
     ![](media/service-gateway-onprem-tshoot/scheduled-refresh-2.png)
-   
+
     ![](media/service-gateway-onprem-tshoot/refresh-history.png)
 
 Saat lisätietoja päivityksen vianmäärityksestä ohjeartikkelista [Päivitystilanteiden vianmääritys](refresh-troubleshooting-refresh-scenarios.md).

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/01/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 0d11c1bd865aade1ad54a361a0616f6426da1a67
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: da9a4ffad948a43077d864e442af36b0db6bb617
+ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34248407"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37136958"
 ---
 # <a name="reports-in-power-bi"></a>Raportit Power BI:ssä
 ## <a name="what-is-a-power-bi-report"></a>Mikä on Power BI -raportti?
@@ -76,7 +76,7 @@ Tässä on joitakin aiheita esiteltyinä roolin mukaan, joiden avulla pääset a
 > 
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
-[Power BI:n käytön aloittaminen](service-get-started.md) 
+[Mikä on Power BI?](power-bi-overview.md) 
 
 [Power BI:n peruskäsitteet](service-basic-concepts.md)
 

@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: conceptual
-ms.date: 04/23/2018
+ms.date: 07/03/2018
 ms.author: maghan
-ms.openlocfilehash: ad23161985cc2721562cfdfd9128e326db887ece
-ms.sourcegitcommit: 8ee0ebd4d47a41108387d13a3bc3e7e2770cbeb8
+ms.openlocfilehash: b3c9599ea3ce01094bb75d9b036fb25b1ca7109a
+ms.sourcegitcommit: 627918a704da793a45fed00cc57feced4a760395
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34813154"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37926555"
 ---
 # <a name="troubleshooting-your-embedded-application"></a>Upotetun sovelluksen vianmääritys
 
@@ -96,6 +96,44 @@ Sovelluksen taustatietokanta saattaa joutua päivittämään todennustunnuksen e
     {"error":{"code":"TokenExpired","message":"Access token has expired, resubmit with a new access token"}}
 ```
 
+## <a name="authentication"></a>Todentaminen
+
+### <a name="authentication-failed-with-aadsts70002-or-aadsts50053"></a>Todentaminen epäonnistui AADSTS70002:n tai AADSTS50053:n kanssa
+
+**(AADSTS70002: Virhe vahvistettaessa tunnistetietoja. AADSTS50053: Olet yrittänyt kirjautua sisään liian monta kertaa virheellisellä käyttäjätunnuksella tai salasanalla)**
+
+Jos käytät Power BI Embeddediä ja Azure AD:n suoraa todennusta ja saat kirjautumisviestejä, kuten ***virhe:unauthorized_client,error_description:AADSTS70002: Virhe vahvistettaessa tunnistetietoja. AADSTS50053: Olet yrittänyt kirjautua sisään liian monta kertaa virheellisellä käyttäjätunnuksella tai salasanalla***, koska suora todennus on poistettu käytöstä 14.06.2018.
+
+Suosittelemme käyttämään [Azure AD:n ehdollisen käyttöoikeuden](https://cloudblogs.microsoft.com/enterprisemobility/2018/06/07/azure-ad-conditional-access-support-for-blocking-legacy-auth-is-in-public-preview/) tukea vanhan todennuksen estämiseen tai käyttämään [Azure AD -hakemiston läpivientikyselyn todennusta](https://docs.microsoft.com/en-us/azure/active-directory/connect/active-directory-aadconnect-pass-through-authentication).
+
+Voit kuitenkin ottaa tämän takaisin käyttöön [Azure AD -käytännöllä](https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/configure-authentication-for-federated-users-portal#enable-direct-authentication-for-legacy-applications), joka voidaan joko suodattaa organisaatiolle tai [palveluobjektille](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-application-objects#service-principal-object).
+
+**_Suosittelemme ottamaan tämän käyttöön vain sovelluskohtaisesti ja vain tarvittaessa vaihtoehtoisena menetelmänä._**
+
+Jotta voit luoda tämän käytännön, sinun on oltava sen hakemiston **yleinen järjestelmänvalvoja**, johon luot ja määrität käytännön. Seuraavassa on esimerkki komentosarjasta käytännön luomiseksi ja sen määrittämiseksi tämän sovelluksen SP:lle:
+
+1. Asenna [Azure AD Preview PowerShell -moduuli](https://docs.microsoft.com/en-us/powershell/azure/active-directory/install-adv2?view=azureadps-2.0).
+
+2. Suorita seuraavat powershell-komennot rivi riviltä (varmista, että muuttujalle $sp saadaan tulokseksi vain yksi sovellus).
+
+```powershell
+Connect-AzureAD
+```
+
+```powershell
+$sp = Get-AzureADServicePrincipal -SearchString "Name_Of_Application"
+```
+
+```powershell
+$policy = New-AzureADPolicy -Definition @("{`"HomeRealmDiscoveryPolicy`":{`"AllowCloudPasswordValidation`":true}}") -DisplayName EnableDirectAuth -Type HomeRealmDiscoveryPolicy -IsOrganizationDefault $false
+```
+
+```powershell
+Add-AzureADServicePrincipalPolicy -Id $sp.ObjectId -RefObjectId $policy.Id 
+```
+
+Odota käytännön määrittämisen jälkeen noin 15–20 sekuntia välittämistä varten ennen testausta.
+
 **Voimassa olevista käyttäjätiedoista huolimatta tunnussanoman luominen epäonnistuu**
 
 Vaikka käyttäjätiedot olisivat voimassa GenerateToken voi epäonnistua muutamasta eri syystä.
@@ -113,6 +151,30 @@ Selvittääksesi syyn, kokeile seuraavaa.
 * Mikäli IsEffectiveIdentityRolesRequired on tosi, rooli vaaditaan.
 * Tietojoukon tunnus on pakollinen, minkä tahansa EffectiveIdentityn kanssa.
 * Pääkäyttäjän on oltava yhdyskäytävän järjestelmänvalvoja käyttääkseen Analysis Servicesiä.
+
+### <a name="aadsts90094-the-grant-requires-admin-permission"></a>AADSTS90094: Myöntäminen edellyttää järjestelmänvalvojan käyttöoikeutta
+
+**_Oireet:_**</br>
+Kun muu kuin järjestelmänvalvojana toimiva käyttäjä yrittää kirjautua sisään sovellukseen luvan myöntämiseksi, näkyviin tulee seuraava virhe:
+* ConsentTest tarvitsee organisaatiosi resurssien käyttöoikeuden, jonka vain järjestelmänvalvoja voi myöntää. Pyydä järjestelmänvalvojaa myöntämään käyttöoikeus tähän sovellukseen, ennen kuin voit käyttää sitä.
+* AADSTS90094: Myöntäminen edellyttää järjestelmänvalvojan käyttöoikeutta.
+
+    ![ConsentTest](media/embedded-troubleshoot/consent-test-01.png)
+
+Järjestelmänvalvojana toimiva käyttäjä voi kirjautua sisään ja myöntää luvan.
+
+**_Pääsyy:_**</br>
+Käyttäjän lupa on poistettu käytöstä vuokraajalle.
+
+**_Ongelma voidaan korjata eri tavoin:_**
+
+*Ota käyttäjän lupa käyttöön koko vuokraajalle (kaikki käyttäjät, kaikki sovellukset)*
+1. Siirry Azure-portaalissa kohtaan ”Azure Active Directory” = > ”Käyttäjät ja ryhmät” = > ”Käyttäjäasetukset”
+2. Ota käyttöön ”Käyttäjät voivat antaa sovelluksille luvan käyttää yrityksen tietoja puolestaan” -asetus ja tallenna muutokset
+
+    ![ConsentTest-korjaus](media/embedded-troubleshoot/consent-test-02.png)
+
+*Myönnä käyttöoikeudet järjestelmänvalvojana* Myönnä käyttöoikeudet sovellukseen järjestelmänvalvojana joko koko vuokraajalle tai tietylle käyttäjälle.
 
 ## <a name="data-sources"></a>Tietolähteet
 
@@ -175,9 +237,9 @@ Käyttäessäsi **organisaatiolle tarkoitettu upotus** -mallisovellusta, saat se
 
     AADSTS50011: The reply URL specified in the request does not match the reply URLs configured for the application: <client ID>
 
-Tämä johtuu siitä, että verkkopalvelinsovellukselle määritetty uudelleenohjauksen URL-osoite on eri kuin mallisovelluksen URL-osoite. Jos haluat rekisteröidä mallisovelluksen, käytä *http://localhost:13526/* uudelleenohjauksen URL-osoitteena.
+Tämä johtuu siitä, että verkkopalvelinsovellukselle määritetty uudelleenohjauksen URL-osoite on eri kuin mallisovelluksen URL-osoite. Jos haluat rekisteröidä mallisovelluksen, käytä `http://localhost:13526/`uudelleenohjauksen URL-osoitteena.
 
-Jos haluat muokata rekisteröityä sovellusta, ja opettele muokkaamaan [AAD-rekisteröityä sovellusta](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications#updating-an-application), jolloin sovellus tarjoaa pääsyn verkon ohjelmointirajapintoihin.
+Jos haluat muokata rekisteröityä sovellusta, opettele muokkaamaan [AAD-rekisteröityä sovellusta](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications#updating-an-application), jolloin sovellus tarjoaa pääsyn verkon ohjelmointirajapintoihin.
 
 Jos haluat muokata Power BI -käyttäjäprofiilia tai tietoja, opettele muokkaamaan [Power BI -tietoja](https://docs.microsoft.com/en-us/power-bi/service-basic-concepts).
 

@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 05/22/2018
+ms.date: 06/23/2018
 ms.author: mihart
 LocalizationGroup: Samples
-ms.openlocfilehash: f6e4be87b86d7a73abf364d1b526c1f6d549934c
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 02c3998a95e7d481ee032513054933f1484ae7f9
+ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34471728"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36944602"
 ---
 # <a name="the-power-bi-samples"></a>Power BI -mallit
 
@@ -36,29 +36,29 @@ Tässä opetusohjelmassa opit
 ## <a name="samples-and-power-bi-service"></a>Mallit ja Power BI -palvelu
 
 1. Avaa Power BI -palvelu ja kirjaudu sisään (app.powerbi.com).
-2. Valitse vasemman siirtymisruudun alareunassa **Hae tiedot**. Jos et näe **Hae tiedot** -kohtaa, laajenna siirtymisruutua valitsemalla ![](media/sample-tutorial-connect-to-the-samples/expand-nav.png).
+2. Valitse vasemman siirtymisruudun alareunassa **Nouda tiedot**. Jos et näe **Hae tiedot** -kohtaa, laajenna siirtymisruutua valitsemalla ![hampurilaiskuvake](media/sample-tutorial-connect-to-the-samples/expand-nav.png).
    
-   ![](media/sample-tutorial-connect-to-the-samples/pbi_getdata.png)
+   ![Hae tiedot -kuvake](media/sample-tutorial-connect-to-the-samples/pbi_getdata.png)
 5. Valitse **Mallit**.  
    
-   ![](media/sample-tutorial-connect-to-the-samples/pbi_samplesdownload.png)
+   ![Mallit-painike](media/sample-tutorial-connect-to-the-samples/pbi_samplesdownload.png)
 6. Valitse *Jälleenmyyntianalyysimalli* ja **Yhdistä**.   
    
-   ![](media/sample-tutorial-connect-to-the-samples/pbi_retailanalysissampleconnect.png)
+   ![keltainen Yhdistä-painike](media/sample-tutorial-connect-to-the-samples/pbi_retailanalysissampleconnect.png)
 
 ## <a name="what-exactly-was-imported"></a>Mitä tarkalleen ottaen tuotiin?
 Kun valitset sisältöpaketeissa **Yhdistä**, Power BI hakee kopion sisältöpaketista ja tallentaa sen sinulle pilvipalveluun. Sisältöpaketin luonut henkilö sisällytti tietojoukon, raportin ja koontinäytön, joten saat ne, kun valitset **Yhdistä**. 
 
 1. Power BI luo uuden koontinäytön ja lisää sen **Koontinäytöt**-välilehteesi. Keltainen tähti kertoo, että se on uusi.
    
-   ![](media/sample-tutorial-connect-to-the-samples/power-bi-new-dashboard.png)
+   ![onnistumisilmoitus](media/sample-tutorial-connect-to-the-samples/power-bi-new-dashboard.png)
 2. Avaa **Raportit**-välilehti.  Tässä näet uuden raportin nimeltä *Jälleenmyyntianalyysimalli*.
    
-   ![](media/sample-tutorial-connect-to-the-samples/power-bi-new-report.png)
+   ![punainen ruutu Jälleenmyyntianalyysimallin ympärillä ja keltainen tähti](media/sample-tutorial-connect-to-the-samples/power-bi-new-report.png)
    
    Katso **Tietojoukko**-välilehti.  Myös siellä on uusi tietojoukko.
    
-   ![](media/sample-tutorial-connect-to-the-samples/power-bi-new-dataset.png)
+   ![punainen ruutu Jälleenmyyntianalyysimallin ympärillä](media/sample-tutorial-connect-to-the-samples/power-bi-new-dataset.png)
 
 ## <a name="explore-your-new-content"></a>Tutustu uuteen sisältöösi
 Tutustu nyt itsenäisesti koontinäyttöön, tietojoukkoon ja raporttiin. Omiin koontinäyttöihin, raportteihin ja tietojoukkoihin on monta tapaa siirtyä, ja vain yksi näistä tavoista on kuvattu jäljempänä.  
@@ -70,13 +70,13 @@ Tutustu nyt itsenäisesti koontinäyttöön, tietojoukkoon ja raporttiin. Omiin 
 
 1. Siirry takaisin **Koontinäytöt**-välilehteen ja valitse ja avaa *Jälleenmyyntianalyysimalli*-koontinäyttö.    
    
-   ![](media/sample-tutorial-connect-to-the-samples/power-bi-dashboards.png)
+   ![Koontinäyttö-välilehti valittuna](media/sample-tutorial-connect-to-the-samples/power-bi-dashboards.png)
 2. Koontinäyttö avautuu.  Se sisältää erilaisia visualisointiruutuja.
    
-   ![](media/sample-tutorial-connect-to-the-samples/power-bi-dashboards2new.png)
+   ![koontinäyttö, jossa visualisointi korostettuna](media/sample-tutorial-connect-to-the-samples/power-bi-dashboards2new.png)
 3. Avaa ruudun taustalla oleva raportti valitsemalla jokin ruuduista.  Tässä esimerkissä valitsemme aluekaavion (rajattu vaaleanpunaisella edellisessä kuvassa). Raportti avautuu sivulle, joka sisältää kyseisen aluekaavion.
    
-    ![](media/sample-tutorial-connect-to-the-samples/power-bi-report.png)
+    ![raporttisivu, jossa vastaavat visualisoinnit korostettuna](media/sample-tutorial-connect-to-the-samples/power-bi-report.png)
    
    > [!NOTE]
    > Jos ruutu olisi luotu [Power BI Q&A](power-bi-q-and-a.md) -työkalulla, Q&A-sivu olisi avautunut. Jos ruutu olisi [kiinnitetty Excelistä](service-dashboard-pin-tile-from-excel.md), Excel Online olisi avautunut Power BI:n sisällä.
@@ -84,44 +84,44 @@ Tutustu nyt itsenäisesti koontinäyttöön, tietojoukkoon ja raporttiin. Omiin 
    > 
 1. **Tietojoukot**-välilehdessä on useita vaihtoehtoja tietojoukkoon tutustumiseen.  Et voi avata sitä ja tarkastella kaikkia rivejä ja sarakkeita (toisin kuin Power BI Desktop -versiossa tai Excelissä).  Jaettaessa sisältöpaketti työkaverin kanssa halutaan yleensä jakaa merkitykselliset tiedot eikä antaa suoraa pääsyä tietoihin. Tämä ei kuitenkaan tarkoita sitä, etteikö tietojoukkoon voisi tutustua.  
    
-   ![](media/sample-tutorial-connect-to-the-samples/power-bi-chart-icon2.png)
+   ![Tietojoukot-välilehti](media/sample-tutorial-connect-to-the-samples/power-bi-chart-icon2.png)
    
-   * Yksi tapa tutustua tietojoukkoon on luoda omat visualisoinnit ja raportit alusta alkaen.  Avaa tietojoukko raportin muokkaustilaan valitsemalla kaaviokuvake ![](media/sample-tutorial-connect-to-the-samples/power-bi-chart-icon4.png).
+   * Yksi tapa tutustua tietojoukkoon on luoda omat visualisoinnit ja raportit alusta alkaen.  Valitse kaaviokuvake ![raporttikuvake](media/sample-tutorial-connect-to-the-samples/power-bi-chart-icon4.png) tietojoukon avaamiseksi raportin muokkaustilassa.
      
-       ![](media/sample-tutorial-connect-to-the-samples/power-bi-report-editing.png)
+       ![täysin uusi raportti](media/sample-tutorial-connect-to-the-samples/power-bi-report-editing.png)
    * Toinen tapa tutustua tietojoukkoon on suorittaa [Nopeat merkitykselliset tiedot](service-insights.md) -toiminto. Valitse kolme pistettä (...) ja **Hae merkitykselliset tiedot**. Kun merkitykselliset tiedot ovat valmiit, valitse **Näytä merkitykselliset tiedot**.
      
-       ![](media/sample-tutorial-connect-to-the-samples/power-bi-insights.png)
+       ![Merkityksellisiä tietoja -raportti](media/sample-tutorial-connect-to-the-samples/power-bi-insights.png)
 
 ## <a name="samples-and-power-bi-desktop"></a>Mallit ja Power BI Desktop 
 Kun avaat PBIX-mallitiedoston, se avautuu Raportti-näkymään, jossa voit tutustua visualisointeja sisältäviin raporttisivuihin ja luoda tai muokata niitä. Raportti-näkymä on rakenteeltaan pääpiirteittäin sama kuin raportin muokkausnäkymä Power BI -palvelussa. Voit esimerkiksi siirtää, kopioida ja liittää sekä yhdistää visualisointeja.
 
 Ero näkymien välillä on, että käyttäessäsi Power BI Desktop -versiota voit työstää kyselyitäsi ja mallintaa tietosi, jotta ne varmasti tukevat raporttiesi parhaita merkityksellisiä tietoja. Voit sen jälkeen tallentaa Power BI Desktop -tiedoston minne tahansa, esimerkiksi paikalliselle asemalle tai pilvipalveluun.
 
-1. Avaa [Jälleenmyyntianalyysin .pbix-mallitiedosto](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail-Analysis-Sample-PBIX.pbix) Power BI Desktop -versiossa. 
+1. Avaa [Jälleenmyyntianalyysin .pbix-mallitiedosto](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix) Power BI Desktop -versiossa. 
 
-    ![](media/sample-tutorial-connect-to-the-samples/power-bi-samples-desktop.png)
+    ![Malli avattuna Power BI -raporttinäkymässä](media/sample-tutorial-connect-to-the-samples/power-bi-samples-desktop.png)
 
 1. Tiedosto avautuu Raportti-näkymään. Huomaatko raporttieditorin alareunassa olevat neljä välilehteä? Tämä tarkoittaa, että tässä raportissa on neljä sivua, ja Uudet myymälät -sivu on parhaillaan valittuna. 
 
-    ![](media/sample-tutorial-connect-to-the-samples/power-bi-sample-tabs.png).
+    ![lähikuva alaosan välilehdistä ja Uudet myymälät korostettuna](media/sample-tutorial-connect-to-the-samples/power-bi-sample-tabs.png).
 
 3. Tutustu raporttieditoriin tarkemmin katsomalla [raporttieditorin esittely](service-the-report-editor-take-a-tour.md)
 
 ## <a name="what-exactly-was-imported"></a>Mitä tarkalleen ottaen tuotiin?
 Kun avaat PBIX-mallitiedoston Desktop-versiossa, Power BI hakee kopion kyseisistä tiedoista ja tallentaa ne sinulle pilvipalveluun. Desktop-versiosta pääset käsiksi raporttiin ***ja sen pohjana olevaan tietojoukkoon***. Kun tiedot ladataan, Power BI Desktop yrittää löytää ja luoda suhteita puolestasi.  
 
-1. Siirry [Tiedot-näkymään](desktop-data-view.md) valitsemalla taulukkokuvake ![](media/sample-tutorial-connect-to-the-samples/power-bi-data-icon.png).
+1. Vaihda [Tiedot-näkymään](desktop-data-view.md) valitsemalla taulukkokuvake ![taulukkokuvake](media/sample-tutorial-connect-to-the-samples/power-bi-data-icon.png) .
  
-    ![](media/sample-tutorial-connect-to-the-samples/power-bi-desktop-sample-data.png)
+    ![Desktopin Tiedot-näkymä](media/sample-tutorial-connect-to-the-samples/power-bi-desktop-sample-data.png)
 
     Tiedot-näkymän avulla voit tarkastaa Power BI Desktop -mallin tiedot, tutustua niihin ja oppia ymmärtämään niitä. Se poikkeaa taulukoiden, sarakkeiden ja tietojen tarkastelusta kyselyeditorissa. Tiedot-näkymässä tarkastelet tietojasi sen jälkeen, kun ne on ladattu tietomalliin.
 
     Kun mallinnat tietojasi, haluat ehkä nähdä, mitä taulukossa tai sarakkeessa todella on ilman visualisoinnin luomista raporttipohjaan, usein ihan rivitasolle asti. Tämä pitää paikkansa erityisesti silloin, kun luot mittareita ja laskettuja sarakkeita tai kun sinun on tunnistettava tietotyyppi tai tietoluokka.
 
-1. Siirry [Suhteet-näkymään](desktop-relationship-view.md) valitsemalla kuvake ![](media/sample-tutorial-connect-to-the-samples/power-bi-desktop-relationship-icon.png).
+1. Vaihda [Suhteet-näkymään](desktop-relationship-view.md) valitsemalla kuvake ![kuvake, joka näyttää kolmelta yhdistetyltä ruudulta](media/sample-tutorial-connect-to-the-samples/power-bi-desktop-relationship-icon.png) .
  
-    ![](media/sample-tutorial-connect-to-the-samples/power-bi-relationships.png)
+    ![Suhteet-näkymä Power BI Desktopissa](media/sample-tutorial-connect-to-the-samples/power-bi-relationships.png)
 
     Suhteet-näkymässä näytetään mallisi kaikki taulukot, sarakkeet ja suhteet. Täällä voit tarkastella, muuttaa ja luoda suhteita.
 

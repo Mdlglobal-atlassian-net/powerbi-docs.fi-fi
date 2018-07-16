@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: ea5ce2e1e635149c91fbcf38d84e3093af7915c9
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 9366eff71e09b1f6c71c1f2519feb3d2392e3c58
+ms.sourcegitcommit: 695c65629d6d1faba61db2e1570324f65f235dde
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34243841"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37092640"
 ---
 # <a name="connect-to-acumatica-with-power-bi"></a>Yhteyden muodostaminen Acumaticaan Power BI:n avulla
 Power BI Acumatica -sisältöpaketin avulla saat nopeasti merkityksellisiä tietoja mahdollisuustiedoistasi. Power BI noutaa tiedot, esimerkiksi mahdollisuudet, tilit ja asiakkaat, ja laatii sitten oletuskoontinäytön ja siihen liittyvät raportit kyseisten tietojen perusteella.
@@ -66,7 +66,7 @@ Acumatica OData -päätepiste on muodoltaan seuraavanlainen ja sen pitäisi käy
 
     https://[sitedomain]/odata/[companyname]
 
-Kun olet kirjautunut Acumaticaan, sovelluksen sivuston toimialue näkyy selaimen osoiterivillä. Alla olevassa esimerkissä sivuston toimialue on ”https://pbi.acumatica.com”, joten OData-päätepiste olisi ”https://pbi.acumatica.com/odata”.
+Kun olet kirjautunut Acumaticaan, sovelluksen sivuston toimialue näkyy selaimen osoiterivillä. Alla olevassa esimerkissä sivuston toimialue on `https://pbi.acumatica.com`, joten OData-päätepiste olisi `https://pbi.acumatica.com/odata`.
 
  ![](media/service-connect-to-acumatica/url.png)
 

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/02/2018
 ms.author: davidi
 LocalizationGroup: Visualizations
-ms.openlocfilehash: fd4198bb6b826f8d4af22e83e313c4c0b8101024
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 016237c95d3494435931e143ff34dbe4a82abb55
+ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34299305"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37599660"
 ---
 # <a name="creating-r-visuals-in-the-power-bi-service"></a>R-visualisointien luominen Power BI -palvelussa
 Power BI -palvelu tukee R-komentosarjoilla luotujen visualisointien tarkastelemista ja käsittelemistä. R-komentosarjoilla luodut visualisoinnit, joita kutsutaan yleisesti nimellä *R-visualisoinnit*, voivat esittää kehittynyttä tietojen muotoilemista ja analytiikkaa, kuten ennusteita, hyödyntämällä R:n monipuolisia analytiikka- ja visualisointitaitoja.
@@ -37,7 +37,7 @@ Kun raportti luodaan **Power BI Desktopissa**, voit julkaista raportin, joka sis
 
 Huomaa, että palvelussa kaikkia R-paketteja ei tueta. Katso tämän artikkelin lopussa olevasta tuettujen pakettien luettelosta tällä hetkellä Power BI -palvelussa tuetut paketit.
 
-Voit ladata tämän [Power BI Desktop -mallitiedoston](http://download.microsoft.com/download/D/9/A/D9A65269-D1FC-49F8-8EC3-1217E3A4390F/RVisual_correlation_plot_sample SL.pbix) (.pbix-tiedosto), joka sisältää joitakin R-visualisointeja, nähdäksesi, miten tämä toimii, ja kokeillaksesi sitä.
+Voit ladata tämän [Power BI Desktop -mallitiedoston](http://download.microsoft.com/download/D/9/A/D9A65269-D1FC-49F8-8EC3-1217E3A4390F/RVisual_correlation_plot_sample%20SL.pbix) (.pbix-tiedosto), joka sisältää joitakin R-visualisointeja, nähdäksesi, miten tämä toimii, ja kokeillaksesi sitä.
 
 R-visualisoinnit, jotka on luotu **Power BI Desktopissa** ja sitten julkaistu Power BI -palveluun, toimivat suurelta osin minkä tahansa muun Power BI -palvelun visualisoinnin tavoin: voit olla vuorovaikutuksessa niiden kanssa, suodattaa ja osittaa niitä ja kiinnittää niitä koontinäyttöön tai jakaa niitä muiden kanssa. Katso lisätietoja koontinäyttöjen ja visualisointien jakamisesta kohdasta [Koontinäytön jakaminen työtoverien ja muiden kanssa](service-share-dashboards.md). Yksi ero muihin visualisointeihin on se, että R-visualisoinneissa ei voi näyttää työkaluvihjeitä eikä niitä voi käyttää muiden visualisointien suodattamiseen.
 

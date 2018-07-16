@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 94b019f04fb6fabcad3092524fd2724015a6d8e1
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 7cc2519353be7f83f69cdc6dda9d5f1a8ccc33a3
+ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34242186"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37137017"
 ---
 # <a name="connect-to-microsoft-dynamics-marketing-with-power-bi"></a>Yhteyden muodostaminen Microsoft Dynamics Marketingiin Power BI:n avulla
 Microsoft Dynamics Marketingin Power BI -sisältöpaketin avulla voit helposti käyttää ja analysoida tietojasi Dynamics Marketingista. Sisältöpaketti hyödyntää OData-syötteen päällä kuvaavaa mallia, joka sisältää kaikki kohteet ja mittarit, kuten ohjelmat, kampanjat, markkinoinnin yhteyshenkilöt ja yritykset, liidit, liidien vuorovaikutukset ja liidien pisteyttämisen, sähköpostimarkkinoinnin viestit ja verkkosivustot, havainnot käyttäytymisestä, budjetit, kirjanpitotapahtumat, suorituskykyilmaisimet jne. 
@@ -47,10 +47,10 @@ Muodosta yhteys Power BI:lle tarkoitettuun [Dynamics Marketing -sisältöpaketti
 
 **Mitä seuraavaksi?**
 
-* Kokeile [kysymyksen esittämistä koontinäytön yläreunassa olevassa Q&A-ruudussa](power-bi-q-and-a.md).
+* Kokeile [kysymyksen esittämistä raporttinäkymän yläreunassa olevassa Q&A-ruudussa](power-bi-q-and-a.md).
 * [Muuta koontinäytön ruutuja](service-dashboard-edit-tile.md).
 * [Valitse jokin ruutu](service-dashboard-tiles.md), jolloin siihen liittyvä raportti avautuu.
-* Tietojoukko on ajastettu päivittymään päivittäin, mutta voit muuttaa päivitysaikataulua tai kokeilla tietojoukon päivittämistä **Päivitä nyt** -toiminnolla haluamanasi ajankohtana.
+* Tietojoukko on ajastettu päivittymään päivittäin, mutta voit muuttaa päivitysaikataulua tai kokeilla tietojoukon päivittämistä **Päivitä nyt** -toiminnolla haluamanasi ajankohtana
 
 ## <a name="system-requirements"></a>Järjestelmävaatimukset
 * Sinun on määritettävä kelvollinen OData-URL-osoite Dynamics Marketingin esiintymää varten (sisältöpaketti ei toimi paikallisen CRM-version kanssa).  
@@ -72,5 +72,5 @@ Jos ongelmat jatkuvat, ota yhteyttä Power BI:n tiimiin tekemällä tukipalvelup
 ## <a name="next-steps"></a>Seuraavat vaiheet
 [Tietojen noutaminen Power BI:hin](service-get-data.md)
 
-[Power BI:n käytön aloittaminen](service-get-started.md)
+[Mikä on Power BI?](power-bi-overview.md)
 

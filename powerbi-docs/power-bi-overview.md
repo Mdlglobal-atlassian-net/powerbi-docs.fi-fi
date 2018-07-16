@@ -1,22 +1,22 @@
 ---
-title: Mikä Power BI on?
+title: Mikä on Power BI?
 description: Yhteenveto Power BI:stä ja siitä miten sen eri osat - Power BI Desktop, Power BI -palvelu, Power BI -mobiilisovellus, raporttipalvelin, Power BI Embedded - toimivat yhdessä.
 author: mihart
 manager: kfile
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: overview
-ms.date: 06/04/2018
+ms.date: 06/22/2018
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 78edb9d45df1332a25ec27476562d6105c7a8a48
-ms.sourcegitcommit: b3b32b9b3935706d7caa091833bd32259d7ff6ee
+ms.openlocfilehash: c2e0dc401e5927e69ecb9b059042df646b238bd5
+ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34755365"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36944395"
 ---
-# <a name="what-is-power-bi"></a>Mikä Power BI on?
+# <a name="what-is-power-bi"></a>Mikä on Power BI?
 **Power BI** on kokoelma ohjelmistopalveluja, sovelluksia ja yhdistimiä, jotka yhdessä muuntavat toisiinsa liittymättömistä lähteistä peräisin olevan tiedon johdonmukaisiksi, visuaalisesti vaikuttaviksi ja vuorovaikutteisiksi näkemyksiksi. **Power BI:n** avulla voit helposti muodostaa yhteyden tietolähteisiin, jotka voivat olla lähes mitä tahansa yksinkertaisesta Excel-laskentataulukosta kokoelmaan pilvipohjaisia ja paikallisia hybriditietovarastoja. Voit löytää ja visualisoida tärkeät tiedot sekä jakaa tulokset kaikille tarvittaville tahoille.
 
 ![kaavio, jossa näkyvät Power BI:n syöttölähteet](media/power-bi-overview/power-bi-input.png)
@@ -57,4 +57,5 @@ Luo, ota käyttöön ja hallitse Power BI ‑mobiiliraportteja ja sivutettuja ra
 Power BI -raporttipalvelin on ratkaisu, jonka voit ottaa käyttöön oman palomuurisi sisällä ja toimittaa sitten raporttisi halutuille käyttäjille eri tavoilla, halusivat he sitten katsella niitä verkkoselaimella, mobiililaitteella tai sähköpostiviestinä. Ja koska Power BI -raporttipalvelin on yhteensopiva Power BI:n kanssa pilvipalvelussa, voit siirtyä pilvipalveluun, kun olet valmis.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
-[Kirjaudu sisään, hae tietoja ja opettele käyttämään Power BI-palvelua](service-the-new-power-bi-experience.md)
+[Kirjaudu sisään, hae tietoja ja opettele käyttämään Power BI -palvelua](service-the-new-power-bi-experience.md)   
+[Opetusohjelma: Power BI -palvelun käytön aloittaminen](service-get-started.md)

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/18/2018
 ms.author: v-mamcge
 LocalizationGroup: Reports
-ms.openlocfilehash: 78dcd0ac0735bfbb3c22678d6bda1397120360cd
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 58ae70553264b8055603da66a4cfd71b5c74a3e9
+ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34310540"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37598865"
 ---
 # <a name="power-bi-performance-best-practices"></a>Power BI:n suorituskykyä parantavat parhaat käytännöt 
 Tässä artikkelissa annetaan ohjeita nopeiden ja luotettavien raporttien luomiseen Power BI:ssä.  
@@ -115,7 +115,7 @@ Ohjeet ovat seuraavat:
    [msmdsrv.exe] 
 
    Etsi msmdsrv.exen käyttämä portti ja kirjoita se myöhempää käyttöä varten. Tässä tapauksessa voit käyttää porttia 55786. 
-3.  **Yhdistä SQL Server Profiler -työkalu Power BI Desktopiin** 
+3. **Yhdistä SQL Server Profiler -työkalu Power BI Desktopiin** 
 
    - Käynnistä SQL Server Profiler **Käynnistä**-valikon kautta 
    - **Tiedosto** > **Uusi jäljitys** 

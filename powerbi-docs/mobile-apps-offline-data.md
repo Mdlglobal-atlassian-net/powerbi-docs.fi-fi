@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-mobile
 ms.topic: conceptual
-ms.date: 01/16/2018
+ms.date: 06/27/2018
 ms.author: maggies
-ms.openlocfilehash: 5dd171ccd7d8859286abeac2f87771b454421448
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: cade8b126742610814f47587c950458796cca474
+ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34292842"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37136475"
 ---
 # <a name="view-your-data-offline-in-the-power-bi-mobile-apps"></a>Tietojen tarkastelu offline-tilassa Power BI -mobiilisovelluksissa
 Koskee seuraavia:
@@ -55,7 +55,8 @@ Kun olet offline-tilassa ja Power BI on mobiililaitteessasi, saatat kohdata näi
 * Power BI voi tallentaa välimuistiin enintään 250 megatavua tietoa offline-tilassa.
 * Tietyt ruututyypit edellyttävät, että käytössä on aktiivinen palvelinyhteys, joten ne eivät ole käytettävissä offline-tilassa. Tällaisia ovat esimerkiksi Bing-karttaruudut ja tietyt mukautetut ruudut.
 * Power BI:ssä olevat koko Excel-työkirjat eivät ole käytettävissä offline-tilassa.
-* Näet Reporting Services -mobiiliraportit ja -suorituskykyilmaisimet offline-tilassa, jos olet tarkastellut niitä online-tilassa. Ne eivät päivity taustalla. Ne päivittyvät aina, kun avaat ne. 
+* Näet Reporting Services -mobiiliraportit ja -suorituskykyilmaisimet offline-tilassa, jos olet tarkastellut niitä online-tilassa. Ne eivät päivity taustalla. Ne päivittyvät aina, kun avaat ne.
+* Et näe Power BI -mobiilisovelluksissa Power BI Desktop (.pbix) -tiedostoja, jotka on tallennettu Power BI -raporttipalvelimelle. 
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 Palaute auttaa meitä päättämään, mitä toimintoja otamme käyttöön tulevaisuudessa, joten muista äänestää muita ominaisuuksia, jotka haluaisit nähdä Power BI ‑mobiilisovelluksissa. 
@@ -63,5 +64,5 @@ Palaute auttaa meitä päättämään, mitä toimintoja otamme käyttöön tulev
 * [Power BI -sovellukset mobiililaitteille](mobile-apps-for-mobile-devices.md)
 * Seuraa käyttäjää @MSPowerBI Twitterissä
 * Liity keskusteluun [Power BI -yhteisössä](http://community.powerbi.com/)
-* [Power BI:n käytön aloittaminen](service-get-started.md)
+* [Mikä on Power BI?](power-bi-overview.md)
 

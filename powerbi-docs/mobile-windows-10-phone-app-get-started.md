@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-mobile
 ms.topic: conceptual
-ms.date: 12/05/2017
+ms.date: 06/28/2018
 ms.author: maggies
-ms.openlocfilehash: 6cd1c8aec1bf31a8cae43074531014cbeef71bd5
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 2ee490107b802957b262d0a133d8e8b0e2a42754
+ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34295119"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37135785"
 ---
 # <a name="get-started-with-the-power-bi-mobile-app-for-windows-10"></a>Windows 10:n Power BI -mobiilisovelluksen käytön aloittaminen
 Windows 10:n Power BI -mobiilisovellus tuo Power BI:n tablettiin tai puhelimeen ja sen myötä ajan tasalla olevan, kosketuskäyttöisen mobiiliyhteyden yritystietoihisi. Tarkastele ja käytä yrityksesi koontinäyttöjä missä tahansa kätevästi [Windowsin Aloitusnäytöllä](mobile-pin-dashboard-start-screen-windows-10-phone-app.md).
@@ -121,6 +121,6 @@ Seuraavassa on joitakin muita asioita, voit tehdä Power BI -sovelluksessa Windo
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 * [Lataa Power BI -sovellus](http://go.microsoft.com/fwlink/?LinkID=526478) Windows Storesta  
-* [Aloita Power BI:n käyttäminen](service-get-started.md)
+* [Mikä on Power BI?](power-bi-overview.md)
 * Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)
 

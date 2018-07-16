@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 04/04/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: f54aa5a67739a3ad6f9ea0a42f8a2b872e51d52d
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: da688638170db8a296c680bc88c1030924078967
+ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34230918"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37134543"
 ---
 # <a name="connect-to-adobe-analytics-in-power-bi-desktop"></a>Adobe Analyticsiin yhdistäminen Power BI Desktopissa 
 Voit **Power BI Desktopissa** yhdistää **Adobe Analyticsiin** ja käyttää pohjana olevia tietoja samalla tavalla kuin mitä tahansa muuta tietolähdettä Power BI Desktopissa. 
@@ -43,7 +43,7 @@ Voit **ladata** valitun taulukon, jolloin koko taulukko tuodaan **Power BI Deskt
 ## <a name="next-steps"></a>Seuraavat vaiheet
 Power BI Desktopin avulla voit muodostaa yhteyden hyvin monenlaisiin tietoihin. Lisätietoja näistä tietolähteistä saat seuraavista resursseista:
 
-* [Power BI Desktopin käytön aloittaminen](desktop-getting-started.md)
+* [Mikä on Power BI Desktop?](desktop-what-is-desktop.md)
 * [Power BI Desktopin tietolähteet](desktop-data-sources.md)
 * [Tietojen muotoilu ja yhdistäminen Power BI Desktopissa](desktop-shape-and-combine-data.md)
 * [Yhteyden muodostaminen Excel-työkirjoihin Power BI Desktopissa](desktop-connect-excel.md)   

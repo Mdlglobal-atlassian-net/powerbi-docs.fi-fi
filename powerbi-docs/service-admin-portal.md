@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 04/02/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: a604f50889d4443ba7c8e7da580275e579f69d15
-ms.sourcegitcommit: 4b61588e3ab3c8bbb17276402dbf7fa00085a266
+ms.openlocfilehash: e2b61f84b459d3b14c2cd066e0261dcdb1b8a5ef
+ms.sourcegitcommit: 5eb8632f653b9ea4f33a780fd360e75bbdf53b13
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35301822"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36965500"
 ---
 # <a name="power-bi-admin-portal"></a>Power BI -hallintaportaali
 
@@ -99,6 +99,8 @@ Saat lisätietoja valvontalokeista ohjeartikkeleista [Organisaation Power BI:n v
 ## <a name="tenant-settings"></a>Vuokraaja-asetukset
 
 Hallintaportaalin neljäs välilehti on nimeltään **Vuokraaja-asetukset**. Vuokraaja-asetusten avulla voit hallita tarkemmin organisaatiossasi käyttöön tarjottavia toimintoja. Jos olet huolissasi luottamuksellisista tiedoista, jotkin toiminnoista eivät ehkä sovellu organisaatiollesi. Tai kenties ehkä haluat tarjota tietyn toiminnon vain tietylle ryhmälle. Tällaisissa tapauksissa voit poistaa toimintoja käytöstä vuokraajatililläsi.
+
+Esimerkiksi käyttäjäkohtaiset tiedot on otettu käyttöön käyttötiedoille oletusarvoisesti ja sisällön luojan tilitiedot sisältyvät tietoraporttiin. Jos et halua sisällyttää näitä tietoja joillekin tai kaikille käyttäjille, poista ominaisuus käytöstä määritetyille käyttöoikeusryhmille tai koko organisaatiolle. Tilitiedot näkyvät sitten raportissa *nimettöminä*.
 
 ![](media/service-admin-portal/powerbi-admin-tenant-settings.png)
 
@@ -235,7 +237,7 @@ Organisaation käyttäjät voivat käyttää mukautettuja visualisointeja ja jak
 
 ## <a name="r-visuals-settings"></a>R-visualisointien asetukset
 
-### <a name="interact-with-an-dshare-r-visuals"></a>R-visualisointien käyttäminen
+### <a name="interact-with-and-share-r-visuals"></a>Tee toimia R-visualisointien kanssa ja jaa niitä
 
 Organisaation käyttäjät voivat käyttää R-komentosarjoilla luotuja visualisointeja ja jakaa niitä. [Lue lisää](service-r-visuals.md)
 

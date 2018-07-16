@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 03/02/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 07db52bd2ffd881417f7ff59647c6779f7dc6bce
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: e2df8ecd746e34b85a3fdd15943ff6eda5712663
+ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34248338"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37598974"
 ---
 # <a name="edit-or-remove-a-dashboard-tile"></a>Koontinäytön ruudun muokkaaminen tai poistaminen
 
@@ -35,12 +35,12 @@ Tässä artikkelissa käsitellään vaihtoehdoista seuraavat:
 * [Ruudun kiinnittäminen toiseen koontinäyttöön](#different)
 * [Ruudun poistaminen](#delete)
   
- > [!TIP]
- > Jos haluat vaihtaa ruudussa näytettävän visualisoinnin, poista ruutu ja lisää uusi [koontinäytön ruutu](service-dashboard-tiles.md).
- > 
+  > [!TIP]
+  > Jos haluat vaihtaa ruudussa näytettävän visualisoinnin, poista ruutu ja lisää uusi [koontinäytön ruutu](service-dashboard-tiles.md).
 
- ### <a name="prerequisites"></a>Edellytykset
- 1. Voidaksesi tehdä opastuksen mukana samat vaiheet itse, avaa Power BI -palvelu (ei Power BI Desktop) ja [lataa itsellesi IT-kulutusanalyysimalli](sample-it-spend.md). Kun näkyviin tulee onnistumissanoma, valitse **Siirry koontinäyttöön**
+  
+## <a name="prerequisites"></a>Edellytykset
+Voidaksesi tehdä opastuksen mukana samat vaiheet itse, avaa Power BI -palvelu (ei Power BI Desktop) ja [lataa itsellesi IT-kulutusanalyysimalli](sample-it-spend.md). Kun näkyviin tulee onnistumissanoma, valitse **Siirry koontinäyttöön**
 
 - - -
 <a name="create"></a>

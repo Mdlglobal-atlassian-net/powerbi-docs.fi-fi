@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 12/18/2017
+ms.date: 06/20/2018
 ms.author: maghan
 LocalizationGroup: Data from databases
-ms.openlocfilehash: 27b2eb90a07d3112b771fd3ee23cc86353a46991
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: a1ae30097e0af90d5da8acd0d41b11f513756f88
+ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34242245"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37135900"
 ---
 # <a name="azure-sql-database-with-directquery"></a>Azure SQL -tietokanta ja DirectQuery
 Lue, miten voit muodostaa yhteyden suoraan Azure SQL -tietokantaan ja luoda raportteja, joissa käytetään reaaliaikaisia tietoja. Voit pitää tietosi lähteessä Power BI:n sijaan.
@@ -31,7 +31,11 @@ DirectQueryn avulla kyselyt lähetetään takaisin Microsoft Azuren SQL-tietokan
 * Q&A ei ole käytettävissä DirectQuery-tietojoukoissa
 * Rakenteen muutoksia ei poimita automaattisesti
 
-Nämä rajoitukset ja muistiinpanot saattavat muuttua jatkaessamme käyttökokemusten kehittämistä. Yhdistämisen vaiheet on kuvattu alla. 
+Nämä rajoitukset ja muistiinpanot saattavat muuttua jatkaessamme käyttökokemusten kehittämistä. Yhdistämisen vaiheet on kuvattu alla.
+
+> [!Important]
+> Olemme parantaneet liitettävyyttämme Azure SQL -tietokantaan.  Pystyt parhaiten muodostamaan yhteyden Azure SQL -tietokannan tietolähteeseen Power BI Desktopin avulla.  Kun olet luonut mallin ja raportin, voit julkaista sen Power BI -palvelussa.  Suora yhdistin Azure SQL -tietokannalle Power BI-palvelussa on nyt vanhentunut.
+>
 
 ## <a name="power-bi-desktop-and-directquery"></a>Power BI Desktop ja DirectQuery
 Jotta voit muodostaa yhteyden Microsoft Azuren SQL-tietokantaan DirectQueryä käyttämällä, sinun on käytettävä Power BI Desktopia. Tämä lähestymistapa tarjoaa enemmän joustavuutta ja ominaisuuksia. Power BI Desktopin avulla luodut raportit voidaan sitten julkaista Power BI -palveluun. Saat lisätietoja yhteyden muodostamisesta [Microsoft Azuren SQL-tietokantaan DirectQueryä käyttämällä](desktop-use-directquery.md) Power BI Desktopissa. 
@@ -57,6 +61,6 @@ Täydellinen palvelimen nimi ja tietokannan nimi löytyvät Azure-portaalista.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 [DirectQueryn käyttö Power BI Desktopissa](desktop-use-directquery.md)  
-[Power BI:n käytön aloittaminen](service-get-started.md)  
+[Mikä on Power BI?](power-bi-overview.md)  
 [Tietojen noutaminen Power BI:hin](service-get-data.md)  
 Onko sinulla muuta kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)

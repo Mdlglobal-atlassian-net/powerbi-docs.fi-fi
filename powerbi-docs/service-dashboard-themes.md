@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 06/05/2018
+ms.date: 06/22/2018
 ms.author: mihart
 LocalizationGroup: Create reports
-ms.openlocfilehash: 331dc45f3049fe77145b86ffafd363162c74a589
-ms.sourcegitcommit: 8ee0ebd4d47a41108387d13a3bc3e7e2770cbeb8
+ms.openlocfilehash: d17694d6dd2e2133b80d326a8aa86194d5710946
+ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34813798"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36944648"
 ---
 # <a name="use-dashboard-themes-in-power-bi-service"></a>Raporttinäkymän teemojen käyttö Power BI-palvelussa
 **Raporttinäkymän teemojen** avulla voit käyttää väriteemaa koko raporttinäkymässä, kuten yrityksen värejä, kausivärejä tai mitä tahansa muuta haluamaasi väriteemaa. Kun otat **raporttinäkymän teeman** käyttöön, kaikki raporttinäkymän visualisoinnit käyttävät valitun teeman värejä (lukuun ottamatta muutamia poikkeuksia, jotka kuvataan myöhemmin tässä artikkelissa).
@@ -89,7 +89,6 @@ Valmiit ja mukautetut asetukset, kuten myös teeman värit, otetaan automaattise
 
     ![Käytä kohdeteemaa](media/service-dashboard-themes/power-bi-use-destination.png)
 
-* Raporttinäkymän teemoja ei tällä hetkellä tueta tarkasteltaessa upotettua raporttinäkymää mobiililaitteella, käyttämällä REST-ohjelmointirajapintaa tai ulkoisia käyttäjiä.    
 * Raporttinäkymän teemoja ei voida käyttää kiinnitetyissä reaaliaikaisissa raporttisivuissa, iframe-ruuduissa, SSRS-ruuduissa, työkirjan ruuduissa tai kuvissa.
 * Raporttinäkymän teemoja voi tarkastella mobiililaitteilla, mutta raporttinäkymän teemoja voidaan luoda vain Power BI -palvelussa. 
 * Raporttinäkymän mukautetut teemat toimivat vain raporteista kiinnitetyissä ruuduissa. 

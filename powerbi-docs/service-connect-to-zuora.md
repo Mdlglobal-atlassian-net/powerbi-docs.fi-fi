@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: f283a8ed273dcb609e9d5160adbeb714e8935ab9
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 57e1e8ce015db9b5f88f7b685c80092023540a6f
+ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34251929"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37599131"
 ---
 # <a name="connect-to-zuora-with-power-bi"></a>Yhteyden muodostaminen Zuoraan Power BI:llä
 Zuora for Power BI:n avulla voit visualisoida tärkeät tuotto-, laskutus- ja tilaustiedot. Käytä oletusraporttinäkymiä ja -raportteja käyttötrendien analysointiin, laskutuksen ja maksujen seurantaan sekä toistuvan tuoton valvontaan, tai mukauta niitä omien raporttinäkymä- ja raportointitarpeidesi mukaan.
@@ -32,7 +32,7 @@ Yhteyden muodostaminen [Zuora](https://app.powerbi.com/getdata/services/Zuora) f
 3. Valitse **Zuora** \>  **Nouda**.
 
    ![](media/service-connect-to-zuora/zuora.png)
-4. Määritä Zuoran URL-osoite. Tämä on tavallisesti ”https://www.zuora.com”; katso lisätiedot [näiden parametrien etsimistä](#FindingParams) alta.
+4. Määritä Zuoran URL-osoite. Tämä on tavallisesti ”<https://www.zuora.com>”; katso lisätiedot [näiden parametrien etsimistä](#FindingParams) alta.
 
    ![](media/service-connect-to-zuora/params.png)
 5. Valitse **Todennusmenetelmä**-kohdassa **Perus** ja anna käyttäjänimesi ja salasanasi (kirjainkoolla on merkitystä), ja valitse sitten **Kirjaudu sisään**.

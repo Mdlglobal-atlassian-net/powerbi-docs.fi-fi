@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 01/17/2018
 ms.author: mihart
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 0e98c68e62f36114257052171e0928db25853f24
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: ebe53241bed0f31bfd64d860cff7c8fc2e54500c
+ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34239484"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37599226"
 ---
 # <a name="tutorial-how-to-use-qa-to-create-visualizations-and-build-reports"></a>Opetusohjelma: Visualisointien ja raporttien luominen Q&A-toiminnon avulla
 [Q&A-yleiskatsauksessa](power-bi-q-and-a.md) opit Power BI:n Q&A-toiminnon perusteet sekä *kuluttajien* (joille jaetaan koontinäyttöjä ja raportteja) ja *luojien* (pohjana olevien raporttien ja tietojoukkojen omistajat) erot. Tässä opetusohjelmassa ensimmäinen osa on tarkoitettu ensisijaisesti kuluttajille, jotka käyttävät Power BI -palvelua. Toinen osa on tarkoitettu henkilöille, jotka luovat raportteja joko Power BI -palvelussa tai Power BI Desktopissa. Muita tähän liittyviä artikkeleita ovat [Q&A ja Power BI:n mobiilisovellus](mobile-apps-ios-qna.md) sekä [Q&A ja Power BI Embedded](developer/qanda.md).
@@ -90,9 +90,9 @@ Q&A:n käyttö raporteissa edellyttää raportin ja pohjana olevan tietojoukon m
 
 6. Tee haluamasi toimet uudessa visualisoinnissa. Visualisoinnin luontimenetelmällä ei ole merkitystä – sama vuorovaikutteisuus sekä kaikki muotoilut ja ominaisuudet ovat käytettävissä.
 
-  ![](media/power-bi-tutorial-q-and-a/power-bi-q-and-a-ellipses.png)
+   ![](media/power-bi-tutorial-q-and-a/power-bi-q-and-a-ellipses.png)
 
-  Jos olet luonut visualisoinnin Power BI -palvelussa, voit myös [kiinnittää sen koontinäyttöön](service-dashboard-pin-tile-from-q-and-a.md).
+   Jos olet luonut visualisoinnin Power BI -palvelussa, voit myös [kiinnittää sen koontinäyttöön](service-dashboard-pin-tile-from-q-and-a.md).
 
 ## <a name="tell-qa-which-visualization-to-use"></a>Kerro Q&A:lle minkä visualisoinnin haluat.
 Q&A:n avulla voit saada tietosi puhumaan puolestaan, mutta myös Power BI:n näyttämään vastauksen haluamassasi muodossa. Lisää vain ”nimellä <visualization type>” kysymyksesi loppuun.  Esimerkiksi ”näytä varastotilanne tuotantolaitoksen mukaan karttana” tai ”näytä varasto yhteensä korttina”.  Kokeile itse.

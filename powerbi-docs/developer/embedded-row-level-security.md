@@ -9,12 +9,12 @@ ms.component: powerbi-developer
 ms.topic: conceptual
 ms.date: 02/22/2018
 ms.author: maghan
-ms.openlocfilehash: 806ec6051cf8b77dfe17664d82e6add40147f0ed
-ms.sourcegitcommit: 4b61588e3ab3c8bbb17276402dbf7fa00085a266
+ms.openlocfilehash: d41b0a84d512c5ef6cebf810a89fd74a838c672e
+ms.sourcegitcommit: 9efb94ddb254e9c03e9871ad232509065ee24bf2
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35301730"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37864349"
 ---
 # <a name="use-row-level-security-with-power-bi-embedded-content"></a>Rivitason suojaus Power BI:n upotetussa sisällössä
 Rivitason suojauksen (row level security, RLS) avulla käyttäjien käyttöoikeuksia koontinäyttöjen, ruutujen, raporttien ja tietojoukkojen tietoihin voidaan rajoittaa. Eri käyttäjät voivat nähdä eri tiedot käyttäessään kyseisiä kohteita. Upottaminen tukee rivitason suojausta.
@@ -65,11 +65,11 @@ Ohjeet:
 3. Kirjoita **Alue**-taulukkoon seuraava DAX-lauseke: **[alueen johtaja] = USERNAME()**.
    
     ![Rivitason suojauksen säännön DAX-lauseke](media/embedded-row-level-security/powerbi-embedded-new-role-dax.png)
-4. Varmista, että säännöt toimivat, valitsemalla **Mallinnus**-välilehdeltä **Näytä rooleina** ja valitse sitten sekä juuri luomasi **Johtaja** että **Muu käyttäjä**. Valitse **Antero Ma** käyttäjäksi.
+4. Varmista sääntöjen toimivuus valitsemalla **Mallinnus**-välilehdeltä **Näytä rooleina** ja valitsemalla sitten sekä juuri luomasi **Johtaja**-rooli että **Muut käyttäjät**. Valitse **Antero Ma** käyttäjäksi.
    
     ![Näytä rooleina -valintaikkuna](media/embedded-row-level-security/powerbi-embedded-new-role-view.png)
    
-    Raportit näkyvät tiedot nyt ikään kuin olisit kirjautuneena **Antero Ma** -tilillä.
+    Raportit näyttävät tiedot nyt ikään kuin olisit kirjautuneena **Antero Ma** -tilillä.
 
 Kun suodatinta käytetään näin, kaikki **Alue-**, **Myymälä-** ja **Myynti**-taulukkojen tietueet suodatetaan. **Myynti-** ja **Aika**-taulukkojen, **Myynti-** ja **Kohde**-taulukkojen ja **Kohde-** ja **Aika**-taulukkojen yhteyksiin käytettyjen suodattimien suunnan vuoksi taulukoita ei suodateta alaspäin. Saat lisätietoja kaksisuuntaisesta ristiinsuodatuksesta lataamalla [Kaksisuuntainen ristiinsuodatus SQL Server Analysis Services 2016:ssa ja Power BI Desktopissa](http://download.microsoft.com/download/2/7/8/2782DF95-3E0D-40CD-BFC8-749A2882E109/Bidirectional%20cross-filtering%20in%20Analysis%20Services%202016%20and%20Power%20BI.docx) -raportin.
 

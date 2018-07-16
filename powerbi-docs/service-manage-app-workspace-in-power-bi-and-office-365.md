@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/12/2017
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 859ab3fdfd06040d8bbf131ab91ea6c9f84deb40
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: d298c750d23e22ef0a6b2791916add13bb260ad0
+ms.sourcegitcommit: 5eb8632f653b9ea4f33a780fd360e75bbdf53b13
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34241943"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36965201"
 ---
 # <a name="manage-your-app-workspace-in-power-bi-and-office-365"></a>Sovellustyötilan hallinta Power BI:ssä ja Office 365:ssä
 [Power BI:ssä](service-install-use-apps.md) tai Office 365:ssä olevan sovellustyötilan luojana tai järjestelmänvalvojana voit hallita työtilan tiettyjä ominaisuuksia Power BI:ssä. Muita ominaisuuksia hallitaan Office 365:ssä. 
@@ -33,7 +33,7 @@ ms.locfileid: "34241943"
 * Tarkastele ryhmän sähköpostiosoitetta.
 * Poista ryhmä.
 
-Tarvitset [Power BI Pro](service-free-vs-pro.md) -käyttöoikeuden, jotta voit olla sovellustyötilan järjestelmänvalvoja tai jäsen. Sovelluksen käyttäjät tarvitsevat niin ikään Power BI Pro -käyttöoikeuden paitsi siinä tapauksessa, että sovellustyötilasi on Power BI Premium -ominaisuus. Silloin yrityskäyttäjät voivat käyttää sovellustasi maksuttomalla Power BI -käyttöoikeudella. Lisätietoja on artikkelissa [Mikä on Power BI Premium?](service-premium.md)
+Tarvitset [Power BI Pro](service-free-vs-pro.md) -käyttöoikeuden, jotta voit olla sovellustyötilan järjestelmänvalvoja tai jäsen. Sovelluksen käyttäjät tarvitsevat niin ikään Power BI Pro -käyttöoikeuden paitsi siinä tapauksessa, että sovellustyötilasi on Power BI Premium -ominaisuus. Lisätietoja on artikkelissa [Mikä on Power BI Premium?](service-premium.md)
 
 ## <a name="edit-your-app-workspace-in-power-bi"></a>Sovellustyötilan muokkaaminen Power BI:ssä
 1. Valitse Power BI -palvelun **Työtilat**-kohdan vieressä oleva nuoli. Valitse pistekuvake (**...** ) työtilan nimen vieressä ja valitse **Muokkaa työtilaa**. 

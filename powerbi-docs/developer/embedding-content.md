@@ -9,12 +9,12 @@ ms.component: powerbi-developer
 ms.topic: conceptual
 ms.date: 05/25/2018
 ms.author: maghan
-ms.openlocfilehash: cb84cb2f4242cb120f187c27bb1b1675177c33a2
-ms.sourcegitcommit: 8ee0ebd4d47a41108387d13a3bc3e7e2770cbeb8
+ms.openlocfilehash: 8a912791777c631208ee40d37c5eaad56806ccf9
+ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34813039"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36945260"
 ---
 # <a name="embed-your-power-bi-dashboards-reports-and-tiles"></a>Power BI:n koontinäyttöjen, raporttien ja ruutujen upottaminen
 
@@ -35,6 +35,9 @@ Ennen kuin ryhdyt upottamaan koontinäyttöjä ja raportteja sovellukseesi, varm
 
 * [Varmista, että sinulla on Azure Active Directory ‑vuokraaja](embedding-content.md#azureadtenant)
 * [Luo Power BI Pro ‑tili](embedding-content.md#proaccount)
+* [Sovelluksen rekisteröinti ja käyttöoikeudet](embedding-content.md#appreg)
+* [Sovellustyötilojen luominen](embedding-content.md#appws)
+* [Raporttien luominen ja lataaminen järjestelmään](embedding-content.md#createreports)
 
 Voit käyttää [Perehdyttämiskokemustyökalua](https://aka.ms/embedsetup) aloittaaksesi ja ladataksesi mallisovelluksen nopeasti.
 
@@ -67,7 +70,7 @@ Seuraavien tilien on oltava vuokraajassa ja niihin on oltava liitettynä Power B
 
 #### <a name="an-organizationtenant-admin-user"></a>Organisaation tai vuokraajan järjestelmänvalvojakäyttäjä
 
-On suositeltavaa, ettei organisaatiosi tai vuokraajan yleistä järjestelmänvalvojakäyttäjää käytettäisi tilinä, jonka avulla sovellus upottaa sisältöä asiakkaita varten. Syy on se, että sovellustilillä olisi mahdollisimman vähän käyttöoikeuksia vuokraajan sisällä. On suositeltavaa, että järjestelmänvalvojakäyttäjä on kaikkien upotustarkoituksia varten luotujen sovellustyötilojen järjestelmänvalvoja.
+On suositeltavaa, ettei organisaatiosi tai vuokraajan yleistä järjestelmänvalvojakäyttäjää käytettäisi tilinä, jonka avulla sovellus upottaa sisältöä asiakkaita varten. Syy on se, että sovellustilillä olisi mahdollisimman vähän käyttöoikeuksia vuokraajan sisällä. Järjestelmänvalvojakäyttäjän on oltava upotusta varten luotujen kaikkien sovellustyötilojen järjestelmänvalvoja.
 
 #### <a name="accounts-for-analysts-that-create-content"></a>Sisältöä luoville analyytikoille tarkoitetut tilit
 
@@ -83,7 +86,7 @@ Päätili on tavallinen käyttäjä, jolla on sovelluksen kanssa käytettävä P
 
 Sinun on rekisteröitävä sovellus Azure AD:ssä REST-ohjelmointirajapinnan kutsujen tekemiseksi. Saat lisätietoja artikkelista [Azure AD -sovelluksen rekisteröinti Power BI -sisällön upottamista varten](register-app.md).
 
-### <a name="create-app-workspaces"></a>Sovellustyötilojen luominen
+### <a name="appws"></a>Sovellustyötilojen luominen
 
 Jos haluat upottaa koontinäyttöjä ja raportteja asiakkaita varten, kyseiset koontinäytöt ja raportit on sijoitettava sovellustyötilaan. Edellä mainitun *päätilin* tulee olla tämän sovellustyötilan järjestelmänvalvoja.
 
@@ -93,13 +96,17 @@ Jos haluat upottaa koontinäyttöjä ja raportteja asiakkaita varten, kyseiset k
 > Muut käyttäjät, jotka eivät ole järjestelmänvalvojia, voivat luoda vain enintään 250 sovellustyötilaa. Jos haluat luoda enemmän sovellustyötiloja, sinun on käytettävä vuokraajan järjestelmänvalvojan tiliä.
 >
 
-### <a name="create-and-upload-your-reports"></a>Raporttien luominen ja lataaminen järjestelmään
+### <a name="createreports"></a>Raporttien luominen ja lataaminen järjestelmään
 
 Voit luoda Power BI Desktopia käyttämällä raportteja ja tietojoukkoja ja julkaista raportit sitten sovellustyötilassa. Raportit julkaiseva loppukäyttäjä tarvitsee Power BI Pro ‑käyttöoikeudet sovellustyötilassa julkaisemiseen.
 
 ## <a name="step-2-embed-your-content"></a>Vaihe 2: sisällön upottaminen
 
-Power BI:n on pystyttävä todentamaan sinut sovelluksesi kautta. Jos olet upottamassa sisältöä asiakkaita varten, *päätilin* tunnistetiedot tallennetaan sovellukseen. Saat lisätietoja artikkelista [Käyttäjien todentaminen ja Azure AD -käyttöoikeustietueen hankkiminen Power BI -sovellukselle](get-azuread-access-token.md).
+Power BI:n on pystyttävä todentamaan sinut sovelluksesi kautta. Jos olet upottamassa sisältöä asiakkaita varten, *päätilin* tunnistetiedot tallennetaan sovellukseen.
+
+> [!NOTE]
+> Katso lisätietoja käyttäjien todentamisesta upotuksen aikana asiakkaille artikkelista [Käyttäjien todentaminen ja Azure AD -käyttöoikeustietueen hankkiminen Power BI -sovellukselle](get-azuread-access-token.md).
+>
 
 Kun todennus on tehty, voit käyttää sovelluksestasi Power BI REST- ja JavaScript-ohjelmointirajapintoja koontinäyttöjen ja raporttien upottamiseen sovellukseen. 
 
@@ -123,7 +130,7 @@ Tuotantoon vienti edellyttää muutamia työvaiheita.
 
 Jos olet upottamassa sisältöä organisaation käyttöön, sinun ei tarvitse kuin ilmoittaa kaikille, miten he saavat sovelluksesi käyttöönsä. 
 
-Maksuttomat käyttäjät voivat käyttää sisältöä, joka on upotettu sovellustyötilasta (ryhmästä), jos työtilalla on siihen varattua kapasiteettia. Lisää maksuton käyttäjä sovellustyötilan (ryhmän) jäsenluetteloon, jotta vältät virhesanoman 401 Valtuuttamaton käyttäjä. Seuraavassa taulukossa esitetään Power BI Premiumin SKU:t, jotka ovat käytettävissä Office 365:n kautta.
+Kaikki käyttäjät voivat heille määritetystä käyttöoikeudesta riippumatta käyttää sisältöä, joka on upotettu sovellustyötilasta (ryhmästä), jos tällä työtilalla on siihen varattua kapasiteettia. Sinun on siten nimenomaisesti lisättävä sovellustyötilaan kaikki käyttäjät, joilla ei ole Power BI Pro -käyttöoikeutta; muussa tapauksessa näyttöön tulee luvattoman käytön virhe 401. Seuraavassa taulukossa esitetään Power BI Premiumin SKU:t, jotka ovat käytettävissä Office 365:n kautta.
 
 | Kapasiteetin solmu | Ytimiä yhteensä<br/>*(Tausta ja edusta)* | Taustan ytimet | Edustan ytimet | DirectQueryn/live-yhteyden rajoitukset | Sivun hahmonnuksia enintään huipputuntina |
 | --- | --- | --- | --- | --- | --- |

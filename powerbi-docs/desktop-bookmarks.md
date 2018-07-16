@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 04/24/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: d350593f3a5168d959711e1ca2bbbd8a86524187
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: a69cccafa9651bbda44ea2154ebe68463c9da907
+ms.sourcegitcommit: 7e0335bd8c263b5f8ba4303b986ddc450d842297
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34288057"
+ms.lasthandoff: 06/23/2018
+ms.locfileid: "36330118"
 ---
 # <a name="use-bookmarks-to-share-insights-and-build-stories-in-power-bi"></a>Kirjanmerkkien avulla voit jakaa merkityksellisiä tietoja ja koostaa tarinoita Power BI:ssä 
 Käyttämällä **kirjanmerkkejä** Power BI:ssä voit tallentaa raporttisivun senhetkisen määritetyn näkymän suodatukset ja visualisointien tila mukaan lukien. Voit myöhemmin palata tähän tilaan valitsemalla tallennetun kirjanmerkin. 
@@ -64,7 +64,7 @@ Kun olet lisännyt kirjanmerkin, saat sen näkyviin napsauttamalla sitä **Kirja
 
 Voit myös valita, käyttääkö kukin kirjanmerkki *tieto*-ominaisuuksia, kuten suodattimia ja osittajia, *näyttö*-ominaisuuksia, kuten korostus ja sen näkyvyys, ja sivun muutoksia, jotka esittävät sen sivun, joka oli näkyvissä lisättäessä kirjanmerkkiä. Nämä ominaisuudet ovat hyödyllisiä, kun haluat vaihtaa visualisointityyppien välillä kirjanmerkkien avulla – tässä tapauksessa haluat todennäköisesti poistaa käytöstä tieto-ominaisuudet, jotta suodattimia ei palauteta käyttäjien muuttaessa visualisointityyppejä. 
 
-Tee muutokset valitsemalla kirjanmerkin nimen vieressä olevan ellipsin edellisen kuvan mukaisesti ja valitsemalla valintaruudut tai poistamalla niiden valinta *Tiedot*-, *Näyttö*- ja muiden ohjausobjektien kohdalla. 
+Tee muutokset valitsemalla kirjanmerkin nimen vieressä oleva ellipsikuvake edellisen kuvan mukaisesti ja valitsemalla sitten valintaruudut tai poistamalla niiden valinta *Tiedot*- ja *Näyttö*-ohjausobjektien ja muiden ohjausobjektien kohdalla. 
 
 ## <a name="arranging-bookmarks"></a>Kirjanmerkkien järjestäminen
 Kun luot kirjanmerkkejä, niiden luontijärjestys ei välttämättä ole sama kuin missä haluat esittää ne yleisöllesi. Se ei ole ongelma, sillä voit helposti muuttaa kirjanmerkkien järjestystä.
@@ -104,7 +104,7 @@ On tärkeää huomata, että **osittajat** jatkavat raporttisivun suodattamista 
 ## <a name="bookmarks-for-shapes-and-images"></a>Muotojen ja kuvien kirjanmerkit
 Kirjanmerkkeihin voi linkittää muotoja ja kuvia. Kun napsautat objektia, tämän ominaisuuden ansiosta näet siihen liittyvän kirjanmerkin. Tämä voi olla erityisen hyödyllistä käsiteltäessä painikkeita; voit lukea lisätietoja [Power BI:n painikkeita](desktop-buttons.md) käsittelevässä artikkelissa. 
 
-Liitä kirjanmerkki objektiin valitsemalla objekti ja laajentamalla **Muotoile muoto** -ruudussa **Toiminto**-osion seuraavassa kuvassa esitetyllä tavalla.
+Liitä kirjanmerkki objektiin valitsemalla objekti ja laajentamalla sitten **Muotoile muoto** -ruudussa **Toiminto**-osiota seuraavassa kuvassa esitetyllä tavalla.
 
 ![Kirjanmerkkilinkin lisääminen objektiin](media/desktop-bookmarks/bookmarks_10.png)
 
@@ -120,7 +120,7 @@ Kirjanmerkit toivat mukanaan myös **korostuksen**. **Korostus**toiminnolla voit
 Tutustutaan seuraavaksi **korostus**- ja **kohdistustilan** eroihin.
 
 1. **Kohdistus**tilassa yksi visualisointi voi täyttää koko kankaan, kun valitset **kohdistustilan** kuvakkeen.
-2. **Korostuksella** voit nostaa esiin yhden visualisoinnin sen alkuperäisessä koossa siten, että muut sivun visualisoinnit häivytetään lähes läpinäkyviksi. 
+2. **Korostuksella** voit nostaa esiin yhden visualisoinnin sen alkuperäisessä koossa siten, että kaikki muut sivun visualisoinnit häivytetään lähes läpinäkyviksi. 
 
 ![Vertaa kohdistustilaa korostukseen](media/desktop-bookmarks/bookmarks_11.png)
 

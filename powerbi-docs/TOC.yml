@@ -896,8 +896,10 @@
           href: developer/what-can-you-do.md
     - name: Opetusohjelmat
       items:
-        - name: Upota asiakkaille tarkoitettua sisältöä
+        - name: Asiakkaille tarkoitetun sisällön upottaminen
           href: developer/embed-sample-for-customers.md
+        - name: Organisaatiollesi tarkoitetun sisällön upottaminen
+          href: developer/embed-sample-for-your-organization.md
     - name: Käsitteet
       items:
         - name: Power BI REST -ohjelmointirajapintojen käyttäminen
@@ -934,12 +936,8 @@
               href: developer/embedding.md
             - name: Sisällön upottaminen
               href: developer/embedding-content.md
-            - name: Koontinäytön integrointi sovellukseen (käyttäjä omistaa tiedot)
-              href: developer/integrate-dashboard.md
-            - name: Power BI -ruudun integrointi sovellukseen (käyttäjä omistaa tiedot)
-              href: developer/integrate-tile.md
-            - name: Power BI -raportin integrointi sovellukseen (käyttäjä omistaa tiedot)
-              href: developer/integrate-report.md
+            - name: Sovelluksesta upottaminen
+              href: developer/embed-from-apps.md
             - name: Sisällön integrointi sovellukseen maakohtaisissa pilvipalveluissa (sovellus omistaa tiedot)
               href: developer/embed-sample-for-customers-sovereign-clouds.md
             - name: Omien asetteluiden upottaminen sovellukseen

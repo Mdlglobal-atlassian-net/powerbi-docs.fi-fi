@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/19/2018
+ms.date: 06/26/2018
 ms.author: mihart
 LocalizationGroup: Samples
-ms.openlocfilehash: 6de9c4cb792e08c609af977fac3ea3d09f737acf
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 9bc549c2579b4ab8c399bacde7a915033fb2ae14
+ms.sourcegitcommit: db03649b8241bf34566968bbede8c9a0d35852fd
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34722059"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37067120"
 ---
 # <a name="supplier-quality-analysis-sample-for-power-bi-take-a-tour"></a>Toimittajan laatuanalyysimalli Power BI:lle: esittely
 
@@ -33,7 +33,7 @@ Nämä ovat obviEnceltä ([www.obvience.com](http://www.obvience.com/)) saatuja 
 
 ## <a name="prerequisites"></a>Edellytykset
 
- Ennen kuin voit käyttää mallia, se on ensin ladattava [sisältöpakettina](https://docs.microsoft.com/power-bi/sample-supplier-quality#get-the-content-pack-for-this-sample), [.pbix-tiedostona](http://download.microsoft.com/download/8/C/6/8C661638-C102-4C04-992E-9EA56A5D319B/Supplier-Quality-Analysis-Sample-PBIX.pbix) tai [Excel-työkirjana](http://go.microsoft.com/fwlink/?LinkId=529779).
+ Ennen kuin voit käyttää mallia, se on ensin ladattava [sisältöpakettina](https://docs.microsoft.com/power-bi/sample-supplier-quality#get-the-content-pack-for-this-sample), [.pbix-tiedostona](http://download.microsoft.com/download/8/C/6/8C661638-C102-4C04-992E-9EA56A5D319B/Supplier%20Quality%20Analysis%20Sample%20PBIX.pbix) tai [Excel-työkirjana](http://go.microsoft.com/fwlink/?LinkId=529779).
 
 ### <a name="get-the-content-pack-for-this-sample"></a>Mallin sisältöpaketin noutaminen
 
@@ -56,7 +56,7 @@ Nämä ovat obviEnceltä ([www.obvience.com](http://www.obvience.com/)) saatuja 
 
 Vaihtoehtoisesti voit ladata näytteen .pbix-tiedostona, joka on suunniteltu käytettäväksi Power BI Desktopilla. 
 
- * [Toimittajan laatuanalyysimalli](http://download.microsoft.com/download/8/C/6/8C661638-C102-4C04-992E-9EA56A5D319B/Supplier-Quality-Analysis-Sample-PBIX.pbix)
+ * [Toimittajan laatuanalyysimalli PBIX](http://download.microsoft.com/download/8/C/6/8C661638-C102-4C04-992E-9EA56A5D319B/Supplier%20Quality%20Analysis%20Sample%20PBIX.pbix)
 
 ### <a name="get-the-excel-workbook-for-this-sample"></a>Hae tämän näytteen Excel-työkirja
 Voit myös [ladata vain tietojoukon (Excel-työkirjan)](http://go.microsoft.com/fwlink/?LinkId=529779) tälle mallille. Työkirja sisältää Power View -taulukoita, joita voit tarkastella ja muokata. Raakatiedot saa näkyviin valitsemalla **Power Pivot > Hallinta**.

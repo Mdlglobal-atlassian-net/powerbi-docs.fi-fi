@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 05/09/2018
+ms.date: 06/06/2018
 ms.author: nikhilga
 LocalizationGroup: Get started
-ms.openlocfilehash: db32f7d0d3f7ca7b6943ca5347dc349c8c44be85
-ms.sourcegitcommit: 4b61588e3ab3c8bbb17276402dbf7fa00085a266
+ms.openlocfilehash: 750dbf2593981e8fc9ad5f2f66219d6bf6fd641c
+ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35301845"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37137464"
 ---
 ---
 # <a name="whats-new-in-the-power-bi-service"></a>Power BI -palvelun uudet toiminnot ja ominaisuudet
@@ -31,11 +31,19 @@ Saat lisätietoja uusista toiminnoista ja ominaisuuksista myös YouTube-kanavist
 * [Microsoft Power BI (YouTube)](https://www.youtube.com/channel/UCy--PYvwBwAeuYaR8JLmrfg)
 * [Kaveri kuutiossa (YouTube)](https://www.youtube.com/channel/UCFp1vaKzpfvoGai0vE5VJ0w)
 
-## <a name="april-2018"></a>Huhtikuu 2018
+## <a name="may-2018"></a>Toukokuu 2018
+* [Teeman koontinäytöt](https://docs.microsoft.com/en-us/power-bi/service-dashboard-themes) Power BI -palvelussa.
+* [Lisäävä päivitys](https://docs.microsoft.com/en-us/power-bi/service-premium-incremental-refresh) Premiumin avulla.
+* Pyydä käyttöoikeustyönkulkua [Power BI -sovelluksille](https://docs.microsoft.com/en-us/power-bi/service-create-distribute-apps).
+* Get Data -päivitykset, jotta käyttäjien on helpompi löytää [Power BI -sovellukset](https://docs.microsoft.com/en-us/power-bi/service-create-distribute-apps).
+* Asetukset, joiden avulla [Pysyvät suodattimet](https://powerbi.microsoft.com/en-us/blog/announcing-persistent-filters-in-the-service/) voidaan ottaa käyttöön tai poistaa käytöstä Power BI -palvelussa.
+* Azure B2B -kutsun työnkulun parannukset raporteille.
+
+## <a name="previous-months-2018"></a>Edelliset kuukaudet (2018)
+### <a name="april-2018"></a>Huhtikuu 2018
 * [Power BI:n GDPR-julkaisu](http://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=5bd4c466-277b-4726-b9e0-f816ac12872d&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers)
 * Power BI -palvelun [valvontalokit](https://docs.microsoft.com/power-bi/service-admin-auditing) ovat oletuksena käytössä Office 365:n vuokraajille.
 
-## <a name="previous-months-2018"></a>Edelliset kuukaudet (2018)
 ### <a name="march-2018"></a>Maaliskuu 2018
 * [Pysyvät suodattimet](https://powerbi.microsoft.com/en-us/blog/announcing-persistent-filters-in-the-service/) Power BI-palvelussa.
 * Jaa sisältöä käyttäjien kanssa heidän omien sähköpostitiliensä avulla. [Azure Active Directory B2B:n](https://powerbi.microsoft.com/en-us/blog/power-bi-expands-access-to-intelligence-for-external-guest-users/) laajennus.
@@ -63,7 +71,7 @@ Saat lisätietoja uusista toiminnoista ja ominaisuuksista myös YouTube-kanavist
 * Tarkka hallintatoiminto [verkkoon julkaisemista](https://docs.microsoft.com/en-us/power-bi/service-admin-portal#export-and-sharing-settings) varten.
 
 ## <a name="september-2017"></a>Syyskuu 2017
-* Jaa koontinäyttöjä maksuttoman version käyttäjille Premiumin avulla.
+* Jaa Premium-kapasiteetissa koontinäytöt käyttäjille, joilla ei ole Power BI Pro -käyttöoikeutta.
 * Varaa kapasiteetteja yrityksesi tarpeiden mukaan näennäisytimen ryhmittämisen avulla.
 * Suurenna tai pienennä kapasiteetteja hetkessä yhdellä napsautuksella.
 * Tietojen lähettäminen helposti REST-ohjelmointirajapintoihin [PubNub-lohkon](https://www.pubnub.com/docs/blocks-catalog/power-bi-realtime-dashboards) avulla
@@ -222,7 +230,7 @@ Saat kaikki tiedot [Power BI -tiimin blogista](https://powerbi.microsoft.com/blo
 
 ***Analysoi Excelissä***
 
-* [Analysoi Excelissä](service-analyze-in-excel.md) kaikkien käyttäjien saatavilla: mahdollisuus käyttää Power BI -tietomalleja Excelissä on laajennettu kaikille, niin maksuttoman kuin Pro-version, käyttäjille.
+* [Analysoi Excelissä](service-analyze-in-excel.md) kaikkien käyttäjien saatavilla: mahdollisuus käyttää Power BI -tietomalleja Excelissä on laajennettu kaikille käyttäjille heille määritetystä käyttöoikeudesta riippumatta.
 * Parannettu usean käyttäjän tilin käyttökokemus: Jos sinulla on useampi kuin yksi Power BI -käyttäjätili, sisäänkirjautuminen on nyt helpompaa.
 
 Saat kaikki tiedot [Power BI -tiimin blogista](https://powerbi.microsoft.com/blog/power-bi-service-april-update-expressroute-for-power-bi/)
@@ -567,7 +575,7 @@ Saat lisätietoja [blogista](http://blogs.msdn.com/b/powerbi/archive/2015/10/06/
 
 **24. heinäkuuta 2015**
 
-* Power BI:sta julkaistaan yleisesti saatavilla oleva versio. Voit jatkaa Power BI:n maksuttoman version käyttämistä tai rekisteröityä [Power BI Pro:hon](service-self-service-signup-for-power-bi.md). Osana yleisesti saatavilla olevan version julkaisua tarjotaan eräitä hienoja uusia ominaisuuksia:
+* Power BI:sta julkaistaan yleisesti saatavilla oleva versio. Rekisteröidy tänään [Power BI Prohon](service-self-service-signup-for-power-bi.md). Osana yleisesti saatavilla olevan version julkaisua tarjotaan eräitä hienoja uusia ominaisuuksia:
 * Uusi visualisoinnin ja raportin luomiskokemus: uusi raporttipohja sisältää suuremman visualisointivalikoiman, paremman otsikoiden, selitteiden, akseleiden, värien ja taustojen hallinnan ja paljon muuta.
 * [Power BI -ryhmät](service-create-distribute-apps.md): Ryhmät ovat tehokas Office 365 -ryhmiin perustuva yhteistyötoiminto.
 * [Organisaation sisältöpaketit](service-organizational-content-pack-introduction.md): Power BI tekee koontinäyttöjen ja raporttien luomisesta erittäin yksinkertaista, ja nyt käyttäjät voivat julkaista tätä sisältöä organisaation sisältövalikoimassa.
@@ -661,7 +669,7 @@ Saat lisätietoja [blogista](http://blogs.msdn.com/b/powerbi/archive/2015/10/06/
 * OneDrive-päivityksen luotettavuutta on parannettu.  Tilanteet, joissa työkirjoja ei päivitetty OneDrivesta, on ratkaistu.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
-[Power BI:n käytön aloittaminen](service-get-started.md)  
+[Mikä on Power BI?](power-bi-overview.md)  
 
-Ilmenikö muuta kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)
+Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)
 

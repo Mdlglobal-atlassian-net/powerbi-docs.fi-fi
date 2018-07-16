@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 06/05/2018
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 7f712086ff667a5d4b1f21fb441c94bfae96693f
-ms.sourcegitcommit: 8ee0ebd4d47a41108387d13a3bc3e7e2770cbeb8
+ms.openlocfilehash: 94f4bf71f0b97b202ce05f1caadee43ccea6a733
+ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34813637"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37135923"
 ---
 # <a name="power-bi-for-us-government-customers"></a>Power BI Yhdysvaltain valtionhallinnon asiakkaille
 **Power BI-palvelulla** on versio, joka on saatavilla Yhdysvaltain valtionhallinnon asiakkaille osana **Office 365 US Government Community** -tilauksia. Tässä artikkelissa kuvattu **Power BI -palvelun** versio on suunniteltu erityisesti Yhdysvaltain valtionhallinnon asiakkaille ja on erillinen ja erilainen kuin **Power BI -palvelun** kaupallinen versio.
@@ -105,5 +105,5 @@ Voit tehdä Power BI:llä kaikenlaista. Saat lisätietoja ja kursseja, mukaan lu
 * <a href="https://channel9.msdn.com/Blogs/Azure/Cognitive-Services-HDInsight-and-Power-BI-on-Azure-Government">Yhdysvaltain valtionhallinnon Power BI:n esittelyohjelma</a>
 * [Power BI:n ohjattu oppiminen](guided-learning/gettingstarted.yml?tutorial-step=1)
 * [Power BI -palvelun käytön aloittaminen](service-get-started.md)
-* [Power BI Desktopin käytön aloittaminen](desktop-getting-started.md)
+* [Mikä on Power BI Desktop?](desktop-what-is-desktop.md)
 

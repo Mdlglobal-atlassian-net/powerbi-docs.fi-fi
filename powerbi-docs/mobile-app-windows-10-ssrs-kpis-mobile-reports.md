@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-mobile
 ms.topic: conceptual
-ms.date: 10/13/2017
+ms.date: 06/28/2018
 ms.author: maggies
-ms.openlocfilehash: 7bbf03c35284924c415a9ae1348528ed80c3f2fe
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: b7435aa7cda68854409c4be7981a06a70d999f09
+ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34295614"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37136222"
 ---
 # <a name="view-reporting-services-ssrs-mobile-reports-and-kpis-in-the-windows-10-power-bi-mobile-app"></a>Tarkastele Reporting Services (SSRS):n mobiiliraportteja ja suorituskykymittareita Windows 10 -laitteiden Power BI -sovelluksella
 Power BI -mobiilisovellus Windows 10:lle tarjoaa tärkeiden, paikalliseen liiketoimintaan liittyvien tietojen reaaliaikaisen, kosketuskäyttöisten mobiilikäytön SQL Server 2016 Reporting Servicesissä. 
@@ -110,6 +110,6 @@ Reporting Services -suorituskykymittareita ja mobiiliraportteja ei luoda Power B
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 * [Windows 10:n Power BI -mobiilisovelluksen käytön aloittaminen](mobile-windows-10-phone-app-get-started.md)  
-* [Power BI:n käytön aloittaminen](service-get-started.md)  
+* [Mikä on Power BI?](power-bi-overview.md)  
 * Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)
 

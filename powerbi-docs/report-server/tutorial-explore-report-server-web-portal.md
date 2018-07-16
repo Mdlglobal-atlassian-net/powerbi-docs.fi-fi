@@ -9,12 +9,12 @@ ms.component: powerbi-report-server
 ms.topic: tutorial
 ms.date: 05/18/2018
 ms.author: maggies
-ms.openlocfilehash: 38985014407a4d64998e25f6944f57aedcc67309
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 32bf2d3cedbeeb2430620855a2ac95bf349af9a2
+ms.sourcegitcommit: 695c65629d6d1faba61db2e1570324f65f235dde
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34444999"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37092042"
 ---
 # <a name="tutorial-explore-the-power-bi-report-server-web-portal-in-a-vm"></a>Opetusohjelma: Power BI -raporttipalvelimen verkkoportaaliin tutustuminen näennäiskoneella
 Tässä opetusohjelmassa luot Azure-virtuaalikoneen Power BI -raporttipalvelimen ollessa jo asennettu, jotta voit tutustua Power BI- ja sivutettujen näyteraporttien ja suorituskykyilmaisimien tarkasteluun, muokkaamiseen ja hallintaan.
@@ -100,7 +100,7 @@ Kun näennäiskone avautuu, näet työpöydällä seuraavat kohteet.
 |![Numero 4](media/tutorial-explore-report-server-web-portal/number-4.png) | Käynnistää Power BI -raporttipalvelimelle optimoidun Power BI Desktopin (maaliskuu 2018)  |
 |![Numero 5](media/tutorial-explore-report-server-web-portal/number-5.png) | Avaa Power BI -raporttipalvelimen verkkoportaalin selaimessa   |
 
-Kaksoisnapsauta **Raporttipalvelimen verkkoportaali** -kuvaketta. http://localhost/reports/browse avataan selaimella. Verkkoportaalista näet tyypin mukaan ryhmitellyt tiedostot. 
+Kaksoisnapsauta **Raporttipalvelimen verkkoportaali** -kuvaketta. `http://localhost/reports/browse` avataan selaimella. Verkkoportaalista näet tyypin mukaan ryhmitellyt tiedostot. 
 
 ![Power BI -raporttipalvelimen verkkoportaali](media/tutorial-explore-report-server-web-portal/power-bi-report-server-browser-in-vm.png)
 

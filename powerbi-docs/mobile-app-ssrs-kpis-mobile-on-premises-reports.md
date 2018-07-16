@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-mobile
 ms.topic: conceptual
-ms.date: 05/21/2018
+ms.date: 06/13/2018
 ms.author: maggies
-ms.openlocfilehash: 999fdf0376973d6550a5c4e214b4315db01e74e0
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 32d73b4be55190b908353083b497581cb1b08c6e
+ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34482241"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37599020"
 ---
 # <a name="view-on-premises-report-server-reports-and-kpis-in-the-power-bi-mobile-apps"></a>Paikallisten raporttipalvelinten raporttien ja suorituskykyilmaisimien tarkastelu Power BI -mobiilisovelluksissa
 
@@ -103,6 +103,9 @@ Nyt voit tarkastella ja käsitellä raporttipalvelimeen tallennettuja suoritusky
 Power BI -raportit, Reporting Services -mobiiliraportit ja suorituskykyilmaisimet näkyvät samoissa kansiossa, joissa ne ovat Reporting Services -verkkoportaalissa. 
 
 * Napauta Power BI -raporttia ![Power BI -raportin kuvake](media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-rs-mobile-report-icon.png). Se aukeaa vaakasuunnassa, ja voit käsitellä sitä Power BI -sovelluksessa.
+
+    > [!NOTE]
+  > Poraudu alaspäin ja ylöspäin -toimintoa ei tällä hetkellä ole otettu käyttöön Power BI -raporteissa Power BI -raporttipalvelimella.
   
     ![Power BI -raportti](media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-iphone-report-server-report.png)
 * Power BI Desktopissa raporttien omistajat voivat [optimoida raportin](desktop-create-phone-report.md) Power BI -mobiilisovelluksia silmällä pitäen. Matkapuhelimessa optimoiduilla raporteilla on erityinen kuvake, ![Optimoidun Power BI -raportin kuvake](media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-rs-mobile-optimized-icon.png) ja asettelu.
@@ -129,6 +132,6 @@ Voit merkitä suorituskykyilmaisimia ja raportteja suosikeiksi verkkoportaalissa
 3. Napauta **Poista palvelin**.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
-* [Power BI:n käytön aloittaminen](service-get-started.md)  
-* Onko sinulla kysymyksiä? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)
+* [Mikä on Power BI?](power-bi-overview.md)  
+* Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)
 

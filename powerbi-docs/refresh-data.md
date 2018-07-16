@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/02/2018
 ms.author: davidi
 LocalizationGroup: Data refresh
-ms.openlocfilehash: 779bfb3e69a76d0fe9e9a34d6576b2054de89cc1
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: aa7fcc720861d1459183aaf7a82a2af8912eb5b6
+ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34253615"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37599744"
 ---
 # <a name="data-refresh-in-power-bi"></a>Tietojen päivittäminen Power BI:ssä
 Varmista, että saat käyttöösi aina uusimmat tiedot päätöksenteon tueksi. Olet todennäköisesti jo käyttänyt Nouda tiedot -toimintoa Power BI:ssä yhteyden muodostamiseksi ja tietojen lataamiseksi sekä luonut raportteja ja raporttinäkymän. Nyt haluat varmistaa, että tiedot todella ovat uusimpia ja ajan tasalla.
@@ -101,6 +101,7 @@ Tietojen päivitystä tuetaan sellaisia Power BI Desktop -tiedostoja ja Excel-ty
 Kun säilytät tiedostosi OneDrivessa tai SharePoint Onlinessa ja muodostat niihin yhteyden Power BI:stä, saat käyttöösi joustavan ratkaisun. Joustavuuden vuoksi ratkaisun ymmärtäminen voi olla kuitenkin haastavaa. OneDriveen tai SharePoint Onlineen tallennettujen tiedostojen ajoitettu päivitys poikkeaa pakettipäivityksestä. Lisätietoja on [Päivitystyypit](#types-of-refresh)-osassa.
 
 ### <a name="power-bi-desktop-file"></a>Power BI Desktop -tiedosto
+
 | **Tietolähde** | **Automaattinen päivitys** | **Käyttäjän määrittämä manuaalinen tai ajoitettu päivitys** | **Yhdyskäytävä tarvitaan** |
 | --- | --- | --- | --- |
 | Nouda tiedot -toiminnolla (valintanauhassa) muodostetaan yhteys mihin tahansa listattuun verkkotietolähteeseen ja tehdään siellä tietokyselyjä. |Ei |Kyllä |Ei (katso alla) |
@@ -117,6 +118,7 @@ Kun säilytät tiedostosi OneDrivessa tai SharePoint Onlinessa ja muodostat niih
 Lisätietoja on kohdassa [Power BI Desktop -tiedostosta luodun tietojoukon päivittäminen – OneDrive](refresh-desktop-file-onedrive.md).
 
 ### <a name="excel-workbook"></a>Excel-työkirja
+
 | **Tietolähde** | **Automaattinen päivitys** | **Käyttäjän määrittämä manuaalinen tai ajoitettu päivitys** | **Yhdyskäytävä tarvitaan** |
 | --- | --- | --- | --- |
 | Laskentataulukon taulukoiden tietoja ei ladattu Excel-tietomalliin. |Kyllä, tunneittain *(vain OneDrive / SharePoint Online)* |Vain manuaalinen *(vain OneDrive / SharePoint Online)* |Ei |
@@ -131,6 +133,7 @@ Lisätietoja on kohdassa [Power BI Desktop -tiedostosta luodun tietojoukon päiv
 Lisätietoja on kohdassa [OneDriven Excel-työkirjasta luodun tietojoukon päivittäminen](refresh-excel-file-onedrive.md).
 
 ### <a name="comma-separated-value-csv-file-on-onedrive-or-sharepoint-online"></a>Pilkuin eroteltuja arvoja sisältävä tiedosto (.csv) OneDrivessa tai SharePoint Onlinessa
+
 | **Tietolähde** | **Automaattinen päivitys** | **Käyttäjän määrittämä manuaalinen tai ajoitettu päivitys** | **Yhdyskäytävä tarvitaan** |
 | --- | --- | --- | --- |
 | Yksinkertainen pilkulla eroteltu arvo |Kyllä, tunneittain |Vain manuaalinen |Ei |
@@ -145,6 +148,7 @@ Power BI:ssä on kahdenlaisia sisältöpaketteja:
 **Organisaation sisältöpaketit**: oman organisaatiosi käyttäjien luomat ja jakamat sisältöpaketit. Sisältöpaketin käyttäjät eivät voi määrittää ajoitettua päivitystä tai tehdä manuaalista päivitystä. Ainoastaan sisältöpaketin tekijä voi määrittää sisältöpaketin tietojoukkojen päivityksen. Päivitysasetukset periytyvät tietojoukon kanssa.
 
 ### <a name="content-packs-from-online-services"></a>Sisältöpaketit online-palveluista
+
 | **Tietolähde** | **Automaattinen päivitys** | **Käyttäjän määrittämä manuaalinen tai ajoitettu päivitys** | **Yhdyskäytävä tarvitaan** |
 | --- | --- | --- | --- |
 | Online-palvelut Nouda tiedot &gt; -palveluissa |Kyllä |Kyllä |Ei |
@@ -237,7 +241,7 @@ Tässä tapauksessa voit päivittää manuaalisesti SalesReport.xlsx-tietojoukon
 > 
 > 
 
-Lisätietoja on artikkeleissa [Excel-tiedot Power BI:ssä](service-excel-workbook-files.md), [Power BI Gateway – henkilökohtainen](personal-gateway.md), [Paikallinen tietoyhdyskäytävä](service-gateway-onprem.md) ja [Paikallisen aseman Excel-työkirjasta luodun tietojoukon päivittäminen](refresh-excel-file-local-drive.md).
+Lisätietoja on artikkeleissa [Excel-tiedot Power BI:ssä](service-excel-workbook-files.md), [Power BI Gateway – henkilökohtainen](service-gateway-personal-mode.md), [Paikallinen tietoyhdyskäytävä](service-gateway-onprem.md) ja [Paikallisen aseman Excel-työkirjasta luodun tietojoukon päivittäminen](refresh-excel-file-local-drive.md).
 
 ### <a name="power-bi-desktop-file-with-data-from-an-odata-feed"></a>Power BI Desktop -tiedosto, jossa on tietoja OData-syötteestä
 Tässä tapauksessa käytät Power BI Desktopin Nouda tiedot -toimintoa yhteyden muodostamiseen ja laskentatietojen tuomiseen OData-syötteestä.  Luo useita raportteja Power BI Desktopissa, annat tiedostolle nimeksi WACensus ja tallennat sen jaettuun asemaan yrityksessäsi. Sen jälkeen julkaiset tiedoston Power BI -palveluun.
@@ -270,7 +274,7 @@ Lisätietoja vianmäärityksestä on artikkeleissa [Välineet päivitysongelmien
 ## <a name="next-steps"></a>Seuraavat vaiheet
 [Välineet päivitysongelmien vianmääritykseen](service-gateway-onprem-tshoot.md)  
 [Päivitystilanteiden vianmääritys](refresh-troubleshooting-refresh-scenarios.md)  
-[Power BI -yhdyskäytävä – henkilökohtainen](personal-gateway.md)  
+[Power BI -yhdyskäytävä – henkilökohtainen](service-gateway-personal-mode.md)  
 [Paikallinen tietoyhdyskäytävä](service-gateway-onprem.md)  
 
 Ilmenikö muuta kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)

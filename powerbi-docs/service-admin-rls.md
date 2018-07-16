@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 01/02/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 34eabdcdd43ffc576ab684605b4c6ff374e58d50
-ms.sourcegitcommit: 49570ab8f5b5cd5bab4cd388f4281b1372bcb80b
+ms.openlocfilehash: 89ffa4c644005b53c263bef4535628dd603f1f6d
+ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/09/2018
-ms.locfileid: "35250518"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37599842"
 ---
 # <a name="row-level-security-rls-with-power-bi"></a>Rivitason suojaus (RLS) Power BI:ssä
 Power BI:n rivitason suojauksen (RLS) avulla voidaan rajoittaa tietojen käyttöä tietyille käyttäjille. Suodattimet rajoittavat tietoja rivitasolla. Voit määrittää suodattimia roolien sisällä.
@@ -26,7 +26,7 @@ Voit määrittää rivitason suojauksen Power BI:hin tuoduille tietomalleille Po
 
 Oletuksena rivitason suojauksen suodatuksessa käytetään yksisuuntaisia suodattimia riippumatta siitä, onko suhteet määritetty yksi- vai kaksisuuntaisiksi. Voit ottaa kaksisuuntaisen ristisuodatuksen manuaalisesti käyttöön rivitason suojauksen yhteydessä valitsemalla suhteen ja valitsemalla **Ota suojaussuodattimet käyttöön molempiin suuntiin** -valintaruudun. Valitse tämä ruutu, kun otat käyttöön [dynaaminen rivitason suojauksen](https://docs.microsoft.com/sql/analysis-services/supplemental-lesson-implement-dynamic-security-by-using-row-filters), jossa rivitason suojaus määritetään käyttäjänimen tai kirjautumistunnuksen perusteella. 
 
-Lisätietoja on artikkelissa [Kaksisuuntainen ristiinsuodatus käyttämällä DirectQueryä Power BI Desktopissa](desktop-bidirectional-filtering.md) ja teknisessä artikkelissa [Taulukkomuotoisen liiketoimintatietojen semanttisen mallin suojaaminen](http://download.microsoft.com/download/D/2/0/D20E1C5F-72EA-4505-9F26-FEF9550EFD44/Securing the Tabular BI Semantic Model.docx).
+Lisätietoja on artikkelissa [Kaksisuuntainen ristiinsuodatus käyttämällä DirectQueryä Power BI Desktopissa](desktop-bidirectional-filtering.md) ja teknisessä artikkelissa [Taulukkomuotoisen liiketoimintatietojen semanttisen mallin suojaaminen](http://download.microsoft.com/download/D/2/0/D20E1C5F-72EA-4505-9F26-FEF9550EFD44/Securing%20the%20Tabular%20BI%20Semantic%20Model.docx).
 
 ![Suojaussuodattimen käyttäminen](media/service-admin-rls/rls-apply-security-filter.png)
 

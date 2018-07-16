@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 7caf471674c20607826550fc14f8ebc8e772b61a
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: b4cd8974316119978749db4f3996db76d907ab38
+ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34584250"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37136061"
 ---
 # <a name="connect-to-quickbooks-online-with-power-bi"></a>Yhteyden muodostaminen QuickBooks Onlineen Power BI:llä
 Kun muodostat yhteyden QuickBooks Onlinen tietoihin Power BI:stä, saat heti Power BI:n koontinäytön ja Power BI:n raportit, jotka antavat merkityksellisiä tietoja muun muassa yrityksesi kassavirrasta, kannattavuudesta ja asiakkaista. Voit käyttää koontinäyttöä ja raportteja sellaisinaan tai mukauttaa niitä, jotta niissä korostuvat itseäsi eniten kiinnostavat tiedot. Tiedot päivitetään automaattisesti kerran päivässä.
@@ -80,7 +80,7 @@ Power BI tukee tällä hetkellä vain QuickBooks Onlinen Yhdysvaltojen versioita
 ![](media/service-connect-to-quickbooks-online/pbi_qbo_countrynotsupported.png)
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
-[Power BI:n käytön aloittaminen](service-get-started.md)
+[Mikä on Power BI?](power-bi-overview.md)
 
 [Power BI:n peruskäsitteet](service-basic-concepts.md)
 

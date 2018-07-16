@@ -7,27 +7,27 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/05/2018
+ms.date: 07/06/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: d0cc0ce18a187280c48be0c84bf9adf680ea3ea4
-ms.sourcegitcommit: 8ee0ebd4d47a41108387d13a3bc3e7e2770cbeb8
+ms.openlocfilehash: 11be5cd6f5b97fe612bf42a37228518ab2fbb227
+ms.sourcegitcommit: d1a0da8638c5d957b884ca9412275ee8880d4b14
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34813430"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37900050"
 ---
 # <a name="use-the-sap-bw-connector-in-power-bi-desktop"></a>SAP BW -yhdistimen käyttö Power BI Desktopissa
 Voit nyt käyttää **SAP Business Warehouse (BW)** -tietoja Power BI Desktopilla.
 
 Tietoja siitä, miten SAP-asiakkaat voivat hyötyä yhdistämällä Power BI:n SAP Business Warehouse (BW) -järjestelmäänsä, saat [Power BI ja SAP BW -teknisestä raportista](https://aka.ms/powerbiandsapbw).
 
-**Power BI Desktopin** 2018 kesäkuun julkaisusta lähtien voit käyttää SAP BW -yhdistimen toteutusta, joka sisältää merkittäviä parannuksia sekä suorituskykyyn että ominaisuuksiin. Tämän SAP BW -yhdistimen päivitetyn version kehittäjä on Microsoft ja sitä kutsutaan nimellä**toteutus 2.0**. Voit valita joko **SAP BW -vakioyhdistimen** tai **toteutus 2.0 SAP-yhdistimen**. Seuraavassa kuvataan kunkin version asennus. Yhdistäessäsi Power BI Desktopista SAP BW:hen, voit valita kumman tahansa yhdistimen.
+**Power BI Desktopin** 2018 kesäkuun julkaisusta lähtien voit käyttää SAP BW -yhdistimen toteutusta, joka sisältää merkittäviä parannuksia sekä suorituskykyyn että ominaisuuksiin. Tämän SAP BW -yhdistimen päivitetyn version kehittäjä on Microsoft ja sitä kutsutaan nimellä**toteutus 2.0**. Voit valita joko **SAP BW -yhdistimen** version 1 (v1) tai **toteutus 2.0 SAP-yhdistimen**. Seuraavassa kuvataan kunkin version asennus. Yhdistäessäsi Power BI Desktopista SAP BW:hen, voit valita kumman tahansa yhdistimen.
 
 Microsoft suosittelee **toteutus 2.0 SAP-yhdistimen** valitsemista aina kun se on mahdollista.
 
-## <a name="installation-of-the-standard-sap-bw-connector"></a>SAP BW -vakioyhdistimen asennus
-Suosittelemme valitsemaan toteutus 2.0 SAP-yhdistimen aina kun se on mahdollista (ohjeet seuraavassa osiossa). Tässä osiossa kuvataan **SAP BW -vakioyhdistimen** asennus, joka voidaan suorittaa seuraavasti:
+## <a name="installation-of-version-1-of-the-sap-bw-connector"></a>SAP BW -yhdistimen version 1 asennus
+Suosittelemme valitsemaan toteutus 2.0 SAP-yhdistimen aina kun se on mahdollista (ohjeet seuraavassa osiossa). Tässä osiossa kuvataan **SAP BW -yhdistimen** version 1 asennus, joka voidaan suorittaa seuraavasti:
 
 1. Asenna **SAP NetWeaver** -kirjasto tietokoneellesi. Voit saada **SAP Netweaver** -kirjaston SAP-järjestelmänvalvojaltasi tai suoraan [SAP-ohjelmiston latauskeskuksesta](https://support.sap.com/swdc). Koska **SAP-ohjelmiston latauskeskus** muuttaa rakennettaan usein, emme voi antaa tarkempia ohjeita kyseisellä sivulla navigoimiseen. **SAP NetWeaver** kirjasto sisältyy yleensä myös SAP-asiakastyökalujen asennukseen.
    
@@ -54,11 +54,11 @@ Kun asennat, varmista **valinnainen asennusvaiheita** -ikkunassa, että valitset
 ![Valinnaisia asennusohjeita SAP:lle](media/desktop-sap-bw-connector/sap_bw_2b.png)
 
 > [!NOTE]
-> SAP BW vakiototeutus vaati Netweaver DLL-tiedostoja; jos käytät SAP-yhdistimen toteutus 2.0:a etkä perusversiota, Netweaver DLL-tiedostoja ei tarvita.
+> SAP BW:n ensimmäisen version toteutus edellytti Netweaver DLL -tiedostoja; jos käytät SAP-yhdistimen toteutus 2.0:a etkä ensimmäistä versiota, Netweaver DLL -tiedostoja ei tarvita.
 
 
-## <a name="standard-sap-bw-connector-features"></a>SAP BW -vakioyhdistimen ominaisuudet
-Power BI Desktopin **SAP BW -vakioyhdistimet** mahdollistavat tietojen tuomisen **SAP Business Warehouse -palvelimen** kuutioissa tai DirectQuerya käyttäen. 
+## <a name="version-1-sap-bw-connector-features"></a>SAP BW -yhdistimen version 1 ominaisuudet
+Power BI Desktopin **SAP BW -yhdistimen** versio 1 mahdollistaa tietojen tuomisen **SAP Business Warehouse -palvelimen** kuutioista tai DirectQueryn käytön. 
 
 Lisätietoja **SAP BW -yhdistimestä** ja sen käyttämisestä DirectQueryn kanssa löytyy artikkelista [DirectQuery ja SAP Business Warehouse (BW)](desktop-directquery-sap-bw.md).
 
@@ -101,7 +101,7 @@ Sinun on luotava uusi yhteys käyttääksesi toteutus 2.0 SAP BW -yhdistintä. L
 
     ![SAP-yhteys -valintaikkuna](media/desktop-sap-bw-connector/sap_bw_7.png)
 
-3. Valitse **OK** ja tämän jälkeen**Navigator**-käyttökokemus on sama kuin aikaisemmin kuvatussa SAP BW -vakioyhdistimen osiossa. 
+3. Valitse **OK** ja tämän jälkeen**Navigator**-käyttökokemus vastaa SAP BW -yhdistimen versiota 1 käsittelevässä aiemmassa osiossa kuvattua käyttökokemusta. 
 
 ### <a name="new-options-for-implementation-20"></a>Uudet asetukset toteutus 2.0:lle 
 
@@ -115,7 +115,7 @@ Toteutus 2.0 tukee seuraavia asetuksia:
 
     Asetuksen oletusarvo on SapBusinessWarehouseExecutionMode.BasXmlGzip.
 
-    *SapBusinessWarehouseExecutionMode.BasXmlGzip* käyttö saattaa parantaa suorituskykyä, kun suurten tietojoukkojen käsittelyssä ilmenee viiveitä.
+    *SapBusinessWarehouseExecutionMode.BasXmlGzip*-arvon käyttäminen saattaa parantaa suorituskykyä, kun suurten tietojoukkojen käsittelyssä ilmenee viiveitä.
 
 2. **BatchSize** - määrittää rivien maksimimäärän, jotka noudetaan yhdellä kertaa suoritettaessa MDX-lausetta. Pieni määrä rivejä tarkoittaa enemmän kutsuja palvelimella, kun noudetaan tietoja suuresta tietojoukosta. Suuri määrä rivejä saattaa parantaa suorituskykyä, mutta saattaa aiheuttaa muistiongelmia SAP BW -palvelimessa. Oletusarvona on 50000 riviä.
 
@@ -163,7 +163,7 @@ Aikaisemmin luotujen raporttien muuttaminen käyttämään **toteutus 2.0:a** on
 
     ![kyselykatkelma](media/desktop-sap-bw-connector/sap_bw_12.png)
 
-4. Kaikki voitava on tehty, jotta voidaan varmistaa, että toteutus 2.0:n SAP BW -yhdistin on yhteensopiva SAP BW -vakioyhdistimen kanssa. Joitakin eroja saattaa kuitenkin olla, eri SAP BW MDX -suoritintilojen käytöstä johtuen. Poikkeamia voidaan yrittää ratkaista vaihtamalla eri suoritustilojen välillä.
+4. Olemme pyrkineet kaikin tavoin varmistamaan, että SAP BW -yhdistimen toteutus 2.0 on yhteensopiva SAP BW -yhdistimen version 1 kanssa. Joitakin eroja saattaa kuitenkin olla, eri SAP BW MDX -suoritintilojen käytöstä johtuen. Poikkeamia voidaan yrittää ratkaista vaihtamalla eri suoritustilojen välillä.
 
 ## <a name="troubleshooting"></a>Vianmääritys
 Tämä osio sisältää vianmäärityksen tilanteita ja ratkaisuja käytettäessä tätä **SAP BW** -yhdistintä.

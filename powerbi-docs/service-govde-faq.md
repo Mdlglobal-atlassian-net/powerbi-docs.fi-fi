@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/02/2018
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 909d524416b04654dc6f511a71b675381ec74e3a
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 966d25ce2cddbba4623774c9bcfc6a0a9f0af904
+ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34310259"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37137142"
 ---
 # <a name="frequently-asked-questions-for-power-bi-for-germany-cloud-customers"></a>Usein kysyttyjä kysymyksiä Power BI:n pilvipalvelun saksalaisille asiakkaille
 **Power BI -palvelusta** on saatavilla Euroopan unionin ja Euroopan Vapaakauppajärjestön sopimuksen (EU/EFTA) asiakkaille versio, johon viitataan usein nimellä Microsoft Cloud Deutschland (MCD). Tässä artikkelissa kuvattu **Power BI -palvelun** versio on suunniteltu erityisesti EU/EFTA -asiakkaille ja on erillinen ja erilainen kuin **Power BI -palvelun** kaupallinen versio, joka on tarjolla valtionhallinnon asiakkaille.
@@ -73,5 +73,5 @@ Voit tehdä Power BI:llä kaikenlaista. Saat lisätietoja ja kursseja, mukaan lu
 
 * [Power BI:n ohjattu oppiminen](guided-learning/gettingstarted.yml?tutorial-step=1)
 * [Power BI -palvelun käytön aloittaminen](service-get-started.md)
-* [Power BI Desktopin käytön aloittaminen](desktop-getting-started.md)
+* [Mikä on Power BI Desktop?](desktop-what-is-desktop.md)
 

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 8ad41917c887cff7db991051aa35d5dad6b6a8fa
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 9bec96b594d7a761311e0ef9f457f320eb1f3963
+ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34242419"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37136429"
 ---
 # <a name="connect-to-sql-sentry-with-power-bi"></a>Yhteyden muodostaminen SQL Sentry -palveluun Power BI:llä
 SQL Sentryn keräämien suorituskykytietojen analysoiminen on helppoa Power BI:llä. Power BI noutaa tiedot ja laatii sitten oletuskoontinäytön ja siihen liittyvät raportit kyseisten tietojen perusteella.
@@ -93,7 +93,7 @@ Jos joidenkin sovellustesi tietoja ei näy Power BI:ssä, varmista, että käyt�
 Jos et omista SQL Sentry -tietokantaa, jota synkronoidaan kohteeseen <https://cloud.sqlsentry.com>, ota yhteyttä järjestelmänvalvojaan ja varmista, että sinulla on oikeudet kerättyjen tietojen tarkasteluun.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
-[Power BI:n käytön aloittaminen](service-get-started.md)
+[Mikä on Power BI?](power-bi-overview.md)
 
 [Tietojen noutaminen Power BI:hin](service-get-data.md)
 

@@ -10,12 +10,12 @@ ms.topic: overview
 ms.date: 05/01/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 5e69ed0010c5a2ff496b761f54b4cf2561f9b4ca
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 1f3c871d4ac47a110f2085ef1bdccb166fc00643
+ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34297419"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36944303"
 ---
 # <a name="what-is-power-bi-administration"></a>Mitä on Power BI:n hallinta?
 
@@ -73,12 +73,12 @@ Power BI:n hallintaan liittyy useita työkaluja, jotka on kuvattu seuraavassa ta
 
 | **Työkalu** | **Tavalliset tehtävät** |
 | --- | --- |
-| Power BI -hallintaportaali |<ul><li>Power BI:n käytön estäminen käyttäjiltä<br><li>Premium-kapasiteetin hankinta ja käsittely<br><li>Palvelun laadun varmistaminen<br><li>Yritystietojen luokittelun hallinta<br><li>Sisällön julkaisemisen ja jakamisen käytäntöjen valvonnan tukeminen<br><li>Työtilojen hallinta<br><li>Mukautettujen visualisointien julkaiseminen<br><li>Power BI:n muihin sovelluksiin upottamiseen käytettyjen koodien vahvistaminen<br><li>Tietojen käytön ja muiden ongelmien vianmääritys</ul>|
-| Office 365 -hallintakeskus |<ul><li>Käyttäjien rekisteröitymisen hallinta<br><li>Pro-käyttöoikeuksien hankinta ja määritys</ul>|
-| Office 365:n tietoturva- ja yhteensopivuuskeskus |<ul><li>Tapahtumien valvonnan arviointi ja hallinta</ul>|
-| Azure Active Directory (AAD) Azure-portaalissa |<ul><li>Power BI -resurssien ehdollisen käyttöoikeuden määrittäminen AAD:n kautta<br><li>Power BI Embedded -kapasiteetin valmistelu</ul>|
-| PowerShellin cmdlet-komennot |<ul><li>Työtilojen ja muiden Power BI:n ominaisuuksien hallinta komentosarjojen hallinta</ul>|
-| Hallinnolliset ohjelmointirajapinnat |<ul><li>Mukautettujen työkalujen laatiminen Power BI -järjestelmänvalvojan työtä varten. Esimerkiksi Power BI Desktop voi käyttää näitä ohjelmointirajapintoja hallinnollisiin tietoihin perustuvien raporttien laatimiseen</ul>|
+| Power BI -hallintaportaali |<ul><li>Premium-kapasiteetin hankinta ja käsittely</li><li>Palvelun laadun varmistaminen</li><li>Yritystietojen luokittelun hallinta</li><li>Sisällön julkaisemisen ja jakamisen käytäntöjen valvonnan tukeminen</li><li>Työtilojen hallinta<br><li>Mukautettujen visualisointien julkaiseminen</li><li>Power BI:n muihin sovelluksiin upottamiseen käytettyjen koodien vahvistaminen</li><li>Tietojen käytön ja muiden ongelmien vianmääritys</li></ul>|
+| Office 365 -hallintakeskus |<ul><li>Käyttäjien rekisteröitymisen hallinta</li><li>Pro-käyttöoikeuksien hankinta ja määritys</li><li>Power BI:n käytön estäminen käyttäjiltä</li></ul>|
+| Office 365:n tietoturva- ja yhteensopivuuskeskus |<ul><li>Tapahtumien valvonnan arviointi ja hallinta</li></ul>|
+| Azure Active Directory (AAD) Azure-portaalissa |<ul><li>Power BI -resurssien ehdollisen käyttöoikeuden määrittäminen AAD:n kautta</li><li>Power BI Embedded -kapasiteetin valmistelu</li></ul>|
+| PowerShellin cmdlet-komennot |<ul><li>Työtilojen ja muiden Power BI:n ominaisuuksien hallinta komentosarjojen hallinta</li></ul>|
+| Hallinnolliset ohjelmointirajapinnat ja SDK |<ul><li>Mukautettujen työkalujen laatiminen Power BI -järjestelmänvalvojan työtä varten. Esimerkiksi Power BI Desktop voi käyttää näitä ohjelmointirajapintoja hallinnollisiin tietoihin perustuvien raporttien laatimiseen</li></ul>|
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 

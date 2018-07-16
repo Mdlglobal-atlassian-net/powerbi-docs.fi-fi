@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-sktopms.date: 06/01/2018
+sktopms.date: 06/28/2018
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: 6341d5b3bba051cc31fe95f526450e03c14d4b69
-ms.sourcegitcommit: 5eb8632f653b9ea4f33a780fd360e75bbdf53b13
+ms.openlocfilehash: 08772389df36e72e4f8c83239ba396773070f61a
+ms.sourcegitcommit: ba447d7cc94418d7d3cf6fdcb686ec1a859258a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36964810"
+ms.lasthandoff: 07/02/2018
+ms.locfileid: "37145383"
 ---
 # <a name="frequently-asked-questions-about-power-bi"></a>Usein kysyttyjä kysymyksiä Power BI:stä
 * Jos sinulla on muita kysymyksiä, [voit esittää niitä Power BI -yhteisössä](http://community.powerbi.com/).
@@ -54,7 +54,7 @@ Kyllä, voittoa tavoittelemattomille yhdistyksille on erillinen hinnoittelu suor
 Power BI -palvelu [https://powerbi.com](https://powerbi.com) ei ole käytettävissä yksityisenä, sisäisenä pilvipalveluna. Tietojen paikalliseen tarkastelemiseen ja käsittelemiseen on kuitenkin kolme muuta vaihtoehtoa. 
 
 ### <a name="on-premises-data-gateway"></a>Paikallinen tietoyhdyskäytävä
-Käyttäessäsi Power BI:tä tai Power BI Desktopia voit muodostaa turvallisen yhteyden omiin paikallisiin tietolähteisiisi. [Paikallisen tietoyhdyskäytävän](service-gateway-onprem.md) avulla voit muodostaa reaaliaikaisen yhteyden paikalliseen SQL Server Analysis Services -palvelimeen ja muihin tietolähteisiin. Voit myös määrittää ajoitetun päivityksen käyttämällä keskitettyä yhdyskäytävää. Jos yhdyskäytävää ei ole käytettävissä, voit päivittää paikallisista tietolähteistä peräisin olevat tiedot [Power BI Gateway – Personalin](personal-gateway.md) avulla.
+Käyttäessäsi Power BI:tä tai Power BI Desktopia voit muodostaa turvallisen yhteyden omiin paikallisiin tietolähteisiisi. [Paikallisen tietoyhdyskäytävän](service-gateway-onprem.md) avulla voit muodostaa reaaliaikaisen yhteyden paikalliseen SQL Server Analysis Services -palvelimeen ja muihin tietolähteisiin. Voit myös määrittää ajoitetun päivityksen käyttämällä keskitettyä yhdyskäytävää. Jos yhdyskäytävää ei ole käytettävissä, voit päivittää paikallisista tietolähteistä peräisin olevat tiedot [Power BI Gateway – Personalin](service-gateway-personal-mode.md) avulla.
 
 ### <a name="power-bi-report-server"></a>Power BI -raporttipalvelin
 Power BI -raporttipalvelin on ratkaisu, jonka voit ottaa käyttöön omissa tiloissasi. Sen avulla voit luoda, julkaista ja hallita raportteja sekä toimittaa ne sitten eri käyttäjille eri tavoilla: selaimeen, mobiililaitteelle tai sähköpostiin. Lue lisää [Power BI -raporttipalvelimesta](report-server/get-started.md).
@@ -138,6 +138,7 @@ Kuten monissa muissakin Microsoft-palveluissa ja -ohjelmistoissa, myös Power BI
 * Jos haluat **kumota** viimeisimmän toiminnon tai muutamia viimeisimpiä toimintoja, valitse CTRL + Z.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
+* [Mikä on Power BI?](power-bi-overview.md)
 * Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)
 * Eikö ongelma ratkennut? Käy [Power BI -tukisivulla](https://powerbi.microsoft.com/support/)
 

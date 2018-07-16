@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-mobile
 ms.topic: conceptual
-ms.date: 10/13/2017
+ms.date: 06/28/2018
 ms.author: maggies
-ms.openlocfilehash: 3be6882219e23a2d22ee03e6805ce3a1e8e08b8f
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: fb05b6fd2378c8fe2b6dec35250df31d227b7760
+ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34297718"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37135440"
 ---
 # <a name="create-a-link-to-a-specific-location-in-the-power-bi-mobile-apps"></a>Linkin luominen tiettyyn sijaintiin Power BI ‑mobiilisovelluksissa
 Voit luoda URI-tunnuksen (uniform resource identifier) ja tehdä sen avulla linkin tiettyyn sijaintiin (*tarkka linkki*) Power BI ‑mobiilisovelluksissa kaikissa mobiiliympäristöissä: iOS:ssä, Android-laitteilla ja Windows 10:ssä.
@@ -103,5 +103,5 @@ Palaute auttaa meitä päättämään, mitä toimintoja otamme käyttöön tulev
 * [Power BI -sovellukset mobiililaitteille](mobile-apps-for-mobile-devices.md)
 * Seuraa käyttäjää @MSPowerBI Twitterissä
 * Liity keskusteluun [Power BI -yhteisössä](http://community.powerbi.com/)
-* [Power BI:n käytön aloittaminen](service-get-started.md)
+* [Mikä on Power BI?](power-bi-overview.md)
 

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 09/05/2017
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 67863b261bb8f3490d20ad21786313541df33388
-ms.sourcegitcommit: 49570ab8f5b5cd5bab4cd388f4281b1372bcb80b
+ms.openlocfilehash: a86b1d6823a1d889b47015d1213a9a056c537703
+ms.sourcegitcommit: 627918a704da793a45fed00cc57feced4a760395
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/09/2018
-ms.locfileid: "35250311"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37926647"
 ---
 # <a name="unable-to-add-power-bi-to-office-365-partner-subscription"></a>Power BI:tä ei voi lisätä Office 365 -kumppanitilaukseen
 Office 365:n avulla yritykset voivat myydä Office 365:n paketoituna ja yhdistettynä omiin ratkaisuihinsa, jotta loppuasiakkaat saavat yhden yksittäisen yhteyspisteen ostamiseen, laskutukseen ja tukeen.
@@ -33,7 +33,7 @@ Jos et voi ostaa Power BI:tä suoraan, käytettävissä on joitakin vaihtoehtoja
 
 [Power BI (ilmainen)](#power-bi-free)
 
-[Power BI Pro ja Premium](#power-bi-pro)
+[Power BI Pro ja Premium](#power-bi-pro-and-premium)
 
 ## <a name="power-bi-free"></a>Power BI (ilmainen)
 Jos olet tyytyväinen Power BI:n ilmaisversioon, voit rekisteröityä ilmaiseen palveluun. Oletusarvoisesti yksittäiset rekisteröitymiset, joita kutsutaan myös ad-hoc-tilauksiksi, on poistettu käytöstä. Kun yrität rekisteröityä Power BI:hin, näyttöön tulee sanoma, joka ilmaisee, että IT-osastosi on poistanut Microsoft Power BI:hin rekisteröitymisen käytöstä.

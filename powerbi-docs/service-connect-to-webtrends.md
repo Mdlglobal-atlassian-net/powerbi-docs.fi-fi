@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 89eda507e0b908fe746cb13c0c6477baed07ba3c
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 2250e3739904e6cc1e36c03df45cc765d3d9b591
+ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34243020"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37135233"
 ---
 # <a name="connect-to-webtrends-with-power-bi"></a>Yhteyden muodostaminen Webtrendsiin Power BI:n avulla
 Power BI:lle suunniteltu Webtrends-sisältöpaketti sisältää lukuisia heti käyttövalmiita mittareita, kuten sivunäkymien yhteismäärän ja vierailut liikenteen lähteen mukaan. Aloita Webtrends-tietojen visualisointi Power BI:ssä muodostamalla yhteys Webtrends-tiliisi. Voit käyttää annettua raporttinäkymää ja raportteja tai mukauttaa niitä, jotta niissä korostuvat itseäsi eniten kiinnostavat tiedot.  Tiedot päivitetään automaattisesti kerran päivässä.
@@ -101,7 +101,7 @@ Sisältöpakettia ladattaessa saattaa tapahtua virhe tunnistetietojen antamisen 
 2. Käyttäjällä on käyttöoikeudet [Sisältö](#Included)-osion raportteihin
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
-[Power BI:n käytön aloittaminen](service-get-started.md)
+[Mikä on Power BI?](power-bi-overview.md)
 
 [Power BI:n peruskäsitteet](service-basic-concepts.md)
 

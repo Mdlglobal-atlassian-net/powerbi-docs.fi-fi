@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 4b05fcc005f821c4fee24071f28651b5df57709c
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 5a0c00b6082b3561a1e07e5eef4e4e21f71f97a3
+ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34249340"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37135463"
 ---
 # <a name="connect-to-servicenow-with-power-bi-for-incident-reporting"></a>Yhteyden muodostaminen ServiceNow Power BI:lle ongelmien raportointia varten
 ServiceNow tarjoaa useita tuotteita ja ratkaisuja, kuten business, toiminnot ja IT-hallinta liiketoimintasi edistämiseksi. Tämä sisältöpaketti sisältää useita raportteja ja merkityksellisiä tietoja avoimista, äskettäin ratkaistuista ja viimeksi kuitatuista tapauksista.  
@@ -61,7 +61,7 @@ Jos saat tunnistetietoa koskevan virheen latauksen aikana, tarkista käyttövaat
 Jos havaitset pitkä latausaikoja, tarkista tapausten määrä ja päivien määrä yhteyden aikana ja harkitse määrien pienentämistä.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
-[Power BI:n käytön aloittaminen](service-get-started.md)
+[Mikä on Power BI?](power-bi-overview.md)
 
 [Power BI:n peruskäsitteet](service-basic-concepts.md)
 
