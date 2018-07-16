@@ -11,11 +11,11 @@ ms.date: 02/05/2018
 ms.author: mblythe
 LocalizationGroup: Premium
 ms.openlocfilehash: 15b64b917fed56e9d9ab6be2023060378324c794
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.sourcegitcommit: 001ea0ef95fdd4382602bfdae74c686de7dc3bd8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36944556"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38925432"
 ---
 # <a name="power-bi-premium---what-is-it"></a>Power BI Premium – mikä se on?
 Power BI Premium tarjoaa organisaatiollesi tai tiimillesi resurssit Power BI -palvelun käyttämiseen, luotettavamman suorituskyvyn ja suuremmat tietomäärät. Premiumin avulla voit jakaa sisältöä laajasti ilman käyttäjäkohtaisten käyttöoikeuksien hankkimista.

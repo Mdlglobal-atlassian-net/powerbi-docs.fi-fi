@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.component: powerbi-developer
 ms.custom: mvc
 manager: kfile
-ms.openlocfilehash: d9e2f76c63ee9ebff01080686277a3fbb5af46f3
-ms.sourcegitcommit: d1a0da8638c5d957b884ca9412275ee8880d4b14
+ms.openlocfilehash: a8833cb6b41ea76d50814975ada6239690a0c196
+ms.sourcegitcommit: 001ea0ef95fdd4382602bfdae74c686de7dc3bd8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37900073"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38877414"
 ---
 # <a name="tutorial-embed-a-power-bi-report-dashboard-or-tile-into-an-application-for-your-customers"></a>Opetusohjelma: Power BI -raportin, raporttinäkymän tai ruudun upottaminen sovellukseen asiakkaita varten
 **Azuren Power BI Embeddedin** avulla, voit upottaa sovellukseen raportteja, raporttinäkymiä tai ruutuja käyttämällä **app owns data** -hakemiston malleja. **App owns data**-hakemiston malleja käytetään kun kyseessä on sovellus, joka käyttää Power BI:tä upotettuna analyysiympäristönään. Kyseessä on yleensä **ISV-kehittäjä** -skenaario. **ISV-kehittäjänä** voit luoda Power BI -sisältöä, joka näyttää raportit, koontinäytöt tai ruudut sovelluksessa, joka on täysin integroitu ja vuorovaikutteinen, edellyttämättä Power BI -käyttöoikeutta sovelluksen käyttäjiltä, tai jopa tiedostamatta, että sovellus käyttää Power BI:tä. Tämä opetusohjelma esittelee, miten raportti integroidaan sovellukseen käyttämällä **Power BI** .NET SDK:ta **Power BI** JavaScript -ohjelmointirajapinnan kanssa, kun käytössä on **Azuren Power BI Embedded** **app owns data**-malleja käyttävä asiakas.
@@ -54,7 +54,7 @@ Rekisteröi sovellus Azure Active Directoryyn, jotta sovellus saa käyttöoikeud
     ![Sovelluksen rekisteröinnin etsiminen](media/embed-sample-for-customers/embed-sample-for-customers-003.png)</br>
     ![Uuden sovelluksen rekisteröinti](media/embed-sample-for-customers/embed-sample-for-customers-004.png)
 
-4. Noudata kehotteita ja luo uusi sovellus. App owns data -mallin kanssa on valittava **Alkuperäinen** -sovellustyyppi. Sinun täytyy myös antaa **Uudelleenohjaus -URL-osoite**, jota **Azure AD** käyttää palauttaessaan tunnusvastauksia. Anna sovellukselle määritetty arvo (esimerkiksi: `http://localhost:13526/redirect`).
+4. Noudata kehotteita ja luo uusi sovellus. App owns data -mallin kanssa on valittava **Alkuperäinen** -sovellustyyppi. Sinun täytyy myös antaa **Uudelleenohjaus -URL-osoite**, jota **Azure AD** käyttää palauttaessaan tunnusvastauksia. Anna sovellukselle määritetty arvo (esimerkiksi: `http://localhost:13526/Redirect`).
 
     ![Luo sovellus](media/embed-sample-for-customers/embed-sample-for-customers-005.png)
 
