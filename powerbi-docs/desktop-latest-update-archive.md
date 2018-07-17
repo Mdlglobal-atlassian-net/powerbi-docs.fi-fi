@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 06/05/2018
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 53c4250949a696f4abbd0722cf89207f2c8d37c8
-ms.sourcegitcommit: 8ee0ebd4d47a41108387d13a3bc3e7e2770cbeb8
+ms.openlocfilehash: 166d61c78f8e85a91dafa5de698d782b456834a7
+ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34813844"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37601633"
 ---
 # <a name="previous-monthly-updates-to-power-bi-desktop"></a>Power BI Desktopin aiemmat kuukausipäivitykset
 
@@ -28,7 +28,7 @@ Kunkin päivityksen vieressä olevat linkit tarkoittavat seuraavaa:
 * **[video]**-leikkeet toistetaan uudessa selainvälilehdessä uuden ominaisuuden kuvailun yhteydessä.
 * Tietyistä ominaisuuksista on tarjolla oma **[artikkeli]**, joka sisältää lisätietoja.
 * Useimmat ominaisuudet on selitetty kuukausittaisen päivityksen **[blogi]**-kirjoituksessa.
-* Jotkin ominaisuudet puolestaan ovat itsestään selviä eivätkä tarvitse artikkelia tai videota tuekseen.
+* Lopuksi jotkin ominaisuudet ovat itsestään selviä eivätkä tarvitse tuekseen artikkelia tai videota.
 
 Voit myös katsoa **Uusimmat päivitykset** -videon, joka on aivan tämän artikkelin alussa. Napsauta päivitysluettelon alla olevan videokuvan **toistokuvaketta**.
 
@@ -255,7 +255,7 @@ Kunkin päivityksen vieressä olevat linkit tarkoittavat seuraavaa:
 * **[video]**-leikkeet toistetaan uudessa selainvälilehdessä uuden ominaisuuden kuvailun yhteydessä.
 * Tietyistä ominaisuuksista on tarjolla oma **[artikkeli]**, joka sisältää lisätietoja.
 * Useimmat ominaisuudet on selitetty kuukausittaisen päivityksen **[blogi]**-kirjoituksessa.
--   Jotkin ominaisuudet puolestaan ovat itsestään selviä eivätkä tarvitse artikkelia tai videota tuekseen.
+* Jotkin ominaisuudet puolestaan ovat itsestään selviä eivätkä tarvitse artikkelia tai videota tuekseen.
 
 Voit myös katsoa tämän kuukauden **Uusimmat päivitykset** -videon, joka on aivan tämän artikkelin alussa. Napsauta päivitysluettelon alla olevan videokuvan **toistokuvaketta**.
 
@@ -1844,15 +1844,15 @@ Tähän päivitykseen on lisätty seuraavat ominaisuudet tai parannukset:
     -   Parempi esikatselukokemus monidimensioisille lähteille (Analysis Services ja SAP BusinessObjects)
     -   Näytä valitut kohteet -vaihtoehto
     -   Parannettu hakutoiminto Siirtymistoiminto-puussa
--   Uusia muunnoksia
-    -   Ikä- ja vähennystoiminnot Päivämäärä ja aika-sarakkeissa
-    -   Koostesarakkeet: mahdollisuus poistaa uusien sarakkeiden etuliite käytöstä
--   Kenttäluettelon parannukset
-    -   Laajenna/kutista taulukot
-    -   Piilota tai näytä kentät
-    -   Optimoitu asettelu (välistys, marginaalit ja fontit)
--   Raporttisivujen siirtymistoiminto – näppäimistötuki
--   Paljon virheenkorjauksia
+- Uusia muunnoksia
+  -   Ikä- ja vähennystoiminnot Päivämäärä ja aika-sarakkeissa
+  -   Koostesarakkeet: mahdollisuus poistaa uusien sarakkeiden etuliite käytöstä
+- Kenttäluettelon parannukset
+  -   Laajenna/kutista taulukot
+  -   Piilota tai näytä kentät
+  -   Optimoitu asettelu (välistys, marginaalit ja fontit)
+- Raporttisivujen siirtymistoiminto – näppäimistötuki
+- Paljon virheenkorjauksia
 
 <iframe width="500" height="281" src="https://www.youtube.com/embed/-bZFeS1S1wU" frameborder="0" allowfullscreen></iframe>
 
