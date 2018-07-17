@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: conceptual
-ms.date: 07/03/2018
+ms.date: 07/09/2018
 ms.author: maghan
-ms.openlocfilehash: b3c9599ea3ce01094bb75d9b036fb25b1ca7109a
-ms.sourcegitcommit: 627918a704da793a45fed00cc57feced4a760395
+ms.openlocfilehash: d6b30d97b1982ceca34579751e412a279b0d8881
+ms.sourcegitcommit: 001ea0ef95fdd4382602bfdae74c686de7dc3bd8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37926555"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38877020"
 ---
 # <a name="troubleshooting-your-embedded-application"></a>Upotetun sovelluksen vianmääritys
 
@@ -102,13 +102,11 @@ Sovelluksen taustatietokanta saattaa joutua päivittämään todennustunnuksen e
 
 **(AADSTS70002: Virhe vahvistettaessa tunnistetietoja. AADSTS50053: Olet yrittänyt kirjautua sisään liian monta kertaa virheellisellä käyttäjätunnuksella tai salasanalla)**
 
-Jos käytät Power BI Embeddediä ja Azure AD:n suoraa todennusta ja saat kirjautumisviestejä, kuten ***virhe:unauthorized_client,error_description:AADSTS70002: Virhe vahvistettaessa tunnistetietoja. AADSTS50053: Olet yrittänyt kirjautua sisään liian monta kertaa virheellisellä käyttäjätunnuksella tai salasanalla***, koska suora todennus on poistettu käytöstä 14.06.2018.
+Jos käytät Power BI Embeddediä ja Azure AD:n suoraa todennusta ja saat kirjautumisviestejä, kuten ***virhe:unauthorized_client,error_description:AADSTS70002: Virhe vahvistettaessa tunnistetietoja. AADSTS50053: Olet yrittänyt kirjautua sisään liian monta kertaa virheellisellä käyttäjätunnuksella tai salasanalla***, koska suora todennus on poistettu oletusarvoisesta käytöstä 14.06.2018.
 
-Suosittelemme käyttämään [Azure AD:n ehdollisen käyttöoikeuden](https://cloudblogs.microsoft.com/enterprisemobility/2018/06/07/azure-ad-conditional-access-support-for-blocking-legacy-auth-is-in-public-preview/) tukea vanhan todennuksen estämiseen tai käyttämään [Azure AD -hakemiston läpivientikyselyn todennusta](https://docs.microsoft.com/en-us/azure/active-directory/connect/active-directory-aadconnect-pass-through-authentication).
+Voit ottaa toiminnon takaisin käyttöön [Azure AD -käytännöllä](https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/configure-authentication-for-federated-users-portal#enable-direct-authentication-for-legacy-applications), joka voidaan joko suodattaa organisaatiolle tai [palveluobjektille](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-application-objects#service-principal-object).
 
-Voit kuitenkin ottaa tämän takaisin käyttöön [Azure AD -käytännöllä](https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/configure-authentication-for-federated-users-portal#enable-direct-authentication-for-legacy-applications), joka voidaan joko suodattaa organisaatiolle tai [palveluobjektille](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-application-objects#service-principal-object).
-
-**_Suosittelemme ottamaan tämän käyttöön vain sovelluskohtaisesti ja vain tarvittaessa vaihtoehtoisena menetelmänä._**
+On suositeltavaa, että toiminto otetaan käyttöön vain sovelluskohtaisesti.
 
 Jotta voit luoda tämän käytännön, sinun on oltava sen hakemiston **yleinen järjestelmänvalvoja**, johon luot ja määrität käytännön. Seuraavassa on esimerkki komentosarjasta käytännön luomiseksi ja sen määrittämiseksi tämän sovelluksen SP:lle:
 
@@ -239,7 +237,7 @@ Käyttäessäsi **organisaatiolle tarkoitettu upotus** -mallisovellusta, saat se
 
 Tämä johtuu siitä, että verkkopalvelinsovellukselle määritetty uudelleenohjauksen URL-osoite on eri kuin mallisovelluksen URL-osoite. Jos haluat rekisteröidä mallisovelluksen, käytä `http://localhost:13526/`uudelleenohjauksen URL-osoitteena.
 
-Jos haluat muokata rekisteröityä sovellusta, opettele muokkaamaan [AAD-rekisteröityä sovellusta](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications#updating-an-application), jolloin sovellus tarjoaa pääsyn verkon ohjelmointirajapintoihin.
+Jos haluat muokata rekisteröityä sovellusta, ja opettele muokkaamaan [AAD-rekisteröityä sovellusta](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications#updating-an-application), jolloin sovellus tarjoaa pääsyn verkon ohjelmointirajapintoihin.
 
 Jos haluat muokata Power BI -käyttäjäprofiilia tai tietoja, opettele muokkaamaan [Power BI -tietoja](https://docs.microsoft.com/en-us/power-bi/service-basic-concepts).
 
