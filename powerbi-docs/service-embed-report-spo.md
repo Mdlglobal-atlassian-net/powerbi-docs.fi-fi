@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 05/25/2018
 ms.author: maghan
 LocalizationGroup: Share your work
-ms.openlocfilehash: 1c9948ad5c09b3123d898bf8841243d6e5fa83fd
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 63cb1fe3061d1ba48e71a4ac09862fce29dd9196
+ms.sourcegitcommit: ba3cab4613a2b815d46a213eff07a8a8ec22c17f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34553561"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39032044"
 ---
 # <a name="embed-with-report-web-part-in-sharepoint-online"></a>Upota raportin verkko-osa SharePoint Onlinessa
 
@@ -84,7 +84,7 @@ Kun raportti upotetaan SharePoint Onlineen, käyttäjät eivät saa automaattise
 > [!IMPORTANT]
 > Katso Power BI -palvelussa, kuka saa nähdä raportin, ja myönnä käyttöoikeudet niille, jotka eivät ole luettelossa.
 
-Raportin käyttöoikeuden voi myöntää kahdella tavalla Power BI -palvelussa. Jos käytät Office 365 -ryhmää SharePoint Online -työryhmäsivuston luomiseen, lisää käyttäjä Power BI -palvelun sovellustyötilan jäseneksi. Näin voit varmistaa, että käyttäjät voivat tarkastella ryhmän sisältöä. Lisätietoja on ohjeartikkelissa [Sovelluksen luominen ja jakaminen Power BI:ssä](service-create-distribute-apps.md).
+Raportin käyttöoikeuden voi myöntää kahdella tavalla Power BI -palvelussa. Jos käytät Office 365 -ryhmää SharePoint Online -työryhmäsivuston luomiseen, lisää käyttäjä **Power BI -palvelun** ja **SharePoint-sivun sovellustyötilan** jäseneksi. Näin voit varmistaa, että käyttäjät voivat tarkastella ryhmän sisältöä. Lisätietoja on ohjeartikkelissa [Sovelluksen luominen ja jakaminen Power BI:ssä](service-create-distribute-apps.md).
 
 Vaihtoehtoisesti voit myöntää käyttäjille raportin käyttöoikeuden seuraavasti.
 
@@ -129,7 +129,7 @@ Yritä ratkaista ongelma ottamalla yhteyttä SharePoint Online -sivun omistajaan
 
 ## <a name="known-issues-and-limitations"></a>Tunnetut ongelmat ja rajoitukset
 
-* **Virhe: ”Ilmeni virhe, kirjaudu ulos ja uudelleen sisään ja yritä avata tämä sivu uudelleen. Korrelaatiotunnus: määrittämätön, HTTP-vastauksen tila: 400, palvelimen virhekoodi 10001, viesti: päivitystunnus puuttuu”**
+* Virhe: ”Ilmeni virhe, kirjaudu ulos ja uudelleen sisään ja yritä avata tämä sivu uudelleen. Korrelaatiotunnus: määrittämätön, HTTP-vastauksen tila: 400, palvelimen virhekoodi 10001, viesti: päivitystunnus puuttuu”
   
   Jos saat tämän virheviestin, yritä jotakin seuraavista.
   
@@ -154,5 +154,4 @@ Yritä ratkaista ongelma ottamalla yhteyttä SharePoint Online -sivun omistajaan
 [Koontinäytön jakaminen työtovereille ja muille](service-share-dashboards.md)  
 [Mikä on Power BI Premium?](service-premium.md)  
 
-Ilmenikö muuta kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/) 
-
+Ilmenikö muuta kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)

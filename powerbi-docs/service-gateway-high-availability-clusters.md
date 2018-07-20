@@ -10,15 +10,17 @@ ms.topic: conceptual
 ms.date: 12/05/2017
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: e15983bf754a2fc1e2fe9ae376eedbed36e20ce4
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 9777131c25974a2bc9936ef1c1ce285bb652028c
+ms.sourcegitcommit: ba3cab4613a2b815d46a213eff07a8a8ec22c17f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34298776"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39032021"
 ---
 # <a name="high-availability-clusters-for-on-premises-data-gateway"></a>Suuren käytettävyyden klusterit paikallisessa tietoyhdyskäytävässä
-Voit luoda **suuren käytettävyyden klustereita** **paikallisen tietoyhdyskäytävän** asennuksista, jotta organisaatiosi voi käyttää paikallisia tietoresursseja, joita käytetään Power BI -raporteissa ja koontinäytöissä. Tällaisten klustereiden avulla yhdyskäytävän järjestelmänvalvojat voivat ryhmittää yhdyskäytäviä, joilla voidaan välttää yksittäisiä vikapisteitä paikallisia tietoresursseja käytettäessä. Tässä artikkelissa kuvataan vaiheet, joilla voit luoda suuren käytettävyyden klusterin paikallisista tietoyhdyskäytävien ja siinä esitellään parhaat käytännöt niiden määrittämisessä. Suuren käytettävyyden yhdyskäytäväklusterit edellyttävät marraskuun 2017 päivityksen paikalliseen tietoyhdyskäytävään tai uudemman version.
+Voit luoda **suuren käytettävyyden klustereita** **paikallisen tietoyhdyskäytävän** asennuksista, jotta organisaatiosi voi käyttää paikallisia tietoresursseja, joita käytetään Power BI -raporteissa ja koontinäytöissä. Tällaisten klustereiden avulla yhdyskäytävän järjestelmänvalvojat voivat ryhmittää yhdyskäytäviä, joilla voidaan välttää yksittäisiä vikapisteitä paikallisia tietoresursseja käytettäessä. Power BI -palvelu käyttää aina klusterin ensisijaista yhdyskäytävää, paitsi jos se ei ole käytettävissä. Siinä tapauksessa palvelu siirtyy käyttämään klusterin seuraavaa yhdyskäytävää ja niin edelleen.
+
+Tässä artikkelissa kuvataan vaiheet, joilla voit luoda suuren käytettävyyden klusterin paikallisista tietoyhdyskäytävien ja siinä esitellään parhaat käytännöt niiden määrittämisessä. Suuren käytettävyyden yhdyskäytäväklusterit edellyttävät marraskuun 2017 päivityksen paikalliseen tietoyhdyskäytävään tai uudemman version.
 
 
 ## <a name="setting-up-high-availability-clusters-of-gateways"></a>Suuren käytettävyyden yhdyskäytävien klustereiden määrittäminen

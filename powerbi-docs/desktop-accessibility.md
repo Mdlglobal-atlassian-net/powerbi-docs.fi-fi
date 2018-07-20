@@ -7,18 +7,18 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/05/2018
+ms.date: 07/06/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 6147f41ea99ad4a0416f6aa9c01288102f792771
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 72a900b1661a77e5b31c1d68b5726d989b236f7b
+ms.sourcegitcommit: ba3cab4613a2b815d46a213eff07a8a8ec22c17f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34812924"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39031998"
 ---
 # <a name="accessibility-in-power-bi-desktop-reports"></a>Power BI Desktop -raporttien helppokäyttöisyys
-**Power BI Desktopissa** on ominaisuuksia, joiden avulla toimintarajoitteisten henkilöiden on helppo käyttää ja käsitellä **Power BI Desktop** -raportteja. Näitä ominaisuuksia ovat esimerkiksi mahdollisuus käyttää raporttia näppäimistön tai näytönlukuohjelman avulla, kohdistaminen sivun eri objekteihin sarkaimella sekä ymmärtäväinen merkkien käyttö visualisoinneissa.
+Power BI:ssa on ominaisuuksia, joiden avulla toimintarajoitteisten henkilöiden on helppo käyttää ja käsitellä Power BI -raportteja. Näitä ominaisuuksia ovat esimerkiksi mahdollisuus käyttää raporttia näppäimistön tai näytönlukuohjelman avulla, kohdistaminen sivun eri objekteihin sarkaimella sekä ymmärtäväinen merkkien käyttö visualisoinneissa.
 
 ![Erilaiset merkinnät parantavat viiva- ja aluekaavioiden helppokäyttöisyyttä](media/desktop-accessibility/accessibility_01.png)
 
@@ -32,20 +32,25 @@ Syyskuun 2017 julkaisusta alkaen **Power BI Desktopissa** on voinut painaa **?**
 
 ![Paina ?-näppäintä Power BI Desktopissa tarkastellaksesi helppokäyttötoimintojen pikanäppäimiä](media/desktop-accessibility/accessibility_03.png)
 
-Helppokäyttötoimintoihin tehtyjen parannusten myötä voit käyttää **Power BI Desktop** -raportteja näppäimistöllä tai näytönlukuohjelmalla seuraavin tavoin:
+Helppokäyttötoimintoihin tehtyjen parannusten myötä voit käyttää Power BI -raportteja näppäimistöllä tai näytönlukuohjelmalla seuraavin tavoin:
 
 Voit myös vaihtaa kohdistusta raporttisivujen välilehtien tai raportin tietyn sivun objektien välillä painamalla **Ctrl + F6**.
 
 * Kun kohdistus on *raportin sivujen välilehdillä*, käytä *sarkain*- tai *nuolinäppäimiä* siirtääksesi kohdistuksen sivulta toiselle. Näytönlukuohjelma voi lukea raporttisivun otsikon ja sen, onko kyseinen sivu sillä hetkellä valittuna. Voit ladata raportin sivun, jossa kohdistus on sillä hetkellä, painamalla *Enter*- tai *välilyöntinäppäintä*.
-* Kun kohdistus on ladatulla *raportin sivulla*, voit siirtää kohdistuksen *sarkainpainikkeella* sivun objektien välillä. Objekteja ovat kaikki tekstiruudut, kuvat, muodot ja kaaviot. Näytönlukuohjelma lukee objektin tyypin ja objektin tekijän kirjoittaman kuvauksen. 
+* Kun kohdistus on ladatulla *raportin sivulla*, voit siirtää kohdistuksen *sarkainpainikkeella* sivun objektien välillä. Objekteja ovat kaikki tekstiruudut, kuvat, muodot ja kaaviot. Näytönlukija lukee objektin tyypin, kyseisen objektin mahdollisen otsikon ja objektin kuvauksen, jos sille on sellainen raportin kirjoittajan toimesta annettu. 
 
-Voit siirtää kohdistuksen visuaaliseen valikkoon painamalla **Alt + vaihto + F10**.
+Jos haluat navigoidessasi visualisointien välillä, käsitellä jotain niistä tarkemmin, paina **Alt + VAIHTO + F10** siirtääksesi kohdistuksen visualisoinnin otsikkoon, joka sisältää eri vaihtoehtoja, kuten lajittelun, kaavion tietojen tarkastelun ja kohdistustilan. 
 
-Voit avata *Näytä tiedot* -ikkunan helppokäyttöisen version painamalla **Alt + vaihto + F11**.
+Voit avata *Näytä tiedot* -ikkunan helppokäyttöisen version painamalla **Alt + vaihto + F11**. Tämän avulla voit tutkia visualisoinnissa käytettäviä tietoja HTML-taulukkona, käyttäen samoja pikanäppäimiä, joita käytät normaalisti näytönlukijassa. 
 
 ![Voit avata helppokäyttöisen visualisoinnin Power BI Desktopissa painamalla Alt + vaihto + F11](media/desktop-accessibility/accessibility_04.png)
 
-Näiden helppokäyttötoimintojen lisäysten avulla **Power BI Desktop** -raportteja voidaan käyttää täydellisesti näytönlukuohjelmalla ja pikanäppäimillä.
+> [!NOTE]
+> Näytä tiedot -ominaisuus on käytettävissä vain näytönlukijan kanssa tällä pikanäppäinyhdistelmällä. Jos avaat Näytä tiedot -ominaisuuden visualisoinnin otsikon vaihtoehdoista, ei se ole näytönlukija käytettävissä.
+> 
+> 
+
+Näiden helppokäyttötoimintojen lisäysten avulla Power BI -raportteja voidaan käyttää täydellisesti näytönlukuohjelmalla ja pikanäppäimillä.
 
 ## <a name="tips-for-creating-accessible-reports"></a>Vihjeitä helppokäyttöisten raporttien luomiseen
 Seuraavien vihjeiden avulla voit luoda entistä helppokäyttöisempiä **Power BI Desktop** -raportteja.
@@ -58,14 +63,17 @@ Seuraavien vihjeiden avulla voit luoda entistä helppokäyttöisempiä **Power B
   ![Erilaiset merkinnät parantavat viiva- ja aluekaavioiden helppokäyttöisyyttä](media/desktop-accessibility/accessibility_01.png)
   
   * Erilaisen *merkinnän muodon* käyttö kullakin rivillä helpottaa rivien (tai alueiden) erottamista toisistaan.
-* Kuten edellisessäkin luettelokohdassa, välitä tietoa muillakin keinoilla kuin värillä. Muotojen käyttäminen riveillä (edellä kuvattujen merkintöjen) parantaa helppokäyttöisyyttä.
+* Kuten edellisessäkin luettelokohdassa, välitä tietoa muillakin keinoilla kuin värillä. Muotojen käytön lisäksi rivi- ja pistekaavioissa, sinun ei ole pakko noudattaa ehdollista muotoilua tarjotaksesi merkityksellisiä tietoja taulukoiden ja matriisien muodossa. 
+* Valitse raporttisi jokaiselle visualisoinnille tarkoituksellinen lajittelujärjestys. Kun näytönlukijan käyttäjä tarkastelee kaavion tietoja, tiedon poimitaan samassa järjestyksessä kuin visualisoinnissa.
 * Valitse teemagalleriasta *teema*, jonka kontrasti on suuri ja soveltuu henkilöille, joiden värinäkö on alentunut. Voit tuoda teeman [**Teema** -esikatseluominaisuudella](desktop-report-themes.md).
 * Tarjoa *vaihtoehtoinen teksti* jokaisesta raportin objektista. Näin varmistat, että raportissa olevan visualisoinnin merkitys välittyy myös sellaisille käyttäjille, jotka eivät voi nähdä visualisointia, kuvaa, muotoa tai tekstiruutua. Voit antaa *vaihtoehtoisen tekstin* mistä tahansa **Power BI Desktop** -raportin objektista valitsemalla objektin (esimerkiksi visualisointi tai muoto) ja valitsemalla sitten **Visualisoinnit**-ruudusta **Muoto**-osion, laajentamalla **Yleiset**-kohdan, siirtymällä sivun alareunaan ja täyttämällä **Vaihtoehtoinen teksti** -tekstiruudun.
   
   ![Voit lisätä raportin minkä tahansa objektin vaihtoehtoisen tekstin kohdasta Visualisoinnit > Muoto > Yleinen > Vaihtoehtoinen teksti -ruutu](media/desktop-accessibility/accessibility_02.png)
-* Varmista, että raportin tekstin ja taustavärien välinen kontrasti on riittävä.
+* Varmista, että raportin tekstin ja taustavärien välinen kontrasti on riittävä. Useiden käytettävissä olevien työkalujen, kuten [värikontrastianalysaattorin](https://developer.paciellogroup.com/resources/contrastanalyser/) avulla voit tarkastella raporttisi värejä. 
 * Käytä tekstin kokoa ja fontteja, jotka ovat helppoja lukea. Pieni teksti ja vaikeaselkoiset fontit heikentävät helppokäyttöisyyttä.
 * Sisällytä kaikkiin visualisointeihin otsikko, akselinimet ja arvopisteiden nimet.
+* Käytä kuvaavia otsikoita kaikille raportin sivuille.
+* Vältä koristeellisia muotoja tai kuvia raportissasi mahdollisuuksien mukaan, sillä ne sisällytetään raportin välilehtijärjestykseen. Jos raporttiin tarvitsee sisällyttää koristeellisia objekteja, päivitä objektin vaihtoehtoinen teksti, kertoaksesi näytönlukijan käyttäjille, että kyseessä on koriste.
 
 ## <a name="high-contrast-support-for-reports"></a>Suuren kontrastin tuki raporteille
 
@@ -87,7 +95,8 @@ Power BI -palvelu yrittää myös tunnistaa Windowsille valitut suuren kontrasti
 ## <a name="considerations-and-limitations"></a>Huomioitavat asiat ja rajoitukset
 Helppokäyttötoimintoihin liittyy muutamia tunnettuja ongelmia ja rajoituksia, jotka on kuvattu seuraavassa luettelossa:
 
-* JAWS-tuki koskee raportteja, joita tarkastellaan **Power BI -palvelussa**, mukaan lukien upotetut raportit. JAWS-tuki koskee myös **Power BI Desktopia**, mutta sinun on avattava näytönlukuohjelma ennen **Power BI Desktop** -tiedostojen avaamista, jotta näytön luku toimii oikein.
+* Saadaksesi parhaan kokemuksen, kun käytät näytönlukijaa **Power BI Desktopin** kanssa, avaa valitsemasi näytönlukija ennen kuin avaat tiedostoja Power BI Desktopissa.
+* Jos käytät Narratoria, tietojen näyttämisenä HTML-taulukkomuodossa on joitakin rajoituksia.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 * [Raporttiteemojen käyttö Power BI Desktopissa (esikatseluversio)](desktop-report-themes.md)
