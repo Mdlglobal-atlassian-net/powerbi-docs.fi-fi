@@ -1021,7 +1021,9 @@
             - name: 'Mitä voin tehdä Power BI:n ohjelmointirajapinnalla?'
               href: developer/overview-of-power-bi-rest-api.md
         - name: Opetusohjelmat
-          items: null
+          items:
+            - name: Tietojen työntäminen tietojoukkoon
+              href: developer/walkthrough-push-data.md
         - name: Käsitteet
           items:
             - name: Automaattinen reaaliaikaisten tietojen säilytyskäytäntö
@@ -1036,8 +1038,6 @@
                   href: developer/api-data-model-versioning.md
         - name: Ohjeet
           items:
-            - name: Tietojen työntäminen tietojoukkoon
-              href: developer/walkthrough-push-data.md
             - name: Sovelluksen Azure AD -rekisteröinti
               href: developer/walkthrough-push-data-register-app-with-azure-ad.md
             - name: Todennustunnuksen hankkiminen
