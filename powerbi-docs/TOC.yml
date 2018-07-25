@@ -530,6 +530,12 @@
       items:
         - name: Mitä uutta viimeisin Power BI Desktop -päivitys sisältää?
           href: desktop-latest-update.md
+        - name: Yhdistelmämallit Power BI Desktopissa (esikatselu)
+          href: desktop-composite-models.md
+        - name: Moni-moneen-yhteydet Power BI Desktopissa (esikatselu)
+          href: desktop-many-to-many-relationships.md
+        - name: Tallennustilamoodi Power BI Desktopissa (esikatselu)
+          href: desktop-storage-mode.md
         - name: Kaksisuuntainen ristiinsuodatus Power BI Desktopissa (esikatselu)
           href: desktop-bidirectional-filtering.md
         - name: Power BI ja DirectQuery
@@ -670,6 +676,8 @@
               href: desktop-import-and-display-kpis.md
         - name: Raporttien luominen
           items:
+            - name: Raporttien visuaaliset elementit
+              href: desktop-visual-elements-for-reports.md
             - name: Q&A Power BI Desktopissa
               href: desktop-qna-in-reports.md
             - name: Analytiikkaruutu Power BI Desktopissa
@@ -1244,6 +1252,8 @@
               href: service-premium-large-datasets.md
             - name: Lisäävä päivitys
               href: service-premium-incremental-refresh.md
+            - name: Multi-Geo-tuki (esikatselu)
+              href: service-admin-premium-multi-geo.md
             - name: Power BI Premiumin usein kysytyt kysymykset
               href: service-premium-faq.md
             - name: Power BI Premiumin julkaisutiedot
