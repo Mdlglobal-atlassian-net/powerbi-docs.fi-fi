@@ -57,7 +57,7 @@ Lasketun mitan pakollisia elementtejä ovat samat kuin lasketussa sarakkeessa:
 * uuden mitan nimi
 * ainakin yksi funktio tai lauseke.
 
-> Videon sisällön on luonut [Alberto Ferrari, SQLBI](http://www.sqlbi.com/learning-dax/?utm_source=powerbi&utm_medium=marketing&utm_campaign=after-summit).
+> Videon sisällön on luonut [Alberto Ferrari, SQLBI](http://www.sqlbi.com/learning-dax).
 > 
 > 
 

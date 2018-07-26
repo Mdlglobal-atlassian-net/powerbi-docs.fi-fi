@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 05/02/2018
+ms.date: 07/24/2018
 ms.author: davidi
 LocalizationGroup: Data from databases
-ms.openlocfilehash: a656866b1c9cdc0d1eb83b67c0edf79c182d1a71
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 596d399e7c304d40be5b7839c5c16060eb9e8155
+ms.sourcegitcommit: 7fb0b68203877ff01f29724f0d1761d023075445
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34244429"
+ms.lasthandoff: 07/26/2018
+ms.locfileid: "39255982"
 ---
 # <a name="azure-and-power-bi"></a>Azure ja Power BI
 **Azure**-palveluiden ja **Power BI:n avulla** voit siirtää tietojenkäsittelyllä saamasi tiedot analyyseihin ja raporttien, joilla saadaan reaaliaikaisia tietoja yrityksestäsi. Oli tietojen käsittely sitten pilvipohjaista tai paikallista, yksinkertaista tai monimutkaista, yhdestä lähteestä tai massiivisesti skaalattua, tallennettua tai reaaliaikaisia, Azure ja Power BI sisältävät kiinteän liitännän ja integraation yrityksesi liiketoimintatiedon hallintaa varten.
@@ -52,7 +52,7 @@ Voit laajentua juuri niin paljon kuin pitää Azuren ja Power BI:n avulla. Usean
 ### <a name="connect-your-app-data-using-power-bi-apis"></a>Sovellustietojen yhdistäminen Power BI ohjelmointirajapinnoilla
 Power BI:n avulla voit myös hankkia tietoja nykyisistä sovelluksista. Power BI API:n avulla sovelluskehittäjät voivat lähettää kokonaisia tietojoukkoja Power BI:lle ohjelmallisesti. Tarvitsetko jatkuva päivityksiä? Power BI API -kehittäjät voit lähettää reaaliaikaisia päivityksiä, joilla pääset nopeasti alkuun ja joita voit sitten kasvattaa käyttäen Azure Stream Analyticsia, kun skaalausvaatimukset niin vaativat.
 
-Power BI API:sta on runsaasti tietoa [Power BI -kehittäjäportaalissa](http://dev.powerbi.com). Voit myös oppia muiden ohjelmallisista tekemisistä [Power BI -kehittäjän blogista](http://blogs.msdn.com/powerbidev). Käytettävissä on myös sivu, jolla opastetaan [käytön alkuun Power BI -kehitystyössä](https://msdn.microsoft.com/library/dn889824.aspx).
+Power BI API:sta on runsaasti tietoa [Power BI -kehittäjäportaalissa](http://dev.powerbi.com). 
 
 ### <a name="what-could-you-do-with-azure-and-power-bi"></a>Mitä Azurella ja Power BI:lla voi tehdä?
 On olemassa runsaasti skenaarioita, joissa **Azure** ja **Power BI** voidaan yhdistää. Mahdollisuudet ja tilaisuudet ovat yhtä yksilöllisiä kuin liiketoimintasi. Saat lisätietoja **Azure-palveluista** tutustumalla tähän [yleiskatsaussivuun](http://go.microsoft.com/fwlink/?LinkId=535031&clcid=0x409), mikä kuvaa **tietojen analysoinnin skenaarioita Azurea käyttämällä** ja lue, miten voit muuntaa tietolähteet osaamiseksi, joka vie liiketoimintaasi eteenpäin.

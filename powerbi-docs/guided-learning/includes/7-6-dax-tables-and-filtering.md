@@ -34,7 +34,7 @@ Power BI ja DAX sisältävät esimerkiksi arvoja, joita ei ole indeksoitu kesken
 
 Voit myös luoda kokonaisia laskettuja taulukoita DAX-funktioilla. DAX:llä luodut lasketut taulukot edellyttävät **NAME**- ja **TABLE**-funktioita. Laskettuja taulukoita voi käyttää kuten kaikkia muitakin taulukoita (mukaan lukien suhteiden luominen).
 
-> Videon sisällön on luonut [Alberto Ferrari, SQLBI](http://www.sqlbi.com/learning-dax/?utm_source=powerbi&utm_medium=marketing&utm_campaign=after-summit).
+> Videon sisällön on luonut [Alberto Ferrari, SQLBI](http://www.sqlbi.com/learning-dax).
 > 
 > 
 

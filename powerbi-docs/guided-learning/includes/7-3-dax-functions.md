@@ -89,7 +89,7 @@ DAX sisältää seuraavat **päivämääräfunktiot**:
 
 Näillä funktioilla voit laskea ja hakea tietoja *päivämääräarvoista*, mutta ne eivät koske aikatieto, joissa käytetään päivämäärätaulukkoa.
 
-> Videon sisällön on luonut [Alberto Ferrari, SQLBI](http://www.sqlbi.com/learning-dax/?utm_source=powerbi&utm_medium=marketing&utm_campaign=after-summit).
+> Videon sisällön on luonut [Alberto Ferrari, SQLBI](http://www.sqlbi.com/learning-dax).
 > 
 > 
 

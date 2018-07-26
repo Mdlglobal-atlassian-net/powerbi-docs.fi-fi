@@ -10,7 +10,7 @@ Muuttujien tietotyyppi voi olla mikä tahansa, mukaan lukien kokonaiset taulukot
 
 Muista, että kun viittaat muuttujaan DAX-lausekkeessa, Power BI:n täytyy aina laskea sen arvo uudelleen määritelmäsi mukaisesti. Tästä syystä muuttujia ei kannata toistaa funktioissa.
 
-> Videon sisällön on luonut [Alberto Ferrari, SQLBI](http://www.sqlbi.com/learning-dax/?utm_source=powerbi&utm_medium=marketing&utm_campaign=after-summit).
+> Videon sisällön on luonut [Alberto Ferrari, SQLBI](http://www.sqlbi.com/learning-dax).
 > 
 > 
 
