@@ -35,7 +35,7 @@ Muodosta yhteys Power BI:lle tarkoitettuun [Dynamics Marketing -sisältöpaketti
 3. Valitse **Microsoft Dynamics Marketing** \> **Nouda**.
    
    ![](media/service-connect-to-microsoft-dynamics-marketing/mdmarketing.png)
-4. Anna tiliisi liitetty OData-URL-osoite.  Se on muodossa "https://[esiintymä\_nimi].marketing.dynamics.com/analytics."
+4. Anna tiliisi liitetty OData-URL-osoite.  Se on muodossa "https:// [esiintymä\_nimi].marketing.dynamics.com/analytics."
    
    ![](media/service-connect-to-microsoft-dynamics-marketing/pbi_dynmktgserviceurl.png)
 5. Anna tunnistetietosi, kun niitä pyydetään (tämän vaiheen voi ohittaa, jos olet jo kirjautunut sisään selaimellasi). Kirjoita todentamismenetelmäksi **oAuth2** ja valitse **Kirjaudu sisään**:
@@ -54,7 +54,7 @@ Muodosta yhteys Power BI:lle tarkoitettuun [Dynamics Marketing -sisältöpaketti
 
 ## <a name="system-requirements"></a>Järjestelmävaatimukset
 * Sinun on määritettävä kelvollinen OData-URL-osoite Dynamics Marketingin esiintymää varten (sisältöpaketti ei toimi paikallisen CRM-version kanssa).  
-* Järjestelmänvalvojan on otettava käyttöön OData-päätepiste sivuston asetuksissa. OData-päätepisteen osoite löytyy siirtymällä **Organisaation tietopalvelu** -osaan ja valitsemalla **Aloitus \> Asetukset \> Sivuston asetukset**.  OData-URL-osoitteen muoto on: https://[esiintymä\_nimi].marketing.dynamics.com/analytics  
+* Järjestelmänvalvojan on otettava käyttöön OData-päätepiste sivuston asetuksissa. OData-päätepisteen osoite löytyy siirtymällä **Organisaation tietopalvelu** -osaan ja valitsemalla **Aloitus \> Asetukset \> Sivuston asetukset**.  OData-URL-osoitteen muoto on: https:// [esiintymä\_nimi].marketing.dynamics.com/analytics  
 * Käyttäjätilin/käyttäjätietojen, joilla käytät Microsoft Dynamics Marketingia, on oltava samat kuin joilla olet rekisteröitynyt Power BI:n käyttäjäksi. Kun kirjaudut sisään Microsoft Dynamics Marketingiin, sinut kirjataan sisään automaattisesti samoilla käyttäjätiedoilla kuin Power BI:ssä. Jos haluat kirjautua sisään Microsoft Dynamics Marketingiin toisella tilillä, rekisteröidy Power BI:n käyttäjäksi tällä kyseisellä tilillä. Toivomme voivamme ratkaista tämän ongelman tulevassa julkaisuversiossa.   
 
 ## <a name="troubleshooting"></a>Vianmääritys
