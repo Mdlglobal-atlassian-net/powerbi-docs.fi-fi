@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/02/2018
+ms.date: 07/19/2018
 ms.author: davidi
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 3c91a6a70899a4a59c3d98cd9ab948284df5b662
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 144cdace662b5f6dbe546a213e07f087d634dcff
+ms.sourcegitcommit: 7fb0b68203877ff01f29724f0d1761d023075445
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34298385"
+ms.lasthandoff: 07/26/2018
+ms.locfileid: "39256005"
 ---
 # <a name="tips-and-tricks-for-color-formatting-in-power-bi"></a>Vinkkejä värimuotoiluun Power BI:ssä
 Power BI tarjoaa useita eri tapoja koontinäyttöjen ja raporttien mukauttamiseen. Tässä artikkelissa on kokoelma vinkkejä, joiden avulla voit tehdä Power BI -visualisoinneistasi mielenkiintoisempia ja tarpeisiisi sopivampia.
@@ -97,7 +97,7 @@ Huomaa tässä ensimmäisessä kuvassa, miten kaavion palkit vastaavat palkissa 
 
 ![](media/service-tips-and-tricks-for-color-formatting/tipstrickscolor_12.png)
 
-Katsotaan sitten, mitä tapahtuu, jos syötämme **Pienin**- ja **Suurin**-arvoruutuihin numeerisia arvoja, jotka ovat **Pienin**- ja **Suurin**-värivalitsinten alapuolella (näkyy seuraavassa kuvassa). **Pienin**-kohdan arvoksi määritetään 20 000 000 ja **Suurin**-kohdan arvoksi 20 000 000.
+Katsotaan sitten, mitä tapahtuu, jos syötämme **Pienin**- ja **Suurin**-arvoruutuihin numeerisia arvoja, jotka ovat **Pienin**- ja **Suurin**-värivalitsinten alapuolella (näkyy seuraavassa kuvassa). **Pienin**-kohdan arvoksi määritetään 20 000 000 ja **Suurin**-kohdan arvoksi 20 000 001.
 
 Määrittämällä kyseiset arvot liukuväriä ei enää käytetä kaavion arvoihin, jotka ovat **Pienin**- tai **Suurin**-arvojen alapuolella. Palkki, jonka arvo on **Suurin**-arvon yläpuolella, on vihreä, ja palkki, jonka arvo on **Pienin**-arvon alapuolella, on punainen.
 

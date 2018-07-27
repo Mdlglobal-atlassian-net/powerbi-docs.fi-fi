@@ -804,6 +804,8 @@
           href: desktop-data-types.md
         - name: Power BI Desktopin yksityisyystasot
           href: desktop-privacy-levels.md
+        - name: 'Liittimen laajennettavuus Power BI:ssä'
+          href: desktop-connector-extensibility.md
     - name: Resurssit
       items:
         - name: Power BI Desktop -videot
