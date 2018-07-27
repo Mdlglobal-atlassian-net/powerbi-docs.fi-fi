@@ -10,10 +10,10 @@ ms.topic: quickstart
 ms.date: 05/08/2018
 ms.author: maggies
 ms.openlocfilehash: 3ad44bfaa4fe9fc2eb81adbaad17f6e5034d8b14
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.sourcegitcommit: df7a58dae14ef311516c9b3098f87742786f0479
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/04/2018
+ms.lasthandoff: 07/27/2018
 ms.locfileid: "34295763"
 ---
 # <a name="quickstart-explore-dashboards-and-reports-in-the-power-bi-mobile-apps"></a>Pikaopas: Raporttinäkymien ja raporttien tarkastelu Power BI -mobiilisovelluksissa
@@ -131,7 +131,7 @@ Nyt voit siirtyä tarkastelemaan mallia Android-laitteessa.
 
 ## <a name="clean-up-resources"></a>Resurssien tyhjentäminen
 
-Kun olet suorittanut pikaoppaan, voit halutessasi poistaa Jälleenmyyntianalyysimallin raporttinäkymän , raportin ja tietojoukon.
+Kun olet suorittanut pikaoppaan, voit halutessasi poistaa Jälleenmyyntianalyysimallin raporttinäkymän, raportin ja tietojoukon.
 
 1. Avaa Power BI -palvelu (app.powerbi.com) ja kirjaudu sisään.
 
@@ -145,7 +145,7 @@ Kun olet suorittanut pikaoppaan, voit halutessasi poistaa Jälleenmyyntianalyysi
 
 4. Siirry **Raportit**-välilehdelle ja toimi samoin Jälleenmyyntianalyysiraportin kohdalla.
 
-5. Siirry **Tietojoukot**-välilehdelle ja toimi samoin Jälleenmyyntianalyysitietojoukon kohdalla.
+5. Siirry **Tietojoukot**-välilehdelle ja tee sama Jälleenmyyntianalyysin tietojoukolle.
 
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
