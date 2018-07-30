@@ -682,8 +682,10 @@
               href: desktop-qna-in-reports.md
             - name: Analytiikkaruutu Power BI Desktopissa
               href: desktop-analytics-pane.md
-            - name: Merkityksellisten tietojen Power BI Desktopissa
+            - name: Nousujen ja laskujen selittäminen merkityksellisten tietojen avulla
               href: desktop-insights.md
+            - name: Kaavioiden eroavien jakaumien paikantaminen merkityksellisten tietojen avulla
+              href: desktop-insights-find-where-different.md
             - name: 'Kirjanmerkit Power BI:ssä'
               href: desktop-bookmarks.md
             - name: Raporttiteemojen käyttö
