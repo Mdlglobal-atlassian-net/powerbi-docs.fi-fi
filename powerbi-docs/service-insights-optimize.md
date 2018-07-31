@@ -28,5 +28,5 @@ Haluatko parantaa nopeiden merkityksellisten tietojen tuloksia?  Jos olet tietoj
 ### <a name="next-steps"></a>Seuraavat vaiheet
 [Power BI:n nopeat merkitykselliset tiedot](service-insights.md)
 
-Onko sinulla muuta kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
+Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
 
