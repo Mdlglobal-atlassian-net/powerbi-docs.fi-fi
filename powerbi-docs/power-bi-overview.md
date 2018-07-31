@@ -1,5 +1,5 @@
 ---
-title: Mikä on Power BI?
+title: Mikä Power BI on?
 description: Yhteenveto Power BI:stä ja siitä miten sen eri osat - Power BI Desktop, Power BI -palvelu, Power BI -mobiilisovellus, raporttipalvelin, Power BI Embedded - toimivat yhdessä.
 author: mihart
 manager: kfile
@@ -16,7 +16,7 @@ ms.contentlocale: fi-FI
 ms.lasthandoff: 06/26/2018
 ms.locfileid: "36944395"
 ---
-# <a name="what-is-power-bi"></a>Mikä on Power BI?
+# <a name="what-is-power-bi"></a>Mikä Power BI on?
 **Power BI** on kokoelma ohjelmistopalveluja, sovelluksia ja yhdistimiä, jotka yhdessä muuntavat toisiinsa liittymättömistä lähteistä peräisin olevan tiedon johdonmukaisiksi, visuaalisesti vaikuttaviksi ja vuorovaikutteisiksi näkemyksiksi. **Power BI:n** avulla voit helposti muodostaa yhteyden tietolähteisiin, jotka voivat olla lähes mitä tahansa yksinkertaisesta Excel-laskentataulukosta kokoelmaan pilvipohjaisia ja paikallisia hybriditietovarastoja. Voit löytää ja visualisoida tärkeät tiedot sekä jakaa tulokset kaikille tarvittaville tahoille.
 
 ![kaavio, jossa näkyvät Power BI:n syöttölähteet](media/power-bi-overview/power-bi-input.png)

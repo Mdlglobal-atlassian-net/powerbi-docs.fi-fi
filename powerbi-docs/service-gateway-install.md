@@ -30,7 +30,7 @@ Yhdyskäytävä toimii siinä tietokoneessa, johon sen asennat, joten varmista, 
 
 1. Valitse Power BI -palvelun oikeassa yläkulmassa **latauskuvake**![Latauskuvake](media/service-gateway-install/icon-download.png) > **Tietoyhdyskäytävä**.
 
-    ![Data Gateway](media/service-gateway-install/data-gateway.png)
+    ![Tietoyhdyskäytävä](media/service-gateway-install/data-gateway.png)
 
 2. Valitse lataussivulla **LATAA YHDYSKÄYTÄVÄ** -painike.
 

@@ -45,5 +45,5 @@ Sinun on otettava yhteyttä vuokraajan järjestelmänvalvojaan ja pyydettävä h
 
 ![](media/service-admin-closing-your-account/closeaccountmanaged.png)
 
-Onko sinulla muuta kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)
+Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)
 

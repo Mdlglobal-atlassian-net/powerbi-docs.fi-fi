@@ -87,5 +87,5 @@ Etkö pidä Power BI -raporttisi sivun nimestä?  Uusi nimi on vain napsautuksen
 * Jos uudelleen nimettävä kohde on jaettu kanssasi tai kuuluu sisältöpakettiin, et näe hammaspyöräkuvaketta etkä pääse asetuksiin.
 * Jos et näe **Tietojoukot**-välilehdessä kolmea pistettä (...), laajenna selainikkuna.
 
-Onko sinulla muuta kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
+Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
 

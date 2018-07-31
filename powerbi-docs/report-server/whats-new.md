@@ -37,7 +37,7 @@ Lisätietoja Power BI:hin liittyvistä uusista ominaisuuksista:
 
 ### <a name="configure-power-bi-ios-mobile-apps-for-report-servers-remotely"></a>Power BI -iOS-mobiilisovellusten etämäärittäminen raporttipalvelimia varten
 
-IT-ylläpitäjänä voit käyttää organisaatiosi ydintietojen hallintatyökalua etämäärittääksesi raporttipalvelimen käyttöoikeudet Power BI -iOS-mobiilisovellukselle. Lisätietoja on kohdassa [Power BI -iOS-mobiilisovellusten etämäärittäminen raporttipalvelimia varten](configure-powerbi-mobile-apps-remote.md).
+IT-ylläpitäjänä voit käyttää organisaatiosi ydintietojen hallintatyökalua etämäärittääksesi raporttipalvelimen käyttöoikeudet Power BI -iOS-mobiilisovellukselle. Lisätietoja saat artikkelista [iOS: Raporttipalvelimen käyttöoikeuksien etämäärittäminen Power BI -iOS-mobiilisovelluksella](configure-powerbi-mobile-apps-remote.md).
 
 ## <a name="march-2018-release"></a>Maaliskuun 2018 julkaisu
 

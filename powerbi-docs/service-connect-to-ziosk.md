@@ -54,7 +54,7 @@ Sisältöpaketti sisältää tietoja seuraavista taulukoista:
     - Alkoholiluokka  
     - Alkupalaluokka  
     - CommentKeywords  
-    - Date  
+    - Päivämäärä  
     - Daypart  
     - Jälkiruoat-luokka  
     - Vapaamuotoinen  

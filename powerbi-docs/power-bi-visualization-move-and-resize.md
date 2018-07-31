@@ -37,4 +37,4 @@ Avaa Power BI:ssa raportti, jossa on vähintään yksi visualisointi tai [luo uu
 ## <a name="next-steps"></a>Seuraavat vaiheet
 [Visualisoinnin koon muuttaminen raporttinäkymässä](service-dashboard-edit-tile.md)  
 
-Onko sinulla muuta kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
+Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)

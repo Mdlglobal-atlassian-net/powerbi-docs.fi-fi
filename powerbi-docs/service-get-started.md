@@ -19,7 +19,7 @@ ms.lasthandoff: 07/03/2018
 ms.locfileid: "37598655"
 ---
 # <a name="tutorial-get-started-with-power-bi-service-apppowerbicom"></a>Opetusohjelma: Power BI -palvelun (app.powerbi.com) käytön aloittaminen
-Tämän opetusohjelman avulla pääset alkuun ***Power BI -palvelun*** kanssa. Suosittelemme lukemaan [Mikä on Power BI?](power-bi-overview.md) -ohjeartikkelin, jotta saat käsityksen, miten Power BI -palvelu sopii yhteen muiden Power BI -tuotteiden kanssa.
+Tämä opasohjelma auttaa ***Power BI -palvelun*** aloittamisessa. Suosittelemme lukemaan [Mikä Power BI on](power-bi-overview.md) -ohjeartikkelin, jotta saat käsityksen, miten Power BI -palvelu sopii yhteen muiden Power BI -tuotteiden kanssa.
 
 ![Desktopin, palvelun ja mobiilisovelluksen suhdetta esittävä kuva](media/service-get-started/power-bi-components.png)
 

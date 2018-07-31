@@ -59,7 +59,7 @@ Sisältöpaketti sisältää tietoja seuraavista taulukoista:
     - Henkilö  
     - Ennuste    
     - Ennustehistoria    
-    - Product  
+    - Tuote  
     - Alue    
 
 ## <a name="system-requirements"></a>Järjestelmävaatimukset
