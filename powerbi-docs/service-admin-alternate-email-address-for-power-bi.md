@@ -61,5 +61,5 @@ Set-AzureADUser -ObjectId john@contoso.com -OtherMails "otheremail@somedomain.co
 
 Lisätietoja on artikkelissa [Azure Active Directoryn PowerShell-versio 2](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2).
 
-Onko sinulla muuta kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
+Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
 
