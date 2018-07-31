@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 04/24/2018
+ms.date: 07/27/2018
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: 223cd6442f8856a2e7a7cabe234e6539cd119d4a
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: e35c842af47bac9dfd6667ecfa885a8df8a8785c
+ms.sourcegitcommit: f01a88e583889bd77b712f11da4a379c88a22b76
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34291439"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39328093"
 ---
 # <a name="using-calculated-tables-in-power-bi-desktop"></a>Laskettujen taulukkojen käyttö Power BI Desktopissa
 Lasketuilla taulukoilla voit lisätä malliin uuden taulukon. Sen sijaan, että hakisit ja lataisit arvoja uuden taulukkosi sarakkeisiin tietolähteestä, luot Data Analysis Expression (DAX) -kaavan, joka määrittelee taulukon arvot. Power BI Desktopissa laskettuja taulukoita luodaan uusi taulukko -toiminnolla raportti- tai tiedot-näkymässä.

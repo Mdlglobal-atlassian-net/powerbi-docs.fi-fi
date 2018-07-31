@@ -9,12 +9,12 @@ ms.component: powerbi-mobile
 ms.topic: conceptual
 ms.date: 06/28/2018
 ms.author: maggies
-ms.openlocfilehash: 3323258304f8c36131caf6ef269d9befa6cfbb96
-ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
+ms.openlocfilehash: ba6b8cb1ade1337a29e758a16db285dbea7c41db
+ms.sourcegitcommit: df7a58dae14ef311516c9b3098f87742786f0479
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37136521"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39280175"
 ---
 # <a name="get-started-with-the-power-bi-mobile-app-on-android-devices"></a>Android-laitteiden Power BI -mobiilisovelluksen käytön aloittaminen
 Android-sovellus Microsoft Power BI:lle tarjoaa BI-mobiilikäyttökokemuksen Power BI:lle, Power BI-raporttipalvelimelle ja Reporting Services -palveluille. Voit tarkastella ja käsitellä yrityksen koontinäyttöjä paikallisesti ja pilvipalvelussa missä tahansa, live-tilassa kosketusnäytöllisessä mobiilikäytössä. Tarkastele tietoja koontinäytöissä ja jaa sähköpostitse tai tekstiviestillä työtovereiden kanssa. 
@@ -86,7 +86,7 @@ Voit tarkastella ja käsitellä Power BI -koontinäytön malleja, mutta on muuta
     Oletusarvoisesti se etsii kaikkia koontinäyttöjä ja raportteja, mutta voit hakea vain toisen parametreista.
 
 ## <a name="find-your-content-in-the-power-bi-mobile-apps"></a>Sisällön etsiminen Power BI -mobiilisovelluksissa
-Koontinäytöt ja raportit tallennetaan eri paikkoihin Power BI -mobiilisovelluksissa riippuen siitä, mistä ne ovat peräisin. Lue [sisällön etsimisestä mobiilisovelluksissa](mobile-apps-find-content-mobile-devices.md). Lisäksi voit aina hakea kaikkea, mitä sinulla on Power BI -mobiilisovelluksissa. 
+Koontinäytöt ja raportit tallennetaan eri paikkoihin Power BI -mobiilisovelluksissa riippuen siitä, mistä ne ovat peräisin. Lue [sisällön etsimisestä mobiilisovelluksissa](mobile-apps-quickstart-view-dashboard-report.md). Lisäksi voit aina hakea kaikkea, mitä sinulla on Power BI -mobiilisovelluksissa. 
 
 ![Vasen siirtymisruutu](media/mobile-android-app-get-started/power-bi-mobile-new-nav-no-numbers.png)
 

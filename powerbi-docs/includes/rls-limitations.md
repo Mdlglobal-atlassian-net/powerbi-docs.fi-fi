@@ -5,7 +5,6 @@ Tässä on luettelo tämänhetkisistä rajoituksista pilvimallien rivitason suoj
 * Voit määrittää rivitason suojauksen ainoastaan tietojoukoille, jotka on luotu käyttäen Power BI Desktop -asiakasta. Jos haluat ottaa rivitason suojauksen käyttöön tietojoukoille, jotka on luotu Excelillä, sinun on ensin muunnettava tiedostot PBIX-tiedostoiksi. [Lue lisää](../desktop-import-excel-workbooks.md)
 * Vain ETL- ja DirectQuery-yhteyksiä tuetaan. Reaaliaikaisista yhteyksistä Analysis Servicesiin huolehditaan paikallisessa mallissa.
 * Q&A:ta ja Cortanaa ei tällä hetkellä tueta rivitason suojauksen kanssa. Q&A-tekstiruutua ei näytetä raporttinäkymissä, jos kaikille malleille on määritetty rivitason suojaus. Tämä on suunnitteilla, mutta aikataulua ei ole.
-* Ulkoista jakamista ei tueta tällä hetkellä tietojoukoille, jotka käyttävät rivitason suojausta.
 * Minkä tahansa mallin kohdalla Azure AD -pääkohteiden (eli yksittäiset käyttäjät tai käyttöoikeusryhmät), jotka voidaan liittää käyttöoikeusrooleihin, enimmäismäärä on 1 000. Suurten käyttäjämäärien liittämiseksi rooleihin määritä käyttöoikeusryhmiä yksittäisten käyttäjien sijaan.
 
 ## <a name="known-issues"></a>Tunnetut ongelmat

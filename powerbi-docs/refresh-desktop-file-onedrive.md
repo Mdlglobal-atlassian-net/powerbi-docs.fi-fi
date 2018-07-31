@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 05/02/2018
+ms.date: 07/27/2018
 ms.author: davidi
 LocalizationGroup: Data refresh
-ms.openlocfilehash: 2c52dd30a2b0dc911adbf706ec5007bb553f2717
-ms.sourcegitcommit: 001ea0ef95fdd4382602bfdae74c686de7dc3bd8
+ms.openlocfilehash: 10fcb4790b85424fbc5d95994b753721b7c95503
+ms.sourcegitcommit: f01a88e583889bd77b712f11da4a379c88a22b76
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38925278"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39329841"
 ---
 # <a name="refresh-a-dataset-stored-on-onedrive-or-sharepoint-online"></a>Päivitä Onedriveen tai SharePoint Onlineen tallennettuja tietojoukkoja
 Tiedostojen tuominen Onedrivesta tai SharePoint Onlinesta Power BI -palveluun on hyvä tapa varmistaa, että työ, jota olet tekemässä **Power BI Desktopissa** pysyy synkronoituna Power BI -palveluun.

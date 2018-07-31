@@ -9,12 +9,12 @@ ms.component: powerbi-mobile
 ms.topic: conceptual
 ms.date: 06/27/2018
 ms.author: maggies
-ms.openlocfilehash: 1700d5bb6a3c17b0a76e6cf04155050a01136e96
-ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
+ms.openlocfilehash: 9e5d878b676159db7990af983f53ce813ac44441
+ms.sourcegitcommit: df7a58dae14ef311516c9b3098f87742786f0479
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37136550"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39280244"
 ---
 # <a name="get-started-with-the-power-bi-mobile-app-on-ios-devices"></a>iOS-laitteiden Power BI -mobiilisovelluksen käytön aloittaminen
 Microsoft Power BI for iOS -sovellus iPhonella, iPadilla tai iPod Touchilla tarjoaa BI-mobiilikäyttökokemuksen Power BI:lle, Power BI -raporttipalvelimelle ja Reporting Services -palveluille. Voit tarkastella ja käsitellä yrityksen koontinäyttöjä paikallisesti ja pilvipalvelussa missä tahansa, live-tilassa kosketusnäytöllisessä mobiilikäytössä. Tarkastele tietoja koontinäytöissä ja jaa sähköpostitse tai tekstiviestillä työtovereiden kanssa. Pysy ajan tasalla kaikkein ajantasaisimmilla tiedoilla [Apple Watchin](mobile-apple-watch.md) avulla.  
@@ -73,11 +73,11 @@ Voit tarkastella ja käsitellä Power BI -koontinäytön malleja, mutta on muuta
    ![Reporting Services -mallit Power BI-mobiilisovelluksessa](media/mobile-iphone-app-get-started/power-bi-reporting-services-samples.png)
 
 ## <a name="find-your-content-in-the-power-bi-mobile-apps"></a>Sisällön etsiminen Power BI -mobiilisovelluksissa
-Koontinäytöt ja raportit tallennetaan eri paikkoihin Power BI -mobiilisovelluksissa riippuen siitä, mistä ne ovat peräisin. Lue [sisällön etsimisestä mobiilisovelluksissa](mobile-apps-find-content-mobile-devices.md). Lisäksi voit aina hakea kaikkea, mitä sinulla on Power BI -mobiilisovelluksissa. 
+Koontinäytöt ja raportit tallennetaan eri paikkoihin Power BI -mobiilisovelluksissa riippuen siitä, mistä ne ovat peräisin. Lue [sisällön etsimisestä mobiilisovelluksissa](mobile-apps-quickstart-view-dashboard-report.md). Lisäksi voit aina hakea kaikkea, mitä sinulla on Power BI -mobiilisovelluksissa. 
 
 ![Vasen siirtymisruutu](media/mobile-iphone-app-get-started/power-bi-iphone-left-nav.png)
 
-Lue lisää [sisällön etsimisestä mobiilisovelluksissa](mobile-apps-find-content-mobile-devices.md).
+Lue lisää [sisällön etsimisestä mobiilisovelluksissa](mobile-apps-quickstart-view-dashboard-report.md).
 
 ## <a name="view-your-favorite-dashboards-kpis-and-reports"></a>Suosikkikoontinäyttöjen, suorituskykyilmaisimien ja raporttien tarkastelu
 Näet mobiilisovellusten Suosikit-sivulta kaikki Power BI -suosikkikoontinäyttösi yhdessä Power BI -raporttipalvelimen ja Reporting Services -suorituskykyilmaisinten ja raporttien kanssa. Kun teet koontinäytöstä *suosikin* Power BI -mobiilisovelluksessa, voit käyttää sitä kaikista laitteistasi käsin, kuten selaimesi Power BI -palvelusta. 

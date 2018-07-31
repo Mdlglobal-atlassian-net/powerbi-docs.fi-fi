@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 04/24/2018
+ms.date: 07/27/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 30f39cd2b79792e9d4d3c41a1d60a8ddce6802f6
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 7937730988c651e32fb99e9c8eb9314b3a00785b
+ms.sourcegitcommit: f01a88e583889bd77b712f11da4a379c88a22b76
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34290495"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39330002"
 ---
 # <a name="add-a-custom-column-in-power-bi-desktop"></a>Mukautettujen sarakkeiden lisääminen Power BI Desktopissa
 Voit helposti lisätä uuden mukautetun tietosarakkeen mallin avulla **Kyselyeditoria** - **Power BI Desktopia**. Voit luoda ja nimetä mukautetun sarakkeen helppokäyttöisten painikkeiden avulla käyttämällä [M-kaavoja](https://msdn.microsoft.com/library/mt270235.aspx) , joka määrittävät mukautetun sarakkeen. M-kaava on [kattavan funktion viittauksen sisältöjoukko](https://msdn.microsoft.com/library/mt779182.aspx). 

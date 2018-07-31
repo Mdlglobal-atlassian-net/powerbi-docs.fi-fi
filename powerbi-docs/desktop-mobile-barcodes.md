@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 01/16/2018
 ms.author: maggies
 LocalizationGroup: Model your data
-ms.openlocfilehash: ae6c7ba3603136aeea3daa412595b9f42ed13d6a
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: eb0d584e2383e1b878cfc26739e77d4e50d70a0f
+ms.sourcegitcommit: df7a58dae14ef311516c9b3098f87742786f0479
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34286907"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39280474"
 ---
 # <a name="tag-barcodes-in-power-bi-desktop-for-the-mobile-apps"></a>Viivakoodien merkitseminen mobiilisovelluksia varten Power BI Desktopissa
 Voit Power BI Desktopissa [luokitella sarakkeen tietoja](desktop-data-categorization.md), jolloin Power BI Desktop osaa käsitellä raportin visualisoinneissa olevia arvoja. Voit myös luokitella sarakkeen **viivakoodiksi**. Kun [tuotteen viivakoodi luetaan iPhonen Power BI -sovelluksessa](mobile-apps-scan-barcode-iphone.md), näet kaikki kyseisen viivakoodin sisältävät raportit. Kun avaat raportin mobiilisovelluksessa, Power BI näyttää viivakoodiin liittyvät tiedot raportissa automaattisesti.
@@ -27,7 +27,7 @@ Voit Power BI Desktopissa [luokitella sarakkeen tietoja](desktop-data-categoriza
 4. Lisää tämä kenttä Raportti-näkymässä visualisointeihin, jotka haluat suodattaa viivakoodin avulla.
 5. Tallenna ja julkaise raportti Power BI -palveluun.
 
-Nyt kun avaat lukijan [iPhonen Power BI -sovelluksessa](mobile-ios-ipad-iphone-apps.md) ja luet viivakoodin, näet tämän raportin raporttiluettelossa. Kun avaat raportin, sen visualisoinnit suodatetaan luetun tuotteen viivakoodin mukaan.
+Nyt kun avaat lukijan [iPhonen Power BI -sovelluksessa](mobile-iphone-app-get-started.md) ja luet viivakoodin, näet tämän raportin raporttiluettelossa. Kun avaat raportin, sen visualisoinnit suodatetaan luetun tuotteen viivakoodin mukaan.
 
 ## <a name="supported-barcode-formats"></a>Tuetut viivakoodimuodot
 Power BI tunnistaa seuraavat viivakoodit, jos merkitset ne Power BI -raportissa: 

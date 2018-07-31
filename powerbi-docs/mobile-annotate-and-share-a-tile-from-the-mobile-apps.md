@@ -9,12 +9,12 @@ ms.component: powerbi-mobile
 ms.topic: conceptual
 ms.date: 03/20/2018
 ms.author: maggies
-ms.openlocfilehash: c70a5c50a139423f6c5e69ed6ec9a416dfae8b4e
-ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
+ms.openlocfilehash: bb628f0cc6f723a195f3b90e6d20f4018d9f2709
+ms.sourcegitcommit: df7a58dae14ef311516c9b3098f87742786f0479
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34295257"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39279845"
 ---
 # <a name="annotate-and-share-a-tile-report-or-visual-in-power-bi-mobile-apps"></a>Merkintöjen lisääminen ja ruudun, raportin tai visualisoinnin jakaminen Power BI -mobiilisovelluksissa
 Koskee seuraavia:
@@ -31,7 +31,7 @@ Voit jakaa tilannevedoksen ruudusta, raportista tai visualisoinnista ja lisätä
 
 Sähköposti, jossa tilannevedos ruudusta, raportista tai visualisoinnista, sisältää myös linkin todelliseen kohteeseen Power BI -palvelussa ([https://powerbi.com](https://powerbi.com)). Vastaanottajat voivat napsauttaa linkkiä ja siirtyä suoraan kyseiseen ruutuun, raporttiin tai visualisointiin, jos sinulla ja heillä on Power BI Pro -käyttöoikeudet tai jos sisältö on [Premium-kapasiteetissa](service-premium.md) ja olet jo jakanut kohteen heidän kanssaan. 
 
-Voit myös [jakaa ruudun Windows 10 -laitteiden Power BI -mobiilisovelluksesta](mobile-share-tile-windows-10-phone-app.md), mutta et lisätä siihen merkintöjä.
+Voit myös [jakaa ruudun Windows 10 -laitteiden Power BI -mobiilisovelluksesta](mobile-windows-10-phone-app-get-started.md), mutta et lisätä siihen merkintöjä.
 
 ## <a name="open-a-tile-for-annotating"></a>Ruudun avaaminen merkintöjen lisäämiseksi
 1. Napauta ruutua sen avaamiseksi kohdistustilassa.

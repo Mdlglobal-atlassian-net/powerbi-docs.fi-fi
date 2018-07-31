@@ -9,12 +9,12 @@ ms.component: powerbi-mobile
 ms.topic: conceptual
 ms.date: 06/28/2018
 ms.author: maggies
-ms.openlocfilehash: 5601ab79832f2d52622f5c13ecd23f346408f08e
-ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
+ms.openlocfilehash: eda7f44c869829564703bda6112177234d3f2d44
+ms.sourcegitcommit: df7a58dae14ef311516c9b3098f87742786f0479
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37598619"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39280129"
 ---
 # <a name="explore-tiles-in-the-power-bi-mobile-apps"></a>Tutustu ruutuihin Power BI -mobiilisovelluksissa
 Koskee seuraavia:
@@ -92,7 +92,7 @@ Power BI -mobiilisovelluksissa avaat ruutuja kohdistustilassa ja olet vuorovaiku
    
     ![](media/mobile-tiles-in-the-mobile-apps/pbi_win10tileellpslink.png)
    
-    [Jakaa tilannevedoksen ruudusta](mobile-share-tile-windows-10-phone-app.md).
+    [Jakaa tilannevedoksen ruudusta](mobile-windows-10-phone-app-get-started.md).
    
     Napauttaa **Avaa raportti** ![](media/mobile-tiles-in-the-mobile-apps/power-bi-ipad-open-report-icon.png)[tarkastellaksesi pohjana olevaa raporttia](mobile-reports-in-the-mobile-apps.md).
    
@@ -120,7 +120,7 @@ Power BI -mobiilisovelluksissa avaat ruutuja kohdistustilassa ja olet vuorovaiku
    
    ![](media/mobile-tiles-in-the-mobile-apps/power-bi-windows-10-center-map.png)
    
-   Napauttaa Jaa tilannevedos -kuvaketta ![](media/mobile-tiles-in-the-mobile-apps/pbi_win10ph_shareicon.png) [ruudun jakamiseksi](mobile-share-tile-windows-10-phone-app.md) muiden kanssa.   
+   Napauttaa Jaa tilannevedos -kuvaketta ![](media/mobile-tiles-in-the-mobile-apps/pbi_win10ph_shareicon.png) [ruudun jakamiseksi](mobile-windows-10-phone-app-get-started.md) muiden kanssa.   
    
    Napauttaa Avaa raportti -kuvaketta ![](media/mobile-tiles-in-the-mobile-apps/power-bi-ipad-open-report-icon.png)[tarkastellaksesi raporttia](mobile-reports-in-the-mobile-apps.md), johon ruutu pohjautuu. 
 4. Sulkea ruudun ja palata koontinäyttöön napauttamalla taaksepäin osoittavaa nuolta tai takaisin-painiketta.

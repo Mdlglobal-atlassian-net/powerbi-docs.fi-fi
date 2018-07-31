@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/02/2018
+ms.date: 07/27/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: c51d89979ccf6791e69a7cdd457004b065b9d537
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: da03ba682ebf41d891bdd2b5634f3f1715cbdf19
+ms.sourcegitcommit: f01a88e583889bd77b712f11da4a379c88a22b76
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34288862"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39330025"
 ---
 # <a name="use-an-external-r-ide-with-power-bi"></a>Ulkoisen integroidun R-kehitysympäristön käyttö Power BI:n kanssa
 Voit käyttää ulkoista integroitua R-kehitysympäristöä **Power BI Desktopin** avulla ja luoda ja tarkentaa R-komentosarjoja ja käyttää kyseisiä komentosarjoja Power BI:ssä.

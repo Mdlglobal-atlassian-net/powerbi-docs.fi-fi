@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 05/02/2018
+ms.date: 07/27/2018
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 966d25ce2cddbba4623774c9bcfc6a0a9f0af904
-ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
+ms.openlocfilehash: 26eae99b9dcfb667a66946c292854c602d8c2a73
+ms.sourcegitcommit: f01a88e583889bd77b712f11da4a379c88a22b76
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37137142"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39326943"
 ---
 # <a name="frequently-asked-questions-for-power-bi-for-germany-cloud-customers"></a>Usein kysyttyjä kysymyksiä Power BI:n pilvipalvelun saksalaisille asiakkaille
 **Power BI -palvelusta** on saatavilla Euroopan unionin ja Euroopan Vapaakauppajärjestön sopimuksen (EU/EFTA) asiakkaille versio, johon viitataan usein nimellä Microsoft Cloud Deutschland (MCD). Tässä artikkelissa kuvattu **Power BI -palvelun** versio on suunniteltu erityisesti EU/EFTA -asiakkaille ja on erillinen ja erilainen kuin **Power BI -palvelun** kaupallinen versio, joka on tarjolla valtionhallinnon asiakkaille.
