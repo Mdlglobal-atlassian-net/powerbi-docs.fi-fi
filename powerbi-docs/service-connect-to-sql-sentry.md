@@ -69,7 +69,7 @@ Seuraavat tiedot ovat käytettävissä SQL Sentrystä Power BI:ssä:
 | Taulukon nimi | Kuvaus |
 | --- | --- |
 | Yhteys |Tämä taulukko sisältää tietoja SQL Sentrylle määritetyistä yhteyksistä. |
-| Date<br /> |Tämä taulukko sisältää päivämääriä tästä päivästä taaksepäin aikaisimpaan päivämäärään, josta suorituskykytietoja on kerätty ja säilytetty. |
+| Päivämäärä<br /> |Tämä taulukko sisältää päivämääriä tästä päivästä taaksepäin aikaisimpaan päivämäärään, josta suorituskykytietoja on kerätty ja säilytetty. |
 | Käyttämättömyysaika<br /> |Tämä taulukko sisältää käyttämättömyysaikaan ja käyttöaikaan liittyviä tietoja jokaisesta palvelimesta, jota ympäristössäsi seurataan. |
 | Muistin käyttö<br /> |Tässä taulukossa on tietoja siitä, paljonko muistia on käytettävissä tai vapaana kullakin palvelimellasi.<br /> |
 | Palvelin<br /> |Tässä taulukossa on tallennetietoja ympäristösi jokaisesta palvelimesta. |

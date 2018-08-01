@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/06/2018
+ms.date: 07/24/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 72a900b1661a77e5b31c1d68b5726d989b236f7b
-ms.sourcegitcommit: ba3cab4613a2b815d46a213eff07a8a8ec22c17f
+ms.openlocfilehash: b26fbfccc3b0a98761ecc1444af4e535339c96de
+ms.sourcegitcommit: 6faeb642721ee5abb41c04a8b729880c01c4d40e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39031998"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39210280"
 ---
 # <a name="accessibility-in-power-bi-desktop-reports"></a>Power BI Desktop -raporttien helppokäyttöisyys
 Power BI:ssa on ominaisuuksia, joiden avulla toimintarajoitteisten henkilöiden on helppo käyttää ja käsitellä Power BI -raportteja. Näitä ominaisuuksia ovat esimerkiksi mahdollisuus käyttää raporttia näppäimistön tai näytönlukuohjelman avulla, kohdistaminen sivun eri objekteihin sarkaimella sekä ymmärtäväinen merkkien käyttö visualisoinneissa.
@@ -47,8 +47,12 @@ Voit avata *Näytä tiedot* -ikkunan helppokäyttöisen version painamalla **Alt
 
 > [!NOTE]
 > Näytä tiedot -ominaisuus on käytettävissä vain näytönlukijan kanssa tällä pikanäppäinyhdistelmällä. Jos avaat Näytä tiedot -ominaisuuden visualisoinnin otsikon vaihtoehdoista, ei se ole näytönlukija käytettävissä.
-> 
-> 
+
+**Power BI Desktopin** heinäkuun 2018 julkaisusta alkaen myös osittajiin on lisätty helppokäyttötoimintoja. Kun valitset osittajan, voit säätää osittajan arvoa siirtymällä sen ohjausobjektista toiseen käyttämällä CTRL-näppäintä ja oikeaa nuolinäppäintä. Voit esimerkiksi ensin keskittyä pyyhkimeen painamalla CTRL + oikea nuoli. Sen jälkeen välilyönnin painaminen vastaa pyyhinpainikkeen napsauttamista eli poistaa kaikki osittajan arvot. 
+
+Voit siirtyä osittajan ohjausobjektista toiseen painamalla sarkainnäppäintä. Sarkaimen painaminen pyyhkimen kohdalla siirtää kohdistuksen avattavan valikon painikkeeseen. Seuraava painallus siirtää kohdistuksen ensimmäiseen osittaja-arvoon, jos niitä on useita (kuten alue). 
+
+![Paina CTRL-näppäintä ja oikeaa nuolinäppäintä Power BI Desktopissa, kun haluat säätää osittajan tiettyä elementtiä tai arvoa. Valitse elementti tai säädä sen arvoa välilyönnillä.](media/desktop-accessibility/accessibility_07.png)
 
 Näiden helppokäyttötoimintojen lisäysten avulla Power BI -raportteja voidaan käyttää täydellisesti näytönlukuohjelmalla ja pikanäppäimillä.
 

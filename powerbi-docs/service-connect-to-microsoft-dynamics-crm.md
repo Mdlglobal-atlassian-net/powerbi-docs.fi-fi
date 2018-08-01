@@ -84,7 +84,7 @@ Seuraavassa taulukossa on lueteltu tässä palvelussa käytettävät CRM-entitee
 | Liidi |Kaikki liidit, joita on muokattu viimeisen 180 päivän aikana <br> [modifiedon] > tänään - 180 päivää |
 | Mahdollisuus |Kaikki mahdollisuudet, joita on muokattu viimeisen 365 päivän aikana <br> [modifiedon] > tänään - 365 päivää |
 | Mahdollisuuden tuote |Kaikki mahdollisuuksien tuotteet, joita on muokattu viimeisen 365 päivän aikana <br> [modifiedon] > tänään - 365 päivää |
-| Product |Kaikki aktiiviset tuotteet <br> [statecode] <> 1 |
+| Tuote |Kaikki aktiiviset tuotteet <br> [statecode] <> 1 |
 | Alue |Kaikki alueet |
 | Käyttäjä |Kaikki aktiiviset käyttäjät, jotka eivät ole delegoituja järjestelmänvalvojia <br>  [isdisabled] = false ja [accessmode] <> 4 |
 

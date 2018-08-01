@@ -7,15 +7,15 @@ ms.reviewer: ajayan
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 06/08/2018
+ms.date: 07/19/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 1b7a111e1b240a37211c17bce4d497de2d864074
-ms.sourcegitcommit: 5eb8632f653b9ea4f33a780fd360e75bbdf53b13
+ms.openlocfilehash: 45e9207ffa666e33b298e82bbc78e07c226b780e
+ms.sourcegitcommit: f6fb681ec85313eb7b450edb8f190e9e7afbabca
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "34852298"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39182790"
 ---
 # <a name="manage-update-and-delete-organizational-content-packs"></a>Organisaation sisältöpakettien hallinta, päivitys ja poistaminen
 > [!NOTE]
@@ -52,7 +52,7 @@ Kun teet muutoksia koontinäyttöön, jonka olet sisällyttänyt sisältöpakett
 4. Tee tarvittavat muutokset, **Päivitä sisältöpaketti** ‑ikkunassa ja valitse **Päivitä**. Näytölle avautuu **onnistumisilmoitus**.
    
    * Jos ryhmän jäsen ei ole mukauttanut sisältöpakettiaan, päivitys tulee hänelle voimaan automaattisesti.
-   * Jos ryhmän jäsen on mukauttanut sisältöpakettiaan, hän saa ilmoituksen, että saatavilla on uusi versio.  Sitten hän voi siirtyä AppSourceen ja noutaa päivitetyn sisältöpaketin menettämättä mukauttamaansa versiota.  Hänellä on nyt kaksi versiota: mukautettu versio ja päivitetty sisältöpaketti.  Mukautetusta versiosta ovat hävinneet kaikki alkuperäisen sisältöpaketin ruudut.  Muista raporteista kiinnitetyt ruudut näytetään kuitenkin edelleen.    
+   * Jos ryhmän jäsen on mukauttanut sisältöpakettiaan, hän saa ilmoituksen, että saatavilla on uusi versio.  Sitten hän voi siirtyä AppSourceen ja noutaa päivitetyn sisältöpaketin menettämättä mukauttamaansa versiota.  Hänellä on nyt kaksi versiota: mukautettu versio ja päivitetty sisältöpaketti.  Mukautetusta versiosta ovat hävinneet kaikki alkuperäisen sisältöpaketin ruudut.  Muista raporteista kiinnitetyt ruudut näytetään kuitenkin edelleen. Jos sisältöpaketin omistaja poistaa tietojoukon, johon sisältöpaketti perustuu, koko raportti poistetaan.  
 
 ## <a name="update-the-audience-expand-or-restrict-access"></a>Yleisön muokkaaminen: käyttöoikeuksien laajentaminen tai rajoittaminen
 Toinen sisältöpaketin luojien käytettävissä oleva muokkaustoiminto on sisältöpaketin käyttöoikeuksien laajentaminen ja rajoittaminen.  Olet ehkä julkaissut sisältöpaketin laajalle yleisölle, mutta haluatkin nyt rajoittaa sen käyttöoikeudet pienemmälle ryhmälle.  

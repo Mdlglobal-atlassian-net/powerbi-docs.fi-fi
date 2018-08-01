@@ -8,15 +8,15 @@ featuredvideoid: B2vd4MQrz4M
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 01/20/2018
+ms.date: 07/19/2018
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 0536dc6fd637db07c0e26a4ed7f0da1071b646eb
-ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
+ms.openlocfilehash: a1719f8a6f9f4ad3989aa498c584b337cd9fdd00
+ms.sourcegitcommit: f6fb681ec85313eb7b450edb8f190e9e7afbabca
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37137418"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39182744"
 ---
 # <a name="power-bi---basic-concepts-for-power-bi-service"></a>Power BI – Power BI -palvelun peruskäsitteet
 
@@ -48,9 +48,9 @@ Voit myös katsoa tämän videon ennen artikkelin lukemista.  Videolla Will kert
 Power BI:n neljä peruselementtiä ovat ***koontinäytöt***, ***raportit***, ***työkirjat*** ja ***tietojoukot***. Ne on kaikki järjestetty ***työtiloiksi***. Työtilojen käsite on tärkeä ymmärtää ennen peruselementteihin tutustumista, joten aloitetaan siitä. 
 
 ## <a name="workspaces"></a>Työtilat
-Työtilat ovat Power BI:ssä olevia säilöjä koontinäytöille, raporteille, työkirjoille ja tietojoukoille. Työtiloja on kahdenlaisia: **oma työtila* ja sovellustyötilat. Entä mitä tarkoitetaan *sovelluksella*? Power BI -*sovellus* on kokoelma koontinäyttöjä ja raportteja, joiden avulla voit kuvata organisaatiosi keskeisiä mittalukuja. Sovellukset ovat vuorovaikutteisia, mutta niitä ei voi muokata. 
+Työtilat ovat Power BI:ssä olevia säilöjä koontinäytöille, raporteille, työkirjoille ja tietojoukoille. Työtiloja on kahdenlaisia: *Oma työtila* ja *sovellustyötilat*. Entä mitä tarkoitetaan *sovelluksella*? Power BI -*sovellus* on kokoelma koontinäyttöjä ja raportteja, joiden avulla voit kuvata organisaatiosi keskeisiä mittalukuja. Sovellukset ovat vuorovaikutteisia, mutta niitä ei voi muokata. 
 
-- *Oma työtila* on jokaisen Power BI -asiakkaan henkilökohtainen työtila oman sisältönsä käsittelyyn. Vain sinulla on käyttöoikeus omaan työtilaasi. Jos haluat jakaa sisältöäsi, siihen on useita vaihtoehtoja. Voit luoda sovellustyötilan, jossa paketoit sisällön *sovellukseksi* ja tarjoat sen muiden saataville organisaatiossasi. Voit myös luoda sovellustyötilan ja antaa kollegoille käyttöoikeuden siihen jakamista ja yhteistyötä varten.     
+- *Oma työtila* on jokaisen Power BI -asiakkaan henkilökohtainen työtila oman sisällön käsittelyyn. Vain sinulla on käyttöoikeus omaan työtilaasi. Oman työtilan kautta voi jakaa raporttinäkymiä ja raportteja. Jos haluat käsitellä koontinäyttöjä ja raportteja yhteistyössä tai luoda sovelluksen, sinun kannattaa käyttää sovellustyötilaa.      
 -  *Sovellustyötiloja* käytetään yhteistyöhön ja sisällön jakamiseen kollegoiden kanssa. Niissä voi myös luoda, julkaista ja hallita sovelluksia organisaatiollesi. Niitä voi ajatella tietynlaisina valmisteluympäristöinä ja säilöinä sisällölle, josta muodostuu Power BI -sovellus. Voit lisätä kollegoita sovellustyötilan käyttäjiksi ja käsitellä koontinäyttöjä, raportteja, työkirjoja ja tietojoukkoja yhteistyössä. Kaikki sovellustyötilan jäsenet tarvitsevat Power BI Pro -käyttöoikeudet, mutta sovelluksen kuluttajilla (sovelluksen käyttöoikeuden saaneilla kollegoilla) ei välttämättä tarvitse olla Pro-käyttöoikeuksia.  
 
 Lisätietoja on sisällysluettelon **Työn jakaminen** -osiossa, jonka ensimmäisenä aiheena on [Miten voin jakaa koontinäyttöjä ja raportteja sekä työstää niitä yhdessä muiden kanssa?](service-how-to-collaborate-distribute-dashboards-reports.md)
