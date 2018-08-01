@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 07/24/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: b2437074fb6beff4b1be62287d547111488862e3
-ms.sourcegitcommit: 6faeb642721ee5abb41c04a8b729880c01c4d40e
+ms.openlocfilehash: c21d04da722e017210f7f83df3e1a5aa7dde1166
+ms.sourcegitcommit: df7a58dae14ef311516c9b3098f87742786f0479
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39210326"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39280750"
 ---
 # <a name="create-tooltips-based-on-report-pages-in-power-bi-desktop-preview"></a>Luo Power BI Desktopissa luotuihin raporttisivuihin pohjautuvia työkaluvihjeitä (esikatselu)
 Voit luoda visuaalisesti monipuolisia **raporttityökaluvihjeitä**, jotka tulevat näkyviin, kun pidät hiiren osoitinta visualisoinnin päällä, ja jotka pohjautuvat **Power BI Desktopissa** luomiisi raporttisivuihin. Kun luot työkaluvihjeenä toimivan raporttisivun, mukautetut työkaluvihjeet voivat sisältää visualisointeja, kuvia ja muita kohdekokoelmia, joita luot raporttisivulla. 
@@ -124,6 +124,7 @@ Tähän raportin **työkaluvihjeiden** esiversioon liittyy tiettyjä rajoituksia
 * Raportin työkaluvihjeitä ei tueta mukautetuissa visualisoinneissa. 
 * Klustereita ei tällä hetkellä tueta kenttinä, jotka voidaan näyttää raportin työkaluvihjeissä. 
 * Valittaessa raportin työkaluvihjeiden kanssa näytettävää kenttää ja käytettäessä kenttää luokan asemesta kyseisen kentän sisältävät visualisoinnit näyttävät vain määritetyn työkaluvihjeen, kun valitun kentän yhteenveto on vastaava. 
+
 
 
 ## <a name="next-steps"></a>Seuraavat vaiheet

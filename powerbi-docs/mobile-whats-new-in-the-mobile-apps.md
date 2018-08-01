@@ -9,12 +9,12 @@ ms.component: powerbi-mobile
 ms.topic: conceptual
 ms.date: 07/19/2018
 ms.author: maggies
-ms.openlocfilehash: 41a8b463ca95d0e4e0e0ba71dbd9ec9a1ce78920
-ms.sourcegitcommit: f6fb681ec85313eb7b450edb8f190e9e7afbabca
+ms.openlocfilehash: 7149fd43d4214ed756eff61a523805ec9f50e1ae
+ms.sourcegitcommit: df7a58dae14ef311516c9b3098f87742786f0479
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39182721"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39280773"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Power BI -mobiilisovellusten uudet ominaisuudet
 Lisätietoja aiheeseen liittyvistä uusista ominaisuuksista:
@@ -185,7 +185,7 @@ Lue [mobiilisovellusten ominaisuusyhteenveto heinäkuulta 2017](https://powerbi.
 
 **Uusi valikko: Sovellukset** Sovellus on kokoelma organisaatiollesi luotuja koontinäyttöjä ja raportteja, jotta tärkeimmät arvot voidaan esittää nopeammin ja helpommin tietoihin perustuvia päätöksiä varten.
 
-Lue lisää [Power BI -sisällön organisoinnista](mobile-apps-find-content-mobile-devices.md).
+Lue lisää [Power BI -sisällön organisoinnista](mobile-apps-quickstart-view-dashboard-report.md).
 
 #### <a name="ios-and-android-devices"></a>iOS- ja Android-laitteet
 **Power BI -raporttipalvelimen esikatselu** Luo ja julkaise Power BI -raportteja paikallisesti. Sen jälkeen voit [tarkastella ja käsitellä niitä iOS- tai Android](mobile-app-ssrs-kpis-mobile-on-premises-reports.md)-mobiililaitteella. 
@@ -241,7 +241,7 @@ Q&A:n avulla voit esittää kysymyksiä tiedoistasi omin sanoin ja Power BI anta
 Aktiivisia yhteyksiä voi olla nyt enintään viiteen eri SQL Server Reporting Services -palvelimeen samanaikaisesti.
 
 #### <a name="android-tablets"></a>Android-tabletit
-**Power BI-mobiilisovellus** Android-tableteille on nyt käytettävissä maailmanlaajuisesti. Aloita [Power BI:n käyttäminen Android-tabletissa](mobile-android-tablet-app-get-started.md).
+**Power BI-mobiilisovellus** Android-tableteille on nyt käytettävissä maailmanlaajuisesti. Aloita [Power BI:n käyttäminen Android-tabletissa](mobile-android-app-get-started.md).
 
 #### <a name="ios-and-android-devices"></a>iOS- ja Android-laitteet
 **Uusi valikko koontinäytön ruuduille** Siirry taustalla olevaan raporttiin, laajenna ruutu tai hallitse ilmoitusta koontinäytön ruudussa olevan valikon kautta. 
@@ -304,7 +304,7 @@ Lue [marraskuun 2016 Power BI -mobiilisovellusten ominaisuusyhteenveto](https://
 #### <a name="android-tablets"></a>Android-tabletit
 **Power BI -mobiilisovellus Android-tableteille** Kyllä, esikatselu on täällä.
 
-* Käytä [Power BI:tä Android-tabletissa](mobile-android-tablet-app-get-started.md).
+* Käytä [Power BI:tä Android-tabletissa](mobile-android-app-get-started.md).
 * Tutustu [Reporting Servicesin mobiiliraportteihin ja suorituskykyilmaisimiin Android-tabletissa](mobile-app-ssrs-kpis-mobile-on-premises-reports.md).
 
 #### <a name="android-devices"></a>Android-laitteet
@@ -498,7 +498,7 @@ Kaikki tammikuun parannukset ovat jo uudessa [Windows 10 -puhelinten Power BI -s
 
 **R-ruudut ja web-pienoissovellukset** Voit tarkastella näitä uusia koontinäyttöjen ruututyyppejä mobiililaitteessasi.
 
-**Bing-koontinäytöt** Voit nyt luoda Power BI -palvelussa [koontinäyttöjä Bing-hakutuloksista](service-connect-to-bing.md) ja tarkastella niitä mobiililaitteessasi.
+**Bing-koontinäytöt** Voit nyt luoda Power BI -palvelussa [koontinäyttöjä Bing-hakutuloksista](service-connect-to-services.md) ja tarkastella niitä mobiililaitteessasi.
 
 **Raporttisivut kiinnitettyinä ruuduiksi koontinäytöissä** Voit nyt kiinnittää koko raportin koontinäyttöön Power BI -palvelussa ja käyttää raporttisivuja iPhone- tai Android-puhelimesi Power BI -sovelluksessa.
 
