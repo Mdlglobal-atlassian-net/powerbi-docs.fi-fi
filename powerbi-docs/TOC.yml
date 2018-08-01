@@ -918,14 +918,18 @@
       items:
         - name: Yleiskatsaus
           items:
-            - name: 'Upottaminen Power BI:llä'
+            - name: 'Mitä on upottaminen Power BI:n avulla'
               href: developer/embedding.md
+            - name: Mikä on Power BI Embedded Azuressa
+              href: developer/azure-pbie-what-is-power-bi-embedded.md
         - name: Opetusohjelmat
           items:
             - name: Upota asiakkaille tarkoitettua sisältöä
               href: developer/embed-sample-for-customers.md
             - name: Organisaatiollesi tarkoitetun sisällön upottaminen
               href: developer/embed-sample-for-your-organization.md
+            - name: Sisällön integrointi sovellukseesi maakohtaisissa pilvipalveluissa
+              href: developer/embed-sample-for-customers-sovereign-clouds.md
         - name: Käsitteet
           items:
             - name: Rivitason suojaus (RLS)
@@ -936,12 +940,8 @@
               href: developer/power-bi-permissions.md
         - name: Ohjeet
           items:
-            - name: Sisällön upottaminen
-              href: developer/embedding-content.md
             - name: Sovelluksesta upottaminen
               href: developer/embed-from-apps.md
-            - name: Sisällön integrointi sovellukseen maakohtaisissa pilvipalveluissa (sovellus omistaa tiedot)
-              href: developer/embed-sample-for-customers-sovereign-clouds.md
             - name: Azure Active Directory -vuokraajan luominen
               href: developer/create-an-azure-active-directory-tenant.md
             - name: Sovelluksen rekisteröinti
@@ -950,18 +950,36 @@
               href: developer/get-azuread-access-token.md
             - name: 'Q&A:n upottaminen'
               href: developer/qanda.md
-            - name: Power BI Embedded -versioon siirtyminen
-              href: developer/migrate-from-powerbi-embedded.md
             - name: Upotetun sovelluksen vianmääritys
               href: developer/embedded-troubleshoot.md
+            - name: Kapasiteettien hallinta Azuressa
+              items:
+                - name: Luo kapasiteettia Azuressa
+                  href: developer/azure-pbie-create-capacity.md
+                - name: Skaalaa kapasiteettia Azuressa
+                  href: developer/azure-pbie-scale-capacity.md
+                - name: Keskeytä ja käynnistä kapasiteettia Azuressa
+                  href: developer/azure-pbie-pause-start.md
+            - name: Siirtyminen työtilakokoelmista
+              items:
+                - name: Siirtyminen Power BI -työtilakokoelmista
+                  href: developer/migrate-from-powerbi-embedded.md
+                - name: Siirtotyökalu
+                  href: developer/migrate-tool.md
+                - name: Siirtokoodikatkelmat
+                  href: developer/migrate-code-snippets.md
         - name: Viittaus
           items:
+            - name: Ohjelmointirajapinnat
+              items:
+                - name: Azure resurssienhallinta REST-ohjelmointirajapinnat
+                  href: 'https://docs.microsoft.com/rest/api/power-bi-embedded/'
+                - name: Power BI REST-ohjelmointirajapinnat
+                  href: 'https://msdn.microsoft.com/library/mt147898.aspx'
             - name: '.NET SDK: lataaminen'
               href: 'https://go.microsoft.com/fwlink/?linkid=848274'
             - name: Omien asetteluiden upottaminen sovellukseen
               href: developer/embedded-custom-layout.md
-            - name: Siirtokoodikatkelmat
-              href: developer/migrate-code-snippets.md
         - name: Resurssit
           items:
             - name: Kehityskeskus
@@ -978,8 +996,6 @@
               href: 'https://go.microsoft.com/fwlink/?linkid=848273'
             - name: Mallit
               href: 'https://go.microsoft.com/fwlink/?linkid=851293'
-            - name: Power BI Embedded -siirtotyökalu
-              href: developer/migrate-tool.md
             - name: Power BI -yhteisö
               href: 'https://go.microsoft.com/fwlink/?linkid=848280'
             - name: Stack Overflow
@@ -1064,8 +1080,6 @@
           items:
             - name: REST-ohjelmointirajapinnat
               href: 'https://docs.microsoft.com/rest/api/power-bi'
-            - name: 'Power BI:n REST-ohjelmointirajapinnan viite'
-              href: developer/rest-api-reference.md
             - name: Kattava koodiluettelo
               href: developer/walkthrough-push-data-complete-code.md
         - name: Resurssit
