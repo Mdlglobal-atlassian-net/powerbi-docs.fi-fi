@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/05/2018
+ms.date: 07/23/2018
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 166d61c78f8e85a91dafa5de698d782b456834a7
-ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
+ms.openlocfilehash: dcf63989a7d016b5795337f43c9524b05d2d54cd
+ms.sourcegitcommit: 6faeb642721ee5abb41c04a8b729880c01c4d40e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37601633"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39210372"
 ---
 # <a name="previous-monthly-updates-to-power-bi-desktop"></a>Power BI Desktopin aiemmat kuukausipäivitykset
 
@@ -34,6 +34,53 @@ Voit myös katsoa **Uusimmat päivitykset** -videon, joka on aivan tämän artik
 
 Seuraavat osiot käsittelevät **Power BI Desktopin** aiempien kuukausien päivityksiä.
 
+
+## <a name="june-2018-update-2595135101"></a>Kesäkuun 2018 päivitys (2.59.5135.101)
+
+Tämän kuun päivityksien uudet ominaisuudet ja parannukset säteilivät kilpaa auringon kanssa. Valaise niillä raporttisi ja nauti niiden tarjoamista merkityksellisistä tiedoista.
+
+Seuraavat päivitykset olivat uutta **Power BI Desktopissa** kesäkuussa:
+
+### <a name="reporting"></a>Raportointi
+
+* Raporttien suuren kontrastin tuki [[video]](https://youtu.be/4VpGtWSrssE?t=13s)  [[artikkeli]](desktop-accessibility.md#high-contrast-support-for-reports)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2018-feature-summary/#highContrast) 
+* Renkaan säde -ohjausobjekti  [[video]](https://youtu.be/4VpGtWSrssE?t=6m1s)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2018-feature-summary/#donutRadius) 
+* Ympyrä- ja rengastietojen nimien sijainti -ohjausobjekti   [[video]](https://youtu.be/4VpGtWSrssE?t=7m19s) [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2018-feature-summary/#detailLabels) 
+* Muotoile arvopisteiden nimet erikseen kullekin yhdistelmäruutukaavion mittayksikölle  [[video]](https://youtu.be/4VpGtWSrssE?t=9m29s)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2018-feature-summary/#comboLabels) 
+* Ei enää puhelinraportteja [[video]](https://youtu.be/4VpGtWSrssE?t=11m26s)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2018-feature-summary/#phoneReports) 
+
+### <a name="custom-visuals"></a>Mukautetut visualisoinnit
+
+* Kaksi uutta mukautettua visualisointia  [[video]](https://youtu.be/4VpGtWSrssE?t=17m42s)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2018-feature-summary/#customVisuals) 
+
+### <a name="modeling"></a>Mallintaminen
+* Suodattaminen ja lajitteleminen tietonäkymässä [[video]](https://youtu.be/4VpGtWSrssE?t=13m11s)  [[artikkeli]](desktop-data-view.md#filtering-in-data-view)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2018-feature-summary/#filterAndSort) 
+* Parannettu aluekohtainen suodatus [[video]](https://youtu.be/4VpGtWSrssE?t=15m35s)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2018-feature-summary/#locale) 
+
+### <a name="data-connectivity"></a>Tietoyhteydet
+
+* SAP BusinessWarehouse -yhdistimen parannuksia (uusi ohjain ja suorituskyvyn parannus sekä hierarkian muuttujien parannettu tuki) [[video]](https://youtu.be/4VpGtWSrssE?t=21m6s) [[artikkeli]](desktop-sap-bw-connector.md) [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2018-feature-summary/#sapBW) 
+* Spark-yhdistin tukee nyt Windows-todennusta [[videon]](https://youtu.be/4VpGtWSrssE?t=24m31s)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2018-feature-summary/#spark) 
+* OData-V4 -yhdistimen parannukset [[video]](https://youtu.be/4VpGtWSrssE?t=25m12s)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2018-feature-summary/#oData) 
+* ODBC-yhdistimen parannukset (Top Rows taitos -tuki, siirtymisen suodattaminen DSN-luettelon mukaan) [[video]](https://youtu.be/4VpGtWSrssE?t=26m51s) [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2018-feature-summary/#odbc) 
+
+### <a name="other"></a>Muut
+
+* Maakohtaisen pilvipalvelun -valitsin [[video]](https://youtu.be/4VpGtWSrssE?t=27m45s)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2018-feature-summary/#nationalCloud) 
+
+
+> [!NOTE]
+> Voit myös [tutustua kaikkiin Power BI Desktopille saatavilla oleviin tietolähteisiin](desktop-data-sources.md). Luettelo kasvaa jatkuvasti, joten se kannattaa tarkistaa usein.
+
+Haluatko lisätietoja näistä päivityksistä? Tutustu [blogikirjoitukseen](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2018-feature-summary/), josta saat tarkempia tietoja kustakin uudesta ominaisuudesta (tämä on sama blogikirjoitus, johon viitataan yllä olevassa luettelossa).
+
+Seuraavassa videossa esitellään jokainen näistä päivityksistä. Näet videon myös blogikirjoituksen kautta.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/4VpGtWSrssE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+
+> [!NOTE]
+> Sinua saattavat myös kiinnostaa [Power BI -palvelun uudet ominaisuudet](service-whats-new.md). Tutustu myös [Power BI -mobiilisovellusten uutuuksiin](mobile-whats-new-in-the-mobile-apps.md).
 
 ## <a name="may-2018-update-2585103281"></a>Toukokuun 2018 päivitys (2.58.5103.281)
 
