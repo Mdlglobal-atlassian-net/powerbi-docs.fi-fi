@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 07/19/2018
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: a1719f8a6f9f4ad3989aa498c584b337cd9fdd00
-ms.sourcegitcommit: f6fb681ec85313eb7b450edb8f190e9e7afbabca
+ms.openlocfilehash: d735ff366d422d03186c25a0b358e87d6790a260
+ms.sourcegitcommit: df7a58dae14ef311516c9b3098f87742786f0479
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39182744"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39280612"
 ---
 # <a name="power-bi---basic-concepts-for-power-bi-service"></a>Power BI – Power BI -palvelun peruskäsitteet
 
@@ -87,7 +87,7 @@ Tietojoukkoja voi päivittää, nimetä uudelleen, tarkastella ja poistaa. Tieto
 * [Mallitietojoukkoja Power BI:lle](sample-datasets.md)
 
 ## <a name="reports"></a>Raportit
-Power BI -raportti on yksi tai useampi sivu visualisointeja eli kaavioita ja kuvaajia, kuten viiva- ja ympyräkaavioita, puukarttoja ja monia muita. Visualisointeja saatetaan kutsua myös ***graafeiksi***. Kaikki raportin visualisoinnit ovat peräisin yhdestä tietojoukosta. Raportteja voi luoda alusta alkaen Power BI:ssä, tai niitä voi tuoda koontinäytöillä, joita kollegat jakavat kanssasi. Niitä voi myös luoda muodostamalla yhteyden tietojoukkoihin Excelissä, Power BI Desktopissa, tietokannoissa, SaaS-sovelluksissa ja [sovelluksissa](service-get-data.md).  Kun esimerkiksi muodostat yhteyden Power View -taulukoita sisältävään Excel-työkirjaan, Power BI luo raportin näiden taulukoiden perusteella. Ja kun muodostat yhteyden SaaS-sovellukseen, Power BI tuo valmiiksi luodun raportin.
+Power BI -raportti on yksi tai useampi sivu visualisointeja (eli kaavioita ja kuvaajia, kuten viiva- ja ympyräkaavioita, puukarttoja ja monia muita). Visualisointeja saatetaan kutsua myös ***graafeiksi***. Kaikki raportin visualisoinnit ovat peräisin yhdestä tietojoukosta. Raportteja voi luoda alusta alkaen Power BI:ssä, tai niitä voi tuoda koontinäytöillä, joita kollegat jakavat kanssasi. Niitä voi myös luoda muodostamalla yhteyden tietojoukkoihin Excelissä, Power BI Desktopissa, tietokannoissa, SaaS-sovelluksissa ja [sovelluksissa](service-get-data.md).  Kun esimerkiksi muodostat yhteyden Power View -taulukoita sisältävään Excel-työkirjaan, Power BI luo raportin näiden taulukoiden perusteella. Ja kun muodostat yhteyden SaaS-sovellukseen, Power BI tuo valmiiksi luodun raportin.
 
 Voit tarkastella ja käsitellä raportteja kahdessa tilassa: [lukunäkymässä ja muokkausnäkymässä](service-reading-view-and-editing-view.md).  Vain raportin luonut henkilö, sen muut omistajat ja siihen käyttöoikeuden saaneet saavat käyttöönsä kaikki tutustumis-, suunnittelu-, luomis- ja jakamistoiminnot raportin ***muokkausnäkymässä***. Ne, joille raportti jaetaan, voivat tutkia ja käsitellä sitä ***lukunäkymässä***.   
 

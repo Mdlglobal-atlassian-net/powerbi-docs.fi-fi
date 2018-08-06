@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/23/2018
+ms.date: 07/31/2018
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 1105de002f6461589d61c6f0077cceeedaada471
-ms.sourcegitcommit: 6faeb642721ee5abb41c04a8b729880c01c4d40e
+ms.openlocfilehash: 40799bb2716b2f6e85405e76c2a301acef3509aa
+ms.sourcegitcommit: 06f59902105c93700e71e913dff8453e221e4f82
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39210889"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39388751"
 ---
 # <a name="many-to-many-relationships-in-power-bi-desktop-preview"></a>Moni-moneen-yhteydet Power BI Desktopissa (esikatselu)
 
@@ -50,7 +50,7 @@ Ominaisuuden käyttöönotto edellyttää **Power BI Desktopin** käynnistämist
 
 Ennen kuin **monta moneen -yhteydet** tulivat saataville, kahden Power BI:ssä olevan taulukon yhteyttä määritettäessä ainakin yhdessä yhteyteen liittyvässä sarakkeessa oli oltava yksilöllisiä arvoja. Monissa tilanteissa yksikään taulukon sarake ei kuitenkaan sisältänyt yksilöllisiä arvoja. 
 
-Kahdessa taulukossa saattoi olla esimerkiksi sarake, joka sisältää *maan*, mutta *maa*-sarakkeen arvot eivät olleet yksilöllisiä kummassakaan taulukossa. Tällaisten taulukoiden yhdistämiseksi oli tarpeen luoda kiertotapoja, kuten lisätä malliin taulukkoja, jotka sisälsivät tarvittavat yksilölliset arvot. **Monta moneen -yhteydet** tarjoavat vaihtoehtoiseen lähestymistavan sallimalla tällaisten taulukoiden yhdistämisen suoraan käyttämällä yhteyttä **monta moneen** -ominaisuuden kardinaliteetin avulla.  
+Kahdessa taulukossa saattoi olla esimerkiksi sarake, joka sisältää arvon *Maa*, mutta *Maa*-sarakkeen arvot eivät olleet yksilöllisiä kummassakaan taulukossa. Tällaisten taulukoiden yhdistämiseksi oli tarpeen luoda kiertotapoja, kuten lisätä malliin taulukkoja, jotka sisälsivät tarvittavat yksilölliset arvot. **Monta moneen -yhteydet** tarjoavat vaihtoehtoiseen lähestymistavan sallimalla tällaisten taulukoiden yhdistämisen suoraan käyttämällä yhteyttä **monta moneen** -ominaisuuden kardinaliteetin avulla.  
 
 ## <a name="using-many-to-many-relationships"></a>Monta moneen -yhteyksien käyttäminen
 

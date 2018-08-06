@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 07/24/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: b26fbfccc3b0a98761ecc1444af4e535339c96de
-ms.sourcegitcommit: 6faeb642721ee5abb41c04a8b729880c01c4d40e
+ms.openlocfilehash: f07b5174d031c79f4d8f232c49836b54d95621f1
+ms.sourcegitcommit: 7fb0b68203877ff01f29724f0d1761d023075445
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39210280"
+ms.lasthandoff: 07/26/2018
+ms.locfileid: "39256028"
 ---
 # <a name="accessibility-in-power-bi-desktop-reports"></a>Power BI Desktop -raporttien helppokäyttöisyys
 Power BI:ssa on ominaisuuksia, joiden avulla toimintarajoitteisten henkilöiden on helppo käyttää ja käsitellä Power BI -raportteja. Näitä ominaisuuksia ovat esimerkiksi mahdollisuus käyttää raporttia näppäimistön tai näytönlukuohjelman avulla, kohdistaminen sivun eri objekteihin sarkaimella sekä ymmärtäväinen merkkien käyttö visualisoinneissa.
@@ -40,6 +40,8 @@ Voit myös vaihtaa kohdistusta raporttisivujen välilehtien tai raportin tietyn 
 * Kun kohdistus on ladatulla *raportin sivulla*, voit siirtää kohdistuksen *sarkainpainikkeella* sivun objektien välillä. Objekteja ovat kaikki tekstiruudut, kuvat, muodot ja kaaviot. Näytönlukija lukee objektin tyypin, kyseisen objektin mahdollisen otsikon ja objektin kuvauksen, jos sille on sellainen raportin kirjoittajan toimesta annettu. 
 
 Jos haluat navigoidessasi visualisointien välillä, käsitellä jotain niistä tarkemmin, paina **Alt + VAIHTO + F10** siirtääksesi kohdistuksen visualisoinnin otsikkoon, joka sisältää eri vaihtoehtoja, kuten lajittelun, kaavion tietojen tarkastelun ja kohdistustilan. 
+
+![Siirrä kohdistus visuaaliseen otsikkoon painamalla Power BI Desktopissa Alt + vaihto + F10](media/desktop-accessibility/accessibility_08.png)
 
 Voit avata *Näytä tiedot* -ikkunan helppokäyttöisen version painamalla **Alt + vaihto + F11**. Tämän avulla voit tutkia visualisoinnissa käytettäviä tietoja HTML-taulukkona, käyttäen samoja pikanäppäimiä, joita käytät normaalisti näytönlukijassa. 
 
