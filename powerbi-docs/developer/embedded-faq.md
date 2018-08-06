@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: conceptual
 ms.date: 06/22/2018
-ms.openlocfilehash: f3602f44bd2ab98e115f904baa89429db918637c
-ms.sourcegitcommit: ba3cab4613a2b815d46a213eff07a8a8ec22c17f
+ms.openlocfilehash: f104d2e9e27cfb9af72813053c0d8cb14aaf2635
+ms.sourcegitcommit: fecea174721d0eb4e1927c1116d2604a822e4090
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39032067"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39359652"
 ---
 # <a name="frequently-asked-questions-about-power-bi-embedded"></a>Usein kysyttyjä kysymyksiä – Power BI Embedded
 
@@ -63,29 +63,32 @@ Power BI Embedded on ohjelmointirajapintojen joukko, joiden avulla kehittäjät 
 
 Alla on osittainen luettelo eroista näiden ratkaisujen yhteydessä käytettävien ominaisuuksien välillä.
 
-|Ominaisuus  |Power BI Embedded<br>(A-varastointiyksiköt) |Power BI Premium -kapasiteetti<br>(EM-varastointiyksiköt)  | 
-|---------|---------|---------|
-|Upotusartefaktit Power BI -sovelluksen työtiloista     |Azure-kapasiteetti |Office 365 -kapasiteetti |
-|Raporttien käyttämiseen vaadittu Power BI -käyttöoikeus |Ei  |Kyllä |
-|Power BI -raporttien käyttäminen Embedded-sovelluksessa |Kyllä  |Kyllä |
-|Power BI -raporttien käyttäminen SharePointissa |Ei |Kyllä |
-|Power BI -raporttien käyttäminen Teamsissa |Ei |Kyllä |
+| Ominaisuus | Power BI Embedded | Power BI Premium -kapasiteetti | Power BI Premium -kapasiteetti |
+|----------------------------------------------------------------------------------|-------------------|---------------------------|---------------------------|
+|   | (A-varastointiyksiköt) | (EM-varastointiyksiköt) | (P-varastointiyksiköt) |
+| Upotusartefaktit Power BI -sovelluksen työtilasta | Azure-kapasiteetti | Office 365 -kapasiteetti | Office 365 -kapasiteetti |
+| Power BI -raporttien käyttäminen Embedded-sovelluksessa | Kyllä | Kyllä | Kyllä |
+| Power BI -raporttien käyttäminen SharePointissa | Ei | Kyllä | Kyllä |
+| Power BI -raporttien käyttäminen Dynamicsissa | Ei | Kyllä | Kyllä |
+| Power BI -raporttien käyttäminen Teamsissa | Ei | Kyllä | Kyllä |
+| Sisällön käyttäminen ilmaisella Power BI -käyttöoikeudella Powerbi.comissa ja Power BI -mobiilisovelluksessa | Ei | Ei | Kyllä |
+| Sisällön käyttäminen ilmaisella Power BI -käyttöoikeudella upotettuna MS Office -sovelluksiin | Ei | Kyllä | Kyllä |
 
 ### <a name="power-bi-now-offers-three-skus-for-embedding-a-skus-em-skus-and-p-skus-which-one-should-i-purchase-for-my-scenario"></a>Power BI tarjoaa nyt upottamiseen kolme varastointiyksikköä: A-, EM- ja P-varastointiyksiköt. Mikä niistä minun tulisi ostaa omaa skenaariotani varten?
 
 |  |A-varastointiyksikkö (Power BI Embedded)  |EM-varastointiyksikkö (Power BI Premium)  |P-varastointiyksikkö (Power BI Premium)  |
 |---------|---------|---------|---------|
 |Ostaminen     |Azure-portaali |Office |Office |
-|Käyttötapaukset |* Sisällön upottaminen omaan sovellukseen |* Sisällön upottaminen omaan sovellukseen<br>* Sisällön upottaminen muihin SaaS-sovelluksiin ([SharePoint](https://powerbi.microsoft.com/blog/integrate-power-bi-reports-in-sharepoint-online/), [Teams](https://powerbi.microsoft.com/blog/power-bi-teams-up-with-microsoft-teams/), [Dynamics 365](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/basics/add-edit-power-bi-visualizations-dashboard)) |* Sisällön upottaminen omaan sovellukseen<br>* Sisällön upottaminen muihin SaaS-sovelluksiin ([SharePoint](https://powerbi.microsoft.com/blog/integrate-power-bi-reports-in-sharepoint-online/), [Teams](https://powerbi.microsoft.com/blog/power-bi-teams-up-with-microsoft-teams/), [Dynamics 365](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/basics/add-edit-power-bi-visualizations-dashboard))<br>* Sisällön jakaminen Power BI -käyttäjien kanssa [Power BI -palvelun](https://powerbi.microsoft.com/en-us/) kautta  |
+|Käyttötapaukset |* Sisällön upottaminen omaan sovellukseen |* Sisällön upottaminen omaan sovellukseen<br>* Sisällön upottaminen muihin MS Office -sovelluksiin ([SharePoint](https://powerbi.microsoft.com/blog/integrate-power-bi-reports-in-sharepoint-online/), [Teams](https://powerbi.microsoft.com/blog/power-bi-teams-up-with-microsoft-teams/), [Dynamics 365](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/basics/add-edit-power-bi-visualizations-dashboard)) |* Sisällön upottaminen omaan sovellukseen<br>* Sisällön upottaminen muihin MS Office -sovelluksiin ([SharePoint](https://powerbi.microsoft.com/blog/integrate-power-bi-reports-in-sharepoint-online/), [Teams](https://powerbi.microsoft.com/blog/power-bi-teams-up-with-microsoft-teams/), [Dynamics 365](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/basics/add-edit-power-bi-visualizations-dashboard))<br>* Sisällön jakaminen Power BI -käyttäjien kanssa [Power BI -palvelun](https://powerbi.microsoft.com/en-us/) kautta  |
 |Laskutus |Tunneittain |Kuukausittain |Kuukausittain |
 |Sitoutuminen  |Ei sitoutumista |Vuosittain  |Kuukausittain/vuosittain |
 |Erot |Täysi joustavuus – skaalaus ylös/alas, resurssien keskeytys/jatkaminen Azure-portaalissa tai ohjelmointirajapinnan kautta  |Voidaan käyttää sisällön upottamiseen SharePoint Onlinessa ja Microsoft Teamsissa |Yhdistää sovelluksiin upottamisen ja Power BI -palvelun käytön samassa kapasiteetissa |
 
 ### <a name="what-are-the-prerequisites-to-create-a-pbie-capacity-in-azure"></a>Mitkä ovat ennakkoedellytykset PBIE-kapasiteetin luomiseksi Azuressa?
 
-- Sinun on kirjauduttava organisaation hakemistoon (MSA-tilejä ei tueta).
-- Sinulla on oltava Power BI -vuokraaja, eli vähintään yhden käyttäjän hakemistossasi on täytynyt rekisteröityä Power BI:n käyttäjäksi. 
-- Sinulla täytyy olla Azure-tilaus organisaatiosi hakemistossa.
+* Sinun on kirjauduttava organisaation hakemistoon (MSA-tilejä ei tueta).
+* Sinulla on oltava Power BI -vuokraaja, eli vähintään yhden käyttäjän hakemistossasi on täytynyt rekisteröityä Power BI:n käyttäjäksi. 
+* Sinulla täytyy olla Azure-tilaus organisaatiosi hakemistossa.
 
 ### <a name="how-can-i-monitor-capacity-consumption"></a>Miten voin valvoa kapasiteetin käyttöä?
 

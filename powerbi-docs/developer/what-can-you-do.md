@@ -1,56 +1,47 @@
 ---
 title: Mitä kehittäjät voivat tehdä Power BI:llä?
 description: Power BI tarjoaa useita erilaisia asetuksia kehittäjille. Niitä on upottamisesta mukautettuihin visualisointeihin ja virtautettaviin tietojoukkoihin.
-services: powerbi
-documentationcenter: ''
 author: markingmyname
-manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
-ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 07/20/2017
 ms.author: maghan
-ms.openlocfilehash: b310562ac31694f398a659018743b8fa7aa46e35
-ms.sourcegitcommit: 6e693f9caf98385a2c45890cd0fbf2403f0dbb8a
+ms.date: 05/25/2018
+ms.topic: overview
+ms.service: powerbi
+ms.component: powerbi-developer
+ms.custom: mvc
+manager: kfile
+ms.openlocfilehash: 07fb8d365a6fe4a874b057a71a90a99fc8a9e5fa
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34564692"
 ---
 # <a name="what-can-developers-do-with-power-bi"></a>Mitä kehittäjät voivat tehdä Power BI:llä?
-Power BI tarjoaa useita erilaisia asetuksia kehittäjille. Niitä on upottamisesta mukautettuihin visualisointeihin ja virtautettaviin tietojoukkoihin.
+
+Kehittäjille on eri vaihtoehtoja Power BI- sisällön sisällyttämisessä sovelluksiin. Näihin vaihtoehtoihin kuuluvat **upottaminen Power BI:llä**, **mukautetut visualisoinnit** ja **tietojen työntäminen Power BI:hin**.
 
 ## <a name="embedding"></a>Upottaminen
-Power BI -palvelu ja Azuren Power BI Embedded pyrkivät lähitulevaisuudessa tarjoamaan yhteisen ohjelmointirajapinnan koontinäyttöjen ja raporttien upottamista varten. Se tarkoittaa, että saat yhden ohjelmointirajapinnan, jossa on yhtenäiset ominaisuudet ja mahdollisuus käyttää uusimpia Power BI -toimintoja, kuten koontinäyttöjä, yhdyskäytäviä ja sovellustyötiloja, sisältöjen upottamiseen. Lisätietoja on artikkelissa [Upottaminen Power BI:ssä](embedding.md).
+Power BI -palvelu (SaaS) ja Power BI Embedded -palvelu Azuressa (PaaS) sisältävät ohjelmointirajapintoja raporttinäkymien ja raporttien upottamista varten. Se tarkoittaa, että saat tarvittavat ominaisuudet ja oikeudet käyttää uusimpia Power BI -toimintoja, kuten koontinäyttöjä, yhdyskäytäviä ja sovellustyötiloja, sisältöjen upottamiseen.
 
-![](media/what-can-you-do/powerbi-embed-sample.png)
+Voit käyttää [Perehdyttämiskokemustyökalua](https://aka.ms/embedsetup) aloittaaksesi ja ladataksesi mallisovelluksen nopeasti.
 
-## <a name="custom-visuals"></a>Mukautetut visualisoinnit
-Mukautettujen visualisointien avulla voit luoda omia visualisointeja käytettäväksi Power BI ‑raporteissa. Mukautetut visualisoinnit kirjoitetaan TypeScriptillä. Se on JavaScriptin ylijoukko, joka tukee edistyneempiä ominaisuuksia ja varhaista pääsyä ES6/ES7-toiminnallisuuteen. Visualisointityylit käsitellään Cascading Style Sheet (CSS) -tyyliohjeiden avulla. Käyttömukavuuden lisäämiseksi käytämme Less-esikääntäjää, joka tukee joitakin edistyneitä ominaisuuksia, kuten sisäkkäisyyttä, muuttujia, sekoitusta, ehtoja, silmukoita jne. Jos et halua käyttää mitään näistä ominaisuuksista, voit kirjoittaa pelkkää CSS:ää Less-tiedostoon.
+Valitse ratkaisu, joka sopii sinulle:
+* [Asiakkaille tarkoitettu upotus](embedding.md#embedding-for-your-customers) mahdollistaa raporttinäkymien ja raporttien upottamisen käyttäjille, joilla ei ole Power BI -tiliä. Suorita [asiakkaille tarkoitettu upotus](https://aka.ms/embedsetup/AppOwnsData).
+* [Organisaatiolle tarkoitettu upotus](embedding.md#embedding-for-your-organization) mahdollistaa Power BI -palvelun laajentamisen. Suorita [organisaatiolle tarkoitettu upotus](https://aka.ms/embedsetup/UserOwnsData).
 
-Lisätietoja siitä, miten voit kehittää ja julkaista mukautettuja visualisointeja, saat artikkelista [Mukautettujen visualisointien julkaiseminen Office-kauppaan](office-store.md).
+![PBIE-malli](media/what-can-you-do/what-can-you-do-02.png)
 
-![](media/what-can-you-do/powerbi-custom-visual-store.png)
+## <a name="develop-custom-visuals"></a>Kehitä mukautettuja visualisointeja
+Mukautettujen visualisointien avulla voit luoda omia visualisointeja käytettäväksi Power BI ‑raporteissa. Mukautetut visualisoinnit kirjoitetaan Typescriptillä, joka on JavaScriptin yläjoukko. TypeScript tukee edistyneempiä ominaisuuksia ja varhaista pääsyä ES6/ES7-toiminnallisuuteen. Visualisointityylit käsitellään Cascading Style Sheet (CSS) -tyyliohjeiden avulla. Käyttömukavuuden lisäämiseksi käytämme Less-esikääntäjää, joka tukee joitakin kehittyneitä ominaisuuksia, kuten sisäkkäisyyttä, muuttujia, ehtoja, silmukoita jne. Jos et halua käyttää mitään näistä ominaisuuksista, voit kirjoittaa pelkkää CSS:ää Less-tiedostoon.
+
+![CV-malli](media/what-can-you-do/powerbi-custom-visual-store.png)
 
 ## <a name="push-data-into-power-bi"></a>Tietojen työntäminen Power BI:hin
 Power BI ‑ohjelmointirajapinnan avulla voit lähettää tietoja tietojoukkoon. Sen avulla voit lisätä tietojoukkoon sisältyvään taulukkoon uuden rivin. Uudet tiedot voidaan sitten esittää koontinäytön ruuduissa sekä raporttiin sisältyvissä visualisoinneissa.
 
-Lisätietoja on artikkelissa [Tietojen lähettäminen koontinäyttöön](walkthrough-push-data.md)
+![Tietojen työntämismalli](media/what-can-you-do/powerbi-push-data.png)
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 [Upottaminen Power BI:n avulla](embedding.md)  
-[Miten Power BI Embedded -työtilakokoelman sisältö siirretään Power BI -palveluun](migrate-from-powerbi-embedded.md)  
-[JavaScript API Git -säilö](https://github.com/Microsoft/PowerBI-JavaScript)  
-[Power BI C# Git -säilö](https://github.com/Microsoft/PowerBI-CSharp)  
 [Mukautettujen visualisointien julkaiseminen Office-kauppaan](office-store.md)  
-[Power BI Visuals Git ‑säilö](https://github.com/Microsoft/PowerBI-visuals)  
-[JavaScript-upotuksen näyte](https://microsoft.github.io/PowerBI-JavaScript/demo/)  
-[Power BI Premiumin tekninen raportti](https://aka.ms/pbipremiumwhitepaper)  
-Ilmenikö muuta kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
-
+[Tietojen lähettäminen koontinäyttöön](walkthrough-push-data.md)

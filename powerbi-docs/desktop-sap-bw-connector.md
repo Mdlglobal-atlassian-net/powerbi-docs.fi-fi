@@ -7,20 +7,20 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/06/2018
+ms.date: 07/26/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 11be5cd6f5b97fe612bf42a37228518ab2fbb227
-ms.sourcegitcommit: d1a0da8638c5d957b884ca9412275ee8880d4b14
+ms.openlocfilehash: 5db9b801fad3145cc864799062fe886c99da53aa
+ms.sourcegitcommit: df7a58dae14ef311516c9b3098f87742786f0479
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37900050"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39280198"
 ---
 # <a name="use-the-sap-bw-connector-in-power-bi-desktop"></a>SAP BW -yhdistimen käyttö Power BI Desktopissa
 Voit nyt käyttää **SAP Business Warehouse (BW)** -tietoja Power BI Desktopilla.
 
-Tietoja siitä, miten SAP-asiakkaat voivat hyötyä yhdistämällä Power BI:n SAP Business Warehouse (BW) -järjestelmäänsä, saat [Power BI ja SAP BW -teknisestä raportista](https://aka.ms/powerbiandsapbw).
+Tietoja siitä, miten SAP-asiakkaat voivat hyötyä yhdistämällä Power BI:n SAP Business Warehouse (BW) -järjestelmäänsä, saat [Power BI ja SAP BW -teknisestä raportista](https://aka.ms/powerbiandsapbw). Saat lisätietoja DirectQueryn käytössä SAP BW:n kanssa artikkelista [DirectQuery ja SAP Business Warehouse (BW)](desktop-directquery-sap-bw.md).
 
 **Power BI Desktopin** 2018 kesäkuun julkaisusta lähtien voit käyttää SAP BW -yhdistimen toteutusta, joka sisältää merkittäviä parannuksia sekä suorituskykyyn että ominaisuuksiin. Tämän SAP BW -yhdistimen päivitetyn version kehittäjä on Microsoft ja sitä kutsutaan nimellä**toteutus 2.0**. Voit valita joko **SAP BW -yhdistimen** version 1 (v1) tai **toteutus 2.0 SAP-yhdistimen**. Seuraavassa kuvataan kunkin version asennus. Yhdistäessäsi Power BI Desktopista SAP BW:hen, voit valita kumman tahansa yhdistimen.
 
@@ -38,9 +38,9 @@ Suosittelemme valitsemaan toteutus 2.0 SAP-yhdistimen aina kun se on mahdollista
 
 ## <a name="installation-of-implementation-20-sap-connector"></a>Toteutus 2.0 SAP-yhdistimen asennus
 
-**Toteutus 2.0** SAP-yhdistin vaatii SAP .NET Connector 3.0:n. Voit [ladata SAP .NET Connector 3.0:n](https://go.microsoft.com/fwlink/?linkid=872300) SAP:n sivustolta seuraavasta linkistä:
+**Toteutus 2.0** SAP-yhdistin vaatii SAP .NET Connector 3.0:n. Voit [ladata SAP .NET Connector 3.0:n](https://support.sap.com/en/product/connectors/msnet.html) SAP:n sivustolta seuraavasta linkistä:
 
-* [SAP .NET Connector 3.0](https://go.microsoft.com/fwlink/?linkid=872300)
+* [SAP .NET Connector 3.0](https://support.sap.com/en/product/connectors/msnet.html)
 
 Lataaminen edellyttää kelvollisia S-käyttöoikeuksia. Asiakkaita kehotetaan ottamaan yhteyttä SAP-perustatiimiin saadakseen SAP .NET Connector 3.0:n. 
 
@@ -207,6 +207,7 @@ Tämä osio sisältää vianmäärityksen tilanteita ja ratkaisuja käytettäess
 Lisätietoja SAP-tietokannoista ja DirectQuery-kyselystä saat seuraavista lähteistä:
 
 * [DirectQuery ja SAP HANA](desktop-directquery-sap-hana.md)
+* [DirectQuery ja SAP Business Warehouse (BW)](desktop-directquery-sap-bw.md)
 * [DirectQuery Power BI:ssä](desktop-directquery-about.md)
 * [DirectQueryn tukemat tietolähteet](desktop-directquery-data-sources.md)
 * [Power BI ja SAP BW tekninen raportti](https://aka.ms/powerbiandsapbw)

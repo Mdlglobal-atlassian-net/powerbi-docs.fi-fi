@@ -2,24 +2,26 @@
 title: Power BI -sisällön upottaminen sovellukseen maakohtaisten pilvipalveluiden asiakkaille
 description: Lue ohjeet siihen, miten voit integroida tai upottaa koontinäytön, ruudun tai raportin verkkosovellukseen asiakkaillesi Power BI -ohjelmointirajapintojen avulla.
 author: markingmyname
+ms.author: maghan
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
-ms.topic: conceptual
-ms.date: 03/28/2018
-ms.author: maghan
-ms.openlocfilehash: ebbb004fe79bbae942243bc227e1c09fd51fa75f
-ms.sourcegitcommit: 8ee0ebd4d47a41108387d13a3bc3e7e2770cbeb8
+ms.topic: tutorial
+ms.date: 07/26/2018
+ms.openlocfilehash: 2d722428ce2029ef4689e6b4bf5dfcdd208baff8
+ms.sourcegitcommit: 7fb0b68203877ff01f29724f0d1761d023075445
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34813706"
+ms.lasthandoff: 07/26/2018
+ms.locfileid: "39255867"
 ---
-# <a name="embed-a-power-bi-dashboard-tile-or-report-into-your-application-for-sovereign-clouds"></a>Power BI:n koontinäytön, ruudun tai raportin upottaminen maakohtaisen pilvipalvelun sovellukseen
+# <a name="tutorial-embed-a-power-bi-dashboard-tile-or-report-into-your-application-for-sovereign-clouds"></a>Opetusohjelma: Power BI:n koontinäytön, ruudun tai raportin upottaminen maakohtaisen pilvipalvelun sovellukseen
 Lue ohjeet siihen, miten voit integroida tai upottaa koontinäytön, ruudun tai raportin verkkosovellukseen asiakkaillesi Power BI .NET SDK:n ja Power BI JavaScript -ohjelmointirajapinnan avulla upotuksen yhteydessä. Tämä on yleensä riippumattoman ohjelmistokehittäjän toteuttama skenaario.
 
-Power BI tukee myös maakohtaisia (yksityisiä) pilviä. Jokaisella maakohtaisella pilvipalvelulla on oma tarkoituksensa. Tarjottavat maakohtaiset pilvipalvelut ovat seuraavat:
+Power BI tukee myös maakohtaisia (yksityisiä) pilviä.
+
+Tarjottavat maakohtaiset pilvipalvelut ovat seuraavat:
 
 * U.S. Government Community Cloud (GCC)
 
@@ -29,15 +31,17 @@ Power BI tukee myös maakohtaisia (yksityisiä) pilviä. Jokaisella maakohtaisel
 
 * Power BI for Germany Cloud.
 
+* Power BI for China cloud
+
 ![Upotettu koontinäyttö](media/embed-sample-for-customers/powerbi-embed-dashboard.png)
 
-Jotta voit käydä toimia näiden vaiheittaisten ohjeiden mukaisesti, tarvitset **Power BI** -tilin. Jos sinulla ei ole tiliä, voit [rekisteröidä U. S. Government Power BI -tilin](../service-govus-signup.md) tai [Power BI for Germany Cloud -tilin](https://powerbi.microsoft.com/power-bi-germany/?ru=https%3A%2F%2Fapp.powerbi.de%2F%3FnoSignUpCheck%3D1) tarpeidesi mukaisesti.
+Jotta voit käydä toimia näiden vaiheittaisten ohjeiden mukaisesti, tarvitset **Power BI** -tilin. Jos sinulla ei ole käytettävissä olevaa tiliä, voit, maakohtaisesta pilvipalvelusta riippuen, rekisteröidä [ U. S. Government Power BI -tilin](../service-govus-signup.md), [Power BI for Germany Cloud -tilin](https://powerbi.microsoft.com/power-bi-germany/?ru=https%3A%2F%2Fapp.powerbi.de%2F%3FnoSignUpCheck%3D1) tai [Power BI for China cloud -tilin](http://www.21vbluecloud.com/powerbi/) tarpeidesi mukaisesti.
 
 > [!NOTE]
 > Haluatko sen sijaan upottaa koontinäytön organisaatiolle? Lue ohjeet artikkelista [Koontinäytön integrointi sovellukseen organisaatiolle](integrate-dashboard.md).
 >
 
-Voit integroida koontinäytön verkkosovellukseen **Power BI** -ohjelmointirajapinnalla ja hankkia koontinäytön Azure Active Directory (AD) -valtuutuksen **käyttöoikeustietueen** avulla. Tämän jälkeen voit ladata koontinäytön upotetun käyttöoikeustietueen avulla. **Power BI** -ohjelmointirajapinta tarjoaa ohjelmallisen käyttöoikeuden tiettyihin **Power BI** -resursseihin. Saat lisätietoja artikkeleista [Power BI REST -ohjelmointirajapinta](https://docs.microsoft.com/rest/api/power-bi/), [Power BI .NET SDK](https://github.com/Microsoft/PowerBI-CSharp) ja [Power BI JavaScript -ohjelmointirajapinta](https://github.com/Microsoft/PowerBI-JavaScript).
+Voit integroida koontinäytön verkkosovellukseen **Power BI** -ohjelmointirajapinnalla ja hankkia koontinäytön Azure Active Directory (AD) -valtuutuksen **käyttöoikeustietueen** avulla. Tämän jälkeen voit ladata koontinäytön upotetun käyttöoikeustietueen avulla. **Power BI -ohjelmointirajapinta** tarjoaa ohjelmallisen käyttöoikeuden tiettyihin **Power BI** -resursseihin. Saat lisätietoja artikkeleista [Power BI REST -ohjelmointirajapinta](https://docs.microsoft.com/rest/api/power-bi/), [Power BI .NET SDK](https://github.com/Microsoft/PowerBI-CSharp) ja [Power BI JavaScript -ohjelmointirajapinta](https://github.com/Microsoft/PowerBI-JavaScript).
 
 ## <a name="download-the-sample"></a>Mallin lataaminen
 Tässä artikkelissa näytetään koodi, jolla [upotetaan asiakasmalli](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/App%20Owns%20Data/PowerBIEmbedded_AppOwnsData) GitHubissa. Voit ladata mallin, jonka avulla voit noudattaa näitä vaiheittaisia ohjeita.
@@ -49,11 +53,8 @@ Tässä artikkelissa näytetään koodi, jolla [upotetaan asiakasmalli](https://
 
 ```xml
 <add key="authorityUrl" value="https://login.windows.net/common/oauth2/authorize/" />
-
 <add key="resourceUrl" value="https://analysis.usgovcloudapi.net/powerbi/api" />
-
 <add key="apiUrl" value="https://api.powerbigov.us/" />
-
 <add key="embedUrlBase" value="https://app.powerbigov.us" />
 ```
 
@@ -64,11 +65,8 @@ Tässä artikkelissa näytetään koodi, jolla [upotetaan asiakasmalli](https://
 
 ```xml
 <add key="authorityUrl" value="https://login.windows.net/common/oauth2/authorize/" />
-
 <add key="resourceUrl" value="https://high.analysis.usgovcloudapi.net/powerbi/api" />
-
 <add key="apiUrl" value="https://api.high.powerbigov.us/" />
-
 <add key="embedUrlBase" value="https://app.high.powerbigov.us" />
 ```
 
@@ -79,11 +77,8 @@ Tässä artikkelissa näytetään koodi, jolla [upotetaan asiakasmalli](https://
 
 ```xml
 <add key="authorityUrl" value="https://login.windows.net/common/oauth2/authorize/" />
-
 <add key="resourceUrl" value="https://mil.analysis.usgovcloudapi.net/powerbi/api" />
-
 <add key="apiUrl" value="https://api.mil.powerbigov.us/" />
-
 <add key="embedUrlBase" value="https://app.mil.powerbigov.us" />
 ```
 
@@ -94,16 +89,25 @@ Tässä artikkelissa näytetään koodi, jolla [upotetaan asiakasmalli](https://
 
 ```xml
 <add key="authorityUrl" value=https://login.microsoftonline.de/common/oauth2/authorize/" />
-
 <add key="resourceUrl" value="https://analysis.cloudapi.de/powerbi/api" />
-
 <add key="apiUrl" value="https://api.powerbi.de/" />
-
 <add key="embedUrlBase" value="https://app.powerbi.de" />
 ```
 
+* Power BI for kiina cloud -parametrit
+    1. Korvaa tiedosto Cloud.config [Power BI for China](https://github.com/Microsoft/PowerBI-Developer-Samples/blob/master/App%20Owns%20Data/PowerBIEmbedded_AppOwnsData/CloudConfigs/Power%20BI%20operated%20by%2021Vianet%20in%20China/Cloud.config) Cloud -sisällöllä.
+    2. Päivitä clientid- (natiivisovelluksen asiakastunnus), groupid-, user- (pääkäyttäjä) ja password-kohdat tiedostossa Web.config.
+    3. Lisää Power BI for China Cloud -parametrit tiedostoon web.config seuraavasti.
+
+```xml
+<add key="authorityUrl" value=https://login.chinacloudapi.cn/common/oauth2/authorize/" />
+<add key="resourceUrl" value="https://analysis.chinacloudapi.cn/powerbi/api" />
+<add key="apiUrl" value="https://api.powerbi.cn/" />
+<add key="embedUrlBase" value="https://app.powerbi.cn" />
+```
+
 ## <a name="step-1---register-an-app-in-azure-ad"></a>Vaihe 1 – rekisteröi sovellus Azure AD:ssä
-Sinun on rekisteröitävä sovellus Azure AD:ssä, jossa voit tehdä REST-ohjelmointirajapinnan kutsuja. Saat lisätietoja artikkelista [Azure AD -sovelluksen rekisteröinti upotettuun Power BI -sisältöön](register-app.md). Koska maakohtaiset pilvipalvelut eroavat toisistaan, sovelluksen rekisteröintiin on omat URL-osoitteensa.
+Sinun on rekisteröitävä sovellus Azure AD:ssä REST-ohjelmointirajapinnan kutsujen tekemiseksi. Saat lisätietoja artikkelista [Azure AD -sovelluksen rekisteröinti Power BI -sisällön upottamista varten](register-app.md). Koska maakohtaiset pilvipalvelut eroavat toisistaan, sovelluksen rekisteröintiin on omat URL-osoitteensa.
 
 * Government Community Cloud (GCC): https://app.powerbigov.us/apps 
 
@@ -112,6 +116,8 @@ Sinun on rekisteröitävä sovellus Azure AD:ssä, jossa voit tehdä REST-ohjelm
 * Military (DoD): https://app.mil.powerbigov.us/apps
 
 * Power BI for Germany Cloud: https://app.powerbi.de/apps
+
+* Power BI for China cloud: https://app.powerbi.cn/apps
 
 Jos latasit [asiakkaan upottamisen mallin](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/App%20Owns%20Data), rekisteröinnin jälkeen voit todentaa mallin Azure AD:hen saamasi **asiakastunnuksen** avulla. Voit määrittää mallin muuttamalla **clientid**-arvoa *web.config*-tiedostossa.
 
@@ -127,10 +133,12 @@ Sinun on hankittava sovelluksessa **käyttöoikeustietue** Azure AD:stä, ennen 
 
 * Power BI for Germany Cloud: https://login.microsoftonline.de
 
+* Power BI for China cloud: https://login.microsoftonline.cn
+
 Näet esimerkit tästä kussakin sisältökohdetehtävässä kohdassa **Controllers\HomeController.cs**.
 
 ## <a name="step-3---get-a-content-item"></a>Vaihe 3 – hanki sisältökohde
-Jos haluat upottaa Power BI -sisältöä, sinun täytyy tehdä muutama asia, joilla varmistat, että upottaminen onnistuu oikein. Vaikka voitkin tehdä kaikki nämä toimenpiteet suoraan REST-ohjelmointirajapinnalla, mallisovellus ja tässä näytetyt esimerkiksi tehdään kuitenkin .NET SDK:lla.
+Jos haluat upottaa Power BI -sisältöä, sinun täytyy tehdä muutama asia, joilla varmistat, että upottaminen onnistuu oikein. Vaikka voitkin tehdä kaikki nämä toimenpiteet suoraan REST-ohjelmointirajapinnalla, mallisovellus ja tässä näytetyt esimerkit käyttävät .NET SDK:a.
 
 ### <a name="create-the-power-bi-client-with-your-access-token"></a>Power BI -asiakasohjelman luominen käyttöoikeustietueen avulla
 Käyttöoikeustietueen avulla voit luoda Power BI -asiakasohjelmaobjektin, jonka avulla voit käyttää Power BI -ohjelmointirajapintoja. Tämä tehdään sijoittamalla käyttöoikeustietue objektiin *Microsoft.Rest.TokenCredentials*.
@@ -142,7 +150,7 @@ using Microsoft.PowerBI.Api.V2;
 
 var tokenCredentials = new TokenCredentials(authenticationResult.AccessToken, "Bearer");
 
-// Create a Power BI Client object. It will be used to call Power BI APIs.
+// Create a Power BI Client object. This is used to call the Power BI APIs.
 using (var client = new PowerBIClient(new Uri(ApiUrl), tokenCredentials))
 {
     // Your code to embed items.
@@ -160,7 +168,7 @@ Malli tästä on saatavilla [App Owns Data -mallin](https://github.com/Microsoft
 using Microsoft.PowerBI.Api.V2;
 using Microsoft.PowerBI.Api.V2.Models;
 
-// You will need to provide the GroupID where the dashboard resides.
+// You need to provide the GroupID where the dashboard resides.
 ODataResponseListDashboard dashboards = client.Dashboards.GetDashboardsInGroup(GroupId);
 
 // Get the first report in the group.
@@ -175,7 +183,7 @@ using Microsoft.PowerBI.Api.V2.Models;
 
 // To retrieve the tile, you first need to retrieve the dashboard.
 
-// You will need to provide the GroupID where the dashboard resides.
+// You need to provide the GroupID where the dashboard resides.
 ODataResponseListDashboard dashboards = client.Dashboards.GetDashboardsInGroup(GroupId);
 
 // Get the first report in the group.
@@ -194,7 +202,7 @@ Tile tile = tiles.Value.FirstOrDefault();
 using Microsoft.PowerBI.Api.V2;
 using Microsoft.PowerBI.Api.V2.Models;
 
-// You will need to provide the GroupID where the dashboard resides.
+// You need to provide the GroupID where the dashboard resides.
 ODataResponseListReport reports = client.Reports.GetReportsInGroupAsync(GroupId);
 
 // Get the first report in the group.
@@ -398,7 +406,7 @@ Sovellusmalli tästä on saatavilla artikkelista [Organisaation mallin upotus](h
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
-* GitHubissa on saatavilla mallisovellus, jota voit hyödyntää. Edellä olevat esimerkit perustuvat tähän malliin. Saat lisätietoja artikkelista [Organisaation mallin upotus](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/App%20Owns%20Data).
+* GitHubissa on saatavilla mallisovellus, jota voit hyödyntää. Edellä olevat esimerkit perustuvat tähän malliin. Katso lisätietoja artikkelista [Organisaation mallin upotus](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/App%20Owns%20Data).
 * Saat lisätietoja JavaScript-ohjelmointirajapinnasta artikkelista [Power BI JavaScript -ohjelmointirajapinta](https://github.com/Microsoft/PowerBI-JavaScript).
 * Saat lisätietoja Power BI for Germany Cloudista ohjeartikkelista [Power BI for Germany Cloudin usein kysytyt kysymykset](https://docs.microsoft.com/power-bi/service-govde-faq)
 * [Power BI -työtilan kokoelman sisällön siirtäminen Power BI:hin](migrate-from-powerbi-embedded.md)

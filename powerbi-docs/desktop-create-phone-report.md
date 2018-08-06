@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/17/2018
 ms.author: maggies
 LocalizationGroup: Create reports
-ms.openlocfilehash: 6ac85bcaba34f705b0f21efc86ed1583e69c8c2c
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 6cd1616dab92eb8709c5e89966259be591e4ede3
+ms.sourcegitcommit: df7a58dae14ef311516c9b3098f87742786f0479
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34721060"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39280658"
 ---
 # <a name="create-reports-optimized-for-the-power-bi-phone-apps"></a>Power BI -puhelinsovelluksille optimoitujen raporttien luominen
 [Luodessasi raporttia Power BI Desktopissa](desktop-report-view.md) voit parantaa sen käyttökokemusta mobiilisovelluksissa luomalla raportista erityisesti puhelimiin soveltuvan version. Raportti mukautetaan puhelimia varten niin, että raportin visualisointeja järjestellään uudelleen ja niiden kokoa muutetaan parhaan mahdollisen käyttökokemuksen tuottamiseksi. Lisäksi voit luoda [ *reagoivia* visualisointeja](#optimize-a-visual-for-any-size) ja [reagoivia osittajia](#enhance-slicers-to-to-work-well-in-phone-reports), joiden koko muuttuu kätevästi puhelimella tarkastelemista ajatellen. Jos lisäät raporttiin suodattimia, suodattimet näkyvät automaattisesti myös puhelinraportissa. Raportin lukijat voivat nähdä ne ja käyttää niitä raportin suodattamiseen.
@@ -72,7 +72,7 @@ Voit valita visualisointikohtaisesti, otetaanko reagointi käyttöön. Lisätiet
   
    ![Visualisoinnin poistaminen](media/desktop-create-phone-report/desktop-create-phone-report-7.gif)
 
-## <a name="enhance-slicers-to-to-work-well-in-phone-reports"></a>Osittajien optimointi puhelinraporteissa käyttämistä varten
+## <a name="enhance-slicers-to-work-well-in-phone-reports"></a>Osittajien optimointi puhelinraporteissa käyttämistä varten
 Osittajien avulla voidaan suodattaa raportin tietoja raporttipohjalla. Luodessasi osittajia normaalissa raportin luontitilassa voit muokata joitakin osittaja-asetuksia niin, että osittajat toimivat paremmin myös puhelinraporteissa:
 
 * Valitse, saavatko raportin lukijat valita vain yhden kohteen vai useita.

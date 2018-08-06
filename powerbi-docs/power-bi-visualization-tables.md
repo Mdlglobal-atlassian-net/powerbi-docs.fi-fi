@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 05/27/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 7e992152656a208c765743292e06b4d0d3708730
-ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
+ms.openlocfilehash: 769e2adb30fb1969d16898db4bf954d2bcbad8c4
+ms.sourcegitcommit: df7a58dae14ef311516c9b3098f87742786f0479
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37600253"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39280405"
 ---
 # <a name="working-with-tables-in-power-bi-reports-and-dashboards"></a>Taulukoiden käyttäminen Power BI -raporteissa ja raporttinäkymissä
 Taulukko on ruudukko, joka sisältää tietoja järjestettynä loogiseen sarjaan rivejä ja sarakkeita. Se voi sisältää myös otsikkoja ja summarivin. Taulukot toimivat hyvin kvantitatiivisessa vertailussa, jossa tarkastellaan moni arvoja tietystä kategoriasta. Esimerkiksi tässä taulukossa näkyvät **luokan** viisi eri mittayksikköä.
@@ -56,7 +56,7 @@ Luomme yllä esitetyn taulukon, jossa esitetään myyntiarvot nimikeluokan mukai
      ![](media/power-bi-visualization-tables/pbi_pintile.png)
 
 ## <a name="format-the-table"></a>Taulukon muotoileminen
-Taulukkoa voi muotoilla erittäin monella tapaa, ja käsittelemme niistä tässä vain muutamia. Hyvä tapa oppia lisää muista muotoilutavoista on avata Muotoilu-ruutu (maalirullakuvake ![](media/power-bi-visualization-tables/power-bi-format.png)) ja tutkia.
+Taulukkoa voi muotoilla erittäin monella tapaa, käsittelemme niistä tässä vain muutamia. Hyvä tapa oppia lisää muista muotoilutavoista on avata Muotoilu-ruutu (maalirullakuvake ![](media/power-bi-visualization-tables/power-bi-format.png)) ja tutkia.
 
 * Kokeile taulukkoruudukon muotoilemista. Tässä olemme lisänneet sinisen pystyruudukon, lisänneet riveihin tilaa, paksuntaneet ääriviivaa ja kasvattaneet hieman tekstin kokoa.
 

@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/04/2018
+ms.date: 07/24/2018
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: 2caa22152580d3de8c6ede585c43dedf4e624f88
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: fad7b8453b6d5d29a1f6c5d9d9ed49b0a8b8a66f
+ms.sourcegitcommit: df7a58dae14ef311516c9b3098f87742786f0479
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34813729"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39280336"
 ---
 # <a name="data-view-in-power-bi-desktop"></a>Tietonäkymä Power BI Desktopissa
 **Tiedot-näkymän** avulla voit tarkastaa **Power BI Desktop** -mallin tiedot, tutustua niihin ja ymmärtämää niitä. Se poikkeaa taulukoiden, sarakkeiden ja tietojen tarkastelusta **kyselyeditorissa**. Tiedot-näkymässä tarkastelet tietojasi sen *jälkeen*, kun ne on ladattu tietomalliin.
@@ -46,4 +46,5 @@ Voit myös suodattaa ja lajitella tietoja **Tietonäkymässä**. Jokaisessa sara
 
 Voit suodattaa yksittäisiä arvoja tai käyttää sarakkeen tietoihin perustuvaa lisäsuodatusta. 
 
-
+> [!NOTE]
+> Kun Power BI -malli luodaan maa-asetukselle, joka eroaa senhetkisestä käyttöliittymästä ( jos malli on esimerkiksi luotu amerikanenglantiin ja tarkastelet sitä Espanjankielisessä käyttöliittymässä) hakuruutu ei näy käyttöliittymän tietonäkymässä muissa kuin tekstikentissä.

@@ -1,28 +1,20 @@
 ---
 title: Raporttipalvelimen tuoteavaimen löytäminen
 description: Lue, miten voit etsiä Power BI -raporttipalvelimen tuoteavaimen asentaaksesi palvelimesi tuotantoympäristöön.
-services: powerbi
-documentationcenter: ''
 author: markingmyname
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-report-server
+ms.topic: conceptual
 ms.date: 11/01/2017
 ms.author: maghan
-ms.openlocfilehash: ff2e515823cbaa726fbdf72d1cb398381ea69363
-ms.sourcegitcommit: 6e693f9caf98385a2c45890cd0fbf2403f0dbb8a
+ms.openlocfilehash: 2ea6f2e557f26358ab6a93d33c890e90c96885f4
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/30/2018
-ms.locfileid: "30973092"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34564646"
 ---
 # <a name="how-to-find-your-report-server-product-key"></a>Raporttipalvelimen tuoteavaimen löytäminen
 Lue, miten voit etsiä Power BI -raporttipalvelimen tuoteavaimen asentaaksesi palvelimesi tuotantoympäristöön.
@@ -42,8 +34,8 @@ Voit avata tuoteavaimen sisältävän valintaikkunan valitsemalla **Power BI -ra
 
 ![Power BI -raporttipalvelimen tuoteavain](media/find-product-key/pbirs-product-key-dialog.png)
 
-## <a name="purchased-software-assurance-agreeemnt"></a>Jos ostit Software Assurance -sopimuksen
-Jos sinulla on SQL Server Enterprise SA -sopimus, saat tuoteavaimen [voluumikäyttöoikeuskeskuksesta](https://www.microsoft.com/Licensing/servicecenter/). Katson uusin SQL-palvelimen uusin versio viimeisimmästä palvelupaketista. Jos sitä ei näy paketissa, katso viimeisimmän SQL-palvelin version RTM-versiota.
+## <a name="purchased-software-assurance-agreement"></a>Ostit Software Assurance -sopimuksen
+Jos sinulla on SQL Server Enterprise SA -sopimus, saat tuoteavaimen [volyymikäyttöoikeuskeskuksesta](https://www.microsoft.com/Licensing/servicecenter/). Katson uusin SQL-palvelimen uusin versio viimeisimmästä palvelupaketista. Jos sitä ei näy paketissa, katso viimeisimmän SQL-palvelin version RTM-versiota.
 
 > [!NOTE]
 > Sinun täytyy katsoa lataukset-kohdasta. Älä katso avaimet-osiota.
@@ -53,7 +45,7 @@ Jos sinulla on SQL Server Enterprise SA -sopimus, saat tuoteavaimen [voluumikäy
 ![](media/find-product-key/vlsc-download.png "Volyymikäyttöoikeuspalvelukeskus")
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
-[Pikaopas: Power BI -raporttipalvelimen asentaminen](quickstart-install-report-server.md)  
+[Power BI -raporttipalvelimen asentaminen](install-report-server.md)  
 [Asenna Power BI Desktop (optimoitu Power BI -raporttipalvelimelle)](install-powerbi-desktop.md)  
 [Raportin muodostimen asentaminen](https://docs.microsoft.com/sql/reporting-services/install-windows/install-report-builder)  
 [SQL Server Data Tools (SSDT) -työkalujen lataaminen](http://go.microsoft.com/fwlink/?LinkID=616714)

@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 04/24/2018
+ms.date: 07/27/2018
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: fde23a47bb0f4034e213a652d60241ff625921d3
-ms.sourcegitcommit: 001ea0ef95fdd4382602bfdae74c686de7dc3bd8
+ms.openlocfilehash: bec5bb108bc210f268db0392370e15d89c0352b7
+ms.sourcegitcommit: fbb7924603f8915d07b5e6fc8f4d0c7f70c1a1e1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38877327"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39330209"
 ---
 # <a name="common-query-tasks-in-power-bi-desktop"></a>Yleiset kyselytehtävät Power BI Desktopissa
 Power BI Desktopin **kyselyeditorissa** on muutamia usein käytettyjä tehtäviä. Tässä asiakirjassa kerrotaan näistä yleisistä tehtävistä ja annetaan linkkejä lisätietoihin. 
@@ -31,7 +31,7 @@ Yleisiä kyselytehtäviä ovat seuraavat:
 
 Suoritamme näitä tehtäviä muutamien tietoyhteyksien avulla. Voit ladata tiedot tai muodostaa yhteyden niihin, jos haluat suorittaa tässä ohjeartikkelissa kuvatut toimet itse lukiessasi artikkelia.
 
-Ensimmäinen tietoyhteys on Excel-työkirja. Toinen on verkkoresurssi, jota käytetään myös muissa Power BI Desktop -ohjesisällöissä ja jota voit käyttää seuraavan osoitteen avulla:
+Ensimmäinen tietoyhteys on Excel-työkirja, jonka voit ladata [tästä linkistä](http://download.microsoft.com/download/5/7/0/5701F78F-C3C2-450C-BCCE-AAB60C31051D/PBI_Edu_ELSi_Enrollment_v2.xlsx). Toinen on verkkoresurssi, jota käytetään myös muissa Power BI Desktop -ohjesisällöissä ja jota voit käyttää seuraavan osoitteen avulla:
 
 [*http://www.bankrate.com/finance/retirement/best-places-retire-how-state-ranks.aspx*](http://www.bankrate.com/finance/retirement/best-places-retire-how-state-ranks.aspx)
 

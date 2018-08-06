@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 57e1e8ce015db9b5f88f7b685c80092023540a6f
-ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
+ms.openlocfilehash: 48246d61789a0b1e160109c1f2fb0e81838b3965
+ms.sourcegitcommit: fbb7924603f8915d07b5e6fc8f4d0c7f70c1a1e1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37599131"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39280313"
 ---
 # <a name="connect-to-zuora-with-power-bi"></a>Yhteyden muodostaminen Zuoraan Power BI:llä
 Zuora for Power BI:n avulla voit visualisoida tärkeät tuotto-, laskutus- ja tilaustiedot. Käytä oletusraporttinäkymiä ja -raportteja käyttötrendien analysointiin, laskutuksen ja maksujen seurantaan sekä toistuvan tuoton valvontaan, tai mukauta niitä omien raporttinäkymä- ja raportointitarpeidesi mukaan.
@@ -57,7 +57,7 @@ Sisältöpaketti käyttää Zuora AQUA -ohjelmointirajapintaa seuraavien tauluko
 | Tili |InvoiceItemAdjustment |Hyvitys |
 | AccountingCode |Maksu |RevenueSchedule |
 | AccountingPeriod |PaymentMethod |RevenueScheduleItem |
-| BillTo |Product |Tilaus |
+| BillTo |Tuote |Tilaus |
 | DateDim |ProductRatePlan |TaxationItem |
 | Lasku |ProductRatePlanCharge |Käyttö |
 | InvoiceAdjustment |RatePlan | |
