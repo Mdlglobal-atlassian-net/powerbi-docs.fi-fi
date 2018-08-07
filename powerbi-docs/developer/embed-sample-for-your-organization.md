@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.component: powerbi-developer
 ms.custom: mvc
 manager: kfile
-ms.openlocfilehash: cfc450216202f332f518955d28cb71df6aa0b800
-ms.sourcegitcommit: f2b106b5eb338a64f903e8ce6793bccb07f9440a
+ms.openlocfilehash: 544429528ed51dd2928eb82632f512ff3f7d5afd
+ms.sourcegitcommit: fecea174721d0eb4e1927c1116d2604a822e4090
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "39105265"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39359727"
 ---
 # <a name="tutorial-embed-a-power-bi-report-dashboard-or-tile-into-an-application-for-your-organization"></a>Opetusohjelma: Power BI -raportin, raporttinäkymän tai ruudun upottaminen sovellukseen organisaatiolle
 Tämä opetusohjelma esittelee, miten raportti integroidaan sovellukseen käyttämällä **Power BI .NET SDK:ta** yhdessä **Power BI JavaScript -ohjelmointirajapinnan** kanssa, kun upotat **Power BI:n** organisaatiosi sovellukseen. **Power BI:n** avulla, voit upottaa sovellukseen raportteja, raporttinäkymiä tai ruutuja käyttämällä **user owns data** -hakemiston malleja. **User owns data** -mallien avulla voit laajentaa sovelluksesi Power BI-palveluun.
@@ -413,11 +413,28 @@ function updateEmbedReport() {
 Kun olet nyt kehittänyt sovelluksesi, on aika varata sovelluksen työtilalle kapasiteettia.
 
 ### <a name="create-a-dedicated-capacity"></a>Luo varattua kapasiteettia
-Luomalla varattua kapasiteettia voit hyödyntää sitä, että sovellustyötilan sisällölle varataan tietty resurssi. Jos työtilalle ei ole määritetty varattua kapasiteettia, pidetään sitä jaettuna kapasiteettina. Voit luoda varattua kapasiteettia käyttämällä [Power BI Premiumia ](../service-admin-premium-purchase.md).
+Luomalla varattua kapasiteettia voit hyödyntää sitä, että sovellustyötilan sisällölle varataan tietty resurssi. Voit luoda varattua kapasiteettia käyttämällä [Power BI Premiumia ](../service-premium.md).
+
+Seuraavassa taulukossa esitetään Power BI Premiumin SKU:t, jotka ovat käytettävissä [Office 365:ssä](../service-admin-premium-purchase.md).
+
+| Kapasiteetin solmu | V-ytimiä yhteensä<br/>*(Tausta ja edusta)* | Taustan v-ytimet | Edustan v-ytimet | DirectQueryn/live-yhteyden rajoitukset | Sivun hahmonnuksia enintään huipputuntina |
+| --- | --- | --- | --- | --- | --- |
+| EM1 |1 näennäisydin |0,5 v-ydintä, 10 Gt RAM |0,5 v-ydintä |3,75 sekunnissa |150–300 |
+| EM2 |2 näennäisydintä |1 v-ydin, 10 Gt RAM |1 näennäisydin |7,5 sekunnissa |301–600 |
+| EM3 |4 näennäisydintä |2 v-ydintä, 10 Gt RAM |2 näennäisydintä |15 sekunnissa |601–1 200 |
+| P1 |8 näennäisydintä |4 v-ydintä, 25 Gt RAM |4 näennäisydintä |30 sekunnissa |1 201–2 400 |
+| P2 |16 näennäisydintä |8 v-ydintä, 50 Gt RAM |8 näennäisydintä |60 sekunnissa |2 401–4 800 |
+| P3 |32 näennäisydintä |16 v-ydintä, 100 Gt RAM |16 näennäisydintä |120 sekunnissa |4 801–9 600 |
+| P4 |64 v-ydintä |32 v-ydintä, 200 Gt RAM |32 näennäisydintä |240 sekunnissa |9601-19200
+| P5 |128 v-ydintä |64 v-ydintä, 400 Gt RAM |64 v-ydintä |480 sekunnissa |19201-38400
+
+***_EM-varastointiyksiköillä_** **voit** käyttää sisältöä ilmaisella Power BI -käyttöoikeudella, kun yrität upottaa **_MS Office -sovelluksilla_**, mutta **et voi käyttää**  sisältöä ilmaisella Power BI -käyttöoikeudella, kun käytössäsi on **_Powerbi.com_** tai **_Power BI -mobiilisovellus_**.*
+
+***_P-varastointiyksiköillä_** **voit** käyttää sisältöä ilmaisella Power BI -käyttöoikeudella, kun yrität upottaa **_MS Office -sovelluksilla_** tai kun käytössäsi on **_Powerbi.com_**, tai **_Power BI -mobiilisovellus_**.*
 
 ### <a name="assign-an-app-workspace-to-a-dedicated-capacity"></a>Määritä sovellustyötila varattuun kapasiteettiin
 
-Kun varattu kapasiteetti on luotu, voit määrittää sovellustyötilan kyseiselle varatulle kapasiteetille. Seuraa näitä ohjeita.
+Kun olet luonut varatun kapasiteetin, voit määrittää sovellustyötilan kyseiselle varatulle kapasiteetille. Seuraa näitä ohjeita.
 
 1. Laajenna **Power BI -palvelussa** työtiloja ja valitse ellipsikuvake työtilalle, jotka käytät sisällön upottamiseen. Valitse **Muokkaa työtiloja**.
 
@@ -431,13 +448,17 @@ Kun varattu kapasiteetti on luotu, voit määrittää sovellustyötilan kyseisel
 
     ![sovellustyötila sidottuna kapasiteettiin](media/embed-sample-for-your-organization/embed-sample-for-your-organization-037.png)
 
+## <a name="admin-settings"></a>Järjestelmänvalvojan asetukset
+
+Yleiset järjestelmänvalvojat eli Power BI -palvelun järjestelmänvalvojat voivat ottaa käyttöön REST-ohjelmointirajapintojen käytön vuokraajassa ja poistaa sen käytöstä. Power BI ‑järjestelmänvalvojat voivat määrittää asetuksen koskemaan koko organisaatiota tai yksittäisiä käyttöoikeusryhmiä. Oletusarvoisesti se on käytössä koko organisaatiolle. Asetus määritetään [Power BI -hallintaportaalista](../service-admin-portal.md).
+
 ## <a name="next-steps"></a>Seuraavat vaiheet
-Tässä opetusohjelmassa olet oppinut, miten voit upottaa Power BI-sisältöä sovellukseen **Power BI-organisaatiotiliä** käyttämällä. Voit nyt yrittää upottaa Power BI -sisältöä sovellukseen sovellusten avulla.  Voit myös yrittää upottaa Power BI -sisältöä kolmansien osapuolten asiakkaille.
+Tässä opetusohjelmassa olet oppinut, miten voit upottaa Power BI-sisältöä sovellukseen **Power BI-organisaatiotiliä** käyttämällä. Voit nyt yrittää upottaa Power BI -sisältöä sovellukseen sovellusten avulla.  Voit myös yrittää upottaa Power BI -sisältöä asiakkaillesi.
 
 > [!div class="nextstepaction"]
 > [Upottaminen sovelluksista](embed-from-apps.md)
 
 > [!div class="nextstepaction"]
->[Upottaminen kolmannen osapuolten asiakkaille](embed-sample-for-customers.md)
+>[Upottaminen asiakkaillesi](embed-sample-for-customers.md)
 
 Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)
