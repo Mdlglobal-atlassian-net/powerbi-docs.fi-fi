@@ -15,10 +15,10 @@ Raportin luominen aloitetaan Power BI Desktopin **Raportti**-näkymässä.
 
 **Raportti**-näkymässä on viisi pääaluetta:
 
-1. Valintanauha sisältää raportteihin ja visualisointeihin liittyvä yleisimmät tehtävät.
+1. Valintanauha sisältää raportteihin ja visualisointeihin liittyvät yleisimmät tehtävät.
 2. **Raportti**-näkymä eli kangas on paikka, jossa visualisointeja luodaan ja järjestellään.
 3. Alaosassa olevalla **Sivut**-välilehtialueella voit valita tai lisätä raporttisivun.
-4. **Visualisoinnit**-ruudussa voi esimerkiksi muuttaa visualisointeja, mukauttaa värejä tai akseleita, käyttää suodattimia ja siirtää kenttiä.
+4. **Visualisoinnit**-ruudussa voit esimerkiksi muuttaa visualisointeja, mukauttaa värejä tai akseleita, käyttää suodattimia ja siirtää kenttiä.
 5. **Kentät**-ruudussa olevia kyselyelementtejä ja suodattimia voi vetää **Raportti**-näkymään tai **Visualisoinnit**-ruudun **Suodattimet**-alueelle.
 
 ![](media/0-2-get-started-power-bi-desktop/c0a2_3.png)

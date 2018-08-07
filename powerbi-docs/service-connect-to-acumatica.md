@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 9366eff71e09b1f6c71c1f2519feb3d2392e3c58
-ms.sourcegitcommit: 695c65629d6d1faba61db2e1570324f65f235dde
+ms.openlocfilehash: 452226f8d5b8e0ca05fc4d9e81355c7a4c10e923
+ms.sourcegitcommit: d936a23f895ee6ef1420753342f5e6c055ea5e07
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37092640"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39582634"
 ---
 # <a name="connect-to-acumatica-with-power-bi"></a>Yhteyden muodostaminen Acumaticaan Power BI:n avulla
 Power BI Acumatica -sisältöpaketin avulla saat nopeasti merkityksellisiä tietoja mahdollisuustiedoistasi. Power BI noutaa tiedot, esimerkiksi mahdollisuudet, tilit ja asiakkaat, ja laatii sitten oletuskoontinäytön ja siihen liittyvät raportit kyseisten tietojen perusteella.
@@ -37,7 +37,7 @@ Muodosta yhteys [Acumatica-sisältöpakettiin](https://app.powerbi.com/getdata/s
    ![](media/service-connect-to-acumatica/acumatica.png)
 4. Anna Acumatica OData -päätepiste. OData-päätepisteen avulla ulkoinen järjestelmä voi pyytää tietoja Acumaticasta. Acumatica OData -päätepiste on muodoltaan seuraavanlainen ja sen pitäisi käyttää HTTPS-protokollaa:
    
-     https://[sitedomain]/odata/[companyname]
+     `https://[sitedomain]/odata/[companyname]`
    
    Yrityksen nimi tarvitaan vain, jos kyseessä on usean yrityksen käyttöönotto. Alla on lisätietoja siitä, miten tämän parametrin löytää Acumatica-tililtä.
    

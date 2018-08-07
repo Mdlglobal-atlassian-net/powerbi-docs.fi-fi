@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/18/2018
 ms.author: v-mamcge
 LocalizationGroup: Reports
-ms.openlocfilehash: 58ae70553264b8055603da66a4cfd71b5c74a3e9
-ms.sourcegitcommit: df7a58dae14ef311516c9b3098f87742786f0479
+ms.openlocfilehash: b3bb1e6d7d7ce5b3fdc050f5df10af9f61acac92
+ms.sourcegitcommit: d936a23f895ee6ef1420753342f5e6c055ea5e07
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "37598865"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39582567"
 ---
 # <a name="power-bi-performance-best-practices"></a>Power BI:n suorituskykyä parantavat parhaat käytännöt 
 Tässä artikkelissa annetaan ohjeita nopeiden ja luotettavien raporttien luomiseen Power BI:ssä.  
@@ -24,8 +24,8 @@ Tässä artikkelissa annetaan ohjeita nopeiden ja luotettavien raporttien luomis
 
 Mitä enemmän tietoja visualisoinnissa on oltava näkyvissä, sitä hitaampaa on kyseisen visualisoinnin lataaminen. Vaikka tämä periaate tuntuu itsestäänselvältä, se voi kuitenkin helposti unohtua. Otetaan esimerkiksi tilanne, jossa sinulla on suuri tietojoukko. Laadit sen päälle raportin, jossa on taulukko taulukosta. Loppukäyttäjät siirtyvät haluamilleen riveillä käyttämällä sivulla olevia osittajia – yleensä he ovat kiinnostuneita vain muutamista kymmenistä riveistä.
 
-Yleinen virhe on, että taulukon oletusnäkymää ei ole suodatettu – eli siinä näkyvät kaikki yli 100 000 riviä. Näiden rivien tiedot on ladattava muistiin ja purettava jokaisen päivityksen yhteydessä. Tämä aiheuttaa huomattavaa muistikuormitusta. Ratkaisu tilanteeseen on vähentää taulukon näyttämää tietoyksiköiden enimmäismäärää käyttämällä ”Ylimmät N” -suodatinta. Tietoyksiköiden enimmäismäärä voi olla paljon suurempi kuin mitä käyttäjät tarvitsisivat, esimerkiksi 10 000. Tämän seurauksena loppukäyttäjän kokemus pysyy samana, mutta raportin muistikäyttö vähenee moninkertaisesti ja suorituskyky parantuu vastaavasti. 
- 
+Yleinen virhe on, että taulukon oletusnäkymää ei ole suodatettu – eli siinä näkyvät kaikki yli 100 000 riviä. Näiden rivien tiedot on ladattava muistiin ja purettava jokaisen päivityksen yhteydessä. Tämä aiheuttaa huomattavaa muistikuormitusta. Ratkaisu tilanteeseen on vähentää taulukon näyttämää tietoyksiköiden enimmäismäärää käyttämällä ”Ylimmät N” -suodatinta. Tietoyksiköiden enimmäismäärä voi olla paljon suurempi kuin mitä käyttäjät tarvitsisivat, esimerkiksi 10 000. Tämän seurauksena loppukäyttäjän kokemus pysyy samana, mutta raportin muistikäyttö vähenee moninkertaisesti ja suorituskyky parantuu vastaavasti.
+
 Samaa edellä esitettyä menetelmää on erittäin suositeltavaa käyttää kaikkiin raporttien visualisointeihin. Kysy itseltäsi, ovatko kaikki tiedot tässä visualisoinnissa tarpeellisia? Onko olemassa keinoja, joilla visualisoinnissa näytettyjen tietojen määrää voisi suodattaa niin, että vaikutus loppukäyttäjän kokemukseen olisi mahdollisimman pieni? Huomaa, että erityisesti taulukot voivat olla erittäin kalliita. 
  
 ## <a name="limit-visuals-on-report-pages"></a>Vähennä raporttisivujen visualisointeja 
