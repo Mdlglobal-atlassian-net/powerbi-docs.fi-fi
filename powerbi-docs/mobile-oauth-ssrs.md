@@ -9,19 +9,19 @@ ms.component: powerbi-mobile
 ms.topic: conceptual
 ms.date: 06/07/2018
 ms.author: maghan
-ms.openlocfilehash: ba8a0c6868e84cf9d675fff8f69a34b4befc9b61
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 3777d082d8e0d166abadd2ab89035d6895421f24
+ms.sourcegitcommit: fbb7924603f8915d07b5e6fc8f4d0c7f70c1a1e1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34852206"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39415342"
 ---
 # <a name="using-oauth-to-connect-to-power-bi-report-server-and-ssrs"></a>Yhdistäminen Power BI -raporttipalvelimeen ja SSRS-palvelimeen OAuthia käyttämällä
 Opi määrittämään ympäristö tukemaan OAuth-todennusta Power BI -mobiilisovelluksella ja muodostamaan yhteys Power BI -raporttipalvelimeen sekä SQL Server Reporting Services 2016:een tai uudempaan versioon.
 
 ![](media/mobile-oauth-ssrs/powerbi-mobile-oauth.png)
 
-Voit käyttää OAuthia muodostaessasi yhteyden Power BI-raporttipalvelimeen ja Reporting Servicesiin, tarkastellaksesi mobiiliraporttejasi tai suorituskykyilmaisimia. Windows Server 2016 sisältää joitain Web Application Proxy (WAP) -roolin parannuksia, jotka sallivat tällaisen todennuksen. Huomaa, että tämä määritys ei tue Power BI -raporttien tarkastelemista Power BI-mobiilisovelluksissa. Voit tarkastella niitä kuitenkin mobiililaitteessa selaimen avulla. Tarkastellaksesi Power BI-raportteja mobiilisovelluksessa, sinun on käytettävä Windows-todennusta.
+Voit käyttää OAuthia muodostaessasi yhteyden Power BI-raporttipalvelimeen ja Reporting Servicesiin, tarkastellaksesi mobiiliraporttejasi tai suorituskykyilmaisimia. Windows Server 2016 sisältää joitain Web Application Proxy (WAP) -roolin parannuksia, jotka sallivat tällaisen todennuksen. Huomioi, että Power BI -raporttipalvelimella isännöityjen Power BI -raporttien tarkastelemista WAP-todentamisen kautta, ei tällä hetkellä virallisesti tueta.
 
 ## <a name="requirements"></a>Vaatimukset
 Web Application Proxy (WAP) -palvelimia ja Active Directory -liittoutumispalvelujen (ADFS) palvelimia varten vaaditaan Windows Server 2016. Windows 2016:n toiminnallisen tason toimialuetta ei tarvita.

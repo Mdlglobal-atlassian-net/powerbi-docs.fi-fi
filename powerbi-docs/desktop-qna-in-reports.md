@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 07/27/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 8fd04b6c7fe83e7047d2eaecf4fb4b0e564f0e9f
-ms.sourcegitcommit: f01a88e583889bd77b712f11da4a379c88a22b76
+ms.openlocfilehash: a14ed61d8d7e72090a034319052600cb429e8c16
+ms.sourcegitcommit: 146b505b42f0d95d3ee73762441a43b6f3b3a891
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39329634"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39475725"
 ---
 # <a name="use-qa-in-power-bi-desktop-for-natural-language-queries"></a>Tee kyselyitä luonnollisella kielellä käyttämällä Power BI Desktopin Q&A-toimintoa
 Yleisien lauseiden ja luonnollisen kielen käyttäminen tiedoista esitettävissä kysymyksissä on tehokasta. Vielä tehokkaampaa on, kun tiedot vastaavat, minkä **Power BI Desktopin** Q&A-toiminto mahdollistaa.
@@ -24,6 +24,11 @@ Jotta Q&A pystyy tulkitsemaan onnistuneesti laajaa kysymysvalikoimaa, johon se p
 
 > [!NOTE]
 > Q&A on käytettävissä vain käsiteltäessä mallia, joka sisältää **tuotuja** tietoja. Reaaliaikaisia yhteyksiä SSAS- ja DirectQuery-malleihin ei tueta.
+>
+>
+
+> [!NOTE]
+> Q&A: käyttö edellyttää seuraavan C runtime -päivityksen, jos käytät Windows 10:ä edeltävää Windows-versiota. Voit yrittää asentaa tärkeät päivitykset Windows Updatesta tai asentaa tarvittavan komponentin manuaalisesti Microsoftilta (KB2999226). https://support.microsoft.com/en-us/help/2999226/update-for-universal-c-runtime-in-windows
 >
 >
 

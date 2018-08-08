@@ -9,12 +9,12 @@ ms.component: powerbi-mobile
 ms.topic: conceptual
 ms.date: 06/28/2018
 ms.author: maggies
-ms.openlocfilehash: fb05b6fd2378c8fe2b6dec35250df31d227b7760
-ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
+ms.openlocfilehash: 3ea99d26418a583a6ca588879aeafcd114aeaa6e
+ms.sourcegitcommit: 16098be04df05bc8e3d44a99b4d143b622759c59
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37135440"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39616001"
 ---
 # <a name="create-a-link-to-a-specific-location-in-the-power-bi-mobile-apps"></a>Linkin luominen tiettyyn sijaintiin Power BI ‑mobiilisovelluksissa
 Voit luoda URI-tunnuksen (uniform resource identifier) ja tehdä sen avulla linkin tiettyyn sijaintiin (*tarkka linkki*) Power BI ‑mobiilisovelluksissa kaikissa mobiiliympäristöissä: iOS:ssä, Android-laitteilla ja Windows 10:ssä.
@@ -36,7 +36,7 @@ Tällainen URI-tunnus avaa Power BI ‑mobiilisovelluksen tietyn koontinäytön:
 
 Löydät koontinäytön 36-merkkisen objektitunnuksen siirtymällä Power BI -palvelussa (https://powerbi.com) haluamaasi koontinäyttöön. Katso esimerkiksi tämän URL-osoitteen korostettua osaa:
 
-https://powerbi.com/groups/me/dashboards/**61b7e871-cb98-48ed-bddc-6572c921e270**
+`https://powerbi.com/groups/me/dashboards/**61b7e871-cb98-48ed-bddc-6572c921e270**`
 
 Jos koontinäyttö on osa jotakin muuta ryhmää kuin omaa työtilaa, lisää joko ennen koontinäytön tunnusta tai sen perään `&GroupObjectId=<36-character-group-id>`. Esimerkki: 
 
@@ -51,7 +51,7 @@ Tällainen URI-tunnus avaa Power BI ‑mobiilisovelluksessa tietyn ruudun:
 
 Löydät koontinäytön ja ruudun 36-merkkiset objektitunnukset siirtymällä Power BI -palvelussa (https://powerbi.com) haluamaasi koontinäyttöön ja avaamalla ruudun kohdistustilassa. Katso esimerkiksi tämän URL-osoitteen korostetut osat:
 
-https://powerbi.com/groups/me/dashboards/**3784f99f-b460-4d5e-b86c-b6d8f7ec54b7**/tiles/**565f9740-5131-4648-87f2-f79c4cf9c5f5**/infocus
+`https://powerbi.com/groups/me/dashboards/**3784f99f-b460-4d5e-b86c-b6d8f7ec54b7**/tiles/**565f9740-5131-4648-87f2-f79c4cf9c5f5**/infocus`
 
 Tämän ruudun URI olisi:
 

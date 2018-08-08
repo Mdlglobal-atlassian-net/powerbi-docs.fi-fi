@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 06/02/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: b1bfe0e35015cd32024b381a1859330cd8f1862a
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 4c4fbb5ea019ca439ecf063c91a69348ef33bbc2
+ms.sourcegitcommit: 2356dc8e5488438a43ba7f0ba9a55a2372669b47
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34721106"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39623995"
 ---
 # <a name="connect-to-datasets-in-the-power-bi-service-from-power-bi-desktop"></a>Tietojoukkoihin yhdistäminen Power BI -palvelussa Power BI Desktopista
 Voit muodostaa reaaliaikaisen yhteyden jaettuun tietojoukkoon Power BI -palvelussa ja luoda useita erilaisia raportteja samasta tietojoukkoryhmästä. Tämä tarkoittaa sitä, että voit luoda täydellisen tietomallin Power BI Desktopissa ja julkaista sen Power BI -palvelussa. Voit näin luoda, tai muut voivat luoda, useita erilaisia raportteja (erillisissä .pbix-tiedostoissa) samasta, yleisestä tietomallista. Tätä ominaisuutta kutsutaan **Power BI -palvelun reaaliaikaiseksi yhteydeksi**.
@@ -37,7 +37,7 @@ Kaikki pitävät Annan raportista ja tietojoukosta, ja tässä ongelma juuri pii
 ### <a name="connect-to-a-power-bi-service-dataset-using-a-live-connection"></a>Yhteyden muodostaminen Power BI -palvelun tietojoukkoon reaaliaikaisen yhteyden avulla
 Kun Anna on luonut raportin (ja sen perustana olevan tietojoukon), hän julkaisee sen **Power BI -palvelussa**. Raportti näkyy nyt hänen tiiminsä työtilassa Power BI -palvelussa. Kaikki voivat tarkastella ja käyttää sitä Annan työtilassa.
 
-Saat lisätietoja työtiloista [sovellustyötilat](service-create-distribute-apps.md#app-workspaces)-kohdasta.
+Saat lisätietoja työtiloista [sovellustyötilat](service-create-workspaces.md)-kohdasta.
 
 Annan työtilan muut jäsenet voivat nyt muodostaa reaaliaikaisen yhteyden Annan jaettuun tietomalliin (**Power BI -palvelun reaaliaikaisen yhteyden** avulla) ja luoda *Annan alkuperäisestä tietojoukosta* omia yksilöllisiä raporttejaan.
 

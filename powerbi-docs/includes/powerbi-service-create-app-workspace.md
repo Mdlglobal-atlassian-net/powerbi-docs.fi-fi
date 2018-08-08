@@ -1,4 +1,4 @@
-1. Aloita luomalla työtila. Valitse **Työtilat** > **Luo sovelluksen työtila**.
+1. Aloita luomalla työtila. Valitse **Työtilat** > **Luo sovelluksen työtila**. 
    
      ![Luo sovellustyötila](media/powerbi-service-create-app-workspace/power-bi-create-app-workspace.png)
    

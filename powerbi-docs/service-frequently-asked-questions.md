@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-sktopms.date: 06/28/2018
+sktopms.date: 08/06/2018
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: 08772389df36e72e4f8c83239ba396773070f61a
-ms.sourcegitcommit: ba447d7cc94418d7d3cf6fdcb686ec1a859258a8
+ms.openlocfilehash: 5f117bdeb4e37986884c6a1021db1f361bdcddd3
+ms.sourcegitcommit: d936a23f895ee6ef1420753342f5e6c055ea5e07
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37145383"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39582663"
 ---
 # <a name="frequently-asked-questions-about-power-bi"></a>Usein kysyttyjä kysymyksiä Power BI:stä
 * Jos sinulla on muita kysymyksiä, [voit esittää niitä Power BI -yhteisössä](http://community.powerbi.com/).
@@ -47,8 +47,8 @@ Selain ja työsähköpostiosoite riittävät. Voit rekisteröityä .gov- tai .mi
 ## <a name="why-do-i-have-to-sign-up-with-my-work-email"></a>Miksi rekisteröitymiseen on käytettävä työsähköpostia?
 Power BI ei tue sähköpostin kuluttajapalvelujen tai tietoliikenteen palveluntarjoajien sähköpostiosoitteita. Lue lisää [Power BI:n omatoimisen rekisteröitymisen prosessista](service-self-service-signup-for-power-bi.md).
 
-## <a name="is-government-academic-and-non-profit-pricing-available-for-power-bi"></a>Käytetäänkö Power BI:n hinnoittelussa erillisiä julkishallinto-, oppilaitos- tai yhdistyshintoja?
-Kyllä, voittoa tavoittelemattomille yhdistyksille on erillinen hinnoittelu suoraan Microsoftilta ostettaessa. [Microsoft Product Donation](https://www.microsoft.com/about/philanthropies/product-donations/products/powerbi/) -sivustolla on lisätietoja ja rekisteröitymismahdollisuus. Julkishallinto- ja oppilaitoshinnoittelu on saatavilla MOSP/Direct-, EA- ja Open-käyttöoikeusohjelmien kautta. Julkishallintohinnoittelu on käytettävissä myös syndikoinnissa. 
+## <a name="is-government-academic-and-nonprofit-pricing-available-for-power-bi"></a>Käytetäänkö Power BI:n hinnoittelussa erillisiä julkishallinto-, oppilaitos- tai yhdistyshintoja?
+Kyllä, voittoa tavoittelemattomille yhdistyksille on erillinen hinnoittelu suoraan Microsoftilta ostettaessa. [Microsoft Nonprofits](https://www.microsoft.com/en-us/nonprofits/power-bi) -sivustolla on lisätietoja ja rekisteröitymismahdollisuus. Julkishallinto- ja oppilaitoshinnoittelu on saatavilla MOSP/Direct-, EA- ja Open-käyttöoikeusohjelmien kautta. Julkishallintohinnoittelu on käytettävissä myös syndikoinnissa. 
 
 ## <a name="is-power-bi-available-on-premises"></a>Onko Power BI käytettävissä paikallisesti?
 Power BI -palvelu [https://powerbi.com](https://powerbi.com) ei ole käytettävissä yksityisenä, sisäisenä pilvipalveluna. Tietojen paikalliseen tarkastelemiseen ja käsittelemiseen on kuitenkin kolme muuta vaihtoehtoa. 

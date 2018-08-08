@@ -2,19 +2,19 @@
 title: Rivien lisääminen taulukkoon
 description: Tietojen työntäminen vaihe vaiheelta – Rivien lisääminen Power BI -taulukkoon
 author: markingmyname
+ms.author: maghan
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: conceptual
-ms.date: 08/10/2017
-ms.author: maghan
-ms.openlocfilehash: b6fdd950b77dedf9f5180f7cbc90d40c786051c7
-ms.sourcegitcommit: 8ee0ebd4d47a41108387d13a3bc3e7e2770cbeb8
+ms.date: 08/01/2018
+ms.openlocfilehash: 7608d9098177805849ec61f0427ee5bc662d58c9
+ms.sourcegitcommit: 146b505b42f0d95d3ee73762441a43b6f3b3a891
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34812533"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39475656"
 ---
 # <a name="step-5-add-rows-to-a-power-bi-table"></a>Vaihe 5: Rivien lisääminen Power BI -taulukkoon
 Tämä artikkeli on osa vaiheittaisia ohjeita, joilla [tiedot työnnetään tietojoukkoon](walkthrough-push-data.md).
@@ -307,9 +307,10 @@ Alla on [kattava koodiluettelo](#code).
         }
     }
 
+Vaikka tarkensimme, että **_//Saamme ensimmäisen tunnuksen_** yllä olevasta koodista, oikea tapa on etsiä tietojoukko nimen mukaan.
+
 ## <a name="next-steps"></a>Seuraavat vaiheet
 [Tietojen työntäminen Power BI -raporttinäkymään](walkthrough-push-data.md)  
 [Power BI REST -ohjelmointirajapinnan yleiskatsaus](overview-of-power-bi-rest-api.md)  
 [Power BI:n REST-ohjelmointirajapinnan viite](https://docs.microsoft.com/rest/api/power-bi/)  
 Onko sinulla muuta kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
-
