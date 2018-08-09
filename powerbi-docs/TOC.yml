@@ -112,8 +112,6 @@
                   href: service-install-use-apps.md
                 - name: Organisaation sisältöpaketin etsiminen ja siihen yhdistäminen
                   href: service-organizational-content-pack-find-and-open.md
-                - name: Raporttinäkymien ja raporttien jakaminen
-                  href: service-share-dashboards.md
                 - name: 'Power BI Q&A:n käytön aloittaminen'
                   href: power-bi-visualization-introduction-to-q-and-a.md
             - name: Palveluihin yhdistäminen
@@ -306,9 +304,15 @@
                   href: power-bi-q-and-a-linguistic-schema.md
             - name: Töiden jakaminen
               items:
-                - name: Miten voin jakaa koontinäyttöjä ja raportteja sekä työstää niitä yhdessä muiden kanssa?
+                - name: Miten tehdään yhteistyötä ja jaetaan?
                   href: service-how-to-collaborate-distribute-dashboards-reports.md
-                - name: Koontinäyttöjä ja raportteja hyödyntävien sovellusten luominen ja jakeleminen
+                - name: Raporttinäkymien ja raporttien jakaminen
+                  href: service-share-dashboards.md
+                - name: Sovellustyötilojen luominen
+                  href: service-create-workspaces.md
+                - name: Uusien työtilojen luominen (esikatselu)
+                  href: service-create-the-new-workspaces.md
+                - name: Raporttinäkymiä ja raportteja sisältävien sovellusten julkaiseminen
                   href: service-create-distribute-apps.md
                 - name: Suodatetun raportin jakaminen
                   href: service-share-reports.md
