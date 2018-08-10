@@ -682,6 +682,8 @@
           items:
             - name: Raporttien visuaaliset elementit
               href: desktop-visual-elements-for-reports.md
+            - name: PDF-muotoon vieminen ja raporttien tulostaminen
+              href: desktop-export-to-pdf.md
             - name: Q&A Power BI Desktopissa
               href: desktop-qna-in-reports.md
             - name: Analytiikkaruutu Power BI Desktopissa
@@ -1242,6 +1244,8 @@
           href: service-gateway-onprem-indepth.md
         - name: Paikallinen tietoyhdyskäytävä (henkilökohtainen tila)
           href: service-gateway-personal-mode.md
+        - name: Mukautetut liittimet
+          href: service-gateway-custom-connectors.md
         - name: Paikallisen tietoyhdyskäytävän vianmääritys
           href: service-gateway-onprem-tshoot.md
 - name: Hallinta
