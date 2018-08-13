@@ -126,7 +126,7 @@ Kysely ladataan Power BI Desktopin **Raporttinäkymään**, jossa se näkyy **Ke
    ![Kentät-ruutu](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage11.png)
 >[!TIP]
 >Pääset aina takaisin **Power Query -editoriin**, jossa voit muokata ja parannella kyselyäsi:
->- valitsemalla **Lisäasetuksista** kolme pistettä (**...** ) **Euroopan-mestaruus voittajat** -kohdan vierestä **Kentät**-ruudusta ja valitsemalla avautuvasta valikosta **Muokkaa kyselyä** tai
+>- valitsemalla **Lisäasetuksista** kolme pistettä (**...**) **Euroopan-mestaruus voittajat**-kohdan vierestä**Kentät**-ruudusta ja valitsemalla avautuvasta valikosta **Muokkaa kyselyä** tai
 >- valitsemalla **Muokkaa kyselyitä** > **Muokkaa kyselyitä****Ulkoiset tiedot** - ryhmästä raporttinäkymän **Koti** -valintanauhasta. 
 
 ## <a name="create-a-visualization"></a>Visualisoinnin luominen
@@ -180,7 +180,7 @@ Jos haluat muuttaa kartan ympyräkaavioksi, valitse kartta ja valitse sitten **Y
 
 >[!TIP]
 >- Voit käyttää **Tietojen värit** -muotoiluasetuksia ja tehdä ”Saksasta” ja ”Länsi-Saksasta” saman väriset. 
->- Ryhmitelläksesi eniten voittaneet maat yhteen ympyräkaaviossa, valitse kolme pistettä (**...** ) visualisoinnin oikeassa yläkulmassa ja valitse sitten avautuvasta luettelosta **Lajittele vuosimäärän perusteella**. 
+>- Ryhmitelläksesi eniten voittaneet maat yhteen ympyräkaaviossa, valitse kolme pistettä (**...**) visualisoinnin oikeassa yläkulmassa ja valitse sitten avautuvasta luettelosta **Lajittele vuosimäärän perusteella**. 
 
 Power BI Desktop tarjoaa saumattoman kokemuksen alusta loppuun. Sen avulla voit hakea tietoja laajasta tietolähteiden joukosta ja muotoilla ne analyysitarpeidesi mukaan ja visualisoida tiedot monipuolisilla ja vuorovaikutteisilla tavoilla. Kun raportti on valmis, voit [ladata sen Power BI:hin](desktop-upload-desktop-files.md) ja luoda siihen perustuvia koontinäyttöjä, joita voit jakaa muiden Power BI -käyttäjien kanssa.
 
