@@ -9,15 +9,15 @@ ms.service: powerbi
 ms.component: powerbi-developer
 ms.custom: mvc
 manager: kfile
-ms.openlocfilehash: 781e34eadfccb89954c0a8548589e1bf89830079
-ms.sourcegitcommit: fecea174721d0eb4e1927c1116d2604a822e4090
+ms.openlocfilehash: 1185b6195f0d802cec71143c1f27ce5cead584c6
+ms.sourcegitcommit: 16098be04df05bc8e3d44a99b4d143b622759c59
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39359750"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39616047"
 ---
 # <a name="tutorial-embed-a-power-bi-report-dashboard-or-tile-into-an-application-for-your-customers"></a>Opetusohjelma: Power BI -raportin, raporttinäkymän tai ruudun upottaminen sovellukseen asiakkaita varten
-**Azuren Power BI Embeddedin** avulla, voit upottaa sovellukseen raportteja, raporttinäkymiä tai ruutuja käyttämällä **app owns data** -hakemiston malleja. **App owns data**-hakemiston malleja käytetään kun kyseessä on sovellus, joka käyttää Power BI:tä upotettuna analyysiympäristönään. Kyseessä on yleensä **ISV-kehittäjä** -skenaario. **ISV-kehittäjänä** voit luoda Power BI -sisältöä, joka näyttää raportit, koontinäytöt tai ruudut sovelluksessa, joka on täysin integroitu ja vuorovaikutteinen, edellyttämättä Power BI -käyttöoikeutta sovelluksen käyttäjiltä, tai jopa tiedostamatta, että sovellus käyttää Power BI:tä. Tämä opetusohjelma esittelee, miten raportti integroidaan sovellukseen käyttämällä **Power BI** .NET SDK:ta **Power BI** JavaScript -ohjelmointirajapinnan kanssa, kun käytössä on **Azuren Power BI Embedded** **app owns data**-malleja käyttävä asiakas.
+**Azuren Power BI Embeddedin** avulla, voit upottaa sovellukseen raportteja, raporttinäkymiä tai ruutuja käyttämällä **app owns data** -hakemiston malleja. **App owns data**-hakemiston malleja käytetään kun kyseessä on sovellus, joka käyttää Power BI:tä upotettuna analyysiympäristönään. **App owns data** -hakemiston käyttäminen on yleensä **ISV-kehittäjä** -skenaario. **ISV-kehittäjänä** voit luoda **Power BI** -sisältöä, joka näyttää raportit, raporttinäkymät tai ruudut sovelluksessa, joka on täysin integroitu ja vuorovaikutteinen, edellyttämättä Power BI -käyttöoikeutta sovelluksen käyttäjiltä. Tämä opetusohjelma esittelee, miten raportti integroidaan sovellukseen käyttämällä **Power BI** .NET SDK:ta **Power BI** JavaScript -ohjelmointirajapinnan kanssa, kun käytössä on **Azuren Power BI Embedded** **app owns data**-malleja käyttävä asiakas.
 
 Tässä opetusohjelmassa opit:
 >[!div class="checklist"]
@@ -25,14 +25,14 @@ Tässä opetusohjelmassa opit:
 >* Upottamaan Power BI -raportin sovellukseen.
 
 ## <a name="prerequisites"></a>Edellytykset
-Sinulla täytyy olla **Power BI Pro** -tili (tämä on **päätilisi**) ja **Microsoft Azure** -tilaus aloittaaksesi.
+Sinulla täytyy olla **Power BI Pro** -tili (tämä tili on **päätilisi**) ja **Microsoft Azure** -tilaus aloittaaksesi.
 
 * Jos et ole rekisteröitynyt **Power BI:hin**, [rekisteröi ilmainen kokeiluversio](https://powerbi.microsoft.com/en-us/pricing/) ennen aloittamista.
 * Jos sinulla ei ole Azure-tilausta, luo [ilmainen tili](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) ennen aloittamista.
 * Sinulla on oltava oma [Azure Active Directory -vuokraaja ](create-an-azure-active-directory-tenant.md) asetettuna.
 * [Visual Studion](https://www.visualstudio.com/) (2013 tai uudempi versio) on oltava asennettuna.
 
-## <a name="setup-your-embedded-analytics-development-environment"></a>Upotettujen analyysitoimintojen kehitysympäristön määrittäminen
+## <a name="set-up-your-embedded-analytics-development-environment"></a>Upotettujen analyysitoimintojen kehitysympäristön määrittäminen
 
 Ennen kuin ryhdyt upottamaan raportteja, raporttinäkymiä tai ruutuja sovellukseesi, varmista, että ympäristösi on määritetty niin, että upottaminen on siinä sallittu. Määritys edellyttää myös seuraavia toimia:
 
@@ -49,7 +49,7 @@ Rekisteröi sovellus Azure Active Directoryyn, jotta sovellus saa käyttöoikeud
  
     ![Azure-pääportaali](media/embed-sample-for-customers/embed-sample-for-customers-002.png)
 
-3. Valitse vasemmassa siirtymisruudussa **Kaikki palvelut**, valitse sitten **Sovelluksen rekisteröinti** ja sitten **Uuden sovelluksen rekisteröinti**.
+3. Valitse vasemmassa siirtymisruudussa **Kaikki palvelut**, valitse **Sovelluksen rekisteröinti** ja valitse sitten **Uuden sovelluksen rekisteröinti**.
    
     ![Sovelluksen rekisteröinnin etsiminen](media/embed-sample-for-customers/embed-sample-for-customers-003.png)</br>
     ![Uuden sovelluksen rekisteröinti](media/embed-sample-for-customers/embed-sample-for-customers-004.png)
@@ -98,7 +98,7 @@ Sinun on otettava käyttöön sovellukselle lisäkäyttöoikeuksia sovelluksen r
    
     ![Käyttöoikeuksien myöntäminen tarvittavassa käyttöoikeusikkunassa](media/embed-sample-for-customers/embed-sample-for-customers-016.png)
 
-## <a name="setup-your-power-bi-environment"></a>Määritä Power BI -ympäristö
+## <a name="set-up-your-power-bi-environment"></a>Power BI -ympäristön määrittäminen
 
 ### <a name="create-an-app-workspace"></a>Sovelluksen työtilan luominen
 
@@ -269,7 +269,9 @@ var embedConfig = new EmbedConfig()
 Tämä edellyttää luokan luomista kohteille **EmbedConfig** ja **TileEmbedConfig**. Malli näistä on saatavilla **Models\EmbedConfig.cs**-tiedostossa ja **Models\TileEmbedConfig.cs-tiedostossa**.
 
 ### <a name="load-an-item-using-javascript"></a>Lataa kohde JavaScriptin avulla
-Voit JavaScriptin avulla ladata raportin verkkosivun jako-elementtiin. 
+Voit JavaScriptin avulla ladata raportin verkkosivun jako-elementtiin.
+
+[Playground-työkalun](https://microsoft.github.io/PowerBI-JavaScript/demo) avulla saat kokonaisen mallin JavaScript-ohjelmointirajapinnan käytöstä. Tämä on nopea tapa kokeilla erilaisia Power BI Embedded -malleja. Saat lisätietoja JavaScript-ohjelmointirajapinnasta myös vierailemalla [Power BI-JavaScript wiki](https://github.com/Microsoft/powerbi-javascript/wiki) -sivulla.
 
 Tässä mallissa käytetään **EmbedConfig**-mallia ja **TileEmbedConfig**-mallia yhdessä raportin näkymien kanssa.
 
@@ -316,25 +318,23 @@ Tässä mallissa käytetään **EmbedConfig**-mallia ja **TileEmbedConfig**-mall
 </script>
 ```
 
-[Playground-työkalun](https://microsoft.github.io/PowerBI-JavaScript/demo) avulla saat kokonaisen mallin JavaScript-ohjelmointirajapinnan käytöstä. Tämä on nopea tapa kokeilla erilaisia Power BI Embedded -malleja. Saat lisätietoja JavaScript-ohjelmointirajapinnasta vierailemassa [Power BI-JavaScript wiki](https://github.com/Microsoft/powerbi-javascript/wiki) -sivulla.
-
 ## <a name="move-to-production"></a>Siirry tuotantoon
 
 Kun olet nyt kehittänyt sovelluksesi, on aika varata sovelluksen työtilalle kapasiteettia. Varattua kapasiteettia tarvitaan kun siirrytään tuotantoon.
 
 ### <a name="create-a-dedicated-capacity"></a>Luo varattua kapasiteettia
-Luomalla varattua kapasiteettia voit hyötyä siitä, että asiakkaalle varataan tietty resurssi. Voit ostaa varattua kapasiteettia [Microsoft Azure -portaalissa](https://portal.azure.com). Lisätietoa Power BI Embedded ‑kapasiteetin luomisesta saat ohjeaiheesta [Power BI Embedded -kapasiteetin luominen Azure-portaalissa](https://docs.microsoft.com/azure/power-bi-embedded/create-capacity).
+Luomalla varattua kapasiteettia voit hyötyä siitä, että asiakkaalle varataan tietty resurssi. Voit ostaa varattua kapasiteettia [Microsoft Azure -portaalissa](https://portal.azure.com). Lisätietoa Power BI Embedded ‑kapasiteetin luomisesta saat ohjeaiheesta [Power BI Embedded -kapasiteetin luominen Azure-portaalissa](azure-pbie-create-capacity.md).
 
 Seuraavan taulukon avulla voit määrittää, mikä Power BI Embedded -kapasiteetti sopii parhaiten tarpeisiisi.
 
 | Kapasiteetin solmu | Ytimiä yhteensä<br/>*(Tausta ja edusta)* | Taustan ytimet | Edustan ytimet | DirectQueryn/live-yhteyden rajoitukset | Sivun hahmonnuksia enintään huipputuntina |
 | --- | --- | --- | --- | --- | --- |
 | A1 |1 näennäisydin |0,5 ydintä, 3 Gt RAM |0,5 ydintä | 5 sekunnissa |1–300 |
-| A2 |2 näennäisydintä |1 ydin, 5 Gt RAM |1 ydin | 10 sekunnissa |301–600 |
-| A3 |4 näennäisydintä |2 ydintä, 10 Gt RAM |2 ydintä | 15 sekunnissa |601–1 200 |
-| A4 |8 näennäisydintä |4 ydintä, 25 Gt RAM |4 ydintä |30 sekunnissa |1 201–2 400 |
-| A5 |16 näennäisydintä |8 ydintä, 50 Gt RAM |8 ydintä |60 sekunnissa |2 401–4 800 |
-| A6 |32 näennäisydintä |16 ydintä, 100 Gt RAM |16 ydintä |120 sekunnissa |4 801–9 600 |
+| A2 |2 näennäisydintä |1 ydin, 5 Gt RAM |1 ydin | 10 sekunnissa |301–600 |
+| A3 |4 näennäisydintä |2 ydintä, 10 Gt RAM |2 ydintä | 15 sekunnissa |601–1 200 |
+| A4 |8 näennäisydintä |4 ydintä, 25 Gt RAM |4 ydintä |30 sekunnissa |1 201–2 400 |
+| A5 |16 näennäisydintä |8 ydintä, 50 Gt RAM |8 ydintä |60 sekunnissa |2 401–4 800 |
+| A6 |32 näennäisydintä |16 ydintä, 100 Gt RAM |16 ydintä |120 sekunnissa |4 801–9 600 |
 
 **_A-varastointiyksiköillä et pysty käyttämään Power BI -sisältöä ilmaisella Power BI -käyttöoikeudella._**
 

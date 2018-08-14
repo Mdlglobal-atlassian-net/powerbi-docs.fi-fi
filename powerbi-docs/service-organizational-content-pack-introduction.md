@@ -3,24 +3,23 @@ title: Power BI:n organisaation sisältöpakettien esittely
 description: Lue lisätietoja koontinäyttöjen, raporttien, Excel-työkirjojen ja tietojoukkojen pakkaamisesta organisaation sisältöpaketeiksi, joita voit jakaa työtovereillesi.
 author: maggiesMSFT
 manager: kfile
-ms.reviewer: ajayan
+ms.reviewer: lukaszp
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 06/07/2018
+ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: e07e28ca7fd4dbb38f931a3fbc2a97661294711c
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 9109bd45f47e92d9158b9247fe32a43132fff720
+ms.sourcegitcommit: 2356dc8e5488438a43ba7f0ba9a55a2372669b47
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34852344"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39624294"
 ---
 # <a name="intro-to-organizational-content-packs-in-power-bi"></a>Power BI:n organisaation sisältöpakettien esittely
 > [!NOTE]
-> Oletko jo kuullut uusista *sovelluksista*? Sovellukset on uusi tapa jakaa sisältöä suurille kohderyhmille Power BI:ssä. Ajan mittaan aiomme lakkauttaa organisaation sisältöpaketit, joten suosittelemme niiden sijaan sovellusten käyttöä. Lue [lisätietoja sovelluksista](service-install-use-apps.md).
-> 
+> Et voi luoda organisaation sisältöpaketteja tai asentaa niitä uuden työtilakokemuksen esiversiossa. Nyt on hyvä aika päivittää sisältöpaketit sovelluksiin, jos et ole vielä aloittanut päivittämistä. Lue [lisätietoja uudesta työtilakokemuksesta](service-create-the-new-workspaces.md).
 > 
 
 Jaatko säännöllisesti raportteja sähköpostitse työryhmällesi? Kokeile seuraavaa: Pakkaa koontinäytöt, raportit, Excel-työkirjat ja tietojoukot ja julkaise ne työryhmällesi *organisaation sisältöpakettina*. Työryhmäsi löytää sisältöpakettisi helposti – ne ovat kaikki saatavilla AppSourcessa. Koska ne ovat osa Power BI:tä, ne hyödyntävät kaikkia Power BI -ominaisuuksia, mukaan lukien vuorovaikutteinen tietojen tarkasteleminen, uudet visualisoinnit, Q&A, integrointi muihin tietolähteisiin ja tietojen päivittäminen.

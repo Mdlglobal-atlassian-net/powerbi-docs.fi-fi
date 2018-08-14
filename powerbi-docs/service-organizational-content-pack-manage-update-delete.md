@@ -3,24 +3,23 @@ title: 'Organisaation sisältöpaketit: hallinta ja päivitys'
 description: Lue lisää organisaation sisältöpakettien hallitsemisesta, päivittämisestä ja poistamisesta Power BI:ssä.
 author: maggiesMSFT
 manager: kfile
-ms.reviewer: ajayan
+ms.reviewer: lukaszp
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 07/19/2018
+ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 45e9207ffa666e33b298e82bbc78e07c226b780e
-ms.sourcegitcommit: f6fb681ec85313eb7b450edb8f190e9e7afbabca
+ms.openlocfilehash: d00ad254e25f8806f6cf2bc944e849e32167b1f8
+ms.sourcegitcommit: 2356dc8e5488438a43ba7f0ba9a55a2372669b47
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39182790"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39624317"
 ---
 # <a name="manage-update-and-delete-organizational-content-packs"></a>Organisaation sisältöpakettien hallinta, päivitys ja poistaminen
 > [!NOTE]
-> Oletko jo kuullut uusista *sovelluksista*? Sovellukset on uusi tapa jakaa sisältöä suurille kohderyhmille Power BI:ssä. Ajan mittaan aiomme lakkauttaa organisaation sisältöpaketit, joten suosittelemme niiden sijaan sovellusten käyttöä. Lue [lisätietoja sovelluksista](service-install-use-apps.md).
-> 
+> Et voi luoda organisaation sisältöpaketteja tai asentaa niitä uuden työtilakokemuksen esiversiossa. Nyt on hyvä aika päivittää sisältöpaketit sovelluksiin, jos et ole vielä aloittanut päivittämistä. Lue [lisätietoja uudesta työtilakokemuksesta](service-create-the-new-workspaces.md).
 > 
 
 Voit pakata ja jakaa koontinäyttöjä, raportteja, Excel-työkirjoja ja tietojoukkoja työtovereillesi [organisaation sisältöpaketteina](service-organizational-content-pack-introduction.md). Työtoverisi voivat käyttää niitä sellaisinaan tai luoda niistä itselleen kopion.

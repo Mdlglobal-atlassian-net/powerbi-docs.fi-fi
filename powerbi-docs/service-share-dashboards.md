@@ -8,15 +8,15 @@ featuredvideoid: 0tUwn8DHo3s
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 01/18/2018
+ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: e176f82e106c531410b8e9233b983c6e321bddf4
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: d683ce3d06e2ac6be6c51f257e4f9483e718e2d8
+ms.sourcegitcommit: 2356dc8e5488438a43ba7f0ba9a55a2372669b47
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34299052"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39624387"
 ---
 # <a name="share-your-power-bi-dashboards-and-reports-with-coworkers-and-others"></a>Power BI -koontinäyttöjen ja -raporttien jakaminen työtovereiden ja muiden kanssa
 *Jakaminen* on kätevä keino myöntää parille henkilölle käyttöoikeus luomiisi koontinäyttöihin ja raportteihin. Power BI tarjoaa myös [useita muita tapoja tehdä yhteistyötä ja jakaa koontinäyttöjä ja raportteja](service-how-to-collaborate-distribute-dashboards-reports.md).
@@ -91,6 +91,8 @@ Vain koontinäytön tai raportin omistaja voi ottaa uudelleenjakamisen käyttö�
 
 4. Voit **Poista käyttöoikeus** -valintaikkunassa päättää, haluatko poistaa käyttöoikeuden myös liittyvään sisältöön, kuten raportteihin ja tietojoukkoihin. Jos poistat kohteet, joissa on ![Power BI -varoituskuvake](media/service-share-dashboards/power-bi-warning-icon.png), sinun kannattaa poistaa liittyvä sisältö, koska se ei näy oikein.
 
+    ![Power BI:n jakamisen varoitusvalintaikkuna](media/service-share-dashboards/power-bi-sharing-warning-dialog.png)
+
 ## <a name="share-a-dashboard-or-report-with-people-outside-your-organization"></a>Koontinäytön tai raportin jakaminen organisaatiosi ulkopuolisten henkilöiden kanssa
 Kun jaat sisältöä organisaatiosi ulkopuolisten henkilöiden kanssa, he saavat sähköpostiviestin ja linkin jaettuun koontinäyttöön tai raporttiin. Jos he haluavat tarkastella tätä sisältöä, heidän on kirjauduttava sisään Power BI -palveluun. Jos heillä ei ole Power BI Pro -käyttöoikeutta, he voivat rekisteröityä käyttöoikeuden saamiseksi napsautettuaan linkkiä.
 
@@ -145,6 +147,8 @@ Jos ruutu on lukittu, sinun on myönnettävä käyttöoikeus pohjana olevaan tie
 ### <a name="i-cant-share-a-dashboard-or-report"></a>En voi jakaa koontinäyttöä tai raporttia
 
 Jotta voit jakaa koontinäytön tai raportin, tarvitset käyttöoikeuden jakaa uudelleen pohjana olevaa sisältöä eli kaikkia siihen liittyviä raportteja ja tietojoukkoja. Jos näyttöön tulee viesti, jonka mukaan et voi jakaa tietoja, pyydä raportin laatijaa myöntämään sinulle käyttöoikeus näihin raportteihin ja tietojoukkoihin.
+
+![Jakaminen ei onnistu -sanoma](media/service-share-dashboards/power-bi-sharing-unable-to-share.png)
 
 
 ## <a name="next-steps"></a>Seuraavat vaiheet

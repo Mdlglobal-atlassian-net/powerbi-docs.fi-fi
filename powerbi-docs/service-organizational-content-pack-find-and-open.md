@@ -3,29 +3,29 @@ title: Organisaation sisältöpaketin etsiminen ja siihen yhdistäminen – Powe
 description: Organisaation sisältöpaketin etsiminen ja avaaminen Power BI:ssä
 author: maggiesMSFT
 manager: kfile
-ms.reviewer: ajayan
+ms.reviewer: lukaszp
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 06/08/2018
+ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 5ea86ab577298b6099487228cdf4c8a87e4fe421
-ms.sourcegitcommit: df7a58dae14ef311516c9b3098f87742786f0479
+ms.openlocfilehash: 67072d690f09e922601c6b14ad1c150e2298040b
+ms.sourcegitcommit: 2356dc8e5488438a43ba7f0ba9a55a2372669b47
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39280221"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39624271"
 ---
 # <a name="find-and-connect-to-an-organizational-content-pack"></a>Organisaation sisältöpaketin etsiminen ja siihen yhdistäminen
-> [!NOTE]
-> Oletko jo kuullut uusista *sovelluksista*? Sovellukset on uusi tapa jakaa sisältöä suurille kohderyhmille Power BI:ssä. Ajan mittaan aiomme lakkauttaa organisaation sisältöpaketit, joten suosittelemme niiden sijaan sovellusten käyttöä. Lue [lisätietoja sovelluksista](service-install-use-apps.md).
-> 
-> 
 
 Kun joku julkaisee organisaation sisältöpaketin organisaatioosi, jakelu- tai käyttöoikeusryhmään tai [Office 365 -ryhmään](https://support.office.com/article/Create-a-group-in-Office-365-7124dc4c-1de9-40d4-b096-e8add19209e9), johon kuulut, se näkyy AppSourcessa.  Etsi ja avaa organisaation sisältöpaketteja selaamalla tai hakemalla AppSourcesta.
 
-Sisältöpakettien luominen eroaa koontinäyttöjen jakamisesta tai niiden työstämisestä ryhmässä. Päätä tilanteeseesi parhaiten sopiva vaihtoehto lukemalla artikkeli [Miten voin työstää koontinäyttöjä ja raportteja yhdessä muiden kanssa sekä jakaa niitä?](service-how-to-collaborate-distribute-dashboards-reports.md).
+Sisältöpakettien luominen eroaa koontinäyttöjen jakamisesta tai niiden työstämisestä ryhmässä. Valitse itsellesi sopivin vaihtoehto lukemalla artikkeli [Miten voin työstää koontinäyttöjä ja raportteja yhdessä muiden kanssa sekä jakaa niitä?](service-how-to-collaborate-distribute-dashboards-reports.md).
+
+> [!NOTE]
+> Et voi luoda tai asentaa organisaation sisältöpaketteja uuden työtilakokemuksen esiversiossa. Nyt on hyvä aika päivittää sisältöpaketit sovelluksiin, jos et ole vielä aloittanut päivittämistä. Lue [lisätietoja uudesta työtilakokemuksesta](service-create-the-new-workspaces.md).
+> 
 
 ## <a name="find-an-organizational-content-pack"></a>Organisaation sisältöpaketin etsiminen
 [Power BI Pro](https://powerbi.microsoft.com/pricing) -käyttäjät voivat mennä AppSourceen, jossa näkyvät sisältöpaketit, jotka on jaettu koko organisaatioon, jakelu- tai käyttöoikeusryhmään tai Office 365 -ryhmään, johon kuulut.  

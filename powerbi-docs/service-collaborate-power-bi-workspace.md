@@ -3,24 +3,25 @@ title: Yhteistyö Power BI -sovelluksen työtilassa
 description: Lue lisätietoja Power BI Desktop -tiedostojen yhteistyöstä sovelluksen työtilassa sekä Office 365-palveluista kuten tiedostojen jakamisesta OneDrive for Business -palvelussa, keskusteluista Exchange-palvelussa, kalenterista ja tehtävistä.
 author: maggiesMSFT
 manager: kfile
-ms.reviewer: ajayan
+ms.reviewer: lukaszp
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 01/29/2018
+ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: cab0f0513d73a865407574d43f8cd65ca5d75a9e
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: d059e8bb476f9862c372d9565581d58b336e81db
+ms.sourcegitcommit: 2356dc8e5488438a43ba7f0ba9a55a2372669b47
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34245450"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39623926"
 ---
 # <a name="collaborate-in-your-power-bi-app-workspace"></a>Yhteiskäyttö Power BI -sovelluksen työtilassa
-Power BI -sovelluksen työtilat on käteviä paikkoja tehdä yhteistyötä työtovereidesi kanssa raporttinäkymässä, raporteissa ja tietojoukoissa *sovellusten* luomiseksi. Sillä yhteistyötä varten työtiloja on suunniteltu. Sen jälkeen, kun lopetat yhteiskäytön raporttinäkymässä ja raporttien parissa työtovereiden kanssa, voit pakata sen sovellukseksi ja jakaa sitä. Lue lisää [sovellusten ja sovelluksen työtilojen luomisesta Power BI:ssa](service-create-distribute-apps.md). 
+Power BI -sovelluksen työtilat on käteviä paikkoja tehdä yhteistyötä työtovereidesi kanssa raporttinäkymässä, raporteissa ja tietojoukoissa *sovellusten* luomiseksi. Yhteiskäyttö ei pääty Power BI:n työtiloihin. Office 365 tarjoaa muita ryhmäpalveluita kuten tiedostojen jakaminen OneDrive for Business -palvelussa, keskustelut Exchangessa, jaetun kalenterin, tehtävät ja niin edelleen. Lue lisää [Office 365-ryhmistä](https://support.office.com/article/Create-a-group-in-Office-365-7124dc4c-1de9-40d4-b096-e8add19209e9).
 
-Yhteiskäyttö ei pääty Power BI:n työtiloihin. Office 365 tarjoaa muita ryhmäpalveluita kuten tiedostojen jakaminen OneDrive for Business -palvelussa, keskustelut Exchangessa, jaetun kalenterin, tehtävät ja niin edelleen. Lue lisää [Office 365-ryhmistä](https://support.office.com/article/Create-a-group-in-Office-365-7124dc4c-1de9-40d4-b096-e8add19209e9).
+> [!NOTE]
+> Uusi työtilakokemuksen esiversio muuttaa Power BI -työtilojen ja Office 365:n ryhmien välistä suhdetta. Et luo automaattisesti Office 365 -ryhmää aina, kun luot uuden työtilan. Lisätietoja [uusien työtilojen luomisesta (esikatselu)](service-create-the-new-workspaces.md)
 
 Sovellustyötilat ovat käytettävissä vain [Power BI Pro:ssa](service-free-vs-pro.md).
 
