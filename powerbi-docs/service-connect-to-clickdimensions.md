@@ -35,7 +35,7 @@ Muodosta yhteys [Power BI:n ClickDimensions-sisältöpakettiin.](https://app.pow
 4. Anna palvelinkeskuksen sijaintitiedot (Yhdysvallat, EU tai AU) ja valitse **Seuraava**.
    
    ![](media/service-connect-to-clickdimensions/params.png)
-5. Valitse **todennusmenetelmäksi****Basic** \> **Kirjaudu sisään**. Kirjoita ClickDimensions-tunnistetietosi pyydettäessä. Lisätietoja [näiden parametrien löytämisestä](#FindingParams) on alla
+5. Valitse **todennusmenetelmäksi** **Basic** \> **Kirjaudu sisään**. Kirjoita ClickDimensions-tunnistetietosi pyydettäessä. Lisätietoja [näiden parametrien löytämisestä](#FindingParams) on alla
    
     ![](media/service-connect-to-clickdimensions/creds.png)
 6. Hyväksymisen jälkeen tuontiprosessi alkaa automaattisesti. Kun kaikki on valmista, uusi raporttinäkymä, raportti ja malli näkyvät siirtymisruudussa. Voit tarkastella tuotuja tietoja valitsemalla raporttinäkymän.
