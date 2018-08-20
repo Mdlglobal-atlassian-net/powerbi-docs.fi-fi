@@ -7,20 +7,21 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/27/2018
+ms.date: 08/06/2018
 ms.author: davidi
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 422f0ba97f5118ddc57e9102055a070deaf99b90
-ms.sourcegitcommit: f01a88e583889bd77b712f11da4a379c88a22b76
+ms.openlocfilehash: 805487087de865c25f08a29243d672fafbc26ca2
+ms.sourcegitcommit: cce10e14c111e8a19f282ad6c032d802ebfec943
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39329611"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39658033"
 ---
 # <a name="getting-started-with-color-formatting-and-axis-properties"></a>Värimuotoilun ja akseliominaisuuksien käytön aloittaminen
 Valitsemalla **Power BI** voit muuttaa arvosarjojen, arvopisteiden ja jopa visualisointien taustan värin. Voit myös muuttaa x- ja y-akselin esitystapaa, joten voit hallita täydellisesti raporttinäkymien ja raporttien ulkonäköä.
 
 Aloita valitsemalla **Raportti** **Oma työtilani** -ruudusta. Valitse sitten ylävalikosta **Muokkaa raporttia**.  
+
 ![](media/service-getting-started-with-color-formatting-and-axis-properties/gettingstartedcolor_1a.png)
 
 Kun muokkaat raporttia ja sinulla on visualisointi valittuna, näkyviin tulee **Visualisoinnit**-ruutu, jonka avulla voit lisätä tai muuttaa visualisointeja. Käytettävissä olevien visualisointien alapuolella on kolme kuvaketta: **Kentät** (palkkien pino), **Muoto** (tela) ja **Analytiikka** (suurennuslasi). Alla olevassa kuvassa näkyvä keltainen palkki kuvakkeen alapuolella osoittaa **Kentät**-kuvakkeen olevan valittuna.
@@ -28,6 +29,7 @@ Kun muokkaat raporttia ja sinulla on visualisointi valittuna, näkyviin tulee **
 ![](media/service-getting-started-with-color-formatting-and-axis-properties/gettingstartedcolor_2a.png)
 
 Kun valitset kohdan **Muoto**, sen alapuolella oleva alue näyttää ne värin ja akselin mukautukset, jotka ovat käytössä valitun visualisoinnin kanssa.  
+
 ![](media/service-getting-started-with-color-formatting-and-axis-properties/gettingstartedcolor_3a.png)
 
 Voit mukauttaa kunkin visualisoinnin monia elementtejä:
@@ -47,14 +49,13 @@ Voit mukauttaa kunkin visualisoinnin monia elementtejä:
 > [!NOTE]
 >  
 > Kaikkia näitä elementtejä ei näy jokaisen visualisointityypin kanssa. Valitsemasi visualisointi vaikuttaa käytettävissä oleviin mukautuksiin; et voi esimerkiksi mukauttaa x-akselia jos olet valinnut ympyräkaavion, sillä niissä ei ole x-akselia.
-> 
-> 
 
 Huomaa myös, että jos et ole valinnut visualisointia, kuvakkeiden sijaan näkyviin tulee **Suodattimet**, josta voit asettaa suodattimia kaikkiin sivulla oleviin visualisointeihin.
 
 Esittelemme pari esimerkkiä: ensimmäinen värien käyttämisestä ja toinen akselin ominaisuuksien muuttamisesta. Sen jälkeen sinun pitäisi olla valmis mukauttamaan värejä, akseleita ja otsikoita koko päivän.
 
 ## <a name="working-with-colors"></a>Värien käyttäminen
+
 Käydään läpi kaavion värien mukauttamiseen tarvittavat vaiheet.
 
 1. Valitsen raporttipohjasta kohdan **Klusteroitu pylväskaavio**.
@@ -76,6 +77,7 @@ Muutokset näkyvät alla olevassa kuvassa. Vau, onpa kirkas kaavio. Tässä on m
 Etkö pidä juuri tekemistäsi muutoksista? Käytä yhdistelmää **CTRL + Z** kumoamisvaiheena, aivan kuten olet tottunut tekemään.
 
 ## <a name="changing-axis-properties"></a>Akselin ominaisuuksien muuttaminen
+
 X- tai Y-akselin muokkaaminen on usein hyödyllistä. Seuraavassa kuvassa näytetään, miten voit muokata haluamaasi akselia valitsemalla alanuoli-kuvakkeen akselin vasemmalta puolelta, aivan kuten värejä käyttäessäsi.  
 ![](media/service-getting-started-with-color-formatting-and-axis-properties/gettingstartedcolor_7a.png)
 
@@ -88,11 +90,15 @@ Power BI raportteihin ja raporttinäkymiin on valittavana monenlaisia värejä j
 > [!NOTE]
 >  
 > Mukautukset, jotka ovat käytettävissä **Muoto**-kuvakkeen ollessa valittuna, ovat käytettävissä myös Power BI Desktopissa.
-> 
-> 
 
-## <a name="next-step"></a>Seuraava vaihe
+## <a name="setting-color-from-text-values"></a>Värin määrittäminen tekstiarvoista
+
+**Power BI Desktopin** elokuun 2018 päivityksestä alkaen voit määrittää värit tekstiarvon tai heksadesimaalikoodin mukaan tietylle raporttielementille. Jos haluat lisätietoja, katso artikkelia [Ehdollinen muotoilu taulukoissa](desktop-conditional-table-formatting.md).
+
+
+## <a name="next-steps"></a>Seuraavat vaiheet
 Katso lisätietoja seuraavasta artikkelista:  
 
 * [Vinkkejä värimuotoiluun Power BI:ssä](service-tips-and-tricks-for-color-formatting.md)  
+* [Ehdollinen muotoilu taulukoissa](desktop-conditional-table-formatting.md)
 

@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/17/2018
+ms.date: 08/06/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 70aa61d6a02bea1b7058a68b20718008ace1b8c8
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 61a30484713ac96d3bbb65355310007a52f300a5
+ms.sourcegitcommit: cce10e14c111e8a19f282ad6c032d802ebfec943
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34480884"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39657801"
 ---
 # <a name="conditional-formatting-in-tables"></a>Ehdollinen muotoilu taulukoissa 
 Taulukoiden ehdollisen muotoilun avulla voit määrittää mukautettuja solujen värejä, jotka perustuvat solujen arvoihin tai muihin arvoihin tai kenttiin. Voit käyttää myös liukuvärejä. Voit myös näyttää solun arvot tietopalkeilla. 
@@ -24,7 +24,7 @@ Ehdollisen muotoilun käyttämiseksi valitse alaspäin osoittava nuoli Power BI 
 
 ![Ehdollinen muotoilu -valikko](media/desktop-conditional-table-formatting/table-formatting-0-popup-menu.png)
 
-Seuraavissa osissa kuvataan kukin kolmesta ehdollisen muotoilun vaihtoehdoista. Yksi tai useampi vaihtoehto voidaan liittää yhteen taulukon sarakkeeseen.
+Seuraavissa osioissa kuvataan kutakin näistä ehdollisen muotoilun vaihtoehdoista. Yksi tai useampi vaihtoehto voidaan liittää yhteen taulukon sarakkeeseen.
 
 > [!NOTE]
 > Taulukkoon käytetty ehdollinen muotoilu ohittaa kaikki ehdollisesti muotoilluissa soluissa käytetyt mukautetut taulukkotyylit.
@@ -95,3 +95,43 @@ Oletuksena **Näytä vain palkki** -asetusta ei ole valittu, jolloin taulukkosol
 Jos **Näytä vain palkki** -asetus on valittu, taulukkosolussa näkyy vain palkki.
 
 ![Esimerkkitaulukko, jossa on vain tietopalkkeja](media/desktop-conditional-table-formatting/table-formatting-3-default-table-bars.png)
+
+## <a name="color-formatting-by-field-value"></a>Värin muotoileminen kentän arvon mukaan
+
+Voit käyttää mittayksikköä tai värin määrittävää saraketta joko tekstiarvon tai heksadesimaalikoodin mukaan, ja soveltaa tätä väriä taulukon tai matriisivisualisoinnin fonttiväriin. Voit myös luoda mukautetun logiikan tiettyä kenttää varten, ja antaa tämän logiikan soveltaa haluttua väriä fonttiin tai taustaan.
+
+Esimerkiksi seuraavassa taulukossa on kuhunkin tuotemalliin liittyvä väri. 
+
+![ProductName-kenttä värin nimen kanssa](media/desktop-conditional-table-formatting/conditional-table-formatting_01.png)
+
+Jos haluat muotoilla tätä solua sen kentän arvon mukaan, valitse **Ehdollinen muotoilu** -valintaikkuna napsauttamalla hiiren kakkospainikkeella tämän visualisoinnin *Väri*-saraketta ja valitsemalla valikosta **Taustaväri**. 
+
+![Taustavärin valitseminen valikosta](media/desktop-conditional-table-formatting/conditional-table-formatting_02.png)
+
+Valitse avautuvassa valintaikkunassa **Kentän arvo** avattavasta **Muotoiluperuste**-luetteloalueesta seuraavassa kuvassa esitetyllä tavalla.
+
+![Muotoiluperuste-kentän arvo](media/desktop-conditional-table-formatting/conditional-table-formatting_03.png)
+
+Voit toistaa tämän prosessin fonttivärille ja visualisoinnin tulos on yhtenäinen väri **Väri**-sarakkeessa seuraavassa näytössä esitetyn mukaisesti.
+
+![Muotoiluperuste-kentän arvo](media/desktop-conditional-table-formatting/conditional-table-formatting_04.png)
+
+Voit myös luoda liiketoimintalogiikan perusteella DAX-laskutoimituksen, joka tulostaa eri heksadesimaalikoodit haluamiesi ehtojen mukaan. Tämä on yleensä helpompaa kuin useiden sääntöjen luominen ehdollisen muotoilun valintaikkunassa. Tarkastele *ColorKPI*-kenttää seuraavassa esimerkkikuvassa.
+
+![DAX-laskutoimitukset](media/desktop-conditional-table-formatting/conditional-table-formatting_05.png)
+
+Voit sitten määrittää kenttäarvon **taustavärille** seuraavalla tavalla.
+
+![Kentän värin määrittäminen KPI:n mukaan](media/desktop-conditional-table-formatting/conditional-table-formatting_06.png)
+
+Voit sitten saada seuraavan matriisin kaltaiset tulokset.
+
+![Matriisivisualisointi KPI-arvoon perustuvan värin kanssa](media/desktop-conditional-table-formatting/conditional-table-formatting_07.png)
+
+Voit luoda monia muita variaatioita käyttämällä mielikuvitustasi ja joitakin DAX-laskutoimituksia.
+
+## <a name="next-steps"></a>Seuraavat vaiheet
+Katso lisätietoja seuraavasta artikkelista:  
+
+* [Vinkkejä värimuotoiluun Power BI:ssä](service-tips-and-tricks-for-color-formatting.md)  
+

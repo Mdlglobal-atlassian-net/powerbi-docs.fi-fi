@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/27/2018
+ms.date: 08/06/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 2b8c4066f3128899d2c3c8121d7c5d41768f89dc
-ms.sourcegitcommit: f01a88e583889bd77b712f11da4a379c88a22b76
+ms.openlocfilehash: fe52646eef029359ac0e41c5fb32be524076a22d
+ms.sourcegitcommit: cce10e14c111e8a19f282ad6c032d802ebfec943
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39327817"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39657962"
 ---
 # <a name="use-bookmarks-to-share-insights-and-build-stories-in-power-bi"></a>Kirjanmerkkien avulla voit jakaa merkityksellisiä tietoja ja koostaa tarinoita Power BI:ssä 
 Käyttämällä **kirjanmerkkejä** Power BI:ssä voit tallentaa raporttisivun senhetkisen määritetyn näkymän suodatukset ja visualisointien tila mukaan lukien. Voit myöhemmin palata tähän tilaan valitsemalla tallennetun kirjanmerkin. 
@@ -113,6 +113,33 @@ Kun otat **Toiminto**-liukusäätimen **käyttöön**, voit valita, onko objekti
 Objekteihin linkitetyt kirjanmerkit avaavat monia hyödyllisiä mahdollisuuksia. Voit luoda visuaalisen sisällysluettelon raporttisivullesi tai tarjota samoista tiedoista erilaisia näkymiä, kuten visualisointityyppejä – vain objektia napsauttamalla.
 
 Muokkaustilassa voit valita linkin napsauttamalla sitä Ctrl-näppäin painettuna. Sama onnistuu muokkaustilan ulkopuolella vain napsauttamalla objektia. 
+
+## <a name="bookmark-groups"></a>Kirjanmerkkiryhmät
+
+**Power BI Desktopin** vuoden 2018 elokuun versiosta alkaen voit luoda ja käyttää kirjanmerkkiryhmiä. Kirjanmerkkiryhmä on kokoelma määrittämiäsi kirjanmerkkejä, jotka voidaan näyttää ja järjestää ryhmänä. 
+
+Voit luoda kirjanmerkin pitämällä alhaalla CTRL-näppäintä ja valitsemalla kirjanmerkit, jotka haluat sisällyttää ryhmään. Klikkaa sitten minkä tahansa valitun kirjanmerkin vieressä olevaa kolmea pistettä ja valitse esiin tulevasta valikosta **Ryhmä**.
+
+![Kirjanmerkkiryhmän luominen](media/desktop-bookmarks/bookmarks_15.png)
+
+**Power BI Desktop** määrittää ryhmän nimeksi automaattisesti *Ryhmä 1*. Jos haluat määrittää sille toisen nimen, sinun tarvitsee vain kaksoisklikata nimeä.
+
+![Kirjanmerkkiryhmän nimeäminen uudelleen](media/desktop-bookmarks/bookmarks_16.png)
+
+Kun klikkaat jossakin kirjanmerkkiryhmässä sen nimeä, voit vain laajentaa tai kutistaa kirjanmerkkiryhmää, eikä se edusta itse kirjanmerkkiä. 
+
+Kun käytät kirjanmerkkien **Näkymä**-ominaisuutta, noudata seuraavia ohjeita:
+
+* Jos valittu kirjanmerkki on ryhmässä, kun valitset **Näytä** kirjanmerkeistä, tarkasteluistunnossa näytetään vain *kyseisen ryhmän* kirjanmerkit. 
+
+* Jos valittu kirjanmerkki ei ole ryhmä tai se on ylimmällä tasolla (kuten kirjanmerkkiryhmän nimi), näytetään koko raportin kaikki kirjanmerkit, mukaan lukien minkä tahansa ryhmän kirjanmerkit. 
+
+Voit poistaa kirjanmerkkien ryhmittelyn valitsemalla minkä tahansa kirjanmerkin ryhmässä, klikkaamalla kolmea pistettä ja valitsemalla sitten esiin avautuvasta valikosta **Poista ryhmittely**. 
+
+![Kirjanmerkkiryhmän ryhmittelyn poistaminen](media/desktop-bookmarks/bookmarks_17.png)
+
+Huomaa, että kun valitset **Poista ryhmittely** jollekin ryhmän kirjanmerkille, kaikkien kirjanmerkkien ryhmittely poistetaan (se poistaa ryhmän, mutta ei itse kirjanmerkkejä). Jos haluat poistaa yhden kirjanmerkin ryhmästä, tästä ryhmästä on **poistettava** jäsen, mikä poistaa ryhmittelyn, ja valittava sitten halutut jäsenet uuteen ryhmään (CTRL:n avulla ja klikkaamalla jokaista kirjanmerkkiä). Valitse sitten uudelleen **Ryhmä**. 
+
 
 ## <a name="using-spotlight"></a>Korostuksen käyttäminen
 Kirjanmerkit toivat mukanaan myös **korostuksen**. **Korostus**toiminnolla voit kiinnittää huomion tiettyyn kaavioon, kun esimerkiksi näytät kirjanmerkkejäsi esityksessä **Näytä**-tilassa.

@@ -2,23 +2,24 @@
 title: Paikallisen tietoyhdyskäytävän vianmääritys
 description: Tästä artikkelista saat vianmääritysohjeita paikalliselle tietoyhdyskäytävälle. Se tarjoaa ohjeita tunnettujen ongelmien kiertämiseen sekä työkaluja, joista on apua.
 author: mgblythe
+ms.author: mblythe
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-gateways
 ms.topic: conceptual
-ms.date: 06/02/2018
-ms.author: mblythe
+ms.date: 08/08/2018
 LocalizationGroup: Gateways
-ms.openlocfilehash: a99200707c8fc7de4fea2e32fe83238011bbf46c
-ms.sourcegitcommit: 627918a704da793a45fed00cc57feced4a760395
+ms.openlocfilehash: f0f29cb88c77f3d7775670c0869ee55938327763
+ms.sourcegitcommit: cce10e14c111e8a19f282ad6c032d802ebfec943
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37926584"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39658008"
 ---
 # <a name="troubleshooting-the-on-premises-data-gateway"></a>Paikallisen tietoyhdyskäytävän vianmääritys
-Tässä artikkelissa käsitellään yleisiä ongelmia, joita saattaa ilmetä käyttäessäsi **paikallista tietoyhdyskäytävää**.
+
+Tässä artikkelissa käsitellään joitakin yleisiä ongelmia käytettäessä **paikallista tietoyhdyskäytävää**.
 
 <!-- Shared Community & support links Include -->
 [!INCLUDE [gateway-onprem-tshoot-support-links-include](./includes/gateway-onprem-tshoot-support-links-include.md)]
@@ -27,44 +28,52 @@ Tässä artikkelissa käsitellään yleisiä ongelmia, joita saattaa ilmetä kä
 [!INCLUDE [gateway-onprem-tshoot-install-include](./includes/gateway-onprem-tshoot-install-include.md)]
 
 ## <a name="configuration"></a>Määrittäminen
+
 ### <a name="how-to-restart-the-gateway"></a>Yhdyskäytävän uudelleenkäynnistys
-Yhdyskäytävä suoritetaan Windows-palveluna, joten voit käynnistää ja sammuttaa sen usein tavoin. Voit esimerkiksi avata komentokehotteen laajennetuin oikeuksin koneessa, jossa yhdyskäytävää suoritetaan, ja suorittaa jommankumman seuraavista komennoista:
+
+Yhdyskäytävä suoritetaan Windows-palveluna, joten voit käynnistää ja sammuttaa sen useammalla tavalla. Voit esimerkiksi avata komentokehotteen laajennetuin oikeuksin koneessa, jossa yhdyskäytävää suoritetaan, ja suorittaa jommankumman seuraavista komennoista:
 
 * Voit lopettaa palvelun suorittamalla seuraavan komennon:
 
     '''   net stop PBIEgwService   '''
+
 * Voit käynnistää palvelun suorittamalla seuraavan komennon:
 
     '''   net start PBIEgwService   '''
 
-### <a name="error-failed-to-create-gateway-please-try-again"></a>Virhe: Yhdyskäytävän luominen epäonnistui. Yritä uudelleen.
+### <a name="error-failed-to-create-a-gateway-try-again"></a>Virhe: Yhdyskäytävän luominen epäonnistui. Yritä uudelleen
+
 Kaikki tiedot ovat saatavilla, mutta Power BI -palvelun kutsu palautti virheen. Näet virheen ja toiminnon tunnuksen. Tämä saattaa johtua useista eri syistä. Voit kerätä ja tarkistaa lokit (kuten alla mainitaan), joista saat lisätietoja.
 
 Tämä saattaa johtua myös välityspalvelimen määritysongelmista. Käyttöliittymä ei mahdollista välityspalvelinmääritystä. Lue lisätietoja [välityspalvelinmääritysten muokkaamisesta](service-gateway-proxy.md).
 
-### <a name="error-failed-to-update-gateway-details--please-try-again"></a>Virhe: Yhdyskäytävän tietojen päivittäminen ei onnistu.  Yritä uudelleen.
-Power BI -palvelusta vastaanotettiin tietoja yhdyskäytävään. Tiedot välitettiin paikalliseen Windows-palveluun, mutta niiden palautus ei onnistu. Myös symmetrisen avaimen luominen saattoi epäonnistua. Sisempi poikkeus näytetään kohdassa **Näytä tiedot**. Voit kerätä ja tarkistaa lokit (kuten alla mainitaan), joista saat lisätietoja.
+### <a name="error-failed-to-update-gateway-details-please-try-again"></a>Virhe: Yhdyskäytävän tietojen päivittäminen ei onnistu. Yritä uudelleen.
 
-### <a name="error-power-bi-service-reported-local-gateway-as-unreachable-please-restart-the-gateway-and-try-again"></a>Virhe: Power BI -palvelu ilmoittaa, että paikalliseen yhdyskäytävään ei saada yhteyttä. Käynnistä yhdyskäytävä uudelleen ja yritä uudelleen.
+Power BI -palvelusta vastaanotettiin tietoja yhdyskäytävään. Tiedot välitettiin paikalliseen Windows-palveluun, mutta niiden palautus ei onnistu. Symmetrisen avaimen luominen saattoi myös epäonnistua. Sisempi poikkeus näytetään kohdassa **Näytä tiedot**. Jos haluat lisätietoja, voit kerätä ja tarkistaa alla mainitut lokit.
+
+### <a name="error-power-bi-service-reported-local-gateway-as-unreachable-restart-the-gateway-and-try-again"></a>Virhe: Power BI -palvelu ilmoittaa, että paikalliseen yhdyskäytävään ei saada yhteyttä. Käynnistä yhdyskäytävä uudelleen ja yritä uudelleen.
+
 Power BI -palvelua kutsutaan uudelleen määrityksen lopussa yhdyskäytävän vahvistamiseksi. Power BI ei ilmoita yhdyskäytävän olevan *käytettävissä*. Windows-palvelun uudelleenkäynnistäminen saattaa mahdollistaa tiedonsiirron onnistumisen. Voit kerätä ja tarkistaa lokit (kuten alla mainitaan), joista saat lisätietoja.
 
 ### <a name="script-error-during-sign-into-power-bi"></a>Komentosarjavirhe Power BI:hin kirjauduttaessa
+
 Saatat saada komentosarjavirheen, kun kirjaudut Power BI:hin paikallisen tietoyhdyskäytävän määrittämisen yhteydessä. Seuraavan suojauspäivityksen asentamisen pitäisi korjata ongelma. Voit asentaa sen Windows Updatesta.
 
 [MS16-051: Internet Explorerin suojauspäivitys: 10.5.2016 (KB 3154070)](https://support.microsoft.com/kb/3154070)
 
 ### <a name="gateway-configuration-failed-with-a-null-reference-exception"></a>Yhdyskäytävän määritys epäonnistui null-viitepoikkeuksella
+
 Saatat saada seuraavankaltaisen virheen.
 
         Failed to update gateway details.  Please try again.
         Error updating gateway configuration.
 
-Se sisältää pinon jäljityksen, joka saattaa sisältää seuraavat.
+Se sisältää pinon jäljityksen, joka saattaa sisältää seuraavan viestin.
 
         Microsoft.PowerBI.DataMovement.Pipeline.Diagnostics.CouldNotUpdateGatewayConfigurationException: Error updating gateway configuration. ----> System.ArgumentNullException: Value cannot be null.
         Parameter name: serviceSection
 
-Jos olet päivittämässä vanhemmasta yhdyskäytävästä, säilytämme määritystiedoston. Siitä saattaa puuttua osio. Kun yhdyskäytävä yrittää lukea sitä, saat yllä mainitun null-viitepoikkeuksen.
+Jos olet päivittämässä vanhemmasta yhdyskäytävästä, säilytämme määritystiedoston. Siitä saattaa puuttua osio. Kun yhdyskäytävä yrittää lukea sitä, saatat nähdä yllä mainitun null-viitepoikkeuksen.
 
 Voit korjata tämän seuraavien ohjeiden avulla.
 
@@ -76,34 +85,40 @@ Voit korjata tämän seuraavien ohjeiden avulla.
 4. Voit myös palauttaa olemassa olevan yhdyskäytävän ottamalla käyttöön palautusavaimen.
 
 ### <a name="support-for-tls-1112"></a>TLS 1.1:n ja TLS 1.2:n tuki
-Elokuun 2017 päivityksestä lähtien paikallinen yhdyskäytävä on oletusarvoisesti yhteydessä **Power BI -palveluun** Transport Layer Security (TLS) 1.1:llä tai 1.2:lla. Vanhemmat paikallisen tietoyhdyskäytävän versiot käyttävät oletusarvoisesti TLS 1.0:aa. TLS 1.0:n tuki päättyi 1.11.2017, joten sinun täytyy päivittää paikallisen tietoyhdyskäytävän asennukset elokuun 2017 versioon tai tätä uudempaan versioon, jotta yhdyskäytäväsi toimivat jatkossakin.
 
-Paikallinen tietoyhdyskäytävä tukee TLS 1.0:aa 1.11.2017 saakka ja tämän jälkeenkin varamekanismina. Voit varmistaa, että yhdyskäytäväliikenne käyttää TLS 1.1:tä tai 1.2:ta (ja estää TSL 1.0:n käytön yhdyskäytävässäsi) lisäämällä seuraavat rekisteriavaimet koneeseen, joka suorittaa yhdyskäytäväpalvelua, tai muokkaamalla niitä siinä:
+Elokuun 2017 päivityksestä lähtien paikallinen yhdyskäytävä on oletusarvoisesti yhteydessä **Power BI -palveluun** Transport Layer Security (TLS) 1.1:llä tai 1.2:lla. Vanhemmat paikallisen tietoyhdyskäytävän versiot käyttävät oletusarvoisesti TLS 1.0:aa. Sinun täytyy päivittää paikallisen tietoyhdyskäytävän asennukset elokuun 2017 versioon tai tätä uudempaan versioon, jotta yhdyskäytäväsi toimivat jatkossakin.
+
+>[!NOTE]
+>TLS 1.0 -tuki päättyi 1. marraskuuta 2017.
+
+On tärkeää huomata, että paikallinen tietoyhdyskäytävä tukee yhä TLS 1.0:aa 1.11.2017 saakka ja yhdyskäytävä käyttää sitä varamekanismina. Voit varmistaa, että yhdyskäytäväliikenne käyttää TLS 1.1:tä tai 1.2:ta (ja estää TSL 1.0:n käytön yhdyskäytävässäsi) lisäämällä seuraavat rekisteriavaimet koneeseen, joka suorittaa yhdyskäytäväpalvelua, tai muokkaamalla niitä siinä:
 
         [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v4.0.30319]"SchUseStrongCrypto"=dword:00000001
         [HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319]"SchUseStrongCrypto"=dword:00000001
 
 > [!NOTE]
 > Näiden rekisteriavaimien lisääminen tai muokkaaminen ottaa muutoksen käyttöön kaikissa .NET-sovelluksissa. Jos haluat lisätietoja rekisterimuutoksista, jotka vaikuttavat muiden sovellusten TLS:ään, lue ohjeartikkeli [Transport Layer Securityn (TLS) rekisteriasetukset](https://docs.microsoft.com/windows-server/security/tls/tls-registry-settings).
-> 
-> 
 
 ## <a name="data-sources"></a>Tietolähteet
+
 ### <a name="error-unable-to-connect-details-invalid-connection-credentials"></a>Virhe: yhteyttä ei voida muodostaa. Tiedot: virheelliset yhteyden tunnistetiedot.
-**Näytä tiedot** -kohdassa pitäisi näkyä virheilmoitus tietolähteestä. Jos kyseessä on SQL Server, sen pitäisi olla seuraavankaltainen.
+
+**Näytä tiedot** -kohdassa pitäisi näkyä tietolähteestä saatu virheilmoitus. Jos kyseessä on SQL Server, näet jotakin seuraavankaltaista.
 
     Login failed for user 'username'.
 
 Varmista, että käyttäjänimi ja salasana ovat oikein. Varmista myös, että näillä tunnistetiedoilla saadaan yhteys tietolähteeseen. Varmista, että käytetty tili täsmää **todennusmenetelmän** kanssa.
 
 ### <a name="error-unable-to-connect-details-cannot-connect-to-the-database"></a>Virhe: yhteyttä ei voida muodostaa. Tiedot: tietokantaa ei saada yhteyttä.
+
 Palvelimeen saadaan yhteys, mutta annettuun tietokantaan ei. Tarkista tietokannan nimi ja se, että käyttäjätunnistetiedoilla on oikeat oikeudet tietokantaan.
 
-**Näytä tiedot** -kohdassa pitäisi näkyä virheilmoitus tietolähteestä. Jos kyseessä on SQL Server, sen pitäisi olla seuraavankaltainen.
+**Näytä tiedot** -kohdassa pitäisi näkyä tietolähteestä saatu virheilmoitus. Jos kyseessä on SQL Server, näet jotakin seuraavankaltaista.
 
     Cannot open database "AdventureWorks" requested by the login. The login failed. Login failed for user 'username'.
 
 ### <a name="error-unable-to-connect-details-unknown-error-in-data-gateway"></a>Virhe: yhteyttä ei voida muodostaa. Tiedot: tuntematon virhe tietoyhdyskäytävässä.
+
 Tämä virhe voi johtua eri syistä. Muista varmistaa, että voit muodostaa yhteyden tietolähteeseen sillä koneella, joka isännöi yhdyskäytävää. Tämä saattaa johtua siitä, että palvelin ei ole käytettävissä.
 
 Näet **Näytä tiedot** -kohdassa virhekoodin **DM_GWPipeline_UnknownError**.
@@ -111,9 +126,10 @@ Näet **Näytä tiedot** -kohdassa virhekoodin **DM_GWPipeline_UnknownError**.
 Saat lisätietoja myös kohdasta Tapahtumalokit > **Sovellusten ja palveluiden lokit** > **Paikallinen tietoyhdyskäytäväpalvelu**.
 
 ### <a name="error-we-encountered-an-error-while-trying-to-connect-to-server-details-we-reached-the-data-gateway-but-the-gateway-cant-access-the-on-premises-data-source"></a>Virhe: Kohteeseen <server> yhdistäessä ilmeni virhe. Tiedot: tietoyhdyskäytävään saatiin yhteys, mutta yhdyskäytävä ei voi käyttää paikallista tietolähdettä.
+
 Määritettyyn tietolähteeseen ei saada yhteyttä. Muista tarkistaa tälle tietolähteelle annetut tiedot.
 
-Näet **Näytä tiedot**-kohdassa virhekoodin **DM_GWPipeline_Gateway_DataSourceAccessError**.
+Näet **Näytä tiedot** -kohdassa virhekoodin **DM_GWPipeline_Gateway_DataSourceAccessError**.
 
 Jos taustalla oleva virheilmoitus on samankaltainen kuin seuraava, tämä tarkoittaa sitä, että tietolähteelle käyttämäsi tili ei ole palvelimen järjestelmänvalvoja kyseiselle Analysis Services -esiintymälle. [Lisätiedot](https://docs.microsoft.com/sql/analysis-services/instances/grant-server-admin-rights-to-an-analysis-services-instance)
 
@@ -121,14 +137,14 @@ Jos taustalla oleva virheilmoitus on samankaltainen kuin seuraava, tämä tarkoi
 
 Jos taustalla oleva virheilmoitus on samankaltainen kuin seuraava, tämä saattaa tarkoittaa sitä, että Analysis Servicesin palvelutililtä saattaa puuttua hakemistomäärite [token-groups-global-and-universal](https://msdn.microsoft.com/library/windows/desktop/ms680300.aspx) (TGGAU).
 
-    The user name or password is incorrect.
+    The username or password is incorrect.
 
-Toimialueilla, jotka ovat yhteensopivia Windows 2000:ta vanhempien käyttöjärjestelmien kanssa, on TGGAU-määrite käytössä. Useimmat uudet luodut toimialueet eivät kuitenkaan oletusarvoisesti käytä tätä määritettä. Voit lukea lisätietoja asiasta [täältä](https://support.microsoft.com/kb/331951).
+Toimialueilla, jotka ovat yhteensopivia Windows 2000:ta vanhempien käyttöjärjestelmien kanssa, on käytössä TGGAU-määrite. Useimmat vastaluodut toimialueet eivät kuitenkaan oletusarvoisesti käytä tätä määritettä. Voit lukea lisätietoja asiasta [täältä](https://support.microsoft.com/kb/331951).
 
 Voit vahvistaa tämän toimimalla seuraavasti.
 
 1. Muodosta yhteys Analysis Services -koneeseen SQL Server Management Studiossa. Liitä Advanced Connection Properties -kohdassa kyseessä olevan käyttäjän EffectiveUserName ja tarkista, toistuuko ongelma.
-2. Dsacls Active Directory -työkalulla voit tarkistaa, onko määrite lueteltu. Työkalu löytyy yleensä toimialueen ohjauskoneesta. Sinun täytyy tietää tilin toimialueen DN-nimi ja välittää se työkalulle.
+2. Dsacls Active Directory -työkalulla voit tarkistaa, onko määrite lueteltu. Tämä työkalu löytyy toimialueen ohjauskoneesta. Sinun täytyy tietää tilin toimialueen erillinen nimi ja välittää se työkalulle.
 
         dsacls "CN=John Doe,CN=UserAccounts,DC=contoso,DC=com"
 
@@ -140,50 +156,59 @@ Voit vahvistaa tämän toimimalla seuraavasti.
 
 Tämän ongelman korjaamiseksi sinun täytyy ottaa TGGAU käyttöön tilillä, jota käytetään Analysis Servicesin Windows-palvelussa.
 
-**Toinen mahdollisuus väärälle käyttäjänimelle sekä salasanalle**
+#### <a name="another-possibility-for-username-or-password-incorrect"></a>Toinen mahdollisuus väärälle käyttäjänimelle sekä salasanalle
 
 Tämä virhe saattaa johtua myös siitä, jos Analysis Services -palvelin on eri toimialueella kuin käyttäjät ja kaksisuuntaista luottamusta ei ole määritetty.
 
-Sinun täytyy varmistaa toimialueiden luottamussuhde yhdessä toimialueiden järjestelmänvalvojien kanssa.
+Sinun täytyy varmistaa toimialueiden välinen luottamussuhde yhdessä toimialueiden järjestelmänvalvojien kanssa.
 
-**Tietoyhdyskäytävän tietolähteitä ei näe Power BI -palvelun Analysis Servicesin Nouda tiedot -näkymässä**
+#### <a name="unable-to-see-the-data-gateway-data-sources-in-the-get-data-experience-for-analysis-services-from-the-power-bi-service"></a>Tietoyhdyskäytävän tietolähteitä ei näy Power BI -palvelun Analysis Servicesin ”Nouda tiedot” -näkymässä
 
 Varmista, että tilisi on lueteltu tietolähteen **Käyttäjät**-välilehdellä yhdyskäytävän määrityksissä. Jos sinulla ei ole käyttöoikeuksia yhdyskäytävään, pyydä yhdyskäytävän järjestelmänvalvojaa antamaan ne. Vain **Käyttäjät**-luettelossa luetelluilla tileillä nähdään tietolähteet, jotka on lueteltu Analysis Services -luettelossa.
 
 ### <a name="error-you-dont-have-any-gateway-installed-or-configured-for-the-data-sources-in-this-dataset"></a>Virhe: Sinulla ei ole yhdyskäytävää asennettuna tai määritettynä tämän tietojoukon tietolähteille
+
 Varmista, että olet lisännyt yhden tai useamman tietolähteen yhdyskäytävään kohdassa [Tietolähteen lisääminen](service-gateway-manage.md#add-a-data-source) kuvatulla tavalla. Jos yhdyskäytävä ei näy hallintaportaalin kohdassa **Yhdyskäytävien hallinta**, kokeile tyhjentää selaimen välimuisti tai kirjautua ulos palvelusta ja sitten takaisin sisään.
 
 ## <a name="datasets"></a>Tietojoukot
-### <a name="error-there-is-not-enough-space-for-this-row"></a>Virhe: tälle riville ei ole tarpeeksi tilaa.
+
+### <a name="error-there-is-not-enough-space-for-this-row"></a>Virhe: Tälle riville ei ole tarpeeksi tilaa.
+
 Tämä virhe ilmenee, jos yksittäisen rivin koko on yli 4 Mt. Sinun täytyy määrittää, mikä tietolähteen rivi on kyseessä, ja yrittää suodattaa se pois tai pienentää tämän rivin kokoa.
 
-### <a name="error-the-server-name-provided-doesnt-match-the-server-name-on-the-sql-server-ssl-certificate"></a>Virhe: annettu palvelimen nimi ei vastaa SQL Serverin SSL-varmenteessa olevaa nimeä.
-Näin voi käydä, jos varmenteessa oleva nimi on palvelimen täydellinen toimialuenimi (FQDN), mutta annoit vain palvelimen NetBIOS-nimen. Tämän johdosta varmenne ei täsmää. Voit korjata tämän ongelman vaihtamalla palvelimen nimen yhdyskäytävän tietolähteessä ja PBIX-tiedostossa palvelimen täydelliseksi toimialuenimeksi (FQDN).
+### <a name="error-the-server-name-provided-doesnt-match-the-server-name-on-the-sql-server-ssl-certificate"></a>Virhe: Annettu palvelimen nimi ei vastaa SQL Serverin SSL-varmenteessa olevaa nimeä.
 
-### <a name="i-dont-see-the-on-premises-data-gateway-persent-when-configuring-scheduled-refresh"></a>En näe paikallista tietoyhdyskäytävää, kun määritän ajoitettua päivitystä.
+Näin voi käydä, jos varmenteessa oleva nimi on palvelimen täydellinen toimialuenimi (FQDN), mutta annoit vain palvelimen NetBIOS-nimen. Tämän vuoksi varmenne ei täsmää. Voit korjata tämän ongelman vaihtamalla palvelimen nimen yhdyskäytävän tietolähteessä ja PBIX-tiedostossa palvelimen täydelliseksi toimialuenimeksi (FQDN).
+
+### <a name="i-dont-see-the-on-premises-data-gateway-present-when-configuring-scheduled-refresh"></a>En näe paikallista tietoyhdyskäytävää, kun määritän ajoitettua päivitystä
+
 Tämä saattaa johtua muutamasta eri syystä.
 
 1. Palvelimen ja tietokannan nimi eivät täsmää Power BI Desktopin ja yhdyskäytävälle määritetyn tietolähteen kanssa. Näiden arvojen täytyy olla samat. Niissä ei huomioida kirjainkokoa.
 2. Tiliäsi ei luetella tietolähteen **Käyttäjät**-välilehdellä yhdyskäytävämäärityksessä. Sinun täytyy pyytää yhdyskäytävän järjestelmänvalvojaa lisäämään tilisi luetteloon.
 3. Power BI Desktop -tiedostossasi on useita tietolähteitä eikä kaikkia näitä ole määritetty yhdyskäytävälle. Sinun täytyy määrittää kaikki tietolähteet yhdyskäytävälle, jotta yhdyskäytävä näkyy ajoitetussa päivityksessä.
 
-### <a name="error-the-received-uncompressed-data-on-the-gateway-client-has-exceeded-limit"></a>Virhe: yhdyskäytäväasiakkaan vastaanottamat pakatut tiedot ylittävät rajoituksen.
-Tarkka rajoitus on 10 Gt pakkaamatonta tietoa per taulukko. Jos törmäät tähän ongelmaan, käytettävissä on hyviä optimointitapoja ongelman välttämiseksi. Voit pienentää kokoa etenkin vähentämällä pitkälti toistuvien pitkien merkkijonoarvojen käyttöä käyttämällä niiden sijaan normalisoitua avainta. Voit myös poistaa sarakkeen, jos se ei ole käytössä.
+### <a name="error-the-received-uncompressed-data-on-the-gateway-client-has-exceeded-the-limit"></a>Virhe: Yhdyskäytäväasiakkaan vastaanottamat pakatut tiedot ylittävät rajoituksen.
+
+Tarkka rajoitus on 10 Gt pakkaamatonta tietoa per taulukko. Jos törmäät tähän ongelmaan, käytettävissä on hyviä optimointitapoja ongelman välttämiseksi. Voit pienentää kokoa etenkin vähentämällä usein toistuvien pitkien merkkijonoarvojen käyttöä käyttämällä niiden sijaan normalisoitua avainta. Voit myös poistaa sarakkeen (jos se ei ole käytössä).
 
 ## <a name="reports"></a>Raportit
+
 ### <a name="report-could-not-access-the-data-source-because-you-do-not-have-access-to-our-data-source-via-an-on-premises-data-gateway"></a>Raportti ei voi käyttää tietolähdettä, koska sinulla ei ole käyttöoikeutta tietolähteeseemme paikallisen tietoyhdyskäytävän kautta.
+
 Tämä johtuu yleensä jostain alla mainituista syistä.
 
 1. Tietolähdetiedot eivät täsmää taustalla olevan tietojoukon kanssa. Palvelimen ja tietokannan nimen täytyy täsmätä paikalliselle tietoyhdyskäytävälle määritetyn tietolähteen ja Power BI Desktopissa annettujen kanssa. Jos käytät IP-osoitetta Power BI Desktopissa, myös paikallisen tietoyhdyskäytävän tietolähteen täytyy käyttää IP-osoitetta.
 2. Millekään organisaatiosi yhdyskäytävälle ei ole tietolähdettä käytettävissä. Voit määrittää tietolähteen uudessa tai olemassa olevassa paikallisessa tietoyhdyskäytävässä.
 
 ### <a name="error-data-source-access-error-please-contact-the-gateway-administrator"></a>Virhe: tietolähteen käyttövirhe. Ota yhteyttä yhdyskäytävän järjestelmänvalvojaan.
-Jos raportti käyttää reaaliaikaista Analysis Services -yhteyttä, saatat törmätä ongelmaan, jossa EffectiveUserNamelle välitetty arvo on joko epäkelpo tai sillä ei ole oikeuksia Analysis Services -koneessa. Yleensä todennusongelma johtuu siitä, että EffectiveUserNamelle välitetty arvo ei täsmää paikallisen täydellisen käyttäjätunnuksen (UPN) kanssa.
+
+Jos tämä raportti käyttää reaaliaikaista Analysis Services -yhteyttä, saatat törmätä ongelmaan, jossa EffectiveUserNamelle välitetty arvo on joko epäkelpo tai sillä ei ole oikeuksia Analysis Services -koneessa. Yleensä todennusongelma johtuu siitä, että EffectiveUserNamelle välitetty arvo ei täsmää paikallisen täydellisen käyttäjätunnuksen (UPN) kanssa.
 
 Voit tarkistaa tämän seuraavasti.
 
 1. Etsi käytössä oleva käyttäjänimi [yhdyskäytävälokeista](#logs).
-2. Kun sinulla on välitettävä arvo, tarkista, että se on oikea. Jos se on käyttäjäsi arvo, voit tarkistaa seuraavalla komentokehotteen komennolla, mikä täydellisen käyttäjätunnuksen tulisi olla. Täydellinen käyttäjätunnus näyttää sähköpostiosoitteelta.
+2. Kun sinulla on välitettävä arvo, tarkista, että se on oikea. Jos se on käyttäjäsi arvo, voit tarkistaa seuraavalla komentokehotteen komennolla, mikä täydellisen käyttäjätunnuksen tulisi olla. Se näyttää sähköpostiosoitteelta.
 
         whoami /upn
 
@@ -205,16 +230,18 @@ Tarkista oman tilauksesi palvelinkeskusalue seuraavasti:
 
 1. Valitse **?** Power BI -palvelun oikeasta yläkulmasta.
 2. Valitse **Tietoja Power BI:stä**.
-3. Näet palvelinkeskuksesi alueen kohdasta **Your data is stored in**.
+3. Näet tietoalueesi kohdasta **Tietosi tallennuspaikka**.
 
-    ![](media/service-gateway-onprem-tshoot/power-bi-data-region.png)
+    ![Tietoalue](media/service-gateway-onprem-tshoot/power-bi-data-region.png)
 
 Jos et edelleenkään pääse mihinkään, voit kokeilla verkkojäljitystä [fiddlerin](#fiddler) tai netsh:n kaltaisella työkalulla. Ne ovat kuitenkin kehittyneitä keräystyökaluja, joten saatat tarvita apua kerättyjen tietojen analysointiin. Voit pyytää apua [tuesta](https://support.microsoft.com).
 
 ## <a name="performance"></a>Suorituskyky
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/IJ_DJ30VNk4?showinfo=0" frameborder="0" allowfullscreen></iframe>
 
 ### <a name="performance-counters"></a>Resurssilaskurit
+
 Tarjolla on lukuisia resurssilaskureita, joilla voit seurata yhdyskäytävän toimintaa. Niiden avulla voit kartoittaa sitä, onko aktiviteettikuormitus suuri, jolloin sinun täytyy ehkä luoda uusi yhdyskäytävä. Nämä laskurit eivät kerro sitä, kuinka kauan jokin kestää.
 
 Voit käyttää näitä laskureita Windowsin suorituskyvyn valvonta -työkalulla.
@@ -227,8 +254,8 @@ Laskurit on jaettu ryhmiin.
 | --- | --- |
 | ADO.NET |Tätä käytetään missä tahansa DirectQuery-yhteydessä. |
 | ADOMD |Tätä käyttävät Analysis Services 2014 ja tätä vanhemmat versiot. |
-| OLEDB |Tätä käyttävät tietyt tietolähteet. Niitä ovat esimerkiksi SAP HANA sekä Analysis Service 2016 ja tätä uudemmat versiot. |
-| Mashup |Tämä käsittää minkä tahansa tuodun tietolähteen. Jos olet määrittämässä ajoitettua päivitystä tai manuaalista päivitystä, se käsitellään mashup-toiminnolla. |
+| OLEDB |Tietyt tietolähteet käyttävät tätä. Niitä ovat esimerkiksi SAP HANA sekä Analysis Service 2016 ja tätä uudemmat versiot. |
+| Mashup |Tämä käsittää minkä tahansa tuodun tietolähteen. Jos olet määrittämässä ajoitettua päivitystä tai manuaalista päivitystä, se käsitellään mashup-koneella. |
 
 Tässä on luettelo käytettävissä olevista resurssilaskureista.
 
@@ -252,28 +279,28 @@ Tässä on luettelo käytettävissä olevista resurssilaskureista.
 | # of Mashup open connection failed / sec |Tämä on sekunnissa suoritettujen avoimien Mashup-yhteyksien epäonnistuneiden toimintojen määrä. |
 | # of Mashup queries executed / sec |Tämä on sekunnissa suoritettujen Mashup-kyselyiden määrä (onnistuneet ja epäonnistuneet). |
 | # of Mashup queries failed / sec |Tämä on sekunnissa suoritettujen epäonnistuneiden Mashup-kyselyiden määrä. |
-| # of multiple result set OLEDB queries failed / sec |Tämä on sekunnissa suoritettujen useiden tulosjoukkojen epäonnistuneiden OLEDB-kyselyiden määrä. |
-| # of OLEDB multiple resultset queries executed / sec |Tämä on sekunnissa suoritettujen useiden tulosjoukkojen OLEDB-kyselyiden määrä (onnistuneet ja epäonnistuneet). |
+| # of multiple result sets of OLEDB queries failed / sec |Tämä on sekunnissa suoritettujen useiden tulosjoukkojen epäonnistuneiden OLEDB-kyselyiden määrä. |
+| # of OLEDB multiple result sets of queries executed / sec |Tämä on sekunnissa suoritettujen useiden tulosjoukkojen OLEDB-kyselyiden määrä (onnistuneet ja epäonnistuneet). |
 | # of OLEDB open connection executed / sec |Tämä on sekunnissa suoritettujen avoimien OLED-yhteyksien toimintojen määrä (onnistuneet ja epäonnistuneet). |
 | # of OLEDB open connection failed / sec |Tämä on sekunnissa suoritettujen avoimien OLED-yhteyksien epäonnistuneiden toimintojen määrä. |
 | # of OLEDB queries executed / sec |Tämä on sekunnissa suoritettujen useiden tulosjoukkojen OLEDB-kyselyiden määrä (onnistuneet ja epäonnistuneet). |
-| # of OLEDB queries failed / sec |Tämä on sekunnissa suoritettujen useiden tulosjoukkojen epäonnistuneiden OLEDB-kyselyiden määrä. |
-| # of OLEDB single resultset queries executed / sec |Tämä on sekunnissa suoritettujen yhden tulosjoukon OLEDB-kyselyiden määrä (onnistuneet ja epäonnistuneet). |
+| # of OLEDB queries failed / sec |Tämä on sekunnissa suoritettujen epäonnistuneiden useiden tulosjoukkojen OLEDB-kyselyiden määrä. |
+| # of OLEDB single result set queries executed / sec |Tämä on sekunnissa suoritettujen yhden tulosjoukon OLEDB-kyselyiden määrä (onnistuneet ja epäonnistuneet). |
 | # of queries failed / sec |Tämä sekunnissa suoritettujen epäonnistuneiden kyselyiden määrä. |
 | # of single result set OLEDB queries failed / sec |Tämä on sekunnissa suoritettujen yhden tulosjoukon epäonnistuneiden OLEDB-kyselyiden määrä. |
 
 ## <a name="reviewing-slow-performing-queries"></a>Hitaasti suoritettavien kyselyiden tarkistaminen
+
 Saatat huomata, että yhdyskäytävä vastaa liian hitaasti. Tätä saattaa esiintyä DirectQuery-kyselyissä tai päivittäessäsi tuotua tietojoukkoa. Voit ottaa käyttöön lisäkirjauksen tuotoskyselyissä ja niiden aikatiedoissa, jotta voit kartoittaa, mikä toimii hitaasti. Kun löydät kauan kestävän kyselyn, sinun täytyy ehkä muokata tietolähdettäsi kyselyn suorituskyvyn parantamiseksi. Sinun täytyy ehkä muokata esimerkiksi SQL Server -kyselyn indeksejä.
 
 Sinun täytyy muokata kahta määritystiedostoa määrittääksesi kyselyn keston.
 
 ### <a name="microsoftpowerbidatamovementpipelinegatewaycoredllconfig"></a>Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config
+
 Vaihda tiedoston *Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config* `EmitQueryTraces`-asetuksen arvo `False` arvoksi `True`. Tämä tiedosto löytyy oletusarvoisesti sijainnista *C:\Program Files\On-premises data gateway*. Kun `EmitQueryTraces` on käytössä, yhdyskäytävästä tietolähteeseen lähetetyt kyselyt kirjataan lokiin.
 
 > [!IMPORTANT]
-> Kun otat EmitQueryTraces-asetuksen käyttöön, lokitiedoston koko voi kasvaa merkittävästi, mutta tämä riippuu yhdyskäytävän käytöstä. Kun olet tarkistanut lokit, sinun kannattaa vaihtaa EmitQueryTraces-asetuksen arvoksi False. Tätä asetusta ei kannata jättää käyttöön pitkäksi aikaa.
-> 
-> 
+> Kun otat EmitQueryTraces-asetuksen käyttöön, lokitiedoston koko voi kasvaa merkittävästi, mutta tämä riippuu yhdyskäytävän käytöstä. Kun olet tarkistanut lokit, sinun kannattaa vaihtaa EmitQueryTraces-asetuksen arvoksi False. Tämän asetuksen jättämistä käyttöön pitkäksi aikaa ei suositella.
 
 ```
 <setting name="EmitQueryTraces" serializeAs="String">
@@ -311,14 +338,13 @@ GROUP BY [t0].[ProductCategoryName],[t0].[FiscalYear] </pi>"
 ```
 
 ### <a name="microsoftpowerbidatamovementpipelinediagnosticsdllconfig"></a>Microsoft.PowerBI.DataMovement.Pipeline.Diagnostics.dll.config
+
 Vaihda tiedoston *Microsoft.PowerBI.DataMovement.Pipeline.Diagnostics.dll.config* `TracingVerbosity`-asetuksen arvo `4` arvoksi `5`. Tämä tiedosto löytyy oletusarvoisesti sijainnista *C:\Program Files\On-premises data gateway*. Kun muokkaat tätä asetusta, yhdyskäytävälokiin kirjataan yksityiskohtaiset merkinnät. Tämä sisältää merkinnät, joista näkyy kesto. Voit ottaa yksityiskohtaiset merkinnät käyttöön myös ottamalla Lisäkirjaaminen lokiin -painikkeen käyttöön paikallisessa yhdyskäytäväsovelluksessa.
 
    ![lisäkirjaaminen](media/service-gateway-onprem-tshoot/additional-logging.png)
 
 > [!IMPORTANT]
-> Kun vaihdat TracingVerbosity-asetuksen arvoksi `5`, lokitiedoston koko voi kasvaa merkittävästi (yhdyskäytävän käytöstä riippuen). Kun olet tarkistanut lokit, vaihda TraceVerbosity-asetuksen arvoksi `4`. Tätä asetusta ei kannata jättää käyttöön pitkäksi aikaa.
-> 
-> 
+> Kun vaihdat TracingVerbosity-asetuksen arvoksi `5`, lokitiedoston koko voi kasvaa merkittävästi (yhdyskäytävän käytöstä riippuen). Kun olet tarkistanut lokit, vaihda TraceVerbosity-asetuksen arvoksi `4`. Tämän asetuksen jättämistä käyttöön pitkäksi aikaa ei suositella.
 
 ```
 <setting name="TracingVerbosity" serializeAs="String">
@@ -330,7 +356,7 @@ Vaihda tiedoston *Microsoft.PowerBI.DataMovement.Pipeline.Diagnostics.dll.config
 
 ### <a name="activity-types"></a>Tehtävätyypit
 
-| Tehtävätyyppi | Kuvaus |
+| Tehtävätyypit | Kuvaus |
 | --- | --- |
 | MGEQ |Nämä ovat suoritettuja ADO.NET-kyselyitä. Tämä käsittää DirectQuery-tietolähteet. |
 | MGEO |Nämä ovat OLEDB-kyselyitä. Tämä käsittää SAP HANA- ja Analysis Services 2016 -kyselyt. |
@@ -347,9 +373,57 @@ Voit tarkistaa tietolähteen kyselyn keston seuraavasti.
         DM.EnterpriseGateway Verbose: 0 : 2016-09-26T23:08:56.7940067Z DM.EnterpriseGateway    baf40f21-2eb4-4af1-9c59-0950ef11ec4a    5f99f566-106d-c8ac-c864-c0808c41a606    MGEQ    21f96cc4-7496-bfdd-748c-b4915cb4b70c    B8DFCF12 [DM.Pipeline.Common.TracingTelemetryService] Event: FireActivityCompletedSuccessfullyEvent (duration=5004)
 
    > [!NOTE]
-   > FireActivityCompletedSuccessfullyEvent on yksityiskohtainen merkintä. Sitä ei kirjata ellei TraceVerbosity-asetus ole tasolla 5.
-   > 
-   > 
+   > FireActivityCompletedSuccessfullyEvent on yksityiskohtainen merkintä. Tätä merkintää ei kirjata, ellei TraceVerbosity-asetus ole tasolla 5.
+
+## <a name="firewall-or-proxy"></a>Palomuuri tai välityspalvelin
+
+Jos tarvitset tietoa siitä, miten välityspalvelintiedot annetaan yhdyskäytävää varten, katso [Välityspalvelinasetusten määrittäminen Power BI ‑yhdyskäytäviä varten](service-gateway-proxy.md).
+
+Voit testata, estääkö palomuurisi tai välityspalvelimesi yhteyksiä, suorittamalla PowerShell-komentoriviltä [Test-NetConnection](https://docs.microsoft.com/powershell/module/nettcpip/test-netconnection)-komennon. Se testaa yhdistettävyyden Azuren palveluväylään. Tämä testaa vain verkon yhdistettävyyttä, eikä sillä ole mitään tekemistä pilvipalvelinpalvelun tai yhdyskäytävän kanssa. Se auttaa määrittämään, voiko koneesi muodostaa Internet-yhteyden.
+
+    Test-NetConnection -ComputerName watchdog.servicebus.windows.net -Port 9350
+
+> [!NOTE]
+> Test-NetConnection-komento on käytettävissä vain Windows Server 2012 R2 ‑versiossa tai sitä uudemmissa versioissa. Se on myös käytettävissä Windows 8.1 ‑versiossa ja uudemmissa versioissa. Vanhemmissa käyttöjärjestelmäversiossa voit testata porttien yhdistettävyyden käyttämällä Telnetiä.
+
+Tulosten pitäisi vastata seuraavaa esimerkkiä. TcpTestSucceeded-kohta saattaa poiketa esimerkistä. Jos **TcpTestSucceeded** ei ole *tosi*, palomuuri saattaa estää yhteyden.
+
+    ComputerName           : watchdog.servicebus.windows.net
+    RemoteAddress          : 70.37.104.240
+    RemotePort             : 5672
+    InterfaceAlias         : vEthernet (Broadcom NetXtreme Gigabit Ethernet - Virtual Switch)
+    SourceAddress          : 10.120.60.105
+    PingSucceeded          : False
+    PingReplyDetails (RTT) : 0 ms
+    TcpTestSucceeded       : True
+
+Jos haluat olla perusteellinen, korvaa **ComputerName**- ja **Port**-arvot [porttien](https://docs.microsoft.com/power-bi/service-gateway-onprem#ports) luettelossa annetuilla arvoilla.
+
+Palomuuri voi estää myös yhteydet, jotka Azuren palveluväylä muodostaa Azuren palvelinkeskuksiin. Tällaisessa tapauksessa lisää alueesi kyseisten palvelinkeskusten IP-osoitteet sallittujen luetteloon (poista esto). Näet luettelon Azuren IP-osoitteista [täältä](https://www.microsoft.com/download/details.aspx?id=41653).
+
+### <a name="network-ports-test"></a>Verkkoporttitesti
+
+Verkkoporttitesti-työkalun avulla tarkistetaan, pystyykö yhdyskäytäväsi käyttämään oikeita portteja kaikille etäpalvelimelle, joita yhdyskäytävä tarvitsee tietojen siirtämiseen. Jos verkkoporttitesti ei onnistu muodostamaan yhteyttä johonkin porttiin, yhdyskäytäväsi saattaa kohdata verkko-ongelmia. Jos sinulla on tällä hetkellä ongelmia verkon yhdyskäytävässä, suorita verkkoporttitesti sen varmistamiseksi, että sinulla on optimaalinen verkkoympäristö.  
+
+#### <a name="start-a-new-test"></a>Uuden istunnon aloittaminen
+
+Voit suorittaa uuden verkkoporttitestin paikallisen tietoyhdyskäytävän käyttöliittymässä.
+
+![Porttitestin aloittaminen](media/service-gateway-onprem-tshoot/gateway-onprem-porttest-starttest.png)
+
+Kun suoritat verkkoporttitestin, yhdyskäytäväsi hakee porttien ja palvelimien luettelon Azuren-palveluväylästä ja yrittää sitten muodostaa yhteyden kaikkiin palvelimiin ja portteihin. Kun Aloita uusi testi -linkki tulee näkyviin uudelleen, verkkoporttitesti on suoritettu loppuun.  
+
+#### <a name="test-results"></a>Testitulokset
+
+Testin yhteenveto näkyy Käynnistä uusi testi -linkin alla äskettäisinä testituloksina. Kaksi tulosta ovat valmiita (onnistui) ja valmiita (epäonnistui, katso uusimmat testitulokset). Jos testi onnistui, yhdyskäytäväsi on muodostanut yhteyden kaikkiin tarvittaviin portteihin. Jos testi epäonnistui, verkkoympäristösi saattaa estää nämä tarvittavat portit ja palvelimet. 
+
+![Porttitestitulokset](media/service-gateway-onprem-tshoot/gateway-onprem-porttest-result.png)
+
+Voit tarkastella viimeksi suoritetun testin tuloksia valitsemalla Avaa viimeksi suoritetut testitulokset -linkin alla esitetyn mukaisesti. Testitulokset avautuvat Windowsin oletustekstieditorissa.  
+
+Testituloksissa luetellaan kaikki palvelimet, portit ja IP-osoitteet, joita yhdyskäytäväsi tarvitsee. Jos testituloksissa näytetään Suljettu kaikille porteille alla kuvatun mukaisesti, varmista, että verkkoympäristösi ei estä yhteyttä. Sinun on ehkä otettava yhteyttä verkon järjestelmänvalvojaan vaadittujen porttien avaamiseksi.
+
+![Porttitestitulostiedosto](media/service-gateway-onprem-tshoot/gateway-onprem-porttest-result-file.png)
 
 ## <a name="kerberos"></a>Kerberos
 
@@ -374,23 +448,25 @@ Voit korjata ongelman seuraavasti:
 FailedToImpersonateUserException ilmenee, jos et voi tekeytyä toiseksi käyttäjäksi. Se voi ilmetä myös silloin, jos tili, joksi yrität tekeytyä, on toisesta toimialueesta kuin yhdyskäytäväpalvelu (tämä on rajoitus).
 
 **Ratkaisu**
+
 * Määritä, että määritykset ovat oikein yllä olevan ImpersonationLevel-kohdan ohjeiden mukaisesti.
 * Varmista, että käyttäjätunnus, joksi yritetään tekeytyä, on kelvollinen AD-tili.
 
-### <a name="general-error-1033-error-while-parsing-protocol"></a>Yleinen virhe; 1033-virhe protokollaa jäsennettäessä.
+### <a name="general-error-1033-error-while-parsing-the-protocol"></a>Yleinen virhe; 1033-virhe protokollaa jäsennettäessä.
 
-Saat 1033-virheen, kun ulkoinen SAP HANA:ssa määritetty tunnus ei täsmää kirjautumistunnuksen kanssa, jos käyttäjäksi tekeydytään täydellisellä käyttäjätunnuksella (alias@domain.com). Näet virhelokien alusta, että alkuperäinen täydellinen käyttäjätunnus alias@domain.com on korvattu täydellisellä käyttäjätunnuksella alias@domain.com, kuten alta näet.
+Saat 1033-virheen, kun ulkoinen SAP HANA:ssa määritetty tunnus ei täsmää kirjautumistunnuksen kanssa, jos käyttäjäksi tekeydytään täydellisellä käyttäjätunnuksella (alias@domain.com). Näet virhelokien alusta, että alkuperäinen täydellinen käyttäjätunnus alias@domain.com on korvattu uudella täydellisellä käyttäjätunnuksella alias@domain.com alla näytetyn mukaisesti.
 
 ```
-[DM.GatewayCore] SingleSignOn Required. Original UPN 'alias@domain.com' replaced with new UPN 'alias@domain.com'.
+[DM.GatewayCore] SingleSignOn Required. Original UPN 'alias@domain.com' replaced with new UPN 'alias@domain.com.'
 ```
 
 **Ratkaisu**
+
 * SAP HANA edellyttää, että tekeydytty käyttäjä käyttää sAMAccountName-määritettä AD:ssä (käyttäjäalias). Jos tämä ei ole oikein, saat 1033-virheen.
 
     ![sAMAccount](media/service-gateway-onprem-tshoot/sAMAccount.png)
 
-* Sinun pitäisi nähdä lokeissa sAMAccountName (alias), ei täydellistä käyttäjätunnusta. Se on alias, jonka perässä on toimialue (alias@doimain.com)
+* Sinun pitäisi nähdä lokeissa sAMAccountName (alias), ei täydellistä käyttäjätunnusta. Se on alias, jonka perässä on toimialue (alias@doimain.com).
 
     ![sAMAccount](media/service-gateway-onprem-tshoot/sAMAccount-02.png)
 
@@ -410,9 +486,10 @@ Saat 1033-virheen, kun ulkoinen SAP HANA:ssa määritetty tunnus ei täsmää ki
 
 ### <a name="sap-aglibodbchdb-dllhdbodbc-communication-link-failure-10709-connection-failed-rte-1-kerberos-error-major-miscellaneous-failure-851968-minor-no-credentials-are-available-in-the-security-package"></a>[SAP AG][LIBODBCHDB DLL][HDBODBC] Communication link failure;-10709 Connection failed (RTE:[-1] Kerberos error. Major: "Miscellaneous failure [851968]", minor: "No credentials are available in the security package
 
-Saat virheen -10709 yhteyden epäonnistumisesta, jos delegointia ei ole määritetty oikein AD:ssä.
+Saat 10709-virheen yhteyden epäonnistumisesta, jos delegointia ei ole määritetty oikein AD:ssä.
 
 **Ratkaisu**
+
 * Varmista, että SAP Hana -palvelin on mukana AD:n delegointivälilehdellä yhdyskäytäväpalvelutilille.
 
    ![delegointivälilehti](media/service-gateway-onprem-tshoot/delegation-in-AD.png)
@@ -421,6 +498,7 @@ Saat virheen -10709 yhteyden epäonnistumisesta, jos delegointia ei ole määrit
 [!INCLUDE [gateway-onprem-tshoot-tools-include](./includes/gateway-onprem-tshoot-tools-include.md)]
 
 ### <a name="refresh-history"></a>Päivityshistoria
+
 Kun käytät yhdyskäytävän ajoitettua päivitystä, **päivityshistoriasta** näet ilmenneet virheet sekä hyödyllisiä tietoja, jos sinun täytyy luoda tukipyyntö. Voit tarkistaa sekä ajoitetut päivitykset että pyynnöstä suoritetut päivitykset. Pääset **päivityshistoriaan seuraavasti**.
 
 1. Valitse Power BI:n siirtymisruudun **Tietojoukot**-kohdasta tietojoukko ja sitten &gt; Avaa valikko&gt; **Ajoita päivitys**.

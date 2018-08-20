@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/23/2018
+ms.date: 08/06/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: be4651d1658c80c84105a65bc48e4072ed203794
-ms.sourcegitcommit: 7bdb76bd80973c5e5174747b7e304705754fe647
+ms.openlocfilehash: a3e39e6326eb5b32cd72e2aefec74c07804b4639
+ms.sourcegitcommit: cce10e14c111e8a19f282ad6c032d802ebfec943
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39217624"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39657893"
 ---
 # <a name="use-visual-elements-to-enhance-power-bi-reports"></a>Power BI -raporttien parantaminen visuaalisia elementtejä käyttämällä
 
@@ -59,6 +59,9 @@ Kun sivun taustan läpinäkyvyys on suurempi kuin 50 %, näet raporttia luodessa
 ![Yli 50 %:n läpinäkyvyys tuo esiin pisteviivareunan](media/desktop-visual-elements-for-reports/visual-elements-for-reports_04.png)
 
 On tärkeää huomata, että pisteviivareuna näkyy *vain* raporttia muokattaessa. Sitä *ei* näytetä julkaistua raporttiasi esimerkiksi **Power BI -palvelussa** tarkasteleville.
+
+> [!NOTE]
+> Jos käytät taustakuvalle mustaa taustaa ja tekstivärinä valkoista tai hyvin vaaleaa väriä, muista, että **Vie PDF-tiedostoon** -ominaisuus ei sisällä taustakuvaa, joten valkoisia fontteja sisältävät viennit ovat lähes näkymättömiä viedyssä PDF-tiedostossa. Katso lisätietoja **viennistä PDF-tiedostoon** kohdasta [Vienti PDF-tiedostoon](desktop-export-to-pdf.md).
 
 
 ## <a name="using-improved-visual-headers-in-power-bi-reports"></a>Parannettujen visuaalisten ylätunnisteiden käyttäminen Power BI -raporteissa

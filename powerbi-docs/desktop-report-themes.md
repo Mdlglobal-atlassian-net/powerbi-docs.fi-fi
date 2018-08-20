@@ -1,5 +1,5 @@
 ---
-title: Raporttiteemojen käyttö Power BI Desktopissa (esikatseluversio)
+title: Raporttiteemojen käyttäminen Power BI Desktopissa
 description: Lue ohjeet mukautetun värivalikoiman käyttöön ja sen käyttöön kokonaisessa raportissa Power BI Desktopissa.
 author: davidiseminger
 manager: kfile
@@ -7,17 +7,17 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/02/2018
+ms.date: 08/08/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 757c1465d2451da8ebf340c7b9bfe1f4d9ff04f1
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 6aa3e6ba5a471176a6af2551344744cdc45697fb
+ms.sourcegitcommit: cce10e14c111e8a19f282ad6c032d802ebfec943
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34721175"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39657939"
 ---
-# <a name="use-report-themes-in-power-bi-desktop-preview"></a>Raporttiteemojen käyttö Power BI Desktopissa (esikatseluversio)
+# <a name="use-report-themes-in-power-bi-desktop"></a>Raporttiteemojen käyttäminen Power BI Desktopissa
 **Raporttiteemojen** avulla voit käyttää väriteemaa koko raportissa. Tällä tavalla voit käyttää esimerkiksi yrityksen omaa väriteemaa, kausivärejä tai mitä tahansa muuta haluamaasi väriteemaa. Kun otat käyttöön **raporttiteeman**, kaikki raporttisi visualisoinnit käyttävät valitun teeman värejä (lukuun ottamatta muutamia poikkeuksia, jotka kuvataan myöhemmin tässä artikkelissa).
 
 ![](media/desktop-report-themes/report-themes_1.png)
@@ -26,10 +26,14 @@ ms.locfileid: "34721175"
 
 **Power BI Desktopin** syyskuun 2017 julkaisusta alkaen voit määrittää enemmän raporttiteemaelementtejä JSON-tiedostolla ja mukauttaa (standardoida) miltei kaikki JSON-tiedostoa käyttävät elementit, joita voit sitten säätää manuaalisesti **Muotoilu**-ruudussa. Syyskuun 2017 julkaisun (ja tätä uudempien julkaisujen) tavoitteena on antaa käyttäjille täydet mahdollisuudet hallita omien raporttiensa ulkoasua yksityiskohtaisesti.
 
-### <a name="enable-report-themes-in-preview"></a>Raporttiteemojen käyttöönotto esikatseluversiossa
-Uudet **raporttiteemat** ovat käytettävissä **Power BI Desktopin** **maaliskuun 2017** julkaisusta alkaen. Jos haluat ottaa tämän esikatselutoiminnon käyttöön, valitse **Tiedosto > Asetukset ja vaihtoehdot > Asetukset > Esiversio-ominaisuudet** ja valitse sitten **Mukautetut raporttiteemat** -valintaruutu. Sinun täytyy käynnistää **Power BI Desktop** uudelleen tämän jälkeen.
+### <a name="enable-report-themes"></a>Raporttiteemojen käyttöön ottaminen
+**Power BI Desktopin** elokuun 2018 julkaisusta alkaen raporttiteema on yleisesti saatavilla, eikä sitä tarvitse ottaa käyttöön. 
+
+Jos käytät **Power BI Desktopin** aiemmin luotua versiota, voit ottaa sen käyttöön esikatselutoimintona valitsemalla **Tiedosto > Asetukset ja vaihtoehdot > Asetukset > Esikatselutoiminnot**, ja valitsemalla sitten valintaruudun **Mukautetut raporttiteemat** -kohdan vierestä. Sinun täytyy käynnistää **Power BI Desktop** uudelleen tämän jälkeen.
 
 ![](media/desktop-report-themes/report-themes_2.png)
+
+Suosittelemme aina päivittämään **Power BI Desktopin** uusimpaan versioon, jonka saat [Hae Power BI Desktop](desktop-get-the-desktop.md) -linkistä. 
 
 ## <a name="how-report-themes-work"></a>Raporttiteemojen toiminta
 Jos haluat ottaa raporttiteeman käyttöön Power BI -raportissa, napsauta **Aloitus**-valintanauhan **Vaihda teemaa** -painiketta ja valitse sitten avattavasta valikosta **Tuo teema**.
@@ -54,7 +58,7 @@ Edellisessä osiossa valittu JSON-perustiedosto (*St Patricks Day.json* -tiedost
 JSON-tiedosto sisältää seuraavat pakolliset rivit:
 
 * **name**: tämä on teeman nimi ja ainut pakollinen kenttä.
-* **dataColors**: tämä on luettelo Power BI Desktopin tietojen visualisointien värikoodien heksakoodeista. Luettelo voi sisältää haluamasi määrän värejä.
+* **dataColors** – Luettelo Power BI Desktopin visualisointien tietojen heksadesimaalivärikoodeista. Luettelo voi sisältää haluamasi määrän värejä.
 * **background**, **foreground** ja **tableAccent**: nämä arvot ovat värejä, joita käytetään eri visualisointityypeissä. **Foregroundia** käytetään tekstikenttien tekstissä, KPI-tavoitetekstissä, monirivisen kortin tekstissä, kortin arvon tekstissä, mittarin kuvaselitteen tekstissä, pystysuoran osittajaelementin tekstissä ja **taulukon** ja **matriisin** summan ja arvon tekstissä. **Backgroundia** käytetään painikkeen täytössä ja yhdistelmäkaavion otsikon taustassa. Näiden värien käyttö määräytyy käytetyn visualisointityylin mukaisesti. **Taulukko**- ja **matriisivisualisoinnit** käyttävät oletusarvoisesti näitä tyylejä.
 
 Jos haluat ottaa tyylin käyttöön **taulukko**- tai **matriisivisualisoinnissa**, valitse visualisointi ja laajenna sitten **Visualisoinnit**-ruudun **Muoto**-osion **Matriisityyli**-kohta ja valitse tyyli avattavasta **Tyyli**-valikosta.
@@ -71,7 +75,7 @@ Jos haluat luoda oman JSON-tiedostosi helposti kopioimalla ja liittämällä, t�
         "tableAccent": "#568410"
     }
 
-Voit antaa valitsemiesi värien omat heksakoodit.
+Voit täältä syöttää oman väriheksadesimaalikoodisi valittuja värejä varten.
 
 **Power BI Desktopin** syyskuun 2017 julkaisusta lähtien JSON-tiedosto voi olla paljon monimutkaisempi. JSON-tiedostossa määrität vain muotoilun, jota haluat muokata, joten kaikessa, mitä *ei* ole määritetty JSON-tiedostossa, käytetään Power BI:n oletusasetuksia.
 
@@ -100,7 +104,7 @@ Jos olet määrittänyt arvopisteen värin manuaalisesti värivalikoiman teemav�
 Lisäksi monet **mukautetut visualisoinnit** eivät käytä raporttiteemoja.
 
 ## <a name="report-theme-files-you-can-use-right-now"></a>Tällä hetkellä käytettävissä olevat raporttiteematiedostot
-Haluatko aloittaa **raporttiteemojen** käytön? Hienoa! Tässä on muutamia käyttövalmiita raporttiteemojen JSON-tiedostoja, jotka voit ladata ja tuoda **Power BI Desktop** -raporttiisi, sekä kuva tästä raporttiteemasta käytössä tässä artikkelissa käytetyssä raportissa.
+Haluatko aloittaa **raporttiteemojen** käytön? Hienoa! Tässä on muutamia käyttövalmiita raporttiteemojen JSON-tiedostoja, jotka voit ladata ja tuoda **Power BI Desktop** -raporttiisi, sekä kuva tästä raporttiteemasta, jota sovelletaan tässä artikkelissa käytettyyn raporttiin.
 
 * [Teema](https://go.microsoft.com/fwlink/?linkid=843924), jota käytettiin [blogitekstissä](https://powerbi.microsoft.com/blog/power-bi-desktop-march-feature-summary/), jossa kerrottiin **raporttiteemojen** ensijulkaisusta, on nimeltään [*waveform.json*](https://go.microsoft.com/fwlink/?linkid=843924).
 
@@ -141,7 +145,7 @@ Alla on myös muutama muu raporttiteema, joiden avulla pääset myös alkuun:
 JSON-perustiedostossa on viisi pakollista riviä:
 
 * **name**: tämä on teeman nimi ja ainut pakollinen kenttä.
-* **dataColors**: tämä on luettelo Power BI Desktopin tietojen visualisointien värikoodien heksakoodeista. Luettelo voi sisältää haluamasi määrän värejä.
+* **dataColors** – Luettelo Power BI Desktopin visualisointien tietojen heksadesimaalivärikoodeista. Luettelo voi sisältää haluamasi määrän värejä.
 * **background**, **foreground** ja **tableAccent**: nämä arvot ovat värejä, joita käytetään eri visualisointityypeissä. **Foregroundia** käytetään tekstikenttien tekstissä, KPI-tavoitetekstissä, monirivisen kortin tekstissä, kortin arvon tekstissä, mittarin kuvaselitteen tekstissä, pystysuoran osittajaelementin tekstissä ja **taulukon** ja **matriisin** summan ja arvon tekstissä. **Backgroundia** käytetään painikkeen täytössä ja yhdistelmäkaavion otsikon taustassa. Näiden värien käyttö määräytyy käytetyn visualisointityylin mukaisesti. **Taulukko**- ja **matriisivisualisoinnit** käyttävät oletusarvoisesti näitä tyylejä.
 
 Jos haluat luoda yksityiskohtaisemman JSON-tiedoston, jolla voit määrittää muotoilua tarkemmin, sinun täytyy lisätä JSON-tiedostoon **visualStyles**-osio ja asettaa muotoilun tarkemmat määritelmät tämän osion sisään. **visualStyles**-osio näyttää seuraavalta:
