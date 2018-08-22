@@ -8,14 +8,14 @@ ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 05/18/2018
-ms.author: v-mamcge
+ms.author: kfile
 LocalizationGroup: Reports
-ms.openlocfilehash: b3bb1e6d7d7ce5b3fdc050f5df10af9f61acac92
-ms.sourcegitcommit: d936a23f895ee6ef1420753342f5e6c055ea5e07
+ms.openlocfilehash: 2e8888679f36b64a6fc5956a9ca10dc3d07dce1a
+ms.sourcegitcommit: 8b2ae15eb0e39cce29f3bf466ab7768f3f7c7815
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39582567"
+ms.lasthandoff: 08/16/2018
+ms.locfileid: "40257030"
 ---
 # <a name="power-bi-performance-best-practices"></a>Power BI:n suorituskykyä parantavat parhaat käytännöt 
 Tässä artikkelissa annetaan ohjeita nopeiden ja luotettavien raporttien luomiseen Power BI:ssä.  
@@ -46,10 +46,10 @@ Lisäohjeita tietolähteiden optimointiin DirectQueryä varten on [SQL Server 20
  
 ## <a name="directquery-and-live-connection-understand-underlying-data-source-performance"></a>DirectQuery ja Live-yhteys: ymmärrä taustalla olevaa tietolähteen suorituskykyä 
 
-Kun käytössä DirectQuery tai Live-yhteys ja käyttäjät käyvät Power BI -raportissa, Power BI lähettää reaaliaikaisesti kyselyjä taustalla olevaan tietolähteeseen. Kun tietolähde palauttaa kyselytiedot, raportti on hahmonnettu. Tämän seurauksena raportin suorituskyky näissä tapauksissa määräytyy pitkälti taustalla olevan tietolähteen suorituskyvyn mukaan. 
- 
-Näissä tapauksissa on tärkeää, että tiedät, millainen taustalla olevan tietolähteen suorituskyky on. Eri tietolähteillä on erilaisia työkaluja kyselyn suorituskyvyn selvittämiseen. Esimerkiksi SQL Server ja Azure SQL tarjoavat kyselysäilön, joka taltioi kyselyiden historian ja niiden suoritusaikatilastot. 
- 
+Kun käytössä DirectQuery tai Live-yhteys ja käyttäjät käyvät Power BI -raportissa, Power BI lähettää reaaliaikaisesti kyselyjä taustalla olevaan tietolähteeseen. Kun tietolähde palauttaa kyselytiedot, raportti on hahmonnettu. Tämän seurauksena raportin suorituskyky näissä tapauksissa määräytyy pitkälti taustalla olevan tietolähteen suorituskyvyn mukaan.
+
+Näissä tapauksissa on tärkeää, että tiedät, millainen taustalla olevan tietolähteen suorituskyky on. Eri tietolähteillä on erilaisia työkaluja kyselyn suorituskyvyn selvittämiseen. Esimerkiksi SQL Server ja Azure SQL tarjoavat kyselysäilön, joka taltioi kyselyiden historian ja niiden suoritusaikatilastot.
+
 Hyvä yleisohje on, että ottaessasi käyttöön DirectQueryyn ja Live-yhteyteen pohjautuvia Power BI -raportteja kokeile toimintoja, joita loppukäyttäjäsi tulevat tekemään Power BI Desktopissa. Jos raportin lataaminen Power BI Desktopissa on hidasta, sen lataaminen tulee lähes varmasti olemaan hidasta myös loppukäyttäjien palvelussa. 
  
 ## <a name="directquery-best-practices"></a>DirectQueryn parhaat käytännöt 
