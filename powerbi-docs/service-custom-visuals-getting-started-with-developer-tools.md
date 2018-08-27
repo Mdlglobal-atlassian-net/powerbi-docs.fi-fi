@@ -9,12 +9,12 @@ ms.component: powerbi-developer
 ms.topic: conceptual
 ms.date: 11/30/2017
 ms.author: maghan
-ms.openlocfilehash: a9663951035a697a9fb1f8732d2ce418950078f4
-ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
+ms.openlocfilehash: 0d165505981f841c7dfe9688c7a95cea3b6777c3
+ms.sourcegitcommit: 8990028a348b642ba5c96f001fe3a4280f0166ee
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37600375"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "40257339"
 ---
 # <a name="use-developer-tools-to-create-custom-visuals"></a>Mukautettujen visualisointien luominen kehittäjätyökalujen avulla
 Voit mukautettujen visualisointien avulla vastata käyttäjiesi tarpeita ja sovelluksesi rakennetta. Lue, miten voit luoda mukautetun visualisoinnin Power BI:lle kehittäjätyökalujen avulla.
@@ -178,10 +178,10 @@ Voit nyt aloittaa visualisoinnin kehittämisen.
 Voit luoda uuden visualisointiprojektin suorittamalla seuraavan komennon.
 
 ```
-pbiviz new My Visual name
+pbiviz new MyVisualName
 ```
 
-Voit korvata *Oman visualisoinnin nimi* -kohtaan nimen, jonka haluat antaa visualisoinnille. Sitä voi muuttaa myöhemmin muokkaamalla `name`- ja `displayName`-kenttiä luodussa `pbiviz.json`-tiedostossa.
+Voit korvata *MyVisualName*-kohdan nimellä, jonka haluat antaa visualisoinnille. Sitä voi muuttaa myöhemmin muokkaamalla `name`- ja `displayName`-kenttiä luodussa `pbiviz.json`-tiedostossa.
 
 Tämä komento luo uuden kansion paikkaan, jossa komento suoritettiin. Se luo visualisoinnin perusaloitusmallin. Kun komento on suoritettu, voit avata hakemiston ja käyttää uutta visualisointia suosikkieditorisi avulla.
 

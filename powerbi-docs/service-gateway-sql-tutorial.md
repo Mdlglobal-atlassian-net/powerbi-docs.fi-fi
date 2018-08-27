@@ -10,12 +10,12 @@ ms.topic: tutorial
 ms.date: 05/03/2018
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 087813feb7db96a320c48ed6b2433a7183446c71
-ms.sourcegitcommit: 627918a704da793a45fed00cc57feced4a760395
+ms.openlocfilehash: 33b88c728a5a79f2b1edf6e1728850723ce76fec
+ms.sourcegitcommit: 9d6f37fd32b965592bd7b108dea87b8e53b11334
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37926509"
+ms.lasthandoff: 08/18/2018
+ms.locfileid: "40257218"
 ---
 # <a name="tutorial-connect-to-on-premises-data-in-sql-server"></a>Opetusohjelma: Yhteyden muodostaminen paikallisiin tietoihin SQL Serverissä
 
@@ -107,7 +107,7 @@ Nyt kun käytössäsi on mallitietoja, muodosta yhteys SQL Serveriin Power BI De
 
     ![Pinottu pylväskaavio](media/service-gateway-sql-tutorial/column-chart.png)    
 
-6. Kun pylväskaavio on valittu raporttipohjassa, valitse **Kentät**-ruudun **Luokka**- ja **Myynti**-kentät.  
+6. Kun pylväskaavio on valittu raporttipohjassa, valitse **Kentät**-ruudun **Tuote**- ja **Myynti**-kentät.  
 
     ![Valitse kentät](media/service-gateway-sql-tutorial/select-fields.png)
 

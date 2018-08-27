@@ -7,15 +7,15 @@ ms.reviewer: maggiesMSFT
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 10/16/2017
+ms.date: 08/10/2018
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 6ccf112a78e69e006a4ca3d6e8a7cd372adf5f05
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 3c1000eb48cfb53f5838f19f6c0ece4403e9d3ba
+ms.sourcegitcommit: 126e5eca8bfab6273581dabd7603df88be755240
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34244245"
+ms.lasthandoff: 08/11/2018
+ms.locfileid: "40256972"
 ---
 # <a name="connect-to-application-insights-with-power-bi"></a>Application Insightsin yhdistäminen Power BI:hin
 Power BI:n avulla voit luoda tehokkaita mukautettuja raporttinäkymiä [Application Insights](https://azure.microsoft.com/documentation/articles/app-insights-overview/) -telemetriatiedoista. Näet sovellustelemetrian uusilla tavoilla. Yhdistä mittareita useista sovelluksista tai komponenttipalveluista yhteen raporttinäkymään. Power BI -sisältöpaketin ensimmäisessä Application Insights -julkaisussa on pienoissovelluksia yleisiä käyttöön liittyviä arvoja varten. Näitä ovat muun muassa aktiiviset käyttäjät, sivunäkymä, istunnot, selain- ja käyttöjärjestelmäversiot sekä käyttäjien maantieteellinen jakauma kartalla.
@@ -23,7 +23,7 @@ Power BI:n avulla voit luoda tehokkaita mukautettuja raporttinäkymiä [Applicat
 Muodosta yhteys [Application Insights -sisältöpakettiin Power BI:tä varten](https://app.powerbi.com/getdata/services/application-insights).
 
 >[!NOTE]
->Yhteyden muodostaminen edellyttää, että sinulla on pääsy sovelluksesi Application Insights -yleiskatsausruutuun Azure Preview Portalissa. Lisätietoja vaatimuksista on alla.
+>Tämä integrointimenetelmä on nyt **vanhentunut**. Jos haluat tutustua tarkemmin suositeltuun tapaan yhdistää Application Insights Power BI:hin, käytä [analyysikyselyn vientitoimintoa](https://docs.microsoft.com/azure/application-insights/app-insights-export-power-bi#export-analytics-queries).
 
 ## <a name="how-to-connect"></a>Yhteyden muodostaminen
 1. Valitse vasemman siirtymisruudun alareunasta **Nouda tiedot**.

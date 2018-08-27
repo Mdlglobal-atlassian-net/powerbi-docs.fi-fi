@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-admin
 ms.topic: conceptual
-ms.date: 04/02/2018
+ms.date: 08/15/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: e2b61f84b459d3b14c2cd066e0261dcdb1b8a5ef
-ms.sourcegitcommit: 5eb8632f653b9ea4f33a780fd360e75bbdf53b13
+ms.openlocfilehash: db77e3e7421074383f67bffad318e6f7f4c3df28
+ms.sourcegitcommit: 52278d8e0c23ae5eaf46b10a6a2f1fb071a0f1cc
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36965500"
+ms.lasthandoff: 08/16/2018
+ms.locfileid: "40256879"
 ---
 # <a name="power-bi-admin-portal"></a>Power BI -hallintaportaali
 
@@ -100,38 +100,39 @@ Saat lisätietoja valvontalokeista ohjeartikkeleista [Organisaation Power BI:n v
 
 Hallintaportaalin neljäs välilehti on nimeltään **Vuokraaja-asetukset**. Vuokraaja-asetusten avulla voit hallita tarkemmin organisaatiossasi käyttöön tarjottavia toimintoja. Jos olet huolissasi luottamuksellisista tiedoista, jotkin toiminnoista eivät ehkä sovellu organisaatiollesi. Tai kenties ehkä haluat tarjota tietyn toiminnon vain tietylle ryhmälle. Tällaisissa tapauksissa voit poistaa toimintoja käytöstä vuokraajatililläsi.
 
-Esimerkiksi käyttäjäkohtaiset tiedot on otettu käyttöön käyttötiedoille oletusarvoisesti ja sisällön luojan tilitiedot sisältyvät tietoraporttiin. Jos et halua sisällyttää näitä tietoja joillekin tai kaikille käyttäjille, poista ominaisuus käytöstä määritetyille käyttöoikeusryhmille tai koko organisaatiolle. Tilitiedot näkyvät sitten raportissa *nimettöminä*.
-
 ![](media/service-admin-portal/powerbi-admin-tenant-settings.png)
 
 > [!NOTE]
 > Asetuksen käyttöönotto kaikille vuokraajatilisi käyttäjille voi kestää jopa 10 minuuttia.
 
-Voit määrittää asetuksia kolmeen eri tilaan.
+Asetuksilla voi olla kolme tilaa:
 
-### <a name="disabled-for-the-entire-organization"></a>Poistettu käytöstä koko organisaatiossa
+* **Poistettu käytöstä koko organisaatiolle**: Voit poistaa toiminnon käytöstä, jolloin käyttäjät eivät voi käyttää sitä.
 
-Voit poistaa toiminnon käytöstä, jolloin käyttäjät eivät voi käyttää sitä.
+    ![](media/service-admin-portal/powerbi-admin-tenant-settings-disabled.png)
 
-![](media/service-admin-portal/powerbi-admin-tenant-settings-disabled.png)
+* **Otettu käyttöön koko organisaatiolle**: Voit ottaa toiminnon käyttöön koko organisaatiolle, jolloin kaikki käyttäjät voivat käyttää sitä.
 
-### <a name="enabled-for-the-entire-organization"></a>Otettu käyttöön koko organisaatiolle
+    ![](media/service-admin-portal/powerbi-admin-tenant-settings-enabled.png)
 
-Voit ottaa toiminnon käyttöön koko organisaatiolle, jolloin kaikki käyttäjät voivat käyttää sitä.
+* **Otettu käyttöön organisaation alijoukolle**: Voit myös ottaa toiminnon käyttöön tietyille organisaatiosi käyttäjille. Voit tehdä tämän muutamin eri tavoin. Voit ottaa toiminnon käyttöön koko organisaatiolle tiettyä käyttäjäryhmää lukuun ottamatta.
 
-![](media/service-admin-portal/powerbi-admin-tenant-settings-enabled.png)
+    ![](media/service-admin-portal/powerbi-admin-tenant-settings-enabled-except.png)
 
-### <a name="enabled-for-a-subset-of-the-organization"></a>Otettu käyttöön organisaation alijoukolle
+    Voit myös ottaa toiminnon käyttöön vain tietylle käyttäjäryhmälle tai poistaa sen käytöstä tietyltä käyttäjäryhmältä. Näin voit varmistaa, että tietyt käyttäjät eivät voi käyttää toimintoa, vaikka he olisivat sallitussa ryhmässä.
 
-Voit ottaa toiminnon käyttöön tietyille organisaatiosi käyttäjille. Voit tehdä tämän muutamin eri tavoin. Voit ottaa toiminnon käyttöön koko organisaatiolle tiettyä käyttäjäryhmää lukuun ottamatta.
+    ![](media/service-admin-portal/powerbi-admin-tenant-settings-enabled-except2.png)
 
-![](media/service-admin-portal/powerbi-admin-tenant-settings-enabled-except.png)
+Seuraavissa osioissa luodaan yleiskatsaus vuokraaja-asetusten eri tyyppeihin.
 
-Voit myös ottaa toiminnon käyttöön vain tietylle käyttäjäryhmälle tai poistaa sen käytöstä tietyltä käyttäjäryhmältä. Näin voit varmistaa, että tietyt käyttäjät eivät voi käyttää toimintoa, vaikka he olisivat sallitussa ryhmässä.
+## <a name="workspace-settings"></a>Työtilan asetukset
 
-![](media/service-admin-portal/powerbi-admin-tenant-settings-enabled-except2.png)
+### <a name="create-workspaces-preview"></a>Työtilojen luominen (esiversio)
+Organisaation käyttäjät voivat luoda sovelluksen työtiloja tehdäkseen yhteistyötä koontinäyttöjen, raporttien ja muun sisällön parissa.
 
-## <a name="export-and-sharing-settings"></a>Vienti- ja jakoasetukset
+Lisätietoja on kohdassa [Uusien työtilojen luominen](service-create-the-new-workspaces.md).
+
+## <a name="export-and-sharing-settings"></a>Vienti- ja jakamisasetukset
 
 ### <a name="share-content-to-external-users"></a>Sisällön jakaminen ulkoisille käyttäjille
 
@@ -244,7 +245,7 @@ Organisaation käyttäjät voivat käyttää R-komentosarjoilla luotuja visualis
 > [!NOTE]
 > Tämä asetus koskee koko organisaatiota, joten sitä ei rajoittaa ryhmien avulla.
 
-## <a name="audit-settings"></a>Valvonta-asetukset
+## <a name="audit-and-usage-settings"></a>Valvonta- ja käyttöasetukset
 
 ### <a name="create-audit-logs-for-internal-activity-auditing-and-compliance"></a>Valvontalokien luominen sisäisen toiminnan valvonnan ja vaatimustenmukaisuuden tarpeisiin
 
@@ -254,6 +255,25 @@ Tämän asetuksen täytyy olla käytössä, jotta valvontalokiin kirjataan merki
 
 > [!NOTE]
 > Tämä asetus koskee koko organisaatiota, joten sitä ei rajoittaa ryhmien avulla.
+
+### <a name="usage-metrics-for-content-creators"></a>Käyttötiedot sisällöntekijöille
+Organisaation käyttäjät voivat tarkastella luomiensa koontinäyttöjen ja raporttien käyttötietoja. [Lue lisää](service-usage-metrics.md).
+
+Voit vaihtaa asetuksen tilaksi **Käytössä** ja määrittää sitten, ketkä voivat nähdä käyttötiedot (koko organisaatio tai tietyt käyttöoikeusryhmät).
+
+> [!NOTE]
+> Muista, että vuokraaja-asetusten käyttöönotossa voi kestää jonkin aikaa.
+
+### <a name="per-user-data-in-usage-metrics-for-content-creators"></a>Käyttäjäkohtaiset tiedot sisällöntekijöille tarkoitetuissa käyttötiedoissa
+Sisällöntekijöille tarkoitetut käyttötiedot paljastavat sisällön käyttäjien näyttönimet ja sähköpostiosoitteet. [Lue lisää](service-usage-metrics.md).
+
+Voit vaihtaa asetuksen tilaksi **Käytössä** ja määrittää sitten, ketkä voivat nähdä käyttötiedoissa olevat näyttönimet ja sähköpostiosoitteet (koko organisaatio tai tietyt käyttöoikeusryhmät).
+
+Oletusarvoisesti käyttäjäkohtaiset tiedot on otettu käyttöön käyttötiedoille ja sisällöntekijän tilitiedot sisältyvät tietoraporttiin. Jos et halua sisällyttää näitä tietoja joillekin tai kaikille käyttäjille, poista ominaisuus käytöstä määritetyille käyttöoikeusryhmille tai koko organisaatiolle. Tilitiedot näkyvät sitten raportissa *nimettöminä*.
+
+> [!NOTE]
+> Muista, että vuokraaja-asetusten käyttöönotossa voi kestää jonkin aikaa.
+
 
 ## <a name="dashboard-settings"></a>Koontinäytön asetukset
 
@@ -270,9 +290,9 @@ Organisaation käyttäjät voivat merkitä koontinäyttöjä luokituksilla, jotk
 
 Organisaation käyttäjät voivat upottaa Power BI -koontinäyttöjä ja -raportteja SaaS-sovelluksiin (palveluina tarjottaviin sovelluksiin). Jos poistat tämän asetuksen käytöstä, käyttäjät eivät näe REST-ohjelmointirajapintoja, joilla he voivat upottaa Power BI -sisältöä sovelluksiin.
 
-## <a name="premium-settings"></a>Premium-asetukset
+## <a name="capacity-settings"></a>Kapasiteettiasetukset
 
-Premium-asetusten välilehdessä voit hallita mitä tahansa organisaatiollesi ostettua Power BI Premium -kapasiteettia. Kaikki organisaation käyttäjät näkevät Premium-asetusten välilehden, mutta sen sisällön näkevät vain käyttäjät, joilla on **kapasiteetin järjestelmänvalvojan** oikeudet tai määrityskäyttöoikeudet. Jos käyttäjällä ei ole mitään oikeuksia, hän näkee seuraavan ilmoituksen.
+Kapasiteettiasetukset-välilehdessä voit hallita mitä tahansa organisaatiollesi ostettua Power BI Premium -kapasiteettia. Kaikki organisaation käyttäjät näkevät Premium-asetusten välilehden, mutta sen sisällön näkevät vain käyttäjät, joilla on **kapasiteetin järjestelmänvalvojan** oikeudet tai määrityskäyttöoikeudet. Jos käyttäjällä ei ole mitään oikeuksia, hän näkee seuraavan ilmoituksen.
 
 ![](media/service-admin-portal/premium-settings-no-access.png "Ei Premium-asetusten käyttöoikeutta")
 

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/09/2018
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 402a39ef9e52fe61d80940a5050997ba19930209
-ms.sourcegitcommit: 5eb8632f653b9ea4f33a780fd360e75bbdf53b13
+ms.openlocfilehash: bf5120b1c4d787dd13e21245b234207123221fc4
+ms.sourcegitcommit: 9d6f37fd32b965592bd7b108dea87b8e53b11334
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36964833"
+ms.lasthandoff: 08/18/2018
+ms.locfileid: "40256805"
 ---
 # <a name="use-kerberos-for-sso-single-sign-on-from-power-bi-to-on-premises-data-sources"></a>Kerberoksen käyttäminen SSO:ta (kertakirjautumista) varten Power BI:stä paikallisiin tietolähteisiin
 Voit saada saumattoman kertakirjautumisen, jolloin Power BI -raportit ja -koontinäytöt päivitetään paikallisista tiedoista, määrittämällä Kerberoksen paikalliseen tietoyhdyskäytävään. Paikallinen tietoyhdyskäytävä helpottaa kertakirjautumista (SSO) DirectQueryllä, jota se käyttää yhteyden muodostamiseen paikallisiin tietolähteisiin.
@@ -51,9 +51,7 @@ Seuraavassa on lisätietoja näistä vaiheista:
    - Käyttäjäksi tekeytyminen ja yhteyden muodostaminen tietokantaan onnistuu vain, jos yhdyskäytävän palvelutili on toimialuetili (tai palvelun SID) ja jos tietokannan rajoitettu Kerberos-delegointi määritettiin hyväksymään Kerberos-liput yhdyskäytävän palvelutililtä.  
    
    > [!NOTE]
-   > Jos määritetään AAD DirSync / Connect ja käyttäjätilit synkronoidaan, yhdyskäytäväpalvelun ei tarvitse tehdä hakuja paikallisesta AD:sta suorituksen aikana ja voit käyttää yhdyskäytäväpalvelussa paikallisen palvelun SID-tunnusta (toimialuetilin edellyttämisen sijaan).  Tässä asiakirjassa kuvatut rajoitetun Kerberos-delegoinnin määritysvaiheet ovat samat (niitä sovelletaan palvelun SID-tunnuksen perusteella toimialuetilin sijaan).
-   > 
-   > 
+   > Jos määritetään AAD DirSync / Connect ja käyttäjätilit synkronoidaan, yhdyskäytäväpalvelun ei tarvitse tehdä hakuja paikallisesta AD:sta suorituksen aikana ja voit käyttää yhdyskäytäväpalvelussa paikallisen palvelun SID-tunnusta (toimialuetilin edellyttämisen sijaan). Tässä artikkelissa kuvatut rajoitetun Kerberos-delegoinnin määritysvaiheet ovat samat kuin kyseinen määritys (niitä sovelletaan yhdyskäytävän tietokoneobjektiin Active Directoryssa toimialuetilin sijaan).
 
 
 > [!NOTE]

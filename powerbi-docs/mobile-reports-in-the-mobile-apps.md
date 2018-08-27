@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-mobile
 ms.topic: conceptual
-ms.date: 06/05/2018
+ms.date: 08/17/2018
 ms.author: maggies
-ms.openlocfilehash: 5b4d5ea7970dd44cfebadca6935452688515aef5
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: eee7c4989c4856ab86cb4883f8004198da00e4fd
+ms.sourcegitcommit: 23bb84cd3e80ba7f03d559e48db322774d1a6fe0
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34799414"
+ms.lasthandoff: 08/20/2018
+ms.locfileid: "40257039"
 ---
 # <a name="explore-reports-in-the-power-bi-mobile-apps"></a>Raporttien tutkiminen Power BI -mobiilisovelluksissa
 Koskee seuraavia:
@@ -84,7 +84,7 @@ Kun valitset arvon visualisoinnissa, se ei suodata muita visualisointeja. Se kor
 ## <a name="drill-down-and-up-in-a-visual"></a>Porautuminen alas- ja ylöspäin visualisoinnissa
 Jos raportin tekijä on lisännyt porautumisominaisuuden visualisointiin, voit porautua visualisointiin nähdäksesi arvot, jotka muodostavat osan siitä. Voit [lisätä alaspäin porautumisen visualisointiin](power-bi-visualization-drill-down.md) Power BI Desktopissa tai Power BI -palvelussa. 
 
-* Napauta arvopistettä visualisoinnissa nähdäksesi sen työkaluvihjeen. Jos siihen voi porautua, alemmassa työkaluvihjeessä on napautettavissa olevia nuolia. 
+* Kosketa haluamaasi visualisoinnin palkkia tai pistettä pitkään nähdäksesi sen työkaluvihjeen. Jos siihen voi porautua, alemmassa työkaluvihjeessä on napautettavissa olevia nuolia. 
   
   ![Porautuminen alaspäin visualisoinnissa](media/mobile-reports-in-the-mobile-apps/power-bi-mobile-drill-down-tooltip.png)
 

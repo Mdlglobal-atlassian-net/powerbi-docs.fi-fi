@@ -7,15 +7,15 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 08/07/2018
+ms.date: 08/17/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 36343b4db0481ea61fbfac1c791aa84760ee2c77
-ms.sourcegitcommit: 2356dc8e5488438a43ba7f0ba9a55a2372669b47
+ms.openlocfilehash: 271859dbc13e909d255e4287ae14e66b2d85724f
+ms.sourcegitcommit: 23bb84cd3e80ba7f03d559e48db322774d1a6fe0
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39624650"
+ms.lasthandoff: 08/20/2018
+ms.locfileid: "40257193"
 ---
 # <a name="create-the-new-workspaces-preview-in-power-bi"></a>Uusien työtilojen luominen (esiversio) Power BI:ssä
 
@@ -112,8 +112,8 @@ Uusissa työtiloissa on kolme roolia: järjestelmänvalvojat, jäsenet ja osalli
 **Jäsenet voivat:** 
 
 - Lisätä jäseniä tai muita, joilla on vähäisemmät oikeudet.
-- Julkaista ja päivittää sovelluksia.
-- Jakaa kohteita ja sovelluksia.
+- Julkaista ja päivittää sovelluksen.
+- Jakaa kohteen tai sovelluksen.
 - Sallia muille kohteiden jakaminen uudelleen.
 - Tehdä kaikkea, mitä osallistujat voivat tehdä.
 
@@ -129,7 +129,7 @@ Luomme Pyydä käyttöoikeutta -työnkulkuja palvelun kautta, jotta käyttäjät
 
 ## <a name="distribute-an-app"></a>Sovelluksen jakaminen
 
-Kun sisältö on valmis, valitset, mitkä raporttinäkymät ja raportit haluat julkaista, ja sitten julkaiset sen *sovelluksena*. Työtoverisi saavat sovelluksesi käyttöönsä eri tavoin. Voit asentaa ne automaattisesti työtovereittesi Power BI -tileille, jos Power BI -järjestelmänvalvojasi antaa sinulle luvan. Muussa tapauksessa he voivat hakea ja asentaa sovelluksesi Microsoft AppSourcesta tai voit lähettää heille suoran linkin. He saavat päivitykset automaattisesti, ja sinä voit määrittää, kuinka usein tiedot päivitetään. Lisätietoja on artikkelissa [Raporttinäkymiä ja raportteja sisältävien sovellusten julkaiseminen Power BI:ssä](service-create-distribute-apps.md).
+Kun sisältö on valmis, valitset, mitkä raporttinäkymät ja raportit haluat julkaista, ja sitten julkaiset sen *sovelluksena*. Voit luoda yhden sovelluksen kustakin työtilasta. Työtoverisi voivat saada sovelluksesi käyttöönsä eri tavoin. Voit asentaa sen automaattisesti työtovereittesi Power BI -tileille, jos Power BI -järjestelmänvalvojasi antaa sinulle luvan. Muussa tapauksessa he voivat hakea ja asentaa sovelluksesi Microsoft AppSourcesta tai voit lähettää heille suoran linkin. He saavat päivitykset automaattisesti, ja sinä voit määrittää, kuinka usein tiedot päivitetään. Lisätietoja on artikkelissa [Raporttinäkymiä ja raportteja sisältävien sovellusten julkaiseminen Power BI:ssä](service-create-distribute-apps.md).
 
 ## <a name="convert-old-app-workspaces-to-new-app-workspaces"></a>Vanhojen sovellustyötilojen muuntaminen uusiksi sovellustyötiloiksi
 
@@ -161,7 +161,7 @@ Joitakin uuden sovellustyötilan esiversio-ominaisuuksia kehitetään edelleen, 
 Jotkin ominaisuudet toimivat uusissa sovellustyötiloissa eri tavalla kuin nykyisissä sovellustyötiloissa. Nämä erot on tarkoituksellista. Ne perustuvat saatuun asiakaspalautteeseen, ja ne mahdollistavat entistä joustavamman yhteistyötavan työtiloissa:
 
 - Jäsenet voivat tai eivät voi jakaa uudelleen: korvataan osallistujan roolilla
-- Vain luku -työtilat: korvataan tulevalla tulevan katselijan roolilla, joka antaa työtilan sisältöön vain lukuoikeudet.
+- Vain luku -työtilat: Sen sijaan, että myöntäisit käyttäjille Vain luku -käyttöoikeuden työtilaan, määrität käyttäjille tulevan katselijan roolin, johon kuuluu samankaltainen Vain luku -käyttöoikeus työtilan sisältöön.
 
 ## <a name="known-issues"></a>Tunnetut ongelmat
 

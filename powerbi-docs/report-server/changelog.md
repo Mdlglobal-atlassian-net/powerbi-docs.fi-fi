@@ -9,12 +9,12 @@ ms.component: powerbi-report-server
 ms.topic: conceptual
 ms.date: 03/31/2018
 ms.author: jtarquino
-ms.openlocfilehash: e0f90ccade44960cf24fd133b4caf46280b4a511
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: ec97676fc043f9d8bd014465cc1fd2c0ffcca423
+ms.sourcegitcommit: 52278d8e0c23ae5eaf46b10a6a2f1fb071a0f1cc
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34482126"
+ms.lasthandoff: 08/16/2018
+ms.locfileid: "40256976"
 ---
 # <a name="changelog-for-power-bi-report-server"></a>Power BI -raporttipalvelimen muutosloki
 
@@ -22,6 +22,18 @@ Power BI -raporttipalvelimen muutoslokissa on listattu jokaisen koontiversion uu
 
 Lisätietoja uusista ominaisuuksista on artikkelissa [Power BI -raporttipalvelinten uudet ominaisuudet](whats-new.md). 
 
+## <a name="august-2018"></a>Elokuu 2018
+- **Power BI -raporttipalvelin**
+    - *Versio 1.3.6801.38816 (koontiversio 15.0.2.540), julkaistu 15.8.2018*
+        - Ominaisuudet
+            - Suoran SAP HANA SSO -kyselyn Kerberos-tuki nyt käytettävissä Power BI -raporteissa
+            - Mukautettujen visualisointien ohjelmointirajapinta sisältyy julkaisuun – versio 1.13.0
+            - Mukautetuissa visualisoinneissa palataan edelliseen palvelimen nykyisen ohjelmointirajapintaversion kanssa yhteensopivaan versioon (jos sellainen on käytettävissä)
+
+- **Power BI Desktop (optimoitu Power BI -raporttipalvelimelle)**
+    - *Versio: 2.61.5192.64 (elokuu 2018), julkaistu: 15.8.2018*
+        - Sisältää Power BI -raporttipalvelinyhteyden edellyttämiä muutoksia (elokuu 2018).         
+        
 ## <a name="march-2018"></a>Maaliskuu 2018
 - **Power BI -raporttipalvelin**
     - *Versio 1.2.6690.34729 (koontiversio 15.0.2.402), julkaistu 27.4.2018*

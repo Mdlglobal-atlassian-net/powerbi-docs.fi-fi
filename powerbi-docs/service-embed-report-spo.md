@@ -2,21 +2,21 @@
 title: Upota raportin verkko-osa SharePoint Onlinessa
 description: Power BI:n uuden, SharePoint Onlineen tarkoitetun raportin verkko-osan avulla voit helposti upottaa vuorovaikutteisia Power BI -raportteja SharePoint Onlinen sivuille.
 author: markingmyname
+ms.author: maghan
 manager: kfile
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 05/25/2018
-ms.author: maghan
 LocalizationGroup: Share your work
-ms.openlocfilehash: 63cb1fe3061d1ba48e71a4ac09862fce29dd9196
-ms.sourcegitcommit: ba3cab4613a2b815d46a213eff07a8a8ec22c17f
+ms.date: 08/16/2018
+ms.openlocfilehash: 85e04993639d3c2897d2d7dddc00e79fd4fdf0c6
+ms.sourcegitcommit: 8b2ae15eb0e39cce29f3bf466ab7768f3f7c7815
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39032044"
+ms.lasthandoff: 08/16/2018
+ms.locfileid: "40256975"
 ---
 # <a name="embed-with-report-web-part-in-sharepoint-online"></a>Upota raportin verkko-osa SharePoint Onlinessa
 
@@ -28,11 +28,12 @@ Kun käytetään uutta **Upota SharePoint Onlinessa** -asetusta, upotetut raport
 
 **Upota SharePoint Onlinessa** -raporttien käyttöön liittyy joitakin vaatimuksia.
 
+* Tarvitset Power BI Pro -käyttöoikeuden tai [Power BI Premium -kapasiteetin (EM tai P SKU)](service-premium.md#premium-capacity-nodes) ja Power BI -käyttöoikeuden.
 * Power BI -verkko-osa SharePoint Onlineen edellyttää [moderneja sivuja](https://support.office.com/article/Allow-or-prevent-creation-of-modern-site-pages-by-end-users-c41d9cc8-c5c0-46b4-8b87-ea66abc6e63b).
 
 ## <a name="embed-your-report"></a>Upota raportti
 
-Voit upottaa raporttisi SharePoint Onlinessa hankkimalla ensin raportin URL-osoitteen ja käyttämällä sitten URL-osoitetta uuden Power BI -verkko-osan kanssa SharePoint Onlinessa.
+Voit upottaa raporttisi SharePoint Onlineen hankkimalla ensin raportin URL-osoitteen ja käyttämällä sitten URL-osoitetta uuden Power BI -verkko-osan kanssa SharePoint Onlinessa.
 
 ### <a name="get-a-url-to-your-report"></a>Hanki raportin URL-osoite
 
@@ -135,7 +136,7 @@ Yritä ratkaista ongelma ottamalla yhteyttä SharePoint Online -sivun omistajaan
   
   1. Kirjaudu ulos SharePointista ja kirjaudu uudelleen sisään. Muista sulkea kaikki selainikkunat, ennen kuin kirjaudut uudelleen sisään.
 
-  2. Jos käyttäjätilisi edellyttää monimenetelmäistä todentamista (MFA), kirjaudu sisään SharePointiin käyttäen monimenetelmäisen todentamisen laitetta (esim. puhelinsovellus, älykortti).
+  2. Jos käyttäjätilisi edellyttää monimenetelmäistä todentamista (MFA), kirjaudu sisään SharePointiin käyttäen monimenetelmäisen todentamisen laitetta (esim. puhelinsovellus tai älykortti).
   
   3. Azuren B2B -vieraiden käyttäjätilejä ei tueta. Käyttäjät näkevät Power BI -logon, joka näyttää osan latautuvan, mutta raporttia ei näytetä.
 
