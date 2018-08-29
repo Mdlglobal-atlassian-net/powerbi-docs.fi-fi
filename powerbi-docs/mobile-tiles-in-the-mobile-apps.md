@@ -9,12 +9,12 @@ ms.component: powerbi-mobile
 ms.topic: conceptual
 ms.date: 06/28/2018
 ms.author: maggies
-ms.openlocfilehash: eda7f44c869829564703bda6112177234d3f2d44
-ms.sourcegitcommit: fbb7924603f8915d07b5e6fc8f4d0c7f70c1a1e1
+ms.openlocfilehash: 20bdd4731cd4aad3c6412d1959de3be088a3457a
+ms.sourcegitcommit: ef4bf1439bc5655d1afc7fb97079ea0679e9124b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39280129"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43151948"
 ---
 # <a name="explore-tiles-in-the-power-bi-mobile-apps"></a>Tutustu ruutuihin Power BI -mobiilisovelluksissa
 Koskee seuraavia:
@@ -28,10 +28,6 @@ Ruudut ovat reaaliaikaisia tilannevedoksia tiedoistasi kiinnitettyinä koontinä
 Power BI -mobiilisovelluksissa avaat ruutuja kohdistustilassa ja olet vuorovaikutuksessa niiden kanssa. Voit avata ruutuja kaikenlaisten visualisointien kanssa, mukaan luettuina Bing- ja R-pohjaiset ruudut.
 
 ## <a name="tiles-in-the-ios-apps"></a>iOS-sovellusten ruudut
-> [!NOTE]
-> Voit [luoda kuvaruutuja iPhone-sovelluksella](mobile-iphone-app-get-started.md) ja tallentaa ne koontinäyttöihisi.
-> 
-> 
 
 1. Avaa [koontinäyttö iOS:n mobiilisovelluksessa](mobile-apps-view-dashboard.md).
 2. Napauta ruutua. Se avautuu kohdistustilassa, jossa on helpompi tarkastella ja tutkia ruudun tietoja. Kohdistustilassa voit:
@@ -40,7 +36,7 @@ Power BI -mobiilisovelluksissa avaat ruutuja kohdistustilassa ja olet vuorovaiku
    
     ![](media/mobile-tiles-in-the-mobile-apps/power-bi-iphone-line-tile-values.png)
    
-   <em>Esimerkiksi tässä viivakaaviossa valitut arvot tarkoittavat **tämän vuoden myyntiä</em>* ja **viime vuoden myyntiä** **elokuussa**.*  
+   *Esimerkiksi tässä viivakaaviossa valitut arvot tarkoittavat **tämän vuoden myyntiä** ja **viime vuoden myyntiä** **elokuussa**.*  
    
    Ympyräkaaviossa napauttaa jotakin ympyrän sektoria, niin saat sektorin arvon näkyviin ympyrän yläreunaan.  
    
@@ -107,7 +103,7 @@ Power BI -mobiilisovelluksissa avaat ruutuja kohdistustilassa ja olet vuorovaiku
    
    ![](media/mobile-tiles-in-the-mobile-apps/pbi_win10ph_bartile0316.png)
    
-   <em>Tässä palkkikaaviossa **Muotoilu</em>*-palkin arvot näytetään kaavion yläreunassa.*
+   *Tässä palkkikaaviossa palkin **Muotoilu** arvot näytetään kaavion yläreunassa.*
    
    Napauttaa **Koko näyttö** -kuvaketta ![](media/mobile-tiles-in-the-mobile-apps/power-bi-full-screen-icon.png) avataksesi ruudun koko näytön tilassa ilman siirtymis- ja valikkorivejä.
    
