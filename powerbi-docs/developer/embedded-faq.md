@@ -2,30 +2,30 @@
 title: Usein kysyttyjä kysymyksiä – Power BI Embedded
 description: Selaa Power BI Embeddediä koskevien usein kysyttyjen kysymysten ja vastausten luetteloa.
 author: markingmyname
-manager: kfile
 ms.author: maghan
+manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: conceptual
-ms.date: 06/22/2018
-ms.openlocfilehash: ab637be12487029d17d7b1bfa89022dbae9aaa49
-ms.sourcegitcommit: fbb7924603f8915d07b5e6fc8f4d0c7f70c1a1e1
+ms.date: 08/21/2018
+ms.openlocfilehash: 935932e92e5d95ae52957bf1360db8d2232286ad
+ms.sourcegitcommit: dddb6f8d39131febadfd97efa0e0e1d728f4f5ff
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39415388"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "42702956"
 ---
 # <a name="frequently-asked-questions-about-power-bi-embedded"></a>Usein kysyttyjä kysymyksiä – Power BI Embedded
 
 * Jos sinulla on muita kysymyksiä, [voit esittää niitä Power BI -yhteisössä](http://community.powerbi.com/).
-* Eikö ongelma ratkennut? Käy [Power BI -tukisivulla](https://powerbi.microsoft.com/support/).
+* Eikö ongelma ratkennut? Vieraile [Power BI -tukisivulla](https://powerbi.microsoft.com/support/).
 
-## <a name="general"></a>Yleiset
+## <a name="general"></a>Yleinen
 
 ### <a name="what-is-power-bi-embedded"></a>Mikä Power BI Embedded on?
 
-Microsoft Power BI Embeddedin avulla sovelluskehittäjät voivat upottaa näyttäviä, täysin interaktiivisia raportteja, koontinäyttöjä ja ruutuja sovelluksiin ilman, että aikaa ja kustannuksia kuluu omien tietojen visualisointien ja ohjausobjektien luomiseen alusta alkaen.
+Microsoft Power BI Embeddedin (PBIE) avulla sovelluskehittäjät voivat upottaa näyttäviä, täysin interaktiivisia raportteja sovelluksiin ilman, että aikaa ja kustannuksia kuluu omien tietojen visualisointien ja ohjausobjektien luomiseen alusta alkaen.
 
 ### <a name="who-is-the-target-audience-for-power-bi-embedded"></a>Mikä on Power BI Embeddedin kohderyhmä?
 
@@ -70,7 +70,7 @@ Alla on osittainen luettelo eroista näiden ratkaisujen yhteydessä käytettävi
 | Power BI -raporttien käyttäminen Embedded-sovelluksessa | Kyllä | Kyllä | Kyllä |
 | Power BI -raporttien käyttäminen SharePointissa | Ei | Kyllä | Kyllä |
 | Power BI -raporttien käyttäminen Dynamicsissa | Ei | Kyllä | Kyllä |
-| Power BI -raporttien käyttäminen Teamsissa | Ei | Kyllä | Kyllä |
+| Power BI -raporttien käyttäminen Teamsissa (vain työpöytäsovellukset) | Ei | Kyllä | Kyllä |
 | Sisällön käyttäminen ilmaisella Power BI -käyttöoikeudella Powerbi.comissa ja Power BI -mobiilisovelluksessa | Ei | Ei | Kyllä |
 | Sisällön käyttäminen ilmaisella Power BI -käyttöoikeudella upotettuna MS Office -sovelluksiin | Ei | Kyllä | Kyllä |
 
@@ -79,10 +79,10 @@ Alla on osittainen luettelo eroista näiden ratkaisujen yhteydessä käytettävi
 |  |A-varastointiyksikkö (Power BI Embedded)  |EM-varastointiyksikkö (Power BI Premium)  |P-varastointiyksikkö (Power BI Premium)  |
 |---------|---------|---------|---------|
 |Ostaminen     |Azure-portaali |Office |Office |
-|Käyttötapaukset |* Sisällön upottaminen omaan sovellukseen |* Sisällön upottaminen omaan sovellukseen<br>* Sisällön upottaminen muihin MS Office -sovelluksiin ([SharePoint](https://powerbi.microsoft.com/blog/integrate-power-bi-reports-in-sharepoint-online/), [Teams](https://powerbi.microsoft.com/blog/power-bi-teams-up-with-microsoft-teams/), [Dynamics 365](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/basics/add-edit-power-bi-visualizations-dashboard)) |* Sisällön upottaminen omaan sovellukseen<br>* Sisällön upottaminen muihin MS Office -sovelluksiin ([SharePoint](https://powerbi.microsoft.com/blog/integrate-power-bi-reports-in-sharepoint-online/), [Teams](https://powerbi.microsoft.com/blog/power-bi-teams-up-with-microsoft-teams/), [Dynamics 365](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/basics/add-edit-power-bi-visualizations-dashboard))<br>* Sisällön jakaminen Power BI -käyttäjien kanssa [Power BI -palvelun](https://powerbi.microsoft.com/en-us/) kautta  |
+|Käyttötapaukset |* Sisällön upottaminen omaan sovellukseen |* Sisällön upottaminen omaan sovellukseen<br>* Sisällön upottaminen muihin MS Office -sovelluksiin ([SharePoint](https://powerbi.microsoft.com/blog/integrate-power-bi-reports-in-sharepoint-online/), [Teams (vain työpöytäsovellukset)](https://powerbi.microsoft.com/blog/power-bi-teams-up-with-microsoft-teams/), [Dynamics 365](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/basics/add-edit-power-bi-visualizations-dashboard)) |* Sisällön upottaminen omaan sovellukseen<br>* Sisällön upottaminen muihin MS Office -sovelluksiin ([SharePoint](https://powerbi.microsoft.com/blog/integrate-power-bi-reports-in-sharepoint-online/), [Teams (vain työpöytäsovellukset)](https://powerbi.microsoft.com/blog/power-bi-teams-up-with-microsoft-teams/), [Dynamics 365](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/basics/add-edit-power-bi-visualizations-dashboard))<br>* Sisällön jakaminen Power BI -käyttäjien kanssa [Power BI -palvelun](https://powerbi.microsoft.com/en-us/) kautta  |
 |Laskutus |Tunneittain |Kuukausittain |Kuukausittain |
 |Sitoutuminen  |Ei sitoutumista |Vuosittain  |Kuukausittain/vuosittain |
-|Erot |Täysi joustavuus – skaalaus ylös/alas, resurssien keskeytys/jatkaminen Azure-portaalissa tai ohjelmointirajapinnan kautta  |Voidaan käyttää sisällön upottamiseen SharePoint Onlinessa ja Microsoft Teamsissa |Yhdistää sovelluksiin upottamisen ja Power BI -palvelun käytön samassa kapasiteetissa |
+|Erot |Täysi joustavuus – skaalaus ylös/alas, resurssien keskeytys/jatkaminen Azure-portaalissa tai ohjelmointirajapinnan kautta  |Voidaan käyttää sisällön upottamiseen SharePoint Onlinessa ja Microsoft Teamsissa (vain työpöytäsovellukset) |Yhdistää sovelluksiin upottamisen ja Power BI -palvelun käytön samassa kapasiteetissa |
 
 ### <a name="what-are-the-prerequisites-to-create-a-pbie-capacity-in-azure"></a>Mitkä ovat ennakkoedellytykset PBIE-kapasiteetin luomiseksi Azuressa?
 
@@ -126,14 +126,14 @@ Power BI edellyttää kirjautumista sisään organisaation tilillä. Sovellus ei
 
 ### <a name="can-i-use-apis-to-create--manage-azure-capacities"></a>Voinko luoda ja hallita Azure-kapasiteetteja ohjelmointirajapintojen avulla?
 
-Kyllä, voit luoda ja hallita PBIE-resursseja Powershellin cmdlet-komentojen ja ARM-ohjelmointirajapintojen avulla.
+Kyllä, voit luoda ja hallita PBIE-resursseja Powershellin cmdlet-komentojen ja Azure Resource Manager (ARM) -ohjelmointirajapintojen avulla.
 
 * REST-ohjelmointirajapinnat - https://docs.microsoft.com/rest/api/power-bi-embedded/
 * Powershellin cmdlet-komennot - https://docs.microsoft.com/powershell/module/azurerm.powerbiembedded/
 
 ### <a name="what-is-the-pbi-embedded-dedicated-capacity-role-in-a-pbi-embedded-solution"></a>Mikä on PBI Embeddedin varatun kapasiteetin rooli PBI Embedded -ratkaisussa?
 
-Jotta voit [välittää tuotteesi tuotantoon](https://docs.microsoft.com/en-us/power-bi/developer/embedding-content#step-3-promote-your-solution-to-production), tarvitset Power BI -sisältöä (sovellustyötila, jota käytät sovelluksessa ja joka määritetään varatulle kapasiteetille).
+Jotta voit [ylentää ratkaisusi tuotantoon](https://docs.microsoft.com/en-us/power-bi/developer/embedding-content#step-3-promote-your-solution-to-production), tarvitset Power BI -sisältöä (sovellustyötila, jota käytät sovelluksessa ja joka määritetään varatulle kapasiteetille).
 
 ### <a name="what-are-the-azure-regions-pbi-embedded-is-available"></a>Millä Azure-alueilla PBI Embedded on saatavilla?
 
@@ -162,7 +162,7 @@ Voit käyttää Azure Active Directoryn todentamiskirjastoa saadaksesi AAD -tunn
 
 ### <a name="my-application-already-uses-aad-for-user-authentication-how-can-we-use-this-identity-when-authenticating-to-power-bi-in-a-user-owns-data-scenario"></a>Oma sovellus käyttää jo AAD:tä käyttäjien todentamiseen. Miten voimme käyttää tätä identiteettiä, kun todennamme Power BI: hin ”Käyttäjä omistaa tiedot” -skenaariossa? 
 
-Kyse on OAuth-vakiotodennuksesta toisen puolesta suoritettavassa työnkulussa (https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-authentication-scenarios#web-application-to-web-api) sovellus on määritettävä siten, että se edellyttää käyttöoikeuksia PowerBI -palveluun (vaadittujen soveltamisalueiden kanssa). Kun olet antanut käyttäjätunnuksen sovellukseen, voit kutsua ADAL API AcquireTokenAsyncin käyttämällä käyttäjätunnusta ja määrittämällä PowerBI-resurssin URL-osoitteen resurssin tunnukseksi. Katso alla olevaa koodikatkelmaa, joka näyttää, miten tämä tehdään:
+Kyse on OAuth-vakiotodennuksesta toisen puolesta suoritettavassa työnkulussa (https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-authentication-scenarios#web-application-to-web-api) sovellus on määritettävä siten, että se edellyttää käyttöoikeuksia PowerBI -palveluun (vaadittujen soveltamisalueiden kanssa). Kun olet antanut käyttäjätunnuksen sovellukseen, voit kutsua ADAL API AcquireTokenAsyncin käyttämällä käyttäjätunnusta ja määrittämällä Power BI -resurssin URL-osoitteen resurssin tunnukseksi. Katso alla olevaa koodikatkelmaa, joka näyttää, miten tämä tehdään:
 
 ```csharp
 var context = new AD.AuthenticationContext(authorityUrl);
@@ -239,7 +239,7 @@ Voittoa tavoittelemattomat järjestöt ja oppilaitokset voivat ostaa Azuren. Nä
 
 ### <a name="what-is-power-bi-workspace-collection"></a>Mikä on Power BI ‑työtilakokoelma?
 
-**Power BI -työtilakokoelman** (**Power BI Embedded** Versio 1) on ratkaisu, joka perustuu **Power BI -työtilakokoelman** Azure-resurssiin. Sen avulla voit luoda asiakkaillesi **Power BI Embedded** -sovelluksia **Power BI -työtilakokoelma** -työkalun Power BI -sisältöä käyttämällä, erillisiä ohjelmointirajapintoja ja työtilakokoelma-avaimia antaaksesi sovellukselle käyttöoikeuden Power BI:hin.
+**Power BI -työtilakokoelman** (**Power BI Embedded** Versio 1) on ratkaisu, joka perustuu **Power BI -työtilakokoelman** Azure-resurssiin. Tämän ratkaisun avulla voit luoda asiakkaillesi **Power BI Embedded** -sovelluksia **Power BI -työtilakokoelma** -ratkaisun Power BI -sisältöä käyttämällä, erillisiä ohjelmointirajapintoja ja työtilakokoelma-avaimia antaaksesi sovellukselle käyttöoikeuden Power BI:hin.
 
 ### <a name="can-i-migrate-from-power-bi-workspace-collection-to-power-bi-embedded"></a>Voinko siirtyä Power BI -työtilakokoelmasta Power BI Embeddediin?
 
@@ -273,7 +273,7 @@ Saatavilla alueilla: Kaakkois-Australia; Brasilia, etelä; Kanada, keskinen; It�
 
 Seuraavassa joitakin ominaisuuksista:
 * Kaikki PBI-tietolähteet ovat tuettuja **Power BI -työtilakokoelman**sisältämän kahden tietolähteen sijaan). 
-* Uudet ominaisuudet, kuten usein kysytyt kysymykset, kirjamerkit, raporttinäkymä ja ruutu-upotukset, mukautettu valikko, jne. ovat tuettuina vain **Power BI Embeddedissä**.
+* Uusia ominaisuuksia, kuten usein kysyttyjä kysymyksiä, päivityksiä, kirjanmerkkejä, koontinäyttöjen ja ruutujen upottamista ja mukautettuja valikoimia tuetaan vain **Power BI Embedded** -ratkaisussa.
 * Kapasiteettilaskutusmalli.
 
 ## <a name="onboarding-experience-tool-for-embedding"></a>Upottamiseen tarkoitettu perehdyttämiskokemustyökalu

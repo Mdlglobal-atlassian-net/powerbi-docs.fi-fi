@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.component: powerbi-report-server
 ms.topic: conceptual
 ms.date: 08/21/2018
-ms.openlocfilehash: f56e05e51090f37fdb0bcd295ec877ee73b5dac0
-ms.sourcegitcommit: 640382408111d6e9cd1b9dfad0b484e3c727e454
+ms.openlocfilehash: dc29336754be008b541f146fff7c5f8609472cd0
+ms.sourcegitcommit: dddb6f8d39131febadfd97efa0e0e1d728f4f5ff
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "40257933"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "42703002"
 ---
 # <a name="configure-your-report-server-to-host-excel-workbooks-using-office-online-server-oos"></a>Määritä raporttipalvelin Excel-työkirjojen isännäksi Office Online Serverin (OOS) avulla
 
@@ -37,7 +37,7 @@ Suorita nämä toimenpiteet palvelimessa, joka suorittaa Office Online Serverin.
     ```
 
     **Windows Server 2016:**
-   
+
     ```
     Add-WindowsFeature Web-Server,Web-Mgmt-Tools,Web-Mgmt-Console,Web-WebServer,Web-Common-Http,Web-Default-Doc,Web-Static-Content,Web-Performance,Web-Stat-Compression,Web-Dyn-Compression,Web-Security,Web-Filtering,Web-Windows-Auth,Web-App-Dev,Web-Net-Ext45,Web-Asp-Net45,Web-ISAPI-Ext,Web-ISAPI-Filter,Web-Includes,NET-Framework-Features,NET-Framework-45-Features,NET-Framework-Core,NET-Framework-45-Core,NET-HTTP-Activation,NET-Non-HTTP-Activ,NET-WCF-HTTP-Activation45,Windows-Identity-Foundation,Server-Media-Foundation
     ```
@@ -57,9 +57,9 @@ Jos aiot käyttää Excel Onlinen toimintoja, jotka käyttävät ulkoista tietop
 1. Lataa Office Online Server [volyymikäyttöoikeuskeskuksesta (VLSC)](http://go.microsoft.com/fwlink/p/?LinkId=256561). Lataustiedosto sijaitsee Office-tuotteiden kohdalla VLSC-portaalissa. Kehitystarkoituksiin voit ladata OOS:n MSDN-tilaajalatauksista.
 2. Suorita Setup.exe.
 3. Valitse **Lue Microsoft-ohjelmiston käyttöoikeussopimuksen ehdot** -sivulla **Hyväksyn tämän sopimuksen ehdot** ja valitse **Jatka**.
-4. **Valitse tiedostosijainti** -sivulla valitse kansio, johon haluat asentaa Office Online Serverin tiedostot (esimerkiksi *C:\Program Files\Microsoft Office Web Apps*) ja valitse  **Asenna nyt**. Jos määritettyä kansiota ei ole, asennusohjelma luo sen puolestasi.
+4. Valitse **Valitse tiedoston sijainti** -sivulla kansio, johon haluat asentaa Office Online Server -tiedostot (esimerkiksi C:\Program Files\Microsoft Office Web Apps*) ja valitse **Asenna nyt**. Jos määritettyä kansiota ei ole, asennusohjelma luo sen puolestasi.
 
-    **_On suositeltavaa asentaa Office Online Server järjestelmäasemaan._**
+    On suositeltavaa asentaa Office Online Server järjestelmäasemaan.
 
 5. Kun asennusohjelma on asentanut Office Online Serverin, valitse **Sulje**.
 
