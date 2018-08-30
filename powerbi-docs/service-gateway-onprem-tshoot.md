@@ -10,12 +10,12 @@ ms.component: powerbi-gateways
 ms.topic: conceptual
 ms.date: 08/08/2018
 LocalizationGroup: Gateways
-ms.openlocfilehash: f0f29cb88c77f3d7775670c0869ee55938327763
-ms.sourcegitcommit: cce10e14c111e8a19f282ad6c032d802ebfec943
+ms.openlocfilehash: cbc1d6304a7ee34b489d93488115ceb80864a42d
+ms.sourcegitcommit: ef4bf1439bc5655d1afc7fb97079ea0679e9124b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39658008"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43151902"
 ---
 # <a name="troubleshooting-the-on-premises-data-gateway"></a>Paikallisen tietoyhdyskäytävän vianmääritys
 
@@ -279,7 +279,7 @@ Tässä on luettelo käytettävissä olevista resurssilaskureista.
 | # of Mashup open connection failed / sec |Tämä on sekunnissa suoritettujen avoimien Mashup-yhteyksien epäonnistuneiden toimintojen määrä. |
 | # of Mashup queries executed / sec |Tämä on sekunnissa suoritettujen Mashup-kyselyiden määrä (onnistuneet ja epäonnistuneet). |
 | # of Mashup queries failed / sec |Tämä on sekunnissa suoritettujen epäonnistuneiden Mashup-kyselyiden määrä. |
-| # of multiple result sets of OLEDB queries failed / sec |Tämä on sekunnissa suoritettujen useiden tulosjoukkojen epäonnistuneiden OLEDB-kyselyiden määrä. |
+| # of OLEDB multiple result set queries failed / sec |Tämä on sekunnissa suoritettujen useiden tulosjoukkojen epäonnistuneiden OLEDB-kyselyiden määrä. |
 | # of OLEDB multiple result sets of queries executed / sec |Tämä on sekunnissa suoritettujen useiden tulosjoukkojen OLEDB-kyselyiden määrä (onnistuneet ja epäonnistuneet). |
 | # of OLEDB open connection executed / sec |Tämä on sekunnissa suoritettujen avoimien OLED-yhteyksien toimintojen määrä (onnistuneet ja epäonnistuneet). |
 | # of OLEDB open connection failed / sec |Tämä on sekunnissa suoritettujen avoimien OLED-yhteyksien epäonnistuneiden toimintojen määrä. |
