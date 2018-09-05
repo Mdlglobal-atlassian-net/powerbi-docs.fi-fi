@@ -9,12 +9,12 @@ ms.component: powerbi-mobile
 ms.topic: conceptual
 ms.date: 06/28/2018
 ms.author: maggies
-ms.openlocfilehash: 3ea99d26418a583a6ca588879aeafcd114aeaa6e
-ms.sourcegitcommit: 16098be04df05bc8e3d44a99b4d143b622759c59
+ms.openlocfilehash: e1df06c07f767936d861788c89205bce20cd5582
+ms.sourcegitcommit: 60f637d8555fd59fd9a86de720b89b388fb85ac0
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39616001"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43695129"
 ---
 # <a name="create-a-link-to-a-specific-location-in-the-power-bi-mobile-apps"></a>Linkin luominen tiettyyn sijaintiin Power BI ‑mobiilisovelluksissa
 Voit luoda URI-tunnuksen (uniform resource identifier) ja tehdä sen avulla linkin tiettyyn sijaintiin (*tarkka linkki*) Power BI ‑mobiilisovelluksissa kaikissa mobiiliympäristöissä: iOS:ssä, Android-laitteilla ja Windows 10:ssä.
@@ -68,7 +68,7 @@ Tällainen URI-tunnus avaa Power BI ‑mobiilisovelluksessa tietyn raportin:
 
 Löydät raportin 36-merkkisen objektitunnuksen siirtymällä Power BI -palvelussa (https://powerbi.com) haluamaasi raporttiin. Katso esimerkiksi tämän URL-osoitteen korostettua osaa:
 
-https://powerbi.com/groups/me/reports/**df9f0e94-31df-450b-b97f-4461a7e4d300**
+`https://powerbi.com/groups/me/reports/df9f0e94-31df-450b-b97f-4461a7e4d300`
 
 ## <a name="open-to-a-specific-report-page"></a>Tietyn raporttisivun avaaminen
 Tällainen URI-tunnus avaa Power BI ‑mobiilisovelluksessa tietyn raporttisivun:
@@ -79,7 +79,7 @@ Raporttisivun nimityksenä on ”ReportSection” ja sitä seuraava numero. Avaa
 
 Katso esimerkiksi tämän URL-osoitteen korostettua osaa:
 
-https://powerbi.com/groups/me/reports/df9f0e94-31df-450b-b97f-4461a7e4d300/**ReportSection11**
+`https://powerbi.com/groups/me/reports/df9f0e94-31df-450b-b97f-4461a7e4d300/ReportSection11`
 
 ## <a name="open-in-full-screen-mode"></a>Koko näytön tilassa avaaminen
 Jos haluat, että jokin raportti avautuu koko näytön tilassa, lisää korostettuna oleva parametri:
@@ -95,7 +95,7 @@ Voit lisätä merkkijonoon myös kontekstin. Sitten jos sinulle tulee tarvetta o
 
 Katso esimerkiksi tämän URL-osoitteen korostettua osaa: 
 
-https://powerbi.com/groups/me/reports/df9f0e94-31df-450b-b97f-4461a7e4d300/**&context=SlackDeepLink**
+`https://powerbi.com/groups/me/reports/df9f0e94-31df-450b-b97f-4461a7e4d300/&context=SlackDeepLink`
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 Palaute auttaa meitä päättämään, mitä toimintoja otamme käyttöön tulevaisuudessa, joten muista äänestää muita ominaisuuksia, jotka haluaisit nähdä Power BI ‑mobiilisovelluksissa. 
