@@ -2,20 +2,20 @@
 title: Koontinäyttöruudut Power BI -palvelussa
 description: Kaikki koontinäyttöruuduista Power BI:ssä. Tämä sisältää ruudut, jotka on luotu SQL Server Reporting Servicesistä (SSRS).
 author: mihart
-manager: kfile
+manager: annbe
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 03/02/2018
+ms.date: 08/21/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: e53945e0a112d9498dc6798e2441dd3d925a64c1
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 09fcce65539d89c9d42bc05369f13a6048eb96c2
+ms.sourcegitcommit: aed348a2d0025f7f40f2196254993f6aba5db7d2
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34249064"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43241587"
 ---
 # <a name="dashboard-tiles-in-power-bi"></a>Koontinäyttöruudut Power BI:ssä
 Koontinäytöt ja koontinäyttöruudut ovat Power BI -palvelun ominaisuus eivätkä Power BI Desktopin. Vaikka koontinäyttöruutuja ei voi luoda tai kiinnittää Power BI -mobiilisovelluksessa, [niitä voidaan tarkastella ja jakaa](mobile-tiles-in-the-mobile-apps.md). Power BI -mobiilisovelluksessa voit [lisätä kuvia koontinäyttöösi iPhone-sovelluksella](mobile-iphone-app-get-started.md).
@@ -67,9 +67,9 @@ Tartu ruutuun ja [siirrä sitä koontinäytössä](service-dashboard-edit-tile.m
    
    * [avata laskentataulukon, jolla tämä ruutu on luotu ](service-reports.md) ![laskentataulukkokuvake](media/service-dashboard-tiles/power-bi-open-worksheet.png)  
      
-     * [tarkastella kohdistustilassa ](service-focus-mode.md) ![kohdistuskuvake](media/service-dashboard-tiles/fullscreen-icon.jpg)  
+    * [tarkastella kohdistustilassa ](service-focus-mode.md) ![kohdistuskuvake](media/service-dashboard-tiles/fullscreen-icon.jpg)  
      * [viedä ruudussa käytettyjä tietoja](power-bi-visualization-export-data.md) ![vie tiedot -kuvake](media/service-dashboard-tiles/export-icon.png)
-     * [muokata otsikkoa ja alaotsikkoa, lisätä hyperlinkin, näyttää viimeisimmän päivityksen ajan](service-dashboard-edit-tile.md) ![muokkauskuvake](media/service-dashboard-tiles/pencil-icon.jpg)
+     * [muokata otsikkoa ja alaotsikkoa, lisätä hyperlinkin](service-dashboard-edit-tile.md) ![muokkauskuvake](media/service-dashboard-tiles/pencil-icon.jpg)
      * [suorittaa merkityksellisiä tietoja ](service-insights.md) ![merkityksellisiä tietoja -kuvake](media/service-dashboard-tiles/power-bi-insights.png)
      * [kiinnitä ruudun toiseen koontinäyttöön ](service-pin-tile-to-another-dashboard.md) 
         ![Kiinnitä-kuvake](media/service-dashboard-tiles/pin-icon.jpg)

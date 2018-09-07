@@ -2,20 +2,20 @@
 title: Power BI:n Julkaise verkkoon -toiminto
 description: Voit Power BI:n Julkaise verkkoon -toiminnon avulla helposti upottaa verkossa interaktiivisia Power BI -visualisointeja, kuten blogiposteja ja verkkosivustoja, sähköpostiviestien tai sosiaalisen median kautta kaikilla laitteilla.
 author: markingmyname
+ms.author: maghan
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 03/28/2018
-ms.author: maghan
 LocalizationGroup: Share your work
-ms.openlocfilehash: 2e02b4dfe9798eed393a0097ef4f220746acfdf6
-ms.sourcegitcommit: 695c65629d6d1faba61db2e1570324f65f235dde
+ms.openlocfilehash: b305c684ccf0938cfa8f5d9a2aa06f27a8c8be12
+ms.sourcegitcommit: fb29c4bf7e598f962b453ac68091ca2189d6ae3b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37092341"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43380332"
 ---
 # <a name="publish-to-web-from-power-bi"></a>Power BI:n Julkaise verkkoon -toiminto
 
@@ -128,15 +128,16 @@ Mukautettuja visualisointeja tuetaan **Julkaise verkkoon** -toiminnossa. Kun kä
 
 **Julkaise verkkoon** -toimintoa tuetaan useimmissa tietolähteissä ja raporteissa Power BI -palvelussa. Julkaise verkkoon -toimintoa **ei kuitenkaan tällä hetkellä tueta tai se ei ole saatavilla** seuraavien raporttien tapauksessa:
 
-1. Raportit, jotka käyttävät rivitason suojausta.
-2. Raportit, jotka käyttävät reaaliaikaisen yhteyden tietolähdettä, mukaan lukien paikallisesti isännöity Analysis Services Tabular, Analysis Services Multidimensional ja Azure Analysis Services.
-3. Raportit jaetaan sinulle suoraan tai organisaation sisältöpaketin kautta.
-4. Raportit ryhmässä, jonka muokkausjäsen et ole.
-5. ”R”-visualisointeja ei tällä hetkellä tueta Julkaise verkkoon -raporteissa.
-6. Tietojen vieminen visualisoinneista raportissa, joka on julkaistu verkkoon
-7. Power BI -visualisointien ArcGIS Maps
-8. Raportit, jotka sisältävät raporttitason DAX-mittayksiköitä
-9. [Luottamuksellisten tai omistusoikeudellisten tietojen suojaaminen](#publish-to-web-from-power-bi)
+- Raportit, jotka käyttävät rivitason suojausta.
+- Raportit, jotka käyttävät reaaliaikaisen yhteyden tietolähdettä, mukaan lukien paikallisesti isännöity Analysis Services Tabular, Analysis Services Multidimensional ja Azure Analysis Services.
+- Raportit jaetaan sinulle suoraan tai organisaation sisältöpaketin kautta.
+- Raportit ryhmässä, jonka muokkausjäsen et ole.
+- ”R”-visualisointeja ei tällä hetkellä tueta Julkaise verkkoon -raporteissa.
+- Tietojen vieminen visualisoinneista raportissa, joka on julkaistu verkkoon
+- Power BI -visualisointien ArcGIS Maps
+- Raportit, jotka sisältävät raporttitason DAX-mittayksiköitä
+- Kertakirjautuminen tietokyselymalleissa
+- [Luottamuksellisten tai omistusoikeudellisten tietojen suojaaminen](#publish-to-web-from-power-bi)
 
 ## <a name="tenant-setting"></a>Vuokraaja-asetukset
 

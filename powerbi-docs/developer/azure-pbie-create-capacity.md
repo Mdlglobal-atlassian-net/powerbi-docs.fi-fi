@@ -10,12 +10,12 @@ ms.devlang: csharp, javascript
 ms.topic: conceptual
 ms.reviewer: ''
 ms.date: 07/31/2018
-ms.openlocfilehash: 222a6368bc717880fee4f6ce6958455959b491bd
-ms.sourcegitcommit: fecea174721d0eb4e1927c1116d2604a822e4090
+ms.openlocfilehash: f364bb725c492c1bffd2493c1e2a48ee8c442a9e
+ms.sourcegitcommit: 6be2c54f2703f307457360baef32aee16f338067
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39360295"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43300042"
 ---
 # <a name="create-power-bi-embedded-capacity-in-the-azure-portal"></a>Power BI Embedded -kapasiteetin luominen Azure-portaalissa
 
@@ -54,7 +54,7 @@ Tarvitset tämän pikaoppaan suorittamiseen seuraavat asiat:
     |**Tilaus**|Tilaus, jota vastaan haluat luoda kapasiteetin.|
     |**Resurssiryhmä**|Resurssiryhmä, joka sisältää tämän uuden kapasiteetin. Valitse olemassa olevasta resurssiryhmästä tai luo toinen ryhmä. Saat lisätietoja tutustumalla [Azure Resource Managerin yleiskatsaukseen](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview).|
     |**Power BI -kapasiteetin järjestelmänvalvoja**|Power BI -kapasiteetin järjestelmänvalvojat voivat tarkastella kapasiteettia Power BI -hallintaportaalissa ja antaa määrityskäyttöoikeuksia muille käyttäjille. Oletusarvoisesti kapasiteetin järjestelmänvalvoja on tilisi. Kapasiteetin järjestelmänvalvojan on oltava Power BI -vuokraajassa.|
-    |**Sijainti**|Sijainti, jossa Power BI sijaitsee vuokraajaasi varten. Tämä asetus on ratkaistu automaattisesti eikä eri sijaintia voi valita.|
+    |**Sijainti**|Sijainti, jossa Power BI sijaitsee vuokraajaasi varten. Oletussijainti on kotialueesi, mutta voit muuttaa sijainnin [Multi-Geo-asetuksissa](embedded-multi-geo.md).
     |**Hinnoittelutaso**|Valitse SKU (näennäisytimien määrä ja muistin koko), joka vastaa tarpeitasi.  Lisätietoja on kohdassa [Power BI Embedded -hinnoittelu](https://azure.microsoft.com/pricing/details/power-bi-embedded/)|
 
 6. Valitse **Luo**.

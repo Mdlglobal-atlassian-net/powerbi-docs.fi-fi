@@ -2,20 +2,20 @@
 title: Koosteet (summa, keskiarvo, suurin arvo jne.) visualisoinneissa
 description: Koosteen muuttaminen Power BI:n kaaviossa (summa, keskiarvo, suurin arvo jne.)
 author: mihart
-manager: kfile
+manager: kvivek
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 01/04/2018
+ms.date: 08/29/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 39adfd04118362fa706f0840daa5c2520d899b5e
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: d48f99c8415b7b347a504525b0c6539d1e90f4dd
+ms.sourcegitcommit: aed348a2d0025f7f40f2196254993f6aba5db7d2
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34247592"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43241541"
 ---
 # <a name="aggregates-in-power-bi-visualizations"></a>Koosteet Power BI -visualisoinneissa
 ## <a name="what-is-an-aggregate"></a>Mikä on kooste?
@@ -26,7 +26,7 @@ Kun Power BI -palvelulla ja Power BI Desktopilla luodaan visualisointeja, niiss�
 Tutustutaan ensin *tietotyyppeihin*, koska tietojen tyyppi määrittää, miten niitä voi koostaa ja voiko niitä koostaa.
 
 ## <a name="types-of-data"></a>Tietojen tyypit
-Useimmat tietojoukot sisältävät useita tietotyyppejä. Aivan perustasollaan tieto on joko numeerinen tai ei-numeerinen. Numeerisia tietoja voi koostaa käyttämällä summaa, keskiarvoa, määrää, pienintä arvoa, varianssia ja muita laskutoimituksia. Jopa tekstimuotoista tietoa, jota kutsutaan *luokittaiseksi* tiedoksi, voidaan myös koostaa. Jos yrität koostaa luokittaisia kenttiä sijoittamalla niitä vain numeerisia tietoja hyväksyvään säilöön, kuten **Arvot** tai **Työkaluvihjeet**, Power BI laskee jokaisen luokan esiintymiskerrat tai jokaisen luokan erilliset esiintymiskerrat. Lisäksi tietynlaisilla tiedoilla, kuten päivämäärillä, on eräitä omia koostevaihtoehtojaan: aikaisin, viimeisin, ensimmäinen ja viimeinen. 
+Useimmat tietojoukot sisältävät useita tietotyyppejä. Aivan perustasollaan tieto on joko numeerinen tai ei-numeerinen. Numeerisia tietoja voi koostaa käyttämällä summaa, keskiarvoa, määrää, pienintä arvoa, varianssia ja muita laskutoimituksia. Jopa tekstimuotoista tietoa, jota kutsutaan *luokittaiseksi* tiedoksi, voidaan myös koostaa. Jos yrität koostaa luokkakentän (sijoittamalla sen vain numeerisia tietoja hyväksyvään säilöön, kuten **Arvot** tai **Työkaluvihjeet**), Power BI laskee jokaisen luokan esiintymiskerrat tai jokaisen luokan erilliset esiintymiskerrat. Lisäksi tietynlaisilla tiedoilla, kuten päivämäärillä, on eräitä omia koostevaihtoehtojaan: aikaisin, viimeisin, ensimmäinen ja viimeinen. 
 
 Alla olevassa esimerkissä:
 - **Yksikköjä myyty** ja **Valmistuksen hinta** ovat numeerisia tietoja sisältäviä sarakkeita.
@@ -129,7 +129,7 @@ V: Valitsemasi kenttä on todennäköisesti laskettu mittayksikkö tai Exceliss�
 
 K: Kenttäni **on** numeerinen, joten miksi vaihtoehtoja ovat vain **Määrä** ja **Erillisten määrä**?
 
-V1: Todennäköinen selitys on, että tietojoukon omistaja *ei* ole luokitellut kenttää numeroksi – joko vahingossa tai tarkoituksella. Jos tietojoukko on esimerkiksi **Vuosi**-kenttä, tietojoukon omistaja voi luokitella sen tekstiksi, koska on todennäköisempää, että **Vuosi**-kenttä lasketaan (kuten vuonna 1974 syntyneiden henkilöiden määrä) kuin että se summataan tai että siitä lasketaan keskiarvo. Jos olet tietojoukon omistaja, voit avata sen Power BI Desktopissa ja muuttaa sen tyypin **Mallinnus**-välilehdellä.  
+V1: Todennäköinen selitys on, että tietojoukon omistaja *ei* ole luokitellut kenttää numeroksi – joko vahingossa tai tarkoituksella. Jos tietojoukko on esimerkiksi **Vuosi**-kenttä, tietojoukon omistaja voi luokitella sen tekstiksi, koska on todennäköisempää, että **Vuosi**-kenttä lasketaan (esim. vuonna 1974 syntyneiden henkilöiden määrä) kuin että siitä lasketaan summa tai keskiarvo. Jos olet tietojoukon omistaja, voit avata sen Power BI Desktopissa ja muuttaa sen tyypin **Mallinnus**-välilehdellä.  
 
 V2: Jos kentässä on laskinkuvake, se on *laskettu mittayksikkö*. Jokaisella lasketulla mittayksiköllä on oma pysyväiskoodattu kaavansa, jonka voi muuttaa vain tietojoukon omistaja. Käytettävä laskutoimitus voi olla yksinkertainen kooste, kuten keskiarvo tai summa, mutta saattaa myös olla jotain monimutkaisempaa, kuten ”osallistumisen prosenttiosuus pääluokkaan” tai ”juokseva summa vuoden alusta”. Power BI ei laske tulosten summaa tai keskiarvoa vaan laskee sen sijaan uudelleen jokaisen arvopisteen käyttäen pysyväiskoodattua kaavaa.
 
@@ -139,6 +139,10 @@ V4: Lopulta kolmantena mahdollisuutena on, että käytät kenttää akselina. Es
 
 >[!NOTE]
 >Poikkeus sääntöön ovat pistekaaviot, jotka *edellyttävät* koostettuja arvoja X- ja Y-akseleille.
+
+K: Miksei SSAS-tietolähteille voi koostaa tekstikenttiä?
+
+V: SSAS MD:n reaaliaikaiset yhteydet eivät salli asiakaspuolen koostamisia. Tähän sisältyvät ensimmäinen, viimeinen, keskiarvo, vähimmäisarvo, enimmäisarvo ja summa.
 
 K: Minulla on pistekaavio, mutta haluan, että kenttääni *ei* koosteta.  Miten se onnistuu?
 

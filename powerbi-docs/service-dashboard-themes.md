@@ -2,20 +2,20 @@
 title: Raporttinäkymän teemojen käyttäminen Power BI -palvelussa
 description: Opi käyttämään mukautettua värivalikoimaa ja ota se käyttöön kokonaisessa raporttinäkymässä Power BI -palvelussa
 author: mihart
-manager: kfile
+manager: annbe
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 06/22/2018
+ms.date: 08/22/2018
 ms.author: mihart
 LocalizationGroup: Create reports
-ms.openlocfilehash: d17694d6dd2e2133b80d326a8aa86194d5710946
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 25bd28db7b31921d5f1a02ae72cee47207134f2a
+ms.sourcegitcommit: aed348a2d0025f7f40f2196254993f6aba5db7d2
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36944648"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43241472"
 ---
 # <a name="use-dashboard-themes-in-power-bi-service"></a>Raporttinäkymän teemojen käyttö Power BI-palvelussa
 **Raporttinäkymän teemojen** avulla voit käyttää väriteemaa koko raporttinäkymässä, kuten yrityksen värejä, kausivärejä tai mitä tahansa muuta haluamaasi väriteemaa. Kun otat **raporttinäkymän teeman** käyttöön, kaikki raporttinäkymän visualisoinnit käyttävät valitun teeman värejä (lukuun ottamatta muutamia poikkeuksia, jotka kuvataan myöhemmin tässä artikkelissa).
@@ -46,7 +46,7 @@ Power BI:n raporttinäkymän oletusteema on **Vaalea**. Jos haluat mukauttaa tee
 
 ![Valitse mukautettu avautuvasta valikosta](media/service-dashboard-themes/power-bi-theme-custom.png)
 
-Luo oma raporttinäkymän teemasi käyttämällä mukautettuja asetuksia. Jos lisäät taustakuvan, suosittelemme kuvalle vähintään 1920 x 1080 tarkkuutta.  
+Luo oma raporttinäkymän teemasi käyttämällä mukautettuja asetuksia. Jos lisäät taustakuvan, suosittelemme kuvalle vähintään 1920 x 1080 tarkkuutta. Jos haluat käyttää kuvaa taustana, lataa kuva julkiseen sivustoon, kopioi URL-osoite ja liitä se **Kuvan URL-osoite** -kenttään. 
 
 ### <a name="using-json-themes"></a>JSON-teemojen käyttäminen
 Toinen tapa luoda mukautettu teema, on ladata JSON-tiedosto, joka sisältää kaikki asetukset väreille, joita haluat raporttinäkymässä käytettävän. Power BI Desktopissa raportin tekijät käyttävät JSON-tiedostoja [luodessaan raporttiteemoja](desktop-report-themes.md). Näitä samoja JSON-tiedostoja voidaan ladata raporttinäkymiin tai niitä voi etsiä ja ladata Power BI -yhteisön[Teemavalikoima-sivulta](https://community.powerbi.com/t5/Themes-Gallery/bd-p/ThemesGallery) 

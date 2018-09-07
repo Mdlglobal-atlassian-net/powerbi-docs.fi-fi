@@ -2,35 +2,35 @@
 title: Upotetun sovelluksen vianmääritys
 description: Tässä artikkelissa käsitellään joitain yleisiä ongelmia, joita saattaa ilmetä, kun upotat sisältöä Power BI:stä.
 author: markingmyname
+ms.author: maghan
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: conceptual
-ms.date: 07/09/2018
-ms.author: maghan
-ms.openlocfilehash: d6b30d97b1982ceca34579751e412a279b0d8881
-ms.sourcegitcommit: 001ea0ef95fdd4382602bfdae74c686de7dc3bd8
+ms.date: 08/31/2018
+ms.openlocfilehash: 48faf9ebde5860b59569a7e0a3a96664d06a1b0d
+ms.sourcegitcommit: aed348a2d0025f7f40f2196254993f6aba5db7d2
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38877020"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43241564"
 ---
 # <a name="troubleshooting-your-embedded-application"></a>Upotetun sovelluksen vianmääritys
 
-Tässä artikkelissa käsitellään joitain yleisiä ongelmia, joita saattaa ilmetä upotettaessa sisältöä Power BI:stä.
+Tässä artikkelissa käsitellään joitain yleisiä ongelmia, joita saattaa ilmetä, kun upotat sisältöä Power BI:stä.
 
 ## <a name="tools-for-troubleshooting"></a>Työkalut vianmääritykseen
 
 ### <a name="fiddler-trace"></a>Fiddler-jäljitys
 
-[Fiddler](http://www.telerik.com/fiddler) on Telerikin ilmainen työkalu, joka valvoo HTTP-liikennettä.  Voit tarkastella Power BI -ohjelmointirajapinnan tiedonsiirtoa asiakaskoneelta. Tämä saattaa näyttää virheitä ja muita olennaisia tietoja.
+[Fiddler](http://www.telerik.com/fiddler) on Telerikin ilmainen työkalu, joka valvoo HTTP-liikennettä.  Voit tarkastella Power BI -ohjelmointirajapinnan tiedonsiirtoa asiakaskoneelta. Tämä työkalu saattaa näyttää virheitä ja muita olennaisia tietoja.
 
 ![Fiddler-jäljitys](../includes/media/gateway-onprem-tshoot-tools-include/fiddler.png)
 
 ### <a name="f12-in-browser-for-front-end-debugging"></a>F12 selainpuolen virheenkorjausta varten
 
-F12 käynnistää kehittäjä-ikkunan selaimeltasi. Tämä mahdollistaa verkkoliikenteen ja muiden tietojen tarkastelun.
+F12 käynnistää kehittäjä-ikkunan selaimeltasi. Tämä työkalu mahdollistaa verkkoliikenteen ja muiden tietojen tarkastelun.
 
 ![F12 selaimen virheenkorjaus](media/embedded-troubleshoot/browser-f12.png)
 
@@ -38,7 +38,7 @@ F12 käynnistää kehittäjä-ikkunan selaimeltasi. Tämä mahdollistaa verkkoli
 
 Tämä koodikatkelma näyttää, miten voit poimia virhetiedot HTTP:n poikkeamasta:
 
-```
+```csharp
 public static string GetExceptionText(this HttpOperationException exc)
 {
     var errorText = string.Format("Request: {0}\r\nStatus: {1} ({2})\r\nResponse: {3}",
@@ -52,14 +52,15 @@ public static string GetExceptionText(this HttpOperationException exc)
     return errorText;
 }
 ```
-Suosittelemme kirjaamaan pyyntötunnukset (sekä virhetiedot vianmääritystä varten).
+
+On suositeltavaa kirjata pyyntötunnus (sekä virhetiedot vianmääritystä varten).
 Anna pyyntötunnus, kun otat yhteyttä Microsoft-tukeen.
 
 ## <a name="app-registration"></a>Sovelluksen rekisteröinti
 
 **Virhe sovelluksen rekisteröinnissä**
 
-Virheilmoitukset Azure-portaalissa tai Power BI -sovelluksen rekisteröintisivulla ilmoittavat puutteellisista käyttöoikeuksista. Voidaksesi rekisteröidä sovelluksen sinun on oltava Azure AD -vuokraajan järjestelmänvalvoja tai sovellusten rekisteröiminen pitää sallia erikseen myös muille kuin järjestelmänvalvojille.
+Virheilmoitukset Azure-portaalissa tai Power BI -sovelluksen rekisteröintisivulla ilmoittavat puutteellisista käyttöoikeuksista. Jotta voit rekisteröidä sovelluksen, sinun on oltava Azure AD -vuokraajan järjestelmänvalvoja tai sovellusten rekisteröiminen pitää sallia erikseen myös muille kuin järjestelmänvalvojille.
 
 **Power BI Service ei tule esiin Azure-portaalissa uutta sovellusta rekisteröitäessä**
 
@@ -75,7 +76,7 @@ Fiddler-sieppaus saattaa vaatia tarkempaa tutkimusta. Rekisteröidyn sovelluksen
 
 Fiddler-sieppaus saattaa vaatia tarkempaa tutkimusta. 403-virheeseen voi olla useita syitä.
 
-* Käyttäjä on ylittänyt niiden upotettujen tunnusten määrän, jotka voidaan luoda jaettuun kapasiteettiin. Sinun on ostettava Azure-kapasiteetit luodaksesi upotettavia tunnuksia ja määritettävä työtila kyseiselle kapasiteetille. Katso [Power BI Embedded -kapasiteetin luominen Azure-portaalissa](https://docs.microsoft.com/azure/power-bi-embedded/create-capacity).
+* Käyttäjä on ylittänyt niiden upotettujen tunnusten määrän, jotka voidaan luoda jaettuun kapasiteettiin. Sinun on ostettava Azure-kapasiteetteja, jotta voit luoda upotettuja tunnuksia, ja määritettävä työtila kyseiselle kapasiteetille. Katso [Power BI Embedded -kapasiteetin luominen Azure-portaalissa](https://docs.microsoft.com/azure/power-bi-embedded/create-capacity).
 * Azure AD:n todennustunnus on vanhentunut.
 * Todennettu käyttäjä ei ole ryhmän jäsen (sovellus-työtila).
 * Todennettu käyttäjä ei ole ryhmän järjestelmänvalvoja (sovellus-työtila).
@@ -102,7 +103,7 @@ Sovelluksen taustatietokanta saattaa joutua päivittämään todennustunnuksen e
 
 **(AADSTS70002: Virhe vahvistettaessa tunnistetietoja. AADSTS50053: Olet yrittänyt kirjautua sisään liian monta kertaa virheellisellä käyttäjätunnuksella tai salasanalla)**
 
-Jos käytät Power BI Embeddediä ja Azure AD:n suoraa todennusta ja saat kirjautumisviestejä, kuten ***virhe:unauthorized_client,error_description:AADSTS70002: Virhe vahvistettaessa tunnistetietoja. AADSTS50053: Olet yrittänyt kirjautua sisään liian monta kertaa virheellisellä käyttäjätunnuksella tai salasanalla***, koska suora todennus on poistettu oletusarvoisesta käytöstä 14.06.2018.
+Jos käytät Power BI Embedded -palvelua ja Azure AD:n suoraa todennusta ja saat kirjautumisviestejä, kuten ***error:unauthorized_client, error_description:AADSTS70002: Virhe vahvistettaessa tunnistetietoja. AADSTS50053: Olet yrittänyt kirjautua sisään liian monta kertaa virheellisellä käyttäjätunnuksella tai salasanalla***, koska suora todennus on poistettu oletusarvoisesta käytöstä 14.6.2018.
 
 Voit ottaa toiminnon takaisin käyttöön [Azure AD -käytännöllä](https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/configure-authentication-for-federated-users-portal#enable-direct-authentication-for-legacy-applications), joka voidaan joko suodattaa organisaatiolle tai [palveluobjektille](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-application-objects#service-principal-object).
 
@@ -112,7 +113,7 @@ Jotta voit luoda tämän käytännön, sinun on oltava sen hakemiston **yleinen 
 
 1. Asenna [Azure AD Preview PowerShell -moduuli](https://docs.microsoft.com/en-us/powershell/azure/active-directory/install-adv2?view=azureadps-2.0).
 
-2. Suorita seuraavat powershell-komennot rivi riviltä (varmista, että muuttujalle $sp saadaan tulokseksi vain yksi sovellus).
+2. Suorita seuraavat PowerShell-komennot rivi riviltä (varmista, että muuttujalle $sp saadaan tulokseksi vain yksi sovellus).
 
 ```powershell
 Connect-AzureAD
@@ -178,11 +179,11 @@ Käyttäjän lupa on poistettu käytöstä vuokraajalle.
 
 **ISV haluaa eri tunnistetiedot samalle tietolähteelle**
 
-Tietolähteellä voi olla vain yhdet tunnistetiedot yhtä pääkäyttäjää kohden. Mikäli haluat käyttää eri tunnistetietoja, luo ylimääräisiä pääkäyttäjiä. Seuraavaksi määritä eri tunnistetiedot kunkin pääkäyttäjän kohdalla ja upota ne käyttämällä käyttäjän Azure AD -tunnusta.
+Tietolähteellä voi olla vain yhdet tunnistetiedot yhtä pääkäyttäjää kohden. Mikäli haluat käyttää eri tunnistetietoja, luo ylimääräisiä pääkäyttäjiä. Määritä sitten eri tunnistetiedot kunkin pääkäyttäjän kohdalla ja upota ne käyttämällä käyttäjän Azure AD -tunnusta.
 
 ## <a name="content-rendering"></a>Sisällön hahmontaminen
 
-**Upotetun sisällön hahmontaminen tai kuluttaminen epäonnistuu tai aika katkeaa**
+**Upotetun sisällön hahmontaminen tai kuluttaminen epäonnistuu tai aikakatkaistaan**
 
 Varmista, että upotettu tunnus ei ole vanhentunut. Tarkista upotetun tunnuksen voimassaoloaika ja päivitä se. Jos tarvitset lisätietoja, katso [päivitä tunnus JavaScript SDK:n avulla](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Refresh-token-using-JavaScript-SDK-example).
 
@@ -192,7 +193,41 @@ Jos käyttäjä ei näe raporttia tai raporttinäyttöä, varmista että ne lata
 
 **Raportti tai raporttinäkymä toimii hitaasti**
 
-Avaa tiedosto Power BI Desktopissa tai powerbi.comissa ja varmista, että suorituskyky on hyväksyttävällä tasolla sulkeaksesi ulos sovelluksiisi tai upottaviin ohjelmointirajapintoihin liittyvät ongelmat.
+Avaa tiedosto Power BI Desktopissa tai powerbi.comissa ja varmista, että suorituskyky on hyväksyttävällä tasolla sulkeaksesi ulos sovellukseesi tai upottaviin ohjelmointirajapintoihin liittyvät ongelmat.
+
+## <a name="troubleshooting-your-embedded-application-with-the-ierror-object"></a>Upotetun sovelluksen vianmääritys IError-objektin avulla
+
+Korjaa sovelluksen virheet ja selvitä virheiden syy käyttämällä [**IError-objektia**, jonka *virhetapahtuma* palautti **JavaScript SDK:sta**](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Troubleshooting-and-debugging-of-embedded-parts).
+
+IError-objektin hankkimisen jälkeen sinun on tarkasteltava asianmukaista yleisten virheiden taulukkoa, joka soveltuu käyttämääsi upotustyyppiin. Vertaa **IError-ominaisuuksia** taulukossa oleviin ja etsi mahdolliset syyt virheeseen.
+
+### <a name="typical-errors-when-embedding-for-power-bi-users"></a>Tavalliset virheet käytettäessä upotusta Power BI -käyttäjien käyttöön
+
+| Viesti | Yksityiskohtainen viesti | Virhekoodi | Mahdolliset syyt |
+|-------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------|-----------|--------------------------------------------------------|
+| TokenExpired | Käyttöoikeustietue on vanhentunut, lähetä uudelleen uudella käyttöoikeustietueella | 403 | Vanhentunut tunnus  |
+| PowerBIEntityNotFound | Raportin hakeminen epäonnistui | 404 | <li> Väärä raporttitunnus <li> Raporttia ei ole olemassa  |
+| Virheelliset parametrit | powerbiToken-parametria ei määritetty | – | <li> Käyttöoikeustietuetta ei ole annettu <li> Raporttitunnusta ei ole annettu |
+| LoadReportFailed | Alustaminen epäonnistui – klusteria ei voitu selvittää | 403 | * Virheellinen käyttöoikeustietue * Upotustyyppi ei vastaa tunnistetyyppiä |
+| PowerBINotAuthorizedException | Raportin hakeminen epäonnistui | 401 | <li> Väärä ryhmän tunnus <li> Valtuuttamaton ryhmä |
+| TokenExpired | Käyttöoikeustietue on vanhentunut, lähetä uudelleen uudella käyttöoikeustietueella. Seuraavaa raportin visualisointia ei voitu hahmontaa: <visual title> | – | Kyselytietojen vanhentunut tunnus |
+| OpenConnectionError | Visualisointia ei voi näyttää. Seuraavaa raportin visualisointia ei voitu hahmontaa: <visual title> | – | Kapasiteetti on keskeytetty tai poistettu, kun kapasiteettiin liittyvä raportti oli avoimena istunnossa |
+| ExplorationContainer_FailedToLoadModel_DefaultDetails | Tähän raporttiin liittyvän mallirakenteen lataaminen epäonnistui. Varmista, että palvelimeen on yhteys, ja yritä uudelleen. | – | <li> Kapasiteetti keskeytetty <li> Kapasiteetti poistettu |
+
+### <a name="typical-errors-when-embedding-for-non-power-bi-users-using-an-embed-token"></a>Tavalliset virheet käytettäessä upotusta Power BI -käyttäjien käyttöön (upotustunnuksen avulla)
+
+| Viesti | Yksityiskohtainen viesti | Virhekoodi | Syyt |
+|-------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|------------|-------------------------------------------------|
+| TokenExpired | Käyttöoikeustietue on vanhentunut, lähetä uudelleen uudella käyttöoikeustietueella | 403 | Vanhentunut tunnus  |
+| LoadReportFailed | Raportin hakeminen epäonnistui | 404 | <li> Väärä raporttitunnus <li> Raporttia ei ole olemassa  |
+| LoadReportFailed | Raportin hakeminen epäonnistui | 403 | Raporttitunnus ei vastaa tunnusta |
+| LoadReportFailed | Raportin hakeminen epäonnistui | 500 | Annettu raporttitunnus ei ole GUID-tunnus |
+| Virheelliset parametrit | powerbiToken-parametria ei määritetty | – | <li> Käyttöoikeustietuetta ei ole annettu <li> Raporttitunnusta ei ole annettu |
+| LoadReportFailed | Alustaminen epäonnistui – klusteria ei voitu selvittää | 403 | Väärä tunnustyyppi, virheellinen tunnus |
+| PowerBINotAuthorizedException | Raportin hakeminen epäonnistui | 401 | Väärä/valtuuttamaton ryhmän tunnus |
+| TokenExpired | Käyttöoikeustietue on vanhentunut, lähetä uudelleen uudella käyttöoikeustietueella. Seuraavaa raportin visualisointia ei voitu hahmontaa: <visual title> | – | Kyselytietojen vanhentunut tunnus |
+| OpenConnectionError | Visualisointia ei voi näyttää. Seuraavaa raportin visualisointia ei voitu hahmontaa: <visual title> | – | Kapasiteetti on keskeytetty tai poistettu, kun kapasiteettiin liittyvä raportti oli avoimena istunnossa |
+| ExplorationContainer_FailedToLoadModel_DefaultDetails | Tähän raporttiin liittyvän mallirakenteen lataaminen epäonnistui. Varmista, että palvelimeen on yhteys, ja yritä uudelleen. | – | <li> Kapasiteetti keskeytetty <li> Kapasiteetti poistettu |
 
 ## <a name="onboarding-experience-tool-for-embedding"></a>Upottamiseen tarkoitettu perehdyttämiskokemustyökalu
 
@@ -244,3 +279,5 @@ Jos haluat muokata Power BI -käyttäjäprofiilia tai tietoja, opettele muokkaam
 Jos haluat lisätietoja, katso [Power BI Embedded - usein kysytyt kysymykset](embedded-faq.md).
 
 Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
+
+Jos tarvitset lisäapua, [ota yhteyttä tukeen](https://powerbi.microsoft.com/en-us/support/pro/?Type=documentation&q=power+bi+embedded) tai [luo tukipalvelupyyntö Azure-portaalin kautta](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest) ja anna saamasi virhesanoma.

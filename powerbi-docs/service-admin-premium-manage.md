@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/10/2017
 ms.author: mblythe
 LocalizationGroup: Premium
-ms.openlocfilehash: 24d585af19dd774cdf6fe7dafb66c12e02d311f9
-ms.sourcegitcommit: 001ea0ef95fdd4382602bfdae74c686de7dc3bd8
+ms.openlocfilehash: 5da624f92093111c1996d9b1c5080cd58a906a45
+ms.sourcegitcommit: 2bdcb9e9959302a35ee90a145e4ff832a02aacb9
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38924788"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43250769"
 ---
 # <a name="manage-capacities-within-power-bi-premium-and-power-bi-embedded"></a>Kapasiteettien hallinta Power BI Premiumissa ja Power BI Embeddedissä
 Opi, miten voit hallita Power BI Premiumin ja Power BI Embeddedin kapasiteetteja, jotka tarjoavat sisällöllesi erillisiä resursseja.
@@ -163,33 +163,8 @@ Tallentamisen jälkeen työtila ja kaikki sen sisältö siirretään Premium-kap
 
 
 ## <a name="monitor-capacity-usage"></a>Seuraa kapasiteetin käyttöä
-Voit nähdä kunkin kapasiteetin suorittimen, muistin käytön, muistin tietojen poistamisen ja Direct Queryn käyttömittaukset. Suosittelemme valvomaan näitä mittareita, jotta voit varmistaa korkean suorituskyvyn käyttäjiesi käyttäessä kapasiteettiasi:
 
-![Käyttö viimeisten seitsemän päivän aikana](media/service-admin-premium-manage/premium-dashboard-tiles.png)
-
-> [!NOTE]
-> Power BI Embeddedin kapasiteetin käyttöä valvotaan Azure-portaalista.
-
-| Tieto | Kuvaus |
-| --- | --- |
-| Suoritin |Kuinka monta kertaa suoritin ylitti 80 prosentin käyttöasteen. |
-| Muistin tietojen poistaminen |Kuvastaa taustatoimintojen ydinten muistin vähyyttä. Tarkemmin sanottuna tämä ilmaisee, kuinka monta kertaa tietojoukkoja poistetaan muistista useiden tietojoukkojen aiheuttaman muistin vähäisyyden vuoksi. |
-| Muistin käyttö |Keskimääräinen muistin käyttö gigatavuina (Gt). |
-| DQ-kyselyjä/s | Kuinka monta kertaa DirectQueryn ja reaaliaikaisten yhteyksien määrä ylitti 80 prosenttia rajoituksesta. <br> <br> * DirectQuery- ja reaaliaikaisen yhteyden kyselyiden sekuntikohtainen kokonaismäärä on rajoitettu.<br><br>* Rajoitus on 30/s P1:llä, 60/s P2:lla ja 120/s P3:lla.<br><br> * DirectQuery- ja reaaliaikaisen yhteyden kyselyiden määrä lasketaan kiintiöön. Jos sinulla on käynnissä esimerkiksi 15 DirectQuery-kyselyä ja 15 reaaliaikaista yhteyttä samalla sekunnilla, nopeutta rajoitetaan.<br/><br>* Tämä koskee niin paikallisia kuin pilviyhteyksiäkin. |
-
-Mittarit kuvaavat käyttöä viime viikon aikana.  Jos haluat tarkastella mittareita tarkemmin, voit tehdä niin napsauttamalla jotakin yhteenvetoruutua.  Sen jälkeen näet yksityiskohtaiset kaaviot Premium-kapasiteetin mittareista.  Näissä kaavioissa on tuntikohtainen yhteenveto viime viikolta ja ne voivat auttaa selvittämään, jos Premium-kapasiteetissasi on ollut jokin suorituskykyyn liittyvä tapahtuma.  
-
-![Suorittimen yksityiskohtainen käyttökaavio](media/service-admin-premium-manage/premium-usage-detailed-chart-cpu.png)
-
-![Muistin tietojen poistamisen yksityiskohtainen käyttökaavio](media/service-admin-premium-manage/premium-usage-detailed-chart-memory-thrashing.png)
-
-
-![Muistin koon yksityiskohtainen käyttökaavio](media/service-admin-premium-manage/premium-usage-detailed-chart-memory-size.png)
-
-
-![Muistin tietojen poistamisen yksityiskohtainen käyttökaavio](media/service-admin-premium-manage/premium-usage-detailed-chart-dq.png)
-
-Voit myös viedä minkä tahansa mittarin pohjana olevat tiedot csv-tiedostoon.  Tämän viennin ansiosta saat yksityiskohtaista tietoa kolmen minuutin välein viime viikon kultakin päivältä.
+Power BI tarjoaa sovelluksen kapasiteetin käytön seurantaan. Lisätietoja on artikkelissa [Power BI Premium -kapasiteettien valvominen organisaatiossasi](service-admin-premium-monitor-capacity.md).
 
 ## <a name="what-premium-looks-like-for-users"></a>Miltä Premium näyttää käyttäjille
 Käyttäjät ei pääsääntöisesti edes tarvitse tietää kuuluvansa Premium-kapasiteettiin. Koontinäytöt ja raportit yksinkertaisesti toimivat. Näet vinoneliökuvakkeen Premium-kapasiteettiin kuuluvien työtilojen vieressä.
