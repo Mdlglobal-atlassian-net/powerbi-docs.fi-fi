@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/18/2018
 ms.author: kfile
 LocalizationGroup: Reports
-ms.openlocfilehash: 2e8888679f36b64a6fc5956a9ca10dc3d07dce1a
-ms.sourcegitcommit: 8b2ae15eb0e39cce29f3bf466ab7768f3f7c7815
+ms.openlocfilehash: 08ead2570602538218085327c6d385c36e0d7e8c
+ms.sourcegitcommit: 8bad5ed58e9e406aca53996415b1240c2972805e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/16/2018
-ms.locfileid: "40257030"
+ms.lasthandoff: 09/11/2018
+ms.locfileid: "44343319"
 ---
 # <a name="power-bi-performance-best-practices"></a>Power BI:n suorituskykyä parantavat parhaat käytännöt 
 Tässä artikkelissa annetaan ohjeita nopeiden ja luotettavien raporttien luomiseen Power BI:ssä.  
@@ -59,7 +59,7 @@ Seuraavassa osiossa kuvataan yleisiä parhaita käytäntöjä yhdistämiseen Dir
 - Työnnä laskettuja sarakkeita ja mittayksiköitä lähteeseen, mikäli mahdollista – mitä lähempänä ne ovat lähdettä, sitä suurempi todennäköisyys suorituskyvyn parantumiseen. 
 - Optimoi! Ymmärrä kyselyiden suoritussuunnitelmia, lisää indeksejä usein suodatettaviin sarakkeisiin jne. 
 
-### <a name="modelling-guidance"></a>Ohjeita mallinnukseen 
+### <a name="modeling-guidance"></a>Mallinnusohjeet 
 - Aloita Power BI Desktopissa. 
 - Vältä monimutkaisia kyselyitä kyselyeditorissa. 
 - Älä käytä suhteellista päivämäärien suodattamista kyselyeditorissa.  
@@ -110,7 +110,7 @@ Ohjeet ovat seuraavat:
 
    Tuloksena tulisi olla luettelo sovelluksista ja niiden avoimista porteista, esimerkiksi:  
 
-   TCP    [::1]:55786            [::1]:55830            ESTABLISHED 
+   `TCP    [::1]:55786            [::1]:55830            ESTABLISHED`
 
    [msmdsrv.exe] 
 
