@@ -1,5 +1,5 @@
 ---
-title: Power BI -koontinäytön luominen raportista
+title: Power BI -palvelun koontinäytön luominen raportista
 description: Power BI -koontinäytön luominen raportista
 author: mihart
 manager: kfile
@@ -8,16 +8,16 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 03/02/2018
+ms.date: 09/02/2018
 ms.author: mihart
-ms.openlocfilehash: 56a26b50f50dd52d4355cd8326ec0d104dab19c0
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: a550aabb3590018666a3784e602ede15696862e5
+ms.sourcegitcommit: fe03f2a80f2df82219b8e026085f93a8453201df
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34248926"
+ms.lasthandoff: 09/08/2018
+ms.locfileid: "44168085"
 ---
-# <a name="create-a-power-bi-dashboard-from-a-report"></a>Power BI -koontinäytön luominen raportista
+# <a name="create-a-power-bi-dashboard-in-power-bi-service"></a>Power BI -koontinäytön luominen Power BI -palvelussa
 Olet lukenut [Koontinäytöt Power BI:ssä](service-dashboards.md) ja haluat nyt luoda omasi. Koontinäyttö voidaan luoda monin eri tavoin, esimerkiksi uusi alusta alkaen, raportista, tietojoukosta tai kopioimalla aiemmin luotu koontinäyttö.  
 
 Tämä kaikki voi tuntua vaikealta, kun olet vasta pääsemässä alkuun, joten aloitetaan luomalla nopea ja helppo koontinäyttö kiinnittämällä visualisointeja raportista, joka on jo muodostettu. Kun olet päässyt tämän pikaoppaan loppuun, sinulla on hyvä käsitys koontinäyttöjen ja raporttien välisestä suhteesta, Muokkausnäkymän avaamisesta raporttieditorissa, ruutujen kiinnittämisestä sekä koontinäytön ja raportin välillä siirtymisestä. Pääset edistyneempiin aihealueisiin käyttämällä linkkejä vasemmalla olevasta Sisältöluettelosta tai **Seuraavat vaiheet** -kohdasta artikkelin lopussa.

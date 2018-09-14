@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 06/06/2018
+ms.date: 08/27/2018
 ms.author: nikhilga
 LocalizationGroup: Get started
-ms.openlocfilehash: 750dbf2593981e8fc9ad5f2f66219d6bf6fd641c
-ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
+ms.openlocfilehash: d7f966834e2d6b44f3a887991bd0ebd6e38836f0
+ms.sourcegitcommit: 619b66176394b9b881edc29b6d123d9729554eb3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37137464"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "44044344"
 ---
 ---
 # <a name="whats-new-in-the-power-bi-service"></a>Power BI -palvelun uudet toiminnot ja ominaisuudet
@@ -31,27 +31,37 @@ Saat lisätietoja uusista toiminnoista ja ominaisuuksista myös YouTube-kanavist
 * [Microsoft Power BI (YouTube)](https://www.youtube.com/channel/UCy--PYvwBwAeuYaR8JLmrfg)
 * [Kaveri kuutiossa (YouTube)](https://www.youtube.com/channel/UCFp1vaKzpfvoGai0vE5VJ0w)
 
-## <a name="may-2018"></a>Toukokuu 2018
-* [Teeman koontinäytöt](https://docs.microsoft.com/en-us/power-bi/service-dashboard-themes) Power BI -palvelussa.
-* [Lisäävä päivitys](https://docs.microsoft.com/en-us/power-bi/service-premium-incremental-refresh) Premiumin avulla.
-* Pyydä käyttöoikeustyönkulkua [Power BI -sovelluksille](https://docs.microsoft.com/en-us/power-bi/service-create-distribute-apps).
-* Get Data -päivitykset, jotta käyttäjien on helpompi löytää [Power BI -sovellukset](https://docs.microsoft.com/en-us/power-bi/service-create-distribute-apps).
-* Asetukset, joiden avulla [Pysyvät suodattimet](https://powerbi.microsoft.com/en-us/blog/announcing-persistent-filters-in-the-service/) voidaan ottaa käyttöön tai poistaa käytöstä Power BI -palvelussa.
-* Azure B2B -kutsun työnkulun parannukset raporteille.
+## <a name="august-2018"></a>Elokuu 2018
+* Power BI [-raportin URL-suodattimen](service-url-filters.md) parannukset
 
 ## <a name="previous-months-2018"></a>Edelliset kuukaudet (2018)
+### <a name="july-2018"></a>Heinäkuu 2018
+* [Ohjelmointirajapinnat ja PowerShellin cmdlet-komennot](https://powerbi.microsoft.com/blog/announcing-apis-and-powershell-cmdlets-for-power-bi-administrators/) Power BI:n järjestelmänvalvojille
+
+### <a name="june-2018"></a>Kesäkuu 2018
+* Raporttien jakaminen suodattimien ja osittajien avulla
+* Uusi ja parannettu käyttöliittymä [yhdyskäytäväyhteyksiin](https://powerbi.microsoft.com/blog/easier-set-up-of-datasets-in-power-bi/) ja tietojoukkojen määrittämiseen
+
+### <a name="may-2018"></a>Toukokuu 2018
+* [Teeman koontinäytöt](https://docs.microsoft.com/power-bi/service-dashboard-themes) Power BI -palvelussa.
+* [Lisäävä päivitys](https://docs.microsoft.com/power-bi/service-premium-incremental-refresh) Premiumin avulla.
+* Pyydä käyttöoikeustyönkulkua [Power BI -sovelluksille](https://docs.microsoft.com/power-bi/service-create-distribute-apps).
+* Get Data -päivitykset, jotta käyttäjien on helpompi löytää [Power BI -sovellukset](https://docs.microsoft.com/power-bi/service-create-distribute-apps).
+* Asetukset, joiden avulla [Pysyvät suodattimet](https://powerbi.microsoft.com/blog/announcing-persistent-filters-in-the-service/) voidaan ottaa käyttöön tai poistaa käytöstä Power BI -palvelussa.
+* Azure B2B -kutsun työnkulun parannukset raporteille.
+
 ### <a name="april-2018"></a>Huhtikuu 2018
-* [Power BI:n GDPR-julkaisu](http://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=5bd4c466-277b-4726-b9e0-f816ac12872d&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers)
+* [Power BI:n tekninen raportti tietosuojasta](http://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=5bd4c466-277b-4726-b9e0-f816ac12872d&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers)
 * Power BI -palvelun [valvontalokit](https://docs.microsoft.com/power-bi/service-admin-auditing) ovat oletuksena käytössä Office 365:n vuokraajille.
 
 ### <a name="march-2018"></a>Maaliskuu 2018
-* [Pysyvät suodattimet](https://powerbi.microsoft.com/en-us/blog/announcing-persistent-filters-in-the-service/) Power BI-palvelussa.
-* Jaa sisältöä käyttäjien kanssa heidän omien sähköpostitiliensä avulla. [Azure Active Directory B2B:n](https://powerbi.microsoft.com/en-us/blog/power-bi-expands-access-to-intelligence-for-external-guest-users/) laajennus.
+* [Pysyvät suodattimet](https://powerbi.microsoft.com/blog/announcing-persistent-filters-in-the-service/) Power BI-palvelussa.
+* Jaa sisältöä käyttäjien kanssa heidän omien sähköpostitiliensä avulla. [Azure Active Directory B2B:n](https://powerbi.microsoft.com/blog/power-bi-expands-access-to-intelligence-for-external-guest-users/) laajennus.
 
 ### <a name="february-2018"></a>Helmikuu 2018
-* Asenna [Power BI -sovellukset](https://docs.microsoft.com/en-us/power-bi/service-create-distribute-apps) automaattisesti käyttäjille.
+* Asenna [Power BI -sovellukset](https://docs.microsoft.com/power-bi/service-create-distribute-apps) automaattisesti käyttäjille.
 * P4- ja P5-kapasiteetit Power BI Premiumissa
-* [Organisaation mukautettujen visualisointien](https://docs.microsoft.com/en-us/power-bi/power-bi-custom-visuals-organization) esiversio.
+* [Organisaation mukautettujen visualisointien](https://docs.microsoft.com/power-bi/power-bi-custom-visuals-organization) esiversio.
 
 ### <a name="january-2018"></a>Tammikuu 2018
 *   Jaa Power BI -raportteja ja lisää niitä suosikiksi.
@@ -63,12 +73,12 @@ Saat lisätietoja uusista toiminnoista ja ominaisuuksista myös YouTube-kanavist
 
 ## <a name="previous-months-2017"></a>Edelliset kuukaudet (2017)
 ## <a name="october-and-november-2017"></a>Lokakuu ja marraskuu 2017
-*   Valikoiva sisällön julkaisu [Power BI -sovellusten](https://docs.microsoft.com/en-us/power-bi/service-create-distribute-apps) avulla.
-*   Jakaminen ulkoisille käyttäjille [Azure Active Directory B2B:n](https://powerbi.microsoft.com/en-us/blog/power-bi-expands-access-to-intelligence-for-external-guest-users/preview/) avulla.
+*   Valikoiva sisällön julkaisu [Power BI -sovellusten](https://docs.microsoft.com/power-bi/service-create-distribute-apps) avulla.
+*   Jakaminen ulkoisille käyttäjille [Azure Active Directory B2B:n](https://powerbi.microsoft.com/blog/power-bi-expands-access-to-intelligence-for-external-guest-users/preview/) avulla.
 * Tekoälyavusteiset sovellussuositukset.
 * Käyttöliittymäpäivitykset koontinäytön ruudulla.
 * Sähköpostitilausten tuki sovelluksille. 
-* Tarkka hallintatoiminto [verkkoon julkaisemista](https://docs.microsoft.com/en-us/power-bi/service-admin-portal#export-and-sharing-settings) varten.
+* Tarkka hallintatoiminto [verkkoon julkaisemista](https://docs.microsoft.com/power-bi/service-admin-portal#export-and-sharing-settings) varten.
 
 ## <a name="september-2017"></a>Syyskuu 2017
 * Jaa Premium-kapasiteetissa koontinäytöt käyttäjille, joilla ei ole Power BI Pro -käyttöoikeutta.

@@ -2,20 +2,20 @@
 title: Excel-työkirjasta upeaksi raportiksi nopeasti
 description: Excel-työkirjasta upeaksi raportiksi nopeasti
 author: mihart
-manager: kfile
+manager: kvivek
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 02/28/2018
+ms.date: 08/28/2018
 ms.author: mihart
 LocalizationGroup: Data from files
-ms.openlocfilehash: f24d4055bd5fcf5fdee058112c268a1a0e197012
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 3244a185c7b7e9caa689ab7b90c184c9bf5b4662
+ms.sourcegitcommit: 619b66176394b9b881edc29b6d123d9729554eb3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34247168"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "44044413"
 ---
 # <a name="from-excel-workbook-to-stunning-report-in-no-time"></a>Excel-työkirjasta upeaksi raportiksi nopeasti
 Esimiehesi haluaa raportin viimeisimmistä myyntiluvuista yhdistettynä viimeisimmän kampanjan näyttökertoihin vielä tämän päivän aikana. Uusimmat tiedot sijaitsevat kuitenkin erilaisissa kolmannen osapuolen järjestelmissä ja kannettavan tietokoneesi tiedostoissa. Aiemmin visualisointien luominen ja raportin muotoilu on vienyt tunteja. Tunnet, kuinka ahdistus alkaa vallata alaa.
@@ -34,7 +34,7 @@ Seuraavaksi tiedot muotoillaan taulukoksi. Valitse Excelin Aloitus-välilehden T
 ![tiedot muotoiltuna taulukoksi](media/service-from-excel-to-stunning-report/pbi_excel_table.png)
 
 ## <a name="upload-your-excel-file-into-power-bi"></a>Excel-tiedoston lataaminen Power BI:hin
-Power BI muodostaa yhteyden useisiin tietolähteisiin, kuten tietokoneessasi oleviin Excel-tiedostoihin. Aloita kirjautumalla sisään Power BI:hin. Jos et ole vielä rekisteröinyt, [voit tehdä sen maksutta](https://powerbi.com).
+Power BI muodostaa yhteyden useisiin tietolähteisiin, kuten tietokoneessasi oleviin Excel-tiedostoihin. Aloita kirjautumalla sisään Power BI -palveluun. Jos et ole vielä rekisteröinyt, [voit tehdä sen maksutta](https://powerbi.com).
 
 Haluat luoda uuden koontinäytön. Avaa **Oma työtila** ja valitse **+ Luo** -kuvake.
 

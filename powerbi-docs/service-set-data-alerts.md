@@ -2,21 +2,21 @@
 title: Power BI -palvelun tietoilmoitusten määrittäminen
 description: Opi asettamaan ilmoituksia ilmoittamaan sinulle, kun koontinäyttösi tiedot muuttuvat Microsoft Power BI -palvelussa asettamiesi rajojen ulkopuolelle.
 author: mihart
-manager: kfile
+manager: kvivek
 ms.reviewer: ''
 featuredvideoid: JbL2-HJ8clE
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 02/28/2018
+ms.date: 08/28/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: ffbad48df6665d5dff6c4eca97e86e6f2850565f
-ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
+ms.openlocfilehash: 153676c983ef81bcccf1ea6bf0adf95ef29a2765
+ms.sourcegitcommit: fe03f2a80f2df82219b8e026085f93a8453201df
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37137544"
+ms.lasthandoff: 09/08/2018
+ms.locfileid: "44167924"
 ---
 # <a name="data-alerts-in-power-bi-service"></a>Power BI -palvelun tietoilmoitukset
 Aseta ilmoituksia ilmoittamaan sinulle, kun koontinäyttösi tiedot muuttuvat asettamiesi rajojen ulkopuolelle. 
@@ -42,15 +42,15 @@ Tässä esimerkissä käytetään jälleenmyyntianalyysimallin koontinäytön ko
 1. Aloita koontinäytöstä. Valitse koontinäytön mittarista, suorituskykyilmaisimesta tai korttiruudusta kolme pistettä.
    
    ![Myymälöitä yhteensä -ruutu](media/service-set-data-alerts/powerbi-card.png)
-2. Lisää ainakin yksi hälytys **Myymälöitä yhteensä** -ruudulle valitsemalla kellokuvake ![Hälytys-kuvake](media/service-set-data-alerts/power-bi-bell-icon.png).
+2. Lisää yksi tai useampia hälytyksiä **Myymälöitä yhteensä** -ruudulle valitsemalla kellokuvake ![Hälytys-kuvake](media/service-set-data-alerts/power-bi-bell-icon.png) tai **Hälytysten hallinta**.
    
-1. Aloita valitsemalla **+ Lisää ilmoitussääntö**, varmista, että liukusäädin on asennossa **Käytössä**, ja anna hälytykselle nimi. Nimet helpottavat ilmoitusten tunnistamista.
+1. Valitse **Hälytysten hallinta** -ruudussa **+ Lisää hälytyssääntö**.  Varmista, että liukusäädin on asennossa **Käytössä**, ja anna hälytykselle nimi. Nimet helpottavat ilmoitusten tunnistamista.
    
    ![Hälytysten hallinta -ikkuna](media/service-set-data-alerts/powerbi-alert-title.png)
 4. Vieritä alas ja anna hälytyksen tiedot.  Luomme tässä esimerkissä ilmoituksen, joka ilmoittaa meille kerran päivässä, jos kauppojen kokonaismäärä ylittää sadan. Ilmoitukset näkyvät ilmoituskeskuksessa. Myös Power BI lähettää meille sähköpostia.
    
    ![Hälytysten hallinta -ikkuna, määritä Raja-arvo](media/service-set-data-alerts/power-bi-set-alert-details.png)
-5. Valitse **Tallenna**.
+5. Valitse **Tallenna ja sulje**.
 
 ## <a name="receiving-alerts"></a>Ilmoitusten vastaanottaminen
 Kun seuratut tiedot saavuttavat jonkin määrittämistäsi raja-arvoista, tapahtuu useita asioita. Power BI tarkistaa ensin, onko edellisen ilmoituksen lähettämisestä yli tunti tai yli 24 tuntia (valitsemasi vaihtoehdon mukaan). Kunhan tiedot ylittävät raja-arvon, saat ilmoituksen.
@@ -104,6 +104,4 @@ Voit hallita ilmoituksia usealla tavalla: suoraan koontinäytön ruudusta, Power
 ## <a name="next-steps"></a>Seuraavat vaiheet
 [Luo Microsoft Flow, joka sisältää tietoilmoituksen](service-flow-integration.md)    
 [Määritä tietoilmoitukset mobiililaitteellasi](mobile-set-data-alerts-in-the-mobile-apps.md)    
-[Mikä on Power BI?](power-bi-overview.md)    
-Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)
 

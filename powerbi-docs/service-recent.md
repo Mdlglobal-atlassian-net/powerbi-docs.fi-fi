@@ -2,31 +2,31 @@
 title: Näyttää hiljattain tarkastellut sisällöt Power BI:ssä
 description: viimeisimmät Power BI-dokumentaatiot
 author: mihart
-manager: kfile
+manager: kvivek
 ms.reviewer: ''
 featuredvideoid: G26dr2PsEpk
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 03/01/2018
+ms.date: 09/01/2018
 ms.author: mihart
 LocalizationGroup: Common tasks
-ms.openlocfilehash: c3d75f6cada62e7fc1dd026a4bdfa1daa8e94153
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: ae57617b1b70a3ed6181ab164accb69dac29779c
+ms.sourcegitcommit: 619b66176394b9b881edc29b6d123d9729554eb3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34250927"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "44044206"
 ---
 # <a name="recent-content-in-power-bi-service"></a>**Viimeisimmät**-sisältö Power BI -palvelussa
 
 
 ## <a name="what-is-recent-content"></a>Mitä on viimeisin sisältö?
-Viimeisimmät sisältö on tietoyksiköt, joissa olet käynyt, enintään 20 kpl.  Näitä ovat esimerkiksi koontinäytöt, raportit, sovellukset ja työkirjat kaikissa työtiloissasi.
+Viimeisin sisältö on tietoyksiköt, joissa olet viimeksi käynyt Power BI -palvelussa, enintään 20 kpl.  Näitä ovat esimerkiksi koontinäytöt, raportit, sovellukset ja työkirjat kaikissa työtiloissasi.
 
 ![Viimeisin sisältö -ikkuna](media/service-recent/power-bi-recent-screen.png)
 
-Katso kuinka Amanda osoittaa, miten **Viimeisimmät** sisällön luettelot täytetään, ja kokeile sitten itse noudattamalla videon alapuolella olevia vaiheittaisia ohjeita.
+Katso kun Amanda näyttää, miten Power BI -palvelun **Viimeisin** sisältö -luettelot täytetään, ja kokeile sitten itse noudattamalla videon alapuolella olevia vaiheittaisia ohjeita.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/G26dr2PsEpk" frameborder="0" allowfullscreen></iframe>
 
