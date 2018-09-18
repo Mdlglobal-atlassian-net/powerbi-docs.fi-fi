@@ -2,26 +2,28 @@
 title: Tietojen työntäminen tietojoukkoon
 description: Tietojen työntäminen Power BI -tietojoukkoon
 author: markingmyname
+ms.author: maghan
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: conceptual
 ms.date: 01/05/2017
-ms.author: maghan
-ms.openlocfilehash: 1cc19d1ceefb95e0cb56e2a5dcbcc89609f654d5
-ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
+ms.openlocfilehash: 01bcc545d3ba8edb23ef583467322401780e657d
+ms.sourcegitcommit: 698b788720282b67d3e22ae5de572b54056f1b6c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37598545"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45974180"
 ---
 # <a name="push-data-into-a-power-bi-dataset"></a>Tietojen työntäminen Power BI -tietojoukkoon
+
 Power BI ‑ohjelmointirajapinnan avulla voit työntää tietoja Power BI -tietojoukkoon. Voit esimerkiksi laajentaa aiemmin luotua liiketoiminnan työnkulkua ja työntää avaintietoja tietojoukkoon. Tässä tapauksessa haluat työntää Tuote-taulukon sisältävän Myyntimarkkinointi-tietojoukon tietojoukkoon.
 
 Tarvitset Azure Active Directoryn (Azure AD) ja [Power BI -tilin](create-an-azure-active-directory-tenant.md) ennen kuin voit aloittaa tietojen työntämisen tietojoukkoon.
 
 ## <a name="steps-to-push-data-into-a-dataset"></a>Vaiheet tietojen työntämiseksi tietojoukkoon
+
 * Vaihe 1: [Sovelluksen Azure AD -rekisteröinti](walkthrough-push-data-register-app-with-azure-ad.md)
 * Vaihe 2: [Todennustunnuksen hankkiminen](walkthrough-push-data-get-token.md)
 * Vaihe 3: [Tietojoukon luominen Power BI:ssä](walkthrough-push-data-create-dataset.md)
@@ -31,6 +33,7 @@ Tarvitset Azure Active Directoryn (Azure AD) ja [Power BI -tilin](create-an-azur
 Seuraava osa sisältää yleistä keskustelua Power BI -ohjelmointirajapinnan toiminnoista, joilla tiedot työnnetään.
 
 ## <a name="power-bi-api-operations-to-push-data"></a>Power BI -ohjelmointirajapinnan toiminnot tietojen työntämiseksi
+
 Power BI:n REST‑ohjelmointirajapinnan avulla voit työntää tietolähteitä Power BI:hin. Kun sovellus lisää rivejä tietojoukkoon, koontinäytön ruudut päivittyvät automaattisesti päivitetyillä tiedoilla. Käytät tietojen työntämiseen [Julkaise tietojoukko](https://docs.microsoft.com/rest/api/power-bi/pushdatasets) -toimintoa yhdessä [Julkaise rivejä](https://docs.microsoft.com/rest/api/power-bi/pushdatasets/datasets_postrows) -toiminnon kanssa. Käytät tietojoukon löytämiseen [Hae tietojoukot](https://docs.microsoft.com/rest/api/power-bi/datasets/getdatasets) -toimintoa. Voit missä tahansa näistä toiminnoista välittää ryhmän tunnuksen ja käsitellä kyseistä ryhmää. Saat luettelon ryhmätunnuksista käyttämällä [Hae ryhmät](https://docs.microsoft.com/rest/api/power-bi/groups/getgroups) -toimintoa.
 
 Seuraavassa luetellaan toiminnot, jotka työntävät tietoja tietojoukkoon:
@@ -108,13 +111,14 @@ Power BI:n taulukon rakenteessa voi käyttää seuraavia tietotyyppejä.
 | Merkkijono |Tällä hetkellä sallitaan enintään 128 000 merkkiä. |
 
 ## <a name="learn-more-about-pushing-data-into-power-bi"></a>Lisätietoja tietojen työntämisestä Power BI:hin
+
 Aloita tietojen työntäminen tietojoukkoon katsomalla vasemman reunan siirtymisruudusta kohta [Vaihe 1: Sovelluksen Azure AD -rekisteröinti](walkthrough-push-data-register-app-with-azure-ad.md).
 
 [Seuraava vaihe >](walkthrough-push-data-register-app-with-azure-ad.md)
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
+
 [Rekisteröidy Power BI -palveluun](create-an-azure-active-directory-tenant.md)  
 [Esittelyssä JSON](http://json.org/)  
 [Power BI REST -ohjelmointirajapinnan yleiskatsaus](overview-of-power-bi-rest-api.md)  
 Onko sinulla muuta kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
-

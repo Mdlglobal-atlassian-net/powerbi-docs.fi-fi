@@ -9,12 +9,12 @@ ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 04/02/2018
 ms.author: maghan
-ms.openlocfilehash: 2147a5ccb1df8bd107d662559c97400a24dd490e
-ms.sourcegitcommit: 695c65629d6d1faba61db2e1570324f65f235dde
+ms.openlocfilehash: c407b967ce4a8c1ee31b9a750f2e281ff0a8caa7
+ms.sourcegitcommit: 9c3a9ec14c111d766ef5703366c316e72f6e588f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37092111"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45558489"
 ---
 # <a name="publish-custom-visuals-to-appsource"></a>Omien visualisointien julkaiseminen AppSourcessa
 Lue ohjeet siihen, miten voit julkaista omia visualisointejasi AppSourcessa muiden käyttöön.
@@ -32,7 +32,7 @@ Kun olet koodannut ja testannut oman visualisointisi ja paketoinut sen pbiviz-ti
 | --- | --- | --- |
 | Pbiviz-paketti, joka sisältää kaikki vaaditut metatiedot |Kyllä |Visualisoinnin nimi<br>Näyttönimi<br>GUID-tunnus<br>Versio<br>Kuvaus<br>Tekijän nimi ja sähköpostiosoite |
 | .pbix-raporttitiedostoesimerkki |Kyllä |Auta käyttäjiä tutustumaan visualisointiisi esittelemällä sitä. Korosta arvoa, jota visualisointi tuo käyttäjille, ja anna esimerkkejä käytöstä, muotoiluasetuksista ja niin edelleen. Voit myös lisätä loppuun *vinkkisivun*, jolla annat vinkkejä, kerrot, mitä kannattaa välttää ja niin edelleen.<br>.pbix-raporttitiedostoesimerkin täytyy toimia offline-tilassa ilman mitään ulkoista yhteyttä. |
-| Kuvake |Kyllä |Sisällytä mukaan oman visualisointisi logo, joka näytetään kaupassa. Se voi olla .png-, .jpg-, .jpeg- tai .gif-muodossa. Sen koon täytyy olla tasan 300px (leveys) x 300px (korkeus). **Tärkeää!** Lue tämä [lyhyt opas](https://docs.microsoft.com/en-us/office/dev/store/craft-effective-appsource-store-images) ennen logon lähettämistä. |
+| Kuvake |Kyllä |Sisällytä mukaan oman visualisointisi logo, joka näytetään kaupassa. Se voi olla .png-, .jpg-, .jpeg- tai .gif-muodossa. Sen koon täytyy olla tasan 300px (leveys) x 300px (korkeus). **Tärkeää!** Lue tämä [lyhyt opas](https://docs.microsoft.com/office/dev/store/craft-effective-appsource-store-images) ennen logon lähettämistä. |
 | Näyttökuvat |Kyllä |Sinun täytyy antaa ainakin yksi näyttökuva. Se voi olla .png-, .jpg-, .jpeg- tai .gif-muodossa. Sen koon täytyy olla tasan 1366px (leveys) x 768px (korkeus). Näyttökuvan suurin sallittu tiedostokoko on 1 024 kt. *Käyttäjämäärien kasvattamiseksi suosittelemme, että lisäät näyttökuviin tekstikuplia, jotka tuovat esiin tärkeimpien toimintojen etuja.* |
 | Tuen latauslinkki |Kyllä |Tarjoa URL-osoite, josta asiakkaat voivat hankkia tukea, jos heillä on ongelmia visualisointisi käytössä. URL-osoitteen täytyy olla https:// - tai http:// -muodossa. |
 | Tietosuoja-asiakirjan linkki |Kyllä |Tarjoa visualisointiasi käyttäville asiakkaille linkki tietosuojakäytäntöösi. Linkin täytyy olla https:// - tai http:// -muodossa. |
@@ -130,7 +130,7 @@ Kun visualisointisi on luotu, voit hankkia sille sertifioinnin. Tämä tarkoitta
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 [Mukautettujen visualisointien luominen kehittäjätyökalujen avulla](../service-custom-visuals-getting-started-with-developer-tools.md)  
-[Visualisoinnit Power BI:ssä](../power-bi-report-visualizations.md)  
+[Visualisoinnit Power BI:ssä](../visuals/power-bi-report-visualizations.md)  
 [Mukautetut visualisoinnit Power BI:ssä](../power-bi-custom-visuals.md)  
 [Mukautetun visualisoinnin *sertifioinnin hankkiminen*](../power-bi-custom-visuals-certified.md)
 

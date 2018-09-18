@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/10/2017
 ms.author: mblythe
 LocalizationGroup: Premium
-ms.openlocfilehash: 5da624f92093111c1996d9b1c5080cd58a906a45
-ms.sourcegitcommit: 2bdcb9e9959302a35ee90a145e4ff832a02aacb9
+ms.openlocfilehash: b38c69d74141b28215e0a14a32fc7b03fab4fdbf
+ms.sourcegitcommit: 9c3a9ec14c111d766ef5703366c316e72f6e588f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43250769"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45558466"
 ---
 # <a name="manage-capacities-within-power-bi-premium-and-power-bi-embedded"></a>Kapasiteettien hallinta Power BI Premiumissa ja Power BI Embeddedissä
 Opi, miten voit hallita Power BI Premiumin ja Power BI Embeddedin kapasiteetteja, jotka tarjoavat sisällöllesi erillisiä resursseja.
@@ -47,7 +47,7 @@ Kaikki Office 365:n Yleiset järjestelmänvalvojat ja Power BI -järjestelmänva
 Jotta voit hyödyntää sinulle varatun kapasiteetin, sinun on ostettava Power BI Premium -tilaus Office 365 -hallintakeskuksesta tai luoda Power BI Embedded -resurssi Microsoft Azure -portaalissa. Katso lisätietoa seuraavista linkeistä:
 
 * **Power BI Premium:** [Ohjeet Power BI Premiumin ostamiseen](service-admin-premium-purchase.md)
-* **Power BI Embedded:** [Power BI Embedded -kapasiteetin luominen Azure-portaalissa](https://docs.microsoft.com/en-us/azure/power-bi-embedded/create-capacity)
+* **Power BI Embedded:** [Power BI Embedded -kapasiteetin luominen Azure-portaalissa](https://docs.microsoft.com/azure/power-bi-embedded/create-capacity)
 
 Kun ostat Power BI Premium -SKU:ita, vuokraaja saavat vastaavan määrän v-ytimiä kapasiteettien käsittelyyn. Esimerkiksi Power BI Premium P3 -SKU:n ostaminen antaa vuokraajan käyttöön 32 v-ydintä.
 
