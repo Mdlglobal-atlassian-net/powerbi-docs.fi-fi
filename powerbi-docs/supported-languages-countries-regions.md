@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 04/13/2018
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: 14890d93261c12e16756c8f65d9273d954f673dd
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: e474081a5f094bc04f6fc93b985b8d81efee1a0b
+ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34256698"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44728107"
 ---
 # <a name="supported-languages-and-countriesregions-for-power-bi"></a>Power BI:n tuetut kielet ja maat tai alueet
 
@@ -191,7 +191,7 @@ Ohje on lokalisoitu näille 10 kielelle:
 * espanja – español
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
-* Onko käytössäsi jokin Power BI -mobiilisovelluksista? Katso lisätietoja artikkelista [Power BI -mobiilisovelluksissa tuetut kielet](mobile-apps-supported-languages.md).
+* Onko käytössäsi jokin Power BI -mobiilisovelluksista? Katso lisätietoja artikkelista [Power BI -mobiilisovelluksissa tuetut kielet](consumer/mobile/mobile-apps-supported-languages.md).
 * Onko sinulla kysyttävää? Voit esittää kysymyksiä [Power BI -yhteisössä](http://community.powerbi.com/).
 * Eikö ongelma ratkennut? Käy [Power BI -tukisivulla](https://powerbi.microsoft.com/support/).
 

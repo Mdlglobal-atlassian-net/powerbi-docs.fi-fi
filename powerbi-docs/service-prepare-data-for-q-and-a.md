@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/01/2018
 ms.author: mihart
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: a6216169eb50ca535b73b07f5553c9b3d5e17470
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: efc806787f2a1d5cd110439c1c5505bb7e77e980
+ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34240958"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44727463"
 ---
 # <a name="how-to-make-your-excel-data-work-well-with-qa-in-power-bi"></a>Excel-tietojen muokkaaminen toimimaan hyvin Power BI:n Q&A-toiminnon kanssa
 Jos luot tietomalleja tai Excel-työkirjoja, joita käytetään Power BI:ssä, jatka lukemista.
@@ -27,7 +27,7 @@ Q&A osaa käyttää mitä tahansa ladattua Excel-tiedostoa, joka sisältää tau
 ### <a name="how-qa-works-with-excel"></a>Q&A:n toiminta Excelin kanssa
 Q&A sisältää luonnollisen kielen perusymmärrysominaisuuksia, jotka toimivat tietojen kanssa. Toiminnossa on kontekstiriippuvainen avainsanahaku Excelin taulukoiden, sarakkeiden ja laskettujen kenttien nimille. Siinä on myös sisäisiä tietoja siitä, miten tiedot suodatetaan, lajitellaan, koostetaan, ryhmitellään ja näytetään. 
 
-Esimerkiksi Excel-taulukossa nimeltä ”Myynti”, joka sisältää sarakkeet ”Tuote”, ”Kuukausi”, ”Myyty määrä”, ”Bruttomyynti” ja ”Tuotto” voi esittää kysymyksiä mistä tahansa näistä kohteista.  Voit sanoa esimerkiksi ”näytä myynti”, ”tuotto yhteensä kuukauden mukaan”, ”lajittele tuotteet myytyjen yksiköiden mukaan” ja paljon muuta. Lue lisätietoja siitä, [millaisia kysymyksiä voit esittää](power-bi-q-and-a.md) ja [mitä visualisointityyppejä voit määrittää Q&A:n kyselyssä](power-bi-visualization-types-for-reports-and-q-and-a.md).
+Esimerkiksi Excel-taulukossa nimeltä ”Myynti”, joka sisältää sarakkeet ”Tuote”, ”Kuukausi”, ”Myyty määrä”, ”Bruttomyynti” ja ”Tuotto” voi esittää kysymyksiä mistä tahansa näistä kohteista.  Voit sanoa esimerkiksi ”näytä myynti”, ”tuotto yhteensä kuukauden mukaan”, ”lajittele tuotteet myytyjen yksiköiden mukaan” ja paljon muuta. Lue lisätietoja siitä, [millaisia kysymyksiä voit esittää](power-bi-q-and-a.md) ja [mitä visualisointityyppejä voit määrittää Q&A:n kyselyssä](visuals/power-bi-visualization-types-for-reports-and-q-and-a.md).
 
 ### <a name="prepare-an-excel-dataset-for-qa"></a>Excel-tietojoukon valmisteleminen Q&A:ta varten
 Q&A on riippuvainen taulukoiden, sarakkeiden ja laskettujen kenttien nimistä, jotta toiminto osaa vastata tietoihin liittyviin kysymyksiin. Työkirjassa olevien kohteiden nimillä on siis merkitystä!

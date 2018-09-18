@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/06/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 61a30484713ac96d3bbb65355310007a52f300a5
-ms.sourcegitcommit: cce10e14c111e8a19f282ad6c032d802ebfec943
+ms.openlocfilehash: 324a9b7f8a3718c6da0efb7533751d88dd717bcf
+ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39657801"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44728084"
 ---
 # <a name="conditional-formatting-in-tables"></a>Ehdollinen muotoilu taulukoissa 
 Taulukoiden ehdollisen muotoilun avulla voit määrittää mukautettuja solujen värejä, jotka perustuvat solujen arvoihin tai muihin arvoihin tai kenttiin. Voit käyttää myös liukuvärejä. Voit myös näyttää solun arvot tietopalkeilla. 
@@ -133,5 +133,5 @@ Voit luoda monia muita variaatioita käyttämällä mielikuvitustasi ja joitakin
 ## <a name="next-steps"></a>Seuraavat vaiheet
 Katso lisätietoja seuraavasta artikkelista:  
 
-* [Vinkkejä värimuotoiluun Power BI:ssä](service-tips-and-tricks-for-color-formatting.md)  
+* [Vinkkejä värimuotoiluun Power BI:ssä](visuals/service-tips-and-tricks-for-color-formatting.md)  
 

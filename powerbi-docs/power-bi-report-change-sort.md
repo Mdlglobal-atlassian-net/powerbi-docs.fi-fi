@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/20/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 3c32fc3cc9dc2b16384016ca624d4dd3a773aacb
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 89891ead8eda1b8de4c7be943af2a9e9e98314c5
+ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34561789"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44726083"
 ---
 # <a name="change-how-a-chart-is-sorted-in-a-power-bi-report"></a>Power BI -raportin kaavion lajittelutavan vaihtaminen
 Power BI -raportin avulla voit lajitella useimmat visualisoinnit aakkosjärjestykseen kaavion luokkien nimien mukaan tai kunkin luokan numeeristen arvojen mukaan. Tässä esimerkissä kaavio lajitellaan myymälän nimen mukaan.
@@ -49,7 +49,7 @@ Joissakin tapauksissa visualisoinnin lajittelu voi onnistua halutulla tavalla es
 * Varmista Excelissä, että numeeriset sarakkeet on merkitty kokonaisluvuksi tai desimaaliksi, eikä tekstiksi.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
-Lue lisätietoja [Power BI -raporttien visualisoinneista](power-bi-report-visualizations.md).
+Lue lisätietoja [Power BI -raporttien visualisoinneista](visuals/power-bi-report-visualizations.md).
 
 [Power BI:n peruskäsitteet](service-basic-concepts.md)
 

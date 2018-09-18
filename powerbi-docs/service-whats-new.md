@@ -10,19 +10,19 @@ ms.topic: conceptual
 ms.date: 08/27/2018
 ms.author: nikhilga
 LocalizationGroup: Get started
-ms.openlocfilehash: d7f966834e2d6b44f3a887991bd0ebd6e38836f0
-ms.sourcegitcommit: 619b66176394b9b881edc29b6d123d9729554eb3
+ms.openlocfilehash: 83d9e435c1dca10a444f3125830eb6432aecf6bd
+ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "44044344"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44728199"
 ---
 ---
 # <a name="whats-new-in-the-power-bi-service"></a>Power BI -palvelun uudet toiminnot ja ominaisuudet
 Tarkista tältä sivulta **Power BI -palvelun** tunnetut ongelmat ja hiljattain julkaistut ominaisuudet. Lisätietoja aiheeseen liittyvistä uusista ominaisuuksista:
 
 - [Power BI Desktopin uudet ominaisuudet](desktop-latest-update.md)  
-- [Power BI -mobiilisovellusten uudet ominaisuudet](mobile-whats-new-in-the-mobile-apps.md)  
+- [Power BI -mobiilisovellusten uudet ominaisuudet](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)  
 - [Power BI -tiimin blogi](https://powerbi.microsoft.com/blog/)
 - [Business Applications -sovellusten kevään 2018 julkaisutiedot](http://aka.ms/businessappsreleasenotes) Dynamics 365:stä: Yrityssovellusten uusimmat päivitykset ja uudet ominaisuudet sovellusten ja laajennusten kehittämistä varten ympäristössämme. 
 

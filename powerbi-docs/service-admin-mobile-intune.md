@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 06/28/2017
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 8e31d3128e38453212a8a0ecef2a139fa2d0f356
-ms.sourcegitcommit: 49570ab8f5b5cd5bab4cd388f4281b1372bcb80b
+ms.openlocfilehash: 565c43be3489c23f26a98f99ce2d70022be965d2
+ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/09/2018
-ms.locfileid: "35250541"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44727992"
 ---
 # <a name="configure-mobile-apps-with-microsoft-intune"></a>Mobiilisovellusten määrittäminen Microsoft Intunella
 Microsoft Intunen avulla organisaatiot voivat hallita laitteita ja sovelluksia. Power BI -mobiilisovellukset iOS:ssa ja Androidissa integroituvat Intuneen, joten sovellusta ja suojausta voidaan hallita laitteissa. Määrityskäytäntöjen avulla organisaatiot voivat hallita tietoyksiköitä kuten pikakäytön kiinnittämisen edellyttämistä, sovelluksen tietojenkäytön valvontaa ja sovellustietojen salaamista myös silloin, kun sovellus ei ole käytössä.
@@ -163,7 +163,7 @@ Kun sovellus on asennettu, näet, että se on **yrityksesi hallitsema**. Jos ole
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 [Mobiilisovellusten hallintakäytäntöjen määrittäminen ja ottaminen käyttöön Microsoft Intune -konsolissa](https://technet.microsoft.com/library/dn878026.aspx)  
-[Power BI -sovellukset mobiililaitteille](mobile-apps-for-mobile-devices.md)  
+[Power BI -sovellukset mobiililaitteille](consumer/mobile/mobile-apps-for-mobile-devices.md)  
 
 Onko sinulla muuta kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)
 

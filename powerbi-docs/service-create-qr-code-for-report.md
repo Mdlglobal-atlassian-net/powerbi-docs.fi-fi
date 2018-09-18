@@ -10,19 +10,19 @@ ms.topic: conceptual
 ms.date: 03/13/2018
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: d99081a3d77ebfa7115d7546c59adc42eab308ca
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 52c392123b6bc86b4a40d90a8479ed8fcd6dbc61
+ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34237941"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44726359"
 ---
 # <a name="create-a-qr-code-for-a-report-in-power-bi-to-use-in-the-mobile-apps"></a>Raportin QR-koodin luominen Power BI:ssä käytettäväksi mobiilisovelluksissa
 Power BI:n QR-koodien avulla voit yhdistää mitä tahansa todellisesta maailmasta suoraan siihen liittyviin BI-tietoihin – siirtymis- tai hakutoimintoja ei tarvita.
 
 Voit luoda QR-koodin Power BI -palvelussa mille tahansa raportille. Voit käyttää myös raporttia, jota et voi muokata. Sijoita sitten QR-koodi sopivaan sijaintiin. Voit esimerkiksi liittää sen sähköpostiviestiin tai tulostaa ja liimata sen sopivaan sijaintiin. 
 
-Työtoverit, joiden kanssa olet jakanut kyseisen raportin, voivat lukea QR-koodin ja päästä siten [mobiililaitteellaan](mobile-apps-qr-code.md) suoraan haluttuun raporttiin. He voivat käyttää joko Power BI ‑sovelluksen omaa QR-koodinlukijaa tai mitä tahansa muuta heidän laitteessaan olevaa QR-lukijaa. He voivat myös [lukea raportin QR-koodin Power BI ja tehostettu todellisuus -sovelluksessa](mobile-mixed-reality-app.md#scan-a-report-qr-code-in-holographic-view).
+Työtoverit, joiden kanssa olet jakanut kyseisen raportin, voivat lukea QR-koodin ja päästä siten [mobiililaitteellaan](consumer/mobile/mobile-apps-qr-code.md) suoraan haluttuun raporttiin. He voivat käyttää joko Power BI ‑sovelluksen omaa QR-koodinlukijaa tai mitä tahansa muuta heidän laitteessaan olevaa QR-lukijaa. He voivat myös [lukea raportin QR-koodin Power BI ja tehostettu todellisuus -sovelluksessa](consumer/mobile/mobile-mixed-reality-app.md#scan-a-report-qr-code-in-holographic-view).
 
 ## <a name="create-a-qr-code-for-a-report"></a>Raportin QR-koodin luominen
 1. Avaa raportti Power BI -palvelussa.
@@ -48,8 +48,8 @@ Power BI luo QR-koodin JPG-tiedostona, joka on valmis tulostettavaksi.
 2. Leikkaa QR-koodi paperilta reunoja pitkin ja liimaa se raportin kannalta olennaiseen sijaintiin. 
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
-* [Power BI:n yhdistäminen reaalimaailman tietoihin](mobile-apps-data-in-real-world-context.md) mobiilisovellusten avulla
-* [Power BI:n QR-koodin lukeminen mobiililaitteella](mobile-apps-qr-code.md)
+* [Power BI:n yhdistäminen reaalimaailman tietoihin](consumer/mobile/mobile-apps-data-in-real-world-context.md) mobiilisovellusten avulla
+* [Power BI:n QR-koodin lukeminen mobiililaitteella](consumer/mobile/mobile-apps-qr-code.md)
 * [Ruudun QR-koodin luominen](service-create-qr-code-for-tile.md)
 * Ilmenikö kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)
 

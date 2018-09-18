@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 03/01/2018
 ms.author: mihart
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: f3a9e8aabbd45cb476866158165e2e37a3d8f652
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: d50d3c3a34364dd795c44b3e45e91857bcc222f0
+ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34242383"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44726313"
 ---
 # <a name="create-featured-questions-for-power-bi-qa"></a>Power BI:n Q&A-toiminnon suositeltujen kysymysten luominen
 Jos omistat tietojoukon, voit lisätä siihen omia suositeltuja kysymyksiä.  Power BI Q&A näyttää sitten kyseiset kysymykset tietojoukkoa käyttäville (*kuluttaville*) työtovereille.  Suositellut kysymykset antavat työtovereille ideoita kysymyksistä, joita he voivat kysyä tietojoukosta. Sinä valitset lisättävät suositellut kysymykset – voit lisätä suosittuja kysymyksiä, kiinnostavia vastauksia antavia kysymyksiä tai kysymyksiä, joita voi olla vaikea muotoilla.
@@ -26,7 +26,7 @@ Katso, kun Will lisää joitakin suositeltuja kysymyksiä Power BI Q&A:han ja tu
 <iframe width="560" height="315" src="https://www.youtube.com/embed/E1mIAyEXuF4" frameborder="0" allowfullscreen></iframe>
 
 > [!NOTE]
-> Suositellut Q&A-kysymykset ovat käytettävissä [Microsoft Power BI -sovelluksessa iOS:lle iPad-, iPhone- ja iPod Touch -laitteissa](mobile-apps-ios-qna.md) sekä Power BI Desktop Q&A Preview’ssa. Kysymyksiä voi kuitenkin luoda vain Power BI -palvelussa (app.powerbi.com).
+> Suositellut Q&A-kysymykset ovat käytettävissä [Microsoft Power BI -sovelluksessa iOS:lle iPad-, iPhone- ja iPod Touch -laitteissa](consumer/mobile/mobile-apps-ios-qna.md) sekä Power BI Desktop Q&A Preview’ssa. Kysymyksiä voi kuitenkin luoda vain Power BI -palvelussa (app.powerbi.com).
 > 
 
 Tässä artikkelissa käytetään [jälleenmyyntianalyysimallia](sample-datasets.md).

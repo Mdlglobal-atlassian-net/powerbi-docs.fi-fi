@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 01/18/2018
 ms.author: mihart
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 94936092a86ee3ac46ed0516609b3beaf1589180
-ms.sourcegitcommit: 1574ecba7530e6e0ee97235251a3138fb0e4789b
+ms.openlocfilehash: 189134a82e183819f1d48be0b420c9f92a5e69b3
+ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "40257341"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44725945"
 ---
 # <a name="tips-for-asking-questions-in-power-bi-qa"></a>Vihjeitä kysymysten esittämiseen Power BI:n Q&A-toiminnolla
 ## <a name="words-and-terminology-that-qa-recognizes"></a>Q&A-toiminnon tunnistamia sanoja ja termejä
@@ -24,7 +24,7 @@ Avainsanaluettelo ei ole täydellinen.  Paras tapa nähdä, tunnistaako Power BI
 Alla olevassa luettelossa käytetään preesensiä, mutta useimmissa tapauksissa kaikki aikamuodot tunnistetaan. Esimerkki: ”on” sisältää myös muodot ovat, oli, olivat.  Ja ”lajittele” sisältää muodot lajiteltu ja lajittelu.  Power BI tunnistaa ja ottaa hakuun mukaan sanan yksikön ja monikon. Power BI tunnistaa esimerkiksi sanat ”vuosi” ja ”vuodet”.
 
 > [!NOTE]
-> Q&A-toiminto on käytettävissä myös [Microsoft Power BI -sovelluksessa iOS:lle iPad-, iPhone- ja iPod Touch -laitteissa](mobile-apps-ios-qna.md).
+> Q&A-toiminto on käytettävissä myös [Microsoft Power BI -sovelluksessa iOS:lle iPad-, iPhone- ja iPod Touch -laitteissa](consumer/mobile/mobile-apps-ios-qna.md).
 > 
 > 
 

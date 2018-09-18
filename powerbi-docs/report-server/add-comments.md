@@ -9,12 +9,12 @@ ms.component: powerbi-report-server
 ms.topic: conceptual
 ms.date: 05/18/2018
 ms.author: maggies
-ms.openlocfilehash: 08a7740d1a44c4a5e8ef961100c38f3bc4622fd8
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: ff51b2e41d921b7a88afc9b13bb4ecd98814d12e
+ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34721957"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44727969"
 ---
 # <a name="add-comments-to-a-report-in-a-report-server"></a>Lisää kommentteja raporttiin raporttipalvelimessa
 Voit lisätä kommentteja raportteihin, mukaan lukien Power BI -raportteihin, raporttipalvelimen verkkoportaalissa. Kommentit näkyvät raportissa reaaliajassa, kaikki, joilla on tarvittavat oikeudet, näkevät raportin kommentit. Lisätietoa on alla [Käyttöoikeudet](#permissions)-kohdassa.
@@ -33,7 +33,7 @@ Voit lisätä kommentteja raportteihin, mukaan lukien Power BI -raportteihin, ra
     Kommentti sekä mahdolliset edelliset kommentit ovat näkyvissä verkkoportaalin ruudussa. Ne eivät näy raportin yhteydessä Power BI -mobiilisovelluksissa.
    
    > [!TIP]
-   > Tiesitkö? Voit [lisätä huomautuksia Power BI -raportteihin Power BI -mobiilisovelluksissa](../mobile-annotate-and-share-a-tile-from-the-mobile-apps.md) ja jakaa huomautuksia sisältävät raportit muiden kanssa.
+   > Tiesitkö? Voit [lisätä huomautuksia Power BI -raportteihin Power BI -mobiilisovelluksissa](../consumer/mobile/mobile-annotate-and-share-a-tile-from-the-mobile-apps.md) ja jakaa huomautuksia sisältävät raportit muiden kanssa.
    > 
    > 
 

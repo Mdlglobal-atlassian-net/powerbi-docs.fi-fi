@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 03/01/2018
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: dc79282a5c221e85fae7838009f6cecf91cbfdb8
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: a9dc1d0f87102cc5bf66a3fb21b8be7af6a66059
+ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34246823"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44726819"
 ---
 # <a name="microsoft-flow-and-power-bi"></a>Microsoft Flow ja Power BI
 
@@ -110,7 +110,7 @@ Seuraavaksi luomme yksinkertaisen työnkulun alusta alkaen, joka käynnistyy Pow
 ## <a name="next-steps"></a>Seuraavat vaiheet
 * [Aloita Microsoft Flow’n käyttö](https://flow.microsoft.com/en-us/documentation/getting-started/)
 * [Määritä Power BI -palvelun tietoilmoitukset ](service-set-data-alerts.md)
-* [Määritä tietoilmoitukset iPhonellasi](mobile-set-data-alerts-in-the-mobile-apps.md)
-* [Määritä tietoilmoitukset Power BI Windows 10 -mobiilisovelluksella](mobile-set-data-alerts-in-the-mobile-apps.md)
+* [Määritä tietoilmoitukset iPhonellasi](consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps.md)
+* [Määritä tietoilmoitukset Power BI Windows 10 -mobiilisovelluksella](consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps.md)
 * Ilmenikö muuta kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
 

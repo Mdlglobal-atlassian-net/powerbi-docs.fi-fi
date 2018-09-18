@@ -1,5 +1,5 @@
 ---
-title: Power BI -palvelun koontinäytön luominen raportista
+title: Power BI -koontinäytön luominen raportista
 description: Power BI -koontinäytön luominen raportista
 author: mihart
 manager: kfile
@@ -8,16 +8,16 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 09/02/2018
+ms.date: 03/02/2018
 ms.author: mihart
-ms.openlocfilehash: a550aabb3590018666a3784e602ede15696862e5
-ms.sourcegitcommit: fe03f2a80f2df82219b8e026085f93a8453201df
+ms.openlocfilehash: a528c4a641dbdecce7d33f29e7afbe6118ee34b5
+ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/08/2018
-ms.locfileid: "44168085"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44726474"
 ---
-# <a name="create-a-power-bi-dashboard-in-power-bi-service"></a>Power BI -koontinäytön luominen Power BI -palvelussa
+# <a name="create-a-power-bi-dashboard-from-a-report"></a>Power BI -koontinäytön luominen raportista
 Olet lukenut [Koontinäytöt Power BI:ssä](service-dashboards.md) ja haluat nyt luoda omasi. Koontinäyttö voidaan luoda monin eri tavoin, esimerkiksi uusi alusta alkaen, raportista, tietojoukosta tai kopioimalla aiemmin luotu koontinäyttö.  
 
 Tämä kaikki voi tuntua vaikealta, kun olet vasta pääsemässä alkuun, joten aloitetaan luomalla nopea ja helppo koontinäyttö kiinnittämällä visualisointeja raportista, joka on jo muodostettu. Kun olet päässyt tämän pikaoppaan loppuun, sinulla on hyvä käsitys koontinäyttöjen ja raporttien välisestä suhteesta, Muokkausnäkymän avaamisesta raporttieditorissa, ruutujen kiinnittämisestä sekä koontinäytön ja raportin välillä siirtymisestä. Pääset edistyneempiin aihealueisiin käyttämällä linkkejä vasemmalla olevasta Sisältöluettelosta tai **Seuraavat vaiheet** -kohdasta artikkelin lopussa.
@@ -25,7 +25,7 @@ Tämä kaikki voi tuntua vaikealta, kun olet vasta pääsemässä alkuun, joten 
 ## <a name="who-can-create-a-dashboard"></a>Kuka voi luoda koontinäytön?
 Koontinäytön luominen on **luoja**-toiminto ja edellyttää raportin muokkausoikeuksia. Muokkausoikeudet ovat raportin luojien käytettävissä ja niiden työtovereiden käytössä, joille luoja myöntää käyttöoikeudet. Esimerkiksi jos David luo raportin työtilaABC:ssä ja lisää sitten sinut työtilan jäseneksi, niin sinulla ja Davidilla on muokkausoikeudet. Jos taas raportti on jaettu kanssasi suoraan tai osana [Power BI -sovellusta](service-install-use-apps.md) (olet raportin **kuluttaja**), et voi kiinnittää ruutuja koontinäyttöön.
 
-> **HUOMAUTUS**: Koontinäytöt ovat Power BI -palvelun ominaisuus, eivät Power BI Desktopin. Koontinäyttöjä ei voi luoda Power BI -mobiilisovelluksessa, mutta niitä voidaan [tarkastella ja jakaa](mobile-apps-view-dashboard.md).
+> **HUOMAUTUS**: Koontinäytöt ovat Power BI -palvelun ominaisuus, eivät Power BI Desktopin. Koontinäyttöjä ei voi luoda Power BI -mobiilisovelluksessa, mutta niitä voidaan [tarkastella ja jakaa](consumer/mobile/mobile-apps-view-dashboard.md).
 >
 > 
 

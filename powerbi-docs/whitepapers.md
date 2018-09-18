@@ -9,12 +9,12 @@ ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 05/18/2018
 ms.author: maggies
-ms.openlocfilehash: e64850351c9bdc1877eed3a53323e7934e11fbe7
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: d6ab9619fd1419f94994b65fffef7ddcbfff3f3d
+ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34445114"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44727187"
 ---
 # <a name="whitepapers-for-power-bi"></a>Power BI:n tekniset raportit
 
@@ -31,7 +31,7 @@ Teknisten raporttien avulla voit tutustua Power BI:n aiheisiin syvällisemmin. T
 | [Power BI ja GDPR](https://aka.ms/power-bi-gdpr-whitepaper)| Power BI:llä voi olla tärkeä rooli GDPR-asetuksen noudattamisessa. Tämän asiakirjan tarkoituksena on tarjota perustietoa GDPR:stä ja Power BI:stä. Vaikka GDPR:n noudattaminen on pakollista tässä asiakirjassa kuvatuissa tilanteissa, se ei välttämättä ole aina helppoa. Se on myös tapa parantaa yleistä tietosuojaa ja yksityisyyttä.|
 | [Power BI -sisällön jakaminen ulkoisille vieraskäyttäjille Azure Active Directory B2B:n avulla](https://aka.ms/powerbi-b2b-whitepaper)|Tässä raportissa kerrotaan, miten sisältöä jaetaan organisaation ulkopuolisille käyttäjille käyttäen Microsoft Azure Active Directoryn yritysten välistä (AAD B2B) integrointia.|
 | [Kehittynyt analytiikka Power BI:ssä](https://info.microsoft.com/advanced-analytics-with-power-bi.html?Is=Website) |Tässä artikkelissa kuvataan Power BI:n kehittyneet analytiikkaominaisuudet, kuten ennakoiva analyysi, mukautetut visualisoinnit, R-integrointi ja tietojen analysointilausekkeet. |
-| [Raporttien ja visualisointien parhaat suunnittelukäytännöt](power-bi-visualization-best-practices.md) |Tästä raportista voit lukea parhaita käytäntöjä raporttien suunnitteluun Power BI:ssä. |
+| [Raporttien ja visualisointien parhaat suunnittelukäytännöt](visuals/power-bi-visualization-best-practices.md) |Tästä raportista voit lukea parhaita käytäntöjä raporttien suunnitteluun Power BI:ssä. |
 | [Kaksisuuntainen suodatus](desktop-bidirectional-filtering.md) |Tässä raportissa selitetään kaksisuuntainen ristisuodatus Power BI Desktopissa (tekninen raportti kattaa myös SQL Server Analysis Services 2016:n, molemmat toimivat samalla tavalla). |
 | [DirectQuery SQL Server 2016 Analysis Servicesissä](https://blogs.msdn.microsoft.com/analysisservices/2017/04/06/directquery-in-sql-server-2016-analysis-services-whitepaper/) |SQL Server 2016:ssa DirectQuery suunniteltiin uudelleen entistä nopeammaksi ja tehokkaammaksi, mutta se on nyt myös entistä monimutkaisempi ymmärtää ja käyttää. |
 | [Power BI ja SAP BW](https://aka.ms/powerbiandsapbw)| Tässä asiakirjassa kerrotaan, miten SAP-asiakkaat voivat hyötyä Power BI:n yhdistämisestä aiemmin luotuihin SAP Business Warehouse (BW) -järjestelmiin.|

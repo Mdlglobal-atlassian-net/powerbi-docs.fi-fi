@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 04/13/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: eacadb04935dd0c929a85904335b613f3d5d4d58
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 736d4b53f82255e84e3bd54a2177ae17c264039b
+ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34251663"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44726750"
 ---
 # <a name="reading-view-and-editing-view-in-power-bi-service-reports"></a>Lukunäkymä ja muokkausnäkymä Power BI -palvelun raporteissa
 Power BI -palvelussa (ei koske Power BI Desktopia) raportteja voi tarkastella ja käyttää kahdessa tilassa: lukunäkymässä ja muokkausnäkymässä. Lukunäkymä on kaikkien käyttäjien käytettävissä, ja se on suunniteltu erityisesti tietojen *kuluttajille*, kun taas muokkausnäkymää voivat käyttää vain raporttien *tekijät* ja omistajat.
@@ -59,13 +59,13 @@ Tässä kaaviossa ei luetella Power BI -palvelun kaikkia raporttiominaisuuksia. 
 | [Raporttisivun monistaminen](power-bi-report-copy-paste-page.md) | Ei  | Kyllä |
 | [Raporttisivun poistaminen](service-delete.md) | ei | kyllä |
 |**Raportin visualisointien käyttäminen**|
-| [Visualisointien lisääminen raporttiin](power-bi-report-add-visualizations-i.md) | Ei  | Kyllä |
+| [Visualisointien lisääminen raporttiin](visuals/power-bi-report-add-visualizations-i.md) | Ei  | Kyllä |
 | [Tekstiruutujen ja muotojen lisääminen raporttiin](power-bi-reports-add-text-and-shapes.md) | Ei  | Kyllä |
 | [Raportin Muotoilu-ruudun käyttäminen](service-the-report-editor-take-a-tour.md) | Ei | Kyllä |
 | [Visualisoinnin vuorovaikutusten määrittäminen](service-reports-visual-interactions.md) | Ei  | Kyllä |
 | [Visualisoinnin lähdetietojen näyttäminen](service-reports-show-data.md) | Ei  | Kyllä |
 | [Tietoihin porautumisen määrittäminen](power-bi-visualization-drill-down.md) | Ei  | Kyllä |
-| [Käytössä olevan visualisointityypin muuttaminen](power-bi-report-change-visualization-type.md) | Ei | Kyllä|
+| [Käytössä olevan visualisointityypin muuttaminen](visuals/power-bi-report-change-visualization-type.md) | Ei | Kyllä|
 | [Visualisoinnin, tekstiruudun tai muodon poistaminen](service-delete.md)| Ei | Kyllä |
 
 

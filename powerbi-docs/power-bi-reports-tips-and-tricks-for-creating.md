@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 04/13/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 8305b9eab95e2b13f9104de6bcefe3f03a95d2f5
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 891d496fcdf809a816c9c18a6d21e4c486f76d76
+ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34254874"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44726796"
 ---
 # <a name="tips-and-tricks-for-creating-reports-in-power-bi-desktop-and-power-bi-service"></a>Vinkkejä tyylikkäiden raporttien luomiseen Power BI Desktopissa ja Power BI -palvelussa
 Joskus voi tarvita hieman ylimääräistä apua, jotta tiedoista saa kaiken hyödyn irti. Olemme koonneet yhteen muutamia vinkkejä, joita voit hyödyntää, kun luot raportteja Microsoftin Power BI Desktopissa, Power BI -palvelussa *ja* Microsoft Excel 2016:ssa. Niistä on hyötyä myös Excel 2013 Pro Plus -versioissa, joissa Power Pivot -apuohjelma on otettu käyttöön sekä Power Query asennettuna ja käytössä.
@@ -167,7 +167,7 @@ DAX on Power BI Desktopissa käytettävä laskutoimitusten kaavakieli.  Se on op
 
 ## <a name="power-bi-service-and-power-bi-desktop"></a>Power BI -palvelu *ja* Power BI Desktop
 
-### <a name="read-the-whitepaper-principles-for-designing-power-bi-reportspower-bi-visualization-best-practicesmd"></a>Lue tekninen raportti: [Power BI -raporttien suunnitteluperiaatteet](power-bi-visualization-best-practices.md)
+### <a name="read-the-whitepaper-principles-for-designing-power-bi-reportsvisualspower-bi-visualization-best-practicesmd"></a>Lue tekninen raportti: [Power BI -raporttien suunnitteluperiaatteet](visuals/power-bi-visualization-best-practices.md)
 Tästä raportista voit lukea parhaita käytäntöjä raporttien suunnitteluun Power BI:ssä. Raportin alussa käsitellään suunnittelua ja suunnitteluperiaatteita, joita voit noudattaa omissa raporteissasi sekä raporttiin sisältyvissä sivuissa ja yksittäisissä visualisoinneissa. Monet näistä parhaista käytännöistä soveltuvat myös koontinäyttöjen suunnitteluun.
 
 ### <a name="read-andor-watch-how-to-design-visually-stunning-reports-and-dashboards-in-power-bi"></a>Lue ja/tai katso Visuaalisesti upeiden raporttien (ja koontinäyttöjen) suunnittelu Power BI:ssä
@@ -209,7 +209,7 @@ Vältä erilaisten visualisointien lisäämistä vain vaihtelun vuoksi.  Visuali
 * Kiinnitä huomiota [kaavioiden lajitteluun](power-bi-report-change-sort.md).  Jos haluat kiinnittää huomiota suurimpaan tai pienimpään lukuun, lajittele mittayksikön mukaan.  Jos haluat, että tietty luokka on nopeasti löydettävissä useiden muiden joukosta, lajittele akselin mukaan.  
 * Ympyräkaaviot ovat parhaimmillaan, kun niissä on alle kahdeksan luokkaa. Koska arvoja ei voi tarkastella rinnakkain ympyräkaaviossa, niiden vertaaminen on vaikeampaa kuin palkki- ja pylväskaavioissa. Ympyräkaaviot toimivat parhaiten, kun osien vertailun sijaan tarkastellaan tietyn osan suhdetta kokonaisuuteen. Mittarikaaviot puolestaan ovat hyviä nykyisen tilanteen esittämisessä suhteessa tavoitteeseen.    
 
-Lisää visualisointikohtaisia ohjeita on artikkelissa [Visualisointityypit Power BI:ssä](power-bi-visualization-types-for-reports-and-q-and-a.md).  
+Lisää visualisointikohtaisia ohjeita on artikkelissa [Visualisointityypit Power BI:ssä](visuals/power-bi-visualization-types-for-reports-and-q-and-a.md).  
 
 ### <a name="learn-more-about-best-practice-dashboard-design"></a>Lue lisätietoja parhaiden käytäntöjen mukaisesta koontinäyttörakenteesta
 Suosittelemiamme teoksia:

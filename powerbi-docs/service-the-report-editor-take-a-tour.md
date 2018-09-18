@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 04/11/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: ef05531ee6080593d232e48a2118a9be7e8cbd19
-ms.sourcegitcommit: 5eb8632f653b9ea4f33a780fd360e75bbdf53b13
+ms.openlocfilehash: 78d9004a718990cbcd310835e8e9b8ae5e3eae17
+ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "34299466"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44726635"
 ---
 # <a name="the-report-editortake-a-tour"></a>Raporttieditori: esittely
 ## <a name="editing-reports-in-power-bi-service-and-power-bi-desktop"></a>Raporttien muokkaus Power BI -palvelussa ja Power BI Desktopissa
@@ -65,7 +65,7 @@ Voit poistaa kentän visualisoinnista valitsemalla **X** kentän nimen oikealta 
 
 ![Myymälätyypin poistaminen selitteestä](media/service-the-report-editor-take-a-tour/deletefield.png)
 
-Katso lisätietoja artikkelista [Visualisointien lisääminen Power BI -raporttiin](power-bi-report-add-visualizations-i.md).
+Katso lisätietoja artikkelista [Visualisointien lisääminen Power BI -raporttiin](visuals/power-bi-report-add-visualizations-i.md).
 
 ### <a name="format-your-visuals"></a>Visualisointien muotoileminen
 Voit näyttää Muotoilu-ruudun valitsemalla maalirullakuvakkeen. Saatavilla oleva vaihtoehto riippuu valitun visualisoinnin tyypistä.
@@ -74,9 +74,9 @@ Voit näyttää Muotoilu-ruudun valitsemalla maalirullakuvakkeen. Saatavilla ole
 
 Muotoilumahdollisuudet ovat lähes loputtomat.  Saat lisätietoja tutustumalla aiheeseen omatoimisesti tai lukemalla seuraavat artikkelit:
 
-* [Visualisoinnin otsikon, taustan ja selitteen mukauttaminen](power-bi-visualization-customize-title-background-and-legend.md)
-* [Värin muotoileminen](service-getting-started-with-color-formatting-and-axis-properties.md)
-* [X-akselin ja Y-akselin ominaisuuksien mukauttaminen](power-bi-visualization-customize-x-axis-and-y-axis.md)
+* [Visualisoinnin otsikon, taustan ja selitteen mukauttaminen](visuals/power-bi-visualization-customize-title-background-and-legend.md)
+* [Värin muotoileminen](visuals/service-getting-started-with-color-formatting-and-axis-properties.md)
+* [X-akselin ja Y-akselin ominaisuuksien mukauttaminen](visuals/power-bi-visualization-customize-x-axis-and-y-axis.md)
 
 ### <a name="add-analytics-to-your-visualizations"></a>Analytiikan lisääminen visualisointeihin
 Voit näyttää Analytiikka-ruudun valitsemalla suurennuslasikuvakkeen. Saatavilla oleva vaihtoehto riippuu valitun visualisoinnin tyypistä.
@@ -126,7 +126,7 @@ Työsi tulee näkyviin raportin piirtoalustalle. Kun luot visualisointeja Kentä
 ## <a name="next-steps"></a>Seuraavat vaiheet:
 [Raportin luominen](service-report-create-new.md)
 
-Lue lisää raporteista artikkeleista [Power BI -palvelu](service-reports.md), [Power BI Desktop](desktop-report-view.md) ja [Power BI -mobiilisovellus](mobile-apps-view-phone-report.md).
+Lue lisää raporteista artikkeleista [Power BI -palvelu](service-reports.md), [Power BI Desktop](desktop-report-view.md) ja [Power BI -mobiilisovellus](consumer/mobile/mobile-apps-view-phone-report.md).
 
 [Power BI:n peruskäsitteet](service-basic-concepts.md)
 

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/24/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 760eda5625bd52bf7129ba7cfe5f213921d469b7
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: a85733e8450c9e1d3574afb71ace64fa2622fe0c
+ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34247799"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44725623"
 ---
 # <a name="create-a-new-report-from-an-existing-report-copy-a-report"></a>Uuden raportin luominen olemassa olevasta raportista (raportin kopioiminen)
 Sinulla saattaa olla raportti, joka on jo yhteydessä tietojoukkoon ja joka käyttää visualisointeja, joita haluat käyttää uudelleen tai muokata.  Voit kopioida kyseisen raportin uuden raportin pohjaksi.  Toimi seuraavasti:
@@ -37,7 +37,7 @@ Sinulla saattaa olla raportti, joka on jo yhteydessä tietojoukkoon ja joka käy
 5. Raportin päivittäminen ja muokkaaminen on hauskaa.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet:
-[Luo uusia visualisointeja](power-bi-report-add-visualizations-ii.md)
+[Luo uusia visualisointeja](visuals/power-bi-report-add-visualizations-ii.md)
 
 [Poista visualisointeja](service-delete.md), joita et tarvitse
 

@@ -2,20 +2,20 @@
 title: Power BI -palvelun ja Power BI Desktopin Q&A-toiminnon yleiskatsaus
 description: Yleiskatsaus aiheeseen Power BI:n Q&A-kyselyt luonnollisella kielellä.
 author: mihart
-manager: kvivek
+manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 08/18/2018
+ms.date: 01/18/2018
 ms.author: mihart
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 1680a1aacf84eb5440703385dc831c32433456bb
-ms.sourcegitcommit: fe03f2a80f2df82219b8e026085f93a8453201df
+ms.openlocfilehash: 94faaac1067b2ab377639d0d6a1822b182e214b6
+ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/08/2018
-ms.locfileid: "44167947"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44726566"
 ---
 # <a name="qa-in-power-bi-service-and-power-bi-desktop"></a>Q&A Power BI -palvelussa ja Power BI Desktopissa
 ## <a name="what-is-qa"></a>Mikä on Q&A?
@@ -48,7 +48,9 @@ Tietojen tutkimisen lisäksi luojat ja tietojoukon omistajat voivat toiminnon av
 
 ## <a name="how-does-qa-know-how-to-answer-questions"></a>Miten Q&A tietää vastaukset kysymyksiin?
 ### <a name="which-datasets-does-qa-use"></a>Mitä tietojoukkoja Q&A käyttää?
-Miten Q&A tietää vastaukset tietokohtaisiin kysymyksiin? Toiminta perustuu taulukoiden, sarakkeiden ja pohjana olevan tietojoukon laskettujen kenttien nimiin. Tietojoukon omistajan antamat nimet ovat siis tärkeitä. Jos sinulla on vaikeuksia saada vastauksia Q&A-kysymyksiin, kysy tietojoukon omistajalta, voiko hän tehdä tietojoukosta käyttäjäystävällisemmän.
+Miten Q&A tietää vastaukset tietokohtaisiin kysymyksiin? Toiminta perustuu taulukoiden, sarakkeiden ja pohjana olevan tietojoukon laskettujen kenttien nimiin. Sinun (tai tietojoukon omistajan) antamat nimet ovat siis tärkeitä!
+
+Oletetaan, että sinulla on esimerkiksi Excel-taulukko nimeltä ”Myynti”, jossa on sarakkeet ”Tuote”, ”Kuukausi”, ”Yksikköjä myyty”, ”Myyntikate” ja ”Tuotto”. Mistä tahansa näistä kohteista voi esittää kysymyksiä.  Voit sanoa esimerkiksi ”näytä *myynti*”, ”*tuotto* yhteensä *kuukauden* mukaan”, ”lajittele *tuotteet* *myytyjen yksiköiden* mukaan” ja paljon muuta.
 
 Q&A voi vastata kysymyksiin, jotka perustuvat tietojoukon järjestykseen. Miten tämä toimii Salesforce-tietojen kanssa? Kun muodostat yhteyden salesforce.com-tiliisi, Power BI luo automaattisesti koontinäytön.  Ennen kuin aloitat Q&A-toiminnon käytön, tutustu koontinäytön visualisoinneissa ja avattavassa Q&A-luettelossa näkyviin tietoihin.
 
@@ -68,7 +70,7 @@ Lisätietoja Q&A:n tunnistamista avainsanoista on artikkelissa [Vihjeitä kysymy
 ## <a name="for-more-details-about-power-bi-qa"></a>Lisätietoja Power BI:n Q&A-toiminnosta
 [Yleiskatsaus: Q&A-toiminnon käyttäminen Power BI -koontinäytöissä ja -raporteissa](power-bi-tutorial-q-and-a.md): Vaiheittaiset Q&A-käyttöohjeet ja yleiskuvaus toiminnasta.
 
-[Microsoft Power BI -mobiilisovellus](mobile-apps-ios-qna.md) iOS:lle iPad-, iPhone- ja iPod Touch -laitteissa.
+[Microsoft Power BI -mobiilisovellus](consumer/mobile/mobile-apps-ios-qna.md) iOS:lle iPad-, iPhone- ja iPod Touch -laitteissa.
 
 [Microsoft Power BI Embedded](developer/qanda.md) Q&A:n sisällyttäminen sovellukseen.
 
@@ -80,4 +82,6 @@ Lisätietoja Q&A:n tunnistamista avainsanoista on artikkelissa [Vihjeitä kysymy
 
 [Opetusohjelma: Käytä Q&A-toimintoa jälleenmyynnin myynnin mallissa Power BI -palvelussa](power-bi-visualization-introduction-to-q-and-a.md): Käytä Q&A-toimintoa realistisessa opetusohjelmassa.
 
-Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
+[Varmista tietojen ja Q&A-toiminnon yhteensopivuus](service-prepare-data-for-q-and-a.md): Luotko tietojoukkoja ja malleja?  Silloin tämä ohjeaihe on sinulle.
+
+Onko sinulla muuta kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)

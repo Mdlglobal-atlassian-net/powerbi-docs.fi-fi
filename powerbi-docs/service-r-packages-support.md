@@ -10,17 +10,17 @@ ms.topic: conceptual
 ms.date: 07/24/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: b2d8509c83ccce3d76926d926c64061ca78c100d
-ms.sourcegitcommit: 7fb0b68203877ff01f29724f0d1761d023075445
+ms.openlocfilehash: fc4d62134bccae1a1ac0fd10444dd47c84ecc945
+ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/26/2018
-ms.locfileid: "39256166"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44727026"
 ---
 # <a name="r-packages-in-the-power-bi-service"></a>R-paketit Power BI -palvelussa
 Voit käyttää tehokasta [R-ohjelmointikieltä](https://www.r-project.org/) visualisointien luomiseksi Power BI -palvelussa. Monet R-paketit ovat tuettuja Power BI -palvelussa (ja lisää tuetaan jatkuvasti), mutta joitakin paketteja ei tueta.
 
-Seuraavissa osissa on aakkosjärjestykseen lajiteltu taulukko R-paketeista, jotka ovat tuettuja Power BI:ssä ja joita ei tueta. Katso lisätietoja Power BI:n R-ominaisuuksista artikkelista [R-visualisoinnit](service-r-visuals.md).
+Seuraavissa osissa on aakkosjärjestykseen lajiteltu taulukko R-paketeista, jotka ovat tuettuja Power BI:ssä ja joita ei tueta. Katso lisätietoja Power BI:n R-ominaisuuksista artikkelista [R-visualisoinnit](visuals/service-r-visuals.md).
 
 ## <a name="request-support-for-a-new-r-package"></a>Pyydä tukea uudelle R-paketille
 **Power BI -palvelussa** tuetut R-paketit on esitelty seuraavassa osassa nimeltä **Tuetut paketit**. Jos haluat pyytää tukea R-paketille, jota ei löydy tästä luettelosta, voit lähettää pyyntösi sähköpostiviestillä [Power BI:n R-palauteryhmälle](mailto:rinpbifb@microsoft.com).
@@ -940,7 +940,7 @@ Seuraavassa taulukossa on esitetty paketit, joita **ei tueta** Power BI -palvelu
 ## <a name="next-steps"></a>Seuraavat vaiheet
 Tutustu seuraaviin artikkeleihin, jotka koskevat R:ää Power BI:ssä:
 
-* [R-visualisointien luominen Power BI -palvelussa](service-r-visuals.md)
+* [R-visualisointien luominen Power BI -palvelussa](visuals/service-r-visuals.md)
 * [Power BI -visualisointien luominen R:n avulla](desktop-r-visuals.md)
 * [R-komentosarjojen suorittaminen Power BI Desktopissa](desktop-r-scripts.md)
 * [R:n käyttö kyselyeditorissa](desktop-r-in-query-editor.md)

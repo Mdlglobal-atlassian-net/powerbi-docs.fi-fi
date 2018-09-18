@@ -10,19 +10,19 @@ ms.topic: conceptual
 ms.date: 03/07/2018
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 3b0bf5e54ad6486134eb641d276fc9233b001157
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: bb2cd0e26caaa7639020d51a0827390932e78b06
+ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34249705"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44726047"
 ---
 # <a name="create-a-qr-code-for-a-tile-in-power-bi-to-use-in-the-mobile-apps"></a>QR-koodin luominen Power BI:n ruutuun mobiilisovelluksissa käytettäväksi
 Power BI:n QR-koodien avulla voit yhdistää mitä tahansa todellisesta maailmasta suoraan siihen liittyviin BI-tietoihin – siirtymis- tai hakutoimintoja ei tarvita.
 
 Voit luoda QR-koodin Power BI ‑palvelussa minkä tahansa koontinäytön ruutuun, jopa koontinäyttöihin, joihin sinulla ei ole muokkausoikeuksia. Sijoita sitten QR-koodi sopivaan paikkaan. Voit esimerkiksi liittää sen sähköpostiviestiin tai tulostaa sen tai liimata sen sopivaan sijaintiin. 
 
-Työtoverit, joiden kanssa olet jakanut kyseisen koontinäytön, voivat [lukea QR-koodin ja päästä siten mobiililaitteellaan suoraan haluttuun ruutuun](mobile-apps-qr-code.md). He voivat käyttää joko Power BI ‑sovelluksen omaa QR-koodinlukijaa tai mitä tahansa muuta heidän laitteessaan olevaa QR-lukijaa.
+Työtoverit, joiden kanssa olet jakanut kyseisen koontinäytön, voivat [lukea QR-koodin ja päästä siten mobiililaitteellaan suoraan haluttuun ruutuun](consumer/mobile/mobile-apps-qr-code.md). He voivat käyttää joko Power BI ‑sovelluksen omaa QR-koodinlukijaa tai mitä tahansa muuta heidän laitteessaan olevaa QR-lukijaa.
 
 
 ## <a name="create-a-qr-code-for-a-tile"></a>Ruudun QR-koodin luominen
@@ -52,8 +52,8 @@ Power BI luo QR-koodin JPG-tiedostona, joka on valmis tulostettavaksi.
 3. Leikkaa QR-koodi paperilta ja liimaa se ruudun kannalta olennaiseen sijaintiin. 
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
-* [Power BI:n yhdistäminen reaalimaailman tietoihin](mobile-apps-data-in-real-world-context.md) mobiilisovellusten avulla
-* [Power BI:n QR-koodin lukeminen mobiililaitteella](mobile-apps-qr-code.md)
+* [Power BI:n yhdistäminen reaalimaailman tietoihin](consumer/mobile/mobile-apps-data-in-real-world-context.md) mobiilisovellusten avulla
+* [Power BI:n QR-koodin lukeminen mobiililaitteella](consumer/mobile/mobile-apps-qr-code.md)
 * [QR-koodin luominen raportista](service-create-qr-code-for-report.md)
 * Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)
 

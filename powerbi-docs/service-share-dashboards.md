@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: d683ce3d06e2ac6be6c51f257e4f9483e718e2d8
-ms.sourcegitcommit: 2356dc8e5488438a43ba7f0ba9a55a2372669b47
+ms.openlocfilehash: b34c16337158e784b0c41bd3e3fd93aca9504cd7
+ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39624387"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44727302"
 ---
 # <a name="share-your-power-bi-dashboards-and-reports-with-coworkers-and-others"></a>Power BI -koontinäyttöjen ja -raporttien jakaminen työtovereiden ja muiden kanssa
 *Jakaminen* on kätevä keino myöntää parille henkilölle käyttöoikeus luomiisi koontinäyttöihin ja raportteihin. Power BI tarjoaa myös [useita muita tapoja tehdä yhteistyötä ja jakaa koontinäyttöjä ja raportteja](service-how-to-collaborate-distribute-dashboards-reports.md).
@@ -27,7 +27,7 @@ Kun jaat sisältöä organisaatiosi sisä- tai ulkopuolella, tarvitset jakamisee
 
 Voit jakaa koontinäyttöjä ja raportteja Power BI -palvelun useimmista paikoista: Suosikit, Viimeisimmät, Jaettu kanssani (jos omistaja sallii sen), Oma työtila tai muut työtilat. Kun jaat koontinäytön tai raportin, niiden vastaanottajat voivat tarkastella ja käsitellä niitä, mutta eivät voi muokata niitä. He näkevät samat tiedot kuin sinä koontinäytössä tai raportissa, ellei sovelleta [rivitason suojausta (RLS)](service-admin-rls.md). Työtoverit, joille tiedot jaat, voivat myös jakaa niitä omien työtovereidensa kanssa, jos sallit sen. Organisaatiosi ulkopuoliset henkilöt voivat myös tarkastella ja käsitellä koontinäyttöä tai raporttia, mutta eivät voi jakaa sitä. 
 
-Voit myös [jakaa koontinäytön mistä tahansa Power BI -mobiilisovelluksesta](mobile-share-dashboard-from-the-mobile-apps.md). Voit jakaa koontinäyttöjä Power BI -palvelusta ja Power BI -mobiilisovelluksista, mutta et voi jakaa niitä Power BI Desktopista.
+Voit myös [jakaa koontinäytön mistä tahansa Power BI -mobiilisovelluksesta](consumer/mobile/mobile-share-dashboard-from-the-mobile-apps.md). Voit jakaa koontinäyttöjä Power BI -palvelusta ja Power BI -mobiilisovelluksista, mutta et voi jakaa niitä Power BI Desktopista.
 
 ## <a name="video-share-a-dashboard"></a>Video: Koontinäytön jakaminen
 Katso, miten Amanda jakaa koontinäyttönsä työtovereiden kanssa yrityksensä sisä- ja ulkopuolella. Kokeile sitä itse noudattamalla videon alapuolella olevia vaiheittaisia ohjeita.

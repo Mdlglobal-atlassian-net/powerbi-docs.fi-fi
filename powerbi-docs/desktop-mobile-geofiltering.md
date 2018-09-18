@@ -9,17 +9,17 @@ ms.topic: conceptual
 ms.date: 01/16/2018
 ms.author: maggies
 LocalizationGroup: Model your data
-ms.openlocfilehash: ed8a0990c9da2da877c32a0ef44c676f91e0f493
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 80d2039b2cfcac2f2c3db9c6f656561b670aa341
+ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34291393"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44727486"
 ---
 # <a name="set-geographic-filters-in-power-bi-desktop-for-the-mobile-apps"></a>Maantieteellisten suodattimien määrittäminen Power BI Desktopissa mobiilisovelluksille
 Power BI Desktopissa voit [luokitella maantieteellisiä tietoja](desktop-data-categorization.md) saraketta kohden, joten Power BI Desktop tietää, miten käsitellä raportin visualisoinnissa olevia arvoja. Toinen etu on, että kun sinä tai työtoverisi tarkastelevat kyseistä raporttia Power BI -mobiilisovelluksissa, Power BI tarjoaa automaattisesti sijaintianne vastaavat maantieteelliset suodattimet. 
 
-Oletetaan esimerkiksi, että olet myyntipäällikkö matkalla tapaamaan asiakkaita, ja haluat suodattaa nopeasti kokonaismyynnin ja tuoton sen asiakkaan osalta, jonka aiot tavata. Haluat eritellä tämänhetkistä sijaintiasi koskevat tiedot joko osavaltion, kaupungin tai todellisen osoitteen mukaan. Myöhemmin, jos sinulla on aikaa jäljellä, haluat käydä muiden lähistöllä toimivien asiakkaiden luona. Voit [suodattaa raportin sijaintisi mukaan kyseisten asiakkaiden löytämiseksi](mobile-apps-geographic-filtering.md).
+Oletetaan esimerkiksi, että olet myyntipäällikkö matkalla tapaamaan asiakkaita, ja haluat suodattaa nopeasti kokonaismyynnin ja tuoton sen asiakkaan osalta, jonka aiot tavata. Haluat eritellä tämänhetkistä sijaintiasi koskevat tiedot joko osavaltion, kaupungin tai todellisen osoitteen mukaan. Myöhemmin, jos sinulla on aikaa jäljellä, haluat käydä muiden lähistöllä toimivien asiakkaiden luona. Voit [suodattaa raportin sijaintisi mukaan kyseisten asiakkaiden löytämiseksi](consumer/mobile/mobile-apps-geographic-filtering.md).
 
 > [!NOTE]
 > Voit suodattaa mobiilisovelluksessa sijainnin mukaan ainoastaan, jos raportin maantieteelliset nimet ovat englanniksi &#150; esimerkiksi ”New York City” tai ”Germany”.
@@ -52,12 +52,12 @@ Oletetaan esimerkiksi, että olet myyntipäällikkö matkalla tapaamaan asiakkai
 2. Julkaise raportti Power BI -palveluun.
 
 ## <a name="view-the-report-in-power-bi-mobile-app"></a>Tarkastele raporttia Power BI -mobiilisovelluksessa
-1. Avaa raportti missä tahansa [Power BI -mobiilisovelluksessa](mobile-apps-for-mobile-devices.md).
+1. Avaa raportti missä tahansa [Power BI -mobiilisovelluksessa](consumer/mobile/mobile-apps-for-mobile-devices.md).
 2. Jos olet maantieteellisessä sijainnissa, josta raportissa on tietoja, voit suodattaa sen automaattisesti sijaintiisi.
    
     ![Mobiilisovelluksen Geo-suodatin](media/desktop-mobile-geofiltering/power-bi-mobile-geo-map-set-filter.png)
 
-Lue lisää aiheesta [raportin suodattaminen sijainnin mukaan Power BI -mobiilisovelluksissa](mobile-apps-geographic-filtering.md).
+Lue lisää aiheesta [raportin suodattaminen sijainnin mukaan Power BI -mobiilisovelluksissa](consumer/mobile/mobile-apps-geographic-filtering.md).
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 * [Tietojen luokittelu Power BI Desktopissa](desktop-data-categorization.md)  

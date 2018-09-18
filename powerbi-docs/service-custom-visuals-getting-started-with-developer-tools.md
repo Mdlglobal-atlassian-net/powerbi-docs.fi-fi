@@ -9,12 +9,12 @@ ms.component: powerbi-developer
 ms.topic: conceptual
 ms.date: 11/30/2017
 ms.author: maghan
-ms.openlocfilehash: 0d165505981f841c7dfe9688c7a95cea3b6777c3
-ms.sourcegitcommit: 8990028a348b642ba5c96f001fe3a4280f0166ee
+ms.openlocfilehash: ec6399d815cb17bb0f2542144c63535835659017
+ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "40257339"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44726681"
 ---
 # <a name="use-developer-tools-to-create-custom-visuals"></a>Mukautettujen visualisointien luominen kehittäjätyökalujen avulla
 Voit mukautettujen visualisointien avulla vastata käyttäjiesi tarpeita ja sovelluksesi rakennetta. Lue, miten voit luoda mukautetun visualisoinnin Power BI:lle kehittäjätyökalujen avulla.
@@ -388,7 +388,7 @@ Suorita visualisointipalvelin käyttämällä `pbiviz start`-komentoa päättees
 Katso lisätietoja artikkelista [Visualisointien suorittaminen](#running-your-visual) tai [Palvelinvarmenteen asetukset](#ssl-setup).
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
-[Visualisoinnit Power BI:ssä](power-bi-report-visualizations.md)  
+[Visualisoinnit Power BI:ssä](visuals/power-bi-report-visualizations.md)  
 [Mukautetut visualisoinnit Power BI:ssä](power-bi-custom-visuals.md)  
 [Mukautettujen visualisointien julkaiseminen Office-kauppaan](developer/office-store.md)  
 [TypeScript](http://www.typescriptlang.org/)  

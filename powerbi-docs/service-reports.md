@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/01/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: da9a4ffad948a43077d864e442af36b0db6bb617
-ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
+ms.openlocfilehash: 80e5b31f4fd8e59333848da26995388874d1746c
+ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37136958"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44728038"
 ---
 # <a name="reports-in-power-bi"></a>Raportit Power BI:ssä
 ## <a name="what-is-a-power-bi-report"></a>Mikä on Power BI -raportti?
@@ -27,7 +27,7 @@ Tässä raportissa on kolme sivua (tai välilehteä), ja tarkastelemme parhailla
 
 Jos olet uusi Power BI:n käyttäjä, saat hyvän pohjan sen käyttöön lukemalla [Power BI:n peruskäsitteet](service-basic-concepts.md).
 
-Raportit ovat Power BI -palvelun ja Power BI Desktopin ominaisuus. Raporttien käyttö on lähes samanlaista. Mobiilissa et kuitenkaan voi luoda raportteja mutta voit [tarkastella raportteja, jakaa niitä ja lisätä niihin huomautuksia](mobile-reports-in-the-mobile-apps.md).
+Raportit ovat Power BI -palvelun ja Power BI Desktopin ominaisuus. Raporttien käyttö on lähes samanlaista. Mobiilissa et kuitenkaan voi luoda raportteja mutta voit [tarkastella raportteja, jakaa niitä ja lisätä niihin huomautuksia](consumer/mobile/mobile-reports-in-the-mobile-apps.md).
 
 ## <a name="advantages-of-reports"></a>Raporttien edut
 Raportit perustuvat yhteen tietojoukkoon. Jokainen raportin visualisointi edustaa tiedonjyvää. Visualisoinnit eivät ole staattisia. Voit lisätä ja poistaa tietoja, muuttaa visualisointityyppejä ja lisätä suodattimia ja osittajia, kun pureudut tietoihin ja etsit merkityksellisiä tietoja ja haet vastauksia. Kuten koontinäyttö, raportti on vuorovaikutteinen ja mukautettava, ja visualisoinnit päivittyvät sitä mukaa, kun sen pohjana olevat tiedot muuttuvat.

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 06/22/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 7da86135a391f8a6206a913a1e13df423ad96fbd
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 327e9d9973aabb17761b55d355598462ce70e20e
+ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36944970"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44726043"
 ---
 # <a name="tips-for-designing-a-great-power-bi-dashboard"></a>Vinkkejä laadukkaiden Power BI -koontinäyttöjen suunnitteluun
 Nyt kun olet luonut koontinäytön ja lisännyt siihen ruutuja, mieti, miten voisit parantaa sen toiminnallisuutta. Yleensä tämä tarkoittaa tärkeimpien tietojen korostamista ja koontinäytön selkeyttämistä.
@@ -23,7 +23,7 @@ Nyt kun olet luonut koontinäytön ja lisännyt siihen ruutuja, mieti, miten voi
 Tässä on joitakin vihjeitä.
 
 > [!TIP]
-> Useimpia raporttien suunnittelukäytäntöjä voi soveltaa myös koontinäyttöihin.  Lue tekninen raportti [Raporttien ja visualisointien parhaat suunnittelukäytännöt](power-bi-visualization-best-practices.md).
+> Useimpia raporttien suunnittelukäytäntöjä voi soveltaa myös koontinäyttöihin.  Lue tekninen raportti [Raporttien ja visualisointien parhaat suunnittelukäytännöt](visuals/power-bi-visualization-best-practices.md).
 >
 >
 
@@ -51,7 +51,7 @@ Jos koontinäytön teksti ja visualisoinnit ovat kaikki samaa kokoa, lukijan on 
 
 Muista tarjota konteksti.  
 
-Lue lisätietoja [vain luvun sisältävän ruudun luonnista](power-bi-visualization-card.md).
+Lue lisätietoja [vain luvun sisältävän ruudun luonnista](visuals/power-bi-visualization-card.md).
 
 ## <a name="put-the-most-important-information-in-the-upper-corner"></a>Sijoita tärkeimmät tiedot yläkulmaan
 Useimmat henkilöt lukevat ylhäältä alas, joten sijoita tärkein tieto ylös ja näytä lisää yksityiskohtia katsojan lukusuunnan mukaisesti (vasemmalta oikealle, oikealta vasemmalle).
@@ -68,7 +68,7 @@ Vältä erilaisten visualisointien lisäämistä vain vaihtelun vuoksi.  Visuali
 * Kiinnitä huomiota [kaavioiden lajitteluun](power-bi-report-change-sort.md).  Jos haluat kiinnittää huomiota suurimpaan tai pienimpään lukuun, lajittele mittayksikön mukaan.  Jos haluat, että tietty luokka on nopeasti löydettävissä useiden muiden joukosta, lajittele akselin mukaan.  
 * Ympyräkaaviot ovat parhaimmillaan, kun niissä on alle kahdeksan luokkaa. Koska arvoja ei voi tarkastella rinnakkain ympyräkaaviossa, niiden vertaaminen on vaikeampaa kuin palkki- ja pylväskaavioissa. Ympyräkaaviot toimivat parhaiten, kun osien vertailun sijaan tarkastellaan tietyn osan suhdetta kokonaisuuteen. Mittarikaaviot puolestaan ovat hyviä nykyisen tilanteen esittämisessä suhteessa tavoitteeseen.
 
-Lisää visualisointikohtaisia ohjeita on artikkelissa [Visualisointityypit Power BI:ssä](power-bi-visualization-types-for-reports-and-q-and-a.md).  
+Lisää visualisointikohtaisia ohjeita on artikkelissa [Visualisointityypit Power BI:ssä](visuals/power-bi-visualization-types-for-reports-and-q-and-a.md).  
 
 ## <a name="learning-more-about-best-practice-dashboard-design"></a>Lisätietoja parhaiden käytäntöjen mukaisesta koontinäyttörakenteesta
 Koontinäyttöjen rakenne liittyy läheisesti yleisiin hahmottamisen ja ryhmittelyn periaatteisiin ja käytäntöihin. Suosittelemme tähän liittyen opiskelemaan käytännöllisen tiedon esittämistä asiayhteydessä. Meidän blogitekstien lisäksi myös muualla verkossa on paljon avointa tietoa ja valmiita resursseja tähän liittyen. Suosittelemiamme teoksia:
