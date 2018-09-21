@@ -7,17 +7,17 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 07/24/2018
+ms.date: 09/10/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: c21d04da722e017210f7f83df3e1a5aa7dde1166
-ms.sourcegitcommit: df7a58dae14ef311516c9b3098f87742786f0479
+ms.openlocfilehash: f06f3f7f6d91176d75ce452202a91b2c54be06ce
+ms.sourcegitcommit: c51461690e8faa121a1325957ca79b7a3975e8b8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39280750"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44512152"
 ---
-# <a name="create-tooltips-based-on-report-pages-in-power-bi-desktop-preview"></a>Luo Power BI Desktopissa luotuihin raporttisivuihin pohjautuvia työkaluvihjeitä (esikatselu)
+# <a name="create-tooltips-based-on-report-pages-in-power-bi-desktop"></a>Power BI Desktopissa luotuihin raporttisivuihin perustuvien työkaluvihjeiden luominen
 Voit luoda visuaalisesti monipuolisia **raporttityökaluvihjeitä**, jotka tulevat näkyviin, kun pidät hiiren osoitinta visualisoinnin päällä, ja jotka pohjautuvat **Power BI Desktopissa** luomiisi raporttisivuihin. Kun luot työkaluvihjeenä toimivan raporttisivun, mukautetut työkaluvihjeet voivat sisältää visualisointeja, kuvia ja muita kohdekokoelmia, joita luot raporttisivulla. 
 
 ![Power BI Desktopin raporttityökaluvihjeitä](media/desktop-tooltips/desktop-tooltips_00a.png)
@@ -27,11 +27,15 @@ Voit luoda niin monta työkaluvihjesivua kuin haluat. Jokainen työkaluvihjesivu
 Raporttityökaluvihjeet avaavat monia hyödyllisiä mahdollisuuksia. Tutustutaan seuraavaksi siihen, miten voit luoda työkaluvihjeitä ja mitä sinun on tehtävä niiden määrittämiseksi.
 
 ### <a name="enable-the-tooltips-preview"></a>Ota käyttöön työkaluvihjeiden esikatselu 
-Koska raportin työkaluvihjeet ovat tällä hetkellä esikatselutilassa, sinun tulee ottaa ne käyttöön ennen kuin voit luoda raporttityökaluvihjeitä. Jos haluat ottaa tämän raporttityökalujen esikatselutoiminnon käyttöön, valitse Power BI Desktopissa **Tiedosto > Asetukset ja vaihtoehdot > Asetukset > Esiversio-ominaisuudet** ja valitse sitten **Raporttisivun työkaluvihjeet** -valintaruutu. 
+**Power BI Desktopin** syyskuun 2018 julkaisusta alkaen työkaluvihjeet ovat yleisesti saatavilla, eikä niitä tarvitse ottaa käyttöön. 
+
+Jos käytät **Power BI Desktopin** aiemmin luotua versiota, voit ottaa sen käyttöön esikatselutoimintona valitsemalla Power BI Desktopissa **Tiedosto > Asetukset ja vaihtoehdot > Asetukset > Esikatselutoiminnot** ja valitsemalla sitten valintaruudun **Raporttisivun työkaluvihjeet** -kohdan vierestä. 
 
 ![Ota käyttöön raportin työkaluvihjeiden esikatseluominaisuus](media/desktop-tooltips/desktop-tooltips_01.png)
 
 Kun olet ottanut raporttityökalujen esiversion käyttöön, sinun on käynnistettävä **Power BI Desktop** uudelleen.
+
+Suosittelemme aina päivittämään **Power BI Desktopin** uusimpaan versioon, jonka saat [Hae Power BI Desktop](desktop-get-the-desktop.md) -linkistä. 
 
 ## <a name="create-a-report-tooltip-page"></a>Luo raportin työkaluvihjesivu
 Luo ensin uusi sivu valitsemalla **+**-painike, joka on **Power BI Desktop** -raporttipohjan alaosassa sivun välilehtialueella. Painike on raportin viimeisen sivun vieressä. 
@@ -116,9 +120,10 @@ Kun visualisointia ristiinkorostetaan raportissa, raportin työkaluvihjeet näyt
 
 
 
-## <a name="limitations-and-considerations"></a>Rajoitukset ja huomioon otettavat seikat
-Tähän raportin **työkaluvihjeiden** esiversioon liittyy tiettyjä rajoituksia ja huomioitavia asioita.
+## <a name="limitations-and-considerations"></a>Rajoitukset ja huomioitavat asiat
+Muutamat **työkaluvihjeitä** koskevat rajoitukset ja tärkeät seikat on syytä huomioida.
 
+* Työkaluvihjeet yleisesti saataville tuoneesta **Power BI Desktopin** syyskuun 2018 julkaisuversiosta alkaen myös korttivisualisoinnit tukevat työkaluvihjeitä.
 * **Power BI Desktopin** heinäkuun 2018 julkaisusta alkaen tuetaan taulukko- ja matriisivisualisointien työkaluvihjeitä. 
 * Raportin työkaluvihjeitä ei tueta, kun raportteja tarkastellaan mobiilisovelluksissa tai upotetuissa ympäristöissä, kuten Julkaise verkkoon. 
 * Raportin työkaluvihjeitä ei tueta mukautetuissa visualisoinneissa. 

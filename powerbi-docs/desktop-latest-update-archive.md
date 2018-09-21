@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 08/06/2018
+ms.date: 09/10/2018
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 8c2ee97fb39fe115da78bad7bc5787a152dfd793
-ms.sourcegitcommit: cce10e14c111e8a19f282ad6c032d802ebfec943
+ms.openlocfilehash: e7eadadede8f342b25ea59dcd2053f53d654ffff
+ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39658146"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44728314"
 ---
 # <a name="previous-monthly-updates-to-power-bi-desktop"></a>Power BI Desktopin aiemmat kuukausipäivitykset
 
@@ -33,6 +33,54 @@ Kunkin päivityksen vieressä olevat linkit tarkoittavat seuraavaa:
 Voit myös katsoa **Uusimmat päivitykset** -videon, joka on aivan tämän artikkelin alussa. Napsauta päivitysluettelon alla olevan videokuvan **toistokuvaketta**.
 
 Seuraavat osiot käsittelevät **Power BI Desktopin** aiempien kuukausien päivityksiä.
+
+## <a name="august-2018-update-2615192321"></a>Elokuun 2018 päivitys (2.61.5192.321)
+
+Elokuun päivitykset paransivat sovellusta entisestään, ja ne julkaistiin pian heinäkuun merkittävien julkaisujen jälkeen. Toivottavasti nautit näistä päivityksistä yhtä paljon kuin aurinkoisesta päivästä hiekkarannalla; tule sinäkin mukaan tutustumaan näihin upeisiin päivityksiin. 
+
+Seuraavat päivitykset olivat uutta **Power BI Desktopissa** elokuussa:
+
+### <a name="modeling"></a>Mallintaminen
+
+* Tietoluokat mittayksiköille [[video]](https://youtu.be/dgv5HhHxxe8?t=15m27s)  [[artikkeli]](desktop-measures.md)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2018-feature-summary/#dataCategory)
+* Tilastolliset DAX-funktiot [[video]](https://youtu.be/dgv5HhHxxe8?t=18m56s)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2018-feature-summary/#dax)
+
+
+### <a name="reporting"></a>Raportointi
+
+* Vie PDF-tiedostoon ja tulosta raporttisi [[video]](https://youtu.be/dgv5HhHxxe8?t=12s)  [[artikkeli]](desktop-export-to-pdf.md)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2018-feature-summary/#print) 
+* Luo kirjanmerkkiryhmiä [[video]](https://youtu.be/dgv5HhHxxe8?t=4m4s)  [[artikkeli]](desktop-bookmarks.md#bookmark-groups)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2018-feature-summary/#bookmarks) 
+* Teemojen luominen on yleisesti saatavilla [[video]](https://youtu.be/dgv5HhHxxe8?t=7m9s)   [[artikkeli]](desktop-report-themes.md)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2018-feature-summary/#Theming) 
+* Osittajan oikaisu [[video]](https://youtu.be/dgv5HhHxxe8?t=22m53s)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2018-feature-summary/#slicer) 
+
+### <a name="analytics"></a>Analysointi
+
+* Ehdollinen muotoilu arvojen mukaan  [[video]](https://youtu.be/dgv5HhHxxe8?t=7m54s)  [[artikkeli]](desktop-conditional-table-formatting.md#color-formatting-by-field-value)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2018-feature-summary/#conditionalFormatting) 
+* Python-integrointi  [[video]](https://youtu.be/dgv5HhHxxe8?t=11m14s)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2018-feature-summary/#python) 
+* Kysymysten ja vastausten parannukset  [[video]](https://youtu.be/dgv5HhHxxe8?t=13m1s)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2018-feature-summary/#Q&A) 
+
+### <a name="custom-visuals"></a>Mukautetut visualisoinnit
+
+* Viisi uutta mukautettua visualisointia  [[video]](https://youtu.be/dgv5HhHxxe8?t=19m48s)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2018-feature-summary/#customVisuals) 
+
+### <a name="data-connectivity"></a>Tietoyhteydet
+
+* Spark-liitin yleisesti saatavilla  [[video]](https://youtu.be/dgv5HhHxxe8?t=31m41s)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2018-feature-summary/#spark) 
+
+
+> [!NOTE]
+> Voit myös [tutustua kaikkiin Power BI Desktopille saatavilla oleviin tietolähteisiin](desktop-data-sources.md). Luettelo kasvaa jatkuvasti, joten se kannattaa tarkistaa usein.
+
+Haluatko lisätietoja näistä päivityksistä? Tutustu [blogikirjoitukseen](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2018-feature-summary/), josta saat tarkempia tietoja kustakin uudesta ominaisuudesta (tämä on sama blogikirjoitus, johon viitataan yllä olevassa luettelossa).
+
+
+Seuraavassa videossa esitellään jokainen näistä päivityksistä. Näet videon myös blogikirjoituksen kautta.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/dgv5HhHxxe8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+> [!NOTE]
+> Sinua saattavat myös kiinnostaa [Power BI -palvelun uudet ominaisuudet](service-whats-new.md). Tutustu myös [Power BI -mobiilisovellusten uutuuksiin](mobile-whats-new-in-the-mobile-apps.md).
+
 
 ## <a name="july-2018-update-26051693201"></a>Heinäkuun 2018 päivitys (2.60.5169.3201)
 
@@ -89,7 +137,7 @@ Seuraavassa videossa esitellään jokainen näistä päivityksistä. Näet video
 
 
 > [!NOTE]
-> Sinua saattavat myös kiinnostaa [Power BI -palvelun uudet ominaisuudet](service-whats-new.md). Tutustu myös [Power BI -mobiilisovellusten uutuuksiin](mobile-whats-new-in-the-mobile-apps.md).
+> Sinua saattavat myös kiinnostaa [Power BI -palvelun uudet ominaisuudet](service-whats-new.md). Tutustu myös [Power BI -mobiilisovellusten uutuuksiin](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 ## <a name="june-2018-update-2595135101"></a>Kesäkuun 2018 päivitys (2.59.5135.101)
 
@@ -136,7 +184,7 @@ Seuraavassa videossa esitellään jokainen näistä päivityksistä. Näet video
 
 
 > [!NOTE]
-> Sinua saattavat myös kiinnostaa [Power BI -palvelun uudet ominaisuudet](service-whats-new.md). Tutustu myös [Power BI -mobiilisovellusten uutuuksiin](mobile-whats-new-in-the-mobile-apps.md).
+> Sinua saattavat myös kiinnostaa [Power BI -palvelun uudet ominaisuudet](service-whats-new.md). Tutustu myös [Power BI -mobiilisovellusten uutuuksiin](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 ## <a name="may-2018-update-2585103281"></a>Toukokuun 2018 päivitys (2.58.5103.281)
 
@@ -190,7 +238,7 @@ Seuraavassa videossa esitellään jokainen näistä päivityksistä. Näet video
 <iframe width="560" height="315" src="https://www.youtube.com/embed/-_GMCE1TLvQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 > [!NOTE]
-> Sinua saattavat myös kiinnostaa [Power BI -palvelun uudet ominaisuudet](service-whats-new.md). Tutustu myös [Power BI -mobiilisovellusten uutuuksiin](mobile-whats-new-in-the-mobile-apps.md).
+> Sinua saattavat myös kiinnostaa [Power BI -palvelun uudet ominaisuudet](service-whats-new.md). Tutustu myös [Power BI -mobiilisovellusten uutuuksiin](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 
 ## <a name="april-2018-update-2575068501"></a>Huhtikuun 2018 päivitys (2.57.5068.501)
@@ -236,7 +284,7 @@ Seuraavassa videossa esitellään jokainen näistä päivityksistä. Näet video
 <iframe width="560" height="315" src="https://www.youtube.com/embed/W_Nb73Od_AI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 > [!NOTE]
-> Sinua saattavat myös kiinnostaa [Power BI -palvelun uudet ominaisuudet](service-whats-new.md). Tutustu myös [Power BI -mobiilisovellusten uutuuksiin](mobile-whats-new-in-the-mobile-apps.md).
+> Sinua saattavat myös kiinnostaa [Power BI -palvelun uudet ominaisuudet](service-whats-new.md). Tutustu myös [Power BI -mobiilisovellusten uutuuksiin](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 
 
@@ -282,7 +330,7 @@ Seuraavassa videossa esitellään jokainen näistä päivityksistä. Näet video
 
 
 > [!NOTE]
-> Sinua saattavat myös kiinnostaa [Power BI -palvelun uudet ominaisuudet](service-whats-new.md). Tutustu myös [Power BI -mobiilisovellusten uutuuksiin](mobile-whats-new-in-the-mobile-apps.md).
+> Sinua saattavat myös kiinnostaa [Power BI -palvelun uudet ominaisuudet](service-whats-new.md). Tutustu myös [Power BI -mobiilisovellusten uutuuksiin](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 
 
@@ -304,7 +352,7 @@ Seuraavat päivitykset olivat uutta **Power BI Desktopissa** helmikuussa 2018:
 ### <a name="reporting"></a>Raportointi
 
 * Monivalinta-arvopisteet useiden kaavioiden välillä [[video]](https://youtu.be/KeVB5RwMzJo?t=23s) [[artikkeli]](desktop-multi-select.md)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#crosshighlight) 
-* Osittajien synkronointi usealle raporttisivulle  [[video]](https://youtu.be/KeVB5RwMzJo?t=3m33s) [[artikkeli]](desktop-slicers.md)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#syncSlicers) 
+* Osittajien synkronointi usealle raporttisivulle  [[video]](https://youtu.be/KeVB5RwMzJo?t=3m33s) [[artikkeli]](visuals/desktop-slicers.md)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#syncSlicers) 
 * Numeerisen alueen osittajan parannus – kokonaislukujen kohdistaminen (esikatselu)  [[video]](https://youtu.be/KeVB5RwMzJo?t=8m44s)  [[artikkeli]](desktop-slicer-numeric-range.md)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#rangeSlicer) 
 * Jopa kuusi kertaa nopeampi sijaintitietojen lisääminen Bing-kartoille (verkkoesikatselu)  [[video]](https://youtu.be/KeVB5RwMzJo?t=10m18s)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#geocoding) 
 * Ylivuotoarvopisteiden otsikot palkki- ja sarakekaaviovisualisoinneille   [[video]](https://youtu.be/KeVB5RwMzJo?t=12m31s)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#overflow) 
@@ -346,7 +394,7 @@ Seuraavassa videossa esitellään jokainen näistä päivityksistä. Näet video
 
 
 > [!NOTE]
-> Sinua saattavat myös kiinnostaa [Power BI -palvelun uudet ominaisuudet](service-whats-new.md). Tutustu myös [Power BI -mobiilisovellusten uutuuksiin](mobile-whats-new-in-the-mobile-apps.md).
+> Sinua saattavat myös kiinnostaa [Power BI -palvelun uudet ominaisuudet](service-whats-new.md). Tutustu myös [Power BI -mobiilisovellusten uutuuksiin](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 
 ## <a name="january-2018-update-2544970761"></a>Tammikuun 2018 päivitys (2.54.4970.761)
@@ -395,7 +443,7 @@ Seuraavassa videossa esitellään jokainen näistä päivityksistä. Näet video
 <iframe width="560" height="315" src="https://www.youtube.com/embed/W8Pp5wuCXJw" frameborder="0" allowfullscreen></iframe>
 
 > [!NOTE]
-> Sinua saattavat myös kiinnostaa [Power BI -palvelun uudet ominaisuudet](service-whats-new.md). Tutustu myös [Power BI -mobiilisovellusten uutuuksiin](mobile-whats-new-in-the-mobile-apps.md).
+> Sinua saattavat myös kiinnostaa [Power BI -palvelun uudet ominaisuudet](service-whats-new.md). Tutustu myös [Power BI -mobiilisovellusten uutuuksiin](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 
 
@@ -451,7 +499,7 @@ Seuraavassa videossa esitellään jokainen näistä päivityksistä. Näet video
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ZPU8B-1BxjI" frameborder="0" allowfullscreen></iframe>
 
 > [!NOTE]
-> Sinua saattavat myös kiinnostaa [Power BI -palvelun uudet ominaisuudet](service-whats-new.md). Tutustu myös [Power BI -mobiilisovellusten uutuuksiin](mobile-whats-new-in-the-mobile-apps.md).
+> Sinua saattavat myös kiinnostaa [Power BI -palvelun uudet ominaisuudet](service-whats-new.md). Tutustu myös [Power BI -mobiilisovellusten uutuuksiin](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 
 ## <a name="november-2017-update-2524921202"></a>Marraskuun 2017 päivitys (2.52.4921.202)
@@ -507,7 +555,7 @@ Seuraavassa videossa esitellään jokainen näistä päivityksistä. Näet video
 <iframe width="560" height="315" src="https://www.youtube.com/embed/sI3yRjdnJ7w" frameborder="0" allowfullscreen></iframe>
 
 > [!NOTE]
-> Sinua saattavat myös kiinnostaa [Power BI -palvelun uudet ominaisuudet](service-whats-new.md). Tutustu myös [Power BI -mobiilisovellusten uutuuksiin](mobile-whats-new-in-the-mobile-apps.md).
+> Sinua saattavat myös kiinnostaa [Power BI -palvelun uudet ominaisuudet](service-whats-new.md). Tutustu myös [Power BI -mobiilisovellusten uutuuksiin](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 
 
@@ -565,7 +613,7 @@ Seuraavassa videossa esitellään jokainen näistä päivityksistä. Näet video
 <iframe width="560" height="315" src="https://www.youtube.com/embed/jksjtR8GnBE" frameborder="0" allowfullscreen></iframe>
 
 > [!NOTE]
-> Sinua saattavat myös kiinnostaa [Power BI -palvelun uudet ominaisuudet](service-whats-new.md). Tutustu myös [Power BI -mobiilisovellusten uutuuksiin](mobile-whats-new-in-the-mobile-apps.md).
+> Sinua saattavat myös kiinnostaa [Power BI -palvelun uudet ominaisuudet](service-whats-new.md). Tutustu myös [Power BI -mobiilisovellusten uutuuksiin](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 
 ## <a name="september-2017-update-2504859502"></a>Syyskuun 2017 päivitys (2.50.4859.502)
@@ -575,7 +623,7 @@ Seuraavat päivitykset olivat uutta **Power BI Desktopissa** syyskuussa:
 ### <a name="report-view"></a>Raporttinäkymä:
 
 -   Porautuminen toiseen raporttisivuun [[video]](https://youtu.be/moTQJlnClJw?t=19s) [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2017-feature-summary/#drillthrough) [[artikkeli]](desktop-drillthrough.md)
--   Nauhakaavio [[video]](https://youtu.be/moTQJlnClJw?t=8m57s)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2017-feature-summary/#ribbon) [[artikkeli]](desktop-ribbon-charts.md)
+-   Nauhakaavio [[video]](https://youtu.be/moTQJlnClJw?t=8m57s)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2017-feature-summary/#ribbon) [[artikkeli]](visuals/desktop-ribbon-charts.md)
 -   Merkitykselliset Selitä lisäys / Selitä vähennys -tiedot [[video]](https://youtu.be/moTQJlnClJw?t=13m37s)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2017-feature-summary/#insights) [[artikkeli]](desktop-insights.md)
 -   Teemojen esikatselupäivitys – kaaviotyylin ohjausobjektit [[video]](https://youtu.be/moTQJlnClJw?t=19m25s)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2017-feature-summary/#theming) [[artikkeli]](desktop-report-themes.md)
 -   Helppokäyttötoimintojen parannuksia  [[video]](https://youtu.be/moTQJlnClJw?t=27m25s)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2017-feature-summary/#accessibility) [[artikkeli]](desktop-accessibility.md)
@@ -605,7 +653,7 @@ Seuraavassa videossa esitellään jokainen näistä päivityksistä. Näet video
 <iframe width="560" height="315" src="https://www.youtube.com/embed/moTQJlnClJw" frameborder="0" allowfullscreen></iframe>
 
 > [!NOTE]
-> Sinua saattavat myös kiinnostaa [Power BI -palvelun uudet ominaisuudet](service-whats-new.md). Tutustu myös [Power BI -mobiilisovellusten uutuuksiin](mobile-whats-new-in-the-mobile-apps.md).
+> Sinua saattavat myös kiinnostaa [Power BI -palvelun uudet ominaisuudet](service-whats-new.md). Tutustu myös [Power BI -mobiilisovellusten uutuuksiin](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 
 ## <a name="august-2017-update-2494831222"></a>Elokuun 2017 päivitys (2.49.4831.222)
@@ -650,7 +698,7 @@ Seuraavassa videossa esitellään jokainen näistä päivityksistä. Näet video
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ND8U0yXroaQ" frameborder="0" allowfullscreen></iframe>
 
 > [!NOTE]
-> Sinua saattavat myös kiinnostaa [Power BI -palvelun uudet ominaisuudet](service-whats-new.md). Tutustu myös [Power BI -mobiilisovellusten uutuuksiin](mobile-whats-new-in-the-mobile-apps.md).
+> Sinua saattavat myös kiinnostaa [Power BI -palvelun uudet ominaisuudet](service-whats-new.md). Tutustu myös [Power BI -mobiilisovellusten uutuuksiin](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 
 ## <a name="july-2017-update-2484792321"></a>Heinäkuun 2017 päivitys (2.48.4792.321)
@@ -700,7 +748,7 @@ Seuraavassa videossa esitellään jokainen näistä päivityksistä. Näet video
 <iframe width="560" height="315" src="https://www.youtube.com/embed/4X96ow7FnSY" frameborder="0" allowfullscreen></iframe>
 
 > [!NOTE]
-> Sinua saattavat myös kiinnostaa [Power BI -palvelun uudet ominaisuudet](service-whats-new.md). Tutustu myös [Power BI -mobiilisovellusten uutuuksiin](mobile-whats-new-in-the-mobile-apps.md).
+> Sinua saattavat myös kiinnostaa [Power BI -palvelun uudet ominaisuudet](service-whats-new.md). Tutustu myös [Power BI -mobiilisovellusten uutuuksiin](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 
 ## <a name="june-2017-update-2474766542"></a>Kesäkuun 2017 päivitys (2.47.4766.542)
@@ -714,7 +762,7 @@ Seuraavat päivitykset olivat uutta **Power BI Desktopissa** kesäkuussa:
 -   Visuaalinen fonttiperheasetus [[video]](https://youtu.be/YlNVE5dgcSI?t=6m59s) [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-feature-summary/#fonts)
 -   Vaakasuuntainen kuvaosittaja [[video]](https://youtu.be/YlNVE5dgcSI?t=8m42s) [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-feature-summary/#imageSlicer)
 -   Yhdistelmäkaavion muotoilupäivitykset [[video]](https://youtu.be/YlNVE5dgcSI?t=9m58s) [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-feature-summary/#comboChart)
--   Bing-karttojen parannuksia [[video]](https://youtu.be/YlNVE5dgcSI?t=11m47s) [[artikkeli]](power-bi-map-tips-and-tricks.md) [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-feature-summary/#maps)
+-   Bing-karttojen parannuksia [[video]](https://youtu.be/YlNVE5dgcSI?t=11m47s) [[artikkeli]](visuals/power-bi-map-tips-and-tricks.md) [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-feature-summary/#maps)
 -   Suuren tiheyden viivaotanta [[videon]](https://youtu.be/YlNVE5dgcSI?t=16m53s) [[artikkeli]](desktop-high-density-sampling.md)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-feature-summary/#highDensityLine)
 -   Helppokäyttöiset raportit [[video]](https://youtu.be/YlNVE5dgcSI?t=19m23s) [[artikkeli]](desktop-accessibility.md)[[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-feature-summary/#accessibility)
 
@@ -745,7 +793,7 @@ Seuraavassa videossa esitellään jokainen näistä päivityksistä. Näet video
 <iframe width="560" height="315" src="https://www.youtube.com/embed/YlNVE5dgcSI" frameborder="0" allowfullscreen></iframe>
 
 > [!NOTE]
-> Sinua saattavat myös kiinnostaa [Power BI -palvelun uudet ominaisuudet](service-whats-new.md). Tutustu myös [Power BI -mobiilisovellusten uutuuksiin](mobile-whats-new-in-the-mobile-apps.md).
+> Sinua saattavat myös kiinnostaa [Power BI -palvelun uudet ominaisuudet](service-whats-new.md). Tutustu myös [Power BI -mobiilisovellusten uutuuksiin](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 
 
@@ -792,7 +840,7 @@ Seuraavassa videossa esitellään jokainen näistä päivityksistä. Näet video
 <iframe width="560" height="315" src="https://www.youtube.com/embed/CKISVNHcHVA" frameborder="0" allowfullscreen></iframe>
 
 > [!NOTE]
-> Sinua saattavat myös kiinnostaa [Power BI -palvelun uudet ominaisuudet](service-whats-new.md). Tutustu myös [Power BI -mobiilisovellusten uutuuksiin](mobile-whats-new-in-the-mobile-apps.md).
+> Sinua saattavat myös kiinnostaa [Power BI -palvelun uudet ominaisuudet](service-whats-new.md). Tutustu myös [Power BI -mobiilisovellusten uutuuksiin](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 
 
@@ -804,7 +852,7 @@ Seuraavat päivitykset olivat uutta Power BI Desktopissa huhtikuussa 2017:
 ### <a name="report-view"></a>Raporttinäkymä:
 
 -   Akselien otsikoiden nimeäminen uudelleen [[video]](https://youtu.be/AWMaIaI8G2Y?t=25s)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-feature-summary/#renameAxisTitles)
--   Uusia matriisivisualisointien parannuksia: sarakkeen lajittelu, sarakkeen koon muuttaminen ja automaattinen rivitys (esikatselu) [[video]](https://youtu.be/AWMaIaI8G2Y?t=1m32s) [[artikkeli]](desktop-matrix-visual.md) [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-feature-summary/#matrix)
+-   Uusia matriisivisualisointien parannuksia: sarakkeen lajittelu, sarakkeen koon muuttaminen ja automaattinen rivitys (esikatselu) [[video]](https://youtu.be/AWMaIaI8G2Y?t=1m32s) [[artikkeli]](visuals/desktop-matrix-visual.md) [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-feature-summary/#matrix)
 
 ### <a name="analytics"></a>Analysointi:
 
@@ -837,7 +885,7 @@ Seuraavassa videossa esitellään jokainen näistä päivityksistä. Näet video
 <iframe width="560" height="315" src="https://www.youtube.com/embed/AWMaIaI8G2Y" frameborder="0" allowfullscreen></iframe>
 
 > [!NOTE]
-> Sinua saattavat myös kiinnostaa [Power BI -palvelun uudet ominaisuudet](service-whats-new.md). Tutustu myös [Power BI -mobiilisovellusten uutuuksiin](mobile-whats-new-in-the-mobile-apps.md).
+> Sinua saattavat myös kiinnostaa [Power BI -palvelun uudet ominaisuudet](service-whats-new.md). Tutustu myös [Power BI -mobiilisovellusten uutuuksiin](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 
 ## <a name="march-2017-update-2444675422"></a>Maaliskuun 2017 päivitys (2.44.4675.422)
@@ -846,7 +894,7 @@ Seuraavat päivitykset olivat uutta Power BI Desktopissa maaliskuussa 2017:
 
 ### <a name="report-view"></a>Raporttinäkymä:
 
--   Uusi matriisivisualisointi (esikatselu) [[video]](https://youtu.be/CaRTON3lJqw?t=18s) [[artikkeli]](desktop-matrix-visual.md) [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-feature-summary/#matrix)
+-   Uusi matriisivisualisointi (esikatselu) [[video]](https://youtu.be/CaRTON3lJqw?t=18s) [[artikkeli]](visuals/desktop-matrix-visual.md) [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-feature-summary/#matrix)
 -   Numeerisen alueen osittaja (esikatselu) [[video]](https://youtu.be/CaRTON3lJqw?t=8m20s) [[artikkeli]](desktop-slicer-numeric-range.md)[[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-feature-summary/#rangeSlicer)
 -   Ympyrä- ja rengasvisualisointien arvopisteiden otsikot – prosenttiosuus kokonaissummasta [[video]](https://youtu.be/CaRTON3lJqw?t=10m52s) [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-feature-summary/#dataLabels)
 -   Ristiinkorostus useita sarjoja käyttämällä [[video]](https://youtu.be/CaRTON3lJqw?t=11m57s) [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-feature-summary/#crossHighlight)
@@ -880,7 +928,7 @@ Seuraavassa videossa esitellään jokainen näistä päivityksistä. Näet video
 <iframe width="560" height="315" src="https://www.youtube.com/embed/CaRTON3lJqw" frameborder="0" allowfullscreen></iframe>
 
 > [!NOTE]
-> Sinua saattavat myös kiinnostaa [Power BI -palvelun uudet ominaisuudet](service-whats-new.md). Tutustu myös [Power BI -mobiilisovellusten uutuuksiin](mobile-whats-new-in-the-mobile-apps.md).
+> Sinua saattavat myös kiinnostaa [Power BI -palvelun uudet ominaisuudet](service-whats-new.md). Tutustu myös [Power BI -mobiilisovellusten uutuuksiin](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 
 
@@ -928,7 +976,7 @@ Seuraavassa videossa esitellään jokainen näistä päivityksistä. Näet video
 <iframe width="560" height="315" src="https://www.youtube.com/embed/mn75-LOPxMA" frameborder="0" allowfullscreen></iframe>
 
 > [!NOTE]
-> Sinua saattavat myös kiinnostaa [Power BI -palvelun uudet ominaisuudet](service-whats-new.md). Tutustu myös [Power BI -mobiilisovellusten uutuuksiin](mobile-whats-new-in-the-mobile-apps.md).
+> Sinua saattavat myös kiinnostaa [Power BI -palvelun uudet ominaisuudet](service-whats-new.md). Tutustu myös [Power BI -mobiilisovellusten uutuuksiin](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 
 ## <a name="january-2017-update-2424611482"></a>Tammikuun 2017 päivitys (2.42.4611.482)
@@ -964,7 +1012,7 @@ Seuraavassa videossa esitellään jokainen näistä päivityksistä. Näet video
 <iframe width="560" height="315" src="https://www.youtube.com/embed/C1-f0T8vZ7M" frameborder="0" allowfullscreen></iframe>
 
 > [!NOTE]
-> Sinua saattavat myös kiinnostaa [Power BI -palvelun uudet ominaisuudet](service-whats-new.md). Tutustu myös [Power BI -mobiilisovellusten uutuuksiin](mobile-whats-new-in-the-mobile-apps.md).
+> Sinua saattavat myös kiinnostaa [Power BI -palvelun uudet ominaisuudet](service-whats-new.md). Tutustu myös [Power BI -mobiilisovellusten uutuuksiin](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 
 
@@ -1017,7 +1065,7 @@ Seuraavassa videossa esitellään jokainen näistä päivityksistä. Näet video
 <iframe width="560" height="315" src="https://www.youtube.com/embed/kERJ_WOLuLk" frameborder="0" allowfullscreen></iframe>
 
 > [!NOTE]
-> Sinua saattavat myös kiinnostaa [Power BI -palvelun uudet ominaisuudet](service-whats-new.md). Tutustu myös [Power BI -mobiilisovellusten uutuuksiin](mobile-whats-new-in-the-mobile-apps.md).
+> Sinua saattavat myös kiinnostaa [Power BI -palvelun uudet ominaisuudet](service-whats-new.md). Tutustu myös [Power BI -mobiilisovellusten uutuuksiin](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 
 ## <a name="october-2016-update-2404554361"></a>Lokakuun 2016 päivitys (2.40.4554.361)
@@ -1070,7 +1118,7 @@ Seuraavassa videossa esitellään jokainen näistä päivityksistä. Näet video
 <iframe width="560" height="315" src="https://www.youtube.com/embed/UXEYSvgvMaQ" frameborder="0" allowfullscreen></iframe>
 
 > [!NOTE]
-> Sinua saattavat myös kiinnostaa [Power BI -palvelun uudet ominaisuudet](service-whats-new.md). Tutustu myös [Power BI -mobiilisovellusten uutuuksiin](mobile-whats-new-in-the-mobile-apps.md).
+> Sinua saattavat myös kiinnostaa [Power BI -palvelun uudet ominaisuudet](service-whats-new.md). Tutustu myös [Power BI -mobiilisovellusten uutuuksiin](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 
 ## <a name="september-2016-update-2394526362"></a>Syyskuun 2016 päivitys (2.39.4526.362)
@@ -1128,7 +1176,7 @@ Seuraavassa videossa esitellään jokainen näistä päivityksistä. Näet video
 <iframe width="560" height="315" src="https://www.youtube.com/embed/pcUr6E8g_KI" frameborder="0" allowfullscreen></iframe>
 
 > [!NOTE]
-> Sinua saattavat myös kiinnostaa [Power BI -palvelun uudet ominaisuudet](service-whats-new.md). Tutustu myös [Power BI -mobiilisovellusten uutuuksiin](mobile-whats-new-in-the-mobile-apps.md).
+> Sinua saattavat myös kiinnostaa [Power BI -palvelun uudet ominaisuudet](service-whats-new.md). Tutustu myös [Power BI -mobiilisovellusten uutuuksiin](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 
 
@@ -1189,7 +1237,7 @@ Seuraavassa videossa esitellään jokainen näistä päivityksistä. Näet video
 <iframe width="560" height="315" src="https://www.youtube.com/embed/0VvG7Eqoke8" frameborder="0" allowfullscreen></iframe>
 
 > [!NOTE]
-> Sinua saattavat myös kiinnostaa [Power BI -palvelun uudet ominaisuudet](service-whats-new.md). Tutustu myös [Power BI -mobiilisovellusten uutuuksiin](mobile-whats-new-in-the-mobile-apps.md).
+> Sinua saattavat myös kiinnostaa [Power BI -palvelun uudet ominaisuudet](service-whats-new.md). Tutustu myös [Power BI -mobiilisovellusten uutuuksiin](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 
 ## <a name="july-2016-update-2374464321"></a>Heinäkuun 2016 päivitys (2.37.4464.321)
@@ -1201,7 +1249,7 @@ Heinäkuu toi tullessaan lisää uusia päivityksiä ja odotettuja tietoyhteyksi
 ### <a name="report-view"></a>Raporttinäkymä:
 
 -   Ennalta määritettyjä taulukkotyylejä [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary/) [[video]](https://youtu.be/g8ccfjffWmw?t=1m25s)
--   Muotokarttojen päivitys – mukautettujen karttojen käyttäminen [[artikkeli]](desktop-shape-map.md)[[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary/)[[video]](https://youtu.be/g8ccfjffWmw?t=2m21s)
+-   Muotokarttojen päivitys – mukautettujen karttojen käyttäminen [[artikkeli]](visuals/desktop-shape-map.md)[[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary/)[[video]](https://youtu.be/g8ccfjffWmw?t=2m21s)
 
 ### <a name="data-connectors"></a>Uudet tietoyhteydet:
 
@@ -1232,7 +1280,7 @@ Seuraavassa videossa esitellään jokainen näistä päivityksistä. Näet video
 <iframe width="560" height="315" src="https://www.youtube.com/embed/g8ccfjffWmw" frameborder="0" allowfullscreen></iframe>
 
 > [!NOTE]
-> Sinua saattavat myös kiinnostaa [Power BI -palvelun uudet ominaisuudet](service-whats-new.md). Tutustu myös [Power BI -mobiilisovellusten uutuuksiin](mobile-whats-new-in-the-mobile-apps.md).
+> Sinua saattavat myös kiinnostaa [Power BI -palvelun uudet ominaisuudet](service-whats-new.md). Tutustu myös [Power BI -mobiilisovellusten uutuuksiin](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 ## <a name="june-2016-update-2364434362"></a>Kesäkuun 2016 päivitys (2.36.4434.362)
 
@@ -1242,7 +1290,7 @@ Kesäkuussa julkaistiin valikoima mielenkiintoisia päivityksiä Power BI Deskto
 
 ### <a name="report-view"></a>Raporttinäkymä:
 
--   Uusi visualisointi – muotokartat [[video]](https://youtu.be/sZsL2l6oS4A?t=3m9s) [[artikkeli]](desktop-shape-map.md)
+-   Uusi visualisointi – muotokartat [[video]](https://youtu.be/sZsL2l6oS4A?t=3m9s) [[artikkeli]](visuals/desktop-shape-map.md)
 -   Haettavissa olevat osittajat  [[video]](https://youtu.be/sZsL2l6oS4A?t=6m25s)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-update/)
 -   Määritettävissä olevat viivakaavion otsikot [[video]](https://youtu.be/sZsL2l6oS4A?t=7m21s) [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-update/)
 -   Uusia sisäänkirjautumisen aloituskohtia [[video]](https://youtu.be/sZsL2l6oS4A?t=2m30s) [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-update/)
@@ -1286,7 +1334,7 @@ Seuraavassa videossa esitellään jokainen näistä päivityksistä. Näet video
 
 
 > [!NOTE]
-> Sinua saattavat myös kiinnostaa [Power BI -palvelun uudet ominaisuudet](service-whats-new.md). Tutustu myös [Power BI -mobiilisovellusten uutuuksiin](mobile-whats-new-in-the-mobile-apps.md).
+> Sinua saattavat myös kiinnostaa [Power BI -palvelun uudet ominaisuudet](service-whats-new.md). Tutustu myös [Power BI -mobiilisovellusten uutuuksiin](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 
 
@@ -1342,7 +1390,7 @@ Seuraavassa videossa esitellään jokainen näistä päivityksistä. Näet video
 
 
 > [!NOTE]
-> Sinua saattavat myös kiinnostaa [Power BI -palvelun uudet ominaisuudet](service-whats-new.md). Tutustu myös [Power BI -mobiilisovellusten uutuuksiin](mobile-whats-new-in-the-mobile-apps.md).
+> Sinua saattavat myös kiinnostaa [Power BI -palvelun uudet ominaisuudet](service-whats-new.md). Tutustu myös [Power BI -mobiilisovellusten uutuuksiin](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 ## <a name="april-2016-update-2344372322"></a>Huhtikuun 2016 päivitys (2.34.4372.322)
 
@@ -1391,7 +1439,7 @@ Seuraavassa videossa esitellään jokainen näistä päivityksistä. Näet video
 
 
 > [!NOTE]
-> Sinua saattavat myös kiinnostaa [Power BI -palvelun uudet ominaisuudet](service-whats-new.md). Tutustu myös [Power BI -mobiilisovellusten uutuuksiin](mobile-whats-new-in-the-mobile-apps.md).
+> Sinua saattavat myös kiinnostaa [Power BI -palvelun uudet ominaisuudet](service-whats-new.md). Tutustu myös [Power BI -mobiilisovellusten uutuuksiin](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 
 ## <a name="march-2016-update-2334337281"></a>Maaliskuun 2016 päivitys (2.33.4337.281)
@@ -1443,7 +1491,7 @@ Seuraavassa videossa esitellään jokainen näistä päivityksistä. Näet video
 
 
 > [!NOTE]
-> Sinua saattavat myös kiinnostaa [Power BI -palvelun uudet ominaisuudet](service-whats-new.md). Tutustu myös [Power BI -mobiilisovellusten uutuuksiin](mobile-whats-new-in-the-mobile-apps.md).
+> Sinua saattavat myös kiinnostaa [Power BI -palvelun uudet ominaisuudet](service-whats-new.md). Tutustu myös [Power BI -mobiilisovellusten uutuuksiin](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 
 
@@ -1501,7 +1549,7 @@ Seuraavassa videossa esitellään jokainen näistä päivityksistä. Näet video
 
 
 > [!NOTE]
-> Sinua saattavat myös kiinnostaa [Power BI -palvelun uudet ominaisuudet](service-whats-new.md). Tutustu myös [Power BI -mobiilisovellusten uutuuksiin](mobile-whats-new-in-the-mobile-apps.md).
+> Sinua saattavat myös kiinnostaa [Power BI -palvelun uudet ominaisuudet](service-whats-new.md). Tutustu myös [Power BI -mobiilisovellusten uutuuksiin](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 
 ## <a name="january-2016-update-2314280361"></a>Tammikuun 2016 päivitys (2.31.4280.361)

@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 08/06/2018
+ms.date: 09/10/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: fa812801eb01529c3e364d69f041b7efd193c3ae
-ms.sourcegitcommit: cce10e14c111e8a19f282ad6c032d802ebfec943
+ms.openlocfilehash: 05a644c300a0879b2f5eedd95cdddc537cc6fd0b
+ms.sourcegitcommit: c51461690e8faa121a1325957ca79b7a3975e8b8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39657870"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44512060"
 ---
 # <a name="data-sources-in-power-bi-desktop"></a>Power BI Desktopin tietolähteet
 Power BI Desktopin avulla voit yhdistää tietoja monista eri lähteistä. Täydellinen luettelo käytettävissä olevista tietolähteistä on tämän sivun alareunassa.
@@ -53,6 +53,7 @@ Kaikki tietotyypit on järjestelty seuraaviin luokkiin:
 * XML
 * JSON
 * Kansio
+* PDF (beeta)
 * SharePoint-kansio
 
 Seuraavassa kuvassa näkyy **Tiedosto**-luokan **Nouda tiedot** -ikkuna.
@@ -79,7 +80,8 @@ Seuraavassa kuvassa näkyy **Tiedosto**-luokan **Nouda tiedot** -ikkuna.
 * Impala
 * Google BigQuery
 * Snowflake
-* Exasol
+* Exasol (beeta)
+* Jethro (beeta)
 
 > [!NOTE]
 > Jotkin tietokannan yhdistimet edellyttävät, että otat ne käyttöön valitsemalla **Tiedosto > Asetukset ja vaihtoehdot > Asetukset** ja valitsemalla **Esikatselutoiminnot** ja ottamalla yhdistin käyttöön. Jos et näe joitakin edellä mainituista yhdistimistä ja haluat käyttää niitä, tarkista **Esikatselutoiminnot**-asetukset. Huomaa myös, että tietolähteen, jolla on merkintä *beeta* tai *esikatselu*, tuki ja toiminnallisuus ovat rajoitettua, eikä sitä tulisi käyttää tuotantoympäristössä.
@@ -93,6 +95,7 @@ Seuraavassa kuvassa näkyy **Tietokanta**-luokan **Nouda tiedot** -ikkuna.
 **Power BI** -luokka tarjoaa seuraavat tietoyhteydet:
 
 * Power BI -tietojoukot
+* Power BI -tietovuot (beeta)
 
 Seuraavassa kuvassa näkyy **Power BI** -luokan **Nouda tiedot** -ikkuna.
 
@@ -108,7 +111,7 @@ Seuraavassa kuvassa näkyy **Power BI** -luokan **Nouda tiedot** -ikkuna.
 * Azure Cosmos DB (beeta)
 * Azure Data Lake Store
 * Azure HDInsight (HDFS)
-* Azure HDInsight Spark (beeta)
+* Azure HDInsight Spark
 * HDInsight Interactive Query (beeta)
 * Azure KustoDB (beeta)
 
@@ -169,6 +172,7 @@ Seuraavassa kuvassa näkyy **Online-palvelut**-luokan **Nouda tiedot** -ikkuna.
 * Hadoop-tiedosto (HDFS)
 * Spark
 * R-komentosarja
+* Python-komentosarja
 * ODBC
 * OLE DB
 * Tyhjä kysely

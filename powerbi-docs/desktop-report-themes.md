@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 08/08/2018
+ms.date: 09/10/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 6aa3e6ba5a471176a6af2551344744cdc45697fb
-ms.sourcegitcommit: cce10e14c111e8a19f282ad6c032d802ebfec943
+ms.openlocfilehash: 4cc2c0ae14cf457c3a704b2891e070f4e4e00166
+ms.sourcegitcommit: c51461690e8faa121a1325957ca79b7a3975e8b8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39657939"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44512175"
 ---
 # <a name="use-report-themes-in-power-bi-desktop"></a>Raporttiteemojen käyttäminen Power BI Desktopissa
 **Raporttiteemojen** avulla voit käyttää väriteemaa koko raportissa. Tällä tavalla voit käyttää esimerkiksi yrityksen omaa väriteemaa, kausivärejä tai mitä tahansa muuta haluamaasi väriteemaa. Kun otat käyttöön **raporttiteeman**, kaikki raporttisi visualisoinnit käyttävät valitun teeman värejä (lukuun ottamatta muutamia poikkeuksia, jotka kuvataan myöhemmin tässä artikkelissa).
@@ -36,7 +36,17 @@ Jos käytät **Power BI Desktopin** aiemmin luotua versiota, voit ottaa sen käy
 Suosittelemme aina päivittämään **Power BI Desktopin** uusimpaan versioon, jonka saat [Hae Power BI Desktop](desktop-get-the-desktop.md) -linkistä. 
 
 ## <a name="how-report-themes-work"></a>Raporttiteemojen toiminta
-Jos haluat ottaa raporttiteeman käyttöön Power BI -raportissa, napsauta **Aloitus**-valintanauhan **Vaihda teemaa** -painiketta ja valitse sitten avattavasta valikosta **Tuo teema**.
+Jos haluat käyttää raporttiteemaa Power BI Desktop -raportissa, voit valita jonkin käytettävissä olevista valmiista raporttiteemoista tai tuoda mukautetun teeman.
+
+Jos haluat valita käytettävissä olevista valmiista raporttiteemoista, napsauta **Aloitus**-valintanauhan **Vaihda teemaa** -painiketta ja valitse sitten jokin teemoista avattavasta valikosta.
+
+![valitse raporttiteema](media/desktop-report-themes/report-themes_2a.png)
+
+Raporttiteema otetaan käyttöön raportissa, ja raportti on valmis.
+
+### <a name="importing-report-themes"></a>Raporttiteemojen tuominen
+
+Jos haluat tuoda mukautetun raporttiteeman, napsauta **Aloitus**-valintanauhan **Vaihda teemaa** -painiketta ja valitse sitten avattavasta valikosta **Tuo teema**.
 
 ![](media/desktop-report-themes/report-themes_3.png)
 
