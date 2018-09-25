@@ -11,15 +11,15 @@ ms.topic: conceptual
 ms.date: 03/24/2017
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 8083e2aba9a2aa5b8bba27995e9fe261a76084c9
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: 380567441fafec92d1f5e9e6b135b797264df40f
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44728061"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46543564"
 ---
 # <a name="duplicate-a-report-page-in-power-bi"></a>Raporttisivun monistaminen Power BI:ssä
-Power BI-palveluun tai Power BI Desktopin raporttisivun monistaminen edellyttää muokkausoikeuksia raporttiin. Power BI -palvelussa tämä tarkoittaa raportin avaamista [muokkausnäkymässä](service-reading-view-and-editing-view.md). 
+Power BI-palveluun tai Power BI Desktopin raporttisivun monistaminen edellyttää muokkausoikeuksia raporttiin. Power BI -palvelussa tämä tarkoittaa raportin avaamista [muokkausnäkymässä](consumer/end-user-reading-view.md). 
 
 
 1. Avaa Power BI:ssä raportti, jossa on vähintään yksi sivu. 
@@ -36,7 +36,7 @@ Power BI-palveluun tai Power BI Desktopin raporttisivun monistaminen edellyttä�
 ### <a name="next-steps"></a>Seuraavat vaiheet
 Lisätietoja [Power BI -raporttien visualisoinneista](visuals/power-bi-report-visualizations.md)    
 [Uuden sivun lisääminen raporttiin](power-bi-report-add-page.md)    
-[Power BI:n peruskäsitteet](service-basic-concepts.md)    
+[Power BI:n peruskäsitteet](consumer/end-user-basic-concepts.md)    
 
 Onko sinulla muuta kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
 

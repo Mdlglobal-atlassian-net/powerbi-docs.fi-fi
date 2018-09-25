@@ -9,12 +9,12 @@ ms.component: powerbi-mobile
 ms.topic: conceptual
 ms.date: 06/28/2018
 ms.author: maggies
-ms.openlocfilehash: 04a385d67a8cc462b21c16cf7daaa5aa675436d9
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: 72c51a6eae4acec5bfc0af7b471f98dfcb22da67
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44732776"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46549796"
 ---
 # <a name="explore-tiles-in-the-power-bi-mobile-apps"></a>Tutustu ruutuihin Power BI -mobiilisovelluksissa
 Koskee seuraavia:
@@ -23,7 +23,7 @@ Koskee seuraavia:
 |:--- |:--- |:--- |:--- |:--- |
 | iPhonet |iPadit |Android-puhelimet |Android-tabletit |Windows 10 -laitteet |
 
-Ruudut ovat reaaliaikaisia tilannevedoksia tiedoistasi kiinnitettyinä koontinäyttöön. Niiden arvot muuttuvat tietojen muuttuessa. **Sinä [lisäät ruutuja koontinäyttöön Power BI -palvelussa](../../service-dashboard-tiles.md).** 
+Ruudut ovat reaaliaikaisia tilannevedoksia tiedoistasi kiinnitettyinä koontinäyttöön. Niiden arvot muuttuvat tietojen muuttuessa. **Sinä [lisäät ruutuja koontinäyttöön Power BI -palvelussa](../end-user-tiles.md).** 
 
 Power BI -mobiilisovelluksissa avaat ruutuja kohdistustilassa ja olet vuorovaikutuksessa niiden kanssa. Voit avata ruutuja kaikenlaisten visualisointien kanssa, mukaan luettuina Bing- ja R-pohjaiset ruudut.
 

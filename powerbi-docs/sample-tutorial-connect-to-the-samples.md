@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 06/23/2018
 ms.author: mihart
 LocalizationGroup: Samples
-ms.openlocfilehash: 02c3998a95e7d481ee032513054933f1484ae7f9
-ms.sourcegitcommit: fbb7924603f8915d07b5e6fc8f4d0c7f70c1a1e1
+ms.openlocfilehash: 8b4a0605df348957c4adb0d8e02975f4cd752307
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "36944602"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46543785"
 ---
 # <a name="the-power-bi-samples"></a>Power BI -mallit
 
@@ -79,7 +79,7 @@ Tutustu nyt itsenäisesti koontinäyttöön, tietojoukkoon ja raporttiin. Omiin 
     ![raporttisivu, jossa vastaavat visualisoinnit korostettuna](media/sample-tutorial-connect-to-the-samples/power-bi-report.png)
    
    > [!NOTE]
-   > Jos ruutu olisi luotu [Power BI Q&A](power-bi-q-and-a.md) -työkalulla, Q&A-sivu olisi avautunut. Jos ruutu olisi [kiinnitetty Excelistä](service-dashboard-pin-tile-from-excel.md), Excel Online olisi avautunut Power BI:n sisällä.
+   > Jos ruutu olisi luotu [Power BI Q&A](consumer/end-user-q-and-a.md) -työkalulla, Q&A-sivu olisi avautunut. Jos ruutu olisi [kiinnitetty Excelistä](service-dashboard-pin-tile-from-excel.md), Excel Online olisi avautunut Power BI:n sisällä.
    > 
    > 
 1. **Tietojoukot**-välilehdessä on useita vaihtoehtoja tietojoukkoon tutustumiseen.  Et voi avata sitä ja tarkastella kaikkia rivejä ja sarakkeita (toisin kuin Power BI Desktop -versiossa tai Excelissä).  Jaettaessa sisältöpaketti työkaverin kanssa halutaan yleensä jakaa merkitykselliset tiedot eikä antaa suoraa pääsyä tietoihin. Tämä ei kuitenkaan tarkoita sitä, etteikö tietojoukkoon voisi tutustua.  
@@ -89,7 +89,7 @@ Tutustu nyt itsenäisesti koontinäyttöön, tietojoukkoon ja raporttiin. Omiin 
    * Yksi tapa tutustua tietojoukkoon on luoda omat visualisoinnit ja raportit alusta alkaen.  Valitse kaaviokuvake ![raporttikuvake](media/sample-tutorial-connect-to-the-samples/power-bi-chart-icon4.png) tietojoukon avaamiseksi raportin muokkaustilassa.
      
        ![täysin uusi raportti](media/sample-tutorial-connect-to-the-samples/power-bi-report-editing.png)
-   * Toinen tapa tutustua tietojoukkoon on suorittaa [Nopeat merkitykselliset tiedot](service-insights.md) -toiminto. Valitse kolme pistettä (...) ja **Hae merkitykselliset tiedot**. Kun merkitykselliset tiedot ovat valmiit, valitse **Näytä merkitykselliset tiedot**.
+   * Toinen tapa tutustua tietojoukkoon on suorittaa [Nopeat merkitykselliset tiedot](consumer/end-user-insights.md) -toiminto. Valitse kolme pistettä (...) ja **Hae merkitykselliset tiedot**. Kun merkitykselliset tiedot ovat valmiit, valitse **Näytä merkitykselliset tiedot**.
      
        ![Merkityksellisiä tietoja -raportti](media/sample-tutorial-connect-to-the-samples/power-bi-insights.png)
 
@@ -130,7 +130,7 @@ Tutustu nyt itsenäisesti tietojoukkoon, suhteisiin ja raporttiin. Jos tarvitset
 
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
-[Power BI:n peruskäsitteet](service-basic-concepts.md)
+[Power BI:n peruskäsitteet](consumer/end-user-basic-concepts.md)
 
 [Power BI -palvelun mallit](sample-datasets.md)
 

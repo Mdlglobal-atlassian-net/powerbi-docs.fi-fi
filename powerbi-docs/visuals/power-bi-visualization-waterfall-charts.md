@@ -2,7 +2,7 @@
 title: Vesiputouskaaviot Power BI:ssä
 description: Vesiputouskaaviot Power BI:ssä
 author: mihart
-manager: kfile
+manager: kvivek
 ms.reviewer: ''
 featuredvideoid: maTzOJSRB3g
 ms.service: powerbi
@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 01/20/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: feb608455add8740d7894fa2cec3c54a8a26944e
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: d1c771ed49a000374c58beb694dda511a8c9a097
+ms.sourcegitcommit: 70192daf070ede3382ac13f6001e0c8b5fb8d934
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44732589"
+ms.lasthandoff: 09/22/2018
+ms.locfileid: "46565816"
 ---
 # <a name="waterfall-charts-in-power-bi"></a>Vesiputouskaaviot Power BI:ssä
 Vesiputouskaavio näyttää juoksevan summan, kun arvoja lisätään tai vähennetään. On hyödyllistä ymmärtää, kuinka positiivisten ja negatiivisten muutosten sarja vaikuttaa alkuarvoon (esimerkiksi nettotuloon).
@@ -74,13 +74,13 @@ Lisätietoja Suodattimet-paneelin käyttämisestä saat ohjeaiheesta [Suodattime
 Sarakkeen korostaminen vesiputouskaaviossa ristiinsuodattaa muut raporttisivulla olevat visualisoinnit... ja päinvastoin. Summasarake ei kuitenkaan käynnistä korostusta tai vastaa ristiinsuodatukseen.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
-[Raportit Power BI:ssä](../service-reports.md)
+[Raportit Power BI:ssä](../consumer/end-user-reports.md)
 
 [Visualisointityypit Power BI:ssä](power-bi-visualization-types-for-reports-and-q-and-a.md)
 
 [Visualisoinnit Power BI -raporteissa](power-bi-report-visualizations.md)
 
-[Power BI:n peruskäsitteet](../service-basic-concepts.md)
+[Power BI:n peruskäsitteet](../consumer/end-user-basic-concepts.md)
 
 Onko sinulla muuta kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
 

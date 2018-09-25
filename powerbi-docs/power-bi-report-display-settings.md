@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 12/24/2017
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: af90ba6bcf85c07d2d046ed21f733ca7c16e3856
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: a22bee33254e447f27f717b78a53fe3a5cc34fb2
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34242127"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46545448"
 ---
 # <a name="page-display-settings-in-a-power-bi-report"></a>Power BI -raportin sivun näyttöasetukset
 Ymmärrämme, miten tärkeää on pitää raportin asettelu pikselilleen oikein. Joskus se voi olla hankalaa, koska sinä ja työtoverisi saatatte katsella raportteja erikokoisilta näytöiltä, joissa on erilaiset kuvasuhteet. 
@@ -39,7 +39,7 @@ Avaa Power BI-palvelussa raportti ja valitse vasemmasta yläkulmasta valikko **N
 
 ![](media/power-bi-report-display-settings/power-bi-change-page-view.png)
 
-Sivun näkymäasetukset ovat käytettävissä sekä [luku- että muokkausnäkymässä](service-reading-view-and-editing-view.md). Muokkausnäkymässä raportin omistaja voi määrittää yksittäisille raportin sivuille sivun näkymäasetukset, ja asetukset tallentuvat yhdessä raportin kanssa. Kun työtoverit avaavat raportin lukunäkymässä, he näkevät raportin sivut omistajan asetusten mukaisesti.  Lukunäkymässä työtoverit voivat muuttaa *joitakin* sivun näkymäasetuksia, mutta muutoksia ei tallenneta raportin sulkemisen yhteydessä.
+Sivun näkymäasetukset ovat käytettävissä sekä [luku- että muokkausnäkymässä](consumer/end-user-reading-view.md). Muokkausnäkymässä raportin omistaja voi määrittää yksittäisille raportin sivuille sivun näkymäasetukset, ja asetukset tallentuvat yhdessä raportin kanssa. Kun työtoverit avaavat raportin lukunäkymässä, he näkevät raportin sivut omistajan asetusten mukaisesti.  Lukunäkymässä työtoverit voivat muuttaa *joitakin* sivun näkymäasetuksia, mutta muutoksia ei tallenneta raportin sulkemisen yhteydessä.
 
 ##    <a name="page-view-settings"></a>Sivun näkymäasetukset
 Ensimmäiset *Sivunäkymä*-asetukset määrittävät raporttisivun näyttämisen suhteessa selainikkunaan.  Vaihtoehdot ovat:
@@ -62,7 +62,7 @@ Seuraavat *Sivunäkymä*-asetukset määrittävät objektien asettelun raporttip
 ## <a name="page-size-settings"></a>Sivun koko ‑asetukset
 ![](media/power-bi-report-display-settings/power-bi--page-size.png)
 
-*Sivun koko* ‑asetukset ovat vain raportin omistajan käytettävissä. Power BI -palvelussa (app.powerbi.com) se tarkoittaa, että pystyy avaamaan raportin [muokkausnäkymässä](service-reading-view-and-editing-view.md). Asetuksilla määritetään raporttipohjan kuvasuhde ja todellinen koko (kuvapisteinä).   
+*Sivun koko* ‑asetukset ovat vain raportin omistajan käytettävissä. Power BI -palvelussa (app.powerbi.com) se tarkoittaa, että pystyy avaamaan raportin [muokkausnäkymässä](consumer/end-user-reading-view.md). Asetuksilla määritetään raporttipohjan kuvasuhde ja todellinen koko (kuvapisteinä).   
 
 * Suhde 4:3
 * Suhde 16:9 (oletusasetus)
@@ -71,11 +71,11 @@ Seuraavat *Sivunäkymä*-asetukset määrittävät objektien asettelun raporttip
 * Mukautettu (korkeus ja leveys kuvapisteinä)
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
-[Opettele käyttämään sivun näkymä- ja kokoasetuksia omissa Power BI ‑raporteissasi](power-bi-change-report-display-settings.md).
+[Opettele käyttämään sivun näkymä- ja kokoasetuksia omissa Power BI ‑raporteissasi](consumer/end-user-report-view.md).
 
-Lue lisää [Power BI -raporteista](service-reports.md)
+Lue lisää [Power BI -raporteista](consumer/end-user-reports.md)
 
-[Power BI:n peruskäsitteet](service-basic-concepts.md)
+[Power BI:n peruskäsitteet](consumer/end-user-basic-concepts.md)
 
 Onko sinulla muuta kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
 

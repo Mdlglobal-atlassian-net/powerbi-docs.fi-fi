@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/26/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 8532fff7bc522a0ad0e59bd17580549bd9e68a23
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: 18c9fe3d50245ff1d0745c0a3ae1e830b3f9be45
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44732716"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46548323"
 ---
 # <a name="card-visualizations"></a>Kortin visualisoinnit
 Joskus yksittäinen luku on tärkein seikka, jota haluat seurata Power BI-raporttinäytöllä tai raportissa, kuten kokonaismyynti, markkinaosuus vuositasolla tai kokonaismahdollisuudet. Tämä visualisointi on nimeltään *Kortti*. Samoin kuin lähes kaikki alkuperäiset Power BI-visualisoinnit, kortit voidaan luoda käyttäen raporttieditoria tai Q&A:ta.
@@ -51,13 +51,13 @@ Näissä ohjeissa käytetään jälleenmyyntianalyysimallia. Jos haluat seurata 
 ## <a name="create-a-card-from-the-qa-question-box"></a>Luo kortti Q&A-kysymysruudusta
 Q&A-kysymysruutu on helpoin tapa tehdä kortti. Q&A-kysymysruutu on käytettävissä Power BI-palvelussa (app.powerbi.com) raporttinäkymästä tai raportista. Seuraavat ohjeet kuvaavat kortin luomista Power BI -palvelun raporttinäkymästä. Jos haluat luoda korin Q&A:n avulla Power BI Desktopissa, [noudata seuraavia ohjeita](https://powerbi.microsoft.com/en-us/blog/power-bi-desktop-december-feature-summary/#QandA) Desktop-raporttien Q&A-esikatseluun.
 
-1. Luo [raporttinäkymä](../service-dashboards.md) ja [hae tietoja](../service-get-data.md). Tässä esimerkissä käytetään [Mahdollisuusanalyysimallia](../sample-opportunity-analysis.md).
+1. Luo [raporttinäkymä](../consumer/end-user-dashboards.md) ja [hae tietoja](../service-get-data.md). Tässä esimerkissä käytetään [Mahdollisuusanalyysimallia](../sample-opportunity-analysis.md).
 
 1. Ala kirjoittaa tiedoista etsittävää asiaa koontinäyttösi ylälaidassa olevaan kysymysruutuun. 
 
    ![](media/power-bi-visualization-card/power-bi-q-and-a-box.png)
 
->**Vihje**: Power BI -palvelun raportissa [muokkausnäkymässä](../service-reading-view-and-editing-view.md), valitaan **Esitä kysymys** yläreunan valikkorivistä. Etsi Power BI Desktop -raportista tilaa ja avaa kysymysruutu kaksoisnapsauttamalla sitä.
+>**Vihje**: Power BI -palvelun raportissa [muokkausnäkymässä](../consumer/end-user-reading-view.md), valitaan **Esitä kysymys** yläreunan valikkorivistä. Etsi Power BI Desktop -raportista tilaa ja avaa kysymysruutu kaksoisnapsauttamalla sitä.
 
 3. Kirjoita kysymysruutuun esimerkiksi ”mahdollisuuksien määrä”.
 
@@ -105,10 +105,10 @@ Käytössäsi on monia vaihtoehtoja otsikoiden, tekstin, värin ja monien muiden
     ![](media/power-bi-visualization-card/power-bi-formatted.png)
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
-[Koontinäyttöruudut Power BI:ssä](../service-dashboard-tiles.md)
+[Koontinäyttöruudut Power BI:ssä](../consumer/end-user-tiles.md)
 
-[Koontinäytöt Power BI:ssä](../service-dashboards.md)
+[Koontinäytöt Power BI:ssä](../consumer/end-user-dashboards.md)
 
-[Power BI:n peruskäsitteet](../service-basic-concepts.md)
+[Power BI:n peruskäsitteet](../consumer/end-user-basic-concepts.md)
 
 Onko sinulla muuta kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)

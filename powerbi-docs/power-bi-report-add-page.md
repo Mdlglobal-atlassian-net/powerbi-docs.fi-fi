@@ -10,17 +10,17 @@ ms.topic: conceptual
 ms.date: 12/20/2017
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 48980bf4ded44f9c383b38606747d14b5a5725c8
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 5a6600fe6c60d5f108b9203508448ef3f1778a7e
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34237426"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46548720"
 ---
 # <a name="add-a-page-to-a-power-bi-report-in-power-bi-service-and-power-bi-desktop"></a>Sivun lisääminen Power BI -raporttiin Power BI -palvelussa ja Power BI Desktopissa
 Raportin sivua ei tarvitse ahtaa täyteen, sillä voit vain lisätä uuden tyhjän sivun. 
 
-Raporttisivujen lisääminen ja monistaminen edellyttää raportin muokkausoikeuksia. Power BI -palvelussa se tarkoittaa raportin avaamista [Muokkausnäkymässä](service-reading-view-and-editing-view.md). 
+Raporttisivujen lisääminen ja monistaminen edellyttää raportin muokkausoikeuksia. Power BI -palvelussa se tarkoittaa raportin avaamista [Muokkausnäkymässä](consumer/end-user-reading-view.md). 
 
 ## <a name="add-a-new-blank-page"></a>Uuden tyhjän sivun lisääminen
 Valitse keltainen plus-kuvake ja kirjoita sivun uusi nimi.  
@@ -35,9 +35,9 @@ Valitse yläosan hallintapalkissa [muokkausnäkymässä](service-interact-with-a
 Uusi sivu luodaan, ja siitä tulee aktiivinen sivu. Voit nimetä sen uudelleen korostamalla nimen välilehdessä kaksoisnapsauttamalla sitä ja kirjoittamalla sitten uuden nimen.  Katso lisätietoja artikkelista [Nimeäminen uudelleen Power BI -palvelussa](service-rename.md).
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
-Lue lisää [Power BI -raporteista](service-reports.md)
+Lue lisää [Power BI -raporteista](consumer/end-user-reports.md)
 
-[Power BI:n peruskäsitteet](service-basic-concepts.md)
+[Power BI:n peruskäsitteet](consumer/end-user-basic-concepts.md)
 
 Onko sinulla muuta kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
 

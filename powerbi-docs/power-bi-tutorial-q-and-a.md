@@ -9,15 +9,15 @@ ms.topic: conceptual
 ms.date: 01/17/2018
 ms.author: mihart
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 320bcd80a6a258879568d323afdae60daacfee6c
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: 2c90db1c08ba1d172acc4d0e82d23409d835879a
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44727934"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46543586"
 ---
 # <a name="tutorial-how-to-use-qa-to-create-visualizations-and-build-reports"></a>Opetusohjelma: Visualisointien ja raporttien luominen Q&A-toiminnon avulla
-[Q&A-yleiskatsauksessa](power-bi-q-and-a.md) opit Power BI:n Q&A-toiminnon perusteet sekä *kuluttajien* (joille jaetaan koontinäyttöjä ja raportteja) ja *luojien* (pohjana olevien raporttien ja tietojoukkojen omistajat) erot. Tässä opetusohjelmassa ensimmäinen osa on tarkoitettu ensisijaisesti kuluttajille, jotka käyttävät Power BI -palvelua. Toinen osa on tarkoitettu henkilöille, jotka luovat raportteja joko Power BI -palvelussa tai Power BI Desktopissa. Muita tähän liittyviä artikkeleita ovat [Q&A ja Power BI:n mobiilisovellus](consumer/mobile/mobile-apps-ios-qna.md) sekä [Q&A ja Power BI Embedded](developer/qanda.md).
+[Q&A-yleiskatsauksessa](consumer/end-user-q-and-a.md) opit Power BI:n Q&A-toiminnon perusteet sekä *kuluttajien* (joille jaetaan koontinäyttöjä ja raportteja) ja *luojien* (pohjana olevien raporttien ja tietojoukkojen omistajat) erot. Tässä opetusohjelmassa ensimmäinen osa on tarkoitettu ensisijaisesti kuluttajille, jotka käyttävät Power BI -palvelua. Toinen osa on tarkoitettu henkilöille, jotka luovat raportteja joko Power BI -palvelussa tai Power BI Desktopissa. Muita tähän liittyviä artikkeleita ovat [Q&A ja Power BI:n mobiilisovellus](consumer/mobile/mobile-apps-ios-qna.md) sekä [Q&A ja Power BI Embedded](developer/qanda.md).
 
 Q&A on vuorovaikutteinen ja jopa hauska käyttää. Lisäksi yhden kysymyksen esittäminen johtaa usein moniin muihin sitä mukaa, kun visualisoinnit paljastavat uusia mielenkiintoisia polkuja. Katso videoesittely visualisointien luonnista Q&A:n avulla, tutustu kyseisiin visualisointeihin ja kiinnittää niitä koontinäyttöihin.
 
@@ -64,7 +64,7 @@ Q&A-toiminnon avulla voit tutkia tietojoukkoa ja lisätä visualisointeja raport
 
 ![](media/power-bi-tutorial-q-and-a/power-bi-view-related.png)
 
-Q&A:n käyttö raporteissa edellyttää raportin ja pohjana olevan tietojoukon muokkausoikeuksia. [Q&A:n yleiskatsausaiheessa](power-bi-q-and-a.md) tätä kutsutaan *luoja*-skenaarioksi. Jos olet raportin *kuluttaja*, eli raportti on jaettu kanssasi, Q&A ei ole käytettävissä.
+Q&A:n käyttö raporteissa edellyttää raportin ja pohjana olevan tietojoukon muokkausoikeuksia. [Q&A:n yleiskatsausaiheessa](consumer/end-user-q-and-a.md) tätä kutsutaan *luoja*-skenaarioksi. Jos olet raportin *kuluttaja*, eli raportti on jaettu kanssasi, Q&A ei ole käytettävissä.
 
 1. Avaa raportti muokkausnäkymässä (Power BI -palvelussa) tai raporttinäkymässä (Power BI Desktopissa) ja valitse **Esitä kysymys** valikkoriviltä.
 
@@ -98,14 +98,14 @@ Q&A:n käyttö raporteissa edellyttää raportin ja pohjana olevan tietojoukon m
 Q&A:n avulla voit saada tietosi puhumaan puolestaan, mutta myös Power BI:n näyttämään vastauksen haluamassasi muodossa. Lisää vain ”nimellä <visualization type>” kysymyksesi loppuun.  Esimerkiksi ”näytä varastotilanne tuotantolaitoksen mukaan karttana” tai ”näytä varasto yhteensä korttina”.  Kokeile itse.
 
 ##  <a name="considerations-and-troubleshooting"></a>Huomioon otettavat seikat ja vianmääritys
-- Jos olet yhdistänyt tietojoukkoon käyttäen reaaliaikaista yhteyttä tai yhdyskäytävää, Q&A on oltava [käytössä tietojoukossa](service-q-and-a-direct-query.md).
+- Jos olet yhdistänyt tietojoukkoon käyttäen reaaliaikaista yhteyttä tai yhdyskäytävää, Q&A on oltava [käytössä tietojoukossa](consumer/end-user-q-and-a-direct-query.md).
 
 - Olet avannut raportin, mutta Q&A-vaihtoehtoa ei näy. Jos käytät Power BI -palvelua, varmista, että avaat raportin muokkausnäkymässä. Jos et voi avata muokkausnäkymässä, sinulla ei ole raportin muokkausoikeuksia etkä pysty käyttämään Q&A-toimintoa kyseisessä raportissa.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
-Takaisin artikkeliin [Q&A Power BI:ssä](power-bi-q-and-a.md)   
+Takaisin artikkeliin [Q&A Power BI:ssä](consumer/end-user-q-and-a.md)   
 [Opetusohjelma: Q&A jälleenmyyntimallin kanssa](power-bi-visualization-introduction-to-q-and-a.md)   
-[Vihjeitä Q&A-kysymysten esittämiseen](service-q-and-a-tips.md)   
+[Vihjeitä Q&A-kysymysten esittämiseen](consumer/end-user-q-and-a-tips.md)   
 [Työkirjan valmisteleminen Q&A-toimintoa varten](service-prepare-data-for-q-and-a.md)  
-[Paikallisen tietojoukon valmisteleminen Q&A-toimintoa varten](service-q-and-a-direct-query.md)
+[Paikallisen tietojoukon valmisteleminen Q&A-toimintoa varten](consumer/end-user-q-and-a-direct-query.md)
 [Kiinnitä ruutu koontinäyttöön Q&A:sta](service-dashboard-pin-tile-from-q-and-a.md)

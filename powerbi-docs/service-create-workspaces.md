@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/06/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 6ae44bb641768ec6518814a0d8699dc41d260e90
-ms.sourcegitcommit: 2356dc8e5488438a43ba7f0ba9a55a2372669b47
+ms.openlocfilehash: b40933e085cf81528a28e9eedb4260351f657323
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39624644"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46548392"
 ---
 # <a name="create-workspaces-with-your-colleagues-in-power-bi"></a>Työtilojen luominen työtovereiden kanssa Power BI:ssä
 
@@ -77,7 +77,7 @@ Nykyisissä työtiloissa voit myös muodostaa yhteyden organisaation sisältöpa
 
 ## <a name="distribute-an-app"></a>Sovelluksen jakaminen
 
-Kun sisältö on valmis, valitset, mitkä raporttinäkymät ja raportit haluat julkaista, ja sitten julkaiset sen *sovelluksena*. Työtoverisi saavat sovelluksesi käyttöönsä eri tavoin. Voit asentaa ne automaattisesti työtovereittesi Power BI -tileille, jos Power BI -järjestelmänvalvojasi antaa sinulle luvan. Muussa tapauksessa he voivat hakea ja asentaa sovelluksesi Microsoft AppSourcesta tai voit lähettää heille suoran linkin. He saavat päivitykset automaattisesti, ja sinä voit määrittää, kuinka usein tiedot päivitetään. Lisätietoja on artikkelissa [Raporttinäkymiä ja raportteja sisältävien sovellusten julkaiseminen Power BI:ssä](service-create-distribute-apps.md).
+Kun sisältö on valmis, valitset, mitkä raporttinäkymät ja raportit haluat julkaista, ja sitten julkaiset sen *sovelluksena*. Työtoverisi saavat sovelluksesi käyttöönsä eri tavoin. Voit asentaa ne automaattisesti työtovereittesi Power BI -tileille, jos Power BI -järjestelmänvalvojasi antaa sinulle luvan. Muussa tapauksessa he voivat hakea ja asentaa sovelluksesi Microsoft AppSourcesta tai voit lähettää heille suoran linkin. He saavat päivitykset automaattisesti, ja sinä voit määrittää, kuinka usein tiedot päivitetään. Lisätietoja on artikkelissa [Raporttinäkymiä ja raportteja sisältävien sovellusten julkaiseminen Power BI:ssä](consumer/end-user-create-apps.md).
 
 ## <a name="power-bi-apps-faq"></a>Power BI -sovellusten usein kysytyt kysymykset
 
@@ -92,7 +92,7 @@ Sovellukset ovat organisaation sisältöpakettien seuraava kehitysaste. Jos sinu
 Voit verrata nykyisiä ja uusia sovellustyötiloja tutustumalla artikkeliin [Miten uudet sovellustyötilat eroavat nykyisistä sovellustyötiloista?](service-create-the-new-workspaces.md#how-are-the-new-app-workspaces-different-from-current-app-workspaces). 
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
-* [Asenna ja käytä sovelluksia Power BI:ssä](service-install-use-apps.md)
-* [Power BI -sovellukset ulkoisille palveluille](service-connect-to-services.md)
+* [Asenna ja käytä sovelluksia Power BI:ssä](consumer/end-user-apps.md)
+* [Power BI -sovellukset ulkoisille palveluille](consumer/end-user-connect-to-services.md)
 - [Uusien työtilojen luominen (esiversio)](service-create-the-new-workspaces.md)
 * Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)

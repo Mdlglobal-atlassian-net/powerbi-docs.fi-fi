@@ -2,7 +2,7 @@
 title: Viisarimittarikaaviot Power BI:ssä
 description: Viisarimittarikaaviot Power BI:ssä
 author: mihart
-manager: kfile
+manager: kvivek
 ms.reviewer: ''
 featuredvideoid: xmja6Epqa
 ms.service: powerbi
@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 01/21/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: fa097c7111e630b4c0c80e71d812be73cc232ea6
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: e090515514897dd4dcbc9962d0dadacae5611ff0
+ms.sourcegitcommit: 70192daf070ede3382ac13f6001e0c8b5fb8d934
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44732719"
+ms.lasthandoff: 09/22/2018
+ms.locfileid: "46565549"
 ---
 # <a name="radial-gauge-charts-in-power-bi"></a>Viisarimittarikaaviot Power BI:ssä
 Viisarimittarikaaviossa on pyöreä kaari, ja siinä on yksi arvo, joka mittaa edistymistä kohti tavoitetta/suorituskyvyn mittaria.  Tavoite tai tavoitearvo esitetään riveittäin (neula). Tämän päämäärän edistyminen esitetään varjostuksella.  Arvo, joka edustaa kyseistä edistymistä, näkyy lihavoituna kaaren sisällä. Kaikki mahdolliset arvot on jaettu tasaisesti kaarta pitkin minimistä (äärimmäisenä vasemmalla oleva arvo) maksimiin (äärimmäisenä oikealla oleva arvo).
@@ -92,7 +92,7 @@ Vaiheessa 2 Power BI käytti Arvo-kenttää asettamana automaattisesti minimin (
 
 ### <a name="step-5-save-your-report"></a>Vaihe 5: Tallenna raporttisi
 1. [Tallenna raportti](../service-report-save.md).
-2. [Mittarikaavion lisääminen koontinäytön ruutuna](../service-dashboard-tiles.md). 
+2. [Mittarikaavion lisääminen koontinäytön ruutuna](../consumer/end-user-tiles.md). 
 
 ## <a name="use-formatting-options-to-manually-set-minimum-maximum-and-target-values"></a>Käytä muotoiluasetuksia, minimi-, maksimi- ja tavoitearvojen asettamiseen
 1. Vedä **Maksimibruttomyynti** kohdasta **Maksimiarvo**.
@@ -117,7 +117,7 @@ Vaiheessa 2 Power BI käytti Arvo-kenttää asettamana automaattisesti minimin (
 
 [Visualisoinnin kiinnittäminen koontinäyttöön](../service-dashboard-pin-tile-from-report.md)
 
-[ Power BI - peruskäsitteet](../service-basic-concepts.md)
+[ Power BI - peruskäsitteet](../consumer/end-user-basic-concepts.md)
 
 Onko sinulla muuta kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
 

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/02/2018
 ms.author: mblythe
 LocalizationGroup: Get started
-ms.openlocfilehash: 1f6c899932390bc4f9818fdcbb499848ca88a8d5
-ms.sourcegitcommit: 9c3a9ec14c111d766ef5703366c316e72f6e588f
+ms.openlocfilehash: d499f3f3635442f8d9ed0fbf167e53d13ec0ae53
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45558512"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46549979"
 ---
 # <a name="signing-up-for-power-bi-as-an-individual"></a>Rekisteröityminen Power BI:hin yksityishenkilönä
 Ota selvää, miten voit rekisteröityä Power BI:n käyttäjäksi ja aloittaa sen käytön henkilökohtaisiin raportti- ja visualisointitarpeisiisi.
@@ -99,7 +99,7 @@ Näyttöön avautuu viesti, jossa pyydetään valitsemaan **Aloita**.
 ## <a name="in-service-power-bi-pro-60-day-trial"></a>Palvelun sisäinen 60 päivän Power BI Pro -kokeiluversio
 Kun olet rekisteröinyt ilmaisen tilisi, voit halutessasi valita Pron kokeiltavaksi 60 päivän ajaksi maksuttomasti. Pystyt käyttämään kaikkia Pro-ominaisuuksia kokeiluversion ajan. Power BI Pro sisältää kaikki samat ominaisuudet kuin Power BI:n ilmainen versio sekä jakamiseen ja yhteiskäyttöön liittyviä lisäominaisuuksia. Jos haluat lisätietoja, katso [Power BI:n hinnoittelu](https://powerbi.microsoft.com/pricing). Kokeile Power BI Pron 60 päivän maksutonta kokeilujaksoa kirjautumalla Power BI:hin. Saat käyttöösi muun muassa nämä Power BI Pro -ominaisuudet:
 
-* [Sovelluksen työtilan luominen](service-create-distribute-apps.md)
+* [Sovelluksen työtilan luominen](consumer/end-user-create-apps.md)
 * [Koontinäytön jakaminen](service-share-dashboards.md)
 
 Kun kokeilet mitä tahansa näistä ominaisuuksista, sinua pyydetään aloittamaan ilmainen kokeilujaksosi. Voit myös halutessasi käyttää sitä napsauttamalla rataskuvaketta ja valitsemalla **Hallitse henkilökohtaista tallennustilaa**. Valitse sitten oikealta **Kokeile Prota ilmaiseksi**.

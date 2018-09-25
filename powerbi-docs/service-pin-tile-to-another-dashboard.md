@@ -10,22 +10,22 @@ ms.topic: conceptual
 ms.date: 03/01/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: ed882a339e1ee7d53302dc33a7cedb1a95709b8b
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 656f32dd28796ec58b7cfcf774248ee30de0085a
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34249110"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46545895"
 ---
 # <a name="pin-a-tile-from-one-dashboard-to-another-dashboard"></a>Yhden koontinäytön ruudun kiinnittäminen toiseen koontinäyttöön
-Yksi tapa lisätä uusi [koontinäytön ruutu](service-dashboard-tiles.md) on kopioida se toisesta koontinäytöstä. Kukin näistä ruuduista on napsautettaessa linkki takaisin sinne, jossa se luotiin, joko Q&A:lle tai raporttiin. 
+Yksi tapa lisätä uusi [koontinäytön ruutu](consumer/end-user-tiles.md) on kopioida se toisesta koontinäytöstä. Kukin näistä ruuduista on napsautettaessa linkki takaisin sinne, jossa se luotiin, joko Q&A:lle tai raporttiin. 
 
 > [!NOTE]
 > Et voi kiinnittää ruutuja jaetulta koontinäytöltä.
 
 ## <a name="pin-a-tile-to-another-dashboard"></a>Ruudun kiinnittäminen toiseen koontinäyttöön
 1. [Nouda tiedot](service-get-data.md). Tässä esimerkissä käytetään [IT Spend -analyysimallia](sample-it-spend.md).
-2. Avaa [koontinäyttö](service-dashboards.md).
+2. Avaa [koontinäyttö](consumer/end-user-dashboards.md).
 3. Valitse sen ruudun päältä, jotka haluat kiinnittää, kolme pistettä (...) ja valitse **Kiinnitä ruutu**.  
    
    ![kolmen pisteen valikko](media/service-pin-tile-to-another-dashboard/power-bi-pin-another-dash.png)
@@ -42,7 +42,7 @@ Yksi tapa lisätä uusi [koontinäytön ruutu](service-dashboard-tiles.md) on ko
 6. Valitse **Siirry koontinäyttöön**, jotta näet kiinnitetyn ruudun. Täällä kiinnitetty visualisointi voidaan [nimetä uudelleen, linkittää ja siirtää ja sen kokoa voidaan muuttaa](service-dashboard-edit-tile.md).
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
-[Ruudut Power BI:ssa](service-dashboard-tiles.md)  
-[Koontinäytöt Power BI:ssä](service-dashboards.md)  
+[Ruudut Power BI:ssa](consumer/end-user-tiles.md)  
+[Koontinäytöt Power BI:ssä](consumer/end-user-dashboards.md)  
 Onko sinulla muuta kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
 

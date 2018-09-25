@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 03/21/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: bb1ebf08c7ffb7a18cc0dd273c767c082f89f1aa
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: d3afa24c68db5ffcaec1dddae09b0b9719bf2bb5
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44732656"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46543539"
 ---
 # <a name="kpi-visuals"></a>Suorituskykyilmaisimien visualisoinnit
 Suorituskykyilmaisin (KPI) on visuaalinen vihje, joka kertoo edistymisen määrän kohti mitattavissa olevaa tavoitetta. Katso lisätietoja suorituskykyilmaisimista [Microsoft Developer Networkista](https://msdn.microsoft.com/library/hh272050).
@@ -42,7 +42,7 @@ Tai kello näyttää, miten voit luoda yksittäisten arvojen visualisoinnit: mit
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/xmja6EpqaO0?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
 
-1. Avaa raportti [muokkausnäkymässä](../service-reading-view-and-editing-view.md) ja [lisää uusi sivu](../power-bi-report-add-page.md).    
+1. Avaa raportti [muokkausnäkymässä](../consumer/end-user-reading-view.md) ja [lisää uusi sivu](../power-bi-report-add-page.md).    
 2. Valitse **Myynti > Yksikköjen kokonaismäärä tänä vuonna**.  Tämä on ilmaisin.
 3. Lisää **Kellonaika > Kuukausi**.  Tämä edustaa trendiä.
 4. TÄRKEÄÄ: Lajittele kaavio **kuukauden** mukaan. Kun muunnat visualisoinnin suorituskykyilmaisimeksi, lajitteluvaihtoehtoa ei ole.

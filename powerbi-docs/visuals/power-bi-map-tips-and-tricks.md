@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 06/22/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 487e53bae0fe872771b5ecbbe0458cd09dc48a4c
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: d1152ae1e4d386882c9165e6545a44c7f3c47e46
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44736412"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46548507"
 ---
 # <a name="tips-and-tricks-for-power-bi-map-visualizations"></a>Power BI:n kartan visualisointeihin liittyviä vinkkejä
 Power BI:n voi integroida Bing Mapsin kanssa, jolloin karttoja voidaan luoda oletusarvoisten karttakoordinaattien avulla (prosessia kutsutaan geokoodaukseksi). Power BI ja Bing Maps käyttävät algoritmeja oikean sijainnin määrittämiseen, mutta joskus sijainnin määritys perustuu parhaaseen arvaukseen. Jos Power BI ei pysty luomaan kartan visualisointia itse, se käyttää apuna Bing Mapsia. 
@@ -89,7 +89,7 @@ Kun tietoihin poraudutaan maantieteellisten hierarkioiden avulla, on tärkeää 
 * Toinen toiminto, ![poraudu karttojen avulla](./media/power-bi-map-tips-and-tricks/power-bi-drill-down3.png) , muistuttaa Poraudu alaspäin -toimintoa, mutta sinun ei tarvitse napsauttaa karttaa.  Toiminto laajentaa alaspäin hierarkian seuraavalle tasolle muistaen nykyisen tason kontekstin. Jos esimerkiksi tarkastelet maita ja valitset tämän kuvakkeen, siirryt hierarkiassa alaspäin seuraavalle tasolle eli osavaltioihin. Geokoodausta varten Power BI lähettää Bing Mapsiin tietoja jokaisesta osavaltiosta ja osavaltiota vastaavasta maasta, jotta geokoodaus on mahdollisimman tarkka. Useimmissa kartoissa käytät joko tätä toimintoa tai oikeassa reunassa olevaa Poraudu alaspäin -toimintoa, joten voit lähettää Bingiin mahdollisimman paljon tietoja tarkkojen sijaintitietojen saamiseksi. 
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
-[Power BI -visualisointiin porautuminen](../power-bi-visualization-drill-down.md)
+[Power BI -visualisointiin porautuminen](../consumer/end-user-drill.md)
 
 [Power Bi -visualisoinnit](power-bi-report-visualizations.md)
 

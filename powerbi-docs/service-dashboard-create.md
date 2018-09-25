@@ -10,20 +10,20 @@ ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 03/02/2018
 ms.author: mihart
-ms.openlocfilehash: a528c4a641dbdecce7d33f29e7afbe6118ee34b5
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: 462e9b1d991690846c57a225552b271fca19499c
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44726474"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46544391"
 ---
 # <a name="create-a-power-bi-dashboard-from-a-report"></a>Power BI -koontinäytön luominen raportista
-Olet lukenut [Koontinäytöt Power BI:ssä](service-dashboards.md) ja haluat nyt luoda omasi. Koontinäyttö voidaan luoda monin eri tavoin, esimerkiksi uusi alusta alkaen, raportista, tietojoukosta tai kopioimalla aiemmin luotu koontinäyttö.  
+Olet lukenut [Koontinäytöt Power BI:ssä](consumer/end-user-dashboards.md) ja haluat nyt luoda omasi. Koontinäyttö voidaan luoda monin eri tavoin, esimerkiksi uusi alusta alkaen, raportista, tietojoukosta tai kopioimalla aiemmin luotu koontinäyttö.  
 
 Tämä kaikki voi tuntua vaikealta, kun olet vasta pääsemässä alkuun, joten aloitetaan luomalla nopea ja helppo koontinäyttö kiinnittämällä visualisointeja raportista, joka on jo muodostettu. Kun olet päässyt tämän pikaoppaan loppuun, sinulla on hyvä käsitys koontinäyttöjen ja raporttien välisestä suhteesta, Muokkausnäkymän avaamisesta raporttieditorissa, ruutujen kiinnittämisestä sekä koontinäytön ja raportin välillä siirtymisestä. Pääset edistyneempiin aihealueisiin käyttämällä linkkejä vasemmalla olevasta Sisältöluettelosta tai **Seuraavat vaiheet** -kohdasta artikkelin lopussa.
 
 ## <a name="who-can-create-a-dashboard"></a>Kuka voi luoda koontinäytön?
-Koontinäytön luominen on **luoja**-toiminto ja edellyttää raportin muokkausoikeuksia. Muokkausoikeudet ovat raportin luojien käytettävissä ja niiden työtovereiden käytössä, joille luoja myöntää käyttöoikeudet. Esimerkiksi jos David luo raportin työtilaABC:ssä ja lisää sitten sinut työtilan jäseneksi, niin sinulla ja Davidilla on muokkausoikeudet. Jos taas raportti on jaettu kanssasi suoraan tai osana [Power BI -sovellusta](service-install-use-apps.md) (olet raportin **kuluttaja**), et voi kiinnittää ruutuja koontinäyttöön.
+Koontinäytön luominen on **luoja**-toiminto ja edellyttää raportin muokkausoikeuksia. Muokkausoikeudet ovat raportin luojien käytettävissä ja niiden työtovereiden käytössä, joille luoja myöntää käyttöoikeudet. Esimerkiksi jos David luo raportin työtilaABC:ssä ja lisää sitten sinut työtilan jäseneksi, niin sinulla ja Davidilla on muokkausoikeudet. Jos taas raportti on jaettu kanssasi suoraan tai osana [Power BI -sovellusta](consumer/end-user-apps.md) (olet raportin **kuluttaja**), et voi kiinnittää ruutuja koontinäyttöön.
 
 > **HUOMAUTUS**: Koontinäytöt ovat Power BI -palvelun ominaisuus, eivät Power BI Desktopin. Koontinäyttöjä ei voi luoda Power BI -mobiilisovelluksessa, mutta niitä voidaan [tarkastella ja jakaa](consumer/mobile/mobile-apps-view-dashboard.md).
 >
@@ -65,7 +65,7 @@ Tuomme yhden Power BI -mallitietojoukon ja käytämme sitä uuden koontinäytön
 1. Valitse samassa työtilassa **Raportit**-välilehti. Äskettäin tuotu raportti näkyy keltaisella tähdellä merkittynä. Avaa raportti valitsemalla sen nimi.
 
     ![raportit-välilehti](media/service-dashboard-create/power-bi-reports.png)
-2. Raportti avautuu [Lukunäkymässä](service-reading-view-and-editing-view.md). Huomaa, että sen alareunassa on kaksi välilehteä: Alennusanalyysi ja Kulujen yleiskatsaus. Kukin välilehti edustaa yhtä raportin sivua.
+2. Raportti avautuu [Lukunäkymässä](consumer/end-user-reading-view.md). Huomaa, että sen alareunassa on kaksi välilehteä: Alennusanalyysi ja Kulujen yleiskatsaus. Kukin välilehti edustaa yhtä raportin sivua.
     Avaa raportti Muokkausnäkymässä valitsemalla **Muokkaa raporttia**.
 
     ![raportti Lukunäkymässä](media/service-dashboard-create/power-bi-reading-view.png)
@@ -108,9 +108,9 @@ Onnittelut ensimmäisen koontinäytön luomisen johdosta! Nyt, kun sinulla on ko
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 * [Ruutujen koon muuttaminen ja siirtäminen](service-dashboard-edit-tile.md)
-* [Kaikki koontinäyttöruuduista](service-dashboard-tiles.md)
-* [Koontinäytön jakaminen luomalla sovellus](service-create-distribute-apps.md)
-* [Power BI:n peruskäsitteet](service-basic-concepts.md)
+* [Kaikki koontinäyttöruuduista](consumer/end-user-tiles.md)
+* [Koontinäytön jakaminen luomalla sovellus](consumer/end-user-create-apps.md)
+* [Power BI:n peruskäsitteet](consumer/end-user-basic-concepts.md)
 * [Vinkkejä laadukkaiden koontinäyttöjen suunnitteluun](service-dashboards-design-tips.md)
 
 Ilmenikö muuta kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)

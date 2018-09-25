@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 06/28/2017
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 27b3f18143fe5f354fb9a6965b1d3a58ba33f556
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: a9f394cdfefabf1392b0219079d95a35d38b1754
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44726911"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46546115"
 ---
 # <a name="power-bi-admin-portal"></a>Power BI -hallintaportaali
 
@@ -161,7 +161,7 @@ Käyttäjät näkevät käyttöliittymässä eri asetuksia sen mukaan, mikä hei
 
 ### <a name="export-data"></a>Tietojen vieminen
 
-Organisaation käyttäjät voivat viedä tietoja ruudusta tai visualisoinnista. [Lue lisää](power-bi-visualization-export-data.md)
+Organisaation käyttäjät voivat viedä tietoja ruudusta tai visualisoinnista. [Lue lisää](consumer/end-user-export-data.md)
 
 ![](media/service-admin-portal/powerbi-admin-export-data.png)
 
@@ -170,13 +170,13 @@ Organisaation käyttäjät voivat viedä tietoja ruudusta tai visualisoinnista. 
 
 ### <a name="export-reports-as-powerpoint-presentations"></a>Vie raportit PowerPoint-esityksinä
 
-Organisaation käyttäjät voivat viedä Power BI -raportteja PowerPoint-tiedostoina. [Lue lisätietoja.](service-publish-to-powerpoint.md)
+Organisaation käyttäjät voivat viedä Power BI -raportteja PowerPoint-tiedostoina. [Lue lisätietoja.](consumer/end-user-powerpoint.md)
 
 ![](media/service-admin-portal/powerbi-admin-powerpoint.png)
 
 ### <a name="print-dashboards-and-reports"></a>Koontinäyttöjen ja raporttien tulostaminen
 
-Organisaation käyttäjät voivat tulostaa koontinäyttöjä ja raportteja. [Lue lisätietoja.](service-print.md)
+Organisaation käyttäjät voivat tulostaa koontinäyttöjä ja raportteja. [Lue lisätietoja.](consumer/end-user-print.md)
 
 ![](media/service-admin-portal/powerbi-admin-print-dashboard.png)
 
@@ -205,7 +205,7 @@ Voit vaihtaa asetuksen tilaksi **Käytössä** ja määrittää sitten, ketkä v
 > [!NOTE]
 > Muista, että vuokraaja-asetusten käyttöönotossa voi kestää jonkin aikaa.
 
-Täältä voit lukea lisätietoja [sovellusten lähettämisestä](service-create-distribute-apps.md#how-to-install-an-app-automatically-for-end-users).
+Täältä voit lukea lisätietoja [sovellusten lähettämisestä](consumer/end-user-create-apps.md#how-to-install-an-app-automatically-for-end-users).
 
 ## <a name="integration-settings"></a>Integrointiasetukset
 

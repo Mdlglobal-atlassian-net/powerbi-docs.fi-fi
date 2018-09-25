@@ -10,17 +10,17 @@ ms.topic: conceptual
 ms.date: 03/24/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: a85733e8450c9e1d3574afb71ace64fa2622fe0c
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: f0337b26989b3d42e86339c4afc087579c2c3529
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44725623"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46548783"
 ---
 # <a name="create-a-new-report-from-an-existing-report-copy-a-report"></a>Uuden raportin luominen olemassa olevasta raportista (raportin kopioiminen)
 Sinulla saattaa olla raportti, joka on jo yhteydessä tietojoukkoon ja joka käyttää visualisointeja, joita haluat käyttää uudelleen tai muokata.  Voit kopioida kyseisen raportin uuden raportin pohjaksi.  Toimi seuraavasti:
 
-1. [Avaa raportti](service-report-open.md).
+1. [Avaa raportti](consumer/end-user-report-open.md).
 2. Valitse **Tiedosto**-valikosta **Tallenna nimellä**.
    
    ![](media/power-bi-report-copy/powerbi-save-as.png)
@@ -39,6 +39,6 @@ Sinulla saattaa olla raportti, joka on jo yhteydessä tietojoukkoon ja joka käy
 ## <a name="next-steps"></a>Seuraavat vaiheet:
 [Luo uusia visualisointeja](visuals/power-bi-report-add-visualizations-ii.md)
 
-[Poista visualisointeja](service-delete.md), joita et tarvitse
+[Poista visualisointeja](consumer/end-user-delete.md), joita et tarvitse
 
 [Luo raportti käyttämällä Power BI Desktopia](desktop-report-view.md)

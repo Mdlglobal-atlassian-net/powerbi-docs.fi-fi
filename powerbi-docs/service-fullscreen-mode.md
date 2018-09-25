@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 09/04/2018
 ms.author: mihart
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 58a739c0d566030d2b09094264da14f6afd6d6fc
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: 83b9d87bf494c3b9e974ee9dfdfa97beb68a6579
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44727578"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46545793"
 ---
 # <a name="full-screen-mode-in-power-bi-service"></a>Koko näytön tila Power BI -palvelussa
 ## <a name="what-is-full-screen-mode"></a>Mikä on koko näytön tila?
@@ -24,7 +24,7 @@ ms.locfileid: "44727578"
 
 Näytä Power BI -sisältösi (koontinäytöt, raporttisivut, ruudut ja visualisoinnit) ilman valikoiden ja siirtymispalkkien aiheuttamia häiriöitä.  Saat sisältösi aidon, koko näytön näkymän yhdellä silmäyksellä keskeytyksettä. Tätä kutsutaan joskus myös TV-tilaksi. Koko näytön tilassa käytettävissä olevat toiminnot vaihtelevat sisällön mukaan. 
 
-Jos käytät Power BI mobiilisovellusta, [koko näytön tila on käytettävissä Windows 10 -mobiilisovelluksia varten](consumer/mobile/mobile-windows-10-app-presentation-mode.md). Power BI Desktopissa ei ole koko näytön tilaa raporteille tai visualisoinneille, mutta siinä on Sovita sivulle -toiminto [Suhteet-näkymää ja Raportti-näkymää](desktop-report-view.md) varten ja [kohdistustila raportin visualisointeja varten](service-focus-mode.md).
+Jos käytät Power BI mobiilisovellusta, [koko näytön tila on käytettävissä Windows 10 -mobiilisovelluksia varten](consumer/mobile/mobile-windows-10-app-presentation-mode.md). Power BI Desktopissa ei ole koko näytön tilaa raporteille tai visualisoinneille, mutta siinä on Sovita sivulle -toiminto [Suhteet-näkymää ja Raportti-näkymää](desktop-report-view.md) varten ja [kohdistustila raportin visualisointeja varten](consumer/end-user-focus.md).
 
  
 
@@ -35,7 +35,7 @@ Koko näytön tilan käyttötapoja:
 * tarkasteleminen pienessä näytössä
 * tarkasteleminen lukitussa tilassa – voit koskettaa näyttöä tai viedä hiiren ruutujen päälle ilman että taustalla oleva raportti tai koontinäyttö avautuu
 
-> **HUOMAUTUS**: koko näytön tila ei ole sama kuin [kohdistustila (ponnahdusikkunatila)](service-focus-mode.md).
+> **HUOMAUTUS**: koko näytön tila ei ole sama kuin [kohdistustila (ponnahdusikkunatila)](consumer/end-user-focus.md).
 > 
 > 
 
@@ -78,7 +78,7 @@ Katso, miten Amanda avaa ja liikkuu koontinäytössään koko näytön tilassa j
       ![](media/service-fullscreen-mode/exit-fullscreen-new.png)
 
 ## <a name="visualizations-and-dashboard-tiles-in-full-screen-mode"></a>Visualisoinnit ja koontinäyttöruudut koko näytön tilassa
-1. Jos haluat nähdä koontinäytön ruudut ja raportin visualisoinnit koko näytön tilassa, sinun on aloitettava siten, että kyseinen ruutu tai visualisointi on jo [kohdistustilassa](service-focus-mode.md). 
+1. Jos haluat nähdä koontinäytön ruudut ja raportin visualisoinnit koko näytön tilassa, sinun on aloitettava siten, että kyseinen ruutu tai visualisointi on jo [kohdistustilassa](consumer/end-user-focus.md). 
    
     ![](media/service-fullscreen-mode/power-bi-focus3.png)
 2. Valitse sitten Koko näyttö -kuvake ![koko näyttö -kuvake](media/service-fullscreen-mode/power-bi-full-screen-icon.png)  kyseisessä ruudussa tai visualisoinnissa. Ruutu tai visualisointi näkyy koko näytön kokoisena ilman valikoita tai siirtymispalkkeja.
@@ -86,8 +86,8 @@ Katso, miten Amanda avaa ja liikkuu koontinäytössään koko näytön tilassa j
     ![](media/service-fullscreen-mode/power-bi-fullscreen.png)
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
-[Koontinäytöt Power BI:ssä](service-dashboards.md)  
-[Kohdistustila](service-focus-mode.md)    
+[Koontinäytöt Power BI:ssä](consumer/end-user-dashboards.md)  
+[Kohdistustila](consumer/end-user-focus.md)    
 
 Onko sinulla muuta kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
 

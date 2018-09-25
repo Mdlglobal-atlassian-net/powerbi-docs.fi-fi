@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 7b1b55475e2ad19c869ba92cdb9621caa0fc3538
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: 22d32315040352e013ae8331e9433a9e60e97f5c
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44726658"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46545747"
 ---
 # <a name="how-should-i-collaborate-and-share-in-power-bi"></a>Miten voin tehdä yhteistyötä ja jakaa Power BI:ssä?
 
@@ -57,7 +57,7 @@ Oletetaan, että haluat jakaa raporttinäkymän laajalle yleisölle. Sinä ja ty
 
 ![Sovelluskuvakkeen julkaiseminen](media/service-how-to-collaborate-distribute-dashboards-reports/power-bi-app-publish-600.png)
 
-Sovelluksia on helppo löytää ja asentaa Power BI -palvelussa ([https://powerbi.com](https://powerbi.com)). Voit lähettää yrityskäyttäjille suoran linkin sovellukseen tai he voivat hakea sen AppSourcesta. Jos Power BI -järjestelmänvalvojasi antaa sinulle oikeudet, voit asentaa sovelluksen automaattisesti työtovereidesi Power BI -tileille. Lue lisää [sovellusten julkaisemisesta](service-create-distribute-apps.md). 
+Sovelluksia on helppo löytää ja asentaa Power BI -palvelussa ([https://powerbi.com](https://powerbi.com)). Voit lähettää yrityskäyttäjille suoran linkin sovellukseen tai he voivat hakea sen AppSourcesta. Jos Power BI -järjestelmänvalvojasi antaa sinulle oikeudet, voit asentaa sovelluksen automaattisesti työtovereidesi Power BI -tileille. Lue lisää [sovellusten julkaisemisesta](consumer/end-user-create-apps.md). 
 
 Sovelluksen asentamisen jälkeen he voivat tarkastella sitä selaimessa tai mobiililaitteessa.
 
@@ -88,7 +88,7 @@ Lue lisää [ruutujen, raporttien ja visualisointien jakamisesta ja merkintöjen
 Voit myös [jakaa tilannevedoksen ruudusta](consumer/mobile/mobile-windows-10-phone-app-get-started.md) Windows 10 -laitteiden Power BI -sovelluksesta.
 
 ## <a name="print-or-save-as-pdf-or-other-static-file"></a>Tulostaminen tai tallentaminen PDF-tiedostona tai muuna staattisena tiedostona
-Voit tulostaa tai tallentaa PDF-tiedostona (tai muuna staattisena tiedostomuotona) koko raporttinäkymän, raporttinäkymän ruudun, raporttisivun tai visualisoinnin Power BI -palvelusta. Raportteja voi tulostaa vain yhden sivun kerrallaan – et voi tulostaa koko raportin kerralla. Lue lisää [tulostamisesta tai staattisena tiedostona tallentamisesta](service-print.md).
+Voit tulostaa tai tallentaa PDF-tiedostona (tai muuna staattisena tiedostomuotona) koko raporttinäkymän, raporttinäkymän ruudun, raporttisivun tai visualisoinnin Power BI -palvelusta. Raportteja voi tulostaa vain yhden sivun kerrallaan – et voi tulostaa koko raportin kerralla. Lue lisää [tulostamisesta tai staattisena tiedostona tallentamisesta](consumer/end-user-print.md).
 
 ## <a name="publish-to-the-web"></a>Julkaiseminen verkossa
 
@@ -99,7 +99,7 @@ Voit julkaista Power BI -raportteja koko Internetissä upottamalla vuorovaikutte
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 * [Raporttinäkymien jakaminen työtovereiden ja muiden kanssa](service-share-dashboards.md)
-* [Sovelluksen luominen ja julkaiseminen Power BI:ssä](service-create-distribute-apps.md)
+* [Sovelluksen luominen ja julkaiseminen Power BI:ssä](consumer/end-user-create-apps.md)
 * Haluatko antaa palautetta? Anna ehdotuksia siirtymällä [Power BI -yhteisön sivustolle](https://community.powerbi.com/).
 * Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/).
 

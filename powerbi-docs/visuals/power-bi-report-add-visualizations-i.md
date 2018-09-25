@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 08/23/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 8095db86b8954b3f91a83f2e83c0108d1676cf76
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: df53cf238a52502cecb4d1f77482b7b1a09c6b7a
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44736382"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46545264"
 ---
 # <a name="part-i-add-visualizations-to-a-power-bi-report"></a>Visualisointien lisääminen Power BI -raporttiin, osa 1
 Tässä artikkelissa annetaan lyhyt esittely visualisointien lisäämisestä raporttiin joko Power BI -palvelulla tai Power BI Desktopilla.  Katso lisätietoja edistyneemmästä sisällöstä [osasta II](power-bi-report-add-visualizations-ii.md). Katso kuinka Amanda esittelee joitakin eri tapoja, joilla raportille voidaan luoda visualisointeja ja kuinka niitä voidaan muokata ja muotoilla. Voit sitten kokeilla itse luomalla oman raportin [Myynti- ja markkinointimallista](../sample-datasets.md).
@@ -25,7 +25,7 @@ Tässä artikkelissa annetaan lyhyt esittely visualisointien lisäämisestä rap
 
 
 ## <a name="open-a-report-and-add-a-new-page"></a>Raportin avaaminen ja uuden sivun lisääminen
-1. Avaa [raportti muokkausnäkymässä](../service-reading-view-and-editing-view.md). Tässä opetusohjelmassa käytetään [myynti- ja markkinointimallia](../sample-datasets.md).
+1. Avaa [raportti muokkausnäkymässä](../consumer/end-user-reading-view.md). Tässä opetusohjelmassa käytetään [myynti- ja markkinointimallia](../sample-datasets.md).
 2. Jos Kentät-ruutu ei ole näkyvissä, valitse nuolikuvake sen avaamiseksi. 
    
    ![](media/power-bi-report-add-visualizations-i/pbi_nancy_fieldsfiltersarrow.png)
@@ -59,7 +59,7 @@ Tässä artikkelissa annetaan lyhyt esittely visualisointien lisäämisestä rap
 ## <a name="next-steps"></a>Seuraavat vaiheet
  Jatkaa [Osaan 2: Visualisointien lisääminen Power BI -raporttiin](power-bi-report-add-visualizations-ii.md)
    
-   Toimia raportin [visualisointien kanssa](../service-reading-view-and-editing-view.md).
+   Toimia raportin [visualisointien kanssa](../consumer/end-user-reading-view.md).
    
    [Luoda lisää visualisointeja](power-bi-report-visualizations.md).
    

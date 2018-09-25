@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 06/22/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: a0216b5659548af0b69cdb1b94df887eec0bd4e0
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: 83826e812f9173db522c929ae80c31fc7134e5bd
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44736452"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46549841"
 ---
 # <a name="filled-maps-choropleths-in-power-bi"></a>Täytetyt kartat (koropleettikartat) Power BI:ssä
 Täytetyssä kartassa käytetään sävytystä tai kuvioita esittämään, miten arvot vaihtelevat suhteellisesti maantieteellisellä alueella.  Suhteelliset erot hahmottuvat nopeasti, kun sävytys vaihtelee vaaleammasta (tarkoittaen harvinaisempaa/pienempää) tummempaan (yleisempi/enemmän).    
@@ -109,7 +109,7 @@ Jos sinulla ei käytettävissäsi leveys- ja pituusastetietoja [päivitä tietoj
 Lisäohjeita karttavisualisointien tekemiseen saat ohjeaiheesta [Vihjeitä ja vinkkejä karttavisualisointeja varten](power-bi-map-tips-and-tricks.md).
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
-[Täytetyn kartan lisääminen koontinäytön ruuduksi (visualisoinnin kiinnittäminen)](../service-dashboard-tiles.md)    
+[Täytetyn kartan lisääminen koontinäytön ruuduksi (visualisoinnin kiinnittäminen)](../consumer/end-user-tiles.md)    
  [Visualisoinnin lisääminen raporttiin](power-bi-report-add-visualizations-i.md)  
  [Visualisointityypit Power BI:ssä](power-bi-visualization-types-for-reports-and-q-and-a.md)    
  [Käytettävän visualisoinnin tyypin vaihtaminen](power-bi-report-change-visualization-type.md)      

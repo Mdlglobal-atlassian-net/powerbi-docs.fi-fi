@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/02/2017
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: eed9b668cccf3bc8252d70f1dee94675063a8844
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: fbf49a9ddbec5f087a28e51144c782e2f1739db0
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34247753"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46546940"
 ---
 # <a name="optimize-your-data-for-power-bi-quick-insights"></a>Tietojen optimointi Power BI:n nopeille merkityksellisille tiedoille
 Haluatko parantaa nopeiden merkityksellisten tietojen tuloksia?  Jos olet tietojoukon omistaja, kokeile seuraavia vinkkejä:
@@ -26,7 +26,7 @@ Haluatko parantaa nopeiden merkityksellisten tietojen tuloksia?  Jos olet tietoj
 * Saatko virheilmoituksen, jonka mukaan tiesi eivät ole tilastollisesti merkitseviä?  Näin voi käydä malleille, jotka ovat hyvin yksinkertaisia, joissa ei ole paljon tietoja tai joissa ei ole numeerisia tai päivämääräsarakkeita. Jos haluat luoda merkityksellisiä tietoja, tietojoukossa on oltava vähintään yksi dimensio ja yksi mitattava arvo.
 
 ### <a name="next-steps"></a>Seuraavat vaiheet
-[Power BI:n nopeat merkitykselliset tiedot](service-insights.md)
+[Power BI:n nopeat merkitykselliset tiedot](consumer/end-user-insights.md)
 
 Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
 

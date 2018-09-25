@@ -9,12 +9,12 @@ ms.component: powerbi-mobile
 ms.topic: conceptual
 ms.date: 06/28/2018
 ms.author: maggies
-ms.openlocfilehash: 6ec1c7d1e3417336e24e324ff12c3e10a84a8525
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: 99d8faa7ba3e0e92f97e84bd52454ad44a472e71
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44732756"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46547288"
 ---
 # <a name="get-started-with-the-power-bi-mobile-app-for-windows-10"></a>Windows 10:n Power BI -mobiilisovelluksen käytön aloittaminen
 Windows 10:n Power BI -mobiilisovellus tuo Power BI:n tablettiin tai puhelimeen ja sen myötä ajan tasalla olevan, kosketuskäyttöisen mobiiliyhteyden yritystietoihisi. Tarkastele ja käytä yrityksesi koontinäyttöjä missä tahansa kätevästi [Windowsin Aloitusnäytöllä](mobile-pin-dashboard-start-screen-windows-10-phone-app.md).
@@ -108,7 +108,7 @@ Lue lisää [suosikeista Power BI -mobiilisovelluksissa](mobile-apps-favorites.m
 Seuraavassa on joitakin muita asioita, voit tehdä Power BI -sovelluksessa Windows 10 -laitteissa, joissa on koontinäyttöjä ja raportteja Power BI:ssa sekä Reporting Services -mobiiliraportteja ja suorituskykyilmaisimia Reporting Services -verkkoportaalissa
 
 ### <a name="power-bi-dashboards-and-reports"></a>Power BI -koontinäytöt ja -raportit
-* Tarkastele [omia sovelluksia](../../service-install-use-apps.md).
+* Tarkastele [omia sovelluksia](../end-user-apps.md).
 * Tarkastele omia [koontinäyttöjä](mobile-apps-view-dashboard.md).
 * [Kiinnitä Power BI -ruutuja ja koontinäyttöjä](mobile-pin-dashboard-start-screen-windows-10-phone-app.md) laitteesi Aloitusnäytölle live-ruutuina.
 * [Jaa ruutuja](mobile-windows-10-phone-app-get-started.md).

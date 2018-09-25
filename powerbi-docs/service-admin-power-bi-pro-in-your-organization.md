@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/22/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: da330e75642e243637f792cde706b6d34ce70062
-ms.sourcegitcommit: df7a58dae14ef311516c9b3098f87742786f0479
+ms.openlocfilehash: 8cf0a4de37f1bdc6e90a05799caebd2ce0e77046
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39280727"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46548300"
 ---
 # <a name="power-bi-pro-in-your-organization"></a>Power BI Pro organisaatiossasi
 
@@ -35,7 +35,7 @@ Näiden ominaisuuksien käyttö edellyttää Power BI Pro -käyttöoikeutta:
 
 Kun olet rekisteröinyt ilmaisen tilisi, voit halutessasi valita Pron kokeiltavaksi 60 päivän ajaksi maksuttomasti. Pystyt käyttämään kaikkia Pro-ominaisuuksia kokeiluversion ajan. Power BI Pro sisältää kaikki samat ominaisuudet kuin Power BI:n ilmainen versio sekä jakamiseen ja yhteiskäyttöön liittyviä lisäominaisuuksia. Jos haluat lisätietoja, katso [Power BI:n hinnoittelu](https://powerbi.microsoft.com/en-us/pricing/). Kokeile Power BI Pron 60 päivän maksutonta kokeilujaksoa kirjautumalla Power BI:hin. Saat käyttöösi muun muassa nämä Power BI Pro -ominaisuudet:
 
-* [Luo työtila](service-create-distribute-apps.md)
+* [Luo työtila](consumer/end-user-create-apps.md)
 * [Jaa koontinäyttö](service-share-dashboards.md)
 
 Kun kokeilet mitä tahansa näistä ominaisuuksista, sinua pyydetään aloittamaan ilmainen kokeilujaksosi. Voit myös halutessasi käyttää sitä napsauttamalla rataskuvaketta ja valitsemalla Hallitse henkilökohtaista tallennustilaa. Valitse sitten oikealta Kokeile Prota ilmaiseksi.

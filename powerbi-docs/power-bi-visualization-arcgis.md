@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 02/28/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 250ccba882a045417b2ae424cac81b6561cb2a41
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: 18e33fa4767eb0d9e457589ea3fa3b61721dce51
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44728245"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46548024"
 ---
 # <a name="arcgis-maps-in-power-bi-service-and-power-bi-desktop-by-esri"></a>Esri ArcGIS -kartat Power BI -palvelussa ja Power BI Desktopissa
 Tämä opetusohjelma on kirjoitettu ArcGIS-karttaa luovan henkilön näkökulmasta. Kun tekijä jakaa ArcGIS-kartan työtoverille, kyseinen työtoveri voi tarkastella ja käsitellä karttaa mutta ei tallentaa muutoksia. Lisätietoja ArcGIS-kartan tarkastelemisesta on ohjeartikkelissa [ArcGIS-karttojen käsittely](visuals/power-bi-visualizations-arcgis.md).
@@ -61,7 +61,7 @@ Tässä opetusohjelmassa käytetään [Jälleenmyyntianalyysimallia](sample-reta
 2. Valitse **ArcGIS Maps for Power BI** -valintaruutu. Valinta edellyttää Power BI:n uudelleenkäynnistystä.
    
     ![](media/power-bi-visualization-arcgis/power-bi-use-arcgis-new.png)
-3. Avaa raportti [muokkausnäkymässä](service-reading-view-and-editing-view.md) ja valitse ArcGIS Maps for Power BI -kuvake Visualisoinnit-ruudussa.
+3. Avaa raportti [muokkausnäkymässä](consumer/end-user-reading-view.md) ja valitse ArcGIS Maps for Power BI -kuvake Visualisoinnit-ruudussa.
    
     ![](media/power-bi-visualization-arcgis/power-bi-viz-pane2.png)
 4. Power BI lisää tyhjän ArcGIS -karttamallin raportin pohjaan.

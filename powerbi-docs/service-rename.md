@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/01/2018
 ms.author: mihart
 LocalizationGroup: Common tasks
-ms.openlocfilehash: d19e0a77f603ce6b80ce70ba5df4506699bd0969
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: a3a78c27ab8d6e7c321af3f5ba4144e8b320e4a9
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34252136"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46545724"
 ---
 # <a name="rename-almost-anything-in-power-bi-service"></a>Nimeä melkein mitä tahansa uudelleen Power BI -palvelussa
 Tässä artikkelissa opetetaan, miten Power BI -palvelussa nimetään uudelleen koontinäyttö, raportti, raporttisivu, työkirja, tietojoukko, sovellus ja työtila.
@@ -71,7 +71,7 @@ Sovellustyötilan voi nimetä uudelleen kuka tahansa, jolla on järjestelmänval
 ## <a name="rename-a-page-in-a-report"></a>Nimeä raportin sivu uudelleen
 Etkö pidä Power BI -raporttisi sivun nimestä?  Uusi nimi on vain napsautuksen päässä. Sivuja voi nimetä uudelleen [raportin muokkausnäkymässä](service-interact-with-a-report-in-editing-view.md).
 
-1. Avaa raportti [muokkausnäkymässä](service-reading-view-and-editing-view.md).
+1. Avaa raportti [muokkausnäkymässä](consumer/end-user-reading-view.md).
 2. Etsi raporttisivun välilehdet Power BI -ikkunan alareunasta.
    
     ![Raportti, jossa välilehdet näkyvät korostettuna](media/service-rename/report-page-tabs-new.png)

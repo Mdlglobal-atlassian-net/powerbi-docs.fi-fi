@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 05/02/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 90f32e96a6e2c7777c5d1535314e2c85989e1932
-ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
+ms.openlocfilehash: 3bb151de24a984406aa6fd40a70977f2e9eaf1be
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37599590"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46548047"
 ---
 # <a name="pin-a-tile-to-a-power-bi-dashboard-from-excel"></a>Ruudun kiinnittäminen Power BI -raporttinäkymään Excelistä
 Ennen kuin voit kiinnittää ruudun Excel-työkirjasta, yhdistät kyseisen työkirjan Power BI -palveluun (app.powerbi.com). Työkirjan yhdistäminen tuo linkitetyn vain luku -version kyseisestä työkirjasta Power BI -palveluun ja mahdollistaa alueiden kiinnittämisen raporttinäkymiin. Voit kiinnittää jopa kokonaisen laskentataulukon raporttinäkymään.  
@@ -49,7 +49,7 @@ Työkirjaa ei voi muokata Power BI:ssä. Jos muutoksia on tehtävä, voit valita
     ![Excel Online Power BI:ssä](media/service-dashboard-pin-tile-from-excel/power-bi-opened.png)
 
 ## <a name="pin-a-range-of-cells-to-a-dashboard"></a>Solualueen kiinnittäminen raporttinäkymään
-Uusi [raporttinäkymän ruutu](service-dashboard-tiles.md) voidaan lisätä Excel-työkirjasta Power BI:ssä. Alueita voidaan kiinnittää Excel-työkirjoista, jotka on tallennettu OneDrive for Businessiin tai toiseen ryhmän jakamaan tiedostokirjastoon. Alueet voivat sisältää tietoja, kaavioita, taulukoita, pivot-taulukoita, pivot-kaavioita ja muita Excel-osia.
+Uusi [raporttinäkymän ruutu](consumer/end-user-tiles.md) voidaan lisätä Excel-työkirjasta Power BI:ssä. Alueita voidaan kiinnittää Excel-työkirjoista, jotka on tallennettu OneDrive for Businessiin tai toiseen ryhmän jakamaan tiedostokirjastoon. Alueet voivat sisältää tietoja, kaavioita, taulukoita, pivot-taulukoita, pivot-kaavioita ja muita Excel-osia.
 
 1. Korosta solut, jotka haluat kiinnittää raporttinäkymään.
    

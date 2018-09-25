@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 05/27/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 732f27a8272c780d156912da904bab82de03f326
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: 68b14e6554c0c12590f555f6447198f1a850e9b1
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44732899"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46543999"
 ---
 # <a name="combo-chart-in-power-bi"></a>Yhdistelmäkaavio Power BI:ssä
 Power BI:ssä yhdistelmäkaavio on yksittäinen visualisointi, joka yhdistää viivakaavion ja pylväskaavion. Näiden kahden kaavion yhdistäminen nopeuttaa tietojen vertailua.
@@ -103,13 +103,13 @@ Tässä tehtävässä verrataan myyntikatetta ja myyntiä.
 
 Seuraavat toiminnot:
 
-* [Yhdistelmäkaavion lisääminen koontinäytön ruutuna](../service-dashboard-tiles.md)
+* [Yhdistelmäkaavion lisääminen koontinäytön ruutuna](../consumer/end-user-tiles.md)
 * [Tallenna raportti](../service-report-save.md).
 * [Tee raportista helpommin käytettävä toimintarajoitteisille ihmisille](../desktop-accessibility.md)
 
 ## <a name="cross-highlighting-and-cross-filtering"></a>Ristiinkorostaminen ja ristiinsuodatus
 
-Sarakkeen tai rivin korostaminen yhdistelmäkaaviossa ristiinkorostaa ja ristiinsuodattaa muut raporttisivulla olevat visualisoinnit... ja päinvastoin. Voit muuttaa tätä oletustoimintaa [visualisointitoimien](../service-reports-visual-interactions.md) avulla.
+Sarakkeen tai rivin korostaminen yhdistelmäkaaviossa ristiinkorostaa ja ristiinsuodattaa muut raporttisivulla olevat visualisoinnit... ja päinvastoin. Voit muuttaa tätä oletustoimintaa [visualisointitoimien](../consumer/end-user-interactions.md) avulla.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
@@ -117,6 +117,6 @@ Sarakkeen tai rivin korostaminen yhdistelmäkaaviossa ristiinkorostaa ja ristiin
 
 [Visualisointityypit Power BI:ssä](power-bi-visualization-types-for-reports-and-q-and-a.md)
 
-[Power BI:n peruskäsitteet](../service-basic-concepts.md)
+[Power BI:n peruskäsitteet](../consumer/end-user-basic-concepts.md)
 
 Onko sinulla muuta kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)

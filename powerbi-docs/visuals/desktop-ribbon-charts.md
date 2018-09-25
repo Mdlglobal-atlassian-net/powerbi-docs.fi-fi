@@ -1,21 +1,21 @@
 ---
 title: Nauhakaavioiden käyttäminen Power BI:ssä
 description: Nauhakaavioiden luominen ja käyttäminen Power BI -palvelussa ja Power BI Desktopissa
-author: davidiseminger
+author: mihart
 manager: kvivek
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
 ms.date: 07/27/2018
-ms.author: davidi
+ms.author: mihart
 LocalizationGroup: Create reports
-ms.openlocfilehash: 0d7dbf878c32ee29ea490e10f27f1bda49f20b08
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: e7bd79b8d93bba4395922fb39faaf423109f7b02
+ms.sourcegitcommit: 70192daf070ede3382ac13f6001e0c8b5fb8d934
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44732746"
+ms.lasthandoff: 09/22/2018
+ms.locfileid: "46566115"
 ---
 # <a name="use-ribbon-charts-in-power-bi"></a>Nauhakaavioiden käyttäminen Power BI:ssä
 Voit käyttää nauhakaavioita **Power BI:ssä** tietojen visualisointiin ja sen selvittämiseen nopeasti, millä tietoluokalla on korkein sija (suurin arvo). Nauhakaaviot esittävät luokkamuutoksen tehokkaasti, koska korkein sija (suurin arvo) näkyy aina ylimpänä kullakin ajanjaksolla. Nauhakaaviot ovat käytettävissä **Power BI Desktopissa** syyskuun 2017 julkaisusta lähtien ja kaikissa sen jälkeen tulleissa **Power BI -palvelun** päivityksissä.

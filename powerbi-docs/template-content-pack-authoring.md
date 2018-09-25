@@ -9,12 +9,12 @@ ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 10/09/2017
 ms.author: maggies
-ms.openlocfilehash: 8b7c46ad1e9ea9c4c79a8f5a1b48c73ab3336306
-ms.sourcegitcommit: 3a287ae4ab16d1e76caed651bd8ae1a1738831cd
+ms.openlocfilehash: 7253a340ce0852039a08d0ed17c488fc8fdbfa69
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39157427"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46545918"
 ---
 # <a name="author-template-content-packs-in-power-bi"></a>Power BI:n sisältöpakettien luontimallit
 Sisältöpaketin luonnissa käytetään Power BI Desktop -versiota ja PowerBI.comia. Sisältöpaketissa on neljä osaa:
@@ -22,7 +22,7 @@ Sisältöpaketin luonnissa käytetään Power BI Desktop -versiota ja PowerBI.co
 * Kyselyjen avulla voit [yhdistää](desktop-connect-to-data.md) ja [muuntaa](desktop-query-overview.md) tietoja sekä määrittää [parametreja](https://powerbi.microsoft.com/blog/deep-dive-into-query-parameters-and-power-bi-templates/).  
 * Tietomallin avulla voit luoda [suhteita](desktop-create-and-manage-relationships.md), [mittareita](desktop-measures.md) ja Q&A-parannuksia.  
 * Raportin [sivut](desktop-report-view.md) sisältävät visualisointeja ja suodattimia, jotka antavat merkityksellisiä tietoja.  
-* [Koontinäyttö](service-dashboards.md) ja [ruudut](service-dashboard-create.md) antavat yleiskatsauksen sisältyvistä merkityksellisistä tiedoista.  
+* [Koontinäyttö](consumer/end-user-dashboards.md) ja [ruudut](service-dashboard-create.md) antavat yleiskatsauksen sisältyvistä merkityksellisistä tiedoista.  
 
 Nämä voivat olla tuttuja nykyisten Power BI -ominaisuuksien kautta. Sisältöpakettia luotaessa kunkin osa-alueen kohdalla on huomioitava myös muita asioita. Katso lisätietoja kustakin osasta jäljempänä.
 

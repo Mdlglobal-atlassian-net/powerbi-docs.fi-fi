@@ -9,12 +9,12 @@ ms.component: powerbi-mobile
 ms.topic: conceptual
 ms.date: 10/13/2017
 ms.author: maggies
-ms.openlocfilehash: 42ba9b042209dfd717c58042834e8d7966f97ecf
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: d221cfdc849a18ba934ebacaf58ef40999ac0117
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44732586"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46543309"
 ---
 # <a name="scan-a-barcode-with-your-iphone-from-the-power-bi-mobile-app"></a>Viivakoodin skannaaminen iPhonella Power BI -mobiilisovelluksesta
 Voit skannata viivakoodeja todellisessa maailmassa ja siirtyä suoraan suodatettuihin BI-tietoihin Power BI -mobiilisovelluksessa.
@@ -67,6 +67,6 @@ Raportti, jonka haluat suodattaa, perustuu tietomalliin, joka ei sisällä tät�
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 * [Viivakoodikentän merkitseminen Power BI Desktopissa](../../desktop-mobile-barcodes.md)
-* [Koontinäyttöruudut Power BI:ssä](../../service-dashboard-tiles.md)
-* [Koontinäytöt Power BI:ssä](../../service-dashboards.md)
+* [Koontinäyttöruudut Power BI:ssä](../end-user-tiles.md)
+* [Koontinäytöt Power BI:ssä](../end-user-dashboards.md)
 

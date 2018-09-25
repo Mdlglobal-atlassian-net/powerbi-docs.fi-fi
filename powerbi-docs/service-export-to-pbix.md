@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/02/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 938f7b5f905d156518f71a30b355575cf1c04683
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 2f7133bb376cc04e181eed2d90a45e3361190d0b
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34722539"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46547019"
 ---
 # <a name="export-a-report-from-power-bi-service-to-desktop-preview"></a>Raportin vieminen Power BI -palvelusta työasemaan (esikatselu)
 Voit viedä (tai *ladata*) Power BI Desktopissa raportin Power BI -palveluun tallentamalla raportti ja valitsemalla **Julkaise**. Voit myös viedä toiseen suuntaan ja ladata raportin Power BI -palvelusta työpöydälle. Vietävien tiedostojen tiedostopääte kumpaankin suuntaan on *.pbix*.
@@ -27,7 +27,7 @@ Tähän liittyy tiettyjä rajoituksia ja huomioitavia asioita, joita käsitellä
 ## <a name="download-the-report-as-a-pbix"></a>Lataa raportti .pbix-muodossa
 Lataa .pbix-tiedosto toimimalla seuraavasti:
 
-1. Avaa **Power BI-palvelussa** raportti, jonka haluat ladata [muokkausnäkymässä](service-reading-view-and-editing-view.md).
+1. Avaa **Power BI-palvelussa** raportti, jonka haluat ladata [muokkausnäkymässä](consumer/end-user-reading-view.md).
 2. Valitse valikkorivistä **Tiedosto > Lataa raportti**.
    
    > [!NOTE]
@@ -67,8 +67,8 @@ Näytä minuutin **Kaveri kuutiossa** -video tästä ominaisuudesta:
 
 Lisäksi seuraavassa on joitakin artikkeleita, jotka auttavat sinua käyttämään **Power BI -palvelua**:
 
-* [Raportit Power BI:ssä](service-reports.md)
-* [Power BI:n peruskäsitteet](service-basic-concepts.md)
+* [Raportit Power BI:ssä](consumer/end-user-reports.md)
+* [Power BI:n peruskäsitteet](consumer/end-user-basic-concepts.md)
 
 Kun olet asentanut **Power BI Desktopin**, seuraavan sisällön avulla voit aloittaa sen käytön nopeasti:
 

@@ -10,23 +10,23 @@ ms.topic: conceptual
 ms.date: 03/02/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: e71412febc5b8d8a9ee4ff20174496de0c7d51f2
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 9cf5855acc5efe773f8f06e6de9f769f75794bdb
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34251410"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46548728"
 ---
 # <a name="pin-a-tile-to-a-dashboard-from-qa"></a>Ruudun kiinnittäminen koontinäyttöön Q&A:sta
 ## <a name="how-to-pin-a-tile-from-qa"></a>Ohjeet ruudun kiinnittämiseen Q&A:sta
 Q&A on Power BI:n ad-hoc-raportointityökalu. Haluatko löytää tietyn merkityksellisen tiedon? Esitä tietojasi koskeva kysymys, jotta saat vastauksen visualisoinnin muodossa.
 
-Näissä ohjeissa käytetään Power BI -palvelua (app.powerbi.com) koontinäytön avaamiseen, kysymyksen esittämiseen luonnollisella kielellä visualisoinnin luomista varten ja kyseisen visualisoinnin kiinnittämiseen koontinäyttöön. Koontinäytöt eivät ole käytettävissä Power BI Desktopissa. Lisätietoja Q&A:n käyttämisestä muiden Power BI:n työkalujen ja sisältöjen kanssa on artikkelissa [Yleiskatsaus Power BI Q&A:sta](power-bi-q-and-a.md). 
+Näissä ohjeissa käytetään Power BI -palvelua (app.powerbi.com) koontinäytön avaamiseen, kysymyksen esittämiseen luonnollisella kielellä visualisoinnin luomista varten ja kyseisen visualisoinnin kiinnittämiseen koontinäyttöön. Koontinäytöt eivät ole käytettävissä Power BI Desktopissa. Lisätietoja Q&A:n käyttämisestä muiden Power BI:n työkalujen ja sisältöjen kanssa on artikkelissa [Yleiskatsaus Power BI Q&A:sta](consumer/end-user-q-and-a.md). 
 
 Avaa seuraamista varten [Jälleenmyyntianalyysimalli](sample-retail-analysis.md).
 
 
-1. Avaa [koontinäyttö](service-dashboards.md), johon on kiinnitetty vähintään yksi ruutu raportista. Kun esität kysymyksen, Power BI etsii vastausta kaikista tietojoukoista, joissa on kiinnitettynä ruutu kyseiseen koontinäyttöön.  Lisätietoja on artikkelissa [Tietojen noutaminen](service-get-data.md).
+1. Avaa [koontinäyttö](consumer/end-user-dashboards.md), johon on kiinnitetty vähintään yksi ruutu raportista. Kun esität kysymyksen, Power BI etsii vastausta kaikista tietojoukoista, joissa on kiinnitettynä ruutu kyseiseen koontinäyttöön.  Lisätietoja on artikkelissa [Tietojen noutaminen](service-get-data.md).
 2. Ala kirjoittaa tiedoista etsittävää asiaa koontinäyttösi ylälaidassa olevaan kysymysruutuun.  
    ![Q&A-kysymysruutu](media/service-dashboard-pin-tile-from-q-and-a/power-bi-question-box.png)
 3. Kun kirjoitat esimerkiksi ”viime vuoden myynti kuukauden ja alueen mukaan”...  
@@ -62,6 +62,6 @@ Avaa seuraamista varten [Jälleenmyyntianalyysimalli](sample-retail-analysis.md)
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 [Nimeäminen uudelleen, koon muuttaminen, hyperlinkin lisääminen ja ruudun sijoittaminen uudelleen](service-dashboard-edit-tile.md)    
-[Koontinäytön ruudun näyttäminen kohdistustilassa](service-focus-mode.md)     
-[Takaisin Q&A:han Power BI:ssä](power-bi-q-and-a.md)  
+[Koontinäytön ruudun näyttäminen kohdistustilassa](consumer/end-user-focus.md)     
+[Takaisin Q&A:han Power BI:ssä](consumer/end-user-q-and-a.md)  
 Onko sinulla muuta kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)

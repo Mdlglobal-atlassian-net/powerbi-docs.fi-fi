@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 03/02/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: e2df8ecd746e34b85a3fdd15943ff6eda5712663
-ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
+ms.openlocfilehash: 0de070cc8661d4973d406ddf0749ef4852fc916c
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37598974"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46546092"
 ---
 # <a name="edit-or-remove-a-dashboard-tile"></a>Koontinäytön ruudun muokkaaminen tai poistaminen
 
@@ -36,7 +36,7 @@ Tässä artikkelissa käsitellään vaihtoehdoista seuraavat:
 * [Ruudun poistaminen](#delete)
   
   > [!TIP]
-  > Jos haluat vaihtaa ruudussa näytettävän visualisoinnin, poista ruutu ja lisää uusi [koontinäytön ruutu](service-dashboard-tiles.md).
+  > Jos haluat vaihtaa ruudussa näytettävän visualisoinnin, poista ruutu ja lisää uusi [koontinäytön ruutu](consumer/end-user-tiles.md).
 
   
 ## <a name="prerequisites"></a>Edellytykset
@@ -142,11 +142,11 @@ Oletusarvoisesti ruudun valitseminen siirtää käyttäjän raporttiin, josta ru
 
 - - -
 ## <a name="next-steps"></a>Seuraavat vaiheet
-[Koontinäyttöruudut Power BI:ssä](service-dashboard-tiles.md)
+[Koontinäyttöruudut Power BI:ssä](consumer/end-user-tiles.md)
 
-[Koontinäytöt Power BI:ssä](service-dashboards.md)
+[Koontinäytöt Power BI:ssä](consumer/end-user-dashboards.md)
 
-[Power BI:n peruskäsitteet](service-basic-concepts.md)
+[Power BI:n peruskäsitteet](consumer/end-user-basic-concepts.md)
 
 Onko sinulla muuta kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
 

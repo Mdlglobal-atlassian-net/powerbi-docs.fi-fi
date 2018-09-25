@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 03/01/2018
 ms.author: mihart
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: d50d3c3a34364dd795c44b3e45e91857bcc222f0
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: f01edbec60d0146dd5bd4454d3b1e0736b9158e3
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44726313"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46548231"
 ---
 # <a name="create-featured-questions-for-power-bi-qa"></a>Power BI:n Q&A-toiminnon suositeltujen kysymysten luominen
 Jos omistat tietojoukon, voit lisätä siihen omia suositeltuja kysymyksiä.  Power BI Q&A näyttää sitten kyseiset kysymykset tietojoukkoa käyttäville (*kuluttaville*) työtovereille.  Suositellut kysymykset antavat työtovereille ideoita kysymyksistä, joita he voivat kysyä tietojoukosta. Sinä valitset lisättävät suositellut kysymykset – voit lisätä suosittuja kysymyksiä, kiinnostavia vastauksia antavia kysymyksiä tai kysymyksiä, joita voi olla vaikea muotoilla.
@@ -47,8 +47,8 @@ Tässä artikkelissa käytetään [jälleenmyyntianalyysimallia](sample-datasets
    ![kartan visualisointi](media/service-q-and-a-create-featured-questions/power-bi-filled-map.png)
 
 ### <a name="next-steps"></a>Seuraavat vaiheet
-[Q&A Power BI:ssä](power-bi-q-and-a.md)  
+[Q&A Power BI:ssä](consumer/end-user-q-and-a.md)  
 [Opetusohjelma: Johdatus Power BI:n Q&A-toimintoon](power-bi-visualization-introduction-to-q-and-a.md)  
-[Power BI:n peruskäsitteet](service-basic-concepts.md)  
+[Power BI:n peruskäsitteet](consumer/end-user-basic-concepts.md)  
 Onko sinulla muuta kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
 

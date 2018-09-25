@@ -11,16 +11,16 @@ ms.topic: conceptual
 ms.date: 03/02/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 968cf7e573a298c2a82adaf2092a9d35ffa397e5
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 75543bfc381f0a8391fe4422d677913ab61ad363
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34240206"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46550048"
 ---
 # <a name="pin-a-tile-to-a-power-bi-dashboard-from-a-report"></a>Ruudun kiinnittäminen Power BI:n koontinäyttöön raportista
 ## <a name="pinning-tiles-from-a-report"></a>Ruutujen kiinnittäminen raportista
-Uusi [raporttinäkymän ruutu](service-dashboard-tiles.md) voidaan lisätä [Power BI -raportista](service-reports.md). Voit itse asiassa lisätä useita uusia ruutuja raportista.  Kukin näistä on napsautettaessa linkki takaisin raporttiin.
+Uusi [raporttinäkymän ruutu](consumer/end-user-tiles.md) voidaan lisätä [Power BI -raportista](consumer/end-user-reports.md). Voit itse asiassa lisätä useita uusia ruutuja raportista.  Kukin näistä on napsautettaessa linkki takaisin raporttiin.
 
 Myös raportin kokonaisia sivuja voi kiinnittää koontinäyttöön.  Tätä kutsutaan myös kiinnittämiseksi *live*-ruutuun.  *Live* tarkoittaa, että voit käsitellä ruutua koontinäytössä interaktiivisesti ja toisin kuin yksittäisissä visualisointiruuduissa, raporttiin tehdyt muutokset synkronoidaan koontinäyttöön. Voit lukea lisätietoja asiasta alta.
 
@@ -58,15 +58,15 @@ Toinen vaihtoehto on koko raporttisivun kiinnittäminen koontinäyttöön. Se on
 Jos haluat lisätietoja, katso [Koko raportin sivun kiinnittäminen](service-dashboard-pin-live-tile-from-report.md)
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
-[Koontinäytöt Power BI:ssä](service-dashboards.md)
+[Koontinäytöt Power BI:ssä](consumer/end-user-dashboards.md)
 
-[Koontinäyttöruudut Power BI:ssä](service-dashboard-tiles.md)
+[Koontinäyttöruudut Power BI:ssä](consumer/end-user-tiles.md)
 
-[Raportit Power BI:ssä](service-reports.md)
+[Raportit Power BI:ssä](consumer/end-user-reports.md)
 
 [Tietojen päivittäminen Power BI:ssä](refresh-data.md)
 
-[Power BI:n peruskäsitteet](service-basic-concepts.md)
+[Power BI:n peruskäsitteet](consumer/end-user-basic-concepts.md)
 
 Onko sinulla muuta kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
 

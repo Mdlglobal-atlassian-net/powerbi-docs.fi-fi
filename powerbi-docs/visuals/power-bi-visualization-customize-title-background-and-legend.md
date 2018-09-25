@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 01/22/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: b486ad6bc4027aa2122ee72fc7fb89f0fd80c875
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: a219ad94725f8d5423597bd65321f0024f95c1bb
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44732736"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46546000"
 ---
 # <a name="customize-visualization-titles-legends-and-backgrounds"></a>Mukauta visualisoinnin otsikoita, selitteitä ja taustoja
 Tässä opetusohjelmassa opit mukauttamaan visualisointeja muutamalla eri tavalla.   Visualisointien mukauttamiseen on runsaasti vaihtoehtoja, joten paras tapa tutustua niihin kaikkiin on tutustua Muotoilu-ruutuun (valitse maalaustelan kuvake).  Jotta pääset alkuun, tässä artikkelissa kerrotaan, miten voit mukauttaa visualisoinnin otsikkoa, selitettä ja taustaa.  
@@ -120,6 +120,6 @@ Kun sama sarakekaavio on valittuna, laajenna tausta-asetuksia.
 ## <a name="next-steps"></a>Seuraavat vaiheet
 [X-akselin ja y-akselin mukauttaminen](power-bi-visualization-customize-x-axis-and-y-axis.md)  
 [Värien ja akselin ominaisuuksien mukauttaminen](service-getting-started-with-color-formatting-and-axis-properties.md)  
-[Power BI:n peruskäsitteet](../service-basic-concepts.md)  
+[Power BI:n peruskäsitteet](../consumer/end-user-basic-concepts.md)  
 Onko sinulla muuta kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
 

@@ -11,12 +11,12 @@ ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 02/28/2018
 ms.author: mihart
-ms.openlocfilehash: 6a930342806eb32f22efe3d2974625c54c5377bf
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: a312a4311590d02d0fa8bd97726f9cf596cfe6a0
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44732826"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46545770"
 ---
 # <a name="interacting-with-arcgis-maps-in-power-bi"></a>ArcGIS-karttojen käsittely Power BI:ssä
 Tämä ohjeaihe on kirjoitettu sellaisen käyttäjän näkökulmasta, joka on ArcGIS-kartan *kuluttaja* ja tarkastelee karttaa Power BI -palvelussa, Desktopissa tai mobiililaitteelta. Kun ArcGIS-kartan tehnyt henkilö jakaa kartan sinulle, voit toimia kartan kanssa monin eri tavoin.  Jos haluat lisätietoa ArcGIS-karttojen luomisesta, katso [opetusohjelma Esrin ArcGIS-kartoista](../power-bi-visualization-arcgis.md).
@@ -55,9 +55,9 @@ ArcGIS Maps for Power BI:ssä on kolme valintatilaa. Voit valita enintään 250 
 <br/>
 
 ## <a name="interacting-with-an-arcgis-map"></a>ArcGIS-karttojen käsittely
-Käytettävissäsi olevat ominaisuudet määräytyvät sen mukaan, oletko kartan *luoja* (alkuperäinen tekijä) vai *kuluttaja* (jolle ArcGIS-kartta on jaettu). Jos käsittelet ArcGIS-karttaa kuluttajana (eli [lukunäkymässä](../service-reading-view-and-editing-view.md)), käytettävissäsi ovat seuraavien toiminnot.
+Käytettävissäsi olevat ominaisuudet määräytyvät sen mukaan, oletko kartan *luoja* (alkuperäinen tekijä) vai *kuluttaja* (jolle ArcGIS-kartta on jaettu). Jos käsittelet ArcGIS-karttaa kuluttajana (eli [lukunäkymässä](../consumer/end-user-reading-view.md)), käytettävissäsi ovat seuraavien toiminnot.
 
-* Voit käsitellä karttaa samoin kuin muita visualisointityyppejä: voit [ kiinnittää sen koontinäyttöihin](../service-dashboard-pin-tile-from-report.md), [tarkastella sen perustana olevia tietoja](../service-reports-show-data.md) ja/tai [viedä tiedot kartasta](../power-bi-visualization-export-data.md) sekä tarkastella karttaa [kohdistustilassa](../service-focus-mode.md) ja [koko näytön tilassa](../service-fullscreen-mode.md).    
+* Voit käsitellä karttaa samoin kuin muita visualisointityyppejä: voit [ kiinnittää sen koontinäyttöihin](../service-dashboard-pin-tile-from-report.md), [tarkastella sen perustana olevia tietoja](../consumer/end-user-show-data.md) ja/tai [viedä tiedot kartasta](../consumer/end-user-export-data.md) sekä tarkastella karttaa [kohdistustilassa](../consumer/end-user-focus.md) ja [koko näytön tilassa](../service-fullscreen-mode.md).    
 * Jos haluat tutkia karttaa suodattimien avulla, laajenna **Suodattimet**-ruutu. Kun suljet raportin, käyttämäsi suodattimet eivät tallennu.    
     ![](media/power-bi-visualizations-arcgis/power-bi-filter-newer.png)  
 * Jos kartassa on viittauskerros, voit valita sijainteja, jolloin niiden tiedot näytetään työkaluvihjeessä. Seuraavassa kuvassa näkyy valittuna oleva Adamsin piirikunta ja kartan tekijän lisäämän viittauskerroksen mukaisesti kotitalouksien keskitulo.

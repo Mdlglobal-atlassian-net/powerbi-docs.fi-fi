@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 07/27/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 81a8b5454e39088b8b406e600707d1d5073e14dc
-ms.sourcegitcommit: f01a88e583889bd77b712f11da4a379c88a22b76
+ms.openlocfilehash: 1104c7f90f46252a74c4aa8e5ec573a159ef1c40
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39330163"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46550117"
 ---
 # <a name="using-directquery-in-power-bi"></a>DirectQueryn käyttäminen Power BI:ssä
 Voit muodostaa yhteyksiä kaikenlaisiin tietolähteisiin, kun käytät **Power BI Desktopia** tai **Power BI -palvelua**. Lisäksi voit muodostaa näitä yhteyksiä eri tavoin. Voit joko *tuoda* tietoja Power BI:hin, mikä on yleisin tapa hakea, tai voit muodostaa yhteyden tietoihin suoraan niiden alkuperäisessä lähdesäilössä. Tätä tapaa kutsutaan nimellä **DirectQuery**. Tässä artikkelissa kerrotaan **DirectQuerystä** ja sen toiminnoista. Artikkelissa käsitellään seuraavia aiheita:
@@ -277,7 +277,7 @@ Kun luot DirectQuery-yhteyttä käyttävää raporttia, noudata seuraavia ohjeit
   
   ![](media/desktop-directquery-about/directquery-about_04.png)
   
-  DirectQueryssä tällainen ristiinsuodatus ja ristiinkorostus edellyttää kyselyiden lähettämistä taustalähteeseen. Tällainen vuorovaikutus tulisi siis poistaa käytöstä, jos käyttäjien valintoihin vastaamiseen menisi kohtuuttoman pitkä aika. Tämän vuorovaikutuksen voi poistaa käytöstä joko koko raportissa (kuten yllä kuvattiin *Kyselyn pienentäminen* -asetusten kohdassa) tai tapauskohtaisesti [tämän artikkelin](service-reports-visual-interactions.md) ohjeiden avulla.
+  DirectQueryssä tällainen ristiinsuodatus ja ristiinkorostus edellyttää kyselyiden lähettämistä taustalähteeseen. Tällainen vuorovaikutus tulisi siis poistaa käytöstä, jos käyttäjien valintoihin vastaamiseen menisi kohtuuttoman pitkä aika. Tämän vuorovaikutuksen voi poistaa käytöstä joko koko raportissa (kuten yllä kuvattiin *Kyselyn pienentäminen* -asetusten kohdassa) tai tapauskohtaisesti [tämän artikkelin](consumer/end-user-interactions.md) ohjeiden avulla.
 
 Ota yllä mainittujen ehdotusten lisäksi huomioon myös se, että kaikki seuraavista raportointitoiminnoista voivat aiheuttaa suorituskykyongelmia:
 

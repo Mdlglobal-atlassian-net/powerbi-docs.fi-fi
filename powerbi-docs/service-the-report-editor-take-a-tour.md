@@ -11,25 +11,25 @@ ms.topic: conceptual
 ms.date: 04/11/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 78d9004a718990cbcd310835e8e9b8ae5e3eae17
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: 3c6ae5351908bd71888040c3bc900323837935c2
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44726635"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46546069"
 ---
 # <a name="the-report-editortake-a-tour"></a>Raporttieditori: esittely
 ## <a name="editing-reports-in-power-bi-service-and-power-bi-desktop"></a>Raporttien muokkaus Power BI -palvelussa ja Power BI Desktopissa
 Power BI -palvelun raporttieditori ja Power BI Desktopin raporttieditori ovat hyvin samankaltaisia. Videossa näytetään Power BI Desktopin raporttieditori ja tässä artikkelissa näytetään Power BI -palvelun raporttieditori. 
 
 ## <a name="the-difference-between-report-creators-and-report-consumers"></a>Raportin *laatijoiden* ja raportin *käyttäjien* välinen ero
-Vain raportin omistajat (eli raportin *laatijat*) voivat laatia ja muokata raportteja. Jos *käytät* raporttia, joka on jaettu kanssasi, voit yhä avata raportin ja käsitellä sitä Power BI -palvelussa [vain lukunäkymässä](service-reading-view-and-editing-view.md). Et voi kuitenkaan hyötyä kaikista niistä tehokkaista ja laajoista ominaisuuksista, jotka ovat saatavilla raportin laatijalle.  
+Vain raportin omistajat (eli raportin *laatijat*) voivat laatia ja muokata raportteja. Jos *käytät* raporttia, joka on jaettu kanssasi, voit yhä avata raportin ja käsitellä sitä Power BI -palvelussa [vain lukunäkymässä](consumer/end-user-reading-view.md). Et voi kuitenkaan hyötyä kaikista niistä tehokkaista ja laajoista ominaisuuksista, jotka ovat saatavilla raportin laatijalle.  
 
-Löydät lisätietoja raportin lukunäkymästä artikkelista [Power BI -palvelun luku- ja muokkausnäkymä](service-reading-view-and-editing-view.md). 
+Löydät lisätietoja raportin lukunäkymästä artikkelista [Power BI -palvelun luku- ja muokkausnäkymä](consumer/end-user-reading-view.md). 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/IkJda4O7oGs" frameborder="0" allowfullscreen></iframe>
 
-Power BI-palvelussa *raporttieditori* on saatavilla vain [muokkausnäkymässä](service-reading-view-and-editing-view.md). Jotta voit avata raportin muokkausnäkymässä, sinun on oltava raportin omistaja tai laatija.
+Power BI-palvelussa *raporttieditori* on saatavilla vain [muokkausnäkymässä](consumer/end-user-reading-view.md). Jotta voit avata raportin muokkausnäkymässä, sinun on oltava raportin omistaja tai laatija.
 
 Power BI -raporttieditorissa on kolme osaa:  
 
@@ -126,9 +126,9 @@ Työsi tulee näkyviin raportin piirtoalustalle. Kun luot visualisointeja Kentä
 ## <a name="next-steps"></a>Seuraavat vaiheet:
 [Raportin luominen](service-report-create-new.md)
 
-Lue lisää raporteista artikkeleista [Power BI -palvelu](service-reports.md), [Power BI Desktop](desktop-report-view.md) ja [Power BI -mobiilisovellus](consumer/mobile/mobile-apps-view-phone-report.md).
+Lue lisää raporteista artikkeleista [Power BI -palvelu](consumer/end-user-reports.md), [Power BI Desktop](desktop-report-view.md) ja [Power BI -mobiilisovellus](consumer/mobile/mobile-apps-view-phone-report.md).
 
-[Power BI:n peruskäsitteet](service-basic-concepts.md)
+[Power BI:n peruskäsitteet](consumer/end-user-basic-concepts.md)
 
 Onko sinulla muuta kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
 

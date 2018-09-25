@@ -11,15 +11,15 @@ ms.topic: conceptual
 ms.date: 03/02/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 7703709361a6233b6d04d6fb2131ba41f109ca36
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 3466280a452c89539d288a3e7d0a123855604e7e
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34249866"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46546368"
 ---
 # <a name="pin-an-entire-report-page-as-a-live-tile-to-a-power-bi-dashboard"></a>Koko raporttisivun kiinnittäminen tapahtumaruutuna Power BI:n koontinäyttöön
-Toinen tapa lisätä uusi [koontinäytön ruutu](service-dashboard-tiles.md) on kiinnittää koko raporttisivu. Se on helppo tapa kiinnittää kerralla useita visualisointeja.  Kun kiinnität koko sivun, ruudut ovat *reaaliaikaisia*. Voit käsitellä niitä suoraan koontinäytössä. Jos teet visualisointeihin muutoksia raporttieditorissa, kuten lisäät suodattimen tai muutat kaaviossa käytettäviä kenttiä, muutokset näkyvät myös koontinäytön ruudussa.  
+Toinen tapa lisätä uusi [koontinäytön ruutu](consumer/end-user-tiles.md) on kiinnittää koko raporttisivu. Se on helppo tapa kiinnittää kerralla useita visualisointeja.  Kun kiinnität koko sivun, ruudut ovat *reaaliaikaisia*. Voit käsitellä niitä suoraan koontinäytössä. Jos teet visualisointeihin muutoksia raporttieditorissa, kuten lisäät suodattimen tai muutat kaaviossa käytettäviä kenttiä, muutokset näkyvät myös koontinäytön ruudussa.  
 
 Reaaliaikaisten ruutujen kiinnittäminen raporteista koontinäyttöihin on käytettävissä vain Power BI -palvelussa (app.powerbi.com).
 
@@ -53,7 +53,7 @@ Katso, miten Amanda kiinnittää reaaliaikaisen raporttisivun koontinäyttöön.
     ![reaaliaikaisen ruudun sisältävät koontinäytöt](media/service-dashboard-pin-live-tile-from-report/pbi-live-tile.png)
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
-[Koontinäytöt Power BI:ssä](service-dashboards.md)
+[Koontinäytöt Power BI:ssä](consumer/end-user-dashboards.md)
 
 Onko sinulla muuta kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
 

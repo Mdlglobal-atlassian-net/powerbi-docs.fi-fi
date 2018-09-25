@@ -9,12 +9,12 @@ ms.component: powerbi-mobile
 ms.topic: conceptual
 ms.date: 05/05/2018
 ms.author: maggies
-ms.openlocfilehash: 320ab8cef7ba2b36846550dcdb3171c7fb4b788a
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: abd0e6b36af02753d8ff08c8f7405cc6502977d1
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44732749"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46548104"
 ---
 # <a name="qa-virtual-analyst-in-ios-apps---power-bi"></a>Q&A:n virtuaalinen analyytikko iOS-sovelluksissa - Power BI
 
@@ -137,11 +137,11 @@ Katso Apple iOS -kehittäjäoppaiden kohdan [iOSin uutuudet](https://go.microsof
 Voit parantaa sinun ja asiakkaiden Q&A:n virtuaalisen analyytikon tietojoukossa käytön aikana saamia tuloksia joko esittämällä tarkennettuja kysymyksiä tai parantamalla tietojoukkoa.
 
 ### <a name="how-to-ask-questions"></a>Kysymysten esittäminen
-* Noudata näitä [kysymysten Q&A:ssa esittämisen vihjeitä](../../service-q-and-a-tips.md) Power BI -palvelussa tai Q&A:n virtuaalisessa analyytikossa iOS-mobiilisovelluksessa.
+* Noudata näitä [kysymysten Q&A:ssa esittämisen vihjeitä](../end-user-q-and-a-tips.md) Power BI -palvelussa tai Q&A:n virtuaalisessa analyytikossa iOS-mobiilisovelluksessa.
 
 ### <a name="how-to-enhance-the-dataset"></a>Tietojoukon parantaminen
 * Paranna Power BI Desktopin tai Power BI -palvelun tietojoukkoa, [jotta tietosi toimivat hyvin Q&A:n ja Q&A:n virtuaalisen analyytikon kanssa](../../service-prepare-data-for-q-and-a.md).
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
-* [Q&A Power BI -palvelussa](../../power-bi-q-and-a.md)
+* [Q&A Power BI -palvelussa](../end-user-q-and-a.md)
 * Onko sinulla kysymyksiä? Tutustu [Power BI -yhteisön Mobiilisovellukset-osaan](https://go.microsoft.com/fwlink/?linkid=839277)

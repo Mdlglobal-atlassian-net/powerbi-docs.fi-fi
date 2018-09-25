@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/20/2017
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: b1699d32bf96efa6a40baaac202b5f9db9ee3f8b
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: 2b1e5c28bd705e064dc4e0e3283eb3941452647b
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44732669"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46547018"
 ---
 # <a name="change-the-type-of-visualization-in-a-power-bi-report"></a>Power BI -raportin visualisointityypin vaihtaminen
 Kokeile erityyppisiä visualisointeja Power BI -palvelussa ja Power BI Desktopissa, niin näet, kummassa tiedot kuvataan paremmin. 
@@ -32,7 +32,7 @@ Jos muutat raportin visualisointityyppiä sen jälkeen, kun visualisointi on kii
 ### <a name="next-steps"></a>Seuraavat vaiheet
 Lisätietoja [Power BI -raporttien visualisoinneista](power-bi-report-visualizations.md)
 
-[Power BI:n peruskäsitteet](../service-basic-concepts.md)
+[Power BI:n peruskäsitteet](../consumer/end-user-basic-concepts.md)
 
 Onko sinulla muuta kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
 

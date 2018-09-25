@@ -1,21 +1,21 @@
 ---
 title: Power BI:n visualisoinnin optimointi mihin tahansa kokoon
 description: Lue, miten voit optimoida olemassa olevien raporttien visualisointeja Power BI Desktopissa ja Power BI -palvelussa Power BI -mobiilisovelluksille.
-author: maggiesMSFT
+author: mihart
 manager: kvivek
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
 ms.date: 04/13/2018
-ms.author: maggies
+ms.author: mihart
 LocalizationGroup: Create reports
-ms.openlocfilehash: d85d4bd60c341ef588cf56b1345f28aa25b810de
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: 1c50bcf656f967502e8bb01f7ca5184996170bed
+ms.sourcegitcommit: 70192daf070ede3382ac13f6001e0c8b5fb8d934
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44736242"
+ms.lasthandoff: 09/22/2018
+ms.locfileid: "46566322"
 ---
 # <a name="optimize-a-power-bi-visual-for-any-size"></a>Power BI:n visualisoinnin optimointi mihin tahansa kokoon
 Kun luot uuden raportin, visualisoinnit ovat oletuksena *reagoivia*: dataa ja merkityksellisiä tietoja näytetään dynaamisesti suurin mahdollinen määrä, oli näyttö minkä kokoinen tahansa. Voit määrittää myös vanhempien raporttien sisältämien visualisointien koon dynaamisesti muuttuvaksi.

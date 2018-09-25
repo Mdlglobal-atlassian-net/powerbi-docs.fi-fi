@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 01/23/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: aa73da576a64a3245a3e8a9deab124dcefbc79f8
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: 946746b1c868ca5310edd929434cc852400b5bc3
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44736212"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46548070"
 ---
 # <a name="treemaps-in-power-bi"></a>Puukartat Power BI:ssä
 Puukartoissa hierarkkiset tiedot näytetään sisäkkäisten suorakulmioiden joukkona.  Hierarkian kukin taso on edustettuna värillisenä suorakulmiona (jota kutsutaan usein ”haaraksi”), joka sisältää muita suorakulmioita (”lehtiä”).  Kunkin suorakulmion sisällä oleva alue määräytyy mitattavan kvantitatiivisen arvon perusteella, jolloin suorakulmiot järjestetään koon mukaan ylävasemmalta (suurin) alaoikealle (pienin).
@@ -62,7 +62,7 @@ Tai luo oma puukarttasi. Näissä ohjeissa käytetään jälleenmyyntianalyysima
    > 
 5. Pidä osoitinta **Ketju**-alueen päällä, jolloin saat esiin työkaluvihjeen, joka koskee **Luokan** kyseistä osaa.  Esimerkiksi pitämällä osoitinta **Lindseyn** päällä **040-lapset**-suorakulmiossa tuo esiin työkaluvihjeen, joka koskee Lindseyn osaa Lasten luokassa.  
    ![](media/power-bi-visualization-treemaps/treemaphoverdetail_new.png)
-6. [Lisää puukartta koontinäytön ruutuna (kiinnitä visualisointi)](../service-dashboard-tiles.md). 
+6. [Lisää puukartta koontinäytön ruutuna (kiinnitä visualisointi)](../consumer/end-user-tiles.md). 
 7. [Tallenna raportti](../service-report-save.md).
 
 ## <a name="highlighting-and-cross-filtering"></a>Korostaminen ja ristiinsuodatus
@@ -76,11 +76,11 @@ Luokan tai Tietojen korostaminen yhdistelmäkaaviossa ristiinkorostaa ja ristiin
 2. Jos **Viime vuoden myynti ketjun mukaan** -ympyräkaaviossa valitaan **Fashions Direct** -sektori, tämä ristiinsuodattaa puukartan.  
    ![](media/power-bi-visualization-treemaps/treemapnoowl.gif)    
 
-3. Jos haluat määrittää, miten visualisoinnit ristiinkorostavat ja -suodattavat toisiaan, katso [visualisointien vuorovaikutukset Power BI -raportissa](../service-reports-visual-interactions.md)
+3. Jos haluat määrittää, miten visualisoinnit ristiinkorostavat ja -suodattavat toisiaan, katso [visualisointien vuorovaikutukset Power BI -raportissa](../consumer/end-user-interactions.md)
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 [Visualisoinnin kiinnittäminen koontinäyttöön](../service-dashboard-pin-tile-from-report.md)  
-[Power BI:n peruskäsitteet](../service-basic-concepts.md)  
+[Power BI:n peruskäsitteet](../consumer/end-user-basic-concepts.md)  
 
 Onko sinulla muuta kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)  
 
