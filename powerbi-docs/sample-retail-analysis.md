@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 06/24/2018
 ms.author: mihart
 LocalizationGroup: Samples
-ms.openlocfilehash: 44244bf746c1a11229d2041b4c2b43871fa7a199
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 6955bc0c41e5a6a145d2101ab527d753f98d5c61
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36944533"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46550071"
 ---
 # <a name="retail-analysis-sample-for-power-bi-take-a-tour"></a>Jälleenmyyntianalyysimalli Power BI:lle: esittely
 
@@ -165,5 +165,5 @@ Toivomme, että tämä esittely on osoittanut, miten Power BI -raporttinäkymät
 * [Lataa zip-tiedosto, joka sisältää kaikki esimerkkitiedostot](http://go.microsoft.com/fwlink/?LinkId=535020)    
 * [Lataa tämän Power BI -mallin Excel-työkirja](http://go.microsoft.com/fwlink/?LinkId=529778)    
 * [Tietojen noutaminen (Power BI:hin)](service-get-data.md)    
-* [Power BI:n peruskäsitteet](service-basic-concepts.md)    
+* [Power BI:n peruskäsitteet](consumer/end-user-basic-concepts.md)    
 * Onko sinulla muuta kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)

@@ -10,15 +10,15 @@ ms.topic: conceptual
 ms.date: 03/23/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 929af9c8ff3322fc792f2890b6914148725bf694
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: ec2520ad72889ae3e8f4955ea93c4bf7727daa18
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44732879"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46544368"
 ---
 # <a name="move-and-resize-a-visualization-in-a-report-in-power-bi-service-and-power-bi-desktop"></a>Visualisoinnin siirtäminen ja koon muuttaminen palvelussa ja työpöydällä
-Vain raportin luojat ja omistajat voivat siirtää visualisointeja ja muuttaa niiden kokoa. Power BI -palvelussa (app.powerbi.com) se tarkoittaa raportin avaamista  [Muokkausnäkymässä](../service-reading-view-and-editing-view.md).
+Vain raportin luojat ja omistajat voivat siirtää visualisointeja ja muuttaa niiden kokoa. Power BI -palvelussa (app.powerbi.com) se tarkoittaa raportin avaamista  [Muokkausnäkymässä](../consumer/end-user-reading-view.md).
 
 ## <a name="open-the-report"></a>Raportin avaaminen
 Avaa Power BI:ssa raportti, jossa on vähintään yksi visualisointi tai [luo uusi visualisointi](power-bi-report-add-visualizations-i.md). 

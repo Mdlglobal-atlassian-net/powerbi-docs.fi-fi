@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 07/27/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: a14ed61d8d7e72090a034319052600cb429e8c16
-ms.sourcegitcommit: 146b505b42f0d95d3ee73762441a43b6f3b3a891
+ms.openlocfilehash: 507cc25d324f47f00434430461d78013baa7210f
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39475725"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46546932"
 ---
 # <a name="use-qa-in-power-bi-desktop-for-natural-language-queries"></a>Tee kyselyitä luonnollisella kielellä käyttämällä Power BI Desktopin Q&A-toimintoa
 Yleisien lauseiden ja luonnollisen kielen käyttäminen tiedoista esitettävissä kysymyksissä on tehokasta. Vielä tehokkaampaa on, kun tiedot vastaavat, minkä **Power BI Desktopin** Q&A-toiminto mahdollistaa.
@@ -198,5 +198,5 @@ Tämä voi olla erittäin tärkeä vaihe. Silloinkin, kun taulukon ja sarakkeide
 Lisätietoja Power BI Desktopin ominaisuuksista on seuraavissa artikkeleissa:
 
 * [Porautumisen käyttäminen Power BI Desktopissa](desktop-drillthrough.md)
-* [Koontinäytön ruudun tai raporttivisualisoinnin näyttäminen kohdistustilassa](service-focus-mode.md)
+* [Koontinäytön ruudun tai raporttivisualisoinnin näyttäminen kohdistustilassa](consumer/end-user-focus.md)
 
