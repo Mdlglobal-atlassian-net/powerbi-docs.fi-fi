@@ -1,20 +1,20 @@
 ---
 title: Aktivoi Cortana Power BI:lle
 description: Käytä Cortanaa Power BI:n kanssa saadaksesi vastauksia tiedoistasi. Aktivoi Cortana kullekin Power BI -tietojoukolle ja ota sitten Cortana käyttöön päästäksesi käsiksi tietojoukkoihisi Windows-laitteilta.
-author: mihart
+author: maggiesMSFT
 manager: kfile
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 12/20/2017
-ms.author: mihart
+ms.author: maggies
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 40dd75becc890c48e8d1b2a7dc10381896ceed71
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 0d6042cece6bbe4c7618190938a8e1f93edf5480
+ms.sourcegitcommit: fb1885da7cf11367660edbf7b7346dc039ee9b5d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34252343"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47187072"
 ---
 # <a name="enable-cortana-to-access-power-bi-reports-and-their-underlying-datasets"></a>Mahdollista Cortanalle Power BI-raporttien (ja niiden taustalla olevien tietojoukkojen) käyttö
 Olet lukenut sivun [Perehdytys Cortanaan ja Power BI:hin](service-cortana-intro.md) (jos et ole, kannattaa se lukea ensin ja palata sitten takaisin). Ja nyt haluat kokeilla sitä itse.  Muutamien vaatimusten on täytyttävä ennen kuin voit esittää luonnollisella ohjelmointikielellä kysymyksiä Cortanassa ja etsiä vastauksia Power BI ***raportit*** -osioon tallennetuista tiedoista. Tarkemmin sanottuna sinun pitää toimia seuraavasti.

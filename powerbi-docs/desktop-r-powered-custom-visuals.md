@@ -1,21 +1,21 @@
 ---
 title: R:ää hyödyntävien mukautettujen visualisointien käyttö Power BI:ssä
 description: R:ää hyödyntävien mukautettujen visualisointien käyttö Power BI:ssä
-author: davidiseminger
+author: markingmyname
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
 ms.date: 07/27/2018
-ms.author: davidi
+ms.author: maghan
 LocalizationGroup: Create reports
-ms.openlocfilehash: 75808c850659395dd8576b7de4dca0379dfff2f5
-ms.sourcegitcommit: f01a88e583889bd77b712f11da4a379c88a22b76
+ms.openlocfilehash: b9f9b6faa7490ed05626f52623750ea79183d36a
+ms.sourcegitcommit: fb1885da7cf11367660edbf7b7346dc039ee9b5d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39329933"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47187371"
 ---
 # <a name="use-r-powered-custom-visuals-in-power-bi"></a>R:ää hyödyntävien mukautettujen visualisointien käyttö Power BI:ssä
 **Power BI Desktopissa** ja **Power BI -palvelussa** voit käyttää R:ää hyödyntäviä mukautettuja visualisointeja ilman etukäteistietoa R:stä ja ilman R-komentosarjoja. Tämä mahdollistaa R-visualisointien ja R-komentosarjojen analyyttisen ja visuaalisen tehon ottamisen käyttöön ilman, että sinun pitää opetella R:n käyttöä tai ohjelmoida itse.

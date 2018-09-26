@@ -1,21 +1,21 @@
 ---
 title: Luo mukautettuja Power BI -vastaussivuja Cortanaa varten
 description: Luo mukautettuja vastaussivuja Cortanaa varten Power BI:ssä
-author: yaron
+author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
 ms.date: 05/02/2018
-ms.author: mihart
+ms.author: maggies
 LocalizationGroup: Create reports
-ms.openlocfilehash: 5d5544fba824443b1ba7b58c3e9d21f7769554d6
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 327ba72c46aa5a6a2edea723bd5450cd5bbbcdb4
+ms.sourcegitcommit: fb1885da7cf11367660edbf7b7346dc039ee9b5d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34755319"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47187325"
 ---
 # <a name="use-power-bi-service-or-power-bi-desktop-to-create-a-custom-answer-page-for-cortana"></a>Käytä Power BI -palvelua tai Power BI Desktopia luodaksesi mukautettuja vastaussivuja Cortanaa varten
 Hyödynnä Power BI:n kaikkia ominaisuuksia ja luo erityisiä raporttisivuja, joita kutsutaan *Cortana-vastaussivuiksi* (sekä joskus nimellä *Cortana-vastauskortit*), ja jotka on suunniteltu vastaamaan erityisesti Cortana-kysymyksiin.

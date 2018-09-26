@@ -1,20 +1,20 @@
 ---
 title: Opetusohjelma – Q&A-toiminnon käyttö koontinäytössä tai raportissa
 description: Opetusohjelma uusien visualisointien luontiin koontinäytöissä ja raporteissa Power BI:n Q&A-toiminnon avulla.
-author: mihart
+author: maggiesMSFT
 manager: kfile
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 01/17/2018
-ms.author: mihart
+ms.author: maggies
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 2c90db1c08ba1d172acc4d0e82d23409d835879a
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 69e1bfffab1dd30685036b3c5265f81040a5f7c3
+ms.sourcegitcommit: fb1885da7cf11367660edbf7b7346dc039ee9b5d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46543586"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47187141"
 ---
 # <a name="tutorial-how-to-use-qa-to-create-visualizations-and-build-reports"></a>Opetusohjelma: Visualisointien ja raporttien luominen Q&A-toiminnon avulla
 [Q&A-yleiskatsauksessa](consumer/end-user-q-and-a.md) opit Power BI:n Q&A-toiminnon perusteet sekä *kuluttajien* (joille jaetaan koontinäyttöjä ja raportteja) ja *luojien* (pohjana olevien raporttien ja tietojoukkojen omistajat) erot. Tässä opetusohjelmassa ensimmäinen osa on tarkoitettu ensisijaisesti kuluttajille, jotka käyttävät Power BI -palvelua. Toinen osa on tarkoitettu henkilöille, jotka luovat raportteja joko Power BI -palvelussa tai Power BI Desktopissa. Muita tähän liittyviä artikkeleita ovat [Q&A ja Power BI:n mobiilisovellus](consumer/mobile/mobile-apps-ios-qna.md) sekä [Q&A ja Power BI Embedded](developer/qanda.md).

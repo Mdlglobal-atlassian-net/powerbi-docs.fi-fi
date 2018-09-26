@@ -1,21 +1,21 @@
 ---
 title: Raportin käsittely muokkausnäkymässä
 description: Raportin käsittely Power BI -palvelun raportin muokkausnäkymässä
-author: mihart
+author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 04/11/2018
-ms.author: mihart
+ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: 7640c9f49205de97556af9cfa51c641a93d9d69c
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 4c206e6b1abb37bdaeb0e03fbce31b7b12e356ba
+ms.sourcegitcommit: fb1885da7cf11367660edbf7b7346dc039ee9b5d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46547426"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47186649"
 ---
 # <a name="interact-with-a-report-in-editing-view-in-power-bi-service"></a>Raportin käsittely Power BI -palvelun muokkausnäkymässä
 Raportteja voidaan luoda ja muokata Power BI -palvelussa ja Power BI Desktopissa. Power BI -palvelussa raportteja voidaan luoda ja muokata **muokkausnäkymässä**. Power BI Desktopissa raportteja voidaan luoda ja muokata [**raporttinäkymässä**](desktop-report-view.md). Tässä artikkelissa käsitellään Power BI -palvelun muokkausnäkymää. 
