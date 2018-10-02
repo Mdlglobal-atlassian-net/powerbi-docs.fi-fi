@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 07/27/2018
+ms.date: 09/27/2018
 ms.author: davidi
 LocalizationGroup: Data refresh
-ms.openlocfilehash: e75cc0f7ca31257ea46af20b63c29d0d870ef7a0
-ms.sourcegitcommit: fbb7924603f8915d07b5e6fc8f4d0c7f70c1a1e1
+ms.openlocfilehash: bb29cd9edc5e44293344b7194ec94af482bd0166
+ms.sourcegitcommit: ce8332a71d4d205a1f005b703da4a390d79c98b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39329680"
+ms.lasthandoff: 09/27/2018
+ms.locfileid: "47417368"
 ---
 # <a name="data-refresh-in-power-bi"></a>Tietojen päivittäminen Power BI:ssä
 Varmista, että saat käyttöösi aina uusimmat tiedot päätöksenteon tueksi. Olet todennäköisesti jo käyttänyt Nouda tiedot -toimintoa Power BI:ssä yhteyden muodostamiseksi ja tietojen lataamiseksi sekä luonut raportteja ja raporttinäkymän. Nyt haluat varmistaa, että tiedot todella ovat uusimpia ja ajan tasalla.
@@ -211,8 +211,6 @@ Reaaliaikaiset raporttinäkymät hyödyntävät Microsoft Power BI REST -ohjelmo
 | **Tietolähde** | **Automaattinen** | **Käyttäjän määrittämä manuaalinen tai ajoitettu päivitys** | **Yhdyskäytävä tarvitaan** |
 | --- | --- | --- | --- |
 | Power BI Rest -ohjelmointirajapinnalla tai Microsoft Stream Analyticsilla kehitetyt mukautetut sovellukset |Kyllä, reaaliaikainen virtautus |Ei |Ei |
-
-Lisätietoja on artikkelissa [Reaaliaikaisen raporttinäkymän luonti Power BI:ssä](https://msdn.microsoft.com/library/mt267603.aspx).
 
 ## <a name="configure-scheduled-refresh"></a>Ajoitetun päivityksen määrittäminen
 Lisätietoja ajoitetun päivityksen määrittämisestä on kohdassa [Ajoitetun päivityksen määrittäminen](refresh-scheduled-refresh.md)
