@@ -2,12 +2,12 @@
 title: 'Microsoft Power BI: Ohjattu oppiminen'
 description: Aloita oppimisprosessi käymällä läpi kokoelma peräkkäisiä kursseja, joiden avulla opit tuntemaan Microsoft Power BI:n kattavat ja tehokkaat ominaisuudet.
 layout: LandingPage
-ms.openlocfilehash: 2cd748b60da6781ff9ea710b5802f3d68c3bc6b8
-ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
+ms.openlocfilehash: edcc3a365d84edf53ace6c1ac63d341914155161
+ms.sourcegitcommit: fb1885da7cf11367660edbf7b7346dc039ee9b5d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37600672"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47187348"
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -32,25 +32,9 @@ ms.locfileid: "37600672"
 Aloittaminen </h3>
                           <ul class="noBullet" style="margin: 24px;">
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="gettingstarted.yml?tutorial-step=1">Power BI:n esittely</a>
-                                <span style="margin-left: 32px; align-self: center;">5 min</span>
-                              </li>
-                              <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="gettingstarted.yml?tutorial-step=2">Power BI:n käyttäminen</a>
-                                <span style="margin-left: 32px; align-self: center;">4 min</span>
-                              </li>
-                              <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="gettingstarted.yml?tutorial-step=3">Power BI:n osat</a>
-                                <span style="margin-left: 32px; align-self: center;">6 min</span>
-                              </li>
-                              <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="gettingstarted.yml?tutorial-step=4">Power BI -palvelun yleiskatsaus</a>
-                                <span style="margin-left: 32px; align-self: center;">9 min</span>
-                              </li>
-                              <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="gettingstarted.yml?tutorial-step=5">Kertaus ja seuraavat vaiheet</a>
-                                <span style="margin-left: 32px; align-self: center;">5 min</span>
-                              </li>
+                                <a class="barLink" href="https://docs.microsoft.com/learn/paths/create-use-analytics-reports-power-bi/">Aloita Power BI:n käyttö Microsoft Learnin avulla</a>
+                                <span style="margin-left: 32px; align-self: center;">47m</span>
+                              </li>                              
                           </ul>
                       </div>
                     </div>
