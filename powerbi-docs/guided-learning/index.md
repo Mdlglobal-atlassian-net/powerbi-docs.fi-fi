@@ -2,12 +2,13 @@
 title: 'Microsoft Power BI: Ohjattu oppiminen'
 description: Aloita oppimisprosessi käymällä läpi kokoelma peräkkäisiä kursseja, joiden avulla opit tuntemaan Microsoft Power BI:n kattavat ja tehokkaat ominaisuudet.
 layout: LandingPage
-ms.openlocfilehash: edcc3a365d84edf53ace6c1ac63d341914155161
-ms.sourcegitcommit: fb1885da7cf11367660edbf7b7346dc039ee9b5d
+ms.service: powerbi
+ms.openlocfilehash: 8e9c26e48f50eb5b95a23f98329dbaea578e01d3
+ms.sourcegitcommit: f6360934b9af20bd630e2d3cb88398e3f5794090
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47187348"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48799065"
 ---
 <div id="main" class="v2">
     <div class="container">
