@@ -11,17 +11,17 @@ ms.topic: conceptual
 ms.date: 01/18/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 8f025c11a5269befdb7819684e10e8511ae6bc98
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 9fed01feb86530dbee10e446d41799a3e2ccd9e3
+ms.sourcegitcommit: 833cf1252807721fb1b3000487bd032bfd6c8c98
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46545633"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48271505"
 ---
 # <a name="share-a-filtered-power-bi-report-with-your-coworkers"></a>Suodatetun Power BI -raportin jakaminen työtovereiden kanssa
 *Jakaminen* on kätevä keino myöntää parille henkilölle käyttöoikeus luomiisi koontinäyttöihin ja raportteihin. Power BI tarjoaa myös [useita muita tapoja tehdä yhteistyötä ja jakaa raportteja](service-how-to-collaborate-distribute-dashboards-reports.md).
 
-Jakamisessa sinulla ja vastaanottajillasi on oltava myös [Power BI Pro -käyttöoikeudet](service-free-vs-pro.md) tai sisällön on oltava [Premium-kapasiteetissa](service-premium.md). Onko sinulla ehdotuksia? Power BI -tiimi on aina kiinnostunut palautteesta, joten siirry [Power BI -yhteisön sivustoon](https://community.powerbi.com/).
+Jakamisessa sinulla ja vastaanottajillasi on oltava myös [Power BI Pro -käyttöoikeudet](service-features-license-type.md) tai sisällön on oltava [Premium-kapasiteetissa](service-premium.md). Onko sinulla ehdotuksia? Power BI -tiimi on aina kiinnostunut palautteesta, joten siirry [Power BI -yhteisön sivustoon](https://community.powerbi.com/).
 
 Voit jakaa raportin kanssasi samassa sähköpostin toimialueessa oleville työtovereille Power BI -palvelun useimmista paikoista: Suosikit, Viimeisimmät, Jaettu kanssani (jos omistaja sallii sen), Oma työtila tai muut työtilat. Kun jaat raportin, sen vastaanottajat voivat tarkastella ja käsitellä sitä, mutta eivät voi muokata sitä. He näkevät samat tiedot kuin sinä raportissa, ellei sovelleta [rivitason suojausta (RLS)](service-admin-rls.md). 
 

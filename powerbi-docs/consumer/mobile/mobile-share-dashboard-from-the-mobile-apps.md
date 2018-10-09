@@ -9,12 +9,12 @@ ms.component: powerbi-mobile
 ms.topic: conceptual
 ms.date: 03/20/2018
 ms.author: maggies
-ms.openlocfilehash: 40d3e311e9ff9276200a37cabf2d29b324f83f7b
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: 4484eca5e810da7674d20e368383429c9c6f5508
+ms.sourcegitcommit: 833cf1252807721fb1b3000487bd032bfd6c8c98
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44732796"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48271643"
 ---
 # <a name="share-a-dashboard-or-report-from-the-power-bi-mobile-apps"></a>Koontinäytön tai raportin jakaminen Power BI -mobiilisovelluksista
 Koskee seuraavia:
@@ -23,7 +23,7 @@ Koskee seuraavia:
 |:--- |:--- |:--- |:--- |:--- |
 | iPhonet |iPadit |Android-puhelimet |Android-tabletit |Windows 10 -laitteet |
 
-[Power BI Pro -käyttöoikeuksilla](../../service-free-vs-pro.md) voit kutsua muita tarkastelemaan koontinäyttöjä ja raportteja jakamalla linkkejä Power BI -mobiilisovellusten kautta. Voit jakaa kenen tahansa kanssa, organisaation sisällä tai sen ulkopuolelle, yrityssähköpostitilillä tai ilman sitä. Heilläkin tosin täytyy olla Power BI Pro -käyttöoikeudet tai sisällön on oltava [Premium-kapasiteetissa](../../service-premium.md).
+[Power BI Pro -käyttöoikeuksilla](../../service-features-license-type.md) voit kutsua muita tarkastelemaan koontinäyttöjä ja raportteja jakamalla linkkejä Power BI -mobiilisovellusten kautta. Voit jakaa kenen tahansa kanssa, organisaation sisällä tai sen ulkopuolelle, yrityssähköpostitilillä tai ilman sitä. Heilläkin tosin täytyy olla Power BI Pro -käyttöoikeudet tai sisällön on oltava [Premium-kapasiteetissa](../../service-premium.md).
 
 iOS-ja Android-laitteiden Power BI -mobiilisovelluksista voit [jakaa kenelle tahansa tilannevedoksen ruudusta, raportista tai visualisoinnista ja lisätä merkintöjä niihin](mobile-annotate-and-share-a-tile-from-the-mobile-apps.md). 
 

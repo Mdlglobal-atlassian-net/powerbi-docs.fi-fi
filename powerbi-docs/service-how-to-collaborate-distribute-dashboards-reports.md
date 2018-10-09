@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 22d32315040352e013ae8331e9433a9e60e97f5c
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: c99d2047bc021f7e9d98145bc9cb884917fa3b5c
+ms.sourcegitcommit: 833cf1252807721fb1b3000487bd032bfd6c8c98
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46545747"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48271703"
 ---
 # <a name="how-should-i-collaborate-and-share-in-power-bi"></a>Miten voin tehdä yhteistyötä ja jakaa Power BI:ssä?
 
@@ -29,7 +29,7 @@ Tässä artikkelissa vertailemme yhteistyö- ja jakamisvaihtoehtoja Power BI:ss�
 - Raporttien tulostaminen.
 * Julkaiseminen verkossa julkisissa WWW-sivustoissa, joissa kuka tahansa voi tarkastella ja käyttää sisältöä.
 
-Riippumatta siitä, minkä vaihtoehdon valitset, raporttinäkymän jakamiseen tarvitaan [Power BI Pro -käyttöoikeus](service-free-vs-pro.md), tai sisällön on oltava [Premium-kapasiteetissa](service-premium.md). Raporttinäkymiäsi tarkastelevia työtovereita koskevat käyttöoikeusvaatimukset vaihtelevat valitsemasi vaihtoehdon mukaan. Seuraavissa osioissa annetaan lisätietoja. 
+Riippumatta siitä, minkä vaihtoehdon valitset, raporttinäkymän jakamiseen tarvitaan [Power BI Pro -käyttöoikeus](service-features-license-type.md), tai sisällön on oltava [Premium-kapasiteetissa](service-premium.md). Raporttinäkymiäsi tarkastelevia työtovereita koskevat käyttöoikeusvaatimukset vaihtelevat valitsemasi vaihtoehdon mukaan. Seuraavissa osioissa annetaan lisätietoja. 
 
 ![Power BI -palvelun sovellukset](media/service-how-to-collaborate-distribute-dashboards-reports/power-bi-apps-home-blog.png)
 
