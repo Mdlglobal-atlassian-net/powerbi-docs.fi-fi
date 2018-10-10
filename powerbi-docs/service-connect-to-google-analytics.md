@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: bd8a8b9a9aff451282c5cef8a6dd6f27b90335d7
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 1bb1831d37dc3f8bfe5ee141859cbccec541735e
+ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46548691"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "48908781"
 ---
 # <a name="connect-to-google-analytics-with-power-bi"></a>Google Analyticsin yhdistäminen Power BI:hin
 Yhteyden muodostaminen Google Analyticsiin Power BI:n kautta alkaa muodostamalla yhteys Google Analytics -tiliin. Saat Power BI:n koontinäytön ja joukon Power BI -raportteja, jotka tarjoavat merkityksellisiä tietoja sivuston liikenne- ja käyttäjädimensioista. Voit käsitellä koontinäyttöä ja raportteja, mutta et voi tallentaa muutoksia. Tiedot päivitetään automaattisesti kerran päivässä.
@@ -27,16 +27,16 @@ Voit luoda mukautettuja koontinäyttöjä ja raportteja aloittamalla [Google Ana
 ## <a name="how-to-connect"></a>Yhteyden muodostaminen
 [!INCLUDE [powerbi-service-apps-get-more-apps](./includes/powerbi-service-apps-get-more-apps.md)]
 
-1. Valitse **Google Analytics** \> **Nouda**.
+3. Valitse **Google Analytics** \> **Nouda**.
    
    ![](media/service-connect-to-google-analytics/ga.png)
-2. Anna pyydettäessä Google Analytics -tunnistetietosi. Valitse todennusmenetelmäksi **oAuth 2** ja valitse **Kirjaudu sisään**. Noudata Googlen todennustyönkulkua, joka saattaa sisältää 2-vaiheisen todennuksen, jos se on määritettynä.
+4. Anna pyydettäessä Google Analytics -tunnistetietosi. Valitse todennusmenetelmäksi **oAuth 2** ja valitse **Kirjaudu sisään**. Noudata Googlen todennustyönkulkua, joka saattaa sisältää 2-vaiheisen todennuksen, jos se on määritettynä.
    
    ![](media/service-connect-to-google-analytics/creds.png)
-3. Valitse **Hyväksy**, jotta Power BI voi käyttää Google Analytics -tietojasi.
+5. Valitse **Hyväksy**, jotta Power BI voi käyttää Google Analytics -tietojasi.
    
    ![](media/service-connect-to-google-analytics/googleanalytics.png)
-4. Power BI muodostaa yhteyden tiettyyn Google Analytics -näkymään. Valitse sen tilin nimi, ominaisuuden nimi ja näkymän nimi, johon haluat muodostaa yhteyden. Nämä tiedot löytyvät Google Analytics -tilistäsi joko vasemmasta yläkulmasta tai **Aloitus**-välilehdestä. Lisätietoja on alla. 
+6. Power BI muodostaa yhteyden tiettyyn Google Analytics -näkymään. Valitse sen tilin nimi, ominaisuuden nimi ja näkymän nimi, johon haluat muodostaa yhteyden. Nämä tiedot löytyvät Google Analytics -tilistäsi joko vasemmasta yläkulmasta tai **Aloitus**-välilehdestä. Lisätietoja on alla. 
    
    ![](media/service-connect-to-google-analytics/params2.png)
 5. Aloita tuontiprosessi valitsemalla **Yhdistä**. 
@@ -44,7 +44,7 @@ Voit luoda mukautettuja koontinäyttöjä ja raportteja aloittamalla [Google Ana
 ## <a name="view-the-google-analytics-dashboard-and-reports"></a>Google Analytics -koontinäytön ja -raporttien tarkasteleminen
 [!INCLUDE [powerbi-service-apps-open-app](./includes/powerbi-service-apps-open-app.md)]
 
-      ![](media/service-connect-to-google-analytics/googleanalytics2.png)
+   ![](media/service-connect-to-google-analytics/googleanalytics2.png)
 
 [!INCLUDE [powerbi-service-apps-open-app](./includes/powerbi-service-apps-what-now.md)]
 
@@ -69,7 +69,7 @@ Jatkuvatko ongelmat? Avaa tukipalvelupyyntö, jotta saat yhteyden Power BI -tiim
 * Valitse Power BI:n tukisivustossa (jossa luet tämän artikkelin) sivun oikealla puolella **Ota yhteyttä tukeen**.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
-* [Mitä ovat Power BI:n sovellukset?](consumer/end-user-apps.md)
+* [Mitä ovat Power BI:n sovellukset?](service-create-distribute-apps.md)
 * [Tietojen noutaminen Power BI:ssä](service-get-data.md)
 * Onko sinulla muuta kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)
 

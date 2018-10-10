@@ -8,15 +8,15 @@ featuredvideoid: jtlLGRKBvXY
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 05/25/2018
+ms.date: 08/25/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 8e5e2211af7dc53dba20a8d43c1083517b51bf17
-ms.sourcegitcommit: 70192daf070ede3382ac13f6001e0c8b5fb8d934
+ms.openlocfilehash: eac6a1b4f7a3f734aa22c715a4ef196193230283
+ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "46565977"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "48908850"
 ---
 # <a name="export-data-from-visualizations"></a>Tietojen vieminen visualisoinneista
 Jos haluat tarkastella tietoja, joita käytetään visualisoinnin luonnissa, voit [näyttää kyseiset tiedot Power BI:ssä](end-user-show-data.md) tai viedä tiedot Exceliin .xlsx- tai .csv-tiedostona.   
@@ -55,7 +55,7 @@ Seuraa mukana avaamalla [Hankinta-analyysimallin raportti](../sample-procurement
 4. Valitse visualisoinnin oikean yläkulman kolme pistettä. Valitse **Vie tiedot**.
 
    ![](media/end-user-export-data/power-bi-export-data2.png)
-5. Jos visualisoinnissa on Power BI:n verkkoversiossa kooste (esimerkiksi jos olet muuttanut **määrän** *keskiarvoksi*, **summaksi** tai *vähimmäisarvoksi*), sinulla on kaksi vaihtoehtoa: **Yhteenvedetyt tiedot** ja **Pohjana olevat tiedot**. Power BI Desktopissa vaihtoehtona on vain **Yhteenvedetyt tiedot** Katso lisätietoja koosteista artikkelista [Koosteet Power BI:ssa](../service-aggregates.md).
+5. Jos visualisoinnissa on Power BI:n verkkoversiossa kooste (esimerkiksi jos olet muuttanut **määrän** *keskiarvoksi*, *summaksi* tai *vähimmäisarvoksi*), sinulla on kaksi vaihtoehtoa: **Yhteenvedetyt tiedot** ja **Pohjana olevat tiedot**. Power BI Desktopissa vaihtoehtona on vain **Yhteenvedetyt tiedot** Katso lisätietoja koosteista artikkelista [Koosteet Power BI:ssa](../service-aggregates.md).
 
     ![](media/end-user-export-data/power-bi-export-data5.png)
 6. Valitse **Yhteenvedetyt tiedot** > **Vie** ja valitse .xlsx tai .csv. Power BI vie tiedot.  Jos olet käyttänyt suodattimia visualisoinnissa, viedyt tiedot viedään suodatettuina. Kun valitset **Vie**, selain pyytää sinua tallentamaan tiedoston. Kun tiedosto on tallennettu, avaa se Excelissä.

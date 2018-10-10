@@ -1,30 +1,32 @@
 ---
 title: Koontinäyttöjä ja raportteja hyödyntävien sovellusten asentaminen ja käyttäminen Power BI:ssä
 description: Power BI:ssä sovellukset kokoavat toisiinsa liittyvät koontinäytöt ja raportit yhteen paikkaan.
-author: mihart
-manager: kvivek
+author: maggies
+manager: kfile
 ms.reviewer: lukaszp
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 08/02/2018
-ms.author: mihart
+ms.date: 10/08/2018
+ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 0d9f16933bff264b10c0bff3e1b7c440a3d373a2
+ms.openlocfilehash: 3821227de7cbfd17fd25e476ec6b7807349a6672
 ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
 ms.translationtype: HT
 ms.contentlocale: fi-FI
 ms.lasthandoff: 10/10/2018
-ms.locfileid: "48907849"
+ms.locfileid: "48909864"
 ---
 # <a name="install-and-use-apps-with-dashboards-and-reports-in-power-bi"></a>Koontinäyttöjä ja raportteja hyödyntävien sovellusten asentaminen ja käyttäminen Power BI:ssä
-Power BI:ssä *sovellukset* kokoavat toisiinsa liittyvät koontinäytöt ja raportit yhteen paikkaan. Organisaatioon kuuluvat henkilöt voivat luoda ja jakaa yrityksen avaintietoja sisältäviä sovelluksia. Myös käytössäsi mahdollisesti jo olevat [ulkoiset palvelut](end-user-connect-to-services.md), kuten Google Analytics ja Microsoft Dynamics CRM, tarjoavat Power BI -sovelluksia. 
+Power BI:ssä *sovellukset* kokoavat toisiinsa liittyvät koontinäytöt ja raportit yhteen paikkaan. Organisaatioon kuuluvat henkilöt voivat luoda ja jakaa yrityksen avaintietoja sisältäviä sovelluksia. Myös käytössäsi mahdollisesti jo olevat [ulkoiset palvelut](service-connect-to-services.md), kuten Google Analytics ja Microsoft Dynamics CRM, tarjoavat Power BI -sovelluksia. 
 
-![Sovellukset Power BI:ssä](./media/end-user-apps/power-bi-apps-left-nav.png)
+![Sovellukset Power BI:ssä](media/service-install-use-apps/power-bi-apps-left-nav.png)
 
 Sovelluksia on helppo löytää ja asentaa Power BI -palveluun ([https://powerbi.com](https://powerbi.com)) ja mobiililaitteeseen. Kun olet asentanut sovelluksen, sinun ei tarvitse muistaa monien eri raporttinäkymien nimiä, sillä ne ovat kaikki yhdessä sovelluksessa, selaimessa tai mobiililaitteessa.
 
 Kun käytät sovelluksia,näet muutokset automaattisesti aina, kun sovelluksen tekijä julkaisee päivityksiä. Tekijä määrittää myös, kuinka usein tiedot ajoitetaan päivittymään, joten sinun ei tarvitse huolehtia niiden pitämisestä ajan tasalla. 
+
+Suunnitteletko oman sovelluksen tekemistä? Lisätietoja on artikkelissa [Työtilojen luominen työtovereiden kanssa Power BI:ssä](service-create-distribute-apps.md).
 
 ## <a name="get-a-new-app"></a>Uuden sovelluksen hankkiminen
 Voit hankkia sovelluksia muutamilla eri tavoilla. Sovelluksen tekijä voi asentaa sovelluksen automaattisesti Power BI -tiliisi tai lähettää sinulle suoran linkin sovellukseen. Voit myös etsiä sovellusta AppSourcessa, jossa näet kaikki käytettävissäsi olevat sovellukset. Jos käytät Power BI:tä mobiililaitteella, et voi asentaa sovellusta AppSourcen kautta vaan tarvitset suoran linkin. Jos sovelluksen tekijä asentaa sovelluksen automaattisesti, näet sen sovellusluettelossa.
@@ -36,32 +38,34 @@ Helpoin tapa asentaa uusi sovellus omatoimisesti on saada sovelluksen tekijält�
 
 Kun napsautat sähköpostissa olevaa linkkiä, Power BI-palvelu ([https://powerbi.com](https://powerbi.com)) avautuu selaimessa. Vahvista, että haluat asentaa sovelluksen, jolloin se avautuu sovelluksen aloitussivulle.
 
-![Sovelluksen aloitussivu Power BI -palvelussa](./media/end-user-apps/power-bi-app-landing-page-opportunity-480.png)
+![Sovelluksen aloitussivu Power BI -palvelussa](media/service-install-use-apps/power-bi-app-landing-page-opportunity-480.png)
 
 **iOS-tai Android-mobiililaite** 
 
 Kun napsautat sähköpostissa olevaa linkkiä mobiililaitteessa, sovellus asentuu automaattisesti ja avaa sovelluksen sisältöluettelon mobiilisovelluksessa. 
 
-![Sovelluksen sisältöluettelo mobiililaitteessa](./media/end-user-apps/power-bi-app-index-it-spend-360.png)
+![Sovelluksen sisältöluettelo mobiililaitteessa](media/service-install-use-apps/power-bi-app-index-it-spend-360.png)
 
 ### <a name="get-the-app-from-microsoft-appsource"></a>Sovelluksen hakeminen Microsoft AppSourcesta
 Voit myös etsiä ja asentaa käytettävissäsi olevia sovelluksia Microsoft AppSourcesta. 
 
-1. Valitse **Sovellukset** ![Sovellukset vasemmanpuoleisessa siirtymisruudussa](./media/end-user-apps/power-bi-apps-bar.png) > **Hanki sovelluksia**. 
+1. Valitse **Sovellukset** ![Sovellukset vasemmanpuoleisessa siirtymisruudussa](media/service-install-use-apps/power-bi-apps-bar.png) > **Hanki sovelluksia**. 
    
-     ![Hanki sovelluksia -kuvake](./media/end-user-apps/power-bi-service-apps-get-apps-oppty.png)
+     ![Hanki sovelluksia -kuvake](media/service-install-use-apps/power-bi-service-apps-get-apps-oppty.png)
 2. AppSourcen **Oma organisaatio** -osiossa voit tehdä hakuja rajataksesi tuloksia ja löytääksesi haluamasi sovelluksen.
    
-     ![Appsourcen Oma organisaatio -osio](./media/end-user-apps/power-bi-appsource-my-org.png)
+     ![Appsourcen Oma organisaatio -osio](media/service-install-use-apps/power-bi-appsource-my-org.png)
 3. Lisää sovellus Sovellukset-sivullesi valitsemalla **Hanki se nyt**. 
 
 ## <a name="interact-with-the-dashboards-and-reports-in-the-app"></a>Koontinäyttöjen ja raporttien käsitteleminen sovelluksessa
-Nyt voit tutkia koontinäyttöjen ja raporttien tietoja sovelluksessa. Voit käyttää kaikkia Power BI:n vakiotoimia, kuten suodatusta, korostusta, lajittelua ja porautumista. Voit myös [viedä tietoja Exceliin ](end-user-export-data.md) taulukosta tai muusta raportin visualisoinnista. Lue [Power BI-raporteissa käytettävissä olevista toimista](end-user-reading-view.md). 
+Nyt voit tutkia koontinäyttöjen ja raporttien tietoja sovelluksessa. Voit käyttää kaikkia Power BI:n vakiotoimia, kuten suodatusta, korostusta, lajittelua ja porautumista. Voit myös [viedä tietoja Exceliin ](visuals/power-bi-visualization-export-data.md) taulukosta tai muusta raportin visualisoinnista. Lue [Power BI-raporteissa käytettävissä olevista toimista](service-reading-view-and-editing-view.md). 
 
-![Tietojen vieminen Power BI -visualisoinnista](./media/end-user-apps/power-bi-service-export-data-visual.png)
+![Tietojen vieminen Power BI -visualisoinnista](media/service-install-use-apps/power-bi-service-export-data-visual.png)
 
 
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
-* [Power BI -sovellukset ulkoisille palveluille](end-user-connect-to-services.md)
+* [Sovellusten luominen ja julkaiseminen Power BI:ssä](service-create-distribute-apps.md)
+* [Power BI -sovellukset ulkoisille palveluille](service-connect-to-services.md)
+* Ilmenikö kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)
 

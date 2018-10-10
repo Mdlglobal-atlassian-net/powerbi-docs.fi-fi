@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/10/2017
 ms.author: mblythe
 LocalizationGroup: Premium
-ms.openlocfilehash: e60cc5341bba50d9fac82f032656f449cadaa255
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: b38c69d74141b28215e0a14a32fc7b03fab4fdbf
+ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46546540"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "48908873"
 ---
 # <a name="manage-capacities-within-power-bi-premium-and-power-bi-embedded"></a>Kapasiteettien hallinta Power BI Premiumissa ja Power BI Embeddedissä
 Opi, miten voit hallita Power BI Premiumin ja Power BI Embeddedin kapasiteetteja, jotka tarjoavat sisällöllesi erillisiä resursseja.
@@ -183,6 +183,6 @@ Voit avata tuoteavaimen sisältävän valintaikkunan valitsemalla **Power BI -ra
 Katso lisätietoja artikkelista [Power BI -raporttipalvelimen asentaminen](report-server/install-report-server.md).
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
-Jaa julkaistut sovellukset käyttäjien kanssa. Lisätietoja on ohjeartikkelissa [Sovelluksen luominen ja jakaminen Power BI:ssä](consumer/end-user-create-apps.md).
+Jaa julkaistut sovellukset käyttäjien kanssa. Lisätietoja on ohjeartikkelissa [Sovelluksen luominen ja jakaminen Power BI:ssä](service-create-distribute-apps.md).
 
 Ilmenikö muuta kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)

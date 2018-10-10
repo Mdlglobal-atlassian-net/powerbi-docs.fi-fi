@@ -10,12 +10,12 @@ ms.service: powerbi
 ms.component: powerbi-report-server
 manager: kfile
 ms.custom: mvc
-ms.openlocfilehash: 2b39d9ab5b8bae32dde6eda66f09f69a9718d569
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: f78638097ea33f9954f3db78c117f1935a68530b
+ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46548484"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "48908527"
 ---
 # <a name="comparing-power-bi-report-server-and-the-power-bi-service"></a>Power BI -raporttipalvelimen ja Power BI -palvelun vertailu
 
@@ -33,7 +33,7 @@ Power BI -raporttipalvelimessa ja Power BI -palvelussa on paljon samankaltaisuuk
 | Yhdyskäytävä tarvitaan | Ei | Kyllä (paikalliset tietolähteet) |  
 | Reaaliaikainen virtauttaminen | Ei | Kyllä | [Reaaliaikainen virtauttaminen Power BI:ssä](../service-real-time-streaming.md)
 | Koontinäytöt | Ei | Kyllä | [Raporttinäkymät Power BI -palvelussa](../consumer/end-user-dashboards.md) 
-| Raporttiryhmien jakaminen sovellusten avulla | Ei | Kyllä | [Raporttinäkymiä ja raportteja sisältävien sovellusten luominen ja julkaiseminen](../consumer/end-user-create-apps.md) 
+| Raporttiryhmien jakaminen sovellusten avulla | Ei | Kyllä | [Raporttinäkymiä ja raportteja sisältävien sovellusten luominen ja julkaiseminen](../service-create-distribute-apps.md) 
 | Sisältöpaketit | Ei | Kyllä | [Organisaation sisältöpaketit: johdanto](../service-organizational-content-pack-introduction.md) 
 | Yhteyden muodostaminen palveluihin (mm. Salesforce) | Ei | Kyllä | [Käyttämiesi palveluiden yhdistäminen ](../consumer/end-user-connect-to-services.md) Power BI -palveluun
 | Q&A | Ei | Kyllä | [Q&A Power BI -palvelussa ja Power BI Desktopissa](../consumer/end-user-q-and-a.md) 

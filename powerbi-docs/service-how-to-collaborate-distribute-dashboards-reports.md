@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: c99d2047bc021f7e9d98145bc9cb884917fa3b5c
-ms.sourcegitcommit: 833cf1252807721fb1b3000487bd032bfd6c8c98
+ms.openlocfilehash: bcec05211d3748e992f0e0cf68acd6460b2715d4
+ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48271703"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "48908965"
 ---
 # <a name="how-should-i-collaborate-and-share-in-power-bi"></a>Miten voin tehdä yhteistyötä ja jakaa Power BI:ssä?
 
@@ -57,7 +57,7 @@ Oletetaan, että haluat jakaa raporttinäkymän laajalle yleisölle. Sinä ja ty
 
 ![Sovelluskuvakkeen julkaiseminen](media/service-how-to-collaborate-distribute-dashboards-reports/power-bi-app-publish-600.png)
 
-Sovelluksia on helppo löytää ja asentaa Power BI -palvelussa ([https://powerbi.com](https://powerbi.com)). Voit lähettää yrityskäyttäjille suoran linkin sovellukseen tai he voivat hakea sen AppSourcesta. Jos Power BI -järjestelmänvalvojasi antaa sinulle oikeudet, voit asentaa sovelluksen automaattisesti työtovereidesi Power BI -tileille. Lue lisää [sovellusten julkaisemisesta](consumer/end-user-create-apps.md). 
+Sovelluksia on helppo löytää ja asentaa Power BI -palvelussa ([https://powerbi.com](https://powerbi.com)). Voit lähettää yrityskäyttäjille suoran linkin sovellukseen tai he voivat hakea sen AppSourcesta. Jos Power BI -järjestelmänvalvojasi antaa sinulle oikeudet, voit asentaa sovelluksen automaattisesti työtovereidesi Power BI -tileille. Lue lisää [sovellusten julkaisemisesta](service-create-distribute-apps.md). 
 
 Sovelluksen asentamisen jälkeen he voivat tarkastella sitä selaimessa tai mobiililaitteessa.
 
@@ -99,7 +99,7 @@ Voit julkaista Power BI -raportteja koko Internetissä upottamalla vuorovaikutte
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 * [Raporttinäkymien jakaminen työtovereiden ja muiden kanssa](service-share-dashboards.md)
-* [Sovelluksen luominen ja julkaiseminen Power BI:ssä](consumer/end-user-create-apps.md)
+* [Sovelluksen luominen ja julkaiseminen Power BI:ssä](service-create-distribute-apps.md)
 * Haluatko antaa palautetta? Anna ehdotuksia siirtymällä [Power BI -yhteisön sivustolle](https://community.powerbi.com/).
 * Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/).
 

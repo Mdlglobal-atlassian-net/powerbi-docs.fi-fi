@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/30/2018
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: a00913ea326f472993553910a79e3cc208356499
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 94ca76af9366752f4e1033fa05147f867e7096d9
+ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46546713"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "48908896"
 ---
 # <a name="connect-to-microsoft-dynamics-nav-with-power-bi"></a>Yhteyden muodostaminen Microsoft Dynamics NAViin Power BI:n avulla
 Merkityksellisten tietojen saaminen Microsoft Dynamics NAV-tietoihin on helppoa Power BI:n avulla. Power BI noutaa sekä Myynti- että Rahoitus-tiedot ja luo niiden pohjalta sovelluksen raporttinäkymin ja raportein. Power BI edellyttää oikeuksia taulukoihin, joista tiedot on noudettu, tässä tapauksessa myynti- ja rahoitustiedot. Lisätietoja vaatimuksista on alla. Kun olet asentanut sovelluksen, voit tarkastella raporttinäkymää ja raportteja Power BI -palvelussa ([https://powerbi.com](https://powerbi.com)) ja Power BI -mobiilisovelluksissa. 
@@ -25,9 +25,9 @@ Merkityksellisten tietojen saaminen Microsoft Dynamics NAV-tietoihin on helppoa 
 ## <a name="how-to-connect"></a>Yhteyden muodostaminen
 [!INCLUDE [powerbi-service-apps-get-more-apps](./includes/powerbi-service-apps-get-more-apps.md)]
 
-1. Valitse **Microsoft Dynamics NAV** ja valitse sitten **Hae**.  
+3. Valitse **Microsoft Dynamics NAV** ja valitse sitten **Hae**.  
    ![](media/service-connect-to-microsoft-dynamics-nav/mdnav.png)
-2. Kirjoita pyydettäessä Microsoft Dynamics NAV OData URL. URL:n pitää vastata seuraavaa kuvaa:
+4. Kirjoita pyydettäessä Microsoft Dynamics NAV OData URL. URL:n pitää vastata seuraavaa kuvaa:
    
     `https//instance.navserver.com:7048/DynamicsNAV90_Instance1/OData/Company('CRONUS%20International%20Ltd.')`
    
@@ -37,12 +37,12 @@ Merkityksellisten tietojen saaminen Microsoft Dynamics NAV-tietoihin on helppoa 
      
      Helppo tapa hankkia tarvittava URL-osoite on siirtyä Dynamics NAVin verkkopalveluihin, etsiä sieltä powerbifinance-verkkopalvelu ja kopioida Odata-URL-osoite, mutta jättää pois ”/powerbifinance...”  
      ![](media/service-connect-to-microsoft-dynamics-nav/param.png)
-3. Valitse **Perus** ja anna Microsoft Dynamics NAV-tunnuksesi.
+5. Valitse **Perus** ja anna Microsoft Dynamics NAV-tunnuksesi.
    
     Tarvitset järjestelmänvalvojan tunnistetiedot (tai ainakin käyttöoikeudet myynti- ja talous-tietoihin) Microsoft Dynamics NAV-tilillesi.  Vain perustodennusta (käyttäjänimi ja salasana) tuetaan tällä hetkellä.
    
     ![](media/service-connect-to-microsoft-dynamics-nav/creds.png)
-4. Power BI noutaa Microsoft Dynamics NAV -tietosi ja luo käyttövalmiin raporttinäkymän ja raportin puolestasi.   
+6. Power BI noutaa Microsoft Dynamics NAV -tietosi ja luo käyttövalmiin raporttinäkymän ja raportin puolestasi.   
    ![](media/service-connect-to-microsoft-dynamics-nav/dashboard.png)
 
 ## <a name="view-the-dashboard-and-reports"></a>Tarkastele raporttinäkymä ja raportit
@@ -99,7 +99,7 @@ Jos näet ”Oho!”-virheikkunan, kun olet jo ohittanut todennusvalintaikkunan,
     `https//instance.navserver.com:7048/DynamicsNAV90\_Instance1/OData/Company('CRONUS%20International%20Ltd.')`
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
-* [Mitä ovat Power BI:n sovellukset?](consumer/end-user-apps.md)
+* [Mitä ovat Power BI:n sovellukset?](service-create-distribute-apps.md)
 * [Tietojen noutaminen Power BI:ssä](service-get-data.md)
 * Onko sinulla muuta kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)
 

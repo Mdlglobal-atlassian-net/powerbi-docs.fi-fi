@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/01/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 5268241c32112847c879407374b325dd63dd8aab
-ms.sourcegitcommit: 70192daf070ede3382ac13f6001e0c8b5fb8d934
+ms.openlocfilehash: cae5c83f6e220689bfd7d484d5d86c188325ad05
+ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "46564829"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "48908620"
 ---
 # <a name="reports-in-power-bi"></a>Raportit Power BI:ssä
 ## <a name="what-is-a-power-bi-report"></a>Mikä on Power BI -raportti?
@@ -67,7 +67,7 @@ Tässä on joitakin aiheita esiteltyinä roolin mukaan, joiden avulla pääset a
 * Aloita [Power BI -palvelun esittelyllä](end-user-basic-concepts.md) niin tiedät, mistä raportit ja raporttityökalut löytyvät.
 * Opi [avaamaan raportti](end-user-report-open.md) ja tutustu kaikkeen [lukunäkymässä](end-user-reading-view.md) käytettävissä olevaan vuorovaikutukseen.
 * Tutustu raportteihin paremmin tutustumalla johonkin [malleistamme](../sample-tutorial-connect-to-the-samples.md).  
-* Etkö tarvitse raporttia enää? Voit [poistaa sen](end-user-delete.md).
+<!--* Don't need the report any more? You can [remove it](../service-delete.md).-->
 * Katso, mitä tietojoukkoa raportissa käytetään ja missä koontinäytöissä on raportista kiinnitettyjä ruutuja, [tarkastelemalla asiaan liittyvää sisältöä](end-user-related.md).
 
 > [!TIP]
@@ -79,6 +79,4 @@ Tässä on joitakin aiheita esiteltyinä roolin mukaan, joiden avulla pääset a
 [Mikä on Power BI?](../power-bi-overview.md) 
 
 [Power BI:n peruskäsitteet](end-user-basic-concepts.md)
-
-Onko sinulla muuta kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
 

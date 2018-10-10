@@ -10,15 +10,15 @@ ms.topic: conceptual
 ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: ad430f438bb6418378b13f3104f87a3bd972a2e4
-ms.sourcegitcommit: 833cf1252807721fb1b3000487bd032bfd6c8c98
+ms.openlocfilehash: c732d1128719db500e13194d36ba1db2605efd2c
+ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48271873"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "48908693"
 ---
 # <a name="connect-to-files-stored-in-onedrive-for-your-power-bi-app-workspace"></a>Yhteyden muodostaminen Power BI-sovellustyötilasta OneDriveen tallennettuihin tiedostoihin
-[Luotuasi Power BI:hin sovellustyötilan](consumer/end-user-create-apps.md) voit tallentaa Excel-, CSV- ja Power BI Desktop ‑tiedostosi OneDrive for Business ‑palveluun ja käyttää niitä sieltä Power BI ‑sovellustyötilassa. Voit päivittää OneDriveen tallentamiasi tiedostoja, jolloin päivitykset tulevat automaattisesti esiin myös kyseisiin tiedostoihin perustuvissa Power BI ‑raporteissa ja koontinäytöissä. 
+[Luotuasi Power BI:hin sovellustyötilan](service-create-distribute-apps.md) voit tallentaa Excel-, CSV- ja Power BI Desktop ‑tiedostosi OneDrive for Business ‑palveluun ja käyttää niitä sieltä Power BI ‑sovellustyötilassa. Voit päivittää OneDriveen tallentamiasi tiedostoja, jolloin päivitykset tulevat automaattisesti esiin myös kyseisiin tiedostoihin perustuvissa Power BI ‑raporteissa ja koontinäytöissä. 
 
 > [!NOTE]
 > Uusi työtilakokemuksen esiversio muuttaa Power BI -työtilojen ja Office 365:n ryhmien välistä suhdetta. Et luo automaattisesti Office 365 -ryhmää aina, kun luot uuden työtilan. Lisätietoja [uusien työtilojen luomisesta (esikatselu)](service-create-the-new-workspaces.md)
@@ -79,7 +79,7 @@ Nyt kun tiedostosi ovat sovellustyötilasi OneDrive for Business ‑tallennustil
     ![](media/service-connect-to-files-in-app-workspace-onedrive-for-business/power-bi-app-excel-file-connect.png)
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
-* [Sovellusten ja sovellustyötilojen luominen Power BI:ssä](consumer/end-user-create-apps.md)
+* [Sovellusten ja sovellustyötilojen luominen Power BI:ssä](service-create-distribute-apps.md)
 * [Tietojen tuominen Excel-työkirjoista](service-get-data-from-files.md)
 * [Yhteyden muodostaminen kokonaisiin Excel-työkirjoihin](service-excel-workbook-files.md)
 * Onko sinulla muuta kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
