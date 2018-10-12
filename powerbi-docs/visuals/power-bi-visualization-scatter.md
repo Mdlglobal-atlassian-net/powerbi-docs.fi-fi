@@ -8,24 +8,24 @@ featuredvideoid: PVcfPoVE3Ys
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/28/2018
+ms.date: 09/28/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 13bc26eaecdcc9b3a00f22f75f6f9a5322d823f6
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: bd09adf21292b16ee27f111ac92bbd8c83c384d8
+ms.sourcegitcommit: 769ef3c8cbafd9ad5979eb4023a394ac7dba8d02
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44736435"
+ms.lasthandoff: 09/28/2018
+ms.locfileid: "47448841"
 ---
 # <a name="scatter-charts-and-bubble-charts-in-power-bi"></a>Pistekaaviot ja kuplakaaviot Power BI:ssä
 Pistekaaviossa on aina kaksi arvoakselia, jotka näyttävät yhden numeerisen tietosarjan vaakasuuntaisella akselilla ja toisen numeerisen arvosarjan pystysuuntaisella akselilla. Kaaviossa näytetään arvopisteet numeerisen arvon X ja Y leikkauskohdassa yhdistämällä nämä kaksi arvoa yhdeksi arvopisteeksi. Nämä arvopisteet voidaan jakaa tasaisesti tai epätasaisesti vaakasuuntaiselle akselille tietojen mukaan.
 
 Kuplakaaviossa arvopisteet korvataan kuplilla ja kuplan *koko* kuvastaa tietojen muuta dimensiota.
 
-![](media/power-bi-visualization-scatter/power-bi-bubble-chart.png)
+![kuplakaavion malli](media/power-bi-visualization-scatter/power-bi-bubble-chart.png)
 
-Voit määrittää arvopisteiden määrän  
+Voit määrittää arvopisteiden määrän. Niiden enimmäismäärä on 10 000.  
 
 ## <a name="when-to-use-a-scatter-chart-or-bubble-chart"></a>Milloin kannattaa käyttää pistekaaviota tai kuplakaaviota
 ### <a name="scatter-charts-are-a-great-choice"></a>Pistekaavio on hyvä valinta:
@@ -50,7 +50,7 @@ Katso tästä videosta, miten Will luo pistekaavion, ja noudata sitten seuraavia
 
 Näissä ohjeissa käytetään jälleenmyyntianalyysimallia. Jos haluat seurata ohjeita itse, [lataa malli](../sample-datasets.md) joko Power BI ‑palveluun (app.powerbi.com) tai Power BI Desktopiin.   
 
-1. Valitse keltainen plus-kuvake luodaksesi [tyhjän raporttisivun](../power-bi-report-add-page.md).
+1. Avaa raportti muokkausnäkymässä ja valitse keltainen plus-kuvake luodaksesi [tyhjän raporttisivun](../power-bi-report-add-page.md).
  
 2. Valitse Kentät-ruudusta seuraavat kentät:
    - **Myynti** > **Myynti/neliöjalka**
@@ -81,20 +81,20 @@ Nyt lisätään kolmas dimensio.
    
     ![](media/power-bi-visualization-scatter/pbi_scatter_chart_hover.png)
 
-3. Voit määrittää kuplakaaviossa näkyvien arvopisteiden määrän laajentamalla **Visualisoinnit**-ruudun **Muoto**-osiossa olevan kortin **Yleistä** ja säätämällä kohtaa **Tietojen määrä**. Voit määrittää tietojen enimmäismääräksi minkä tahansa luvun, joka on enintään 10 000. Suurten lukujen yhteydessä on suositeltavaa testata toiminta ensin hyvän suorituskyvyn varmistamiseksi. 
+3. Voit määrittää kuplakaaviossa näkyvien arvopisteiden määrän laajentamalla **Visualisoinnit**-ruudun **Muotoilu**-osiossa olevan kortin **Yleistä** ja säätämällä kohtaa **Tietojen määrä**. Voit määrittää tietojen enimmäismääräksi minkä tahansa luvun, joka on enintään 10 000. Suurten lukujen yhteydessä on suositeltavaa testata toiminta ensin hyvän suorituskyvyn varmistamiseksi. 
 
-    ![Tietojen määrä](./media/power-bi-visualization-scatter/pbi_scatter_data_volume.png) 
+    ![Tietojen määrä](media/power-bi-visualization-scatter/pbi_scatter_data_volume.png) 
 
    > [!NOTE]
    > Enemmän arvopisteitä voi tarkoittaa pidempää latausaikaa, joten jos haluat julkaista raportteja, joiden rajat ovat asteikon yläpäässä, testaa raporttejasi myös verkossa ja mobiililaitteilla sen varmistamiseksi, että suorituskyky vastaa käyttäjien odotuksia. Ota huomioon, että suurempien arvopistemäärien osalta sinun on testattava tuloksia erilaisilla muototekijöillä hyvän suorituskyvyn varmistamiseksi.
 
 4. Voit [muotoilla visualisoinnin värejä, nimiä, otsikoita, taustaa ja muuta](service-getting-started-with-color-formatting-and-axis-properties.md). Jos haluat [parantaa helppokäyttöisyyttä](../desktop-accessibility.md), harkitse merkin muotojen lisäämistä kullekin riville. Erilaisten merkin muotojen käyttö kullekin riville helpottaa raporttien käyttäjiä erottamaan rivit (tai alueet) toisistaan. Voi valita merkin muodon laajentamalla **Muodot**-kortin ja valitsemalla sitten merkin muodon.
 
-      ![Merkin muoto](./media/power-bi-visualization-scatter/pbi_scatter_marker.png)
+      ![Merkin muoto](media/power-bi-visualization-scatter/pbi_scatter_marker.png)
 
    Voit myös muuttaa merkin muodon vinoneliöksi, kolmioksi tai neliöksi:
 
-   ![Neliömerkki](./media/power-bi-visualization-scatter/pbi_scatter_chart_hover_square.png)
+   ![Neliömerkki](media/power-bi-visualization-scatter/pbi_scatter_chart_hover_square.png)
 
 
 ## <a name="considerations-and-troubleshooting"></a>Huomioon otettavat seikat ja vianmääritys
@@ -104,8 +104,7 @@ Onko pistekaaviossasi vain yksi arvopiste, joka koostaa kaikki arvot X- ja Y-aks
 
 ![](media/power-bi-visualization-scatter/pbi_scatter_tshoot1.png)
 
-Lisää kenttä **Tiedot**-alueelle ja kerro näin Power BI:lle, miten arvot ryhmitetään. Kentän on oltava yksilöllinen jokaiselle arvopisteelle, jonka haluat piirtää.  
-Esimerkiksi yksinkertainen rivin numero tai tunnuskenttä:
+Lisää kenttä **Tiedot**-alueelle ja kerro näin Power BI:lle, miten arvot ryhmitetään. Kentän on oltava yksilöllinen jokaiselle arvopisteelle, jonka haluat piirtää, esim. yksinkertainen rivin numero tai tunnuskenttä.
 
 ![](media/power-bi-visualization-scatter/pbi_scatter_tshoot.png)
 
@@ -116,9 +115,8 @@ Tai jos tiedoissasi ei ole näitä, luo kenttä, joka liittää X- ja Y-arvot yh
 Jos haluat luoda uuden kentän, [käytä Power BI Desktopin kyselyeditoria lisätäksesi indeksisarakkeen](../desktop-add-custom-column.md) tietojoukkoosi.  Lisää sitten tämä sarake visualisointisi **Tiedot**-alueelle.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
+
+[Suuren tiheyden pistekaaviot](desktop-high-density-scatter-charts.md)
+
 [Visualisointityypit Power BI:ssä](power-bi-visualization-types-for-reports-and-q-and-a.md)
-
-[Rekisteröi ilmainen kokeiluversio](https://powerbi.microsoft.com/get-started/)  
-
-Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
 

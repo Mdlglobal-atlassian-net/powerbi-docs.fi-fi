@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 09/10/2018
+ms.date: 09/27/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 69c0e6d253a1d8d8ecad9f562c0b992c01d4d577
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 4264b10ac9ae42585ea8b814d0c15de7ea318752
+ms.sourcegitcommit: ce8332a71d4d205a1f005b703da4a390d79c98b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46547116"
+ms.lasthandoff: 09/27/2018
+ms.locfileid: "47416793"
 ---
 # <a name="create-tooltips-based-on-report-pages-in-power-bi-desktop"></a>Power BI Desktopissa luotuihin raporttisivuihin perustuvien työkaluvihjeiden luominen
 Voit luoda visuaalisesti monipuolisia **raporttityökaluvihjeitä**, jotka tulevat näkyviin, kun pidät hiiren osoitinta visualisoinnin päällä, ja jotka pohjautuvat **Power BI Desktopissa** luomiisi raporttisivuihin. Kun luot työkaluvihjeenä toimivan raporttisivun, mukautetut työkaluvihjeet voivat sisältää visualisointeja, kuvia ja muita kohdekokoelmia, joita luot raporttisivulla. 
@@ -125,7 +125,7 @@ Muutamat **työkaluvihjeitä** koskevat rajoitukset ja tärkeät seikat on syyt�
 
 * Työkaluvihjeet yleisesti saataville tuoneesta **Power BI Desktopin** syyskuun 2018 julkaisuversiosta alkaen myös korttivisualisoinnit tukevat työkaluvihjeitä.
 * **Power BI Desktopin** heinäkuun 2018 julkaisusta alkaen tuetaan taulukko- ja matriisivisualisointien työkaluvihjeitä. 
-* Raportin työkaluvihjeitä ei tueta, kun raportteja tarkastellaan mobiilisovelluksissa tai upotetuissa ympäristöissä, kuten Julkaise verkkoon. 
+* Raporttityökaluvihjeitä ei tueta, kun raporttia tarkastellaan mobiilisovelluksella. 
 * Raportin työkaluvihjeitä ei tueta mukautetuissa visualisoinneissa. 
 * Klustereita ei tällä hetkellä tueta kenttinä, jotka voidaan näyttää raportin työkaluvihjeissä. 
 * Valittaessa raportin työkaluvihjeiden kanssa näytettävää kenttää ja käytettäessä kenttää luokan asemesta kyseisen kentän sisältävät visualisoinnit näyttävät vain määritetyn työkaluvihjeen, kun valitun kentän yhteenveto on vastaava. 

@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 07/27/2018
+ms.date: 09/27/2018
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: a3102ff26a4dbf58d8db0073f1af9cf2db5b6515
-ms.sourcegitcommit: f01a88e583889bd77b712f11da4a379c88a22b76
+ms.openlocfilehash: 63b75aae9fb9299119b606458a4a8832d77dd1be
+ms.sourcegitcommit: ce8332a71d4d205a1f005b703da4a390d79c98b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39329381"
+ms.lasthandoff: 09/27/2018
+ms.locfileid: "47417161"
 ---
 # <a name="real-time-streaming-in-power-bi"></a>Reaaliaikainen suoratoisto Power BI:ssä
 Power BI: reaaliaikaisen suoratoiston avulla voit suoratoistaa tietoja ja päivittää koontinäyttöjä reaaliajassa. Kaikki Power BI:ssä luotavat visualisoinnit tai koontinäytöt voidaan luoda myös näyttämään ja päivittämään reaaliaikaisia tietoja ja visualisointeja. Tietojen suoratoistoon käytettävät laitteet ja lähteet voivat olla tehtaiden tunnistimia, sosiaalisen median lähteitä, huoltokäyttötietoja ja mitä tahansa muita, joista voidaan kerätä ja lähettää ajan mukaan määräytyviä tietoja.
@@ -65,7 +65,7 @@ Seuraavassa taulukossa (eli matriisissa) kuvataan reaaliaikaisen suoratoiston ko
 ![](media/service-real-time-streaming/real-time-streaming_11.png)
 
 > [!NOTE]
-> Katso [MSDN-artikkelista](https://msdn.microsoft.com/library/dn950053.aspx) lisätietoja **Push**-siirtotoiminnon rajoituksista tietojen siirtomäärien osalta.
+> Katso [tästä artikkelista](https://docs.microsoft.com/power-bi/developer/api-rest-api-limitations) lisätietoja **Push**-siirtotoiminnon rajoituksista tietojen siirtomäärien osalta.
 > 
 > 
 
@@ -83,14 +83,12 @@ Katsotaanpa kutakin vaihtoehtoa yksi kerrallaan.
 ### <a name="using-power-bi-rest-apis-to-push-data"></a>Power BI REST -ohjelmointirajapintojen käyttäminen tietojen siirtämiseen
 **Power BI REST -ohjelmointirajapintojen** avulla voidaan luoda ja lähettää tietoja tietojoukkojen **siirtämiseksi** ja tietojoukkojen **suoratoistamiseksi**. Kun luot tietojoukon Power BI REST -ohjelmointirajapinnan avulla, *defaultMode* (oletustila) -merkki kertoo, onko tietojoukko tyypiltään push (siirto) vai streaming (suoratoisto). Jos *defaultMode*-merkkiä ei ole asetettu, tietojoukon oletustilana on **push**-tietojoukko.
 
-Jos *defaultMode*-arvoksi on määritetty *pushStreaming*, tietojoukko on sekä **push**- *että* **streaming**-tietojoukko, jolloin siinä on kummankin tietojoukkotyypin parhaat puolet. REST-ohjelmointirajapinnan [artikkelissa **Tietojoukon luomisesta**](https://msdn.microsoft.com/library/mt203562.aspx) esitellään suoratoistettavan tietojoukon luominen ja siinä näytetään myös *defaultMode*-merkintä käytännössä.
+Jos *defaultMode*-arvoksi on määritetty *pushStreaming*, tietojoukko on sekä **push**- *että* **streaming**-tietojoukko, jolloin siinä on kummankin tietojoukkotyypin parhaat puolet. 
 
 > [!NOTE]
 > Käytettäessä tietojoukkoja, joilla *defaultMode* -merkintä, joka on asetettu tilaan *pushStreaming*, jos pyyntö ylittää **streaming**-tietojoukolle asetetun 15 kilotavua kokorajoituksen, mutta on pienempi kuin **push**-tietojoukolle asetettu 16 megatavun kokorajoitus, pyyntö onnistuu ja tiedot päivitetään push-tietojoukkoon. Suoratoistettavat ruudut kuitenkin epäonnistuvat tilapäisesti.
-> 
-> 
 
-Kun tietojoukko on luotu, käytä tietojen siirtämiseen REST-ohjelmointirajapintaa käyttämällä [ **Lisää rivejä** -ohjelmointirajapintaa](https://msdn.microsoft.com/library/mt203561.aspx), kuten [tässä artikkelissa on esitelty](https://msdn.microsoft.com/library/mt203561.aspx).
+Kun tietojoukko on luotu, käytä tietojen siirtämiseen REST-ohjelmointirajapintaa käyttämällä [**PostRows**-ohjelmointirajapintaa](https://docs.microsoft.com/rest/api/power-bi/pushdatasets/datasets_postrows).
 
 Kaikki pyynnöt REST-ohjelmointirajapintaan on suojattu **Azure AD OAuth** -todennuksella.
 
@@ -159,9 +157,9 @@ Seuraavissa osissa tutustutaan kumpaankin vaihtoehtoon vuorollaan.
 
 ![](media/service-real-time-streaming/real-time-streaming_5.png)
 
-Jos haluat, että Power BI tallentaa tiedot, jotka lähetetään tämän tietovirran kautta, ota käyttöön *Historiatietojen analyysi*, jolloin voit tehdä raportteja ja analyyseja kerätystä tietovirrasta. Voit myös [lukea lisää ohjelmointirajapinnasta](https://msdn.microsoft.com/library/dn877544.aspx).
+Jos haluat, että Power BI tallentaa tiedot, jotka lähetetään tämän tietovirran kautta, ota käyttöön *Historiatietojen analyysi*, jolloin voit tehdä raportteja ja analyyseja kerätystä tietovirrasta. Voit myös [lukea lisää ohjelmointirajapinnasta](https://docs.microsoft.com/rest/api/power-bi/).
 
-Kun olet onnistuneesti luonut tietovirran, saat REST-ohjelmointirajapinnan URL-päätepisteen, johon sovelluksesi voi ottaa yhteyden käyttämällä *POST*-pyyntöjä tietojen siirtämiseksi luomaasi Power BI:n **suoratoistettavien tietojen** tietojoukkoon.
+Kun olet luonut tietovirran, saat REST-ohjelmointirajapinnan URL-päätepisteen, johon sovelluksesi voi ottaa yhteyden käyttämällä *POST*-pyyntöjä tietojen siirtämiseksi luomaasi Power BI:n **suoratoistettavien tietojen** tietojoukkoon.
 
 *POST*-pyyntöjä tehtäessä tulee varmistaa, että pyynnön runko vastaa Power BI -käyttöliittymän antamaa näyte-JSON:ia. Voit esimerkiksi paketoida JSON-objektit matriisiin.
 
@@ -223,10 +221,10 @@ Push-tietojoukkojen kohdalla voit yrittää luoda raporttivisualisoinnin viimeis
 Valitettavasti tämä ei ole käytettävissä tällä hetkellä.
 
 #### <a name="given-the-previous-question-how-can-i-do-any-modeling-on-real-time-datasets"></a>Ottaen huomioon edellisen kysymyksen, miten voin tehdä mallinnuksia reaaliaikaisiin tietojoukkoihin?
-Mallinnuksen tekeminen ei ole mahdollista suoratoistettaviin tietojoukkoihin, koska tietoja ei tallenneta pysyvästi. Push-tietojoukon kohdalla voit käyttää tietojoukon/taulukon päivitystä REST-ohjelmointirajapinnassa mittayksiköiden ja suhteiden lisäämiseksi. Lisätietoja on [Taulukkorakenteen päivitys -artikkelissa](https://msdn.microsoft.com/library/mt203560.aspx) ja [Tietojoukon ominaisuudet -artikkelissa](https://msdn.microsoft.com/library/mt742155.aspx).
+Mallinnuksen tekeminen ei ole mahdollista suoratoistettaviin tietojoukkoihin, koska tietoja ei tallenneta pysyvästi. Push-tietojoukon kohdalla voit käyttää tietojoukon/taulukon päivitystä REST-ohjelmointirajapinnassa mittayksiköiden ja suhteiden lisäämiseksi. 
 
 #### <a name="how-can-i-clear-all-the-values-on-a-push-dataset-how-about-streaming-dataset"></a>Miten voit poistaa kaikki push-tietojoukon arvot? Entä suoratoistettavan tietojoukon?
-Push-tietojoukolle voit käyttää Poista rivejä -kutsua REST -ohjelmointirajapinnassa. Voit myös erikseen käyttää tätä kätevää työkalua, joka on paketointitoiminto REST-ohjelmointirajapinnassa. Tällä hetkellä tietoja ei voida poistaa suoratoistettavasta tietojoukosta, tiedot tosin poistuvat itsestään tunnin kuluessa.
+Push-tietojoukolle voit käyttää Poista rivejä -kutsua REST -ohjelmointirajapinnassa. Tällä hetkellä tietoja ei voida poistaa suoratoistettavasta tietojoukosta, tiedot tosin poistuvat itsestään tunnin kuluessa.
 
 #### <a name="i-set-up-an-azure-stream-analytics-output-to-power-bi-but-i-dont-see-it-appearing-in-power-bi--whats-wrong"></a>Olen määrittänyt Azure Stream Analytics -tulosteen Power BI:hin, mutta en näe sitä Power BI:ssä – mistä tämä johtuu?
 Tässä on tarkistusluettelo, jota voit käyttää vianmääritykseen:
@@ -241,9 +239,6 @@ Tässä on tarkistusluettelo, jota voit käyttää vianmääritykseen:
 ## <a name="next-steps"></a>Seuraavat vaiheet
 Tässä on joitakin linkkejä, joista voi olla hyötyä käsiteltäessä reaaliaikaista suoratoistoa Power BI:ssä:
 
-* [Power BI REST -ohjelmointirajapinnan ja reaaliaikaisten tietojen yleiskatsaus](https://msdn.microsoft.com/library/dn877544.aspx)
-* [Power BI REST -ohjelmointirajapinnan rajoitukset](https://msdn.microsoft.com/library/dn950053.aspx)
-* [REST-ohjelmointirajapinnan artikkeli aiheesta **Tietojoukon luominen**](https://msdn.microsoft.com/library/mt203562.aspx)
-* [**Lisää rivejä** Power BI REST -ohjelmointirajapinta](https://msdn.microsoft.com/library/mt203561.aspx)
+* [Power BI REST -ohjelmointirajapinnan ja reaaliaikaisten tietojen yleiskatsaus](https://docs.microsoft.com/rest/api/power-bi/)
 * [Azure Stream Analytics](https://azure.microsoft.com/services/stream-analytics/)
 

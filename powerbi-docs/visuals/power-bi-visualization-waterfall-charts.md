@@ -8,15 +8,15 @@ featuredvideoid: maTzOJSRB3g
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 01/20/2018
+ms.date: 09/27/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: d1c771ed49a000374c58beb694dda511a8c9a097
-ms.sourcegitcommit: 70192daf070ede3382ac13f6001e0c8b5fb8d934
+ms.openlocfilehash: e9b48b79b30250c442140929045132fe1c4b10e8
+ms.sourcegitcommit: 769ef3c8cbafd9ad5979eb4023a394ac7dba8d02
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "46565816"
+ms.lasthandoff: 09/28/2018
+ms.locfileid: "47448910"
 ---
 # <a name="waterfall-charts-in-power-bi"></a>Vesiputouskaaviot Power BI:ssä
 Vesiputouskaavio näyttää juoksevan summan, kun arvoja lisätään tai vähennetään. On hyödyllistä ymmärtää, kuinka positiivisten ja negatiivisten muutosten sarja vaikuttaa alkuarvoon (esimerkiksi nettotuloon).
@@ -39,32 +39,32 @@ Luomme vesiputouskaavion, joka näyttää myynnin vaihtelun (arvioitu myynti vs.
 
 1. Valitse **Tietojoukot**-välilehti ja vieritä uuteen Jälleenmyyntianalyysimalli-tietojoukkoon.  Avaa tietojoukko raportin muokkausnäkymään valitsemalla **Luo raportti** -kuvake. 
    
-    ![](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-report.png)
-2. Valitse **Kentät**-ruudussa **Myynti \> Myyntivariaatio yhteensä**. Jos **Myyntivariaatio yhteensä** ei ole **Y-akselin** alueella, vedä se sinne.
-3. Muuta kaavio **vesiputoukseksi**. 
+    ![Tietojoukot-välilehti korostettuna](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-report.png)
+2. Valitse **Kentät**-ruudussa **Myynti \> Myyntivariaatio yhteensä**. 
+3. Muuta kaavio **vesiputoukseksi**. Jos **Myyntivariaatio yhteensä** ei ole **Y-akselin** alueella, vedä se sinne.
    
-    ![](media/power-bi-visualization-waterfall-charts/convertwaterfall.png)
+    ![Visualisointimallit](media/power-bi-visualization-waterfall-charts/convertwaterfall.png)
 4. Valitse **Aika** \> **FiscalMonth** ja lisää se **Luokka**-kohtaan. 
    
-    ![](media/power-bi-visualization-waterfall-charts/power-bi-waterfall.png)
+    ![vesiputous](media/power-bi-visualization-waterfall-charts/power-bi-waterfall.png)
 5. Lajittele vesiputouskaavio aikajärjestyksessä. Valitse kaavion oikeasta yläkulmasta kolme pistettä (...) ja valitse **FiscalMonth**.
    
-    ![](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-sort.png)
+    ![valitse lajitteluperuste > FiscalMonth](media/power-bi-visualization-waterfall-charts/power-bi-sort-by.png)
    
-    ![](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-sorted.png)
+    ![tulokset nousevassa järjestyksessä uuden lajitteluperusteen mukaisesti](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-sorted.png)
 6. Tarkastele hieman enemmän nähdäksesi, mikä aiheuttaa eniten muutoksia kuukausittain. Vedä **Myymälä** > **Alue** ja **Erittely**-säilöön.
    
-    ![](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-breakdown.png)
+    ![Näyttää Myymälän Erittely-säilössä](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-breakdown.png)
 7. Oletusarvon mukaan Power BI lisää 5 suurinta osallistujaa nousuun tai laskuun kuukauden mukaan. Mutta me olemme kiinnostuneita vain 2 suurimmasta osallistujasta.  Valitse Muotoilu-ruudussa **Erittely** ja määritä **Suurin arvo** -kohtaan 2.
    
-    ![](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-breakdown-maximum.png)
+    ![Muotoilu > Erittely](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-breakdown-maximum.png)
    
     Lyhyestä katsauksesta käy ilmi, että Ohion ja Pennsylvanian alueet ovat vesiputouskaavion suurimmat osallistujat sekä negatiivisessa että positiivisessa liikkeessä. 
    
-    ![](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-axis.png)
-8. Tämä on mielenkiintoinen havainto. Onko Ohion ja Pennsylvanian vaikutus niin merkittävä, koska myynti näillä kahdella alueella on paljon muita alueita suurempaa?  Voimme tarkistaa asian. Luo kartta, joka tarkastelee myyntiä alueen mukaan.  
+    ![vesiputouskaavio](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-axis.png)
+8. Tämä on mielenkiintoinen havainto. Onko Ohion ja Pennsylvanian vaikutus niin merkittävä, koska myynti näillä kahdella alueella on paljon muita alueita suurempaa?  Voimme tarkistaa asian. Luo kartta, jossa myynti näytetään alueen mukaan tänä vuonna ja viime vuonna.  
    
-    ![](media/power-bi-visualization-waterfall-charts/power-bi-map.png)
+    ![kartta lähennettynä Pennsylvaniaan ja Ohioon](media/power-bi-visualization-waterfall-charts/power-bi-map.png)
    
     Karttamme tukee teoriaa.  Se näyttää, että näillä kahdella alueella oli suurin myyntiarvo viime vuonna (kuplan koko) ja tänä vuonna (kuplan varjostus).
 
@@ -74,13 +74,7 @@ Lisätietoja Suodattimet-paneelin käyttämisestä saat ohjeaiheesta [Suodattime
 Sarakkeen korostaminen vesiputouskaaviossa ristiinsuodattaa muut raporttisivulla olevat visualisoinnit... ja päinvastoin. Summasarake ei kuitenkaan käynnistä korostusta tai vastaa ristiinsuodatukseen.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
-[Raportit Power BI:ssä](../consumer/end-user-reports.md)
+
+[Visualisointitoimet](../service-reports-visual-interactions.md)
 
 [Visualisointityypit Power BI:ssä](power-bi-visualization-types-for-reports-and-q-and-a.md)
-
-[Visualisoinnit Power BI -raporteissa](power-bi-report-visualizations.md)
-
-[Power BI:n peruskäsitteet](../consumer/end-user-basic-concepts.md)
-
-Onko sinulla muuta kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
-

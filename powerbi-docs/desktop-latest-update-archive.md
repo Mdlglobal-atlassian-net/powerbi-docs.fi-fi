@@ -7,21 +7,21 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 09/10/2018
+ms.date: 09/27/2018
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: e7eadadede8f342b25ea59dcd2053f53d654ffff
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: c9e4769be12d3da96064a82661a739a94e8a7c6e
+ms.sourcegitcommit: ce8332a71d4d205a1f005b703da4a390d79c98b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44728314"
+ms.lasthandoff: 09/27/2018
+ms.locfileid: "47417391"
 ---
 # <a name="previous-monthly-updates-to-power-bi-desktop"></a>Power BI Desktopin aiemmat kuukausipäivitykset
 
 Tämä artikkeli käsittelee **Power BI Desktopin** aiempia päivityksiä. Tiedot viimeisimmän kuukauden päivityksestä ovat ohjeaiheessa [ **Power BI Desktopin** uusimmat päivitykset](desktop-latest-update.md).
 
-Voit halutessasi [ladata Power BI Desktopin uusimman version](https://powerbi.microsoft.com/desktop). Jos käytössäsi on Windows 10, voit hankkia **Power BI Desktopin** Microsoft Storesta. Kuukausittaiset versiot ovat samat riippumatta siitä, millä tavoin asennat **Power BI Desktopin**. Lisätietoja on [tässä artikkelissa](desktop-get-the-desktop.md). 
+Voit halutessasi [ladata Power BI Desktopin uusimman version](https://powerbi.microsoft.com/desktop). Jos käytössäsi on Windows 10, voit hankkia **Power BI Desktopin** Microsoft Storesta. **Power BI Desktopin** kuukausittaiset versiot ovat samat, vaikka versioiden numerointi saattaa poiketa. Lisätietoja on [tässä artikkelissa](desktop-get-the-desktop.md). 
 
 Kunkin päivityksen vieressä olevat linkit tarkoittavat seuraavaa:
 

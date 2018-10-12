@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/27/2018
+ms.date: 09/27/2018
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: ca2f9e3393df2fd205474983ab9868aa9401ed9d
-ms.sourcegitcommit: f01a88e583889bd77b712f11da4a379c88a22b76
+ms.openlocfilehash: 474fe7eee6dbcb296a7eaec6057ecfa56cd3f144
+ms.sourcegitcommit: ce8332a71d4d205a1f005b703da4a390d79c98b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39329197"
+ms.lasthandoff: 09/27/2018
+ms.locfileid: "47417115"
 ---
 # <a name="dax-basics-in-power-bi-desktop"></a>DAX-perusteet Power BI Desktopissa
 Tämä artikkeli on tarkoitettu uusille Power BI Desktopin käyttäjille. Sen on tarkoitus antaa sinulle helppo ja nopea esittely siitä, miten voit käyttää Data Analysis Expression (DAX) -kaavaa ja ratkaista sillä useita peruslaskutoimituksia ja tietojen analysointiongelmia. Artikkeli sisältää käsitteellisiä tietoja, joukon harjoitustehtäviä ja muutamia tietovisoja, joilla voit testata, mitä olet oppinut. Kun olet käynyt tämän artikkelin läpi, sinulla pitäisi olla hyvä käsitys DAX:n tärkeimmistä peruskäsitteistä.
@@ -87,25 +87,23 @@ Tämän tehtävän tekemistä varten sinun on avattava Contoso Sales Sample Powe
     
 2. Korvaa kaavarivillä näkyvä **Measure** (Mittayksikkö) -sana kirjoittamalla uusi mittayksikön nimi **Previous Quarter Sales** (Edellisen neljänneksen myynti).
     
-3. Kirjoita yhtäläisyysmerkin jälkeen **SUM** ja sen perään vasen sulkumerkki.
-    
-   Sen sijaan, että kirjoittaisimme sarakkeen nimen suorittaaksemme yhteenlaskun välittömästi, kirjoitammekin toisen funktion, jolla *suodatamme* tiedot, jotka haluamme laskea yhteen.
-    
-4. Kirjoita sulkeisiin funktio **CALCULATE** ja sen perään vasen sulkumerkki.
-    
+3. Kirjoita yhtäläisyysmerkin jälkeen ensimmäiset kirjaimet **CAL** ja kaksoisnapsauta sitten haluamaasi funktiota. Tässä kaavassa halutaan käyttää **CALCULATE**-funktiota.
+
    CALCULATE-funktion avulla suodatat määrät, jotka haluamme laskea yhteen argumentilla, jonka välitämme CALCULATE-funktioon. Näitä kutsutaan sisäkkäisiksi funktioiksi. CALCULATE-funktiolla on vähintään kaksi argumenttia. Ensimmäinen on laskettava lauseke, ja toinen on suodatin.
    
-5. Kirjoita **CALCULATE**-funktion sulkeiden **()** väliin **Sales[SalesAmount]**. Tämä on CALCULATE-funktiomme ensimmäinen lausekeargumentti.
+4. Kirjoita **CALCULATE**-funktion alkusulkeen **(** jälkeen **SUM** ja sen toinen alkusulje **(**. Nyt välitämme argumentin SUM-funktioon.
+
+5. Ala kirjoittaa **Sal**, ja valitse sitten **Sales[SalesAmount]** ja lisää sen jälkeen loppusulje **)**. Tämä on CALCULATE-funktiomme ensimmäinen lausekeargumentti.
     
-6. Kirjoita pilkku (**,**), mikä määrittää ensimmäisen suodattimen, ja kirjoita sen jälkeen **PREVIOUSQUARTER** ja sen perään vasen sulkumerkki.
+6. Kirjoita pilkku (**,**) ja lisää sen perään välilyönti, mikä määrittää ensimmäisen suodattimen. Kirjoita sitten **PREVIOUSQUARTER**. Tämä on suodattimemme.
     
-   Käytät PREVIOUSQUARTER-aikatietofunktiota suodattaaksesi SUM-tuloksemme edellisellä neljänneksellä.
+   Käytät PREVIOUSQUARTER-aikatietofunktiota suodattaaksesi SUM-tulokset edellisellä neljänneksellä.
     
-7. Kirjoita PREVIOUSQUARTER-funktion sulkeiden **()** väliin **Calendar[DateKey]**.
+7. Kirjoita PREVIOUSQUARTER-funktion alkusulkeen **(** jälkeen **Calendar[DateKey]**.
     
-   PREVIOUSQUARTER-funktiolla on yksi argumentti, peräkkäisistä päivämääristä muodostuvan alueen sisältä sarake.
+   PREVIOUSQUARTER-funktiolla on yksi argumentti, peräkkäisistä päivämääristä muodostuvan alueen sisältä sarake. Tässä tapauksessa kyseessä on kalenteri-taulukon DateKey-sarake.
     
-8. Varmista, että PREVIOUSQUARTER-funktioon ja CALCULATE-funktioon välitettyjen argumenttien perässä on kaksi oikeaa sulkumerkkiä **))**.
+8. Varmista, että PREVIOUSQUARTER-funktioon ja CALCULATE-funktioon välitettyjen argumenttien perässä on kaksi loppusuljetta **))**.
     
    Kaavan pitäisi nyt näyttää tältä:
     

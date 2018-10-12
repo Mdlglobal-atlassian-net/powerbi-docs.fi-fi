@@ -8,15 +8,15 @@ featuredvideoid: xmja6Epqa
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 01/21/2018
+ms.date: 09/21/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: e090515514897dd4dcbc9962d0dadacae5611ff0
-ms.sourcegitcommit: 70192daf070ede3382ac13f6001e0c8b5fb8d934
+ms.openlocfilehash: 71cde810f98a81ab5670b3ab04bc1cd502277c1c
+ms.sourcegitcommit: ce8332a71d4d205a1f005b703da4a390d79c98b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "46565549"
+ms.lasthandoff: 09/27/2018
+ms.locfileid: "47416862"
 ---
 # <a name="radial-gauge-charts-in-power-bi"></a>Viisarimittarikaaviot Power BI:ssä
 Viisarimittarikaaviossa on pyöreä kaari, ja siinä on yksi arvo, joka mittaa edistymistä kohti tavoitetta/suorituskyvyn mittaria.  Tavoite tai tavoitearvo esitetään riveittäin (neula). Tämän päämäärän edistyminen esitetään varjostuksella.  Arvo, joka edustaa kyseistä edistymistä, näkyy lihavoituna kaaren sisällä. Kaikki mahdolliset arvot on jaettu tasaisesti kaarta pitkin minimistä (äärimmäisenä vasemmalla oleva arvo) maksimiin (äärimmäisenä oikealla oleva arvo).
@@ -92,7 +92,7 @@ Vaiheessa 2 Power BI käytti Arvo-kenttää asettamana automaattisesti minimin (
 
 ### <a name="step-5-save-your-report"></a>Vaihe 5: Tallenna raporttisi
 1. [Tallenna raportti](../service-report-save.md).
-2. [Mittarikaavion lisääminen koontinäytön ruutuna](../consumer/end-user-tiles.md). 
+2. [Mittarikaavion lisääminen koontinäytön ruutuna](../service-dashboard-pin-tile-from-report.md). 
 
 ## <a name="use-formatting-options-to-manually-set-minimum-maximum-and-target-values"></a>Käytä muotoiluasetuksia, minimi-, maksimi- ja tavoitearvojen asettamiseen
 1. Vedä **Maksimibruttomyynti** kohdasta **Maksimiarvo**.
@@ -110,14 +110,8 @@ Vaiheessa 2 Power BI käytti Arvo-kenttää asettamana automaattisesti minimin (
     ![](media/power-bi-visualization-radial-gauge-charts/power-bi-gauge-target.png)
 6. Jatka vaihtoehtoisesti mittarikaavion muotoilua.
 
-## <a name="next-steps"></a>Seuraavat vaiheet
+## <a name="next-step"></a>Seuraava vaihe
+
+[Mittarit Power BI:ssä](power-bi-visualization-kpi.md)
+
 [Visualisointityypit Power BI:ssä](power-bi-visualization-types-for-reports-and-q-and-a.md)
-
-[Visualisoinnin lisääminen raporttiin](power-bi-report-add-visualizations-i.md)
-
-[Visualisoinnin kiinnittäminen koontinäyttöön](../service-dashboard-pin-tile-from-report.md)
-
-[ Power BI - peruskäsitteet](../consumer/end-user-basic-concepts.md)
-
-Onko sinulla muuta kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
-

@@ -8,15 +8,15 @@ featuredvideoid: lnv66cTZ5ho
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/27/2018
+ms.date: 09/27/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 68b14e6554c0c12590f555f6447198f1a850e9b1
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 1855b65277fe778a20bd9e4629f8db1e7b9000a3
+ms.sourcegitcommit: 769ef3c8cbafd9ad5979eb4023a394ac7dba8d02
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46543999"
+ms.lasthandoff: 09/28/2018
+ms.locfileid: "47448956"
 ---
 # <a name="combo-chart-in-power-bi"></a>Yhdistelmäkaavio Power BI:ssä
 Power BI:ssä yhdistelmäkaavio on yksittäinen visualisointi, joka yhdistää viivakaavion ja pylväskaavion. Näiden kahden kaavion yhdistäminen nopeuttaa tietojen vertailua.
@@ -55,9 +55,9 @@ Seuraavassa videossa luodaan yhdistelmäkaavio käyttämällä myynti- ja markki
     c.  Valitse **Aika** \> **FiscalMonth** ja lisää se **Akseli**-kohtaan.
 
     ![](media/power-bi-visualization-combo-chart/combotutorial1new.png)
-5. Valitse kolme pistettä (...) visualisoinnin oikeassa yläkulmassa ja valitse **Lajitteluperuste: FiscalMonth**. Joudut ehkä valitsemaan sen kahdesti, jos haluat lajitella nousevaan tai laskevaan järjestykseen.
+5. Valitse kolme pistettä (...) visualisoinnin oikeasta yläkulmasta ja valitse **Lajitteluperuste > FiscalMonth**. Jos haluat muuttaa lajittelujärjestyksen, valitse kolme pistettä uudelleen ja valitse joko **Lajittele nousevaan järjestykseen** tai **Lajittele laskevaan järjestykseen**.
 
-6. Muunna pylväskaavio yhdistelmäkaavioksi. Pidä pylväskaavio valittuna ja valitse **Visualisoinnit**-ruudussa **Viiva- ja yhdistelmäpylväskaavio**.
+6. Muunna pylväskaavio yhdistelmäkaavioksi. Käytettävissä on kaksi yhdistelmäkaaviota: **viivakaavio ja pinottu pylväskaavio** ja **viivakaavio ja yhdistelmäpylväskaavio**. Pidä pylväskaavio valittuna ja valitse **Visualisoinnit**-ruudussa **Viiva- ja yhdistelmäpylväskaavio**.
 
     ![](media/power-bi-visualization-combo-chart/converttocombo_new2.png)
 7. Vedä **Kentät**-ruudusta **Myynti** \> **Edellisen vuoden myynti** säilöön **Riviarvot**.
@@ -71,7 +71,8 @@ Seuraavassa videossa luodaan yhdistelmäkaavio käyttämällä myynti- ja markki
 ## <a name="create-a-combo-chart-with-two-axes"></a>Kahden akselin yhdistelmäkaavion luominen
 Tässä tehtävässä verrataan myyntikatetta ja myyntiä.
 
-1. Luo uusi viivakaavio, joka seuraa **viime vuoden myyntikateprosenttia** **kuukauden** mukaan.  Myyntikate oli tammikuussa 35 %, huipussaan 45 % huhtikuussa, laski heinäkuussa ja nousi uudelleen elokuussa. Näemmekö samanlaisen kuvion edellisen ja tämän vuoden myynnissä?
+1. Luo uusi viivakaavio, joka seuraa **viime vuoden myyntikateprosenttia** **kuukauden** mukaan. Valitse kolme pistettä ja lajittele kaavio **kuukauden** mukaan **nousevassa järjestyksessä**.  
+Myyntikate oli tammikuussa 35 %, huipussaan 45 % huhtikuussa, laski heinäkuussa ja nousi uudelleen elokuussa. Näemmekö samanlaisen kuvion edellisen ja tämän vuoden myynnissä?
 
    ![](media/power-bi-visualization-combo-chart/combo1_new.png)
 2. Lisää **Tämän vuoden myynti > Arvo** ja **Edellisen vuoden myynti** viivakaavioon. **Edellisen vuoden myyntikateprosentin** asteikko on paljon pienempi kuin **myynnin**, mikä vaikeuttaa vertailua.      
@@ -80,7 +81,7 @@ Tässä tehtävässä verrataan myyntikatetta ja myyntiä.
 3. Voit helpottaa visualisoinnin tulkitsemista muuntamalla viivakaavion viivakaavioksi ja pinotuksi pylväskaavioksi.
 
    ![](media/power-bi-visualization-combo-chart/converttocombo_new.png)
-4. Vedä **Edellisen vuoden myyntikateprosentti** **sarakearvoista** **riviarvoihin**. Power BI luo kaksi akselia, jolloin tietojoukkoja voidaan skaalata erikseen; vasen mittaa myyntiä euroissa ja oikea prosenttilukua.
+4. Vedä **Edellisen vuoden myyntikateprosentti** **sarakearvoista** **riviarvoihin**. Power BI luo kaksi akselia, jolloin tietojoukkoja voidaan skaalata erikseen; vasen mittaa myyntiä euroissa ja oikea prosenttilukua. Saat vastauksen kysymykseen; kyllä, samanlainen kuvio on havaittavissa.
 
    ![](media/power-bi-visualization-combo-chart/power-bi-combochart.png)    
 
@@ -103,20 +104,16 @@ Tässä tehtävässä verrataan myyntikatetta ja myyntiä.
 
 Seuraavat toiminnot:
 
-* [Yhdistelmäkaavion lisääminen koontinäytön ruutuna](../consumer/end-user-tiles.md)
+* [Yhdistelmäkaavion lisääminen koontinäytön ruutuna](../service-dashboard-tiles.md)
 * [Tallenna raportti](../service-report-save.md).
-* [Tee raportista helpommin käytettävä toimintarajoitteisille ihmisille](../desktop-accessibility.md)
+* [Tee raportista helpommin käytettävä toimintarajoitteisille ihmisille](../desktop-accessibility.md).
 
 ## <a name="cross-highlighting-and-cross-filtering"></a>Ristiinkorostaminen ja ristiinsuodatus
 
-Sarakkeen tai rivin korostaminen yhdistelmäkaaviossa ristiinkorostaa ja ristiinsuodattaa muut raporttisivulla olevat visualisoinnit... ja päinvastoin. Voit muuttaa tätä oletustoimintaa [visualisointitoimien](../consumer/end-user-interactions.md) avulla.
+Sarakkeen tai rivin korostaminen yhdistelmäkaaviossa ristiinkorostaa ja ristiinsuodattaa muut raporttisivulla olevat visualisoinnit... ja päinvastoin. Voit muuttaa tätä oletustoimintaa [visualisointitoimien](../service-reports-visual-interactions.md) avulla.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
-[Power BI -raporttien visualisointien yleiskatsaus](power-bi-report-visualizations.md)
+[Rengaskaaviot Power BI:ssä](power-bi-visualization-doughnut-charts.md)
 
 [Visualisointityypit Power BI:ssä](power-bi-visualization-types-for-reports-and-q-and-a.md)
-
-[Power BI:n peruskäsitteet](../consumer/end-user-basic-concepts.md)
-
-Onko sinulla muuta kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
