@@ -9,12 +9,12 @@ ms.topic: overview
 ms.date: 09/22/2018
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 73a3188256b754517beb9f83a382c4005de6e7e7
-ms.sourcegitcommit: ce8332a71d4d205a1f005b703da4a390d79c98b6
+ms.openlocfilehash: 61264a2a127ea45f542543d40fd62a9de8c3620d
+ms.sourcegitcommit: f6360934b9af20bd630e2d3cb88398e3f5794090
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "47416977"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48798904"
 ---
 # <a name="what-is-power-bi"></a>Mikä Power BI on?
 **Power BI** on kokoelma ohjelmistopalveluja, sovelluksia ja yhdistimiä, jotka yhdessä muuntavat toisiinsa liittymättömistä lähteistä peräisin olevan tiedon johdonmukaisiksi, visuaalisesti vaikuttaviksi ja vuorovaikutteisiksi näkemyksiksi. **Power BI:n** avulla voit helposti muodostaa yhteyden tietolähteisiin, jotka voivat olla lähes mitä tahansa yksinkertaisesta Excel-laskentataulukosta kokoelmaan pilvipohjaisia ja paikallisia hybriditietovarastoja. Voit löytää ja visualisoida tärkeät tiedot sekä jakaa tulokset kaikille tarvittaville tahoille.
@@ -43,7 +43,7 @@ Voit esimerkiksi tarkastella varastotilannetta tai valmistumisprosessin etenemis
 
 Rooliasi vastaavien dokumenttien tutkiminen:
 - Power BI [***suunnittelijoille***](desktop-what-is-desktop.md)
-- Power BI [***kuluttajille***](consumer/end-user-consuming.md)
+- Power BI [***kuluttajille***](consumer/end-user-consumer.md)
 - Power BI [***kehittäjille***](developer/what-can-you-do.md)
 - Power BI [***järjestelmänvalvojille***](service-admin-administering-power-bi-in-your-organization.md)
 
