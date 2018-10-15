@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 09/23/2018
 ms.author: nikhilga
 LocalizationGroup: Get started
-ms.openlocfilehash: 1472646d1a4dc338740583ab759c2fc71aa1e56d
-ms.sourcegitcommit: fbc1fabcb5e3b285228c9aa192b9b421b2782922
+ms.openlocfilehash: 10f637e822817d6bd0fa1692a6d1b029be312d4f
+ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "47059089"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "48909172"
 ---
 ---
 # <a name="whats-new-in-the-power-bi-service"></a>Power BI -palvelun uudet toiminnot ja ominaisuudet
@@ -593,7 +593,7 @@ Saat lisätietoja [blogista](http://blogs.msdn.com/b/powerbi/archive/2015/10/06/
 
 * Power BI:sta julkaistaan yleisesti saatavilla oleva versio. Rekisteröidy tänään [Power BI Prohon](service-self-service-signup-for-power-bi.md). Osana yleisesti saatavilla olevan version julkaisua tarjotaan eräitä hienoja uusia ominaisuuksia:
 * Uusi visualisoinnin ja raportin luomiskokemus: uusi raporttipohja sisältää suuremman visualisointivalikoiman, paremman otsikoiden, selitteiden, akseleiden, värien ja taustojen hallinnan ja paljon muuta.
-* [Power BI -ryhmät](consumer/end-user-create-apps.md): Ryhmät ovat tehokas Office 365 -ryhmiin perustuva yhteistyötoiminto.
+* [Power BI -ryhmät](service-create-distribute-apps.md): Ryhmät ovat tehokas Office 365 -ryhmiin perustuva yhteistyötoiminto.
 * [Organisaation sisältöpaketit](service-organizational-content-pack-introduction.md): Power BI tekee koontinäyttöjen ja raporttien luomisesta erittäin yksinkertaista, ja nyt käyttäjät voivat julkaista tätä sisältöä organisaation sisältövalikoimassa.
 * [Tuo kokonaisia Excel-tiedostoja](service-excel-workbook-files.md): Voit tuoda minkä tahansa OneDrive for Businessiin tallennetun Excel-työkirjan Power BI:hin ja näyttää koko työkirjan samalla tavalla kuin Excel Onlinessa.
 * [Tuo CSV-tiedostoja](service-get-data-from-files.md): Samalla tavalla kuin Excel- tai Power BI Desktop -tiedosto, myös CSV-tiedosto voi olla Power BI -koontinäyttöjesi ja -raporttiesi tietojoukko.
