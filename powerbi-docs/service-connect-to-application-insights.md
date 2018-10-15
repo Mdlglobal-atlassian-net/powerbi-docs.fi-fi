@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/10/2018
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 3c1000eb48cfb53f5838f19f6c0ece4403e9d3ba
-ms.sourcegitcommit: 126e5eca8bfab6273581dabd7603df88be755240
+ms.openlocfilehash: 00a42a3ffcc92ca7bc48459635359acb9da8da82
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/11/2018
-ms.locfileid: "40256972"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46548346"
 ---
 # <a name="connect-to-application-insights-with-power-bi"></a>Application Insightsin yhdistäminen Power BI:hin
 Power BI:n avulla voit luoda tehokkaita mukautettuja raporttinäkymiä [Application Insights](https://azure.microsoft.com/documentation/articles/app-insights-overview/) -telemetriatiedoista. Näet sovellustelemetrian uusilla tavoilla. Yhdistä mittareita useista sovelluksista tai komponenttipalveluista yhteen raporttinäkymään. Power BI -sisältöpaketin ensimmäisessä Application Insights -julkaisussa on pienoissovelluksia yleisiä käyttöön liittyviä arvoja varten. Näitä ovat muun muassa aktiiviset käyttäjät, sivunäkymä, istunnot, selain- ja käyttöjärjestelmäversiot sekä käyttäjien maantieteellinen jakauma kartalla.
@@ -47,9 +47,9 @@ Muodosta yhteys [Application Insights -sisältöpakettiin Power BI:tä varten](h
 
 **Mitä seuraavaksi?**
 
-* Kokeile [kysymyksen esittämistä raporttinäkymän yläreunassa olevassa Q&A-ruudussa](power-bi-q-and-a.md).
+* Kokeile [kysymyksen esittämistä raporttinäkymän yläreunassa olevassa Q&A-ruudussa](consumer/end-user-q-and-a.md).
 * [Muuta koontinäytön ruutuja](service-dashboard-edit-tile.md).
-* [Valitse jokin ruutu](service-dashboard-tiles.md), jolloin siihen liittyvä raportti avautuu.
+* [Valitse jokin ruutu](consumer/end-user-tiles.md), jolloin siihen liittyvä raportti avautuu.
 * Tietojoukko on ajastettu päivittymään päivittäin, mutta voit muuttaa päivitysaikataulua tai kokeilla tietojoukon päivittämistä **Päivitä nyt** -toiminnolla haluamanasi ajankohtana
 
 ## <a name="whats-included"></a>Paketin sisältö

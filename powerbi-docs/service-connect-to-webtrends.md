@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 2250e3739904e6cc1e36c03df45cc765d3d9b591
-ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
+ms.openlocfilehash: f60fe155cb723550128ea6d35805932cb4559669
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37135233"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46544735"
 ---
 # <a name="connect-to-webtrends-with-power-bi"></a>Yhteyden muodostaminen Webtrendsiin Power BI:n avulla
 Power BI:lle suunniteltu Webtrends-sisältöpaketti sisältää lukuisia heti käyttövalmiita mittareita, kuten sivunäkymien yhteismäärän ja vierailut liikenteen lähteen mukaan. Aloita Webtrends-tietojen visualisointi Power BI:ssä muodostamalla yhteys Webtrends-tiliisi. Voit käyttää annettua raporttinäkymää ja raportteja tai mukauttaa niitä, jotta niissä korostuvat itseäsi eniten kiinnostavat tiedot.  Tiedot päivitetään automaattisesti kerran päivässä.
@@ -44,9 +44,9 @@ Muodosta yhteys [Webtrends-sisältöpakettiin](https://app.powerbi.com/getdata/s
 
 **Mitä seuraavaksi?**
 
-* Kokeile [kysymyksen esittämistä raporttinäkymän yläreunassa olevassa Q&A-ruudussa](power-bi-q-and-a.md).
+* Kokeile [kysymyksen esittämistä raporttinäkymän yläreunassa olevassa Q&A-ruudussa](consumer/end-user-q-and-a.md).
 * [Muuta koontinäytön ruutuja](service-dashboard-edit-tile.md).
-* [Valitse jokin ruutu](service-dashboard-tiles.md), jolloin siihen liittyvä raportti avautuu.
+* [Valitse jokin ruutu](consumer/end-user-tiles.md), jolloin siihen liittyvä raportti avautuu.
 * Tietojoukko on ajastettu päivittymään päivittäin, mutta voit muuttaa päivitysaikataulua tai kokeilla tietojoukon päivittämistä **Päivitä nyt** -toiminnolla haluamanasi ajankohtana
 
 ## <a name="whats-included"></a>Paketin sisältö
@@ -103,5 +103,5 @@ Sisältöpakettia ladattaessa saattaa tapahtua virhe tunnistetietojen antamisen 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 [Mikä on Power BI?](power-bi-overview.md)
 
-[Power BI:n peruskäsitteet](service-basic-concepts.md)
+[Power BI:n peruskäsitteet](consumer/end-user-basic-concepts.md)
 

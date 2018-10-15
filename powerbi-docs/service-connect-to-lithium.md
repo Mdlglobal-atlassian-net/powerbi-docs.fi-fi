@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 6cbd67a9c35726830fc862326d9a015b96952b83
-ms.sourcegitcommit: fbb7924603f8915d07b5e6fc8f4d0c7f70c1a1e1
+ms.openlocfilehash: 5fe70f2ba213305c5307bb202cacbb1245cf970f
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "37136291"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46548553"
 ---
 # <a name="connect-to-lithium-with-power-bi"></a>Lithiumiin yhdistäminen Power BI:n avulla
 Lithium rakentaa luotettuja suhteita maailman parhaiden tuotemerkkien ja niiden asiakkaiden välille auttaen ihmisiä saamaan vastauksia ja jakamaan kokemuksiaan. Yhdistämällä Lithium-sisältöpaketin Power BI:hin voit mitata tärkeitä tietoja verkkoyhteisöstäsi auttaen lisäämään myyntiä, pienentämään palvelukustannuksia ja lisäämään uskollisuutta. 
@@ -49,9 +49,9 @@ Yhdistä Power BI:n [Lithium-sisältöpakettiin](https://app.powerbi.com/getdata
 
 **Mitä seuraavaksi?**
 
-* Kokeile [kysymyksen esittämistä raporttinäkymän yläreunassa olevassa Q&A-ruudussa](power-bi-q-and-a.md).
+* Kokeile [kysymyksen esittämistä raporttinäkymän yläreunassa olevassa Q&A-ruudussa](consumer/end-user-q-and-a.md).
 * [Muuta koontinäytön ruutuja](service-dashboard-edit-tile.md).
-* [Valitse jokin ruutu](service-dashboard-tiles.md), jolloin siihen liittyvä raportti avautuu.
+* [Valitse jokin ruutu](consumer/end-user-tiles.md), jolloin siihen liittyvä raportti avautuu.
 * Tietojoukko on ajastettu päivittymään päivittäin, mutta voit muuttaa päivitysaikataulua tai kokeilla tietojoukon päivittämistä **Päivitä nyt** -toiminnolla haluamanasi ajankohtana
 
 ## <a name="system-requirements"></a>Järjestelmävaatimukset
@@ -60,5 +60,5 @@ Lithium-sisältöpaketti edellyttää Lithium-yhteisön versiota 15.9 tai sitä 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 [Mikä on Power BI?](power-bi-overview.md)
 
-[Power BI:n peruskäsitteet](service-basic-concepts.md)
+[Power BI:n peruskäsitteet](consumer/end-user-basic-concepts.md)
 

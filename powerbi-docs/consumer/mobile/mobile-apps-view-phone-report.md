@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-mobile
 ms.topic: conceptual
-ms.date: 03/22/2018
+ms.date: 09/14/2018
 ms.author: maggies
-ms.openlocfilehash: 6ea5814cdba7df6d7e7bb4bbb284f52110ca184c
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: 06a8d15ca894b877199f22fc6c00d4c34827d76b
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44732799"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46547794"
 ---
 # <a name="view-power-bi-reports-optimized-for-your-phone"></a>Puhelimelle optimoitujen Power BI ‑raporttien tarkastelu
 
@@ -24,7 +24,7 @@ Koskee seuraavia:
 |:--- |:--- |
 | iPhonet |Android-puhelimet |
 
-Kun luot Power BI Desktopissa Power BI ‑raportin, voit myös [luoda raportista version, joka on optimoitu ](../../desktop-create-phone-report.md) puhelimessa olevassa Power BI ‑sovelluksessa tarkastelua varten.
+Kun luot Power BI Desktopissa tai Power BI -palvelussa Power BI ‑raportin, voit myös [luoda raportista version, joka on optimoitu ](../../desktop-create-phone-report.md) puhelimessa olevassa Power BI ‑sovelluksessa tarkastelua varten.
 
 Kun avaat Power BI ‑raportin puhelimessa, Power BI tunnistaa, onko raportti optimoitu puhelimia varten ja avaa automaattisesti optimoidun raportin pystysuuntaisessa tilassa.
 
@@ -79,7 +79,7 @@ Näytön kokorajoitusten vuoksi jotkin toiminnot ovat käytettävissä vain kohd
     Kumoaminen on käytettävissä sekä raportin tasolla, jolloin se poistaa kaikki tarkastelutoimet kaikista visualisoinneista, että visualisoinnin tasolla, jolloin se poistaa kaikki tarkastelutoimet valittuna olevasta yksittäisestä visualisoinnista.   
 
 ## <a name="drill-down-in-a-visual"></a>Porautuminen alaspäin visualisoinnissa
-Jos visualisointiin on määritetty hierarkiatasot, voit porautua syvemmälle visualisoinnin esittämien tietojen yksityiskohtiin ja palata sitten takaisin ylöspäin. [Lisää visualisointiin mahdollisuus porautua alaspäin](../../power-bi-visualization-drill-down.md) joko Power BI -palvelussa tai Power BI Desktopissa. Porautuminen alaspäin toimii vain puhelinoptimoiduissa Power BI ‑raporteissa, joita tarkastellaan puhelimella. 
+Jos visualisointiin on määritetty hierarkiatasot, voit porautua syvemmälle visualisoinnin esittämien tietojen yksityiskohtiin ja palata sitten takaisin ylöspäin. [Lisää visualisointiin mahdollisuus porautua alaspäin](../end-user-drill.md) joko Power BI -palvelussa tai Power BI Desktopissa. Porautuminen alaspäin toimii vain puhelinoptimoiduissa Power BI ‑raporteissa, joita tarkastellaan puhelimella. 
 
 1. Napauta puhelimella raportin oikeasta yläkulmasta kolmea pistettä (**...**) > **Laajenna kohdistustilaan**.
    

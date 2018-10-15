@@ -9,14 +9,15 @@ ms.service: powerbi
 ms.component: powerbi-developer
 ms.custom: mvc
 manager: kfile
-ms.openlocfilehash: 544429528ed51dd2928eb82632f512ff3f7d5afd
-ms.sourcegitcommit: fecea174721d0eb4e1927c1116d2604a822e4090
+ms.openlocfilehash: aca87dd2e9dafb630d20e19f98a44380c30db32c
+ms.sourcegitcommit: 698b788720282b67d3e22ae5de572b54056f1b6c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39359727"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45974157"
 ---
 # <a name="tutorial-embed-a-power-bi-report-dashboard-or-tile-into-an-application-for-your-organization"></a>Opetusohjelma: Power BI -raportin, raporttinäkymän tai ruudun upottaminen sovellukseen organisaatiolle
+
 Tämä opetusohjelma esittelee, miten raportti integroidaan sovellukseen käyttämällä **Power BI .NET SDK:ta** yhdessä **Power BI JavaScript -ohjelmointirajapinnan** kanssa, kun upotat **Power BI:n** organisaatiosi sovellukseen. **Power BI:n** avulla, voit upottaa sovellukseen raportteja, raporttinäkymiä tai ruutuja käyttämällä **user owns data** -hakemiston malleja. **User owns data** -mallien avulla voit laajentaa sovelluksesi Power BI-palveluun.
 
 ![Näytä sovellus](media/embed-sample-for-your-organization/embed-sample-for-your-organization-035.png)
@@ -27,6 +28,7 @@ Tässä opetusohjelmassa opit:
 >* Upottamaan Power BI -raportin sovellukseen.
 
 ## <a name="prerequisites"></a>Edellytykset
+
 Tarvitset **Power BI Pro** -tilin ja **Microsoft Azure** -tilauksen aloittaaksesi.
 
 * Jos et ole rekisteröitynyt **Power BI:hin**, [rekisteröi ilmainen kokeiluversio](https://powerbi.microsoft.com/en-us/pricing/) ennen aloittamista.
@@ -38,9 +40,10 @@ Tarvitset **Power BI Pro** -tilin ja **Microsoft Azure** -tilauksen aloittaakses
 
 Ennen kuin ryhdyt upottamaan raportteja, raporttinäkymiä tai ruutuja sovellukseesi, varmista, että ympäristösi on määritetty niin, että upottaminen on siinä sallittu. Määritys edellyttää myös seuraavia toimia:
 
-Voit käyttää [Perehdyttämiskokemustyökalua](https://aka.ms/embedsetup/UserOwnsData) päästäksesi nopeasti alkuun ja ladata mallisovelluksen, jossa käydään läpi sekä käyttöympäristön luominen että raportin upottaminen.
+Voit käyttää [upottamisen määritystyökalua](https://aka.ms/embedsetup/UserOwnsData) päästäksesi nopeasti alkuun ja ladataksesi mallisovelluksen, jossa käydään läpi sekä käyttöympäristön luominen että raportin upottaminen.
 
 Jos haluat määrittää ympäristön manuaalisesti, jatka lukemista.
+
 ### <a name="register-an-application-in-azure-active-directory-azure-ad"></a>Sovelluksen rekisteröiminen Azure Active Directoryyn (Azure AD)
 
 Rekisteröi sovellus Azure Active Directoryyn, jotta sovellus saa käyttöoikeuden Power BI REST -ohjelmointirajapintoihin. Tämä sallii sinun määrittää sovelluksen käyttäjätiedot ja käyttöoikeudet Power BI REST -resursseihin.
@@ -229,17 +232,21 @@ Seuraa näitä ohjeita aloittaaksesi sisällön upottamisen mallisovelluksen avu
     ![Näytä sovellus](media/embed-sample-for-your-organization/embed-sample-for-your-organization-035.png)
 
 ## <a name="embed-your-content-within-your-application"></a>Upota sisältö sovellukseen
+
 Vaikka sisältöä voidaan upottaa [Power BI REST -ohjelmointirajapintojen](https://docs.microsoft.com/rest/api/power-bi/) avulla, tässä artikkelissa kuvatut esimerkkikoodit on luotu **.NET SDK**:n avulla.
 
 Voit integroida raportin verkkosovellukseen **Power BI REST -ohjelmointirajapinnan** tai **Power BI C# SDK:n** avulla ja saada raportin Azure Active Directory (AD) -valtuutuksen **käyttöoikeustietueen** avulla. Voit sitten ladata raportin käyttämällä samaa **käyttöoikeustietuetta**. **Power BI -ohjelmointirajapinta** tarjoaa ohjelmallisen käyttöoikeuden tiettyihin **Power BI** -resursseihin. Katso lisätietoja artikkeleista [Power BI REST -ohjelmointirajapinta](https://docs.microsoft.com/rest/api/power-bi/) ja [Power BI JavaScript -ohjelmointirajapinta](https://github.com/Microsoft/PowerBI-JavaScript).
 
 ### <a name="get-an-access-token-from-azure-ad"></a>Hanki käyttöoikeustietue Azure AD:stä
+
 Sinun on hankittava sovelluksessa **käyttöoikeustietue** Azure AD:stä, ennen kuin voit lähettää kutsuja Power BI REST -ohjelmointirajapintaan. Saat lisätietoja artikkelista [Käyttäjien todentaminen ja Azure AD -käyttöoikeustietueen hankkiminen Power BI -sovellukselle](get-azuread-access-token.md).
 
 ### <a name="get-a-report"></a>Hanki raportti
+
 Voit hankkia **Power BI** -raportin käyttämällä [Hanki raportit](https://docs.microsoft.com/rest/api/power-bi/reports/getreports) -toimintoa, joka antaa **Power BI -raporttien** luettelon. Saat raporttien luettelosta raporttitunnuksen.
 
 ### <a name="get-reports-using-an-access-token"></a>Hanki raportit käyttöoikeustietueen avulla
+
 [Hanki raportit](https://docs.microsoft.com/rest/api/power-bi/reports/getreports) -toiminto palauttaa raporttiluettelon. Voit noutaa yksittäisen raportin raporttiluettelosta.
 
 Jotta voit lähettää REST-ohjelmointirajapinnan kutsun, sinun on sisällytettävä *Valtuutus*-otsikko *Haltija {käyttöoikeustietue}* -muodossa.
@@ -303,6 +310,7 @@ public class PBIReport
 ```
 
 #### <a name="get-reports-using-the-net-sdk"></a>Raporttien hankinta .NET SDK:n avulla
+
 .NET SDK:n avulla voit noutaa raporttiluettelon sen sijaan, että lähetät kutsun suoraan REST-ohjelmointirajapintaan. Tässä on koodiesimerkki siitä, miten voit luoda raporttiluettelon.
 
 ```csharp
@@ -325,6 +333,7 @@ using (var client = new PowerBIClient(new Uri(ApiUrl), tokenCredentials))
 ```
 
 ### <a name="load-a-report-using-javascript"></a>Lataa raportti JavaScriptin avulla
+
 Voit JavaScriptin avulla ladata raportin verkkosivun jako-elementtiin.
 
 Tässä on koodimalli siitä, miten voit noutaa raportin tietystä työtilasta.
@@ -413,6 +422,7 @@ function updateEmbedReport() {
 Kun olet nyt kehittänyt sovelluksesi, on aika varata sovelluksen työtilalle kapasiteettia.
 
 ### <a name="create-a-dedicated-capacity"></a>Luo varattua kapasiteettia
+
 Luomalla varattua kapasiteettia voit hyödyntää sitä, että sovellustyötilan sisällölle varataan tietty resurssi. Voit luoda varattua kapasiteettia käyttämällä [Power BI Premiumia ](../service-premium.md).
 
 Seuraavassa taulukossa esitetään Power BI Premiumin SKU:t, jotka ovat käytettävissä [Office 365:ssä](../service-admin-premium-purchase.md).
@@ -453,6 +463,7 @@ Kun olet luonut varatun kapasiteetin, voit määrittää sovellustyötilan kysei
 Yleiset järjestelmänvalvojat eli Power BI -palvelun järjestelmänvalvojat voivat ottaa käyttöön REST-ohjelmointirajapintojen käytön vuokraajassa ja poistaa sen käytöstä. Power BI ‑järjestelmänvalvojat voivat määrittää asetuksen koskemaan koko organisaatiota tai yksittäisiä käyttöoikeusryhmiä. Oletusarvoisesti se on käytössä koko organisaatiolle. Asetus määritetään [Power BI -hallintaportaalista](../service-admin-portal.md).
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
+
 Tässä opetusohjelmassa olet oppinut, miten voit upottaa Power BI-sisältöä sovellukseen **Power BI-organisaatiotiliä** käyttämällä. Voit nyt yrittää upottaa Power BI -sisältöä sovellukseen sovellusten avulla.  Voit myös yrittää upottaa Power BI -sisältöä asiakkaillesi.
 
 > [!div class="nextstepaction"]

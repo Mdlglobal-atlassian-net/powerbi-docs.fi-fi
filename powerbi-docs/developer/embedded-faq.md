@@ -8,13 +8,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: conceptual
-ms.date: 08/21/2018
-ms.openlocfilehash: e83224932048aeab2dde6187eb217da7d89fed85
-ms.sourcegitcommit: 9c3a9ec14c111d766ef5703366c316e72f6e588f
+ms.date: 09/17/2018
+ms.openlocfilehash: b50f3d5a3b01e32dcbaf80db5e25bd046c5e27a2
+ms.sourcegitcommit: ded8b85276e7eda166d6e67f72d1fe3d5e234745
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45558564"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46506795"
 ---
 # <a name="frequently-asked-questions-about-power-bi-embedded"></a>Usein kysyttyjä kysymyksiä – Power BI Embedded
 
@@ -84,15 +84,19 @@ Alla on osittainen luettelo eroista näiden ratkaisujen yhteydessä käytettävi
 |Sitoutuminen  |Ei sitoutumista |Vuosittain  |Kuukausittain/vuosittain |
 |Erot |Täysi joustavuus – skaalaus ylös/alas, resurssien keskeytys/jatkaminen Azure-portaalissa tai ohjelmointirajapinnan kautta  |Voidaan käyttää sisällön upottamiseen SharePoint Onlinessa ja Microsoft Teamsissa (ei sisällä mobiilisovellusta) |Yhdistää sovelluksiin upottamisen ja Power BI -palvelun käytön samassa kapasiteetissa |
 
-### <a name="what-are-the-prerequisites-to-create-a-pbie-capacity-in-azure"></a>Mitkä ovat ennakkoedellytykset PBIE-kapasiteetin luomiseksi Azuressa? 
+### <a name="what-are-the-prerequisites-to-create-a-pbie-capacity-in-azure"></a>Mitkä ovat ennakkoedellytykset PBIE-kapasiteetin luomiseksi Azuressa?
 
 * Sinun on kirjauduttava organisaation hakemistoon (MSA-tilejä ei tueta).
 * Sinulla on oltava Power BI -vuokraaja, eli vähintään yhden käyttäjän hakemistossasi on täytynyt rekisteröityä Power BI:n käyttäjäksi. 
 * Sinulla täytyy olla Azure-tilaus organisaatiosi hakemistossa.
 
-### <a name="how-can-i-monitor-capacity-consumption"></a>Miten voin valvoa kapasiteetin käyttöä?
+### <a name="how-can-i-monitor-power-bi-embedded-capacity-consumption"></a>Miten voin valvoa Power BI Embedded -kapasiteetin käyttöä?
 
-Valvonta Azuren kautta sisältyy lähitulevaisuuden suunnitelmiimme. Azure-resurssi Power BI Embedded sisältää tulevaisuudessa valvonnan KPI-mittareita, jotka osoittavat kunnon ja käyttötavan.
+* Käyttämällä [Power BI -hallintaportaalia](../service-admin-portal.md#power-bi-embedded-settings).
+
+* Lataamalla [mittausarvosovelluksen](https://review.docs.microsoft.com/power-bi/service-admin-premium-monitor-capacity) Power BI:ssä.
+
+* Käyttämällä [Azuren diagnostiikan kirjausta](azure-pbie-diag-logs.md).
 
 ### <a name="will-my-capacity-scale-automatically-to-adjust-to-the-consumption-of-my-app"></a>Skaalautuuko kapasiteettini automaattisesti sovellukseni kulutuksen mukaiseksi?
 
@@ -276,11 +280,11 @@ Seuraavassa joitakin ominaisuuksista:
 * Uusia ominaisuuksia, kuten usein kysyttyjä kysymyksiä, päivityksiä, kirjanmerkkejä, koontinäyttöjen ja ruutujen upottamista ja mukautettuja valikoimia tuetaan vain **Power BI Embedded** -ratkaisussa.
 * Kapasiteettilaskutusmalli.
 
-## <a name="onboarding-experience-tool-for-embedding"></a>Upottamiseen tarkoitettu perehdyttämiskokemustyökalu
+## <a name="embedding-setup-tool-for-embedding"></a>Upottamisen määritystyökalu upottamista varten
 
-### <a name="what-is-the-onboarding-experience-tool"></a>Mikä on upottamiseen tarkoitettu perehdyttämiskokemustyökalu?
+### <a name="what-is-the-embedding-setup-tool"></a>Mikä on upottamisen määritystyökalu?
 
-[Upottamiseen tarkoitetun perehdyttämiskokemustyökalun](https://aka.ms/embedsetup) avulla voit nopeasti aloittaa ja ladata mallisovelluksia, joilla voit aloittaa upottamisen Power BI:ssä.
+[Upottamisen määritystyökalun](https://aka.ms/embedsetup) avulla voit nopeasti päästä alkuun ja ladata mallisovelluksen, joilla voit aloittaa upottamisen Power BI:ssä.
 
 ### <a name="which-solution-should-i-choose"></a>Kumpi ohjelma kannattaa valita?
 

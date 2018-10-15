@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: conceptual
 ms.date: 08/31/2018
-ms.openlocfilehash: d540dd29214422dfc33dca2bf2fb1cb74ebe6de7
-ms.sourcegitcommit: 9c3a9ec14c111d766ef5703366c316e72f6e588f
+ms.openlocfilehash: 71cb40ef6f1346bd3d8486658b05427e66d1dbf3
+ms.sourcegitcommit: 9719eccf29298c9c673200350abc58281ef14869
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45558568"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46474042"
 ---
 # <a name="troubleshooting-your-embedded-application"></a>Upotetun sovelluksen vianmääritys
 
@@ -84,18 +84,18 @@ Fiddler-sieppaus saattaa vaatia tarkempaa tutkimusta. 403-virheeseen voi olla us
 
 Sovelluksen taustatietokanta saattaa joutua päivittämään todennustunnuksen ennen GenerateTokenin kutsumista.
 
-```
+    ```
     GET https://wabi-us-north-central-redirect.analysis.windows.net/metadata/cluster HTTP/1.1
     Host: wabi-us-north-central-redirect.analysis.windows.net
     ...
     Authorization: Bearer eyJ0eXAiOi...
     ...
- 
+
     HTTP/1.1 403 Forbidden
     ...
-     
+
     {"error":{"code":"TokenExpired","message":"Access token has expired, resubmit with a new access token"}}
-```
+    ```
 
 ## <a name="authentication"></a>Todentaminen
 
@@ -229,13 +229,13 @@ IError-objektin hankkimisen jälkeen sinun on tarkasteltava asianmukaista yleist
 | OpenConnectionError | Visualisointia ei voi näyttää. Seuraavaa raportin visualisointia ei voitu hahmontaa: <visual title> | – | Kapasiteetti on keskeytetty tai poistettu, kun kapasiteettiin liittyvä raportti oli avoimena istunnossa |
 | ExplorationContainer_FailedToLoadModel_DefaultDetails | Tähän raporttiin liittyvän mallirakenteen lataaminen epäonnistui. Varmista, että palvelimeen on yhteys, ja yritä uudelleen. | – | <li> Kapasiteetti keskeytetty <li> Kapasiteetti poistettu |
 
-## <a name="onboarding-experience-tool-for-embedding"></a>Upottamiseen tarkoitettu perehdyttämiskokemustyökalu
+## <a name="embedding-setup-tool"></a>Upottamisen määritystyökalu
 
-Voit käyttää [Perehdyttämiskokemustyökalua](https://aka.ms/embedsetup) ladataksesi mallisovelluksen nopeasti. Sitten voit verrata sovellustasi malliin.
+Voit käyttää [upottamisen määritystyökalua](https://aka.ms/embedsetup) ladataksesi mallisovelluksen nopeasti. Sitten voit verrata sovellustasi malliin.
 
 ### <a name="prerequisites"></a>Edellytykset
 
-Varmista, että sinulla on kaikki asianmukaiset edellytykset ennen perehdyttämiskokemustyökalun käyttöä. Tarvitset **Power BI Pro** -tilin ja **Microsoft Azure** -tilauksen.
+Varmista, että sinulla on kaikki asianmukaiset edellytykset ennen upottamisen määritystyökalun käyttöä. Tarvitset **Power BI Pro** -tilin ja **Microsoft Azure** -tilauksen.
 
 * Jos et ole rekisteröitynyt **Power BI:hin**, [rekisteröi ilmainen kokeiluversio](https://powerbi.microsoft.com/en-us/pricing/) ennen aloittamista.
 * Jos sinulla ei ole Azure-tilausta, luo [ilmainen tili](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) ennen aloittamista.
@@ -244,7 +244,7 @@ Varmista, että sinulla on kaikki asianmukaiset edellytykset ennen perehdyttämi
 
 ### <a name="common-issues"></a>Yleisiä ongelmia
 
-Seuraavaksi joitakin yleisiä ongelmia, joita saattaa ilmetä perehdyttämiskokemustyökalua testattaessa:
+Seuraavaksi joitakin yleisiä ongelmia, joita saattaa ilmetä upottamisen määritystyökalua testattaessa:
 
 #### <a name="using-the-embed-for-your-customers-sample-application"></a>Käyttämällä asiakkaille tarkoitettua upotus -mallisovellusta
 
@@ -262,6 +262,10 @@ Mallisovellusta käytettäessä ilmestyy seuraava virhesanoma:
 
 Tämä virhe ilmenee, koska ainoa arvo, jota ei ole syötetty mallisovellukseen, on käyttäjän salasanan. Avaa Web.config-tiedosto ja täytä pbisalasana-kenttään käyttäjän salasana.
 
+Jos näyttöön tulee virhe - AADSTS50079: käyttäjän pitää käyttää monimenetelmäistä todentamista.
+
+    Need to use an AAD account that does not have MFA enabled.
+
 #### <a name="using-the-embed-for-your-organization-sample-application"></a>Organisaatiolle tarkoitetun upotuksen -mallisovellus
 
 Jos käytät **Organisaatiolle tarkoitettua upotusta**, tallenna ja pura *PowerBI-Developer-Samples.zip*-tiedosto. Avaa sitten *Power BI-Developer-Samples-master\User Owns Data\integrate-report-web-app*-kansio ja suorita *pbi-saas-upottaa-report.sln*-tiedosto.
@@ -275,6 +279,10 @@ Tämä johtuu siitä, että verkkopalvelinsovellukselle määritetty uudelleenoh
 Jos haluat muokata rekisteröityä sovellusta, ja opettele muokkaamaan [AAD-rekisteröityä sovellusta](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications#updating-an-application), jolloin sovellus tarjoaa pääsyn verkon ohjelmointirajapintoihin.
 
 Jos haluat muokata Power BI -käyttäjäprofiilia tai tietoja, opettele muokkaamaan [Power BI -tietoja](https://docs.microsoft.com/power-bi/service-basic-concepts).
+
+Jos näyttöön tulee virhe - AADSTS50079: käyttäjän pitää käyttää monimenetelmäistä todentamista.
+
+    Need to use an AAD account that does not have MFA enabled.
 
 Jos haluat lisätietoja, katso [Power BI Embedded - usein kysytyt kysymykset](embedded-faq.md).
 

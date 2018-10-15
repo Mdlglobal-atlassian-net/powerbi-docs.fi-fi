@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: db6361974fdbe7956979ac106e5cad5717f99d33
-ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
+ms.openlocfilehash: 0931dee6f9719a4a53c5ccf2c20aeb8f9170af42
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37135072"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46549670"
 ---
 # <a name="connect-to-intelliboard-with-power-bi"></a>Yhteyden muodostaminen IntelliBoardiin Power BI:llä
 IntelliBoard tarjoaa yksinkertaistetun pääsyn oppimisen hallintajärjestelmäsi Moodlen tietoihin raportointipalveluiden avulla. IntelliBoard-sisältöpaketti Power BI:lle tarjoaa lisäanalytiikkaa, mukaan luettuina kursseja, rekisteröityjä käyttäjiä, yleistä suorituskykyä ja LMS:n toimintaa koskevia arvoja.
@@ -43,9 +43,9 @@ Muodosta yhteys [IntelliBoard-sisältöpakettiin](https://app.powerbi.com/getdat
 
 **Mitä seuraavaksi?**
 
-* Kokeile [kysymyksen esittämistä raporttinäkymän yläreunassa olevassa Q&A-ruudussa](power-bi-q-and-a.md).
+* Kokeile [kysymyksen esittämistä raporttinäkymän yläreunassa olevassa Q&A-ruudussa](consumer/end-user-q-and-a.md).
 * [Muuta koontinäytön ruutuja](service-dashboard-edit-tile.md).
-* [Valitse jokin ruutu](service-dashboard-tiles.md), jolloin siihen liittyvä raportti avautuu.
+* [Valitse jokin ruutu](consumer/end-user-tiles.md), jolloin siihen liittyvä raportti avautuu.
 * Tietojoukko on ajastettu päivittymään päivittäin, mutta voit muuttaa päivitysaikataulua tai kokeilla tietojoukon päivittämistä **Päivitä nyt** -toiminnolla haluamanasi ajankohtana
 
 ## <a name="whats-included"></a>Paketin sisältö
@@ -68,5 +68,5 @@ IntelliBoard-tili, jolla on edellä mainittujen taulukoiden käyttöoikeudet, on
 ## <a name="next-steps"></a>Seuraavat vaiheet
 [Mikä on Power BI?](power-bi-overview.md)
 
-[Power BI:n peruskäsitteet](service-basic-concepts.md)
+[Power BI:n peruskäsitteet](consumer/end-user-basic-concepts.md)
 

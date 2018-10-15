@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: f81330ec331ae42dea994982369428e9f7eb23aa
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 0bb592d508e959267df31e705aa833394aa4d19e
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34249432"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46544873"
 ---
 # <a name="connect-to-twilio-with-power-bi"></a>Yhteyden muodostaminen Twilioon Power BI:llä
 Microsoft Twilio -sisältöpaketin avulla Power BI:lle voit hakea tietoja Power BI:lle ja luoda valmiin [Twilio-koontinäytön](https://powerbi.microsoft.com/integrations/twilio) ja raportin, joka sisältää merkityksellisiä tietoja omista tiedoistasi. Voit myös luoda mukautettuja raportteja ja koontinäytön tietojoukolle, jonka Power BI Luo. Jotta näet aina uusimmat tiedot, tiedot päivitetään kerran päivässä.
@@ -41,9 +41,9 @@ Muodosta yhteys [Twilio-sisältöpakettiin](https://app.powerbi.com/getdata/serv
 
 **Mitä seuraavaksi?**
 
-* Kokeile [kysymyksen esittämistä raporttinäkymän yläreunassa olevassa Q&A-ruudussa](power-bi-q-and-a.md).
+* Kokeile [kysymyksen esittämistä raporttinäkymän yläreunassa olevassa Q&A-ruudussa](consumer/end-user-q-and-a.md).
 * [Muuta koontinäytön ruutuja](service-dashboard-edit-tile.md).
-* [Valitse jokin ruutu](service-dashboard-tiles.md), jolloin siihen liittyvä raportti avautuu.
+* [Valitse jokin ruutu](consumer/end-user-tiles.md), jolloin siihen liittyvä raportti avautuu.
 * Tietojoukko on ajastettu päivittymään päivittäin, mutta voit muuttaa päivitysaikataulua tai kokeilla tietojoukon päivittämistä **Päivitä nyt** -toiminnolla haluamanasi ajankohtana
 
 ## <a name="whats-included"></a>Paketin sisältö

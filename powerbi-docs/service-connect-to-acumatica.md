@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 452226f8d5b8e0ca05fc4d9e81355c7a4c10e923
-ms.sourcegitcommit: d936a23f895ee6ef1420753342f5e6c055ea5e07
+ms.openlocfilehash: 6aa5b5dbb22881b6bccaa2ed43352a8f22308675
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39582634"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46546644"
 ---
 # <a name="connect-to-acumatica-with-power-bi"></a>Yhteyden muodostaminen Acumaticaan Power BI:n avulla
 Power BI Acumatica -sisältöpaketin avulla saat nopeasti merkityksellisiä tietoja mahdollisuustiedoistasi. Power BI noutaa tiedot, esimerkiksi mahdollisuudet, tilit ja asiakkaat, ja laatii sitten oletuskoontinäytön ja siihen liittyvät raportit kyseisten tietojen perusteella.
@@ -51,9 +51,9 @@ Muodosta yhteys [Acumatica-sisältöpakettiin](https://app.powerbi.com/getdata/s
 
 **Mitä nyt?**
 
-* Kokeile [kysymyksen esittämistä raporttinäkymän yläreunassa olevassa Q&A-ruudussa](power-bi-q-and-a.md).
+* Kokeile [kysymyksen esittämistä raporttinäkymän yläreunassa olevassa Q&A-ruudussa](consumer/end-user-q-and-a.md).
 * [Muuta koontinäytön ruutuja](service-dashboard-edit-tile.md).
-* [Valitse jokin ruutu](service-dashboard-tiles.md), jolloin siihen liittyvä raportti avautuu.
+* [Valitse jokin ruutu](consumer/end-user-tiles.md), jolloin siihen liittyvä raportti avautuu.
 * Tietojoukko on ajastettu päivittymään päivittäin, mutta voit muuttaa päivitysaikataulua tai kokeilla tietojoukon päivittämistä **Päivitä nyt** -toiminnolla haluamanasi ajankohtana
 
 ## <a name="system-requirements"></a>Järjestelmävaatimukset

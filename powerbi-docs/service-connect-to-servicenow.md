@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 5a0c00b6082b3561a1e07e5eef4e4e21f71f97a3
-ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
+ms.openlocfilehash: c5fc2d476a12a4faf60313dd69dce7e143b88807
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37135463"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46548162"
 ---
 # <a name="connect-to-servicenow-with-power-bi-for-incident-reporting"></a>Yhteyden muodostaminen ServiceNow Power BI:lle ongelmien raportointia varten
 ServiceNow tarjoaa useita tuotteita ja ratkaisuja, kuten business, toiminnot ja IT-hallinta liiketoimintasi edistämiseksi. Tämä sisältöpaketti sisältää useita raportteja ja merkityksellisiä tietoja avoimista, äskettäin ratkaistuista ja viimeksi kuitatuista tapauksista.  
@@ -44,9 +44,9 @@ Yhteyden muodostaminen [ServiceNow-tapausten](https://app.powerbi.com/getdata/se
 
 **Mitä seuraavaksi?**
 
-* Kokeile [kysymyksen esittämistä raporttinäkymän yläreunassa olevassa Q&A-ruudussa](power-bi-q-and-a.md).
+* Kokeile [kysymyksen esittämistä raporttinäkymän yläreunassa olevassa Q&A-ruudussa](consumer/end-user-q-and-a.md).
 * [Muuta koontinäytön ruutuja](service-dashboard-edit-tile.md).
-* [Valitse jokin ruutu](service-dashboard-tiles.md), jolloin siihen liittyvä raportti avautuu.
+* [Valitse jokin ruutu](consumer/end-user-tiles.md), jolloin siihen liittyvä raportti avautuu.
 * Tietojoukko on ajastettu päivittymään päivittäin, mutta voit muuttaa päivitysaikataulua tai kokeilla tietojoukon päivittämistä **Päivitä nyt** -toiminnolla haluamanasi ajankohtana
 
 ## <a name="system-requirements"></a>Järjestelmävaatimukset
@@ -63,5 +63,5 @@ Jos havaitset pitkä latausaikoja, tarkista tapausten määrä ja päivien mää
 ## <a name="next-steps"></a>Seuraavat vaiheet
 [Mikä on Power BI?](power-bi-overview.md)
 
-[Power BI:n peruskäsitteet](service-basic-concepts.md)
+[Power BI:n peruskäsitteet](consumer/end-user-basic-concepts.md)
 

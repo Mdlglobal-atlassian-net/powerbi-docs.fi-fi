@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/30/2018
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: dda983aec42731aa885323749d9302db75066569
-ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
+ms.openlocfilehash: 5cd858ad14c1a5fcf76ddf23dafdac2bb5585b10
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37136774"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46548254"
 ---
 # <a name="connect-to-salesforce-with-power-bi"></a>Yhteyden muodostaminen Salesforceen Power BI:n avulla
 Power BI:ssä voit muodostaa helposti yhteyden Salesforce.com-tiliisi. Kun yhteys on luotu, tietosi noudetaan ja koontinäyttö sekä tietoihisi perustuvat raportit esitetään automaattisesti.
@@ -56,13 +56,15 @@ Muodosta yhteys Power BI:n [Salesforce-sisältöpakettiin](https://app.powerbi.c
    
    ![](media/service-connect-to-salesforce/pbi_getdatasalesforcedash.png)
 
-Voit muokata tätä koontinäyttöä, jotta näet tiedot juuri haluamallasi tavalla. Voit esittää kysymyksiä Q&A:lla. Voit vaihtoehtoisesti napsauttaa ruutua ja [avata taustalla olevan raportin](service-dashboard-tiles.md) ja [muokata ruutuja](service-dashboard-edit-tile.md) koontinäytössä.
+Voit muokata tätä koontinäyttöä, jotta näet tiedot juuri haluamallasi tavalla. Voit esittää kysymyksiä Q&A:lla. Voit vaihtoehtoisesti napsauttaa ruutua ja [avata taustalla olevan raportin](consumer/end-user-tiles.md) ja [muokata ruutuja](service-dashboard-edit-tile.md) koontinäytössä.
 
 **Mitä seuraavaksi?**
 
-* Kokeile [kysymyksen esittämistä koontinäytön yläreunassa olevassa Q&A-ruudussa](power-bi-q-and-a.md).
-* [Muuta koontinäytön ruutuja](service-dashboard-edit-tile.md).
+* Kokeile [kysymyksen esittämistä koontinäytön yläreunassa olevassa Q&A-ruudussa](consumer/end-user-q-and-a.md).
+* [Muuta koontinäytön ruutuja](service-dashboard-edit-tile.md) <<<<<<< HEAD
+* [Valitse jokin ruutu](consumer/end-user-tiles.md), jolloin siihen liittyvä raportti avautuu =======
 * [Valitse jokin ruutu](service-dashboard-tiles.md), jolloin siihen liittyvä raportti avautuu.
+>>>>>>> 66fe62d8f200efd9cfeb465eeb5f370dbbaa63be
 * Tietojoukko on ajastettu päivittymään päivittäin, mutta voit muuttaa päivitysaikataulua tai kokeilla tietojoukon päivittämistä **Päivitä nyt** -toiminnolla haluamanasi ajankohtana
 
 ## <a name="system-requirements-and-considerations"></a>Järjestelmävaatimukset ja huomioon otettavat seikat

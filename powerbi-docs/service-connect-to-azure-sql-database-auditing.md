@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/10/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: dd9b5b9f9db95b73a7001c34bcabcd2deacb8b4c
-ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
+ms.openlocfilehash: f0c98d88ad9b87e57cf8f1cf7c36a58e30b684ea
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37136558"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46545356"
 ---
 # <a name="sql-database-auditing-content-pack-for-power-bi"></a>SQL-tietokantavalvonnan sisältöpaketti Power BI:lle
 Power BI:n sisältöpaketti Azuren [SQL-tietokantavalvontaa](http://azure.microsoft.com/documentation/articles/sql-database-auditing-get-started/) varten auttaa sinua ymmärtämään tietokantatoimia ja saamaan merkityksellisiä tietoja poikkeamista, jotka saattavat ilmaista ongelmia yrityksessä tai mahdollisia tietoturvarikkomuksia. 
@@ -62,9 +62,9 @@ Muodosta yhteys [SQL-tietokantavalvonnan sisältöpakettiin](https://app.powerbi
 
 **Mitä seuraavaksi?**
 
-* Kokeile [kysymyksen esittämistä raporttinäkymän yläreunassa olevassa Q&A-ruudussa](power-bi-q-and-a.md).
+* Kokeile [kysymyksen esittämistä raporttinäkymän yläreunassa olevassa Q&A-ruudussa](consumer/end-user-q-and-a.md).
 * [Muuta koontinäytön ruutuja](service-dashboard-edit-tile.md).
-* [Valitse jokin ruutu](service-dashboard-tiles.md), jolloin siihen liittyvä raportti avautuu.
+* [Valitse jokin ruutu](consumer/end-user-tiles.md), jolloin siihen liittyvä raportti avautuu.
 * Tietojoukko on ajastettu päivittymään päivittäin, mutta voit muuttaa päivitysaikataulua tai kokeilla tietojoukon päivittämistä **Päivitä nyt** -toiminnolla haluamanasi ajankohtana
 
 ## <a name="next-steps"></a>Seuraavat vaiheet

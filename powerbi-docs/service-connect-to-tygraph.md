@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 4e9e10f713be50707909c68b104f82cada6777b6
-ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
+ms.openlocfilehash: 3c508044e9f21c09d3115fd745320be9ad0161bc
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37599043"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46548438"
 ---
 # <a name="connect-to-tygraph--with-power-bi"></a>Yhteyden muodostaminen tyGraphiin Power BI:n avulla
 Visualisoi ja tutki tyGraph-tietoja Power BI:ssä Power BI -sisältöpaketin avulla. Aloita yhdistämällä tyGraph-tiliisi ja lataamalla raporttinäkymän, raportit ja tietojoukon. Heti käytettävän sisältöön kuuluu merkityksellisiä tietoja, Aktiivisen osallistumisen mittaustiedot (Measure of Active Engagement, MAE) ja suosituimmat sisällönluojat. Voit mukauttaa sitä edelleen, jotta voit korostaa sinua eniten kiinnostavia tietoja.  Tiedot päivitetään automaattisesti määrittämäsi aikataulun mukaan.
@@ -51,9 +51,9 @@ Yhteyden muodostaminen [tyGraphiin Power BI:ssä](https://app.powerbi.com/getdat
 
 **Mitä seuraavaksi?**
 
-* Kokeile [kysymyksen esittämistä raporttinäkymän yläreunassa olevassa Q&A-ruudussa](power-bi-q-and-a.md).
+* Kokeile [kysymyksen esittämistä raporttinäkymän yläreunassa olevassa Q&A-ruudussa](consumer/end-user-q-and-a.md).
 * [Muuta koontinäytön ruutuja](service-dashboard-edit-tile.md).
-* [Valitse jokin ruutu](service-dashboard-tiles.md), jolloin siihen liittyvä raportti avautuu.
+* [Valitse jokin ruutu](consumer/end-user-tiles.md), jolloin siihen liittyvä raportti avautuu.
 * Tietojoukko on ajastettu päivittymään päivittäin, mutta voit muuttaa päivitysaikataulua tai kokeilla tietojoukon päivittämistä **Päivitä nyt** -toiminnolla haluamanasi ajankohtana
 
 <a name="FindingParams"></a>

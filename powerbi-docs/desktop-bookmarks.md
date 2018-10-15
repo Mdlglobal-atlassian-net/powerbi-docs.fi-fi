@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/06/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: fe52646eef029359ac0e41c5fb32be524076a22d
-ms.sourcegitcommit: cce10e14c111e8a19f282ad6c032d802ebfec943
+ms.openlocfilehash: 1bb9921b31187d0df3debc644088a72e1d78207c
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39657962"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46549910"
 ---
 # <a name="use-bookmarks-to-share-insights-and-build-stories-in-power-bi"></a>Kirjanmerkkien avulla voit jakaa merkityksellisiä tietoja ja koostaa tarinoita Power BI:ssä 
 Käyttämällä **kirjanmerkkejä** Power BI:ssä voit tallentaa raporttisivun senhetkisen määritetyn näkymän suodatukset ja visualisointien tila mukaan lukien. Voit myöhemmin palata tähän tilaan valitsemalla tallennetun kirjanmerkin. 
@@ -132,7 +132,7 @@ Kun käytät kirjanmerkkien **Näkymä**-ominaisuutta, noudata seuraavia ohjeita
 
 * Jos valittu kirjanmerkki on ryhmässä, kun valitset **Näytä** kirjanmerkeistä, tarkasteluistunnossa näytetään vain *kyseisen ryhmän* kirjanmerkit. 
 
-* Jos valittu kirjanmerkki ei ole ryhmä tai se on ylimmällä tasolla (kuten kirjanmerkkiryhmän nimi), näytetään koko raportin kaikki kirjanmerkit, mukaan lukien minkä tahansa ryhmän kirjanmerkit. 
+* Jos valittu kirjanmerkki ei ole ryhmässä tai se on ylimmällä tasolla (kuten kirjanmerkkiryhmän nimi), näytetään koko raportin kaikki kirjanmerkit, mukaan lukien minkä tahansa ryhmän kirjanmerkit. 
 
 Voit poistaa kirjanmerkkien ryhmittelyn valitsemalla minkä tahansa kirjanmerkin ryhmässä, klikkaamalla kolmea pistettä ja valitsemalla sitten esiin avautuvasta valikosta **Poista ryhmittely**. 
 
@@ -182,5 +182,5 @@ Tähän versioon **kirjanmerkkitoiminnosta** liittyy tiettyjä rajoituksia ja hu
 Seuraavissa artikkeleissa on lisätietoja ominaisuuksista, jotka muistuttavat kirjanmerkkejä tai toimivat niiden kanssa:
 
 * [Porautumisen käyttäminen Power BI Desktopissa](desktop-drillthrough.md)
-* [Koontinäytön ruudun tai raporttivisualisoinnin näyttäminen kohdistustilassa](service-focus-mode.md)
+* [Koontinäytön ruudun tai raporttivisualisoinnin näyttäminen kohdistustilassa](consumer/end-user-focus.md)
 

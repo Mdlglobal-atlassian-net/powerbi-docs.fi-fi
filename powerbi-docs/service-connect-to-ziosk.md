@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 2c5fc1f8763b8360d7cd5a6f6605d6b4f3d5df3c
-ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
+ms.openlocfilehash: 4b47e620c0469ed56a7afb413a5775cf2a34c4d4
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37135647"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46546539"
 ---
 # <a name="connect-to-ziosk-survey-analytics-with-power-bi"></a>Yhteyden muodostaminen Ziosk-kyselyn analysointiin Power BI:lla
 Ziosk Survey Analytics -sisältöpaketti Power BI:lle tarjoaa Ziosk-tabletteja käyttäville ravintoloille ennennäkemättömän pääsyn Zioskin tutkimustietoihin mukaan lukien päiväkohtainen segmentointi, sijainti, työntekijä ja paljon muuta.
@@ -43,9 +43,9 @@ Muodosta yhteys Power BI:n [Ziosk Survey Analytics -sisältöpakettiin](https://
 
 **Mitä seuraavaksi?**
 
-* Kokeile [kysymyksen esittämistä raporttinäkymän yläreunassa olevassa Q&A-ruudussa](power-bi-q-and-a.md).
+* Kokeile [kysymyksen esittämistä raporttinäkymän yläreunassa olevassa Q&A-ruudussa](consumer/end-user-q-and-a.md).
 * [Muuta koontinäytön ruutuja](service-dashboard-edit-tile.md).
-* [Valitse jokin ruutu](service-dashboard-tiles.md), jolloin siihen liittyvä raportti avautuu.
+* [Valitse jokin ruutu](consumer/end-user-tiles.md), jolloin siihen liittyvä raportti avautuu.
 * Tietojoukko on ajastettu päivittymään päivittäin, mutta voit muuttaa päivitysaikataulua tai kokeilla tietojoukon päivittämistä **Päivitä nyt** -toiminnolla haluamanasi ajankohtana
 
 ## <a name="whats-included"></a>Paketin sisältö
@@ -73,5 +73,5 @@ Ziosk-tili, jolla on edellä mainittujen taulukoiden käyttöoikeudet, on edelly
 ## <a name="next-steps"></a>Seuraavat vaiheet
 [Mikä on Power BI?](power-bi-overview.md)
 
-[Power BI:n peruskäsitteet](service-basic-concepts.md)
+[Power BI:n peruskäsitteet](consumer/end-user-basic-concepts.md)
 

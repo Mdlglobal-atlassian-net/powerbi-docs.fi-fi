@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-report-server
 ms.topic: conceptual
-ms.date: 05/24/2018
+ms.date: 09/19/2018
 ms.author: maggies
-ms.openlocfilehash: d3b7ace4fe611cc55965f96f770caf7b4ebf21b1
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: c65b945260357b0679f8fdb83c534aac53481126
+ms.sourcegitcommit: 70192daf070ede3382ac13f6001e0c8b5fb8d934
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44726382"
+ms.lasthandoff: 09/22/2018
+ms.locfileid: "46564781"
 ---
 # <a name="install-power-bi-desktop-optimized-for-power-bi-report-server"></a>Asenna Power BI -raporttipalvelimelle optimoitu Power BI Desktop
 Opi asentamaan Power BI -raporttipalvelimelle optimoitu Power BI Desktop.
@@ -31,7 +31,7 @@ Helpoin tapa varmistaa, että sinulla on Power BI -raporttipalvelimelle optimoid
 
     ![Lataa Power BI Desktop verkkoportaalista](media/install-powerbi-desktop/report-server-download-web-portal.png)
 
-    Voit myös siirtyä suoraan kohtaan [Microsoft Power BI Desktop](https://www.microsoft.com/download/details.aspx?id=56723) (optimoitu Power BI -raporttipalvelimelle – maaliskuu 2018) Microsoft Download Centerissä.
+    Voit myös siirtyä suoraan kohtaan [Microsoft Power BI Desktop](https://www.microsoft.com/en-us/download/details.aspx?id=57271) (optimoitu Power BI -raporttipalvelimelle – elokuu 2018) Microsoft Download Centerissä.
 
 2. Valitse Download Center -sivulla **Lataa**.
 
@@ -41,7 +41,8 @@ Helpoin tapa varmistaa, että sinulla on Power BI -raporttipalvelimelle optimoid
 
     - **PBIDesktopRS_x64.msi** (64-bittinen versio).
 
-1. Kun olet ladannut asennusohjelman, suorita Power BI Desktopin (lokakuu 2017) ohjattu asennus.
+1. Kun olet ladannut asennusohjelman, suorita Power BI Desktopin (elokuu 2018) ohjattu asennus.
+
 2. Asennuksen lopussa valitse **Käynnistä Power BI Desktop nyt**.
    
     Se käynnistyy automaattisesti ja on valmiina käyttöön.
@@ -49,7 +50,7 @@ Helpoin tapa varmistaa, että sinulla on Power BI -raporttipalvelimelle optimoid
 ## <a name="verify-you-are-using-the-correct-version"></a>Varmista, että käytät oikeaa versiota
 Voit varmistaa, että käytät Power BI Desktopin oikeaa versiota, Power BI Desktopin käynnistysnäytöstä tai otsikkoriviltä. Otsikkorivi ilmaisee version julkaisukuukauden ja -vuoden.
 
-![Power BI -raporttipalvelimelle optimoidun Power BI Desktopin otsikkorivi](media/quickstart-create-powerbi-report/report-server-desktop-march-2018.png)
+![Power BI -raporttipalvelimelle optimoidun Power BI Desktopin otsikkorivi](media/install-powerbi-desktop/power-bi-report-server-desktop-august-2018.png)
 
 Power BI -palvelun Power BI Desktop -versiossa ei ole kuukautta ja vuotta otsikkorivillä.
 
@@ -63,7 +64,7 @@ Voit myös aina ensin avata sen Power BI Desktopin version, jota haluat käyttä
 Power BI -raportin muokkaaminen Power BI -raporttipalvelimesta tai uuden Power BI -raportin luominen verkkoportaalista avaa aina Power BI Desktopin oikean version.
 
 ## <a name="considerations-and-limitations"></a>Huomioitavat asiat ja rajoitukset
-Power BI -raporttipalvelimen ja Power BI -palvelun raportit (http://powerbi.com) toimivat lähes täsmälleen samoin, mutta jotkut ominaisuudet ovat erilaisia.
+Power BI -raporttipalvelimen Power BI -raportit Power BI -palvelussa (http://app.powerbi.com), ja Power BI -mobiilisovelluksissa toimivat lähes täsmälleen samoin, mutta jotkut ominaisuudet ovat erilaisia.
 
 ### <a name="in-a-browser"></a>Selaimessa
 Power BI -raporttipalvelimen raportit tukevat kaikkia visualisointeja, mukaan luettuina seuraavat:
@@ -80,9 +81,9 @@ Power BI -raporttipalvelimen raportit eivät tue seuraavia:
 ### <a name="in-the-power-bi-mobile-apps"></a>Power BI -mobiilisovelluksissa
 Power BI -raporttipalvelimen raportit tukevat [Power BI -mobiilisovellusten](../consumer/mobile/mobile-apps-for-mobile-devices.md) kaikkia tavallisia toimintoja, mukaan luettuina seuraavat:
 
-* [Puhelimen raporttiasettelu](../desktop-create-phone-report.md): voit optimoida raportin Power BI -mobiilisovelluksia silmällä pitäen. Optimoiduilla raporteilla on matkapuhelimessa erityinen kuvake, ![Puhelimen raporttiasettelun kuvake](media/quickstart-create-powerbi-report/power-bi-rs-mobile-optimized-icon.png), sekä asettelu.
+* [Puhelimen raporttiasettelu](../desktop-create-phone-report.md): voit optimoida raportin Power BI -mobiilisovelluksia silmällä pitäen. Optimoiduilla raporteilla on matkapuhelimessa erityinen kuvake, ![Puhelimen raporttiasettelun kuvake](media/install-powerbi-desktop/power-bi-rs-mobile-optimized-icon.png), sekä asettelu.
   
-    ![Puhelimille optimoitu raportti](media/quickstart-create-powerbi-report/power-bi-rs-mobile-optimized-report.png)
+    ![Puhelimille optimoitu raportti](media/install-powerbi-desktop/power-bi-rs-mobile-optimized-report.png)
 
 Power BI -raporttipalvelimen raportit eivät tue näitä ominaisuuksia Power BI -mobiilisovelluksissa:
 

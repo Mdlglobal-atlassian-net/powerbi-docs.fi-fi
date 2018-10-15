@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: f4a7e8d0ad254f2b5130026d793629a0cf4cf3be
-ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
+ms.openlocfilehash: ad87a2392252a64bc76675fd2b7a98c5e50a17a1
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37137280"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46546023"
 ---
 # <a name="connect-to-github-with-power-bi"></a>Yhteyden muodostaminen GitHubin Power BI:n välillä
 Power BI:n GitHub -sisältöpaketin avulla saat tietoa GitHub-säiliöstä, osallistumistiedoista, ongelmista, noutopyynnöistä sekä aktiivisista käyttäjistä.
@@ -51,9 +51,9 @@ Muodosta yhteys [GitHub -sisältöpakettiin](https://app.powerbi.com/getdata/ser
 
 **Mitä seuraavaksi?**
 
-* Kokeile [kysymyksen esittämistä raporttinäkymän yläreunassa olevassa Q&A-ruudussa](power-bi-q-and-a.md).
+* Kokeile [kysymyksen esittämistä raporttinäkymän yläreunassa olevassa Q&A-ruudussa](consumer/end-user-q-and-a.md).
 * [Muuta koontinäytön ruutuja](service-dashboard-edit-tile.md).
-* [Valitse jokin ruutu](service-dashboard-tiles.md), jolloin siihen liittyvä raportti avautuu.
+* [Valitse jokin ruutu](consumer/end-user-tiles.md), jolloin siihen liittyvä raportti avautuu.
 * Tietojoukko on ajastettu päivittymään päivittäin, mutta voit muuttaa päivitysaikataulua tai kokeilla tietojoukon päivittämistä **Päivitä nyt** -toiminnolla haluamanasi ajankohtana
 
 ## <a name="whats-included"></a>Paketin sisältö

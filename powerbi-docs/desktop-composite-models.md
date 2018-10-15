@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/31/2018
+ms.date: 09/17/2018
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: ddfe0c7ad116a74fa6887491ee41e544096de0f9
-ms.sourcegitcommit: 06f59902105c93700e71e913dff8453e221e4f82
+ms.openlocfilehash: 4e7692be8ec78c79076408635a75dbf0ab9080d2
+ms.sourcegitcommit: 698b788720282b67d3e22ae5de572b54056f1b6c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39388843"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45974042"
 ---
 # <a name="composite-models-in-power-bi-desktop-preview"></a>Yhdistelmämallit Power BI Desktopissa (esikatselu)
 
@@ -164,12 +164,13 @@ Lisäksi **monta moneen** -yhteyksien käyttäminen tarkoittaa, että jokaista s
 
 Tämän version **yhdistelmämalleissa** on muutamia rajoituksia.
 
-Seuraavia monidimensioisia lähteitä ei voi käyttää **yhdistelmämallien** kanssa:
+Seuraavia Live Connectin monidimensioisia lähteitä ei voi käyttää **yhdistelmämallien** kanssa:
 
 * SAP HANA
 * SAP Business Warehouse
 * SQL Server Analysis Services
 * Power BI -tietojoukot
+* Azure Analysis Services
 
 Kun muodostetaan yhteyttä näihin monidimensioisiin lähteisiin DirectQuerylla, et voi muodostaa yhteyttä myös toiseen DirectQuery-lähteeseen tai yhdistää tuotuihin tietoihin.
 

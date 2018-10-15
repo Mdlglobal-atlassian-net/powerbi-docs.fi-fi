@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: c69b73be481408884cc4fbfc5ae4987714b10d9d
-ms.sourcegitcommit: 60f637d8555fd59fd9a86de720b89b388fb85ac0
+ms.openlocfilehash: cfa25a28490a2254bd19bb431beea0ebc14d3c56
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43695106"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46549733"
 ---
 # <a name="connect-to-microsoft-dynamics-marketing-with-power-bi"></a>Yhteyden muodostaminen Microsoft Dynamics Marketingiin Power BI:n avulla
 Microsoft Dynamics Marketingin Power BI -sisältöpaketin avulla voit helposti käyttää ja analysoida tietojasi Dynamics Marketingista. Sisältöpaketti hyödyntää OData-syötteen päällä kuvaavaa mallia, joka sisältää kaikki kohteet ja mittarit, kuten ohjelmat, kampanjat, markkinoinnin yhteyshenkilöt ja yritykset, liidit, liidien vuorovaikutukset ja liidien pisteyttämisen, sähköpostimarkkinoinnin viestit ja verkkosivustot, havainnot käyttäytymisestä, budjetit, kirjanpitotapahtumat, suorituskykyilmaisimet jne. 
@@ -47,9 +47,9 @@ Muodosta yhteys Power BI:lle tarkoitettuun [Dynamics Marketing -sisältöpaketti
 
 **Mitä seuraavaksi?**
 
-* Kokeile [kysymyksen esittämistä raporttinäkymän yläreunassa olevassa Q&A-ruudussa](power-bi-q-and-a.md).
+* Kokeile [kysymyksen esittämistä raporttinäkymän yläreunassa olevassa Q&A-ruudussa](consumer/end-user-q-and-a.md).
 * [Muuta koontinäytön ruutuja](service-dashboard-edit-tile.md).
-* [Valitse jokin ruutu](service-dashboard-tiles.md), jolloin siihen liittyvä raportti avautuu.
+* [Valitse jokin ruutu](consumer/end-user-tiles.md), jolloin siihen liittyvä raportti avautuu.
 * Tietojoukko on ajastettu päivittymään päivittäin, mutta voit muuttaa päivitysaikataulua tai kokeilla tietojoukon päivittämistä **Päivitä nyt** -toiminnolla haluamanasi ajankohtana
 
 ## <a name="system-requirements"></a>Järjestelmävaatimukset

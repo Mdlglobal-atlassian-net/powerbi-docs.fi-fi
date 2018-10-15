@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/27/2018
+ms.date: 09/11/2018
 ms.author: mihart
 LocalizationGroup: Create reports
-ms.openlocfilehash: e08eeed7b4adf1a392d2661613dd190cce1fb52f
-ms.sourcegitcommit: 70192daf070ede3382ac13f6001e0c8b5fb8d934
+ms.openlocfilehash: 8c176cff4973ee73218bf9e568d01f15bd137929
+ms.sourcegitcommit: fb1885da7cf11367660edbf7b7346dc039ee9b5d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "46565931"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47187049"
 ---
 # <a name="use-the-matrix-visual-in-power-bi-desktop"></a>Matriisivisualisoinnin käyttö Power BI Desktopissa
 **Matriisi**-visualisointiominaisuuden avulla voit luoda myös *matriisitaulukoiksi* kutsuttuja visualisointeja **Power BI Desktop** -raporteissa ja korostaa matriisin sisältämiä elementtejä ristiin muiden visualisointien kanssa. Lisäksi voit valita rivejä, sarakkeita ja jopa yksittäisiä soluja ristiinkorostettavaksi. Matriisivisualisointi tukee porrastettua asettelua, jonka avulla voit hyödyntää asettelun tilan entistä paremmin.
@@ -66,7 +66,7 @@ Kyseisten kuvakkeiden lisäksi voit napsauttaa rivien otsikoita hiiren kakkospai
 
 Huomaa, että valikossa on muutamia vaihtoehtoja, jotka tuottavat erilaisia tuloksia:
 
-Jos valitset **Poraudu alaspäin**, matriisi laajennetaan *kyseisen* rivin tasolla, *lukuun ottamatta* kaikkia muita riviotsikoita paitsi sitä, jota napsautettiin hiiren kakkospainikkeella. Seuraavassa kuvassa *Tietokoneet*-otsikkoa napsautettiin hiiren kakkospainikkeella, minkä jälkeen valittiin **Poraudu alaspäin**. Huomaa, että muita ylimmän tason rivejä ei enää näytetä matriisissa. Tämä on hyödyllinen toiminto ja erityisen kätevä, kun käsittelemme **ristiinkorostusta**.
+Jos valitset **Poraudu alaspäin**, matriisi laajennetaan *kyseisen* rivin tasolla, *lukuun ottamatta* kaikkia muita riviotsikoita paitsi sitä, jota napsautettiin hiiren kakkospainikkeella. Seuraavassa kuvassa *Tietokoneet*-otsikkoa napsautettiin hiiren kakkospainikkeella, minkä jälkeen valittiin **Poraudu alaspäin**. Huomaa, että muita ylimmän tason rivejä ei enää näytetä matriisissa. Tämä poraamistapa on hyödyllinen toiminto ja erityisen kätevä, kun käsittelemme **ristiinkorostusta**.
 
 ![](media/desktop-matrix-visual/matrix-visual_8.png)
 
@@ -74,7 +74,7 @@ Voit palata edelliseen ylimmän tason näkymään napsauttamalla **Poraudu ylös
 
 ![](media/desktop-matrix-visual/matrix-visual_8a.png)
 
-Kun napsautat **Poraudu ylöspäin** -kuvaketta vasemmasta yläkulmasta, matriisi näyttää kaikki ylimmän tason luokat. Napsauta uudelleen hiiren kakkospainikkeella ja valitse **Laajenna seuraavalle tasolle**, niin näet seuraavan:
+Kun napsautat **Poraudu ylöspäin** -kuvaketta vasemmasta yläkulmasta, matriisi näyttää kaikki ylimmän tason luokat. Napsauta uudelleen hiiren kakkospainikkeella ja valitse **Laajenna seuraavalle tasolle**, niin näet seuraavan visualisoinnin.
 
 ![](media/desktop-matrix-visual/matrix-visual_9.png)
 
@@ -103,7 +103,7 @@ Hiiren kakkospainikkeen valikon muut kohteet toimivat sarakkeilla samoin kuin ri
 ## <a name="stepped-layout-with-matrix-visuals"></a>Porrastettu asettelu matriisivisualisoinneissa
 **Matriisivisualisointi** sisentää hierarkian alaluokat automaattisesti kunkin ylätason alle. Tätä kutsutaan **porrastetuksi asetteluksi**.
 
-*Alkuperäisessä* matriisivisualisoinnin versiossa aliluokat näytettiin täysin eri sarakkeella, mikä vei visualisoinnista paljon tilaa. Seuraavassa kuvassa taulukko näytetään alkuperäisessä **matriisivisualisoinnissa**. Huomaa, että aliluokat ovat täysin erillisessä sarakkeessa.
+*Alkuperäisessä* matriisivisualisoinnin versiossa aliluokat näytettiin täysin eri sarakkeella, mikä vei visualisoinnista paljon tilaa. Seuraavassa kuvassa taulukko näytetään alkuperäisessä **matriisivisualisoinnissa**. Huomaa, että aliluokat ovat erillisessä sarakkeessa.
 
 ![](media/desktop-matrix-visual/matrix-visual_14.png)
 
@@ -129,7 +129,7 @@ Siirry **Muotoilu**-osioon **Visualisoinnit**-ruudulla, laajenna **Välisummat**
 Voit tehdä saman sarakkeiden välisummille.
 
 ## <a name="cross-highlighting-with-matrix-visuals"></a>Ristiinkorostus matriisivisualisoinneissa
-**Matriisivisualisoinneissa** matriisin elementtejä voidaan valita ristiinkorostuksen perustaksi. Valitse **Matriisin** sarake, niin kyseinen sarake korostetaan, kuten muutkin raporttisivun visualisoinnit. Tämä on muiden visualisointien ja arvopisteen valinnan yleinen ominaisuus, joka on nyt laajennettu **matriisivisualisointeihin**.
+**Matriisivisualisoinneissa** matriisin elementtejä voidaan valita ristiinkorostuksen perustaksi. Valitse **Matriisin** sarake, niin kyseinen sarake korostetaan, kuten muutkin raporttisivun visualisoinnit. Tämä ristiinkorostuksen tyyppi on muiden visualisointien ja arvopisteen valinnan yleinen ominaisuus, joka on nyt laajennettu **matriisivisualisointeihin**.
 
 Myös Ctrl + napsautus -valinta toimii ristiinkorostuksessa. Esimerkiksi seuraavassa kuvassa **matriisivisualisoinnista** valittiin kokoelma aliluokkia. Huomaa, miten visualisoinnin valitsemattomat nimikkeet näkyvät harmaina ja miten sivun muut visualisoinnit kuvastavat **matriisivisualisoinnissa** tehtyjä valintoja.
 

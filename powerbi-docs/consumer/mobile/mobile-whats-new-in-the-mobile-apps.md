@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-mobile
 ms.topic: conceptual
-ms.date: 07/19/2018
+ms.date: 09/14/2018
 ms.author: maggies
-ms.openlocfilehash: 922352c0cdbacd57d3e6706d490b3cc7e65ab8f6
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: 09e7534146ace617ee3e517eca6a453aa9002d38
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44736475"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46546897"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Power BI -mobiilisovellusten uudet ominaisuudet
 Lisätietoja aiheeseen liittyvistä uusista ominaisuuksista:
@@ -22,6 +22,25 @@ Lisätietoja aiheeseen liittyvistä uusista ominaisuuksista:
 * [Power BI -tiimin mobiilisovelluksia käsittelevä blogi](https://powerbi.microsoft.com/blog/tag/mobile/)
 * [Power BI Desktopin uudet ominaisuudet](../../desktop-latest-update.md)  
 * [Power BI -palvelun uudet ominaisuudet](../../service-whats-new.md)  
+
+## <a name="september-2018"></a>Syyskuu 2018
+
+### <a name="phone-report-editing-in-the-browser-all-devices"></a>Puhelinraportin muokkaaminen selaimessa (kaikki laitteet)
+
+Nyt voit luoda puhelinraporttiasettelun raportille, joka on jo julkaistu Power BI -palvelussa eikä ainoastaan Power BI Desktopissa. Voit luoda sen muokkaustilassa selaimessa.
+
+### <a name="dashboard-commenting-ios-and-android"></a>Koontinäytön kommentointi (iOS ja Android) 
+
+Voit lisätä kommentteja suoraan koontinäyttöihin ja tiettyihin ruutuihin keskustellaksesi tiedoistasi, ja kaikki koontinäyttöä tarkastelevat näkevät kommentit. Voit myös tuoda muita organisaatiosi käyttäjiä keskusteluun @mentioning heidät. Jos käyttäjästä on @mentioned, hän saa palveluilmoituksen viestisi kera matkapuhelimeensa.
+
+Tällä hetkellä saatavilla iOS- ja Android-laitteisiin. Windows-tuki tulossa pian.
+
+Lue Power BI -[blogikirjoitus koontinäytön kommenteista](https://powerbi.microsoft.com/blog/announcing-dashboard-comments-in-power-bi/).
+
+### <a name="single-sign-on-windows"></a>Kertakirjautuminen (Windows)
+
+Kertakirjautuminen on yksi pyydetyimmistä ominaisuuksista Power BI:n Windows-mobiilisovellukselle. Voit nyt käyttää ensisijaista organisaatiotiliäsi toimialueeseen liitettyihin Windows-mobiililaitteisiin kirjautumisen lisäksi myös kirjautumisessa sisään saumattomasti Power BI -palveluun. Lue lisää [kertakirjautumisesta ja Windows-mobiilisovelluksista](mobile-windows-10-app-single-sign-on-sso.md).
+
 
 ## <a name="july-2018"></a>Heinäkuu 2018
 
@@ -177,7 +196,7 @@ Lue [mobiilisovellusten ominaisuusyhteenveto heinäkuulta 2017](https://powerbi.
 
 ### <a name="june-2107"></a>Kesäkuu 2107
 #### <a name="all-devices"></a>Kaikki laitteet
-**Sovellusten lisääminen suosikkeihin** Koontinäytön voi jo lisätä suosikkeihin. Hiljattain [Power BI:hin lisättiin sovelluksia](../../service-install-use-apps.md) ja nyt myös sovelluksia voi lisätä suosikkeihin. 
+**Sovellusten lisääminen suosikkeihin** Koontinäytön voi jo lisätä suosikkeihin. Hiljattain [Power BI:hin lisättiin sovelluksia](../end-user-apps.md) ja nyt myös sovelluksia voi lisätä suosikkeihin. 
 
 ### <a name="may-2017"></a>Toukokuu 2017
 #### <a name="all-devices"></a>Kaikki laitteet
@@ -498,7 +517,7 @@ Kaikki tammikuun parannukset ovat jo uudessa [Windows 10 -puhelinten Power BI -s
 
 **R-ruudut ja web-pienoissovellukset** Voit tarkastella näitä uusia koontinäyttöjen ruututyyppejä mobiililaitteessasi.
 
-**Bing-koontinäytöt** Voit nyt luoda Power BI -palvelussa [koontinäyttöjä Bing-hakutuloksista](../../service-connect-to-services.md) ja tarkastella niitä mobiililaitteessasi.
+**Bing-koontinäytöt** Voit nyt luoda Power BI -palvelussa [koontinäyttöjä Bing-hakutuloksista](../end-user-connect-to-services.md) ja tarkastella niitä mobiililaitteessasi.
 
 **Raporttisivut kiinnitettyinä ruuduiksi koontinäytöissä** Voit nyt kiinnittää koko raportin koontinäyttöön Power BI -palvelussa ja käyttää raporttisivuja iPhone- tai Android-puhelimesi Power BI -sovelluksessa.
 

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 60ca8d828d3bb33dced97213e2f135db364c35e5
-ms.sourcegitcommit: ba447d7cc94418d7d3cf6fdcb686ec1a859258a8
+ms.openlocfilehash: 75017eed249b7ec3c4eaab5931a4c1be80770ab1
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37145134"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46548852"
 ---
 # <a name="connect-to-project-online-with-power-bi"></a>Yhteyden muodostaminen Project Onlineen Power BI:llä
 Microsoft Project Online on joustava online-ratkaisu projektiportfolion hallintaan (PPM) ja päivittäiseen työhön. Project Onlinella organisaatiot voivat aloittaa ja priorisoida projektiportfolion sijoituksia sekä toimittaa suunnitellun liiketoiminta-arvon. Power BI:n Project Online -sisältöpaketin avulla voit saada merkityksellisiä tietoja Project Onlinesta projektien, portfolioiden ja resurssien hallinnan helpottamiseksi.
@@ -55,9 +55,9 @@ Huomaa, että sinulla on oltava yhdistettävässä Project Web Appissa portfolio
 
 **Mitä seuraavaksi?**
 
-* Kokeile [kysymyksen esittämistä raporttinäkymän yläreunassa olevassa Q&A-ruudussa](power-bi-q-and-a.md).
+* Kokeile [kysymyksen esittämistä raporttinäkymän yläreunassa olevassa Q&A-ruudussa](consumer/end-user-q-and-a.md).
 * [Muuta koontinäytön ruutuja](service-dashboard-edit-tile.md).
-* [Valitse jokin ruutu](service-dashboard-tiles.md), jolloin siihen liittyvä raportti avautuu.
+* [Valitse jokin ruutu](consumer/end-user-tiles.md), jolloin siihen liittyvä raportti avautuu.
 * Tietojoukko on ajastettu päivittymään päivittäin, mutta voit muuttaa päivitysaikataulua tai kokeilla tietojoukon päivittämistä **Päivitä nyt** -toiminnolla haluamanasi ajankohtana
 
 **Laajenna sisältöpakettia**

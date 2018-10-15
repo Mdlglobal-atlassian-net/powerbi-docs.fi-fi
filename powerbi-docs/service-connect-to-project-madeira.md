@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 1ce4fe4e80138995e7ec356b92f31e45f3a2c920
-ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
+ms.openlocfilehash: 49902e5f7705bf17b8343aa09af6d2fcf43f7ee5
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37599780"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46550140"
 ---
 # <a name="connect-to-project-madeira-with-power-bi"></a>Yhteyden muodostaminen Project ”Madeiraan” Power BI:llä
 Power BI:n ja Project ”Madeira” -sisältöpaketin avulla saat helposti merkityksellisiä tietoja Project ”Madeirasta”. Power BI noutaa sekä Myynti- että Rahoitus-tiedot ja luo niiden pohjalta valmiin koontinäytön ja raportit.
@@ -48,9 +48,9 @@ Muodosta yhteys Power BI:n [Project ”Madeira” Analytics -sisältöpakettiin]
 
 **Mitä seuraavaksi?**
 
-* Kokeile [kysymyksen esittämistä raporttinäkymän yläreunassa olevassa Q&A-ruudussa](power-bi-q-and-a.md).
+* Kokeile [kysymyksen esittämistä raporttinäkymän yläreunassa olevassa Q&A-ruudussa](consumer/end-user-q-and-a.md).
 * [Muuta koontinäytön ruutuja](service-dashboard-edit-tile.md).
-* [Valitse jokin ruutu](service-dashboard-tiles.md), jolloin siihen liittyvä raportti avautuu.
+* [Valitse jokin ruutu](consumer/end-user-tiles.md), jolloin siihen liittyvä raportti avautuu.
 * Tietojoukko on ajastettu päivittymään päivittäin, mutta voit muuttaa päivitysaikataulua tai kokeilla tietojoukon päivittämistä **Päivitä nyt** -toiminnolla haluamanasi ajankohtana
 
 <a name="Requirements"></a>
@@ -115,5 +115,5 @@ Olet myös saattanut unohtaa määrittää yrityksen nimen:
 ## <a name="next-steps"></a>Seuraavat vaiheet
 [Mikä on Power BI?](power-bi-overview.md)
 
-[Power BI:n peruskäsitteet](service-basic-concepts.md)
+[Power BI:n peruskäsitteet](consumer/end-user-basic-concepts.md)
 

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 48246d61789a0b1e160109c1f2fb0e81838b3965
-ms.sourcegitcommit: fbb7924603f8915d07b5e6fc8f4d0c7f70c1a1e1
+ms.openlocfilehash: b83ef2b6f2cd07e9f6c9af849e0f64d0490fa1af
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39280313"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46546944"
 ---
 # <a name="connect-to-zuora-with-power-bi"></a>Yhteyden muodostaminen Zuoraan Power BI:llä
 Zuora for Power BI:n avulla voit visualisoida tärkeät tuotto-, laskutus- ja tilaustiedot. Käytä oletusraporttinäkymiä ja -raportteja käyttötrendien analysointiin, laskutuksen ja maksujen seurantaan sekä toistuvan tuoton valvontaan, tai mukauta niitä omien raporttinäkymä- ja raportointitarpeidesi mukaan.
@@ -44,9 +44,9 @@ Yhteyden muodostaminen [Zuora](https://app.powerbi.com/getdata/services/Zuora) f
 
 **Mitä seuraavaksi?**
 
-* Kokeile [kysymyksen esittämistä raporttinäkymän yläreunassa olevassa Q&A-ruudussa](power-bi-q-and-a.md).
+* Kokeile [kysymyksen esittämistä raporttinäkymän yläreunassa olevassa Q&A-ruudussa](consumer/end-user-q-and-a.md).
 * [Muuta koontinäytön ruutuja](service-dashboard-edit-tile.md).
-* [Valitse jokin ruutu](service-dashboard-tiles.md), jolloin siihen liittyvä raportti avautuu.
+* [Valitse jokin ruutu](consumer/end-user-tiles.md), jolloin siihen liittyvä raportti avautuu.
 * Tietojoukko on ajastettu päivittymään päivittäin, mutta voit muuttaa päivitysaikataulua tai kokeilla tietojoukon päivittämistä **Päivitä nyt** -toiminnolla haluamanasi ajankohtana
 
 ## <a name="whats-included"></a>Paketin sisältö

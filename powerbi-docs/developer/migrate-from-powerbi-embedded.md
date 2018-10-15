@@ -8,12 +8,12 @@ ms.Embedded: powerbi
 ms.topic: conceptual
 ms.date: 06/30/2018
 ms.author: maghan
-ms.openlocfilehash: 6de0efe3bad1662d1324488a7030894248056730
-ms.sourcegitcommit: 06f59902105c93700e71e913dff8453e221e4f82
+ms.openlocfilehash: 6b500acee862d8f16c186a9adc2fe0b194003e50
+ms.sourcegitcommit: 698b788720282b67d3e22ae5de572b54056f1b6c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39388659"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45973835"
 ---
 # <a name="how-to-migrate-power-bi-workspace-collection-content-to-power-bi-embedded"></a>Power BI -työtilakokoelman sisällön siirtäminen Power BI Embedded -palveluun
 Opi siirtämään Power BI ‑työtilakokoelma Power BI Embedded ‑palveluun ja hyödynnä sisällön upottamisesta sovelluksiin syntyvät edut.
@@ -30,7 +30,7 @@ Nykyinen Power BI ‑työtilakokoelma on saatavilla vielä rajoitetun ajan. Ente
 
 ![](media/migrate-from-powerbi-embedded/powerbi-embed-flow.png)
 
-Ennen kuin aloitat uuteen Power BI Embeddediin siirtymiseen, voit käydä nopeasti läpi ohjeistuksen, joka auttaa määrittämään uuden Power BI Embedded -ympäristön [perehdytyskokemustyökalua](https://aka.ms/embedsetup) käyttämällä.
+Ennen kuin aloitat uuteen Power BI Embeddediin siirtymiseen, voit käydä nopeasti läpi ohjeistuksen, joka auttaa määrittämään uuden Power BI Embedded -ympäristön [upottamisen määritystyökalua](https://aka.ms/embedsetup) käyttämällä.
 
 Valitse ratkaisu, joka sopii sinulle:
 * **Asiakkaille tarkoitettu upotus** - kun olet kiinnostunut [sovellus omistaa tiedot](https://aka.ms/embedsetup/AppOwnsData) -ratkaisusta. [Asiakkaille tarkoitettu upotus](embedding.md#embedding-for-your-customers) mahdollistaa raporttinäkymien ja raporttien upottamisen käyttäjille, joilla ei ole Power BI -tiliä. 

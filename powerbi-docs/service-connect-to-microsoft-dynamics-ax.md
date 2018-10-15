@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 2e84d52d9e26b23380b9fbc12fdaa4086a2ec7ed
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 8466d57340feb80650af93e4f400b82436d11b05
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34239904"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46544850"
 ---
 # <a name="connect-to-microsoft-dynamics-ax-content-pack-with-power-bi"></a>Yhteyden muodostaminen Microsoft Dynamics AX -sisältöpakettiin Power BI:n avulla
 Microsoft Dynamics AX sisältää kolme Power BI -sisältöpakettia, jotka on suunnattu eri yrityskäyttäjille. Erityisesti talousjohtajille suunniteltu Taloudellinen menestys -sisältöpaketti tarjoaa pääsyn organisaatiosi taloudellista suorituskykyä koskeviin merkityksellisiin tietoihin. Vähittäismyyntikanavan menestys -sisältöpaketti on suunnattu kanavajohtajille, ja se keskittyy myynnin suorituskykyyn trendien ennustamiseksi ja merkityksellisten tietojen tunnistamiseksi hyödyntämällä suoraan vähittäismyyntiä ja kauppaa koskevia tietoja. Kustannustenhallinta on suunniteltu operatiivisille johtajille ja talousjohtajille, ja se tarjoaa tietoja toiminnan suorituskyvystä.
@@ -46,9 +46,9 @@ Muodosta yhteys Microsoft Dynamics AX:n [Vähittäismyyntikanavan menestys](http
 
 **Mitä seuraavaksi?**
 
-* Kokeile [kysymyksen esittämistä raporttinäkymän yläreunassa olevassa Q&A-ruudussa](power-bi-q-and-a.md).
+* Kokeile [kysymyksen esittämistä raporttinäkymän yläreunassa olevassa Q&A-ruudussa](consumer/end-user-q-and-a.md).
 * [Muuta koontinäytön ruutuja](service-dashboard-edit-tile.md).
-* [Valitse jokin ruutu](service-dashboard-tiles.md), jolloin siihen liittyvä raportti avautuu.
+* [Valitse jokin ruutu](consumer/end-user-tiles.md), jolloin siihen liittyvä raportti avautuu.
 * Tietojoukko on ajastettu päivittymään päivittäin, mutta voit muuttaa päivitysaikataulua tai kokeilla tietojoukon päivittämistä **Päivitä nyt** -toiminnolla haluamanasi ajankohtana
 
 ## <a name="whats-included"></a>Paketin sisältö

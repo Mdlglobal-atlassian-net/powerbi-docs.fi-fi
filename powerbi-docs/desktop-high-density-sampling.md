@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/27/2018
+ms.date: 09/17/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 4540c00e4956e87e1c012dc2a35c00e61e00b5a6
-ms.sourcegitcommit: f01a88e583889bd77b712f11da4a379c88a22b76
+ms.openlocfilehash: ae17eff366fe5e931963c9367586c08fd39eda69
+ms.sourcegitcommit: 698b788720282b67d3e22ae5de572b54056f1b6c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39328140"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45973927"
 ---
 # <a name="high-density-line-sampling-in-power-bi"></a>Suuren tiheyden viivaotanta Power BI:ssä
 Kesäkuussa 2017 julkaistussa **Power BI Desktop** -versiossa ja **Power BI -palvelun** päivityksissä otettiin käyttöön uusi näytteenottoalgoritmi, joka parantaa visualisointeja, joissa käytetään suuren tiheyden viivaotantaa. Saatat esimerkiksi luoda viivakaavion vähittäismyymälöidesi myyntituloksista, ja jokaisella myymälällä on yli 10 000 myyntikuittia joka vuosi. Tällaisten myyntitietojen viivakaavio ottaa näytteen jokaisen myymälän tiedoista, jotta niistä saadaan tuotettua merkityksellinen esitys ajallisen myyntivaihtelun kuvaamiseksi. Näytteistä luodaan pohjana olevia tietoja kuvaava monijaksoinen viivakaavio. Tämä on yleinen tapa suuren tiheyden tietojen visualisoinnissa. Power BI Desktopin suuren tiheyden näytteenottoa on parannettu, ja sitä kuvataan nyt tarkemmin tässä artikkelissa.
@@ -24,8 +24,6 @@ Kesäkuussa 2017 julkaistussa **Power BI Desktop** -versiossa ja **Power BI -pal
 
 > [!NOTE]
 > Artikkelissa kuvattu **suuren tiheyden näytteenoton** algoritmi on käytössä sekä **Power BI Desktopissa** että **Power BI -palvelussa**.
-> 
-> 
 
 ## <a name="how-high-density-line-sampling-works"></a>Suuren tiheyden viivaotannan toimintaperiaate
 Aiemmin **Power BI** valitsi näytteen arvopisteitä koko pohjana olevasta tietojoukosta deterministisesti. Esimerkiksi yhtä kalenterivuotta kuvaavassa visualisoinnissa, jonka pohjana on suuren tiheyden tietoa, saatettiin esittää 350 arvopisteen otos. Sillä pyrittiin varmistamaan, että koko tietojoukko (eli kaikki pohjatiedot) esitettiin visualisoinnissa. Asian havainnollistamiseksi voidaan ajatella esimerkiksi osakkeen hintaa yhden vuoden ajalta. Sitä kuvataan viivakaaviovisualisoinnilla, johon valitaan 365 arvopistettä eli yksi arvopiste jokaiselle päivälle.
@@ -42,17 +40,25 @@ Suuren tiheyden visualisointia varten **Power BI** viipaloi älykkäästi suuren
 ### <a name="minimum-and-maximum-values-for-high-density-line-visuals"></a>Suuren tiheyden viivavisualisointien vähimmäis- ja enimmäisarvot
 Kaikkia visualisointeja koskevat seuraavat rajoitukset:
 
-* Visualisoinnissa *näytettävien* arvopisteiden enimmäismäärä on **3 500** riippumatta pohjatietojen arvopisteiden tai sarjojen määrästä. Näin ollen jos käytettävissä on kymmenen sarjaa, joista kussakin on 350 arvopistettä, visualisoinnin arvopisteiden enimmäismäärä on saavutettu. Jos sarjoja on yksi, siinä voi olla jopa 3 500 arvopisteitä, mikäli uuden algoritmin mukaan ne kaikki tarvitaan pohjatietojen parasta esittämistä varten.
+* Useimmissa visualisoinnissa *näytettävien* arvopisteiden enimmäismäärä on **3 500** riippumatta pohjatietojen arvopisteiden tai sarjojen määrästä (katso *poikkeukset* seuraavasta luettelosta). Näin ollen jos käytettävissä on kymmenen sarjaa, joista kussakin on 350 arvopistettä, visualisoinnin arvopisteiden enimmäismäärä on saavutettu. Jos sarjoja on yksi, siinä voi olla jopa 3 500 arvopisteitä, mikäli uuden algoritmin mukaan ne kaikki tarvitaan pohjatietojen parasta esittämistä varten.
+
 * Visualisoinnissa voi olla enintään **60 sarjaa**. Jos sarjoja on yli 60, jaa tiedot ja luo useita visualisointeja, joista kussakin on korkeintaan 60 sarjaa. On suositeltava tapa käyttää **osittajaa** näyttämään vain osia tiedoista, kuten vain tietyt sarjat. Jos esimerkiksi näytät tietyn selitteen kaikki aliluokat, voit osittajan avulla suodattaa tiedot yleisen luokan mukaan samalla raporttisivulla.
+
+Tietorajoitusten enimmäismäärä on korkeampi seuraaville visualisointityypeille, jotka ovat *poikkeuksia* 3 500 arvopisteen rajaan:
+
+* **150 000** arvopistettä enimmäismäärä R-visualisoinneille.
+* **30 000** arvopistettä mukautetuille visualisoinneille.
+* **10 000** arvopistettä pistekaavioille (pistekaavioiden oletusarvo on 3 500)
+* **3 500** kaikille muille visualisoinneille
 
 Nämä parametrit varmistavat, että Power BI Desktop pystyy hahmontamaan visualisoinnit erittäin nopeasti ja että niiden vuorovaikutteisuus säilyy. Samalla visualisointia hahmontavaa tietokonetta ei rasiteta liikaa.
 
 ### <a name="evaluating-representative-data-points-for-high-density-line-visuals"></a>Suuren tiheyden viivavisualisointien edustavien arvopisteiden arviointi
-Kun pohjatietojen arvopisteiden määrä ylittää visualisoinneissa esitettävien arvopisteiden enimmäismäärän (3 500 pistettä), aloitetaan prosessi nimeltä *lokeroiminen*. Se jakaa pohjatiedot *lokeroiksi* kutsuttuihin ryhmiin ja alkaa sitten iteratiivisesti tarkentaa näitä lokeroita.
+Kun pohjatietojen arvopisteiden määrä ylittää visualisoinneissa esitettävien arvopisteiden enimmäismäärän, aloitetaan prosessi nimeltä *lokeroiminen*. Se jakaa pohjatiedot *lokeroiksi* kutsuttuihin ryhmiin ja alkaa sitten iteratiivisesti tarkentaa näitä lokeroita.
 
 Algoritmi luo niin monta lokeroa kuin mahdollista, jotta visualisointiin saadaan suurin määrä tietopisteiden askelvälejä. Algoritmi etsii jokaisen lokeron sisältä pienimmän ja suurimman tietoarvon, jotta tärkeät ja merkittävät arvot, kuten poikkeavat havainnot, saadaan taltioitua ja esitettyä visualisoinnissa. Tietojen lokeroimisen ja arvioinnin tulosten pohjalta Power BI määrittää visualisoinnin X-akselin vähimmäistarkkuuden, jotta visualisointiin saadaan mahdollisimman paljon askelvälejä.
 
-Jokaisen sarjan pienin askelvälimäärä on 350 pistettä ja suurin 3 500.
+Kuten aiemmin mainittiin, pienin askelväli kullekin sarjalle on 350 pistettä, enimmäismäärä on 3 500 pistettä useimmille visualisoinneille, *poikkeukset* on lueteltu edellisissä kappaleissa.
 
 Jokainen lokero esitetään kahdella arvopisteellä, joista muodostetaan lokeroa edustavat arvopisteet visualisointiin. Arvopisteet ovat yksinkertaisesti lokeron ylin ja alin arvo. Valitsemalla nämä arvot lokerointiprosessi varmistaa, että visualisointiin tallennetaan ja hahmonnetaan kaikki mahdolliset tärkeät ylimmät ja alimmat arvot.
 

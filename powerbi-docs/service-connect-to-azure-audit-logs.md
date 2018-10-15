@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 02/06/2018
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 903f2a345ba4d87cb217ececa459a3cca14d72fa
-ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
+ms.openlocfilehash: 882fdad2b29c9bd21ea0b979d5009dee86304159
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37134635"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46548139"
 ---
 # <a name="connect-to-azure-audit-logs-with-power-bi"></a>Muodosta yhteys Azure-valvontalokeihin Power BI:n avulla
 Azure-valvontalokien sisältöpaketissa voit analysoida ja visualisoida valvontalokeihin tallennettuja tietoja. Power BI noutaa tiedot ja laatii sitten valmiin koontinäytön ja siihen liittyvät raportit kyseisten tietojen perusteella.
@@ -47,9 +47,9 @@ Muodosta yhteys [Azure-valvontalokien sisältöpakettiin](https://app.powerbi.co
 
 **Mitä seuraavaksi?**
 
-* Kokeile [kysymyksen esittämistä raporttinäkymän yläreunassa olevassa Q&A-ruudussa](power-bi-q-and-a.md).
+* Kokeile [kysymyksen esittämistä raporttinäkymän yläreunassa olevassa Q&A-ruudussa](consumer/end-user-q-and-a.md).
 * [Muuta koontinäytön ruutuja](service-dashboard-edit-tile.md).
-* [Valitse jokin ruutu](service-dashboard-tiles.md), jolloin siihen liittyvä raportti avautuu.
+* [Valitse jokin ruutu](consumer/end-user-tiles.md), jolloin siihen liittyvä raportti avautuu.
 * Tietojoukko on ajastettu päivittymään päivittäin, mutta voit muuttaa päivitysaikataulua tai kokeilla tietojoukon päivittämistä **Päivitä nyt** -toiminnolla haluamanasi ajankohtana
 
 ## <a name="system-requirements"></a>Järjestelmävaatimukset
@@ -70,5 +70,5 @@ Jos näet tunnistetietojen virheen tai virheen yritettäessä päivittää virhe
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 [Mikä on Power BI?](power-bi-overview.md)  
-[Power BI:n peruskäsitteet](service-basic-concepts.md)  
+[Power BI:n peruskäsitteet](consumer/end-user-basic-concepts.md)  
 

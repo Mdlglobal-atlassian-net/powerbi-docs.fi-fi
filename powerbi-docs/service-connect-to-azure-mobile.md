@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 2d2d983da6de5ec88574092289ed2958c7a98923
-ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
+ms.openlocfilehash: 370613fb4436eb71ae0b6af6c0b5166e8bb7b434
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37600408"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46546690"
 ---
 # <a name="connect-to-azure-mobile-engagement-with-power-bi"></a>Yhteyden muodostaminen Azure Mobile Engagementiin Power BI:n avulla
 Power BI:n Azure Mobile Engagement -sisältöpaketin avulla teet nopeasti merkityksellisiä havaintoja sovellustiedoistasi.
@@ -44,9 +44,9 @@ Muodosta yhteys Power BI:n [Azure Mobile Engagement -sisältöpakettiin](https:/
 
 ## <a name="what-now"></a>Mitä nyt?
 
-* Kokeile [kysymyksen esittämistä koontinäytön yläreunassa olevassa Q&A-ruudussa](power-bi-q-and-a.md).
+* Kokeile [kysymyksen esittämistä koontinäytön yläreunassa olevassa Q&A-ruudussa](consumer/end-user-q-and-a.md).
 * [Muuta koontinäytön ruutuja](service-dashboard-edit-tile.md).
-* [Valitse jokin ruutu](service-dashboard-tiles.md), jolloin siihen liittyvä raportti avautuu.
+* [Valitse jokin ruutu](consumer/end-user-tiles.md), jolloin siihen liittyvä raportti avautuu.
 * Tietojoukko on ajastettu päivittymään päivittäin, mutta voit muuttaa päivitysaikataulua tai kokeilla tietojoukon päivittämistä **Päivitä nyt** -toiminnolla haluamanasi ajankohtana
 
 ## <a name="next-steps"></a>Seuraavat vaiheet

@@ -9,18 +9,18 @@ ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: overview
 ms.date: 07/31/2018
-ms.openlocfilehash: 2889345c5e4a5e93602c51baa27bf2c7e28e138f
-ms.sourcegitcommit: 16098be04df05bc8e3d44a99b4d143b622759c59
+ms.openlocfilehash: 7b96e671a6fe9b450fff683ced3caa611ae70bd7
+ms.sourcegitcommit: 698b788720282b67d3e22ae5de572b54056f1b6c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39616024"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45973766"
 ---
 # <a name="embedding-with-power-bi"></a>Upottaminen Power BI:llä
 
-Power BI -palvelu (SaaS) ja Power BI Embedded -palvelu Azuressa (PaaS) sisältävät ohjelmointirajapintoja raporttinäkymien ja raporttien upottamista varten. Se tarkoittaa, että saat tarvittavat ominaisuudet ja oikeudet käyttää uusimpia Power BI -toimintoja, kuten koontinäyttöjä, yhdyskäytäviä ja sovellustyötiloja, sisältöjen upottamiseen.
+Power BI -palvelu (SaaS) ja Power BI Embedded -palvelu Azuressa (PaaS) sisältävät ohjelmointirajapintoja raporttinäkymien ja raporttien upottamista varten. Tämä ominaisuus tarkoittaa, että saat tarvittavat ominaisuudet ja oikeudet käyttää uusimpia Power BI -toimintoja, kuten koontinäyttöjä, yhdyskäytäviä ja sovellustyötiloja, sisältöjen upottamiseen.
 
-Voit käyttää [Perehdyttämiskokemustyökalua](https://aka.ms/embedsetup) aloittaaksesi ja ladataksesi mallisovelluksen nopeasti.
+Voit käyttää [upottamisen määritystyökalua](https://aka.ms/embedsetup) päästäksesi nopeasti alkuun ja ladataksesi mallisovelluksen.
 
 Valitse ratkaisu, joka sopii sinulle:
 
@@ -49,7 +49,7 @@ Organisaation käyttöön upottamisen osalta katso seuraavia ohjeaiheita:
 
 Itsepalvelutoiminnot, kuten muun muassa muokkaus ja tallennus, ovat käytettävissä [JavaScript-ohjelmointirajapinnassa](https://github.com/Microsoft/PowerBI-JavaScript), kun käytetään upotusta Power BI -käyttäjien käyttöön.
 
-Voit käyttää [yrityksesi käytössä olevaa upottamiseen tarkoitettua perehdyttämistyökalua](https://aka.ms/embedsetup/UserOwnsData), jonka avulla pääset nopeasti alkuun ja voit ladata mallisovelluksen, joka opastaa, miten raportti integroidaan yrityksessäsi.
+Voit käyttää [upottamisen määritystyökalua](https://aka.ms/embedsetup/UserOwnsData), jonka avulla pääset nopeasti alkuun ja voit ladata mallisovelluksen, joka opastaa, miten raportti integroidaan yrityksessäsi.
 
 ## <a name="embedding-for-your-customers"></a>Upottaminen asiakkaiden käyttöön
 

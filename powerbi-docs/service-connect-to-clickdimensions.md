@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 9506ab48e48fe04e07de8dcb08ad5234d31045cf
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 709dd5d1b5203e9c5bb790d69cb0537c03a17916
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34242951"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46543338"
 ---
 # <a name="connect-to-clickdimensions-with-power-bi"></a>Yhteyden muodostaminen ClickDimensionsiin Power BI:n avulla
 ClickDimensions-sisältöpaketti Power BI:lle antaa käyttäjien hyödyntää ClickDimensionsin markkinointidataa Power BI:ssa, jolloin johtotiimit saavat merkityksellistä tietoa myynti- ja markkinointiponnistelujen tehokkuudesta. Visualisoi ja analysoi sähköpostiviestintää, verkkokäyntejä ja lähetettyjä lomakkeita Power BI -koontinäyttöjen ja raporttien avulla.
@@ -44,9 +44,9 @@ Muodosta yhteys [Power BI:n ClickDimensions-sisältöpakettiin.](https://app.pow
 
 **Mitä seuraavaksi?**
 
-* Kokeile [kysymyksen esittämistä raporttinäkymän yläreunassa olevassa Q&A-ruudussa](power-bi-q-and-a.md).
+* Kokeile [kysymyksen esittämistä raporttinäkymän yläreunassa olevassa Q&A-ruudussa](consumer/end-user-q-and-a.md).
 * [Muuta koontinäytön ruutuja](service-dashboard-edit-tile.md).
-* [Valitse jokin ruutu](service-dashboard-tiles.md), jolloin siihen liittyvä raportti avautuu.
+* [Valitse jokin ruutu](consumer/end-user-tiles.md), jolloin siihen liittyvä raportti avautuu.
 * Tietojoukko on ajastettu päivittymään päivittäin, mutta voit muuttaa päivitysaikataulua tai kokeilla tietojoukon päivittämistä **Päivitä nyt** -toiminnolla haluamanasi ajankohtana
 
 ## <a name="system-requirements"></a>Järjestelmävaatimukset

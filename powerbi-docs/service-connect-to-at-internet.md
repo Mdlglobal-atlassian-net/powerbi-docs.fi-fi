@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 1baccb5fd674d5e0037f112fc8cbee450b6bcb8a
-ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
+ms.openlocfilehash: c65cc7052a3a056280561643c7734212b92769be
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37136360"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46549415"
 ---
 # <a name="connect-to-at-internet-bridge-with-power-bi"></a>Yhteyden muodostaminen AT Internet Bridgeen Power BI:n avulla
 AT Internetin ja sen digitaalisen Analytics Suite -analyysialustan avulla voit poimia tiedoistasi välittömän arvon. Power BI:lle kehitetty AT Internet Bridge -sisältöpaketti sisältää tietoja, jotka koskevat sivuston vierailuja, lähteitä, lokalisointia ja laitteita.
@@ -44,9 +44,9 @@ Yhteyden muodostaminen [AT Internet Bridge -sisältöpakettiin](https://app.powe
 
 **Mitä seuraavaksi?**
 
-* Kokeile [kysymyksen esittämistä raporttinäkymän yläreunassa olevassa Q&A-ruudussa](power-bi-q-and-a.md).
+* Kokeile [kysymyksen esittämistä raporttinäkymän yläreunassa olevassa Q&A-ruudussa](consumer/end-user-q-and-a.md).
 * [Muuta koontinäytön ruutuja](service-dashboard-edit-tile.md).
-* [Valitse jokin ruutu](service-dashboard-tiles.md), jolloin siihen liittyvä raportti avautuu.
+* [Valitse jokin ruutu](consumer/end-user-tiles.md), jolloin siihen liittyvä raportti avautuu.
 * Tietojoukko on ajastettu päivittymään päivittäin, mutta voit muuttaa päivitysaikataulua tai kokeilla tietojoukon päivittämistä **Päivitä nyt** -toiminnolla haluamanasi ajankohtana
 
 ## <a name="whats-included"></a>Paketin sisältö
@@ -61,5 +61,5 @@ Tämä sisältöpaketti sisältää viimeisen 45 päivän tiedot seuraavista tau
 ## <a name="next-steps"></a>Seuraavat vaiheet
 [Mikä on Power BI?](power-bi-overview.md)
 
-[Power BI:n peruskäsitteet](service-basic-concepts.md)
+[Power BI:n peruskäsitteet](consumer/end-user-basic-concepts.md)
 

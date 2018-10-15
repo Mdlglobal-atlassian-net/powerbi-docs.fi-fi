@@ -10,25 +10,22 @@ ms.component: powerbi-admin
 ms.topic: conceptual
 ms.date: 08/29/2018
 LocalizationGroup: Premium
-ms.openlocfilehash: 8e19bc596bef3862dca79ac92ffbd74954a9c756
-ms.sourcegitcommit: 6be2c54f2703f307457360baef32aee16f338067
+ms.openlocfilehash: b5a2b26beb548a7f1df5edb8cf12a2c0ea250c8f
+ms.sourcegitcommit: fb1885da7cf11367660edbf7b7346dc039ee9b5d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43300157"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47187624"
 ---
-# <a name="monitor-power-bi-premium-capacities-in-your-organization"></a>Power BI Premium -kapasiteettien valvominen organisaatiossasi
+# <a name="monitor-power-bi-premium-and-power-bi-embedded-capacities"></a>Power BI Premiumin ja Power BI Embeddedin kapasiteettien valvonta
 
-Tässä artikkelissa annetaan yleiskatsaus Power BI Premium -kapasiteettien mittausarvojen valvonnasta. Kapasiteetin käytön valvonnan avulla voit hallita kapasiteettejasi valistuneesti. 
+Tässä artikkelissa annetaan yleiskatsaus Power BI Premium -kapasiteettien mittausarvojen valvonnasta. Kapasiteetin käytön valvonnan avulla voit hallita kapasiteettejasi valistuneesti.
 
 Voit valvoa kapasiteettia Power BI Premium -kapasiteetin mittausarvot -sovelluksen avulla tai hallintaportaalissa. Sovelluksen käyttäminen on suositeltavaa, koska se tarjoaa paljon enemmän tietoja, mutta tässä artikkelissa käsitellään molemmat vaihtoehdot.
 
 ## <a name="install-the-premium-capacity-metrics-app"></a>Premium-kapasiteetin mittausarvot -sovelluksen asentaminen
 
 Voit siirtyä suoraan [Premium-kapasiteetin mittausarvot -sovellukseen](https://app.powerbi.com/groups/me/getapps/services/capacitymetrics) tai asentaa sen muiden Power BI -sovellusten tapaan.
-
-> [!IMPORTANT]
-> Jos haluat asentaa tämän sovelluksen ja käyttää sitä, sinun on oltava vähintään yhden kapasiteetin järjestelmänvalvoja. Power BI -järjestelmänvalvojan rooli ei riitä. 
 
 1. Valitse Power BI:ssä **Sovellukset**.
 
@@ -42,7 +39,8 @@ Voit siirtyä suoraan [Premium-kapasiteetin mittausarvot -sovellukseen](https://
 
 Nyt kun olet asentanut sovelluksen, voit nähdä kapasiteetteja koskevia mittausarvoja organisaatiossasi. Tutustutaan muutamaan tärkeimpään käytettävissä olevaan mittausarvoon.
 
-## <a name="use-the-metrics-app"></a>Mittausarvosovelluksen käyttäminen 
+## <a name="use-the-metrics-app"></a>Mittausarvosovelluksen käyttäminen
+
 Kun avaat sovelluksen, se näyttää ensin raporttinäkymältä, jossa on yhteenveto kaikista kapasiteeteista, joihin sinulla on järjestelmänvalvojan oikeudet.
 
 ![Premium-raportin yleiskatsaus](media/service-admin-premium-monitor-capacity/app-dashboard.png)

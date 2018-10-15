@@ -1,9 +1,9 @@
 ---
 title: Lisää Power BI-raporttiparametreja URL-osoitteen kautta
 description: Voit suodattaa raportin käyttämällä URL-osoitteen kyselyparametreja ja jopa suodattaa useamman kuin yhden kentän.
-author: mihart
-ms.author: mihart
-manager: annebe
+author: maggiesMSFT
+ms.author: maggies
+manager: kfile
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
@@ -11,12 +11,12 @@ ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 09/14/2018
 LocalizationGroup: Reports
-ms.openlocfilehash: 1124163b985f575df08a9ba4f065c6a6b1abf54c
-ms.sourcegitcommit: cca21f8089e71b595d3aca30c95f12e4bbf767cc
+ms.openlocfilehash: 1de9624dfde73baf424a21ed4d587d086c1d6763
+ms.sourcegitcommit: fb1885da7cf11367660edbf7b7346dc039ee9b5d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45626027"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47187256"
 ---
 # <a name="filter-a-report-using-query-string-parameters-in-the-url"></a>Raportin suodattaminen URL-osoitteen kyselymerkkijonoparametrien avulla
 
@@ -106,7 +106,7 @@ Power BI tukee useita muitakin operaattoreita kuin **and**. Seuraavassa taulukos
 |**gt**     | suurempi kuin        |ei | kyllä | kyllä  | product/price gt 20
 |**le**     |   pienempi tai yhtä suuri kuin      | ei | kyllä | kyllä  | product/price le 100
 |**lt**     |  pienempi kuin       | ei | kyllä | kyllä |  product/price lt 20
-|**in****     |  mukaan lukien       | ei | ei |  kyllä | Student/Age in (27, 29)
+|**in****     |  mukaan lukien       | kyllä | kyllä |  kyllä | Student/Age in (27, 29)
 
 
 \** Käytettäessä **in**-operaattoria **in**-operaattorin oikealla puolella olevat arvot voidaan merkitä sulkeiden sisälle pilkuilla erotettuna luettelona tai yksittäisenä lausekkeena, joka palauttaa kokoelman.
@@ -131,14 +131,14 @@ Miksi tämä ero on merkityksellinen? Oletetaan, että luot kyselymerkkijonopara
 
 ## <a name="special-characters-in-url-filters"></a>URL-suodattimien erikoismerkit
 
-Erikoismerkit ja välilyönnit edellyttävät lisämuotoiluja. Kun kysely sisältää välilyöntejä, ajatusviivoja tai muita kuin ASCII-merkkejä, lisää kyseisiin erikoismerkkeihin etuliitteeksi *ohjauskoodi* (**_x**) ja 4-numeroinen **Unicode-tunnus**. Jos Unicode-tunnuksessa on alle 4 merkkiä, sinun on täydennettävä sitä nollilla. Seuraavassa on joitakin esimerkkejä.
+Erikoismerkit ja välilyönnit edellyttävät lisämuotoiluja. Kun kysely sisältää välilyöntejä, ajatusviivoja tai muita kuin ASCII-merkkejä, lisää kyseisiin erikoismerkkeihin etuliitteeksi *ohjauskoodi*, joka alkaa alaviivalla ja X:llä (**_x**), sitten 4-numeroinen **Unicode-tunnus** ja lopuksi toinen alaviiva. Jos Unicode-tunnuksessa on alle 4 merkkiä, sinun on täydennettävä sitä nollilla. Seuraavassa on joitakin esimerkkejä.
 
 |Tunniste  |Unicode  | Koodaus Power BI:ssä  |
 |---------|---------|---------|
-|**Taulukon nimi**     | Välilyönti: 0x20        |  Taulukon_x0020_nimi       |
-|**Sarakkeen**@**numero**     |   @: 0x40     |  Sarakkeen_x0040_numero       |
-|**[Sarake]**     |  [:0x005B ]:0x0050       |  _x0058_Sarake_x0050       |
-|**Sarake+Plus**     | +:0x2B        |  Sarake_x002B_Plus       |
+|**Taulukon nimi**     | Välilyönti on 0x20        |  Taulukon_x0020_nimi       |
+|**Sarakkeen**@**numero**     |   @ on 0x40     |  Sarakkeen_x0040_numero       |
+|**[Sarake]**     |  [ on 0x005B ] on 0x0050       |  _x0058_Sarake_x0050       |
+|**Sarake+Plus**     | + on 0x2B        |  Sarake_x002B_Plus       |
 
 Table_x0020_Name/Column_x002B_Plus eq 3 ![erikoismerkkejä hahmontava taulukkovisualisointi](media/service-url-filters/power-bi-special-characters1.png)
 

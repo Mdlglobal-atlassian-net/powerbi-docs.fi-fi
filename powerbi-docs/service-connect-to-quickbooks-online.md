@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: b4cd8974316119978749db4f3996db76d907ab38
-ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
+ms.openlocfilehash: 26caf128828ec67ce7a6f2af62560869e261ee8b
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37136061"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46543516"
 ---
 # <a name="connect-to-quickbooks-online-with-power-bi"></a>Yhteyden muodostaminen QuickBooks Onlineen Power BI:llä
 Kun muodostat yhteyden QuickBooks Onlinen tietoihin Power BI:stä, saat heti Power BI:n koontinäytön ja Power BI:n raportit, jotka antavat merkityksellisiä tietoja muun muassa yrityksesi kassavirrasta, kannattavuudesta ja asiakkaista. Voit käyttää koontinäyttöä ja raportteja sellaisinaan tai mukauttaa niitä, jotta niissä korostuvat itseäsi eniten kiinnostavat tiedot. Tiedot päivitetään automaattisesti kerran päivässä.
@@ -55,9 +55,9 @@ Muodosta yhteys [QuickBooks Online -sisältöpakettiin](https://dxt.powerbi.com/
 
 **Mitä seuraavaksi?**
 
-* Kokeile [kysymyksen esittämistä raporttinäkymän yläreunassa olevassa Q&A-ruudussa](power-bi-q-and-a.md).
+* Kokeile [kysymyksen esittämistä raporttinäkymän yläreunassa olevassa Q&A-ruudussa](consumer/end-user-q-and-a.md).
 * [Muuta koontinäytön ruutuja](service-dashboard-edit-tile.md).
-* [Valitse jokin ruutu](service-dashboard-tiles.md), jolloin siihen liittyvä raportti avautuu.
+* [Valitse jokin ruutu](consumer/end-user-tiles.md), jolloin siihen liittyvä raportti avautuu.
 * Tietojoukko on ajastettu päivittymään päivittäin, mutta voit muuttaa päivitysaikataulua tai kokeilla tietojoukon päivittämistä **Päivitä nyt** -toiminnolla haluamanasi ajankohtana
 
 ## <a name="troubleshooting"></a>Vianmääritys
@@ -82,5 +82,5 @@ Power BI tukee tällä hetkellä vain QuickBooks Onlinen Yhdysvaltojen versioita
 ## <a name="next-steps"></a>Seuraavat vaiheet
 [Mikä on Power BI?](power-bi-overview.md)
 
-[Power BI:n peruskäsitteet](service-basic-concepts.md)
+[Power BI:n peruskäsitteet](consumer/end-user-basic-concepts.md)
 

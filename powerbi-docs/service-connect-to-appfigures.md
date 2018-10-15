@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 7990cdbc0741e80bf2cbb60431228ff6a1d41485
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: f5d1b07a4066b897aaa0946c6f5417a9de4f458f
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34243818"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46549486"
 ---
 # <a name="connect-to-appfigures-with-power-bi"></a>appFiguresien yhdistäminen Power BI:n avulla
 Sovelluksia koskevien tärkeiden tilastotietojen seuraaminen on helppoa Power BI:n ja appFigures-sisältöpaketin avulla. Power BI noutaa tiedot, esimerkiksi sovellusmyynnin, lataukset ja mainostilastot ja laatii sitten oletuskoontinäytön ja siihen liittyvät raportit kyseisten tietojen perusteella.
@@ -46,9 +46,9 @@ Muodosta yhteys [appFigures-sisältöpakettiin](https://app.powerbi.com/getdata/
 
 **Mitä seuraavaksi?**
 
-* Kokeile [kysymyksen esittämistä raporttinäkymän yläreunassa olevassa Q&A-ruudussa](power-bi-q-and-a.md).
+* Kokeile [kysymyksen esittämistä raporttinäkymän yläreunassa olevassa Q&A-ruudussa](consumer/end-user-q-and-a.md).
 * [Muuta koontinäytön ruutuja](service-dashboard-edit-tile.md).
-* [Valitse jokin ruutu](service-dashboard-tiles.md), jolloin siihen liittyvä raportti avautuu.
+* [Valitse jokin ruutu](consumer/end-user-tiles.md), jolloin siihen liittyvä raportti avautuu.
 * Tietojoukko on ajastettu päivittymään päivittäin, mutta voit muuttaa päivitysaikataulua tai kokeilla tietojoukon päivittämistä **Päivitä nyt** -toiminnolla haluamanasi ajankohtana
 
 ## <a name="whats-included"></a>Paketin sisältö
