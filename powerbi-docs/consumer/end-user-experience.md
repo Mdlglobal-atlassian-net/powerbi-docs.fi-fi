@@ -11,12 +11,12 @@ ms.topic: quickstart
 ms.date: 10/02/2018
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 261d6fdb12a75fd1476c5f19ded034a3f85d1fb3
-ms.sourcegitcommit: f6360934b9af20bd630e2d3cb88398e3f5794090
+ms.openlocfilehash: 41bd4148845754d1b714060e538f559b310969d8
+ms.sourcegitcommit: dc8b8a2cf2dcc96ccb46159802ebd9342a7fa840
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48798927"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49112149"
 ---
 # <a name="quickstart---getting-around-in-power-bi-service"></a>Pikaopas - Power BI -palveluun tutustuminen
 
@@ -125,7 +125,7 @@ Voit lajitella sisällön myös nimen tai omistajan mukaan.
 
 ![lajittele sisältö](./media/end-user-experience/power-bi-sort.png)
 
-Lisätietoja on artikkelissa [Power BI -siirtyminen: haku, lajittelu, suodatus](end-user-search-filter-sort.md)
+Lisätietoja on artikkelissa [Power BI -siirtyminen: haku, lajittelu, suodatus](end-user-search-sort.md)
 
 ## <a name="clean-up-resources"></a>Resurssien tyhjentäminen
 Kun olet suorittanut pikaoppaan, voit halutessasi poistaa Jälleenmyyntianalyysimallin raporttinäkymän, raportin ja tietojoukon.
