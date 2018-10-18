@@ -53,7 +53,7 @@ Lataa .pbix-tiedosto toimimalla seuraavasti:
 On muutamia tärkeitä huomioon otettavia seikkoja ja rajoituksia, jotka liittyvät *.pbix* tiedoston lataamiseen (vientiin) Power BI -palvelusta.
 
 * Jotta voit ladata tiedoston, sinulla on oltava muokkausoikeus raporttiin
-* Raportti on pitänyt luoda käyttäen **Power BI Desktopia** ja *julkaista***Power BI -palveluun**, tai .pbix on pitänyt *ladata* palveluun.
+* Raportti on pitänyt luoda käyttäen **Power BI Desktopia** ja *julkaista* **Power BI -palveluun**, tai .pbix on pitänyt *ladata* palveluun.
 * Raporttien on oltava julkaistu tai päivitetty 23. marraskuuta 2016 jälkeen. Ennen sitä julkaistut raportit eivät ole ladattavissa.
 * Tämä ominaisuus ei toimi raporteissa, jotka on alun perin luotu **Power BI-palvelussa**, mukaan lukien sisältöpaketit.
 * Sinun tulee aina käyttää **Power BI Desktopin** uusinta versiota, kun avaat ladattuja tiedostoja. Ladatut *.pbix*-tiedostot eivät välttämättä avaudu muissa kuin nykyisissä **Power BI Desktopin** versioissa.
