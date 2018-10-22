@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 09/17/2018
+ms.date: 10/17/2018
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 71894a801f0c993abaaedc92d4172da67b76f7a0
-ms.sourcegitcommit: 698b788720282b67d3e22ae5de572b54056f1b6c
+ms.openlocfilehash: 3e94dc516f41d764394828309ba4b612083d4583
+ms.sourcegitcommit: fbb27fb40d753b5999a95b39903070766f7293be
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45974203"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49359719"
 ---
 # <a name="aggregations-in-power-bi-desktop-preview"></a>Koosteet Power BI Desktopissa (esikatselu)
 
@@ -191,9 +191,9 @@ Seuraavaksi määritetään koosteen yhdistämismääritykset **Koosteiden halli
 
 ![Kuljettajan toiminnan kooste -taulukon Koosteiden hallinta -valintaikkuna](media/desktop-aggregations/aggregations_11.jpg)
 
-Seuraavassa taulukossa näytetään **Myyntikooste**-taulukon koosteet.
+Seuraavassa taulukossa näytetään **Kuljettajan toiminnan kooste** -taulukon koosteet.
 
-![Myyntikooste-koostetaulukko](media/desktop-aggregations/aggregations-table_02.jpg)
+![Kuljettajan toiminnan kooste -koostetaulukko](media/desktop-aggregations/aggregations-table_02.jpg)
 
 ### <a name="group-by-columns"></a>Ryhmittelyperuste-sarakkeet
 
@@ -229,9 +229,9 @@ Tässä mallissa muistin käyttö on melko vähäistä, mutta malli avaa valtava
 
 ![Koosteiden hallinta -valintaikkuna](media/desktop-aggregations/aggregations_14.jpg)
 
-Seuraavassa taulukossa näytetään **Myyntikooste**-taulukon koosteet.
+Seuraavassa taulukossa näytetään **Kuljettajan toiminnan kooste2** -taulukon koosteet.
 
-![Myyntikooste-koostetaulukko](media/desktop-aggregations/aggregations-table_03.jpg)
+![Kuljettajan toiminnan kooste2 -koostetaulukko](media/desktop-aggregations/aggregations-table_03.jpg)
 
 ## <a name="aggregations-based-on-group-by-columns-combined-with-relationships"></a>Ryhmittelyperuste-sarakkeisiin ja suhteisiin perustuvat koosteet
 
