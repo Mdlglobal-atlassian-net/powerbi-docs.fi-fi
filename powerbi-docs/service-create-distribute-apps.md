@@ -1,73 +1,136 @@
 ---
-title: Koontinäyttöjä ja raportteja hyödyntävien sovellusten asentaminen ja käyttäminen Power BI:ssä
-description: Power BI:ssä sovellukset kokoavat toisiinsa liittyvät koontinäytöt ja raportit yhteen paikkaan.
-author: maggies
-ms.author: maggiesMSFT
+title: Raporttinäkymiä ja raportteja sisältävien sovellusten julkaiseminen Power BI:ssä
+description: Lue, miten julkaistaan sovelluksia, jotka ovat raporttinäkymien ja raporttien kokoelmia, joiden avulla voit kuvata organisaatiosi keskeisiä mittalukuja.
+author: maggiesMSFT
 manager: kfile
-ms.reviewer: lukaszp
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 08/02/2018
+ms.date: 08/06/2018
+ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: cf8ec98a45db6601e68b156d64ae6b73fd8ce2d5
-ms.sourcegitcommit: dc8b8a2cf2dcc96ccb46159802ebd9342a7fa840
+ms.openlocfilehash: 62950462f60fea6db44a9756eff8f99a6841d1d4
+ms.sourcegitcommit: 1a79e48ac820c28c5d0fd05399f49ed22fc74ed7
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49112080"
+ms.lasthandoff: 10/19/2018
+ms.locfileid: "49435438"
 ---
-# <a name="install-and-use-apps-with-dashboards-and-reports-in-power-bi"></a>Koontinäyttöjä ja raportteja hyödyntävien sovellusten asentaminen ja käyttäminen Power BI:ssä
+# <a name="publish-apps-with-dashboards-and-reports-in-power-bi"></a>Raporttinäkymiä ja raportteja sisältävien sovellusten julkaiseminen Power BI:ssä
 
-Power BI:ssä *sovellukset* kokoavat toisiinsa liittyvät koontinäytöt ja raportit yhteen paikkaan. Organisaatioon kuuluvat henkilöt voivat luoda ja jakaa yrityksen avaintietoja sisältäviä sovelluksia. Myös käytössäsi mahdollisesti jo olevat [ulkoiset palvelut](consumer/end-user-connect-to-services.md), kuten Google Analytics ja Microsoft Dynamics CRM, tarjoavat Power BI -sovelluksia. 
+Voit julkaista Power BI:ssä *sovelluksia*, jotka sisältävät kokoelmia toisiinsa liittyvistä raporttinäkymistä ja raporteista. Voit luoda sovelluksia *sovellustyötiloissa*, joissa voit työstää Power BI -sisältöä yhdessä työtovereiden kanssa. Sen jälkeen voit julkaista valmiit sovellukset suurelle määrälle ihmisiä organisaatiossasi. Lue lisää [sovellustyötilojen luomisesta](service-create-workspaces.md).
 
-![Sovellukset Power BI:ssä](./media/service-create-distribute-apps/power-bi-apps-left-nav.png)
+![Power BI -sovellukset](media/service-create-distribute-apps/power-bi-apps-left-nav.png)
 
-Sovelluksia on helppo löytää ja asentaa Power BI -palveluun ([https://powerbi.com](https://powerbi.com)) ja mobiililaitteeseen. Kun olet asentanut sovelluksen, sinun ei tarvitse muistaa monien eri raporttinäkymien nimiä, sillä ne ovat kaikki yhdessä sovelluksessa, selaimessa tai mobiililaitteessa.
+Yrityskäyttäjät tarvitsevat usein monia Power BI -koontinäyttöjä ja raportteja yrityksensä pyörittämisessä. Power BI -sovelluksilla voit luoda kokoelmia koontinäytöistä ja raporteista ja julkaista nämä sovellukset koko organisaatiolle tai tietyille ihmisille tai ryhmille. Jos olet raporttien luoja tai järjestelmänvalvoja, sovellukset tekevät näiden kokoelmien käyttöoikeuksien hallinnasta helpompaa.
 
-Kun käytät sovelluksia,näet muutokset automaattisesti aina, kun sovelluksen tekijä julkaisee päivityksiä. Tekijä määrittää myös, kuinka usein tiedot ajoitetaan päivittymään, joten sinun ei tarvitse huolehtia niiden pitämisestä ajan tasalla. 
+Yrityskäyttäjät saavat sovelluksesi käyttöönsä eri tavoin. Jos Power BI -järjestelmänvalvojasi antaa sinulle luvan, voit asentaa sovellukset automaattisesti työtovereittesi Power BI -tileille. Muussa tapauksessa he voivat asentaa sovelluksesi Microsoft AppSourcesta tai voit lähettää heille suoran linkin. He voivat löytää ja palata lukemaan sisältöäsi helposti, koska kaikki on samassa paikassa. Nämä henkilöt eivät voi muokata sovelluksen sisältöä, mutta he voivat käyttää sitä joko Power BI -palvelussa tai jossain mobiilisovelluksista. He voivat suodattaa, korostaa ja lajitella tiedot itse. He saavat päivitykset automaattisesti, ja sinä voit määrittää, kuinka usein tiedot päivitetään. Lisätietoja [sovellusominaisuudesta yrityskäyttäjille](consumer/end-user-apps.md).
 
-Suunnitteletko oman sovelluksen tekemistä? Lisätietoja on artikkelissa [Työtilojen luominen työtovereiden kanssa Power BI:ssä](service-create-workspaces.md).
+**Tiesitkö?** Power BI:ssä esikatsellaan uutta työtilakokemusta. Lisätietoja työtilojen muuttumisesta tulevaisuudessa on artikkelissa [Uusien työtilojen luominen (esiversio)](service-create-the-new-workspaces.md). 
 
-## <a name="get-a-new-app"></a>Uuden sovelluksen hankkiminen
+## <a name="apps-and-organizational-content-packs"></a>Sovellukset ja organisaation sisältöpaketit
+Sovellukset ovat organisaation sisältöpakettien seuraava kehitysaste. Sisältöpaketit eivät ole käytettävissä uudessa työtilakokemusten esiversiossa. Kun uusi työtilakokemus on yleisesti saatavilla, et pysty käyttämään sisältöpaketteja uusissa luoduissa työtiloissa. Aloita sisältöpakettien siirtäminen sovelluksiin, jos et ole jo aloittanut.
 
-Voit hankkia sovelluksia muutamilla eri tavoilla. Sovelluksen tekijä voi asentaa sovelluksen automaattisesti Power BI -tiliisi tai lähettää sinulle suoran linkin sovellukseen. Voit myös etsiä sovellusta AppSourcessa, jossa näet kaikki käytettävissäsi olevat sovellukset. Jos käytät Power BI:tä mobiililaitteella, et voi asentaa sovellusta AppSourcen kautta vaan tarvitset suoran linkin. Jos sovelluksen tekijä asentaa sovelluksen automaattisesti, näet sen sovellusluettelossa.
+## <a name="video-apps-and-app-workspaces"></a>Video: Sovellukset ja sovelluksen työtilat
+<iframe width="640" height="360" src="https://www.youtube.com/embed/Ey5pyrr7Lk8?showinfo=0" frameborder="0" allowfullscreen></iframe>
 
-### <a name="install-an-app-from-a-direct-link"></a>Sovelluksen asentaminen suoran linkin kautta
+## <a name="licenses-for-apps"></a>Sovellusten käyttöoikeudet
+Jokainen sovellustyötilan jäsen tarvitsee Power BI Pro -käyttöoikeuden. Sovelluksen käyttäjillä on kaksi vaihtoehtoa.
 
-Helpoin tapa asentaa uusi sovellus omatoimisesti on saada sovelluksen tekijältä suora linkki. Power BI luo asennuslinkin, jonka tekijä voi lähettää sinulle.
+* Vaihtoehto 1: Kaikilla käyttäjillä pitää olla **Power BI Pro** -käyttöoikeudet sovelluksesi näkemiseksi. 
+* Vaihtoehto 2: Organisaatiosi ilmaiskäyttäjät voivat tarkastella sovelluksesi sisältöä, mikäli sovelluksesi sijaitsee Power BI Premium -kapasiteetissa. Lisätietoja on artikkelissa [Mikä on Power BI Premium?](service-premium.md)
 
-**Tietokone** 
+## <a name="publish-your-app"></a>Sovelluksen julkaiseminen
+Kun työtilasi raporttinäkymät ja raportit ovat valmiita, voit valita, mitkä raporttinäkymät ja raportit haluat julkaista. Julkaise ne sitten sovelluksena. Voit lähettää suoran linkin haluamallesi laajemmalle lukijakunnalle tai he voivat löytää sovelluksesi Sovellukset-välilehdestä siirtymällä kohtaan **Lataa ja etsi lisää sovelluksia AppSourcesta**. 
 
-Kun napsautat sähköpostissa olevaa linkkiä, Power BI-palvelu ([https://powerbi.com](https://powerbi.com)) avautuu selaimessa. Vahvista, että haluat asentaa sovelluksen, jolloin se avautuu sovelluksen aloitussivulle.
+1. Määritä työtilan luettelonäkymässä, mitkä koontinäytöt ja raportit haluat sisällyttää sovellukseen.
 
-![Sovelluksen aloitussivu Power BI -palvelussa](./media/service-create-distribute-apps/power-bi-app-landing-page-opportunity-480.png)
+     ![Julkaistavan koontinäytön valinta](media/service-create-distribute-apps/power-bi-apps-incude-dashboard.png)
 
-**iOS-tai Android-mobiililaite** 
+     Jos päätät olla julkaisematta raporttia, näet raportin ja siihen liittyvän koontinäytön vieressä varoituksen. Voit silti julkaista sovelluksen, mutta siihen liittyvästä koontinäytöstä puuttuvat kyseisen raportin ruudut.
 
-Kun napsautat sähköpostissa olevaa linkkiä mobiililaitteessa, sovellus asentuu automaattisesti ja avaa sovelluksen sisältöluettelon mobiilisovelluksessa. 
+     ![Työhön liittyvää koontinäyttöä koskeva varoitus](media/service-create-distribute-apps/power-bi-apps-report-warning.png)
 
-![Sovelluksen sisältöluettelo mobiililaitteessa](./media/service-create-distribute-apps/power-bi-app-index-it-spend-360.png)
+2. Valitse **Julkaise sovellus** -painike työtilan oikeasta yläkulmasta kaiken kyseisen työtilan sisältämän sisällön jakamisprosessin aloittamiseksi.
+   
+     ![Julkaise sovellus](media/service-create-distribute-apps/power-bi-apps-publish-button.png)
 
-### <a name="get-the-app-from-microsoft-appsource"></a>Sovelluksen hakeminen Microsoft AppSourcesta
+3. Kirjoita **Tiedot**-kohtaan kuvaus, jotta ihmisten on helpompi löytää tämä sovellus. Voit määrittää haluamasi taustavärin sovelluksen mukauttamiseksi.
+   
+     ![Sovellustiedot](media/service-create-distribute-apps/power-bi-apps-details.png)
 
-Voit myös etsiä ja asentaa käytettävissäsi olevia sovelluksia Microsoft AppSourcesta. 
+4. **Sisältö**-kohdassa näet sisältöä, joka julkaistaan osana sovellusta – kaikki tiedot, jotka olet valinnut kyseisessä työtilassa. Voit myös määrittää sovelluksen aloitussivun – koontinäytön tai raportin, jonka käyttäjät näkevät ensimmäiseksi, kun he avaavat sovelluksesi. Voit valita **Ei mikään**. Tässä tapauksessa käyttäjät päätyvät sovelluksen sisältöluetteloon. 
+   
+     ![Sovelluksen sisältö](media/service-create-distribute-apps/power-bi-apps-content.png)
 
-1. Valitse **Sovellukset** ![Sovellukset vasemmanpuoleisessa siirtymisruudussa](./media/service-create-distribute-apps/power-bi-apps-bar.png) > **Hanki sovelluksia**. 
+5. Päätä **Access**issa, kenellä on pääsy sovellukseen: joko kaikilla organisaatiossa, tietyillä henkilöillä, Active Directory -käyttöoikeusryhmillä. Jos sinulla on oikeudet, voit päättää asentaa sovelluksen automaattisesti vastaanottajille. Voit ottaa tämän asetuksen käyttöön [Power BI -hallintaportaalissa](#how-to-enable-pushing-apps). Voit myös lukea lisätietoja huomioon otettavista asioista [sovelluksen lähettämisestä](#how-to-enable-pushing-apps).
 
-     ![Hanki sovelluksia -kuvake](./media/service-create-distribute-apps/power-bi-service-apps-get-apps-oppty.png)
-2. AppSourcen **Oma organisaatio** -osiossa voit tehdä hakuja rajataksesi tuloksia ja löytääksesi haluamasi sovelluksen.
+    ![Sovelluksen käyttö](media/service-create-distribute-apps/power-bi-apps-access.png)
 
-     ![Appsourcen Oma organisaatio -osio](./media/service-create-distribute-apps/power-bi-appsource-my-org.png)
-3. Lisää sovellus Sovellukset-sivullesi valitsemalla **Hanki se nyt**. 
+6. Kun valitset **Valmis**, näet sanoman, että sovellus on valmis julkaistavaksi. Onnistumisesta ilmoittavasta valintaikkunasta voit kopioida URL-osoitteen, joka on suora yhteys tähän sovellukseen ja lähettää sen henkilöille, joiden kanssa olet jakanut sen.
+   
+     ![Sovellus on valmis](media/service-create-distribute-apps/power-bi-apps-success.png)
 
-## <a name="interact-with-the-dashboards-and-reports-in-the-app"></a>Koontinäyttöjen ja raporttien käsitteleminen sovelluksessa
+Lisätietoja [sovellusominaisuudesta yrityskäyttäjille](consumer/end-user-apps.md).
 
-Nyt voit tutkia koontinäyttöjen ja raporttien tietoja sovelluksessa. Voit käyttää kaikkia Power BI:n vakiotoimia, kuten suodatusta, korostusta, lajittelua ja porautumista. Voit myös [viedä tietoja Exceliin ](consumer/end-user-export-data.md) taulukosta tai muusta raportin visualisoinnista. 
+## <a name="change-your-published-app"></a>Julkaistun sovelluksen muuttaminen
+Kun olet julkaissut sovelluksesi, voit halutessasi muuttaa tai päivittää sitä. Sen päivittäminen on helppoa, jos olet sovelluksen työtilan järjestelmänvalvoja tai jäsen tai osallistuja uudessa sovellustyötilassa. 
 
-![Tietojen vieminen Power BI -visualisoinnista](./media/service-create-distribute-apps/power-bi-service-export-data-visual.png)
+1. Avaa kyseistä sovellusta vastaava sovelluksen työtila. 
+   
+     ![Työtilan avaaminen](media/service-create-distribute-apps/power-bi-apps-open-workspace.png)
+2. Avaa koontinäyttö tai raportti. Huomaat, että voit tehdä mitä tahansa haluamiasi muutoksia.
+   
+     Sovelluksen työtila on valmistelualueesi, joten tekemiäsi muutoksia ei lähetetä reaaliaikaisesti sovellukseen ennen sen julkaisemista uudelleen. Tämän avulla voit tehdä muutoksia ilman, että ne vaikuttaisivat julkaistuun sovellukseen.  
+ 
+3. Siirry takaisin sovelluksen työtilan sisältöluetteloon ja valitse **Päivitä sovellus**.
+   
+     ![Päivitä sovellus -painike](media/service-create-distribute-apps/power-bi-app-update-button.png)
+
+4. Päivitä **Tiedot**, **Sisältö** ja **Käyttöoikeus** tarvittaessa ja valitse sitten **Päivitä sovellus**.
+   
+     ![Päivitä sovellus -painike](media/service-create-distribute-apps/power-bi-app-update-complete.png)
+
+Henkilöt, joille olet sovelluksen julkaissut, näkevät automaattisesti sovelluksen päivitetyn version. 
+
+## <a name="automatically-install-apps-for-end-users"></a>Sovellusten asentaminen automaattisesti käyttäjille
+Sovellukset toimittavat tietoja, joita käyttäjät tarvitsevat töidensä tekemiseen. Jos järjestelmänvalvoja antaa sinulle oikeudet, voit asentaa sovelluksia automaattisesti käyttäjille, jolloin on helpompaa jakaa oikeat sovellukset oikeille henkilöille tai ryhmille. Sovellus näkyy automaattisesti käyttäjiesi sovellusten sisältöluettelossa sen sijaan, että se pitäisi etsiä Microsoft AppSourcesta tai hakea asennuslinkin kautta. Tämän ansiosta sinun on helpompi julkaista tavallista Power BI -sisältöä käyttäjille.
+
+### <a name="how-to-install-an-app-automatically-for-end-users"></a>Sovelluksen asentaminen automaattisesti käyttäjille
+Kun järjestelmänvalvoja on antanut sinulle oikeudet, voit halutessasi **asentaa sovelluksen automaattisesti**. Kun valitset ruudun ja valitset **Valmis** (tai **Päivitä sovellus** aiemmin luotujen sovellusten kohdalla), sovellus lähetetään kaikille käyttäjille tai ryhmille, jotka on määritetty sovelluksen **Käyttöoikeudet**-osassa **Käyttöoikeus**-välilehdessä.
+
+![Sovellusten lähettämisen käyttöön ottaminen](media/service-create-distribute-apps//power-bi-apps-access.png)
+
+### <a name="how-users-get-the-apps-that-were-pushed-to-them"></a>Näin käyttäjät saavat sovellukset, jotka heille on lähetetty
+Kun olet lähettänyt sovelluksen, se näkyy automaattisesti Sovellukset-luettelossa. Voit järjestää sovellukset, jotka tietyillä käyttäjillä tai tehtävärooleilla organisaatiossasi on oltava käytettävissään.
+
+![Sovellusten lähettämisen käyttöön ottaminen](media/service-create-distribute-apps/power-bi-apps-left-nav.png)
+
+### <a name="considerations-for-automatically-installing-apps"></a>Huomioon otettavaa sovellusten automaattisesta asentamisesta
+Sovelluksia lähetettäessä käyttäjille kannattaa ottaa huomioon seuraavat asiat:
+
+* Sovelluksen asentaminen käyttäjille automaattisesti voi viedä aikaa. Useimmat sovellukset asennetaan käyttäjille välittömästi, mutta sovellusten lähettäminen voi viedä aikaa.  Se riippuu sovelluksessa olevien kohteiden määrästä ja käyttöoikeudet omistavien käyttäjien määrästä. Suosittelemme sovellusten lähettämistä ruuhka-aikojen ulkopuolella, jolloin on paljon aikaa ennen kuin käyttäjät tarvitsevat sovelluksia. Varmista useilta käyttäjiltä, ennen kuin lähetät tiedon laajalle käyttäjäkunnalle sovelluksen saatavuudesta.
+
+* Päivitä selain. Ennen kuin lähetetty sovellus näkyy Sovellukset-luettelossa, käyttäjän pitää ehkä päivittää tai sulkea ja avata selaimensa uudelleen.
+
+* Jos käyttäjä ei heti näe sovellusta Sovellukset-luettelossa, hänen tulee päivittää tai sulkea ja avata selaimensa uudelleen.
+
+* Pyri siihen, ettet lähetä liikaa sovelluksia käyttäjille. Varo, ettet lähetä liian monia sovelluksia, jotta käyttäjäsi havaitsevat, että esiasennetut sovellukset heille hyödyllisiä. Kannattaa rajoittaa sitä, kuka voi lähettää sovelluksia käyttäjille, jotta ajoitukset voidaan paremmin koordinoida. Voit muodostaa yhteyspisteen organisaatiossasi niiden sovellusten saamiseen, jotka on julkaistu käyttäjille.
+
+* Vieraskäyttäjät, jotka eivät ole hyväksyneet kutsua, eivät saa asennuksia automaattisesti asennettuina.  
+
+## <a name="unpublish-an-app"></a>Sovelluksen julkaisun peruuttaminen
+Kuka tahansa sovelluksen työtila jäsen voi peruuttaa sovelluksen julkaisun.
+
+* Valitse sovelluksen työtilassa kolme pistettä (**...** ) oikeasta yläkulmasta > **Peruuta sovelluksen julkaisu**.
+  
+     ![Peruuta sovelluksen julkaisu](media/service-create-distribute-apps/power-bi-app-unpublish.png)
+
+Tämä toiminto poistaa sovelluksen asennuksen kaikilta, joille se on julkaistu eivätkä he enää pysty käyttämään sitä. Se ei poista sovelluksen työtilaa tai sen sisältöä.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
-
-* [Power BI -sovellukset ulkoisille palveluille](consumer/end-user-connect-to-services.md)
+* [Sovelluksen työtilan luominen](service-create-workspaces.md)
+* [Asenna ja käytä sovelluksia Power BI:ssä](consumer/end-user-apps.md)
+* [Power BI -sovellukset ulkoisille palveluille](service-connect-to-services.md)
+* [Power BI -hallintaportaali](https://docs.microsoft.com/power-bi/service-admin-portal)
 * Ilmenikö kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)

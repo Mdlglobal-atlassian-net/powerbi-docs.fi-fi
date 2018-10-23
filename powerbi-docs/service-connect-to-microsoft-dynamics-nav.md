@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/30/2018
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 94ca76af9366752f4e1033fa05147f867e7096d9
-ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
+ms.openlocfilehash: 2085f1ca852839c27c4943872e5f5ddb248e8638
+ms.sourcegitcommit: a764e4b9d06b50d9b6173d0fbb7555e3babe6351
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "48908896"
+ms.lasthandoff: 10/22/2018
+ms.locfileid: "49641386"
 ---
 # <a name="connect-to-microsoft-dynamics-nav-with-power-bi"></a>Yhteyden muodostaminen Microsoft Dynamics NAViin Power BI:n avulla
 Merkityksellisten tietojen saaminen Microsoft Dynamics NAV-tietoihin on helppoa Power BI:n avulla. Power BI noutaa sekä Myynti- että Rahoitus-tiedot ja luo niiden pohjalta sovelluksen raporttinäkymin ja raportein. Power BI edellyttää oikeuksia taulukoihin, joista tiedot on noudettu, tässä tapauksessa myynti- ja rahoitustiedot. Lisätietoja vaatimuksista on alla. Kun olet asentanut sovelluksen, voit tarkastella raporttinäkymää ja raportteja Power BI -palvelussa ([https://powerbi.com](https://powerbi.com)) ja Power BI -mobiilisovelluksissa. 
@@ -29,7 +29,7 @@ Merkityksellisten tietojen saaminen Microsoft Dynamics NAV-tietoihin on helppoa 
    ![](media/service-connect-to-microsoft-dynamics-nav/mdnav.png)
 4. Kirjoita pyydettäessä Microsoft Dynamics NAV OData URL. URL:n pitää vastata seuraavaa kuvaa:
    
-    `https//instance.navserver.com:7048/DynamicsNAV90_Instance1/OData/Company('CRONUS%20International%20Ltd.')`
+    `https://instance.navserver.com:7048/DynamicsNAV90_Instance1/OData/Company('CRONUS%20International%20Ltd.')`
    
    * "instance.navserver.com" jossa oma NAV-palvelimen nimi
    * ”DynamicsNAV90\_Instance1” NAV-palvelimen esiintymän nimi
@@ -72,7 +72,7 @@ Jos näet tämän virheen Microsoft Dynamics NAV URL-osoitteen kirjoittamisen j�
 
 * URL-osoite vastaa juuri tätä mallia:
   
-    `https//instance.navserver.com:7048/DynamicsNAV90_Instance1/OData/Company('CRONUS%20International%20Ltd.')`
+    `https://instance.navserver.com:7048/DynamicsNAV90_Instance1/OData/Company('CRONUS%20International%20Ltd.')`
   
   * "instance.navserver.com" jossa oma NAV-palvelimen nimi
   * ”DynamicsNAV90\_Instance1” NAV-palvelimen esiintymän nimi
@@ -92,11 +92,11 @@ Jos näet ”Oho!”-virheikkunan, kun olet jo ohittanut todennusvalintaikkunan,
 
 * Tarkista, että URL-osoite noudattaa yllä määritettyä muotoa. Yleinen virhe on määritys:
   
-    `https//instance.navserver.com:7048/DynamicsNAV90\_Instance1/OData`
+    `https://instance.navserver.com:7048/DynamicsNAV90\_Instance1/OData`
   
     Siinä on kuitenkin oltava 'Company('CRONUS%20International%20Ltd.')' -osio, jossa on NAV-yritysnimesi:
   
-    `https//instance.navserver.com:7048/DynamicsNAV90\_Instance1/OData/Company('CRONUS%20International%20Ltd.')`
+    `https://instance.navserver.com:7048/DynamicsNAV90\_Instance1/OData/Company('CRONUS%20International%20Ltd.')`
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 * [Mitä ovat Power BI:n sovellukset?](service-create-distribute-apps.md)

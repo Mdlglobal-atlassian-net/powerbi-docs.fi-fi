@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 09/23/2018
+ms.date: 10/16/2018
 ms.author: nikhilga
 LocalizationGroup: Get started
-ms.openlocfilehash: 10f637e822817d6bd0fa1692a6d1b029be312d4f
-ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
+ms.openlocfilehash: b54a38f4c5639eae549a36a93c887d87630b7daf
+ms.sourcegitcommit: a3ce866caba24217bcdd011e892b9ea72f3d2400
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "48909172"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49396746"
 ---
 ---
 # <a name="whats-new-in-the-power-bi-service"></a>Power BI -palvelun uudet toiminnot ja ominaisuudet
@@ -212,7 +212,7 @@ Saat kaikki tiedot [Power BI -tiimin blogista](https://powerbi.microsoft.com/blo
 
 Saat kaikki tiedot [Power BI -tiimin blogista](https://powerbi.microsoft.com/blog/power-bi-service-may-update-file-size-increase-to-1-gb/)
 
-* [Power BI Q&A:n tuki SQL Server 2016 Analysis Services -taulukkomalleille](consumer/end-user-q-and-a-direct-query.md): Power BI Q&A:n käyttökokemusta on parannettu ja Power BI Q&A:n julkinen esiversio on otettu käyttöön tietolähteisiin yhdistetyssä yritysyhdyskäytävässä – SQL Server 2016 Analysis Services -taulukkomalleista alkaen. Saat kaikki tiedot [blogista](https://powerbi.microsoft.com/blog/power-bi-q-a-for-enterprise-gateway-connected-data-sources-now-available-in-public-preview/)
+* [Power BI Q&A:n tuki SQL Server 2016 Analysis Services -taulukkomalleille](service-q-and-a-direct-query.md): Power BI Q&A:n käyttökokemusta on parannettu ja Power BI Q&A:n julkinen esiversio on otettu käyttöön tietolähteisiin yhdistetyssä yritysyhdyskäytävässä – SQL Server 2016 Analysis Services -taulukkomalleista alkaen. Saat kaikki tiedot [blogista](https://powerbi.microsoft.com/blog/power-bi-q-a-for-enterprise-gateway-connected-data-sources-now-available-in-public-preview/)
 * [Paikallinen tiedostotuki Excel-raporteille](service-excel-workbook-files.md#local-excel-workbooks): Voit nyt ladata Excel-tiedostosi paikallisesta asemasta tai muista tallennustilapalveluista ja käyttää Excel-raporttia Excel Onlinen tapaan Power BI:n tarjoamien lisäetujen kanssa. Saat kaikki tiedot [blogista](https://powerbi.microsoft.com/blog/powerbi-upload-excel-reports-from-local-files/)
 
 **28. huhtikuuta 2016**

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/29/2018
 ms.author: mihart
 LocalizationGroup: Connect to services
-ms.openlocfilehash: add6a02d10c2dfe0e0fd93b9d12f03a10d057241
-ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
+ms.openlocfilehash: 8d8446f231d1de3527d5371a55542641c29cca83
+ms.sourcegitcommit: 1a79e48ac820c28c5d0fd05399f49ed22fc74ed7
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "48908206"
+ms.lasthandoff: 10/19/2018
+ms.locfileid: "49435277"
 ---
 # <a name="connect-to-the-services-you-use-with-power-bi"></a>Käyttämiesi palveluiden yhdistäminen Power BI:hin
 
@@ -60,7 +60,7 @@ Käytätkö palvelua, jota haluaisit ehdottaa Power BI -sovelluksen luomiseen? K
 Onko sinulla palvelu, jolle haluaisit luoda sovelluksen? [Lähetä ehdotuksesi](https://azure.microsoft.com/marketplace/programs/certified/apply/) ja valitse ”Julkaise Power BI -sisältöpaketti” päästäksesi alkuun.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
-* [Mitä ovat Power BI:n sovellukset?](../service-install-use-apps.md)
+* [Mitä ovat Power BI:n sovellukset?](end-user-apps.md)
 * [Tietojen noutaminen Power BI:ssä](../service-get-data.md)
 * Onko sinulla muuta kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)
 

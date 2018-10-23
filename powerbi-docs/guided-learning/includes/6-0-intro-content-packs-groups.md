@@ -2,8 +2,6 @@ Tervetuloa Power BI:n **Ohjattu oppiminen** -kurssin **Julkaiseminen ja jakamine
 
 Nyt kun olet oppinut, miten Excel ja Power BI toimivat saumattomasti yhdessä, sekä tutustunut visualisointeihin, joita voit luoda raporteissa ja koontinäytöissä, haluat varmaankin jakaa luomiasi kohteita työtovereille ja kavereille. Power BI:llä **julkaiseminen ja jakaminen** on helppoa.
 
-Tässä osiossa opit, miten helposti voit tuoda Excel-työkirjoja Power BI:hin ja miten hyvin Excel sekä Power BI sopivat yhteen.
-
 ## <a name="share-and-collaborate-with-colleagues-in-power-bi"></a>Jakaminen ja yhteistyö työtovereiden kanssa Power BI:ssä
 *Tutustu työkaluihin, joilla jakaminen ja yhteistyö sujuvat Power BI:ssä helpommin*
 

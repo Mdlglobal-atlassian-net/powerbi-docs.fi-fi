@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/28/2017
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 60ac0a944b1eb54ab998fbf25cb5fb79d6dddbe6
-ms.sourcegitcommit: 833cf1252807721fb1b3000487bd032bfd6c8c98
+ms.openlocfilehash: b77d20b8c9705e4b4cd811ea8dfa3008908a4438
+ms.sourcegitcommit: a764e4b9d06b50d9b6173d0fbb7555e3babe6351
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48271896"
+ms.lasthandoff: 10/22/2018
+ms.locfileid: "49641685"
 ---
 # <a name="administering-power-bi---frequently-asked-questions-faq"></a>Power BI:n hallinnointi - usein kysytyt kysymykset (UKK)
 
@@ -249,7 +249,7 @@ Power BI perustuu Office 365:een, joka puolestaan perustuu Azure-palveluihin, ku
 [Power BI -järjestelmänvalvojaroolin kuvaus](service-admin-role.md)  
 [Omatoiminen kirjautuminen Power BI:hin](service-self-service-signup-for-power-bi.md)  
 [Power BI Pron ostaminen](service-admin-purchasing-power-bi-pro.md)  
-[Power BI Premium – mikä se on?](service-premium.md)  
+[Mikä on Power BI Premium?](service-premium.md)  
 [Ohjeet Power BI Premiumin ostamiseen](service-admin-premium-purchase.md)  
 [Office 365:n käyttäjätilien hallinta](https://technet.microsoft.com/library/office-365-user-account-management.aspx)  
 [Office 365:n ryhmän hallinta](https://support.office.com/Article/Find-help-about-Groups-in-Office-365-7a9b321f-b76a-4d53-b98b-a2b0b7946de1)  
