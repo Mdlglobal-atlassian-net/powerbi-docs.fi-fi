@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 09/27/2018
+ms.date: 10/15/2018
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: c9e4769be12d3da96064a82661a739a94e8a7c6e
-ms.sourcegitcommit: ce8332a71d4d205a1f005b703da4a390d79c98b6
+ms.openlocfilehash: cda575c11be90c8e18a3a9f3b8325ccf674afffc
+ms.sourcegitcommit: b8461c1876bfe47bf71c87c7820266993f82c0d3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "47417391"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49337078"
 ---
 # <a name="previous-monthly-updates-to-power-bi-desktop"></a>Power BI Desktopin aiemmat kuukausipäivitykset
 
@@ -33,6 +33,53 @@ Kunkin päivityksen vieressä olevat linkit tarkoittavat seuraavaa:
 Voit myös katsoa **Uusimmat päivitykset** -videon, joka on aivan tämän artikkelin alussa. Napsauta päivitysluettelon alla olevan videokuvan **toistokuvaketta**.
 
 Seuraavat osiot käsittelevät **Power BI Desktopin** aiempien kuukausien päivityksiä.
+
+
+## <a name="september-2018-update-2625222582"></a>Syyskuun 2018 päivitys (2.62.5222.582)
+
+Syyskuun päivitykset olivat kuin uuteen, jännittävään luokkahuoneeseen asettuminen. Toivottavasti nämä päivitykset olivat sinusta yhtä hyödyllisiä kuin kaksi vasta teroitettua lyijykynää. 
+
+Seuraavat päivitykset olivat uutta **Power BI Desktopissa** tässä kuussa:
+
+### <a name="reporting"></a>Raportointi
+
+* Pistetulostusasettelun tuki pistekaavioissa  [[video]](https://youtu.be/Rzw2WyI09kY?t=30s)  [[artikkeli]](power-bi-visualization-scatter.md)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2018-feature-summary/#dotPlot) 
+* Kopioi arvo ja valinta taulukkojen ja matriisien visualisoinneista [[video]](https://youtu.be/Rzw2WyI09kY?t=2m33s)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2018-feature-summary/#copy) 
+* Sisäiset raporttiteema-asetukset [[video]](https://youtu.be/Rzw2WyI09kY?t=6m2s)   [[artikkeli]](desktop-report-themes.md)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2018-feature-summary/#themes) 
+* Raporttisivun työkaluvihjeet yleisesti saatavilla, uusi korttituki [[video]](https://youtu.be/Rzw2WyI09kY?t=8m10s)  [[artikkeli]](desktop-tooltips.md)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2018-feature-summary/#themes) 
+* Helppokäyttötoimintojen parannuksia analysointia varten ja muotoiluruudun tuki [[video]](https://youtu.be/Rzw2WyI09kY?t=9m29s)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2018-feature-summary/#accessibility)
+
+### <a name="analytics"></a>Analysointi
+
+* Koosteet (esikatselu) [[video]](https://youtu.be/Rzw2WyI09kY?t=11m37s)  [[artikkeli]](desktop-aggregations.md)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2018-feature-summary/#aggregations) 
+
+### <a name="custom-visuals"></a>Mukautetut visualisoinnit
+
+* Viisi uutta mukautettua visualisointia  [[video]](https://youtu.be/Rzw2WyI09kY?t=23m8s)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2018-feature-summary/#customVisuals) 
+
+### <a name="data-connectivity"></a>Tietoyhteydet
+
+* PDF-tiedoston liitin (esikatselu)  [[video]](https://youtu.be/Rzw2WyI09kY?t=29m26s)  [[artikkeli]](desktop-connect-pdf.md)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2018-feature-summary/#pdf) 
+* SAP BW -liitin – mittaominaisuuksien tuki  [[video]](https://youtu.be/Rzw2WyI09kY?t=30m15s)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2018-feature-summary/#sapBW) 
+* Tietovoiden liitin (beeta)  [[artikkeli]](desktop-connect-dataflows.md)   [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2018-feature-summary/#dataflows) 
+
+### <a name="data-preparation"></a>Tietojen valmistelu
+* M Intellisense  [[video]](https://youtu.be/Rzw2WyI09kY?t=30m42s)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2018-feature-summary/#pdf) 
+* Lisää sarake esimerkeistä – tekstin täytön tuki  [[video]](https://youtu.be/Rzw2WyI09kY?t=32m27s)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2018-feature-summary/#addColumn) 
+
+
+> [!NOTE]
+> Voit myös [tutustua kaikkiin Power BI Desktopille saatavilla oleviin tietolähteisiin](desktop-data-sources.md). Luettelo kasvaa jatkuvasti, joten se kannattaa tarkistaa usein.
+
+Haluatko lisätietoja näistä päivityksistä? Tutustu [blogikirjoitukseen](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2018-feature-summary), josta saat tarkempia tietoja kustakin uudesta ominaisuudesta (tämä on sama blogikirjoitus, johon viitataan yllä olevassa luettelossa).
+
+
+Seuraavassa videossa esitellään jokainen näistä päivityksistä. Näet videon myös blogikirjoituksen kautta.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Rzw2WyI09kY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+> [!NOTE]
+> Sinua saattavat myös kiinnostaa [Power BI -palvelun uudet ominaisuudet](service-whats-new.md). Tutustu myös [Power BI -mobiilisovellusten uutuuksiin](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 ## <a name="august-2018-update-2615192321"></a>Elokuun 2018 päivitys (2.61.5192.321)
 

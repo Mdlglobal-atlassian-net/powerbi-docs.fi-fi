@@ -8,20 +8,17 @@ featuredvideoid: G26dr2PsEpk
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 09/01/2018
+ms.date: 10/01/2018
 ms.author: mihart
 LocalizationGroup: Common tasks
-ms.openlocfilehash: a165b58eae7309070dfe0bc33adc0a3e47ec7991
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 1479b8fc431428a1b44ccd06bb501071042ada6e
+ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46553096"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "48908482"
 ---
 # <a name="recent-content-in-power-bi-service"></a>**Viimeisimmät**-sisältö Power BI -palvelussa
-
-
-## <a name="what-is-recent-content"></a>Mitä on viimeisin sisältö?
 Viimeisin sisältö on tietoyksiköt, joissa olet viimeksi käynyt Power BI -palvelussa, enintään 20 kpl.  Näitä ovat esimerkiksi koontinäytöt, raportit, sovellukset ja työkirjat kaikissa työtiloissasi.
 
 ![Viimeisin sisältö -ikkuna](./media/end-user-recent/power-bi-recent-screen.png)
@@ -39,10 +36,10 @@ Jos sinulla on enemmän kuin viisi hiljattain käytyä kohdetta, valitse **Näyt
 
 ![näytä kaikki viimeisin sisältö](./media/end-user-recent/power-bi-recent-list.png)
 
-Täältä voit käsitellä sisältöä samalla tavalla kuin yksittäisillä [ **koontinäytöillä**](end-user-dashboards.md), [ **raporteissa**](end-user-reports.md) ja  **Työkirjat**-välilehdillä ja [ **Sovellukset** ](end-user-apps.md)-näytöllä.
+Täältä voit käsitellä sisältöä samalla tavalla kuin yksittäisillä [**koontinäytöillä**](end-user-dashboards.md), [**raporteissa**](end-user-reports.md) ja **Työkirjat**-välilehdillä ja Sovellukset<!--[**Apps**](end-user-apps.md)-->-näytöllä.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
-[Power BI -palvelun sovellukset](end-user-apps.md)
+<!--[Power BI service Apps](end-user-apps.md)-->
 
 Onko sinulla muuta kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
 
