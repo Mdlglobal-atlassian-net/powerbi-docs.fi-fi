@@ -8,15 +8,15 @@ featuredvideoid: jtlLGRKBvXY
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 09/25/2018
+ms.date: 10/08/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 2cc7691e81f5edab9d9f7a2a6d878420ca1c82f4
-ms.sourcegitcommit: ce8332a71d4d205a1f005b703da4a390d79c98b6
+ms.openlocfilehash: d042119a95cb60f930a0535e93b0a50ee9224da3
+ms.sourcegitcommit: dc8b8a2cf2dcc96ccb46159802ebd9342a7fa840
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "47418233"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49112256"
 ---
 # <a name="export-data-from-visualizations"></a>Tietojen vieminen visualisoinneista
 Jos haluat tarkastella tietoja, joita käytetään visualisoinnin luonnissa, voit näyttää kyseiset tiedot Power BI:ssä tai viedä tiedot Exceliin .xlsx- tai .csv-tiedostona.   
@@ -55,8 +55,7 @@ Seuraa mukana avaamalla [Hankinta-analyysimallin raportti](../sample-procurement
 4. Valitse visualisoinnin oikean yläkulman kolme pistettä. Valitse **Vie tiedot**.
 
    ![](media/power-bi-visualization-export-data/power-bi-export-data2.png)
-5. Jos visualisoinnissa on Power BI:n verkkoversiossa kooste (esimerkiksi jos olet muuttanut **määrän** *keskiarvoksi*, *summaksi* tai *vähimmäisarvoksi*), sinulla on kaksi vaihtoehtoa: **Yhteenvedetyt tiedot** ja **Pohjana olevat tiedot**. Power BI Desktopissa vaihtoehtona on vain **Yhteenvedetyt tiedot** Katso lisätietoja koosteista artikkelista [Koosteet Power BI:ssa](../service-aggregates.md).
-
+5. Jos visualisoinnissa on Power BI:n verkkoversiossa kooste (esimerkiksi jos olet muuttanut **määrän** *keskiarvoksi*, *summaksi* tai *vähimmäisarvoksi*), sinulla on kaksi vaihtoehtoa: **Yhteenvedetyt tiedot** ja **Pohjana olevat tiedot**. Power BI Desktopissa on vain **Yhteenvedetyt tiedot** -vaihtoehto. Lue lisätietoja koosteista artikkelissa [Koosteet Power BI:ssä](../service-aggregates.md).
     ![](media/power-bi-visualization-export-data/power-bi-export-data5.png)
 6. Valitse **Yhteenvedetyt tiedot** > **Vie** ja valitse .xlsx tai .csv. Power BI vie tiedot.  Jos olet käyttänyt suodattimia visualisoinnissa, viedyt tiedot viedään suodatettuina. Kun valitset **Vie**, selain pyytää sinua tallentamaan tiedoston. Kun tiedosto on tallennettu, avaa se Excelissä.
 
@@ -90,6 +89,26 @@ Kun valitset **Pohjana olevat tiedot**, saatat nähdä erilaisia tietoja. Näide
 |    Mittayksiköt     |                                      Kaikki tiedot kaikista taulukoista, jotka liittyvät mittayksiköt sisältävään taulukkoon ketjun \*:1/1:1) kautta                                      |
 |  Vain mittayksiköt  |                                                   Kaikki ei-piilotetut sarakkeet kaikista liittyvistä taulukoista (mittayksikön laajentamiseksi)                                                   |
 |  Vain mittayksiköt  |                                                             Yhteenvedetyt tiedot kaikille mallin mittayksiköiden monistetuille riveille.                                                              |
+
+### <a name="set-the-export-options"></a>Vientiasetusten määrittäminen
+Power BI:n raporttien suunnitteluohjelmassa määritetään, mitkä tietojen vientiasetukset ovat kuluttajien käytettävissä. Vaihtoehdot ovat seuraavat:
+- Salli vain yhteenvedon vienti (tämä on raporttien oletusasetus) 
+- Salli yhteenvedon ja pohjana olevien tietojen vienti  
+- Älä salli minkään tietojen vientiä  
+
+1. Aloita näiden asetusten määrittäminen Power BI Desktopista.
+
+2. Valitse vasemmasta yläkulmasta **Tiedosto** > **Asetukset ja Vaihtoehdot** > **Asetukset**. 
+
+3. Valitse **Nykyinen tiedosto** -kohdassa **Raportin asetukset**.
+
+    ![työpöydän raportin asetukset](media/power-bi-visualization-export-data/desktop-report-settings.png)
+
+4. Valitse avattavasta **Vie tiedot** -valikosta.
+
+Voit päivittää tätä asetusta myös Power BI -palvelussa.  
+
+On tärkeää ottaa huomioon, että jos Power BI:n hallintaportaalin asetukset ja tietojen viennin raporttiasetukset ovat ristiriidassa keskenään, hallinta-asetukset ohittavat tietojen vientiasetukset. 
 
 ## <a name="limitations-and-considerations"></a>Rajoitukset ja huomioitavat asiat
 * **Power BI Desktopista** ja **Power BI -palvelusta** voidaan viedä korkeintaan 30 000 riviä .csv-tiedostoon.

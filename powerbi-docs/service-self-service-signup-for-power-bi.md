@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/02/2018
 ms.author: mblythe
 LocalizationGroup: Get started
-ms.openlocfilehash: d499f3f3635442f8d9ed0fbf167e53d13ec0ae53
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 411fd408998ba67c4a91ae01e166396530631678
+ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46549979"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "48909057"
 ---
 # <a name="signing-up-for-power-bi-as-an-individual"></a>Rekisteröityminen Power BI:hin yksityishenkilönä
 Ota selvää, miten voit rekisteröityä Power BI:n käyttäjäksi ja aloittaa sen käytön henkilökohtaisiin raportti- ja visualisointitarpeisiisi.
@@ -24,7 +24,7 @@ Ota selvää, miten voit rekisteröityä Power BI:n käyttäjäksi ja aloittaa s
 
 Power BI toimii yhtä sujuvasti henkilökohtaisena raportointi- ja visualisointityökaluna kuin analytiikka- ja päätöksentekovälineenä ryhmäprojekteille, yksiköille ja kokonaisille organisaatioille.
 
-Tässä artikkelissa käydään läpi, miten voit rekisteröityä Power BI -palveluun ja aloittaa sen käytön. Tietoa Power BI:n maksuttoman version ja Pro-version eroista on artikkelissa [Power BI:n maksuttoman version ja Pro-version vertailu](service-free-vs-pro.md).
+Tässä artikkelissa käydään läpi, miten voit rekisteröityä Power BI -palveluun ja aloittaa sen käytön. Saat lisätietoja toimintojen eroista Power BI -käyttöoikeuksien välillä artikkelista [Power BI:n ominaisuudet käyttöoikeustyypin mukaan](service-features-license-type.md).
 
 ## <a name="you-have-a-few-options"></a>Erilaisia vaihtoehtoja
 Yksityishenkilönä sinulla on useita vaihtoehtoja Power BI:hin rekisteröitymiseen ja sen käytön aloittamiseen. Voit valita maksuttoman rekisteröitymisen tai voit ostaa Power BI Pro -tilauksen. Jos rekisteröidyt ilmaiselle tilille, voit palveluun kirjauduttuasi valita 60 päivän maksuttoman Power BI Pro -kokeiluversion.
@@ -99,7 +99,7 @@ Näyttöön avautuu viesti, jossa pyydetään valitsemaan **Aloita**.
 ## <a name="in-service-power-bi-pro-60-day-trial"></a>Palvelun sisäinen 60 päivän Power BI Pro -kokeiluversio
 Kun olet rekisteröinyt ilmaisen tilisi, voit halutessasi valita Pron kokeiltavaksi 60 päivän ajaksi maksuttomasti. Pystyt käyttämään kaikkia Pro-ominaisuuksia kokeiluversion ajan. Power BI Pro sisältää kaikki samat ominaisuudet kuin Power BI:n ilmainen versio sekä jakamiseen ja yhteiskäyttöön liittyviä lisäominaisuuksia. Jos haluat lisätietoja, katso [Power BI:n hinnoittelu](https://powerbi.microsoft.com/pricing). Kokeile Power BI Pron 60 päivän maksutonta kokeilujaksoa kirjautumalla Power BI:hin. Saat käyttöösi muun muassa nämä Power BI Pro -ominaisuudet:
 
-* [Sovelluksen työtilan luominen](consumer/end-user-create-apps.md)
+* [Sovelluksen työtilan luominen](service-create-distribute-apps.md)
 * [Koontinäytön jakaminen](service-share-dashboards.md)
 
 Kun kokeilet mitä tahansa näistä ominaisuuksista, sinua pyydetään aloittamaan ilmainen kokeilujaksosi. Voit myös halutessasi käyttää sitä napsauttamalla rataskuvaketta ja valitsemalla **Hallitse henkilökohtaista tallennustilaa**. Valitse sitten oikealta **Kokeile Prota ilmaiseksi**.
@@ -139,8 +139,7 @@ Monissa tapauksissa Power BI:hin rekisteröityminen tapahtuu noudattamalla yksin
 |            **Omatoiminen rekisteröinti on poistettu käytöstä** Näyttöön tulee kirjautumisen aikana seuraavankaltainen ilmoitus: <br /><br /> *Emme voi viimeistellä rekisteröitymistäsi. IT-osastosi on poistanut käytöstä rekisteröitymisen Microsoft Power BI:hin. Ota osastoon yhteyttä rekisteröinnin suorittamiseksi loppuun.* <br /><br /> tai <br /><br /> *Tämä vaikuttaa henkilökohtaiselta sähköpostiosoitteelta. Anna työosoitteesi, jotta voimme muodostaa yhteyden sinun ja muiden samassa yrityksessä työskentelevien välille. Sinun ei tarvitse huolehtia. Emme jaa osoitettasi kenellekään.*             |                             Organisaatiosi IT-järjestelmänvalvoja on poistanut käytöstä omatoimisen rekisteröitymisen Power BI:hin. <br /><br /> Viimeistele rekisteröinti ottamalla yhteyttä IT-järjestelmänvalvojaan ja pyytämällä häntä noudattamaan alla olevalla sivulla annettuja ohjeita ja sallimaan käyttäjien rekisteröityminen Power BI:n käyttäjiksi ja sallimaan uusien käyttäjien liittyminen aiemmin luotuun vuokraajaan. <br/><br/> Tämä ongelma saattaa ilmetä myös, jos olet rekisteröitynyt Office 365:een kumppanin kautta. [Lue lisää](service-admin-syndication-partner.md) <br /><br /> [Power BI organisaatiossasi](https://support.office.com/en-ca/article/Power-BI-in-your-Organization-d7941332-8aec-4e5e-87e8-92073ce73dc5#BKMK_HowCanIAllowO365Tenant)                              |
 |                                                                                          **Sähköpostiosoite ei ole Office 365 -tunnus** Näyttöön tulee kirjautumisen aikana seuraavankaltainen ilmoitus: <br /><br /> *Emme löydä sinua osoitteesta contoso.com.  Käytätkö eri tunnusta työpaikalla tai oppilaitoksessa? <br /><br /> Yritä kirjautua sisään sillä, ja jos se ei toimi, ota yhteyttä IT-osastoon.*                                                                                           | Organisaatiosi käyttää Office 365:een ja muihin Microsoft-palveluihin kirjautumiseen tunnuksia, jotka ovat muita kuin sähköpostiosoitteesi.  Sähköpostiosoitteesi saattaa esimerkiksi olla Nancy.Smith@contoso.com, mutta tunnuksesi on nancys@contoso.com. <br /><br /> Viimeistele rekisteröinti käyttämällä tunnusta, jonka organisaatiosi on myöntänyt sinulle Office 365:een tai muihin Microsoft-palveluihin kirjautumista varten.  Jos et tiedä, mistä tässä on kysymys, ota yhteyttä IT-järjestelmänvalvojaan. <br /><br /> Jos rekisteröityminen ei edelleenkään onnistu ja voit suorittaa edistyksellisemmän asennuksen, voit [rekisteröityä uuteen Office 365 -kokeiluversioon ja käyttää rekisteröitymiseen kyseistä sähköpostiosoitetta](service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md). |
 
-## <a name="next-steps"></a>Seuraavat vaiheet
-[Power BI (ilmainen) organisaatiossasi](service-admin-service-free-in-your-organization.md)  
+## <a name="next-steps"></a>Seuraavat vaiheet  
 [Power BI Pron ostaminen](service-admin-purchasing-power-bi-pro.md)  
 [Yksittäisten käyttäjien Power BI -palvelusopimus](https://powerbi.microsoft.com/terms-of-service/)  
 [Power BI Premium – mikä se on?](service-premium.md)  

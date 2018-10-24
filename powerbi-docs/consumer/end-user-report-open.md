@@ -1,84 +1,99 @@
 ---
-title: Raportin avaaminen luku- tai muokkausnäkymässä Power BI -palvelussa
-description: Power BI -raportin avaaminen luku- tai muokkausnäkymässä
+title: Raportin tarkasteleminen Power BI -palvelussa
+description: Avaa Power BI -raportti lukunäkymässä.
 author: mihart
 manager: kvivek
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 05/18/2018
+ms.date: 10/10/2018
 ms.author: mihart
-ms.openlocfilehash: fe1916b2b287dffd59bf4535cc07e13d10d01321
-ms.sourcegitcommit: 70192daf070ede3382ac13f6001e0c8b5fb8d934
+ms.openlocfilehash: 4d37c1389628078466d8fedb290d928c3f02e7d5
+ms.sourcegitcommit: dc8b8a2cf2dcc96ccb46159802ebd9342a7fa840
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "46565793"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49112011"
 ---
-# <a name="open-a-report-in-power-bi-service-apppowerbicom"></a>Raportin avaaminen Power BI -palvelussa (app.powerbi.com)
-Raportit ovat saatavilla Power BI -palvelussa, Power BI Desktopissa, Power BI -mobiilisovelluksessa ja Power BI Embeddedissä. Tässä artikkelissa käsitellään raporttien avaamista ***Power BI -palvelussa***.
+# <a name="view-a-report-in-power-bi-service-apppowerbicom"></a>Raportin tarkasteleminen Power BI -palvelussa (app.powerbi.com)
+Raportti sisältää yhden tai useampia visualisointisivuja. Raportit luodaan Power BI:n *raporttien suunnitteluohjelmassa* ja [jaetaan suoraan sinulle](end-user-shared-with-me.md) tai [sovelluksen](end-user-apps.md) osana. 
 
-Power BI -palvelussa raportteja voi tarkastella ja käyttää kahdessa tilassa: [lukunäkymässä ja muokkausnäkymässä](end-user-reading-view.md). Lukunäkymä on kaikkien käyttäjien saatavilla, ja se on suunniteltu erityisesti raporttien *käyttäjille*. Muokkausnäkymä on vain raporttien *tekijöiden* ja omistajien saatavilla. 
+Raportin voi avata monella eri tavalla ja näytämme nyt niistä kaksi, avaamisen aloitussivulta ja avaamisen koontinäytöstä. 
 
-## <a name="open-a-report-from-a-workspace-via-the-reports-content-view-list"></a>Raportin avaaminen työtilasta (**Raportit**-sisältönäkymän luettelosta)
+<!-- add art-->
 
-1. Käynnistä työtilassa ja valitse **Raportit**-välilehti, joka näyttää työtilan kaikki raportit.  
+
+## <a name="open-a-report-from-your-home-page"></a>Raportin avaaminen aloitussivulta
+Avataan raportti, joka on jaettu suoraan sinulle, ja avataan sen jälkeen raportti, joka on jaettu sovelluksen osana.
+
+   ![Aloitussivu](./media/end-user-report-open/power-bi-home.png)
+
+### <a name="open-a-report-that-has-been-shared-with-you"></a>Sinulle jaetun raportin avaaminen
+Power BI:n *suunnitteluohjelmassa* raportin voi jakaa suoraan napsauttamalla ylävalikkopalkin **Jaa**-painiketta. Näin jaettu sisältö näkyy **Jaettu kanssani** -säilössä vasemmassa siirtymispalkissa ja aloitussivun **Jaettu kanssani** -osassa.
+
+1. Avaa Power BI -palvelu (app.powerbi.com).
+
+2. Avaa aloitussivu valitsemalla vasemmassa siirtymispalkissa **Aloitussivu (esikatselu)**.  
+
+   ![Aloitussivu](./media/end-user-report-open/power-bi-select-home.png)
    
-   ![Työtilan Raportit-välilehti](./media/end-user-report-open/power-bi-open-report.png)
-2. Avaa raportti lukunäkymässä valitsemalla sen nimi.  
+3. Vieritä alaspäin, kunnes näet **Jaettu kanssani** -kohdan. Etsi raporttikuvake ![raporttikuvake](./media/end-user-report-open/power-bi-report-icon.png). Tässä näyttökuvassa on kaksi raporttia: *Rahoitus* ja *Northwind*. 
    
-    ![Raportti lukunäkymässä](./media/end-user-report-open/power-bi-reading-view.png)
-3. [Lukunäkymä](end-user-reading-view.md) tarjoaa paljon mahdollisuuksia.  Tässä malliraportissa on useita sivuja, joten voit aloittaa tutustumisen valitsemalla jokaisen välilehden raportin kankaan alaosasta. 
+   ![aloitussivun Jaettu kanssani -osa](./media/end-user-report-open/power-bi-shared.png)
+
+4. Avaa raportti valitsemalla jokin raporttikorteista.
+
+   ![raporttisivu](./media/end-user-report-open/power-bi-report1.png)
+
+5. Huomioi alareunan välilehdet. Kukin välilehti edustaa yhtä raportti*sivua*. Meillä on nyt *IT-kulutrendi*-sivu avoinna. Avaa jokin toinen raporttisivu valitsemalla eri välilehti. 
+
+   ![raporttisivun välilehdet](./media/end-user-report-open/power-bi-tabs.png)
+
+6. Tällä hetkellä näemme vain osan raporttisivusta. Jos haluat muuttaa sivun näyttöä (zoomausta), valitse **Näytä** > **Sovita sivulle**.
+
+   ![muuta zoomaus](./media/end-user-report-open/power-bi-fit.png)
+
+   ![sovita sivulle](./media/end-user-report-open/power-bi-report2.png)
+
+### <a name="open-a-report-that-is-part-of-an-app"></a>Sovelluksen osana jaetun raportin avaaminen
+Jos olet saanut sovelluksia työtovereilta tai AppSourcesta, kyseiset sovellukset ovat käytettävissä aloitussivulla ja **Sovellukset**-säilössä vasemmassa siirtymispalkissa. [Sovellus](end-user-apps.md) on koontinäyttöjen ja raporttien nippu.
+
+1. Palaa aloitussivulle valitsemalla vasemmassa siirtymispalkissa **Aloitussivu (esikatselu)**.
+
+7. Vieritä alaspäin, kunnes näet **Omat sovellukset** -kohdan.
+
+   ![Aloitussivu](./media/end-user-report-open/power-bi-my-apps.png)
+
+8. Avaa sovellus valitsemalla se. Sovelluksen *suunnitteluohjelman* asetusten mukaan sovellus avaa joko koontinäytön tai raportin. Jos sovellus:
+    - avaa raportin, olet valmis.
+    - avaa koontinäytön, katso alla oleva kohta [Raportin avaaminen koontinäytöstä](#Open-a-report-from-a-dashboard).
+
+
 
 ## <a name="open-a-report-from-a-dashboard"></a>Raportin avaaminen koontinäytöstä
-Raportin voi avata myös monilla muilla tavoilla. Voit esimerkiksi aloittaa koontinäytön ja valita ruudun, joka on luotu raportista.  Ruudun valitseminen avaa raportin lukutilassa. Avaa [Myynti ja markkinointi -mallikoontinäyttö](../sample-datasets.md).
+Raportit voidaan avata koontinäytöstä. Useimmat koontinäyttöruudut on *kiinnitetty* raporteista. Ruudun valitseminen avaa raportin, jota on käytetty ruudun luomiseen. 
 
-1. Avaa koontinäyttö ja valitse ruutu.
-
-   Jos valitset ruudun, joka oli [luotu esittämällä kysymyksiä](../service-dashboard-pin-tile-from-q-and-a.md), QA-näyttö avautuu. Jos valitset ruudun, joka oli [luotu koontinäytön **Lisää ruutu** -pienoissovelluksella](../service-dashboard-add-widget.md), avautuu pienoissovelluksen muokkaamisen ohjattu toiminto.  
-
-2.  Tässä esimerkissä olemme valinneet Yksiköitä yhteensä vuoden alusta -pylväskaavioruudun.
+1. Valitse koontinäytöstä ruutu. Tässä esimerkissä olemme valinneet Yksiköitä yhteensä vuoden alusta -pylväskaavioruudun.
 
     ![koontinäyttö, jossa on ruutu valittuna](./media/end-user-report-open/power-bi-dashboard.png)
 
-3.  Kaavioon liittyvä raportti avautuu lukunäkymässä. Huomaa, että olemme Vuoden alusta -luokan sivulla. Tämä raporttisivu sisältää koontinäytöstä valitun pylväskaavion.
+2.  Ruutuun liittyvä raportti avautuu. Huomaa, että olemme Vuoden alusta -luokan sivulla. Tämä raporttisivu sisältää koontinäytöstä valitun pylväskaavion.
 
-    ![raportti avoinna lukunäkymässä](./media/end-user-report-open/power-bi-report.png)
+    ![raportti avoinna lukunäkymässä](./media/end-user-report-open/power-bi-report-new.png)
 
-4. Pysy lukunäkymässä tai avaa raportti muokkausnäkymässä valitsemalla **Muokkaa raporttia**. Muista, että raportin voit avata muokkausnäkymässä vain käyttäjä, jolla on muokkausoikeudet kyseiseen raporttiin.
+> [!NOTE]
+> Kaikki ruudut eivät johda raporttiin. Jos valitset ruudun, joka oli [luotu esittämällä kysymyksiä](../service-dashboard-pin-tile-from-q-and-a.md), QA-näyttö avautuu. Jos valitset ruudun, joka oli [luotu koontinäytön **Lisää ruutu** -pienoissovelluksella](../service-dashboard-add-widget.md), ohjattu **Muokkaa ruutua** -toiminto avautuu.  
 
-    ![Raporttieditori, jossa näkyy Muokkaa raporttia -kuvake](./media/end-user-report-open/power-bi-edit-report.png)
-
-## <a name="create-a-brand-new-report-from-a-dataset"></a>Uuden raportin luominen tietojoukosta
-Raportin voi avata myös tietojoukosta. Kun aloitat tietojoukosta, raportin kangas on tyhjä. Siksi tätä tapaa suositellaan raporttien *tekijöille*, jotka haluavat luoda uuden raportin omistamastaan tietojoukosta. Lataa [Myynti ja markkinointi -mallisovellus](../sample-datasets.md) niin kuin yllä olevassa esimerkissä.
-
-1. Aloita työtilassa, joka sisältää raportin pohjana käytettävän tietojoukon.
-
-   ![vasen siirtymisruutu, jossa näkyvät sovelluksen työtilat](./media/end-user-report-open/power-bi-workspace.png)
-
-2. Valitse **Tietojoukot**-välilehti, niin näet luettelon työtilan kaikista tietojoukoista. Tätä kutsutaan **Tietojoukot**-sisältönäkymän luetteloksi.
-   
-   ![tietojoukkojen luettelo](./media/end-user-report-open/power-bi-dataset.png)
-
-1. Etsi tietojoukko ja valitse **Luo raportti** -kuvake, niin tietojoukko avautuu muokkausnäkymässä. Jos sinulla ei ole tietojoukon muokkausoikeuksia, et voi avata sitä. 
-   
-    ![tietojoukko ja Luo raportti -kuvake](./media/end-user-report-open/power-bi-create-report.png)
-
-3. Tietojoukko avautuu raporttieditoriin. Oikealla näet tietokentät, joita voit alkaa tutkia ja visualisoida. 
-
-   ![raportin kangas](./media/end-user-report-open/power-bi-blank-canvas.png)
 
 ##  <a name="still-more-ways-to-open-a-report"></a>Muita tapoja avata raportti
 Kun pääset sinuiksi Power BI -palvelun kanssa, löydät itsellesi sopivimmat työnkulut. Tässä on vielä muita tapoja raporttien käyttämiseen:
-- Valitse vasemmasta siirtymisruudusta **Suosikit** -> **Viimeaikaiset** -> **Sovellukset** -> **Jaettu kanssani**. 
-- Käyttämällä [Näytä aiheeseen liittyvät](end-user-related.md) -toimintoa
-- Sähköpostiviestissä, jonka joku on [jakanut kanssasi](../service-share-reports.md), tai kun [määrität ilmoituksen](../service-set-data-alerts.md).    
-- [Ilmoituskeskuksen](end-user-notification-center.md) kautta    
+- Valitsemalla vasemmasta siirtymisruudusta **Suosikit** ja **Viimeisimmät**    
+- Käyttämällä [Näytä aiheeseen liittyvät](end-user-related.md) -toimintoa    
+- Sähköpostiviestistä, jonka joku on [jakanut kanssasi](../service-share-reports.md), tai kun [määrität ilmoituksen](../service-set-data-alerts.md)    
+- [Ilmoituskeskuksesta] (end-user-notification-center.md)    
 - ja muilla tavoilla
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
-Lue lisää [Power BI -raporteista](end-user-reports.md)
-
-Ilmenikö muuta kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)  
+[Raportteja voi käsitellä monella eri tavalla](end-user-reading-view.md).  Aloita tutustuminen valitsemalla jokainen välilehti raporttipohjan alaosasta.
 

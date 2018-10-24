@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 09/17/2018
+ms.date: 10/02/2018
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 4e7692be8ec78c79076408635a75dbf0ab9080d2
-ms.sourcegitcommit: 698b788720282b67d3e22ae5de572b54056f1b6c
+ms.openlocfilehash: 49540dd491d02c6a6b474ff80690a75eecfd27db
+ms.sourcegitcommit: b8461c1876bfe47bf71c87c7820266993f82c0d3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45974042"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49336986"
 ---
 # <a name="composite-models-in-power-bi-desktop-preview"></a>Yhdistelmämallit Power BI Desktopissa (esikatselu)
 
@@ -58,7 +58,7 @@ DirectQuerya käytettäessä **yhdistelmämalleilla** on mahdollista luoda Power
 **Yhdistelmämalleilla** on mahdollista luoda esimerkiksi malli, joka yhdistää myyntitiedot yrityksen tietovarastosta myyntitavoitteiden tietoihin, jotka sijaitsevat osastokohtaisessa SQL Server -tietokannassa. Mukaan voi lisätä myös laskentataulukosta tuotuja tietoja. Sellaista mallia, johon yhdistetään useamman kuin yhden DirectQuery-lähteen tietoja ja tuotuja tietoja, kutsutaan *yhdistelmämalliksi*.
 
 > [!NOTE]
-> Koska yhdistelmämallit ovat vasta esikatselutilassa, niitä ei ole mahdollista julkaista Power BI -palveluun. 
+> **Power BI Desktopin** lokakuun 2018 julkaisusta lähtien yhdistelmämalleja *voi* julkaista Power BI -palveluun. Ajoitetun päivityksen ja koontinäytön ruudun päivityksen osalta Power BI -palvelun yhdistelmämallit toimivat samalla tavalla kuin tuontimallit. 
 
 Voit luoda yhteyksiä taulukoiden välille niin kuin ennenkin, vaikka taulukot olisivat peräisin eri lähteistä. Tätä koskee kuitenkin rajoitus: sellaiset ristilähdeyhteyksien kardinaliteetiksi on määritettävä **monta moneen** niiden todellisesta kardinaliteetitista riippumatta. Tällaiset yhteydet toimivat samoin kuin tavalliset **monta moneen** -yhteydet, jotka on kuvattu artikkelissa [Monta moneen -yhteydet Power BI Desktopissa (esikatselu)](desktop-many-to-many-relationships.md). Huomaa, että yhdistelmämallien kontekstissa kaikki tuodut taulukot ovat käytännössä yksittäinen tietolähde riippumatta taustalla olevista tietolähteistä, joista ne tosiasiassa on tuotu.   
 

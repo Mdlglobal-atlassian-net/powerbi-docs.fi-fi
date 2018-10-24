@@ -7,21 +7,21 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 09/27/2018
+ms.date: 10/15/2018
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: a664ff5aeab7de4f98c176dddc5063ef2cfef72e
-ms.sourcegitcommit: ce8332a71d4d205a1f005b703da4a390d79c98b6
+ms.openlocfilehash: dc3c80b2043024a694c4852da200eb503b10c28a
+ms.sourcegitcommit: b8461c1876bfe47bf71c87c7820266993f82c0d3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "47417046"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49337032"
 ---
 # <a name="whats-new-in-the-latest-power-bi-desktop-update"></a>Mitä uutta viimeisin Power BI Desktop -päivitys sisältää?
 
-## <a name="september-2018-update-2625222582"></a>Syyskuun 2018 päivitys (2.62.5222.582)
+## <a name="october-2018-update-2625222582"></a>Lokakuun 2018 päivitys (2.62.5222.582)
 
-Syyskuun päivitykset ovat kuin uuteen, jännittävään luokkahuoneeseen asettuminen, jossa opitaan uusia asioita edellisten kokemusten pohjalta ja olo tuntuu kykenevämmältä ja kypsemmältä kuin koskaan aiemmin. Toivottavasti nämä päivitykset ovat sinusta yhtä hyödyllisiä kuin kaksi vasta teroitettua lyijykynää. 
+Lokakuun päivitykset ovat aavemaisen hyviä, pelottavan hyödyllisiä ja makeampia kuin oranssi karkkiämpäri. 
 
 Voit nyt [ladata Power BI Desktopin uusimman version](https://powerbi.microsoft.com/desktop). Jos käytössäsi on Windows 10, voit hankkia **Power BI Desktopin** Microsoft Storesta. **Power BI Desktopin** kuukausittaiset versiot ovat samat, vaikka versioiden numerointi saattaa poiketa. Lisätietoja on [tässä artikkelissa](desktop-get-the-desktop.md). 
 
@@ -38,40 +38,52 @@ Seuraavat päivitykset olivat uutta **Power BI Desktopissa** tässä kuussa:
 
 ### <a name="reporting"></a>Raportointi
 
-* Pistetulostusasettelun tuki pistekaavioissa  [[video]](https://youtu.be/Rzw2WyI09kY?t=30s)  [[artikkeli]](power-bi-visualization-scatter.md)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2018-feature-summary/#dotPlot) 
-* Kopioi arvo ja valinta taulukkojen ja matriisien visualisoinneista [[video]](https://youtu.be/Rzw2WyI09kY?t=2m33s)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2018-feature-summary/#copy) 
-* Sisäiset raporttiteema-asetukset [[video]](https://youtu.be/Rzw2WyI09kY?t=6m2s)   [[artikkeli]](desktop-report-themes.md)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2018-feature-summary/#themes) 
-* Raporttisivun työkaluvihjeet yleisesti saatavilla, uusi korttituki [[video]](https://youtu.be/Rzw2WyI09kY?t=8m10s)  [[artikkeli]](desktop-tooltips.md)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2018-feature-summary/#themes) 
-* Helppokäyttötoimintojen parannuksia analysointia varten ja muotoiluruudun tuki [[video]](https://youtu.be/Rzw2WyI09kY?t=9m29s)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2018-feature-summary/#accessibility)
+* Hae suodatinkorteista [[video]](https://youtu.be/cT3L2VzgBRU?t=56)  [[artikkeli]](power-bi-reports-filters-and-highlighting.md)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/%23search) 
+* Muokkausominaisuuksien helppokäyttötoimintojen parannuksia [[video]](https://youtu.be/cT3L2VzgBRU?t=118)  [[artikkeli]](desktop-accessibility.md#arranging-items-in-field-buckets)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/%23accessibility)
+* ArcGIS Mapin suorituskyvyn parannuksia [[video]](https://youtu.be/cT3L2VzgBRU?t=333)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/%23esri)
+
+
+### <a name="modeling"></a>Mallintaminen
+
+* DAX Editorin parannuksia [[video]](https://youtu.be/GO1dhDJhSDY)  [[artikkeli]](desktop-formula-editor.md)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/%23daxEditor) 
 
 ### <a name="analytics"></a>Analysointi
 
-* Koosteet (esikatselu) [[video]](https://youtu.be/Rzw2WyI09kY?t=11m37s)  [[artikkeli]](desktop-aggregations.md)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2018-feature-summary/#aggregations) 
+* Yhdistelmämallit ja koosteiden tuki Power BI -palvelussa (esikatselu) [[video]](https://youtu.be/8E6UokaDtc0)  [[artikkeli – koosteet]](desktop-aggregations.md) [[artikkeli – yhdistelmämallit]](desktop-composite-models.md) [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/%23compositeModels) 
+* Selitä lisäys lisäämättömille mittayksiköille [[video]](https://youtu.be/8E6UokaDtc0?t=107)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/%23Insights) 
 
 ### <a name="custom-visuals"></a>Mukautetut visualisoinnit
 
-* Viisi uutta mukautettua visualisointia  [[video]](https://youtu.be/Rzw2WyI09kY?t=23m8s)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2018-feature-summary/#customVisuals) 
+* Viisi uutta mukautettua visualisointia  [[video]](https://youtu.be/ZfJSSG17SEY)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/%23customVisuals) 
 
 ### <a name="data-connectivity"></a>Tietoyhteydet
 
-* PDF-tiedoston liitin (esikatselu)  [[video]](https://youtu.be/Rzw2WyI09kY?t=29m26s)  [[artikkeli]](desktop-connect-pdf.md)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2018-feature-summary/#pdf) 
-* SAP BW -liitin – mittaominaisuuksien tuki  [[video]](https://youtu.be/Rzw2WyI09kY?t=30m15s)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2018-feature-summary/#sapBW) 
-* Tietovoiden liitin (beeta)  [[artikkeli]](desktop-connect-dataflows.md)   [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2018-feature-summary/#dataflows) 
+* Web by Example -yhdistin nyt yleisesti saatavilla [[video]](https://youtu.be/MhrhIXNtelw)  [[artikkeli]](desktop-connect-to-web-by-example.md)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/%23webByExample) 
+* SAP BW -yhdistimen toteutus v2 nyt yleisesti saatavilla  [[video]](https://youtu.be/MhrhIXNtelw?t=133)   [[artikkeli]](desktop-sap-bw-connector.md)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/%23sapBW) 
+* SAP BW -viestipalvelimen yhdistin nyt yleisesti saatavilla  [[video]](https://youtu.be/MhrhIXNtelw?t=159)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/%23sapBWmessageServer) 
+* Vertica-yhdistin nyt yleisesti saatavilla   [[video]](https://youtu.be/MhrhIXNtelw?t=175)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/%23vertica) 
+* Dynamics NAV- ja Dynamics 365 Business Central -yhdistimet nyt yleisesti saatavilla   [[video]](https://youtu.be/MhrhIXNtelw?t=197)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/%23dynamics) 
+* Uusi paikallinen Dynamics 365 Business Central -yhdistin   [[video]](https://youtu.be/MhrhIXNtelw?t=219)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/%23dynamicsOnPrem) 
 
 ### <a name="data-preparation"></a>Tietojen valmistelu
-* M Intellisense  [[video]](https://youtu.be/Rzw2WyI09kY?t=30m42s)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2018-feature-summary/#pdf) 
-* Lisää sarake esimerkeistä – tekstin täytön tuki  [[video]](https://youtu.be/Rzw2WyI09kY?t=32m27s)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2018-feature-summary/#addColumn) 
+* Tietojen profilointi Power Query -editorissa (esikatselu) [[video]](https://youtu.be/XNNvXCvlDlc)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/%23dataProfiling) 
+* Yhdistä kyselyt -toiminnon sumea vastaavuus (esikatselu) [[video]](https://youtu.be/XNNvXCvlDlc?t=261)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/%23fuzzyMatching) 
+
+### <a name="other-areas"></a>Muut alueet
+* Raporttien vientiasetusten hallinta [[video]](https://youtu.be/agjKCFQ1NBQ?t=16)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/%23exportControl) 
+* Siirtokerroksen suojausasetukset  [[video]](https://youtu.be/agjKCFQ1NBQ?t=208)  [[artikkeli]](service-admin-power-bi-security.md#enforcing-tls-version-usage)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/%23tls) 
 
 
 > [!NOTE]
 > Voit myös [tutustua kaikkiin Power BI Desktopille saatavilla oleviin tietolähteisiin](desktop-data-sources.md). Luettelo kasvaa jatkuvasti, joten se kannattaa tarkistaa usein.
 
-Haluatko lisätietoja näistä päivityksistä? Tutustu [blogikirjoitukseen](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2018-feature-summary/), josta saat tarkempia tietoja kustakin uudesta ominaisuudesta (tämä on sama blogikirjoitus, johon viitataan yllä olevassa luettelossa).
+Haluatko lisätietoja näistä päivityksistä? Tutustu [blogikirjoitukseen](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary), josta saat tarkempia tietoja kustakin uudesta ominaisuudesta (tämä on sama blogikirjoitus, johon viitataan yllä olevassa luettelossa).
 
 
-Seuraavassa videossa esitellään jokainen näistä päivityksistä. Näet videon myös blogikirjoituksen kautta.
+Seuraavassa videokanavassa esitellään jokainen näistä päivityksistä. Näet videot myös blogikirjoituksen kautta.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Rzw2WyI09kY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/cT3L2VzgBRU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
 
 > [!NOTE]
 > Sinua saattavat myös kiinnostaa [Power BI -palvelun uudet ominaisuudet](service-whats-new.md). Tutustu myös [Power BI -mobiilisovellusten uutuuksiin](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).

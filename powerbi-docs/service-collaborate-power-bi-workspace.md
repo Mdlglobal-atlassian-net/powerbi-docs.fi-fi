@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 71b2f104ad5efb244c2b046cdd48a2e52cd045e3
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 19a029564fecdc9a54a136d045e75bb9580193da
+ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46543945"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "48908236"
 ---
 # <a name="collaborate-in-your-power-bi-app-workspace"></a>Yhteiskäyttö Power BI -sovelluksen työtilassa
 Power BI -sovelluksen työtilat on käteviä paikkoja tehdä yhteistyötä työtovereidesi kanssa raporttinäkymässä, raporteissa ja tietojoukoissa *sovellusten* luomiseksi. Yhteiskäyttö ei pääty Power BI:n työtiloihin. Office 365 tarjoaa muita ryhmäpalveluita kuten tiedostojen jakaminen OneDrive for Business -palvelussa, keskustelut Exchangessa, jaetun kalenterin, tehtävät ja niin edelleen. Lue lisää [Office 365-ryhmistä](https://support.office.com/article/Create-a-group-in-Office-365-7124dc4c-1de9-40d4-b096-e8add19209e9).
@@ -23,7 +23,7 @@ Power BI -sovelluksen työtilat on käteviä paikkoja tehdä yhteistyötä työt
 > [!NOTE]
 > Uusi työtilakokemuksen esiversio muuttaa Power BI -työtilojen ja Office 365:n ryhmien välistä suhdetta. Et luo automaattisesti Office 365 -ryhmää aina, kun luot uuden työtilan. Lisätietoja [uusien työtilojen luomisesta (esikatselu)](service-create-the-new-workspaces.md)
 
-Sovellustyötilat ovat käytettävissä vain [Power BI Pro:ssa](service-free-vs-pro.md).
+Sovellustyötilat ovat käytettävissä vain [Power BI Pro -käyttöoikeudessa](service-features-license-type.md).
 
 ## <a name="collaborate-on-power-bi-desktop-files-in-your-app-workspace"></a>Power BI Desktop -tiedostojen yhteiskäyttö sovellustyötilassa
 Kun olet luonut Power BI Desktop-tiedoston, jos julkaiset sen Power BI-sovelluksen työtilassa, jokainen työtilassasi voi yhteiskäyttää sitä.
@@ -77,7 +77,7 @@ Yhteiskäyttö Office 365:ssa alkaa sovelluksen työtilasta Power BI:ssa.
 Jos olet omistaja tai järjestelmänvalvoja sovelluksen työtilassa, voit myös lisätä tai poistaa työtilan jäseniä. Lue lisää [Power BI-sovelluksen työtilan hallinnasta](service-manage-app-workspace-in-power-bi-and-office-365.md).
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
-* [Sovellusten ja sovellustyötilojen luominen Power BI:ssä](consumer/end-user-create-apps.md)
+* [Sovellusten ja sovellustyötilojen luominen Power BI:ssä](service-create-distribute-apps.md)
 * Onko sinulla muuta kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
 * Haluatko antaa palautetta? Siirry [Power BI:n ideasivulle](https://ideas.powerbi.com/forums/265200-power-bi)
 

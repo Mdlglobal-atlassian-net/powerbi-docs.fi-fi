@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 09/11/2018
 ms.author: mihart
 LocalizationGroup: Create reports
-ms.openlocfilehash: 8c176cff4973ee73218bf9e568d01f15bd137929
-ms.sourcegitcommit: fb1885da7cf11367660edbf7b7346dc039ee9b5d
+ms.openlocfilehash: 0cf9c152c9481e223a143bed3985e883c92af192
+ms.sourcegitcommit: ce8332a71d4d205a1f005b703da4a390d79c98b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47187049"
+ms.lasthandoff: 09/27/2018
+ms.locfileid: "47416816"
 ---
 # <a name="use-the-matrix-visual-in-power-bi-desktop"></a>Matriisivisualisoinnin käyttö Power BI Desktopissa
 **Matriisi**-visualisointiominaisuuden avulla voit luoda myös *matriisitaulukoiksi* kutsuttuja visualisointeja **Power BI Desktop** -raporteissa ja korostaa matriisin sisältämiä elementtejä ristiin muiden visualisointien kanssa. Lisäksi voit valita rivejä, sarakkeita ja jopa yksittäisiä soluja ristiinkorostettavaksi. Matriisivisualisointi tukee porrastettua asettelua, jonka avulla voit hyödyntää asettelun tilan entistä paremmin.
@@ -153,10 +153,6 @@ Kumpikin menettelytapa johtaa samaan tulokseen. Valitsemalla *Lisäasetukset* n�
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
-Voit olla kiinnostunut myös seuraavista artikkeleista:
+[Piste- ja kuplakaaviot Power BI:ssä](power-bi-visualization-scatter.md)
 
-* [Ruudukon ja kohdista ruudukkoon -toiminnon käyttö Power BI Desktop -raporteissa](../desktop-gridlines-snap-to-grid.md)
-* [Power BI Desktopin tietolähteet](../desktop-data-sources.md)
-* [Tietotyypit Power BI Desktopissa](../desktop-data-types.md)
-
- 
+[Visualisointityypit Power BI:ssä](power-bi-visualization-types-for-reports-and-q-and-a.md)

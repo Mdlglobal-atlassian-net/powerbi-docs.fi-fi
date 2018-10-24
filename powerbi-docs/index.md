@@ -3,12 +3,13 @@ layout: HubPage
 hide_bc: true
 title: Power BI -dokumentaatio
 description: Power BI -dokumentaatio
-ms.openlocfilehash: 61caafcfd5ea816a1678209355dab387a83a8642
-ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
+ms.service: powerbi
+ms.openlocfilehash: 7dbc0270fcfdd7dc83a41cbe45399dc05a2ccfe8
+ms.sourcegitcommit: f6360934b9af20bd630e2d3cb88398e3f5794090
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37597343"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48798973"
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -22,18 +23,18 @@ ms.locfileid: "37597343"
                         <a href="#home-all"></a>
                         <ul id="home-all" class="cardsA">
                             <li>
-                                <a href="power-bi-overview.md">
+                                <a href="consumer/power-bi-consumer-landing.md">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="https://docs.microsoft.com/en-us/media/hubs/powerbi/pbi-powerbi-logo.svg" alt="" />
+                                                        <img src="./media/index/powerbi-4x_ea1e-01-resized-with-ratio.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Power BI -palvelu</h3>
-                                                    <p>Power BI -palvelu on verkkopalvelu, jonka kautta voit käyttää raporttinäkymiä, sovelluksia ja julkaistuja raportteja.</p>
+                                                    <h3>Power BI raporttien kuluttajille</h3>
+                                                    <p>Power BI:n käytön aloittaminen Tutustu eri tuotteisiin ja palveluihin, joista Power BI koostuu, ja selvitä, miten voit hyödyntää niitä.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -41,18 +42,18 @@ ms.locfileid: "37597343"
                                 </a>
                             </li>
                             <li>
-                                <a href="desktop-what-is-desktop.md">
+                                <a href="power-bi-creator-landing.md">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="https://docs.microsoft.com/en-us/media/hubs/powerbi/pbi-desktop.svg" alt="" />
+                                                        <img src="./media/index/power-bi-4x-Design_E771.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Power BI Desktop</h3>
-                                                    <p>Power BI Desktopissa voit luoda tarkempia kyselyjä, malleja ja raportteja, jotka visualisoivat tietoja.</p>
+                                                    <h3>Power BI raporttien suunnittelijoille</h3>
+                                                    <p>Oletko Power BI -raporttien suunnittelija? Opi muodostamaan yhteys tietoihin, suunnittelemaan kyselyjä ja luomaan raportteja ja koontinäyttöjä.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -60,18 +61,18 @@ ms.locfileid: "37597343"
                                 </a>
                             </li>
                             <li>
-                                <a href="mobile-apps-for-mobile-devices.md">
+                                <a href="service-admin-administering-power-bi-in-your-organization.md">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="https://docs.microsoft.com/en-us/media/hubs/powerbi/pbi-mobile-apps.svg" alt="" />
+                                                        <img src="./media/index/power-bi-4x-Admin_F286.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Power BI -mobiilisovellukset</h3>
-                                                    <p>Tarkastele Power BI -koontinäyttöjä ja -raportteja ja tee niille toimia mobiililaitteellasi.</p>
+                                                    <h3>Power BI järjestelmänvalvojille</h3>
+                                                    <p>Opi hallitsemaan Power BI -vuokraajaa eli esimerkiksi määrittämään käytäntöjä, seuraamaan käyttöä sekä valmistelemaan käyttöoikeuksia ja kapasiteetteja.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -85,12 +86,12 @@ ms.locfileid: "37597343"
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="https://docs.microsoft.com/en-us/media/hubs/powerbi/pbi-developer.svg" alt="" />
+                                                        <img src="./media/index/power-bi-4x-Developer_ECCE.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Power BI -kehittäjä</h3>
-                                                    <p>Power BI tarjoaa useita erilaisia asetuksia kehittäjille. Niitä on upottamisesta mukautettuihin visualisointeihin ja virtautettaviin tietojoukkoihin.</p>
+                                                    <h3>Power BI kehittäjille</h3>
+                                                    <p>Power BI tarjoaa useita erilaisia vaihtoehtoja kehittäjille aina upottamisesta mukautettuihin visualisointeihin ja virtautettaviin tietojoukkoihin.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -98,18 +99,18 @@ ms.locfileid: "37597343"
                                 </a>
                             </li>
                             <li>
-                                <a href="report-server/get-started.md">
+                                <a href="https://powerbi.microsoft.com/blog/">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="https://docs.microsoft.com/en-us/media/hubs/powerbi/pbi-report-server.svg" alt="" />
+                                                        <img src="./media/index/power-bi-4x-Blog_E1D7.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Power BI -raporttipalvelin</h3>
-                                                    <p>Luo, ota käyttöön ja hallinnoi paikallisia Power BI- ja mobiiliraportteja sekä sivutettuja raportteja.</p>
+                                                    <h3>Power BI -blogi</h3>
+                                                    <p>Pysy ajan tasalla Power BI:n viimeisimmästä kehityksestä.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -123,7 +124,7 @@ ms.locfileid: "37597343"
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="https://docs.microsoft.com/en-us/media/hubs/powerbi/pbi-guided-learning.svg" alt="" />
+                                                        <img src="./media/index/power-bi-4x-GuidedLearning_E736.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">

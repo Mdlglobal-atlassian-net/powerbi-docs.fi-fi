@@ -9,14 +9,14 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 09/14/2018
+ms.date: 10/01/2018
 LocalizationGroup: Reports
-ms.openlocfilehash: 1de9624dfde73baf424a21ed4d587d086c1d6763
-ms.sourcegitcommit: fb1885da7cf11367660edbf7b7346dc039ee9b5d
+ms.openlocfilehash: 562af0b21c4ecd4617de0e524cca20ec6935ca7a
+ms.sourcegitcommit: 31f9da5f562cd02a729b6f012b4b3326416adb0e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47187256"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48232922"
 ---
 # <a name="filter-a-report-using-query-string-parameters-in-the-url"></a>Raportin suodattaminen URL-osoitteen kyselymerkkijonoparametrien avulla
 
@@ -137,7 +137,7 @@ Erikoismerkit ja välilyönnit edellyttävät lisämuotoiluja. Kun kysely sisäl
 |---------|---------|---------|
 |**Taulukon nimi**     | Välilyönti on 0x20        |  Taulukon_x0020_nimi       |
 |**Sarakkeen**@**numero**     |   @ on 0x40     |  Sarakkeen_x0040_numero       |
-|**[Sarake]**     |  [ on 0x005B ] on 0x0050       |  _x0058_Sarake_x0050       |
+|**[Sarake]**     |  [ on 0x0058 ] on 0x0050       |  _x0058_Sarake_x0050       |
 |**Sarake+Plus**     | + on 0x2B        |  Sarake_x002B_Plus       |
 
 Table_x0020_Name/Column_x002B_Plus eq 3 ![erikoismerkkejä hahmontava taulukkovisualisointi](media/service-url-filters/power-bi-special-characters1.png)
@@ -171,6 +171,7 @@ On muutamia asioita, jotka tulee ottaa huomioon merkkijonon kyselyparametreja k�
 * Power BI -raporttipalvelimessa voit [välittää raporttiparametrit](https://docs.microsoft.com/sql/reporting-services/pass-a-report-parameter-within-a-url?view=sql-server-2017.md) sisällyttämällä ne raportin URL-osoitteeseen. Näissä URL-parametreissa ei ole etuliitettä, koska ne on välitetty suoraan raportin käsittelymoduuliin.
 * Kyselyn merkkijonon suodatus ei toimi toiminnoissa [Julkaise verkkoon](service-publish-to-web.md) tai Power BI Embedded.   
 * Pitkä tietotyyppi on (2^53-1) JavaScriptin rajoitusten vuoksi.
+* Raporttisuodattimien URL-suodattimissa on 10 lausekkeen rajoitus (10 AND-funktiolla yhdistettyä suodatinta).
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 

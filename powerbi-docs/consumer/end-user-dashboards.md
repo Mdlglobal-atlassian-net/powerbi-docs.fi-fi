@@ -7,32 +7,32 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 03/02/2018
+ms.date: 10/02/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: ccfa947f83a5079cda3bfb173c0f83f6b811a9ff
-ms.sourcegitcommit: 70192daf070ede3382ac13f6001e0c8b5fb8d934
+ms.openlocfilehash: 7db5bf514b567cbcaf9dddc5d48006762237a622
+ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "46564735"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "48909126"
 ---
 # <a name="dashboards-in-power-bi-service"></a>Koontinäytöt Power BI -palvelussa
 
 Power BI ***-koontinäyttö*** on yksi sivu, jota kutsutaan usein pohjaksi, jossa käytetään visualisointeja tarinan kertomiseksi. Koska se on rajoitettu vain yhteen sivuun, hyvin suunniteltu koontinäyttö sisältää vain tarinan tärkeimmät elementit.
 
-![koontinäyttö](./media/end-user-dashboards/power-bi-dashboard2.png)
+![koontinäyttö](media/end-user-dashboards/power-bi-dashboard2.png)
 
 Koontinäytössä näkyviä visualisointeja kutsutaan *ruuduiksi* ja ne *kiinnitetään* koontinäyttöön raporteista. Jos olet uusi Power BI:n käyttäjä, saat hyvän pohjan sen käyttöön lukemalla [Power BI:n peruskäsitteet](end-user-basic-concepts.md).
 
 > [!NOTE]
-> Koontinäytöt ovat Power BI -palvelun ominaisuus eivätkä ne ole käytettävissä Power BI Desktopissa. Koontinäyttöjä ei voi luoda mobiililaitteissa, mutta niitä voidaan [tarkastella ja jakaa](mobile/mobile-apps-view-dashboard.md).
+> Koontinäytöt ovat Power BI -palvelun ominaisuus eivätkä ne ole käytettävissä Power BI Desktopissa. Koontinäyttöjä ei voi luoda mobiililaitteissa, mutta niitä voidaan [tarkastella ja jakaa](/mobile/mobile-apps-view-dashboard.md).
 > 
 > 
 
 Koontinäytön visualisoinnit ovat peräisin raporteista ja kukin raportti perustuu yhteen tietojoukkoon. Itse asiassa koontinäyttöä voidaan ajatella eteisenä, josta pääsee pohjana oleviin raportteihin ja tietojoukkoihin. Valitsemalla visualisoinnin valitseminen pääset raporttiin (ja tietojoukkoon), jota käytettiin sen luomiseen.
 
-![kaavio, jossa näkyy koontinäyttöjen, raporttien ja tietojoukkojen välinen suhde](./media/end-user-dashboards/power-bi-diagram.png)
+![kaavio, jossa näkyy koontinäyttöjen, raporttien ja tietojoukkojen välinen suhde](media/end-user-dashboards/power-bi-diagram.png)
 
 ## <a name="advantages-of-dashboards"></a>Koontinäyttöjen edut
 Koontinäytöt tarjoavat erinomaisen tavan liiketoiminnan tarkkailuun, vastausten etsimiseen ja tärkeimpien tietojesi näkemiseen yhdellä silmäyksellä. Koontinäytöillä olevat visualisoinnit saattavat olla peräisin yhdestä tai useammasta tietojoukosta sekä yhdestä tai useammasta pohjana olevasta raportista. Koontinäyttö yhdistää paikalliset ja pilvipalvelussa olevat tiedot, tarjoten yhdistetyn näkymän riippumatta siitä, missä tiedot todella sijaitsevat.
@@ -40,7 +40,7 @@ Koontinäytöt tarjoavat erinomaisen tavan liiketoiminnan tarkkailuun, vastauste
 Koontinäyttö ei ole vain nätti kuva, vaan se on erittäin vuorovaikutuskykyinen ja laajalti mukautettava, ja sen ruudut päivittyvät sitä mukaa, kun sen pohjana olevat tiedot muuttuvat.
 
 ## <a name="dashboards-versus-reports"></a>Koontinäytöt vs. raportit
-[Raportit](end-user-reports.md) sekoitetaan usein koontinäyttöihin, koska nekin ovat pohjia, jotka ovat täynnä visualisointeja. Niiden välillä on kuitenkin merkittäviä eroja.
+Raportit sekoitetaan usein koontinäyttöihin, koska nekin ovat pohjia, jotka ovat täynnä visualisointeja. Niiden välillä on kuitenkin merkittäviä eroja.
 
 | **Ominaisuus** | **Koontinäytöt** | **Raportit** |
 | --- | --- | --- |
@@ -65,28 +65,16 @@ Tässä on joitakin aiheita esiteltyinä roolin mukaan, joiden avulla pääset a
 
 Koontinäytön jakamiseen ja jaetun koontinäytön tarkasteluun vaaditaan Power BI Pro.
 
-### <a name="if-you-will-be-creating-and-sharing-dashboards"></a>Jos aiot luoda ja jakaa koontinäyttöjä
-* Käytä jotain malleistamme [koontinäytön luomiseksi raportista](../service-dashboard-create.md).
-* Lue lisätietoja [koontinäytön ruuduista](end-user-tiles.md) ja eri tavoista niiden kiinnittämiseksi koontinäyttöön.
-* Auta koontinäytön kuluttajia luomalla koontinäyttöjä, jotka [toimivat hyvin luonnollisella kielellä tehtyjen kysymysten kanssa](../service-prepare-data-for-q-and-a.md) ja joista saa [nopeasti tietoja](../service-insights-optimize.md).
-* Tutustu eri tapoihin, joilla voit [jakaa koontinäytön työtovereidesi kanssa](../service-how-to-collaborate-distribute-dashboards-reports.md).
-
 ### <a name="if-you-will-be-receiving-and-consuming-dashboards"></a>Jos aiot vastaanottaa ja katsella koontinäyttöjä
 * Tutustu koontinäyttöihin paremmin tutustumalla johonkin [mallikoontinäytöistämme](../sample-tutorial-connect-to-the-samples.md).
 * Lue lisätietoja [koontinäytön ruuduista](end-user-tiles.md) ja siitä, mitä tapahtuu, kun valitset sellaisen.
-* Etkö pidä koontinäytön ulkoasusta?  Voit [ muuttaa ruutujen kokoa, siirtää ja nimetä ne uudelleen](../service-dashboard-edit-tile.md).
-* Haluatko seurata yksittäistä koontinäytön ruutua ja saada sähköpostiviestin, kun se saavuttaa tietyn raja-arvon? [Luo hälytyksiä ruuduista](../service-set-data-alerts.md).
-* Pidä hauskaa ja esitä kysymyksiä koontinäytöistä. Opettele käyttämään [Power BI:n kysymyksiä ja vastauksia](../power-bi-tutorial-q-and-a.md) -toimintoa kysymyksen esittämiseksi tietojasi koskien, jolloin saat vastauksen visualisoinnin muodossa.
+* Haluatko seurata yksittäistä koontinäytön ruutua ja saada sähköpostiviestin, kun se saavuttaa tietyn raja-arvon? [Luo hälytyksiä ruuduista](end-user-alerts.md).
+* Pidä hauskaa ja esitä kysymyksiä koontinäytöistä. Opettele käyttämään [Power BI:n kysymyksiä ja vastauksia](end-user-q-and-a.md) -toimintoa kysymyksen esittämiseksi tietojasi koskien, jolloin saat vastauksen visualisoinnin muodossa.
 
 > [!TIP]
 > Jos et löytänyt etsimääsi täältä, käytä vasemmalla olevaa sisällysluetteloa.
-> 
 > 
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 [Mikä on Power BI?](../power-bi-overview.md)  
 [Power BI:n peruskäsitteet](end-user-basic-concepts.md)  
-[Power BI Premium – mikä se on?](../service-premium.md)  
-
-Ilmenikö muuta kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)
-

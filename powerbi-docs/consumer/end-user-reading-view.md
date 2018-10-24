@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 04/13/2018
+ms.date: 10/02/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: de7766176f5c25288912cf463dce79f487e7335d
-ms.sourcegitcommit: 70192daf070ede3382ac13f6001e0c8b5fb8d934
+ms.openlocfilehash: f108ab3c924f6ff69bc6ee6aae5ed0539ce3f11d
+ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "46565103"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "48908074"
 ---
 # <a name="reading-view-and-editing-view-in-power-bi-service-reports"></a>Lukunäkymä ja muokkausnäkymä Power BI -palvelun raporteissa
 Power BI -palvelussa (ei koske Power BI Desktopia) raportteja voi tarkastella ja käyttää kahdessa tilassa: lukunäkymässä ja muokkausnäkymässä. Lukunäkymä on kaikkien käyttäjien käytettävissä, ja se on suunniteltu erityisesti tietojen *kuluttajille*, kun taas muokkausnäkymää voivat käyttää vain raporttien *tekijät* ja omistajat.
@@ -26,11 +26,12 @@ Power BI -palvelussa (ei koske Power BI Desktopia) raportteja voi tarkastella ja
 
  Lukunäkymä mahdollistaa raportin tarkastelemisen ja käyttämisen. Se on kätevä ja turvallinen tapa käsitellä tietoja ja perehtyä niihin. Lukunäkymä on suunniteltu raporttien *kuluttajille*, jotka avaavat raportteja sovelluksista tai joiden kanssa muut ovat [jakaneet raportteja](../service-share-dashboards.md). Lukunäkymä varmistaa, että tietyn raportin jokainen yksittäinen kuluttaja näkee saman raportin samoilla visualisoinneilla ja valinnaisesti myös samoilla suodattimilla.  Kuluttajat voivat käyttää raportteja interaktiivisesti ja muuttaa käytössä olevia suodattimia (nämä muutokset myös tallentuvat raportin mukana), mutta eivät voi lisätä uusia suodattimia.
 
->**Huomautus**: tietyissä tilanteissa raportin kuluttajat voivat nähdä eri tietoja rivitason suojauksen ja käyttöoikeuksien vuoksi.
+> [!NOTE]
+> Tietyissä tilanteissa raportin kuluttajat voivat nähdä eri tietoja rivitason suojauksen ja käyttöoikeuksien vuoksi.
 
 ## <a name="report-editing-view"></a>Raportin muokkausnäkymä
 
-Muokkausnäkymää voi käyttää vain raportin luonut henkilö tai henkilö, joka [myös omistaa raportin sovellustyötilan jäsenen tai järjestelmänvalvojan ominaisuudessa](end-user-create-apps.md).
+Muokkausnäkymää voi käyttää vain raportin luonut henkilö tai henkilö, joka [myös omistaa raportin sovellustyötilan jäsenen tai järjestelmänvalvojan ominaisuudessa](../service-create-distribute-apps.md).
 
 Muokkausnäkymä on suunniteltu raportin *luojille*. Tässä näkymässä raporttien luojat voivat tuoda tietoja ja yhdistää niitä tietojoukkoihin, tutkia tietoja ja luoda raportteja ja koontinäyttöjä. Muokkausnäkymässä raporttien *luojat* voivat tutustua tietoihin vielä tarkemmin lisäämällä ja poistamalla kenttiä, muuttamalla visualisointityyppiä, luomalla uusia visualisointeja ja lisäämällä ja poistamalla visualisointeja ja sivuja raportista. Tämän jälkeen he voivat jakaa luomiaan raportteja työtovereiden kanssa.
 
@@ -53,11 +54,11 @@ Tässä kaaviossa ei luetella Power BI -palvelun kaikkia raporttiominaisuuksia. 
 | [Käyttömittarien näyttäminen ](../service-usage-metrics.md) | Kyllä, raportin piirtoalustalla. | Kyllä, raporttiluettelossa (sisältönäkymässä) |
 | [Aiheeseen liittyvän sisällön näyttäminen](end-user-related.md) | Kyllä, raportin piirtoalustalla. | Kyllä, raporttiluettelossa (sisältönäkymässä) |
 | [Raportin tallentaminen](../service-report-save.md) | Kyllä, mutta vain käyttämällä **Tallenna nimellä** -komentoa. | Kyllä |
-| [Raportin poistaminen](end-user-delete.md) | Ei  | Kyllä |
+| [Raportin poistaminen](../service-delete.md) | Ei  | Kyllä |
 |**Raporttisivut** |
 | [Raporttisivun lisääminen tai nimeäminen uudelleen](../power-bi-report-add-page.md)  | Ei  | Kyllä  |
 | [Raporttisivun monistaminen](../power-bi-report-copy-paste-page.md) | Ei  | Kyllä |
-| [Raporttisivun poistaminen](end-user-delete.md) | ei | kyllä |
+| [Raporttisivun poistaminen](../service-delete.md) | ei | kyllä |
 |**Raportin visualisointien käyttäminen**|
 | [Visualisointien lisääminen raporttiin](../visuals/power-bi-report-add-visualizations-i.md) | Ei  | Kyllä |
 | [Tekstiruutujen ja muotojen lisääminen raporttiin](../power-bi-reports-add-text-and-shapes.md) | Ei  | Kyllä |
@@ -66,7 +67,7 @@ Tässä kaaviossa ei luetella Power BI -palvelun kaikkia raporttiominaisuuksia. 
 | [Visualisoinnin lähdetietojen näyttäminen](end-user-show-data.md) | Ei  | Kyllä |
 | [Tietoihin porautumisen määrittäminen](end-user-drill.md) | Ei  | Kyllä |
 | [Käytössä olevan visualisointityypin muuttaminen](../visuals/power-bi-report-change-visualization-type.md) | Ei | Kyllä|
-| [Visualisoinnin, tekstiruudun tai muodon poistaminen](end-user-delete.md)| Ei | Kyllä |
+| [Visualisoinnin, tekstiruudun tai muodon poistaminen](../service-delete.md)| Ei | Kyllä |
 
 
 ## <a name="navigating-between-editing-view-and-reading-view"></a>Muokkausnäkymän ja lukunäkymän välillä siirtyminen
@@ -88,7 +89,6 @@ Muista, että vain raportin luoja ja omistaja(t) voivat avata raportin muokkausn
 
 
 
-### <a name="next-steps"></a>Seuraavat vaiheet
+## <a name="next-steps"></a>Seuraavat vaiheet
 Voit käsitellä raporttia lukunäkymässä monin eri tavoin ja saada esiin merkityksellistä tietoa ja vastauksia kysymyksiin paloittelemalla ja purkamalla raportin tietoja.  Seuraavassa aiheessa, [Raportin käsittely lukunäkymässä](../service-interact-with-a-report-in-editing-view.md), kuvataan joitain näitä seikkoja yksityiskohtaisesti.    
 Takaisin [Power BI -raportteihin](end-user-reports.md)    
-Onko sinulla muuta kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)

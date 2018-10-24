@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 07/27/2018
 ms.author: davidi
 LocalizationGroup: Reports
-ms.openlocfilehash: 4e2ff9afcccc9bc32d47359fba386fcb0c704457
-ms.sourcegitcommit: f01a88e583889bd77b712f11da4a379c88a22b76
+ms.openlocfilehash: bbffe00507462c3a41ee07cb86c2376a072e5437
+ms.sourcegitcommit: 833cf1252807721fb1b3000487bd032bfd6c8c98
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39327633"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48271551"
 ---
 # <a name="analyze-in-excel"></a>Analysoi Excelissä
 Joskus saatat haluta tarkastella ja käsitellä Power BI:ssä olevaa tietojoukkoa Excelillä. **Analysoi Excelissä** -toiminnon avulla voit tehdä niin ja käyttää pivot-taulukko-, kaavio- ja osittajaominaisuuksia Excelissä Power BI:ssä olevan tietojoukon perusteella.
@@ -26,7 +26,7 @@ Joskus saatat haluta tarkastella ja käsitellä Power BI:ssä olevaa tietojoukko
 * **Analysoi Excelissä** -toimintoa tuetaan Microsoft Excel 2010 SP1:ssä ja sitä uudemmissa versioissa.
 * Excelin pivot-taulukot eivät tue numeeristen kenttien koostamista vetämällä ja pudottamalla. Power BI -tietojoukossasi *on oltava ennalta määritetyt mittayksiköt*.
 * Joissakin organisaatioissa voi olla ryhmäkäytäntösääntöjä, jotka estävät vaadittujen **Analysoi Excelissä** -päivitysten asentamisen Exceliin. Jos et pysty asentamaan päivityksiä, ota yhteyttä järjestelmänvalvojaan.
-* **Analysoi Excelissä** edellyttää Pro-käyttöoikeutta. Saat lisätietoja toimintojen eroista maksuttoman ja Pro-käyttöoikeuden välillä artikkelista [Maksuton versio vs. Power BI Pro](service-free-vs-pro.md). 
+* **Analysoi Excelissä** edellyttää Pro-käyttöoikeutta. Saat lisätietoja toimintojen eroista käyttöoikeuksien välillä artikkelista [Power BI:n ominaisuudet käyttöoikeustyypin mukaan](service-features-license-type.md). 
 
 ## <a name="how-does-it-work"></a>Toimintaperiaate
 Kun valitset **Analysoi Excelissä** kolmen pisteen valikosta (...), joka liittyy tietojoukkoon tai raporttiin **Power BI:ssä**, Power BI luo .ODC-tiedoston ja lataa sen selaimesta tietokoneeseesi.

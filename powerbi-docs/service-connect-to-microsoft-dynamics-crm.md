@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 3d4065a6ab0c5a3c8f18350ef6c3a0444febda08
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 475f3ddf646ddc9c5f29409854f93128ce94dd51
+ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46547058"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "48908827"
 ---
 # <a name="connect-to-microsoft-dynamics-crm-with-power-bi"></a>Yhteyden muodostaminen Microsoft Dynamics CRM:ään Power BI:n avulla
 Power BI:lle kehitetyn Microsoft Dynamics CRM Onlinen avulla voit helposti käyttää ja analysoida tietojasi. Power BI luo OData-syötteen perusteella kuvaavan mallin, joka sisältää kaikki tarvittavat entiteetit ja mittaustiedot, kuten tilit, toiminnan, mahdollisuudet, tuotteen, liidit, käyttäjät ja muuta. Kun olet asentanut sovelluksen, voit tarkastella raporttinäkymää ja raportteja Power BI -palvelussa ([https://powerbi.com](https://powerbi.com)) ja Power BI -mobiilisovelluksissa. 
@@ -26,17 +26,16 @@ Tämä yhteys vaatii **Microsoft Dynamics CRM Online 2016 -version tai sitä uud
 
 ## <a name="how-to-connect"></a>Yhteyden muodostaminen
 [!INCLUDE [powerbi-service-apps-get-more-apps](./includes/powerbi-service-apps-get-more-apps.md)]
-
-1. Valitse **Microsoft Dynamics CRM Sales Manager** tai **Microsoft Dynamics CRM Service Manager** ja valitse **Yhdistä**.
+3. Valitse **Microsoft Dynamics CRM Sales Manager** tai **Microsoft Dynamics CRM Service Manager** ja valitse **Yhdistä**.
    
    ![](media/service-connect-to-microsoft-dynamics-crm/connect.png)
-2. Anna tiliisi liitetty palvelun URL-osoite.  Tämä löytyy lomakkeesta `https://company.crm.dynamics.com`; katso lisätiedot [alta](#FindingParams).
+4. Anna tiliisi liitetty palvelun URL-osoite.  Tämä löytyy lomakkeesta `https://company.crm.dynamics.com`; katso lisätiedot [alta](#FindingParams).
    
    ![](media/service-connect-to-microsoft-dynamics-crm/params.png)
-3. Anna tunnistetietosi, kun niitä pyydetään (tämän vaiheen voi ohittaa, jos olet jo kirjautunut sisään selaimellasi). Kirjoita todentamismenetelmäksi **oAuth2** ja valitse **Kirjaudu sisään**:
+5. Anna tunnistetietosi, kun niitä pyydetään (tämän vaiheen voi ohittaa, jos olet jo kirjautunut sisään selaimellasi). Kirjoita todentamismenetelmäksi **oAuth2** ja valitse **Kirjaudu sisään**:
    
    ![](media/service-connect-to-microsoft-dynamics-crm/creds.png)
-4. Kun yhteys on muodostettu, myyntipäällikölle tai palvelupäällikölle mukautetun raporttinäkymän, johon on lisätty omia tietojasi:
+6. Kun yhteys on muodostettu, myyntipäällikölle tai palvelupäällikölle mukautetun raporttinäkymän, johon on lisätty omia tietojasi:
    
    ![](media/service-connect-to-microsoft-dynamics-crm/dashboard.png)
 
@@ -48,7 +47,7 @@ Tämä yhteys vaatii **Microsoft Dynamics CRM Online 2016 -version tai sitä uud
 ## <a name="whats-included"></a>Paketin sisältö
 Seuraavissa osioissa on [Myyntipäällikön](#Sales) ja [Palvelupäällikön](#Service) persoonille sisällytetyt tiedot.
 
-Huomaa, että Dynamics CRM Onlinen käyttäjälle määritetty käyttöoikeusrooli rajoittaa näytettäviä tietoja.
+Dynamics CRM Onlinen käyttäjälle määritetty käyttöoikeusrooli rajoittaa näytettäviä tietoja.
 
 Raporttinäkymä ja raportit on suunniteltu antamaan toiminnallisia raportteja lyhyen aikavälin tiedoista, joiden painopiste on työryhmässä tai ryhmässä. Yksittäisellä kyselyllä voi noutaa enintään 100 000 tietuetta Dynamics CRM Onlinesta. Jos tämä raja ylittyy organisaation tietojen suuren määrän vuoksi, valmistelu epäonnistuu, kun tietojen päivittäminen lopetetaan Dynamics CRM Onlinessa. Jos tilisi on liian suuri, harkitse Power BI Desktopiin yhdistämistä mukautetun ratkaisun kautta.
 
@@ -154,7 +153,7 @@ Jos sinulla ei ole CRM Online 2016:ta tai sitä uudempaa versiota, et voi muodos
 Jos saat virheilmoituksen ”Tietojen päivittäminen epäonnistui, koska kysely on ylittänyt sallitun 100 000 tietueen enimmäismäärän”, yritä muodostaa yhteys suoraan Power BI Desktopista tai käytä CRM-ratkaisumallia.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
-* [Mitä ovat Power BI:n sovellukset?](consumer/end-user-apps.md)
+* [Mitä ovat Power BI:n sovellukset?](service-create-distribute-apps.md)
 * [Tietojen noutaminen Power BI:ssä](service-get-data.md)
 * Onko sinulla muuta kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)
 

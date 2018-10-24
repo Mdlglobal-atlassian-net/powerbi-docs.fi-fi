@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/24/2018
+ms.date: 10/15/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: f07b5174d031c79f4d8f232c49836b54d95621f1
-ms.sourcegitcommit: 7fb0b68203877ff01f29724f0d1761d023075445
+ms.openlocfilehash: 525a7e45a804d9f82f4d06cf8618d790e140699f
+ms.sourcegitcommit: b8461c1876bfe47bf71c87c7820266993f82c0d3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/26/2018
-ms.locfileid: "39256028"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49336871"
 ---
 # <a name="accessibility-in-power-bi-desktop-reports"></a>Power BI Desktop -raporttien helppokäyttöisyys
 Power BI:ssa on ominaisuuksia, joiden avulla toimintarajoitteisten henkilöiden on helppo käyttää ja käsitellä Power BI -raportteja. Näitä ominaisuuksia ovat esimerkiksi mahdollisuus käyttää raporttia näppäimistön tai näytönlukuohjelman avulla, kohdistaminen sivun eri objekteihin sarkaimella sekä ymmärtäväinen merkkien käyttö visualisoinneissa.
@@ -61,6 +61,8 @@ Näiden helppokäyttötoimintojen lisäysten avulla Power BI -raportteja voidaan
 ## <a name="tips-for-creating-accessible-reports"></a>Vihjeitä helppokäyttöisten raporttien luomiseen
 Seuraavien vihjeiden avulla voit luoda entistä helppokäyttöisempiä **Power BI Desktop** -raportteja.
 
+### <a name="general-tips-for-accessible-reports"></a>Yleisiä vinkkejä helppokäyttöisten raporttien luomiseen
+
 * Jos käytössä on **Rivi-**, **Alue-**, **Yhdistelmä-**, **Pistekaavio-** ja/tai **Kupla**-tyyppisiä visualisointeja, ota merkinnät käyttöön ja käytä kullakin rivillä eri *merkintämuotoa*.
   
   * Voit ottaa *Merkinnät* käyttöön valitsemalla **Muoto**-osion **Visualisoinnit**-ruudussa, laajentamalla **Muodot**-osion ja vierittämällä sitten alaspäin **Merkit**-kohtaan. Valitse sen asetukseksi *Käytössä*.
@@ -80,6 +82,13 @@ Seuraavien vihjeiden avulla voit luoda entistä helppokäyttöisempiä **Power B
 * Sisällytä kaikkiin visualisointeihin otsikko, akselinimet ja arvopisteiden nimet.
 * Käytä kuvaavia otsikoita kaikille raportin sivuille.
 * Vältä koristeellisia muotoja tai kuvia raportissasi mahdollisuuksien mukaan, sillä ne sisällytetään raportin välilehtijärjestykseen. Jos raporttiin tarvitsee sisällyttää koristeellisia objekteja, päivitä objektin vaihtoehtoinen teksti, kertoaksesi näytönlukijan käyttäjille, että kyseessä on koriste.
+
+### <a name="arranging-items-in-field-buckets"></a>Kenttä-säilöjen kohteiden järjestäminen
+**Power BI Desktopin** lokakuun 2018 julkaisusta lähtien **Kentät**-lähteessä voi siirtyä näppäimistöä käyttämällä ja näytönlukuohjelmia tuetaan. 
+
+Jotta raporttien luominen näytönlukuohjelman avulla olisi helpompaa, käytettävissä on pikavalikko lähteen kenttien siirtämiseksi ylös- tai alaspäin **Kentät**-luettelossa tai kenttien siirtämiseksi muihin lähteisiin, kuten **Selite**tai **Arvo**.
+
+![Kentät-lähteen pikavalikon avulla voit siirtää kenttiä ylöspäin, alaspäin tai toiselle alueelle](media/desktop-accessibility/accessibility_09.png)
 
 ## <a name="high-contrast-support-for-reports"></a>Suuren kontrastin tuki raporteille
 

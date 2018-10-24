@@ -1,5 +1,5 @@
 ---
-title: Tuo tietoja verkkosivulta esimerkin avulla Power BI Desktopissa (esikatselu)
+title: Tuo tietoja verkkosivulta esimerkin avulla Power BI Desktopissa
 description: Tuo tietoja verkkosivulta antamalla esimerkki siitä mitä haluat tuoda
 author: davidiseminger
 manager: kfile
@@ -7,17 +7,17 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/07/2018
+ms.date: 10/15/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 55c1a70e054b6bb6ff06c7fe6f83b58d8b1f26f3
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: f90f2ea4737fc5c98df4d171f8e1e65c2704607d
+ms.sourcegitcommit: b8461c1876bfe47bf71c87c7820266993f82c0d3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34290978"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49336802"
 ---
-# <a name="get-data-from-a-web-page-by-providing-an-example-preview"></a>Tuo tietoja verkkosivulta antamalla esimerkki (esikatselu)
+# <a name="get-data-from-a-web-page-by-providing-an-example"></a>Tuo tietoja verkkosivulta antamalla esimerkki
 
 Tietojen tuominen verkkosivulta antaa käyttäjien tuoda tietoja helposti verkkosivuilta **Power BI Desktopiin**. Usein kuitenkin verkkosivujen tiedot eivät ole selkeissä taulukoissa, jotka on helppo tuoda, joten tietojen tuominen tällaisilta sivuilta saattaa olla haastavaa, vaikka tiedot olisivatkin jäsenneltyjä ja yhtenäisiä. 
 
@@ -26,13 +26,6 @@ Ongelmaan on ratkaisu. Toiminnon **Tuo esimerkin mukaisia tietoja verkosta** avu
 ![Tuo esimerkin mukaisia tietoja](media/desktop-connect-to-web-by-example/web-by-example_01.png)
 
 
-## <a name="enabling-the-preview-feature-get-data-from-web-by-example"></a>Tuo esimerkin mukaisia tietoja -toiminnon esikatseluominaisuuden ottaminen käyttöön
-
-**Tuo esimerkin mukaisia tietoja verkosta**-visualisointi on esikatseluvaiheessa. Sen täytyy olla käytössä **Power BI Desktopissa**. Jos haluat ottaa sen käyttöön, valitse **Tiedosto > Asetukset ja vaihtoehdot > Asetukset > Esiversio-ominaisuudet** ja valitse sitten kohta **Uusi kokemus verkosta**. Sinun täytyy käynnistää Power BI Desktop uudelleen tämän jälkeen.
-
-![ota esikatseluominaisuus käyttöön](media/desktop-connect-to-web-by-example/web-by-example_02.png)
-
-Kun esikatseluominaisuus on otettu käyttöön, voit aloittaa sen käyttämisen. 
 
 ## <a name="using-get-data-from-web-by-example"></a>Toiminnon Tuo esimerkin mukaisia tietoja käyttäminen
 

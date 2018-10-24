@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-admin
 ms.topic: conceptual
-ms.date: 09/27/2018
+ms.date: 10/15/2018
 ms.author: davidi
 LocalizationGroup: Administration
-ms.openlocfilehash: 072f548c3725c4133bb548a72fc58679e74f5fc7
-ms.sourcegitcommit: ce8332a71d4d205a1f005b703da4a390d79c98b6
+ms.openlocfilehash: 6055a9c5e41f1745b088df93587d701393c0d495
+ms.sourcegitcommit: b8461c1876bfe47bf71c87c7820266993f82c0d3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "47417092"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49336733"
 ---
 # <a name="power-bi-security"></a>Power BI:n suojaus
 Saat yksityiskohtaisen kuvauksen Power BI:n suojauksesta [lataamalla Power BI:n suojauksen teknisen raportin](http://go.microsoft.com/fwlink/?LinkId=829185):
@@ -58,4 +58,14 @@ Lisätietoja on [Microsoft Trust Centerissa](https://www.microsoft.com/trustcent
 Kuten edellä kuvattiin, paikalliset Active Directory -palvelimet käyttävät käyttäjän Power BI -kirjautumista kirjautumistunnuksille suunniteltuun UPN:ään yhdistämiseen. **Tärkeää:** Huomaa, että käyttäjät ovat vastuussa jakamistaan tiedoista: jos käyttäjä muodostaa yhteyden tietoihin kirjautumistunnuksillaan ja jakaa sitten tietoihin perustuvan raportin (tai koontinäytön tai tietojoukon), käyttäjiä, joille koontinäyttö on jaettu, ei ole todennettu alkuperäiseen tietolähteeseen, ja heille myönnetään raportin käyttöoikeudet.
 
 Poikkeuksen muodostavat yhteydet **SQL Server Analysis Services** -palveluun **paikallisen yhdyskäytävän kautta**; koontinäytöt tallennetaan Power BI:n välimuistiin, mutta pohjalla olevien raporttien tai tietojoukkojen käyttö käynnistää todennuksen käyttäjälle, joka yrittää käyttää raporttia tai tietojoukkoa. Käyttöoikeus myönnetään vain, jos käyttäjällä on riittävät valtuudet. Lisätietoja on ohjeaiheessa [Paikallinen tietoyhdyskäytävä perinpohjaisesti](service-gateway-onprem-indepth.md).
+
+## <a name="enforcing-tls-version-usage"></a>TLS-salauksen käytön pakottaminen
+
+Verkonvalvojat ja IT-järjestelmänvalvojat voivat pakottaa nykyisen TLS-salauksen (Transport Layer Security) käytön verkkonsa suojatussa tietoliikenteessä. Windows tukee TLS-salausta Microsoft Schannel -palvelussa [TLS Schannel SSP -artikkelissa](https://docs.microsoft.com/windows/desktop/SecAuthN/protocols-in-tls-ssl--schannel-ssp-) kuvatulla tavalla.
+
+Järjestelmänvalvoja voi pakottaa käytön rekisteriavainten avulla. Lisätietoja pakottamisesta on [SSL-protokollien hallinta AD FS:ssä -artikkelissa](https://docs.microsoft.com/windows-server/identity/ad-fs/operations/manage-ssl-protocols-in-ad-fs). 
+
+**Power BI Desktop** noudattaa artikkeleissa kuvattuja rekisteriavainasetuksia ja luo vain kyseisiin rekisteriasetuksiin perustuvia, hyväksyttyä TLS-salausta käyttäviä yhteyksiä.
+
+Katso lisätietoja rekisteriavainten määrittämisestä [TLS-rekisteriasetukset](https://docs.microsoft.com/windows-server/security/tls/tls-registry-settings)-artikkelista.
 

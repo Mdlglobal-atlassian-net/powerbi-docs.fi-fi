@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: f4eb0ec93057f309720fc4fef33a55d924881383
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: ef59d5f42ba913e4ecad79116dea635744534198
+ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46544620"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "48908574"
 ---
 # <a name="connect-to-adobe-analytics-with-power-bi"></a>Adobe Analyticsin yhdistäminen Power BI:hin
 Yhteyden muodostaminen Adobe Analyticsiin Power BI:n kautta alkaa muodostamalla yhteys Adobe Analytics Marketing Cloud -tiliin. Saat sovelluksen, jossa on Power BI:n koontinäyttö ja joukko Power BI -raportteja, jotka tarjoavat merkityksellisiä tietoja sivuston liikenne- ja käyttäjädimensioista. Tiedot päivitetään automaattisesti kerran päivässä. Voit käsitellä koontinäyttöä ja raportteja, mutta et voi tallentaa muutoksia.
@@ -25,30 +25,30 @@ Muodosta yhteys [Adobe Analyticsiin](https://app.powerbi.com/getdata/services/ad
 ## <a name="how-to-connect"></a>Yhteyden muodostaminen
 [!INCLUDE [powerbi-service-apps-get-more-apps](./includes/powerbi-service-apps-get-more-apps.md)]
 
-1. Valitse **Adobe Analytics** \> **Nouda**.
+3. Valitse **Adobe Analytics** \> **Nouda**.
    
    ![](media/service-connect-to-adobe-analytics/adobe.png)
-2. Power BI muodostaa yhteyden tiettyyn Adobe Analytics -yritykseen ja Raportin ohjelmistopaketin tunnukseen (ei Raportin ohjelmistopaketin nimeen). Lisätietoja [näiden parametrien löytämisestä](#FindingParams) on alla.
+4. Power BI muodostaa yhteyden tiettyyn Adobe Analytics -yritykseen ja Raportin ohjelmistopaketin tunnukseen (ei Raportin ohjelmistopaketin nimeen). Lisätietoja [näiden parametrien löytämisestä](#FindingParams) on alla.
    
    ![](media/service-connect-to-adobe-analytics/parameters.png)
-3. Valitse **Todennusmenetelmäksi** **oAuth2** \> **Kirjaudu sisään**. Anna pyydettäessä Adobe Analytics -tunnistetietosi. 
+5. Valitse **Todennusmenetelmäksi** **oAuth2** \> **Kirjaudu sisään**. Anna pyydettäessä Adobe Analytics -tunnistetietosi. 
    
     ![](media/service-connect-to-adobe-analytics/creds.png)
    
     ![](media/service-connect-to-adobe-analytics/adobe_signin.png)
-4. Valitse **Hyväksy**, jotta Power BI voi käyttää Adobe Analytics -tietojasi.
+6. Valitse **Hyväksy**, jotta Power BI voi käyttää Adobe Analytics -tietojasi.
    
    ![](media/service-connect-to-adobe-analytics/adobe_authorize.png)
-5. Hyväksyntäsi jälkeen tuontiprosessi alkaa automaattisesti. 
+7. Hyväksyntäsi jälkeen tuontiprosessi alkaa automaattisesti. 
 
 ## <a name="view-the-adobe-analytics-dashboard-and-reports"></a>Adobe Analytics -koontinäytön ja -raporttien tarkasteleminen
 [!INCLUDE [powerbi-service-apps-open-app](./includes/powerbi-service-apps-open-app.md)]
 
-      ![Adobe Analytics dashboard](media/service-connect-to-adobe-analytics/dashboard.png)
+   ![Adobe Analytics -koontinäyttö](media/service-connect-to-adobe-analytics/dashboard.png)
 
 [!INCLUDE [powerbi-service-apps-open-app](./includes/powerbi-service-apps-what-now.md)]
 
-## <a name="whats-included"></a>Sisältö
+## <a name="whats-included"></a>Paketin sisältö
 Power BI käyttää Adobe Analyticsin raportin API:a raporttien määrittämiseen ja suorittamiseen seuraavissa taulukoissa:
 
 | **Taulukon nimi** | **Sarakkeen tiedot** |
@@ -82,7 +82,7 @@ Yritys-arvo löytyy tilisi oikeasta yläkulmasta, kun olet kirjautunut sisään.
 
 **Raportointipaketin tunnus**
 
-Ohjelmistopaketin tunnus luodaan, kun Raportointipaketti luodaan. Voit ottamalla yhteyttä järjestelmänvalvojaasi tunnusarvon tunnistamiseksi. Huomaa, että tämä ei ole Raportointipaketin nimi.
+Ohjelmistopaketin tunnus luodaan, kun Raportointipaketti luodaan. Voit ottamalla yhteyttä järjestelmänvalvojaasi tunnusarvon tunnistamiseksi. Tämä ei ole Raportointipaketin nimi.
 
 Adoben [dokumentaatiosta](https://marketing.adobe.com/resources/help/en_US/reference/new_report_suite.html):
 
@@ -94,7 +94,7 @@ Jos näet tunnistetietojen antamisen jälkeen virheen, joka ilmoittaa, että sin
 Jos olet onnistuneesti antanut tunnistetiedot näytöllä ennen kuin virhe ilmenee, on mahdollista, että raporttien valmistuminen kestää liian kauan. Yleinen virhe on muodossa *”Tietojen saaminen Adobe Analytics -raportista epäonnistui. Sisältöön sisältyi &quot;suosittelija, sivu&quot;, arvioitu kesto oli xx sekuntia ”*. Lue lisätietoja ”Sisältö”-osasta ja vertaa Adobe-esiintymän kokoa. Valitettavasti tämän aikakatkaisun kiertämiseksi ei ole vielä keinoa. Harkitsemme kuitenkin uusia päivityksiä suurempien tahojen tukemiseksi, joten anna palautetta Power BI -työryhmälle osoitteessa https://ideas.powerbi.com
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
-* [Mitä ovat Power BI:n sovellukset?](consumer/end-user-apps.md)
+* [Mitä ovat Power BI:n sovellukset?](service-create-distribute-apps.md)
 * [Tietojen noutaminen Power BI:ssä](service-get-data.md)
 * Onko sinulla muuta kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)
 

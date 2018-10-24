@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 453b0f5852fefb1008b8013a0c42af4cc1d42f32
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 3f8a5075290620d9d1ed1829008002ff71d25c82
+ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46547633"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "48908155"
 ---
 # <a name="intro-to-organizational-content-packs-in-power-bi"></a>Power BI:n organisaation sisältöpakettien esittely
 > [!NOTE]
@@ -33,7 +33,7 @@ AppSourcessa voit selata tai hakea sisältöpaketteja, jotka on julkaistu koko o
 Koontinäytöt, raportit ja Excel-työkirjat ovat vain luku -tilassa, mutta voit kopioida ja käyttää koontinäyttöjä ja raportteja aloituskohtana ja luoda niistä oma mukautettu sisältöpaketti.
 
 > [!NOTE]
-> Organisaation sisältöpaketit ovat käytettävissä vain, jos sinulla ja työtovereillasi on käytössä [Power BI Pro](service-free-vs-pro.md).
+> Organisaation sisältöpaketit ovat käytettävissä vain, jos sinulla ja työtovereillasi on käytössä [Power BI Pro -käyttöoikeus](service-features-license-type.md).
 > 
 > 
 
@@ -52,7 +52,7 @@ Elinkaari näyttää suunnilleen tältä:
 1. Käyttäjä luo Power BI Prossa sisältöpaketin ja julkaisee sen markkinoinnin jakeluryhmälle. Päivitysasetukset periytyvät tietojoukon kanssa, ja vain käyttäjä (sisältöpaketin luoja) voi muuttaa niitä.
    
    > [!NOTE]
-   > Jos käyttäjä luo sisältöpaketin [Power BI -sovelluksen työtilassa](consumer/end-user-create-apps.md), työtilan muut jäsenet voivat saada omistajuuden, jos käyttäjä poistuu työtilasta.
+   > Jos käyttäjä luo sisältöpaketin [Power BI -sovelluksen työtilassa](service-create-distribute-apps.md), työtilan muut jäsenet voivat saada omistajuuden, jos käyttäjä poistuu työtilasta.
    > 
    > 
 2. Käyttäjä lähettää jakeluryhmälle sähköpostiviestin, jossa hän kertoo uudesta sisältöpaketista.
@@ -76,7 +76,7 @@ Kaikilla jakeluryhmän jäsenillä on samat tietojen käyttöoikeudet kuin sisä
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 * [Organisaation sisältöpaketin luominen ja julkaiseminen](service-organizational-content-pack-create-and-publish.md)
-* [Sovelluksen luominen ja jakaminen Power BI:ssä](consumer/end-user-create-apps.md) 
+* [Sovelluksen luominen ja jakaminen Power BI:ssä](service-create-distribute-apps.md) 
 * [Power BI:n peruskäsitteet](consumer/end-user-basic-concepts.md)
 * Onko sinulla muuta kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
 

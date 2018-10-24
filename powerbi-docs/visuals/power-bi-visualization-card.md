@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 09/26/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 865e19f368b8e1915d0262ae6356e70a8dbc2781
-ms.sourcegitcommit: ce8332a71d4d205a1f005b703da4a390d79c98b6
+ms.openlocfilehash: 9654e2838b1b62dcc856e2870b3fcc1e5301641c
+ms.sourcegitcommit: 07beb155ec0ea1cdcc741085251ed06d7bc8581c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "47416892"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48874571"
 ---
 # <a name="card-visualizations"></a>Kortin visualisoinnit
 Joskus yksittäinen luku on tärkein seikka, jota haluat seurata Power BI-raporttinäytöllä tai raportissa, kuten kokonaismyynti, markkinaosuus vuositasolla tai kokonaismahdollisuudet. Tämä visualisointi on nimeltään *Kortti*. Samoin kuin lähes kaikki alkuperäiset Power BI-visualisoinnit, kortit voidaan luoda käyttäen raporttieditoria tai Q&A:ta.
@@ -58,7 +58,7 @@ Q&A-kysymysruutu on helpoin tapa tehdä kortti. Q&A-kysymysruutu on käytettävi
    ![](media/power-bi-visualization-card/power-bi-q-and-a-box.png)
 
 > [!TIP]
-> Power BI -palvelun raportissa [muokkausnäkymässä](../service-reading-view-and-editing-view.md) valitaan **Esitä kysymys** yläreunan valikkorivistä. Etsi Power BI Desktop -raportista tilaa ja avaa kysymysruutu kaksoisnapsauttamalla sitä.
+> Power BI -palvelun raportissa muokkausnäkymässä valitaan **Esitä kysymys** yläreunan valikkorivistä. Etsi Power BI Desktop -raportista tilaa ja avaa kysymysruutu kaksoisnapsauttamalla sitä.
 
 3. Kirjoita kysymysruutuun esimerkiksi ”mahdollisuuksien määrä”.
 

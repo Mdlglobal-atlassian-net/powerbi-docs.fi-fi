@@ -10,15 +10,15 @@ ms.topic: conceptual
 ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 516d78bd6158c714d5f4418771c5e8cb219ce512
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 25e7fe3e47cee2aed7781fff2a20621e3bd860ed
+ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46547564"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "48908804"
 ---
 # <a name="manage-your-app-workspace-in-power-bi-and-office-365"></a>Sovellustyötilan hallinta Power BI:ssä ja Office 365:ssä
-[Power BI:ssä](consumer/end-user-apps.md) tai Office 365:ssä olevan sovellustyötilan luojana tai järjestelmänvalvojana voit hallita työtilan tiettyjä ominaisuuksia Power BI:ssä. Muita ominaisuuksia hallitaan Office 365:ssä. 
+[Power BI:ssä](service-create-distribute-apps.md) tai Office 365:ssä olevan sovellustyötilan luojana tai järjestelmänvalvojana voit hallita työtilan tiettyjä ominaisuuksia Power BI:ssä. Muita ominaisuuksia hallitaan Office 365:ssä. 
 
 > [!NOTE]
 > Uusi työtilakokemuksen esiversio muuttaa Power BI -työtilojen ja Office 365:n ryhmien välistä suhdetta. Et luo automaattisesti Office 365 -ryhmää aina, kun luot uuden työtilan. Lisätietoja [uusien työtilojen luomisesta (esikatselu)](service-create-the-new-workspaces.md)
@@ -36,7 +36,7 @@ ms.locfileid: "46547564"
 * Tarkastele ryhmän sähköpostiosoitetta.
 * Poista ryhmä.
 
-Tarvitset [Power BI Pro](service-free-vs-pro.md) -käyttöoikeuden, jotta voit olla sovellustyötilan järjestelmänvalvoja tai jäsen. Sovelluksen käyttäjät tarvitsevat niin ikään Power BI Pro -käyttöoikeuden paitsi siinä tapauksessa, että sovellustyötilasi on Power BI Premium -ominaisuus. Lisätietoja on artikkelissa [Mikä on Power BI Premium?](service-premium.md)
+Tarvitset [Power BI Pro -käyttöoikeuden](service-features-license-type.md), jotta voit olla sovellustyötilan järjestelmänvalvoja tai jäsen. Sovelluksen käyttäjät tarvitsevat niin ikään Power BI Pro -käyttöoikeuden paitsi siinä tapauksessa, että sovellustyötilasi on Power BI Premium -ominaisuus. Lisätietoja on artikkelissa [Mikä on Power BI Premium?](service-premium.md)
 
 ## <a name="edit-your-app-workspace-in-power-bi"></a>Sovellustyötilan muokkaaminen Power BI:ssä
 1. Valitse Power BI -palvelun **Työtilat**-kohdan vieressä oleva nuoli. Valitse pistekuvake (**...** ) työtilan nimen vieressä ja valitse **Muokkaa työtilaa**. 
@@ -76,7 +76,6 @@ Kun jakelet sovellustasi sovellustyötilasta, tässä lisäämäsi kuva näkyy s
 3. Valitse **Tallenna** tai **Hylkää**.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
-* [Mitä ovat Power BI:n sovellukset?](consumer/end-user-apps.md)
-* [Raporttinäkymiä ja raportteja sisältävien sovellusten julkaiseminen Power BI:ssä](consumer/end-user-create-apps.md)
+* [Raporttinäkymiä ja raportteja sisältävien sovellusten julkaiseminen Power BI:ssä](service-create-distribute-apps.md)
 * Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
 

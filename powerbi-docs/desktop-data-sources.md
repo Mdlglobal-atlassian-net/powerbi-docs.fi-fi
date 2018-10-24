@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 09/10/2018
+ms.date: 10/15/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 05a644c300a0879b2f5eedd95cdddc537cc6fd0b
-ms.sourcegitcommit: c51461690e8faa121a1325957ca79b7a3975e8b8
+ms.openlocfilehash: a5a4f6532fe127fe01b699ee9d9e89693fdb369e
+ms.sourcegitcommit: b8461c1876bfe47bf71c87c7820266993f82c0d3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44512060"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49336894"
 ---
 # <a name="data-sources-in-power-bi-desktop"></a>Power BI Desktopin tietolähteet
 Power BI Desktopin avulla voit yhdistää tietoja monista eri lähteistä. Täydellinen luettelo käytettävissä olevista tietolähteistä on tämän sivun alareunassa.
@@ -75,13 +75,15 @@ Seuraavassa kuvassa näkyy **Tiedosto**-luokan **Nouda tiedot** -ikkuna.
 * Teradata-tietokanta
 * SAP HANA -tietokanta
 * SAP Business Warehouse -sovelluspalvelin
-* SAP Business Warehouse -viestipalvelin (beeta)
+* SAP Business Warehouse -viestipalvelin
 * Amazon Redshift
 * Impala
 * Google BigQuery
 * Snowflake
+* Dremio (beeta)
 * Exasol (beeta)
 * Jethro (beeta)
+* Kyligence Enterprise (beeta)
 
 > [!NOTE]
 > Jotkin tietokannan yhdistimet edellyttävät, että otat ne käyttöön valitsemalla **Tiedosto > Asetukset ja vaihtoehdot > Asetukset** ja valitsemalla **Esikatselutoiminnot** ja ottamalla yhdistin käyttöön. Jos et näe joitakin edellä mainituista yhdistimistä ja haluat käyttää niitä, tarkista **Esikatselutoiminnot**-asetukset. Huomaa myös, että tietolähteen, jolla on merkintä *beeta* tai *esikatselu*, tuki ja toiminnallisuus ovat rajoitettua, eikä sitä tulisi käyttää tuotantoympäristössä.
@@ -112,7 +114,7 @@ Seuraavassa kuvassa näkyy **Power BI** -luokan **Nouda tiedot** -ikkuna.
 * Azure Data Lake Store
 * Azure HDInsight (HDFS)
 * Azure HDInsight Spark
-* HDInsight Interactive Query (beeta)
+* HDInsight Interactive Query
 * Azure KustoDB (beeta)
 
 Seuraavassa kuvassa näkyy **Azure**-luokan **Nouda tiedot** -ikkuna.
@@ -124,10 +126,10 @@ Seuraavassa kuvassa näkyy **Azure**-luokan **Nouda tiedot** -ikkuna.
 * SharePoint Online -luettelo
 * Microsoft Exchange Online
 * Dynamics 365 (online)
-* Dynamics NAV (beeta)
+* Dynamics NAV
 * Dynamics 365 Business Central
+* Dynamics 365 Business Central (paikallinen)
 * Common Data Service for Apps (beeta)
-* Common Data Service (beeta)
 * Microsoft Azure Consumption Insights (beeta)
 * Visual Studio Team Services (beeta)
 * Salesforce-objektit
@@ -163,7 +165,7 @@ Seuraavassa kuvassa näkyy **Online-palvelut**-luokan **Nouda tiedot** -ikkuna.
 
 **Muut**-luokka tarjoaa seuraavat tietoyhteydet:
 
-* Vertica (beeta)
+* Vertica
 * Verkko
 * SharePoint List
 * OData-syöte
@@ -175,6 +177,8 @@ Seuraavassa kuvassa näkyy **Online-palvelut**-luokan **Nouda tiedot** -ikkuna.
 * Python-komentosarja
 * ODBC
 * OLE DB
+* Denado
+* Paxata (beeta)
 * Tyhjä kysely
 
 Seuraavassa kuvassa näkyy **Muut**-luokan **Nouda tiedot** -ikkuna.

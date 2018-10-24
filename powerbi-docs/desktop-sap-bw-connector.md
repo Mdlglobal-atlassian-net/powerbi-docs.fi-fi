@@ -7,22 +7,22 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/26/2018
+ms.date: 10/15/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 5db9b801fad3145cc864799062fe886c99da53aa
-ms.sourcegitcommit: df7a58dae14ef311516c9b3098f87742786f0479
+ms.openlocfilehash: 73be85644fd320bd44372a0df6c844705c3cf602
+ms.sourcegitcommit: b8461c1876bfe47bf71c87c7820266993f82c0d3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39280198"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49336917"
 ---
 # <a name="use-the-sap-bw-connector-in-power-bi-desktop"></a>SAP BW -yhdistimen käyttö Power BI Desktopissa
 Voit nyt käyttää **SAP Business Warehouse (BW)** -tietoja Power BI Desktopilla.
 
 Tietoja siitä, miten SAP-asiakkaat voivat hyötyä yhdistämällä Power BI:n SAP Business Warehouse (BW) -järjestelmäänsä, saat [Power BI ja SAP BW -teknisestä raportista](https://aka.ms/powerbiandsapbw). Saat lisätietoja DirectQueryn käytössä SAP BW:n kanssa artikkelista [DirectQuery ja SAP Business Warehouse (BW)](desktop-directquery-sap-bw.md).
 
-**Power BI Desktopin** 2018 kesäkuun julkaisusta lähtien voit käyttää SAP BW -yhdistimen toteutusta, joka sisältää merkittäviä parannuksia sekä suorituskykyyn että ominaisuuksiin. Tämän SAP BW -yhdistimen päivitetyn version kehittäjä on Microsoft ja sitä kutsutaan nimellä**toteutus 2.0**. Voit valita joko **SAP BW -yhdistimen** version 1 (v1) tai **toteutus 2.0 SAP-yhdistimen**. Seuraavassa kuvataan kunkin version asennus. Yhdistäessäsi Power BI Desktopista SAP BW:hen, voit valita kumman tahansa yhdistimen.
+**Power BI Desktopin** kesäkuun 2018 julkaisusta lähtien voit käyttää SAP BW -yhdistimen toteutusta, joka sisältää merkittäviä parannuksia sekä suorituskykyyn että ominaisuuksiin (yleisesti käytettävissä lokakuun 2018 julkaisusta lähtien). Tämän SAP BW -yhdistimen päivitetyn version kehittäjä on Microsoft ja sitä kutsutaan nimellä**toteutus 2.0**. Voit valita joko **SAP BW -yhdistimen** version 1 (v1) tai **toteutus 2.0 SAP-yhdistimen**. Seuraavassa kuvataan kunkin version asennus. Yhdistäessäsi Power BI Desktopista SAP BW:hen, voit valita kumman tahansa yhdistimen.
 
 Microsoft suosittelee **toteutus 2.0 SAP-yhdistimen** valitsemista aina kun se on mahdollista.
 

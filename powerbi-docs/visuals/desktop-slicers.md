@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 07/27/2018
 ms.author: mihart
 LocalizationGroup: Create reports
-ms.openlocfilehash: 161ea8f20db36c129787e84242ea002980d0f8dd
-ms.sourcegitcommit: 70192daf070ede3382ac13f6001e0c8b5fb8d934
+ms.openlocfilehash: df4afe91de955eabfba6eeea9022cc5f9475cc33
+ms.sourcegitcommit: b8461c1876bfe47bf71c87c7820266993f82c0d3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "46565862"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49336848"
 ---
 # <a name="using-slicers-power-bi-desktop"></a>Osittajien käyttäminen Power BI Desktopissa
 
@@ -65,6 +65,12 @@ Voit myös käyttää **ryhmänimeä** osittajien kokoelmaan **Synkronoi osittaj
 Tämän ominaisuuden avulla voit luoda synkronoitavan mukautettujen osittajien ryhmän. Voit vaihtaa oletusnimen haluamaksesi nimeksi. 
 
 Ryhmänimen avulla voit käyttää osittajia joustavasti. Voit luoda erillisiä ryhmiä, joiden avulla samaa kenttää käyttävät osittajat synkronoidaan tai joiden avulla voit sijoittaa eri kenttiä käyttävät osittajat samaan ryhmään. 
+
+## <a name="how-filtering-affects-selection-in-slicers"></a>Suodatuksen vaikutus osittajien valintaan
+
+Jos teet valinnan osittajassa ja käytät sitten suodatinta, joka tavallisesti poistaisi valitun kohteen, se pysyy osittajan kohteiden luettelon alareunassa. Jos suodatin poistetaan, valinta säilyy osittajassa. Huomaat, että jos poistat kohteen valinnan osittajasta, se poistuu luettelosta.
+
+![säilytetty valinta osittajissa](./media/desktop-slicers/retained-selection-in-slicers.gif)
 
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
