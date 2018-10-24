@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 07/19/2018
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: ce37c13d313a44af5f082c0db2a72dbf4d53aca5
-ms.sourcegitcommit: 07beb155ec0ea1cdcc741085251ed06d7bc8581c
+ms.openlocfilehash: 8a95dae913c2069fa3768d66c55d2b1358640000
+ms.sourcegitcommit: a764e4b9d06b50d9b6173d0fbb7555e3babe6351
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48875008"
+ms.lasthandoff: 10/22/2018
+ms.locfileid: "49641915"
 ---
 # <a name="power-bi---basic-concepts-for-power-bi-service"></a>Power BI – Power BI -palvelun peruskäsitteet
 
@@ -82,7 +82,7 @@ Jos olet [osa ***sovellustyötilaa***](service-collaborate-power-bi-workspace.md
 Tietojoukkoja voi päivittää, nimetä uudelleen, tarkastella ja poistaa. Tietojoukon avulla voit luoda raportin alusta alkaen tai [Nopeat merkitykselliset tiedot](service-insights.md) -toiminnolla.  Valitsemalla **Näytä aiheeseen liittyvät** voit nähdä, mitkä raportit ja koontinäytöt käyttävät jo tietojoukkoa. Voit tutustua tietojoukkoon valitsemalla sen. Silloin käytännössä avaat tietojoukon raporttieditorissa, jossa voit aloittaa tietoihin pureutumisen ja visualisointien luomisen. Siirrytään siis seuraavaan aiheeseen eli raportteihin.
 
 ### <a name="dig-deeper"></a>Pureudu syvemmälle
-* [Power BI Premium – mikä se on?](service-premium.md)
+* [Mikä on Power BI Premium?](service-premium.md)
 * [Tietojen noutaminen Power BI:hin](service-get-data.md)
 * [Mallitietojoukkoja Power BI:lle](sample-datasets.md)
 

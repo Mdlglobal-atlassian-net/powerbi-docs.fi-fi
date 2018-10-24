@@ -10,12 +10,12 @@ ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 10/02/2018
 ms.author: mihart
-ms.openlocfilehash: e4173811db0de0dc95e0bd324517a5750165983e
-ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
+ms.openlocfilehash: 666938d8d852793b68bb278147c61f077c839ed2
+ms.sourcegitcommit: 1a79e48ac820c28c5d0fd05399f49ed22fc74ed7
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "48908643"
+ms.lasthandoff: 10/19/2018
+ms.locfileid: "49435360"
 ---
 # <a name="create-a-power-bi-dashboard-from-a-report"></a>Power BI -koontinäytön luominen raportista
 Olet lukenut [Koontinäytöt Power BI:ssä](service-dashboards.md) ja haluat nyt luoda omasi. Koontinäyttö voidaan luoda monin eri tavoin, esimerkiksi uusi alusta alkaen, raportista, tietojoukosta tai kopioimalla aiemmin luotu koontinäyttö.  
@@ -109,7 +109,7 @@ Onnittelut ensimmäisen koontinäytön luomisen johdosta! Nyt, kun sinulla on ko
 ## <a name="next-steps"></a>Seuraavat vaiheet
 * [Ruutujen koon muuttaminen ja siirtäminen](service-dashboard-edit-tile.md)
 * [Kaikki koontinäyttöruuduista](service-dashboard-tiles.md)
-* [Koontinäytön jakaminen luomalla sovellus](service-install-use-apps.md)
+* [Koontinäytön jakaminen luomalla sovellus](service-create-workspaces.md)
 * [Power BI:n peruskäsitteet](service-basic-concepts.md)
 * [Vinkkejä laadukkaiden koontinäyttöjen suunnitteluun](service-dashboards-design-tips.md)
 

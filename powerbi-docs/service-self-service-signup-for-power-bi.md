@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/02/2018
 ms.author: mblythe
 LocalizationGroup: Get started
-ms.openlocfilehash: 411fd408998ba67c4a91ae01e166396530631678
-ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
+ms.openlocfilehash: bfd3c1242ff5eb0d00078dbeb376dba8b0b6aa20
+ms.sourcegitcommit: a764e4b9d06b50d9b6173d0fbb7555e3babe6351
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "48909057"
+ms.lasthandoff: 10/22/2018
+ms.locfileid: "49641708"
 ---
 # <a name="signing-up-for-power-bi-as-an-individual"></a>Rekisteröityminen Power BI:hin yksityishenkilönä
 Ota selvää, miten voit rekisteröityä Power BI:n käyttäjäksi ja aloittaa sen käytön henkilökohtaisiin raportti- ja visualisointitarpeisiisi.
@@ -142,7 +142,7 @@ Monissa tapauksissa Power BI:hin rekisteröityminen tapahtuu noudattamalla yksin
 ## <a name="next-steps"></a>Seuraavat vaiheet  
 [Power BI Pron ostaminen](service-admin-purchasing-power-bi-pro.md)  
 [Yksittäisten käyttäjien Power BI -palvelusopimus](https://powerbi.microsoft.com/terms-of-service/)  
-[Power BI Premium – mikä se on?](service-premium.md)  
+[Mikä on Power BI Premium?](service-premium.md)  
 [Power BI Premiumin tekninen raportti](https://aka.ms/pbipremiumwhitepaper)  
 
 Onko sinulla muuta kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)
