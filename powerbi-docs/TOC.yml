@@ -194,9 +194,9 @@ items:
       items:
       - name: Tietojen luokittelu Power BI Desktopissa
         href: desktop-data-categorization.md
-      - name: Viivakoodikentän merkitseminen Power BI Desktopissa Power BI -mobiilisovelluksille
+      - name: Viivakoodikentän merkitseminen tunnisteella mobiilisovelluksilla
         href: desktop-mobile-barcodes.md
-      - name: Maantieteellisen suodatuksen määrittäminen Power BI Desktopissa Power BI -mobiilisovelluksille
+      - name: Maantieteellisen suodatuksen määrittäminen mobiilisovelluksilla
         href: desktop-mobile-geofiltering.md
       - name: Lasketut sarakkeet Power BI Desktopissa
         href: desktop-calculated-columns.md
@@ -204,6 +204,8 @@ items:
         href: desktop-calculated-tables.md
       - name: Mittayksiköt Power BI Desktopissa
         href: desktop-measures.md
+      - name: Lingvistisen Q&A-rakenteen muokkaaminen
+        href: power-bi-q-and-a-linguistic-schema.md
       - name: Suorituskykyilmaisimien tuominen ja näyttäminen (esikatselu)
         href: desktop-import-and-display-kpis.md
     - name: Raporttien luominen
@@ -346,6 +348,8 @@ items:
     items:
     - name: Tietotyypit Power BI Desktopissa
       href: desktop-data-types.md
+    - name: Power BI Desktopin kaavaeditorin pikanäppäimet
+      href: desktop-formula-editor.md
     - name: Power BI Desktopin yksityisyystasot
       href: desktop-privacy-levels.md
     - name: Liittimen laajennettavuus Power BI:ssä
@@ -570,6 +574,8 @@ items:
         href: sql-server-analysis-services-tabular-data.md
       - name: Azure ja Power BI
         href: service-azure-and-power-bi.md
+      - name: Power BI:n ja Azuren lähtevä liikenne
+        href: service-azure-egress-power-bi.md
     - name: Tietojen uudelleenlataus
       items:
       - name: Ajoitetun päivityksen määrittäminen
@@ -630,19 +636,19 @@ items:
       items:
       - name: Uuden raportin luominen olemassa olevasta raportista
         href: power-bi-report-copy.md
-      - name: Sivun lisääminen Power BI -raporttiin
+      - name: Sivun lisääminen raporttiin
         href: power-bi-report-add-page.md
-      - name: Suodattimen lisääminen Power BI - raporttiin
+      - name: Suodattimen lisääminen raporttiin
         href: power-bi-report-add-filter.md
       - name: Raportin tallentaminen Power BI:ssä
         href: service-report-save.md
       - name: Uuden raportin luominen tietojoukosta
         href: service-report-create-new.md
-      - name: Raportin käsittely Power BI:n muokkausnäkymässä
+      - name: Raportin käsittely muokkausnäkymässä
         href: service-interact-with-a-report-in-editing-view.md
       - name: Analysoi Excelissä
         href: service-analyze-in-excel.md
-      - name: Vinkkejä tyylikkäiden raporttien luomiseen Power BI -palvelussa
+      - name: Vinkkejä raporttien luomiseen
         href: power-bi-reports-tips-and-tricks-for-creating.md
       - name: Analytiikkaruutu
         href: service-analytics-pane.md
@@ -650,32 +656,32 @@ items:
         href: service-usage-metrics.md
       - name: Raportin QR-koodin luominen
         href: service-create-qr-code-for-report.md
-      - name: Power BI -raportin sivujen järjestäminen uudelleen
+      - name: Raportin sivujen järjestäminen uudelleen
         href: service-report-reorder-pages.md
-      - name: Raporttisivun kopioiminen Power BI:ssä
+      - name: Raporttisivun monistaminen
         href: power-bi-report-copy-paste-page.md
-      - name: Raportin vieminen Power BI -palvelusta työasemaan (esikatselu)
+      - name: Raportin vieminen palvelusta Power BI Desktopiin (esikatselu)
         href: service-export-to-pbix.md
-      - name: Raportin suodattaminen URL-osoitteen kyselymerkkijonoparametrien avulla
+      - name: Raportin suodattaminen URL-osoitteen parametrien avulla
         href: service-url-filters.md
-      - name: Parhaat käytännöt nopeiden ja luotettavien raporttien luomiseen Power BI:ssä
+      - name: Parhaat käytännöt nopeiden ja luotettavien raporttien luomiseen
         href: power-bi-reports-performance.md
-      - name: ArcGIS-karttojen käsittely Power BI:ssä
+      - name: ArcGIS-karttojen käsittely
         href: visuals/power-bi-visualizations-arcgis.md
     - name: Kysymysten kysyminen tiedoistasi
       items:
       - name: Visualisointien ja raporttien luominen Q&A-toiminnolla
         href: power-bi-tutorial-q-and-a.md
-      - name: Tietojen muokkaaminen toimimaan hyvin Power BI:n Q&A-toiminnon kanssa
+      - name: Tietojen muokkaaminen toimimaan hyvin Q&A-toiminnon kanssa
         href: service-prepare-data-for-q-and-a.md
       - name: Power BI:n Cortanan käyttöönotto
         href: service-cortana-enable.md
-      - name: Power BI:n Q&A-toiminnon suositeltujen kysymysten luominen
+      - name: Q&A-toiminnon suositeltujen kysymysten luominen
         href: service-q-and-a-create-featured-questions.md
       - name: Visualisointityypit Power BI:ssä
         href: visuals/power-bi-visualization-types-for-reports-and-q-and-a.md
-      - name: Power BI Desktopin kielellisen rakenteen käsitteleminen
-        href: power-bi-q-and-a-linguistic-schema.md
+      - name: Q&A:n käyttäminen reaaliaikaisten yhteyksien kautta
+        href: service-q-and-a-direct-query.md
     - name: Töiden jakaminen
       items:
       - name: Miten tehdään yhteistyötä ja jaetaan?
@@ -684,8 +690,6 @@ items:
         href: service-share-dashboards.md
       - name: Sovellusten luominen ja jakaminen
         href: service-create-distribute-apps.md
-      - name: Sovellusten asentaminen ja käyttäminen
-        href: service-install-use-apps.md
       - name: Sovellustyötilojen luominen
         href: service-create-workspaces.md
       - name: Uusien työtilojen luominen (esikatselu)
@@ -850,7 +854,7 @@ items:
       items:
       - name: Kehityskeskus
         href: https://powerbi.microsoft.com/en-us/developers/
-      - name: Asennustyökalun upottaminen
+      - name: Upottamisen määritystyökalu
         href: https://aka.ms/embedsetup
       - name: JavaScript Playground -malli
         href: https://go.microsoft.com/fwlink/?linkid=848279
@@ -1094,8 +1098,14 @@ items:
       href: service-gateway-enterprise-manage-scheduled-refresh.md
     - name: Paikallisten ja pilvipalvelutietolähteiden yhdistäminen
       href: service-gateway-mashup-on-premises-cloud.md
-    - name: Kerberos-kertakirjautuminen
-      href: service-gateway-kerberos-for-sso-pbi-to-on-premises-data.md
+    - name: Kertakirjautumisen (SSO) käyttöönotto
+      items:
+      - name: Kertakirjautuminen (SSO) – yleiskatsaus
+        href: service-gateway-sso-overview.md
+      - name: Kertakirjautuminen (SSO) – Kerberos
+        href: service-gateway-sso-kerberos.md
+      - name: Kertakirjautuminen (SSO) – SAML
+        href: service-gateway-sso-saml.md
     - name: Välityspalvelinasetusten määrittäminen
       href: service-gateway-proxy.md
     - name: Suuren käytettävyyden klusterit paikallisessa tietoyhdyskäytävässä
@@ -1138,8 +1148,6 @@ items:
         href: service-admin-premium-multi-geo.md
       - name: Power BI Premiumin usein kysytyt kysymykset
         href: service-premium-faq.md
-      - name: Power BI Premiumin julkaisutiedot
-        href: service-premium-release-notes.md
     - name: Hallintarooli Office 365:ssä
       href: service-admin-role.md
     - name: Usein kysytyt kysymykset
@@ -1185,6 +1193,8 @@ items:
     - name: Power BI:n cmdlet-komennot PowerShellille
       href: https://docs.microsoft.com/en-us/powershell/power-bi/
       maintainContext: true
+    - name: Palvelun URL-osoiteviittaus
+      href: power-bi-whitelist-urls.md
   - name: Resurssit
     items:
     - name: Power BI:n hallinta- ja käyttöönottotavat
@@ -1193,9 +1203,9 @@ items:
       href: service-admin-power-bi-security.md
     - name: Power BI Office 365:lle siirretään Power BI:hin
       href: service-admin-o365portal-retired.md
-ms.openlocfilehash: e91012d1336b54dee11fd3b342ac4a44fc45d979
-ms.sourcegitcommit: dc8b8a2cf2dcc96ccb46159802ebd9342a7fa840
+ms.openlocfilehash: bc509b1cd6717cc3ec38e0b8eb404dc9bb4885d3
+ms.sourcegitcommit: a764e4b9d06b50d9b6173d0fbb7555e3babe6351
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49112241"
+ms.lasthandoff: 10/22/2018
+ms.locfileid: "49641984"
