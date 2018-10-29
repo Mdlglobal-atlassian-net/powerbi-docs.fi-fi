@@ -10,13 +10,13 @@ ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
 LocalizationGroup: Share your work
-ms.date: 08/16/2018
-ms.openlocfilehash: 111987fda4b0f841c0806dbdc454ac96ddb3c666
-ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
+ms.date: 10/01/2018
+ms.openlocfilehash: b701ce9921d055dfe124c5a419f02900b15a9f62
+ms.sourcegitcommit: a764e4b9d06b50d9b6173d0fbb7555e3babe6351
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "48908367"
+ms.lasthandoff: 10/22/2018
+ms.locfileid: "49641202"
 ---
 # <a name="embed-with-report-web-part-in-sharepoint-online"></a>Upota raportin verkko-osa SharePoint Onlinessa
 
@@ -87,7 +87,7 @@ Kun raportti upotetaan SharePoint Onlineen, käyttäjät eivät saa automaattise
 
 Raportin käyttöoikeuden voi myöntää kahdella tavalla Power BI -palvelussa. Jos käytät Office 365 -ryhmää SharePoint Online -työryhmäsivuston luomiseen, lisää käyttäjä **Power BI -palvelun** ja **SharePoint-sivun sovellustyötilan** jäseneksi. Näin voit varmistaa, että käyttäjät voivat tarkastella ryhmän sisältöä. Lisätietoja on ohjeartikkelissa [Sovelluksen luominen ja jakaminen Power BI:ssä](service-create-distribute-apps.md).
 
-Vaihtoehtoisesti voit myöntää käyttäjille raportin käyttöoikeuden seuraavasti.
+Vaihtoehtoisesti voit myöntää käyttäjille raportin käyttöoikeuden noudattamalla seuraavia ohjeita.
 
 1. Lisää ruutu raportista koontinäyttöön.
 
@@ -126,7 +126,7 @@ Tähän viestiin on kaksi yleistä syytä.
 1. Sinulla ei ole raportin käyttöoikeuksia.
 2. Raportti on poistettu.
 
-Yritä ratkaista ongelma ottamalla yhteyttä SharePoint Online -sivun omistajaan.
+Ota yhteyttä SharePoint Online -sivun omistajaan ratkaistaksesi ongelman.
 
 ## <a name="known-issues-and-limitations"></a>Tunnetut ongelmat ja rajoitukset
 
@@ -148,6 +148,8 @@ Yritä ratkaista ongelma ottamalla yhteyttä SharePoint Online -sivun omistajaan
 
 * Perinteistä SharePoint-palvelinta ei tueta tässä verkko-osassa.
 
+* [URL-suodattimia](service-url-filters.md) ei tueta SPO-verkko-osan kanssa.
+
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
 [Modernin sivuston sivujen luomisen salliminen tai estäminen käyttäjille](https://support.office.com/article/Allow-or-prevent-creation-of-modern-site-pages-by-end-users-c41d9cc8-c5c0-46b4-8b87-ea66abc6e63b)  
@@ -155,4 +157,4 @@ Yritä ratkaista ongelma ottamalla yhteyttä SharePoint Online -sivun omistajaan
 [Koontinäytön jakaminen työtovereille ja muille](service-share-dashboards.md)  
 [Mikä on Power BI Premium?](service-premium.md)  
 
-Ilmenikö muuta kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)
+Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)

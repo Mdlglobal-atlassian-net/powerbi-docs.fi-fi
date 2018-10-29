@@ -10,12 +10,12 @@ ms.component: powerbi-gateways
 ms.topic: conceptual
 ms.date: 08/08/2018
 LocalizationGroup: Gateways
-ms.openlocfilehash: cbc1d6304a7ee34b489d93488115ceb80864a42d
-ms.sourcegitcommit: ef4bf1439bc5655d1afc7fb97079ea0679e9124b
+ms.openlocfilehash: a8f0360d87fe5bf4e19632a92d8dfe4cf61da16e
+ms.sourcegitcommit: 2c4a075fe16ccac8e25f7ca0b40d404eacb49f6d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43151902"
+ms.lasthandoff: 10/20/2018
+ms.locfileid: "49474022"
 ---
 # <a name="troubleshooting-the-on-premises-data-gateway"></a>Paikallisen tietoyhdyskäytävän vianmääritys
 
@@ -40,6 +40,25 @@ Yhdyskäytävä suoritetaan Windows-palveluna, joten voit käynnistää ja sammu
 * Voit käynnistää palvelun suorittamalla seuraavan komennon:
 
     '''   net start PBIEgwService   '''
+
+### <a name="log-file-configuration"></a>Lokitiedoston määrittäminen
+
+Yhdyskäytävän palvelulokit luokitellaan kolmeen säilöön: tieto, virhe ja verkko. Tämä luokitus tarjoaa paremman vianmäärityskokemuksen, jolloin voit keskittyä tiettyyn alueeseen virheen tai ongelman perusteella. Seuraava katkelma yhdyskäytävän määritystiedostosta sisältää nämä kolme luokitusta: `GatewayInfo.log,GatewayErrors.log,GatewayNetwork.log`.
+
+```xml
+  <system.diagnostics>
+    <trace autoflush="true" indentsize="4">
+      <listeners>
+        <remove name="Default" />
+        <add name="ApplicationFileTraceListener"
+             type="Microsoft.PowerBI.DataMovement.Pipeline.Common.Diagnostics.RotatableFilesManagerTraceListener, Microsoft.PowerBI.DataMovement.Pipeline.Common"
+             initializeData="%LOCALAPPDATA%\Microsoft\On-premises data gateway\,GatewayInfo.log,GatewayErrors.log,GatewayNetwork.log,20,50" />
+      </listeners>
+    </trace>
+  </system.diagnostics>
+```
+
+Tämä tiedosto löytyy oletusarvoisesti sijainnista: *\Program Files\On-premises data gateway\Microsoft.PowerBI.EnterpriseGateway.exe.config*. Voit määrittää säilytettävien lokitiedostojen määrän muuttamalla ensimmäistä numeroa (tässä esimerkissä 20): `GatewayInfo.log,GatewayErrors.log,GatewayNetwork.log,20,50`.
 
 ### <a name="error-failed-to-create-a-gateway-try-again"></a>Virhe: Yhdyskäytävän luominen epäonnistui. Yritä uudelleen
 

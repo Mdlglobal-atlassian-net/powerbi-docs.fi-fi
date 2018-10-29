@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 06/13/2018
+ms.date: 10/18/2018
 ms.author: maikelson
-ms.openlocfilehash: 8a20e5b9807f9495183ebb1e6bd396e68f02c1a1
-ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
+ms.openlocfilehash: 126baf11492f05228d1e0637e27b5f2caa8390a3
+ms.sourcegitcommit: 2c4a075fe16ccac8e25f7ca0b40d404eacb49f6d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37137547"
+ms.lasthandoff: 10/20/2018
+ms.locfileid: "49473953"
 ---
 # <a name="power-bi-webinars"></a>Power BI -verkkoseminaarit
 
@@ -22,9 +22,7 @@ Rekisteröidy tuleviin reaaliaikaisiin verkkoseminaareihin tai katso nauhoitettu
 
 ## <a name="upcoming-webinars"></a>Tulevat verkkoseminaarit
 
-Mitään verkkoseminaaria ei ole vielä ajoitettu. Palaa pian takaisin tarkistamaan muut tulevat tapahtumat.
-
->[Osallistu tuleviin Power BI -yhteisön verkkoseminaareihin](https://powerbi.microsoft.com/en-us/blog/tag/community-webinars/?Is=Website)
+>[Tulevia Power BI -yhteisön verkkoseminaareja](https://powerbi.microsoft.com/en-us/blog/tag/community-webinars/?Is=Website)
 
 ## <a name="featured-webinars"></a>Esittelyssä verkkoseminaarit
 
@@ -34,21 +32,29 @@ Aloita näistä suosituista verkkoseminaareista
 <br>tekijä: Miguel Martinez
 <br>[Rekisteröidy ja katso nyt](https://info.microsoft.com/getting-started-with-power-bi-ondemand.html?Is=Website)
 
-**Power BI -vinkkejä, -vihjeitä ja -työkaluja PowerBI.Tipsin omistajilta**
-<br>tekijät: Mike Carlo ja Seth Bauer
-<br>[Katso nyt](https://www.youtube.com/watch?v=fnj1_e3HXow)
-
 **Opi liikkumaan Power BI -koontinäytössä 20 minuutissa**
 <br>tekijä: Miguel Martinez
 <br>[Rekisteröidy ja katso nyt](https://info.microsoft.com/powerbi-dashboard-in-20-min.html?Is=Website)
+
+**Microsoft toimii Power BI:n voimalla – näin helpotat taloutesi suunnittelua ja analysointia**
+<br>Cory Hrncirik ja Miguel Martinez
+<br>[Rekisteröidy ja katso nyt](https://info.microsoft.com/Microsoft-Runs-on-Power-BI-OnDemandRegistration.html?Is=Website)
+
+**Tee Power BI -tiedoistasi visuaalisia: ydinkaaviotyypit ja niiden käyttäminen**
+<br>tekijä: Miranda Li
+<br>[Rekisteröidy ja katso nyt](https://info.microsoft.com/Make-your-Power-BI-Data-Visual-Registration.html?Is=Website)
+
+**Power BI, Excel ja Office 365: optimoi yrityksesi tietoja**
+<br>Olaf Hubel ja Miguel Martinez
+<br>[Rekisteröidy ja katso nyt](https://info.microsoft.com/Unlocking-the-Value-of-your-Enterprise-Data-OnDemandRegistration.html?Is=Website)
 
 **Yksinkertaisesti kiinnostava – vinkkejä visualisointien parempaan suunnitteluun**
 <br>tekijä: Miranda Li
 <br>[Rekisteröidy ja katso nyt](https://info.microsoft.com/ww-landing-powerbi-tips-for-better-visualization-design.html?Is=Website)
 
-**Paremmat yhdessä: 5 Excel-käyttäjien Power BI:n käytöstä saamaa etua**
-<br>tekijät: Carlos Otero ja Miguel Martinez
-<br>[Rekisteröidy ja katso nyt](https://info.microsoft.com/excel-powerbi-better-together.html?Is=Website)
+**Power BI -vinkkejä, -vihjeitä ja -työkaluja PowerBI.Tipsin omistajilta**
+<br>tekijät: Mike Carlo ja Seth Bauer
+<br>[Katso nyt](https://www.youtube.com/watch?v=fnj1_e3HXow)
 
 >[Selaa yhteisön asiantuntijoiden vetämien Power BI -verkkoseminaarien kirjastoa](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/bd-p/VideoTipsTricks?filter=webinars&featured=yes&Is=Website)
 
@@ -61,6 +67,10 @@ Katso tallennetut istuntoja milloin tahansa
 **Visuaalisesti näyttävien Power BI -raporttien luominen**
 <br>tekijä: Charles Sterling
 <br>[Katso nyt](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/5-3-17-Webinar-How-to-Design-Visually-Stunning-Power-BI-Reports/m-p/168204?Is=Website)
+
+**Paremmat yhdessä: 5 Excel-käyttäjien Power BI:n käytöstä saamaa etua**
+<br>tekijät: Carlos Otero ja Miguel Martinez
+<br>[Rekisteröidy ja katso nyt](https://info.microsoft.com/excel-powerbi-better-together.html?Is=Website)
 
 **Tutustu Power BI Embeddediin 20 minuutissa**
 <br>tekijät: Megan Asarrane ja Colin Murphy

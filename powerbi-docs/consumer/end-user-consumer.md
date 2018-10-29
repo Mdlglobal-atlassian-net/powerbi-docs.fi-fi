@@ -6,15 +6,15 @@ manager: kvivek
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: overview
-ms.date: 08/16/2018
+ms.date: 10/13/2018
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 17bf013b9d33c0c4b3ab7e124c7ddda0c3986df3
-ms.sourcegitcommit: ce8332a71d4d205a1f005b703da4a390d79c98b6
+ms.openlocfilehash: 15cdd66e6062c4199b2f736208192c452bcbd0af
+ms.sourcegitcommit: a3ce866caba24217bcdd011e892b9ea72f3d2400
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "47418216"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49396579"
 ---
 # <a name="power-bi-for-consumers"></a>Power BI kuluttajille
 Työroolisi määrittää, miten käytät Power BI:tä. *Loppukäyttäjät* ja *kuluttajat* vastaanottavat koontinäyttöjä, raportteja ja sovelluksia työtovereiltaan. Työskentelet ***Power BI -palvelussa***, jossa voit tarkastella ja käsitellä tätä sisältöä ja tehdä sen perusteella liiketoimintapäätöksiä.
@@ -26,4 +26,11 @@ Jos et ole käyttänyt Power BI:tä aikaisemmin, suosittelemme, että luet ensin
 Kuluttajana et voi käyttää Power BI:n kaikkia ominaisuuksia. Tällä ei ole merkitystä, koska koontinäyttöjen ja raporttien luominen on muiden tehtävä. Sinä käytät Power BI:tä analysointiin, valvontaan, tarkasteluun ja päätöksentekoon.
 
 Kun luet kuluttajille suunnattuja artikkeleja, opit termejä, tutustut Power BI -palveluun ja opit löytämään sisältöä ja käsittelemään sitä.  Aloitetaanpa!
+
+## <a name="next-steps"></a>Seuraavat vaiheet
+
+[Terminologiaa ja käsitteitä Power BI *-kuluttajille*](end-user-basic-concepts.md)
+
+<!-- [Get started guide for *consumers*] -->
+[Power BI -palvelun käytön aloittaminen](../service-get-started.md)
 
