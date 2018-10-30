@@ -8,13 +8,13 @@ ms.topic: tutorial
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.custom: mvc
-ms.date: 06/20/2018
-ms.openlocfilehash: 6685b47de6fbcc4ce35d5087c545814e34092d11
-ms.sourcegitcommit: b7b828019b2a2917dfda4d6df0c9cdce70fa68cd
+ms.date: 10/17/2018
+ms.openlocfilehash: d3076090b06cdb60b72c475fd156cc274985ea32
+ms.sourcegitcommit: 1a79e48ac820c28c5d0fd05399f49ed22fc74ed7
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/05/2018
-ms.locfileid: "48827429"
+ms.lasthandoff: 10/19/2018
+ms.locfileid: "49435484"
 ---
 # <a name="tutorial-embed-a-power-bi-report-dashboard-or-tile-into-an-application-for-your-customers"></a>Opetusohjelma: Power BI -raportin, raporttinäkymän tai ruudun upottaminen sovellukseen asiakkaita varten
 
@@ -36,7 +36,7 @@ Sinulla täytyy olla **Power BI Pro** -tili (tämä tili on **päätilisi**) ja 
 
 ## <a name="set-up-your-embedded-analytics-development-environment"></a>Upotettujen analyysitoimintojen kehitysympäristön määrittäminen
 
-Ennen kuin ryhdyt upottamaan raportteja, raporttinäkymiä tai ruutuja sovellukseesi, varmista, että ympäristösi on määritetty niin, että upottaminen on siinä sallittu. Määritys edellyttää myös seuraavia toimia:
+Ennen kuin ryhdyt upottamaan raportteja, raporttinäkymiä tai ruutuja sovellukseesi, varmista, että ympäristösi sallii upottamisen Power BI:n avulla.
 
 Voit käyttää [upottamisen määritystyökalua](https://aka.ms/embedsetup/AppOwnsData) päästäksesi nopeasti alkuun ja ladataksesi mallisovelluksen, jossa käydään läpi sekä käyttöympäristön luominen että raportin upottaminen.
 
@@ -44,7 +44,7 @@ Jos haluat määrittää ympäristön manuaalisesti, jatka lukemista.
 
 ### <a name="register-an-application-in-azure-active-directory-azure-ad"></a>Sovelluksen rekisteröiminen Azure Active Directoryyn (Azure AD)
 
-Rekisteröi sovellus Azure Active Directoryyn, jotta sovellus saa käyttöoikeuden Power BI REST -ohjelmointirajapintoihin. Tämä sallii sinun määrittää sovelluksen käyttäjätiedot ja käyttöoikeudet Power BI REST -resursseihin.
+Rekisteröi sovellus Azure Active Directoryyn, jotta sovellus saa käyttöoikeuden Power BI REST -ohjelmointirajapintoihin. Sovelluksesi rekisteröinti sallii sinun määrittää sovelluksen käyttäjätiedot ja käyttöoikeudet Power BI REST -resursseihin.
 
 1. Hyväksy [Microsoft Power BI -ohjelmointirajapinnan ehdot](https://powerbi.microsoft.com/api-terms).
 
@@ -63,7 +63,7 @@ Rekisteröi sovellus Azure Active Directoryyn, jotta sovellus saa käyttöoikeud
 
 ### <a name="apply-permissions-to-your-application-within-azure-active-directory"></a>Määritä sovellukselle käyttöoikeudet Azure Active Directorystä
 
-Sinun on otettava käyttöön sovellukselle lisäkäyttöoikeuksia sovelluksen rekisteröintisivulla annettujen käyttöoikeuksien lisäksi. Sinun on kirjauduttava sisään *päätililläsi*, jota käytetään upottamiseen ja jonka on oltava yleinen järjestelmänvalvoja -tili.
+Ota käyttöön sovellukselle lisäkäyttöoikeuksia sovelluksen rekisteröintisivulla annettujen käyttöoikeuksien lisäksi. Kirjaudu sisään *päätilillä*, jota käytät upottamiseen. Päätilin on oltava yleinen järjestelmänvalvojan tili.
 
 ### <a name="use-the-azure-active-directory-portal"></a>Azure Active Directory -portaalin käyttäminen
 
@@ -91,7 +91,7 @@ Sinun on otettava käyttöön sovellukselle lisäkäyttöoikeuksia sovelluksen r
 
     ![Valitse PBI -palvelut](media/embed-sample-for-customers/embed-sample-for-customers-014.png)
 
-7. Valitse kaikki käyttöoikeudet kohdasta **Delegoidut käyttöoikeudet**. Ne on valittava yksi kerrallaan valintojen tallentamiseksi. Kun olet valmis, valitse **Tallenna**.
+7. Valitse kaikki käyttöoikeudet kohdasta **Delegoidut käyttöoikeudet**. Kun olet valmis, valitse **Tallenna**.
 
     ![Valitse delegoidut käyttöoikeudet](media/embed-sample-for-customers/embed-sample-for-customers-015.png)
 
@@ -107,11 +107,11 @@ Sinun on otettava käyttöön sovellukselle lisäkäyttöoikeuksia sovelluksen r
 
 Jos upotat asiakkaille raportteja, raporttinäkymiä tai ruutuja, sinun tulee sijoittaa sisältösi sovelluksen työtilaan. *Päätilin* on oltava sovelluksen työtilan järjestelmänvalvoja.
 
-1. Aloita luomalla työtila. Valitse **Työtilat** > **Luo sovelluksen työtila**. Tänne sijoitetaan sisältö, johon sovelluksesi on päästävä.
+1. Aloita luomalla työtila. Valitse **Työtilat** > **Luo sovelluksen työtila**. Sijoita Luo sovellus -työtilassa sisältö, johon sovelluksesi on päästävä.
 
     ![Työtilan luominen](media/embed-sample-for-customers/embed-sample-for-customers-020.png)
 
-2. Anna työtilalle nimi. Jos vastaava **työtilan tunnus** ei ole käytettävissä, muokkaa nimeä niin, että saat yksilöllisen tunnuksen. Sen on oltava myös sovelluksen nimi.
+2. Anna työtilalle nimi. Jos vastaava **työtilan tunnus** ei ole käytettävissä, muokkaa nimeä niin, että saat yksilöllisen tunnuksen.
 
     ![Työtila nimeäminen](media/embed-sample-for-customers/embed-sample-for-customers-021.png)
 
@@ -161,11 +161,11 @@ Seuraa näitä ohjeita aloittaaksesi sisällön upottamisen mallisovelluksen avu
 
     ![App Owns Data -sovellusmalli](media/embed-sample-for-customers/embed-sample-for-customers-026.png)
 
-2. Avaa mallisovelluksessa Web.config-tiedosto. Sinun on täytettävä viisi kenttää, jotta sovellus voidaan suorittaa onnistuneesti. **Asiakastunnus**, **ryhmätunnus**, **raporttitunnus**, **pbikäyttäjänimi** ja **pbisalasana**.
+2. Avaa mallisovelluksessa Web.config-tiedosto. Sinun on täytettävä viisi kenttää, jotta sovellus voidaan suorittaa onnistuneesti. Ne ovat **applicationId**, **workspaceId**, **reportId**, **pbiUsername** ja **pbiPassword**.
 
     ![Web.config-tiedosto](media/embed-sample-for-customers/embed-sample-for-customers-030.png)
 
-    Täytä **asiakastunnus**-tiedot **Sovellustunnuksilla** **Azuresta**. **Asiakastunnuksen** avulla sovellus tunnistautuu käyttäjille, joilta pyydät käyttöoikeuksia. Saat **asiakastunnuksen** seuraavasti:
+    Täytä **applicationId**-tiedot **Sovellustunnuksilla** **Azuresta**. **applicationID**:n avulla sovellus tunnistautuu käyttäjille, joilta pyydät käyttöoikeuksia. Saat **ApplicationID**:n seuraavasti:
 
     Kirjaudu sisään [Azure-portaaliin](https://portal.azure.com).
 
@@ -175,17 +175,17 @@ Seuraa näitä ohjeita aloittaaksesi sisällön upottamisen mallisovelluksen avu
 
     ![Sovelluksen rekisteröinnin etsintä](media/embed-sample-for-customers/embed-sample-for-customers-003.png)
 
-    Valitse sovellus, jolle haluat **asiakastunnuksen**.
+    Valitse sovellus, jolle haluat **applicationId**:n.
 
     ![Sovelluksen valitseminen](media/embed-sample-for-customers/embed-sample-for-customers-006.png)
 
-    Sinun pitäisi nähdä **Sovellustunnus** , joka on merkitty GUID-tunnuksena. Käytä tätä **Sovellustunnusta** sovelluksen **asiakastunnuksena**.
+    Sinun pitäisi nähdä **Sovellustunnus** , joka on merkitty GUID-tunnuksena. Käytä tätä **Sovellustunnusta** sovelluksen **applicationId**:nä.
 
-    ![Asiakastunnus](media/embed-sample-for-customers/embed-sample-for-customers-007.png)
+    ![applicationID](media/embed-sample-for-customers/embed-sample-for-customers-007.png)
 
-    Täytä **ryhmätunnus** Power BI:n **sovelluksen työtila GUID** -tiedoilla.
+    Täytä **workspaceId** Power BI:n **sovelluksen työtilan GUID**-tiedoilla.
 
-    ![Ryhmätunnus](media/embed-sample-for-customers/embed-sample-for-customers-031.png)
+    ![workspaceId](media/embed-sample-for-customers/embed-sample-for-customers-031.png)
 
     Täytä **raporttitunnus** Power BI:n **raportin GUID** -tiedoilla.
 
@@ -242,8 +242,8 @@ Tässä on koodimalli siitä, miten voit noutaa ensimmäisen raportin tietystä 
 using Microsoft.PowerBI.Api.V2;
 using Microsoft.PowerBI.Api.V2.Models;
 
-// You need to provide the GroupID where the dashboard resides.
-ODataResponseListReport reports = client.Reports.GetReportsInGroupAsync(GroupId);
+// You need to provide the workspaceId where the dashboard resides.
+ODataResponseListReport reports = client.Reports.GetReportsInGroupAsync(workspaceId);
 
 // Get the first report in the group.
 Report report = reports.Value.FirstOrDefault();
@@ -263,7 +263,7 @@ using Microsoft.PowerBI.Api.V2.Models;
 
 // Generate Embed Token.
 var generateTokenRequestParameters = new GenerateTokenRequest(accessLevel: "view");
-EmbedToken tokenResponse = client.Reports.GenerateTokenInGroup(GroupId, report.Id, generateTokenRequestParameters);
+EmbedToken tokenResponse = client.Reports.GenerateTokenInGroup(workspaceId, report.Id, generateTokenRequestParameters);
 
 // Generate Embed Configuration.
 var embedConfig = new EmbedConfig()
@@ -339,12 +339,12 @@ Seuraavan taulukon avulla voit määrittää, mikä Power BI Embedded -kapasitee
 
 | Kapasiteetin solmu | Ytimiä yhteensä<br/>*(Tausta ja edusta)* | Taustan ytimet | Edustan ytimet | DirectQueryn/live-yhteyden rajoitukset | Sivun hahmonnuksia enintään huipputuntina |
 | --- | --- | --- | --- | --- | --- |
-| A1 |1 näennäisydin |0,5 ydintä, 3 Gt RAM |0,5 ydintä | 5 sekunnissa |1–300 |
-| A2 |2 näennäisydintä |1 ydin, 5 Gt RAM |1 ydin | 10 sekunnissa |301–600 |
-| A3 |4 näennäisydintä |2 ydintä, 10 Gt RAM |2 ydintä | 15 sekunnissa |601–1 200 |
-| A4 |8 näennäisydintä |4 ydintä, 25 Gt RAM |4 ydintä |30 sekunnissa |1 201–2 400 |
-| A5 |16 näennäisydintä |8 ydintä, 50 Gt RAM |8 ydintä |60 sekunnissa |2 401–4 800 |
-| A6 |32 näennäisydintä |16 ydintä, 100 Gt RAM |16 ydintä |120 sekunnissa |4 801–9 600 |
+| A1 |1 näennäisydin |0,5 ydintä, 3 Gt RAM |0,5 ydintä |0,5 sekunnissa |1–300 |
+| A2 |2 näennäisydintä |1 ydin, 5 Gt RAM |1 ydin | 10 sekunnissa |301–600 |
+| A3 |4 näennäisydintä |2 ydintä, 10 Gt RAM |2 ydintä | 15 sekunnissa |601–1 200 |
+| A4 |8 näennäisydintä |4 ydin(tä), 25 Gt RAM |4 ydintä |30 sekunnissa |1 201–2 400 |
+| A5 |16 näennäisydintä |8 ydintä, 50 Gt RAM |8 ydintä |60 sekunnissa |2 401–4 800 |
+| A6 |32 näennäisydintä |16 ydintä, 100 Gt RAM |16 ydintä |120 sekunnissa |4 801–9 600 |
 
 **_A-varastointiyksiköillä et pysty käyttämään Power BI -sisältöä ilmaisella Power BI -käyttöoikeudella._**
 

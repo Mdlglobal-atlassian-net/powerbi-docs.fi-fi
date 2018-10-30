@@ -11,12 +11,12 @@ ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 10/01/2018
 LocalizationGroup: Reports
-ms.openlocfilehash: 562af0b21c4ecd4617de0e524cca20ec6935ca7a
-ms.sourcegitcommit: 31f9da5f562cd02a729b6f012b4b3326416adb0e
+ms.openlocfilehash: 7a034e865b0e0b6ba55385f8873d039dba0662db
+ms.sourcegitcommit: a3ce866caba24217bcdd011e892b9ea72f3d2400
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48232922"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49396953"
 ---
 # <a name="filter-a-report-using-query-string-parameters-in-the-url"></a>Raportin suodattaminen URL-osoitteen kyselymerkkijonoparametrien avulla
 
@@ -169,7 +169,8 @@ On muutamia asioita, jotka tulee ottaa huomioon merkkijonon kyselyparametreja k�
 
 * Käytettäessä *in*-operaattoria *in*-operaattorin oikealla puolella olevat arvot on esitettävä sulkeissa olevana pilkuin eroteltuna luettelona.    
 * Power BI -raporttipalvelimessa voit [välittää raporttiparametrit](https://docs.microsoft.com/sql/reporting-services/pass-a-report-parameter-within-a-url?view=sql-server-2017.md) sisällyttämällä ne raportin URL-osoitteeseen. Näissä URL-parametreissa ei ole etuliitettä, koska ne on välitetty suoraan raportin käsittelymoduuliin.
-* Kyselyn merkkijonon suodatus ei toimi toiminnoissa [Julkaise verkkoon](service-publish-to-web.md) tai Power BI Embedded.   
+* Kyselyn merkkijonon suodatus ei toimi [Julkaise verkkoon](service-publish-to-web.md) -toiminnossa.
+* [Upota raportin verkko-osa SharePoint Onlinessa](service-embed-report-spo.md) ei tue URL-suodattimia.
 * Pitkä tietotyyppi on (2^53-1) JavaScriptin rajoitusten vuoksi.
 * Raporttisuodattimien URL-suodattimissa on 10 lausekkeen rajoitus (10 AND-funktiolla yhdistettyä suodatinta).
 

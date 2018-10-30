@@ -8,13 +8,13 @@ ms.topic: tutorial
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.custom: mvc
-ms.date: 07/13/2018
-ms.openlocfilehash: 9df612d80d3f322a8391eeb43430942a03850470
-ms.sourcegitcommit: b7b828019b2a2917dfda4d6df0c9cdce70fa68cd
+ms.date: 10/17/2018
+ms.openlocfilehash: 92ed5530ba2e3e72ec4d4e7d7c317993bdf9c04b
+ms.sourcegitcommit: a3ce866caba24217bcdd011e892b9ea72f3d2400
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/05/2018
-ms.locfileid: "48827452"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49396861"
 ---
 # <a name="tutorial-embed-a-power-bi-report-dashboard-or-tile-into-an-application-for-your-organization"></a>Opetusohjelma: Power BI -raportin, raporttinäkymän tai ruudun upottaminen sovellukseen organisaatiolle
 
@@ -158,13 +158,13 @@ Seuraa näitä ohjeita aloittaaksesi sisällön upottamisen mallisovelluksen avu
 
     ![User Owns Data -sovellusmalli](media/embed-sample-for-your-organization/embed-sample-for-your-organization-026.png)
 
-2. Avaa mallisovelluksessa **Cloud.config**-tiedosto. Sinun on täytettävä muutamia kenttiä, jotta sovellus voidaan suorittaa onnistuneesti: **ClientID** ja **ClientSecret**.
+2. Avaa mallisovelluksessa **Cloud.config**-tiedosto. Sinun on täytettävä muutamia kenttiä, jotta sovellus voidaan suorittaa onnistuneesti: **ApplicationID** ja **ApplicationSecret**.
 
     ![Cloud.config-tiedosto](media/embed-sample-for-your-organization/embed-sample-for-your-organization-030.png)
 
-    Täytä **Asiakastunnus**-tiedot **Sovellustunnuksilla** Azuresta. **Asiakastunnuksen** avulla sovellus tunnistautuu käyttäjille, joilta pyydät käyttöoikeuksia.
+    Täytä **ApplicationID**-tiedot **Sovellustunnuksilla** Azuresta. **ApplicationID**:n avulla sovellus tunnistautuu käyttäjille, joilta pyydät käyttöoikeuksia.
 
-    Saat **Asiakastunnuksen** seuraavasti:
+    Saat **ApplicationID**:n seuraavasti:
 
     1. Kirjaudu sisään [Azure-portaaliin](https://portal.azure.com).
 
@@ -174,17 +174,17 @@ Seuraa näitä ohjeita aloittaaksesi sisällön upottamisen mallisovelluksen avu
 
         ![Sovelluksen rekisteröinnin etsintä](media/embed-sample-for-your-organization/embed-sample-for-your-organization-003.png)
 
-    1. Valitse sovellus, joka tarvitsee **Asiakastunnusta**.
+    1. Valitse sovellus, joka käyttää **ApplicationID**:tä.
 
         ![Sovelluksen valitseminen](media/embed-sample-for-your-organization/embed-sample-for-your-organization-006.png)
 
-    1. Sinun pitäisi nähdä **Sovellustunnus**, joka on merkitty GUID-tunnuksena. Käytä tätä **Sovellustunnusta** sovelluksen **Asiakastunnuksena**.
+    1. Sinun pitäisi nähdä **Sovellustunnus**, joka on merkitty GUID-tunnuksena. Käytä tätä **Sovellustunnusta** sovelluksen **ApplicationID**:nä.
 
-        ![Asiakastunnus](media/embed-sample-for-your-organization/embed-sample-for-your-organization-007.png)
+        ![ApplicationID](media/embed-sample-for-your-organization/embed-sample-for-your-organization-007.png)
 
-    1. Täytä **ClientSecret** -tiedot **Avaimet**-osiosta **sovelluksen rekisteröinnit** -kohdasta **Azuressa**.
+    1. Täytä **ApplicationSecret** -tiedot **Avaimet**-osiosta **Sovelluksen rekisteröinnit** -kohdasta **Azuressa**.
 
-    1. Saat **ClientSecret**-tiedot seuraavasti:
+    1. Saat **ApplicationSecretin** seuraavasti:
 
         1. Kirjaudu sisään [Azure-portaaliin](https://portal.azure.com).
 
@@ -194,7 +194,7 @@ Seuraa näitä ohjeita aloittaaksesi sisällön upottamisen mallisovelluksen avu
 
             ![Sovelluksen rekisteröinnin etsintä](media/embed-sample-for-your-organization/embed-sample-for-your-organization-003.png)
 
-        1. Valitse sovellus, joka käyttää **ClientSecretiä**.
+        1. Valitse sovellus, joka käyttää **ApplicationSecretiä**.
 
             ![Sovelluksen valitseminen](media/embed-sample-for-your-organization/embed-sample-for-your-organization-006.png)
 

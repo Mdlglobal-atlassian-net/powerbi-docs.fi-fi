@@ -1,23 +1,23 @@
 ---
-title: Raportin tarkasteleminen Power BI -palvelussa
-description: Avaa Power BI -raportti lukunäkymässä.
+title: Raportin tarkasteleminen Power BI -palvelussa kuluttajille.
+description: Tässä aiheessa näytetään Power BI -kuluttajille ja -loppukäyttäjille, kuinka Power BI -raportti avataan ja näytetään.
 author: mihart
 manager: kvivek
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 10/10/2018
+ms.date: 10/17/2018
 ms.author: mihart
-ms.openlocfilehash: 4d37c1389628078466d8fedb290d928c3f02e7d5
-ms.sourcegitcommit: dc8b8a2cf2dcc96ccb46159802ebd9342a7fa840
+ms.openlocfilehash: 15259d472ad315eb0a6274e59ebb30b94f48a302
+ms.sourcegitcommit: a3ce866caba24217bcdd011e892b9ea72f3d2400
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49112011"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49396930"
 ---
-# <a name="view-a-report-in-power-bi-service-apppowerbicom"></a>Raportin tarkasteleminen Power BI -palvelussa (app.powerbi.com)
-Raportti sisältää yhden tai useampia visualisointisivuja. Raportit luodaan Power BI:n *raporttien suunnitteluohjelmassa* ja [jaetaan suoraan sinulle](end-user-shared-with-me.md) tai [sovelluksen](end-user-apps.md) osana. 
+# <a name="view-a-report-in-power-bi-service-for-consumers"></a>Näytä raportti Power BI -palvelussa *kuluttajille*
+Raportti sisältää yhden tai useampia visualisointisivuja. Raportit luodaan Power BI:n *raporttien suunnitteluohjelmassa* ja [jaetaan *kuluttajille* suoraan](end-user-shared-with-me.md) tai [sovelluksen](end-user-apps.md) osana. 
 
 Raportin voi avata monella eri tavalla ja näytämme nyt niistä kaksi, avaamisen aloitussivulta ja avaamisen koontinäytöstä. 
 
@@ -42,7 +42,7 @@ Power BI:n *suunnitteluohjelmassa* raportin voi jakaa suoraan napsauttamalla yl�
    
    ![aloitussivun Jaettu kanssani -osa](./media/end-user-report-open/power-bi-shared.png)
 
-4. Avaa raportti valitsemalla jokin raporttikorteista.
+4. Avaa raportti valitsemalla jokin *raporttikorteista*.
 
    ![raporttisivu](./media/end-user-report-open/power-bi-report1.png)
 
@@ -65,10 +65,10 @@ Jos olet saanut sovelluksia työtovereilta tai AppSourcesta, kyseiset sovellukse
 
    ![Aloitussivu](./media/end-user-report-open/power-bi-my-apps.png)
 
-8. Avaa sovellus valitsemalla se. Sovelluksen *suunnitteluohjelman* asetusten mukaan sovellus avaa joko koontinäytön tai raportin. Jos sovellus:
+8. Avaa sovellus valitsemalla se. Sovelluksen *suunnitteluohjelman* asetusten mukaan sovellus avaa joko koontinäytön, raportin tai sovelluksen sisältöluettelon. Jos sovellus:
     - avaa raportin, olet valmis.
     - avaa koontinäytön, katso alla oleva kohta [Raportin avaaminen koontinäytöstä](#Open-a-report-from-a-dashboard).
-
+    - avaa sovelluksen sisältöluettelon kohtaan **Raportit**, avaa raportti valitsemalla se.
 
 
 ## <a name="open-a-report-from-a-dashboard"></a>Raportin avaaminen koontinäytöstä
@@ -83,15 +83,15 @@ Raportit voidaan avata koontinäytöstä. Useimmat koontinäyttöruudut on *kiin
     ![raportti avoinna lukunäkymässä](./media/end-user-report-open/power-bi-report-new.png)
 
 > [!NOTE]
-> Kaikki ruudut eivät johda raporttiin. Jos valitset ruudun, joka oli [luotu esittämällä kysymyksiä](../service-dashboard-pin-tile-from-q-and-a.md), QA-näyttö avautuu. Jos valitset ruudun, joka oli [luotu koontinäytön **Lisää ruutu** -pienoissovelluksella](../service-dashboard-add-widget.md), ohjattu **Muokkaa ruutua** -toiminto avautuu.  
+> Kaikki ruudut eivät johda raporttiin. Jos valitset ruudun, joka oli [luotu esittämällä kysymyksiä](end-user-q-and-a.md), QA-näyttö avautuu. Jos valitset ruudun, joka oli [luotu koontinäytön **Lisää ruutu** -pienoissovelluksella](../service-dashboard-add-widget.md), monia eri asioita voi tapahtua.  
 
 
 ##  <a name="still-more-ways-to-open-a-report"></a>Muita tapoja avata raportti
 Kun pääset sinuiksi Power BI -palvelun kanssa, löydät itsellesi sopivimmat työnkulut. Tässä on vielä muita tapoja raporttien käyttämiseen:
 - Valitsemalla vasemmasta siirtymisruudusta **Suosikit** ja **Viimeisimmät**    
 - Käyttämällä [Näytä aiheeseen liittyvät](end-user-related.md) -toimintoa    
-- Sähköpostiviestistä, jonka joku on [jakanut kanssasi](../service-share-reports.md), tai kun [määrität ilmoituksen](../service-set-data-alerts.md)    
-- [Ilmoituskeskuksesta] (end-user-notification-center.md)    
+- Sähköpostiviestistä, jonka joku on [jakanut kanssasi](../service-share-reports.md), tai kun [määrität ilmoituksen](end-user-alerts.md)    
+- [Ilmoituskeskuksen](end-user-notification-center.md) kautta    
 - ja muilla tavoilla
 
 ## <a name="next-steps"></a>Seuraavat vaiheet

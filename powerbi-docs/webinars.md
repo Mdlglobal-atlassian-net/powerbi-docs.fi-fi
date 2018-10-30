@@ -7,20 +7,38 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 10/18/2018
+ms.date: 10/23/2018
 ms.author: maikelson
-ms.openlocfilehash: 126baf11492f05228d1e0637e27b5f2caa8390a3
-ms.sourcegitcommit: 2c4a075fe16ccac8e25f7ca0b40d404eacb49f6d
+ms.openlocfilehash: d656a27717d22d13884bcbfa69fab4ba2babaf12
+ms.sourcegitcommit: 17d68172c73e9a9ff7966ddcedc3f8450584cdec
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/20/2018
-ms.locfileid: "49473953"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49952230"
 ---
 # <a name="power-bi-webinars"></a>Power BI -verkkoseminaarit
 
 Rekisteröidy tuleviin reaaliaikaisiin verkkoseminaareihin tai katso nauhoitettuja seminaareja.
 
 ## <a name="upcoming-webinars"></a>Tulevat verkkoseminaarit
+
+**Power BI: tehokasta analytiikkaa**
+<br>tekijä: Gohul Shanmugalingam
+<br>*8. marraskuuta 2018 klo 13.00–14.00 EST*
+
+Huomio analytiikan ja Excelin käytön visionäärit: haluatteko oppia luomaan näyttäviä ja käyttäjäystävällisiä raportteja, jakaa mielenkiintoisia ja helppotajuisia näkemyksiä ja purkaa monisyisten tietojen siiloja turvallisesti helppokäyttöisyyden edistämiseksi?
+
+Kerromme uusista tuoteinnovaatioista ja yritysten modernia liiketoimintatiedon hallintaa ja omatoimista liiketoimintatietojen hallintaa koskevasta visiostamme, jonka tarkoitus on varustaa organisaatiot tietoihin perustuvan kulttuurin luomiseen.
+
+[Rekisteröidy ja katso marraskuun 8. päivä](https://info.microsoft.com/CA-PowerBI-WBNR-FY19-11Nov-08-PowerBIAnalyticsDoneRight-MCW0008690_01Registration-ForminBody.html?Is=Website)
+
+**Kehitä tietomallitaitojasi Power BI:n avulla**
+<br>tekijä: Kasper de Jonge
+<br>*20. marraskuuta 2018 klo 11.00–12:00 PST*
+
+Rekisteröidy verkkoseminaariin, jonka avulla nostat Power BI -mallintamiskykysi uudelle tasolle. Saat tietoa Power BI:n muistissa olevan analytiikan teknologiasta, tietojen välisten suhteiden luomisen ja hallinnan strategioista ja siitä, miten Data Analysis Expressions (DAX) -suodatinkontekstia käytetään. Selvitä, miten voit suoriutua mistä tahansa mallinnushaasteesta Power BI:n tai Azure Analysis Servicesin avulla.
+
+[Rekisteröidy ja katso marraskuun 20. päivä](https://info.microsoft.com/Strengthen-Your-Data-Modeling-Skills-with-PowerBI-Registration.html?Is=Website)
 
 >[Tulevia Power BI -yhteisön verkkoseminaareja](https://powerbi.microsoft.com/en-us/blog/tag/community-webinars/?Is=Website)
 

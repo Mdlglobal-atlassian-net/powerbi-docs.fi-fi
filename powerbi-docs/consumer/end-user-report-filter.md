@@ -1,21 +1,21 @@
 ---
-title: Power BI:n Suodattimet-ruudun yleiskatsaus kuluttajille
-description: Yleiskatsaus raportin Suodattimet-ruudusta Power BI -palvelussa.
+title: Lisää raporttisuodatin
+description: Suodattimen lisääminen raporttiin Power BI -palvelussa kuluttajille
 author: mihart
 manager: kvivek
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 09/25/2018
+ms.date: 10/19/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: c49e075bd7fbe2debb0b577a1ce2771491d5fac4
-ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
+ms.openlocfilehash: 31b3584b0cbd2481db64160bcf502caf46e7acc3
+ms.sourcegitcommit: 2c4a075fe16ccac8e25f7ca0b40d404eacb49f6d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "48908275"
+ms.lasthandoff: 10/20/2018
+ms.locfileid: "49473803"
 ---
 # <a name="take-a-tour-of-the-report-filters-pane"></a>Aloita raportin Suodattimet-ruudun esittely
 Tässä artikkelissa tutustutaan raportin Suodattimet-ruutuun Power BI -palvelussa.
@@ -29,7 +29,7 @@ Kun työtoverisi jakaa raportin kanssasi, etsi **Suodattimet**-ruutu. Joskus se 
 
 ![raportti selaimessa](media/end-user-report-filter/power-bi-expanded.png)
 
-Suodattimet-ruutu sisältää suodattimia, jotka raportin *suunnittelija* on lisännyt raporttiin. Kaltaisesi *kuluttajat* voivat käsitellä suodattimia ja tallentaa muutokset, mutta he eivät voi lisätä uusia suodattimia raporttiin.
+Suodattimet-ruutu sisältää suodattimia, jotka raportin *suunnittelija* on lisännyt raporttiin. Kaltaisesi *kuluttajat* voivat käsitellä suodattimia ja tallentaa muutokset, mutta he eivät voi lisätä uusia suodattimia raporttiin. Esimerkiksi yllä olevassa näyttökuvassa suunnittelija on lisännyt kaksi sivutason suodatinta: Segmentti ja Vuosi. Voit käyttää ja muuttaa näitä suodattimia, mutta et voi lisätä kolmatta sivutason suodatinta.
 
 Power BI -palvelussa raportit säilyttävät Suodattimet-ruudussa tekemäsi muutokset, ja muutokset siirtyvät myös raportin mobiiliversioon. Voit palauttaa suodatinruudun suunnittelijan oletusarvoihin valitsemalla **Palauta oletukset** yläreunan valikkoriviltä.     
 
@@ -40,11 +40,15 @@ Tässä esimerkissä olemme valinneet visualisoinnin, jossa on 6 suodatinta. Rap
 
 ![suodatinluettelo](media/end-user-report-filter/power-bi-filter-list.png)
 
-Joidenkin suodattimien vieressä on sana **All**, ja tämä tarkoittaa, että kaikki arvot sisältyvät suodattimeen.  Esimerkiksi **Chain(All)** alla olevassa näyttökuvassa ilmaisee, että tämä raporttisivu sisältää tietoja kaikista säilön ketjuista.  Toisaalta, raporttitason **FiscalYear is 2013 or 2014** -suodatin ilmaisee, että raportti sisältää tietoja vain tilikaudelle 2013 ja 2014.
+Joidenkin suodattimien vieressä on sana **All**, ja tämä tarkoittaa, että kaikki arvot sisältyvät suodattimeen.  Esimerkiksi **Chain(All)** alla olevassa näyttökuvassa ilmaisee, että tämä raporttisivu sisältää tietoja kaikista säilön ketjuista.  Toisaalta raporttitason **FiscalYear is 2013 or 2014** -suodatin ilmaisee, että raportti sisältää tietoja vain tilikaudelle 2013 ja 2014.
 
 Kaikki tätä raporttia tarkastelevat voivat käsitellä näitä suodattimia.
 
-* Voit tarkastella suodattimen tietoja viemällä hiiren osoittimen sen päälle ja valitsemalla suodattimen vieressä olevan nuolen.
+- Etsi ja valitse haluamasi arvo hakemalla sivusta, visualisoinnista, raportista ja porautumissuodattimista. 
+
+    ![Hae suodattimessa](media/end-user-report-filter/power-bi-filter-search.png)
+
+- Voit tarkastella suodattimen tietoja viemällä hiiren osoittimen sen päälle ja valitsemalla suodattimen vieressä olevan nuolen.
   
    ![näyttää Lindseys-kohdan valittuna](media/end-user-report-filter/power-bi-expan-filter.png)
 * Muuta suodatinta, esimerkiksi muuta **Lindseys**-suodatin **Fashions Direct** -suodattimeksi.
@@ -56,9 +60,11 @@ Kaikki tätä raporttia tarkastelevat voivat käsitellä näitä suodattimia.
     
 * Poista suodatin valitsemalla **x**:n suodattimen nimen vieressä.
   
-  Suodattimen poistaminen poistaa sen luettelosta, mutta ei poista tietoja raportista.  Esimerkiksi jos poistat **FiscalYear is 2013 or 2014** -suodattimen, tilikauden tiedot säilyvät edelleen raportissa, mutta sitä ei enää suodateta näyttämään vain tilikausia 2013 ja 2014, vaan siinä näkyvät kaikki tilikaudet, jotka ovat tiedoissa.  Kuitenkin kun poistat suodattimen, et voi muokata sitä uudelleen, koska se poistetaan luettelosta. Parempi vaihtoehto on tyhjentää suodatin valitsemalla Pyyhin-kuvake![pyyhin-kuvake](media/end-user-report-filter/power-bi-eraser-icon.png).
+    ![x korostettu](media/end-user-report-filter/power-bi-delete-filter.png)
+
+  Suodattimen poistaminen poistaa sen luettelosta, mutta ei poista tietoja raportista.  Esimerkiksi jos poistat **FiscalYear is 2013 or 2014** -suodattimen, tilikauden tiedot säilyvät edelleen raportissa, mutta sitä ei enää suodateta näyttämään vain tilikausia 2013 ja 2014, vaan siinä näkyvät kaikki tilikaudet, jotka ovat tiedoissa.  Kuitenkin kun poistat suodattimen, et voi muokata sitä uudelleen, koska se poistetaan luettelosta. Parempi vaihtoehto on tyhjentää suodatin valitsemalla Pyyhin-kuvake ![ pyyhin-kuvake ](media/end-user-report-filter/power-bi-eraser-icon.png).
   
-  ![x korostettu](media/end-user-report-filter/power-bi-delete-filter.png)
+  
 
 
 
@@ -70,14 +76,14 @@ Kaikki tätä raporttia tarkastelevat voivat käsitellä näitä suodattimia.
 ### <a name="list-mode"></a>Luettelotila
 Valintaruudun valinta joko valitsee tai poistaa arvon valinnan. **Kaikki**-valintaruutua käyttämällä kaikkien valintaruutujen tila voidaan ottaa käyttöön tai poistaa käytöstä. Valintaruudut edustavat kaikkia käytettävissä olevia arvoja kyseiselle kentälle.  Kun säädät suodatinta, oikaisu päivittyy tekemiesi valintojen mukaiseksi. 
 
-![luettelotilan suodatin](media/end-user-report-filter/pbi_restatement.png)
+![luettelotilan suodatin](media/end-user-report-filter/power-bi-restatement-new.png)
 
-Huomaa, miten oikaisussa lukee nyt ”is Amarilla or Carretera”.
+Huomaa, miten oikaisussa lukee nyt ”is Mar, Apr or May”.
 
 ### <a name="advanced-mode"></a>Mukautettu tila
 Valitse **Lisäsuodatus** vaihtaaksesi mukautettuun tilaan. Avattavan valikon ohjausobjektien ja tekstiruutujen avulla voit määrittää sisällytettävät kentät. Valitsemalla välillä **Ja** ja **Tai**, voit luoda monimutkaisia suodatinlausekkeita. Valitse **Käytä suodatinta** -painike, kun olet määrittänyt haluamasi arvot.  
 
-![mukautettu tila](media/end-user-report-filter/aboutfilters.png)
+![mukautettu tila](media/end-user-report-filter/power-bi-advanced.png)
 
 ## <a name="types-of-filters-numeric-field-filters"></a>Suodatintyyppejä: numeerisen kentän suodattimet
 ### <a name="list-mode"></a>Luettelotila
@@ -86,7 +92,7 @@ Jos arvot ovat rajattuja, kentän nimen valitseminen tuo näkyviin luettelon.  K
 ### <a name="advanced-mode"></a>Mukautettu tila
 Jos arvot ovat loputtomia tai edustavat aluetta, kentän nimen valitseminen avaa lisäsuodatuksen tilan. Avattavan valikon ja tekstiruutujen avulla voit määrittää arvoalueen, jonka haluat nähdä. 
 
-![lisäsuodatus](media/end-user-report-filter/pbi_dropdown-and-text.png)
+![lisäsuodatus](media/end-user-report-filter/power-bi-dropdown-and-text.png)
 
 Valitsemalla välillä **Ja** ja **Tai**, voit luoda monimutkaisia suodatinlausekkeita. Valitse **Käytä suodatinta** -painike, kun olet määrittänyt haluamasi arvot.
 

@@ -8,30 +8,39 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-admin
 ms.topic: conceptual
-ms.date: 09/11/2018
+ms.date: 10/21/2018
 LocalizationGroup: Premium
-ms.openlocfilehash: 0723ddb57131fed499d4ac86666b3cd6d8bcbd2d
-ms.sourcegitcommit: 833cf1252807721fb1b3000487bd032bfd6c8c98
+ms.openlocfilehash: 2ca75f191f27bd158b9fab67c7be6902154f8ac1
+ms.sourcegitcommit: a764e4b9d06b50d9b6173d0fbb7555e3babe6351
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48271804"
+ms.lasthandoff: 10/22/2018
+ms.locfileid: "49641225"
 ---
 # <a name="what-is-microsoft-power-bi-premium"></a>Mikä on Microsoft Power BI Premium?
 
-Microsoft Power BI Premium tarjoaa organisaatiollesi tai tiimillesi resurssit Power BI -palvelun käyttämiseen. Se mahdollistaa entistä luotettavamman suorituskyvyn ja suuremmat tietomäärät. Premiumin avulla voit jakaa sisältöä laajasti ilman käyttäjäkohtaisten Pro-käyttöoikeuksien hankkimista.
-
-Voit hyödyntää Power BI Premiumia määrittämällä työtiloja *Premium-kapasiteettiin*. Premium-kapasiteetti on organisaatiollesi varattu resurssi. Työtiloilla, joille ei ole määritetty Premium-kapasiteettia, on *jaettu kapasiteetti*. Kun käytössä on jaettu kapasiteetti, työnkulut suoritetaan muiden asiakkaiden kanssa jaetuissa laskennallisissa resursseissa. 
-
-Jaetussa kapasiteetissa Power BI määrittää yksittäisille käyttäjille enemmän rajoituksia laadukkaan käyttökokemuksen takaamiseksi kaikille käyttäjille. Työtilasi on oletusarvoisesti jaetussa kapasiteetissa, mukaan lukien *oma työtila* ja sovelluksen työtilat.
-
-[!INCLUDE [powerbi-premium-illustration](./includes/powerbi-premium-illustration.md)]
+Microsoft Power BI Premium tarjoaa organisaatiollesi resurssit Power BI -palvelun käyttämiseen. Se mahdollistaa entistä luotettavamman suorituskyvyn ja suuremmat tietomäärät. Premiumin avulla voit jakaa sisältöä laajasti ilman kuluttajakohtaisten Pro-käyttöoikeuksien hankkimista. Lisätietoja on artikkelissa [Ohjeet Power BI Premiumin ostamiseen](service-admin-premium-purchase.md).
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/lNQDkN0GXzU?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 
-## <a name="capacity-tiers"></a>Kapasiteettitasot
+## <a name="premium-capacity-and-shared-capacity"></a>Premium-kapasiteetti ja jaettu kapasiteetti
 
-Tässä on yhteenveto jaetun kapasiteetin ja Premium-kapasiteetin välisistä eroista.
+Voit hyödyntää Power BI Premiumia määrittämällä työtiloja *Premium-kapasiteettiin*. Premium-kapasiteetti on organisaatiollesi varattu resurssi. Työtiloilla, joille ei ole määritetty Premium-kapasiteettia, on *jaettu kapasiteetti*. Kun käytössä on jaettu kapasiteetti, työnkulut suoritetaan muiden asiakkaiden kanssa jaetuissa laskennallisissa resursseissa.
+
+Seuraavassa kuvassa on esitetty Premium-kapasiteetin ja jaetun kapasiteetin välinen suhde Contoso-organisaation avulla.
+
+![Power BI Premiumin kuva](media/service-premium/premium-chart.png)
+
+| Alue | Kuvaus |
+| --- | --- |
+| **(1)** Premium-kapasiteetin sisältämät kohteet | <ul><li>Sovellustyötilojen käyttäminen (jäsenenä tai järjestelmänvalvojana) edellyttää Power BI Pro -käyttöoikeutta.<li>Sovelluksen jakaminen edellyttää Pro-käyttöoikeutta, mutta sitä ei edellytetä sovellukseen käyttämiseen.<li>Kaikki koontinäytön vastaanottajat voivat määrittää tietoilmoituksia heille myönnetystä käyttöoikeudesta riippumatta.<li>Upottamiseen tarkoitetut REST-ohjelmointirajapinnat käyttävät käyttäjätilin sijasta palvelutiliä, jolla on Pro-käyttöoikeus.</ul> |
+| **(2)** Oma työtila jaetussa kapasiteetissa | <ul><li>Sovelluksen jakaminen ja käyttäminen edellyttävät kumpikin Pro-käyttöoikeutta.</ul> |
+| **(3)** Sovellustyötilat jaetussa kapasiteetissa | <ul><li>Minkä tahansa sovelluksen käyttäminen edellyttää Pro-käyttöoikeutta.</ul>|
+| | |
+
+Jaetussa kapasiteetissa Power BI määrittää yksittäisille käyttäjille enemmän rajoituksia laadukkaan käyttökokemuksen takaamiseksi kaikille käyttäjille. Työtilasi on oletusarvoisesti jaetussa kapasiteetissa, mukaan lukien *oma työtila* ja sovelluksen työtilat.
+
+Alla olevassa taulukossa on yhteenveto jaetun kapasiteetin ja Premium-kapasiteetin välisistä eroista.
 
 |  | Jaettu kapasiteetti | Power BI Premium -kapasiteetti |
 | --- | --- | --- |
@@ -41,17 +50,10 @@ Tässä on yhteenveto jaetun kapasiteetin ja Premium-kapasiteetin välisistä er
 | Sovellukset ja jakaminen |![](media/service-premium/not-available.png "Ei käytettävissä") |![](media/service-premium/available.png "Käytettävissä")<sup>1</sup> |
 | Upotettu ohjelmointirajapinta ja ohjausobjektit |![](media/service-premium/not-available.png "Ei käytettävissä") |![](media/service-premium/available.png "Käytettävissä")<sup>2</sup> |
 | **Power BI -raporttien paikallinen julkaisu** |![](media/service-premium/not-available.png "Ei käytettävissä") |![](media/service-premium/available.png "Käytettävissä") |
+| | | |
 
 *<sup>1</sup> Jos haluat lisätietoja, katso kohta [Ominaisuudet käyttöoikeustyypin mukaan](service-features-license-type.md).*  
 *<sup>2</sup> Parannuksia tulossa Power BI Premiumiin.*
-
-Aloita Power BI Premium -kapasiteetin käyttö määrittämällä työtila kapasiteettiin. Kun Premium-kapasiteetti tukee työtilaa, saat
-
-* **Ajoitetut päivitykset**: Kun käytössä on jaettu kapasiteetti, tuotujen mallitietojoukkojen ajoitetut päivitykset on rajoitettu kahdeksaan kertaan päivässä. Premium-työtilojen tietojoukoille voidaan ajoittaa päivityksiä jopa 48 kertaa päivässä. DirectQuery-välimuistin päivitykset ovat edelleen rajoitettu enintään kahdeksaan kertaan päivässä Premium-kapasiteetissa.
-
-* **Eristys erillisellä laitteistolla**: Jaetussa kapasiteetissa resurssin vaatimukset muille kuormituksille voivat vaikuttaa raporttien ja koontinäyttöjen toimintaan. Premium sen sijaan tarjoaa yhtenäisemmän ja luotettavamman suorituskyvyn kuormituksillesi eristämällä ne liittymättömistä kuormituksista.
-
-Jos sovellusta tukee Premium-kapasiteetti (eli jos se julkaistiin sovellustyötilasta, joka on tällä hetkellä määritetty Premiumiin), julkaistua sovellusta voi käyttää kuka tahansa organisaation käyttäjä hänelle määritetystä käyttöoikeudesta riippumatta.
 
 Lisätietoja työtilojen määrittämisestä Premium-kapasiteettiin on artikkelissa [Power BI Premiumin hallinta](service-admin-premium-manage.md).
 
@@ -59,14 +61,14 @@ Lisätietoja työtilojen määrittämisestä Premium-kapasiteettiin on artikkeli
 
 ### <a name="premium-capacity-nodes"></a>Premium-kapasiteetin solmut
 
-Power BI Premium on saatavilla solmumäärityksinä eri näennäisydinkapasiteeteilla. Jos haluat lisätietoja tietyistä varastointiyksikkövaihtoehdoista ja niiden hinnoista, katso [Power BI:n hinnoittelu](https://powerbi.microsoft.com/pricing/). [Kustannuslaskin](https://powerbi.microsoft.com/calculator/) on myös käytettävissä. Jos haluat lisätietoja upotetun analytiikan kapasiteetin suunnittelusta, katso [Power BI:n yrityskäyttöönoton suunnittelemisen tekninen raportti](https://aka.ms/pbienterprisedeploy).
+Power BI Premium on saatavilla solmumäärityksinä eri näennäisydinkapasiteeteilla. Jos haluat lisätietoja tietyistä varastointiyksikkövaihtoehdoista ja niiden hinnoista, katso [Power BI:n hinnoittelu](https://powerbi.microsoft.com/pricing/). [Kustannuslaskin](https://powerbi.microsoft.com/calculator/) on myös käytettävissä. Jos haluat lisätietoja upotetun analytiikan kapasiteetin suunnittelusta, katso [Power BI:n yrityskäyttöönoton suunnittelemisen tekninen raportti](https://aka.ms/pbienterprisedeploy). Yhteenveto:
 
 * P-solmuja voi käyttää upotetuissa tai palvelun käyttöönotoissa.
 
 * EM-solmuja voi käyttää vain upotetuissa käyttöönotoissa. EM-solmut eivät tue Premium-ominaisuuksia, kuten sovellusten jakamista käyttäjille, joilla ei ole Power BI Pro -käyttöoikeutta.
 
 >[!NOTE]
->Tämän taulukon linkit toimivat oikein vain käyttäjillä, jotka ovat Office 365:n yleisiä järjestelmänvalvojia. Muut saavat virheilmoituksen 404.
+>Tämän taulukon linkit toimivat oikein vain käyttäjillä, joilla on Office 365:n yleisen järjestelmänvalvojan rooli. Muut saavat virheilmoituksen 404.
 
 | Kapasiteetin solmu | V-ytimiä yhteensä<br/>*(Tausta ja edusta)* | Taustan näennäisytimet | Edustan V-ytimet | DirectQueryn/live-yhteyden rajoitukset | Sivun hahmonnuksia enintään huipputuntina | Käytettävyys |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -76,21 +78,23 @@ Power BI Premium on saatavilla solmumäärityksinä eri näennäisydinkapasiteet
 | [P1](https://portal.office.com/SubscriptionDetails?OfferId=b3ec5615-cc11-48de-967d-8d79f7cb0af1&adminportal=1) |8 näennäisydintä |4 näennäisydintä, 25 Gt RAM |4 näennäisydintä |30 sekunnissa |1 201–2 400 |Käytettävissä ([kuukausittain](https://portal.office.com/SubscriptionDetails?OfferId=E4C8EDD3-74A1-4D42-A738-C647972FBE81&adminportal=1) on myös käytettävissä) |
 | [P2](https://portal.office.com/SubscriptionDetails?OfferId=062F2AA7-B4BC-4B0E-980F-2072102D8605&adminportal=1) |16 näennäisydintä |8 näennäisydintä, 50 Gt RAM |8 näennäisydintä |60 sekunnissa |2 401–4 800 |Käytettävissä |
 | [P3](https://portal.office.com/SubscriptionDetails?OfferId=40c7d673-375c-42a1-84ca-f993a524fed0&adminportal=1) |32 näennäisydintä |16 näennäisydintä, 100 Gt RAM |16 näennäisydintä |120 sekunnissa |4 801–9 600 |Käytettävissä |
+| | | | | | | |
 
 * Edustan v-ytimet vastaavat verkkopalvelusta, koontinäytön ja raportin tiedostohallinnasta, käyttöoikeuksien hallinnasta, ajoituksista, ohjelmointirajapinnoista, latauksista ja yleisesti ottaen kaikesta, mikä liittyy käyttökokemukseen.
 
 * Taustan v-ytimet vastaavat raskaasta työstä eli kyselyiden käsittelystä, välimuistin hallinnasta, R-palvelinten suorittamisesta, tietojen päivittämisestä, luonnollisen kielen käsittelystä, reaaliaikaisista syötteistä sekä raporttien ja kuvien palvelinpuolen hahmontamisesta. Taustan v-ytimille varataan myös tietty määrä muistia. Riittävä muisti on erityisen tärkeä, kun käsitellään suuria tietomalleja tai useita aktiivisia tietojoukkoja.
 
 ## <a name="power-bi-report-server"></a>Power BI -raporttipalvelin
+
 Power BI Premium sisältää myös mahdollisuuden suorittaa Power BI -raporttipalvelin paikallisesti organisaatiossasi. Lisätietoja on artikkelissa [Power BI -raporttipalvelimen käytön aloittaminen](report-server/get-started.md).
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
-[Power BI Premiumin usein kysytyt kysymykset](service-premium-faq.md)  
-[Power BI Premiumin julkaisutiedot](service-premium-release-notes.md)  
-[Ohjeet Power BI Premiumin ostamiseen](service-admin-premium-purchase.md)  
-[Power BI Premiumin hallinta](service-admin-premium-manage.md)  
-[Microsoft Power BI Premiumin tekninen raportti](https://aka.ms/pbipremiumwhitepaper)  
-[Power BI:n yrityskäyttöönoton suunnittelemisen tekninen raportti](https://aka.ms/pbienterprisedeploy)  
-[Power BI:n hallinta organisaatiossa](service-admin-administering-power-bi-in-your-organization.md)  
 
-Onko sinulla muuta kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
+[Power BI Premiumin UKK](service-premium-faq.md)
+[Power BI Premiumin ostaminen](service-admin-premium-purchase.md)
+[Power BI Premiumin hallinta](service-admin-premium-manage.md)
+[Microsoft Power BI Premiumin tekninen raportti](https://aka.ms/pbipremiumwhitepaper)
+[Power BI:n yrityskäyttöönoton suunnittelemisen tekninen raportti](https://aka.ms/pbienterprisedeploy)
+[Power BI:n hallinta organisaatiossasi](service-admin-administering-power-bi-in-your-organization.md)
+
+Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)

@@ -8,18 +8,18 @@ featuredvideoid: jtlLGRKBvXY
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 10/08/2018
+ms.date: 10/16/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: d042119a95cb60f930a0535e93b0a50ee9224da3
-ms.sourcegitcommit: dc8b8a2cf2dcc96ccb46159802ebd9342a7fa840
+ms.openlocfilehash: af39332bdc1c9e1529d56f55215b0b32ab86f3e7
+ms.sourcegitcommit: a3ce866caba24217bcdd011e892b9ea72f3d2400
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49112256"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49396806"
 ---
 # <a name="export-data-from-visualizations"></a>Tietojen vieminen visualisoinneista
-Jos haluat tarkastella tietoja, joita käytetään visualisoinnin luonnissa, voit näyttää kyseiset tiedot Power BI:ssä tai viedä tiedot Exceliin .xlsx- tai .csv-tiedostona.   
+Jos haluat tarkastella tietoja, joita käytetään visualisoinnin luonnissa, voit näyttää kyseiset tiedot Power BI:ssä tai viedä tiedot Exceliin .xlsx- tai .csv-tiedostona. Tietojen vienti edellyttää Pro- tai Premium-käyttöoikeutta ja tietojoukon ja raportin muokkausoikeuksia. 
 
 Katso videolta, miten tiedot viedään raportin visualisoinnista, tallennetaan .xlsx-tiedostoksi ja avataan Excelissä. Kokeile sitten itse noudattamalla videon alapuolella olevia vaiheittaisia ohjeita.
 
@@ -92,9 +92,12 @@ Kun valitset **Pohjana olevat tiedot**, saatat nähdä erilaisia tietoja. Näide
 
 ### <a name="set-the-export-options"></a>Vientiasetusten määrittäminen
 Power BI:n raporttien suunnitteluohjelmassa määritetään, mitkä tietojen vientiasetukset ovat kuluttajien käytettävissä. Vaihtoehdot ovat seuraavat:
-- Salli vain yhteenvedon vienti (tämä on raporttien oletusasetus) 
-- Salli yhteenvedon ja pohjana olevien tietojen vienti  
+- Salli vain tietojen yhteenvedon vienti (tämä on uusien raporttien oletusasetus) 
+- Salli tietojen yhteenvedon ja pohjalla olevien tietojen vienti (tämä oli oletusasetus ennen lokakuuta 2018) 
 - Älä salli minkään tietojen vientiä  
+
+    > [!IMPORTANT]
+    > Suosittelemme, että raportin suunnittelijat käyvät läpi vanhat raportit ja määrittävät vientiasetukset manuaalisesti tarpeen mukaan.
 
 1. Aloita näiden asetusten määrittäminen Power BI Desktopista.
 
