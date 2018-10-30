@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 12/06/2017
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 8b0121dbfe633eca9c438dfd272d3aeb56fd59a4
-ms.sourcegitcommit: 001ea0ef95fdd4382602bfdae74c686de7dc3bd8
+ms.openlocfilehash: 30ac2c0620607d680874e423c841c381fc273904
+ms.sourcegitcommit: 60fb46b61ac73806987847d9c606993c0e14fb30
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38921503"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50101504"
 ---
 # <a name="on-premises-data-gateway-in-depth"></a>Paikallinen tietoyhdyskäytävä tarkemmin
 Organisaatiosi käyttäjät voivat käyttää paikallisia tietoja (joihin heillä on jo käyttöoikeus), mutta ennen kuin kyseiset käyttäjät voivat muodostaa yhteyden paikalliseen tietolähteeseen, paikallinen tietoyhdyskäytävä on asennettava ja määritettävä. Yhdyskäytävä helpottaa nopeaa ja turvallista taustaviestintää pilvipalvelussa olevalta käyttäjältä paikalliselle tietolähteelle ja takaisin pilvipalveluun.
@@ -52,7 +52,7 @@ Käyttäjän mahdollisuus suorittaa kyselyjä ja tarkastella mallitietoja määr
 Tässä artikkelissa ei käsitellä roolipohjaisen ja dynaamisen rivitason suojauksen ottamista käyttöön malleissa.  Lisätietoja on MSDN:n artikkeleissa, jotka käsittelevät [rooleja (SSAS – taulukkomuoto)](https://msdn.microsoft.com/library/hh213165.aspx) ja [käyttöoikeusrooleja (Analysis Services – monidimensionaaliset tiedot)](https://msdn.microsoft.com/library/ms174840.aspx). Jos haluat ymmärtää taulukkomallin suojausta mahdollisimman perusteellisesti, lataa ja lue [Taulukkomuotoisten liiketoimintatietojen semanttisen mallin suojaamista käsittelevä tekninen raportti](https://msdn.microsoft.com/library/jj127437.aspx).
 
 ## <a name="what-about-azure-active-directory"></a>Entä Azure Active Directory?
-Microsoft-pilvipalveluissa käyttäjät todennetaan [Azure Active Directoryn](https://azure.microsoft.com/documentation/articles/active-directory-whatis/) avulla. Azure Active Directory on vuokraaja, joka sisältää käyttäjänimet ja käyttöoikeusryhmät. Yleensä kirjautumisessa käytetty sähköpostiosoite on sama kuin tilin täydellinen käyttäjätunnus.
+Microsoft-pilvipalveluissa käyttäjät todennetaan [Azure Active Directoryn](/azure/active-directory/fundamentals/active-directory-whatis) avulla. Azure Active Directory on vuokraaja, joka sisältää käyttäjänimet ja käyttöoikeusryhmät. Yleensä kirjautumisessa käytetty sähköpostiosoite on sama kuin tilin täydellinen käyttäjätunnus.
 
 Mikä on käyttäjän oman paikallisen Active Directoryn rooli?
 
@@ -78,7 +78,7 @@ Pilvipalvelut tuntevat vain Azure Active Directoryn tilit. Vaikka olisit lisänn
 1. Voit lisätä tilejä Azure Active Directoryyn manuaalisesti.
    
    Voit luoda tilin Azure-portaalissa tai Office 365 -hallintaportaalissa, ja tilin nimi vastaa paikallisen Active Directoryn tilin täydellistä käyttäjätunnusta.
-2. Voit synkronoida paikalliset tilit Azure Active Directory -vuokraajan kanssa [Azure AD Connect](https://azure.microsoft.com/documentation/articles/active-directory-aadconnect/) -työkalun avulla.
+2. Voit synkronoida paikalliset tilit Azure Active Directory -vuokraajan kanssa [Azure AD Connect](/azure/active-directory/hybrid/how-to-connect-sync-whatis) -työkalun avulla.
    
    Azure AD Connect -työkalulla voidaan synkronoida hakemistot ja määrittää todentaminen, mukaan lukien salasanan hajautuksen synkronointi, läpivientitodentaminen ja liittoutuminen. Jos et ole vuokraajan järjestelmänvalvoja tai paikallisen toimialueen järjestelmänvalvoja, sinun on pyydettävä IT-järjestelmänvalvojaasi tekemään määritykset.
 
@@ -90,7 +90,7 @@ Azure AD Connectin käyttäminen varmistaa, että AAD:n ja paikallisen Active Di
 > 
 
 ## <a name="now-this-is-where-the-gateway-comes-in"></a>Tässä vaiheessa yhdyskäytävä tulee mukaan kuvaan.
-Yhdyskäytävä toimii siltana pilvipalvelun ja paikallisen palvelimen välillä. Pilvipalvelun ja yhdyskäytävän välinen tiedonsiirto suojataan [Azuren palveluväylän](https://azure.microsoft.com/documentation/services/service-bus/) avulla. Palveluväylä luo suojatun kanavan pilven ja paikallisen palvelimen välille yhdyskäytävän lähtevän yhteyden kautta.  Saapuvia yhteyksiä, jotka olisi avattava paikallisessa palomuurissa, ei ole.
+Yhdyskäytävä toimii siltana pilvipalvelun ja paikallisen palvelimen välillä. Pilvipalvelun ja yhdyskäytävän välinen tiedonsiirto suojataan [Azuren palveluväylän](/azure/service-bus-messaging/service-bus-messaging-overview) avulla. Palveluväylä luo suojatun kanavan pilven ja paikallisen palvelimen välille yhdyskäytävän lähtevän yhteyden kautta.  Saapuvia yhteyksiä, jotka olisi avattava paikallisessa palomuurissa, ei ole.
 
 Jos sinulla on Analysis Services -tietolähde, sinun on asennettava yhdyskäytävä sellaisessa tietokoneessa, joka on liitetty samaan toimialuepuuryhmään tai toimialueeseen kuin Analysis Services -palvelin.
 
@@ -116,8 +116,10 @@ Sen sijaan, että käsittelisimme yhdyskäytävän ongelmien vianmääritystä t
 [!INCLUDE [gateway-onprem-accounts-ports-more](./includes/gateway-onprem-accounts-ports-more.md)]
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
+
 [Paikallisen tietoyhdyskäytävän vianmääritys](service-gateway-onprem-tshoot.md)  
-[Azuren palveluväylä](https://azure.microsoft.com/documentation/services/service-bus/)  
-[Azure AD Connect](https://azure.microsoft.com/documentation/articles/active-directory-aadconnect/)  
+[Azuren palveluväylä](/azure/service-bus-messaging/service-bus-messaging-overview/)  
+[Azure AD Connect](/azure/active-directory/hybrid/how-to-connect-sync-whatis/)  
+
 Onko sinulla muuta kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
 

@@ -10,12 +10,12 @@ ms.component: powerbi-gateways
 ms.topic: conceptual
 ms.date: 08/08/2018
 LocalizationGroup: Gateways
-ms.openlocfilehash: a8f0360d87fe5bf4e19632a92d8dfe4cf61da16e
-ms.sourcegitcommit: 2c4a075fe16ccac8e25f7ca0b40d404eacb49f6d
+ms.openlocfilehash: 2a4fb3bdf4e1041ceb90cde9b6c5f26fcb9a3871
+ms.sourcegitcommit: 60fb46b61ac73806987847d9c606993c0e14fb30
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/20/2018
-ms.locfileid: "49474022"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50101642"
 ---
 # <a name="troubleshooting-the-on-premises-data-gateway"></a>Paikallisen tietoyhdyskäytävän vianmääritys
 
@@ -446,7 +446,7 @@ Testituloksissa luetellaan kaikki palvelimet, portit ja IP-osoitteet, joita yhdy
 
 ## <a name="kerberos"></a>Kerberos
 
-Jos taustalla olevaa tietokantapalvelinta ja paikallista tietoyhdyskäytävää ei ole määritetty oikein [Kerberoksen rajoitetulle delegoinnille](service-gateway-kerberos-for-sso-pbi-to-on-premises-data.md), ota [yksityiskohtainen kirjaaminen](#microsoftpowerbidatamovementpipelinediagnosticsdllconfig) käyttöön yhdyskäytävässä ja tarkista sen lokitiedostosta virheet ja jäljitystiedot. Näin voit aloittaa vianmäärityksen.
+Jos taustalla olevaa tietokantapalvelinta ja paikallista tietoyhdyskäytävää ei ole määritetty oikein [Kerberoksen rajoitetulle delegoinnille](service-gateway-sso-kerberos.md), ota [yksityiskohtainen kirjaaminen](#microsoftpowerbidatamovementpipelinediagnosticsdllconfig) käyttöön yhdyskäytävässä ja tarkista sen lokitiedostosta virheet ja jäljitystiedot. Näin voit aloittaa vianmäärityksen.
 
 ### <a name="impersonationlevel"></a>ImpersonationLevel
 

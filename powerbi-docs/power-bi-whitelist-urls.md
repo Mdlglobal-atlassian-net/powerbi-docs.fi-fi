@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 10/22/2018
-ms.openlocfilehash: cc7b24d273f8e83854f7e316f0c761e710e48160
-ms.sourcegitcommit: a764e4b9d06b50d9b6173d0fbb7555e3babe6351
+ms.openlocfilehash: 7b57e0d5e303f2b342e2d7750741717b178a8f4e
+ms.sourcegitcommit: f9dd6098ca57d4d6cad34284126d4e58eab1c92c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/22/2018
-ms.locfileid: "49641961"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50222101"
 ---
 # <a name="power-bi-urls"></a>Power BI:n URL-osoitteet
 
@@ -70,7 +70,7 @@ Jotta voit saada tietoja tietyistä tietolähteistä, kuten OneDrivesta, sinun o
 | --- | --- | --- | --- |
 | 1 | **Pakollinen:** AppSource (Power BI:n sisäiset tai ulkoiset sovellukset) | appsource.microsoft.com </br> *.s-microsoft.com  | TCP 443 |
 | 2 | **Pakollinen:** kirjaudu sisään ja nouda tietoja sisältöpaketeille | *.github.com  | TCP 443 |
-| 3 | **Pakollinen:** tuo tiedostoja henkilökohtaisesta OneDrivesta | Katso [OneDrive-sivuston pakolliset URL-osoitteet ja portit](https://docs.microsoft.com/en-us/onedrive/required-urls-and-ports) | – |
+| 3 | **Pakollinen:** tuo tiedostoja henkilökohtaisesta OneDrivesta | Katso [OneDrive-sivuston pakolliset URL-osoitteet ja portit](https://docs.microsoft.com/onedrive/required-urls-and-ports) | – |
 | 4 | **Valinnainen:** Power BI:n 60 sekunnin opetusohjelmavideo | *.doubleclick.net </br> *.ggpht.com </br> *.google.com </br> *.googlevideo.com </br> *.youtube.com </br> *.ytimg.com </br> fonts.gstatic.com | TCP 443 |
 | 5 | **Valinnainen:** PubNub-suoratoiston tietolähteet | Katso [PubNub-dokumentaatio](https://support.pubnub.com/support/solutions/articles/14000043522) | – |
 | | | |
@@ -93,7 +93,7 @@ Power BI riippuu tietyistä päätepisteistä mukautettujen visualisointien tark
 | 1 | **Pakollinen:** tuo mukautettu visualisointi Marketplace-liittymästä tai tiedostosta | *.azureedge.net </br> *.blob.core.windows.net </br> store.office.com | TCP 443 |
 | 2 | **Pakollinen:** Bing-kartat | bing.com </br> platform.bing.com </br> *.dynamic.tiles.virtualearth.net </br> *.virtualearth.net | TCP 443 |
 | 3 | **Valinnainen:** PowerApps | Katso [Pakolliset palvelut -osiota](https://docs.microsoft.com/powerapps/maker/canvas-apps/limits-and-config#required-services) PowerApps-järjestelmän vaatimukset -sivustosta | – |
-| 4 | **Valinnainen:** Visio | Tutustu Office 365 -ohjeisiin [Office Online ja yleiset URL-osoitteet](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online) ja [SharePoint Online ja OneDrive for Business](https://docs.microsoft.com/en-us/office365/enterprise/urls-and-ip-address-ranges#sharepoint-online-and-onedrive-for-business) | – |
+| 4 | **Valinnainen:** Visio | Tutustu Office 365 -ohjeisiin [Office Online ja yleiset URL-osoitteet](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online) ja [SharePoint Online ja OneDrive for Business](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#sharepoint-online-and-onedrive-for-business) | – |
 | | | |
 
 ## <a name="related-external-sites"></a>Aiheeseen liittyvät ulkoiset sivustot

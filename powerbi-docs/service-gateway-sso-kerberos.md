@@ -10,12 +10,12 @@ ms.component: powerbi-gateways
 ms.topic: conceptual
 ms.date: 10/10/2018
 LocalizationGroup: Gateways
-ms.openlocfilehash: 0055994ee883fbdb508dfa304d063bc359dd5beb
-ms.sourcegitcommit: a764e4b9d06b50d9b6173d0fbb7555e3babe6351
+ms.openlocfilehash: b66799df83095ce2104196b076482cc232c9bfae
+ms.sourcegitcommit: 60fb46b61ac73806987847d9c606993c0e14fb30
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/22/2018
-ms.locfileid: "49641616"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50101619"
 ---
 # <a name="use-kerberos-for-single-sign-on-sso-from-power-bi-to-on-premises-data-sources"></a>Kerberoksen käyttäminen kertakirjautumista (SSO) varten Power BI:stä paikallisiin tietolähteisiin
 
@@ -61,7 +61,7 @@ Normaalissa asennuksessa yhdyskäytävä toimii tietokoneen paikallisena palvelu
 Jotta **rajoitettu Kerberos-delegointi** voidaan ottaa käyttöön, yhdyskäytävän on toimittava toimialuetilinä, ellei Azure AD ole jo synkronoitu paikallisen Active Directoryn kanssa (käyttämällä Azure AD DirSynciä/Connectia). Jos haluat vaihtaa tilin toimialuetiliin, tutustu kohtaan [Yhdyskäytävän vaihtaminen toimialuetiliin](#switching-the-gateway-to-a-domain-account) myöhemmin tässä artikkelissa.
 
 > [!NOTE]
-> Jos määrität Azure AD DirSyncin / Connectin ja käyttäjätilit synkronoidaan, yhdyskäytäväpalvelun ei tarvitse tehdä hakuja paikallisesta AD:sta suorituksen aikana ja voit käyttää yhdyskäytäväpalvelussa paikallisen palvelun SID-tunnusta (toimialuetilin edellyttämisen sijaan). Tässä artikkelissa kuvatut rajoitetun Kerberos-delegoinnin määritysvaiheet ovat samat kuin kyseinen määritys (niitä sovelletaan palvelun SID-tunnuksen perusteella toimialuetilin sijaan).
+> Jos määrität Azure AD DirSyncin / Connectin ja käyttäjätilit synkronoidaan, yhdyskäytäväpalvelun ei tarvitse tehdä hakuja paikallisesta AD:sta suorituksen aikana ja voit käyttää yhdyskäytäväpalvelussa paikallisen palvelun SID-tunnusta (toimialuetilin edellyttämisen sijaan). Tässä artikkelissa kuvatut rajoitetun Kerberos-delegoinnin määritysvaiheet ovat samat kuin kyseinen määritys (niitä sovelletaan yhdyskäytävän tietokoneobjektiin Active Directoryssa toimialuetilin sijaan).
 
 ### <a name="prerequisite-3-have-domain-admin-rights-to-configure-spns-setspn-and-kerberos-constrained-delegation-settings"></a>Edellytys 3: Toimialueen järjestelmänvalvojan oikeuksien hankkiminen päänimien (SetSPN) ja rajoitetun Kerberos-delegoinnin asetusten määrittämiseksi
 

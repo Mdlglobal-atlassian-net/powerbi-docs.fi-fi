@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 01/24/2018
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 2eb880ee512a3f13c56bb6dbf880209f05cdf7b4
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: ff770320e0e6cd3f591e3318637a04977152e488
+ms.sourcegitcommit: 60fb46b61ac73806987847d9c606993c0e14fb30
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34296306"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50101412"
 ---
 # <a name="manage-your-data-source---sql-server"></a>Tietolähteen hallinta – SQL Server
 Kun paikallinen tietoyhdyskäytävä on asennettu, sinun on lisättävä tietolähteitä, joita voidaan käyttää kyseisen yhdyskäytävän kanssa. Tässä artikkelissa tarkastellaan yhdyskäytävien ja tietolähteiden käsittelyä. Voit käyttää SQL Server-tietolähdettä joko ajoitettua päivitystä tai DirectQuerya varten.
@@ -60,7 +60,7 @@ Täytä sitten tietolähteen tiedot, jotka sisältävät **Palvelimen** ja **Tie
 Sinun on myös valittava **todennusmenetelmä**.  Tämä voi olla joko **Windows** tai **Basic**.  Haluat ehkä valita vaihtoehdon **Basic**, jos aiot käyttää SQL-todennusta Windows-todennuksen sijaan. Anna tunnistetiedot, joita käytetään tälle tietolähteelle.
 
 > [!NOTE]
-> Kaikki kyselyt tietolähteelle suoritetaan käyttämällä näitä tunnistetietoja, ellei Kerberos-kertakirjautumista (SSO) ole määritetty ja käytössä tietolähteelle. SSO:n avulla tietojoukkojen tuonnissa käytetään tallennettuja tunnistetietoja, mutta DirectQuery-tietojoukkoja käytetään nykyisen Power BI -käyttäjän kyselyihin SSO:n avulla. Lisätietoja saa artikkelista Paikallisen tietojen yhdyskäytävä siitä, miten [tunnistetiedot](service-gateway-onprem.md#credentials) tallennetaan, tai artikkelista, jossa kuvataan, miten [käyttää Kerberos for SSO:a (kertakirjautuminen) Power BI:stä paikalliseen tietolähteiden ympäristöön](service-gateway-kerberos-for-sso-pbi-to-on-premises-data.md). 
+> Kaikki kyselyt tietolähteelle suoritetaan käyttämällä näitä tunnistetietoja, ellei Kerberos-kertakirjautumista (SSO) ole määritetty ja käytössä tietolähteelle. SSO:n avulla tietojoukkojen tuonnissa käytetään tallennettuja tunnistetietoja, mutta DirectQuery-tietojoukkoja käytetään nykyisen Power BI -käyttäjän kyselyihin SSO:n avulla. Lisätietoja saa artikkelista Paikallisen tietojen yhdyskäytävä siitä, miten [tunnistetiedot](service-gateway-onprem.md#credentials) tallennetaan, tai artikkelista, jossa kuvataan, miten [käyttää Kerberos for SSO:a (kertakirjautuminen) Power BI:stä paikalliseen tietolähteiden ympäristöön](service-gateway-sso-kerberos.md). 
 > 
 > 
 
@@ -123,6 +123,6 @@ Jos sinut on lisätty yhdyskäytävän sisällä määritellyn tietolähteen **K
 * [Paikallinen tietoyhdyskäytävä](service-gateway-onprem.md)  
 * [Paikallinen tietoyhdyskäytävä – tarkat tiedot](service-gateway-onprem-indepth.md)  
 * [Paikallisen tietoyhdyskäytävän vianmääritys](service-gateway-onprem-tshoot.md)
-* [Kerberoksen käyttäminen SSO:ta (kertakirjautumista) varten Power BI:stä paikallisiin tietolähteisiin](service-gateway-kerberos-for-sso-pbi-to-on-premises-data.md). 
+* [Kerberoksen käyttäminen SSO:ta (kertakirjautumista) varten Power BI:stä paikallisiin tietolähteisiin](service-gateway-sso-kerberos.md). 
 * Onko sinulla muuta kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
 

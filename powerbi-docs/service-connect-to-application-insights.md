@@ -10,15 +10,15 @@ ms.topic: conceptual
 ms.date: 08/10/2018
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 00a42a3ffcc92ca7bc48459635359acb9da8da82
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 34e3524d561fb6f6394d69fed55c1bd29bddf4bd
+ms.sourcegitcommit: 60fb46b61ac73806987847d9c606993c0e14fb30
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46548346"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50100584"
 ---
 # <a name="connect-to-application-insights-with-power-bi"></a>Application Insightsin yhdistäminen Power BI:hin
-Power BI:n avulla voit luoda tehokkaita mukautettuja raporttinäkymiä [Application Insights](https://azure.microsoft.com/documentation/articles/app-insights-overview/) -telemetriatiedoista. Näet sovellustelemetrian uusilla tavoilla. Yhdistä mittareita useista sovelluksista tai komponenttipalveluista yhteen raporttinäkymään. Power BI -sisältöpaketin ensimmäisessä Application Insights -julkaisussa on pienoissovelluksia yleisiä käyttöön liittyviä arvoja varten. Näitä ovat muun muassa aktiiviset käyttäjät, sivunäkymä, istunnot, selain- ja käyttöjärjestelmäversiot sekä käyttäjien maantieteellinen jakauma kartalla.
+Power BI:n avulla voit luoda tehokkaita mukautettuja raporttinäkymiä [Application Insights](/azure/application-insights/app-insights-overview/) -telemetriatiedoista. Näet sovellustelemetrian uusilla tavoilla. Yhdistä mittareita useista sovelluksista tai komponenttipalveluista yhteen raporttinäkymään. Power BI -sisältöpaketin ensimmäisessä Application Insights -julkaisussa on pienoissovelluksia yleisiä käyttöön liittyviä arvoja varten. Näitä ovat muun muassa aktiiviset käyttäjät, sivunäkymä, istunnot, selain- ja käyttöjärjestelmäversiot sekä käyttäjien maantieteellinen jakauma kartalla.
 
 Muodosta yhteys [Application Insights -sisältöpakettiin Power BI:tä varten](https://app.powerbi.com/getdata/services/application-insights).
 
