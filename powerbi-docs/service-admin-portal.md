@@ -7,34 +7,35 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-admin
 ms.topic: conceptual
-ms.date: 06/28/2017
+ms.date: 10/30/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 2f10ead5d08efa12cae05aeb6f2e3d3068636f77
-ms.sourcegitcommit: a3ce866caba24217bcdd011e892b9ea72f3d2400
+ms.openlocfilehash: 02829adb386cc746715a34300a42aba616dc2d60
+ms.sourcegitcommit: 862faf948468d7f6d464b83f4e0b040d5213a580
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49396907"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50252487"
 ---
 # <a name="power-bi-admin-portal"></a>Power BI -hallintaportaali
 
-Hallintaportaalissa voit hallita organisaatiosi Power BI -vuokraajia. Hallintaportaali sisältää esimerkiksi käyttömittareita ja asetuksia. Sen kautta voit käyttää myös Office 365 -hallintakeskusta.
+Hallintaportaalissa voit hallita organisaatiosi Power BI *-vuokraajaa*. Hallintaportaali sisältää esimerkiksi käyttömittareita ja asetuksia. Sen kautta voit käyttää myös Office 365 -hallintakeskusta.
 
-Voit hallita yrityksesi Power BI -vuokraajia Power BI -hallintaportaalissa. Hallintaportaalia voivat käyttää kaikki Office 365:n yleiset järjestelmänvalvojat ja käyttäjät, joille on määritetty Power BI -palvelun järjestelmänvalvojan rooli. Jos haluat lisätietoja Power BI -palvelun järjestelmänvalvojan roolista, lue ohjeartikkeli [Power BI -järjestelmänvalvojaroolin kuvaus](service-admin-role.md).
-
-Kaikki käyttäjät näkevät **hallintaportaalin** hammasrataskuvakkeen alla. Jos käyttäjä ei ole järjestelmänvalvoja, hän voi nähdä vain **Premium-asetusten** kohdan ja vain ne kapasiteetit, joiden hallintaan hänellä on oikeudet.
+Hallintaportaalin kaikkia toimintoja voivat käyttää kaikki Office 365:n yleiset järjestelmänvalvojat ja käyttäjät, joille on määritetty Power BI -palvelun järjestelmänvalvojan rooli. Jos et ole tällainen käyttäjä, näet portaalissa vain **kapasiteettiasetukset**. Jos haluat lisätietoja Power BI -palvelun järjestelmänvalvojan roolista, lue ohjeartikkeli [Power BI -järjestelmänvalvojaroolin kuvaus](service-admin-role.md).
 
 ## <a name="how-to-get-to-the-admin-portal"></a>Hallintaportaaliin siirtyminen
 
 Tililläsi täytyy olla **yleisen järjestelmänvalvojan** oikeudet Office 365:ssä tai Azure Active Directoryssa tai Power BI -palvelun järjestelmänvalvojan oikeudet, jotta voit käyttää Power BI -hallintaportaalia. Jos haluat lisätietoja Power BI -palvelun järjestelmänvalvojan roolista, lue ohjeartikkeli [Power BI -järjestelmänvalvojaroolin kuvaus](service-admin-role.md). Voit siirtyä Power BI -hallintaportaaliin alla annettujen ohjeiden mukaisesti.
 
 1. Napsauta asetusten hammasrataskuvaketta Power BI -palvelun oikeassa yläkulmassa.
-2. Valitse **Hallintaportaali**.
 
-![](media/service-admin-portal/powerbi-admin-settings.png)
+1. Valitse **Hallintaportaali**.
 
-Portaalissa on kuusi välilehteä. Ne on lueteltu alla:
+    ![Hallintaportaalin asetukset](media/service-admin-portal/powerbi-admin-settings.png)
+
+Portaalissa on seitsemän välilehteä. Tässä artikkelissa kerrotaan lisätietoja näistä välilehdistä.
+
+![Siirtyminen hallintaportaalissa](media/service-admin-portal/powerbi-admin-landing-page.png)
 
 * [Käyttömittarit](#usage-metrics)
 * [Käyttäjät](#users)
@@ -42,12 +43,11 @@ Portaalissa on kuusi välilehteä. Ne on lueteltu alla:
 * [Vuokraaja-asetukset](#tenant-settings)
 * [Premium-asetukset](#premium-settings)
 * [Upotuskoodit](#embed-codes)
-* [Organisaation visualisoinnit.](#Organization-visuals)
-
-![](media/service-admin-portal/powerbi-admin-landing-page.png)
+* [Organisaation visualisoinnit.](#organization-visuals)
 
 ## <a name="usage-metrics"></a>Käyttömittarit
-Hallintaportaalin ensimmäinen välilehti on nimeltään **Käyttömittarit**. Käyttömittariraporttien avulla voit seurata organisaatiosi Power BI -käyttöä. Niistä näet myös, mitkä käyttäjät ja ryhmät käyttävät eniten Power BI:tä organisaatiossasi.
+
+**Käyttömittareiden** avulla voit seurata organisaatiosi Power BI -käyttöä. Niistä näet myös, mitkä käyttäjät ja ryhmät käyttävät eniten Power BI:tä organisaatiossasi.
 
 > [!NOTE]
 > Kun siirryt koontinäyttöön ensimmäistä kertaa tai käyt siellä ensimmäistä kertaa pitkään aikaan, näet luultavasti latausnäytön, kun koontinäyttöä ladataan.
@@ -58,79 +58,76 @@ Näet ruuduissa seuraavat tiedot:
 
 * Näet käyttäjän työtilan kaikkien koontinäyttöjen, raporttien ja tietojoukkojen määrän.
   
-    ![](media/service-admin-portal/powerbi-admin-usage-metrics-number-tiles.png)
+    ![Koontinäyttöjen, raporttien ja tietojoukkojen määrät](media/service-admin-portal/powerbi-admin-usage-metrics-number-tiles.png)
 
 * Näet käytetyimmän koontinäytön ja sen käyttäjien määrän. Jos sinulla on esimerkiksi kolmelle käyttäjälle jakamasi koontinäyttö, jonka olet lisännyt myös sisältöpakettiin, johon on yhdistetty kaksi eri käyttäjää, koontinäytön käyttäjämäärä on 6 (1+3+2).
   
-    ![](media/service-admin-portal/powerbi-admin-usage-metrics-top-dashboards.png)
+    ![Käytetyimmät koontinäytöt](media/service-admin-portal/powerbi-admin-usage-metrics-top-dashboards.png)
 
 * Näet suosituimmat sisällöt, joihin käyttäjät ovat muodostaneet yhteyksiä. Tämä sisältö voi olla mitä tahansa sisältöä, johon käyttäjät muodostavat yhteyden Nouda tiedot -toiminnolla (esimerkiksi SaaS-sisältöpaketteja, organisaation sisältöpaketteja, tiedostoja tai tietokantoja).
   
-    ![](media/service-admin-portal/powerbi-admin-usage-metrics-top-connections.png)
+    ![Käytetyimmät paketit](media/service-admin-portal/powerbi-admin-usage-metrics-top-connections.png)
 
 * Näet käyttäjät, joilla on eniten koontinäyttöjä (sekä heidän itse luomansa koontinäytöt että heille jaetut koontinäytöt).
   
-    ![](media/service-admin-portal/powerbi-admin-usage-metrics-top-users-dashboards.png)
+    ![Aktiivisimmat käyttäjät – koontinäytöt](media/service-admin-portal/powerbi-admin-usage-metrics-top-users-dashboards.png)
 
 * Näet käyttäjät, joilla on eniten raportteja.
   
-    ![](media/service-admin-portal/powerbi-admin-usage-metrics-top-users-reports.png)
+    ![Aktiivisimmat käyttäjät – raportit](media/service-admin-portal/powerbi-admin-usage-metrics-top-users-reports.png)
 
-Toinen osio sisältää samat tiedot ryhmille. Näiden tietojen avulla näet, mitkä organisaatiosi ryhmät ovat aktiivisimpia ja mitä tietoja he käyttävät.
+Toinen osio sisältää samat tiedot ryhmille. Näiden tietojen avulla näet, mitkä organisaatiosi ryhmät ovat aktiivisimpia ja mitä sisältöä he käyttävät.
 
 Näin saat tarkan kuvan siitä, kuinka organisaatiosi käyttäjät käyttävät Power BI:tä, ja näet organisaatiosi aktiivisimmat käyttäjät sekä ryhmät.
 
 ## <a name="users"></a>Käyttäjät
 
-Hallintaportaalin toinen välilehti on nimeltään **Käyttäjien hallinta**. Power BI:n käyttäjiä hallitaan Office 365:n hallintakeskuksessa, joten tässä osiossa pääset nopeasti paikkaan, jossa voit hallita käyttäjiä, järjestelmänvalvojia ja ryhmiä Office 365:ssä.
+Voit hallita Power BI -käyttäjiä, -ryhmiä ja -järjestelmänvalvojia Office 365 -hallintakeskuksessa. **Käyttäjät**-välilehdessä on linkki vuokraajasi hallintakeskukseen.
 
-![](media/service-admin-portal/powerbi-admin-manage-users.png)
-
-Kun napsautat **Siirry O365-hallintakeskukseen**, sinut siirretään Office 365 -hallintakeskuksen aloitussivulle, jossa voit hallita vuokraajatilisi käyttäjiä.
-
-![](media/service-admin-portal/powerbi-admin-o365-admin-center.png)
+![Siirry O365-hallintakeskukseen](media/service-admin-portal/powerbi-admin-manage-users.png)
 
 ## <a name="audit-logs"></a>Valvontalokit
 
-Hallintaportaalin kolmas välilehti on nimeltään **Valvontalokit**. Lokit sijaitsevat Office 365:n tietoturva- ja yhteensopivuuskeskuksessa. Tämän osion kautta pääset nopeasti tietoturva- ja yhteensopivuuskeskukseen Office 365:ssä.
-
-Saat lisätietoja valvontalokeista ohjeartikkeleista [Organisaation Power BI:n valvonta](service-admin-auditing.md).
+Voit hallita Power BI -valvontalokeja Office 365:n tietoturva- ja yhteensopivuuskeskuksessa. **Valvontalokit**-välilehdessä on linkki vuokraajasi tietoturva- ja yhteensopivuuskeskukseen. [Lue lisää](service-admin-auditing.md)
 
 ## <a name="tenant-settings"></a>Vuokraaja-asetukset
 
-Hallintaportaalin neljäs välilehti on nimeltään **Vuokraaja-asetukset**. Vuokraaja-asetusten avulla voit hallita tarkemmin organisaatiossasi käyttöön tarjottavia toimintoja. Jos olet huolissasi luottamuksellisista tiedoista, jotkin toiminnoista eivät ehkä sovellu organisaatiollesi. Tai kenties ehkä haluat tarjota tietyn toiminnon vain tietylle ryhmälle. Tällaisissa tapauksissa voit poistaa toimintoja käytöstä vuokraajatililläsi.
+**Vuokraaja-asetukset**-välilehdessä voit hallita yksityiskohtaisemmin organisaatiossasi käyttöön tarjottavia toimintoja. Jos olet huolissasi luottamuksellisista tiedoista, jotkin toiminnoista eivät ehkä sovellu organisaatiollesi. Tai kenties ehkä haluat tarjota tietyn toiminnon vain tietylle ryhmälle.
 
-![](media/service-admin-portal/powerbi-admin-tenant-settings.png)
+Seuraavassa kuvassa näytetään **Vuokraaja-asetukset**-välilehden kaksi ensimmäistä osiota.
+
+![Vuokraaja-asetukset](media/service-admin-portal/powerbi-admin-tenant-settings.png)
 
 > [!NOTE]
-> Asetuksen käyttöönotto kaikille vuokraajatilisi käyttäjille voi kestää jopa 10 minuuttia.
+> Asetuksen muutoksen voimaan tuleminen kaikille vuokraajatilisi käyttäjille voi kestää 10 minuuttia.
 
 Asetuksilla voi olla kolme tilaa:
 
-* **Poistettu käytöstä koko organisaatiolle**: Voit poistaa toiminnon käytöstä, jolloin käyttäjät eivät voi käyttää sitä.
+* **Poistettu käytöstä koko organisaatiolle**: kukaan organisaation käyttäjä ei voi käyttää tätä toimintoa.
 
-    ![](media/service-admin-portal/powerbi-admin-tenant-settings-disabled.png)
+    ![Kaikki-asetus poistettu käytöstä](media/service-admin-portal/powerbi-admin-tenant-settings-disabled.png)
 
-* **Otettu käyttöön koko organisaatiolle**: Voit ottaa toiminnon käyttöön koko organisaatiolle, jolloin kaikki käyttäjät voivat käyttää sitä.
+* **Otettu käyttöön koko organisaatiolle**: kaikki organisaation käyttäjät voivat käyttää tätä toimintoa.
 
-    ![](media/service-admin-portal/powerbi-admin-tenant-settings-enabled.png)
+    ![Kaikki-asetus otettu käyttöön](media/service-admin-portal/powerbi-admin-tenant-settings-enabled.png)
 
-* **Otettu käyttöön organisaation alijoukolle**: Voit myös ottaa toiminnon käyttöön tietyille organisaatiosi käyttäjille. Voit tehdä tämän muutamin eri tavoin. Voit ottaa toiminnon käyttöön koko organisaatiolle tiettyä käyttäjäryhmää lukuun ottamatta.
+* **Otettu käyttöön organisaation alijoukolle**: organisaation käyttäjien tai ryhmien tietty alijoukko voi käyttää tätä toimintoa.
 
-    ![](media/service-admin-portal/powerbi-admin-tenant-settings-enabled-except.png)
+    Voit ottaa toiminnon käyttöön koko organisaatiolle tiettyä käyttäjäryhmää lukuun ottamatta.
+
+    ![Alijoukko-asetus otettu käyttöön](media/service-admin-portal/powerbi-admin-tenant-settings-enabled-except.png)
 
     Voit myös ottaa toiminnon käyttöön vain tietylle käyttäjäryhmälle tai poistaa sen käytöstä tietyltä käyttäjäryhmältä. Näin voit varmistaa, että tietyt käyttäjät eivät voi käyttää toimintoa, vaikka he olisivat sallitussa ryhmässä.
 
-    ![](media/service-admin-portal/powerbi-admin-tenant-settings-enabled-except2.png)
+    ![Lukuun ottamatta -asetus otettu käyttöön](media/service-admin-portal/powerbi-admin-tenant-settings-enabled-except2.png)
 
 Seuraavissa osioissa luodaan yleiskatsaus vuokraaja-asetusten eri tyyppeihin.
 
 ## <a name="workspace-settings"></a>Työtilan asetukset
 
 ### <a name="create-workspaces-preview"></a>Työtilojen luominen (esiversio)
-Organisaation käyttäjät voivat luoda sovelluksen työtiloja tehdäkseen yhteistyötä koontinäyttöjen, raporttien ja muun sisällön parissa.
 
-Lisätietoja on kohdassa [Uusien työtilojen luominen](service-create-the-new-workspaces.md).
+Organisaation käyttäjät voivat luoda sovelluksen työtiloja tehdäkseen yhteistyötä koontinäyttöjen, raporttien ja muun sisällön parissa. [Lue lisää](service-create-the-new-workspaces.md)
 
 ## <a name="export-and-sharing-settings"></a>Vienti- ja jakamisasetukset
 
@@ -138,19 +135,21 @@ Lisätietoja on kohdassa [Uusien työtilojen luominen](service-create-the-new-wo
 
 Organisaation käyttäjät voivat jakaa koontinäkymiä organisaation ulkopuolisten käyttäjien kanssa.
 
-![](media/service-admin-portal/powerbi-admin-sharing-external-02.png)
+![Ulkoiset käyttäjät -asetus](media/service-admin-portal/powerbi-admin-sharing-external-02.png)
 
-Näet seuraavan ilmoituksen, kun jaat ulkoiselle käyttäjälle.
+Seuraavassa kuvassa näet esiin tulevan ilmoituksen, kun jaat ulkoiselle käyttäjälle.
 
-![](media/service-admin-portal/powerbi-admin-sharing-external.png)
+![Jaa ulkoisen käyttäjän kanssa](media/service-admin-portal/powerbi-admin-sharing-external.png)
 
 ### <a name="publish-to-web"></a>Julkaise verkkoon
 
 Organisaation käyttäjät voivat julkaista raportteja verkossa. [Lue lisää](service-publish-to-web.md)
 
-![](media/service-admin-portal/powerbi-admin-publish-to-web.png)
+Seuraavassa kuvassa näkyy raportin **Tiedosto**-valikko, kun **Julkaise verkkoon** -asetus on käytössä.
 
-Käyttäjät näkevät käyttöliittymässä eri asetuksia sen mukaan, mikä heidän verkkoon julkaisemisen asetuksensa on.
+![Julkaise verkkoon -asetus](media/service-admin-portal/powerbi-admin-publish-to-web.png)
+
+Käyttäjät näkevät käyttöliittymässä eri asetuksia sen mukaan, mikä heidän **Julkaise verkkoon** -asetuksensa on.
 
 |Ominaisuus |Otettu käyttöön koko organisaatiolle |Otettu käyttöön koko organisaatiolle |Tietyt käyttöoikeusryhmät   |
 |---------|---------|---------|---------|
@@ -163,18 +162,22 @@ Käyttäjät näkevät käyttöliittymässä eri asetuksia sen mukaan, mikä hei
 
 Organisaation käyttäjät voivat viedä tietoja ruudusta tai visualisoinnista. [Lue lisää](visuals/power-bi-visualization-export-data.md)
 
-![](media/service-admin-portal/powerbi-admin-export-data.png)
+Seuraavassa kuvassa näkyy tietojen vieminen ruudusta.
+
+![Tietojen vieminen ruudusta](media/service-admin-portal/powerbi-admin-export-data.png)
 
 > [!NOTE]
 > Jos poistat **Vie tiedot** -toiminnon käytöstä, käyttäjät eivät voi käyttää myöskään **Analysoi Excelissä** -toimintoa tai Power BI -palvelun reaaliaikaista yhteyttä.
 
 ### <a name="export-reports-as-powerpoint-presentations"></a>Vie raportit PowerPoint-esityksinä
 
-Organisaation käyttäjät voivat viedä Power BI -raportteja PowerPoint-tiedostoina. [Lue lisätietoja.](consumer/end-user-powerpoint.md)
+Organisaation käyttäjät voivat viedä Power BI -raportteja PowerPoint-tiedostoina. [Lue lisää](consumer/end-user-powerpoint.md)
 
-![](media/service-admin-portal/powerbi-admin-powerpoint.png)
+Seuraavassa kuvassa näkyy raportin **Tiedosto**-valikko, kun **Vie raportit PowerPoint-esityksinä** -asetus on käytössä.
 
-### <a name="print-dashboards-and-reports"></a>Koontinäyttöjen ja raporttien tulostaminen
+![Vie raportit PowerPoint-esityksinä](media/service-admin-portal/powerbi-admin-powerpoint.png)
+
+### <a name="print-dashboards-and-reports"></a>Tulosta raporttinäkymiä ja raportteja
 
 Organisaation käyttäjät voivat tulostaa koontinäyttöjä ja raportteja. [Lue lisätietoja.](consumer/end-user-print.md)
 

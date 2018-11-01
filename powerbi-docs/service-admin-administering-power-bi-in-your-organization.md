@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-admin
 ms.topic: overview
-ms.date: 05/01/2018
+ms.date: 10/29/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 1f3c871d4ac47a110f2085ef1bdccb166fc00643
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: fcc7563ef1c1196a7e00e107bb1dadd6b10075d3
+ms.sourcegitcommit: 862faf948468d7f6d464b83f4e0b040d5213a580
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36944303"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50252464"
 ---
 # <a name="what-is-power-bi-administration"></a>Mitä on Power BI:n hallinta?
 
@@ -30,7 +30,6 @@ Power BI on suunniteltu omatoimiseen liiketoimintatietojen hallintaan, ja järje
 - Parantamaan Power BI -käyttöönoton omaksumista ja sijoitetun pääoman tuottoa
 
 Tehtävänä on parantaa yrityskäyttäjien tuottavuutta sekä varmistaa suojaus ja lakien ja asetusten noudattaminen. Vastuualueet voivat sisältää ohjeita ja tukea, ja useissa tapauksissa ne auttavat yrityskäyttäjiä toimimaan oikein.
-
 
 ## <a name="administrator-roles-related-to-power-bi"></a>Power BI:hin liittyvät järjestelmänvalvojaroolit
 
@@ -50,7 +49,6 @@ Power BI -palvelun järjestelmänvalvojilla on pääsyoikeus Power BI -hallintap
 
 Power BI -palvelun järjestelmänvalvojan rooli ei anna oikeuksia määrittää käyttäjälle käyttöoikeuksia tai tarkastella Office 365:n valvontalokeja. Power BI:n hallintaa ei siten voida tällä hetkellä suorittaa vain Power BI -palvelun järjestelmänvalvojan roolilla.
 
-
 ## <a name="administrative-tasks"></a>Hallintatehtävät
 
 Järjestelmänvalvojat suorittavat monia tehtäviä, jotka tukevat Power BI -vuokraajaa organisaatiossa. Tehtävät on kuvattu seuraavassa taulukossa.
@@ -65,7 +63,6 @@ Järjestelmänvalvojat suorittavat monia tehtäviä, jotka tukevat Power BI -vuo
 | Power BI -resurssien hallinta |<ul><li>Työtilojen hallinta<br><li>Mukautettujen visualisointien julkaiseminen<br><li>Power BI:n muihin sovelluksiin upottamiseen käytettyjen koodien vahvistaminen|
 | Vuokraajan käyttäjien auttaminen ja tukeminen |<ul><li>Tietojen käytön ja muiden ongelmien vianmääritys</ul>|
 | Muut tehtävät |<ul><li>Power BI Desktopin käyttöönotto, esim. System Center Configuration Managerin avulla<br><li>Power BI -mobiilisovelluksen käyttöönoton hallinta Intunella<br><li>Tietosuojan ja tietoturvan hallinta, kuten lähdetietojen suojauksen hallinta</ul>|
-
 
 ## <a name="administrative-tools"></a>Hallintatyökalut
 
@@ -82,11 +79,12 @@ Power BI:n hallintaan liittyy useita työkaluja, jotka on kuvattu seuraavassa ta
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
-Toivomme, että tämä artikkeli tarjosi sinulle yleiskuvan Power BI -järjestelmänvalvojan työstä sekä siihen liittyvistä rooleista, tehtävistä ja työkaluista. Suosittelemme, että syvennät tietämystäsi kahden seuraavan artikkelin avulla.
+Toivomme, että tämä artikkeli tarjosi sinulle yleiskuvan Power BI -järjestelmänvalvojan työstä sekä siihen liittyvistä rooleista, tehtävistä ja työkaluista. Suosittelemme, että syvennät tietämystäsi seuraavien artikkelien avulla.
 
 [Power BI -hallintaportaalin käyttäminen](service-admin-portal.md)
+
+[PowerShellin cmdlet-komentojen käyttäminen](/powershell/power-bi/overview?toc=%2Fen-us%2Fpower-bi%2FTOC.json&bc=%2Fen-us%2Fpower-bi%2Fbreadcrumb%2Ftoc.json&view=powerbi-ps)
 
 [Power BI:n hallinnan usein kysytyt kysymykset](service-admin-faq.md)
 
 Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)
-
