@@ -6,15 +6,15 @@ manager: kfile
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 01/13/2018
+ms.date: 10/24/2018
 ms.author: maggies
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 95fa59d91a73101d7d04f3921a81236bfae7d0bb
-ms.sourcegitcommit: fb1885da7cf11367660edbf7b7346dc039ee9b5d
+ms.openlocfilehash: ccc99c2f9810bcda80e1f02ce67e49390fd0308f
+ms.sourcegitcommit: 42475ac398358d2725f98228247b78aedb8cbc4f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47187302"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50003244"
 ---
 # <a name="quickly-find-and-view-your-power-bi-data-using-cortana-for-power-bi"></a>Power BI -tietojen nopea etsiminen ja tarkastelu Power BI:n Cortana-ominaisuuden avulla
 Saat heti vastauksia liiketoimintaa koskeviin tärkeisiin kysymyksiisi Windows 10 -laitteilla Cortanan avulla. Power BI -integraation avulla Cortana voi noutaa avaintietoja suoraan Power BI -raporttinäkymistä ja -raporteista. Tarvitset vain Windows 10:n marraskuun 2015 version tai sitä uudemman, Cortanan, Power BI:n ja vähintään yhden tietojoukon käyttöoikeudet.
@@ -29,12 +29,12 @@ Aiemmin [Cortanan avulla on voinut noutaa tietyntyyppisiä raporttisivuja](servi
 > 
 > 
 
-Pohjana oleva tekniikka perustuu [Microsoftin Azure Search -palveluun](). Kyseinen hakupalvelu sisältää lisätoimintoja, kuten älykkään luokittelun, virheenkorjauksen ja automaattisen täydentämisen.
+Pohjana oleva tekniikka perustuu [Microsoftin Azure-hakupalveluun](https://docs.microsoft.com/azure/search/). Kyseinen hakupalvelu sisältää lisätoimintoja, kuten älykkään luokittelun, virheenkorjauksen ja automaattisen täydentämisen.
 
 Molemmat Cortana-käyttökokemukset ovat käytettävissä rinnakkain.
 
 ## <a name="cortana-for-power-bi-documentation"></a>Power BI:n Cortana-ominaisuuden ohjeet
-Seuraavat neljä asiakirjaa opastavat Cortanan määrittämisessä ja käyttämisessä Power BI:ssä. Tämä artikkelisarja käsittelee seuraavat vaiheet:
+Neljä asiakirjaamme opastavat sinua Cortanan määrittämisessä ja käyttämisessä Power BI:ssä. Tämä artikkelisarja käsittelee seuraavat vaiheet:
 
 **Artikkeli 1** (tämä artikkeli): Opit ymmärtämään, miten Cortana ja Power BI toimivat yhdessä
 
@@ -54,9 +54,9 @@ Jos Cortana löytää vastauksen, se näyttää kyseisen raporttinäkymän tai r
 ### <a name="cortana-and-dashboards-the-new-experience"></a>Cortana ja raporttinäkymät ( *uusi käyttökokemus*)
 Cortana voi etsiä vastauksia omistamistasi raporttinäkymistä ja raporttinäkymistä, jotka on jaettu kanssasi. Kysy Cortanalta kysymyksiä otsikoiden, avainsanojen, omistajien nimen, työtilan nimen, sovellusten nimen tai muun ehdon perusteella.
 
-Kysymyksessä on oltava vähintään kaksi sanaa, jotta Cortana voi etsiä vastausta. Jos etsit raporttinäkymää, jonka nimi on yksi sana (”Markkinointi”) lisää ”näytä” tai ”Power BI” tai ”<owner name>” kysymykseesi, esim. ”Näytä Markkinointi” ja ”michele hart otos”. 
+Kysymyksessä on oltava vähintään kaksi sanaa, jotta Cortana voi etsiä vastausta. Jos etsit raporttinäkymää, jonka nimi on yksi sana (”Markkinointi”) lisää ”näytä” tai ”Power BI” tai omistajan nimi kysymykseesi: ”Näytä Markkinointi” ja ”michele hart otos”. 
 
-Jos raporttinäkymän otsikossa on enemmän kuin yksi sana, Cortana osaa toimittaa raporttinäkymän, jos hakusi vastaa vähintään kahta otsikon sanoista tai jos raporttinäkymä vastaa yhtä sanoista ja omistajan nimeä. Käytetään esimerkkinä raporttinäkymää, jonka nimi on ”Asiakkaan tuottavuuden malli”: 
+Jos raporttinäkymän otsikossa on enemmän kuin yksi sana, Cortana palauttaa raporttinäkymän vain, jos hakusi vastaa vähintään kahta sanoista tai yhtä sanoista ja omistajan nimeä. Käytetään esimerkkinä raporttinäkymää, jonka nimi on ”Asiakkaan tuottavuuden malli”: 
 
 * ”näytä asiakkaan” -hakusanat *eivät* palauta Power BI -raporttinäkymätulosta.   
 * Sen sijaan ”näytä asiakkaan tuottavuuden”, ”asiakkaan t”, ”asiakkaan m”, ”tuottavuuden otos”, ”michele hart otos”, ”näytä asiakkaan tuottavuuden otos” ja ”näytä asiakkaan t” *palauttavat* Power BI -hakutuloksen.

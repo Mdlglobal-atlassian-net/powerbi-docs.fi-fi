@@ -11,12 +11,12 @@ ms.topic: tutorial
 ms.date: 10/21/2017
 ms.author: selvar
 LocalizationGroup: Connect to data
-ms.openlocfilehash: f8c1aae757e80c0c2adbc321345c242eba25098c
-ms.sourcegitcommit: fbb7924603f8915d07b5e6fc8f4d0c7f70c1a1e1
+ms.openlocfilehash: c49750ef51c1b8bacc36946d2d5c75a08abb36d7
+ms.sourcegitcommit: 60fb46b61ac73806987847d9c606993c0e14fb30
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "34456130"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50101573"
 ---
 # <a name="dynamic-row-level-security-with-analysis-services-tabular-model"></a>Dynaaminen rivitason suojaus Analysis Servicen taulukkomallissa
 Tässä opetusohjelmassa esitellään **rivitason suojauksen** toteuttamiseen tarvittavat vaiheet **Analysis Services -taulukkomallissa** ja näytetään, miten voit käyttää sitä Power BI -raportissa. Tämän opetusohjelman ohjeet on suunniteltu niin, että voit niitä seuraamalla opetella esimerkkitietojoukon kokoamisen.
@@ -72,6 +72,9 @@ Lukuiset julkaistut artikkelit opastavat rivitason dynaamisen suojauksen määri
        =DimSalesTerritory[SalesTerritoryKey]=LOOKUPVALUE(DimUserSecurity[SalesTerritoryID], DimUserSecurity[UserName], USERNAME(), DimUserSecurity[SalesTerritoryID], DimSalesTerritory[SalesTerritoryKey])
     Tässä kaavassa **LOOKUPVALUE**-funktio palauttaa kaikki arvot **DimUserSecurity[SalesTerritoryID]**-sarakkeesta, jossa **DimUserSecurity[UserName]** on nykyinen kirjautunut Windows-käyttäjänimi ja **DimUserSecurity[SalesTerritoryID]** on sama kuin **DimSalesTerritory[SalesTerritoryKey]**.
    
+    > [!IMPORTANT]
+    > Huomaa, että DAX-funktiota [USERELATIONSHIP](https://msdn.microsoft.com/query-bi/dax/userelationship-function-dax) ei tueta rivitason suojausta käytettäessä.
+
    **LOOKUPVALUE**-funktion palauttamaa SalesTerritoryKey-myyntijoukkoa käytetään sitten **DimSalesTerritory**-kohdan rivien rajoittamiseen. Vain sellaiset rivit näytetään, joissa rivin **SalesTerritoryKey** sisältyy **LOOKUPVALUE**-funktion palauttamiin tunnuksiin.
 8. Kirjoita seuraava kaava **DimUserSecurity**-taulukon **DAX-suodattimen** sarakkeeseen:
    

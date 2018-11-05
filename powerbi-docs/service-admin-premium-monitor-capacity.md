@@ -10,12 +10,12 @@ ms.component: powerbi-admin
 ms.topic: conceptual
 ms.date: 10/09/2018
 LocalizationGroup: Premium
-ms.openlocfilehash: b2627950ea51239acb19972fde3244f3bd158255
-ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
+ms.openlocfilehash: 2623dd3280636583d5dd6d6e3f57518550032193
+ms.sourcegitcommit: 42475ac398358d2725f98228247b78aedb8cbc4f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "48909218"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50003198"
 ---
 # <a name="monitor-power-bi-premium-and-power-bi-embedded-capacities"></a>Power BI Premiumin ja Power BI Embeddedin kapasiteettien valvonta
 
@@ -61,13 +61,11 @@ Raportissa on kolme välilehteä, jotka kuvataan tarkemmin seuraavissa osissa.
 
 ### <a name="datasets-tab"></a>Tietojoukot-välilehti
 
-**Tietojoukot**-välilehdessä ovat sovelluksen mittausarvojoukot. Voit siirtyä eri alueille välilehden yläreunassa olevan neljä painikkeen avulla: **Yhteenveto**, **Päivitykset**, **Kyselyt** ja **Tietojoukot**.
+**Tietojoukot**-välilehdessä ovat sovelluksen mittausarvojoukot. Voit siirtyä eri alueille välilehden yläreunassa olevien painikkeiden avulla: **Yhteenveto**, **Päivitykset**, **Kyselyjen kestot**, **Kysely odottaa** ja **Tietojoukot**.
 
 ![Tietojoukot-välilehti](media/service-admin-premium-monitor-capacity/datasets-tab.png)
 
 #### <a name="summary-area"></a>Yhteenveto-alue
-
-![Yhteenveto-painike](media/service-admin-premium-monitor-capacity/summary-button.png)
 
 **Yhteenveto**-alue näyttää kapasiteettiesi näkymät entiteettien, järjestelmäresurssien ja tietojoukon kuormitusten perusteella.
 
@@ -80,19 +78,27 @@ Raportissa on kolme välilehteä, jotka kuvataan tarkemmin seuraavissa osissa.
 
 #### <a name="refreshes-area"></a>Päivitykset-alue
 
-![Päivitykset-painike](media/service-admin-premium-monitor-capacity/refreshes-button.png)
-
 **Päivitykset**-alue sisältää valmiit päivitykset, onnistuneet mittaukset, päivityksen odotusajan keski-/enimmäisarvon ja päivityksen keston keski-/enimmäisarvon tietojoukkojen mukaan ositettuna viimeisten seitsemän päivän aikana. Kahdessa alimmassa kaaviossa näkyvät päivitykset ja muistin käyttö gigatavuina ja keskimääräiset odotusajat tunnin osiin jaettuna paikallisessa ajassa ilmoitettuna. Yläreunan palkkikaaviot sisältävät viisi parasta tietojoukkoa tietojoukon päivittämiseen kuluneen (päivityksen keston) keskiarvon sekä päivityksen odotusajan keskiarvon mukaan. Useat korkeat päivityksen odotusaikapiikit ovat merkki kuumana käyvästä kapasiteetista.
 
-#### <a name="queries-area"></a>Kyselyt-alue
+#### <a name="query-durations-area"></a>Kyselyjen kestot -alue
 
-![Kyselyt-painike](media/service-admin-premium-monitor-capacity/queries-button.png)
+**Kyselyjen kestot** -alueella luetellaan suoritettujen kyselyjen kokonaismäärä ja niiden keskimääräinen ja enimmäiskesto millisekunteina. Nämä tiedot on ositettu tietojoukkojen, työtilan ja tunnittaisten säilöjen mukaan viimeisten seitsemän päivän ajalta. Alimmainen kaavio näyttää kyselyjen määrän ja keston keskiarvon (millisekunteina) vs. muistin kulutuksen gigatavuina tunnin osiin jaettuna paikallisessa ajassa ilmoitettuna.
 
-**Kyselyt**-alue sisältää suoritettujen kyselyiden kokonaismäärän, odottavien kyselyjen kokonaismäärän reaaliaikaiselle/suoralle kyselylle, keston keski-/enimmäisarvon, odotusajan keski-/enimmäisarvon millisekunteina tietojoukkojen, työtilojen ja tunnin osien mukaan ositettuna viimeisten seitsemän päivän aikana. Alimmaiset kaaviot sisältävät kyselyjen määrän, keston keskiarvon (millisekunteina) ja odotusajan keskiarvon (millisekunteina) vs. muistin kulutuksen gigatavuina tunnin osiin jaettuna paikallisessa ajassa ilmoitettuna. Kaksi ylimmäistä kaaviota oikeassa reunassa sisältävät viisi parasta tietojoukkoa kyselyn keston keskiarvon ja kyselyjen suorittamiseen kuluneen odotusajan mukaan. Kyselyjen pitkät kestot ja odotusajat ovat osoitus siitä, että kapasiteetti on äärirajoilla. Se saattaa myös tarkoittaa sitä, että yksi tietojoukko aiheuttaa ongelmia ja tarkempaa tutkimusta tarvitaan.
+Oikean yläkulman kaavio näyttää kyselyn keston jakaumahistogrammin. Histogrammi on jaoteltu millisekunneissa ilmoitettujen kyselyjen kestojen mukaan seuraaviin luokkiin: < 30 ms, 30–100 ms, 100–300 ms, 300 ms–1 s, 1–3 s, 3–10 s, 10–30 s ja > 30 s.
+
+Oikean alakulman kaavio näyttää viisi parasta tietojoukkoa kyselyn suorittamisen keston keskiarvon mukaan.
+
+Kyselyjen pitkät kestot ja odotusajat ovat osoitus siitä, että kapasiteetti on äärirajoilla. Se saattaa myös tarkoittaa sitä, että yksi tietojoukko aiheuttaa ongelmia ja tarkempaa tutkimusta tarvitaan.
+
+#### <a name="query-waits-area"></a>Kysely odottaa -alue
+
+**Kysely odottaa**  -alueella luetellaan suoritettujen kyselyiden kokonaismäärä, odottavien kyselyjen kokonaismäärä reaaliaikaiselle/suoralle kyselylle ja odotusajan keski-/enimmäisarvo millisekunteina. Nämä tiedot on ositettu tietojoukkojen, työtilan ja tunnittaisten säilöjen mukaan viimeisten seitsemän päivän ajalta. Alimmainen kaavio näyttää odottavien kyselyjen määrän ja odotusajan keskiarvon (millisekunteina) vs. muistin kulutuksen gigatavuina tunnin osiin jaettuna paikallisessa ajassa ilmoitettuna.
+
+Oikean yläkulman kaavio näyttää kyselyn odotusajan jakaumahistogrammin. Histogrammi on jaoteltu millisekunneissa ilmoitettujen kyselyjen kestojen mukaan seuraaviin luokkiin: < 50 ms, 50–100 ms, 100–200 ms, 200–400 ms, 400 ms–1 s, 1–5 s ja > 5 s.
+
+Oikean alakulman kaavio näyttää viisi parasta tietojoukkoa kyselyn aloittamisen odotusajan keskiarvon mukaan.
 
 #### <a name="datasets-area"></a>Tietojoukot-alue
-
-![Tietojoukot-painike](media/service-admin-premium-monitor-capacity/datasets-button.png)
 
 **Tietojoukot**-alue näyttää muistipaineen vuoksi poistetut valmiit tietojoukot tunnin mukaan.
 

@@ -1,6 +1,6 @@
 ---
-title: Pistekaaviot Power BI:ssä
-description: Pistekaaviot Power BI:ssä
+title: Piste- ja kuplakaaviot Power BI:ssä
+description: Pistekaaviot ja kuplakaaviot Power BI:ssä
 author: mihart
 manager: kvivek
 ms.reviewer: ''
@@ -8,22 +8,26 @@ featuredvideoid: PVcfPoVE3Ys
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 09/28/2018
+ms.date: 10/24/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: bd09adf21292b16ee27f111ac92bbd8c83c384d8
-ms.sourcegitcommit: 769ef3c8cbafd9ad5979eb4023a394ac7dba8d02
+ms.openlocfilehash: 7739dda4647a82b3c9d4b58976db89038428625a
+ms.sourcegitcommit: 42475ac398358d2725f98228247b78aedb8cbc4f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/28/2018
-ms.locfileid: "47448841"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50003175"
 ---
-# <a name="scatter-charts-and-bubble-charts-in-power-bi"></a>Pistekaaviot ja kuplakaaviot Power BI:ssä
+# <a name="scatter-charts-bubble-charts-and-dot-plot-charts-in-power-bi"></a>Pistekaaviot ja kuplakaaviot Power BI:ssä
 Pistekaaviossa on aina kaksi arvoakselia, jotka näyttävät yhden numeerisen tietosarjan vaakasuuntaisella akselilla ja toisen numeerisen arvosarjan pystysuuntaisella akselilla. Kaaviossa näytetään arvopisteet numeerisen arvon X ja Y leikkauskohdassa yhdistämällä nämä kaksi arvoa yhdeksi arvopisteeksi. Nämä arvopisteet voidaan jakaa tasaisesti tai epätasaisesti vaakasuuntaiselle akselille tietojen mukaan.
 
 Kuplakaaviossa arvopisteet korvataan kuplilla ja kuplan *koko* kuvastaa tietojen muuta dimensiota.
 
 ![kuplakaavion malli](media/power-bi-visualization-scatter/power-bi-bubble-chart.png)
+
+Pistetulostuskaavio (dot plot) muistuttaa kuplakaaviota ja hajontaa kuvaavaa pistekaaviota sillä erotuksella, että X-akselille voi tulostaa numeerisia tai luokittaisia tietoja. 
+
+![kuplakaavion malli](media/power-bi-visualization-scatter/power-bi-dot-plot.png)
 
 Voit määrittää arvopisteiden määrän. Niiden enimmäismäärä on 10 000.  
 
@@ -41,6 +45,9 @@ Voit määrittää arvopisteiden määrän. Niiden enimmäismäärä on 10 000.
 * jos tiedoissasi on 3 arvosarjaa, joista jokainen sisältää joukon arvoja.
 * taloudellisten tietojen esittämiseen.  Erikokoiset kuplat ovat hyödyllisiä erityisten arvojen visuaaliseen korostamiseen.
 * neljännesten kanssa käytettäväksi.
+
+### <a name="dot-plot-charts-are-a-great-choice-in-place-of-a-scatter-or-bubble"></a>Pistetulostuskaavio on hyvä valinta piste- tai kuplakaavion sijasta:
+* jos haluat sisällyttää X-akselille luokittaista tietoa.
 
 ## <a name="create-a-scatter-chart"></a>Pistekaavion luominen
 Katso tästä videosta, miten Will luo pistekaavion, ja noudata sitten seuraavia ohjeita luodaksesi sellaisen itse.
@@ -63,11 +70,11 @@ Näissä ohjeissa käytetään jälleenmyyntianalyysimallia. Jos haluat seurata 
 
 3. Muunna pistekaavioksi. Valitse Visualisointi-ruudussa Pistekaavio-kuvake.
 
-   ![](media/power-bi-visualization-scatter/pbi_scatter_chart_icon.png).
+   ![](media/power-bi-visualization-scatter/power-bi-scatter-new.png).
 
 4. Vedä **Alue** kohteesta **Tiedot** kohteeseen **Selite**. Tämä tuo esille pistekaavion, jossa **Myyntivariaatio-% yhteensä** on piirretty Y-akselille ja **Myynti/neliöjalka** X-akselille. Arvopisteiden värit edustavat alueita:
 
-    ![](media/power-bi-visualization-scatter/power-bi-scatter.png)
+    ![](media/power-bi-visualization-scatter/power-bi-scatter2.png)
 
 Nyt lisätään kolmas dimensio.
 
@@ -75,18 +82,17 @@ Nyt lisätään kolmas dimensio.
 
 1. Vedä **Kentät**-ruudusta **Myynti** > **Tämän vuoden myynti** > **Arvo** alueelle **Koko**. Arvopisteet laajenevat myynnin arvon mukaisiin kokoihin.
    
-   ![](media/power-bi-visualization-scatter/power-bi-bubble.png)
+   ![pisteet muuttuvat kupliksi](media/power-bi-visualization-scatter/power-bi-scatter-chart-size.png)
 
 2. Pidä hiiren osoitinta kuplan päällä. Kuplan koko kuvastaa arvoa **Tämän vuoden myynti**.
    
-    ![](media/power-bi-visualization-scatter/pbi_scatter_chart_hover.png)
+    ![työkaluvihjeiden näyttö](media/power-bi-visualization-scatter/pbi_scatter_chart_hover.png)
 
 3. Voit määrittää kuplakaaviossa näkyvien arvopisteiden määrän laajentamalla **Visualisoinnit**-ruudun **Muotoilu**-osiossa olevan kortin **Yleistä** ja säätämällä kohtaa **Tietojen määrä**. Voit määrittää tietojen enimmäismääräksi minkä tahansa luvun, joka on enintään 10 000. Suurten lukujen yhteydessä on suositeltavaa testata toiminta ensin hyvän suorituskyvyn varmistamiseksi. 
 
     ![Tietojen määrä](media/power-bi-visualization-scatter/pbi_scatter_data_volume.png) 
 
-   > [!NOTE]
-   > Enemmän arvopisteitä voi tarkoittaa pidempää latausaikaa, joten jos haluat julkaista raportteja, joiden rajat ovat asteikon yläpäässä, testaa raporttejasi myös verkossa ja mobiililaitteilla sen varmistamiseksi, että suorituskyky vastaa käyttäjien odotuksia. Ota huomioon, että suurempien arvopistemäärien osalta sinun on testattava tuloksia erilaisilla muototekijöillä hyvän suorituskyvyn varmistamiseksi.
+   Enemmän arvopisteitä voi tarkoittaa pidempää latausaikaa, joten jos haluat julkaista raportteja, joiden rajat ovat asteikon yläpäässä, testaa raporttejasi myös verkossa ja mobiililaitteilla sen varmistamiseksi, että suorituskyky vastaa käyttäjien odotuksia. 
 
 4. Voit [muotoilla visualisoinnin värejä, nimiä, otsikoita, taustaa ja muuta](service-getting-started-with-color-formatting-and-axis-properties.md). Jos haluat [parantaa helppokäyttöisyyttä](../desktop-accessibility.md), harkitse merkin muotojen lisäämistä kullekin riville. Erilaisten merkin muotojen käyttö kullekin riville helpottaa raporttien käyttäjiä erottamaan rivit (tai alueet) toisistaan. Voi valita merkin muodon laajentamalla **Muodot**-kortin ja valitsemalla sitten merkin muodon.
 
@@ -95,6 +101,13 @@ Nyt lisätään kolmas dimensio.
    Voit myös muuttaa merkin muodon vinoneliöksi, kolmioksi tai neliöksi:
 
    ![Neliömerkki](media/power-bi-visualization-scatter/pbi_scatter_chart_hover_square.png)
+
+## <a name="create-a-dot-plot"></a>Pistekaavion luominen
+Luo pistetulostuskaavio (dot plot) korvaamalla numeerinen X-akselin kenttä luokittaisella kentällä.
+
+Poista **X-akselin** ruudusta **Myynti/neliöjalka**-kenttä ja korvaa kentällä **Alue > DM**.
+   
+![uusi pistekaavio](media/power-bi-visualization-scatter/power-bi-dot-plot-squares.png)
 
 
 ## <a name="considerations-and-troubleshooting"></a>Huomioon otettavat seikat ja vianmääritys

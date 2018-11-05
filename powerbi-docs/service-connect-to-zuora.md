@@ -7,15 +7,15 @@ ms.reviewer: maggiesMSFT
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 10/16/2017
+ms.date: 10/24/2018
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: b83ef2b6f2cd07e9f6c9af849e0f64d0490fa1af
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: b183738c062af1d834a742639369ca90f2cb1bad
+ms.sourcegitcommit: 42475ac398358d2725f98228247b78aedb8cbc4f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46546944"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50003221"
 ---
 # <a name="connect-to-zuora-with-power-bi"></a>Yhteyden muodostaminen Zuoraan Power BI:llä
 Zuora for Power BI:n avulla voit visualisoida tärkeät tuotto-, laskutus- ja tilaustiedot. Käytä oletusraporttinäkymiä ja -raportteja käyttötrendien analysointiin, laskutuksen ja maksujen seurantaan sekä toistuvan tuoton valvontaan, tai mukauta niitä omien raporttinäkymä- ja raportointitarpeidesi mukaan.
@@ -32,7 +32,7 @@ Yhteyden muodostaminen [Zuora](https://app.powerbi.com/getdata/services/Zuora) f
 3. Valitse **Zuora** \>  **Nouda**.
 
    ![](media/service-connect-to-zuora/zuora.png)
-4. Määritä Zuoran URL-osoite. Tämä on tavallisesti ”<https://www.zuora.com>”; katso lisätiedot [näiden parametrien etsimistä](#FindingParams) alta.
+4. Määritä Zuoran URL-osoite. URL on tavallisesti <https://www.zuora.com>. Katso lisätiedot [näiden parametrien etsimisestä](#FindingParams) alta.
 
    ![](media/service-connect-to-zuora/params.png)
 5. Valitse **Todennusmenetelmä**-kohdassa **Perus** ja anna käyttäjänimesi ja salasanasi (kirjainkoolla on merkitystä), ja valitse sitten **Kirjaudu sisään**.
@@ -95,7 +95,6 @@ Yhteys Zuora-ohjelmointirajapintaan vaaditaan.
 Anna URL-osoite, jota käytät yleensä Zuora-tietojen noutamiseen. Kelvolliset vaihtoehdot ovat:  
 
 * https://www.zuora.com  
-* https://www.apisandbox.zuora.com  
 * Palveluesiintymääsi vastaava URL-osoite  
 
 ## <a name="troubleshooting"></a>Vianmääritys

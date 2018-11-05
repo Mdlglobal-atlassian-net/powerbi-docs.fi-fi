@@ -1,6 +1,6 @@
 ---
 title: Kanssasi jaetun ArcGIS-kartan käsitteleminen
-description: 'ArcGis-kartan käyttäminen lukunäkymässä '
+description: ArcGis-kartan käyttäminen lukunäkymässä Power BI -raportin kuluttajana
 author: mihart
 manager: kvivek
 ms.reviewer: ''
@@ -9,14 +9,14 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 10/16/2018
+ms.date: 10/23/2018
 ms.author: mihart
-ms.openlocfilehash: 2c7a9d5f6bdbbfff905f3faa8cec255c2b85a0d5
-ms.sourcegitcommit: a3ce866caba24217bcdd011e892b9ea72f3d2400
+ms.openlocfilehash: dd7bca6782327700f087b6b9ca60a9654fa362d8
+ms.sourcegitcommit: 42475ac398358d2725f98228247b78aedb8cbc4f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49396798"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50003267"
 ---
 # <a name="interacting-with-arcgis-maps-in-power-bi"></a>ArcGIS-karttojen käsittely Power BI:ssä
 Tämä ohjeaihe on kirjoitettu sellaisen käyttäjän näkökulmasta, joka on ArcGIS-kartan *kuluttaja* ja tarkastelee karttaa Power BI -palvelussa, Desktopissa tai mobiililaitteelta. Kun ArcGIS-kartan tehnyt henkilö jakaa kartan sinulle, voit toimia kartan kanssa monin eri tavoin.  Jos haluat lisätietoa ArcGIS-karttojen luomisesta, katso [opetusohjelma Esrin ArcGIS-kartoista](../power-bi-visualization-arcgis.md).
@@ -57,8 +57,12 @@ ArcGIS Maps for Power BI:ssä on kolme valintatilaa. Voit valita enintään 250 
 ## <a name="interacting-with-an-arcgis-map"></a>ArcGIS-karttojen käsittely
 Käytettävissäsi olevat ominaisuudet määräytyvät sen mukaan, oletko kartan *luoja* (alkuperäinen tekijä) vai *kuluttaja* (jolle ArcGIS-kartta on jaettu). Jos käsittelet ArcGIS-karttaa kuluttajana (eli [lukunäkymässä](../consumer/end-user-reading-view.md)), käytettävissäsi ovat seuraavien toiminnot.
 
-* Voit käsitellä karttaa samoin kuin muita visualisointityyppejä: voit [ kiinnittää sen koontinäyttöihin](../service-dashboard-pin-tile-from-report.md), [tarkastella sen perustana olevia tietoja](../consumer/end-user-show-data.md) ja/tai [viedä tiedot kartasta](power-bi-visualization-export-data.md) sekä tarkastella karttaa [kohdistustilassa](../consumer/end-user-focus.md) ja [koko näytön tilassa](../service-fullscreen-mode.md).    
-* Jos haluat tutkia karttaa suodattimien avulla, laajenna **Suodattimet**-ruutu. Kun suljet raportin, käyttämäsi suodattimet eivät tallennu.    
+* Jos olet Premium-kuluttaja, jolla on *tarkasteluoikeudet*, pystyt [tarkastelemaan visualisoinnin luomiseen käytettyjä tietoja](../consumer/end-user-show-data.md), [tilaamaan](../consumer/end-user-subscribe.md) sekä tarkastelemaan karttaa [kohdistustilassa ja koko näytön tilassa](../consumer/end-user-focus.md). Voit myös esimerkiksi [tarkastella aiheeseen liittyvää sisältöä](../consumer/end-user-related.md), [jakaa raportin](../service-share-reports.md) ja [käyttää suodattimia](../consumer/end-user-report-filter.md), jotka *raportin luoja* on määrittänyt.
+
+* Muiden visualisointityyppien tapaan Power BI **Pro** -kuluttajat voivat tehdä kaikkea sitä mitä Premium-kuluttajatkin. Lisäksi he voivat esimerkiksi [viedä visualisointien pohjana olevia tietoja](power-bi-visualization-export-data.md), [hakea käyttötietoja](../service-usage-metrics.md), tallentaa kopioita ja [julkaista verkkoon](../service-publish-to-web.md).
+
+    
+* Jos haluat tutkia karttaa suodattimien avulla, laajenna **Suodattimet**-ruutu.   
     ![](media/power-bi-visualizations-arcgis/power-bi-filter-newer.png)  
 * Jos kartassa on viittauskerros, voit valita sijainteja, jolloin niiden tiedot näytetään työkaluvihjeessä. Seuraavassa kuvassa näkyy valittuna oleva Adamsin piirikunta ja kartan tekijän lisäämän viittauskerroksen mukaisesti kotitalouksien keskitulo.
   
@@ -116,6 +120,9 @@ ArcGIS Maps for Power BI on saatavilla seuraavissa palveluissa ja sovelluksissa:
 **Miten ArcGIS Maps ja Power BI toimivat yhdessä?**
 ArcGIS Maps for Power BI on Esrin tekemä (www.esri.com). ArcGIS Maps for Power BI:n käyttöön sovelletaan Esrin [käyttöehtoja](https://go.microsoft.com/fwlink/?LinkID=8263222) ja [tietosuojakäytäntöä](https://go.microsoft.com/fwlink/?LinkID=826323). Power BI -käyttäjien, jotka haluavat käyttää ArcGIS Maps for Power BI -visualisointeja, on ilmaistava suostumuksensa valintaikkunassa (ks. Käyttäjän suostumus -kohta).  Esrin ArcGIS Maps for Power BI:n käyttöön sovelletaan Esrin käyttöehtoja ja tietosuojakäytäntöä, joihin on linkki suostumuksen valintaikkunassa. Kunkin käyttäjän on ilmaistava suostumuksensa ennen ArcGIS Maps for Power BI:n ensimmäistä käyttökertaa. Kun käyttäjä antaa suostumuksensa, visualisointiin sidotut tiedot lähetetään Esrin palveluihin, joissa niihin lisätään vähintään sijaintitiedot. Tämä tarkoittaa sijaintitietojen muuntamista pituus- ja leveyspiireiksi, jotka voidaan esittää kartalla. Voit olettaa, että kaikki visualisointeihin sidotut tiedot voidaan lähettää Esrin palveluihin. Esri tarjoaa mm. pohjakarttojen, paikkatietojen analyysin ja sijaintitietojen lisäämisen tapaisia palveluita. ArcGIS Maps for Power BI:n visualisoinnit toimivat yhdessä näiden palvelujen kanssa Esrin tarjoaman ja ylläpitämän suojatun SSL-sertifioidun yhteyden avulla. Lisätietoja ArcGIS Maps for Power BI:stä on tarjolla Esrin [ArcGIS Maps for Power BI -tuotesivulla](https://www.esri.com/powerbi).
 
+**Power BI Plus**    
+![Rekisteröidy tai kirjaudu sisään valitsemalla Plus-kuvake](media/power-bi-visualizations-arcgis/power-bi-plus.png)
+
 Kun käyttäjä tilaa Plus-version Esrin ArcGIS Maps for Power BI:n kautta tarjoaman tilauksen kautta, käyttäjän ja Esrin välillä on suora suhde. Power BI ei lähetä käyttäjän henkilökohtaisia tietoja Esrille. Käyttäjä kirjautuu Esrin tarjoamaan AAD-sovellukseen omalla AAD-tunnuksellaan ja ilmaisee luottavansa siihen. Tällöin käyttäjä jakaa henkilökohtaiset tietonsa suoraan Esrille. Kun käyttäjä lisää Plus-sisältöä ArcGIS Maps for Power BI -visualisointiin, kyseistä sisältöä tarkastelevilla ja muokkaavilla muilla Power BI -käyttäjillä on myös oltava Plus-tilaus. 
 
 Jos sinulla on kysyttävää Esrin ArcGIS Maps for Power BI:n teknisestä toiminnasta, ota yhteyttä Esriin tukisivun kautta.
@@ -123,12 +130,12 @@ Jos sinulla on kysyttävää Esrin ArcGIS Maps for Power BI:n teknisestä toimin
 **ArcGIS kartta ei näy**    
 Palveluissa tai sovelluksissa, joissa ArcGIS Maps for Power BI ei ole käytettävissä, visualisointi näkyy tyhjänä tilana, jossa näkyy Power BI -logo.
 
-**En näe kartalla kaikkia osoitteitani**    
-Kun katuosoitteiden sijaintitietoja lisätään, vain ensimmäisten 1500 osoitteen sijaintitiedot voidaan lisätä. Paikannimien ja maiden sijaintitietoja ei lasketa 1500 osoitteen kiintiöön.
+**En näe kartalla kaikkia tietojani**    
+Kun leveysasteita ja pituusasteita geokoodataan kartalle, arvopisteitä näytetään korkeintaan 30 000. Kun arvopisteinä on esimerkiksi postinumeroja tai katuosoitteita, geokoodataan vain ensimmäiset 15 000 arvopistettä. Paikannimien ja maiden sijaintitietoja ei lasketa 1500 osoitteen kiintiöön.
 
 **Onko ArcGIS Maps for Power BI:n käyttö maksullista?**
 
-ArcGIS Map for Power BI on maksuton kaikille Power BI -käyttäjille. Se on **Esrin** tarjoama palvelun osa, johon sovelletaan **Esrin** käyttöehtoja ja tietosuojakäytäntöä, kuten tässä artikkelissa mainittiinkin jo aiemmin.
+ArcGIS Map for Power BI on maksuton kaikille Power BI -käyttäjille. Se on **Esrin** tarjoama palvelun osa, johon sovelletaan **Esrin** käyttöehtoja ja tietosuojakäytäntöä, kuten tässä artikkelissa mainittiinkin jo aiemmin. ArcGIS **Plus** -tilaus on maksullinen.
 
 **Saan virhesanoman, jonka mukaan välimuisti on täynnä**
 
@@ -146,4 +153,3 @@ Voit esittää kysymyksiä, hakea ajantasaisimpia tietoja, ilmoittaa ongelmista 
 Jos sinulla parannusehdotus, lähetä se [Power BI -idealuetteloon](https://ideas.powerbi.com).
 
 [ArcGIS Maps for Power BI -tuotesivu](https://www.esri.com/powerbi)
-
