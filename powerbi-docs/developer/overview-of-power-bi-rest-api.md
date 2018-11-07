@@ -9,12 +9,12 @@ ms.component: powerbi-developer
 ms.topic: conceptual
 ms.date: 05/25/2018
 ms.author: maghan
-ms.openlocfilehash: 3b19740616e7b9a390a883fde2fd96320de7b94a
-ms.sourcegitcommit: 698b788720282b67d3e22ae5de572b54056f1b6c
+ms.openlocfilehash: a1492a98825ad26b2dde359cf9cec96cc4623e04
+ms.sourcegitcommit: 02f918a4f27625b6f4e47473193ebc8219db40e2
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45973582"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "51223164"
 ---
 # <a name="what-can-developers-do-with-the-power-bi-api"></a>Mitä kehittäjät voivat tehdä Power BI -ohjelmointirajapinnalla?
 
@@ -29,7 +29,7 @@ Seuraavassa on joitakin asioita, joita voit tehdä Power BI -ohjelmointirajapinn
 | Upottaa koontinäyttöjä, raportteja ja ruutuja sekä Power BI:tä käyttävien että Power BI:tä käyttämättömien (sovellus omistaa tiedot) käyttäjien saataville |[Power BI:n koontinäyttöjen, raporttien ja ruutujen upottaminen](embedding-content.md) |
 | Laajentaa aiemmin luotua liiketoiminnan työnkulkua työntääksesi avaintietoja Power BI ‑koontinäyttöön |[Tietojen lähettäminen koontinäyttöön](walkthrough-push-data.md) |
 | Todentaa käyttäjiä Power BI -palvelussa |[Power BI -palveluun todentaminen](get-azuread-access-token.md) |
-| Luoda mukautetun visualisoinnin |[Mukautettujen visualisointien luominen kehittäjätyökalujen avulla](../service-custom-visuals-getting-started-with-developer-tools.md) |
+| Luoda mukautetun visualisoinnin |[Power BI:n mukautetun visualisoinnin kehittäminen](custom-visual-develop-tutorial.md) |
 
 > [!NOTE]
 > Power BI -ohjelmointirajapinnat viittaavat sovelluksen työtiloihin edelleen ryhminä. Mitkä tahansa viittaukset ryhmiin tarkoittavat sitä, että työskentelet sovelluksen työtilojen parissa.
@@ -72,7 +72,7 @@ Power BI ‑ohjelmointirajapinnan avulla voit lähettää tietoja tietojoukkoon.
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
 [Tietojen työntäminen tietojoukkoon](walkthrough-push-data.md)  
-[Mukautettujen visualisointien kehittäjätyökalujen käytön aloittaminen](../service-custom-visuals-getting-started-with-developer-tools.md)  
+[Power BI:n mukautetun visualisoinnin kehittäminen](custom-visual-develop-tutorial.md)  
 [Power BI:n REST-ohjelmointirajapinnan viite](https://docs.microsoft.com/rest/api/power-bi/)  
 
 Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)
