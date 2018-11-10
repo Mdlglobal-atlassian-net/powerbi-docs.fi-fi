@@ -6,15 +6,15 @@ manager: kfile
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 08/06/2018
+ms.date: 10/24/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 62950462f60fea6db44a9756eff8f99a6841d1d4
-ms.sourcegitcommit: 1a79e48ac820c28c5d0fd05399f49ed22fc74ed7
+ms.openlocfilehash: 3881e37fa5e97939265e9bb9362cee65a1030e67
+ms.sourcegitcommit: 60fb46b61ac73806987847d9c606993c0e14fb30
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/19/2018
-ms.locfileid: "49435438"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50100814"
 ---
 # <a name="publish-apps-with-dashboards-and-reports-in-power-bi"></a>Raporttinäkymiä ja raportteja sisältävien sovellusten julkaiseminen Power BI:ssä
 
@@ -63,7 +63,7 @@ Kun työtilasi raporttinäkymät ja raportit ovat valmiita, voit valita, mitkä 
    
      ![Sovelluksen sisältö](media/service-create-distribute-apps/power-bi-apps-content.png)
 
-5. Päätä **Access**issa, kenellä on pääsy sovellukseen: joko kaikilla organisaatiossa, tietyillä henkilöillä, Active Directory -käyttöoikeusryhmillä. Jos sinulla on oikeudet, voit päättää asentaa sovelluksen automaattisesti vastaanottajille. Voit ottaa tämän asetuksen käyttöön [Power BI -hallintaportaalissa](#how-to-enable-pushing-apps). Voit myös lukea lisätietoja huomioon otettavista asioista [sovelluksen lähettämisestä](#how-to-enable-pushing-apps).
+5. Päätä **Access**issa, kenellä on pääsy sovellukseen: joko kaikilla organisaatiossa, tietyillä henkilöillä, Active Directory -käyttöoikeusryhmillä. Jos sinulla on oikeudet, voit päättää asentaa sovelluksen automaattisesti vastaanottajille. Power BI -järjestelmänvalvoja voi ottaa tämän asetuksen käyttöön Power BI -hallintaportaalissa. Lue lisää [sovelluksen asentamisesta automaattisesti](#how-to-install-an-app-automatically-for-end-users).
 
     ![Sovelluksen käyttö](media/service-create-distribute-apps/power-bi-apps-access.png)
 

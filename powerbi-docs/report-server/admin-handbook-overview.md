@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-report-server
 ms.topic: conceptual
-ms.date: 05/18/2018
+ms.date: 10/24/2018
 ms.author: maghan
-ms.openlocfilehash: 1dbca883bc4df2bde743963db7994361616be192
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 2c8319395bd4daf44562f71380fc254964708c2b
+ms.sourcegitcommit: 60fb46b61ac73806987847d9c606993c0e14fb30
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34721911"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50100607"
 ---
 # <a name="admin-overview-power-bi-report-server"></a>Hallinnan yhteenveto, Power BI -raporttipalvelin
 Tämä on Power BI -raporttipalvelimen hallinnan yhteenveto. Power BI -raporttipalvelin on raporttien paikallinen tallennustila, jonka kautta voit hallita Power BI- ja mobiiliraportteja sekä sivutettuja raportteja. Tässä artikkelissa esitellään Power BI -raporttipalvelimen suunnittelu, käyttöönotto ja hallinta sekä tarjotaan linkkejä lisätietoihin.
@@ -28,7 +28,7 @@ Sinun on asennettava Power BI -raporttipalvelin, jotta voit aloittaa sen käytt�
 
 Ennen kuin aloitat asentamisen, päivittämisen tai siirtämisen Power BI -raporttipalvelimeen, tutustu raporttipalvelimen [järjestelmävaatimuksiin](system-requirements.md).
 
-### <a name="installing"></a>Asentaminen
+### <a name="installing"></a>Asennetaan
 Jos olet ottamassa käyttöön uutta Power BI -raporttipalvelinta, voit käyttää apuna seuraavaa asiakirjaa. 
 
 [Power BI -raporttipalvelimen asentaminen](install-report-server.md)
@@ -50,7 +50,7 @@ Tietoturva ja suojaus ovat tärkeitä jokaiselle organisaatiolle. Saat lisätiet
 [Power BI -raporttipalvelimen asentaminen](install-report-server.md)  
 [Raporttipalvelimen tuoteavaimen löytäminen](find-product-key.md)  
 [Asenna Power BI Desktop (optimoitu Power BI -raporttipalvelimelle)](install-powerbi-desktop.md)  
-[Raportin muodostimen asentaminen](https://docs.microsoft.com/sql/reporting-services/install-windows/install-report-builder)  
+[Raportin muodostimen lataaminen](https://www.microsoft.com/download/details.aspx?id=53613)  
 [SQL Server Data Tools (SSDT) -työkalujen lataaminen](http://go.microsoft.com/fwlink/?LinkID=616714)
 
 Onko sinulla muuta kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)

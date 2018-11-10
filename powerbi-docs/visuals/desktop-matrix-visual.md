@@ -7,27 +7,25 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 09/11/2018
+ms.date: 10/25/2018
 ms.author: mihart
 LocalizationGroup: Create reports
-ms.openlocfilehash: 0cf9c152c9481e223a143bed3985e883c92af192
-ms.sourcegitcommit: ce8332a71d4d205a1f005b703da4a390d79c98b6
+ms.openlocfilehash: 96b2fb3cb1558f862c792b3bed77c9f0c2bc61a5
+ms.sourcegitcommit: 60fb46b61ac73806987847d9c606993c0e14fb30
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "47416816"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50101366"
 ---
 # <a name="use-the-matrix-visual-in-power-bi-desktop"></a>Matriisivisualisoinnin käyttö Power BI Desktopissa
-**Matriisi**-visualisointiominaisuuden avulla voit luoda myös *matriisitaulukoiksi* kutsuttuja visualisointeja **Power BI Desktop** -raporteissa ja korostaa matriisin sisältämiä elementtejä ristiin muiden visualisointien kanssa. Lisäksi voit valita rivejä, sarakkeita ja jopa yksittäisiä soluja ristiinkorostettavaksi. Matriisivisualisointi tukee porrastettua asettelua, jonka avulla voit hyödyntää asettelun tilan entistä paremmin.
+**Matriisi**-visualisointiominaisuuden avulla voit luoda myös *matriisitaulukoiksi* kutsuttuja visualisointeja **Power BI Desktopin** ja **Power BI -palvelun** raporteissa sekä korostaa matriisin sisältämiä elementtejä ristiin muiden visualisointien kanssa. Lisäksi voit valita rivejä, sarakkeita ja jopa yksittäisiä soluja ristiinkorostettavaksi. Yksittäisten ja useiden solujen valintoja voi kopioida ja liittää muihin sovelluksiin. Matriisivisualisointi tukee porrastettua asettelua, jonka avulla voit hyödyntää asettelun tilan entistä paremmin.
 
 ![](media/desktop-matrix-visual/matrix-visual_2a.png)
 
 Matriiseilla on monia ominaisuuksia, jotka käydään läpi tämän artikkelin seuraavissa osioissa.
 
-> [!NOTE]
-> **Power BI Desktopin** heinäkuun 2017 julkaisusta lähtien matriisi- ja taulukkovisualisoinnit kuvastavat käytössä olevan **raportin teeman** muotoilua (mukaan lukien värejä). Jos haluat käyttää matriisivisualisoinnissa muita värejä, voit valita ne **raportin teema** -määrityksestä. Katso teemojen lisätiedot ohjeartikkelista [**Raportin teemojen käyttö Power BI Desktopissa**](../desktop-report-themes.md) .
-> 
-> 
+## <a name="report-themes"></a>Raporttiteemat
+Matriisi- ja taulukkovisualisoinnit kuvastavat käytössä olevan **raporttiteeman** muotoilua (mukaan lukien värejä). Jos haluat käyttää matriisivisualisoinnissa muita värejä, voit valita ne **raportin teema** -määrityksestä. Katso teemojen lisätiedot ohjeartikkelista [**Raportin teemojen käyttö Power BI Desktopissa**](../desktop-report-themes.md) .
 
 ## <a name="understanding-how-power-bi-calculates-totals"></a>Miten Power BI laskee kokonaissummat
 
@@ -134,6 +132,20 @@ Voit tehdä saman sarakkeiden välisummille.
 Myös Ctrl + napsautus -valinta toimii ristiinkorostuksessa. Esimerkiksi seuraavassa kuvassa **matriisivisualisoinnista** valittiin kokoelma aliluokkia. Huomaa, miten visualisoinnin valitsemattomat nimikkeet näkyvät harmaina ja miten sivun muut visualisoinnit kuvastavat **matriisivisualisoinnissa** tehtyjä valintoja.
 
 ![](media/desktop-matrix-visual/matrix-visual_16.png)
+
+## <a name="copying-values-from-power-bi-for-use-in-other-applications"></a>Arvojen kopiointi Power BI:stä muissa sovelluksissa käytettäviksi
+
+Matriisissa tai taulukossa voi olla sisältöä, jota haluat käyttää muissa sovelluksissa, kuten Dynamics CRM:ssä, Excelissä tai jopa muissa Power BI -raporteissa. Power BI:ssä voit hiiren kakkospainikkeella kopioida solun tai valikoiman soluja leikepöydälle ja liittää toiseen sovellukseen.
+
+![Kopiointivalinnat](media/desktop-matrix-visual/power-bi-cell-copy.png)
+
+* Kopioi yksittäisen solun arvo valitsemalla solu, napsauttamalla hiiren kakkospainiketta ja valitsemalla **Kopioi arvo**. Solun muotoilematon arvo on nyt leikepöydällä, josta voit liittää sen toiseen sovellukseen.
+
+    ![Kopiointivalinnat](media/desktop-matrix-visual/power-bi-copy.png)
+
+* Jos haluat kopioida useita soluja, valitse solualue tai useita soluja yhdessä Ctrl-näppäimen kanssa. Kopio sisältää sarakkeiden ja rivien otsikot.
+
+    ![Liitä Exceliin](media/desktop-matrix-visual/power-bi-copy-selection.png)
 
 ## <a name="shading-and-font-colors-with-matrix-visuals"></a>Sävytys ja fontin väri matriisivisualisoinneissa
 **Matriisivisualisoinnin** avulla voit käyttää **ehdollista muotoilua** (värit ja sävytys) matriisin solujen taustavärinä, ja voit käyttää ehdollista muotoilua myös tekstiin ja arvoihin.

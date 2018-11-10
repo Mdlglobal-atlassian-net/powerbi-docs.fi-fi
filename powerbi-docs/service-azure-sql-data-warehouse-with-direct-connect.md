@@ -10,24 +10,24 @@ ms.topic: conceptual
 ms.date: 06/20/2018
 ms.author: maghan
 LocalizationGroup: Data from databases
-ms.openlocfilehash: 0f2c3649a2c6e0582fe7536473f7a6ee9067ee1d
-ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
+ms.openlocfilehash: 347a56f75fa7ea9008539e3d75d094d0c22c69d1
+ms.sourcegitcommit: 60fb46b61ac73806987847d9c606993c0e14fb30
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37137441"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50101297"
 ---
 # <a name="azure-sql-data-warehouse-with-directquery"></a>Azure SQL Data Warehouse ja DirectQuery
-Azure SQL Data Warehouse ja DirectQueryn avulla voit luoda dynaamisia raportteja niiden tietojen ja arvojen perusteella, joita sinulla jo on Azure SQL Data Warehousessa. DirectQueryn avulla kyselyt lähetetään takaisin Azure SQL Data Warehouseen reaaliaikaisesti tutkiessasi tietoja. Tämä yhdessä SQL Data Warehousen asteikon kanssa mahdollistaa sen, että käyttäjät voivat luoda dynaamisia raportteja muutamassa minuutissa monen teratavun edestä tietoa. Lisäksi **Avaa Power BI:ssä** -painikkeen käyttöönoton avulla käyttäjät voivat muodostaa yhdistää Power BI:n suoraan SQL Data Warehouseen ilman, että heidän tarvitsee määrittää manuaalisesti tietoja.
+Azure SQL Data Warehouse ja DirectQueryn avulla voit luoda dynaamisia raportteja niiden tietojen ja arvojen perusteella, joita sinulla jo on Azure SQL Data Warehousessa. DirectQueryn avulla kyselyt lähetetään takaisin Azure SQL Data Warehouseen reaaliaikaisesti tutkiessasi tietoja. Reaaliaikaiset kyselyt yhdessä SQL Data Warehousen skaalattavuuden kanssa mahdollistavat sen, että käyttäjät voivat luoda dynaamisia raportteja muutamassa minuutissa useista teratavuista tietoja. Lisäksi **Avaa Power BI:ssä** -painikkeen käyttöönoton avulla käyttäjät voivat muodostaa yhdistää Power BI:n suoraan SQL Data Warehouseen ilman, että heidän tarvitsee määrittää manuaalisesti tietoja.
 
 SQL Data Warehouse -yhdistintä käytettäessä
 
 * Määritä palvelimen täydellinen nimi yhteyttä muodostettaessa (katso tiedot alla)
 * Varmista, että palvelimen palomuurisääntöjen määrityksenä on ”Salli Azure-palvelujen käyttö”
 * Jokainen toiminto, kuten sarakkeen valitseminen tai suodattimen lisääminen, tekee kyselyn suoraan tietovarastoon
-* Ruudut on määritetty päivitettäväksi noin 15 minuutin välein, ja päivitystä ei tarvitse ajoittaa.  Tätä voidaan muokata Lisäasetukset-kohdassa, kun muodostat yhteyden.
-* Q&A ei ole käytettävissä DirectQuery-tietojoukoissa
-* Rakenteen muutoksia ei poimita automaattisesti
+* Ruudut on määritetty päivitettäväksi noin 15 minuutin välein, ja päivitystä ei tarvitse ajoittaa.  Päivitystä voidaan muokata Lisäasetukset-kohdassa, kun muodostat yhteyden.
+* Q&A ei ole käytettävissä DirectQuery-tietojoukoissa.
+* Rakenteen muutoksia ei poimita automaattisesti.
 
 Nämä rajoitukset ja muistiinpanot saattavat muuttua jatkaessamme käyttökokemusten kehittämistä. Yhdistämisen vaiheet on kuvattu alla.
 
@@ -37,9 +37,9 @@ Nämä rajoitukset ja muistiinpanot saattavat muuttua jatkaessamme käyttökokem
 > Olemme parantaneet liitettävyyttämme Azure SQL Data Warehouseen.  Pystyt parhaiten muodostamaan yhteyden Azure SQL Data Warehouse-tietolähteeseen Power BI Desktopin avulla.  Kun olet luonut mallin ja raportin, voit julkaista sen Power BI -palvelussa.  Suora yhdistin Azure SQL Data Warehouselle Power BI-palvelussa on nyt vanhentunut.
 >
 
-Helpoin tapa siirtyä SQL Data Warehousen ja Power BI:n välillä on **Avaa Power BI:ssä** -painikkeella Azuren esikatseluportaalissa. Tämän painikkeen avulla voit aloittaa saumattomasti uusien koontinäyttöjen luomisen Power BI:ssä.
+Helpoin tapa siirtyä SQL Data Warehousen ja Power BI:n välillä on **Avaa Power BI:ssä** -painikkeella Azure-portaalissa. Tämän painikkeen avulla voit aloittaa saumattomasti uusien koontinäyttöjen luomisen Power BI:ssä.
 
-1. Aloita siirtymällä SQL Data Warehouse -esiintymään Azuren esikatseluportaalissa. Huomaa, että SQL Data Warehousella on näkyvyys ainoastaan Azuren esikatseluportaalissa tällä hetkellä.
+1. Aloita siirtymällä SQL Data Warehouse -esiintymään Azure-portaalissa. Huomaa, että SQL Data Warehousella on näkyvyys ainoastaan Azuren esikatseluportaalissa tällä hetkellä.
 2. Napsauta **Avaa Power BI:ssä** -painiketta
    
     ![](media/service-azure-sql-data-warehouse-with-direct-connect/openinpowerbi.png)
@@ -78,7 +78,7 @@ SQL Data Warehouse näkyy myös Power BI:n Nouda tiedot -sivulla.
     ![](media/service-azure-sql-data-warehouse-with-direct-connect/explore3.png)
 
 ## <a name="finding-parameter-values"></a>Parametriarvojen etsiminen
-Täydellinen palvelimen nimi ja tietokannan nimi löytyvät Azure-esikatseluportaalista. Huomaa, että SQL Data Warehousella on näkyvyys ainoastaan Azuren esikatseluportaalissa tällä hetkellä.
+Täydellinen palvelimen nimi ja tietokannan nimi löytyvät Azure-portaalista. Huomaa, että SQL Data Warehousella on näkyvyys ainoastaan Azuren esikatseluportaalissa tällä hetkellä.
 
 ![](media/service-azure-sql-data-warehouse-with-direct-connect/azureportal.png)
 
@@ -89,6 +89,6 @@ Täydellinen palvelimen nimi ja tietokannan nimi löytyvät Azure-esikatseluport
 ## <a name="next-steps"></a>Seuraavat vaiheet
 [Mikä on Power BI?](power-bi-overview.md)  
 [Tietojen noutaminen Power BI:hin](service-get-data.md)  
-[Azure SQL Data Warehouse](https://azure.microsoft.com/documentation/services/sql-data-warehouse/)  
+[Azure SQL Data Warehouse](/azure/sql-data-warehouse/sql-data-warehouse-overview-what-is/)
 
 Onko sinulla muuta kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)

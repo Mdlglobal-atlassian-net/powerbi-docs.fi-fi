@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/15/2018
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: cda575c11be90c8e18a3a9f3b8325ccf674afffc
-ms.sourcegitcommit: b8461c1876bfe47bf71c87c7820266993f82c0d3
+ms.openlocfilehash: b068516b13b3aab134b20f95939c75a5b6e949b5
+ms.sourcegitcommit: 60fb46b61ac73806987847d9c606993c0e14fb30
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49337078"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50101688"
 ---
 # <a name="previous-monthly-updates-to-power-bi-desktop"></a>Power BI Desktopin aiemmat kuukausipäivitykset
 
@@ -341,7 +341,7 @@ Seuraavassa videossa esitellään jokainen näistä päivityksistä. Näet video
 
 ### <a name="reporting"></a>Raportointi
 
-* Raporttisivun työkaluvihjeet [[video]](https://youtu.be/kuI6MMzDh34?t=16s) [[artikkeli]]()  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2018-feature-summary/#tooltips) 
+* Raporttisivun työkaluvihjeet  [[video]](https://youtu.be/kuI6MMzDh34?t=16s) [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2018-feature-summary/#tooltips) 
 * Kirjanmerkkien lisääminen nyt yleisesti saatavilla [[video]](https://youtu.be/kuI6MMzDh34?t=9m2s) [[artikkeli]](desktop-bookmarks.md) [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2018-feature-summary/#bookmarking) 
 * Taulukko- ja matriisisarakkeiden näytön yksiköt ja tarkka hallinta [[video]](https://youtu.be/kuI6MMzDh34?t=11m1s)  [[artikkeli]](desktop-slicer-numeric-range.md)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2018-feature-summary/#displayUnits) 
 * Visualisoinnin otsikon poistaminen käytöstä raportin lukutilassa [[video]](https://youtu.be/kuI6MMzDh34?t=12m25s)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2018-feature-summary/#visualHeader) 

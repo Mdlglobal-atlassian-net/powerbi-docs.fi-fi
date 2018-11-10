@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-report-server
 ms.topic: conceptual
-ms.date: 01/25/2018
+ms.date: 10/24/2018
 ms.author: maghan
-ms.openlocfilehash: b340ba2f2798c518d1705c03f7ec526a43bc019d
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 737fa3158078e24d56270fea9b212a06935652ae
+ms.sourcegitcommit: 60fb46b61ac73806987847d9c606993c0e14fb30
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34721773"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50101550"
 ---
 # <a name="browser-support-for-power-bi-report-server"></a>Power BI -raporttipalvelimen selaintuki
 Tietoa siitä, mitä selainversioita tuetaan Power BI -raporttipalvelimen ja raporttien katseluohjelman ohjausobjektien hallintaan ja tarkasteluun.
@@ -114,7 +114,7 @@ Käytä selainta, jossa on käytössä komentosarjojen tuki. Jos selain ei voi s
 ## <a name="next-steps"></a>Seuraavat vaiheet
 [Järjestelmänvalvojan yleiskatsaus](admin-handbook-overview.md)  
 [Power BI -raporttipalvelimen asentaminen](install-report-server.md)  
-[Raportin muodostimen asentaminen](https://docs.microsoft.com/sql/reporting-services/install-windows/install-report-builder)  
+[Raportin muodostimen lataaminen](https://www.microsoft.com/download/details.aspx?id=53613)  
 [SQL Server Data Tools (SSDT) -työkalujen lataaminen](http://go.microsoft.com/fwlink/?LinkID=616714)
 
 Onko sinulla muuta kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)

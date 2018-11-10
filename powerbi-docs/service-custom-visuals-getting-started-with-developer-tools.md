@@ -2,33 +2,34 @@
 title: Mukautettujen visualisointien luominen kehittäjätyökalujen avulla
 description: Voit mukautettujen visualisointien avulla vastata käyttäjiesi tarpeita ja sovelluksesi rakennetta. Lue, miten voit luoda mukautetun visualisoinnin Power BI:lle kehittäjätyökalujen avulla.
 author: markingmyname
+ms.author: maghan
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-developer
-ms.topic: conceptual
+ms.topic: tutorial
 ms.date: 11/30/2017
-ms.author: maghan
-ms.openlocfilehash: ec6399d815cb17bb0f2542144c63535835659017
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: a8aca5e3410d6352d64044cdc1d8575b2449912c
+ms.sourcegitcommit: f2eab2c3e7b5ec3684f63d819f10cb3dcfa21e73
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44726681"
+ms.lasthandoff: 10/26/2018
+ms.locfileid: "50153698"
 ---
 # <a name="use-developer-tools-to-create-custom-visuals"></a>Mukautettujen visualisointien luominen kehittäjätyökalujen avulla
+
 Voit mukautettujen visualisointien avulla vastata käyttäjiesi tarpeita ja sovelluksesi rakennetta. Lue, miten voit luoda mukautetun visualisoinnin Power BI:lle kehittäjätyökalujen avulla.
 
 > [!NOTE]
 > Pääset alkuun tämän asiakirjan avulla. Katso lisätietoja artikkelin [Power BI -visualisointien Git Repo](https://github.com/Microsoft/PowerBI-visuals) viitetiedoista.
-> 
-> 
 
 ## <a name="requirements"></a>Vaatimukset
+
 * Vähintään NodeJS 4.0 pakollinen (suositeltu versio 5.0 tai uudempi) [NodeJS:n lataaminen](https://nodejs.org)
 
 ## <a name="install-nodejs-and-the-power-bi-tools"></a>NodeJS:n ja Power BI -työkalujen asentaminen
-Jotta voit luoda mukautetun visualisoinnin, sinun on asennettava NodeJS. NodeJS:tä vaaditaan komentorivin työkalujen suorittamiseen.
+
+Jotta voit luoda mukautetun visualisoinnin, sinun on asennettava NodeJS. NodeJS vaaditaan komentorivin työkalujen suorittamiseen.
 
 1. Lataa ja asenna [NodeJS](https://nodejs.org). Versio 4.0 tai uudempi on pakollinen, mutta suosittelemme versiota 5.0 tai uudempaa versiota.
 2. Asenna komentorivin työkalut. Suorita seuraava komento komentokehotteesta.
@@ -83,12 +84,11 @@ Jotta voit luoda mukautetun visualisoinnin, sinun on asennettava NodeJS. NodeJS:
 <a name="ssl-setup"></a>
 
 ### <a name="server-certificate-setup"></a>Palvelinvarmenteen määritys
+
 Jotta voit ottaa käyttöön visualisoinnin reaaliaikaisen esikatselun, tarvitset luotettua https-palvelinta. Ennen kuin voit aloittaa, sinun on asennettava SSL-varmenne, jotta visualisointiresurssit voidaan ladata verkkoselaimeen. 
 
 > [!NOTE]
 > Kyse on kehittäjän työaseman yhden kerran suoritettavasta määrityksestä.
-> 
-> 
 
 Voit *luoda* varmenteen suorittamalla seuraavan komennon.
 
@@ -96,9 +96,6 @@ Voit *luoda* varmenteen suorittamalla seuraavan komennon.
 
 > [!NOTE]
 > Sinun pitäisi nähdä viesti, jossa on ilmoitettu varmenteen sijaintipolku ja juuri luotu tunnuslause.
-> 
-> 
-
 
 Voit *asentaa*  varmenteen suorittamalla seuraavan komennon.
 
@@ -106,8 +103,6 @@ Voit *asentaa*  varmenteen suorittamalla seuraavan komennon.
 
 > [!NOTE]
 > Sinun pitäisi nähdä viesti, jossa sinua pyydetään käyttämään juuri luotua tunnuslausetta PFX-varmenteen asentamiseen.
-> 
-> 
 
 **Windows-käyttöjärjestelmä**
 
@@ -131,8 +126,6 @@ Voit *asentaa*  varmenteen suorittamalla seuraavan komennon.
 
 > [!NOTE]
 > Jos varmennetta ei tunnisteta, sinun on ehkä käynnistettävä tietokone uudelleen.
-> 
-> 
 
 **OSX**
 
@@ -149,10 +142,9 @@ Voit *asentaa*  varmenteen suorittamalla seuraavan komennon.
 
 > [!NOTE]
 > Jos varmennetta ei tunnisteta, sinun on ehkä käynnistettävä tietokone uudelleen.
-> 
-> 
 
-## <a name="enable-live-preview-of-developer-visual"></a>Kehittäjän visualisoinnin reaaliaikaisen esikatselun käyttöönotto
+## <a name="enable-a-live-preview-of-the-developer-visual"></a>Kehittäjän visualisoinnin reaaliaikaisen esikatselun käyttöönotto
+
 Voit ottaa mukautetun visualisoinnin reaaliaikaisen esikatselun käyttöön seuraavasti. Tällä tavoin visualisointia voi käyttää Power BI -palvelussa raporttien muokkauksen aikana.
 
 1. Selaa ja kirjaudu sisään [app.powerbi.comiin](https://app.powerbi.com).
@@ -168,16 +160,16 @@ Voit ottaa mukautetun visualisoinnin reaaliaikaisen esikatselun käyttöön seur
 
    > [!NOTE]
    > Tämä edellyttää, että olet suorittanut `pbiviz start` visualisointikansiosta kehittäjän tietokoneessa. Katso lisätietoja visualisoinnin luomisesta tästä artikkelista [Uuden visualisoinnin luominen](#create-a-new-visual).
-   > 
-   > 
+
 5. Valitse visualisointi raporttipohjassa. Voit sitoa tietoja samalla tavalla kuin muita visualisointeja.
 
 Voit nyt aloittaa visualisoinnin kehittämisen.
 
 ## <a name="create-a-new-visual"></a>Uuden visualisoinnin luominen
+
 Voit luoda uuden visualisointiprojektin suorittamalla seuraavan komennon.
 
-```
+```powershell
 pbiviz new MyVisualName
 ```
 
@@ -186,18 +178,20 @@ Voit korvata *MyVisualName*-kohdan nimellä, jonka haluat antaa visualisoinnille
 Tämä komento luo uuden kansion paikkaan, jossa komento suoritettiin. Se luo visualisoinnin perusaloitusmallin. Kun komento on suoritettu, voit avata hakemiston ja käyttää uutta visualisointia suosikkieditorisi avulla.
 
 ## <a name="testing-your-visual-in-power-bi"></a>Visualisoinnin testaus Power BI:ssä
+
 Voit testata visualisointia Power BI -palvelun raporteissa ja koontinäytöissä.
 
 <a name="running-your-visual"></a>
 
 ### <a name="running-your-visual"></a>Visualisoinnin suorittaminen
+
 Voit suorittaa visualisoinnin toimimalla seuraavasti.
 
 1. Avaa kehote.
 2. Muuta hakemisto visualisointikansioksi. Tämä kansio sisältää `pbiviz.json`-tiedoston.
 3. Suorita seuraava komento.
 
-    ```
+    ```powershell
     pbiviz start
     ```
 
@@ -205,7 +199,7 @@ Voit suorittaa visualisoinnin toimimalla seuraavasti.
 
 Jos olet väärässä paikassa, näet seuraavanlaisen virheen.
 
-```
+```powershell
     error  LOAD ERROR Error: pbiviz.json not found. You must be in the root of a visual project to run this command.
         at e (C:\Users\[user]\AppData\Roaming\npm\node_modules\powerbi-visuals-tools\lib\VisualPackage.js:67:35)
         at Function.loadVisualPackage (C:\Users\[user]\AppData\Roaming\npm\node_modules\powerbi-visuals-tools\lib\VisualPackage.js:62:16)
@@ -220,14 +214,13 @@ Jos olet väärässä paikassa, näet seuraavanlaisen virheen.
 ```
 
 ### <a name="viewing-your-visual-in-power-bi"></a>Visualisoinnin tarkasteleminen Power BI:ssä
+
 Voit tarkastella visualisointia raportissa siirtymällä tähän raporttiin ja valitsemalla visualisoinnin **Visualisoinnit**-ruudussa.
 
 > [!NOTE]
 > Tätä ennen on suoritettava `pbiviz start`-komento [Visualisoinnin suorittaminen](#running-your-visual) -osiossa kuvatun mukaisesti.
-> 
-> 
 
-![](media/service-custom-visuals-getting-started-with-developer-tools/powerbi-developer-visual-selection.png)
+![Power BI -kehittäjän visualisoinnin valinta](media/service-custom-visuals-getting-started-with-developer-tools/powerbi-developer-visual-selection.png)
 
 Näyttöön tulee sitten visualisoinnin aloitusmalli.
 
@@ -242,6 +235,7 @@ Näyttöön tulee sitten visualisoinnin aloitusmalli.
 | Lähetä palautetta |Kerro meille, jos voimme jotenkin parantaa käyttökokemustasi! (GitHub-tili pakollinen) |
 
 ## <a name="package-your-visual-for-use-in-power-bi-desktop-and-distribution"></a>Pakkaa visualisointi käytettäväksi Power BI Desktopissa ja jakelussa
+
 Ennen kuin voit ladata visualisoinnin [Power BI Desktopiin](https://powerbi.microsoft.com/desktop/) tai jakaa sen yhteisön [Power BI -visualisointivalikoimassa](https://visuals.powerbi.com), sinun on luotava `pbiviz`-tiedosto.
 
 Voit pakata visualisoinnin toimimalla seuraavasti.
@@ -250,19 +244,21 @@ Voit pakata visualisoinnin toimimalla seuraavasti.
 2. Muuta hakemisto visualisointikansioksi. Tämä kansio sisältää `pbiviz.json`-tiedoston.
 3. Suorita seuraava komento.
 
-    ```
+    ```powershell
     pbiviz package
     ```
 
 Tämä komento luo `pbiviz`in visualisointiprojektin `dist/`-hakemistossa. Jos täällä on jo `pbiviz`-tiedosto, se korvataan.
 
 ## <a name="updating-the-visuals-api-version"></a>Visualisointien ohjelmointirajapintaversion päivitys
+
 Kun luot visualisointeja `pbiviz new`in avulla, asianomaisen ohjelmointirajapintatyypin määritelmät ja json-rakenteet kopioidaan visualisoinnin hakemistoon. Voit päivittää näitä tiedostoja tarvittaessa `pbiviz update`-komennon avulla. Tästä voi olla hyötyä, jos julkaisemme aiemman ohjelmointirajapintaversion korjauksen tai jos haluat päivittää uusimpaan ohjelmointirajapintaversioon.
 
 ### <a name="updating-your-existing-api-version"></a>Päivitys olemassa olevaan ohjelmointirajapintaversioon
+
 Jos julkaisemme päivityksen olemassa olevaan ohjelmointirajapintaan, saat uusimman version toimimalla seuraavasti.
 
-```
+```powershell
 #Update your version of pbiviz
 npm install -g powerbi-visuals-tools
 
@@ -273,9 +269,10 @@ pbiviz update
 Tämä lataa uusimmat työkalut npm:stä, joka sisältää päivitetyn tyypin määritykset ja rakenteet. `pbiviz update` korvaa `apiVersion` -ominaisuuden *pbiviz.json*-kentässä uusimpaan versioon.
 
 ### <a name="upgrading-to-a-different-api-version"></a>Päivitys eri ohjelmointirajapintaversioon
+
 Voit päivittää eri ohjelmointirajapintaversioon noudattamalla edellä mainittuja samoja vaiheita. Voit nimenomaisesti määrittää ohjelmointirajapintaversion, jota haluat käyttää.
 
-```
+```powershell
 #Update your version of pbiviz
 npm install -g powerbi-visuals-tools
 
@@ -287,10 +284,9 @@ Tämä päivittää visualisoinnin ohjelmointirajapintaversioon 1.2.0. Voit korv
 
 > [!WARNING]
 > Työkalujen käyttämä oletusarvoinen ohjelmointirajapintaversio on aina ohjelmointirajapinnan vakaa versio. Kaikki oletusarvoista ohjelmointirajapintaversiota myöhemmät versiot ovat epävakaita ja saattavat muuttua. Ne voivat toimia odottamattomasti ja käyttäytyä eri tavalla Power BI -palvelussa ja Power BI Desktopissa. Katso nykyinen vakaa ohjelmointirajapintaversio [muutoslokista](https://github.com/Microsoft/PowerBI-visuals/blob/master/ChangeLog.md). Katso lisätietoja esijulkaistuista versiosta [suunnitelmasta](https://github.com/Microsoft/PowerBI-visuals/blob/master/Roadmap/README.md).
-> 
-> 
 
 ## <a name="inside-the-visual-project"></a>Visualisointiprojektin sisällä
+
 Visualisointiprojekti on kansio, joka luodaan, kun suoritat `pbiviz new`-komennon. 
 
 ### <a name="file-structure"></a>Tiedoston rakenne
@@ -308,6 +304,7 @@ Visualisointiprojekti on kansio, joka luodaan, kun suoritat `pbiviz new`-komenno
 | tsconfig.json |Typescript-kääntäjän asetukset. Lue lisää [tsconfig.jsonista](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html). |
 
 ### <a name="pbivizjson"></a>pbiviz.json
+
 Tämä tiedosto on visualisoinnin tärkein määritystiedosto. Se sisältää metatiedot ja tietoja tiedostoista, joita tarvitaan visualisoinnin luomiseen.
 
 ```
@@ -336,6 +333,7 @@ Tämä tiedosto on visualisoinnin tärkein määritystiedosto. Se sisältää me
 ```
 
 ### <a name="visual-source-typescript"></a>Visualisoinnin lähde (TypeScript)
+
 Visualisointikoodi pitäisi kirjoittaa TypeScriptiin. Se on JavaScriptin yläjoukko, joka tukee edistyneempiä ominaisuuksia ja varhaista pääsyä ES6/ES7-toimintoon.
 
 Kaikki TypeScript-tiedostot olisi tallennettava `src/`-hakemistoon ja lisättävä `files` -valikoimaan `tsconfig.json`ssä. Tällä tavoin TypeScript-kääntäjä voi ladata ne tietyssä järjestyksessä.
@@ -347,6 +345,7 @@ Voit luoda niin monta tiedostoa ja luokkaa kuin tarvitset visualisoinnin luomise
 Lue lisää [TypeScriptistä](http://www.typescriptlang.org/).
 
 ### <a name="visual-style-less"></a>Visualisointityylit (Less)
+
 Visualisointityylit määritetään cascading style sheet (CSS) -arkkien avulla. Käyttömukavuuden lisäämiseksi käytämme Less-esikääntäjää, joka tukee joitakin kehittyneitä ominaisuuksia, kuten sisäkkäisyyttä, muuttujia, sekoitusta, ehtoja, silmukoita jne. Jos et halua käyttää jotakin näistä ominaisuuksista, voit kirjoittaa tavallisen CSS:n Less-tiedostoon.
 
 Kaikki Less-tiedostot tallennetaan `style/`-hakemistoon. Tässä yhteydessä ladataan `pbiviz.json`-tiedoston `style`-kentässä määritetty tiedosto. Kaikki lisätiedostot on ladattava `@import`in avulla.
@@ -354,12 +353,15 @@ Kaikki Less-tiedostot tallennetaan `style/`-hakemistoon. Tässä yhteydessä lad
 Lue lisää [Less](http://lesscss.org/)-tiedostoista.
 
 ## <a name="debugging"></a>Virheenkorjaus
+
 Katso vihjeitä mukautetun visualisoinnin virheenkorjauksesta [virheenkorjauksen oppaasta](https://github.com/Microsoft/PowerBI-visuals/blob/master/tools/debugging.md).
 
 ## <a name="submit-your-visual-to-appsource"></a>Visualisoinnin lähettäminen AppSourceen
+
 Voit luetella visualisoinnin muiden käyttöön, mutta lähettää sen AppSourceen. Katso lisätietoja tästä prosessista artikkelista [Mukautettujen visualisointien julkaiseminen AppSourceen](developer/office-store.md).
 
 ## <a name="troubleshooting"></a>Vianmääritys
+
 **Pbiviz-komentoa ei löydy (tai samankaltaisia virheitä)**
 
 Jos suoritat `pbiviz` päätteessä/komentorivillä, näkyviin pitäisi tulla Ohje-näyttö. Jos näin ei ole, sitä ei ole asennettu oikein. Varmista, että olet asentanut vähintään NodeJS 4.0 -version.
@@ -376,8 +378,6 @@ Jos et näe sitä, varmista, että olet ottanut sen käyttöön Power BI:n asetu
 
 > [!NOTE]
 > Virheenkorjauksen visualisointi on nykyisin saatavilla vain Power BI Desktopissa tai mobiilisovelluksessa. Pakattu visualisointi toimii edelleen kaikkialla.
-> 
-> 
 
 Katso lisätietoja artikkelista [Kehittäjän visualisoinnin reaaliaikaisen esikatselun käyttöönotto](#enable-live-preview-of-developer-visual).
 
@@ -388,11 +388,11 @@ Suorita visualisointipalvelin käyttämällä `pbiviz start`-komentoa päättees
 Katso lisätietoja artikkelista [Visualisointien suorittaminen](#running-your-visual) tai [Palvelinvarmenteen asetukset](#ssl-setup).
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
+
 [Visualisoinnit Power BI:ssä](visuals/power-bi-report-visualizations.md)  
 [Mukautetut visualisoinnit Power BI:ssä](power-bi-custom-visuals.md)  
 [Mukautettujen visualisointien julkaiseminen Office-kauppaan](developer/office-store.md)  
 [TypeScript](http://www.typescriptlang.org/)  
 [Less CSS](http://lesscss.org/)  
 
-Onko sinulla muuta kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)
-
+Onko sinulla muuta kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/) 

@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.component: powerbi-report-server
 ms.topic: conceptual
 ms.date: 08/21/2018
-ms.openlocfilehash: dc29336754be008b541f146fff7c5f8609472cd0
-ms.sourcegitcommit: dddb6f8d39131febadfd97efa0e0e1d728f4f5ff
+ms.openlocfilehash: 183b1e51f933fc8dc439e5f8b0f434e8366e9794
+ms.sourcegitcommit: 60fb46b61ac73806987847d9c606993c0e14fb30
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42703002"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50101435"
 ---
 # <a name="configure-your-report-server-to-host-excel-workbooks-using-office-online-server-oos"></a>Määritä raporttipalvelin Excel-työkirjojen isännäksi Office Online Serverin (OOS) avulla
 
@@ -186,7 +186,7 @@ Kun olet syöttänyt löytö-URL-osoitteen ja valinnut **Käytä**, Excel-työki
 
 [Järjestelmänvalvojan yleiskatsaus](admin-handbook-overview.md)  
 [Power BI -raporttipalvelimen asentaminen](install-report-server.md)  
-[Raportin muodostimen asentaminen](https://docs.microsoft.com/sql/reporting-services/install-windows/install-report-builder)  
+[Raportin muodostimen lataaminen](https://www.microsoft.com/download/details.aspx?id=53613)  
 [SQL Server Data Tools (SSDT) -työkalujen lataaminen](http://go.microsoft.com/fwlink/?LinkID=616714)
 
 Onko sinulla muuta kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
