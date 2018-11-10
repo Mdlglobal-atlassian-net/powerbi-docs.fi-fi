@@ -7,59 +7,68 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 03/08/2018
+ms.date: 11/01/2018
 ms.author: mblythe
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: 5013c70e4d3998eb39e0de2a92f890417175fd62
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 41b3a0b1032616045b854e4a4776ba82bffffe47
+ms.sourcegitcommit: 0611860a896e636ceeb6e30ce85243bfd8e7b61d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34240902"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50909411"
 ---
 # <a name="using-an-alternate-email-address"></a>Vaihtoehtoisen sähköpostiosoitteen käyttö
-Oletusarvoisesti sinulle lähetetään Power BI:n toimintaa koskevat päivitykset sähköpostiosoitteeseen, jota käytit rekisteröityessäsi Power BI:hin.  Jos joku esimerkiksi lähettää sinulle jakamiskutsun, se lähetetään sinulle kyseiseen osoitteeseen.
 
-Saatat kuitenkin haluta, että tällaiset sähköpostiviestit lähetettäisiin johonkin toiseen sähköpostiosoitteeseen kuin siihen, jota käytit rekisteröityessäsi Power BI:hin.
+Kun rekisteröidyt Power BI:n käyttäjäksi, sinun tulee antaa sähköpostiosoite. Oletusarvon mukaan Power BI käyttää tätä osoitetta lähettäessään palvelun toimintaa koskevia päivityksiä. Jos joku esimerkiksi lähettää sinulle jakamiskutsun, se lähetetään sinulle kyseiseen osoitteeseen.
 
-## <a name="updating-through-office-365-personal-info-page"></a>Osoitteen päivittäminen Office 365:n Henkilökohtaiset tiedot ‑sivun kautta
-1. Siirry [Office 365:n Henkilökohtaiset tiedot ‑sivulle](https://portal.office.com/account/#personalinfo).  Jos saat kirjautumiskehotteen, kirjaudu sisään käyttämällä sähköpostiosoitetta ja salasanaa, joilla kirjaudut Power BI:hin.
-2. Napsauta Yhteystiedot-osion Muokkaa-linkkiä.  
-   
-   > [!NOTE]
-   > Jos et näe Muokkaa-linkkiä, sähköpostiosoitteita hallitsee oma Office 365 ‑järjestelmänvalvojasi, ja sinun pitää pyytää häntä vaihtamaan sähköpostiosoitteesi.
-   > 
-   > 
-   
-   ![](media/service-admin-alternate-email-address-for-power-bi/contact-details.png)
-3. Kirjoita Vaihtoehtoinen sähköposti ‑kenttään sähköpostiosoite, johon haluat saada Power BI ‑päivitykset.
+Joissakin tapauksissa haluat ehkä, että nämä viestit lähetetään muuhun kuin siihen sähköpostiosoitteeseen, jota käytit rekisteröitymiseen. Tässä artikkelissa kerrotaan, miten voit määrittää vaihtoehtoisen osoitteen Office 365:ssä ja PowerShellissa. Artikkelissa kerrotaan myös, miten sähköpostiosoite tulkitaan Azure Active Directoryssa (Azure AD).
 
 > [!NOTE]
-> Tämän asetuksen muuttaminen ei vaikuta siihen, mihin sähköpostiosoitteeseen lähetetään palvelupäivitykset, uutiskirjeet ja muut markkinointiviestit.  Ne lähetetään aina siihen sähköpostiosoitteeseen, jota käytit rekisteröityessäsi Power BI:hin.
-> 
-> 
+> Vaihtoehtoisen osoitteen määrittäminen ei vaikuta siihen, mitä sähköpostiosoitetta Power BI käyttää palvelupäivityksien, uutiskirjeiden ja muiden markkinointiviestien lähettämisessä.  Nämä viestit lähetetään aina siihen sähköpostiosoitteeseen, jolla rekisteröidyit Power BI:n käyttäjäksi.
 
-## <a name="updating-through-azure-active-directory"></a>Osoitteen päivittäminen Azure Active Directoryn kautta
-Kun sieppaat Azure Active Directoryn (AAD) upotettavan tunnuksen Power BI:tä varten, voit käyttää kolmea erityyppistä sähköpostiosoitetta. Kolme osoitetyyppiä ovat:
+## <a name="use-office-365"></a>Office 365:n käyttäminen
 
-* ensisijainen sähköpostiosoite, joka on liitetty käyttäjän AAD-tiliin
-* UserPrincipalName (UPN) ‑sähköpostiosoite
-* ”Muu” sähköpostiosoite ‑matriisimäärite
+Jos haluat määrittää vaihtoehtoisen osoitteen Office 365:ssä, toimi seuraavasti.
 
-Power BI valitsee, mitä niistä käytetään seuraavien ehtojen perusteella:
-1.  Jos AAD-vuokraajan käyttäjäobjektissa on olemassa postimäärite, Power BI käyttää kyseistä postimääritettä sähköpostiosoitteena.
-2.  Jos UPN-sähköpostiosoite *ei* ole **\*.onmicrosoft.com**-toimialueen sähköpostiosoite (tiedot @-merkin jälkeen), Power BI käyttää kyseistä postimääritettä sähköpostiosoitteena.
-3.  Jos AAD-käyttäjäobjektissa on matriisimäärite muu sähköpostiosoite, käytetään luettelon ensimmäistä sähköpostiosoitetta (sillä tässä määritteessä voi olla sähköpostiosoitteista luettelo).
-4. Jos mikään edellä mainituista ehdoista ei täyty, käytetään UPN-osoitetta.
+1. Avaa [Office 365:n Henkilökohtaiset tiedot ‑sivu](https://portal.office.com/account/#personalinfo). Jos saat kirjautumiskehotteen, kirjaudu sisään käyttämällä sähköpostiosoitetta ja salasanaa, joilla kirjaudut Power BI:hin.
 
-## <a name="updating-with-powershell"></a>Osoitteen päivittäminen PowerShellin kautta
-Voit myös antaa vaihtoehtoisen sähköpostiosoitteen PowerShellin kautta Azure Active Directoryyn. Se tehdään komennolla [Set AzureADUser](https://docs.microsoft.com/powershell/module/azuread/set-azureaduser).
+1. Valitse vasemmasta valikosta **Henkilökohtaiset tiedot**.
 
-```
+1. Valitse **Yhteystiedot**-osiossa **Muokkaa**.
+
+    Jos et voi muokata omia tietojasi, tämä tarkoittaa, että Office 365 -järjestelmänvalvoja hallitsee sähköpostiosoitettasi. Pyydä järjestelmänvalvojaa päivittämään sähköpostiosoitteesi.
+
+    ![Yhteystiedot](media/service-admin-alternate-email-address-for-power-bi/contact-details.png)
+
+1. Kirjoita **Vaihtoehtoinen sähköposti**  ‑kenttään sähköpostiosoite, johon haluat saada Power BI ‑päivitykset.
+
+## <a name="use-powershell"></a>PowerShellin käyttäminen
+
+Voit määrittää vaihtoehtoisen osoitteen PowerShellissa [Set-AzureADUser](/powershell/module/azuread/set-azureaduser/)-komennolla.
+
+```powershell
 Set-AzureADUser -ObjectId john@contoso.com -OtherMails "otheremail@somedomain.com"
 ```
 
-Lisätietoja on artikkelissa [Azure Active Directoryn PowerShell-versio 2](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2).
+## <a name="email-address-resolution-in-azure-ad"></a>Sähköpostiosoitteen tulkinta Azure AD:ssä
+
+Kun sieppaat Azure AD:hen upotettavan tunnuksen Power BI:tä varten, voit käyttää kolmea erityyppistä sähköpostiosoitetta:
+
+* ensisijainen sähköpostiosoite, joka on liitetty käyttäjän Azure AD -tiliin
+
+* UserPrincipalName (UPN) ‑sähköpostiosoite
+
+* *muu sähköpostiosoite* -matriisimäärite
+
+Power BI valitsee seuraavan järjestyksen mukaisesti, mitä niistä käytetään:
+
+1. Jos Azure AD -vuokraajan käyttäjäobjektissa on olemassa postimäärite, Power BI käyttää kyseistä postimääritettä sähköpostiosoitteena.
+
+1. Jos UPN-sähköpostiosoite *ei* ole **\*.onmicrosoft.com**-toimialueen sähköpostiosoite (tiedot @-merkin jälkeen), Power BI käyttää kyseistä postimääritettä sähköpostiosoitteena.
+
+1. Jos Azure AD -käyttäjäobjektissa on matriisimäärite *muu sähköpostiosoite*, käytetään luettelon ensimmäistä sähköpostiosoitetta (sillä tässä määritteessä voi olla sähköpostiosoitteista luettelo).
+
+1. Jos mikään edellä mainituista ehdoista ei täyty, käytetään UPN-osoitetta.
 
 Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
 

@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/26/2018
+ms.date: 11/01/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: a4c73cc81a09a3747ff34e6a20508b4ff19eafa8
-ms.sourcegitcommit: df7a58dae14ef311516c9b3098f87742786f0479
+ms.openlocfilehash: c01af129e15025b97925f59532d1be7a6671b47f
+ms.sourcegitcommit: 0611860a896e636ceeb6e30ce85243bfd8e7b61d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39280290"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50909613"
 ---
 # <a name="use-insights-in-power-bi-desktop-to-explain-increases-and-decreases-seen-in-visuals-preview"></a>Merkityksellisten tietojen avulla voit selittää Power BI Desktopissa visualisointien nousuja ja laskuja (esikatselu)
 
@@ -113,7 +113,6 @@ Seuraavassa luettelossa on esitetty tilanteita, joissa **lisäyksen/vähennyksen
 * TopN-suodattimet
 * Sisällyttää tai jättää pois suodattimet
 * Mittayksikkösuodattimet
-* Lisäämättömät mittayksiköt ja koosteet
 * Muu kuin numeeriset mittayksiköt
 * ”Näytä arvo muodossa” -toiminnon käyttö
 * Suodatetut mittayksiköt - Suodatetut mittayksiköt ovat visuaalisen tason laskutoimituksia, joihin liittyy tietty suodatin (esimerkiksi *Ranskan kokonaismyynti*), ja niitä käytetään joissakin merkitykselliset tiedot -toiminnon visualisoinneissa

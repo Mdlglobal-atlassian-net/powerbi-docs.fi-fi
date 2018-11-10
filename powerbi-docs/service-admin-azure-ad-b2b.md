@@ -7,55 +7,51 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-admin
 ms.topic: conceptual
-ms.date: 03/02/2018
+ms.date: 11/02/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 6e1665b6e9c9ff0a756d9ccdaf9e6feb4ed9eb39
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: dded0f38ccc4c871bf402240aba25b11106bac09
+ms.sourcegitcommit: d20f74d5300197a0930eeb7db586c6a90403aabc
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34722220"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "50973208"
 ---
 # <a name="distribute-power-bi-content-to-external-guest-users-with-azure-ad-b2b"></a>Power BI -sisällön jakaminen ulkoisille vieraskäyttäjille Azure AD B2B:n avulla
 
-Power BI on integroitu Azure Active Directory Business-to-Businessin (Azure AD B2B) kanssa, jotta Power BI -sisältöä voidaan jakaa turvallisesti organisaation ulkopuolisten vierailevien käyttäjien kanssa, säilyttäen samalla sisäisten tietojen hallinnan.
+Power BI on integroitu Azure Active Directory Business-to-Businessiin (Azure AD B2B), jotta Power BI -sisältöä voidaan jakaa turvallisesti organisaation ulkopuolisille vieraskäyttäjille säilyttäen samalla sisäisten tietojen hallinta.
 
-> [!VIDEO https://www.youtube.com/embed/xxQWEQ1NnlY]
+## <a name="enable-access"></a>Käytön salliminen
 
-> [!NOTE]
-> Sinun on **otettava käyttöön** [Vienti- ja jakamisasetukset](service-admin-portal.md#export-and-sharing-settings) -ominaisuus Power BI -järjestelmävalvojaportaalin vuokraaja-asetuksista ennen vierailevien käyttäjien kutsumista.
-
-> [!NOTE]
-> Tämä ominaisuus ei ole tällä hetkellä käytettävissä Power BI -mobiilisovelluksissa. Jaettua Power BI -sisältöä voi tarkastella mobiililaitteella käyttämällä Azure AD B2B:ta selaimessa. 
+Varmista, että [Vienti- ja jakamisasetukset](service-admin-portal.md#export-and-sharing-settings) -ominaisuus on käytössä Power BI -hallintaportaalissa ennen vieraskäyttäjien kutsumista.
 
 ## <a name="who-can-you-invite"></a>Kenet voi kutsua?
 
-Voit kutsua vieraskäyttäjiä, millä tahansa sähköpostiosoitteella, mukaan lukien henkilökohtaiset tilit, kuten gmail.com, outlook.com tai hotmail.com. Azure B2B:ssä näitä kutsutaan nimellä ”Yhteisö tunnukset”. Lisätietoja löytyy [Azure B2B](https://docs.microsoft.com/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b)-viitteestä.
+Voit kutsua vieraskäyttäjiä millä tahansa sähköpostiosoitteella, myös henkilökohtaisilla tileillä, kuten gmail.com, outlook.com tai hotmail.com. Azure AD B2B:ssä näitä osoitteita kutsutaan *sosiaalisiksi käyttäjätiedoiksi*.
 
 ## <a name="invite-guest-users"></a>Vieraskäyttäjien kutsuminen
 
-Power BI -vuokraajaan voi kutsua vieraskäyttäjiä kahdella tavalla: suunnitellut kutsut tai ad-hoc -kutsut. Kutsuja tarvitaan vain kun ulkopuolinen käyttäjä kutsutaan organisaatioosi ensimmäisen kerran.
+Kutsuja edellytetään vain kun ulkoinen vieraskäyttäjä kutsutaan organisaatioon ensimmäisen kerran. Voit kutsua käyttäjiä kahdella tavalla: suunnitelluilla kutsuilla ja ad-hoc-kutsuilla.
 
 ### <a name="planned-invites"></a>Suunnitellut kutsut
 
-Suunniteltu kutsu toteutetaan Azure AD:n Microsoft Azure -portaalista tai PowerShelliä käyttämällä. Tätä menetelmää voi käyttää, jos tiedetään mitkä käyttäjät pitää kutsua. 
+Käytä suunniteltua kutsua, jos tiedät, keitä haluat kutsua. Voit lähettää kutsun Azure-portaalin tai PowerShellin avulla. Sinun on oltava vuokraajan järjestelmänvalvoja, jotta voit kutsua ihmisiä.
 
-**Uusien käyttäjien luominen Azure AD -portaaliin edellyttää, että olet vuokraajan järjestelmävalvoja.**
+Näitä ohjeita noudattamalla voit lähettää kutsuja Azure-portaalissa.
 
-1. Siirry [Azure-portaaliin](https://portal.azure.com) ja valitse **Azure Active Directory**.
+1. Valitse [Azure-portaalissa](https://portal.azure.com) **Azure Active Directory**.
 
-2. Siirry **Käyttäjät ja ryhmät** > **Kaikki käyttäjät** > **Uusi vieraskäyttäjä**.
+1. Valitse **Hallinta**, siirry kohtaan **Käyttäjät** > **Kaikki käyttäjät** > **Uusi vieraskäyttäjä**.
 
     ![Azure AD -portaali - Uusi vieraskäyttäjä](media/service-admin-azure-ad-b2b/azuread-portal-new-guest-user.png)
 
-3. Syötä **sähköpostiosoite** ja **henkilökohtainen viesti**.
+1. Kirjoita **sähköpostiosoite** ja **henkilökohtainen viesti**.
 
     ![Azure AD -portaali - uuden vieraskäyttäjän kutsuviesti](media/service-admin-azure-ad-b2b/azuread-portal-invite-message.png)
 
-4. Valitse **Kutsu**.
+1. Valitse **Kutsu**.
 
-Kutsuaksesi enemmän kuin yhden vieraskäyttäjän, käytä PowerShelliä. Lisätietoja saat [Azure Active Directory B2B yhteistyökoodi and PowerShell-mallit](https://docs.microsoft.com/azure/active-directory/b2b/code-samples) -artikkelista.
+Kutsuaksesi enemmän kuin yhden vieraskäyttäjän, käytä PowerShelliä. Lisätietoja on artikkelissa [Azure Active Directory B2B yhteistyökoodi and PowerShell-mallit](/azure/active-directory/b2b/code-samples/).
 
 Vieraskäyttäjien tulee valita saapuneesta sähköpostikutsusta kohta **Aloita**. Vieraskäyttäjä lisätään tämän jälkeen vuokraajaan.
 
@@ -63,33 +59,29 @@ Vieraskäyttäjien tulee valita saapuneesta sähköpostikutsusta kohta **Aloita*
 
 ### <a name="ad-hoc-invites"></a>Ad-hoc -kutsu
 
-Lähettääksesi kutsun milloin tahansa, lisää ulkoinen käyttäjä koontinäyttöösi tai raporttiisi jaetun käyttöliittymän kautta, tai sovelluksen käyttöoikeussivulta.
+Lähettääksesi kutsun milloin tahansa, lisää ulkoinen käyttäjä koontinäyttöösi tai raporttiisi jaetun käyttöliittymän kautta, tai sovelluksen käyttöoikeussivulta. Seuraavassa esimerkki siitä, miten vieraskäyttäjän kutsuminen toimii sovelluksen kautta.
 
-Seuraavassa esimerkki siitä, miten vieraskäyttäjän kutsuminen toimii sovelluksen kautta.
-![Vieraskäyttäjä lisätään sovelluksen käyttöoikeus -listaan](media/service-admin-azure-ad-b2b/power-bi-app-access.png)
+![Ulkopuolinen käyttäjä lisätään sovelluksen käyttöoikeus -listaan](media/service-admin-azure-ad-b2b/power-bi-app-access.png)
 
-Vieraskäyttäjä saa sähköpostin, josta ilmenee että sovellus on jaettu hänen kanssaan.
+Vieraskäyttäjä saa sähköpostin, jossa ilmoitetaan, että sovellus on jaettu hänen kanssaan.
 
 ![Sovelluksen sähköposti jaetaan vieraskäyttäjälle](media/service-admin-azure-ad-b2b/guest-user-invite-email2.png)
 
-Vieraskäyttäjän tulee kirjautua sisään organisaatiossaan käyttämällä sähköpostiosoitteella. Sisäänkirjautumisen jälkeen heitä pyydetään hyväksymään kutsu. Sisäänkirjautumisen jälkeen vieraskäyttäjä ohjataan sovelluksen sisällön luo. Palataksesi sovellukseen, lisää linkki kirjanmerkkeihin tai tallenna sähköposti.
+Vieraskäyttäjän tulee kirjautua sisään organisaatiossaan käyttämällä sähköpostiosoitteella. Sisäänkirjautumisen jälkeen heitä pyydetään hyväksymään kutsu. Sisäänkirjautumisen jälkeen vieraskäyttäjä ohjataan sovelluksen sisällön luo. Jotta käyttäjä voi palata sovellukseen, hän voi lisätä linkin kirjanmerkkeihin tai tallentaa sähköpostin.
 
 ## <a name="licensing"></a>Käyttöoikeudet
 
-Vieraskäyttäjällä on oltava tarvittavat käyttöoikeudet, jotta hän voi tarkastella jaettua sovellusta. Tämän saavuttamiseksi on olemassa kolme vaihtoehtoa.
+Vieraskäyttäjällä on oltava tarvittavat käyttöoikeudet, jotta hän voi tarkastella jaettua sovellusta. Tähän on olemassa kolme vaihtoehtoa: Power BI Premiumin käyttäminen, Power BI Pro -käyttöoikeuden määrittäminen tai vieraan Power BI Pro -käyttöoikeuden käyttäminen.
 
 ### <a name="use-power-bi-premium"></a>Power BI Premiumia käyttämällä
 
-Sovelluksen työtilan määrittäminen Power BI Premium-kapasiteettiin sallii vieraskäyttäjän käyttää sovellusta edellyttämättä Power BI Pro -käyttöoikeutta. Power BI Premium sallii sovellusten myös hyödyntää muita toimintoja, kuten parannettua päivitystaajuutta, varattua kapasiteettia sekä suuria malleja.
+Sovelluksen työtilan määrittäminen [Power BI Premium -kapasiteettiin](service-premium.md) sallii vieraskäyttäjän käyttää sovellusta ilman Power BI Pro -käyttöoikeutta. Power BI Premium sallii sovellusten myös hyödyntää muita toimintoja, kuten parannettua päivitystaajuutta, varattua kapasiteettia sekä suuria malleja.
 
 ![Power BI Premiumia käyttämällä](media/service-admin-azure-ad-b2b/license-approach1.png)
 
-### <a name="assign-power-bi-pro-license-to-guest-user"></a>Määritä Power BI Pro-käyttöoikeus vieraskäyttäjälle
+### <a name="assign-a-power-bi-pro-license-to-guest-user"></a>Määritä Power BI Pro -käyttöoikeus vieraskäyttäjälle
 
 Power BI Pro -käyttöoikeuden määrittäminen vuokraajan vieraskäyttäjälle sallii kyseisen vieraskäyttäjän tarkastella sisältöä.
-
-> [!NOTE]
-> Vuokraajan Power BI Pro -käyttöoikeus koskee vieraskäyttäjää vain silloin kun he tarkastelevat vuokraajan sisältöä.
 
 ![Määritä Pro -käyttöoikeus vuokraajalta](media/service-admin-azure-ad-b2b/license-approach2.png)
 
@@ -101,13 +93,14 @@ Vieraskäyttäjällä on jo vuokraajan Power BI Pro -käyttöoikeus.
 
 ## <a name="considerations-and-limitations"></a>Huomioitavat asiat ja rajoitukset
 
-* Kun kutsut vieraskäyttäjät, jotka käyttävät henkilökohtaisia sähköpostitilejä, kuten gmail.com, outlook.com tai hotmail.com, voit seurata tätä [upotettu videota](https://docs.microsoft.com/azure/active-directory/active-directory-b2b-redemption-experience) nähdäksesi esimerkin siitä, miten käyttäjä rekisteröinti tapahtuu.
 * Ulkoisten B2B-vieraiden pääsy on rajattu pelkkään kuluttajasisältöön. Ulkoiset B2B-vieraat voivat tarkastella sovelluksia, koontinäyttöjä ja raportteja, viedä tietoja ja luoda sähköpostitilauksia koontinäytöille ja raporteille. He eivät pääse käsiksi työtilaan tai pysty julkaisemaan omaa sisältöään.
+
 * Tämä ominaisuus ei ole tällä hetkellä käytettävissä Power BI -mobiilisovelluksissa. Jaettua Power BI -sisältöä voi tarkastella mobiililaitteella käyttämällä Azure AD B2B:ta selaimessa.
+
 * Tämä ominaisuus ei ole tällä hetkellä käytettävissä Power BI:n SharePoint Online -raportin verkko-osiossa.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
-Tarkempia tietoja mm. siitä, miten rivitason suojaus toimii, löytyy [teknisestä raportista](https://aka.ms/powerbi-b2b-whitepaper).
+Tarkempia tietoja, myös rivitason suojauksen toiminnasta, on teknisessä raportissa [Power BI -sisällön jakaminen ulkoisille vieraskäyttäjille Azure AD B2B:n avulla](https://aka.ms/powerbi-b2b-whitepaper).
 
-Lisätietoa Azure Active Directory B2B:stä löytyy [Mitä tarkoittaa Azure AD B2B -yhteistyö?](https://docs.microsoft.com/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b) -artikkelista
+Lisätietoja Azure AD B2B:stä on artikkelissa [Mitä tarkoittaa Azure AD B2B -yhteistyö?](/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b/).

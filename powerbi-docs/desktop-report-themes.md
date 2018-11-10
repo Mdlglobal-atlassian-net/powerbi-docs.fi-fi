@@ -10,35 +10,40 @@ ms.topic: conceptual
 ms.date: 09/10/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 9945237088073a4f9111e06fd6729a1c4db10081
-ms.sourcegitcommit: 42475ac398358d2725f98228247b78aedb8cbc4f
+ms.openlocfilehash: 215b4c8f46b2d39c6dcc5853c07e4e6526027881
+ms.sourcegitcommit: b343e44dbafc0b718c564402593d4b6e3a8ce97c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50003313"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51027456"
 ---
 # <a name="use-report-themes-in-power-bi-desktop"></a>Raporttiteemojen käyttäminen Power BI Desktopissa
-**Raporttiteemojen** avulla voit käyttää väriteemaa koko raportissa. Tällä tavalla voit käyttää esimerkiksi yrityksen omaa väriteemaa, kausivärejä tai mitä tahansa muuta haluamaasi väriteemaa. Kun otat käyttöön **raporttiteeman**, kaikki raporttisi visualisoinnit käyttävät valitun teeman värejä (lukuun ottamatta muutamia poikkeuksia, jotka kuvataan myöhemmin tässä artikkelissa).
+**Raporttiteemojen** avulla voit käyttää väriteemaa koko raportissa. Tällä tavalla voit käyttää esimerkiksi yrityksen omaa väriteemaa, kausivärejä tai muita väriteemoja. Kun otat käyttöön **raporttiteeman**, kaikissa raporttisi visualisoinneissa käytetään valitun teeman värejä. Muutamia poikkeuksia on, ja ne kuvataan jäljempänä tässä artikkelissa.
 
-![](media/desktop-report-themes/report-themes_1.png)
+![Raporttiteemat](media/desktop-report-themes/report-themes_1.png)
 
-**Raporttiteeman** käyttöön vaaditaan JSON-tiedosto, joka on perusrakenteen mukainen ja jonka voit sitten tuoda Power BI Desktopiin ja ottaa käyttöön raportissasi. JSON-tiedoston rakenteen määrittäminen ja sen tuominen (se vaatii vain muutaman painikkeen napsauttamista) on helppoa sekä nopeaa.
+Kun otat käyttöön **raporttiteeman**, tarvitset perusrakennetta käyttävän JSON-tiedoston. Voit tuoda tämän JSON-tiedoston Power BI Desktopiin ja ottaa sen käyttöön raportissasi. JSON-tiedoston rakenteen määrittäminen ja sen tuominen on nopeaa ja helppoa (edellyttää vain muutaman painikkeen napsauttamista).
 
-**Power BI Desktopin** syyskuun 2017 julkaisusta alkaen voit määrittää enemmän raporttiteemaelementtejä JSON-tiedostolla ja mukauttaa (standardoida) miltei kaikki JSON-tiedostoa käyttävät elementit, joita voit sitten säätää manuaalisesti **Muotoilu**-ruudussa. Syyskuun 2017 julkaisun (ja tätä uudempien julkaisujen) tavoitteena on antaa käyttäjille täydet mahdollisuudet hallita omien raporttiensa ulkoasua yksityiskohtaisesti.
+**Power BI Desktopin** syyskuun 2017 versiosta alkaen voit määrittää useampia raporttiteemaelementtejä JSON-tiedoston avulla. Voit myös mukauttaa ja yhdenmukaistaa lähes kaikki elementit. Voit mukauttaa käyttämällä JSON-tiedostoa, jota voit säätää manuaalisesti **Muotoilu**-ruudussa. Syyskuun 2017 julkaisun (ja sitä uudempien julkaisujen) tavoitteena on antaa käyttäjille täydet mahdollisuudet hallita omien raporttiensa ulkoasua yksityiskohtaisesti.
 
 ### <a name="enable-report-themes"></a>Raporttiteemojen käyttöön ottaminen
-**Power BI Desktopin** elokuun 2018 julkaisusta alkaen raporttiteema on yleisesti saatavilla, eikä sitä tarvitse ottaa käyttöön. 
+**Power BI Desktopin** elokuun 2018 versiosta alkaen raporttiteema on yleisesti saatavilla, eikä sitä tarvitse ottaa käyttöön. 
 
-Jos käytät **Power BI Desktopin** aiemmin luotua versiota, voit ottaa sen käyttöön esikatselutoimintona valitsemalla **Tiedosto > Asetukset ja vaihtoehdot > Asetukset > Esikatselutoiminnot**, ja valitsemalla sitten valintaruudun **Mukautetut raporttiteemat** -kohdan vierestä. Sinun täytyy käynnistää **Power BI Desktop** uudelleen tämän jälkeen.
+Jos käytät aiempaa **Power BI Desktopin** versiota, voit ottaa sen käyttöön esikatselutoimintona seuraavasti: 
 
-![](media/desktop-report-themes/report-themes_2.png)
+1. Valitse **Tiedosto > Asetukset ja vaihtoehdot > Asetukset > Esikatselutoiminnot**. 
+2. Valitse **Mukautetut raporttiteemat** -kohdan valintaruutu. 
 
-Suosittelemme aina päivittämään **Power BI Desktopin** uusimpaan versioon, jonka saat [Hae Power BI Desktop](desktop-get-the-desktop.md) -linkistä. 
+Sinun täytyy käynnistää **Power BI Desktop** uudelleen tämän jälkeen.
+
+![Mukautetut raporttiteemat](media/desktop-report-themes/report-themes_2.png)
+
+On suositeltavaa päivittää aina **Power BI Desktopin** uusimpaan versioon, jonka saat [Hanki Power BI Desktop](desktop-get-the-desktop.md) -linkistä. 
 
 ## <a name="how-report-themes-work"></a>Raporttiteemojen toiminta
-Jos haluat käyttää raporttiteemaa Power BI Desktop -raportissa, voit valita jonkin käytettävissä olevista valmiista raporttiteemoista tai tuoda mukautetun teeman.
+Jos haluat käyttää raporttiteemaa Power BI Desktop -raportissa, valitse jokin käytettävissä olevista valmiista raporttiteemoista tai tuo mukautettu teema.
 
-| Sisäinen raporttiteema | Oletusvärien järjestys    |
+| Valmis raporttiteema | Oletusvärien järjestys    |
 |------ |---------- |
 | Oletus   | ![#01B8AA](https://placehold.it/20/01B8AA/000000?text=+) ![#374649](https://placehold.it/20/374649/000000?text=+) ![#FD625E](https://placehold.it/20/FD625E/000000?text=+) ![#F2C80F](https://placehold.it/20/F2C80F/000000?text=+) ![#5F6B6D](https://placehold.it/20/5F6B6D/000000?text=+) ![#8AD4EB](https://placehold.it/20/8AD4EB/000000?text=+) ![#FE9666](https://placehold.it/20/FE9666/000000?text=+) ![#A66999](https://placehold.it/20/A66999/000000?text=+)|
 | Kaupungin puisto     | ![#73B761](https://placehold.it/20/73B761/000000?text=+) ![#4A588A](https://placehold.it/20/4A588A/000000?text=+) ![#ECC846](https://placehold.it/20/ECC846/000000?text=+) ![#CD4C46](https://placehold.it/20/CD4C46/000000?text=+) ![#71AFE2](https://placehold.it/20/71AFE2/000000?text=+) ![#8D6FD1](https://placehold.it/20/8D6FD1/000000?text=+) ![#EE9E64](https://placehold.it/20/EE9E64/000000?text=+) ![#95DABB](https://placehold.it/20/95DABB/000000?text=+)|
@@ -51,42 +56,50 @@ Jos haluat käyttää raporttiteemaa Power BI Desktop -raportissa, voit valita j
 
 Jos haluat valita käytettävissä olevista valmiista raporttiteemoista, napsauta **Aloitus**-valintanauhan **Vaihda teemaa** -painiketta ja valitse sitten jokin teemoista avattavasta valikosta.
 
-![valitse raporttiteema](media/desktop-report-themes/report-themes_2a.png)
+![Valitse raporttiteema](media/desktop-report-themes/report-themes_2a.png)
 
 Raporttiteema otetaan käyttöön raportissa, ja raportti on valmis.
 
 ### <a name="importing-report-themes"></a>Raporttiteemojen tuominen
 
-Jos haluat tuoda mukautetun raporttiteeman, napsauta **Aloitus**-valintanauhan **Vaihda teemaa** -painiketta ja valitse sitten avattavasta valikosta **Tuo teema**.
+Jos haluat tuoda mukautetun raporttiteeman, napsauta **Aloitus**-valintanauhan **Vaihda teemaa** -painiketta. Valitse **Tuo teema** avattavasta valikosta.
 
-![](media/desktop-report-themes/report-themes_3.png)
+![Tuo teema](media/desktop-report-themes/report-themes_3.png)
 
-Näyttöön avautuu ikkuna, jossa voit valita JSON-teematiedoston. Power BI Desktop etsii .JSON-tiedostoja, sillä tämä on Power BI -raporttiteemojen tiedostotyyppi. Seuraavassa kuvassa saatavilla on muutamia juhlapyhäteematiedostoja. Valitsemme maaliskuussa olevan juhlapyhän.
+Näyttöön avautuu ikkuna, jossa voit selata JSON-teematiedoston sijaintiin. Power BI Desktop etsii JSON-tiedostoja, koska se on Power BI -raporttiteemojen tiedostotyyppi. Seuraavassa kuvassa saatavilla on muutamia juhlapyhäteematiedostoja. Valitaan juhlapyhäteema maaliskuulle.
 
-![](media/desktop-report-themes/report-themes_4.png)
+![Juhlapyhäteema](media/desktop-report-themes/report-themes_4.png)
 
-Kun teema on ladattu, Power BI Desktop ilmoittaa asiasta sinulle.
+Kun teematiedosto on ladattu, Power BI Desktop ilmoittaa asiasta sinulle.
 
-![](media/desktop-report-themes/report-themes_5.png)
+![Teeman tuominen onnistui](media/desktop-report-themes/report-themes_5.png)
 
 Nyt kun olemme tuoneet teematiedoston, voimme tutustua JSON-tiedoston yksinkertaiseen ja helppoon rakenteeseen.
 
 ## <a name="structure-of-a-report-theme-json-file"></a>Raporttiteeman JSON-tiedoston rakenne
-Edellisessä osiossa valittu JSON-perustiedosto (*St Patricks Day.json* -tiedosto) näyttää editorissa avattuna seuraavalta.
+ Edellisessä osiossa valittu JSON-perustiedosto (*St Patricks Day.json* -tiedosto) näyttää editorissa avattuna seuraavalta:
 
-![](media/desktop-report-themes/report-themes_6.png)
+![St. Patrick's day -JSON-tiedosto](media/desktop-report-themes/report-themes_6.png)
 
 JSON-tiedosto sisältää seuraavat pakolliset rivit:
 
-* **name**: tämä on teeman nimi ja ainut pakollinen kenttä.
-* **dataColors** – Luettelo Power BI Desktopin visualisointien tietojen heksadesimaalivärikoodeista. Luettelo voi sisältää haluamasi määrän värejä.
-* **background**, **foreground** ja **tableAccent**: nämä arvot ovat värejä, joita käytetään eri visualisointityypeissä. **Foregroundia** käytetään tekstikenttien tekstissä, KPI-tavoitetekstissä, monirivisen kortin tekstissä, kortin arvon tekstissä, mittarin kuvaselitteen tekstissä, pystysuoran osittajaelementin tekstissä ja **taulukon** ja **matriisin** summan ja arvon tekstissä. **Backgroundia** käytetään painikkeen täytössä ja yhdistelmäkaavion otsikon taustassa. Näiden värien käyttö määräytyy käytetyn visualisointityylin mukaisesti. **Taulukko**- ja **matriisivisualisoinnit** käyttävät oletusarvoisesti näitä tyylejä.
+* **name**: teeman nimi ja ainoa pakollinen kenttä.
 
-Jos haluat ottaa tyylin käyttöön **taulukko**- tai **matriisivisualisoinnissa**, valitse visualisointi ja laajenna sitten **Visualisoinnit**-ruudun **Muoto**-osion **Matriisityyli**-kohta ja valitse tyyli avattavasta **Tyyli**-valikosta.
+* **dataColors**: luettelo Power BI Desktopin visualisointien tietojen heksadesimaalivärikoodeista. Luettelo voi sisältää haluamasi määrän värejä.
 
-![](media/desktop-report-themes/report-themes_7.png)
+* **background**, **foreground** ja **tableAccent**: värejä, joita käytetään eri visualisointityypeissä. 
+  - **foreground**-väriä käytetään tekstikenttien tekstissä, KPI-tavoitetekstissä, monirivisen kortin tekstissä, kortin arvon tekstissä, mittarin kuvaselitteen tekstissä, pystysuoran osittajaelementin tekstissä ja **taulukon** ja **matriisin** summan ja arvon tekstissä. 
+  - **background**-väriä käytetään painikkeen täytössä ja yhdistelmäkaavion otsikon taustassa. Näiden värien käyttö määräytyy käytetyn visualisointityylin mukaisesti. 
+  - **Taulukon** ja **matriisin** visualisoinnit käyttävät oletusarvoisesti näitä tyylejä.
 
-Jos haluat luoda oman JSON-tiedostosi helposti kopioimalla ja liittämällä, tässä on *St. Patricks Day.json* -tiedoston teksti:
+Jos haluat ottaa tyylin käyttöön **taulukon** tai **matriisin** visualisoinnissa, toimi seuraavasti: 
+1. Valitse visualisointi. 
+2. Valitse **Visualisoinnit**-ruudussa **Muotoilu**-osa.
+3. Laajenna **Matriisityyli** ja valitse tyyli avattavasta **Tyyli**-luettelosta.
+
+![Avattava Tyyli-luettelo](media/desktop-report-themes/report-themes_7.png)
+
+Tässä on *St. Patricks Day.json* -tiedoston teksti, jota käyttämällä voit luoda oman JSON-tiedostosi:
 
     {
         "name": "St Patricks Day",
@@ -98,52 +111,52 @@ Jos haluat luoda oman JSON-tiedostosi helposti kopioimalla ja liittämällä, t�
 
 Voit täältä syöttää oman väriheksadesimaalikoodisi valittuja värejä varten.
 
-**Power BI Desktopin** syyskuun 2017 julkaisusta lähtien JSON-tiedosto voi olla paljon monimutkaisempi. JSON-tiedostossa määrität vain muotoilun, jota haluat muokata, joten kaikessa, mitä *ei* ole määritetty JSON-tiedostossa, käytetään Power BI:n oletusasetuksia.
+**Power BI Desktopin** syyskuun 2017 versiosta alkaen JSON-tiedosto voi olla paljon monimutkaisempi. JSON-tiedostossa määrität vain muotoilun, jota haluat muokata, joten kaikessa, mitä *ei* ole määritetty JSON-tiedostossa, käytetään Power BI:n oletusasetuksia.
 
-JSON-tiedoston luomisella on monia etuja Voit esimerkiksi määrittää kaikkien kaavioiden fonttikooksi 12, tietyn fonttiperheen käyttöön tietyissä visualisoinneissa tai poistaa tietoselitteet käytöstä tietyissä kaaviotyypeissä.
+JSON-tiedoston luomisella on monia etuja Voit esimerkiksi määrittää kaikkien kaavioiden fonttikooksi 12, tai tietyn fonttiperheen käyttämisen tietyissä visualisoinneissa. Voit myös poistaa arvopisteen otsikot käytöstä tietyissä kaaviotyypeissä.
 
-Kun voit käyttää eriytetyt asetukset sisältävää JSON-tiedostoa, voit luoda teematiedoston, jolla standardoit kaavioita ja raportteja. Näin takaat helposti organisaatiosi raporttien johdonmukaisuuden.
+Kun käytät eriytetyt asetukset sisältävää JSON-tiedostoa, voit luoda teematiedoston, jolla yhdenmukaistat kaavioita ja raportteja. Näin takaat helposti organisaatiosi raporttien yhdenmukaisuuden.
 
-Jos haluat lisätietoja yksityiskohtaisen JSON-tiedoston muotoilusta, lue tämän artikkelin lopusta löytyvä kohta **Raporttiteeman JSON-tiedoston muotoilu**.
+Lisätietoja yksityiskohtaisen JSON-tiedoston muotoilusta on jäljempänä tässä artikkelissa olevassa osiossa **Raporttiteeman JSON-tiedoston muotoilu**.
 
 ## <a name="how-report-theme-colors-stick-to-your-reports"></a>Miten raporttiteeman värit pysyvät raporteissasi?
 Kun julkaiset raportin **Power BI -palveluun**, raporttiteeman värit pysyvät sen mukana.
 
-Lisäksi **Muoto**-paneelin **Tietojen värit** -osion värit raporttiteemasi mukaisia. Kun otamme käyttöön esimerkiksi **St. Patrick's Day** -teeman lukuisat vihreät ja ruskeat värit, näemme seuraavan, kun valitsemme **Muoto > Tietojen värit**.
+**Muoto**-paneelin **Tietojen värit** -osion värit ovat raporttiteemasi mukaisia. Esimerkiksi sen jälkeen, kun **St. Patrick's Day** -teemassa on otettu käyttöön useita vihreitä ja ruskeita värejä, valitaan visualisointi. Sitten siirrytään kohtaan **Muotoilu > Tietojen värit**, jolloin näkyvät seuraavat tiedot:
 
-![](media/desktop-report-themes/report-themes_8.png)
+![Visualisoinnit](media/desktop-report-themes/report-themes_8.png)
 
-Näetkö kaiken tämän vihreän? Tämä johtuu siitä, että nämä värit sisältyvät tuomaamme **raporttiteemaan**, jonka otimme käyttöön.
+Näetkö kaiken tämän vihreän? Tämä johtuu siitä, että nämä värit sisältyvät tuotuun **raporttiteemaan**, jonka otettiin käyttöön.
 
 ### <a name="situations-when-report-theme-colors-wont-stick-to-your-reports"></a>Tilanteet, joissa raporttiteeman värit eivät pysy raporteissasi
-Jos otat käyttöön mukautetun värijoukon (tai yksittäisen värin) visualisoinnin tietyssä arvopisteessä, raporttiteeman käyttö *ei* kumoa tätä mukautettua arvopisteen väriä.
+Oletetaan, että otat käyttöön mukautetun värijoukon (tai yksittäisen värin) visualisoinnin tietyssä arvopisteessä. Kun otat raporttiteeman käyttöön, se *ei* ohita tätä mukautettua arvopisteen väriä.
 
-Jos olet määrittänyt arvopisteen värin manuaalisesti värivalikoiman teemavärien osiossa, tätä väriä (tai näitä värejä) *ei* myöskään päivitetä, kun otat käyttöön uuden raporttiteeman. Jos haluat palauttaa oletusvärit (jotta ne päivittyvät, kun otat käyttöön uuden raporttiteeman), voit valita **teemavärien** valikoimasta **Palauta oletusasetukseen**.
+Saatat myös haluta määrittää arvopisteen värin manuaalisesti käyttämällä Teeman värit -osiota. Värejä *ei* päivitetä, kun otat käyttöön uuden raporttiteeman. Jos haluat palauttaa oletusvärit (jotta ne päivittyvät, kun otat käyttöön uuden raporttiteeman), valitse **Teeman värit** -valikoimasta **Palauta oletusasetukseen**.
 
-![](media/desktop-report-themes/report-themes_9.png)
+![Palauta oletusasetukseen](media/desktop-report-themes/report-themes_9.png)
 
 Lisäksi monet **mukautetut visualisoinnit** eivät käytä raporttiteemoja.
 
 ## <a name="report-theme-files-you-can-use-right-now"></a>Tällä hetkellä käytettävissä olevat raporttiteematiedostot
-Haluatko aloittaa **raporttiteemojen** käytön? Hienoa! Tässä on muutamia käyttövalmiita raporttiteemojen JSON-tiedostoja, jotka voit ladata ja tuoda **Power BI Desktop** -raporttiisi, sekä kuva tästä raporttiteemasta, jota sovelletaan tässä artikkelissa käytettyyn raporttiin.
+Haluatko aloittaa **raporttiteemojen** käytön? Seuraavassa on joitakin valmiita raporttiteeman JSON-tiedostoja, jotka voit ladata ja tuoda **Power BI Desktop** -raporttiisi. Näet myös kuvan raporttiteemasta, joka on otettu käyttöön tämän artikkelin raportissa.
 
 * [Teema](https://go.microsoft.com/fwlink/?linkid=843924), jota käytettiin [blogitekstissä](https://powerbi.microsoft.com/blog/power-bi-desktop-march-feature-summary/), jossa kerrottiin **raporttiteemojen** ensijulkaisusta, on nimeltään [*waveform.json*](https://go.microsoft.com/fwlink/?linkid=843924).
 
-![](media/desktop-report-themes/report-themes_10.png)
+  ![Waverform.json-teema](media/desktop-report-themes/report-themes_10.png)
 
-* [Teema, joka soveltuu oletusteemaa paremmin näkövammaisille](https://go.microsoft.com/fwlink/?linkid=843923), on nimeltään [*ColorblindSafe-Longer.json*](https://go.microsoft.com/fwlink/?linkid=843923).
+* [Teema, joka soveltuu paremmin näkövammaisille](https://go.microsoft.com/fwlink/?linkid=843923) kuin oletusteema. Se on nimeltään [*ColorblindSafe-Longer.json*](https://go.microsoft.com/fwlink/?linkid=843923).
 
-![](media/desktop-report-themes/report-themes_11.png)
+  ![ColorblindSafe-Longer.json-teema](media/desktop-report-themes/report-themes_11.png)
 
-* Alla näytetään koko joukko [Power View -teemoja](https://go.microsoft.com/fwlink/?linkid=843925), jotka on pakattu zip-tiedostoon. Mukana on esimerkiksi [*Apothecary.json*](https://go.microsoft.com/fwlink/?linkid=843925).
+* Alla näkyy joukko [Power View -teemoja](https://go.microsoft.com/fwlink/?linkid=843925), jotka on pakattu zip-tiedostoon. Mukana on esimerkiksi [*Apothecary.json*](https://go.microsoft.com/fwlink/?linkid=843925).
 
-![](media/desktop-report-themes/report-themes_12.png)
+  ![Apothecary.json-teema](media/desktop-report-themes/report-themes_12.png)
 
-* Lopuksi tässä on myös kiva *Valentine's Day* -teema, joka varmasti kiinnittää huomiosi ystävänpäivän aikoihin.
+* Lopuksi alla on *Valentine's Day* -teema.
 
-![](media/desktop-report-themes/report-themes_13.png)
+  ![Valentine's Day -teema](media/desktop-report-themes/report-themes_13.png)
 
-Latauksen sijaan tarjoamme Valentine's day -teeman JSON-tiedoston koodin:
+Latauksen sijaan käytettävissäsi on Valentine's day -teeman JSON-tiedoston koodi:
 
     {
         "name": "Valentine's Day",
@@ -153,9 +166,9 @@ Latauksen sijaan tarjoamme Valentine's day -teeman JSON-tiedoston koodin:
         "tableAccent": "#990011"
     }
 
-**Raporttiteemojen** avulla voit ilmaista Power BI Desktop -raporteissasi itseäsi, organisaatiotasi, juhlapyhää tai vuodenaikaa värikkäin tavoin. Nauti niistä, ne ovat helppokäyttöisiä!
+**Raporttiteemojen** avulla voit ilmaista Power BI Desktop -raporteissasi itseäsi, organisaatiotasi, juhlapyhää tai vuodenaikaa värikkäin tavoin. 
 
-Alla on myös muutama muu raporttiteema, joiden avulla pääset myös alkuun:
+Alla on muutama muu raporttiteema, joiden avulla pääset alkuun:
 
 * [Sunflower-twilight](https://community.powerbi.com/t5/Themes-Gallery/Sunflower-Twilight/m-p/140749)
 * [Plum](https://community.powerbi.com/t5/Themes-Gallery/Plum/m-p/140711)
@@ -165,11 +178,11 @@ Alla on myös muutama muu raporttiteema, joiden avulla pääset myös alkuun:
 ## <a name="report-theme-json-file-format"></a>Raporttiteeman JSON-tiedoston muotoilu
 JSON-perustiedostossa on viisi pakollista riviä:
 
-* **name**: tämä on teeman nimi ja ainut pakollinen kenttä.
-* **dataColors** – Luettelo Power BI Desktopin visualisointien tietojen heksadesimaalivärikoodeista. Luettelo voi sisältää haluamasi määrän värejä.
-* **background**, **foreground** ja **tableAccent**: nämä arvot ovat värejä, joita käytetään eri visualisointityypeissä. **Foregroundia** käytetään tekstikenttien tekstissä, KPI-tavoitetekstissä, monirivisen kortin tekstissä, kortin arvon tekstissä, mittarin kuvaselitteen tekstissä, pystysuoran osittajaelementin tekstissä ja **taulukon** ja **matriisin** summan ja arvon tekstissä. **Backgroundia** käytetään painikkeen täytössä ja yhdistelmäkaavion otsikon taustassa. Näiden värien käyttö määräytyy käytetyn visualisointityylin mukaisesti. **Taulukko**- ja **matriisivisualisoinnit** käyttävät oletusarvoisesti näitä tyylejä.
+* **name**: teeman nimi ja ainoa pakollinen kenttä.
+* **dataColors**: luettelo Power BI Desktopin visualisointien tietojen heksadesimaalivärikoodeista. Luettelo voi sisältää haluamasi määrän värejä.
+* **background**, **foreground** ja **tableAccent**: värejä, joita käytetään eri visualisointityypeissä. **Foregroundia** käytetään tekstikenttien tekstissä, KPI-tavoitetekstissä, monirivisen kortin tekstissä, kortin arvon tekstissä, mittarin kuvaselitteen tekstissä, pystysuoran osittajaelementin tekstissä ja **taulukon** ja **matriisin** summan ja arvon tekstissä. **background**-väriä käytetään painikkeen täytössä ja yhdistelmäkaavion otsikon taustassa. Näiden värien käyttö määräytyy käytetyn visualisointityylin mukaisesti. **Taulukko**- ja **matriisivisualisoinnit** käyttävät oletusarvoisesti näitä tyylejä.
 
-Jos haluat luoda yksityiskohtaisemman JSON-tiedoston, jolla voit määrittää muotoilua tarkemmin, sinun täytyy lisätä JSON-tiedostoon **visualStyles**-osio ja asettaa muotoilun tarkemmat määritelmät tämän osion sisään. **visualStyles**-osio näyttää seuraavalta:
+Jos haluat luoda yksityiskohtaisemman JSON-tiedoston, jolla voit määrittää muotoilua tarkemmin, sinun täytyy lisätä JSON-tiedostoon **visualStyles**-osio. Asetat muotoilun tarkemmat määritelmät **visualStyles**-osion sisään. **visualStyles**-osio näyttää seuraavanlaiselta:
 
     visualStyles: {
         visualName: {
@@ -181,17 +194,17 @@ Jos haluat luoda yksityiskohtaisemman JSON-tiedoston, jolla voit määrittää m
         }
     }
 
-**VisualName**- ja **cardName**-osioissa voit luetella tietyn visualisoinnin ja kortin nimen tai voit käyttää tähteä ("\*"), jos haluat, että asetus koskee kaikkia visualisointeja tai kortteja, jotka sisältävät tietyn visualisoinnin ominaisuuden. Voit käyttää tähteä ("\*"), kun haluat käyttää asetusta yleisesti raportissasi. Tällä tavalla voit esimerkiksi määrittää fonttikoon tai -perheen, jota käytetään kaikissa raporttisi visualisoinneissa.
+Käytä **visualName**- ja **cardName**-osioissa tiettyä visualisointia ja kortin nimeä. Käytä tähteä (\*), jos haluat, että asetus koskee kaikkia visualisointeja tai kortteja, joissa on tietyn visualisoinnin ominaisuus. Voit käyttää tähteä (\*) myös, kun haluat käyttää asetusta yleisesti raportissasi, esimerkiksi määrittää visualisointien fonttikoon tai -perheen.
 
 > [!NOTE]
-> Sinun täytyy määrittää vain ne muotoiluasetukset, joihin haluat vaikuttaa. Kaikki muotoiluelementit, jotka eivät ole mukana JSON-tiedostossa, ovat oletusarvojen ja -asetusten mukaisia.
+> Sinun tarvitsee määrittää vain ne muotoiluasetukset, joita haluat muokata. Kaikki muotoiluelementit, jotka eivät ole mukana JSON-tiedostossa, ovat oletusarvojen ja -asetusten mukaisia.
 > 
 > 
 
 ### <a name="json-file-element-definitions"></a>JSON-tiedostoelementtien määritelmät
-Tämän osion taulukoissa määritetään visualisointien nimet (*visualName*), korttien nimet (*cardName*) ja luetteloinnit, joita tarvitset luodaksesi JSON-tiedoston.
+Tämän osion taulukoissa määritetään visualisointien nimet (*visualName*), korttien nimet (*cardName*) ja luetteloinnit, joita tarvitaan JSON-tiedoston luomiseen.
 
-Kun käytät *dateTime*-arvoa, päivämäärän täytyy olla ISO-päivämäärä heittomerkeissä siten, että datetime on alussa. Tässä on esimerkki:
+Kun käytät *dateTime*-arvoa, päivämäärän täytyy olla ISO-päivämäärä puolilainausmerkeissä siten, että datetime on alussa. Tässä on esimerkki:
 
     “datetime’2011-10-05T14:48:00.000Z’”
 
@@ -231,7 +244,7 @@ Totuusarvo on joko *true* tai *false*. Merkkijonojen täytyy olla lainausmerkeis
 | treemap |
 | waterfallChart |
 
-Seuraavassa taulukossa määritetään *cardName*-arvot. Jokaisen solun ensimmäinen arvo on JSON-tiedoston termi ja toinen arvo on kortin nimi **Power BI Desktop** -käyttöliittymässä.
+Seuraavassa taulukossa määritetään *cardName*-arvot. Jokaisen solun ensimmäinen arvo on JSON-tiedoston termi. Toinen arvo on kortin nimi **Power BI Desktop** -käyttöliittymässä.
 
 | **cardName** |
 | --- |
@@ -288,7 +301,7 @@ Seuraavassa taulukossa määritetään *cardName*-arvot. Jokaisen solun ensimmä
 | zoom: Zoomaus |
 
 ### <a name="properties-within-each-card"></a>Kunkin kortin ominaisuudet
-Seuraavassa osiossa määritetään kunkin kortin ominaisuudet.
+Seuraavassa osiossa määritetään kunkin kortin ominaisuudet:
 
     "general":
         "responsive": {
@@ -1176,7 +1189,7 @@ Seuraavassa osiossa määritetään kunkin kortin ominaisuudet.
             "Value"
           ],
           "description": [
-            "Set reference line numeric value "
+            "Set reference line numeric value"
           ]
         },
         "lineColor": {
@@ -1312,7 +1325,7 @@ Seuraavassa osiossa määritetään kunkin kortin ominaisuudet.
             "Value"
           ],
           "description": [
-            "Set reference line numeric value "
+            "Set reference line numeric value"
           ]
         },
         "lineColor": {
@@ -2029,7 +2042,7 @@ Seuraavassa osiossa määritetään kunkin kortin ominaisuudet.
             "Value"
           ],
           "description": [
-            "Set reference line numeric value "
+            "Set reference line numeric value"
           ]
         },
         "lineColor": {

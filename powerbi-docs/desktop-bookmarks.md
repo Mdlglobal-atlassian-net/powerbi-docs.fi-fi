@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 08/06/2018
+ms.date: 11/01/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 1bb9921b31187d0df3debc644088a72e1d78207c
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 6bc8eea6138f2961457d03eaf5ef88d0327a058d
+ms.sourcegitcommit: 0611860a896e636ceeb6e30ce85243bfd8e7b61d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46549910"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50909567"
 ---
 # <a name="use-bookmarks-to-share-insights-and-build-stories-in-power-bi"></a>Kirjanmerkkien avulla voit jakaa merkityksellisiä tietoja ja koostaa tarinoita Power BI:ssä 
 Käyttämällä **kirjanmerkkejä** Power BI:ssä voit tallentaa raporttisivun senhetkisen määritetyn näkymän suodatukset ja visualisointien tila mukaan lukien. Voit myöhemmin palata tähän tilaan valitsemalla tallennetun kirjanmerkin. 
@@ -44,13 +44,12 @@ Kun luot kirjanmerkin, seuraavat elementit tallennetaan sen mukana:
 
 * Nykyinen sivu
 * Suodattimet
-* Osittajat
+* Osittajat, mukaan lukien osittajan tyyppi (esimerkiksi avattava luettelo tai luettelo) ja osittajan tila
+* Visualisoinnin valinnan tila (kuten ristiinkorostussuodattimet)
 * Lajittelujärjestys
 * Porautumissijainti
 * Näkyvyys (objektin näkyvyys **Valinta**-ruutua käyttämällä)
 * Näkyvien objektien kohdistus- tai **korostus**-tilat
-
-Kirjanmerkkien mukana ei nykyisellään tallenneta ristiinkorostustilaa. 
 
 Määritä raporttisivu sellaiseksi kuin haluat sen näkyvän kirjanmerkissä. Kun raporttisivu ja visualisoinnit ovat sellaisessa järjestyksessä kuin haluat, lisää kirjanmerkki valitsemalla **Kirjanmerkit**-ruudusta **Lisää**. 
 

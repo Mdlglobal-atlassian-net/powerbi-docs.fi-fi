@@ -7,72 +7,66 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-admin
 ms.topic: conceptual
-ms.date: 08/10/2017
+ms.date: 10/31/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: c1ac019b0d6f80c3129b105336f71a71e0925648
-ms.sourcegitcommit: 627918a704da793a45fed00cc57feced4a760395
+ms.openlocfilehash: dfd9aab419d0a097721c4f2b49e382c11be82541
+ms.sourcegitcommit: 0611860a896e636ceeb6e30ce85243bfd8e7b61d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37926532"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50909498"
 ---
 # <a name="find-power-bi-users-that-have-signed-in"></a>Kirjautuneena olevien Power BI -käyttäjien etsiminen
-Jos olet vuokraajan järjestelmänvalvoja ja haluat nähdä, kuka on kirjautuneena sisään Power BI:hin, voit katsoa sen Azure Active Directory ‑käyttöoikeudella käyttöraporteista.
+
+Jos olet vuokraajan järjestelmänvalvoja ja haluat nähdä, kuka on kirjautuneena sisään Power BI:hin, katso se [Azure Active Directory -käyttöoikeudella käyttöraporteista](/azure/active-directory/reports-monitoring/concept-sign-ins).
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/1AVgh9w9VM8?showinfo=0" frameborder="0" allowfullscreen></iframe>
 
-Pääset tarkastelemaan toimintaraporttia sekä [uuden](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-activity-sign-ins) että [perinteisen](https://docs.microsoft.com/azure/active-directory/active-directory-view-access-usage-reports) Azure Active Directory (Azure AD) ‑portaalin kautta. Edellä olevalla videolla käsitellään esimerkkinä perinteistä portaalia, mutta tässä artikkelissa puhutaan uudesta portaalista.
-
 > [!NOTE]
-> Tämä toimintaraportti ei määritä kullakin käyttäjällä olevaa käyttöoikeustyyppiä.
+> Tämä toimintaraportti sisältää hyödyllisiä tietoja, mutta se ei määritä kullakin käyttäjällä olevaa käyttöoikeustyyppiä. Katso käyttöoikeudet Office 365 -hallintakeskuksessa.
 
 ## <a name="requirements"></a>Vaatimukset
-Kirjautumisen toimintaraportin tarkastelu edellyttää, että seuraavat ehdot täyttyvät.
 
-* Yleisen järjestelmänvalvojan, suojauksenvalvojan tai suojauksenlukijan roolissa olevilla käyttäjillä on tietoihin käyttöoikeus.
-* Kuka tahansa käyttäjä (ei järjestelmänvalvoja) pystyy näkemään omat kirjautumisensa.
-* Vuokraajalla on oltava vuokraajaan liitetty Azure AD Premium ‑käyttöoikeus, jotta se voi nähdä kirjautumistoimintaraportin kokonaisuudessaan.
+Kaikki käyttäjät (myös muut kuin järjestelmänvalvojat) voivat nähdä raportin omista kirjautumisistaan, mutta sinun on täytettävä seuraavat vaatimukset, jotta voit nähdä raportin kaikista käyttäjistä.
 
-## <a name="using-the-azure-portal-to-view-sign-ins"></a>Kirjautumisten tarkastelu Azure-portaalin kautta
-Voit tarkastella kirjautumistoimintoja Azure AD-portaalista.
+* Vuokraajalla on oltava vuokraajaan liitetty Azure AD Premium -käyttöoikeus.
 
-1. Siirry **Azure-portaaliin** ja valitse **Azure Active Directory**.
-2. Valitse **Toiminta**-kohdasta **Sisäänkirjautumiset**.
+* Sinulla on oltava jokin seuraavista rooleista: yleinen järjestelmänvalvoja, suojauksenvalvoja tai suojauksenlukija.
+
+## <a name="use-the-azure-portal-to-view-sign-ins"></a>Kirjautumisten tarkastelu Azure-portaalin kautta
+
+Jos haluat tarkastella kirjautumistoimintaa, toimi seuraavien ohjeiden mukaisesti.
+
+1. Valitse **Azure-portaalissa** **Azure Active Directory**.
+
+1. Valitse **Valvonta**-kohdassa **Kirjautumiset**.
    
-    ![](media/service-admin-access-usage/azure-portal-sign-ins.png)
-3. Valitse Sovellus-kenttään suodattimeksi joko **Microsoft Power BI** tai **Power BI Gateway** ja valitse **Käytä**.
+    ![Azure AD -kirjautumiset](media/service-admin-access-usage/azure-portal-sign-ins.png)
+
+1. Valitse Sovellus-kenttään suodattimeksi joko **Microsoft Power BI** tai **Power BI Gateway** ja valitse **Käytä**.
+
+    **Microsoft Power BI** suodattaa palvelun kirjautumistoiminnan, kun taas **Power BI Gateway** suodattaa paikallisen tietoyhdyskäytävän tietyt kirjautumiset.
    
-    **Microsoft Power BI** vastaa palvelun kirjautumistoimintaa, kun taas **Power BI Gateway** vastaa paikallisen tietoyhdyskäytävän tiettyjä kirjautumisia.
-   
-    ![](media/service-admin-access-usage/sign-in-filter.png)
+    ![Suodata kirjautumiset](media/service-admin-access-usage/sign-in-filter.png)
 
 ## <a name="export-the-data"></a>Tietojen vieminen
-Voit viedä kirjautumistiedot kahdella eri tavalla. Voit joko ladata CSV-tiedoston tai käyttää PowerShelliä.
 
-### <a name="download-csv"></a>CSV-tiedoston lataaminen
-Valitse toimintanäkymän työkaluriviltä **Lataa**. Toiminto lataa suodattimien mukaiset tiedot csv-tiedostona.
+Voit viedä kirjautumistiedot kahdella tapaa: lataamalla csv-tiedoston tai käyttämällä PowerShelliä. Valitse kirjautumisraportin yläreunasta toinen seuraavista vaihtoehdoista:
 
-![](media/service-admin-access-usage/download-sign-in-data-csv.png)
+* **Lataa** suodattimien mukaisten tietojen lataamiseksi csv-tiedostona.
 
-### <a name="powershell"></a>PowerShell
-Voit viedä kirjautumistiedot myös PowerShellin avulla. Azure AD:n ohjeissa on saatavilla siihen [malli](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-sign-in-activity-samples#powershell-script).
+* **Komentosarja** PowerShell-komentosarjan lataamiseksi suodattimien mukaisille tiedoille. Voit päivittää komentosarjan suodattimen tarvittaessa.
 
-> [!NOTE]
-> Jotta PowerShell-malli toimisi, muista noudattaa [Azure AD:n raportointi-API:n käyttämisen edellytyksiä](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-prerequisites).
-> 
-> 
+![Lataa csv-tiedosto tai komentosarja](media/service-admin-access-usage/download-sign-in-data-csv.png)
 
 ## <a name="data-retention"></a>Tietojen säilytys
-Kirjautumiseen liittyviä tietoja voidaan pitää käytettävissä enintään 30 päivän ajan. Lisätietoja on artikkelissa [Azure Active Directoryn raporttien säilytyskäytännöt](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-retention).
+
+Kirjautumiseen liittyvät tiedot ovat käytettävissä enintään 30 päivän ajan. Lisätietoja on artikkelissa [Azure Active Directoryn raporttien säilytyskäytännöt](/azure/active-directory/reports-monitoring/reference-reports-data-retention).
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
-[Kirjautumisen toimintaraportit Azure Active Directory ‑portaalissa (uusi portaali)](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-activity-sign-ins)  
-[Käyttöraporttien tarkastelu (perinteinen portaali)](https://docs.microsoft.com/azure/active-directory/active-directory-view-access-usage-reports)  
-[PowerShell-komentosarjamalli kirjautumiseen](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-sign-in-activity-samples#powershell-script)  
-[Azure Active Directoryn raporttien säilytyskäytännöt](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-retention)  
-[Valvonnan käyttö organisaatiossa](service-admin-auditing.md)  
-[Laajennetun Pro-kokeiluversion aktivointi](service-extended-pro-trial.md)
 
-Onko sinulla muuta kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
+[Valvonnan käyttö organisaatiossa](service-admin-auditing.md)
+
+Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
 

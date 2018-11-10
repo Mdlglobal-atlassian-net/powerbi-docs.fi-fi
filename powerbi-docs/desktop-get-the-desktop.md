@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/05/2018
+ms.date: 11/01/2018
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 319c636c660aff3ab651475e2d7b553fef49b8cd
-ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
+ms.openlocfilehash: 5eb2e63d9bac7249e106ad4c4b525ca3f3ab5cf8
+ms.sourcegitcommit: 0611860a896e636ceeb6e30ce85243bfd8e7b61d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37137326"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50909590"
 ---
 # <a name="get-power-bi-desktop"></a>Power BI Desktopin hankkiminen
 **Power BI Desktopilla** voit luoda tarkempia kyselyjä, malleja ja raportteja, jotka visualisoivat tietoja. **Power BI Desktopilla** voit luoda tietomalleja ja raportteja sekä jakaa töitäsi julkaisemalla niitä Power BI -palvelussa.  **Power BI Desktop** on ladattavissa maksutta.
@@ -101,11 +101,35 @@ Alla on lueteltu **Power BI Desktopin** käytön vähimmäisvaatimukset:
 
 ## <a name="considerations-and-limitations"></a>Huomioitavat asiat ja rajoitukset
 
+Tavoitteena on, että Power BI Desktopin käyttökokemuksesi on aina hyvä. Saatat joskus kohdata ongelman Power BI Desktopissa, joten tässä osiossa on ratkaisuja tai ehdotuksia mahdollisten ongelmien selvittämiseksi. 
+
+### <a name="issues-when-using-previous-releases-of-power-bi-desktop"></a>Ongelmia Power BI Desktopin aiempia versioita käytettäessä
+
 Jotkin käyttäjät ovat kohdanneet seuraavanlaisen virheen käyttäessään vanhentunutta versiota **Power BI Desktopista**: 
 
     "We weren't able to restore the saved database to the model" 
 
 Power BI Desktopin päivitys nykyisen versioon ratkaisee yleensä ongelman.
+
+### <a name="disabling-notifications"></a>Ilmoitusten poistaminen käytöstä
+On suositeltavaa päivittää Power BI Desktopin uusimpaan versioon ominaisuuksiin, suorituskykyyn ja vakauteen tehtyjen ja muiden parannusten hyödyntämiseksi. Jotkin organisaatiot ei ehkä halua käyttäjien päivittävän jokaiseen uuteen versioon. Voit poistaa ilmoitukset käytöstä muokkaamalla rekisteriä seuraavien ohjeiden mukaisesti:
+
+1. Siirry Rekisterieditoria käyttämällä kohtaan *HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft Power BI Desktop*
+2. Luo sinne uusi merkintä seuraavilla asetuksilla: *REG_DWORD: DisableUpdateNotification*
+3. Määritä uuden merkinnän arvoksi **1**.
+
+Tietokone on käynnistettävä uudelleen, jotta muutos tulee voimaan.
+
+### <a name="power-bi-desktop-loads-with-a-partial-screen"></a>Power BI Desktopista latautuu osittainen näyttö
+
+Joissakin tilanteissa, kuten tiettyjen näytön tarkkuusmääritysten yhteydessä, Power BI Desktop saattaa hahmontaa sisältöä joillekin käyttäjille siten, että siinä näkyy laajoja mustia alueita. Tämä johtuu yleensä viimeaikaisista käyttöjärjestelmän päivityksistä, jotka vaikuttavat kohteiden esitystapaan, sen sijaan, että kyseessä olisi Power BI Desktopin sisällön esitystavan suora tulos. Siitä huolimatta laajat mustat alueet eivät ole yhtä houkuttelevia kuin hyvät visualisoinnit, joten voit ratkaista ongelman seuraavasti:
+
+1. Paina aloitusnäppäintä ja kirjoita sana *sumea* hakupalkkiin, joka tulee näkyviin.
+2. Valitse avautuvasta valintaikkunasta vaihtoehto *Anna Windowsin yrittää korjata sovellukset, jotta ne eivät olisi sumeita*.
+3. Käynnistä Power BI Desktop uudelleen.
+
+Tämä ongelma saattaa ratketa seuraavien Windowsin päivitysten julkaisun yhteydessä. 
+ 
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 Kun olet asentanut **Power BI Desktopin**, seuraavan sisällön avulla voit aloittaa sen käytön nopeasti:

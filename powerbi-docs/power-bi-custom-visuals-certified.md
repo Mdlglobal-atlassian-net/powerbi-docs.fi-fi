@@ -2,6 +2,7 @@
 title: Power BI:n sertifioidut mukautetut visualisoinnit
 description: Mukautetun visualisoinnin sertifioinnin edellytykset ja lähettämisprosessi. Lisäksi luettelo jo sertifioiduista mukautetuista visualisoinneista.
 author: mihart
+ms.author: mihart
 manager: kfile
 ms.reviewer: ''
 featuredvideoid: ''
@@ -9,45 +10,46 @@ ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: conceptual
 ms.date: 10/30/2018
-ms.author: mihart
-ms.openlocfilehash: ba6c59d168deb5fb68f4b339f11fba795bae6452
-ms.sourcegitcommit: 862faf948468d7f6d464b83f4e0b040d5213a580
+ms.openlocfilehash: 72b09083c50a88e2d22e9aa22f54ff014dafa998
+ms.sourcegitcommit: 02f918a4f27625b6f4e47473193ebc8219db40e2
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "50252395"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "51223440"
 ---
 # <a name="getting-a-custom-visual-certified"></a>Mukautetun visualisoinnin *sertifioinnin* hankkiminen
+
 ## <a name="what-is-meant-by-certified"></a>Mitä *sertifioinnilla* tarkoitetaan?
+
 *Sertifioidun mukautetun visualisoinnin* koodi on täyttänyt joukon vaatimuksia ja läpäissyt tiukat tietoturvatestit.  Kun mukautettu visualisointi on sertifioitu, sen voi [viedä PowerPointiin](consumer/end-user-powerpoint.md) ja näyttää sähköpostiviesteissä, kun käyttäjä [tilaa raporttisivut](consumer/end-user-subscribe.md) sähköpostitse. Lisäksi sitä voi tietysti käyttää samalla tavalla kuin [tavanomaisia mukautettuja visualisointeja](power-bi-custom-visuals.md), lisätä sen Power BI -palvelun ja Power BI Desktopin raportteihin sekä tarkastella sitä Power BI:n mobiiliversiossa ja upotettuna.
 
-Oletko Web-kehittäjä ja kiinnostunut omien visualisointien luomisesta ja niiden lisäämisestä [Microsoft AppSourceen](https://appsource.microsoft.com)? Katso ohjeet artikkelista [Sovelluskehittäjätyökalujen käytön aloittaminen](service-custom-visuals-getting-started-with-developer-tools.md).
-
+Oletko Web-kehittäjä ja kiinnostunut omien visualisointien luomisesta ja niiden lisäämisestä [Microsoft AppSourceen](https://appsource.microsoft.com)? Katso ohjeet kohdasta [Power BI:n mukautetun visualisoinnin kehittäminen](developer/custom-visual-develop-tutorial.md).
 
 ## <a name="certification-requirements"></a>Sertifioinnin edellytykset
-* Microsoft AppSource ‑hyväksyntä    
-* Mukautettu visualisointi on kirjoitettu Versioned-ohjelmointirajapinnan versiolla 1.2 tai uudemmalla versiolla    
-* Koodisäilö on saatavilla arviointia varten (esim. visualisoinnin koodi annetaan käytettäväksemme GitHubin kautta)    
-* Käyttää vain julkisia, tarkasteltavissa olevia OSS-komponentteja    
-* Ei käytä ulkoisia palveluita tai resursseja    
+
+* Microsoft AppSource ‑hyväksyntä
+* Mukautettu visualisointi on kirjoitettu Versioned-ohjelmointirajapinnan versiolla 1.2 tai uudemmalla versiolla
+* Koodisäilö on saatavilla arviointia varten (esim. visualisoinnin koodi annetaan käytettäväksemme GitHubin kautta)
+* Käyttää vain julkisia, tarkasteltavissa olevia OSS-komponentteja
+* Ei käytä ulkoisia palveluita tai resursseja
 
 > **Vinkki**: Suosittelemme, että esitarkistat koodisi ennen sen lähettämistä käyttämällä EsLint-tarkistusohjelmaa suojauksen oletusarvoisella sääntöjoukolla.
-> 
-> 
 
 ## <a name="process-for-submitting-a-custom-visual-for-certification"></a>Mukautetun visualisoinnin sertifioitavaksi lähettämisen prosessi
+
 Jos haluat lähettää mukautetun visualisoinnin sertifiointia varten, toimi seuraavasti:
 
 1. Lähetä sähköpostia Power BI:n mukautettujen visualisointien tukeen (pbicvsupport@microsoft.com). Sisällytä viestiin seuraavat tiedot:    
 
-   * Otsikko: Visual Certification Request    
-   * Linkki GitHub-säilöön, joka isännöi visualisoinnin lähdekoodia    
-   * Edellä mainittujen vaatimuksien noudattaminen    
-   * Koodin ja tietoturvan tarkistuksen läpäiseminen    
+   * Otsikko: Visual Certification Request
+   * Linkki GitHub-säilöön, joka isännöi visualisoinnin lähdekoodia
+   * Edellä mainittujen vaatimuksien noudattaminen
+   * Koodin ja tietoturvan tarkistuksen läpäiseminen
 
 2. Microsoftin Mukautettujen visualisointien tiimi ilmoittaa, kun mukautettu visualisointi on sertifioitu ja lisätty sertifioitujen luetteloon (alla) tai hylätty, jolloin mukana toimitetaan raportti korjattavista ongelmista. On kehittäjän vastuulla pitää yllä avointa viestiyhteyttä Microsoftin kanssa ja päivittää tarvittaessa omat sertifioidut visualisointinsa.
 
 ## <a name="removal-of-power-bi-certified-custom-visuals"></a>Sertifioitujen mukautettujen Power BI ‑visualisointien poistaminen
+
 Microsoft saattaa harkintansa mukaan poistaa visualisoinnin sertifioitujen luettelosta.  
 
 ## <a name="list-of-custom-visuals-that-have-been-certified"></a>Luettelo mukautetuista visualisoinneista, jotka on sertifioitu
@@ -142,10 +144,11 @@ Microsoft saattaa harkintansa mukaan poistaa visualisoinnin sertifioitujen luett
 | [Sanapilvi](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380752) | [Video](https://youtu.be/AblTenl9fqo) |
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
-[Mukautettujen visualisointien kehittäjätyökalujen käytön aloittaminen (esikatselu)](service-custom-visuals-getting-started-with-developer-tools.md)      
-[Microsoftin mukautettujen visualisointien soittoluettelo YouTubessa](https://www.youtube.com/playlist?list=PL1N57mwBHtN1vIjfvuBIzZllrmKo-Vz6x)  
-[Visualisoinnit Power BI:ssä](visuals/power-bi-report-visualizations.md)  
-[Mukautetut visualisoinnit Power BI:ssä](power-bi-custom-visuals.md)  
-[Mukautettujen visualisointien julkaiseminen Microsoft AppSourcessa](developer/office-store.md)  
-Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
 
+* [Power BI:n mukautetun visualisoinnin kehittäminen](developer/custom-visual-develop-tutorial.md)
+* [Microsoftin mukautettujen visualisointien soittoluettelo YouTubessa](https://www.youtube.com/playlist?list=PL1N57mwBHtN1vIjfvuBIzZllrmKo-Vz6x)  
+* [Visualisoinnit Power BI:ssä](visuals/power-bi-report-visualizations.md)  
+* [Mukautetut visualisoinnit Power BI:ssä](power-bi-custom-visuals.md)  
+* [Mukautettujen visualisointien julkaiseminen Microsoft AppSourcessa](developer/office-store.md)  
+
+Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)

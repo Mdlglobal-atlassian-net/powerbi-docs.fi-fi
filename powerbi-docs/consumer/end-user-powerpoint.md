@@ -1,5 +1,5 @@
 ---
-title: Raporttien vieminen Power BI:stä PowerPointiin (esikatselu)
+title: Raporttien vieminen Power BI:stä PowerPointiin
 description: Lue, miten voit viedä Power BI -raportin PowerPointiin.
 author: mihart
 manager: kvivek
@@ -10,14 +10,14 @@ ms.topic: conceptual
 ms.date: 07/27/2018
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: 85a0a34f9c67d29fee7be6335f79e97b482548be
-ms.sourcegitcommit: 70192daf070ede3382ac13f6001e0c8b5fb8d934
+ms.openlocfilehash: 661d615ed33b12ae0557fd8feaa0bc47b3a6638f
+ms.sourcegitcommit: ac63e6a082ca8397909217837e8d98c9389b23ac
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "46565333"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50736937"
 ---
-# <a name="export-reports-from-power-bi-to-powerpoint-preview"></a>Raporttien vieminen Power BI:stä PowerPointiin (esikatselu)
+# <a name="export-reports-from-power-bi-to-powerpoint"></a>Raporttien vieminen Power BI:stä PowerPointiin
 Voit nyt julkaista Power BI:llä raportin **Microsoft PowerPointiin** ja luoda helposti Power BI -raporttiin perustuvan diasarjan. **PowerPointiin vietäessä** tapahtuu seuraavaa:
 
 * Jokaisesta Power BI -raportin sivusta tulee yksittäinen dia PowerPointissa
@@ -77,9 +77,9 @@ Huomioi seuraavat seikat ja rajoitukset, kun käytät **Vieminen PowerPointiin**
 * **R-visualisointeja** ei tällä hetkellä tueta. Tällaiset visualisoinnit viedään tyhjinä kuvina PowerPointiin virhesanoman kanssa, jossa ilmoitetaan, ettei visualisointia tueta.
 * **Sertifioituja** **mukautettuja visualisointeja** tuetaan. Saat lisätietoja sertifioiduista mukautetuista visualisoinneista, mukaan lukien sertifioinnin hakemisesta visualisoinnille, artikkelista [Mukautetun visualisoinnin sertifiointi](../power-bi-custom-visuals-certified.md). Ei-sertifioidut mukautetut visualisoinnit viedään tyhjinä kuvina PowerPointiin virhesanoman kanssa, jossa ilmoitetaan, ettei visualisointia tueta.
 * **Sertifioituja mukautettuja visualisointeja** tuetaan. Sertifioitu mukautettu visualisointi on hyväksytty Power BI -käyttöön, täyttää tietyt koodia koskevat vaatimukset ja on läpäissyt vaativat suojaustestit. Voit lukea [lisätietoja **sertifioiduista mukautetuista visualisoinneista**](../power-bi-custom-visuals-certified.md).
-* Yli 15 raporttisivua sisältäviä raportteja ei tällä hetkellä voi viedä.
+* Yli 30 raporttisivua sisältäviä raportteja ei tällä hetkellä voi viedä.
 * Raportin vieminen PowerPointiin saattaa kestää muutamia minuutteja. Kestoon vaikuttavat mm. raportin rakenne ja Power BI -palvelun senhetkinen kuormitus.
-* Jos **Vie PowerPointiin (esikatselu)** -valikkovaihtoehtoa ei ole käytettävissä Power BI -palvelussa, syy on todennäköisesti se, että vuokraajan järjestelmänvalvoja on poistanut toiminnon käytöstä. Saat lisätietoja ottamalla yhteyttä vuokraajan järjestelmänvalvojaan.
+* Jos **Vie PowerPointiin** -valikkovaihtoehtoa ei ole käytettävissä Power BI -palvelussa, syy on todennäköisesti se, että vuokraajan järjestelmänvalvoja on poistanut toiminnon käytöstä. Saat lisätietoja ottamalla yhteyttä vuokraajan järjestelmänvalvojaan.
 * Taustakuvat rajataan kaavion raja-alueen mukaiseksi. Suosittelemme poistamaan taustakuvat ennen PowerPointiin viemistä.
 * **Istunnon sisäinen vuorovaikutteisuus**, kuten korostus ja suodatus, porautuminen jne. eivät vielä ole vielä tuettuja ominaisuuksia PowerPointiin vietäessä. Viety PowerPoint näyttää alkuperäiset visualisoinnit sellaisina kuin ne tallennettiin raporttiin.
 * PowerPoint-sivut luodaan aina 9:16-standardikoossa riippumatta alkuperäisen Power BI -raportin sivujen koosta tai mittasuhteista.

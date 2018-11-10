@@ -1,5 +1,5 @@
 ---
-title: Lisää Power BI-raporttiparametreja URL-osoitteen kautta
+title: Raportin suodattaminen URL-osoitteen kyselymerkkijonoparametrien avulla
 description: Voit suodattaa raportin käyttämällä URL-osoitteen kyselyparametreja ja jopa suodattaa useamman kuin yhden kentän.
 author: maggiesMSFT
 ms.author: maggies
@@ -9,24 +9,24 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 10/01/2018
+ms.date: 11/01/2018
 LocalizationGroup: Reports
-ms.openlocfilehash: 7a034e865b0e0b6ba55385f8873d039dba0662db
-ms.sourcegitcommit: a3ce866caba24217bcdd011e892b9ea72f3d2400
+ms.openlocfilehash: d708a4ff07a0d202fcc709f6348e48505d7589d0
+ms.sourcegitcommit: d20f74d5300197a0930eeb7db586c6a90403aabc
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49396953"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "50973369"
 ---
 # <a name="filter-a-report-using-query-string-parameters-in-the-url"></a>Raportin suodattaminen URL-osoitteen kyselymerkkijonoparametrien avulla
 
-Kun avaat raportin Power BI -palvelussa, raportin jokaisella sivulla on oma yksilöllinen URL-osoitteensa. Voit suodattaa raporttisivun käyttämällä Suodattimet-ruutua raportin alustalla.  Voit myös lisätä kyselymerkkijonoparametrit URL-osoitteeseen, jolloin raportti suodatetaan jo etukäteen. Ehkäpä sinulla on raportti, jonka haluat näyttää työtovereille, ja haluat suodattaa sen heille valmiiksi. Eräs tapa tehdä tämä on aloittaa raportin oletusarvoisesta URL-osoitteesta, lisätä suodatinparametreja URL-osoitteeseen ja lähettää sitten heille uusi URL-osoite kokonaisuudessaan sähköpostilla.
+Kun avaat raportin Power BI -palvelussa, raportin jokaisella sivulla on oma yksilöllinen URL-osoitteensa. Voit suodattaa raporttisivun käyttämällä Suodattimet-ruutua raportin alustalla.  Voit myös lisätä kyselymerkkijonoparametrit URL-osoitteeseen, jolloin raportti suodatetaan jo etukäteen. Ehkäpä sinulla on raportti, jonka haluat näyttää työtovereille, ja haluat suodattaa sen heille valmiiksi. Eräs tapa on aloittaa raportin oletusarvoisesta URL-osoitteesta, lisätä suodatinparametreja URL-osoitteeseen ja lähettää sitten heille uusi URL-osoite kokonaisuudessaan sähköpostilla.
 
 ![Power BI -raportti palvelussa](media/service-url-filters/power-bi-report2.png)
 
 ## <a name="uses-for-query-string-parameters"></a>Kyselymerkkijonoparametrien käyttötavat
 
-Oletetaan, että käytät Power BI Desktopia ja haluat luoda raportin, jossa on linkit muihin Power BI -raportteihin – mutta haluat näyttää vain joitakin muiden raporttien tietoja. Suodata raportit ensin kyselymerkkijonoparametrien avulla ja tallenna URL-osoitteet. Luo seuraavaksi Desktopissa taulukko, jossa käytät uusien raporttien URL-osoitteita.  Sitten voit julkaista ja jakaa raportin.
+Oletetaan, että käytät Power BI Desktopia. Haluat luoda raportin, jossa on linkit muihin Power BI -raportteihin, mutta haluat näyttää vain joitakin muiden raporttien tietoja. Suodata raportit ensin kyselymerkkijonoparametrien avulla ja tallenna URL-osoitteet. Luo seuraavaksi Desktopissa taulukko, jossa käytät uusien raporttien URL-osoitteita.  Sitten voit julkaista ja jakaa raportin.
 
 Toinen kyselymerkkijonoparametrien käyttötapa on hyödyllinen edistynyttä Power BI -ratkaisua luotaessa.  DAX-kielen avulla voit luoda raportin, joka luo suodatetun raportin URL-osoitteen dynaamisesti asiakkaan nykyisessä raportissa tekemän valinnan perusteella. Kun asiakas valitsee URL-osoitteen, hän näkee vain itselleen tarkoitetut tiedot. 
 
@@ -125,13 +125,13 @@ Power BI:n URL-suodatin voi sisältää lukuja seuraavissa muodoissa.
 
 ### <a name="date-data-types"></a>Päivämäärän tietotyypit
 
-Power BI tukee sekä OData V3- että V4-versioita **Date**- ja **DateTimeOffset**-tietotyypeille.  Päivämäärät esitetään EDM-muodossa (2019-02-12T00:00:00). Käytännössä tämä tarkoittaa, että kun määrität päivämäärän muodossa VVVV-KK-PP, Power BI tulkitsee sen muodossa VVVV-KK-PPT00:00:00.
+Power BI tukee sekä OData V3- että V4-versioita **Date**- ja **DateTimeOffset**-tietotyypeille.  Päivämäärät esitetään EDM-muodossa (2019-02-12T00:00:00), joten kun määrität päivämäärä muodossa VVVV-KK-PP, Power BI tulkitsee sen muodossa VVVV-KK-PPT00:00:00.
 
 Miksi tämä ero on merkityksellinen? Oletetaan, että luot kyselymerkkijonoparametrin **Table/Date gt 2018-08-03**.  Sisältävätkö tulokset elokuun kolmannen päivän 2018 vai alkavatko ne elokuun neljännestä 2018? Koska Power BI kääntää kyselyn muotoon **Table/Date gt 2018-08-03T00:00:00**, tulokset sisältävät päivämäärät, joilla on nollasta poikkeava aikaosa, koska nämä päivämäärät ovat suurempia kuin **2018-08-03T00:00:00**.
 
 ## <a name="special-characters-in-url-filters"></a>URL-suodattimien erikoismerkit
 
-Erikoismerkit ja välilyönnit edellyttävät lisämuotoiluja. Kun kysely sisältää välilyöntejä, ajatusviivoja tai muita kuin ASCII-merkkejä, lisää kyseisiin erikoismerkkeihin etuliitteeksi *ohjauskoodi*, joka alkaa alaviivalla ja X:llä (**_x**), sitten 4-numeroinen **Unicode-tunnus** ja lopuksi toinen alaviiva. Jos Unicode-tunnuksessa on alle 4 merkkiä, sinun on täydennettävä sitä nollilla. Seuraavassa on joitakin esimerkkejä.
+Erikoismerkit ja välilyönnit edellyttävät lisämuotoiluja. Kun kysely sisältää välilyöntejä, ajatusviivoja tai muita kuin ASCII-merkkejä, lisää kyseisiin erikoismerkkeihin etuliitteeksi *escape-koodi*, joka alkaa alaviivalla ja X:llä (**_x**), sitten 4-numeroinen **Unicode-tunnus** ja lopuksi toinen alaviiva. Jos Unicode-tunnuksessa on vähemmän kuin neljä merkkiä, sinun on täydennettävä sitä nollilla. Seuraavassa on joitakin esimerkkejä.
 
 |Tunniste  |Unicode  | Koodaus Power BI:ssä  |
 |---------|---------|---------|
@@ -159,16 +159,16 @@ Julkaise raportti Power BI -palvelussa ja suodata URL-kyselymerkkijonon avulla n
 
 ## <a name="pin-a-tile-from-a-filtered-report"></a>Kiinnitä ruutu suodatetusta raportista
 
-Kun olet suodattanut raportin käyttämällä kyselymerkkijonon parametreja, voit kiinnittää visualisointeja kyseisestä raportista raporttinäkymääsi.  Raporttinäkymän ruutu tuo näkyviin suodatetut tiedot, ja valitsemalla kyseisen raporttinäkymän ruutu avaa raportin, jota käytettiin sen luomiseen.  Kuitenkin URL-osoitteen kautta tehtyä suodatusta ei tallenneta raportin kanssa, ja raporttinäkymä-ruutu on valittuna, jolloin raportti avautuu suodattamattomassa tilassa.  Tämä tarkoittaa, että raporttinäkymäruudussa näytettävät tiedot eivät vastaa raportin visualisoinnissa näkyviä tietoja.
+Kun olet suodattanut raportin käyttämällä kyselymerkkijonon parametreja, voit kiinnittää visualisointeja kyseisestä raportista raporttinäkymääsi.  Raporttinäkymän ruutu tuo näkyviin suodatetut tiedot, ja valitsemalla kyseisen raporttinäkymän ruutu avaa raportin, jota käytettiin sen luomiseen.  URL-osoitteen kautta tehtyä suodatusta ei kuitenkaan tallenneta raportin yhteydessä. Kun valitset koontinäyttöruudun, raportti avautuu suodattamattomassa tilassa.  Tällöin raporttinäkymäruudussa näytettävät tiedot eivät vastaa raportin visualisoinnissa näkyviä tietoja.
 
-Tästä on hyötyä, kun haluat nähdä eri tuloksia: raporttinäkymässä suodatettuna ja raportissa suodattamattomana.
+Tästä ristiriidasta on hyötyä, kun haluat nähdä eri tuloksia: raporttinäkymässä suodatettuna ja raportissa suodattamattomana.
 
 ## <a name="considerations-and-troubleshooting"></a>Huomioon otettavat seikat ja vianmääritys
 
 On muutamia asioita, jotka tulee ottaa huomioon merkkijonon kyselyparametreja käytettäessä.
 
 * Käytettäessä *in*-operaattoria *in*-operaattorin oikealla puolella olevat arvot on esitettävä sulkeissa olevana pilkuin eroteltuna luettelona.    
-* Power BI -raporttipalvelimessa voit [välittää raporttiparametrit](https://docs.microsoft.com/sql/reporting-services/pass-a-report-parameter-within-a-url?view=sql-server-2017.md) sisällyttämällä ne raportin URL-osoitteeseen. Näissä URL-parametreissa ei ole etuliitettä, koska ne on välitetty suoraan raportin käsittelymoduuliin.
+* Power BI -raporttipalvelimessa voit [välittää raporttiparametrit](https://docs.microsoft.com/sql/reporting-services/pass-a-report-parameter-within-a-url?view=sql-server-2017.md) sisällyttämällä ne raportin URL-osoitteeseen. Näissä URL-parametreissa ei ole etuliitettä, koska ne on välitetty suoraan raportin käsittelyohjelmaan.
 * Kyselyn merkkijonon suodatus ei toimi [Julkaise verkkoon](service-publish-to-web.md) -toiminnossa.
 * [Upota raportin verkko-osa SharePoint Onlinessa](service-embed-report-spo.md) ei tue URL-suodattimia.
 * Pitkä tietotyyppi on (2^53-1) JavaScriptin rajoitusten vuoksi.

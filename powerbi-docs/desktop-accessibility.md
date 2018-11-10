@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/15/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 525a7e45a804d9f82f4d06cf8618d790e140699f
-ms.sourcegitcommit: b8461c1876bfe47bf71c87c7820266993f82c0d3
+ms.openlocfilehash: 799115dc5487a196cbd5d8a2c9dce1603764034a
+ms.sourcegitcommit: 02f918a4f27625b6f4e47473193ebc8219db40e2
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49336871"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "51223371"
 ---
 # <a name="accessibility-in-power-bi-desktop-reports"></a>Power BI Desktop -raporttien helppokäyttöisyys
 Power BI:ssa on ominaisuuksia, joiden avulla toimintarajoitteisten henkilöiden on helppo käyttää ja käsitellä Power BI -raportteja. Näitä ominaisuuksia ovat esimerkiksi mahdollisuus käyttää raporttia näppäimistön tai näytönlukuohjelman avulla, kohdistaminen sivun eri objekteihin sarkaimella sekä ymmärtäväinen merkkien käyttö visualisoinneissa.
@@ -34,6 +34,8 @@ Syyskuun 2017 julkaisusta alkaen **Power BI Desktopissa** on voinut painaa **?**
 
 Helppokäyttötoimintoihin tehtyjen parannusten myötä voit käyttää Power BI -raportteja näppäimistöllä tai näytönlukuohjelmalla seuraavin tavoin:
 
+Kun tarkastelet raporttia, skannaustilan tulisi yleensä olla poissa käytöstä.
+
 Voit myös vaihtaa kohdistusta raporttisivujen välilehtien tai raportin tietyn sivun objektien välillä painamalla **Ctrl + F6**.
 
 * Kun kohdistus on *raportin sivujen välilehdillä*, käytä *sarkain*- tai *nuolinäppäimiä* siirtääksesi kohdistuksen sivulta toiselle. Näytönlukuohjelma voi lukea raporttisivun otsikon ja sen, onko kyseinen sivu sillä hetkellä valittuna. Voit ladata raportin sivun, jossa kohdistus on sillä hetkellä, painamalla *Enter*- tai *välilyöntinäppäintä*.
@@ -48,7 +50,7 @@ Voit avata *Näytä tiedot* -ikkunan helppokäyttöisen version painamalla **Alt
 ![Voit avata helppokäyttöisen visualisoinnin Power BI Desktopissa painamalla Alt + vaihto + F11](media/desktop-accessibility/accessibility_04.png)
 
 > [!NOTE]
-> Näytä tiedot -ominaisuus on käytettävissä vain näytönlukijan kanssa tällä pikanäppäinyhdistelmällä. Jos avaat Näytä tiedot -ominaisuuden visualisoinnin otsikon vaihtoehdoista, ei se ole näytönlukija käytettävissä.
+> Näytä tiedot -ominaisuus on käytettävissä vain näytönlukijan kanssa tällä pikanäppäinyhdistelmällä. Jos avaat Näytä tiedot -ominaisuuden visualisoinnin otsikon vaihtoehdoista, ei se ole näytönlukija käytettävissä. Ota skannaustila käyttöön, kun käytät Näytä tiedot -ominaisuutta. Näin voit hyödyntää kaikkia näytönlukuohjelman tarjoamia pikanäppäimiä.
 
 **Power BI Desktopin** heinäkuun 2018 julkaisusta alkaen myös osittajiin on lisätty helppokäyttötoimintoja. Kun valitset osittajan, voit säätää osittajan arvoa siirtymällä sen ohjausobjektista toiseen käyttämällä CTRL-näppäintä ja oikeaa nuolinäppäintä. Voit esimerkiksi ensin keskittyä pyyhkimeen painamalla CTRL + oikea nuoli. Sen jälkeen välilyönnin painaminen vastaa pyyhinpainikkeen napsauttamista eli poistaa kaikki osittajan arvot. 
 
@@ -112,6 +114,55 @@ Helppokäyttötoimintoihin liittyy muutamia tunnettuja ongelmia ja rajoituksia, 
 
 * Saadaksesi parhaan kokemuksen, kun käytät näytönlukijaa **Power BI Desktopin** kanssa, avaa valitsemasi näytönlukija ennen kuin avaat tiedostoja Power BI Desktopissa.
 * Jos käytät Narratoria, tietojen näyttämisenä HTML-taulukkomuodossa on joitakin rajoituksia.
+
+## <a name="keyboard-shortcuts"></a>Pikanäppäimet
+### <a name="frequently-used-shortcuts"></a>Usein käytetyt pikanäppäimet
+| Toiminto           | Paina                |
+| :------------------- | :------------------- |
+| Siirrä kohdistusta osien välillä  | Ctrl + F6 |
+| Siirrä kohdistusta eteenpäin osassa | Sarkain         |
+| Siirrä kohdistusta taaksepäin osassa | Vaihto + Sarkain |
+
+### <a name="on-visual"></a>Visualisoinnille
+| Toiminto           | Paina                |
+| :------------------- | :------------------- |
+| Siirrä kohdistus visuaaliseen valikkoon | Alt + Vaihto + F10 |
+| Näytä tiedot | Alt + Vaihto + F11  |
+
+### <a name="pane-navigation"></a>Siirtyminen ruudussa
+| Toiminto           | Paina                |
+| :------------------- | :------------------- |
+| Avaa pikavalikko | <ul><li>Windows-näppäimistö: Windows-kontekstiavain + F10.  Windows-kontekstiavain on vasemman Alt-näppäimen ja vasemman nuolinäppäimen välissä</li><li>Muu näppäimistö: Vaihto + F10</li></ul> |
+
+### <a name="slicer"></a>Osittaja
+| Toiminto           | Paina                |
+| :------------------- | :------------------- |
+| Osittajan käyttö | Ctrl + Oikea nuolinäppäin |
+
+### <a name="selection-pane"></a>Valintaruutu
+| Toiminto           | Paina                |
+| :------------------- | :------------------- |
+| Aktivoi valintaruutu | F6 |
+| Siirrä objektia tasoissa ylöspäin | Ctrl + Vaihto + F |
+| Siirrä objektia tasoissa alaspäin | Ctrl + Vaihto + B |
+| Piilota tai näytä objekti | Ctrl + Vaihto + S |
+
+### <a name="dax-editor"></a>DAX Editor
+| Toiminto           | Paina                |
+| :------------------- | :------------------- |
+| Siirrä riviä ylöspäin/alaspäin | Alt + Nuoli ylöspäin / Nuoli alaspäin |
+| Kopioi rivi ylöspäin/alaspäin | Vaihto + Alt + Nuoli ylöspäin / Nuoli alaspäin |
+| Lisää rivi alapuolelle | Ctrl + Enter |
+| Lisää rivi yläpuolelle | Ctrl + Vaihto + Enter |
+| Siirry vastaavaan hakasulkeeseen | Ctrl + Vaihto + \ |
+| Sisennä/ulonna riviä | Ctrl + ] / [ |
+| Lisää kohdistin | Alt + Napsautus |
+| Valitse nykyinen rivi | Ctrl + I |
+| Valitse nykyisen valinnan kaikki esiintymät | Ctrl + Vaihto + L |
+| Valitse nykyisen sanan kaikki esiintymät | Ctrl + F2 |
+
+
+
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 * [Raporttiteemojen käyttö Power BI Desktopissa (esikatseluversio)](desktop-report-themes.md)
