@@ -766,6 +766,24 @@ items:
         href: refresh-troubleshooting-tile-errors.md
       - name: Xero-sisältöpaketin tunnistetietojen päivitys, jos päivitys epäonnistuu
         href: service-refresh-xero-credentials.md
+    - name: Omatoiminen tietojen valmistelu
+      items:
+      - name: Omatoiminen tietojen valmistelu tietovoita käyttäen (esikatselu)
+        href: service-dataflows-overview.md
+      - name: Tietovoiden luominen ja käyttäminen
+        href: service-dataflows-create-use.md
+      - name: Lasketut entiteetit ja Power BI Premium
+        href: service-dataflows-computed-entities-premium.md
+      - name: Tietovoiden käyttö paikallisiin tietolähteisiin
+        href: service-dataflows-on-premises-gateways.md
+      - name: Entiteettien linkittäminen tietovoiden välillä (esikatselu)
+        href: service-dataflows-linked-entities.md
+      - name: Lisäävän päivityksen käyttö tietovoiden kanssa (esikatselu)
+        href: service-dataflows-incremental-refresh.md
+      - name: Kehittäjien tietovuoresurssit
+        href: service-dataflows-developer-resources.md
+      - name: Yhdistäminen tietovoihin Power BI Desktopissa
+        href: desktop-connect-dataflows.md
   - name: Resurssit
     items:
     - name: Videot
@@ -776,6 +794,36 @@ items:
       href: supported-languages-countries-regions.md
     - name: Raportit
       href: whitepapers.md
+- name: Sivutetut raportit Power BI:ssä
+  items:
+  - name: Yleiskatsaus
+    items:
+    - name: Mitä sivutetut raportit ovat? (esikatselu)
+      href: paginated-reports-report-builder-power-bi.md
+  - name: Opetusohjelmat
+    items:
+    - name: Luo sivutettu raportti ja lataa se
+      href: paginated-reports-quickstart-aw.md
+  - name: Käsitteet
+    items:
+    - name: Siirry raportin suunnittelunäkymässä
+      href: paginated-reports-report-design-view.md
+    - name: Sivutettujen raporttien usein kysytyt kysymykset
+      href: paginated-reports-faq.md
+  - name: Ohjeet
+    items:
+    - name: Upotetun tietolähteen luominen
+      href: paginated-reports-embedded-data-source.md
+    - name: Upotetun tietojoukon luominen
+      href: paginated-reports-create-embedded-dataset.md
+    - name: Parametrien luominen
+      href: paginated-reports-parameters.md
+    - name: Sivutetun raportin julkaiseminen
+      href: paginated-reports-save-to-power-bi-service.md
+    - name: Tarkastele sivutettua raporttia
+      href: paginated-reports-view-power-bi-service.md
+    - name: Parametrien käsittely
+      href: paginated-reports-view-parameters.md
 - name: Power BI kehittäjille
   items:
   - name: Mitä kehittäjät voivat tehdä Power BI:llä?
@@ -1203,9 +1251,9 @@ items:
       href: service-admin-governance.md
     - name: Power BI:n suojaus
       href: service-admin-power-bi-security.md
-ms.openlocfilehash: a0d2f9e2fcf26f3eca516a1204c9d25a9225010f
-ms.sourcegitcommit: 02f918a4f27625b6f4e47473193ebc8219db40e2
+ms.openlocfilehash: 8640762b152c996d21cefe8663cf6bf8e78f718a
+ms.sourcegitcommit: b23fdcc0ceff5acd2e4d52b15b310068236cf8c7
 ms.translationtype: HT
 ms.contentlocale: fi-FI
 ms.lasthandoff: 11/07/2018
-ms.locfileid: "51223187"
+ms.locfileid: "51266135"
