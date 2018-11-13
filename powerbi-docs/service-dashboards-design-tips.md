@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 06/22/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 580d1ead35042d14c155c5a28fdb6ba6e6dbcd54
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 082d0ba1e638e8eaf6ae16fa8d5ed63c128c8ad5
+ms.sourcegitcommit: a1b7ca499f4ca7e90421511e9dfa61a33333de35
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46544957"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51507849"
 ---
 # <a name="tips-for-designing-a-great-power-bi-dashboard"></a>Vinkkejä laadukkaiden Power BI -koontinäyttöjen suunnitteluun
 Nyt kun olet luonut koontinäytön ja lisännyt siihen ruutuja, mieti, miten voisit parantaa sen toiminnallisuutta. Yleensä tämä tarkoittaa tärkeimpien tietojen korostamista ja koontinäytön selkeyttämistä.
@@ -43,7 +43,7 @@ Koska koontinäytöt on tarkoitettu tärkeiden tietojen tarkasteluun yhdellä si
 Onko koontinäyttö sekava?  Poista kaikki muut paitsi olennaisimmat tiedot, joita voi lukea ja tulkita helposti.
 
 ## <a name="make-use-of-full-screen-mode"></a>Käytä koko näytön tilaa
-Näytä koontinäyttö [koko näytön tilassa ](service-fullscreen-mode.md) ilman häiriötekijöitä.
+Näytä koontinäyttö [koko näytön tilassa ](consumer/end-user-focus.md) ilman häiriötekijöitä.
 
 ## <a name="make-the-most-important-information-biggest"></a>Näytä tärkeimmät tiedot suurimmassa koossa
 Jos koontinäytön teksti ja visualisoinnit ovat kaikki samaa kokoa, lukijan on vaikea keskittyä tärkeimpään asiaan. Esimerkiksi korttivisualisoinnit ovat hyvä tapa esittää tärkeitä lukuja näkyvästi:  

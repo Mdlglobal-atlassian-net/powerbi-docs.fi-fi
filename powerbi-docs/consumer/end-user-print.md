@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 03/01/2018
 ms.author: mihart
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 636dbceae129d7a5288fa6dfc8a281d5257a087f
-ms.sourcegitcommit: 70192daf070ede3382ac13f6001e0c8b5fb8d934
+ms.openlocfilehash: be7597cf13732e251f40f73a853e6ea7b0032652
+ms.sourcegitcommit: a1b7ca499f4ca7e90421511e9dfa61a33333de35
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "46564988"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51507665"
 ---
 # <a name="printing-from-power-bi-service"></a>Power BI -palvelusta tulostaminen
 Power BI -palvelusta voit tulostaa koko koontinäytön, yksittäisen koontinäytön ruudun, raporttisivun tai raportin visualisoidun kohteen. Raportteja voi tulostaa vain yhden sivun kerrallaan – et voi tulostaa koko raportin kerralla.
@@ -47,7 +47,7 @@ Katso videolta, miten Amanda tulostaa koontinäytön ja raportin. Kokeile sitten
 1. [Avaa ruutu kohdistustilassa](end-user-focus.md) valitsemalla kolme pistettä ja valitsemalla sitten kohdistuskuvake ![kohdistuskuvake](./media/end-user-print/power-bi-focus-icon.png).
    
     ![kolmen pisteen valikko](./media/end-user-print/menu-options.png)
-2. Avaa ruutu [koko näytön tilaan](../service-fullscreen-mode.md) valitsemalla yläreunan siirtymispalkista koko näytön kuvake ![koko näytön kuvake](./media/end-user-print/power-bi-full-screen-icon.png) .
+2. Avaa ruutu [koko näytön tilaan](end-user-focus.md) valitsemalla yläreunan siirtymispalkista koko näytön kuvake ![koko näytön kuvake](./media/end-user-print/power-bi-full-screen-icon.png) .
 3. Vie hiiren osoitin ruudun kohdalle, jolloin näkyviin tulee asetusvalikko.
    
     ![koko näytön tilan asetusvalikko](./media/end-user-print/menu-options-new.png)

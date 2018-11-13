@@ -9,12 +9,12 @@ ms.component: powerbi-mobile
 ms.topic: conceptual
 ms.date: 10/13/2017
 ms.author: maggies
-ms.openlocfilehash: d265e465825fb8def167207ed632f1702adcbc7f
-ms.sourcegitcommit: 698b788720282b67d3e22ae5de572b54056f1b6c
+ms.openlocfilehash: 4bc9a0fe6dd3becd67c2b6dd8ffeb9d7922705a6
+ms.sourcegitcommit: a1b7ca499f4ca7e90421511e9dfa61a33333de35
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45973628"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51507929"
 ---
 # <a name="view-reports-in-presentation-mode-on-surface-hub-and-windows-10---power-bi"></a>Raporttien esittäminen esitystilassa Surface Hubilla ja Windows 10 -laitteilla - Power BI
 Voit esittää raportteja Surface Hubin esitystilassa ja raporttinäkymiä, raportteja ja ruutuja Windows 10 -laitteiden koko näytön tilassa. 
@@ -27,7 +27,7 @@ Power BI -sovelluksen koko näytön tilassa poistetaan kaikki ulkoasuun liittyv�
 
 Kun esität raportin Surface Hubin esittelytilassa, voit piirtää sivuille eri värisillä musteilla ja siirtyä raportin sivulta toiselle.
 
-Voit myös [esittää raporttinäkymiä ja raportteja Power BI -palvelusta koko näytön tilassa](../../service-fullscreen-mode.md) verkosta.
+Voit myös [esittää raporttinäkymiä ja raportteja Power BI -palvelusta koko näytön tilassa](../end-user-focus.md) verkosta.
 
 > [!NOTE]
 > Esitystila eroaa [ruutujen kohdistustilassa](mobile-tiles-in-the-mobile-apps.md).
@@ -74,6 +74,6 @@ Esittelytila on Surface Hubissa oletusarvoisesti käytössä, mutta jos se on sa
 7. Poistu koko näytön tilasta sipaisemalla ylhäältä alas ja napsauttamalla kahta sisäänpäin osoittavaa nuolta ![](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-exit-full-screen-hub-icon.png).
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
-* [Esitä raporttinäkymiä ja raportteja Power BI -palvelusta koko näytön tilassa](../../service-fullscreen-mode.md)
+* [Esitä raporttinäkymiä ja raportteja Power BI -palvelusta koko näytön tilassa](../end-user-focus.md)
 * Ilmenikö kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)
 

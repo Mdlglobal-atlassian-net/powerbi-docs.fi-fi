@@ -8,15 +8,15 @@ featuredvideoid: 9DeAKM4SNJM
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 01/20/2018
+ms.date: 11/06/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: c547cd83d879cd81fe12c02f5418f5bf44ca1483
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 62a8ae907b01c8309aee101aa074e9bfb72b207d
+ms.sourcegitcommit: b23fdcc0ceff5acd2e4d52b15b310068236cf8c7
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46545941"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "51265905"
 ---
 # <a name="customize-x-axis-and-y-axis-properties"></a>X- ja Y-akselin ominaisuuksien muokkaaminen
 Tässä opetusohjelmassa käydään läpi monia tapoja mukauttaa X-akselia ja Y-akselia visualisoinneissa. Kaikissa visualisoinneissa ei ole akseleita, tai niitä ei voi mukauttaa; esimerkiksi ympyräkaaviossa ei ole akseleita. Mukautusasetukset vaihtelevat myös visualisoinnista riippuen, joten yksi artikkeli ei riitä kaikkien vaihtoehtojen läpikäymiseen. Tämä artikkeli tarjoaa yleiskatsauksen useimmin käytettyihin akselien mukautuksiin ja visualisoinnin muotoiluvälilehteen Power BI -raporttipohjassa.  
@@ -86,30 +86,33 @@ Sinun täytyy ensin luoda yhdistelmäkaavio myymälöiden määrän vaikutuksest
 
     ![](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-line-chart.png)
 
-> [NOTE]: For help sorting by month, see [sorting by other criteria](../consumer/end-user-change-sort.md#other)
-> 1. Myyntikate oli tammikuussa 35 %, huipussaan 45 % huhtikuussa, laski heinäkuussa ja nousi uudelleen elokuussa. Näemmekö samanlaisen kuvion edellisen ja tämän vuoden myynnissä?
-> 2. Lisää **Tämän vuoden myynti > Arvo** ja **Edellisen vuoden myynti** viivakaavioon. **Edellisen vuoden myyntikateprosentin** asteikko (sininen 0 % -ruudukkoviiva) on paljon pienempi kuin **myynnin**, mikä vaikeuttaa vertailua. Y-akselin prosenttiosuudet ovat myös naurettavia.      
+    > [NOTE]: For help sorting by month, see [sorting by other criteria](../consumer/end-user-change-sort.md#other)
 
-   ![](media/power-bi-visualization-customize-x-axis-and-y-axis/flatline_new.png)
+    Myyntikate oli tammikuussa 35 %, huipussaan 45 % huhtikuussa, laski heinäkuussa ja nousi uudelleen elokuussa. Näemmekö samanlaisen kuvion edellisen ja tämän vuoden myynnissä?
+     
+3. Lisää **Tämän vuoden myynti > Arvo** ja **Edellisen vuoden myynti** viivakaavioon. **Edellisen vuoden myyntikateprosentin** asteikko (sininen 0 % -ruudukkoviiva) on paljon pienempi kuin **myynnin**, mikä vaikeuttaa vertailua. Y-akselin prosenttiosuudet ovat myös naurettavia.      
+
+    ![](media/power-bi-visualization-customize-x-axis-and-y-axis/flatline_new.png)
+
 5. Voit helpottaa visualisoinnin tulkitsemista muuntamalla viivakaavion viivakaavioksi ja pinotuksi pylväskaavioksi.
 
    ![](media/power-bi-visualization-customize-x-axis-and-y-axis/converttocombo_new.png)
 
 6. Vedä **Edellisen vuoden myyntikateprosentti** **sarakearvoista** **riviarvoihin**. Nyt sinulla on aiemmin luotu pinottu pylväskaavio ***sekä*** viivakaavio.  (Halutessasi voit käyttää aiemmin oppimaasi ja muokata akselien fonttien väriä ja kokoa.)
    
-
    Power BI luo kaksi akselia, jolloin tietojoukkoja voidaan skaalata erikseen; vasen mittaa myyntiä euroissa ja oikea prosenttilukua.
 
    ![](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-dual-axes-new.png)
 
 ### <a name="format-the-secondary-y-axis"></a>Toissijaisen Y-akselin muotoileminen
-1. Voit näyttää muotoiluasetukset valitsemalla maalitelakuvakkeen **Visualisoinnit**-ruudussa.
-2. Laajenna Y-akselin asetukset alanuolella.
-3. Selaa luetteloa, kunnes löydät kohdan **Näytä toissijainen**. Vaihda **Näytä toissijainen** -kohdan arvo **Ei käytössä** arvoon **Käytössä**.
+1. Voit näyttää muotoiluasetukset valitsemalla maalitelakuvakkeen **Visualisoinnit**-ruudussa.    
+2. Laajenna Y-akselin asetukset alanuolella.    
+3. Selaa luetteloa, kunnes löydät kohdan **Näytä toissijainen**. Vaihda **Näytä toissijainen** -kohdan arvo **Ei käytössä** arvoon **Käytössä**.    
 
    ![](media/power-bi-visualization-customize-x-axis-and-y-axis/combo3.png)
 
    ![](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-dual-axes.png)
+
 4. (Valinnainen) Mukauta akselit. Jos vaihdat jommankumman akselin **sijaintia**, akselit vaihdetaan päittäin.
 
    ![](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-y-axes-options.png)
@@ -120,7 +123,7 @@ Akselien otsikoiden lisääminen voi auttaa näin monimutkaisessa visualisoinnis
 1. Ota sekä **Y-akselin (sarake)** että **Y-akselin (rivi)** **otsikot** **käyttöön**.
 2. Määritä **tyylin** arvoksi **Näytä vain otsikko**.
 
-   ![](media/power-bi-visualization-customize-x-axis-and-y-axis/yaxissettings.png)
+   ![](media/power-bi-visualization-customize-x-axis-and-y-axis/yaxissettings.png)    
 3. Yhdistelmäkaavio näyttää nyt kaksi akselia otsikoilla.
 
    ![](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-combo-chart.png)
