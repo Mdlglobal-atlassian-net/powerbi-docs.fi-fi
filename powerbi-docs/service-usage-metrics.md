@@ -9,14 +9,14 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 06/22/2018
+ms.date: 11/13/2018
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 4c10a0ffdf11829d8faa15ea14be136922c86382
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 7b511a28f056df268216552f7d075a88c047f9f3
+ms.sourcegitcommit: 6a6f552810a596e1000a02c8d144731ede59c0c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46545027"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "51619835"
 ---
 # <a name="usage-metrics-for-dashboards-and-reports"></a>Koontinäyttöjen ja raporttien käyttötiedot
 
@@ -69,7 +69,7 @@ Jos haluat pureutua raporttitietoihin tai luoda omia raporttejasi tästä tietoj
     > [!NOTE]
     > Jos kiinnität ruudun käyttötietoraportista koontinäyttöön, koontinäyttöä ei voi lisätä sovellukseen tai sisältöpakettiin.
 
-## <a name="what-metrics-are-reported"></a>Mitkä tiedot raportoidaan?
+## <a name="which-metrics-are-reported"></a>Mitkä tiedot raportoidaan?
 
 | Tieto | Koontinäyttö | Raportti | Kuvaus |
 | --- | --- | --- | --- |
@@ -162,6 +162,15 @@ Kun käyttötietoja poistetaan koko organisaation käytöstä, järjestelmänval
 Power BI on saatavilla erillisissä kansallisissa pilvipalveluissa. Nämä pilvipalveluissa tarjoavat saman tasoisen suojauksen, tietosuojan, yhteensopivuuden ja läpinäkyvyyden kuin Power BI:n yleinen versio, yhdistettynä ainutlaatuisiin paikallisia säädöksiä noudattaviin palveluntarjonta-, tietojen tallennus-, käyttöoikeus- ja hallintamalleihin. Paikallisia säädöksiä noudattavasta ainutlaatuisesta mallista johtuen, käyttötiedot eivät ole saatavilla kansallisissa pilvipalveluissa. Jos haluat lisätietoja, katso [kansalliset pilvipalvelut](https://powerbi.microsoft.com/en-us/clouds/).
 
 ## <a name="considerations-and-limitations"></a>Huomioitavat asiat ja rajoitukset
+
+On tärkeää ymmärtää erot, jotka voivat ilmetä käyttömittareita ja valvontalokeja verrattaessa, sekä niiden syyt. *Valvontalokit* kerätään käyttämällä tietoja Power BI -palvelusta ja *käyttömittarit* kerätään asiakkaalta. Tämän eron vuoksi toimintojen koostemäärät valvontalokeissa eivät välttämättä aina vastaa käyttömittareita seuraavista syistä:
+
+* Käyttömittarit saattavat joskus laskea liian vähän toimintoja vaihtelevien verkkoyhteyksien, mainosten eston tai muiden ongelmien vuoksi, jotka voivat häiritä tapahtumien lähettämistä asiakkaalta.
+* Tietyntyyppiset näkymät eivät sisälly käyttömittareihin aiemmin tässä artikkelissa kuvatun mukaisesti.
+* Käyttömittarit saattavat joskus laskea liian paljon toimintoja tilanteissa, joissa lcient päivittyy ilman, että pyyntöä pitää lähettää takaisin Power BI -palveluun.
+
+
+Käyttömittareiden ja valvontalokien mahdollisten erojen lisäksi seuraavat käyttömittareita koskevat kysymykset ja vastaukset voivat olla hyödyllisiä käyttäjille ja järjestelmänvalvojille:
 
 K:    En voi hakea käyttötietoja koontinäytöstä tai raportista V:    Voit nähdä käyttötietoja vain sisällöstä, jonka omistat tai johon sinulla on muokkausoikeudet.
 

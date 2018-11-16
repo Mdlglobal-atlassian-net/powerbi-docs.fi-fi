@@ -7,25 +7,20 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 10/15/2018
+ms.date: 11/13/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 799115dc5487a196cbd5d8a2c9dce1603764034a
-ms.sourcegitcommit: 02f918a4f27625b6f4e47473193ebc8219db40e2
+ms.openlocfilehash: d57d31e87197ee9d764a8d263dd4ee6dd0c75ac3
+ms.sourcegitcommit: 6a6f552810a596e1000a02c8d144731ede59c0c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51223371"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "51619628"
 ---
 # <a name="accessibility-in-power-bi-desktop-reports"></a>Power BI Desktop -raporttien helppokäyttöisyys
 Power BI:ssa on ominaisuuksia, joiden avulla toimintarajoitteisten henkilöiden on helppo käyttää ja käsitellä Power BI -raportteja. Näitä ominaisuuksia ovat esimerkiksi mahdollisuus käyttää raporttia näppäimistön tai näytönlukuohjelman avulla, kohdistaminen sivun eri objekteihin sarkaimella sekä ymmärtäväinen merkkien käyttö visualisoinneissa.
 
 ![Erilaiset merkinnät parantavat viiva- ja aluekaavioiden helppokäyttöisyyttä](media/desktop-accessibility/accessibility_01.png)
-
-> [!NOTE]
-> Nämä helppokäyttötoiminnot ovat käytettävissä **Power BI Desktopin** kesäkuun 2017 julkaisussa ja sitä uudemmissa versioissa. Tuleviin versioihin on suunnitellaan lisää helppokäyttötoimintoja.
-> 
-> 
 
 ## <a name="consuming-a-power-bi-desktop-report-with-a-keyboard-or-screen-reader"></a>Power BI Desktop -raporttien käyttö näppäimistöllä tai näytönlukuohjelmalla
 Syyskuun 2017 julkaisusta alkaen **Power BI Desktopissa** on voinut painaa **?**-näppäintä, joka avaa **Power BI Desktopissa** käytettävien pikanäppäinten ohjeruudun.
@@ -116,12 +111,26 @@ Helppokäyttötoimintoihin liittyy muutamia tunnettuja ongelmia ja rajoituksia, 
 * Jos käytät Narratoria, tietojen näyttämisenä HTML-taulukkomuodossa on joitakin rajoituksia.
 
 ## <a name="keyboard-shortcuts"></a>Pikanäppäimet
+Pikanäppäimet ovat hyödyllisiä Power BI -raporteissa liikuttaessa näppäimistöä käyttämällä. Seuraavissa taulukoissa kuvataan Power BI -raportissa käytettävissä olevat pikakuvakkeet. Näitä pikanäppäimiä voidaan käyttää Power BI Desktopin lisäksi myös seuraavissa kokemuksissa:
+
+* Q&A Explorer -valintaikkuna
+* Aloitusopas-valintaikkuna
+* Tiedosto-valikko ja Tietoja-valintaikkuna
+* Varoituspalkki
+* Tiedoston palauttaminen -valintaikkuna
+* Frowns-valintaikkuna
+
+Pyrkimyksissämme parantaa helppokäyttötoimintoja yllä olevan luettelon kokemukset tukevat myös näytönlukuohjelmia ja suuren kontrastin asetuksia.
+
+
 ### <a name="frequently-used-shortcuts"></a>Usein käytetyt pikanäppäimet
 | Toiminto           | Paina                |
 | :------------------- | :------------------- |
 | Siirrä kohdistusta osien välillä  | Ctrl + F6 |
 | Siirrä kohdistusta eteenpäin osassa | Sarkain         |
 | Siirrä kohdistusta taaksepäin osassa | Vaihto + Sarkain |
+| Valitse objekti tai poista valinta | Enter tai välilyönti |
+| Usean objektin valinta | Ctrl + välilyönti |
 
 ### <a name="on-visual"></a>Visualisoinnille
 | Toiminto           | Paina                |

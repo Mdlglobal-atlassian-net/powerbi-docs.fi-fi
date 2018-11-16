@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 09/17/2018
+ms.date: 11/13/2018
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: df61b9c68407ef0d00d1d5981c57021e7659cfff
-ms.sourcegitcommit: fbb27fb40d753b5999a95b39903070766f7293be
+ms.openlocfilehash: 18d5b2ca504ec3533e2ded0e5480885ea862fb3a
+ms.sourcegitcommit: 6a6f552810a596e1000a02c8d144731ede59c0c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49359742"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "51619490"
 ---
 # <a name="storage-mode-in-power-bi-desktop-preview"></a>Tallennustilan tila Power BI Desktopissa (esikatselu)
 
@@ -43,16 +43,6 @@ Power BI Desktopin Tallennustilan tila -asetus on yksi kolmesta toisiinsa liitty
 
 * **Tallennustilan tila**: Voit nyt määrittää, mitkä visualisoinnit edellyttävät kyselyä taustatietolähteisiin. Visualisoinnit, jotka eivät edellytä kyselyä, tuodaan, vaikka ne perustuisivat DirectQueryyn. Tämä ominaisuus parantaa suorituskykyä ja vähentää taustakuormitusta. Aiemmin jopa osittajien kaltaiset yksinkertaiset visualisoinnit käynnistivät kyselyjä taustalähteisiin. Tallennustilan tila kuvataan edempänä tässä artikkelissa.
 
-## <a name="enable-the-storage-mode-preview-feature"></a>Tallennustilan tila -esikatselutoiminnon käyttöönotto
-
-Tallennustilan tila -ominaisuus on esikatseluvaiheessa. Sen täytyy olla käytössä Power BI Desktopissa. Ota tallennustilan tila käyttöön valitsemalla **Tiedosto** >  **Asetukset ja vaihtoehdot** > **Asetukset** > **Esikatseluominaisuudet**. Valitse sitten **Yhdistelmämallit**-valintaruutu. 
-
-![Esikatseluominaisuudet-ruutu](media/desktop-composite-models/composite-models_02.png)
-
-Jos haluat ottaa ominaisuuden käyttöön, käynnistä Power BI Desktop uudelleen.
-
-![Ominaisuus edellyttää uudelleenkäynnistämistä -ikkuna](media/desktop-composite-models/composite-models_03.png)
-
 ## <a name="use-the-storage-mode-property"></a>Tallennustilan tila -ominaisuuden käyttäminen
 
 Tallennustilan tila on ominaisuus, jonka voit määrittää mallisi kullekin taulukolle. Voit määrittää tallennustilan tilan napsauttamalla **Kentät**-ruudussa hiiren kakkospainikkeella taulukkoa, jonka ominaisuuksia haluat määrittää, ja valitsemalla sitten **Ominaisuudet**.
@@ -75,19 +65,7 @@ Taulukon muuttaminen **tuontitilaan** on *peruuttamaton* toiminto. Taulukkoa ei 
 
 ## <a name="constraints-on-directquery-and-dual-tables"></a>DirectQuery- ja kaksoistaulukoiden rajoitukset
 
-Kaksoistaulukkoja koskevat samat rajoitukset kuin DirectQuery-taulukkoja. Niitä ovat esimerkiksi rajoitetut M-muunnokset ja laskettujen sarakkeiden rajoitetut DAX-funktiot. Lisätietoja on ohjeaiheessa [DirectQueryn käyttämisen vaikutukset](desktop-directquery-about.md#implications-of-using-directquery).
-
-## <a name="relationship-rules-on-tables-with-different-storage-modes"></a>Yhteyssäännöt eri tallennustyypin tiloilla varustetuille taulukoille
-
-Yhteyksien on noudatettava sääntöjä, jotka perustuvat liittyvien taulukoiden tallennustilan tilaan. Tässä osiossa on esimerkkejä sallituista yhdistelmistä. Jos haluat lisätietoja, katso [Moni-moneen-yhteydet Power BI Desktopissa (esikatselu)](desktop-many-to-many-relationships.md).
-
-Yhden tietolähteen tietojoukoissa seuraavat *yksi moneen* -yhteydet ovat sallittuja:
-
-| *Monta*-puolen taulukko | *1*-puolen taulukko |
-| ------------- |----------------------| 
-| Kaksoistaulukko          | Kaksoistaulukko                 | 
-| Tuo        | Tuonti- tai kaksoistaulukko       | 
-| DirectQuery   | DirectQuery- tai kaksoistaulukko  | 
+Kaksoistaulukkoja koskevat samat toiminnalliset rajoitukset kuin DirectQuery-taulukkoja. Niitä ovat esimerkiksi rajoitetut M-muunnokset ja laskettujen sarakkeiden rajoitetut DAX-funktiot. Lisätietoja on ohjeaiheessa [DirectQueryn käyttämisen vaikutukset](desktop-directquery-about.md#implications-of-using-directquery).
 
 ## <a name="propagation-of-dual"></a>Välitys- tai kaksoistaulukko
 Tutustu seuraavaan yksinkertaiseen malliin, jossa kaikki taulukot ovat yhdestä tuontia ja DirectQuerya tukevasta lähteestä.
@@ -98,14 +76,11 @@ Oletetaan, että kaikki taulukot tässä mallissa ovat DirectQuery-taulukoita. J
 
 ![Tallennustilan tilan varoitusikkuna](media/desktop-storage-mode/storage-mode_05.png)
 
-Dimensiotaulukot (*Asiakas*, *Päivämäärä* ja *Maantiede*) on määritettävä **kaksoistaulukoiksi**, jotta ne noudattavat aiemmin kuvattuja yhteyssääntöjä. Sen sijaan, että nämä taulukot pitäisi määrittää **kaksoistaulukoiksi** etukäteen, voit määrittää ne yhdellä kertaa.
+Dimensiotaulukot (*Asiakas*, *Maantiede* ja *Päivämäärä*) voidaan määrittää arvoon **Kaksoistaulukko** tietojoukon heikkojen suhteiden määrän pienentämiseksi sekä suorituskyvyn parantamiseksi. Heikot suhteet sisältävät yleensä vähintään yhden DirectQuery-taulukon, jossa liittymislogiikkaa ei voida työntää lähdejärjestelmiin. **Kaksoistaulukot** voivat toimia joko DirectQuery- tai Tuonti-taulukkona, mikä auttaa välttämään tämän.
 
 Välityslogiikka on suunniteltu auttamaan useita taulukoita sisältävien mallien käyttämisessä. Oletetaan, että sinulla on malli, joka sisältää 50 taulukkoa. Niistä vain tietyt (tapahtumatyyppiset) faktataulukot on tallennettava välimuistiin. Power BI Desktopin logiikkajärjestelmä laskee dimensiotaulukoiden vähimmäisjoukon, joka on määritettävä **kaksoistaulukoiksi**, joten sinun ei tarvitse tehdä sitä itse.
 
 Välityslogiikka ulottuu vain yhdelle puolelle **yhdestä moneen** -yhteyksissä.
-
-* *Asiakas*-taulukon muuttamista **Tuonti**-taulukoksi – *Kyselyvastaus*-taulukon muuttamisen sijaan – ei ole sallittu, koska sillä on yhteys DirectQuery-tyyppisiin *Myynti*- ja *Kyselyvastaus*-taulukoihin.
-* *Asiakas*-taulukon muuttaminen **kaksoistaulukoksi** – *Kyselyvastaus*-taulukon muuttamisen sijaan – on sallittu. Välityslogiikka määrittää myös *Maantiede*-taulukon **kaksoistaulukoksi**.
 
 ## <a name="storage-mode-usage-example"></a>Tallennustilan tilan käyttöesimerkki
 Jatketaan edellisen osion esimerkin parissa. Oletetaan, että seuraavat tallennustilan tilan ominaisuusasetukset otetaan käyttöön:
@@ -191,4 +166,3 @@ Seuraavissa artikkeleissa on lisätietoja yhdistelmämalleista ja DirectQuerysta
 * [Moni-moneen-yhteydet Power BI Desktopissa (esikatselu)](desktop-many-to-many-relationships.md)
 * [DirectQueryn käyttö Power BI:ssä](desktop-directquery-about.md)
 * [DirectQueryn tukemat tietolähteet Power BI:ssä](desktop-directquery-data-sources.md)
-

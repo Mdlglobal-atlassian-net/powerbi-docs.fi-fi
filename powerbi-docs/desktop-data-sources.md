@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 10/15/2018
+ms.date: 11/13/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: a5a4f6532fe127fe01b699ee9d9e89693fdb369e
-ms.sourcegitcommit: b8461c1876bfe47bf71c87c7820266993f82c0d3
+ms.openlocfilehash: a49b433af32e6c0f03d43333a424864c5463ddd3
+ms.sourcegitcommit: 6a6f552810a596e1000a02c8d144731ede59c0c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49336894"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "51619812"
 ---
 # <a name="data-sources-in-power-bi-desktop"></a>Power BI Desktopin tietolähteet
 Power BI Desktopin avulla voit yhdistää tietoja monista eri lähteistä. Täydellinen luettelo käytettävissä olevista tietolähteistä on tämän sivun alareunassa.
@@ -30,8 +30,6 @@ Valitsemalla **Lisää...** **Yleisimmät**-valikossa saat **Nouda tiedot** -ikk
 
 > [!NOTE]
 > Power BI -tiimi laajentaa jatkuvasti **Power BI Desktopin** ja **Power BI -palvelun** käytettävissä olevia tietolähteitä. Näet näin ollen usein keskeneräisten tietolähteiden varhaisia versioita, joissa on merkintä *beeta* tai *esikatselu*. Tietolähteen, jolla on merkintä *beeta* tai *esikatselu*, tuki ja toiminnallisuus ovat rajoitettua, eikä sitä tulisi käyttää tuotantoympäristössä.
-> 
-> 
 
 ## <a name="data-sources"></a>Tietolähteet
 Kaikki tietotyypit on järjestelty seuraaviin luokkiin:
@@ -80,15 +78,14 @@ Seuraavassa kuvassa näkyy **Tiedosto**-luokan **Nouda tiedot** -ikkuna.
 * Impala
 * Google BigQuery
 * Snowflake
+* BI-liitin
+* Exasol
 * Dremio (beeta)
-* Exasol (beeta)
 * Jethro (beeta)
 * Kyligence Enterprise (beeta)
 
 > [!NOTE]
 > Jotkin tietokannan yhdistimet edellyttävät, että otat ne käyttöön valitsemalla **Tiedosto > Asetukset ja vaihtoehdot > Asetukset** ja valitsemalla **Esikatselutoiminnot** ja ottamalla yhdistin käyttöön. Jos et näe joitakin edellä mainituista yhdistimistä ja haluat käyttää niitä, tarkista **Esikatselutoiminnot**-asetukset. Huomaa myös, että tietolähteen, jolla on merkintä *beeta* tai *esikatselu*, tuki ja toiminnallisuus ovat rajoitettua, eikä sitä tulisi käyttää tuotantoympäristössä.
-> 
-> 
 
 Seuraavassa kuvassa näkyy **Tietokanta**-luokan **Nouda tiedot** -ikkuna.
 
@@ -111,11 +108,11 @@ Seuraavassa kuvassa näkyy **Power BI** -luokan **Nouda tiedot** -ikkuna.
 * Azure Blob -säilö
 * Azure-taulukkosäilö
 * Azure Cosmos DB (beeta)
-* Azure Data Lake Store
+* Azure Data Lake Storage
 * Azure HDInsight (HDFS)
 * Azure HDInsight Spark
 * HDInsight Interactive Query
-* Azure KustoDB (beeta)
+* Azure Data Explorer (beeta)
 
 Seuraavassa kuvassa näkyy **Azure**-luokan **Nouda tiedot** -ikkuna.
 
@@ -131,7 +128,8 @@ Seuraavassa kuvassa näkyy **Azure**-luokan **Nouda tiedot** -ikkuna.
 * Dynamics 365 Business Central (paikallinen)
 * Common Data Service for Apps (beeta)
 * Microsoft Azure Consumption Insights (beeta)
-* Visual Studio Team Services (beeta)
+* Azure DevOps (beeta)
+* Azure DevOps Server (beeta)
 * Salesforce-objektit
 * Salesforce-raportit
 * Google Analytics
@@ -187,8 +185,6 @@ Seuraavassa kuvassa näkyy **Muut**-luokan **Nouda tiedot** -ikkuna.
 
 > [!NOTE]
 > Tällä hetkellä ei ole mahdollista muodostaa yhteyttä mukautettuihin tietolähteisiin, jotka suojattu Azure Active Directorylla.
-> 
-> 
 
 ## <a name="connecting-to-a-data-source"></a>Yhteyden muodostaminen tietolähteeseen
 Jos haluat muodostaa yhteyden tietolähteeseen, valitse tietolähde **Nouda tiedot** -ikkunassa ja valitse **Muodosta yhteys**. Seuraavassa kuvassa **Muut**-tietoyhteysluokasta on valittu **WWW**.

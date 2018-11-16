@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/27/2018
+ms.date: 11/13/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 8239c271bff5dff6dc068b1c547b8ab2d7731da5
-ms.sourcegitcommit: f01a88e583889bd77b712f11da4a379c88a22b76
+ms.openlocfilehash: c4b4114d21d7afc6652d8706235dab4ad0ba0c37
+ms.sourcegitcommit: 6a6f552810a596e1000a02c8d144731ede59c0c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39327725"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "51619768"
 ---
 # <a name="report-view-in-power-bi-desktop"></a>Raporttinäkymä Power BI Desktopissa
 Jos olet työskennellyt Power BI:lla tiedät, miten helppoa on luoda raportteja, jotka sisältävät dynaamisia perspektiivejä ja merkityksellisiä tietoja tietoihisi. Power BI on sisältää myös kehittyneempiä ominaisuuksia Power BI Desktopissa. Power BI Desktopin avulla voit luoda kehittyneitä kyselyitä, koota tietoja useista lähteistä, luoda taulukoiden välisiä yhteyksiä ja paljon muuta.
@@ -27,35 +27,46 @@ Ero näkymien välillä on, että käyttäessäsi Power BI Desktop -versiota voi
 ## <a name="lets-take-a-look"></a>Katsotaanpa!
 Kun lataat tietoja Power BI Desktopiin ensimmäisen kerran, näkyviin tulee **Raporttinäkymä** ja tyhjä pohja.
 
-![](media/desktop-report-view/pbi_reportviewinpbidesigner_reportview.png)
+![Power BI Desktop](media/desktop-report-view/pbi_reportviewinpbidesigner_reportview.png)
 
 Voit vaihdella **Raporttinäkymää**, **Tietonäkymää** ja **Suhde-näkymää** valitsemalla vasemmanpuoleisessa siirtymispalkissa olevan kuvakkeen:
 
-![](media/desktop-report-view/pbi_reportviewinpbidesigner_changeview.png)
+![Raporttinäkymäkuvake](media/desktop-report-view/pbi_reportviewinpbidesigner_changeview.png)
 
 Kun olet lisännyt tietoja, voit lisätä kenttiä uuteen visualisointiin pohjalle.
 
-![](media/desktop-report-view/pbid_reportview_addvis.gif)
+![Lisää visualisointi vetämällä Kentät-ruudusta](media/desktop-report-view/pbid_reportview_addvis.gif)
 
 Voit muuttaa visualisoinnin tyyppiä, voit valita sen **Visualisoinnit**-ryhmästä valintanauhasta tai voit valita hiiren kakkospainikkeella eri tyyppejä **Muuta visualisoinnin tyyppiä** -kuvakkeesta.
 
-![](media/desktop-report-view/pbid_reportview_changevis.gif)
+![Muuta visualisointia valitsemalla uusi](media/desktop-report-view/pbid_reportview_changevis.gif)
 
 > [!TIP]
 > Muista kokeilla eri visualisointityyppejä. On tärkeää, että visualisointisi välittävät tietoja selvästi.
-> 
-> 
 
 Raportissa on ainakin yksi tyhjä sivu, josta aloittaa. Sivut näkyvät navigointiruudussa alustan vasemmalla puolella. Voit lisätä sivulle kaikenlaisia visualisointeja, mutta on tärkeää, ettet tee niitä liikaa. Liian monta visualisointia yhdellä sivulla näyttää levottomalta, ja oikeiden tietojen löytäminen voi olla vaikeaa. Voit lisätä uusia sivuja raporttiin. Napsauta **Uusi sivu** valintanauhasta.
 
-![](media/desktop-report-view/pbidesignerreportviewnewpage.png)
+![Uusi sivu -kuvake](media/desktop-report-view/pbidesignerreportviewnewpage.png)
 
 Voit poistaa sivun napsauttamalla **X** sivun välilehdellä raporttinäkymän alareunassa.
 
-![](media/desktop-report-view/pbi_reportviewinpbidesigner_deletepage.png)
+![Sivun lisääminen raporttiin](media/desktop-report-view/pbi_reportviewinpbidesigner_deletepage.png)
 
 > [!NOTE]
 > Raportteja tai visualisointeja ei voi kiinnittää koontinäyttöön Power BI Desktopista. Sitä varten sinun on suoritettava [Julkaise Power BI Desktopista](desktop-upload-desktop-files.md) Power BI-sivustolle.
+
+## <a name="copy-and-paste-between-reports"></a>Kopioiminen ja liittäminen raporttien välillä
+
+Voit helposti ottaa visualisoinnin yhdestä Power BI Desktop -raportista ja liittää sen toiseen raporttiin. Kopioi raportin visualisointi **CTRL+C**-näppäinyhdistelmällä ja liitä sitten visualisointi toiseen Power BI Desktop -raporttiin käyttämällä **CTRL+V**-näppäinyhdistelmää. Voit valita yhden visualisoinnin kerrallaan tai voit valita sivun kaikki visualisoinnit kopioitaviksi ja sitten liittää ne Power BI Desktop -kohderaporttiin. 
+
+Visualisointien kopiointi- ja liittämismahdollisuudesta on hyötyä henkilöille, jotka luovat ja päivittävät useita raportteja usein. Tiedostojen välillä kopioitaessa asetukset ja muotoilu, jotka on nimenomaan määritetty muotoiluruudussa, jatkavat eteenpäin, kun taas teemaan tai oletusasetuksiin pohjautuvat visuaaliset elementit päivitetään automaattisesti vastaamaan kohderaportin teemaa. Joten kun saat muotoiltua visualisoinnin juuri haluamallasi tavalla, voit kopioida ja liittää kyseisen visualisoinnin uusiin raportteihin ja näin säilyttää muotoilun eteen tehdyn työn.
+
+![Virhe visualisoinnin kopioinnissa/liittämisessä – ei tietokenttä](media/desktop-report-view/report-view_05.png)
+
+Jos mallin kentät ovat erilaisia, visualisoinnissa tulee näkyviin virhe sekä varoitus siitä, mitä kenttiä ei ole olemassa. Virhe on samanlainen kuin silloin, kun poistat kentän mallista, jota visualisointi käyttää. Virheen korjaamiseksi korvaa rikkinäiset kentät haluamillasi kentillä raportissa olevasta mallista, johon liitit visualisoinnin. Jos käytät mukautettua visualisointia, sinun on tuotava myös kyseinen mukautettu visualisointi kohderaporttiin.
+
+
+
 
 ## <a name="hide-report-pages"></a>Raporttisivujen piilottaminen
 
@@ -63,13 +74,13 @@ Kun luot raportin, voit myös piilottaa sivuja raportista. Tämä voi olla hyöd
 
 Raporttisivun piilottaminen on helppoa. Napsautat vain hiiren kakkospainikkeella Raportin sivu -välilehteä ja valitset **Piilota** valikosta, joka tulee näkyviin.
 
-![](media/desktop-report-view/report-view_05.png)
+![Piilota sivu -vaihtoehto](media/desktop-report-view/report-view_05.png)
 
 Ota muutamia seikkoja huomioon, kun piilotat raporttisivua:
 
 * Näet edelleen piilotetun raporttinäkymän **Power BI Desktopissa**, vaikka sivun otsikko näkyy harmaana. Seuraavassa kuvassa sivu 4 on piilotettu.
 
-    ![](media/desktop-report-view/report-view_06.png)
+    ![harmaana näkyvä piilotettu sivu](media/desktop-report-view/report-view_06.png)
 
 * *Et voi* nähdä piilotettua raporttisivua, kun tarkastelet raporttia **Power BI -palvelussa**.
 

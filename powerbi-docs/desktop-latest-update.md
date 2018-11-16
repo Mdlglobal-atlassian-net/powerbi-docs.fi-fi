@@ -7,21 +7,21 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 10/15/2018
+ms.date: 11/13/2018
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: b2e73621fe974da97e3a766fa25110522b36448b
-ms.sourcegitcommit: 02f918a4f27625b6f4e47473193ebc8219db40e2
+ms.openlocfilehash: 3b2d751a174aa87a9c0c134d2579f15b084322a2
+ms.sourcegitcommit: 6a6f552810a596e1000a02c8d144731ede59c0c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51223279"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "51619536"
 ---
-# <a name="whats-new-in-the-latest-power-bi-desktop-update"></a>Mitä uutta viimeisin Power BI Desktop -päivitys sisältää?
+# <a name="whats-new-in-the-latest-power-bi-desktop-update"></a>Mitä uutta viimeisin Power BI Desktop -päivitys sisältää? 
 
-## <a name="october-2018-update-263327240262"></a>Lokakuun 2018 päivitys (2.63.3272.40262)
+## <a name="november-2018-update-2645285461"></a>Marraskuun 2018 päivitys (2.64.5285.461)
 
-Lokakuun päivitykset ovat aavemaisen hyviä, pelottavan hyödyllisiä ja makeampia kuin oranssi karkkiämpäri. 
+Marraskuun päivitykset sisältävät runsaasti uusia ominaisuuksia ja toimintoja. Istahda siis alas muiden tieto- ja analytiikkaintoilijoiden kanssa, laita sipsit kiertämään ja ala herkutella päivityksillämme. 
 
 Voit nyt [ladata Power BI Desktopin uusimman version](https://powerbi.microsoft.com/desktop). Jos käytössäsi on Windows 10, voit hankkia **Power BI Desktopin** Microsoft Storesta. **Power BI Desktopin** kuukausittaiset versiot ovat samat, vaikka versioiden numerointi saattaa poiketa. Lisätietoja on [tässä artikkelissa](desktop-get-the-desktop.md). 
 
@@ -38,52 +38,44 @@ Seuraavat päivitykset olivat uutta **Power BI Desktopissa** tässä kuussa:
 
 ### <a name="reporting"></a>Raportointi
 
-* Hae suodatinkorteista [[video]](https://youtu.be/cT3L2VzgBRU?t=56)  [[artikkeli]](power-bi-reports-filters-and-highlighting.md)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/%23search) 
-* Muokkausominaisuuksien helppokäyttötoimintojen parannuksia [[video]](https://youtu.be/cT3L2VzgBRU?t=118)  [[artikkeli]](desktop-accessibility.md#arranging-items-in-field-buckets)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/%23accessibility)
-* ArcGIS Mapin suorituskyvyn parannuksia [[video]](https://youtu.be/cT3L2VzgBRU?t=333)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/%23esri)
+* Matriisin riviotsikoiden laajentaminen ja kutistaminen  [[video]](https://youtu.be/1xsXXoyTxfk?t=16)  [[artikkeli]](power-bi-reports-filters-and-highlighting.md)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/%23expandCollapse) 
+* Kopioiminen ja liittäminen työpöytätiedostojen välillä [[video]](https://youtu.be/1xsXXoyTxfk?t=199)  [[artikkeli]](desktop-report-view.md#copy-and-paste-between-reports)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/%23copyPaste)
+* Päivitetty suodatuskokemus (esikatselu) [[video]](https://youtu.be/1xsXXoyTxfk?t=410)   [[artikkeli]](power-bi-reports-filters-and-highlighting.md)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/%23filterPane)
+* Raportin helppokäyttötoimintojen parannuksia [[video]](https://youtu.be/1xsXXoyTxfk?t=1036)  [[artikkeli]](desktop-accessibility.md)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/%23reportAccessibility)
+
+### <a name="analytics"></a>Analysointi
+
+* Värikylläisyys visualisoinneissa on päivitetty käyttämään ehdollista muotoilua [[video]](https://youtu.be/1xsXXoyTxfk?t=1224)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/%23conditionalFormatting) 
+* Jatkokysymykset Q&A Explorerissa [[video]](https://youtu.be/1xsXXoyTxfk?t=1429)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/%23relatedQuestions) 
 
 
 ### <a name="modeling"></a>Mallintaminen
 
-* DAX Editorin parannuksia [[video]](https://youtu.be/GO1dhDJhSDY)  [[artikkeli]](desktop-formula-editor.md)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/%23daxEditor) 
-
-### <a name="analytics"></a>Analysointi
-
-* Yhdistelmämallit ja koosteiden tuki Power BI -palvelussa (esikatselu) [[video]](https://youtu.be/8E6UokaDtc0)  [[artikkeli – koosteet]](desktop-aggregations.md) [[artikkeli – yhdistelmämallit]](desktop-composite-models.md) [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/%23compositeModels) 
-* Selitä lisäys lisäämättömille mittayksiköille [[video]](https://youtu.be/8E6UokaDtc0?t=107)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/%23Insights) 
+* Uusi mallintamisnäkymä (esikatselu) [[video]](https://youtu.be/1xsXXoyTxfk?t=1642)  [[artikkeli]](desktop-modeling-view.md)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/%23modellingView) 
+* Yhdistelmämallit nyt yleisesti saatavilla [[video]](https://youtu.be/1xsXXoyTxfk?t=1941)  [[artikkeli]](desktop-composite-models.md)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/%23compositeModels) 
+* Mallintamisen helppokäyttötoimintojen parannuksia [[video]](https://youtu.be/1xsXXoyTxfk?t=2023)  [[artikkeli]](desktop-accessibility.md)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/%23modellingAccessibility) 
+* Uudet DAX-funktiot [[video]](https://youtu.be/1xsXXoyTxfk?t=2066)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/%23dax) 
 
 ### <a name="custom-visuals"></a>Mukautetut visualisoinnit
 
-* Viisi uutta mukautettua visualisointia  [[video]](https://youtu.be/ZfJSSG17SEY)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/%23customVisuals) 
+* Viisi uutta mukautettua visualisointia  [[video]](https://youtu.be/1xsXXoyTxfk?t=2108)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/%23customVisuals) 
 
 ### <a name="data-connectivity"></a>Tietoyhteydet
 
-* Web by Example -yhdistin nyt yleisesti saatavilla [[video]](https://youtu.be/MhrhIXNtelw)  [[artikkeli]](desktop-connect-to-web-by-example.md)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/%23webByExample) 
-* SAP BW -yhdistimen toteutus v2 nyt yleisesti saatavilla  [[video]](https://youtu.be/MhrhIXNtelw?t=133)   [[artikkeli]](desktop-sap-bw-connector.md)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/%23sapBW) 
-* SAP BW -viestipalvelimen yhdistin nyt yleisesti saatavilla  [[video]](https://youtu.be/MhrhIXNtelw?t=159)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/%23sapBWmessageServer) 
-* Vertica-yhdistin nyt yleisesti saatavilla   [[video]](https://youtu.be/MhrhIXNtelw?t=175)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/%23vertica) 
-* Dynamics NAV- ja Dynamics 365 Business Central -yhdistimet nyt yleisesti saatavilla   [[video]](https://youtu.be/MhrhIXNtelw?t=197)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/%23dynamics) 
-* Uusi paikallinen Dynamics 365 Business Central -yhdistin   [[video]](https://youtu.be/MhrhIXNtelw?t=219)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/%23dynamicsOnPrem) 
-
-### <a name="data-preparation"></a>Tietojen valmistelu
-* Tietojen profilointi Power Query -editorissa (esikatselu) [[video]](https://youtu.be/XNNvXCvlDlc)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/%23dataProfiling) 
-* Yhdistä kyselyt -toiminnon sumea vastaavuus (esikatselu) [[video]](https://youtu.be/XNNvXCvlDlc?t=261)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/%23fuzzyMatching) 
-
-### <a name="other-areas"></a>Muut alueet
-* Raporttien vientiasetusten hallinta [[video]](https://youtu.be/agjKCFQ1NBQ?t=16)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/%23exportControl) 
-* Siirtokerroksen suojausasetukset  [[video]](https://youtu.be/agjKCFQ1NBQ?t=208)  [[artikkeli]](service-admin-power-bi-security.md#enforcing-tls-version-usage)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/%23tls) 
+* Azure DevOps Server -liitin [[video]](https://youtu.be/1xsXXoyTxfk?t=2641)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/%23devOps) 
+* PDF-liittimen tuki Aloitussivu- ja Päätössivu-parametreille  [[video]](https://youtu.be/1xsXXoyTxfk?t=2667)   [[artikkeli]](desktop-connect-pdf.md)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/%23pdf) 
+* Parannettu Azure Consumption Insights -yhdistin  [[video]](https://youtu.be/1xsXXoyTxfk?t=2704)  [[artikkeli]](desktop-connect-azure-consumption-insights.md)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/%23consumptionInsights) 
 
 
 > [!NOTE]
 > Voit myös [tutustua kaikkiin Power BI Desktopille saatavilla oleviin tietolähteisiin](desktop-data-sources.md). Luettelo kasvaa jatkuvasti, joten se kannattaa tarkistaa usein.
 
-Haluatko lisätietoja näistä päivityksistä? Tutustu [blogikirjoitukseen](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary), josta saat tarkempia tietoja kustakin uudesta ominaisuudesta (tämä on sama blogikirjoitus, johon viitataan yllä olevassa luettelossa).
+Haluatko lisätietoja näistä päivityksistä? Tutustu [blogikirjoitukseen](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary), josta saat tarkempia tietoja kustakin uudesta ominaisuudesta (tämä on sama blogikirjoitus, johon viitataan yllä olevassa luettelossa).
 
 
 Seuraavassa videokanavassa esitellään jokainen näistä päivityksistä. Näet videot myös blogikirjoituksen kautta.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/cT3L2VzgBRU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/1xsXXoyTxfk?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 > [!NOTE]
 > Sinua saattavat myös kiinnostaa [Power BI -palvelun uudet ominaisuudet](service-whats-new.md). Tutustu myös [Power BI -mobiilisovellusten uutuuksiin](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).

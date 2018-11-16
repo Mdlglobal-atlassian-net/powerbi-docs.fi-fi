@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 10/17/2018
+ms.date: 11/13/2018
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 3e94dc516f41d764394828309ba4b612083d4583
-ms.sourcegitcommit: fbb27fb40d753b5999a95b39903070766f7293be
+ms.openlocfilehash: e88e60bc1745a08ea53c7336f6f1fb9e4cda1ec8
+ms.sourcegitcommit: 6a6f552810a596e1000a02c8d144731ede59c0c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49359719"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "51619720"
 ---
 # <a name="aggregations-in-power-bi-desktop-preview"></a>Koosteet Power BI Desktopissa (esikatselu)
 
@@ -25,15 +25,15 @@ ms.locfileid: "49359719"
 
 Alla luetellaan **koosteiden** käytön etuja:
 
-* **Kyselyn suorituskyky suurissa tietojoukoissa**: Kun käyttäjät käsittelevät visualisointeja Power BI -raporteissa, DAX-kyselyt lähetetään tietojoukkoon. Tehosta kyselyn nopeutta tallentamalla tietoja välimuistiin koostetasolla käyttämällä murto-osa yksityiskohtaisella tasolla tarvittavista resursseista. Avaa massadataa tavalla, joka ei muutoin olisi mahdollista.
+* **Kyselyn suorituskyky massadatassa**: Kun käyttäjät käsittelevät visualisointeja Power BI -raporteissa, DAX-kyselyt lähetetään tietojoukkoon. Tehosta kyselyn nopeutta tallentamalla tietoja välimuistiin koostetasolla käyttämällä murto-osa yksityiskohtaisella tasolla tarvittavista resursseista. Avaa massadataa tavalla, joka olisi muutoin mahdotonta.
 * **Tietojen päivittämisen optimointi**: Pienennä välimuistin kokoa ja lyhennä päivitysaikoja tallentamalla tietoja välimuistiin koostetasolla. Tuo tietoja käyttäjien käyttöön entistä nopeammin.
 * **Tasapainoiset arkkitehtuurit**: Salli Power BI:n välimuistin käsitellä koostettuja kyselyjä, minkä se tekee tehokkaasti. Rajoita tietolähteeseen DirectQuery-tilassa lähetettyjä kyselyjä, mikä auttaa pysymään samanaikaisuuden rajoissa. Hyväksytyt kyselyt yleensä suodatetaan, tapahtumatason kyselyt, joita tietovarastot ja massadatajärjestelmät yleensä käsittelevät hyvin.
 
 ### <a name="table-level-storage"></a>Taulukkotason tallennustila
-Taulukkotason tallennustilaa käytetään yleensä koostamisominaisuuden yhteydessä. Lisätietoja on [Power BI Desktopin tallennustilaa (esikatselu)](desktop-storage-mode.md) koskevassa artikkelissa.
+Taulukkotason tallennustilaa käytetään yleensä koostamisominaisuuden yhteydessä. Lisätietoja on [Power BI Desktopin tallennustilaa](desktop-storage-mode.md) koskevassa artikkelissa.
 
 ### <a name="data-source-types"></a>Tietolähdetyypit
-Koosteita käytetään dimensiomalleja edustavien tietolähteiden, kuten tietovarastojen ja tietovaraston osajoukkojen, sekä Hadoop-pohjaisten massadatalähteiden yhteydessä. Tässä artikkelissa kuvataan kunkin tietolähdetyypin yleiset mallintamisen erot Power BI:ssä.
+Koosteita käytetään dimensiomalleja edustavien tietolähteiden, kuten tietovarastojen, tietovaraston osajoukkojen sekä Hadoop-pohjaisten massadatalähteiden yhteydessä. Tässä artikkelissa kuvataan kunkin tietolähdetyypin yleiset mallintamisen erot Power BI:ssä.
 
 Kaikki Power BI:n tuonnin lähteet ja (muut kuin moniulotteiset) DirectQuery-lähteet toimivat koosteiden kanssa.
 
@@ -57,7 +57,7 @@ Tarkastele seuraavaa mallia, joka on yhdestä tietolähteestä. Oletetaan, että
 
 Luodaan sen sijaan **Myyntikooste**-taulukko koostetaulukkona. Sen rakeisuus on suurempi kuin **Myynti**-taulukon, joten se sisältää paljon vähemmän rivejä. Rivien määrän on oltava sama kuin **Myyntimäärä**-summan, ja rivit on jaettu **Asiakasavain**-, **Päivämääräavain**- ja **Tuotteen aliluokka-avain** -ryhmiin. Miljardien sijaan rivejä saattaa olla miljoonia, jolloin hallinta on paljon helpompaa.
 
-Oletetaan, että seuraavia dimensiotaulukoita käytetään yleisimmin suuren liiketoiminta-arvon kyselyissä. Kyseiset taulukot voivat suodattaa **Myyntikooste**-taulukon käyttämällä *yksi moneen* (tai *monta yhteen*) -yhteyksiä. Muita yhteystyyppejä, kuten *monta moneen* tai *useita lähteitä*, ei käytetä koosteissa.
+Oletetaan, että seuraavia dimensiotaulukoita käytetään yleisimmin suuren liiketoiminta-arvon kyselyissä. Kyseiset taulukot voivat suodattaa **Myyntikooste**-taulukon käyttämällä *yksi moneen* (tai *monta yhteen*) -yhteyksiä.
 
 * Maantiede
 * Asiakas
@@ -88,7 +88,23 @@ Kun tallennustilaksi määritetään **Kaksoistaulukot**, aiheeseen liittyvien d
 
 Lisätietoja **Kaksoistaulukko**-tallennustilasta on [tallennustilaa](desktop-storage-mode.md) koskevassa artikkelissa.
 
-> Huomautus: **Myyntikooste**-taulukko on piilotettu. Koostetaulukot on piilotettava tietojoukon käyttäjiltä. Käyttäjät ja kyselyt viittaavat tietotaulukkoon eivätkä koostetaulukkoon. Heidän ei tarvitse edes tietää koostetaulukon olemassaolosta.
+### <a name="strong-vs-weak-relationships"></a>Vahvat vs. heikot suhteet
+Koosteiden osumat suhteiden perusteella edellyttävät vahvoja suhteita.
+
+Vahvat suhteet sisältävät seuraavia yhdistelmiä, joissa molemmat taulukot ovat *yhdestä lähteestä*.
+
+| *Monta-puolten taulukko | *1*-puolen taulukko |
+| ------------- |----------------------| 
+| Kaksoistaulukko          | Kaksoistaulukko                 | 
+| Tuo        | Tuonti- tai kaksoistaulukko       | 
+| DirectQuery   | DirectQuery- tai kaksoistaulukko  | 
+
+Ainoa tapaus, jossa *ristilähde*suhdetta pidetään vahvana, on silloin, jos molemmat taulukot ovat tuontitaulukoita. Monta moneen -suhteita pidetään aina heikkoina.
+
+Tietoa *ristilähde*koosteiden osumista, jotka eivät ole riipu suhteista, on alla olevassa Ryhmittelyperuste-sarakkeisiin perustuvista koosteista kertovassa osassa.
+
+### <a name="aggregation-table-is-hidden"></a>Koostetaulukko on piilotettu
+**Myyntikooste**-taulukko on piilotettu. Koostetaulukot on aina piilotettava tietojoukon käyttäjiltä. Käyttäjät ja kyselyt viittaavat tietotaulukkoon eivätkä koostetaulukkoon. Heidän ei tarvitse edes tietää koostetaulukon olemassaolosta.
 
 ### <a name="manage-aggregations-dialog"></a>Koosteiden hallinta -valintaikkuna
 Seuraavaksi määritellään koosteet. Valitse **Myyntikooste**-taulukon **Koosteiden hallinta** -pikavalikko napsauttamalla taulukkoa hiiren kakkospainikkeella.
@@ -277,4 +293,3 @@ DirectQuery-artikkeleita:
 
 * [DirectQueryn käyttäminen Power BI:ssä](desktop-directquery-about.md)
 * [DirectQueryn tukemat tietolähteet Power BI:ssä](desktop-directquery-data-sources.md)
-

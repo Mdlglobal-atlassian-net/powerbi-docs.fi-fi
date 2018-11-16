@@ -1,5 +1,5 @@
 ---
-title: Yhdistelmämallien käyttäminen Power BI Desktopissa (esikatselu)
+title: Yhdistelmämallien käyttäminen Power BI Desktopissa
 description: Tietomallien luominen useilla tietoyhteyksillä ja monta moneen -yhteyksillä Power BI Desktopissa
 author: davidiseminger
 manager: kfile
@@ -7,17 +7,17 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 10/02/2018
+ms.date: 11/12/2018
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 47c99e40b1665b98c33d16b685e359c10277a560
-ms.sourcegitcommit: 1a79e48ac820c28c5d0fd05399f49ed22fc74ed7
+ms.openlocfilehash: b7a8323557f769fa2a05d504de2540bc505e7a54
+ms.sourcegitcommit: 6a6f552810a596e1000a02c8d144731ede59c0c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/19/2018
-ms.locfileid: "49435392"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "51619697"
 ---
-# <a name="use-composite-models-in-power-bi-desktop-preview"></a>Yhdistelmämallien käyttäminen Power BI Desktopissa (esikatselu)
+# <a name="use-composite-models-in-power-bi-desktop"></a>Yhdistelmämallien käyttäminen Power BI Desktopissa
 
 Kun aiemmin Power BI Desktopissa käytit DirectQuerya raportissa, muita tietoyhteyksiä&mdash;DirectQuery tai tuonti&mdash; ei sallittu tälle raportille. Yhdistelmämalleissa tämä rajoitus on poistettu. Raporttiin voi saumattomasti sisällyttää tietoyhteyksiä useasta DirectQuerysta tai tietojen tuontiyhteydestä valitsemanasi yhdistelmänä.
 
@@ -30,16 +30,6 @@ Power BI Desktopin yhdistelmämallit koostuvat kolmesta toisiinsa liittyvästä 
 * **Moni-moneen-yhteydet**: *Yhdistelmämallien* avulla voit määrittää taulukoiden välille *moni-moneen-yhteyksiä*. Tämä lähestymistapa poistaa vaatimuksen siitä, että taulukoiden arvojen pitäisi olla yksilöllisiä. Se myös poistaa edelliset ratkaisut, kuten uusien taulukoiden lisäämisen vain yhteyksien muodostamiseksi. Jos haluat lisätietoja, katso [Moni-moneen-yhteydet Power BI Desktopissa (esikatselu)](desktop-many-to-many-relationships.md).
 
 * **Tallennustilan tila**: Voit nyt määrittää, mitkä visualisoinnit edellyttävät kyselyä taustatietolähteisiin. Visualisoinnit, jotka eivät edellytä kyselyä, tuodaan, vaikka ne perustuisivat DirectQueryyn. Tämä ominaisuus parantaa suorituskykyä ja vähentää taustakuormitusta. Aiemmin jopa osittajien kaltaiset yksinkertaiset visualisoinnit käynnistivät kyselyjä taustalähteisiin. Lisätietoja löytyy artikkelista [Tallennustilan tila Power BI Desktopissa (esikatselu)](desktop-storage-mode.md).
-
-## <a name="enable-the-composite-models-preview-feature"></a>Yhdistelmämallien esikatselutoiminnon käyttöönotto
-
-Yhdistelmämallit-ominaisuus on esikatseluvaiheessa. Sen täytyy olla käytössä Power BI Desktopissa. Ota yhdistelmämallit käyttöön valitsemalla **Tiedosto** >  **Asetukset ja vaihtoehdot** > **Asetukset** > **Esikatseluominaisuudet**. Valitse sitten **Yhdistelmämallit**-valintaruutu. 
-
-![Esikatseluominaisuudet-ruutu](media/desktop-composite-models/composite-models_02.png)
-
-Jos haluat ottaa ominaisuuden käyttöön, sinun tulee käynnistää Power BI Desktop uudelleen.
-
-![Ominaisuus edellyttää uudelleenkäynnistämistä -ikkuna](media/desktop-composite-models/composite-models_03.png)
 
 
 ## <a name="use-composite-models"></a>Yhdistelmämallien käyttäminen

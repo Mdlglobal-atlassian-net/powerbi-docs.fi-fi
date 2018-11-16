@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/27/2018
+ms.date: 11/13/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 05a84d34bf82be99eb52fccfb6318142f7d47de1
-ms.sourcegitcommit: f01a88e583889bd77b712f11da4a379c88a22b76
+ms.openlocfilehash: c770423b81c6d5cd4135539d8d44c3cc46f8b6fe
+ms.sourcegitcommit: 6a6f552810a596e1000a02c8d144731ede59c0c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39329910"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "51619605"
 ---
 # <a name="connect-to-azure-consumption-insights-in-power-bi-desktop-beta"></a>Azure Consumption Insightsiin yhdistäminen Power BI Desktopissa (beeta)
 **Azure Consumption Insights** -liittimen avulla voit yhdistää **Power BI Desktopin** Azureen ja saada tarkkoja tietoja organisaatiosi Azure-palveluiden käytöstä. Voit myös luoda mittayksiköitä, mukautettuja sarakkeita ja visualisointeja ja raportoida ja jakaa tietoja organisaatiosi Azuren käytöstä. Tämä **Azure Consumption and Insights** -liitin on beetaversio, johon saattaa tulla muutoksia.
@@ -49,9 +49,20 @@ Anna seuraavaksi *tiliavaimesi* yhteyden muodostamista varten.
   
   ![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_09.png)
 
-Kun annat *tiliavaimesi* ja valitset **Yhdistä**, näyttöön avautuu **selainikkuna**, jossa on neljä käytettävissä olevaa taulukkoa: *Summary* (Yhteenveto), *Usage* (Käyttö), *PriceSheet* (Hinnasto) ja *MarketPlace*. Voit avata esikatselun valitsemalla minkä tahansa taulukon vieressä olevan valintaruudun. Voit valita yhden tai useamman taulukon valitsemalla taulukon nimen vieressä olevan ruudun ja sen jälkeen **Lataa**.
+Kun annat *tiliavaimesi* ja valitset **Yhdistä**, näyttöön avautuu **selainikkuna**, jossa on yhdeksän käytettävissä olevaa taulukkoa: 
+* **Budgets**: näyttää budjettitiedot todellisten kustannusten tarkastelemiseksi tai olemassa oleviin budjettitavoitteisiin vertailua varten. 
+* **MarketPlace**: näyttää käyttöön perustuvat Azure Marketplace -maksut.
+* **PriceSheets**: näyttää käytettävissä olevat hinnat mittarin mukaan rekisteröintiä varten.
+* **RICharges**: näyttää näennäiskoneen varattuihin esiintymiin liittyvät maksut viimeisten 24 kuukauden ajalta.
+* **RIRecommendations_Single**: näyttää näennäiskoneen varatun esiintymän ostosuositukset käyttötrendien perusteella yhdessä tilauksessa viimeisten 7, 30 tai 60 päivän aikana.
+* **RIRecommendations_Shared**: näyttää näennäiskoneen varatun esiintymän ostosuositukset käyttötrendien perusteella kaikissa tilauksissa viimeisten 7, 30 tai 60 päivän aikana.
+* **RIUsage**: näyttää näennäiskoneen varattujen esiintymien kulutustiedot viimeisen kuukauden aikana.
+* **Summaries**: näyttää kuukausittaisen yhteenvedon saldoista, uusista ostoista, Microsoft Azure Marketplacen palvelumaksuista, muutoksista ja ylitysmaksuista.
+* **UsageDetails**: näyttää erittelyn kulutetuista määristä ja arvioidut maksut rekisteröintiä varten.
 
-![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_04.png)
+Voit avata esikatselun valitsemalla minkä tahansa taulukon vieressä olevan valintaruudun. Voit valita yhden tai useamman taulukon valitsemalla taulukon nimen vieressä olevan ruudun ja sen jälkeen **Lataa**.
+
+![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_04b.png)
 
 > [!NOTE]
 > *Summary* (Yhteenveto)- ja *PriceSheet* (Hinnasto) -taulukot ovat käytettävissä vain rekisteröintitason ohjelmointirajapinta-avaimelle. Lisäksi näiden taulukoiden tiedot sisältävät oletusarvoisesti kuluvan kuukauden käyttöä koskevat *Usage* (Käyttö) -tiedot ja *PriceSheet* (Hinnasto) -tiedot. *Summary* (Yhteenveto)- ja *MarketPlace*-taulukot eivät rajoitu kuluvaan kuukauteen.

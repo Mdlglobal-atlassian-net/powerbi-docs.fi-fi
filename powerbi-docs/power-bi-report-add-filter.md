@@ -1,25 +1,27 @@
 ---
-title: Visualisointi-, sivu-, porautumis- tai raporttisuodattimen lisääminen Power BI -raporttiin
-description: Sivu-, visualisointi-, raportti- tai porautumissuodattimen lisääminen Power BI -raporttiin
+title: Suodattimen lisääminen Power BI - raporttiin
+description: Sivu-, visualisointi- tai raporttisuodattimen lisääminen raporttiin Power BI:ssä
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 09/28/2018
+ms.date: 11/08/2018
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: c70e29bf7dcd5a307cbcb4762595716595dfa523
-ms.sourcegitcommit: d20f74d5300197a0930eeb7db586c6a90403aabc
+ms.openlocfilehash: c50afced257df1878a0a695a37d9401d9eda01b7
+ms.sourcegitcommit: ea77827127e0781f1d6877c0a3078aec7eb6694a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "50973277"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51611148"
 ---
 # <a name="add-a-filter-to-a-power-bi-service-report-in-editing-view"></a>Suodattimen lisääminen Power BI -palvelun raporttiin (muokkausnäkymässä)
 
 Tässä artikkelissa kerrotaan, miten voit lisätä sivu-, visualisointi-, raportti- tai porautumissuodattimen Power BI -raporttiin. Artikkelin esimerkit koskevat Power BI -palvelua. Vaiheet ovat lähes samanlaiset Power BI Desktopissa.
+
+**Tiesitkö?** Power BI:ssä on uusi suodatuskokemus, joka on tällä hetkellä esikatseluvaiheessa. Lue lisää [uudesta suodatuskokemuksesta Power BI -raporteissa](power-bi-report-filter-preview.md).
 
 ## <a name="filters-in-editing-view-or-reading-view"></a>Lukunäkymän tai muokkausnäkymän suodattimet
 Voit käsitellä raportteja kahdessa eri näkymässä: lukunäkymässä ja muokkausnäkymässä. Käytettävissä olevat suodatusominaisuudet vaihtelevat näkymän mukaan. [Lue lisää Power BI -raporttien suodattimista ja korostamisesta](power-bi-reports-filters-and-highlighting.md).
@@ -109,7 +111,7 @@ Power BI -palvelun ja Power BI Desktopin porautumisen avulla voit luoda *kohdera
 ### <a name="create-a-drillthrough-filter"></a>Porautumissuodattimen luominen
 Avaa Asiakkaan tuottavuuden malli muokkausnäkymässä. Oletetaan, että haluat luoda sivun, jolla keskitytään Johtaja-liiketoiminta-alueisiin.   
 
-1. Lisää raporttiin uusi sivu ja anna sen nimeksi **Tiimijohtaja**. Tämä on porautumisen *kohdesivu*.
+1. Lisää raporttiin uusi sivu ja anna sen nimeksi **Tiimijohtaja**. Tämä sivu on porautumisen *kohde*.
 2. Lisää visualisointeja, jotka seuraavat tiimijohtajien liiketoiminta-alueiden avaintietoja.    
 3. Lisää porautumissuodattimiin myös **Johtaja > Johtajan nimi**.    
    
@@ -144,7 +146,7 @@ Katsotaan, miten porautumissuodatin toimii.
 
 - Joissakin tilanteissa visuaalisen tason suodatin ja sivutason suodatin voivat palauttaa eri tuloksia.  Esimerkiksi, kun lisäät visuaalisen tason suodattimen, Power BI suodattaa kootut tulokset.  Oletuskooste on Summa, mutta voit [muuttaa koostetyyppiä](service-aggregates.md).  
 
-    Kun lisäät sivutason suodattimen, Power BI suodattaa ilman koostamista.  Tämä johtuu siitä, että sivulla voi olla useita visualisointeja, joista jokainen voi hyödyntää eri koostetyyppiä.  Suodatinta käytetään siis jokaisella tietorivillä.
+    Kun lisäät sivutason suodattimen, Power BI suodattaa ilman koostamista.  Koostamista ei tehdä, koska sivulla voi olla useita visualisointeja, joista jokainen voi hyödyntää eri koostetyyppiä.  Suodatinta käytetään siis jokaisella tietorivillä.
 
 - Jos Kentät-ruutu ei ole näkyvissä, varmista, että valittuna on raportin [muokkausnäkymä](service-interact-with-a-report-in-editing-view.md).    
 - Jos olet tehnyt paljon muutoksia suodattimiin ja haluat palata raportin tekijän oletusasetuksiin, valitse **Palauta oletukset** ylävalikosta.

@@ -61,14 +61,14 @@ Vastaisuudessa voit käynnistää *yhdyskäytävän Windows-palvelun* uudelleen 
 
 ![](./media/gateway-onprem-accounts-ports-more/gw-onprem_02.png)
 
-## <a name="support-for-tls-1112"></a>TLS 1.1:n ja TLS 1.2:n tuki
+## <a name="support-for-tls-12"></a>TLS 1.2:n tuki
 
-Paikallinen yhdyskäytävä on oletusarvoisesti yhteydessä **Power BI -palveluun** Transport Layer Security (TLS) 1.1:llä tai 1.2:lla. Vanhemmat paikallisen tietoyhdyskäytävän versiot käyttävät oletusarvoisesti TLS 1.0:aa. TLS 1.0:n tuki on päättynyt 15.3.2018. Myös yhdyskäytävän mahdollisuus viestiä **Power BI -palvelun** kanssa käyttämällä TLS 1.0:aa on poistettu käytöstä. Sinun täytyy päivittää paikallisen tietoyhdyskäytävän asennukset, jotta yhdyskäytäväsi toimivat jatkossakin.
+Paikallinen yhdyskäytävä on oletusarvoisesti yhteydessä Power BI -palveluun Transport Layer Security (TLS) 1.2:lla. Jotta voit varmistaa, että yhdyskäytäväliikenne käyttää TLS 1.2:ta, sinun pitää ehkä lisätä seuraavat rekisteriavaimet koneeseen, joka suorittaa yhdyskäytäväpalvelua, tai muokata niitä siinä:
 
-On tärkeää huomata, että paikallinen tietoyhdyskäytävä tukee yhä TLS 1.0:aa 1.11. saakka ja yhdyskäytävä käyttää sitä varamekanismina. Voit varmistaa, että yhdyskäytäväliikenne käyttää TLS 1.1:tä tai 1.2:ta (ja estää TSL 1.0:n käytön yhdyskäytävässäsi) lisäämällä seuraavat rekisteriavaimet koneeseen, joka suorittaa yhdyskäytäväpalvelua, tai muokkaamalla niitä siinä:
-
-        [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v4.0.30319]"SchUseStrongCrypto"=dword:00000001
-        [HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319]"SchUseStrongCrypto"=dword:00000001
+```
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v4.0.30319]"SchUseStrongCrypto"=dword:00000001
+[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319]"SchUseStrongCrypto"=dword:00000001
+```
 
 > [!NOTE]
 > Näiden rekisteriavaimien lisääminen tai muokkaaminen ottaa muutoksen käyttöön kaikissa .NET-sovelluksissa. Jos haluat lisätietoja rekisterimuutoksista, jotka vaikuttavat muiden sovellusten TLS:ään, lue ohjeartikkeli [Transport Layer Securityn (TLS) rekisteriasetukset](https://docs.microsoft.com/windows-server/security/tls/tls-registry-settings).
