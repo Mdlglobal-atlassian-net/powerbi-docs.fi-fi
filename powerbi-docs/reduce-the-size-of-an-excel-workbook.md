@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 07/27/2018
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 12ff54b1aa44edaead98b1fab6942acbd76216c7
-ms.sourcegitcommit: fbb7924603f8915d07b5e6fc8f4d0c7f70c1a1e1
+ms.openlocfilehash: 5d21dff56620e4b2eb05ed3bbf123ff1d1805075
+ms.sourcegitcommit: a739a99e1006834a0f56e387c0bd9d945fb8a76b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39329427"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51679337"
 ---
 # <a name="reduce-the-size-of-an-excel-workbook-to-view-it-in-power-bi"></a>Excel-työkirjan koon pienentäminen Power BI:ssä tarkastelua varten
 Voit ladata minkä tahansa, alle 1 Gt:n kokoisen Excel-työkirjan Power BI:hin. Excel-työkirjassa voi olla kaksi osaa: tietomalli ja raportin muut osat eli laskentataulukon ydinsisältö. Jos raportti täyttää seuraavat kokorajoitukset, voit tallentaa sen **OneDrive for Businessiin**. muodostaa siihen yhteyden Power BI:stä ja tarkastella sitä Excel Onlinessa:
@@ -28,7 +28,7 @@ Seuraavassa on joitakin elementtejä, jotka voivat tehdä laskentataulukon ydins
 
 * Kuvat.
 * Sävytetyt solut. [Poista solujen sävytysmuoto](https://support.office.com/article/Add-or-change-the-background-color-of-cells-ac10f131-b847-428f-b656-d65375fb815e).
-* Värilliset laskentataulukot. [Poista taulukon tausta](https://support.office.com/en-US/article/add-or-remove-a-sheet-background-3577a762-8450-4556-96a2-cc265abc00a8).
+* Värilliset laskentataulukot. [Poista taulukon tausta](https://support.office.com/article/add-or-remove-a-sheet-background-3577a762-8450-4556-96a2-cc265abc00a8).
 * Tekstiruudut.
 * ClipArt-kuvat.
 
@@ -55,7 +55,7 @@ Kun tuot tiedot Exceliin, noudata seuraavia vihjeitä:
 * **Excel-tiedot-välilehdestä**: älä valitse **Taulukko**-kohtaa **Tuo tiedot** -ruudussa.
 
 ## <a name="workbook-size-optimizer"></a>Työkirjan koon optimointityökalu
-Jos työkirja sisältää tietomallin, suorittamalla työkirjan koon optimointityökalun voit pienentää työkirjan kokoa. [Lataa Työkirjan koon optimointityökalu](https://www.microsoft.com/en-us/download/details.aspx?id=38793).
+Jos työkirja sisältää tietomallin, suorittamalla työkirjan koon optimointityökalun voit pienentää työkirjan kokoa. [Lataa Työkirjan koon optimointityökalu](https://www.microsoft.com/download/details.aspx?id=38793).
 
 ## <a name="related-info"></a>Aiheeseen liittyvät tiedot
 [Luo muistia säästävä tietomalli](https://support.office.com/article/Create-a-memory-efficient-Data-Model-using-Excel-2013-and-the-Power-Pivot-add-in-951c73a9-21c4-46ab-9f5e-14a2833b6a70)

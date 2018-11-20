@@ -1,21 +1,21 @@
 ---
 title: Q&A:n lingvistisen rakenteen muokkaaminen ja muotoilujen lisääminen - Power BI
 description: Power BI Q&A:n käyttämän lingvistisen rakenteen muokkaaminen Power BI Desktopin avulla.
-author: willthom
+author: maggiesMSFT
 manager: kfile
-ms.reviewer: mihart
+ms.reviewer: willthom
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 10/17/2018
-ms.author: mihart
+ms.author: maggies
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 5d57ab76b97ea6b810169710553597e2e8a5d55f
-ms.sourcegitcommit: 1a79e48ac820c28c5d0fd05399f49ed22fc74ed7
+ms.openlocfilehash: ea11394c8b559b38f3c01fe339afac4ce3b0d863
+ms.sourcegitcommit: 1e4fee6d1f4b7803ea285eb879c8d5a4f7ea8b85
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/19/2018
-ms.locfileid: "49435415"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51717949"
 ---
 # <a name="edit-qa-linguistic-schema-and-add-phrasings-in-power-bi-desktop"></a>Q&A:n lingvistisen rakenteen muokkaaminen ja muotoilujen lisääminen Power BI Desktopissa 
 Yleisien lauseiden ja luonnollisen kielen käyttäminen tiedoista esitettävissä kysymyksissä on tehokasta. Vielä tehokkaampaa on, kun tiedot vastaavat, minkä Power BI:n Q&A-toiminto mahdollistaa. Kun esität Power BI Q&A:lle kysymyksen, se pyrkii parhaansa mukaan vastaamaan oikein. 

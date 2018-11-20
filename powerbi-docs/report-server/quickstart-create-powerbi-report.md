@@ -9,12 +9,12 @@ ms.component: powerbi-report-server
 ms.topic: conceptual
 ms.date: 09/19/2018
 ms.author: maggies
-ms.openlocfilehash: bb6868784314b369fcc02e3a36caf7c82c3c5966
-ms.sourcegitcommit: 70192daf070ede3382ac13f6001e0c8b5fb8d934
+ms.openlocfilehash: 18fb96573052455034f8c257811daed6cb15529e
+ms.sourcegitcommit: a739a99e1006834a0f56e387c0bd9d945fb8a76b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "46564919"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51679224"
 ---
 # <a name="create-a-power-bi-report-for-power-bi-report-server"></a>Power BI -raportin luominen Power BI -raporttipalvelimeen
 Voit tallentaa ja hallita Power BI -raportteja Power BI -raporttipalvelimen verkkoportaalissa paikallisesti samalla tavalla kuin voit tallentaa Power BI -raportteja pilveen Power BI -palvelussa (https://powerbi.com). Luo ja muokkaa raportteja Power BI Desktopissa ja julkaise ne verkkoportaalissa. Raportin lukijat organisaatiossasi voivat tarkastella niitä selaimessa tai Power BI -mobiilisovelluksessa mobiililaitteillaan.
@@ -31,7 +31,7 @@ Jos olet jo luonut Power BI -raportteja Power BI Desktopissa, olet melkein valmi
 
     ![Lataa Power BI Desktop verkkoportaalista](media/quickstart-create-powerbi-report/report-server-download-web-portal.png)
 
-    Voit myös siirtyä suoraan kohtaan [Microsoft Power BI Desktop](https://www.microsoft.com/en-us/download/details.aspx?id=57271) (optimoitu Power BI -raporttipalvelimelle – elokuu 2018) Microsoft Download Centerissä.
+    Voit myös siirtyä suoraan kohtaan [Microsoft Power BI Desktop](https://www.microsoft.com/download/details.aspx?id=57271) (optimoitu Power BI -raporttipalvelimelle – elokuu 2018) Microsoft Download Centerissä.
 
 2. Valitse Download Center -sivulla **Lataa**.
 

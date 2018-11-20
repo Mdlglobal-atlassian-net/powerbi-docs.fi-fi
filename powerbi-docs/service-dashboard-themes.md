@@ -2,7 +2,7 @@
 title: Raporttinäkymän teemojen käyttäminen Power BI -palvelussa
 description: Opi käyttämään mukautettua värivalikoimaa ja ota se käyttöön kokonaisessa raporttinäkymässä Power BI -palvelussa
 author: maggiesMSFT
-manager: annbe
+manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/22/2018
 ms.author: maggies
 LocalizationGroup: Create reports
-ms.openlocfilehash: fd6cc83b5e5d27159f0cff853cb3effb6b415a9d
-ms.sourcegitcommit: fb1885da7cf11367660edbf7b7346dc039ee9b5d
+ms.openlocfilehash: 4e0f8dac3a5d254594c512f0a9804773308c9eb7
+ms.sourcegitcommit: 1e4fee6d1f4b7803ea285eb879c8d5a4f7ea8b85
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47186589"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51717266"
 ---
 # <a name="use-dashboard-themes-in-power-bi-service"></a>Raporttinäkymän teemojen käyttö Power BI-palvelussa
 **Raporttinäkymän teemojen** avulla voit käyttää väriteemaa koko raporttinäkymässä, kuten yrityksen värejä, kausivärejä tai mitä tahansa muuta haluamaasi väriteemaa. Kun otat **raporttinäkymän teeman** käyttöön, kaikki raporttinäkymän visualisoinnit käyttävät valitun teeman värejä (lukuun ottamatta muutamia poikkeuksia, jotka kuvataan myöhemmin tässä artikkelissa).

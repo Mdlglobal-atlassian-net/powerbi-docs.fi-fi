@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-admin
 ms.topic: conceptual
-ms.date: 11/02/2018
+ms.date: 11/16/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 1ec687e4751c6003fe558f2088825eae0bf4be11
-ms.sourcegitcommit: d20f74d5300197a0930eeb7db586c6a90403aabc
+ms.openlocfilehash: 4379caf909360688e602601795066f51c9660633
+ms.sourcegitcommit: 46f1ba3f972f6e64bce05ad0fd527b27c49aedd6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "50973392"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52157076"
 ---
 # <a name="administering-power-bi---frequently-asked-questions-faq"></a>Power BI:n hallinnointi - usein kysytyt kysymykset (UKK)
 
@@ -38,7 +38,7 @@ Tämä artikkeli vastaa Power BI -hallinnoinnista usein kysyttyihin kysymyksiin.
 
 * [Miten tämä muuttaa tapaa, jolla hallinnoin tällä hetkellä organisaationi käyttäjien käyttäjätietoja?](#how-will-this-change-the-way-i-manage-identities-for-users-in-my-organization-today)
 * [Miten Power BI:tä hallitaan?](#how-do-we-manage-power-bi)
-* [Millä tavalla voin hallinnoida vuokraajaa, jonka Microsoft on luonut käyttäjiäni varten?](#what-is-the-process-to-manage-a-tenant-created-by-Microsoft-for-my-users)
+* [Millä tavalla voin hallinnoida vuokraajaa, jonka Microsoft on luonut käyttäjiäni varten?](#what-is-the-process-to-manage-a-tenant-created-by-microsoft-for-my-users)
 * [Jos minulla on useita toimialueita, voinko hallinnoida Office 365 -vuokraajaa, johon käyttäjät on lisätty?](#if-i-have-multiple-domains-can-i-control-the-office-365-tenant-that-users-are-added-to)
 * [Miten voin poistaa Power BI:n käyttäjiltä, jotka ovat jo rekisteröityneet?](#how-do-i-remove-power-bi-for-users-that-already-signed-up)
 * [Mistä tiedän, milloin uudet käyttäjät ovat liittyneet vuokraajaani?](#how-do-i-know-when-new-users-have-joined-my-tenant)
@@ -241,7 +241,7 @@ Lisätietoja Power BI:n palvelutasosopimuksesta on Microsoft Licensing -sivuston
 
 ### <a name="does-power-bi-meet-national-regional-and-industry-specific-compliance-requirements"></a>Onko Power BI kansallisten, alueellisten ja alakohtaisten vaatimusten mukainen?
 
-Lisätietoja Power BI:n vaatimustenmukaisuudesta on [Microsoft Trust Centerissä](http://go.microsoft.com/fwlink/?LinkId=785324).
+Lisätietoja Power BI:n vaatimustenmukaisuudesta on [Microsoft Trust Centerissä](https://www.microsoft.com/en-us/TrustCenter/CloudServices/business-application-platform/default.aspx).
 
 ### <a name="how-does-security-work-in-power-bi"></a>Miten suojaus toimii Power BI:ssä?
 

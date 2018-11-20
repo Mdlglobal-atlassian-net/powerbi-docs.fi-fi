@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 09/27/2018
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: 433710918cb77ca9ee002673dbe6298f0d2184aa
-ms.sourcegitcommit: 42475ac398358d2725f98228247b78aedb8cbc4f
+ms.openlocfilehash: a171dd2aa375f8d12830b051dd8ce6437e4b3236
+ms.sourcegitcommit: a739a99e1006834a0f56e387c0bd9d945fb8a76b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50003290"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51679451"
 ---
 # <a name="dax-basics-in-power-bi-desktop"></a>DAX-perusteet Power BI Desktopissa
 Tämä artikkeli on tarkoitettu uusille Power BI Desktopin käyttäjille. Sen on tarkoitus antaa sinulle helppo ja nopea esittely siitä, miten voit käyttää Data Analysis Expression (DAX) -kaavaa ja ratkaista sillä useita peruslaskutoimituksia ja tietojen analysointiongelmia. Artikkeli sisältää käsitteellisiä tietoja, joukon harjoitustehtäviä ja muutamia tietovisoja, joilla voit testata, mitä olet oppinut. Kun olet käynyt tämän artikkelin läpi, sinulla pitäisi olla hyvä käsitys DAX:n tärkeimmistä peruskäsitteistä.
@@ -142,7 +142,7 @@ DAX sisältää seuraavat funktioluokat: [päivämäärä- ja aikafunktiot](http
 * DAX sisältää erilaisia aikatietojen funktioita. Näiden funktioiden avulla voit määrittää tai valita päivämäärävälejä ja suorittaa näihin perustuvia dynaamisia laskutoimituksia. Voit esimerkiksi verrata rinnakkaisten vuosineljännesten summia.
 * Excelissä on erittäin suosittu funktio, PHAKU. DAX-funktiot eivät käsitä solua tai solualuetta viitteeksi, kuten PHAKU tekee Excelissä. DAX-funktiot ottavat viitteeksi sarakkeen tai taulukon. Pidä mielessä, että Power BI Desktopissa työskentelet relaatiotietomallin kanssa. Arvojen hakeminen toisesta taulukosta on todellisuudessa melko helppoa, ja useimmissa tapauksissa sinun ei tarvitse luoda kaavaa lainkaan.
   
-  Kuten huomaat, DAX-funktioiden avulla voit luoda hyvin tehokkaita kaavoja. Ja olemme käsitelleet vasta funktioiden perusteita. DAX-taitojesi kasvaessa opit luomaan kaavoja, joissa käytät useita eri funktioita. Yksi parhaimmista kaikkia DAX-funktioita koskevia tarkempia tietoja sisältävistä resursseista on [DAX Function Reference](https://msdn.microsoft.com/en-us/query-bi/dax/data-analysis-expressions-dax-reference) -artikkeli.
+  Kuten huomaat, DAX-funktioiden avulla voit luoda hyvin tehokkaita kaavoja. Ja olemme käsitelleet vasta funktioiden perusteita. DAX-taitojesi kasvaessa opit luomaan kaavoja, joissa käytät useita eri funktioita. Yksi parhaimmista kaikkia DAX-funktioita koskevia tarkempia tietoja sisältävistä resursseista on [DAX Function Reference](https://msdn.microsoft.com/query-bi/dax/data-analysis-expressions-dax-reference) -artikkeli.
 
 ### <a name="functions-quickquiz"></a>Testaa tietosi funktioista
 1. Mihin funktio aina viittaa?

@@ -10,18 +10,18 @@ ms.topic: conceptual
 ms.date: 07/24/2018
 ms.author: davidi
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: 04e95ade5d7c7d0e2b9a6d9690873437e2ec1b6d
-ms.sourcegitcommit: f01a88e583889bd77b712f11da4a379c88a22b76
+ms.openlocfilehash: 47bcfabddfeb5bfec828c7b14fef4798350939da
+ms.sourcegitcommit: a739a99e1006834a0f56e387c0bd9d945fb8a76b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39329726"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51678991"
 ---
 # <a name="resolve-issues-importing-access-and-xls-files-in-power-bi-desktop"></a>Ratkaise Käyttöoikeuksien ja .XLS-tiedostojen tuontiongelmat Power BI Desktopissa
 **Power BI Desktopissa** sekä **Access-tietokannat** että **Excel-työkirjojen** aikaisemmat versiot (Excel 97-2003 -tyypin .XLS-tiedostot) käyttävät *Access-tietokantamoduulia*. On olemassa kolme yleistä tilannetta, jotka estävät käyttöoikeustietokantamoduulia toimimasta kunnolla:
 
 ### <a name="situation-1-no-access-database-engine-installed"></a>Esimerkki 1: Käyttöoikeustietokantamoduulia ei ole asennettu
-Kun Power BI Desktop -virheilmoitus ilmaisee, ettei Access-tietokantamoduulia ole asennettu, tulee Access-tietokantamoduulista asentaa joko 32- tai 64-bittinen versio, joka vastaa käytössä olevaa Power BI Desktop -versiota. Voit asentaa Access-tietokantamoduulin [lataussivulta](http://www.microsoft.com/en-us/download/details.aspx?id=13255).
+Kun Power BI Desktop -virheilmoitus ilmaisee, ettei Access-tietokantamoduulia ole asennettu, tulee Access-tietokantamoduulista asentaa joko 32- tai 64-bittinen versio, joka vastaa käytössä olevaa Power BI Desktop -versiota. Voit asentaa Access-tietokantamoduulin [lataussivulta](http://www.microsoft.com/download/details.aspx?id=13255).
 
 >[!NOTE]
 >Jos asennettu käyttöoikeustietokantamoduulin versio on eri kuin Microsoft Officen asennettu bittiversio, Office-sovellukset eivät voi käyttää käyttöoikeustietokantamoduulia.
@@ -41,7 +41,7 @@ Tässä tilanteessa on usein ongelmana, että Microsoft Officesta on asennettu 3
    >Käytettäessä Power BI Desktopin 32-bittistä versiota ja erittäin suurten tietomallien ollessa kyseessä, muistin riittävyyden kanssa saattaa tulla ongelmia.
 2. Muuta Microsoft Office bittiversiosi vastaamaan asennettua Power BI Desktop -versiota. Muuttaaksesi Microsoft Officen bittiversion, poista Officen asennus ja asenna sitten versio, joka vastaa Power BI Desktopin asennusta.
 3. Jos virhe ilmeni yrittäessäsi avata .XLS-tiedostoa (Excel 97-2003 -työkirjaa), voit välttää Access-tietokantamoduulin käytön avaamalla .XLS-tiedoston Excelissä ja tallentamalla sen XLSX-tiedostona.
-4. Jos kolme edellistä ratkaisua eivät ole toteutettavissa, on käyttöoikeustietokantamoduulista mahdollista asentaa sen molemmat versiot, mutta tämä *ei ole* suositeltu ratkaisu. Asentamalla molemmat versiot, ongelma ratkeaa Excelin Power Queryn ja Power BI Desktopin kohdalta, mutta johtaa virheisiin ja ongelmiin kaikissa niissä sovelluksissa, jotka käyttävät automaattisesta (oletuksena) ensimmäisenä asennettua käyttöoikeustietokantamoduulin versiota. Asentaaksesi molemmat käyttöoikeustietokantamoduulin bittiversiot [lataa](http://www.microsoft.com/en-us/download/details.aspx?id=13255) molemmat versiot ja asenna ne kummatkin käyttämällä */passiivista* -valitsinta. Esimerkiksi:
+4. Jos kolme edellistä ratkaisua eivät ole toteutettavissa, on käyttöoikeustietokantamoduulista mahdollista asentaa sen molemmat versiot, mutta tämä *ei ole* suositeltu ratkaisu. Asentamalla molemmat versiot, ongelma ratkeaa Excelin Power Queryn ja Power BI Desktopin kohdalta, mutta johtaa virheisiin ja ongelmiin kaikissa niissä sovelluksissa, jotka käyttävät automaattisesta (oletuksena) ensimmäisenä asennettua käyttöoikeustietokantamoduulin versiota. Asentaaksesi molemmat käyttöoikeustietokantamoduulin bittiversiot [lataa](http://www.microsoft.com/download/details.aspx?id=13255) molemmat versiot ja asenna ne kummatkin käyttämällä */passiivista* -valitsinta. Esimerkiksi:
    
        c:\users\joe\downloads\AccessDatabaseEngine.exe /passive
    
@@ -50,7 +50,7 @@ Tässä tilanteessa on usein ongelmana, että Microsoft Officesta on asennettu 3
 ### <a name="situation-3-trouble-using-access-or-xls-files-with-an-office-365-subscription"></a>Esimerkki 3: Ongelmia käyttöoikeuksien tai .XLS-tiedostojen kanssa yhdessä Office 365 -tilin kanssa
 Jos käytät Office 365 -tiliä ja joko **Office 2013** tai **Office 2016** -versiota, käyttöoikeustietokantamoduulin tarjoaja on rekisteröity virtuaalisessa rekisterisijainnissa, jota voivat käyttää *vain* Officen prosessit. Tämän seurauksena koostemoduuli (joka on vastuussa ei-Office 365 Excelin ja Power BI Desktopin suorittamisesta), joka ei ole Office-prosessi, ei saa yhteyttä  Access-tietokantamoduulin tarjoajaan.
 
-Korjataksesi tämän tilanteen, voit [ladata ja asentaa uudelleenjaetun Access-tietokantamoduulin](http://www.microsoft.com/en-us/download/details.aspx?id=13255), joka vastaa asennettua Power BI Desktopin bittiversiota (lisää tietoa bittiversioista ylempänä ).
+Korjataksesi tämän tilanteen, voit [ladata ja asentaa uudelleenjaetun Access-tietokantamoduulin](http://www.microsoft.com/download/details.aspx?id=13255), joka vastaa asennettua Power BI Desktopin bittiversiota (lisää tietoa bittiversioista ylempänä ).
 
 ### <a name="other-situations-that-cause-import-issues"></a>Muut ongelmia aiheuttavat tilanteet
 Pyrimme kattamaan mahdollisimman monta Käyttöoikeuksien tai .XLS-tiedostojen kanssa ilmenevää ongelmaa. Jos kohtaat ongelman, jota ei tässä artikkelissa ole käsitelty, lähetä kysymyksesi ongelmasta [Power BI -tukeen](https://powerbi.microsoft.com/support/). Tutkimme säännöllisesti ongelmia, joita useilla asiakkailla saattaa ilmetä, ja lisäämme artikkeleihin niitä koskevat ohjeet.

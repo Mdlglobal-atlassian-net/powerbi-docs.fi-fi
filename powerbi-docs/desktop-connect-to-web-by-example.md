@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/23/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 7de11de4c10df6a76f031f88952671d0e365b498
-ms.sourcegitcommit: 17d68172c73e9a9ff7966ddcedc3f8450584cdec
+ms.openlocfilehash: 9d7012006ca18cf43c530c4d79ed02e6ed73f33f
+ms.sourcegitcommit: a739a99e1006834a0f56e387c0bd9d945fb8a76b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49952207"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51679240"
 ---
 # <a name="get-data-from-a-web-page-by-providing-an-example"></a>Tuo tietoja verkkosivulta antamalla esimerkki
 
@@ -35,9 +35,9 @@ Käyttääksesi **Tuo esimerkin mukaisia tietoja verkosta** -toimintoa käyttä�
 
 Syötä sitten sen verkkosivun URL-osoite, jolta haluat tuoda tietoja. Tässä artikkelissa käytämme Microsoft Store -verkkosivua ja näytämme miten tämä yhdistin toimii. 
 
-Jos haluat edetä mukana, voit käyttää [Microsoft Storen URL-osoitetta](https://www.microsoft.com/en-us/store/top-paid/games/xbox?category=classics), jota käytämme artikkelissa:
+Jos haluat edetä mukana, voit käyttää [Microsoft Storen URL-osoitetta](https://www.microsoft.com/store/top-paid/games/xbox?category=classics), jota käytämme artikkelissa:
 
-    https://www.microsoft.com/en-us/store/top-paid/games/xbox?category=classics
+    https://www.microsoft.com/store/top-paid/games/xbox?category=classics
 
 ![verkkodialogi](media/desktop-connect-to-web-by-example/web-by-example_04.png)
 

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 46cd5e2730d1b0e90fe37a93bbd4340ffb708348
-ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
+ms.openlocfilehash: 4638842217127c1d80ec115e05f8db1a6d3eb36c
+ms.sourcegitcommit: a739a99e1006834a0f56e387c0bd9d945fb8a76b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "48908459"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51679037"
 ---
 # <a name="create-and-publish-a-power-bi-organizational-content-pack-tutorial"></a>Organisaation sisältöpaketin luominen ja julkaiseminen Power BI:ssa (opetusohjelma)
 
@@ -71,7 +71,7 @@ Haluatko seurata mukana? Siirry [Power BI -palvelussa](https://powerbi.com) koht
       ![](media/service-organizational-content-pack-create-and-publish/pbi_orgcontpkexcel.png)
    
       > [!NOTE]
-      > Jos ryhmän jäsenet eivät voi tarkastella Excel-työkirjaa, voit joutua [jakamaan työkirjan heidän kanssaan OneDrive for Business -palvelussa](https://support.office.com/en-us/article/Share-documents-or-folders-in-Office-365-1fe37332-0f9a-4719-970e-d2578da4941c).
+      > Jos ryhmän jäsenet eivät voi tarkastella Excel-työkirjaa, voit joutua [jakamaan työkirjan heidän kanssaan OneDrive for Business -palvelussa](https://support.office.com/article/Share-documents-or-folders-in-Office-365-1fe37332-0f9a-4719-970e-d2578da4941c).
       > 
       > 
 4. Valitse **Julkaise** lisätäksesi sisältöpaketin ryhmän Organisaation sisältöpaketit -kirjastoon.  
@@ -93,6 +93,6 @@ Haluatko seurata mukana? Siirry [Power BI -palvelussa](https://powerbi.com) koht
 * [Organisaation sisältöpakettien esittely](service-organizational-content-pack-introduction.md)  
 * [Organisaation sisältöpakettien hallinta, päivitys ja poistaminen](service-organizational-content-pack-manage-update-delete.md)  
 * [Ryhmän luominen Power BI:ssä](service-create-distribute-apps.md)  
-* [Mikä on OneDrive for Business?](https://support.office.com/en-us/article/What-is-OneDrive-for-Business-187f90af-056f-47c0-9656-cc0ddca7fdc2)
+* [Mikä on OneDrive for Business?](https://support.office.com/article/What-is-OneDrive-for-Business-187f90af-056f-47c0-9656-cc0ddca7fdc2)
 * Onko sinulla muuta kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
 

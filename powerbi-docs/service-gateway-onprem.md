@@ -10,12 +10,12 @@ ms.component: powerbi-service
 ms.topic: conceptual
 LocalizationGroup: Gateways
 ms.date: 06/05/2018
-ms.openlocfilehash: 488d11209126098063ba8ca2b2d73573edbcdbb9
-ms.sourcegitcommit: 5eb0f37f59b5fec15c0caecbbd1f8d688c7f0013
+ms.openlocfilehash: 9a739efdba84279e938fd8e13d6521cf975d0b9d
+ms.sourcegitcommit: a739a99e1006834a0f56e387c0bd9d945fb8a76b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51297132"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51679014"
 ---
 # <a name="on-premises-data-gateway"></a>Paikallinen tietoyhdyskäytävä
 
@@ -100,7 +100,7 @@ Tällä hetkellä ei ole yhtä paikkaa, jossa vuokraajan järjestelmänvalvojat 
 ## <a name="enabling-outbound-azure-connections"></a>Lähtevien Azure-yhteyksien käyttöön ottaminen
 
 Paikallinen tietoyhdyskäytävä on riippuvainen Azure palveluväylän yhteydestä pilvipalveluun ja muodostaa vastaavasti lähteviä yhteyksiä siihen liittyvään Azure-alueeseen. Oletusarvoisesti tämä on Power BI -vuokraajan sijainti. Katso missä [Power BI -vuokraajasi sijaitsee](https://powerbi.microsoft.com/en-us/documentation/powerbi-admin-where-is-my-tenant-located/)
-Jos palomuuri estää lähtevät yhteydet, sinun on määritettävä palomuuri sallimaan paikallisesta tietoyhdyskäytävästä lähtevät yhteydet siihen liittyvään Azure-alueeseen. Saat tarkempia tietoja kunkin Azure palvelinkeskuksen IP-osoitteiden alueista [Microsoft Azuren palvelinkeskusten IP-osoiteluettelosta](https://www.microsoft.com/en-us/download/details.aspx?id=41653).
+Jos palomuuri estää lähtevät yhteydet, sinun on määritettävä palomuuri sallimaan paikallisesta tietoyhdyskäytävästä lähtevät yhteydet siihen liittyvään Azure-alueeseen. Saat tarkempia tietoja kunkin Azure palvelinkeskuksen IP-osoitteiden alueista [Microsoft Azuren palvelinkeskusten IP-osoiteluettelosta](https://www.microsoft.com/download/details.aspx?id=41653).
 > [!NOTE]
 > IP-osoitteiden alueet saattavat muuttua ajan kuluessa, joten varmista, että lataat säännöllisesti uusimmat tiedot. 
 

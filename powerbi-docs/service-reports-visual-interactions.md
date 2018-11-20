@@ -1,7 +1,7 @@
 ---
 title: Visualisointien toimintatapojen muokkaaminen raportissa
 description: Ohjeet visualisointitoimien määrittämiseen Microsoft Power BI -palvelun raportissa ja Power BI Desktopin raportissa
-author: mihart
+author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 featuredvideoid: N_xYsCbyHPw
@@ -9,14 +9,14 @@ ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 09/24/2018
-ms.author: mihart
+ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: c3671ae626496bf80ac4b212a755bb13f82ec66b
-ms.sourcegitcommit: ce8332a71d4d205a1f005b703da4a390d79c98b6
+ms.openlocfilehash: de18466b2ce98c0ba1e4b5e6e9ad2eb501f18a49
+ms.sourcegitcommit: 1e4fee6d1f4b7803ea285eb879c8d5a4f7ea8b85
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "47418222"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51717197"
 ---
 # <a name="visualization-interactions-in-a-power-bi-report"></a>Visualisoinnin käsitteleminen Power BI -raportissa
 Jos sinulla on raportin muokkausoikeudet, voit käyttää **visualisointitoimia** ja muuttaa sitä, miten raporttisivun visualisoinnit vaikuttavat toisiinsa. 

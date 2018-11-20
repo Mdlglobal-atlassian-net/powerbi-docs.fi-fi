@@ -10,18 +10,18 @@ ms.topic: conceptual
 ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 28934a525c332344b31de599363fb41126a18cfa
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: ccb73b05998eded0c32742deed57b2bee35fbbb6
+ms.sourcegitcommit: a739a99e1006834a0f56e387c0bd9d945fb8a76b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46548760"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51679083"
 ---
 # <a name="share-a-power-bi-dashboard-that-links-to-an-excel-file-in-onedrive"></a>Jaa Power BI -koontinäyttö, joka on linkitetty Excel-tiedostoon OneDrivessa
 Voit Power BI:ssä [muodostaa yhteyden Excel-työkirjoihin OneDrive for Businessissa](service-excel-workbook-files.md) ja kiinnittää ruutuja koontinäyttöihin kyseisestä työkirjasta. Kun jakaa tämän koontinäytön tai luot sisältöpaketin, joka sisältää kyseisen koontinäytön:
 
 * Työtoverisi voivat tarkastella ruutuja tarvitsematta itselleen kyseisen työkirjan käyttöoikeuksia. Voit siis luoda sisältöpaketin ja tiedät, että työtoverisi näkevät OneDrivessa olevasta Excel-työkirjasta luodut ruudut.
-* Ruudun napsauttaminen avaa työkirjan Power BI:ssä. Työkirja avautuu vain, jos työtoverillasi on vähintään OneDrive for Businessissa olevan työkirjan [lukuoikeudet](https://support.office.com/en-us/article/Share-documents-or-folders-in-Office-365-1fe37332-0f9a-4719-970e-d2578da4941c).
+* Ruudun napsauttaminen avaa työkirjan Power BI:ssä. Työkirja avautuu vain, jos työtoverillasi on vähintään OneDrive for Businessissa olevan työkirjan [lukuoikeudet](https://support.office.com/article/Share-documents-or-folders-in-Office-365-1fe37332-0f9a-4719-970e-d2578da4941c).
 
 ## <a name="share-a-dashboard-that-contains-workbook-tiles"></a>Työkirjan ruutuja sisältävän koontinäytön jakaminen
 Jos haluat jakaa koontinäytön, joka linkittyy takaisin OneDrive for Businessiin tallennettuun Excel-työkirjaan, katso [Jaa koontinäyttö](service-share-dashboards.md). Ero on siinä, että voit muokata linkitetyn Excel-työkirjan käyttöoikeuksia ennen jakamista.
@@ -30,7 +30,7 @@ Jos haluat jakaa koontinäytön, joka linkittyy takaisin OneDrive for Businessii
 
 1. Anna työtovereidesi sähköpostiosoitteet.
 2. Jotta työtoverisi voivat tarkastella Excel-työkirjaa Power BI:ssä, valitse **Aseta työkirjan käyttöoikeudet siirtymällä OneDrive for Businessiin**.
-3. Kun olet OneDrivessa, [muokkaa käyttöoikeuksia](https://support.office.com/en-US/article/Share-files-and-folders-and-change-permissions-9fcc2f7d-de0c-4cec-93b0-a82024800c07) tarpeen mukaan.
+3. Kun olet OneDrivessa, [muokkaa käyttöoikeuksia](https://support.office.com/article/Share-files-and-folders-and-change-permissions-9fcc2f7d-de0c-4cec-93b0-a82024800c07) tarpeen mukaan.
 4. Valitse **Jaa**.
 
 >[!NOTE]
@@ -46,7 +46,7 @@ Kun [julkaiset sisältöpaketin](service-organizational-content-pack-create-and-
    
     ![Excel-työkirja sisältöpaketissa](media/service-share-dashboard-that-links-to-excel-onedrive/pbi_contpack_workbk.png)
 3. Valitse **Aseta työkirjan käyttöoikeudet siirtymällä OneDrive for Businessiin**.
-4. Kun olet OneDrivessa, [muokkaa käyttöoikeuksia](https://support.office.com/en-US/article/Share-files-and-folders-and-change-permissions-9fcc2f7d-de0c-4cec-93b0-a82024800c07) tarpeen mukaan.
+4. Kun olet OneDrivessa, [muokkaa käyttöoikeuksia](https://support.office.com/article/Share-files-and-folders-and-change-permissions-9fcc2f7d-de0c-4cec-93b0-a82024800c07) tarpeen mukaan.
 5. Valitse **Julkaise**.
 
 ## <a name="share-a-dashboard-from-a-power-bi-workspace"></a>Koontinäytön jakaminen Power BI -työtilasta

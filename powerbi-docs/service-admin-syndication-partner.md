@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/01/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 4854f05e3394d7b4eed2c67de8bbca5266a12ae3
-ms.sourcegitcommit: 0611860a896e636ceeb6e30ce85243bfd8e7b61d
+ms.openlocfilehash: 912ed0be1e6a732db46e83f8a9b0757ad2801dab
+ms.sourcegitcommit: 46f1ba3f972f6e64bce05ad0fd527b27c49aedd6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50909314"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52157398"
 ---
 # <a name="unable-to-add-power-bi-to-office-365-partner-subscription"></a>Power BI:tä ei voi lisätä Office 365 -kumppanitilaukseen
 
@@ -23,7 +23,7 @@ Office 365:n avulla yritykset voivat myydä Office 365:n paketoituna ja yhdistet
 
 Jos olet kiinnostunut hankkimaan Power BI:n Office 365 -tilauksen rinnalle, ota yhteyttä kumppaniisi. Jos kumppanisi ei tällä hetkellä tarjoa Power BI:tä, käytettävissä on useita vaihtoehtoja.
 
-# <a name="work-with-your-partner-to-purchase-power-bi"></a>Power BI:n hankinta yhdessä kumppanin kanssa
+## <a name="work-with-your-partner-to-purchase-power-bi"></a>Power BI:n hankinta yhdessä kumppanin kanssa
 
 Jos haluat ostaa Power BI Pro- tai Power BI Premium -tilauksen, tee yhteistyötä kumppanisi kanssa käytettävissä olevien vaihtoehtojen selvittämiseksi:
 
@@ -31,7 +31,7 @@ Jos haluat ostaa Power BI Pro- tai Power BI Premium -tilauksen, tee yhteistyöt�
 
 * Kumppani voi siirtää sinut malliin, jossa voit ostaa Power BI:n suoraan Microsoftilta tai toiselta kumppanilta, jonka valikoimassa on Power BI.
 
-# <a name="purchase-from-microsoft-or-another-channel"></a>Ostaminen Microsoftilta tai toisesta kanavasta
+## <a name="purchase-from-microsoft-or-another-channel"></a>Ostaminen Microsoftilta tai toisesta kanavasta
 
 Kumppanisuhteesta riippuen saatat voida ostaa Power BI:n suoraan Microsoftilta tai toiselta kumppanilta. Voit tarkistaa, voitko lisätä Power BI -tilauksia Office 365 -hallintaportaalissa (edellyttää Yleinen järjestelmänvalvoja- tai Laskutusjärjestelmänvalvoja-roolin jäsenyyttä).
 

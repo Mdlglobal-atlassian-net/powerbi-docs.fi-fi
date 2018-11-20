@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/02/2018
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: 2e74c8db22a2a1c4ddb188ae13a8ca5df9f862f3
-ms.sourcegitcommit: a1b7ca499f4ca7e90421511e9dfa61a33333de35
+ms.openlocfilehash: 432e38ffdcb92ee1d2cf1d62f7f34863d748885b
+ms.sourcegitcommit: a739a99e1006834a0f56e387c0bd9d945fb8a76b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51507711"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51679106"
 ---
 # <a name="find-and-connect-to-an-organizational-content-pack"></a>Organisaation sisältöpaketin etsiminen ja siihen yhdistäminen
 
@@ -38,7 +38,7 @@ Sisältöpakettien luominen eroaa koontinäyttöjen jakamisesta tai niiden työs
 ## <a name="connect-to-an-organizational-content-pack"></a>Organisaation sisältöpakettiin yhdistäminen
 * Yhdistä sisältöpakettiin valitsemalla **Hanki se nyt** ja lisää se aktiiviseen työtilaasi. Uudet koontinäytöt, raportit, Excel-työkirjat ja tietojoukot on merkitty keltaisella tähdellä.
 
-Jos sisältöpaketissa on Excel-työkirja, voit nähdä varoituksen, että sinulla ei ole oikeutta tarkastella työkirjaa. Jos näin käy, pyydä sisältöpaketin omistajaa [jakamaan työkirja kanssasi OneDrive for Businessissa](https://support.office.com/en-us/article/Share-documents-or-folders-in-Office-365-1fe37332-0f9a-4719-970e-d2578da4941c). 
+Jos sisältöpaketissa on Excel-työkirja, voit nähdä varoituksen, että sinulla ei ole oikeutta tarkastella työkirjaa. Jos näin käy, pyydä sisältöpaketin omistajaa [jakamaan työkirja kanssasi OneDrive for Businessissa](https://support.office.com/article/Share-documents-or-folders-in-Office-365-1fe37332-0f9a-4719-970e-d2578da4941c). 
 
 Sisältöpaketti on lukittu. Voit [tallentaa oman kopion koontinäytöstä ja raporteista](../service-organizational-content-pack-copy-refresh-access.md). 
 
