@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 12/14/2017
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 093339e820c45fcbd586bd1eb6d8933b6e5743f8
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 263c1a576e939a87e970cc2c0200dfb6c1ccdc41
+ms.sourcegitcommit: 47269676aa600e60ec7ba0e323941a71e0622833
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34298201"
+ms.lasthandoff: 11/08/2018
+ms.locfileid: "51273329"
 ---
 # <a name="on-premises-data-gateway-personal-mode"></a>Paikallinen tietoyhdyskäytävä (henkilökohtainen tila)
 Yhdyskäytävän avulla voit käyttää paikallisia tietolähteitä ja luoda Power BI -raportteja ja -koontinäyttöjä. **Yhdyskäytävä** on ohjelmisto, joka helpottaa pääsyä yksityiseen ja paikalliseen verkkoon tallennettuihin tietoihin. Kyseisiä tietoja voi sitten käyttää online-palveluissa, kuten **Power BI -palvelussa**. **Paikallinen tietoyhdyskäytävä (henkilökohtainen tila)** on Power BI -yhdyskäytävään äskettäin julkaistu päivitys, jonka avulla käyttäjät voivat asentaa yhdyskäytävän omiin tietokoneisiinsa ja käyttää paikallisia tietoja.
@@ -132,7 +132,7 @@ Spark-tuki on suunnitteilla kalenterivuoden 2017 toisella puoliskolla.
   * **Vastaus**: Jos päivität raportteja nykyisessä yhdyskäytävässä, päivittäminen lopetetaan. Voit asettaa uuden päivitysaikataulun vain asentamalla ja määrittämällä uuden yhdyskäytävän.
 * Käytän R-komentosarjaa. Tuetaanko sitä?
   
-  * **Vastaus**: Lisäämme R-komentosarjojen tuen pian.
+  * **Vastaus**: R-komentosarjoja tuetaan henkilökohtaisessa tilassa.
 * Miksi en näe yhdyskäytävän päivitysilmoitusta **Power BI -palvelussa**?
   
   * **Vastaus**: Sinulla on todennäköisesti vähintään yksi sellaisen tietolähteen sisältävä tietojoukko, jota ei tueta tällä hetkellä.

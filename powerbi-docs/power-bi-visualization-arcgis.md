@@ -8,15 +8,15 @@ featuredvideoid: EKVvOZmxg9s
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 02/28/2018
+ms.date: 11/06/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 18e33fa4767eb0d9e457589ea3fa3b61721dce51
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 81867ba36e79a26acb168c1b02fc31e228bd6439
+ms.sourcegitcommit: b23fdcc0ceff5acd2e4d52b15b310068236cf8c7
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46548024"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "51266043"
 ---
 # <a name="arcgis-maps-in-power-bi-service-and-power-bi-desktop-by-esri"></a>Esri ArcGIS -kartat Power BI -palvelussa ja Power BI Desktopissa
 Tämä opetusohjelma on kirjoitettu ArcGIS-karttaa luovan henkilön näkökulmasta. Kun tekijä jakaa ArcGIS-kartan työtoverille, kyseinen työtoveri voi tarkastella ja käsitellä karttaa mutta ei tallentaa muutoksia. Lisätietoja ArcGIS-kartan tarkastelemisesta on ohjeartikkelissa [ArcGIS-karttojen käsittely](visuals/power-bi-visualizations-arcgis.md).
@@ -26,7 +26,7 @@ ArcGIS-kartat ja Power BI yhdessä tekevät kartoista muutakin kuin vain esitett
  Mobiililaitteella voit tarkastella ja käsitellä ArcGIS-karttoja, mutta et luoda niitä. Katso [ArcGIS-karttojen käsittely](visuals/power-bi-visualizations-arcgis.md).
 
 > [!TIP]
-> GIS tarkoittaa maantieteellistä informaatiotutkimusta (Geographic Information Science).
+> GIS on lyhenne sanoista Geographic Information Systems (paikkatietojärjestelmät).
 
 
 Alla olevassa esimerkissä tummanharmaa pohja kuvastaa alueellista myyntiä lämpökarttana, jota verrataan demografisen kerroksen sisältämiin vuoden 2016 mediaanituloihin. ArcGIS-karttojen monipuolisten kartoitusominaisuuksien, demografisten tietojen ja karttavisualisointien ansiosta voit kertoa tarinasi parhaalla mahdollisella tavalla.

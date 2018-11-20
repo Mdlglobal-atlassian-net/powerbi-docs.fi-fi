@@ -1,5 +1,5 @@
 ---
-title: Power BI -tietovoiden luomiin tietoihin yhdistäminen Power BI Desktopissa (esikatselu)
+title: Yhdistäminen Power BI -tietovoissa luotuihin tietoihin Power BI Desktopissa (Beeta)
 description: Tietovoihin yhdistäminen ja tietojen käyttäminen helposti Power BI Desktopissa
 author: davidiseminger
 manager: kfile
@@ -7,58 +7,46 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 09/10/2018
+ms.date: 11/06/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: f3964b96f8f282772f6d511c9c412e0caabd1d00
-ms.sourcegitcommit: c51461690e8faa121a1325957ca79b7a3975e8b8
+ms.openlocfilehash: f87db1f715118f346e3b8069897e92fd157f881c
+ms.sourcegitcommit: b23fdcc0ceff5acd2e4d52b15b310068236cf8c7
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44512908"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "51265928"
 ---
-# <a name="connect-to-data-created-by-power-bi-dataflows-in-power-bi-desktop-preview"></a>Power BI -tietovoiden luomiin tietoihin yhdistäminen Power BI Desktopissa (esikatselu)
+# <a name="connect-to-data-created-by-power-bi-dataflows-in-power-bi-desktop-beta"></a>Yhdistäminen Power BI -tietovoissa luotuihin tietoihin Power BI Desktopissa (Beeta)
 **Power BI Desktopissa** voit yhdistää **Power BI -tietovoiden** luomiin tietoihin samaan tapaan kuin muihin tietolähteisiin Power BI Desktopissa.
 
 ![Tietovoihin yhdistäminen](media/desktop-connect-dataflows/connect-dataflows_01.png)
 
-**Power BI -tietovuot (esikatselu)** -liittimen avulla voit yhdistää tietovoiden luomiin entiteetteihin Power BI -palvelussa. Koska tietovuot ovat esikatselussa, sinun on suoritettava muutamia vaiheita, jotta saat tietovoiden liittimen käyttöön järjestelmässäsi. 
-
-
-## <a name="download-and-enable-the-power-bi-dataflows-connector-preview"></a>Power BI -tietovoiden liittimen (esikatselu) lataaminen ja käyttöönotto
-
-Sinun on ladattava **Power BI -tietovoiden** liittimen kopio ja kopioitava se tiettyyn sijaintiin tietokoneellesi. Power BI Desktopin tulevassa kuukausipäivityksessä liitin lisätään automaattisesti tietoliittimien luetteloon, jolloin näitä vaiheita ei tarvita.
-
-Voit ladata **Power BI -tietovoiden liittimen** seuraavasta sijainnista: [Power BI -tietovoiden liitin](https://visuals.azureedge.net/cds-analytics/PublicPreview/CDSA.mez)
-
-Ota **Power BI -tietovoiden** liitin (esikatselu) käyttöön tietokoneellasi seuraavasti:
-
-1. Lataa .MEZ-tiedoston (tietoliittimen tiedosto) kopio. Yksityistä esikatselua käyttävät asiakkaat saavat .MEZ-tiedoston lataustiedot suoraan Microsoftilta.
-
-2. Sijoita ladattu tietoliittimen tiedosto seuraavaan kansioon tietokoneellasi: **Tiedostot > Power BI Desktop-> Mukautetut liittimet -kansio**
-
-3. Valitse Power BI Desktopissa **Tiedosto > Asetukset ja vaihtoehdot > Asetukset** ja sitten vasemmasta ruudusta **Esikatselutoiminnot**.
-
-    ![Mukautettujen liittimien käyttöönotto](media/desktop-connect-dataflows/connect-dataflows_02.png)
-
-4. Valitse **Mukautetut tietoliittimet** -ruutu, jos se ei ole valittuna. 
-
-5. Käynnistä **Power BI Desktop** uudelleen, jotta liitin tulee näkyviin.
-
-## <a name="use-the-power-bi-dataflows-connector-preview"></a>Power BI -tietovoiden liittimen (esikatselu) käyttäminen
-Kun **Power BI Desktop** on käynnistetty uudelleen, liitin näkyy käytettävissä olevan tietolähteenä. Jos haluat yhdistää tietovarantoon, valitse **Nouda tiedot > Power BI -tietovuot (beeta)** seuraavan kuvan mukaisesti:
-
-![Tietovoihin yhdistäminen](media/desktop-connect-dataflows/connect-dataflows_01.png)
+**Power BI -tietovuot (Beeta)** -liittimen avulla voit yhdistää tietovoiden luomiin entiteetteihin Power BI -palvelussa. 
 
 ## <a name="considerations-and-limitations"></a>Huomioitavat asiat ja rajoitukset
 
-Jotta voit käyttää tätä **Power BI -tietovoiden liittimen** esikatseluversiota, sinulla on oltava **Power BI Desktopin** uusin versio. Voit aina [ladata Power BI Desktopin](desktop-get-the-desktop.md) ja asentaa sen tietokoneellesi, jotta sinulla on varmasti uusin versio.  
+Jotta voit käyttää tätä **Power BI -tietovoiden liittimen** beetaversiota, sinulla on oltava **Power BI Desktopin** uusin versio. Voit aina [ladata Power BI Desktopin](desktop-get-the-desktop.md) ja asentaa sen tietokoneellesi, jotta sinulla on varmasti uusin versio.  
 
-Huomautus: Kun Power BI -tietovoiden liitin näkyy **Power BI Desktopin** tulevassa kuukausipäivityksessä, sinun *on poistettava* tämä ladattu .MEZ-tiedosto sijainnista **Tiedostot > Power BI Desktop > Mukautetut liittimet** -kansio ristiriitojen välttämiseksi. 
+> [!NOTE]
+> Power BI -tietovuoliittimen aiempi versio edellyttää, että lataat .MEZ-tiedoston ja siirrät sen kansioon. **Power BI Desktopin** nykyiset versiot sisältävät Power BI -tietovuoliittimen, minkä ansiosta tiedostoa ei enää tarvita. Tiedosto saattaa häiritä liittimen sisäänrakennetun version toimintaa. Jos siirsit .MEZ-tiedoston manuaalisesti kansioon, sinun on *ehdottomasti* poistettava kyseinen .MEZ-tiedosto **Tiedostot > Power BI Desktop > Custom connectors** -kansiosta, jotta häiriöitä ei esiinny. 
+
+## <a name="desktop-performance"></a>Desktopin suorituskyky
+**Power BI Desktop** suoritetaan paikallisesti tietokoneessa, jolle se on asennettu. Useat tekijät vaikuttavat tietovuon tietojen käsittelynopeuteen. Näitä tekijöitä ovat mm. tietojen koko, tietokoneen suoritin ja RAM-muisti, verkon kaistanleveys ja etäisyys konesalista.
+
+Voit parantaa tietovuon tietojen käsittelynopeutta. Jos käsiteltävät tiedot ovat esimerkiksi niin suuria, että **Power BI Desktop** ei pysty käsittelemään niitä tietokoneellasi, voit käyttää tietovoiden linkitettyjä ja laskettuja entiteettejä tietojen koostamiseen (tietovoiden sisällä), jolloin voit käsitellä vain valmistellut, koostetut tiedot. Näin suuret tiedot käsitellään verkossa tietovoissa, ei paikallisessa **Power BI Desktop** -esiintymässä. Tämän ansiosta Power BI Desktopin tarvitsee käsitellä pienempiä tietomääriä, jolloin tietovoiden käsittely käy nopeammin.
 
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
-Voit tehdä monenlaisia kiinnostavia asioita Power BI Desktopin tietoyhteyksien avulla. Seuraavista **Power BI Desktopia** koskevista artikkeleista saattaa olla hyötyä:
+Voit tehdä monia kiinnostavia asioita Power BI -tietovoiden avulla. Katso lisätietoja seuraavista resursseista:
+
+* [Omatoiminen tietojen valmistelu tietovoiden avulla](service-dataflows-overview.md)
+* [Tietovoiden luominen ja käyttäminen Power BI:ssä](service-dataflows-create-use.md)
+* [Laskettujen entiteettien käyttäminen Power BI Premiumissa (esikatselu)](service-dataflows-computed-entities-premium.md)
+* [Tietovoiden käyttäminen paikallisten tietolähteiden kanssa (esikatselu)](service-dataflows-on-premises-gateways.md)
+* [Kehittäjien resurssit Power BI -tietovoille (esikatselu)](service-dataflows-developer-resources.md)
+
+Myös seuraavista **Power BI Desktop** -artikkeleista voi olla hyötyä:
 
 * [Power BI Desktopin tietolähteet](desktop-data-sources.md)
 * [Tietojen muotoilu ja yhdistäminen Power BI Desktopissa](desktop-shape-and-combine-data.md)

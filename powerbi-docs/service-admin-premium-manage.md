@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/20/2018
 ms.author: mblythe
 LocalizationGroup: Premium
-ms.openlocfilehash: a36b0524006144bfa9fbd24d9ff88b42a1acb3d4
-ms.sourcegitcommit: a764e4b9d06b50d9b6173d0fbb7555e3babe6351
+ms.openlocfilehash: 39429d0f09431da3f860bf0454843c65ce07a524
+ms.sourcegitcommit: b23fdcc0ceff5acd2e4d52b15b310068236cf8c7
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/22/2018
-ms.locfileid: "49641639"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "51265997"
 ---
 # <a name="manage-capacities-within-power-bi-premium-and-power-bi-embedded"></a>Kapasiteettien hallinta Power BI Premiumissa ja Power BI Embeddedissä
 
@@ -53,6 +53,44 @@ Kun ostat Power BI Premium- tai Embedded-SKU:ita, vuokraaja saavat vastaavan mä
 Käyttäjien ei pääsääntöisesti tarvitse tietää kuuluvansa Premium-kapasiteettiin. Koontinäytöt ja raportit yksinkertaisesti toimivat. Näet vinoneliökuvakkeen Premium-kapasiteettiin kuuluvien työtilojen vieressä.
 
 ![Vinoneliö, joka ilmaisee työtilan kuuluvan Premium-kapasiteettiin](media/service-admin-premium-manage/premium-workspace.png)
+
+## <a name="configure-workloads"></a>Kuormitusten määrittäminen
+
+Voit ajatella kuormituksia Power BI:ssä palveluina, jotka voit paljastaa käyttäjille. Oletusarvoisesti **Power BI Premiumin** ja **Power BI Embeddedin** kapasiteetit tukevat vain kuormitusta, joka liittyy Power BI -kyselyiden suorittamiseen pilvipalvelussa.
+
+Nyt esikatselun tuki tarjotaan myös kahdelle muulle kuormitukselle: **sivutetut raportit** ja **tietovuot**. Voit ottaa nämä kuormitukset käyttöön Power BI -hallintaportaalin tai Power BI REST -ohjelmointirajapinnan kautta. Voit määrittää enimmäismuistin jokaiselle kuormitukselle. Näin voit hallita sitä, miten eri kuormitukset vaikuttavat toistensa toimintaan.
+
+### <a name="enable-workloads-in-the-power-bi-admin-portal"></a>Kuormitusten ottaminen käyttöön Power BI -hallintaportaalin kautta
+
+Voit ottaa kuormituksia käyttöön seuraavasti.
+
+1. Valitse kapasiteetti **Kapasiteettiasetuksista**.
+
+1. Laajenna **Kuormitukset** **LISÄÄ VAIHTOEHTOJA** -kohdasta.
+
+1. Ota käyttöön yksi tai useampi kuormitus ja anna **Muistin enimmäismäärälle** arvo.
+
+    ![Kuormitusten määrittäminen hallintaportaalin kautta](media/service-admin-premium-manage/admin-portal-workloads.png)
+
+1. Valitse **Käytä**.
+
+### <a name="default-memory-settings"></a>Oletusmuistiasetukset
+
+Seuraava taulukko sisältää muistiasetusten oletus- ja vähimmäisarvot, jotka perustuvat käytettävissä oleviin eri [kapasiteettisolmuihin](service-premium.md#premium-capacity-nodes). Muistin kohdistetaan tietovoille dynaamisesti, mutta sivutetuille raporteille staattisesti. Jos haluat lisätietoja, katso seuraavassa osio: [Huomioitavaa sivutetuissa raporteissa](#considerations-for-paginated-reports).
+
+|                     | EM3                      | P1                       | P2                      | P3                       |
+|---------------------|--------------------------|--------------------------|-------------------------|--------------------------|
+| Sivutetut raportit | – | Oletus 20 %, vähintään 10 % | Oletus 20 %, vähintään 5 % | Oletus 20 %, vähintään 2,5 % |
+| Tietovuot | Oletus 15 %, vähintään 8 %  | Oletus 15 %, vähintään 4 %  | Oletus 15 %, vähintään 2 % | Oletus 15 %, vähintään 1 %  |
+| | | | | |
+
+### <a name="considerations-for-paginated-reports"></a>Huomioitavaa sivutetuissa raporteissa
+
+Jos käytät sivutetut raportit -kuormitusta, huomioi seuraavat asiat.
+
+* **Muistin varaaminen sivutetuissa raporteissa**: Sivutettujen raporttien avulla voit suorittaa omaa koodia raporttia hahmontaessasi. Näin voit esimerkiksi sallia tekstin värin dynaamisen muuttamisen sisällön perusteella. Power BI Premium -kapasiteetin turvaamiseksi sivutetut raportit suoritetaan kapasiteetin sisäisessä erillisessä tilassa. Tälle tilalle osoitetaan kaikki määrittämäsi muisti riippumatta siitä, onko kuormitus aktiivinen. Jos käytät Power BI -raportteja tai tietovoita samassa kapasiteetissa, varmista, että olet määrittänyt sivutetuille raporteille riittävän vähän muistia, jotta muiden kuormitusten nopeus ei kärsi.
+
+* **Sivutetut raportit eivät ole käytettävissä**: Sivutetut raportit -kuormitus saattaa lakata toimimasta joissain harvinaisissa tapauksissa. Näissä tapauksissa kuormitus näyttää virhetilan hallintaportaalissa ja raportin hahmontaminen aikakatkaistaan käyttäjiltä. Voit ratkaista ongelman poistamalla kuormituksen käytöstä ja ottamalla sen uudelleen käyttöön.
 
 ## <a name="monitor-capacity-usage"></a>Seuraa kapasiteetin käyttöä
 

@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 10/16/2018
+ms.date: 11/06/2018
 ms.author: maggies
-ms.openlocfilehash: 88bfd67ddf284ea6b518c5ebdd6386887513f393
-ms.sourcegitcommit: 02f918a4f27625b6f4e47473193ebc8219db40e2
+ms.openlocfilehash: bff5e42b239fee572ea0a453301f154da3b999b3
+ms.sourcegitcommit: b23fdcc0ceff5acd2e4d52b15b310068236cf8c7
 ms.translationtype: HT
 ms.contentlocale: fi-FI
 ms.lasthandoff: 11/07/2018
-ms.locfileid: "51223049"
+ms.locfileid: "51266089"
 ---
 # <a name="whitepapers-for-power-bi"></a>Power BI:n tekniset raportit
 
@@ -22,6 +22,7 @@ Teknisten raporttien avulla voit tutustua Power BI:n aiheisiin syvällisemmin. T
 
 | Tekninen raportti | Kuvaus | Päivämäärä |
 | --- | --- | --- |
+| [Power BI ja tietovuot](https://go.microsoft.com/fwlink/?linkid=2034388&clcid=0x409)| Tässä julkaisussa kerrotaan tietovoiden tekniset tiedot ja kuvataan tietovuon toimintojen taustalla olevat ominaisuudet ja aloitteet. | Marraskuu 2018 |
 | [Microsoft Power BI Premium](https://aka.ms/pbipremiumwhitepaper) |Tässä artikkelissa kuvataan Power BI Premium. Kuvaus kattaa version julkaisuhetkellä ja myös työkalun kehittymisen. | Lokakuu 2017 |
 | [Power BI Premiumin suunnittelu ja käyttöönotto](https://aka.ms/Premium-Capacity-Planning-Deployment)| Tämä raportti sisältää ohjeita ja parhaita käytäntöjä Premium-kapasiteetin suunnitteluun ja käyttöönottoon tarkasti määritellyille kuormituksille.| Marraskuu 2017 |
 | [Upotetun analytiikan sopimuskapasiteetti Power BI Premiumin yhteydessä](https://aka.ms/pbiewhitepaper) |Tämä raportti sisältää ohjeita sovelluskehittäjälle tai ISV:lle yritykselle parhaiten sopivan kapasiteetin määrittämiseksi. | Lokakuu 2017 |

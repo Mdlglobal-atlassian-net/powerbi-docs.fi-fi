@@ -10,12 +10,12 @@ ms.component: powerbi-service
 ms.topic: conceptual
 LocalizationGroup: Gateways
 ms.date: 06/05/2018
-ms.openlocfilehash: b56134314b9396dff1b965786e65e62129e5e7b9
-ms.sourcegitcommit: 9c3a9ec14c111d766ef5703366c316e72f6e588f
+ms.openlocfilehash: 488d11209126098063ba8ca2b2d73573edbcdbb9
+ms.sourcegitcommit: 5eb0f37f59b5fec15c0caecbbd1f8d688c7f0013
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45558443"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51297132"
 ---
 # <a name="on-premises-data-gateway"></a>Paikallinen tietoyhdyskäytävä
 
@@ -47,9 +47,9 @@ Voit käyttää reaaliaikaista yhteyttä taulukkomuotoisiin tai moniulotteisiin 
 
 ## <a name="download-and-install-the-on-premises-data-gateway"></a>Paikallisen tietoyhdyskäytävänlataaminen ja asentaminen
 
-Jos haluat ladata yhdyskäytävän, valitse **Tietoyhdyskäytävä**-vaihtoehdon Lataukset-valikossa. Lataa [paikallinen tietoyhdyskäytävä](http://go.microsoft.com/fwlink/?LinkID=820925). 
+Jos haluat ladata yhdyskäytävän, valitse **Tietoyhdyskäytävä**-vaihtoehdon Lataukset-valikossa. Lataa [paikallinen tietoyhdyskäytävä](http://go.microsoft.com/fwlink/?LinkID=820925).
 
-Huomaa, että paikallisen tietoyhdyskäytävän päivittäminen suoritetaan asentamalla tietoyhdyskäytävä uudelleen, tässä osiossa kuvatulla tavalla. Päivitettäessä yhdyskäytävää (uudelleenasentamalla), aiemmin määritetyt yhdyskäytäväasetukset säilytetään.
+Huomaa, että paikallisen tietoyhdyskäytävän päivittäminen suoritetaan asentamalla tietoyhdyskäytävä uudelleen tässä osiossa kuvatulla tavalla. Olemassa olevat asetukset säilytetään, kunhan asennat yhdyskäytävästä uudemman version. Jos asennat saman version, asennusta käsitellään täydellisenä uudelleenasennuksena, jolloin asetuksia ei säilytetä.
 
 ![](media/service-gateway-onprem/powerbi-download-data-gateway.png)
 
@@ -118,7 +118,7 @@ Jos sinulla on välityspalvelimeen liittyviä ongelmia yhdyskäytävän kanssa, 
 [Tietolähteen hallinta – Oracle](service-gateway-onprem-manage-oracle.md)  
 [Tietolähteen hallinta – tuonti ja ajoitettu päivitys](service-gateway-enterprise-manage-scheduled-refresh.md)  
 [Paikallinen tietoyhdyskäytävä tarkemmin](service-gateway-onprem-indepth.md)  
-[Paikallinen tietoyhdyskäytävä (henkilökohtainen tila) – henkilökohtaisen yhdyskäytävän uusi versio](service-gateway-personal-mode.md)
-[Välityspalvelinasetusten määrittäminen paikallisten tietojen yhdyskäytäville](service-gateway-proxy.md)  
+[Paikallinen tietoyhdyskäytävä (henkilökohtainen tila) - henkilökohtaisen yhdyskäytävän uusi versio](service-gateway-personal-mode.md)  
+[Paikallisen tietoyhdyskäytävän välityspalvelinasetusten määrittäminen](service-gateway-proxy.md)  
 
-Onko sinulla muuta kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
+Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)

@@ -1,5 +1,5 @@
 ---
-title: Kehittyneen analytiikan ja kehittyneiden visualisointien luominen R-komentosarjoilla Power BI:ssä
+title: Kehittyneen analytiikan ja kehittyneiden visualisointien luominen käyttämällä R-komentosarjoja
 description: Kehittyneen analytiikan ja kehittyneiden visualisointien luominen käyttämällä R-komentosarjoja Power BI:ssä
 author: mihart
 manager: kvivek
@@ -7,21 +7,21 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/24/2018
+ms.date: 10/24/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: a3407458cfe6e395a5a209e136af1d4c9a7aa6a6
-ms.sourcegitcommit: 70192daf070ede3382ac13f6001e0c8b5fb8d934
+ms.openlocfilehash: 409a2ee486d0153e0dec2f715ff0e2ea19e236d7
+ms.sourcegitcommit: 5eb0f37f59b5fec15c0caecbbd1f8d688c7f0013
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "46566345"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51297109"
 ---
 # <a name="creating-r-visuals-in-the-power-bi-service"></a>R-visualisointien luominen Power BI -palvelussa
 Power BI -palvelu tukee R-komentosarjoilla luotujen visualisointien tarkastelemista ja käsittelemistä. R-komentosarjoilla luodut visualisoinnit, joita kutsutaan yleisesti nimellä *R-visualisoinnit*, voivat esittää kehittynyttä tietojen muotoilemista ja analytiikkaa, kuten ennusteita, hyödyntämällä R:n monipuolisia analytiikka- ja visualisointitaitoja.
 
 > [!NOTE]
-> [R-ohjelmointikieli](https://www.r-project.org/) on yksi yleisimmin käytetyistä ohjelmointikielistä, jota tilastotieteilijät, datatutkijat ja liiketoiminta-analyytikot käyttävät. R-kielessä on avoimen lähdekoodin yhteisö, joka tarjoaa yli 7 000 erilaista lisäosapakettia sekä hyvin laajasti käytetyt [R-käyttäjäryhmät](http://msdsug.microsoft.com/). Power BI -palvelussa käytetty R-versio on *Revolution R Open 3.2.2.*
+> [R-ohjelmointikieli](https://www.r-project.org/) on yksi yleisimmin käytetyistä ohjelmointikielistä, jota tilastotieteilijät, datatutkijat ja liiketoiminta-analyytikot käyttävät. R-kielessä on avoimen lähdekoodin yhteisö, joka tarjoaa yli 7 000 lisäosapakettia sekä hyvin laajasti käytetyt R-käyttäjäryhmät. Power BI -palvelussa käytetty R-versio on *Revolution R Open 3.2.2.*
 > 
 > 
 

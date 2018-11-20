@@ -4,22 +4,24 @@ description: Tässä artikkelissa verrataan Power BI -raporttipalvelimen ja Powe
 keywords: ''
 author: maggiesMSFT
 ms.author: maggies
-ms.date: 05/07/2018
+ms.date: 11/06/2018
 ms.topic: overview
 ms.service: powerbi
 ms.component: powerbi-report-server
 manager: kfile
 ms.custom: mvc
-ms.openlocfilehash: f78638097ea33f9954f3db78c117f1935a68530b
-ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
+ms.openlocfilehash: a693eef85f7eafe7cfac2a02cbccc346201a6f13
+ms.sourcegitcommit: a1b7ca499f4ca7e90421511e9dfa61a33333de35
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "48908527"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51507688"
 ---
 # <a name="comparing-power-bi-report-server-and-the-power-bi-service"></a>Power BI -raporttipalvelimen ja Power BI -palvelun vertailu
 
 Power BI -raporttipalvelimessa ja Power BI -palvelussa on paljon samankaltaisuuksia ja oleellisia eroja. Tässä taulukossa kerrotaan niistä lisää.
+
+## <a name="features-of-power-bi-report-server-and-the-power-bi-service"></a>Power BI -raporttipalvelimen ja Power BI -palvelun ominaisuudet
 
 | Ominaisuudet | Power BI -raporttipalvelin | Power BI -palvelu | Huomautukset
 |---------|---------|---------|---------|
@@ -39,14 +41,14 @@ Power BI -raporttipalvelimessa ja Power BI -palvelussa on paljon samankaltaisuuk
 | Q&A | Ei | Kyllä | [Q&A Power BI -palvelussa ja Power BI Desktopissa](../consumer/end-user-q-and-a.md) 
 | Nopeat merkitykselliset tiedot | Ei | Kyllä | [Merkityksellisten tietojen automaattinen luominen Power BI:llä](../consumer/end-user-insights.md) 
 | Analysoi Excelissä | Ei | Kyllä | [Analysoi Excelissä](../service-analyze-in-excel.md) 
-| Sivutetut raportit | Kyllä | Ei | Sivutetut raportit eivät ole käytettävissä Power BI -palvelussa, mutta voit [kiinnittää sivutettuja raporttikohteita Power BI -raporttinäkymiin](https://docs.microsoft.com/sql/reporting-services/pin-reporting-services-items-to-power-bi-dashboards)
+| Sivutetut raportit | Kyllä | Kyllä | [Sivutetut raportit ovat käytettävissä Power BI -palvelussa](../paginated-reports-report-builder-power-bi.md) esikatselutilassa
 | Power BI -mobiilisovellukset | Kyllä | Kyllä | [Power BI -mobiilisovellusten yleiskuva](../consumer/mobile/mobile-apps-for-mobile-devices.md) 
 | ArcGIS Maps | Ei | Kyllä | [Esri ArcGIS Maps Power BI -palvelussa ja Power BI Desktopissa](../power-bi-visualization-arcgis.md)
 | Power BI -raporttien sähköpostitilaukset | Ei | Kyllä | [Raportin tai raporttinäkymän tilaaminen](../consumer/end-user-subscribe.md) Power BI -palvelussa 
 | Sivutettujen raporttien sähköpostitilaukset | Kyllä | Ei | [Sähköpostitoimitus Reporting Servicesissä](https://docs.microsoft.com/sql/reporting-services/subscriptions/e-mail-delivery-in-reporting-services)  
 | Tietoilmoitukset | Ei | Kyllä | [Tietoilmoitukset](../service-set-data-alerts.md) Power BI -palvelussa
 | Rivitason suojaus | Vain tietolähteen kautta DirectQuery-tilassa | Käytettävissä sekä DirectQuery- (tietolähde) että tuontitilassa | [Rivitason suojaus (RLS)](../service-admin-rls.md) Power BI:ssä 
-| Koko näytön tila | Ei | Kyllä | [Koko näytön tila](../service-fullscreen-mode.md) Power BI -palvelussa 
+| Koko näytön tila | Ei | Kyllä | [Koko näytön tila](../consumer/end-user-focus.md) Power BI -palvelussa 
 | Edistynyt Office 365 -yhteistyö | Ei | Kyllä | [Yhteistyö sovelluksen työtilassa](../service-collaborate-power-bi-workspace.md) Office 365:n kautta 
 | R-visualisoinnit | Ei | Kyllä | [R-visualisointien luominen](../visuals/service-r-visuals.md) Power BI -palvelussa  
 | Esikatselutoiminnot | Ei | Kyllä | [Power BI:n esikatseluominaisuuksien käyttäminen](../consumer/end-user-preview-features.md) 

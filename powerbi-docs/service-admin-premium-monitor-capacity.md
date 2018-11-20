@@ -8,20 +8,20 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-admin
 ms.topic: conceptual
-ms.date: 10/09/2018
+ms.date: 11/06/2018
 LocalizationGroup: Premium
-ms.openlocfilehash: 2623dd3280636583d5dd6d6e3f57518550032193
-ms.sourcegitcommit: 42475ac398358d2725f98228247b78aedb8cbc4f
+ms.openlocfilehash: bb7527a197c9556509ebba721ee49a2d9817b6f5
+ms.sourcegitcommit: b23fdcc0ceff5acd2e4d52b15b310068236cf8c7
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50003198"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "51266204"
 ---
 # <a name="monitor-power-bi-premium-and-power-bi-embedded-capacities"></a>Power BI Premiumin ja Power BI Embeddedin kapasiteettien valvonta
 
 Tässä artikkelissa annetaan yleiskatsaus Power BI Premium -kapasiteettien mittausarvojen valvonnasta. Kapasiteetin käytön valvonnan avulla voit hallita kapasiteettejasi valistuneesti.
 
-Voit valvoa kapasiteettia Power BI Premium -kapasiteetin mittausarvot -sovelluksen avulla tai hallintaportaalissa. Sovelluksen käyttäminen on suositeltavaa, koska se tarjoaa paljon enemmän tietoja, mutta tässä artikkelissa käsitellään molemmat vaihtoehdot.
+Voit valvoa kapasiteettia Power BI Premium -kapasiteetin mittausarvot -sovelluksen avulla tai hallintaportaalissa. Sovelluksen käyttäminen on suositeltavaa, koska se tarjoaa paljon enemmän tietoja, mutta tässä artikkelissa käsitellään molemmat vaihtoehdot. **Sovelluksen nykyinen versio on 1.8 (julkaistu 7. marraskuuta 2018).**
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/UgsjMbhi_Bk?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 
@@ -33,11 +33,11 @@ Voit siirtyä suoraan [Premium-kapasiteetin mittausarvot -sovellukseen](https://
 
     ![Sovelluksiin siirtyminen](media/service-admin-premium-monitor-capacity/apps.png)
 
-2. Valitse oikealla puolella **Hanki sovelluksia**.
+1. Valitse oikealla puolella **Hanki sovelluksia**.
 
-3. Hae **Sovellukset**-luokasta **Power BI Premium -kapasiteetin mittausarvot -sovellus**.
+1. Hae **Sovellukset**-luokasta **Power BI Premium -kapasiteetin mittausarvot -sovellus**.
 
-4. Tilaa sovelluksen asennus.
+1. Tilaa sovelluksen asennus.
 
 Nyt kun olet asentanut sovelluksen, voit nähdä kapasiteetteja koskevia mittausarvoja organisaatiossasi. Tutustutaan muutamaan tärkeimpään käytettävissä olevaan mittausarvoon.
 
@@ -47,72 +47,155 @@ Kun avaat sovelluksen, se näyttää ensin raporttinäkymältä, jossa on yhteen
 
 ![Mittausarvosovelluksen koontinäyttö](media/service-admin-premium-monitor-capacity/app-dashboard.png)
 
-Raportissa on kolme välilehteä, jotka kuvataan tarkemmin seuraavissa osissa.
+Napsauta koontinäyttöä siirtyäksesi sen pohjana olevaan raporttiin. Raportissa on kuusi välilehteä, jotka kuvataan tarkemmin seuraavissa osissa.
 
-* **Kaikkia sivuja koskevat suodattimet**: voit suodattaa raportin muut sivut tiettyyn kapasiteettiin.
-* **Tietojoukot**: tarjoaa yksityiskohtaisia mittausarvoja tietojoukkojen kunnosta kapasiteettiesi sisällä.
-* **Järjestelmä**: antaa yleiset kapasiteetin mittausarvot, mukaan lukien muisti ja suorittimen korkea käyttö. 
+* **Suodattimet**: voit suodattaa raportin muut sivut tiettyyn kapasiteettiin.
 
-### <a name="filters-applied-to-all-pages-tab"></a>Kaikkia sivuja koskevat suodattimet -välilehti
+* **Tietojoukot**: yksityiskohtaiset mittausarvot Power BI -tietojoukkojen kunnosta kapasiteeteissasi.
 
-**Kaikkia sivuja koskevat suodattimet** -välilehden avulla voit valita kapasiteetin, tietojoukon ja päivämääräalueen viimeisten seitsemän päivän aikana. Suodattimia käytetään sitten kaikilla raportin asiaankuuluvilla sivuilla ja ruuduissa. Jos mitään suodattimia ei ole valittuna, raportti näyttää oletuksena edellisen viikon mittausarvot jokaisesta omistamastasi kapasiteetista.
+* **Sivutetut raportit**: yksityiskohtaiset mittausarvot sivutettujen raporttien kunnosta kapasiteeteissasi.
+
+* **Tietovuot**: tietovoiden yksityiskohtaiset päivitysmittausarvot kapasiteeteissasi.
+
+* **Järjestelmä**: yleiset kapasiteetin mittausarvot, mukaan lukien muisti ja suorittimen korkea käyttö.
+
+* **Näyttönimet ja tunnukset**: kapasiteettien, työtilojen ja työmäärien nimet, tunnukset ja omistajat.
+
+### <a name="filters-tab"></a>Suodattimet-välilehti
+
+**Suodattimet**-välilehdessä voit valita kapasiteetin, päivämääräalueen ja muita asetuksia. Suodattimia käytetään sitten kaikilla raportin asiaankuuluvilla sivuilla ja ruuduissa. Jos mitään suodattimia ei ole valittuna, raportti näyttää oletuksena edellisen viikon mittausarvot jokaisesta omistamastasi kapasiteetista.
 
 ![Suodattimet-välilehti](media/service-admin-premium-monitor-capacity/filters-tab.png)
 
+* **(A)** Määritä kunkin työmäärän suodattimet valitsemalla **Tietojoukot**, **Sivutetut raportit** tai **Tietovuot**.
+
+* **(B)** Nimi ja **(C)** tiedot päivitetään sen perusteella, mitä valitset kohdassa **(A)**, joten voit suodattaa työmäärän nimen mukaan. Esimerkiksi yllä olevassa kuvassa **Tietovuot** on valittuna, joten **Tietovoiden nimi** ja **Tietovoiden tiedot** näkyvät.
+
+* **(D)** Kapasiteetin tiedot, jotka osoittavat, ovatko tietojoukot, sivutetut raportit tai tietovuot käytössä kapasiteetissa.
+
 ### <a name="datasets-tab"></a>Tietojoukot-välilehti
 
-**Tietojoukot**-välilehdessä ovat sovelluksen mittausarvojoukot. Voit siirtyä eri alueille välilehden yläreunassa olevien painikkeiden avulla: **Yhteenveto**, **Päivitykset**, **Kyselyjen kestot**, **Kysely odottaa** ja **Tietojoukot**.
+Voit siirtyä eri alueille **Tietojoukot**-välilehden yläreunassa olevien painikkeiden avulla: **Yhteenveto**, **Päivitykset**, **Kyselyjen kestot**, **Kysely odottaa** ja **Tietojoukot**.
 
 ![Tietojoukot-välilehti](media/service-admin-premium-monitor-capacity/datasets-tab.png)
 
 #### <a name="summary-area"></a>Yhteenveto-alue
 
-**Yhteenveto**-alue näyttää kapasiteettiesi näkymät entiteettien, järjestelmäresurssien ja tietojoukon kuormitusten perusteella.
+**Yhteenveto**-alue näyttää kapasiteettiesi näkymät entiteettien, järjestelmäresurssien ja tietojoukon kuormitusten perusteella. Siinä näkyvät seuraavat mittausarvot.
 
-| | **Mittausarvot** |
+| **Raporttiosa** | **Mittausarvot** |
 | --- | --- |
 | **Entiteetit** | * Omistamiesi kapasiteettien määrä<br> * Tietojoukkojen erillinen määrä kapasiteetissasi<br> * Työtilojen erillinen määrä kapasiteetissasi |
 | **Järjestelmä** | * Keskimääräinen muistin käyttö gigatavuina viimeisten seitsemän päivän aikana<br> * Suurin muistin kulutus gigatavuina viimeisten seitsemän päivän aikana ja paikallinen tapahtumisaika<br> * Kuinka monta kertaa suoritin ylitti 80 prosenttia raja-arvoista viimeisten seitsemän päivän aikana kolmen minuutin osiin jaettuna<br> * Ajankohdat, jolloin suoritin useimmin ylitti 80 prosenttia viimeisten seitsemän päivän aikana tunnin osiin jaettuna sekä paikallinen tapahtumisaika<br> * Kuinka monta kertaa Direct Query- / reaaliaikainen yhteys ylitti 80 prosenttia raja-arvoista viimeisten seitsemän päivän aikana kolmen minuutin osiin jaettuna<br> * Ajankohdat, jolloin Direct Query- / reaaliaikainen yhteys useimmin ylitti 80 prosenttia viimeisten seitsemän päivän aikana tunnin osiin jaettuna sekä paikallinen tapahtumisaika |
-| **Tietojoukon kuormitukset** | * Päivitysten kokonaismäärä viimeisten seitsemän päivän aikana<br> * Onnistuneiden päivitysten kokonaismäärä viimeisten seitsemän päivän aikana<br> * Epäonnistuneiden päivitysten kokonaismäärä viimeisten seitsemän päivän aikana<br> * Muistin loppumisen vuoksi epäonnistuneiden päivitysten kokonaismäärä<br> * Päivityksen keskimääräinen kesto mitataan minuutteina, toiminnon suorittamiseen tarvittava aika<br> * Päivityksen keskimääräinen odotusaika mitataan minuutteina, keskimääräinen viive ajoitetun ajankohdan ja toiminnon alun välillä<br> * Suoritettujen kyselyjen kokonaismäärä viimeisten seitsemän päivän aikana<br> * Onnistuneiden kyselyjen kokonaismäärä viimeisten seitsemän päivän aikana<br> * Epäonnistuneiden kyselyjen kokonaismäärä viimeisten seitsemän päivän aikana<br> * Kyselyn keskimääräinen kesto mitataan minuutteina, toiminnon suorittamiseen tarvittava aika<br> * Muistipaineen vuoksi poistettujen mallien kokonaismäärä |
+| **Tietojoukon kuormitukset** | * Päivitysten kokonaismäärä viimeisten seitsemän päivän aikana<br> * Onnistuneiden päivitysten kokonaismäärä viimeisten seitsemän päivän aikana<br> * Epäonnistuneiden päivitysten kokonaismäärä viimeisten seitsemän päivän aikana<br> * Muistin loppumisen vuoksi epäonnistuneiden päivitysten kokonaismäärä<br> * Päivityksen keskimääräinen kesto on toiminnon suorittamiseen tarvittava aika minuutteina<br> * Päivityksen keskimääräinen odotusaika on keskimääräinen viive ajoitetun ajankohdan ja toiminnon alun välillä minuutteina<br> * Suoritettujen kyselyjen kokonaismäärä viimeisten seitsemän päivän aikana<br> * Onnistuneiden kyselyjen kokonaismäärä viimeisten seitsemän päivän aikana<br> * Epäonnistuneiden kyselyjen kokonaismäärä viimeisten seitsemän päivän aikana<br> * Kyselyn keskimääräinen kesto on toiminnon suorittamiseen tarvittava aika minuutteina<br> * Muistipaineen vuoksi poistettujen mallien kokonaismäärä |
 |  |  |
 
 #### <a name="refreshes-area"></a>Päivitykset-alue
 
-**Päivitykset**-alue sisältää valmiit päivitykset, onnistuneet mittaukset, päivityksen odotusajan keski-/enimmäisarvon ja päivityksen keston keski-/enimmäisarvon tietojoukkojen mukaan ositettuna viimeisten seitsemän päivän aikana. Kahdessa alimmassa kaaviossa näkyvät päivitykset ja muistin käyttö gigatavuina ja keskimääräiset odotusajat tunnin osiin jaettuna paikallisessa ajassa ilmoitettuna. Yläreunan palkkikaaviot sisältävät viisi parasta tietojoukkoa tietojoukon päivittämiseen kuluneen (päivityksen keston) keskiarvon sekä päivityksen odotusajan keskiarvon mukaan. Useat korkeat päivityksen odotusaikapiikit ovat merkki kuumana käyvästä kapasiteetista.
+**Päivitykset**-alueella näkyvät seuraavat mittausarvot.
+
+| **Raporttiosa** | **Mittausarvot** |
+| --- | --- |
+| **Päivityksen luotettavuus** | * Kokonaismäärä: kunkin tietojoukon päivitysten kokonaismäärä<br> * Luotettavuus: kullekin tietojoukolle suoritettujen päivitysten prosenttiosuus<br> * Keskimääräinen odotusaika: keskimääräinen viive ajoitetun ajankohdan ja tietojoukon päivityksen alkamisen välillä minuutteina<br> * Enimmäisodotusaika: tietojoukon enimmäisodotusaika minuutteina <br> * Keskimääräinen kesto: tietojoukon päivityksen keskimääräinen kesto minuutteina<br> * Enimmäiskesto: tietojoukon pitkäkestoisimman päivityksen kesto minuutteina |
+| **Top 5 tietojoukkoa päivityksen keskimääräisen keston mukaan** | * Viisi tietojoukkoa, joilla on pisin päivityksen keskimääräinen kesto minuutteina |
+| **Top 5 tietojoukkoa keskimääräisen odotusajan mukaan** | * Viisi tietojoukkoa, joilla on pisin päivityksen keskimääräinen odotusaika minuutteina |
+| **Päivityksen keskimääräinen odotusaika tunneittain** | * Päivityksen keskimääräinen odotusaika tunnin osiin jaettuna paikallisessa ajassa ilmoitettuna. Useat korkeat päivityksen odotusaikapiikit ovat merkki kuumana käyvästä kapasiteetista. |
+| **Päivitysmäärä tunneittain ja muistin käyttö** | * Onnistumiset, epäonnistumiset ja muistin käyttö tunnin osiin jaettuna paikallisessa ajassa ilmoitettuna |
+|  |  |
 
 #### <a name="query-durations-area"></a>Kyselyjen kestot -alue
 
-**Kyselyjen kestot** -alueella luetellaan suoritettujen kyselyjen kokonaismäärä ja niiden keskimääräinen ja enimmäiskesto millisekunteina. Nämä tiedot on ositettu tietojoukkojen, työtilan ja tunnittaisten säilöjen mukaan viimeisten seitsemän päivän ajalta. Alimmainen kaavio näyttää kyselyjen määrän ja keston keskiarvon (millisekunteina) vs. muistin kulutuksen gigatavuina tunnin osiin jaettuna paikallisessa ajassa ilmoitettuna.
+**Kyselyjen kestot** -alueella näkyvät seuraavat mittausarvot.
 
-Oikean yläkulman kaavio näyttää kyselyn keston jakaumahistogrammin. Histogrammi on jaoteltu millisekunneissa ilmoitettujen kyselyjen kestojen mukaan seuraaviin luokkiin: < 30 ms, 30–100 ms, 100–300 ms, 300 ms–1 s, 1–3 s, 3–10 s, 10–30 s ja > 30 s.
-
-Oikean alakulman kaavio näyttää viisi parasta tietojoukkoa kyselyn suorittamisen keston keskiarvon mukaan.
-
-Kyselyjen pitkät kestot ja odotusajat ovat osoitus siitä, että kapasiteetti on äärirajoilla. Se saattaa myös tarkoittaa sitä, että yksi tietojoukko aiheuttaa ongelmia ja tarkempaa tutkimusta tarvitaan.
+| **Raporttiosa** | **Mittausarvot** |
+| --- | --- |
+| **Kyselyjen kestot** | * Tämän osion tiedot on ositettu tietojoukkojen, työtilan ja tunnittaisten säilöjen mukaan viimeisten seitsemän päivän ajalta<br> * Kokonaismäärä: tietojoukolle suoritettavien kyselyjen kokonaismäärä<br> * Keskiarvo: tietojoukon kyselyn keskimääräinen kesto millisekunteina<br> * Enintään: tietojoukon pitkäkestoisimman kyselyn kesto millisekunteina|
+| **Kyselyn keston jakauma** | * Kyselyn keston histogrammi on jaoteltu kyselyjen kestojen mukaan (millisekunneissa) seuraaviin luokkiin: < 30 ms, 30–100 ms, 100–300 ms, 300 ms–1 s, 1–3 s, 3–10 s, 10–30 s ja > 30 s. Kyselyjen pitkät kestot ja odotusajat ovat osoitus siitä, että kapasiteetti on äärirajoilla. Se saattaa myös tarkoittaa sitä, että yksi tietojoukko aiheuttaa ongelmia ja tarkempaa tutkimusta tarvitaan. |
+| **Top 5 tietojoukkoa keskimääräisen keston mukaan** | * Viisi tietojoukkoa, joilla on pisin kyselyn keskimääräinen kesto millisekunteina |
+| **Suora kysely / Reaaliaikaiset yhteydet (> 80 prosentin käyttöaste)** | * Kerrat, jolloin suora kysely tai reaaliaikainen yhteys ylitti suorittimen 80 prosentin käyttöasteen tunnin osiin jaettuna paikallisessa ajassa ilmoitettuna |
+| **Kyselyn keston jakauma tunneittain** | * Kyselyjen määrä ja keskimääräinen kesto (millisekunteina) vs. muistin käyttö gigatavuina tunnin osiin jaettuna paikallisessa ajassa ilmoitettuna |
+|  |  |
 
 #### <a name="query-waits-area"></a>Kysely odottaa -alue
 
-**Kysely odottaa**  -alueella luetellaan suoritettujen kyselyiden kokonaismäärä, odottavien kyselyjen kokonaismäärä reaaliaikaiselle/suoralle kyselylle ja odotusajan keski-/enimmäisarvo millisekunteina. Nämä tiedot on ositettu tietojoukkojen, työtilan ja tunnittaisten säilöjen mukaan viimeisten seitsemän päivän ajalta. Alimmainen kaavio näyttää odottavien kyselyjen määrän ja odotusajan keskiarvon (millisekunteina) vs. muistin kulutuksen gigatavuina tunnin osiin jaettuna paikallisessa ajassa ilmoitettuna.
+**Kysely odottaa** -alueella näkyvät seuraavat mittausarvot.
 
-Oikean yläkulman kaavio näyttää kyselyn odotusajan jakaumahistogrammin. Histogrammi on jaoteltu millisekunneissa ilmoitettujen kyselyjen kestojen mukaan seuraaviin luokkiin: < 50 ms, 50–100 ms, 100–200 ms, 200–400 ms, 400 ms–1 s, 1–5 s ja > 5 s.
-
-Oikean alakulman kaavio näyttää viisi parasta tietojoukkoa kyselyn aloittamisen odotusajan keskiarvon mukaan.
+| **Raporttiosa** | **Mittausarvot** |
+| --- | --- |
+| **Kyselyn odotusajat** | * Tämän osion tiedot on ositettu tietojoukkojen, työtilan ja tunnittaisten säilöjen mukaan viimeisten seitsemän päivän ajalta<br> * Kokonaismäärä: tietojoukolle suoritettavien kyselyjen kokonaismäärä<br> * Odotusmäärä: ennen suorittamisen aloittamista järjestelmäresursseissa odottaneiden kyselyjen määrä tietojoukossa <br> * Keskiarvo: tietojoukon kyselyn keskimääräinen odotusaika millisekunteina<br> * Enintään: tietojoukon pisimpään odottaneen kyselyn kesto millisekunteina|
+| **Odotusajan jakauma** | * Kyselyn keston histogrammi on jaoteltu kyselyjen kestojen mukaan (millisekunneissa) seuraaviin luokkiin: < 50 ms, 50–100 ms, 100–200 ms, 200–400 ms, 400 ms–1 s, 1–5 s ja > 5 s |
+| **Top 5 tietojoukkoa keskimääräisen odotusajan mukaan** | * Viisi tietojoukkoa, joilla on pisin keskimääräinen odotusaika kyselyn suorittamisen aloittamiseen millisekunteina |
+| **Odottavien kyselyjen määrät ja ajat tunneittain** | * Odottavien kyselyjen määrä ja keskimääräinen odotusaika (millisekunteina) vs. muistin käyttö gigatavuina tunnin osiin jaettuna paikallisessa ajassa ilmoitettuna |
+|  |  |
 
 #### <a name="datasets-area"></a>Tietojoukot-alue
 
-**Tietojoukot**-alue näyttää muistipaineen vuoksi poistetut valmiit tietojoukot tunnin mukaan.
+**Tietojoukot**-alueella näkyvät seuraavat mittausarvot.
+
+| **Raporttiosa** | **Mittausarvot** |
+| --- | --- |
+| **Tietojoukon poistolaskuri** | * Kokonaismäärä: kapasiteetista *häädettävien* tietojoukkojen kokonaismäärä. Kun kapasiteetti kohtaa muistipainetta, solmu häätää yhden tai useamman tietojoukon muistista. Passiiviset tietojoukot (joihin ei kyseisellä hetkellä kohdistu kysely- tai uudelleenlataustoimintoja) häädetään ensin. Seuraavaksi häätöjärjestyksessä sovelletaan ”viimeiseksi käytetyt ensin” -periaatetta.|
+| **Tietojoukkojen häätö ja muistin käyttö tunneittain** | * Tietojoukkojen häädöt vs. muistin käyttö gigatavuina tunnin osiin jaettuna paikallisessa ajassa ilmoitettuna |
+|  |  |
+
+### <a name="paginated-reports-tab"></a>Sivutetut raportit -välilehti
+
+**Sivutetut raportit** -välilehdessä on yksityiskohtaiset mittausarvot sivutettujen raporttien kunnosta kapasiteeteissasi.
+
+![Sivutetut raportit -välilehti](media/service-admin-premium-monitor-capacity/paginated-reports-tab.png)
+
+**Sivutetut raportit** -välilehdessä näkyvät seuraavat mittausarvot.
+
+| **Raporttiosa** | **Mittausarvot** |
+| --- | --- |
+| **Kokonaiskäyttö** | * Katselukerrat yhteensä: kuinka monta kertaa käyttäjät ovat katselleet raporttia<br> * Rivimäärä: raportin tietorivien määrä<br> * Nouto (keskimääräinen): raportin tietojen noutamiseen keskimääräisesti kuluva aika millisekunteina. Pitkä kesto voi olla osoitus kyselyjen hitaasta suorittamisesta tai muista tietolähteeseen liittyvistä ongelmista. <br> * Käsittely (keskimääräinen): raportin tietojen käsittelemiseen keskimääräisesti kuluva aika millisekunteina<br>* Hahmontaminen (keskimääräinen): raportin hahmontamiseen selaimessa keskimääräisesti kuluva aika millisekunteina<br> * Kokonaisaika: raportin kaikkiin vaiheisiin kuluva aika millisekunteina|
+| **Top 5 raporttia tietojen keskimääräisen noutoajan mukaan** | * Viisi raporttia, joissa on pisin tietojen keskimääräinen noutoaika millisekunteina |
+| **Top 5 raporttia keskimääräisen käsittelyajan mukaan** | * Viisi raporttia, joissa on pisin raportin keskimääräinen käsittelyaika millisekunteina |
+| **Kestot tunneittain** | * Tietojen nouto vs. käsittely- ja hahmonnusaika tunnin osiin jaettuna paikallisessa ajassa ilmoitettuna |
+| **Tulokset tunneittain** | * Onnistumiset, epäonnistumiset ja muistin käyttö tunnin osiin jaettuna paikallisessa ajassa ilmoitettuna |
+|  |  |
+
+### <a name="dataflows-tab"></a>Tietovuot-välilehti
+
+**Tietovuot**-välilehdessä on tietovoiden yksityiskohtaiset päivitysmittausarvot kapasiteeteissasi.
+
+![Tietovuot-välilehti](media/service-admin-premium-monitor-capacity/dataflows-tab.png)
+
+**Tietovuot**-välilehdessä näkyvät seuraavat mittausarvot.
+
+| **Raporttiosa** | **Mittausarvot** |
+| --- | --- |
+| **Päivitys** | * Kokonaismäärä: kunkin tietovuon päivitysten kokonaismäärä<br> * Luotettavuus: kullekin tietovuolle suoritettujen päivitysten prosenttiosuus<br> * Keskimääräinen odotusaika: keskimääräinen viive ajoitetun ajankohdan ja tietovuon päivityksen alkamisen välillä minuutteina<br> * Enimmäisodotusaika: tietovuon enimmäisodotusaika minuutteina <br> * Keskimääräinen kesto: tietovuon päivityksen keskimääräinen kesto minuutteina<br> * Enimmäiskesto: tietovuon pitkäkestoisimman päivityksen kesto minuutteina |
+| **Top 5 tietovuota päivityksen keskimääräisen keston mukaan** | * Viisi tietovuota, joilla on pisin päivityksen keskimääräinen kesto minuutteina |
+| **Top 5 tietovuota keskimääräisen odotusajan mukaan** | * Viisi tietovuota, joilla on pisin päivityksen keskimääräinen odotusaika minuutteina |
+| **Päivityksen keskimääräinen odotusaika tunneittain** | * Päivityksen keskimääräinen odotusaika tunnin osiin jaettuna paikallisessa ajassa ilmoitettuna. Useat korkeat päivityksen odotusaikapiikit ovat merkki kuumana käyvästä kapasiteetista. |
+| **Päivitysmäärä tunneittain ja muistin käyttö** | * Onnistumiset, epäonnistumiset ja muistin käyttö tunnin osiin jaettuna paikallisessa ajassa ilmoitettuna |
+|  |  |
 
 ### <a name="system-tab"></a>Järjestelmä-välilehti
 
-**Järjestelmä**-välilehti näyttää suorittimen korkean käytön ajat (80 prosentin käyttöaste ylittymiskertojen määrä), suoran kyselyn / reaaliaikaisen yhteyden korkean käyttöasteen ja muistin käytön.
+**Järjestelmä**-välilehdessä näkyy suorittimen ja muistin käyttö kaikissa kapasiteeteissa ja työmäärissä.
 
-![Premium-järjestelmäraportti](media/service-admin-premium-monitor-capacity/system-tab.png)
+![Järjestelmä-välilehti](media/service-admin-premium-monitor-capacity/system-tab.png)
+
+**Järjestelmä**-välilehdessä näkyvät seuraavat mittausarvot.
+
+| **Raporttiosa** | **Mittausarvot** |
+| --- | --- |
+| **Suorittimen mittausarvot (> 80 prosentin käyttöaste)** | * Kuinka monta kertaa suoritin ylitti 80 prosenttia raja-arvoista viimeisten seitsemän päivän aikana kolmen minuutin osiin jaettuna |
+| **Muistin käyttö** | * Muistin käyttö viimeisten seitsemän päivän aikana kolmen minuutin osiin jaettuna |
+|  |  |
+
+### <a name="display-names-and-ids-tab"></a>Näyttönimet ja tunnukset -välilehti
+
+**Näyttönimet ja tunnukset** -välilehdessä näkyvät kapasiteettien, työtilojen ja työmäärien nimet, tunnukset ja omistajat.
 
 ## <a name="monitor-power-bi-embedded-capacity"></a>Power BI Embedded -kapasiteetin valvonta
 
 Voit käyttää myös Power BI Premium -kapasiteetin mittausarvot -sovellusta *A-varastointiyksikkö*-kapasiteettien valvontaan Power BI Embeddedissä. Kyseiset kapasiteetit näkyvät raportissa niin kauan kuin olet kapasiteetin järjestelmänvalvoja. Raportin päivitys kuitenkin epäonnistuu, ellet myönnä Power BI:lle tiettyjä käyttöoikeuksia A-varastointiyksiköissä:
 
 1. Avaa kapasiteettisi Azure-portaalissa.
+
 1. Valitse **Käyttöoikeuksien valvonta (IAM)** ja lisää Power BI Premium -sovellus lukijan rooliin. Jos et löydä sovellusta nimen mukaan, voit myös lisätä sen asiakastunnuksen mukaan: cb4dc29f 0bf4-402a-8b30-7511498ed654.
 
     ![Power BI Embeddedin käyttöoikeudet](media/service-admin-premium-monitor-capacity/embedded-permissions.png)

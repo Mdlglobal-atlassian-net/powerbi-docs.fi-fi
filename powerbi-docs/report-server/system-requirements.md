@@ -1,23 +1,23 @@
 ---
-title: Laitteisto- ja ohjelmistovaatimukset Power BI-raporttipalvelimen asentamista varten
-description: Täältä löydät laitteistoa ja ohjelmistoa koskevat vähimmäisvaatimukset Power BI-raporttipalvelimen asentamiseen ja suorittamiseen.
+title: Laitteisto- ja ohjelmistovaatimukset Power BI -raporttipalvelimen asentamista varten
+description: Tässä artikkelissa määritetään laitteiston ja ohjelmiston vähimmäisvaatimukset Power BI -raporttipalvelimen asentamista ja käyttämistä varten.
 author: markingmyname
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-report-server
 ms.topic: conceptual
-ms.date: 06/13/2018
+ms.date: 11/08/2018
 ms.author: maghan
-ms.openlocfilehash: c2784bf8e8dca857ae2a1b55d1ad8560e552cafb
-ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
+ms.openlocfilehash: c8904f3025a0a60557b1d3efb54ea6bc18c20da4
+ms.sourcegitcommit: a1b7ca499f4ca7e90421511e9dfa61a33333de35
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37780554"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51507902"
 ---
-# <a name="hardware-and-software-requirements-for-installing-power-bi-report-server"></a>Laitteisto- ja ohjelmistovaatimukset Power BI-raporttipalvelimen asentamista varten
-Täältä löydät laitteistoa ja ohjelmistoa koskevat vähimmäisvaatimukset Power BI-raporttipalvelimen asentamiseen ja suorittamiseen.
+# <a name="hardware-and-software-requirements-for-installing-power-bi-report-server"></a>Laitteisto- ja ohjelmistovaatimukset Power BI -raporttipalvelimen asentamista varten
+Tässä artikkelissa määritetään laitteiston ja ohjelmiston vähimmäisvaatimukset Power BI -raporttipalvelimen asentamista ja käyttämistä varten.
 
 ## <a name="processor-memory-and-operating-system-requirements"></a>Suoritin, muisti ja käyttöjärjestelmävaatimukset
 
@@ -43,18 +43,19 @@ SQL Serveriä käytetään isännöimään raporttipalvelintietokantoja. SQL Ser
 * SQL Server 2014
 * SQL Server 2012
 
-Raporttipalvelimen tietokannan luominen etätietokoneessa edellyttää, että määrität yhteyden toimialueen käyttäjätiliin tai palvelutiliin, jolla on verkkoyhteys. Jos päätät käyttää SQL Server-etäesiintymää, kannattaa harkita huolellisesti, mitä tunnistetietoja raporttipalvelimen kannattaa käyttää SQL Server-esiintymään. Katso lisätietoja kohdasta [Raporttipalvelimen tietokantayhteyden määrittäminen](https://docs.microsoft.com/sql/reporting-services/install-windows/configure-a-report-server-database-connection-ssrs-configuration-manager).
+Kun luot raporttipalvelimen tietokannan etätietokoneessa, sinun on määritettävä yhteys, jota käytetään verkkoyhteydellä varustetun toimialueen käyttäjätilin tai palvelutilin kanssa. Jos päätät käyttää SQL Server-etäesiintymää, kannattaa harkita huolellisesti, mitä tunnistetietoja raporttipalvelimen kannattaa käyttää SQL Server-esiintymään. Katso lisätietoja kohdasta [Raporttipalvelimen tietokantayhteyden määrittäminen](https://docs.microsoft.com/sql/reporting-services/install-windows/configure-a-report-server-database-connection-ssrs-configuration-manager).
 
 ## <a name="considerations"></a>Huomioitavaa
-Power BI-raporttipalvelin asentaa oletusarvot raporttipalvelimen ydinasetusten määrittämiseksi raporttipalvelimen toimintaa varten. Se sisältää seuraavat vaatimukset:
+Power BI -raporttipalvelin asentaa oletusarvot raporttipalvelimen ydinasetusten määrittämiseksi raporttipalvelimen toimintaa varten. Se sisältää seuraavat vaatimukset:
 
 * SQL Server-tietokantamoduulin on oltava käytettävissä asennuksen jälkeen ja ennen kuin määrität raporttipalvelimen tietokannan. Tietokantamoduulin esiintymä isännöi raporttipalvelimen tietokantaa, jonka Reporting Services Configuration Manager luo. Tietokantamoduulia ei vaadita varsinaisessa asennusvaiheessa.
-* Asennusohjelman suorittamiseen käytettävän käyttäjätilin on oltava paikallisen Järjestelmänvalvojat-ryhmän jäsen.
-* Reporting Services Configuration Managerin käyttäjätilillä on oltava oikeus käyttää ja luoda tietokantoja tietokantamoduulin esiintymässä, joka isännöi raporttipalvelun tietokantoja.
+- Artikkelissa [SQL Serverin julkaisujen tukemat raportointipalveluominaisuudet](https://docs.microsoft.com/sql/reporting-services/reporting-services-features-supported-by-the-editions-of-sql-server-2016) mainitaan SQL Serverin julkaisujen erot.
+* Käyttäjätilin, jossa asennus suoritetaan, on oltava paikallisen Järjestelmänvalvojat-ryhmän jäsen.
+* Käyttäjätilillä, joka suorittaa Reporting Services Configuration Managerin, on oltava oikeus käyttää ja luoda tietokantoja tietokantamoduulin esiintymässä, joka isännöi raporttipalvelimen tietokantoja.
 * Asennusohjelman on voitava käyttää oletusarvoja varaamaan URL-osoitteet, joiden avulla saadaan pääsy raporttipalvelimelle ja verkkoportaaliin. Nämä arvot ovat portti 80, vahva yleismerkki ja näennäishakemiston nimet muodossa **ReportServer** ja **Raportit**.
 
-## <a name="read-only-domain-controller-rodc"></a>Vain luku-toimialueen ohjain (RODC)
- Raporttipalvelin voidaan asentaa ympäristöön, jossa on Vain luku-toimialueen ohjain (RODC), mutta Reporting Services tarvitsee käyttöoikeuden luku- ja kirjoitus-toimialueen ohjaimelle toimiakseen oikein. Jos Reporting Services sisältää vain RODC-käyttöoikeuden, voi tulla virheitä, kun yrität hallita palvelua.
+## <a name="read-only-domain-controller-rodc"></a>Read-Only Domain Controller (RODC)
+ Voit asentaa raporttipalvelimen ympäristössä, jossa on Read-Only Domain Controller (RODC). Reporting Services tarvitsee kuitenkin käyttöoikeuden Read-Write Domain Controlleriin, jotta se toimii oikein. Jos Reporting Services sisältää vain RODC-käyttöoikeuden, voi tulla virheitä, kun yrität hallita palvelua.
 
 ## <a name="power-bi-reports-and-analysis-services-live-connections"></a>Reaaliaikaisten Power BI -raporttien ja Analysis Services -yhteyksien käyttäminen
 Voit käyttää reaaliaikaista yhteyttä taulukkomuotoisiin tai moniulotteisiin esiintymiin. Analysis Services -palvelimen version on oltava oikea, jotta se toimii oikein.
@@ -69,7 +70,7 @@ Voit käyttää reaaliaikaista yhteyttä taulukkomuotoisiin tai moniulotteisiin 
 [Mikä on Power BI -raporttipalvelin?](get-started.md)  
 [Järjestelmänvalvojan yleiskatsaus](admin-handbook-overview.md)  
 [Power BI -raporttipalvelimen asentaminen](install-report-server.md)  
-[Raportin muodostimen asentaminen](https://docs.microsoft.com/sql/reporting-services/install-windows/install-report-builder)  
+[Raportin muodostimen lataaminen](https://www.microsoft.com/download/details.aspx?id=53613)  
 [SQL Server Data Tools (SSDT) -työkalujen lataaminen](http://go.microsoft.com/fwlink/?LinkID=616714)
 
 Onko sinulla muuta kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)

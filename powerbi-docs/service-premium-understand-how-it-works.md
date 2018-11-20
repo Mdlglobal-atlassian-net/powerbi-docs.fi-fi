@@ -9,12 +9,12 @@ ms.author: mblythe
 ms.reviewer: mblythe
 author: mgblythe
 manager: kfile
-ms.openlocfilehash: 99c84aff932c7ce56a4aaa81d71e4583bce3e4c2
-ms.sourcegitcommit: a764e4b9d06b50d9b6173d0fbb7555e3babe6351
+ms.openlocfilehash: 534c06c66d561a04dbffc04412095d6924c92781
+ms.sourcegitcommit: b23fdcc0ceff5acd2e4d52b15b310068236cf8c7
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/22/2018
-ms.locfileid: "49641736"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "51266066"
 ---
 # <a name="microsoft-power-bi-premium-capacity-resource-management-and-optimization"></a>Microsoft Power BI Premium -kapasiteetin resurssien hallinta ja optimointi
 
@@ -26,6 +26,7 @@ Tässä artikkelissa kuvataan, miten Power BI Premium hallinnoi resursseja. Arti
 
 * Muistiin ladattavat tietojoukot
 * Tietojoukkojen uudelleen lataaminen (sekä ajastetut että pyydetyt)
+* Kuormitukset, joita kapasiteetti tukee
 * Raporttikyselyt
 
 Kun kapasiteetissäsi olevasta, julkaistusta tietojoukosta tulee pyyntö, kyseinen tietojoukko ladataan muistiin pysyvästä tallennusvälineestä (tätä kutsutaan myös kuvan lataamiseksi). Tietojoukon pitäminen ladattuna muistiin auttaa nopeuttamaan kyseiseen tietojoukkoon liittyviin kyselyihin vastaamista tulevaisuudessa. Tietojoukon muistiin lataamisen viemän muistin lisäksi raporttikyselyt ja tietojoukkojen uudelleen lataaminen vievät lisämuistia.
@@ -51,6 +52,10 @@ Tietojoukot voidaan ladata uudelleen ajastetusti tai käyttäjien pyynnöstä. K
 Jos tarvittava muisti ei riitä häädöistä huolimatta, tietojen lataaminen uudelleen siirretään jonoon odottamaan uutta yritystä. Palvelu yrittää tietojen hakua kunnes se onnistuu tai kunnes uusi tietojen uudelleen lataaminen käynnistetään.
 
 Jos millekään kapasiteetissa olevalle tietojoukolle tehdään interaktiivinen kysely ja tarvittava muisti ei ole käytettävissä käynnissä olevan tietojen uudelleen lataamisen takia, pyyntö epäonnistuu ja käyttäjän on yritettävä sitä uudelleen.
+
+### <a name="workloads"></a>Kuormitukset
+
+Oletusarvoisesti **Power BI Premiumin** ja **Power BI Embeddedin** kapasiteetit tukevat vain kuormitusta, joka liittyy Power BI -kyselyiden suorittamiseen pilvipalvelussa. Esikatselun tuki tarjotaan nyt myös kahdelle muulle kuormitukselle: **sivutetut raportit** ja **tietovuot**. Jos nämä työnkulut ovat käytössä, ne voivat vaikuttaa muistin käyttöön kapasiteetissasi. Lisätietoja on kohdassa [Kuormituksien määrittäminen](service-admin-premium-manage.md#configure-workloads).
 
 ## <a name="cpu-resource-management-in-premium-capacity"></a>Suorittimen resurssien hallinta premium-kapasiteetissa
 

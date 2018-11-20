@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 01/24/2018
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: b4ecec3b2e53c2fea0fcbb7d78d1114da1a105ed
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: da8fb3da7ea0e4f0457951bc421a5f207c3c6911
+ms.sourcegitcommit: 47269676aa600e60ec7ba0e323941a71e0622833
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34299627"
+ms.lasthandoff: 11/08/2018
+ms.locfileid: "51273306"
 ---
 # <a name="on-premises-data-gateway-faq"></a>Paikallisten tietoyhdyskäytävien usein kysytyt kysymykset
 <!-- Shared FAQ shared Include -->
@@ -68,6 +68,9 @@ ms.locfileid: "34299627"
 
 **Kysymys:**: toimiiko yhdyskäytävä ExpressRouten kanssa?  
 **Vastaus:** Kyllä. Saat lisätietoja [Power BI ja ExpressRoute](service-admin-power-bi-expressroute.md) -ohjeartikkelista
+
+**Kysymys:** käytän R-komentosarjoja. Tuetaanko sitä?
+**Vastaus**: R-komentosarjoja tuetaan vain henkilökohtaisessa tilassa.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 [Paikallinen tietoyhdyskäytävä](service-gateway-onprem.md)  

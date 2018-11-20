@@ -4,19 +4,18 @@ description: ArcGis-kartan käyttäminen lukunäkymässä Power BI -raportin kul
 author: mihart
 manager: kvivek
 ms.reviewer: ''
-tags: power bi, service, desktop, mobile
 featuredvideoid: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 10/23/2018
+ms.date: 11/06/2018
 ms.author: mihart
-ms.openlocfilehash: dd7bca6782327700f087b6b9ca60a9654fa362d8
-ms.sourcegitcommit: 42475ac398358d2725f98228247b78aedb8cbc4f
+ms.openlocfilehash: 0454d2ea0e69a77482d9ba9587497679819daf06
+ms.sourcegitcommit: b23fdcc0ceff5acd2e4d52b15b310068236cf8c7
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50003267"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "51266020"
 ---
 # <a name="interacting-with-arcgis-maps-in-power-bi"></a>ArcGIS-karttojen käsittely Power BI:ssä
 Tämä ohjeaihe on kirjoitettu sellaisen käyttäjän näkökulmasta, joka on ArcGIS-kartan *kuluttaja* ja tarkastelee karttaa Power BI -palvelussa, Desktopissa tai mobiililaitteelta. Kun ArcGIS-kartan tehnyt henkilö jakaa kartan sinulle, voit toimia kartan kanssa monin eri tavoin.  Jos haluat lisätietoa ArcGIS-karttojen luomisesta, katso [opetusohjelma Esrin ArcGIS-kartoista](../power-bi-visualization-arcgis.md).
@@ -24,7 +23,7 @@ Tämä ohjeaihe on kirjoitettu sellaisen käyttäjän näkökulmasta, joka on Ar
 ArcGIS-kartat ja Power BI yhdessä tekevät kartoista muutakin kuin vain esitettäviä pisteitä. Valittavissasi on pohjakarttoja, sijaintityyppejä, teemoja, symbolityylejä ja viittauskerroksia, joiden avulla voit luoda upeita, informatiivisia karttavisualisointeja. Määräävien tietokerrosten (kuten laskentatietojen) yhdistäminen sijaintikohtaista analyysiä sisältäviin karttoihin mahdollistaa visualisoinnin tietojen ymmärtämisen syvemmin.
 
 > [!TIP]
-> GIS tarkoittaa maantieteellistä informaatiotutkimusta (Geographic Information Science).
+> GIS tarkoittaa maantieteellistä tietojärjestelmää (Geographic Information System).
 > 
 
 Tässä esimerkissä käytetään samaa ArcGIS-karttaa, joka luotiin [opetusohjelmassa Esrin ArcGIS-kartoista](../power-bi-visualization-arcgis.md). Se esittää viime vuoden myynnin kaupungeittain ja käyttää pohjana tiekarttaa, jossa on lisäksi kokoa edustavia kuplasymboleja sekä viittauskerroksena kotitalouksien keskitulo. Kartassa on myös kolme nastamerkkiä ja yksi ajoaikasäde (violetti).

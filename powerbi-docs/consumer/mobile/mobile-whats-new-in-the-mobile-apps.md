@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-mobile
 ms.topic: conceptual
-ms.date: 09/14/2018
+ms.date: 11/08/2018
 ms.author: maggies
-ms.openlocfilehash: 798b1daa13079e69788bc977f37748531e38f431
-ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
+ms.openlocfilehash: 9d73e7b4e9b303f1a774c14fc813572805f7b093
+ms.sourcegitcommit: 5eb0f37f59b5fec15c0caecbbd1f8d688c7f0013
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "48909241"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51297224"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Power BI -mobiilisovellusten uudet ominaisuudet
 Lisätietoja aiheeseen liittyvistä uusista ominaisuuksista:
@@ -22,6 +22,26 @@ Lisätietoja aiheeseen liittyvistä uusista ominaisuuksista:
 * [Power BI -tiimin mobiilisovelluksia käsittelevä blogi](https://powerbi.microsoft.com/blog/tag/mobile/)
 * [Power BI Desktopin uudet ominaisuudet](../../desktop-latest-update.md)  
 * [Power BI -palvelun uudet ominaisuudet](../../service-whats-new.md)  
+
+## <a name="october-2018"></a>Lokakuu 2018
+
+### <a name="paginated-report-preview-all-devices"></a>Sivutetun raportin esikatselu (kaikki laitteet)
+
+Sivutetut raportit ovat nyt käytettävissä Power BI -palvelussa. Jos käyttäjällä on sivutettujen raporttien käyttöoikeus Power BI -palvelussa, hän voi käyttää näitä raportteja myös mobiilisovelluksessa. 
+
+Lue Power BI [-blogikirjoitus sivutetuista raporteista mobiilisovelluksessa](https://powerbi.microsoft.com/en-us/blog/power-bi-paginated-reports-also-available-in-power-bi-mobile-apps-preview/).
+
+### <a name="shared-credentials-ios"></a>Jaetut tunnistetiedot (iOS)
+
+Power BI:n mobiilisovellukseen kirjautuminen on helpompaa kuin aiemmin. Yksinkertaistimme kirjautumisprosessia jaettujen tunnistetietojen avulla käyttämällä laitteen muiden Office 365 -sovellusten tunnistetietoja Power BI -palvelun todentamisessa.
+
+### <a name="in-app-urls-ios"></a>Sovelluksen sisäiset URL-osoitteet (iOS) 
+
+Raporteissa olevat linkit, jotka viittaavat muihin Power BI:n artefakteihin, avataan nyt suoraan sovelluksessa. Tämän ansiosta voit luoda mukautettuja siirtymistyönkulkuja ja linkittää esimerkiksi raportista koontinäyttöön.
+
+### <a name="ios12-and-watchos-5-support"></a>iOS12:n ja watchOS 5:n tuki 
+
+Olemme päivittäneet iOS:n Power BI -sovelluksen, jotta se toimisi saumattomasti mobiililaitteiden ja kellon uudessa käyttöjärjestelmässä.
 
 ## <a name="september-2018"></a>Syyskuu 2018
 
@@ -41,10 +61,11 @@ Lue Power BI -[blogikirjoitus koontinäytön kommenteista](https://powerbi.micro
 
 Kertakirjautuminen on yksi pyydetyimmistä ominaisuuksista Power BI:n Windows-mobiilisovellukselle. Voit nyt käyttää ensisijaista organisaatiotiliäsi toimialueeseen liitettyihin Windows-mobiililaitteisiin kirjautumisen lisäksi myös kirjautumisessa sisään saumattomasti Power BI -palveluun. Lue lisää [kertakirjautumisesta ja Windows-mobiilisovelluksista](mobile-windows-10-app-single-sign-on-sso.md).
 
+## <a name="previous-months"></a>Edelliset kuukaudet
 
-## <a name="july-2018"></a>Heinäkuu 2018
+### <a name="july-2018"></a>Heinäkuu 2018
 
-### <a name="ios-and-android-only"></a>Vain iOS ja Android
+#### <a name="ios-and-android-only"></a>Vain iOS ja Android
 
 **Jaetut suodattimet**
 
@@ -55,127 +76,125 @@ Voit nyt vastaanottaa jaettuja suodattimia ja osittajia sisältäviä raportteja
 Kun tarkastelet raporttia vaakatilassa mobiililaitteella, näet samat taustakuvat kuin Power BI:n verkkosovelluksessa.
 
 
-## <a name="june-2018"></a>Kesäkuu 2018
+### <a name="june-2018"></a>Kesäkuu 2018
 
-### <a name="full-canvas-reports"></a>Full-piirtoalustan raportit
+#### <a name="full-canvas-reports"></a>Full-piirtoalustan raportit
 
 Ylä- ja alatoimintopalkit katoavat nyt pian raportin lataamisen jälkeen, joten näet raportista enemmän kerralla.
 
-### <a name="increased-phone-report-canvas-size"></a>Parannettu puhelinraportin piirtoalustan koko
+#### <a name="increased-phone-report-canvas-size"></a>Parannettu puhelinraportin piirtoalustan koko
 
 Olemme lisänneet puhelinraportin piirtoalustan kokoa, jotta siihen mahtuu aiempaa enemmän visualisointeja.
 
-## <a name="may-2018"></a>Toukokuu 2018
+### <a name="may-2018"></a>Tou 2018
 
-### <a name="mobile-drill-through-all-mobile-apps"></a>Mobiili alirakenneraportti: kaikki mobiilisovellukset
+#### <a name="mobile-drill-through-all-mobile-apps"></a>Mobiili alirakenneraportti: kaikki mobiilisovellukset
 
 Voit porautua mobiilisovelluksissa valitusta arvopisteestä raportin toiselle sivulle, jos raportin tekijä on määrittänyt tämän toiminnon. 
 
-### <a name="back-button-all-mobile-apps"></a>Takaisin-painike: kaikki mobiilisovellukset
+#### <a name="back-button-all-mobile-apps"></a>Takaisin-painike: kaikki mobiilisovellukset
 
 Siirtyessäsi raportissa pyyhkäisyn avulla tai valitsemalla raportin sivu toimintorivistä tai porautumista käyttämällä, takaisin-painike vie sinut takaisin edelliselle tarkastelemallesi sivulle. 
 
-### <a name="dashboard-themes-all-mobile-apps"></a>Raporttinäkymän teemat: kaikki mobiilisovellukset
+#### <a name="dashboard-themes-all-mobile-apps"></a>Raporttinäkymän teemat: kaikki mobiilisovellukset
 
 Kun raportin tekijä mukauttaa raporttinäkymän teemoja Power BI -palvelussa, myös mobiilisovelluksen raporttinäkymän ulkoasu ja tuntuma muuttuvat. Taustakuvat eivät kuitenkaan näy.
 
-### <a name="ios-configure-power-bi-ios-mobile-app-access-to-a-report-server-remotely"></a>iOS: Raporttipalvelimen käyttöoikeuksien etämäärittäminen Power BI iOS -mobiilisovelluksella
+#### <a name="ios-configure-power-bi-ios-mobile-app-access-to-a-report-server-remotely"></a>iOS: Raporttipalvelimen käyttöoikeuksien etämäärittäminen Power BI iOS -mobiilisovelluksella
 
 IT-järjestelmänvalvoja voi käyttää ydintietojen hallintatyökalua määrittääkseen raporttipalvelimelle Power BI iOS -mobiilisovelluksen käyttöoikeuden. Lisätietoja saat artikkelista [iOS: Raporttipalvelimen käyttöoikeuksien etämäärittäminen Power BI -iOS-mobiilisovelluksella](../../report-server/configure-powerbi-mobile-apps-remote.md).
 
-### <a name="power-bi-for-mixed-reality-app-preview"></a>Power BI ja tehostettu todellisuus -sovellus (esikatselu)
+#### <a name="power-bi-for-mixed-reality-app-preview"></a>Power BI ja tehostettu todellisuus -sovellus (esikatselu)
 
 Power BI ja tehostettu todellisuus -sovellus nyt Microsoft Storessa. Tarkastele koontinäyttöjen ja raportteja uppoutuneena virtuaalimaailmaan tai sijoita niitä tiettyihin sijainteihin ympäristösi kontekstissa ja tarkastele niitä siellä. Katso uusi [Power BI Holelensissä -esittelyvideo](https://www.youtube.com/watch?v=J_X_nOFUBss) tai lue artikkeli uudesta [Power BI ja tehostettu todellisuus sovelluksesta](mobile-mixed-reality-app.md).
 
 
-## <a name="april-2018"></a>Huhtikuu 2018
+### <a name="april-2018"></a>Huhtikuu 2018
 
-### <a name="mobile-drill-down-and-drill-up"></a>Porautuminen alas- ja ylöspäin mobiililaitteella
+#### <a name="mobile-drill-down-and-drill-up"></a>Porautuminen alas- ja ylöspäin mobiililaitteella
 
 Voit porautua mobiililaiteellasi alas- ja ylöspäin raporttivisualisointeihin. Saadaksesi uuden toiminnon käyttöön, napauta ja pidä pohjassa, jolloin työkaluvihjevalikko avautuu raporttivisualisoinnissa. Napauta sitten poraus-painikkeita, tarkastellaksesi tietoja tarkemmin. Lisätietoja [Alas- ja ylöspäin porautumisesta mobiilisovelluksissa](https://powerbi.microsoft.com/blog/drill-down-up-in-power-bi-mobile-apps/).
 
-### <a name="persistent-filters"></a>Pysyvät suodattimet
+#### <a name="persistent-filters"></a>Pysyvät suodattimet
 
 Päivitimme raporttisuodattimet ja -osittajat, niin että ne tallennetaan automaattisesti Power BI:n verkkosovelluksesta Power BI:n mobiilisovellukseen. Mobiilisovelluksessa asettamasi suodattimet ja osittajat tallennetaan nyt automaattisesti Power BI:n verkkosovellukseen.
 
 
-## <a name="march-2018"></a>Maaliskuu 2018
+### <a name="march-2018"></a>Maaliskuu 2018
 
-### <a name="power-bi-for-mixed-reality-app-preview"></a>Power BI ja tehostettu todellisuus -sovellus (esikatselu)
+#### <a name="power-bi-for-mixed-reality-app-preview"></a>Power BI ja tehostettu todellisuus -sovellus (esikatselu)
 
 Olemme luoneet Power BI ja tehostettu todellisuus -sovelluksen, jotta voimme tuoda tiedot luoksesi entistäkin tehokkaammin. Tarkastele koontinäyttöjen ja raportteja uppoutuneena virtuaalimaailmaan tai sijoita niitä tiettyihin sijainteihin ympäristösi kontekstissa ja tarkastele niitä siellä. Lue lisää uudesta [Power BI ja tehostettu todellisuus -sovelluksesta](mobile-mixed-reality-app.md).
 
-### <a name="share-reports-and-dashboards-externally"></a>Jaa raportteja ja koontinäyttöjä ulkoisesti
+#### <a name="share-reports-and-dashboards-externally"></a>Jaa raportteja ja koontinäyttöjä ulkoisesti
 
 Jaa koontinäyttöjä ja raportteja organisaatiosi ulkopuolella olevien käyttäjien kanssa suoraan sovelluksesta. Ulkoinen jakaminen on käytössä sekä organisaatioiden että yhteisöpalveluiden tileissä. 
 
-### <a name="persistent-filters"></a>Pysyvät suodattimet
+#### <a name="persistent-filters"></a>Pysyvät suodattimet
 
 Kun asetat suodattimia ja osittajia Power BI:ssä verkossa, suodatinvalinnat tallennetaan myös mobiilisovellukseesi, jotta voit jatkaa siitä, mihin jäit.
 
-### <a name="refresh-reports-on-the-ipad"></a>Päivitä raportit iPadilla
+#### <a name="refresh-reports-on-the-ipad"></a>Päivitä raportit iPadilla
 
 Power BI -raporteissa on nyt päivityspainike iPad-sovelluksessa.
 
-## <a name="february-2018"></a>Helmikuu 2018
+### <a name="february-2018"></a>Helmikuu 2018
 
-### <a name="share-reports"></a>Jaa raportteja
+#### <a name="share-reports"></a>Jaa raportteja
 
 Voit nyt jakaa raportin suoraan mobiilisovelluksista. Lue lisää [koontinäyttöjen ja raporttien jakamisesta mobiilisovelluksista](mobile-share-dashboard-from-the-mobile-apps.md).
 
-### <a name="improved-tooltips"></a>Parannetut työkaluvihjeet
+#### <a name="improved-tooltips"></a>Parannetut työkaluvihjeet
 
 Kun käytät työkaluvihjeitä raportin visualisoinnissa napauttamisen ja pitämisen avulla, voit nyt sormella visualisoinnissa vetämällä tarkastella matkalla tietoja jokaisesta arvopisteestä.
 
-## <a name="january-2018"></a>Tammikuu 2018
+### <a name="january-2018"></a>Tammikuu 2018
 
-### <a name="report-favorites"></a>Raporttisuosikit
+#### <a name="report-favorites"></a>Raporttisuosikit
 
 Merkitse raportteja suosikeiksi, jolloin ne näkyvät **Suosikit**-sivulla. Lue lisää [suosikeista Power BI -mobiilisovelluksissa](mobile-apps-favorites.md).
 
-### <a name="view-shared-reports"></a>Tarkastele jaettuja raportteja
+#### <a name="view-shared-reports"></a>Tarkastele jaettuja raportteja
 
 Nyt kun joku jakaa raportin kanssasi, se näkyy **Jaettu kanssani** -sivulla koontinäyttöjen kanssa.
 
-### <a name="improved-hyperlink-support"></a>Parannettu hyperlinkkien tuki
+#### <a name="improved-hyperlink-support"></a>Parannettu hyperlinkkien tuki
 
 Voit nyt mukautettujen visualisointien linkkejä napauttamalla avata ne mobiiliselaimessasi.
 
-### <a name="intune-integration-android"></a>Intune-integrointi (Android)
+#### <a name="intune-integration-android"></a>Intune-integrointi (Android)
 
 Ehdollisen käyttöoikeuden tuki käytettäessä Intunen mobiililaitteiden hallintaa.
 
-## <a name="december-2017"></a>Joulukuu 2017
+### <a name="december-2017"></a>Joulukuu 2017
 
-### <a name="improved-security-management"></a>Parannettu suojauksen hallinta 
+#### <a name="improved-security-management"></a>Parannettu suojauksen hallinta 
 
 Lisäsimme tuen ehdolliselle käyttöoikeudelle (CA) ja Microsoft Intunen mobiililaitteiden hallinnalle (MDM) Android-laitteissa, jotta organisaatiosi tietoja voidaan suojata entistä paremmin. Se on jo käytettävissä iOS-laitteissa.
 
-### <a name="improved-permission-management"></a>Parannettu käyttöoikeuksien hallinta
+#### <a name="improved-permission-management"></a>Parannettu käyttöoikeuksien hallinta
 
 Olemme tehneet joitakin muutoksia, joiden avulla voidaan hallita tietojoukkojen, koontinäyttöjen ja raporttien käyttöoikeuksia entistä tarkemmin.
 
-### <a name="auto-installed-apps"></a>Automaattisesti asennetut sovellukset
+#### <a name="auto-installed-apps"></a>Automaattisesti asennetut sovellukset
 
 Joitakin Power BI:n sovelluksia ei tarvitse asentaa. Organisaatiosi Power BI -sovelluskehittäjät voivat luoda *sovelluksia*, jotka sisältävät kokoelman koontinäyttöjä ja raportteja. Sen jälkeen he voivat julkaista sovelluksen ja määrittää sen asentumaan automaattisesti Power BI -palvelussa ja Power BI -mobiilisovelluksissa. Kun sovellus on määritetty asennettavaksi puolestasi, se näkyy automaattisesti **Sovellukset**-valikossa:
 
 ![Sovellukset Power BI -mobiilisovelluksessa](./media/mobile-whats-new-in-the-mobile-apps/power-bi-apps-mobile-apps.png)
 
-## <a name="november-2017"></a>Marraskuu 2017
-### <a name="iphone-x-optimization"></a>iPhone X -optimointi
+### <a name="november-2017"></a>Marraskuu 2017
+#### <a name="iphone-x-optimization"></a>iPhone X -optimointi
 
 Olemme optimoineet sovellusasettelun iPhone X:ää varten, jotta voit tarkastella tietojasi tyylikkäästi jokaisella laitteella.
 
-## <a name="october-2017"></a>Lokakuu 2017
-### <a name="filters-for-phone-reports-in-android"></a>Puhelinraporttien suodattimet Android-laitteissa
+### <a name="october-2017"></a>Lokakuu 2017
+#### <a name="filters-for-phone-reports-in-android"></a>Puhelinraporttien suodattimet Android-laitteissa
 
 Jos luot raportin Power BI Desktopin puhelimelle optimoiduilla sivuilla ja raportissa on suodattimia, voit nyt käyttää kyseisiä suodattimia puhelinraportissa Android-laitteessa. Lue lisää Power BI -raporttien suodattimista Android-laitteessa.
 
-### <a name="show-data-in-reports"></a>Näytä tiedot raporteissa
+#### <a name="show-data-in-reports"></a>Näytä tiedot raporteissa
 
 Nyt voit vaihtaa visualisoinnit raporteissasi taulukkonäkymään, jotta näet luvut tietojen takana. Voit käyttää tätä toimintoa napauttamalla Näytä tiedot visualisoinnin ...-valikossa raportissasi tai uutta kuvaketta laajennetussa visualisoinnin toimintovalikossa.
-
-## <a name="previous-months"></a>Edelliset kuukaudet
 
 ### <a name="september-2017"></a>Syyskuu 2017
 #### <a name="filters-for-phone-reports-in-iphones"></a>Puhelinraporttien suodattimet iPhone-laitteissa
