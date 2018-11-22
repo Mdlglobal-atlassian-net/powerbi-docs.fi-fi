@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: conceptual
 ms.date: 09/17/2018
-ms.openlocfilehash: 56b6c954aa49f8adf0aa479f143fb11b932c107e
-ms.sourcegitcommit: ac63e6a082ca8397909217837e8d98c9389b23ac
+ms.openlocfilehash: 8cdeed0c5575a8405ae5db6d1eaca522ab0597cb
+ms.sourcegitcommit: a739a99e1006834a0f56e387c0bd9d945fb8a76b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50736960"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51679428"
 ---
 # <a name="frequently-asked-questions-about-power-bi-embedded"></a>Usein kysyttyjä kysymyksiä – Power BI Embedded
 
@@ -119,7 +119,7 @@ https://app.powerbi.com/ > ? > Tietoja Power BI:stä
 ![Tietoja Power BI:stä](media/embedded-faq/about-01.png)
 ![Vuokraajan alue](media/embedded-faq/tenant-location-01.png)
 
-### <a name="what-is-supported-with-the-communicating-sequential-processes-csp-channel"></a>Mitä ominaisuuksia CSP-kanava tukee?
+### <a name="what-is-supported-with-the-cloud-solution-provider-csp-channel"></a>Mitä tuetaan Cloud Solution Provider (CSP) -kanavalla?
 
 * Voit luoda PBIE:n vuokraajalle CSP-tilaustyypillä
 * Kumppanitili voi kirjautua sisään asiakkaan vuokraajaan ja hankkia PBIE:n asiakkaan vuokraajalle. Tällöin asiakkaan vuokraajan käyttäjälle on määritettävä Power BI -kapasiteetin järjestelmänvalvojan oikeudet.

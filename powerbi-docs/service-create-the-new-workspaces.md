@@ -7,15 +7,15 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 08/24/2018
+ms.date: 11/14/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: cc1f348deb222ce080ac41ac2574f4fb1437e8db
-ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
+ms.openlocfilehash: cdc406ddd9c086114ca118130bb4973737de3ed1
+ms.sourcegitcommit: 1e4fee6d1f4b7803ea285eb879c8d5a4f7ea8b85
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "48909011"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51717891"
 ---
 # <a name="create-the-new-workspaces-preview-in-power-bi"></a>Uusien työtilojen luominen (esiversio) Power BI:ssä
 
@@ -168,7 +168,7 @@ Jotkin ominaisuudet toimivat uusissa sovellustyötiloissa eri tavalla kuin nykyi
 
 Seuraavat ongelmat ovat tiedossa ja niiden korjauksia kehitetään:
 
-- Maksuttomat käyttäjät tai käyttäjäryhmät, jotka on lisätty sähköpostitilausten vastaanottajiksi, eivät saa sähköpostiviestejä, vaikka heidän pitäisi saada viestit. Ongelma ilmenee, kun uuden työtilakokemuksen työtila on Premium-kapasiteetissa, mutta tilauksen luoneen käyttäjän oma työtila ei ole Premium-kapasiteetissa. Jos oma työtila on Premium-kapasiteetissa, maksuttomat käyttäjät ja käyttäjäryhmät saavat sähköpostiviestit.
+- Maksuttomat käyttäjät tai käyttäjäryhmät, jotka on lisätty sähköpostitilausten vastaanottajiksi, eivät saa sähköpostiviestejä, vaikka heidän pitäisi saada viestit. Ongelma ilmenee silloin, kun yksi uusista työtiloista on Premium-kapasiteetissa, mutta tilauksen luovan käyttäjän oma työtila ei ole Premium-kapasiteetissa. Jos oma työtila on Premium-kapasiteetissa, maksuttomat käyttäjät ja käyttäjäryhmät saavat sähköpostiviestit.
 - Kun työtila on siirretty Premium-kapasiteetista jaettuun kapasiteettiin, maksuttomat käyttäjät ja käyttäjäryhmät saavat joissakin tapauksissa sähköpostiviestejä edelleen, vaikka heidän ei pitäisi saada niitä. Ongelma ilmenee, kun tilauksen luoneen käyttäjän oma työtila on Premium-kapasiteetissa.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet

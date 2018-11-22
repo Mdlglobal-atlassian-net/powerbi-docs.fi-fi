@@ -1,7 +1,7 @@
 ---
 title: Power BI -palvelun peruskäsitteet
 description: Power BI -palvelun työtilat, koontinäytöt, raportit, tietojoukot ja työkirjat.
-author: mihart
+author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 featuredvideoid: B2vd4MQrz4M
@@ -9,20 +9,20 @@ ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 07/19/2018
-ms.author: mihart
+ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: 8a95dae913c2069fa3768d66c55d2b1358640000
-ms.sourcegitcommit: a764e4b9d06b50d9b6173d0fbb7555e3babe6351
+ms.openlocfilehash: 9b02bdfd2c0025977dbb69eae44f4e976a527a30
+ms.sourcegitcommit: 1e4fee6d1f4b7803ea285eb879c8d5a4f7ea8b85
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/22/2018
-ms.locfileid: "49641915"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51717765"
 ---
 # <a name="power-bi---basic-concepts-for-power-bi-service"></a>Power BI – Power BI -palvelun peruskäsitteet
 
 Tässä artikkelissa oletetaan, että olet jo [rekisteröitynyt Power BI -palvelun käyttäjäksi](service-self-service-signup-for-power-bi.md) ja [lisännyt palveluun joitakin tietoja](service-get-data.md).
 
-Kun avaat Power BI -palvelun, näet ***koontinäytön***. Koontinäytöt erottavat Power BI -palvelun Power BI Desktopista.
+Kun avaat Power BI -palvelun, näkyviin tulee **_koontinäyttö_**. Koontinäytöt erottavat Power BI -palvelun Power BI Desktopista.
 
 ![](media/service-basic-concepts/completenewest.png)
 
@@ -45,7 +45,7 @@ Voit myös katsoa tämän videon ennen artikkelin lukemista.  Videolla Will kert
 
 
 ## <a name="power-bi-concepts"></a>Power BI:n käsitteet
-Power BI:n neljä peruselementtiä ovat ***koontinäytöt***, ***raportit***, ***työkirjat*** ja ***tietojoukot***. Ne on kaikki järjestetty ***työtiloiksi***. Työtilojen käsite on tärkeä ymmärtää ennen peruselementteihin tutustumista, joten aloitetaan siitä.
+Power BI:n neljä peruselementtiä ovat: **_koontinäytöt_**, **_raportit_**, **_työkirjat_** ja **_tietojoukot_**. Ne on kaikki järjestetty **_työtiloiksi_**. Työtilojen käsite on tärkeä ymmärtää ennen peruselementteihin tutustumista, joten aloitetaan siitä.
 
 ## <a name="workspaces"></a>Työtilat
 Työtilat ovat Power BI:ssä olevia säilöjä koontinäytöille, raporteille, työkirjoille ja tietojoukoille. Työtiloja on kahdenlaisia: *Oma työtila* ja *sovellustyötilat*. Entä mitä tarkoitetaan *sovelluksella*? Power BI -*sovellus* on kokoelma koontinäyttöjä ja raportteja, joiden avulla voit kuvata organisaatiosi keskeisiä mittalukuja. Sovellukset ovat vuorovaikutteisia, mutta niitä ei voi muokata.
@@ -77,7 +77,7 @@ Alla olevassa esimerkissä olen valinnut Myynti ja markkinointi -sovellustyötil
 
 Voit [yhdistää tietojoukkoon tai tuoda tietojoukon](service-get-data.md) valitsemalla **Nouda tiedot** (vasemman siirtymisruudun alareunassa) tai valitsemalla **+ Luo > Tietojoukko** (oikeassa yläkulmassa). Noudata ohjeita yhteyden muodostamiseen tiettyyn lähteeseen tai lähteen tuomiseen. Lisää tietojoukko aktiiviseen työtilaan. Uudet tietojoukot on merkitty keltaisella tähdellä. Power BI:ssä tekemäsi työ ei muuta pohjana olevaa tietojoukkoa.
 
-Jos olet [osa ***sovellustyötilaa***](service-collaborate-power-bi-workspace.md), yhden työtilan jäsenen lisäämät tietojoukot ovat työtilan muiden jäsenten käytettävissä.
+Jos olet [osa **_sovellustyötilaa_**](service-collaborate-power-bi-workspace.md), yhden työtilan jäsenen lisäämät tietojoukot ovat työtilan muiden jäsenten käytettävissä.
 
 Tietojoukkoja voi päivittää, nimetä uudelleen, tarkastella ja poistaa. Tietojoukon avulla voit luoda raportin alusta alkaen tai [Nopeat merkitykselliset tiedot](service-insights.md) -toiminnolla.  Valitsemalla **Näytä aiheeseen liittyvät** voit nähdä, mitkä raportit ja koontinäytöt käyttävät jo tietojoukkoa. Voit tutustua tietojoukkoon valitsemalla sen. Silloin käytännössä avaat tietojoukon raporttieditorissa, jossa voit aloittaa tietoihin pureutumisen ja visualisointien luomisen. Siirrytään siis seuraavaan aiheeseen eli raportteihin.
 
@@ -87,9 +87,9 @@ Tietojoukkoja voi päivittää, nimetä uudelleen, tarkastella ja poistaa. Tieto
 * [Mallitietojoukkoja Power BI:lle](sample-datasets.md)
 
 ## <a name="reports"></a>Raportit
-Power BI -raportti on yksi tai useampi sivu visualisointeja (eli kaavioita ja kuvaajia, kuten viiva- ja ympyräkaavioita, puukarttoja ja monia muita). Visualisointeja saatetaan kutsua myös ***graafeiksi***. Kaikki raportin visualisoinnit ovat peräisin yhdestä tietojoukosta. Raportteja voi luoda alusta alkaen Power BI:ssä, tai niitä voi tuoda koontinäytöillä, joita kollegat jakavat kanssasi. Niitä voi myös luoda muodostamalla yhteyden tietojoukkoihin Excelissä, Power BI Desktopissa, tietokannoissa, SaaS-sovelluksissa ja [sovelluksissa](service-get-data.md).  Kun esimerkiksi muodostat yhteyden Power View -taulukoita sisältävään Excel-työkirjaan, Power BI luo raportin näiden taulukoiden perusteella. Ja kun muodostat yhteyden SaaS-sovellukseen, Power BI tuo valmiiksi luodun raportin.
+Power BI -raportti on yksi tai useampi sivu visualisointeja (eli kaavioita ja kuvaajia, kuten viiva- ja ympyräkaavioita, puukarttoja ja monia muita). Visualisointeja voidaan kutsua myös **_graafeiksi_**. Kaikki raportin visualisoinnit ovat peräisin yhdestä tietojoukosta. Raportteja voi luoda alusta alkaen Power BI:ssä, tai niitä voi tuoda koontinäytöillä, joita kollegat jakavat kanssasi. Niitä voi myös luoda muodostamalla yhteyden tietojoukkoihin Excelissä, Power BI Desktopissa, tietokannoissa, SaaS-sovelluksissa ja [sovelluksissa](service-get-data.md).  Kun esimerkiksi muodostat yhteyden Power View -taulukoita sisältävään Excel-työkirjaan, Power BI luo raportin näiden taulukoiden perusteella. Ja kun muodostat yhteyden SaaS-sovellukseen, Power BI tuo valmiiksi luodun raportin.
 
-Voit tarkastella ja käsitellä raportteja kahdessa tilassa: [lukunäkymässä ja muokkausnäkymässä](service-reading-view-and-editing-view.md).  Vain raportin luonut henkilö, sen muut omistajat ja siihen käyttöoikeuden saaneet saavat käyttöönsä kaikki tutustumis-, suunnittelu-, luomis- ja jakamistoiminnot raportin ***muokkausnäkymässä***. Ne, joille raportti jaetaan, voivat tutkia ja käsitellä sitä ***lukunäkymässä***.   
+Voit tarkastella ja käsitellä raportteja kahdessa tilassa: [lukunäkymässä ja muokkausnäkymässä](service-reading-view-and-editing-view.md).  Vain raportin luonut henkilö, sen muut omistajat ja siihen käyttöoikeuden saaneet saavat käyttöönsä kaikki tutustumis-, suunnittelu-, luomis- ja jakamistoiminnot tämän raportin **_muokkausnäkymässä_**. Ne, joille raportti jaetaan, voivat tutkia ja käsitellä sitä **_lukunäkymässä_**.   
 
 Kun avaat työtilan, siihen liittyvät raportit luetellaan **Raportit**-välilehdellä. Jokainen luettelon raportti edustaa yhtä tai useampaa visualisointien sivua, joka perustuu vain yhteen pohjana olevista tietojoukoista. Avaa raportti valitsemalla se.
 

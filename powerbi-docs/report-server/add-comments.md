@@ -1,5 +1,5 @@
 ---
-title: Lisää kommentteja raporttiin raporttipalvelimessa – Power BI -raporttipalvelin
+title: Kommenttien lisääminen raporttiin Power BI -raporttipalvelimessa
 description: Lue, miten voit lisätä kommentteja Power BI- tai sivutettuun raporttiin Power BI -raporttipalvelimessa tai SQL Server Reporting Services -raporttipalvelimessa.
 author: maggiesMSFT
 manager: kfile
@@ -7,17 +7,17 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-report-server
 ms.topic: conceptual
-ms.date: 05/18/2018
+ms.date: 11/15/2018
 ms.author: maggies
-ms.openlocfilehash: ff51b2e41d921b7a88afc9b13bb4ecd98814d12e
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: e0053660263f4cbed55050b9431b67228bf74c29
+ms.sourcegitcommit: 46f1ba3f972f6e64bce05ad0fd527b27c49aedd6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44727969"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52157352"
 ---
-# <a name="add-comments-to-a-report-in-a-report-server"></a>Lisää kommentteja raporttiin raporttipalvelimessa
-Voit lisätä kommentteja raportteihin, mukaan lukien Power BI -raportteihin, raporttipalvelimen verkkoportaalissa. Kommentit näkyvät raportissa reaaliajassa, kaikki, joilla on tarvittavat oikeudet, näkevät raportin kommentit. Lisätietoa on alla [Käyttöoikeudet](#permissions)-kohdassa.
+# <a name="add-comments-to-a-report-in-a-report-server---power-bi-report-server"></a>Lisää kommentteja raporttiin raporttipalvelimessa – Power BI -raporttipalvelin
+Voit lisätä kommentteja raportteihin, mukaan lukien Power BI -raportteihin, raporttipalvelimen verkkoportaalissa. Kommentit näkyvät raportissa reaaliajassa, kaikki, joilla on tarvittavat oikeudet, näkevät raportin kommentit. Katso lisätietoja alla olevasta [Käyttöoikeudet](#permissions)-kohdasta.
 
 ## <a name="add-or-view-comments"></a>Lisää tai tarkastele kommentteja
 1. Avaa sivutettu tai Power BI -raportti raporttipalvelimessa.

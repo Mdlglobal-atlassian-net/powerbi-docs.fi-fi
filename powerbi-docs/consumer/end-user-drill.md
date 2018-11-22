@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 05/26/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: f4e1c2d309990c28ad0568dbd15dd7fe81634e95
-ms.sourcegitcommit: 70192daf070ede3382ac13f6001e0c8b5fb8d934
+ms.openlocfilehash: b8d51bef94a046d7e59962b565d13ba623b5bcc4
+ms.sourcegitcommit: a739a99e1006834a0f56e387c0bd9d945fb8a76b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "46565701"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51679480"
 ---
 # <a name="drill-mode-in-a-visualization-in-power-bi"></a>Visualisointiin porautumistila Power BI:ssä
 
@@ -177,7 +177,7 @@ Seuraavissa osioissa kuvataan, kuinka poraudutaan alaspäin ylimmästä näkymä
 ### <a name="hierarchical-data-and-time-data"></a>Hierarkkiset tiedot ja aikatiedot
 Avaa [Jälleenmyyntianalyysimalli](../sample-datasets.md) ja luo pinottu pylväskaaviovisualisointi, jossa tarkastellaan **kuukautta** (Akseli) **kokonaismyynnin** (Arvot) mukaan.  
 
-Vaikka akselin tietokenttä onkin **kuukausi**, se luo myös **Vuosi**-luokan **Akseli**-ruutuun. Tämä johtuu siitä, että Power BI tarjoaa täyden päivämäärä/aikarakenteen kaikille arvoille, jotka se lukee. Hierarkian yläosassa näkyvät vuotta koskevat tiedot.
+Vaikka akselin tietokenttä onkin **kuukausi**, se luo myös **Vuosi**-luokan **Akseli**-ruutuun. Tämä johtuu siitä, että Power BI tarjoaa täyden päivämäärä/aikarakenteen kaikille arvoille, jotka se lukee. Hierarkiassa ylhäällä näytetään vuotta koskevat tiedot.
 
 ![](media/end-user-drill/power-bi-hierarchical-axis-datetime-1.png)
 

@@ -10,24 +10,32 @@ ms.topic: conceptual
 ms.date: 10/18/2018
 ms.author: jocaplan
 LocalizationGroup: Premium
-ms.openlocfilehash: 416f022ee3c413c69650e6f1736cc94edcd58f13
-ms.sourcegitcommit: a764e4b9d06b50d9b6173d0fbb7555e3babe6351
+ms.openlocfilehash: 0449d7953b5cefb4c76d89f05ec5b3fa70e9c0da
+ms.sourcegitcommit: a739a99e1006834a0f56e387c0bd9d945fb8a76b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/22/2018
-ms.locfileid: "49641248"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51679350"
 ---
 # <a name="power-bi-premium-support-for-large-datasets"></a>Power BI Premiumin suurten tietojoukkojen tuki
 
-Power BI Premium tukee kooltaan enintään 10 gigatavun kokoisten Power BI Desktop (.pbix) -tiedostojen lataamista palvelimeen. Kun tiedosto on ladannut, tietojoukko voidaan päivittää enintään 12 gigatavun kokoiseksi. Kun haluat käyttää suurta tietojoukkoa, julkaise se työtilassa, johon on määritetty Premium-kapasiteetti. Tässä artikkelissa kuvataan huomioon otettavia seikkoja ja parhaita käytäntöjä, kun työskentelet suurten tietojoukkojen kanssa.
+Power BI Premium tukee kooltaan enintään 10 gigatavun kokoisten Power BI Desktop (.pbix) -tiedostojen lataamista palvelimeen. Kun tiedosto on ladannut, tietojoukko voidaan päivittää enintään 12 gigatavun kokoiseksi. Kun haluat käyttää suurta tietojoukkoa, julkaise se työtilassa, johon on määritetty Premium-kapasiteetti.
+ 
+## <a name="best-practices"></a>Parhaat käytännöt
 
-**Suuret mallit voivat vaatia erittäin paljon resursseja** kapasiteetiltasi. Suosittelemme vähintään P1 SKU:ta kaikille yli 1 Gt:n malleille. Seuraavassa taulukossa kuvataan suositellut varastointiyksiköt eri .pbix-koille:
+Tässä osassa esitetään suurten tietojoukkojen käsittelemisen parhaat käytännöt.
+
+**Suuret mallit voivat vaatia erittäin paljon resursseja** kapasiteetiltasi. Suosittelemme vähintään P1 SKU:ta kaikille yli 1 Gt:n malleille. Vaikka suurten mallien julkaiseminen työtiloihin, joita tuetaan A-varastointiyksiköillä A3:een asti, voikin onnistua, niitä ei voida päivittää.
+
+Seuraavassa taulukossa kuvataan suositellut varastointiyksiköt eri .pbix-koille:
 
    |Varastointiyksikkö  |.pbix:n koko   |
    |---------|---------|
    |P1    | < 3 Gt        |
    |P2    | < 6 Gt        |
-   |P3, P4, P5    | enintään 10 Gt |
+   |P3, P4, P5    | enintään 10 Gt   |
+
+Power BI Embedded A4 -varastointiyksikkö vastaa P1-varastointiyksikköä, A5 = P2 ja A6 = P3. Huomaa, että suurten mallien julkaiseminen A- ja EM-varastointiyksiköihin voi palauttaa virheitä, jotka eivät liity erityisesti mallin kokorajoituksen virheeseen jaetussa kapasiteetissa. Suurten mallien päivitysvirheet A- ja EM-varastointiyksiköissä osoittavat todennäköisesti aikakatkaisuihin. Pyrimme parantamaan näiden skenaarioiden virheviestejä.
 
 **.pbix-tiedostot kuvaavat tietoja erittäin tehokkaasti pakatussa tilassa**. Tietoja laajennetaan todennäköisesti useita kertoja, kun ne ladataan muistiin, ja uudelleen useita kertoja tietojen päivittämisen aikana.
 

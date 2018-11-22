@@ -9,14 +9,14 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 11/01/2018
+ms.date: 11/16/2018
 LocalizationGroup: Reports
-ms.openlocfilehash: d708a4ff07a0d202fcc709f6348e48505d7589d0
-ms.sourcegitcommit: d20f74d5300197a0930eeb7db586c6a90403aabc
+ms.openlocfilehash: 6a2cfd4926089bce8973070949791e450a47cc4b
+ms.sourcegitcommit: a186679e8dae85dce23f6365bf5c36d7f407f15b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "50973369"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51850587"
 ---
 # <a name="filter-a-report-using-query-string-parameters-in-the-url"></a>Raportin suodattaminen URL-osoitteen kyselymerkkijonoparametrien avulla
 
@@ -47,7 +47,7 @@ Kenttätyyppi voi olla luku, päivämäärä ja aika tai merkkijono, ja käytety
 
 * **Merkkijonot** on sijoitettava puolilainausmerkkeihin – 'esimiehen nimi'.
 * **Luvut** eivät edellytä erityistä muotoilua.
-* **Päivämäärät ja ajat** on sijoitettava puolilainausmerkkeihin ja niiden edellä on oltava sana **DateTime**.
+* **Päivämäärät ja kellonajat** on sijoitettava puolilainausmerkkeihin. OData v3:ssa niiden eteen on merkittävä sana ”datetime”, mutta sitä ei tarvita v4:ssä.
 
 Jos tuntuu sekavalta, jatka lukemista, kohta asia selviää.  
 

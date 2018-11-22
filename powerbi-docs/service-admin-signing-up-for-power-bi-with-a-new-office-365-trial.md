@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/31/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 5089be0cb8bd96573a0d1b3e25c742c1f559253b
-ms.sourcegitcommit: ac63e6a082ca8397909217837e8d98c9389b23ac
+ms.openlocfilehash: ef20b37d781e266de9e72117d2c57e58f802d4fa
+ms.sourcegitcommit: a186679e8dae85dce23f6365bf5c36d7f407f15b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50736845"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51850380"
 ---
 # <a name="signing-up-for-power-bi-with-a-new-office-365-trial"></a>Power BI:n rekisteröinti uudessa Office 365 -kokeilussa
 
@@ -27,13 +27,13 @@ Tässä artikkelissa kuvataan vaihtoehtoinen tapa rekisteröityä Power BI:n kä
 
 1. Kun olet rekisteröitynyt kokeilun käyttäjäksi, saat uuden kirjautumisnimen, joka näyttää tältä: you@yourcompany.onmicrosoft.com. Tämä on kirjautumisnimi, jota käytät Power BI:n kanssa.
 
-1. Rekisteröidy Power BI:n käyttäjäksi [tästä linkistä](https://portal.office.com/Start/Confirm?Sku=a403ebcc-fae0-4ca2-8c8c-7a907fd6c235&ru=https%3A%2F%2Fapp.powerbi.com%3FredirectedFromSignup%3D1%26noSignUpCheck%3D1). Kirjaudu pyydettäessä sisään kirjautumisnimellä ja salasanalla, jotka valitsit Office 365:lle edellisessä vaiheessa.
+1. Rekisteröidy Power BI:n käyttäjäksi [tästä linkistä](https://app.powerbi.com/signupredirect?pbi_source=web). Kirjaudu pyydettäessä sisään kirjautumisnimellä ja salasanalla, jotka valitsit Office 365:lle edellisessä vaiheessa.
 
 1. Siinä kaikki! Kun olet valmis, sinut ohjataan Power BI:hin. Jos sinulla on ongelmia kirjautua sisään uudella tilillä, kokeile yksityistä selainistuntoa.
 
 ## <a name="important-considerations"></a>Huomioitavaa
 
-Kun käytät tätä kirjautumismenetelmää, luot uuden organisaation vuokraajan ja sinusta tulee vuokraajan järjestelmänvalvoja. Lisätietoja on ohjeartikkelissa [Mitä on Power BI:n hallinta?](service-admin-administering-power-bi-in-your-organization.md). Voit lisätä uusia käyttäjiä vuokraajaan ja jakaa sitten heidän kanssaan [Office 365:n järjestelmänvalvojan ohjeissa](https://support.office.com/en-sg/article/Add-users-individually-to-Office-365---Admin-Help-1970f7d6-03b5-442f-b385-5880b9c256ec?ui=en-US&rs=en-SG&ad=SG) kuvatulla tavalla.
+Kun käytät tätä kirjautumismenetelmää, luot uuden organisaation vuokraajan ja sinusta tulee vuokraajan järjestelmänvalvoja. Katso lisätietoja artikkelista [Mitä on Power BI:n hallinta?](service-admin-administering-power-bi-in-your-organization.md). Voit lisätä uusia käyttäjiä vuokraajaan ja jakaa sitten heidän kanssaan [Office 365:n järjestelmänvalvojan ohjeissa](https://support.office.com/en-sg/article/Add-users-individually-to-Office-365---Admin-Help-1970f7d6-03b5-442f-b385-5880b9c256ec?ui=en-US&rs=en-SG&ad=SG) kuvatulla tavalla.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2018
 ms.author: nikhilga
 LocalizationGroup: Get started
-ms.openlocfilehash: b54a38f4c5639eae549a36a93c887d87630b7daf
-ms.sourcegitcommit: a3ce866caba24217bcdd011e892b9ea72f3d2400
+ms.openlocfilehash: 0ffcec94d015223df596aa6ac941f7400a89e747
+ms.sourcegitcommit: 1e4fee6d1f4b7803ea285eb879c8d5a4f7ea8b85
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49396746"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51718064"
 ---
 ---
 # <a name="whats-new-in-the-power-bi-service"></a>Power BI -palvelun uudet toiminnot ja ominaisuudet
@@ -48,7 +48,7 @@ Saat lisätietoja uusista toiminnoista ja ominaisuuksista myös YouTube-kanavist
 * Raporttien jakaminen suodattimien ja osittajien avulla
 * Uusi ja parannettu käyttöliittymä [yhdyskäytäväyhteyksiin](https://powerbi.microsoft.com/blog/easier-set-up-of-datasets-in-power-bi/) ja tietojoukkojen määrittämiseen
 
-### <a name="may-2018"></a>Toukokuu 2018
+### <a name="may-2018"></a>Tou 2018
 * [Teeman koontinäytöt](service-dashboard-themes.md) Power BI -palvelussa.
 * [Lisäävä päivitys](service-premium-incremental-refresh.md) Premiumin avulla.
 * Pyydä käyttöoikeustyönkulkua [Power BI -sovelluksille](service-create-distribute-apps.md).
@@ -655,7 +655,7 @@ Saat lisätietoja [blogista](http://blogs.msdn.com/b/powerbi/archive/2015/10/06/
 
 **23. huhtikuuta 2015**
 
-* Voit nyt visualisoida ja tutkia **Microsoft Dynamics Marketing** -tietojasi uuden sisältöpaketin avulla. Saat lisätietoja [blogista](http://blogs.msdn.com/b/powerbi/archive/2015/04/23/monitor-and-explore-your-microsoft-dynamics-marketing-data-with-power-bi.aspx) ja [dokumentaatiosta](service-connect-to-microsoft-dynamics-marketing.md).
+* Voit nyt visualisoida ja tutkia **Microsoft Dynamics Marketing** -tietojasi uuden sisältöpaketin avulla. Lisätietoja saat lukemalla [blogikirjoituksemme](http://blogs.msdn.com/b/powerbi/archive/2015/04/23/monitor-and-explore-your-microsoft-dynamics-marketing-data-with-power-bi.aspx).
 
 **15. huhtikuuta 2015**
 

@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: conceptual
 ms.date: 11/06/2018
-ms.openlocfilehash: d6f3f654574e9cca081ae2f8191fd7b9fc017afd
-ms.sourcegitcommit: 02f918a4f27625b6f4e47473193ebc8219db40e2
+ms.openlocfilehash: 3d9e8e46fdd84edbeb5b4ff5e8f7efe4a4291049
+ms.sourcegitcommit: a739a99e1006834a0f56e387c0bd9d945fb8a76b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51223548"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51679234"
 ---
 # <a name="troubleshoot-power-bi-custom-visuals"></a>Power BI:n mukautettujen visualisointien vianmääritys
 
@@ -37,7 +37,7 @@ Jos et näe sitä, varmista, että olet ottanut sen käyttöön Power BI:n asetu
 
 **Yhteyden muodostaminen visualisointipalvelimeen ei onnistu**
 
-Suorita visualisointipalvelin käyttämällä `pbiviz start`-komentoa päätteen komentorivillä visualisointiprojektin juurikansiosta. Jos palvelin on käynnissä, SSL-varmenteita ei ole todennäköisesti asennettu oikein.
+Suorita visualisointipalvelin käyttämällä `pbiviz start`-komentoa päätteen komentorivillä visualisointiprojektin juurikansiosta. Jos palvelin ei toimi, se johtuu todennäköisesti siitä, että SSL-varmenteita ei ole asennettu oikein.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 

@@ -10,12 +10,12 @@ ms.component: powerbi-admin
 ms.topic: conceptual
 ms.date: 10/21/2018
 LocalizationGroup: Premium
-ms.openlocfilehash: 2ca75f191f27bd158b9fab67c7be6902154f8ac1
-ms.sourcegitcommit: a764e4b9d06b50d9b6173d0fbb7555e3babe6351
+ms.openlocfilehash: 451727d473b59afd362e4f31e8aef634d2168f83
+ms.sourcegitcommit: 1e4fee6d1f4b7803ea285eb879c8d5a4f7ea8b85
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/22/2018
-ms.locfileid: "49641225"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51717627"
 ---
 # <a name="what-is-microsoft-power-bi-premium"></a>Mikä on Microsoft Power BI Premium?
 
@@ -46,7 +46,7 @@ Alla olevassa taulukossa on yhteenveto jaetun kapasiteetin ja Premium-kapasiteet
 | --- | --- | --- |
 | **Päivitystaajuus** |8/päivä |48/päivä |
 | **Eristys erillisellä laitteistolla** |![](media/service-premium/not-available.png "Ei käytettävissä") |![](media/service-premium/available.png "Käytettävissä") |
-| **Yritysjakelu** ***kaikille käyttäjille*** | | |
+| **Yritysjakelu**  _**kaikille käyttäjille**_ | | |
 | Sovellukset ja jakaminen |![](media/service-premium/not-available.png "Ei käytettävissä") |![](media/service-premium/available.png "Käytettävissä")<sup>1</sup> |
 | Upotettu ohjelmointirajapinta ja ohjausobjektit |![](media/service-premium/not-available.png "Ei käytettävissä") |![](media/service-premium/available.png "Käytettävissä")<sup>2</sup> |
 | **Power BI -raporttien paikallinen julkaisu** |![](media/service-premium/not-available.png "Ei käytettävissä") |![](media/service-premium/available.png "Käytettävissä") |
@@ -83,6 +83,39 @@ Power BI Premium on saatavilla solmumäärityksinä eri näennäisydinkapasiteet
 * Edustan v-ytimet vastaavat verkkopalvelusta, koontinäytön ja raportin tiedostohallinnasta, käyttöoikeuksien hallinnasta, ajoituksista, ohjelmointirajapinnoista, latauksista ja yleisesti ottaen kaikesta, mikä liittyy käyttökokemukseen.
 
 * Taustan v-ytimet vastaavat raskaasta työstä eli kyselyiden käsittelystä, välimuistin hallinnasta, R-palvelinten suorittamisesta, tietojen päivittämisestä, luonnollisen kielen käsittelystä, reaaliaikaisista syötteistä sekä raporttien ja kuvien palvelinpuolen hahmontamisesta. Taustan v-ytimille varataan myös tietty määrä muistia. Riittävä muisti on erityisen tärkeä, kun käsitellään suuria tietomalleja tai useita aktiivisia tietojoukkoja.
+
+## <a name="workloads-in-premium-capacity"></a>Kuormitukset Premium-kapasiteetissa
+
+Voit ajatella kuormituksia Power BI:ssä palveluina, jotka voit paljastaa käyttäjille. Oletusarvoisesti **Power BI Premiumin** ja **Power BI Embeddedin** kapasiteetit tukevat vain kuormitusta, joka liittyy Power BI -kyselyiden suorittamiseen pilvipalvelussa.
+
+Nyt esikatselun tuki tarjotaan myös kahdelle muulle kuormitukselle: **sivutetut raportit** ja **tietovuot**. Voit ottaa nämä kuormitukset käyttöön Power BI -hallintaportaalin tai Power BI REST -ohjelmointirajapinnan kautta. Voit määrittää enimmäismuistin jokaiselle kuormitukselle. Näin voit hallita sitä, miten eri kuormitukset vaikuttavat toistensa toimintaan. Lisätietoja on kohdassa [Kuormituksien määrittäminen](service-admin-premium-manage.md#configure-workloads).
+
+### <a name="default-memory-settings"></a>Oletusmuistiasetukset
+
+Seuraava taulukko näyttää muistin oletus- ja vähimmäisarvot, jotka perustuvat käytettävissä oleviin erilaisiin [kapasiteettisolmuihin](#premium-capacity-nodes). Muistin kohdistetaan tietovoille dynaamisesti, mutta sivutetuille raporteille staattisesti. Jos haluat lisätietoja, katso seuraavassa osio: [Huomioitavaa sivutetuissa raporteissa](#considerations-for-paginated-reports).
+
+#### <a name="microsoft-office-skus-for-software-as-a-service-saas-scenarios"></a>Microsoft Office -varastointiyksiköt Software as a Service (SaaS) -skenaarioille
+
+|                     | EM3                      | P1                       | P2                      | P3                       |
+|---------------------|--------------------------|--------------------------|-------------------------|--------------------------|
+| Sivutetut raportit | – | Oletus 20 %, vähintään 10 % | Oletus 20 %, vähintään 5 % | Oletus 20 %, vähintään 2,5 % |
+| Tietovuot | Oletus 20 %, vähintään 8 %  | Oletus 20 %, vähintään 4 %  | Oletus 20 %, vähintään 2 % | Oletus 20 %, vähintään 1 %  |
+| | | | | |
+
+#### <a name="microsoft-azure-skus-for-platform-as-a-service-paas-scenarios"></a>Microsoft Azure -varastointiyksiköt Platform as a Service (PaaS) -skenaarioille
+
+|                  | A1                       | A2                       | A3                      | A4                       | A5                      | A6                        |
+|-------------------|--------------------------|--------------------------|-------------------------|--------------------------|-------------------------|---------------------------|
+| Sivutetut raportit | –                      | –                      | –                     | Oletus 20 %, vähintään 10 % | Oletus 20 %, vähintään 5 % | Oletus 20 %, vähintään 2,5 % |
+| Tietovuot         | Oletus 27 %, vähintään 27 % | Oletus 20 %, vähintään 16 % | Oletus 20 %, vähintään 8 % | Oletus 20 %, vähintään 4 %  | Oletus 20 %, vähintään 2 % | Oletus 20 %, vähintään 1 %   |
+
+### <a name="considerations-for-paginated-reports"></a>Huomioitavaa sivutetuissa raporteissa
+
+Jos käytät sivutetut raportit -kuormitusta, huomioi seuraavat asiat.
+
+* **Muistin varaaminen sivutetuissa raporteissa**: Sivutettujen raporttien avulla voit suorittaa omaa koodia raporttia hahmontaessasi. Näin voit esimerkiksi sallia tekstin värin dynaamisen muuttamisen sisällön perusteella. Power BI Premium -kapasiteetin turvaamiseksi sivutetut raportit suoritetaan kapasiteetin sisäisessä erillisessä tilassa. Tälle tilalle osoitetaan kaikki määrittämäsi muisti riippumatta siitä, onko kuormitus aktiivinen. Jos käytät Power BI -raportteja tai tietovoita samassa kapasiteetissa, varmista, että olet määrittänyt sivutetuille raporteille riittävän vähän muistia, jotta muiden kuormitusten nopeus ei kärsi.
+
+* **Sivutetut raportit eivät ole käytettävissä**: Sivutetut raportit -kuormitus saattaa lakata toimimasta joissain harvinaisissa tapauksissa. Näissä tapauksissa kuormitus näyttää virhetilan hallintaportaalissa ja raportin hahmontaminen aikakatkaistaan käyttäjiltä. Voit ratkaista ongelman poistamalla kuormituksen käytöstä ja ottamalla sen uudelleen käyttöön.
 
 ## <a name="power-bi-report-server"></a>Power BI -raporttipalvelin
 

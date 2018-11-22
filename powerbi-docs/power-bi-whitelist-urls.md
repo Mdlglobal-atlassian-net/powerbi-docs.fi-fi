@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 10/22/2018
-ms.openlocfilehash: 7b57e0d5e303f2b342e2d7750741717b178a8f4e
-ms.sourcegitcommit: f9dd6098ca57d4d6cad34284126d4e58eab1c92c
+ms.openlocfilehash: e62d39f13e2b171456d667ec9683acd4ebdc5516
+ms.sourcegitcommit: 46f1ba3f972f6e64bce05ad0fd527b27c49aedd6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50222101"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52157122"
 ---
 # <a name="power-bi-urls"></a>Power BI:n URL-osoitteet
 
@@ -69,7 +69,7 @@ Jotta voit saada tietoja tietyistä tietolähteistä, kuten OneDrivesta, sinun o
 | Rivi | Tarkoitus | Kohteet | Portit |
 | --- | --- | --- | --- |
 | 1 | **Pakollinen:** AppSource (Power BI:n sisäiset tai ulkoiset sovellukset) | appsource.microsoft.com </br> *.s-microsoft.com  | TCP 443 |
-| 2 | **Pakollinen:** kirjaudu sisään ja nouda tietoja sisältöpaketeille | *.github.com  | TCP 443 |
+| 2 | **Valinnainen:** kirjaudu sisään ja hanki sisältöpakettien tietoja | Riippuu käytetystä sisältöpaketista | Riippuu käytetystä sisältöpaketista |
 | 3 | **Pakollinen:** tuo tiedostoja henkilökohtaisesta OneDrivesta | Katso [OneDrive-sivuston pakolliset URL-osoitteet ja portit](https://docs.microsoft.com/onedrive/required-urls-and-ports) | – |
 | 4 | **Valinnainen:** Power BI:n 60 sekunnin opetusohjelmavideo | *.doubleclick.net </br> *.ggpht.com </br> *.google.com </br> *.googlevideo.com </br> *.youtube.com </br> *.ytimg.com </br> fonts.gstatic.com | TCP 443 |
 | 5 | **Valinnainen:** PubNub-suoratoiston tietolähteet | Katso [PubNub-dokumentaatio](https://support.pubnub.com/support/solutions/articles/14000043522) | – |

@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-admin
 ms.topic: conceptual
-ms.date: 04/10/2018
+ms.date: 11/16/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 294fb3a0142908ce0ab068e075ce39f950a0b124
-ms.sourcegitcommit: d20f74d5300197a0930eeb7db586c6a90403aabc
+ms.openlocfilehash: e64496461e7d81d3b39e9a8d7174a3e985d04002
+ms.sourcegitcommit: a186679e8dae85dce23f6365bf5c36d7f407f15b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "50973346"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51850472"
 ---
 # <a name="using-auditing-within-your-organization"></a>Valvonnan käyttö organisaatiossa
 
@@ -114,7 +114,7 @@ Voit viedä Power BI -valvontalokin CSV-tiedostoon seuraavasti.
 
 1. Valitse joko **Tallenna ladatut tulokset** tai **Lataa kaikki tulokset**.
 
-    ![Tulosten vieminen](media/service-admin-auditing/export-auditing-results.png)
+    ![Vie tulokset](media/service-admin-auditing/export-auditing-results.png)
 
 ## <a name="use-powershell-to-search-audit-logs"></a>Valvontalokien hakeminen PowerShellin avulla
 
@@ -139,83 +139,100 @@ Katso toinen esimerkki PowerShellin käyttämisestä valvontalokien avulla artik
 
 Power BI valvoo seuraavia toimia.
 
-* AddDatasourceToGateway
-* AddGroupMembers
-* AnalyzedByExternalApplication
-* AnalyzeInExcel
-* AttachDataflowStorageAccount
-* BindToGateway
-* ChangeCapacityState
-* ChangeGatewayAdministrators
-* ChangeGatewayDatasourceUsers
-* CreateApp
-* CreateDashboard
-* CreateDataflow
-* CreateDataset
-* CreateEmailSubscription
-* CreateFolder
-* CreateGateway
-* CreateGroup
-* CreateOrgApp
-* CreateReport
-* DeleteComment
-* DeleteDashboard
-* DeleteDataflow
-* DeleteDataset
-* DeleteEmailSubscription
-* DeleteFolder
-* DeleteGateway
-* DeleteGroup
-* DeleteGroupMembers
-* DeleteOrgApp
-* DeleteReport
-* DownloadReport
-* EditDataset
-* EditReport
-* ExportDataflow
-* ExportReport
-* ExportTile
-* GenerateDataflowSasToken
-* GenerateEmbedToken
-* GetDatasources
-* Tuo
-* InstallApp
-* MigrateWorkspaceIntoCapacity
-* OptInForProTrial
-* PostComment
-* PrintDashboard
-* PrintReport
-* PublishToWebReport
-* RefreshDataset
-* RemoveDatasourceFromGateway
-* RemoveWorkspacesFromCapacity
-* RenameDashboard
-* SetAllConnections
-* SetScheduledRefresh
-* SetScheduledRefreshOnDataflow
-* ShareDashboard
-* ShareReport
-* TakeOverDataset
-* TakeOverDatasource
-* UnpublishApp
-* UpdateApp
-* UpdateCapacityAdmins
-* UpdateCapacityDisplayName
-* UpdateCapacityResourceGovernanceSettings
-* UpdateCapacityUsersAssignment
-* UpdatedAdminFeatureSwitch
-* UpdateDataflow
-* UpdateDatasetParameters
-* UpdateDatasourceCredentials
-* UpdateDatasources
-* UpdateEmailSubscription
-* UpdateFolder
-* UpdateFolderAccess
-* ViewDashboard
-* ViewDataflow
-* ViewReport
-* ViewTile
-* ViewUsageMetrics
+| Kutsumanimi                                     | Toiminnon nimi                              | Huomautukset                                  |
+|---------------------------------------------------|---------------------------------------------|------------------------------------------|
+| Lisätty tietolähde Power BI -yhdyskäytävään             | AddDatasourceToGateway                      |                                          |
+| Lisätty Power BI -kansion käyttöoikeus                      | AddFolderAccess                             | Ei tällä hetkellä käytössä                       |
+| Lisätty Power BI -ryhmän jäsenet                      | AddGroupMembers                             |                                          |
+| Järjestelmänvalvoja liitti tietovuon tallennustilin vuokraajaan | AdminAttachedDataflowStorageAccountToTenant | Ei tällä hetkellä käytössä                       |
+| Analysoitu Power BI -tietojoukko                         | AnalyzedByExternalApplication               |                                          |
+| Analysoitu Power BI -raportti                          | AnalyzeInExcel                              |                                          |
+| Sidottu Power BI -tietojoukko yhdyskäytävään                | BindToGateway                               |                                          |
+| Muutettu kapasiteetin tila                            | ChangeCapacityState                         |                                          |
+| Muutettu kapasiteetin käyttäjän määritys                  | UpdateCapacityUsersAssignment               |                                          |
+| Muutetut Power BI -tietojoukon yhteydet              | SetAllConnections                           |                                          |
+| Muutettu Power BI -yhdyskäytävän järjestelmänvalvojia                   | ChangeGatewayAdministrators                 |                                          |
+| Muutettu Power BI -yhdyskäytävän tietolähteen käyttäjiä        | ChangeGatewayDatasourceUsers                |                                          |
+| Luotu organisaation Power BI -sisältöpaketti      | CreateOrgApp                                |                                          |
+| Luotu Power BI -sovellus                              | CreateApp                                   |                                          |
+| Luotu Power BI -koontinäyttö                        | CreateDashboard                             |                                          |
+| Luotu Power BI -tietovuo                         | CreateDataflow                              |                                          |
+| Luotu Power BI -tietojoukko                          | CreateDataset                               |                                          |
+| Luotu Power BI -sähköpostiviestien tilaus               | CreateEmailSubscription                     |                                          |
+| Luotu Power BI -kansio                           | CreateFolder                                |                                          |
+| Luotu Power BI -yhdyskäytävä                          | CreateGateway                               |                                          |
+| Luotu Power BI -ryhmä                            | CreateGroup                                 |                                          |
+| Luotu Power BI -raportti                           | CreateReport                                |                                          |
+| Tietovuo siirretty ulkoiselle tallennustilille     | DataflowMigratedToExternalStorageAccount    | Ei tällä hetkellä käytössä                       |
+| Lisätty tietovuon käyttöoikeudet                        | DataflowPermissionsAdded                    | Ei tällä hetkellä käytössä                       |
+| Poistettu tietovuon käyttöoikeudet                      | DataflowPermissionsRemoved                  | Ei tällä hetkellä käytössä                       |
+| Poistettu organisaation Power BI -sisältöpaketti      | DeleteOrgApp                                |                                          |
+| Poistettu Power BI -kommentti                          | DeleteComment                               |                                          |
+| Poistettu Power BI -koontinäyttö                        | DeleteDashboard                             | Ei tällä hetkellä käytössä                       |
+| Poistettu Power BI -tietovuo                         | DeleteDataflow                              | Ei tällä hetkellä käytössä                       |
+| Poistettu Power BI -tietojoukko                          | DeleteDataset                               |                                          |
+| Poistettu Power BI -sähköpostiviestien tilaus               | DeleteEmailSubscription                     |                                          |
+| Poistettu Power BI -kansio                           | DeleteFolder                                |                                          |
+| Poistettu Power BI -kansion käyttöoikeus                    | DeleteFolderAccess                          | Ei tällä hetkellä käytössä                       |
+| Poistettu Power BI -yhdyskäytävä                          | DeleteGateway                               |                                          |
+| Poistettu Power BI -ryhmä                            | DeleteGroup                                 |                                          |
+| Poistettu Power BI -raportti                           | DeleteReport                                |                                          |
+| Löydetty Power BI -tietojoukon tietolähteet          | GetDatasources                              |                                          |
+| Ladattu Power BI -raportti                        | DownloadReport                              |                                          |
+| Muokattu Power BI -varmenteiden käyttöoikeutta          | EditCertificationPermission                 | Ei tällä hetkellä käytössä                       |
+| Muokattu Power BI -koontinäyttöä                         | EditDashboard                               | Ei tällä hetkellä käytössä                       |
+| Muokattu Power BI -tietojoukkoa                           | EditDataset                                 |                                          |
+| Muokattu Power BI -tietojoukon ominaisuuksia                | EditDatasetProperties                       | Ei tällä hetkellä käytössä                       |
+| Muokattu Power BI -raporttia                            | EditReport                                  |                                          |
+| Viety Power BI -tietovuo                        | ExportDataflow                              |                                          |
+| Viety Power BI -raportin visualisointitiedot              | ExportReport                                |                                          |
+| Viety Power BI -ruudun tiedot                       | ExportTile                                  |                                          |
+| Tietovuon käyttöoikeuksien lisääminen epäonnistui                | FailedToAddDataflowPermissions              | Ei tällä hetkellä käytössä                       |
+| Tietovuon käyttöoikeuksien poistaminen epäonnistui             | FailedToRemoveDataflowPermissions           | Ei tällä hetkellä käytössä                       |
+| Luotu Power BI -tietovuon SAS-tunnus             | GenerateDataflowSasToken                    |                                          |
+| Luotu Power BI -upotustunnus                    | GenerateEmbedToken                          |                                          |
+| Tuotu tiedosto Power BI:hin                         | Tuo                                      |                                          |
+| Asennettu Power BI -sovellus                            | InstallApp                                  |                                          |
+| Siirretty työtila kapasiteettiin                  | MigrateWorkspaceIntoCapacity                |                                          |
+| Kirjoitettu Power BI -kommentti                           | PostComment                                 |                                          |
+| Tulostettu Power BI -koontinäyttö                        | PrintDashboard                              |                                          |
+| Tulostettu Power BI -raporttisivu                      | PrintReport                                 |                                          |
+| Julkaistu Power BI -raportti verkkoon                  | PublishToWebReport                          |                                          |
+| Vastaanotettu salainen Power BI -tietovuo Key Vaultista  | ReceiveDataflowSecretFromKeyVault           | Ei tällä hetkellä käytössä                       |
+| Poistettu tietolähde Power BI -yhdyskäytävästä         | RemoveDatasourceFromGateway                 |                                          |
+| Poistettu Power BI -ryhmän jäsenet                    | DeleteGroupMembers                          |                                          |
+| Poistettu työtila kapasiteetista                 | RemoveWorkspacesFromCapacity                |                                          |
+| Nimetty uudelleen Power BI -koontinäyttö                        | RenameDashboard                             |                                          |
+| Pyydetty Power BI -tietovuon päivitystä               | RequestDataflowRefresh                      | Ei tällä hetkellä käytössä                       |
+| Pyydetty Power BI -tietojoukon päivitystä                | RefreshDataset                              |                                          |
+| Noudettu Power BI -työtilat                     | GetWorkspaces                               |                                          |
+| Määritetty ajoitettu päivitys Power BI -tietovuolle        | SetScheduledRefreshOnDataflow               |                                          |
+| Määritetty ajoitettu päivitys Power BI -tietojoukolle         | SetScheduledRefresh                         |                                          |
+| Jaettu Power BI -koontinäyttö                         | ShareDashboard                              |                                          |
+| Jaettu Power BI -raportti                            | ShareReport                                 |                                          |
+| Power BI:n pidennetty kokeilujakso aloitettu                   | OptInForExtendedProTrial                    | Ei tällä hetkellä käytössä                       |
+| Aloitettu Power BI -kokeilujakso                            | OptInForProTrial                            |                                          |
+| Ota haltuun Power BI -tietolähde                   | TakeOverDatasource                          |                                          |
+| Ota haltuun Power BI -tietojoukko                        | TakeOverDataset                             |                                          |
+| Julkaisematon Power BI -sovellus                          | UnpublishApp                                |                                          |
+| Päivitä kapasiteetin resurssin hallinnan asetukset      | UpdateCapacityResourceGovernanceSettings    | Ei tällä hetkellä käytössä Office 365 -hallintaportaalissa |
+| Päivitetty kapasiteetin järjestelmänvalvoja                            | UpdateCapacityAdmins                        |                                          |
+| Päivitetty kapasiteetin näyttönimi                     | UpdateCapacityDisplayName                   |                                          |
+| Päivitetyt organisaation Power BI -asetukset          | UpdatedAdminFeatureSwitch                   |                                          |
+| Päivitetty Power BI -sovellus                              | UpdateApp                                   |                                          |
+| Päivitetty Power BI -tietovuo                         | UpdateDataflow                              |                                          |
+| Päivitetyt Power BI -tietojoukon tietolähteet             | UpdateDatasources                           |                                          |
+| Päivitetyt Power BI -tietojoukon parametrit               | UpdateDatasetParameters                     |                                          |
+| Päivitetty Power BI -sähköpostiviestien tilaus               | UpdateEmailSubscription                     |                                          |
+| Päivitetty Power BI -kansio                           | UpdateFolder                                |                                          |
+| Päivitetty Power BI -kansion käyttöoikeus                    | UpdateFolderAccess                          |                                          |
+| Päivitetyt Power BI -yhdyskäytävän tietolähteen tunnukset  | UpdateDatasourceCredentials                 |                                          |
+| Tarkasteltu Power BI -koontinäyttö                         | ViewDashboard                               |                                          |
+| Tarkasteltu Power BI -tietovuo                          | ViewDataflow                                |                                          |
+| Tarkasteltu Power BI -raportti                            | ViewReport                                  |                                          |
+| Tarkasteltu Power BI -ruutu                              | ViewTile                                    |                                          |
+| Tarkastellut Power BI -käyttötiedot                     | ViewUsageMetrics                            |                                          |
+|                                                   |                                             |                                          |
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 

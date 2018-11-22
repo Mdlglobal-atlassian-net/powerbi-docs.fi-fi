@@ -10,18 +10,22 @@ ms.component: powerbi-admin
 ms.topic: conceptual
 ms.date: 11/06/2018
 LocalizationGroup: Premium
-ms.openlocfilehash: bb7527a197c9556509ebba721ee49a2d9817b6f5
-ms.sourcegitcommit: b23fdcc0ceff5acd2e4d52b15b310068236cf8c7
+ms.openlocfilehash: 4fc036bf9191d0ed56be11e69152e579cfc5102d
+ms.sourcegitcommit: 883d7e76816f2696e88ae391744ac6c7b1cb59c7
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51266204"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51688392"
 ---
 # <a name="monitor-power-bi-premium-and-power-bi-embedded-capacities"></a>Power BI Premiumin ja Power BI Embeddedin kapasiteettien valvonta
 
 Tässä artikkelissa annetaan yleiskatsaus Power BI Premium -kapasiteettien mittausarvojen valvonnasta. Kapasiteetin käytön valvonnan avulla voit hallita kapasiteettejasi valistuneesti.
 
-Voit valvoa kapasiteettia Power BI Premium -kapasiteetin mittausarvot -sovelluksen avulla tai hallintaportaalissa. Sovelluksen käyttäminen on suositeltavaa, koska se tarjoaa paljon enemmän tietoja, mutta tässä artikkelissa käsitellään molemmat vaihtoehdot. **Sovelluksen nykyinen versio on 1.8 (julkaistu 7. marraskuuta 2018).**
+Voit valvoa kapasiteettia Power BI Premium -kapasiteetin mittausarvot -sovelluksen avulla tai hallintaportaalissa. Sovelluksen käyttäminen on suositeltavaa, koska se tarjoaa paljon enemmän tietoja, mutta tässä artikkelissa käsitellään molemmat vaihtoehdot.
+
+**Sovelluksen nykyinen versio on 1.9 (julkaistu 14. marraskuuta 2018).**
+
+.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/UgsjMbhi_Bk?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 
@@ -87,7 +91,7 @@ Voit siirtyä eri alueille **Tietojoukot**-välilehden yläreunassa olevien pain
 | --- | --- |
 | **Entiteetit** | * Omistamiesi kapasiteettien määrä<br> * Tietojoukkojen erillinen määrä kapasiteetissasi<br> * Työtilojen erillinen määrä kapasiteetissasi |
 | **Järjestelmä** | * Keskimääräinen muistin käyttö gigatavuina viimeisten seitsemän päivän aikana<br> * Suurin muistin kulutus gigatavuina viimeisten seitsemän päivän aikana ja paikallinen tapahtumisaika<br> * Kuinka monta kertaa suoritin ylitti 80 prosenttia raja-arvoista viimeisten seitsemän päivän aikana kolmen minuutin osiin jaettuna<br> * Ajankohdat, jolloin suoritin useimmin ylitti 80 prosenttia viimeisten seitsemän päivän aikana tunnin osiin jaettuna sekä paikallinen tapahtumisaika<br> * Kuinka monta kertaa Direct Query- / reaaliaikainen yhteys ylitti 80 prosenttia raja-arvoista viimeisten seitsemän päivän aikana kolmen minuutin osiin jaettuna<br> * Ajankohdat, jolloin Direct Query- / reaaliaikainen yhteys useimmin ylitti 80 prosenttia viimeisten seitsemän päivän aikana tunnin osiin jaettuna sekä paikallinen tapahtumisaika |
-| **Tietojoukon kuormitukset** | * Päivitysten kokonaismäärä viimeisten seitsemän päivän aikana<br> * Onnistuneiden päivitysten kokonaismäärä viimeisten seitsemän päivän aikana<br> * Epäonnistuneiden päivitysten kokonaismäärä viimeisten seitsemän päivän aikana<br> * Muistin loppumisen vuoksi epäonnistuneiden päivitysten kokonaismäärä<br> * Päivityksen keskimääräinen kesto on toiminnon suorittamiseen tarvittava aika minuutteina<br> * Päivityksen keskimääräinen odotusaika on keskimääräinen viive ajoitetun ajankohdan ja toiminnon alun välillä minuutteina<br> * Suoritettujen kyselyjen kokonaismäärä viimeisten seitsemän päivän aikana<br> * Onnistuneiden kyselyjen kokonaismäärä viimeisten seitsemän päivän aikana<br> * Epäonnistuneiden kyselyjen kokonaismäärä viimeisten seitsemän päivän aikana<br> * Kyselyn keskimääräinen kesto on toiminnon suorittamiseen tarvittava aika minuutteina<br> * Muistipaineen vuoksi poistettujen mallien kokonaismäärä |
+| **Tietojoukon kuormitukset** | * Päivitysten kokonaismäärä viimeisten seitsemän päivän aikana<br> * Onnistuneiden päivitysten kokonaismäärä viimeisten seitsemän päivän aikana<br> * Epäonnistuneiden päivitysten kokonaismäärä viimeisten seitsemän päivän aikana<br> * Muistin loppumisen vuoksi epäonnistuneiden päivitysten kokonaismäärä<br> * Päivityksen keskimääräinen kesto on toiminnon suorittamiseen tarvittava aika minuutteina<br> * Päivityksen keskimääräinen odotusaika on keskimääräinen viive ajoitetun ajankohdan ja toiminnon alun välillä minuutteina<br> * Suoritettujen kyselyjen kokonaismäärä viimeisten seitsemän päivän aikana<br> * Onnistuneiden kyselyjen kokonaismäärä viimeisten seitsemän päivän aikana<br> * Epäonnistuneiden kyselyjen kokonaismäärä viimeisten seitsemän päivän aikana<br> * Kyselyn keskimääräinen kesto on toiminnon suorittamiseen tarvittava aika minuutteina<br> * Muistipaineen vuoksi poistettujen mallien kokonaismäärä<br> * Tietojoukkojen keskikoko <br> * Muistiin ladattujen tietojoukkojen keskimäärä |
 |  |  |
 
 #### <a name="refreshes-area"></a>Päivitykset-alue
@@ -136,6 +140,8 @@ Voit siirtyä eri alueille **Tietojoukot**-välilehden yläreunassa olevien pain
 | --- | --- |
 | **Tietojoukon poistolaskuri** | * Kokonaismäärä: kapasiteetista *häädettävien* tietojoukkojen kokonaismäärä. Kun kapasiteetti kohtaa muistipainetta, solmu häätää yhden tai useamman tietojoukon muistista. Passiiviset tietojoukot (joihin ei kyseisellä hetkellä kohdistu kysely- tai uudelleenlataustoimintoja) häädetään ensin. Seuraavaksi häätöjärjestyksessä sovelletaan ”viimeiseksi käytetyt ensin” -periaatetta.|
 | **Tietojoukkojen häätö ja muistin käyttö tunneittain** | * Tietojoukkojen häädöt vs. muistin käyttö gigatavuina tunnin osiin jaettuna paikallisessa ajassa ilmoitettuna |
+| **Tunnittain ladattujen tietojoukkojen määrä** | * Muistiin ladattujen tietojoukkojen määrä vs. muistin käyttö gigatavuina tunnin osiin jaettuna paikallisessa ajassa ilmoitettuna |
+| **Tietojoukkojen koko**  | * Enimmäiskoko: tietojoukon enimmäiskoko megatavuina näytetyllä ajanjaksolla |
 |  |  |
 
 ### <a name="paginated-reports-tab"></a>Sivutetut raportit -välilehti

@@ -1,5 +1,5 @@
 ---
-title: Analytiikkaruutu Power BI -palvelussa
+title: Dynaamisten viiteviivojen luominen visualisointeihin
 description: Dynaamisten viiteviivojen luominen visualisointeihin Power BI -palvelussa
 author: mihart
 manager: kfile
@@ -7,17 +7,18 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 12/21/2017
+ms.date: 11/14/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 37f4663a176e81f2c235111092fcfa5576bfe08a
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 04173d98185d7900848e93563b8e981bf3b200e6
+ms.sourcegitcommit: 1e4fee6d1f4b7803ea285eb879c8d5a4f7ea8b85
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34244511"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51717696"
 ---
-# <a name="analytics-pane-in-power-bi-service"></a>Analytiikkaruutu Power BI -palvelussa
+# <a name="create-dynamic-reference-lines-for-visuals-in-the-power-bi-service"></a>Dynaamisten viiteviivojen luominen visualisointeihin Power BI -palvelussa
+
 **Power BI -palvelun** **Analytiikka**-ruudussa voit lisätä dynaamisia *viiteviivoja* visualisointeihin ja määrittää kohdistuksen tärkeille trendeille tai merkityksellisille tiedoille.
 
 ![](media/service-analytics-pane/power-bi-analytics-pane.png)
@@ -27,7 +28,7 @@ ms.locfileid: "34244511"
 > 
 > 
 
-## <a name="using-the-analytics-pane"></a>Analytiikka-ruudun käyttäminen
+## <a name="use-the-analytics-pane"></a>Analytiikka-ruudun käyttäminen
 **Analytiikka**-ruudussa voit luoda seuraavanlaisia dynaamisia viiteviivoja (kaikki viivat eivät ole käytettävissä kaikkien visualisointityyppien tapauksessa):
 
 * X-akselin yhtenäinen viiva

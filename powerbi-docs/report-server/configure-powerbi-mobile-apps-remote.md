@@ -1,5 +1,5 @@
 ---
-title: Raporttipalvelimen käyttöoikeuksien etämäärittäminen Power BI -iOS-mobiilisovellukselle
+title: iOS-mobiilisovelluksen käyttöoikeuksien etämäärittäminen raporttipalvelimelle
 description: Lue, miten voit etämäärittää iOS-mobiilisovelluksen raporttipalvelimelle.
 author: maggiesMSFT
 manager: kfile
@@ -7,25 +7,24 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-report-server
 ms.topic: conceptual
-ms.date: 05/22/2018
+ms.date: 11/15/2018
 ms.author: maggies
-ms.openlocfilehash: bbade67c9510b8d316364d991c09444712309514
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 538bb802998003dba63b6c63cca2068b2d7b69fa
+ms.sourcegitcommit: 46f1ba3f972f6e64bce05ad0fd527b27c49aedd6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34722174"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52157421"
 ---
 # <a name="configure-power-bi-ios-mobile-app-access-to-a-report-server-remotely"></a>Raporttipalvelimen käyttöoikeuksien etämäärittäminen Power BI -iOS-mobiilisovellukselle
 
-Tässä artikkelissa kerrotaan, miten voit käyttää organisaatiosi ydintietojen hallintatyökalua määrittääksesi raporttipalvelimen käyttöoikeudet Power BI -iOS-mobiilisovellukselle. Tämän määrittämiseksi IT-järjestelmänvalvojat voivat luoda sovellusten määrityskäytännön, joka lähettää vaaditut tiedot sovellukseen. 
+Tässä artikkelissa kerrotaan, miten voit käyttää organisaatiosi ydintietojen hallintatyökalua määrittääksesi raporttipalvelimen käyttöoikeudet Power BI -iOS-mobiilisovellukselle. Tämän määrittämiseksi IT-järjestelmänvalvojat voivat luoda sovelluksen määrityskäytännön, joka lähettää vaaditut tiedot sovellukseen. 
 
- Tämän jälkeen Power BI:n iOS-mobiilisovelluksen käyttäjät voivat muodostaa yhteyden organisaationsa raporttipalvelimeen entistä helpommin, koska raporttipalvelimen yhteys on jo määritetty. 
-
+ Power BI:n iOS-mobiilisovelluksen käyttäjät voivat muodostaa yhteyden organisaationsa raporttipalvelimeen helpommin, koska raporttipalvelimen yhteys on jo määritetty. 
 
 ## <a name="create-the-app-configuration-policy-in-mdm-tool"></a>Sovelluksen määrityskäytännön luominen MDM-työkalussa 
 
-Järjestelmänvalvojat voivat luoda sovelluksen määrityskäytännön Microsoft Intunessa seuraavilla vaiheilla. Vaiheet ja sovelluksen määrityskäytännön luominen saattavat olla erilaisia muissa ydintietojen hallintatyökaluissa. 
+Järjestelmänvalvojat voivat luoda sovelluksen määrityskäytännön Microsoft Intunessa seuraavien vaiheiden mukaisesti. Vaiheet ja sovelluksen määrityskäytännön luominen saattavat olla erilaisia muissa ydintietojen hallintatyökaluissa. 
 
 1. Yhdistä ydintietojen hallintatyökalu. 
 2. Luo ja nimeä uusi sovelluksen määrityskäytäntö. 
@@ -39,7 +38,7 @@ Parit on havainnollistettu seuraavassa taulukossa.
 | com.microsoft.powerbi.mobile.ServerURL | Merkkijono | Raporttipalvelimen URL-osoite </br> Tulee alkaa merkkijonolla http tai https |
 | com.microsoft.powerbi.mobile.ServerUsername | Merkkijono | [valinnainen] </br> Käyttäjänimi, jota käytetään muodostettaessa yhteyttä palvelimeen. </br> Jos sellaista ei ole, sovellus pyytää käyttäjää antamaan käyttäjänimen yhteyden muodostamista varten.| 
 | com.microsoft.powerbi.mobile.ServerDisplayName | Merkkijono | [valinnainen] </br> Oletusarvo on ”Raporttipalvelin” </br> Kutsumanimi, joka edustaa palvelinta sovelluksessa | 
-| com.microsoft.powerbi.mobile.OverrideServerDetails | Totuusarvo | Oletusarvo on Tosi (True) </br> Jos arvo on ”Tosi”, tämä asetus ohittaa mobiililaitteella olevat raporttipalvelimen määritelmät (aiemmin määritetyt palvelimet poistetaan). </br> Ohituksen Tosi-arvo estää käyttäjää poistamista kyseistä määritystä. </br> Epätosi-arvo lisää lähetetyt arvot poistamatta olemassa olevia asetuksia. </br> Jos sama palvelimen URL-osoite on jo määritetty mobiilisovelluksessa, sovellus jättää sen määrityksen ennalleen eikä pyydä käyttäjän todentamista uudelleen kyseisen palvelimen tapauksessa. |
+| com.microsoft.powerbi.mobile.OverrideServerDetails | Totuusarvo | Oletusarvo on Tosi (True) </br>Kun arvoksi on määritetty Tosi, se ohittaa mobiililaitteessa jo olevat raporttipalvelimen määritelmät. Tässä yhteydessä poistetaan olemassa olevat palvelimet, jotka on jo määritetty. </br> Ohituksen Tosi-arvo estää käyttäjää poistamista kyseistä määritystä. </br> Epätosi-arvo lisää lähetetyt arvot poistamatta olemassa olevia asetuksia. </br> Jos sama palvelimen URL-osoite on jo määritetty mobiilisovelluksessa, sovellus jättää sen määrityksen ennalleen. Sovellus ei pyydä käyttäjää todentamaan uudelleen samalle palvelimelle. |
 
 Tässä on esimerkki määrityskäytännön asettamisesta Intunen avulla.
 
@@ -47,7 +46,7 @@ Tässä on esimerkki määrityskäytännön asettamisesta Intunen avulla.
 
 ## <a name="end-users-connecting-to-a-report-server"></a>Käyttäjät, jotka muodostavat yhteyttä raporttipalvelimeen
 
-Sovelluksen määrityskäytännön julkaisemisen jälkeen käyttäjät ja laitteet, jotka kuuluvat kyseisessä käytännössä määritettyyn jakeluluetteloon, saavat seuraavan käyttökokemuksen käynnistäessään Power BI:n iOS-mobiilisovelluksen. 
+ Oletetaan, että julkaiset jakeluluettelon sovelluksen määrityskäytännön. Kun tässä jakeluluettelossa olevat käyttäjät ja laitteet käynnistävät iOS-mobiilisovelluksen, toimitaan seuraavasti. 
 
 1. Sanomassa ilmoitetaan mobiilisovelluksen olevan määritetty raporttipalvelimen kanssa. Käyttäjä voi **kirjautua sisään** napauttamalla.
 

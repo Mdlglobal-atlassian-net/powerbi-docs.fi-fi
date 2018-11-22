@@ -1,5 +1,5 @@
 ---
-title: Suodattimen lisääminen Power BI - raporttiin
+title: Suodattimen lisääminen raporttiin muokkausnäkymässä
 description: Sivu-, visualisointi- tai raporttisuodattimen lisääminen raporttiin Power BI:ssä
 author: maggiesMSFT
 manager: kfile
@@ -7,17 +7,17 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 11/08/2018
+ms.date: 11/16/2018
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: c50afced257df1878a0a695a37d9401d9eda01b7
-ms.sourcegitcommit: ea77827127e0781f1d6877c0a3078aec7eb6694a
+ms.openlocfilehash: 328c8ab2e236f0ddc0c5116c1f76d343999193ab
+ms.sourcegitcommit: 46f1ba3f972f6e64bce05ad0fd527b27c49aedd6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51611148"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52157375"
 ---
-# <a name="add-a-filter-to-a-power-bi-service-report-in-editing-view"></a>Suodattimen lisääminen Power BI -palvelun raporttiin (muokkausnäkymässä)
+# <a name="add-a-filter-to-a-report-in-editing-view"></a>Suodattimen lisääminen raporttiin muokkausnäkymässä
 
 Tässä artikkelissa kerrotaan, miten voit lisätä sivu-, visualisointi-, raportti- tai porautumissuodattimen Power BI -raporttiin. Artikkelin esimerkit koskevat Power BI -palvelua. Vaiheet ovat lähes samanlaiset Power BI Desktopissa.
 
