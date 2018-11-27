@@ -10,18 +10,18 @@ ms.topic: conceptual
 ms.date: 10/31/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: ef20b37d781e266de9e72117d2c57e58f802d4fa
-ms.sourcegitcommit: a186679e8dae85dce23f6365bf5c36d7f407f15b
+ms.openlocfilehash: 26fa709eee00607911b2bee2e8bf3f5f1cba732f
+ms.sourcegitcommit: 458e091a0a0bfb71ea3980d44df6408f48bab586
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51850380"
+ms.lasthandoff: 11/22/2018
+ms.locfileid: "52289101"
 ---
 # <a name="signing-up-for-power-bi-with-a-new-office-365-trial"></a>Power BI:n rekisteröinti uudessa Office 365 -kokeilussa
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/gbSuFST-Nx4?showinfo=0" frameborder="0" allowfullscreen></iframe>
 
-Tässä artikkelissa kuvataan vaihtoehtoinen tapa rekisteröityä Power BI:n käyttäjäksi Office 365 -kokeilun avulla. Jos sinulla on ongelmia rekisteröitymisessä Power BI:n käyttäjäksi työsähköpostiosoitteellasi, varmista ensin, että tätä [sähköpostiosoitetta voi käyttää Power BI:n kanssa](service-self-service-signup-for-power-bi.md#what-email-address-can-be-used-with-power-bi). Jos tämä ei onnistu, yritä rekisteröityä ensin Office 365 -kokeilun käyttäjäksi ja vasta sitten Power BI:n käyttäjäksi. Voit käyttää Power BI:tä jopa Office 365 -kokeilujakson päättymisen jälkeen.
+Tässä artikkelissa kuvataan vaihtoehtoinen tapa rekisteröityä Power BI:n käyttäjäksi Office 365 -kokeilun avulla. Jos sinulla on ongelmia rekisteröitymisessä Power BI:n käyttäjäksi työsähköpostiosoitteellasi, varmista ensin, että tätä [sähköpostiosoitetta voi käyttää Power BI:n kanssa](service-self-service-signup-for-power-bi.md#supported-email-addresses). Jos tämä ei onnistu, yritä rekisteröityä ensin Office 365 -kokeilun käyttäjäksi ja vasta sitten Power BI:n käyttäjäksi. Voit käyttää Power BI:tä jopa Office 365 -kokeilujakson päättymisen jälkeen.
 
 1. Rekisteröidy Office 365 -kokeilun käyttäjäksi [Office 365 -sivustossa](https://go.microsoft.com/fwlink/p/?LinkID=403802).
 
