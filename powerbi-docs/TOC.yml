@@ -390,42 +390,54 @@ items:
     items:
     - name: Power BI -palvelun uudet toiminnot ja ominaisuudet
       href: service-whats-new.md
-    - name: Peruskäsitteet
+    - name: Peruskäsitteet suunnittelijoille
       href: service-basic-concepts.md
-    - name: Omatoiminen kirjautuminen
-      href: service-self-service-signup-for-power-bi.md
-    - name: Power BI:n Cortanan esittely
-      href: service-cortana-intro.md
-    - name: Tietojen päivittäminen Power BI:ssä
-      href: refresh-data.md
-    - name: Power BI Pro Yhdysvaltain julkishallinnolle
-      href: service-govus-overview.md
-    - name: Toiminnot käyttöoikeustyypin mukaan
-      href: service-features-license-type.md
     - name: 10 vinkkiä ohjeiden hankkimiseen
       href: service-tips-for-finding-help.md
-    - name: Tietoja Power BI -raporttien suodattimista ja korostamisesta
-      href: power-bi-reports-filters-and-highlighting.md
-    - name: Tietojen noutaminen tiedostoista
-      href: service-get-data-from-files.md
-    - name: 'Raporttieditori: esittely'
-      href: service-the-report-editor-take-a-tour.md
-    - name: Visualisoinnit Power BI:ssä
-      href: visuals/power-bi-report-visualizations.md
-    - name: Power BI:n tietolähteet
-      href: service-get-data.md
-    - name: Laajennetun Pro-kokeiluversion aktivointi
-      href: service-extended-pro-trial.md
-    - name: Microsoft Flow ja Power BI
-      href: service-flow-integration.md
-    - name: Usein kysyttyjä kysymyksiä Power BI:n saksalaisille pilviasiakkaille
-      href: service-govde-faq.md
-    - name: Power BI:n käytön aloittaminen muiden ohjelmistovalmistajien sovellusten kanssa
-      href: service-power-bi-get-started-third-party-apps.md
-    - name: Koosteet (summa, keskiarvo, suurin jne.) Power BI:ssä
-      href: service-aggregates.md
-    - name: Power BI -raportin sivun näyttöasetukset
-      href: power-bi-report-display-settings.md
+    - name: Käyttöoikeudet
+      items:
+      - name: Omatoiminen kirjautuminen
+        href: service-self-service-signup-for-power-bi.md
+      - name: Toiminnot käyttöoikeustyypin mukaan
+        href: service-features-license-type.md
+      - name: Laajennetun Pro-kokeiluversion aktivointi
+        href: service-extended-pro-trial.md
+      - name: Power BI Pro Yhdysvaltain julkishallinnolle
+        href: service-govus-overview.md
+      - name: Usein kysyttyjä kysymyksiä saksalaisille pilviasiakkaille
+        href: service-govde-faq.md
+    - name: Tiedot
+      items:
+      - name: Power BI:n tietolähteet
+        href: service-get-data.md
+      - name: Tietojen noutaminen tiedostoista
+        href: service-get-data-from-files.md
+      - name: Koosteet (summa, keskiarvo, suurin arvo jne.)
+        href: service-aggregates.md
+      - name: Tietojen päivittäminen Power BI:ssä
+        href: refresh-data.md
+      - name: Azure ja Power BI
+        href: service-azure-and-power-bi.md
+      - name: Power BI:n ja Azuren lähtevä liikenne
+        href: service-azure-egress-power-bi.md
+    - name: Raportin suunnittelu
+      items:
+      - name: 'Raporttieditori: esittely'
+        href: service-the-report-editor-take-a-tour.md
+      - name: Visualisoinnit Power BI:ssä
+        href: visuals/power-bi-report-visualizations.md
+      - name: Tietoja suodattimista ja korostamisesta raporteissa
+        href: power-bi-reports-filters-and-highlighting.md
+      - name: Power BI -raportin sivun näyttöasetukset
+        href: power-bi-report-display-settings.md
+      - name: Power BI:n Cortanan esittely
+        href: service-cortana-intro.md
+    - name: Muut
+      items:
+      - name: Microsoft Flow ja Power BI
+        href: service-flow-integration.md
+      - name: Kolmannen osapuolen sovellusten käytön aloittaminen
+        href: service-power-bi-get-started-third-party-apps.md
   - name: Ohjeet
     items:
     - name: Yleiset tehtävät
@@ -548,13 +560,13 @@ items:
         href: service-connect-to-zuora.md
     - name: Tiedot tiedostoista
       items:
-      - name: Excel-työkirjasta upeaksi raportiksi nopeasti
+      - name: Excelistä upeaksi raportiksi
         href: service-from-excel-to-stunning-report.md
       - name: Tietojen noutaminen Excel-työkirjatiedostoista
         href: service-excel-workbook-files.md
       - name: Tietojen hakeminen Power BI Desktop -tiedostoista
         href: service-desktop-files.md
-      - name: Tietojoukkojen parametriasetukset
+      - name: Parametrien muokkaaminen
         href: service-parameters.md
       - name: Tietojen hakeminen .csv-tiedostosta
         href: service-comma-separated-value-files.md
@@ -562,7 +574,7 @@ items:
         href: service-real-time-streaming.md
       - name: Julkaiseminen Power BI:stä Excel 2016:een
         href: service-publish-from-excel.md
-      - name: Excel-työkirjan koon pienentäminen Power BI:ssä tarkastelu varten
+      - name: Excel-työkirjan koon pienentäminen
         href: reduce-the-size-of-an-excel-workbook.md
     - name: Tiedot tietokannoista
       items:
@@ -574,21 +586,17 @@ items:
         href: spark-on-hdinsight-with-direct-connect.md
       - name: SQL Server Analysis Servicesin reaaliaikaiset tiedot Power BI:ssä
         href: sql-server-analysis-services-tabular-data.md
-      - name: Azure ja Power BI
-        href: service-azure-and-power-bi.md
-      - name: Power BI:n ja Azuren lähtevä liikenne
-        href: service-azure-egress-power-bi.md
     - name: Tietojen uudelleenlataus
       items:
       - name: Ajoitetun päivityksen määrittäminen
         href: refresh-scheduled-refresh.md
-      - name: Power BI Desktop -tiedostosta luodun tietojoukon päivittäminen – paikallinen
+      - name: Power BI Desktop -tiedoston tietojoukon päivittäminen – paikallinen
         href: refresh-desktop-file-local-drive.md
-      - name: Power BI Desktop -tiedostosta luodun tietojoukon päivittäminen – pilvi
+      - name: Power BI Desktop -tiedoston tietojoukon päivittäminen – pilvipalvelu
         href: refresh-desktop-file-onedrive.md
-      - name: Excel-työkirjasta luodun tietojoukon päivittäminen – paikallinen
+      - name: Excel-työkirjan tietojoukon päivittäminen – paikallinen
         href: refresh-excel-file-local-drive.md
-      - name: Excel-työkirjasta luodun tietojoukon päivittäminen – pilvi
+      - name: Excel-työkirjan tietojoukon päivittäminen – pilvipalvelu
         href: refresh-excel-file-onedrive.md
       - name: OneDriven .csv-tiedostosta luodun tietojoukon päivittäminen
         href: refresh-csv-file-onedrive.md
@@ -604,25 +612,25 @@ items:
         href: service-dashboard-create.md
       - name: Koontinäytön kopioiminen
         href: service-dashboard-copy.md
-      - name: Ruudun kiinnittäminen Power BI:n koontinäyttöön raportista
+      - name: Ruudun kiinnittäminen koontinäyttöön raportista
         href: service-dashboard-pin-tile-from-report.md
       - name: Yhden koontinäytön ruudun kiinnittäminen toiseen koontinäyttöön
         href: service-pin-tile-to-another-dashboard.md
-      - name: Ruudun kiinnittäminen Power BI:n koontinäyttöön Excelistä
+      - name: Ruudun kiinnittäminen koontinäyttöön Excelistä
         href: service-dashboard-pin-tile-from-excel.md
-      - name: Ruudun kiinnittäminen Power BI:n koontinäyttöön Q&A-kysymysruudusta
+      - name: Ruudun kiinnittäminen koontinäyttöön Q&A:sta
         href: service-dashboard-pin-tile-from-q-and-a.md
-      - name: Koko raporttisivun kiinnittäminen Power BI:n koontinäyttöön
+      - name: Koko raporttisivun kiinnittäminen koontinäyttöön
         href: service-dashboard-pin-live-tile-from-report.md
       - name: Koontinäyttöjen käyttötiedot
         href: service-usage-metrics.md
-      - name: Kuvan, tekstiruudun, videon tai verkkokoodin lisääminen koontinäyttöön
+      - name: Kuvan, tekstiruudun, videon tai koodin lisääminen koontinäyttöön
         href: service-dashboard-add-widget.md
-      - name: 'Ruudun muokkaaminen: koon muuttaminen, siirtäminen, nimeäminen uudelleen, kiinnittäminen, poistaminen ja hyperlinkin lisääminen'
+      - name: Ruudun muokkaaminen
         href: service-dashboard-edit-tile.md
-      - name: Vinkkejä laadukkaiden Power BI -koontinäyttöjen suunnitteluun
+      - name: Vinkkejä laadukkaiden koontinäyttöjen suunnitteluun
         href: service-dashboards-design-tips.md
-      - name: Tietojen optimointi Power BI:n nopeille merkityksellisille tiedoille
+      - name: Tietojen optimointi nopeille merkityksellisille tiedoille
         href: service-insights-optimize.md
       - name: Koontinäytön puhelinnäkymän luominen
         href: service-create-dashboard-mobile-phone-view.md
@@ -708,7 +716,7 @@ items:
         href: service-collaborate-power-bi-workspace.md
       - name: Ryhmän hallinta Power BI:ssä ja Office 365:ssä
         href: service-manage-app-workspace-in-power-bi-and-office-365.md
-      - name: OneDrive for Businessiin tallennettuun Excel-työkirjaan linkittävän koontinäytön jakaminen
+      - name: OneDriveen tallennettuun Excel-työkirjaan linkittävän koontinäytön jakaminen
         href: service-share-dashboard-that-links-to-excel-onedrive.md
     - name: Sisältöpaketit
       items:
@@ -936,6 +944,8 @@ items:
         href: developer/custom-visual-develop-tutorial-format-options.md
     - name: Käsitteet
       items:
+      - name: Power BI -visualisointien ohjeet
+        href: developer/office-store-in-app-purchase-visual-guidelines.md
       - name: Ominaisuuksien käyttö
         href: https://microsoft.github.io/PowerBI-visuals/docs/concepts/capabilities/
       - name: Tietonäkymän yhdistämismääritykset
@@ -1255,9 +1265,9 @@ items:
       href: service-admin-governance.md
     - name: Power BI:n suojaus
       href: service-admin-power-bi-security.md
-ms.openlocfilehash: 6be9e4865dd91817bd4b73c2763d6f7d374e1013
-ms.sourcegitcommit: 458e091a0a0bfb71ea3980d44df6408f48bab586
+ms.openlocfilehash: d6dd88caff9e0f2cdef7f7697c81161fe32c0b35
+ms.sourcegitcommit: 35d763dfc75c229204d36fd8b35c1e860786b707
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/22/2018
-ms.locfileid: "52289285"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52331846"
