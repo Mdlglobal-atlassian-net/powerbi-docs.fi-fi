@@ -1,31 +1,31 @@
 ---
-title: Koontinäyttöruudut Power BI -palvelussa
-description: Kaikki koontinäyttöruuduista Power BI:ssä. Tämä sisältää ruudut, jotka on luotu SQL Server Reporting Servicesistä (SSRS).
+title: Johdatus raporttinäkymien ruutuihin Power BI -suunnittelijoille
+description: Kaikki koontinäyttöruuduista Power BI:ssä. Tämä sisältää ruudut, jotka on luotu SQL Server Reporting Services (SSRS) -raporteista.
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 10/3/2018
+ms.date: 11/21/2018
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 76b8eaff949ee56d57511eabea913363e6cdc3f6
-ms.sourcegitcommit: 1e4fee6d1f4b7803ea285eb879c8d5a4f7ea8b85
+ms.openlocfilehash: de99c04077a58f1c0c060561674fefa9041fa144
+ms.sourcegitcommit: 35d763dfc75c229204d36fd8b35c1e860786b707
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51717397"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52331961"
 ---
-# <a name="dashboard-tiles-in-power-bi"></a>Koontinäyttöruudut Power BI:ssä
-Koontinäytöt ja koontinäyttöruudut ovat Power BI -palvelun ominaisuus eivätkä Power BI Desktopin. Vaikka koontinäyttöruutuja ei voi luoda tai kiinnittää Power BI -mobiilisovelluksessa, [niitä voidaan tarkastella ja jakaa](mobile-tiles-in-the-mobile-apps.md). Power BI -mobiilisovelluksessa voit [lisätä kuvia koontinäyttöösi iPhone-sovelluksella](mobile-iphone-app-get-started.md).
+# <a name="intro-to-dashboard-tiles-for-power-bi-designers"></a>Johdatus raporttinäkymien ruutuihin Power BI -suunnittelijoille
 
-## <a name="dashboard-tiles"></a>Koontinäytön ruudut
+Ruutu on tietojen tilannevedos, joka on kiinnitetty koontinäyttöön. Ruutu voidaan luoda raportista, tietojoukosta, raporttinäkymästä, Q&A-ruudusta, Excelistä, SQL Server Reporting Services (SSRS) -raporteista ja niin edelleen.  Tämä näyttökuva esittää useita eri ruutuja, jotka on kiinnitetty koontinäyttöön.
+
 ![Power BI -koontinäyttö](media/service-dashboard-tiles/power-bi-dashboard.png)
 
-Ruutu on tietojen tilannevedos, joka on kiinnitetty koontinäyttöön. Ruutu voidaan luoda raportista, tietojoukosta, koontinäytöstä, Q&A-ruudusta, Excelistä, SQL Server Reporting Servicesistä (SSRS) ja niin edelleen.  Tämä näyttökuva esittää useita eri ruutuja, jotka on kiinnitetty koontinäyttöön.
+Koontinäytöt ja koontinäyttöruudut ovat Power BI -palvelun ominaisuus eivätkä Power BI Desktopin. Raporttinäkymiä ei voi luoda mobiililaitteilla, mutta niitä voi [tarkastella ja jakaa](mobile-apps-view-dashboard.md) niillä.
 
-Kiinnittämisen lisäksi yksittäisiä ruutuja voidaan luoda suoraan koontinäyttöön valitsemalla [Lisää ruutu](service-dashboard-add-widget.md). Yksittäisiä ruutuja ovat tekstiruudut, kuvat, videot, suoratoistotiedot ja verkkosisältö.
+Kiinnittämisen lisäksi yksittäisiä ruutuja voidaan luoda suoraan raporttinäkymään valitsemalla [Lisää ruutu](service-dashboard-add-widget.md). Yksittäisiä ruutuja ovat tekstiruudut, kuvat, videot, suoratoistotiedot ja verkkosisältö.
 
 Tarvitsetko apua Power BI:n rakenneosien kanssa?  Katso [Power BI - peruskäsitteet](service-basic-concepts.md).
 
@@ -43,7 +43,7 @@ Voit lisätä (kiinnittää) ruudun koontinäyttöön monella eri tavalla. Ruutu
 * [OneDrive for Businessin Excel-työkirja](service-dashboard-pin-tile-from-excel.md)
 * [Power BI Publisher for Excel](publisher-for-excel.md)
 * [Nopeat merkitykselliset tiedot](service-insights.md)
-* [SSRS](https://msdn.microsoft.com/library/mt604784.aspx)
+* [Reporting Services](https://docs.microsoft.com/sql/reporting-services/pin-reporting-services-items-to-power-bi-dashboards)
 
 Voit luoda erillisiä ruutuja kuville, muokkausruuduille, videoille, suoratoistotiedoille ja verkkosisällölle suoraan koontinäytössä valitsemalla [Lisää ruutu](service-dashboard-add-widget.md).
 
@@ -78,7 +78,7 @@ Tartu ruutuun ja [siirrä sitä koontinäytössä](service-dashboard-edit-tile.m
 3. Jos haluat sulkea toimintovalikon, valitse kankaan tyhjä alue.
 
 ### <a name="select-click-a-tile"></a>Ruudun valitseminen (napsauttaminen)
-Kun valitset ruudun, seuraavaksi tapahtuva asia riippuu siitä, miten ruutu on luotu ja onko sillä [mukautettu linkki](service-dashboard-edit-tile.md). Jos sillä on mukautettu linkki, ruudun valitseminen ohjaa sinut kyseiseen linkkiin. Muussa tapauksessa ruudun valitseminen avaa raportin, Excel Online -työkirjan, SSRS-raportin, joka on paikallinen, tai kysymysten ja vastausten kysymyksen, jolla ruutu on luotu.
+Kun valitset ruudun, seuraavaksi tapahtuva asia riippuu siitä, miten ruutu on luotu. Jos sillä on [mukautettu linkki](service-dashboard-edit-tile.md), ruudun valitseminen ohjaa sinut kyseiseen linkkiin. Muussa tapauksessa ruudun valitseminen avaa raportin, Excel Online -työkirjan, paikallisen Reporting Services -raportin tai Q&A-kysymyksen, jolla ruutu on luotu.
 
 > [!NOTE]
 > Poikkeuksena tähän ovat videoruudut, jotka on luotu suoraan koontinäyttöön **Lisää ruutu** -toiminnolla. (Tällä tavalla luodun) videoruudun valitseminen toistaa videon suoraan koontinäytössä.   
@@ -86,12 +86,13 @@ Kun valitset ruudun, seuraavaksi tapahtuva asia riippuu siitä, miten ruutu on l
 > 
 
 ## <a name="considerations-and-troubleshooting"></a>Huomioon otettavat seikat ja vianmääritys
+
 * Jos raporttia, jolla visualisointi on luotu, ei tallennettu, ruudun valitseminen ei tuota mitään toimia.
-* Jos ruudun luotiin Excel Onlinen työkirjasta eikä sinulla ole vähintään lukuoikeuksia kyseiseen työkirjaan, ruudun valitseminen ei avaa työkirjaa Excel Onlinessa.
-* Jos suoraan koontinäyttöön **Lisää ruutu** -toiminnolla luoduissa ruuduissa on määritetty mukautettu hyperlinkki, otsikon, alaotsikon tai ruudun valitseminen avaa kyseisen URL-osoitteen.  Muussa tapauksessa jonkin näiden suoraan koontinäytössä luotujen kuvan, verkkokoodin tai muokkausruudun ruudun valitseminen ei oletusarvoisesti tuota mitään toimia.
-* Jos sinulla ei ole raportin käyttöoikeutta SSRS:ssä, SSRS:ssä luodun ruudun valitseminen avaa sivun, jossa ilmoitetaan, ettei sinulla ole käyttöoikeutta (rsAccessDenied).
-* Jos sinulla ei ole käyttöoikeutta SSRS-palvelimen sisältävään verkkoon, SSRS:ssä luodun ruudun valitseminen avaa sivun, joka osoittaa, ettei palvelinta ei löytynyt (HTTP 404). Laitteellasi on oltava verkkoyhteys raporttipalvelimeen raportin tarkastelemiseksi.
-* Jos ruudun luomiseen käytetty alkuperäinen visualisointi muuttuu, ruutu ei muutu.  Jos esimerkiksi kiinnitit raportin viivakaavion ja muutat sitten viivakaavion palkkikaavioksi, koontinäytön ruudussa näkyy edelleen viivakaavio. Tiedot päivittyvät, mutta visualisointityyppi ei.
+* Jos ruutu on luotu Excel Online -työkirjasta, tarvitset vähintään työkirjan lukuoikeudet. Muussa tapauksessa työkirjaa ei avata Excel Onlinessa, kun ruutu valitaan.
+* Oletetaan, että luot ruudun suoraan raporttinäkymään käyttämällä **Lisää ruutu** -vaihtoehtoa ja määrität sille mukautetun hyperlinkin. Jos näin on, kyseinen URL-osoite aukeaa, kun valitset otsikon, aliotsikon tai ruudun. Muussa tapauksessa suoraan raporttinäkymässä luodun kuvan, verkkokoodin tai muokkausruudun ruudun valitseminen ei oletusarvoisesti tuota mitään toimia.
+* Jos sinulla ei ole raportin käyttöoikeutta Reporting Servicesissä, Reporting Services -raportista luodun ruudun valitseminen avaa sivun, jossa ilmoitetaan, ettei sinulla ole käyttöoikeutta (rsAccessDenied).
+* Jos sinulla ei ole käyttöoikeutta Reporting Services -palvelimen sisältävään verkkoon, Reporting Servicesistä luodun ruudun valitseminen avaa sivun, joka osoittaa, ettei palvelinta löytynyt (HTTP 404). Laitteellasi on oltava verkkoyhteys raporttipalvelimeen raportin tarkastelemista varten.
+* Jos ruudun luomiseen käytetty alkuperäinen visualisointi muuttuu, ruutu ei muutu.  Jos esimerkiksi kiinnitit raportin viivakaavion ja muutat sitten viivakaavion palkkikaavioksi, raporttinäkymän ruudussa näkyy edelleen viivakaavio. Tiedot päivittyvät, mutta visualisointityyppi ei.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 [Kortin (suurinumeroiden ruudun) luominen koontinäytölle](power-bi-visualization-card.md)

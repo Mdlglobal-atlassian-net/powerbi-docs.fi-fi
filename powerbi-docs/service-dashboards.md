@@ -1,54 +1,48 @@
 ---
-title: Raporttinäkymät Power BI -palvelussa
-description: Koontinäyttö on yksi Power BI -palvelun tärkeistä ominaisuuksista.
+title: Johdatus raporttinäkymiin Power BI -kehittäjille
+description: Raporttinäkymä on yksi Power BI -palvelun tärkeistä ominaisuuksista. Raporttinäkymä on yksittäinen sivu, jossa kerrotaan tarina visualisointien kautta.
 author: maggieMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 10/18/2018
+ms.date: 11/21/2018
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: b7f94d47452fb9d1ea24c950dba2988c6c80c053
-ms.sourcegitcommit: 2c4a075fe16ccac8e25f7ca0b40d404eacb49f6d
+ms.openlocfilehash: 709518924fbb9d83201eb5c070b7a3e93838ec79
+ms.sourcegitcommit: 35d763dfc75c229204d36fd8b35c1e860786b707
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/20/2018
-ms.locfileid: "49473724"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52331938"
 ---
-# <a name="dashboards-in-the-power-bi-service"></a>Raporttinäkymät Power BI -palvelussa
+# <a name="intro-to-dashboards-for-power-bi-designers"></a>Johdatus raporttinäkymiin Power BI -kehittäjille
 
-Power BI ***-koontinäyttö*** on yksi sivu, jota kutsutaan usein pohjaksi, jossa käytetään visualisointeja tarinan kertomiseksi. Koska se on rajoitettu vain yhteen sivuun, hyvin suunniteltu koontinäyttö sisältää vain tarinan tärkeimmät elementit.
+Power BI -***raporttinäkymä*** on yksittäinen sivu, joka kertoo tarinan visualisointien kautta. Koska se on rajattu yhdelle sivulle, hyvin suunniteltu raporttinäkymä sisältää vain tarinan kohokohdat. Lukijat voivat tutustua yksityiskohtiin raporttinäkymään liittyvien raporttien kautta.
 
-![koontinäyttö](media/service-dashboards/power-bi-dashboard2.png)
+![raporttinäkymä](media/service-dashboards/power-bi-dashboard2.png)
 
-Koontinäytöt ovat Power BI -palvelun ominaisuus eivätkä ne ole käytettävissä Power BI Desktopissa. Koontinäyttöjä ei voi luoda mobiililaitteissa, mutta niitä voidaan [tarkastella ja jakaa](mobile-apps-view-dashboard.md).
+Raporttinäkymä on Power BI -palvelun ominaisuus. Raporttinäkymät eivät ole käytettävissä Power BI Desktopissa. Raporttinäkymiä ei voi luoda mobiililaitteilla, mutta niitä voi [tarkastella ja jakaa](mobile-apps-view-dashboard.md) niillä.
 
-## <a name="dashboard-creators-and-dashboard-consumers"></a>Koontinäytön luojat ja koontinäytön kuluttajat
-Roolistasi riippuen saatat olla henkilö, joka luo koontinäyttöjä omaan käyttöönsä tai jakaa niitä työtovereidensa kanssa. Sinulle sopivia tietoja löytyy kohdasta **Koontinäytöt luojille**. Jos olet henkilö, joka saa koontinäyttöjä muilta. Haluat oppia ymmärtämään ja käyttämään koontinäyttöä. Tämä artikkeli sopii sinulle!
+## <a name="dashboard-basics"></a>Raporttinäkymien perusteet 
 
-
-### <a name="if-you-will-be-receiving-and-consuming-dashboards"></a>Jos aiot vastaanottaa ja katsella koontinäyttöjä
-
-Koontinäytössä näkyviä visualisointeja kutsutaan *ruuduiksi* ja koontinäytön *luojat* *kiinnittävät* ne koontinäyttöön raporteista. Jos olet uusi Power BI:n käyttäjä, saat hyvän pohjan sen käyttöön lukemalla [Power BI:n peruskäsitteet](service-basic-concepts.md).
+Raporttinäkymän visualisointeja kutsutaan *ruuduiksi*. Ruutuja *kiinnitetään* raporttinäkymiin raporteista. Jos olet uusi Power BI:n käyttäjä, saat hyvän pohjan sen käyttöön lukemalla [Power BI:n peruskäsitteet](service-basic-concepts.md).
 
 > [!IMPORTANT]
-> Jaetun koontinäytön tarkasteluun vaaditaan [Power BI Pro](service-free-vs-pro.md).
+> Raporttinäkymien luomiseen tarvitaan [Power BI Pro](service-free-vs-pro.md) -käyttöoikeus.
 
-Koontinäytön visualisoinnit ovat peräisin raporteista ja kukin raportti perustuu yhteen tietojoukkoon. Itse asiassa koontinäyttöä voidaan ajatella eteisenä, josta pääsee pohjana oleviin raportteihin ja tietojoukkoihin. Valitsemalla visualisoinnin valitseminen pääset raporttiin (ja tietojoukkoon), jota käytettiin sen luomiseen.
+Raporttinäkymän visualisoinnit ovat peräisin raporteista, ja kukin raportti perustuu tietojoukkoon. Itse asiassa raporttinäkymää voidaan ajatella eteisenä, josta pääsee sen pohjana oleviin raportteihin ja tietojoukkoihin. Valitsemalla visualisoinnin pääset sen perustana olevaan raporttiin (ja tietojoukkoon).
 
 ![kaavio, jossa näkyy koontinäyttöjen, raporttien ja tietojoukkojen välinen suhde](media/service-dashboards/power-bi-diagram.png)
 
-
-
 ## <a name="advantages-of-dashboards"></a>Koontinäyttöjen edut
-Koontinäytöt tarjoavat erinomaisen tavan liiketoiminnan tarkkailuun, vastausten etsimiseen ja tärkeimpien tietojesi näkemiseen yhdellä silmäyksellä. Koontinäytöillä olevat visualisoinnit saattavat olla peräisin yhdestä tai useammasta tietojoukosta sekä yhdestä tai useammasta pohjana olevasta raportista. Koontinäyttö yhdistää paikalliset ja pilvipalvelussa olevat tiedot, tarjoten yhdistetyn näkymän riippumatta siitä, missä tiedot todella sijaitsevat.
+Raporttinäkymät tarjoavat erinomaisen tavan liiketoiminnan tarkkailuun ja tärkeimpien tietojesi näkemiseen yhdellä silmäyksellä. Koontinäytöillä olevat visualisoinnit saattavat olla peräisin yhdestä tai useammasta tietojoukosta sekä yhdestä tai useammasta pohjana olevasta raportista. Raporttinäkymä yhdistää paikalliset ja pilvipalvelussa olevat tiedot ja tarjoaa niistä yhdistetyn näkymän riippumatta siitä, missä tiedot todella sijaitsevat.
 
-Koontinäyttö ei ole vain nätti kuva, vaan se on erittäin vuorovaikutuskykyinen ja sen ruudut päivittyvät sitä mukaa, kun sen pohjana olevat tiedot muuttuvat.
+Raporttinäkymä ei ole pelkkää koreilua. Se on erittäin vuorovaikutuskykyinen, ja sen ruudut päivittyvät sitä mukaa, kun pohjana olevat tiedot muuttuvat.
 
 ## <a name="dashboards-versus-reports"></a>Koontinäytöt vs. raportit
-[Raportit](service-reports.md) sekoitetaan usein koontinäyttöihin, koska nekin ovat pohjia, jotka ovat täynnä visualisointeja. Niiden välillä on kuitenkin merkittäviä eroja Power BI -asiakkaille.
+[Raportit](service-reports.md) ja raporttinäkymät vaikuttavat samankaltaisilta, koska ne ovat molemmat eräänlaisia pohjia, jotka ovat täynnä visualisointeja. Niissä on kuitenkin merkittäviä eroja.
 
 | **Ominaisuus** | **Koontinäytöt** | **Raportit** |
 | --- | --- | --- |
@@ -66,6 +60,6 @@ Koontinäyttö ei ole vain nätti kuva, vaan se on erittäin vuorovaikutuskykyin
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 * Tutustu koontinäyttöihin paremmin tutustumalla johonkin [mallikoontinäytöistämme](sample-tutorial-connect-to-the-samples.md).
-* Lue lisätietoja [koontinäytön ruuduista](service-dashboard-tiles.md) ja siitä, mitä tapahtuu, kun valitset sellaisen.
+* Lue lisää [raporttinäkymien ruuduista](service-dashboard-tiles.md).
 * Haluatko seurata yksittäistä koontinäytön ruutua ja saada sähköpostiviestin, kun se saavuttaa tietyn raja-arvon? [Luo hälytyksiä ruuduista](service-set-data-alerts.md).
-* Pidä hauskaa ja esitä kysymyksiä koontinäytöistä. Opettele käyttämään [Power BI:n kysymyksiä ja vastauksia](power-bi-tutorial-q-and-a.md) -toimintoa kysymyksen esittämiseksi tietojasi koskien, jolloin saat vastauksen visualisoinnin muodossa.
+* Opettele käyttämään [Power BI:n kysymyksiä ja vastauksia](power-bi-tutorial-q-and-a.md) -toimintoa kysymyksen esittämiseksi tietojasi koskien, jolloin saat vastauksen visualisoinnin muodossa.

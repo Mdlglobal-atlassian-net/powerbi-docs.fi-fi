@@ -7,54 +7,55 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 01/16/2018
+ms.date: 11/21/2018
 ms.author: maggies
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 6759145d2764a586526a69c8b577178144ba019e
-ms.sourcegitcommit: fb1885da7cf11367660edbf7b7346dc039ee9b5d
+ms.openlocfilehash: e76d57f43fc76f5a9c51501daac48b081d9747b6
+ms.sourcegitcommit: 35d763dfc75c229204d36fd8b35c1e860786b707
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47187004"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52331813"
 ---
 # <a name="get-started-with-power-bi-qa"></a>Power BI Q&A:n käytön aloittaminen
-## <a name="use-power-bi-qa-with-the-retail-analysis-sample"></a>Power BI Q&A:n käyttäminen Jälleenmyyntianalyysimallin kanssa
+
 Joskus nopein tapa saada vastauksia tiedoista on esittää kysymyksiä luonnollisella kielellä.  Tässä pikaoppaassa tarkastelemme kahta eri tapaa luoda sama visualisointi: ensin se luodaan raportissa ja sen jälkeen esittämällä kysymys Q&A:ssa. Käytämme Power BI -palvelua, mutta prosessi on lähes samanlainen Power BI Desktopissa.
 
 Esimerkkien seuraaminen edellyttää, että käytössäsi on raportti, jota voit muokata, joten käytämme yhtä Power BI:hin sisältyvistä malleista.
 
-## <a name="method-1-using-the-report-editor"></a>Menetelmä 1: raporttieditorin käyttäminen
+## <a name="create-a-visual-in-the-report-editor"></a>Visualisoinnin luominen raporttieditorissa
+
 1. Valitse Power BI -työtilassa **Nouda tiedot** \> **Mallit** \> **Jälleenmyyntianalyysimalli**  >   **Yhdistä**.
    
-    ![](media/power-bi-visualization-introduction-to-q-and-a/power-bi-dashboard.png)
-2. Koontinäyttö sisältää alueen kaavioruudun Viime vuoden myynti ja tämän vuoden myynti.  Valitse kyseinen ruutu. 
-   
-   * Jos tämä ruutu on luotu Q&A:lla, ruudun valitseminen avaa Q&A:n. 
-   * Tämä ruutu on kuitenkin luotu raportissa, joten raportista avautuu sivu, joka sisältää tämän visualisoinnin.
-3. Avaa raportti muokkausnäkymässä valitsemalla **Muokkaa raporttia**.  Jos et ole raportin omistaja, et voi avata raporttia muokkausnäkymässä.
-   
-    ![](media/power-bi-visualization-introduction-to-q-and-a/power-bi-edit-report.png)
-4. Valitse aluekaavio ja tarkista **Kentät**-ruudun asetukset.  Raportin tekijä loi kaavion valitsemalla nämä kolme arvoa (**Aika > Tilikauden kuukausi**, **Myynti > Tämän vuoden myynti**, **Myynti > Viime vuoden myynti > Arvo**) ja järjestämällä ne **Akseli**- ja **Arvot**-lähteiden mukaan.
-   
-    ![](media/power-bi-visualization-introduction-to-q-and-a/gnatutorial_3-new.png)
+2. Koontinäyttö sisältää alueen kaavioruudun Viime vuoden myynti ja tämän vuoden myynti.  Valitse kyseinen ruutu. Jos tämä ruutu on luotu Q&A:lla, ruudun valitseminen avaa Q&A:n. Tämä ruutu on kuitenkin luotu raportissa, joten raportista avautuu sivu, joka sisältää tämän visualisoinnin.
 
-## <a name="method-2-using-qa"></a>Menetelmä 2: Q&A:n käyttäminen
+    ![Jälleenmyyntianalyysimallin raporttinäkymä](media/power-bi-visualization-introduction-to-q-and-a/power-bi-dashboard.png)
+
+1. Avaa raportti muokkausnäkymässä valitsemalla **Muokkaa raporttia**.  Jos et ole raportin omistaja, et voi avata raporttia muokkausnäkymässä.
+   
+    ![Muokkaa raporttia -painike](media/power-bi-visualization-introduction-to-q-and-a/power-bi-edit-report.png)
+4. Valitse aluekaavio ja tarkista **Kentät**-ruudun asetukset.  Raportin tekijä loi kaavion valitsemalla nämä kolme arvoa (**Aika > Tilikauden Kuukausi**, **Myynti > Tämän vuoden myynti**, **Myynti > Viime vuoden myynti > Arvo**) ja järjestämällä ne **Akseli**- ja **Arvot**-lähteiden mukaan.
+   
+    ![Visualisoinnit-paneeli](media/power-bi-visualization-introduction-to-q-and-a/gnatutorial_3-new.png)
+
+## <a name="create-the-same-visual-with-qa"></a>Saman visualisoinnin luominen Q&A:n avulla
+
 Miten tämä sama viivakaavio luodaan käyttämällä Q&A:ta?
 
-![](media/power-bi-visualization-introduction-to-q-and-a/power-bi-qna.png)
+![Esitä kysymys -ruutu](media/power-bi-visualization-introduction-to-q-and-a/power-bi-qna.png)
 
 1. Siirry takaisin Jälleenmyyntianalyysimallin koontinäyttöön.
-2. Kirjoita käyttämällä luonnollista kieltä jotakin tällaista kysymysruutuun:
+2. Kirjoita luonnollista kieltä käyttämällä tämänkaltainen kysymys kysymysruutuun:
    
    **mikä oli tämän vuoden myynti ja edellisen vuoden myynti kuukauden mukaan aluekaaviona**
    
-   Kun kirjoitat kysymystä, Q&A hakee parhaan visualisoinnin ja näyttää sen perusteella vastauksen; visualisointi muuttuu dynaamisesti kysymystä muokatessa. Q&A auttaa myös kysymyksen muotoilussa käyttämällä ehdotuksia, automaattista täydennystä ja oikeinkirjoituksen korjauksia.
+   Kun kirjoitat kysymystä, Q&A hakee parhaan visualisoinnin ja näyttää sen perusteella vastauksen; visualisointi muuttuu dynaamisesti kysymystä muokatessa. Q&A auttaa myös kysymyksen muotoilussa ehdotusten, automaattisen täydennyksen ja oikeinkirjoituksen korjausehdotusten avulla.
    
    Kun olet kirjoittanut kysymyksen, tuloksena on täsmälleen sama kaavio kuin raportissa.  Tällä tavalla se kuitenkin syntyy paljon nopeammin!
    
-   ![](media/power-bi-visualization-introduction-to-q-and-a/powerbi-qna-areachart.png)
-3. Vastaavasti kuin raportteja käsiteltäessä Visualisoinnit-, Suodattimet- ja Kentät-ruudut ovat käytettävissä Q&A:ssa.  Avaamalla ruudut voit tutkia ja muokata visualisointia entisestään.
-4. Jos haluat kiinnittää kaavion koontinäyttöösi, valitse Kiinnitä-kuvake ![](media/power-bi-visualization-introduction-to-q-and-a/pinnooutline.png).
+   ![Esimerkkikysymys](media/power-bi-visualization-introduction-to-q-and-a/powerbi-qna-areachart.png)
+3. Visualisoinnit-, Suodattimet- ja Kentät-ruudut ovat käytettävissä Q&A:ssa aivan kuten raportteja käsiteltäessäkin.  Avaamalla ruudut voit tutkia ja muokata visualisointia entisestään.
+4. Jos haluat kiinnittää kaavion raporttinäkymään, valitse Kiinnitä-kuvake ![Kiinnitä-kuvake](media/power-bi-visualization-introduction-to-q-and-a/pinnooutline.png).
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 [Q&A Power BI:ssä](consumer/end-user-q-and-a.md)

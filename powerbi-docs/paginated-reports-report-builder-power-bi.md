@@ -7,19 +7,19 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: report-builder
 ms.topic: overview
-ms.date: 11/08/2018
+ms.date: 11/20/2018
 ms.author: maggies
-ms.openlocfilehash: 15ec21a0b86977173c16071980d7527f27db74ef
-ms.sourcegitcommit: 5eb0f37f59b5fec15c0caecbbd1f8d688c7f0013
+ms.openlocfilehash: 7a39d7b3bdbbd592afc6481c5936efc76569ad11
+ms.sourcegitcommit: 458e091a0a0bfb71ea3980d44df6408f48bab586
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51297040"
+ms.lasthandoff: 11/22/2018
+ms.locfileid: "52289216"
 ---
 # <a name="what-are-paginated-reports-in-power-bi-premium-preview"></a>Mitä ovat sivutetut raportit Power BI Premiumissa? (esikatselu)
-Sivutetut raportit, SQL Server Reporting Servicesin vakioraporttimuoto, ovat nyt käytettävissä Power BI -palvelussa. Sivutetut raportit ovat raportteja, jotka on suunniteltu tulostettaviksi tai jaettaviksi. Niitä kutsutaan sivutetuiksi, koska ne sopivat muodoltaan hyvin sivulle ja näyttävät kaikki tiedot taulukossa, esimerkiksi vaikka taulukko käsittää useita sivuja. Niitä kutsutaan joskus pikselintarkasti täydellisiksi, koska voit hallita tarkasti niiden asettelua raportin sivulla. Sivutetut raportit perustuvat SQL Server Reporting Servicesin RDL-raporttitekniikkaan. Raportin muodostin on erillinen työkalu sivutettujen raporttien luomiseen. 
+Sivutetut raportit, SQL Server Reporting Servicesin vakioraporttimuoto, ovat nyt käytettävissä Power BI -palvelussa. Sivutetut raportit ovat raportteja, jotka on suunniteltu tulostettaviksi tai jaettaviksi. Niitä kutsutaan ”sivutetuiksi”, koska ne on muotoiltu sopimaan hyvin sivulle. Niissä kaikki tiedot näytetään taulukossa, vaikka taulukko olisi useita sivuja pitkä. Niitä kutsutaan joskus pikselintarkasti täydellisiksi, koska voit hallita tarkasti niiden asettelua raportin sivulla. Sivutetut raportit perustuvat SQL Server Reporting Servicesin RDL-raporttitekniikkaan. Raportin muodostin on erillinen työkalu sivutettujen raporttien luomiseen. 
 
-Sivutetuissa raporteissa voi olla useita sivuja. Seuraavassa esimerkissä raportissa on 563 sivua, joista jokainen on aseteltu tarkasti yksi sivu laskua kohti ja ylä- ja alatunnisteet toistuvat kaikissa.
+Sivutetuissa raporteissa voi olla useita sivuja. Esimerkiksi tässä raportissa on 563 sivua. Jokainen sivu on aseteltu tarkasti yksi sivu laskua kohti -muotoon, ja ylä- ja alatunnisteet toistuvat kaikissa.
 
 ![Sivutettu raportti Power BI -palvelussa](media/paginated-reports-report-builder-power-bi/power-bi-paginated-wwi-report-page.png)
 
@@ -27,11 +27,11 @@ Voit esikatsella raporttisi raportin muodostimessa ja julkaista sen Power BI -pa
 
 ## <a name="create-reports-in-report-builder"></a>Raporttien luominen raportin muodostimessa
 
-Sivutetuilla raporteilla on oma suunnittelutyökalu, raportin muodostin. Jos olet luonut sivutettuja raportteja Power BI -raporttipalvelimeen tai SQL Server Reporting Servicesiin (SSRS), voit käyttää samaa työkalua ja samaa versiota. SSRS 2016:lle ja 2017:lle tai Power BI -raporttipalvelimelle paikallisesti luomasi sivutetut raportit ovat itse asiassa yhteensopivia Power BI -palvelun kanssa. Power BI -palvelu ylläpitää yhteensopivuutta aikaisempien versioiden kanssa, joten voit siirtää raportteja uudempiin versioihin ja päivittää aiemman version sivutetut raportit. Kaikki raporttiominaisuudet eivät ole saatavana julkaistaessa. Lisätietoja on tämän artikkelin kohdassa [Rajoitukset ja huomioitavat asiat](#limitations-and-considerations).
+Sivutetuilla raporteilla on oma suunnittelutyökalu, raportin muodostin. Kyseessä on sama työkalu ja versio, jota käytettäisiin sivutettujen raporttien luomiseen Power BI -raporttipalvelimessa tai SQL Server Reporting Servicesissä (SSRS). SSRS 2016:lle ja 2017:lle tai Power BI -raporttipalvelimelle paikallisesti luomasi sivutetut raportit ovat itse asiassa yhteensopivia Power BI -palvelun kanssa. Power BI -palvelu ylläpitää yhteensopivuutta aikaisempien versioiden kanssa, joten voit siirtää raportteja uudempiin versioihin ja päivittää aiemman version sivutetut raportit. Kaikki raporttiominaisuudet eivät ole käytettävissä käynnistettäessä. Katso lisätietoja [rajoituksista ja huomioitavista seikoista](#limitations-and-considerations) tästä artikkelista.
      
 ## <a name="report-from-a-variety-of-data-sources"></a>Raportti useista eri tietolähteistä
 
-Yksittäisellä sivutetulla raportilla voi olla useita eri tietolähteitä. Sen pohjana ei ole tietomallia, toisin kuin Power BI -raporteissa. Power BI -palvelun sivutettujen raporttien ensimmäisen julkaisun yhteydessä luot upotettuja tietolähteitä ja tietojoukkoja itse raporttiin jaettujen tietolähteiden tai tietojoukkojen palvelimeen yhdistämisen sijaan. Voit luoda raportteja raportin muodostimessa paikallisella tietokoneellasi. Jos raportti on yhdistetty paikallisiin tietoihin, sinun on luotava yhdyskäytävä ja ohjattava tietoyhteys uudelleen sen jälkeen, kun olet ladannut raportin Power BI -palveluun. Voit muodostaa yhteyden seuraaviin tietolähteisiin ensimmäisen julkaisun yhteydessä:
+Yksittäisellä sivutetulla raportilla voi olla useita eri tietolähteitä. Sen pohjana ei ole tietomallia, toisin kuin Power BI -raporteissa. Power BI -palvelun sivutettujen raporttien ensimmäisen julkaisun yhteydessä luot upotettuja tietolähteitä ja tietojoukkoja itse raporttiin. Tällä hetkellä et voi käyttää jaettuja tietolähteitä tai jaettuja tietojoukkoja. Voit luoda raportteja raportin muodostimessa paikallisella tietokoneellasi. Jos raportti on yhdistetty paikallisiin tietoihin, sinun on luotava yhdyskäytävä ja ohjattava tietoyhteys uudelleen sen jälkeen, kun olet ladannut raportin Power BI -palveluun. Voit muodostaa yhteyden seuraaviin tietolähteisiin ensimmäisen julkaisun yhteydessä:
 
 - Azuren SQL-tietokanta ja tietovarasto
 - SQL Server yhdyskäytävän kautta
@@ -60,7 +60,7 @@ Koko sivutetun raportin sisällöllä itse raportista jokaiseen tekstiruutuun, k
 Kun suunnittelet sivutetun raportin, luot tosiasiassa *raportin määrityksen*. Se ei sisällä tietoja. Se määrittää, mistä tiedot haetaan, mitkä tiedot haetaan ja miten tiedot näytetään. Kun raportti suoritetaan, raportin käsittely käyttää määrittämääsi raportin määritystä, noutaa tiedot ja yhdistää ne raportin asetteluun raportin luomiseksi. Lataat raportin määrityksen Power BI -palveluun, http://app.powerbi.com, omaan työtilaasi tai työtovereiden kanssa jakamaasi työtilaan. Jos raportin tietolähde on paikallinen, raportin lataamisen jälkeen ohjaat tietolähdeyhteyden uudelleen yhdyskäytävän kautta. 
 
 ## <a name="view-your-paginated-report"></a>Sivutetun raportin tarkasteleminen
-Voit tarkastella sivutettua raporttia Power BI -palvelussa selaimella ja myös Power BI -mobiilisovelluksissa. Power BI -palvelussa voit viedä raportin useisiin verkko- ja sivupohjaisiin ja työpöytäsovellusmuotoihin, kuten HTML, MHTML, PDF, XML, CSV, TIFF, Word ja Excel. Voit myös jakaa sen muiden kanssa.  
+Voit tarkastella sivutettua raporttia Power BI -palvelussa selaimella ja myös Power BI -mobiilisovelluksissa. Power BI -palvelusta käsin voit viedä raportin eri muodoissa, esimerkiksi HTML:nä, MHTML:nä, PDF:nä, XML:nä, CSV:nä, TIFF:nä, Wordinä ja Excelinä. Voit myös jakaa sen muiden kanssa.  
   
 ## <a name="limitations-and-considerations"></a>Rajoitukset ja huomioitavat asiat
 
@@ -78,7 +78,8 @@ Tässä on joitakin muita ominaisuuksia, joita ei tueta ensimmäisessä julkaisu
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
 - [Raportin muodostimen asentaminen Microsoft Download Centeristä](http://go.microsoft.com/fwlink/?LinkID=734968)
-
 - [Opetusohjelma: Sivutetun raportin luominen](paginated-reports-quickstart-aw.md)
+- [Anna tiedot suoraan sivutettuun raporttiin](paginated-reports-enter-data.md)
+
   
 

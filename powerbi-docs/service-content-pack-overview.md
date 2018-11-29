@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 02/20/2018
+ms.date: 11/20/2018
 ms.author: maggies
-ms.openlocfilehash: 4a5d124ffd213c54d628ff15e32ece18e56913eb
-ms.sourcegitcommit: 3a287ae4ab16d1e76caed651bd8ae1a1738831cd
+ms.openlocfilehash: f97393a8a7fe8dc9c413a0cb0cda8be0e965da5b
+ms.sourcegitcommit: 458e091a0a0bfb71ea3980d44df6408f48bab586
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39157426"
+ms.lasthandoff: 11/22/2018
+ms.locfileid: "52289193"
 ---
 # <a name="overview-of-the-power-bi-service-content-pack-program"></a>Power BI -palvelun sisältöpakettiohjelman yleiskatsaus
 Sisältöpaketti on joukko valmista sisältöä, jonka avulla käyttäjät saavat välittömästi merkityksellistä tietoa lähteestä. Sisältöpaketti keskittyy yleensä tiettyyn liiketoimintaskenaarioon ja tarjoaa rooli-, toimialue- tai työnkulkukohtaista merkityksellistä tietoa.
@@ -24,7 +24,7 @@ Riippumattomat ohjelmistokehittäjät voivat luoda mallisisältöpaketteja, joid
 Nämä riippumattomien ohjelmistokehittäjien luomat mallisisältöpaketit voidaan lähettää Power BI -tiimille, jotta ne olisivat julkisesti käytettävissä Power BI -sisältöpakettivalikoimassa (app.powerbi.com/getdata/services) ja Microsoft AppSourcessa (appsource.microsoft.com). Esimerkki julkisen sisältöpaketin käyttökokemuksesta on nähtävissä [täällä](template-content-pack-experience.md).
 
 ## <a name="overview"></a>Yleiskatsaus
-Yleinen prosessi mallisisältöpaketin kehittämiseksi ja lähettämiseksi käsittää useita vaiheita.
+Yleinen prosessi mallisisältöpaketin kehittämiseksi ja lähettämiseksi sisältää useita vaiheita.
 
  ![Prosessi](media/service-content-pack-overview/developer-content-pack-overview.png)
 
@@ -78,7 +78,7 @@ Julkaistut sisältöpaketit voidaan päivittää kerran kuukaudessa. Päivityspy
 Voit lähettää kysymyksesi meille sähköpostilla osoitteeseen [pbiservicesapps@microsoft.com](mailto:pbiservicesapps@microsoft.com)
 
 ## <a name="support"></a>Tuki
-Saat tukea kehityksen aikana osoitteesta [https://powerbi.microsoft.com/support](https://powerbi.microsoft.com/support). Sitä valvotaan ja hallitaan aktiivisesti. Asiakastapaukset ohjataan nopeasti oikealle tiimille.
+Saat tukea kehityksen aikana osoitteesta [https://powerbi.microsoft.com/support](https://powerbi.microsoft.com/support). Asiakastapaukset ohjataan nopeasti oikealle tiimille.
 
 ## <a name="next-step"></a>Seuraava vaihe
 [Sisällön tuottaminen](template-content-pack-authoring.md)

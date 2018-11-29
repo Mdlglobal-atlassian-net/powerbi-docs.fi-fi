@@ -8,13 +8,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: tutorial
-ms.date: 11/06/2018
-ms.openlocfilehash: a3d36f988847df283576dae6cfe5870b707c6f98
-ms.sourcegitcommit: 02f918a4f27625b6f4e47473193ebc8219db40e2
+ms.date: 11/21/2018
+ms.openlocfilehash: 56de3745d59e4a26dffbb988e9543c294de261e3
+ms.sourcegitcommit: 458e091a0a0bfb71ea3980d44df6408f48bab586
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51223256"
+ms.lasthandoff: 11/22/2018
+ms.locfileid: "52289170"
 ---
 # <a name="tutorial-adding-formatting-options-to-a-power-bi-custom-visual"></a>Opetusohjelma: Muotoiluasetusten lisääminen Power BI:n mukautettuun visualisointiin
 
@@ -32,7 +32,7 @@ Tässä opetusohjelmassa opit:
 
     Sinun tulisi nähdä viesti *Muotoiluasetukset eivät ole käytettävissä tälle visualisoinnille*.
 
-    ![Muotoilusivellin](media/custom-visual-develop-tutorial/format-paintbrush.png)
+    ![Muotoilusivellin](media/custom-visual-develop-tutorial-format-options/format-paintbrush.png)
 
 2. Avaa *capabilities.json*-tiedosto **Visual Studio Codessa**.
 
@@ -41,7 +41,7 @@ Tässä opetusohjelmassa opit:
     ```json
     "objects": {},
     ```
-    ![Lisää objektit](media/custom-visual-develop-tutorial/add-objects.png)
+    ![Lisää objektit](media/custom-visual-develop-tutorial-format-options/add-objects.png)
 
 4. Tallenna **capabilities.json**-tiedosto.
 
@@ -50,13 +50,13 @@ Tässä opetusohjelmassa opit:
     > [!Note]
     > Jos et näe muotoiluasetukset eivät ole muuttuneet, valitse **Lataa mukautettu visualisointi uudelleen**.
 
-    ![Näytä muotoiluasetukset](media/custom-visual-develop-tutorial/view-formatting-options.png)
+    ![Näytä muotoiluasetukset](media/custom-visual-develop-tutorial-format-options/view-formatting-options.png)
 
 6. Valitse **Otsikko**-asetukseksi *Ei käytössä*. Huomaa, että visualisointi ei enää näytä mittayksikön nimeä vasemmassa yläkulmassa.
 
-    ![Ruutu-asetus ei ole käytössä](media/custom-visual-develop-tutorial/tile-option-off.png)
+    ![Ruutu-asetus ei ole käytössä](media/custom-visual-develop-tutorial-format-options/tile-option-off.png)
 
-    ![Ei nimiruutua](media/custom-visual-develop-tutorial/no-name-tile.png)
+    ![Ei nimiruutua](media/custom-visual-develop-tutorial-format-options/no-name-tile.png)
 
 ### <a name="adding-custom-formatting-options"></a>Mukautettujen muotoiluasetusten lisääminen
 
@@ -64,7 +64,7 @@ Voit lisätä mukautettuja ominaisuuksia, joiden avulla voit määrittää ympyr
 
 1. Pysäytä mukautettu visualisointi PowerShellissä.
 
-2. Lisää Visual Studio Codessa **capabilities.json**-tiedostoon seuraava JSON-koodipätkä **objects**-objektiin.
+2. Lisää Visual Studio Codessa **capabilities.json**-tiedostoon seuraava JSON-koodipätkä **objects**-tunnisteella merkittyyn objektiin.
 
     ```json
     "circle": {
@@ -89,12 +89,12 @@ Voit lisätä mukautettuja ominaisuuksia, joiden avulla voit määrittää ympyr
                  }
              }
          }
-     }
+     },
     ```
 
     JSON-koodipätkä kuvaa ryhmän nimeltä ympyrä, joka koostuu kahdesta asetuksesta nimeltä circleColor ja circleThickness.
 
-   ![Ympyrän paksuuskoodi](media/custom-visual-develop-tutorial/circle-thickness-code.png)
+   ![Ympyrän paksuuskoodi](media/custom-visual-develop-tutorial-format-options/circle-thickness-code.png)
 
 3. Tallenna **capabilities.json**-tiedosto.
 
@@ -112,7 +112,7 @@ Voit lisätä mukautettuja ominaisuuksia, joiden avulla voit määrittää ympyr
     }
     ```
 
-    ![Moduulin luokat](media/custom-visual-develop-tutorial/module-classes.png)
+    ![Moduulin luokat](media/custom-visual-develop-tutorial-format-options/module-classes.png)
 
     Tämä moduuli määrittää kaksi luokkaa. **CircleSettings**-luokka määrittää kaksi ominaisuutta, joiden nimet vastaavat **capabilities.json**-tiedostossa määritettyjä objekteja (**circleColor** ja **circleThickness**), ja asettaa myös oletusarvot. **VisualSettings**-luokka perii **DataViewObjectParser**-luokan ja lisää ominaisuuden nimeltä **circle**, joka vastaa *capabilities.json*-tiedostossa määritettyä objektia, ja palauttaa **CircleSettings**-luokan esiintymän.
 
@@ -127,7 +127,7 @@ Voit lisätä mukautettuja ominaisuuksia, joiden avulla voit määrittää ympyr
     ```
     Tämä ominaisuus sisältää viittauksen **VisualSettings**-objektiin, joka kuvaa visualisoinnin asetuksia.
 
-    ![Lisää visualisoinnin luokka](media/custom-visual-develop-tutorial/visual-class-add-on.png)
+    ![Lisää visualisoinnin luokka](media/custom-visual-develop-tutorial-format-options/visual-class-add-on.png)
 
 9. Lisää **Visual**-luokassa seuraava menetelmä ennen **päivitysmenetelmää**. Tätä menetelmää käytetään muotoiluasetusten täyttämiseen.
 
@@ -140,7 +140,7 @@ Voit lisätä mukautettuja ominaisuuksia, joiden avulla voit määrittää ympyr
     ```
     Tätä menetelmää käytetään muotoiluasetusten täyttämiseen.
 
-    ![Visualisoinnin asetusobjekti](media/custom-visual-develop-tutorial/visual-settings-object.png)
+    ![Visualisoinnin asetusobjekti](media/custom-visual-develop-tutorial-format-options/visual-settings-object.png)
 
 10. Lisää seuraava koodi **päivitysmenetelmään** **radius**-sädemuuttujan esittelyn jälkeen.
 
@@ -150,7 +150,7 @@ Voit lisätä mukautettuja ominaisuuksia, joiden avulla voit määrittää ympyr
     ```
     Tämä koodi noutaa muotoiluasetukset. Se säätää mitä tahansa **circleThickness**-ominaisuuteen välitettyä arvoa. Se muuttaa sen arvoksi 0, jos se on negatiivinen, tai arvoksi 10, jos se on suurempi kuin 10.
 
-    ![Sädemuuttuja](media/custom-visual-develop-tutorial/radius.png)
+    ![Sädemuuttuja](media/custom-visual-develop-tutorial-format-options/radius.png)
 
 11. Muokkaa **täyttötyyliin** välitettyä arvoa seuraavaksi lausekkeeksi **ympyräelementtiä** varten.
 
@@ -158,7 +158,7 @@ Voit lisätä mukautettuja ominaisuuksia, joiden avulla voit määrittää ympyr
     this.visualSettings.circle.circleColor
     ```
 
-    ![Täyttää ympyräelementin](media/custom-visual-develop-tutorial/circle-element-fill.png)
+    ![Täyttää ympyräelementin](media/custom-visual-develop-tutorial-format-options/circle-element-fill.png)
 
 12. Muokkaa **viivanleveystyyliin** välitettyä arvoa seuraavaksi lausekkeeksi **ympyräelementtiä** varten.
 
@@ -166,7 +166,7 @@ Voit lisätä mukautettuja ominaisuuksia, joiden avulla voit määrittää ympyr
     this.visualSettings.circle.circleThickness
     ```
 
-    ![Ympyrän viivanleveys](media/custom-visual-develop-tutorial/circle-stroke-width.png)
+    ![Ympyrän viivanleveys](media/custom-visual-develop-tutorial-format-options/circle-stroke-width.png)
 
 13. Tallenna visual.ts-tiedosto.
 
@@ -180,7 +180,7 @@ Voit lisätä mukautettuja ominaisuuksia, joiden avulla voit määrittää ympyr
 
 16. Laajenna **Ympyrä**-kohta **visualisoinnin muotoiluasetuksissa**.
 
-    ![Ympyrän muoto](media/custom-visual-develop-tutorial/circle-format.png)
+    ![Ympyrän muoto](media/custom-visual-develop-tutorial-format-options/circle-format.png)
 
     Muokkaa **väri**- ja **paksuusasetuksia**.
 
@@ -198,7 +198,7 @@ Anna mukautetun visualisointiprojektin ominaisuusarvot, päivitä kuvaketiedosto
 
     Näet näyttönimen viemällä hiiren **Visualisoinnit**-ruudussa kuvakkeen päälle.
 
-    ![Visualisoinnin näyttönimi](media/custom-visual-develop-tutorial/display-name-viz.png)
+    ![Visualisoinnin näyttönimi](media/custom-visual-develop-tutorial-format-options/display-name-viz.png)
 
 4. Kirjoita seuraava teksti **description**-ominaisuutta varten.
 
@@ -216,7 +216,7 @@ Anna mukautetun visualisointiprojektin ominaisuusarvot, päivitä kuvaketiedosto
 
 10. Tarkista kuvake.
 
-    ![Visualisointiruudun kuva](media/custom-visual-develop-tutorial/viz-pane-image.png)
+    ![Visualisointiruudun kuva](media/custom-visual-develop-tutorial-format-options/viz-pane-image.png)
 
 11. Varmista Visual Studio Codessa, että kaikki tiedostot on tallennettu.
 
@@ -226,7 +226,7 @@ Anna mukautetun visualisointiprojektin ominaisuusarvot, päivitä kuvaketiedosto
     pbiviz package
     ```
 
-    ![Dist-kansio](media/custom-visual-develop-tutorial/dist-folder.png)
+    ![Dist-kansio](media/custom-visual-develop-tutorial-format-options/dist-folder.png)
 
 Paketti on nyt tulostettu projektin **dist**-kansioon. Paketti sisältää kaiken tarvittavan mukautetun visualisoinnin tuomiseen joko Power BI -palveluun tai Power BI Desktopin raporttiin. Olet nyt paketoinut mukautetun visualisoinnin, ja se on nyt valmis käytettäväksi.
 
@@ -238,7 +238,7 @@ Voit nyt avata Power BI Desktop -raportin ja tuoda mukautetun Circle Card -visua
 
 2. Valitse **_Visualisoinnit_**-ruudussa **pistekuvake** ja valitse sitten **Tuo tiedostosta**.
 
-    ![Lisää mukautettu visualisointi Desktop-raporttiin](media/custom-visual-develop-tutorial/add-custom-viz-to-desktop.png)
+    ![Lisää mukautettu visualisointi Desktop-raporttiin](media/custom-visual-develop-tutorial-format-options/add-custom-viz-to-desktop.png)
 
 3. Valitse **tuonti-ikkunassa** **Tuo**.
 
@@ -250,7 +250,7 @@ Voit nyt avata Power BI Desktop -raportin ja tuoda mukautetun Circle Card -visua
 
 7. Varmista, että visualisointi on lisätty **_Visualisoinnit_**-ruutuun.
 
-    ![Tarkastele PBI Desktopin Visualisoinnit-ruudussa](media/custom-visual-develop-tutorial/view-in-desktop-viz-pane.png)
+    ![Tarkastele PBI Desktopin Visualisoinnit-ruudussa](media/custom-visual-develop-tutorial-format-options/view-in-desktop-viz-pane.png)
 
 8. Vie hiiri **Circle Card** -kuvakkeen päälle, niin näet työkaluvihjeen.
 

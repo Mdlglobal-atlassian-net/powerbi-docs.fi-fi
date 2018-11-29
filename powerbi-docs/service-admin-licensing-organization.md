@@ -10,18 +10,18 @@ ms.topic: conceptual
 ms.date: 10/30/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 09ce2e2db94116d70824b276b9b67b9dbe163d11
-ms.sourcegitcommit: a739a99e1006834a0f56e387c0bd9d945fb8a76b
+ms.openlocfilehash: 861b9c411b3088b6c16b7ad601f374bd771b13ed
+ms.sourcegitcommit: 35d763dfc75c229204d36fd8b35c1e860786b707
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51679313"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52331984"
 ---
 # <a name="power-bi-licensing-in-your-organization"></a>Power BI -käyttöoikeudet organisaatiossasi
 
 Power BI -palvelussa käyttäjillä on määritettyjä ominaisuuksia kahdenlaisen käyttöoikeustyypin perusteella:
 
-* **käyttäjäkohtainen** - *maksuton käyttöoikeus ja Power BI Pro -käyttöoikeus*. Maksuton käyttöoikeus mahdollistaa joidenkin Power BI -palvelun ominaisuuksien käytön. Pro-käyttöoikeus mahdollistaa kaiken sisällön ja kaikkien ominaisuuksien käytön Power BI -palvelussa, eli myös sisällön jakamisen ja yhteistyön muiden Pro-käyttäjien kanssa. Vain Pro-käyttäjät voivat julkaista ja käyttää sisältöä sovelluksen työtiloista, jakaa koontinäyttöjä sekä tilata koontinäyttöjä ja raportteja. Jos haluat lisätietoja, katso kohta [Power BI- palvelun ominaisuudet käyttöoikeustyypin mukaan](service-features-license-type.md).
+* **Käyttäjäkohtainen** - *Power BI Pro -käyttöoikeus ja maksuton käyttöoikeus*. Power BI Pro -käyttöoikeus mahdollistaa kaiken sisällön ja kaikkien ominaisuuksien käytön Power BI -palvelussa, eli myös sisällön jakamisen ja yhteistyön muiden Pro-käyttäjien kanssa. Vain Pro-käyttäjät voivat julkaista ja käyttää sisältöä sovelluksen työtiloista, jakaa koontinäyttöjä sekä tilata koontinäyttöjä ja raportteja. Maksuton käyttöoikeus mahdollistaa joidenkin Power BI -palvelun ominaisuuksien käytön. Jos haluat lisätietoja, katso kohta [Power BI- palvelun ominaisuudet käyttöoikeustyypin mukaan](service-features-license-type.md).
 
 * **Kapasiteettipohjainen** - *Power BI Premium -käyttöoikeus*. Premium tarjoaa varatun kapasiteetin, joka takaa tasaisemman suorituskyvyn ja tukee suurempia tietomääriä Power BI:ssä. Yksittäisten käyttäjien kohdalla Premium mahdollistaa myös Pro-version käyttäjien luoman sisällön laaja-alaisen jakamisen ilman, että sisältöä katselevilla vastaanottajilla on oltava Pro-käyttöoikeus. Lisätietoja on ohjeartikkelissa [Mikä Power BI Premium on ?](service-premium.md).
 
@@ -73,17 +73,11 @@ Voit nyt [määrittää käyttöoikeuksia Office 365:ssä](https://support.offic
 
 ## <a name="manage-power-bi-free-licenses"></a>Maksuttomien Power BI- käyttöoikeuksien hallinta
 
-Organisaatiosi käyttäjät voivat saada pääsyn maksuttomiin Power BI -käyttöoikeuksiin kahdella eri tavalla. He voivat rekisteröityä Power BI:hin yksittäisinä käyttäjinä tai heille voidaan määrätä Power BI -käyttöoikeus Office 365 -hallintaportaalissa.
+Organisaatiosi käyttäjät voivat saada pääsyn maksuttomiin Power BI -käyttöoikeuksiin kahdella eri tavalla:
 
-Sallimalla yksittäiset rekisteröinnit, organisaation järjestelmänvalvojien taakka vähenee, kun Power BI:stä kiinnostuneet käyttäjät voivat rekisteröityä ilmaiseksi.
+* Voit antaa heille Power BI -lisenssin Office 365 -hallintaportaalissa.
 
-Yksittäisten käyttäjien rekisteröinnin avulla hallinta on kuitenkin parempaa, ja se on hyvä vaihtoehto, jos haluat valvoa palvelun käyttö.
-
-### <a name="power-bi-free-for-individuals"></a>Maksuton Power BI yksityishenkilöille
-
-Yksittäiset käyttäjät organisaatiossasi voivat oletusarvoisesti rekisteröityä maksuttoman Power BI -kokeiluversion käyttäjäksi. Jos haluat lisätietoja, katso kohta [Rekisteröityminen Power BI:hin yksityishenkilönä](service-self-service-signup-for-power-bi.md).
-
-Jos haluat estää yksityishenkilöiden rekisteröitymisen, lisätietoa on myöhemmin tässä artikkelissa olevassa kohdassa [Ota yksittäisten käyttäjien rekisteröityminen käyttöön tai poista se käytöstä Azure Active Directorysta](service-admin-licensing-organization.md#enable-or-disable-individual-user-sign-up-in-azure-active-directory).
+* Jos käyttäjä [rekisteröityy Power BI Pro -kokeiluversion](service-self-service-signup-for-power-bi.md) käyttäjäksi ja kokeilujakso päättyy, käyttäjälle määritetään maksuton käyttöoikeus.
 
 ### <a name="requesting-and-assigning-free-licenses"></a>Maksuttomien käyttöoikeuksien pyytäminen ja määrittäminen
 
