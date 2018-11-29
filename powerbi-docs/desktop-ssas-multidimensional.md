@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 06/05/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: c16fe65d766c6a1c18d809a68b3b0f6af8047db0
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 4c9a8144ba9b8f465f4e607be60d075ea6ccb5fa
+ms.sourcegitcommit: fdb54145f9bc93b312409c15c603749f3a4a876e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34813338"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "52452794"
 ---
 # <a name="connect-to-ssas-multidimensional-models-in-power-bi-desktop"></a>Yhteyden muodostaminen SSAS-monidimensiomalleihin Power BI Desktopissa
 Power BI Desktopin kautta on mahdollista käyttää **SSAS-monidimensiomalleja**, jotka tunnetaan myös lyhenteellä **SSAS MD**.
@@ -81,6 +81,7 @@ Monidimensiomallit tukevat dimensio- ja solutason suojausta *roolien* kautta. Ku
 * Jotta Power BI Desktopin SSAS MD ‑liitin toimisi oikein, palvelimissa on oltava käytössä Analysis Servicesistä versio SQL Server 2012 SP1 CU4 tai uudempi versio.
 * *Toiminnot* ja *Nimetyt joukot* eivät näy Power BI:ssä, mutta voit silti muodostaa yhteyden kuutioihin, jotka sisältävät myös *toimintoja* ja *nimettyjä joukkoja* ja luoda visualisointeja ja raportteja.
 * Voit kohdata ongelman, missä Power BI näyttää SSAS-mallin metatiedot, mutta et pysty hakemaan mallista tietoja. Tämä saattaa tapahtua, jos järjestelmään on asennettuna 32-bittinen MSOLAP-palvelun versio, eikä 64-bittinen versio. 64-bittisen version asentaminen saattaa ratkaista ongelman.
+* Et voi luoda raporttitason mittayksiköitä, kun luot raporttia, joka on yhteydessä käytössä olevaan SSAS-monidimensiomalliin. Käytettävissä ovat ainoastaan MD-mallissa määritetyt mittayksiköt.
 
 ## <a name="supported-features-of-ssas-md-in-power-bi-desktop"></a>Power BI Desktopin tukemat SSAS MD:n ominaisuudet
 Power BI Desktop tukee seuraavia SSAS MD:n ominaisuuksia:

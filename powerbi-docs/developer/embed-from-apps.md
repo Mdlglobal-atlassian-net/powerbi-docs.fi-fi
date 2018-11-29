@@ -3,18 +3,18 @@ title: Upota raportteja tai koontinäyttöjä sovelluksista
 description: Opi integroimaan tai upottamaan raportti tai koontinäyttö Power BI -sovelluksesta, tai muualta, työtilaan.
 author: markingmyname
 ms.author: maghan
-ms.date: 07/13/2018
 ms.topic: how-to
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.custom: mvc
 manager: kfile
-ms.openlocfilehash: 53803c77dec8eb35c10db7f19a82f58144f88414
-ms.sourcegitcommit: b45134887a452f816a97e384f4333db9e1d8b798
+ms.date: 11/27/2018
+ms.openlocfilehash: 8073696907ceff67664a0802a2b7775eea693e37
+ms.sourcegitcommit: fdb54145f9bc93b312409c15c603749f3a4a876e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47237981"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "52452518"
 ---
 # <a name="embed-reports-or-dashboards-from-apps"></a>Upota raportteja tai koontinäyttöjä sovelluksista
 
@@ -26,11 +26,11 @@ Voit luoda Power BI:ssä sovelluksia, jotka kokoavat toisiinsa liittyvät koonti
 
 2. Avaa haluamasi raportti Power BI -palvelussa.
 
-3. Siirry kohtaan **Tiedosto** > **Upota SharePoint Onlinessa** ja hae raportin embedURL-osoite. Se näkyy seuraavassa kuvakaappauksessa. Voit myös kutsua GetReports/GetReport REST -ohjelmointirajapinnan ja purkaa vastauksesta raportin embedURL-kentän. REST-kutsun URL-osoitteella ei pitäisi olla työtilan tunnusta, koska sovellusistunto käynnistettiin käyttäjän työtilassa.
-
-4. Käytä vaiheessa 3 noudettua embedURL-osoitetta JavaScript SDK:n kanssa.
+3. Valitse **Tiedosto** > **Upota SharePoint Onlinessa** ja hae raportin embedURL-osoite. Alla olevassa kuvassa näytetään embedURL-esimerkkiosoite. Halutessasi voit myös kutsua GetReports/GetReport REST -ohjelmointirajapintaa ja tarkistaa raportin embedURL-kentän vastauksesta. REST-kutsun URL-osoitteella ei pitäisi olla työtilan tunnusta, koska sovellusistunto käynnistettiin käyttäjän työtilassa.
 
     ![Upottaminen sovelluksista](media/embed-from-apps/embed-from-app.png)
+
+4. Käytä vaiheessa 3 noudettua embedURL-osoitetta JavaScript SDK:n kanssa.
 
 ## <a name="grab-a-dashboard-embedurl-for-embedding"></a>Hae raporttinäkymän embedURL-osoite upottamista varten
 

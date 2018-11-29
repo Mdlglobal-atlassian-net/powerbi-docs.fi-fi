@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/15/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 73be85644fd320bd44372a0df6c844705c3cf602
-ms.sourcegitcommit: b8461c1876bfe47bf71c87c7820266993f82c0d3
+ms.openlocfilehash: f4825e8d8d47f755b01748c847b0fcf110db030a
+ms.sourcegitcommit: fdb54145f9bc93b312409c15c603749f3a4a876e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49336917"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "52452863"
 ---
 # <a name="use-the-sap-bw-connector-in-power-bi-desktop"></a>SAP BW -yhdistimen käyttö Power BI Desktopissa
 Voit nyt käyttää **SAP Business Warehouse (BW)** -tietoja Power BI Desktopilla.
@@ -197,11 +197,28 @@ Tämä osio sisältää vianmäärityksen tilanteita ja ratkaisuja käytettäess
            </item>
    
    Ratkaistakseen tämän vian, käyttäjien tulee pyytää SAP-järjestelmänvalvojaansa antamaan Power BI:ssä käytettävälle SAPBW-käyttäjälle oikeuden suorittaa kutsu *BAPI_USER_GET_DETAIL*. Kannattaa myös tarkistaa, että käyttäjällä on tarvittava *DCPFM*-arvo, joka kuvattiin aikaisemmin tämän vianmäärityksen ratkaisussa.
+   
 2. **SAP BEx -kyselyiden yhteydet**
    
    Voit suorittaa Power BI Desktopilla **BEx**-kyselyitä ottamalla käyttöön tietty ominaisuus, joka on esitetty seuraavassa kuvassa:
    
    ![](media/desktop-sap-bw-connector/sap_bw_8.png)
+   
+3. **Navigator**-ikkuna ei näytä tietojen esikatselua, vaan se antaa *Objektiviittausta ei ole määritetty objektin esiintymään* -virheilmoituksen.
+   
+   SAP-käyttäjien täytyy hakea metatiedot ja hakea tiedot SAP BW:n InfoProviders-kohteista tietyillä BAPI-funktiomoduuleilla. Näitä ovat esimerkiksi seuraavat:
+   * BAPI_MDPROVIDER_GET_CATALOGS
+   * BAPI_MDPROVIDER_GET_CUBES
+   * BAPI_MDPROVIDER_GET_DIMENSIONS
+   * BAPI_MDPROVIDER_GET_HIERARCHYS
+   * BAPI_MDPROVIDER_GET_LEVELS
+   * BAPI_MDPROVIDER_GET_MEASURES
+   * BAPI_MDPROVIDER_GET_MEMBERS
+   * BAPI_MDPROVIDER_GET_VARIABLES
+   * BAPI_IOBJ_GETDETAIL
+
+   Voit ratkaista ongelman varmistamalla, että käyttäjällä on oikeus käyttää erilaisia *MDPROVIDER*- ja *BAPI_IOBJ_GETDETAIL*-moduuleita. Jos haluat tehdä tällaisen tai vastaavan ongelman vianmäärityksen, valitse Power BI Desktopin *asetusten* *Diagnostiikka*-ikkunassa *Ota jäljitys käyttöön*. Yritä hakea tietoja SAP BW:stä, kun jäljitys on käytössä, ja tutki lisätietoja jäljitystiedostosta.
+
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 Lisätietoja SAP-tietokannoista ja DirectQuery-kyselystä saat seuraavista lähteistä:

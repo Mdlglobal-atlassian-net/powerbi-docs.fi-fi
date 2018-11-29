@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/12/2018
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: b7a8323557f769fa2a05d504de2540bc505e7a54
-ms.sourcegitcommit: 6a6f552810a596e1000a02c8d144731ede59c0c8
+ms.openlocfilehash: ffb82303584249641454c81f61e399d2b1d4f574
+ms.sourcegitcommit: fdb54145f9bc93b312409c15c603749f3a4a876e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/14/2018
-ms.locfileid: "51619697"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "52452771"
 ---
 # <a name="use-composite-models-in-power-bi-desktop"></a>Yhdistelmämallien käyttäminen Power BI Desktopissa
 
@@ -146,7 +146,7 @@ Laskentataulukkoon tallennettuja tietoja sisältyy nyt kyselyyn, joka lähetetä
 
 * Kunkin lähteen salausasetukset tulee huomioida. Haluat välttää tietojen noutamista yhdestä lähteestä salatulla yhteydellä ja niiden sisällyttämistä tahattomasti kyselyyn, joka lähetetään toiseen lähteeseen salaamattoman yhteyden kautta. 
 
-Kun luot yhdistelmämallin, Power BI Desktop näyttää varoitussanoman, joka kehottaa tarkistamaan tietoturvalle aiheutuvat vaikutukset.  
+Kun luot yhdistelmämallin, Power BI Desktop näyttää varoituksen, joka kehottaa sinua huomioimaan mahdolliset tietoturvavaikutukset.  
 
 Vastaavista syistä varovaisuuteen on aihetta, kun avataan epäluotettavasta lähteestä lähetettyjä Power BI Desktop -tiedostoja. Jos tiedostossa on yhdistelmämalleja, yhdestä lähteestä haetut tiedot, jotka haetaan tiedoston avaavan käyttäjän tunnistetiedoilla, lähetetään toiseen tietolähteeseen kyselyn osana. Tietoja voi tällöin tarkastella haitallisen Power BI Desktop -tiedoston tekijä. Siksi Power BI Desktop näyttää varoituksen, kun avaat Power BI Desktop -tiedoston, joka sisältää useita lähteitä. Tämä varoitus on samanlainen kuin se, jonka näet avatessasi alkuperäisiä SQL-kyselyitä sisältävän tiedoston.  
 

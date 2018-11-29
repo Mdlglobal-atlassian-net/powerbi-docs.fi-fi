@@ -9,12 +9,12 @@ ms.component: report-builder
 ms.topic: tutorial
 ms.date: 11/06/2018
 ms.author: maggies
-ms.openlocfilehash: 91cf4e2115b2eaae3178b2fb25e487e0501e3a6d
-ms.sourcegitcommit: b23fdcc0ceff5acd2e4d52b15b310068236cf8c7
+ms.openlocfilehash: b057fd14083cdabff96d9821d1399da07b93556b
+ms.sourcegitcommit: fdb54145f9bc93b312409c15c603749f3a4a876e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51267295"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "52452820"
 ---
 # <a name="tutorial-create-a-paginated-report-and-upload-it-to-the-power-bi-service"></a>Opetusohjelma: Sivutetun raportin luominen ja lataaminen Power BI -palveluun
 
@@ -136,7 +136,7 @@ Sivutetun raportin lataaminen Power BI -palveluun edellyttää seuraavia:
 1. Vedä seuraavat kentät **Käytettävissä olevat kentät** -ruudusta **Arvot**-ruutuun:
 
     - OrderQty
-    - UnitPrice
+    - Yksikköhinta
     - LineTotal
 
     Raportin muodostimessa **Arvot**-ruudun kentät muunnetaan automaattisesti summiksi.
@@ -165,7 +165,7 @@ Katsotaan ohjatun toiminnon tuloksia.
 
 5. Ryhmittelyruudussa näet kolme ohjatussa toiminnossa luomaasi riviryhmää: 
 
-    - CompanyName
+    - Yrityksen nimi
     - Myyntitilaus
     - Tuotenimi
 

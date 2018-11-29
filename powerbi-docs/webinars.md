@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 10/23/2018
+ms.date: 11/26/2018
 ms.author: maikelson
-ms.openlocfilehash: d656a27717d22d13884bcbfa69fab4ba2babaf12
-ms.sourcegitcommit: 17d68172c73e9a9ff7966ddcedc3f8450584cdec
+ms.openlocfilehash: c3ef18bf05c6a979e9fd0440b271afd5d8545a54
+ms.sourcegitcommit: fdb54145f9bc93b312409c15c603749f3a4a876e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49952230"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "52452656"
 ---
 # <a name="power-bi-webinars"></a>Power BI -verkkoseminaarit
 
@@ -22,23 +22,13 @@ Rekisteröidy tuleviin reaaliaikaisiin verkkoseminaareihin tai katso nauhoitettu
 
 ## <a name="upcoming-webinars"></a>Tulevat verkkoseminaarit
 
-**Power BI: tehokasta analytiikkaa**
-<br>tekijä: Gohul Shanmugalingam
-<br>*8. marraskuuta 2018 klo 13.00–14.00 EST*
+**Hyväksi havaitut hoitoalan ratkaisut parantavat sekä potilaiden hoitotuloksia että tuottavuutta**
+<br>tekijät: Stephen Cracknell ja Stuart Macanliss US Medical IT:stä
+<br>*28. marraskuuta 2018 klo 11.00–12:00 PST*
 
-Huomio analytiikan ja Excelin käytön visionäärit: haluatteko oppia luomaan näyttäviä ja käyttäjäystävällisiä raportteja, jakaa mielenkiintoisia ja helppotajuisia näkemyksiä ja purkaa monisyisten tietojen siiloja turvallisesti helppokäyttöisyyden edistämiseksi?
+Terveydenhuollon organisaatioiden haasteena on muuntaa valtavat tietomassat hyödyllisiksi potilastiedoiksi sekä nämä tiedot käytännön toimenpiteiksi. Rekisteröidy tähän verkkoseminaariin, jossa opit suunnittelemaan merkityksellisiä terveydenhuollon raportteja. Niiden avulla organisaatiosi voi muuntaa tietomassoja hyödyllisiksi potilastiedoiksi. Kuulet asiantuntijoiden strategioita ja neuvoja muun muassa US Medical IT:n perustajalta ja toimitusjohtajalta Stephen Cracknellilta, US Medical IT:n IT-johtajalta Stuart Macanlissilta sekä Teksasissa toimivalta reumatologilta tohtori John P. Laverylta.
 
-Kerromme uusista tuoteinnovaatioista ja yritysten modernia liiketoimintatiedon hallintaa ja omatoimista liiketoimintatietojen hallintaa koskevasta visiostamme, jonka tarkoitus on varustaa organisaatiot tietoihin perustuvan kulttuurin luomiseen.
-
-[Rekisteröidy ja katso marraskuun 8. päivä](https://info.microsoft.com/CA-PowerBI-WBNR-FY19-11Nov-08-PowerBIAnalyticsDoneRight-MCW0008690_01Registration-ForminBody.html?Is=Website)
-
-**Kehitä tietomallitaitojasi Power BI:n avulla**
-<br>tekijä: Kasper de Jonge
-<br>*20. marraskuuta 2018 klo 11.00–12:00 PST*
-
-Rekisteröidy verkkoseminaariin, jonka avulla nostat Power BI -mallintamiskykysi uudelle tasolle. Saat tietoa Power BI:n muistissa olevan analytiikan teknologiasta, tietojen välisten suhteiden luomisen ja hallinnan strategioista ja siitä, miten Data Analysis Expressions (DAX) -suodatinkontekstia käytetään. Selvitä, miten voit suoriutua mistä tahansa mallinnushaasteesta Power BI:n tai Azure Analysis Servicesin avulla.
-
-[Rekisteröidy ja katso marraskuun 20. päivä](https://info.microsoft.com/Strengthen-Your-Data-Modeling-Skills-with-PowerBI-Registration.html?Is=Website)
+[Rekisteröidy ja katso marraskuun 28. päivä](https://info.microsoft.com/Proven-Techniques-for-Building-Effective-Dashboards-Registration.html?Is=Website)
 
 >[Tulevia Power BI -yhteisön verkkoseminaareja](https://powerbi.microsoft.com/en-us/blog/tag/community-webinars/?Is=Website)
 
@@ -54,9 +44,17 @@ Aloita näistä suosituista verkkoseminaareista
 <br>tekijä: Miguel Martinez
 <br>[Rekisteröidy ja katso nyt](https://info.microsoft.com/powerbi-dashboard-in-20-min.html?Is=Website)
 
+**Kehitä tietomallitaitojasi Power BI:n avulla**
+<br>tekijä: Kasper de Jonge
+<br>[Rekisteröidy ja katso nyt](https://info.microsoft.com/Strengthen-Your-Data-Modeling-Skills-with-PowerBI-Registration.html?Is=Website)
+
 **Microsoft toimii Power BI:n voimalla – näin helpotat taloutesi suunnittelua ja analysointia**
 <br>Cory Hrncirik ja Miguel Martinez
 <br>[Rekisteröidy ja katso nyt](https://info.microsoft.com/Microsoft-Runs-on-Power-BI-OnDemandRegistration.html?Is=Website)
+
+**Power BI: tehokasta analytiikkaa**
+<br>tekijä: Gohul Shanmugalingam
+<br>[Rekisteröidy ja katso nyt](https://info.microsoft.com/CA-PowerBI-WBNR-FY19-11Nov-08-PowerBIAnalyticsDoneRight-MCW0008690_01Registration-ForminBody.html?Is=Website)
 
 **Tee Power BI -tiedoistasi visuaalisia: ydinkaaviotyypit ja niiden käyttäminen**
 <br>tekijä: Miranda Li
@@ -70,9 +68,9 @@ Aloita näistä suosituista verkkoseminaareista
 <br>tekijä: Miranda Li
 <br>[Rekisteröidy ja katso nyt](https://info.microsoft.com/ww-landing-powerbi-tips-for-better-visualization-design.html?Is=Website)
 
-**Power BI -vinkkejä, -vihjeitä ja -työkaluja PowerBI.Tipsin omistajilta**
-<br>tekijät: Mike Carlo ja Seth Bauer
-<br>[Katso nyt](https://www.youtube.com/watch?v=fnj1_e3HXow)
+**Microsoft Flow'n ja PowerAppsin taloudelliset kokonaisvaikutukset**
+<br>Jonathan Lipsitz ja Enrique Plaza Garcia
+<br>[Rekisteröidy ja katso nyt](https://info.microsoft.com/The-TEI-of-PowerApps-and-Microsoft-Flow-OnDemandRegistration.html?Is=Website)
 
 >[Selaa yhteisön asiantuntijoiden vetämien Power BI -verkkoseminaarien kirjastoa](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/bd-p/VideoTipsTricks?filter=webinars&featured=yes&Is=Website)
 
@@ -112,10 +110,6 @@ Katso tallennetut istuntoja milloin tahansa
 <br>tekijät: Scott Ball Esristä ja Enrique Plaza Microsoftista
 <br>[Rekisteröidy ja katso nyt](https://info.microsoft.com/ww-ondeamnd-boost-powerbi-with-arcgis.html?Is=Website)
 
-**Kannattavuuden vahvistaminen terveydenhuollossa**
-<br>tekijät: Stephen Cracknell ja Stuart Macanliss US Medical IT:stä
-<br>[Rekisteröidy ja katso nyt](https://info.microsoft.com/improving-profitability-in-healthcare.html?Is=Website)
-
 **Sovelletut tiedot myynnissä ja palveluissa**
 <br>tekijä: Ed Bobrin Avanadesta
 <br>[Rekisteröidy ja katso nyt](https://info.microsoft.com/applied-intelligence-for-sales-service.html?Is=Website)
@@ -129,6 +123,10 @@ Katso tallennetut istuntoja milloin tahansa
 <br>[Rekisteröidy ja katso nyt](https://info.microsoft.com/data-world-connector-powerbi.html?Is=Website)
 
 ### <a name="community"></a>Yhteisö ###
+
+**Power BI -vinkkejä, -vihjeitä ja -työkaluja PowerBI.Tipsin omistajilta**
+<br>tekijät: Mike Carlo ja Seth Bauer
+<br>[Katso nyt](https://www.youtube.com/watch?v=fnj1_e3HXow)
 
 **Tarinan kertominen tietojen ja Power BI:n avulla**
 <br>tekijä: Tristan Malherbe
