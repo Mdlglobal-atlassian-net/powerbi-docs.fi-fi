@@ -20,8 +20,9 @@
 | SAP HANA |Kyllä |Kyllä |
 | SharePoint-luettelo (paikallinen) |Ei |Kyllä |
 | Snowflake |Kyllä |Kyllä |
+| Spark |Kyllä |Kyllä |
 | SQL Server |Kyllä |Kyllä |
 | Sybase |Ei |Kyllä |
 | Teradata |Kyllä |Kyllä |
-| Verkko |Ei |Kyllä |
+| Verkko |Ei |Yes |
 
