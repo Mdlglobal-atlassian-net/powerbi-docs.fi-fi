@@ -9,12 +9,12 @@ ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 11/26/2018
 ms.author: maikelson
-ms.openlocfilehash: c3ef18bf05c6a979e9fd0440b271afd5d8545a54
-ms.sourcegitcommit: fdb54145f9bc93b312409c15c603749f3a4a876e
+ms.openlocfilehash: b144f3101606a58b2cd0b48db976a70477442d40
+ms.sourcegitcommit: 2ae660a7b70fce23eb58b159d049eca44a664f2c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "52452656"
+ms.lasthandoff: 11/30/2018
+ms.locfileid: "52670413"
 ---
 # <a name="power-bi-webinars"></a>Power BI -verkkoseminaarit
 
@@ -22,13 +22,7 @@ Rekisteröidy tuleviin reaaliaikaisiin verkkoseminaareihin tai katso nauhoitettu
 
 ## <a name="upcoming-webinars"></a>Tulevat verkkoseminaarit
 
-**Hyväksi havaitut hoitoalan ratkaisut parantavat sekä potilaiden hoitotuloksia että tuottavuutta**
-<br>tekijät: Stephen Cracknell ja Stuart Macanliss US Medical IT:stä
-<br>*28. marraskuuta 2018 klo 11.00–12:00 PST*
-
-Terveydenhuollon organisaatioiden haasteena on muuntaa valtavat tietomassat hyödyllisiksi potilastiedoiksi sekä nämä tiedot käytännön toimenpiteiksi. Rekisteröidy tähän verkkoseminaariin, jossa opit suunnittelemaan merkityksellisiä terveydenhuollon raportteja. Niiden avulla organisaatiosi voi muuntaa tietomassoja hyödyllisiksi potilastiedoiksi. Kuulet asiantuntijoiden strategioita ja neuvoja muun muassa US Medical IT:n perustajalta ja toimitusjohtajalta Stephen Cracknellilta, US Medical IT:n IT-johtajalta Stuart Macanlissilta sekä Teksasissa toimivalta reumatologilta tohtori John P. Laverylta.
-
-[Rekisteröidy ja katso marraskuun 28. päivä](https://info.microsoft.com/Proven-Techniques-for-Building-Effective-Dashboards-Registration.html?Is=Website)
+Mitään verkkoseminaaria ei ole vielä ajoitettu. Palaa pian takaisin tarkistamaan muut tulevat tapahtumat.
 
 >[Tulevia Power BI -yhteisön verkkoseminaareja](https://powerbi.microsoft.com/en-us/blog/tag/community-webinars/?Is=Website)
 
@@ -105,6 +99,10 @@ Katso tallennetut istuntoja milloin tahansa
 <br>[Katso nyt](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/Power-BI-Transforming-A-Report-From-Good-to-GREAT/m-p/315119?Is=Website)
 
 ### <a name="partners"></a>Kumppanit ###
+
+**Hyväksi havaitut hoitoalan ratkaisut parantavat sekä potilaiden hoitotuloksia että tuottavuutta**
+<br>tekijät: Stephen Cracknell ja Stuart Macanliss US Medical IT:stä
+<br>[Rekisteröidy ja katso nyt](https://info.microsoft.com/Proven-Techniques-for-Building-Effective-Dashboards-Registration.html?Is=Website)
 
 **Tehosta BI:n toimintaa sijaintitiedoilla**
 <br>tekijät: Scott Ball Esristä ja Enrique Plaza Microsoftista

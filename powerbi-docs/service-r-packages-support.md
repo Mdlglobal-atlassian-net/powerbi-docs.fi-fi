@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/24/2018
+ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 44a629ca93eedc7baf5accd45c7b3fdd0ac00406
-ms.sourcegitcommit: 17d68172c73e9a9ff7966ddcedc3f8450584cdec
+ms.openlocfilehash: 6c890b830ca38e15bb6cc0efe36c93488ed951b4
+ms.sourcegitcommit: 2ae660a7b70fce23eb58b159d049eca44a664f2c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49952276"
+ms.lasthandoff: 11/30/2018
+ms.locfileid: "52670827"
 ---
 # <a name="r-packages-in-the-power-bi-service"></a>R-paketit Power BI -palvelussa
 Voit käyttää tehokasta [R-ohjelmointikieltä](https://www.r-project.org/) visualisointien luomiseksi Power BI -palvelussa. Monet R-paketit ovat tuettuja Power BI -palvelussa (ja lisää tuetaan jatkuvasti), mutta joitakin paketteja ei tueta.
@@ -190,7 +190,7 @@ Seuraavassa taulukossa on esitetty paketit, joita **tuetaan** Power BI -palvelus
 |data.table| zoo| grid|
 |data.tree| 0.7.0| https://cran.r-project.org/web/packages/data.tree/index.html |
 |tietojoukot| 3.4.1| NA|
-|date| 1.2-37| https://cran.r-project.org/web/packages/date/index.html |
+|päivämäärä| 1.2-37| https://cran.r-project.org/web/packages/date/index.html |
 |DBI|0.7| https://cran.r-project.org/web/packages/DBI/index.html |
 |dbscan| 1.1-1| https://cran.r-project.org/web/packages/dbscan/index.html |
 |dclone| 2.1-2| https://cran.r-project.org/web/packages/dclone/index.html |
@@ -869,7 +869,7 @@ Seuraavassa taulukossa on esitetty paketit, joita **tuetaan** Power BI -palvelus
 |TraMineR| 2.0-7| https://cran.r-project.org/web/packages/TraMineR/index.html |
 |translations| 3.4.1| NA|
 |tree| 1.0-37| https://cran.r-project.org/web/packages/tree/index.html |
-|treemap| 2.4-2| https://cran.r-project.org/web/packages/treemap/index.html |
+|puukartta| 2.4-2| https://cran.r-project.org/web/packages/treemap/index.html |
 |trimcluster| 0.1-2| https://cran.r-project.org/web/packages/trimcluster/index.html |
 |truncnorm| 1.0-7| https://cran.r-project.org/web/packages/truncnorm/index.html |
 |TSA|1.01| https://cran.r-project.org/web/packages/TSA/index.html |

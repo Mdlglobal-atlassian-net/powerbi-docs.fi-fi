@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/27/2018
+ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: a4a8c591d4f8fb6c9610496366b4eb3d80601fae
-ms.sourcegitcommit: fbb7924603f8915d07b5e6fc8f4d0c7f70c1a1e1
+ms.openlocfilehash: 56f25730730a6f218f2dbaa678abdf182470f177
+ms.sourcegitcommit: 2ae660a7b70fce23eb58b159d049eca44a664f2c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39327449"
+ms.lasthandoff: 11/30/2018
+ms.locfileid: "52670252"
 ---
 # <a name="import-excel-workbooks-into-power-bi-desktop"></a>Excel-työkirjojen tuominen Power BI Desktopiin
 **Power BI Desktopin** avulla voit helposti tuoda Power BI Desktopiin Excel-työkirjoja, joihin sisältyy Power Query -kyselyitä, Power Pivot -malleja ja Power View -laskentataulukoita. Raportit ja visualisoinnit luodaan automaattisesti Excel-työkirjan perusteella, ja kun ne on kerran tuotu, voit edelleen parantaa ja tarkentaa kyseisiä raportteja Power BI Desktopin avulla käyttämällä olemassa olevia ominaisuuksia ja uusia ominaisuuksia, jotka julkaistaan Power BI Desktopin kunkin kuukausipäivityksen yhteydessä.

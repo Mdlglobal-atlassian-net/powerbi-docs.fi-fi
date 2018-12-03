@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 07/27/2018
+ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 964d9dfcc9a22d13b071fd59533821ebf907c7e1
-ms.sourcegitcommit: f01a88e583889bd77b712f11da4a379c88a22b76
+ms.openlocfilehash: 5e330c54969b0dd866c4b80afd71a765976f658d
+ms.sourcegitcommit: 2ae660a7b70fce23eb58b159d049eca44a664f2c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39328461"
+ms.lasthandoff: 11/30/2018
+ms.locfileid: "52669677"
 ---
 # <a name="publish-to-power-bi-from-excel-2016"></a>Julkaiseminen Power BI:stä Excel 2016:een
 Excel 2016:n avulla voit julkaista Excel-työkirjat suoraan [Power BI](https://powerbi.microsoft.com) -sivustoon, jossa voit luoda erittäin vuorovaikutteisia raportteja ja koontinäyttöjä työkirjan tietojen perusteella. Voit sitten jakaa merkityksellisiä tietoja muiden kanssa organisaatiossasi.

@@ -7,14 +7,14 @@ ms.reviewer: willthom
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 07/27/2018
+ms.date: 11/28/2018
 ms.author: davidi
-ms.openlocfilehash: 939c27dad3092880bfe4dba43b81f0c2988646d5
-ms.sourcegitcommit: f01a88e583889bd77b712f11da4a379c88a22b76
+ms.openlocfilehash: 13324ca27ae1c77f6ea735bb71b1081587cc413d
+ms.sourcegitcommit: 2ae660a7b70fce23eb58b159d049eca44a664f2c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39330117"
+ms.lasthandoff: 11/30/2018
+ms.locfileid: "52670331"
 ---
 # <a name="tips-and-tricks-for-creating-reports-in-power-bi-desktop"></a>Vinkkejä raporttien luomiseen Power BI Desktopissa
 Joskus voi tarvita hieman ylimääräistä apua, jotta tiedoista saa kaiken hyödyn irti. Olemme koonneet yhteen muutamia vinkkejä, joita voit hyödyntää, kun luot raportteja Microsoftin Power BI Desktopissa *ja* Microsoft Excel 2016:ssa. Niistä on hyötyä myös Excel 2013 Pro Plus -versioissa, joissa Power Pivot -apuohjelma on otettu käyttöön sekä Power Query asennettuna ja käytössä. 
