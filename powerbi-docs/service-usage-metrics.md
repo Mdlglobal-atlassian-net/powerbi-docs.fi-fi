@@ -1,8 +1,8 @@
 ---
 title: Koontinäyttöjen ja raporttien käyttötiedot
 description: Opi tarkastelemaan, tallentamaan ja käyttämään Power BI:n koontinäyttöjen ja raporttien käyttötietoja. Mittaa ja paranna vaikutustasi sisällöntekijöiden käyttötiedoilla.
-author: mihart
-ms.author: mihart
+author: maggiesMSFT
+ms.author: maggies
 manager: kfile
 ms.reviewer: ''
 featuredvideoid: ''
@@ -11,12 +11,12 @@ ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 11/13/2018
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 7b511a28f056df268216552f7d075a88c047f9f3
-ms.sourcegitcommit: 6a6f552810a596e1000a02c8d144731ede59c0c8
+ms.openlocfilehash: 53d39eaf7c615d2ed279e7c45330dacbdad7994a
+ms.sourcegitcommit: e17fc3816d6ae403414cf5357afbf6a492822ab8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/14/2018
-ms.locfileid: "51619835"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52830328"
 ---
 # <a name="usage-metrics-for-dashboards-and-reports"></a>Koontinäyttöjen ja raporttien käyttötiedot
 
@@ -71,7 +71,7 @@ Jos haluat pureutua raporttitietoihin tai luoda omia raporttejasi tästä tietoj
 
 ## <a name="which-metrics-are-reported"></a>Mitkä tiedot raportoidaan?
 
-| Tieto | Koontinäyttö | Raportti | Kuvaus |
+| Tieto | Koontinäyttö | Raportti | Description |
 | --- | --- | --- | --- |
 | Jakelutavan osittaja |kyllä |kyllä |Millä tavalla käyttäjä pääsi käyttämään sisältöä? Mahdollisia tapoja on kolme: käyttäjä voi käyttää koontinäyttöä tai raporttia [sovellustyötilan](consumer/end-user-experience.md) jäsenenä, vastaanottamalla sisällön itselleen [jaettuna](service-share-dashboards.md) tai asentamalla sisältöpaketin tai sovelluksen.  Huomaa, että sovelluksen kautta tulleet näyttökerrat lasketaan sisältöpaketiksi. |
 | Ympäristöosittaja |kyllä |kyllä |Käytettiinkö koontinäyttöä tai raporttia Power BI -palvelun (powerbi.com) vai mobiililaitteen kautta? Mobiililaitteisiin sisältyvät kaikki iOS-, Android- ja Windows-sovellukset. |

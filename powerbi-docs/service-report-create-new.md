@@ -10,19 +10,17 @@ ms.topic: conceptual
 ms.date: 03/24/2018
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: 96b46e595ffd2373a2d59776cb8c2b4314727d89
-ms.sourcegitcommit: 1e4fee6d1f4b7803ea285eb879c8d5a4f7ea8b85
+ms.openlocfilehash: a5762964b75d73d8dabceac58c47f616753b94cc
+ms.sourcegitcommit: e17fc3816d6ae403414cf5357afbf6a492822ab8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51718041"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52830173"
 ---
 # <a name="create-a-new-report-in-power-bi-service-by-importing-a-dataset"></a>Uuden raportin luominen Power BI -palvelussa tuomalla tietojoukko
 Olet lukenut [Power BI -raportit](consumer/end-user-reports.md) ja haluat nyt luoda omasi. Voit luoda raportin monella eri tavalla, ja aloitamme tämän artikkelin luomalla hyvin perustasoisen raportin Excel-tietojoukosta käyttämällä Power BI -palvelua. Kun ymmärrät raportin luomisen perusteet, **Seuraavat vaiheet** näytön alareunassa vievät sinut monimutkaisempia raportteja koskevaan aiheisiin.  
 
-> **VIHJE**: Voit luoda raportin kopioimalla aiemmin luodun raportin, katso [Kopioi raportti](power-bi-report-copy.md)
-> 
-> ### <a name="prerequisites"></a>Edellytykset
+## <a name="prerequisites"></a>Edellytykset
 > - Power BI -palvelu (katso raporttien luominen Power BI Desktopissa kohdasta [Työpöydän raporttinäkymä](desktop-report-view.md) )  
 > - Jälleenmyyntianalyysimallin tietojoukko
 
@@ -93,7 +91,7 @@ CMO haluaa esittää meille joitakin lisäkysymyksiä vastattavaksi. Hän haluaa
 Jatka tietojen tarkastelemista ja visualisointien lisäämistä. Kun olet löytänyt erityisen merkityksellisiä tietoja, [kiinnitä ne raporttinäkymään](service-dashboard-pin-tile-from-report.md).
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
-* [Uuden sivun lisääminen raporttiin](power-bi-report-add-page.md)  
+
 * Lue, miten [kiinnittää visualisointeja raporttinäkymään](service-dashboard-pin-tile-from-report.md)   
 * Onko sinulla muuta kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
 

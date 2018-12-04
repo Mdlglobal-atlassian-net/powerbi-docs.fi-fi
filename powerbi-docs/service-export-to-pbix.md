@@ -1,21 +1,21 @@
 ---
 title: Raportin vieminen Power BI -palvelusta työasemaan (esikatselu)
 description: Raportin lataaminen Power BI -palvelusta Power BI Desktop -tiedostoon
-author: mihart
+author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 03/02/2018
-ms.author: mihart
+ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: 2f7133bb376cc04e181eed2d90a45e3361190d0b
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 3e1a87b1ec2439b2f72ba07009ca8d6dd6cf5c40
+ms.sourcegitcommit: e17fc3816d6ae403414cf5357afbf6a492822ab8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46547019"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52830351"
 ---
 # <a name="export-a-report-from-power-bi-service-to-desktop-preview"></a>Raportin vieminen Power BI -palvelusta työasemaan (esikatselu)
 Voit viedä (tai *ladata*) Power BI Desktopissa raportin Power BI -palveluun tallentamalla raportti ja valitsemalla **Julkaise**. Voit myös viedä toiseen suuntaan ja ladata raportin Power BI -palvelusta työpöydälle. Vietävien tiedostojen tiedostopääte kumpaankin suuntaan on *.pbix*.
