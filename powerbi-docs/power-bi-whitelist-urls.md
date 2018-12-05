@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 10/22/2018
-ms.openlocfilehash: e62d39f13e2b171456d667ec9683acd4ebdc5516
-ms.sourcegitcommit: 46f1ba3f972f6e64bce05ad0fd527b27c49aedd6
+ms.openlocfilehash: 47fb90ba0f73bba2b210a9003b782a477dbf8214
+ms.sourcegitcommit: 05303d3e0454f5627eccaa25721b2e0bad2cc781
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52157122"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "52578723"
 ---
 # <a name="power-bi-urls"></a>Power BI:n URL-osoitteet
 
@@ -91,7 +91,7 @@ Power BI riippuu tietyistä päätepisteistä mukautettujen visualisointien tark
 | Rivi | Tarkoitus | Kohteet | Portit |
 | --- | --- | --- | --- |
 | 1 | **Pakollinen:** tuo mukautettu visualisointi Marketplace-liittymästä tai tiedostosta | *.azureedge.net </br> *.blob.core.windows.net </br> store.office.com | TCP 443 |
-| 2 | **Pakollinen:** Bing-kartat | bing.com </br> platform.bing.com </br> *.dynamic.tiles.virtualearth.net </br> *.virtualearth.net | TCP 443 |
+| 2 | **Pakollinen:** Bing-kartat | bing.com </br> platform.bing.com </br> *.virtualearth.net | TCP 443 |
 | 3 | **Valinnainen:** PowerApps | Katso [Pakolliset palvelut -osiota](https://docs.microsoft.com/powerapps/maker/canvas-apps/limits-and-config#required-services) PowerApps-järjestelmän vaatimukset -sivustosta | – |
 | 4 | **Valinnainen:** Visio | Tutustu Office 365 -ohjeisiin [Office Online ja yleiset URL-osoitteet](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online) ja [SharePoint Online ja OneDrive for Business](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#sharepoint-online-and-onedrive-for-business) | – |
 | | | |
@@ -103,7 +103,7 @@ Power BI -linkkejä muihin, aiheeseen liittyviin sivustoihin. Nämä verkkosivus
 | Rivi | Tarkoitus | Kohteet | Portit |
 | --- | --- | --- | --- |
 | 1 | **Valinnainen:** yhteisösivusto | community.powerbi.com </br> oxcrx34285.i.lithium.com | TCP 443 |
-| 2 | **Valinnainen:** dokumentaatiosivusto | docs.microsoft.com </br> img-prod-cms-rt-microsoft-com.akamaized.net </br> statics-uhf-eas.akamaized.net </br> cdnssl.clicktale.neting-district.clicktale.net | TCP 443 |
+| 2 | **Valinnainen:** dokumentaatiosivusto | docs.microsoft.com </br> img-prod-cms-rt-microsoft-com.akamaized.net </br> statics-uhf-eas.akamaized.net </br> cdnssl.clicktale.net </br> ing-district.clicktale.net | TCP 443 |
 | 3 | **Valinnainen:** lataussivusto (Power BI Desktopille jne.) | download.microsoft.com | TCP 443 |
 | 4 | **Valinnainen:** ulkoiset uudelleenohjaukset | aka.ms </br> go.microsoft.com | TCP 443 |
 | 5 | **Valinnainen:** Ideas-palautesivusto| ideas.powerbi.com </br> powerbi.uservoice.com | TCP 443 |

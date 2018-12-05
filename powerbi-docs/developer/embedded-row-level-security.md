@@ -8,19 +8,19 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: conceptual
-ms.date: 09/18/2018
-ms.openlocfilehash: 60061d781542f8b5a3ef67a75e61d902459d4963
-ms.sourcegitcommit: ded8b85276e7eda166d6e67f72d1fe3d5e234745
+ms.date: 11/28/2018
+ms.openlocfilehash: 901c087c486598019e905598ee83382664842cc8
+ms.sourcegitcommit: 05303d3e0454f5627eccaa25721b2e0bad2cc781
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46506772"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "52578769"
 ---
 # <a name="use-row-level-security-with-power-bi-embedded-content"></a>Rivitason suojaus Power BI:n upotetussa sisällössä
 
-Rivitason suojauksen (row level security, RLS) avulla käyttäjien käyttöoikeuksia koontinäyttöjen, ruutujen, raporttien ja tietojoukkojen tietoihin voidaan rajoittaa. Eri käyttäjät voivat nähdä eri tiedot käyttäessään kyseisiä kohteita. Upottaminen tukee rivitason suojausta.
+**Rivitason suojauksen (RLS)** avulla voidaan rajoittaa käyttäjien käyttöoikeuksia raporttinäkymien, ruutujen, raporttien ja tietojoukkojen tietoihin. Eri käyttäjät voivat työskennellä samojen kohteiden parissa ja nähdä eri tiedot. Upottaminen tukee rivitason suojausta.
 
-Jos olet upottamassa sisältöä muille kuin Power BI:n käyttäjille (sovellus omistaa tiedot), tavallisesti ISV-skenaariossa, tämä artikkeli koskee sinua. Sinun on määritettävä upotuksen tunnus käyttäjälle ja roolille. Ohjeet ovat alla.
+Jos olet upottamassa sisältöä muille kuin Power BI:n käyttäjille (sovellus omistaa tiedot), tavallisesti ISV-skenaariossa, tämä artikkeli koskee sinua. Määritä tiliin upotustunnus käyttäjälle ja roolille.
 
 Jos olet upottamassa sisältöä Power BI -käyttäjille (käyttäjä omistaa tiedot) organisaatiosi sisällä, rivitason suojaus toimii samalla tavalla kuin suoraan Power BI -palvelussa. Sinun ei tarvitse tehdä sovelluksessasi mitään muuta. Lisätietoja on artikkelissa [Rivitason suojaus (RLS) Power BI:ssä](../service-admin-rls.md).
 
@@ -32,14 +32,14 @@ Jotta voit hyödyntää rivitason suojausta, sinun on tärkeää ymmärtää kol
 
 **Roolit** – Käyttäjät kuuluvat rooleihin. Rooli on sääntöjen säilö. Roolin nimi voi olla esim. *myyntipäällikkö* tai *myyntiedustaja*. Voit luoda rooleja Power BI Desktopissa. Lisätietoja on artikkelissa [Rivitason suojaus (RLS) Power BI Desktopissa](../desktop-rls.md).
 
-**Säännöt** – Rooleilla on sääntöjä, jotka ovat tietoihin sovellettavia todellisia suodattimia. Sääntö voi olla yksinkertainen, esim. ”maa = USA”, tai paljon dynaamisempi.
+**Säännöt** – Rooleilla on sääntöjä, jotka ovat tietoihin sovellettavia todellisia suodattimia. Sääntö voi olla yksinkertainen, esim. ”maa = Yhdysvallat”, tai paljon dynaamisempi.
 Tässä artikkelissa on esimerkki rivitason suojauksen luomisesta ja sen käyttämisestä upotetussa sovelluksessa. Esimerkissämme käytetään [Jälleenmyynnin analyysiesimerkki](http://go.microsoft.com/fwlink/?LinkID=780547) -PBIX-tiedostoa.
 
 ![Esimerkkiraportti](media/embedded-row-level-security/powerbi-embedded-report-example.png)
 
 ## <a name="adding-roles-with-power-bi-desktop"></a>Roolien lisääminen Power BI Desktopilla
 
-Microsoftin jälleenmyynnin analyysiesimerkissä näkyy kaikkien jälleenmyyntiketjuun kuuluvien myymälöiden myynti. Jos rivitason suojaus ei ole käytössä, kaikkien alueiden johtohenkilöt näkevät samat tiedot kirjautuessaan ja tarkastellessaan raporttia. Ylin johto on päättänyt, että kunkin alueen johtajan pitäisi nähdä hallitsemiensa myymälöiden myynti. Rivitason suojaus auttaa tämän saavuttamisessa.
+Microsoftin **jälleenmyynnin analyysiesimerkissä** näkyy kaikkien jälleenmyyntiketjuun kuuluvien myymälöiden myynti. Jos rivitason suojaus ei ole käytössä, kaikkien alueiden johtohenkilöt näkevät samat tiedot kirjautuessaan ja tarkastellessaan raporttia. Ylin johto on päättänyt, että kunkin alueen johtajan pitäisi nähdä hallitsemiensa myymälöiden myynti. Rivitason suojauksen avulla ylin johto voi rajata tiedot alueen johtajan mukaan.
 
 RLS on luotu Power BI Desktopissa. Kun tietojoukko ja raportti on avattu, voimme siirtyä kaavionäkymään ja tarkastella rakennetta:
 
@@ -54,7 +54,7 @@ Huomioi seuraavat asiat tässä rakenteessa:
   
     ![Aluetaulukon rivit](media/embedded-row-level-security/powerbi-embedded-district-table.png)
 
-Jos tämän rakenteen perusteella käytämme suodatinta **Alueen johtaja** -sarakkeeseen **Alue**-taulukossa ja jos kyseinen suodatin vastaa raporttia tarkastelevaa käyttäjää, suodatin suodattaa **Myymälä-** ja **Myynti**-taulukon tiedot, jolloin vain kyseisen alueen johtaja näkee tiedot.
+Jos tämän rakenteen perusteella käytetään suodatinta **Alue**-taulukon **Alueen johtaja** -sarakkeessa ja jos kyseinen suodatin vastaa raporttia tarkastelevaa käyttäjää, suodatin suodattaa **Myymälä-** ja **Myynti**-taulukon tiedot, jolloin vain kyseisen alueen johtaja näkee tiedot.
 
 Ohjeet:
 
@@ -79,11 +79,11 @@ Kun suodatinta käytetään näin, kaikki **Alue-**, **Myymälä-** ja **Myynti*
 
 Nyt kun Power BI Desktop -roolit on määritetty, sovelluksesi on määritettävä, jotta voit hyödyntää rooleja.
 
-Sovelluksesi todentaa ja valtuuttaa käyttäjäsi, ja upotettavien tunnusten avulla heille voidaan myöntää käyttöoikeudet valittuun Power BI Embedded -raporttiin. Power BI Embedded ei sisällä tietoja siitä, kuka käyttäjä on. Jotta rivitason suojaus toimii, sinun on välitettävä käyttäjätietoja upotuksen tunnuksen osana. Voit tehdä tämän [Tunnuksen upotus](https://docs.microsoft.com/rest/api/power-bi/embedtoken)-ohjelmointirajapinnalla.
+Sovelluksesi todentaa ja valtuuttaa käyttäjäsi, ja upotettavien tunnusten avulla heille voidaan myöntää käyttöoikeudet valittuun Power BI Embedded -raporttiin. Power BI Embedded ei sisällä tietoja siitä, kuka käyttäjä on. Jotta rivitason suojaus toimii, sinun on välitettävä käyttäjätietoja upotustunnuksen osana. Voit välittää käyttäjätietojen käyttämällä [Upotustunnus](https://docs.microsoft.com/rest/api/power-bi/embedtoken)-ohjelmointirajapintaa.
 
-Ohjelmointirajapinta tukee käyttäjätietojen luetteloa, joka sisältää viittauksen oleellisiin tietojoukkoihin. Jotta rivitason suojaus toimii, sinun on välitettävä seuraavat tiedot osana käyttäjätietoja.
+Ohjelmointirajapinta tukee käyttäjätietojen luetteloa, joka sisältää viittauksen oleellisiin tietojoukkoihin. Jotta rivitason suojaus toimii, sinun on välitettävä alla olevat tiedot osana käyttäjätietoja.
 
-* **käyttäjänimi (pakollinen)** – Tämä on merkkijono, jonka avulla käyttäjä voidaan rivitason suojauksen sääntöjä käytettäessä. Luettelossa voi olla vain yksi käyttäjä. Käyttäjänimen voi luoda *ASCII*-merkeillä.
+* **käyttäjänimi (pakollinen)** – Merkkijono, jonka avulla käyttäjä voidaan tunnistaa rivitason suojauksen sääntöjä käytettäessä. Luettelossa voi olla vain yksi käyttäjä. Käyttäjänimen voi luoda *ASCII*-merkeillä.
 * **roolit (pakollinen)** – Merkkijono, joka sisältää rivitason suojausta käytettäessä valittavat säännöt. Jos välitettäviä rooleja on useampi kuin yksi, ne tulisi välittää merkkijonotaulukkona.
 * **tietojoukko (pakollinen)** – Tietojoukko, joka koskee upotettavaa kohdetta.
 
@@ -98,7 +98,7 @@ var generateTokenRequestParameters = new GenerateTokenRequest(accessLevel: "view
 var tokenResponse = await client.Reports.GenerateTokenInGroupAsync(GroupId, report.Id, generateTokenRequestParameters);
 ```
 
-arvoon
+vastaanottaja
 
 ```csharp
 var generateTokenRequestParameters = new GenerateTokenRequest("View", null, identities: new List<EffectiveIdentity> { new EffectiveIdentity(username: "username", roles: new List<string> { "roleA", "roleB" }, datasets: new List<string> { "datasetId" }) });
@@ -106,7 +106,9 @@ var generateTokenRequestParameters = new GenerateTokenRequest("View", null, iden
 var tokenResponse = await client.Reports.GenerateTokenInGroupAsync("groupId", "reportId", generateTokenRequestParameters);
 ```
 
-Jos muodostat yhteyden REST-ohjelmointirajapintaan, päivitetty ohjelmointirajapinta hyväksyy nyt JSON-lisätaulukon nimeltä **käyttäjätiedot**, joka sisältää käyttäjänimen, roolien merkkijonoluettelon ja luettelon merkkijonotietojoukoista, esim.:
+Jos muodostat yhteyden REST-ohjelmointirajapintaan, päivitetty ohjelmointirajapinta hyväksyy nyt JSON-lisätaulukon nimeltä **käyttäjätiedot**, joka sisältää käyttäjänimen, luettelon merkkijonorooleista ja luettelon merkkijonotietojoukoista. 
+
+Käytä seuraavaa koodia esimerkkinä:
 
 ```json
 {
@@ -121,7 +123,7 @@ Jos muodostat yhteyden REST-ohjelmointirajapintaan, päivitetty ohjelmointirajap
 }
 ```
 
-Nyt kun kaikki osat on koottu yhteen, kun henkilö kirjautuu sovellukseesi tarkastelemaan tätä kohdetta, hän näkee vain sellaiset tiedot, jotka rivitason suojaus sallii hänen näkevän.
+Nyt kun kaikki osat on koottu yhteen ja henkilö kirjautuu sovellukseesi tarkastelemaan tätä kohdetta, hän näkee vain sellaiset tiedot, jotka rivitason suojaus sallii hänen näkevän.
 
 ## <a name="working-with-analysis-services-live-connections"></a>Reaaliaikaisten Analysis Services -yhteyksien käyttäminen
 
@@ -129,38 +131,45 @@ Rivitason suojausta voi käyttää paikallisilla palvelimilla reaaliaikaisten An
 
 Käyttäjänimi-ominaisuuden on vastattava Windows-käyttäjää, jolla on käyttöoikeudet Analysis Services -palvelimella.
 
-**Paikallinen tietoyhdyskäytävä -määritys**
+### <a name="on-premises-data-gateway-configuration"></a>Paikallisen tietoyhdyskäytävän määritys
 
 [Paikallista tietoyhdyskäytävää](../service-gateway-onprem.md) käytetään, kun käsittelet reaaliaikaisia Analysis Services -yhteyksiä. Upotuksen tunnusta luotaessa, kun käyttäjätieto on luetteloitu, päätili on lueteltava yhdyskäytävän järjestelmänvalvojana. Jos päätili ei ole luettelossa, rivitason suojausta ei käytetä tietojen ominaisuuksiin. Yhdyskäytävän muu käyttäjä kuin järjestelmänvalvojien voi lisätä rooleja, mutta hänen on annettava käyttäjätiedoksi oma käyttäjänimensä.
 
-**Roolien käyttö**
+### <a name="use-of-roles"></a>Roolien käyttäminen
 
 Roolit voidaan toimittaa upotustunnuksen käyttäjätiedoissa. Jos roolia ei ole annettu, annettua käyttäjänimeä voidaan käyttää asianmukaisia rooleja ratkaistaessa.
 
-**CustomData-toiminnon käyttö**
+### <a name="using-the-customdata-feature"></a>CustomData-toiminnon käyttäminen
 
-CustomData-toiminto mahdollistaa vapaan tekstin (merkkijonon) välittämisen CustomDatan yhteysmerkkijono-ominaisuuden avulla. Se on arvo, jota AS käyttää (CUSTOMDATA()-funktion kautta).
-Voit käyttää tätä vaihtoehtoisena tapana tietojen käytön mukauttamiseen.
+CustomData-ominaisuus toimii vain malleilla, jotka sijaitsevat **Azure Analysis Services -palveluissa**, ja se toimii vain **Connect live** -tilassa. Toisin kuin käyttäjiä ja rooleja, CustomData-ominaisuutta ei voi asettaa .pbix-tiedoston sisälle. Sinulla on oltava käyttäjänimi CustomData-ominaisuuden sisältävää tunnusta luotaessa.
+
+CustomData-ominaisuuden avulla voit lisätä rivisuodattimen tarkasteltaessa sovelluksesi Power BI -tietoja, kun käytät **Azure Analysis Servicesiä** tietolähteenä (Azure Analysis Servicesiin yhdistettyjen Power BI -tietojen tarkasteleminen sovelluksessa).
+
+CustomData-ominaisuus mahdollistaa vapaan tekstin (merkkijonon) välittämisen CustomDatan yhteysmerkkijono-ominaisuuden avulla. Analysis Services käyttää tätä arvoa *CUSTOMDATA()*-funktion kautta.
+
+Ainoa tapa saada dynaaminen rivitason suojaus (joka käyttää dynaamisia arvoja suodattimen arviointiin) **Azure Analysis Servicesissä** on käyttää *CUSTOMDATA()*-funktiota.
+
 Voit käyttää sitä DAX-kyselyn roolissa. Voit käyttää sitä ilman roolia mittayksikön DAX-kyselyssä.
 CustomData-ominaisuus on osa tunnuksen luontitoimintoja, joita voi käyttää koontinäyttöjen, raporttien ja ruutujen kanssa. Koontinäytöillä voi olla useita CustomData-käyttäjätietoja (yksi ruutu mallia kohden).
 
-> [!NOTE]
-> CustomData-ominaisuus toimii vain malleilla, jotka sijaitsevat Azure Analysis Services -palveluissa, ja se toimii vain live-tilassa. Toisin kuin käyttäjät ja roolit, CustomData-ominaisuutta ei voi asettaa .pbix-tiedoston sisälle. Sinulla on oltava käyttäjänimi CustomData-ominaisuuden sisältävää tunnusta luotaessa.
+#### <a name="customdata-sdk-additions"></a>CustomDatan SDK-lisäykset
 
-**CustomDatan SDK-lisäykset**
+CustomDatan merkkijono-ominaisuus lisättiin käytössä olevaan käyttäjätietoon tunnuksen luontitapahtumassa.
 
-CustomDatan yhteysmerkkijono-ominaisuus lisättiin käytössä olevaan käyttäjätietoon tunnuksen luontitapahtumassa.
-
-        [JsonProperty(PropertyName = "customData")]
-        public string CustomData { get; set; }
+```json
+[JsonProperty(PropertyName = "customData")]
+public string CustomData { get; set; }
+```
 
 Käyttäjätieto voidaan luoda mukautetuilla tiedoilla käyttämällä seuraavaa kutsua:
 
-        public EffectiveIdentity(string username, IList<string> datasets, IList<string> roles = null, string customData = null);
+```csharp
+public EffectiveIdentity(string username, IList<string> datasets, IList<string> roles = null, string customData = null);
+```
 
-**CustomDatan SDK:n käyttö**
+#### <a name="customdata-sdk-usage"></a>CustomDatan SDK:n käyttäminen
 
-Jos muodostat yhteyden REST-ohjelmointirajapintaan, voit lisätä mukautettuja tietoja kaikkiin käyttäjätietoihin, esim.:
+Jos muodostat yhteyden REST-ohjelmointirajapintaan, voit lisätä mukautettuja tietoja kaikkiin käyttäjätietoihin, esimerkiksi:
 
 ```json
 {
@@ -176,9 +185,63 @@ Jos muodostat yhteyden REST-ohjelmointirajapintaan, voit lisätä mukautettuja t
 }
 ```
 
-## <a name="considerations-and-limitations"></a>Huomioon otettavat seikat ja rajoitukset
+Voit alkaa määrittää CustomData()-ominaisuutta Power BI Embedded -sovelluksella seuraavien ohjeiden mukaan.
 
-* Käyttäjien määrittäminen rooleihin Power BI -palvelussa ei vaikuta rivitason suojaukseen upotuksen tunnusta käytettäessä.
+1. Luo Azure Analysis Services -tietokanta. Kirjaudu sisään Azure Analysis Services -palvelimelle [SQL Server Management Studion](https://docs.microsoft.com/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-2017) kautta.
+
+    ![Azure Analysis Services -tietokannan luominen](media/embedded-row-level-security/azure-analysis-services-database-create.png)
+
+    ![Analysis Services -tietokanta](media/embedded-row-level-security/azure-analysis-services-database.png)
+
+2. Luo rooli Analysis Services -palvelimella.
+
+    ![Roolin luominen](media/embedded-row-level-security/azure-analysis-services-database-create-role.png)
+
+3. Määritä **yleiset** asetukset.  Täällä voit antaa **roolin nimen** ja määrittää tietokannalle vain **luku** -oikeudet.
+
+    ![Roolin luominen – Yleisten asetusten määrittäminen](media/embedded-row-level-security/azure-analysis-services-database-create-role-general-settings.png)
+
+4. Määritä **jäsenyyden** asetukset. Täällä voit lisätä käyttäjät, joita tämä rooli koskee.
+
+    ![Roolin luominen – Jäsenyyden määrittäminen](media/embedded-row-level-security/azure-analysis-services-database-create-role-membership.png)
+
+5. Määritä **rivisuodattimien** DAX-kysely *CUSTOMDATA()*-funktion avulla.
+
+    ![Roolin luominen – Rivisuodattimien määrittäminen](media/embedded-row-level-security/azure-analysis-services-database-create-role-row-filters.png)
+
+6. Luo PBI-raportti ja julkaise se työtilan varatussa kapasiteetissa.
+
+    ![PBI-raporttimalli](media/embedded-row-level-security/rls-sample-pbi-report.png)
+
+7. Power BI -ohjelmointirajapintojen avulla voit käyttää CustomData-ominaisuutta sovelluksessasi.  Sinulla on oltava käyttäjänimi CustomData-ominaisuuden sisältävää tunnusta luotaessa. Käyttäjänimen on oltava sama kuin pääkäyttäjän täydellinen käyttäjätunnus. Pääkäyttäjän on oltava luomasi roolin jäsen. Jos rooleja ei määritetä, kaikkia rooleja, joiden jäsen pääkäyttäjä on, käytetään rivitason suojauksen arviointiin.
+
+    > [!Note]
+    > Kun olet valmis ottamaan sovelluksesi tuotantoon, pääkäyttäjän tili -kentän tai -vaihtoehdon ei pitäisi näkyä käyttäjälle.
+
+    Lisää CustomData-ominaisuus näyttämällä [koodi](#customdata-sdk-additions).
+
+8. Voit nyt tarkastella raporttia sovelluksessasi ennen CustomData-arvojen käyttämistä, jotta näet kaikki raporttisi sisältämät tiedot.
+
+    ![Ennen CustomData-ominaisuuden käyttöönottoa](media/embedded-row-level-security/customdata-before.png)
+
+    Ota sitten CustomData-arvot käyttöön, jotta näet, miten raportti näyttää eri tietojoukon.
+    ![CustomData-ominaisuuden käyttöönoton jälkeen](media/embedded-row-level-security/customdata-after.png)
+
+## <a name="using-rls-vs-javascript-filters"></a>Rivitason suojauksen käyttäminen JavaScript-suodattimiin verrattuna
+
+Kun päätät suodattaa raportin tietoja, voit käyttää **rivitason suojausta** tai **JavaScript-suodattimia**.
+
+[Rivitason suojaus](../service-admin-rls.md) on ominaisuus, joka suodattaa tiedot tietomallin tasolla. Taustatietolähde ohjaa RLS-asetuksia. Upotustunnuksen luominen määrittää istunnon käyttäjänimen ja roolit tietomallisi perusteella. Sitä ei voi ohittaa, poistaa tai hallita asiakaspuolen koodilla, minkä vuoksi sitä pidetään turvallisena. Rivitason suojausta suositellaan tietojen turvalliseen suodattamiseen. Voit suodattaa tietoja rivitason suojauksen avulla käyttämällä jotakin seuraavista vaihtoehdoista.
+
+* [Power BI -raportin roolien määrittäminen](../desktop-rls.md).
+* Roolien määrittäminen tietolähteen tasolla (vain Analysis Servicesin reaaliaikainen yhteys).
+* Ohjelmallisesti [upotustunnuksella](https://docs.microsoft.com/rest/api/power-bi/embedtoken/datasets_generatetokeningroup) käyttämällä `EffectiveIdentity`-komentoa. Kun käytetään upotustunnusta, todellinen suodatin läpäisee tietyn istunnon upotustunnuksen.
+
+[JavaScript-suodattimien](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Filters#page-level-and-visual-level-filters) avulla käyttäjä voi käyttää rajoitettua, kohdennettua tai suodatettua tietonäkymää. Käyttäjällä on kuitenkin yhä pääsy mallin rakenteen taulukoihin, sarakkeisiin ja mittayksiköihin, ja hän voi mahdollisesti käyttää niiden tietoja. Tietojen käyttöoikeuksien rajoitus voidaan ottaa käyttöön vain rivitason suojauksella eikä asiakaspuolen suodatinohjelmointirajapintojen kautta.
+
+## <a name="considerations-and-limitations"></a>Huomioitavat asiat ja rajoitukset
+
+* Käyttäjien määrittäminen rooleihin Power BI -palvelussa ei vaikuta rivitason suojaukseen upotustunnusta käytettäessä.
 * Power BI -palvelu ei sovella rivitason suojauksen asetuksia järjestelmänvalvojiin tai jäseniin, joilla on muokkausoikeudet, mutta niitä sovelletaan tietoihin, kun annat upotustunnuksen sisältävät käyttäjätiedot.
 * Reaaliaikaisia Analysis Services -yhteyksiä tuetaan paikallisissa palvelimissa.
 * Reaaliaikaiset Azure Analysis Services -yhteydet tukevat suodattamista roolien mukaan. Dynaaminen suodatus voidaan tehdä CustomData-toiminnon avulla.
