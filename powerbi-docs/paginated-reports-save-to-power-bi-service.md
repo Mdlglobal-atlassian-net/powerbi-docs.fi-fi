@@ -1,5 +1,5 @@
 ---
-title: Sivutetun raportin julkaiseminen Power BI -palveluun | Microsoft Docs
+title: Sivutetun raportin julkaiseminen Power BI -palveluun (esikatselu)
 description: Tässä opetusohjelmassa opit julkaisemaan sivutetun raportin Power BI -palveluun lataamalla sen paikallisesta tietokoneesta.
 author: maggiesMSFT
 manager: kfile
@@ -9,14 +9,14 @@ ms.component: report-builder
 ms.topic: conceptual
 ms.date: 11/05/2018
 ms.author: maggies
-ms.openlocfilehash: 6f2d1a4e4de87ea6eb63826b59286a9abd54b94f
-ms.sourcegitcommit: b23fdcc0ceff5acd2e4d52b15b310068236cf8c7
+ms.openlocfilehash: 1114f1949c68e4bebf2d636906bf754e7de77273
+ms.sourcegitcommit: b03912343a5a214c6bb972aaa6aa051c2a5f4332
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51267228"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52900263"
 ---
-# <a name="publish-a-paginated-report-to-the-power-bi-service"></a>Sivutetun raportin julkaiseminen Power BI -palveluun
+# <a name="publish-a-paginated-report-to-the-power-bi-service-preview"></a>Sivutetun raportin julkaiseminen Power BI -palveluun (esikatselu)
 
 Tässä artikkelissa opit julkaisemaan sivutetun raportin Power BI -palveluun lataamalla sen paikallisesta tietokoneesta. Voit ladata sivutetut raportit omaan työtilaasi tai mihin tahansa muuhun työtilaan niin kauan kuin työtila on Premium-kapasiteetissa. Etsi vinoneliökuvaketta ![Power BI Premium -kapasiteetin vinoneliökuvaketta](media/paginated-reports-save-to-power-bi-service/premium-diamond.png) työtilan nimen vieressä. 
 

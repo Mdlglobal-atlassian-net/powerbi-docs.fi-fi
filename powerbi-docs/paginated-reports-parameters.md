@@ -1,5 +1,5 @@
 ---
-title: Sivutettujen raporttien parametrien luominen Power BI -palvelussa | Microsoft Docs
+title: Sivutettujen raporttien parametrien luominen Power BI -palvelussa (esikatselu)
 description: Tässä artikkelissa opit luomaan sivutettujen raporttien parametreja Power BI -palvelussa.
 author: maggiesMSFT
 manager: kfile
@@ -9,14 +9,14 @@ ms.component: report-builder
 ms.topic: conceptual
 ms.date: 11/05/2018
 ms.author: maggies
-ms.openlocfilehash: 3a1d497f112e84aeb958b86658ee3ffae3e87c6d
-ms.sourcegitcommit: b23fdcc0ceff5acd2e4d52b15b310068236cf8c7
+ms.openlocfilehash: d36f8e26282ae794976b0d679feb426ea04a981b
+ms.sourcegitcommit: b03912343a5a214c6bb972aaa6aa051c2a5f4332
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51267205"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52900286"
 ---
-# <a name="create-parameters-for-paginated-reports-in-the-power-bi-service"></a>Sivutettujen raporttien parametrien luominen Power BI -palvelussa
+# <a name="create-parameters-for-paginated-reports-in-the-power-bi-service-preview"></a>Sivutettujen raporttien parametrien luominen Power BI -palvelussa (esikatselu)
 
 Tässä artikkelissa opit luomaan sivutettujen raporttien parametreja Power BI -palvelussa.  Raporttiparametrien avulla voit valita raportin tiedot ja muuttaa raportin esitystapaa. Voit antaa oletusarvon ja käytettävissä olevien arvojen luettelon, jolloin raportin lukijat voivat muuttaa valintaa.  
 

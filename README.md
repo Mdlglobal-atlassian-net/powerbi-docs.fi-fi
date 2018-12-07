@@ -1,13 +1,13 @@
-# Microsoft Power BI Documentation
+# <a name="microsoft-power-bi-documentation"></a>Microsoft Power BI -dokumentaatio
 
-This is the GitHub repository for the technical product documentation for **Power BI**. This documentation is published to  [https://docs.microsoft.com/power-bi](https://docs.microsoft.com/power-bi).
+Tämä on **Power BI:n** teknisen tuotedokumentaation GitHub-säilö. Tämä dokumentaatio julkaistaan palveluun [https://docs.microsoft.com/power-bi](https://docs.microsoft.com/power-bi).
 
-## How to contribute
+## <a name="how-to-contribute"></a>Osallistuminen
 
-Thanks for your interest in contributing to [Docs.microsoft.com](https://docs.microsoft.com/), home of technical content for Microsoft products and services.
+Kiitos mielenkiinnostasi [Docs.microsoft.comin](https://docs.microsoft.com/) toimintaan osallistumiseen. Se on Microsoftin tuotteiden ja palveluiden teknisen sisällön palvelu.
 
-To learn how to make contributions to the content in this repository, start with our [Docs contributor guide](https://docs.microsoft.com/contribute). If you are a Microsoft employee, please visit the [internal version](https://aka.ms/docsguidescontribute) of this guide.
+Jos haluat ohjeet siihen, miten voit osallistua tämän säilön sisällön luomiseen, aloita tutustumalla [Docs-sisällöntuottajan oppaaseen](https://docs.microsoft.com/contribute). Jos olet Microsoftin työntekijä, tutustu tämän oppaan [sisäiseen versioon](https://aka.ms/docsguidescontribute).
 
-## Code of conduct
+## <a name="code-of-conduct"></a>Säännöt
 
-This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/). For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
+Tässä projektissa noudatetaan [Microsoftin avoimen lähdekoodin sääntöjä](https://opensource.microsoft.com/codeofconduct/). Saat lisätietoja [sääntöjen usein kysytyistä kysymyksistä](https://opensource.microsoft.com/codeofconduct/faq/). Jos sinulla on muuta kysyttävää tai kommentoitavaa, lähetä sähköpostia osoitteeseen [opencode@microsoft.com](mailto:opencode@microsoft.com).

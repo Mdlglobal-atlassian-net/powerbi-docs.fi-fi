@@ -1,5 +1,5 @@
 ---
-title: Tietojen lisääminen suoraan sivutettuun raporttiin Raportin muodostimessa
+title: Tietojen lisääminen suoraan sivutettuun raporttiin Raportin muodostimessa (esikatselu)
 description: Tässä artikkelissa kerrotaan, miten voit lisätä tietoja suoraan sivutettuun raporttiin Raportin muodostimessa.
 author: maggiesMSFT
 manager: kfile
@@ -9,14 +9,14 @@ ms.component: report-builder
 ms.topic: conceptual
 ms.date: 11/19/2018
 ms.author: maggies
-ms.openlocfilehash: 201a81eaef81015c73d70b54e8e862c2ccc29b1d
-ms.sourcegitcommit: 458e091a0a0bfb71ea3980d44df6408f48bab586
+ms.openlocfilehash: c3b003ee600df010aa07aad78ee2350704734dd4
+ms.sourcegitcommit: b03912343a5a214c6bb972aaa6aa051c2a5f4332
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/22/2018
-ms.locfileid: "52289986"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52900401"
 ---
-# <a name="enter-data-directly-in-a-paginated-report-in-report-builder---power-bi"></a>Tietojen lisääminen suoraan sivutettuun raporttiin Raportin muodostimessa – Power BI
+# <a name="enter-data-directly-in-a-paginated-report-in-report-builder-preview---power-bi"></a>Tietojen lisääminen suoraan sivutettuun raporttiin Raportin muodostimessa (esikatselu) – Power BI
 
 Tässä artikkelissa kerrotaan SQL Server 2016:n Raportin muodostimen uusimman version ominaisuudesta, joka mahdollistaa tietojen lisäämisen suoraan RDL-raporttiin upotettuna tietojoukkona.  Tämä ominaisuus on samankaltainen kuin Power BI Desktop. Voit kirjoittaa tiedot suoraan raportin tietojoukkoon, tai voit liittää ne toisesta ohjelmasta, kuten Microsoft Excelistä. Kun olet luonut tietojoukon antamalla tiedot, voit käyttää sitä samalla tavalla kuin mitä tahansa muuta luomaasi upotettua tietojoukkoa. Lisäksi voit lisätä useamman kuin yhden taulukon ja käyttää yhtä taulukkoa toisen suodattimena. Tämä ominaisuus on erityisen kätevä pienissä ja staattisissa tietojoukoissa, joita saatat tarvita raportissasi, kuten raportin parametreissä.
  

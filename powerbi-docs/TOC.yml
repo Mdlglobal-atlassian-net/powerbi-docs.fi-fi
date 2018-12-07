@@ -282,6 +282,8 @@ items:
         href: desktop-create-phone-report.md
       - name: Näytä tiedot- ja Näytä tietueet -toimintojen käyttö
         href: desktop-see-data-see-records.md
+      - name: Vinkkejä raporttien luomiseen
+        href: desktop-tips-and-tricks-for-creating-reports.md
     - name: Visualisoinnit
       items:
       - name: Visualisoinnin parhaat käytännöt
@@ -312,7 +314,7 @@ items:
         href: power-bi-reports-add-text-and-shapes.md
       - name: X- ja Y-akselin ominaisuuksien muokkaaminen
         href: visuals/power-bi-visualization-customize-x-axis-and-y-axis.md
-      - name: ArcGIS Power BI:ssä
+      - name: ArcGIS-kartat Power BI:ssä
         href: power-bi-visualization-arcgis.md
       - name: Perusaluekaavio
         href: visuals/power-bi-visualization-basic-area-chart.md
@@ -346,6 +348,8 @@ items:
         href: visuals/power-bi-visualization-treemaps.md
       - name: Vesiputouskaaviot Power BI:ssä
         href: visuals/power-bi-visualization-waterfall-charts.md
+      - name: Dynaamisten viiteviivojen luominen
+        href: service-analytics-pane.md
     - name: Vianmääritys
       items:
       - name: Access-tietokantojen ja Excel-laskentataulukoiden tuomisen ongelmien korjaaminen Power BI Desktopissa ja Power Queryssa
@@ -382,10 +386,10 @@ items:
       href: power-bi-overview.md
   - name: Opetusohjelmat
     items:
-    - name: Yhdistä GitHub-malliin
-      href: service-tutorial-connect-to-github.md
     - name: Power BI:n käytön aloittaminen
       href: service-get-started.md
+    - name: Yhdistä GitHub-malliin
+      href: service-tutorial-connect-to-github.md
   - name: Käsitteet
     items:
     - name: Power BI -palvelun uudet toiminnot ja ominaisuudet
@@ -406,7 +410,7 @@ items:
         href: service-govus-overview.md
       - name: Usein kysyttyjä kysymyksiä saksalaisille pilviasiakkaille
         href: service-govde-faq.md
-    - name: Tiedot
+    - name: tiedot
       items:
       - name: Power BI:n tietolähteet
         href: service-get-data.md
@@ -440,22 +444,10 @@ items:
         href: service-power-bi-get-started-third-party-apps.md
   - name: Ohjeet
     items:
-    - name: Yleiset tehtävät
-      items:
-      - name: Sisällön uudelleennimeäminen Power BI:llä
-        href: service-rename.md
-      - name: Nopeat merkitykselliset tiedot Power BI:ssä
-        href: service-insights.md
-      - name: Rekisteröi Yhdysvaltain julkishallinnon organisaatio
-        href: service-govus-signup.md
-      - name: Power BI -palvelun tietoilmoitukset
-        href: service-set-data-alerts.md
-      - name: Power BI Q&A:n käytön aloittaminen
-        href: power-bi-visualization-introduction-to-q-and-a.md
-      - name: Poista melkein mitä tahansa Power BI:ssä
-        href: service-delete.md
     - name: Palveluihin yhdistäminen
       items:
+      - name: Palveluihin yhdistäminen
+        href: service-connect-to-services.md
       - name: Acumatica
         href: service-connect-to-acumatica.md
       - name: Adobe Analytics
@@ -570,7 +562,7 @@ items:
         href: service-parameters.md
       - name: Tietojen hakeminen .csv-tiedostosta
         href: service-comma-separated-value-files.md
-      - name: Reaaliaikainen suoratoisto Power BI:ssä (esikatselu)
+      - name: Reaaliaikainen suoratoisto Power BI:ssä
         href: service-real-time-streaming.md
       - name: Julkaiseminen Power BI:stä Excel 2016:een
         href: service-publish-from-excel.md
@@ -602,7 +594,7 @@ items:
         href: refresh-csv-file-onedrive.md
       - name: Päivitystilanteiden vianmääritys
         href: refresh-troubleshooting-refresh-scenarios.md
-    - name: Koontinäytöt
+    - name: koontinäytöt
       items:
       - name: Power BI -koontinäyttö
         href: service-dashboards.md
@@ -622,6 +614,8 @@ items:
         href: service-dashboard-pin-tile-from-q-and-a.md
       - name: Koko raporttisivun kiinnittäminen koontinäyttöön
         href: service-dashboard-pin-live-tile-from-report.md
+      - name: Power BI -palvelun tietoilmoitukset
+        href: service-set-data-alerts.md
       - name: Koontinäyttöjen käyttötiedot
         href: service-usage-metrics.md
       - name: Kuvan, tekstiruudun, videon tai koodin lisääminen koontinäyttöön
@@ -630,8 +624,6 @@ items:
         href: service-dashboard-edit-tile.md
       - name: Vinkkejä laadukkaiden koontinäyttöjen suunnitteluun
         href: service-dashboards-design-tips.md
-      - name: Tietojen optimointi nopeille merkityksellisille tiedoille
-        href: service-insights-optimize.md
       - name: Koontinäytön puhelinnäkymän luominen
         href: service-create-dashboard-mobile-phone-view.md
       - name: Ruudun QR-koodin luominen
@@ -644,54 +636,48 @@ items:
         href: service-dashboard-themes.md
     - name: Raportit
       items:
-      - name: Uuden raportin luominen olemassa olevasta raportista
-        href: power-bi-report-copy.md
-      - name: Sivun lisääminen raporttiin
-        href: power-bi-report-add-page.md
+      - name: Raportin luominen tietojoukosta
+        href: service-report-create-new.md
       - name: Suodattimen lisääminen raporttiin
         href: power-bi-report-add-filter.md
       - name: Raportin tallentaminen Power BI:ssä
         href: service-report-save.md
-      - name: Uuden raportin luominen tietojoukosta
-        href: service-report-create-new.md
       - name: Raportin käsittely muokkausnäkymässä
         href: service-interact-with-a-report-in-editing-view.md
       - name: Analysoi Excelissä
         href: service-analyze-in-excel.md
       - name: Vinkkejä raporttien luomiseen
         href: power-bi-reports-tips-and-tricks-for-creating.md
-      - name: Analytiikkaruutu
-        href: service-analytics-pane.md
       - name: Raporttien käyttötiedot
         href: service-usage-metrics.md
       - name: Raportin QR-koodin luominen
         href: service-create-qr-code-for-report.md
-      - name: Raportin sivujen järjestäminen uudelleen
-        href: service-report-reorder-pages.md
-      - name: Raporttisivun monistaminen
-        href: power-bi-report-copy-paste-page.md
-      - name: Raportin vieminen palvelusta Power BI Desktopiin (esikatselu)
+      - name: Raportin vieminen Power BI Desktopiin (esikatselu)
         href: service-export-to-pbix.md
       - name: Raportin suodattaminen URL-osoitteen parametrien avulla
         href: service-url-filters.md
       - name: Parhaat käytännöt nopeiden ja luotettavien raporttien luomiseen
         href: power-bi-reports-performance.md
-      - name: ArcGIS-karttojen käsittely
-        href: visuals/power-bi-visualizations-arcgis.md
     - name: Kysymysten kysyminen tiedoistasi
       items:
+      - name: Power BI Q&A:n käytön aloittaminen
+        href: power-bi-visualization-introduction-to-q-and-a.md
       - name: Visualisointien ja raporttien luominen Q&A-toiminnolla
         href: power-bi-tutorial-q-and-a.md
       - name: Tietojen muokkaaminen toimimaan hyvin Q&A-toiminnon kanssa
         href: service-prepare-data-for-q-and-a.md
-      - name: Power BI:n Cortanan käyttöönotto
-        href: service-cortana-enable.md
       - name: Q&A-toiminnon suositeltujen kysymysten luominen
         href: service-q-and-a-create-featured-questions.md
-      - name: Visualisointityypit Power BI:ssä
+      - name: Q&A:n visualisointityypit
         href: visuals/power-bi-visualization-types-for-reports-and-q-and-a.md
       - name: Q&A:n käyttäminen reaaliaikaisten yhteyksien kautta
         href: service-q-and-a-direct-query.md
+      - name: Power BI:n Cortanan käyttöönotto
+        href: service-cortana-enable.md
+      - name: Nopeat merkitykselliset tiedot Power BI:ssä
+        href: service-insights.md
+      - name: Tietojen optimointi nopeille merkityksellisille tiedoille
+        href: service-insights-optimize.md
     - name: Töiden jakaminen
       items:
       - name: Miten tehdään yhteistyötä ja jaetaan?
@@ -718,28 +704,6 @@ items:
         href: service-manage-app-workspace-in-power-bi-and-office-365.md
       - name: OneDriveen tallennettuun Excel-työkirjaan linkittävän koontinäytön jakaminen
         href: service-share-dashboard-that-links-to-excel-onedrive.md
-    - name: Sisältöpaketit
-      items:
-      - name: Organisaation sisältöpakettien hallinta, päivitys ja poistaminen
-        href: service-organizational-content-pack-manage-update-delete.md
-      - name: 'Organisaation sisältöpaketit: kopioiminen, päivittäminen ja käyttöoikeuksien hankkiminen'
-        href: service-organizational-content-pack-copy-refresh-access.md
-      - name: 'Organisaation sisältöpaketit: johdanto'
-        href: service-organizational-content-pack-introduction.md
-      - name: Organisaation sisältöpaketin luominen ja julkaiseminen
-        href: service-organizational-content-pack-create-and-publish.md
-      - name: Organisaation sisältöpaketin yhteyden poistaminen
-        href: service-organizational-content-pack-disconnect.md
-      - name: Sertifiointi
-        items:
-        - name: Sisältöpakettisertifiointiohjelma
-          href: service-content-pack-overview.md
-        - name: Mallisisältöpaketin luominen
-          href: template-content-pack-authoring.md
-        - name: Mallisisältöpaketin testaaminen
-          href: template-content-pack-testing.md
-        - name: Mallisisältöpaketin kokemukset
-          href: template-content-pack-experience.md
     - name: Julkaise
       items:
       - name: Power BI Publisher for Excel
@@ -792,6 +756,60 @@ items:
         href: service-dataflows-developer-resources.md
       - name: Yhdistäminen tietovoihin Power BI Desktopissa
         href: desktop-connect-dataflows.md
+    - name: Sivutetut raportit Power BI:ssä
+      items:
+      - name: Mitä sivutetut raportit ovat? (esikatselu)
+        href: paginated-reports-report-builder-power-bi.md
+      - name: Sivutettujen raporttien usein kysytyt kysymykset (esikatselu)
+        href: paginated-reports-faq.md
+      - name: Sivutetun raportin luominen ja lataaminen (esikatselu)
+        href: paginated-reports-quickstart-aw.md
+      - name: Siirtyminen raportin suunnittelunäkymässä (esikatselu)
+        href: paginated-reports-report-design-view.md
+      - name: Tietojen lisääminen suoraan sivutettuun raporttiin (esikatselu)
+        href: paginated-reports-enter-data.md
+      - name: Upotetun tietolähteen luominen (esikatselu)
+        href: paginated-reports-embedded-data-source.md
+      - name: Upotetun tietojoukon luominen (esikatselu)
+        href: paginated-reports-create-embedded-dataset.md
+      - name: Parametrien luominen (esikatselu)
+        href: paginated-reports-parameters.md
+      - name: Sivutetun raportin julkaiseminen (esikatselu)
+        href: paginated-reports-save-to-power-bi-service.md
+      - name: Sivutetun raportin tarkastelu (esikatselu)
+        href: paginated-reports-view-power-bi-service.md
+      - name: Parametrien käsittely (esikatselu)
+        href: paginated-reports-view-parameters.md
+    - name: Muut tehtävät
+      items:
+      - name: Sisällön uudelleennimeäminen Power BI:llä
+        href: service-rename.md
+      - name: Rekisteröi Yhdysvaltain julkishallinnon organisaatio
+        href: service-govus-signup.md
+      - name: Poista melkein mitä tahansa Power BI:ssä
+        href: service-delete.md
+      - name: sisältöpaketit
+        items:
+        - name: Organisaation sisältöpakettien hallinta, päivitys ja poistaminen
+          href: service-organizational-content-pack-manage-update-delete.md
+        - name: 'Organisaation sisältöpaketit: kopioiminen, päivittäminen ja käyttöoikeuksien hankkiminen'
+          href: service-organizational-content-pack-copy-refresh-access.md
+        - name: 'Organisaation sisältöpaketit: johdanto'
+          href: service-organizational-content-pack-introduction.md
+        - name: Organisaation sisältöpaketin luominen ja julkaiseminen
+          href: service-organizational-content-pack-create-and-publish.md
+        - name: Organisaation sisältöpaketin yhteyden poistaminen
+          href: service-organizational-content-pack-disconnect.md
+        - name: Sertifiointi
+          items:
+          - name: Sisältöpakettisertifiointiohjelma
+            href: service-content-pack-overview.md
+          - name: Mallisisältöpaketin luominen
+            href: template-content-pack-authoring.md
+          - name: Mallisisältöpaketin testaaminen
+            href: template-content-pack-testing.md
+          - name: Mallisisältöpaketin kokemukset
+            href: template-content-pack-experience.md
   - name: Resurssit
     items:
     - name: Videot
@@ -802,38 +820,6 @@ items:
       href: supported-languages-countries-regions.md
     - name: Raportit
       href: whitepapers.md
-- name: Sivutetut raportit Power BI:ssä
-  items:
-  - name: Yleiskatsaus
-    items:
-    - name: Mitä sivutetut raportit ovat? (esikatselu)
-      href: paginated-reports-report-builder-power-bi.md
-  - name: Opetusohjelmat
-    items:
-    - name: Luo sivutettu raportti ja lataa se
-      href: paginated-reports-quickstart-aw.md
-  - name: Käsitteet
-    items:
-    - name: Siirry raportin suunnittelunäkymässä
-      href: paginated-reports-report-design-view.md
-    - name: Sivutettujen raporttien usein kysytyt kysymykset
-      href: paginated-reports-faq.md
-  - name: Ohjeet
-    items:
-    - name: Anna tiedot suoraan sivutettuun raporttiin
-      href: paginated-reports-enter-data.md
-    - name: Upotetun tietolähteen luominen
-      href: paginated-reports-embedded-data-source.md
-    - name: Upotetun tietojoukon luominen
-      href: paginated-reports-create-embedded-dataset.md
-    - name: Parametrien luominen
-      href: paginated-reports-parameters.md
-    - name: Sivutetun raportin julkaiseminen
-      href: paginated-reports-save-to-power-bi-service.md
-    - name: Tarkastele sivutettua raporttia
-      href: paginated-reports-view-power-bi-service.md
-    - name: Parametrien käsittely
-      href: paginated-reports-view-parameters.md
 - name: Power BI kehittäjille
   items:
   - name: Mitä kehittäjät voivat tehdä Power BI:llä?
@@ -1265,9 +1251,9 @@ items:
       href: service-admin-governance.md
     - name: Power BI:n suojaus
       href: service-admin-power-bi-security.md
-ms.openlocfilehash: d6dd88caff9e0f2cdef7f7697c81161fe32c0b35
-ms.sourcegitcommit: 35d763dfc75c229204d36fd8b35c1e860786b707
+ms.openlocfilehash: 83446170e1ee29cdf2e2d2f1298a37c58e255f1b
+ms.sourcegitcommit: b03912343a5a214c6bb972aaa6aa051c2a5f4332
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52331846"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52900378"

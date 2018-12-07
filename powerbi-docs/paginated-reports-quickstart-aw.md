@@ -1,5 +1,5 @@
 ---
-title: 'Opetusohjelma: Sivutetun raportin luominen ja lataaminen Power BI -palveluun | Microsoft Docs'
+title: 'Opetusohjelma: sivutetun raportin luominen ja lataaminen Power BI -palveluun (esikatselu)'
 description: Tässä opetusohjelmassa muodostat yhteyden Azure SQL -mallitietokantaan. Sen jälkeen luot sivutetun raportin Raportin muodostimen ohjatun toiminnon avulla. Sen jälkeen lataat sivutetun raportin Power BI -palvelussa olevaan Premium-kapasiteetin työtilaan.
 author: maggiesMSFT
 manager: kfile
@@ -9,14 +9,14 @@ ms.component: report-builder
 ms.topic: tutorial
 ms.date: 11/06/2018
 ms.author: maggies
-ms.openlocfilehash: b057fd14083cdabff96d9821d1399da07b93556b
-ms.sourcegitcommit: fdb54145f9bc93b312409c15c603749f3a4a876e
+ms.openlocfilehash: fbeb617207c13459fe88487547609323391487e2
+ms.sourcegitcommit: b03912343a5a214c6bb972aaa6aa051c2a5f4332
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "52452820"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52900608"
 ---
-# <a name="tutorial-create-a-paginated-report-and-upload-it-to-the-power-bi-service"></a>Opetusohjelma: Sivutetun raportin luominen ja lataaminen Power BI -palveluun
+# <a name="tutorial-create-a-paginated-report-and-upload-it-to-the-power-bi-service-preview"></a>Opetusohjelma: sivutetun raportin luominen ja lataaminen Power BI -palveluun (esikatselu)
 
 Tässä opetusohjelmassa muodostat yhteyden Azure SQL -mallitietokantaan. Sen jälkeen luot Raportin muodostimen ohjatun toiminnon avulla sivutetun raportin, joka sisältää useille sivuille rivitetyn taulukon. Sen jälkeen lataat sivutetun raportin Power BI -palvelussa olevaan Premium-kapasiteetin työtilaan. Power BI -palvelun sivutetut raportit ovat esikatseluvaiheessa.
 

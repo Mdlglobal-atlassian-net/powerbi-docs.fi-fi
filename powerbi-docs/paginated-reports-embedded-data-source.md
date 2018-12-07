@@ -1,5 +1,5 @@
 ---
-title: Sivutettujen raporttien upotetut tietolähteet Power BI -palvelussa | Microsoft Docs
+title: Sivutettujen raporttien upotetut tietolähteet Power BI -palvelussa (esikatselu)
 description: Tässä artikkelissa opit luomaan upotetun tietolähteen sivutettuun raporttiin Power BI -palvelussa ja muokkaamaan sitä.
 author: maggiesMSFT
 manager: kfile
@@ -9,17 +9,17 @@ ms.component: report-builder
 ms.topic: conceptual
 ms.date: 11/05/2018
 ms.author: maggies
-ms.openlocfilehash: f3e305f70bb21011bbb395d453721ef65011844c
-ms.sourcegitcommit: b23fdcc0ceff5acd2e4d52b15b310068236cf8c7
+ms.openlocfilehash: 3c1340d9cae7e7002e8bbbdc3d6888e19b1ce7ff
+ms.sourcegitcommit: b03912343a5a214c6bb972aaa6aa051c2a5f4332
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51267380"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52900194"
 ---
-# <a name="create-an-embedded-data-source-for-paginated-reports-in-the-power-bi-service"></a>Upotetun tietolähteen luominen sivutettuun raporttiin Power BI -palvelussa
+# <a name="create-an-embedded-data-source-for-paginated-reports-in-the-power-bi-service-preview"></a>Upotetun tietolähteen luominen sivutettuun raporttiin Power BI -palvelussa (esikatselu)
 Tässä artikkelissa opit luomaan upotetun tietolähteen sivutettuun raporttiin Power BI -palvelussa ja muokkaamaan sitä. Määrität upotetun tietolähteen yhdessä raportissa, ja käytät sitä vain kyseisessä raportissa. Power BI -palveluun tällä hetkellä julkaistavat sivutetut raportit edellyttävät upotettuja tietojoukkoja ja upotettuja tietolähteitä, ja ne voidaan yhdistää seuraaviin tietolähteisiin:
 
-- Azure SQL -tietokanta ja -tietovarasto
+- Azuren SQL-tietokanta ja tietovarasto
 - SQL Server
 - SQL Server Analysis Services 
 

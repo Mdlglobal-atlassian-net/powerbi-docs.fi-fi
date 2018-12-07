@@ -1,5 +1,5 @@
 ---
-title: Sivutetun raportin katsominen Power BI -palvelussa | Microsoft Docs
+title: Sivutetun raportin tarkasteleminen Power BI -palvelussa (esikatselu)
 description: Tässä opetusohjelmassa opit tarkastelemaan sivutettuja raportteja Power BI -palvelussa.
 author: maggiesMSFT
 manager: kfile
@@ -9,14 +9,14 @@ ms.component: report-builder
 ms.topic: conceptual
 ms.date: 11/05/2018
 ms.author: maggies
-ms.openlocfilehash: db067a2e81aa62febc952ce50ce4a3e82ef38b76
-ms.sourcegitcommit: b23fdcc0ceff5acd2e4d52b15b310068236cf8c7
+ms.openlocfilehash: 874fe08622dfcbd65463a016e87d1687b6938276
+ms.sourcegitcommit: b03912343a5a214c6bb972aaa6aa051c2a5f4332
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51267200"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52900309"
 ---
-# <a name="view-a-paginated-report-in-the-power-bi-service"></a>Sivutetun raportin tarkasteleminen Power BI -palvelussa
+# <a name="view-a-paginated-report-in-the-power-bi-service-preview"></a>Sivutetun raportin tarkasteleminen Power BI -palvelussa (esikatselu)
 
 Tässä artikkelissa opit tarkastelemaan sivutettuja raportteja Power BI -palvelussa. Sivutetut raportit ovat raportteja, jotka on luotu Raportin muodostimessa ja ladattu Premium-kapasiteetissa olevaan työtilaan. Etsi vinoneliökuvaketta ![Power BI Premium -kapasiteetin vinoneliökuvaketta](media/paginated-reports-save-to-power-bi-service/premium-diamond.png) työtilan nimen vieressä. 
 
