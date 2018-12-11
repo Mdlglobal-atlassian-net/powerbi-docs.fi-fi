@@ -4,18 +4,19 @@ description: OData-syötteeseen yhdistäminen ja sen käyttäminen helposti Powe
 author: davidiseminger
 manager: kfile
 ms.reviewer: ''
+ms.custom: seodec18
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/28/2018
+ms.date: 12/06/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 6cffff89a8c0086cbd7c7e229b4e678052fe6c70
-ms.sourcegitcommit: 2ae660a7b70fce23eb58b159d049eca44a664f2c
+ms.openlocfilehash: a0aa658aedb3599d7962e08289b306bf0f24028e
+ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "52669477"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53025208"
 ---
 # <a name="connect-to-odata-feeds-in-power-bi-desktop"></a>OData-syötteisiin yhdistäminen Power BI Desktopissa
 Power BI Desktopissa voi muodostaa yhteyden **OData-syötteeseen** ja käyttää sen tietoja samaan tapaan kuin muita tietolähteitä käytetään Power BI Desktopissa.
@@ -46,7 +47,7 @@ Siinä kaikki.
 
 Olet nyt valmis käyttämään OData-syötteestä tuotuja tietoja Power BI Desktopissa visualisointien tai raporttien luomiseen tai vuorovaikutukseen muiden tietojen kanssa, joihin ehkä haluat olla yhteydessä ja joita tuot, kuten Excel-työkirjat, tietokannat tai muut tietolähteet.
 
-### <a name="next-steps"></a>Seuraavat vaiheet
+## <a name="next-steps"></a>Seuraavat vaiheet
 Power BI Desktopin avulla voit muodostaa yhteyden hyvin monenlaisiin tietoihin. Lisätietoja näistä tietolähteistä saat seuraavista resursseista:
 
 * [Mikä on Power BI Desktop?](desktop-what-is-desktop.md)

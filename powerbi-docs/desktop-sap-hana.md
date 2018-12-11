@@ -4,18 +4,19 @@ description: SAP HANA -käyttö Power BI Desktopissa
 author: davidiseminger
 manager: kfile
 ms.reviewer: ''
+ms.custom: seodec18
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/28/2018
+ms.date: 12/06/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: ba49fc09fb7b5a3885dbbcdf61086026e822ae03
-ms.sourcegitcommit: 2ae660a7b70fce23eb58b159d049eca44a664f2c
+ms.openlocfilehash: 7f4ff77522f083c103210dce4cdc3a7cd2325ec5
+ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "52669608"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53025144"
 ---
 # <a name="use-sap-hana-in-power-bi-desktop"></a>SAP HANA -käyttö Power BI Desktopissa
 Voit nyt käyttää **SAP HANA** -tietokantoja Power BI Desktopilla. Jotta voit käyttää **SAP HANA** -tietokantoja, täytyy SAP HANA ODBC -ohjain olla asennettuna paikallisessa asiakastietokoneessa, jotta Power BI Desktopin **SAP HANA** -tietoyhteys toimii oikein. Voit ladata SAP HANA ODBC -ohjaimen [SAP-ohjelmiston latauskeskuksesta](https://support.sap.com/swdc). Etsi sieltä Windows-koneille tarkoitettu SAP HANA CLIENT -asiakasohjelmisto. Koska **SAP-ohjelmiston latauskeskus** muuttaa rakennettaan usein, emme voi antaa tarkempia ohjeita kyseisellä sivulla navigoimiseen.
@@ -30,7 +31,7 @@ Kun yhteys SAP HANA -tietokantaan muodostetaan, määritä palvelimen nimi ja po
 
 Tässä julkaisussa **SAP HANA** -tietokannan [DirectQuery](desktop-directquery-sap-hana.md)-tila on tuettu Power BI Desktopissa ja Power BI -palvelussa, ja voit julkaista ja ladata raportteja, joissa käytetään **SAP HANA** -tietokannan DirectQuery -tilaa, Power BI -palveluun. Voit myös julkaista ja ladata raportteja Power BI -palveluun, kun **SAP HANA** -tietokanta ei ole DirectQuery-tilassa.
 
-### <a name="supported-features-for-sap-hana"></a>SAP HANA -tietokannan tuetut ominaisuudet
+## <a name="supported-features-for-sap-hana"></a>SAP HANA -tietokannan tuetut ominaisuudet
 Tässä julkaisussa hyödynnetään monia **SAP HANA** -tietokannan ominaisuuksia, kuten näkyy seuraavassa luettelossa:
 
 * **SAP HANA** -tietokannan Power BI -liitäntä käyttää SAP ODBC -ohjainta antamaan parhaan mahdollisen käyttäjäkokemuksen.
@@ -40,8 +41,7 @@ Tässä julkaisussa hyödynnetään monia **SAP HANA** -tietokannan ominaisuuksi
 * Sisältää HANA-mallien optimoidun selaamisen.
 * Power BI tukee **SAP HANA** -muuttujia ja syöttöparametreja.
 
-### <a name="installing-the-sap-hana-odbc-driver"></a>SAP HANA ODBC -ohjaimen asentaminen
-### <a name="limitations-of-sap-hana"></a>SAP HANA -tietokantojen rajoitukset
+## <a name="limitations-of-sap-hana"></a>SAP HANA -tietokantojen rajoitukset
 **SAP HANA** -tietokantojen käyttöön liittyy joitakin rajoituksia:
 
 * NVARCHAR-merkkijonot lyhennetään enimmäispituuteen, joka on 4000 Unicode-merkkiä.

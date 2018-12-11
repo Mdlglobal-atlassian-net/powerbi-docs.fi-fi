@@ -4,18 +4,19 @@ description: Verkkosivuun yhdistäminen ja tietojen käyttäminen helposti Power
 author: davidiseminger
 manager: kfile
 ms.reviewer: ''
+ms.custom: seodec18
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/28/2018
+ms.date: 12/06/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 2aef47ab1716464c0896b624069a6ebbeb4adc54
-ms.sourcegitcommit: 05303d3e0454f5627eccaa25721b2e0bad2cc781
+ms.openlocfilehash: a0d7eeccede8f6402256eb8655657ca12dde075b
+ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "52578378"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53026565"
 ---
 # <a name="connect-to-a-web-page-from-power-bi-desktop"></a>Verkkosivuun yhdistäminen Power BI Desktopista
 Voit muodostaa yhteyden verkkosivuun ja tuoda sen tiedot Power BI Desktopiin visualisoinneissa ja tietomalleissa käyttöä varten.
@@ -44,7 +45,7 @@ Sen jälkeen voit vetää kentät raporttipohjaan ja luoda haluamasi visualisoin
 
 Jos haluat nähdä tarkempia tietoja yhteyden muodostamisesta verkkosivuun ja toiminnoista, tutustu [Power BI Desktopin aloitusoppaaseen](desktop-getting-started.md).
 
-### <a name="next-steps"></a>Seuraavat vaiheet
+## <a name="next-steps"></a>Seuraavat vaiheet
 Power BI Desktopin avulla voit muodostaa yhteyden hyvin monenlaisiin tietoihin. Lisätietoja näistä tietolähteistä saat seuraavista resursseista:
 
 * [Power BI Desktopin tietolähteet](desktop-data-sources.md)

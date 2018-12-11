@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 11/06/2018
+ms.date: 12/06/2018
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 31cf660a969e1779625c205c6834ceaca92325d1
-ms.sourcegitcommit: b23fdcc0ceff5acd2e4d52b15b310068236cf8c7
+ms.openlocfilehash: 82cc459bcfd33d2aa576529899b7f893b0854c37
+ms.sourcegitcommit: f25464d5cae46691130eb7b02c33f42404011357
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51267239"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53180296"
 ---
 # <a name="using-dataflows-with-on-premises-data-sources-preview"></a>Tietovoiden käyttö paikallisiin tietolähteisiin (esikatselu)
 
@@ -83,10 +83,10 @@ Tässä artikkelissa on lisätietoja paikallisen tietolähteen käyttämisestä 
 * [Laskettujen entiteettien käyttäminen Power BI Premiumissa (esikatselu)](service-dataflows-computed-entities-premium.md)
 * [Kehittäjien resurssit Power BI -tietovoille (esikatselu)](service-dataflows-developer-resources.md)
 
-Saat lisätietoja Power Querysta ja ajoitetusta päivityksestä lukemalla seuraavat artikkelit:
+Lisätietoja Power Querysta ja ajoitetusta päivityksestä on seuraavissa artikkeleissa:
 * [Kyselyn yleiskatsaus Power BI Desktopissa](desktop-query-overview.md)
 * [Ajoitetun päivityksen määrittäminen](refresh-scheduled-refresh.md)
 
-Saat lisätietoja Common Data Modelista lukemalla sen yleiskatsausta käsittelevän artikkelin:
+Lisätietoja Common Data Modelista on sen yleiskatsauksen sisältävässä artikkelissa:
 * [Common Data Model – yleiskatsaus](https://docs.microsoft.com/powerapps/common-data-model/overview)
 

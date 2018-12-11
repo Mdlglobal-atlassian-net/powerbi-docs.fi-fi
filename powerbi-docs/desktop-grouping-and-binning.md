@@ -4,25 +4,26 @@ description: Opi elementtien ryhmittely ja lokeroiminen Power BI Desktopissa
 author: davidiseminger
 manager: kfile
 ms.reviewer: ''
+ms.custom: seodec18
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/28/2018
+ms.date: 12/06/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 6363cbe3afdce351acc728fe29af8662702b8254
-ms.sourcegitcommit: 2ae660a7b70fce23eb58b159d049eca44a664f2c
+ms.openlocfilehash: 64ec167a295255a6813244ef6cb222b4eccb50f3
+ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "52670689"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53025230"
 ---
 # <a name="use-grouping-and-binning-in-power-bi-desktop"></a>Ryhmittely ja lokeroiminen Power BI Desktopissa
 Kun **Power BI Desktop** luo visualisointeja, se kokoaa tiedot lohkoiksi (tai ryhmiksi), jotka perustuvat pohjalla olevien tietojen sisältämiin arvoihin. Useimmiten esitys on kunnossa, mutta joskus saatat haluta tarkentaa miten kyseiset lohkot esitetään. Saatat esimerkiksi haluta sijoittaa kolme tuoteluokkaa yhteen suurempaan luokkaan (yksi *ryhmä*). Tai haluat ehkä nähdä myyntiluvut yhdessä lokerossa lukuna 1 000 000 euroa tasaisesti jaetun 923 983 euron sijaan.
 
 Power BI Desktopissa voit **ryhmitellä** arvopisteet, mikä auttaa sinua tarkastelemaan, analysoimaan ja tutkimaan visualisointien tietoja ja trendejä. Voit myös määrittää **lokeron koon**, mitä kutsutaan usein *lokeroimiseksi*, jos haluat sijoittaa arvot yhtä suuriin ryhmiin, joiden avulla voit paremmin visualisoida tietoja merkitsevällä tavalla.
 
-### <a name="using-grouping"></a>Ryhmittelyn käyttö
+## <a name="using-grouping"></a>Ryhmittelyn käyttö
 Jos haluat käyttää ryhmittelyä, valitse vähintään kaksi visualisoinnin elementtiä käyttämällä näppäinyhdistelmää CTRL + NAPSAUTUS elementtien monivalintaan. Napsauta seuraavaksi hiiren kakkospainikkeella monivalintaelementtejä ja valitse **Ryhmä** esiin tulevasta valikosta.
 
 ![](media/desktop-grouping-and-binning/grouping-binning_1.png)
@@ -45,10 +46,8 @@ Voit lisätä puretun arvon aiemmin luotuun ryhmään: valitse purettu arvo ja v
 
 > [!NOTE]
 > Voit luoda ryhmiä mille tahansa kentälle kohdassa **Kentät** ilman monivalintaa olemassa olevasta visualisoinnista. Napsauta kenttää hiiren kakkospainikkeella ja valitse **Uusi ryhmä** esiin tulevasta valikosta.
-> 
-> 
 
-### <a name="using-binning"></a>Lokeroinnin käyttäminen
+## <a name="using-binning"></a>Lokeroinnin käyttäminen
 Voit määrittää numeeristen ja aika-kenttien lokeron koon **Power BI Desktopissa.** Voit käyttää lokeroimisen **Power BI Desktopissa** näkyvien tietojen oikeaan kokoon saattamiseksi.
 
 Voit käyttää lokeron kokoa napsauttamalla hiiren kakkospainikkeella **Kenttä** ja valitsemalla **Uusi ryhmä**.

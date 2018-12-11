@@ -4,18 +4,19 @@ description: Excel-työkirjan tietoihin yhdistäminen ja tietojen käyttäminen 
 author: davidiseminger
 manager: kfile
 ms.reviewer: ''
+ms.custom: seodec18
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/28/2018
+ms.date: 12/06/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 36c01851138ae8b8e74acd60b39f5b358e20e392
-ms.sourcegitcommit: 2ae660a7b70fce23eb58b159d049eca44a664f2c
+ms.openlocfilehash: cff8950526393fd2243dbe5a4a8dcc16fcc44821
+ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "52669056"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53025238"
 ---
 # <a name="connect-to-excel-in-power-bi-desktop"></a>Exceliin yhdistäminen Power BI Desktopissa
 Excel-työkirjaan yhdistäminen Power BI Desktopista on helppoa, ja tässä artikkelissa kerrotaan, miten se tehdään.
@@ -45,7 +46,7 @@ Siinä kaikki.
 
 Nyt voit käyttää Excel-työkirjasta tuotuja tietoja Power BI Desktopissa ja luoda niiden avulla visualisointeja ja raportteja. Voit myös käsitellä muita tietoja, joihin haluat ehkä yhdistää tai jotka haluat ehkä tuoda Excel-työkirjoista, tietokannoista tai muista tietolähteistä.
 
-### <a name="next-steps"></a>Seuraavat vaiheet
+## <a name="next-steps"></a>Seuraavat vaiheet
 Power BI Desktopin avulla voit muodostaa yhteyden hyvin monenlaisiin tietoihin. Lisätietoja näistä tietolähteistä saat seuraavista resursseista:
 
 * [Mikä on Power BI Desktop?](desktop-what-is-desktop.md)

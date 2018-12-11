@@ -4,18 +4,19 @@ description: Käytä ruudukkoa, Kohdista ruudukkoon, Z-järjestys, tasaus ja jak
 author: davidiseminger
 manager: kfile
 ms.reviewer: ''
+ms.custom: seodec18
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/28/2018
+ms.date: 12/06/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: a798cbb5012933bb01264aa3db9fa9e06b1f334a
-ms.sourcegitcommit: 2ae660a7b70fce23eb58b159d049eca44a664f2c
+ms.openlocfilehash: 37416ab15a638ccd8c8e7b1066ffc01f1ba6c944
+ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "52669309"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53025868"
 ---
 # <a name="use-gridlines-and-snap-to-grid-in-power-bi-desktop-reports"></a>Ruudukon ja Kohdista ruudukkoon -toiminnon käyttö Power BI Desktop -raporteissa
 **Power BI Desktop** -raportin pohja sisältää ruudukoita, joiden avulla voit siististi tasata raporttisivun visualisoinnit. Sen avulla voit käyttää Kohdista ruudukkoon -toimintoa, jolloin raporttisi visualisoinnit näyttävät siisteiltä, ovat tasattuja ja tasaisin välein.
@@ -24,24 +25,22 @@ ms.locfileid: "52669309"
 
 ![](media/desktop-gridlines-snap-to-grid/snap-to-grid_0.png)
 
-### <a name="enabling-gridlines-and-snap-to-grid"></a>Ruudukoiden ja ruudukkoon kohdistamisen käyttöönotto
+## <a name="enabling-gridlines-and-snap-to-grid"></a>Ruudukoiden ja ruudukkoon kohdistamisen käyttöönotto
 Ota ruudukot käyttöön- ja Kohdista ruudukkoon -toiminnoissa valitaan **Näkymä**-valintanauha ja sitten valintaruudut toiminnoille **Näytä ruudukko** ja **Kohdista ruudukkoon.** Voit valita toisen tai molemmat vaihtoehdot, sillä ne toimivat itsenäisesti.
 
 ![](media/desktop-gridlines-snap-to-grid/snap-to-grid_1.png)
 
 > [!NOTE]
 > Jos **Näytä ruudukko** ja **Kohdista ruudukkoon** on poistettu käytöstä, muodosta yhteys mihin tahansa tietolähteeseen, jolloin ne tulevat käyttöön.
-> 
-> 
 
-### <a name="using-gridlines"></a>Ruudukon viivojen käyttö
+## <a name="using-gridlines"></a>Ruudukon viivojen käyttö
 Ruudukon viivat ovat näkyviä ohjeviivoja, joiden avulla voit tasata visualisoinnit. Kun yrität määrittää, onko (vähintään) kaksi visualisointia tasattu vaakasuunnassa tai pystysuunnassa, käytä ruudukkoa määrittämään, onko reunat tasattu.
 
 Voit valita komennolla Ctrl + napsautus useamman kuin yhden visualisoinnin kerrallaan. Tällöin näet kaikkien valittujen visualisointien reunat sekä sen, onko visualisoinnit tasattu oikein.
 
 ![](media/desktop-gridlines-snap-to-grid/snap-to-grid_2.png)
 
-#### <a name="using-gridlines-inside-visuals"></a>Ruudukon käyttö visualisointien sisällä
+### <a name="using-gridlines-inside-visuals"></a>Ruudukon käyttö visualisointien sisällä
 Power BI:ssa visualisointien sisällä on myös ruudukkoja, jotka antavat näkyvät ohjeviivat arvopisteiden ja arvojen vertailuun. Syyskuun 2017 versiosta alkaen **Power BI Desktop** mahdollistaa nyt ruudukoiden hallinnan visualisointien sisällä käyttämällä **X-akselin** tai **Y-akselin** korttia (soveltuvin osin visuaalisen tyypin perusteella), joka löytyy **Muoto**-osasta **Visualisoinnit**-ruudusta. Voit hallita ruudukon seuraavia elementtejä visualisoinnin sisällä:
 
 * Ruudukon ottaminen käyttöön ja käytöstä poistaminen
@@ -53,14 +52,14 @@ Ruudukon tiettyjen elementtien muokkaaminen voi olla erityisen hyödyllistä rap
 
 ![](media/desktop-gridlines-snap-to-grid/snap-to-grid_9.png)
 
-### <a name="using-snap-to-grid"></a>Ruudukkoon kohdistamisen käyttö
+## <a name="using-snap-to-grid"></a>Ruudukkoon kohdistamisen käyttö
 Kun otat käyttöön **Kohdista ruudukkoon**, kaikki visualisoinnit **Power BI Desktop** -pohjalla, joka siirrät (tai joiden kokoa muutat) tasataan automaattisesti lähimmälle ruudukon akselille, jolloin on paljon helpompaa varmistaa, että kaksi tai useampi visualisointi tasataan samaan vaaka- tai pystysijaintiin tai kokoon.
 
 ![](media/desktop-gridlines-snap-to-grid/snap-to-grid_3.png)
 
 Muuta ei tarvitsekaan tehdä **Ruudukon** ja **Kohdista ruudukkoon** -toiminnon käyttämiseksi, jotta voidaan varmistaa, että raporttien visualisoinnit on tasattu siististi.
 
-### <a name="using-z-order-align-and-distribute"></a>Z-järjestyksen, tasauksen ja jakelun käyttö
+## <a name="using-z-order-align-and-distribute"></a>Z-järjestyksen, tasauksen ja jakelun käyttö
 Voit hallita raportin visualisoinnin järjestystä, jota kutsutaan usein elementtien *z-järjestykseksi*. Tämän ominaisuuden avulla voit asettaa visualisoinnit päällekkäin haluamallasi tavalla ja sitten muuttaa kunkin visualisoinnin järjestystä edestä taakse. Visualisointien järjestys voidaan määrittää käyttämällä **Siirrä eteenpäin**- ja **Siirrä taaksepäin** -painikkeita, jotka ovat **Muotoile**-nauhan **Järjestä**-osassa. **Muotoile**-nauha näkyy heti, kun valitset yhden tai useamman visualisoinnin sivulla.
 
 ![](media/desktop-gridlines-snap-to-grid/snap-to-grid_4.png)

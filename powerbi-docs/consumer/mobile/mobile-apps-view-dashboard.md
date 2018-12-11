@@ -9,12 +9,12 @@ ms.component: powerbi-mobile
 ms.topic: conceptual
 ms.date: 06/28/2018
 ms.author: maggies
-ms.openlocfilehash: 1b5f62e965a5a5df97a16c20f60043db534b8f77
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 9738660ced6b8dbe32e7308b86f671f21c8c312c
+ms.sourcegitcommit: 4f46d71ff6026c1c158f007425aefdcb501f48ee
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46547587"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "52979486"
 ---
 # <a name="view-dashboards-and-reports-in-the-power-bi-mobile-apps"></a>Raporttinäkymien ja raporttien tarkastelu Power BI -mobiilisovelluksissa
 Koskee seuraavia:
@@ -31,7 +31,7 @@ Raporttinäkymät ovat portaali yrityksesi elinkaareen ja prosesseihin. Raportti
 Jotta voit tarkastella raporttinäkymiä ja raportteja mobiililaitteessasi, sinun on luotava ne tai muodostettava niihin yhteys verkkoselaimessa. 
 
 1. Siirry Power BI -palveluun ([https://www.powerbi.com](https://www.powerbi.com)) ja [rekisteröi tili](../../service-self-service-signup-for-power-bi.md).
-2. [Luo omia Power BI -raporttinäkymiä ja raportteja](../../service-get-started.md) tai muodosta yhteys olemassa oleviin [Power BI -sovelluksiin](../end-user-connect-to-services.md) eri palveluita, kuten [Microsoft Dynamics CRM:ää](../../service-connect-to-microsoft-dynamics-crm.md) ja [Adobe Analyticsia](../../service-connect-to-adobe-analytics.md) varten.
+2. [Luo omia Power BI -raporttinäkymiä ja raportteja](../../service-get-started.md) tai muodosta yhteys olemassa oleviin [Power BI -sovelluksiin](../../service-connect-to-services.md) eri palveluita, kuten [Microsoft Dynamics CRM:ää](../../service-connect-to-microsoft-dynamics-crm.md) ja [Adobe Analyticsia](../../service-connect-to-adobe-analytics.md) varten.
 
 Tässä on Power BI -raporttinäkymä Power BI -palvelussa:
 
