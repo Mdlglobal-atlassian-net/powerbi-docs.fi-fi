@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 09/27/2018
+ms.date: 12/03/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 2e6eb9817071f3cbccd442014564e21463bf06f8
-ms.sourcegitcommit: 769ef3c8cbafd9ad5979eb4023a394ac7dba8d02
+ms.openlocfilehash: ebec34690001293e93dafd69dd76f7bdbf54981c
+ms.sourcegitcommit: b03912343a5a214c6bb972aaa6aa051c2a5f4332
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/28/2018
-ms.locfileid: "47448933"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52900516"
 ---
 # <a name="visualization-types-in-power-bi"></a>Visualisointityypit Power BI:ssä
 ## <a name="power-bi-visualizations"></a>Visualisoinnit Power BI:ssä
@@ -129,7 +129,7 @@ Lisätietoja on artikkelissa [Muotokartat Power BI:ssä](desktop-shape-map.md).
 ### <a name="matrix"></a>Matrix
 ![](media/power-bi-visualization-types-for-reports-and-q-and-a/matrix.png)
 
-Lisätietoja on artikkelissa [Matriisivisualisoinnit Power BI:ssä](desktop-shape-map.md).
+Lisätietoja on artikkelissa [Matriisivisualisoinnit Power BI:ssä](desktop-matrix-visual.md).
 
 ### <a name="pie-charts"></a>Ympyräkaaviot
 ![](media/power-bi-visualization-types-for-reports-and-q-and-a/pbi_nancy_viz_pie.png)

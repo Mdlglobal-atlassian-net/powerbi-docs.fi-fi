@@ -11,12 +11,12 @@ ms.topic: tutorial
 ms.date: 05/17/2018
 ms.author: maggies
 LocalizationGroup: Connect to services
-ms.openlocfilehash: b9fff17d51756da4561823886ed80beeec830843
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 88be0aa477b5e4b2df4f53c42dfb6fde3dda0184
+ms.sourcegitcommit: b03912343a5a214c6bb972aaa6aa051c2a5f4332
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46548099"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52900493"
 ---
 # <a name="tutorial-connect-to-a-github-sample-with-power-bi"></a>Opetusohjelma: Yhteyden muodostaminen GitHub-otokseen Power BI:llä
 Tässä opetusohjelmassa yhdistät Power BI:n GitHub-palvelun oikeisiin tietoihin, jolloin Power BI luo automaattisesti koontinäyttöjä ja raportteja. Muodostat yhteyden Power BI:n sisällön julkiseen säilöön (eli *säilöön*) ja näet seuraavia tietoja: kuinka moni henkilö osallistuu Power BI:n julkiseen sisältöön? Kuka osallistuu eniten? Minä viikonpäivänä on eniten osallistumisia? Lisäksi näet vastauksia muihin kysymyksiin. 
@@ -125,6 +125,6 @@ Nyt kun olet suorittanut opetusohjelman, voit poistaa GitHub-sovelluksen.
 Tässä opetusohjelmassa olet muodostanut yhteyden GitHubin julkiseen säilöön ja saanut tiedot, jotka Power BI on muotoillut koontinäytöksi ja raportiksi. Olet vastannut joihinkin tietoja koskeviin kysymyksiin tutkimalla koontinäyttöä ja raporttia. Nyt voi lukea lisää yhteyden muodostamisesta muihin palveluihin, kuten Salesforceen, Microsoft Dynamicsiin ja Google Analyticsiin. 
  
 > [!div class="nextstepaction"]
-> [Käyttämiisi verkkopalveluihin yhdistäminen](consumer/end-user-connect-to-services.md)
+> [Käyttämiisi verkkopalveluihin yhdistäminen](service-connect-to-services.md)
 
 

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: f2e3ad8528108e63a5573a3df502f90fee6d4c55
-ms.sourcegitcommit: 2ae660a7b70fce23eb58b159d049eca44a664f2c
+ms.openlocfilehash: a27e192c5ccc1fb3a7af9bafbc9c4fd14ccabf4c
+ms.sourcegitcommit: b03912343a5a214c6bb972aaa6aa051c2a5f4332
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "52670160"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52900102"
 ---
 # <a name="power-bi-for-us-government-customers"></a>Power BI Yhdysvaltain valtionhallinnon asiakkaille
 **Power BI-palvelulla** on versio, joka on saatavilla Yhdysvaltain valtionhallinnon asiakkaille osana **Office 365 US Government Community** -tilauksia. Tässä artikkelissa kuvattu **Power BI -palvelun** versio on suunniteltu erityisesti Yhdysvaltain valtionhallinnon asiakkaille ja on erillinen ja erilainen kuin **Power BI -palvelun** kaupallinen versio.
@@ -37,7 +37,7 @@ Seuraavat ominaisuudet ovat saatavilla **Power BI US Government** -asiakkaille, 
 * [Tuo tietoja](service-get-data.md) ja raportteja Excel-, CSV- ja Power BI Desktop -tiedostoista
 * Tiedonhallinnan yhdyskäytävä
 * Kaikki tiedot salataan sekä Azure SQL:ssä että Power BI:n Blob-säilössä
-* Muodosta yhteys palveluihin [sisältöpaketeilla](consumer/end-user-connect-to-services.md)
+* Muodosta yhteys palveluihin [sisältöpaketeilla](service-connect-to-services.md)
 
 ## <a name="connectivity-between-government-and-public-azure-cloud-services"></a>Valtionhallinnon ja julkisten Azure Cloud -palveluiden välinen yhteys 
 

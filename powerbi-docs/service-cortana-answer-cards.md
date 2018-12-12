@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/02/2018
 ms.author: maggies
 LocalizationGroup: Create reports
-ms.openlocfilehash: 327ba72c46aa5a6a2edea723bd5450cd5bbbcdb4
-ms.sourcegitcommit: fb1885da7cf11367660edbf7b7346dc039ee9b5d
+ms.openlocfilehash: 3a0ef369aa690044dbef9c4ef0cda070565b9922
+ms.sourcegitcommit: e17fc3816d6ae403414cf5357afbf6a492822ab8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47187325"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52829891"
 ---
 # <a name="use-power-bi-service-or-power-bi-desktop-to-create-a-custom-answer-page-for-cortana"></a>Käytä Power BI -palvelua tai Power BI Desktopia luodaksesi mukautettuja vastaussivuja Cortanaa varten
 Hyödynnä Power BI:n kaikkia ominaisuuksia ja luo erityisiä raporttisivuja, joita kutsutaan *Cortana-vastaussivuiksi* (sekä joskus nimellä *Cortana-vastauskortit*), ja jotka on suunniteltu vastaamaan erityisesti Cortana-kysymyksiin.
@@ -41,7 +41,7 @@ Neljä asiakirjaa opastavat Cortanan määrittämisessä ja käyttämisessä Pow
 ## <a name="create-a-cortana-answer-page-designed-specifically-for-cortana"></a>Cortanalle erityisesti suunnitellun Cortana-vastaussivun luominen
 Raportissa esiintyvän *Cortana-vastaussivun* koko on suunniteltu niin, että Cortana voi näyttää sen näytöllä vastauksena kysymykseen. Cortana-vastaussivun luominen:
 
-1. Suosittelemme aloittamaan [tyhjällä raporttisivulla](power-bi-report-add-page.md).
+1. Suosittelemme aloittamaan tyhjällä raporttisivulla.
 2. Valitse **Visualisoinnit**-ruudussa maalirullakuvake ja valitse**Sivun koko** > **Tyyppi** > **Cortana**.
    
     ![](media/service-cortana-answer-cards/pbi-cortana-page-size-new.png)

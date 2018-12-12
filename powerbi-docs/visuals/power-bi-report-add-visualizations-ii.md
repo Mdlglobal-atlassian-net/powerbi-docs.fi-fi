@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/23/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: a15975f456bab94fd04fa7501760c9874fabf952
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: 01051ab47304713fe3cf0f9128f5cd99af58bffe
+ms.sourcegitcommit: e17fc3816d6ae403414cf5357afbf6a492822ab8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44732649"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52830213"
 ---
 # <a name="part-2-add-visualizations-to-a-power-bi-report"></a>Visualisointien lisääminen Power BI -raporttiin, osa 2
 [Osassa 1](power-bi-report-add-visualizations-ii.md) opettelit luomaan tavallisia visualisointeja valitsemalla kenttien nimien vieressä olevia valintaruutuja.  Osassa 2 opetetaan luomaan visualisointeja ja muokkaamaan niitä vetämis- ja pudottamistoiminnon avulla sekä hyödyntämällä **Kentät**- ja **Visualisoinnit**-paneeleja.
@@ -32,7 +32,7 @@ Tässä opetusohjelmassa perehdymme jälleenmyyntianalyysimallin tietojoukkoon j
 1. Avaa jälleenmyyntianalyysin .PBIX-mallitiedosto Power BI Desktop -versiossa. 
    ![](media/power-bi-report-add-visualizations-ii/power-bi-open-desktop.png)   
 
-2.  [Lisää uusi sivu](../power-bi-report-add-page.md) valitsemalla alareunasta keltainen plus-kuvake.
+2. Lisää uusi sivu valitsemalla alareunasta keltainen plus-kuvake.
 
 ### <a name="add-a-visualization-that-looks-at-this-years-sales-compared-to-last-year"></a>Lisää visualisointi, jossa esitetään tämän vuoden myynti viime vuoteen verrattuna.
 1. Valitse **Myynti**-taulukosta **Myynti tänä vuonna** > **Arvo** ja **Myynti edellisvuonna**. Power BI luo pylväskaavion.  Se näyttää kiinnostavalta, joten haluat perehtyä myyntiin tarkemmin. Miltä myynti näyttää kuukausittain?  

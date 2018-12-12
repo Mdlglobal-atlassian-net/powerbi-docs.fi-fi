@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 2a23a725ecad5641c3f82fa4c57ee1a0bc951e28
-ms.sourcegitcommit: 2ae660a7b70fce23eb58b159d049eca44a664f2c
+ms.openlocfilehash: e0721efaaca879ffb2915315af9aea4dbafca3ca
+ms.sourcegitcommit: b03912343a5a214c6bb972aaa6aa051c2a5f4332
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "52670342"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52900240"
 ---
 # <a name="data-sources-for-the-power-bi-service"></a>Power BI -palvelun tietolähteet
 Tiedot ovat Power BI:n ydin. Aina, kun olet tutkimassa tietoja, luomassa kaavioita ja koontinäyttöjä tai tutustumassa kysymyksiin ja vastauksiin, kaikkien näkemiesi visualisointien ja vastausten pohjana olevat tiedot ovat peräisin tietojoukosta. Mutta mistä tietojoukko on peräisin? No, tietolähteestä.
@@ -44,7 +44,7 @@ Myös tiedostojen tallennuspaikalla on merkitystä. OneDrive for Business tarjoa
 
 Sisältöpaketit sisältävät kaikki tarvitsemasi tiedot ja raportit esivalmisteltuina. Power BI:ssä on kahdentyyppisiä sisältöpaketteja: Google Analyticsin, Marketon tai Salesforcen kaltaisten palveluiden muodostamia paketteja sekä muiden organisaatiosi käyttäjien luomia ja jakamia paketteja.
 
-**Palvelut** � Power BI:n sisältöpaketit sisältävät kymmeniä palveluita, ja lisää lisätään koko ajan. Useimmat palvelut edellyttävät tiliä. Lisätietoja on artikkelissa [Palveluihin yhdistäminen](consumer/end-user-connect-to-services.md).
+**Palvelut** � Power BI:n sisältöpaketit sisältävät kymmeniä palveluita, ja lisää lisätään koko ajan. Useimmat palvelut edellyttävät tiliä. Lisätietoja on artikkelissa [Palveluihin yhdistäminen](service-connect-to-services.md).
 
 **Organisaatio** � Jos sinulla ja muilla organisaatiosi käyttäjillä on Power BI Pro -tili, voitte luoda, jakaa ja käyttää sisältöpaketteja. Lisätietoja on artikkelissa [Organisaation sisältöpaketit](service-organizational-content-pack-introduction.md).
 

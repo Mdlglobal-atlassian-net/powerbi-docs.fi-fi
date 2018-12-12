@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 06/22/2018
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: 554e9f3bbea5a1da6ac43f21f72b054a26849f23
-ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
+ms.openlocfilehash: 6de9427a11ae5aa43563ce9e21371d231a1dd3a9
+ms.sourcegitcommit: b03912343a5a214c6bb972aaa6aa051c2a5f4332
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "48908741"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52900525"
 ---
 # <a name="tutorial-get-started-with-power-bi-service-apppowerbicom"></a>Opetusohjelma: Power BI -palvelun (app.powerbi.com) käytön aloittaminen
 Tämä opasohjelma auttaa ***Power BI -palvelun*** aloittamisessa. Suosittelemme lukemaan [Mikä Power BI on](power-bi-overview.md) -ohjeartikkelin, jotta saat käsityksen, miten Power BI -palvelu sopii yhteen muiden Power BI -tuotteiden kanssa.
@@ -158,5 +158,5 @@ Nyt kun olet suorittanut opetusohjelman, voit poistaa tietojoukon, raportin ja k
 Oletko valmis kokeilemaan lisää?  Alla on joitakin käteviä tapoja tutkia Power BI:tä.
 
 > [!div class="nextstepaction"]
-> [Käyttämiisi verkkopalveluihin yhdistäminen](consumer/end-user-connect-to-services.md)
+> [Käyttämiisi verkkopalveluihin yhdistäminen](service-connect-to-services.md)
 

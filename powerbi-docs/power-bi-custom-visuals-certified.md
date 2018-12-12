@@ -10,12 +10,12 @@ ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: conceptual
 ms.date: 11/21/2018
-ms.openlocfilehash: fd352cd78225e647acf53c2af899e4d2fc662376
-ms.sourcegitcommit: 458e091a0a0bfb71ea3980d44df6408f48bab586
+ms.openlocfilehash: 7830aa829dc05e29ec0b8dc23d7f35b58991b007
+ms.sourcegitcommit: e17fc3816d6ae403414cf5357afbf6a492822ab8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/22/2018
-ms.locfileid: "52289262"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52830144"
 ---
 # <a name="certified-custom-visuals"></a>Sertifioidut mukautetut visualisoinnit
 
@@ -138,6 +138,7 @@ Jos haluat lähettää mukautetun visualisoinnin sertifiointia varten, toimi seu
 | [MAQ Softwaren rengaskaavio](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380824) | [Video](https://youtu.be/pDToHDFHnq8) |
 | [MAQ Softwaren vaihtuva kaavio](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104381007) | [Video](https://youtu.be/d5xBCMmb3hU) |
 | [Sankey](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380777) | [Video](https://youtu.be/WWP9wVUHGaA) |
+| [Akvelonin pistekaavio](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104381703) | |
 | [Vierivä kuvaaja](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104381018) | |
 | [OKVizin älykäs suodatin](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380859) | [Video](https://youtu.be/gcJsDDRQq28) |
 | [OKVizin sparkline-kuvaaja](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380910) | [Video](https://youtu.be/0m3Vnvso9tY) |

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 09/24/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: ab292964bb1b6b1f4218d41c46eb2c28c82a034c
-ms.sourcegitcommit: ce8332a71d4d205a1f005b703da4a390d79c98b6
+ms.openlocfilehash: 5720e52b61332aeca82d0b23b776f590634e622f
+ms.sourcegitcommit: e17fc3816d6ae403414cf5357afbf6a492822ab8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "47416747"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52829615"
 ---
 # <a name="doughnut-charts-in-power-bi"></a>Rengaskaaviot Power BI:ssä
 Rengaskaavio muistuttaa ympyräkaaviota siten, että se näyttää osien suhteen kokonaisuuteen. Ainoa ero on se, että keskellä on tyhjää tilaa otsikkoa tai kuvaketta varten.
@@ -23,7 +23,7 @@ Rengaskaavio muistuttaa ympyräkaaviota siten, että se näyttää osien suhteen
 ## <a name="create-a-doughnut-chart"></a>Rengaskaavion luominen
 Näissä ohjeissa käytetään esimerkkiä jälleenmyyjän analyysista. Sen avulla voit luoda rengaskaavion tämän vuoden myynnistä luokittain. Jos haluat seurata ohjeita itse, [lataa malli](../sample-datasets.md) joko Power BI ‑palveluun tai Power BI Desktopiin.
 
-1. Aloita [tyhjältä raporttisivulta](../power-bi-report-add-page.md). Jos käytät Power BI ‑palvelua, varmista, että avaat raportin [muokkausnäkymässä](../service-interact-with-a-report-in-editing-view.md).
+1. Aloita tyhjältä raporttisivulta. Jos käytät Power BI ‑palvelua, varmista, että avaat raportin [muokkausnäkymässä](../service-interact-with-a-report-in-editing-view.md).
 
 2. Valitse Kentät-ruudussa **Myynti** \> **Viime vuoden myynti**.  
    

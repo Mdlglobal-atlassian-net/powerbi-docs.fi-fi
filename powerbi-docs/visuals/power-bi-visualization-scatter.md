@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 10/24/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 7739dda4647a82b3c9d4b58976db89038428625a
-ms.sourcegitcommit: 42475ac398358d2725f98228247b78aedb8cbc4f
+ms.openlocfilehash: 9b508964062146ff140bcb85b0b8b42e9bf4f68f
+ms.sourcegitcommit: e17fc3816d6ae403414cf5357afbf6a492822ab8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50003175"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52830121"
 ---
 # <a name="scatter-charts-bubble-charts-and-dot-plot-charts-in-power-bi"></a>Pistekaaviot ja kuplakaaviot Power BI:ssä
 Pistekaaviossa on aina kaksi arvoakselia, jotka näyttävät yhden numeerisen tietosarjan vaakasuuntaisella akselilla ja toisen numeerisen arvosarjan pystysuuntaisella akselilla. Kaaviossa näytetään arvopisteet numeerisen arvon X ja Y leikkauskohdassa yhdistämällä nämä kaksi arvoa yhdeksi arvopisteeksi. Nämä arvopisteet voidaan jakaa tasaisesti tai epätasaisesti vaakasuuntaiselle akselille tietojen mukaan.
@@ -57,7 +57,7 @@ Katso tästä videosta, miten Will luo pistekaavion, ja noudata sitten seuraavia
 
 Näissä ohjeissa käytetään jälleenmyyntianalyysimallia. Jos haluat seurata ohjeita itse, [lataa malli](../sample-datasets.md) joko Power BI ‑palveluun (app.powerbi.com) tai Power BI Desktopiin.   
 
-1. Avaa raportti muokkausnäkymässä ja valitse keltainen plus-kuvake luodaksesi [tyhjän raporttisivun](../power-bi-report-add-page.md).
+1. Avaa raportti muokkausnäkymässä ja valitse keltainen plus-kuvake luodaksesi tyhjän raporttisivun.
  
 2. Valitse Kentät-ruudusta seuraavat kentät:
    - **Myynti** > **Myynti/neliöjalka**

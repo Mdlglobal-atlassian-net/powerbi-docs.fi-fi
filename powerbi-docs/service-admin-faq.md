@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/16/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 4379caf909360688e602601795066f51c9660633
-ms.sourcegitcommit: 46f1ba3f972f6e64bce05ad0fd527b27c49aedd6
+ms.openlocfilehash: fe81c8e972a4fe36f88da495e4e0dce97a39d32c
+ms.sourcegitcommit: e17fc3816d6ae403414cf5357afbf6a492822ab8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52157076"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52830305"
 ---
 # <a name="administering-power-bi---frequently-asked-questions-faq"></a>Power BI:n hallinnointi - usein kysytyt kysymykset (UKK)
 
@@ -174,11 +174,15 @@ Jotta voit käyttää Power BI -hallintaportaalia, tililläsi täytyy olla **yle
 
 ### <a name="what-is-the-process-to-manage-a-tenant-created-by-microsoft-for-my-users"></a>Millä tavalla voin hallinnoida vuokraajaa, jonka Microsoft on luonut käyttäjiäni varten?
 
-Jos Microsoft on luonut vuokraajan, voit vaatia vuokraajaa käyttöösi ja hallinnoida sitä toimimalla seuraavien vaiheiden mukaisesti:
+Kun omatoiminen käyttäjä rekisteröityy Azure AD:tä käyttävään pilvipalveluun, hänet lisätään hallitsemattomaan Azure AD -hakemistoon sähköpostin toimialueen perusteella. Voit vaatia luodun vuokraajan käyttöösi ja hallita sitä suorittamalla *järjestelmänvalvojan haltuunottoprosessin*. Suoritettavan haltuunoton tyyppi määräytyy sen mukaan, liittyykö toimialueeseen aiemmin luotu hallittu vuokraaja:
 
-1. Liity vuokraajaan rekisteröitymällä Power BI:hin sillä sähköpostiosoitteen toimialueella, joka vastaa hallinnoitavan vuokraajan toimialuetta. Jos Microsoft on esimerkiksi luonut contoso.com-vuokraajan, sinun on liityttävä vuokraajaan sähköpostiosoitteella, jonka lopussa on @contoso.com.
+* *Sisäisen haltuunoton* avulla voit luoda toimialueelle uuden hallitun vuokraajan.
 
-1. Ota järjestelmänvalvojan oikeutesi käyttöön vahvistamalla toimialueen omistajuus: kun olet kirjautunut sisään vuokraajaan, voit antaa itsellesi *yleisen järjestelmänvalvojan* oikeudet vahvistamalla toimialueen omistajuuden. Tee se noudattamalla [Office 365 -ohjeita](/office365/admin/misc/become-the-admin).
+* *Ulkoisen haltuunoton* avulla voit siirtää toimialueen aiemmin luotuun hallittuun vuokraajaan.
+
+Jos haluat lisätietoja, katso [Ota haltuun hallitsematon hakemisto järjestelmänvalvojana Azure Active Directoryssa](/azure/active-directory/users-groups-roles/domains-admin-takeover).
+
+Kun suoritat ulkoisen haltuunoton, ennen haltuunottoa luotu Power BI -sisältö sijoitetaan [Power BI:n arkistoituun työtilaan](service-admin-power-bi-archived-workspace.md). Jos haluat käyttää sisältöä uudessa vuokraajassa, se täytyy siirtää käsin.
 
 ### <a name="if-i-have-multiple-domains-can-i-control-the-office-365-tenant-that-users-are-added-to"></a>Jos minulla on useita toimialueita, voinko hallinnoida Office 365 -vuokraajaa, johon käyttäjät on lisätty?
 

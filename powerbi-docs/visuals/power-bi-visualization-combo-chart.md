@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 09/27/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 1855b65277fe778a20bd9e4629f8db1e7b9000a3
-ms.sourcegitcommit: 769ef3c8cbafd9ad5979eb4023a394ac7dba8d02
+ms.openlocfilehash: 5d2a33b8dc50a4a30bb79406462f1342953528d9
+ms.sourcegitcommit: e17fc3816d6ae403414cf5357afbf6a492822ab8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/28/2018
-ms.locfileid: "47448956"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52830374"
 ---
 # <a name="combo-chart-in-power-bi"></a>Yhdistelmäkaavio Power BI:ssä
 Power BI:ssä yhdistelmäkaavio on yksittäinen visualisointi, joka yhdistää viivakaavion ja pylväskaavion. Näiden kahden kaavion yhdistäminen nopeuttaa tietojen vertailua.
@@ -45,7 +45,7 @@ Seuraavassa videossa luodaan yhdistelmäkaavio käyttämällä myynti- ja markki
 
 1. Avaa raportti valitsemalla koontinäytössä **Myymälöitä yhteensä** -ruutu.
 2. Avaa raportti muokkausnäkymässä valitsemalla **Muokkaa raporttia**.
-3. [Lisää uusi raporttisivu](../power-bi-report-add-page.md).
+3. Lisää uusi raporttisivu.
 4. Luo pylväskaavio, joka näyttää tämän vuoden myynnin ja myyntikatteen kuukauden mukaan.
 
     a.  Valitse Kentät-ruudussa **Myynti** \> **Tämän vuoden myynti** > **Arvo**.

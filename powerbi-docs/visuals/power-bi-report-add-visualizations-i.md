@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 08/23/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: df53cf238a52502cecb4d1f77482b7b1a09c6b7a
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: f2edbd7b0b977b378d25634a0f9505101350d73b
+ms.sourcegitcommit: e17fc3816d6ae403414cf5357afbf6a492822ab8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46545264"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52829799"
 ---
 # <a name="part-i-add-visualizations-to-a-power-bi-report"></a>Visualisointien lisääminen Power BI -raporttiin, osa 1
 Tässä artikkelissa annetaan lyhyt esittely visualisointien lisäämisestä raporttiin joko Power BI -palvelulla tai Power BI Desktopilla.  Katso lisätietoja edistyneemmästä sisällöstä [osasta II](power-bi-report-add-visualizations-ii.md). Katso kuinka Amanda esittelee joitakin eri tapoja, joilla raportille voidaan luoda visualisointeja ja kuinka niitä voidaan muokata ja muotoilla. Voit sitten kokeilla itse luomalla oman raportin [Myynti- ja markkinointimallista](../sample-datasets.md).
@@ -29,7 +29,7 @@ Tässä artikkelissa annetaan lyhyt esittely visualisointien lisäämisestä rap
 2. Jos Kentät-ruutu ei ole näkyvissä, valitse nuolikuvake sen avaamiseksi. 
    
    ![](media/power-bi-report-add-visualizations-i/pbi_nancy_fieldsfiltersarrow.png)
-3. [Lisää raporttiin tyhjä sivu](../power-bi-report-add-page.md).
+3. Lisää raporttiin tyhjä sivu.
 
 ## <a name="add-visualizations-to-the-report"></a>Visualisointien lisääminen raporttiin
 1. Luo visualisointi vetämällä kenttä **Kentät**-ruudussa.  

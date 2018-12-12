@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/16/2018
 ms.author: maggies
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 6f595a2d6423b1e79e927ee2d229363632022d58
-ms.sourcegitcommit: a3ce866caba24217bcdd011e892b9ea72f3d2400
+ms.openlocfilehash: 9ca771d200f5bd4b50dfbddbd8eb67931be375c1
+ms.sourcegitcommit: e17fc3816d6ae403414cf5357afbf6a492822ab8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49396999"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52830006"
 ---
 # <a name="tutorial-how-to-use-qa-to-create-visualizations-and-build-reports"></a>Opetusohjelma: Visualisointien ja raporttien luominen Q&A-toiminnon avulla
 [Q&A-yleiskatsauksessa](consumer/end-user-q-and-a.md) opit Power BI:n Q&A-toiminnon perusteet sekä *kuluttajien* (joille jaetaan koontinäyttöjä ja raportteja) ja *luojien* (pohjana olevien raporttien ja tietojoukkojen omistajat) erot. Tässä opetusohjelmassa ensimmäinen osa on tarkoitettu ensisijaisesti kuluttajille, jotka käyttävät Power BI -palvelua. Toinen osa on tarkoitettu henkilöille, jotka luovat raportteja joko Power BI -palvelussa tai Power BI Desktopissa. Muita tähän liittyviä artikkeleita ovat [Q&A ja Power BI:n mobiilisovellus](consumer/mobile/mobile-apps-ios-qna.md) sekä [Q&A ja Power BI Embedded](developer/qanda.md).
@@ -74,7 +74,7 @@ Q&A:n käyttö raporteissa edellyttää raportin ja pohjana olevan tietojoukon m
     **Palvelu**    
     ![](media/power-bi-tutorial-q-and-a/power-bi-service.png)
 
-2. Q&A-kysymysruutu tulee näkyviin raporttipohjalla. Alla olevassa esimerkissä kysymysruutu näkyy toisen visualisoinnin päällä. Tämä ei haittaa käyttöä, mutta voit haluta [lisätä tyhjän sivun raporttiin](power-bi-report-add-page.md) ennen kysymyksen esittämistä.
+2. Q&A-kysymysruutu tulee näkyviin raporttipohjalla. Alla olevassa esimerkissä kysymysruutu näkyy toisen visualisoinnin päällä. Tämä ei haittaa käyttöä, mutta voit haluta lisätä tyhjän sivun raporttiin ennen kysymyksen esittämistä.
 
     ![](media/power-bi-tutorial-q-and-a/power-bi-ask-question.png)
 

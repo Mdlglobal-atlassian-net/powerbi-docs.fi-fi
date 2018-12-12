@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 10/16/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: af39332bdc1c9e1529d56f55215b0b32ab86f3e7
-ms.sourcegitcommit: a3ce866caba24217bcdd011e892b9ea72f3d2400
+ms.openlocfilehash: f6cb53eadb3c5ddf14b8f8b3b3882e0d7b509a3f
+ms.sourcegitcommit: e17fc3816d6ae403414cf5357afbf6a492822ab8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49396806"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52830098"
 ---
 # <a name="export-data-from-visualizations"></a>Tietojen vieminen visualisoinneista
 Jos haluat tarkastella tietoja, joita käytetään visualisoinnin luonnissa, voit näyttää kyseiset tiedot Power BI:ssä tai viedä tiedot Exceliin .xlsx- tai .csv-tiedostona. Tietojen vienti edellyttää Pro- tai Premium-käyttöoikeutta ja tietojoukon ja raportin muokkausoikeuksia. 
@@ -38,7 +38,7 @@ Katso videolta, miten tiedot viedään raportin visualisoinnista, tallennetaan .
     ![](media/power-bi-visualization-export-data/pbi-export-to-excel.png)
 
 ## <a name="from-a-visualization-in-a-report"></a>Raportin visualisoinnista
-Seuraa mukana avaamalla [Hankinta-analyysimallin raportti](../sample-procurement.md) [muokkausnäkymässä](../consumer/end-user-reading-view.md). [Lisää uusi tyhjä raporttisivu](../power-bi-report-add-page.md). Lisää sitten kooste ja visualisoinnin tason suodatin noudattamalla alla olevia ohjeita.
+Seuraa mukana avaamalla [Hankinta-analyysimallin raportti](../sample-procurement.md) [muokkausnäkymässä](../consumer/end-user-reading-view.md). Lisää uusi tyhjä raporttisivu. Lisää sitten kooste ja visualisoinnin tason suodatin noudattamalla alla olevia ohjeita.
 
 1. Luo uusi pylväskaavio.  Valitse Kentät-ruudussa **Sijainti > Kaupunki** ja **Lasku > Alennusprosentti**.  Voit joutua siirtämään **alennusprosentin** Arvo-kohtaan. 
 
