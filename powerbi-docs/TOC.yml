@@ -32,21 +32,21 @@ items:
       href: sample-datasets.md
     - name: Mallisisältöpakettien käyttäminen
       href: sample-tutorial-connect-to-the-samples.md
-    - name: 'Asiakkaan tuottavuuden malli: esittely'
+    - name: 'Asiakkaan tuottavuuden malli: aloita esittely'
       href: sample-customer-profitability.md
-    - name: 'IT-kulutusanalyysimalli: esittely'
+    - name: 'IT-kulutusanalyysimalli: aloita esittely'
       href: sample-it-spend.md
-    - name: 'Henkilöstöhallintomalli: esittely'
+    - name: 'Henkilöstöhallintomalli: aloita esittely'
       href: sample-human-resources.md
-    - name: 'Mahdollisuusanalyysimalli: esittely'
+    - name: 'Mahdollisuusanalyysimalli: aloita esittely'
       href: sample-opportunity-analysis.md
-    - name: 'Hankinta-analyysimalli: esittely'
+    - name: 'Hankinta-analyysimalli: aloita esittely'
       href: sample-procurement.md
-    - name: 'Jälleenmyyntianalyysimalli: esittely'
+    - name: 'Jälleenmyyntianalyysimalli: aloita esittely'
       href: sample-retail-analysis.md
-    - name: 'Myynti- ja markkinointimalli: esittely'
+    - name: 'Myynti- ja markkinointimalli: aloita esittely'
       href: sample-sales-and-marketing.md
-    - name: 'Toimittajan laatuanalyysimalli: esittely'
+    - name: 'Toimittajan laatuanalyysimalli: aloita esittely'
       href: sample-supplier-quality.md
     - name: Talousmalli-työkirjan lataaminen
       href: sample-financial-download.md
@@ -758,6 +758,14 @@ items:
         href: service-dataflows-developer-resources.md
       - name: Yhdistäminen tietovoihin Power BI Desktopissa
         href: desktop-connect-dataflows.md
+      - name: Tietovuot ja Azure Data Lake -integrointi (esikatselu)
+        href: service-dataflows-azure-data-lake-integration.md
+      - name: Yhdistä Azure Data Lake Storage Gen2 tietovuotallennusta varten (esikatselu)
+        href: service-dataflows-connect-azure-data-lake-storage-gen2.md
+      - name: Määritä työtilan tietovuoasetukset (esikatselu)
+        href: service-dataflows-configure-workspace-storage-settings.md
+      - name: Lisää CDM-kansio Power BI:hin tietovuona (esikatselu)
+        href: service-dataflows-add-cdm-folder.md
     - name: Sivutetut raportit Power BI:ssä
       items:
       - name: Mitä sivutetut raportit ovat? (esikatselu)
@@ -794,9 +802,9 @@ items:
         items:
         - name: Organisaation sisältöpakettien hallinta, päivitys ja poistaminen
           href: service-organizational-content-pack-manage-update-delete.md
-        - name: 'Organisaation sisältöpaketit: kopioiminen, päivittäminen ja käyttöoikeuksien hankkiminen'
+        - name: 'Organisaation sisältöpaketit: kopioiminen, päivittäminen ja käyttöoikeuden hankkiminen'
           href: service-organizational-content-pack-copy-refresh-access.md
-        - name: 'Organisaation sisältöpaketit: johdanto'
+        - name: 'Organisaation sisältöpaketit: Johdanto'
           href: service-organizational-content-pack-introduction.md
         - name: Organisaation sisältöpaketin luominen ja julkaiseminen
           href: service-organizational-content-pack-create-and-publish.md
@@ -1253,9 +1261,9 @@ items:
       href: service-admin-governance.md
     - name: Power BI:n suojaus
       href: service-admin-power-bi-security.md
-ms.openlocfilehash: 066aa4a3b87375e29e14d1611e7e67ab58dfd482
-ms.sourcegitcommit: 4f46d71ff6026c1c158f007425aefdcb501f48ee
+ms.openlocfilehash: e105b33d6b37099dd6bc2c657f2293f8561a6004
+ms.sourcegitcommit: f25464d5cae46691130eb7b02c33f42404011357
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/06/2018
-ms.locfileid: "52979670"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53181009"
