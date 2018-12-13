@@ -262,19 +262,19 @@ items:
         href: desktop-inline-hierarchy-labels.md
       - name: Numeerisen alueen osittajan käyttö
         href: desktop-slicer-numeric-range.md
-      - name: Kooltaan muokattavan reagoivan osittajan luominen
+      - name: Kooltaan muokattavan osittajan luominen
         href: power-bi-slicer-filter-responsive.md
-      - name: Omien Power BI -vastauskorttien luominen Cortanasta
+      - name: Omien vastauskorttien luominen Cortanaan
         href: service-cortana-answer-cards.md
       - name: Rivitason suojaus
         href: desktop-rls.md
-      - name: Työkaluvihjeiden mukautus Power BI Desktopissa
+      - name: Työkaluvihjeiden mukauttaminen
         href: desktop-custom-tooltips.md
-      - name: Ehdollinen taulukkomuotoilu Power BI Desktopissa
+      - name: Taulukon ehdollinen muotoilu
         href: desktop-conditional-table-formatting.md
       - name: Sarakkeen perusteella lajittelu Power BI Desktopissa
         href: desktop-sort-by-column.md
-      - name: Power BI -puhelinsovelluksille optimoitujen raporttien luominen
+      - name: Mobiilisovelluksiin optimoitujen raporttien luominen
         href: desktop-create-phone-report.md
       - name: Näytä tiedot- ja Näytä tietueet -toimintojen käyttö
         href: desktop-see-data-see-records.md
@@ -284,23 +284,23 @@ items:
       items:
       - name: Visualisoinnin parhaat käytännöt
         href: visuals/power-bi-visualization-best-practices.md
-      - name: Power BI -raportin visualisointityypin vaihtaminen
+      - name: Visualisointityypin vaihtaminen raportissa
         href: visuals/power-bi-report-change-visualization-type.md
       - name: Arvopisterajat visualisointityypin mukaan
         href: visuals/power-bi-data-points.md
       - name: Värimuotoilun ja akseliominaisuuksien käytön aloittaminen
         href: visuals/service-getting-started-with-color-formatting-and-axis-properties.md
-      - name: Vinkkejä värimuotoiluun Power BI:ssä
+      - name: Vinkkejä värimuotoiluun
         href: visuals/service-tips-and-tricks-for-color-formatting.md
-      - name: Visualisoinnin kopioiminen ja liittäminen Power BI:ssä
+      - name: Visualisoinnin kopioiminen ja liittäminen
         href: visuals/power-bi-visualization-copy-paste.md
       - name: Visualisoinnin lähdetietojen vieminen
         href: visuals/power-bi-visualization-export-data.md
-      - name: Power BI -raportin visualisoinnin siirtäminen, koon muuttaminen ja ponnahduskäyttö
+      - name: Raportin visualisoinnin siirtäminen, koon muuttaminen ja ponnahduskäyttö
         href: visuals/power-bi-visualization-move-and-resize.md
       - name: Taulukoiden hyperlinkit
         href: power-bi-hyperlinks-in-tables.md
-      - name: Hyperlinkin lisääminen tekstiruutuun Power BI -raportissa
+      - name: Hyperlinkin lisääminen tekstiruutuun raportissa
         href: service-add-hyperlink-to-text-box.md
       - name: Visualisointien toimintatapojen muokkaaminen raportissa
         href: service-reports-visual-interactions.md
@@ -598,7 +598,7 @@ items:
         href: refresh-troubleshooting-refresh-scenarios.md
     - name: koontinäytöt
       items:
-      - name: Power BI -koontinäyttö
+      - name: Koontinäyttöjen esittely
         href: service-dashboards.md
       - name: Koontinäytön ruudut
         href: service-dashboard-tiles.md
@@ -692,6 +692,8 @@ items:
         href: service-create-workspaces.md
       - name: Uusien työtilojen luominen (esikatselu)
         href: service-create-the-new-workspaces.md
+      - name: Tietojen tallennuksen hallinta työtiloissa
+        href: service-admin-manage-your-data-storage-in-power-bi.md
       - name: Suodatetun raportin jakaminen
         href: service-share-reports.md
       - name: Julkaiseminen Power BI:stä verkkoon
@@ -1261,9 +1263,9 @@ items:
       href: service-admin-governance.md
     - name: Power BI:n suojaus
       href: service-admin-power-bi-security.md
-ms.openlocfilehash: e105b33d6b37099dd6bc2c657f2293f8561a6004
-ms.sourcegitcommit: f25464d5cae46691130eb7b02c33f42404011357
+ms.openlocfilehash: 0189fe52981e1bc926ae8a836791e7111e4b530e
+ms.sourcegitcommit: cd85d88fba0d9cc3c7a4dc03d2f35d2bd096759b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53181009"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53280950"
