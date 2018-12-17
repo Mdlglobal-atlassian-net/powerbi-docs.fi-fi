@@ -5,14 +5,14 @@ services: power-bi
 author: mihart
 ms.service: powerbi-service
 ms.topic: resource
-ms.date: 11/09/2018
+ms.date: 11/12/2018
 ms.author: mihart
-ms.openlocfilehash: d8238ae96bb57c580c0b74725b105ad7f4332136
-ms.sourcegitcommit: a1b7ca499f4ca7e90421511e9dfa61a33333de35
+ms.openlocfilehash: fd7974024fdbfce38b93f1598fa389ef71a47dd9
+ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51508010"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53026336"
 ---
 # <a name="glossary-for-power-bi-service"></a>Power BI -palvelun sanasto
 Power BI -palvelussa saattaa olla ennestään tuntematonta tai sekavalta vaikuttavaa terminologiaa. Sanasto on hyvä paikka termien hakuun, joten se on hyvä lisätä suosikkeihin. Toinen hyvä resurssi lisätietojen saamiseen Power BI -palvelun muodostavista rakenneosista ovat [peruskäsitteet](end-user-basic-concepts.md). Peruskäsitteet tarjoavat korkean tason yleiskatsauksen Power BI:n *osiin* ja niiden yhteyksiin.
@@ -23,7 +23,7 @@ Tämä sanasto on yhteisön luoma.  Etkö näe etsimääsi sanaa? Pyydä meitä 
 
 **tili** On olemassa erilaisia Power BI -tilejä.  Power BI Pro -tili on maksullinen kuukausittainen tilaus.  Power BI:n maksuttoman version avulla voi tarkastella sisältöä, joka sijaitsee Power BI Premium -kapasiteetissa.  
 
-**hallintaportaali** Paikka, jossa Power BI -järjestelmänvalvojat voivat hallita Power BI:n käyttäjiä, ominaisuuksia ja asetuksia organisaatiossaan. (Huomautus: Office 365, Azure ja PowerApps käyttävät hallintakeskusta.)
+**hallintaportaali** Paikka, jossa Power BI -järjestelmänvalvojat voivat hallita Power BI:n käyttäjiä, ominaisuuksia ja asetuksia organisaatiossaan. (Huomautus: (Office 365, Azure ja PowerApps käyttävät hallintakeskusta.)
 
 **koosteet** Kun useiden rivien arvot on ryhmitelty yhteen syötteenä ehdoista yhden arvon muodostamiseksi, joka on merkityksellisempi tai joka on mitta-arvo.
 
@@ -40,9 +40,9 @@ Tämä sanasto on yhteisön luoma.  Etkö näe etsimääsi sanaa? Pyydä meitä 
  
 **sovelluksen työtila** Kaikki Power BI:n työtilat omaa työtilaa lukuun ottamatta ovat nyt sovelluksen työtiloja. Sisältö voidaan koota Power BI -sovellukseen. Premium-kapasiteettiin tallennettu sisältö voidaan jakaa maksuttoman version käyttäjien kanssa. Henkilökohtaisia työtiloja (Oma työtila -kohdassa) voidaan isännöidä Premium-kapasiteetissa.  
 
-**AppSource**
+**AppSource** Keskitetty verkkosäilö, jossa voit selata ja tarkastella ladattavia koontinäyttöjä, raportteja, tietojoukkoja ja sovelluksia.
 
-**ArcGIS for Power BI** ArcGIS on ESRI-yrityksen yhdistämisen ja analytiikan ympäristö. Power BI -visualisointien kirjastoon sisältyvän visualisoinnin nimi on ArcGIS for Power BI.
+**ArcGIS for Power BI** ArcGIS on ESRI-yrityksen luoma yhdistämisen ja analysoinnin ympäristö. Power BI -visualisointien kirjastoon sisältyvän visualisoinnin nimi on ArcGIS Maps for Power BI.
 
 **määritä** [Power BI Premium] Verbi työtilan siirtämiselle varattuun kapasiteettiin tai sieltä pois. Älä käytä Ylennä-termiä työtilan siirtämiselle varattuun kapasiteettiin, koska se viittaa siihen, että varattu on jaettua kapasiteettia parempi asia.  
 
@@ -69,7 +69,7 @@ Tämä sanasto on yhteisön luoma.  Etkö näe etsimääsi sanaa? Pyydä meitä 
 
 **sisältöluettelo** Sovelluksen sisällön indeksi.
 
-**sisältöpaketti**
+**sisältöpaketti** Kokoelma esipakattuja tietojoukkoja, raportteja ja koontinäyttöjä. Nyt **sovellukset**, lue [uudesta työtilakokemuksesta](https://docs.microsoft.com/en-us/power-bi/service-create-the-new-workspaces). 
 
 **sisältönäkymä**
 
@@ -87,16 +87,16 @@ Tämä sanasto on yhteisön luoma.  Etkö näe etsimääsi sanaa? Pyydä meitä 
 
 **tietojen luokitus** Katso luokitus.
 
-**tietoyhdistin** Katso yhdistimet.
+**tietoliitin** Katso liittimet.
 
 **tietomalli, Excel-tietomalli**
 
 
-**tietojoukko** vs. **tietolähde**
+**tietojoukko** vs **tietolähde** **Tietojoukko** on tietokokoelma, jota käytetään visualisointien ja raporttien luontiin.
 
 **varattu kapasiteetti** [Power BI Premium] Tietomallit, jotka suoritetaan erillisessä laitteistossa Microsoftin pilvipalvelun järjestelmäkeskuksissa tasaisen suorituskyvyn varmistamiseksi mittakaavassa. BI-ratkaisut toimitetaan koko organisaatiolle Power BI -käyttöoikeudesta riippumatta.
 
-**Desktop** Ensimmäinen esiintymä: Power BI Desktop Myöhemmät maininnat: Desktop
+**Desktop** Ensimmäinen esiintymä: Power BI Desktopin myöhemmät maininnat: Desktop
 
 
 **vinoneliö** Power BI Premium. Kuvakkeen muoto, joka ilmaisee, että työtila on Premium-kapasiteetin työtila.
@@ -110,6 +110,8 @@ Tämä sanasto on yhteisön luoma.  Etkö näe etsimääsi sanaa? Pyydä meitä 
 **kolme pistettä** ...
 
 **upotuskoodi** Yleinen vakio Internetissä. Power BI:ssä asiakas voi luoda upotuskoodin ja kopioida sen sijoittaakseen sisältöä, kuten raportin visualisoinnin, verkkosivustoon tai blogiin.
+
+**Embedded** Katso Power BI Embedded. 
 
 **upottaminen** Power BI:n tarjonnassa kehittäjille analytiikan integroimisprosessi sovelluksiin Power BI REST -ohjelmointirajapintoja ja Power BI SDK:ta käyttämällä.
 
@@ -133,7 +135,7 @@ Power BI -ympäristö (vuokraaja) -termiä voidaan käyttää dokumentaatiossa, 
 
 ## <a name="g"></a>G
 
-**yhdyskäytävät** tai **paikalliset tietoyhdyskäytävät** Silta pohjana oleville tietolähteille. Tarjoaa nopean ja turvallisen tiedonsiirron Power BI -palvelun ja paikallisten tietolähteiden välillä, jotka tukevat päivitystä. Yleensä IT-osaston hallitsema. paikalliset tietoyhdyskäytävät
+**yhdyskäytävät** tai **paikalliset tietoyhdyskäytävät** Silta pohjana oleville tietolähteille. Tarjoaa nopean ja turvallisen tiedonsiirron Power BI -palvelun ja paikallisten tietolähteiden välillä, jotka tukevat päivitystä. Yleensä IT-osaston hallitsema. 
 
 ## <a name="h"></a>H
 **suuren tiheyden visualisoinnit** Visualisoinnit, joissa on enemmän arvopisteitä kuin Power BI pystyy hahmontamaan. Power BI näyttää muodon ja poikkeavat arvot ottamalla tiedoista näytteitä.
@@ -147,7 +149,7 @@ Power BI -ympäristö (vuokraaja) -termiä voidaan käyttää dokumentaatiossa, 
 
 ## <a name="k"></a>K
 
-**KPI** Suorituskykyilmaimet. Visualisointityyppi.
+**KPI** Suorituskykyilmaisimet. Visualisointityyppi.
 
 
 ## <a name="l"></a>L
@@ -160,7 +162,7 @@ Vasemmanpuoleinen tai vasen siirtymisruutu.
 
 ## <a name="m"></a>M
 
-**mittayksiköt** Power BI Desktopissa kirjoitetut mukautetut laskutoimitukset DAX-koodin tai pikamittareiden avulla.
+**Mobiilisovellus** Sovellukset, joiden avulla voit käyttää Power BI:tä iOS-, Android- ja Windows-laitteissa.
 
 **mallinnus** [Power BI Desktop] Niiden tietojen valmisteleminen käyttöä varten, joihin olet muodostanut yhteyden Power BI:ssä. Tämä sisältää suhteiden luomisen taulukoiden välillä useissa tietolähteissä, mittojen luomisen ja arvojen määrittämisen.
 
@@ -180,6 +182,9 @@ Vasemmanpuoleinen tai vasen siirtymisruutu.
 ## <a name="o"></a>O
 
 **OneDrive for Business** vs. **OneDrive** OneDrive on henkilökohtainen tili ja OneDrive for Business on työtilejä varten.  
+
+**Paikallinen tietoyhdyskäytävä**
+
 
 
 ## <a name="p"></a>P
@@ -202,7 +207,7 @@ Vasemmanpuoleinen tai vasen siirtymisruutu.
 
 **Power BI**, **Power BI -palvelu**, **Power BI Desktop**, **Power BI -mobiilisovellus**, Power BI -palvelutarjonnan osia. *Power BI* on yleinen termi. Sitä käytetään usein tuotteen koko nimen, kuten *Power BI -palvelu* ja *Power BI -mobiilisovellus*, sijaan, tuotteen koko nimen ensimmäisen maininnan jälkeen.
 
-**Power BI Desktop** Kutsutaan myös nimellä *Desktop*.
+**Power BI Desktop** Kutsutaan myös nimellä *Desktop*. Ilmainen Power BI:n Windows-sovellus, jonka voit asentaa paikalliseen tietokoneeseen ja jonka avulla voit muodostaa yhteyden tietoihin sekä muuntaa ja visualisoida niitä. Raportin suunnittelijat ja järjestelmänvalvojat käyttävät. Lisätietoja on artikkelissa [Mikä on Power BI?](../power-bi-overview.md).
 
 **Power BI Embedded** Kehittäjien käyttämä tuote Power BI -koontinäyttöjen ja -raporttien upottamiseen omiin sovelluksiin, sivustoihin ja työkaluihin.
 
@@ -210,8 +215,9 @@ Vasemmanpuoleinen tai vasen siirtymisruutu.
 
 **Power BI Pro -käyttöoikeus** Kuukausittainen käyttöoikeus, joka mahdollistaa koontinäyttöjen luomisen, jaettujen tietojen työstämisen, tietojen automaattisen päivittämisen, tietojen käytön valvonnan ja hallinnoimisen ja mahdollisuuden paketoida jaettavaa sisältöä (Power BI -sovellukset).
 
-**Power BI -raporttipalvelin** SSRS:n uusi tuotemerkillinen tarjooma, joka julkaistaan Power BI Premiumin kanssa ja jonka avulla organisaatiot voivat luoda hajautettuja BI- yhdistelmäjärjestelmiä (pilvipalvelujen ja paikallisen käyttöönoton yhdistelmä).
-Perustuu SQL Server Reporting Servicesiin sen monipuolisella, sivutetulla raportointitoiminnolla ja mobiiliraporteilla yhdistettynä mahdollisuuteen tarjota Power BI Desktopin avulla luotuja Power BI -raportteja ja tarjota niitä Power BI -mobiilisovelluksissa. Perinteinen SSRS on edelleen myynnissä.
+**Power BI -raporttipalvelin** SSRS:n uusi tuotemerkillinen tarjous, joka julkaistaan Power BI Premiumin kanssa ja jonka avulla organisaatiot voivat luoda hajautettuja BI- yhdistelmäjärjestelmiä (pilvipalvelujen ja paikallisen käyttöönoton yhdistelmä). Embedded tarjoaa lokalisoidun keinon tallentaa ja hallita Power BI -raportteja.
+
+**Power BI -palvelu** Verkossa oleva SaaS (Software as a service) -palvelu. Lisätietoja on artikkelissa [Mikä on Power BI?](../power-bi-overview.md).
 
 **Power BI -palvelun liitin** Tämän liittimen avulla Power BI Desktop -käyttäjät voivat muodostaa yhteyden Power BI -palvelun tietojoukkoihin Desktopista. He voivat luoda mallin kerran ja käyttää sitä uudelleen monissa raporteissa ja koontinäytöissä.
 

@@ -1,21 +1,21 @@
 ---
 title: Q&A:n käyttö Power BI Desktopissa
 description: Voit nyt käyttää luonnollisen kielen kyselyitä käyttämällä Power BI Desktopin Q&A-toimintoa
-author: davidiseminger
+author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/28/2018
-ms.author: davidi
+ms.date: 12/05/2018
+ms.author: maggies
 LocalizationGroup: Create reports
-ms.openlocfilehash: 8c0736728d1dfce5a571eb1950670bc9fc9fa1c1
-ms.sourcegitcommit: 2ae660a7b70fce23eb58b159d049eca44a664f2c
+ms.openlocfilehash: 4a9ab6173422ec2f897050b2f456847b342e9fa2
+ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "52670758"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53026726"
 ---
 # <a name="use-qa-in-power-bi-desktop-for-natural-language-queries"></a>Tee kyselyitä luonnollisella kielellä käyttämällä Power BI Desktopin Q&A-toimintoa
 Yleisien lauseiden ja luonnollisen kielen käyttäminen tiedoista esitettävissä kysymyksissä on tehokasta. Vielä tehokkaampaa on, kun tiedot vastaavat, minkä **Power BI Desktopin** Q&A-toiminto mahdollistaa.
@@ -25,9 +25,6 @@ Jotta Q&A pystyy tulkitsemaan onnistuneesti laajaa kysymysvalikoimaa, johon se p
 > [!NOTE]
 > Q&A on käytettävissä vain käsiteltäessä mallia, joka sisältää **tuotuja** tietoja. Reaaliaikaisia yhteyksiä SSAS- ja DirectQuery-malleihin ei tueta.
 >
->
-
-> [!NOTE]
 > Q&A: käyttö edellyttää seuraavan C runtime -päivityksen, jos käytät Windows 10:ä edeltävää Windows-versiota. Voit yrittää asentaa tärkeät päivitykset Windows Updatesta tai asentaa tarvittavan komponentin manuaalisesti Microsoftilta (KB2999226). https://support.microsoft.com/en-us/help/2999226/update-for-universal-c-runtime-in-windows
 >
 >
@@ -49,11 +46,11 @@ Jos taulukoiden väliset suhteet puuttuvat mallista, Power BI tai Q&A ei kumpik
 
 ## <a name="rename-tables-and-columns"></a>Nimeä taulukot ja sarakkeet uudelleen
 
-Taulukoiden ja sarakkeiden valinta on erittäin tärkeää Q&A:lle. Jos sinulla on esimerkiksi taulukko nimeltä *Asiakasyhteenveto*, joka sisältää luettelon asiakkaistasi, sinun tulisi esittää kysymyksiä, kuten “Luetteloi Chicagon asiakasluettelot” kysymyksen “Luetteloi Chicagon asiakkaat” sijaan. 
+Taulukkojen ja sarakkeiden valinta on tärkeää Q&A:ta varten. Oletetaan, että sinulla on taulukko nimeltä *CustomerSummary* (Asiakasyhteenveto), joka sisältää luettelon asiakkaistasi. Sinun on esitettävä kyselyitä, kuten ”Luettele asiakasyhteenvedot Chicagossa”, sen sijaan, että esittäisit kyselyn ”Luettele asiakkaat Chicagossa”. 
 
 Vaikka Q&A pystyy käsittelemään joitakin yksinkertaisia sananjakoja ja tunnistamaan monikot, se olettaa, että taulukoiden ja sarakkeiden nimet vastaavat täsmällisesti niiden sisältöä.
 
-Otetaan toinen esimerkkitilanne. Kuvitellaan, että sinulla on taulukko nimeltä *Henkilöstömäärä*, joka sisältää etu- ja sukunimet ja työntekijämäärät, ja toinen taulukko nimeltä *Työntekijät*, joka sisältää työntekijämäärät, työpaikkamäärät ja aloituspäivämäärät. Vaikka mallin tuntevat henkilöt saattavat ymmärtää tämän, joku muu, joka tekee kysymyksen ”Laske työntekijät”, saa tulokseksi ”Työntekijät”-taulukon riveiltä lasketun määrän. Tämä ei todennäköisesti ole se, mitä hänellä oli mielessä, sillä tämä on työpaikkojen määrä, joka kullakin työntekijällä on koskaan ollut. Siksi nämä taulukot olisi huomattavasti parempi nimetä uudelleen siten, että ne aidosti vastaisivat sisältöään.
+Otetaan toinen esimerkkitilanne. Kuvitellaan, että sinulla taulukko nimeltä *Headcount* (Henkilöstömäärä), joka sisältää etu- ja sukunimet ja työntekijämäärät. Sinulla on toinen taulukko nimeltä *Employees* (Työntekijät), joka sisältää työntekijämäärät, työpaikkamäärät ja aloituspäivämäärät. Henkilöt, joille tämä malli on tuttu, saattavat ymmärtää tämän rakenteen. Jokin toinen henkilö, joka esittää kyselyn ”Laske työntekijät”, saa rivimäärän ”Työntekijät”-taulukosta. Tämä tulos ei todennäköisesti vastaa sitä, mitä hänellä oli mielessä, koska se näyttää niiden jokaisen työn määrän, joka kullakin työntekijällä on tähän mennessä ollut. Nämä taulukot kannattaa siten nimetä uudelleen vastaamaan niiden todellista sisältöä.
 
 **Edellyttää muokkauksia**
 
@@ -65,7 +62,7 @@ Otetaan toinen esimerkkitilanne. Kuvitellaan, että sinulla on taulukko nimeltä
 
 ## <a name="fix-incorrect-data-types"></a>Korjaa virheelliset tietotyypit
 
-Tuoduilla tiedoilla voi olla virheelliset tietotyypit. Erityisesti *merkkijonoina* tuotuja *päivämäärä*- ja *numero*-sarakkeita Q&A ei tulkitse päivämäärinä ja numeroina. Varmista, että valitset oikean tietotyypin Power BI -mallissa.
+Tuoduilla tiedoilla voi olla virheelliset tietotyypit. Q&A-toiminto ei etenkään tulkitse päivämääriksi ja määriksi *päivämäärä*- ja *määrä*sarakkeita, jotka tuodaan *merkkijonoina*. Varmista, että valitset oikean tietotyypin Power BI -mallissa.
 
 ![valitse oikea tietotyyppi varmistaaksesi, että se on Q&A:n käytettävissä](media/desktop-qna-in-reports/desktop-qna_05.png)
 
@@ -77,7 +74,7 @@ Oletusarvoisesti Power BI koostaa numeerisia sarakkeita tehokkaasti, joten kysym
 
 ## <a name="choose-a-data-category-for-each-date-and-geography-column"></a>Valitse jokaiselle päivämäärä- ja paikkatietosarakkeelle tietoluokka
 
-**Tietoluokka** tarjoaa sarakkeen sisällöstä muita semanttisia tietoja tietotyypin lisäksi. Esimerkiksi kokonaislukusarake saattaa olla merkitty postinumeroksi, merkkijonosarake saattaa olla merkitty kaupungiksi, maaksi, alueeksi ja niin edelleen. Q&A käyttää näitä tietoja kahdella tärkeällä tavalla: visualisoinnin valintaan ja kielen eroihin.
+**Tietoluokka** tarjoaa sarakkeen sisällöstä muita semanttisia tietoja tietotyypin lisäksi. Esimerkiksi kokonaislukusarake saattaa olla merkitty postinumeroksi, merkkijonosarake saattaa olla merkitty kaupungiksi, maaksi, alueeksi ja niin edelleen. Q&A-toiminto käyttää näitä tietoja kahdella tärkeällä tavalla: visualisoinnin valintaan ja kielen eroihin.
 
 Ensin Q&A käyttää apuna **tietoluokan** tietoja tehdäkseen valintoja käytettävän visualisointinäytön suhteen. Se esimerkiksi tunnistaa, että päivämäärä- tai aika**tietoluokan** sisältävät sarakkeet ovat tavallisesti hyvä valinta viivakaavion vaaka-akselille tai kuplakaavion PlayAxis-akselille. Lisäksi se olettaa, että maantieteellisiä **tietoluokkia** sisältävät sarakkeet saattavat näyttää hyvältä kartalla.
 
@@ -90,19 +87,19 @@ Toiseksi Q&A tekee joitakin tietoon perustuvia arvauksia siitä, miten käyttäj
 
 **Lajittele sarakkeen mukaan** -ominaisuus mahdollistaa yhden sarakkeen lajittelun sijaan automaattisesti lajittelun eri sarakkeen mukaan. Kun esimerkiksi teet pyynnön ”Lajittele asiakkaat paidan koon mukaan”, haluat luultavasti lajitella Paidan koko -sarakkeen pohjana olevan kokonumeron (XS, S, M, L, XL) mukaan etkä aakkosjärjestyksen mukaan (L, M, S, XL, XS).
 
-![Valitse Q&A:n vuoksi Lajittele sarakkeen mukaan -asetus asianmukaisesti](media/desktop-qna-in-reports/desktop-qna_08.png)
+![Valitse Q&A:ta varten asianmukaisesti Lajittele sarakkeen mukaan](media/desktop-qna-in-reports/desktop-qna_08.png)
 
 ## <a name="normalize-your-model"></a>Normalisoi mallisi
 
-Älä kuitenkaan huolestu, emme kehota sinua muotoilemaan uudestaan koko mallia. Tietyt rakenteet ovat kuitenkin yksinkertaisesti niin vaikeita, että Q&A ei pysty käsittelemään niitä hyvin. Jos normalisoit mallin rakennetta yksinkertaisemmaksi, Power BI -raporttien käytettävyys lisääntyy merkittävästi samoin kuin Q&A-tulosten tarkkuus.
+Älä kuitenkaan huolestu, emme kehota sinua muotoilemaan uudestaan koko mallia. Tietyt rakenteet ovat kuitenkin niin hankalia, että Q&A ei pysty käsittelemään niitä hyvin. Jos normalisoit mallin rakennetta yksinkertaisemmaksi, Power BI -raporttien käytettävyys lisääntyy merkittävästi samoin kuin Q&A-tulosten tarkkuus.
 
-Sinun tulisi noudattaa seuraavaa yleissääntöä: jokaista yksilöllistä ”asiaa”, josta käyttäjä puhuu, tulee edustaa täsmälleen yksi malliobjekti (taulukko tai sarake). Jos siis käyttäjät puhuvat asiakkaista, pitäisi olla yksi *asiakas*-objekti. Ja jos käyttäjät puhuvat myynnistä, pitäisi olla yksi *myynti*-objekti. Kuulostaa yksinkertaiselta, eikö vain? Näin voi ollakin, riippuen tietojen muodosta, joiden kanssa olet aloittamassa. **Kyselyeditorissa** on käytettävissä monipuolisia muotoiluominaisuuksia, jos tarvitset niitä. Samalla monet suoraviivaisimmista muunnoksista voidaan tehdä yksinkertaisesti Power BI -mallin laskutoimitusten avulla.
+Noudata tätä yleistä sääntöä: jokaista yksilöllistä ”asiaa”, josta käyttäjä puhuu, tulee edustaa täsmälleen yksi malliobjekti (taulukko tai sarake). Jos siis käyttäjät puhuvat asiakkaista, pitäisi olla yksi *asiakas*-objekti. Ja jos käyttäjät puhuvat myynnistä, pitäisi olla yksi *myynti*-objekti. Kuulostaa yksinkertaiselta, eikö vain? Näin voi ollakin, riippuen tietojen muodosta, joiden kanssa olet aloittamassa. **Kyselyeditorissa** on käytettävissä monipuolisia muotoiluominaisuuksia, jos tarvitset niitä. Samalla monet suoraviivaisimmista muunnoksista voidaan tehdä yksinkertaisesti Power BI -mallin laskutoimitusten avulla.
 
 Seuraavissa osioissa esitellään muutamia yleisiä muunnoksia, joita sinun on ehkä tarpeen tehdä.
 
 ### <a name="create-new-tables-for-multi-column-entities"></a>Luo uusia taulukoita usean sarakkeen entiteeteille
 
-Jos sinulla on useita sarakkeita, jotka toimivat yhtenä erillisenä yksikkönä suuremman taulukon sisällä, nämä sarakkeet tulee erottaa omaan taulukkoonsa. Jos sinulla on esimerkiksi *Yritykset*-taulukko, jossa on sarakkeet yhteyshenkilön nimi, yhteyshenkilön ammattinimike ja yhteyshenkilön puhelinnumero, rakenteellisesti parempi olisi käyttää erillistä *Yhteystiedot*-taulukkoa, joka sisältää nimen, ammattinimikkeen ja puhelinnumeron ja linkin takaisin *Yritykset*-taulukkoon. Tämä helpottaa huomattavasti kysymysten esittämistä yhteyshenkilöistä erikseen tai kysymysten esittämistä yrityksistä, joille he toimivat yhteyshenkilöinä. Lisäksi näytön joustavuus lisääntyy.
+Jos sinulla on useita sarakkeita, jotka toimivat yhtenä erillisenä yksikkönä suuremman taulukon sisällä, nämä sarakkeet tulee erottaa omaan taulukkoonsa. Oletetaan, että sinulla on Contact Name (Yhteyshenkilön nimi)-, Contact Title (Yhteyshenkilön tehtävänimike)- ja Contact Phone (Yhteyshenkilön puhelinnumero) -sarake *Companies* (Yritykset) -taulukossa. Rakenteellisesti parempi olisi käyttää erillistä *Contacts* (Yhteystiedot) -taulukkoa, joka sisältää nimen, tehtävänimikkeen ja puhelinnumeron, ja linkkiä takaisin *Companies* (Yritykset) -taulukkoon. Tämä helpottaa kysymysten esittämistä yhteyshenkilöistä erikseen tai kysymysten esittämistä yrityksistä, joille he toimivat yhteyshenkilöinä. Lisäksi näytön joustavuus lisääntyy.
 
 **Edellyttää muokkauksia**
 
@@ -128,9 +125,9 @@ Otetaan esimerkiksi *CustomerDemographics* (Asiakkaiden demografiset tiedot) -ta
 
 ### <a name="union-to-eliminate-partitioning"></a>Poista osiointi yhdistämällä
 
-Jos olet osioinut tietosi useisiin taulukoihin tai pivotoinut arvot useisiin sarakkeisiin, monet tavalliset toiminnot muuttuvat käyttäjille vaikeiksi tai mahdottomiksi toteuttaa. Otetaan ensin esimerkiksi tyypillinen taulukon osiointi: *Sales2000-2010*-taulukko ja *Sales2011-2020*-taulukko. Jos kaikki tärkeät raportit rajatuvat tiettyyn vuosikymmeneen, voit todennäköisesti jättää sen näin Power BI -raportteja varten. Q&A:n joustavuus aiheuttaa kuitenkin sen, että käyttäjäsi odottavat vastauksia kysymyksiin, kuten ”kokonaismyynti vuodessa”. Jotta tämä toimisi, sinun tulee yhdistää tiedot yhteen Power BI -mallin taulukkoon.
+Jos olet osioinut tietosi useisiin taulukoihin tai pivotoinut arvot useisiin sarakkeisiin, monet tavalliset toiminnot muuttuvat käyttäjille vaikeiksi tai mahdottomiksi toteuttaa. Otetaan ensin esimerkiksi tyypillinen taulukon osiointi: *Sales2000-2010*-taulukko ja *Sales2011-2020*-taulukko. Jos kaikki tärkeät raportit rajatuvat tiettyyn vuosikymmeneen, voit todennäköisesti jättää sen näin Power BI -raportteja varten. Q&A:n joustavuus aiheuttaa kuitenkin sen, että käyttäjäsi odottavat vastauksia kysymyksiin, kuten ”kokonaismyynti vuodessa”. Jotta tämä kysely toimisi, sinun tulee yhdistää tiedot yhteen Power BI -mallin taulukkoon.
 
-Vastaavasti esimerkiksi voidaan ottaa tyypillinen pivotoitu arvosarake: *BookTour* (Kirjakiertue) -taulukko, joka sisältää Author (Kirjailija)-, Book (Kirja)-, City1 (Kaupunki1)-, City2 (Kaupunki2)- ja City3 (Kaupunki3) -sarakkeet. Kun rakenne on tällainen, edes yksinkertaisia kysymyksiä, kuten ”laske kirjat kaupunkia kohti” ei voida tulkita oikein. Jotta tämä toimisi, sinun on luotava erillinen *BookTourCities* (Kirjakiertueen kaupungit) -taulukko, joka yhdistää kaupunkiarvot yhteen sarakkeeseen.
+Vastaavasti esimerkiksi voidaan ottaa tyypillinen pivotoitu arvosarake: *BookTour* (Kirjakiertue) -taulukko, joka sisältää Author (Kirjailija)-, Book (Kirja)-, City1 (Kaupunki1)-, City2 (Kaupunki2)- ja City3 (Kaupunki3) -sarakkeet. Kun rakenne on tällainen, edes yksinkertaisia kysymyksiä, kuten ”laske kirjat kaupunkia kohti” ei voida tulkita oikein. Jotta tämä kysely toimisi, sinun on luotava erillinen *BookTourCities* (Kirjakiertueen kaupungit) -taulukko, joka yhdistää kaupunkiarvot yhteen sarakkeeseen.
 
 **Edellyttää muokkauksia**
 
@@ -152,7 +149,7 @@ Jos lähde, josta tuot tietoja, sisältää muotoiltuja sarakkeita, Power BI -r
 
 ![käytä Q&A:n vuoksi useita taulukoita](media/desktop-qna-in-reports/desktop-qna_16.png)
 
-Vastaavasti, jos sinulla on henkilöiden koko nimen sisältäviä sarakkeita, haluat lisätä **Etunimi**- ja **Sukunimi**-sarakkeet siltä varalta, että joku haluaa esittää kysymyksiä käyttämällä osittaisia nimiä. 
+Vastaavasti, jos sinulla on henkilöiden koko nimen sisältäviä sarakkeita, haluat lisätä **First Name (Etunimi)**- ja **Last Name (Sukunimi)** -sarakkeet siltä varalta, että joku haluaa esittää kysymyksiä käyttämällä osittaisia nimiä. 
 
 
 ### <a name="create-new-tables-for-multi-value-columns"></a>Luo uusia taulukoita moniarvoisille sarakkeille
@@ -169,7 +166,7 @@ Jos lähde, josta tuot tietoja, sisältää moniarvoisia sarakkeita, Power BI -
 
 ### <a name="denormalize-to-eliminate-inactive-relationships"></a>Poista passiiviset suhteet denormalisoimalla
 
-Yksi poikkeus ”normalisointi on parempi” -sääntöön on, kun taulukosta toiseen pääsee useampaa kuin yhtä polkua. Jos sinulla on esimerkiksi *Flights* (Lennot) -taulukko, jossa on sekä SourceCityID- että DestinationCityID-sarakkeet, jotka kumpikin on liitetty *Cities* (Kaupungit) -taulukkoon, yksi näistä suhteista on merkittävä passiiviseksi. Koska Q&A voi käyttää vain aktiivisia suhteita, et pystyisi esittämään kysymyksiä joko lähtöpaikasta tai kohteesta, sen mukaan, kumman valitsit. Jos sen sijaan denormalisoit kaupunkien nimet sisältävät sarakkeet *Flights* (Lennot) -taulukkoon, tällöin voit esittää kysymyksiä, kuten: ”luetteloi huomiset lennot, joiden lähtökaupunki on Seattle ja kohdekaupunki San Francisco”.
+Yksi poikkeus ”normalisointi on parempi” -sääntöön on, kun taulukosta toiseen pääsee useampaa kuin yhtä polkua. Oletetaan esimerkiksi, että sinulla on *Flights* (Lennot) -taulukko, jossa on sekä SourceCityID (Lähtökaupungin tunnus)- että DestinationCityID (Kohdekaupungin tunnus) -sarakkeet, jotka kumpikin on liitetty *Cities* (Kaupungit) -taulukkoon. Yksi näistä suhteista on merkittävä passiiviseksi. Koska Q&A voi käyttää vain aktiivisia suhteita, et pysty esittämään kysymyksiä joko lähtöpaikasta tai kohteesta, sen mukaan, kumman valitsit. Jos sen sijaan denormalisoit kaupunkien nimet sisältävät sarakkeet *Flights* (Lennot) -taulukkoon, tällöin voit esittää kyselyitä, kuten: ”Luetteloi huomiset lennot, joiden lähtökaupunki on Seattle ja kohdekaupunki San Francisco”.
 
 **Edellyttää muokkauksia**
 
@@ -183,7 +180,7 @@ Yksi poikkeus ”normalisointi on parempi” -sääntöön on, kun taulukosta to
 
 Tämä vaihe koskee erityisesti Q&A:ta (ei Power BI -raportteja yleensä). Käyttäjillä on usein useita termejä, joilla he viittaavat samaan asiaan, kuten kokonaismyynti, nettomyynti ja nettomyynti yhteensä. Power BI -mallissa nämä synonyymit voidaan lisätä mallin taulukoihin ja sarakkeisiin. 
 
-Tämä voi olla erittäin tärkeä vaihe. Silloinkin, kun taulukon ja sarakkeiden nimet ovat yksinkertaisia, Q&A:n käyttäjät esittävät kysymyksiä käyttämällä sanastoa, joka heille ensimmäisenä tulee mieleen, eivätkä valitse sarakkeiden ennalta määritetyssä luettelossa olevia termejä. Mitä enemmän merkitseviä synonyymeja voit lisätä, sitä paremman kokemuksen käyttäjät saavat raportista. Voit lisätä synonyymeja valitsemalla **Suhteet**-näkymän valintanauhasta Synonyymit-painikkeen, kuten seuraavassa kuvassa esitetään.
+Tämä vaihe voi olla tärkeä. Silloinkin, kun taulukon ja sarakkeiden nimet ovat yksinkertaisia, Q&A:n käyttäjät esittävät kysymyksiä käyttämällä sanastoa, joka heille ensimmäisenä tulee mieleen, eivätkä valitse sarakkeiden ennalta määritetyssä luettelossa olevia termejä. Mitä enemmän merkitseviä synonyymeja voit lisätä, sitä paremman kokemuksen käyttäjät saavat raportista. Voit lisätä synonyymeja valitsemalla **Suhteet**-näkymän valintanauhasta Synonyymit-painikkeen, kuten seuraavassa kuvassa esitetään.
 
 ![Lisää synonyymeja Q&A:ta varten](media/desktop-qna-in-reports/desktop-qna_21.png)
 

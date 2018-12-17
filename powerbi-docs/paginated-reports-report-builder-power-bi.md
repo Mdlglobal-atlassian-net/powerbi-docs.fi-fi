@@ -1,23 +1,23 @@
 ---
 title: Mitä ovat sivutetut raportit Power BI Premiumissa? (esikatselu)
-description: Sivutetut raportit ovat raportteja, joita voidaan tulostaa tai jakaa. Voit hallita raportin asettelua tarkasti. Ne näyttävät kaikki tiedot taulukossa, esimerkiksi vaikka taulukko käsittää useita sivuja.
+description: Sivutetut raportit, SQL Server Reporting Servicesin vakioraporttimuoto, ovat nyt käytettävissä Power BI -palvelussa. Nämä raportit voidaan tulostaa tai jakaa. Voit hallita raportin asettelua tarkasti. Ne näyttävät kaikki tiedot taulukossa, esimerkiksi vaikka taulukko käsittää useita sivuja.
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: report-builder
 ms.topic: overview
-ms.date: 11/20/2018
+ms.date: 12/05/2018
 ms.author: maggies
-ms.openlocfilehash: 7a39d7b3bdbbd592afc6481c5936efc76569ad11
-ms.sourcegitcommit: 458e091a0a0bfb71ea3980d44df6408f48bab586
+ms.openlocfilehash: d79299f469062ec74c49ff4b7e9edda26c3409a3
+ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/22/2018
-ms.locfileid: "52289216"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53026113"
 ---
 # <a name="what-are-paginated-reports-in-power-bi-premium-preview"></a>Mitä ovat sivutetut raportit Power BI Premiumissa? (esikatselu)
-Sivutetut raportit, SQL Server Reporting Servicesin vakioraporttimuoto, ovat nyt käytettävissä Power BI -palvelussa. Sivutetut raportit ovat raportteja, jotka on suunniteltu tulostettaviksi tai jaettaviksi. Niitä kutsutaan ”sivutetuiksi”, koska ne on muotoiltu sopimaan hyvin sivulle. Niissä kaikki tiedot näytetään taulukossa, vaikka taulukko olisi useita sivuja pitkä. Niitä kutsutaan joskus pikselintarkasti täydellisiksi, koska voit hallita tarkasti niiden asettelua raportin sivulla. Sivutetut raportit perustuvat SQL Server Reporting Servicesin RDL-raporttitekniikkaan. Raportin muodostin on erillinen työkalu sivutettujen raporttien luomiseen. 
+Sivutetut raportit, SQL Server Reporting Servicesin vakioraporttimuoto, ovat nyt käytettävissä Power BI -palvelussa. Nämä raportit voidaan tulostaa tai jakaa. Niitä kutsutaan ”sivutetuiksi”, koska ne on muotoiltu sopimaan hyvin sivulle. Niissä kaikki tiedot näytetään taulukossa, vaikka taulukko olisi useita sivuja pitkä. Niitä kutsutaan joskus pikselintarkasti täydellisiksi, koska voit hallita tarkasti niiden asettelua raportin sivulla. Sivutetut raportit perustuvat SQL Server Reporting Servicesin RDL-raporttitekniikkaan. Raportin muodostin on erillinen työkalu sivutettujen raporttien luomiseen. 
 
 Sivutetuissa raporteissa voi olla useita sivuja. Esimerkiksi tässä raportissa on 563 sivua. Jokainen sivu on aseteltu tarkasti yksi sivu laskua kohti -muotoon, ja ylä- ja alatunnisteet toistuvat kaikissa.
 
@@ -43,11 +43,11 @@ Lisää tietolähteitä on tulossa esikatselun aikana.
 
 ### <a name="create-paginated-reports-with-matrix-chart-and-free-form-layouts"></a>Sivutettujen raporttien luominen matriisin, kaavion ja vapaamuotoisten asettelujen avulla
 
-Luo taulukkoraportteja sarakepohjaisille tiedoille, matriisiraportteja (kuten välilehtien välisiä raportteja tai pivot-taulukkoraportteja) yhteenvedetyille tiedoille, kaavioraportteja graafisille tiedoille ja vapaamuotoisia *luetteloraportteja* kaikille muille, kuten laskuille. 
+Taulukon raportit toimivat hyvin sarakepohjaisille tiedoille. Matriisiraportit, kuten rajavälilehti tai pivot-taulukon raportit, sopivat hyvin yhteenvetotiedoille. Kaavion raportit esittävät tiedot graafisessa muodossa ja vapaamuotoiset *luettelon* raportit voivat esittää lähes mitä tahansa muuta, kuten laskuja. 
   
 Voit aloittaa jollakin raportin muodostimen ohjatuista toiminnoista. Ohjatut taulukko-, matriisi- ja kaaviotoiminnot käyvät läpi upotetun tietolähteen yhteyden ja upotetun tietojoukon luomisen. Sitten voit luoda tietojoukkokyselyn vetämällä ja pudottamalla kenttiä, valita asettelun ja tyylin ja mukauttaa raporttiasi.  
   
-Ohjatun karttatoiminnon avulla voit luoda raportteja, jotka näyttävät koostetietoja maantieteellisellä tai geometrisellä taustalla. Karttatiedot voivat olla paikkatietoja Transact-SQL-kyselystä tai Environmental Systems Research Institute, Inc:n (ESRI) muototiedostosta. Voit myös lisätä Microsoft Bing -karttaruututaustan.  
+Ohjatun karttatoiminnon avulla voit luoda raportteja, jotka näyttävät koostetietoja maantieteellisellä tai geometrisellä taustalla. Karttatiedot voivat olla paikkatietoja Transact-SQL-kyselystä tai Environmental Systems Research Institute, Inc. (ESRI) -muototiedostosta. Voit myös lisätä Microsoft Bing -karttaruututaustan.  
 
 ### <a name="add-more-to-your-report"></a>Raportin täydentäminen
 
@@ -66,7 +66,7 @@ Voit tarkastella sivutettua raporttia Power BI -palvelussa selaimella ja myös P
 
 Tässä on joitakin muita ominaisuuksia, joita ei tueta ensimmäisessä julkaisussa:
 
-- raporttisivujen tai visualisointien kiinnittäminen Power BI -raporttinäkymiin
+- raporttisivujen tai visualisointien kiinnittäminen Power BI -raporttinäkymiin Voit edelleen kiinnittää visualisointeja Power BI -koontinäyttöön paikallisesta sivutetusta raportista Power BI -raporttipalvelimessa tai Reporting Services -raporttipalvelimessa. Katso lisätietoja artikkelista [Reporting Services -kohteiden kiinnittäminen Power BI -koontinäyttöihin](https://docs.microsoft.com/sql/reporting-services/pin-reporting-services-items-to-power-bi-dashboards).
 - vuorovaikutteiset ominaisuudet, kuten asiakirjan rakenneruudut ja painikkeiden näyttäminen/piilottaminen
 - aliraportit ja porautumisraportit
 - tilaukset
@@ -78,7 +78,7 @@ Tässä on joitakin muita ominaisuuksia, joita ei tueta ensimmäisessä julkaisu
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
 - [Raportin muodostimen asentaminen Microsoft Download Centeristä](http://go.microsoft.com/fwlink/?LinkID=734968)
-- [Opetusohjelma: Sivutetun raportin luominen](paginated-reports-quickstart-aw.md)
+- [Opetusohjelma: Luo sivutettu raportti](paginated-reports-quickstart-aw.md)
 - [Anna tiedot suoraan sivutettuun raporttiin](paginated-reports-enter-data.md)
 
   

@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 11/06/2018
+ms.date: 12/06/2018
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 8131722d0e035f28fcb88827b1a68c2da97959cb
-ms.sourcegitcommit: b23fdcc0ceff5acd2e4d52b15b310068236cf8c7
+ms.openlocfilehash: b63b8a601040751cda81e022d571d3a0ed6d501f
+ms.sourcegitcommit: f25464d5cae46691130eb7b02c33f42404011357
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51267279"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53180664"
 ---
 # <a name="using-computed-entities-on-power-bi-premium-preview"></a>Laskettujen entiteettien käyttäminen Power BI Premiumissa (esikatselu)
 
@@ -77,16 +77,21 @@ Siinä kaikki – muunnos suoritetaan Power BI Premium -tilauksen tietovuon tied
 
 On tärkeää huomioida, että jos poistat työtilan Power BI Premium -kapasiteetista, siihen liittyvää tietovuota ei enää päivitetä. 
 
+Kun käsittelet tietovoita, jotka on luotu erityisesti organisaation Azure Data Lake Storage Gen2 -tilillä, linkitetyt entiteetit ja lasketut entiteetit toimivat oikein vain, kun entiteetit sijaitsevat samalla tallennustilillä. Katso lisätietoja artikkelista [Yhdistä Azure Data Lake Storage Gen2 tietovuotallennusta varten (esikatselu)](service-dataflows-connect-azure-data-lake-storage-gen2.md).
+
+Lisäksi linkitetyt entiteetit eivät ole käytettävissä CDM-kansioista luoduille tietovoille. Katso [Lisää CDM-kansio Power BI:hin tietovuona (esikatselu)](service-dataflows-add-cdm-folder.md).
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
 Tässä artikkelissa käsiteltiin laskettuja entiteettejä ja tietovoita, jotka ovat käytettävissä Power BI -palvelussa. Seuraavassa on lisää artikkeleita, joista voi olla hyötyä.
 
-
 * [Omatoiminen tietojen valmistelu tietovoiden avulla](service-dataflows-overview.md)
 * [Tietovoiden luominen ja käyttäminen Power BI:ssä](service-dataflows-create-use.md)
 * [Tietovoiden käyttäminen paikallisten tietolähteiden kanssa (esikatselu)](service-dataflows-on-premises-gateways.md)
 * [Kehittäjien resurssit Power BI -tietovoille (esikatselu)](service-dataflows-developer-resources.md)
+* [Määritä työtilan tietovuoasetukset (esikatselu)](service-dataflows-configure-workspace-storage-settings.md)
+* [Lisää CDM-kansio Power BI:hin tietovuona (esikatselu)](service-dataflows-add-cdm-folder.md)
+* [Yhdistä Azure Data Lake Storage Gen2 tietovuotallennusta varten (esikatselu)](service-dataflows-connect-azure-data-lake-storage-gen2.md)
 
 Lisätietoja Power Querysta ja ajoitetusta päivityksestä on seuraavissa artikkeleissa:
 * [Kyselyn yleiskatsaus Power BI Desktopissa](desktop-query-overview.md)

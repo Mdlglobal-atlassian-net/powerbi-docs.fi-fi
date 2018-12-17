@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 11/06/2018
+ms.date: 12/06/2018
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: d7e39d0ee048f51066783b1cc9c98333e0352dcf
-ms.sourcegitcommit: b23fdcc0ceff5acd2e4d52b15b310068236cf8c7
+ms.openlocfilehash: 9e7f43780048a222b9d024b39d983968f45c59f7
+ms.sourcegitcommit: f25464d5cae46691130eb7b02c33f42404011357
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51267287"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53180572"
 ---
 # <a name="creating-and-using-dataflows-in-power-bi-preview"></a>Tietovoiden luominen ja käyttäminen Power BI:ssä (esikatselu)
 
@@ -143,6 +143,10 @@ Voit myös käyttää ikkunan yläreunassa olevaa **hakupalkkia**, jos haluat l�
 
 Kun valitset entiteetin ja sen jälkeen **Lataa**-painikkeen, entiteetit näkyvät **Kentät**-ruudussa **Power BI Desktopissa**. Ne toimivat samalla tavalla kuin minkä tahansa tietojoukon **taulukot**.
 
+## <a name="using-dataflows-stored-in-azure-data-lake-storage-gen2"></a>Azure Data Lake Storage Gen2:een tallennettujen tietovoiden käyttäminen
+
+Jotkut organisaatiot haluavat ehkä käyttää omaa tallennustilaansa tietovoiden luontiin ja hallintaan. Voit integroida tietovuot Azure Data Lake Storage Gen2:een noudattamalla oikein vaatimuksia ja hallintaoikeuksia. Tätä lähestymistapaa koskevat kaikki vaatimukset löytyvät yleiskatsausasiakirjasta, [Tietovuot ja Azure Data Lake -integrointi (esikatselu)](service-dataflows-azure-data-lake-integration.md).
+
 
 ## <a name="troubleshooting-data-connections"></a>Tietoyhteyksien vianmääritys
 
@@ -160,6 +164,7 @@ Tässä artikkelissa kerrottiin, miten voit luoda oman **tietovuon** sekä luoda
 * [Laskettujen entiteettien käyttäminen Power BI Premiumissa (esikatselu)](service-dataflows-computed-entities-premium.md)
 * [Tietovoiden käyttäminen paikallisten tietolähteiden kanssa (esikatselu)](service-dataflows-on-premises-gateways.md)
 * [Kehittäjien resurssit Power BI -tietovoille (esikatselu)](service-dataflows-developer-resources.md)
+* [Tietovuot ja Azure Data Lake -integrointi (esikatselu)](service-dataflows-azure-data-lake-integration.md)
 
 Lisätietoja Common Data Modelista on sen yleiskatsauksen sisältävässä artikkelissa:
 * [Common Data Model – yleiskatsaus](https://docs.microsoft.com/powerapps/common-data-model/overview)

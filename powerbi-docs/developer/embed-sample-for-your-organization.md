@@ -1,31 +1,32 @@
 ---
-title: Power BI -sisällön upottaminen sovellukseen organisaatiolle
-description: Opi integroimaan tai upottamaan raportteja, raporttinäkymiä tai ruutuja verkkosovellukseen organisaatiotasi varten, käyttämällä Power BI -ohjelmointirajapintoja.
+title: Upotettu analysointi Power BI:n sisällön upottamiseksi sovellukseen organisaatiollesi
+description: Lue, miten voit integroida tai upottaa raportteja, koontinäyttöjä tai ruutuja organisaatiotasi varten käyttämällä upotetussa analysoinnissa Power BI -ohjelmointirajapintoja. Lue, miten voit integroida Power BI:n sovellukseesi käyttämällä upotetun analysoinnin ohjelmistoa, upotetun analysoinnin työkaluja tai upotetun liiketoimintatiedon työkaluja.
 author: markingmyname
 ms.author: maghan
 manager: kfile
-ms.topic: tutorial
+ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-developer
-ms.custom: mvc
-ms.date: 10/17/2018
-ms.openlocfilehash: 92ed5530ba2e3e72ec4d4e7d7c317993bdf9c04b
-ms.sourcegitcommit: a3ce866caba24217bcdd011e892b9ea72f3d2400
+ms.topic: tutorial
+ms.custom: seodec18
+ms.date: 12/10/2018
+ms.openlocfilehash: 541e6e62ac075922cdb301343361ac328a3db28e
+ms.sourcegitcommit: f25464d5cae46691130eb7b02c33f42404011357
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49396861"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53180756"
 ---
-# <a name="tutorial-embed-a-power-bi-report-dashboard-or-tile-into-an-application-for-your-organization"></a>Opetusohjelma: Power BI -raportin, raporttinäkymän tai ruudun upottaminen sovellukseen organisaatiolle
+# <a name="tutorial-embed-a-power-bi-report-dashboard-or-tile-into-an-application-for-your-organization"></a>Opetusohjelma: Power BI -raportin, koontinäytön tai ruudun upottaminen sovellukseen organisaatiollesi
 
-Tässä opetusohjelmassa näytetään, miten voit integroida raportin sovellukseen. Voit käyttää Power BI .NET SDK:ta sekä Power BI JavaScript -ohjelmointirajapintaa Power BI:n upottamiseksi sovellukseen organisaatiollesi. Power BI:ssä, voit upottaa sovellukseen raportteja, raporttinäkymiä tai ruutuja käyttämällä **user owns data** -hakemiston malleja. **User owns data** -mallien avulla voit laajentaa sovelluksesi Power BI-palveluun.
+Power BI:ssä voit upottaa sovellukseen raportteja, koontinäyttöjä tai ruutuja käyttämällä **user owns data** -malleja. **User owns data** -mallien avulla sovelluksesi voi laajentaa Power BI -palvelun käyttämään upotettua analysointia. Tässä opetusohjelmassa näytetään, miten voit integroida raportin sovellukseen. Voit käyttää Power BI .NET SDK:ta sekä Power BI JavaScript -ohjelmointirajapintaa Power BI:n upottamiseksi sovellukseen organisaatiollesi.
 
 ![Power BI -raportin upottaminen](media/embed-sample-for-your-organization/embed-sample-for-your-organization-035.png)
 
 Tässä opetusohjelmassa opit tekemään seuraavat asiat:
->[!div class="checklist"]
->* Rekisteröimään sovelluksen Azuressa.
->* Upottamaan Power BI -raportin sovellukseen.
+> [!div class="checklist"]
+> * Rekisteröimään sovelluksen Azuressa.
+> * Upottamaan Power BI -raportin sovellukseen.
 
 ## <a name="prerequisites"></a>Edellytykset
 
@@ -40,9 +41,9 @@ Tarvitset Power BI Pro -tilin ja Microsoft Azure -tilauksen aloittaaksesi:
 
 Ennen kuin ryhdyt upottamaan raportteja, koontinäyttöjä tai ruutuja sovellukseesi, varmista, että ympäristösi on määritetty niin, että upottaminen on siinä sallittu. Tee jokin seuraavista toimista osana asennusta:
 
-- Voit käyttää [upottamisen määritystyökalua](https://aka.ms/embedsetup/UserOwnsData) päästäksesi nopeasti alkuun ja ladataksesi mallisovelluksen, jossa käydään läpi sekä käyttöympäristön luominen että raportin upottaminen.
+* Voit käyttää [upottamisen määritystyökalua](https://aka.ms/embedsetup/UserOwnsData) päästäksesi nopeasti alkuun ja ladataksesi mallisovelluksen, jossa käydään läpi sekä käyttöympäristön luominen että raportin upottaminen.
 
-- Jos haluat määrittää ympäristön manuaalisesti, suorita seuraavissa osioissa olevat vaiheet.
+* Jos haluat määrittää ympäristön manuaalisesti, suorita seuraavissa osioissa olevat vaiheet.
 
 ### <a name="register-an-application-in-azure-active-directory"></a>Sovelluksen rekisteröiminen Azure Active Directoryyn
 
@@ -60,7 +61,7 @@ Rekisteröi sovellus Azure Active Directoryyn, jotta sovellus saa käyttöoikeud
 
     ![Uuden sovelluksen rekisteröinti](media/embed-sample-for-your-organization/embed-sample-for-your-organization-004.png)
 
-4. Noudata kehotteita ja luo uusi sovellus. **User owns data** -mallien kanssa käytä **verkkosovellus/ohjelmointirajapinta**-**sovellustyyppiä**. Sinun täytyy antaa myös **Sisäänkirjautumis-URL-osoite**, jota Azure AD käyttää palauttaessaan tunnusvastauksia. Anna sovellukseen liittyvä arvo. Esimerkiksi `http://localhost:13526/`.
+4. Noudata kehotteita ja luo uusi sovellus. **User owns data** -mallien kanssa käytä **verkkosovellus/ohjelmointirajapinta**-**sovellustyyppiä**. Sinun täytyy antaa myös **URL-kirjautumisosoite**, jota Azure AD käyttää palauttaessaan tunnusvastauksia. Anna sovellukseen liittyvä arvo. Esimerkiksi `http://localhost:13526/`.
 
     ![Luo sovellus](media/embed-sample-for-your-organization/embed-sample-for-your-organization-005.png)
 
@@ -158,7 +159,7 @@ Seuraa näitä ohjeita aloittaaksesi sisällön upottamisen mallisovelluksen avu
 
     ![User Owns Data -sovellusmalli](media/embed-sample-for-your-organization/embed-sample-for-your-organization-026.png)
 
-2. Avaa mallisovelluksessa **Cloud.config**-tiedosto. Sinun on täytettävä muutamia kenttiä, jotta sovellus voidaan suorittaa onnistuneesti: **ApplicationID** ja **ApplicationSecret**.
+2. Avaa mallisovelluksessa **Cloud.config**-tiedosto. Jotta sovellus voitaisiin suorittaa, sinun on täytettävä pari kenttää: **ApplicationID** ja **ApplicationSecret**.
 
     ![Cloud.config-tiedosto](media/embed-sample-for-your-organization/embed-sample-for-your-organization-030.png)
 
@@ -168,69 +169,69 @@ Seuraa näitä ohjeita aloittaaksesi sisällön upottamisen mallisovelluksen avu
 
     1. Kirjaudu sisään [Azure-portaaliin](https://portal.azure.com).
 
-        ![Azure-portaalin koontinäyttö](media/embed-sample-for-your-organization/embed-sample-for-your-organization-002.png)
+       ![Azure-portaalin koontinäyttö](media/embed-sample-for-your-organization/embed-sample-for-your-organization-002.png)
 
-    1. Valitse vasemmassa siirtymisruudussa **Kaikki palvelut** ja sitten **Sovelluksen rekisteröinnit**.
+    2. Valitse vasemmassa siirtymisruudussa **Kaikki palvelut** ja sitten **Sovelluksen rekisteröinnit**.
 
-        ![Sovelluksen rekisteröinnin etsintä](media/embed-sample-for-your-organization/embed-sample-for-your-organization-003.png)
+       ![Sovelluksen rekisteröinnin etsintä](media/embed-sample-for-your-organization/embed-sample-for-your-organization-003.png)
 
-    1. Valitse sovellus, joka käyttää **ApplicationID**:tä.
+    3. Valitse sovellus, joka käyttää **ApplicationID**:tä.
 
-        ![Sovelluksen valitseminen](media/embed-sample-for-your-organization/embed-sample-for-your-organization-006.png)
+       ![Sovelluksen valitseminen](media/embed-sample-for-your-organization/embed-sample-for-your-organization-006.png)
 
-    1. Sinun pitäisi nähdä **Sovellustunnus**, joka on merkitty GUID-tunnuksena. Käytä tätä **Sovellustunnusta** sovelluksen **ApplicationID**:nä.
+    4. Sinun pitäisi nähdä **Sovellustunnus**, joka on merkitty GUID-tunnuksena. Käytä tätä **Sovellustunnusta** sovelluksen **ApplicationID**:nä.
 
         ![ApplicationID](media/embed-sample-for-your-organization/embed-sample-for-your-organization-007.png)
 
-    1. Täytä **ApplicationSecret** -tiedot **Avaimet**-osiosta **Sovelluksen rekisteröinnit** -kohdasta **Azuressa**.
+    Täytä **ApplicationSecret** -tiedot **Avaimet**-osiosta **Sovelluksen rekisteröinnit** -kohdasta **Azuressa**.
 
-    1. Saat **ApplicationSecretin** seuraavasti:
+    Saat **ApplicationSecretin** seuraavasti:
 
-        1. Kirjaudu sisään [Azure-portaaliin](https://portal.azure.com).
+    1. Kirjaudu sisään [Azure-portaaliin](https://portal.azure.com).
 
-            ![Azure-portaali](media/embed-sample-for-your-organization/embed-sample-for-your-organization-002.png)
+       ![Azure-portaali](media/embed-sample-for-your-organization/embed-sample-for-your-organization-002.png)
 
-        1. Valitse vasemmassa siirtymisruudussa **Kaikki palvelut** ja sitten **Sovelluksen rekisteröinnit**.
+    2. Valitse vasemmassa siirtymisruudussa **Kaikki palvelut** ja sitten **Sovelluksen rekisteröinnit**.
 
-            ![Sovelluksen rekisteröinnin etsintä](media/embed-sample-for-your-organization/embed-sample-for-your-organization-003.png)
+       ![Sovelluksen rekisteröinnin etsintä](media/embed-sample-for-your-organization/embed-sample-for-your-organization-003.png)
 
-        1. Valitse sovellus, joka käyttää **ApplicationSecretiä**.
+    3. Valitse sovellus, joka käyttää **ApplicationSecretiä**.
 
-            ![Sovelluksen valitseminen](media/embed-sample-for-your-organization/embed-sample-for-your-organization-006.png)
+       ![Sovelluksen valitseminen](media/embed-sample-for-your-organization/embed-sample-for-your-organization-006.png)
 
-        1. Valitse **Asetukset**.
+    4. Valitse **Asetukset**.
 
-            ![Valitse Asetukset](media/embed-sample-for-your-organization/embed-sample-for-your-organization-038.png)
+       ![Valitse Asetukset](media/embed-sample-for-your-organization/embed-sample-for-your-organization-038.png)
 
-        1. Valitse **Avaimet**.
+    5. Valitse **Avaimet**.
 
-            ![Valitse Avaimet](media/embed-sample-for-your-organization/embed-sample-for-your-organization-039.png)
+       ![Valitse Avaimet](media/embed-sample-for-your-organization/embed-sample-for-your-organization-039.png)
 
-    1. Kirjoita nimi **Kuvaus**-ruutuun ja valitse kesto. Valitse sitten **Tallenna** saadaksesi sovellukselle **arvon**. Kun suljet **Avaimet**-ruudun avainarvon tallentamisen jälkeen, arvokenttä näkyy vain piilotettuna. Tässä vaiheessa et pysty noutamaan avaimen arvoa. Jos kadotat avainarvon, luo uusi Azure-portaalissa.
+    6. Kirjoita nimi **Kuvaus**-ruutuun ja valitse kesto. Valitse sitten **Tallenna** saadaksesi sovellukselle **arvon**. Kun suljet **Avaimet**-ruudun avainarvon tallentamisen jälkeen, arvokenttä näkyy vain piilotettuna. Tässä vaiheessa et pysty noutamaan avaimen arvoa. Jos kadotat avainarvon, luo uusi Azure-portaalissa.
 
-        ![Avainarvo](media/embed-sample-for-your-organization/embed-sample-for-your-organization-031.png)
+          ![Avainarvo](media/embed-sample-for-your-organization/embed-sample-for-your-organization-031.png)
 
-    1. Anna **groupId**-kohtaan Power BI:n sovelluksen työtila GUID.
+    7. Anna **groupId**-kohtaan Power BI:n sovelluksen työtila GUID.
 
-        ![Anna groupId](media/embed-sample-for-customers/embed-sample-for-customers-031.png)
+       ![Anna groupId](media/embed-sample-for-customers/embed-sample-for-customers-031.png)
 
-    1. Anna **reportId**-kohtaan Power BI:n raportti GUID.
+    8. Anna **reportId**-kohtaan Power BI:n raportti GUID.
 
-        ![Anna reportId](media/embed-sample-for-customers/embed-sample-for-customers-032.png)
+       ![Anna reportId](media/embed-sample-for-customers/embed-sample-for-customers-032.png)
 
 3. Suorita sovellus:
 
-    1. Valitse ensin **Suorita** **Visual Studiossa**.
+    Valitse **Suorita** **Visual Studiossa**.
 
-        ![Suorita sovellus](media/embed-sample-for-your-organization/embed-sample-for-your-organization-033.png)
+    ![Suorita sovellus](media/embed-sample-for-your-organization/embed-sample-for-your-organization-033.png)
 
-    1. Valitse **Hae raportti**.
+    Valitse **Hae raportti**.
 
-        ![Valitse sisältö](media/embed-sample-for-your-organization/embed-sample-for-your-organization-034.png)
+    ![Valitse sisältö](media/embed-sample-for-your-organization/embed-sample-for-your-organization-034.png)
 
-    1. Voit nyt tarkastella raporttia mallisovelluksessa.
+    Voit nyt tarkastella raporttia mallisovelluksessa.
 
-        ![Tarkastele raporttia sovelluksessa](media/embed-sample-for-your-organization/embed-sample-for-your-organization-035.png)
+    ![Tarkastele raporttia sovelluksessa](media/embed-sample-for-your-organization/embed-sample-for-your-organization-035.png)
 
 ## <a name="embed-your-content-within-your-application"></a>Upota sisältö sovellukseen
 

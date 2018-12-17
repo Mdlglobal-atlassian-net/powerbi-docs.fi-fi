@@ -4,18 +4,19 @@ description: Tietoihin yhdistäminen Power BI Desktopissa
 author: davidiseminger
 manager: kfile
 ms.reviewer: ''
+ms.custom: seodec18
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/28/2018
+ms.date: 12/06/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: e0430455131b0669dfa744c7a1df6691bda4c782
-ms.sourcegitcommit: 05303d3e0454f5627eccaa25721b2e0bad2cc781
+ms.openlocfilehash: 0fc366ad5b42f84f8677be36d1f2093a4ac0fa23
+ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "52578148"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53025553"
 ---
 # <a name="connect-to-data-in-power-bi-desktop"></a>Tietoihin yhdistäminen Power BI Desktopissa
 Power BI Desktopilla voit helposti muodostaa yhteyden alati laajenevaan tietomaailmaan. Jos sinulla ei ole Power BI Desktopia, voit [ladata](http://go.microsoft.com/fwlink/?LinkID=521662) ja asentaa sen.
@@ -24,6 +25,7 @@ Power BI Desktopissa on käytössä *monenlaisia* tietolähteitä. Seuraavassa k
 
 ![](media/desktop-connect-to-data/getdatavid_smallv2.gif)
 
+## <a name="example-of-connecting-to-data"></a>Esimerkki yhteyden muodostamisesta tietoihin
 Tässä esimerkissä muodostamme yhteyden **Web** tietolähteeseen.
 
 Kuvittele, että jäät eläkkeelle ja haluat asumaan sinne, jossa on paljon aurinkoa, alhaiset verot ja hyvä terveydenhuolto. Tai... ehkä olet tietoanalyytikko ja haluat tietojen auttavan asiakkaita, kuten vaikka auttamalla sadetakkien valmistajaa aloittamaan kampanjan, kun sataa *paljon*.
@@ -64,7 +66,7 @@ Kun tietomalli on ladattu, voimme Power BI Desktopin **Raportti**-näkymässä a
 
 Kyseessä on tietysti yksinkertainen malli, joka sisältää yhden tietoyhteyden. Useimmissa Power BI Desktop -raporteissa meillä on yhteydet eri tietolähteisiin tarpeidesi mukaan suhteilla, jotka tuottavat monipuolisen tietomallin. 
 
-### <a name="next-steps"></a>Seuraavat vaiheet
+## <a name="next-steps"></a>Seuraavat vaiheet
 Voit tehdä kaikenlaista Power BI Desktopilla. Saat lisätietoja sen toiminnoista seuraavista resursseista:
 
 * [Mikä on Power BI Desktop?](desktop-what-is-desktop.md)

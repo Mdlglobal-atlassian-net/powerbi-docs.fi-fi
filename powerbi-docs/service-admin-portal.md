@@ -9,15 +9,16 @@ ms.service: powerbi
 ms.component: powerbi-admin
 ms.topic: conceptual
 ms.date: 10/30/2018
+ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: 663a6bb9629e98dabab9934c7647bba6f7c14cd4
-ms.sourcegitcommit: a13abdb5a6c0c6a397b328ec2d68788ce3afa866
+ms.openlocfilehash: 5f377f60935f23b62b90731c5d7bc16c8119ab83
+ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/21/2018
-ms.locfileid: "52268362"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53026703"
 ---
-# <a name="power-bi-admin-portal"></a>Power BI -hallintaportaali
+# <a name="administering-power-bi-in-the-admin-portal"></a>Power BI:n hallinta hallintaportaalissa
 
 Hallintaportaalissa voit hallita organisaatiosi Power BI *-vuokraajaa*. Hallintaportaali sisältää esimerkiksi käyttömittareita ja asetuksia. Sen kautta voit käyttää myös Office 365 -hallintakeskusta.
 
@@ -105,15 +106,15 @@ Seuraavassa kuvassa näytetään **Vuokraaja-asetukset**-välilehden kaksi ensim
 
 Asetuksilla voi olla kolme tilaa:
 
-* **Poistettu käytöstä koko organisaatiolle**: kukaan organisaation käyttäjä ei voi käyttää tätä toimintoa.
+* **Poistettu käytöstä koko organisaatiolle**: Kukaan organisaatiossasi ei voi käyttää tätä ominaisuutta.
 
     ![Kaikki-asetus poistettu käytöstä](media/service-admin-portal/powerbi-admin-tenant-settings-disabled.png)
 
-* **Otettu käyttöön koko organisaatiolle**: kaikki organisaation käyttäjät voivat käyttää tätä toimintoa.
+* **Otettu käyttöön koko organisaatiolle**: Kaikki organisaatiossasi voivat käyttää tätä ominaisuutta.
 
     ![Kaikki-asetus otettu käyttöön](media/service-admin-portal/powerbi-admin-tenant-settings-enabled.png)
 
-* **Otettu käyttöön organisaation alijoukolle**: organisaation käyttäjien tai ryhmien tietty alijoukko voi käyttää tätä toimintoa.
+* **Otettu käyttöön organisaation alijoukolle**: Organisaatiosi erityinen käyttäjien tai ryhmien alijoukko voi käyttää tätä ominaisuutta.
 
     Voit ottaa toiminnon käyttöön koko organisaatiolle tiettyä käyttäjäryhmää lukuun ottamatta.
 
@@ -355,7 +356,7 @@ Jos haluat lisätä luetteloon uuden mukautetun visualisoinnin, toimi seuraavast
 
     * **Nimeä mukautetut visualisoinnit** (pakollinen): anna visualisoinnille lyhyt nimi, jotta Power BI Desktopin käyttäjät tietävät, mitä se tekee.
 
-    * **Kuvake** (pakollinen): Power BI Desktopin käyttöliittymässä näytettävä kuvake.
+    * **Kuvake**: Power BI Desktopin käyttöliittymässä näytettävä kuvaketiedosto.
 
     * **Kuvaus**: anna visualisoinnille lyhyt kuvaus, joka kertoo käyttäjille sen toiminnasta.
 

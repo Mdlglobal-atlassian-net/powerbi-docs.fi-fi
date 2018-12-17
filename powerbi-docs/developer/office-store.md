@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 10/30/2018
-ms.openlocfilehash: 4ac828baa4f6080ab50008aa4ffb570ff016246f
-ms.sourcegitcommit: 02f918a4f27625b6f4e47473193ebc8219db40e2
+ms.openlocfilehash: a5bf8a82fde84537394af4a37f33f674dbf3615b
+ms.sourcegitcommit: f25464d5cae46691130eb7b02c33f42404011357
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51223125"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53180327"
 ---
 # <a name="publish-custom-visuals-to-appsource"></a>Omien visualisointien julkaiseminen AppSourcessa
 
@@ -38,9 +38,9 @@ Kun olet koodannut ja testannut oman visualisointisi ja paketoinut sen pbiviz-ti
 | .pbix-raporttitiedostoesimerkki |Kyllä |Auta käyttäjiä tutustumaan visualisointiisi esittelemällä sitä. Korosta arvoa, jota visualisointi tuo käyttäjille, ja anna esimerkkejä käytöstä, muotoiluasetuksista ja niin edelleen. Voit myös lisätä loppuun *vinkkisivun*, jolla annat vinkkejä, kerrot, mitä kannattaa välttää ja niin edelleen.<br>.pbix-raporttitiedostoesimerkin täytyy toimia offline-tilassa ilman mitään ulkoista yhteyttä. |
 | Kuvake |Kyllä |Sisällytä mukaan oman visualisointisi logo, joka näytetään kaupassa. Se voi olla .png-, .jpg-, .jpeg- tai .gif-muodossa. Sen on oltava tarkalleen 300 × 300 kuvapistettä (leveys × korkeus). **Tärkeää!** Lue tämä [lyhyt opas](https://docs.microsoft.com/office/dev/store/craft-effective-appsource-store-images) ennen logon lähettämistä. |
 | Näyttökuvat |Kyllä |Sinun täytyy antaa ainakin yksi näyttökuva. Se voi olla .png-, .jpg-, .jpeg- tai .gif-muodossa. Sen on oltava tarkalleen 1 366 × 768 kuvapistettä (leveys × korkeus). Suurin sallittu tiedostokoko on 1 024 kt. *Käyttäjämäärien kasvattamiseksi suosittelemme, että lisäät näyttökuviin tekstikuplia, jotka tuovat esiin tärkeimpien toimintojen etuja.* |
-| Tuen latauslinkki |Kyllä |Tarjoa URL-osoite, josta asiakkaat voivat hankkia tukea, jos heillä on ongelmia visualisointisi käytössä. URL-osoitteen täytyy olla https:// - tai http:// -muodossa. |
-| Tietosuoja-asiakirjan linkki |Kyllä |Tarjoa visualisointiasi käyttäville asiakkaille linkki tietosuojakäytäntöösi. Linkin täytyy olla https:// - tai http:// -muodossa. |
-| Käyttöoikeussopimus (EULA) |Kyllä |Sinun täytyy ladata palveluun käyttöoikeussopimus. Se voi olla oma käyttöoikeussopimuksesi tai Office-kaupan oletuskäyttöoikeussopimus Power BI:n mukautetuille visualisoinneille. Jos haluat käyttää oletuskäyttöoikeussopimusta, liitä seuraava URL-osoite myyjän koontinäytössä kohtaan, jossa voi ladata käyttöoikeussopimustiedoston: [https://visuals.azureedge.net/app-store/PowerBI - Default Custom Visual EULA.pdf](https://visuals.azureedge.net/app-store/Power%20BI%20-%20Default%20Custom%20Visual%20EULA.pdf). |
+| Tuen latauslinkki |Kyllä |Tarjoa URL-osoite, josta asiakkaat voivat hankkia tukea, jos heillä on ongelmia visualisointisi käytössä. Tämä linkki on lisätty osana SellerDashboard-luetteloasi, ja käyttäjät näkevät sen käyttäessään visualisointiluetteloasi AppSourcessa. URL-osoitteen täytyy olla https:// - tai http:// -muodossa. |
+| Tietosuoja-asiakirjan linkki |Kyllä |Tarjoa visualisointiasi käyttäville asiakkaille linkki tietosuojakäytäntöösi. Tämä linkki on lisätty osana SellerDashboard-luetteloasi, ja käyttäjät näkevät sen käyttäessään visualisointiluetteloasi AppSourcessa. Linkin täytyy olla https:// - tai http:// -muodossa. |
+| Käyttöoikeussopimus (EULA) |Kyllä |Sinun täytyy ladata palveluun käyttöoikeussopimus. Se voi olla oma käyttöoikeussopimuksesi tai Office-kaupan oletuskäyttöoikeussopimus Power BI:n mukautetuille visualisoinneille. Jos haluat käyttää oletuskäyttöoikeussopimusta, liitä seuraava URL-osoite myyjän koontinäytön ”Käyttöoikeussopimus”-tiedoston latauksen valintaikkunaan: [https://visuals.azureedge.net/app-store/Power BI - Default Custom Visual EULA.pdf](https://visuals.azureedge.net/app-store/Power%20BI%20-%20Default%20Custom%20Visual%20EULA.pdf). |
 | Videolinkki |Ei |Voit kasvattaa kiinnostusta visualisointiasi kohtaan antamalla linkin sen esittelyvideoon. URL-osoitteen täytyy olla https:// - tai http:// -muodossa. |
 | GitHub-säilö |Ei |Suosittelemme, että annat kelvollisen ja julkisen linkin [GitHub](https://www.github.com)-säilöön, joka sisältää visualisointisi lähteet ja esimerkkitiedot, jotta muut kehittäjät voivat antaa palautetta ja ehdottaa parannuksia koodiisi. |
 
@@ -72,7 +72,7 @@ Voit lähettää visualisoinnin alla olevien ohjeiden mukaisesti.
 
 1. Valitse **Lisää uusi sovellus**.
 
-    ![Sovelluksen lisääminen](media/office-store/powerbi-custom-visual-add-an-app.png)
+    ![Lisää sovellus](media/office-store/powerbi-custom-visual-add-an-app.png)
 
 2. Valitse **Power BI:n mukautettu visualisointi** > **Seuraava**.
 
@@ -86,10 +86,10 @@ Voit lähettää visualisoinnin alla olevien ohjeiden mukaisesti.
 
 5. Täytä **yleiset tiedot**.
 
-   * *Lähetyksen nimi:* tämä on visualisointisi nimi Developer Centerissä.
-   * *Versio:* versionumero määritetään automaattisesti apuohjelmasi sovelluspaketin perusteella.
+   * *Lähetyksen otsikko:* Lähetyksesi nimi Developer Centerissä.
+   * *Versio:* Versionumero määritetään automaattisesti apuohjelmasi sovelluspaketin perusteella.
    * *Julkaisupäivämäärä (UTC):* Valitse päivämäärä, jolloin sovelluksesi julkaistaan kaupassa. Jos valitset tulevaisuudessa olevan päivämäärän, sovelluksesi on saatavilla kaupasta vasta valittuna päivänä.
-   * *Luokka:* Ensimmäiseksi luokaksi määritetään Tietojen visualisointi ja liiketoimintatiedot. Tämä merkintä lisätään kaikille Power BI:n mukautetuille visualisoinneille. Voit määrittää kaksi muutakin luokkaa, joiden avulla käyttäjät voivat helposti etsiä visualisointiasi.
+   * *Luokka:* Ensimmäiseksi luokaksi määritetään ”Tietojen visualisointi ja liiketoimintatiedot”. Tämä merkintä lisätään kaikille Power BI:n mukautetuille visualisoinneille. Voit määrittää kaksi muutakin luokkaa, joiden avulla käyttäjät voivat helposti etsiä visualisointiasi.
    * *Testaushuomautukset:* voit halutessasi antaa tässä ohjeita Microsoftin testaajille.
    * *Sovelluksesi kutsuu, tukee, sisältää tai käyttää salausta*: jätä tämä kohta valitsematta.
    * *Tarjoa tämä apuohjelma käytettäväksi iPadin Office-apuohjelmaluettelossa*: jätä tämä kohta valitsematta.
@@ -104,7 +104,7 @@ Voit lähettää visualisoinnin alla olevien ohjeiden mukaisesti.
    * Videolinkki
    * Käyttöoikeussopimus (EULA)
 
-       Sinun täytyy ladata palveluun käyttöoikeussopimus. Se voi olla oma käyttöoikeussopimuksesi tai Office-kaupan oletuskäyttöoikeussopimus Power BI:n mukautetuille visualisoinneille. Jos haluat käyttää oletuskäyttöoikeussopimusta, liitä seuraava URL-osoite myyjän koontinäytössä kohtaan, jossa voi ladata käyttöoikeussopimustiedoston: [https://visuals.azureedge.net/app-store/PowerBI - Default Custom Visual EULA.pdf](https://visuals.azureedge.net/app-store/Power%20BI%20-%20Default%20Custom%20Visual%20EULA.pdf).
+       Sinun täytyy ladata palveluun käyttöoikeussopimus. Se voi olla oma käyttöoikeussopimuksesi tai Office-kaupan oletuskäyttöoikeussopimus Power BI:n mukautetuille visualisoinneille. Jos haluat käyttää oletuskäyttöoikeussopimusta, liitä seuraava URL-osoite myyjän koontinäytön ”Käyttöoikeussopimus”-tiedoston latauksen valintaikkunaan: [https://visuals.azureedge.net/app-store/Power BI - Default Custom Visual EULA.pdf](https://visuals.azureedge.net/app-store/Power%20BI%20-%20Default%20Custom%20Visual%20EULA.pdf).
 
 8. Jatka **Tiedot**-sivulle valitsemalla **Seuraava**.
 
@@ -114,9 +114,9 @@ Voit lähettää visualisoinnin alla olevien ohjeiden mukaisesti.
 
 10. Täytä Kuvaus-kohdan tiedot.
 
-    * *Sovelluksen nimi (tällä kielellä):* anna sovelluksen nimi, joka näytetään kaupassa.
-    * *Lyhyt kuvaus:* Anna sovelluksen lyhyt kuvaus, joka näytetään kaupassa (enintään 100 merkkiä). Tämä kuvaus näytetään ylimmän tason sivuilla logon kanssa. Voit käyttää pbiviz-paketin kuvausta.
-    * *Pitkä kuvaus:* Anna sovelluksen tarkempi kuvaus, jonka asiakkaat näkevät sovelluksen tietosivulla. Jos haluat antaa yhteisön parantaa visualisointiasi tekemällä siitä avoimen lähdekoodin visualisoinnin, anna tässä linkki julkiseen säilöön (esimerkiksi GitHubiin).
+    * *Sovelluksen nimi (tällä kielellä):* Kirjoita sovelluksen nimi, joka näytetään kaupassa.
+    * *Lyhyt kuvaus:* Kirjoita sovelluksen lyhyt kuvaus, joka näytetään kaupassa (enintään 100 merkkiä). Tämä kuvaus näytetään ylimmän tason sivuilla logon kanssa. Voit käyttää pbiviz-paketin kuvausta.
+    * *Pitkä kuvaus:* Kirjoita sovelluksen tarkempi kuvaus, jonka asiakkaat näkevät sovelluksen tietosivulla. Jos haluat antaa yhteisön parantaa visualisointiasi tekemällä siitä avoimen lähdekoodin visualisoinnin, anna tässä linkki julkiseen säilöön (esimerkiksi GitHubiin).
 
 11. Lataa ainakin yksi näyttökuva. Se voi olla .png-, .jpg-, .jpeg- tai .gif-muodossa. Sen on oltava tarkalleen 1 366 × 768 kuvapistettä (leveys × korkeus). Suurin sallittu tiedostokoko on 1 024 kt. *Käyttäjämäärien kasvattamiseksi suosittelemme, että lisäät näyttökuviin tekstikuplia, jotka tuovat esiin tärkeimpien toimintojen etuja.*
 

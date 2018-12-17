@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-report-server
 ms.topic: conceptual
-ms.date: 09/19/2018
+ms.date: 12/07/2018
 ms.author: maggies
-ms.openlocfilehash: 1d74ed5e39d73252d0779458d0ba8619908c99f2
-ms.sourcegitcommit: 70192daf070ede3382ac13f6001e0c8b5fb8d934
+ms.openlocfilehash: a4914bf0fb6945bc5ee45bdf6559ca75bbd7c2b5
+ms.sourcegitcommit: f25464d5cae46691130eb7b02c33f42404011357
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "46565908"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53180940"
 ---
 # <a name="install-power-bi-report-server"></a>Power BI -raporttipalvelimen asentaminen
 
@@ -26,6 +26,10 @@ Lataa Power BI -raporttipalvelin tutustumalla ohjeaiheeseen [Paikallinen raporto
 
 ## <a name="before-you-begin"></a>Alkutoimet
 Microsoft suosittelee ennen Power BI -raporttipalvelimen asentamista tutustumaan [Power BI -raporttipalvelimen asentamisen laitteisto- ja ohjelmistovaatimuksiin](system-requirements.md).
+
+ > [!IMPORTANT]
+ > Microsoft Power BI -raporttipalvelin voidaan asentaa ympäristöön, jossa on Vain luku-toimialueen ohjain (RODC), mutta Power BI -raporttipalvelin tarvitsee käyttöoikeuden luku- ja kirjoitus-toimialueen ohjaimelle toimiakseen oikein. Jos Power BI -raporttipalvelin sisältää vain RODC-käyttöoikeuden, voi tulla virheitä, kun yrität hallita palvelua.
+
 
 ### <a name="power-bi-report-server-product-key"></a>Power BI -raporttipalvelimen tuoteavain
 

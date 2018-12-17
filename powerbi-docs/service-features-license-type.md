@@ -1,44 +1,42 @@
 ---
-title: Power BI:n maksuttoman version ja Pro-version vertailu
-description: Power BI:n jokainen käyttäjä on joko ilmais- tai Pro-käyttäjiä. On hyödyllistä ymmärtää erot näiden käyttäjien välillä.
+title: Power BI- palvelun ominaisuudet käyttöoikeustyypin mukaan
+description: 'Power BI -palvelussa käyttäjillä on määritettyjä ominaisuuksia kahdenlaisen käyttöoikeustyypin perusteella: käyttäjäkohtainen käyttöoikeus (maksuton ja Pro) ja kapasiteettipohjainen käyttöoikeus.'
 author: mgblythe
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 02/13/2018
+ms.date: 12/06/2018
 ms.author: mblythe
+ms.custom: seodec18
 LocalizationGroup: Get started
-ms.openlocfilehash: 62d6a274b7cfb784f4f61b0973bad22ea6194698
-ms.sourcegitcommit: a764e4b9d06b50d9b6173d0fbb7555e3babe6351
+ms.openlocfilehash: fab6181997fd57448a152fe315efcadf076e4fbb
+ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/22/2018
-ms.locfileid: "49641294"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53025854"
 ---
-# <a name="power-bi-free-vs-pro"></a>Power BI:n maksuttoman version ja Pro-version vertailu
+# <a name="power-bi-service-features-by-license-type"></a>Power BI- palvelun ominaisuudet käyttöoikeustyypin mukaan
 
-Power BI:n jokainen käyttäjä on joko ilmais- tai Pro-käyttäjiä. On hyödyllistä ymmärtää erot näiden käyttäjien välillä.
+[!INCLUDE [license-capabilities](includes/license-capabilities.md)]
 
-*Kaikki käyttäjät* palvelussa ovat joko ilmais- tai Pro-käyttäjä. Ilmais- tai Pro-käyttäjän välinen tärkein ero on jakamisessa ja yhteistyössä. Vain Pro-käyttäjät voivat julkaista sisältöä sovelluksen työtilaan, kuluttaa sovelluksia ilman Premium-kapasiteettia, jakaa koontinäyttöjä ja tilata koontinäyttöjä ja raportteja. Ilmaiskäyttäjät voivat nyt muodostaa yhteyden kaikkiin tietolähteisiin kaikkien yhteysvaihtoehtojen kuten DirectQueryn, reaaliaikaisen yhteyden ja tietoyhdyskäytävää käyttäen.
+## <a name="per-user-license-type-comparison"></a>Käyttäjäkohtaisen käyttöoikeustyypin vertailu
 
-Jos sovellus on julkaistu, ja sovellustyötila, johon se on tarkoitettu, on määritetty Premium-kapasiteettiin, ilmaiskäyttäjät voivat kuluttaa kyseisiä sovelluksia.
-
-## <a name="free-vs-pro-comparison"></a>Maksuton vs. Pro, vertailu
-Seuraavassa on luettelo tuetuista ominaisuuksista käyttäjätyypeittäin.
+Seuraavassa on luettelo tuetuista ominaisuuksista käyttäjäkohtaisen käyttöoikeustyypin mukaan.
 
 |  | Maksuton | Pro |
 | --- | --- | --- |
 | **Muodosta yhteys yli 70 tietolähteeseen** |![Ominaisuus on käytettävissä](media/features-license-type/available.png) |![Ominaisuus on käytettävissä](media/features-license-type/available.png) |
 | **Verkkoon julkaiseminen** |![Ominaisuus on käytettävissä](media/features-license-type/available.png) |![Ominaisuus on käytettävissä](media/features-license-type/available.png) |
-| **Vertaisten välinen jakaminen** |![Ominaisuus ei ole käytettävissä](media/features-license-type/not-available.png) |![Ominaisuus on käytettävissä](media/features-license-type/available.png) |
 | **Vie PowerPointiin, Exceliin, CSV:een** |![Ominaisuus on käytettävissä](media/features-license-type/available.png) |![Ominaisuus on käytettävissä](media/features-license-type/available.png) |
 | **Yritysjakelu** | | |
 | Sovellukset |![Ominaisuus ei ole käytettävissä](media/features-license-type/not-available.png) |![Ominaisuus on käytettävissä](media/features-license-type/available.png) |
 | Sähköpostitilaukset |![Ominaisuus ei ole käytettävissä](media/features-license-type/not-available.png) |![Ominaisuus on käytettävissä](media/features-license-type/available.png) |
 | Upota ohjelmointirajapintoja ja ohjausobjekteja |![Ominaisuus ei ole käytettävissä](media/features-license-type/not-available.png) |![Ominaisuus on käytettävissä](media/features-license-type/available.png) |
 | **Yhteistyö** | | |
+| Vertaisten välinen jakaminen |![Ominaisuus ei ole käytettävissä](media/features-license-type/not-available.png) |![Ominaisuus on käytettävissä](media/features-license-type/available.png) |
 | Sovelluksen työtilat |![Ominaisuus ei ole käytettävissä](media/features-license-type/not-available.png) |![Ominaisuus on käytettävissä](media/features-license-type/available.png) |
 | Power BI Desktopin Analysoi Excelissä -toiminto |![Ominaisuus ei ole käytettävissä](media/features-license-type/not-available.png) |![Ominaisuus on käytettävissä](media/features-license-type/available.png) |
 

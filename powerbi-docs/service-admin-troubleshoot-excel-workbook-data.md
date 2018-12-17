@@ -9,13 +9,14 @@ ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 12/06/2017
 ms.author: mblythe
+ms.custom: seodec18
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: 90fd71c59059f1b1b2c1b7d1d2da582d228c7a88
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: ea5312178d33986ebc3f4b9e8610012c87d54216
+ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34242360"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53026027"
 ---
 # <a name="error-we-couldnt-find-any-data-in-your-excel-workbook"></a>Virhe: Excel-työkirjasta ei löydy mitään tietoja
 
@@ -26,7 +27,7 @@ Kun tuot Excel-työkirjan Power BI:hin, saatat nähdä seuraavan virheilmoitukse
 
 *Virhe: Excel-työkirjasta ei löydy mitään tietoja. Tietoja ei ehkä ole muotoiltu oikein. Sinun on muokattava työkirjaa Excelissä ja tuotava se uudelleen.*
 
-![](media/service-admin-troubleshoot-excel-workbook-data/pbi_wecouldntfindanydata.png)
+![Tietoja ei löydy työkirjasta](media/service-admin-troubleshoot-excel-workbook-data/pbi_wecouldntfindanydata.png)
 
 ## <a name="quick-solution"></a>Nopea ratkaisu
 1. Muokkaa työkirjaa Excelissä.
@@ -46,28 +47,28 @@ Kun tuot Excel-työkirjan, Power BI etsii taulukot ja tuo ne tietojoukkona. Jos 
     >[!NOTE]
     >Tässä olevat kuvat ovat Excel 2013:sta. Jos käytössäsi on jokin muu versio, asiat saattaa näyttää hieman erilaisilta, mutta vaiheet ovat samat.
     
-    ![](media/service-admin-troubleshoot-excel-workbook-data/pbi_trb_xlwksht1.png)
+    ![Avaa työkirja](media/service-admin-troubleshoot-excel-workbook-data/pbi_trb_xlwksht1.png)
 2. Valitse tiedot sisältävä solualue. Ensimmäisen rivin tulee sisältää sarakeotsikot (sarakkeiden nimet):
    
-    ![](media/service-admin-troubleshoot-excel-workbook-data/pbi_trb_xlwksht2.png)
+    ![Valitse solualue](media/service-admin-troubleshoot-excel-workbook-data/pbi_trb_xlwksht2.png)
 3. Valitse valintanauhan **LISÄÄ**-välilehdessä **Taulukko**. (Tai paina näppäinyhdistelmää **Ctrl + T**.)
    
-    ![](media/service-admin-troubleshoot-excel-workbook-data/pbi_trb_xlwksht3.png)
+    ![Lisää taulukko](media/service-admin-troubleshoot-excel-workbook-data/pbi_trb_xlwksht3.png)
 4. Näet seuraavan valintaikkunan. Varmista, että **Taulukossa on otsikot** on valittuna ja valitse sitten **OK**:
    
-    ![](media/service-admin-troubleshoot-excel-workbook-data/pbi_trb_xlcreatetbl.png)
+    ![Luo taulukko](media/service-admin-troubleshoot-excel-workbook-data/pbi_trb_xlcreatetbl.png)
 5. Tietosi on nyt muotoiltu taulukoksi:
    
-    ![](media/service-admin-troubleshoot-excel-workbook-data/pbi_trb_xltbl.png)
+    ![tiedot muotoiltuna taulukoksi](media/service-admin-troubleshoot-excel-workbook-data/pbi_trb_xltbl.png)
 6. Tallenna työkirja.
 7. Palaa Power BI:hin. Valitse vasemman siirtymisruudun alareunassa Nouda tiedot.
    
-    ![](media/service-admin-troubleshoot-excel-workbook-data/pbi_getdata.png)
-8. Valitse **Tiedostot**-ruudussa **Nouda**.
+    ![Nouda tiedot](media/service-admin-troubleshoot-excel-workbook-data/pbi_getdata.png)
+8. Valitse **Tiedostot**-ruudusta **Nouda**.
    
-    ![](media/service-admin-troubleshoot-excel-workbook-data/pbi_getfiles.png)
+    ![Hae tiedostot](media/service-admin-troubleshoot-excel-workbook-data/pbi_getfiles.png)
 9. Tuo Excel-työkirjasi uudelleen. Tällä kertaa tuonnin pitäisi löytää taulukko ja onnistua.
    
     Jos tuonti ei edelleenkään onnistu, ilmoita asiasta valitsemalla **Yhteisö **Ohje-valikossa:
    
-    ![](media/service-admin-troubleshoot-excel-workbook-data/pbi_questionmenucommunity.png)
+    ![Yhteisölinkki](media/service-admin-troubleshoot-excel-workbook-data/pbi_questionmenucommunity.png)

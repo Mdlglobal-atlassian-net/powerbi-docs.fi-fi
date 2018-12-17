@@ -1,23 +1,25 @@
 ---
-title: Power BI -sisällön upottaminen sovellukseen julkihallinnon tai maakohtaisten pilvipalveluiden asiakkaille
-description: Lue ohjeet siihen, miten voit integroida tai upottaa koontinäytön, ruudun tai raportin verkkosovellukseen asiakkaillesi Power BI -ohjelmointirajapintojen avulla.
+title: Upotettu analysointi Power BI -sisällön upottamiseksi sovellukseen valtionhallinnon pilvipalvelua ja maakohtaista pilvipalvelua varten
+description: Lue, miten voit integroida tai upottaa raportteja, koontinäyttöjä tai ruutuja sovellukseen asiakkaita varten käyttämällä upotetussa analysoinnissa Power BI -ohjelmointirajapintoja. Lue, miten voit integroida Power BI:n sovellukseesi käyttämällä upotetun analysoinnin ohjelmistoa, upotetun analysoinnin työkaluja tai upotetun liiketoimintatiedon työkaluja.
 author: markingmyname
 ms.author: maghan
 manager: kfile
+ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: tutorial
-ms.date: 10/25/2018
-ms.openlocfilehash: 76b80ad296f2f595fb5014e13bbd48d414cd8bbe
-ms.sourcegitcommit: 42475ac398358d2725f98228247b78aedb8cbc4f
+ms.custom: seodec18
+ms.date: 12/10/2018
+ms.openlocfilehash: aabf472e236f545fe51d4007dcd8fbdf36632931
+ms.sourcegitcommit: f25464d5cae46691130eb7b02c33f42404011357
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50003152"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53180618"
 ---
 # <a name="tutorial-embed-a-power-bi-dashboard-tile-or-report-into-your-application-for-sovereign-clouds"></a>Opetusohjelma: Power BI:n koontinäytön, ruudun tai raportin upottaminen maakohtaisen pilvipalvelun sovellukseen
 
-Lue ohjeet siihen, miten voit upottaa koontinäytön, ruudun tai raportin verkkosovellukseen asiakkaillesi Power BI .NET SDK:n ja Power BI JavaScript -ohjelmointirajapinnan avulla tietojen integroinnin yhteydessä.
+Lue, miten voit upottaa analysointisisältöä liiketoimintaprosessin sovelluksiin maakohtaista pilvipalvelua varten. Voit Power BI .NET SDK:n ja Power BI JavaScript -ohjelmointirajapinnan avulla upottaa raportin, koontinäkymän tai ruudun verkkosovelluksiin.
 
 Power BI tukee myös maakohtaisia (yksityisiä) pilviä.
 
@@ -132,7 +134,7 @@ Rekisteröi sovellus Azure AD:ssä REST-ohjelmointirajapinnan kutsujen tekemisek
 
 * Power BI for China cloud: https://app.powerbi.cn/apps
 
-Jos latasit [asiakkaan upottamisen mallin](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/App%20Owns%20Data), rekisteröinnin jälkeen voit todentaa mallin Azure AD:hen saamasi **sovellustunnuksen** avulla. Voit määrittää mallin muuttamalla **applicationId**-arvoa *web.config*-tiedostossa.
+Jos latasit [Asiakkaan mallin upottaminen](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/App%20Owns%20Data), voit todentaa mallin Azure AD:hen saamasi **sovellustunnuksen** avulla. Voit määrittää mallin muuttamalla **applicationId**-arvoa *web.config*-tiedostossa.
 
 ## <a name="step-2---get-an-access-token-from-azure-ad"></a>Vaihe 2 – hanki käyttöoikeustietue Azure AD:stä
 

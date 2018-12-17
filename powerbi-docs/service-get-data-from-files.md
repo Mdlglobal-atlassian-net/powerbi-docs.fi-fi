@@ -1,23 +1,24 @@
 ---
-title: Tietojen noutaminen tiedostoista
+title: Tietojen noutaminen tiedostoista Power BI:hin
 description: Lue lisää siitä, miten voit noutaa tietoja Excel-, Power BI Desktop- ja CSV-tiedostoista Power BI:hin
 author: davidiseminger
 manager: kfile
 ms.reviewer: ''
+ms.custom: seodec18
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 11/28/2018
+ms.date: 12/06/2018
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 10f609f5b531b5ce08e254e96219600c2a3e497e
-ms.sourcegitcommit: 2ae660a7b70fce23eb58b159d049eca44a664f2c
+ms.openlocfilehash: 644d863f98c7c7099a9bdda7ac714372499b0614
+ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "52669631"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53026421"
 ---
-# <a name="get-data-from-files"></a>Tietojen noutaminen tiedostoista
+# <a name="get-data-from-files-for-power-bi"></a>Tietojen noutaminen tiedostoista Power BI:hin
 ![](media/service-get-data-from-files/file_icons.png)
 
 Power BI:ssä voit muodostaa yhteyden tai tuoda tietoja ja raportteja kolmentyyppisistä tiedostoista.

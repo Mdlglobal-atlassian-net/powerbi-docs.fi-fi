@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 11/06/2018
+ms.date: 12/06/2018
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: d2b2449985a4380d78e7055ecf87f99a65a9a67e
-ms.sourcegitcommit: b23fdcc0ceff5acd2e4d52b15b310068236cf8c7
+ms.openlocfilehash: a56dbb713f3d853094c2612a19edecb8bf4d7b24
+ms.sourcegitcommit: f25464d5cae46691130eb7b02c33f42404011357
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51267252"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53180595"
 ---
 # <a name="developer-resources-for-power-bi-dataflows-preview"></a>Kehittäjien resurssit Power BI -tietovoille (esikatselu)
 
@@ -29,7 +29,7 @@ Seuraavat kehittäjien resurssit ovat käytettävissä Power BI -tietovoiden kan
 
 | Tietovuoresurssi | Kuvaus |
 | --- | --- |
-| [Power BI -tietovuon REST-ohjelmointirajapinnan viite](http://download.microsoft.com/download/5/4/0/540DAA5B-6760-4BDF-A089-8C3DBA8BB4DD/Power%20BI%20dataflow%20REST%20API%20reference.docx)    | Täydellinen opas tietovuon REST-ohjelmointirajapintaan.|
+| [Power BI -tietovuon REST-ohjelmointirajapinnan viite](https://go.microsoft.com/fwlink/?linkid=2047629)    | Täydellinen opas tietovuon REST-ohjelmointirajapintaan.|
 
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
@@ -41,10 +41,15 @@ Tässä artikkelissa annettiin tietoja tietovoihin liittyvistä kehittäjien res
 * [Laskettujen entiteettien käyttäminen Power BI Premiumissa (esikatselu)](service-dataflows-computed-entities-premium.md)
 * [Tietovoiden käyttäminen paikallisten tietolähteiden kanssa (esikatselu)](service-dataflows-on-premises-gateways.md)
 
+Katso lisätietoja Common Data Modelin (CDM) kehittämisestä ja opetusohjelmaresursseista seuraavista ohjeaiheista:
+* [Common Data Model – yleiskatsaus](https://docs.microsoft.com/powerapps/common-data-model/overview)
+* [CDM-kansiot](https://go.microsoft.com/fwlink/?linkid=2045304)
+* [CDM-mallitiedoston määritys](https://go.microsoft.com/fwlink/?linkid=2045521)
+
+
 Lisätietoja Power Querysta ja ajoitetusta päivityksestä on seuraavissa artikkeleissa:
 * [Kyselyn yleiskatsaus Power BI Desktopissa](desktop-query-overview.md)
 * [Ajoitetun päivityksen määrittäminen](refresh-scheduled-refresh.md)
 
-Lisätietoja Common Data Modelista on sen yleiskatsauksen sisältävässä artikkelissa:
-* [Common Data Model – yleiskatsaus](https://docs.microsoft.com/powerapps/common-data-model/overview)
+
 

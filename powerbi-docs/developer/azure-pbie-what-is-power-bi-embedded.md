@@ -1,25 +1,26 @@
 ---
-title: Mikä on Azure Power BI Embedded | Microsoft Docs
-description: Power BI Embeddedin tarkoituksena yksinkertaistaa sitä, miten riippumattomat ohjelmistotoimittajat ja -kehittäjät käyttävät Power BI -ominaisuuksia, auttamalla heitä lisäämään sovelluksiin nopeasti upeita visualisointeja, raportteja ja koontinäyttöjä.
+title: Mikä on Azure Power BI Embedded ja upotettu analysointi | Microsoft Docs
+description: Power BI Embedded on upotetun analysoinnin työkalu. Sen tarkoituksena on yksinkertaistaa sitä, miten riippumattomat ohjelmistotoimittajat ja -kehittäjät käyttävät Power BI -ominaisuuksia auttamalla heitä lisäämään sovelluksiin nopeasti upeita visualisointeja, raportteja ja koontinäyttöjä. Lue, miten käyttää upotetun analysoinnin ohjelmistoa, upotetun analysoinnin työkaluja tai upotetun liiketoimintatiedon hallinnan työkaluja Power BI Embeddin avulla.
 author: markingmyname
 ms.author: maghan
 manager: kfile
+ms.reviewer: ''
 ms.service: power-bi-embedded
 ms.component: ''
 ms.devlang: csharp, javascript
 ms.topic: overview
-ms.reviewer: ''
-ms.date: 07/31/2018
-ms.openlocfilehash: b46508aeca35769fb27324fb20f502ac66cb55ab
-ms.sourcegitcommit: fecea174721d0eb4e1927c1116d2604a822e4090
+ms.custom: seodec18
+ms.date: 12/10/2018
+ms.openlocfilehash: 70cb8f72e5749f7eed70d4476f3af87e272813f4
+ms.sourcegitcommit: f25464d5cae46691130eb7b02c33f42404011357
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39360328"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53180687"
 ---
-# <a name="what-is-power-bi-embedded-in-azure"></a>Mikä on Power BI Embedded Azuressa? 
+# <a name="what-is-power-bi-embedded-in-azure"></a>Mikä on Power BI Embedded Azuressa?
 
-Power BI Embeddedin tarkoituksena yksinkertaistaa sitä, miten riippumattomat ohjelmistotoimittajat ja -kehittäjät käyttävät Power BI -ominaisuuksia. Power BI Embedded yksinkertaistaa Power BI -ominaisuuksia auttamalla sinua lisäämään upeita visualisointeja, raportteja ja koontinäyttöjä sovelluksiisi nopeasti. Microsoft Azureen luotujen sovellusten tavoin käytössä on palveluita, kuten koneoppiminen ja IoT. Riippumattomat ohjelmistotoimittajat mahdollistavat asiakkaiden nopeiden ja tietoon perustuvien päätösten tekemisen kontekstissa, sillä tietojen välillä siirtyminen on sovelluksissa helppoa.
+Power BI Embeddedin tarkoituksena on yksinkertaistaa sitä, miten riippumattomat ohjelmistotoimittajat ja -kehittäjät käyttävät Power BI -ominaisuuksia upotetun analysoinnin avulla. Power BI Embedded yksinkertaistaa Power BI -ominaisuuksia auttamalla sinua lisäämään upeita visualisointeja, raportteja ja koontinäyttöjä sovelluksiisi nopeasti. Microsoft Azureen luotujen sovellusten tavoin käytössä on palveluita, kuten koneoppiminen ja IoT. Riippumattomat ohjelmistotoimittajat mahdollistavat asiakkaiden nopeiden ja tietoon perustuvien päätösten tekemisen kontekstissa, sillä tietojen välillä siirtyminen on sovelluksissa helppoa.
 
 > [!VIDEO https://www.youtube.com/embed/iEHfUuoZseo]
 
@@ -39,7 +40,7 @@ Onko käytössäsi sovellus, jossa on upotettua Power BI -sisältöä ja joka k�
 
 Power BI Embeddedin avulla voit keskittyä siihen, minkä osaat parhaiten, eli erinomaisten sovellusten luomiseen. Power BI Embeddedillä hallinta ja kehittäminen onnistuu niillä työkaluilla ja taidoilla, joita sinulla jo on.
 
-* [**Azure-portaali**](https://portal.azure.com/): verkkopohjainen sovellus kaikkien Azure-palveluiden hallintaan
+* [**Azure-portaali**](https://portal.azure.com/): Verkkopohjainen sovellus kaikkien Azure-palvelujen hallintaan
 * [**Visual Studio -koodi**](https://code.visualstudio.com/docs): maksuton, ladattava, avoimen lähdekoodin laajennuksia tukeva koodieditori Windows-, macOS- ja Linux-käyttöjärjestelmille
 * [**Power BI Desktop**](https://powerbi.microsoft.com/desktop/): maksuton, ladattava työkalu monipuolisten ja vuorovaikutteisten raporttien luomiseen visuaalisella analysoinnilla
 
@@ -48,7 +49,7 @@ REST-ohjelmointirajapinnan avulla Power BI Embedded sallii kehittämisen millä 
 ## <a name="engage-with-the-power-bi-engineering-team"></a>Ole yhteydessä Power BI:n tekniseen tiimiin
 
 * [Yhteisöt](https://community.powerbi.com/): Esitä Power BI -kysymyksiä
-* [Power BI -ideoita](https://ideas.powerbi.com): Pyydä ja äänestä ominaisuuksia
+* [Power BI -ideat](https://ideas.powerbi.com): Pyydä ja äänestä ominaisuuksia
 * [Reddit](https://www.reddit.com/r/PowerBI/): Keskustele Power BI:stä
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
@@ -57,4 +58,4 @@ Katso lisätietoja kapasiteetin solmusta [hinnoittelusivulta](https://azure.micr
 
 Lisätietoa Power BI Embedded ‑kapasiteetin luomisesta saat ohjeaiheesta [Power BI Embedded -kapasiteetin luominen Azure-portaalissa](azure-pbie-create-capacity.md)
 
-Jos haluat aloittaa Power BI -sisällön upottamisen, katso kohta [Power BI -koontinäyttöjen, -raporttien ja -ruutujen upottaminen](https://powerbi.microsoft.com/documentation/powerbi-developer-embedding-content/).
+Jos haluat aloittaa Power BI -sisällön upottamisen, katso artikkelia [Power BI -koontinäyttöjen, -raporttien ja -ruutujen upottaminen](https://powerbi.microsoft.com/documentation/powerbi-developer-embedding-content/).

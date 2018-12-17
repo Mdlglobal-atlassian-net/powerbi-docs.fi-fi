@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 11/06/2018
+ms.date: 12/06/2018
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 360ffdd61525244bd75e57c8c9c9aad25131a13d
-ms.sourcegitcommit: b23fdcc0ceff5acd2e4d52b15b310068236cf8c7
+ms.openlocfilehash: 92af01b7020f734f286d927650e58a5fea5d8047
+ms.sourcegitcommit: f25464d5cae46691130eb7b02c33f42404011357
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51267236"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53180825"
 ---
 # <a name="self-service-data-prep-in-power-bi-preview"></a>Omatoiminen tietojen valmistelu Power BI:ssä (esikatselu)
 
@@ -25,7 +25,7 @@ Tietojen määrä kasvaa jatkuvasti, ja on yhä haasteellisempaa saattaa tiedot 
 
 Power BI:n **tietovoiden** avulla organisaatiot voivat yhdistää eri lähteistä olevia tietoja ja valmistella ne mallinnusta varten. Analyytikot voivat luoda helposti tietovoita tutuilla, omatoimisilla työkaluilla. Tietovoiden avulla voidaan käyttää, muuntaa, yhdistää ja täydentää massadataa määrittämällä tietolähdeyhteyksiä, keräämis-, muuntamis- ja lataamislogiikka, päivitysaikatauluja ja paljon muuta. Lisäksi uusi malliin perustuva laskin, joka on osa tietovoita, tekee tietojen valmistelusta helpommin hallittavaa, deterministisempää ja yksinkertaisempaa tietoanalyytikoille ja muille raporttien luojille. Samaan tapaan kuin laskentataulukot käsittelevät kaikkien kaavojen uudelleenlaskennat, tietovuot hallitsevat entiteetin tai tietoelementin muutoksia puolestasi automatisoimalla päivitykset ja helpottamalla aiemmin vaivalloisia ja aikaa vieviä logiikan tarkistuksia jopa perustason tietojen päivityksen osalta. Tehtävät, joita valvomaan tarvittiin ennen datatutkijoita (ja lukuisia työtunteja tai -päiviä), voidaan nyt tietovoiden avulla hoitaa muutamalla analyytikon ja raportin luojan tekemällä napsautuksella. 
 
-Tiedot tallennetaan entiteetteinä Azure Data Lake Storage Gen2:n [**Common Data Model**](https://docs.microsoft.com/powerapps/common-data-model/overview) -malliin. Tietovoita luodaan ja hallitaan sovellustyötiloissa Power BI -palvelun avulla.  
+Tiedot tallennetaan entiteetteinä [**Common Data Modeliin**](https://docs.microsoft.com/powerapps/common-data-model/overview) Azure Data Lake Storage Gen2:ssa. Tietovoita luodaan ja hallitaan sovellustyötiloissa Power BI -palvelun avulla.  
 
 > [!NOTE]
 > Tietovuotoiminto on esikatselutilassa, ja sitä voidaan muuttaa ja päivittää ennen kuin se on yleisesti saatavilla.
@@ -68,6 +68,7 @@ Power BI voidaan määrittää tallentamaan tietovuotiedot organisaatiosi Azure 
 
 Power BI voi muodostaa yhteyden myös rakenteellisia tietoja Common Data Model -muodossa sisältäviin kansioihin, jotka on tallennettu organisaatiosi Azure Data Lake Storage -tilille. Tällaisia kansioita voivat luoda esimerkiksi Azure-tietopalvelut. Muodostamalla yhteyden näihin kansioihin analyytikot voivat käsitellä tietoja saumattomasti Power BI:ssä. 
 
+Katso lisätietoja Azure Data Lake Storage Gen2:sta ja tietovoiden integroinnista, mukaan lukien siitä, miten voit luoda tietovoita, jotka sijaitsevat organisaatiosi Azure Data Lakessa, artikkelista [Tietovuot ja Azure Data Lake -integrointi (esikatselu)](service-dataflows-azure-data-lake-integration.md).
 
 ## <a name="dataflow-capabilities-on-power-bi-premium"></a>Tietovuon ominaisuudet Power BI Premiumissa
 
@@ -105,9 +106,6 @@ Tallentamalla yritystietoja standardoidussa **Common Data Model** -muodossa BI-a
 * tietovoiden käytön aloittaminen kehittäjille.
 
 
-
-
-
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
 Tässä artikkelissa annettiin yleiskatsaus massadatan omatoimisesta tietojen valmistelusta Power BI:ssä ja esitettiin useita tapoja sen käyttämiseen. Seuraavissa artikkeleissa perehdytään tarkemmin tietovoiden yleisiin käyttöskenaarioihin. 
@@ -116,6 +114,7 @@ Tässä artikkelissa annettiin yleiskatsaus massadatan omatoimisesta tietojen va
 * [Laskettujen entiteettien käyttäminen Power BI Premiumissa (esikatselu)](service-dataflows-computed-entities-premium.md)
 * [Tietovoiden käyttäminen paikallisten tietolähteiden kanssa (esikatselu)](service-dataflows-on-premises-gateways.md)
 * [Kehittäjien resurssit Power BI -tietovoille (esikatselu)](service-dataflows-developer-resources.md)
+* [Tietovuot ja Azure Data Lake -integrointi (esikatselu)](service-dataflows-azure-data-lake-integration.md)
 
 Lisätietoja Power Querysta ja ajoitetusta päivityksestä on seuraavissa artikkeleissa:
 * [Kyselyn yleiskatsaus Power BI Desktopissa](desktop-query-overview.md)

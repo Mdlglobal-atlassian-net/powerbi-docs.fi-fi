@@ -1,6 +1,6 @@
 ---
-title: Upottaminen Power BI:llä
-description: Power BI tarjoaa ohjelmointirajapintoja, jotka mahdollistavat koontinäyttöjen ja raporttien upottamisen sovelluksiin.
+title: Upotettu analysointi Power BI:n avulla
+description: Power BI tarjoaa ohjelmointirajapintoja, jotka mahdollistavat koontinäyttöjen ja raporttien upotetun analysoinnin käyttämisen sovelluksiin. Lue lisää upottamisesta Power BI:n kanssa sekä PaaS-ympäristössä että SaaS-ympäristössä upotetun analysoinnin ohjelmiston, upotetun analysoinnin työkalujen tai upotetun liiketoimintatiedon työkalujen avulla.
 author: markingmyname
 ms.author: maghan
 manager: kfile
@@ -8,15 +8,16 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: overview
-ms.date: 07/31/2018
-ms.openlocfilehash: 7b96e671a6fe9b450fff683ced3caa611ae70bd7
-ms.sourcegitcommit: 698b788720282b67d3e22ae5de572b54056f1b6c
+ms.custom: seodec18
+ms.date: 12/10/2018
+ms.openlocfilehash: a4c0a66fb70797cc8b42094c65b23c71944b67a2
+ms.sourcegitcommit: f25464d5cae46691130eb7b02c33f42404011357
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45973766"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53180319"
 ---
-# <a name="embedding-with-power-bi"></a>Upottaminen Power BI:llä
+# <a name="embedded-analytics-with-power-bi"></a>Upotettu analysointi Power BI:n avulla
 
 Power BI -palvelu (SaaS) ja Power BI Embedded -palvelu Azuressa (PaaS) sisältävät ohjelmointirajapintoja raporttinäkymien ja raporttien upottamista varten. Tämä ominaisuus tarkoittaa, että saat tarvittavat ominaisuudet ja oikeudet käyttää uusimpia Power BI -toimintoja, kuten koontinäyttöjä, yhdyskäytäviä ja sovellustyötiloja, sisältöjen upottamiseen.
 
@@ -43,11 +44,11 @@ Näyte siitä, kuinka upottaminen toimii, annetaan artikkelissa [JavaScript-upot
 
 *Sisäinen sovellus, [SharePoint Online](https://powerbi.microsoft.com/blog/integrate-power-bi-reports-in-sharepoint-online/), [Microsoft Teams -integrointi (sinulla on oltava järjestelmänvalvojan oikeudet)](https://powerbi.microsoft.com/blog/power-bi-teams-up-with-microsoft-teams/) ja [Microsoft Dynamics](https://docs.microsoft.com/dynamics365/customer-engagement/basics/add-edit-power-bi-visualizations-dashboard) ovat esimerkkejä upottamisesta organisaation käyttöön.*
 
-Organisaation käyttöön upottamisen osalta katso seuraavia ohjeaiheita:
+Organisaatiolle tarkoitetun upottamisen osalta katso seuraavia ohjeaiheita:
 
 * [Raportin integrointi sovellukseen](embed-sample-for-your-organization.md)
 
-Itsepalvelutoiminnot, kuten muun muassa muokkaus ja tallennus, ovat käytettävissä [JavaScript-ohjelmointirajapinnassa](https://github.com/Microsoft/PowerBI-JavaScript), kun käytetään upotusta Power BI -käyttäjien käyttöön.
+Itsepalvelutoiminnot, kuten muokkaus ja tallennus, ovat käytettävissä [JavaScript-ohjelmointirajapinnassa](https://github.com/Microsoft/PowerBI-JavaScript), kun käytetään upotusta Power BI -käyttäjille.
 
 Voit käyttää [upottamisen määritystyökalua](https://aka.ms/embedsetup/UserOwnsData), jonka avulla pääset nopeasti alkuun ja voit ladata mallisovelluksen, joka opastaa, miten raportti integroidaan yrityksessäsi.
 
@@ -61,7 +62,7 @@ Voit käyttää [upottamisen määritystyökalua](https://aka.ms/embedsetup/User
 
 Power BI Embeddedistä on hyötyä riippumattomille ohjelmistotoimittajille, niiden kehittäjille ja asiakkaille. Esimerkiksi riippumaton ohjelmistotoimittaja voi aloittaa visualisointien luomisen ilmaiseksi Power BI Desktopilla. Riippumattomat ohjelmistotoimittajat voivat päästä nopeammin markkinoille vähentämällä visuaalista analyyttistä kehitystyötä ja erottumalla kilpailijoista eriytetyillä kokemuksilla tiedoista. Riippumattomat ohjelmistotoimittajat voivat halutessaan veloittaa palkkion upotettujen analyysitoimintojen avulla luodusta lisäarvosta.
 
-Power BI Embeddedin ansiosta asiakkaiden ei tarvitse tietää mitään Power BI:stä. Upotetun sovelluksen luomiseen tarvitaan vain yksi Power BI Pro -tili. Power BI Pro -tili toimii sovelluksesi päätilinä (tätä voi pitää eräänlaisena välitystilinä). Power BI Pro -tilin avulla voit luoda myös upotustunnuksia, jotka mahdollistavat pääsyn sovelluksesi omistamiin/hallitsemiin koontinäyttöihin ja raportteihin Power BI -palvelussa.
+Power BI Embeddedin ansiosta asiakkaiden ei tarvitse tietää mitään Power BI:stä. Upotetun sovelluksen luomiseen tarvitaan vain yksi Power BI Pro -tili. Power BI Pro -tili toimii sovelluksesi päätilinä (tätä päätiliä voi pitää eräänlaisena välitystilinä). Power BI Pro -tilin avulla voit luoda myös upotustunnuksia, jotka mahdollistavat pääsyn sovelluksesi omistamiin/hallitsemiin koontinäyttöihin ja raportteihin Power BI -palvelussa.
 
 Power BI Embeddedia käyttävät kehittäjät voivat keskittyä kehittämään sovelluksen keskeisiä toimintoja visualisointien ja analytiikan kehittämisen sijaan. Kehittäjät voivat nopeasti vastata asiakkaan raporttiin ja koontinäyttöön liittyviin vaatimuksiin ja upottaa helposti täysin dokumentoituja ohjelmointirajapintoja ja SDK:ita. Riippumattomat ohjelmistotoimittajat mahdollistavat asiakkaiden nopeiden ja tietoon perustuvien päätösten tekemisen kontekstissa mistä tahansa laitteesta, sillä tietojen välillä siirtyminen on sovelluksissa helppoa.
 

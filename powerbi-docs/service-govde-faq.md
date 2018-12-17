@@ -1,26 +1,29 @@
 ---
-title: Usein kysyttyjä kysymyksiä Power BI:n Saksan valtionhallinnon asiakkaille
+title: Usein kysytyt kysymykset Saksan valtionhallinnon asiakkaille
 description: Vastauksia usein kysyttyihin kysymyksiin Saksan valtionhallinnon asiakkaille Power BI:n Saksan valtionhallinnon palvelusta
 author: davidiseminger
 manager: kfile
 ms.reviewer: ''
+ms.custom: seodec18
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 11/28/2018
+ms.date: 12/06/2018
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 4a602a8494261705d61c70679d9511993afe69af
-ms.sourcegitcommit: 2ae660a7b70fce23eb58b159d049eca44a664f2c
+ms.openlocfilehash: dfc240e50f2fa88fc40b5f6f8d80b1106c388cd5
+ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "52670068"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53026450"
 ---
 # <a name="frequently-asked-questions-for-power-bi-for-germany-cloud-customers"></a>Usein kysyttyjä kysymyksiä Power BI:n pilvipalvelun saksalaisille asiakkaille
 **Power BI -palvelusta** on saatavilla Euroopan unionin ja Euroopan Vapaakauppajärjestön sopimuksen (EU/EFTA) asiakkaille versio, johon viitataan usein nimellä Microsoft Cloud Deutschland (MCD). Tässä artikkelissa kuvattu **Power BI -palvelun** versio on suunniteltu erityisesti EU/EFTA -asiakkaille ja on erillinen ja erilainen kuin **Power BI -palvelun** kaupallinen versio, joka on tarjolla valtionhallinnon asiakkaille.
 
 ![](media/service-govde-faq/govde-faq_01.png)
+
+## <a name="questions-and-answers"></a>Kysymyksiä ja vastauksia
 
 Seuraavat kysymykset ja vastaukset tarjoavat tärkeää tietoa Microsoft Cloud Deutschlandin (MCD) Power BI Pro -palvelusta, joka on tarjolla oleva Power BI pilvipalvelu nimenomaisesti EU/EFTA -asiakkaille.
 
@@ -68,7 +71,7 @@ Seuraavat kysymykset ja vastaukset tarjoavat tärkeää tietoa Microsoft Cloud D
 | Azure-portaali (Embedded:lle) |[https://portal.microsoftazure.de/](https://portal.microsoftazure.de/) |[https://portal.azure.com/](https://portal.azure.com/) |
 | Yhteisö |[https://community.powerbi.com/](https://community.powerbi.com/) |[https://community.powerbi.com/](https://community.powerbi.com/) |
 
-### <a name="next-steps"></a>Seuraavat vaiheet
+## <a name="next-steps"></a>Seuraavat vaiheet
 Voit tehdä Power BI:llä kaikenlaista. Saat lisätietoja ja kursseja, mukaan lukien artikkelin, jossa näytetään, miten voit rekisteröityä palveluun, tutustumalla seuraaviin resursseihin:
 
 * [Power BI:n ohjattu oppiminen](guided-learning/gettingstarted.yml?tutorial-step=1)

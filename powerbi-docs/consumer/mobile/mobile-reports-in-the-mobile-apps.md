@@ -9,12 +9,12 @@ ms.component: powerbi-mobile
 ms.topic: conceptual
 ms.date: 08/17/2018
 ms.author: maggies
-ms.openlocfilehash: 7a5c60eea81eeb3a1f4e8a7f5b807fd8c7bfb6b5
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 694ae2cd6f77fbcf898a984b135fb65b9163a43b
+ms.sourcegitcommit: f25464d5cae46691130eb7b02c33f42404011357
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46547242"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53180986"
 ---
 # <a name="explore-reports-in-the-power-bi-mobile-apps"></a>Raporttien tutkiminen Power BI -mobiilisovelluksissa
 Koskee seuraavia:
@@ -105,6 +105,16 @@ Kun napautat tiettyä kohtaa visualisoinnissa, voit *porautumalla* siirtyä Powe
 Takaisin-painike vie sinut takaisin raportin edelliselle sivulle.
 
 Lue lisää [porautumisen lisäämisestä Power BI Desktopiin](../../desktop-drillthrough.md).
+
+## <a name="show-data-and-copy-values"></a>Tietojen näyttäminen ja arvojen kopioiminen
+
+Voit tarkastella visualisoinnin taustalla olevia tietoja valitsemalla valikkoasetusten kolme pistettä (**...**) visualisoinnin oikeasta yläkulmasta puhelinraportissa. Valitse sen jälkeen **Näytä tiedot**.
+
+![Power BI -mobiilisovelluksen Näytä tiedot -valikkovaihtoehto](./media/mobile-reports-in-the-mobile-apps/copy-data-visual.png)
+
+Esitetyn taulukon solun pitkä napautus tuo näkyviin alkuperäisen valinta- ja kopiointivalikon, joten voit valita kopioitavat tiedot taulukosta (tai taulukon kokonaan).
+
+![Porautuminen raportissa Power BI -mobiilisovelluksessa](./media/mobile-reports-in-the-mobile-apps/copy-data-table.png)
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 * [Puhelimelle optimoitujen Power BI -raporttien tarkasteleminen ja käyttäminen](mobile-apps-view-phone-report.md)

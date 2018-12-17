@@ -9,13 +9,14 @@ ms.service: powerbi
 ms.component: powerbi-admin
 ms.topic: conceptual
 ms.date: 10/21/2018
+ms.custom: seodec18
 LocalizationGroup: Premium
-ms.openlocfilehash: 451727d473b59afd362e4f31e8aef634d2168f83
-ms.sourcegitcommit: 1e4fee6d1f4b7803ea285eb879c8d5a4f7ea8b85
+ms.openlocfilehash: cbfee8034639a65517f9adc57cc95dd1271e6044
+ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51717627"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53025438"
 ---
 # <a name="what-is-microsoft-power-bi-premium"></a>Mikä on Microsoft Power BI Premium?
 
@@ -45,11 +46,11 @@ Alla olevassa taulukossa on yhteenveto jaetun kapasiteetin ja Premium-kapasiteet
 |  | Jaettu kapasiteetti | Power BI Premium -kapasiteetti |
 | --- | --- | --- |
 | **Päivitystaajuus** |8/päivä |48/päivä |
-| **Eristys erillisellä laitteistolla** |![](media/service-premium/not-available.png "Ei käytettävissä") |![](media/service-premium/available.png "Käytettävissä") |
+| **Eristys erillisellä laitteistolla** |![Ei käytettävissä](media/service-premium/not-available.png) |![Käytettävissä](media/service-premium/available.png) |
 | **Yritysjakelu**  _**kaikille käyttäjille**_ | | |
-| Sovellukset ja jakaminen |![](media/service-premium/not-available.png "Ei käytettävissä") |![](media/service-premium/available.png "Käytettävissä")<sup>1</sup> |
-| Upotettu ohjelmointirajapinta ja ohjausobjektit |![](media/service-premium/not-available.png "Ei käytettävissä") |![](media/service-premium/available.png "Käytettävissä")<sup>2</sup> |
-| **Power BI -raporttien paikallinen julkaisu** |![](media/service-premium/not-available.png "Ei käytettävissä") |![](media/service-premium/available.png "Käytettävissä") |
+| Sovellukset ja jakaminen |![Ei käytettävissä](media/service-premium/not-available.png) |![Käytettävissä](media/service-premium/available.png) |
+| Upotettu ohjelmointirajapinta ja ohjausobjektit |![Ei käytettävissä](media/service-premium/not-available.png) |![Käytettävissä](media/service-premium/available.png)<sup>2</sup> |
+| **Power BI -raporttien paikallinen julkaisu** |![Ei käytettävissä](media/service-premium/not-available.png) |![Käytettävissä](media/service-premium/available.png) |
 | | | |
 
 *<sup>1</sup> Jos haluat lisätietoja, katso kohta [Ominaisuudet käyttöoikeustyypin mukaan](service-features-license-type.md).*  
@@ -88,7 +89,7 @@ Power BI Premium on saatavilla solmumäärityksinä eri näennäisydinkapasiteet
 
 Voit ajatella kuormituksia Power BI:ssä palveluina, jotka voit paljastaa käyttäjille. Oletusarvoisesti **Power BI Premiumin** ja **Power BI Embeddedin** kapasiteetit tukevat vain kuormitusta, joka liittyy Power BI -kyselyiden suorittamiseen pilvipalvelussa.
 
-Nyt esikatselun tuki tarjotaan myös kahdelle muulle kuormitukselle: **sivutetut raportit** ja **tietovuot**. Voit ottaa nämä kuormitukset käyttöön Power BI -hallintaportaalin tai Power BI REST -ohjelmointirajapinnan kautta. Voit määrittää enimmäismuistin jokaiselle kuormitukselle. Näin voit hallita sitä, miten eri kuormitukset vaikuttavat toistensa toimintaan. Lisätietoja on kohdassa [Kuormituksien määrittäminen](service-admin-premium-manage.md#configure-workloads).
+Esikatselun tuki tarjotaan nyt myös kahdelle muulle kuormitukselle: **sivutetut raportit** ja **tietovuot**. Voit ottaa nämä kuormitukset käyttöön Power BI -hallintaportaalin tai Power BI REST -ohjelmointirajapinnan kautta. Voit määrittää enimmäismuistin jokaiselle kuormitukselle. Näin voit hallita sitä, miten eri kuormitukset vaikuttavat toistensa toimintaan. Lisätietoja on kohdassa [Kuormituksien määrittäminen](service-admin-premium-manage.md#configure-workloads).
 
 ### <a name="default-memory-settings"></a>Oletusmuistiasetukset
 

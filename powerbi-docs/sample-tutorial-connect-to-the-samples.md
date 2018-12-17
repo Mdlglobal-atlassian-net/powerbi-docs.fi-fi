@@ -1,37 +1,36 @@
 ---
-title: Power BI:n mallien käyttäminen
-description: Power BI:n mallien käyttäminen
+title: Yhteyden muodostaminen malleihin Power BI -palvelussa
+description: Opi asentamaan ja tutkimaan malleja Power BI -palvelussa.
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: amac
+ms.custom: seodec18
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 06/23/2018
+ms.date: 12/06/2018
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: 10ba57b203c100dffafa6563e85fd06b7af2eecb
-ms.sourcegitcommit: 1e4fee6d1f4b7803ea285eb879c8d5a4f7ea8b85
+ms.openlocfilehash: fc27054b79497658249b49d832a81223987b7be8
+ms.sourcegitcommit: f25464d5cae46691130eb7b02c33f42404011357
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51718018"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53180963"
 ---
-# <a name="the-power-bi-samples"></a>Power BI -mallit
+#  <a name="connect-to-the-samples-in-the-power-bi-service"></a>Yhteyden muodostaminen malleihin Power BI -palvelussa
 
-Suosittelemme aloittamaan [Power BI:n mallitietojoukkoja](sample-datasets.md) käsittelevästä artikkelista (englanniksi). Artikkelin avulla opit kaiken malleista, niiden hakemisesta, tallentamisesta ja käyttämisestä ja voit tutustua joihinkin mallien kertomiin tarinoihin. Kun olet omaksunut perusasiat, palaa tähän opetusohjelmaan.   
+Tässä opetusohjelmassa opit 
+- tuomaan mallisisältöpaketin, lisäämään sen Power BI -palveluun ja avaamaan sen sisällön. *Sisältöpaketti* on mallityyppi, jossa tietojoukko on niputettu yhteen koontinäytön ja raportin kanssa. 
+- avaamaan .pbix-mallitiedoston Power BI Desktop -versiossa.
 
-### <a name="prerequisites"></a>Edellytykset
+Jos haluat tätä ennen hieman lisää taustatietoja, suosittelemme aloittamaan [Power BI:n mallitietojoukkoja](sample-datasets.md) käsittelevästä artikkelista. Artikkelin avulla opit kaiken malleista, niiden hakemisesta, tallentamisesta ja käyttämisestä ja voit tutustua joihinkin mallien kertomiin tarinoihin. Kun olet omaksunut perusasiat, palaa tähän opetusohjelmaan.   
+
+## <a name="prerequisites"></a>Edellytykset
 Mallit ovat käytettävissä Power BI -palvelun ja Power BI Desktop -version kautta. Käytämme esimerkkinä Jälleenmyyntianalyysimallia.
 
 Tässä opetusohjelmassa käytettävän *Jälleenmyyntianalyysin* mallisisältöpaketti koostuu koontinäytöstä, raportista ja tietojoukosta.
 Ennen aloittamista voit tutustua tähän kyseiseen sisältöpakettiin ja sen skenaarioon katsomalla [Jälleenmyyntianalyysimallin esittelyn](sample-retail-analysis.md).
-
-## <a name="about-this-tutorial"></a>Tietoja tästä opetusohjelmasta
-Tässä opetusohjelmassa opit 
-- tuomaan mallisisältöpaketin, lisäämään sen Power BI -palveluun ja avaamaan sen sisällön. *Sisältöpaketti* on mallityyppi, jossa tietojoukko on niputettu yhteen koontinäytön ja raportin kanssa. 
--  avaamaan .pbix-mallitiedoston Power BI Desktop -versiossa.
-
 
 ## <a name="samples-and-power-bi-service"></a>Mallit ja Power BI -palvelu
 

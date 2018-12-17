@@ -1,21 +1,22 @@
 ---
-title: Azure Consumption Insights -tietoihin yhdistäminen Power BI Desktopissa (beeta)
+title: Yhdistäminen Azure Consumption Insights -tietoihin (beetaversio)
 description: Voit yhdistää helposti Azureen ja saada merkityksellisiä tietoja kulutuksesta ja käytöstä Power BI Desktopin avulla
 author: davidiseminger
 manager: kfile
 ms.reviewer: ''
+ms.custom: seodec18
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/13/2018
+ms.date: 12/06/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: c770423b81c6d5cd4135539d8d44c3cc46f8b6fe
-ms.sourcegitcommit: 6a6f552810a596e1000a02c8d144731ede59c0c8
+ms.openlocfilehash: 622a236ba2a240202a570a07e7b6abb201da9dde
+ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/14/2018
-ms.locfileid: "51619605"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53026778"
 ---
 # <a name="connect-to-azure-consumption-insights-in-power-bi-desktop-beta"></a>Azure Consumption Insightsiin yhdistäminen Power BI Desktopissa (beeta)
 **Azure Consumption Insights** -liittimen avulla voit yhdistää **Power BI Desktopin** Azureen ja saada tarkkoja tietoja organisaatiosi Azure-palveluiden käytöstä. Voit myös luoda mittayksiköitä, mukautettuja sarakkeita ja visualisointeja ja raportoida ja jakaa tietoja organisaatiosi Azuren käytöstä. Tämä **Azure Consumption and Insights** -liitin on beetaversio, johon saattaa tulla muutoksia.
@@ -50,15 +51,15 @@ Anna seuraavaksi *tiliavaimesi* yhteyden muodostamista varten.
   ![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_09.png)
 
 Kun annat *tiliavaimesi* ja valitset **Yhdistä**, näyttöön avautuu **selainikkuna**, jossa on yhdeksän käytettävissä olevaa taulukkoa: 
-* **Budgets**: näyttää budjettitiedot todellisten kustannusten tarkastelemiseksi tai olemassa oleviin budjettitavoitteisiin vertailua varten. 
-* **MarketPlace**: näyttää käyttöön perustuvat Azure Marketplace -maksut.
-* **PriceSheets**: näyttää käytettävissä olevat hinnat mittarin mukaan rekisteröintiä varten.
-* **RICharges**: näyttää näennäiskoneen varattuihin esiintymiin liittyvät maksut viimeisten 24 kuukauden ajalta.
-* **RIRecommendations_Single**: näyttää näennäiskoneen varatun esiintymän ostosuositukset käyttötrendien perusteella yhdessä tilauksessa viimeisten 7, 30 tai 60 päivän aikana.
-* **RIRecommendations_Shared**: näyttää näennäiskoneen varatun esiintymän ostosuositukset käyttötrendien perusteella kaikissa tilauksissa viimeisten 7, 30 tai 60 päivän aikana.
-* **RIUsage**: näyttää näennäiskoneen varattujen esiintymien kulutustiedot viimeisen kuukauden aikana.
-* **Summaries**: näyttää kuukausittaisen yhteenvedon saldoista, uusista ostoista, Microsoft Azure Marketplacen palvelumaksuista, muutoksista ja ylitysmaksuista.
-* **UsageDetails**: näyttää erittelyn kulutetuista määristä ja arvioidut maksut rekisteröintiä varten.
+* **Budgets**: Näyttää budjettitiedot todellisten kustannusten tai käytön tarkastelemiseksi olemassa oleviin budjettitavoitteisiin verrattuna. 
+* **MarketPlace**: Näyttää käyttöön perustuvat Azure Marketplace -maksut.
+* **PriceSheets**: Näyttää käytettävissä olevat hinnat mittarin mukaan rekisteröintiä varten.
+* **RICharges**: Näyttää varattuihin esiintymiin liittyvät maksut viimeisten 24 kuukauden ajalta.
+* **RIRecommendations_Single**: Näyttää varatun esiintymän ostosuositukset käyttötrendien perusteella yhdessä tilauksessa viimeisten 7, 30 tai 60 päivän ajalta.
+* **RIRecommendations_Shared**: Näyttää varatun esiintymän ostosuositukset käyttötrendien perusteella kaikissa tilauksissa viimeisten 7, 30 tai 60 päivän ajalta.
+* **RIUsage**: Näyttää varattujen esiintymien kulutustiedot viimeisen kuukauden ajalta.
+* **Summaries**: Näyttää kuukausittaisen yhteenvedon saldoista, uusista ostoista, Microsoft Azure Marketplacen palvelumaksuista, muutoksista ja ylitysmaksuista.
+* **UsageDetails**: Näyttää erittelyn kulutetuista määristä ja arvioidut maksut rekisteröintiä varten.
 
 Voit avata esikatselun valitsemalla minkä tahansa taulukon vieressä olevan valintaruudun. Voit valita yhden tai useamman taulukon valitsemalla taulukon nimen vieressä olevan ruudun ja sen jälkeen **Lataa**.
 
@@ -108,10 +109,10 @@ Osa asiakkaista loi visualisointeja *Azure-yrityssovellusliittimellä (beeta)*, 
 
 Jotta siirtyminen uudempaan **Azure Consumption Insights** -liittimeen olisi asiakkaille helpompaa ja he pystyisivät säilyttämään tekemänsä mukautetut koontinäytöt tai raportit, seuraavissa vaiheissa esitellään, kuinka uuteen liittimeen siirrytään.
 
-### <a name="step-1-connect-to-azure-using-the-new-connector"></a>Vaihe 1: yhdistäminen Azureen käyttämällä uutta liitintä
+### <a name="step-1-connect-to-azure-using-the-new-connector"></a>Vaihe 1: Yhdistä Azureen uuden liittimen avulla
 Ensimmäinen vaihe on yhteyden muodostaminen **Azure Consumption Insights** -liittimellä, mikä on kuvattu tarkemmin edellä tässä artikkelissa. Valitse tässä vaiheessa **Power BI Desktopin** **Aloitus**-valintanauhasta **Nouda tiedot > Tyhjä kysely**.
 
-### <a name="step-2-use-the-advanced-editor-to-create-a-query"></a>Vaihe 2: kyselyn luominen laajennetun editorin avulla
+### <a name="step-2-use-the-advanced-editor-to-create-a-query"></a>Vaihe 2: Luo kysely laajennetun editorin avulla
 Valitse **kyselyeditorin** **Aloitus**-valintanauhan **Kysely**-osasta **Laajennettu editori**. Syötä avautuvaan **Laajennettu editori** -ikkunaan seuraava kysely:
 
     let    
@@ -127,7 +128,7 @@ Sinun tulee luonnollisesti korvata *enrollmentNumber*-arvo omalla rekisteröinti
 
 Kun valitset **Laajennettu editori** -ikkkunan **Valmis**-painikkeen, esikatselu päivittyy ja näet taulukossa tiedot määrittämältäsi kuukausiväliltä. Valitse **Sulje ja ota käyttöön** ja palaa.
 
-### <a name="step-3-move-measures-and-custom-columns-to-the-new-report"></a>Vaihe 3: mittayksiköiden ja mukautettujen sarakkeiden siirtäminen uuteen raporttiin
+### <a name="step-3-move-measures-and-custom-columns-to-the-new-report"></a>Vaihe 3: Siirrä mittayksiköt ja mukautetut sarakkeet uuteen raporttiin
 Seuraavaksi on siirrettävä luomasi mukautetut sarakkeet tai mittayksiköt uuteen tietotaulukkoon. Vaiheet ovat seuraavat:
 
 1. Avaa Muistio (tai muu tekstieditori).
@@ -137,14 +138,14 @@ Seuraavaksi on siirrettävä luomasi mukautetut sarakkeet tai mittayksiköt uute
 3. Muuta *Kysely1*:n nimeksi alkuperäisen tietotaulukon nimi.
 4. Luo taulukkoon uusia mittayksiköitä ja mukautettuja sarakkeita napsauttamalla taulukkoa hiiren kakkospainikkeella ja valitsemalla **Uusi mittayksikkö**. Leikkaa ja liimaa sen jälkeen tallennetut mittayksiköt ja sarakkeet, kunnes ne ovat kaikki valmiit.
 
-### <a name="step-4-re-link-tables-that-had-relationships"></a>Vaihe 4: suhteita sisältäneiden taulukoiden uudelleenlinkittäminen
+### <a name="step-4-re-link-tables-that-had-relationships"></a>Vaihe 4: Linkitä uudelleen suhteita sisältäneet taulukot
 Monissa koontinäytöissä on lisäksi taulukoita, joita käytetään hakuun tai suodatukseen, kuten päivämäärätaulukoita tai mukautettuihin projekteihin käytettyjä taulukoita. Näiden suhteiden muodostaminen uudelleen ratkaisee useimmat jäljellä olevat ongelmat. Näin voit tehdä sen.
 
 - Valitse **Power BI Desktopin** **Mallinnus**-välilehdeltä **Suhteiden hallinta**, jolloin näyttöön avautuu ikkuna, jossa voit hallita mallin sisältämiä suhteita. Linkitä taulukot uudelleen tarpeen mukaan.
    
     ![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_12.png)
 
-### <a name="step-5-verify-your-visuals-and-adjust-field-formatting-as-needed"></a>Vaihe 5: visualisointien tarkistaminen ja kentän muotoilun muuttaminen tarpeen mukaan
+### <a name="step-5-verify-your-visuals-and-adjust-field-formatting-as-needed"></a>Vaihe 5: Tarkista visualisoinnit ja säädä kentän muotoilua tarpeen mukaan
 Kun olet päässyt näin pitkälle, alkuperäisten visualisointiesi, taulukoiden ja yli- ja alirakenteiden pitäisi pääasiassa toimia odotetusti. Muotoiluun saattaa kuitenkin olla tarpeen tehdä joitakin pieniä muokkauksia, jotta kaikki näyttää juuri haluamaltasi. Silmäile kaikki koontinäytöt ja visualisoinnit läpi varmistaaksesi, että ne näyttävät siltä kuin haluat.
 
 ## <a name="using-the-azure-consumption-and-insights-aci-api-to-get-consumption-data"></a>Azure Consumption and Insights (ACI) -ohjelmointirajapinnan käyttö kulutustietojen saamiseen

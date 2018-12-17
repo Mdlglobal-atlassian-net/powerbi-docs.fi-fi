@@ -7,19 +7,19 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 11/12/2018
+ms.date: 12/05/2018
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: d2d8bef9689fd2e9db99c0a521a5ee326845b1de
-ms.sourcegitcommit: ea77827127e0781f1d6877c0a3078aec7eb6694a
+ms.openlocfilehash: 3d4bcff012a8abb53d82dea2a8514d654056736a
+ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51611356"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53026243"
 ---
 # <a name="the-new-filter-experience-in-power-bi-reports-preview"></a>Uusi suodatuskokemus Power BI -raporteissa (esikatselu)
 
-Tässä artikkelissa havainnollistetaan uusi suodatuskokemus: Power BI -suodattimet saavat uusia toimintoja ja uuden rakenteen. Kun suunnittelet raportteja Power BI Desktopissa tai Power BI -palvelussa, voit saada Suodattimet-ruudun näyttämään samalta ja toimimaan samoin kuin koko raportti. Uudessa kokemuksessa vanha Suodattimet-ruutu toimii suodattimen muokkausruutuna ja uusi Suodattimet-ruutu on ainoa, jonka raportin kuluttajat näkevät. 
+Tässä artikkelissa käsitellään uutta suodatuskokemusta: Power BI -suodattimet saavat uusia toimintoja ja uuden rakenteen. Kun suunnittelet raportteja Power BI Desktopissa tai Power BI -palvelussa, voit saada Suodattimet-ruudun näyttämään samalta ja toimimaan samoin kuin koko raportti. Uudessa kokemuksessa vanha Suodattimet-ruutu toimii suodattimen muokkausruutuna ja uusi Suodattimet-ruutu on ainoa, jonka raportin kuluttajat näkevät. 
  
 ![Oletusnäkymä (ei lisämukautuksia)](media/power-bi-report-filter-preview/power-bi-filter-reading.png)
 
@@ -98,7 +98,7 @@ Voit myös muotoilla näitä elementtejä suodatinkorteissa sen mukaan, onko ne 
 
     ![Valitse Muotoilu-kuvake](media/power-bi-report-filter-preview/power-bi-filter-format.png)    
 
-1. Laajenna **suodatinruutu** määrittääksesi taustan värin, fontin, kuvakkeen ja vasemman reunan täydentämään raporttisivua.
+1. Laajenna **suodatinruutu** määrittääksesi taustan värin, kuvakkeen ja vasemman reunan täydentämään raporttisivua.
 
     ![Laajenna suodatinruutu](media/power-bi-report-filter-preview/power-bi-filter-format-pane.png)
 

@@ -9,13 +9,14 @@ ms.component: powerbi-admin
 ms.topic: conceptual
 ms.author: mblythe
 ms.date: 01/02/2018
+ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: 920fa426f98098768583e07d8f2b6c9825bfad1b
-ms.sourcegitcommit: 05303d3e0454f5627eccaa25721b2e0bad2cc781
+ms.openlocfilehash: 466e91786dcb75f09db808306ba7d9d9f486718b
+ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "52578424"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53025116"
 ---
 # <a name="row-level-security-rls-with-power-bi"></a>Rivitason suojaus (RLS) Power BI:ssä
 
@@ -41,7 +42,7 @@ Jotta voit hallita tietomallisi suojausta, sinun kannattaa toimia seuraavasti.
 1. Valitse **ellipsi (...)**  tietojoukon kohdalta.
 2. Valitse **Suojaus**.
    
-   ![](media/service-admin-rls/rls-security.png)
+   ![Ota suojaussuodattimet käyttöön molempiin suuntiin](media/service-admin-rls/rls-security.png)
 
 Tämä siirtää sinut RLS-sivulle, jolla voit lisätä jäseniä Power BI Desktopissa luomaasi rooliin. Suojaus on vain tietojoukon omistajien käytettävissä. Jos tietojoukko on osa ryhmää, vain ryhmän järjestelmänvalvojat näkevät suojausvaihtoehdon. 
 
@@ -53,17 +54,17 @@ Voit vain luoda tai muokata rooleja Power BI Desktopissa.
 
 Voit lisätä jäsenen rooliin kirjoittamalla lisättävän käyttäjän, suojausryhmän tai jakeluluettelon sähköpostiosoitteen tai nimen. Jäsenen on oltava organisaatiostasi. Et voi lisätä Power BI:ssä luotuja ryhmiä.
 
-![](media/service-admin-rls/rls-add-member.png)
+![Lisää jäsen](media/service-admin-rls/rls-add-member.png)
 
 Roolin nimen tai jäsenten vieressä suluissa olevasta luvusta voit myös nähdä, kuinka monta jäsentä rooliin kuuluu.
 
-![](media/service-admin-rls/rls-member-count.png)
+![Roolin jäsenet](media/service-admin-rls/rls-member-count.png)
 
 ### <a name="remove-members"></a>Jäsenien poistaminen
 
 Voit poistaa jäseniä valitsemalla hänen nimensä vieressä olevan X-merkin. 
 
-![](media/service-admin-rls/rls-remove-member.png)
+![Poista jäsen](media/service-admin-rls/rls-remove-member.png)
 
 ## <a name="validating-the-role-within-the-power-bi-service"></a>Roolin vahvistaminen Power BI -palvelussa
 
@@ -72,15 +73,15 @@ Voit varmistaa, että määrittämäsi rooli toimii oikein, testaamalla roolin.
 1. Valitse roolin vieressä oleva **ellipsi (...)**.
 2. Valitse **Testaa tietoja roolina**.
 
-![](media/service-admin-rls/rls-test-role.png)
+![Testaa roolina](media/service-admin-rls/rls-test-role.png)
 
 Näyttöön tulevat raportit, jotka ovat käytettävissä tälle roolille. Koontinäyttöjä ei esitetä tässä näkymässä. Yläosassa olevasta sinisestä palkista näet, mikä on käytössä.
 
-![](media/service-admin-rls/rls-test-role2.png)
+![Tarkastellaan nyt seuraavana: <role>](media/service-admin-rls/rls-test-role2.png)
 
 Voit testata muita rooleja tai roolien yhdistelmiä valitsemalla **Tarkastellaan nyt seuraavana**.
 
-![](media/service-admin-rls/rls-test-role3.png)
+![Testaa muita rooleja](media/service-admin-rls/rls-test-role3.png)
 
 Voit halutessasi tarkastella tietoja tiettynä henkilönä tai valita käytettävissä olevien roolien yhdistelmän ja vahvistaa, että ne toimivat. 
 
@@ -95,7 +96,7 @@ Jos julkaiset Power BI Desktop -raportin sovelluksen työtilassa Power BI -palve
 > [!WARNING]
 > Jos olet määrittänyt sovelluksen työtilan niin, että jäsenillä on muokkausoikeudet, RLS-rooleja ei sovelleta niihin. Käyttäjät voivat nähdä kaikki tiedot.
 
-![](media/service-admin-rls/rls-group-settings.png)
+![Ryhmän asetukset](media/service-admin-rls/rls-group-settings.png)
 
 [!INCLUDE [include-short-name](./includes/rls-limitations.md)]
 

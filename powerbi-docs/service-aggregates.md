@@ -9,13 +9,14 @@ ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 08/29/2018
 ms.author: mblythe
+ms.custom: seodec18
 LocalizationGroup: Reports
-ms.openlocfilehash: a79fc16f183edb359c15da31ebd6f2747fa7859d
-ms.sourcegitcommit: fb1885da7cf11367660edbf7b7346dc039ee9b5d
+ms.openlocfilehash: dfc3006c37d6055bac435fceb05febd596f0cd1a
+ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47187279"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53026473"
 ---
 # <a name="aggregates-in-power-bi-visualizations"></a>Koosteet Power BI -visualisoinneissa
 ## <a name="what-is-an-aggregate"></a>Mikä on kooste?
@@ -32,11 +33,11 @@ Alla olevassa esimerkissä:
 - **Yksikköjä myyty** ja **Valmistuksen hinta** ovat numeerisia tietoja sisältäviä sarakkeita.
 -  **Segmentti**, **Maa**, **Tuote**, **Kuukausi** ja **Kuukauden nimi** sisältävät luokittaista tietoa.
 
-   ![](media/service-aggregates/power-bi-aggregate-chart.png)
+   ![Mallitietojoukko](media/service-aggregates/power-bi-aggregate-chart.png)
 
 Kun luot visualisointia Power BI:ssä, numeeriset kentät koostetaan (oletusarvo on *summa*) suhteessa johonkin luokittaiseen kenttään.  Koosteita voivat olla esimerkiksi yksikköjä myyty ***tuotteen mukaan***, yksikköjä myyty ***kuukauden mukaan*** tai valmistuksen hinta ***segmentin mukaan***. Joitakin numeerisia kenttiä kutsutaan **mittayksiköiksi**. Power BI -raporttieditorissa mittayksiköt on helppo tunnistaa, sillä ne on merkitty Kentät-luettelossa ∑-symbolilla. Lisätietoja on ohjeaiheessa [Raporttieditorin esittely](service-the-report-editor-take-a-tour.md).
 
-![](media/service-aggregates/power-bi-aggregate-fields.png)
+![Kentät-luettelo](media/service-aggregates/power-bi-aggregate-fields.png)
 
 
 
@@ -52,18 +53,18 @@ Oletetaan, että sinulla on kaavio, joka laskee yhteen eri tuotteiden myydyt yks
 
 1. Luo kaavio, joka käyttää luokkaa ja mittayksikköä. Tässä esimerkissä käytetään myytyjä yksiköitä tuotteen mukaan.  Oletusarvoisesti Power BI luo kaavion, joka laskee yhteen myydyt yksiköt (mittayksikkö Arvot-säilössä) kullekin tuotteelle (luokka akselisäilössä).
 
-   ![](media/service-aggregates/power-bi-aggregate-sum.png)
+   ![Summan kooste](media/service-aggregates/power-bi-aggregate-sum.png)
 
 2. Napsauta Visualisoinnit-ruudussa mittayksikköä hiiren kakkospainikkeella ja valitse haluamasi koosteen tyyppi. Tässä tapauksessa valitsemme keskiarvon. Jos et näe tarvitsemaasi koostetta, tutustu alla olevaan ohjeaiheeseen Huomioon otettavat seikat ja vianmääritys.  
    
-   ![](media/service-aggregates/power-bi-aggregate-average.png)
+   ![Keskimääräinen kooste](media/service-aggregates/power-bi-aggregate-average.png)
    
    > [!NOTE]
    > Avattavan valikon vaihtoehdot vaihtelevat 1) valitun kentän ja 2) kentän luokittelutavan mukaan. Luokittelun on tehnyt tietojoukon omistaja.
    > 
 3. Visualisointi käyttää nyt koostetta keskiarvon mukaan.
 
-   ![](media/service-aggregates/power-bi-aggregate-average2.png)
+   ![Myytyjen yksiköiden keskiarvo](media/service-aggregates/power-bi-aggregate-average2.png)
 
 ##    <a name="ways-to-aggregate-your-data"></a>Tietojen koostamisen tavat
 
@@ -99,66 +100,66 @@ Saamme tiedoista seuraavia tuloksia:
 * **Keskiarvo**: 125
 * **Suurin arvo**:  150
 * **Pienin arvo**: 100
-* **Määrä (ei tyhjä)**: 6
-* **Määrä (erillinen)**: 4
-* **Keskihajonta**: 20,4124145...
-* **Varianssi**: 416,666...
-* **Mediaani**: 125
+* **Määrä (ei tyhjä):** 6
+* **Määrä (erillinen):** 4
+* **Keskihajonta:** 20.4124145...
+* **Varianssi:** 416.666...
+* **Mediaani:** 125
 
 ## <a name="create-an-aggregate-using-a-category-text-field"></a>Koosteen luominen luokittaisesta kentästä (tekstikentästä)
 Voit koostaa myös ei-numeerisen kentän. Esimerkiksi jos sinulla on kenttä tuotteen nimelle, voit lisätä sen arvona ja määrittää sen arvoksi **Määrä**, **Erillisten määrä**, **Ensimmäinen** tai **Viimeinen**. 
 
 1. Tässä esimerkissä olemme vetäneet **Tuote**-kentän Arvot-säilöön. Arvot-säilöä käytetään yleensä numeerisissa kentissä. Power BI tunnistaa, että kyseessä on tekstikenttä, asettaa koosteeksi **Älä tee yhteenvetoa** ja esittää yksisarakkeisen taulukon.
    
-   ![](media/service-aggregates/power-bi-aggregate-value.png)
+   ![Tuote-kenttä Arvot-säilössä](media/service-aggregates/power-bi-aggregate-value.png)
 2. Jos muutamme koostamisen **Älä tee yhteenvetoa** -oletusasetuksen asetukseksi **Määrä (erillinen)**, Power BI laskee eri tuotteiden määrän. Tässä tapauksessa niitä on neljä.
    
-   ![](media/service-aggregates/power-bi-aggregates-count.png)
+   ![Tuotteiden erillinen määrä](media/service-aggregates/power-bi-aggregates-count.png)
 3. Jos muutamme koosteasetukseksi **Määrä**, Power BI laskee kokonaismäärän. Tässä tapauksessa **Tuote**-kirjauksia on seitsemän. 
    
-   ![](media/service-aggregates/power-bi-aggregate-count2.png)
+   ![Tuotteiden määrä](media/service-aggregates/power-bi-aggregate-count2.png)
 
 4. Jos sama kenttä (tässä tapauksessa **Tuote**) vedetään Arvot-säilöön ja koosteasetukseksi jätetään **Älä tee yhteenvetoa** -oletusasetus, Power BI erittelee määrän tuotteen mukaan.
 
-   ![](media/service-aggregates/power-bi-aggregate-final.png)
+   ![Tuote ja tuotteiden määrä](media/service-aggregates/power-bi-aggregate-final.png)
 
 ## <a name="considerations-and-troubleshooting"></a>Huomioon otettavat seikat ja vianmääritys
-K: Miksi en näe **Älä tee yhteenvetoa** -asetusta?
+Kysymys:  Miksi en näe **Älä tee yhteenvetoa** -vaihtoehtoa?
 
-V: Valitsemasi kenttä on todennäköisesti laskettu mittayksikkö tai Excelissä tai [Power BI Desktopissa](desktop-measures.md) luotu kehittynyt mittayksikkö. Jokaisella lasketulla mittayksiköllä on oma pysyväiskoodattu kaavansa. Et voi muuttaa käytössä olevaa koostetta.  Jos kyseessä on esimerkiksi summa, se voi olla vain summa. Kentät-luettelossa *lasketut mittayksiköt* näkyvät laskinsymbolilla merkittyinä.
+Vastaus:  Valitsemasi kenttä on todennäköisesti laskettu mittayksikkö tai Excelissä tai [Power BI Desktopissa](desktop-measures.md) luotu kehittynyt mittayksikkö. Jokaisella lasketulla mittayksiköllä on oma pysyväiskoodattu kaavansa. Et voi muuttaa käytössä olevaa koostetta.  Jos kyseessä on esimerkiksi summa, se voi olla vain summa. Kentät-luettelossa *lasketut mittayksiköt* näkyvät laskinsymbolilla merkittyinä.
 
-K: Kenttäni **on** numeerinen, joten miksi vaihtoehtoja ovat vain **Määrä** ja **Erillisten määrä**?
+Kysymys:  Kenttäni **on** numeerinen, joten miksi vaihtoehtoja ovat vain **Määrä** ja **Erillisten määrä**?
 
-V1: Todennäköinen selitys on, että tietojoukon omistaja *ei* ole luokitellut kenttää numeroksi – joko vahingossa tai tarkoituksella. Jos tietojoukko on esimerkiksi **Vuosi**-kenttä, tietojoukon omistaja voi luokitella sen tekstiksi, koska on todennäköisempää, että **Vuosi**-kenttä lasketaan (esim. vuonna 1974 syntyneiden henkilöiden määrä) kuin että siitä lasketaan summa tai keskiarvo. Jos olet tietojoukon omistaja, voit avata sen Power BI Desktopissa ja muuttaa sen tyypin **Mallinnus**-välilehdellä.  
+Vastaus 1:  Todennäköinen selitys on, että tietojoukon omistaja *ei* ole luokitellut kenttää numeroksi – joko vahingossa tai tarkoituksella. Jos tietojoukko on esimerkiksi **Vuosi**-kenttä, tietojoukon omistaja voi luokitella sen tekstiksi, koska on todennäköisempää, että **Vuosi**-kenttä lasketaan (esim. vuonna 1974 syntyneiden henkilöiden määrä) kuin että siitä lasketaan summa tai keskiarvo. Jos olet tietojoukon omistaja, voit avata sen Power BI Desktopissa ja muuttaa sen tyypin **Mallinnus**-välilehdellä.  
 
-V2: Jos kentässä on laskinkuvake, se on *laskettu mittayksikkö*. Jokaisella lasketulla mittayksiköllä on oma pysyväiskoodattu kaavansa, jonka voi muuttaa vain tietojoukon omistaja. Käytettävä laskutoimitus voi olla yksinkertainen kooste, kuten keskiarvo tai summa, mutta saattaa myös olla jotain monimutkaisempaa, kuten ”osallistumisen prosenttiosuus pääluokkaan” tai ”juokseva summa vuoden alusta”. Power BI ei laske tulosten summaa tai keskiarvoa vaan laskee sen sijaan uudelleen jokaisen arvopisteen käyttäen pysyväiskoodattua kaavaa.
+Vastaus 2: Jos kentässä on laskinkuvake, se on *laskettu mittayksikkö*. Jokaisella lasketulla mittayksiköllä on oma pysyväiskoodattu kaavansa, jonka voi muuttaa vain tietojoukon omistaja. Käytettävä laskutoimitus voi olla yksinkertainen kooste, kuten keskiarvo tai summa, mutta saattaa myös olla jotain monimutkaisempaa, kuten ”osallistumisen prosenttiosuus pääluokkaan” tai ”juokseva summa vuoden alusta”. Power BI ei laske tulosten summaa tai keskiarvoa vaan laskee sen sijaan uudelleen jokaisen arvopisteen käyttäen pysyväiskoodattua kaavaa.
 
-V3: Toinen mahdollisuus on, että olet vetänyt kentän *säilöön*, joka sallii vain luokittaiset arvot.  Tässä tapauksessa asetuksia ovat vain on Määrä ja Erillinen määrä.
+Vastaus 3:  Toinen mahdollisuus on, että olet vetänyt kentän *säilöön*, joka sallii vain luokittaiset arvot.  Tässä tapauksessa asetuksia ovat vain on Määrä ja Erillinen määrä.
 
-V4: Lopulta kolmantena mahdollisuutena on, että käytät kenttää akselina. Esimerkiksi palkkikaavion akselilla Power BI näyttää yhden palkin jokaiselle erilliselle arvolle eikä koosta kenttien arvoja lainkaan. 
+Vastaus 4:  Lopulta kolmantena mahdollisuutena on, että käytät kenttää akselina. Esimerkiksi palkkikaavion akselilla Power BI näyttää yhden palkin jokaiselle erilliselle arvolle eikä koosta kenttien arvoja lainkaan. 
 
 >[!NOTE]
 >Poikkeus sääntöön ovat pistekaaviot, jotka *edellyttävät* koostettuja arvoja X- ja Y-akseleille.
 
-K: Miksei SSAS-tietolähteille voi koostaa tekstikenttiä?
+Kysymys:  Miksei SSAS-tietolähteille voi koostaa tekstikenttiä?
 
-V: SSAS MD:n reaaliaikaiset yhteydet eivät salli asiakaspuolen koostamisia. Tähän sisältyvät ensimmäinen, viimeinen, keskiarvo, vähimmäisarvo, enimmäisarvo ja summa.
+Vastaus:  SSAS MD:n reaaliaikaiset yhteydet eivät salli asiakaspuolen koostamisia. Tähän sisältyvät ensimmäinen, viimeinen, keskiarvo, vähimmäisarvo, enimmäisarvo ja summa.
 
-K: Minulla on pistekaavio, mutta haluan, että kenttääni *ei* koosteta.  Miten se onnistuu?
+Kysymys:  Minulla on pistekaavio, mutta haluan, että kenttääni *ei* koosteta.  Miten se onnistuu?
 
-V: Lisää kenttä **Tiedot**-säilöön X- tai Y-akselien säilöjen sijaan.
+Vastaus:  Lisää kenttä **Tiedot**-säilöön X- tai Y-akselien säilöjen sijaan.
 
-K: Kun lisään numeerisen kentän visualisointiin, useimpien oletusasetuksena on summa, mutta joissakin se on keskiarvo, määrä tai jokin muu kooste.  Miksi koosteen oletusarvo ei ole aina sama?
+Kysymys:  Kun lisään numeerisen kentän visualisointiin, useimpien oletusasetuksena on summa, mutta joissakin se on keskiarvo, määrä tai jokin muu kooste.  Miksi koosteen oletusarvo ei ole aina sama?
 
-V: Tietojoukon omistajilla on mahdollisuus määrittää oletusyhteenveto kullekin kentälle. Jos olet tietojoukon omistaja, voit muuttaa oletusyhteenvetoa Power BI Desktopin **Mallinnus**-välilehdellä.
+Vastaus:  Tietojoukon omistajilla on mahdollisuus määrittää oletusyhteenveto kullekin kentälle. Jos olet tietojoukon omistaja, voit muuttaa oletusyhteenvetoa Power BI Desktopin **Mallinnus**-välilehdellä.
 
-K: Olen tietojoukon omistaja ja haluat varmistaa, ettei tiettyä kenttää koosteta ollenkaan.
+Kysymys:  Olen tietojoukon omistaja ja haluat varmistaa, ettei tiettyä kenttää koosteta ollenkaan.
 
-V: Määritä Power BI Desktopin **Mallinnus**-välilehdellä **Tietotyyppi**-asetukseksi **Teksti**.
+Vastaus:  Määritä Power BI Desktopin **Mallinnus**-välilehdellä **Tietotyyppi**-asetukseksi **Teksti**.
 
-K: En näe **Älä tee yhteenvetoa** -asetusta avattavassa valikossa.
+Kysymys:  En näe **Älä tee yhteenvetoa** -vaihtoehtoa avattavassa valikossa.
 
-V: Yritä poistaa kenttä ja lisätä se sitten takaisin.
+Vastaus:  Yritä poistaa kenttä ja lisätä se sitten takaisin.
 
-Onko sinulla muuta kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
+Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
 

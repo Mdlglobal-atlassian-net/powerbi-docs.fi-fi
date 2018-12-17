@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/06/2018
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: b69b84c7c61227ef7a827722c86f54100bd2f3b7
-ms.sourcegitcommit: b23fdcc0ceff5acd2e4d52b15b310068236cf8c7
+ms.openlocfilehash: 258b526c08615a81f3cc940fc3b9f2fcda063a12
+ms.sourcegitcommit: f25464d5cae46691130eb7b02c33f42404011357
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51267244"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53180641"
 ---
 # <a name="link-entities-between-dataflows-in-power-bi-preview"></a>Entiteettien linkittäminen tietovoiden välillä Power BI:ssä (esikatselu)
 
@@ -32,6 +32,12 @@ Linkitetyt entiteetit ovat **vain luku** -tilassa. Jos haluat luoda linkitetyn e
 Linkitettyjen entiteettien päivitys edellyttää [Power BI Premium](service-premium.md) -tilausta. Linkitetyt entiteetit ovat saatavilla missä tahansa tietovuossa työtilassa, jota isännöidään Power BI Premium -kapasiteetissa. Lähteen tietovuohon ei liity rajoituksia.
 
 Linkitetyt entiteetit toimivat kunnolla vain uusissa Power BI -työtiloissa. Lue lisää [uusista Power BI -työtiloista](service-create-the-new-workspaces.md). Kaikkien linkitettyjen tietovoiden on sijaittava uusissa työtiloissa, jotta ne toimivat kunnolla.
+
+> [!NOTE]
+> Entiteetit eroavat sen mukaan, ovatko ne vakioentiteettejä vai laskettuja entiteettejä. Vakioentiteetit (joita nimitetään usein vain entiteeteiksi) kyselevät ulkoisesta tietolähteestä, kuten SQL-tietokannasta. Lasketut entiteetit edellyttävät Power BI:n Premium-kapasiteettia ja soveltavat muunnoksia Power BI -säilössä jo oleviin tietoihin. 
+>
+>Jos tietovuo ei ole Premium-kapasiteetin työtilassa, voit edelleen viitata yksittäiseen kyselyyn tai yhdistää kaksi kyselyä tai useamman kyselyn, kunhan muunnoksia ei määritetä säilön sisäisiksi muunnoksiksi. Tällaisia viittaukset pidetään vakioentiteetteinä. Poista tässä tapauksessa käytöstä **Ota lataus käyttöön** -vaihtoehto viitatuille kyselyille, jotta tietoja ei muodosteta eikä niitä sisällytetä säilöön. Voit täältä viitata näihin **Ota lataus käyttöön = epätosi** -kyselyihin ja määrittää **Ota lataus käyttöön** -vaihtoehdon arvoksi **Käytössä** vain niille tuloksena saaduille kyselyille, jotka haluat muodostaa.
+
 
 ## <a name="how-to-link-entities-between-dataflows"></a>Entiteettien linkittäminen tietovoiden välillä
 
@@ -87,10 +93,10 @@ Seuraavista artikkeleista voi olla hyötyä, kun luot tai käsittelet tietovoita
 * [Tietovoiden käyttäminen paikallisten tietolähteiden kanssa (esikatselu)](service-dataflows-on-premises-gateways.md)
 * [Kehittäjien resurssit Power BI -tietovoille (esikatselu)](service-dataflows-developer-resources.md)
 
-Saat lisätietoja Power Querysta ja ajoitetusta päivityksestä lukemalla seuraavat artikkelit:
+Lisätietoja Power Querysta ja ajoitetusta päivityksestä on seuraavissa artikkeleissa:
 * [Kyselyn yleiskatsaus Power BI Desktopissa](desktop-query-overview.md)
 * [Ajoitetun päivityksen määrittäminen](refresh-scheduled-refresh.md)
 
-Saat lisätietoja Common Data Modelista lukemalla sen yleiskatsausta käsittelevän artikkelin:
+Lisätietoja Common Data Modelista on sen yleiskatsauksen sisältävässä artikkelissa:
 * [Common Data Model – yleiskatsaus](https://docs.microsoft.com/powerapps/common-data-model/overview)
 

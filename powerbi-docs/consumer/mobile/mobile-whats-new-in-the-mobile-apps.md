@@ -9,12 +9,12 @@ ms.component: powerbi-mobile
 ms.topic: conceptual
 ms.date: 11/08/2018
 ms.author: maggies
-ms.openlocfilehash: 9d73e7b4e9b303f1a774c14fc813572805f7b093
-ms.sourcegitcommit: 5eb0f37f59b5fec15c0caecbbd1f8d688c7f0013
+ms.openlocfilehash: 37995f52882d1a5062b8aa03fb7b0480063a4f77
+ms.sourcegitcommit: 4f46d71ff6026c1c158f007425aefdcb501f48ee
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51297224"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "52979539"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Power BI -mobiilisovellusten uudet ominaisuudet
 Lisätietoja aiheeseen liittyvistä uusista ominaisuuksista:
@@ -100,7 +100,7 @@ Siirtyessäsi raportissa pyyhkäisyn avulla tai valitsemalla raportin sivu toimi
 
 Kun raportin tekijä mukauttaa raporttinäkymän teemoja Power BI -palvelussa, myös mobiilisovelluksen raporttinäkymän ulkoasu ja tuntuma muuttuvat. Taustakuvat eivät kuitenkaan näy.
 
-#### <a name="ios-configure-power-bi-ios-mobile-app-access-to-a-report-server-remotely"></a>iOS: Raporttipalvelimen käyttöoikeuksien etämäärittäminen Power BI iOS -mobiilisovelluksella
+#### <a name="ios-configure-power-bi-ios-mobile-app-access-to-a-report-server-remotely"></a>iOS: Raporttipalvelimen käyttöoikeuksien etämäärittäminen Power BI -iOS-mobiilisovellukselle
 
 IT-järjestelmänvalvoja voi käyttää ydintietojen hallintatyökalua määrittääkseen raporttipalvelimelle Power BI iOS -mobiilisovelluksen käyttöoikeuden. Lisätietoja saat artikkelista [iOS: Raporttipalvelimen käyttöoikeuksien etämäärittäminen Power BI -iOS-mobiilisovelluksella](../../report-server/configure-powerbi-mobile-apps-remote.md).
 
@@ -221,7 +221,7 @@ Lue [mobiilisovellusten ominaisuusyhteenveto heinäkuulta 2017](https://powerbi.
 #### <a name="all-devices"></a>Kaikki laitteet
 **Uusi valikko: Jaettu kanssani** Siirry Jaettu kanssani -valikkoon mobiilisovelluksessa, kun haluat nähdä kaiken sisällön, joka on jaettu kanssasi.
 
-**Uusi valikko: Sovellukset** Sovellus on kokoelma organisaatiollesi luotuja koontinäyttöjä ja raportteja, jotta tärkeimmät arvot voidaan esittää nopeammin ja helpommin tietoihin perustuvia päätöksiä varten.
+**Uusi valikko: Sovellukset** Sovellus on kokoelma organisaatiollesi luotuja raporttinäkymiä ja raportteja, jotta tärkeimmät arvot voidaan esittää nopeammin ja helpommin tietoihin perustuvia päätöksiä varten.
 
 Lue lisää [Power BI -sisällön organisoinnista](mobile-apps-quickstart-view-dashboard-report.md).
 
@@ -523,7 +523,7 @@ Tarkastele koontinäyttöjä [vaakasuunnassa Windows 10 -puhelimissa](mobile-app
 
 Tarkastele [raportteja Windows 10 -puhelimessa](mobile-reports-in-the-mobile-apps.md).
 
-Nopeammin [merkitykselliset tiedot Windows 10 -mobiilikoontinäytöissä](mobile-tiles-in-the-mobile-apps.md): Jaa ruudun tilannevedos tai avaa raportti suoraan koontinäytöstä.
+Nopeammin [merkitykselliset tiedot Windows 10 -mobiilikoontinäytöissä](mobile-tiles-in-the-mobile-apps.md): Jaa ruudun tilannevedos tai avaa raportti suoraan raporttinäkymästä.
 
 ### <a name="january-2016"></a>Tammikuu 2016
 Kaikki tammikuun parannukset ovat jo uudessa [Windows 10 -puhelinten Power BI -sovelluksessa](mobile-windows-10-phone-app-get-started.md), joka julkaistiin joulukuussa 2015. Nyt ne tuodaan Power BI -sovelluksiin muissa mobiililaitteissa. Lue blogimerkintä näistä parannuksista.
@@ -536,7 +536,7 @@ Kaikki tammikuun parannukset ovat jo uudessa [Windows 10 -puhelinten Power BI -s
 
 **R-ruudut ja web-pienoissovellukset** Voit tarkastella näitä uusia koontinäyttöjen ruututyyppejä mobiililaitteessasi.
 
-**Bing-koontinäytöt** Voit nyt luoda Power BI -palvelussa [koontinäyttöjä Bing-hakutuloksista](../end-user-connect-to-services.md) ja tarkastella niitä mobiililaitteessasi.
+**Bing-koontinäytöt** Voit nyt luoda Power BI -palvelussa [koontinäyttöjä Bing-hakutuloksista](../../service-connect-to-services.md) ja tarkastella niitä mobiililaitteessasi.
 
 **Raporttisivut kiinnitettyinä ruuduiksi koontinäytöissä** Voit nyt kiinnittää koko raportin koontinäyttöön Power BI -palvelussa ja käyttää raporttisivuja iPhone- tai Android-puhelimesi Power BI -sovelluksessa.
 
@@ -599,9 +599,9 @@ Lue [lokakuun puolivälin Power BI -mobiilisovellusten blogimerkintä](http://bl
 ### <a name="september-2015"></a>Syyskuu 2015
 Parannuksia Power BI -mobiilisovelluksiin: Android, iOS (iPhone ja iPad) ja Windows. Lue [syyskuun puolivälin Power BI -mobiilisovellusten blogimerkintä](http://blogs.msdn.com/b/powerbi/archive/2015/09/23/power-bi-mobile-mid-september-updates-are-here.aspx).
 
-#### <a name="android"></a>Android
+#### <a name="android"></a>Android-
 * Ryhmätyötiloja tuki: tee yhteistyötä työtovereiden kanssa ryhmätyötiloissa. 
-* Todentamattomien käyttäjien tuki: tilanteisiin, joissa käyttäjät eivät jostain syystä pysty kirjautumaan sisään sovellukseen, on lisätty nopea ja kätevä tapa ottaa yhteyttä tukeen ja lähettää palautetta.
+* Todentamattomien käyttäjien tuki:  tilanteisiin, joissa käyttäjät eivät jostain syystä pysty kirjautumaan sisään sovellukseen, on lisätty nopea ja kätevä tapa ottaa yhteyttä tukeen ja lähettää palautetta.
 * Parannettu käyttökokemus käytettäessä roolipohjaista suojausta käyttäviä koontinäyttöjä.          
 * Parannettu tietojen muotoilu kaavioissa ja kaikkien koontinäytön ruutujen tasaus. 
 

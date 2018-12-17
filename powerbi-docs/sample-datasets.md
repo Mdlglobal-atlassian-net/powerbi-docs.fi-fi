@@ -4,25 +4,26 @@ description: Power BI:n mallit sisältöpaketeista, PBIX-tiedostoista ja Excel-t
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: amac
+ms.custom: seodec18
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 08/06/2018
+ms.date: 12/06/2018
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: fa6c6094e4fdfefebd0c7bb1f9ec8fa87d41766b
-ms.sourcegitcommit: 1e4fee6d1f4b7803ea285eb879c8d5a4f7ea8b85
+ms.openlocfilehash: e46cfffc28bd77685e0a34b492e54234a76afa35
+ms.sourcegitcommit: f25464d5cae46691130eb7b02c33f42404011357
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51717788"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53180894"
 ---
 # <a name="what-sample-data-is-available-to-use-with-power-bi"></a>Millaista mallidataa Power BI:tä varten on saatavilla?
 Olet ehkä aloittanut vasta Power BI:n käytön ja haluat kokeilla sen toimintaa, mutta sinulla ei ole vielä tietoja, joilla testata sitä.  Tai ehkä sinulla onkin valmiina tietojoukko, mutta koska et ymmärrä (vielä) Power BI:n toimintaa kovin hyvin, pelkäät aiheuttavasi tietojoukollesi jotakin vahinkoa.
 
 Älä huoli! ObviEnce ([www.obvience.com](http://www.obvience.com/)) ja Microsoft ovat luoneet malleja, joita voit käyttää Power BI:ssä, kunnes tunnet olosi vähän luottavaisemmaksi.  Tiedot ovat anonyymejä ja edustavat eri aloja, muun muassa talous-, henkilöstö-, myyntialaa. Kun luet verkko-ohjeitamme, vastaasi tulee opetusohjelmia ja esimerkkejä, joissa käytetään samoja malleja, joten voit kokeilla ohjeita itse.      
 
-   ![](media/sample-datasets/power-bi-samples.png)
+   ![Käytettävissä olevat mallit](media/sample-datasets/power-bi-samples.png)
 
 Kaikki mallit ovat saatavilla useissa eri muodoissa: sisältöpakettina, yksittäisenä Excel-työkirjana ja .pbix-tiedostona. Jos et tiedä, mitä edellä mainitut ovat tai miten pääset niihin käsiksi – ei hätää. Kaikki kerrotaan jäljempänä tässä artikkelissa. Olemme luoneet jokaisesta mallista *esittelyn*, mikä tarkoittaa artikkelityyppiä, jossa kerrotaan mallista taustatietoja ja johdatetaan lukijaa erilaisten skenaarioiden läpi. Skenaarioita voivat olla esimerkiksi sellaiset, että sinun pitäisi vastata johtajan kysymyksiin, etsiä kilpailun kannalta merkityksellisiä tietoja, luoda muille jaettavia raportteja ja koontinäyttöjä tai selittää muutos liiketoiminnassa.   
 
@@ -48,42 +49,42 @@ Kun napsautat mitä tahansa alla olevista linkeistä ladataksesi Excel-työkirja
 ## <a name="available-samples"></a>Käytettävissä olevat mallit
 Käytettävissäsi on kahdeksan mallia.  Ne edustavat eri aloja.
 
-### <a name="customer-profitability-sample--mediasample-datasetspower-bi-cp2png"></a>Asiakkaan tuottavuuden malli  ![](media/sample-datasets/power-bi-cp2.png)
+### <a name="customer-profitability-sample--customer-profitability-samplemediasample-datasetspower-bi-cp2png"></a>Asiakkaan tuottavuuden malli  ![Asiakkaan tuottavuuden malli](media/sample-datasets/power-bi-cp2.png)
 [Asiakkaan tuottavuuden mallin esittely](sample-customer-profitability.md)
 
 Tässä toimialamallissa analysoidaan talousjohtajan avainmetriikkaa liikkeenjohdosta, tuotteista ja asiakkaista. Voit tutkia, mitkä tekijät vaikuttavat yrityksen tuottavuuteen.
 
-### <a name="human-resources-sample--mediasample-datasetspower-bi-hrpng"></a>Henkilöstöhallintomalli  ![](media/sample-datasets/power-bi-hr.png)
+### <a name="human-resources-sample--human-resources-samplemediasample-datasetspower-bi-hrpng"></a>Henkilöstöhallintomalli  ![Henkilöstöhallintomalli](media/sample-datasets/power-bi-hr.png)
 [Henkilöstöhallintomallin esittely](sample-human-resources.md)
 
 Tämä toimialamalli keskittyy yrityksen rekrytointistrategiaan analysoimalla uusia rekrytoituja, aktiivisia työntekijöitä ja pois lähteneitä työntekijöitä.  Tietoja tutkimalla voit tunnistaa irtisanoutumisen trendejä sekä vinoutumia rekrytointistrategioissa.
 
-### <a name="it-spend-analysis-sample-mediasample-datasetspower-bi-itpng"></a>IT-kulutusanalyysimalli![](media/sample-datasets/power-bi-it.png)
+### <a name="it-spend-analysis-sample-it-spend-analysis-samplemediasample-datasetspower-bi-itpng"></a>IT-kulutusanalyysimalli ![IT-kulutusanalyysimalli](media/sample-datasets/power-bi-it.png)
 [IT-kulutusanalyysimallin esittely](sample-it-spend.md)
 
 Tässä toimialamallissa analysoidaan yrityksen IT-osaston suunniteltuja ja toteutuneita kuluja. Tämän vertailun avulla voi arvioida sitä, kuinka hyvin yritys suunnitteli vuoden, sekä tutkia osa-alueita, jotka poikkeavat merkittävästi suunnitelmasta. Esimerkin yritys käyttää vuosittaista ennustejaksoa ja tuottaa neljännesvuosittain uusimman arvion, jonka avulla voidaan analysoida IT-osaston kuluissa tilivuoden aikana tapahtuneita muutoksia.
 
-### <a name="opportunity-analysis-sample--mediasample-datasetspower-bi-oapng"></a>Mahdollisuusanalyysimalli  ![](media/sample-datasets/power-bi-oa.png)
+### <a name="opportunity-analysis-sample--opportunity-analysis-samplemediasample-datasetspower-bi-oapng"></a>Mahdollisuusanalyysimalli  ![Mahdollisuusanalyysimalli](media/sample-datasets/power-bi-oa.png)
 [Mahdollisuusanalyysimallin esittely](sample-opportunity-analysis.md)
 
 Tässä toimialamallissa tarkastellaan ohjelmistoyrityksen myyntikanavaa. Myyntipäälliköt valvovat suoria myyntikanaviaan sekä kumppaneiden myyntikanavia seuraamalla mahdollisuuksia ja tuottoa alueittain sekä tehtyjen kauppojen koon ja kanavan mukaan.
 
-### <a name="procurement-analysis-sample--mediasample-datasetspower-bi-papng"></a>Hankinta-analyysimalli  ![](media/sample-datasets/power-bi-pa.png)
+### <a name="procurement-analysis-sample--procurement-analysis-samplemediasample-datasetspower-bi-papng"></a>Hankinta-analyysimalli  ![Hankinta-analyysimalli](media/sample-datasets/power-bi-pa.png)
 [Hankinta-analyysimallin esittely](sample-procurement.md)
 
 Tässä toimialamallissa analysoidaan talousjohtajan avainmetriikkaa liikkeenjohdosta, tuotteista ja asiakkaista. Voit tutkia, mitkä tekijät vaikuttavat yrityksen tuottavuuteen.
 
-### <a name="retail-analysis-sample--mediasample-datasetspower-bi-rspng"></a>Jälleenmyyntianalyysimalli  ![](media/sample-datasets/power-bi-rs.png)
+### <a name="retail-analysis-sample--retail-analysis-samplemediasample-datasetspower-bi-rspng"></a>Jälleenmyyntianalyysimalli  ![Jälleenmyyntianalyysimalli](media/sample-datasets/power-bi-rs.png)
 [Jälleenmyyntianalyysimallin esittely](sample-retail-analysis.md)
 
 Tässä toimialamallissa analysoidaan useiden myymälöiden ja alueiden myytyjen tuotteiden tietoja. Metriikan avulla vertaillaan tätä ja viime vuotta seuraavien arvojen osalta: myynti, tuotemäärät, myyntikate ja varianssi, sekä analysoidaan uusia myymälöitä.
 
-### <a name="sales-and-marketing-sample--mediasample-datasetspower-bi-smpng"></a>Myynti- ja markkinointimalli  ![](media/sample-datasets/power-bi-sm.png)
+### <a name="sales-and-marketing-sample--sales-and-marketing-samplemediasample-datasetspower-bi-smpng"></a>Myynti- ja markkinointimalli  ![Myynti- ja markkinointimalli](media/sample-datasets/power-bi-sm.png)
 [Myynti- ja markkinointimallin esittely](sample-sales-and-marketing.md)
 
 Tässä toimialamallissa analysoidaan teollisuusyritys VanArsdelia. Tietojen avulla markkinointipäällikkö voi tarkastella toimialaa ja VanArsdelin markkinaosuutta.  Tätä mallia tutkimalla löydät yrityksen markkinaosuuden, tuotantomäärän, myynnin ja markkinoiden mielialan.
 
-### <a name="supplier-quality-sample--mediasample-datasetspower-bi-sqpng"></a>Toimittajan laatuanalyysimalli  ![](media/sample-datasets/power-bi-sq.png)
+### <a name="supplier-quality-sample--supplier-quality-samplemediasample-datasetspower-bi-sqpng"></a>Toimittajan laatuanalyysimalli  ![Toimittajan laatuanalyysimalli](media/sample-datasets/power-bi-sq.png)
 [Toimittajan laatuanalyysimallin esittely](sample-supplier-quality.md)
 
 Tässä toimialamallissa keskitytään yhteen tyypilliseen toimitusketjun haasteeseen: toimittajan laadun analysointiin. Tässä analyysissa on kaksi tärkeää arvoa: vikojen kokonaismäärä ja niiden aiheuttamisen käyttökatkojen kokonaisaika. Mallilla on kaksi päätavoitetta: auttaa ymmärtämään, mitkä toimittajista ovat laadun kannalta parhaita ja mitkä heikoimpia, sekä tunnistaa tehtaat, jotka löytävät parhaiten viat ja ennaltaehkäisevät niitä minimoiden käyttökatkot.
@@ -100,16 +101,16 @@ Sisältöpaketit ovat ainoa mallien muoto, joka on saatavilla suoraan Power BI:s
 1. Avaa Power BI -palvelu (app.powerbi.com) ja kirjaudu sisään.
 2. Valitse vasemmasta alakulmasta **Nouda tiedot**.
 
-    ![](media/sample-datasets/power-bi-get-data.png)
+    ![Hae tiedot -kuvake](media/sample-datasets/power-bi-get-data.png)
 3. Valitse ilmestyvältä Nouda tiedot -sivulta **Mallit**-kuvake.
 
-   ![](media/sample-datasets/power-bi-samples-icon.png)
+   ![Mallit-kuvake](media/sample-datasets/power-bi-samples-icon.png)
 4. Valitse jokin malleista, jolloin näkyviin tulee kuvaus mallista. Valitse sitten **Yhdistä**.  
 
-   ![](media/sample-datasets/power-bi-connect.png)
+   ![Valitse malli > valitse Yhdistä](media/sample-datasets/power-bi-connect.png)
 5. Power BI tuo sisältöpaketin ja lisää uuden koontinäytön, raportin ja tietojoukon senhetkiseen työtilaasi. Uusi sisältö merkitään keltaisella tähdellä. Kokeile Power BI:n käyttöä mallien avulla.  
 
-   ![](media/sample-datasets/power-bi-asterisk.png)
+   ![Uuden sisällön tähti *](media/sample-datasets/power-bi-asterisk.png)
 
 Nyt kun sinulla on tietoja, olet jo päässyt hyvään alkuun.  Katso joitakin opetusohjelmia ja kokeile samoja toimia käyttämällä mallisisältöpaketteja – tai avaa vain Power BI -palvelu ja ryhdy tutkimaan sitä.
 
@@ -128,10 +129,10 @@ Kaikki mallisisältöpaketit ovat saatavilla myös Excel-työkirjoina. Excel-ty�
    * [Myynti- ja markkinointimalli](http://go.microsoft.com/fwlink/?LinkId=529785)
 2. Tallenna ladattu tiedosto. Sillä on merkitystä, minne tallennat tiedoston.
 
-   * ![](media/sample-datasets/power-bi-local-file2.png)  **Paikallisesti** – Jos tallennat tiedoston tietokoneesi paikalliselle asemalle tai muuhun organisaatiosi sijaintiin voit tuoda Power BI:n kautta tiedostosi Power BI:hin. Todellisuudessa tiedosto säilyy paikallisella kiintolevyllä, joten koko tiedostoa ei varsinaisesti tuoda Power BI:hin. Käytännössä Power BI ‑sivustolle luodaan uusi tietojoukko, johon tiedot – ja joissakin tapauksissa tietomalli – ladataan. Jos tiedostossa on raportteja, ne näkyvät Power BI -sivuston Raportit-kohdassa.
-   * ![](media/sample-datasets/power-bi-onedrive-file.png) **OneDrive – yritys** – Jos sinulla on OneDrive for Business ja olet kirjautunut siihen sisään käyttämällä samaa tiliä, jolla kirjaudut Power BI:hin, se on selvästi tehokkain tapa synkronoida Excelissä, Power BI:ssä ja .csv-tiedostoissa olevat työsi Power BI:ssä olevien tietojoukkojen, raporttien ja koontinäyttöjen kanssa. Koska sekä Power BI että OneDrive toimivat pilvipalvelussa, Power BI muodostaa yhteyden OneDrivessa sijaitsevaan tiedostoon noin tunnin välein. Jos muutoksia löytyy, Power BI:n tietojoukko, raportit ja koontinäytöt päivitetään automaattisesti.
-   * ![](media/sample-datasets/power-bi-onedrive-file.png)**OneDrive – henkilökohtainen** – Tiedostojen tallentamiseen OneDrive-tiliisi liittyy monia samoja etuja kuin OneDrive for Businessin kanssa. Suurin ero on, että sinun on kirjauduttava sisään OneDriveen käyttämällä Microsoft-tiliäsi, kun muodostat ensimmäisen kerran yhteyden tiedostoon (Nouda tiedot > Tiedostot > OneDrive - henkilökohtainen). Yleensä Microsoft-tili on eri kuin tili, jota käytetään Power BI:hin kirjautumiseen. Kun kirjaudut sisään OneDriveen käyttämällä Microsoft-tiliäsi, muista valita asetus Pidä minut sisäänkirjautuneena. Näin Power BI voi muodostaa yhteyden tiedostoon noin tunnin välein ja varmistaa, että Power BI:n tietojoukko on synkronoitu.
-   * ![](media/sample-datasets/power-bi-sharepoint2.png) **SharePoint – työryhmäsivustot** – Power BI ‑tiedostojen tallentaminen  SharePointin työryhmäsivustoille muistuttaa pitkälti tallentamista OneDrive for Business ‑palveluun. Suurin ero on siinä, miten yhteys Power BI:stä tiedostoon muodostetaan. Voit määrittää URL-osoitteen tai muodostaa yhteyden pääkansioon.
+   * ![Paikallisesti](media/sample-datasets/power-bi-local-file2.png) **Paikallisesti** – Jos tallennat tiedoston tietokoneesi paikalliselle asemalle tai muuhun organisaatiosi sijaintiin, voit tuoda Power BI:n kautta tiedostosi Power BI:hin. Todellisuudessa tiedosto säilyy paikallisella kiintolevyllä, joten koko tiedostoa ei varsinaisesti tuoda Power BI:hin. Käytännössä Power BI ‑sivustolle luodaan uusi tietojoukko, johon tiedot – ja joissakin tapauksissa tietomalli – ladataan. Jos tiedostossa on raportteja, ne näkyvät Power BI -sivuston Raportit-kohdassa.
+   * ![Yrityksen OneDrive](media/sample-datasets/power-bi-onedrive-file.png) **OneDrive – yritys** – Jos sinulla on OneDrive for Business ja olet kirjautunut siihen sisään käyttämällä samaa tiliä, jolla kirjaudut Power BI:hin, se on selvästi tehokkain tapa synkronoida Excelissä, Power BI:ssä ja .csv-tiedostoissa olevat työsi Power BI:ssä olevien tietojoukkojen, raporttien ja raporttinäkymien kanssa. Koska sekä Power BI että OneDrive toimivat pilvipalvelussa, Power BI muodostaa yhteyden OneDrivessa sijaitsevaan tiedostoon noin tunnin välein. Jos muutoksia löytyy, Power BI:n tietojoukko, raportit ja raporttinäkymät päivitetään automaattisesti.
+   * ![Henkilökohtainen OneDrive](media/sample-datasets/power-bi-onedrive-file.png) **OneDrive – henkilökohtainen** – Jos tallennat tiedostot henkilökohtaiseen OneDrive-tiliisi, saat monia samoja etuja kuin käyttäessäsi OneDrive for Businessia. Suurin ero on, että sinun on kirjauduttava sisään OneDriveen käyttämällä Microsoft-tiliäsi, kun muodostat ensimmäisen kerran yhteyden tiedostoon (Nouda tiedot > Tiedostot > OneDrive - henkilökohtainen). Yleensä Microsoft-tili on eri kuin tili, jota käytetään Power BI:hin kirjautumiseen. Kun kirjaudut sisään OneDriveen käyttämällä Microsoft-tiliäsi, muista valita asetus Pidä minut sisäänkirjautuneena. Näin Power BI voi muodostaa yhteyden tiedostoon noin tunnin välein ja varmistaa, että Power BI:n tietojoukko on synkronoitu.
+   * ![SharePoint – työryhmäsivustot](media/sample-datasets/power-bi-sharepoint2.png) **SharePoint – työryhmäsivustot** – Power BI ‑tiedostojen tallentaminen SharePointin työryhmäsivustoille muistuttaa pitkälti tallentamista OneDrive for Business ‑palveluun. Suurin ero on siinä, miten yhteys Power BI:stä tiedostoon muodostetaan. Voit määrittää URL-osoitteen tai muodostaa yhteyden pääkansioon.
 3. Avaa Power BI -palvelu (app.powerbi.com) ja kirjaudu sisään.
 
    > [!TIP]
@@ -140,23 +141,23 @@ Kaikki mallisisältöpaketit ovat saatavilla myös Excel-työkirjoina. Excel-ty�
    >
 4. Valitse vasemmasta alakulmasta **Nouda tiedot**.
 
-    ![](media/sample-datasets/power-bi-get-data.png)
+    ![Hae tiedot -kuvake](media/sample-datasets/power-bi-get-data.png)
 5. Valitse ilmestyvältä Nouda tiedot -sivulta **Tiedostot > Nouda**.
 
-     ![](media/sample-datasets/power-bi-files.png)
+     ![Tiedostot > Nouda](media/sample-datasets/power-bi-files.png)
 6. Siirry sijaintiin, johon latasit ja tallensit mallin.
 
-   ![](media/sample-datasets/power-bi-files3.png)
+   ![Sijainti, johon tallensit mallin](media/sample-datasets/power-bi-files3.png)
 7. Valitse OneDrive for Business ‑palveluun tallennettu tiedosto, joka tässä tapauksessa on **Procurement Analysis Sample.xlsx**, ja valitse **Yhdistä**.
 
-   ![](media/sample-datasets/power-bi-connect2.png)
+   ![OneDrive for Business > Yhdistä](media/sample-datasets/power-bi-connect2.png)
 8. Valitse, haluatko tuoda tiedot vai tarkastella työkirjaa Power BI:ssä tismalleen sellaisena kuin se on Excel Onlinessa.
 
-    ![](media/sample-datasets/power-bi-import.png)
+    ![Tuo tai Yhdistä](media/sample-datasets/power-bi-import.png)
 9. Jos valitset **Tuo**, Power BI tuo mallityökirjan järjestelmään ja lisää sen uutena tietojoukkona, jonka nimi on **Hankinta-analyysimalli**.  Jos työkirjassa on yhtään Power View ‑taulukoita tai -alueita tai jokin tietomalli, Power BI luo myös samannimisen raportin. Ja ellei sinulla ole vielä koontinäyttöä avattuna, Power BI luo uuden koontinäytön. (Jos sinulla oli koontinäyttö avattuna, kun valitsit **Nouda tiedot**, kyseiseen koontinäyttöön ilmestyy uusi tyhjä ruutu.  Napsauttamalla ruutua siirryt juuri lisäämäsi tietojoukon raporttiin). Uudella sisällöllä on sama nimi kuin mallilla, ja se on merkitty keltaisella tähdellä.
 10. Kun näytölle ilmestyy **Tietojoukkosi on valmiina!** ‑ikkuna, voit valita **Näytä tietojoukko** tai **Hanki nopeita merkityksellisiä tietoja** tai voit etsiä tietojoukkoon liittyvän raportin tai koontinäytön käyttämällä Power BI:n vasenta siirtymispalkkia.  
 
-     ![](media/sample-datasets/power-bi-ready.png)
+     ![Näytä tietojoukko](media/sample-datasets/power-bi-ready.png)
 
 ### <a name="optional-take-a-look-at-the-excel-samples-from-inside-excel-itself"></a>(Valinnainen) Excel-mallien tarkastelu suoraan Excelistä
 Haluatko ymmärtää, miten Excel-työkirjassa olevat tiedot muunnetaan Power BI ‑tietojoukoiksi ja ‑raporteiksi? Excel-mallien avaaminen ***Excelissä*** ja työkirjojen tutkiminen saattaa tarjota vastauksia.
@@ -187,7 +188,7 @@ Kaikki mallisisältöpaketit ovat saatavilla myös Power BI:n .pbix-tiedostoina.
 
 1. Valitse Power BI Desktopissa **Tiedosto > Avaa** ja siirry sijaintiin, johon tallensit mallin .pbix-tiedoston.
 
-   ![](media/sample-datasets/power-bi-desktop-open.png)
+   ![Tiedosto > Avaa Power BI Desktopissa](media/sample-datasets/power-bi-desktop-open.png)
 4. Avaa .pbix-tiedosto Power BI Desktopissa valitsemalla tiedosto.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet

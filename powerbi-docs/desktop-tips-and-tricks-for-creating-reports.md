@@ -1,20 +1,21 @@
 ---
 title: Vinkkejä raporttien luomiseen Power BI:ssä
-description: Vinkkejä tyylikkäiden raporttien luomiseen Power BI -palvelussa ja Power BI Desktopissa
+description: Lue parhaista käytännöistä raporttien luomiseksi Power BI -palvelussa ja Power BI Desktopissa
 author: davidi
 manager: kfile
 ms.reviewer: willthom
+ms.custom: seodec18
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 11/28/2018
+ms.date: 12/06/2018
 ms.author: davidi
-ms.openlocfilehash: ae1c54ee0c5c5de54fc5069f7215c39175cedf8d
-ms.sourcegitcommit: e17fc3816d6ae403414cf5357afbf6a492822ab8
+ms.openlocfilehash: c68c29449873e22c7e338279e80f049d522ba347
+ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/04/2018
-ms.locfileid: "52830282"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53026342"
 ---
 # <a name="tips-and-tricks-for-creating-reports-in-power-bi-desktop"></a>Vinkkejä raporttien luomiseen Power BI Desktopissa
 Joskus voi tarvita hieman ylimääräistä apua, jotta tiedoista saa kaiken hyödyn irti. Olemme koonneet yhteen muutamia vinkkejä, joita voit hyödyntää, kun luot raportteja Microsoftin Power BI Desktopissa *ja* Microsoft Excel 2016:ssa. Niistä on hyötyä myös Excel 2013 Pro Plus -versioissa, joissa Power Pivot -apuohjelma on otettu käyttöön sekä Power Query asennettuna ja käytössä. 
@@ -27,7 +28,7 @@ Saat lisätietoja myös [Power Query Resource Centeristä](https://support.offic
 Tutustu myös ohjeaiheeseen [Lisätietoja kaavasta](https://support.office.com/Article/Learn-about-Power-Query-formulas-6bc50988-022b-4799-a709-f8aafdee2b2f).
 
 ## <a name="data-types-in-query-editor"></a>Kyselyeditorin tietotyypit
-Kun käytät Power BI Desktopin kyselyeditoria tietojen lataamiseen, tietojen tyyppi pyritään tunnistamaan mahdollisimman tarkasti.  Jos käytössä on kaavoja, sarakkeiden tietotyyppiasetuksia ei välttämättä kuitenkaan säilytetä. Tarkista, että sarakkeiden tietotyyppi on oikein, kun olet ensin tehnyt seuraavat toiminnot: lataa tiedot alustavasti Kysely-välilehdelle, aseta ensimmäinen rivi otsikoksi, ryhmittele tiedot tarvittavan perusteen mukaan, yhdistä ja liitä. Tarkista tietotyyppi myös ennen tietojen lataamista ensimmäistä kertaa.
+Kun käytät Power BI Desktopin kyselyeditoria tietojen lataamiseen, tietojen tyyppi pyritään tunnistamaan mahdollisimman tarkasti.  Jos käytössä on kaavoja, sarakkeiden tietotyyppiasetuksia ei välttämättä kuitenkaan säilytetä. Tarkista, että sarakkeiden tietotyyppi on oikein, kun olet ensin tehnyt seuraavat toiminnot:  lataa tiedot alustavasti Kysely-välilehdelle, aseta ensimmäinen rivi otsikoksi, lisää sarake, ryhmitä perusteen mukaan, yhdistä ja liitä. Tarkista tietotyyppi myös ennen tietojen lataamista ensimmäistä kertaa.
 
 Muista myös, että tietoruudukossa näkyvä kursivointi ei tarkoita, että tietotyyppi olisi asetettu oikein. Se tarkoittaa vain, että tietoja ei pidetä tekstinä.
 
