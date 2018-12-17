@@ -2,17 +2,18 @@
 title: Sanasto Power BI -kuluttajille
 description: Power BI esittelee monia uusia termejä ja uusia käyttöjä tutuille termeille. Sanaston avulla voit tutustua paremmin Power BI:n terminologiaan.
 services: power-bi
+ms.custom: seodec18
 author: mihart
 ms.service: powerbi-service
 ms.topic: resource
-ms.date: 11/12/2018
+ms.date: 12/06/2018
 ms.author: mihart
-ms.openlocfilehash: fd7974024fdbfce38b93f1598fa389ef71a47dd9
-ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
+ms.openlocfilehash: f0e81c72fde0275467c3a914d19e916dab604cce
+ms.sourcegitcommit: cd85d88fba0d9cc3c7a4dc03d2f35d2bd096759b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53026336"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53280784"
 ---
 # <a name="glossary-for-power-bi-service"></a>Power BI -palvelun sanasto
 Power BI -palvelussa saattaa olla ennestään tuntematonta tai sekavalta vaikuttavaa terminologiaa. Sanasto on hyvä paikka termien hakuun, joten se on hyvä lisätä suosikkeihin. Toinen hyvä resurssi lisätietojen saamiseen Power BI -palvelun muodostavista rakenneosista ovat [peruskäsitteet](end-user-basic-concepts.md). Peruskäsitteet tarjoavat korkean tason yleiskatsauksen Power BI:n *osiin* ja niiden yhteyksiin.
@@ -42,7 +43,7 @@ Tämä sanasto on yhteisön luoma.  Etkö näe etsimääsi sanaa? Pyydä meitä 
 
 **AppSource** Keskitetty verkkosäilö, jossa voit selata ja tarkastella ladattavia koontinäyttöjä, raportteja, tietojoukkoja ja sovelluksia.
 
-**ArcGIS for Power BI** ArcGIS on ESRI-yrityksen luoma yhdistämisen ja analysoinnin ympäristö. Power BI -visualisointien kirjastoon sisältyvän visualisoinnin nimi on ArcGIS Maps for Power BI.
+**ArcGIS for Power BI** ArcGIS on ESRI-yrityksen yhdistämisen ja analytiikan ympäristö. Power BI -visualisointien kirjastoon sisältyvän visualisoinnin nimi on ArcGIS for Power BI.
 
 **määritä** [Power BI Premium] Verbi työtilan siirtämiselle varattuun kapasiteettiin tai sieltä pois. Älä käytä Ylennä-termiä työtilan siirtämiselle varattuun kapasiteettiin, koska se viittaa siihen, että varattu on jaettua kapasiteettia parempi asia.  
 
@@ -87,7 +88,7 @@ Tämä sanasto on yhteisön luoma.  Etkö näe etsimääsi sanaa? Pyydä meitä 
 
 **tietojen luokitus** Katso luokitus.
 
-**tietoliitin** Katso liittimet.
+**tietoyhdistin** Katso yhdistimet.
 
 **tietomalli, Excel-tietomalli**
 
@@ -96,7 +97,7 @@ Tämä sanasto on yhteisön luoma.  Etkö näe etsimääsi sanaa? Pyydä meitä 
 
 **varattu kapasiteetti** [Power BI Premium] Tietomallit, jotka suoritetaan erillisessä laitteistossa Microsoftin pilvipalvelun järjestelmäkeskuksissa tasaisen suorituskyvyn varmistamiseksi mittakaavassa. BI-ratkaisut toimitetaan koko organisaatiolle Power BI -käyttöoikeudesta riippumatta.
 
-**Desktop** Ensimmäinen esiintymä: Power BI Desktopin myöhemmät maininnat: Desktop
+**Desktop** Ensimmäinen esiintymä: Power BI Desktopin myöhemmät maininnat: Työpöytä
 
 
 **vinoneliö** Power BI Premium. Kuvakkeen muoto, joka ilmaisee, että työtila on Premium-kapasiteetin työtila.
@@ -149,7 +150,7 @@ Power BI -ympäristö (vuokraaja) -termiä voidaan käyttää dokumentaatiossa, 
 
 ## <a name="k"></a>K
 
-**KPI** Suorituskykyilmaisimet. Visualisointityyppi.
+**KPI** Suorituskykyilmaimet. Visualisointityyppi.
 
 
 ## <a name="l"></a>L
@@ -215,7 +216,7 @@ Vasemmanpuoleinen tai vasen siirtymisruutu.
 
 **Power BI Pro -käyttöoikeus** Kuukausittainen käyttöoikeus, joka mahdollistaa koontinäyttöjen luomisen, jaettujen tietojen työstämisen, tietojen automaattisen päivittämisen, tietojen käytön valvonnan ja hallinnoimisen ja mahdollisuuden paketoida jaettavaa sisältöä (Power BI -sovellukset).
 
-**Power BI -raporttipalvelin** SSRS:n uusi tuotemerkillinen tarjous, joka julkaistaan Power BI Premiumin kanssa ja jonka avulla organisaatiot voivat luoda hajautettuja BI- yhdistelmäjärjestelmiä (pilvipalvelujen ja paikallisen käyttöönoton yhdistelmä). Embedded tarjoaa lokalisoidun keinon tallentaa ja hallita Power BI -raportteja.
+**Power BI -raporttipalvelin** SSRS:n uusi tuotemerkillinen tarjooma, joka julkaistaan Power BI Premiumin kanssa ja jonka avulla organisaatiot voivat luoda hajautettuja BI- yhdistelmäjärjestelmiä (pilvipalvelujen ja paikallisen käyttöönoton yhdistelmä). Embedded tarjoaa lokalisoidun keinon tallentaa ja hallita Power BI -raportteja.
 
 **Power BI -palvelu** Verkossa oleva SaaS (Software as a service) -palvelu. Lisätietoja on artikkelissa [Mikä on Power BI?](../power-bi-overview.md).
 
