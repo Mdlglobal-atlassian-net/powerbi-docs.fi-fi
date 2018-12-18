@@ -1,24 +1,25 @@
 ---
-title: Koontitietojen automaattinen luominen Power BI:llä
-description: Lue, miten voit saada tietojoukkoja ja koontinäytön ruutuja koskevia katsauksia.
+title: Merkityksellisten tietojen käyttäminen ja tarkasteleminen koontinäytön ruuduissa
+description: Lue, miten voit Power BI:n loppukäyttäjänä saada merkityksellisiä tietoja koontinäytön ruuduista.
 author: mihart
 manager: kvivek
 ms.reviewer: ''
 featuredvideoid: et_MLSL2sA8
+ms.custom: seodec18
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 10/10/2018
+ms.date: 12/06/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: f68e962eacf04005d83ec0def10cf8e0e24f6e10
-ms.sourcegitcommit: dc8b8a2cf2dcc96ccb46159802ebd9342a7fa840
+ms.openlocfilehash: dd59f572da6bb3b62fa142ea7b7eab4aef5a3466
+ms.sourcegitcommit: f25464d5cae46691130eb7b02c33f42404011357
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49112034"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53180526"
 ---
-# <a name="automatically-generate-data-insights-with-power-bi"></a>Koontitietojen automaattinen luominen Power BI:llä
+# <a name="view-data-insights-on-dashboard-tiles-with-power-bi"></a>Merkityksellisten tietojen tarkasteleminen koontinäytön ruuduissa Power BI:n avulla
 Koontinäytön visualisointiruutujen kautta voit tarkastella tietoja. Kun valitset ruudun, raportti avautuu. Raportissa voit suodattaa ja lajitella raportin taustalla olevaa tietojoukkoa ja perehtyä siihen tarkemmin. Kun suoritat merkityksellisiä tietoja, Power BI tarkastelee tietoja puolestasi.
 
 Saat nopeita merkityksellisiä tietoja ja voit luoda tietoihin perustuvia mielenkiintoisia, vuorovaikutteisia visualisointeja. Nopeat merkitykselliset tiedot voidaan suorittaa tietylle koontinäytön ruudulle, tai voit suorittaa merkitykselliset tiedot jopa toisiin merkityksellisiin tietoihin.
@@ -40,7 +41,9 @@ Kun suoritat merkitykselliset tiedot koontinäytön ruudulle, Power BI hakee vai
 4. Herättivätkö yksittäiset merkitykselliset tiedot kiinnostuksesi? Tutustu asiaan tarkemmin valitsemalla kyseinen kortti. Valitut merkitykselliset tiedot näytetään vasemmalla ja uudet kortit, joiden tiedot peruvat pelkästään kyseisiin merkityksellisiin tietoihin, näytetään oikealla.    
 
  ## <a name="interact-with-the-insight-cards"></a>Vuorovaikutus merkityksellisten tietojen korttien kanssa
-   * suodattaa visualisointeja.  Voit tarkastella suodattimia valitsemalla oikeasta yläkulmasta nuolen, joka laajentaa Suodattimet-ruudun.
+Kun sinulla on merkityksellinen tieto avattuna, jatka siihen tutustumista.
+
+   * Suodata visualisointi piirtoalustalla.  Voit tarkastella suodattimia valitsemalla oikeasta yläkulmasta nuolen, joka laajentaa Suodattimet-ruudun.
 
      ![merkitykselliset tiedot- ja suodatinvalikko laajennettuna](./media/end-user-insights/power-bi-insights-on-insights.png)
    
