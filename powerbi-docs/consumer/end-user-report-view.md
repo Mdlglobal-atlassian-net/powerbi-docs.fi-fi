@@ -1,21 +1,22 @@
 ---
-title: Raportin sivun koon muuttaminen
+title: Raporttisivun näyttökoon ja kuvasuhteen muuttaminen
 description: Power BI -raportin sivun näyttöasetusten muuttaminen
 author: mihart
 manager: kvivek
 ms.reviewer: ''
+ms.custom: seodec18
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 01/24/2018
+ms.date: 12/06/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: c3e0fe7d469558a1800b7ce26b8b255fd8fa7a15
-ms.sourcegitcommit: 70192daf070ede3382ac13f6001e0c8b5fb8d934
+ms.openlocfilehash: 93e6c66c28c95d729ae0af0910f887f61f52694e
+ms.sourcegitcommit: cd85d88fba0d9cc3c7a4dc03d2f35d2bd096759b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "46566184"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53280830"
 ---
 # <a name="change-the-size-of-a-report-page"></a>Raportin sivun koon muuttaminen
 Opit [edellisessä artikkelissa ja videossa](../power-bi-report-display-settings.md) kaksi tapaa hallita Power BI -raporttien sivun näyttöä: **Näkymä** ja **Sivun koko**. Sivun Näkymä ja Sivun koko ovat käytettävissä sekä Power BI -palvelussa että Power BI Desktopissa. Niiden ulkonäkö ja toiminnot ovat lähes samat, mutta tässä opetusohjelmassa käytämme Power BI -palvelua.
@@ -28,33 +29,33 @@ Opit [edellisessä artikkelissa ja videossa](../power-bi-report-display-settings
 
 1. Avaa raportti lukunäkymässä tai muokkausnäkymässä, ja valitse Raportti-välilehdessä **Uudet myymälät**. Tämä raportin sivu näytetään oletusarvoisesti käyttämällä **Sovita sivulle** -asetusta.  Tässä tapauksessa Sovita sivulle -asetus näyttää raportin sivun ilman vierityspalkkeja, mutta jotkin tiedot ja otsikot ovat liian pieniä luettaviksi.
 
-   ![](media/end-user-report-view/pbi_fit_to_page.png)
+   ![raportti näkyvissä pohjassa](media/end-user-report-view/pbi_fit_to_page.png)
 2. Varmista, että piirtoalustalla ei ole valittu mitään visualisointia. Valitse **Näkymä** ja tarkista näyttöasetukset.
 
    * Näet lukunäkymässä seuraavan.
 
-     ![](media/end-user-report-view/power-bi-page-view-menu-new.png)
+     ![Avattava Näytä-valikko, jossa on valittuna Sovita sivulle](media/end-user-report-view/power-bi-page-view-menu-new.png)
    * Näet muokkausnäkymässä seuraavan.
 
-     ![](media/end-user-report-view/power-bi-view-editing-view.png)
+     ![Avattava Näytä-valikko, jossa on valittuna Sovita sivulle](media/end-user-report-view/power-bi-view-editing-view.png)
 
 3. Katsotaanpa, miltä sivu näyttää käyttämällä **Todellinen koko** -asetusta.
 
-   ![](media/end-user-report-view/power-bi-actal-size2.png)
+   ![raportti näkyvissä pohjassa, kaksi vierityspalkkia](media/end-user-report-view/power-bi-actal-size2.png)
 
    Ei kovin hyvältä, ja koontinäytössä on nyt kaksinkertaiset vierityspalkit.
 4. Vaihda asetukseksi **Sovita leveyteen**.
 
-   ![](media/end-user-report-view/pbi_fit_to_width.png)
+   ![raportti näkyvissä ilman vierityspalkkia, vain yksi vierityspalkki](media/end-user-report-view/pbi_fit_to_width.png)
 
-   Se näyttää paremmalta. Vierityspalkkeja on nyt kaksi, mutta niitä on helpompi lukea tarkemmin.
+   Se näyttää paremmalta. Vierityspalkkeja on yhä yksi, mutta sitä on helpompi lukea tarkemmin.
 
 ## <a name="change-the-default-view-for-a-report-page"></a>Raportin sivun oletusnäkymän muuttaminen
 Jos olet raportin *laatija*, voit muuttaa raportin sivujen oletusnäkymää. Kun jaat raportin muiden kanssa, raportin sivut avataan käyttämällä määrittämääsi näkymää. Raportin *lukijat* voivat vaihtaa tätä näkymää, mutta he eivät voi tallentaa muutoksiaan, kun he poistuvat raportista.
 
 1. Vaihda raportin **Uudet myymälät**-sivulla takaisin **Todellinen koko** -näkymään.
 
-   ![](media/end-user-report-view/power-bi-actual-size.png)
+   ![Avattava Näytä-valikko, jossa on valittuna Todellinen koko](media/end-user-report-view/power-bi-actual-size.png)
 
 2. Määritä **Alueen kuukausimyynti** -sivulla asetukseksi **Sovita leveyteen**.
 
@@ -62,16 +63,16 @@ Jos olet raportin *laatija*, voit muuttaa raportin sivujen oletusnäkymää. Kun
 
 4. Tallenna raportti nyt valitsemalla **Tiedosto > Tallenna**. Seuraavan kerran avaat tämän raportin, sivut näytetään käyttämällä uutta Näkymä-asetusta. Katsotaanpa, miten tämä tehdään.
 
-   ![](media/end-user-report-view/power-bi-save.png)
+   ![Tiedosto-valikko, jossa on valittuna Tallenna](media/end-user-report-view/power-bi-save.png)
 3. Valitse nykyisen työtilan nimi yläreunan siirtymispalkista, jotta voit palata tähän työtilaan.  
 
-   ![](media/end-user-report-view/power-bi-my-workspace.png)
+   ![Yläreunan valikkorivi, jossa näkyy navigointipolku](media/end-user-report-view/power-bi-my-workspace.png)
 4. Valitse **Raportit**-välilehti ja valitse sama raportti (jälleenmyyjäanalyysimalli).
 
-    ![](media/end-user-report-view/power-bi-new-report2.png)
+    ![Sisältönäkymä, jossa on valittuna Raportit-välilehti](media/end-user-report-view/power-bi-new-report2.png)
 5. Avaa raportin jokainen sivu, jotta näet uudet asetukset.
 
-   ![](media/end-user-report-view/power-bi-page-view.gif)
+   ![video, jossa näkyy, miten näyttöasetuksia muutetaan](media/end-user-report-view/power-bi-page-view.gif)
 
 ## <a name="now-lets-explore-the-page-size-setting"></a>Tutustutaanpa nyt *Sivun koko* -asetukseen.
 Sivun koon asetukset ovat käytettävissä vain [muokkausnäkymässä](../service-interact-with-a-report-in-editing-view.md), joten sinulla on oltava muokkausoikeudet (*laatija*) raporttiin sivun koon asetusten muuttamiseksi. Jos olet yhdistänyt johonkin Microsoftin [malliin](../sample-datasets.md), sinulla on *laatijan* käyttöoikeudet näihin raportteihin.
@@ -80,13 +81,13 @@ Sivun koon asetukset ovat käytettävissä vain [muokkausnäkymässä](../servic
 2. Varmista, että piirtoalustalla ei ole valittu mitään visualisointia.  Valitse **Visualisoinnit**-ruudussa maalirullakuvake![](media/end-user-report-view/power-bi-paintroller.png).
 3. Valitse **Sivun koko** &gt; **Tyyppi**, jos haluat näyttää sivun koon asetukset.
 
-   ![](media/end-user-report-view/power-bi-page-size-menu-new.png)
+   ![Sivun koon kortti laajennettuna ja 16:9 valittuna](media/end-user-report-view/power-bi-page-size-menu-new.png)
 4. Valitse **Letter**.  Piirtoalustalla vain sisältö, joka mahtuu 816 x 1 056 kuvapisteeseen (Letter-koko), näkyy piirtoalustan valkoisella osalla.
 
-   ![](media/end-user-report-view/power-bi-letter-new.png)
+   ![Raportin pohja, jossa Sivun koko -kortti on laajennettuna ja Tyyppi > Letter on valittuna](media/end-user-report-view/power-bi-letter-new.png)
 5. Valitse **Sivun koko** **16:9**-suhde.
 
-   ![](media/end-user-report-view/power-bi-16-to-9-new.png)
+   ![Sivun koko -kortti laajennettuna ja Tyyppi > 16:9 valittuna](media/end-user-report-view/power-bi-16-to-9-new.png)
 
    Raportin sivulla käytetään kuvasuhdetta, jonka leveys on 16 ja korkeus 9. Voit nähdä käytetyn todelliset kuvapistekoon katsomalla harmaana näkyviä leveys- ja korkeuskenttiä (1 280 x 720). Raportin piirtoalustan ympärillä on paljon tyhjää tilaa, koska määritimme aiemmin **Näkymä**-asetukseksi ”Sovita leveyteen”.
 7. Jatka tutustumalla **Sivun koko** -asetuksiin.
@@ -100,14 +101,14 @@ Edellisessä vaiheessa näimme, että raportin sivun leveys on tällä hetkellä
 
 1. Muuta visualisointien kokoa ja siirrä niitä siten, että ne mahtuvat alle puoleen tilaan nykyisestä piirtoalueesta.
 
-    ![](media/end-user-report-view/power-bi-custom-view.gif)
+    ![video, jossa näytetään visualisointien koon muuttaminen ja siirtäminen pohjassa](media/end-user-report-view/power-bi-custom-view.gif)
 2. Valitse **Sivun koko** &gt; **Mukauta**.
 3. Määritä leveydeksi 500 ja korkeudeksi 750.
 
-    ![](media/end-user-report-view/power-bi-custom-new.png)
+    ![Muotoilu-ruutu, jossa Sivun koko -kortti on laajennettuna](media/end-user-report-view/power-bi-custom-new.png)
 4. Parantele raportin sivua siten, että se näyttää mahdollisimman hyvältä. Tee mukautukset vaihtamalla asetusten **Näkymä > Todellinen koko** ja **Näkymä > Sovita sivulle** välillä.
 
-    ![](media/end-user-report-view/power-bi-final-new.png)
+    ![raportin pohja, jossa Muotoilu-ruutu on laajennettuna](media/end-user-report-view/power-bi-final-new.png)
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 [Raporttien luominen Cortanaa varten](../service-cortana-answer-cards.md)

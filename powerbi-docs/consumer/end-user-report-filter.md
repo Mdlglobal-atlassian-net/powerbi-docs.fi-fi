@@ -1,21 +1,22 @@
 ---
-title: Lisää raporttisuodatin
+title: Suodattimen lisääminen raporttiin
 description: Suodattimen lisääminen raporttiin Power BI -palvelussa kuluttajille
 author: mihart
 manager: kvivek
 ms.reviewer: ''
+ms.custom: seodec18
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 10/19/2018
+ms.date: 12/06/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 31b3584b0cbd2481db64160bcf502caf46e7acc3
-ms.sourcegitcommit: 2c4a075fe16ccac8e25f7ca0b40d404eacb49f6d
+ms.openlocfilehash: ea219071b475bf5bb9123e1aa3bbaca412507a8e
+ms.sourcegitcommit: cd85d88fba0d9cc3c7a4dc03d2f35d2bd096759b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/20/2018
-ms.locfileid: "49473803"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53280761"
 ---
 # <a name="take-a-tour-of-the-report-filters-pane"></a>Aloita raportin Suodattimet-ruudun esittely
 Tässä artikkelissa tutustutaan raportin Suodattimet-ruutuun Power BI -palvelussa.
@@ -36,7 +37,7 @@ Power BI -palvelussa raportit säilyttävät Suodattimet-ruudussa tekemäsi muut
 ## <a name="open-the-filters-pane"></a>Avaa Suodattimet-ruutu
 Kun raportti on avoinna, Suodattimet-ruutu näkyy raportin piirtoalustan oikeassa reunassa. Jos et näe ruutua, laajenna se valitsemalla nuoli oikeassa yläkulmassa.  
 
-Tässä esimerkissä olemme valinneet visualisoinnin, jossa on 6 suodatinta. Raporttisivulla on myös suodattimia, jotka on luetteloitu **Sivutason suodattimet** -otsikon alla. Käytössä on yksi [porautumissuodatin](../power-bi-report-add-filter.md), ja koko raportissa on myös suodatin: **FiscalYear** is 2013 or 2014.
+Tässä esimerkissä olemme valinneet visualisoinnin, jossa on 6 suodatinta. Raporttisivulla on myös suodattimia, jotka on luetteloitu **Sivutason suodattimet** -otsikon alla. Käytössä on yksi [porautumissuodatin](../power-bi-report-add-filter.md), ja koko raportissa on myös suodatin:  **Tilivuosi** on 2013 tai 2014.
 
 ![suodatinluettelo](media/end-user-report-filter/power-bi-filter-list.png)
 

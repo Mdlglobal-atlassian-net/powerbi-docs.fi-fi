@@ -1,27 +1,28 @@
 ---
-title: Tarkastele aiheeseen liittyvää sisältöä Power BI -palvelussa
+title: Tarkastele aiheeseen liittyvää sisältöä raporttinäkymissä, raporteissa ja tietojoukoissa
 description: Siirtymistä on helpotettu, tarkastele aiheeseen liittyvää sisältöä raporttinäkymissä, raporteissa ja tietojoukoissa
 author: mihart
 manager: kvivek
 ms.reviewer: ''
 featuredvideoid: B2vd4MQrz4M
+ms.custom: seodec18
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 03/01/2018
+ms.date: 12/09/2018
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 7bb46bbed79be32b45fe4e5dbd2ecb07acc5d673
-ms.sourcegitcommit: 70192daf070ede3382ac13f6001e0c8b5fb8d934
+ms.openlocfilehash: cc2369f6e1e074231267ceb41c19585eccfdb6f9
+ms.sourcegitcommit: cd85d88fba0d9cc3c7a4dc03d2f35d2bd096759b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "46566391"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53280715"
 ---
 # <a name="view-related-content-in-power-bi-service"></a>Tarkastele aiheeseen liittyvää sisältöä Power BI -palvelussa
-**Aiheeseen liittyvä sisältö** -ruutu näyttää, miten Power BI -palvelun sisältösi -- koontinäytöt, raportit ja tietojoukot --on yhdistetty toisiinsa.  Ja vielä paranee, tässä ruudussa voit suorittaa yleisiä tehtäviä, kuten päivittää, nimetä uudelleen, luoda merkityksellistä tietoa sekä paljon muuta. Valitse aiheeseen liittyvä raportti tai raporttinäkymä ja se avautuu Power BI -työtilassasi.   
+**Aiheeseen liittyvä sisältö** -ruutu näyttää, miten Power BI -palvelun sisältösi -- koontinäytöt, raportit ja tietojoukot --on yhdistetty toisiinsa. Aiheeseen liittyvä sisältö -ruutu on myös paikka, jossa voi käynnistää toiminnon. Ruudun avulla voit päivittää, nimetä uudelleen, luoda merkityksellisiä tietoja ja paljon muuta. Valitse aiheeseen liittyvä raportti tai raporttinäkymä ja se avautuu Power BI -työtilassasi.   
 
-Kuten olet todennäköisesti jo huomannut, raporttien perustana ovat tietojoukot; raporttien visualisoinnit on sitten kiinnitetty raporttinäkymään ja raporttinäkymän visualisoinnit linkittyvät takaisin raportteihin. Mutta mistä tiedät mitkä raporttinäkymät isännöivät markkinointiraporttisi visualisointeja? Ja miten löydät ne raporttinäkymät? Onko hankinnan raporttinäkymässäsi käytössä visualisointeja useammasta kuin yhdestä tietojoukosta? Jos näin on, miten ne ovat nimetty ja miten voit avata ja muokata niitä? Käyttääkö mikään raportti tai raporttinäkymä HR-tietojoukkoa, vai voidaanko se siirtää katkaisematta yhtään linkkiä? Näihin kysymyksiin voidaan vastata **Aiheeseen liittyvä sisältö** -ruudussa.  Aiheeseen liittyvän sisällön esittelemisen lisäksi ruutu mahdollistaa sinulle myös toiminnot sisällön kanssa sekä helpon siirtymisen aiheeseen liittyvien sisältöjen välillä.
+Power BI:ssä raporttien perustana ovat tietojoukot; raporttien visualisoinnit on sitten kiinnitetty raporttinäkymään ja raporttinäkymän visualisoinnit linkittyvät takaisin raportteihin. Mutta mistä tiedät mitkä raporttinäkymät isännöivät markkinointiraporttisi visualisointeja? Ja miten löydät ne raporttinäkymät? Onko hankinnan raporttinäkymässäsi käytössä visualisointeja useammasta kuin yhdestä tietojoukosta? Jos näin on, miten ne ovat nimetty ja miten voit avata ja muokata niitä? Käytetäänkö henkilöstöhallinnon tietojoukkoa raporteissa tai raporttinäkymissä ollenkaan? Vai voidaanko sitä siirtää aiheuttamatta rikkinäisiä linkkejä? Näihin kysymyksiin voidaan vastata **Aiheeseen liittyvä sisältö** -ruudussa.  Aiheeseen liittyvän sisällön esittelemisen lisäksi ruutu mahdollistaa sinulle myös toiminnot sisällön kanssa sekä helpon siirtymisen aiheeseen liittyvien sisältöjen välillä.
 
 ![Aiheeseen liittyvä sisältö](./media/end-user-related/power-bi-view-related-dashboard-new.png)
 
@@ -86,14 +87,13 @@ Valitse ensin **Tietojoukot**-välilehti työtilassa ja etsi sitten ![Näytä ai
 
 Valitse kuvake avataksesi **Aiheeseen liittyvä sisältö** -ruudun.
 
-![](media/end-user-related/power-bi-datasets.png)
+![Aiheeseen liittyvä sisältö -ruutu avautuu Power BI -sisältönäkymän yläpuolelle](media/end-user-related/power-bi-datasets.png)
 
-Täältä voit tehdä suoria toimintoja aiheeseen liittyvään sisältöön.  Valitse esimerkiksi raporttinäkymän tai raportin nimi avataksesi sen.  Voit jakaa listassa olevan raporttinäkymän valitsemalla kuvakkeen [Raporttinäkymän jakaminen muille](../service-share-dashboards.md) tai avaamalla raporttinäkymän **Asetukset**-ikkunan. Raportin kanssa voit suorittaa toimintoja valitsemalla kuvakkeen [Analysoi Excelissä](../service-analyze-in-excel.md), [Nimeä uudelleen](../service-rename.md), tai [Hae merkityksellistä tietoa](end-user-insights.md).  
+Täältä voit tehdä suoria toimintoja aiheeseen liittyvään sisältöön. Valitse esimerkiksi raporttinäkymän tai raportin nimi avataksesi sen.  Voit jakaa listassa olevan raporttinäkymän valitsemalla kuvakkeen [Raporttinäkymän jakaminen muille](../service-share-dashboards.md) tai avaamalla raporttinäkymän **Asetukset**-ikkunan. Raportin kanssa voit suorittaa toimintoja valitsemalla kuvakkeen [Analysoi Excelissä](../service-analyze-in-excel.md), [Nimeä uudelleen](../service-rename.md), tai [Hae merkityksellistä tietoa](end-user-insights.md).  
 
 ## <a name="limitations-and-troubleshooting"></a>Rajoitukset ja vianmääritys
-* Jos selaimessasi ei ole tarpeeksi tilaa, et näe vaihtoehtoa **Näytä aiheeseen liittyvät**, mutta näet edelleen kohdan ![Näytä aiheeseen liittyvä kuvake](./media/end-user-related/power-bi-view-related-icon-new.png). Valitse kuvake avataksesi **Aiheeseen liittyvä sisältö** -ruudun.
+* Jos et näe Näytä aiheeseen liittyvät -kohtaa, etsi sen sijaan kuvaketta ![Näytä aiheeseen liittyvä kuvake](./media/end-user-related/power-bi-view-related-icon-new.png). Valitse kuvake avataksesi **Aiheeseen liittyvä sisältö** -ruudun.
 * Jos haluat avata raporttiin liittyvää sisältöä pitää sinulla olla käytössä [Lukunäkymä](end-user-reading-view.md).
-* Aiheeseen liittyvä sisältö -ominaisuus ei ole käytettävissä Power BI Desktopissa.
 * Aiheeseen liittyvä sisältö -ominaisuus ei toimi suoratoistettuihin tietojoukkoihin.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet

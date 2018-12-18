@@ -9,12 +9,12 @@ ms.component: powerbi-mobile
 ms.topic: conceptual
 ms.date: 11/08/2018
 ms.author: maggies
-ms.openlocfilehash: 37995f52882d1a5062b8aa03fb7b0480063a4f77
-ms.sourcegitcommit: 4f46d71ff6026c1c158f007425aefdcb501f48ee
+ms.openlocfilehash: f272d0e40de5c65de9134c3d184195889233496b
+ms.sourcegitcommit: cd85d88fba0d9cc3c7a4dc03d2f35d2bd096759b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/06/2018
-ms.locfileid: "52979539"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53280922"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Power BI -mobiilisovellusten uudet ominaisuudet
 Lisätietoja aiheeseen liittyvistä uusista ominaisuuksista:
@@ -22,6 +22,36 @@ Lisätietoja aiheeseen liittyvistä uusista ominaisuuksista:
 * [Power BI -tiimin mobiilisovelluksia käsittelevä blogi](https://powerbi.microsoft.com/blog/tag/mobile/)
 * [Power BI Desktopin uudet ominaisuudet](../../desktop-latest-update.md)  
 * [Power BI -palvelun uudet ominaisuudet](../../service-whats-new.md)  
+
+## <a name="november-2018"></a>Marraskuu 2018
+
+### <a name="modern-visual-header"></a>Moderni visuaalinen otsikko 
+
+Uusia moderneja visuaalisia otsikoita käyttävät raportit eivät enää varaa tilaa otsikoille. Tyhjää tilaa on siksi entistä vähemmän, jolloin visualisoinneille jää enemmän tilaa.
+
+### <a name="enhance-presentation-mode-windows"></a>Parannettu esitystila (Windows)
+
+Parannettu esitystila Surface Hubissa ja Windows 10 -laitteissa.  Surface Hubin kokoushuoneiden käyttökokemuksen esitys- ja yhteiskäyttötyökaluja on parannettu. Ulkoasuttoman, suurelle näytölle optimoidun näkymän avulla pystyt keskittymään tietoihisi. Esitystilassa voit käyttää myös erilaisia työkaluja, kuten käsinkirjoitusta, jotka tehostavat esittämistä ja herättävät keskustelua tiedoista. Lue lisää esitystilasta [täältä](https://powerbi.microsoft.com/en-us/blog/presentation-mode-in-power-bi-windows-app/).
+
+### <a name="portrait-report-layout-in-tablets-ios-and-android"></a>Taulukoiden pystysuuntainen asettelu (iOS ja Android)
+
+Raportit näytetään nyt tabletissa pystysuuntaisina käyttämällä puhelinraporttiasettelua, kun se on käytettävissä. Lue lisää [puhelinasettelun luomisesta Power BI -palvelussa tai Power BI Desktopissa](https://docs.microsoft.com/en-us/power-bi/desktop-create-phone-report/).
+
+### <a name="supporting-report-query-string"></a>Raporttien kyselymerkkijonojen tuki 
+
+Kyselymerkkijonon sisältävät raporttilinkit avataan nyt mobiilisovelluksessa ja esisuodatetaan kyselymerkkijonossa määritettyjen ehtojen mukaan. Lue lisää [raportin URL-osoitteen luomisesta kyselymerkkijonon avulla](https://docs.microsoft.com/en-us/power-bi/service-url-filters/).  
+
+### <a name="shared-credentials-now-in-android"></a>Jaetut tunnistetiedot (nyt Androidissa)
+
+Power BI:n mobiilisovellukseen kirjautuminen on helpompaa kuin aiemmin. Yksinkertaistimme kirjautumisprosessia jaettujen tunnistetietojen avulla käyttämällä laitteen muiden Office 365 -sovellusten tunnistetietoja Power BI -palvelun todentamisessa.
+
+### <a name="in-app-urls-now-in-android"></a>Sovelluksen sisäiset URL-osoitteet (nyt Androidissa) 
+
+Raporteissa olevat linkit, jotka viittaavat muihin Power BI:n artefakteihin, avataan nyt suoraan sovelluksessa. Tämän ansiosta voit luoda mukautettuja siirtymistyönkulkuja ja linkittää esimerkiksi raportista koontinäyttöön.
+
+### <a name="show-data-and-copy-values"></a>Tietojen näyttäminen ja arvojen kopioiminen
+
+Raportin visualisointien toimintovalikossa (...) on nyt mahdollisuus näyttää raportin pohjatiedot taulukkomuodossa. Taulukosta voit pitkään napauttamalla valita ja kopioida arvoja (olettaen, että Intune-käytännöt eivät rajoita kopiointia).
 
 ## <a name="october-2018"></a>Lokakuu 2018
 

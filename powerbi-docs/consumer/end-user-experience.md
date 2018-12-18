@@ -5,18 +5,19 @@ author: mihart
 manager: kvivek
 ms.reviewer: ''
 featuredvideoid: G26dr2PsEpk
+ms.custom: seodec18
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: quickstart
-ms.date: 10/18/2018
+ms.date: 12/06/2018
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 1d093c9eb39b312e1883b2635de473dac6db5192
-ms.sourcegitcommit: 2c4a075fe16ccac8e25f7ca0b40d404eacb49f6d
+ms.openlocfilehash: 3b3eaa33879a1f0c6d51aecaa93cae6ce5c90d10
+ms.sourcegitcommit: cd85d88fba0d9cc3c7a4dc03d2f35d2bd096759b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/20/2018
-ms.locfileid: "49473861"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53280807"
 ---
 # <a name="quickstart---getting-around-in-power-bi-service"></a>Pikaopas - Power BI -palveluun tutustuminen
 
@@ -40,7 +41,7 @@ Tutustutaan Power BI -palveluun mallitietojen avulla. Voit käyttää kaikenlais
 
     Power BI -palvelu tuo mallin ja näyttää raporttinäkymän. Koontinäytöt erottavat Power BI -palvelun Power BI Desktopista. Näyte sisältää myös raportin ja tietojoukon, joihin palaamme myöhemmin.
 
-    ![](media/end-user-experience/power-bi-dashboard.png)
+    ![raporttinäkymän näytöt](media/end-user-experience/power-bi-dashboard.png)
 
 Katso, miten Amanda esittelee Power BI -palvelun siirtymistoiminnot.  Kokeile sen jälkeen itse noudattamalla videon alapuolella olevia vaiheittaisia ohjeita.
 
@@ -50,7 +51,7 @@ Katso, miten Amanda esittelee Power BI -palvelun siirtymistoiminnot.  Kokeile se
 ## <a name="view-content-dashboards-reports-workbooks-datasets-workspaces-apps"></a>Näytä sisältö (koontinäytöt, raportit, työkirjat, tietojoukot, työtilat, sovellukset)
 Aloitetaan katsomalla, miten perussisältö (koontinäytöt, raportit, tietojoukot, työkirjat) on järjestetty. Sisältö näytetään työtilan kontekstissa. Tässä vaiheessa sinulla on vain yksi työtila, jota kutsutaan **Omaksi työtilaksi**. Kuluttajat eivät tavallisesti tarvitse tai käytä muita työtiloja. Oma työtila -sijaintiin voit tallentaa kaiken omistamasi sisällön. Ajattele sitä oman sisältösi henkilökohtaisena eristyksenä tai työskentelyalueena. Oma työtila on se paikka, johon juuri lataamasi jälleenmyyntianalyysimalli on tallennettu. 
 
-Sisältö on jaettu Omassa työtilassa neljään välilehteen: Koontinäytöt, Raportit, Työkirjat ja Tietojoukot.
+Sisältösi on jaettu omassa työtilassa neljään välilehteen: Raporttinäkymät, Raportit, Työkirjat ja Tietojoukot.
 
 ![Oma työtila -näyttö](./media/end-user-experience/power-bi-my-workspace.png)
 

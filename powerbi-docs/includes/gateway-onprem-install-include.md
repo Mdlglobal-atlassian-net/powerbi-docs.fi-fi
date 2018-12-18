@@ -11,7 +11,7 @@ Power BI:ssä sinun on valittava ensiksi yhdyskäytävän tila.
 * **Paikallinen tietoyhdyskäytävä:** tässä tilassa useat käyttäjät voivat jakaa yhdyskäytävän ja käyttää sitä uudelleen. Tällaista yhdyskäytävää voi käyttää Power BI:ssä, PowerAppsissa, Flow’ssa ja Logic Appsissa. Power BI:ssä yhdyskäytävällä on tuki päivityksen ajastamiselle ja DirectQuerylle.
 * **Henkilökohtainen:** tämä tila toimii vain Power BI:ssä ja sitä voi käyttää yksi henkilö ilman järjestelmänvalvojalta vaadittavia määritystoimia. Tilassa voi käyttää vain pyydettävää päivitystä ja päivityksen ajastamista. Tämän vaihtoehdon valitseminen käynnistää henkilökohtaisen yhdyskäytävän asennuksen.
 
-Kumpaakin yhdyskäytävätilaa koskevat seuraavat seikat, jotka tulee ottaa asentamisessa huomioon:
+Kumpaakin yhdyskäytävätilaa koskevat seuraavat seikat, jotka tulee ottaa huomioon asentamisessa:
 
 * Molemmat yhdyskäytävät edellyttävät 64-bittistä Windows-käyttöjärjestelmää.
 * Yhdyskäytäviä ei voi asentaa toimialueen ohjauskoneeseen.

@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 12/05/2018
+ms.date: 12/10/2018
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: 3d4bcff012a8abb53d82dea2a8514d654056736a
-ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
+ms.openlocfilehash: fb25ae7408ddb19d7e8bc9c91c0e1b0f65d2bf42
+ms.sourcegitcommit: cd85d88fba0d9cc3c7a4dc03d2f35d2bd096759b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53026243"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53280623"
 ---
 # <a name="the-new-filter-experience-in-power-bi-reports-preview"></a>Uusi suodatuskokemus Power BI -raporteissa (esikatselu)
 
@@ -34,11 +34,11 @@ Raportin suunnittelijana voit tehdä seuraavia asioita uusilla suodattimilla:
 
 ## <a name="turn-on-the-new-filter-experience"></a>Ota käyttöön uusi suodatuskokemus 
 
-Voit ottaa käyttöön uuden kokemuksen Power BI Desktopissa. Sitten voit muokata suodattimia siellä tai Power BI -palvelussa (https://app.powerbi.com). Koska tämä uusi suodatuskokemus on esikatselutilassa, se on ensin otettava käyttöön Power BI Desktopissa. 
+Voit ottaa käyttöön uuden kokemuksen Power BI Desktopissa. Sitten voit muokata suodattimia siellä tai Power BI -palvelussa (https://app.powerbi.com). Koska tämä uusi suodatuskokemus on esikatselutilassa, se on ensin otettava käyttöön Power BI Desktopissa. Jos aloitat luomalla raportin Power BI -palvelussa, siinä ei voi käyttää uusia suodattimia.
 
 ### <a name="turn-on-new-filters-for-all-new-reports"></a>Ota käyttöön uudet suodattimet kaikissa uusissa raporteissa
 
-1. Valitse **Tiedosto** > **Asetukset ja vaihtoehdot** > **Asetukset** > **Esikatselutoiminnot** ja valitse sitten **Uusi suodatuskokemus** -valintaruutu. 
+1. Valitse Power BI Desktopissa **Tiedosto** > **Asetukset ja vaihtoehdot** > **Asetukset** > **Esikatselutoiminnot** ja valitse sitten **Uusi suodatuskokemus** -valintaruutu. 
 2. Käynnistä Power BI Desktop uudelleen nähdäksesi uuden suodatuskokemuksen kaikissa uusissa raporteissa.
 
 Power BI Desktopin uudelleenkäynnistämisen jälkeen se on käytössä oletusarvoisesti kaikissa uusissa raporteissa, jotka luot.  
@@ -47,7 +47,7 @@ Power BI Desktopin uudelleenkäynnistämisen jälkeen se on käytössä oletusar
 
 Voit ottaa käyttöön uudet suodattimet myös aiemmin luoduissa raporteissa.
 
-1. Valitse aiemmin luodussa raportissa **Tiedosto** > **Asetukset ja vaihtoehdot** > **Asetukset**
+1. Valitse Power BI Desktopin aiemmin luodussa raportissa **Tiedosto** > **Asetukset ja vaihtoehdot** > **Asetukset**
 2. Valitse **Raportin asetukset** -kohdassa **Ota käyttöön päivitetty suodatinruutu ja näytä suodattimet visuaalisessa otsikossa tälle raportille**.
 
 ## <a name="build-the-new-filter-pane"></a>Luo uusi suodatinruutu

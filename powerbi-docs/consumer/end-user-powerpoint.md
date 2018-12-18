@@ -1,21 +1,22 @@
 ---
-title: Raporttien vieminen Power BI kuluttajille -versiosta PowerPointiin
+title: Raporttien vieminen Power BI:stä PowerPointiin
 description: Lue, miten voit viedä Power BI -raportin PowerPointiin.
 author: mihart
 manager: kvivek
+ms.custom: seodec18
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 11/13/2018
+ms.date: 12/06/2018
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: a865c98a5bacd526a553354ea828e86fa0155a79
-ms.sourcegitcommit: 4f46d71ff6026c1c158f007425aefdcb501f48ee
+ms.openlocfilehash: 9f17cd76a733dff22ebf0b54eabc3d9b6c8f6839
+ms.sourcegitcommit: cd85d88fba0d9cc3c7a4dc03d2f35d2bd096759b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/06/2018
-ms.locfileid: "52979256"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53281019"
 ---
 # <a name="export-reports-from-power-bi-to-powerpoint"></a>Raporttien vieminen Power BI:stä PowerPointiin
 Voit julkaista Power BI:llä raportin **Microsoft PowerPointiin** ja luoda helposti Power BI -raporttiin perustuvan diasarjan. **PowerPointiin vietäessä** tapahtuu seuraavaa:
@@ -29,35 +30,35 @@ Voit julkaista Power BI:llä raportin **Microsoft PowerPointiin** ja luoda helpo
 ## <a name="how-to-export-your-power-bi-report-to-powerpoint"></a>Power BI -raportin vieminen PowerPointiin
 Valitse Power BI -palvelussa raportti, joka näytetään kankaalla. Voit myös valita raportin **aloitussivulta**, **sovelluksista** tai vasemman siirtymisruudun mistä tahansa osasta.
 
-![](media/end-user-powerpoint/power-bi-publish.png)
+![Tiedosto-kohdan valitseminen valikkopalkista, nuoli osoittamassa Vie PowerPointiin -kohtaa](media/end-user-powerpoint/power-bi-publish.png)
 
 Kun PowerPointiin vietävä raportti näkyy kankaalla, valitse **Tiedosto > Vie PowerPointiin** Power BI -palvelun valikkoriviltä.
 
-![](media/end-user-powerpoint/powerbi_to_powerpoint_1.png)
+![Lähikuva vasemmasta siirtymispalkista, jossa Oma työtila on valittuna, avattava Tiedosto-valikko valittuna](media/end-user-powerpoint/powerbi_to_powerpoint_1.png)
 
 Näet Power BI -palvelun selainikkunan oikeassa yläkulmassa ilmoituspalkin, jossa ilmoitetaan raportin viemisestä PowerPointiin. Raportin vieminen voi kestää muutamia minuutteja, minkä aikana voit jatkaa Power BI:ssä työskentelemistä.
 
-![](media/end-user-powerpoint/powerbi_to_powerpoint_2.png)
+![vienti PowerPointiin on kesken -ilmoitus](media/end-user-powerpoint/powerbi_to_powerpoint_2.png)
 
 Kun vieminen on valmis, ilmoituspalkissa kerrotaan, että Power BI -palvelu on suorittanut viennin.
 
-![](media/end-user-powerpoint/powerbi_to_powerpoint_3.png)
+![Näytölle avautuva onnistumisilmoitus](media/end-user-powerpoint/powerbi_to_powerpoint_3.png)
 
 Tiedostosi on käytettävissä sijainnissa, jossa selain näyttää ladatut tiedostot. Seuraavassa kuvassa se näkyy selainikkunan alareunan lataukset-palkissa.
 
-![](media/end-user-powerpoint/powerbi_to_powerpoint_4.png)
+![nuoli osoittaa selainilmoitukseen näytön alareunassa](media/end-user-powerpoint/powerbi_to_powerpoint_4.png)
 
 Siinä kaikki. Voit ladata tiedoston, avata sen PowerPointissa ja sitten muokata tai parannella sitä aivan kuin mitä tahansa muuta PowerPoint-esitystä.
 
 ## <a name="checking-out-your-exported-powerpoint-file"></a>Viedyn PowerPoint-tiedoston tarkastelu
 Kun avaat Power BI:ssä viedyn PowerPoint-tiedoston, löydät siitä muutamia hienoja ja hyödyllisiä ominaisuuksia. Tutustu seuraavaan kuvaan ja katso sitten alla olevat numeroidut elementit, joissa on kuvattu joitain näistä ominaisuuksista.
 
-![](media/end-user-powerpoint/powerbi_to_powerpoint_5.png)
+![PowerPoint aukeaa](media/end-user-powerpoint/powerbi_to_powerpoint_5.png)
 
 1. Diapinon ensimmäinen sivu sisältää raportin nimen ja linkin, jonka avulla voit **tarkastella Power BI:ssä** raporttia, johon diat perustuvat.
 2. Lisäksi saat käyttöösi joitakin hyödyllisiä raporttia koskevia tietoja, kuten viedyn raportin pohjana olleiden *tietojen viimeisimmän päivitysajankohdan* sekä *latauksen ajankohdan* eli sen päivämäärän ja kellonajan, jolloin Power BI -raportti vietiin PowerPoint-tiedostoon.
 3. Jokainen raporttisivu on erillinen dia. Ne näkyvät vasemmassa siirtymisruudussa. 
-4. Julkaistu raportti hahmonnetaan Power BI -asetusten mukaisella kielellä tai muussa tapauksessa selaimen kieliasetuksen mukaan. Jos haluat nähdä kieliasetuksesi tai muuttaa sitä, valitse hammasrataskuvake ![](media/end-user-powerpoint/power-bi-settings-icon.png) **> Asetukset > Yleiset > Kieli**. Kielialueiden tiedot ovat ohjeartikkelissa [Power BI:n tuetut kielet ja maat tai alueet](../supported-languages-countries-regions.md).
+4. Julkaistu raportti hahmonnetaan Power BI -asetusten mukaisella kielellä tai muussa tapauksessa selaimen kieliasetuksen mukaan. Jos haluat nähdä kieliasetuksesi tai muuttaa sitä, valitse hammasrataskuvake ![hammasrataskuvake](media/end-user-powerpoint/power-bi-settings-icon.png)  **> Asetukset > Yleiset > Kieli**. Kielialueiden tiedot ovat ohjeartikkelissa [Power BI:n tuetut kielet ja maat tai alueet](../supported-languages-countries-regions.md).
 5. PowerPoint-esitys sisältää kansilehden, jossa viennin kellonaika näytetään oikealla aikavyöhykkeen ajassa.
 
 Kun valitset yksittäisen dian, huomaat kunkin raporttisivun olevan riippumaton kuva.
@@ -66,7 +67,7 @@ Kun valitset yksittäisen dian, huomaat kunkin raporttisivun olevan riippumaton 
 > Yhden kuvan luominen jokaista raportin sivua kohden on uusi ominaisuus. Aiemmin jokaisesta visualisoinnista luotiin erillinen kuva. Tätä ominaisuutta ei enää käytetä. 
  
 
-![](media/end-user-powerpoint/powerbi_to_powerpoint_6.png)
+![Kuva, jossa näytetään kukin visualisointi erillisenä kuvana](media/end-user-powerpoint/powerbi_to_powerpoint_6.png)
 
 Edellä olevien vaiheiden jälkeen voit tehdä PowerPoint-esitykselläsi ja sen korkearesoluutioisilla kuvilla mitä ikinä haluat.
 
@@ -84,7 +85,7 @@ Huomioi seuraavat seikat ja rajoitukset, kun käytät **Vieminen PowerPointiin**
 * PowerPointiin ei voi julkaista raportteja, jotka ovat vuokraajan Power BI -toimialueen ulkopuolisen käyttäjän omistamia (esim. organisaation ulkopuolisen henkilön omistama raportti, joka on jaettu kanssasi).
 * Jos jaat raporttinäkymän organisaatiosi ulkopuoliselle henkilölle (joka ei ole Power BI -vuokraajasi toimialueella), kyseinen henkilö ei voi viedä jaettuun raporttinäkymään liittyviä raportteja PowerPointiin. Jos olet esimerkiksi aaron@contoso.com, voit jakaa sisältöä käyttäjän david@cohowinery.com kanssa. david@cohowinery.com ei kuitenkaan voi viedä siihen liittyviä raportteja PowerPointiin.
 * Kuten edellä mainittiin, kukin raporttisivu viedään PowerPoint-tiedostoon yhtenä kuvana.
-* Power BI -palvelu käyttää PowerPoint-viennin kielenä Power BI:n kieliasetusta. Jos haluat nähdä kieliasetuksesi tai muuttaa sitä, valitse hammasrataskuvake ![](media/end-user-powerpoint/power-bi-settings-icon.png) **> Asetukset > Yleiset > Kieli**.
+* Power BI -palvelu käyttää PowerPoint-viennin kielenä Power BI:n kieliasetusta. Jos haluat nähdä kieliasetuksesi tai muuttaa sitä, valitse hammasrataskuvake ![hammasrataskuvake](media/end-user-powerpoint/power-bi-settings-icon.png)  **> Asetukset > Yleiset > Kieli**.
 * Viedyn PowerPoint-tiedoston kansidian **Latausajankohta**-kellonajaksi määritetään tietokoneesi aikavyöhyke vientihetkellä.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet

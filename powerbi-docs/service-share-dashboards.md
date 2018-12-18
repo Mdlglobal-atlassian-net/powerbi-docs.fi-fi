@@ -8,15 +8,15 @@ featuredvideoid: 0tUwn8DHo3s
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 08/02/2018
+ms.date: 12/10/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 8644bc01aa845ff91950169f011cb70fb161ecb1
-ms.sourcegitcommit: 833cf1252807721fb1b3000487bd032bfd6c8c98
+ms.openlocfilehash: abddbf3e4ae0b51dbb46f949e6d4f287d084f873
+ms.sourcegitcommit: cd85d88fba0d9cc3c7a4dc03d2f35d2bd096759b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48271759"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53280981"
 ---
 # <a name="share-your-power-bi-dashboards-and-reports-with-coworkers-and-others"></a>Power BI -koontinäyttöjen ja -raporttien jakaminen työtovereiden ja muiden kanssa
 *Jakaminen* on kätevä keino myöntää parille henkilölle käyttöoikeus luomiisi koontinäyttöihin ja raportteihin. Power BI tarjoaa myös [useita muita tapoja tehdä yhteistyötä ja jakaa koontinäyttöjä ja raportteja](service-how-to-collaborate-distribute-dashboards-reports.md).
@@ -29,7 +29,7 @@ Voit jakaa koontinäyttöjä ja raportteja Power BI -palvelun useimmista paikois
 
 Voit myös [jakaa koontinäytön mistä tahansa Power BI -mobiilisovelluksesta](consumer/mobile/mobile-share-dashboard-from-the-mobile-apps.md). Voit jakaa koontinäyttöjä Power BI -palvelusta ja Power BI -mobiilisovelluksista, mutta et voi jakaa niitä Power BI Desktopista.
 
-## <a name="video-share-a-dashboard"></a>Video: Koontinäytön jakaminen
+## <a name="video-share-a-dashboard"></a>Video: Jaa koontinäyttö
 Katso, miten Amanda jakaa koontinäyttönsä työtovereiden kanssa yrityksensä sisä- ja ulkopuolella. Kokeile sitä itse noudattamalla videon alapuolella olevia vaiheittaisia ohjeita.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/0tUwn8DHo3s?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
@@ -96,7 +96,7 @@ Vain koontinäytön tai raportin omistaja voi ottaa uudelleenjakamisen käyttö�
 ## <a name="share-a-dashboard-or-report-with-people-outside-your-organization"></a>Koontinäytön tai raportin jakaminen organisaatiosi ulkopuolisten henkilöiden kanssa
 Kun jaat sisältöä organisaatiosi ulkopuolisten henkilöiden kanssa, he saavat sähköpostiviestin ja linkin jaettuun koontinäyttöön tai raporttiin. Jos he haluavat tarkastella tätä sisältöä, heidän on kirjauduttava sisään Power BI -palveluun. Jos heillä ei ole Power BI Pro -käyttöoikeutta, he voivat rekisteröityä käyttöoikeuden saamiseksi napsautettuaan linkkiä.
 
-Kun he ovat kirjautuneet sisään, he näkevät jaetun koontinäytön tai raportin sen omassa selainikkunassa ilman vasenta siirtymisruutua, eivät tavanomaisessa Power BI -portaalissaan. Heidän on luotava kirjainmerkki linkille, jotta he voivat käyttää tätä koontinäyttöä tai raporttia vastaisuudessa.
+Kun he ovat kirjautuneet sisään, he näkevät jaetun koontinäytön tai raportin sen omassa selainikkunassa ilman vasenta siirtymisruutua, eivät tavanomaisessa Power BI -portaalissaan. Heidän on luotava kirjainmerkki linkille, jotta he voivat käyttää tätä raporttinäkymää tai raporttia vastaisuudessa.
 
 He eivät voi muokata mitään tämän koontinäytön tai raportin sisältöä. He voivat käsitellä kaavioita ja muuttaa suodattimia tai osittajia raportissa, mutta he eivät voi tallentaa tekemiään muutoksia.
 
@@ -111,7 +111,7 @@ Kun jaat koontinäyttöjä ja raportteja, ota huomioon seuraavat seikat:
 
 * Työtoverisi näkevät yleensä samat tiedot kuin sinä koontinäytössä ja raportissa. Näin ollen jos sinulla on käyttöoikeus nähdä enemmän tietoja kuin työtoverisi, he näkevät kaikki tietosi koontinäytössä tai raportissa. Kuitenkin jos [rivitason suojausta (RLS)](service-admin-rls.md) sovelletaan koontinäytön tai raportin pohjana olevaan tietojoukkoon, jokaisen henkilön tunnistetietoja käytetään sen määrittämiseen, mitä tietoja he voivat käyttää.
 * Kaikki, joiden kanssa jaat koontinäyttösi, voivat tarkastella sitä ja käsitellä siihen liittyviä raportteja [lukunäkymässä](consumer/end-user-reading-view.md). He eivät voi luoda raportteja tai tallentaa muutoksia aiemmin luotuihin raportteihin.
-* Kukaan ei voi tarkastella tai ladata tietojoukkoa.
+* Kukaan ei voi tarkastella tai ladata tietojoukkoa, mutta he voivat käyttää tietojoukkoa suoraan Analysoi Excelissä -ominaisuuden avulla. Järjestelmänvalvoja voi rajoittaa käyttäjien kykyä käyttää Analysoi Excelissä -ominaisuutta rajoittamalla kykyä ryhmän kaikkien jäsenten osalta. Rajoitus koskee kuitenkin kaikkia kyseisessä ryhmässä jokaisessa työtilassa, johon ryhmä kuuluu.
 * Kaikki voivat manuaalisesti [päivittää tietoja](refresh-data.md).
 * Jos käytät Office 365:n sähköpostia, voit jakaa tietoja jakeluryhmän jäsenten kanssa antamalla jakeluryhmään liittyvän sähköpostiosoitteen.
 * Työtoverit, joilla on sama sähköpostin toimialue kuin sinulla, ja työtoverit, joiden toimialue on erilainen, mutta joka on rekisteröity samassa vuokraajassa, voivat jakaa koontinäytön muiden kanssa. Oletetaan esimerkiksi, että toimialueet contoso.com ja contoso2.com on rekisteröity samassa vuokraajassa. Jos sähköpostiosoitteesi on konrads@contoso.com, sekä ravali@contoso.com että gustav@contoso2.com voivat jakaa, jos olet antanut heille oikeuden jakamiseen.

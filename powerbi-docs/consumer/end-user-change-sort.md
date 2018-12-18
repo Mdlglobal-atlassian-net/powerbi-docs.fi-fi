@@ -1,33 +1,34 @@
 ---
-title: Power BI -raportin kaavion lajittelutavan vaihtaminen
+title: Raportissa olevan kaavion lajittelutavan vaihtaminen
 description: Power BI -raportin kaavion lajittelutavan vaihtaminen
 author: mihart
 manager: kvivek
 ms.reviewer: ''
+ms.custom: seodec18
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: Conceptual
-ms.date: 09/20/2018
+ms.date: 12/06/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: f4ca6633eb401e7df8041ea385284210c14995ad
-ms.sourcegitcommit: 4f46d71ff6026c1c158f007425aefdcb501f48ee
+ms.openlocfilehash: 191dfdeba436322052befdbc6548fd08f96f0738
+ms.sourcegitcommit: cd85d88fba0d9cc3c7a4dc03d2f35d2bd096759b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/06/2018
-ms.locfileid: "52979330"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53280002"
 ---
 # <a name="change-how-a-chart-is-sorted-in-a-power-bi-report"></a>Power BI -raportin kaavion lajittelutavan vaihtaminen
 Power BI -raportin avulla voit lajitella useimmat visualisoinnit aakkosjärjestykseen kaavion luokkien nimien mukaan tai kunkin luokan numeeristen arvojen mukaan. Tässä esimerkissä kaavio lajitellaan **myymälän nimi** -luokan mukaan.
 
-![](media/end-user-change-sort/pbi_chartsortcategory.png)
+![palkkikaavio, jonka X-akseli on lajiteltu aakkosjärjestykseen](media/end-user-change-sort/pbi_chartsortcategory.png)
 
 Lajittelu on helppo vaihtaa luokasta (myymälän nimi) arvoon (myynti/neliöjalka).
 
 1. Valitse kolme pistettä (...) ja valitse sitten **Lajitteluperuste > Myynti/neliöjalka**.
 2. Valitse tarvittaessa uudelleen kolme pistettä ja valitse sitten **Lajittele laskevaan järjestykseen**.
 
-   ![](media/end-user-change-sort/sort.gif)
+   ![video, jolla näytetään Lajittelujärjestys-kohdan valitseminen ja Nouseva, Laskeva](media/end-user-change-sort/sort.gif)
 
    **HUOMAUTUS**: Kaikki visualisoinnit eivät ole lajiteltavissa.  Esimerkiksi seuraavia visualisointeja ei voi lajitella: Puukartta, kartta, täytetty kartta, pistekaavio, mittari, kortti, monirivinen kortti, vesiputous.
 

@@ -1,30 +1,30 @@
 ---
-title: Power BI -puhelinsovelluksille optimoitujen raporttien luominen
-description: Lue, miten voit optimoida raporttisivuja Power BI -puhelinsovelluksille luomalla raportista erityisesti puhelimiin soveltuvan version.
+title: Mobiilisovelluksiin optimoitujen raporttien luominen
+description: Lue, miten voit optimoida raporttisivuja Power BI -mobiilisovelluksille luomalla raportista erityisesti puhelimiin ja tabletteihin soveltuvan pystysuuntaisen version.
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 09/14/2018
+ms.date: 12/10/2018
 ms.author: maggies
 LocalizationGroup: Create reports
-ms.openlocfilehash: 22f4d6bf3c715c390c9760593ba5afdc72ce3bf7
-ms.sourcegitcommit: 698b788720282b67d3e22ae5de572b54056f1b6c
+ms.openlocfilehash: 64d3faf9fd720d1e50fa69b5ccd914e6b3ac1294
+ms.sourcegitcommit: cd85d88fba0d9cc3c7a4dc03d2f35d2bd096759b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45973950"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53280899"
 ---
-# <a name="create-reports-optimized-for-the-power-bi-phone-apps"></a>Power BI -puhelinsovelluksille optimoitujen raporttien luominen
-Voit parantaa raporttien tarkastelemista puhelimessa mobiilisovelluksissa luomalla raportista erityisesti puhelimiin soveltuvan version. Power BI Desktopissa ja Power BI -palvelussa raportti mukautetaan puhelimia varten niin, että raportin visualisointeja järjestellään uudelleen ja niiden kokoa muutetaan parhaan mahdollisen käyttökokemuksen tuottamiseksi. Lisäksi voit luoda [ *reagoivia* visualisointeja](#optimize-a-visual-for-any-size) ja [reagoivia osittajia](#enhance-slicers-to-to-work-well-in-phone-reports), joiden koko muuttuu kätevästi puhelimella tarkastelemista ajatellen. Jos lisäät raporttiin suodattimia, suodattimet näkyvät automaattisesti myös puhelinraportissa. Raportin lukijat voivat nähdä ne ja käyttää niitä raportin suodattamiseen.
+# <a name="create-reports-optimized-for-the-power-bi-mobile-apps"></a>Power BI -mobiilisovelluksille optimoitujen raporttien luominen
+Voit parantaa käyttökokemusta, kun raporttejasi tarkastellaan mobiilisovelluksissa puhelimella tai tabletilla. Voit luoda raportista pystysuuntaisen asettelun erityisesti puhelimia ja tabletteja varten. Power BI Desktopissa ja Power BI -palvelussa raportti mukautetaan niin, että raportin visualisointeja järjestellään uudelleen ja niiden kokoa muutetaan pystysuuntaisessa asettelussa parhaan mahdollisen käyttökokemuksen tuottamiseksi. Niitä kaikkia ei tarvitse sisällyttää. Lisäksi voit luoda [ *reagoivia* visualisointeja](#optimize-a-visual-for-any-size) ja [reagoivia osittajia](#enhance-slicers-to-to-work-well-in-phone-reports), joiden koko muuttuu kätevästi puhelimella tarkastelemista ajatellen. Jos lisäät raporttiin suodattimia, suodattimet näkyvät automaattisesti myös optimoidussa raportissa. Raportin lukijat voivat nähdä ne ja käyttää niitä raportin suodattamiseen.
 
 ![Optimoitu raportti puhelimessa](media/desktop-create-phone-report/desktop-create-phone-report-1.png)
 
-## <a name="lay-out-a-report-page-for-the-phone"></a>Raporttisivun asettelu puhelinta varten
+## <a name="lay-out-a-portrait-version-of-a-report-page"></a>Raporttisivun pystysuuntaisen version asettelu
 
-Kun olet luonut raportin, voit optimoida sen puhelinkäyttöä varten.
+Kun olet luonut raportin, voit optimoida sen puhelin- ja tablettikäyttöä varten.
 
 1. Valitse Power BI Desktopin raporttinäkymässä **Näkymä**-välilehdeltä **Puhelinasettelu**.  
    
@@ -32,7 +32,7 @@ Kun olet luonut raportin, voit optimoida sen puhelinkäyttöä varten.
    
     Valitse Power BI -palvelussa **Muokkaa raporttia** > **Mobiiliasettelu**.
 
-    Näkyviin tulee tyhjä puhelinpohja. Oikean reunan Visualisoinnit-paneelissa on luettelo kaikista alkuperäisen raporttisivun visualisoinneista.
+    Näet tyhjän pohjan, joka on muotoiltu puhelimen mukaan. Oikean reunan Visualisoinnit-paneelissa on luettelo kaikista alkuperäisen raporttisivun visualisoinneista.
 
 3. Lisää puhelinasetteluun haluamasi visualisointi vetämällä se Visualisoinnit-paneelista puhelinpohjalle.
    
@@ -44,16 +44,16 @@ Kun olet luonut raportin, voit optimoida sen puhelinkäyttöä varten.
 
 4. Voit muuttaa visualisointien kokoa ruudukossa samalla tavalla kuin ruutujen kokoa muutetaan koontinäytöissä tai mobiililaitteiden koontinäytöissä.
    
-   Puhelinraportin ruudukko skaalautuu erikokoisiin puhelimiin, joten raportti näyttää yhtä hyvältä niin pienillä kuin suurillakin puhelimen näytöillä.
+   Puhelinraportin ruudukko skaalautuu erikokoisiin puhelimiin, joten raportti näyttää hyvältä niin pienillä kuin suurillakin puhelimen näytöillä.
    
    ![Visualisoinnin koon muuttaminen](media/desktop-create-phone-report/desktop-create-phone-report-5.gif)
 
 ## <a name="optimize-a-visual-for-any-size"></a>Visualisoinnin optimointi mihin tahansa kokoon
-Voit määrittää koontinäytön tai raportin visualisoinnin *reagoivaksi*, jos haluat, että dataa ja merkityksellisiä tietoja näytetään dynaamisesti suurin mahdollinen määrä oli näyttö minkäkokoinen tahansa. 
+Voit määrittää raporttinäkymän tai raportin visualisoinnit *reagoiviksi*. Ne muuttuvat dynaamisesti näyttämään dataa ja merkityksellisiä tietoja suurin mahdollinen määrä, oli näyttö minkäkokoinen tahansa. 
 
-Visualisoinnin koon muuttuessa Power BI priorisoi tietonäkymän automaattisesti esimerkiksi poistamalla täytön ja siirtämällä selitteen visualisoinnin yläpuolelle, jolloin visualisointi pysyy informatiivisena myös pienessä koossa.
+Visualisoinnin koon muuttuessa Power BI priorisoi tietonäkymän. Se voi esimerkiksi poistaa täytön ja siirtää selitteen visualisoinnin yläpuolelle, jolloin visualisointi pysyy informatiivisena myös pienessä koossa.
 
-![Reagoivan visualisoinnin koon muuttuminen](media/desktop-create-phone-report/desktop-create-phone-report-6.gif)
+![Reagoivan visualisoinnin koon muuttaminen](media/desktop-create-phone-report/desktop-create-phone-report-6.gif)
 
 Voit valita visualisointikohtaisesti, otetaanko reagointi käyttöön. Lisätietoja [visualisointien optimoinnista](visuals/desktop-create-responsive-visuals.md).
 
@@ -89,7 +89,7 @@ Lisätietoja [reagoivien osittajien luomisesta](power-bi-slicer-filter-responsiv
   
     Lisätietoja [jakamisesta ja käyttöoikeuksista Power BI:ssä](service-how-to-collaborate-distribute-dashboards-reports.md).
 
-## <a name="view-optimized-and-unoptimized-reports-on-a-phone"></a>Optimoitujen ja optimoimattomien raporttien näyttäminen puhelimessa
+## <a name="view-optimized-and-unoptimized-reports-on-a-phone-or-tablet"></a>Optimoitujen ja optimoimattomien raporttien näyttäminen puhelimessa tai tabletissa
 Power BI tunnistaa puhelinten mobiilisovelluksissa automaattisesti optimoidut ja optimoimattomat puhelinraportit. Jos raportista on puhelinoptimoitu versio, Power BI:n puhelinsovellus avaa automaattisesti raportin puhelinraporttina.
 
 Jos raportista ei ole puhelinoptimoitua versiota, raportti avautuu optimoimattomana, vaakanäkymässä.  
@@ -100,7 +100,7 @@ Jos optimoit vain joitakin sivuja, lukijat saavat pystynäkymässä ilmoituksen 
 
 ![Optimoimaton puhelinsivu](media/desktop-create-phone-report/desktop-create-phone-report-9.png)
 
-Raportin lukijat voivat kääntää puhelimen sivuttain ja tarkastella sivua vaakasuuntaisena. Lisätietoja [vuorovaikutuksesta puhelimelle optimoitujen Power BI ‑raporttien kanssa](consumer/mobile/mobile-apps-view-phone-report.md).
+Raportin lukijat voivat kääntää puhelimen tai tabletin sivuttain ja tarkastella sivua vaakasuuntaisena. Lisätietoja [vuorovaikutuksesta vaakasuuntaiseen tilaan optimoitujen Power BI ‑raporttien kanssa](consumer/mobile/mobile-apps-view-phone-report.md).
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 * [Koontinäytön puhelinnäkymän luominen Power BI:ssä](service-create-dashboard-mobile-phone-view.md)

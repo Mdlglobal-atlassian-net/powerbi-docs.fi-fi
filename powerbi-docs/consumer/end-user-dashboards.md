@@ -1,21 +1,22 @@
 ---
-title: Mikä on koontinäyttö Power BI -palvelun kuluttajille?
+title: Mikä raporttinäkymä on ja miten se avataan?
 description: Koontinäyttö on yksi Power BI -palvelun tärkeistä ominaisuuksista.
 author: mihart
 manager: kvivek
+ms.custom: seodec18
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 11/09/2018
+ms.date: 12/06/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 4f65371d0f94c8336b9b6667bae32ef0bdfdf5e3
-ms.sourcegitcommit: a1b7ca499f4ca7e90421511e9dfa61a33333de35
+ms.openlocfilehash: 732e3fcc05ee48135fb0b62d462ef8abcfae96be
+ms.sourcegitcommit: cd85d88fba0d9cc3c7a4dc03d2f35d2bd096759b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51507588"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53280508"
 ---
 # <a name="dashboards-for-power-bi-service-consumers"></a>Koontinäytöt Power BI -palvelun kuluttajille
 

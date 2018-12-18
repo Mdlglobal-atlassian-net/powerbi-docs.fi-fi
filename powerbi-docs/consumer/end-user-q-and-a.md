@@ -1,21 +1,22 @@
 ---
-title: Power BI -palvelun ja Power BI Desktopin Q&A-toiminnon yleiskatsaus
+title: Power BI -palvelun Q&A-toiminnon yleiskatsaus
 description: Yleiskatsaus aiheeseen Power BI:n Q&A-kyselyt luonnollisella kielellä.
 author: mihart
 manager: kvivek
 ms.reviewer: ''
+ms.custom: seodec18
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 10/16/2018
+ms.date: 12/06/2018
 ms.author: mihart
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 361c71c979d65e5c71ada6889bc7312ef64da23e
-ms.sourcegitcommit: a3ce866caba24217bcdd011e892b9ea72f3d2400
+ms.openlocfilehash: 3548041be39705c3013d09740040afc3e7f1c9e7
+ms.sourcegitcommit: cd85d88fba0d9cc3c7a4dc03d2f35d2bd096759b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49396355"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53279574"
 ---
 # <a name="qa-for-power-bi-consumers"></a>Q&A Power BI -**kuluttajille**
 ## <a name="what-is-qa"></a>Mikä on Q&A?
@@ -63,18 +64,18 @@ Q&A valitsee parhaan visualisoinnin näytettyjen tietojen perusteella. Joskus po
 Voit myös kertoa Q&A:lle mistä visualisoinnista haluat hakea lisäämällä sen kysymykseen. Muista kuitenkin, että Q&A ei ehkä voi näyttää tietoja pyytämästäsi visualisointityypistä. Q&A näyttää sinulle luettelon sopivista visualisointityypeistä.
 
 ## <a name="considerations-and-troubleshooting"></a>Huomioon otettavat seikat ja vianmääritys
-**Kysymys**: en näe Q&A:ta tässä koontinäytössä.    
-**Vastaus 1**: jos kysymysruutua ei näy, tarkista ensin asetuksesi. Valitse hammasrataskuvake Power BI -työkalurivin oikeasta yläkulmasta.   
+**Kysymys**: En näe Q&A:ta tässä raporttinäkymässä.    
+**Vastaus 1**: Jos kysymysruutua ei näy, tarkista ensin asetuksesi. Valitse hammasrataskuvake Power BI -työkalurivin oikeasta yläkulmasta.   
 ![hammasrataskuvake](media/end-user-q-and-a/power-bi-settings.png)
 
 Valitse sitten **Asetukset** > **Koontinäytöt**. Varmista, että **Näytä Q&A-hakuruutu tässä koontinäytössä** -vaihtoehdon vieressä on valintamerkki.
 ![Q&A:n koontinäyttöasetukset](media/end-user-q-and-a/power-bi-turn-on.png)  
 
 
-**Vastaus 2**: koontinäytön *suunnittelija* tai järjestelmänvalvoja on saattanut poistaa Q&A:n käytöstä. Kysy, voitko ottaa sen takaisin käyttöön.   
+**Vastaus 2**: Raporttinäkymän *suunnittelija* tai järjestelmänvalvoja on saattanut poistaa Q&A:n käytöstä. Kysy, voitko ottaa sen takaisin käyttöön.   
 
-**Kysymys**: en saa haluttuja tuloksia, kun kirjoitan kysymyksen.    
-**Vastaus**: ota yhteys koontinäytön *suunnittelijaan*. Suunnittelija voi auttaa parantamaan Q&A:n tuloksia monin eri tavoin. Suunnittelija voi esimerkiksi muuttaa tietojoukon sarakkeessa käytettäviä termejä helpommin ymmärrettäviksi (`CustFN` --> `CustomerFirstName`). Koska suunnittelija tuntee tietojoukon todella hyvin, hän voi myös keksiä sopivia kysymyksiä ja lisätä ne Q&A-pohjaan.
+**Kysymys**: En saa haluttuja tuloksia, kun kirjoitan kysymyksen.    
+**Vastaus**: Ota yhteys raporttinäkymän *suunnittelijaan*. Suunnittelija voi auttaa parantamaan Q&A:n tuloksia monin eri tavoin. Suunnittelija voi esimerkiksi muuttaa tietojoukon sarakkeessa käytettäviä termejä helpommin ymmärrettäviksi (`CustFN` --> `CustomerFirstName`). Koska suunnittelija tuntee tietojoukon todella hyvin, hän voi myös keksiä sopivia kysymyksiä ja lisätä ne Q&A-pohjaan.
 
 ![suositeltu kysymys korostettuna](media/end-user-q-and-a/power-bi-featured-q.png)
 

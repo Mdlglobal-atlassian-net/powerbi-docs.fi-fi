@@ -1,22 +1,23 @@
 ---
-title: Kohdistustila ja koko näytön tila – lähentäminen yksityiskohtien katsomiseksi.
+title: Kohdistustila ja koko näytön tila – lähentäminen yksityiskohtien katsomiseksi
 description: Dokumentaatio Power BI -koontinäytön, koontinäytön ruudun, raportin tai raportin visualisoinnin esittämiseen kohdistustilassa tai koko näytön tilassa
 author: mihart
 manager: kvivek
 ms.reviewer: ''
+ms.custom: seodec18
 featuredvideoid: dtdLul6otYE
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 10/09/2018
+ms.date: 12/06/2018
 ms.author: mihart
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 70e7fcb9f38c6dbf52adf58f8477f671156c9da4
-ms.sourcegitcommit: a1b7ca499f4ca7e90421511e9dfa61a33333de35
+ms.openlocfilehash: 13032e011446fad765961dacdb83fbb8bd5a2f6e
+ms.sourcegitcommit: cd85d88fba0d9cc3c7a4dc03d2f35d2bd096759b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51507957"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53279956"
 ---
 # <a name="display-content-in-more-detail-focus-mode-and-full-screen-mode"></a>Näytä sisältö yksityiskohtaisemmin: kohdistustila ja koko näytön tila
 
@@ -83,7 +84,7 @@ Raporttisivujen valikko
     Voit siirtyä raportin sivulta toiselle koko näytön raporteissa näiden nuolten avulla.    
   * Jos haluat poistua koko näytön tilasta, valitse **Poistu koko näytön tilasta** -kuvake.
 
-      ![](media/end-user-focus/exit-fullscreen-new.png)
+      ![poistu koko näytön tilasta -kuvake](media/end-user-focus/exit-fullscreen-new.png)
 
 ## <a name="working-in-focus-mode"></a>Työskentely kohdistustilassa
 Kohdistustilan voi avata kahdella eri tavalla, toinen on tarkoitettu koontinäytön ruuduille ja toinen raportin visualisoinneille.

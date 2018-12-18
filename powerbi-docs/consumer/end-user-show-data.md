@@ -1,21 +1,22 @@
 ---
-title: Power BI-visualisoinnin luomiseen käytettyjen tietojen näyttäminen
+title: Visualisoinnin luomiseen käytettyjen tietojen näyttäminen
 description: Tässä asiakirjassa kerrotaan, miten Power BI kuluttajat voivat ”nähdä” visualisoinnin luomiseen käytetyt tiedot.
 author: mihart
 manager: kvivek
 ms.reviewer: ''
+ms.custom: seodec18
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 10/17/2018
+ms.date: 12/06/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 58251ffa31dcac17f83c8b4ab3962b7df4b87f84
-ms.sourcegitcommit: a3ce866caba24217bcdd011e892b9ea72f3d2400
+ms.openlocfilehash: 4a3acd0d95b400a15348b896f150b74f01f5ce03
+ms.sourcegitcommit: cd85d88fba0d9cc3c7a4dc03d2f35d2bd096759b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49396378"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53279381"
 ---
 # <a name="show-the-data-that-was-used-to-create-the-visualization"></a>Visualisoinnin luomiseen käytettyjen tietojen näyttäminen
 ## <a name="show-data"></a>Näytä tiedot
@@ -31,7 +32,7 @@ Power BI:n visualisointi rakentuu pohjana olevien tietojoukkojen tiedoista. Jos 
    
    ![visualisointi ja tietojen pystysuuntainen näyttö](./media/end-user-show-data/power-bi-explore-show-data-new.png)
 
-4. Jos haluat vaihtaa suuntaa, valitse pystysuuntainen asettelu ![](media/end-user-show-data/power-bi-vertical-icon-new.png) visualisoinnin oikeasta yläkulmasta.
+4. Jos haluat vaihtaa suuntaa, valitse pystysuuntainen asettelu ![asettelun kuvake](media/end-user-show-data/power-bi-vertical-icon-new.png) visualisoinnin oikeasta yläkulmasta.
    
    ![visualisointi ja tietojen vaakasuuntainen näyttö](./media/end-user-show-data/power-bi-explore-show-data2-new.png)
 
