@@ -26,7 +26,7 @@ Raportteja voidaan suodattaa ja korostaa monin eri tavoin Power BI:ssä. Kaikkie
 * Tavat, joilla voit [luoda ja käyttää muokkausnäkymän suodattimia](power-bi-report-add-filter.md) raporteissa. Kun sinulla on raportin muokkausoikeudet, voit luoda, muokata ja poistaa suodattimia raporteissa.
 * Tavat, joilla voit [käyttää suodattimia ja korostuksia kanssasi jaetussa raportissa](consumer/end-user-reading-view.md), raportin lukunäkymässä. Se, mitä voit tehdä, on rajoitetumpaa, mutta käytettävissäsi on silti laaja valikoima vaihtoehtoja suodattamiseen ja korostamiseen.  
 * Yksityiskohtainen esittely [suodattimien ja korostusten ohjaimista, jotka ovat käytettävissä muokkausnäkymässä](consumer/end-user-report-filter.md), mukaan lukien perusteellisempi esittely suodatintyypeistä (esimerkiksi päivämäärä ja aika, numerot ja teksti) sekä perusvaihtoehtojen ja lisävaihtoehtojen välinen ero.
-* Kun olet oppinut, miten suodattimet ja korostus toimivat oletusarvoisesti, voit lukea, [miten sivulla olevat visualisoinnit suodattavat ja korostavat toisiaan](consumer/end-user-interactions.md)
+* Kun olet oppinut, miten suodattimet ja korostus toimivat oletusarvoisesti, voit lukea siitä, [miten sivulla olevat visualisoinnit suodattavat ja korostavat toisiaan](consumer/end-user-interactions.md)
 
 ## <a name="intro-to-the-filters-pane"></a>Suodattimet-ruudun esittely
 
@@ -37,7 +37,7 @@ Voit käyttää suodattimia **Suodattimet**-ruudussa tai [tekemällä valintoja 
 Käytössä on neljä erilaista suodatinta:
 
 - **sivusuodatin** koskee kaikkia raporttisivulla olevia visualisointeja     
-- **visuaalinen suodatin** koskee raporttisivulla olevaa yksittäistä visualisointia. Näet vain visuaalisen tason suodattimia, jos olet valinnut visualisoinnin raportin pohjalta.    
+- **visuaalinen suodatin** koskee raporttisivulla olevaa yksittäistä visualisointia. Näet vain visuaalisen tason suodattimia, jos olet valinnut visualisoinnin raporttipohjasta.    
 - **raporttisuodatin** koskee kaikkia raportin sivuja.    
 - **porautumissuodatin** koskee mitä tahansa raportin entiteettiä    
 
@@ -77,10 +77,10 @@ Kun sinulla on raportin omistajan oikeudet ja avaat raportin muokkausnäkymäss�
 
 Kuten lukunäkymässä, tällä raportin sivulla on kuusi sivutason suodatinta ja yksi raporttitason suodatin. Valitsemalla kuplakaavion voitaisiin nähdä, että sillä on kuusi visuaalisen tason suodatinta.
 
-Suodattimia ja korostamista voidaan hyödyntää enemmän muokkausnäkymässä. Pääasiassa voidaan lisätä uusia suodattimia. Lue, miten [raporttiin lisätään suodatin](power-bi-report-add-filter.md), ja paljon muuta.
+Suodattimia ja korostamista voidaan hyödyntää enemmän muokkausnäkymässä. Pääasiassa voidaan lisätä uusia suodattimia. Lue siitä, miten [raporttiin lisätään suodatin](power-bi-report-add-filter.md), ja paljon muuta.
 
 ## <a name="ad-hoc-highlighting"></a>Ad-hoc-korostaminen
-Valitse raportin pohjasta kenttä sivun muiden visualisointien korostamiseksi. Valitse sitten tyhjä tila samassa visualisoinnissa sen poistamiseksi. Tämäntyyppinen korostaminen on hauska tapa tutustua nopeasti tietojen vaikutuksiin. Ohjeet tällaisen ristiinkorostuksen hienosäätämisestä ovat artikkelissa [Visualisointitoimet](consumer/end-user-interactions.md) .
+Valitse raporttipohjasta kenttä sivun muiden visualisointien korostamiseksi. Valitse sitten tyhjä tila samassa visualisoinnissa sen poistamiseksi. Tämäntyyppinen korostaminen on hauska tapa tutustua nopeasti tietojen vaikutuksiin. Ohjeet tällaisen ristiinkorostuksen hienosäätämisestä ovat artikkelissa [Visualisointitoimet](consumer/end-user-interactions.md) .
 
 ![](media/power-bi-reports-filters-and-highlighting/power-bi-adhoc-filter.gif)
 

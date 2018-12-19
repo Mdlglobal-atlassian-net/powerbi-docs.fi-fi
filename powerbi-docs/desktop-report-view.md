@@ -59,9 +59,9 @@ Voit poistaa sivun napsauttamalla **X** sivun välilehdellä raporttinäkymän a
 
 Voit helposti ottaa visualisoinnin yhdestä Power BI Desktop -raportista ja liittää sen toiseen raporttiin. Kopioi raportin visualisointi **CTRL+C**-näppäinyhdistelmällä ja liitä sitten visualisointi toiseen Power BI Desktop -raporttiin käyttämällä **CTRL+V**-näppäinyhdistelmää. Voit valita yhden visualisoinnin kerrallaan tai voit valita sivun kaikki visualisoinnit kopioitaviksi ja sitten liittää ne Power BI Desktop -kohderaporttiin. 
 
-Visualisointien kopiointi- ja liittämismahdollisuudesta on hyötyä henkilöille, jotka luovat ja päivittävät useita raportteja usein. Tiedostojen välillä kopioitaessa asetukset ja muotoilu, jotka on nimenomaan määritetty muotoiluruudussa, jatkavat eteenpäin, kun taas teemaan tai oletusasetuksiin pohjautuvat visuaaliset elementit päivitetään automaattisesti vastaamaan kohderaportin teemaa. Joten kun saat muotoiltua visualisoinnin juuri haluamallasi tavalla, voit kopioida ja liittää kyseisen visualisoinnin uusiin raportteihin ja näin säilyttää muotoilun eteen tehdyn työn.
+Visualisointien kopiointi- ja liittämismahdollisuudesta on hyötyä henkilöille, jotka luovat ja päivittävät useita raportteja usein. Tiedostojen välillä kopioitaessa asetukset ja muotoilu, jotka on nimenomaan määritetty muotoiluruudussa, kopioituvat eteenpäin, kun taas teemaan tai oletusasetuksiin pohjautuvat visuaaliset elementit päivitetään automaattisesti vastaamaan kohderaportin teemaa. Kun siis saat muotoiltua visualisoinnin juuri haluamallasi tavalla, voit kopioida ja liittää kyseisen visualisoinnin uusiin raportteihin ja näin säilyttää muotoilun eteen tehdyn työn.
 
-![Virhe visualisoinnin kopioinnissa/liittämisessä – ei tietokenttä](media/desktop-report-view/report-view_05.png)
+![Virhe visualisoinnin kopioinnissa tai liittämisessä – ei tietokenttä](media/desktop-report-view/report-view_05.png)
 
 Jos mallin kentät ovat erilaisia, visualisoinnissa tulee näkyviin virhe sekä varoitus siitä, mitä kenttiä ei ole olemassa. Virhe on samanlainen kuin silloin, kun poistat kentän mallista, jota visualisointi käyttää. Virheen korjaamiseksi korvaa rikkinäiset kentät haluamillasi kentillä raportissa olevasta mallista, johon liitit visualisoinnin. Jos käytät mukautettua visualisointia, sinun on tuotava myös kyseinen mukautettu visualisointi kohderaporttiin.
 
