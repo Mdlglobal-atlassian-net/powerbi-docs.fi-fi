@@ -114,7 +114,7 @@ Voit luoda PBIE-kapasiteetit vain PBI-vuokraajan alueelle.
 
 PBI-portaalin avulla voit selvittää, mikä on PBI-vuokraajan alueesi.
 
-https://app.powerbi.com/ > ? > Tietoja Power BI:stä
+[https://app.powerbi.com/](https://app.powerbi.com/) > ? > Tietoja Power BI:stä
 
 ![Tietoja Power BI:stä](media/embedded-faq/about-01.png)
 ![Vuokraajan alue](media/embedded-faq/tenant-location-01.png)
