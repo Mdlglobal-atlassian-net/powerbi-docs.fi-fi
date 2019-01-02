@@ -1,6 +1,6 @@
 ---
 title: Upotetut analyysitoiminnot ja Power BI -sisällön upottaminen sovellukseen asiakkaille
-description: Opi integroimaan tai upottamaan raportteja, raporttinäkymiä tai ruutuja sovellukseen asiakkaita varten käyttämällä upotetuissa analyysitoiminnoissa Power BI -ohjelmointirajapintoja. Lue, miten voit integroida Power BI:n sovellukseesi käyttämällä upotettujen analyysitoimintojen ohjelmistoa, upotettujen analyysitoimintojen työkaluja tai upotetun liiketoimintatiedon hallinnan työkaluja.
+description: Opi integroimaan tai upottamaan raportteja, raporttinäkymiä tai ruutuja sovellukseen asiakkaita varten käyttämällä upotetuissa analyysitoiminnoissa Power BI -ohjelmointirajapintoja. Lue, miten voit integroida Power BI:n sovellukseesi käyttämällä upotetun analysoinnin ohjelmistoa, upotetun analysoinnin työkaluja tai upotetun liiketoimintatiedon työkaluja.
 author: markingmyname
 ms.author: maghan
 manager: kfile
@@ -10,12 +10,12 @@ ms.service: powerbi
 ms.component: powerbi-developer
 ms.custom: seodec18
 ms.date: 12/10/2018
-ms.openlocfilehash: e396f46987ef14aac9361e8f7ef41e90b2d8383e
-ms.sourcegitcommit: f25464d5cae46691130eb7b02c33f42404011357
+ms.openlocfilehash: 96cd04385bec6d4b9b47e3e05a30820b2f19f3dd
+ms.sourcegitcommit: 9913c213d40b45ba83c6c3b3a7ef0b757800e3ad
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53180871"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53301869"
 ---
 # <a name="tutorial-embed-a-power-bi-report-dashboard-or-tile-into-an-application-for-your-customers"></a>Opetusohjelma: Power BI -raportin, raporttinäkymän tai ruudun upottaminen sovellukseen asiakkaita varten
 
@@ -338,14 +338,14 @@ Luomalla varattua kapasiteettia voit hyötyä siitä, että asiakkaalle varataan
 
 Seuraavan taulukon avulla voit määrittää, mikä Power BI Embedded -kapasiteetti sopii parhaiten tarpeisiisi.
 
-| Kapasiteetin solmu | Ytimiä yhteensä<br/>*(Tausta ja edusta)* | Taustan ytimet | Edustan ytimet | DirectQueryn/live-yhteyden rajoitukset | Sivun hahmonnuksia enintään huipputuntina |
+| Kapasiteetin solmu | Ytimiä yhteensä<br/>*(Tausta ja edusta)* | Taustan ytimet | Edustan ytimet | DirectQueryn/live-yhteyden rajoitukset|
 | --- | --- | --- | --- | --- | --- |
-| A1 |1 näennäisydin |0,5 ydintä, 3 Gt RAM |0,5 ydintä |0,5 sekunnissa |1–300 |
-| A2 |2 näennäisydintä |1 ydin, 5 Gt RAM |1 ydin | 10 sekunnissa |301–600 |
-| A3 |4 näennäisydintä |2 ydintä, 10 Gt RAM |2 ydintä | 15 sekunnissa |601–1 200 |
-| A4 |8 näennäisydintä |4 ydin(tä), 25 Gt RAM |4 ydintä |30 sekunnissa |1 201–2 400 |
-| A5 |16 näennäisydintä |8 ydintä, 50 Gt RAM |8 ydintä |60 sekunnissa |2 401–4 800 |
-| A6 |32 näennäisydintä |16 ydintä, 100 Gt RAM |16 ydintä |120 sekunnissa |4 801–9 600 |
+| A1 |1 näennäisydin |0,5 ydintä, 3 Gt RAM |0,5 ydintä |0,5 sekunnissa |
+| A2 |2 näennäisydintä |1 ydin, 5 Gt RAM |1 ydin | 10 sekunnissa |
+| A3 |4 näennäisydintä |2 ydintä, 10 Gt RAM |2 ydintä | 15 sekunnissa |
+| A4 |8 näennäisydintä |4 ydin(tä), 25 Gt RAM |4 ydintä |30 sekunnissa |
+| A5 |16 näennäisydintä |8 ydintä, 50 Gt RAM |8 ydintä |60 sekunnissa |
+| A6 |32 näennäisydintä |16 ydintä, 100 Gt RAM |16 ydintä |120 sekunnissa |
 
 **_A-varastointiyksiköillä et pysty käyttämään Power BI -sisältöä ilmaisella Power BI -käyttöoikeudella._**
 

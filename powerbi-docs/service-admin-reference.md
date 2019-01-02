@@ -10,12 +10,12 @@ ms.topic: overview
 ms.date: 06/25/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 216451874fcc66b14286ea4ed3aeb1845483bfb7
-ms.sourcegitcommit: 05303d3e0454f5627eccaa25721b2e0bad2cc781
+ms.openlocfilehash: c33d75fa09a4e94e4db6a2b968cd3a3170afd397
+ms.sourcegitcommit: f5e39e9ead37445bbeab795890b3d80633383032
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "52578355"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53735542"
 ---
 # <a name="powershell-cmdlets-rest-apis-and-net-sdk-for-power-bi-administration"></a>PowerShellin cmdlet-komennot, REST-ohjelmointirajapinnat ja .NET SDK Power BI:n hallintaa varten
 Power BI:ssä järjestelmänvalvojat voivat luoda yleisiä tehtäviä koskevia komentosarjoja PowerShellin cmdlet-komentojen avulla. Se sisältää myös REST-ohjelmointirajapinnat ja .NET SDK:n hallinnollisten ratkaisujen kehittämiseen. Tässä ohjeaiheessa näytetään cmdlet-komentojen luettelo sekä vastaava SDK-menetelmä ja REST-ohjelmointirajapinnan päätepiste. Lisätietoja:
@@ -28,22 +28,22 @@ Power BI:ssä järjestelmänvalvojat voivat luoda yleisiä tehtäviä koskevia k
 
 | **Cmdlet-komennon nimi** | **Aliakset** | **SDK-menetelmä** | **REST-ohjelmointirajapinnan päätepiste** | **Kuvaus** |
 | --- | --- | --- | --- | --- |
-| **Get-PowerBIDatasource** | – | Datasets\_GetDataSourcesAsAdmin | /v1.0/myorg/admin/datasets/{datasetkey}/datasources | Hakee tietolähteitä annetulle tietojoukolle. |
-| **Get-PowerBIDataset** | – | Datasets\_GetDatasetsAsAdmin | /v1.0/myorg/admin/datasets | Hakee tietojoukkojen täydellisen luettelon Power BI -vuokraajassa. |
-| **Get-PowerBIWorkspace** | **Get-PowerBIGroup** | Groups\_GetGroupsAsAdmin | /v1.0/myorg/admin/groups | Hakee työtilojen täydellisen luettelon Power BI -vuokraajassa. |
-| **Add-PowerBIWorkspaceUser** | **Add-PowerBIGroupUser** |Groups\_AddUserAsAdmin | /v1.0/myorg/admin/groups/{groupId}/users | Lisää käyttäjän jäsenenä tiettyyn työtilaan. |
-| **Remove-PowerBIWorkspaceUser** | **Remove-PowerBIGroupUser** | Groups\_DeleteUserAsAdmin | /v1.0/myorg/admin/groups/{groupId}/users/{user} | Poistaa käyttäjän tietyn työtilan jäsenluettelosta. |
-| **Restore-PowerBIWorkspace** |**Restore-PowerBIGroup** | Groups\_RestoreDeletedGroupAsAdmin | /v1.0/myorg/admin/groups/{groupId}/restore | Palauttaa poistetun työtilan. |
-| **Set-PowerBIWorkspace** |**Set-PowerBIGroup** | Groups\_UpdateGroupAsAdmin | /v1.0/myorg/admin/groups/{groupId} | Päivittää tietyn työtilan ominaisuudet. |
-| **Get-PowerBIDataset -WorkspaceId** | – | Groups\_GetDatasetsAsAdmin | /v1.0/myorg/admin/groups/{group\_id}/datasets | Hakee tietyssä työtilassa olevat tietojoukot. |
-| **Get-PowerBIReport** | – | Reports\_GetReportsAsAdmin | /v1.0/myorg/admin/reports | Hakee raporttien täydellisen luettelon Power BI -vuokraajassa. |
-| **Get-PowerBIDashboard** | – | Dashboards\_GetDashboardsAsAdmin | /v1.0/myorg/admin/dashboards | Hakee koontinäyttöjen täydellisen luettelon Power BI -vuokraajassa. |
-| **Get-PowerBIDashboard -WorkspaceId** | – | Groups\_GetDashboardsAsAdmin | /v1.0/myorg/admin/groups/{group\_id}/dashboards | Hakee tietyssä työtilassa olevat koontinäytöt. |
-| **Get-PowerBITile** | **Get-PowerBIDashboardTile** | Dashboards\_GetTilesAsAdmin | /v1.0/myorg/admin/dashboards/{dashboard\_id}/tiles | Hakee tietyn koontinäytön ruudut. |
-| **Get-PowerBIReport** | – | Groups\_GetReportsAsAdmin | /v1.0/myorg/admin/groups/{group\_id}/reports | Hakee tietyssä työtilassa olevat raportit. |
-| **Get-PowerBIImport** | – | Imports\_GetImportsAsAdmin | /v1.0/myorg/admin/imports | Hakee tuontien täydellisen luettelon Power BI -vuokraajassa. |
-| **Connect-PowerBIServiceAccount** | **Login-PowerBI** &  **Login-PowerBIServiceAccount** | – | – | Kirjaudu sisään Power BI:hin ja aloita istunto. |
-| **Disconnect-PowerBIServiceAccount** | **Logout-PowerBI** & **Logout-PowerBIServiceAccount** | – | – | Kirjaudu ulos Power BI:stä ja sulje nykyinen istunto. |
-| **Invoke-PowerBIRestMethod**| – | – | – | Lähetä satunnaisia REST-ohjelmointirajapinnan kutsuja Power BI:hin. |
-| **Get-PowerBIAccessToken**| – | – | – | Hanki Power BI -käyttöoikeustietue istunnossa. |
-| **Resolve-PowerBIError**| – | – | – | Hanki tarkat virhetiedot epäonnistuneista cmdlet-kutsuista. |
+| `Get-PowerBIDatasource` | – | `Datasets_GetDataSourcesAsAdmin` | /v1.0/myorg/admin/datasets/{datasetkey}/datasources | Hakee tietolähteitä annetulle tietojoukolle. |
+| `Get-PowerBIDataset` | – | `Datasets_GetDatasetsAsAdmin` | /v1.0/myorg/admin/datasets | Hakee tietojoukkojen täydellisen luettelon Power BI -vuokraajassa. |
+| `Get-PowerBIWorkspace` | `Get-PowerBIGroup` | `Groups_GetGroupsAsAdmin` | /v1.0/myorg/admin/groups | Hakee työtilojen täydellisen luettelon Power BI -vuokraajassa. |
+| `Add-PowerBIWorkspaceUser` | `Add-PowerBIGroupUser` | `Groups_AddUserAsAdmin` | /v1.0/myorg/admin/groups/{groupId}/users | Lisää käyttäjän jäsenenä tiettyyn työtilaan. |
+| `Remove-PowerBIWorkspaceUser` | `Remove-PowerBIGroupUser` | `Groups_DeleteUserAsAdmin` | /v1.0/myorg/admin/groups/{groupId}/users/{user} | Poistaa käyttäjän tietyn työtilan jäsenluettelosta. |
+| `Restore-PowerBIWorkspace` |`Restore-PowerBIGroup` | `Groups_RestoreDeletedGroupAsAdmin` | /v1.0/myorg/admin/groups/{groupId}/restore | Palauttaa poistetun työtilan. |
+| `Set-PowerBIWorkspace` |`Set-PowerBIGroup` | `Groups_UpdateGroupAsAdmin` | /v1.0/myorg/admin/groups/{groupId} | Päivittää tietyn työtilan ominaisuudet. |
+| `Get-PowerBIDataset -WorkspaceId` | – | `Groups_GetDatasetsAsAdmin` | /v1.0/myorg/admin/groups/{group\_id}/datasets | Hakee tietyssä työtilassa olevat tietojoukot. |
+| `Get-PowerBIReport` | – | `Reports_GetReportsAsAdmin` | /v1.0/myorg/admin/reports | Hakee raporttien täydellisen luettelon Power BI -vuokraajassa. |
+| `Get-PowerBIDashboard` | – | `Dashboards_GetDashboardsAsAdmin` | /v1.0/myorg/admin/dashboards | Hakee koontinäyttöjen täydellisen luettelon Power BI -vuokraajassa. |
+| `Get-PowerBIDashboard -WorkspaceId` | – | `Groups_GetDashboardsAsAdmin` | /v1.0/myorg/admin/groups/{group\_id}/dashboards | Hakee tietyssä työtilassa olevat koontinäytöt. |
+| `Get-PowerBITile` | `Get-PowerBIDashboardTile` | `Dashboards_GetTilesAsAdmin` | /v1.0/myorg/admin/dashboards/{dashboard\_id}/tiles | Hakee tietyn koontinäytön ruudut. |
+| `Get-PowerBIReport` | – | `Groups_GetReportsAsAdmin` | /v1.0/myorg/admin/groups/{group\_id}/reports | Hakee tietyssä työtilassa olevat raportit. |
+| `Get-PowerBIImport` | – | `Imports_GetImportsAsAdmin` | /v1.0/myorg/admin/imports | Hakee tuontien täydellisen luettelon Power BI -vuokraajassa. |
+| `Connect-PowerBIServiceAccount` | `Login-PowerBI` &  `Login-PowerBIServiceAccount` | – | – | Kirjaudu sisään Power BI:hin ja aloita istunto. |
+| `Disconnect-PowerBIServiceAccount` | `Logout-PowerBI` & `Logout-PowerBIServiceAccount` | – | – | Kirjaudu ulos Power BI:stä ja sulje nykyinen istunto. |
+| `Invoke-PowerBIRestMethod`| – | – | – | Lähetä satunnaisia REST-ohjelmointirajapinnan kutsuja Power BI:hin. |
+| `Get-PowerBIAccessToken`| – | – | – | Hanki Power BI -käyttöoikeustietue istunnossa. |
+| `Resolve-PowerBIError`| – | – | – | Hanki tarkat virhetiedot epäonnistuneista cmdlet-kutsuista. |

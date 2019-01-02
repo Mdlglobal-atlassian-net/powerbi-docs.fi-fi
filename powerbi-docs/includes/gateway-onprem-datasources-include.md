@@ -6,7 +6,7 @@
 | Moniulotteinen Analysis Services -muoto |Kyllä |Kyllä |
 | Tiedosto |Ei |Kyllä |
 | Kansio |Ei |Kyllä |
-| IBM DB2 |Ei |Kyllä |
+| IBM DB2 |Kyllä |Kyllä |
 | IBM Informix -tietokanta |Ei |Kyllä |
 | IBM Netezza |Kyllä |Kyllä |
 | Impala |Kyllä |Kyllä |

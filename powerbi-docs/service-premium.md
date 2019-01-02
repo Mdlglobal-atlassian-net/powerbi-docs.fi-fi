@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 10/21/2018
 ms.custom: seodec18
 LocalizationGroup: Premium
-ms.openlocfilehash: cbfee8034639a65517f9adc57cc95dd1271e6044
-ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
+ms.openlocfilehash: ea26ba39a9ec06b79330719afd4fb3b3a572d912
+ms.sourcegitcommit: 9913c213d40b45ba83c6c3b3a7ef0b757800e3ad
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53025438"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53301800"
 ---
 # <a name="what-is-microsoft-power-bi-premium"></a>Mikä on Microsoft Power BI Premium?
 
@@ -47,7 +47,7 @@ Alla olevassa taulukossa on yhteenveto jaetun kapasiteetin ja Premium-kapasiteet
 | --- | --- | --- |
 | **Päivitystaajuus** |8/päivä |48/päivä |
 | **Eristys erillisellä laitteistolla** |![Ei käytettävissä](media/service-premium/not-available.png) |![Käytettävissä](media/service-premium/available.png) |
-| **Yritysjakelu**  _**kaikille käyttäjille**_ | | |
+| **Yritysjakelu ** _**kaikille käyttäjille**_ | | |
 | Sovellukset ja jakaminen |![Ei käytettävissä](media/service-premium/not-available.png) |![Käytettävissä](media/service-premium/available.png) |
 | Upotettu ohjelmointirajapinta ja ohjausobjektit |![Ei käytettävissä](media/service-premium/not-available.png) |![Käytettävissä](media/service-premium/available.png)<sup>2</sup> |
 | **Power BI -raporttien paikallinen julkaisu** |![Ei käytettävissä](media/service-premium/not-available.png) |![Käytettävissä](media/service-premium/available.png) |
@@ -71,14 +71,14 @@ Power BI Premium on saatavilla solmumäärityksinä eri näennäisydinkapasiteet
 >[!NOTE]
 >Tämän taulukon linkit toimivat oikein vain käyttäjillä, joilla on Office 365:n yleisen järjestelmänvalvojan rooli. Muut saavat virheilmoituksen 404.
 
-| Kapasiteetin solmu | V-ytimiä yhteensä<br/>*(Tausta ja edusta)* | Taustan näennäisytimet | Edustan V-ytimet | DirectQueryn/live-yhteyden rajoitukset | Sivun hahmonnuksia enintään huipputuntina | Käytettävyys |
+| Kapasiteetin solmu | V-ytimiä yhteensä<br/>*(Tausta ja edusta)* | Taustan näennäisytimet | Edustan V-ytimet | DirectQueryn/live-yhteyden rajoitukset | Käytettävyys |
 | --- | --- | --- | --- | --- | --- | --- |
-| [EM1 (kuukausittain)](https://portal.office.com/SubscriptionDetails?OfferId=4004702D-749C-4F74-BF47-3048F1833780&adminportal=1) |1 näennäisydin |0,5 näennäisydintä, 2,5 Gt RAM |0,5 näennäisydintä |3,75 sekunnissa |150–300 |Käytettävissä |
-| [EM2 (kuukausittain)](https://portal.office.com/SubscriptionDetails?OfferId=4004702D-749C-4F74-BF47-3048F1833780&adminportal=1) |2 näennäisydintä |1 näennäisydin, 5 Gt RAM |1 näennäisydin |7,5 sekunnissa |301–600 |Käytettävissä |
-| [EM3 (kuukausittain)](https://portal.office.com/SubscriptionDetails?OfferId=4004702D-749C-4F74-BF47-3048F1833780&adminportal=1) |4 näennäisydintä |2 näennäisydintä, 10 Gt RAM |2 näennäisydintä | |601–1 200 |Käytettävissä |
-| [P1](https://portal.office.com/SubscriptionDetails?OfferId=b3ec5615-cc11-48de-967d-8d79f7cb0af1&adminportal=1) |8 näennäisydintä |4 näennäisydintä, 25 Gt RAM |4 näennäisydintä |30 sekunnissa |1 201–2 400 |Käytettävissä ([kuukausittain](https://portal.office.com/SubscriptionDetails?OfferId=E4C8EDD3-74A1-4D42-A738-C647972FBE81&adminportal=1) on myös käytettävissä) |
-| [P2](https://portal.office.com/SubscriptionDetails?OfferId=062F2AA7-B4BC-4B0E-980F-2072102D8605&adminportal=1) |16 näennäisydintä |8 näennäisydintä, 50 Gt RAM |8 näennäisydintä |60 sekunnissa |2 401–4 800 |Käytettävissä |
-| [P3](https://portal.office.com/SubscriptionDetails?OfferId=40c7d673-375c-42a1-84ca-f993a524fed0&adminportal=1) |32 näennäisydintä |16 näennäisydintä, 100 Gt RAM |16 näennäisydintä |120 sekunnissa |4 801–9 600 |Käytettävissä |
+| [EM1 (kuukausittain)](https://portal.office.com/SubscriptionDetails?OfferId=4004702D-749C-4F74-BF47-3048F1833780&adminportal=1) |1 näennäisydin |0,5 näennäisydintä, 2,5 Gt RAM |0,5 näennäisydintä |3,75 sekunnissa |Käytettävissä |
+| [EM2 (kuukausittain)](https://portal.office.com/SubscriptionDetails?OfferId=4004702D-749C-4F74-BF47-3048F1833780&adminportal=1) |2 näennäisydintä |1 näennäisydin, 5 Gt RAM |1 näennäisydin |7,5 sekunnissa |Käytettävissä |
+| [EM3 (kuukausittain)](https://portal.office.com/SubscriptionDetails?OfferId=4004702D-749C-4F74-BF47-3048F1833780&adminportal=1) |4 näennäisydintä |2 näennäisydintä, 10 Gt RAM |2 näennäisydintä | |Käytettävissä |
+| [P1](https://portal.office.com/SubscriptionDetails?OfferId=b3ec5615-cc11-48de-967d-8d79f7cb0af1&adminportal=1) |8 näennäisydintä |4 näennäisydintä, 25 Gt RAM |4 näennäisydintä |30 sekunnissa |Käytettävissä ([kuukausittain](https://portal.office.com/SubscriptionDetails?OfferId=E4C8EDD3-74A1-4D42-A738-C647972FBE81&adminportal=1) on myös käytettävissä) |
+| [P2](https://portal.office.com/SubscriptionDetails?OfferId=062F2AA7-B4BC-4B0E-980F-2072102D8605&adminportal=1) |16 näennäisydintä |8 näennäisydintä, 50 Gt RAM |8 näennäisydintä |60 sekunnissa |Käytettävissä |
+| [P3](https://portal.office.com/SubscriptionDetails?OfferId=40c7d673-375c-42a1-84ca-f993a524fed0&adminportal=1) |32 näennäisydintä |16 näennäisydintä, 100 Gt RAM |16 näennäisydintä |120 sekunnissa |Käytettävissä |
 | | | | | | | |
 
 * Edustan v-ytimet vastaavat verkkopalvelusta, koontinäytön ja raportin tiedostohallinnasta, käyttöoikeuksien hallinnasta, ajoituksista, ohjelmointirajapinnoista, latauksista ja yleisesti ottaen kaikesta, mikä liittyy käyttökokemukseen.

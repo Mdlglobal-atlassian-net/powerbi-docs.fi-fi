@@ -10,11 +10,11 @@ ms.topic: conceptual
 ms.date: 11/20/2018
 ms.author: maggies
 ms.openlocfilehash: f97393a8a7fe8dc9c413a0cb0cda8be0e965da5b
-ms.sourcegitcommit: 458e091a0a0bfb71ea3980d44df6408f48bab586
+ms.sourcegitcommit: 6c6aa214dc36c26a01b29e823598d217a3e2b8a1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/22/2018
-ms.locfileid: "52289193"
+ms.lasthandoff: 12/17/2018
+ms.locfileid: "53451348"
 ---
 # <a name="overview-of-the-power-bi-service-content-pack-program"></a>Power BI -palvelun sisältöpakettiohjelman yleiskatsaus
 Sisältöpaketti on joukko valmista sisältöä, jonka avulla käyttäjät saavat välittömästi merkityksellistä tietoa lähteestä. Sisältöpaketti keskittyy yleensä tiettyyn liiketoimintaskenaarioon ja tarjoaa rooli-, toimialue- tai työnkulkukohtaista merkityksellistä tietoa.

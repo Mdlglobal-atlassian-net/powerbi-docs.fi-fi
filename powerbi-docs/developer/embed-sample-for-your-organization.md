@@ -10,12 +10,12 @@ ms.component: powerbi-developer
 ms.topic: tutorial
 ms.custom: seodec18
 ms.date: 12/10/2018
-ms.openlocfilehash: 541e6e62ac075922cdb301343361ac328a3db28e
-ms.sourcegitcommit: f25464d5cae46691130eb7b02c33f42404011357
+ms.openlocfilehash: ea4292fd95fa72a553d9f91b39ff0bc5de71a584
+ms.sourcegitcommit: 9913c213d40b45ba83c6c3b3a7ef0b757800e3ad
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53180756"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53301846"
 ---
 # <a name="tutorial-embed-a-power-bi-report-dashboard-or-tile-into-an-application-for-your-organization"></a>Opetusohjelma: Power BI -raportin, koontinäytön tai ruudun upottaminen sovellukseen organisaatiollesi
 
@@ -429,17 +429,16 @@ Luomalla varattua kapasiteettia voit hyödyntää sitä, että sovellustyötilan
 
 Seuraavassa taulukossa esitetään Power BI Premiumin SKU:t, jotka ovat käytettävissä [Microsoft Office 365:ssä](../service-admin-premium-purchase.md):
 
-| Kapasiteetin solmu | Näennäisytimiä yhteensä<br/>(tausta ja edusta) | Taustan näennäisytimet | Edustan näennäisytimet | DirectQueryn/live-yhteyden rajoitukset | Sivun hahmonnuksia enintään huipputuntina |
+| Kapasiteetin solmu | Näennäisytimiä yhteensä<br/>(tausta ja edusta) | Taustan näennäisytimet | Edustan näennäisytimet | DirectQueryn/live-yhteyden rajoitukset |
 | --- | --- | --- | --- | --- | --- |
-| EM1 |1 näennäisydin |0,5 näennäisydintä, 10 Gt RAM |0,5 näennäisydintä |3,75 sekunnissa |150–300 |
-| EM2 |2 näennäisydintä |1 näennäisydin, 10 Gt RAM |1 näennäisydin |7,5 sekunnissa |301–600 |
-| EM3 |4 näennäisydintä |2 näennäisydintä, 10 Gt RAM |2 näennäisydintä |15 sekunnissa |601–1 200 |
-| P1 |8 näennäisydintä |4 näennäisydintä, 25 Gt RAM |4 näennäisydintä |30 sekunnissa |1 201–2 400 |
-| P2 |16 näennäisydintä |8 näennäisydintä, 50 Gt RAM |8 näennäisydintä |60 sekunnissa |2 401–4 800 |
-| P3 |32 näennäisydintä |16 näennäisydintä, 100 Gt RAM |16 näennäisydintä |120 sekunnissa |4 801–9 600 |
-| P4 |64 näennäisydintä |32 näennäisydintä, 200 Gt RAM |32 näennäisydintä |240 sekunnissa |9 601–19 200 |
-| P5 |128 näennäisydintä |64 näennäisydintä, 400 Gt RAM |64 näennäisydintä |480 sekunnissa |19 201–38 400 |
-
+| EM1 |1 näennäisydin |0,5 näennäisydintä, 10 Gt RAM |0,5 näennäisydintä |3,75 sekunnissa |
+| EM2 |2 näennäisydintä |1 näennäisydin, 10 Gt RAM |1 näennäisydin |7,5 sekunnissa |
+| EM3 |4 näennäisydintä |2 näennäisydintä, 10 Gt RAM |2 näennäisydintä |15 sekunnissa |
+| P1 |8 näennäisydintä |4 näennäisydintä, 25 Gt RAM |4 näennäisydintä |30 sekunnissa |
+| P2 |16 näennäisydintä |8 näennäisydintä, 50 Gt RAM |8 näennäisydintä |60 sekunnissa |
+| P3 |32 näennäisydintä |16 näennäisydintä, 100 Gt RAM |16 näennäisydintä |120 sekunnissa |
+| P4 |64 näennäisydintä |32 näennäisydintä, 200 Gt RAM |32 näennäisydintä |240 sekunnissa |
+| P5 |128 näennäisydintä |64 näennäisydintä, 400 Gt RAM |64 näennäisydintä |480 sekunnissa |
 > [!NOTE]
 > - Kun yrität upottaa Microsoft Office -sovelluksilla, EM SKU:iden avulla voit käyttää maksuttoman Power BI -käyttöoikeuden sisältöä. Et kuitenkaan voi käyttää sisältöä maksuttomalla Power BI -käyttöoikeudella, kun käytössäsi on Powerbi.com tai Power BI -mobiilisovellus.
 > - Kun yrität upottaa Microsoft Office -sovelluksilla, Powerbi.comin tai Power BI -mobiilisovellusten avulla voit käyttää maksuttoman Power BI -käyttöoikeuden sisältöä.
