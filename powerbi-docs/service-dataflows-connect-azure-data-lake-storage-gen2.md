@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 12/10/2018
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 58c9d41769179b84d9d7cdc79d02f66bc4c99953
-ms.sourcegitcommit: 76b07d55e85110a6ae8c49e08e80e4fa63826166
+ms.openlocfilehash: 72c3c2fde92de45d3a93f087d217af1f50e50601
+ms.sourcegitcommit: bb4cf3469b44e451153c469725a9069dcd548809
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53200645"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53649041"
 ---
 # <a name="connect-azure-data-lake-storage-gen2-for-dataflow-storage-preview"></a>Yhdistä Azure Data Lake Storage Gen2 tietovuon tallennukseen (esikatselu)
 
@@ -76,7 +76,7 @@ Valitse **Lisää roolimääritys** -ikkunassa **Lukija**-rooli, joka määritet
 
 Sinun on luotava tiedostojärjestelmä nimeltä *powerbi*, ennen kuin tallennustilasi voidaan lisätä Power BI:hin. Tällaisen tiedostojärjestelmän voi luoda monella tavalla, kuten Azure Databricksin, HDInsightin, AZCopyn tai Azure Storage Explorerin avulla. Tässä osiossa näytetään, miten voit luoda helposti tiedostojärjestelmän Azure Storage Explorerin avulla.
 
-Tämä vaihe edellyttää Azure Storage Explorerin asentamista. Jos haluat asentaa Azure Storage Explorerin Windows-, Macintosh- tai Linux-käyttöjärjestelmään, katso artikkelia [Azure Storage Explorer](https://azure.microsoft.com/features/storage-explorer/).
+Tämä vaihe edellyttää Azure Storage Explorerin (versio 1.6.1 tai uudempi) asentamista. Jos haluat asentaa Azure Storage Explorerin Windows-, Macintosh- tai Linux-käyttöjärjestelmään, katso artikkelia [Azure Storage Explorer](https://azure.microsoft.com/features/storage-explorer/).
 
 1. Kun olet asentanut Azure Storage Explorerin, näet ensimmäisen käynnistyksen yhteydessä Microsoft Azure Storage Explorerin Muodosta yhteys -ikkunan. Vaikka Storage Explorer tarjoaa useita keinoja muodostaa yhteyden tallennustileihin, vain yhtä keinoa tuetaan nykyisin vaaditulle määritykselle. 
 
@@ -108,11 +108,11 @@ Etsi vuokraajan sovelluksia seuraavasti:
 
     ![AAD-yrityssovellukset](media/service-dataflows-connect-azure-data-lake-storage-gen2/dataflows-connect-adlsg2_06.jpg)
 
-4. Kirjoita hakupalkkiin *Power* ja esiin tulee Power BI:n ja Power Query -sovellusten objektitunnusten kokoelma.
+4. Kirjoita hakupalkkiin *Power* ja esiin tulee Power BI:n ja Power Query -sovellusten objektitunnusten kokoelma. Tarvitset jokaista kolmea arvoa seuraavissa vaiheissa.  
 
     ![Etsi Power-sovelluksia](media/service-dataflows-connect-azure-data-lake-storage-gen2/dataflows-connect-adlsg2_07.jpg)
 
-5. Valitse ja kopioi Power BI -palvelun objektitunnus hakutuloksistasi. Valmistaudu liittämään tämä arvo myöhemmissä vaiheissa.
+5. Valitse ja kopioi Power BI -palvelun ja Power BI Premiumin molemmat objektitunnukset hakutuloksistasi. Valmistaudu liittämään nämä arvot myöhemmissä vaiheissa.
 
 7. Siirry sitten **Azure Storage Explorerin** avulla *powerbi*-tiedostojärjestelmään, jonka loit edellisessä osiossa. Noudata [Käyttöoikeuksien hallinta](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-how-to-set-permissions-storage-explorer#managing-access) -osion ohjeita, jotka löytyvät artikkelista [Tiedostojen ja hakemistotason käyttöoikeuksien määrittäminen Azure Storage Explorerin avulla](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-how-to-set-permissions-storage-explorer).
 
@@ -120,7 +120,7 @@ Etsi vuokraajan sovelluksia seuraavasti:
 
    ![määritä kummallekin kaikki kolme käyttöoikeutta](media/service-dataflows-connect-azure-data-lake-storage-gen2/dataflows-connect-adlsg2_07a.jpg)
 
-9. Määritä vaiheessa 5 noudetulle Power Query Online -objektitunnukselle **Kirjoitus**- ja **Suoritus**-käyttöoikeus ja oletusarvoiset käyttöoikeusluettelot *powerbi*-tiedostojärjestelmään.
+9. Määritä vaiheessa 4 noudetulle Power Query Online -objektitunnukselle **Kirjoitus**- ja **Suoritus**-käyttöoikeus ja oletusarvoiset käyttöoikeusluettelot *powerbi*-tiedostojärjestelmään.
 
    ![määritä seuraavaksi Kirjoitus- ja Suoritus-käyttöoikeus](media/service-dataflows-connect-azure-data-lake-storage-gen2/dataflows-connect-adlsg2_07b.jpg)
 

@@ -1,5 +1,5 @@
 ---
-title: 'Sivutetut raportit Power BI:ssä: usein kysytyt kysymykset (esikatselu)'
+title: 'Sivutetut raportit Power BI:ssä: Usein kysytyt kysymykset (esikatselu)'
 description: Tässä artikkelissa vastataan usein kysyttyihin kysymyksiin sivutetuista raporteista. Näiden raporttien pitkälle muotoiltu ja pikselintarkka sisältö on optimoitu tulostamista tai PDF:n luontia varten.
 author: maggiesMSFT
 manager: kfile
@@ -9,14 +9,14 @@ ms.component: report-builder
 ms.topic: overview
 ms.date: 11/05/2018
 ms.author: maggies
-ms.openlocfilehash: 0ddf95563c52af135ac7ae4fe71aeddcd2ce7313
-ms.sourcegitcommit: b23fdcc0ceff5acd2e4d52b15b310068236cf8c7
+ms.openlocfilehash: d3fdf9b568aa13ba5a8437c684835e0fce803d19
+ms.sourcegitcommit: bb4cf3469b44e451153c469725a9069dcd548809
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51267276"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53649441"
 ---
-# <a name="paginated-reports-in-power-bi-faq-preview"></a>Sivutetut raportit Power BI:ssä: usein kysytyt kysymykset (esikatselu)
+# <a name="paginated-reports-in-power-bi-faq-preview"></a>Sivutetut raportit Power BI:ssä: Usein kysytyt kysymykset (esikatselu)
 
 Tässä artikkelissa vastataan usein kysyttyihin kysymyksiin sivutetuista raporteista. Näiden raporttien pitkälle muotoiltu ja pikselintarkka sisältö on optimoitu tulostamista tai PDF:n luontia varten. Niitä kutsutaan ”sivutetuiksi”, koska ne on muotoiltu sopimaan hyvin useille sivuille. Sivutetut raportit perustuvat SQL Server Reporting Servicesin RDL-raporttitekniikkaan. 
 
@@ -59,7 +59,7 @@ Lisäksi valvontalokit tarjoavat seuraavat tapahtumat  sivutetuille raporteille:
 
 ### <a name="can-i-monitor-this-workload-through-the-premium-capacity-monitoring-app"></a>Voinko seurata tätä kuormitusta Premium-kapasiteetin valvontasovelluksen kautta?
 
-Et vielä. Valvonta on saatavana julkisessa esikatselussa uutena välilehtenä olemassa olevassa raportissa samoilla asianmukaisilla tiedoilla, joita sinulla on Power BI -tietojoukoille.
+Kyllä. Valvonta on käytettävissä uutena välilehtenä, joka sisältää samat tiedot kuin Power BI -tietojoukoilla.
 
 ### <a name="do-i-need-a-pro-license-to-create-and-publish-paginated-reports"></a>Tarvitsenko Pro-käyttöoikeuden sivutettujen raporttien luontia ja julkaisua varten?
 
@@ -73,11 +73,11 @@ Näyttöön tulee virheviesti, etkä voi tarkastella raporttia, ennen kuin kuorm
 
 Oletusmuisti kullekin Premium-varastointiyksikölle sivutettuja raportteja varten:
 
-- **P1/A4**: oletus 20 %, vähintään 10 %
-- **P2/A5**: oletus 10 %, vähintään 5 %
-- **P3/A6**: oletus 5 %, vähintään 2,5 %
+- **P1/A4**: Oletus 20 %, vähintään 10 %
+- **P2/A5**: Oletus 20 %, vähintään 5 %
+- **P3/A6**: Oletus 20 %, vähintään 2,5 %
 
-## <a name="general"></a>Yleinen
+## <a name="general"></a>Yleiset
 
 ### <a name="when-should-i-use-a-paginated-report-vs-a-power-bi-report"></a>Milloin minun pitäisi käyttää sivutettua raporttia verrattuna Power BI -raporttiin?
 
@@ -113,15 +113,12 @@ Tällä hetkellä sivutetut raportit eivät tue seuraavia kohteita:
 - Kirjanmerkit
 - Bing-karttakerrokset
 - Mukautetut fontit
-- Piilotetut parametrit
-
-Vaihto ja vuorovaikutteinen lajittelu eivät vielä ole tuotannossa, mutta niitä odotetaan pian.    
 
 Saat virheviestin, jos yrität ladata tiedoston, jolla on tukematon ominaisuus Power BI -palvelussa (muu kuin vaihto/lajittelu).
 
 ### <a name="what-data-sources-do-you-support-currently-for-paginated-reports"></a>Mitä tietolähteitä tuette nykyisin sivutetuille raporteille?
 
-Tuemme Azure SQL -tietokantaa, SQL Serveriä ja SQL Server Analysis Services (SSAS) -taulukkomalleja, jotka käyttävät paikallista yhdyskäytävää. Emme tue nykyisin SSAS (MDX) -monidimensiomalleja.
+Tuemme Azure SQL -tietokantaa, SQL Serveriä sekä SQL Server Analysis Servicesin (SSAS) taulukko- (DAX) ja monidimensiomalleja (MDX), jotka käyttävät paikallista yhdyskäytävää.
 
 Kun SSAS-malleja käytetään yhdyskäytävän kautta, käyttäjä, jonka tunnistetiedot on tallennettu, tarvitsee korkeammat käyttöoikeudet SSAS-malleihin voidakseen työskennellä yhdyskäytävän kautta.
 
@@ -135,7 +132,7 @@ Et vielä, mutta tämä tuki on suunnitteilla pian.
 
 ### <a name="can-i-use-stored-procedures-through-the-gateway"></a>Voinko käyttää tallennettuja toimintosarjoja yhdyskäytävän kautta?
 
-Voit käyttää tallennettua toimintosarjaa yhdyskäytävän kautta, ellei tallennetulla toimintosarjalla ole parametreja.
+Voit käyttää tallennettua toimintosarjaa yhdyskäytävän kautta, mutta tietyissä tilanteissa voi ilmetä ongelmia, jos tallennetussa toimintosarjassa on parametreja.
 
 ### <a name="what-export-formats-are-available-for-my-report-in-the-power-bi-service"></a>Mitkä vientimuodot ovat saatavilla raportilleni Power BI -palvelussa?
 
@@ -143,15 +140,15 @@ Voit viedä raportin Microsoft Exceliin, Microsoft Wordiin, Microsoft PowerPoint
 
 ### <a name="can-i-print-paginated-reports"></a>Voinko tulostaa sivutettuja raportteja?
 
-Voit nykyisin viedä raportin PDF:ään ja tulostaa tiedoston. Tulostus suoraan sivutetusta raportista pitäisi pian olla käytettävissä. 
+Kyllä. Tulostus on käytettävissä sivutetuille raporteille, minkä lisäksi tulostuksen esikatselua on parannettu. 
 
 ### <a name="are-e-mail-subscriptions-available-yet-for-paginated-reports"></a>Ovatko sähköpostitilaukset jo käytettävissä sivutetuille raporteille?
 
-Eivät, sähköpostitilaukset ovat tulossa myöhemmin.
+Eivät. Sähköpostitilaukset ovat tulossa myöhemmin.
 
 ### <a name="what-features-from-ssrs-will-you-be-supporting-in-the-power-bi-service"></a>Mitä SSRS-ominaisuuksia tuette Power BI -palvelussa?
 
-Tarkoituksenamme on tarjota mahdollisimman läheinen pariteetti näiden kahden tuotteen välille.  SSRS:n ja Power BI:n joitakin toimintoja ei ole ehkä järkevää yrittää muuttaa sopimaan olemassa oleviin SSRS-malleihin, kuten Power BI:n eri käyttöoikeusmalleja, mutta pyydämme palautetta asiakkailta ja kumppaneilta tällaisten päätösten tekemiseksi.
+Ominaisuuspariteetti on tulossa useimpiin skenaarioihin, mutta tiettyjen SSRS:n ja Power BI:n ominaisuuksien sovittaminen olemassa oleviin SSRS-malleihin ei välttämättä ole mielekästä.  Esimerkiksi Power BI:n erilaisten käyttöoikeusmallien liittäminen takaisin SSRS:ään ei ole mahdollista.  Tällaisten päätösten tekemiseen tarvitsemme palautetta asiakkailta ja kumppaneilta.
 
 ### <a name="can-i-run-custom-code-in-my-report"></a>Voinko suorittaa mukautetun koodin raportissani?
 
@@ -171,7 +168,7 @@ Et vielä, mutta tarkoituksenamme on ehdottomasti tukea tätä skenaariota.
 
 ### <a name="can-i-share-my-paginated-report-content-through-a-power-bi-app"></a>Voinko jakaa oman sivutetun raportin sisältöni Power BI -sovelluksen kautta?
 
-Voit nykyisin jakaa yksittäiset sivutetut raportit muiden käyttäjien kanssa jakotoiminnon kautta portaalissa. Emme vielä tue jakamista sovelluksessa, mutta tämä toiminto tulossa pian. Meillä on myös jakopainike työkalurivillä.
+Voit nykyisin jakaa yksittäiset sivutetut raportit muiden käyttäjien kanssa jakotoiminnon kautta portaalissa tai työkalurivin kautta. Emme vielä tue jakamista sovelluksessa, mutta tämä toiminto tulossa pian. 
 
 ### <a name="will-other-report-specific-features-in-power-bi-like-pinning-to-report-tiles-to-dashboards-work-with-paginated-reports"></a>Toimivatko muut raporttikohtaiset ominaisuudet Power BI:ssä, kuten raporttiruutujen kiinnittäminen koontinäyttöihin ja sivutettujen raporttien käsitteleminen?
 
@@ -179,15 +176,15 @@ Tarkoituksenamme on ottaa käyttöön mahdollisimman laajasti raporttien tuki pa
 
 ### <a name="are-you-planning-to-create-a-new-authoring-tool-for-paginated-reports-in-the-power-bi-service--we-cant-do-everything-we-need-to-with-report-builder-today"></a>Aiotteko luoda uuden luontityökalun sivutetuille raporteille Power BI -palvelussa?  Emme voi tehdä nykyisin kaikkea haluamaamme raportin muodostimella.
 
-Vaikka pohdimmekin yhä parasta työkalua koskevia eri vaihtoehtoja, tuemme jatkossakin tiettyjä ominaisuuksia, kuten ALM:tä, mukautettuja laajennuksia ja muita ominaisuuksia, jotka voidaan ehkä sisällyttää vain yhteen SSRS:n luontityökaluun. 
+Harkitsemme vielä erilaisia vaihtoehtoja sivutettujen raporttien työkaluiksi Power BI:ssä. 
 
 ### <a name="is-a-migration-tool-planned-so-ssrs-customers-can-move-their-existing-reports-and-assets-to-power-bi"></a>Onko suunnitteilla siirtotyökalua, jotta SSRS-asiakkaat voivat siirtää olemassa olevat raporttinsa ja resurssinsa  Power BI:hin?
 
-Kyllä, mutta ei ennen kuin Power BI -palvelun tärkeimmät tuetut ominaisuudet ovat valmiita.
+Arvioimme erilaisia tapoja, joilla sisältöä voi siirtää Power BI:hin automaattisesti, mutta sellainen sisällytetään vasta yleiseen julkaisuversioon.
 
 ### <a name="will-i-ever-be-able-to-create-both-paginated-reports-and-power-bi-reports-in-a-single-authoring-tool"></a>Voinko vastaisuudessa luoda sekä sivutettuja raportteja että Power BI -raportteja yhdessä luontityökalussa?
 
-Emme nykyisin suunnittele yhtä luontityökalua, mutta etsimme keinoja mahdollisesti yhdistää luontityökalut yhdeksi BI-paketiksi erillisten latausten/tuotemukautusten sijasta.
+Mahdollisesti.  Tämän skenaarion mahdollistamista tutkitaan. Saatamme myös mahdollisesti yhdistää luontityökalut yhdeksi BI-paketiksi erillisten latausten/tuotemukautusten sijasta.
 
 ### <a name="is-there-a-report-viewer-control-for-paginated-reports-in-the-power-bi-service"></a>Onko Power BI -palvelussa raporttien katseluohjelman hallinta sivutetuille raporteille?
 
@@ -200,4 +197,4 @@ Ei, et voi tällä hetkellä hakea sivutettuja raportteja Aloitus-kohdasta.  Nä
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
 - [Raportin muodostimen asentaminen Microsoft Download Centeristä](https://www.microsoft.com/download/details.aspx?id=53613)
-- [Opetusohjelma: Sivutetun raportin luominen](paginated-reports-quickstart-aw.md)
+- [Opetusohjelma: Luo sivutettu raportti](paginated-reports-quickstart-aw.md)

@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 09/27/2018
+ms.date: 12/10/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 8ec638eefa95ef70ab04606881bee421f82b7f11
-ms.sourcegitcommit: 02f918a4f27625b6f4e47473193ebc8219db40e2
+ms.openlocfilehash: 0b5693dfa53feba35acb559bf8606b1d03f97fdb
+ms.sourcegitcommit: 298db44200b78b1281b3ae6dfe7cce7a89865ec9
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51223311"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "53329782"
 ---
 # <a name="create-tooltips-based-on-report-pages-in-power-bi-desktop"></a>Power BI Desktopissa luotuihin raporttisivuihin perustuvien työkaluvihjeiden luominen
 Voit luoda visuaalisesti monipuolisia **raporttityökaluvihjeitä**, jotka tulevat näkyviin, kun pidät hiiren osoitinta visualisoinnin päällä, ja jotka pohjautuvat **Power BI Desktopissa** luomiisi raporttisivuihin. Kun luot työkaluvihjeenä toimivan raporttisivun, mukautetut työkaluvihjeet voivat sisältää visualisointeja, kuvia ja muita kohdekokoelmia, joita luot raporttisivulla. 
@@ -25,17 +25,6 @@ Voit luoda visuaalisesti monipuolisia **raporttityökaluvihjeitä**, jotka tulev
 Voit luoda niin monta työkaluvihjesivua kuin haluat. Jokainen työkaluvihjesivu voidaan yhdistää yhteen tai useampaan raportissa olevaan kenttään. Kun pidät hiiren osoitinta valitun kentän sisältävän visualisoinnin päällä, työkaluvihjesivulla luomasi työkaluvihje tulee näkyviin suodatettuna arvopisteellä, jonka päällä hiiren osoitinta pidetään. 
 
 Raporttityökaluvihjeet avaavat monia hyödyllisiä mahdollisuuksia. Tutustutaan seuraavaksi siihen, miten voit luoda työkaluvihjeitä ja mitä sinun on tehtävä niiden määrittämiseksi.
-
-### <a name="enable-the-tooltips-preview"></a>Ota käyttöön työkaluvihjeiden esikatselu 
-**Power BI Desktopin** syyskuun 2018 julkaisusta alkaen työkaluvihjeet ovat yleisesti saatavilla, eikä niitä tarvitse ottaa käyttöön. 
-
-Jos käytät **Power BI Desktopin** aiemmin luotua versiota, voit ottaa sen käyttöön esikatselutoimintona valitsemalla Power BI Desktopissa **Tiedosto > Asetukset ja vaihtoehdot > Asetukset > Esikatselutoiminnot** ja valitsemalla sitten valintaruudun **Raporttisivun työkaluvihjeet** -kohdan vierestä. 
-
-![Ota käyttöön raportin työkaluvihjeiden esikatseluominaisuus](media/desktop-tooltips/desktop-tooltips_01.png)
-
-Kun olet ottanut raporttityökalujen esiversion käyttöön, sinun on käynnistettävä **Power BI Desktop** uudelleen.
-
-Suosittelemme aina päivittämään **Power BI Desktopin** uusimpaan versioon, jonka saat [Hae Power BI Desktop](desktop-get-the-desktop.md) -linkistä. 
 
 ## <a name="create-a-report-tooltip-page"></a>Luo raportin työkaluvihjesivu
 Luo ensin uusi sivu valitsemalla **+**-painike, joka on **Power BI Desktop** -raporttipohjan alaosassa sivun välilehtialueella. Painike on raportin viimeisen sivun vieressä. 
@@ -123,8 +112,7 @@ Kun visualisointia ristiinkorostetaan raportissa, raportin työkaluvihjeet näyt
 ## <a name="limitations-and-considerations"></a>Rajoitukset ja huomioitavat asiat
 Muutamat **työkaluvihjeitä** koskevat rajoitukset ja tärkeät seikat on syytä huomioida.
 
-* Työkaluvihjeet yleisesti saataville tuoneesta **Power BI Desktopin** syyskuun 2018 julkaisuversiosta alkaen myös korttivisualisoinnit tukevat työkaluvihjeitä.
-* **Power BI Desktopin** heinäkuun 2018 julkaisusta alkaen tuetaan taulukko- ja matriisivisualisointien työkaluvihjeitä. 
+* **Power BI Desktopin** joulukuun 2018 versiosta alkaen painikevisualisoinnit tukevat myös työkaluvihjeitä.
 * Raporttityökaluvihjeitä ei tueta, kun raporttia tarkastellaan mobiilisovelluksella. 
 * Raportin työkaluvihjeitä ei tueta mukautetuissa visualisoinneissa. 
 * Klustereita ei tällä hetkellä tueta kenttinä, jotka voidaan näyttää raportin työkaluvihjeissä. 

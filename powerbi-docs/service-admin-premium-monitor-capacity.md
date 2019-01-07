@@ -8,14 +8,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-admin
 ms.topic: conceptual
-ms.date: 11/06/2018
+ms.date: 12/13/2018
 LocalizationGroup: Premium
-ms.openlocfilehash: 4fc036bf9191d0ed56be11e69152e579cfc5102d
-ms.sourcegitcommit: 883d7e76816f2696e88ae391744ac6c7b1cb59c7
+ms.openlocfilehash: 250c8b28e4ee9e8b29e2db8195f7883d11708806
+ms.sourcegitcommit: 6c6aa214dc36c26a01b29e823598d217a3e2b8a1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51688392"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53382239"
 ---
 # <a name="monitor-power-bi-premium-and-power-bi-embedded-capacities"></a>Power BI Premiumin ja Power BI Embeddedin kapasiteettien valvonta
 
@@ -23,7 +23,7 @@ Tässä artikkelissa annetaan yleiskatsaus Power BI Premium -kapasiteettien mitt
 
 Voit valvoa kapasiteettia Power BI Premium -kapasiteetin mittausarvot -sovelluksen avulla tai hallintaportaalissa. Sovelluksen käyttäminen on suositeltavaa, koska se tarjoaa paljon enemmän tietoja, mutta tässä artikkelissa käsitellään molemmat vaihtoehdot.
 
-**Sovelluksen nykyinen versio on 1.9 (julkaistu 14. marraskuuta 2018).**
+**Sovelluksen nykyinen versio on 1.10 (julkaistu 13. joulukuuta 2018).**
 
 .
 
@@ -47,13 +47,25 @@ Nyt kun olet asentanut sovelluksen, voit nähdä kapasiteetteja koskevia mittaus
 
 ## <a name="use-the-metrics-app"></a>Mittausarvosovelluksen käyttäminen
 
+### <a name="metrics-dashboard"></a>Mittareiden koontinäyttö
+
 Kun avaat sovelluksen, se näyttää ensin raporttinäkymältä, jossa on yhteenveto kaikista kapasiteeteista, joihin sinulla on järjestelmänvalvojan oikeudet.
 
 ![Mittausarvosovelluksen koontinäyttö](media/service-admin-premium-monitor-capacity/app-dashboard.png)
 
-Napsauta koontinäyttöä siirtyäksesi sen pohjana olevaan raporttiin. Raportissa on kuusi välilehteä, jotka kuvataan tarkemmin seuraavissa osissa.
+Koontinäyttö sisältää seuraavat mittarit.
 
-* **Suodattimet**: voit suodattaa raportin muut sivut tiettyyn kapasiteettiin.
+| **Raporttiosa** | **Mittausarvot** |
+| --- | --- |
+| **Järjestelmän yhteenveto** | * Sovelluksen versio<br> * Niiden kapasiteettien määrä, joiden järjestelmänvalvoja olet<br> * Kapasiteettiesi niiden työtilojen määrä, jotka ovat raportointimittareita<br> * Keskimääräinen muistin käyttö gigatavuina viimeisten seitsemän päivän aikana<br> * Muistin enimmäiskäyttö gigatavuina viimeisten seitsemän päivän aikana<br> * Paikallinen aika, jolloin muistin enimmäiskäyttö tapahtui<br> * Kuinka monta kertaa suoritin ylitti 80 prosenttia raja-arvoista viimeisten seitsemän päivän aikana kolmen minuutin osiin jaettuna<br> * Ajankohdat, jolloin suoritin useimmin ylitti 80 prosenttia viimeisten seitsemän päivän aikana tunnin osiin jaettuna<br> * Paikallinen aika, jolloin suoritin useimmin ylitti 80 prosenttia tunnin aikana |
+| **Tietojoukon yhteenveto** | * Kapasiteettiesi kaikkien työtilojen tietojoukkojen kokonaismäärä<br> * Kuinka monta kertaa DirectQuery- tai Live-yhteys ylitti 80 prosenttia raja-arvoista viimeisten seitsemän päivän aikana kolmen minuutin osiin jaettuna<br> * Ajankohdat, jolloin DirectQuery- tai Live-yhteys useimmin ylitti 80 prosenttia viimeisten seitsemän päivän aikana tunnin osiin jaettuna<br> * Paikallinen aika, jolloin DirectQuery- tai Live-yhteys useimmin ylitti 80 prosenttia tunnin aikana<br> * Päivitysten kokonaismäärä viimeisten seitsemän päivän aikana<br> * Päivityksen keskimääräinen odotusaika – keskimääräinen viive päivityksen ajoitetun alkamisajan ja sen alkamisen välillä minuutteina<br> * Päivityksen keskimääräinen kesto – päivityksen suorittamiseen tarvittava aika minuutteina<br> * Suoritettujen kyselyjen kokonaismäärä viimeisten seitsemän päivän aikana<br> * Kyselyn keskimääräinen odotusaika – millisekunteina ilmoitettu aika, jonka kysely odotti järjestelmäresursseja ennen suorittamisen aloittamista<br> * Kyselyn keskimääräinen kesto – kyselyn suorittamiseen tarvittava aika millisekunteina<br> * Muistipaineen vuoksi poistettujen mallien kokonaismäärä<br> * Tietojoukkojen keskikoko <br> * Muistiin ladattujen tietojoukkojen keskimäärä |
+| **Tietovuon yhteenveto** | * Kapasiteettiesi kaikkien työtilojen tietovoiden kokonaismäärä<br> * Päivitysten kokonaismäärä viimeisten seitsemän päivän aikana<br> * Päivityksen keskimääräinen odotusaika – keskimääräinen viive päivityksen ajoitetun alkamisajan ja sen alkamisen välillä minuutteina<br> * Päivityksen keskimääräinen kesto – päivityksen suorittamiseen tarvittava aika minuutteina |
+| **Sivutetun raportin yhteenveto** | * Kapasiteettiesi kaikkien työtilojen sivutettujen raporttien kokonaismäärä<br> * Kaikkien raporttien katselukertojen kokonaismäärä<br> * Kaikkien raporttien tietorivien kokonaismäärä<br> * Millisekunteina ilmoitettu kokonaisaika, joka kaikkien raporttien kaikkiin vaiheisiin (tietojen nouto, käsittely ja hahmontaminen) menee |
+|  |  |
+
+### <a name="metrics-report"></a>Mittariraportti
+
+Napsauta koontinäyttöä siirtyäksesi sen pohjana olevaan raporttiin. Raportissa on viisi välilehteä, jotka kuvataan tarkemmin seuraavissa osissa.
 
 * **Tietojoukot**: yksityiskohtaiset mittausarvot Power BI -tietojoukkojen kunnosta kapasiteeteissasi.
 
@@ -61,40 +73,19 @@ Napsauta koontinäyttöä siirtyäksesi sen pohjana olevaan raporttiin. Raportis
 
 * **Tietovuot**: tietovoiden yksityiskohtaiset päivitysmittausarvot kapasiteeteissasi.
 
-* **Järjestelmä**: yleiset kapasiteetin mittausarvot, mukaan lukien muisti ja suorittimen korkea käyttö.
+* **Resurssien kulutus**: yleiset kapasiteetin mittausarvot, mukaan lukien muisti ja suorittimen korkea käyttö.
 
-* **Näyttönimet ja tunnukset**: kapasiteettien, työtilojen ja työmäärien nimet, tunnukset ja omistajat.
+* **Tunnukset ja tiedot**: kapasiteettien, työtilojen ja työmäärien nimet, tunnukset ja omistajat.
 
-### <a name="filters-tab"></a>Suodattimet-välilehti
+Kussakin välilehdessä voi suodattaa mittareita kapasiteetin ja päivämääräalueen mukaan. Jos suodattimia ei ole valittuna, raportti näyttää oletuksena edellisen viikon mittausarvot kaikille kapasiteeteille, jotka ovat raportointimittareita.
 
-**Suodattimet**-välilehdessä voit valita kapasiteetin, päivämääräalueen ja muita asetuksia. Suodattimia käytetään sitten kaikilla raportin asiaankuuluvilla sivuilla ja ruuduissa. Jos mitään suodattimia ei ole valittuna, raportti näyttää oletuksena edellisen viikon mittausarvot jokaisesta omistamastasi kapasiteetista.
+#### <a name="datasets-tab"></a>Tietojoukot-välilehti
 
-![Suodattimet-välilehti](media/service-admin-premium-monitor-capacity/filters-tab.png)
-
-* **(A)** Määritä kunkin työmäärän suodattimet valitsemalla **Tietojoukot**, **Sivutetut raportit** tai **Tietovuot**.
-
-* **(B)** Nimi ja **(C)** tiedot päivitetään sen perusteella, mitä valitset kohdassa **(A)**, joten voit suodattaa työmäärän nimen mukaan. Esimerkiksi yllä olevassa kuvassa **Tietovuot** on valittuna, joten **Tietovoiden nimi** ja **Tietovoiden tiedot** näkyvät.
-
-* **(D)** Kapasiteetin tiedot, jotka osoittavat, ovatko tietojoukot, sivutetut raportit tai tietovuot käytössä kapasiteetissa.
-
-### <a name="datasets-tab"></a>Tietojoukot-välilehti
-
-Voit siirtyä eri alueille **Tietojoukot**-välilehden yläreunassa olevien painikkeiden avulla: **Yhteenveto**, **Päivitykset**, **Kyselyjen kestot**, **Kysely odottaa** ja **Tietojoukot**.
+Käyttämällä **Tietojoukot**-välilehden yläosan painikkeita voit siirtyä eri alueille: **Yhteenveto**, **Päivitykset**, **Kyselyn kestot**, **Kysely odottaa** ja **Tietojoukot**.
 
 ![Tietojoukot-välilehti](media/service-admin-premium-monitor-capacity/datasets-tab.png)
 
-#### <a name="summary-area"></a>Yhteenveto-alue
-
-**Yhteenveto**-alue näyttää kapasiteettiesi näkymät entiteettien, järjestelmäresurssien ja tietojoukon kuormitusten perusteella. Siinä näkyvät seuraavat mittausarvot.
-
-| **Raporttiosa** | **Mittausarvot** |
-| --- | --- |
-| **Entiteetit** | * Omistamiesi kapasiteettien määrä<br> * Tietojoukkojen erillinen määrä kapasiteetissasi<br> * Työtilojen erillinen määrä kapasiteetissasi |
-| **Järjestelmä** | * Keskimääräinen muistin käyttö gigatavuina viimeisten seitsemän päivän aikana<br> * Suurin muistin kulutus gigatavuina viimeisten seitsemän päivän aikana ja paikallinen tapahtumisaika<br> * Kuinka monta kertaa suoritin ylitti 80 prosenttia raja-arvoista viimeisten seitsemän päivän aikana kolmen minuutin osiin jaettuna<br> * Ajankohdat, jolloin suoritin useimmin ylitti 80 prosenttia viimeisten seitsemän päivän aikana tunnin osiin jaettuna sekä paikallinen tapahtumisaika<br> * Kuinka monta kertaa Direct Query- / reaaliaikainen yhteys ylitti 80 prosenttia raja-arvoista viimeisten seitsemän päivän aikana kolmen minuutin osiin jaettuna<br> * Ajankohdat, jolloin Direct Query- / reaaliaikainen yhteys useimmin ylitti 80 prosenttia viimeisten seitsemän päivän aikana tunnin osiin jaettuna sekä paikallinen tapahtumisaika |
-| **Tietojoukon kuormitukset** | * Päivitysten kokonaismäärä viimeisten seitsemän päivän aikana<br> * Onnistuneiden päivitysten kokonaismäärä viimeisten seitsemän päivän aikana<br> * Epäonnistuneiden päivitysten kokonaismäärä viimeisten seitsemän päivän aikana<br> * Muistin loppumisen vuoksi epäonnistuneiden päivitysten kokonaismäärä<br> * Päivityksen keskimääräinen kesto on toiminnon suorittamiseen tarvittava aika minuutteina<br> * Päivityksen keskimääräinen odotusaika on keskimääräinen viive ajoitetun ajankohdan ja toiminnon alun välillä minuutteina<br> * Suoritettujen kyselyjen kokonaismäärä viimeisten seitsemän päivän aikana<br> * Onnistuneiden kyselyjen kokonaismäärä viimeisten seitsemän päivän aikana<br> * Epäonnistuneiden kyselyjen kokonaismäärä viimeisten seitsemän päivän aikana<br> * Kyselyn keskimääräinen kesto on toiminnon suorittamiseen tarvittava aika minuutteina<br> * Muistipaineen vuoksi poistettujen mallien kokonaismäärä<br> * Tietojoukkojen keskikoko <br> * Muistiin ladattujen tietojoukkojen keskimäärä |
-|  |  |
-
-#### <a name="refreshes-area"></a>Päivitykset-alue
+##### <a name="refreshes-area"></a>Päivitykset-alue
 
 **Päivitykset**-alueella näkyvät seuraavat mittausarvot.
 
@@ -107,7 +98,7 @@ Voit siirtyä eri alueille **Tietojoukot**-välilehden yläreunassa olevien pain
 | **Päivitysmäärä tunneittain ja muistin käyttö** | * Onnistumiset, epäonnistumiset ja muistin käyttö tunnin osiin jaettuna paikallisessa ajassa ilmoitettuna |
 |  |  |
 
-#### <a name="query-durations-area"></a>Kyselyjen kestot -alue
+##### <a name="query-durations-area"></a>Kyselyjen kestot -alue
 
 **Kyselyjen kestot** -alueella näkyvät seuraavat mittausarvot.
 
@@ -120,7 +111,7 @@ Voit siirtyä eri alueille **Tietojoukot**-välilehden yläreunassa olevien pain
 | **Kyselyn keston jakauma tunneittain** | * Kyselyjen määrä ja keskimääräinen kesto (millisekunteina) vs. muistin käyttö gigatavuina tunnin osiin jaettuna paikallisessa ajassa ilmoitettuna |
 |  |  |
 
-#### <a name="query-waits-area"></a>Kysely odottaa -alue
+##### <a name="query-waits-area"></a>Kysely odottaa -alue
 
 **Kysely odottaa** -alueella näkyvät seuraavat mittausarvot.
 
@@ -132,7 +123,7 @@ Voit siirtyä eri alueille **Tietojoukot**-välilehden yläreunassa olevien pain
 | **Odottavien kyselyjen määrät ja ajat tunneittain** | * Odottavien kyselyjen määrä ja keskimääräinen odotusaika (millisekunteina) vs. muistin käyttö gigatavuina tunnin osiin jaettuna paikallisessa ajassa ilmoitettuna |
 |  |  |
 
-#### <a name="datasets-area"></a>Tietojoukot-alue
+##### <a name="datasets-area"></a>Tietojoukot-alue
 
 **Tietojoukot**-alueella näkyvät seuraavat mittausarvot.
 
@@ -144,7 +135,7 @@ Voit siirtyä eri alueille **Tietojoukot**-välilehden yläreunassa olevien pain
 | **Tietojoukkojen koko**  | * Enimmäiskoko: tietojoukon enimmäiskoko megatavuina näytetyllä ajanjaksolla |
 |  |  |
 
-### <a name="paginated-reports-tab"></a>Sivutetut raportit -välilehti
+#### <a name="paginated-reports-tab"></a>Sivutetut raportit -välilehti
 
 **Sivutetut raportit** -välilehdessä on yksityiskohtaiset mittausarvot sivutettujen raporttien kunnosta kapasiteeteissasi.
 
@@ -161,7 +152,7 @@ Voit siirtyä eri alueille **Tietojoukot**-välilehden yläreunassa olevien pain
 | **Tulokset tunneittain** | * Onnistumiset, epäonnistumiset ja muistin käyttö tunnin osiin jaettuna paikallisessa ajassa ilmoitettuna |
 |  |  |
 
-### <a name="dataflows-tab"></a>Tietovuot-välilehti
+#### <a name="dataflows-tab"></a>Tietovuot-välilehti
 
 **Tietovuot**-välilehdessä on tietovoiden yksityiskohtaiset päivitysmittausarvot kapasiteeteissasi.
 
@@ -178,23 +169,25 @@ Voit siirtyä eri alueille **Tietojoukot**-välilehden yläreunassa olevien pain
 | **Päivitysmäärä tunneittain ja muistin käyttö** | * Onnistumiset, epäonnistumiset ja muistin käyttö tunnin osiin jaettuna paikallisessa ajassa ilmoitettuna |
 |  |  |
 
-### <a name="system-tab"></a>Järjestelmä-välilehti
+#### <a name="resource-consumption-tab"></a>Resurssien kulutus -välilehti
 
-**Järjestelmä**-välilehdessä näkyy suorittimen ja muistin käyttö kaikissa kapasiteeteissa ja työmäärissä.
+**Resurssien kulutus** -välilehdessä näkyy suorittimen ja muistin käyttö kaikissa kapasiteeteissa ja työmäärissä.
 
-![Järjestelmä-välilehti](media/service-admin-premium-monitor-capacity/system-tab.png)
+![Resurssien kulutus -välilehti](media/service-admin-premium-monitor-capacity/resource-consumption-tab.png)
 
-**Järjestelmä**-välilehdessä näkyvät seuraavat mittausarvot.
+**Resurssien kulutus** -välilehti sisältää seuraavat mittarit.
 
 | **Raporttiosa** | **Mittausarvot** |
 | --- | --- |
-| **Suorittimen mittausarvot (> 80 prosentin käyttöaste)** | * Kuinka monta kertaa suoritin ylitti 80 prosenttia raja-arvoista viimeisten seitsemän päivän aikana kolmen minuutin osiin jaettuna |
+| **Suorittimen kulutus** | * Kuinka monta kertaa suoritin ylitti 80 prosenttia raja-arvoista viimeisten seitsemän päivän aikana kolmen minuutin osiin jaettuna |
 | **Muistin käyttö** | * Muistin käyttö viimeisten seitsemän päivän aikana kolmen minuutin osiin jaettuna |
 |  |  |
 
-### <a name="display-names-and-ids-tab"></a>Näyttönimet ja tunnukset -välilehti
+#### <a name="ids-and-info-tab"></a>Tunnukset ja tiedot -välilehti
 
-**Näyttönimet ja tunnukset** -välilehdessä näkyvät kapasiteettien, työtilojen ja työmäärien nimet, tunnukset ja omistajat.
+**Tunnukset ja tiedot** -välilehdessä näkyvät kapasiteettien, työtilojen ja työmäärien nimet, tunnukset ja omistajat.
+
+![Tunnukset ja tiedot -välilehti](media/service-admin-premium-monitor-capacity/info-tab.png)
 
 ## <a name="monitor-power-bi-embedded-capacity"></a>Power BI Embedded -kapasiteetin valvonta
 

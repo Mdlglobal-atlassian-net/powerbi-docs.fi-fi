@@ -11,10 +11,10 @@ ms.date: 11/01/2018
 ms.author: mblythe
 LocalizationGroup: Administration
 ms.openlocfilehash: 912ed0be1e6a732db46e83f8a9b0757ad2801dab
-ms.sourcegitcommit: 46f1ba3f972f6e64bce05ad0fd527b27c49aedd6
+ms.sourcegitcommit: 13fdc8d62960f20c6d9ca1ab292f98992b47083b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/20/2018
+ms.lasthandoff: 12/18/2018
 ms.locfileid: "52157398"
 ---
 # <a name="unable-to-add-power-bi-to-office-365-partner-subscription"></a>Power BI:tä ei voi lisätä Office 365 -kumppanitilaukseen
@@ -53,7 +53,7 @@ Voit rekisteröityä Power BI Pro:n ilmaiseen kokeiluversioon. Jos et osta Power
 
 ### <a name="enable-ad-hoc-subscriptions"></a>Ad-hoc-tilausten käyttöönotto
 
-Oletusarvoisesti yksittäiset rekisteröitymiset (joita kutsutaan myös ad-hoc-tilauksiksi) on poistettu käytöstä. Tässä tapauksessa näet seuraavan viestin, kun yrität rekisteröityä: *IT-osastosi on poistanut käytöstä rekisteröitymisen Microsoft Power BI:hin*.
+Oletusarvoisesti yksittäiset rekisteröitymiset (joita kutsutaan myös ad-hoc-tilauksiksi) on poistettu käytöstä. Tässä tapauksessa näet seuraavan sanoman, kun yrität rekisteröityä: *IT-osastosi on poistanut käytöstä rekisteröitymisen Microsoft Power BI:hin*.
 
 ![Pahoittelut-kuva](media/service-admin-syndication-partner/sorry.png)
 

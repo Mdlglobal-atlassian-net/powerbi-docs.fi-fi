@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 10/30/2018
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: 5f377f60935f23b62b90731c5d7bc16c8119ab83
-ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
+ms.openlocfilehash: 6fff11d37b0f099effeafb6b88dbfa68af88f3d6
+ms.sourcegitcommit: f5e39e9ead37445bbeab795890b3d80633383032
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53026703"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53735565"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>Power BI:n hallinta hallintaportaalissa
 
@@ -386,6 +386,18 @@ Päivitysten tai järjestelmänvalvojan muutoksen jälkeen Power BI Desktop -kä
 Jos haluat päivittää visualisoinnin organisaation säilöstä, valitse rataskuvake. Hae uuden version visualisointi selaamalla ja lataa se.
 
 Varmista, että visualisoinnin tunnus pysyy samana. Uusi tiedosto korvaa aiemman tiedoston kaikissa organisaation raporteissa. Jos visualisoinnin uusi versio rikkoo minkä tahansa sen aiemman version käyttö- tai tietorakenteen, älä korvaa aiempaa versiota. Lue sen sijaan visualisoinnista uusi versio, joka luetellaan erikseen. Voit esimerkiksi lisätä uuden luetteloidun visualisoinnin nimeen versionumeron (versio X.X). Näin käyttäjät tietävät, että kyseessä on saman visualisoinnin päivitetty versio, ja voivat välttää olemassa olevien raporttien toimintojen virheet sekä ongelmat. Varmista taas, että visualisoinnin tunnus pysyy samana. Kun käyttäjä sitten seuraavan kerran siirtyy organisaatioon säilöön Power BI Desktopista, hän voi tuoda uuden version. Tässä yhteydessä häneltä kysytään, haluaako hän korvata raportissa olevan nykyisen version.
+
+Saat lisätietoja [organisaation mukautettujen visualisointien usein kysytyistä kysymyksistä](https://docs.microsoft.com/en-us/power-bi/power-bi-custom-visuals-faq#organizational-custom-visuals).
+
+## <a name="dataflow-storage-preview"></a>Tietovuon tallennustila (esikatselu)
+
+Oletusarvon mukaan Power BI:ssä käytetyt tiedot tallennetaan Power BI:n tarjoamaan sisäiseen tallennustilaan. Tietovoiden ja Azure Data Lake Storage Gen2 (ADLS Gen2) -järjestelmän integroinnin myötä voit tallentaa tietovuot organisaatiosi Azure Data Lake Storage Gen2 -tilille. Lisätietoja on kohdassa [Tietovuot ja Azure Data Lake -integrointi (esikatselu)](service-dataflows-azure-data-lake-integration.md).
+
+## <a name="workspaces-preview"></a>Työtilat (esikatselu)
+
+Järjestelmänvalvojana voit tarkastella vuokraajassa olevia työtiloja. Voit lajitella ja suodattaa työtilojen luetteloja ja näyttää kunkin työtilan tiedot. Huomaa, että taulukon sarakkeet vastaavat [Power BI -järjestelmänvalvojan Rest-ohjelmointirajapinnan](/rest/api/power-bi/admin) palauttamia ominaisuuksia. Omat työtilat ovat tyyppiä **PersonalGroup**, vanha työtilat tyyppiä **Group** ja nykyiset työtilat tyyppiä **Workspace**. Lisätietoja on kohdassa [Uusien työtilojen luominen (esiversio) Power BI:ssä](service-create-the-new-workspaces.md).
+
+![Työtilojen luettelo](media/service-admin-portal/workspaces-list.png)
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 

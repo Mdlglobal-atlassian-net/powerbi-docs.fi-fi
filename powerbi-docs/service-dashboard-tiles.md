@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 11/21/2018
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: db6ed98f246eebba55b87fe383ffcab95c22f6dc
-ms.sourcegitcommit: f25464d5cae46691130eb7b02c33f42404011357
+ms.openlocfilehash: c4601ea54d2e55e55f0b94f4bd4c69673bb00e53
+ms.sourcegitcommit: bb4cf3469b44e451153c469725a9069dcd548809
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53180848"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53649122"
 ---
 # <a name="intro-to-dashboard-tiles-for-power-bi-designers"></a>Johdatus raporttinäkymien ruutuihin Power BI -suunnittelijoille
 
@@ -90,7 +90,7 @@ Kun valitset ruudun, seuraavaksi tapahtuva asia riippuu siitä, miten ruutu on l
 
 * Jos raporttia, jolla visualisointi on luotu, ei tallennettu, ruudun valitseminen ei tuota mitään toimia.
 * Jos ruutu on luotu Excel Online -työkirjasta, tarvitset vähintään työkirjan lukuoikeudet. Muussa tapauksessa työkirjaa ei avata Excel Onlinessa, kun ruutu valitaan.
-* Oletetaan, että luot ruudun suoraan raporttinäkymään käyttämällä **Lisää ruutu** -vaihtoehtoa ja määrität sille mukautetun hyperlinkin. Jos näin on, kyseinen URL-osoite aukeaa, kun valitset otsikon, aliotsikon tai ruudun. Muussa tapauksessa suoraan raporttinäkymässä luodun kuvan, verkkokoodin tai muokkausruudun ruudun valitseminen ei oletusarvoisesti tuota mitään toimia.
+* Oletetaan, että luot ruudun suoraan raporttinäkymään käyttämällä **Lisää ruutu** -vaihtoehtoa ja määrität sille mukautetun hyperlinkin. Siinä tapauksessa otsikon, alaotsikon tai ruudun valitseminen avaa kyseisen URL-osoitteen. Muussa tapauksessa suoraan raporttinäkymässä luodun kuvan, verkkokoodin tai muokkausruudun ruudun valitseminen ei oletusarvoisesti tuota mitään toimia.
 * Jos sinulla ei ole raportin käyttöoikeutta Reporting Servicesissä, Reporting Services -raportista luodun ruudun valitseminen avaa sivun, jossa ilmoitetaan, ettei sinulla ole käyttöoikeutta (rsAccessDenied).
 * Jos sinulla ei ole käyttöoikeutta Reporting Services -palvelimen sisältävään verkkoon, Reporting Servicesistä luodun ruudun valitseminen avaa sivun, joka osoittaa, ettei palvelinta löytynyt (HTTP 404). Laitteellasi on oltava verkkoyhteys raporttipalvelimeen raportin tarkastelemista varten.
 * Jos ruudun luomiseen käytetty alkuperäinen visualisointi muuttuu, ruutu ei muutu.  Jos esimerkiksi kiinnitit raportin viivakaavion ja muutat sitten viivakaavion palkkikaavioksi, raporttinäkymän ruudussa näkyy edelleen viivakaavio. Tiedot päivittyvät, mutta visualisointityyppi ei.

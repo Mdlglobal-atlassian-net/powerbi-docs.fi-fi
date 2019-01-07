@@ -11,11 +11,11 @@ ms.date: 10/15/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
 ms.openlocfilehash: f4825e8d8d47f755b01748c847b0fcf110db030a
-ms.sourcegitcommit: fdb54145f9bc93b312409c15c603749f3a4a876e
+ms.sourcegitcommit: 6c6aa214dc36c26a01b29e823598d217a3e2b8a1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "52452863"
+ms.lasthandoff: 12/17/2018
+ms.locfileid: "53451440"
 ---
 # <a name="use-the-sap-bw-connector-in-power-bi-desktop"></a>SAP BW -yhdistimen käyttö Power BI Desktopissa
 Voit nyt käyttää **SAP Business Warehouse (BW)** -tietoja Power BI Desktopilla.
@@ -66,7 +66,7 @@ Kun yhteys muodostetaan, sinun on määritettävä *palvelin*, *järjestelmän n
 
 ![SAP-palvelimen yhteysasetukset](media/desktop-sap-bw-connector/sap_bw_3a.png)
 
-Voit myös määrittää kaksi muuta **lisäasetusta**: kielikoodi ja mukautettua MDX-lauseke, joka suoritetaan kyseisellä palvelimella.
+Voit myös määrittää kaksi muuta **lisäasetusta**: kielikoodi ja mukautettu MDX-lauseke, joka suoritetaan määritetyllä palvelimella.
 
 ![yhteyden lisätiedot](media/desktop-sap-bw-connector/sap_bw_4a.png)
 
@@ -78,9 +78,9 @@ Kun valitset yhden tai useamman tietoyksikön palvelimelta, tulostetaulukosta lu
 
 **Navigator**-ikkunassa on myös **näyttövalintoja**, jotka mahdollistavat seuraavat toiminnot:
 
-* **Näytä *vain valitut tietoyksiköt* tai *Kaikki tietoyksiköt* (oletusnäkymä):** Tämä valinta on kätevä vahvistettaessa lopullista valittujen tietoyksiköiden listaa. Vaihtoehtoinen tapa nähdä tämä on valita *Sarakenimet* *Esikatselu*-alueella.
-* **Ota tietojen esikatselut käyttöön (oletustoiminto):** Voit myös hallita näytetäänkö tietojen esikatselu tässä dialogissa. Tietojen esikatselun ottaminen pois käytöstä vähentää palvelinkutsujen määrää, koska palvelin ei enää pyydä tietoja esikatseluita varten.
-* **Tekniset nimet:** SAP BW tukee *teknisten nimien* käsitettä kuution sisältämille tietoyksiköille. Tekniset nimet mahdollistavat sen, että kuution omistaja voi näyttää *käyttäjäystävällisiä* nimiä kuution objekteille pelkästään *fyysisten nimien* sijaan.
+* **Näytä *Vain valitut kohteet* tai *Kaikki kohteet* (oletusnäkymä):** Tämä valinta on hyödyllinen, kun vahvistetaan valittujen kohteiden lopullinen joukko. Vaihtoehtoinen tapa nähdä tämä on valita *Sarakenimet* *Esikatselu*-alueella.
+* **Ota tietojen esikatselut käyttöön (oletustoiminto):** Voit myös valita, näytetäänkö tietojen esikatselu tässä dialogissa. Tietojen esikatselun ottaminen pois käytöstä vähentää palvelinkutsujen määrää, koska palvelin ei enää pyydä tietoja esikatseluita varten.
+* **Tekniset nimet:** SAP BW tukee *teknisten nimien* käsitettä kuution sisältämille objekteille. Tekniset nimet mahdollistavat sen, että kuution omistaja voi näyttää *käyttäjäystävällisiä* nimiä kuution objekteille pelkästään *fyysisten nimien* sijaan.
 
 ![Siirtymistoimintoikkuna](media/desktop-sap-bw-connector/sap_bw_6.png)
 
