@@ -5,17 +5,17 @@ author: SarinaJoan
 manager: kfile
 ms.reviewer: maggiesMSFT
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-template-apps
 ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: ef59d5f42ba913e4ecad79116dea635744534198
-ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
+ms.openlocfilehash: 8ea62f894b01143997850f3c15f2a069b93d7c26
+ms.sourcegitcommit: 750f0bfab02af24c8c72e6e9bbdd876e4a7399de
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "48908574"
+ms.lasthandoff: 01/04/2019
+ms.locfileid: "54008691"
 ---
 # <a name="connect-to-adobe-analytics-with-power-bi"></a>Adobe Analyticsin yhdistäminen Power BI:hin
 Yhteyden muodostaminen Adobe Analyticsiin Power BI:n kautta alkaa muodostamalla yhteys Adobe Analytics Marketing Cloud -tiliin. Saat sovelluksen, jossa on Power BI:n koontinäyttö ja joukko Power BI -raportteja, jotka tarjoavat merkityksellisiä tietoja sivuston liikenne- ja käyttäjädimensioista. Tiedot päivitetään automaattisesti kerran päivässä. Voit käsitellä koontinäyttöä ja raportteja, mutta et voi tallentaa muutoksia.

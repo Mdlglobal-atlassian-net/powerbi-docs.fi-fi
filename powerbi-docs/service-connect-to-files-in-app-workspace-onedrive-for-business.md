@@ -5,17 +5,17 @@ author: maggiesMSFT
 manager: kfile
 ms.reviewer: lukasz
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-template-apps
 ms.topic: conceptual
 ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: c732d1128719db500e13194d36ba1db2605efd2c
-ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
+ms.openlocfilehash: 1b40cf858fd42e9e73a64e926fef0caf917ed064
+ms.sourcegitcommit: 750f0bfab02af24c8c72e6e9bbdd876e4a7399de
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "48908693"
+ms.lasthandoff: 01/04/2019
+ms.locfileid: "54008898"
 ---
 # <a name="connect-to-files-stored-in-onedrive-for-your-power-bi-app-workspace"></a>Yhteyden muodostaminen Power BI-sovellustyötilasta OneDriveen tallennettuihin tiedostoihin
 [Luotuasi Power BI:hin sovellustyötilan](service-create-distribute-apps.md) voit tallentaa Excel-, CSV- ja Power BI Desktop ‑tiedostosi OneDrive for Business ‑palveluun ja käyttää niitä sieltä Power BI ‑sovellustyötilassa. Voit päivittää OneDriveen tallentamiasi tiedostoja, jolloin päivitykset tulevat automaattisesti esiin myös kyseisiin tiedostoihin perustuvissa Power BI ‑raporteissa ja koontinäytöissä. 

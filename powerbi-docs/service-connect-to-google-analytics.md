@@ -5,17 +5,17 @@ author: SarinaJoan
 manager: kfile
 ms.reviewer: maggiesMSFT
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-template-apps
 ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 1bb1831d37dc3f8bfe5ee141859cbccec541735e
-ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
+ms.openlocfilehash: f8777774981e89a88f1fb4f85573fd5a7e078dd6
+ms.sourcegitcommit: 750f0bfab02af24c8c72e6e9bbdd876e4a7399de
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "48908781"
+ms.lasthandoff: 01/04/2019
+ms.locfileid: "54008392"
 ---
 # <a name="connect-to-google-analytics-with-power-bi"></a>Google Analyticsin yhdistäminen Power BI:hin
 Yhteyden muodostaminen Google Analyticsiin Power BI:n kautta alkaa muodostamalla yhteys Google Analytics -tiliin. Saat Power BI:n koontinäytön ja joukon Power BI -raportteja, jotka tarjoavat merkityksellisiä tietoja sivuston liikenne- ja käyttäjädimensioista. Voit käsitellä koontinäyttöä ja raportteja, mutta et voi tallentaa muutoksia. Tiedot päivitetään automaattisesti kerran päivässä.

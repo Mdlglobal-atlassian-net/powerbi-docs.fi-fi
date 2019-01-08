@@ -5,17 +5,17 @@ author: SarinaJoan
 manager: kfile
 ms.reviewer: maggiesMSFT
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-template-apps
 ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 93e1534af258a11a7af0f95b179653a1d8e54307
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 4cedeac37a47ffaa41ff9088c9ef36c37b4c784e
+ms.sourcegitcommit: 750f0bfab02af24c8c72e6e9bbdd876e4a7399de
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46544643"
+ms.lasthandoff: 01/04/2019
+ms.locfileid: "54008277"
 ---
 # <a name="connect-to-microsoft-azure-enterprise-with-power-bi"></a>Muodosta yhteys Microsoft Azure Enterpriseen Power BI:llä
 Tutustu ja valvo Microsoft Azure Enterprise -tietojasi Power BI:ssä Power BI -sisältöpaketin avulla. Tiedot päivitetään automaattisesti kerran päivässä.

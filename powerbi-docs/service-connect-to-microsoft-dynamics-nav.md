@@ -5,17 +5,17 @@ author: SarinaJoan
 manager: kfile
 ms.reviewer: maggiesMSFT
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-template-apps
 ms.topic: conceptual
 ms.date: 05/30/2018
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 2085f1ca852839c27c4943872e5f5ddb248e8638
-ms.sourcegitcommit: a764e4b9d06b50d9b6173d0fbb7555e3babe6351
+ms.openlocfilehash: 6d8471833dac99aa3c54b40f5839e65edfaa03de
+ms.sourcegitcommit: 750f0bfab02af24c8c72e6e9bbdd876e4a7399de
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/22/2018
-ms.locfileid: "49641386"
+ms.lasthandoff: 01/04/2019
+ms.locfileid: "54008967"
 ---
 # <a name="connect-to-microsoft-dynamics-nav-with-power-bi"></a>Yhteyden muodostaminen Microsoft Dynamics NAViin Power BI:n avulla
 Merkityksellisten tietojen saaminen Microsoft Dynamics NAV-tietoihin on helppoa Power BI:n avulla. Power BI noutaa sekä Myynti- että Rahoitus-tiedot ja luo niiden pohjalta sovelluksen raporttinäkymin ja raportein. Power BI edellyttää oikeuksia taulukoihin, joista tiedot on noudettu, tässä tapauksessa myynti- ja rahoitustiedot. Lisätietoja vaatimuksista on alla. Kun olet asentanut sovelluksen, voit tarkastella raporttinäkymää ja raportteja Power BI -palvelussa ([https://powerbi.com](https://powerbi.com)) ja Power BI -mobiilisovelluksissa. 
