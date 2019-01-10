@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 2800eb5b01e8203632ae60c9b304a5ed9ce28b69
-ms.sourcegitcommit: 2ae660a7b70fce23eb58b159d049eca44a664f2c
+ms.openlocfilehash: 281e84b1dd3a3c21a7aaebce4784551a8afb31ba
+ms.sourcegitcommit: 88ae40a25ea54ef7153885dd04ef57d12522d4e1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "52670197"
+ms.lasthandoff: 01/04/2019
+ms.locfileid: "54056060"
 ---
 # <a name="enroll-your-us-government-organization-in-the-power-bi-service"></a>Rekisteröi Yhdysvaltain valtionhallinnon organisaatio Power BI -palveluun
 **Power BI-palvelulla** on versio, joka on saatavilla Yhdysvaltain valtionhallinnon asiakkaille osana **Office 365 US Government Community** -tilauksia. Tässä artikkelissa kuvattu **Power BI -palvelun** versio on suunniteltu erityisesti Yhdysvaltain valtionhallinnon asiakkaille ja on erillinen ja erilainen kuin **Power BI -palvelun** kaupallinen versio.
@@ -102,7 +102,7 @@ Jos vuokraajassasi on sekä maksuttomat että Yhdysvaltain valtionhallinnon Pro-
 
 Kun käytössäsi on samanaikaisesti maksuttomat ja Pro-käyttöoikeudet Yhdysvaltain valtionhallinnon vuokraajassa ja *sallittujen luetteloon lisäämisen* prosessi on käynnissä, seuraavat tapahtumat ovat mahdollisia:
 
-**Ennen *sallittujen luetteloon lisäämistä***:
+**Ennen _lisäämistä sallittujen luetteloon_**:
 
 * Käyttäjät, joilla on maksuttomat käyttöoikeudet, suoritetaan kaupallisessa pilvipalvelussa
 * Yhdysvaltain valtionhallinnon Pro-käyttöoikeudet näkyvät portaalissa, ja järjestelmänvalvoja voi määrittää näitä käyttöoikeuksia käyttäjille. Yhdysvaltain valtionhallinnon Pro-käyttäjät eivät menetä tietoja maksuttomista käyttöoikeuksistaan, kun järjestelmänvalvoja on määrittänyt Yhdysvaltain valtionhallinnon Pro-käyttöoikeuden. Määritetyt käyttäjät voivat käyttää Power BI Pro -toimintoja Yhdysvaltain valtionhallinnon asiakkaille, mutta seuraavassa luettelossa mainitut toimintojen aukot ovat olemassa, kunnes vuokraaja on onnistuneesti *lisätty sallittujen luetteloon*:
@@ -112,7 +112,7 @@ Kun käytössäsi on samanaikaisesti maksuttomat ja Pro-käyttöoikeudet Yhdysva
   * PBIX-tiedostot on ladattava manuaalisesti kaupallisesta Power BI -palvelusta.
   * Power BI -mobiilisovellukset eivät ole käytettävissä.
 
-**Sallittujen luetteloon lisäämisen *jälkeen***:
+**_Sallittujen luetteloon lisäämisen_ jälkeen**:
 
 * Kaupallisessa Power BI -palvelussa olevat maksuttomat käyttäjät voivat jatkaa suorittamista, mutta ne lakkaavat todentamasta odotetulla tavalla.
 * Yhdysvaltain valtionhallinnon pilvipalvelussa olevat Pro-käyttäjät voivat käyttää **Power BI Yhdysvaltain valtionhallinnon asiakkaille** -palvelua odotetulla tavalla.

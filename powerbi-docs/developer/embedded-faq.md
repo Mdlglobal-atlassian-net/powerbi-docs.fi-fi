@@ -8,13 +8,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: conceptual
-ms.date: 11/27/2018
-ms.openlocfilehash: 71cbae5f282883ca26a5bf0b2ae7b5609b86eb58
-ms.sourcegitcommit: 05303d3e0454f5627eccaa25721b2e0bad2cc781
+ms.date: 12/20/2018
+ms.openlocfilehash: 3971651caf9be7e754f4232ffec8b4e4dbfdfe6d
+ms.sourcegitcommit: 750f0bfab02af24c8c72e6e9bbdd876e4a7399de
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "52578792"
+ms.lasthandoff: 01/04/2019
+ms.locfileid: "54008415"
 ---
 # <a name="frequently-asked-questions-about-power-bi-embedded"></a>Usein kysyttyjä kysymyksiä – Power BI Embedded
 
@@ -74,7 +74,7 @@ Alla on osittainen luettelo eroista näiden ratkaisujen yhteydessä käytettävi
 | Sisällön käyttäminen ilmaisella Power BI -käyttöoikeudella Powerbi.comissa ja Power BI -mobiilisovelluksessa | Ei | Ei | Kyllä |
 | Sisällön käyttäminen ilmaisella Power BI -käyttöoikeudella upotettuna MS Office -sovelluksiin | Ei | Kyllä | Kyllä |
 
-### <a name="power-bi-now-offers-three-skus-for-embedding-a-skus-em-skus-and-p-skus-which-one-should-i-purchase-for-my-scenario"></a>Power BI tarjoaa nyt upottamiseen kolme varastointiyksikköä: A-, EM- ja P-varastointiyksiköt. Mikä niistä minun tulisi ostaa omaa skenaariotani varten?
+### <a name="power-bi-now-offers-three-skus-for-embedding-a-skus-em-skus-and-p-skus-which-one-should-i-purchase-for-my-scenario"></a>Power BI tarjoaa nyt kolme varastointiyksikköä upottamiseen: A-varastointiyksiköt, EM-varastointiyksiköt ja P-varastointiyksiköt. Mikä niistä minun tulisi ostaa omaa skenaariotani varten?
 
 |  |A-varastointiyksikkö (Power BI Embedded)  |EM-varastointiyksikkö (Power BI Premium)  |P-varastointiyksikkö (Power BI Premium)  |
 |---------|---------|---------|---------|
@@ -104,7 +104,7 @@ Automaattista skaalausta ei tällä hetkellä ole, mutta kaikki ohjelmointirajap
 
 ### <a name="why-creatingscalingresuming-a-capacity-results-in-putting-the-capacity-into-a-suspended-state"></a>Miksi kapasiteetin luominen/skaalaaminen/jatkaminen aiheuttaa sen, että kapasiteetti siirtyy keskeytettyyn tilaan?
 
-Kapasiteetin valmisteleminen (skaalaaminen/jatkaminen/luominen) voi epäonnistua. Valmistelukutsun kutsujan olisi tarkistettava kapasiteetin ProvisioningState Hae tiedot -ohjelmointirajapinnan avulla: [Kapasiteetit – Hae tiedot](https://docs.microsoft.com/rest/api/power-bi-embedded/capacities/getdetails).
+Kapasiteetin valmisteleminen (skaalaaminen/jatkaminen/luominen) voi epäonnistua. Valmistelukutsun kutsujan olisi tarkistettava kapasiteetin ProvisioningState-tila Nouda tiedot -ohjelmointirajapinnan avulla: [Kapasiteetit – Nouda tiedot](https://docs.microsoft.com/rest/api/power-bi-embedded/capacities/getdetails).
 
 ### <a name="why-can-i-only-create-pbie-in-a-specific-region"></a>Miksi voin luoda PBIE:n vain tietyllä alueella?
 
@@ -321,3 +321,7 @@ Voit oppia muokkaamaan Power BI -tietoja [täällä](https://docs.microsoft.com/
 Jos haluat lisätietoja, katso [upotettujen sovellusten vianmääritys](embedded-troubleshoot.md)
 
 Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
+
+### <a name="what-are-the-best-practices-to-improve-performance"></a>Mitkä ovat parhaita käytäntöjä suorituskyvyn parantamiseksi?
+
+[Power BI Embeddedin suorituskyky](embedded-performance-best-practices.md)

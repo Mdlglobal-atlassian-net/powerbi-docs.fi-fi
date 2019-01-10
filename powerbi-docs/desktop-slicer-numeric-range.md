@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/28/2018
+ms.date: 01/02/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: f997ee7574c5dd9dc6b4d28767d599a97bf297ed
-ms.sourcegitcommit: 2ae660a7b70fce23eb58b159d049eca44a664f2c
+ms.openlocfilehash: a2402872744b3029e37bf49eaaeae27a3ad95734
+ms.sourcegitcommit: 5206651c12f2b91a368f509470b46f3f4c5641e6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "52669838"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53983619"
 ---
 # <a name="use-the-numeric-range-slicer-in-power-bi-desktop"></a>Numeerisen alueen osittajan käyttö Power BI Desktopissa
 **Numeerisen alueen osittajan** avulla voit käyttää kaikenlaisia suodattimia mihin tahansa tietomallisi numeeriseen sarakkeeseen. Voit myös suodattaa ehdoilla lukujen **välillä**, **pienempi tai yhtä suuri** kuin luku tai **suurempi tai yhtä suuri** kuin luku. Tämä voi kuulostaa yksinkertaiselta, mutta se on hyvin tehokas tapa suodattaa tietojasi.
@@ -54,6 +54,14 @@ Jos taas valitaan **Suurempi tai yhtä suuri kuin**, liukusäätimen oikea (suur
 ## <a name="snap-to-whole-numbers-with-the-numeric-range-slicer"></a>Kokonaislukuihin kohdistaminen numeerisen alueen osittajalla
 
 Numeerisen alueen osittaja kohdistuu kokonaislukuihin, jos pohjana olevan kentän tietotyyppi on **kokonaisluku**. Näin osittaja voi tasata siististi kokonaislukuihin. **Desimaaliluku**-tyyppisten kenttien avulla voit syöttää tai valita murtolukuja. Tekstiruudun muotoilu vastaa kentässä määritettyä muotoilua, vaikka voit kirjoittaa tai valita tarkempia lukuja.
+
+## <a name="display-formatting-with-the-date-range-slicer"></a>Muotoilun näyttäminen päivämääräalueen osittajan avulla
+
+Kun käytät osittajaa näyttämään tai määrittämään päivämääräalueen, päivämäärän muoto näkyy aina **lyhyen päivämäärän** muodossa käyttäjän selaimen tai käyttöjärjestelmän aluekohtaisten asetusten mukaan. Tämä näyttömuoto on aina sama pohjana olevien tietojen tai mallin tietotyyppiasetuksista huolimatta. 
+
+Sinulla voi esimerkiksi olla pitkä päivämäärämuoto pohjana olevalle tietotyypille (kuten *pppp, p KKKK, vvvv*, joka voi muodostaa päivämäärän muissa visualisoinneissa tai tilanteissa, kuten *keskiviikko, 14. maaliskuuta 2001*), mutta päivämääräosittajassa tämä päivämäärä näytetään osittajassa muodossa *14.3.2001*.
+
+Näyttämällä osittajassa **lyhyen päivämäärän** muodon varmistat, että merkkijonon pituus säilyy aina johdonmukaisena ja lyhyenä osittajassa. 
 
 
 ## <a name="limitations-and-considerations"></a>Rajoitukset ja huomioitavat asiat

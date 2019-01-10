@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/19/2018
+ms.date: 12/19/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 04e00537db4ffbcb6c1a154cb69fb2c856bd7596
-ms.sourcegitcommit: 70192daf070ede3382ac13f6001e0c8b5fb8d934
+ms.openlocfilehash: 09c505d114eaa951978f23061d9c79c1b6870fad
+ms.sourcegitcommit: 5206651c12f2b91a368f509470b46f3f4c5641e6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "46565655"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53983366"
 ---
 # <a name="tips-and-tricks-for-color-formatting-in-power-bi"></a>Vinkkejä värimuotoiluun Power BI:ssä
 Power BI tarjoaa useita eri tapoja koontinäyttöjen ja raporttien mukauttamiseen. Tässä artikkelissa on kokoelma vinkkejä, joiden avulla voit tehdä Power BI -visualisoinneistasi mielenkiintoisempia ja tarpeisiisi sopivampia.
@@ -29,38 +29,35 @@ Saatavilla ovat seuraavat vinkit. Haluatko antaa vinkin? Hienoa! Lähetä se mei
 * Erkautuvien väriasteikkojen käyttäminen
 * Kumoaminen Power BI:ssä
 
-Voidaksesi tehdä muutoksia sinun pitää olla muokkaamassa raporttia: valitse **Raportti** **Oma työtila** -ruudussa ja valitse sitten **Muokkaa raporttia** ylävalikon alueella seuraavassa kuvassa esitetyllä tavalla.
+Voidaksesi tehdä muutoksia sinun pitää olla muokkaamassa raporttia: valitse **Raportti** **Oma työtila** -ruudussa ja valitse sitten **Muokkaa raporttia** ylävalikon alueella seuraavassa kuvassa esitetyllä tavalla. Tässä esimerkissä käytetään **Henkilöstöhallinto-mallia**.
 
-![](media/service-tips-and-tricks-for-color-formatting/tipstrickscolor_1.png)
+![raporttipohja, jossa Muokkaa raporttia on korostettu](media/service-tips-and-tricks-for-color-formatting/power-bi-edit.png)
 
-Kun **Visualisoinnit**-ruutu näkyy **Raportti**-piirtoalustan oikeassa reunassa, olet valmis aloittamaan mukauttaminen.
+Kun **Visualisoinnit**-ruutu näkyy **Raportti**-piirtoalustan oikeassa reunassa, olet valmis aloittamaan mukauttamisen.
 
-![](media/service-tips-and-tricks-for-color-formatting/tipstrickscolor_2.png)
+![raportti, jossa näkyy muotoiluruutu](media/service-tips-and-tricks-for-color-formatting/power-bi-formatting-pane.png)
 
 ## <a name="change-the-color-of-a-single-data-point"></a>Yhden arvopisteen värin muuttaminen
-Joskus saatat haluta korostaa yhtä tiettyä arvopistettä. Kyseessä voi olla myyntiluvut uuden tuotteen julkaisusta tai kasvaneet laatupistemäärät uuden ohjelman julkaisun jälkeen. Power BI:ssä voit korostaa tiettyä arvopistettä vaihtamalla sen väriä.
+Joskus saatat haluta korostaa yhtä tiettyä arvopistettä. Kyseessä voi olla myyntiluvut uuden tuotteen julkaisusta tai kasvaneet laatupistemäärät uuden ohjelman julkaisun jälkeen. Power BI:ssä voit korostaa useimmille visualisointityypeille tiettyä arvopistettä vaihtamalla sen väriä.
 
-Seuraavat visualisoinnit luokittelevat tiloja elinkustannusten osalta. 
+Seuraavassa visualisoinnissa näytetään myyntikate työntekijää kohden oletusvärien avulla. 
 
-![](media/service-tips-and-tricks-for-color-formatting/tipstrickscolor_3.png)
+![aluekaavio](media/service-tips-and-tricks-for-color-formatting/power-bi-area-chart.png)
 
-Kuvittele nyt, että haluat nopeasti näyttää, mihin kohtaan luetteloa Washington sijoittuu käyttämällä väriä. Työvaiheet ovat seuraavanlaiset:
+Annelien aluetta on vaikea nähdä, joten tuodaanpa se esille paremmin värin avulla. Työvaiheet ovat seuraavanlaiset:
 
 Laajenna **Tietojen värit** -osa. Seuraavat kohdat tulevat näkyviin.
 
-![](media/service-tips-and-tricks-for-color-formatting/tipstrickscolor_4.png)
+![Tietojen värit -valinta-alue muotoilun alla](media/service-tips-and-tricks-for-color-formatting/power-bi-data-colors.png)
 
-Määritä **Näytä kaikki** -kohdan arvoksi **Käytössä**. Tämä näyttää jokaisen tietoelementin värit visualisoinnissa. Kun pidät hiiriosoitinta arvopisteiden päällä, vieritys on käytössä, joten voit muokata kaikkia arvopisteitä.
 
-![](media/service-tips-and-tricks-for-color-formatting/tipstrickscolor_5.png)
+Valitaan tässä tapauksessa tumma mutta kirkas väri, joka eroaa Valerylle käytettävästä väristä. Valitse Annelien väriruudussa oleva alanuoli, valitse **Mukautettu väri** ja valitse kirkkaansininen.
 
-Tässä tapauksessa muutetaanpa **Washington** vihreäksi. Vieritetään alaspäin **Washington**-kohtaan ja valitaan sen väriruudun sisällä oleva alanuoli, jolloin värin valintaikkuna aukeaa.
+![värivalinnat](media/service-tips-and-tricks-for-color-formatting/tipstrickscolor_6.png)
 
-![](media/service-tips-and-tricks-for-color-formatting/tipstrickscolor_6.png)
+Kun se on valittu, Annelien alue on paljon helpompi erottaa muista työntekijöistä. 
 
-Valittuna **Washington**-arvopiste on vihreän sävyinen ja erottuu varmasti.
-
-![](media/service-tips-and-tricks-for-color-formatting/tipstrickscolor_7.png)
+![aluekaavio, Annelien alue on nyt kirkkaansininen](media/service-tips-and-tricks-for-color-formatting/power-bi-color.png)
 
 Vaikka muutat visualisointityyppiä ja palaat sitten takaisin, Power BI muistaa valintasi ja säilyttää **Washingtonin** vihreänä.
 

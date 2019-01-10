@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 07/25/2018
 ms.author: gepopell
 LocalizationGroup: Connect to data
-ms.openlocfilehash: bba674df9864697199a274698a1b17320b8ccd80
-ms.sourcegitcommit: 9d6f37fd32b965592bd7b108dea87b8e53b11334
+ms.openlocfilehash: eaf76f2ba762a603bf37385ea00cd714499db4b5
+ms.sourcegitcommit: 5206651c12f2b91a368f509470b46f3f4c5641e6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/18/2018
-ms.locfileid: "40256298"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53983412"
 ---
 # <a name="connector-extensibility-in-power-bi"></a>Liittimen laajennettavuus Power BI:ssä
 
@@ -42,7 +42,7 @@ Muuttaaksesi tietolaajennuksen tietoturva-asetuksia **Power BI Desktopissa** val
 * (Suositeltu) Salli vain sertifioitujen laajennusten lataaminen
 * (Ei suositeltu) Salli minkä tahansa laajennuksen lataaminen ilman varoitusta
 
-Jos aiot käyttää **mukautettuja liittimiä** tai itse kehittämiäsi tai kolmannen osapuolen kehittämiä ja jakelemia liittimiä, sinun on valittava **(Ei suositeltu) Salli minkä tahansa laajennuksen lataaminen ilman varoitusta** -vaihtoehto. Microsoft ei suosittele tätä tietoturva-asetusta, ellet aio käyttää **mukautettuja liittimiä**.
+Jos aiot käyttää **mukautettuja liittimiä** tai itse kehittämiäsi tai kolmannen osapuolen kehittämiä ja jakelemia liittimiä, sinun on valittava **(Ei suositeltu) Salli minkä tahansa laajennuksen lataaminen ilman varoitusta** -vaihtoehto. Emme suosittele tätä tietoturva-asetusta, ellet täysin luota mukautettuihin liittimiisi, koska niiden sisältämä koodi voi käsitellä tunnistetietoja (mukaan lukien lähettää niitä HTTP:n kautta) ja sivuuttaa yksityisyystasot.
 
 Jos **(Suositeltu)**-tietoturva-asetus on käytössä ja järjestelmässä käytetään mukautettuja liittimiä, näkyviin tulee virheilmoitus, jossa kuvataan tietoturvan vuoksi lataamatta jätetyt liittimet.
 

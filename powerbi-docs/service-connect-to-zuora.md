@@ -5,20 +5,20 @@ author: SarinaJoan
 manager: kfile
 ms.reviewer: maggiesMSFT
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-template-apps
 ms.topic: conceptual
 ms.date: 10/24/2018
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: b183738c062af1d834a742639369ca90f2cb1bad
-ms.sourcegitcommit: 42475ac398358d2725f98228247b78aedb8cbc4f
+ms.openlocfilehash: 605cd2f135ff6d8626586abbd503bcb44687931d
+ms.sourcegitcommit: 750f0bfab02af24c8c72e6e9bbdd876e4a7399de
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50003221"
+ms.lasthandoff: 01/04/2019
+ms.locfileid: "54008599"
 ---
 # <a name="connect-to-zuora-with-power-bi"></a>Yhteyden muodostaminen Zuoraan Power BI:llä
-Zuora for Power BI:n avulla voit visualisoida tärkeät tuotto-, laskutus- ja tilaustiedot. Käytä oletusraporttinäkymiä ja -raportteja käyttötrendien analysointiin, laskutuksen ja maksujen seurantaan sekä toistuvan tuoton valvontaan, tai mukauta niitä omien raporttinäkymä- ja raportointitarpeidesi mukaan.
+Zuora for Power BI:n avulla voit visualisoida tärkeät tuotto-, laskutus- ja tilaustiedot. Käytä oletuskoontinäyttöjä ja -raportteja käyttötrendien analysointiin, laskutuksen ja maksujen seurantaan sekä toistuvan tuoton valvontaan, tai mukauta niitä omien koontinäyttö- ja raportointitarpeidesi mukaan.
 
 Yhteyden muodostaminen [Zuora](https://app.powerbi.com/getdata/services/Zuora) for Power BI:hin.
 
@@ -38,13 +38,13 @@ Yhteyden muodostaminen [Zuora](https://app.powerbi.com/getdata/services/Zuora) f
 5. Valitse **Todennusmenetelmä**-kohdassa **Perus** ja anna käyttäjänimesi ja salasanasi (kirjainkoolla on merkitystä), ja valitse sitten **Kirjaudu sisään**.
 
     ![](media/service-connect-to-zuora/creds.png)
-6. Hyväksymisen jälkeen tuontiprosessi alkaa automaattisesti. Kun kaikki on valmista, uusi raporttinäkymä, raportti ja malli näkyvät siirtymisruudussa. Voit tarkastella tuotuja tietoja valitsemalla raporttinäkymän.
+6. Hyväksymisen jälkeen tuontiprosessi alkaa automaattisesti. Kun kaikki on valmista, uusi koontinäyttö, raportti ja malli näkyvät siirtymisruudussa. Voit tarkastella tuotuja tietoja valitsemalla koontinäytön.
 
      ![](media/service-connect-to-zuora/dashboard.png)
 
 **Mitä seuraavaksi?**
 
-* Kokeile [kysymyksen esittämistä raporttinäkymän yläreunassa olevassa Q&A-ruudussa](consumer/end-user-q-and-a.md).
+* Kokeile [kysymyksen esittämistä koontinäytön yläreunassa olevassa Q&A-ruudussa](consumer/end-user-q-and-a.md).
 * [Muuta koontinäytön ruutuja](service-dashboard-edit-tile.md).
 * [Valitse jokin ruutu](consumer/end-user-tiles.md), jolloin siihen liittyvä raportti avautuu.
 * Tietojoukko on ajastettu päivittymään päivittäin, mutta voit muuttaa päivitysaikataulua tai kokeilla tietojoukon päivittämistä **Päivitä nyt** -toiminnolla haluamanasi ajankohtana
@@ -76,13 +76,13 @@ Se sisältää myös nämä lasketut mittayksiköt:
 | Tili: maksuvirheet |Maksuvirheiden kokonaisarvo. |SUM (Payment.Amount)<br>WHERE<br>Payment.Status = "Error" |
 | Tuoton ajoituskohde: tunnistettu tuotto |Tunnistettu kokonaistuotto laskentakaudella. |SUM (RevenueScheduleItem.Amount)<br>WHERE<br>AccountingPeriod.StartDate = TimePeriod.StartDate |
 | Tilaus: uudet tilaukset |Uusien tilausten määrä ajanjaksolla. |COUNT (Subscription.ID)<br>WHERE<br>Subscription.Version = ”1”<br>AND    Subscription.CreatedDate <= TimePeriod.EndDate<br>AND    Subscription.CreatedDate >= TimePeriod.StartDate |
-| Laskun: laskukohteet |Laskun kokonaisveloitussummat ajanjaksolla. |SUM (InvoiceItem.ChargeAmount)<br>WHERE<br>    Invoice.Status = "Posted"<br>AND    Invoice.InvoiceDate <= TimePeriod.EndDate<br>AND    Invoice.InvoiceDate >= TimePeriod.StartDate |
+| Lasku: laskukohteet |Laskukohteen kokonaisveloitussummat ajanjaksolla. |SUM (InvoiceItem.ChargeAmount)<br>WHERE<br>    Invoice.Status = "Posted"<br>AND    Invoice.InvoiceDate <= TimePeriod.EndDate<br>AND    Invoice.InvoiceDate >= TimePeriod.StartDate |
 | Lasku: verotuskohteet |Verotuskohteiden kokonaissummat ajanjaksolla. |SUM (TaxationItem.TaxAmount)<br>WHERE<br>Invoice.Status = "Posted"<br>AND    Invoice.InvoiceDate <= TimePeriod.EndDate<br>AND    Invoice.InvoiceDate >= TimePeriod.StartDate |
-| Lasku: laskun kohteiden muutokset |Laskun kohteiden kokonaismuutossummat ajanjaksolla. |SUM (InvoiceItemAdjustment.Amount) <br>WHERE<br>    Invoice.Status = "Posted"<br>AND    InvoiceItemAdjustment.AdjustmentDate <= TimePeriod.EndDate<br>AND    InvoiceItemAdjustment.AdjustmentDate >= TimePeriod.StartDate |
+| Lasku: laskukohteen muutokset |Laskukohteiden kokonaismuutossummat ajanjaksolla. |SUM (InvoiceItemAdjustment.Amount) <br>WHERE<br>    Invoice.Status = "Posted"<br>AND    InvoiceItemAdjustment.AdjustmentDate <= TimePeriod.EndDate<br>AND    InvoiceItemAdjustment.AdjustmentDate >= TimePeriod.StartDate |
 | Lasku: laskun muutokset |Laskun kokonaismuutossummat ajanjaksolla. |SUM (InvoiceAdjustment.Amount) <br>WHERE<br>    Invoice.Status = "Posted"<br>AND    InvoiceAdjustment.AdjustmentDate <= TimePeriod.EndDate<br>AND    InvoiceAdjustment.AdjustmentDate >= TimePeriod.StartDate |
-| Lasku: nettolaskutus |Laskun kohteiden, verotuskohteiden, laskun kohteiden muutosten ja laskun muutosten summa ajanjaksolla. |Invoice.InvoiceItems + Invoice.TaxationItems + Invoice.InvoiceItemAdjustments + Invoice.InvoiceAdjustments |
-| Lasku: Laskun erääntymiskauden saldo |Kirjattujen laskun saldojen summa. |SUM (Invoice.Balance) <br>WHERE<br>    Invoice.Status = "Posted" |
-| Lasku: bruttolaskutus |Kirjattujen laskujen kohteiden veloitusten summa ajanjaksolla. |SUM (InvoiceItem.ChargeAmount) <br>WHERE<br>    Invoice.Status = "Posted"<br>AND    Invoice.InvoiceDate <= TimePeriod.EndDate<br>AND    Invoice.InvoiceDate >= TimePeriod.StartDate |
+| Lasku: nettolaskutukset |Laskukohteiden, verotuskohteiden, laskukohteiden muutosten ja laskun muutosten summa ajanjaksolla. |Invoice.InvoiceItems + Invoice.TaxationItems + Invoice.InvoiceItemAdjustments + Invoice.InvoiceAdjustments |
+| Lasku: laskun vanhentumissaldo |Kirjattujen laskun saldojen summa. |SUM (Invoice.Balance) <br>WHERE<br>    Invoice.Status = "Posted" |
+| Lasku: bruttolaskutukset |Kirjattujen laskujen kohteiden veloitusten summa ajanjaksolla. |SUM (InvoiceItem.ChargeAmount) <br>WHERE<br>    Invoice.Status = "Posted"<br>AND    Invoice.InvoiceDate <= TimePeriod.EndDate<br>AND    Invoice.InvoiceDate >= TimePeriod.StartDate |
 | Lasku: kokonaismuutokset |Kirjattuihin laskuihin liittyvien käsiteltyjen laskumuutosten ja laskukohteiden muutosten summa. |SUM (InvoiceAdjustment.Amount) <br>WHERE<br>    Invoice.Status = "Posted"<br>AND    InvoiceAdjustment.Status = "Processed"<br>+<br>SUM (InvoiceItemAdjustment.Amount) <br>WHERE<br>    Invoice.Status = "Posted"<br>AND    invoiceItemAdjustment.Status = "Processed" |
 | Maksusuunnitelman veloitus: brutto-MRR |Tilausten kuukausittain toistuvan tuoton summa ajanjaksolla. |SUM (RatePlanCharge.MRR) <br>WHERE<br>    Subscription.Status != "Expired"<br>AND    Subscription.Status != "Draft"<br>AND    RatePlanCharge.EffectiveStartDate <= TimePeriod.StartDate<br>AND        RatePlanCharge.EffectiveEndDate > TimePeriod.StartDate<br>    OR    RatePlanCharge.EffectiveEndDate = null --evergreen subscription |
 

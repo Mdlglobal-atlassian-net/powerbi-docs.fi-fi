@@ -9,12 +9,12 @@ ms.component: powerbi-mobile
 ms.topic: conceptual
 ms.date: 11/08/2018
 ms.author: maggies
-ms.openlocfilehash: f272d0e40de5c65de9134c3d184195889233496b
-ms.sourcegitcommit: cd85d88fba0d9cc3c7a4dc03d2f35d2bd096759b
+ms.openlocfilehash: ae0126c6242508a551e094d3e40a57e7e6868ab3
+ms.sourcegitcommit: 5206651c12f2b91a368f509470b46f3f4c5641e6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/12/2018
-ms.locfileid: "53280922"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53983872"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Power BI -mobiilisovellusten uudet ominaisuudet
 Lisätietoja aiheeseen liittyvistä uusista ominaisuuksista:
@@ -39,7 +39,7 @@ Raportit näytetään nyt tabletissa pystysuuntaisina käyttämällä puhelinrap
 
 ### <a name="supporting-report-query-string"></a>Raporttien kyselymerkkijonojen tuki 
 
-Kyselymerkkijonon sisältävät raporttilinkit avataan nyt mobiilisovelluksessa ja esisuodatetaan kyselymerkkijonossa määritettyjen ehtojen mukaan. Lue lisää [raportin URL-osoitteen luomisesta kyselymerkkijonon avulla](https://docs.microsoft.com/en-us/power-bi/service-url-filters/).  
+Kyselymerkkijonon sisältävä raporttilinkki avataan nyt mobiilisovelluksessa ja esisuodatetaan kyselymerkkijonossa määritettyjen ehtojen perusteella. Lue lisää [raportin URL-osoitteen luomisesta kyselymerkkijonon avulla](https://docs.microsoft.com/en-us/power-bi/service-url-filters/).  
 
 ### <a name="shared-credentials-now-in-android"></a>Jaetut tunnistetiedot (nyt Androidissa)
 

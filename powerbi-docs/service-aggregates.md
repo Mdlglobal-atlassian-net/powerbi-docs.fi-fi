@@ -1,24 +1,24 @@
 ---
-title: Koosteet (summa, keskiarvo, suurin arvo jne.) visualisoinneissa
-description: Koosteen muuttaminen Power BI:n kaaviossa (summa, keskiarvo, suurin arvo jne.)
+title: Koosteiden (summa, keskiarvo jne.) käsitteleminen Power BI -palvelussa
+description: Opi muuttamaan kaavion koostetta (summa, keskiarvo, suurin arvo jne.) Power BI -palvelussa.
 author: mgblythe
-manager: kvivek
+manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 08/29/2018
+ms.date: 12/21/2018
 ms.author: mblythe
 ms.custom: seodec18
 LocalizationGroup: Reports
-ms.openlocfilehash: dfc3006c37d6055bac435fceb05febd596f0cd1a
-ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
+ms.openlocfilehash: 7a88cc7f210c6119e57a5dcf30920a95e180b85f
+ms.sourcegitcommit: 5206651c12f2b91a368f509470b46f3f4c5641e6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53026473"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53983711"
 ---
-# <a name="aggregates-in-power-bi-visualizations"></a>Koosteet Power BI -visualisoinneissa
+# <a name="work-with-aggregates-sum-average-etc-in-the-power-bi-service"></a>Koosteiden (summa, keskiarvo jne.) käsitteleminen Power BI -palvelussa
 ## <a name="what-is-an-aggregate"></a>Mikä on kooste?
 Joskus on tarpeen yhdistellä tiedoissa olevia arvoja matemaattisesti. Laskutoimituksena voi olla summa, keskiarvo, suurin arvo, lukumäärä ja niin edelleen. Kun yhdistät tietojen arvoja, sitä kutsutaan *koostamiseksi*. Tämän laskutoimituksen tulos on *kooste*. 
 
@@ -70,13 +70,13 @@ Oletetaan, että sinulla on kaavio, joka laskee yhteen eri tuotteiden myydyt yks
 
 Tässä on eräitä asetuksia, jotka voivat olla käytettävissä kentän koostamiseen:
 
-* **Älä tee yhteenvetoa**. Kun tämä asetus on valittu, jokaista kyseisen kentän arvoa käsitellään erikseen, eikä niistä tehdä yhteenvetoa. Tätä käytetään usein, jos sinulla on numeerinen tunnussarake, jota ei tule laskea yhteen.
+* **Älä tee yhteenvetoa**. Kun tämä asetus on valittu, jokaista kyseisen kentän arvoa käsitellään erikseen, eikä niistä tehdä yhteenvetoa. Käytä tätä vaihtoehtoa, jos sinulla on numeerinen tunnistesarake, jota ei tule laskea yhteen.
 * **Summa**. Tämä laskee yhteen kaikki kyseisen kentän arvot.
 * **Keskiarvo**. Laskee arvoista aritmeettisen keskiarvon.
 * **Pienin arvo**. Näyttää pienimmän arvon.
 * **Suurin arvo**. Näyttää suurimman arvon.
 * **Määrä (ei tyhjä).** Tämä laskee kentän niiden arvojen määrän, jotka eivät ole tyhjiä.
-* **Määrä (erillinen).** Tämä laskee kentän eri arvojen määrän.
+* **Määrä (erillinen).** Tämä laskee tämän kentän eri arvojen määrän.
 * **Keskihajonta.**
 * **Varianssi**.
 * **Mediaani**.  Näyttää mediaaniarvon eli joukon keskimmäisen arvon. Tämä on arvo, jonka ylä- ja alapuolella on sama määrä kohteita.  Jos mediaaneja on kaksi, Power BI laskee niiden keskiarvon.
@@ -109,7 +109,7 @@ Saamme tiedoista seuraavia tuloksia:
 ## <a name="create-an-aggregate-using-a-category-text-field"></a>Koosteen luominen luokittaisesta kentästä (tekstikentästä)
 Voit koostaa myös ei-numeerisen kentän. Esimerkiksi jos sinulla on kenttä tuotteen nimelle, voit lisätä sen arvona ja määrittää sen arvoksi **Määrä**, **Erillisten määrä**, **Ensimmäinen** tai **Viimeinen**. 
 
-1. Tässä esimerkissä olemme vetäneet **Tuote**-kentän Arvot-säilöön. Arvot-säilöä käytetään yleensä numeerisissa kentissä. Power BI tunnistaa, että kyseessä on tekstikenttä, asettaa koosteeksi **Älä tee yhteenvetoa** ja esittää yksisarakkeisen taulukon.
+1. Tässä esimerkissä olemme vetäneet **Tuote**-kentän Arvot-säilöön. Arvot-säilöä käytetään yleensä numeerisissa kentissä. Power BI tunnistaa, että tämä kenttä on tekstikenttä, asettaa koosteeksi **Älä tee yhteenvetoa** ja esittää yksisarakkeisen taulukon.
    
    ![Tuote-kenttä Arvot-säilössä](media/service-aggregates/power-bi-aggregate-value.png)
 2. Jos muutamme koostamisen **Älä tee yhteenvetoa** -oletusasetuksen asetukseksi **Määrä (erillinen)**, Power BI laskee eri tuotteiden määrän. Tässä tapauksessa niitä on neljä.
@@ -141,11 +141,11 @@ Vastaus 4:  Lopulta kolmantena mahdollisuutena on, että käytät kenttää akse
 >[!NOTE]
 >Poikkeus sääntöön ovat pistekaaviot, jotka *edellyttävät* koostettuja arvoja X- ja Y-akseleille.
 
-Kysymys:  Miksei SSAS-tietolähteille voi koostaa tekstikenttiä?
+Kysymys:  Miksi SQL Server Analysis Services (SSAS) -tietolähteille ei voi koostaa tekstikenttiä?
 
-Vastaus:  SSAS MD:n reaaliaikaiset yhteydet eivät salli asiakaspuolen koostamisia. Tähän sisältyvät ensimmäinen, viimeinen, keskiarvo, vähimmäisarvo, enimmäisarvo ja summa.
+Vastaus:  Jos muodostat yhteyksiä reaaliajassa SSAS-monidimensiomalleihin, et voi käyttää asiakaspuolen koosteita (kuten ensimmäinen, viimeinen, keskiarvo, pienin arvo, suurin arvo ja summa).
 
-Kysymys:  Minulla on pistekaavio, mutta haluan, että kenttääni *ei* koosteta.  Miten se onnistuu?
+Kysymys:  Minulla on pistekaavio, mutta haluan, että kenttääni *ei* koosteta.  Miten?
 
 Vastaus:  Lisää kenttä **Tiedot**-säilöön X- tai Y-akselien säilöjen sijaan.
 

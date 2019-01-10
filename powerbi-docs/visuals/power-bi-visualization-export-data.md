@@ -8,18 +8,18 @@ featuredvideoid: jtlLGRKBvXY
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 10/16/2018
+ms.date: 12/26/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: f6cb53eadb3c5ddf14b8f8b3b3882e0d7b509a3f
-ms.sourcegitcommit: e17fc3816d6ae403414cf5357afbf6a492822ab8
+ms.openlocfilehash: 8d79d92577da25a316eba8e789a1b7b004a9967a
+ms.sourcegitcommit: 5206651c12f2b91a368f509470b46f3f4c5641e6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/04/2018
-ms.locfileid: "52830098"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53983757"
 ---
 # <a name="export-data-from-visualizations"></a>Tietojen vieminen visualisoinneista
-Jos haluat tarkastella tietoja, joita käytetään visualisoinnin luonnissa, voit näyttää kyseiset tiedot Power BI:ssä tai viedä tiedot Exceliin .xlsx- tai .csv-tiedostona. Tietojen vienti edellyttää Pro- tai Premium-käyttöoikeutta ja tietojoukon ja raportin muokkausoikeuksia. 
+Jos haluat nähdä tiedot, joita käytetään visualisoinnin luomiseen, [voit näyttää nämä tiedot Power BI:ssä](service-reports-show-data.md) tai viedä nämä tiedot Exceliin .xlsx- tai .csv-tiedostona. Tietojen vienti edellyttää Pro- tai Premium-käyttöoikeutta ja tietojoukon ja raportin muokkausoikeuksia. 
 
 Katso videolta, miten tiedot viedään raportin visualisoinnista, tallennetaan .xlsx-tiedostoksi ja avataan Excelissä. Kokeile sitten itse noudattamalla videon alapuolella olevia vaiheittaisia ohjeita.
 
@@ -38,7 +38,7 @@ Katso videolta, miten tiedot viedään raportin visualisoinnista, tallennetaan .
     ![](media/power-bi-visualization-export-data/pbi-export-to-excel.png)
 
 ## <a name="from-a-visualization-in-a-report"></a>Raportin visualisoinnista
-Seuraa mukana avaamalla [Hankinta-analyysimallin raportti](../sample-procurement.md) [muokkausnäkymässä](../consumer/end-user-reading-view.md). Lisää uusi tyhjä raporttisivu. Lisää sitten kooste ja visualisoinnin tason suodatin noudattamalla alla olevia ohjeita.
+Seuraa mukana avaamalla [Hankinta-analyysimallin raportti](../sample-procurement.md) muokkausnäkymässä. Lisää uusi tyhjä raporttisivu. Lisää sitten kooste ja visualisoinnin tason suodatin noudattamalla alla olevia ohjeita.
 
 1. Luo uusi pylväskaavio.  Valitse Kentät-ruudussa **Sijainti > Kaupunki** ja **Lasku > Alennusprosentti**.  Voit joutua siirtämään **alennusprosentin** Arvo-kohtaan. 
 
@@ -55,7 +55,7 @@ Seuraa mukana avaamalla [Hankinta-analyysimallin raportti](../sample-procurement
 4. Valitse visualisoinnin oikean yläkulman kolme pistettä. Valitse **Vie tiedot**.
 
    ![](media/power-bi-visualization-export-data/power-bi-export-data2.png)
-5. Jos visualisoinnissa on Power BI:n verkkoversiossa kooste (esimerkiksi jos olet muuttanut **määrän** *keskiarvoksi*, *summaksi* tai *vähimmäisarvoksi*), sinulla on kaksi vaihtoehtoa: **Yhteenvedetyt tiedot** ja **Pohjana olevat tiedot**. Power BI Desktopissa on vain **Yhteenvedetyt tiedot** -vaihtoehto. Lue lisätietoja koosteista artikkelissa [Koosteet Power BI:ssä](../service-aggregates.md).
+5. Jos visualisoinnissa on Power BI Onlinessa kooste (olet esimerkiksi muuttanut **Määrä**-vaihtoehdoksi *keskiarvo*, *summa* tai *pienin arvo*), sinulla on kaksi vaihtoehtoa: **Yhteenvedetyt tiedot** ja **Pohjana olevat tiedot**. Power BI Desktopissa on vain **Yhteenvedetyt tiedot** -vaihtoehto. Lue lisätietoja koosteista artikkelissa [Koosteet Power BI:ssä](../service-aggregates.md).
     ![](media/power-bi-visualization-export-data/power-bi-export-data5.png)
 6. Valitse **Yhteenvedetyt tiedot** > **Vie** ja valitse .xlsx tai .csv. Power BI vie tiedot.  Jos olet käyttänyt suodattimia visualisoinnissa, viedyt tiedot viedään suodatettuina. Kun valitset **Vie**, selain pyytää sinua tallentamaan tiedoston. Kun tiedosto on tallennettu, avaa se Excelissä.
 
@@ -129,9 +129,6 @@ On tärkeää ottaa huomioon, että jos Power BI:n hallintaportaalin asetukset j
   2. Valitse **Tiedot**-välilehdellä **Nouda ulkoiset tiedot** > **tekstistä**.
 * Power BI -järjestelmänvalvojat voivat poistaa tietojen viennin käytöstä.
 
-## <a name="next-steps"></a>Seuraavat vaiheet
-[Koontinäytöt Power BI:ssä](../consumer/end-user-dashboards.md)  
-[Power BI:n peruskäsitteet](../consumer/end-user-basic-concepts.md)
 
-Onko sinulla muuta kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)
+Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)
 

@@ -1,6 +1,6 @@
 ---
-title: Power BI -raporttien suodattaminen ja jakaminen työtovereiden kanssa
-description: Opi jakamaan suodatettu Power BI -raportti työtovereidesi kanssa organisaatiossa.
+title: Suodatetun Power BI -raportin jakaminen työtovereiden kanssa
+description: Opi, miten voit suodattaa Power BI -raportin ja jakaa sen työtovereiden kanssa organisaatiossa.
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: lukaszp
@@ -8,25 +8,26 @@ featuredvideoid: 0tUwn8DHo3s
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 01/18/2018
+ms.date: 12/21/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 38a735a6cc258f3285787202b832ade9c6525994
-ms.sourcegitcommit: a739a99e1006834a0f56e387c0bd9d945fb8a76b
+ms.openlocfilehash: d5e05775d310af37b2c96c6e9e255de25fe5effe
+ms.sourcegitcommit: 5206651c12f2b91a368f509470b46f3f4c5641e6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51678968"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53983435"
 ---
 # <a name="share-a-filtered-power-bi-report-with-your-coworkers"></a>Suodatetun Power BI -raportin jakaminen työtovereiden kanssa
 *Jakaminen* on kätevä keino myöntää parille henkilölle käyttöoikeus luomiisi koontinäyttöihin ja raportteihin. Power BI tarjoaa myös [useita muita tapoja tehdä yhteistyötä ja jakaa raportteja](service-how-to-collaborate-distribute-dashboards-reports.md).
 
-Jakamisessa sinulla ja vastaanottajillasi on oltava myös [Power BI Pro -käyttöoikeudet](service-features-license-type.md) tai sisällön on oltava [Premium-kapasiteetissa](service-premium.md). Onko sinulla ehdotuksia? Power BI -tiimi on aina kiinnostunut palautteesta, joten siirry [Power BI -yhteisön sivustoon](https://community.powerbi.com/).
+Jakamisessa sinulla ja vastaanottajillasi on oltava myös [Power BI Pro -käyttöoikeudet](service-features-license-type.md) tai sisällön on oltava [Premium-kapasiteetissa](service-premium.md). 
 
-Voit jakaa raportin kanssasi samassa sähköpostin toimialueessa oleville työtovereille Power BI -palvelun useimmista paikoista: Suosikit, Viimeisimmät, Jaettu kanssani (jos omistaja sallii sen), Oma työtila tai muut työtilat. Kun jaat raportin, sen vastaanottajat voivat tarkastella ja käsitellä sitä, mutta eivät voi muokata sitä. He näkevät samat tiedot kuin sinä raportissa, ellei sovelleta [rivitason suojausta (RLS)](service-admin-rls.md). 
+Voit jakaa raportin kanssasi samassa sähköpostin toimialueessa oleville työtovereille Power BI -palvelun useimmista paikoista: Suosikit, Viimeisimmät, Jaettu kanssani (jos omistaja sallii sen), Oma työtila tai muut työtilat. Kun jaat raportin, työntekijät, joiden kanssa sen jaat, voivat tarkastella ja käsitellä sitä, mutta eivät voi muokata sitä. He näkevät samat tiedot kuin sinä raportissa, ellei sovelleta [rivitason suojausta (RLS)](service-admin-rls.md). 
+
+Mitä tapahtuu, jos haluat jakaa raportista suodatetun version? Haluat kenties jakaa raportin, joka näyttää vain tietyn kaupungin, myyjän tai vuoden tiedot. Yritä luoda mukautettu URL-osoite. Raportti suodatetaan, kun vastaanottajat avaavat sen ensimmäisen kerran. He voivat poistaa suodattimen muokkaamalla URL-osoitetta.
 
 ## <a name="filter-and-share-a-report"></a>Raportin suodattaminen ja jakaminen
-Mitä tapahtuu, jos haluat jakaa raportista suodatetun version? Haluat kenties jakaa raportin, joka näyttää vain tietyn kaupungin, myyjän tai vuoden tiedot. Voit tehdä tämän luomalla mukautetun URL-osoitteen.
 
 1. Avaa raportti [muokkausnäkymässä](consumer/end-user-reading-view.md), käytä suodatinta ja tallenna raportti.
    
@@ -37,7 +38,7 @@ Mitä tapahtuu, jos haluat jakaa raportista suodatetun version? Haluat kenties j
    
    ?filter=*tablename*/*fieldname* eq *arvo*
    
-    Kentän on oltava tyyppiä **merkkijono**, eikä *tablename*- tai *fieldname*-kohdissa saa olla välilyöntejä.
+    Kentän on oltava tyyppiä **merkkijono**. *Tablename*- tai *Fieldname*-arvot eivät voi sisältää välilyöntejä.
    
    Tässä esimerkissä taulukon nimi on **Kauppa**, kentän nimi on **Alue** ja suodatettava arvo on **NC**:
    
