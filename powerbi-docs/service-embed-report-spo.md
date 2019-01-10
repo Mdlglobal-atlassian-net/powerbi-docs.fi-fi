@@ -11,12 +11,12 @@ ms.component: powerbi-service
 ms.topic: conceptual
 LocalizationGroup: Share your work
 ms.date: 11/01/2018
-ms.openlocfilehash: fc0234536415c758992cec629452a3e629c46ad1
-ms.sourcegitcommit: d20f74d5300197a0930eeb7db586c6a90403aabc
+ms.openlocfilehash: 3ad4335cabac159aee38d54fbfff0f689009fd68
+ms.sourcegitcommit: b3af4f7ef486c95cea173caea5a31d0472816ddd
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "50973323"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54136595"
 ---
 # <a name="embed-with-report-web-part-in-sharepoint-online"></a>Upota raportin verkko-osa SharePoint Onlinessa
 
@@ -75,7 +75,7 @@ Voit upottaa raporttisi SharePoint Onlineen hankkimalla ensin raportin URL-osoit
 
     ![SP: raportti ladattu](media/service-embed-report-spo/powerbi-sharepoint-report-loaded.png)
 
-## <a name="granting-access-to-reports"></a>Raporttien käyttöoikeuksien myöntäminen
+## <a name="grant-access-to-reports"></a>Raporttien käyttöoikeuksien myöntäminen
 
 Kun raportti upotetaan SharePoint Onlineen, käyttäjät eivät saa automaattisesti raportin katseluoikeutta. Raportin katseluoikeudet määritetään Power BI -palvelussa.
 
@@ -90,7 +90,7 @@ Vaihtoehtoisesti voit jakaa raportin suoraan käyttäjien kanssa upottamalla rap
 
 2. Laatija luo raportin sovelluksen työtilassa. Jotta sovelluksen työtila *voidaan jakaa **Power BI:n maksuttomien käyttäjien kanssa**, sovelluksen työtila on määritettävä **Premium-työtilaksi**.*
 
-3. Laatija julkaisee sovelluksen ja sitten asentaa sen. *Laatijan on varmistettava, että sovellus on asennettu, jotta hänellä on käyttöoikeus raportin URL-osoitteeseen, jota käytetään upottamiseen SharePoint Onlineen.*
+3. Laatija julkaisee sovelluksen ja sitten asentaa sen. *Tekijän on varmistettava, että sovellus on asennettu, jotta hänellä on käyttöoikeus raportin URL-osoitteeseen, jota käytetään SharePoint Onlineen upottamisessa.*
 
 4. Kaikkien loppukäyttäjien on myös nyt asennettava sovellus. Voit kuitenkin määrittää, että loppukäyttäjät voivat esiasentaa sovelluksen **Asenna sovellus automaattisesti** -ominaisuuden avulla, joka voidaan ottaa käyttöön [Power BI -hallintaportaalissa](service-admin-portal.md).
 
@@ -152,7 +152,7 @@ Raporttia SharePointissa tarkastelevat käyttäjät tarvitsevat **Power BI Pro -
 
 ## <a name="known-issues-and-limitations"></a>Tunnetut ongelmat ja rajoitukset
 
-* Virhe: ”Ilmeni virhe, kirjaudu ulos ja uudelleen sisään ja yritä avata tämä sivu uudelleen. Korrelaatiotunnus: määrittämätön, HTTP-vastauksen tila: 400, palvelimen virhekoodi 10001, viesti: päivitystunnus puuttuu”
+* Virhe: ”Ilmeni virhe, kirjaudu ulos ja uudelleen sisään ja yritä avata tämä sivu uudelleen. Korrelaatiotunnus: määrittämätön, http-vastauksen tila: 400, palvelimen virhekoodi 10001, viesti: Päivitystunnus puuttuu”
   
   Jos saat tämän virheviestin, kokeile alla olevia vianmääritysohjeita.
   
@@ -174,9 +174,10 @@ Raporttia SharePointissa tarkastelevat käyttäjät tarvitsevat **Power BI Pro -
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
-[Modernin sivuston sivujen luomisen salliminen tai estäminen käyttäjille](https://support.office.com/article/Allow-or-prevent-creation-of-modern-site-pages-by-end-users-c41d9cc8-c5c0-46b4-8b87-ea66abc6e63b)  
-[Sovelluksen luominen ja jakaminen Power BI:ssä](service-create-distribute-apps.md)  
-[Koontinäytön jakaminen työtovereille ja muille](service-share-dashboards.md)  
-[Mikä on Power BI Premium?](service-premium.md)  
+* [Modernin sivuston sivujen luomisen salliminen tai estäminen käyttäjille](https://support.office.com/article/Allow-or-prevent-creation-of-modern-site-pages-by-end-users-c41d9cc8-c5c0-46b4-8b87-ea66abc6e63b)  
+* [Sovelluksen luominen ja jakaminen Power BI:ssä](service-create-distribute-apps.md)  
+* [Koontinäytön jakaminen työtovereille ja muille](service-share-dashboards.md)  
+* [Mikä on Power BI Premium?](service-premium.md)
+* [Raportin upottaminen turvalliseen portaaliin tai sivustoon](service-embed-secure.md)
 
 Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)
