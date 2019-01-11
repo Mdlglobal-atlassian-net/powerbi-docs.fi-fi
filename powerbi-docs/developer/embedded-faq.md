@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: conceptual
 ms.date: 12/20/2018
-ms.openlocfilehash: 3971651caf9be7e754f4232ffec8b4e4dbfdfe6d
-ms.sourcegitcommit: 750f0bfab02af24c8c72e6e9bbdd876e4a7399de
+ms.openlocfilehash: 106d971a06777f7d22d1fb3cd2ba3995b95a21d9
+ms.sourcegitcommit: b3af4f7ef486c95cea173caea5a31d0472816ddd
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/04/2019
-ms.locfileid: "54008415"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54136641"
 ---
 # <a name="frequently-asked-questions-about-power-bi-embedded"></a>Usein kysyttyjä kysymyksiä – Power BI Embedded
 
@@ -204,6 +204,10 @@ Asiakaspuolen suodatuksella (JavaScript) ISV voi päättää, mitä käyttäjä 
 
 Lisätietoja on artikkelissa [Rivitason suojaus JavaScript-suodattimiin verrattuna](embedded-row-level-security.md#using-rls-vs-javascript-filters).
 
+### <a name="what-are-the-best-practices-to-improve-performance"></a>Mitkä ovat parhaita käytäntöjä suorituskyvyn parantamiseksi?
+
+[Power BI Embeddedin suorituskyky](embedded-performance-best-practices.md)
+
 ## <a name="licensing"></a>Käyttöoikeudet
 
 ### <a name="how-do-i-purchase-power-bi-embedded"></a>Miten voin ostaa Power BI Embeddedin?
@@ -264,8 +268,8 @@ Voittoa tavoittelemattomat järjestöt ja oppilaitokset voivat ostaa Azuren. Nä
 
 3. Kun olet valmis tuotantoon, osta **Power BI Embeddedille** varattua kapasiteettia ja määritä Power BI sisältö (työtila) kyseiselle kapasiteetille.
 
-> [!Note]
-> Voit jatkaa **Power BI t-työtilakokoelman** käyttöä sillä aikaa kun rinnakkaista työtilaa luodaan **Power BI Embedded** -ratkaisulla. Kun olet valmis, voit siirtää asiakkaasi uuteen **Power BI Embeddediin** ja poistaa **Power BI Workspace Collection** käytöstä.
+    > [!Note]
+    > Voit jatkaa **Power BI t-työtilakokoelman** käyttöä sillä aikaa kun rinnakkaista työtilaa luodaan **Power BI Embedded** -ratkaisulla. Kun olet valmis, voit siirtää asiakkaasi uuteen **Power BI Embeddediin** ja poistaa **Power BI Workspace Collection** käytöstä.
 
 Katso lisätietoja artikkelista [Miten Power BI -työtilakokoelman sisältö siirretään Power Embeddediin](https://docs.microsoft.com/power-bi/developer/migrate-from-powerbi-embedded)
 
@@ -318,10 +322,6 @@ Voit oppia muokkaamaan AAD-rekisteröityjä sovelluksia [täällä](https://docs
 
 Voit oppia muokkaamaan Power BI -tietoja [täällä](https://docs.microsoft.com/power-bi/service-basic-concepts).
 
-Jos haluat lisätietoja, katso [upotettujen sovellusten vianmääritys](embedded-troubleshoot.md)
+Jos haluat lisätietoja, katso [upotetun sovelluksen vianmääritys](embedded-troubleshoot.md).
 
 Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
-
-### <a name="what-are-the-best-practices-to-improve-performance"></a>Mitkä ovat parhaita käytäntöjä suorituskyvyn parantamiseksi?
-
-[Power BI Embeddedin suorituskyky](embedded-performance-best-practices.md)

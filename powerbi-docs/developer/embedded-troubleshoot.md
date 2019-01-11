@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: conceptual
 ms.date: 12/20/2018
-ms.openlocfilehash: 5ee6758093969a2db1d932a88f21c965380bab5c
-ms.sourcegitcommit: 750f0bfab02af24c8c72e6e9bbdd876e4a7399de
+ms.openlocfilehash: db782cea1d47dc31abf2908b82a756404fda513d
+ms.sourcegitcommit: b3af4f7ef486c95cea173caea5a31d0472816ddd
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/04/2019
-ms.locfileid: "54008438"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54136526"
 ---
 # <a name="troubleshoot-your-embedded-application"></a>Upotetun sovelluksen vianmääritys
 
@@ -219,6 +219,10 @@ IError-objektin hankkimisen jälkeen sinun on tarkasteltava asianmukaista yleist
 
 ## <a name="content-rendering"></a>Sisällön hahmontaminen
 
+### <a name="performance"></a>Suorituskyky
+
+[Power BI Embeddedin suorituskyky](embedded-performance-best-practices.md)
+
 ### <a name="rendering-or-consumption-of-embedded-content-fails-or-times-out"></a>Upotetun sisällön hahmontaminen tai kuluttaminen epäonnistuu tai aikakatkaistaan
 
 Varmista, että upotettu tunnus ei ole vanhentunut. Tarkista upotetun tunnuksen voimassaoloaika ja päivitä se. Jos tarvitset lisätietoja, katso [päivitä tunnus JavaScript SDK:n avulla](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Refresh-token-using-JavaScript-SDK-example).
@@ -292,6 +296,8 @@ Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powe
 
 Jos tarvitset lisäapua, [ota yhteyttä tukeen](https://powerbi.microsoft.com/en-us/support/pro/?Type=documentation&q=power+bi+embedded) tai [luo tukipalvelupyyntö Azure-portaalin kautta](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest) ja anna saamasi virhesanomat.
 
-## <a name="performance"></a>Suorituskyky
+## <a name="next-steps"></a>Seuraavat vaiheet
 
-[Power BI Embeddedin suorituskyky](embedded-performance-best-practices.md)
+Katso lisätietoja [usein kysytyistä kysymyksistä](embedded-faq.md).
+
+Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)

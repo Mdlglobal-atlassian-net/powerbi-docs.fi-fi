@@ -1,5 +1,5 @@
 ---
-title: Organisaation mukautettujen visualisointien käyttäminen Power BI:ssä
+title: Organisaation mukautetut visualisoinnit Power BI:ssä
 description: Käytä, hallinnoi ja luo organisaation mukautettuja visualisointeja Power BI:ssä
 author: markingmyname
 ms.author: maghan
@@ -8,18 +8,18 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 10/29/2018
+ms.date: 12/11/2018
 LocalizationGroup: Visualizations
-ms.openlocfilehash: e34491ebc1cc7554e8c8c000da7528754b5a673b
-ms.sourcegitcommit: 02f918a4f27625b6f4e47473193ebc8219db40e2
+ms.openlocfilehash: 6622625f27f62d9d8ffc35ecfddf4550f2a7e16e
+ms.sourcegitcommit: c09241803664643e1b2ba0c150e525e1262ca466
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51223095"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54072148"
 ---
-# <a name="use-organizational-custom-visuals-in-power-bi"></a>Organisaation mukautettujen visualisointien käyttäminen Power BI:ssä
+# <a name="organizational-custom-visuals-in-power-bi"></a>Organisaation mukautetut visualisoinnit Power BI:ssä
 
-Power BI:n mukautettujen visualisointien avulla voit luoda yksilöllisen visualisointityypin, joka on räätälöity sinulle tai merkityksellisille tiedoille, joita yrität välittää. Usein näitä mukautettuja visualisointeja luovat kehittäjät, ja niitä luodaan, kun Power BI:hin sisältyvä laaja visualisointivalikoima ei täysin vastaa heidän tarpeitaan. 
+Power BI:n mukautettujen visualisointien avulla voit luoda yksilöllisen visualisointityypin, joka on räätälöity juuri sinulle. Mukautetut visualisoinnit ovat kehittäjien työn tulosta, ja usein niitä luodaan silloin, kun Power BI:hin sisältyvä laaja visualisointivalikoima ei täysin vastaa kehittäjän tarpeita.
 
 Joissakin organisaatioissa mukautetut visualisoinnit ovat vielä tärkeämpiä – niitä saatetaan tarvita organisaation tiettyjen tietojen tai merkityksellisten tietojen välittämiseen, niillä voi olla erityisiä tietovaatimuksia tai ne saattavat korostaa yksityisiä liiketoimintamalleja. Tällaisten organisaatioiden on kehitettävä mukautettuja visualisointeja, jaettava niitä koko organisaatioon ja varmistettava, että niitä ylläpidetään oikein. Power BI:n mukautettujen visualisointien avulla se onnistuu helposti.
 
@@ -46,13 +46,13 @@ Järjestelmänvalvoja:
 
 * Vanhoja mukautettuja visualisointeja (esimerkiksi mukautettuja visualisointeja, joita ei ole luotu uusilla ohjelmointirajapintojen versioilla) ei tueta.
 
-* Jos mukautettu visualisointi poistetaan säilöstä, poistettua visualisointia käyttäviä aiemmin luotuja raportteja ei enää hahmonneta. Säilöstä poistamista ei voi peruuttaa. Voit poistaa mukautetun visualisoinnin tilapäisesti käytöstä Poista käytöstä -ominaisuuden avulla.
+* Jos mukautettu visualisointi poistetaan säilöstä, poistettua visualisointia käyttäviä aiemmin luotuja raportteja ei enää hahmonneta. Säilöstä poistamista ei voi kumota. Voit poistaa mukautetun visualisoinnin tilapäisesti käytöstä Poista käytöstä -ominaisuuden avulla.
 
 Käyttäjä:
 
 * Organisaation mukautetut visualisoinnit ovat yksityisiä visualisointeja, jotka on tuotu organisaation säilöstä. Yksityisiä visualisointeja ei voi [viedä PowerPointiin](https://docs.microsoft.com/power-bi/consumer/end-user-powerpoint) tai näyttää sähköpostiviesteissä, joita käyttäjä vastaanottaa [tilatessaan raporttisivuja](https://docs.microsoft.com/power-bi/consumer/end-user-subscribe). Vain suoraan Marketplacesta tuodut [sertifioidut mukautetut visualisoinnit](https://docs.microsoft.com/power-bi/power-bi-custom-visuals-certified) tukevat näitä ominaisuuksia.
 
-* AppSource Marketplacesta tuodut Visio-visualisoinnit, PowerApps-visualisoinnit, Map Box -visualisoinnit tai GlobeMap-visualisoinnit eivät hahmonnu, jos niitä otetaan käyttöön organisaation säilöstä.
+* AppSource Marketplacen Visio-visualisointia, PowerApps-visualisointia, Map Box -visualisointia ja GlobeMap-visualisointia ei hahmonneta, jos ne on otettu käyttöön organisaation säilön kautta.
 
 ## <a name="troubleshoot"></a>Vianmääritys
 

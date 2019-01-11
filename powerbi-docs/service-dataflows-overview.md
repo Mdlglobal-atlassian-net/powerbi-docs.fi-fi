@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 12/06/2018
+ms.date: 01/03/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 92af01b7020f734f286d927650e58a5fea5d8047
-ms.sourcegitcommit: f25464d5cae46691130eb7b02c33f42404011357
+ms.openlocfilehash: d9cd9c812aa2fdd1d336dbd63ea280516a96e4d9
+ms.sourcegitcommit: c09241803664643e1b2ba0c150e525e1262ca466
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53180825"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54072217"
 ---
 # <a name="self-service-data-prep-in-power-bi-preview"></a>Omatoiminen tietojen valmistelu Power BI:ssä (esikatselu)
 
@@ -92,7 +92,7 @@ Seuraavassa taulukossa kuvataan tietovuon ominaisuudet ja niiden kapasiteetit, k
 |Tietovuon linkitetyt entiteetit| |        +|
 |Standardoitu rakenne / Common Data Modelin sisäinen tuki|  +|  +|
 
-
+Lisätietoja tietovuokuormitusten käyttöönotosta Premium-kapasiteetissa saat Power BI Premiumia koskevasta [Kuormitusten määrittäminen](service-admin-premium-manage.md#configure-workloads) -osiosta.
 
 ## <a name="summary-of-self-service-data-prep-for-big-data-in-power-bi"></a>Yhteenveto massadatan omatoimisesta tietojen valmistelusta Power BI:ssä
 Kuten aiemmin tässä artikkelissa mainittiin, on olemassa useita skenaarioita ja esimerkkejä, joissa voit **tietovoiden** avulla hallita yritystietojasi entistä paremmin ja saada merkityksellisiä tietoja nopeammin. Käyttämällä Common Data Modelin määrittämää vakiotietomallia (rakennetta) tietovuot voivat tuoda arvokkaita yritystietoja ja valmistella tiedot mallinnusta ja merkityksellisten BI-tietojen luomista varten erittäin lyhyessä ajassa, mihin aiemmin kului kuukausia tai pidempään. 

@@ -8,19 +8,18 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.subservice: powerbi-custom-visuals
-ms.date: 11/06/2018
+ms.date: 12/18/2018
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 4d38cf108a4c2e863811cfee68fc2d0b95c1990e
-ms.sourcegitcommit: 88ae40a25ea54ef7153885dd04ef57d12522d4e1
+ms.openlocfilehash: 0d634d7fc7753f7aaaf7d7118cfad1ab90b6e82a
+ms.sourcegitcommit: c09241803664643e1b2ba0c150e525e1262ca466
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/04/2019
-ms.locfileid: "54056037"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54072240"
 ---
 # <a name="custom-visuals-in-power-bi"></a>Mukautetut visualisoinnit Power BI:ssä
 
-Kun luot tai muokkaat Power BI -raporttia, käytettävissäsi on monia eri visualisointityyppejä. Nämä visualisoinnit näkyvät **Visualisoinnit**-ruudussa. Kun lataat Power BI Desktopin tai avaa Power BI -palvelun (app.powerbi.com), visualisointijoukko tulee valmiina pakettina.
+Kun luot tai muokkaat Power BI -raporttia, käytettävissäsi on monia eri visualisointityyppejä. Nämä visualisoinnit näkyvät **Visualisoinnit**-ruudussa. Kun lataat [Power BI Desktopin](https://powerbi.microsoft.com/en-us/desktop/) tai avaat [Power BI -palvelun](https://app.powerbi.com), tämä visualisointijoukko tulee valmiina pakettina.
 
 ![visualisoinnit](media/power-bi-custom-visuals/power-bi-visualizations.png)
 
@@ -41,7 +40,7 @@ Mukautetut visualisoinnit ovat paketteja, jotka sisältävät koodin niille tarj
 > [!WARNING]
 > Mukautettu visualisointi voi sisältää koodia, johon liittyy tietoturva- tai tietosuojariskejä. Varmista, että luotat mukautetun visualisoinnin tekijään ja lähteeseen, ennen kuin tuot sen raporttiisi.
 
-## <a name="organization-visuals"></a>Organisaation visualisoinnit
+## <a name="organizational-visuals"></a>Organisaation visualisoinnit
 
 Power BI -järjestelmänvalvojat voivat ottaa mukautettuja visualisointeja käyttöön organisaatiossaan, jotta raporttien tekijät voivat helposti löytää ja käyttää mukautettuja visualisointeja, jotka järjestelmänvalvoja on hyväksynyt käytettäväksi organisaation sisällä. Näin järjestelmänvalvoja voi valita tietyt mukautetut visualisoinnit, joita organisaatiossa voidaan käyttää. Myös visualisointien hallinta (version päivitys, käytöstäpoisto/käyttöönotto jne.) on näin helpompaa. Raportin tekijän on helppo löytää visualisointeja, jotka ovat yksilöllisiä organisaatiolle, ja visualisointien päivittämiseen tarjotaan saumaton tuki.
 
@@ -74,7 +73,7 @@ Oletko Web-kehittäjä ja kiinnostunut omien visualisointien luomisesta ja niide
 
     ![mukautettu visualisointi tuotu](media/power-bi-custom-visuals/power-bi-custom-visual-imported.png)
 
-### <a name="import-organization-visuals"></a>Organisaation visualisointien tuominen
+### <a name="import-organizational-visuals"></a>Organisaation visualisointien tuominen
 
 1. Valitse kolme pistettä Visualisoinnit-ruudun alareunasta.
 
@@ -132,7 +131,7 @@ Sinulla on kaksi vaihtoehtoa mukautettujen visualisointien lataamiseen ja tuomis
 
 ### <a name="download-and-import-custom-visuals-from-microsoft-appsource"></a>Mukautettujen visualisointien lataaminen tai tuominen Microsoft AppSourcesta
 
-1. Aloita [Microsoft AppSourcesta](https://appsource.microsoft.com) ja valitse **Sovellukset**-välilehti. 
+1. Aloita [Microsoft AppSourcesta](https://appsource.microsoft.com) ja valitse **Sovellukset**-välilehti.
 
     ![AppSource](media/power-bi-custom-visuals/power-bi-appsource-apps.png)
 
@@ -175,5 +174,9 @@ Lisätietoja vianmäärityksestä on kohdassa [Power BI:n mukautettujen visualis
 ## <a name="faq"></a>Usein kysytyt kysymykset
 
 Saat lisätietoja ja vastauksia kysymyksiisi [Power BI:n mukautettujen visualisointien usein kysytyistä kysymyksistä](power-bi-custom-visuals-faq.md#organizational-custom-visuals).
+
+## <a name="next-steps"></a>Seuraavat vaiheet
+
+* [Visualisoinnit Power BI:ssä](visuals/power-bi-report-visualizations.md)
 
 Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/).

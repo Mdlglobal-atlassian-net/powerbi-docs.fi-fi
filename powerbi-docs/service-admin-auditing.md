@@ -11,30 +11,32 @@ ms.date: 11/16/2018
 ms.author: mblythe
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: cb508681950cd5bb585da1208683deb31c8b6e64
-ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
+ms.openlocfilehash: d9cf6255cfa57790c13ee1fc9d3201860552863b
+ms.sourcegitcommit: c09241803664643e1b2ba0c150e525e1262ca466
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53026818"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54072355"
 ---
 # <a name="using-auditing-within-your-organization"></a>Valvonnan käyttö organisaatiossa
 
 Sen tietäminen, kuka tekee mitä toimia missäkin Power BI -vuokraajasi kohteissa, voi olla ratkaisevaa, kun autetaan organisaatiotasi toteuttamaan sille asetetut vaatimukset, kuten säädösten noudattaminen ja tietueiden hallinta. Voit Power BI -valvonnan avulla valvoa käyttäjien suorittamia toimia, kuten ”Näytä raportti” ja ”Näytä koontinäyttö”. Valvonnan avulla ei voi valvoa käyttöoikeuksia.
 
-Voit käyttää valvonnassa Office 365:n tietoturva-ja yhteensopivuuskeskusta tai PowerShelliä. Käsittelemme niitä kumpaakin tässä artikkelissa. Voit suodattaa valvontatiedot päivämääräalueen, käyttäjän, koontinäytön, raportin, tietojoukon ja toimintatyypin mukaan. Voit myös ladata toimet CSV-tiedostoon (tiedosto, jonka arvot on erotettu luetteloerottimella) offline-tilassa analysointia varten.
+Voit käyttää valvonnassa Office 365:n tietoturva-ja yhteensopivuuskeskusta tai PowerShelliä. Valvonta käyttää Exchange Onlinen toimintoja, jotka valmistellaan automaattisesti tukemaan Power BI:tä.
+
+Voit suodattaa valvontatiedot päivämääräalueen, käyttäjän, koontinäytön, raportin, tietojoukon ja toimintatyypin mukaan. Voit myös ladata toimet CSV-tiedostoon (tiedosto, jonka arvot on erotettu luetteloerottimella) offline-tilassa analysointia varten.
 
 ## <a name="requirements"></a>Vaatimukset
 
 Seuraavat vaatimukset on täytettävä valvontalokien käyttämistä varten:
 
-- Jotta voisit käyttää Office 365:n tietoturva- ja yhteensopivuuskeskuksen valvontaosaa, sinulla on oltava Exchange Online -lisenssi (sisältyy Office 365 Enterprise E3- ja E5 -tilauksiin).
+* Sinun on oltava yleinen järjestelmänvalvoja tai sinulla on oltava Exchange Onlinessa rooli, joka sallii valvontalokien käytön tai tarkastelun, jotta pääset näkemään valvontalokin. Oletusarvoisesti kyseiset roolit määritetään Yhteensopivuuden hallinta- ja Organisaation hallinta -rooliryhmille Exchangen hallintakeskuksen **Käyttöoikeudet**-sivulla.
 
-- Sinun on joko oltava yleinen järjestelmänvalvoja tai sinulla on oltava Exchange-järjestelmänvalvojarooli, joka mahdollistaa valvontalokin käytön. Exchange-järjestelmänvalvojarooleja hallitaan Exchangen hallintakeskuksen kautta. Lisätietoja on kohdassa [Exchange Onlinen käyttöoikeudet](/exchange/permissions-exo/permissions-exo/).
+    Jos haluat antaa valvontalokin käyttöoikeuden muulle kuin järjestelmänvalvojatilille, sinun on lisättävä kyseinen käyttäjä jompaankumpaan edellä mainituista rooliryhmistä. Vaihtoehtoisesti voit luoda Exchangen hallintakeskuksessa mukautetun rooliryhmän, jolle määrität valvontalokien käytön tai tarkastelun sallivan roolin ja johon sitten lisäät kyseisen tilin. Lisätietoja saat [Manage role groups in Exchange Online](/Exchange/permissions-exo/role-groups) (Rooliryhmien hallinta Exchange Onlinessa) -ohjeartikkelista.
 
-- Jos pääset valvontalokiin, mutta et ole yleinen järjestelmänvalvoja tai Power BI -palvelun järjestelmänvalvoja, et voi käyttää Power BI -hallintaportaalia. Tässä tapauksessa sinun on saatava suora linkki [Office 365:n tietoturva- ja yhteensopivuuskeskukseen](https://sip.protection.office.com/#/unifiedauditlog).
+    Jos et pääse Exchangen hallintakeskukseen Office 365 -hallintakeskuksesta, siirry osoitteeseen https://outlook.office365.com/ecp ja kirjaudu sisään tunnistetiedoillasi.
 
-- Tarkastellaksesi vuokraajasi Power BI -valvontalokeja sinulla on oltava vähintään yksi vuokraajan Exchange-postilaatikko.
+* Jos pääset valvontalokiin, mutta et ole yleinen järjestelmänvalvoja tai Power BI -palvelun järjestelmänvalvoja, et voi käyttää Power BI -hallintaportaalia. Tässä tapauksessa sinun on käytettävä suoraa linkkiä [Office 365:n tietoturva- ja yhteensopivuuskeskukseen](https://sip.protection.office.com/#/unifiedauditlog).
 
 ## <a name="accessing-your-audit-logs"></a>Valvontalokien käyttö
 
@@ -51,8 +53,6 @@ Power BI:n valvontalokit ovat saatavilla suoraan [Office 365:n tietoturva- ja yh
 1. Valitse **Siirry O365-hallintakeskukseen**.
 
    ![Siirry O365-hallintakeskukseen](media/service-admin-auditing/audit-log-o365-admin-center.png)
-
-Voi sallia muille kuin järjestelmänvalvojatileille valvontalokin käytön myöntämällä oikeuksia Exchange Online -hallintakeskuksessa. Voit esimerkiksi määrittää käyttäjän olemassa olevaan rooliryhmään, kuten organisaation hallinta, tai luoda uuden rooliryhmän roolilla valvontalokit. Lisätietoja on artikkelissa [Exchange Onlinen käyttöoikeudet](/exchange/permissions-exo/permissions-exo/).
 
 ## <a name="search-only-power-bi-activities"></a>Vain Power BI -toimien haku
 
@@ -119,9 +119,7 @@ Voit viedä Power BI -valvontalokin CSV-tiedostoon seuraavasti.
 
 ## <a name="use-powershell-to-search-audit-logs"></a>Valvontalokien hakeminen PowerShellin avulla
 
-Voit myös käyttää valvontalokeja PowerShellin avulla sisäänkirjautumisesi perusteella. Seuraavassa esimerkissä näytetään, miten voit käyttää [Search-UnifiedAuditLog](/powershell/module/exchange/policy-and-compliance-audit/search-unifiedauditlog?view=exchange-ps/)-komentoa Power BI -valvontalokisyötteiden hakemiseksi.
-
-Jotta voit käyttää [New-PSSession](/powershell/module/microsoft.powershell.core/new-pssession/)-komentoa, tilillesi on oltava määritetty Exchange Online -käyttöoikeus ja sinun on voitava käyttää vuokraajasi valvontalokia. Lisätietoja Exchange Onlineen yhdistämisestä on kohdassa [Yhdistäminen kohteeseen Exchange Online PowerShell](/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell/).
+Voit myös käyttää valvontalokeja PowerShellin avulla sisäänkirjautumisesi perusteella. Seuraavassa esimerkissä näytetään, miten voit muodostaa yhteyden Exchange Online PowerShelliin ja hakea sitten Power BI -valvontalokisyötteet [Search-UnifiedAuditLog](/powershell/module/exchange/policy-and-compliance-audit/search-unifiedauditlog?view=exchange-ps/)-komennolla. Jotta voit suorittaa komentosarjan, sinulla on oltava [Vaatimukset](#requirements)-osiossa kuvatut oikeudet.
 
 ```powershell
 Set-ExecutionPolicy RemoteSigned
@@ -134,7 +132,7 @@ Import-PSSession $Session
 Search-UnifiedAuditLog -StartDate 9/11/2018 -EndDate 9/15/2018 -RecordType PowerBI -ResultSize 1000 | Format-Table | More
 ```
 
-Katso toinen esimerkki PowerShellin käyttämisestä valvontalokien avulla artikkelista [Power BI -valvontalokin ja PowerShellin käyttäminen Power BI Pro -käyttöoikeuksien määrittämiseksi](https://powerbi.microsoft.com/blog/using-power-bi-audit-log-and-powershell-to-assign-power-bi-pro-licenses/).
+Lisätietoja Exchange Onlineen yhdistämisestä on kohdassa [Yhdistäminen kohteeseen Exchange Online PowerShell](/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell/). Katso toinen esimerkki PowerShellin käyttämisestä valvontalokien avulla artikkelista [Power BI -valvontalokin ja PowerShellin käyttäminen Power BI Pro -käyttöoikeuksien määrittämiseksi](https://powerbi.microsoft.com/blog/using-power-bi-audit-log-and-powershell-to-assign-power-bi-pro-licenses/).
 
 ## <a name="activities-audited-by-power-bi"></a>Power BI:n valvomat toimet
 
