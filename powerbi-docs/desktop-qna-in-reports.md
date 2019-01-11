@@ -25,7 +25,7 @@ Jotta Q&A pystyy tulkitsemaan onnistuneesti laajaa kysymysvalikoimaa, johon se p
 > [!NOTE]
 > Q&A on käytettävissä vain käsiteltäessä mallia, joka sisältää **tuotuja** tietoja. Reaaliaikaisia yhteyksiä SSAS- ja DirectQuery-malleihin ei tueta.
 >
-> Q&A: käyttö edellyttää seuraavan C runtime -päivityksen, jos käytät Windows 10:ä edeltävää Windows-versiota. Voit yrittää asentaa tärkeät päivitykset Windows Updatesta tai asentaa tarvittavan komponentin manuaalisesti Microsoftilta (KB2999226). https://support.microsoft.com/en-us/help/2999226/update-for-universal-c-runtime-in-windows
+> Q&A: käyttö edellyttää seuraavan C runtime -päivityksen, jos käytät Windows 10:ä edeltävää Windows-versiota. Voit yrittää asentaa tärkeät päivitykset Windows Updatesta tai asentaa tarvittavan komponentin manuaalisesti Microsoftilta (KB2999226). [https://support.microsoft.com/en-us/help/2999226/update-for-universal-c-runtime-in-windows](https://support.microsoft.com/en-us/help/2999226/update-for-universal-c-runtime-in-windows)
 >
 >
 
