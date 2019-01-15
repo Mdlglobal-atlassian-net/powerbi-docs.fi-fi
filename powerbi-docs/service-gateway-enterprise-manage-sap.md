@@ -5,17 +5,17 @@ author: mgblythe
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-gateways
+ms.subservice: powerbi-gateways
 ms.topic: conceptual
 ms.date: 01/24/2018
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: f9407f7267b0d33ab2d1a1d36856b96a815d8e1e
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: e4fabd59396872be9ffa77d8957b06ffcf7eb45f
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34296430"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54276625"
 ---
 # <a name="manage-your-sap-hana-data-source"></a>SAP HANA -tietolähteen hallinta
 Kun paikallinen tietoyhdyskäytävä on asennettu, sinun on lisättävä tietolähteitä, joita voidaan käyttää kyseisen yhdyskäytävän kanssa. Tässä artikkelissa tarkastellaan yhdyskäytävien ja tietolähteiden käsittelyä. Voit käyttää SAP HANA -tietolähdettä joko ajoitettua päivitystä tai DirectQuerya varten.

@@ -5,17 +5,17 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: ddf0ab52aae38a28f30de94904c6d966d0fd24a8
-ms.sourcegitcommit: 2ae660a7b70fce23eb58b159d049eca44a664f2c
+ms.openlocfilehash: dffcf8fb3daa7559abd4d3b999ea3a73392d0eb9
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "52669792"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54283112"
 ---
 # <a name="use-drillthrough-in-power-bi-desktop"></a>Porautumisen käyttäminen Power BI Desktopissa
 **Power BI Desktopin** **porautumisen** avulla voit luoda raporttisivun, jolla keskitytään tiettyyn entiteettiin, kuten toimittajaan, asiakkaaseen tai valmistajaan. Käyttäjä voi napsauttaa hiiren kakkospainikkeella arvopistettä raportin muilla sivuilla. Sen jälkeen hän voi porautua kohdistetulle sivulle saadakseen kyseisen kontekstin mukaisesti suodatettuja lisätietoja.

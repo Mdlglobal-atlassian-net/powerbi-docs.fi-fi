@@ -5,16 +5,16 @@ author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 11/20/2018
 ms.author: maggies
-ms.openlocfilehash: f97393a8a7fe8dc9c413a0cb0cda8be0e965da5b
-ms.sourcegitcommit: 6c6aa214dc36c26a01b29e823598d217a3e2b8a1
+ms.openlocfilehash: c5c69bab7fb0a47e5e546dfe1b3143a13428d4bc
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/17/2018
-ms.locfileid: "53451348"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54285227"
 ---
 # <a name="overview-of-the-power-bi-service-content-pack-program"></a>Power BI -palvelun sisältöpakettiohjelman yleiskatsaus
 Sisältöpaketti on joukko valmista sisältöä, jonka avulla käyttäjät saavat välittömästi merkityksellistä tietoa lähteestä. Sisältöpaketti keskittyy yleensä tiettyyn liiketoimintaskenaarioon ja tarjoaa rooli-, toimialue- tai työnkulkukohtaista merkityksellistä tietoa.

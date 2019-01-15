@@ -5,17 +5,17 @@ author: mgblythe
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-admin
+ms.subservice: powerbi-admin
 ms.topic: overview
 ms.date: 06/25/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: c33d75fa09a4e94e4db6a2b968cd3a3170afd397
-ms.sourcegitcommit: f5e39e9ead37445bbeab795890b3d80633383032
+ms.openlocfilehash: 86a90396c82a597e8b4f535b71e029bfa21328a4
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53735542"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54280898"
 ---
 # <a name="powershell-cmdlets-rest-apis-and-net-sdk-for-power-bi-administration"></a>PowerShellin cmdlet-komennot, REST-ohjelmointirajapinnat ja .NET SDK Power BI:n hallintaa varten
 Power BI:ssä järjestelmänvalvojat voivat luoda yleisiä tehtäviä koskevia komentosarjoja PowerShellin cmdlet-komentojen avulla. Se sisältää myös REST-ohjelmointirajapinnat ja .NET SDK:n hallinnollisten ratkaisujen kehittämiseen. Tässä ohjeaiheessa näytetään cmdlet-komentojen luettelo sekä vastaava SDK-menetelmä ja REST-ohjelmointirajapinnan päätepiste. Lisätietoja:

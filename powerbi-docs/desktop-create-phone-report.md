@@ -5,17 +5,17 @@ author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 12/10/2018
 ms.author: maggies
 LocalizationGroup: Create reports
-ms.openlocfilehash: 64d3faf9fd720d1e50fa69b5ccd914e6b3ac1294
-ms.sourcegitcommit: cd85d88fba0d9cc3c7a4dc03d2f35d2bd096759b
+ms.openlocfilehash: 8808391d0794ec4a487526cc5bbe4216fe0f75a6
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/12/2018
-ms.locfileid: "53280899"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54275314"
 ---
 # <a name="create-reports-optimized-for-the-power-bi-mobile-apps"></a>Power BI -mobiilisovelluksille optimoitujen raporttien luominen
 Voit parantaa käyttökokemusta, kun raporttejasi tarkastellaan mobiilisovelluksissa puhelimella tai tabletilla. Voit luoda raportista pystysuuntaisen asettelun erityisesti puhelimia ja tabletteja varten. Power BI Desktopissa ja Power BI -palvelussa raportti mukautetaan niin, että raportin visualisointeja järjestellään uudelleen ja niiden kokoa muutetaan pystysuuntaisessa asettelussa parhaan mahdollisen käyttökokemuksen tuottamiseksi. Niitä kaikkia ei tarvitse sisällyttää. Lisäksi voit luoda [ *reagoivia* visualisointeja](#optimize-a-visual-for-any-size) ja [reagoivia osittajia](#enhance-slicers-to-to-work-well-in-phone-reports), joiden koko muuttuu kätevästi puhelimella tarkastelemista ajatellen. Jos lisäät raporttiin suodattimia, suodattimet näkyvät automaattisesti myös optimoidussa raportissa. Raportin lukijat voivat nähdä ne ja käyttää niitä raportin suodattamiseen.

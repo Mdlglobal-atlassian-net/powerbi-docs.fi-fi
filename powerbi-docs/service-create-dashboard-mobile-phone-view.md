@@ -5,17 +5,17 @@ author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 10/12/2017
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: d3d2e5dcbfb5163e20dc60470c240378278bbcf1
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: cd7df8383ad22d273ebf396fc1cf8297f110dde5
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44727233"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54288148"
 ---
 # <a name="create-a-view-of-a-power-bi-dashboard-optimized-for-mobile-phones"></a>Matkapuhelimille optimoidun Power BI -koontinäyttönäkymän luominen
 Kun tarkastelet koontinäyttöjä Power BI -mobiilisovelluksella puhelimessa, voit huomata, että koontinäytön ruudut ovat saman kokoisia ja aseteltu yksi toisensa jälkeen. Power BI -palvelussa voit luoda ennen kaikkea puhelimille tarkoitetun mukautetun näkymän mistä tahansa omistamastasi koontinäytöstä.

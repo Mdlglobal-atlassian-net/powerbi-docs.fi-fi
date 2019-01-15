@@ -6,17 +6,17 @@ manager: kfile
 ms.reviewer: ''
 featuredvideoid: B2vd4MQrz4M
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 12/18/2018
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: b76a0910a18c3239dc6c35597ebea8b085afcd48
-ms.sourcegitcommit: 5206651c12f2b91a368f509470b46f3f4c5641e6
+ms.openlocfilehash: 487a67f48913ee774904377956eee85ccbae49fc
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53983849"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54296681"
 ---
 # <a name="basic-concepts-for-designers-in-the-power-bi-service"></a>Power BI -palvelun peruskäsitteitä suunnittelijoille
 
@@ -47,13 +47,13 @@ Power BI:n neljä peruselementtiä ovat: **_koontinäytöt_**, **_raportit_**, *
 ## <a name="workspaces"></a>Työtilat
 Työtilat ovat Power BI:ssä olevia säilöjä koontinäytöille, raporteille, työkirjoille ja tietojoukoille. Työtiloja on kahdenlaisia: *Oma työtila* ja *sovellustyötilat*. Entä mitä tarkoitetaan *sovelluksella*? Power BI -*sovellus* on kokoelma koontinäyttöjä ja raportteja, joiden avulla voit kuvata organisaatiosi keskeisiä mittalukuja. Sovellukset ovat vuorovaikutteisia, mutta niitä ei voi muokata.
 
-- *Oma työtila* on jokaisen Power BI -asiakkaan henkilökohtainen työtila oman sisällön käsittelyyn. Vain sinulla on käyttöoikeus omaan työtilaasi. Oman työtilan kautta voi jakaa koontinäyttöjä ja raportteja. Jos haluat käsitellä koontinäyttöjä ja raportteja yhteistyössä tai luoda sovelluksen, sinun kannattaa käyttää sovellustyötilaa.      
+- *Oma työtila* on jokaisen Power BI -asiakkaan henkilökohtainen työtila oman sisällön käsittelyyn. Vain sinulla on käyttöoikeus omaan työtilaasi. Oman työtilan kautta voi jakaa raporttinäkymiä ja raportteja. Jos haluat käsitellä koontinäyttöjä ja raportteja yhteistyössä tai luoda sovelluksen, sinun kannattaa käyttää sovellustyötilaa.      
 -  *Sovellustyötiloja* käytetään yhteistyöhön ja sisällön jakamiseen kollegoiden kanssa. Niissä voi myös luoda, julkaista ja hallita sovelluksia organisaatiollesi. Niitä voi ajatella tietynlaisina valmisteluympäristöinä ja säilöinä sisällölle, josta muodostuu Power BI -sovellus. Voit lisätä kollegoita sovellustyötilan käyttäjiksi ja käsitellä koontinäyttöjä, raportteja, työkirjoja ja tietojoukkoja yhteistyössä. Kaikki sovellustyötilan jäsenet tarvitsevat Power BI Pro -käyttöoikeudet, mutta sovelluksen kuluttajilla (sovelluksen käyttöoikeuden saaneilla kollegoilla) ei välttämättä tarvitse olla Pro-käyttöoikeuksia.  
 
 Lisätietoja on sisällysluettelon **Työn jakaminen** -osiossa, jonka ensimmäisenä aiheena on [Miten voin jakaa koontinäyttöjä ja raportteja sekä työstää niitä yhdessä muiden kanssa?](service-how-to-collaborate-distribute-dashboards-reports.md)
 
 
-Siirrytään nyt Power BI:n peruselementteihin. Koontinäyttöjä tai raportteja ei voi olla ilman tietoja – tai tyhjinä niistä ei ainakaan ole hyötyä –, joten aloitetaan **tietojoukoista**.
+Siirrytään nyt Power BI:n peruselementteihin. Raporttinäkymiä tai raportteja ei voi olla ilman tietoja – tai tyhjinä niistä ei ainakaan ole hyötyä –, joten aloitetaan **tietojoukoista**.
 
 ## <a name="datasets"></a>tietojoukot
 *Tietojoukko* on kokoelma tietoja, jotka voit *tuoda* tai joihin voit *muodostaa yhteyden*. Power BI:n avulla voit koota yhteen kaikenlaisia tietojoukkoja muodostamalla niihin yhteyden ja tuomalla niitä.  
@@ -84,13 +84,13 @@ Tietojoukkoja voi päivittää, nimetä uudelleen, tarkastella ja poistaa. Tieto
 * [Mallitietojoukkoja Power BI:lle](sample-datasets.md)
 
 ## <a name="reports"></a>Raportit
-Power BI -raportti sisältää yhden tai useamman sivun verran visualisointeja, kuten viivakaavioita, karttoja ja puukarttoja. Visualisointeja voidaan kutsua myös **_graafeiksi_**. Kaikki raportin visualisoinnit ovat peräisin yhdestä tietojoukosta. Raportteja voi luoda alusta alkaen Power BI:ssä, tai niitä voi tuoda koontinäyttöjä, joita kollegat jakavat kanssasi. Niitä voi myös luoda muodostamalla yhteyden tietojoukkoihin Excelissä, Power BI Desktopissa, tietokannoissa, SaaS-sovelluksissa ja [sovelluksissa](service-get-data.md).  Kun esimerkiksi muodostat yhteyden Power View -taulukoita sisältävään Excel-työkirjaan, Power BI luo raportin näiden taulukoiden perusteella. Ja kun muodostat yhteyden SaaS-sovellukseen, Power BI tuo valmiiksi luodun raportin.
+Power BI -raportti sisältää yhden tai useamman sivun verran visualisointeja, kuten viivakaavioita, karttoja ja puukarttoja. Visualisointeja voidaan kutsua myös **_graafeiksi_**. Kaikki raportin visualisoinnit ovat peräisin yhdestä tietojoukosta. Raportteja voi luoda alusta alkaen Power BI:ssä, tai niitä voi tuoda raporttinäkyminä, joita kollegat jakavat kanssasi. Niitä voi myös luoda muodostamalla yhteyden tietojoukkoihin Excelissä, Power BI Desktopissa, tietokannoissa, SaaS-sovelluksissa ja [sovelluksissa](service-get-data.md).  Kun esimerkiksi muodostat yhteyden Power View -taulukoita sisältävään Excel-työkirjaan, Power BI luo raportin näiden taulukoiden perusteella. Ja kun muodostat yhteyden SaaS-sovellukseen, Power BI tuo valmiiksi luodun raportin.
 
 Voit tarkastella ja käsitellä raportteja kahdessa tilassa: [lukunäkymässä ja muokkausnäkymässä](service-reading-view-and-editing-view.md).  Vain raportin luonut henkilö, sen muut omistajat ja siihen käyttöoikeuden saaneet saavat käyttöönsä kaikki tutustumis-, suunnittelu-, luomis- ja jakamistoiminnot raportin **_muokkausnäkymässä_**. Henkilöt, joille raportti jaetaan, voivat tarkastella ja käsitellä sitä **_lukunäkymässä_**.   
 
 Kun avaat työtilan, siihen liittyvät raportit luetellaan **Raportit**-välilehdellä. Jokainen luettelon raportti edustaa yhtä tai useampaa visualisointien sivua, joka perustuu vain yhteen pohjana olevista tietojoukoista. Avaa raportti valitsemalla se.
 
-Kun avaat sovelluksen, näet koontinäytön.  Voit käyttää sen pohjana olevaa raporttia valitsemalla koontinäytön ruudun (näistä lisää myöhemmin), joka oli kiinnitetty raportista. Pidä mielessä, että kaikkia ruutuja ei ole kiinnitetty raporteista, joten saatat joutua napsauttamaan useita ruutuja, ennen kuin löydät raportin.
+Kun avaat sovelluksen, näet koontinäytön.  Voit käyttää sen pohjana olevaa raporttia valitsemalla raporttinäkymän ruudun (näistä lisää myöhemmin), joka oli kiinnitetty raportista. Pidä mielessä, että kaikkia ruutuja ei ole kiinnitetty raporteista, joten saatat joutua napsauttamaan useita ruutuja, ennen kuin löydät raportin.
 
 Raportti avautuu oletusarvoisesti lukunäkymässä.  Valitse **Muokkaa raporttia**, niin se avautuu muokkausnäkymässä, jos sinulla on tarvittavat oikeudet.
 
@@ -121,7 +121,7 @@ Miksi koontinäyttöjä luodaan?  Tässä on vain muutamia syitä:
 * Voit valvoa yrityksen, liiketoimintayksikön, tuotteen tai markkinointikampanjan menestymistä.
 * Voit luoda mukautetun näkymän suuremmasta koontinäytöstä ja valita siihen itsellesi tärkeimmät tiedot.
 
-Kun avaat työtilan, siihen liittyvät koontinäytöt luetellaan **Koontinäytöt**-välilehdellä. Avaa koontinäyttö valitsemalla se. Kun avaat sovelluksen, näet koontinäytön.  Jokainen koontinäyttö edustaa mukautettua näkymää pohjana olevan tietojoukon tai tietojoukkojen tietystä alijoukosta.  Jos omistat koontinäytön, sinulla on myös muokkausoikeus pohjana oleviin tietojoukkoihin ja raportteihin.  Jos koontinäyttö jaettiin kanssasi, pystyt käyttämään sitä ja pohjana olevia raportteja, mutta et voi tallentaa tekemiäsi muutoksia.
+Kun avaat työtilan, siihen liittyvät koontinäytöt luetellaan **Koontinäytöt**-välilehdellä. Avaa raporttinäkymä valitsemalla se. Kun avaat sovelluksen, näet koontinäytön.  Jokainen koontinäyttö edustaa mukautettua näkymää pohjana olevan tietojoukon tai tietojoukkojen tietystä alijoukosta.  Jos omistat koontinäytön, sinulla on myös muokkausoikeus pohjana oleviin tietojoukkoihin ja raportteihin.  Jos koontinäyttö jaettiin kanssasi, pystyt käyttämään sitä ja pohjana olevia raportteja, mutta et voi tallentaa tekemiäsi muutoksia.
 
 [Koontinäytön voi jakaa](service-share-dashboards.md) monilla eri tavoilla. Koontinäytön jakamiseen ja mahdollisesti myös jaetun koontinäytön tarkasteluun vaaditaan Power BI Pro.
 
@@ -132,7 +132,7 @@ Kun avaat työtilan, siihen liittyvät koontinäytöt luetellaan **Koontinäytö
 * voi näyttää visualisointeja monista eri raporteista
 * voi näyttää visualisointeja, jotka on kiinnitetty muista työkaluista (esimerkiksi Excelistä)
 
-  ![Koontinäyttö valittuna](media/service-basic-concepts/drawing1.png)
+  ![Raporttinäkymä valittuna](media/service-basic-concepts/drawing1.png)
 
 ### <a name="dig-deeper"></a>Pureudu syvemmälle
 * [Luo uusi tyhjä koontinäyttö ja hae siihen tietoja](service-dashboard-create.md).
@@ -153,7 +153,7 @@ Työkirjaa ei voi muokata Power BI:ssä. Jos muutoksia on tehtävä, voit valita
 
 
 ## <a name="a-dashboard-in-my-workspace"></a>Koontinäyttö Omassa työtilassa
-Olemme nyt käsitelleet työtiloja ja luontielementtejä. Tuodaanpa ne nyt yhteen ja tarkastellaan osia, jotka muodostavat koontinäyttökokemuksen Power BI -palvelussa.
+Olemme nyt käsitelleet työtilat ja Power BI:n elementit. Tuodaanpa ne nyt yhteen ja tarkastellaan osia, jotka muodostavat koontinäyttökokemuksen Power BI -palvelussa.
 
 ![Power BI -palvelu selaimessa](media/service-basic-concepts/completenewest.png)
 
@@ -200,9 +200,9 @@ Oikeassa yläkulmassa olevilla kuvakkeiden kautta voit säätää asetuksia, tar
 ![kuvakepainikkeet](media/service-basic-concepts/power-bi-icons.png)
 
 ### <a name="5-dashboard-title-navigation-path-aka-breadcrumbs"></a>5. **Koontinäytön otsikko** (navigointipolku)
-Aina ei ole helppo selvittää, mikä työtila ja koontinäyttö ovat aktiivisina. Siinä auttaa Power BI:n luoma navigointipolku.  Tässä esimerkissä näemme työtilan (Oma työtila) ja koontinäytön otsikon (Jälleenmyyntianalyysimalli).  Jos avaamme raportin, raportin nimi liitetään navigointipolun loppuun.  Jokainen polun osa on aktiivinen hyperlinkki.  
+Aina ei ole helppo selvittää, mikä työtila ja koontinäyttö ovat aktiivisina. Siinä auttaa Power BI:n luoma navigointipolku.  Tässä esimerkissä näemme työtilan (Oma työtila) ja raporttinäkymän otsikon (Jälleenmyyntianalyysimalli).  Jos avaamme raportin, raportin nimi liitetään navigointipolun loppuun.  Jokainen polun osa on aktiivinen hyperlinkki.  
 
-Huomaa C-kuvake koontinäytön otsikon perässä. Tällä koontinäytöllä [tietojen luokitustunniste](service-data-classification.md) C, joka tarkoittaa luottamuksellista. Tunniste ilmoittaa tietojen luottamuksellisuus- ja suojaustason. Jos järjestelmänvalvoja on ottanut tietojen luokituksen käyttöön, jokaisella koontinäytöllä on oletusarvoinen tunnistejoukko. Koontinäytön omistajien tulisi muuttaa tunnistetta vastaamaan koontinäytön todellista suojaustasoa.
+Huomaa C-kuvake koontinäytön otsikon perässä. Tällä koontinäytöllä [tietojen luokitustunniste](service-data-classification.md) C, joka tarkoittaa luottamuksellista. Tunniste ilmoittaa tietojen luottamuksellisuus- ja suojaustason. Jos järjestelmänvalvoja on ottanut tietojen luokituksen käyttöön, jokaisella raporttinäkymällä on oletusarvoinen tunnistejoukko. Koontinäytön omistajien tulisi muuttaa tunnistetta vastaamaan koontinäytön todellista suojaustasoa.
 
 ![Tietojen luokittelukuvake](media/service-basic-concepts/power-bi-title.png)
 

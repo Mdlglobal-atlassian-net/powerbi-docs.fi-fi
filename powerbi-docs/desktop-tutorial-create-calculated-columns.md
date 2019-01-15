@@ -1,23 +1,23 @@
 ---
-title: 'Opetusohjelma: laskettujen sarakkeiden luominen Power BI Desktopissa'
-description: 'Opetusohjelma: laskettujen sarakkeiden luominen Power BI Desktopissa'
+title: 'Opetusohjelma: Laskettujen sarakkeiden luominen Power BI Desktopissa'
+description: 'Opetusohjelma: Laskettujen sarakkeiden luominen Power BI Desktopissa'
 author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: tutorial
 ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Learn more
-ms.openlocfilehash: 296281f3077d805140b6759ab818be1daaca8a85
-ms.sourcegitcommit: 05303d3e0454f5627eccaa25721b2e0bad2cc781
+ms.openlocfilehash: bfd892864b624bc992f77afa3b5ba887344d2eea
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "52578677"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54287757"
 ---
-# <a name="tutorial-create-calculated-columns-in-power-bi-desktop"></a>Opetusohjelma: laskettujen sarakkeiden luominen Power BI Desktopissa
+# <a name="tutorial-create-calculated-columns-in-power-bi-desktop"></a>Opetusohjelma: Laskettujen sarakkeiden luominen Power BI Desktopissa
 
 Joskus analysointisi kohteena olevat tiedot eivät sisällä tiettyä kenttää, jota tarvitsisit saadaksesi haluamiasi tuloksia. Tässä vaiheessa mukaan kuvaan tulevat *lasketut sarakkeet*. Lasketut sarakkeet määrittävät Data Analysis Expressions (DAX) -kaavojen avulla sarakkeen arvot, mikä voi tarkoittaa mitä tahansa aina tekstiarvojen yhdistämisestä muutamasta eri sarakkeesta numeerisen arvon laskemiseen muiden arvojen perusteella. Tiedoissasi voi olla esimerkiksi **Kaupunki**- ja **Osavaltio**-kentät, mutta haluat yhden **Sijainti**-kentän, jossa nämä kumpikin ilmoitetaan, kuten ”Miami, FL”. Lasketut sarakkeet on tarkoitettu juuri tähän tarkoitukseen.
 

@@ -5,17 +5,17 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 281e84b1dd3a3c21a7aaebce4784551a8afb31ba
-ms.sourcegitcommit: 88ae40a25ea54ef7153885dd04ef57d12522d4e1
+ms.openlocfilehash: e37f6f18b182851c3fc2afc2f67de0023bd46382
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/04/2019
-ms.locfileid: "54056060"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54276694"
 ---
 # <a name="enroll-your-us-government-organization-in-the-power-bi-service"></a>Rekisteröi Yhdysvaltain valtionhallinnon organisaatio Power BI -palveluun
 **Power BI-palvelulla** on versio, joka on saatavilla Yhdysvaltain valtionhallinnon asiakkaille osana **Office 365 US Government Community** -tilauksia. Tässä artikkelissa kuvattu **Power BI -palvelun** versio on suunniteltu erityisesti Yhdysvaltain valtionhallinnon asiakkaille ja on erillinen ja erilainen kuin **Power BI -palvelun** kaupallinen versio.

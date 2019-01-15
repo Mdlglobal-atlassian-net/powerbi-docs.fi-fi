@@ -6,17 +6,17 @@ manager: kfile
 ms.reviewer: ''
 ms.custom: seodec18
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 12/06/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: b88b17e428633e9d610724a8c3daa145c9928ae2
-ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
+ms.openlocfilehash: e74b0399ffdf2b5ca79eecb6451ccd676c1095db
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53026864"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54296709"
 ---
 # <a name="r-packages-in-the-power-bi-service"></a>R-paketit Power BI -palvelussa
 Voit käyttää tehokasta [R-ohjelmointikieltä](https://www.r-project.org/) visualisointien luomiseksi Power BI -palvelussa. Monet R-paketit ovat tuettuja Power BI -palvelussa (ja lisää tuetaan jatkuvasti), mutta joitakin paketteja ei tueta.

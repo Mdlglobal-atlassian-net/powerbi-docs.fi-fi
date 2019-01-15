@@ -2,20 +2,20 @@
 title: Yrityksen SSL-varmenteeseen ei luoteta -ongelman korjaaminen
 description: Kun kirjaudut sisään Power BI:n Android-sovellukseen, saatat nähdä viestin siitä, ettei todentaminen onnistunut, koska yrityksen SSL-varmenne ei ole luotettava
 .": ''
-author: maggiesMSFT
+author: mshenhav
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-mobile
+ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 05/18/2018
-ms.author: maggies
-ms.openlocfilehash: 494e148a62675aab1a6e799c4e4b61f022483d9f
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.author: mshenhav
+ms.openlocfilehash: 2b296d465b312486a91e1407b5866e15b0b48b54
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44735695"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54280788"
 ---
 # <a name="fixing-corporate-ssl-certificate-is-untrusted---power-bi"></a>Yrityksen SSL-varmenne ei ole luotettava – Power BI -ongelman korjaaminen
 Kun kirjaudut sisään Microsoft Power BI:n Android-mobiilisovellukseen, saatat nähdä viestin siitä, ettei todentaminen onnistunut, koska laite ei luota yrityksen SSL-varmenteeseen. Viestissä kehotetaan ottamaan yhteyttä yrityksesi IT-järjestelmänvalvojaan. 

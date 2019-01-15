@@ -5,16 +5,16 @@ author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 11/06/2018
+ms.date: 01/09/2019
 ms.author: maggies
-ms.openlocfilehash: bff5e42b239fee572ea0a453301f154da3b999b3
-ms.sourcegitcommit: b23fdcc0ceff5acd2e4d52b15b310068236cf8c7
+ms.openlocfilehash: 76ea3250c3032c253b87f5f2b0713460a805787e
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51266089"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54295797"
 ---
 # <a name="whitepapers-for-power-bi"></a>Power BI:n tekniset raportit
 
@@ -26,7 +26,7 @@ Teknisten raporttien avulla voit tutustua Power BI:n aiheisiin syvällisemmin. T
 | [Microsoft Power BI Premium](https://aka.ms/pbipremiumwhitepaper) |Tässä artikkelissa kuvataan Power BI Premium. Kuvaus kattaa version julkaisuhetkellä ja myös työkalun kehittymisen. | Lokakuu 2017 |
 | [Power BI Premiumin suunnittelu ja käyttöönotto](https://aka.ms/Premium-Capacity-Planning-Deployment)| Tämä raportti sisältää ohjeita ja parhaita käytäntöjä Premium-kapasiteetin suunnitteluun ja käyttöönottoon tarkasti määritellyille kuormituksille.| Marraskuu 2017 |
 | [Upotetun analytiikan sopimuskapasiteetti Power BI Premiumin yhteydessä](https://aka.ms/pbiewhitepaper) |Tämä raportti sisältää ohjeita sovelluskehittäjälle tai ISV:lle yritykselle parhaiten sopivan kapasiteetin määrittämiseksi. | Lokakuu 2017 |
-| [Power BI:n yrityskäyttöönoton suunnitteleminen](https://aka.ms/pbienterprisedeploy) |Tässä teknisessä raportissa käydään läpi huomioitavat seikat, kun halutaan toteuttaa hyvin toimiva ja turvallinen Power BI -käyttöönotto organisaatiossa. | Heinäkuu 2018 |
+| [Power BI:n yrityskäyttöönoton suunnitteleminen](https://go.microsoft.com/fwlink/?linkid=2057861) |Tässä teknisessä raportissa käydään läpi huomioitavat seikat, kun halutaan toteuttaa hyvin toimiva ja turvallinen Power BI -käyttöönotto organisaatiossa. | Heinäkuu 2018 |
 | [Ohjeita kapasiteetin suunnitteluun Power BI -raporttipalvelimella](report-server/capacity-planning.md) |Tämän artikkelin tarkoituksena on antaa ohjeita kapasiteetin suunnitteluun Power BI -raporttipalvelimen avulla jakamalla eri kuormituksille tehtyjen erilaisten kuormitustestien tuloksia. | Maaliskuu 2018 |
 | [Tietoturva](service-admin-power-bi-security.md) |Tämä raportti sisältää tarkan kuvauksen Power BI:n tietoturvasta. | Heinäkuu 2018 |
 | [Power BI -sisällön jakaminen ulkoisille vieraskäyttäjille Azure Active Directory B2B:n avulla](https://aka.ms/powerbi-b2b-whitepaper)|Tässä raportissa kerrotaan, miten sisältöä jaetaan organisaation ulkopuolisille käyttäjille käyttäen Microsoft Azure Active Directoryn yritysten välistä (AAD B2B) integrointia.| Maaliskuu 2018 |

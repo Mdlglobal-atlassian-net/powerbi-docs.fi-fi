@@ -5,17 +5,17 @@ author: mihart
 manager: kvivek
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 08/06/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: baa09e190bc33dfd99bcd80d8705ed6ec71d3a1d
-ms.sourcegitcommit: 70192daf070ede3382ac13f6001e0c8b5fb8d934
+ms.openlocfilehash: 340e32d6d3b29e266d81253378feb4266c01d000
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "46564874"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54274509"
 ---
 # <a name="getting-started-with-color-formatting-and-axis-properties"></a>Värimuotoilun ja akseliominaisuuksien käytön aloittaminen
 Valitsemalla **Power BI** voit muuttaa arvosarjojen, arvopisteiden ja jopa visualisointien taustan värin. Voit myös muuttaa x- ja y-akselin esitystapaa, joten voit hallita täydellisesti raporttinäkymien ja raporttien ulkonäköä.

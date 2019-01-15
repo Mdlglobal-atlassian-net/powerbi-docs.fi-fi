@@ -5,17 +5,17 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 2c092d75b6cc1dfb9e639f6421d6f1622f47d134
-ms.sourcegitcommit: 05303d3e0454f5627eccaa25721b2e0bad2cc781
+ms.openlocfilehash: 02ef382ffa4199255612c4ae6c782a55efb2f7ff
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "52578539"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54281938"
 ---
 # <a name="add-a-column-from-an-example-in-power-bi-desktop"></a>Sarakkeen lisääminen esimerkistä Power BI Desktopissa
 Huhtikuussa 2017 julkaistusta **Power BI Desktop** -versiosta alkaen voit lisätä uusia tietosarakkeita malliin **Kyselyeditorin** avulla antamalla vähintään yksi malliarvo uudelle sarakkeelle. Voit luoda uuden sarakkeen nykyisestä valinnasta tai syöttämällä tietoja perustuen kaikkiin (tai valittuihin) sarakkeisiin tietyssä taulukossa.

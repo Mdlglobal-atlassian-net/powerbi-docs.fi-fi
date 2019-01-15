@@ -5,17 +5,17 @@ author: mgblythe
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-gateways
+ms.subservice: powerbi-gateways
 ms.topic: conceptual
 ms.date: 01/24/2018
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: a84a5da9600daa7ef55ed5a707affa4ee1da4aba
-ms.sourcegitcommit: b45134887a452f816a97e384f4333db9e1d8b798
+ms.openlocfilehash: 5c388a15132c7f433a50c2975aa4b45195c55bf9
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47238096"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54285043"
 ---
 # <a name="manage-your-data-source---analysis-services"></a>Tietolähteen hallinta - Analysis Services
 Kun olet asentanut paikallisen tietoyhdyskäytävän, sinun on lisättävä tietolähteitä, joita voi käyttää kyseisen yhdyskäytävän kanssa. Tässä artikkelissa tarkastellaan yhdyskäytävien ja tietolähteiden käsittelyä. Voit käyttää Analysis Services -tietolähdettä joko ajoitettuihin päivityksiin tai reaaliaikaisiin yhteyksiin.
@@ -153,7 +153,7 @@ Yhdyskäytävän määrittäminen AD-haun suorittamiseen:
 
 2. Yhdyskäytävässä sinun on määritettävä **paikallinen tietoyhdyskäytäväpalvelu** suoritettavaksi toimialuetilin kanssa (paikallisen palvelutilin sijaan – muussa tapauksessa AD-haku ei toimi oikein suorituspalvelussa). Yhdyskäytäväpalvelu on käynnistettävä uudelleen, jotta muutos tulee voimaan.  Siirry laitteellasi yhdyskäytäväsovellukseen (hae ”paikallinen tietoyhdyskäytävä”). Voit tehdä tämän siirtymällä kohtaan **Palvelun asetukset > Palvelutilin vaihtaminen**. Varmista, että sinulla tämän yhdyskäytävän palautusavain, sillä sinun on palautettava se samalla tietokoneella, ellet halua luoda uutta yhdyskäytävää. 
 
-3. Siirry yhdyskäytävän asennuskansioon, *C:\Program Files\On-premises data gateway* järjestelmänvalvojana varmistaaksesi, että sinulla on oikeudet muokata seuraavaa tiedostoa ja tallentaa muutokset: Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config 
+3. Siirry järjestelmänvalvojana yhdyskäytävän asennuskansioon, *C:\Program Files\On-premises data gateway* varmistaaksesi, että sinulla on oikeudet muokata seuraavaa tiedostoa ja tallentaa muutokset: Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config 
 
 4. Muokkaa seuraavaa kahta määritysarvoa omiin AD-käyttäjiisi sovellettavien *omien* Active Directory -käyttäjien määritysten mukaan. Alla olevat määritysarvot ovat vain esimerkkejä – sinun on määritettävä ne Active Directory -määritystesi mukaisesti. Määritysten kirjainkoko on merkitsevä, joten varmista, että ne määritykset vastaavat Active Directoryn arvoja.
 

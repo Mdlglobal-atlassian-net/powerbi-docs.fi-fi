@@ -5,17 +5,17 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Data refresh
-ms.openlocfilehash: e256da8530681d8eea6f41746e7a0c0885e4b91b
-ms.sourcegitcommit: 2ae660a7b70fce23eb58b159d049eca44a664f2c
+ms.openlocfilehash: 57aa5afe32b8f65805ef4be71ded176f34aefd6e
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "52670195"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54296014"
 ---
 # <a name="refresh-a-dataset-created-from-an-excel-workbook-on-onedrive-or-sharepoint-online"></a>Excel-työkirjasta luodun tietojoukon päivittäminen OneDrivessa tai SharePoint Onlinessa
 Voit tuoda Excel-työkirjoja, jotka on tallennettu paikalliseen tietokoneeseesi tai pilvitallennustilaan, kuten OneDrive for Business- tai SharePoint Online -palveluun. Tutustumme pilvitallennustilan käytön etuihin Excel-tiedostoja tallennettaessa. Katso lisätietoja Excel-tiedostojen tuomisesta Power BI:iin kohdasta [Nouda tiedot Excel-työkirjatiedostosta](service-excel-workbook-files.md).
@@ -43,7 +43,7 @@ Power BI, Päivitä nyt ja Ajoita päivitys ovat tuettuja tietojoukkoja, jotka o
 > 
 
 ## <a name="onedrive-or-onedrive-for-business-whats-the-difference"></a>OneDrive vai OneDrive for Business? Mikä niiden ero on?
-Jos sinulla on sekä henkilökohtainen OneDrive että OneDrive for Business, on suositeltavaa säilyttää tiedostot, jotka haluat tuoda Power BI:ssa OneDrive for Business -palveluun. Syynä on se, että todennäköisesti käytät kahta eri tiliä niille kirjautumista varten.
+Jos sinulla on sekä henkilökohtainen OneDrive että OneDrive for Business, on suositeltavaa säilyttää tiedostot, jotka haluat tuoda Power BI:ssa OneDrive for Business -palveluun. Syynä on se, että käytät todennäköisesti kahta eri tiliä niille kirjautumista varten.
 
 Yhteyden muodostaminen OneDrive for Business -palveluun Power BI:ssa on yleensä saumaton, koska tili, jota käytit Power BI -kirjautumiseen on usein sama tili, jota käytetään kirjauduttaessa OneDrive for Business -palveluun. Henkilökohtaisen OneDrive olet todennäköisesti kuitenkin kirjautunut sisään toisella [Microsoft-tilillä](https://account.microsoft.com).
 
