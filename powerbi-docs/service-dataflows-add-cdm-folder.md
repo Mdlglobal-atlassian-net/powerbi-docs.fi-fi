@@ -5,17 +5,17 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 12/06/2018
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: ce2f993e2745cb0e5b359bfbc492e6e7aea25493
-ms.sourcegitcommit: f25464d5cae46691130eb7b02c33f42404011357
+ms.openlocfilehash: 3c5b33b4b056a5d2dfeeffd4c72ea878cf7d79c0
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53181326"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54280282"
 ---
 # <a name="add-a-cdm-folder-to-power-bi-as-a-dataflow-preview"></a>Lisää CDM-kansio Power BI:hin tietovuona (esikatselu)
 
@@ -113,5 +113,5 @@ Lisätietoja Common Data Modelista on sen yleiskatsauksen sisältävässä artik
 * [CDM-kansiot](https://go.microsoft.com/fwlink/?linkid=2045304)
 * [CDM-mallitiedoston määritys](https://go.microsoft.com/fwlink/?linkid=2045521)
 
-Voit myös [esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/).
+Voit myös yrittää [esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/).
 

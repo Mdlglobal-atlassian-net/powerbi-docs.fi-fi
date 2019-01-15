@@ -1,20 +1,20 @@
 ---
 title: Kertakirjautuminen Power BI -mobiilin Windows-sovelluksessa
-description: Lue lisää kertakirjautumisesta Power BI -mobiilin Windows-sovellukseen. Kertakirjautuminen tarkoittaa, että voit käyttää liiketoiminnan hoitamisessa tarvitsemiasi sovelluksia ja resursseja kirjautumalla sisään vain kerran yhdellä käyttäjätilillä.
-author: maggiesMSFT
+description: Lue lisää kertakirjautumisesta Power BI:n Windows-mobiilisovellukseen. Kertakirjautuminen tarkoittaa, että voit käyttää liiketoiminnan hoitamisessa tarvitsemiasi sovelluksia ja resursseja kirjautumalla sisään vain kerran yhdellä käyttäjätilillä.
+author: mshenhav
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-mobile
+ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 09/17/2018
-ms.author: maggies
-ms.openlocfilehash: f13b6e0a6583bcb66da0fb0a27188c83c4bf6806
-ms.sourcegitcommit: 698b788720282b67d3e22ae5de572b54056f1b6c
+ms.author: mshenhav
+ms.openlocfilehash: fdbdebacc2ae41cdfa8296eb6b0c06e52f149cac
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45975031"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54290954"
 ---
 # <a name="single-sign-on-in-the-power-bi-mobile-windows-app"></a>Kertakirjautuminen Power BI:n Windows-mobiilisovelluksessa
 

@@ -6,20 +6,20 @@ manager: kvivek
 ms.reviewer: ''
 ms.custom: seodec18
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 12/06/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 92224e00da95714125a8e15c27432e8d305ae0f7
-ms.sourcegitcommit: f25464d5cae46691130eb7b02c33f42404011357
+ms.openlocfilehash: 637253e3cffebcba7df0a3bc3ce44e943b909364
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53180549"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54279891"
 ---
 # <a name="add-hyperlinks-to-a-table"></a>Hyperlinkkien lisääminen taulukkoon
-Tässä aiheessa opit käyttämään Power BI Desktopia hyperlinkkien luomiseen. Voit sitten lisätä nämä hyperlinkit raportin taulukoihin ja matriiseihin joko Desktopissa tai Power BI -palvelussa. 
+Tässä aiheessa kurssilla opit käyttämään Power BI Desktopia hyperlinkkien luomiseen. Voit sitten lisätä nämä hyperlinkit raportin taulukoihin ja matriiseihin joko Desktopissa tai Power BI -palvelussa. 
 
 ![Taulukko, jossa on hyperlinkit](media/power-bi-hyperlinks-in-tables/hyperlinkedtable.png)
 

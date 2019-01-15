@@ -7,16 +7,16 @@ manager: kfile
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 12/19/2018
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 435f7ec433e45202ef2b5ddbd9a9ffb996f84129
-ms.sourcegitcommit: 5206651c12f2b91a368f509470b46f3f4c5641e6
+ms.openlocfilehash: 6d4148eef42f01035fde5601e3dd88b3572c8320
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53983780"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54292472"
 ---
 # <a name="monitor-usage-metrics-for-power-bi-dashboards-and-reports"></a>Power BI:n koontinäyttöjen ja raporttien käyttötietojen valvonta
 
@@ -128,7 +128,7 @@ Kun luot kopion Tallenna nimellä -toiminnolla mukauttamista varten, Power BI mu
 
 Jos haluat nähdä työtilan kaikkien koontinäyttöjen tai raporttien käyttötiedot, sinun on poistettava suodatin. Oletusarvoisesti mukautettu raportti on suodatettu näyttämään vain sen luomiseen käytetyn koontinäytön tai raportin tiedot.
 
-Jos käytit esimerkiksi Euroopan myynti -nimistä koontinäyttöä tämän uuden mukautetun raportin luomiseen, näet vain Euroopan myynti -koontinäytön käyttötiedot. Poista suodatin ja ota käyttöön työtilan kaikkien koontinäyttöjen tiedot seuraavasti:
+Jos käytit esimerkiksi Euroopan myynti -nimistä koontinäyttöä tämän uuden mukautetun raportin luomiseen, näet vain Euroopan myynti -koontinäytön käyttötiedot. Poista suodatin ja ottaa käyttöön työtilan kaikkien koontinäyttöjen tiedot seuraavasti:
 
 1. Avaa mukautettu raportti muokkausnäkymässä.
 
@@ -155,7 +155,7 @@ Käyttötietoraportit ovat ominaisuus, jonka Power BI:n tai Office 365:n järjes
 
 Oletusarvoisesti käyttäjäkohtaiset tiedot on otettu käyttöön käyttötiedoille ja sisällön luojan tilitiedot sisältyvät tietoraporttiin. Jos et halua sisällyttää näitä tietoja joillekin tai kaikille käyttäjille, poista ominaisuus käytöstä määritetyille käyttöoikeusryhmille tai koko organisaatiolle. Tilitiedot näkyvät sitten raportissa *nimettöminä*.
 
-Kun käyttötietoja poistetaan koko organisaation käytöstä, järjestelmänvalvojat voivat käyttää **Poista kaikki olemassa oleva käyttötietojen sisältö** -vaihtoehtoa. Se poistaa kaikki aiemmin luodut raportit ja koontinäytön ruudut, jotka on luotu käyttämällä käyttötietoraportteja ja tietojoukkoja. Tämä vaihtoehto poistaa käyttöoikeuden käyttötietoihin kaikilta organisaation käyttäjiltä, jotka tietoja ehkä jo käyttävät. Ole varovainen, sillä aiemmin luodun käyttötietosisällön poistamista ei voi peruuttaa.
+Kun käyttötietoja poistetaan koko organisaation käytöstä, järjestelmänvalvojat voivat käyttää **Poista kaikki olemassa oleva käyttömittarien sisältö** -vaihtoehtoa. Se poistaa kaikki aiemmin luodut raportit ja koontinäytön ruudut, jotka on luotu käyttämällä käyttötietoraportteja ja tietojoukkoja. Tämä vaihtoehto poistaa käyttöoikeuden käyttötietoihin kaikilta organisaation käyttäjiltä, jotka tietoja ehkä jo käyttävät. Ole varovainen, sillä aiemmin luodun käyttötietosisällön poistamista ei voi peruuttaa.
 
 ## <a name="usage-metrics-in-national-clouds"></a>Käyttötiedot kansallisissa pilvipalveluissa
 
@@ -163,15 +163,15 @@ Power BI on saatavilla erillisissä kansallisissa pilvipalveluissa. Nämä pilvi
 
 ## <a name="considerations-and-limitations"></a>Huomioitavat asiat ja rajoitukset
 
-On tärkeää ymmärtää erot, jotka voivat ilmetä käyttötietoja ja valvontalokeja verrattaessa, sekä niiden syyt. *Valvontalokit* kerätään käyttämällä tietoja Power BI -palvelusta ja *käyttötiedot* kerätään asiakkaalta. Tämän eron vuoksi toimintojen koostemäärät valvontalokeissa eivät välttämättä aina vastaa käyttötietoja seuraavista syistä:
+On tärkeää ymmärtää erot, jotka voivat ilmetä käyttömittareita ja valvontalokeja verrattaessa, sekä niiden syyt. *Valvontalokit* kerätään käyttämällä tietoja Power BI -palvelusta ja *käyttömittarit* kerätään asiakkaalta. Tämän eron vuoksi toimintojen koostemäärät valvontalokeissa eivät välttämättä aina vastaa käyttömittareita seuraavista syistä:
 
-* Käyttötiedot saattavat joskus laskea liian vähän toimintoja vaihtelevien verkkoyhteyksien, mainosten eston tai muiden ongelmien vuoksi, jotka voivat häiritä tapahtumien lähettämistä asiakkaalta.
-* Tietyntyyppiset näkymät eivät sisälly käyttötietoihin aiemmin tässä artikkelissa kuvatun mukaisesti.
+* Käyttömittarit saattavat joskus laskea liian vähän toimintoja vaihtelevien verkkoyhteyksien, mainosten eston tai muiden ongelmien vuoksi, jotka voivat häiritä tapahtumien lähettämistä asiakkaalta.
+* Tietyntyyppiset näkymät eivät sisälly käyttömittareihin aiemmin tässä artikkelissa kuvatun mukaisesti.
 * Käyttötiedot saattavat joskus laskea liian paljon toimintoja tilanteissa, joissa asiakasohjelma päivittyy ilman, että pyyntöä pitää lähettää takaisin Power BI -palveluun.
 
 ## <a name="frequently-asked-questions"></a>Usein kysyttyjä kysymyksiä
 
-Käyttötietojen ja valvontalokien mahdollisten erojen lisäksi seuraavat käyttötietoja koskevat kysymykset ja vastaukset voivat olla hyödyllisiä käyttäjille ja järjestelmänvalvojille:
+Käyttömittareiden ja valvontalokien mahdollisten erojen lisäksi seuraavat käyttömittareita koskevat kysymykset ja vastaukset voivat olla hyödyllisiä käyttäjille ja järjestelmänvalvojille:
 
 **Kysymys:**    En voi käyttää käyttötietoja koontinäytössä tai raportissa.
 

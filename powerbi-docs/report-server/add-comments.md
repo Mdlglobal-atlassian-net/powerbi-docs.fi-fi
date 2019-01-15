@@ -5,16 +5,16 @@ author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-report-server
+ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 11/15/2018
 ms.author: maggies
-ms.openlocfilehash: e0053660263f4cbed55050b9431b67228bf74c29
-ms.sourcegitcommit: 46f1ba3f972f6e64bce05ad0fd527b27c49aedd6
+ms.openlocfilehash: 14540dc9ecaf1c3baa513b6e8cd12323de973d3d
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52157352"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54275379"
 ---
 # <a name="add-comments-to-a-report-in-a-report-server---power-bi-report-server"></a>Lisää kommentteja raporttiin raporttipalvelimessa – Power BI -raporttipalvelin
 Voit lisätä kommentteja raportteihin, mukaan lukien Power BI -raportteihin, raporttipalvelimen verkkoportaalissa. Kommentit näkyvät raportissa reaaliajassa, kaikki, joilla on tarvittavat oikeudet, näkevät raportin kommentit. Katso lisätietoja alla olevasta [Käyttöoikeudet](#permissions)-kohdasta.

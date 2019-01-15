@@ -5,16 +5,16 @@ author: markingmyname
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-developer
+ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 06/30/2018
 ms.author: maghan
-ms.openlocfilehash: b520eb2758088feadff963f86ddf310ae7a7ed8b
-ms.sourcegitcommit: 06f59902105c93700e71e913dff8453e221e4f82
+ms.openlocfilehash: cd88270c75b46267217147d8f02fc707eeef26ab
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39388636"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54290397"
 ---
 # <a name="power-bi-embedded-migration-tool"></a>Power BI Embedded -siirtotyökalu
 Tämän siirtotyökalun avulla voit kopioida raportit Power BI Embedded Azure -palvelusta (PaaS) Power BI -palveluun (SaaS).
@@ -153,7 +153,7 @@ Jos lataus palvelusta onnistui, näet tilan *Valmis*. Se tarkoittaa, että PBIX-
 
 Kun lataus palvelusta on valmis, valitse **Luo ryhmät** -välilehti.
 
-## <a name="step-3-create-groups"></a>Vaihe 3: Luo ryhmät
+## <a name="step-3-create-groups"></a>Vaihe 3: Luo ryhmiä
 Kun olet ladannut saatavilla olevat raportit palvelusta, voit siirtyä **Luo ryhmät** -välilehteen. Tämä välilehti luo sovelluksen työtilat Power BI -palvelussa luomasi siirtosuunnitelman mukaan. Se luo sovelluksen työtilan nimellä, jonka annoit **Lataa**-välilehden **Analysoi ja suunnittele siirtoa** -kohdassa.
 
 ![](media/migrate-tool/migrate-tool-create-groups.png)
@@ -172,7 +172,7 @@ Voit varmistaa, että sovelluksen työtila luotiin kirjautumalla sisään Power 
 
 Työtilan luomisen jälkeen voit siirtyä **Lataa palveluun** -välilehteen.
 
-## <a name="step-4-upload"></a>Vaihe 4: Lataa palveluun
+## <a name="step-4-upload"></a>Vaihe 4: Lataa
 Voit **Lataa palveluun** -välilehdessä ladata raportit Power BI -palveluun. Näet luettelon palvelusta ladatuista raporteista Lataa palvelusta -välilehdessä yhdessä kohderyhmän nimen kanssa siirtosuunnitelman mukaan.
 
 ![](media/migrate-tool/migrate-tool-upload-tab.png)

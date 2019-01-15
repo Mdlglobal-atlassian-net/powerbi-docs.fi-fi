@@ -6,17 +6,17 @@ manager: kfile
 ms.reviewer: ''
 ms.custom: seodec18
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 12/21/2018
 ms.author: maggies
 LocalizationGroup: Administration
-ms.openlocfilehash: e1f1a8fdc5094fd13fc2894d9728951d9f6bde96
-ms.sourcegitcommit: 5206651c12f2b91a368f509470b46f3f4c5641e6
+ms.openlocfilehash: a46fbb0679de30e554003d858e01756b9b242b1b
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53983550"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54280719"
 ---
 # <a name="manage-data-storage-in-power-bi-workspaces"></a>Tallennustilan hallinta Power BI -työtiloissa
 
@@ -28,14 +28,14 @@ Käyttäjillä ja sovelluksen työtiloilla on omat tietokapasiteettinsa:
 * Käyttäjät, joilla on Power BI Pro -käyttöoikeus, voivat luoda sovelluksen työtiloja, joissa kussakin on enintään 10 gigatavua tietojen tallennustilaa.
 * Sovelluksen työtilan Premium-kapasiteettia ei lasketa mukaan Power BI Pro -käyttäjän tallennustilaan.
 
-Vuokraajan tasolla kokonaiskäyttö voi olla enintään 10 gigatavua Pro-käyttäjää kohden kaikkien Pro-käyttäjien osalta ja vuokraajan sovelluksen työtiloissa.
+Vuokraajan tasolla kokonaiskäyttö voi olla enintään 10 Gigatavua Pro-käyttäjää kohden kaikkien Pro-käyttäjien osalta ja vuokraajan sovelluksen työtiloissa.
 
 Lue lisätietoja muista ominaisuuksista [Power BI -hinnoittelumallista](https://powerbi.microsoft.com/pricing).
 
 Tietojen tallennustila sisältää omat tietojoukkosi ja Excel-raportit sekä tiedot, jotka joku toinen on jakanut kanssasi. Tietojoukot ovat mitä tahansa tietolähteitä, jotka olet ladannut tai joihin olet muodostanut yhteyden. Nämä tietolähteet sisältävät Power BI Desktop -tiedostot ja Excel-työkirjat, joita käytät. Seuraavat sisältyvät myös datakapasiteettiin.
 
-* Excel-alueet, jotka on kiinnitetty koontinäyttöön.
-* Reporting Servicesin paikalliset visualisoinnit, jotka on kiinnitetty Power BI -koontinäyttöön.
+* Excel-alueet, jotka on kiinnitetty raporttinäkymään.
+* Reporting Servicesin paikalliset visualisoinnit, jotka on kiinnitetty Power BI -raporttinäkymään.
 * Ladatut kuvat.
 
 Jakamasi koontinäytön koko vaihtelee sen mukaan, mitä siihen on kiinnitetty. Jos esimerkiksi kiinnität kohteita kahdesta raportista, jotka ovat osa kahta eri tietojoukkoa, kokoon sisältyvät molemmat tietojoukot.
@@ -46,7 +46,7 @@ Jakamasi koontinäytön koko vaihtelee sen mukaan, mitä siihen on kiinnitetty. 
 
 Katso, miten paljon tallennustilaa käytät Power BI -tililläsi ja hallitse tiliäsi.
 
-1. Siirry oman tallennustilan hallintaa varten kohtaan **Oma työtila** vasemmassa siirtymisruudussa.
+1. Siirry oman tallennustilan hallintaa varten kohtaan **My Workspace** vasemmassa siirtymisruudussa.
    
     ![Oma työtila](media/service-admin-manage-your-data-storage-in-power-bi/pbi_myworkspace.png)
 2. Valitse rataskuvake ![rataskuvake](media/service-admin-manage-your-data-storage-in-power-bi/pbi_gearicon.png) oikeasta yläkulmasta \> **Henkilökohtaisen tallennustilan hallinta**.
@@ -84,10 +84,10 @@ Pidä mielessä, että sinulla tai jollain muulla voi olla raportteja ja raportt
    > 
    > 
 
-Pidä mielessä, että sinulla tai jollain muulla ryhmässä voi olla raportteja ja koontinäyttöjä tietojoukon perusteella. Jos poistat tietojoukon, kyseiset raportit ja koontinäytöt eivät enää toimi.
+Pidä mielessä, että sinulla tai jollain muulla ryhmässä voi olla raportteja ja raporttinäkymiä tietojoukon perusteella. Jos poistat tietojoukon, kyseiset raportit ja raporttinäkymät eivät enää toimi.
 
-## <a name="dataset-limits"></a>Tietojoukon rajat
-Raja on 1 gigatavu tietojoukkoa kohden, joka on tuotu Power BI:lle. Jos olet valinnut Excel-kokemuksen säilyttämisen tietojen tuomisen sijaan, tietojoukkokohtainen raja on 250 Mt.
+## <a name="dataset-limits"></a>Tietojoukon rajoitukset
+Rajoitus on 1 gigatavu tietojoukkoa kohden, joka on tuotu Power BI:lle. Jos olet valinnut Excel-kokemuksen säilyttämisen tietojen tuomisen sijaan, tietojoukkokohtainen raja on 250 Mt.
 
 ## <a name="what-happens-when-you-reach-a-limit"></a>Mitä tapahtuu, kun raja saavutetaan?
 Kun saavutat tietojen kapasiteetin rajan, näkyviin tulee ohjeita palvelun sisällä. 
@@ -102,7 +102,7 @@ Tämä raja on myös ilmoitettu kohdassa **Henkilökohtaisen tallennustilan hall
 
  Kun yrität suorittaa toimintoa, joka saavuttaa yhden rajoista, näet viestin, jonka mukaan raja on ylitetty. Voit [hallita](#manage) tallennustilaasi tallennusmäärän pienentämiseksi ja rajan ohittamiseksi.
 
- ![Tallennustilarajasi on ylittynyt](media/service-admin-manage-your-data-storage-in-power-bi/powerbi-pro-over-limit.png)
+ ![Tallennustilarajoituksesi on ylittynyt](media/service-admin-manage-your-data-storage-in-power-bi/powerbi-pro-over-limit.png)
 
  Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)
 

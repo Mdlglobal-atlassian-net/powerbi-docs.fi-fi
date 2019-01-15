@@ -5,17 +5,17 @@ author: christianwade
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-admin
+ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 10/19/2018
 ms.author: chwade
 LocalizationGroup: Premium
-ms.openlocfilehash: 96756adc0c24992e99dee0236bb2eb0b81716e4b
-ms.sourcegitcommit: a764e4b9d06b50d9b6173d0fbb7555e3babe6351
+ms.openlocfilehash: 97ac445401554bf384bc1b61574534383fa2020f
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/22/2018
-ms.locfileid: "49641777"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54292265"
 ---
 # <a name="incremental-refresh-in-power-bi-premium"></a>Lisäävää päivitys Power BI Premiumissa
 
@@ -107,7 +107,7 @@ Power BI -palvelun ensimmäinen päivitys saattaa kestää kauemmin kaikkien vii
 
 ### <a name="advanced-policy-options"></a>Lisäkäytäntöasetukset
 
-#### <a name="detect-data-changes"></a>Tietojen muutosten havaitseminen
+#### <a name="detect-data-changes"></a>Havaitse tietojen muutokset
 
 10 päivän lisäävä päivitys on luonnollisesti paljon tehokkaampi kuin viiden vuoden koko päivitys. Tehokkuutta on kuitenkin mahdollista lisätä entisestään. Jos valitset **Havaitse tietojen muutokset** -valintaruudun, voit valita päivämäärä/aika-sarakkeen, jonka avulla tunnistetaan ja päivitetään vain päivät, joiden tiedot ovat muuttunut. Tällöin oletetaan, että lähdejärjestelmässä on kyseinen sarake, joka on yleensä valvontaa varten. **Tämä ei saa olla sama sarake kuin jota käytetään tietojen jakamiseen RangeStart- ja RangeEnd-parametreilla.** Tämän sarakkeen suurin arvo lasketaan jokaisen lisäävän alueen ajanjakson osalta. Jos arvo ei ole muuttunut viimeisen päivityksen jälkeen, ajanjaksoa ei tarvitse päivittää. Esimerkissä asteittain päivitettävien päivien määrä voisi vähentyä kymmenestä ehkä kahteen.
 
