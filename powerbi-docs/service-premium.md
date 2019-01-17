@@ -8,19 +8,19 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 10/21/2018
+ms.date: 01/15/2019
 ms.custom: seodec18
 LocalizationGroup: Premium
-ms.openlocfilehash: 1749fc932b3aa6cfb86de87bc9ecd71f78d92af5
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 6cc26f386a77ad8482d7f1af69fd0fdf2b7de5ac
+ms.sourcegitcommit: a20825ebd0ef4c2cb77232e3dd0e9f8260cacf71
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54281961"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54324016"
 ---
 # <a name="what-is-microsoft-power-bi-premium"></a>Mikä on Microsoft Power BI Premium?
 
-Microsoft Power BI Premium tarjoaa organisaatiollesi resurssit Power BI -palvelun käyttämiseen. Se mahdollistaa entistä luotettavamman suorituskyvyn ja suuremmat tietomäärät. Premiumin avulla voit jakaa sisältöä laajasti ilman kuluttajakohtaisten Pro-käyttöoikeuksien hankkimista. Lisätietoja on artikkelissa [Ohjeet Power BI Premiumin ostamiseen](service-admin-premium-purchase.md).
+Microsoft Power BI Premium tarjoaa organisaatiollesi resurssit Power BI -palvelun käyttämiseen. Se mahdollistaa entistä luotettavamman suorituskyvyn ja suuremmat tietomäärät. Premiumin avulla voit jakaa sisältöä laajasti ilman kuluttajakohtaisten Pro-käyttöoikeuksien hankkimista. Lisätietoja on artikkelissa [Ohjeet Power BI Premiumin ostamiseen](service-admin-premium-purchase.md).   
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/lNQDkN0GXzU?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 
@@ -41,24 +41,21 @@ Seuraavassa kuvassa on esitetty Premium-kapasiteetin ja jaetun kapasiteetin väl
 
 Jaetussa kapasiteetissa Power BI määrittää yksittäisille käyttäjille enemmän rajoituksia laadukkaan käyttökokemuksen takaamiseksi kaikille käyttäjille. Työtilasi on oletusarvoisesti jaetussa kapasiteetissa, mukaan lukien *oma työtila* ja sovelluksen työtilat.
 
-Alla olevassa taulukossa on yhteenveto jaetun kapasiteetin ja Premium-kapasiteetin välisistä eroista.
+Alla olevassa taulukossa on yhteenveto jaetun kapasiteetin ja Premium-kapasiteetin välisistä eroista:
 
 |  | Jaettu kapasiteetti | Power BI Premium -kapasiteetti |
 | --- | --- | --- |
 | **Päivitystaajuus** |8/päivä |48/päivä |
-| **Eristys erillisellä laitteistolla** |![Ei käytettävissä](media/service-premium/not-available.png) |![Käytettävissä](media/service-premium/available.png) |
-| **Yritysjakelu**  _**kaikille käyttäjille**_ | | |
-| Sovellukset ja jakaminen |![Ei käytettävissä](media/service-premium/not-available.png) |![Käytettävissä](media/service-premium/available.png) |
-| Upotettu ohjelmointirajapinta ja ohjausobjektit |![Ei käytettävissä](media/service-premium/not-available.png) |![Käytettävissä](media/service-premium/available.png)<sup>2</sup> |
-| **Power BI -raporttien paikallinen julkaisu** |![Ei käytettävissä](media/service-premium/not-available.png) |![Käytettävissä](media/service-premium/available.png) |
+| Eristys erillisellä laitteistolla |![Ei käytettävissä](media/service-premium/not-available.png) |![](media/service-premium/available.png) |
+| Yritysjakelu *kaikille käyttäjille* | | |
+| Sovellukset ja jakaminen |![Ei käytettävissä](media/service-premium/not-available.png) |![](media/service-premium/available.png) |
+| Upotettu ohjelmointirajapinta ja ohjausobjektit |![Ei käytettävissä](media/service-premium/not-available.png) |![](media/service-premium/available.png)<sup>[1](#fnt1)</sup> |
+| Power BI -raporttien paikallinen julkaisu |![Ei käytettävissä](media/service-premium/not-available.png) |![](media/service-premium/available.png) |
 | | | |
 
-*<sup>1</sup> Jos haluat lisätietoja, katso kohta [Ominaisuudet käyttöoikeustyypin mukaan](service-features-license-type.md).*  
-*<sup>2</sup> Parannuksia tulossa Power BI Premiumiin.*
+<a name="fnt1">1</a> Parannuksia tulossa Power BI Premiumiin.
 
-Lisätietoja työtilojen määrittämisestä Premium-kapasiteettiin on artikkelissa [Power BI Premiumin hallinta](service-admin-premium-manage.md).
 
-<a name="premiumskus"/>
 
 ### <a name="premium-capacity-nodes"></a>Premium-kapasiteetin solmut
 
@@ -68,22 +65,19 @@ Power BI Premium on saatavilla solmumäärityksinä eri näennäisydinkapasiteet
 
 * EM-solmuja voi käyttää vain upotetuissa käyttöönotoissa. EM-solmut eivät tue Premium-ominaisuuksia, kuten sovellusten jakamista käyttäjille, joilla ei ole Power BI Pro -käyttöoikeutta.
 
->[!NOTE]
->Tämän taulukon linkit toimivat oikein vain käyttäjillä, joilla on Office 365:n yleisen järjestelmänvalvojan rooli. Muut saavat virheilmoituksen 404.
-
-| Kapasiteetin solmu | V-ytimiä yhteensä<br/>*(Tausta ja edusta)* | Taustan näennäisytimet | Edustan V-ytimet | DirectQueryn/live-yhteyden rajoitukset | Käytettävyys |
-| --- | --- | --- | --- | --- | --- | --- |
-| [EM1 (kuukausittain)](https://portal.office.com/SubscriptionDetails?OfferId=4004702D-749C-4F74-BF47-3048F1833780&adminportal=1) |1 näennäisydin |0,5 näennäisydintä, 2,5 Gt RAM |0,5 näennäisydintä |3,75 sekunnissa |Käytettävissä |
-| [EM2 (kuukausittain)](https://portal.office.com/SubscriptionDetails?OfferId=4004702D-749C-4F74-BF47-3048F1833780&adminportal=1) |2 näennäisydintä |1 näennäisydin, 5 Gt RAM |1 näennäisydin |7,5 sekunnissa |Käytettävissä |
-| [EM3 (kuukausittain)](https://portal.office.com/SubscriptionDetails?OfferId=4004702D-749C-4F74-BF47-3048F1833780&adminportal=1) |4 näennäisydintä |2 näennäisydintä, 10 Gt RAM |2 näennäisydintä | |Käytettävissä |
-| [P1](https://portal.office.com/SubscriptionDetails?OfferId=b3ec5615-cc11-48de-967d-8d79f7cb0af1&adminportal=1) |8 näennäisydintä |4 näennäisydintä, 25 Gt RAM |4 näennäisydintä |30 sekunnissa |Käytettävissä ([kuukausittain](https://portal.office.com/SubscriptionDetails?OfferId=E4C8EDD3-74A1-4D42-A738-C647972FBE81&adminportal=1) on myös käytettävissä) |
-| [P2](https://portal.office.com/SubscriptionDetails?OfferId=062F2AA7-B4BC-4B0E-980F-2072102D8605&adminportal=1) |16 näennäisydintä |8 näennäisydintä, 50 Gt RAM |8 näennäisydintä |60 sekunnissa |Käytettävissä |
-| [P3](https://portal.office.com/SubscriptionDetails?OfferId=40c7d673-375c-42a1-84ca-f993a524fed0&adminportal=1) |32 näennäisydintä |16 näennäisydintä, 100 Gt RAM |16 näennäisydintä |120 sekunnissa |Käytettävissä |
+| Kapasiteetin solmu | V-ytimiä yhteensä<br/>*(Tausta+edusta)*  | Taustan näennäisytimet <sup>[1](#fn1)</sup> | Edustan näennäisytimet <sup>[2](#fn2)</sup> | DirectQueryn/live-yhteyden rajoitukset | Samanaikaisten päivitysten enimmäismäärä |  Käytettävyys
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| EM1 (kuukausittain) |1 näennäisydin |0,5 näennäisydintä, 2,5 Gt RAM |0,5 näennäisydintä |3,75 sekunnissa |  1 | Käytettävissä |
+| EM2 (kuukausittain) |2 näennäisydintä |1 näennäisydin, 5 Gt RAM |1 näennäisydin |7,5 sekunnissa |  2 | Käytettävissä |
+| EM3 (kuukausittain) |4 näennäisydintä |2 näennäisydintä, 10 Gt RAM |2 näennäisydintä | | 3 |  Käytettävissä |
+| P1 |8 näennäisydintä |4 näennäisydintä, 25 Gt RAM |4 näennäisydintä |30 sekunnissa | 6 | Käytettävissä (kuukausittainen vaihtoehto myös käytettävissä) |
+| P2 |16 näennäisydintä |8 näennäisydintä, 50 Gt RAM |8 näennäisydintä |60 sekunnissa | 12 | Käytettävissä |
+| P3 |32 näennäisydintä |16 näennäisydintä, 100 Gt RAM |16 näennäisydintä |120 sekunnissa | 24 | Käytettävissä |
 | | | | | | | |
 
-* Edustan v-ytimet vastaavat verkkopalvelusta, koontinäytön ja raportin tiedostohallinnasta, käyttöoikeuksien hallinnasta, ajoituksista, ohjelmointirajapinnoista, latauksista ja yleisesti ottaen kaikesta, mikä liittyy käyttökokemukseen.
+<a name="fn1">1</a>: Edustan näennäisytimet vastaavat verkkopalvelusta. Tähän sisältyvät esimerkiksi raporttinäkymän ja raportin tiedostohallinta, käyttöoikeuksien hallinta, ajoitus, ohjelmointirajapinnat, lataukset ja yleisesti ottaen kaikki, mikä liittyy käyttökokemukseen. 
 
-* Taustan v-ytimet vastaavat raskaasta työstä eli kyselyiden käsittelystä, välimuistin hallinnasta, R-palvelinten suorittamisesta, tietojen päivittämisestä, luonnollisen kielen käsittelystä, reaaliaikaisista syötteistä sekä raporttien ja kuvien palvelinpuolen hahmontamisesta. Taustan v-ytimille varataan myös tietty määrä muistia. Riittävä muisti on erityisen tärkeä, kun käsitellään suuria tietomalleja tai useita aktiivisia tietojoukkoja.
+<a name="fn2">2</a>: Taustan näennäisytimet vastaavat raskaasta työstä eli kyselyiden käsittelystä, välimuistin hallinnasta, R-palvelinten suorittamisesta, tietojen päivittämisestä, luonnollisen kielen käsittelystä, reaaliaikaisista syötteistä sekä raporttien ja kuvien palvelinpuolen hahmontamisesta. Taustan v-ytimille varataan myös tietty määrä muistia. Riittävä muisti on erityisen tärkeä, kun käsitellään suuria tietomalleja tai useita aktiivisia tietojoukkoja.
 
 ## <a name="workloads-in-premium-capacity"></a>Kuormitukset Premium-kapasiteetissa
 
@@ -112,11 +106,9 @@ Seuraava taulukko näyttää muistin oletus- ja vähimmäisarvot, jotka perustuv
 
 ### <a name="considerations-for-paginated-reports"></a>Huomioitavaa sivutetuissa raporteissa
 
-Jos käytät sivutetut raportit -kuormitusta, huomioi seuraavat asiat.
+Jos käytät sivutettuja raportteja, muista, että niiden avulla voit suorittaa omaa koodia raporttia hahmontaessasi. Näin voit esimerkiksi sallia tekstin värin dynaamisen muuttamisen sisällön perusteella. Power BI Premium -kapasiteetin turvaamiseksi sivutetut raportit suoritetaan kapasiteetin sisäisessä erillisessä tilassa. Tälle tilalle osoitetaan kaikki määrittämäsi muisti riippumatta siitä, onko kuormitus aktiivinen. Jos käytät Power BI -raportteja tai tietovoita samassa kapasiteetissa, varmista, että olet määrittänyt sivutetuille raporteille riittävän vähän muistia, jotta muiden kuormitusten nopeus ei kärsi.
 
-* **Muistin varaaminen sivutetuissa raporteissa**: Sivutettujen raporttien avulla voit suorittaa omaa koodia raporttia hahmontaessasi. Näin voit esimerkiksi sallia tekstin värin dynaamisen muuttamisen sisällön perusteella. Power BI Premium -kapasiteetin turvaamiseksi sivutetut raportit suoritetaan kapasiteetin sisäisessä erillisessä tilassa. Tälle tilalle osoitetaan kaikki määrittämäsi muisti riippumatta siitä, onko kuormitus aktiivinen. Jos käytät Power BI -raportteja tai tietovoita samassa kapasiteetissa, varmista, että olet määrittänyt sivutetuille raporteille riittävän vähän muistia, jotta muiden kuormitusten nopeus ei kärsi.
-
-* **Sivutetut raportit eivät ole käytettävissä**: Sivutetut raportit -kuormitus saattaa lakata toimimasta joissain harvinaisissa tapauksissa. Näissä tapauksissa kuormitus näyttää virhetilan hallintaportaalissa ja raportin hahmontaminen aikakatkaistaan käyttäjiltä. Voit ratkaista ongelman poistamalla kuormituksen käytöstä ja ottamalla sen uudelleen käyttöön.
+Sivutetut raportit -kuormitus saattaa lakata toimimasta joissain harvinaisissa tapauksissa. Näissä tapauksissa kuormitus näyttää virhetilan hallintaportaalissa ja raportin hahmontaminen aikakatkaistaan käyttäjiltä. Voit ratkaista ongelman poistamalla kuormituksen käytöstä ja ottamalla sen uudelleen käyttöön.
 
 ## <a name="power-bi-report-server"></a>Power BI -raporttipalvelin
 
@@ -129,6 +121,5 @@ Power BI Premium sisältää myös mahdollisuuden suorittaa Power BI -raporttipa
 [Power BI Premiumin hallinta](service-admin-premium-manage.md)
 [Microsoft Power BI Premiumin tekninen raportti](https://aka.ms/pbipremiumwhitepaper)
 [Power BI:n yrityskäyttöönoton suunnittelemisen tekninen raportti](https://aka.ms/pbienterprisedeploy)
-[Power BI:n hallinta organisaatiossasi](service-admin-administering-power-bi-in-your-organization.md)
 
 Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)

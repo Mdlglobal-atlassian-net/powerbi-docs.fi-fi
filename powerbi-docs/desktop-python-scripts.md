@@ -10,18 +10,26 @@ ms.topic: conceptual
 ms.date: 06/18/2018
 ms.author: otarb
 LocalizationGroup: Connect to data
-ms.openlocfilehash: d098b55367e4d8ff13dc2fd22593af00dffe611f
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 5eab760a3bfbb590a1a6242984aa1be88064409f
+ms.sourcegitcommit: a20825ebd0ef4c2cb77232e3dd0e9f8260cacf71
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54286929"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54323947"
 ---
 # <a name="run-python-scripts-in-power-bi-desktop"></a>Suorita Python-komentosarjoja Power BI Desktopissa
 Voit suorittaa Python-komentosarjoja suoraan **Power BI Desktopissa** ja tuoda tietojoukot Power BI Desktopin tietomallin.
 
 ## <a name="install-python"></a>Pythonin asentaminen
 Jos haluat suorittaa Python-komentosarjoja Power BI Desktopissa, sinun on asennettava **Python** paikalliseen tietokoneeseen. Voit ladata ja asentaa **Pythonin** maksutta useista sijainneista, mukaan lukien [Pythonin viralliselta lataussivulta](https://www.python.org/) ja [Anacondasta](https://anaconda.org/anaconda/python/). Nykyinen Python-komentosarjan versio Power BI Desktopissa tukee Unicode-merkkejä sekä välilyöntejä (tyhjiä merkkejä) asennuspolulla.
+
+### <a name="install-required-python-packages"></a>Asenna tarvittavat Python-paketit
+Power BI:n Python-integrointi edellyttää kahden Python-paketin (Pandas ja Matplotlib) asentamista.  Asenna seuraavat kaksi pakettia pip-komentorivityökalun avulla,
+
+```
+pip install pandas
+pip install matplotlib
+```
 
 ## <a name="run-python-scripts"></a>Suorita Python-komentosarjoja
 Power BI Desktopin ensimmäisinä vaiheina voit suorittaa Python-komentosarjoja ja luoda tietomallin, josta voit luoda raportteja ja jakaa niitä Power BI -palvelussa.
