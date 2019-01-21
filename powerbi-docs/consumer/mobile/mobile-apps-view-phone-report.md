@@ -1,20 +1,20 @@
 ---
 title: Puhelimelle optimoitujen Power BI ‑raporttien tarkastelu
 description: Lue, miten voit toimia Power BI ‑puhelinsovelluksissa katselemista varten optimoitujen raporttisivujen kanssa.
-author: maggiesMSFT
+author: mshenhav
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-mobile
+ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 09/14/2018
-ms.author: maggies
-ms.openlocfilehash: 06a8d15ca894b877199f22fc6c00d4c34827d76b
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.author: mshenhav
+ms.openlocfilehash: 99f40837f4b2c188120c4ca0311be3e9ded5fe95
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46547794"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54276902"
 ---
 # <a name="view-power-bi-reports-optimized-for-your-phone"></a>Puhelimelle optimoitujen Power BI ‑raporttien tarkastelu
 
@@ -48,7 +48,7 @@ Jos puhelinoptimoituun raporttiin on määritetty suodattimia, voit käyttää n
     ![BI-puhelinversion puhelinraportin lisäsuodatin](./media/mobile-apps-view-phone-report/power-bi-iphone-advanced-filter-toronto.gif)
 
 ## <a name="cross-highlight-visuals"></a>Visualisointien ristiinkorostaminen
-Visualisointien ristiinkorostaminen toimii puhelinraporteissa samalla tavalla kuin Power BI -palvelussa ja vaakasuuntaista näkymää käyttävissä puhelinraporteissa: kun valitset jostakin visualisoinnista tietoja, vastaavat tiedot korostuvat myös muissa saman sivun visualisoinneissa.
+Visualisointien ristiinkorostaminen puhelinraporteissa toimii samalla tavoin kuin Power BI -palvelussa ja puhelinraporteissa vaakasuunnassa: kun valitset tietoja yhdessä visualisoinnissa, tiedot korostuvat myös muissa tämän sivun visualisoinneissa.
 
 Lue lisää [suodattamisesta ja korostamisesta Power BI:ssä](../../power-bi-reports-filters-and-highlighting.md).
 
@@ -70,7 +70,7 @@ Näytön kokorajoitusten vuoksi jotkin toiminnot ovat käytettävissä vain kohd
 
 * **Poraudu alaspäin** johdattaa tarkastelijan syvemmälle visualisoinnin esittämiin tietoihin. Lisätietoja [alas- ja ylöspäin porautumisesta](mobile-apps-view-phone-report.md#drill-down-in-a-visual) puhelinraporteissa annetaan jäljempänä.
 * **Lajittele** visualisoinnin arvoja.
-* **Kumoa** poistaa visualisoinnin tarkastelussa tehdyt toimet ja palauttaa raportin luonnin yhteydessä määritetyn tietojoukon.
+* **Kumoa**: poistaa visualisoinnin tarkastelussa tehdyt toimet ja palauttaa raportin luonnin yhteydessä määritetyn tietojoukon.
   
     Jos haluat poistaa kaikki tarkastelutoimet, napauta kolmea pistettä (**...**) > **Kumoa**.
   

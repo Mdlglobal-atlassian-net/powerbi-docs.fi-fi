@@ -6,17 +6,17 @@ manager: kfile
 ms.reviewer: ''
 featuredvideoid: B2vd4MQrz4M
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 06/22/2018
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: 6de9427a11ae5aa43563ce9e21371d231a1dd3a9
-ms.sourcegitcommit: b03912343a5a214c6bb972aaa6aa051c2a5f4332
+ms.openlocfilehash: 2a033e6893cffb71c4a898f1260aca615ae4e4b8
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52900525"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54291980"
 ---
 # <a name="tutorial-get-started-with-power-bi-service-apppowerbicom"></a>Opetusohjelma: Power BI -palvelun (app.powerbi.com) käytön aloittaminen
 Tämä opasohjelma auttaa ***Power BI -palvelun*** aloittamisessa. Suosittelemme lukemaan [Mikä Power BI on](power-bi-overview.md) -ohjeartikkelin, jotta saat käsityksen, miten Power BI -palvelu sopii yhteen muiden Power BI -tuotteiden kanssa.
@@ -59,7 +59,7 @@ Jos sinulla on tärkeitä tietoja Excel- tai CSV-tiedostoissa, voit luoda Power 
 
 Lue muista tavoista, joilla voit [hakea tietoja Power BI:hin](service-get-data.md).
 
-## <a name="step-1-get-data"></a>Vaihe 1: Tietojen hakeminen
+## <a name="step-1-get-data"></a>Vaihe 1: Nouda tiedot
 Tämä on esimerkki tietojen hakemisesta CSV-tiedostosta. Haluatko noudattaa tätä opasohjelmaa? [Lataa CSV-esimerkkitiedosto](http://go.microsoft.com/fwlink/?LinkID=521962).
 
 1. [Kirjaudu sisään Power BI:hin](http://www.powerbi.com/). Eikö sinulla ole tiliä? Ei huolta, voit rekisteröityä ilmaiseen kokeiluversioon.
@@ -128,7 +128,7 @@ Nyt kun olet muodostanut yhteyden tietoihin, voit aloittaa tutustumisen.  Kun ol
    
    Voit palata raporttiin milloin tahansa valitsemalla koontinäytön uuden ruudun. Power BI palauttaa sinut raporttieditorin lukunäkymään. Voit palata muokkausnäkymään valitsemalla **Muokkaa raporttia** yläreunan valikkorivistä. Kun olet muokkausnäkymässä, jatka tutkimista ja ruutujen kiinnittämistä. 
 
-## <a name="step-3--continue-the-exploration-with-qa-natural-language-querying"></a>Vaihe 3: Jatka tutustumista Q&A:lla (luonnollisenkielinen kysely)
+## <a name="step-3--continue-the-exploration-with-qa-natural-language-querying"></a>Vaihe 3:  Jatka tutustumista Q&A:lla (luonnollisella kielellä kirjoitettu kysely)
 1. Voit tutkia tietoja nopeasti esittämällä kysymyksen Q&A-ruutuun. Q&A-kysymysruutu sijaitsee koontinäytön yläreunassa (**Kysy kysymys tiedoistasi**) ja raportin yläreunan valikkorivissä (**Kysy kysymys**). Yritä esimerkiksi kirjoittaa ”mistä segmentistä tuli paras tuotto”.
    
    ![Q&A-pohja](media/service-get-started/powerbi-qna.png)

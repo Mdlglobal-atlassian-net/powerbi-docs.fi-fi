@@ -5,17 +5,17 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/13/2018
+ms.date: 01/11/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: d57d31e87197ee9d764a8d263dd4ee6dd0c75ac3
-ms.sourcegitcommit: 6a6f552810a596e1000a02c8d144731ede59c0c8
+ms.openlocfilehash: d0c6222c4b10307985ad039c3b391c8648614979
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/14/2018
-ms.locfileid: "51619628"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54280052"
 ---
 # <a name="accessibility-in-power-bi-desktop-reports"></a>Power BI Desktop -raporttien helppokäyttöisyys
 Power BI:ssa on ominaisuuksia, joiden avulla toimintarajoitteisten henkilöiden on helppo käyttää ja käsitellä Power BI -raportteja. Näitä ominaisuuksia ovat esimerkiksi mahdollisuus käyttää raporttia näppäimistön tai näytönlukuohjelman avulla, kohdistaminen sivun eri objekteihin sarkaimella sekä ymmärtäväinen merkkien käyttö visualisoinneissa.
@@ -33,21 +33,21 @@ Kun tarkastelet raporttia, skannaustilan tulisi yleensä olla poissa käytöstä
 
 Voit myös vaihtaa kohdistusta raporttisivujen välilehtien tai raportin tietyn sivun objektien välillä painamalla **Ctrl + F6**.
 
-* Kun kohdistus on *raportin sivujen välilehdillä*, käytä *sarkain*- tai *nuolinäppäimiä* siirtääksesi kohdistuksen sivulta toiselle. Näytönlukuohjelma voi lukea raporttisivun otsikon ja sen, onko kyseinen sivu sillä hetkellä valittuna. Voit ladata raportin sivun, jossa kohdistus on sillä hetkellä, painamalla *Enter*- tai *välilyöntinäppäintä*.
-* Kun kohdistus on ladatulla *raportin sivulla*, voit siirtää kohdistuksen *sarkainpainikkeella* sivun objektien välillä. Objekteja ovat kaikki tekstiruudut, kuvat, muodot ja kaaviot. Näytönlukija lukee objektin tyypin, kyseisen objektin mahdollisen otsikon ja objektin kuvauksen, jos sille on sellainen raportin kirjoittajan toimesta annettu. 
+* Kun kohdistus on *raportin sivujen välilehdillä*, käytä *sarkain*- tai *nuolinäppäimiä* siirtääksesi kohdistuksen sivulta toiselle. Näytönlukuohjelma lukee raporttisivun otsikon ja sen, onko kyseinen sivu sillä hetkellä valittuna. Voit ladata raportin sivun, jossa kohdistus on sillä hetkellä, painamalla *Enter*- tai *välilyöntinäppäintä*.
+* Kun kohdistus on ladatulla *raportin sivulla*, voit siirtää kohdistuksen *sarkainpainikkeella* sivun objektien välillä. Objekteja ovat kaikki tekstiruudut, kuvat, muodot ja kaaviot. Näytönlukuohjelma lukee objektin tyypin, kyseisen objektin mahdollisen otsikon ja objektin kuvauksen, jos raportin kirjoittaja on sille sellaisen antanut. 
 
-Jos haluat navigoidessasi visualisointien välillä, käsitellä jotain niistä tarkemmin, paina **Alt + VAIHTO + F10** siirtääksesi kohdistuksen visualisoinnin otsikkoon, joka sisältää eri vaihtoehtoja, kuten lajittelun, kaavion tietojen tarkastelun ja kohdistustilan. 
+Voit siirtää kohdistuksen visualisoinnin ylätunnisteeseen eri visualisointien välillä siirtyessäsi painamalla **Alt + Vaihto + F10**. Ylätunniste sisältää asetuksia, kuten lajittelun, kaavion tietojen tarkastelun ja kohdistustilan. 
 
 ![Siirrä kohdistus visuaaliseen otsikkoon painamalla Power BI Desktopissa Alt + vaihto + F10](media/desktop-accessibility/accessibility_08.png)
 
-Voit avata *Näytä tiedot* -ikkunan helppokäyttöisen version painamalla **Alt + vaihto + F11**. Tämän avulla voit tutkia visualisoinnissa käytettäviä tietoja HTML-taulukkona, käyttäen samoja pikanäppäimiä, joita käytät normaalisti näytönlukijassa. 
+Voit avata *Näytä tiedot* -ikkunan helppokäyttöisen version painamalla **Alt + vaihto + F11**. Tämän avulla voit tutkia visualisoinnissa käytettäviä tietoja HTML-taulukkona käyttäen samoja pikanäppäimiä, joita käytät normaalisti näytönlukuohjelmassa. 
 
 ![Voit avata helppokäyttöisen visualisoinnin Power BI Desktopissa painamalla Alt + vaihto + F11](media/desktop-accessibility/accessibility_04.png)
 
 > [!NOTE]
 > Näytä tiedot -ominaisuus on käytettävissä vain näytönlukijan kanssa tällä pikanäppäinyhdistelmällä. Jos avaat Näytä tiedot -ominaisuuden visualisoinnin otsikon vaihtoehdoista, ei se ole näytönlukija käytettävissä. Ota skannaustila käyttöön, kun käytät Näytä tiedot -ominaisuutta. Näin voit hyödyntää kaikkia näytönlukuohjelman tarjoamia pikanäppäimiä.
 
-**Power BI Desktopin** heinäkuun 2018 julkaisusta alkaen myös osittajiin on lisätty helppokäyttötoimintoja. Kun valitset osittajan, voit säätää osittajan arvoa siirtymällä sen ohjausobjektista toiseen käyttämällä CTRL-näppäintä ja oikeaa nuolinäppäintä. Voit esimerkiksi ensin keskittyä pyyhkimeen painamalla CTRL + oikea nuoli. Sen jälkeen välilyönnin painaminen vastaa pyyhinpainikkeen napsauttamista eli poistaa kaikki osittajan arvot. 
+**Power BI Desktopin** heinäkuun 2018 julkaisusta alkaen myös osittajiin on lisätty helppokäyttötoimintoja. Kun valitset osittajan, voit säätää osittajan arvoa siirtymällä sen ohjausobjektista toiseen käyttämällä CTRL-näppäintä ja oikeaa nuolinäppäintä. Voit esimerkiksi ensin siirtää aktiivisuuden pyyhkimeen painamalla CTRL + oikea nuoli. Sen jälkeen välilyönnin painaminen vastaa pyyhinpainikkeen napsauttamista eli poistaa kaikki osittajan arvot. 
 
 Voit siirtyä osittajan ohjausobjektista toiseen painamalla sarkainnäppäintä. Sarkaimen painaminen pyyhkimen kohdalla siirtää kohdistuksen avattavan valikon painikkeeseen. Seuraava painallus siirtää kohdistuksen ensimmäiseen osittaja-arvoon, jos niitä on useita (kuten alue). 
 
@@ -69,12 +69,12 @@ Seuraavien vihjeiden avulla voit luoda entistä helppokäyttöisempiä **Power B
   
   * Erilaisen *merkinnän muodon* käyttö kullakin rivillä helpottaa rivien (tai alueiden) erottamista toisistaan.
 * Kuten edellisessäkin luettelokohdassa, välitä tietoa muillakin keinoilla kuin värillä. Muotojen käytön lisäksi rivi- ja pistekaavioissa, sinun ei ole pakko noudattaa ehdollista muotoilua tarjotaksesi merkityksellisiä tietoja taulukoiden ja matriisien muodossa. 
-* Valitse raporttisi jokaiselle visualisoinnille tarkoituksellinen lajittelujärjestys. Kun näytönlukijan käyttäjä tarkastelee kaavion tietoja, tiedon poimitaan samassa järjestyksessä kuin visualisoinnissa.
+* Valitse raporttisi jokaiselle visualisoinnille tarkoituksellinen lajittelujärjestys. Kun näytönlukuohjelman käyttäjä tarkastelee kaavion tietoja, tiedot poimitaan samassa järjestyksessä kuin visualisoinnissa.
 * Valitse teemagalleriasta *teema*, jonka kontrasti on suuri ja soveltuu henkilöille, joiden värinäkö on alentunut. Voit tuoda teeman [**Teema** -esikatseluominaisuudella](desktop-report-themes.md).
 * Tarjoa *vaihtoehtoinen teksti* jokaisesta raportin objektista. Näin varmistat, että raportissa olevan visualisoinnin merkitys välittyy myös sellaisille käyttäjille, jotka eivät voi nähdä visualisointia, kuvaa, muotoa tai tekstiruutua. Voit antaa *vaihtoehtoisen tekstin* mistä tahansa **Power BI Desktop** -raportin objektista valitsemalla objektin (esimerkiksi visualisointi tai muoto) ja valitsemalla sitten **Visualisoinnit**-ruudusta **Muoto**-osion, laajentamalla **Yleiset**-kohdan, siirtymällä sivun alareunaan ja täyttämällä **Vaihtoehtoinen teksti** -tekstiruudun.
   
   ![Voit lisätä raportin minkä tahansa objektin vaihtoehtoisen tekstin kohdasta Visualisoinnit > Muoto > Yleinen > Vaihtoehtoinen teksti -ruutu](media/desktop-accessibility/accessibility_02.png)
-* Varmista, että raportin tekstin ja taustavärien välinen kontrasti on riittävä. Useiden käytettävissä olevien työkalujen, kuten [värikontrastianalysaattorin](https://developer.paciellogroup.com/resources/contrastanalyser/) avulla voit tarkastella raporttisi värejä. 
+* Varmista, että raportin tekstin ja taustavärien välinen kontrasti on riittävä. Useiden käytettävissä olevien työkalujen, kuten [värikontrastianalysaattorin](https://developer.paciellogroup.com/resources/contrastanalyser/), avulla voit tarkastella raporttisi värejä. 
 * Käytä tekstin kokoa ja fontteja, jotka ovat helppoja lukea. Pieni teksti ja vaikeaselkoiset fontit heikentävät helppokäyttöisyyttä.
 * Sisällytä kaikkiin visualisointeihin otsikko, akselinimet ja arvopisteiden nimet.
 * Käytä kuvaavia otsikoita kaikille raportin sivuille.
@@ -93,7 +93,7 @@ Käytettäessä suuren kontrastin -tiloja Windowsissa, niiden asetukset ja valit
 
 ![Suuren kontrastin Windows-asetukset](media/desktop-accessibility/accessibility_05.png)
 
-**Power BI Desktop** tunnistaa automaattisesti mikä suuren kontrastin teemaa Windows käyttää, ja käyttää näitä asetuksia raporteissasi. Suuren kontrastin värit säilyvät raportissa, kun se julkaistaan Power BI-palvelussa tai muualla.
+**Power BI Desktop** tunnistaa automaattisesti mikä suuren kontrastin teemaa Windows käyttää, ja käyttää näitä asetuksia raporteissasi. Suuren kontrastin värit säilyvät raportissa, kun se julkaistaan Power BI -palvelussa tai muualla.
 
 ![Suuren kontrastin Windows-asetukset](media/desktop-accessibility/accessibility_05b.png)
 
@@ -141,14 +141,14 @@ Pyrkimyksissämme parantaa helppokäyttötoimintoja yllä olevan luettelon kokem
 ### <a name="pane-navigation"></a>Siirtyminen ruudussa
 | Toiminto           | Paina                |
 | :------------------- | :------------------- |
-| Avaa pikavalikko | <ul><li>Windows-näppäimistö: Windows-kontekstiavain + F10.  Windows-kontekstiavain on vasemman Alt-näppäimen ja vasemman nuolinäppäimen välissä</li><li>Muu näppäimistö: Vaihto + F10</li></ul> |
+| Avaa pikavalikko | <ul><li>Windows-näppäimistö: Windows-kontekstinäppäin + F10.  Windows-kontekstiavain on vasemman Alt-näppäimen ja vasemman nuolinäppäimen välissä</li><li>Muu näppäimistö: Vaihto + F10</li></ul> |
 
 ### <a name="slicer"></a>Osittaja
 | Toiminto           | Paina                |
 | :------------------- | :------------------- |
 | Osittajan käyttö | Ctrl + Oikea nuolinäppäin |
 
-### <a name="selection-pane"></a>Valintaruutu
+### <a name="selection-pane"></a>Valinnan ruutu
 | Toiminto           | Paina                |
 | :------------------- | :------------------- |
 | Aktivoi valintaruutu | F6 |
@@ -170,7 +170,10 @@ Pyrkimyksissämme parantaa helppokäyttötoimintoja yllä olevan luettelon kokem
 | Valitse nykyisen valinnan kaikki esiintymät | Ctrl + Vaihto + L |
 | Valitse nykyisen sanan kaikki esiintymät | Ctrl + F2 |
 
-
+### <a name="enter-data"></a>Anna tiedot
+| Toiminto           | Paina                |
+| :------------------- | :------------------- |
+| Poistu muokattavasta ruudukosta | Ctrl + Sarkain |
 
 
 ## <a name="next-steps"></a>Seuraavat vaiheet

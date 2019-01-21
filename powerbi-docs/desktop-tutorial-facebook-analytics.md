@@ -5,17 +5,17 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: tutorial
 ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Learn more
-ms.openlocfilehash: ec90e63de1e42350ff205febdc66abf4ba6ee626
-ms.sourcegitcommit: 05303d3e0454f5627eccaa25721b2e0bad2cc781
+ms.openlocfilehash: ae2d40d5a53a7a84c0f6070a7be1011968d7ed7b
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "52578493"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54276970"
 ---
 # <a name="tutorial-facebook-analytics-using-power-bi-desktop"></a>Opetusohjelma: Facebook-analytiikka Power BI Desktopin avulla
 
@@ -187,7 +187,7 @@ Näyttää paremmalta, mutta kaikissa arvopisteiden otsikoissa näkyy desimaalin
 2. Valitse Power Query -editorissa **Kommenttien määrä** -sarake ja muuta tietotyypiksi **Kokonaisluku** jollakin seuraavista tavoista: 
    - Valitse **Kommenttien määrä** -sarakeotsikon vieressä oleva **1.2**-kuvake ja valitse **Kokonaisluku** avattavasta luettelosta.
    - Napsauta sarakeotsikkoa hiiren kakkospainikkeella ja valitse **Muuta tyyppi > Kokonaisluku**.
-   - Valitse Aloitus-välilehden **Muunna**-ryhmästä **Tietotyyppi: desimaaliluku** tai **Muunna**-välilehden **Mikä tahansa sarake** -ryhmä ja valitse **Kokonaisluku**.
+   - Valitse **Tietotyyppi: desimaaliluku** Aloitus-välilehden **Muunna**-ryhmästä, tai valitse **Muunna**-välilehden **Mikä tahansa sarake** -ryhmä ja valitse sieltä **Kokonaisluku**.
    
    Sarakeotsikon kuvakkeeksi muuttuu **123** osoittamaan Kokonaisluku-tietotyyppiä.
    

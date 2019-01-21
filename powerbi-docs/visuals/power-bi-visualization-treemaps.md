@@ -6,24 +6,24 @@ manager: kvivek
 ms.reviewer: ''
 featuredvideoid: IkJda4O7oGs
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 08/23/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 92e86817231e959db50af3c32fe8eba761c79a61
-ms.sourcegitcommit: 769ef3c8cbafd9ad5979eb4023a394ac7dba8d02
+ms.openlocfilehash: dd7360761cc78aed9b01eb99165de9f0b4b91ffe
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/28/2018
-ms.locfileid: "47448864"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54274762"
 ---
 # <a name="treemaps-in-power-bi"></a>Puukartat Power BI:ssä
 Puukartoissa hierarkkiset tiedot näytetään sisäkkäisten suorakulmioiden joukkona.  Hierarkian kukin taso on edustettuna värillisenä suorakulmiona (jota kutsutaan usein ”haaraksi”), joka sisältää muita suorakulmioita (”lehtiä”).  Kunkin suorakulmion sisällä oleva suorakulmio perustuu mitattavaan arvoon. Suorakulmiot järjestetään koon mukaan vasemmasta yläkulmasta (suurin) oikeaan alakulmaan (pienin).
 
 ![](media/power-bi-visualization-treemaps/pbi-nancy_viz_treemap.png)
 
-Jos esimerkiksi analysoin yritykseni myyntilukuja, voin valita näytettäviksi ylätason suorakulmioita *(haaroja)* vaatetuskategorioiden mukaan: **Kaupunki**, **Maaseutu**, **Nuoriso** ja **Sekalaiset**.  Luokkia kuvastavat suorakulmat ositetaan luokkiin kuuluvien vaatevalmistajien mukaan pienemmiksi suorakulmioiksi, joita kutsutaan myös *lehdiksi*. Näiden pienempien suorakulmioiden koko ja väri perustuu myyntimääriin.  
+Jos esimerkiksi analysoin yritykseni myyntilukuja, voin valita näytettäviksi ylätason suorakulmioita *(haaroja)* vaatetuskategorioille: **Kaupunki**, **Maaseutu**, **Nuoriso** ja **Sekalaiset**.  Luokkia kuvastavat suorakulmat ositetaan luokkiin kuuluvien vaatevalmistajien mukaan pienemmiksi suorakulmioiksi, joita kutsutaan myös *lehdiksi*. Näiden pienempien suorakulmioiden koko ja väri perustuu myyntimääriin.  
 
 Yllä olevan **Kaupunki**-luokan vaatteista `Maximus`-tyyppisiä myytiin paljon hyvin, `Natura`- ja `Fama`-tyyppisiä vähemmän, ja `Leo`-tyyppisiä heikoimmin.  Näiden perusteella **Kaupunki**-puukartallani on seuraavat ominaisuudet:
 * suurin suorakulmio (`Maximus`) vasemmassa yläkulmassa

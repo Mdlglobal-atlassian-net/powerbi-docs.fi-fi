@@ -5,17 +5,17 @@ author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 05/02/2018
 ms.author: maggies
 LocalizationGroup: Create reports
-ms.openlocfilehash: 3a0ef369aa690044dbef9c4ef0cda070565b9922
-ms.sourcegitcommit: e17fc3816d6ae403414cf5357afbf6a492822ab8
+ms.openlocfilehash: e1748c478f9f58b568b901f3a243e64e4658f6a6
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/04/2018
-ms.locfileid: "52829891"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54273083"
 ---
 # <a name="use-power-bi-service-or-power-bi-desktop-to-create-a-custom-answer-page-for-cortana"></a>Käytä Power BI -palvelua tai Power BI Desktopia luodaksesi mukautettuja vastaussivuja Cortanaa varten
 Hyödynnä Power BI:n kaikkia ominaisuuksia ja luo erityisiä raporttisivuja, joita kutsutaan *Cortana-vastaussivuiksi* (sekä joskus nimellä *Cortana-vastauskortit*), ja jotka on suunniteltu vastaamaan erityisesti Cortana-kysymyksiin.
@@ -34,9 +34,9 @@ Neljä asiakirjaa opastavat Cortanan määrittämisessä ja käyttämisessä Pow
 
 **Artikkeli 2**: [Power BI -raporttien hakeminen: Cortanan käyttöönotto ja integrointi Power BI:hin Windowsissa](service-cortana-enable.md)
 
-**Artikkelin 3**: Tämä artikkeli
+**Artikkeli 3**: Tämä artikkeli
 
-**Artikkelin 4**: [Ongelmien vianmääritys](service-cortana-troubleshoot.md)
+**Artikkeli 4**: [Ongelmien vianmääritys](service-cortana-troubleshoot.md)
 
 ## <a name="create-a-cortana-answer-page-designed-specifically-for-cortana"></a>Cortanalle erityisesti suunnitellun Cortana-vastaussivun luominen
 Raportissa esiintyvän *Cortana-vastaussivun* koko on suunniteltu niin, että Cortana voi näyttää sen näytöllä vastauksena kysymykseen. Cortana-vastaussivun luominen:

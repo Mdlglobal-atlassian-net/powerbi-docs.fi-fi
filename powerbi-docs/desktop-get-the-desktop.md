@@ -5,17 +5,17 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 11/01/2018
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 5eb2e63d9bac7249e106ad4c4b525ca3f3ab5cf8
-ms.sourcegitcommit: 0611860a896e636ceeb6e30ce85243bfd8e7b61d
+ms.openlocfilehash: be4ebfdfa7dca5ce212c2b5d242d87b0001b7750
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50909590"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54281915"
 ---
 # <a name="get-power-bi-desktop"></a>Power BI Desktopin hankkiminen
 **Power BI Desktopilla** voit luoda tarkempia kyselyjä, malleja ja raportteja, jotka visualisoivat tietoja. **Power BI Desktopilla** voit luoda tietomalleja ja raportteja sekä jakaa töitäsi julkaisemalla niitä Power BI -palvelussa.  **Power BI Desktop** on ladattavissa maksutta.
@@ -94,10 +94,10 @@ Alla on lueteltu **Power BI Desktopin** käytön vähimmäisvaatimukset:
 * Tarvitset Windows 7:n tai Windows Server 2008 R2:n tai tätä uudemman käyttöjärjestelmän.
 * Tarvitset .NET 4.5:n.
 * Tarvitset Internet Explorer 9:n tai tätä uudemman selaimen.
-* **RAM-muisti:** vapaata muistia täytyy olla vähintään 1 Gt, suositus on kuitenkin 1,5 Gt.
+* **Muisti (RAM):** vapaata muistia täytyy olla vähintään 1 Gt, suositus on kuitenkin vähintään 1,5 Gt.
 * **Näyttö:** näytön tarkkuuden täytyy olla vähintään 1 440 x 900, suositus on 1 600 x 900 (16:9). Pienempiä näyttötarkkuuksia (esimerkiksi 1 024 x 768 tai 1 280 x 800) ei suositella, koska jotkin ohjausobjektit (esimerkiksi aloitusnäytön sulkemistoiminto) eivät näy kunnolla niillä.
-* **Windowsin näyttöasetukset**: Jos näyttöasetuksesi on määritetty siten, että tekstin, sovellusten tai muiden kohteiden koko on yli 100 %, et ehkä näe joitain valintaikkunoita, jotka täytyy sulkea tai joihin sinun täytyy reagoida, jotta voit jatkaa **Power BI Desktopin** käyttöä. Jos törmäät tähän ongelmaan, tarkista Windowsin **näyttöasetukset** valitsemalla **Asetukset > Järjestelmä > Näyttö** ja palauta näyttökoon asetus sataan prosenttiin liukusäätimellä.
-* **Suoritin:** suosittelemme vähintään yhden gigahertsin (GHz) x86-suoritinta tai x64-bittistä suoritinta tai tätä nopeampaa suoritinta.
+* **Windowsin näyttöasetukset:** Jos näyttöasetuksesi on määritetty siten, että tekstin, sovellusten tai muiden kohteiden koko on yli 100 %, et ehkä näe joitain valintaikkunoita, jotka täytyy sulkea tai joihin sinun täytyy reagoida, jotta voit jatkaa **Power BI Desktopin** käyttöä. Jos törmäät tähän ongelmaan, tarkista Windowsin **näyttöasetukset** valitsemalla **Asetukset > Järjestelmä > Näyttö** ja palauta näyttökoon asetus sataan prosenttiin liukusäätimellä.
+* **Suoritin:** suosittelemme vähintään yhden gigahertsin (GHz) x86- tai x64-bittistä suoritinta tai tätä nopeampaa suoritinta.
 
 ## <a name="considerations-and-limitations"></a>Huomioitavat asiat ja rajoitukset
 
@@ -115,7 +115,7 @@ Power BI Desktopin päivitys nykyisen versioon ratkaisee yleensä ongelman.
 On suositeltavaa päivittää Power BI Desktopin uusimpaan versioon ominaisuuksiin, suorituskykyyn ja vakauteen tehtyjen ja muiden parannusten hyödyntämiseksi. Jotkin organisaatiot ei ehkä halua käyttäjien päivittävän jokaiseen uuteen versioon. Voit poistaa ilmoitukset käytöstä muokkaamalla rekisteriä seuraavien ohjeiden mukaisesti:
 
 1. Siirry Rekisterieditoria käyttämällä kohtaan *HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft Power BI Desktop*
-2. Luo sinne uusi merkintä seuraavilla asetuksilla: *REG_DWORD: DisableUpdateNotification*
+2. Luo uusi merkintä seuraavilla asetuksilla: *REG_DWORD : DisableUpdateNotification*
 3. Määritä uuden merkinnän arvoksi **1**.
 
 Tietokone on käynnistettävä uudelleen, jotta muutos tulee voimaan.
@@ -125,7 +125,7 @@ Tietokone on käynnistettävä uudelleen, jotta muutos tulee voimaan.
 Joissakin tilanteissa, kuten tiettyjen näytön tarkkuusmääritysten yhteydessä, Power BI Desktop saattaa hahmontaa sisältöä joillekin käyttäjille siten, että siinä näkyy laajoja mustia alueita. Tämä johtuu yleensä viimeaikaisista käyttöjärjestelmän päivityksistä, jotka vaikuttavat kohteiden esitystapaan, sen sijaan, että kyseessä olisi Power BI Desktopin sisällön esitystavan suora tulos. Siitä huolimatta laajat mustat alueet eivät ole yhtä houkuttelevia kuin hyvät visualisoinnit, joten voit ratkaista ongelman seuraavasti:
 
 1. Paina aloitusnäppäintä ja kirjoita sana *sumea* hakupalkkiin, joka tulee näkyviin.
-2. Valitse avautuvasta valintaikkunasta vaihtoehto *Anna Windowsin yrittää korjata sovellukset, jotta ne eivät olisi sumeita*.
+2. Valitse avautuvassa valintaikkunassa seuraava vaihtoehto: *Anna Windowsin korjata sumeat sovellukset.*
 3. Käynnistä Power BI Desktop uudelleen.
 
 Tämä ongelma saattaa ratketa seuraavien Windowsin päivitysten julkaisun yhteydessä. 

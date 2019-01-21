@@ -1,23 +1,23 @@
 ---
-title: 'Henkilöstöhallintomalli: esittely'
-description: 'Power BI:n henkilöstöhallintomalli: esittely'
+title: 'Henkilöstöhallintomalli: aloita esittely'
+description: 'Power BI:n henkilöstöhallintomalli: aloita esittely'
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: amac
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 06/26/2018
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: c0f1df47501c297e65e7dc3ccdb8d745c84b2e55
-ms.sourcegitcommit: 1e4fee6d1f4b7803ea285eb879c8d5a4f7ea8b85
+ms.openlocfilehash: 1670fffd33e741962db5e7312f2a27273151980d
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51717868"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54293936"
 ---
-# <a name="human-resources-sample-for-power-bi-take-a-tour"></a>Power BI:n henkilöstöhallintomalli: esittely
+# <a name="human-resources-sample-for-power-bi-take-a-tour"></a>Power BI:n henkilöstöhallintomalli: aloita esittely
 
 ## <a name="overview-of-the-human-resources-sample"></a>Yleiskuva henkilöstöhallintomallista
 Henkilöstöosasto käyttää samaa raportointimallia eri yrityksissä toimialasta tai koosta riippumatta. Tässä mallissa tarkastellaan uusia palkkauksia, aktiivisia työntekijöitä ja lähteneitä työntekijöitä sekä yritetään tuoda esiin palkkausstrategian trendejä. Päätavoitteemme on ymmärtää seuraavat asiat:
@@ -141,5 +141,5 @@ Viimeinen tutustuttava alue ovat huonot palkkaukset. Huonoiksi palkkauksiksi mä
 
 Tämä on turvallinen ympäristö kaikenlaisille kokeiluille. Voit aina jättää tekemäsi muutokset tallentamatta. Jos kuitenkin tallennat ne, voit aina siirtyä **Nouda tiedot** -kohtaan, jolloin saat mallista uuden kopion.
 
-## <a name="next-steps-connect-to-your-data"></a>Seuraavat vaiheet: muodostaa yhteys tietoihisi
+## <a name="next-steps-connect-to-your-data"></a>Seuraavat vaiheet: Yhdistä tietoihisi
 Toivomme, että tämä esittely on osoittanut, miten Power BI -koontinäytöt, Q&A ja raportit voivat tarjota uusia näkökulmia henkilöstötietoihin. Nyt sinun vuorosi – muodosta yhteys omiin tietoihisi. Power BI:n avulla voit yhdistää useita eri tietolähteitä. Lisätietoja [Power BI:n käytön aloittamisesta](service-get-started.md).  

@@ -5,17 +5,17 @@ author: mgblythe
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-gateways
+ms.subservice: powerbi-gateways
 ms.topic: conceptual
 ms.date: 01/24/2018
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: ef4b503b7282377b112aebe237cc9a8d132502f0
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 5e737978b7c39abd331f51fbb12e24656d54e838
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34298339"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54275912"
 ---
 # <a name="manage-your-data-source---oracle"></a>Tietolähteen hallinta – Oracle
 Kun paikallinen tietoyhdyskäytävä on asennettu, sinun on lisättävä tietolähteitä, joita voidaan käyttää kyseisen yhdyskäytävän kanssa. Tässä artikkelissa tarkastellaan yhdyskäytävien ja tietolähteiden käsittelyä. Voit käyttää Oracle-tietolähdettä joko ajoitettua päivitystä tai DirectQuerya varten.
@@ -39,7 +39,7 @@ Voit ladata yhdyskäytävän Power BI -palvelusta. Valitse **Lataukset** > **Tie
 
 * [64-bit ODAC 12.2c Release 1 (12.2.0.1.0) for Windows x64](http://www.oracle.com/technetwork/database/windows/downloads/index-090165.html)
 
-Kun se on asennettu, sinun on määritettävä tnsnames.ora-tiedosto ja tarvittavat tiedot tietokantaan. Power BI Desktop ja yhdyskäytävä siirtyvät pois net_service_name -määrityksestä tnsnames.ora-tiedostossa. Jos sitä ei ole määritetty, et voi muodostaa yhteyttä. Tnsnames.ora-oletuspolku on seuraava: `[Oracle Home Directory]\Network\Admin\tnsnames.ora`. Lisätietoja siitä, miten voit määrittää tnsnames.ora -tiedostoja, antaa [Oracle: paikalliset nimeämistiedostot (tnsnames.ora)](https://docs.oracle.com/cd/B28359_01/network.111/b28317/tnsnames.htm).
+Kun se on asennettu, sinun on määritettävä tnsnames.ora-tiedosto ja tarvittavat tiedot tietokantaan. Power BI Desktop ja yhdyskäytävä siirtyvät pois net_service_name -määrityksestä tnsnames.ora-tiedostossa. Jos sitä ei ole määritetty, et voi muodostaa yhteyttä. Tnsnames.ora-oletuspolku on seuraava: `[Oracle Home Directory]\Network\Admin\tnsnames.ora`. Jos haluat lisätietoja siitä, miten voit määrittää tnsnames.ora-tiedostoja, katso [Oracle: paikalliset nimeämistiedostot (tnsnames.ora)](https://docs.oracle.com/cd/B28359_01/network.111/b28317/tnsnames.htm).
 
 ### <a name="example-tnsnamesora-file-entry"></a>Esimerkki tnsnames.ora -tiedoston merkinnästä
 Merkinnän perusmuoto tnsname.ora -tiedostoissa on seuraava.
@@ -161,7 +161,7 @@ Voit saada lukuisia virheitä Oraclesta, jos nimeämissyntaksi on joko virheelli
 * ORA-12514: TNS: kuuntelutoiminto ei tällä hetkellä tunnista pyydettyä palvelun kuvaajaa  
 * ORA-12541: TNS: ei kuuntelutoimintoa  
 * ORA-12170: TNS: yhteyden aikakatkaisu  
-* SIITÄ-12504: TNS kuuntelutoiminnolle ei ole annettu SERVICE_NAME-CONNECT_DATA  
+* ORA-12504: TNS: kuuntelutoiminnolle ei ole annettu SERVICE_NAME-CONNECT_DATA  
 
 Näitä virheitä voi ilmetä, jos joko Oracle-asiakasohjelmaa ei ole asennettu tai sitä ei ole määritetty oikein. Jos se on asennettu, haluat varmistaa, että tnsnames.ora-tiedosto on määritetty oikein ja että käytössäsi on oikea net_service_name. Pitää myös varmistaa, että net_service_name on sama tietokoneessa, jossa on Power BI Desktop ja tietokoneessa, joka käyttää yhdyskäytävää. Saat lisätietoja ohjeartikkelista [Oracle-asiakasohjelman asentaminen](#installing-the-oracle-client).
 

@@ -1,20 +1,20 @@
 ---
 title: Koontinäytön tai raportin jakaminen Power BI -mobiilisovelluksista
 description: Voit kutsua muita tarkastelemaan koontinäyttöjä ja raportteja jakamalla linkkejä Power BI -mobiilisovellusten kautta. Toimintaohjeet.
-author: maggiesMSFT
+author: mshenhav
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-mobile
+ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 03/20/2018
-ms.author: maggies
-ms.openlocfilehash: 4484eca5e810da7674d20e368383429c9c6f5508
-ms.sourcegitcommit: 833cf1252807721fb1b3000487bd032bfd6c8c98
+ms.author: mshenhav
+ms.openlocfilehash: 69532ea9ad98edc7655fb77aec13b69eec6566bf
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48271643"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54283663"
 ---
 # <a name="share-a-dashboard-or-report-from-the-power-bi-mobile-apps"></a>Koontinäytön tai raportin jakaminen Power BI -mobiilisovelluksista
 Koskee seuraavia:
@@ -51,8 +51,8 @@ Voit poistaa jakamisen vain, jos olet omistaja.
    
    Näet luettelon työtovereista, joiden kanssa olet jakanut tämän koontinäytön tai raportin, jossa ovat nämä lauseet:
    
-   * **Pystyy tarkastelemaan**: he voivat tarkastella, mutta eivät jakaa.
-   * **Pystyy tarkastelemaan ja kutsumaan**: he voivat tarkastella ja jakaa muiden työtovereiden kanssa.
+   * **Voi tarkastella**: he voivat tarkastella, mutta eivät jakaa.
+   * **Voi tarkastella ja kutsua**: he voivat tarkastella ja jakaa muiden työtovereiden kanssa.
 1. Napauta **Muokkaa**.
    
     ![Muokkaa-kuvake](./media/mobile-share-dashboard-from-the-mobile-apps/power-bi-iphone-edit-invite-dashboard.png)
@@ -80,8 +80,8 @@ Voit poistaa jakamisen vain, jos olet omistaja.
    
    Näet luettelon työtovereista, joiden kanssa olet jakanut tämän koontinäytön tai raportin, jossa ovat nämä lauseet:
    
-   * **Pystyy tarkastelemaan**: he voivat tarkastella, mutta eivät jakaa.
-   * **Pystyy tarkastelemaan ja kutsumaan**: he voivat tarkastella ja jakaa muiden työtovereiden kanssa.
+   * **Voi tarkastella**: he voivat tarkastella, mutta eivät jakaa.
+   * **Voi tarkastella ja kutsua**: he voivat tarkastella ja jakaa muiden työtovereiden kanssa.
 2. Napauta **Muokkaa**.
 3. Jaon poistamiseksi on napautettava nimen vieressä olevaa punaista ympyrää ja napautettava sitten **Poista**.
 
@@ -93,8 +93,8 @@ Voit poistaa jakamisen vain, jos olet omistaja.
 
     Jos olet koontinäytön omistaja, näet luettelon työtovereista, joiden kanssa olet jakanut tämän koontinäytön tai raportin, jossa ovat nämä merkinnät:
 
-    -   **Pystyy tarkastelemaan**: he voivat tarkastella, mutta eivät jakaa.
-    -   **Pystyy tarkastelemaan ja jakamaan uudelleen**: he voivat tarkastella ja jakaa muiden työtovereiden kanssa.
+    -   **Voi tarkastella**: he voivat tarkastella, mutta eivät jakaa.
+    -   **Voi tarkastella ja jakaa edelleen**: he voivat tarkastella ja jakaa muiden työtovereiden kanssa.
 
 1. Kirjoita sähköpostiosoitteet ja haluamasi viesti koontinäyttökutsusi mukaan. Muussa tapauksessa Power BI lähettää oletusarvoisen viestin.
 2. Jos haluat sallia uudelleenjakamisen, jätä **Salli vastaanottajien jakaa tämä koontinäyttö** valituksi.
@@ -126,9 +126,9 @@ Voit poistaa jakamisen vain, jos olet omistaja.
    
    Jos olet koontinäytön omistaja, näet luettelon työtovereista, joiden kanssa olet jakanut tämän koontinäytön, jossa ovat nämä merkinnät:
    
-   **Pystyy tarkastelemaan**: he voivat tarkastella, mutta eivät jakaa.
+   **Voi tarkastella**: he voivat tarkastella, mutta eivät jakaa.
    
-   **Pystyy tarkastelemaan ja jakamaan uudelleen**: he voivat tarkastella ja jakaa muiden työtovereiden kanssa.
+   **Voi tarkastella ja jakaa edelleen**: he voivat tarkastella ja jakaa muiden työtovereiden kanssa.
 2. Kirjoita sähköpostiosoitteet ja haluamasi viesti kutsusi mukaan. Muussa tapauksessa Power BI lähettää oletusarvoisen viestin.
    
    ![Kutsu-valintaikkuna](./media/mobile-share-dashboard-from-the-mobile-apps/power-bi-windows-10-share-dashboard.png)

@@ -5,17 +5,17 @@ author: mgblythe
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-gateways
+ms.subservice: powerbi-gateways
 ms.topic: conceptual
 ms.date: 12/14/2017
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 263c1a576e939a87e970cc2c0200dfb6c1ccdc41
-ms.sourcegitcommit: 47269676aa600e60ec7ba0e323941a71e0622833
+ms.openlocfilehash: 512b189575acd7651dea8747c36e8666875edae5
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/08/2018
-ms.locfileid: "51273329"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54295743"
 ---
 # <a name="on-premises-data-gateway-personal-mode"></a>Paikallinen tietoyhdyskäytävä (henkilökohtainen tila)
 Yhdyskäytävän avulla voit käyttää paikallisia tietolähteitä ja luoda Power BI -raportteja ja -koontinäyttöjä. **Yhdyskäytävä** on ohjelmisto, joka helpottaa pääsyä yksityiseen ja paikalliseen verkkoon tallennettuihin tietoihin. Kyseisiä tietoja voi sitten käyttää online-palveluissa, kuten **Power BI -palvelussa**. **Paikallinen tietoyhdyskäytävä (henkilökohtainen tila)** on Power BI -yhdyskäytävään äskettäin julkaistu päivitys, jonka avulla käyttäjät voivat asentaa yhdyskäytävän omiin tietokoneisiinsa ja käyttää paikallisia tietoja.
@@ -117,7 +117,7 @@ Spark-tuki on suunnitteilla kalenterivuoden 2017 toisella puoliskolla.
   * **Vastaus**: Kyllä, voit käyttää molempia versioita samanaikaisesti.
 * Voinko suorittaa **paikallisen tietoyhdyskäytävän (henkilökohtainen tila)** palveluna?
   
-  * **Vastaus**: Et. **Paikallinen tietoyhdyskäytävä (henkilökohtainen tila)** voidaan suorittaa vain sovelluksena. Jos haluat suorittaa yhdyskäytävän palveluna tai järjestelmänvalvojatilassa, sinun on käytettävä [**paikallista yhdyskäytävää**](service-gateway-onprem.md) (aiemmin yritysyhdyskäytävä ).
+  * **Vastaus**: Ei. **Paikallinen tietoyhdyskäytävä (henkilökohtainen tila)** voidaan suorittaa vain sovelluksena. Jos haluat suorittaa yhdyskäytävän palveluna tai järjestelmänvalvojatilassa, sinun on käytettävä [**paikallista yhdyskäytävää**](service-gateway-onprem.md) (aiemmin yritysyhdyskäytävä ).
 * Miten usein **paikallinen tietoyhdyskäytävä (henkilökohtainen tila)** päivitetään?
   
   * **Vastaus**: Henkilökohtainen yhdyskäytävä on tarkoitus päivittää kuukausittain.

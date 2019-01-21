@@ -5,17 +5,17 @@ author: mihart
 manager: kvivek
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 12/03/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: ebec34690001293e93dafd69dd76f7bdbf54981c
-ms.sourcegitcommit: b03912343a5a214c6bb972aaa6aa051c2a5f4332
+ms.openlocfilehash: dc756e98a58d30edd476112ca249dae032d0d79a
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52900516"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54296796"
 ---
 # <a name="visualization-types-in-power-bi"></a>Visualisointityypit Power BI:ssä
 ## <a name="power-bi-visualizations"></a>Visualisoinnit Power BI:ssä
@@ -42,7 +42,7 @@ Lisätietoja on artikkelissa [Perusaluekaavio](power-bi-visualization-basic-area
 >[!TIP]
 >Palkkikaaviot ovat vakiomuotoisia katseltaessa tiettyä arvoa eri luokkien välillä.
 
-### <a name="cards-multi-row"></a>Kortit: Multi-rivi
+### <a name="cards-multi-row"></a>Kortit: Moniriviset
 ![](media/power-bi-visualization-types-for-reports-and-q-and-a/multi-row-card.png)
 
 ### <a name="cards-single-number"></a>Kortit: Yksittäinen luku

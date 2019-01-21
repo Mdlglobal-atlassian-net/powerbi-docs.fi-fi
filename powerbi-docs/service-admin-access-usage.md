@@ -5,17 +5,17 @@ author: mgblythe
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-admin
+ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 10/31/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: dfd9aab419d0a097721c4f2b49e382c11be82541
-ms.sourcegitcommit: 0611860a896e636ceeb6e30ce85243bfd8e7b61d
+ms.openlocfilehash: f685a900465cc0f1b635aad7609aaae4356da6b3
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50909498"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54284629"
 ---
 # <a name="find-power-bi-users-that-have-signed-in"></a>Kirjautuneena olevien Power BI -käyttäjien etsiminen
 
@@ -32,7 +32,7 @@ Kaikki käyttäjät (myös muut kuin järjestelmänvalvojat) voivat nähdä rapo
 
 * Vuokraajalla on oltava vuokraajaan liitetty Azure AD Premium -käyttöoikeus.
 
-* Sinulla on oltava jokin seuraavista rooleista: yleinen järjestelmänvalvoja, suojauksenvalvoja tai suojauksenlukija.
+* Sinulla on oltava jokin seuraavista rooleista: Yleinen järjestelmänvalvoja, Suojauksen järjestelmänvalvoja tai rooli, jolla on suojaustietojen lukuoikeudet.
 
 ## <a name="use-the-azure-portal-to-view-sign-ins"></a>Kirjautumisten tarkastelu Azure-portaalin kautta
 

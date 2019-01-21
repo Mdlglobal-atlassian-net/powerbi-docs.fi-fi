@@ -5,17 +5,17 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: tutorial
 ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: e23182b1e607498c5187882740b556455657ba1d
-ms.sourcegitcommit: 2ae660a7b70fce23eb58b159d049eca44a664f2c
+ms.openlocfilehash: f39f5ae569c757072a55647becb5697c881abbe2
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "52670896"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54285665"
 ---
 # <a name="tutorial-shape-and-combine-data-in-power-bi-desktop"></a>Opetusohjelma: Tietojen muotoilu ja yhdistäminen Power BI Desktopissa
 
@@ -81,7 +81,7 @@ Jos haluat poistaa **Cost of living** -sarakkeen, valitse sarake ja valitse vali
 
 ![](media/desktop-shape-and-combine-data/shapecombine_removecolumnscostofliving.png)
 
-Huomaat, että _New Rank_ -arvot eivät ole muuttuneet. Tämä johtuu vaiheiden järjestyksestä. Koska kyselyeditori kirjaa vaiheet järjestyksessä ja silti toisistaan riippumatta, voit siirtää kutakin **käytössä olevaa vaihetta** järjestyksessä aiemmaksi tai myöhemmäksi. Kun napsautat mitä tahansa vaihetta hiiren kakkospainikkeella kyselyeditorissa, näyttöön avautuu valikko, jossa voit **nimetä uudelleen**, **poistaa**, **poistaa** **loppuun saakka** (tämä poistaa valitun vaiheen ja kaikki sitä myöhemmät vaiheet), **siirtää ylös** ja **siirtää alas**. Siirrä nyt viimeinen vaihe eli _Removed Columns_ _Added Custom_ -vaiheen yläpuolelle.
+Huomaat, että _New Rank_ -arvot eivät ole muuttuneet. Tämä johtuu vaiheiden järjestyksestä. Koska kyselyeditori kirjaa vaiheet järjestyksessä ja silti toisistaan riippumatta, voit siirtää kutakin **käytössä olevaa vaihetta** järjestyksessä aiemmaksi tai myöhemmäksi. Napsauta vain hiiren oikealla painikkeella mitä tahansa vaihetta, ja kyselyeditori näyttää valikon, jossa voit tehdä seuraavat asiat: **nimeä uudelleen**, **poista**, **poista** **loppuun saakka** (poistaa nykyisen vaiheen ja myös kaikki myöhemmät vaiheet), **siirrä ylös** tai **siirrä alas**. Siirrä nyt viimeinen vaihe eli _Removed Columns_ _Added Custom_ -vaiheen yläpuolelle.
 
 ![](media/desktop-shape-and-combine-data/shapecombine_movestep.png)
 
@@ -179,7 +179,7 @@ Näyttöön avautuu **Poista ylimmät rivit** ikkuna, jossa voit määrittää, 
 
 ![](media/desktop-shape-and-combine-data/shapecombine_filterdc.png)
 
-* Poista muutamat tarpeettomat sarakkeet: Meidän täytyy yhdistää vain osavaltio sen viralliseen kaksikirjaimiseen lyhenteeseen, joten voit poistaa sarakkeet **Column1**, **Column3**, **Column4** ja sitten sarakkeet väliltä **Column6**–**Column11**. Valitse ensin **Column1**, paina **CTRL**-näppäin pohjaan ja valitse sitten muut poistettavat sarakkeet (näin voit valita useita sarakkeita, jotka eivät ole kiinni toisissaan). Valitse valintanauhan Aloitus-välilehdestä **Poista sarakkeet \> Poista sarakkeet**.
+* Poista pari tarpeetonta saraketta – meidän täytyy yhdistää vain osavaltio sen viralliseen kaksikirjaimiseen lyhenteeseen, joten voimme poistaa seuraavat sarakkeet: **Column1**, **Column3**, **Column4** ja sitten **Column6**–**Column11**. Valitse ensin **Column1**, paina **CTRL**-näppäin pohjaan ja valitse sitten muut poistettavat sarakkeet (näin voit valita useita sarakkeita, jotka eivät ole kiinni toisissaan). Valitse valintanauhan Aloitus-välilehdestä **Poista sarakkeet \> Poista sarakkeet**.
 
 ![](media/desktop-shape-and-combine-data/shapecombine_removecolumns.png)
 

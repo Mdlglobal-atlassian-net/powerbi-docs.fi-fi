@@ -5,16 +5,16 @@ author: jtarquino
 manager: kfile
 ms.reviewer: maggies
 ms.service: powerbi
-ms.component: powerbi-report-server
+ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 03/31/2018
 ms.author: jtarquino
-ms.openlocfilehash: c80ded7a21eb8110467a2335253fa1a68942cc2c
-ms.sourcegitcommit: 60fb46b61ac73806987847d9c606993c0e14fb30
+ms.openlocfilehash: edf953f2512550660fd914d2fe54c28dcd01fa24
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50101527"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54292027"
 ---
 # <a name="changelog-for-power-bi-report-server"></a>Power BI -raporttipalvelimen muutosloki
 
@@ -24,7 +24,7 @@ Lisätietoja uusista ominaisuuksista on artikkelissa [Power BI -raporttipalvelin
 
 ## <a name="august-2018"></a>Elokuu 2018
 - **Power BI -raporttipalvelin**
-    - *Versio 1.3.6816.37243 (koontiversio 15.0.2.557), julkaistu 30.8.2018*
+    - *Versio 1.3.6816.37243 (koontiversio 15.0.2.557), julkaistu: 30. elokuuta 2018*
         - Ohjelmavirhekorjauksia
             - Korjattiin ongelma, joka liittyi siihen, että kun palvelin päivitettiin PBI-raporttipalvelimen aiemmista versioista, joissa sitovaa uudelleenohjausta ei ollut päivitetty, asiakas näki seuraavan ilmoituksen:      
             *`
@@ -33,19 +33,19 @@ Lisätietoja uusista ominaisuuksista on artikkelissa [Power BI -raporttipalvelin
              
             - Arvopisteen otsikon läpinäkyvyyttä koskeva ohjelmavirhe on nyt korjattu.
             
-    - *Versio 1.3.6801.38816 (koontiversio 15.0.2.540), julkaistu 15.8.2018*
+    - *Versio 1.3.6801.38816 (koontiversio 15.0.2.540), julkaistu: 15. elokuuta 2018*
         - Ominaisuudet
             - Suoran SAP HANA SSO -kyselyn Kerberos-tuki nyt käytettävissä Power BI -raporteissa
             - Mukautettujen visualisointien ohjelmointirajapinta sisältyy julkaisuun – versio 1.13.0
             - Mukautetuissa visualisoinneissa palataan edelliseen palvelimen nykyisen ohjelmointirajapintaversion kanssa yhteensopivaan versioon (jos sellainen on käytettävissä)
 
 - **Power BI Desktop (optimoitu Power BI -raporttipalvelimelle)**
-    - *Versio: 2.61.5192.641 (elokuu 2018), julkaistu: 15.8.2018*
+    - *Versio: 2.61.5192.641 (elokuu 2018), julkaistu: 15. elokuuta 2018*
         - Sisältää Power BI -raporttipalvelinyhteyden edellyttämiä muutoksia (elokuu 2018).         
         
 ## <a name="march-2018"></a>Maaliskuu 2018
 - **Power BI -raporttipalvelin**
-    - *Versio 1.2.6690.34729 (koontiversio 15.0.2.402), julkaistu 27.4.2018*
+    - *Versio 1.2.6690.34729 (koontiversio 15.0.2.402), julkaistu: 27. huhtikuuta 2018*
         - Ohjelmavirhekorjauksia
             - SQL Server Reporting Services 2017 -luetteloiden siirtämisen käyttöönotto
             - Power BI -raportit (PBIX)
@@ -63,13 +63,13 @@ Lisätietoja uusista ominaisuuksista on artikkelissa [Power BI -raporttipalvelin
                 - Trendirivit päivitetään, kun tiedot päivitetään
             - Yleiset parannukset vakauteen
 
-    - *Versio 1.2.6660.39920 (koontiversio 15.0.2.389), julkaistu 28.3.2018*
+    - *Versio 1.2.6660.39920 (koontiversio 15.0.2.389), julkaistu: 28. maaliskuuta 2018*
         - Ohjelmavirhekorjauksia
             - Korjattu Power BI -raporttien (PBIX) ongelma, joka esti tietojen viemisen Power BI:n visualisoinneista.
             - Korjattu Power BI -raporttien (PBIX) ongelma, joka esti URL-suodattimien toiminnan.
             - Korjattu sivutettujen raporttien (RDL) ongelma, joka esti kuvien näkymisen oikein IE11:ssä Power BI -raporttipalvelimen maaliskuun päivityksen jälkeen.
 
-    - *Versio 1.2.6648.38132 (koontiversio 15.0.2.378), julkaistu 19.3.2018*
+    - *Versio 1.2.6648.38132 (koontiversio 15.0.2.378), julkaistu: 19. maaliskuuta 2018*
         - Suojauspäivitykset
         - Helppokäyttötoimintojen parannuksia
         - Ohjelmavirhekorjauksia
@@ -82,36 +82,36 @@ Lisätietoja uusista ominaisuuksista on artikkelissa [Power BI -raporttipalvelin
             - Muita vakauteen ja käytettävyyteen liittyviä korjauksia.
 
 - **Power BI Desktop (optimoitu Power BI -raporttipalvelimelle)**
-    - Versio: 2.56.5023.1043 (maaliskuu 2018), julkaistu 19.3.2018
+    - Versio: 2.56.5023.1043 (maaliskuu 2018), julkaistu: 19. maaliskuuta 2018
         - Sisältää Power BI -raporttipalvelinyhteyden edellyttämiä muutoksia (maaliskuu 2018).
 
 ## <a name="october-2017"></a>Lokakuu 2017
 
 - **Power BI -raporttipalvelin**
-    - *Versio 1.1.6582.41691 (koontiversio 14.0.600.442), julkaistu 10.1.2018*
+    - *Versio 1.1.6582.41691 (koontiversio 14.0.600.442), julkaistu: 10. tammikuuta 2018*
         - Suojauspäivitykset
         - Ohjelmavirhekorjauksia
             - Korjattu Model.GetParameters-kutsu, joka palautti tilakoodin 400.
             - Korjattu virhe, joka liittyi jaetun tietojoukon asettamiseen olemassa oleviin sivutettuihin raportteihin (RDL).
             - Korjattu ilmoitukseen ExecutionNotFoundException liittyvä virhe, joka ilmeni vietäessä eri parametriarvoilla määritettyä raporttia PDF:ksi.
 
-    - *Versio 1.1.6551.5155 (koontiversio 14.0.600.438), julkaistu 11.12.2017*
+    - *Versio 1.1.6551.5155 (koontiversio 14.0.600.438), julkaistu: 11. joulukuuta 2017*
         - Ohjelmavirhekorjauksia
             - Korjattu virhe, joka esti tietojen tallentamisen tiettyjen Power BI Desktop -raporttien päivittämisen jälkeen.
 
-    - *Versio 1.1.6530.30789 (koontiversio 14.0.600.437), julkaistu 17.11.2017*
+    - *Versio 1.1.6530.30789 (koontiversio 14.0.600.437), julkaistu: 17. marraskuuta 2017*
         - Ohjelmavirhekorjauksia
             - Korjattu perustodennuksen skenaarioiden virhe. 
             - Korjattu ongelma, joka esti arkipäivien valitsemisen tilauksiin, välimuistin päivityssuunnitelmiin ja historiatilannevedoksiin portaalin aikataulusivulla.
             - Korjattu sivutettujen raporttien (RDL) ongelma, joka tuotti värien ja fonttien osalta väärin näkyviä arvoja sellaisille tekstiruudun ilmauksille, joiden CanGrow-ominaisuusjoukon arvoksi on asetettu epätosi.
             - Korjattu Power BI -raporttien (PBIX) ongelma, joka tuotti tyhjän visualisoinnin, kun viivakaavioon lisättiin selitteitä.
 
-    - *Versio 1.1.6514.9163 (koontiversio 14.0.600.434), julkaistu 1.11.2017*
+    - *Versio 1.1.6514.9163 (koontiversio 14.0.600.434), julkaistu: 1. marraskuuta 2017*
         - Ohjelmavirhekorjauksia
             - Korjattu yli 500 megatavun kokoisten PBIX-raporttien lataamisen epävakausongelma.
             - Korjattu yli gigatavun kokoisten PBIX-raporttien lataamisen ongelma.
 
-    - *Versio 1.1.6513.3500 (koontiversio 14.0.600.433), julkaistu 31.10.2017*
+    - *Versio 1.1.6513.3500 (koontiversio 14.0.600.433), julkaistu: 31. lokakuuta 2017*
         - Ominaisuudet
             - Upotettujen tietomallien tuki
             - Excel-työkirjan tarkasteleminen (Office Online Server -integrointi käytössä)
@@ -124,44 +124,44 @@ Lisätietoja uusista ominaisuuksista on artikkelissa [Power BI -raporttipalvelin
             - Helppokäyttötoimintojen parannuksia
 
 - **Power BI Desktop (optimoitu Power BI -raporttipalvelimelle)**
-    - *Versio 2.51.4885.3981 (lokakuu 2017), julkaistu 10.4.2018*
+    - *Versio: 2.51.4885.3981 (lokakuu 2017), julkaistu: 10. huhtikuuta 2018*
         - Suojauspäivitykset
 
-    - *Versio 2.51.4885.2501 (lokakuu 2017), julkaistu 10.1.2018*
+    - *Versio: 2.51.4885.2501 (lokakuu 2017), julkaistu: 10. tammikuuta 2018*
         - Suojauspäivitykset
 
-    - *Versio 2.51.4885.1423 (lokakuu 2017), julkaistu 17.11.2017*
+    - *Versio: 2.51.4885.1423 (lokakuu 2017), julkaistu: 17. marraskuuta 2017*
         - Ohjelmavirhekorjauksia
             - Korjattu ongelma, joka esti 32-bittisen Power BI Desktopin toiminnan x86-käyttöjärjestelmässä.
             - Korjattu Power BI -raportteihin (PBIX) liittyvä ongelma, joka esti x-akselin ruudukon näkymisen.
             - Muita pieniä ohjelmavirhekorjauksia
 
-    - *Versio 2.51.4885.1041 (lokakuu 2017), julkaistu 31.10.2017*
+    - *Versio: 2.51.4885.1041 (lokakuu 2017), julkaistu: 31. lokakuuta 2017*
         - Ominaisuudet
             - Sisältää Power BI -raporttipalvelinyhteyden edellyttämiä muutoksia (maaliskuu 2017).
 
 ## <a name="june-2017"></a>Kesäkuu 2017
 
 - **Power BI -raporttipalvelin**
-    - *Versio 14.0.600.309, julkaistu 10.1.2018*
+    - *Koontiversio 14.0.600.309, julkaistu: 10. tammikuuta 2018*
         - Suojauspäivitykset
 
-    - *Versio 14.0.600.305, julkaistu 19.9.2017*  
+    - *Koontiversio 14.0.600.305, julkaistu: 19. syyskuuta 2017*  
         - Ohjelmavirhekorjauksia
             - Päivitys uusimpaan [Bing-karttojen verkko-ohjausobjektiin](https://msdn.microsoft.com/library/mt712542.aspx)
 
-    - *Koontiversio 14.0.600.301, julkaistu 11.7.2017*
+    - *Koontiversio 14.0.600.301, julkaistu: 11. heinäkuuta 2017*
         - Ohjelmavirhekorjauksia
             - Korjattu ongelma, joka aiheutti `{{UserId}}`-tunnisteen ratkaisemisen tallennettuihin tunnistetietoihin sen sijaan, että raportti suoritettaisiin Power BI -raporteissa.
             - Korjattu ongelma, joka esti tiettyjen kuvien piirtymisen Power BI -raporttipalvelimen raportteihin.
             - Korjattu ongelma, joka esti Power BI -raportin nimen muuttamisen Power BI -raporttipalvelimessa.
             - Korjattu ongelma, joka esti mukautettujen visualisointien lataamisen Power BI -mobiilisovellukseen ilman paikallisen välimuistin tyhjentämistä asentamalla mobiilisovellus uudelleen.
 
-    - *Koontiversio 14.0.600.271, julkaistu 12.6.2017*
+    - *Koontiversio 14.0.600.271, julkaistu: 12. kesäkuuta 2017*
         - Power BI -raporttipalvelimen ensimmäinen julkaisu
 
 - **Power BI Desktop (optimoitu Power BI -raporttipalvelimelle)**
-    - *Versio 2.47.4766.4901 (kesäkuu 2017), julkaistu 10.1.2018*
+    - *Versio: 2.47.4766.4901 (kesäkuu 2017), julkaistu: 10. tammikuuta 2018*
         - Suojauspäivitykset
 
 ## <a name="next-steps"></a>Seuraavat vaiheet

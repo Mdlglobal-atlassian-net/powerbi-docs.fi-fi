@@ -5,16 +5,16 @@ author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-report-server
+ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 09/19/2018
 ms.author: maggies
-ms.openlocfilehash: 18fb96573052455034f8c257811daed6cb15529e
-ms.sourcegitcommit: a739a99e1006834a0f56e387c0bd9d945fb8a76b
+ms.openlocfilehash: dd3da287d976b9fe84ab56b425a5f08fba31d224
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51679224"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54288355"
 ---
 # <a name="create-a-power-bi-report-for-power-bi-report-server"></a>Power BI -raportin luominen Power BI -raporttipalvelimeen
 Voit tallentaa ja hallita Power BI -raportteja Power BI -raporttipalvelimen verkkoportaalissa paikallisesti samalla tavalla kuin voit tallentaa Power BI -raportteja pilveen Power BI -palvelussa (https://powerbi.com). Luo ja muokkaa raportteja Power BI Desktopissa ja julkaise ne verkkoportaalissa. Raportin lukijat organisaatiossasi voivat tarkastella niitä selaimessa tai Power BI -mobiilisovelluksessa mobiililaitteillaan.
@@ -69,8 +69,8 @@ Voit yhdistää useita eri tietolähteitä. Lue lisätietoja [yhdistämisestä t
    
     ![Raporttipalvelimen valinta](media/quickstart-create-powerbi-report/report-server-select-server.png)
 
-## <a name="step-3-design-your-report"></a>Vaihe 3: Suunnittele raportti
-Tässä tulee hauska osa: Saat luoda visualisointeja, jotka kuvaavat tietojasi.
+## <a name="step-3-design-your-report"></a>Vaihe 3: Raportin suunnitteleminen
+Tässä tulee hauska osuus: saat luoda visualisointeja, jotka kuvaavat tietojasi.
 
 Voit esimerkiksi luoda suppilokaavion asiakkaiden ja ryhmien arvoista vuositulojen mukaan.
 
@@ -82,7 +82,7 @@ Voit esimerkiksi luoda suppilokaavion asiakkaiden ja ryhmien arvoista vuosituloj
 
 Lue lisätietoja [Power BI -raportin suunnittelemisesta](../desktop-report-view.md).
 
-## <a name="step-4-save-your-report-to-the-report-server"></a>Vaihe 4: Tallenna raportti raporttipalvelimelle
+## <a name="step-4-save-your-report-to-the-report-server"></a>Vaihe 4: Tallenna raportti raporttipalvelimeen
 Kun raportti on valmis, tallenna se Power BI -raporttipalvelimelle, jonka valitsit vaiheessa 2.
 
 1. Valitse **Tiedosto**-valikosta **Tallenna nimellä** > **Power BI Report Server**.

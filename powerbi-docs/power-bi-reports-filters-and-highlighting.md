@@ -5,17 +5,17 @@ author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 09/28/2018
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: e364d2ceac3d1a30b0742ceac2bd56e2bc66d9ba
-ms.sourcegitcommit: d20f74d5300197a0930eeb7db586c6a90403aabc
+ms.openlocfilehash: ace392570dbabc65d128941fc735231622f2c008
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "50973231"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54285319"
 ---
 # <a name="about-filters-and-highlighting-in-power-bi-reports"></a>Tietoja Power BI -raporttien suodattimista ja korostamisesta
  Tässä artikkelissa esitellään suodattaminen ja korostaminen Power BI -palvelussa. Käyttökokemus on lähes sama kuin Power BI Desktopissa. ***Suodattimet*** poistavat kaikki muut tiedot paitsi ne, joihin haluat keskittyä. ***Korostus*** ei suodata. Se ei poista tietoja, vaan korostaa näkyvien tietojen alijoukon, jolloin korostamattomat tiedot pysyvät näkyvissä, mutta himmeinä.

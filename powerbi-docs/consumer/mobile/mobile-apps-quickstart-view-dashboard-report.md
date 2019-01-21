@@ -1,29 +1,29 @@
 ---
-title: 'Pikaopas: Raporttinäkymien ja raporttien tarkastelu mobiilisovelluksissa'
+title: 'Pika-aloitus: Raporttinäkymien ja raporttien tarkastelu mobiilisovelluksissa'
 description: Tässä pikaoppaassa kerrotaan raporttinäkymien ja raporttien tarkastelusta Power BI -mobiilisovelluksissa.
-author: maggiesMSFT
+author: mshenhav
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-mobile
+ms.subservice: powerbi-mobile
 ms.topic: quickstart
 ms.date: 11/16/2018
-ms.author: maggies
-ms.openlocfilehash: 6d5d543c3654da13592b24f4c70bc964eb7bddff
-ms.sourcegitcommit: 46f1ba3f972f6e64bce05ad0fd527b27c49aedd6
+ms.author: mshenhav
+ms.openlocfilehash: 9bb6dec4cdb689d2a21812b1dab8ebeb49090542
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52157260"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54279109"
 ---
-# <a name="quickstart-explore-dashboards-and-reports-in-the-power-bi-mobile-apps"></a>Pikaopas: Raporttinäkymien ja raporttien tarkastelu Power BI -mobiilisovelluksissa
+# <a name="quickstart-explore-dashboards-and-reports-in-the-power-bi-mobile-apps"></a>Pika-aloitus: Raporttinäkymien ja raporttien tarkastelu Power BI -mobiilisovelluksissa
 Tässä pikaoppaassa esitellään esimerkki raporttinäkymästä ja raportista Android-puhelimen Power BI -mobiilisovelluksessa. Voit seurata myös muilla mobiilisovelluksilla. 
 
 Koskee seuraavia:
 
-| ![iPhone](./media/mobile-apps-quickstart-view-dashboard-report/iphone-logo-30-px.png) | ![iPad](./media/mobile-apps-quickstart-view-dashboard-report/ipad-logo-30-px.png) | ![Android](./media/mobile-apps-quickstart-view-dashboard-report/android-logo-30-px.png) | ![Windows 10 -laitteet](./media/mobile-apps-quickstart-view-dashboard-report/win-10-logo-30-px.png) |
+| ![iPhone](./media/mobile-apps-quickstart-view-dashboard-report/iphone-logo-30-px.png) | ![iPad](./media/mobile-apps-quickstart-view-dashboard-report/ipad-logo-30-px.png) | ![Android-](./media/mobile-apps-quickstart-view-dashboard-report/android-logo-30-px.png) | ![Windows 10 -laitteet](./media/mobile-apps-quickstart-view-dashboard-report/win-10-logo-30-px.png) |
 |:--- |:--- |:--- |:--- |
-| iPhone | iPad | Android | Windows 10 |
+| iPhone | iPad | Android- | Windows 10 |
 
 Raporttinäkymät ovat portaali yrityksesi elinkaareen ja prosesseihin. Raporttinäkymä on yleisnäkymä, jossa voit seurata yrityksen nykyistä tilaa yhdessä paikassa. Raportti on vuorovaikutteinen näkymä tiedoistasi, joka sisältää eri havaintoja ja merkityksellisiä tietoja esittäviä visualisointeja. 
 
@@ -153,5 +153,5 @@ Kun olet suorittanut pikaoppaan, voit halutessasi poistaa Jälleenmyyntianalyysi
 Tässä pikaoppaassa kerrottiin raporttinäkymien ja raporttien tarkastelusta Android-laitteellasi. Lue lisää Power BI -palvelun käyttämisestä. 
 
 > [!div class="nextstepaction"]
-> [Pikaopas: Power BI -palvelussa liikkuminen](../end-user-experience.md)
+> [Pika-aloitus: Power BI -palvelussa liikkuminen](../end-user-experience.md)
 

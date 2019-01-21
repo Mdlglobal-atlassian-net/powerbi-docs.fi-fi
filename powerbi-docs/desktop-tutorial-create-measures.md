@@ -1,29 +1,29 @@
 ---
-title: 'Opetusohjelma: omien mittayksiköiden luominen Power BI Desktopissa'
-description: 'Opetusohjelma: omien mittayksiköiden luominen Power BI Desktopissa'
+title: 'Opetusohjelma: Omien mittayksiköiden luominen Power BI Desktopissa'
+description: 'Opetusohjelma: Omien mittayksiköiden luominen Power BI Desktopissa'
 author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: tutorial
 ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Learn more
-ms.openlocfilehash: 85c16822a51bc3c4a59bbfaa363f742f77552b72
-ms.sourcegitcommit: 05303d3e0454f5627eccaa25721b2e0bad2cc781
+ms.openlocfilehash: ba9cc81c966ebadb2aaff8c339b8a151aef7b6fd
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "52578631"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54287581"
 ---
-# <a name="tutorial-create-your-own-measures-in-power-bi-desktop"></a>Opetusohjelma: omien mittayksiköiden luominen Power BI Desktopissa
+# <a name="tutorial-create-your-own-measures-in-power-bi-desktop"></a>Opetusohjelma: Omien mittayksiköiden luominen Power BI Desktopissa
 Voit luoda tehokkaimpiin kuuluvia tietojen analysointiratkaisuja Power BI Desktopissa käyttämällä mittayksiköitä. Mittayksiköt auttavat suorittamalla tiedoillesi laskutoimituksia samalla, kun käsittelet raporttejasi. Tässä opetusohjelmassa kerrotaan Power BI Desktopin mittayksiköistä ja siitä, kuinka voit luoda omia perusmittayksiköitä.
 
 ### <a name="prerequisites"></a>Edellytykset
 - Tämä opetusohjelma on tarkoitettu kehittyneempien mallien luomiseen Power BI -käyttäjille, joille Power BI Desktopin käyttö on jo tuttua. Edellytyksenä on, että osaat jo tuoda tietoja Nouda tiedot -toiminnon ja kyselyeditorin avulla, työskennellä useiden toisiinsa liitettyjen taulukoiden kanssa ja lisätä kenttiä raporttipohjaan. Jos olet vasta aloittamassa Power BI Desktopin käyttöä, muista tutustua [Power BI Desktopin käytön aloittaminen](desktop-getting-started.md) -resurssiin.
   
-- Lataa [Contoso Sales Sample for Power BI Desktop](http://download.microsoft.com/download/4/6/A/46AB5E74-50F6-4761-8EDB-5AE077FD603C/Contoso%20Sales%20Sample%20for%20Power%20BI%20Desktop.zip) -tiedosto, joka sisältää kuvitteellisen yrityksen, Contoso, Inc:n verkkomyyntitietoja. Tiedot on tuotu tietokannasta, joten et voi muodostaa yhteyttä tietolähteeseen tai tarkastella niitä kyselyeditorissa. Pura tiedosto omalle tietokoneellesi ja avaa se Power BI Desktopissa.
+- Lataa [Contoson Sales Sample Power BI Desktopille](http://download.microsoft.com/download/4/6/A/46AB5E74-50F6-4761-8EDB-5AE077FD603C/Contoso%20Sales%20Sample%20for%20Power%20BI%20Desktop.zip) -tiedosto, joka sisältää fiktiivisen Contoso, Inc. -yrityksen online-myyntitietoja. Nämä tiedot on tuotu tietokannasta, joten et voi muodostaa yhteyttä tietolähteeseen tai tarkastella niitä kyselyeditorissa. Pura tiedosto omalle tietokoneellesi ja avaa se Power BI Desktopissa.
 
 ## <a name="understand-measures"></a>Tietoa mittayksiköistä
 

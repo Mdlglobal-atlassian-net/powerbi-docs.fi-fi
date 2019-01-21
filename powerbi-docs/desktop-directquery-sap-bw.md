@@ -5,17 +5,17 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 6c47fb847ff5360031f4bfe2974db9c405a4ce5f
-ms.sourcegitcommit: 2ae660a7b70fce23eb58b159d049eca44a664f2c
+ms.openlocfilehash: 61de19e50437cf8cb5920d2a413821e325da2a1a
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "52670735"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54278074"
 ---
 # <a name="directquery-and-sap-business-warehouse-bw"></a>DirectQuery ja SAP Business Warehouse (BW)
 Voit muodostaa yhteyden **SAP Business Warehouse (BW)** -tietolähteisiin suoraan **DirectQueryn** avulla. SAP BW:n OLAP- ja monidimensioluonteesta johtuen DirectQueryn käytöllä SAP BW:n kanssa ja DirectQueryn käytöllä relaatiolähteiden (esimerkiksi SQL Server) kanssa on monia tärkeitä eroja. Nämä erot esitellään seuraavassa:
@@ -32,19 +32,19 @@ Lisäksi on *äärimmäisen tärkeää* ymmärtää, että monia SAP BW:n toimin
 ## <a name="additional-modeling-restrictions"></a>Mallinnuksen lisärajoitukset
 Kun muodostat yhteyden SAP BW:n Power BI:n DirectQuerylla, ensisijaiset mallinnuksen lisärajoitukset ovat seuraavat:
 
-* **Ei tukea lasketuille sarakkeille**: Laskettujen sarakkeiden luominen ei ole mahdollista. Tämä tarkoittaa sitä, että myöskään ryhmittely ja klusterointi eivät ole käytettävissä, sillä ne luovat laskettuja sarakkeita.
-* **Mittayksiköiden lisärajoitukset**: mittayksiköissä käytettäville DAX-lausekkeille on lisärajoitukset SAP BW:n tarjoaman tukitason johdosta.
-* **Ei tukea suhteiden määrittämiselle**: suhteen ovat luontaisia ulkoisessa SAP-lähteessä, joten mallissa ei voi määrittää muita suhteita.
-* **Ei tietonäkymää**: **Tietonäkymässä** näytetään yleensä taulukoiden tarkemmat tiedot. SAP BW:n kaltaisten OLAP-lähteiden luonteesta johtuen tämä näkymä ei ole käytettävissä SAP BW -tietoja käytettäessä.
-* **Sarakkeiden ja mittayksiköiden tiedot ovat kiinteät**: Kenttäluettelossa näkyvä sarakkeiden ja mittayksiköiden luettelo on kiinteä taustalla olevan lähteen mukaisesti, joten sitä ei voi muokata. Et voi esimerkiksi poistaa saraketta tai vaihtaa sen tietotyyppiä (voit kuitenkin vaihtaa sen nimeä).
-* **Muut rajoitukset DAX:ssä**: Mittayksikkömääritelmissä käytettävälle DAX:lle on lisärajoituksia lähteen rajoitusten johdosta. Et esimerkiksi voi käyttää koostefunktiota taulukossa.
+* **Laskettuja sarakkeita ei tueta:** Laskettujen sarakkeiden luominen ei ole mahdollista. Tämä tarkoittaa sitä, että myöskään ryhmittely ja klusterointi eivät ole käytettävissä, sillä ne luovat laskettuja sarakkeita.
+* **Mittayksiköiden lisärajoitukset:** Mittayksiköissä käytettäville DAX-lausekkeille on lisärajoitukset SAP BW:n tarjoaman tukitason vuoksi.
+* **Suhteiden määrittämistä ei tueta:** Suhteet ovat luontaisia ulkoisessa SAP-lähteessä, joten mallissa ei voi määrittää muita suhteita.
+* **Ei tietonäkymää:** **Tietonäkymässä** näytetään yleensä taulukoiden tarkemmat tiedot. SAP BW:n kaltaisten OLAP-lähteiden luonteesta johtuen tämä näkymä ei ole käytettävissä SAP BW -tietoja käytettäessä.
+* **Sarakkeiden ja mittayksiköiden tiedot ovat kiinteät:** Kenttäluettelossa näkyvä sarakkeiden ja mittayksiköiden luettelo on kiinteä taustalla olevan lähteen mukaisesti, joten sitä ei voi muokata. Et voi esimerkiksi poistaa saraketta tai vaihtaa sen tietotyyppiä (voit kuitenkin vaihtaa sen nimeä).
+* **Muut DAX-rajoitukset:** Mittayksikkömääritelmissä käytettävälle DAX:lle on lisärajoituksia lähteen rajoitusten vuoksi. Et esimerkiksi voi käyttää koostefunktiota taulukossa.
 
 ## <a name="additional-visualization-restrictions"></a>Visualisointien lisärajoitukset
 Kun muodostat yhteyden SAP BW:n Power BI:n DirectQuerylla, ensisijaiset visualisointien lisärajoitukset ovat seuraavat:
 
-* **Ei sarakkeiden koostamista**: Et voi vaihtaa visualisoinnin sarakkeen koostamista. Sen asetus on aina *Älä tee yhteenvetoa*.
-* **Mittayksiköiden suodatus ei ole käytettävissä**: mittayksiköiden suodatus ei ole käytettävissä SAP BW:n tarjoamasta tukitasosta johtuen.
-* **Monivalinta ja sisällyttäminen sekä pois jättäminen**: Visualisoinnissa ei voi valita useita arvopisteitä, jos pisteet edustavat arvoja useammasta kuin yhdestä sarakkeesta. Jos sinulla on esimerkiksi palkkikaavio, joka kuvaa myyntiä maittain ja jonka selite on Luokka, et voi valita pistettä, joka edustaa Yhdysvaltoja ja pyöriä, sekä pistettä, joka edustaa Ranskaa ja vaatteita. Et myöskään voi valita pistettä, joka edustaa Yhdysvaltoja ja pyöriä, ja jättää sitä pois visualisoinnista. Molemmat rajoitukset johtuvat SAP BW:n tarjoamasta tuesta.
+* **Ei sarakkeiden koostamista:** Et voi vaihtaa visualisoinnin sarakkeen koostamista. Sen asetus on aina *Älä tee yhteenvetoa*
+* **Mittayksiköiden suodatus ei ole käytössä:** SAP BW:n tarjoamasta tukitasosta johtuen mittayksiköiden suodatus ei ole käytettävissä.
+* **Monivalinta sekä sisällyttäminen/pois jättäminen:** Visualisoinnissa ei voi valita useita arvopisteitä, jos pisteet edustavat arvoja useammasta kuin yhdestä sarakkeesta. Jos sinulla on esimerkiksi palkkikaavio, joka kuvaa myyntiä maittain ja jonka selite on Luokka, et voi valita pistettä, joka edustaa Yhdysvaltoja ja pyöriä, sekä pistettä, joka edustaa Ranskaa ja vaatteita. Et myöskään voi valita pistettä, joka edustaa Yhdysvaltoja ja pyöriä, ja jättää sitä pois visualisoinnista. Molemmat rajoitukset johtuvat SAP BW:n tarjoamasta tuesta.
 
 ## <a name="support-for-sap-bw-features"></a>SAP BW:n toimintojen ja ominaisuuksien tuki
 Seuraavassa taulukossa luetellaan kaikki SAP BW:n toiminnot ja ominaisuudet, joita ei tueta tai jotka toimivat eri tavalla Power BI:n kanssa käytettäessä.   
@@ -72,7 +72,7 @@ Seuraavassa taulukossa luetellaan kaikki SAP BW:n toiminnot ja ominaisuudet, joi
 | Käyttäjien kieliasetus |Kieliasetus, joka on käytössä SAP BW:hen yhdistettäessä, määritetään osana yhteystietoja, joten ei vastaa raportin lopullisen käyttäjän kieliasetusta. |
 | Tekstimuuttujat |SAP BW mahdollistaa sen, että kenttänimet voivat sisältää muuttujien paikkamerkkejä (esimerkiksi "$YEAR$ Actuals"), jotka sitten korvataan valitulla arvolla. Kenttä voidaan esimerkiksi näyttää muodossa "2016 Actuals" BEx-työkaluissa, jos muuttujaksi on valittu vuosi 2016. <br/> <br/> Sarakkeen nimeä Power BI:ssä ei vaihdeta muuttujan arvon mukaisesti, joten se näytetään muodossa "$YEAR$ Actuals".  Sarakkeen nimeä voi kuitenkin sitten vaihtaa Power BI:ssä. |
 | Customer Exit -muuttujat | Julkinen ohjelmointirajapinta ei tarjoa Customer Exit -muuttujia, joten niitä ei tueta Power BI:ssä. |
-| Ominaisuusrakenteet | Mitkä tahansa ominaisuusrakenteet taustalla olevassa SAP BW -lähteessä aiheuttavat Power BI:ssä näytettävien mittayksiköiden ”räjähdyksen”. Jos esimerkiksi käytössä on kaksi mittayksikköä Sales ja Costs sekä ominaisuusrakenne, joka sisältää Budget- ja Actual-mittayksiköt, näytetään neljä mittayksikköä: Sales.Budget, Sales.Actual, Costs.Budget, Costs.Actual. |
+| Ominaisuusrakenteet | Mitkä tahansa ominaisuusrakenteet taustalla olevassa SAP BW -lähteessä aiheuttavat Power BI:ssä näytettävien mittayksiköiden ”räjähdyksen”. Jos esimerkiksi käytössä on kaksi mittayksikköä, Sales ja Costs, sekä ominaisuusrakenne, joka sisältää Budget- ja Actual-mittayksiköt, näytetään neljä mittayksikköä: Sales.Budget, Sales.Actual, Costs.Budget, Costs.Actual. |
 
 
 ## <a name="next-steps"></a>Seuraavat vaiheet

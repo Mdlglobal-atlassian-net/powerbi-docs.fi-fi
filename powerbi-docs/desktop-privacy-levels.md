@@ -5,17 +5,17 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: reference
 ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: d3ccba3e68400a5a4c5fbf486aa8ef4b00c51729
-ms.sourcegitcommit: 05303d3e0454f5627eccaa25721b2e0bad2cc781
+ms.openlocfilehash: b3815e6783b612ff52aeb015fdd3b3669b6a2a51
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "52578332"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54282969"
 ---
 # <a name="power-bi-desktop-privacy-levels"></a>Power BI Desktopin yksityisyystasot
 **Power BI Desktopissa** yksityisyystasoilla määritetään eristystaso, jolla yksi tietolähde eristetään muista tietolähteistä. Rajoittava eristystaso estää tietojen vaihtamisen tietolähteiden välillä, mutta se voi myös rajoittaa toimintaa ja vaikuttaa suorituskykyyn.
@@ -52,7 +52,7 @@ Määritä tietolähteen yksityisyystaso valitsemalla tietolähde ja sitten **Mu
 | **Yhdistä tiedot kunkin lähteen Yksityisyystaso-asetustesi mukaan** (oletusasetus, käytössä) |Yksityisyystason asetuksilla määritetään tietolähteiden välinen eristystaso tietoja yhdisteltäessä. |
 | **Ohita yksityisyystasot ja mahdollisesti paranna suorituskykyä** (poissa käytöstä) |Yksityisyystasoja ei huomioida tietoja yhdisteltäessä. Tietojen toimivuus ja suorituskyky voivat kuitenkin parantua. |
 
-> **Tietoturvahuomautus:** Jos otat **Yksityisyystasot**-asetuksen käyttöön valitsemalla **Ohita yksityisyystasot ja mahdollisesti paranna suorituskykyä** -asetuksen **Yksityisyystasot**-valintaikkunassa, arkaluontoisia tai luottamuksellisia tietoja voi mahdollisesti näkyä valtuuttamattomille henkilöille. Älä ota **Yksityisyystasot**-asetusta käyttöön, ellet ole varma, että tietolähde ei sisällä arkaluonteisia tai luottamuksellisia tietoja.
+> **Suojaushuomautus:** Jos otat **Yksityisyystasot**-asetuksen käyttöön valitsemalla **Ohita yksityisyystasot ja mahdollisesti paranna suorituskykyä** -asetuksen **Yksityisyystasot**-valintaikkunassa, arkaluontoisia tai luottamuksellisia tietoja voi mahdollisesti näkyä valtuuttamattomille henkilöille. Älä ota **Yksityisyystasot**-asetusta käyttöön, ellet ole varma, että tietolähde ei sisällä arkaluonteisia tai luottamuksellisia tietoja.
 > 
 > 
 
@@ -68,7 +68,7 @@ a. Kun **Yhdistä tiedot kunkin lähteen tietosuojatason asetusten mukaisesti** 
 
 b. Kun **Ohita yksityisyystasot ja mahdollisesti paranna suorituskykyä** -asetus on valittuna, tietojen yhdistämisessä ohitetaan yksityisyystasot, jolloin arkaluontoisia tai luottamuksellisia tietoja voi mahdollisesti näkyä valtuuttamattomille henkilöille. Asetus voi parantaa suorituskykyä ja toimivuutta.
 
-> **Tietoturvahuomautus:** **Ohita yksityisyystasot ja mahdollisesti paranna suorituskykyä** -asetuksen valitseminen voi parantaa suorituskykyä. Silloin Power BI Desktop ei kuitenkaan voi taata Power BI Desktop -tiedostoon yhdistettyjen tietojen yksityisyyttä.
+> **Suojaushuomautus:** **Ohita yksityisyystasot ja mahdollisesti paranna suorituskykyä** -asetuksen valitseminen voi parantaa suorituskykyä. Silloin Power BI Desktop ei kuitenkaan voi taata Power BI Desktop -tiedostoon yhdistettyjen tietojen yksityisyyttä.
 > 
 > 
 

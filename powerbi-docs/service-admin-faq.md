@@ -5,17 +5,17 @@ author: mgblythe
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-admin
+ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 11/16/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: fe81c8e972a4fe36f88da495e4e0dce97a39d32c
-ms.sourcegitcommit: e17fc3816d6ae403414cf5357afbf6a492822ab8
+ms.openlocfilehash: 494612b9c8ef448756dfe2d516bfca68e69d2e7a
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/04/2018
-ms.locfileid: "52830305"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54296819"
 ---
 # <a name="administering-power-bi---frequently-asked-questions-faq"></a>Power BI:n hallinnointi - usein kysytyt kysymykset (UKK)
 
@@ -156,7 +156,7 @@ Jos haluat sallia Power BI:hin rekisteröitymisen olemassa oleville käyttäjill
 
 Organisaation käyttäjiin saattaa liittyä kolme tilannetta:
 
-* **Skenaario 1**: Jos organisaatiossasi on jo käytössä Office 365 -ympäristö, ja kaikilla käyttäjillä organisaatiossasi on Office 365 -tilit, käyttäjätietojen hallinnointi ei muutu.
+* **Skenaario 1**: Jos organisaatiossasi on jo käytössä Office 365 -ympäristö ja kaikilla käyttäjillä organisaatiossasi on Office 365 -tilit, käyttäjätietojen hallinnointi ei muutu.
 
 * **Skenaario 2**: Jos organisaatiossasi on jo käytössä Office 365 -ympäristö, mutta kaikilla käyttäjillä organisaatiossasi ei ole Office 365 -tiliä, vuokraajaan luodaan käyttäjätili ja käyttöoikeuksia myönnetään käyttäjän työpaikan tai oppilaitoksen sähköpostiosoitteen perusteella.
 
@@ -186,7 +186,7 @@ Kun suoritat ulkoisen haltuunoton, ennen haltuunottoa luotu Power BI -sisältö 
 
 ### <a name="if-i-have-multiple-domains-can-i-control-the-office-365-tenant-that-users-are-added-to"></a>Jos minulla on useita toimialueita, voinko hallinnoida Office 365 -vuokraajaa, johon käyttäjät on lisätty?
 
-Jos et tee mitään, jokaista käyttäjän sähköpostin toimialuetta ja alitoimialuetta varten luodaan vuokraaja. Jos haluat kaikkien käyttäjien kuuluvan samaan vuokraajaan sähköpostiosoitteiden tunnisteista riippumatta, luo alivuokraaja etukäteen tai käytä olemassa olevaa vuokraajaa ja lisää sitten kaikki olemassa olevat toimialueet ja alitoimialueet, jotka haluat yhdistää kyseiseen vuokraajaan. Tällöin kaikki käyttäjät, joiden sähköpostiosoitteen pääte viittaa kyseisiin toimialueisiin ja alitoimialueisiin, liittyvät automaattisesti kohdevuokraajaan rekisteröitymisen yhteydessä.
+Jos et tee mitään, jokaista käyttäjän sähköpostin toimialuetta ja alitoimialuetta varten luodaan vuokraaja. Jos haluat, että kaikki käyttäjät sijaitsevat samassa vuokraajassa riippumatta käyttäjien sähköpostiosoitteen tunnisteista: Luo alivuokraaja etukäteen tai käytä olemassa olevaa vuokraajaa ja lisää sitten kaikki olemassa olevat toimialueet ja alitoimialueet, jotka haluat yhdistää kyseiseen vuokraajaan. Tällöin kaikki käyttäjät, joiden sähköpostiosoitteen pääte viittaa kyseisiin toimialueisiin ja alitoimialueisiin, liittyvät automaattisesti kohdevuokraajaan rekisteröitymisen yhteydessä.
 
 > [!IMPORTANT]
 > Ei ole olemassa tuettua automaattista mekanismia käyttäjien siirtämiseksi vuokraajien välillä, kun ne on luotu. Jos haluat tietää, miten yksittäiseen Office 365 -vuokraajaan lisätään toimialueita, lue ohjeet kohdasta [Käyttäjien ja toimialueen lisääminen Office 365:een](/office365/admin/setup/add-domain/).

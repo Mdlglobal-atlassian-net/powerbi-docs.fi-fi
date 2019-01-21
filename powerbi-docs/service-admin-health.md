@@ -5,21 +5,21 @@ author: mgblythe
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-admin
+ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 11/02/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 101c49a67cabc41251fc6be5c84a26b54a3de46d
-ms.sourcegitcommit: d20f74d5300197a0930eeb7db586c6a90403aabc
+ms.openlocfilehash: afb579c3163fac5da8b3a14f2f2b974d64213098
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "50973185"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54296422"
 ---
 # <a name="track-power-bi-service-health-in-office-365"></a>Power BI -palvelun kunnon seuraaminen Office 365:ssä
 
-Office 365 -hallintakeskus sisältää Power BI -järjestelmänvalvojille tärkeitä työkaluja, kuten tiedon palvelun kunnosta kyseisellä hetkellä ja aiemmin. Jotta voit käyttää näitä tietoja, sinulla on oltava Power BI -palvelun järjestelmänvalvojan tai Office 365:n yleisen järjestelmänvalvojan rooli. Saat lisätietoja rooleista [Power BI:hin liittyvät järjestelmänvalvojaroolit](service-admin-administering-power-bi-in-your-organization.md#administrator-roles-related-to-power-bi) -ohjeartikkelista.
+Office 365 -hallintakeskus sisältää Power BI -järjestelmänvalvojille tärkeitä työkaluja, kuten tiedon palvelun kunnosta kyseisellä hetkellä ja aiemmin. Jos haluat käyttää näitä tietoja, sinulla on oltava jokin seuraavista rooleista: Power BI -palvelun järjestelmänvalvoja tai Office 365:n yleinen järjestelmänvalvoja. Saat lisätietoja rooleista [Power BI:hin liittyvät järjestelmänvalvojaroolit](service-admin-administering-power-bi-in-your-organization.md#administrator-roles-related-to-power-bi) -ohjeartikkelista.
 
 1. Kirjaudu sisään [Office 365 -hallintakeskukseen](https://portal.office.com/adminportal).
 

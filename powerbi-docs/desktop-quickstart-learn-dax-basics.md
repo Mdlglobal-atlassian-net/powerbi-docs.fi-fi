@@ -5,17 +5,17 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 09/27/2018
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: a171dd2aa375f8d12830b051dd8ce6437e4b3236
-ms.sourcegitcommit: a739a99e1006834a0f56e387c0bd9d945fb8a76b
+ms.openlocfilehash: 323391268e930d3b7b2926590f3377b850b65624
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51679451"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54282582"
 ---
 # <a name="dax-basics-in-power-bi-desktop"></a>DAX-perusteet Power BI Desktopissa
 Tämä artikkeli on tarkoitettu uusille Power BI Desktopin käyttäjille. Sen on tarkoitus antaa sinulle helppo ja nopea esittely siitä, miten voit käyttää Data Analysis Expression (DAX) -kaavaa ja ratkaista sillä useita peruslaskutoimituksia ja tietojen analysointiongelmia. Artikkeli sisältää käsitteellisiä tietoja, joukon harjoitustehtäviä ja muutamia tietovisoja, joilla voit testata, mitä olet oppinut. Kun olet käynyt tämän artikkelin läpi, sinulla pitäisi olla hyvä käsitys DAX:n tärkeimmistä peruskäsitteistä.
@@ -33,7 +33,7 @@ Painopisteenä on saada antaa käsitys DAX-kaavoista, joita käytetään laskuto
 
 **Esimerkkityökirja**
 
-Paras tapa oppia DAX on luoda joitakin peruskaavoja, käyttää sitä todellisten tietojen kanssa ja nähdä tulokset itse. Tässä esitetyissä esimerkeissä ja tehtävissä käytetään Contoso Sales Sample for Power BI Desktop Preview -tiedostoa. Tämä on sama mallitiedosto kuin se, jota käytetään [Opetusohjelma: Omien mittayksiköiden luominen Power BI Desktopissa](desktop-tutorial-create-measures.md) -artikkelissa. Voit ladata [mallitiedoston](http://download.microsoft.com/download/4/6/A/46AB5E74-50F6-4761-8EDB-5AE077FD603C/Contoso%20Sales%20for%20Power%20BI%20Designer.zip) täältä.
+Paras tapa oppia DAX on luoda joitakin peruskaavoja, käyttää sitä todellisten tietojen kanssa ja nähdä tulokset itse. Tässä esitetyissä esimerkeissä ja tehtävissä käytetään Contoso Sales Sample for Power BI Desktop Preview -tiedostoa. Samaa mallitiedostoa käytetään [Opetusohjelma: Omien mittayksiköiden luominen Power BI Desktopissa](desktop-tutorial-create-measures.md) -artikkelissa. Voit ladata [mallitiedoston](http://download.microsoft.com/download/4/6/A/46AB5E74-50F6-4761-8EDB-5AE077FD603C/Contoso%20Sales%20for%20Power%20BI%20Designer.zip) täältä.
 
 ## <a name="lets-begin"></a>Aloitetaan!
 Muodostamme ymmärryksemme DAX:ista kolmen peruskäsitteen ympärille: *syntaksi*, *funktiot* ja *konteksti*. DAX sisältää tietysti muitakin tärkeitä käsitteitä, mutta näiden kolmen käsitteen ymmärtäminen tarjoaa parhaan perustan DAX-taidoillesi.
@@ -65,7 +65,7 @@ Kun yrität ymmärtää DAX-kaavaa, on usein hyödyllistä eritellä kukin eleme
 
 Kun tämä mittayksikkö lisätään raporttiin, se laskee ja palauttaa arvot laskemalla yhteen myyntimäärät kaikkien muiden kenttien osalta, jotka otamme mukaan, esimerkiksi matkapuhelimet Suomessa.
 
-Saatat ajatella: ”Eikö tämä mittayksikkö tee saman kuin jos vain lisäisin SalesAmount-kentän omaan raporttiini?” Kyllä vain. Mutta on olemassa hyvä syy, miksi kannattaa luoda oma mittayksikkö, joka laskee yhteen SalesAmount-kentän arvoja: voimme käyttää sitä argumenttina muissa kaavoissa. Tämä saattaa nyt vaikuttaa hieman sekavalta, mutta kun DAX-kaavataitosi kasvavat, tämän tietäminen tekee kaavoistasi ja mallistasi tehokkaampia. Tulet itse asiassa näkemään Total Sales -mittayksikön argumenttina muissa kaavoissa myöhemmin.
+Saatat ajatella: ”Eikö tämä mittayksikkö tee saman kuin jos vain lisäisin SalesAmount-kentän omaan raporttiini?” Kyllä vain. Mutta on hyvä syy sille, miksi kannattaa luoda oma mittayksikkö, joka laskee yhteen SalesAmount-kentän arvoja: voimme käyttää sitä argumenttina muissa kaavoissa. Tämä saattaa nyt vaikuttaa hieman sekavalta, mutta kun DAX-kaavataitosi kasvavat, tämän tietäminen tekee kaavoistasi ja mallistasi tehokkaampia. Tulet itse asiassa näkemään Total Sales -mittayksikön argumenttina muissa kaavoissa myöhemmin.
 
 Käydäänpä seuraavaksi läpi muutamia muita tätä kaavaa koskevia seikkoja. Toimme esiin erityisesti funktion [SUM](https://msdn.microsoft.com/library/ee634387.aspx). Funktiot ovat ennalta laadittuja kaavoja, jotka helpottavat monimutkaisia laskutoimituksia ja käsittelytoimintoja mm. numeroiden, päivämäärien, ajan ja tekstin kanssa. Funktioista on lisätietoja jäljempänä.
 
@@ -160,7 +160,7 @@ Rivikonteksti ymmärretään tavallisesti nykyiseksi riviksi. Sitä käytetään
 
 **Suodatinkonteksti**
 
-Suodatinkonteksti on hieman vaikeampi ymmärtää kuin rivikonteksti. Suodatinkontekstin voi helpoiten ymmärtää seuraavasti: yksi tai useampi suodatin, jota käytetään tuloksen tai arvon määrittävässä laskutoimituksessa.
+Suodatinkonteksti on hieman vaikeampi ymmärtää kuin rivikonteksti. Suodatinkontekstia voi ajatella seuraavasti: Yksi tai useampi suodatin käytössä laskutoimituksessa, joka määrittää yksittäisen tuloksen tai arvon.
 
 Suodatinkontekstia ei käytetä rivikontekstin sijasta, vaan sitä käytetään rivikontekstin lisäksi. Jos esimerkiksi haluat rajata laskutoimitukseen sisällytettäviä arvoja tarkemmin, voit käyttää suodatinkontekstia, joka määrittää paitsi rivikontekstin myös vain tietyn arvon (suodattimen) kyseisessä rivikontekstissa.
 
@@ -186,7 +186,7 @@ Tämä kaava sisältää seuraavat syntaksielementit:
 
 **F.** Pilkku (**,**) erottaa ensimmäisen lausekeargumentin suodatinargumentista.
 
-**G.** Täydellinen viitattu sarake **Channel [ChannelName]**. Tämä on rivikontekstimme. Jokainen rivi tässä sarakkeessa määrittää kanavan: Store, Online, jne.
+**G.** Täydellinen viitattu sarake **Channel [ChannelName]**. Tämä on rivikontekstimme. Jokainen tämän sarakkeen rivi määrittää kanavan: Store, Online, jne.
 
 **H.** Tietty arvo, **Store**, suodattimena. Tämä on suodatinkontekstimme.
 

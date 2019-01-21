@@ -1,23 +1,23 @@
 ---
-title: 'IT-kulutusanalyysimalli Power BI:lle: esittely'
-description: 'IT-kulutusanalyysimalli Power BI:lle: esittely'
+title: 'IT-kulutusanalyysimalli Power BI:lle: aloita esittely'
+description: 'IT-kulutusanalyysimalli Power BI:lle: aloita esittely'
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: amac
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 06/23/2018
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: 66a1999637f31083681a6984d4698d78815dc1c1
-ms.sourcegitcommit: 1e4fee6d1f4b7803ea285eb879c8d5a4f7ea8b85
+ms.openlocfilehash: 910e4de20d777281f7617727889befa5eb80dfe1
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51717466"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54290063"
 ---
-# <a name="it-spend-analysis-sample-for-power-bi-take-a-tour"></a>IT-kulutusanalyysimalli Power BI:lle: esittely
+# <a name="it-spend-analysis-sample-for-power-bi-take-a-tour"></a>IT-kulutusanalyysimalli Power BI:lle: aloita esittely
 
 ## <a name="overview-of-the-it-spend-analysis-sample"></a>IT-kulutusanalyysimallin yleiskuva
 IT-kulutusanalyysin [sisältöpaketti](service-organizational-content-pack-introduction.md) (koontinäyttö, raportti ja tietojoukko) analysoi IT-osaston suunnitellut ja todelliset kulut. Tämän vertailun avulla voi arvioida sitä, kuinka hyvin yritys suunnitteli vuoden, sekä tutkia osa-alueita, jotka poikkeavat merkittävästi suunnitelmasta. Esimerkin yritys käyttää vuosittaista ennustejaksoa ja tuottaa neljännesvuosittain uusimman arvion, jonka avulla voidaan analysoida IT-osaston kuluissa tilivuoden aikana tapahtuneita muutoksia.
@@ -119,5 +119,5 @@ Valitse **Muokkaa raporttia** vasemmassa yläkulmassa ja tutustu muokkausnäkym�
 
 Tämä on turvallinen ympäristö kaikenlaisille kokeiluille. Voit aina jättää tekemäsi muutokset tallentamatta. Jos kuitenkin tallennat ne, voit aina siirtyä Nouda tiedot -kohtaan, jolloin saat mallista uuden kopion.
 
-## <a name="next-steps-connect-to-your-data"></a>Seuraavat vaiheet: muodostaa yhteys tietoihisi
+## <a name="next-steps-connect-to-your-data"></a>Seuraavat vaiheet: Yhdistä tietoihisi
 Toivomme, että tämä esittely on osoittanut, miten Power BI -koontinäytöt, Q&A ja raportit voivat tarjota uusia näkökulmia IT-kulutustietoihin. Nyt sinun vuorosi – muodosta yhteys omiin tietoihisi. Power BI:n avulla voit yhdistää useita eri tietolähteitä. Lisätietoja [Power BI:n käytön aloittamisesta](service-get-started.md).

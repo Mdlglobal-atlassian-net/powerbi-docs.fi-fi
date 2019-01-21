@@ -270,6 +270,12 @@ items:
         href: desktop-rls.md
       - name: Työkaluvihjeiden mukauttaminen
         href: desktop-custom-tooltips.md
+      - name: Tekstiruudut ja muodot raporteissa
+        href: power-bi-reports-add-text-and-shapes.md
+      - name: Hyperlinkin lisääminen tekstiruutuun
+        href: service-add-hyperlink-to-text-box.md
+      - name: Taulukoiden hyperlinkit
+        href: power-bi-hyperlinks-in-tables.md
       - name: Taulukon ehdollinen muotoilu
         href: desktop-conditional-table-formatting.md
       - name: Sarakkeen perusteella lajittelu Power BI Desktopissa
@@ -302,18 +308,12 @@ items:
         href: visuals/power-bi-visualization-export-data.md
       - name: Raportin visualisoinnin siirtäminen, koon muuttaminen ja ponnahduskäyttö
         href: visuals/power-bi-visualization-move-and-resize.md
-      - name: Taulukoiden hyperlinkit
-        href: power-bi-hyperlinks-in-tables.md
-      - name: Hyperlinkin lisääminen tekstiruutuun raportissa
-        href: service-add-hyperlink-to-text-box.md
       - name: Visualisointien toimintatapojen muokkaaminen raportissa
         href: service-reports-visual-interactions.md
       - name: Histogrammit
         href: visuals/service-histograms.md
       - name: Vinkkejä Power BI -karttavisualisoinneille
         href: visuals/power-bi-map-tips-and-tricks.md
-      - name: Tekstiruudut Power BI -raporteissa
-        href: power-bi-reports-add-text-and-shapes.md
       - name: X- ja Y-akselin ominaisuuksien muokkaaminen
         href: visuals/power-bi-visualization-customize-x-axis-and-y-axis.md
       - name: ArcGIS-kartat Power BI:ssä
@@ -1293,9 +1293,9 @@ items:
       href: service-admin-governance.md
     - name: Power BI:n suojaus
       href: service-admin-power-bi-security.md
-ms.openlocfilehash: a3abfd814e95ca00c433b66e7fe6aad665f8426f
-ms.sourcegitcommit: 4695f5ef54cc9929828320132f890317b4c3018e
+ms.openlocfilehash: b3553d493940b831e3e604fe43176ace125fe995
+ms.sourcegitcommit: 658b0de4f5a544d0906665b40925552804a61880
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "54239286"
+ms.lasthandoff: 01/19/2019
+ms.locfileid: "54406726"

@@ -5,17 +5,17 @@ author: mgblythe
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-admin
+ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 11/02/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: dee5c14d2ee714872409352b5e42d646e561c271
-ms.sourcegitcommit: a1b7ca499f4ca7e90421511e9dfa61a33333de35
+ms.openlocfilehash: 7e76f03a3795976aebd1480dc77a579c9245ed9e
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51507757"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54282053"
 ---
 # <a name="distribute-power-bi-content-to-external-guest-users-with-azure-ad-b2b"></a>Power BI -sisällön jakaminen ulkoisille vieraskäyttäjille Azure AD B2B:n avulla
 
@@ -101,6 +101,6 @@ Vieraskäyttäjällä on jo vuokraajan Power BI Pro -käyttöoikeus.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
-Tarkempia tietoja, myös rivitason suojauksen toiminnasta, on teknisessä raportissa [Power BI -sisällön jakaminen ulkoisille vieraskäyttäjille Azure AD B2B:n avulla](https://aka.ms/powerbi-b2b-whitepaper).
+Tarkempia tietoja mm. siitä, miten rivitason suojaus toimii, löytyy teknisestä raportista: [Power BI -sisällön jakaminen ulkoisille vieraskäyttäjille Azure AD B2B:n avulla](https://aka.ms/powerbi-b2b-whitepaper).
 
 Lisätietoja Azure AD B2B:stä on artikkelissa [Mitä tarkoittaa Azure AD B2B -yhteistyö?](/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b/).

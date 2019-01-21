@@ -5,17 +5,17 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: a27e192c5ccc1fb3a7af9bafbc9c4fd14ccabf4c
-ms.sourcegitcommit: b03912343a5a214c6bb972aaa6aa051c2a5f4332
+ms.openlocfilehash: a48ad26b9da5d5dba9fa04ab74301da7e1265d0b
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52900102"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54292047"
 ---
 # <a name="power-bi-for-us-government-customers"></a>Power BI Yhdysvaltain valtionhallinnon asiakkaille
 **Power BI-palvelulla** on versio, joka on saatavilla Yhdysvaltain valtionhallinnon asiakkaille osana **Office 365 US Government Community** -tilauksia. Tässä artikkelissa kuvattu **Power BI -palvelun** versio on suunniteltu erityisesti Yhdysvaltain valtionhallinnon asiakkaille ja on erillinen ja erilainen kuin **Power BI -palvelun** kaupallinen versio.
@@ -75,19 +75,19 @@ Seuraavat kysymykset (ja vastaukset) on toimitettu auttamaan sinua saamaan tarvi
 
 **Kysymys:** Miten siirrän kaupallisen **Power BI:n** tiedot Yhdysvaltain valtionhallinnon **Power BI -palveluun**?
 
-**Vastaus:** Järjestelmänvalvojan on luotava uusi **Power BI** -esiintymä erillisessä Yhdysvaltain valtionhallinnon tilauksessa. Voit sitten kopioida kaupalliset tiedot Yhdysvaltain valtionhallinnon **Power BI -palvelussa**, poistaa kaupallisen käyttöoikeutesi ja liittää olemassa olevan toimialueen Yhdysvaltain valtionhallinnon palveluun.
+**Vastaus**: Järjestelmänvalvojan on luotava uusi **Power BI** -esiintymä erillisessä Yhdysvaltain valtionhallinnon tilauksessa. Voit sitten kopioida kaupalliset tiedot Yhdysvaltain valtionhallinnon **Power BI -palvelussa**, poistaa kaupallisen käyttöoikeutesi ja liittää olemassa olevan toimialueen Yhdysvaltain valtionhallinnon palveluun.
 
-**Kysymys:** Miksi en voi yhdistää tiettyyn sisältöpakettiin?
+**Kysymys:** Miksi en voi muodostaa yhteyttä tiettyyn sisältöpakettiin?
 
-**Vastaus:** Sinun on varmistettava, että tilauksesi on otettu käyttöön, ennen kuin muodostat yhteyden kyseiseen sisältöpakettiin.
+**Vastaus**: Sinun on varmistettava, että tilauksesi on otettu käyttöön, ennen kuin muodostat yhteyden kyseiseen sisältöpakettiin.
 
 **Kysymys:** Olen kiinnostunut hankkimaan **Power BI:n** Yhdysvaltain valtionhallinnon organisaatiolle. Miten voin aloittaa?
 
-**Vastaus:** Rekisteröityminen (eli *perehdytys*) saattaa vaihdella nykyisen käyttöoikeuden ja tilauksen mukaan. Lisätietoja on artikkelissa [Rekisteröidy Yhdysvaltain valtionhallinnon Power BI:hin](service-govus-signup.md).
+**Vastaus**: Rekisteröityminen (eli *perehdytys*) saattaa vaihdella nykyisen käyttöoikeuden ja tilauksen mukaan. Lisätietoja on artikkelissa [Rekisteröidy Yhdysvaltain valtionhallinnon Power BI:hin](service-govus-signup.md).
 
-**Kysymys:** Eroaako **Power BI:n** Yhdysvaltain valtionhallinnolle URL-yhdistämisosoite kaupallisesta **Power BI** -URL-osoitteesta?
+**Kysymys:** Eroaako Yhdysvaltain valtionhallinnon käytössä olevan **Power BI:n** yhdistämisen URL-osoite kaupallisen **Power BI**:n URL-osoitteesta?
 
-**Vastaus:** Kyllä, URL-osoitteet ovat erilaiset. Seuraavassa taulukossa on kukin URL-osoite:
+**Vastaus**: Kyllä, URL-osoitteet ovat erilaiset. Seuraavassa taulukossa on kukin URL-osoite:
 
 | Kaupallisen version URL-osoite | Yhdysvaltain valtionhallinnon version URL-osoite |
 | --- | --- |
@@ -95,7 +95,7 @@ Seuraavat kysymykset (ja vastaukset) on toimitettu auttamaan sinua saamaan tarvi
 
 **Kysymys:** Tilini on valmisteltu useammassa kuin yhdessä maakohtaisessa pilvipalvelussa. Miten voin valita yhdistettävän pilvipalvelun käyttäessäni **Power BI Desktopia**?
 
-**Vastaus:** Heinäkuun 2018 **Power BI Desktop**-julkaisusta alkaen, voit valita, mihin pilvipalveluun haluat **Power BI Desktopilla** kirjautua.
+**Vastaus**: Heinäkuun 2018 **Power BI Desktop** -julkaisusta alkaen voit valita, mihin pilvipalveluun haluat **Power BI Desktopilla** kirjautua.
 
 
 ## <a name="next-steps"></a>Seuraavat vaiheet

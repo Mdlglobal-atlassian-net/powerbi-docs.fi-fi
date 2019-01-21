@@ -5,17 +5,17 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 5f202597fa641bf68b8e49c461ed5c25ea987c3e
-ms.sourcegitcommit: 2ae660a7b70fce23eb58b159d049eca44a664f2c
+ms.openlocfilehash: 019ee7985c27c72ca41a09c8d13754316fd60232
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "52670919"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54291644"
 ---
 # <a name="getting-started-with-power-bi-desktop"></a>Power BI Desktopin käytön aloittaminen
 Tervetuloa **Power BI Desktopin aloitusoppaaseen**. Tässä lyhyessä esittelyssä kerrotaan, miten Power BI Desktop toimii ja mitä sillä voi tehdä, ja autetaan sinua rakentamaan tehokkaita tietomalleja ja upeita raportteja, jotka vahvistavat liiketoimintatietojasi. 
@@ -69,9 +69,9 @@ Voit **noutaa tiedot**, katsoa **viimeaikaiset lähteet** tai **avata muita** **
 
 ![](media/desktop-getting-started/designer_gsg_blankreport.png)
 
-Power BI Desktopissa on kolme näkymää: **Raportti**-näkymä, **Tiedot**-näkymä ja **Suhteet**-näkymä. Power BI Desktop sisältää myös **kyselyeditorin**, joka avautuu erilliseen ikkunaan. **Kyselyeditorissa** voit laatia kyselyjä, muuntaa tietoja, ladata sitten tarkennetun tietomallin Power BI Desktopiin ja luoda raportteja.
+Power BI Desktopissa on kolme näkymää: **Raportti**-, **Tiedot**- ja **Suhteet**-näkymät. Power BI Desktop sisältää myös **kyselyeditorin**, joka avautuu erilliseen ikkunaan. **Kyselyeditorissa** voit laatia kyselyjä, muuntaa tietoja, ladata sitten tarkennetun tietomallin Power BI Desktopiin ja luoda raportteja.
 
-Power BI Desktopin vasemmassa reunassa on kolme näkymäkuvaketta, jotka näkyvät seuraavassa näytössä: ylhäältä alaspäin ne ovat **Raportti**, **Tiedot** ja **Suhteet**. Keltainen palkki vasemmalla on merkki parhaillaan käytössä olevasta näkymästä. Tässä tapauksessa **Raportti**-näkymä on käytössä. Voit vaihtaa näkymää valitsemalla minkä tahansa kolmesta kuvakkeesta.
+Power BI Desktopin vasemmassa reunassa on kolme näkymäkuvaketta, jotka näkyvät seuraavassa ruudussa: ylhäältä alaspäin ne ovat **Raportti**, **Tiedot** ja **Suhteet**. Keltainen palkki vasemmalla on merkki parhaillaan käytössä olevasta näkymästä. Tässä tapauksessa **Raportti**-näkymä on käytössä. Voit vaihtaa näkymää valitsemalla minkä tahansa kolmesta kuvakkeesta.
 
 ![](media/desktop-getting-started/designer_gsg_viewtypes.png)
 

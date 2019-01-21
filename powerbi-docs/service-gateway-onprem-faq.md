@@ -5,17 +5,17 @@ author: mgblythe
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-gateways
+ms.subservice: powerbi-gateways
 ms.topic: conceptual
 ms.date: 01/24/2018
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: da8fb3da7ea0e4f0457951bc421a5f207c3c6911
-ms.sourcegitcommit: 47269676aa600e60ec7ba0e323941a71e0622833
+ms.openlocfilehash: b1c74968365db59d51f7c0a7bdb356552cc75596
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/08/2018
-ms.locfileid: "51273306"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54283778"
 ---
 # <a name="on-premises-data-gateway-faq"></a>Paikallisten tietoyhdyskäytävien usein kysytyt kysymykset
 <!-- Shared FAQ shared Include -->
@@ -23,29 +23,29 @@ ms.locfileid: "51273306"
 
 ## <a name="analysis-services"></a>Analysis Services
 **Kysymys:** voinko luoda mukautettuja voimassa olevien käyttäjänimien yhdistämismäärityksiä Analysis Servicesille msdmpump.dll-tiedoston avulla?  
-**Vastaus**: et voi, tätä ei tueta tällä hetkellä.
+**Vastaus**: Ei. tätä ei tueta tällä hetkellä.
 
 **Kysymys:** voinko yhdistää yhdyskäytävän avulla monidimensioiseen (OLAP) esiintymään?  
-**Vastaus:** Kyllä. Paikallinen tietoyhdyskäytävä tukee reaaliaikaisia yhteyksiä Analysis Servicesin monidimensionaalisiin ja taulukkomuotoisiin malleihin.
+**Vastaus**: Kyllä. Paikallinen tietoyhdyskäytävä tukee reaaliaikaisia yhteyksiä Analysis Servicesin monidimensionaalisiin ja taulukkomuotoisiin malleihin.
 
 **Kysymys:** entä jos asennan yhdyskäytävän tietokoneeseen, joka on eri toimialueella kuin Windows-todennusta käyttävä palvelimeni?  
-**Vastaus:** Tälle ei ole mitään takeita. Kaikki riippuu kahden toimialueen välisestä luottamussuhteesta. Jos kaksi erillistä toimialuetta ovat luotetun toimialueen mallissa, yhdyskäytävä voi ehkä muodostaa yhteyden Analysis Services -palvelimeen ja voimassa oleva käyttäjänimi voidaan ehkä määrittää. Jos tämä ei onnistu, saattaa ilmetä kirjautumisvirhe.
+**Vastaus**: Tälle ei ole mitään takeita. Kaikki riippuu kahden toimialueen välisestä luottamussuhteesta. Jos kaksi erillistä toimialuetta ovat luotetun toimialueen mallissa, yhdyskäytävä voi ehkä muodostaa yhteyden Analysis Services -palvelimeen ja voimassa oleva käyttäjänimi voidaan ehkä määrittää. Jos tämä ei onnistu, saattaa ilmetä kirjautumisvirhe.
 
 **Kysymys:** miten voin selvittää, mikä voimassa oleva käyttäjänimi välitetään paikalliseen Analysis Services -palvelimeen?  
 **Vastaus**: tähän vastataan [vianmääritysartikkelissa](service-gateway-onprem-tshoot.md).
 
-**Kysymys:** Minulla on 25 tietokantaa Analysis Servicessä. Onko mitään tapaa saada ne kaikki käyttöön yhdyskäytävässä samanaikaisesti?  
+**Kysymys:** Minulla on 25 tietokantaa Analysis Servicesissä. Onko mitään tapaa saada ne kaikki käyttöön yhdyskäytävässä samanaikaisesti?  
 **Vastaus**: Ei. Tämä on suunnitteilla, mutta aikataulu ei ole vielä tiedossa.
 
 ## <a name="administration"></a>Hallinta
 **Kysymys:** voiko yhdyskäytävällä olla useita järjestelmänvalvojia?  
-**Vastaus:** Kyllä. Kun hallitset yhdyskäytävää, voit lisätä lisää järjestelmänvalvojia järjestelmänvalvojien välilehdessä.
+**Vastaus**: Kyllä. Kun hallitset yhdyskäytävää, voit lisätä lisää järjestelmänvalvojia järjestelmänvalvojien välilehdessä.
 
 **Kysymys:** täytyykö yhdyskäytävän järjestelmänvalvojan olla järjestelmänvalvoja koneessa, johon yhdyskäytävä on asennettu?  
 **Vastaus**: Ei. Yhdyskäytävän järjestelmänvalvoja hallitsee yhdyskäytävää palvelussa.
 
 **Kysymys:** voinko estää organisaationi käyttäjiä luomasta yhdyskäytävää?  
-**Vastaus**: Et. Tämä on suunnitteilla, mutta aikataulu ei ole vielä tiedossa.
+**Vastaus**: Ei. Tämä on suunnitteilla, mutta aikataulu ei ole vielä tiedossa.
 
 **Kysymys:** onko organisaationi yhdyskäytäville saatavilla käyttö- ja tilastotietoja?  
 **Vastaus**: Ei. Tämä on suunnitteilla, mutta aikataulu ei ole vielä tiedossa.
@@ -64,12 +64,12 @@ ms.locfileid: "51273306"
 **Vastaus**: Jos kyseessä on Analysis Servicesiin yhteydessä oleva koontinäyttö, käyttäjät näkevät vain tiedot, joihin heillä on oikeudet. Jos käyttäjillä ei ole samoja käyttöoikeuksia, he eivät näe mitään tietoja. Jos kyseessä on muu tietolähde, kaikilla käyttäjillä on samat tunnistetiedot, jotka järjestelmänvalvoja on kyseiselle tietolähteelle määrittänyt.
 
 **Kysymys:** miksi en saa muodostettua yhteyttä Oracle-palvelimeeni?  
-**Vastaus:** Sinun täytyy ehkä asentaa Oracle-asiakasohjelma ja määrittää tnsnames.ora-tiedostoon oikeat palvelintiedot, jotta voit muodostaa yhteyden. Tämä on yhdyskäytävästä erillinen asennus. Saat lisätietoja ohjeartikkelista [Oracle-asiakasohjelman asentaminen](service-gateway-onprem-manage-oracle.md#installing-the-oracle-client).
+**Vastaus**: Sinun täytyy ehkä asentaa Oracle-asiakasohjelma ja määrittää tnsnames.ora-tiedostoon oikeat palvelintiedot, jotta voit muodostaa yhteyden. Tämä on yhdyskäytävästä erillinen asennus. Saat lisätietoja ohjeartikkelista [Oracle-asiakasohjelman asentaminen](service-gateway-onprem-manage-oracle.md#installing-the-oracle-client).
 
-**Kysymys:**: toimiiko yhdyskäytävä ExpressRouten kanssa?  
-**Vastaus:** Kyllä. Saat lisätietoja [Power BI ja ExpressRoute](service-admin-power-bi-expressroute.md) -ohjeartikkelista
+**Kysymys:** toimiiko yhdyskäytävä ExpressRouten kanssa?  
+**Vastaus**: Kyllä. Saat lisätietoja [Power BI ja ExpressRoute](service-admin-power-bi-expressroute.md) -ohjeartikkelista
 
-**Kysymys:** käytän R-komentosarjoja. Tuetaanko sitä?
+**Kysymys:** Käytän R-komentosarjoja. Tuetaanko sitä?
 **Vastaus**: R-komentosarjoja tuetaan vain henkilökohtaisessa tilassa.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet

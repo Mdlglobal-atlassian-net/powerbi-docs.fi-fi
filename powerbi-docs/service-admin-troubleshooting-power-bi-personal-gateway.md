@@ -5,17 +5,17 @@ author: mgblythe
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 12/06/2017
 ms.author: mblythe
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: d5f2fa0abe6f0503ce5f41387f66db928ae0267e
-ms.sourcegitcommit: ba447d7cc94418d7d3cf6fdcb686ec1a859258a8
+ms.openlocfilehash: 642bd39cb9348bae2a1f30dbc9ee026e11ff7401
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37145406"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54284514"
 ---
 # <a name="troubleshooting-power-bi-gateway---personal"></a>Power BI Gateway - Personal -yhdyskäytävän vianmääritys
 Seuraavassa käydään läpi joitakin yleisiä ongelmia, joita saatat kohdata käyttäessäsi Power BI Gateway - Personal -yhdyskäytävää.
@@ -49,33 +49,33 @@ Ongelmia voi esiintyä paljon, jos yhdyskäytävän versio on vanhentunut.  Hyv�
 
 Saatat saada tämän virheilmoituksen \<tietojoukon\> asetuksissa, jos olet ajoittanut päivityksen ja sen jälkeen poistanut henkilökohtaisen yhdyskäytävän asennuksen ja asentanut sen uudelleen. Kun poistat henkilökohtaisen yhdyskäytävän asennuksen, päivitettäväksi määritetyn tietojoukon tietolähteen tunnistetiedot poistetaan Power BI -palvelusta.
 
-**Ratkaisu:** siirry Power BI:ssä tietojoukon päivitysasetuksiin. Valitse Tietolähteiden hallinta -kohdassa kaikkien virheen kohdanneiden tietolähteiden kohdalla Muokkaa tunnistetietoja -vaihtoehto ja kirjaudu sitten tietolähteeseen uudelleen.
+**Ratkaisu:** Siirry Power BI:ssä tietojoukon päivitysasetuksiin. Valitse Tietolähteiden hallinta -kohdassa kaikkien virheen kohdanneiden tietolähteiden kohdalla Muokkaa tunnistetietoja -vaihtoehto ja kirjaudu sitten tietolähteeseen uudelleen.
 
 **Virhe: tietojoukolle annetut tunnistetiedot ovat virheelliset. Jatka päivittämällä tunnistetiedot päivityksen kautta tai Tietolähdeasetukset-valintaikkunassa.**
 
-**Ratkaisu**: jos näyttöön tulee tunnistetietosanoma, se voi tarkoittaa seuraavia:
+**Ratkaisu**: Jos näyttöön tulee tunnistetietosanoma, se voi tarkoittaa seuraavia asioita:
 
 * Varmista, että tietolähteisiin kirjautumiseen käytetyt käyttäjänimet ja salasanat ovat ajan tasalla. Siirry Power BI:ssä tietojoukon päivitysasetuksiin. Päivitä tietolähteen tunnistetiedot valitsemalla Tietolähteiden hallinnassa Muokkaa tunnistetietoja -vaihtoehto.
 * Koosteet pilvipalvelulähteen ja paikallisen lähteen välillä, yksittäisessä kyselyssä, eivät päivity henkilökohtaisessa yhdyskäytävässä, jos jompikumpi lähteistä käyttää OAuth-todennusta. Esimerkki tästä on kooste CRM Onlinen ja paikallisen SQL Serverin välillä. Tämä epäonnistuu, koska CRM Online edellyttää OAuth-todennusta.
   
   Tämä on tunnettu ongelma, joka on tarkastelun alla. Voit kiertää ongelman käyttämällä erillisiä kyselyitä pilvipalvelulähteelle ja paikalliselle lähteelle ja yhdistämällä ne käyttämällä Yhdistä kysely- tai Liitä kyselyt loppuun -toimintoa.
 
-**Virhe: Ei-tuettu tietolähde.**
+**Virhe: ei-tuettu tietolähde.**
 
-**Ratkaisu:** jos saat ei-tuetusta tietolähteestä ilmoittavan virhesanoman Ajoita päivitys -asetuksissa, se voi tarkoittaa seuraavia: 
+**Ratkaisu:** Jos saat ei-tuetusta tietolähteestä ilmoittavan virhesanoman Ajoita päivitys -asetuksissa, se voi tarkoittaa seuraavia asioita: 
 
 * Tietolähteen päivitystä ei tällä hetkellä tueta Power BI:ssä. 
 * Excel-työkirja ei sisällä tietomallia, vain laskentataulukon tietoja. Power BI tukee tällä hetkellä päivitystä vain, jos ladattu Excel-työkirja sisältää tietomallin. Kun tuot tietoja Power Queryn avulla Excelissä, muista valita Lataa tiedot tietomalliin -vaihtoehto. Tämä varmistaa, että tiedot tuodaan tietomallin. 
 
 **Virhe: [Tietojen yhdistäminen ei onnistu] &lt;kyselyosa&gt;/&lt;…&gt;/&lt;…&gt; {0} käyttää tietolähteitä, joiden yksityisyystasoja ei voi käyttää yhdessä. Muodosta tämä tietoyhdistelmä uudelleen.**
 
-**Ratkaisu**: tämä virhe johtuu tietosuojatason rajoituksista ja käyttämiesi tietolähteiden tyypeistä.
+**Ratkaisu**: Tämä virhe johtuu tietosuojatason rajoituksista ja käyttämiesi tietolähteiden tyypeistä.
 
-**Virhe: Tietolähdevirhe: arvoa ”\[Table\]” ei voi muuntaa tyypiksi Table.**
+**Virhe: Tietolähdevirhe: Arvoa ”\[Table\]” ei voi muuntaa tyypiksi Table.**
 
-**Ratkaisu**: tämä virhe johtuu tietosuojatason rajoituksista ja käyttämiesi tietolähteiden tyypeistä.
+**Ratkaisu**: Tämä virhe johtuu tietosuojatason rajoituksista ja käyttämiesi tietolähteiden tyypeistä.
 
-**Virhe: tälle riville ei ole tarpeeksi tilaa.**
+**Virhe: Tälle riville ei ole tarpeeksi tilaa.**
 
 Tämä virhe ilmenee, jos yksittäisen rivin koko on yli 4 Mt. Sinun täytyy määrittää, mikä tietolähteen rivi on kyseessä, ja yrittää suodattaa se pois tai pienentää tämän rivin kokoa.
 
@@ -97,7 +97,7 @@ Tämä virhe ilmenee, jos yksittäisen rivin koko on yli 4 Mt. Sinun täytyy mä
 
 Power BI tällä hetkellä tue Windows-todentamista tietolähteelle ACE OLEDB -palvelun avulla.
 
-**Ratkaisu:** voit kiertää tämän virheen valitsemalla anonyymin todennuksen. Vanhoissa ACE OLEDB -palveluissa anonyymit tunnistetiedot vastaavat Windows-tunnistetietoja.
+**Ratkaisu:** Voit ohittaa tämän virheen valitsemalla anonyymin todennuksen. Vanhoissa ACE OLEDB -palveluissa anonyymit tunnistetiedot vastaavat Windows-tunnistetietoja.
 
 ## <a name="tile-refresh"></a>Ruudun päivitys
 Jos saat koontinäytön ruutujen päivittämistä koskevan virheilmoituksen, tutustu seuraavaan artikkeliin.

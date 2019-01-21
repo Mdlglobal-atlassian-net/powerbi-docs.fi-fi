@@ -5,17 +5,17 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: d875a5cd3ded8769ab3734601bd81cf0f17d7cea
-ms.sourcegitcommit: 05303d3e0454f5627eccaa25721b2e0bad2cc781
+ms.openlocfilehash: 74567016fe98d57b68d972084761ab8e50bf7b23
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "52578263"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54284721"
 ---
 # <a name="using-calculated-columns-in-power-bi-desktop"></a>Laskettujen sarakkeiden käyttäminen Power BI Desktopissa
 Laskettujen sarakkeiden avulla voit lisätä uutta tietoa taulukkoon, joka on jo mallissasi. Sen sijaan, että hakisit ja lataisit arvoja uuteen sarakkeeseen tietolähteestä, luot Data Analysis Expressions (DAX) -kaavan, joka määrittää sarakkeen arvot. Power BI Desktopissa lasketut sarakkeet luodaan käyttämällä raporttinäkymän Uusi sarake -toimintoa.
@@ -52,7 +52,7 @@ Hän voi lisätä sen raporttipohjaansa yhdessä toimitusten määrän kanssa. J
 ![](media/desktop-calculated-columns/calccolinpbid_citystatemap.png)
 
 ## <a name="learn-more"></a>Lisätietoja
-Tässä on vain lyhyt esittely lasketuista sarakkeista. Suosittelemme, että katsot [Opetusohjelma: Laskettujen sarakkeiden luominen Power BI Desktopissa](desktop-tutorial-create-calculated-columns.md) -opetusohjelman, josta voit ladata mallitiedoston ja saat vaiheittaiset ohjeet lisäsarakkeiden luomiseen. 
+Tässä on vain lyhyt esittely lasketuista sarakkeista. Tutustu [opetusohjelmaan: Laskettujen sarakkeiden luominen Power BI Desktopissa](desktop-tutorial-create-calculated-columns.md), josta voit ladata mallitiedoston ja saada vaiheittaiset ohjeet siitä, miten luodaan lisää sarakkeita. 
 
 Lisätietoja DAX-kielestä on kohdassa [DAX-perusteet Power BI Desktopissa](desktop-quickstart-learn-dax-basics.md).
 

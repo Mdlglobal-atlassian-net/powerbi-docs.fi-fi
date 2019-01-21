@@ -5,18 +5,18 @@ author: markingmyname
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-developer
+ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 08/10/2017
 ms.author: maghan
-ms.openlocfilehash: 44fbf1e651c36c95694e397c64050977f3ee730a
-ms.sourcegitcommit: 695c65629d6d1faba61db2e1570324f65f235dde
+ms.openlocfilehash: f6396747dc21ddc94ab1abda6939e8e423c649e7
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37092548"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54296181"
 ---
-# <a name="step-4-get-a-dataset-to-add-rows-into-a-power-bi-table"></a>Vaihe 4: Tietojoukon hankkiminen rivien lisäämiseksi Power BI -taulukkoon
+# <a name="step-4-get-a-dataset-to-add-rows-into-a-power-bi-table"></a>Vaihe 4: Tietojoukon hakeminen rivien lisäämiseksi Power BI -taulukkoon
 Tämä artikkeli on osa vaiheittaisia ohjeita, joilla [tiedot työnnetään tietojoukkoon](walkthrough-push-data.md).
 
 Tietojen tietojoukkoon työntämisen **vaiheessa 3**, [Tietojoukon luominen Power BI:ssä](walkthrough-push-data-create-dataset.md), kutsuit [Luo tietojoukko](https://docs.microsoft.com/rest/api/power-bi/datasets) -toiminnon tietojoukon luomiseksi Power BI:ssä. Tässä vaiheessa käytät [Nouda tietojoukkoja](https://docs.microsoft.com/rest/api/power-bi/datasets/getdatasets) -toimintoa ja Newtonsoft.Json-komentoa tietojoukon tunnuksen saamiseksi. Lisää rivejä tietojoukkoon käyttämällä vaiheen 4 tietojoukon tunnusta. 
@@ -26,11 +26,11 @@ Jotta voit työntää tietoja Power BI:n tietojoukkoon, sinun on viitattava tiet
 Saat tietojoukon seuraavasti.
 
 ## <a name="get-a-power-bi-dataset"></a>Power BI:n tietojoukon hankkiminen
-> **HUOMAUTUS**: varmista ennen aloittamista, että olet noudattanut edellisiä vaiheita [tietojen tietojoukkoon työntämisen](walkthrough-push-data.md) vaiheittaisissa ohjeissa.
+> **HUOMAUTUS**: Varmista ennen aloittamista, että olet noudattanut edellisiä vaiheita [tietojen tietojoukkoon työntämisen](walkthrough-push-data.md) vaiheittaisissa ohjeissa.
 > 
 > 
 
-1. Asenna Newtonsoft.Json NuGet -paketti konsolisovellusprojektissa, jonka loit vaiheessa 2: Vaiheittaiset ohjeet tietojen työntämiseen, [Todennustunnuksen hankkiminen](walkthrough-push-data-get-token.md). Asenna paketti seuraavasti:
+1. Konsolisovellusprojektissa, jonka loit vaiheessa 2: Vaiheittaiset ohjeet tietojen työntämiseen, [Todennustunnuksen hankkiminen](walkthrough-push-data-get-token.md), asenna Newtonsoft.Json NuGet -paketti Asenna paketti seuraavasti:
    
      a. Valitse Visual Studio 2015:ssä **Tools** > **NuGet Package Manager** > **Package Manager Console**.
    

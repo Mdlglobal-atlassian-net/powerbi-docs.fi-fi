@@ -6,17 +6,17 @@ manager: kvivek
 ms.reviewer: ''
 featuredvideoid: ajTPGNpthcg
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 06/22/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: d1152ae1e4d386882c9165e6545a44c7f3c47e46
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 23e237428b86046cf75b02e2e98082da18d671cf
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46548507"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54286678"
 ---
 # <a name="tips-and-tricks-for-power-bi-map-visualizations"></a>Power BI:n kartan visualisointeihin liittyviä vinkkejä
 Power BI:n voi integroida Bing Mapsin kanssa, jolloin karttoja voidaan luoda oletusarvoisten karttakoordinaattien avulla (prosessia kutsutaan geokoodaukseksi). Power BI ja Bing Maps käyttävät algoritmeja oikean sijainnin määrittämiseen, mutta joskus sijainnin määritys perustuu parhaaseen arvaukseen. Jos Power BI ei pysty luomaan kartan visualisointia itse, se käyttää apuna Bing Mapsia. 
@@ -76,7 +76,7 @@ Jos käyttämälläsi tietojoukolla on leveys- ja pituusastekentät, käytä nii
 ![leveys- ja pituusasteet](./media/power-bi-map-tips-and-tricks/pbi_latitude.png) 
 
 ## <a name="use-geo-hierarchies-so-you-can-drill-down-to-different-levels-of-location"></a>Käytä maantieteellisiä hierarkioita, jotta voit porautua sijainnin eri tasoille
-Kun tietojoukossa on jo eritasoisia sijaintitietoja, Power BI:n avulla voidaan luoda *maantieteellisiä hierarkioita*. Tämä tapahtuu vetämällä useita kenttiä **Sijainti**-säilöön. Kun kenttiä käytetään tällä tavalla yhdessä, niistä tulee maantieteellinen hierarkia. Alla olevassa esimerkissä olemme lisänneet maantieteelliset kentät seuraaville tiedoille: maa/alue, osavaltio ja kaupunki. Power BI:ssä tämän maantieteellisen hierarkian avulla voidaan porautua tietojen eri tasoille.
+Kun tietojoukossa on jo eritasoisia sijaintitietoja, Power BI:n avulla voidaan luoda *maantieteellisiä hierarkioita*. Tämä tapahtuu vetämällä useita kenttiä **Sijainti**-säilöön. Kun kenttiä käytetään tällä tavalla yhdessä, niistä tulee maantieteellinen hierarkia. Olemme lisänneet alla olevaan esimerkkiin maantieteelliset kentät kohteille: maa/alue, osavaltio ja kaupunki. Power BI:ssä tämän maantieteellisen hierarkian avulla voidaan porautua tietojen eri tasoille.
 
   ![Sijainti-kenttä](./media/power-bi-map-tips-and-tricks/power-bi-hierarchy.png)
 

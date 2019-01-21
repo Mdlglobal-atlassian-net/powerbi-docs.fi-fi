@@ -5,17 +5,17 @@ author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 06/28/2018
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: f4d16a5694dde63b66dcb001f1a5375ed92d978c
-ms.sourcegitcommit: fbb7924603f8915d07b5e6fc8f4d0c7f70c1a1e1
+ms.openlocfilehash: 2cb8e7b6c2744f80891c5424f620b9812eee1acb
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "37137165"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54285365"
 ---
 # <a name="10-tips-for-getting-help-with-your-power-bi-questions"></a>10 vinkkiä ohjeiden saamiseen, kun sinulla on Power BI:tä koskevia kysymyksiä
 Turhaudutko joskus Power BI:tä käyttäessäsi tai oletko pulassa, koska et saa vastauksia Power BI:tä koskeviin kysymyksiisi juuri silloin kun tarvitset niitä? 
@@ -30,7 +30,7 @@ Asiantuntijat, jotka tarvitsevat Power BI:tä koskevia vastauksia, käyttävät 
 Power BI -tiimi päivittää ja parantaa Power BI -ohjeita ja -koulutusta jatkuvasti. Voit löytää todella hyödyllistä sisältöä, kuten tallenteita verkkoseminaareista, julkaisuja, ohjatun oppimisen sisältöä sekä linkkejä uusimpia ominaisuuksia käsitteleviin blogikirjoituksiin.
 
 ## <a name="3-read-the-power-bi-blog-for-the-latest-news"></a>3 Lue uusimmat uutiset Power BI -blogista
-Power BI -tiimi esittelee kaikki uudet ominaisuudet säännöllisesti julkaistavissa [Power BI -blogikirjoituksissa](https://powerbi.microsoft.com/blog/). Niistä löydät kaikki Power BI:n uudet ominaisuudet – Power BI Desktopista Power BI -mobiilisovelluksiin. Ota tavaksesi tarkistaa uutuudet tihein välein: käytä joka viikko muutama minuutti blogien läpikäymiseen. Et voi koskaan tietää, milloin voit hyödyntää tiedonpalasta, jonka huomasit kuukausia sitten.
+Power BI -tiimi esittelee kaikki uudet ominaisuudet säännöllisesti julkaistavissa [Power BI -blogikirjoituksissa](https://powerbi.microsoft.com/blog/). Niistä löydät kaikki Power BI:n uudet ominaisuudet – Power BI Desktopista Power BI -mobiilisovelluksiin. Käy säännöllisin väliajoin tarkastamassa uudet ominaisuudet: Käytä muutama minuutti viikosta blogien tutkimiseen. Et voi koskaan tietää, milloin voit hyödyntää tiedonpalasta, jonka huomasit kuukausia sitten.
 
 ## <a name="4-try-twitter"></a>4 Kokeile Twitteriä
 Monet Power BI -asiakkaat ja -asiantuntijat ovat Twitterissä. Voit siis esittää kysymyksesi twiittinä. Lisää aihetunnisteet #powerbi ja #powerbihelp, niin asiantuntijat näkevät twiittisi.

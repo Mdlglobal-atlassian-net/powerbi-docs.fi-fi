@@ -5,20 +5,20 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 102198c4524903098ad0c6b0b9fd7e231c3f1fdc
-ms.sourcegitcommit: 05303d3e0454f5627eccaa25721b2e0bad2cc781
+ms.openlocfilehash: 703ccbc0c1c541fe161f409480701788d0cd12af
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "52578286"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54280241"
 ---
 # <a name="using-analysis-services-tabular-data-in-power-bi-desktop"></a>Analysis Servicesin taulukkomuotoisten tietojen käyttäminen Power BI Desktopissa
-Power BI Desktopissa on kaksi tapaa yhdistää SQL Server Analysis Servicesin taulukkomalleihin ja hakea niistä tietoja: Tutustu käyttämällä reaaliaikaista yhteyttä tai Valitse kohteet ja tuo Power BI Desktopiin.
+Power BI Desktopissa on kaksi tapaa muodostaa yhteys SQL Server Analysis Servicesin taulukkomalleihin ja hakea niistä tietoja: Tutustu käyttämällä reaaliaikaista yhteyttä tai Valitse kohteet ja tuo Power BI Desktopiin.
 
 Menetelmien kuvailu on alla.
 
@@ -54,13 +54,13 @@ Kun olet luonut dynaamisia raportteja Power BI Desktopissa, voit jakaa ne julkai
 ## <a name="frequently-asked-questions"></a>Usein kysyttyjä kysymyksiä
 **Kysymys:** Tarvitsenko paikallisen tietoyhdyskäytävän?
 
-**Vastaus:** Ehkä. Jos käytät Power BI Desktopia yhdistääksesi reaaliajassa taulukkomalliin, mutta et aio julkaista sitä Power BI -sivustossasi, et tarvitse yhdyskäytävää. Jos aiot julkaista taulukkomallin Power BI -sivustossasi, tietoyhdyskäytävä varmistaa turvallisen viestinnän Power BI -palvelun ja paikallisen Analysis Services -palvelimen välillä. Ota yhteys Analysis Services -palvelinten ylläpitäjään, ennen kuin asennat tietoyhteyskäytävän.
+**Vastaus**: Riippuu tilanteesta. Jos käytät Power BI Desktopia yhdistääksesi reaaliajassa taulukkomalliin, mutta et aio julkaista sitä Power BI -sivustossasi, et tarvitse yhdyskäytävää. Jos aiot julkaista taulukkomallin Power BI -sivustossasi, tietoyhdyskäytävä varmistaa turvallisen viestinnän Power BI -palvelun ja paikallisen Analysis Services -palvelimen välillä. Ota yhteys Analysis Services -palvelinten ylläpitäjään, ennen kuin asennat tietoyhteyskäytävän.
 
 Jos valitset valitse kohteet ja nouda tiedot, tuot taulukkomallin tiedot suoraan Power BI Desktop -tiedostoon, joten yhdyskäytävä ei ole tarpeen.
 
-**Kysymys:** Mitä eroa on reaaliaikaisen yhteyden muodostamisessa taulukkomalliin ja reaaliaikaisen yhteyden muodostamisessa Power BI Desktopista?
+**Kysymys:** Mitä eroa on reaaliaikaisen yhteyden muodostamisessa taulukkomalliin Power BI -palvelusta ja reaaliaikaisen yhteyden muodostamisessa Power BI Desktopista?
 
-**Vastaus:** Kun muodostat reaaliaikaista yhteyttä Power BI -palvelun sivustollasi olevaan taulukkomallin ja organisaation paikallisen Analysis Services -tietokannan välillä, niiden välisen tietoliikenteen suojaamiseen vaaditaan paikallinen tietoyhdyskäytävä. Kun muodostat reaaliaikaista yhteyttä taulukkomalliin Power BI Desktopista, yhteyskäytävää ei tarvita, koska sekä Power BI Desktop että Analysis Services -palvelin, jolle muodostat yhteyttä, ovat organisaatiossa paikallisesti. Jos kuitenkin julkaiset Power BI Desktop -tiedoston Power BI-sivustoon, tarvitset yhdyskäytävän.
+**Vastaus**: Kun muodostat reaaliaikaista yhteyttä Power BI -palvelusta sivustossasi olevan taulukkomallin ja organisaation paikallisen Analysis Services -tietokannan välille, niiden välisen tietoliikenteen suojaamiseen vaaditaan paikallinen tietoyhdyskäytävä. Kun muodostat reaaliaikaista yhteyttä taulukkomalliin Power BI Desktopista, yhteyskäytävää ei tarvita, koska sekä Power BI Desktop että Analysis Services -palvelin, jolle muodostat yhteyttä, ovat organisaatiossa paikallisesti. Jos kuitenkin julkaiset Power BI Desktop -tiedoston Power BI-sivustoon, tarvitset yhdyskäytävän.
 
 **Kysymys:** Jos luon reaaliaikaisen yhteyden, voinko muodostaa yhteyden toiseen tietolähteeseen samassa Power BI Desktop -tiedostossa?
 
@@ -68,15 +68,15 @@ Jos valitset valitse kohteet ja nouda tiedot, tuot taulukkomallin tiedot suoraan
 
 **Kysymys:** Jos luon reaaliaikaisen yhteyden, voinko muokata mallia tai kyselyä Power BI Desktopissa?
 
-**Vastaus:** Voit luoda raporttitason mittareita Power BI Desktopissa, mutta kaikki muut kyselyn ja mallinnuksen ominaisuudet on poistettu käytöstä, kun tutustut reaaliaikaisiin tietoihin.
+**Vastaus**: Voit luoda raporttitason mittayksiköitä Power BI Desktopissa, mutta kaikki muut kyselyn ja mallinnuksen ominaisuudet on poistettu käytöstä, kun tutustut reaaliaikaisiin tietoihin.
 
 **Kysymys:** Onko reaaliaikainen yhteys turvallinen?
 
-**Vastaus:** Kyllä. Analysis Services -palvelimeen muodostetaan yhteys senhetkisillä Windows-kirjautumistiedoilla. Et voi käyttää Perus- tai tallennettuja kirjautumistietoja Power BI -palvelussa etkä Power BI Desktopissa, kun tutkit reaaliajassa.
+**Vastaus**: Kyllä. Analysis Services -palvelimeen muodostetaan yhteys senhetkisillä Windows-kirjautumistiedoilla. Et voi käyttää Perus- tai tallennettuja kirjautumistietoja Power BI -palvelussa etkä Power BI Desktopissa, kun tutkit reaaliajassa.
 
 **Kysymys:** Näen siirtymistoiminnossa mallin ja perspektiivin. Mikä niiden ero on?
 
-**Vastaus:** Perspektiivi on taulukkomallin tietty näkymä. Se voi sisältää vain valittuja taulukoita, sarakkeita tai mittayksiköitä tietoanalyysin tarpeiden mukaan. Taulukkomalli sisältää aina vähintään yhden perspektiivin, johon voi sisältyä mitä tahansa mallissa. Jos et ole varma, mitä sinun pitäisi valita, ota yhteys järjestelmänvalvojaan.
+**Vastaus**: Perspektiivi on taulukkomallin tietty näkymä. Se voi sisältää vain valittuja taulukoita, sarakkeita tai mittayksiköitä tietoanalyysin tarpeiden mukaan. Taulukkomalli sisältää aina vähintään yhden perspektiivin, johon voi sisältyä mitä tahansa mallissa. Jos et ole varma, mitä sinun pitäisi valita, ota yhteys järjestelmänvalvojaan.
 
 ## <a name="to-change-the-server-name-after-initial-connection"></a>Voit muuttaa palvelimen nimen ensiyhteyden jälkeen
 Kun olet luonut Power BI Desktop -tiedoston ja tutustunut reaaliaikaiseen yhteyteen, saatat joissakin tapauksissa haluta vaihtaa yhteyden toiseen palvelimeen. Jos olet esimerkiksi luonut Power BI Desktop -tiedoston muodostaessasi yhteyden kehityspalvelimeen ja ennen Power BI -palveluun julkaisemista, haluatkin vaihtaa yhteyden tuotantopalvelimeen.
@@ -92,5 +92,5 @@ Kun olet luonut Power BI Desktop -tiedoston ja tutustunut reaaliaikaiseen yhteyt
 ## <a name="troubleshooting"></a>Vianmääritys 
 Seuraavassa on listattu kaikki tunnetut ongelmat, jotka ilmenevät yhdistettäessä SQL Server Analysis Servicesiin (SSAS) tai Azure Analysis Servicesiin. 
 
-* **Virhe: Mallirakennetta ei voitu ladata** - Tämä virhe ilmenee yleensä, kun käyttäjä yhdistää Analysis Servicesiin, mutta hänellä ei ole käyttöoikeutta tietokantaa/malliin.
+* **Virhe: Mallirakennetta ei voitu ladata** – Tämä virhe ilmenee yleensä silloin, kun käyttäjä muodostaa yhteyden Analysis Servicesiin ilman tietokannan/mallin käyttöoikeutta.
 

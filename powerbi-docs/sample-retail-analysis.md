@@ -1,23 +1,23 @@
 ---
-title: 'Jälleenmyyntianalyysimalli Power BI:lle: esittely'
-description: 'Jälleenmyyntianalyysimalli Power BI:lle: esittely'
+title: 'Jälleenmyyntianalyysimalli Power BI:lle: aloita esittely'
+description: 'Jälleenmyyntianalyysimalli Power BI:lle: aloita esittely'
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: amac
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 06/24/2018
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: c07c33cb6ae859c9cf202ae67119dbfb8dd45e26
-ms.sourcegitcommit: 1e4fee6d1f4b7803ea285eb879c8d5a4f7ea8b85
+ms.openlocfilehash: e4cb314af1522c71de85e4576572acbb1d2e88b3
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51717673"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54291460"
 ---
-# <a name="retail-analysis-sample-for-power-bi-take-a-tour"></a>Jälleenmyyntianalyysimalli Power BI:lle: esittely
+# <a name="retail-analysis-sample-for-power-bi-take-a-tour"></a>Jälleenmyyntianalyysimalli Power BI:lle: aloita esittely
 
 Tämä alan malliraporttinäkymä ja siihen liittyvä raportti analysoivat useiden myymälöiden ja alueiden myytyjen tuotteiden tietoja. Mittarien avulla vertaillaan tätä ja viime vuotta seuraavien arvojen osalta: myynti, tuotemäärät, myyntikate ja varianssi, sekä analysoidaan uusia myymälöitä. Nämä ovat oikeita tietoja obviEnceltä ([www.obvience.com](http://www.obvience.com)) nimettömään muotoon muunnettuna.
 

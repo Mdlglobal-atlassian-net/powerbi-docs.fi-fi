@@ -5,16 +5,16 @@ author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: report-builder
+ms.subservice: report-builder
 ms.topic: overview
 ms.date: 11/05/2018
 ms.author: maggies
-ms.openlocfilehash: dc811c5f6c6a7d5d428591eb7afd1665cda6dbb0
-ms.sourcegitcommit: b03912343a5a214c6bb972aaa6aa051c2a5f4332
+ms.openlocfilehash: 85950e2510147c3bed36d4911360f7c365c79da6
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52900447"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54283525"
 ---
 # <a name="getting-around-in-report-design-view-for-paginated-reports-preview"></a>Sivutettujen raporttien käsittely Raportin suunnittelunäkymässä (esikatselu)
 
@@ -88,14 +88,14 @@ Suunnittelualueen koko voi poiketa raportin tulostamiseen määrittämäsi sivun
  Voit määrittää ominaisuuksien arvon avattavasta luettelosta, tai kirjoittamalla arvon, tai voit luoda lausekkeen valitsemalla `<Expression>`.  
   
 ### <a name="changing-the-properties-pane-view"></a>Ominaisuudet-ruudun näkymän muuttaminen  
- Oletusarvoisesti Ominaisuudet-ruudussa näkyvät ominaisuudet on järjestetty yleisten luokkien mukaan, esim. Toiminto, Reunus, Täyttö, Fontti ja Yleinen. Jokaiseen luokkaan on liitetty joukko ominaisuuksia. Esimerkiksi seuraavat ominaisuudet kuuluvat Fontti-luokkaan: Color, FontFamily, FontSize, FontStyle, FontWeight, LineHeight ja TextDecoration. Voit halutessasi järjestää ruudussa luetellut ominaisuudet aakkosjärjestykseen. Tämä poistaa luokat ja järjestää kaikki ominaisuudet aakkosjärjestykseen luokasta riippumatta.  
+ Oletusarvoisesti Ominaisuudet-ruudussa näkyvät ominaisuudet on järjestetty yleisten luokkien mukaan, esim. Toiminto, Reunus, Täyttö, Fontti ja Yleinen. Jokaiseen luokkaan on liitetty joukko ominaisuuksia. Esimerkiksi Fontti-luokassa ovat seuraavat ominaisuudet: Color, FontFamily, FontSize, FontStyle, FontWeight, LineHeight, and TextDecoration. Voit halutessasi järjestää ruudussa luetellut ominaisuudet aakkosjärjestykseen. Tämä poistaa luokat ja järjestää kaikki ominaisuudet aakkosjärjestykseen luokasta riippumatta.  
   
- Ominaisuudet-ruudun yläreunassa on kolme painiketta: **Luokka**, **Aakkosjärjestys** ja **Ominaisuussivu**. Voit vaihtaa Ominaisuudet-ruudun näkymää valitsemalla Luokka- ja Aakkosjärjestys-painikkeet. Voit avata valitun raporttikohteen ominaisuuksien valintaikkunan valitsemalla **Ominaisuussivut**-painikkeen.  
+ Ominaisuudet-ruudun yläreunassa on kolme painiketta: **Luokka**, **Järjestä aakkosjärjestykseen** ja **Ominaisuussivu**. Voit vaihtaa Ominaisuudet-ruudun näkymää valitsemalla Luokka- ja Aakkosjärjestys-painikkeet. Voit avata valitun raporttikohteen ominaisuuksien valintaikkunan valitsemalla **Ominaisuussivut**-painikkeen.  
   
   
 ## <a name="5-grouping-pane"></a>5 Ryhmittelyruutu
 
- Voit käyttää ryhmiä järjestääksesi raporttitiedot visuaaliseksi hierarkiaksi ja laskeaksesi arvoja yhteen. Voit katsoa tietoalueen rivi- ja sarakeryhmiä suunnittelualueella ja Ryhmittelyruudussa. Ryhmittelyruudussa on kaksi ruutua: Riviryhmät ja Sarakeryhmät. Kun valitset tietoalueen, Ryhmittelyruudussa näytetään kyseisen tietoalueen kaikki ryhmät hierarkkisessa luettelossa: aliryhmät näkyvät sisennettyinä pääryhmänsä alla.  
+ Voit käyttää ryhmiä järjestääksesi raporttitiedot visuaaliseksi hierarkiaksi ja laskeaksesi arvoja yhteen. Voit katsoa tietoalueen rivi- ja sarakeryhmiä suunnittelualueella ja Ryhmittelyruudussa. Ryhmittely-ruudussa on kaksi ruutua: Riviryhmät ja Sarakeryhmät. Kun valitset tietoalueen, Ryhmittelyruudussa näytetään kyseisen tietoalueen kaikki ryhmät hierarkkisessa luettelossa: aliryhmät näkyvät sisennettyinä pääryhmänsä alla.  
   
  Voit luoda ryhmiä vetämällä kenttiä raporttitietoruudusta ja pudottamalla ne suunnittelualueelle tai Ryhmittelyruutuun. Voit lisätä pääryhmiä, vierekkäisiä ryhmiä, aliryhmiä sekä muuttaa ryhmien ominaisuuksia ja poistaa ryhmiä Ryhmittelyruudussa.  
   

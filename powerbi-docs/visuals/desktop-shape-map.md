@@ -5,17 +5,17 @@ author: mihart
 manager: kvivek
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 09/11/2018
 ms.author: mihart
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 71dbdd79e6bedee3f1377f0e7c29fcc6efbbba03
-ms.sourcegitcommit: ce8332a71d4d205a1f005b703da4a390d79c98b6
+ms.openlocfilehash: 163fc60052c4124e7c6cbac60f1486a185c35f17
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "47417322"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54290885"
 ---
 # <a name="shape-maps-in-power-bi-desktop-preview"></a>Muotokartat Power BI Desktopissa (esikatselu)
 Luo **Muotokartta**-visualisointi alueiden vertailemiseksi kartalla värejä käyttämällä. Toisin kuin **Kartta**-visualisoinnissa **Muotokartta** ei voi näyttää arvopisteiden tarkkoja maantieteellisiä sijainteja kartalla. Sen sijaan sen päätarkoituksena on näyttää alueiden suhteellisia vertailuja kartalla eri värejä käyttämällä.
@@ -113,7 +113,7 @@ Sinun täytyy ottaa huomioon muutamia seikkoja ja vaatimuksia, kun käytät tät
 ## <a name="region-keys"></a>Aluetunnukset
 Kun testaat **muotokarttaa** tässä esikatseluversiossa, käytä **seuraavia aluetunnuksia**.
 
-### <a name="australia-states"></a>Australia: osavaltio
+### <a name="australia-states"></a>Australia: Osavaltiot
 
 | `id` | `abbr` | `iso` | `name` | `postal` |
 | --- | --- | --- | --- | --- |
@@ -126,7 +126,7 @@ Kun testaat **muotokarttaa** tässä esikatseluversiossa, käytä **seuraavia al
 | au-nsw |NSW |AU-NSW |New South Wales |NSW |
 | au-act |ACT |AU-ACT |Australian Capital Territory |ACT |
 
-### <a name="austria-states"></a>Itävalta: osavaltiot
+### <a name="austria-states"></a>Itävalta: Osavaltiot
 
 | `id` | `iso` | `name` | `name-en` | `postal` |
 | --- | --- | --- | --- | --- |
@@ -140,7 +140,7 @@ Kun testaat **muotokarttaa** tässä esikatseluversiossa, käytä **seuraavia al
 | at-ka |AT-2 |Kärnten |Carinthia |KA |
 | at-bu |AT-1 |Burgenland |Burgenland |BU |
 
-### <a name="brazil-states"></a>Brasilia: osavaltiot
+### <a name="brazil-states"></a>Brasilia: Osavaltiot
 
 | `id` |
 | --- |
@@ -176,7 +176,7 @@ Kun testaat **muotokarttaa** tässä esikatseluversiossa, käytä **seuraavia al
 | Litigated Zone 3 |
 | Litigated Zone 4 |
 
-### <a name="canada-provinces"></a>Kanada: provinssit ja territoriot
+### <a name="canada-provinces"></a>Kanada: Provinssit
 
 | `id` | `iso` | `name` | `postal` |
 | --- | --- | --- | --- |
@@ -194,7 +194,7 @@ Kun testaat **muotokarttaa** tässä esikatseluversiossa, käytä **seuraavia al
 | ca-bc |CA-BC |British Columbia |BC |
 | ca-ab |CA-AB |Alberta |AB |
 
-### <a name="france-regions"></a>Ranska: alueet
+### <a name="france-regions"></a>Ranska: Alueet
 
 | `id` | `name` | `name-en` |
 | --- | --- | --- |
@@ -221,7 +221,7 @@ Kun testaat **muotokarttaa** tässä esikatseluversiossa, käytä **seuraavia al
 | Auvergne |Auvergne |Auvergne |
 | Aquitaine |Aquitaine |Aquitaine |
 
-### <a name="germany-states"></a>Saksa: osavaltiot
+### <a name="germany-states"></a>Saksa: Osavaltiot
 
 | `id` | `iso` | `name` | `name-en` | `postal` |
 | --- | --- | --- | --- | --- |
@@ -242,7 +242,7 @@ Kun testaat **muotokarttaa** tässä esikatseluversiossa, käytä **seuraavia al
 | de-by |DE-BY |Bayern |Bavaria |BY |
 | de-bw |DE-BW |Baden-Württemberg |Baden-Wurttemberg |BW |
 
-### <a name="ireland-counties"></a>Irlanti: maakunnat
+### <a name="ireland-counties"></a>Irlanti: Läänit
 
 | `id` |
 | --- |
@@ -273,7 +273,7 @@ Kun testaat **muotokarttaa** tässä esikatseluversiossa, käytä **seuraavia al
 | Cavan |
 | Carlow |
 
-### <a name="italy-regions"></a>Italia: alueet
+### <a name="italy-regions"></a>Italia: Alueet
 
 | `id` | `iso` | `name` | `name-en` | `postal` |
 | --- | --- | --- | --- | --- |
@@ -298,7 +298,7 @@ Kun testaat **muotokarttaa** tässä esikatseluversiossa, käytä **seuraavia al
 | it-pu |IT-75 |Apulia |Puglia |PU |
 | it-ab |IT-65 |Abruzzo |Abruzzo |AB |
 
-### <a name="mexico-states"></a>Meksiko: osavaltiot
+### <a name="mexico-states"></a>Meksiko: Osavaltiot
 
 | `id` | `abreviatura` | `iso` | `name` | `name-en` | `postal` |
 | --- | --- | --- | --- | --- | --- |
@@ -335,7 +335,7 @@ Kun testaat **muotokarttaa** tässä esikatseluversiossa, käytä **seuraavia al
 | mx-bcn |B.C. |MX-BCN |Baja California |Baja California |BN |
 | mx-agu |Ags. |MX-AGU |Aguascalientes |Aguascalientes |AG |
 
-### <a name="netherlands-provinces"></a>Alankomaat: provinssit
+### <a name="netherlands-provinces"></a>Alankomaat: Provinssit
 
 | `id` | `iso` | `name` | `name-en` |
 | --- | --- | --- | --- |
@@ -352,7 +352,7 @@ Kun testaat **muotokarttaa** tässä esikatseluversiossa, käytä **seuraavia al
 | nl-fl |NL-FL |Flevoland |Flevoland |
 | nl-dr |NL-DR |Drenthe |Drenthe |
 
-### <a name="uk-countries"></a>Yhdistynyt kuningaskunta: maat
+### <a name="uk-countries"></a>Yhdistynyt kuningaskunta: Maat
 
 | `id` | `iso` | `name` |
 | --- | --- | --- |
@@ -361,7 +361,7 @@ Kun testaat **muotokarttaa** tässä esikatseluversiossa, käytä **seuraavia al
 | gb-nir |GB-NIR |Northern Ireland |
 | gb-eng |GB-ENG |England |
 
-### <a name="usa-states"></a>Yhdysvallat: osavaltiot
+### <a name="usa-states"></a>Yhdysvallat: Osavaltiot
 
 | `id` | `name` | `postal` |
 | --- | --- | --- |

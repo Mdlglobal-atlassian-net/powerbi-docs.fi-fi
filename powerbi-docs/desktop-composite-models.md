@@ -5,17 +5,17 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 11/12/2018
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: ffb82303584249641454c81f61e399d2b1d4f574
-ms.sourcegitcommit: fdb54145f9bc93b312409c15c603749f3a4a876e
+ms.openlocfilehash: 734af04ae515b1cae19b5afc99166619a85ab828
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "52452771"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54290453"
 ---
 # <a name="use-composite-models-in-power-bi-desktop"></a>Yhdistelmämallien käyttäminen Power BI Desktopissa
 
@@ -27,7 +27,7 @@ Power BI Desktopin yhdistelmämallit koostuvat kolmesta toisiinsa liittyvästä 
 
 * **Yhdistelmämallit**: antavat mahdollisuuden sisällyttää raporttiin useita tietoyhteyksiä, kuten DirectQuery-yhteydet tai tuonnin, minä tahansa yhdistelminä. Tässä artikkelissa kuvataan tarkemmin yhdistelmämallit.
 
-* **Moni-moneen-yhteydet**: *Yhdistelmämallien* avulla voit määrittää taulukoiden välille *moni-moneen-yhteyksiä*. Tämä lähestymistapa poistaa vaatimuksen siitä, että taulukoiden arvojen pitäisi olla yksilöllisiä. Se myös poistaa edelliset ratkaisut, kuten uusien taulukoiden lisäämisen vain yhteyksien muodostamiseksi. Jos haluat lisätietoja, katso [Moni-moneen-yhteydet Power BI Desktopissa (esikatselu)](desktop-many-to-many-relationships.md).
+* **Monta-moneen-yhteys**: *Yhdistelmämallien* avulla voit määrittää taulukoiden välille *monta-moneen-yhteyksiä*. Tämä lähestymistapa poistaa vaatimuksen siitä, että taulukoiden arvojen pitäisi olla yksilöllisiä. Se myös poistaa edelliset ratkaisut, kuten uusien taulukoiden lisäämisen vain yhteyksien muodostamiseksi. Jos haluat lisätietoja, katso [Moni-moneen-yhteydet Power BI Desktopissa (esikatselu)](desktop-many-to-many-relationships.md).
 
 * **Tallennustilan tila**: Voit nyt määrittää, mitkä visualisoinnit edellyttävät kyselyä taustatietolähteisiin. Visualisoinnit, jotka eivät edellytä kyselyä, tuodaan, vaikka ne perustuisivat DirectQueryyn. Tämä ominaisuus parantaa suorituskykyä ja vähentää taustakuormitusta. Aiemmin jopa osittajien kaltaiset yksinkertaiset visualisoinnit käynnistivät kyselyjä taustalähteisiin. Lisätietoja löytyy artikkelista [Tallennustilan tila Power BI Desktopissa (esikatselu)](desktop-storage-mode.md).
 
@@ -156,11 +156,11 @@ DirectQueryä käytettäessä suorituskyky on aina otettava huomioon ensisijassa
 
 Yhdistelmämallien käyttäminen tuo mukanaan myös muita suorituskykyyn liittyviä huomionarvoisia seikkoja. Yksittäinen visualisointi voi saada aikaan kyselyiden lähettämisen useisiin lähteisiin, mikä usein välittää tulokset yhdestä kyselystä toiseen lähteeseen. Tällainen tilanne voi tuottaa seuraavanlaisia suorituksia:
 
-* **SQL-kysely, joka sisältää suuren määrän literaaliarvoja**: Esimerkiksi visualisoinnin, joka pyytää *kokonaissummaa* joukolle valittuja *tuotepäälliköitä*, on ensin löydettävä, mitkä *tuotteet* näille tuotepäälliköille on määritetty. Tämän on tapahduttava ennen kuin visualisointi lähettää SQL-kyselyn, joka sisältää kaikki tuotetunnukset *WHERE*-lausekkeessa.
+* **SQL-kysely, joka sisältää suuren määrän literaaliarvoja**: Esimerkiksi visualisoinnille, joka pyytää *kokonaissummaa* joukolle valittuja *tuotepäälliköitä*, on ensin löydettävä, mitkä *tuotteet* näille tuotepäälliköille on määritetty. Tämän on tapahduttava ennen kuin visualisointi lähettää SQL-kyselyn, joka sisältää kaikki tuotetunnukset *WHERE*-lausekkeessa.
 
 * **SQL-kysely, joka tekee kyselyn alemmalla rakeisuustasolla ja jossa tiedot koostetaan paikallisesti**: Kun *tuotteiden* määrä, joka täyttää *tuotepäällikön* suodatusehdot, muodostuu suureksi, kaikkia tuotteita ei ehkä kannata sisällyttää *WHERE*-lausekkeeseen. Sen sijaan voit tehdä kyselyn relaatiolähteeseen *tuotteen* alemmalla tasolla ja koostaa sitten tulokset paikallisesti. Jos *Tuotteet*-taulukon kardinaliteetti ylittää miljoonan rajan, kysely epäonnistuu.
 
-* **Useita SQL kyselyjä, yksi per ryhmä arvon mukaan**: Kun koostaminen käyttää **DistinctCount**-arvoa toisen lähteen jonkin sarakkeen ryhmittelemänä ja jos ulkoinen lähde ei tue ryhmittelyn määrittävien useiden literaaliarvojen tehokasta välittämistä, on lähetettävä yksi SQL-kysely per ryhmä arvon mukaan. 
+* **Useita SQL-kyselyjä, yksi per ryhmä arvon mukaan**: Kun koostaminen käyttää **DistinctCount**-arvoa toisen lähteen jonkin sarakkeen ryhmittelemänä ja jos ulkoinen lähde ei tue ryhmittelyn määrittävien useiden literaaliarvojen tehokasta välittämistä, on lähetettävä yksi SQL-kysely per ryhmä arvon mukaan. 
 
    Visualisointi voi esimerkiksi pyytää erillistä *Asiakastilinumero*-määrää (SQL Server -taulukosta) *tuotepäällikköjen* mukaan (laskentataulukosta tuotuna). Silloin visualisoinnin on välitettävä *Tuotepäälliköt*-taulukon tiedot SQL Serveriin lähetettävässä kyselyssä. Esimerkiksi Redshiftin kaltaisissa muissa lähteissä tämä ei olisi mahdollista. Sen sijaan lähetettäisiin yksi SQL-kysely per *myyntipäällikkö*&mdash; johonkin käytännölliseen rajaan asti, minkä ylittämisen jälkeen kysely epäonnistuu. 
 

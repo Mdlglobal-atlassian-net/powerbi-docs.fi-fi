@@ -6,17 +6,17 @@ manager: kvivek
 ms.reviewer: ''
 featuredvideoid: xmja6Epqa
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 09/21/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 71cde810f98a81ab5670b3ab04bc1cd502277c1c
-ms.sourcegitcommit: ce8332a71d4d205a1f005b703da4a390d79c98b6
+ms.openlocfilehash: 079494a47452ca0ca043032f78fa35c7d1755d11
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "47416862"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54282559"
 ---
 # <a name="radial-gauge-charts-in-power-bi"></a>Viisarimittarikaaviot Power BI:ssä
 Viisarimittarikaaviossa on pyöreä kaari, ja siinä on yksi arvo, joka mittaa edistymistä kohti tavoitetta/suorituskyvyn mittaria.  Tavoite tai tavoitearvo esitetään riveittäin (neula). Tämän päämäärän edistyminen esitetään varjostuksella.  Arvo, joka edustaa kyseistä edistymistä, näkyy lihavoituna kaaren sisällä. Kaikki mahdolliset arvot on jaettu tasaisesti kaarta pitkin minimistä (äärimmäisenä vasemmalla oleva arvo) maksimiin (äärimmäisenä oikealla oleva arvo).
@@ -44,7 +44,7 @@ Tai kello näyttää, miten voit luoda yksittäisten arvojen visualisoinnit: mit
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/xmja6EpqaO0?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
 
-### <a name="step-1-open-the-financial-sample-excel-file"></a>Vaihe 1: Avaa Excel Talousmalli -tiedosto
+### <a name="step-1-open-the-financial-sample-excel-file"></a>Vaihe 1: Avaa Excelin Talousmalli-tiedosto
 1. [Lataa Excel Talousmalli -mallitiedosto](../sample-financial-download.md), jos et ole vielä tehnyt sitä. Muista, mihin tallensit sen.
 
 2. Avaa tiedosto ***Power BI -palvelussa*** valitsemalla **Nouda tiedot \>**  ja selaamalla sijaintiin, johon tallensit tiedoston. Valitse **Tuo**. Talousmalli lisätään työtilaasi tietojoukkona.

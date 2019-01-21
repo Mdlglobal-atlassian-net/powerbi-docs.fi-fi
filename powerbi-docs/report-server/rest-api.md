@@ -5,16 +5,16 @@ author: markingmyname
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-report-server
+ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 05/25/2018
 ms.author: maghan
-ms.openlocfilehash: 08c8075fe275ff1472d3e9845f954ef4d029b373
-ms.sourcegitcommit: 49570ab8f5b5cd5bab4cd388f4281b1372bcb80b
+ms.openlocfilehash: b7423a5b15f314050ee21b7eed5c3ea7ad960985
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/09/2018
-ms.locfileid: "35250426"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54291667"
 ---
 # <a name="develop-with-the-rest-apis-for-power-bi-report-server"></a>Power BI -raporttipalvelimen REST-ohjelmointirajapintojen käyttö ohjelmankehityksessä
 
@@ -33,7 +33,7 @@ REST-ohjelmointirajapinnan pyyntö/vastaus-pari voidaan jakaa viiteen osaan:
   * URI-protokolla: ilmaisee pyynnön välittämiseen käytetyn protokollan. Esimerkiksi `http` tai `https`.
   * URI-isäntä: määrittää toimialuenimen tai palvelimen IP-osoitteen, jossa REST-palvelupäätepiste sijaitsee, kuten `myserver.contoso.com`.
   * Resurssipolku: määrittää resurssin tai resurssikokoelman ja saattaa sisältää useita segmenttejä, joita palvelu käyttää kyseisten resurssien valinnassa. Esimerkiksi: `CatalogItems(01234567-89ab-cdef-0123-456789abcdef)/Properties` soveltuu CatalogItemin määriteltyjen ominaisuuksien hakemiseen.
-  * Kyselyn merkkijono (valinnainen): tarjoaa yksinkertaisia parametreja, kuten ohjelmointirajapinnan versio- tai resurssinvalintaehdot.
+  * Kyselyn merkkijono (valinnainen): tarjoaa yksinkertaisia parametreja, kuten ohjelmointirajapinnan version tai resurssinvalinnan ehdot.
 * HTTP-pyyntöviestin otsikkokentät:
   
   * Pakollinen [HTTP-menetelmä](https://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html) (tunnetaan myös nimellä toiminto tai verbitoiminto), joka kertoo palvelulle minkä tyyppinen pyytämäsi toiminnon on. Reporting Services REST-ohjelmointirajapinnat tukevat menetelmiä DELETE, GET, HEAD, PUT, POST ja PATCH.

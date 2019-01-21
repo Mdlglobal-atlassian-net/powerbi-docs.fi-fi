@@ -5,16 +5,16 @@ author: maikelson
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 11/26/2018
 ms.author: maikelson
-ms.openlocfilehash: b144f3101606a58b2cd0b48db976a70477442d40
-ms.sourcegitcommit: 2ae660a7b70fce23eb58b159d049eca44a664f2c
+ms.openlocfilehash: 24d023d726183119a3bd098c61db75cb68969c52
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "52670413"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54283135"
 ---
 # <a name="power-bi-webinars"></a>Power BI -verkkoseminaarit
 
@@ -50,11 +50,11 @@ Aloita näistä suosituista verkkoseminaareista
 <br>tekijä: Gohul Shanmugalingam
 <br>[Rekisteröidy ja katso nyt](https://info.microsoft.com/CA-PowerBI-WBNR-FY19-11Nov-08-PowerBIAnalyticsDoneRight-MCW0008690_01Registration-ForminBody.html?Is=Website)
 
-**Tee Power BI -tiedoistasi visuaalisia: ydinkaaviotyypit ja niiden käyttäminen**
+**Visualisoi Power BI -tietosi:  peruskaaviotyypit ja niiden käyttö**
 <br>tekijä: Miranda Li
 <br>[Rekisteröidy ja katso nyt](https://info.microsoft.com/Make-your-Power-BI-Data-Visual-Registration.html?Is=Website)
 
-**Power BI, Excel ja Office 365: optimoi yrityksesi tietoja**
+**Power BI, Excel ja Office 365: yrityksen tietojen optimointi**
 <br>Olaf Hubel ja Miguel Martinez
 <br>[Rekisteröidy ja katso nyt](https://info.microsoft.com/Unlocking-the-Value-of-your-Enterprise-Data-OnDemandRegistration.html?Is=Website)
 
@@ -112,7 +112,7 @@ Katso tallennetut istuntoja milloin tahansa
 <br>tekijä: Ed Bobrin Avanadesta
 <br>[Rekisteröidy ja katso nyt](https://info.microsoft.com/applied-intelligence-for-sales-service.html?Is=Website)
 
-**Valmistajat: Ala käy läpi digitaalista muunnosta – säilytä johtajuus hyödyntämällä analyyseja kannattavuuden maksimoimiseen**
+**Valmistajat: Ala käy läpi digitaalista muutosta – säilytä johtajuus hyödyntämällä analyyseja kannattavuuden maksimoimiseen**
 <br>tekijät: Jon Thompson Blue Marginista ja Jim Pastor Elgin Fastener Groupista
 <br>[Rekisteröidy ja katso nyt](https://info.microsoft.com/digital-transformation-in-manufacturing.html?Is=Website)
 
@@ -155,11 +155,11 @@ Katso tallennetut istuntoja milloin tahansa
 
 **[Power BI:n käyttöönoton viitekehys – verkkoseminaarisarja](https://info.microsoft.com/ww-landing-powerbi-adoption-framework-series.html?Is=Website)**
 <br>tekijät: Manu Kanwarpal ja Paul Henwood
-<br>[Rekisteröidy ja katso nyt – Osa 1 – Omaksuminen: omaksu tietokeskeinen kulttuuri](https://info.microsoft.com/ww-landing-powerbi-adoption-ondemand.html?Is=Website)
-<br>[Rekisteröidy ja katso nyt – Osa 2 – Hallinta: hallinnoi Power BI -käyttöäsi](https://info.microsoft.com/ww-ondemand-powerbi-governance.html?Is=Website)
-<br>[Rekisteröidy ja katso nyt – Osa 3 – Palvelun hallinta: tietoja Power BI -palvelun hallinnasta](https://info.microsoft.com/ww-landing-pbi-adoption-framework-part3.html?Is=Website)
-<br>[Rekisteröidy ja katso nyt – Osa 4 – Suojaus: tietojesi suojaaminen Power BI:n avulla](https://info.microsoft.com/ww-landing-pbi-adoption-framework-part4.html?Is=Website)
-<br>[Rekisteröidy ja katso nyt – Osa 5 – Käyttöönotto: Power BI:n käyttöönoton onnistunut toteutus](https://info.microsoft.com/ww-landing-powerbi-adoption-part5-rollout.html?Is=Website)
+<br>[Rekisteröidy ja katso nyt – osa 1 – omaksuminen: Aineistopohjaisen kulttuurin omaksuminen](https://info.microsoft.com/ww-landing-powerbi-adoption-ondemand.html?Is=Website)
+<br>[Rekisteröidy ja katso nyt – osa 2 – hallinta: Power BI:n käytön hallinta](https://info.microsoft.com/ww-ondemand-powerbi-governance.html?Is=Website)
+<br>[Rekisteröidy ja katso nyt – osa 3 – palvelunhallinta: Näkemyksiä Power BI -palvelun hallintaan](https://info.microsoft.com/ww-landing-pbi-adoption-framework-part3.html?Is=Website)
+<br>[Rekisteröidy ja katso nyt – osa 4 – suojaus: Tietojen suojaaminen Power BI:n avulla](https://info.microsoft.com/ww-landing-pbi-adoption-framework-part4.html?Is=Website)
+<br>[Rekisteröidy ja katso nyt – osa 5 – käyttöönotto: Power BI:n onnistunut käyttöönotto](https://info.microsoft.com/ww-landing-powerbi-adoption-part5-rollout.html?Is=Website)
 
 **Office 365:n rahoitusalan ammattilaisten verkkoseminaarisarja**
 <br>tekijät: Mark Traverso, Carlos Otero, Johnnie Thomas, Amanda Cofsky ja Miguel Martinez

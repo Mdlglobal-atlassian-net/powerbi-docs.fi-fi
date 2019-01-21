@@ -6,20 +6,20 @@ ms.author: mblythe
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-gateways
+ms.subservice: powerbi-gateways
 ms.topic: conceptual
 ms.date: 10/10/2018
 LocalizationGroup: Gateways
-ms.openlocfilehash: ed9281ba14ad25e2acb347a2394ec729e9d4465c
-ms.sourcegitcommit: a1b7ca499f4ca7e90421511e9dfa61a33333de35
+ms.openlocfilehash: 7256de8dd36c25af9959e7103186666d65123360
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51508033"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54295255"
 ---
 # <a name="use-kerberos-for-single-sign-on-sso-from-power-bi-to-on-premises-data-sources"></a>Kerberoksen käyttäminen kertakirjautumista (SSO) varten Power BI:stä paikallisiin tietolähteisiin
 
-Käytä [rajoitettua Kerberos-delegointia](https://technet.microsoft.com/library/jj553400.aspx) ottaaksesi saumattoman kertakirjautumisen käyttöön. Kun otat kertakirjautumisen käyttöön, Power BI -raportit ja -koontinäytöt voivat helposti päivittää tiedot, jotka ovat peräisin paikallisista lähteistä.
+Käytä [rajoitettua Kerberos-delegointia](/windows-server/security/kerberos/kerberos-constrained-delegation-overview) ottaaksesi saumattoman kertakirjautumisen käyttöön. Kun otat kertakirjautumisen käyttöön, Power BI -raportit ja -koontinäytöt voivat helposti päivittää tiedot, jotka ovat peräisin paikallisista lähteistä.
 
 ## <a name="supported-data-sources"></a>Tuetut tietolähteet
 
@@ -112,9 +112,9 @@ Tässä osassa oletetaan, että olet jo määrittänyt palvelun päänimet pohja
 Seuraavissa vaiheissa oletuksena on paikallinen ympäristö, jossa on kaksi konetta: yhdyskäytäväkone ja tietokantapalvelin, joka käyttää SQL Serveriä. Esimerkissä käytetään seuraavia asetuksia ja nimiä:
 
 * Yhdyskäytäväkoneen nimi: **PBIEgwTestGW**
-* Yhdyskäytävän palvelutili: **PBIEgwTest\GatewaySvc** (tilin näyttönimi: Gateway Connector)
-* SQL Server-tietolähteen koneen nimi: **PBIEgwTestSQL**
-* SQL Server-tietolähteen palvelutili: **PBIEgwTest\SQLService**
+* Yhdyskäytävän palvelutili: **PBIEgwTest\GatewaySvc** (tilin näyttönimi: yhdyskäytäväyhteys)
+* SQL Serverin tietolähteen koneen nimi: **PBIEgwTestSQL**
+* SQL Serverin tietolähteen palvelutili: **PBIEgwTest\SQLService**
 
 Kyseisillä esimerkkinimillä ja -asetuksilla määritykset ovat seuraavat:
 
@@ -391,7 +391,7 @@ Testaa asennuksesi julkaisemalla DirectQuery-raportti Power BI Desktopista Power
 
     ![Yhdyskäytävän diagnostiikka](media/service-gateway-sso-kerberos/gateway-diagnostics.png)
 
-1. Ota BW-jäljitys käyttöön ja tarkastele luotuja lokitiedostoja. Käytettävissä on useita erilaisia BW-jäljitysvaihtoehtoja. Lisätietoja löytyy SAP-dokumentaatiosta.
+1. Ottaa BW-jäljitys käyttöön ja tarkastele luotoja lokitiedostoja. Käytettävissä on useita erilaisia BW-jäljitysvaihtoehtoja. Lisätietoja löytyy SAP-dokumentaatiosta.
 
 ## <a name="errors-from-an-insufficient-kerberos-configuration"></a>Puutteellisesta Kerberos-määrityksestä johtuvat virheet
 

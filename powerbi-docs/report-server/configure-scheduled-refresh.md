@@ -5,16 +5,16 @@ author: markingmyname
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-report-server
+ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 11/01/2017
 ms.author: maghan
-ms.openlocfilehash: d8283f1abf05ab788336413bd18582ea71d4e43f
-ms.sourcegitcommit: fecea174721d0eb4e1927c1116d2604a822e4090
+ms.openlocfilehash: 4ca6d7c5ed47433614dc194db7d09162d5e96eae
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "34296260"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54285710"
 ---
 # <a name="how-to-configure-power-bi-report-scheduled-refresh"></a>Power BI -raportin ajoitetun päivityksen määrittäminen
 Jotta voit päivittää Power BI -raportin tiedot, sinun on luotava ajoitetun päivityksen malli. Tämä tehdään Power BI -raportin *Hallinta*-alueella.
@@ -79,7 +79,7 @@ Tarkastele ajoitetun päivityksen mallin tilaa verkkoportaalissa.
    | Tietoja päivitetään |Tietoja päivitetään mallissa. |
    | Tunnistetietoja poistetaan mallista |Tunnistetietojen, joita käytetään yhteyden muodostamiseen tietolähteeseen, poistaminen mallista. |
    | Tallentaa mallia luetteloon |Tietojen päivittäminen on valmis ja päivitetty malli tallennetaan takaisin raporttipalvelimen luettelon tietokantaan. |
-   | Valmis: tietojen päivitys |Päivitys on valmis. |
+   | Valmis: Tietojen päivittäminen |Päivitys on valmis. |
    | Virhe: |Päivityksen aikana tapahtui virhe, joka näytetään. |
 
 Verkkosivu on päivitettävä nykyisen tilan näkemiseksi. Tila ei muutu automaattisesti.

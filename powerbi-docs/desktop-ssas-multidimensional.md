@@ -5,17 +5,17 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 40da2a9a53cfb7a0e497f85f87bca6a133046720
-ms.sourcegitcommit: 05303d3e0454f5627eccaa25721b2e0bad2cc781
+ms.openlocfilehash: 8668e477a2778bfdeec8260a31ca63af9d4124a6
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "52578700"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54287688"
 ---
 # <a name="connect-to-ssas-multidimensional-models-in-power-bi-desktop"></a>Yhteyden muodostaminen SSAS-monidimensiomalleihin Power BI Desktopissa
 Power BI Desktopin kautta on mahdollista käyttää **SSAS-monidimensiomalleja**, jotka tunnetaan myös lyhenteellä **SSAS MD**.
@@ -103,4 +103,4 @@ Power BI Desktop tukee seuraavia SSAS MD:n ominaisuuksia:
 ## <a name="troubleshooting"></a>Vianmääritys 
 Alla luetellaan kaikki tunnetut ongelmat, joita esiintyy muodostettaessa yhteyttä SQL Server Analysis Servicesiin (SSAS). 
 
-* **Virhe: Mallirakennetta ei voitu ladata** - Tämä virhe ilmenee yleensä kun käyttäjä yhdistää Analysis Servicesiin, mutta hänellä ei ole käyttöoikeutta tietokantaan/kuutioon.
+* **Virhe: Mallirakennetta ei voitu ladata** – Tämä virhe ilmenee yleensä, kun käyttäjä yhdistää Analysis Servicesiin ilman tietokannan/kuution käyttöoikeutta.

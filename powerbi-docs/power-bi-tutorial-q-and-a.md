@@ -4,19 +4,19 @@ description: Opetusohjelma uusien visualisointien luontiin koontinäytöissä ja
 author: maggiesMSFT
 manager: kfile
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 10/16/2018
 ms.author: maggies
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 9ca771d200f5bd4b50dfbddbd8eb67931be375c1
-ms.sourcegitcommit: e17fc3816d6ae403414cf5357afbf6a492822ab8
+ms.openlocfilehash: c139d5561a19dab147610914bc11e1bfd9e9e481
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/04/2018
-ms.locfileid: "52830006"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54277361"
 ---
-# <a name="tutorial-how-to-use-qa-to-create-visualizations-and-build-reports"></a>Opetusohjelma: Visualisointien ja raporttien luominen Q&A-toiminnon avulla
+# <a name="tutorial-how-to-use-qa-to-create-visualizations-and-build-reports"></a>Opetusohjelma: Visualisointien ja raporttien luominen Q&A-toiminnolla
 [Q&A-yleiskatsauksessa](consumer/end-user-q-and-a.md) opit Power BI:n Q&A-toiminnon perusteet sekä *kuluttajien* (joille jaetaan koontinäyttöjä ja raportteja) ja *luojien* (pohjana olevien raporttien ja tietojoukkojen omistajat) erot. Tässä opetusohjelmassa ensimmäinen osa on tarkoitettu ensisijaisesti kuluttajille, jotka käyttävät Power BI -palvelua. Toinen osa on tarkoitettu henkilöille, jotka luovat raportteja joko Power BI -palvelussa tai Power BI Desktopissa. Muita tähän liittyviä artikkeleita ovat [Q&A ja Power BI:n mobiilisovellus](consumer/mobile/mobile-apps-ios-qna.md) sekä [Q&A ja Power BI Embedded](developer/qanda.md).
 
 Q&A on vuorovaikutteinen ja jopa hauska käyttää. Lisäksi yhden kysymyksen esittäminen johtaa usein moniin muihin sitä mukaa, kun visualisoinnit paljastavat uusia mielenkiintoisia polkuja. Katso videoesittely visualisointien luonnista Q&A:n avulla, tutustu kyseisiin visualisointeihin ja kiinnittää niitä koontinäyttöihin.
@@ -104,7 +104,7 @@ Q&A:n avulla voit saada tietosi puhumaan puolestaan, mutta myös Power BI:n näy
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 Takaisin artikkeliin [Q&A Power BI:ssä](consumer/end-user-q-and-a.md)   
-[Opetusohjelma: Q&A jälleenmyyntimallin kanssa](power-bi-visualization-introduction-to-q-and-a.md)   
+[Opetusohjelma: Q&A:n käyttö jälleenmyyntimalleissa](power-bi-visualization-introduction-to-q-and-a.md)   
 [Vihjeitä Q&A-kysymysten esittämiseen](consumer/end-user-q-and-a-tips.md)   
 [Työkirjan valmisteleminen Q&A-toimintoa varten](service-prepare-data-for-q-and-a.md)  
 [Paikallisen tietojoukon valmisteleminen Q&A-toimintoa varten](service-q-and-a-direct-query.md)

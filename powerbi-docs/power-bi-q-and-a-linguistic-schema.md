@@ -5,17 +5,17 @@ author: maggiesMSFT
 manager: kfile
 ms.reviewer: willthom
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 10/17/2018
 ms.author: maggies
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 09bf82d86301967fb46b8724822e183a21008b92
-ms.sourcegitcommit: fdb54145f9bc93b312409c15c603749f3a4a876e
+ms.openlocfilehash: 760335b0a08156b3c5b594ffc27be4cb0ad12342
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "52452725"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54289919"
 ---
 # <a name="edit-qa-linguistic-schema-and-add-phrasings-in-power-bi-desktop"></a>Q&A:n lingvistisen rakenteen muokkaaminen ja muotoilujen lisääminen Power BI Desktopissa 
 Yleisien lauseiden ja luonnollisen kielen käyttäminen tiedoista esitettävissä kysymyksissä on tehokasta. Vielä tehokkaampaa on, kun tiedot vastaavat, minkä Power BI:n Q&A-toiminto mahdollistaa. Kun esität Power BI Q&A:lle kysymyksen, se pyrkii parhaansa mukaan vastaamaan oikein. 
@@ -86,7 +86,7 @@ Kun viet lingvistisen rakenteen ensin Power BI Desktopista, Q&A-moduuli luo auto
 ![YAML näyttää tunnisteen Luotu:Tila](media/power-bi-q-and-a-linguistic-schema/power-bi-generated-state.png)
 
 
-Kun tuot lingvistisen rakenteen tiedoston takaisin Power BI Desktopiin, kaikki tunnisteella **Tila: luotu** merkityt entiteetit ohitetaan (ja luodaan myöhemmin uudelleen), joten jos haluat tehdä muutoksia johonkin luotuun sisältöön, muista poistaa myös vastaava **Tila: luotu** -tunniste. Vastaavasti jos haluat poistaa luotua sisältöä, sinun on muutettava tunniste **Tila: luotu** tunnisteeksi **Tila: poistettu**, jotta sitä ei luoda uudelleen, kun tuot lingvistisen rakenteen tiedoston.
+Kun tuot lingvistisen rakenteen tiedoston takaisin Power BI Desktopiin, kaikki tunnisteella **Tila: luotu** merkitty ohitetaan (ja luodaan myöhemmin uudelleen), joten jos haluat tehdä muutoksia johonkin luotuun sisältöön, muista poistaa myös vastaava **Tila: luotu** -tunniste. Vastaavasti jos haluat poistaa luotua sisältöä, sinun on muutettava tunniste **Tila: luotu** tunnisteeksi **Tila: poistettu**, jotta sitä ei luoda uudelleen, kun tuot lingvistisen rakenteen tiedoston.
 
 1. Avaa tietojoukko Power BI Desktopin *Suhde-näkymässä*. 
 2. Valitse **Mallinnus**-välilehti ja valitse **Vie lingvistinen rakenne**.

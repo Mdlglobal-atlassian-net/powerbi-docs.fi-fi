@@ -5,17 +5,17 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 09/10/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 215b4c8f46b2d39c6dcc5853c07e4e6526027881
-ms.sourcegitcommit: b343e44dbafc0b718c564402593d4b6e3a8ce97c
+ms.openlocfilehash: 5c383cf3c7fcbae88be6943bb418026c849db196
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51027456"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54277430"
 ---
 # <a name="use-report-themes-in-power-bi-desktop"></a>Raporttiteemojen käyttäminen Power BI Desktopissa
 **Raporttiteemojen** avulla voit käyttää väriteemaa koko raportissa. Tällä tavalla voit käyttää esimerkiksi yrityksen omaa väriteemaa, kausivärejä tai muita väriteemoja. Kun otat käyttöön **raporttiteeman**, kaikissa raporttisi visualisoinneissa käytetään valitun teeman värejä. Muutamia poikkeuksia on, ja ne kuvataan jäljempänä tässä artikkelissa.
@@ -87,7 +87,7 @@ JSON-tiedosto sisältää seuraavat pakolliset rivit:
 
 * **dataColors**: luettelo Power BI Desktopin visualisointien tietojen heksadesimaalivärikoodeista. Luettelo voi sisältää haluamasi määrän värejä.
 
-* **background**, **foreground** ja **tableAccent**: värejä, joita käytetään eri visualisointityypeissä. 
+* **background**, **foreground** ja **tableAccent**: värit, joita käytetään eri visualisointityypeissä. 
   - **foreground**-väriä käytetään tekstikenttien tekstissä, KPI-tavoitetekstissä, monirivisen kortin tekstissä, kortin arvon tekstissä, mittarin kuvaselitteen tekstissä, pystysuoran osittajaelementin tekstissä ja **taulukon** ja **matriisin** summan ja arvon tekstissä. 
   - **background**-väriä käytetään painikkeen täytössä ja yhdistelmäkaavion otsikon taustassa. Näiden värien käyttö määräytyy käytetyn visualisointityylin mukaisesti. 
   - **Taulukon** ja **matriisin** visualisoinnit käyttävät oletusarvoisesti näitä tyylejä.
@@ -133,7 +133,7 @@ Oletetaan, että otat käyttöön mukautetun värijoukon (tai yksittäisen väri
 
 Saatat myös haluta määrittää arvopisteen värin manuaalisesti käyttämällä Teeman värit -osiota. Värejä *ei* päivitetä, kun otat käyttöön uuden raporttiteeman. Jos haluat palauttaa oletusvärit (jotta ne päivittyvät, kun otat käyttöön uuden raporttiteeman), valitse **Teeman värit** -valikoimasta **Palauta oletusasetukseen**.
 
-![Palauta oletusasetukseen](media/desktop-report-themes/report-themes_9.png)
+![Palauta oletusasetukset](media/desktop-report-themes/report-themes_9.png)
 
 Lisäksi monet **mukautetut visualisoinnit** eivät käytä raporttiteemoja.
 
@@ -180,7 +180,7 @@ JSON-perustiedostossa on viisi pakollista riviä:
 
 * **name**: teeman nimi ja ainoa pakollinen kenttä.
 * **dataColors**: luettelo Power BI Desktopin visualisointien tietojen heksadesimaalivärikoodeista. Luettelo voi sisältää haluamasi määrän värejä.
-* **background**, **foreground** ja **tableAccent**: värejä, joita käytetään eri visualisointityypeissä. **Foregroundia** käytetään tekstikenttien tekstissä, KPI-tavoitetekstissä, monirivisen kortin tekstissä, kortin arvon tekstissä, mittarin kuvaselitteen tekstissä, pystysuoran osittajaelementin tekstissä ja **taulukon** ja **matriisin** summan ja arvon tekstissä. **background**-väriä käytetään painikkeen täytössä ja yhdistelmäkaavion otsikon taustassa. Näiden värien käyttö määräytyy käytetyn visualisointityylin mukaisesti. **Taulukko**- ja **matriisivisualisoinnit** käyttävät oletusarvoisesti näitä tyylejä.
+* **background**, **foreground** ja **tableAccent**: värit, joita käytetään eri visualisointityypeissä. **Foregroundia** käytetään tekstikenttien tekstissä, KPI-tavoitetekstissä, monirivisen kortin tekstissä, kortin arvon tekstissä, mittarin kuvaselitteen tekstissä, pystysuoran osittajaelementin tekstissä ja **taulukon** ja **matriisin** summan ja arvon tekstissä. **background**-väriä käytetään painikkeen täytössä ja yhdistelmäkaavion otsikon taustassa. Näiden värien käyttö määräytyy käytetyn visualisointityylin mukaisesti. **Taulukko**- ja **matriisivisualisoinnit** käyttävät oletusarvoisesti näitä tyylejä.
 
 Jos haluat luoda yksityiskohtaisemman JSON-tiedoston, jolla voit määrittää muotoilua tarkemmin, sinun täytyy lisätä JSON-tiedostoon **visualStyles**-osio. Asetat muotoilun tarkemmat määritelmät **visualStyles**-osion sisään. **visualStyles**-osio näyttää seuraavanlaiselta:
 
@@ -258,18 +258,18 @@ Seuraavassa taulukossa määritetään *cardName*-arvot. Jokaisen solun ensimmä
 | categoryLabels: Luokkien otsikot |
 | columnFormatting: Kentän muotoilu |
 | columnHeaders: Sarakeotsikot |
-| dataLabels: Arvopisteiden nimet |
+| dataLabels: Arvopisteiden otsikot |
 | fill: Täyttö |
-| fillPoint: Täytä piste |
+| fillPoint: Täyttöpiste |
 | forecast: Ennuste |
-| general: Yleinen |
+| general: Yleiset |
 | goals: Tavoitteet |
 | grid: Ruudukko |
-| header: Otsikko |
+| header: Ylätunniste |
 | imageScaling: Skaalaus |
 | indicator: Ilmaisin |
 | items: Kohteet |
-| labels: Arvopisteiden nimet |
+| labels: Arvopisteiden otsikot |
 | legend: Selite |
 | lineStyles: Muodot |
 | mapControls: Kartan ohjausobjektit |
@@ -292,13 +292,13 @@ Seuraavassa taulukossa määritetään *cardName*-arvot. Jokaisen solun ensimmä
 | target: Tavoite |
 | total: Kokonaissumma |
 | trend: Trendiviiva |
-| trend: Trendiakseli |
+| trendline: Trendiakseli |
 | valueAxis: Y-akseli |
 | values: Arvot |
 | wordWrap: Automaattinen rivitys |
 | xAxisReferenceLine: X-akselin yhtenäinen viiva |
 | y1AxisReferenceLine: Yhtenäinen viiva |
-| zoom: Zoomaus |
+| zoom: Zoomaa |
 
 ### <a name="properties-within-each-card"></a>Kunkin kortin ominaisuudet
 Seuraavassa osiossa määritetään kunkin kortin ominaisuudet:

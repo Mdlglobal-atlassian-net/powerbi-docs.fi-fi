@@ -1,4 +1,12 @@
-Tässä artikkelissa tutustutaan joihinkin **Power BI Desktopin** edistyneisiin tietojen tuonti- ja suodatustekniikoihin. Kun olet muovannut tietoja **kyselyeditorissa** ja siirtänyt ne **Power BI Desktopiin**, voit tarkastella niitä eri tavoilla. Power BI Desktopissa on kolme näkymää: **Raportti**-näkymä, **Tiedot**-näkymä ja **Suhteet**-näkymä. Pääset kuhunkin näkymään napsauttamalla pohjan vasemmassa yläkulmassa haluamasi näkymän kuvaketta. Seuraavassa kuvassa valittuna on **Raportti**-näkymä. Kuvakkeen vieressä näkyvä keltainen palkki osoittaa, mikä näkymä on aktiivinen.
+---
+ms.openlocfilehash: 9eff90168ea221a269a8b5ded712645cca01cd9f
+ms.sourcegitcommit: c09241803664643e1b2ba0c150e525e1262ca466
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54083963"
+---
+Tässä artikkelissa tutustutaan joihinkin **Power BI Desktopin** edistyneisiin tietojen tuonti- ja suodatustekniikoihin. Kun olet muovannut tietoja **kyselyeditorissa** ja siirtänyt ne **Power BI Desktopiin**, voit tarkastella niitä eri tavoilla. Power BI Desktopissa on kolme näkymää: **Raportti**-, **Tiedot**- ja **Suhteet**-näkymät. Pääset kuhunkin näkymään napsauttamalla pohjan vasemmassa yläkulmassa haluamasi näkymän kuvaketta. Seuraavassa kuvassa valittuna on **Raportti**-näkymä. Kuvakkeen vieressä näkyvä keltainen palkki osoittaa, mikä näkymä on aktiivinen.
 
 ![](media/1-4-advanced-data-sources-and-transformation/1-4_1.png)
 

@@ -5,17 +5,17 @@ author: otarb
 manager: rajatt
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 06/18/2018
 ms.author: otarb
 LocalizationGroup: Create reports
-ms.openlocfilehash: 588b8cd6289c1f5d1242ade73dea149474bfed38
-ms.sourcegitcommit: 698b788720282b67d3e22ae5de572b54056f1b6c
+ms.openlocfilehash: 7390f029144e5cb37830921071ad5c2c678b2d4d
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45975215"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54275475"
 ---
 # <a name="create-power-bi-visuals-using-python"></a>Power BI -visualisointien luominen Pythonin avulla
 **Power BI Desktopin** kanssa voit käyttää **Pythonia** tietojen visualisoimiseen.
@@ -107,7 +107,7 @@ Kun olet määrittänyt Python-asennukset, olet valmis aloittamaan Python-visual
 
     ![](media/desktop-python-visuals/python-visuals-8.png)
 
-    > **Python-komentosarjojen suojaus:** Python-visualisointeja luodaan Python-komentosarjoista, joiden koodi voi sisältää suojaus- tai tietosuojariskejä. Kun yrität tarkastella tai käsitellä Python-visualisointia ensimmäistä kertaa, käyttäjälle esitetään suojauksen varoitussanoma. Ota Python-visualisoinnit käyttöön vain, jos luotat tekijään ja lähteeseen, tai sen jälkeen, kun olet tarkastanut Python-komentosarjan ja tutustunut siihen.
+    > **Python-komentosarjojen suojaus:** Python-visualisoinnit luodaan Python-komentosarjoista, joiden koodi voi sisältää suojaus- tai tietosuojariskejä. Kun yrität tarkastella tai käsitellä Python-visualisointia ensimmäistä kertaa, käyttäjälle esitetään suojauksen varoitussanoma. Ota Python-visualisoinnit käyttöön vain, jos luotat tekijään ja lähteeseen, tai sen jälkeen, kun olet tarkastanut Python-komentosarjan ja tutustunut siihen.
     > 
     > 
 

@@ -5,17 +5,17 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 01/03/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: f4c9fec65f9c006095470a8983f889d44f3ce460
-ms.sourcegitcommit: c09241803664643e1b2ba0c150e525e1262ca466
+ms.openlocfilehash: a687e42ef2963ce5e85bd1e0be72c2562afa5b6c
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54072884"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54279983"
 ---
 # <a name="show-items-with-no-data-in-power-bi"></a>Power BI:n Näytä kohteet, joilla ei ole tietoja -ominaisuus
 
@@ -65,7 +65,7 @@ Siispä Power BI näyttää yhdistelmät, joilla on tietoja Product-taulukossa, 
 
 **4. Ryhmät, jotka ovat peräisin eri taulukoista, jotka eivät liity toisiinsa**
 
-Esimerkkinä käytetyssä mallissa ei ole tällaista yhdistelmää, mutta jos käsiteltävänä olisi ryhmiä eri taulukoista, jotka eivät liity toisiinsa, Power BI ei pystyisi liittämään kahta saraketta toisiinsa ja tuloksena olisi kummankin sarakkeen kaikkien arvojen ristiliitos. Tässä tilanteessa Power BI ilmoittaa *rajoittamattoman liitoksen* tyyppisestä virheestä, koska tällaisten ristiliitosten käsittely tietokannassa on raskasta eivätkä ne tarjoa kovinkaan paljon tietoa käyttäjälle. 
+Esimerkkinä käytetyssä mallissa ei ole tällaista yhdistelmää, mutta jos käsiteltävänä olisi ryhmiä eri taulukoista, jotka eivät liity toisiinsa, Power BI ei pystyisi liittämään kahta saraketta toisiinsa. Tuloksena olisi kummankin sarakkeen kaikkien arvojen ristiliitos. Tässä tilanteessa Power BI ilmoittaa *rajoittamattoman liitoksen* tyyppisestä virheestä, koska tällaisten ristiliitosten käsittely tietokannassa on raskasta eivätkä ne tarjoa kovinkaan paljon tietoa käyttäjälle. 
 
 ![Rajoittamattoman liitoksen virheilmoitus](media/desktop-show-items-no-data/show-items-no-data_01.png)
 
@@ -76,7 +76,7 @@ Edellisessä osiossa kuvataan, miten Power BI määrittää, mitkä tiedot kanna
 
 Tämä onnistuu **Näytä kohteet, joilla ei ole tietoja** -ominaisuuden avulla: voit sisällyttää esitykseen tietorivit ja sarakkeet, jotka eivät sisällä mittayksikkötietoja (tyhjät mittayksikön arvot).
 
-Jos haluat ottaa **Näytä kohteet, joilla ei ole tietoja** -ominaisuuden käyttöön, valitse visualisointi, napsauta **Kentät**-osiosta haluamaasi kenttää hiiren kakkospainikkeella ja valitse avautuvasta valikosta **Näytä kohteet, joilla ei ole tietoja** seuraavassa kuvassa esitetyllä tavalla.
+Jos haluat ottaa **Näytä kohteet, joilla ei ole tietoja** -ominaisuuden käyttöön, valitse visualisointi, napsauta **Kentät**-osiosta haluamaasi kenttää hiiren kakkospainikkeella ja valitse avautuvasta valikosta **Näytä kohteet, joilla ei ole tietoja** seuraavassa kuvassa esitetyllä tavalla:
 
 ![Näytä kohteet, joilla ei ole tietoja -ominaisuuden ottaminen käyttöön](media/desktop-show-items-no-data/show-items-no-data_02.png)
 
@@ -193,6 +193,6 @@ Tämä osio sisältää esimerkkitietomallin, jota on käytetty artikkelin esime
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
-Tässä artikkelissa on kuvattu, miten voit ottaa **Näytä kohteet, joilla ei ole tietoja** -ominaisuuden käyttöön Power BI:ssä. Voit olla kiinnostunut myös seuraavista artikkeleista. 
+Tässä artikkelissa on kuvattu, miten voit ottaa **Näytä kohteet, joilla ei ole tietoja** -ominaisuuden käyttöön Power BI:ssä. Voit olla kiinnostunut myös seuraavista artikkeleista: 
 
-* [Power BI Desktopin tietolähteet](desktop-data-sources.md)
+* [Power BI:n monidimensiomallien oletusjäsen](desktop-default-member-multidimensional-models.md)

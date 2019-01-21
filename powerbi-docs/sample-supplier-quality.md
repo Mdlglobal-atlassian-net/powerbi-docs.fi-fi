@@ -1,23 +1,23 @@
 ---
-title: 'Toimittajan laatuanalyysimalli Power BI:lle: esittely'
-description: 'Toimittajan laatuanalyysimalli Power BI:lle: esittely'
+title: 'Toimittajan laatuanalyysimalli Power BI:lle: aloita esittely'
+description: 'Toimittajan laatuanalyysimalli Power BI:lle: aloita esittely'
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: amac
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 08/06/2018
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: 0b214e2c08e6a39e4b09643c02bccedb56d5b9f4
-ms.sourcegitcommit: 1e4fee6d1f4b7803ea285eb879c8d5a4f7ea8b85
+ms.openlocfilehash: 3ef48bbe55793825693382252ac143068549d7a8
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51717650"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54292978"
 ---
-# <a name="supplier-quality-analysis-sample-for-power-bi-take-a-tour"></a>Toimittajan laatuanalyysimalli Power BI:lle: esittely
+# <a name="supplier-quality-analysis-sample-for-power-bi-take-a-tour"></a>Toimittajan laatuanalyysimalli Power BI:lle: aloita esittely
 
 ## <a name="a-brief-overview-of-the-supplier-quality-analysis-sample"></a>Toimittajan laatuanalyysimallin lyhyt yleiskatsaus
 Tämä alan mallikoontinäyttö ja raportti keskittyvät yhteen tyypilliseen toimitusketjun ongelmaan eli toimittajalaatuanalyysiin.
@@ -167,5 +167,5 @@ Katsotaan toista koontinäytön ruutua, joka liittyy vikojen kokonaismäärään
 
 Tämä on turvallinen ympäristö kaikenlaisille kokeiluille. Voit aina jättää tekemäsi muutokset tallentamatta. Jos kuitenkin tallennat ne, voit aina siirtyä **Nouda tiedot** -kohtaan, jolloin saat mallista uuden kopion.
 
-## <a name="next-steps-connect-to-your-data"></a>Seuraavat vaiheet: muodostaa yhteys tietoihisi
+## <a name="next-steps-connect-to-your-data"></a>Seuraavat vaiheet: Yhdistä tietoihisi
 Toivomme, että tämä esittely on osoittanut, miten Power BI -koontinäytöt, kysymysosio ja raportit voivat tarjota uusia näkökulmia toimittajan laatutietoihin. Nyt sinun vuorosi – muodosta yhteys omiin tietoihisi. Power BI:n avulla voit muodostaa yhteyden useisiin eri tietolähteisiin. Lisätietoja [Power BI:n käytön aloittamisesta](service-get-started.md).

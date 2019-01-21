@@ -5,24 +5,24 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: 55e496656046037226a7414c994697b670bcf8c9
-ms.sourcegitcommit: 2ae660a7b70fce23eb58b159d049eca44a664f2c
+ms.openlocfilehash: 92191c96409a3a75ad44f8d3472805a3e98da7dd
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "52669723"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54275705"
 ---
 # <a name="data-categorization-in-power-bi-desktop"></a>Tietojen luokittelu Power BI Desktopissa
 **Power BI Desktopissa** voit määrittää sarakkeen tietoluokan, jolloin Power BI Desktop tietää, miten sen on käsiteltävä kyseisen sarakkeen arvoja visualisoinnissa.
 
 Kun Power BI Desktop tuo tietoa, se ei ainoastaan nouda itse tietoa, vaan lisäksi se noutaa tietoja, kuten taulukon ja sarakkeiden nimet, onko kyseessä perusavain jne.  Näillä tiedoilla Power BI Desktop tekee joitakin oletuksia siitä, miten se voi antaa sinulle hyvän oletuskokemuksen visualisointia luodessaan. 
 
-Esimerkiksi: kun Power BI Desktop havaitsee, että sarakkeessa on numeerisia arvoja, haluat luultavasti koostaa sen jotenkin, joten se sijoitetaan Arvot-alueelle. Tai jos sarakkeessa on päivämäärä-aika-arvoja, oletuksena on, että käytät sitä luultavasti aikahierarkia-akselina viivakaaviossa.
+Tässä on esimerkki: kun Power BI Desktop havaitsee, että sarakkeessa on numeerisia arvoja, haluat luultavasti koostaa sen jotenkin, joten se sijoitetaan Arvot-alueelle. Tai jos sarakkeessa on päivämäärä-aika-arvoja, oletuksena on, että käytät sitä luultavasti aikahierarkia-akselina viivakaaviossa.
 
 On kuitenkin joitakin haastavampia tapauksia, esimerkiksi maantiede. Tarkastele seuraavaa Excel-laskentataulukon taulukkoa:
 

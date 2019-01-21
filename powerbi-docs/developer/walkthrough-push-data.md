@@ -6,15 +6,15 @@ ms.author: maghan
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-developer
+ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 01/05/2017
-ms.openlocfilehash: 01bcc545d3ba8edb23ef583467322401780e657d
-ms.sourcegitcommit: 698b788720282b67d3e22ae5de572b54056f1b6c
+ms.openlocfilehash: 0990f6ddaf458d5723cd04fedf0b34f497de16cb
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45974180"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54278489"
 ---
 # <a name="push-data-into-a-power-bi-dataset"></a>Tietojen työntäminen Power BI -tietojoukkoon
 
@@ -24,7 +24,7 @@ Tarvitset Azure Active Directoryn (Azure AD) ja [Power BI -tilin](create-an-azur
 
 ## <a name="steps-to-push-data-into-a-dataset"></a>Vaiheet tietojen työntämiseksi tietojoukkoon
 
-* Vaihe 1: [Sovelluksen Azure AD -rekisteröinti](walkthrough-push-data-register-app-with-azure-ad.md)
+* Vaihe 1: [Rekisteröi sovellus Azure AD:n kanssa ](walkthrough-push-data-register-app-with-azure-ad.md)
 * Vaihe 2: [Todennustunnuksen hankkiminen](walkthrough-push-data-get-token.md)
 * Vaihe 3: [Tietojoukon luominen Power BI:ssä](walkthrough-push-data-create-dataset.md)
 * Vaihe 4: [Tietojoukon hankkiminen rivien lisäämiseksi Power BI -taulukkoon](walkthrough-push-data-get-datasets.md)

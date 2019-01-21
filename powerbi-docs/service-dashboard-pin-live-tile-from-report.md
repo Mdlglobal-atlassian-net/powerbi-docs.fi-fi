@@ -6,17 +6,17 @@ manager: kfile
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 03/02/2018
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 447257ba715b473c233b1d13c6319ff4958f33fa
-ms.sourcegitcommit: 1e4fee6d1f4b7803ea285eb879c8d5a4f7ea8b85
+ms.openlocfilehash: 4a30d01040daffa394ff884c38dda3dd66fa5809
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51717167"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54285802"
 ---
 # <a name="pin-an-entire-report-page-as-a-live-tile-to-a-power-bi-dashboard"></a>Koko raporttisivun kiinnittäminen tapahtumaruutuna Power BI:n koontinäyttöön
 Toinen tapa lisätä uusi [koontinäytön ruutu](consumer/end-user-tiles.md) on kiinnittää koko raporttisivu. Se on helppo tapa kiinnittää kerralla useita visualisointeja.  Kun kiinnität koko sivun, ruudut ovat *reaaliaikaisia*. Voit käsitellä niitä suoraan koontinäytössä. Jos teet visualisointeihin muutoksia raporttieditorissa, kuten lisäät suodattimen tai muutat kaaviossa käytettäviä kenttiä, muutokset näkyvät myös koontinäytön ruudussa.  
@@ -38,7 +38,7 @@ Katso, miten Amanda kiinnittää reaaliaikaisen raporttisivun koontinäyttöön.
 2. Kun visualisointeja ei ole valittuna, valitse valikkopalkista **Kiinnitä reaaliaikainen sivu**.
    
    ![Kiinnitä reaaliaikainen sivu -kuvake](media/service-dashboard-pin-live-tile-from-report/pbi-pin-live-page.png) 
-3. Kiinnitä ruutu aiemmin luotuun koontinäyttöön tai uuteen koontinäyttöön. Huomaa korostettu teksti: *Kiinnitä reaaliaikainen sivu -vaihtoehto mahdollistaa raporttien muutosten näkymisen koontinäyttöruudussa, kun sivu päivitetään.*
+3. Kiinnitä ruutu aiemmin luotuun koontinäyttöön tai uuteen koontinäyttöön. Huomaa korostettu teksti: *Kiinnitä reaaliaikainen sivu -vaihtoehto mahdollistaa raporttien muutosten näkymisen raporttinäkymäruudussa, kun sivu päivitetään.*
    
    * Aiemmin luotu koontinäyttö: valitse avattavasta luetteloruudusta koontinäytön nimi. Kanssasi jaetut koontinäytöt eivät näy avattavassa luetteloruudussa.
    * Uusi koontinäyttö: anna nimi uudelle koontinäytölle.

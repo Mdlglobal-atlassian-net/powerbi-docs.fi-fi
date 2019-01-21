@@ -5,17 +5,17 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 08/08/2018
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: d4b0ad34d200e3d94c60c7e3a3f524a3f3ed09cf
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 4cdd4cf3f8a21b2e97b936ed4e6d4efe2df9a0e8
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46550002"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54290586"
 ---
 # <a name="measures-in-power-bi-desktop"></a>Mittayksiköt Power BI Desktopissa
 
@@ -66,7 +66,7 @@ Tämän ansiosta voit muun muassa mittayksiköiden avulla luoda dynaamisesti URL
 Voit luoda taulukoita, jotka näyttävät mittayksiköt verkon URL-osoitteina, ja klikata valintasi perusteella luotua URL-osoitetta. Tämä on erityisen hyödyllistä, kun haluat linkittää muihin Power BI -raportteihin [URL-suodattimen parametrien](service-url-filters.md) avulla.
 
 ## <a name="learn-more"></a>Lisätietoja
-Olemme antaneet lyhyen esittelyn mittayksikköihin, mutta on olemassa paljon enemmän ohjeistuksia omien mittayksikköjen luontia varten. Suosittelemme, että katsot[Opetusohjelman: Omien mittayksikköjen luominen Power BI Desktopissa](desktop-tutorial-create-measures.md), josta voi ladata mallitiedoston ja saada vaiheittaiset ohjeet siitä, miten luodaan lisää mittayksikköjä.  
+Olemme antaneet lyhyen esittelyn mittayksikköihin, mutta on olemassa paljon enemmän ohjeistuksia omien mittayksikköjen luontia varten. Tutustu [opetusohjelmaan: Omien mittayksiköiden luominen Power BI Desktopissa](desktop-tutorial-create-measures.md), josta voi ladata mallitiedoston ja saada vaiheittaiset ohjeet mittayksiköiden luomiseen.  
 
 Sukeltaaksesi syvemmälle DAX:n maailmaan, katso [DAX-perusteet Power BI Desktopissa](desktop-quickstart-learn-dax-basics.md). [Data Analysis Expressions -viite](https://msdn.microsoft.com/library/gg413422.aspx) tarjoaa yksityiskohtaisia artikkeleita jokaisesta yksittäisestä funktiosta, syntaksista, operaattoreista sekä nimeämiskäytännöistä. DAX on ollut olemassa Excelin Power Pivotissa sekä SQL Server Analysis Servicessä useita vuosia, joten saatavilla on myös monia muita käteviä resursseja. Tutki esimerkiksi [DAX Resource Center Wikiä](http://social.technet.microsoft.com/wiki/contents/articles/1088.dax-resource-center.aspx), jonne BI-yhteisön vaikutusvaltaiset jäsenet ovat jakaneet DAX-tietojaan.
 

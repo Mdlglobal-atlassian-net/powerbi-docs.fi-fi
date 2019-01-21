@@ -5,17 +5,17 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 11/13/2018
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 18d5b2ca504ec3533e2ded0e5480885ea862fb3a
-ms.sourcegitcommit: 6a6f552810a596e1000a02c8d144731ede59c0c8
+ms.openlocfilehash: 26ab2ec7dfd7a091a6a7df89ee4492dc124ed60c
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/14/2018
-ms.locfileid: "51619490"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54279178"
 ---
 # <a name="storage-mode-in-power-bi-desktop-preview"></a>Tallennustilan tila Power BI Desktopissa (esikatselu)
 
@@ -27,7 +27,7 @@ Tallennustilan tilan määrittäminen tarjoaa monia etuja. Voit määrittää ma
 
 * **Kyselyn suorituskyky**: Kun käyttäjät vuorovaikuttavat Power BI -raporttien visualisointien kanssa, DAX (Data Analysis Expressions) -kyselyt lähetetään tietojoukkoon. Kun tiedot tallennetaan välimuistiin tallennustilan tilan asianmukaisella määrittämisellä, voit tehostaa kyselyn suorituskykyä ja parantaa raporttien vuorovaikutteisuutta.
 
-* **Suuret tietojoukot**: Sellaiset taulukot, joita ei tallenneta välimuistiin, eivät kuluta välimuistille varattua muistia. Voit ottaa käyttöön vuorovaikutteisen analyysin suurille tietojoukoille, jotka ovat liian suuria tai kalliita tallennettavaksi kokonaan välimuistiin. Voit valita, mitkä taulukot ovat välimuistiin tallentamisen arvoisia.
+* **Suuret tietojoukot**: Taulukot, joita ei tallenneta välimuistiin, eivät kuluta välimuistille varattua muistia. Voit ottaa käyttöön vuorovaikutteisen analyysin suurille tietojoukoille, jotka ovat liian suuria tai kalliita tallennettavaksi kokonaan välimuistiin. Voit valita, mitkä taulukot ovat välimuistiin tallentamisen arvoisia.
 
 * **Tietojen päivittämisen optimointi**: Taulukoita, joita ei tallenneta välimuistiin, ei tarvitse päivittää. Voit lyhentää päivitysaikoja tallentamalla välimuistiin vain sellaiset tiedot, joita tarvitset palvelutasosopimuksen noudattamiseksi ja oman yrityksesi tarpeisiin.
 
@@ -39,7 +39,7 @@ Power BI Desktopin Tallennustilan tila -asetus on yksi kolmesta toisiinsa liitty
 
 * **Yhdistelmämallit**: Antavat mahdollisuuden sisällyttää raporttiin kaksi tietoyhteyttä tai enemmän (kuten DirectQuery-yhteydet tai tuonnin) minä tahansa yhdistelminä. Jos haluat lisätietoja, katso [Yhdistelmämallien käyttäminen Power BI Desktopissa (esikatselu)](desktop-composite-models.md).
 
-* **Moni-moneen-yhteydet**: *Yhdistelmämallien* avulla voit määrittää taulukoiden välille *moni-moneen-yhteyksiä*. *Moni-moneen-yhteydet* poistavat vaatimuksen siitä, että taulukoiden arvojen pitäisi olla yksilöllisiä. Se myös poistaa edelliset ratkaisut, kuten uusien taulukoiden lisäämisen vain yhteyksien muodostamiseksi. Jos haluat lisätietoja, katso [Moni-moneen-yhteydet Power BI Desktopissa (esikatselu)](desktop-many-to-many-relationships.md).
+* **Monta-moneen-yhteys**: *Yhdistelmämallien* avulla voit määrittää taulukoiden välille *monta-moneen-yhteyksiä*. *Moni-moneen-yhteydet* poistavat vaatimuksen siitä, että taulukoiden arvojen pitäisi olla yksilöllisiä. Se myös poistaa edelliset ratkaisut, kuten uusien taulukoiden lisäämisen vain yhteyksien muodostamiseksi. Jos haluat lisätietoja, katso [Moni-moneen-yhteydet Power BI Desktopissa (esikatselu)](desktop-many-to-many-relationships.md).
 
 * **Tallennustilan tila**: Voit nyt määrittää, mitkä visualisoinnit edellyttävät kyselyä taustatietolähteisiin. Visualisoinnit, jotka eivät edellytä kyselyä, tuodaan, vaikka ne perustuisivat DirectQueryyn. Tämä ominaisuus parantaa suorituskykyä ja vähentää taustakuormitusta. Aiemmin jopa osittajien kaltaiset yksinkertaiset visualisoinnit käynnistivät kyselyjä taustalähteisiin. Tallennustilan tila kuvataan edempänä tässä artikkelissa.
 

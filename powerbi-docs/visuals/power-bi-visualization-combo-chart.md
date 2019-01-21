@@ -6,17 +6,17 @@ manager: kvivek
 ms.reviewer: ''
 featuredvideoid: lnv66cTZ5ho
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 09/27/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 5d2a33b8dc50a4a30bb79406462f1342953528d9
-ms.sourcegitcommit: e17fc3816d6ae403414cf5357afbf6a492822ab8
+ms.openlocfilehash: 896c415028b99db8662e93b5d709b76520996fef
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/04/2018
-ms.locfileid: "52830374"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54275751"
 ---
 # <a name="combo-chart-in-power-bi"></a>Yhdistelmäkaavio Power BI:ssä
 Power BI:ssä yhdistelmäkaavio on yksittäinen visualisointi, joka yhdistää viivakaavion ja pylväskaavion. Näiden kahden kaavion yhdistäminen nopeuttaa tietojen vertailua.
@@ -57,7 +57,7 @@ Seuraavassa videossa luodaan yhdistelmäkaavio käyttämällä myynti- ja markki
     ![](media/power-bi-visualization-combo-chart/combotutorial1new.png)
 5. Valitse kolme pistettä (...) visualisoinnin oikeasta yläkulmasta ja valitse **Lajitteluperuste > FiscalMonth**. Jos haluat muuttaa lajittelujärjestyksen, valitse kolme pistettä uudelleen ja valitse joko **Lajittele nousevaan järjestykseen** tai **Lajittele laskevaan järjestykseen**.
 
-6. Muunna pylväskaavio yhdistelmäkaavioksi. Käytettävissä on kaksi yhdistelmäkaaviota: **viivakaavio ja pinottu pylväskaavio** ja **viivakaavio ja yhdistelmäpylväskaavio**. Pidä pylväskaavio valittuna ja valitse **Visualisoinnit**-ruudussa **Viiva- ja yhdistelmäpylväskaavio**.
+6. Muunna pylväskaavio yhdistelmäkaavioksi. Käytettävissä on kaksi erilaista yhdistelmäkaaviota: **viivakaavio ja pinottu pylväskaavio** sekä **viivakaavio ja lohkopylväskaavio**. Pidä pylväskaavio valittuna ja valitse **Visualisoinnit**-ruudussa **Viiva- ja yhdistelmäpylväskaavio**.
 
     ![](media/power-bi-visualization-combo-chart/converttocombo_new2.png)
 7. Vedä **Kentät**-ruudusta **Myynti** \> **Edellisen vuoden myynti** säilöön **Riviarvot**.

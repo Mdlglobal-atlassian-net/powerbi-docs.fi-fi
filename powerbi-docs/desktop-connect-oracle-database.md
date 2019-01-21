@@ -5,22 +5,22 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 5b5dc41ee3f4d41f2e38053470054a8f453e4fb3
-ms.sourcegitcommit: 2ae660a7b70fce23eb58b159d049eca44a664f2c
+ms.openlocfilehash: dc26d6de5ca22fdabfd80bd7ba1d9830e274f808
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "52670282"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54284491"
 ---
 # <a name="connect-to-an-oracle-database"></a>Oracle-tietokantaan yhdistäminen
 Yhteyden muodostaminen Oracle-tietokantaan **Power BI Desktopilla** edellyttää, että tietokoneessa on asennettuna Power BI Desktop ja oikea Oracle-asiakasohjelmisto. Oracle-asiakasohjelmiston versio (**32-bittinen** vai **64-bittinen**) määräytyy tietokoneeseen asennetun Power BI Desktop -version mukaan.
 
-**Tuetut versiot**: Oracle 9 ja sitä uudemmat sekä Oracle-asiakasohjelmisto 8.1.7 ja sitä uudemmat.
+**Tuetut versiot**: Oracle 9 ja sitä uudemmat versiot sekä Oracle-asiakasohjelmisto 8.1.7 ja sitä uudemmat versiot.
 
 ## <a name="determining-which-version-of-power-bi-desktop-is-installed"></a>Asennettuna olevan Power BI Desktop -version selvittäminen
 Voit selvittää asennettuna olevan Power BI Desktop -version valitsemalla **Tiedosto > Ohje > Tietoja** ja tarkistamalla sitten **Versio:**-rivin tiedot. Seuraavassa kuvassa asennettuna on Power BI Desktopin 64-bittinen versio:
@@ -42,7 +42,7 @@ Kun tietokoneessa on asennettuna vastaava Oracle-asiakasohjelman ohjain, voit mu
 1. Valitse Nouda tiedot -ikkunasta **Tietokanta > Oracle Database**.
    
    ![](media/desktop-connect-oracle-database/connect-oracle-database_2.png)
-2. Kirjoita avautuvaan **Oracle Database** -valintaikkunaan palvelimen nimi ja valitse **Muodosta yhteys**. Jos SID-tunnus vaaditaan, anna se seuraavassa muodossa: *PalvelimenNimi/SID*, jossa SID on palvelimen yksilöllinen nimi. Jos *PalvelimenNimi/SID*-muoto ei toimi, kokeile *PalvelimenNimi/PalvelunNimi*-muotoa, jossa PalvelunNimi on yhteyden muodostuksessa käytetty alias.
+2. Kirjoita avautuvaan **Oracle Database** -valintaikkunaan palvelimen nimi ja valitse **Muodosta yhteys**. Jos SID-tunnus vaaditaan, voit määrittää sen muodossa: *PalvelimenNimi/SID*, jossa SID on tietokannan yksilöivä nimi. Jos *PalvelimenNimi/SID*-muoto ei toimi, kokeile *PalvelimenNimi/PalvelunNimi*-muotoa, jossa PalvelunNimi on yhteyden muodostuksessa käytetty alias.
    
    ![](media/desktop-connect-oracle-database/connect-oracle-database_3.png)
 3. Jos haluat tuoda tietoja alkuperäisen tietokantakyselyn avulla, voit kirjoittaa kyselyn **SQL-lause**-ruutuun, jonka saa näkyviin laajentamalla **Oracle Database** -valintaikkunan **Lisäasetukset**-osion.

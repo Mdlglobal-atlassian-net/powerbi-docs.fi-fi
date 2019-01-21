@@ -1,27 +1,27 @@
 ---
 title: Työn järjestäminen uusiin työtiloihin (esikatselu) – Power BI
-description: Lue, miten luodaan uusia työtiloja, jotka ovat koontinäyttöjen ja raporttien kokoelmia, joiden avulla voit kuvata organisaatiosi keskeisiä mittalukuja.
+description: Lue, miten luodaan uusia työtiloja, jotka ovat raporttinäkymien ja raporttien kokoelmia, joiden avulla voit kuvata organisaatiosi keskeisiä mittalukuja.
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: lukaszp
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/21/2018
+ms.date: 01/11/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 8856a8641b38b7a8256b199acccd54e030bdce40
-ms.sourcegitcommit: 5206651c12f2b91a368f509470b46f3f4c5641e6
+ms.openlocfilehash: dd4ee055501974345c819f7604ff30174cd4c5ba
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53984416"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54278999"
 ---
 # <a name="organize-work-in-the-new-workspaces-preview-in-power-bi"></a>Työn järjestäminen uusiin työtiloihin (esikatselu) – Power BI
 
-Työtilat ovat paikkoja, joissa voit yhdessä työtovereiden kanssa luoda ja tarkentaa koontinäyttöjen ja raporttien kokoelmia. Sen jälkeen voit niputtaa ne yhteen *sovelluksiksi* ja jakaa ne koko organisaatiolle tai tietyille henkilöille tai ryhmille. Power BI:ssä esitellään uusi työtilakokemus esikatseluna. 
+Työtilat ovat paikkoja, joissa voit yhdessä työtovereiden kanssa luoda ja tarkentaa koontinäyttöjen ja raporttien kokoelmia. Sen jälkeen voit niputtaa ne yhteen *sovelluksiksi* ja jakaa ne koko organisaatiolle tai tietyille henkilöille tai ryhmille. Power BI:ssä esitellään uusi työtilakokemus esiversiona. 
 
-![Power BI:n uusien työtilojen esikatselu](media/service-new-workspaces/power-bi-new-workspaces-preview.png)
+![Power BI:n uusien työtilojen esiversio](media/service-new-workspaces/power-bi-new-workspaces-preview.png)
 
 Uusien työtilojen esikatselun avulla voit nyt suorittaa seuraavia toimintoja:
 
@@ -39,11 +39,11 @@ Lue lisää [Power BI -hallintaportaalista](service-admin-portal.md).
 
 ## <a name="roll-out-new-workspaces"></a>Uusien työtilojen julkaiseminen
 
-Esikatselun ajanjaksolla uudet ja vanhat työtilat voivat olla olemassa rinnakkain, ja voit luoda kumman niistä tahansa. Kun uusien työtilojen esikatselu päättyy ja ne ovat yleisesti saatavilla, vanhat työtilat ovat olemassa yhä jonkin aikaa. Niitä ei voi enää luoda, ja sinun tulee valmistautua työtilojen siirtämiseen uuteen työtilainfrastruktuuriin. Älä kuitenkaan huolestu, sillä siirron tekemiseen on aikaa useita kuukausia.
+Esiversion aikana uudet ja vanhat työtilat voivat olla olemassa rinnakkain, ja voit luoda kumman tahansa. Kun uuden työtilakokemuksen esiversio päättyy ja ne ovat yleisesti saatavilla, vanhat työtilat ovat olemassa yhä jonkin aikaa. Niitä ei voi enää luoda, ja sinun tulee valmistautua työtilojen siirtämiseen uuteen työtilainfrastruktuuriin. Älä kuitenkaan huolestu, sillä siirron tekemiseen on aikaa useita kuukausia.
 
 ## <a name="roles-in-the-new-workspaces"></a>Roolit uusissa työtiloissa
 
-Voit lisätä käyttäjäryhmiä tai henkilöitä uusiin työtiloihin jäseninä, osallistujina tai järjestelmänvalvojina. Kaikki käyttäjäryhmän jäsenet saavat määrittämäsi roolin. Jos käyttäjä on useissa käyttäjäryhmissä, hän saa roolin myöntämän korkeimman käyttöoikeustason.  Eri roolien tarkempi kuvaus on jäljempänä tässä artikkelissa kohdassa [Roolit uusissa työtiloissa](#roles-in-the-new-workspaces).
+Voit lisätä käyttäjäryhmiä tai henkilöitä uusiin työtiloihin jäseninä, osallistujina tai järjestelmänvalvojina. Kaikki käyttäjäryhmän jäsenet saavat määrittämäsi roolin. Jos käyttäjä on useissa käyttäjäryhmissä, hän saa roolin myöntämän korkeimman käyttöoikeustason.
 
 Jokainen työtilaan lisätty jäsen tarvitsee Power BI Pro -käyttöoikeuden. Työtilassa nämä käyttäjät voivat tehdä yhteistyötä niiden koontinäyttöjen ja raporttien parissa, jotka aiot julkaista laajemmalle lukijakunnalle tai jopa koko organisaatiolle. Jos haluat jakaa sisältöä muille organisaatiosi sisällä, voit määrittää Power BI Pro -käyttöoikeudet kyseisille käyttäjille tai sijoittaa työtilan Power BI Premium -kapasiteettiin.
 
@@ -83,9 +83,7 @@ Esikatselun ajanjaksolla et voi muuntaa automaattisesti vanhoja työtiloja uusik
 
 Kun uudet työtilat ovat yleisesti käytettävissä (GA), voit siirtää vanhat työtilat automaattisesti. Jonkin aikaa GA:n jälkeen ne on siirrettävä.
 
-## <a name="power-bi-apps-faq"></a>Power BI -sovellusten usein kysytyt kysymykset
-
-### <a name="how-are-the-new-workspaces-different-from-current-workspaces"></a>Miten uudet työtilat eroavat nykyisistä työtiloista?
+## <a name="how-are-the-new-workspaces-different-from-current-workspaces"></a>Miten uudet työtilat eroavat nykyisistä työtiloista?
 
 Uusien työtilojen myötä suunnittelemme joitakin ominaisuuksia uudelleen. Seuraavassa on muutoksia, joiden voit odottaa säilyvän pysyvästi esikatselun myötä. 
 
@@ -94,6 +92,13 @@ Uusien työtilojen myötä suunnittelemme joitakin ominaisuuksia uudelleen. Seur
 - Voit luoda organisaation sisältöpaketin nykyisestä työtilasta. Et voi luoda sisältöpakettia uusista työtiloista.
 - Voit käyttää organisaation sisältöpakettia nykyisestä työtilasta. Et voi käyttää sitä jostakin uudesta työtilasta.
 - Esikatselun ajanjaksolla jotkin ominaisuudet eivät ole vielä käytössä uusille työtiloille. Katso lisätietoja seuraavasta osiosta [Suunniteltuja uuden työtilan ominaisuuksia](service-new-workspaces.md#planned-new-workspace-preview-features).
+
+## <a name="limitations-and-considerations"></a>Rajoitukset ja huomioitavat asiat
+
+Huomioitavia rajoituksia:
+
+- Työtiloissa voi olla korkeintaan 1 000 tietojoukkoa tai 1 000 raporttia tietojoukkoa kohti. 
+- Henkilö, jolla on Power BI Pro -käyttöoikeus, voi kuulua korkeintaan 250 työtilaan.
 
 ## <a name="planned-new-workspace-preview-features"></a>Suunniteltuja uuden työtilan esikatseluominaisuuksia
 

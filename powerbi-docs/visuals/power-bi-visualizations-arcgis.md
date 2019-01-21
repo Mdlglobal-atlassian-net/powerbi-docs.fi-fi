@@ -6,16 +6,16 @@ manager: kvivek
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 11/06/2018
 ms.author: mihart
-ms.openlocfilehash: 0454d2ea0e69a77482d9ba9587497679819daf06
-ms.sourcegitcommit: b23fdcc0ceff5acd2e4d52b15b310068236cf8c7
+ms.openlocfilehash: 37e3e16a17e163d1acfeb43e1a1ede9fba1eca1e
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51266020"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54279362"
 ---
 # <a name="interacting-with-arcgis-maps-in-power-bi"></a>ArcGIS-karttojen käsittely Power BI:ssä
 Tämä ohjeaihe on kirjoitettu sellaisen käyttäjän näkökulmasta, joka on ArcGIS-kartan *kuluttaja* ja tarkastelee karttaa Power BI -palvelussa, Desktopissa tai mobiililaitteelta. Kun ArcGIS-kartan tehnyt henkilö jakaa kartan sinulle, voit toimia kartan kanssa monin eri tavoin.  Jos haluat lisätietoa ArcGIS-karttojen luomisesta, katso [opetusohjelma Esrin ArcGIS-kartoista](../power-bi-visualization-arcgis.md).
@@ -147,7 +147,7 @@ Et. Power BI tarvitsee verkkoyhteyden karttojen näyttämiseen.
 ## <a name="next-steps"></a>Seuraavat vaiheet
 Ohjeiden hakeminen: **Esri** tarjoaa [monipuolisia ](https://go.microsoft.com/fwlink/?LinkID=828772) **ArcGIS Maps for Power BI**:n ominaisuuksia koskevia ohjeita.
 
-Voit esittää kysymyksiä, hakea ajantasaisimpia tietoja, ilmoittaa ongelmista ja hakea vastauksia [ArcGIS Maps for Power BI **:tä käsittelevästä Power BI -yhteisökeskustelusta**](https://go.microsoft.com/fwlink/?LinkID=828771).
+Voit esittää kysymyksiä, hakea ajantasaisimpia tietoja, ilmoittaa ongelmista ja hakea vastauksia [**ArcGIS Maps for Power BI**:tä käsittelevästä Power BI -yhteisökeskustelusta](https://go.microsoft.com/fwlink/?LinkID=828771).
 
 Jos sinulla parannusehdotus, lähetä se [Power BI -idealuetteloon](https://ideas.powerbi.com).
 

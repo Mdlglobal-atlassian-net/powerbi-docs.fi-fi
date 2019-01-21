@@ -1,20 +1,20 @@
 ---
-title: Power BI -raporttipalvelimeen tutustuminen näennäiskoneella
+title: 'Opetusohjelma: Tutustu Power BI -raporttipalvelimeen VM:ssä'
 description: Tässä opetusohjelmassa opit luomaan näennäiskoneen Power BI -raporttipalvelimen ollessa jo asennettu sekä tutkimaan verkkoportaalia.
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-report-server
+ms.subservice: powerbi-report-server
 ms.topic: tutorial
 ms.date: 05/18/2018
 ms.author: maggies
-ms.openlocfilehash: 32bf2d3cedbeeb2430620855a2ac95bf349af9a2
-ms.sourcegitcommit: 695c65629d6d1faba61db2e1570324f65f235dde
+ms.openlocfilehash: 4eb9f5dc7e45006d1b5697f35b79d0e9d11fa2df
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37092042"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54281386"
 ---
 # <a name="tutorial-explore-the-power-bi-report-server-web-portal-in-a-vm"></a>Opetusohjelma: Power BI -raporttipalvelimen verkkoportaaliin tutustuminen näennäiskoneella
 Tässä opetusohjelmassa luot Azure-virtuaalikoneen Power BI -raporttipalvelimen ollessa jo asennettu, jotta voit tutustua Power BI- ja sivutettujen näyteraporttien ja suorituskykyilmaisimien tarkasteluun, muokkaamiseen ja hallintaan.

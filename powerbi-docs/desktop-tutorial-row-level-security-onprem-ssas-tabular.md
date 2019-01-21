@@ -6,17 +6,17 @@ manager: amitaro
 ms.reviewer: davidi
 editor: davidi
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: tutorial
 ms.date: 10/21/2017
 ms.author: selvar
 LocalizationGroup: Connect to data
-ms.openlocfilehash: c2d4dc5d8c11db035cc2470c0c44d64a6b78cd1a
-ms.sourcegitcommit: fdb54145f9bc93b312409c15c603749f3a4a876e
+ms.openlocfilehash: 546ae48aac10ae6c72a062665c7d8f448432a194
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "52452748"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54292633"
 ---
 # <a name="dynamic-row-level-security-with-analysis-services-tabular-model"></a>Dynaaminen rivitason suojaus Analysis Servicen taulukkomallissa
 Tässä opetusohjelmassa esitellään **rivitason suojauksen** toteuttamiseen tarvittavat vaiheet **Analysis Services -taulukkomallissa** ja näytetään, miten voit käyttää sitä Power BI -raportissa. Tämän opetusohjelman ohjeet on suunniteltu niin, että voit niitä seuraamalla opetella esimerkkitietojoukon kokoamisen.
@@ -127,7 +127,7 @@ Lukuiset julkaistut artikkelit opastavat rivitason dynaamisen suojauksen määri
    ![](media/desktop-tutorial-row-level-security-onprem-ssas-tabular/dashboard_jon_doe.png)
 4. Onnittelut! Paikalliseen **Analysis Services** -taulukkomalliin määritetty dynaaminen rivitason suojaus onnistui ja sen tulokset näkyvät **Power BI** -palvelussa. Power BI käyttää **effectiveusername**-ominaisuutta lähettäessään senhetkisen Power BI -käyttäjän kirjautumistiedot paikalliselle tietolähteelle kyselyiden suorittamiseksi.
 
-## <a name="task-6-understanding-what-happens-behind-the-scenes"></a>Vaihe 6: Taustalla tapahtuvien toimintojen ymmärtäminen
+## <a name="task-6-understanding-what-happens-behind-the-scenes"></a>Tehtävä 6: Taustalla tapahtuvien toimintojen ymmärtäminen
 1. Tässä tehtävässä oletetaan, että SQL Profiler on sinulle tuttu, koska sinun on tallennettava SQL Server profiler -jäljitys paikallisesta, taulukkomuotoisesta SSAS -esiintymästä.
 2. Istunto käynnistetään heti, kun käyttäjä (tässä tapauksessa Jon Doe) käyttää koontinäyttöä Power BI -palvelussa. Huomaat, että **salesterritoryusers**-rooli astuu heti voimaan. Käytettävä käyttäjänimi on **<EffectiveUserName>jondoe@moonneo.com</EffectiveUserName>**
    

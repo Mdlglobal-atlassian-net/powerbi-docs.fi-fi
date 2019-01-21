@@ -5,16 +5,16 @@ author: markingmyname
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-developer
+ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 12/19/2017
 ms.author: maghan
-ms.openlocfilehash: 36f9665f0e42ee62e5a1a4a7584a2492bea276b0
-ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
+ms.openlocfilehash: 641369a4410741269a260e036ac3a7930f385e76
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37597908"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54288930"
 ---
 # <a name="custom-layouts"></a>Mukautetut asettelut
 
@@ -64,8 +64,8 @@ enum DisplayOption {
 }
 ```
 
-- `pageSize`: Hallitse piirtoalustan alueen kokoa (eli raportin valkoista aluetta) sivun koon avulla.
-- `displayOptions`: Mahdollisia arvoja ovat FitToWidth, FitToPage tai ActualSize. Objekti määrittää sen, miten piirtoalusta skaalataan, jotta se sopii iframe-kehykseen.
+- `pageSize`: Määritä piirtoalustan alueen koko (eli raportin valkoinen alue) sivun koon avulla.
+- `displayOptions`: Mahdollisia arvoja ovat: FitToWidth, FitToPage tai ActualSize. Objekti määrittää sen, miten piirtoalusta skaalataan, jotta se sopii iframe-kehykseen.
 - `pagesLayout`: Määrittää jokaisen visualisoinnin asettelun. lisätietoja on kohdassa PagesLayout.
 
 ## <a name="pages-layout"></a>Sivujen asettelu

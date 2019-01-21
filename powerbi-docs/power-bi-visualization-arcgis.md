@@ -6,17 +6,17 @@ manager: kfile
 ms.reviewer: lukaszp
 featuredvideoid: EKVvOZmxg9s
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 11/06/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 81867ba36e79a26acb168c1b02fc31e228bd6439
-ms.sourcegitcommit: b23fdcc0ceff5acd2e4d52b15b310068236cf8c7
+ms.openlocfilehash: e559cb3ed460c8d81406ae8c8b01fe33eceaf461
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51266043"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54293909"
 ---
 # <a name="arcgis-maps-in-power-bi-service-and-power-bi-desktop-by-esri"></a>Esri ArcGIS -kartat Power BI -palvelussa ja Power BI Desktopissa
 Tämä opetusohjelma on kirjoitettu ArcGIS-karttaa luovan henkilön näkökulmasta. Kun tekijä jakaa ArcGIS-kartan työtoverille, kyseinen työtoveri voi tarkastella ja käsitellä karttaa mutta ei tallentaa muutoksia. Lisätietoja ArcGIS-kartan tarkastelemisesta on ohjeartikkelissa [ArcGIS-karttojen käsittely](visuals/power-bi-visualizations-arcgis.md).
@@ -207,7 +207,7 @@ ArcGIS Online tarjoaa organisaatioille mahdollisuuden julkaista julkisia verkkok
 2. Kirjoita hakusanat ja valitse sitten karttakerros. Tässä esimerkissä on käytetty USA:n edustajainhuoneen vaalipiirejä.
    
     ![](media/power-bi-visualization-arcgis/power-bi-esri-demographics-esri2-new.png)
-3. Näet tarkat tiedot valitsemalla varjostetun alueen, jolloin *Valitse viittauskerros* -valinta avautuu. Valitse viittauskerroksen rajat tai kohteet viittauskerroksen valintatyökalulla.
+3. Saat tiedot valitsemalla varjostetun alueen, jolloin voit avata *Valitse viittauskerroksesta*: Valitse viittauskerroksesta rajat tai objektit viittauskerroksen valintatyökalun avulla.
 
 <br/>
 
@@ -325,7 +325,7 @@ ArcGIS Map for Power BI on maksuton kaikille Power BI -käyttäjille. Se on **Es
 
 **Saan Power BI Desktopissa virhesanoman, jonka mukaan välimuisti on täynnä**
 
-Tämä on virhe, jota korjataan parhaillaan.  Korjausta odottaessasi voit tyhjentää välimuistin poistamalla tiedostoja seuraavasta sijainnista: C:\Users\\AppData\Local\Microsoft\Power BI Desktop\CEF ja käynnistämällä Power BI:n sitten uudelleen.
+Tämä on virhe, jota korjataan parhaillaan.  Voit tällä välin tyhjentää välimuistin yrittämällä poistaa tiedostot tästä sijainnista: C:\Users\\AppData\Local\Microsoft\Power BI Desktop\CEF. Käynnistä sitten Power BI uudelleen.
 
 **Tukeeko ArcGIS Maps for Power BI Esri-muototiedostoja?**
 

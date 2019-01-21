@@ -5,24 +5,24 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 8024756159b4974ef4a23ab60a055d57b0dfa590
-ms.sourcegitcommit: 2ae660a7b70fce23eb58b159d049eca44a664f2c
+ms.openlocfilehash: 1b587edb82f60ac8a9ff22716e42bcf941e0c794
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "52670597"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54276533"
 ---
 # <a name="directquery-and-sap-hana"></a>DirectQuery ja SAP HANA
 Voit muodostaa yhteyden **SAP HANA** -tietolähteisiin suoraan **DirectQueryn** avulla. Voit muodostaa yhteyden SAP HANA -tietolähteisiin kahdella tavalla:
 
-* **Käsittele SAP HANAa monidimensioisena lähteenä (oletus):** Tässä tapauksessa Power BI toimii samankaltaisesti kuin muihin monidimensioisiin tietolähteisiin yhdistettäessä (esimerkiksi SAP Business Warehouse tai Analysis Services). Kun muodostat yhteyden SAP HANA -tietolähteeseen tällä asetuksella, valittuna on yksi analyysi- tai laskentanäkymä ja kaikki sen mittayksiköt, hierarkiat ja määritteet ovat käytettävissä kenttäluettelossa. Kun visualisointeja luodaan, koostetiedot haetaan aina SAP HANA -tietolähteestä. Tämä on suositeltu tapa. Se on myös oletustapa uusille DirectQuery-raporteille, jotka käyttävät SAP HANA -tietolähteitä.
+* **Käsittele SAP HANAa monidimensioisena lähteenä (oletus):**  Tässä tapauksessa Power BI toimii samankaltaisesti kuin muihin monidimensioisiin tietolähteisiin yhdistettäessä (esimerkiksi SAP Business Warehouse tai Analysis Services). Kun muodostat yhteyden SAP HANA -tietolähteeseen tällä asetuksella, valittuna on yksi analyysi- tai laskentanäkymä ja kaikki sen mittayksiköt, hierarkiat ja määritteet ovat käytettävissä kenttäluettelossa. Kun visualisointeja luodaan, koostetiedot haetaan aina SAP HANA -tietolähteestä. Tämä on suositeltu tapa. Se on myös oletustapa uusille DirectQuery-raporteille, jotka käyttävät SAP HANA -tietolähteitä.
 
-* **Käsittele HANAa suhteellisena lähteenä**: Tässä tapauksessa Power BI käsittelee SAP HANA -tietolähdettä suhteellisena lähteenä. Tämä on joustavampi tapa, mutta tällä tavalla täytyy olla tarkkana, jotta mittayksiköt koostetaan odotetusti ja jotta suorituskykyongelmat voidaan välttää.
+* **Käsittele SAP HANAa suhteellisena lähteenä:** Tässä tapauksessa Power BI käsittelee SAP HANA -tietolähdettä suhteellisena lähteenä. Tämä on joustavampi tapa, mutta tällä tavalla täytyy olla tarkkana, jotta mittayksiköt koostetaan odotetusti ja jotta suorituskykyongelmat voidaan välttää.
 
 Yhdistämistapa määritetään yleisellä työkaluasetuksella, jonka voit määrittää valitsemalla **Tiedosto > Asetukset ja vaihtoehdot** > **Asetukset > DirectQuery** > **Käsittele SAP HANAa suhteellisena lähteenä**, kuten seuraavassa kuvassa näytetään. 
 
@@ -64,17 +64,17 @@ Sallitut mallinnustoiminnot ovat rajoitetumpia kuin yleensä DirectQuerya käyte
 
 Kun muodostat yhteyden SAP HANA -tietolähteeseen DirectQuerylla (siten, että tietolähdettä käsitellään monidimensioisena tietolähteenä), ensisijaiset mallinnuksen lisärajoitukset ovat seuraavat: 
 
-* **Ei tukea lasketuille sarakkeille**: Laskettujen sarakkeiden luominen ei ole mahdollista. Tämä tarkoittaa sitä, että myöskään ryhmittely ja klusterointi eivät ole käytettävissä, sillä ne luovat laskettuja sarakkeita.
-* **Mittayksiköiden lisärajoitukset**: mittayksiköissä käytettäville DAX-lausekkeille on lisärajoitukset SAP HANAn tarjoaman tukitason johdosta.
-* **Ei tukea suhteiden määrittämiselle:** raportissa voi tehdä kyselyitä vain yhdestä näkymästä, joten suhteiden määrittämistä ei tueta.
-* **Ei tietonäkymää**: **Tietonäkymässä** näytetään yleensä taulukoiden tarkemmat tiedot. SAP HANAn kaltaisten OLAP-lähteiden luonteesta johtuen tämä näkymä ei ole käytettävissä SAP HANA -tietoja käytettäessä.
-* **Sarakkeiden ja mittayksiköiden tiedot ovat kiinteät**: Kenttäluettelossa näkyvä sarakkeiden ja mittayksiköiden luettelo on kiinteä taustalla olevan lähteen mukaisesti, joten sitä ei voi muokata. Et voi esimerkiksi poistaa saraketta tai vaihtaa sen tietotyyppiä (voit kuitenkin vaihtaa sen nimeä).
-* **Muut rajoitukset DAX:ssä**: Mittayksikkömääritelmissä käytettävälle DAX:lle on lisärajoituksia lähteen rajoitusten johdosta. Et esimerkiksi voi käyttää koostefunktiota taulukossa.
+* **Laskettuja sarakkeita ei tueta:** Laskettujen sarakkeiden luominen ei ole mahdollista. Tämä tarkoittaa sitä, että myöskään ryhmittely ja klusterointi eivät ole käytettävissä, sillä ne luovat laskettuja sarakkeita.
+* **Mittayksiköiden lisärajoitukset:** Mittayksiköissä käytettäville DAX-lausekkeille on lisärajoitukset SAP HANAn tarjoaman tukitason vuoksi.
+* **Ei tukea suhteiden määrittämiselle:** Raportissa voi tehdä kyselyitä vain yhdestä näkymästä, joten suhteiden määrittämistä ei tueta.
+* **Ei tietonäkymää:** **Tietonäkymässä** näytetään yleensä taulukoiden tarkemmat tiedot. SAP HANAn kaltaisten OLAP-lähteiden luonteesta johtuen tämä näkymä ei ole käytettävissä SAP HANA -tietoja käytettäessä.
+* **Sarakkeiden ja mittayksiköiden tiedot ovat kiinteät:** Kenttäluettelossa näkyvä sarakkeiden ja mittayksiköiden luettelo on kiinteä taustalla olevan lähteen mukaisesti, joten sitä ei voi muokata. Et voi esimerkiksi poistaa saraketta tai vaihtaa sen tietotyyppiä (voit kuitenkin vaihtaa sen nimeä).
+* **Muut DAX-rajoitukset:** Mittayksikkömääritelmissä käytettävälle DAX:lle on lisärajoituksia lähteen rajoitusten johdosta. Et esimerkiksi voi käyttää koostefunktiota taulukossa.
 
 ### <a name="additional-visualization-restrictions"></a>Visualisointien lisärajoitukset
 
 Visualisoinneilla on rajoituksia, kun muodostat yhteyden SAP HANA -tietolähteeseen DirectQuerylla (siten, että tietolähdettä käsitellään monidimensioisena tietolähteenä): 
-* **Ei sarakkeiden koostamista**: Et voi vaihtaa visualisoinnin sarakkeen koostamista. Sen asetus on aina *Älä tee yhteenvetoa*.
+* **Ei sarakkeiden koostamista:** Et voi vaihtaa visualisoinnin sarakkeen koostamista. Sen asetus on aina *Älä tee yhteenvetoa*.
 
 ## <a name="treat-sap-hana-as-a-relational-source"></a>Käsittele SAP HANAa suhteellisena lähteenä 
 

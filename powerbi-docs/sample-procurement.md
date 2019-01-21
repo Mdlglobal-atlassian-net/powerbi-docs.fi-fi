@@ -1,23 +1,23 @@
 ---
-title: 'Hankinta-analyysimalli: esittely'
-description: 'Hankinta-analyysimalli Power BI:lle: esittely'
+title: 'Hankinta-analyysimalli: aloita esittely'
+description: 'Hankinta-analyysimalli Power BI:lle: aloita esittely'
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: amac
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 06/23/2018
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: 3b0c6fcc72e5b2f95b06f1184341298d449bf57e
-ms.sourcegitcommit: 1e4fee6d1f4b7803ea285eb879c8d5a4f7ea8b85
+ms.openlocfilehash: 18b99bf86f49f1355d4ab9f20ff6e8a83c89731d
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51717144"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54287344"
 ---
-# <a name="procurement-analysis-sample-for-power-bi-take-a-tour"></a>Hankinta-analyysimalli Power BI:lle: esittely
+# <a name="procurement-analysis-sample-for-power-bi-take-a-tour"></a>Hankinta-analyysimalli Power BI:lle: aloita esittely
 
 ## <a name="overview-of-the-procurement-analysis-sample"></a>Hankinta-analyysimallin esittely
 Tämä toimialan malliraporttinäkymä ja sen pohjana oleva raportti analysoivat valmistusyrityksen kulutusta toimittajiin luokan sekä sijainnin mukaan. Mallissa tutustumme seuraaviin alueisiin:
@@ -71,10 +71,10 @@ Aloitetaan tutustumalla kulutuksen trendeihin luokan ja sijainnin mukaan.
 
 Huomaa muutama asia:
 
-* **Laskut yhteensä kuukauden ja luokan mukaan**  -viivakaaviossa: **Suora**-luokassa on melko yhtenäinen kulutus, **Logistiikka** on huipussaan joulukuussa ja  **Muut** on huipussaan helmikuussa.
-* **Laskut yhteensä maan ja alueen mukaan** -kartassa: suurin osa kulutuksesta tapahtuu Yhdysvalloissa.
-* **Laskut yhteensä alaluokan mukaan** -pylväskaaviossa: **Laitteistot** ja **Epäsuorat hyödykkeet ja palvelut** ovat suurimmat kulutusluokat.
-* Laskut yhteensä tason mukaan -pylväskaaviossa: suurin osa liiketoiminnasta tapahtuu 1. tason (Top 10) toimittajien kanssa. Tämä auttaa hallitsemaan paremmin toimittajasuhteita.
+* **Laskut yhteensä kuukauden ja luokan mukaan** -viivakaavio: **Suora**-luokassa on melko yhtenäinen kulutus, **Logistiikka** on huipussaan joulukuussa ja ** Muut** on huipussaan helmikuussa.
+* **Kokonaislaskutus maan ja alueen mukaan** -kartta: Suurin osa kulutuksesta tapahtuu Yhdysvalloissa.
+* **Laskut yhteensä alaluokan mukaan** -pylväskaavio: **Laitteisto** ja **Epäsuorat hyödykkeet ja palvelut** ovat suurimmat kulutusluokat.
+* Laskut yhteensä tason mukaan -palkkikaavio: Suurin osa liiketoiminnasta tapahtuu tason 1 (10 suurinta) toimittajien kanssa. Tämä auttaa hallitsemaan paremmin toimittajasuhteita.
 
 ## <a name="spending-in-mexico"></a>Kulutus Meksikossa
 Tutustutaan Meksikon kulutusalueisiin.
@@ -139,5 +139,5 @@ Valitse **Muokkaa raporttia** vasemmasta yläkulmasta ja tutustu muokkausnäkym�
 
 Tämä on turvallinen ympäristö kaikenlaisille kokeiluille. Voit aina jättää tekemäsi muutokset tallentamatta. Jos kuitenkin tallennat ne, voit aina siirtyä **Nouda tiedot** -kohtaan, jolloin saat mallista uuden kopion.
 
-## <a name="next-steps-connect-to-your-data"></a>Seuraavat vaiheet: muodosta yhteys tietoihisi
+## <a name="next-steps-connect-to-your-data"></a>Seuraavat vaiheet: Yhdistä tietoihisi
 Toivomme, että tämä esittely on osoittanut, miten Power BI -raporttinäkymät ja raportit voivat tarjota uusia näkökulmia hankintatietoihin. Nyt sinun vuorosi – muodosta yhteys omiin tietoihisi. Power BI:n avulla voit yhdistää useisiin eri tietolähteisiin. Lisätietoja [Power BI:n käytön aloittamisesta](service-get-started.md).

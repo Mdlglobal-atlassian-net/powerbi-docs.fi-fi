@@ -5,17 +5,17 @@ author: mgblythe
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-gateways
+ms.subservice: powerbi-gateways
 ms.topic: conceptual
 ms.date: 12/06/2017
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 5e07575658ed25e3f4933a7840ef4bc970264b23
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 5ebc5472ffcbd5d6b493b919b3e2965968261d20
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34296016"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54279845"
 ---
 # <a name="guidance-for-deploying-a-data-gateway-for-power-bi"></a>Power BI:n tietoyhdyskäytävän käyttöönotto-ohjeet
 
@@ -40,7 +40,7 @@ Jos kaikki käyttäjät käyttävät tiettyä raporttia joka päivä samaan aika
 **Power BI:ssä** on rajoitus, joka sallii vain *yhden* yhdyskäytävän *raporttia* kohti, joten vaikka raportti perustuisi useampiin tietolähteisiin, kaikkien näiden tietolähteiden on käytettävä yhtä samaa yhdyskäytävää. Jos raporttinäkymä perustuu *useisiin* raportteihin, voit kuitenkin käyttää erillistä yhdyskäytävää kullekin raportille ja siten jakaa yhdyskäytävän kuormitusta näiden useiden raporttien kesken, jotka ovat osa tätä yhtä raporttinäkymää.
 
 ### <a name="connection-type"></a>Yhteystyyppi
-**Power BI** tarjoaa kaksi yhteystyyppiä: **DirectQuery** ja **tuonti**. Kaikki tietolähteet eivät tue molempia yhteystyyppejä ja useat syyt voivat vaikuttaa siihen, kumpi valitaan, kuten suojausvaatimukset, suorituskyky, tietorajoitukset ja tietomallikoot. Lisätietoja yhteystyypistä ja tuetuista tietolähteistä on *On-premises data gateway* -artikkelin osiossa, joka sisältää[ luettelon käytettävissä olevista tietolähdetyypeistä](service-gateway-onprem.md).
+**Power BI** tarjoaa kaksi yhteystyyppiä: **DirectQueryn** ja **tuonnin**. Kaikki tietolähteet eivät tue molempia yhteystyyppejä ja useat syyt voivat vaikuttaa siihen, kumpi valitaan, kuten suojausvaatimukset, suorituskyky, tietorajoitukset ja tietomallikoot. Lisätietoja yhteystyypistä ja tuetuista tietolähteistä on *On-premises data gateway* -artikkelin osiossa, joka sisältää[ luettelon käytettävissä olevista tietolähdetyypeistä](service-gateway-onprem.md).
 
 Käytössä oleva yhteystyypin mukaan yhdyskäytävän käyttö voi olla erilaista. Sinun tulee esimerkiksi yrittää erottaa **DirectQuery**-tietolähteet **ajoitetun päivityksen** tietolähteistä aina kun mahdollista (olettaen, että ne ovat eri raporteissa ja voidaan erottaa). Tämä estää sen, että yhdyskäytävällä olisi tuhansia DirectQuery-pyyntöjä jonossa samaan aikaan aamuksi ajoitetun suurikokoisen tietomallin päivityksen kanssa, jota käytetään yrityksen pääasiallisessa raporttinäkymässä. Seuraavassa on kummankin osalta huomioitavia seikkoja:
 

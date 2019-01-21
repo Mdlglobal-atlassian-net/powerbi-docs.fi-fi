@@ -1,27 +1,27 @@
 ---
-title: Uusien työtilojen luominen (esikatselu) – Power BI
-description: Lue, miten luodaan uusia työtiloja, jotka ovat koontinäyttöjen ja raporttien kokoelmia, joiden avulla voit kuvata organisaatiosi keskeisiä mittalukuja.
+title: Uusien työtilojen luominen (esiversio) – Power BI
+description: Lue, miten luodaan uusia työtiloja, jotka ovat raporttinäkymien ja raporttien kokoelmia, joiden avulla voit kuvata organisaatiosi keskeisiä mittalukuja.
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: lukaszp
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/19/2018
+ms.date: 01/11/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: a93c676775fe6e826ea83cfad91498b7fe3e2103
-ms.sourcegitcommit: 5206651c12f2b91a368f509470b46f3f4c5641e6
+ms.openlocfilehash: eba4e740f6fd08ffd60b95dfc437551dfb95e7b8
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53983596"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54293696"
 ---
-# <a name="create-the-new-workspaces-preview-in-power-bi"></a>Uusien työtilojen luominen (esikatselu) Power BI:ssä
+# <a name="create-the-new-workspaces-preview-in-power-bi"></a>Uusien työtilojen luominen (esiversio) Power BI:ssä
 
-Power BI:ssä esitellään uusi työtilakokemus esikatseluna. Työtilat ovat edelleen paikkoja, joissa voi yhteistyössä työtovereiden kanssa luoda kokoelmia koontinäytöistä ja raporteista. Kokoelmat voidaan niputtaa *sovelluksiksi* ja jakaa koko organisaatiolle tai tietyille henkilöille tai ryhmille. 
+Power BI:ssä esitellään uusi työtilakokemus esiversiona. Työtilat ovat edelleen paikkoja, joissa voi yhteistyössä työtovereiden kanssa luoda kokoelmia raporttinäkymistä ja raporteista. Kokoelmat voi paketoida *sovelluksiksi* ja jakaa koko organisaatiolle tai tietyille henkilöille tai ryhmille. 
 
-![Power BI:n uusien työtilojen esikatselu](media/service-create-the-new-workspaces/power-bi-new-workspaces-preview.png)
+![Power BI:n uusien työtilojen esiversio](media/service-create-the-new-workspaces/power-bi-new-workspaces-preview.png)
 
 Uusien työtilojen esikatselun avulla voit nyt suorittaa seuraavia toimintoja:
 
@@ -57,13 +57,13 @@ Katso lisätietoja artikkelista [Uudet työtilat (esikatselu)](service-new-works
 
 1. Valitse esimerkiksi **Mallit** > **Asiakkaan tuottavuuden malli**.
 
-    Näet työtilan sisältöluettelossa **uusien työtilojen esikatselun**. Koska olet järjestelmänvalvoja, näet myös uuden toiminnon **Käyttö**.
+    Näet työtilan sisältöluettelossa **uusien työtilojen esiversion**. Koska olet järjestelmänvalvoja, näet myös uuden toiminnon **Käyttö**.
 
-    ![Työtilojen esikatselun sisältöluettelo](media/service-create-the-new-workspaces/power-bi-workspaces-preview-content-list.png)
+    ![Työtilojen esiversion sisältöluettelo](media/service-create-the-new-workspaces/power-bi-workspaces-preview-content-list.png)
 
 1. Valitse **Käyttö**.
 
-1. Lisää käyttöoikeusryhmiä, jakeluluetteloita, Office 365 -ryhmiä tai henkilöitä näihin työtiloihin jäseninä, osallistujina tai järjestelmänvalvojina. Eri roolien tarkempi kuvaus on jäljempänä tässä artikkelissa kohdassa [Roolit uusissa työtiloissa](#roles-in-the-new-workspaces).
+1. Lisää käyttöoikeusryhmiä, jakeluluetteloita, Office 365 -ryhmiä tai henkilöitä näihin työtiloihin jäseninä, osallistujina tai järjestelmänvalvojina. Eri roolien tarkempi kuvaus on [Roolit uusissa työtiloissa](service-new-workspaces.md#roles-in-the-new-workspaces) -kohdassa.
 
     ![Jäsenten, järjestelmänvalvojien ja osallistujien lisääminen työtiloihin](media/service-create-the-new-workspaces/power-bi-access-add-members.png)
 
@@ -79,20 +79,20 @@ Kun olet luonut uutta tyyliä olevan sovellustyötilan, on aika lisätä siihen 
 
 Kun sisältöä tarkastellaan sovellustyötilan sisältöluettelossa, sovellustyötilan nimenä näkyy omistajan nimi.
 
-### <a name="connecting-to-third-party-services-in-new-workspaces-preview"></a>Kolmannen osapuolen palveluihin yhdistäminen uusissa työtiloissa (esikatselu)
+### <a name="connecting-to-third-party-services-in-new-workspaces-preview"></a>Kolmannen osapuolen palveluihin yhdistäminen uusissa työtiloissa (esiversio)
 
 Keskitymme uusien työtilojen kokemuksessa *sovelluksiin*. Kolmannen osapuolen palveluille tarkoitettujen sovellusten avulla käyttäjät voivat helposti noutaa tietoja käyttämistään palveluista, kuten Microsoft Dynamics CRM:stä, Salesforcesta tai Google Analyticsista.
 Organisaation sovellusten kautta käyttäjät pääsevät käyttämään tarvitsemiansa sisäisiä tietoja. Aiomme lisätä ominaisuuksia organisaation sovelluksiin, jotta käyttäjät voivat mukauttaa sovelluksista löytyvää sisältöä. Tämän toiminnon ansiosta sisältöpaketteja ei enää tarvita. 
 
-Et voi luoda tai käyttää organisaation sisältöpaketteja uusien työtilojen esikatselussa. Voit sen sijaan käyttää saatavilla olevia sovelluksia ja muodostaa yhteyden kolmannen osapuolen palveluihin tai pyytää sisäisiä ryhmiä tarjoamaan sovellukset tällä hetkellä käytössäsi oleviin sisältöpaketteihin. 
+Et voi luoda tai käyttää organisaation sisältöpaketteja uusien työtilojen esiversiossa. Voit sen sijaan käyttää saatavilla olevia sovelluksia ja muodostaa yhteyden kolmannen osapuolen palveluihin tai pyytää sisäisiä ryhmiä tarjoamaan sovellukset tällä hetkellä käytössäsi oleviin sisältöpaketteihin. 
 
 ## <a name="distribute-an-app"></a>Sovelluksen jakaminen
 
-Kun sisältö on valmis, valitset, mitkä koontinäytöt ja raportit haluat julkaista, ja sitten julkaiset sen *sovelluksena*. Voit luoda yhden sovelluksen kustakin työtilasta. Työtoverisi voivat saada sovelluksesi käyttöönsä eri tavoin. Voit asentaa sen automaattisesti työtovereidesi Power BI -tileille, jos Power BI -järjestelmänvalvojasi antaa sinulle luvan. Muussa tapauksessa he voivat hakea ja asentaa sovelluksesi Microsoft AppSourcesta tai voit lähettää heille suoran linkin. He saavat päivitykset automaattisesti, ja sinä voit määrittää, kuinka usein tiedot päivitetään. Lisätietoja on artikkelissa [Koontinäyttöjä ja raportteja sisältävien sovellusten julkaiseminen Power BI:ssä](service-create-distribute-apps.md).
+Kun sisältö on valmis, valitset, mitkä raporttinäkymät ja raportit haluat julkaista, ja sitten julkaiset sen *sovelluksena*. Voit luoda yhden sovelluksen kustakin työtilasta. Työtoverisi voivat saada sovelluksesi käyttöönsä eri tavoin. Voit asentaa sen automaattisesti työtovereittesi Power BI -tileille, jos Power BI -järjestelmänvalvojasi antaa sinulle luvan. Muussa tapauksessa he voivat hakea ja asentaa sovelluksesi Microsoft AppSourcesta tai voit lähettää heille suoran linkin. He saavat päivitykset automaattisesti, ja sinä voit määrittää, kuinka usein tiedot päivitetään. Lisätietoja on artikkelissa [Raporttinäkymiä ja raportteja sisältävien sovellusten julkaiseminen Power BI:ssä](service-create-distribute-apps.md).
 
 ## <a name="convert-old-app-workspaces-to-new-app-workspaces"></a>Vanhojen sovellustyötilojen muuntaminen uusiksi sovellustyötiloiksi
 
-Esikatselun ajanjaksolla et voi muuntaa vanhoja sovellustyötiloja automaattisesti uusiksi. Voit kuitenkin luoda uuden sovellustyötilan ja julkaista sisältöä uudessa sijainnissa. 
+Esiversion aikana et voi muuntaa vanhoja sovellustyötiloja automaattisesti uusiksi. Voit kuitenkin luoda uuden sovellustyötilan ja julkaista sisältöä uudessa sijainnissa. 
 
 Kun uudet työtilat ovat yleisesti käytettävissä (GA), voit siirtää vanhat työtilat automaattisesti. Jonkin aikaa GA:n jälkeen ne on siirrettävä.
 

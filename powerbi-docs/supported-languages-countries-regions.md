@@ -5,17 +5,17 @@ author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 04/13/2018
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: e474081a5f094bc04f6fc93b985b8d81efee1a0b
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: 98c637692b3c31e598a11c3039b60be3dec61348
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44728107"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54281179"
 ---
 # <a name="supported-languages-and-countriesregions-for-power-bi"></a>Power BI:n tuetut kielet ja maat tai alueet
 
@@ -116,7 +116,7 @@ Power BI tunnistaa kielen tietokoneesi kieliasetusten perusteella. Näiden asetu
    Sinun on ehkä suljettava selain ja avattava se uudelleen, jotta muutos näkyy.
 
 ## <a name="choose-the-language-or-locale-of-power-bi-desktop"></a>Kielen tai aluekohtaisten asetusten valitseminen Power BI Desktopissa
-Voit saada Power BI Desktopin kahdella tavalla: voit ladata sen tai asentaa sen Windows-kaupasta.
+Voit hankkia Power BI Desktopin kahdella tavalla: voit ladata sen tai asentaa sen Windows-kaupasta.
 
 * Kun [asennat Power BI Desktopin Windows-kaupasta](#choose-a-language-for-power-bi-desktop-installed-from-the-windows-store), se asentaa kaikki kielet ja näyttää Windowsin oletuskieltä vastaavan kielen.
 * Kun [lataat Power BI Desktopin](#choose-a-language-when-you-download-power-bi-desktop), valitset haluamasi kielen latauksen yhteydessä. 

@@ -5,20 +5,20 @@ author: mihart
 manager: kvivek
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 04/13/2018
 ms.author: mihart
 LocalizationGroup: Create reports
-ms.openlocfilehash: 1260f2c69a4ab913f7451671ab7821ee250998c0
-ms.sourcegitcommit: fb1885da7cf11367660edbf7b7346dc039ee9b5d
+ms.openlocfilehash: 4372f37cf6afc8fe51d6650ddd888bd41d3ea678
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47187233"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54280121"
 ---
 # <a name="optimize-a-power-bi-visual-for-any-size"></a>Power BI:n visualisoinnin optimointi mihin tahansa kokoon
-Kun luot uuden raportin, visualisoinnit ovat oletuksena *reagoivia*: dataa ja merkityksellisiä tietoja näytetään dynaamisesti suurin mahdollinen määrä, oli näyttö minkä kokoinen tahansa. Voit määrittää myös vanhempien raporttien sisältämien visualisointien koon dynaamisesti muuttuvaksi.
+Kun luot uuden raportin, visualisoinnit ovat oletusarvoisesti *reagoivia*: Ne muuttuvat dynaamisesti näyttämään dataa ja merkityksellisiä tietoja suurin mahdollinen määrä, oli näyttö minkäkokoinen tahansa. Voit määrittää myös vanhempien raporttien sisältämien visualisointien koon dynaamisesti muuttuvaksi.
 
 Visualisoinnin koon muuttuessa Power BI priorisoi tietonäkymän automaattisesti esimerkiksi poistamalla täytön ja siirtämällä selitteen visualisoinnin yläpuolelle, jolloin visualisointi pysyy informatiivisena myös pienessä koossa. Reagoinnista on hyötyä erityisesti puhelinten Power BI -mobiilisovelluksien visualisoinneissa.
 

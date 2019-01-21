@@ -5,17 +5,17 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 09/27/2018
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 63b75aae9fb9299119b606458a4a8832d77dd1be
-ms.sourcegitcommit: ce8332a71d4d205a1f005b703da4a390d79c98b6
+ms.openlocfilehash: 196d2ef3eb0d8ed8b7f008eef1b247d9e7f1cd18
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "47417161"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54296497"
 ---
 # <a name="real-time-streaming-in-power-bi"></a>Reaaliaikainen suoratoisto Power BI:ssä
 Power BI: reaaliaikaisen suoratoiston avulla voit suoratoistaa tietoja ja päivittää koontinäyttöjä reaaliajassa. Kaikki Power BI:ssä luotavat visualisoinnit tai koontinäytöt voidaan luoda myös näyttämään ja päivittämään reaaliaikaisia tietoja ja visualisointeja. Tietojen suoratoistoon käytettävät laitteet ja lähteet voivat olla tehtaiden tunnistimia, sosiaalisen median lähteitä, huoltokäyttötietoja ja mitä tahansa muita, joista voidaan kerätä ja lähettää ajan mukaan määräytyviä tietoja.
@@ -44,7 +44,7 @@ On otettava huomioon kaksi asiaa kiinnitettyjen ruutujen suhteen, jotka on saatu
 * Kun visualisointi on kiinnitetty koontinäyttöön, voit käyttää **Q&A** -kyselytoimintoa kysymysten tekemiseen siirretystä tietojoukosta luonnollisella kielellä. Kun olet tehnyt **Q&A**-kyselyn, voit kiinnittää tuloksena saadun visualisoinnin takaisin koontinäyttöön, jolloin kyseinen koontinäyttö *myös* päivittyy reaaliaikaisesti.
 
 ### <a name="streaming-dataset"></a>Suoratoistettava tietojoukko
-**Suoratoistettavaa tietojoukkoa** käytettäessä tiedot siirretään myös Power BI -palveluun. Tässä on yksi merkittävä ero: Power BI tallentaa tiedot vain tilapäiseen välimuistiin, joka vanhenee nopeasti. Tilapäistä välimuistia käytetään vain sellaisten visualisointien näyttämiseen, joihin voidaan kohdistaa jokin tilapäinen aikakäsite, kuten viivakaavio, jolla on yhden tunnin aikaraja.
+Myös **suoratoistettavassa tietojoukossa** tiedot lähetetään Power BI -palveluun, mutta prosessissa on yksi tärkeä ero: Power BI tallentaa tiedot vain tilapäiseen välimuistiin, joka vanhenee nopeasti. Tilapäistä välimuistia käytetään vain sellaisten visualisointien näyttämiseen, joihin voidaan kohdistaa jokin tilapäinen aikakäsite, kuten viivakaavio, jolla on yhden tunnin aikaraja.
 
 **Suoratoistettavaa tietojoukkoa** käytettäessä pohjana *ei* ole mitään tietojoukkoa, joten *et voi* koota raporttivisualisointeja käyttämällä suoratoiston kautta virtaavia tietoja. Sen vuoksi et voi hyödyntää raporttitoimintoja, kuten suodatusta, mukautettuja visualisointeja tai muita raporttitoimintoja.
 

@@ -5,17 +5,17 @@ author: markingmyname
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 06/20/2018
 ms.author: maghan
 LocalizationGroup: Data from databases
-ms.openlocfilehash: a1ae30097e0af90d5da8acd0d41b11f513756f88
-ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
+ms.openlocfilehash: 3bee2d5a4bbb470ed85d2ec0ae501d3dcc875e7f
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37135900"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54286285"
 ---
 # <a name="azure-sql-database-with-directquery"></a>Azure SQL -tietokanta ja DirectQuery
 Lue, miten voit muodostaa yhteyden suoraan Azure SQL -tietokantaan ja luoda raportteja, joissa käytetään reaaliaikaisia tietoja. Voit pitää tietosi lähteessä Power BI:n sijaan.
@@ -51,6 +51,10 @@ Voit ottaa kertakirjautumisen käyttöön siirtymällä tietojoukon asetuksiin, 
 Kun SSO-asetus on käytössä ja käyttäjät käyttävät raportteja, jotka on luotu tietolähteeseen, Power BI lähettää todennetut Azure AD -tunnistetiedot kyselyissä Azure SQL -tietokantaan. Näin Power BI voi noudattaa tietoturva-asetuksia, jotka on määritetty tietolähteen tasolla.
 
 Kertakirjautumisen asetus tulee voimaan kaikissa tietojoukoissa, jotka käyttävät tätä tietolähdettä. Se ei vaikuta tuontitilanteissa käytettyihin todentamismenetelmiin.
+
+> [!Note]
+> Azure Multi-Factor Authenticationia (MFA) ei tueta. Käyttäjät, jotka haluavat käyttää kertakirjautumista Azure SQL:n DirectQueryn avulla, täytyy vapauttaa MFA:n käytöstä.
+>
 
 ## <a name="finding-parameter-values"></a>Parametriarvojen etsiminen
 Täydellinen palvelimen nimi ja tietokannan nimi löytyvät Azure-portaalista.

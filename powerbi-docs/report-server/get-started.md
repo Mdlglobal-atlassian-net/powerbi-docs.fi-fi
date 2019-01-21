@@ -7,15 +7,15 @@ ms.author: maggies
 ms.date: 11/20/2018
 ms.topic: overview
 ms.service: powerbi
-ms.component: powerbi-report-server
+ms.subservice: powerbi-report-server
 manager: kfile
 ms.custom: mvc
-ms.openlocfilehash: ee8086a149e752d68aa8d6801844676d038257e3
-ms.sourcegitcommit: 458e091a0a0bfb71ea3980d44df6408f48bab586
+ms.openlocfilehash: 4db2f7ca5a84563e86b3a3033daae6d83bffcf5e
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/22/2018
-ms.locfileid: "52289147"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54291971"
 ---
 # <a name="what-is-power-bi-report-server"></a>Mikä on Power BI -raporttipalvelin?
 
@@ -27,13 +27,13 @@ Power BI -raporttipalvelin on verkkoportaalilla varustettu paikallinen raporttip
 Power BI -raporttipalvelin on vastaava kuin SQL Server Reporting Services ja Power BI -verkkopalvelu, mutta se toimii eri tavoilla. Power BI -palvelun tavoin Power BI -raporttipalvelin isännöi Power BI -raportteja (.PBIX) ja Excel-tiedostoja. Reporting Servicesin tavoin Power BI -raporttipalvelin on paikallinen palvelin, joka isännöi sivutettuja raportteja (.RDL). Power BI -raporttipalvelin on Reporting Servicesin yläjoukko: kaikki Reporting Servicesissä tehtävät toiminnot voidaan tehdä myös Power BI -raporttipalvelimessa Power BI -raporttien tuen ansiosta. Katso lisätietoja kohdasta [Power BI -raporttipalvelimen ja Power BI -palvelun vertailu](compare-report-server-service.md).
 
 ## <a name="licensing-power-bi-report-server"></a>Power BI -raporttipalvelimen käyttöoikeus
-Power BI -raporttipalvelin on saatavana kahdella eri käyttöoikeudella: [Power BI Premium](../service-premium.md) ja [SQL Server Enterprise Edition](https://www.microsoft.com/sql-server/sql-server-2017-editions), jossa on Software Assurance. Power BI Premium -käyttöoikeudella voit luoda hybridiratkaisun, jossa yhdistyvät pilvi- ja paikallispalvelut.  
+Power BI -raporttipalvelin on saatavana kahdella eri käyttöoikeudella: [Power BI Premium](../service-premium.md) ja [SQL Server Enterprise Edition](https://www.microsoft.com/sql-server/sql-server-2017-editions), jossa on SA-ylläpito. Power BI Premium -käyttöoikeudella voit luoda hybridiratkaisun, jossa yhdistyvät pilvi- ja paikallispalvelut.  
 
 > [!NOTE]
 > Power BI Premiumin osalta Power BI -raporttipalvelin sisältyy vain P-varastointiyksiköihin. Se ei sisälly EM-varastointiyksiköihin.
 
 ## <a name="web-portal"></a>Verkkoportaali
-Power BI -raporttipalvelimen käyttöliittymä on nykyaikainen verkkoportaali, jota voit tarkastella missä tahansa nykyaikaisessa selaimessa. Täällä voit käyttää kaikkia raportteja ja suorituskykyilmaisimia. Verkkoportaalin sisältö on järjestetty perinteiseen kansiohierarkiaan. Sisältö on ryhmitelty kansioissa tyypin mukaan: Power BI -raportit, mobiiliraportit, sivutetut raportit, suorituskykyilmaisimet ja Excel-työkirjat. Jaetut tietojoukot ja jaetut tietolähteet ovat omissa kansioissaan, joissa niitä voidaan käyttää apuna raporttien luomisessa. Voit merkitä suosikkisi ja tarkastella niitä yhdessä kansiossa. Lisäksi voit luoda suorituskykyilmaisimia suoraan verkkoportaalista. 
+Power BI -raporttipalvelimen käyttöliittymä on nykyaikainen verkkoportaali, jota voit tarkastella missä tahansa nykyaikaisessa selaimessa. Täällä voit käyttää kaikkia raportteja ja suorituskykyilmaisimia. Verkkoportaalin sisältö on järjestetty perinteiseen kansiohierarkiaan. Kansioissa sisältö on ryhmitelty tyypin mukaan: Power BI -raportit, mobiiliraportit, sivutetut raportit, suorituskykyilmaisimet ja Excel-työkirjat. Jaetut tietojoukot ja jaetut tietolähteet ovat omissa kansioissaan, joissa niitä voidaan käyttää apuna raporttien luomisessa. Voit merkitä suosikkisi ja tarkastella niitä yhdessä kansiossa. Lisäksi voit luoda suorituskykyilmaisimia suoraan verkkoportaalista. 
 
 ![Power BI -raporttipalvelimen verkkoportaali](media/get-started/web-portal.png)
 

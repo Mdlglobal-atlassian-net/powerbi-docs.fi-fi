@@ -6,15 +6,15 @@ ms.author: maggies
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-report-server
+ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 08/16/2018
-ms.openlocfilehash: a365cab0420fdf373d62f5b1774a4d86985adfe3
-ms.sourcegitcommit: 60fb46b61ac73806987847d9c606993c0e14fb30
+ms.openlocfilehash: 91179ca37b8ba5c883785501588c9b12a02d644d
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50101251"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54292449"
 ---
 # <a name="whats-new-in-power-bi-report-server"></a>Power BI -raporttipalvelinten uudet ominaisuudet
 
@@ -120,7 +120,7 @@ Suoran SAP HANA SSO -kyselyn Kerberos-tuki on nyt käytettävissä Power BI -rap
 - [Osittajan oikaisu](https://powerbi.microsoft.com/blog/power-bi-report-server-update-august-2018/#slicer)
 - [Raporttisivun työkaluvihjeet](https://powerbi.microsoft.com/blog/power-bi-report-server-update-august-2018/#reportPageTooltips)
 
-### <a name="analytics"></a>Analysointi
+### <a name="analytics"></a>Analytiikka
 
 - [Uusi DAX-funktio: COMBINEVALUES()](https://powerbi.microsoft.com/blog/power-bi-report-server-update-august-2018/#combineValues)
 - [Mittayksiköihin porautuminen](https://powerbi.microsoft.com/blog/power-bi-report-server-update-august-2018/#measureDrillthrough)
@@ -134,7 +134,7 @@ Suoran SAP HANA SSO -kyselyn Kerberos-tuki on nyt käytettävissä Power BI -rap
 - [Mittayksiköiden tietoluokat](https://powerbi.microsoft.com/blog/power-bi-report-server-update-august-2018/#dataCategory)
 - [Tilastolliset DAX-funktiot](https://powerbi.microsoft.com/blog/power-bi-report-server-update-august-2018/#dax)
 
-## <a name="may-2018"></a>Toukokuu 2018
+## <a name="may-2018"></a>Tou 2018
 
 ### <a name="configure-power-bi-ios-mobile-apps-for-report-servers-remotely"></a>Power BI -iOS-mobiilisovellusten etämäärittäminen raporttipalvelimia varten
 
@@ -168,7 +168,7 @@ Kuvitellaan, että haluat antaa lukijoillesi raporttisi käyttöoikeudet, mutta 
 Voit nyt luoda kirjanmerkkejä ja käyttää raporttisi tietoja kerronnan tukena.
 
 - [Kirjanmerkkien ristiinkorostus](https://powerbi.microsoft.com/blog/power-bi-desktop-december-feature-summary/#bookmarkCrossHighlighting): Kirjanmerkit säilyttävät ja näyttävät raportin sivun, joka korostettiin ristiin kirjanmerkin luontihetkellä.
-- [Entistä joustavammat kirjanmerkit](https://powerbi.microsoft.com/blog/power-bi-desktop-december-feature-summary/#bookmarkFlexibility): Kirjanmerkit kuvastavat raporttiisi määritettyjä ominaisuuksia ja vaikuttavat ainoastaan valitsemiisi visualisointeihin.
+- [Lisää joustavuutta kirjanmerkkien käyttämiseen](https://powerbi.microsoft.com/blog/power-bi-desktop-december-feature-summary/#bookmarkFlexibility): Kirjanmerkit heijastavat raportissa määrittämiäsi ominaisuuksia ja vaikuttavat vain valitsemiisi visualisointeihin.
 
 #### <a name="multi-select-data-points-across-multiple-chartshttpspowerbimicrosoftcomblogpower-bi-desktop-february-2018-feature-summarycrosshighlight"></a>[Monivalinta-arvopisteet useiden kaavioiden välillä](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#crosshighlight)
 
@@ -266,13 +266,13 @@ Tämä versio tukee skaalattavuutta. Kuormituksen tasauksen ja palvelimen affini
 
 Järjestelmänvalvojat voivat määrittää seuraavat palvelinklusterin asetukset SSMS:n lisäasetuksista:
 
-* EnableCustomVisuals: Tosi/Epätosi
-* EnablePowerBIReportEmbeddedModels: Tosi/Epätosi
-* EnablePowerBIReportExportData: Tosi/Epätosi
-* MaxFileSizeMb: Oletus on nyt 1 000
+* EnableCustomVisuals: Tosi/epätosi
+* EnablePowerBIReportEmbeddedModels: Tosi/epätosi
+* EnablePowerBIReportExportData: Tosi/epätosi
+* MaxFileSizeMb: Oletuksena on nyt 1000
 * ModelCleanupCycleMinutes: Kuinka usein mallit tarkistetaan muistista poistamista varten
 * ModelExpirationMinutes: Kuinka pitkän käyttämättömyysjakson jälkeen malli vanhenee ja poistetaan
-* ScheduleRefreshTimeoutMinutes: Tietojen päivityksen enimmäiskesto mallille. Oletuksena tämä on kaksi tuntia.  Ylärajaa ei ole.
+* ScheduleRefreshTimeoutMinutes: Kuinka kauan tietojen päivitys voi kestää mallia kohden. Oletuksena tämä on kaksi tuntia.  Ylärajaa ei ole.
 
 **Määritystiedosto rsreportserver.config**
 

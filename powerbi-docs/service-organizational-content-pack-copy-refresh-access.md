@@ -5,19 +5,19 @@ author: maggiesMSFT
 manager: kfile
 ms.reviewer: lukaszp
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 37cfca811b7e60bde832396e67b246933d4e0a8e
-ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
+ms.openlocfilehash: f42e9f69c3cdab945c0f000a0cc2ae4654d9ec9b
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "48908413"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54296111"
 ---
-# <a name="organizational-content-packs-copy-refresh-and-get-access"></a>Organisaation sisältöpaketit: kopioiminen, päivittäminen ja käyttöoikeuksien hankkiminen
+# <a name="organizational-content-packs-copy-refresh-and-get-access"></a>Organisaation sisältöpaketit: kopioiminen, päivittäminen ja käyttöoikeuden hankkiminen
 
 Kun organisaation sisältöpaketti julkaistaan, kaikki vastaanottajat näkevät saman sisällön (koontinäytön, raportit, Excel-työkirjat, tietojoukot ja tiedot, ellei kyseessä ole SQL Server Analysis Services (SSAS) -tietolähde).  [Vain sisältöpaketin tekijä voi muokata sisältöpakettia ja julkaista sen uudelleen](service-organizational-content-pack-manage-update-delete.md).  Kaikki vastaanottajat voivat kuitenkin tallentaa kopion sisältöpaketista, joka toimii alkuperäisen kappaleen rinnalla.
 
@@ -40,7 +40,7 @@ Nyt sinulla on kopio, jota voit muokata. Kukaan muu ei näe tekemiäsi muutoksia
 ## <a name="help--i-can-no-longer-access-the-content-pack"></a>Apua!  Sisältöpaketti ei ole enää käytettävissä
 Tämä voi johtua useista syistä:
 
-* **Jäsenyys muuttuu**: Sisältöpaketit julkaistaan sähköpostin jakeluryhmille, käyttöoikeusryhmille ja [Office 365:en perustuville Power BI -ryhmille](https://support.office.com/article/Create-a-group-in-Office-365-7124dc4c-1de9-40d4-b096-e8add19209e9).  Jos sinut poistetaan ryhmästä, et enää pääse käyttämään sisältöpakettia.
+* **Jäsenyys muuttuu**:  Sisältöpaketit julkaistaan sähköpostin jakeluryhmille, käyttöoikeusryhmille ja [Office 365:een perustuville Power BI -ryhmille](https://support.office.com/article/Create-a-group-in-Office-365-7124dc4c-1de9-40d4-b096-e8add19209e9).  Jos sinut poistetaan ryhmästä, et enää pääse käyttämään sisältöpakettia.
 * **Jakelun muutokset**: Sisältöpaketin tekijä muuttaa jakelua. Esimerkiksi jos sisältöpaketti on alun perin julkaistu koko organisaatiolle, mutta tekijä julkaisee sen uudelleen pienemmälle yleisölle, et välttämättä enää sisälly paketin kohdeyleisöön.
 * **Suojausasetukset muuttuvat**: Jos koontinäyttö ja raportit on yhdistetty paikallisiin SSAS-tietolähteisiin ja suojausasetuksia muutetaan, käyttöoikeutesi kyseiseen palvelimeen on ehkä kumottu.
 

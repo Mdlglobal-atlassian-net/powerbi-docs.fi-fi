@@ -5,17 +5,17 @@ author: mihart
 manager: kvivek
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 06/22/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 77802d2db59ddff94123991e209441b4c491f98b
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: e426d781f7a2e663687f443c423e1fc326624289
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46548599"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54296719"
 ---
 # <a name="best-design-practices-for-reports-and-visuals"></a>Raporttien ja visualisointien parhaat suunnittelukäytännöt
 <!-- Shared newnav Include -->
@@ -95,7 +95,7 @@ Näemme alla olevasta päivitetystä raportistamme, että raportin osat on nyt t
 
 ![](media/power-bi-visualization-best-practices/power-bi-example2new.png)
 
-**Kuva 2:    Huonon raportin esimerkkimme parantui asettelun muokkauksilla**
+**Kuva 2:    Huono esimerkkiraporttimme parani asettelun muokkauksilla**
 
 Power BI sisältää työkaluja, joiden avulla voit tasata visualisointeja. Kun olet valinnut Power BI Desktopissa useita visualisointeja, voit täsmätä visualisointien sijainnin **Visualisoinnit**-valintanauhan **Tasaa ja jaa** -vaihtoehtojen avulla.
 
@@ -146,7 +146,7 @@ Esimerkkimme näyttää nyt jo paremmalta. Olemme poistaneet paljon tarpeettomia
 
 ![](media/power-bi-visualization-best-practices/power-bi-example3newer.png)
 
-**Kuva 7:    Huonon raportin esimerkistä on poistettu tarpeettomat kohdat**
+**Kuva 7:    Huonosta esimerkkiraportista on poistettu tarpeettomat kohdat**
 
 ### <a name="tell-a-story-at-a-glance"></a>Kerro tarina yhdellä silmäyksellä
 Yleisenä testinä pitäisi olla se, että joku, joka ei ole nähnyt raporttia aiemmin, pystyy nopeasti ymmärtämään sen ilman selityksiä. Lukijoiden pitäisi nopealla silmäyksellä nähdä, mitä sivu käsittelee, ja mitä kukin kaava/taulukko käsittelee.   
@@ -188,7 +188,7 @@ Miltä esimerkkisivumme näyttää nyt?  Kuvassa 11 näkyy siistimpi sivu, jossa
 
 ![](media/power-bi-visualization-best-practices/power-bi-example4new.png)
 
-**Kuva 11:    Raporttiesimerkkimme, johon on sovellettu tekstin ohjeviivoja ja johon on lisätty otsikko**
+**Kuva 11:    Esimerkkiraporttimme, johon on lisätty tekstin ohjeviivat ja otsikko**
 
 Esimerkissämme raporttisivun otsikko lisättiin vasempaan yläkulmaan eli ensimmäiseen paikkaan, jota lukijat katsovat. Fonttikoko on 28 ja fontti on Segoe Bold, jotta otsikko erottuu sivun muista osista.  Tekstityylioppaassa kehotetaan välttämään taustoja, mustia otsikoita, kuvatekstejä ja selitteitä. Ohjetta on sovellettu mahdollisuuksien mukaan sivun kaikissa visualisoinneissa (yhdistelmäkaavion akseleita ja otsikoita ei voi muokata).  Lisäksi:
 
@@ -239,7 +239,7 @@ Lisää ohut valkoinen reunus.
 
 ![](media/power-bi-visualization-best-practices/power-bi-slicer-outline.png)
 
-**Kuva 15: Lisää reunus osittajaan**
+**Kuva 15: Lisää osittajaan reunus**
 
 Harmaata fonttia on vaikea erottaa turkoosia vasten, joten muuta **kohteiden** väri valkoiseksi.
 
@@ -251,7 +251,7 @@ Muuta lopuksi **Otsikko**-kohdassa **fonttiväriksi** valkoinen ja lisää musta
 
 ![](media/power-bi-visualization-best-practices/power-bi-card-formatting.png)
 
-**Kuva 17: Muotoile osittajan otsikkoa**
+**Kuva 17: Muotoile osittajan otsikko**
 
 **Suorakulmio-muoto**
 
@@ -259,7 +259,7 @@ Suorakulmio on myös kadonnut mustaan taustaan.  Korjaa ongelma valitsemalla muo
 
 ![](media/power-bi-visualization-best-practices/power-bi-shape-format.png)
 
-**Kuva 18: Muotoile muotoa**
+**Kuva 18: Muotoile muoto**
 
 **Pylväskaaviot, kuplakaavio, täytetty kartta ja puukartta**
 
@@ -271,11 +271,11 @@ Lisää valkoinen tausta raporttisivun jäljellä oleviin visualisointeihin. Laa
 
 ![](media/power-bi-visualization-best-practices/power-bi-example5a.png)
 
-**Kuva 20: Raporttiesimerkki, jossa on sovellettu värien parhaita käytäntöjä (musta tausta)**
+**Kuva 20: Esimerkkiraportti, johon on sovellettu värien käytön parhaita käytäntöjä (musta tausta)**
 
 ![](media/power-bi-visualization-best-practices/power-bi-example5b.png)
 
-**Kuva 21:    Raporttiesimerkki, jossa on sovellettu värien parhaita käytäntöjä (valkoinen tausta)**
+**Kuva 21:    Esimerkkiraportti, johon on sovellettu värien käytön parhaita käytäntöjä (valkoinen tausta)**
  
 
 ### <a name="aesthetics"></a>Estetiikka
@@ -359,7 +359,7 @@ Valitse visualisointi, jotta se on aktiivinen, ja avaa muotoiluruutu. Laajenna *
 
 ![](media/power-bi-visualization-best-practices/power-bi-axis-titles.png)
 
-**Kuva 26:    Ota akselin otsikot käyttöön tai poista ne käytöstä**
+**Kuva 26:    Ota akselien otsikot käyttöön tai poista ne käytöstä**
 
 **Ota akselin selitteet käyttöön tai poista ne käytöstä**
 
@@ -367,7 +367,7 @@ Valitse visualisointi, jotta se on aktiivinen, ja avaa muotoiluruutu. **X-akseli
 
 ![](media/power-bi-visualization-best-practices/power-bi-axis-labels.png)
 
-**Kuva 27: Ota akselin selitteet käyttöön tai poista ne käytöstä**
+**Kuva 27: Ota akselien selitteet käyttöön tai poista ne käytöstä**
 
 > [!TIP]
 > Saatat ehkä poistaa Y-akselin selitteet käytöstä tilanteessa, jossa **tietoselitteet** on otettu käyttöön.
@@ -380,7 +380,7 @@ Valitse visualisointi, jotta se on aktiivinen, ja avaa muotoiluruutu. Poista **o
 
 ![](media/power-bi-visualization-best-practices/power-bi-title-off.png)
 
-**Kuva 28:    Poista otsikot visualisoinneista**
+**Kuva 28:    Poista visualisointien otsikot**
 
 Mieti, miten lukijat tarkastelevat raporttia, ja varmista, että visualisoinnit ja tekstit ovat riittävän leveitä ja tummia luettaviksi. Jos sinulla on suhteellisesti suurempi visualisointi sivulla, lukijat voivat olettaa, että kyse on tärkeimmästä asiasta. Lisää riittävästi tilaa visualisointien välille, jotta raporttisi ei näytä sekavalta ja epäselvältä.  Tasaa visualisoinnit, jotta ohjaat lukijoiden katseen oikeaan paikkaan.
 
@@ -409,13 +409,13 @@ Valitse kullekin jäljempänä luetelluille muotoilusäädöille maalaustelan ku
 
 ![](media/power-bi-visualization-best-practices/power-bi-paintbrush.png)
 
-**Kuva 31: Avaa Muotoilu-ruutu**
+**Kuva 31: Avaa muotoiluruutu**
 
-Valitse sitten säädettävä visuaalinen elementti ja varmista, että se on käytössä. Esimerkkejä visuaalisista elementeistä ovat seuraavat: **X-akseli**, **Y-akseli**, **otsikko**, **arvopisteen otsikot** ja **selite**. Alla olevassa esimerkissä näytetään **Otsikko**-elementti.
+Valitse sitten säädettävä visuaalinen elementti ja varmista, että se on käytössä. Esimerkkejä visuaalisista elementeistä: **X-akseli**, **Y-akseli**, **Otsikko**, **Arvopisteiden otsikot** ja **Selite**. Alla olevassa esimerkissä näytetään **Otsikko**-elementti.
 
 ![](media/power-bi-visualization-best-practices/power-bi-title-formatting.png)
 
-**Kuva 32: Muotoile visuaalista otsikkoa**
+**Kuva 32: Muotoile visualisoinnin otsikko**
 
 **Määritä tekstin koko**
 
@@ -443,7 +443,7 @@ Jotta raporttisivu ei näyttäisi liian sekavalta tai ahtaalta, käytä johdonmu
 
 ![](media/power-bi-visualization-best-practices/power-bi-text-box-edit.png)
 
-**Kuva 33: Muotoile tekstiruudussa käytettävää fonttia**
+**Kuva 33: Muotoile tekstiruudussa käytettävä fontti**
 
 #### <a name="sorting"></a>Lajittelu
 Voit tuoda merkitykselliset tiedot nopeammin esiin määrittämällä visualisointien lajittelun. Kun lajittelet esimerkiksi palkkikaaviot laskevassa tai nousevassa järjestyksessä palkeissa olevan arvon mukaan, voit nopeasti näyttää tärkeät lisätiedot tilaa käyttämättä.
@@ -455,7 +455,7 @@ Yksi Power BI:n kiinnostavimmista ominaisuuksista on kyky muokata tapaa, jolla k
 
 ![](media/power-bi-visualization-best-practices/power-bi-visual-interactions.png)
 
-**Kuva 34: Visuaaliset vuorovaikutukset**
+**Kuva 34: Visualisointitoimet**
 
 Päätä sitten sivulla olevan kunkin visualisoinnin osalta, haluatko valita visualisoinnin suodatusta tai korostamista varten, tai olla tekemättä mitään. Kaikkia visualisointeja ei voida korostaa, eikä niihin voida käyttää korostuksen ohjausta. Lisätietoja on artikkelissa [Visuaaliset vuorovaikutukset Power BI:ssä](../consumer/end-user-interactions.md).
 
@@ -491,7 +491,7 @@ Voit muuttaa tietopisteen värejä muotoiluruudun **Tietojen värit** -välilehd
 
 ![](media/power-bi-visualization-best-practices/power-bi-colors.png)
 
-**Kuva 36: Määritä tietopisteen värit**
+**Kuva 36: Määritä arvopisteen värit**
 
 > [!NOTE]
 > Power BI soveltaa oletusarvoista teemaa raportin visualisointeihin.  Teemavärit valitaan monipuolisuuden ja kontrastin lisäämiseksi. Jos haluat poiketa oletusarvoisesta teemavalikoimasta, valitse **Mukautettu väri**.
@@ -506,7 +506,7 @@ Voit Power BI Desktopissa jopa korostaa poikkeavia arvoja tai rivin osiota toise
 
 ![](media/power-bi-visualization-best-practices/power-bi-outliers.png)
 
-**Kuva 38:    Desktopin käyttäminen poikkeavien arvojen korostamiseksi**
+**Kuva 38:    Korosta poikkeavia arvoja Desktopin avulla**
 
 Tässä ”Poikkeavat arvot” -sarja on olemassa vain, kun elokuun keskilämpötila laskee alle 60. Tämä tehtiin luomalla laskettu DAX-sarake seuraavalla kaavalla:
 
@@ -524,13 +524,13 @@ Sarjan kaavioiden kuvatekstissä on yleensä luokittainen arvo. Esimerkiksi alla
 
 ![](media/power-bi-visualization-best-practices/power-bi-bubble-color.png)
 
-**Kuva 39: Sovelletut oletusvärit**
+**Kuva 39: Oletusvärit käytössä**
 
 Power BI:n käyttämät oletusvärit on valittu siten, että luokittaisten arvojen välillä on hyvä värinerotus ja ne on helppo erottaa toisistaan. Näitä värejä muutetaan toisinaan vastaamaan tiettyä yrityksen mallia, mutta se voi aiheuttaa ongelmia.
 
 ![](media/power-bi-visualization-best-practices/power-bi-bubble-color2.png)
 
-**Kuva 40: Väri, jota sovelletaan yhden värin sävyinä**
+**Kuva 40: Väri saman värin eri sävyinä**
 
 Tähän visualisointiin on valittu yksi sävy ja värin intensiteetti on vaihteleva. Sen vuoksi se antaa väärän käsityksen luokkien välisestä järjestyksestä. Sen mukaan tummat kuplat ovat mittakaavassa korkeammalla tai matalammalla kuin vaaleammat sävyt. Aakkosjärjestystä lukuun ottamatta tämän kaltaisessa luokittaisessa arvossa ei ole yleensä mitään luontaista järjestystä.
 Voit vaihtaa oletusvärejä avaamalla muotoiluruudun ja valitsemalla **Tietojen värit**.
@@ -547,7 +547,7 @@ Voit luoda tämän kaavion lisäämällä arvon Värin kylläisyys -kenttään j
 
 ![](media/power-bi-visualization-best-practices/power-bi-saturation2.png)
 
-**Kuva 42: Lisää Värin kylläisyys -kenttä**
+**Kuva 42: Lisää värikylläisyyskenttä**
 
 ![](media/power-bi-visualization-best-practices/power-bi-color-controls.png)
 
@@ -557,7 +557,7 @@ Värin avulla voidaan myös korostaa keskitettyä arvoa ympäröivää varianssi
 
 ![](media/power-bi-visualization-best-practices/power-bi-color.png)
 
-**Kuva 44:    Keskitettyä arvoa ympäröivän varianssin korostaminen värin avulla**
+**Kuva 44:    Korosta keskitettyä arvoa ympäröivä varianssi värin avulla**
  
 
 ### <a name="principles-of-visual-design--applied-to-example-report-page"></a>Visuaalisen suunnittelun periaatteet – sovellettuna esimerkkiraporttisivuun
@@ -635,7 +635,7 @@ Jos viivakaavioita käytetään yleensä tietojen tarkastelemiseen ajan kuluessa
   
   ![](media/power-bi-visualization-best-practices/power-bi-data-labels.png)
   
-  **Kuva 52: Arvopisteen selitteiden ottaminen käyttöön**
+  **Kuva 52: Ota arvopisteiden otsikot käyttöön**
 * Edellä oleva palkkikaavio on todella kätevä verrattaessa yhtä mittaa monen **yksittäisen pisteessä kanssa ajalla mitattuna**.  Samalla kun edellä oleva viivakaavio näytti trendin ajan kuluessa, palkkikaavio näyttää trendin yhdelle luokalle tiettynä ajankohtana.  Voimme yhdellä silmäyksellä havaita, että palkkiokaavion mukaan Espanjan työttömyysaste on yksi maailman huonoimmista eli 25 %.
 * Kun koko palkki-/pylväskaavio ei mahdu varattuun tilaan, Power BI lisää vierityspalkkeja. Kun se on mahdollista ja järkevää, jäsennä visualisointi ja raportti näyttämään koko kaavio, jotta lukija saa yleiskäsityksen koko jakautumisesta.  Valitettavasti tämä ei ole mahdollista esimerkissämme ympäri maailmaa sijaitsevien maiden suuren lukumäärän vuoksi.
   
@@ -644,13 +644,13 @@ Jos viivakaavioita käytetään yleensä tietojen tarkastelemiseen ajan kuluessa
   
   ![](media/power-bi-visualization-best-practices/power-bi-drill.png)
   
-  **Kuvassa 53: Porautuminen alaspäin**
+  **Kuva 53: Poraudu alaspäin**
 
 Lisätietoja palkki- ja pylväskaavioista:
 
 * [Palkkikaaviot 101](http://blog.newscred.com/article/data-visualization-101-bar-charts)
-* [Tietojen visualisoinnin luettelo: palkkikaavio](http://www.datavizcatalogue.com/methods/bar_chart.html#.VYV-hY3bLJw)
-* [Tietojen visualisoinnin luettelo: monijoukkokaavio](http://www.datavizcatalogue.com/methods/multiset_barchart.html#.VYV_gI3bLJw)
+* [Tietojen visualisoinnin luettelo: Palkkikaavio](http://www.datavizcatalogue.com/methods/bar_chart.html#.VYV-hY3bLJw)
+* [Tietojen visualisoinnin luettelo: Monijoukollinen palkkikaavio](http://www.datavizcatalogue.com/methods/multiset_barchart.html#.VYV_gI3bLJw)
 
 ### <a name="stacked-barcolumn-charts"></a>Pinotut palkki-/pylväskaaviot
 ![](media/power-bi-visualization-best-practices/power-bi-stacked.png)
@@ -659,13 +659,13 @@ Lisää toinen dimensio palkki-/pylväskaavioihin pinoamalla eri luokkia palkiss
 
 ![](media/power-bi-visualization-best-practices/power-bi-deloite.png)
 
-**Kuva 54: pinottu pylväskaavio**
+**Kuva 54: Pinottu pylväskaavio**
 
 Tämä pinottu pylväskaavio näyttää, että kokonaistulot ovat kasvaneet ajan kuluessa. Kaupalliset tulot - ja Lähetystulot-luokat ovat myös kasvaneet tasaisesti ajan kuluessa, mikä on lisännyt kokonaistuloja.  Tämän kaavion avulla ei ole kuitenkaan helppo vertailla sitä, mikä vaikutus kullakin kolmella luokalla on toinen toisiinsa. Miten Kaupalliset tulot -luokka on esimerkiksi kasvanut verrattuna Lähetystulot- tai Pelipäivän tulot -luokkaan?  Nämä tiedot olisi parempi esittää viivakaaviossa, joka auttaa visualisoimaan niitä.  
 
 ![](media/power-bi-visualization-best-practices/power-bi-deloite2.png)
 
-**Kuva 55: Muuntaminen viivakaavioksi**
+**Kuva 55: Muunna viivakaavioksi**
 
 Tämän viivakaavion avulla on helpompi nähdä, että eniten ovat kasvaneet kaupalliset tulot, joita seuraavat lähetystulot ja pelipäivän tulot.
 
@@ -682,13 +682,13 @@ Tämän viivakaavion avulla on helpompi nähdä, että eniten ovat kasvaneet kau
 
 Lisätietoja pinotuista kaavioista:
 
-* [Tietojen visualisoinnin luettelo: pinotut pylväskaaviot](http://www.datavizcatalogue.com/methods/stacked_bar_graph.html#top)
+* [Tietojen visualisoinnin luettelo: Pinotut palkkikaaviot](http://www.datavizcatalogue.com/methods/stacked_bar_graph.html#top)
 * [Milloin kannattaa käyttää 100-prosentin pinottuja palkkikaavioita?](http://www.perceptualedge.com/blog/?p=2239)
 
 ### <a name="combo-barcolumn-charts"></a>Yhdistelmäpalkki-/pylväskaaviot
 ![](media/power-bi-visualization-best-practices/power-bi-combo.png)
 
-Power BI:ssä pylväs- ja viivakaaviot voidaan yhdistää yhdistelmäkaavioksi. Vaihtoehtoja ovat seuraavat: viivakaavio ja pinottu pylväskaavio sekä viivakaavio ja lohkopylväskaavio. Voit säästää arvokasta piirtoalustatilaa yhdistämällä kaksi erillistä visualisointia yhdeksi kokonaisuudeksi.
+Power BI:ssä pylväs- ja viivakaaviot voidaan yhdistää yhdistelmäkaavioksi. Vaihtoehdot ovat seuraavat: viivakaavio ja pinottu pylväskaavio sekä viivakaavio ja lohkopylväskaavio. Voit säästää arvokasta piirtoalustatilaa yhdistämällä kaksi erillistä visualisointia yhdeksi kokonaisuudeksi.
 
 Alla on kaksi tilannevedosta ennen ja jälkeen.  Ensimmäisellä sivulla on kaksi erillistä visualisointia: pylväskaavio, joka näyttää väestönkasvun ajan kuluessa ja viivakaavio, joka näyttää BKT:n ajan kuluessa. Nämä kaaviot sopivat hyvin yhdistelmäkaavioksi, koska niillä on sama X-akseli (vuosi) ja arvot (2002–2012).  Miksi et yhdistäisi niitä, jotta voit vertailla näitä kahta trendiä yhdessä visualisoinnissa?  Näiden kahden kaavion yhdistäminen nopeuttaa tietojen vertailua.
 
@@ -717,11 +717,11 @@ Avaa tätä varten muotoiluruutu, laajenna **Y-akselia** ja ota  **Näytä toiss
 
 ![](media/power-bi-visualization-best-practices/power-bi-show-secondary-new.png)
 
-**Kuva 60: Toissijaisen akselin näyttäminen**
+**Kuva 60: Näytä toissijainen akseli**
 
 ![](media/power-bi-visualization-best-practices/power-bi-combo-chart.png)
 
-**Kuva 61: Yhdistelmäkaavion luominen sen sijaan**
+**Kuva 61: Luo sittenkin yhdistelmäkaavio**
 
 * Hyödynnä kaksinkertaisia akseleita. Se on kätevä tapa vertailla useita mittoja, joilla on erilaisia arvoalueita. Se on myös kätevä tapa havainnollistaa kahden mitan välistä korrelaatiota yhdessä visualisoinnissa.
 
@@ -777,7 +777,7 @@ Olemme nyt lisänneet toisen tietotason eli alueen. Voimme täällä nähdä BKT
 Löydät lisätietoja puukartoista napsauttamalla alla olevia linkkejä.
 
 * [Puukarttojen yleiskatsaus](http://www.perceptualedge.com/articles/b-eye/treemaps.pdf)
-* [Tietojen visualisoinnin luettelo: puukartat](http://www.datavizcatalogue.com/methods/treemap.html#.VYhylI3bL7Y)
+* [Tietojen visualisoinnin luettelo: Puukartat](http://www.datavizcatalogue.com/methods/treemap.html#.VYhylI3bL7Y)
 
 ### <a name="other-charts"></a>Muut kaaviot
 #### <a name="pie-or-donut-charts"></a>Ympyrä- tai rengaskaaviot
@@ -809,7 +809,7 @@ Lisätietoja:
 Nyt on aika testata näitä parhaita käytäntöjä.  Voit kertoa meille myös omista parhaista käytännöistäsi. Etkä ole samaa mieltä suosituksistamme tai löysitkö hyvän syyn ”poiketa säännöistä”?  Haluamme myös kuulla mielellämme niitä koskevia kommentteja.  
 
 ### <a name="book-recommendations"></a>Kirjasuositukset
-Markkinoilla on nykyisin monta hyvää kirjaa, jotka auttavat tiimejä soveltamaan visuaalisia suunnittelutekniikoita. Lue ehdottomasti Stephen Few’n kirja *Information Dashboard Design*. Hän käsittelee teemoja vieläkin tarkemmin kahdessa muussa kirjassa *Show me the Numbers* ja *Now You See It*. Few ja muut ovat saaneet inspiraationsa Edward R. Tuftelta, jonka kirjaa *The Visual Display of Quantitative Information* pidetään alan klassikkona. Tufte on myös kirjoittanut teokset *Visual Explanations*, *Envisioning Information* ja *Beautiful Evidence*. Toinen hyvä vaihtoehto on Andy Kirkin uusin kirja *Data Visualization: A Handbook for Data Driven Design*. Muita suositeltavia kirjailijoita ovat: Lachlan James, William McKnight ja Boris Evelson (Forrester), Darkhorse Analytics.
+Markkinoilla on nykyisin monta hyvää kirjaa, jotka auttavat tiimejä soveltamaan visuaalisia suunnittelutekniikoita. Lue ehdottomasti Stephen Few’n kirja *Information Dashboard Design*. Hän käsittelee teemoja vieläkin tarkemmin kahdessa muussa kirjassa *Show me the Numbers* ja *Now You See It*. Few ja muut ovat saaneet inspiraationsa Edward R. Tuftelta, jonka kirjaa *The Visual Display of Quantitative Information* pidetään alan klassikkona. Tufte on myös kirjoittanut teokset *Visual Explanations*, *Envisioning Information* ja *Beautiful Evidence*. Myös Andy Kirkin uusi teos *Data Visualization: A Handbook for Data Driven Design* on hyvä vaihtoehto. Muita suositeltavia kirjailijoita ovat: Lachlan James, William McKnight ja Boris Evelson (Forrester), Darkhorse Analytics.
 
-Onko sinulla muuta kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
+Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
 

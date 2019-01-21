@@ -6,16 +6,16 @@ ms.author: mblythe
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-gateways
+ms.subservice: powerbi-gateways
 ms.topic: conceptual
 ms.date: 08/08/2018
 LocalizationGroup: Gateways
-ms.openlocfilehash: 795f97403ea80caad52e57e54edc3d54a4c5d952
-ms.sourcegitcommit: 3b1a1f55465e5dca88783046c6b4c073e4e22e4b
+ms.openlocfilehash: 623eb93c27f0ec762b2c9d063b646d757c3b1f0c
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51580536"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54296566"
 ---
 # <a name="troubleshooting-the-on-premises-data-gateway"></a>Paikallisen tietoyhdyskäytävän vianmääritys
 
@@ -66,7 +66,7 @@ Kaikki tiedot ovat saatavilla, mutta Power BI -palvelun kutsu palautti virheen. 
 
 Tämä saattaa johtua myös välityspalvelimen määritysongelmista. Käyttöliittymä ei mahdollista välityspalvelinmääritystä. Lue lisätietoja [välityspalvelinmääritysten muokkaamisesta](service-gateway-proxy.md).
 
-### <a name="error-failed-to-update-gateway-details-please-try-again"></a>Virhe: Yhdyskäytävän tietojen päivittäminen ei onnistu. Yritä uudelleen.
+### <a name="error-failed-to-update-gateway-details-please-try-again"></a>Virhe: Yhdyskäytävän tietojen päivittäminen epäonnistui. Yritä uudelleen.
 
 Power BI -palvelusta vastaanotettiin tietoja yhdyskäytävään. Tiedot välitettiin paikalliseen Windows-palveluun, mutta niiden palautus ei onnistu. Symmetrisen avaimen luominen saattoi myös epäonnistua. Sisempi poikkeus näytetään kohdassa **Näytä tiedot**. Jos haluat lisätietoja, voit kerätä ja tarkistaa alla mainitut lokit.
 
@@ -78,7 +78,7 @@ Power BI -palvelua kutsutaan uudelleen määrityksen lopussa yhdyskäytävän va
 
 Saatat saada komentosarjavirheen, kun kirjaudut Power BI:hin paikallisen tietoyhdyskäytävän määrittämisen yhteydessä. Seuraavan suojauspäivityksen asentamisen pitäisi korjata ongelma. Voit asentaa sen Windows Updatesta.
 
-[MS16-051: Internet Explorerin suojauspäivitys: 10.5.2016 (KB 3154070)](https://support.microsoft.com/kb/3154070)
+[MS16-051: Internet Explorerin suojauspäivitys: 10. toukokuuta 2016 (KB 3154070)](https://support.microsoft.com/kb/3154070)
 
 ### <a name="gateway-configuration-failed-with-a-null-reference-exception"></a>Yhdyskäytävän määritys epäonnistui null-viitepoikkeuksella
 
@@ -117,7 +117,7 @@ Paikallinen yhdyskäytävä on oletusarvoisesti yhteydessä Power BI -palveluun 
 
 ## <a name="data-sources"></a>Tietolähteet
 
-### <a name="error-unable-to-connect-details-invalid-connection-credentials"></a>Virhe: yhteyttä ei voida muodostaa. Tiedot: virheelliset yhteyden tunnistetiedot.
+### <a name="error-unable-to-connect-details-invalid-connection-credentials"></a>Virhe: Yhteyttä ei voi muodostaa. Tiedot: Virheelliset yhteyden tunnistetiedot
 
 **Näytä tiedot** -kohdassa pitäisi näkyä tietolähteestä saatu virheilmoitus. Jos kyseessä on SQL Server, näet jotakin seuraavankaltaista.
 
@@ -125,7 +125,7 @@ Paikallinen yhdyskäytävä on oletusarvoisesti yhteydessä Power BI -palveluun 
 
 Varmista, että käyttäjänimi ja salasana ovat oikein. Varmista myös, että näillä tunnistetiedoilla saadaan yhteys tietolähteeseen. Varmista, että käytetty tili täsmää **todennusmenetelmän** kanssa.
 
-### <a name="error-unable-to-connect-details-cannot-connect-to-the-database"></a>Virhe: yhteyttä ei voida muodostaa. Tiedot: tietokantaa ei saada yhteyttä.
+### <a name="error-unable-to-connect-details-cannot-connect-to-the-database"></a>Virhe: Yhteyttä ei voi muodostaa. Tiedot: Yhteyden muodostaminen tietokantaan ei onnistu
 
 Palvelimeen saadaan yhteys, mutta annettuun tietokantaan ei. Tarkista tietokannan nimi ja se, että käyttäjätunnistetiedoilla on oikeat oikeudet tietokantaan.
 
@@ -133,7 +133,7 @@ Palvelimeen saadaan yhteys, mutta annettuun tietokantaan ei. Tarkista tietokanna
 
     Cannot open database "AdventureWorks" requested by the login. The login failed. Login failed for user 'username'.
 
-### <a name="error-unable-to-connect-details-unknown-error-in-data-gateway"></a>Virhe: yhteyttä ei voida muodostaa. Tiedot: tuntematon virhe tietoyhdyskäytävässä.
+### <a name="error-unable-to-connect-details-unknown-error-in-data-gateway"></a>Virhe: Yhteyttä ei voi muodostaa. Tiedot: Tuntematon virhe tietoyhdyskäytävässä
 
 Tämä virhe voi johtua eri syistä. Muista varmistaa, että voit muodostaa yhteyden tietolähteeseen sillä koneella, joka isännöi yhdyskäytävää. Tämä saattaa johtua siitä, että palvelin ei ole käytettävissä.
 
@@ -141,7 +141,7 @@ Näet **Näytä tiedot** -kohdassa virhekoodin **DM_GWPipeline_UnknownError**.
 
 Saat lisätietoja myös kohdasta Tapahtumalokit > **Sovellusten ja palveluiden lokit** > **Paikallinen tietoyhdyskäytäväpalvelu**.
 
-### <a name="error-we-encountered-an-error-while-trying-to-connect-to-server-details-we-reached-the-data-gateway-but-the-gateway-cant-access-the-on-premises-data-source"></a>Virhe: Kohteeseen <server> yhdistäessä ilmeni virhe. Tiedot: tietoyhdyskäytävään saatiin yhteys, mutta yhdyskäytävä ei voi käyttää paikallista tietolähdettä.
+### <a name="error-we-encountered-an-error-while-trying-to-connect-to-server-details-we-reached-the-data-gateway-but-the-gateway-cant-access-the-on-premises-data-source"></a>Virhe: Kohteeseen <server> yhdistettäessä tapahtui virhe. Tiedot: Kyseiseen tietoyhdyskäytävään saatiin yhteys, mutta yhdyskäytävä ei pysty käyttämään paikallista tietolähdettä.
 
 Määritettyyn tietolähteeseen ei saada yhteyttä. Muista tarkistaa tälle tietolähteelle annetut tiedot.
 
@@ -186,13 +186,13 @@ Varmista, että tilisi on lueteltu tietolähteen **Käyttäjät**-välilehdellä
 
 Varmista, että olet lisännyt yhden tai useamman tietolähteen yhdyskäytävään kohdassa [Tietolähteen lisääminen](service-gateway-manage.md#add-a-data-source) kuvatulla tavalla. Jos yhdyskäytävä ei näy hallintaportaalin kohdassa **Yhdyskäytävien hallinta**, kokeile tyhjentää selaimen välimuisti tai kirjautua ulos palvelusta ja sitten takaisin sisään.
 
-## <a name="datasets"></a>Tietojoukot
+## <a name="datasets"></a>tietojoukot
 
-### <a name="error-there-is-not-enough-space-for-this-row"></a>Virhe: Tälle riville ei ole tarpeeksi tilaa.
+### <a name="error-there-is-not-enough-space-for-this-row"></a>Virhe: Tälle riville ei ole tarpeeksi tilaa
 
 Tämä virhe ilmenee, jos yksittäisen rivin koko on yli 4 Mt. Sinun täytyy määrittää, mikä tietolähteen rivi on kyseessä, ja yrittää suodattaa se pois tai pienentää tämän rivin kokoa.
 
-### <a name="error-the-server-name-provided-doesnt-match-the-server-name-on-the-sql-server-ssl-certificate"></a>Virhe: Annettu palvelimen nimi ei vastaa SQL Serverin SSL-varmenteessa olevaa nimeä.
+### <a name="error-the-server-name-provided-doesnt-match-the-server-name-on-the-sql-server-ssl-certificate"></a>Virhe: Annettu palvelimen nimi ei vastaa SQL Serverin SSL-varmenteessa olevaa nimeä
 
 Näin voi käydä, jos varmenteessa oleva nimi on palvelimen täydellinen toimialuenimi (FQDN), mutta annoit vain palvelimen NetBIOS-nimen. Tämän vuoksi varmenne ei täsmää. Voit korjata tämän ongelman vaihtamalla palvelimen nimen yhdyskäytävän tietolähteessä ja PBIX-tiedostossa palvelimen täydelliseksi toimialuenimeksi (FQDN).
 
@@ -204,7 +204,7 @@ Tämä saattaa johtua muutamasta eri syystä.
 2. Tiliäsi ei luetella tietolähteen **Käyttäjät**-välilehdellä yhdyskäytävämäärityksessä. Sinun täytyy pyytää yhdyskäytävän järjestelmänvalvojaa lisäämään tilisi luetteloon.
 3. Power BI Desktop -tiedostossasi on useita tietolähteitä eikä kaikkia näitä ole määritetty yhdyskäytävälle. Sinun täytyy määrittää kaikki tietolähteet yhdyskäytävälle, jotta yhdyskäytävä näkyy ajoitetussa päivityksessä.
 
-### <a name="error-the-received-uncompressed-data-on-the-gateway-client-has-exceeded-the-limit"></a>Virhe: Yhdyskäytäväasiakkaan vastaanottamat pakatut tiedot ylittävät rajoituksen.
+### <a name="error-the-received-uncompressed-data-on-the-gateway-client-has-exceeded-the-limit"></a>Virhe: Yhdyskäytäväasiakkaan vastaanottamat pakatut tiedot ylittävät rajoituksen
 
 Tarkka rajoitus on 10 Gt pakkaamatonta tietoa per taulukko. Jos törmäät tähän ongelmaan, käytettävissä on hyviä optimointitapoja ongelman välttämiseksi. Voit pienentää kokoa etenkin vähentämällä usein toistuvien pitkien merkkijonoarvojen käyttöä käyttämällä niiden sijaan normalisoitua avainta. Voit myös poistaa sarakkeen (jos se ei ole käytössä).
 
@@ -217,7 +217,7 @@ Tämä johtuu yleensä jostain alla mainituista syistä.
 1. Tietolähdetiedot eivät täsmää taustalla olevan tietojoukon kanssa. Palvelimen ja tietokannan nimen täytyy täsmätä paikalliselle tietoyhdyskäytävälle määritetyn tietolähteen ja Power BI Desktopissa annettujen kanssa. Jos käytät IP-osoitetta Power BI Desktopissa, myös paikallisen tietoyhdyskäytävän tietolähteen täytyy käyttää IP-osoitetta.
 2. Millekään organisaatiosi yhdyskäytävälle ei ole tietolähdettä käytettävissä. Voit määrittää tietolähteen uudessa tai olemassa olevassa paikallisessa tietoyhdyskäytävässä.
 
-### <a name="error-data-source-access-error-please-contact-the-gateway-administrator"></a>Virhe: tietolähteen käyttövirhe. Ota yhteyttä yhdyskäytävän järjestelmänvalvojaan.
+### <a name="error-data-source-access-error-please-contact-the-gateway-administrator"></a>Virhe: Tietolähteen käyttövirhe. Ota yhteyttä yhdyskäytävän järjestelmänvalvojaan.
 
 Jos tämä raportti käyttää reaaliaikaista Analysis Services -yhteyttä, saatat törmätä ongelmaan, jossa EffectiveUserNamelle välitetty arvo on joko epäkelpo tai sillä ei ole oikeuksia Analysis Services -koneessa. Yleensä todennusongelma johtuu siitä, että EffectiveUserNamelle välitetty arvo ei täsmää paikallisen täydellisen käyttäjätunnuksen (UPN) kanssa.
 
@@ -459,7 +459,7 @@ Voit korjata ongelman seuraavasti:
 1. Määritä paikallisen yhdyskäytävän palvelun päänimi.
 2. Määritä rajoitettu delegointi määrittäminen Active Directoryssa (AD).
 
-### <a name="failedtoimpersonateuserexception-failed-to-create-windows-identity-for-user-userid"></a>FailedToImpersonateUserException: Windows-käyttäjätietojen luominen käyttäjän käyttäjätunnukselle epäonnistui.
+### <a name="failedtoimpersonateuserexception-failed-to-create-windows-identity-for-user-userid"></a>FailedToImpersonateUserException: Windows-käyttäjätietojen luominen käyttäjälle userid epäonnistui
 
 FailedToImpersonateUserException ilmenee, jos et voi tekeytyä toiseksi käyttäjäksi. Se voi ilmetä myös silloin, jos tili, joksi yrität tekeytyä, on toisesta toimialueesta kuin yhdyskäytäväpalvelu (tämä on rajoitus).
 

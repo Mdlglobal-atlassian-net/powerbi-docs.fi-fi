@@ -5,17 +5,17 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/03/2019
+ms.date: 01/10/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: d9cd9c812aa2fdd1d336dbd63ea280516a96e4d9
-ms.sourcegitcommit: c09241803664643e1b2ba0c150e525e1262ca466
+ms.openlocfilehash: 83961f3ad469a4a7a76ceb6e1e4dba846a6edb04
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54072217"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54287626"
 ---
 # <a name="self-service-data-prep-in-power-bi-preview"></a>Omatoiminen tietojen valmistelu Power BI:ssä (esikatselu)
 
@@ -92,7 +92,7 @@ Seuraavassa taulukossa kuvataan tietovuon ominaisuudet ja niiden kapasiteetit, k
 |Tietovuon linkitetyt entiteetit| |        +|
 |Standardoitu rakenne / Common Data Modelin sisäinen tuki|  +|  +|
 
-Lisätietoja tietovuokuormitusten käyttöönotosta Premium-kapasiteetissa saat Power BI Premiumia koskevasta [Kuormitusten määrittäminen](service-admin-premium-manage.md#configure-workloads) -osiosta.
+Lisätietoja tietovuokuormitusten käyttöönotosta Premium-kapasiteetissa saat Power BI Premiumia koskevasta [Kuormitusten määrittäminen](service-admin-premium-manage.md#configure-workloads) -osiosta. Tietovuokuormituksia ei ole nykyisin saatavilla Multi-Geo-kapasiteeteissa.
 
 ## <a name="summary-of-self-service-data-prep-for-big-data-in-power-bi"></a>Yhteenveto massadatan omatoimisesta tietojen valmistelusta Power BI:ssä
 Kuten aiemmin tässä artikkelissa mainittiin, on olemassa useita skenaarioita ja esimerkkejä, joissa voit **tietovoiden** avulla hallita yritystietojasi entistä paremmin ja saada merkityksellisiä tietoja nopeammin. Käyttämällä Common Data Modelin määrittämää vakiotietomallia (rakennetta) tietovuot voivat tuoda arvokkaita yritystietoja ja valmistella tiedot mallinnusta ja merkityksellisten BI-tietojen luomista varten erittäin lyhyessä ajassa, mihin aiemmin kului kuukausia tai pidempään. 

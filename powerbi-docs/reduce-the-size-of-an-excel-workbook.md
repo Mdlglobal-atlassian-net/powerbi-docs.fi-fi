@@ -5,26 +5,26 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 11/28/2018
+ms.date: 01/10/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: e0151931d0ad9f610c24dd9aedf8f06d79e167c3
-ms.sourcegitcommit: 2ae660a7b70fce23eb58b159d049eca44a664f2c
+ms.openlocfilehash: 111e38fd37bcdfa2a72986bb08a37d89345bbe69
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "52670098"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54282260"
 ---
 # <a name="reduce-the-size-of-an-excel-workbook-to-view-it-in-power-bi"></a>Excel-työkirjan koon pienentäminen Power BI:ssä tarkastelua varten
 Voit ladata minkä tahansa, alle 1 Gt:n kokoisen Excel-työkirjan Power BI:hin. Excel-työkirjassa voi olla kaksi osaa: tietomalli ja raportin muut osat eli laskentataulukon ydinsisältö. Jos raportti täyttää seuraavat kokorajoitukset, voit tallentaa sen **OneDrive for Businessiin**. muodostaa siihen yhteyden Power BI:stä ja tarkastella sitä Excel Onlinessa:
 
 * Työkirja kokonaisuutena voi olla enintään 1 Gt.
-* Laskentataulukon ydinsisältö voi olla enintään 10 Mt.
+* Laskentataulukon ydinsisältö voi olla enintään 30 Mt.
 
-## <a name="what-makes-core-worksheet-contents-larger-than-10-mb"></a>Mikä tekee laskentataulukon ydinsisällöstä yli 10 Mt:n suuruisen?
-Seuraavassa on joitakin elementtejä, jotka voivat tehdä laskentataulukon ydinsisällöstä yli 10 Mt:n suuruisen:
+## <a name="what-makes-core-worksheet-contents-larger-than-30-mb"></a>Mikä tekee laskentataulukon ydinsisällöstä yli 30 Mt:n suuruisen?
+Seuraavassa on joitakin elementtejä, jotka voivat tehdä laskentataulukon ydinsisällöstä yli 30 Mt:n suuruisen:
 
 * Kuvat.
 * Sävytetyt solut. [Poista solujen sävytysmuoto](https://support.office.com/article/Add-or-change-the-background-color-of-cells-ac10f131-b847-428f-b656-d65375fb815e).
@@ -44,7 +44,7 @@ Jotta voit tehdä tällaisia muutoksia, sinun pitää muokata työkirjaa Excelis
 Lue lisää [Excel-työkirjojen tiedostokokorajoituksista SharePoint Onlinessa](https://support.office.com/article/File-size-limits-for-workbooks-in-SharePoint-Online-9e5bc6f8-018f-415a-b890-5452687b325e).
 
 ## <a name="remove-data-from-worksheets"></a>Laskentataulukoiden tietojen poistaminen
-Jos tuot tiedot Exceliin Power Query- tai Excel-tiedot-välilehdestä, työkirjassa saattaa olla samat tiedot Excel-taulukossa ja tietomallissa. Excel-laskentataulukoiden suuret taulukot voi tehdä laskentataulukon ydinsisällöstä yli 10 Mt:n suuruisen. Poistamalla taulukon Excelistä ja säilyttämällä tiedot tietomallissa voit pienentää huomattavasti raportin laskentataulukon ydinsisällön kokoa. 
+Jos tuot tiedot Exceliin Power Query- tai Excel-tiedot-välilehdestä, työkirjassa saattaa olla samat tiedot Excel-taulukossa ja tietomallissa. Excel-laskentataulukoiden suuret taulukot voivat tehdä laskentataulukon ydinsisällöstä yli 30 Mt:n suuruisen. Poistamalla taulukon Excelistä ja säilyttämällä tiedot tietomallissa voit pienentää huomattavasti raportin laskentataulukon ydinsisällön kokoa. 
 
 Kun tuot tiedot Exceliin, noudata seuraavia vihjeitä:
 

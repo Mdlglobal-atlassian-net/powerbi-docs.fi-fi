@@ -5,16 +5,16 @@ author: parthsha
 manager: kfile
 ms.reviewer: maghan
 ms.service: powerbi
-ms.component: powerbi-report-server
+ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 3/5/2018
 ms.author: pashah
-ms.openlocfilehash: c19bc774ebffa2e781512e793abbefd1bd9fb5e2
-ms.sourcegitcommit: a739a99e1006834a0f56e387c0bd9d945fb8a76b
+ms.openlocfilehash: c479b2600dad31756101c57ba2b1c5fc7fa19b2f
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51679288"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54296658"
 ---
 # <a name="capacity-planning-guidance-for-power-bi-report-server"></a>Ohjeita kapasiteetin suunnitteluun Power BI -raporttipalvelimella
 Power BI -raporttipalvelin on omatoiminen liiketoiminta- ja yritystietojen raportointiratkaisu, jota asiakkaat voivat käyttää paikallisesti yrityksensä palomuurin suojaamana. Siinä yhdistyvät Power BI Desktopin vuorovaikutteinen raportointiominaisuus ja paikallinen SQL Server Reporting Services -palvelinympäristö. Yritysten raskas ja kasvava analytiikan käyttö ja raportointi ja yrityksen käyttäjäkannan skaalaamiseen tarvittavan laitteisto-infrastruktuurin ja ohjelmistolisenssien budjetointi voi olla haastavaa. Tämän artikkelin tarkoituksena on antaa ohjeita kapasiteetin suunnitteluun Power BI -raporttipalvelimen avulla jakamalla eri kuormituksille tehtyjen erilaisten kuormitustestien tuloksia. Organisaatioiden raportit, kyselyt ja käyttötavat vaihtelevat suuresti, mutta tässä artikkelissa esitetyt tulokset yhdessä varsinaisten testien ja niiden suoritustapojen yksityiskohtaisen kuvauksen kanssa toimivat vertailukohtana kaikille, jotka ovat aloittamassa suunnittelua Power BI -raporttipalvelimen käyttöönottamisesta.
@@ -60,7 +60,7 @@ Kuormitustestisuorituksissa käytetyt testit ovat julkisesti käytettävissä Gi
 Kaikki testit oli laadittu suorittamaan päästä päähän -toiminto (kuten raportin hahmontaminen, uuden tietolähteen luominen jne.). Ne tekivät tämän tekemällä yhden tai useamman verkkopyynnön raporttipalvelimelle (ohjelmointirajapintojen kautta). Todellisissa tilanteissa käyttäjän saattaa olla tarpeen tehdä joitain välitoimintoja suorittaakseen jonkin näistä päästä päähän -toiminnoista. Esimerkiksi hahmontaakseen raportin käyttäjän täytyy siirtyä verkkoportaaliin, selata raportin tallennuskansioon ja napsauttaa lopuksi raporttia. Vaikka testeissä ei tehdä kaikkia toimintoja, joita päästä päähän -tehtävän suorittaminen edellyttää, ne kuitenkin tuottavat suurimman osan kuormituksesta, joka Power BI -raporttipalvelimeen kohdistuisi. Tutustumalla GitHub-projektiin saat lisätietoja erilaisista käytetyistä raporttityypeistä ja suoritetuista toiminnoista.
 
 ### <a name="workloads"></a>Kuormitukset
-Testeissä käytettiin kahta kuormitusprofiilia: raskas Power BI -raportti ja raskas sivutettu raportti. Seuraavassa taulukossa kuvataan raporttipalvelimen avulla suoritettujen pyyntöjen jakauma.
+Testauksessa käytetään kahta kuormitusprofiilia: raskas Power BI -raportti ja raskas sivutettu raportti. Seuraavassa taulukossa kuvataan raporttipalvelimen avulla suoritettujen pyyntöjen jakauma.
 
 | Toiminta | Raskas Power BI -raportti, esiintymistiheys | Raskas sivutettu raportti, esiintymistiheys |
 | --- | --- | --- |

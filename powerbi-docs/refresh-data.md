@@ -5,17 +5,17 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 09/27/2018
 ms.author: davidi
 LocalizationGroup: Data refresh
-ms.openlocfilehash: bb29cd9edc5e44293344b7194ec94af482bd0166
-ms.sourcegitcommit: ce8332a71d4d205a1f005b703da4a390d79c98b6
+ms.openlocfilehash: 097f0ae9da29d193fd7a337c9a164ab8c67dc4d9
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "47417368"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54277660"
 ---
 # <a name="data-refresh-in-power-bi"></a>Tietojen päivittäminen Power BI:ssä
 Varmista, että saat käyttöösi aina uusimmat tiedot päätöksenteon tueksi. Olet todennäköisesti jo käyttänyt Nouda tiedot -toimintoa Power BI:ssä yhteyden muodostamiseksi ja tietojen lataamiseksi sekä luonut raportteja ja raporttinäkymän. Nyt haluat varmistaa, että tiedot todella ovat uusimpia ja ajan tasalla.
@@ -221,7 +221,7 @@ Joskus paras perehtyä tietojen päivittämiseen on tarkastella Power BI -esimer
 ### <a name="excel-workbook-with-tables-of-data"></a>Excel-työkirja, jossa on tietoja sisältäviä taulukoita
 Sinulla on Excel-työkirja, jossa on useita tietoja sisältäviä taulukoita, mutta mitään niistä ei ole ladattu Excel-tietomalliin. Lataat työkirjatiedoston paikallisesta asemasta Power BI:hin Nouda tiedot -toiminnolla ja luot raporttinäkymän. Nyt olet kuitenkin tehnyt joitakin muutoksia paikallisessa asemassa sijaitsevan työkirjan taulukoihin ja haluat päivittää Power BI -raporttinäkymän uusilla tiedoilla.
 
-Valitettavasti päivittämistä ei tueta tässä tilanteessa. Jotta voit päivittää tietojoukon raporttinäkymään, sinun on ladattava työkirja uudelleen. Onneksi tähän on erinomainen ratkaisu: siirrä työkirjatiedostosi OneDriveen tai SharePoint Onlineen.
+Valitettavasti päivittämistä ei tueta tässä tilanteessa. Jotta voit päivittää tietojoukon raporttinäkymään, sinun on ladattava työkirja uudelleen. Tähän on kuitenkin olemassa mainio ratkaisu: Siirrä työkirjatiedostosi Onedriveen tai SharePoint Onlineen!
 
 Kun muodostat yhteyden OneDrivessa tai SharePoint Onlinessa olevaan tiedostoon, raporttisi ja raporttinäkymäsi näyttävät tiedot juuri sellaisina kuin ne ovat tiedostossa. Tässä tapauksessa tiedot näytetään Excel-työkirjastasi. Power BI tarkistaa tiedoston päivitykset automaattisesti noin tunnin välein. Jos teet muutoksia OneDriveen tai SharePoint Onlineen tallennettuun työkirjaan, kyseiset muutokset näkyvät raporttinäkymissäsi ja raporteissasi tunnin sisällä. Sinun ei tarvitse määrittää päivitystä. Jos haluat nähdä päivitykset heti Power BI:ssä, voit päivittää tietojoukon manuaalisesti käyttämällä Päivitä nyt -toimintoa.
 

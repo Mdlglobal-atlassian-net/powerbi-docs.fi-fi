@@ -5,17 +5,17 @@ author: mgblythe
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-admin
+ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 11/02/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 8636ec85cb56e87f28a93f9f1f89989ffcc097bb
-ms.sourcegitcommit: d20f74d5300197a0930eeb7db586c6a90403aabc
+ms.openlocfilehash: d2eeab8241de06f9a4d0e654696173d076e01ad2
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "50973139"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54292357"
 ---
 # <a name="power-bi-archived-workspace"></a>Power BI:n arkistoitu työtila
 
@@ -29,7 +29,7 @@ Power BI ei poista sisältöä arkistoidusta työtilasta. Voit jatkaa tietojen h
 
 * **OneDrive for Business**: Et enää saa tietoja tai päivityksiä OneDrive for Businessistä arkistoidun työtilan tietojoukoille.  Jos yrität muodostaa yhteyden tähän lähteeseen, näyttöön tulee varoitus.
 
-* **Koontinäyttöjen jakaminen**: Et voi jakaa koontinäyttöjä muiden käyttäjien kanssa arkistoidusta työtilasta.  Käyttäjät, joilla on jo käyttöoikeus, voivat edelleen tarkastella jaettuja koontinäyttöjä arkistoidussa työtilassaan.
+* **Raporttinäkymien jakaminen**: Et voi jakaa raporttinäkymiä muiden käyttäjien kanssa arkistoidusta työtilasta.  Käyttäjät, joilla on jo käyttöoikeus, voivat edelleen tarkastella jaettuja koontinäyttöjä arkistoidussa työtilassaan.
 
 * **Ryhmien luominen**: Et voi luoda ryhmiä arkistoidussa työtilassa.
 
@@ -39,13 +39,13 @@ Power BI ei poista sisältöä arkistoidusta työtilasta. Voit jatkaa tietojen h
 
 Jotta voit jatkaa Power BI:n käyttämistä, sinun on luotava uutta sisältöä omaan työtilassasi. Sinun on myös siirrettävä arkistoidun työtilan sisältö omaan työtilaan.  Sisällön siirtämistapa riippuu sisällön tyypistä:
 
-* **Excel- tai Power BI Desktop -tietojoukot**: Siirrä nämä tietojoukot vaihtamalla arkistoidusta työtilasta omaan työtilaan ja lataamalla uudelleen Excel- tai Power BI Desktop -tiedosto **Omat tiedot** -painikkeen napsautuksella.  Jos olet määrittänyt ajoitetun päivityksen, sinun on määritettävä nämä asetukset uudelleen uudelle tietojoukolle omassa työtilassa.
+* **Excel- tai Power BI Desktop -tietojoukot**: Siirrä nämä tietojoukot vaihtamalla arkistoidusta työtilasta omaan työtilaan ja lataamalla uudelleen Excel- tai Power BI Desktop -tiedosto napsauttamalla **Omat tiedot** -painiketta.  Jos olet määrittänyt ajoitetun päivityksen, sinun on määritettävä nämä asetukset uudelleen uudelle tietojoukolle omassa työtilassa.
 
 * **Muut tietojoukot**: Vaihda omaan työtilaan ja valitse sitten **Nouda tiedot** -painike muodostaaksesi yhteyden muihin tietojoukkoihin, jotka olet luonut arkistoidussa työtilassa.  Voit joutua antamaan suojaus- tai yhdistämistiedot uudelleen.
 
 * **Raportit**: Excel- tai Power BI Desktop -tiedostoihin sisältyvät raportit luodaan automaattisesti uudelleen, kun lataat vastaavan Excel- tai Power BI Desktop -tiedoston uudelleen. Sisältöpaketin osana asennetut raportit luodaan myös uudelleen, kun muodostat yhteyden sisältöpakettiin. Jos olet luonut omia raportteja Power BI -palvelun kautta, sinun on luotava kyseiset raportit uudelleen omassa työtilassa.
 
-* **Koontinäytöt**: Sisältöpakettien osana asennetut koontinäytöt luodaan automaattisesti uudelleen, kun yhdistät uudelleen sisältöpakettiin omassa työtilassa. Jos olet luonut omia koontinäyttöjä Power BI -palvelun kautta, sinun on luotava kyseiset koontinäytöt uudelleen omassa työtilassa.
+* **Raporttinäkymät**: Sisältöpakettien osana asennetut raporttinäkymät luodaan automaattisesti uudelleen, kun yhdistät uudelleen sisältöpakettiin omassa työtilassa. Jos olet luonut omia koontinäyttöjä Power BI -palvelun kautta, sinun on luotava kyseiset koontinäytöt uudelleen omassa työtilassa.
 
 Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)
 
