@@ -1,7 +1,7 @@
 ---
 title: Power BI -palvelun uudet toiminnot ja ominaisuudet
 description: Power BI -palvelun uudet toiminnot ja ominaisuudet
-author: mihart
+author: NikhilGaekwad-MSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2018
 ms.author: nikhilga
 LocalizationGroup: Get started
-ms.openlocfilehash: c35f418362c5036331030bf100d9bfca6b943a4a
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 32a052ca009c613b262d5277a0fd85b186c8e148
+ms.sourcegitcommit: 658b0de4f5a544d0906665b40925552804a61880
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54295798"
+ms.lasthandoff: 01/19/2019
+ms.locfileid: "54406749"
 ---
 ---
 # <a name="whats-new-in-the-power-bi-service"></a>Power BI -palvelun uudet toiminnot ja ominaisuudet
@@ -67,7 +67,7 @@ Saat lisätietoja uusista toiminnoista ja ominaisuuksista myös YouTube-kanavist
 ### <a name="february-2018"></a>Helmikuu 2018
 * Asenna [Power BI -sovellukset](service-create-distribute-apps.md) automaattisesti käyttäjille.
 * P4- ja P5-kapasiteetit Power BI Premiumissa
-* [Organisaation mukautettujen visualisointien](power-bi-custom-visuals-organization.md) esikatselu.
+* [Organisaation mukautettujen visualisointien](power-bi-custom-visuals-organization.md) esiversio.
 
 ### <a name="january-2018"></a>Tammikuu 2018
 *   Jaa Power BI -raportteja ja lisää niitä suosikiksi.
@@ -132,7 +132,7 @@ Saat lisätietoja uusista toiminnoista ja ominaisuuksista myös YouTube-kanavist
 * Azure AD -sisältöpaketin avulla saat lisätietoja siitä, miten työntekijät ja kumppanit käyttävät Azure AD:tä.
 
 ### <a name="february-2017"></a>Helmikuu 2017
-* [Siirtymisen esikatselun parannuksia](https://powerbi.microsoft.com/blog/power-bi-service-february-feature-summary/) – vaihda entistä helpommin työtilojen välillä ja tee toimia sisällölle nykyisessä työtilassa. 
+* [Siirtymisen esiversion parannuksia](https://powerbi.microsoft.com/blog/power-bi-service-february-feature-summary/) – vaihda entistä helpommin työtilojen välillä ja tee toimia sisällölle nykyisessä työtilassa. 
 * [Upota Power BI -koontinäytöt](https://powerbi.microsoft.com/blog/embed-dashboard/) mukautettuun sovellukseen.
 * Esikatselu: [Integroi Power BI -raportit SharePoint Onlineen](https://powerbi.microsoft.com/blog/integrate-power-bi-reports-in-sharepoint-online/). 
 
@@ -260,9 +260,9 @@ Saat kaikki tiedot [Power BI -tiimin blogista](https://powerbi.microsoft.com/blo
 
 ***Enterprise-ominaisuudet***
 
-* Järjestelmänvalvojan käyttöraportointi: käyttöraportti lisätty Power BI -hallintakeskukseen.
-* Rivitason suojaus: tämä on esikatselutoiminto, jonka avulla voit määrittää käyttöoikeudet Power BI -tietojoukoille.
-* Poista tietojen vienti käytöstä: vuokraajasi käyttäjät eivät enää voi viedä ruutua ja visualisoida tietoja .csv-tiedostoon.
+* Järjestelmänvalvojan käyttöraportointi: Käyttöraportti lisätty Power BI -hallintakeskukseen.
+* Rivitason suojaus: Tämä on esiversio-ominaisuus, jonka avulla voit määrittää käyttöoikeudet Power BI -tietojoukoille.
+* Poista tietojen vienti käytöstä: Vuokraajasi käyttäjät eivät enää voi viedä ruutua ja visualisoida tietoja .csv-tiedostoon.
 
 ***Q&A***
 
@@ -270,16 +270,16 @@ Saat kaikki tiedot [Power BI -tiimin blogista](https://powerbi.microsoft.com/blo
 
 ***Mobiili***
 
-* Apple Watchin KPI:t: valvo KPI:täsi ja kortin ruutuja avaamatta Power BI -sovellusta.
+* Apple Watchin KPI:t: Valvo KPI:täsi ja kortin ruutuja avaamatta Power BI -sovellusta.
 
 ***Excel***
 
-* Analysoi Excelissä: yhdistä Power BI -tietomalli Exceliin ja tee analyysi Excelin sisällä Power BI:n sijaan.
+* Analysoi Excelissä: Yhdistä Power BI -tietomalli Exceliin ja tee analyysi Excelin sisällä Power BI:n sijaan.
 
 ***Muu***
 
-* Power BI Australiassa: nyt kuka tahansa Australiassa voi yksityisesti tai organisaation kautta siirtyä osoitteeseen powerbi.microsoft.com ja rekisteröityä Power BI:hin.
-* Kieliasetukset: ohita automaattinen kielentunnistus ja määritä Power BI:n kieli.
+* Power BI Australiassa: Nyt kuka tahansa Australiassa voi yksityisesti tai organisaation kautta siirtyä osoitteeseen powerbi.microsoft.com ja rekisteröityä Power BI:hin.
+* Kieliasetukset: Ohita automaattinen kielentunnistus ja määritä Power BI:n kieli.
 
 Saat kaikki tiedot [Power BI -tiimin blogista](https://powerbi.microsoft.com/blog/power-bi-service-march-update-part-two/)
 
@@ -289,8 +289,8 @@ Tässä kuussa on tehty joitakin päivityksiä koontinäyttöihin, nopeisiin mer
 
 ***Koontinäytöt***
 
-* Koko näytön tila: tulosta poistumatta ensin koko näytön tilasta
-* Koko näytön tila: laajenna ruutuja niin, että ne täyttävät koko pohjan, ja poista ylimääräiset välilyönnit valitsemalla **Sovita leveyteen**
+* Koko näytön tila: Tulosta poistumatta ensin koko näytön tilasta
+* Koko näytön tila: Laajenna ruutuja niin, että ne täyttävät koko pohjan, ja poista ylimääräiset välilyönnit valitsemalla **Sovita leveyteen**
 * Tasaa ruudut automaattisesti pohjan vasempaan yläkulmaan ruutuvirran avulla.
 
 ***Nopeat merkitykselliset tiedot***
@@ -407,7 +407,7 @@ Paljon päivityksiä tällä viikolla, useimmat koskevat Power BI Desktopia mutt
   3. pienet työkaluvihjeet alue- ja viivakaavioille, kun hiiren osoitin siirretään niiden päälle
   4. mahdollisuus luoda viiteviiva tai -alue karteesisessa visualisoinnissa
   5. parannetut ympyrä- ja pistekaaviokaavion otsikot
-* R-visualisointien integrointi Desktopissa (esikatselutoiminto)
+* R-visualisointien integrointi Desktopissa (esiversio-ominaisuus)
 * Desktop ehdottaa taulukoiden välisiä suhteita, kun yritetään luoda kaksi taulukkoa, jotka eivät liity toisiinsa.
 * Desktopille optimoitu Aloitus-valintanauhan asettelu.
 * Desktopin tietojen mallinnuksen päivitykset Suhteet-näkymässä:
@@ -418,9 +418,9 @@ Paljon päivityksiä tällä viikolla, useimmat koskevat Power BI Desktopia mutt
   4. mahdollisuus lähentää valitsemalla Ctrl – hiiren valintakehys
 * Desktopin tietoyhteyden parannukset
   
-  1. moniulotteinen SSAS-tuki – hierarkioiden tuki (esikatselutoiminto)
+  1. moniulotteinen SSAS-tuki – hierarkioiden tuki (esiversio-ominaisuus)
   2. Stripe-liitin
-  3. SmartSheet-liitin
+  3. SmartSheet-yhdistin
   4. ”Anna tiedot”: luo taulukko liittämällä tai kirjoittamalla tiedot.
   5. Directqueryn parannukset:  suorituskykyä parantava kaikkien T-SQL- ja SAP HANA -tietotyyppien tuki.
   6. ODBC-liitin: käyttäjän/järjestelmän DSN:n valinnan tuki.
@@ -446,7 +446,7 @@ Saat kaikki tiedot mukaan lukien videon, jossa esitellään monet näistä päiv
 * Löydä automaattisesti trendejä ja tunnista kuvioita tietojoukossa nopeiden merkityksellisten tietojen avulla: [video](http://blogs.msdn.com/b/powerbi/archive/2015/12/02/power-bi-updates-from-browser-to-desktop-and-new-automated-insights-mf.aspx) tai [artikkeli](consumer/end-user-insights.md)
 * [Visualisoi VMob-tietoja Power BI:ssä](http://blogs.msdn.com/b/powerbi/archive/2015/11/25/visualize-your-vmob-data-in-power-bi.aspx)
 * [Power BI -integrointi Cortanan kanssa](http://blogs.msdn.com/b/powerbi/archive/2015/12/01/announcing-power-bi-integration-with-cortana-and-new-ways-to-quickly-find-insights-in-your-data.aspx)
-* [Power BI -yritysyhdyskäytävän esikatselu](http://blogs.msdn.com/b/powerbi/archive/2015/12/02/announcing-preview-of-power-bi-gateway-for-enterprise-deployments.aspx)
+* [Power BI -yritysyhdyskäytävän esiversio](http://blogs.msdn.com/b/powerbi/archive/2015/12/02/announcing-preview-of-power-bi-gateway-for-enterprise-deployments.aspx)
 * Uuden sisältöpaketin esittely: [hakuanalyysi Bingistä Power BI -koontinäytöissä](http://blogs.msdn.com/b/powerbi/archive/2015/12/02/search-analytics-from-bing-on-your-power-bi-dashboards.aspx)
 * Uusia kehittäjille tarkoitettuja parannuksia: [kaksi uutta ohjelmointirajapintaa ja helpompi sovelluksen rekisteröinti](http://blogs.msdn.com/b/powerbi/archive/2015/12/02/power-bi-for-developers-reports-api-and-a-simple-app-registration-experience.aspx)
 
@@ -593,11 +593,11 @@ Saat lisätietoja [blogista](http://blogs.msdn.com/b/powerbi/archive/2015/10/06/
 
 * Power BI:sta julkaistaan yleisesti saatavilla oleva versio. Rekisteröidy tänään [Power BI Prohon](service-self-service-signup-for-power-bi.md). Osana yleisesti saatavilla olevan version julkaisua tarjotaan eräitä hienoja uusia ominaisuuksia:
 * Uusi visualisoinnin ja raportin luomisen kokemus: uusi raporttipohja sisältää suuremman visualisointivalikoiman, paremman otsikoiden, selitteiden, akseleiden, värien ja taustojen hallinnan ja paljon muuta.
-* [Power BI -ryhmät](service-create-distribute-apps.md): ryhmät ovat tehokas Office 365 -ryhmiin perustuva yhteistyötoiminto.
+* [Power BI -ryhmät](service-create-distribute-apps.md): Ryhmät ovat tehokas Office 365 -ryhmiin perustuva yhteistyötoiminto.
 * [Organisaation sisältöpaketit](service-organizational-content-pack-introduction.md): Power BI tekee koontinäyttöjen ja raporttien luomisesta erittäin yksinkertaista, ja nyt käyttäjät voivat julkaista tätä sisältöä organisaation sisältövalikoimassa.
 * [Tuo kokonaisia Excel-tiedostoja](service-excel-workbook-files.md): voit tuoda minkä tahansa OneDrive for Businessiin tallennetun Excel-työkirjan Power BI:hin ja näyttää koko työkirjan samalla tavalla kuin Excel Onlinessa.
 * [Tuo CSV-tiedostoja](service-get-data-from-files.md): samalla tavalla kuin Excel- tai Power BI Desktop -tiedosto, myös CSV-tiedosto voi olla Power BI -koontinäyttöjesi ja -raporttiesi tietojoukko.
-* Korvaa Excel-, Power BI Desktop- ja CSV-tiedostot: voit ladata päivitetyn version tiedostosta Power BI:hin, ja se korvaa aiemmin luodun tietojoukon. Kaikki raportit ja koontinäytöt, jotka on yhdistetty tähän tietojoukkoon, käyttävät nyt automaattisesti uutta versiota.
+* Korvaa Excel-, Power BI Desktop- ja CSV-tiedostot: Voit ladata päivitetyn version tiedostosta Power BI:hin, ja se korvaa aiemmin luodun tietojoukon. Kaikki raportit ja koontinäytöt, jotka on yhdistetty tähän tietojoukkoon, käyttävät nyt automaattisesti uutta versiota.
 * Tämän viikon Power BI -päivitys tarjoaa nyt työnimikkeen seurannan [Visual Studio Online -sisältöpaketin](http://blogs.msdn.com/b/powerbi/archive/2015/07/22/monitoring-your-visual-studio-online-work-items-with-power-bi.aspx) avulla. Päivitys sisältää uuden koontinäytön, raportin ja päivitetyn tietojoukon, joka tarjoaa merkityksellisiä tietoja työnimikkeistäsi ja lisäksi tärkeitä tietoja Git-säilöstä, noutopyynnöistä ja versionhallintasisällöstä, jotka sisältyivät ensimmäiseen versioon. Saat lisätietoja käytön aloittamisesta [Power BI -ohjesivun Visual Studio Online -sisältöpaketista](service-connect-to-quickbooks-online.md).
 
 **14. heinäkuuta 2015**
@@ -621,7 +621,7 @@ Saat lisätietoja [blogista](http://blogs.msdn.com/b/powerbi/archive/2015/10/06/
 
 * Power BI Desktop -tiedostoja voidaan [päivittää](http://blogs.msdn.com/b/powerbi/archive/2015/06/22/announcing-refresh-support-for-power-bi-designer-files-in-the-power-bi-service.aspx) (ajoitettu päivitys ja päivitä nyt), kun niitä ladataan Power BI -palveluun.
 * Nyt julkaistaan Power BI:n suurin visuaalinen muutos joulukuun jälkeen: selkeämpi ja yksinkertaisempi [Nouda tiedot](http://blogs.msdn.com/b/powerbi/archive/2015/06/23/the-new-get-data-experience.aspx) -käyttökokemus.  Kun valitset Nouda tiedot, näet nyt yhden näytön, jossa on valittavana joukko luokkia. Näin löydät sinulle tärkeimmän sisällön entistä helpommin.
-* [Azure SQL Data Warehouse](http://blogs.msdn.com/b/powerbi/archive/2015/06/24/exploring-azure-sql-data-warehouse-with-power-bi.aspx) tarjoaa joustavan skaalauksen ja suuren rinnakkaiskäsittelyn. Tänään julkaistun rajoitetun julkisen esikatselun myötä Power BI mahdollistaa nyt yhteyden muodostamisen suoraan Azure SQL Data Warehouseen tallennettuihin tietoihin, mikä tarjoaa yksinkertaisen ja dynaamisen tarkastelun. Luotuasi yhteyden tietovarastoon kyselyt luodaan reaaliaikaisesti ja lähetetään takaisin lähteeseen, kun tarkastelet tietoja. Tämä poistaa tarpeen luoda ja ladata mukautettu tietomalli ja mahdollistaa tietojen vuorovaikutteisen tarkastelemisen.
+* [Azure SQL Data Warehouse](http://blogs.msdn.com/b/powerbi/archive/2015/06/24/exploring-azure-sql-data-warehouse-with-power-bi.aspx) tarjoaa joustavan skaalauksen ja suuren rinnakkaiskäsittelyn. Tänään julkaistun rajoitetun julkisen esiversion myötä Power BI mahdollistaa nyt yhteyden muodostamisen suoraan Azure SQL Data Warehouseen tallennettuihin tietoihin, mikä tarjoaa yksinkertaisen ja dynaamisen tarkastelun. Luotuasi yhteyden tietovarastoon kyselyt luodaan reaaliaikaisesti ja lähetetään takaisin lähteeseen, kun tarkastelet tietoja. Tämä poistaa tarpeen luoda ja ladata mukautettu tietomalli ja mahdollistaa tietojen vuorovaikutteisen tarkastelemisen.
 
 **16. kesäkuuta 2015**
 
