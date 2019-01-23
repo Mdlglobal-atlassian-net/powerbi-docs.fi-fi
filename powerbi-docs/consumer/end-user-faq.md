@@ -1,6 +1,6 @@
 ---
-title: Usein kysyttyjä kysymyksiä Power BI:n kuluttajille
-description: Power BI:n usein kysytyt kysymykset
+title: Usein kysyttyjä loppukäyttäjää koskevia kysymyksiä Power BI:stä
+description: Selaa usein kysyttyjä kysymyksiä ja vastauksia Power BI -palvelusta ja Power BI -mobiilisovelluksista.
 author: mihart
 manager: kvivek
 ms.custom: seodec18
@@ -8,15 +8,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/21/2018
+ms.date: 01/16/2019
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: b292e6df7cb01e26b610ffb99ec5b794df933bfa
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 8eb428857e98a696ffb368c729525acd80e268f2
+ms.sourcegitcommit: ccbe76a0a43c5c5e87354a33e617bf3cb291608e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54287571"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54394764"
 ---
 # <a name="frequently-asked-questions-about-power-bi"></a>Usein kysyttyjä kysymyksiä Power BI:stä
 * Jos sinulla on muita kysymyksiä, [voit esittää niitä Power BI -yhteisössä](http://community.powerbi.com/).
@@ -41,7 +41,7 @@ Jos sinulla on Power BI Premiumiin liittyviä kysymyksiä, tutustu [Power BI Pre
 Microsoft Azure Active Directoryn integroidut sovellukset -raportti Power BI:lle sisältää tiedon organisaatiosi aktiivisista käyttäjistä. Azure AD -raportista ei käy ilmi, minkätyyppinen käyttöoikeus kullakin käyttäjällä on. Se ilmoittaa vain, ketkä käyttäjät ovat kirjautuneet Power BI:hin ja milloin he kirjautuivat sisään. Katso lisätiedot [Kirjautuneiden Power BI -käyttäjien etsiminen](../service-admin-access-usage.md) -ohjeartikkelista.
 
 ## <a name="what-is-power-bi-desktop"></a>Mikä on Power BI Desktop?
-Power BI Desktop on maksuton työpöytäsovellus, jonka voit asentaa saman tien omalle tietokoneellesi. Power BI Desktop toimii yhdenmukaisesti Power BI -palvelun kanssa tarjoamalla kehittyneitä tietojen tarkastelu-, muovaamis-, mallinnus- ja raportointimahdollisuuksia sekä erittäin vuorovaikutteisia visualisointeja. Voit tallentaa työsi tiedostoon sekä julkaista tietoja ja raportteja suoraan Power BI -sivustoon muiden kanssa jaettavaksi. Lue lisää siitä, [mikä on Power BI Desktop](../desktop-what-is-desktop.md).
+Power BI Desktop on maksuton sovellus, jonka käyttäjät voivat asentaa omille tietokoneilleen. Power BI Desktop kuuluu yhteen Power BI -palvelun kanssa.  Tutkijat, järjestelmänvalvojat ja kehittäjät luovat raportteja Power BI Desktopissa ja antavat ne sinun kaltaistesi Power BI -palvelun käyttäjien saataville. Lue lisää siitä, [mikä on Power BI Desktop](../desktop-what-is-desktop.md).
 
 ## <a name="what-do-i-need-to-use-power-bi-service"></a>Mitä Power BI -palvelun käyttämiseen tarvitaan?
 Selain ja työsähköpostiosoite riittävät. Voit rekisteröityä .gov- tai .mil-sähköpostiosoitteella. Katso lisätietoja kohdasta [Rekisteröi Yhdysvaltain valtionhallinnon organisaatio Power BI -palveluun](../service-govus-signup.md). 
@@ -49,14 +49,8 @@ Selain ja työsähköpostiosoite riittävät. Voit rekisteröityä .gov- tai .mi
 ## <a name="why-do-i-have-to-sign-up-with-my-work-email"></a>Miksi rekisteröitymiseen on käytettävä työsähköpostia?
 Power BI ei tue sähköpostin kuluttajapalvelujen tai tietoliikenteen palveluntarjoajien sähköpostiosoitteita. Lue lisää [Power BI:n omatoimisen rekisteröitymisen prosessista](../service-self-service-signup-for-power-bi.md).
 
-## <a name="is-power-bi-available-on-premises"></a>Onko Power BI käytettävissä paikallisesti?
-Power BI -palvelu [https://powerbi.com](https://powerbi.com) ei ole käytettävissä yksityisenä, sisäisenä pilvipalveluna. Tietojen paikalliseen tarkastelemiseen ja käsittelemiseen on kuitenkin kolme muuta vaihtoehtoa. 
-
-### <a name="on-premises-data-gateway"></a>Paikallinen tietoyhdyskäytävä
-Käyttäessäsi Power BI:tä tai Power BI Desktopia voit muodostaa turvallisen yhteyden omiin paikallisiin tietolähteisiisi. [Paikallisen tietoyhdyskäytävän](../service-gateway-onprem.md) avulla voit muodostaa reaaliaikaisen yhteyden paikalliseen SQL Server Analysis Services -palvelimeen ja muihin tietolähteisiin. Voit myös määrittää ajoitetun päivityksen käyttämällä keskitettyä yhdyskäytävää. Jos yhdyskäytävää ei ole käytettävissä, voit päivittää paikallisista tietolähteistä peräisin olevat tiedot [Power BI Gateway – Personalin](../service-gateway-personal-mode.md) avulla.
-
-### <a name="power-bi-mobile-apps"></a>Power BI -mobiilisovellukset
-Voit myös [näyttää paikallisia Power BI -raportteja, Reporting Services -mobiiliraportteja ja suorituskykyilmaisimia Power BI -mobiilisovelluksissa](mobile/mobile-app-ssrs-kpis-mobile-on-premises-reports.md).
+## <a name="is-government-academic-and-nonprofit-pricing-available-for-power-bi"></a>Käytetäänkö Power BI:n hinnoittelussa erillisiä julkishallinto-, oppilaitos- tai yhdistyshintoja?
+Kyllä, voittoa tavoittelemattomille yhdistyksille on erillinen hinnoittelu suoraan Microsoftilta ostettaessa. [Microsoft Nonprofits](https://www.microsoft.com/en-us/nonprofits/power-bi) -sivustolla on lisätietoja ja rekisteröitymismahdollisuus. Julkishallinto- ja oppilaitoshinnoittelu on saatavilla MOSP/Direct-, EA- ja Open-käyttöoikeusohjelmien kautta. Julkishallintohinnoittelu on käytettävissä myös syndikoinnissa. 
 
 ## <a name="does-power-bi-support-mobile-devices"></a>Tukeeko Power BI mobiililaitteita?
 Kyllä. Power BI:stä on saatavana alkuperäiset sovellukset Android-puhelimille ja -tableteille, iOS-laitteille ja Windows 10 -laitteille. Lataa haluamasi [Power BI -mobiilisovellus](https://powerbi.microsoft.com/mobile) soveltuvasta kaupasta:  
@@ -96,6 +90,11 @@ Tässä on täydellinen luettelo [Power BI:n tukemista alueista ja kielistä](..
 Voit ostaa Power BI Pro -käyttöoikeuksia suoraan tai keskustella edustajan kanssa osoitteessa [www.powerbi.com](http://www.powerbi.com).
 
 Voit myös etsiä [Microsoft-kumppanin](https://partner.microsoft.com/), joka auttaa sinua Power BI:n käyttöönotossa.
+
+## <a name="what-happens-if-my-power-bi-pro-license-expires"></a>Mitä tapahtuu, jos Power BI Pro -käyttöoikeus päättyy?
+Power BI Pro -käyttöoikeuden päätyttyä alkaa lisäaika. Jos kyseessä on volyymikäyttöoikeushankinta, lisäaika on 90 päivää. Jos kyseessä on suoraan hankittu käyttöoikeus, lisäaika on 30 päivää.
+
+Power BI Pro -tilauksen elinkaari on sama kuin Office 365:llä. Lisätietoja on artikkelissa [Mitä tiedoilleni ja käyttöoikeudelleni tapahtuu, kun Office 365 for Business -tilaus päättyy?](https://support.office.com/article/What-happens-to-my-data-and-access-when-my-Office-365-for-business-subscription-ends-4436582f-211a-45ec-b72e-33647f97d8a3)
 
 ## <a name="does-power-bi-meet-national-regional-and-industry-specific-compliance-requirements"></a>Onko Power BI kansallisten, alueellisten ja alakohtaisten vaatimusten mukainen?
 Lisätietoja Power BI:n vaatimustenmukaisuudesta on [Microsoft Trust Centerissä](http://go.microsoft.com/fwlink/?LinkId=785324).

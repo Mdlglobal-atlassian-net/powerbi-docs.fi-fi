@@ -1,22 +1,22 @@
 ---
 title: Hyperlinkkien lisääminen taulukkoon
 description: Power BI Desktopin avulla voit luoda hyperlinkkejä. Voit sitten lisätä nämä hyperlinkit raportin taulukoihin ja matriiseihin joko Desktopissa tai Power BI -palvelussa.
-author: mihart
-manager: kvivek
+author: maggiesMSFT
+manager: kfile
 ms.reviewer: ''
 ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 12/06/2018
-ms.author: mihart
+ms.date: 01/16/2019
+ms.author: maggies
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 637253e3cffebcba7df0a3bc3ce44e943b909364
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 972abb3781cbaaff8a9617b70988c21f7389d4f9
+ms.sourcegitcommit: 658b0de4f5a544d0906665b40925552804a61880
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54279891"
+ms.lasthandoff: 01/19/2019
+ms.locfileid: "54406657"
 ---
 # <a name="add-hyperlinks-to-a-table"></a>Hyperlinkkien lisääminen taulukkoon
 Tässä aiheessa kurssilla opit käyttämään Power BI Desktopia hyperlinkkien luomiseen. Voit sitten lisätä nämä hyperlinkit raportin taulukoihin ja matriiseihin joko Desktopissa tai Power BI -palvelussa. 
@@ -25,7 +25,6 @@ Tässä aiheessa kurssilla opit käyttämään Power BI Desktopia hyperlinkkien 
 
 > [!NOTE]
 > Hyperlinkit voidaan luoda lennosta [koontinäyttöjen ruutuihin](service-dashboard-edit-tile.md) ja [niiden tekstiruutuihin](service-dashboard-add-widget.md) Power BI -palvelussa. [Raporttien tekstiruutuihin](service-add-hyperlink-to-text-box.md) voi luoda hyperlinkkejä lennosta Power BI -palvelussa ja Power BI Desktopissa.
-> 
 > 
 
 ## <a name="to-create-a-hyperlink-in-a-table-or-matrix-using-power-bi-desktop"></a>Hyperlinkin luominen taulukkoon tai matriisiin Power BI Desktopilla

@@ -1,5 +1,5 @@
 ---
-title: Koontinäyttöjä ja raportteja hyödyntävien sovellusten asentaminen ja käyttäminen Power BI:ssä
+title: Mikä Power BI -sovellus on?
 description: Power BI:ssä sovellukset kokoavat toisiinsa liittyvät koontinäytöt ja raportit yhteen paikkaan.
 author: mihart
 manager: kvivek
@@ -8,61 +8,42 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/06/2018
+ms.date: 01/16/2019
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: 859deefd829a696d2a99e896439481357c698e4a
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: e741076bf345f093e249b398995a72a683ae84d6
+ms.sourcegitcommit: ccbe76a0a43c5c5e87354a33e617bf3cb291608e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54275153"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54394790"
 ---
-# <a name="install-and-use-apps-with-dashboards-and-reports-in-power-bi"></a>Koontinäyttöjä ja raportteja hyödyntävien sovellusten asentaminen ja käyttäminen Power BI:ssä
-Power BI:ssä *sovellukset* kokoavat toisiinsa liittyvät koontinäytöt ja raportit yhteen paikkaan. Organisaatioon kuuluvat henkilöt luovat ja jakavat yrityksen avaintietoja sisältäviä sovelluksia. Myös käytössäsi mahdollisesti jo olevat [ulkoiset palvelut](../service-connect-to-services.md), kuten Google Analytics ja Microsoft Dynamics CRM, tarjoavat Power BI -sovelluksia. 
+# <a name="apps-in-power-bi"></a>Sovellukset Power BI:ssä
+## <a name="what-is-a-power-bi-app"></a>Mikä Power BI -sovellus on?
+*Sovellus* on Power BI:n sisältötyyppi, joka kokoaa toisiinsa liittyvät koontinäytöt ja raportit yhteen paikkaan. Sovelluksessa voi olla yksi tai useampia koontinäyttöjä ja yksi tai useampia raportteja, jotka on koottu yhteen. Power BI:n *suunnittelijat* luovat sovellukset ja jakavat ne sinun kaltaisillesi *kuluttajille*. 
 
-![Sovellukset Power BI:ssä](./media/end-user-apps/power-bi-apps-navbar.png)
+Sovellukset on järjestetty **Sovellukset**-sisältöluetteloon.
 
-Sovellukset on helppo löytää ja asentaa Power BI -palvelussa ja mobiililaitteessa. Kun olet asentanut sovelluksen, sinun ei tarvitse muistaa monien eri raporttinäkymien nimiä, sillä ne ovat kaikki yhdessä sovelluksessa, selaimessa tai mobiililaitteessa.
+![Sovellukset Power BI:ssä](./media/end-user-apps/power-bi-apps-nav.png)
+
+## <a name="app-designers-and-app-consumers"></a>Sovelluksen ***suunnittelijat*** ja sovelluksen ***kuluttajat***
+Roolistasi riippuen saatat olla henkilö, joka luo sovelluksia (suunnittelija) omaan käyttöönsä tai jakaa niitä työtovereidensa kanssa. Vaihtoehtoisesti voit olla henkilö, joka vastaanottaa ja lataa muiden luomia sovelluksia (kuluttaja). Tämä artikkeli on tarkoitettu sovellusten *kuluttajille*.
+
+## <a name="advantages-of-apps"></a>Sovellusten edut
+Sovellukset on helppo löytää ja asentaa Power BI -palvelussa ([https://powerbi.com](https://powerbi.com)) ja mobiililaitteessa. Kun olet asentanut sovelluksen, sinun ei tarvitse muistaa monien eri raporttinäkymien nimiä, sillä ne ovat kaikki yhdessä sovelluksessa, selaimessa tai mobiililaitteessa.
+
 
 Kun käytät sovelluksia,näet muutokset automaattisesti aina, kun sovelluksen tekijä julkaisee päivityksiä. Tekijä määrittää myös, kuinka usein tiedot ajoitetaan päivittymään, joten sinun ei tarvitse huolehtia niiden pitämisestä ajan tasalla. 
 
+<!-- add conceptual art -->
 ## <a name="get-a-new-app"></a>Uuden sovelluksen hankkiminen
-Voit hankkia sovelluksia muutamilla eri tavoilla. Sovelluksen tekijä voi asentaa sovelluksen automaattisesti Power BI -tiliisi tai lähettää sinulle suoran linkin sovellukseen. Voit myös etsiä sovellusta AppSourcessa, jossa näet kaikki käytettävissäsi olevat sovellukset. Jos käytät Power BI:tä mobiililaitteella, et voi asentaa sovellusta AppSourcen kautta vaan tarvitset suoran linkin. Jos sovelluksen tekijä asentaa sovelluksen automaattisesti, näet sen sovellusluettelossa.
-
-### <a name="install-an-app-from-a-direct-link"></a>Sovelluksen asentaminen suoran linkin kautta
-Helpoin tapa asentaa uusi sovellus omatoimisesti on saada sovelluksen tekijältä suora linkki. Power BI luo asennuslinkin, jonka tekijä voi lähettää sinulle.
-
-**Tietokone** 
-
-Avaa Power BI -palvelu ([https://powerbi.com](https://powerbi.com)) selaimessa napsauttamalla sähköpostissa olevaa linkkiä. Vahvista, että haluat asentaa sovelluksen, jolloin se avautuu sovelluksen aloitussivulle.
-
-![Sovelluksen aloitussivu Power BI -palvelussa](./media/end-user-apps/power-bi-get-app.png)
-
-**iOS-tai Android-mobiililaite** 
-
-Kun napsautat sähköpostissa olevaa linkkiä mobiililaitteessa, sovellus asentuu automaattisesti ja avaa sovelluksen sisältöluettelon mobiilisovelluksessa. 
-
-![Sovelluksen sisältöluettelo mobiililaitteessa](./media/end-user-apps/power-bi-app-index-it-spend-360.png)
-
-### <a name="get-the-app-from-microsoft-appsource"></a>Sovelluksen hakeminen Microsoft AppSourcesta
-Voit myös etsiä ja asentaa käytettävissäsi olevia sovelluksia Microsoft AppSourcesta. 
-
-1. Valitse **Sovellukset** ![Sovellukset vasemmanpuoleisessa siirtymisruudussa](./media/end-user-apps/power-bi-apps-bar.png) > **Hanki sovelluksia**. 
-   
-     ![Hanki sovelluksia -kuvake](./media/end-user-apps/power-bi-service-apps-get-apps-oppty.png)
-2. AppSourcen **Oma organisaatio** -osiossa voit tehdä hakuja rajataksesi tuloksia ja löytääksesi haluamasi sovelluksen.
-   
-     ![Appsourcen Oma organisaatio -osio](./media/end-user-apps/power-bi-appsource-my-org.png)
-3. Lisää sovellus Sovellukset-sivullesi valitsemalla **Hanki se nyt**. 
-
-## <a name="interact-with-the-dashboards-and-reports-in-the-app"></a>Koontinäyttöjen ja raporttien käsitteleminen sovelluksessa
-Nyt voit tutkia koontinäyttöjen ja raporttien tietoja sovelluksessa. Voit käyttää kaikkia Power BI:n vakiotoimia, kuten suodatusta, korostusta, lajittelua ja porautumista. Lue [Power BI-raporteissa käytettävissä olevista toimista](end-user-reading-view.md). 
-
-![Tietojen vieminen Power BI -visualisoinnista](./media/end-user-apps/power-bi-service-export-data-visual.png)
+Voit hankkia sovelluksia muutamilla eri tavoilla. 
+- Sovelluksen tekijä voi asentaa sovelluksen automaattisesti Power BI -tilillesi, jolloin näet uuden sovelluksen **Sovellukset**-sisältöluettelossa, kun avaat Power BI:n seuraavan kerran. 
+- Sovelluksen tekijä voi lähettää sinulle suoran linkin sovellukseen. Kun valitset linkin, sovellus avautuu Power BI:ssä.
+- Voit etsiä sovelluksia AppSourcesta, jossa näet kaikki käytettävissä olevat sovellukset. AppSourcessa on yrityksen sisäisten ja ulkopuolisten raporttien suunnittelijoiden julkaisemia sovelluksia. AppSourcessa voi esimerkiksi olla jo käyttämäsi palvelun sovellus, kuten Google Analytics, GitHub tai Microsoft Dynamics. 
+- Jos käytät Power BI:tä mobiililaitteella, et voi asentaa sovellusta AppSourcen kautta vaan tarvitset suoran linkin. Jos sovelluksen tekijä asentaa sovelluksen automaattisesti, näet sen sovellusluettelossa.
 
 
-
-## <a name="next-steps"></a>Seuraavat vaiheet
-[Power BI -sovellukset ulkoisille palveluille](../service-connect-to-services.md)
+## <a name="next-step"></a>Seuraava vaihe
+* [Sovelluksen avaaminen ja käyttäminen](end-user-app-view.md)
 

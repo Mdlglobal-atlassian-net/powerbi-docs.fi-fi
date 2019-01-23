@@ -1,25 +1,25 @@
 ---
 title: Hyperlinkin lisääminen tekstiruutuun raportissa
 description: Hyperlinkin lisääminen tekstiruutuun Power BI -palvelussa ja Desktopissa
-author: mihart
-manager: kvivek
+author: maggiesMSFT
+manager: kfile
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 03/23/2018
-ms.author: mihart
+ms.date: 01/16/2019
+ms.author: maggies
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 6b438b9d9e66d336b94122fe96a707f0602261b4
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 6484046f6c69f47e01e14b56c38c4c9a5871b28b
+ms.sourcegitcommit: 658b0de4f5a544d0906665b40925552804a61880
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54277993"
+ms.lasthandoff: 01/19/2019
+ms.locfileid: "54406588"
 ---
 # <a name="add-a-hyperlink-to-a-text-box-in-a-report"></a>Hyperlinkin lisääminen tekstiruutuun raportissa
-Tekstiruutuja voidaan lisätä raportteihin, kiinnittää koontinäyttöön raporteista ja lisätä suoraan koontinäyttöön. Hyperlinkit voidaan lisätä tekstiruutuun riippumatta siitä, missä se sijaitsee.  
+Voit lisätä tekstiruutuja raportteihin, kiinnittää niitä raporteista koontinäyttöihin ja lisätä niitä suoraan koontinäyttöihin. Voit aina lisätä hyperlinkin tekstiruutuun riippumatta siitä, missä tekstiruutu on.  
 
 > **HUOMAUTUS**: Lisätietoja hyperlinkkien käytöstä Power BI -taulukoissa ja matriiseissa on kohdassa [Taulukoiden hyperlinkit](power-bi-hyperlinks-in-tables.md). Saat lisätietoja tekstiruutujen lisäämisestä **koontinäyttöön** kohdasta [ruudun lisääminen suoraan koontinäyttöön ](service-dashboard-add-widget.md). 
 > 
@@ -30,26 +30,26 @@ Tekstiruutuja voidaan lisätä raportteihin, kiinnittää koontinäyttöön rapo
 
 ## <a name="to-add-a-hyperlink-to-a-text-box-in-a-report"></a>Hyperlinkin lisääminen tekstiruutuun raportissa
 1. [Luo tekstiruutu ja lisää tekstiä](power-bi-reports-add-text-and-shapes.md). 
-2. Olemassa olevan tekstin korostaminen tai uuden tekstin lisääminen, jos haluat käyttää hyperlinkkinä.
+2. Olemassa olevan tekstin valitseminen tai uuden tekstin lisääminen, jos haluat käyttää sitä hyperlinkkinä.
    
-   ![](media/service-add-hyperlink-to-text-box/power-bi-hyperlink-new.png)
-3. Valitse hyperlinkki-kuvake ![](media/service-add-hyperlink-to-text-box/power-bi-hyperlink-icon.png) .
+   ![Valitse tekstiruudun teksti](media/service-add-hyperlink-to-text-box/power-bi-hyperlink-new.png)
+3. Valitse hyperlinkkikuvake ![Hyperlinkkikuvake](media/service-add-hyperlink-to-text-box/power-bi-hyperlink-icon.png).
 4. Kirjoita tai liitä URL-osoite hyperlinkki-kenttään ja valitse **Valmis**.
    
-   ![](media/service-add-hyperlink-to-text-box/power-bi-add-link.png)
+   ![Kirjoita tai liitä URL-osoite hyperlinkki-kenttään](media/service-add-hyperlink-to-text-box/power-bi-add-link.png)
 5. Kokeile linkkiä.  
    
-   ![](media/service-add-hyperlink-to-text-box/power-bi-test-link.png)
+   ![Kokeile linkkiä](media/service-add-hyperlink-to-text-box/power-bi-test-link.png)
    
    * Aseta kohdistin mihin tahansa korostettuun tekstiin URL-osoitteen näyttämiseksi.  
      
-      ![](media/service-add-hyperlink-to-text-box/power-bi-hyperlink-edit.png)
+      ![Aseta kohdistin mihin tahansa korostettuun tekstiin](media/service-add-hyperlink-to-text-box/power-bi-hyperlink-edit.png)
    * Valitse URL-osoite sivun avaamiseksi uudessa selainikkunassa.
 
 ## <a name="to-remove-the-hyperlink-but-leave-the-text"></a>Voit poistaa hyperlinkin, mutta jätä teksti
 1. Valitse tekstiruudussa hyperlinkki sen korostamiseksi
    
-     ![](media/service-add-hyperlink-to-text-box/power-bi-hyperlink-remove.png)
+     ![Poista hyperlinkki](media/service-add-hyperlink-to-text-box/power-bi-hyperlink-remove.png)
 2. Valitse **Poista**. 
 
 ## <a name="next-steps"></a>Seuraavat vaiheet

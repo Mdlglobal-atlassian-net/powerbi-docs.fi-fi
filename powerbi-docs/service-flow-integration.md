@@ -1,7 +1,7 @@
 ---
 title: Microsoft Flow:n Power BI -integrointi
 description: Opi luomaan Power BI -tietoilmoitusten käynnistämiä työnkulkuja.
-author: mihart
+author: mgblythe
 manager: kfile
 ms.reviewer: ''
 featuredvideoid: YhmNstC39Mw
@@ -9,14 +9,14 @@ ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 03/01/2018
-ms.author: mihart
+ms.author: mblythe
 LocalizationGroup: Get started
-ms.openlocfilehash: 2d73710b9fc41a8cb6a3d8287dc939323d71f7dd
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: f39912f5813f67ed65afde10a0e157385e98b7b7
+ms.sourcegitcommit: 658b0de4f5a544d0906665b40925552804a61880
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54289804"
+ms.lasthandoff: 01/19/2019
+ms.locfileid: "54406611"
 ---
 # <a name="microsoft-flow-and-power-bi"></a>Microsoft Flow ja Power BI
 
@@ -100,7 +100,7 @@ Seuraavaksi luomme yksinkertaisen työnkulun alusta alkaen, joka käynnistyy Pow
 4. Täytä tapahtumakentät. Valitessasi kentän, Flow näyttää siihen lisättävissä olevaa dynaamista sisältöä.
    
    ![jatka työnkulun muodostamista](media/service-flow-integration/power-bi-flow-event.png)
-5. Valitse **Luo työnkulku** kun olet valmis.  Flow tallentaa ja tarkastaa työnkulun. Jos virheitä ei löydetä, valitse **Valmis** ja voit suorittaa tämän työnkulun.  Uusi työnkulku lisätään **Omat työnkulut** -sivulle.
+5. Valitse **Luo työnkulku**, kun olet valmis.  Flow tallentaa ja tarkastaa työnkulun. Jos virheitä ei löydetä, valitse **Valmis** ja voit suorittaa tämän työnkulun.  Uusi työnkulku lisätään **Omat työnkulut** -sivulle.
    
    ![Viimeistele työnkulku](media/service-flow-integration/power-bi-flow-running.png)
 6. Kun Power BI -tietoilmoitus käynnistää työnkulun, näyttöön ilmestyvä Outlook -tapahtumailmoitus näyttää suunnilleen tältä.

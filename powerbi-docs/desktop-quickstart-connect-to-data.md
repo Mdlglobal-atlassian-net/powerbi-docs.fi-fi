@@ -10,12 +10,12 @@ ms.topic: quickstart
 ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: quickstart
-ms.openlocfilehash: 4b8cd79eca1711b424d772737b27400f9291cef0
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 4d121a469257c79e37212ab0e357bb9ee8be68ec
+ms.sourcegitcommit: 19b4d45db8f55cdbb5d7de0d61f6be5163a2852e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54279201"
+ms.lasthandoff: 01/22/2019
+ms.locfileid: "54420782"
 ---
 # <a name="quickstart-connect-to-data-in-power-bi-desktop"></a>Pikaopas: Tietoihin yhdistäminen Power BI Desktopissa
 
@@ -28,7 +28,7 @@ Jos et ole rekisteröitynyt Power BI:hin, [rekisteröidy ilmaiseen kokeiluversio
 ## <a name="prerequisites"></a>Edellytykset
 
 Tarvitset seuraavat, jotta voit suorittaa tämän artikkelin vaiheet:
-* Lataa ja asenna ilmainen **Power BI Desktop** -sovellus, joka suoritetaan paikallisessa tietokoneessa. Voit [ladata **Power BI Desktopin**](https://powerbi.microsoft.com/desktop) suoraan tai hakea sen [ **Microsoft-kaupasta**](http://aka.ms/pbidesktopstore).
+* Lataa ja asenna ilmainen **Power BI Desktop** -sovellus, joka suoritetaan paikallisessa tietokoneessa. Voit [ladata **Power BI Desktopin**](https://powerbi.microsoft.com/desktop) suoraan tai hakea sen [**Microsoft-kaupasta**](http://aka.ms/pbidesktopstore).
 * [Lataa tämä Excel-mallityökirja](http://go.microsoft.com/fwlink/?LinkID=521962) ja luo kansio nimeltä *C:\PBID-qs*, johon tallennat kyseisen Excel-tiedoston. Tämän pikaoppaan seuraavissa vaiheissa oletetaan, että ladattu Excel-työkirja sijaitsee kyseisessä paikassa.
 
 ## <a name="launch-power-bi-desktop"></a>Käynnistä Power BI Desktop
@@ -39,13 +39,13 @@ Kun olet asentanut **Power BI Desktop** -sovelluksen, käynnistä se paikallises
 
 ## <a name="connect-to-data"></a>Tietoihin yhdistäminen
 
-**Power BI Desktopin** avulla voit yhdistää moniin erityyppisiin tietoihin. Voit muodostaa yhteyden perustietolähteisiin, kuten Microsoft Excel -tiedostoon, tai monenlaisia tietoja sisältäviin verkkopalveluihin, kuten Salesforceen, Microsoft Dynamicsiin, Azure Blob -säilöön ja moniin muihin. 
+**Power BI Desktopin** avulla voit yhdistää moniin erityyppisiin tietoihin. Voit muodostaa yhteyden perustietolähteisiin, kuten Microsoft Excel -tiedostoon, tai monenlaisia tietoja sisältäviin verkkopalveluihin, kuten Salesforceen, Microsoft Dynamicsiin, Azure Blob -säilöön ja moniin muihin.
 
 Muodosta yhteys tietoihin valitsemalla **Aloitus**-valintanauhassa **Nouda tiedot**.
 
 ![Nouda tiedot](media/desktop-quickstart-connect-to-data/qs-connect-data_02.png)
 
-**Nouda tiedot** -ikkuna aukeaa. Ikkunassa voit valita monista eri tietolähteistä, joihin **Power BI Desktop** pystyy muodostamaan yhteyden. Tässä pikaoppaassa käytämme lataamaasi Excel-työkirjaa, joka kuvailtiin tämän artikkelin alussa olevassa *Edellytykset*-osiossa. 
+**Nouda tiedot** -ikkuna aukeaa. Ikkunassa voit valita monista eri tietolähteistä, joihin **Power BI Desktop** pystyy muodostamaan yhteyden. Tässä pikaoppaassa käytämme lataamaasi Excel-työkirjaa, joka kuvailtiin tämän artikkelin alussa olevassa *Edellytykset*-osiossa.
 
 ![Nouda tiedot](media/desktop-quickstart-connect-to-data/qs-connect-data_03.png)
 
@@ -69,10 +69,8 @@ Kun olet ladannut taulukot, tiedot näkyvät **Kentät**-ruudussa. Voit laajenta
 
 Siinä kaikki. Olet muodostanut yhteyden tietoihin **Power BI Desktopissa** ja ladannut ne, ja nyt voit nähdä kaikki kyseisissä taulukoissa käytettävissä olevat kentät.
 
-
 ## <a name="next-steps"></a>Seuraavat vaiheet
+
 Kun olet muodostanut yhteyden tietoihin, voit tehdä **Power BI Desktopilla** monia asioita, kuten luoda visualisointeja ja raportteja. Lisätietoja saat seuraavista resursseista:
 
 * [Power BI Desktopin aloitusopas](desktop-getting-started.md)
-
-

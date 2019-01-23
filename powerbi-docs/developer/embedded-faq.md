@@ -8,13 +8,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 12/20/2018
-ms.openlocfilehash: f9e33e78a5cd1141a09eaf226f41a3f52aaebab7
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.date: 01/17/2018
+ms.openlocfilehash: cd32b644205629ce62579f5a720d486f93073dea
+ms.sourcegitcommit: ccbe76a0a43c5c5e87354a33e617bf3cb291608e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54284054"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54394733"
 ---
 # <a name="frequently-asked-questions-about-power-bi-embedded"></a>Usein kysyttyjä kysymyksiä – Power BI Embedded
 
@@ -47,7 +47,7 @@ Power BI Embedded on tarkoitettu ISV-ohjelmistotoimittajille tai kehittäjille, 
 
 Microsoft suosittelee, että yritykset ostaisivat Power BI Premiumin, joka on yritystason omatoiminen BI-pilviratkaisu, ja ISV-ohjelmistotoimittajat Power BI Embeddedin, joka tarjoaa pilvipohjaisia upotettuja analyysitoimintoja. Ei kuitenkaan ole mitään rajoituksia sen suhteen, minkä tuotteen asiakas voi ostaa.
 
-Joissain tapauksissa (tavallisesti suuri) ISV haluaa käyttää P-varastointiyksikköä saadakseen organisaatiolleen esimääritetyn Power BI -palvelun hyödyt sekä upotusmahdollisuuden sovelluksiin. Jotkin yritykset voivat päättää käyttää A-varastointiyksiköitä Azuressa, jos niitä kiinnostaa vain yrityssovellusten kehittäminen ja analyysitoimintojen upottaminen näihin sovelluksiin esimääritetyn Power BI -palvelun käytön sijaan.
+Joissain tapauksissa (tavallisesti suuri) ISV haluaa käyttää P-varastointiyksikköä saadakseen organisaatiolleen esimääritetyn Power BI -palvelun hyödyt sekä upotusmahdollisuuden sovelluksiin. Jotkin yritykset voivat päättää käyttää A-varastointiyksikköjä Azuressa, jos niitä kiinnostaa vain yrityssovellusten kehittäminen ja analyysitoimintojen upottaminen näihin sovelluksiin esimääritetyn Power BI -palvelun käytön sijaan.
 
 ### <a name="how-many-embed-tokens-can-i-create"></a>Kuinka monta upotettavaa tunnusta voit luoda?
 
@@ -59,7 +59,7 @@ PRO-käyttöoikeudella upotettavat tunnukset on tarkoitettu kehitystestaukseen, 
 
 PowerBI.com on yritysratkaisu, joka sisältää useita sosiaalisen yhteistyön ja sähköpostitilauksen kaltaisia toimintoja palveluna ohjelmistossa
 
-Power BI Embedded on ohjelmointirajapintojen joukko, joiden avulla kehittäjät voivat luoda upotetun analytiikkaratkaisun palveluksi tietyssä ympäristössä. Upotettujen analyysitoimintojen yhteydessä PowerBI.comia tulee käyttää ISV-toimittajien ja kehittäjien auttamiseen upotetun analytiikkaratkaisun sisällön ja vuokraajatason asetusten hallinnassa.
+Power BI Embedded on ohjelmointirajapintojen joukko, joiden avulla kehittäjät voivat luoda upotetun analytiikkaratkaisun palveluksi tietyssä ympäristössä. Upotettujen analyysitoimintojen yhteydessä PowerBI.com auttaa ISV-toimittajia ja kehittäjiä upotetun analytiikkaratkaisun sisällön ja vuokraajatason asetusten hallinnassa.
 
 Alla on osittainen luettelo eroista näiden ratkaisujen yhteydessä käytettävien ominaisuuksien välillä.
 
@@ -106,9 +106,9 @@ Automaattista skaalausta ei tällä hetkellä ole, mutta kaikki ohjelmointirajap
 
 Kapasiteetin valmisteleminen (skaalaaminen/jatkaminen/luominen) voi epäonnistua. Valmistelukutsun kutsujan olisi tarkistettava kapasiteetin ProvisioningState-tila Nouda tiedot -ohjelmointirajapinnan avulla: [Kapasiteetit – Nouda tiedot](https://docs.microsoft.com/rest/api/power-bi-embedded/capacities/getdetails).
 
-### <a name="why-can-i-only-create-pbie-in-a-specific-region"></a>Miksi voin luoda PBIE:n vain tietyllä alueella?
+### <a name="can-i-only-create-power-bi-embedded-capacities-in-a-specific-region"></a>Voinko luoda Power BI Embedded -kapasiteetteja vain tietyllä alueella?
 
-Voit luoda PBIE-kapasiteetit vain PBI-vuokraajan alueelle.
+[Multi-Geo (esikatselu)](embedded-multi-geo.md) -toiminnon avulla voit ostaa [Power BI Embedded -kapasiteetteja](azure-pbie-create-capacity.md) myös muualla kuin Power BI -kotivuokraajan sijainnissa
 
 ### <a name="how-can-i-find-what-is-my-pbi-tenant-region"></a>Miten voin selvittää, mikä on oma PBI-vuokraajan alueeni?
 
@@ -232,11 +232,11 @@ Power BI Embeddedin laskutus perustuu ennustettavissa olevaan tuntihintaan, joka
 
 ### <a name="who-needs-a-power-bi-pro-license-for-power-bi-embedded-and-why"></a>Kuka tarvitsee Power BI Pro -käyttöoikeuden Power BI Embeddediä varten ja miksi?
 
-Power BI Pro -käyttöoikeus vaaditaan analyytikolta, jonka täytyy lisätä raportteja Power BI -työtilaan, kehittäjältä, joka tarvitsee REST-ohjelmointirajapintojen käyttöä, ja jokaiselta vuokraajan järjestelmänvalvojalta, jonka on hallittava Power BI -vuokraajaa ja kapasiteettia.
+Kaikilla analyytikoilla, jotka lisäävät raportteja Power BI -työtilaan, on oltava Power BI -käyttöoikeus. Kaikilla kehittäjillä, jotka käyttävät REST-ohjelmointirajapintoja, on oltava Power BI Pro -käyttöoikeus. Kaikilla vuokraajan järjestelmänvalvojilla, jotka hallitsevat Power BI -vuokraajaa ja -kapasiteettia, on oltava Power BI Pro -käyttöoikeus.
 
 Power BI Embedded sallii Power BI -portaalin käytön upotetun sisällön hallintaan ja vahvistamiseen, joten Power BI Pro -käyttöoikeus vaaditaan sovelluksen todentamiseen PowerBI.comissa, jotta voit käyttää oikeissa säilöissä olevia raportteja.
 
-Käyttäjä ei kuitenkaan tarvitse Pro-käyttöoikeutta [upotettujen raporttien luomiseen tai muokkaamiseen](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Create-Report-in-Embed-View) oman sovelluksesi sisällä, koska hänen ei tarvitse olla Power BI -käyttäjä.
+Käyttäjä ei kuitenkaan tarvitse Pro-käyttöoikeutta [upotettujen raporttien luomiseen tai muokkaamiseen](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Create-Report-in-Embed-View) oman sovelluksensa sisällä, koska hänen ei tarvitse olla Power BI -käyttäjä.
 
 ### <a name="can-i-get-started-for-free"></a>Voinko aloittaa käytön maksutta?
 
@@ -279,7 +279,7 @@ Kyllä, mutta asiakkaat, jotka käyttävät **Power BI -työtilakokoelmaa**, voi
 
 Tämä tarkoittaa kuitenkin sitä, ettei uusia ominaisuuksia lisätä **Power BI -työtilakokoelmaan** ja asiakkaita kehotetaan valmistautumaan siirtymään uuteen **Power BI Embeddediin**.
 
-### <a name="when-will-power-bi-workspace-collection-support-be-discontinued"></a>Koska Power BI -työtilakokoelman tuki lakkautetaan?
+### <a name="when-is-power-bi-workspace-collection-support-discontinued"></a>Koska Power BI -työtilakokoelman tuki lakkautetaan?
 
 Asiakkaat, jotka käyttävät **Power BI -työtilakokoelmaa** voivat jatkaa sen käyttöä 2018 kesäkuun loppuun asti tai tukisopimuksensa loppuun asti.
 
