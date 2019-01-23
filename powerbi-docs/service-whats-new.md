@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2018
 ms.author: nikhilga
 LocalizationGroup: Get started
-ms.openlocfilehash: 32a052ca009c613b262d5277a0fd85b186c8e148
-ms.sourcegitcommit: 658b0de4f5a544d0906665b40925552804a61880
+ms.openlocfilehash: acfc4062677a28824458781b900b271bedd51eb8
+ms.sourcegitcommit: 2c49a7cee9c77f46830ddfa59fdedbf30186d389
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/19/2019
-ms.locfileid: "54406749"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54488910"
 ---
 ---
 # <a name="whats-new-in-the-power-bi-service"></a>Power BI -palvelun uudet toiminnot ja ominaisuudet
@@ -197,7 +197,7 @@ Saat kaikki tiedot [Power BI -tiimin blogista](https://powerbi.microsoft.com/blo
 ***Rivitason suojaus (RLS)***
 
 * Azure Active Directory (AAD) -ryhmän tuki: käyttäjät voivat nyt määrittää AAD-ryhmiä (käyttöoikeusryhmiä ja jakeluluetteloita) roolille. Tämä helpottaa roolien määrittämistä suurelle käyttäjäryhmälle kerralla.
-* [Testaa RLS-rooleja raporttien avulla yhdessä tietojen, joissa käytetään rivitason suojausta, tukemana](service-admin-rls.md#validating-the-role-within-power-bi-desktop): lisäsimme RLS-esikatseluun ominaisuuden, jonka avulla voit testata tietojoukkoasi tiettynä roolina. Näin varmistetaan, että rooli toimii odottamallasi tavalla, ennen kuin käyttäjät pääsevät koontinäyttöösi.
+* [Testaa RLS-rooleja raporttien avulla yhdessä tietojen, joissa käytetään rivitason suojausta, tukemana](service-admin-rls.md#validate-the-roles-within-power-bi-desktop): lisäsimme RLS-esikatseluun ominaisuuden, jonka avulla voit testata tietojoukkoasi tiettynä roolina. Näin varmistetaan, että rooli toimii odottamallasi tavalla, ennen kuin käyttäjät pääsevät koontinäyttöösi.
 * Määritä rivitason suojaus ja sovella sitä pilvipalvelumalleihin suorien kyselyjen perusteella: voit nyt luoda ja soveltaa RLS-sääntöjä suoran kyselyn tietolähteisiin.
 
 ***Koontinäytöt***
