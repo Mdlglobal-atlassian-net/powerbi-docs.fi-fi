@@ -1,195 +1,186 @@
-items:
 - name: Power BI kuluttajille
   href: power-bi-consumer-landing.md
 - name: Power BI -palvelu kuluttajille
   items:
-  - name: Yleiskatsaus
-    items:
-    - name: Mikä Power BI -kuluttaja on?
-      href: end-user-consumer.md
-    - name: Peruskäsitteitä ja terminologiaa Power BI -kuluttajille
-      href: end-user-basic-concepts.md
-  - name: Pika-aloitus
-    items:
-    - name: Opi käyttämään Power BI:tä
-      href: end-user-experience.md
-    - name: Mitä Power BI:llä voi tehdä?
-      href: end-user-reading-view.md
-  - name: Opetusohjelmat
-    items:
-    - name: Koontinäytön hälytyksen luominen
-      href: end-user-alerts.md
-  - name: Ohjeet
-    items:
-    - name: Koontinäytöt
+    - name: Yleiskatsaus
       items:
-      - name: Koontinäytöt
-        href: end-user-dashboards.md
-      - name: Tarkastele koontinäyttöä
-        href: end-user-dashboard-open.md
-      - name: Suositellut koontinäytöt
-        href: end-user-featured.md
-      - name: Koontinäytön ruudut
-        href: end-user-tiles.md
-      - name: Kommentin lisääminen tai keskustelun aloittaminen
-        href: end-user-comment.md
-    - name: Raportit
+        - name: Mikä Power BI -kuluttaja on?
+          href: end-user-consumer.md
+        - name: Peruskäsitteitä ja terminologiaa Power BI -kuluttajille
+          href: end-user-basic-concepts.md
+    - name: Pika-aloitus
       items:
-      - name: Raportit
-        href: end-user-reports.md
-      - name: Näytä raportti
-        href: end-user-report-open.md
-      - name: Suodattimien käyttäminen raportissa
-        href: end-user-report-filter.md
-      - name: Lue lisää raportin visualisointien ristisuodatuksesta
-        href: end-user-interactions.md
-    - name: Visualisoinnit
+        - name: 'Opi käyttämään Power BI:tä'
+          href: end-user-experience.md
+        - name: 'Mitä Power BI:llä voi tehdä?'
+          href: end-user-reading-view.md
+    - name: Opetusohjelmat
       items:
-      - name: Mitä visualisointien avulla voi tehdä?
-        href: end-user-visualizations.md
-      - name: Visualisoinnin luomiseen käytettyjen tietojen näyttäminen
-        href: end-user-show-data.md
-      - name: Visualisointiin porautuminen Power BI:ssä
-        href: end-user-drill.md
-      - name: ArcGIS-karttojen käsittely
-        href: ../power-bi-visualizations-arcgis.md
-    - name: Yleiset tehtävät
+        - name: Koontinäytön hälytyksen luominen
+          href: end-user-alerts.md
+    - name: Ohjeet
       items:
-      - name: Eri tapoja lähentää sisältöön kohdistuksen ja koko näytön tilan avulla
-        href: end-user-focus.md
-      - name: Power BI:n suosikkikoontinäytöt, -raportit ja -sovellukset
-        href: end-user-favorite.md
-      - name: Koontinäytön tulostaminen, koontinäyttöruudun tulostaminen, raporttisivun tulostaminen
-        href: end-user-print.md
-      - name: Tarkastele aiheeseen liittyvää sisältöä
-        href: end-user-related.md
-      - name: Tarkastele viimeisintä sisältöä
-        href: end-user-recent.md
-      - name: Tarkastele sisältöä Jaettu kanssani -säilössä
-        href: end-user-shared-with-me.md
-      - name: Raportin tai koontinäytön tilaaminen
-        href: end-user-subscribe.md
-      - name: Hae ja lajittele sisältöä Power BI:ssä
-        href: end-user-search-sort.md
-      - name: Näytä automaattiset merkitykselliset tiedot koontinäytön ruuduille
-        href: end-user-insights.md
-    - name: Nouda tiedot
+        - name: koontinäytöt
+          items:
+            - name: koontinäytöt
+              href: end-user-dashboards.md
+            - name: Tarkastele koontinäyttöä
+              href: end-user-dashboard-open.md
+            - name: Suositellut koontinäytöt
+              href: end-user-featured.md
+            - name: Koontinäytön ruudut
+              href: end-user-tiles.md
+            - name: Kommentin lisääminen tai keskustelun aloittaminen
+              href: end-user-comment.md
+        - name: Raportit
+          items:
+            - name: Raportit
+              href: end-user-reports.md
+            - name: Näytä raportti
+              href: end-user-report-open.md
+            - name: Suodattimien käyttäminen raportissa
+              href: end-user-report-filter.md
+            - name: Lue lisää raportin visualisointien ristisuodatuksesta
+              href: end-user-interactions.md
+        - name: Visualisoinnit
+          items:
+            - name: Mitä visualisointien avulla voi tehdä?
+              href: end-user-visualizations.md
+            - name: Visualisoinnin luomiseen käytettyjen tietojen näyttäminen
+              href: end-user-show-data.md
+            - name: 'Visualisointiin porautuminen Power BI:ssä'
+              href: end-user-drill.md
+            - name: ArcGIS-karttojen käsittely
+              href: ../power-bi-visualizations-arcgis.md
+        - name: Yleiset tehtävät
+          items:
+            - name: Eri tapoja lähentää sisältöön kohdistuksen ja koko näytön tilan avulla
+              href: end-user-focus.md
+            - name: 'Power BI:n suosikkikoontinäytöt, -raportit ja -sovellukset'
+              href: end-user-favorite.md
+            - name: 'Koontinäytön tulostaminen, koontinäyttöruudun tulostaminen, raporttisivun tulostaminen'
+              href: end-user-print.md
+            - name: Tarkastele aiheeseen liittyvää sisältöä
+              href: end-user-related.md
+            - name: Tarkastele viimeisintä sisältöä
+              href: end-user-recent.md
+            - name: Tarkastele sisältöä Jaettu kanssani -säilössä
+              href: end-user-shared-with-me.md
+            - name: Raportin tai koontinäytön tilaaminen
+              href: end-user-subscribe.md
+            - name: 'Hae ja lajittele sisältöä Power BI:ssä'
+              href: end-user-search-sort.md
+            - name: Näytä automaattiset merkitykselliset tiedot koontinäytön ruuduille
+              href: end-user-insights.md
+        - name: Nouda tiedot
+          items:
+            - name: Sovellusten asentaminen ja käyttäminen
+              href: end-user-apps.md
+            - name: Palveluihin yhdistäminen
+              href: end-user-connect-to-services.md
+        - name: Kysymysten kysyminen tiedoistasi
+          items:
+            - name: 'Q&A Power BI:ssä'
+              href: end-user-q-and-a.md
+            - name: 'Vinkkejä kysymysten kysymiseen Power BI:n Q&A-toiminnolla'
+              href: end-user-q-and-a-tips.md
+    - name: Resurssit
       items:
-      - name: Sovellusten asentaminen ja käyttäminen
-        href: end-user-apps.md
-      - name: Palveluihin yhdistäminen
-        href: end-user-connect-to-services.md
-      - name: Organisaation sisältöpaketin etsiminen ja siihen yhdistäminen
-        href: end-user-content-pack.md
-    - name: Kysymysten kysyminen tiedoistasi
-      items:
-      - name: Q&A Power BI:ssä
-        href: end-user-q-and-a.md
-      - name: Vinkkejä kysymysten kysymiseen Power BI:n Q&A-toiminnolla
-        href: end-user-q-and-a-tips.md
-  - name: Resurssit
-    items:
-    - name: Sanasto ja terminologia
-      href: end-user-glossary.md
-    - name: Tuetut selaimet
-      href: end-user-browsers.md
-    - name: Power BI:n tukemat nopeiden merkityksellisten tietojen tyypit
-      href: end-user-insight-types.md
+        - name: Sanasto ja terminologia
+          href: end-user-glossary.md
+        - name: Tuetut selaimet
+          href: end-user-browsers.md
+        - name: 'Power BI:n tukemat nopeiden merkityksellisten tietojen tyypit'
+          href: end-user-insight-types.md
 - name: Power BI -mobiilisovellukset
   items:
-  - name: Yleiskatsaus
-    items:
-    - name: Mitä mobiilisovellukset ovat?
-      href: mobile/mobile-apps-for-mobile-devices.md
-  - name: Pika-aloitus
-    items:
-    - name: Tutustu raporttinäkymiin ja raportteihin
-      href: mobile/mobile-apps-quickstart-view-dashboard-report.md
-  - name: Opetusohjelmat
-    items:
-    - name: Esitä kysymyksiä iOS-mobiilisovelluksissa
-      href: mobile/tutorial-mobile-apps-ios-qna.md
-  - name: Käsitteet
-    items:
-    - name: Mobiilisovellusten uudet toiminnot
-      href: mobile/mobile-whats-new-in-the-mobile-apps.md
-    - name: Oikeiden tietojen käyttö mobiilisovelluksissa
-      href: mobile/mobile-apps-data-in-real-world-context.md
-    - name: Tietojen tarkastelu offline-tilassa mobiilisovelluksissa
-      href: mobile/mobile-apps-offline-data.md
-    - name: Power BI ja tehostettu todellisuus -sovellus (esikatselu)
-      href: mobile/mobile-mixed-reality-app.md
-  - name: Ohjeet
-    items:
-    - name: Kaikki mobiilisovellukset
+    - name: Yleiskatsaus
       items:
-      - name: Koontinäytön jakaminen Power BI -mobiilisovelluksista
-        href: mobile/mobile-share-dashboard-from-the-mobile-apps.md
-      - name: Ruutujen käyttö mobiilisovelluksissa
-        href: mobile/mobile-tiles-in-the-mobile-apps.md
-      - name: Suosikit mobiilisovelluksissa
-        href: mobile/mobile-apps-favorites.md
-      - name: Tietoilmoitusten määrittäminen Power BI -mobiilisovelluksissa
-        href: mobile/mobile-set-data-alerts-in-the-mobile-apps.md
-      - name: Power BI -mobiilisovellusten ilmoitusten vastaanottaminen
-        href: mobile/mobile-apps-notification-center.md
-      - name: Tiettyyn sijaintiin vievän tarkan linkin luominen
-        href: mobile/mobile-apps-deep-link-specific-location.md
-      - name: Raportin suodattaminen sijainnin mukaan Power BI ‑mobiilisovelluksessa
-        href: mobile/mobile-apps-geographic-filtering.md
-      - name: Raporttinäkymät Power BI -mobiilille
-        href: mobile/mobile-apps-view-dashboard.md
-      - name: Raportit mobiilisovelluksissa
-        href: mobile/mobile-reports-in-the-mobile-apps.md
-      - name: Reporting Servicesiin yhdistäminen OAuth-todennuksen avulla
-        href: mobile/mobile-oauth-ssrs.md
-    - name: Android-laitteet
+        - name: Mitä mobiilisovellukset ovat?
+          href: mobile/mobile-apps-for-mobile-devices.md
+    - name: Pika-aloitus
       items:
-      - name: Android-sovelluksen käytön aloittaminen
-        href: mobile/mobile-android-app-get-started.md
-      - name: Yrityksen SSL-varmenteeseen ei luoteta -ongelman korjaaminen
-        href: mobile/mobile-android-app-error-corporate-ssl-account-is-untrusted.md
-      - name: Android System Webview pitää päivittää -ongelman korjaaminen
-        href: mobile/mobile-android-error-update-android-system-webview.md
-    - name: iOS
+        - name: Tutustu raporttinäkymiin ja raportteihin
+          href: mobile/mobile-apps-quickstart-view-dashboard-report.md
+    - name: Opetusohjelmat
       items:
-      - name: iOS-sovelluksen käytön aloittaminen
-        href: mobile/mobile-iphone-app-get-started.md
-      - name: Q&A virtuaalinen analyytikko iOS-mobiilisovelluksissa
-        href: mobile/mobile-apps-ios-qna.md
-      - name: Power BI:n Apple Watch -sovellus
-        href: mobile/mobile-apple-watch.md
-      - name: Viivakoodin lukeminen iPhone-sovelluksella
-        href: mobile/mobile-apps-scan-barcode-iphone.md
-    - name: iOS ja Android
+        - name: Esitä kysymyksiä iOS-mobiilisovelluksissa
+          href: mobile/tutorial-mobile-apps-ios-qna.md
+    - name: Käsitteet
       items:
-      - name: Paikallisten raporttien tarkastelu mobiilisovelluksissa
-        href: mobile/mobile-app-ssrs-kpis-mobile-on-premises-reports.md
-      - name: Puhelimelle optimoitujen raporttien tarkasteleminen
-        href: mobile/mobile-apps-view-phone-report.md
-      - name: Power BI QR-koodin lukeminen puhelimella
-        href: mobile/mobile-apps-qr-code.md
-      - name: Merkintöjen tekeminen ja jakaminen mobiilisovelluksissa
-        href: mobile/mobile-annotate-and-share-a-tile-from-the-mobile-apps.md
-    - name: Power BI -sovellus Windows 10 -laitteille
+        - name: Mobiilisovellusten uudet toiminnot
+          href: mobile/mobile-whats-new-in-the-mobile-apps.md
+        - name: Oikeiden tietojen käyttö mobiilisovelluksissa
+          href: mobile/mobile-apps-data-in-real-world-context.md
+        - name: Tietojen tarkastelu offline-tilassa mobiilisovelluksissa
+          href: mobile/mobile-apps-offline-data.md
+        - name: Power BI ja tehostettu todellisuus -sovellus (esikatselu)
+          href: mobile/mobile-mixed-reality-app.md
+    - name: Ohjeet
       items:
-      - name: Windows 10 -sovelluksen käytön aloittaminen
-        href: mobile/mobile-windows-10-phone-app-get-started.md
-      - name: Kiinnitä raporttinäkymä aloitusnäyttöön
-        href: mobile/mobile-pin-dashboard-start-screen-windows-10-phone-app.md
-      - name: Tarkastele Reporting Servicesin mobiiliraportteja ja suorituskykyilmaisimia
-        href: mobile/mobile-app-windows-10-ssrs-kpis-mobile-reports.md
-      - name: Power BI:n tarkastelu Surface Hubissa
-        href: mobile/mobile-windows-10-app-presentation-mode.md
-      - name: Kertakirjautuminen Windows-sovelluksessa
-        href: mobile/mobile-windows-10-app-single-sign-on-sso.md
-  - name: Resurssit
-    items:
-    - name: Mobiilisovellusten tuetut kielet
-      href: mobile/mobile-apps-supported-languages.md
-ms.openlocfilehash: f3f9e579a85ae880b28c6f846c5cb362dc49e9a2
-ms.sourcegitcommit: e17fc3816d6ae403414cf5357afbf6a492822ab8
-ms.translationtype: HT
-ms.contentlocale: fi-FI
-ms.lasthandoff: 12/04/2018
-ms.locfileid: "52829830"
+        - name: Kaikki mobiilisovellukset
+          items:
+            - name: Koontinäytön jakaminen Power BI -mobiilisovelluksista
+              href: mobile/mobile-share-dashboard-from-the-mobile-apps.md
+            - name: Ruutujen käyttö mobiilisovelluksissa
+              href: mobile/mobile-tiles-in-the-mobile-apps.md
+            - name: Suosikit mobiilisovelluksissa
+              href: mobile/mobile-apps-favorites.md
+            - name: Tietoilmoitusten määrittäminen Power BI -mobiilisovelluksissa
+              href: mobile/mobile-set-data-alerts-in-the-mobile-apps.md
+            - name: Power BI -mobiilisovellusten ilmoitusten vastaanottaminen
+              href: mobile/mobile-apps-notification-center.md
+            - name: Tiettyyn sijaintiin vievän tarkan linkin luominen
+              href: mobile/mobile-apps-deep-link-specific-location.md
+            - name: Raportin suodattaminen sijainnin mukaan Power BI ‑mobiilisovelluksessa
+              href: mobile/mobile-apps-geographic-filtering.md
+            - name: Raporttinäkymät Power BI -mobiilille
+              href: mobile/mobile-apps-view-dashboard.md
+            - name: Raportit mobiilisovelluksissa
+              href: mobile/mobile-reports-in-the-mobile-apps.md
+            - name: Reporting Servicesiin yhdistäminen OAuth-todennuksen avulla
+              href: mobile/mobile-oauth-ssrs.md
+        - name: Android-laitteet
+          items:
+            - name: Android-sovelluksen käytön aloittaminen
+              href: mobile/mobile-android-app-get-started.md
+            - name: Yrityksen SSL-varmenteeseen ei luoteta -ongelman korjaaminen
+              href: mobile/mobile-android-app-error-corporate-ssl-account-is-untrusted.md
+            - name: Android System Webview pitää päivittää -ongelman korjaaminen
+              href: mobile/mobile-android-error-update-android-system-webview.md
+        - name: iOS
+          items:
+            - name: iOS-sovelluksen käytön aloittaminen
+              href: mobile/mobile-iphone-app-get-started.md
+            - name: Q&A virtuaalinen analyytikko iOS-mobiilisovelluksissa
+              href: mobile/mobile-apps-ios-qna.md
+            - name: 'Power BI:n Apple Watch -sovellus'
+              href: mobile/mobile-apple-watch.md
+            - name: Viivakoodin lukeminen iPhone-sovelluksella
+              href: mobile/mobile-apps-scan-barcode-iphone.md
+        - name: iOS ja Android
+          items:
+            - name: Paikallisten raporttien tarkastelu mobiilisovelluksissa
+              href: mobile/mobile-app-ssrs-kpis-mobile-on-premises-reports.md
+            - name: Puhelimelle optimoitujen raporttien tarkasteleminen
+              href: mobile/mobile-apps-view-phone-report.md
+            - name: Power BI QR-koodin lukeminen puhelimella
+              href: mobile/mobile-apps-qr-code.md
+            - name: Merkintöjen tekeminen ja jakaminen mobiilisovelluksissa
+              href: mobile/mobile-annotate-and-share-a-tile-from-the-mobile-apps.md
+        - name: Power BI -sovellus Windows 10 -laitteille
+          items:
+            - name: Windows 10 -sovelluksen käytön aloittaminen
+              href: mobile/mobile-windows-10-phone-app-get-started.md
+            - name: Kiinnitä raporttinäkymä aloitusnäyttöön
+              href: mobile/mobile-pin-dashboard-start-screen-windows-10-phone-app.md
+            - name: Tarkastele Reporting Servicesin mobiiliraportteja ja suorituskykyilmaisimia
+              href: mobile/mobile-app-windows-10-ssrs-kpis-mobile-reports.md
+            - name: 'Power BI:n tarkastelu Surface Hubissa'
+              href: mobile/mobile-windows-10-app-presentation-mode.md
+            - name: Kertakirjautuminen Windows-sovelluksessa
+              href: mobile/mobile-windows-10-app-single-sign-on-sso.md
+    - name: Resurssit
+      items:
+        - name: Mobiilisovellusten tuetut kielet
+          href: mobile/mobile-apps-supported-languages.md

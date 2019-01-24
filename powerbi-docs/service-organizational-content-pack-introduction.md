@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 3fa76b19e187f7a27dc8b9268dad4d9b5ab8f101
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: f7e8d58e5fd738e5da678723ef239f5303be5070
+ms.sourcegitcommit: 54907bb59a5c31b25d368d83a0c4faa5e2f0db66
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54286377"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54838458"
 ---
 # <a name="intro-to-organizational-content-packs-in-power-bi"></a>Power BI:n organisaation sisältöpakettien esittely
 > [!NOTE]
@@ -41,8 +41,6 @@ Koontinäytöt, raportit ja Excel-työkirjat ovat vain luku -tilassa, mutta voit
 Organisaation sisältöpaketin julkaiseminen lisää sen AppSourceen.  Tämän keskitetyn tietovaraston jäsenet voivat selata ja löytää heille julkaistuja koontinäyttöjä, raportteja ja tietojoukkoja.  
 
 * Voit avata AppSourcen valitsemalla **Nouda tiedot** > **Oma organisaatio** > **Nouda**.
-
-Lue lisätietoja [organisaation sisältöpakettien hakemisesta ja avaamisesta](consumer/end-user-content-pack.md).
 
 ## <a name="the-life-cycle-of-an-organizational-content-pack"></a>Organisaation sisältöpaketin elinkaari
 Kaikki Power BI Pro -käyttäjät voivat luoda, julkaista ja käyttää organisaation sisältöpaketteja. Vain sisältöpaketin luoja voi muokata työkirjaa ja tietojoukkoa, ajoittaa päivityksiä ja poistaa sen.
