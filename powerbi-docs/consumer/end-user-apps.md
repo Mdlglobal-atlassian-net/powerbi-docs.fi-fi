@@ -8,15 +8,15 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/16/2019
+ms.date: 01/21/2019
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: e741076bf345f093e249b398995a72a683ae84d6
-ms.sourcegitcommit: ccbe76a0a43c5c5e87354a33e617bf3cb291608e
+ms.openlocfilehash: 0b423310e88917c910d44f15247bbaec49732f2c
+ms.sourcegitcommit: 54907bb59a5c31b25d368d83a0c4faa5e2f0db66
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "54394790"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54838320"
 ---
 # <a name="apps-in-power-bi"></a>Sovellukset Power BI:ssä
 ## <a name="what-is-a-power-bi-app"></a>Mikä Power BI -sovellus on?
@@ -26,12 +26,14 @@ Sovellukset on järjestetty **Sovellukset**-sisältöluetteloon.
 
 ![Sovellukset Power BI:ssä](./media/end-user-apps/power-bi-apps-nav.png)
 
+> [!NOTE]
+> Sovellusominaisuuden käyttö edellyttää Power BI Pro -käyttöoikeutta. <!-- add link to how to figure out your license -->
+
 ## <a name="app-designers-and-app-consumers"></a>Sovelluksen ***suunnittelijat*** ja sovelluksen ***kuluttajat***
 Roolistasi riippuen saatat olla henkilö, joka luo sovelluksia (suunnittelija) omaan käyttöönsä tai jakaa niitä työtovereidensa kanssa. Vaihtoehtoisesti voit olla henkilö, joka vastaanottaa ja lataa muiden luomia sovelluksia (kuluttaja). Tämä artikkeli on tarkoitettu sovellusten *kuluttajille*.
 
 ## <a name="advantages-of-apps"></a>Sovellusten edut
 Sovellukset on helppo löytää ja asentaa Power BI -palvelussa ([https://powerbi.com](https://powerbi.com)) ja mobiililaitteessa. Kun olet asentanut sovelluksen, sinun ei tarvitse muistaa monien eri raporttinäkymien nimiä, sillä ne ovat kaikki yhdessä sovelluksessa, selaimessa tai mobiililaitteessa.
-
 
 Kun käytät sovelluksia,näet muutokset automaattisesti aina, kun sovelluksen tekijä julkaisee päivityksiä. Tekijä määrittää myös, kuinka usein tiedot ajoitetaan päivittymään, joten sinun ei tarvitse huolehtia niiden pitämisestä ajan tasalla. 
 

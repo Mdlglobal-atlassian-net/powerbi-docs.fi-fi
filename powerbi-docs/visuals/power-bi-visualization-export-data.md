@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 12/26/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 06ff1326c902c723614b3b89c0b5c1217fa06ea3
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 83ca49a3307a12e8a92c01de4175fcb117e3163d
+ms.sourcegitcommit: 54907bb59a5c31b25d368d83a0c4faa5e2f0db66
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54295628"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54838435"
 ---
 # <a name="export-data-from-visualizations"></a>Tietojen vieminen visualisoinneista
 Jos haluat nähdä tiedot, joita käytetään visualisoinnin luomiseen, [voit näyttää nämä tiedot Power BI:ssä](service-reports-show-data.md) tai viedä nämä tiedot Exceliin .xlsx- tai .csv-tiedostona. Tietojen vienti edellyttää Pro- tai Premium-käyttöoikeutta ja tietojoukon ja raportin muokkausoikeuksia. 
@@ -83,7 +83,7 @@ Kun valitset **Pohjana olevat tiedot**, saatat nähdä erilaisia tietoja. Näide
 | Visualisoinnin sisältö |                                                                              Mitä näet viennissä                                                                              |
 |-----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |   Koosteet    |                                                 *ensimmäisen* koosteen ja ei-piilotetut tiedot tämän koosteen koko taulukosta                                                  |
-|   Koosteet    | liittyvät tiedot – jos visualisointi käyttää muita tietoja muista tietotaulukoista, jotka *\*\*liittyvät*\* koosteen sisältävään tietotaulukkoon (kunhan tämä suhde on \*:1 tai 1:1) |
+|   Koosteet    | liittyvät tiedot – jos visualisointi käyttää muita tietoja muista tietotaulukoista, jotka  *liittyvät* koosteen sisältävään tietotaulukkoon (kunhan tämä suhde on \*:1 tai 1:1) |
 |    Mittayksiköt     |                                      Kaikki toimenpiteet visualisoinnissa *ja* kaikki toimenpiteet mistä tahansa tietotaulukosta, joka sisältää visualisoinnissa käytetyn mittayksikön                                      |
 |    Mittayksiköt     |                                       Kaikki ei-piilotetut tiedot taulukoista, jotka sisältävät tämän mittayksikön (kunhan tämä suhde on \*:1 tai 1:1)                                       |
 |    Mittayksiköt     |                                      Kaikki tiedot kaikista taulukoista, jotka liittyvät mittayksiköt sisältävään taulukkoon ketjun \*:1/1:1) kautta                                      |

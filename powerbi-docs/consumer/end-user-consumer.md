@@ -1,22 +1,23 @@
 ---
 title: Mikä Power BI:n kuluttajaversio on?
-description: Yhteenveto Power BI:stä ja siitä miten sen eri osat - Power BI Desktop, Power BI -palvelu, Power BI -mobiilisovellus, raporttipalvelin, Power BI Embedded - toimivat yhdessä.
+description: Yleiskatsaus Power BI -kuluttajaan eli yrityskäyttäjään eli loppukäyttäjään.
 author: mihart
 manager: kvivek
 ms.service: powerbi
 ms.custom: seodec18
 ms.subservice: powerbi-service
 ms.topic: overview
-ms.date: 12/06/2018
+ms.date: 01/22/2019
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: cd78e281fd9e16857c2a36e7e4f1f253a919c4de
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 38c2161fe0d1bb02975caa405b8047799991d8c2
+ms.sourcegitcommit: 54907bb59a5c31b25d368d83a0c4faa5e2f0db66
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54291739"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54838351"
 ---
+<!-- fold this topic into existing topics -->
 # <a name="power-bi-for-consumers"></a>Power BI kuluttajille
 Työroolisi määrittää, miten käytät Power BI:tä. *Loppukäyttäjät* ja *kuluttajat* vastaanottavat koontinäyttöjä, raportteja ja sovelluksia työtovereiltaan. Työskentelet ***Power BI -palvelussa***, jossa voit tarkastella ja käsitellä tätä sisältöä ja tehdä sen perusteella liiketoimintapäätöksiä.
 
