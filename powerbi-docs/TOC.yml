@@ -64,7 +64,7 @@ items:
       href: desktop-many-to-many-relationships.md
     - name: Tallennustilamoodi Power BI Desktopissa (esikatselu)
       href: desktop-storage-mode.md
-    - name: Kaksisuuntainen ristiinsuodatus Power BI Desktopissa (esikatselu)
+    - name: Kaksisuuntainen ristiinsuodatus Power BI Desktopissa
       href: desktop-bidirectional-filtering.md
     - name: Power BI ja DirectQuery
       href: desktop-directquery-about.md
@@ -1110,13 +1110,15 @@ items:
         href: report-server/quickstart-create-powerbi-report.md
       - name: Raporttipalvelimen sisällön hallinta
         href: report-server/getting-around.md
+      - name: RLS (row-level security, rivitason suojaus) raporttipalvelimessa
+        href: report-server/row-level-security-report-server.md
       - name: Sivutetun raportin luominen raporttipalvelimeen
         href: report-server/quickstart-create-paginated-report.md
       - name: Anna tiedot suoraan sivutettuun raporttiin
         href: paginated-reports-enter-data.md
       - name: Suorituskykyilmaisimien käsitteleminen
         href: https://go.microsoft.com/fwlink/?linkid=849021
-      - name: 'Jaettujen tietojoukkojen käyttö OData-syötteinä '
+      - name: Jaettujen tietojoukkojen käyttö OData-syötteinä
         href: report-server/access-dataset-odata.md
       - name: Ajoitetun päivityksen määrittäminen
         href: report-server/configure-scheduled-refresh.md
@@ -1293,9 +1295,9 @@ items:
       href: service-admin-governance.md
     - name: Power BI:n suojaus
       href: service-admin-power-bi-security.md
-ms.openlocfilehash: b3553d493940b831e3e604fe43176ace125fe995
-ms.sourcegitcommit: 658b0de4f5a544d0906665b40925552804a61880
+ms.openlocfilehash: ae98cdee3793186b590ded6143546b5b79062685
+ms.sourcegitcommit: 2c49a7cee9c77f46830ddfa59fdedbf30186d389
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/19/2019
-ms.locfileid: "54406726"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54488887"
