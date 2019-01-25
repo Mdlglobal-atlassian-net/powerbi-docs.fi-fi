@@ -8,31 +8,47 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 08/16/2018
-ms.openlocfilehash: 91179ca37b8ba5c883785501588c9b12a02d644d
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.date: 01/22/2019
+ms.openlocfilehash: 2a65baf94abcb79dac7bb9419ad67124f2b65bb8
+ms.sourcegitcommit: 2c49a7cee9c77f46830ddfa59fdedbf30186d389
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54292449"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54488933"
 ---
 # <a name="whats-new-in-power-bi-report-server"></a>Power BI -raporttipalvelinten uudet ominaisuudet
 
 Lue Power BI -raporttipalvelimen uusista ominaisuuksista. Tämä artikkeli käsittelee tärkeimpiä ominaisuuksia, ja sitä päivitetään uusien julkaisujen myötä.
 
-Lataa Power BI -raporttipalvelin ja Power BI -raporttipalvelimelle optimoitu Power BI Desktop tutustumalla ohjeaiheeseen [Paikallinen raportointi Power BI -raporttipalvelimella](https://powerbi.microsoft.com/report-server/).
-
-Katso myös seuraavat lähteet, joiden avulla pysyt ajan tasalla Power BI -raporttipalvelimen uusista ominaisuuksista.
-
-* [Microsoftin Power BI ‑blogi](https://powerbi.microsoft.com/blog/)
-* [SQL Server Reporting Services -tiimin blogi](https://blogs.msdn.microsoft.com/sqlrsteamblog/)
-* [Guy in a Cube ‑YouTube-kanava](https://aka.ms/guyinacube)
+Lataa Power BI -raporttipalvelimen ja Power BI -raporttipalvelimelle optimoidun Power BI Desktopin uusimmat versiot tutustumalla ohjeaiheeseen [Paikallinen raportointi Power BI -raporttipalvelimella](https://powerbi.microsoft.com/report-server/).
 
 Lisätietoja Power BI:hin liittyvistä uusista ominaisuuksista:
 
 * [Power BI -palvelun uudet ominaisuudet](../service-whats-new.md)
 * [Power BI Desktopin uudet ominaisuudet](../desktop-latest-update.md)
 * [Power BI -mobiilisovellusten uudet ominaisuudet](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)
+
+## <a name="january-2019"></a>Tammikuu 2019
+
+Seuraavien Power BI -raporttien ominaisuuksien tuki:
+
+[**Rivitason suojaus**](row-level-security-report-server.md) Tietojen käyttöä voidaan Power BI -raporttipalvelimessa rajoittaa tietyille käyttäjille määrittämällä rivitason suojaus (RLS). Suodattimet rajoittavat tietojen käyttöä rivitasolla ja voit määrittää roolien sisäisiä suodattimia.
+
+[**Matriisin riviotsikoiden laajennus ja kutistus**](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/#expandCollapse) Lisätty mahdollisuus laajentaa tai kutistaa yksittäisiä riviotsikoita. Tämä on yksi pyydetyimpiä visualisointiominaisuuksia.
+
+[**Kopiointi ja liittäminen .pbix-tiedostojen välillä**](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/#copyPaste) Voit kopioida visualisointeja .pbix-tiedostojen välillä joko visualisoinnin pikavalikosta tai normaalilla Ctrl+C-näppäinyhdistelmällä ja liittää niitä sitten toiseen raporttiin näppäinyhdistelmällä Ctrl+V.
+
+[**Älykkäät tasauksen apuviivat**](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#smartGuides) Näet älykkäitä tasauksen apuviivoja siirtäessäsi objekteja raporttisivulla, samaan tapaan kuin PowerPointissa. Niiden avulla saat objektit helposti tasattua sivulle. Näet apuviivat aina, kun vedät objektia sivulla tai muutat sen kokoa. Jos siirrät objektin toisen objektin lähelle, se napsahtaa paikalleen tasattuna toisen objektin mukaan.
+
+**Helppokäyttötoiminnot** Liian monia helppokäyttötoimintoja lueteltaviksi: esimerkiksi [Kentät-luetteloruudun helppokäyttöisyyden tuki](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#fieldList). Kentät-luetteloruutu on nyt täysin helppokäyttöinen. Voit siirtyä ruudussa näppäimistön ja näytönlukuohjelman avulla ja lisätä raporttisivuun kenttiä pikavalikosta.
+
+### <a name="administrator-settings"></a>Järjestelmänvalvojan asetukset
+
+Järjestelmänvalvojat voivat määrittää seuraavat palvelinklusterin asetukset SSMS:n lisäasetuksista:
+
+**AllowedResourceExtensionsForUpload** Määritä niiden resurssien tiedostopäätteet, joita raporttipalvelimeen voi ladata. Sisäänrakennettujen tiedostotyyppien tiedostopäätteitä, kuten &ast;.rdl ja &ast;.pbix, ei tarvitse lisätä. Oletusasetus on ”&ast;, &ast;.xml, &ast;.xsd, &ast;.xsl, &ast;.png, &ast;.gif, &ast;.jpg, &ast;.tif, &ast;.jpeg, &ast;.tiff, &ast;.bmp, &ast;.pdf, &ast;.svg, &ast;.rtf, &ast;.txt, &ast;.doc, &ast;.docx, &ast;.pps, &ast;.ppt, &ast;.pptx”. 
+
+**SupportedHyperlinkSchemes** Määrittää CSV-muotoisen luettelon hyperlinkkitoiminnoissa sallituista URI-malleista, joiden hahmontaminen sallitaan. &ast; sallii kaikki hyperlinkkimallit. Esimerkiksi asetus ”http,https” sallisi hyperlinkit osoitteeseen https://www. contoso.com mutta poistaisi hyperlinkit osoitteeseen mailto:bill@contoso.com tai javascript:window.open(‘www.contoso.com’, ‘_blank’). Oletusasetus on &ast;.
 
 ## <a name="august-2018"></a>Elokuu 2018
 
@@ -325,10 +341,10 @@ Power BI-raporttipalvelin tukee nyt uusia Power BI -taulukko- ja matriisivisuali
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
-[Mikä onPower BI -raporttipalvelin?](get-started.md) 
-[Järjestelmänvalvojien opas](admin-handbook-overview.md)  
-[Power BI -raporttipalvelimen asentaminen](install-report-server.md)  
-[Raportin muodostimen lataaminen](https://www.microsoft.com/download/details.aspx?id=53613)  
-[SQL Server Data Tools (SSDT) -työkalujen lataaminen](http://go.microsoft.com/fwlink/?LinkID=616714)
+Katso seuraavat lähteet, joiden avulla pysyt ajan tasalla Power BI -raporttipalvelimen uusista ominaisuuksista.
 
-Onko sinulla muuta kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
+* [Microsoftin Power BI ‑blogi](https://powerbi.microsoft.com/blog/)
+* [SQL Server Reporting Services -tiimin blogi](https://blogs.msdn.microsoft.com/sqlrsteamblog/)
+* [Guy in a Cube ‑YouTube-kanava](https://aka.ms/guyinacube)
+
+Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)

@@ -9,18 +9,41 @@ ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 03/31/2018
 ms.author: jtarquino
-ms.openlocfilehash: edf953f2512550660fd914d2fe54c28dcd01fa24
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 18a2d6833f0013f95ac0a5dea5f1930e5b666dd6
+ms.sourcegitcommit: 2c49a7cee9c77f46830ddfa59fdedbf30186d389
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54292027"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54488864"
 ---
 # <a name="changelog-for-power-bi-report-server"></a>Power BI -raporttipalvelimen muutosloki
 
 Power BI -raporttipalvelimen muutoslokissa on listattu jokaisen koontiversion uudet ominaisuudet ja ohjelmavirhekorjaukset.
 
 Lisätietoja uusista ominaisuuksista on artikkelissa [Power BI -raporttipalvelinten uudet ominaisuudet](whats-new.md). 
+
+## <a name="january-2019"></a>Tammikuu 2019
+- **Power BI -raporttipalvelin**            
+    - *Versio 1.4.6960.38798 (koontiversio 15.0.1102.222), julkaistu: 22. tammikuuta 2019*
+        - Ominaisuudet
+            - Power BI -raportit 
+                - Rivitason suojauksen tuki
+                - Matriisin riviotsikoiden laajennus ja kutistus
+                - Kopioiminen ja liittäminen .pbix-tiedostojen välillä
+                - Älykkäät tasauksen apuviivat
+                - SAP BW 2.0 -yhdistimen tuki
+            - Järjestelmänvalvojat
+                - Mahdollisuus rajoittaa resurssien tiedostopäätteitä, joita raporttipalvelimeen voi ladata
+                - Mahdollisuus rajoittaa tuettuja hyperlinkkimalleja
+        - Ohjelmavirhekorjauksia
+            - HTML:n lisäyksen heikkous
+            - Euron merkki ei näy PDF-tiedostoksi vietäessä
+            - Jos useiden tietolähteiden salasana tallennetaan Power BI -raporteissa, muuttamattomat salasanat lakkaavat toimimasta
+            - Visualisointien näyttämiseen liittyvät ongelmat Power BI -mobiilisovelluksessa käyttämättömyysajan jälkeen
+
+- **Power BI Desktop (optimoitu Power BI -raporttipalvelimelle)**
+    - *Versio: 2.65.5313.1421 (tammikuu 2019), julkaistu: 22. tammikuuta 2019*
+        - Sisältää Power BI -raporttipalvelinyhteyden edellyttämiä muutoksia (tammikuu 2019)  
 
 ## <a name="august-2018"></a>Elokuu 2018
 - **Power BI -raporttipalvelin**

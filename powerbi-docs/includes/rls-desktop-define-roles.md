@@ -1,16 +1,16 @@
-## <a name="define-roles-and-rules-within-power-bi-desktop"></a>Roolien ja sääntöjen määrittäminen Power BI Desktopissa
+## <a name="define-roles-and-rules-in-power-bi-desktop"></a>Roolien ja sääntöjen määrittäminen Power BI Desktopissa
 Power BI Desktopissa voit määrittää rooleja ja sääntöjä. Kun julkaiset Power BI:ssä, myös roolimääritykset julkaistaan.
 
-Voit määrittää tietoturvarooleja noudattamalla seuraavia ohjeita.
+Voit määrittää käyttöoikeusroolit seuraavien ohjeiden mukaisesti.
 
 1. Tuo tietoja Power BI Desktop ‑raporttiin tai määritä DirectQuery-yhteys.
    
    > [!NOTE]
-   > Power BI Desktopissa ei voi määrittää rooleja Analysis Services ‑liveyhteyksille. Se täytyy tehdä Analysis Services ‑mallin sisältä.
+   > Power BI Desktopissa ei voi määrittää rooleja reaaliaikaisille Analysis Services -yhteyksille. Ne täytyy määrittää Analysis Services -mallin sisältä.
    > 
    > 
-2. Valitse **Mallinnus**-välilehti.
-3. Valitse **Roolien hallinta**.
+1. Valitse **Mallinnus**-välilehti.
+2. Valitse **Roolien hallinta**.
    
    ![](./media/rls-desktop-define-roles/powerbi-desktop-security.png)
 4. Valitse **Luo**.
@@ -21,7 +21,7 @@ Voit määrittää tietoturvarooleja noudattamalla seuraavia ohjeita.
 7. Anna DAX-lausekkeet. Lausekkeen tulisi palauttaa joko arvo tosi tai epätosi. Esimerkki: [Entiteetin tunnus] = ”arvo”.
    
    > [!NOTE]
-   > Voit käyttää lausekkeessa funktiota *username()*. Huomaa, että *username()* on Power BI Desktopissa muodossa *TOIMIALUE\käyttäjänimi*. Power BI -palvelussa se on käyttäjän UPN:n muodossa. Vaihtoehtoisesti voit käyttää funktiota *userprincipalname()* joka palauttaa käyttäjän aina täydellisen käyttäjätunnuksen muodossa.
+   > Voit käyttää lausekkeessa funktiota *username()*. Huomaa, että *username()* on Power BI Desktopissa muodossa *TOIMIALUE\käyttäjänimi*. Power BI -palvelussa ja Power BI -raporttipalvelimessa se ilmoitetaan täydellisenä käyttäjätunnuksena. Vaihtoehtoisesti voit käyttää funktiota *userprincipalname()*, joka palauttaa aina käyttäjän täydellisen käyttäjätunnuksen, *username@contoso.com*.
    > 
    > 
    
@@ -31,5 +31,5 @@ Voit määrittää tietoturvarooleja noudattamalla seuraavia ohjeita.
    ![](./media/rls-desktop-define-roles/powerbi-desktop-security-validate-dax.png)
 9. Valitse **Tallenna**.
 
-Käyttäjille ei voi määrittää roolia Power BI Desktopista. Se on tehtävä Power BI -palvelusta. Voit ottaa käyttöön Power BI Desktopin dynaamiset suojausominaisuudet hyödyntämällä *username()*- tai *userprincipalname()*-DAX-funktioita, kun oikeat suhteet on määritetty.
+Käyttäjille ei voi määrittää roolia Power BI Desktopissa. Voit määrittää ne Power BI -palvelussa. Voit ottaa käyttöön Power BI Desktopin dynaamiset suojausominaisuudet hyödyntämällä *username()*- tai *userprincipalname()*-DAX-funktioita, kun oikeat suhteet on määritetty. 
 

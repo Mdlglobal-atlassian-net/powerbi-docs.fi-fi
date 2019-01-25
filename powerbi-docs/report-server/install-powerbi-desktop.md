@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 09/19/2018
+ms.date: 01/14/2019
 ms.author: maggies
-ms.openlocfilehash: 943e81c8c49a4a0707ed41b593093fc27a85a01e
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 1f7da83629b932d2e14fbc57682e0f7f7988739a
+ms.sourcegitcommit: 2c49a7cee9c77f46830ddfa59fdedbf30186d389
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54295877"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54488818"
 ---
 # <a name="install-power-bi-desktop-optimized-for-power-bi-report-server"></a>Asenna Power BI -raporttipalvelimelle optimoitu Power BI Desktop
 Opi asentamaan Power BI -raporttipalvelimelle optimoitu Power BI Desktop.
@@ -31,7 +31,7 @@ Helpoin tapa varmistaa, että sinulla on Power BI -raporttipalvelimelle optimoid
 
     ![Lataa Power BI Desktop verkkoportaalista](media/install-powerbi-desktop/report-server-download-web-portal.png)
 
-    Voit myös siirtyä suoraan kohtaan [Microsoft Power BI Desktop](https://www.microsoft.com/download/details.aspx?id=57271) (optimoitu Power BI -raporttipalvelimelle – elokuu 2018) Microsoft Download Centerissä.
+    Voit myös siirtyä suoraan kohtaan [Microsoft Power BI Desktop](https://www.microsoft.com/download/details.aspx?id=57271) (optimoitu Power BI -raporttipalvelimelle – tammikuu 2019) Microsoft Download Centerissä.
 
 2. Valitse Download Center -sivulla **Lataa**.
 
@@ -41,7 +41,7 @@ Helpoin tapa varmistaa, että sinulla on Power BI -raporttipalvelimelle optimoid
 
     - **PBIDesktopRS_x64.msi** (64-bittinen versio).
 
-1. Kun olet ladannut asennusohjelman, suorita Power BI Desktopin (elokuu 2018) ohjattu asennus.
+1. Kun olet ladannut asennusohjelman, suorita Power BI Desktopin (tammikuu 2019) ohjattu asennus.
 
 2. Asennuksen lopussa valitse **Käynnistä Power BI Desktop nyt**.
    
