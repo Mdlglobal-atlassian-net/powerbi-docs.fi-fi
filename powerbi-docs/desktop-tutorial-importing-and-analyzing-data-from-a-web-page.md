@@ -114,7 +114,7 @@ Voit myös suodattaa **Maa**-sarakkeesta pois rivit, jotka eivät sisällä käy
 
 Nyt kun olet muotoillut tietoja haluamallasi tavalla, voit nimetä kyselysi ”Euroopan-mestaruus voittajat”-nimiseksi ja tuoda sen raporttiisi.
 
-1. Syötä **Euroopan-mestaruus voittajat****Kyselyasetukset**-ruudun **Nimi**-tekstikenttään ja paina **Enter**.
+1. Syötä **Euroopan-mestaruus voittajat** **Kyselyasetukset**-ruudun **Nimi**-tekstikenttään ja paina **Enter**.
    
    ![Kyselyn nimeäminen](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage8.png)
 
@@ -128,7 +128,7 @@ Kysely ladataan Power BI Desktopin **Raporttinäkymään**, jossa se näkyy **Ke
 >[!TIP]
 >Pääset aina takaisin **Power Query -editoriin**, jossa voit muokata ja parannella kyselyäsi:
 >- valitsemalla **Lisäasetuksista** kolme pistettä (**...**) **Euroopan-mestaruus voittajat**-kohdan vierestä**Kentät**-ruudusta ja valitsemalla avautuvasta valikosta **Muokkaa kyselyä** tai
->- valitsemalla **Muokkaa kyselyitä** > **Muokkaa kyselyitä****Ulkoiset tiedot** - ryhmästä raporttinäkymän **Koti** -valintanauhasta. 
+>- valitsemalla **Muokkaa kyselyitä** > **Muokkaa kyselyitä** **Ulkoiset tiedot** - ryhmästä raporttinäkymän **Koti** -valintanauhasta. 
 
 ## <a name="create-a-visualization"></a>Visualisoinnin luominen
 

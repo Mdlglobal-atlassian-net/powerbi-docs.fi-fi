@@ -22,7 +22,7 @@ ms.locfileid: "54292334"
 ## <a name="words-and-terminology-that-qa-recognizes"></a>Q&A-toiminnon tunnistamia sanoja ja termejä
 Sivun avainsanaluettelo ei ole täydellinen.  Paras tapa nähdä, tunnistaako Power BI avainsanan, on kokeilla sen kirjoittamista kysymysruutuun.  Jos sana tai termi näkyy harmaana, Power BI ei tunnista sitä.
 
-Alla olevassa luettelossa käytetään preesensiä, mutta useimmissa tapauksissa kaikki aikamuodot tunnistetaan. Esimerkki: ”on” sisältää myös muodot **ovat**, **oli**, **olivat**, **olisi**, **olisivat**, **olleet**.************************  Ja ”lajittele” sisältää muodot **lajiteltu** ja **lajittelu**.  Power BI tunnistaa ja ottaa hakuun mukaan sanan yksikön ja monikon. 
+Alla olevassa luettelossa käytetään preesensiä, mutta useimmissa tapauksissa kaikki aikamuodot tunnistetaan. Esimerkki: ”is” sisältää myös muodot **are**, **was**, **were**, **will be**, **have**, **has**, **had**, **will have**, **has got**, **do**, **does**, **did**.  Ja ”lajittele” sisältää muodot **lajiteltu** ja **lajittelu**.  Power BI tunnistaa ja ottaa hakuun mukaan sanan yksikön ja monikon. 
 
 > [!NOTE]
 > Q&A-toiminto on käytettävissä myös [Microsoft Power BI -sovelluksessa iOS:lle iPad-, iPhone- ja iPod Touch -laitteissa](mobile/mobile-apps-ios-qna.md).
