@@ -63,7 +63,7 @@ Tietojen luokitus organisaatiossasi toteutetaan yleisen järjestelmänvalvojan t
 1. Valitse Asetukset-hammaskuvake ja sitten **Hallintaportaali**.
    
     ![](media/service-data-classification/admin_portal_in_settings.png)
-2. Vaihda **Koontinäyttöjen ja raporttien tietojen luokitus** *päälle***Vuokraajan asetukset** -välilehdeltä.
+2. Vaihda **Koontinäyttöjen ja raporttien tietojen luokitus** *päälle* **Vuokraajan asetukset** -välilehdeltä.
    
     ![](media/service-data-classification/data_classification_switch_location.png)
 

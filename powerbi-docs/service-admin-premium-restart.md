@@ -39,7 +39,7 @@ Voit käynnistää kapasiteetin uudelleen seuraavien vaiheiden mukaisesti.
 
 1. Siirry Power BI -hallintaportaalin **Kapasiteetin asetukset** -välilehdessä haluamaasi kapasiteettiin. 
 
-1. Lisää **CapacityRestart***-toimintomerkintä* kapasiteetin URL-osoitteeseen: https://app.powerbi.com/admin-portal/capacities/<YourCapacityId>?capacityRestartButton=true.
+1. Lisää **CapacityRestart** *-toimintomerkintä* kapasiteetin URL-osoitteeseen: https://app.powerbi.com/admin-portal/capacities/<YourCapacityId>?capacityRestartButton=true.
 
 1. Valitse **Lisäasetukset** > **KAPASITEETIN UUDELLEENKÄYNNISTYS**, valitse **Käynnistä kapasiteetti uudelleen**.
 
