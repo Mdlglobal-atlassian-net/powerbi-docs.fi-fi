@@ -10,12 +10,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 LocalizationGroup: Gateways
 ms.date: 06/05/2018
-ms.openlocfilehash: 4bc704eb5aeb2bf6da18a43a6d4502b5541ce249
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: eea6fe12fdd8821c803863b63ede93179bf67f07
+ms.sourcegitcommit: 3c8196be5626a0f037599abb6ccbd294fb1249df
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54287895"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54899246"
 ---
 # <a name="on-premises-data-gateway"></a>Paikallinen tietoyhdyskäytävä
 
@@ -96,7 +96,9 @@ Kun lisäät tietolähteen yhdyskäytävään, sinun on annettava tunnistetiedot
 
 ## <a name="tenant-level-administration"></a>Vuokraajatason hallinta
 
-Tällä hetkellä ei ole yhtä paikkaa, jossa vuokraajan järjestelmänvalvojat voivat hallita kaikkia yhdyskäytäviä, jotka on asennettu ja määritetty muiden käyttäjien toimesta.  Jos olet vuokraajan järjestelmänvalvojaa, suosittelemme, että pyydät organisaatiosi käyttäjiä lisäämään sinut järjestelmänvalvojaksi jokaiseen organisaatioosi asennettuun yhdyskäytävään. Näin voit hallita organisaatiosi kaikkia yhdyskäytäviä yhdyskäytävän asetukset -sivun kautta tai [PowerShell-komentojen](https://docs.microsoft.com/power-bi/service-gateway-high-availability-clusters#powershell-support-for-gateway-clusters) avulla. 
+Vuokraajan järjestelmänvalvojana näet kaikki vuokraajaan asennetut paikalliset tietoyhdyskäytävät ja voit hallinnoida niitä. Tämä ominaisuus on tällä hetkellä julkisessa esikatseluvaiheessa. Jos haluat lisätietoja, tutustu [Power Platform -hallintakeskuksen dokumentaatioon](/power-platform/admin/onpremises-data-gateway-management).
+
+Jos olet vuokraajan järjestelmänvalvoja, suosittelemme, että pyydät organisaatiosi käyttäjiä lisäämään sinut järjestelmänvalvojaksi jokaiseen organisaatioosi asennettuun yhdyskäytävään. Näin voit hallita organisaatiosi kaikkia yhdyskäytäviä yhdyskäytävän asetukset -sivun kautta tai [PowerShell-komentojen](service-gateway-high-availability-clusters.md#powershell-support-for-gateway-clusters) avulla. 
 
 ## <a name="enabling-outbound-azure-connections"></a>Lähtevien Azure-yhteyksien käyttöön ottaminen
 
