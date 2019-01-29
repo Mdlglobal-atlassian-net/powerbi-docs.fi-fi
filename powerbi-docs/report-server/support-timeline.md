@@ -8,22 +8,22 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 08/16/2018
-ms.openlocfilehash: e24cf43c5797293f83c7f678dee328d502ac2243
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.date: 01/24/2019
+ms.openlocfilehash: b2ddf1e55f54b9c671a92df497c0a2ae1afdcced
+ms.sourcegitcommit: d12d84583e65ebecc8aa947b0cd5720cffdc7978
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54280540"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54907512"
 ---
 # <a name="support-timeline-for-power-bi-report-server"></a>Power BI -raporttipalvelimen tuen aikajana
 
-Power BI -raporttipalvelimen versioita julkaistaan muutaman kerran vuodessa. Tietoturvapäivityksiä ja tärkeitä päivityksiä on saatavilla, kunnes seuraava versio tulee yleiseen jakeluun. Seuraavan version julkaisemisen jälkeen edelliseen versioon julkaistaan tietoturvapäivityksiä version 12 kuukauden elinkaaren loppuosan ajan.
+Power BI -raporttipalvelimen versioita julkaistaan muutaman kerran vuodessa. Tietoturvapäivityksiä ja tärkeitä päivityksiä on saatavilla, kunnes seuraava versio tulee yleiseen jakeluun. Seuraavan version julkaisemisen jälkeen edelliseen versioon julkaistaan tietoturvapäivityksiä version jäljellä olevan 12 kuukauden elinkaaren ajan.
 
 Tämän tukikäytännön ansiosta voimme tarjota asiakkaillemme uusia innovaatioita nopealla tahdilla siten, että asiakkaat voivat ottaa niitä käyttöön joustavasti omassa aikataulussaan.
 
-* Tietoturvapäivitysten ja tärkeiden päivitysten palvelujakso: kun käytössäsi on Power BI -raporttipalvelimen uusin nykyinen versio, saat sekä tietoturvapäivitykset että tärkeät päivitykset.
-* Tietoturvapäivitysten (ainoastaan) palvelujakso: kun uusi versio on julkaistu, vanhempien versioiden tuki rajataan ainoastaan tietoturvapäivityksiin versioiden 12 kuukauden elinkaaren loppuosan ajaksi (kuva 1).
+* Tietoturvapäivitysten ja tärkeiden päivitysten palvelujakso: kun käytössäsi on Power BI -raporttipalvelimen uusin tämänhetkinen versio, saat sekä tietoturvapäivitykset että tärkeät päivitykset.
+* Tietoturvapäivitysten (ainoastaan) palvelujakso: kun uusi versio on julkaistu, vanhempien versioiden tuki rajataan ainoastaan tietoturvapäivityksiin versioiden jäljellä olevan 12 kuukauden elinkaaren ajaksi (kuva 1).
 
     ![Graafinen esitys tuen aikajanasta](media/support-timeline/report-server-support-timeline-overall.png)
 
@@ -31,10 +31,11 @@ Tämän tukikäytännön ansiosta voimme tarjota asiakkaillemme uusia innovaatio
 
 | **Versio** | **Julkaisupäivä** | **Tuen päättymispäivä** |
 | --- | --- | --- |
-| Kesäkuu 2017 |12. kesäkuuta 2017 |Ei tueta |
-| Lokakuu 2017 |31. lokakuuta 2017 |31. lokakuuta 2018 |
+| Kesäkuu 2017 |12. kesäkuuta 2017 |Tuki lopetettu |
+| Lokakuu 2017 |31. lokakuuta 2017 | Tuki lopetettu |
 | Maaliskuu 2018 | 19. maaliskuuta 2018 | 19. maaliskuuta 2019 |
 | Elokuu 2018 | 15. elokuuta 2018 | 15. elokuuta 2019 |
+| Tammikuu 2019 | 23. tammikuuta 2019 | 23. tammikuuta 2020 |
 
 Lataa Power BI -raporttipalvelin ja Power BI -raporttipalvelimelle optimoitu Power BI Desktop tutustumalla ohjeaiheeseen [Paikallinen raportointi Power BI -raporttipalvelimella](https://powerbi.microsoft.com/report-server/).
 

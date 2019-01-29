@@ -8,21 +8,21 @@ featuredvideoid: IkJda4O7oGs
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/19/2018
+ms.date: 01/25/2019
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: 70eb50c493c6828ca03b1161138e1a4f4b1fae8e
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 51a99d59c74160d229c0d18defe2c5e7be4f48fb
+ms.sourcegitcommit: 5bd9bd890db9a7f9d5988c81232f40b9b260a96f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54284415"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55147400"
 ---
-# <a name="tour-of-the-report-editor-in-power-bi"></a>Power BI -raporttieditoriin tutustuminen
+# <a name="tour-the-report-editor-in-power-bi"></a>Power BI -raporttieditoriin tutustuminen
 
 Power BI -palvelun *raporttieditori* ja Power BI Desktopin raporttieditori ovat samankaltaisia. Videossa näytetään Power BI Desktopin raporttieditori ja tässä artikkelissa näytetään Power BI -palvelun raporttieditori. 
 
-Raportin luojana voit luoda ja muokata koontinäyttöjä ja raportteja. Voit sitten jakaa ne raportin käyttäjille. He voivat käsitellä koontinäyttöjä ja raportteja lukunäkymässä Power BI -palvelussa, mutta eivät voi muokata niitä. Lue lisää raportin [lukunäkymän ja muokkausnäkymän eroista Power BI -palvelussa](consumer/end-user-reading-view.md) 
+Raportin luojana voit luoda ja muokata koontinäyttöjä ja raportteja. Voit sitten jakaa ne raportin käyttäjille. He voivat käsitellä koontinäyttöjä ja raportteja lukunäkymässä Power BI -palvelussa, mutta eivät voi muokata niitä. Lue lisää siitä, [mitä raporttien käyttäjät voivat tehdä Power BI -palvelussa](consumer/end-user-reading-view.md) 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/IkJda4O7oGs" frameborder="0" allowfullscreen></iframe>
 
@@ -65,7 +65,7 @@ Voit poistaa kentän visualisoinnista valitsemalla **X** kentän nimen oikealta 
 Katso lisätietoja artikkelista [Visualisointien lisääminen Power BI -raporttiin](visuals/power-bi-report-add-visualizations-i.md).
 
 ### <a name="format-your-visuals"></a>Visualisointien muotoileminen
-Voit näyttää Muotoilu-ruudun valitsemalla maalirullakuvakkeen. Saatavilla oleva vaihtoehto riippuu valitun visualisoinnin tyypistä.
+Voit näyttää Muotoilu-ruudun valitsemalla maalirullakuvakkeen. Saatavilla olevat vaihtoehdot riippuvat valitun visualisoinnin tyypistä.
 
 ![Raporttieditorin Muotoilu-ruutu](media/service-the-report-editor-take-a-tour/power-bi-formatting.png)
 
@@ -76,7 +76,7 @@ Muotoilumahdollisuudet ovat lähes loputtomat.  Saat lisätietoja tutustumalla a
 * [X-akselin ja Y-akselin ominaisuuksien mukauttaminen](visuals/power-bi-visualization-customize-x-axis-and-y-axis.md)
 
 ### <a name="add-analytics-to-your-visualizations"></a>Analytiikan lisääminen visualisointeihin
-Voit näyttää Analytiikka-ruudun valitsemalla suurennuslasikuvakkeen. Saatavilla oleva vaihtoehto riippuu valitun visualisoinnin tyypistä.
+Voit näyttää Analytiikka-ruudun valitsemalla suurennuslasikuvakkeen. Saatavilla olevat vaihtoehdot riippuvat valitun visualisoinnin tyypistä.
 
 ![Raporttieditorin Analytiikka-ruutu](media/service-the-report-editor-take-a-tour/power-bi-analytics.png)    
 Power BI -palvelun Analytiikka-ruudussa voit lisätä dynaamisia viiteviivoja visualisointeihin ja määrittää kohdistuksen tärkeille trendeille tai merkityksellisille tiedoille. Lisätietoja on artikkelissa [Power BI -palvelun Analytiikka-ruutu](service-analytics-pane.md) tai [Power BI Desktopin Analytiikka-ruutu](desktop-analytics-pane.md).
@@ -85,7 +85,7 @@ Power BI -palvelun Analytiikka-ruudussa voit lisätä dynaamisia viiteviivoja vi
 ## <a name="the-filters-pane"></a>Suodattimet-ruutu
 Voit Suodattimet-ruudun avulla tarkastella, määrittää ja muokata raporttien pysyviä suodattimia sivun, raportin, porautumisen ja visualisoinnin tasolla. Kyllä, voit suodattaa myös tilapäisesti raportin sivuja ja visualisointeja valitsemalla visualisoinnin elementit tai käyttämällä osittajien kaltaisia työkaluja. Kun käytät Suodattimet-ruutua, suodattimien tila tallennetaan kuitenkin raportin kanssa. 
 
-Suodattimet-ruudulla on myös toinen tehokas ominaisuus eli voit suodattaa käyttämällä kenttää ***, jota ei jo käytetä raportin yhdessä visualisoinnissa***. Selvitän tätä tarkemmin. Kun luot raportin sivun, Power BI lisää automaattisesti kaikki käyttämäsi kentät visualisointeihin Suodattimet-ruudun Visualisointi-tason suodatinalueella.  Jos haluat määrittää visualisoinnin, sivun, porauksen tai raportin suodattimen käyttämällä kenttää, jota ei tällä hetkellä käytetä visualisoinnissa, vedä se yhteen Suodattimet-säilöistä.   
+Suodattimet-ruudulla on myös toinen tehokas ominaisuus: voit suodattaa käyttämällä kenttää, ***jota ei jo käytetä raportin visualisoinneissa***. Selvitän tätä tarkemmin. Kun luot raportin sivun, Power BI lisää automaattisesti kaikki käyttämäsi kentät visualisointeihin Suodattimet-ruudun Visualisointi-tason suodatinalueella.  Jos haluat määrittää visualisoinnin, sivun, porauksen tai raportin suodattimen käyttämällä kenttää, jota ei tällä hetkellä käytetä visualisoinnissa, vedä se yhteen Suodattimet-säilöistä.   
 
 ![Suodattimet-ruutu](media/service-the-report-editor-take-a-tour/power-bi-formatting-pane.png)
 

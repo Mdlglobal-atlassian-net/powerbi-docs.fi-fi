@@ -7,19 +7,19 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 01/14/2019
+ms.date: 01/24/2019
 ms.author: maggies
-ms.openlocfilehash: 1f7da83629b932d2e14fbc57682e0f7f7988739a
-ms.sourcegitcommit: 2c49a7cee9c77f46830ddfa59fdedbf30186d389
+ms.openlocfilehash: c118e3c2f8b30635982a37c47da9fb9e337aff05
+ms.sourcegitcommit: d12d84583e65ebecc8aa947b0cd5720cffdc7978
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54488818"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54907513"
 ---
 # <a name="install-power-bi-desktop-optimized-for-power-bi-report-server"></a>Asenna Power BI -raporttipalvelimelle optimoitu Power BI Desktop
 Opi asentamaan Power BI -raporttipalvelimelle optimoitu Power BI Desktop.
 
-Jotta voit luoda Power BI -raportteja Power BI -raporttipalvelimelle, sinun on ladattava ja asennettava Power BI -raporttipalvelimelle optimoitu Power BI Desktop. Tämä versio on erilainen kuin Power BI -palvelun kanssa käytettävä Power BI Desktop. Power BI Desktopin versio Power BI -palvelulle sisältää esimerkiksi esikatseluominaisuuksia, joita ei ole käytettävissä Power BI -raporttipalvelinversiossa ennen kuin ne on julkaistu. Käyttämällä tätä versiota varmistetaan, että raporttipalvelin voi käsitellä raporttien ja mallin tunnettua versiota. 
+Jotta voit luoda Power BI -raportteja Power BI -raporttipalvelimelle, sinun on ladattava ja asennettava Power BI -raporttipalvelimelle optimoitu Power BI Desktop. Tämä versio on erilainen kuin Power BI -palvelun kanssa käytettävä Power BI Desktop. Power BI Desktopin versio Power BI -palvelulle sisältää esimerkiksi esiversio-ominaisuuksia, joita Power BI -raporttipalvelinversiossa ei ole ennen niiden julkaisua. Käyttämällä tätä versiota varmistetaan, että raporttipalvelin voi käsitellä raporttien ja mallin tunnettua versiota. 
 
 Onneksi voit asentaa Power BI Desktopin ja Power BI -raporttipalvelimelle optimoidun Power BI Desktopin rinnakkain samalle tietokoneelle.
 
@@ -31,7 +31,7 @@ Helpoin tapa varmistaa, että sinulla on Power BI -raporttipalvelimelle optimoid
 
     ![Lataa Power BI Desktop verkkoportaalista](media/install-powerbi-desktop/report-server-download-web-portal.png)
 
-    Voit myös siirtyä suoraan kohtaan [Microsoft Power BI Desktop](https://www.microsoft.com/download/details.aspx?id=57271) (optimoitu Power BI -raporttipalvelimelle – tammikuu 2019) Microsoft Download Centerissä.
+    Voit myös siirtyä suoraan kohtaan [Microsoft Power BI Desktop](https://go.microsoft.com/fwlink/?linkid=2055039) (optimoitu Power BI -raporttipalvelimelle – tammikuu 2019) Microsoft Download Centerissä.
 
 2. Valitse Download Center -sivulla **Lataa**.
 
@@ -47,17 +47,17 @@ Helpoin tapa varmistaa, että sinulla on Power BI -raporttipalvelimelle optimoid
    
     Se käynnistyy automaattisesti ja on valmiina käyttöön.
 
-## <a name="verify-you-are-using-the-correct-version"></a>Varmista, että käytät oikeaa versiota
-Voit varmistaa, että käytät Power BI Desktopin oikeaa versiota, Power BI Desktopin käynnistysnäytöstä tai otsikkoriviltä. Otsikkorivi ilmaisee version julkaisukuukauden ja -vuoden.
+## <a name="verify-youre-using-the-correct-version"></a>Varmista, että käytät oikeaa versiota
+Oikean Power BI Desktop -version varmistaminen on helppoa: vilkaise Power BI Desktopin käynnistysruutua tai otsikkoriviä. Otsikkorivi ilmaisee version julkaisukuukauden ja -vuoden. Myös Power BI -logon värit ovat päinvastaiset: keltaista mustalla taustalla eikä päinvastoin.
 
-![Power BI -raporttipalvelimelle optimoidun Power BI Desktopin otsikkorivi](media/install-powerbi-desktop/power-bi-report-server-desktop-august-2018.png)
+![Power BI -raporttipalvelimelle optimoidun Power BI Desktopin otsikkorivi](media/install-powerbi-desktop/power-bi-report-server-desktop-jan-2019.png)
 
 Power BI -palvelun Power BI Desktop -versiossa ei ole kuukautta ja vuotta otsikkorivillä.
 
 ## <a name="file-extension-association"></a>Tiedostotunnisteen kytkentä
-Jos olet asentanut sekä Power BI Desktopin että Power BI -raporttipalvelimelle optimoidun Power BI Desktopin samalle koneelle, Power BI Desktopin viimeisimmässä asennuksessa on tiedostokytkentä .pbix. Tämä tarkoittaa, että kun kaksoisnapsautat pbix-tiedostoa, viimeksi asennettu Power BI Desktop käynnistyy.
+Jos asennat sekä Power BI Desktopin että Power BI -raporttipalvelimelle optimoidun Power BI Desktopin samalle koneelle, Power BI Desktopin uusimmassa asennuksessa on tiedostokytkentä .pbix-tiedostoille. Toisin sanoen kun kaksoisnapsautat .pbix-tiedostoa, se avataan viimeksi asennetussa Power BI Desktopissa.
 
-Jos sinulla oli Power BI Desktop ja asensit sitten Power BI -raporttipalvelimelle optimoidun Power BI Desktopin, kaikki pbix-tiedostot avataan oletuksena Power BI -raporttipalvelimelle optimoidussa Power BI Desktopissa. Jos haluat, että pbix-tiedoston avaamisen yhteydessä oletuksena käynnistyvä ohjelma on Power BI Desktop, asenna Power BI Desktop uudelleen Power BI -palvelusta.
+Jos sinulla on Power BI Desktop ja asennat sitten Power BI -raporttipalvelimelle optimoidun Power BI Desktopin, kaikki .pbix-tiedostot avataan oletuksena Power BI -raporttipalvelimelle optimoidussa Power BI Desktopissa. Jos haluat, että .pbix-tiedostot avataan oletusarvoisesti Power BI Desktopissa, asenna [Power BI Desktop uudelleen Microsoft Storesta](http://aka.ms/pbidesktopstore).
 
 Voit myös aina ensin avata sen Power BI Desktopin version, jota haluat käyttää. Ja avata sitten tiedoston Power BI Desktopista.
 
@@ -95,10 +95,9 @@ Power BI -raporttipalvelimen raportit eivät tue näitä ominaisuuksia Power BI 
 
 ## <a name="power-bi-desktop-for-earlier-versions-of-power-bi-report-server"></a>Power BI Desktop Power BI -raporttipalvelimen aiempiin versioihin
 
-Jos raporttipalvelimesi on aiempi versio, tarvitset vastaavan version Power BI Desktopista. Tässä ovat kaksi aiempaa versiota.
+Jos raporttipalvelimesi on aiempi versio, tarvitset vastaavan version Power BI Desktopista. Tässä on aiempi versio.
 
-- Microsoft Power BI Desktop ([optimoitu Power BI -raporttipalvelimelle - lokakuu 2017](https://www.microsoft.com/download/details.aspx?id=56136))
-- Microsoft Power BI Desktop ([optimoitu Power BI -raporttipalvelimelle - kesäkuu 2017](https://www.microsoft.com/download/details.aspx?id=55330))
+- Microsoft Power BI Desktop ([optimoitu Power BI -raporttipalvelimelle – elokuu 2018](https://www.microsoft.com/download/details.aspx?id=57271))
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 Nyt kun sinulla on Power BI Desktop asennettuna, voit aloittaa Power BI -raporttien luomisen.

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: dc26d6de5ca22fdabfd80bd7ba1d9830e274f808
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 826338a5e5524bb54c2ebb2207a3d438a8d428b1
+ms.sourcegitcommit: 3c8196be5626a0f037599abb6ccbd294fb1249df
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54284491"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54899223"
 ---
 # <a name="connect-to-an-oracle-database"></a>Oracle-tietokantaan yhdistäminen
 Yhteyden muodostaminen Oracle-tietokantaan **Power BI Desktopilla** edellyttää, että tietokoneessa on asennettuna Power BI Desktop ja oikea Oracle-asiakasohjelmisto. Oracle-asiakasohjelmiston versio (**32-bittinen** vai **64-bittinen**) määräytyy tietokoneeseen asennetun Power BI Desktop -version mukaan.
@@ -51,3 +51,11 @@ Kun tietokoneessa on asennettuna vastaava Oracle-asiakasohjelman ohjain, voit mu
 4. Kun olet kirjoittanut Oracle-tietokannan tiedot Oracle Database -valintaikkunaan (myös valinnaiset tiedot, kuten SID-tunnuksen tai alkuperäisen tietokantakyselyn), muodosta yhteys valitsemalla **OK**.
 5. Jos Oracle-tietokanta edellyttää tietokannan käyttäjän tunnistetietoja, kirjoita kyseiset tiedot valintaikkunaan pyydettäessä.
 
+
+## <a name="troubleshooting"></a>Vianmääritys
+
+Jos olet ladannut Power BI Desktopin Microsoft Storesta, et ehkä pysty muodostamaan yhteyttä Oracle-tietokantoihin Oracle-ohjainongelman vuoksi. Jos kohtaat tämän ongelman, saat virheviestin: Objektiviittausta ei ole määritetty. Voit korjata ongelman toimimalla jommallakummalla seuraavista tavoista:
+
+* Lataa Power BI Desktop kohteesta https://powerbi.microsoft.com/desktop.
+
+* Jos haluat käyttää Microsoft Store -versiota, kopioi paikallisessa tietokoneessa oraons.dll kohteesta _12.X.X\client_X_ kohteeseen _12.X.X\client_X\bin_. X vastaa versio- ja hakemistonumeroita.

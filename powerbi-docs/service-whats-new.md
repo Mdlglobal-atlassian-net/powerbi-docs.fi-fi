@@ -10,21 +10,21 @@ ms.topic: conceptual
 ms.date: 10/16/2018
 ms.author: nikhilga
 LocalizationGroup: Get started
-ms.openlocfilehash: acfc4062677a28824458781b900b271bedd51eb8
-ms.sourcegitcommit: 2c49a7cee9c77f46830ddfa59fdedbf30186d389
+ms.openlocfilehash: ed519f920fc872c8f13d5a10d59ce0f2f531f2fc
+ms.sourcegitcommit: 5bd9bd890db9a7f9d5988c81232f40b9b260a96f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54488910"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55147561"
 ---
 ---
 # <a name="whats-new-in-the-power-bi-service"></a>Power BI -palvelun uudet toiminnot ja ominaisuudet
 Tarkista tältä sivulta **Power BI -palvelun** tunnetut ongelmat ja hiljattain julkaistut ominaisuudet. Lisätietoja aiheeseen liittyvistä uusista ominaisuuksista:
 
+- [Liiketoimintatiedon hallinnan uudet ominaisuudet lokakuussa 2018](https://docs.microsoft.com/business-applications-release-notes/October18/intelligence-platform/planned-features) -julkaisutiedot Microsoft Business Applications -ryhmästä: yrityssovellusten uusimmat päivitykset.
 - [Power BI Desktopin uudet ominaisuudet](desktop-latest-update.md)  
 - [Power BI -mobiilisovellusten uudet ominaisuudet](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)  
 - [Power BI -tiimin blogi](https://powerbi.microsoft.com/blog/)
-- [Yrityssovellusten kevään 2018 julkaisutiedot](http://aka.ms/businessappsreleasenotes) Dynamics 365:stä: Tutustu yrityssovellustemme uusimpiin päivityksiin ja uusiin ominaisuuksiin omien sovellusten ja laajennusten kehittämiseksi ympäristössämme. 
 
 Saat lisätietoja uusista toiminnoista ja ominaisuuksista myös YouTube-kanavista.
 

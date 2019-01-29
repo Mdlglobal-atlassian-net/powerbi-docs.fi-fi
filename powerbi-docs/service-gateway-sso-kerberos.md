@@ -10,12 +10,12 @@ ms.subservice: powerbi-gateways
 ms.topic: conceptual
 ms.date: 10/10/2018
 LocalizationGroup: Gateways
-ms.openlocfilehash: 7256de8dd36c25af9959e7103186666d65123360
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 04f67f82552f7915f8ca4fc6e639de3e616c2f8a
+ms.sourcegitcommit: 5bd9bd890db9a7f9d5988c81232f40b9b260a96f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54295255"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55147584"
 ---
 # <a name="use-kerberos-for-single-sign-on-sso-from-power-bi-to-on-premises-data-sources"></a>Kerberoksen käyttäminen kertakirjautumista (SSO) varten Power BI:stä paikallisiin tietolähteisiin
 
@@ -205,6 +205,9 @@ Nyt kun ymmärrät, miten Kerberos toimii yhdyskäytävän kanssa, voit määrit
 Tämä opas pyrkii olemaan mahdollisimman kattava. Jos olet jo suorittanut joitakin näistä vaiheista, voit ohittaa ne, jos esimerkiksi olet jo luonut palvelukäyttäjän BW-palvelimelle ja yhdistänyt siihen SPN:n tai olet jo asentanut gsskrb5-kirjaston.
 
 ### <a name="setup-gsskrb5-on-client-machines-and-the-bw-server"></a>gsskrb5:n määrittäminen asiakaskoneisiin ja BW-palvelimelle
+
+> [!NOTE]
+> SAP ei enää aktiivisesti tue gsskrb5:tä. Katso lisätietoja artikkelista [SAP-huomautus 352295](https://launchpad.support.sap.com/#/notes/352295). Huomaa myös, ettei gsskrb5 salli SSO-kirjautumisyhteyksiä tietoyhdyskäytävästä BW-viestipalvelimiin. Vain yhteydet BW-sovelluspalvelimiin ovat mahdollisia.
 
 gsskrb5:tä on käytettävä sekä asiakaskoneessa että palvelimella SSO-yhteyden muodostamiseksi yhdyskäytävän kautta. Yleistä Crypto-kirjastoa (sapcrypto) ei nykyisin tueta.
 
