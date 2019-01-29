@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 12/18/2018
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: 487a67f48913ee774904377956eee85ccbae49fc
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 29e6fe1bfb5a85d2a5ea42db406d4a127a65ec25
+ms.sourcegitcommit: 5bd9bd890db9a7f9d5988c81232f40b9b260a96f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54296681"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55147446"
 ---
 # <a name="basic-concepts-for-designers-in-the-power-bi-service"></a>Power BI -palvelun peruskäsitteitä suunnittelijoille
 
@@ -55,7 +55,7 @@ Lisätietoja on sisällysluettelon **Työn jakaminen** -osiossa, jonka ensimmäi
 
 Siirrytään nyt Power BI:n peruselementteihin. Raporttinäkymiä tai raportteja ei voi olla ilman tietoja – tai tyhjinä niistä ei ainakaan ole hyötyä –, joten aloitetaan **tietojoukoista**.
 
-## <a name="datasets"></a>tietojoukot
+## <a name="datasets"></a>Tietojoukot
 *Tietojoukko* on kokoelma tietoja, jotka voit *tuoda* tai joihin voit *muodostaa yhteyden*. Power BI:n avulla voit koota yhteen kaikenlaisia tietojoukkoja muodostamalla niihin yhteyden ja tuomalla niitä.  
 
 Tietojoukot liittyvät *työtiloihin*, ja yksi tietojoukko voi olla osa useita työtiloja. Kun avaat työtilan, siihen liittyvät tietojoukot luetellaan **Tietojoukot**-välilehdellä. Jokainen luettelon tietojoukko edustaa yhtä tietolähdettä, kuten Excel-laskentataulukkoa OneDrivessa, paikallista taulukkomuotoista SSAS-tietojoukkoa tai Salesforce-tietojoukkoa. Tuettuja tietolähteitä on monenlaisia, ja uusia lisätään koko ajan. [Katso luettelo Power BI:n kanssa käytettävistä tietojoukkotyypeistä](service-get-data.md).
@@ -223,7 +223,6 @@ Tämä näytön alue sisältää lisävaihtoehtoja vuorovaikutukseen sisällön 
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 - [Mikä on Power BI?](power-bi-overview.md)  
-- [Siirtyminen: Power BI -palvelussa liikkuminen](service-the-new-power-bi-experience.md)
 - [Power BI -videot](videos.md)  
 - [Raporttieditorin esittely](service-the-report-editor-take-a-tour.md)
 
