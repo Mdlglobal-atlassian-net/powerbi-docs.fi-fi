@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 12/10/2018
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 13c2742325e0cf2714d759eb1fd21ce6bcfd0187
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 03a0e3cbd2a82c0d6741694c4389a8dcf4d207d9
+ms.sourcegitcommit: 2954de034f5e1be655dd02cc756ff34f126d3034
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54291207"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55234251"
 ---
 # <a name="whats-new-in-the-latest-power-bi-desktop-update"></a>Mitä uutta viimeisin Power BI Desktop -päivitys sisältää? 
 
@@ -39,7 +39,7 @@ Seuraavat päivitykset olivat uutta **Power BI Desktopissa** tässä kuussa:
 ### <a name="reporting"></a>Raportointi
 
 * Älykkäitä apuneuvoja objektien tasaamiseen sivulla  [[video]](https://youtu.be/AHNlkjRFdYI?t=11)  [[artikkeli]](power-bi-reports-filters-and-highlighting.md)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#smartGuides) 
-* ArcGIS Maps for Power BI:n päivityksiä [[video]](https://youtu.be/AHNlkjRFdYI?t=84)  [[artikkeli]](power-bi-visualization-arcgis.md)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#arcGIS) 
+* ArcGIS Maps for Power BI:n päivityksiä [[video]](https://youtu.be/AHNlkjRFdYI?t=84)  [[artikkeli]](visuals/power-bi-visualization-arcgis.md)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#arcGIS) 
 * Kenttäluettelon helppokäyttötoimintojen tuki [[video]](https://youtu.be/AHNlkjRFdYI?t=464)  [[artikkeli]](desktop-report-view.md#copy-and-paste-between-reports)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#fieldList)
 * Sarkainjärjestyksen asettaminen sivun objekteille [[video]](https://youtu.be/AHNlkjRFdYI?t=643)   [[artikkeli]](power-bi-reports-filters-and-highlighting.md)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#tabOrder)
 * Työkaluvihjeitä painikevisualisoinneille [[video]](https://youtu.be/AHNlkjRFdYI?t=884)  [[artikkeli]](desktop-accessibility.md)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#tooltips)

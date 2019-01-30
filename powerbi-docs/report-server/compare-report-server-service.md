@@ -10,12 +10,12 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 manager: kfile
 ms.custom: mvc
-ms.openlocfilehash: 95055f19ed4187124d940e0fe7f70068dffc71c5
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 4c7724baf63b1ff4e9e6f3d566da113557ab1b06
+ms.sourcegitcommit: 2954de034f5e1be655dd02cc756ff34f126d3034
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54289758"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55234389"
 ---
 # <a name="comparing-power-bi-report-server-and-the-power-bi-service"></a>Power BI -raporttipalvelimen ja Power BI -palvelun vertailu
 
@@ -38,12 +38,12 @@ Power BI -raporttipalvelimessa ja Power BI -palvelussa on paljon samankaltaisuuk
 | Raporttiryhmien jakaminen sovellusten avulla | Ei | Kyllä | [Raporttinäkymiä ja raportteja sisältävien sovellusten luominen ja julkaiseminen](../service-create-distribute-apps.md) 
 | Sisältöpaketit | Ei | Kyllä | [Organisaation sisältöpaketit: Johdanto](../service-organizational-content-pack-introduction.md) 
 | Yhteyden muodostaminen palveluihin (mm. Salesforce) | Kyllä | Kyllä | [Muodosta yhteys palveluihin, joita käytät](../service-connect-to-services.md) sisältöpakettien avulla Power BI -palvelussa. Muodosta yhteys palveluihin sertifioitujen liittimien avulla Power BI -raporttipalvelimessa. Katso lisätietoja artikkelista [Power BI -raportin tietolähteet Power BI -raporttipalvelimessa](data-sources.md).
-| Q&A | Ei | Kyllä | [Q&A Power BI -palvelussa ja Power BI Desktopissa](../consumer/end-user-q-and-a.md) 
+| Kysymykset ja vastaukset | Ei | Kyllä | [Q&A Power BI -palvelussa ja Power BI Desktopissa](../consumer/end-user-q-and-a.md) 
 | Nopeat merkitykselliset tiedot | Ei | Kyllä | [Merkityksellisten tietojen automaattinen luominen Power BI:llä](../consumer/end-user-insights.md) 
 | Analysoi Excelissä | Ei | Kyllä | [Analysoi Excelissä](../service-analyze-in-excel.md) 
 | Sivutetut raportit | Kyllä | Kyllä | [Sivutetut raportit ovat käytettävissä Power BI -palvelussa](../paginated-reports-report-builder-power-bi.md) esikatselutilassa Premium-kapasiteetissa
 | Power BI -mobiilisovellukset | Kyllä | Kyllä | [Power BI -mobiilisovellusten yleiskuva](../consumer/mobile/mobile-apps-for-mobile-devices.md) 
-| ArcGIS Maps | Ei | Kyllä | [Esri ArcGIS Maps Power BI -palvelussa ja Power BI Desktopissa](../power-bi-visualization-arcgis.md)
+| ArcGIS Maps | Ei | Kyllä | [Esri ArcGIS Maps Power BI -palvelussa ja Power BI Desktopissa](../visuals/power-bi-visualization-arcgis.md)
 | Power BI -raporttien sähköpostitilaukset | Ei | Kyllä | [Raportin tai raporttinäkymän tilaaminen](../consumer/end-user-subscribe.md) Power BI -palvelussa 
 | Sivutettujen raporttien sähköpostitilaukset | Kyllä | Ei | [Sähköpostitoimitus Reporting Servicesissä](https://docs.microsoft.com/sql/reporting-services/subscriptions/e-mail-delivery-in-reporting-services)  
 | Tietoilmoitukset | Ei | Kyllä | [Tietoilmoitukset](../service-set-data-alerts.md) Power BI -palvelussa
