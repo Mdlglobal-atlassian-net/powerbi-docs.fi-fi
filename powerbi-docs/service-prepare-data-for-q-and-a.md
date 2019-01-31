@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2018
 ms.author: maggies
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 76027ff6e75071fde178ae05a8656c1596d36598
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 627a94097d4235f39414c1165ac8cbbc806508a3
+ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54291690"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55430051"
 ---
 # <a name="how-to-make-your-excel-data-work-well-with-qa-in-power-bi"></a>Excel-tietojen muokkaaminen toimimaan hyvin Power BI:n Q&A-toiminnon kanssa
 Jos luot tietomalleja tai Excel-työkirjoja, joita käytetään Power BI:ssä, jatka lukemista.
@@ -34,7 +34,7 @@ Q&A on riippuvainen taulukoiden, sarakkeiden ja laskettujen kenttien nimistä, j
 
 Seuraavassa on joitakin vinkkejä, joiden avulla voit hyödyntää Q&A:ta tehokkaasti työkirjassa.
 
-* Varmista, että tiedot ovat Excel-taulukossa. Lue [Excel-taulukon luontiohjeet](https://support.office.com/article/Create-an-Excel-table-in-a-worksheet-e81aa349-b006-4f8a-9806-5af9df0ac664?ui=en-US&rs=en-US&ad=US).
+* Varmista, että tiedot ovat Excel-taulukossa. Lue [Excel-taulukon luontiohjeet](https://support.office.com/article/Create-an-Excel-table-in-a-worksheet-e81aa349-b006-4f8a-9806-5af9df0ac664).
 * Varmista, että taulukoiden, sarakkeiden ja laskettujen kenttien nimet toimivat loogisesti luonnollisessa puheessa.
   
   Jos sinulla on esimerkiksi taulukko, joka sisältää myyntitiedot, anna taulukon nimeksi ”Myynti”. Sarakenimet, kuten ”Vuosi”, ”Tuote”, ”Myyntiedustaja” ja ”Summa”, toimivat hyvin Q&A:ssa.

@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 10/09/2017
 ms.author: maggies
-ms.openlocfilehash: 2ceb8440cd64b05966caaadc9346771dd28cba82
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 8a5382a5e435f916599b05310f89d9b1f0327023
+ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54281225"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55430667"
 ---
 # <a name="testing-template-content-packs-for-power-bi"></a>Power BI:n mallisisältöpakettien testaaminen
 On useita tapoja testata sisältöpakettia ennen sen lähettämistä julkaisemista varten.  
@@ -68,7 +68,7 @@ Suosittelemme koontinäytön, raportin ja tietojoukon nimeämistä yhdenmukaises
 <a name="submission"></a>
 
 ## <a name="submission"></a>Lähettäminen
-[Microsoft AppSourcen](https://appsource.microsoft.com/en-us/partners/list-an-app) kautta tehtävän lähetysprosessin avulla voit julkaista mallisisältöpakettisi palvelusisältöpakettien valikoimaan PowerBI.comissa sekä lisätä sisältöpakettisi [Microsoft AppSourcen](http://appsource.microsoft.com) luetteloon.
+[Microsoft AppSourcen](https://appsource.microsoft.com/partners/list-an-app) kautta tehtävän lähetysprosessin avulla voit julkaista mallisisältöpakettisi palvelusisältöpakettien valikoimaan PowerBI.comissa sekä lisätä sisältöpakettisi [Microsoft AppSourcen](http://appsource.microsoft.com) luetteloon.
 
 ### <a name="before-submission"></a>Ennen lähettämistä
 * Tarkista sisällöntuottamisen vihjeet kullekin artefaktille sisältöpaketissa
@@ -77,7 +77,7 @@ Suosittelemme koontinäytön, raportin ja tietojoukon nimeämistä yhdenmukaises
 * Varmista, että sisältöpaketti reagoi hyvin Kysymyksiin ja vastauksiin. Suosittelemme testaamaan vähintään 30 erilaista kysymystä kaikkialla tietomallissa. (Ohita tämä vaihe, jos olet kehittänyt oman, mukautetun [Tietoyhdistimen](https://aka.ms/DataConnectors))
 
 ### <a name="submission"></a>Lähettäminen
-Kun olet valmis lähettämään, käy [Sovellusten lähetyssivulla](https://appsource.microsoft.com/en-us/partners/list-an-app) AppSourcessa ja lähetä tietosi. Varmista, että valitset Power BI:n käytettävissä olevien tuotteiden luettelosta
+Kun olet valmis lähettämään, käy [Sovellusten lähetyssivulla](https://appsource.microsoft.com/partners/list-an-app) AppSourcessa ja lähetä tietosi. Varmista, että valitset Power BI:n käytettävissä olevien tuotteiden luettelosta
 
 Power BI -tiimi tarkastaa lähettämäsi tiedot ja ottavat sinuun yhteyttä varmistaakseen, että kaikki artefaktit ovat lähetyksen vaatimusten mukaisia. Valmistumisen jälkeen teemme lisäksi toimitettujen koontinäytön ja raporttien laadunvarmistuksen, jotta voimme varmistaa, että ne ovat sovelluksessa kuvaillun liiketoimintaskenaarion mukaisia.
 

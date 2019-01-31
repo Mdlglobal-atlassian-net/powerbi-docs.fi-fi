@@ -10,12 +10,12 @@ ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.custom: seodec18
 ms.date: 12/10/2018
-ms.openlocfilehash: 3f2d0913095d61999bb85979770c69725b9f9b88
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: b535e3cc42956818fce0c1c127fd775b6b4d4664
+ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54283640"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55431288"
 ---
 # <a name="tutorial-embed-a-power-bi-report-dashboard-or-tile-into-an-application-for-your-organization"></a>Opetusohjelma: Power BI -raportin, koontinäytön tai ruudun upottaminen sovellukseen organisaatiollesi
 
@@ -32,7 +32,7 @@ Tässä opetusohjelmassa opit tekemään seuraavat asiat:
 
 Tarvitset Power BI Pro -tilin ja Microsoft Azure -tilauksen aloittaaksesi:
 
-* Jos et ole rekisteröitynyt Power BI Prohon, [rekisteröi ilmainen kokeiluversio](https://powerbi.microsoft.com/en-us/pricing/) ennen aloittamista.
+* Jos et ole rekisteröitynyt Power BI Prohon, [rekisteröi ilmainen kokeiluversio](https://powerbi.microsoft.com/pricing/) ennen aloittamista.
 * Jos sinulla ei ole Azure-tilausta, luo [ilmainen tili](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) ennen aloittamista.
 * Määritä oma [Azure Active Directory (Azure AD) -vuokraaja](create-an-azure-active-directory-tenant.md).
 * Asenna [Visual Studio](https://www.visualstudio.com/) 2013 tai uudempi versio.

@@ -11,16 +11,16 @@ ms.topic: conceptual
 ms.date: 03/01/2018
 ms.author: mblythe
 LocalizationGroup: Get started
-ms.openlocfilehash: f39912f5813f67ed65afde10a0e157385e98b7b7
-ms.sourcegitcommit: 658b0de4f5a544d0906665b40925552804a61880
+ms.openlocfilehash: c02ce0a92e258055edf906cf17730fec56bcb450
+ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/19/2019
-ms.locfileid: "54406611"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55430759"
 ---
 # <a name="microsoft-flow-and-power-bi"></a>Microsoft Flow ja Power BI
 
-[Microsoft Flow](https://flow.microsoft.com/en-us/documentation/getting-started) on SaaS:in tarjoama työnkulun automatisoimiseen tarkoitettu palvelu, joka toimii yhä useamman yrityskäyttäjän luottaman sovelluksen ja SaaS-palveluiden kanssa. Työnkulun avulla voit automatisoida tehtäviä integroimalla suosikkisovelluksesi ja -palvelusi, (Power BI mukaan lukien) saadaksesi ilmoituksia, synkronoidaksesi tiedostoja, kerätäksesi tietoja ja paljon muuta. Toistuvista tehtävistä tulee helppoja työnkulun automatisoinnin ansiosta.
+[Microsoft Flow](https://flow.microsoft.com/documentation/getting-started) on SaaS:in tarjoama työnkulun automatisoimiseen tarkoitettu palvelu, joka toimii yhä useamman yrityskäyttäjän luottaman sovelluksen ja SaaS-palveluiden kanssa. Työnkulun avulla voit automatisoida tehtäviä integroimalla suosikkisovelluksesi ja -palvelusi, (Power BI mukaan lukien) saadaksesi ilmoituksia, synkronoidaksesi tiedostoja, kerätäksesi tietoja ja paljon muuta. Toistuvista tehtävistä tulee helppoja työnkulun automatisoinnin ansiosta.
 
 [Aloita Flow’n käyttö nyt.](https://flow.microsoft.com/documentation/getting-started)
 
@@ -31,7 +31,7 @@ Katso, miten Sirui luo työnkulun, joka lähettää yksityiskohtaisen sähköpos
 ## <a name="create-a-flow-that-is-triggered-by-a-power-bi-data-alert"></a>Power BI -tietoilmoitusten käynnistämän työnkulun luominen
 
 ### <a name="prerequisites"></a>Edellytykset
-Tässä opetusohjelmassa kerrotaan, miten voit luoda kaksi erilaista työnkulkua; yhden mallin pohjalta ja toisen alusta alkaen. Seuraa ohjeita ja [luo tietoilmoitusta Power BI:ssä](service-set-data-alerts.md), Luo ilmainen Slack-tili sekä [rekisteröidy Microsoft Flow’hun](https://flow.microsoft.com/en-us/#home-signup) (Se on ilmaista!).
+Tässä opetusohjelmassa kerrotaan, miten voit luoda kaksi erilaista työnkulkua; yhden mallin pohjalta ja toisen alusta alkaen. Seuraa ohjeita ja [luo tietoilmoitusta Power BI:ssä](service-set-data-alerts.md), Luo ilmainen Slack-tili sekä [rekisteröidy Microsoft Flow’hun](https://flow.microsoft.com/#home-signup) (Se on ilmaista!).
 
 ## <a name="create-a-flow-that-uses-power-bi---from-a-template"></a>Power BI -mallin mukaisen työnkulun luominen
 Tässä tehtävässä käytämme mallia luodaksemme yksinkertaisen työnkulun, joka käynnistyy Power BI -tietoilmoituksesta.
@@ -108,7 +108,7 @@ Seuraavaksi luomme yksinkertaisen työnkulun alusta alkaen, joka käynnistyy Pow
     ![Flow käynnistää Outlook-ilmoituksen](media/service-flow-integration/power-bi-flow-notice.png)
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
-* [Aloita Microsoft Flow’n käyttö](https://flow.microsoft.com/en-us/documentation/getting-started/)
+* [Aloita Microsoft Flow’n käyttö](https://flow.microsoft.com/documentation/getting-started/)
 * [Määritä Power BI -palvelun tietoilmoitukset ](service-set-data-alerts.md)
 * [Määritä tietoilmoitukset iPhonellasi](consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps.md)
 * [Määritä tietoilmoitukset Power BI Windows 10 -mobiilisovelluksella](consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps.md)

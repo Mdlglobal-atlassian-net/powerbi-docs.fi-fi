@@ -9,12 +9,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 11/08/2018
 ms.author: mshenhav
-ms.openlocfilehash: b7301d46279d9b975a07b07506c023e19437631b
-ms.sourcegitcommit: a20825ebd0ef4c2cb77232e3dd0e9f8260cacf71
+ms.openlocfilehash: 771b7361efaea436d67c26ee05741f6dc3eba810
+ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54324039"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55431242"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Power BI -mobiilisovellusten uudet ominaisuudet
 Lisätietoja aiheeseen liittyvistä uusista ominaisuuksista:
@@ -37,15 +37,15 @@ Uusia moderneja visuaalisia otsikoita käyttävät raportit eivät enää varaa 
 
 ### <a name="enhance-presentation-mode-windows"></a>Parannettu esitystila (Windows)
 
-Parannettu esitystila Surface Hubissa ja Windows 10 -laitteissa.  Surface Hubin kokoushuoneiden käyttökokemuksen esitys- ja yhteiskäyttötyökaluja on parannettu. Ulkoasuttoman, suurelle näytölle optimoidun näkymän avulla pystyt keskittymään tietoihisi. Esitystilassa voit käyttää myös erilaisia työkaluja, kuten käsinkirjoitusta, jotka tehostavat esittämistä ja herättävät keskustelua tiedoista. Lue lisää esitystilasta [täältä](https://powerbi.microsoft.com/en-us/blog/presentation-mode-in-power-bi-windows-app/).
+Parannettu esitystila Surface Hubissa ja Windows 10 -laitteissa.  Surface Hubin kokoushuoneiden käyttökokemuksen esitys- ja yhteiskäyttötyökaluja on parannettu. Ulkoasuttoman, suurelle näytölle optimoidun näkymän avulla pystyt keskittymään tietoihisi. Esitystilassa voit käyttää myös erilaisia työkaluja, kuten käsinkirjoitusta, jotka tehostavat esittämistä ja herättävät keskustelua tiedoista. Lue lisää esitystilasta [täältä](https://powerbi.microsoft.com/blog/presentation-mode-in-power-bi-windows-app/).
 
 ### <a name="portrait-report-layout-in-tablets-ios-and-android"></a>Taulukoiden pystysuuntainen asettelu (iOS ja Android)
 
-Raportit näytetään nyt tabletissa pystysuuntaisina käyttämällä puhelinraporttiasettelua, kun se on käytettävissä. Lue lisää [puhelinasettelun luomisesta Power BI -palvelussa tai Power BI Desktopissa](https://docs.microsoft.com/en-us/power-bi/desktop-create-phone-report/).
+Raportit näytetään nyt tabletissa pystysuuntaisina käyttämällä puhelinraporttiasettelua, kun se on käytettävissä. Lue lisää [puhelinasettelun luomisesta Power BI -palvelussa tai Power BI Desktopissa](https://docs.microsoft.com/power-bi/desktop-create-phone-report/).
 
 ### <a name="supporting-report-query-string"></a>Raporttien kyselymerkkijonojen tuki 
 
-Kyselymerkkijonon sisältävä raporttilinkki avataan nyt mobiilisovelluksessa ja esisuodatetaan kyselymerkkijonossa määritettyjen ehtojen perusteella. Lue lisää [raportin URL-osoitteen luomisesta kyselymerkkijonon avulla](https://docs.microsoft.com/en-us/power-bi/service-url-filters/).  
+Kyselymerkkijonon sisältävä raporttilinkki avataan nyt mobiilisovelluksessa ja esisuodatetaan kyselymerkkijonossa määritettyjen ehtojen perusteella. Lue lisää [raportin URL-osoitteen luomisesta kyselymerkkijonon avulla](https://docs.microsoft.com/power-bi/service-url-filters/).  
 
 ### <a name="shared-credentials-now-in-android"></a>Jaetut tunnistetiedot (nyt Androidissa)
 
@@ -65,7 +65,7 @@ Raportin visualisointien toimintovalikossa (...) on nyt mahdollisuus näyttää 
 
 Sivutetut raportit ovat nyt käytettävissä Power BI -palvelussa. Jos käyttäjällä on sivutettujen raporttien käyttöoikeus Power BI -palvelussa, hän voi käyttää näitä raportteja myös mobiilisovelluksessa. 
 
-Lue Power BI [-blogikirjoitus sivutetuista raporteista mobiilisovelluksessa](https://powerbi.microsoft.com/en-us/blog/power-bi-paginated-reports-also-available-in-power-bi-mobile-apps-preview/).
+Lue Power BI [-blogikirjoitus sivutetuista raporteista mobiilisovelluksessa](https://powerbi.microsoft.com/blog/power-bi-paginated-reports-also-available-in-power-bi-mobile-apps-preview/).
 
 ### <a name="shared-credentials-ios"></a>Jaetut tunnistetiedot (iOS)
 

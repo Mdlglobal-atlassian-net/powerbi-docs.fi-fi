@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 11/26/2018
-ms.openlocfilehash: 96f91eefeab038419ce64e31c7b4b5755d6adf2c
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: c05dddbddc2dd19fed1bfbec25bcd9e378df543f
+ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54286584"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55430149"
 ---
 # <a name="register-an-azure-ad-app-to-embed-power-bi-content"></a>Azure AD -sovelluksen rekisteröinti Power BI -sisällön upottamiseksi
 
@@ -138,7 +138,7 @@ Sinun on kirjauduttava sisään joko *päätilillä*, jota käytetään upotukse
 
 ### <a name="applying-permissions-programmatically"></a>Käyttöoikeuksien soveltaminen ohjelmallisesti
 
-1. Sinun on hankittava olemassa olevat palvelun pääkohteet (käyttäjät) vuokraajassa. Lisätietoja tämän tekemisestä on artikkelissa [Get servicePrincipal](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/serviceprincipal_get).
+1. Sinun on hankittava olemassa olevat palvelun pääkohteet (käyttäjät) vuokraajassa. Lisätietoja tämän tekemisestä on artikkelissa [Get servicePrincipal](https://developer.microsoft.com/graph/docs/api-reference/beta/api/serviceprincipal_get).
 
     Voit kutsua *Get servicePrincipal*-ohjelmointirajapinnan ilman {tunnusta}, ja saat vuokraajassa olevat kaikki palvelun pääkohteet.
 2. Voit tarkistaa palvelun päänimen sovelluksen asiakastunnuksella **appId**-ominaisuutena.

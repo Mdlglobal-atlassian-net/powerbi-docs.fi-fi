@@ -12,12 +12,12 @@ ms.topic: conceptual
 ms.date: 12/06/2018
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 660f76b5bf04f742d435df928e068e434ca70531
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: e8e27c55cdcd85fd9f88a3b1ad425829cfa9cf0d
+ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54281984"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55430598"
 ---
 # <a name="basic-concepts-for-power-bi-service-consumers"></a>Peruskäsitteet Power BI -palvelun ***kuluttajille***
 
@@ -37,7 +37,7 @@ Aloita avaamalla selain ja siirtymällä osoitteeseen **app.powerbi.com**. Kun a
 ![Power BI -palvelun Tervetuloa-näyttö](media/end-user-basic-concepts/power-bi-open.png)
 
 Käyttäessäsi Power BI:tä voit mukauttaa, mitä näet, kun avaat sivuston.  Voit esimerkiksi määrittää, että Power BI avaa aloitussivun tai suosikkikoontinäyttösi. Ei kannata huolestua – kohta tiedät, miten tämä onnistuu. 
-- [Aloituksen esikatselu](https://powerbi.microsoft.com/en-us/blog/introducing-power-bi-home-and-global-search)    
+- [Aloituksen esikatselu](https://powerbi.microsoft.com/blog/introducing-power-bi-home-and-global-search)    
 - [Sisällön määrittäminen **suositelluksi**](end-user-featured.md) 
 
 ![näytetään aloitussivun näkymä ja raporttinäkymä](media/end-user-basic-concepts/power-bi-first.png)
@@ -72,7 +72,7 @@ _______________________________________________________
 
 
 
-## <a name="datasets"></a>tietojoukot
+## <a name="datasets"></a>Tietojoukot
 *Tietojoukko* on kokoelma tietoja, jotka *suunnittelijat* tuovat tai joihin he muodostavat yhteyden ja käyttävät sitten raporttien ja koontinäyttöjen luomiseen. Kuluttajana et voi käsitellä tietojoukkoja suoraan, mutta on silti hyvää ymmärtää, miten ne vaikuttavat palvelun toimintaan.  
 
 Jokainen tietojoukko edustaa yhtä tietolähdettä, kuten Excel-laskentataulukkoa OneDrivessa, paikallista taulukkomuotoista SSAS-tietojoukkoa tai Salesforce-tietojoukkoa. Palvelu tukee monia erilaisia tietolähteitä.

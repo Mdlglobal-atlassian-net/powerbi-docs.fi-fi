@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 12/06/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: f6c7df80f580c40cb1c0653b237894bb5911bde0
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 7280d7c601e59b15ffad6ececfed8b111ab796cb
+ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54282536"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55430966"
 ---
 # <a name="connect-to-azure-consumption-insights-in-power-bi-desktop-beta"></a>Azure Consumption Insightsiin yhdistäminen Power BI Desktopissa (beeta)
 **Azure Consumption Insights** -liittimen avulla voit yhdistää **Power BI Desktopin** Azureen ja saada tarkkoja tietoja organisaatiosi Azure-palveluiden käytöstä. Voit myös luoda mittayksiköitä, mukautettuja sarakkeita ja visualisointeja ja raportoida ja jakaa tietoja organisaatiosi Azuren käytöstä. Tämä **Azure Consumption and Insights** -liitin on beetaversio, johon saattaa tulla muutoksia.
@@ -70,7 +70,7 @@ Voit avata esikatselun valitsemalla minkä tahansa taulukon vieressä olevan val
 > 
 > 
 
-Kun valitset **Lataa**, tiedot ladataan **Power BI Desktopiin**.  Yhdistin lataa tiedot taulukon oletusajanjakson mukaan.  Jos haluat mukauttaa ajanjaksoa, [voit määrittää mukautetun kyselyn](https://docs.microsoft.com/en-us/power-bi/desktop-connect-azure-consumption-insights#using-azure-consumption-insights).
+Kun valitset **Lataa**, tiedot ladataan **Power BI Desktopiin**.  Yhdistin lataa tiedot taulukon oletusajanjakson mukaan.  Jos haluat mukauttaa ajanjaksoa, [voit määrittää mukautetun kyselyn](https://docs.microsoft.com/power-bi/desktop-connect-azure-consumption-insights#using-azure-consumption-insights).
 
 ![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_05.png)
 

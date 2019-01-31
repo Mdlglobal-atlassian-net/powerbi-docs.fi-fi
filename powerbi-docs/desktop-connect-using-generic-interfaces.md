@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: c1671c820b6de4cddac169c67103168ac46ffc1f
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: c680ebea23c479202b8b49ed0376f2416a9cffa3
+ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54296037"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55430621"
 ---
 # <a name="connect-to-data-using-generic-interfaces-in-power-bi-desktop"></a>Tietoihin yhdistäminen yleisten liittymien avulla Power BI Desktopissa
 Voit muodostaa yhteyden moniin eri tietolähteisiin **Power BI Desktopissa** käyttämällä valmiita uusia tietoyhteyksiä, jotka ovat väliltä **Access-tietokannat** ja **Zendesk**-resurssit, kuten **Nouda tiedot** -ikkunassa on esitetty. Voit myös muodostaa yhteyden *muihin* tietolähteisiin laajentaaksesi yhteysvaihtoehtoja, käyttämällä yleisiä liittymiä (kuten **ODBC** tai **REST API**) **Power BI Desktopissa**.
@@ -49,7 +49,7 @@ Seuraavassa luettelossa annetaan muutamia esimerkkejä tietolähteistä, joihin 
 | Power BI Desktopin yleinen liitin | Ulkoinen tietolähde  | Lisätietoja: |
 | --- | --- | --- |
 | ODBC |Cassandra |[Cassandra ODBC -ohjain](http://www.simba.com/drivers/cassandra-odbc-jdbc/) |
-| ODBC |Couchbase DB |[Couchbase ja Power BI](https://powerbi.microsoft.com/en-us/blog/visualizing-data-from-couchbase-server-v4-using-power-bi/) |
+| ODBC |Couchbase DB |[Couchbase ja Power BI](https://powerbi.microsoft.com/blog/visualizing-data-from-couchbase-server-v4-using-power-bi/) |
 | ODBC |DynamoDB |[DynamoDB ODBC-ohjain](http://www.simba.com/drivers/dynamodb-odbc-jdbc/) |
 | ODBC |Google BigQuery |[Bigquery ODBC -ohjain](http://www.simba.com/drivers/bigquery-odbc-jdbc/) |
 | ODBC |Hbase |[Hbase ODBC -ohjain](http://www.simba.com/drivers/hbase-odbc-jdbc/) |
@@ -91,7 +91,7 @@ Seuraavassa luettelossa annetaan muutamia esimerkkejä tietolähteistä, joihin 
 
 | Power BI Desktopin yleinen liitin | Ulkoinen tietolähde  | Lisätietoja: |
 | --- | --- | --- |
-| REST-ohjelmointirajapinnat |Couchbase DB |[Couchbase REST -ohjelmointirajapinnan tiedot](https://powerbi.microsoft.com/en-us/blog/visualizing-data-from-couchbase-server-v4-using-power-bi/) |
+| REST-ohjelmointirajapinnat |Couchbase DB |[Couchbase REST -ohjelmointirajapinnan tiedot](https://powerbi.microsoft.com/blog/visualizing-data-from-couchbase-server-v4-using-power-bi/) |
 
 ## <a name="data-sources-accessible-through-r-script"></a>Tietolähteet, joihin pääsee R-komentosarjan kautta
 Voit käyttää **R-komentosarjoja** tietolähteisiin pääsemiseksi ja käyttää kyseisiä tietoja **Power BI Desktopissa**.

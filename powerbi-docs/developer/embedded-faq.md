@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 01/17/2018
-ms.openlocfilehash: cd32b644205629ce62579f5a720d486f93073dea
-ms.sourcegitcommit: ccbe76a0a43c5c5e87354a33e617bf3cb291608e
+ms.openlocfilehash: da005c7b1dcf04a61873f2b712083b10a5365329
+ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "54394733"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55430575"
 ---
 # <a name="frequently-asked-questions-about-power-bi-embedded"></a>Usein kysyttyjä kysymyksiä – Power BI Embedded
 
@@ -79,7 +79,7 @@ Alla on osittainen luettelo eroista näiden ratkaisujen yhteydessä käytettävi
 |  |A-varastointiyksikkö (Power BI Embedded)  |EM-varastointiyksikkö (Power BI Premium)  |P-varastointiyksikkö (Power BI Premium)  |
 |---------|---------|---------|---------|
 |Ostaminen  |Azure-portaali |Office |Office |
-|Käyttötapaukset | Sisällön upottaminen omaan sovellukseen | <li> Sisällön upottaminen omaan sovellukseen <br><br></br> <li> Sisällön upottaminen MS Office -sovelluksiin: <br> - [SharePoint](https://powerbi.microsoft.com/blog/integrate-power-bi-reports-in-sharepoint-online/) <br> - [Teams (ei sisällä mobiilisovellusta)](https://powerbi.microsoft.com/blog/power-bi-teams-up-with-microsoft-teams/) <br> - [Dynamics 365](https://docs.microsoft.com/dynamics365/customer-engagement/basics/add-edit-power-bi-visualizations-dashboard) | <li> Sisällön upottaminen omaan sovellukseen <br><br></br> <li> Sisällön upottaminen MS Office -sovelluksiin: <br> - [SharePoint](https://powerbi.microsoft.com/blog/integrate-power-bi-reports-in-sharepoint-online/) <br> - [Teams (ei sisällä mobiilisovellusta)](https://powerbi.microsoft.com/blog/power-bi-teams-up-with-microsoft-teams/) <br> - [Dynamics 365](https://docs.microsoft.com/dynamics365/customer-engagement/basics/add-edit-power-bi-visualizations-dashboard) <br><br></br> <li> Sisällön jakaminen Power BI -käyttäjien kanssa [Power BI -palvelun](https://powerbi.microsoft.com/en-us/) kautta  |
+|Käyttötapaukset | Sisällön upottaminen omaan sovellukseen | <li> Sisällön upottaminen omaan sovellukseen <br><br></br> <li> Sisällön upottaminen MS Office -sovelluksiin: <br> - [SharePoint](https://powerbi.microsoft.com/blog/integrate-power-bi-reports-in-sharepoint-online/) <br> - [Teams (ei sisällä mobiilisovellusta)](https://powerbi.microsoft.com/blog/power-bi-teams-up-with-microsoft-teams/) <br> - [Dynamics 365](https://docs.microsoft.com/dynamics365/customer-engagement/basics/add-edit-power-bi-visualizations-dashboard) | <li> Sisällön upottaminen omaan sovellukseen <br><br></br> <li> Sisällön upottaminen MS Office -sovelluksiin: <br> - [SharePoint](https://powerbi.microsoft.com/blog/integrate-power-bi-reports-in-sharepoint-online/) <br> - [Teams (ei sisällä mobiilisovellusta)](https://powerbi.microsoft.com/blog/power-bi-teams-up-with-microsoft-teams/) <br> - [Dynamics 365](https://docs.microsoft.com/dynamics365/customer-engagement/basics/add-edit-power-bi-visualizations-dashboard) <br><br></br> <li> Sisällön jakaminen Power BI -käyttäjien kanssa [Power BI -palvelun](https://powerbi.microsoft.com/) kautta  |
 |Laskutus |Tunneittain |Kuukausittain |Kuukausittain |
 |Sitoutuminen  |Ei sitoutumista |Vuosittain  |Kuukausittain/vuosittain |
 |Erot |Täysi joustavuus – skaalaus ylös/alas, resurssien keskeytys/jatkaminen Azure-portaalissa tai ohjelmointirajapinnan kautta  |Voidaan käyttää sisällön upottamiseen SharePoint Onlinessa ja Microsoft Teamsissa (ei sisällä mobiilisovellusta) |Yhdistää sovelluksiin upottamisen ja Power BI -palvelun käytön samassa kapasiteetissa |

@@ -8,12 +8,12 @@ ms.service: powerbi-service
 ms.topic: resource
 ms.date: 12/06/2018
 ms.author: mihart
-ms.openlocfilehash: f0e81c72fde0275467c3a914d19e916dab604cce
-ms.sourcegitcommit: cd85d88fba0d9cc3c7a4dc03d2f35d2bd096759b
+ms.openlocfilehash: 1722c401dfd5d2fdfbba530f440cecf9f1e075f3
+ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/12/2018
-ms.locfileid: "53280784"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55431265"
 ---
 # <a name="glossary-for-power-bi-service"></a>Power BI -palvelun sanasto
 Power BI -palvelussa saattaa olla ennestään tuntematonta tai sekavalta vaikuttavaa terminologiaa. Sanasto on hyvä paikka termien hakuun, joten se on hyvä lisätä suosikkeihin. Toinen hyvä resurssi lisätietojen saamiseen Power BI -palvelun muodostavista rakenneosista ovat [peruskäsitteet](end-user-basic-concepts.md). Peruskäsitteet tarjoavat korkean tason yleiskatsauksen Power BI:n *osiin* ja niiden yhteyksiin.
@@ -70,7 +70,7 @@ Tämä sanasto on yhteisön luoma.  Etkö näe etsimääsi sanaa? Pyydä meitä 
 
 **sisältöluettelo** Sovelluksen sisällön indeksi.
 
-**sisältöpaketti** Kokoelma esipakattuja tietojoukkoja, raportteja ja koontinäyttöjä. Nyt **sovellukset**, lue [uudesta työtilakokemuksesta](https://docs.microsoft.com/en-us/power-bi/service-create-the-new-workspaces). 
+**sisältöpaketti** Kokoelma esipakattuja tietojoukkoja, raportteja ja koontinäyttöjä. Nyt **sovellukset**, lue [uudesta työtilakokemuksesta](https://docs.microsoft.com/power-bi/service-create-the-new-workspaces). 
 
 **sisältönäkymä**
 

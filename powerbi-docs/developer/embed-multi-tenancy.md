@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi - developer
 ms.topic: conceptual
 ms.date: 01/11/2019
-ms.openlocfilehash: d09312ecf462e557ef33851d9d2b1f91ec936dae
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 7bb805877cf2e7453148d667f863cbbc8b01ee52
+ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54289206"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55430713"
 ---
 # <a name="manage-multi-tenancy-with-power-bi-embedded-analytics"></a>Usean vuokraajan hallinta Power BI Embeddedin analyysitoiminnoilla
 
@@ -29,7 +29,7 @@ Tässä artikkelissa kuvataan eri lähestymistapoja ja analysoidaan niitä erila
 
 ## <a name="concepts-and-terminology"></a>Käsitteet ja terminologia
 
-**[AAD](https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-whatis)** - Azure Active Directory.
+**[AAD](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis)** - Azure Active Directory.
 
 **AAD-sovellus** - Sovelluksen tunnus AAD:ssä. Todentamiseen tarvitaan AAD-sovellus.
 
@@ -105,7 +105,7 @@ Power BI Embedded tukee usean alueen käyttöönottoa (esikatselutoiminto). [Mul
 
 ### <a name="cost"></a>Kustannukset
 
-[Power BI Embeddediin](https://azure.microsoft.com/en-us/services/power-bi-embedded/) liittyy resurssipohjainen ostomalli, samoin kuin **Power BI Premiumiin**. Voit ostaa yhden tai useita kapasiteetteja, joihin liittyy kiinteä laskentateho ja muisti. Kapasiteetti on tärkein kustannustekijä **Power BI Embeddediä** käytettäessä. Kapasiteetin käyttäjien määrää ei ole rajoitettu. Ainoa rajoitus on kapasiteetin suorituskyky. Kullakin *pääkäyttäjällä* eli sellaisilla käyttäjillä, joiden on voitava käsitellä Power BI -portaalia, on oltava oma [Power BI Pro -käyttöoikeus](../service-admin-licensing-organization.md).
+[Power BI Embeddediin](https://azure.microsoft.com/services/power-bi-embedded/) liittyy resurssipohjainen ostomalli, samoin kuin **Power BI Premiumiin**. Voit ostaa yhden tai useita kapasiteetteja, joihin liittyy kiinteä laskentateho ja muisti. Kapasiteetti on tärkein kustannustekijä **Power BI Embeddediä** käytettäessä. Kapasiteetin käyttäjien määrää ei ole rajoitettu. Ainoa rajoitus on kapasiteetin suorituskyky. Kullakin *pääkäyttäjällä* eli sellaisilla käyttäjillä, joiden on voitava käsitellä Power BI -portaalia, on oltava oma [Power BI Pro -käyttöoikeus](../service-admin-licensing-organization.md).
 
 Suosittelemme kapasiteetin oletetun kuormituksen testaamista ja mittaamista niin, että todellista ympäristöä ja käyttömäärää simuloidaan ja samalla suoritetaan kuormitustestaus. Kuormituksen ja suorituskyvyn voi mitata hyödyntämällä Azure-kapasiteetin eri mittareita tai [Premium-kapasiteetin mittarisovellusta](../service-admin-premium-monitor-capacity.md).
 
@@ -132,17 +132,17 @@ Vuokraajan tietojen hallintaan on kaksi perusmenetelmää.
 
 Jos SaaS-sovelluksen tallennustilassa on erillinen tietokanta kutakin vuokraajaa kohden, on luontevaa käyttää Power BI:ssä yhden vuokraajan tietojoukkoja, niin että kunkin tietokannan yhteysmerkkijono osoittaa vastaavaan tietokantaan.
 
-Jos SaaS-sovelluksen tallennustila käyttää usean vuokraajan tietokantaa kaikille vuokraajille, vuokraajat voi helposti erotella työtilan mukaan. Voit määrittää tietokantayhteyden Power BI -tietojoukkoon käyttämällä parametrisoitua tietokantakyselyä, joka hakee vain kyseessä olevan vuokraajan tiedot. Yhteyden voi päivittää käyttämällä [Power BI Desktopia](../desktop-query-overview.md) tai käyttämällä kyselyssä [ohjelmointirajapintaa](https://docs.microsoft.com/rest/api/power-bi/datasets/updatedatasourcesingroup) ja [parametreja](https://docs.microsoft.com/en-us/rest/api/power-bi/datasets/updateparametersingroup).
+Jos SaaS-sovelluksen tallennustila käyttää usean vuokraajan tietokantaa kaikille vuokraajille, vuokraajat voi helposti erotella työtilan mukaan. Voit määrittää tietokantayhteyden Power BI -tietojoukkoon käyttämällä parametrisoitua tietokantakyselyä, joka hakee vain kyseessä olevan vuokraajan tiedot. Yhteyden voi päivittää käyttämällä [Power BI Desktopia](../desktop-query-overview.md) tai käyttämällä kyselyssä [ohjelmointirajapintaa](https://docs.microsoft.com/rest/api/power-bi/datasets/updatedatasourcesingroup) ja [parametreja](https://docs.microsoft.com/rest/api/power-bi/datasets/updateparametersingroup).
 
 ### <a name="data-isolation"></a>Tietojen eristys
 
-Tässä vuokraajamallissa tiedot erotetaan työtilan tasolla. Yksinkertainen työtilan ja vuokraajan yhdistäminen estää yhden vuokraajan käyttäjiä näkemästä toisen vuokraajan sisältöä. Jos käytössä on yksittäinen *pääkäyttäjä*, tällä on oltava käyttöoikeus kaikkiin työtiloihin. Kullekin loppukäyttäjälle näytettävien tietojen määritys suoritetaan [upotustunnuksen luonnin](https://docs.microsoft.com/en-us/rest/api/power-bi/embedtoken) yhteydessä. Kyseessä on taustaprosessi, jota loppukäyttäjät eivät näe ja johon he eivät voi vaikuttaa.
+Tässä vuokraajamallissa tiedot erotetaan työtilan tasolla. Yksinkertainen työtilan ja vuokraajan yhdistäminen estää yhden vuokraajan käyttäjiä näkemästä toisen vuokraajan sisältöä. Jos käytössä on yksittäinen *pääkäyttäjä*, tällä on oltava käyttöoikeus kaikkiin työtiloihin. Kullekin loppukäyttäjälle näytettävien tietojen määritys suoritetaan [upotustunnuksen luonnin](https://docs.microsoft.com/rest/api/power-bi/embedtoken) yhteydessä. Kyseessä on taustaprosessi, jota loppukäyttäjät eivät näe ja johon he eivät voi vaikuttaa.
 
 Sovelluskehittäjä voi lisätä eristystä määrittämällä kullekin työtilalle *pääkäyttäjän* tai sovelluksen sen sijaan, että käytössä olisi yksittäinen *pääkäyttäjä* tai sovellus, joka voisi käsitellä useita työtiloja. Näin voit varmistaa, että inhimilliset virheet tai tunnistetietojen vuodot eivät paljasta useiden käyttäjien tietoja.
 
 ### <a name="scalability"></a>Skaalattavuus
 
-Tämän mallin yhtenä etuna on, että kun tiedot erotellaan useisiin tietojoukkoihin kutakin vuokraajaa varten, voidaan välttää [yksittäisen tietojoukon kokorajoitukset](https://docs.microsoft.com/en-us/power-bi/service-premium-large-datasets) (kapasiteetti tällä hetkellä 10 Gt). Kun kapasiteetti on ylikuormittunut, [siitä voidaan poistaa käyttämättömiä tietojoukkoja](../service-premium-understand-how-it-works.md), mikä vapauttaa muistia aktiivisia tietojoukkoja varten. Tämä ei ole mahdollista yksittäisen suuren tietojoukon kanssa. Jos käytössä on useita tietojoukkoja, vuokraajia voidaan tarvittaessa myös erotella useisiin Power BI -kapasiteetteihin. [Lue lisää siitä, miten kapasiteetti toimii](../service-admin-premium-manage.md).
+Tämän mallin yhtenä etuna on, että kun tiedot erotellaan useisiin tietojoukkoihin kutakin vuokraajaa varten, voidaan välttää [yksittäisen tietojoukon kokorajoitukset](https://docs.microsoft.com/power-bi/service-premium-large-datasets) (kapasiteetti tällä hetkellä 10 Gt). Kun kapasiteetti on ylikuormittunut, [siitä voidaan poistaa käyttämättömiä tietojoukkoja](../service-premium-understand-how-it-works.md), mikä vapauttaa muistia aktiivisia tietojoukkoja varten. Tämä ei ole mahdollista yksittäisen suuren tietojoukon kanssa. Jos käytössä on useita tietojoukkoja, vuokraajia voidaan tarvittaessa myös erotella useisiin Power BI -kapasiteetteihin. [Lue lisää siitä, miten kapasiteetti toimii](../service-admin-premium-manage.md).
 
 Näistä eduista huolimatta tulee aina ottaa huomioon, millaisen laajuuden SaaS-sovellus saattaa tavoittaa tulevaisuudessa. Vastaan saattaa tulla rajoituksia esimerkiksi sen suhteen, montako artefaktia voi hallita. Lisätietoja aiheesta on edempänä tässä artikkelissa käyttöönoton [rajoitusten](#summary-comparison-of-the-different-approaches) yhteydessä. SKU:n käyttämä kapasiteetti määrittää rajoituksia sille, millaiseen muistimäärään tietojoukkojen tulee mahtua, [montako päivitystä voidaan suorittaa samanaikaisesti](../service-premium-understand-how-it-works.md) ja kuinka usein tietoja voidaan enintään ladata uudelleen. Jos hallittavana on satoja tai tuhansia tietojoukkoja, testaamista suositellaan. On suositeltavaa ottaa huomioon myös keskimääräinen käyttö ja enimmäiskäyttö sekä vuokraajat, joilla on suuria tietojoukkoja tai erilaisia käyttömalleja ja joita tulee hallita eri tavalla kuin muita vuokraajia.
 

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/30/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 7c233d059bb8db0c90097e4648ac515a0f499ba5
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 65889d1082cee75ed56edc67ece9c99b5f344a6e
+ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54295581"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55430217"
 ---
 # <a name="power-bi-licensing-in-your-organization"></a>Power BI -käyttöoikeudet organisaatiossasi
 
@@ -43,9 +43,9 @@ Jos haluat hankkia ja ottaa käyttöön Power BI -kokeilujakson käyttöoikeudet
 
 Pidä mielessä seuraavat asiat ennen rekisteröitymistä:
 
-* Jotta voit rekisteröityä, sinulla on oltava [ **Yleinen järjestelmänvalvoja**- tai **Laskutuksen järjestelmänvalvoja** ](https://support.office.com/article/about-office-365-admin-roles-da585eea-f576-4f55-a1e0-87090b6aaa9d?ui=en-US&rs=en-US&ad=US) -rooli Office 365:ssä.
+* Jotta voit rekisteröityä, sinulla on oltava [ **Yleinen järjestelmänvalvoja**- tai **Laskutuksen järjestelmänvalvoja** ](https://support.office.com/article/about-office-365-admin-roles-da585eea-f576-4f55-a1e0-87090b6aaa9d) -rooli Office 365:ssä.
 
-* Jokaista vuokraajaa kohti on rajattu vain yksi organisaatiokohtainen kokeiluversio. Tämä tarkoittaa sitä, että jos vuokraajallasi on jo käytössä Power BI Pro -kokeiluversio, et voi enää hankkia sitä uudelleen. Jos tarvitset apua, ota yhteyttä [Office 365:n laskutustukeen](https://support.office.microsoft.com/article/contact-support-for-business-products-admin-help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b?CorrelationId=552bbf37-214f-4202-80cb-b94240dcd671&ui=en-US&rs=en-US&ad=US).
+* Jokaista vuokraajaa kohti on rajattu vain yksi organisaatiokohtainen kokeiluversio. Tämä tarkoittaa sitä, että jos vuokraajallasi on jo käytössä Power BI Pro -kokeiluversio, et voi enää hankkia sitä uudelleen. Jos tarvitset apua, ota yhteyttä [Office 365:n laskutustukeen](https://support.office.microsoft.com/article/contact-support-for-business-products-admin-help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b?CorrelationId=552bbf37-214f-4202-80cb-b94240dcd671).
 
 1. Siirry [Office 365:n hallintakeskukseen](https://portal.office.com/adminportal/home#/homepage).
 

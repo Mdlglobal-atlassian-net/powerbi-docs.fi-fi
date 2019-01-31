@@ -10,16 +10,16 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 12/18/2018
 LocalizationGroup: Visualizations
-ms.openlocfilehash: cac436c97515f6b6f7b6cfc110469615e7afc4c6
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 1ebb9633451ab8e2f1b8cbf8ada743ce6c42692e
+ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54289272"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55431127"
 ---
 # <a name="custom-visuals-in-power-bi"></a>Mukautetut visualisoinnit Power BI:ssä
 
-Kun luot tai muokkaat Power BI -raporttia, käytettävissäsi on monia eri visualisointityyppejä. Nämä visualisoinnit näkyvät **Visualisoinnit**-ruudussa. Kun lataat [Power BI Desktopin](https://powerbi.microsoft.com/en-us/desktop/) tai avaat [Power BI -palvelun](https://app.powerbi.com), tämä visualisointijoukko tulee valmiina pakettina.
+Kun luot tai muokkaat Power BI -raporttia, käytettävissäsi on monia eri visualisointityyppejä. Nämä visualisoinnit näkyvät **Visualisoinnit**-ruudussa. Kun lataat [Power BI Desktopin](https://powerbi.microsoft.com/desktop/) tai avaat [Power BI -palvelun](https://app.powerbi.com), tämä visualisointijoukko tulee valmiina pakettina.
 
 ![visualisoinnit](media/power-bi-custom-visuals/power-bi-visualizations.png)
 
@@ -48,16 +48,16 @@ Jos tarvitset lisätietoja organisaation mukautetuista visualisoinneista, [lue l
 
 ## <a name="marketplace-visuals"></a>Marketplacen visualisoinnit
 
-Yhteisön jäsenet ja Microsoft ovat antaneet mukautetut visualisointinsa yleiseen käyttöön ja julkaisseet ne [AppSource](https://appsource.microsoft.com/en-us/marketplace/apps?product=power-bi-visuals) Marketplacessa. Näitä visualisointeja voi ladata ja lisätä Power BI -raportteihin. Microsoft on testannut ja hyväksynyt kaikkien mukautettujen visualisointien toiminnan ja laadun.
+Yhteisön jäsenet ja Microsoft ovat antaneet mukautetut visualisointinsa yleiseen käyttöön ja julkaisseet ne [AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals) Marketplacessa. Näitä visualisointeja voi ladata ja lisätä Power BI -raportteihin. Microsoft on testannut ja hyväksynyt kaikkien mukautettujen visualisointien toiminnan ja laadun.
 
-Mikä [AppSource](developer/office-store.md) on? Se on paikka, josta löydät sovelluksia, apuohjelmia ja laajennuksia Microsoft-ohjelmistollesi. [AppSource](https://appsource.microsoft.com/en-us/) yhdistää miljoonat Office 365:n, Azuren, Dynamics 365:n, Cortanan ja Power BI:n kaltaisten tuotteiden käyttäjät ratkaisuihin, joiden avulla he voivat työskennellä entistä tehokkaammin, älykkäämmin ja tyylikkäämmin.
+Mikä [AppSource](developer/office-store.md) on? Se on paikka, josta löydät sovelluksia, apuohjelmia ja laajennuksia Microsoft-ohjelmistollesi. [AppSource](https://appsource.microsoft.com/) yhdistää miljoonat Office 365:n, Azuren, Dynamics 365:n, Cortanan ja Power BI:n kaltaisten tuotteiden käyttäjät ratkaisuihin, joiden avulla he voivat työskennellä entistä tehokkaammin, älykkäämmin ja tyylikkäämmin.
 
 ### <a name="certified-visuals"></a>Sertifioidut visualisoinnit
 
 Power BI -sertifioidut visualisoinnit ovat Marketplacen visualisointeja, jotka ovat läpäisseet ylimääräisen tiukan laatutestauksen ja joita tuetaan lisätilanteissa, kuten [sähköpostitilauksissa](https://docs.microsoft.com/power-bi/service-report-subscribe) ja [PowerPointiin viennissä](https://docs.microsoft.com/power-bi/service-publish-to-powerpoint).
 Jos haluat tarkastella luetteloa sertifioiduista mukautetuista visualisoinneista tai lähettää oman, lue artikkeli [Sertifioidut mukautetut visualisoinnit](https://docs.microsoft.com/power-bi/power-bi-custom-visuals-certified).
 
-Oletko Web-kehittäjä ja kiinnostunut omien visualisointien luomisesta ja niiden lisäämisestä AppSourceen? Katso artikkeli [Power BI:n mukautetun visualisoinnin kehittäminen](developer/custom-visual-develop-tutorial.md) ja lue lisää [mukautettujen visualisointien julkaisemisesta AppSourcessa](https://appsource.microsoft.com/en-us/marketplace/apps?product=power-bi-visuals).
+Oletko Web-kehittäjä ja kiinnostunut omien visualisointien luomisesta ja niiden lisäämisestä AppSourceen? Katso artikkeli [Power BI:n mukautetun visualisoinnin kehittäminen](developer/custom-visual-develop-tutorial.md) ja lue lisää [mukautettujen visualisointien julkaisemisesta AppSourcessa](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals).
 
 ### <a name="import-a-custom-visual-from-a-file"></a>Mukautetun visualisoinnin tuominen tiedostosta
 
@@ -135,7 +135,7 @@ Sinulla on kaksi vaihtoehtoa mukautettujen visualisointien lataamiseen ja tuomis
 
     ![AppSource](media/power-bi-custom-visuals/power-bi-appsource-apps.png)
 
-2. Siirry [sovellusten tulossivulle](https://appsource.microsoft.com/en-us/marketplace/apps), jossa voit tarkastella kunkin luokan suosituimpia sovelluksia, mukaan lukien *Power BI -sovelluksia*. Koska nyt haetaan mukautettuja visualisointeja, rajataan tuloksia valitsemalla **Power BI -visualisoinnit** vasemmasta siirtymisluettelosta.
+2. Siirry [sovellusten tulossivulle](https://appsource.microsoft.com/marketplace/apps), jossa voit tarkastella kunkin luokan suosituimpia sovelluksia, mukaan lukien *Power BI -sovelluksia*. Koska nyt haetaan mukautettuja visualisointeja, rajataan tuloksia valitsemalla **Power BI -visualisoinnit** vasemmasta siirtymisluettelosta.
 
     ![AppSource-visualisoinnit](media/power-bi-custom-visuals/power-bi-appsource-visuals.png)
 

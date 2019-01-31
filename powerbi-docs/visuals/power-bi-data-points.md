@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/02/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 52f679ee143e1009068c7de1ed9ce13e82e957dc
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 6b5f2fa44a45cca06f90474d8c76fd6f06cae3ce
+ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54295370"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55430437"
 ---
 # <a name="data-point-limits-and-strategies-by-visual-type"></a>Arvopisterajat ja strategiat visualisointityypin mukaan
 
@@ -40,7 +40,7 @@ Kullekin strategialle on oletusarvoja visualisoitavan tiedon muodon ja tyypin mu
 ## <a name="statistics"></a>Tilastotiedot
 Tietyt mallit voivat tarjota tilastotietoja tiettyjen sarakkeiden arvojen määrästä. Kun tällaisia tietoja on käytettävissä, tietoja hyödynnetään paremman tasapainon tarjoamiseen useissa hierarkioissa, jos visualisointi ei nimenomaisesti ohita arvojen määrää strategiassa.
 
-Katso lisätietoja artikkelista [Analysis Servicesin uudet ominaisuudet](https://docs.microsoft.com/en-us/sql/analysis-services/what-s-new-in-analysis-services?view=sql-server-2017).
+Katso lisätietoja artikkelista [Analysis Servicesin uudet ominaisuudet](https://docs.microsoft.com/sql/analysis-services/what-s-new-in-analysis-services?view=sql-server-2017).
 
 ## <a name="dynamic-limits"></a>Dynaamiset rajoitukset
 Yllä mainittujen strategioiden lisäksi visualisoinneissa, joissa on kaksi ryhmittelysarakkeiden hierarkiaa (akseli ja selite tai luokka ja sarja), käytetään yhtä lisästrategiaa nimeltään *dynaamiset rajoitukset*.  Dynaamiset rajoitukset on suunniteltu tarjoamaan entistä tasapainoisemmat arvopisteet. 
@@ -128,7 +128,7 @@ Ei vähentämisstrategiaa
 - Arvot: Virtualisointi käyttämällä 200 rivin ikkunaa yhdellä kertaa
 
 ### <a name="scatter-chart-high-density"></a>Pistekaavio (suuri tiheys)
-Katso [Suuren tiheyden pistekaaviot](https://docs.microsoft.com/en-us/power-bi/visuals/desktop-high-density-scatter-charts)
+Katso [Suuren tiheyden pistekaaviot](https://docs.microsoft.com/power-bi/visuals/desktop-high-density-scatter-charts)
 
 ### <a name="pie"></a>Ympyrä
 - Maksimipisteet: 3 500

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/30/2018
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 02b98d807ccc84aa83826ae5e9eecdbdd1987a91
-ms.sourcegitcommit: 750f0bfab02af24c8c72e6e9bbdd876e4a7399de
+ms.openlocfilehash: ca035762f16d2e8e6c7ffb59220a2457daf10545
+ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/04/2019
-ms.locfileid: "54008576"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55430805"
 ---
 # <a name="connect-to-salesforce-with-power-bi"></a>Yhteyden muodostaminen Salesforceen Power BI:n avulla
 Power BI:ssä voit muodostaa helposti yhteyden Salesforce.com-tiliisi. Kun yhteys on luotu, tietosi noudetaan ja koontinäyttö sekä tietoihisi perustuvat raportit esitetään automaattisesti.
@@ -61,10 +61,8 @@ Voit muokata tätä koontinäyttöä, jotta näet tiedot juuri haluamallasi tava
 **Mitä seuraavaksi?**
 
 * Kokeile [kysymyksen esittämistä koontinäytön yläreunassa olevassa Q&A-ruudussa](consumer/end-user-q-and-a.md).
-* [Muuta koontinäytön ruutuja](service-dashboard-edit-tile.md) <<<<<<< HEAD
-* [Valitse jokin ruutu](consumer/end-user-tiles.md), jolloin siihen liittyvä raportti avautuu =======
+* [Muuta koontinäytön ruutuja](service-dashboard-edit-tile.md).
 * [Valitse jokin ruutu](service-dashboard-tiles.md), jolloin siihen liittyvä raportti avautuu.
->>>>>>> 66fe62d8f200efd9cfeb465eeb5f370dbbaa63be
 * Tietojoukko on ajastettu päivittymään päivittäin, mutta voit muuttaa päivitysaikataulua tai kokeilla tietojoukon päivittämistä **Päivitä nyt** -toiminnolla haluamanasi ajankohtana
 
 ## <a name="system-requirements-and-considerations"></a>Järjestelmävaatimukset ja huomioon otettavat seikat

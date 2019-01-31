@@ -11,12 +11,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 12/19/2018
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 6d4148eef42f01035fde5601e3dd88b3572c8320
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 57beee741ecf51aaf306f6a80d59b7c49653eedc
+ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54292472"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55430299"
 ---
 # <a name="monitor-usage-metrics-for-power-bi-dashboards-and-reports"></a>Power BI:n koontinäyttöjen ja raporttien käyttötietojen valvonta
 
@@ -159,7 +159,7 @@ Kun käyttötietoja poistetaan koko organisaation käytöstä, järjestelmänval
 
 ## <a name="usage-metrics-in-national-clouds"></a>Käyttötiedot kansallisissa pilvipalveluissa
 
-Power BI on saatavilla erillisissä kansallisissa pilvipalveluissa. Nämä pilvipalveluissa tarjoavat saman tasoisen suojauksen, tietosuojan, yhteensopivuuden ja läpinäkyvyyden kuin Power BI:n yleinen versio, yhdistettynä ainutlaatuisiin paikallisia säädöksiä noudattaviin palveluntarjonta-, tietojen tallennus-, käyttöoikeus- ja hallintamalleihin. Paikallisia säädöksiä noudattavasta ainutlaatuisesta mallista johtuen, käyttötiedot eivät ole saatavilla kansallisissa pilvipalveluissa. Jos haluat lisätietoja, katso [kansalliset pilvipalvelut](https://powerbi.microsoft.com/en-us/clouds/).
+Power BI on saatavilla erillisissä kansallisissa pilvipalveluissa. Nämä pilvipalveluissa tarjoavat saman tasoisen suojauksen, tietosuojan, yhteensopivuuden ja läpinäkyvyyden kuin Power BI:n yleinen versio, yhdistettynä ainutlaatuisiin paikallisia säädöksiä noudattaviin palveluntarjonta-, tietojen tallennus-, käyttöoikeus- ja hallintamalleihin. Paikallisia säädöksiä noudattavasta ainutlaatuisesta mallista johtuen, käyttötiedot eivät ole saatavilla kansallisissa pilvipalveluissa. Jos haluat lisätietoja, katso [kansalliset pilvipalvelut](https://powerbi.microsoft.com/clouds/).
 
 ## <a name="considerations-and-limitations"></a>Huomioitavat asiat ja rajoitukset
 

@@ -10,12 +10,12 @@ ms.topic: quickstart
 ms.date: 10/21/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 538d7d67c1a29a18333d998a79b599510cb89f88
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 76288ca77f184b27b5839377190a1708c69567af
+ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54285388"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55430690"
 ---
 # <a name="purchase-and-assign-power-bi-pro-licenses"></a>Power BI Pro -käyttöoikeuksien hankinta ja määritys
 
@@ -25,7 +25,7 @@ Tässä artikkelissa kerrotaan ensin, miten voit ostaa Power BI Pro -käyttöoik
 
 ## <a name="prerequisites"></a>Edellytykset
 
-Sinulla on oltava [ **Yleinen järjestelmänvalvoja**- tai **Laskutuksen järjestelmänvalvoja** ](https://support.office.com/article/about-office-365-admin-roles-da585eea-f576-4f55-a1e0-87090b6aaa9d?ui=en-US&rs=en-US&ad=US) -rooli Office 365:ssä.
+Sinulla on oltava [ **Yleinen järjestelmänvalvoja**- tai **Laskutuksen järjestelmänvalvoja** ](https://support.office.com/article/about-office-365-admin-roles-da585eea-f576-4f55-a1e0-87090b6aaa9d) -rooli Office 365:ssä.
 
 Jos haluat määrittää käyttöoikeudet Azuressa, sinulla on oltava Azure-tilaus, jota Power BI käyttää Active Directory -hauissa.
 

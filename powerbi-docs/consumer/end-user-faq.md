@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 01/16/2019
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 8eb428857e98a696ffb368c729525acd80e268f2
-ms.sourcegitcommit: ccbe76a0a43c5c5e87354a33e617bf3cb291608e
+ms.openlocfilehash: 001fab5caae7663a70b0f4d4272a1f9abbb1765e
+ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "54394764"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55429908"
 ---
 # <a name="frequently-asked-questions-about-power-bi"></a>Usein kysyttyjä kysymyksiä Power BI:stä
 * Jos sinulla on muita kysymyksiä, [voit esittää niitä Power BI -yhteisössä](http://community.powerbi.com/).
@@ -50,7 +50,7 @@ Selain ja työsähköpostiosoite riittävät. Voit rekisteröityä .gov- tai .mi
 Power BI ei tue sähköpostin kuluttajapalvelujen tai tietoliikenteen palveluntarjoajien sähköpostiosoitteita. Lue lisää [Power BI:n omatoimisen rekisteröitymisen prosessista](../service-self-service-signup-for-power-bi.md).
 
 ## <a name="is-government-academic-and-nonprofit-pricing-available-for-power-bi"></a>Käytetäänkö Power BI:n hinnoittelussa erillisiä julkishallinto-, oppilaitos- tai yhdistyshintoja?
-Kyllä, voittoa tavoittelemattomille yhdistyksille on erillinen hinnoittelu suoraan Microsoftilta ostettaessa. [Microsoft Nonprofits](https://www.microsoft.com/en-us/nonprofits/power-bi) -sivustolla on lisätietoja ja rekisteröitymismahdollisuus. Julkishallinto- ja oppilaitoshinnoittelu on saatavilla MOSP/Direct-, EA- ja Open-käyttöoikeusohjelmien kautta. Julkishallintohinnoittelu on käytettävissä myös syndikoinnissa. 
+Kyllä, voittoa tavoittelemattomille yhdistyksille on erillinen hinnoittelu suoraan Microsoftilta ostettaessa. [Microsoft Nonprofits](https://www.microsoft.com/nonprofits/power-bi) -sivustolla on lisätietoja ja rekisteröitymismahdollisuus. Julkishallinto- ja oppilaitoshinnoittelu on saatavilla MOSP/Direct-, EA- ja Open-käyttöoikeusohjelmien kautta. Julkishallintohinnoittelu on käytettävissä myös syndikoinnissa. 
 
 ## <a name="does-power-bi-support-mobile-devices"></a>Tukeeko Power BI mobiililaitteita?
 Kyllä. Power BI:stä on saatavana alkuperäiset sovellukset Android-puhelimille ja -tableteille, iOS-laitteille ja Windows 10 -laitteille. Lataa haluamasi [Power BI -mobiilisovellus](https://powerbi.microsoft.com/mobile) soveltuvasta kaupasta:  

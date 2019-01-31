@@ -10,12 +10,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 10/26/2018
 LocalizationGroup: Data from databases
-ms.openlocfilehash: 8717e4938ef558eb4bb8c0614990b651d2b59c28
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 142096ca30422549227ddc1dc2d07e129e22e9af
+ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54277706"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55430874"
 ---
 # <a name="azure-and-power-bi"></a>Azure ja Power BI
 
@@ -55,7 +55,7 @@ Voit laajentua juuri niin paljon kuin pitää Azuren ja Power BI:n avulla. Usean
 
 ## <a name="context-insights-with-power-bi-embedded-analytics"></a>Kontekstipohjaisia merkityksellisiä tietoja Power BI Embeddedin analytiikan avulla
 
-Upota näyttäviä ja vuorovaikutteisia tietojen visualisointeja sovelluksiin, sivustoihin, portaaleihin ja muihin ympäristöihin, niin voit hyödyntää yrityksesi keräämää tietoa. Kun organisaatiollasi on [Power BI Embedded resurssina Azuressa](https://azure.microsoft.com/services/power-bi-embedded/), voit helposti upottaa vuorovaikutteisia raportteja ja raporttinäkymiä, jolloin käyttäjäsi voivat hyötyä yhdenmukaisesta ja korkealaatuisesta kokemuksesta kaikilla laitteilla.  Power BI yhdistettynä analyysien upottamiseen auttaa organisaatiotasi tuottamaan datasta merkityksellisiä tietoja päätösten tueksi.  Lisäksi voit kasvattaa Power BI:n ja Azuren tuottamaa lisäarvoa upottamalla analytiikkaa [organisaation sisäisiin sovelluksiin ja portaaleihin](https://powerbi.microsoft.com/en-us/developers/embedded-analytics/organization/).
+Upota näyttäviä ja vuorovaikutteisia tietojen visualisointeja sovelluksiin, sivustoihin, portaaleihin ja muihin ympäristöihin, niin voit hyödyntää yrityksesi keräämää tietoa. Kun organisaatiollasi on [Power BI Embedded resurssina Azuressa](https://azure.microsoft.com/services/power-bi-embedded/), voit helposti upottaa vuorovaikutteisia raportteja ja raporttinäkymiä, jolloin käyttäjäsi voivat hyötyä yhdenmukaisesta ja korkealaatuisesta kokemuksesta kaikilla laitteilla.  Power BI yhdistettynä analyysien upottamiseen auttaa organisaatiotasi tuottamaan datasta merkityksellisiä tietoja päätösten tueksi.  Lisäksi voit kasvattaa Power BI:n ja Azuren tuottamaa lisäarvoa upottamalla analytiikkaa [organisaation sisäisiin sovelluksiin ja portaaleihin](https://powerbi.microsoft.com/developers/embedded-analytics/organization/).
 
 Power BI API:sta on runsaasti tietoa [Power BI -kehittäjäportaalissa](http://dev.powerbi.com).
 

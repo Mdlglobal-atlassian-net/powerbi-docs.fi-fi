@@ -11,12 +11,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 LocalizationGroup: Share your work
 ms.date: 11/01/2018
-ms.openlocfilehash: 906ecdf8934899f2c16bacc07a271b4549d3c048
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: a9d90737ed8a62f3791f0741bac1c9ff2b05cbb6
+ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54292822"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55431196"
 ---
 # <a name="embed-with-report-web-part-in-sharepoint-online"></a>Upota raportin verkko-osa SharePoint Onlinessa
 
@@ -166,7 +166,7 @@ Raporttia SharePointissa tarkastelevat käyttäjät tarvitsevat **Power BI Pro -
 
 * Ongelmia saattaa ilmetä, jos käytät Internet Explorer 10:tä. Voit tarkastella [Power BI:n](consumer/end-user-browsers.md) ja [Office 365:n](https://products.office.com/office-system-requirements#Browsers-section) tuettuja selaimia.
 
-* Power BI -verkko-osa ei ole käytettävissä [maakohtaisissa pilvipalveluissa](https://powerbi.microsoft.com/en-us/clouds/).
+* Power BI -verkko-osa ei ole käytettävissä [maakohtaisissa pilvipalveluissa](https://powerbi.microsoft.com/clouds/).
 
 * Perinteistä SharePoint-palvelinta ei tueta tässä verkko-osassa.
 
