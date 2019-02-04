@@ -11,12 +11,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 12/06/2018
 LocalizationGroup: Reports
-ms.openlocfilehash: 74d261098ee8385721a0b72d808a6ecb1b89be7c
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 2a6fe04f3e905a1e2ce02bceed123b6f117e62c8
+ms.sourcegitcommit: 2954de034f5e1be655dd02cc756ff34f126d3034
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54283801"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55234435"
 ---
 # <a name="filter-a-report-using-query-string-parameters-in-the-url"></a>Raportin suodattaminen URL-osoitteen kyselymerkkijonoparametrien avulla
 
@@ -106,10 +106,10 @@ Power BI tukee useita muitakin operaattoreita kuin **and**. Seuraavassa taulukos
 |**gt**     | suurempi kuin        |ei | kyllä | kyllä  | product/price gt 20
 |**le**     |   pienempi tai yhtä suuri kuin      | ei | kyllä | kyllä  | product/price le 100
 |**lt**     |  pienempi kuin       | ei | kyllä | kyllä |  product/price lt 20
-|**in****     |  mukaan lukien       | kyllä | kyllä |  kyllä | Student/Age in (27, 29)
+|**in\*\***     |  mukaan lukien       | kyllä | kyllä |  kyllä | Student/Age in (27, 29)
 
 
-\** Käytettäessä **in**-operaattoria **in**-operaattorin oikealla puolella olevat arvot voidaan merkitä sulkeiden sisälle pilkuilla erotettuna luettelona tai yksittäisenä lausekkeena, joka palauttaa kokoelman.
+\*\** Kun käytät **in**-operaattoria, **in**-operaattorin oikealla puolella olevat arvot voidaan merkitä sulkeiden sisälle pilkuilla erotettuna luettelona tai yksittäisenä lausekkeena, joka palauttaa kokoelman.
 
 ### <a name="numeric-data-types"></a>Numeeriset tietotyypit
 

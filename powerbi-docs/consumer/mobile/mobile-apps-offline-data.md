@@ -9,12 +9,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 06/27/2018
 ms.author: mshenhav
-ms.openlocfilehash: 36a3026ebbdf1290d7f809f5c1ccaac7f5fbd7d0
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: b4977bd043cec08c86fbd3c8893e8f1e185dc1fc
+ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54292403"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55430552"
 ---
 # <a name="view-your-data-offline-in-the-power-bi-mobile-apps"></a>Tietojen tarkastelu offline-tilassa Power BI -mobiilisovelluksissa
 Koskee seuraavia:
@@ -57,6 +57,7 @@ Kun olet offline-tilassa ja Power BI on mobiililaitteessasi, saatat kohdata näi
 * Power BI:ssä olevat koko Excel-työkirjat eivät ole käytettävissä offline-tilassa.
 * Näet Reporting Services -mobiiliraportit ja -suorituskykyilmaisimet offline-tilassa, jos olet tarkastellut niitä online-tilassa. Ne eivät päivity taustalla. Ne päivittyvät aina, kun avaat ne.
 * Et näe Power BI -mobiilisovelluksissa Power BI Desktop (.pbix) -tiedostoja, jotka on tallennettu Power BI -raporttipalvelimelle. 
+* Sivutetut raportit (RDL) eivät ole käytettävissä ilman verkkoyhteyttä.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 Palaute auttaa meitä päättämään, mitä toimintoja otamme käyttöön tulevaisuudessa, joten muista äänestää muita ominaisuuksia, jotka haluaisit nähdä Power BI ‑mobiilisovelluksissa. 

@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 08/21/2018
-ms.openlocfilehash: 2a0fc921ba576803f02ede8fd269370584c61efe
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 157808d7378b40cb097c2cb667eb9d237654e66d
+ms.sourcegitcommit: 2954de034f5e1be655dd02cc756ff34f126d3034
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54284215"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55234412"
 ---
 # <a name="configure-your-report-server-to-host-excel-workbooks-using-office-online-server-oos"></a>Määritä raporttipalvelin Excel-työkirjojen isännäksi Office Online Serverin (OOS) avulla
 
@@ -57,7 +57,7 @@ Jos aiot käyttää Excel Onlinen toimintoja, jotka käyttävät ulkoista tietop
 1. Lataa Office Online Server [volyymikäyttöoikeuskeskuksesta (VLSC)](http://go.microsoft.com/fwlink/p/?LinkId=256561). Lataustiedosto sijaitsee Office-tuotteiden kohdalla VLSC-portaalissa. Kehitystarkoituksiin voit ladata OOS:n MSDN-tilaajalatauksista.
 2. Suorita Setup.exe.
 3. Valitse **Lue Microsoft-ohjelmiston käyttöoikeussopimuksen ehdot** -sivulla **Hyväksyn tämän sopimuksen ehdot** ja valitse **Jatka**.
-4. Valitse **Valitse tiedoston sijainti** -sivulla kansio, johon haluat asentaa Office Online Server -tiedostot (esimerkiksi C:\Program Files\Microsoft Office Web Apps*) ja valitse **Asenna nyt**. Jos määritettyä kansiota ei ole, asennusohjelma luo sen puolestasi.
+4. Valitse **Valitse tiedoston sijainti** -sivulla kansio, johon haluat asentaa Office Online Server -tiedostot (esimerkiksi C:\Program Files\Microsoft Office Web Apps\*) ja valitse **Asenna nyt**. Jos määritettyä kansiota ei ole, asennusohjelma luo sen puolestasi.
 
     On suositeltavaa asentaa Office Online Server järjestelmäasemaan.
 

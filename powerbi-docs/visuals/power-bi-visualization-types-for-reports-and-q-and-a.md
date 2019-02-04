@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/03/2018
+ms.date: 01/29/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: dc756e98a58d30edd476112ca249dae032d0d79a
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: ee0063d5266c663079a9801777ee2c900957c52f
+ms.sourcegitcommit: 2954de034f5e1be655dd02cc756ff34f126d3034
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54296796"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55234297"
 ---
 # <a name="visualization-types-in-power-bi"></a>Visualisointityypit Power BI:ssä
 ## <a name="power-bi-visualizations"></a>Visualisoinnit Power BI:ssä
@@ -82,6 +82,11 @@ Lisätietoja on artikkelissa [Power BI -suppilokaaviot](power-bi-visualization-f
 
 Lisätietoja on artikkelissa [Power BI -mittarikaaviot](power-bi-visualization-radial-gauge-charts.md).
 
+<!-- ### Key influencers chart
+![key influencer](../visuals/media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-influencers2.png)
+
+A key influencer chart displays the major contributors to a selected result or value. -->
+
 ### <a name="kpis"></a>Suorituskyvyn mittarit
 ![](media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-kpi.png)
 
@@ -107,7 +112,7 @@ Lisätietoja on artikkelissa [Vihjeitä ja vinkkejä kartan visualisointeja vart
 ### <a name="maps-arcgis-maps"></a>Kartat: ArcGIS-kartat
 ![](media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-esri-map-theme2.png)
 
-Lisätietoja on artikkelissa [Power BI:n ArcGIS-kartat](../power-bi-visualization-arcgis.md).
+Lisätietoja on artikkelissa [Power BI:n ArcGIS-kartat](power-bi-visualization-arcgis.md).
 
 ### <a name="maps-filled-maps-choropleth"></a>Kartat: Täytetyt kartat (Choropleth)
 ![](media/power-bi-visualization-types-for-reports-and-q-and-a/pbi_nancy_viz_filledmap.png)
@@ -133,6 +138,13 @@ Lisätietoja on artikkelissa [Matriisivisualisoinnit Power BI:ssä](desktop-matr
 
 ### <a name="pie-charts"></a>Ympyräkaaviot
 ![](media/power-bi-visualization-types-for-reports-and-q-and-a/pbi_nancy_viz_pie.png)
+
+Ympyräkaaviot näyttävät osien suhteen kokonaisuuteen. 
+
+### <a name="ribbon-chart"></a>Nauhakaavio
+![nauhakaavio](../visuals/media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-ribbon.png)
+
+Nauhakaaviot näyttävät, millä tietoluokalla on paras sijoitus (suurin arvo). Nauhakaaviot esittävät luokkamuutoksen tehokkaasti, koska korkein sija (suurin arvo) näkyy aina ylimpänä kullakin ajanjaksolla.
 
 ### <a name="scatter-and-bubble-charts"></a>Piste- ja kuplakaaviot
 ![](media/power-bi-visualization-types-for-reports-and-q-and-a/pbi_nancy_viz_bubble.png)

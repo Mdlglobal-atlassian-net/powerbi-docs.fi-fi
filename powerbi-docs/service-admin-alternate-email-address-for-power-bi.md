@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/01/2018
 ms.author: mblythe
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: 5998f4b63a168c3056a5464844d008bd657ef7c9
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: a37daca38c13cff08be13da619735214002646a3
+ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54294252"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55430529"
 ---
 # <a name="using-an-alternate-email-address"></a>Vaihtoehtoisen sähköpostiosoitteen käyttö
 
@@ -64,7 +64,7 @@ Power BI valitsee seuraavan järjestyksen mukaisesti, mitä niistä käytetään
 
 1. Jos Azure AD -vuokraajan käyttäjäobjektissa on olemassa postimäärite, Power BI käyttää kyseistä postimääritettä sähköpostiosoitteena.
 
-1. Jos UPN-sähköpostiosoite *ei* ole **\*.onmicrosoft.com**-toimialueen sähköpostiosoite (tiedot @-merkin jälkeen), Power BI käyttää kyseistä postimääritettä sähköpostiosoitteena.
+1. Jos UPN-sähköpostiosoite *ei* ole **\*.onmicrosoft.com**-toimialueen sähköpostiosoite (tiedot \@-merkin jälkeen), Power BI käyttää kyseistä postimääritettä sähköpostiosoitteena.
 
 1. Jos Azure AD -käyttäjäobjektissa on matriisimäärite *muu sähköpostiosoite*, käytetään luettelon ensimmäistä sähköpostiosoitetta (sillä tässä määritteessä voi olla sähköpostiosoitteista luettelo).
 

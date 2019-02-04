@@ -12,12 +12,12 @@ ms.topic: conceptual
 ms.date: 01/18/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 085860fb9d8e9e01bf0694896a561f34a5627b53
-ms.sourcegitcommit: ccbe76a0a43c5c5e87354a33e617bf3cb291608e
+ms.openlocfilehash: 7d76d874712f328344b60fc8b146f69e1aca55db
+ms.sourcegitcommit: 2954de034f5e1be655dd02cc756ff34f126d3034
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "54394664"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55234527"
 ---
 # <a name="add-comments-to-a-dashboard"></a>Kommenttien lisääminen koontinäyttöön
 Lisää henkilökohtainen kommentti tai aloita keskustelu koontinäytöstä työtovereidesi kanssa. **Kommentti**-ominaisuus on vain yksi tapa, jolla *kuluttaja* voi tehdä yhteistyötä muiden kanssa. 
@@ -73,7 +73,7 @@ Voit lisätä kommentteja koko koontinäyttöön tai koontinäytön yksittäisii
 5. Palaa koontinäyttöön tai raporttiin valitsemalla **Sulje**.
 
 ### <a name="get-your-colleagues-attention-by-using-the--sign"></a>Käytä @-merkkiä työtovereiden huomion saamiseksi
-Kun lisäät kommentin koontinäyttöön tai kommentoit tiettyä visualisointia, käytä @-merkkiä työtovereiden huomion saamiseksi.  Kun kirjoitat @-merkin, Power BI:ssä avautuu avattava valikko, josta voit etsiä ja valita organisaatiosi henkilöitä. @-merkin perässä olevat vahvistetut nimet näkyvät sinisinä. 
+Kun lisäät kommentin koontinäyttöön tai kommentoit tiettyä visualisointia, käytä \@-merkkiä työtovereiden huomion saamiseksi.  Kun kirjoitat \@-merkin, Power BI:ssä avautuu avattava valikko, josta voit etsiä ja valita organisaatiosi henkilöitä. \@-merkin perässä olevat vahvistetut nimet näkyvät sinisinä. 
 
 Tässä on keskusteluni visualisoinnin *suunnittelijan* kanssa. Hän käyttää @-merkkiä, jotta varmasti näen kommentin. Tiedän, että tämä kommentti on minulle. Kun avaan tämän sovelluksen koontinäytön Power BI:ssä, valitsen **Kommentit** otsikosta. Keskustelumme on näkyvissä **Kommentit**-ruudulla.
 

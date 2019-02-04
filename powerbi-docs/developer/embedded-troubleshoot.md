@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 12/20/2018
-ms.openlocfilehash: 4fff6b19b9a17b626d11545a8d4baa8464ffc324
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: a53ddf70e82c191af520f2dbba5b5d3d1b0ced42
+ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54294075"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55431219"
 ---
 # <a name="troubleshoot-your-embedded-application"></a>Upotetun sovelluksen vianmääritys
 
@@ -99,6 +99,14 @@ Sovelluksen taustatietokanta saattaa joutua päivittämään todennustunnuksen e
 
 ## <a name="authentication"></a>Todentaminen
 
+### <a name="authentication-failed-with-aadsts90002-tenant-authorize-not-found"></a>Todentaminen epäonnistui virheellä AADSTS90002: Tenant 'authorize' not found
+
+ Jos saat virheilmoituksia (esimerkiksi ***error: invalid_request, error_description: AADSTS90002: Tenant 'authorize' not found***) tämä johtuu siitä, että https://login.microsoftonline.com/{Tenant}/oauth2/authorize/ ei ole tuettu valtuutuksen URL-osoite ADAL 4.x:ssä.
+ 
+Voit ratkaista tämän poistamalla kohdan oauth2/authorize/ valtuutuksen URL-osoitteesi lopusta. Saat lisätietoja [Power BI:n kehittäjämallien](https://github.com/Microsoft/PowerBI-Developer-Samples) ohjeartikkelista.
+
+ Tarkista kohta [Better Authority validation](https://github.com/AzureAD/azure-activedirectory-library-for-dotnet/wiki/Changes-adalnet-4.0#better-authority-validation) ADAL 4.x;n julkaisutiedoista.
+ 
 ### <a name="authentication-failed-with-aadsts70002-or-aadsts50053"></a>Todentaminen epäonnistui AADSTS70002:n tai AADSTS50053:n kanssa
 
 **_(AADSTS70002: Virhe vahvistettaessa tunnistetietoja. AADSTS50053: Olet yrittänyt kirjautua sisään liian monta kertaa virheellisellä käyttäjätunnuksella tai salasanalla)_**
@@ -243,7 +251,7 @@ Voit käyttää [upottamisen määritystyökalua](https://aka.ms/embedsetup) lad
 
 Varmista, että sinulla on kaikki asianmukaiset edellytykset ennen upottamisen määritystyökalun käyttöä. Tarvitset **Power BI Pro** -tilin ja **Microsoft Azure** -tilauksen.
 
-* Jos et ole rekisteröitynyt **Power BI:hin**, [rekisteröi ilmainen kokeiluversio](https://powerbi.microsoft.com/en-us/pricing/) ennen aloittamista.
+* Jos et ole rekisteröitynyt **Power BI:hin**, [rekisteröi ilmainen kokeiluversio](https://powerbi.microsoft.com/pricing/) ennen aloittamista.
 * Jos sinulla ei ole Azure-tilausta, luo [ilmainen tili](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) ennen aloittamista.
 * Sinulla on oltava oma [Azure Active Directory -vuokraaja ](create-an-azure-active-directory-tenant.md) asetettuna.
 * [Visual Studion](https://www.visualstudio.com/) (2013 tai uudempi versio) on oltava asennettuna.
@@ -294,7 +302,7 @@ Jos haluat lisätietoja, katso [Power BI Embedded - usein kysytyt kysymykset](em
 
 Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
 
-Jos tarvitset lisäapua, [ota yhteyttä tukeen](https://powerbi.microsoft.com/en-us/support/pro/?Type=documentation&q=power+bi+embedded) tai [luo tukipalvelupyyntö Azure-portaalin kautta](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest) ja anna saamasi virhesanomat.
+Jos tarvitset lisäapua, [ota yhteyttä tukeen](https://powerbi.microsoft.com/support/pro/?Type=documentation&q=power+bi+embedded) tai [luo tukipalvelupyyntö Azure-portaalin kautta](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest) ja anna saamasi virhesanomat.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
