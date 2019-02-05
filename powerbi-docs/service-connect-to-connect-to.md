@@ -7,15 +7,15 @@ ms.reviewer: maggiesMSFT
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: conceptual
-ms.date: 10/16/2017
+ms.date: 01/30/2019
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 7a6e6979a6281ef6b00a84cff138818869b113e6
-ms.sourcegitcommit: 750f0bfab02af24c8c72e6e9bbdd876e4a7399de
+ms.openlocfilehash: 49ac1f917a5f3095c1dbc13c644061859389fe74
+ms.sourcegitcommit: 7df786871b196725a1c5422ee561c7557660894e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/04/2019
-ms.locfileid: "54008024"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55482679"
 ---
 # <a name="connect-to-comscore-digital-analytix-with-power-bi"></a>comScore Digital Analytixiin yhdistäminen Power BI:n avulla
 Visualisoi ja tutki comScore Digital Analytixiin -tietoja Power BI:ssä Power BI -sisältöpaketin avulla. Tiedot päivitetään automaattisesti kerran päivässä.
@@ -63,8 +63,6 @@ Löydät kunkin comScore-parametrin alla olevien ohjeiden mukaisesti.
 **Tietokeskus**
 
 URL-osoite, johon siirryt comScoressa, määrittää tietokeskuksen, johon muodostat yhteyden.
-
-Jos sinulla on käytössä https://dax.comscore.com, syötä “US”, jos sinulla on käytössä https://dax.comscore.eu, syötä “EU”.
 
 ![](media/service-connect-to-connect-to/comscore_url.png) 
 
