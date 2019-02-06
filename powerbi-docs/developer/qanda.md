@@ -2,21 +2,22 @@
 title: Q&A Power BI Embeddedissä
 description: Power BI Embedded tarjoaa keinon sisällyttää Q&A:n sovellukseen. Käyttäjäsi voivat siis esittää kysymyksiä luonnollisella kielellä.
 author: markingmyname
+ms.author: maghan
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 11/20/2017
-ms.author: maghan
-ms.openlocfilehash: 208c1e2a0e188622f989faa6ba391d9742dd7967
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 23e0f7a938116185e05e583f5c7f208efed3ca4d
+ms.sourcegitcommit: 0abcbc7898463adfa6e50b348747256c4b94e360
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54277980"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "55761911"
 ---
 # <a name="qa-in-power-bi-embedded"></a>Q&A Power BI Embeddedissä
+
 Power BI Embedded tarjoaa keinon sisällyttää Q&A:n sovellukseen. Käyttäjäsi voivat siis esittää kysymyksiä luonnollisella kielellä ja saada vastauksia välittömästi visualisointien muodossa esimerkiksi kaavioina.
 
 ![Q&A:n vuorovaikutteinen kysymys upotetussa kehyksessä](media/qanda/embedded-qanda.gif)
@@ -47,13 +48,14 @@ var qna = powerbi.embed(qnaContainer, config);
 ```
 
 ## <a name="set-question"></a>Asetettu kysymys
+
 Jos käytit asetetussa kysymyksessä **tulostilaa**, voit syöttää lisäkysymyksiä kehykseen ja saada vastauksen näkyviin heti edellisen tuloksen tilalle. Uusi visualisointi hahmonnetaan vastaamaan uutta kysymystä.
 
 Esimerkki tämän käytöstä on usein kysyttyjen kysymysten luettelo. Käyttäjä voi käydä läpi kysymyksiä ja saada niihin vastauksen saman upotetun osan sisällä.
 
 **JS SDK -käytön koodikatkelma:**  
 
-```        
+```
 // Get a reference to the embedded Q&A HTML element
 var qnaContainer = $('#qnaContainer')[0];
 
@@ -70,6 +72,7 @@ qna.setQuestion("This year sales")
 ```
 
 ## <a name="visual-rendered-event"></a>Visualisoinnilla hahmonnettu tapahtuma
+
 **Vuorovaikutteinen**-tilassa sovellus voi saada ilmoituksen tietojen muutostapahtumasta aina, kun hahmonnettu visualisointi muuttuu syötetyn kyselyn tuloksen päivittämiseksi, kun sitä kirjoitetaan.
 
 Kun kuuntelet *visualRendered*-tapahtumaa, voit tallentaa kysymyksiä myöhempää käyttöä varten. 
@@ -93,10 +96,11 @@ qna.on("visualRendered", function(event) {
 ```
 
 ## <a name="embed-token"></a>Upotustunnus
+
 Aloita Q&A-osa luomalla upotustunnus tietojoukosta. Lisätietoja on artikkelissa [Tunnuksen luominen](https://docs.microsoft.com/rest/api/power-bi/embedtoken).
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
+
 Jos haluat kokeilla Q&A:n upotusta, tutustu [JavaScript-upotuksen malliin](https://microsoft.github.io/PowerBI-JavaScript/demo/).
 
 Onko sinulla muuta kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)
-

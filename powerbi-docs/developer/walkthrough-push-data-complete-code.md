@@ -2,26 +2,28 @@
 title: Kattava koodiluettelo
 description: Opastus tietojen syöttämiseen – kattava koodiluettelo
 author: markingmyname
+ms.author: maghan
 manager: kfile
-ms.reviewer: ''
+ms.reviewer: madia
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 08/10/2017
-ms.author: maghan
-ms.openlocfilehash: 96620449e8be8dbbfa13a00484fff29f2370fe19
-ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
+ms.date: 02/05/2019
+ms.openlocfilehash: 95aadefab6a98413a22dd9386bfb4fc06cb482cb
+ms.sourcegitcommit: 0abcbc7898463adfa6e50b348747256c4b94e360
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55429932"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "55762233"
 ---
 # <a name="push-data-to-a-dataset-complete-code-listing"></a>Syötä tiedot tietojoukon kattavaan koodiluetteloon
+
 Tämä artikkeli on osa vaiheittaisia ohjeita, joilla [tiedot syötetään tietojoukkoon](walkthrough-push-data.md).
 
 Kun olet suorittanut toimet 2-5 kohdasta **tietojen syöttäminen tietojoukkoon**, täydellisen lähdekoodisi pitäisi näyttää seuraavanlaiselta.
 
 ## <a name="push-data-to-dataset-code"></a>Syötä tiedot tietojoukon koodiin
+
       using System;
       using Microsoft.IdentityModel.Clients.ActiveDirectory;
       using System.Net;
@@ -219,8 +221,8 @@ Kun olet suorittanut toimet 2-5 kohdasta **tietojen syöttäminen tietojoukkoon*
           }
       }
 
-
 ## <a name="next-steps"></a>Seuraavat vaiheet
+
 [Syötä tiedot Power BI -tietojoukkoon](walkthrough-push-data.md)  
 [Vaiheittainen opastus – tiedon syöttäminen Power BI -tietojoukkoon](walkthrough-push-data.md)  
 [Rekisteröi sovellus Azure AD:n kanssa ](walkthrough-push-data-register-app-with-azure-ad.md)  
@@ -231,6 +233,4 @@ Kun olet suorittanut toimet 2-5 kohdasta **tietojen syöttäminen tietojoukkoon*
 [Power BI:n REST-ohjelmointirajapinnan viite](https://docs.microsoft.com/rest/api/power-bi/)  
 [Power BI REST -ohjelmointirajapinnan yleiskatsaus](overview-of-power-bi-rest-api.md)  
 
-
 Onko sinulla muuta kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
-

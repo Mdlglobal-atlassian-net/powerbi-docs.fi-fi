@@ -2,21 +2,22 @@
 title: Asenna Power BI -raporttipalvelimelle optimoitu Power BI Desktop
 description: Opi asentamaan Power BI -raporttipalvelimelle optimoitu Power BI Desktop
 author: maggiesMSFT
+ms.author: maggies
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 01/24/2019
-ms.author: maggies
-ms.openlocfilehash: c118e3c2f8b30635982a37c47da9fb9e337aff05
-ms.sourcegitcommit: d12d84583e65ebecc8aa947b0cd5720cffdc7978
+ms.openlocfilehash: 63550950b21231909c32ac63f5f2930ebf93c0af
+ms.sourcegitcommit: 0abcbc7898463adfa6e50b348747256c4b94e360
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54907513"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "55762210"
 ---
 # <a name="install-power-bi-desktop-optimized-for-power-bi-report-server"></a>Asenna Power BI -raporttipalvelimelle optimoitu Power BI Desktop
+
 Opi asentamaan Power BI -raporttipalvelimelle optimoitu Power BI Desktop.
 
 Jotta voit luoda Power BI -raportteja Power BI -raporttipalvelimelle, sinun on ladattava ja asennettava Power BI -raporttipalvelimelle optimoitu Power BI Desktop. Tämä versio on erilainen kuin Power BI -palvelun kanssa käytettävä Power BI Desktop. Power BI Desktopin versio Power BI -palvelulle sisältää esimerkiksi esiversio-ominaisuuksia, joita Power BI -raporttipalvelinversiossa ei ole ennen niiden julkaisua. Käyttämällä tätä versiota varmistetaan, että raporttipalvelin voi käsitellä raporttien ja mallin tunnettua versiota. 
@@ -44,7 +45,7 @@ Helpoin tapa varmistaa, että sinulla on Power BI -raporttipalvelimelle optimoid
 1. Kun olet ladannut asennusohjelman, suorita Power BI Desktopin (tammikuu 2019) ohjattu asennus.
 
 2. Asennuksen lopussa valitse **Käynnistä Power BI Desktop nyt**.
-   
+
     Se käynnistyy automaattisesti ja on valmiina käyttöön.
 
 ## <a name="verify-youre-using-the-correct-version"></a>Varmista, että käytät oikeaa versiota
@@ -64,9 +65,11 @@ Voit myös aina ensin avata sen Power BI Desktopin version, jota haluat käyttä
 Power BI -raportin muokkaaminen Power BI -raporttipalvelimesta tai uuden Power BI -raportin luominen verkkoportaalista avaa aina Power BI Desktopin oikean version.
 
 ## <a name="considerations-and-limitations"></a>Huomioitavat asiat ja rajoitukset
+
 Power BI -raporttipalvelimen Power BI -raportit Power BI -palvelussa (http://app.powerbi.com), ja Power BI -mobiilisovelluksissa toimivat lähes täsmälleen samoin, mutta jotkut ominaisuudet ovat erilaisia.
 
 ### <a name="in-a-browser"></a>Selaimessa
+
 Power BI -raporttipalvelimen raportit tukevat kaikkia visualisointeja, mukaan luettuina seuraavat:
 
 * Mukautetut visualisoinnit
@@ -79,6 +82,7 @@ Power BI -raporttipalvelimen raportit eivät tue seuraavia:
 * Power BI Desktopin esikatselutoiminnot
 
 ### <a name="in-the-power-bi-mobile-apps"></a>Power BI -mobiilisovelluksissa
+
 Power BI -raporttipalvelimen raportit tukevat [Power BI -mobiilisovellusten](../consumer/mobile/mobile-apps-for-mobile-devices.md) kaikkia tavallisia toimintoja, mukaan luettuina seuraavat:
 
 * [Puhelimen raporttiasettelu](../desktop-create-phone-report.md): voit optimoida raportin Power BI -mobiilisovelluksia silmällä pitäen. Optimoiduilla raporteilla on matkapuhelimessa erityinen kuvake, ![Puhelimen raporttiasettelun kuvake](media/install-powerbi-desktop/power-bi-rs-mobile-optimized-icon.png), sekä asettelu.
@@ -100,10 +104,10 @@ Jos raporttipalvelimesi on aiempi versio, tarvitset vastaavan version Power BI D
 - Microsoft Power BI Desktop ([optimoitu Power BI -raporttipalvelimelle – elokuu 2018](https://www.microsoft.com/download/details.aspx?id=57271))
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
+
 Nyt kun sinulla on Power BI Desktop asennettuna, voit aloittaa Power BI -raporttien luomisen.
 
 [Power BI -raportin luominen Power BI -raporttipalvelimeen](quickstart-create-powerbi-report.md)  
 [Mikä on Power BI -raporttipalvelin?](get-started.md)
 
 Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
-

@@ -2,22 +2,21 @@
 title: Mukautetut asettelut, joissa on Power BI:n upotettua sisältöä
 description: Lue lisää mukautetuista asetteluista, kun sovellukseen upotetaan Power BI -sisältöä.
 author: markingmyname
+ms.author: maghan
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 12/19/2017
-ms.author: maghan
-ms.openlocfilehash: 641369a4410741269a260e036ac3a7930f385e76
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: e812fde896072762e113c81b1dd728091a8ff190
+ms.sourcegitcommit: 0abcbc7898463adfa6e50b348747256c4b94e360
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54288930"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "55762302"
 ---
 # <a name="custom-layouts"></a>Mukautetut asettelut
-
 
 Mukautetun asettelun avulla voit upottaa raportin, jossa on eri asettelu kuin alkuperäisessä raportissa. Uuden asettelun määrittäminen vaihtelee vain sivun koon määrittämisen sekä visualisointien koon, sijainnin ja näkyvyyden hallinnan välillä.
 
@@ -115,7 +114,6 @@ enum VisualContainerDisplayMode {
 - `width`, korkeus: Määrittää visualisoinnin uuden koon.
 - `displayState`: Määrittää visualisoinnin näkyvyyden.
 
-
 ## <a name="update-layout"></a>Asettelun päivittäminen
 
 Voit päivittää raportin asettelun updateSettings-menetelmän avulla milloin tahansa raportin latauksen aikana. Katso [Asetusten päivittäminen](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Update-Settings).
@@ -173,9 +171,7 @@ var embedContainer = document.getElementById('embedContainer');
 var report = powerbi.embed(embedContainer, embedConfiguration);
 ```
 
-
 ## <a name="see-also"></a>Katso myös
 
 [Power BI:n koontinäyttöjen, raporttien ja ruutujen upottaminen](embedding-content.md)   
 [Kokeile Power BI -yhteisöä](https://community.powerbi.com/)
-

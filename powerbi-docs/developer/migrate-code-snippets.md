@@ -2,21 +2,22 @@
 title: Koodikatkelmia sisällön siirtämiseen Power BI Embeddedistä
 description: Tässä on joitakin koodikatkelmia perustoimintoihin, joita tarvitaan sisällön siirtämisessä
 author: markingmyname
+ms.author: maghan
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 06/30/2018
-ms.author: maghan
-ms.openlocfilehash: ddb0e95e20a22fd6e7e832c415462504d2ef3652
-ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
+ms.date: 02/05/2019
+ms.openlocfilehash: f53549e0a046195c353362368e2e3682df152af9
+ms.sourcegitcommit: 0abcbc7898463adfa6e50b348747256c4b94e360
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55429969"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "55762509"
 ---
 # <a name="code-snippets-for-migrating-content-from-power-bi-workspace-collection"></a>Koodikatkelmia sisällön siirtämiseen Power BI Workspace Collectionista
+
 Tässä on joitakin koodikatkelmia perustoimintoihin, joita tarvitaan sisällön siirtämisessä. Katso lisätietoja tiettyjen raporttityyppien asiaan liittyvistä työkuluista artikkelista [Miten Power BI -työtilakokoelman sisältö siirretään Power BI Embeddediin](migrate-from-powerbi-embedded.md#content-migration).
 
 Olemassa on **siirtotyökalu**, jota voit käyttää apuna siirrettäessä sisältöä Power Bi Embeddedistä (PaaS) Power Bi -palveluun (SaaS). Se on hyödyllinen erityisesti, jos sisältöä on paljon. Jos haluat lisätietoja, katso [Power BI Embedded -siirtotyökalu](migrate-tool.md).
@@ -25,7 +26,7 @@ Alla olevat koodikatkelmat ovat esimerkkejä, joissa käytetään C#-ohjelmointi
 
 Varmista, että käytät seuraavia nimitiloja suorittaessasi alla olevia koodikatkelmia.
 
-```
+```csharp
 using Microsoft.IdentityModel.Clients.ActiveDirectory;
 using Microsoft.PowerBI.Api.V1;
 using Microsoft.PowerBI.Api.V1.Models;
@@ -46,8 +47,8 @@ using System.Text;
 using System.Threading.Tasks;
 ```
 
-
 ## <a name="export-report-from-paas-workspace"></a>Raportin vieminen PaaS-työtilasta
+
 ```
     // Create a token credentials with "AppKey" type
     var credentials = new TokenCredentials(<myAppKey==>, "AppKey");
@@ -72,6 +73,7 @@ using System.Threading.Tasks;
 ```
 
 ## <a name="import-report-to-saas-workspace"></a>Raportin tuominen SaaS-työtilaan
+
 ```
     AuthenticationContext authContext = new AuthenticationContext("https://login.microsoftonline.net/common/");
     var PBISaaSAuthResult = authContext.AcquireToken("https://analysis.windows.net/powerbi/api", <myClientId>, new Uri("urn:ietf:wg:oauth:2.0:oob"), PromptBehavior.Always);
@@ -85,6 +87,7 @@ using System.Threading.Tasks;
 ```
 
 ## <a name="extract-directquery-connection-string-from-paas-report"></a>Hae DirectQuery-yhteysmerkkijono PaaS-raportilta
+
 Tämä on tarkoitettu PBIX:n päivittämiseen SaaS-migraation jälkeen.
 
 ```
@@ -105,6 +108,7 @@ Tämä on tarkoitettu PBIX:n päivittämiseen SaaS-migraation jälkeen.
 ```
 
 ## <a name="update-directquery-connection-string-is-saas-workspace"></a>DirectQuery-yhteysmerkkijonon päivittäminen SaaS-työtilassa
+
 ```
     public class ConnectionString
     {
@@ -123,6 +127,7 @@ Tämä on tarkoitettu PBIX:n päivittämiseen SaaS-migraation jälkeen.
 ```
 
 ## <a name="set-directquery-credentials-in-saas-workspace"></a>DirectQuery-tunnistetietojen määrittäminen SaaS-työtilassa
+
 Tässä koodikatkelmassa käytetään salaamattomia tunnistetietoja yksinkertaistamisen vuoksi, mutta myös salattujen tunnistetietojen lähettämistä tuetaan.
 
 ```
@@ -159,6 +164,7 @@ Tässä koodikatkelmassa käytetään salaamattomia tunnistetietoja yksinkertais
 ```
 
 ## <a name="push-dataset--report"></a>Push-tietojoukko ja raportti
+
 Joudut luomaan uudelleen luotuun tietojoukkoon perustuvan raportin.
 
 Tässä katkelmassa oletetaan, että push-tietojoukko on jo SaaS-ympäristön sisällä olevassa sovellustyötilassa. Lisätietoja Push API -rajapinnasta löytyy kohdasta [Tietojen siirtäminen Power BI -tietojoukkoon](walkthrough-push-data.md).
@@ -223,6 +229,7 @@ Tässä katkelmassa oletetaan, että push-tietojoukko on jo SaaS-ympäristön si
 ```
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
+
 [Power BI Embedded -siirtotyökalu](migrate-tool.md)  
 [Upottaminen Power BI:n avulla](embedding.md)  
 [Miten Power BI Embedded -työtilakokoelman sisältö siirretään Power BI -palveluun](migrate-from-powerbi-embedded.md)  
@@ -234,4 +241,3 @@ Tässä katkelmassa oletetaan, että push-tietojoukko on jo SaaS-ympäristön si
 [Power BI Premiumin tekninen raportti](https://aka.ms/pbipremiumwhitepaper)  
 
 Onko sinulla muuta kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)
-

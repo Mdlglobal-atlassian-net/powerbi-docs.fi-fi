@@ -2,21 +2,22 @@
 title: Tietojoukon hakeminen rivien lisäämiseksi
 description: Vaiheittaiset ohjeet tietojen työntämiseen – tietojoukon hankkiminen rivien lisäämiseksi Power BI -taulukkoon
 author: markingmyname
+ms.author: maghan
 manager: kfile
-ms.reviewer: ''
+ms.reviewer: madia
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 08/10/2017
-ms.author: maghan
-ms.openlocfilehash: cd7f1eabc104da7e310abbfbce2929f047f0e5d8
-ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
+ms.date: 02/05/2019
+ms.openlocfilehash: fbde44136f403e3aff0c32d8d4acef4d1970830a
+ms.sourcegitcommit: 0abcbc7898463adfa6e50b348747256c4b94e360
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55430828"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "55762486"
 ---
 # <a name="step-4-get-a-dataset-to-add-rows-into-a-power-bi-table"></a>Vaihe 4: Tietojoukon hakeminen rivien lisäämiseksi Power BI -taulukkoon
+
 Tämä artikkeli on osa vaiheittaisia ohjeita, joilla [tiedot työnnetään tietojoukkoon](walkthrough-push-data.md).
 
 Tietojen tietojoukkoon työntämisen **vaiheessa 3**, [Tietojoukon luominen Power BI:ssä](walkthrough-push-data-create-dataset.md), kutsuit [Luo tietojoukko](https://docs.microsoft.com/rest/api/power-bi/datasets) -toiminnon tietojoukon luomiseksi Power BI:ssä. Tässä vaiheessa käytät [Nouda tietojoukkoja](https://docs.microsoft.com/rest/api/power-bi/datasets/getdatasets) -toimintoa ja Newtonsoft.Json-komentoa tietojoukon tunnuksen saamiseksi. Lisää rivejä tietojoukkoon käyttämällä vaiheen 4 tietojoukon tunnusta. 
@@ -26,14 +27,13 @@ Jotta voit työntää tietoja Power BI:n tietojoukkoon, sinun on viitattava tiet
 Saat tietojoukon seuraavasti.
 
 ## <a name="get-a-power-bi-dataset"></a>Power BI:n tietojoukon hankkiminen
+
 > **HUOMAUTUS**: Varmista ennen aloittamista, että olet noudattanut edellisiä vaiheita [tietojen tietojoukkoon työntämisen](walkthrough-push-data.md) vaiheittaisissa ohjeissa.
-> 
-> 
 
 1. Konsolisovellusprojektissa, jonka loit vaiheessa 2: Vaiheittaiset ohjeet tietojen työntämiseen, [Todennustunnuksen hankkiminen](walkthrough-push-data-get-token.md), asenna Newtonsoft.Json NuGet -paketti Asenna paketti seuraavasti:
-   
+
      a. Valitse Visual Studio 2015:ssä **Tools** > **NuGet Package Manager** > **Package Manager Console**.
-   
+
      b. Syötä **Package Manager Consolessa** Install-Package Newtonsoft.Json.
 2. Kun paketti on asennettu, lisää teksti **using Newtonsoft.Json;** kohtaan Program.cs.
 3. Lisää kohdassa Program.cs alla oleva koodi, jotta saat **tietojoukon tunnuksen**.
@@ -110,6 +110,7 @@ Alla on [Kattava koodiluettelo](#code).
 <a name="code"/>
 
 ## <a name="complete-code-listing"></a>Kattava koodiluettelo
+
     using System;
     using Microsoft.IdentityModel.Clients.ActiveDirectory;
     using System.Net;
@@ -265,6 +266,7 @@ Alla on [Kattava koodiluettelo](#code).
 [Seuraava vaihe >](walkthrough-push-data-add-rows.md)
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
+
 [Rivien lisääminen Power BI -taulukkoon](walkthrough-push-data-add-rows.md)  
 [Newtonsoft.Json](http://www.newtonsoft.com/json)  
 [Nouda tietojoukot](https://docs.microsoft.com/rest/api/power-bi/datasets/getdatasets)  
@@ -273,4 +275,3 @@ Alla on [Kattava koodiluettelo](#code).
 [Power BI:n REST-ohjelmointirajapinnan viite](https://docs.microsoft.com/rest/api/power-bi/)  
 
 Onko sinulla muuta kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
-
