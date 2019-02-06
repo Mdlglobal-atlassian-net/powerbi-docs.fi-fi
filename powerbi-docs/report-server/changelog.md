@@ -9,12 +9,12 @@ ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 03/31/2018
 ms.author: jtarquino
-ms.openlocfilehash: 18a2d6833f0013f95ac0a5dea5f1930e5b666dd6
-ms.sourcegitcommit: 2c49a7cee9c77f46830ddfa59fdedbf30186d389
+ms.openlocfilehash: 034fc149dcd76102ae83864fe65d53c55b57c96a
+ms.sourcegitcommit: 7df786871b196725a1c5422ee561c7557660894e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54488864"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55482748"
 ---
 # <a name="changelog-for-power-bi-report-server"></a>Power BI -raporttipalvelimen muutosloki
 
@@ -24,6 +24,17 @@ Lisätietoja uusista ominaisuuksista on artikkelissa [Power BI -raporttipalvelin
 
 ## <a name="january-2019"></a>Tammikuu 2019
 - **Power BI -raporttipalvelin**            
+    - *Versio 1.4.6969.7395 (koontiversio 15.0.1102.235), julkaistu: 30. tammikuuta 2019*
+        - Ohjelmavirhekorjauksia
+            - Power BI -raportit
+                - Korjattu suoran kyselyn yhteydessä ilmennyt perustunnistetietoihin liittyvä ongelma
+                - Korjattu rivitason suojauksen suodattimien käytössä ilmennyt kaksisuuntaisiin suhteisiin liittyvä ongelma
+                - Korjattu tietojen vanhenemisongelma, joka ilmeni skaalausympäristössä suoritetun mallin päivityksen jälkeen
+                - Korjattu taulukon tai matriisin kaksinkertainen vierityspalkki Firefox 63+:ssa
+                - Internet Explorerin +/- -kuvakkeen koko korjattu
+            - Sivutetut raportit
+                - Korjattu raportin jaetun tietolähteen käytön päivittämiseen liittynyt ongelma
+
     - *Versio 1.4.6960.38798 (koontiversio 15.0.1102.222), julkaistu: 22. tammikuuta 2019*
         - Ominaisuudet
             - Power BI -raportit 
@@ -35,6 +46,10 @@ Lisätietoja uusista ominaisuuksista on artikkelissa [Power BI -raporttipalvelin
             - Järjestelmänvalvojat
                 - Mahdollisuus rajoittaa resurssien tiedostopäätteitä, joita raporttipalvelimeen voi ladata
                 - Mahdollisuus rajoittaa tuettuja hyperlinkkimalleja
+            - Ohjelmoitavuus
+                - Uusi verkko-ohjelmointirajapinta: /PowerBIReports({Id})/DataModelRoles (GET)
+                - Uusi verkko-ohjelmointirajapinta: /PowerBIReports({Id})/DataModelRoles (GET ja PUT)
+                - Katso lisätietoja artikkelista [Power BI -raporttipalvelimen REST API](https://app.swaggerhub.com/apis/microsoft-rs/PBIRS/2.0)
         - Ohjelmavirhekorjauksia
             - HTML:n lisäyksen heikkous
             - Euron merkki ei näy PDF-tiedostoksi vietäessä
@@ -42,6 +57,10 @@ Lisätietoja uusista ominaisuuksista on artikkelissa [Power BI -raporttipalvelin
             - Visualisointien näyttämiseen liittyvät ongelmat Power BI -mobiilisovelluksessa käyttämättömyysajan jälkeen
 
 - **Power BI Desktop (optimoitu Power BI -raporttipalvelimelle)**
+    - *Versio: 2.65.5313.1562 (tammikuu 2019), julkaistu: 30. tammikuuta 2019*
+        - Pikakuvake ja kiinnitetyt kuvakkeet pysyvät Power BI -raporttipalvelimen asennuksen poistamisen jälkeen
+        - Korjattu ongelma, jossa Power BI -raporttipalvelimen kiinnittäminen aloitusvalikkoon johti mustaan tekstiin mustalla kuvakkeella
+
     - *Versio: 2.65.5313.1421 (tammikuu 2019), julkaistu: 22. tammikuuta 2019*
         - Sisältää Power BI -raporttipalvelinyhteyden edellyttämiä muutoksia (tammikuu 2019)  
 

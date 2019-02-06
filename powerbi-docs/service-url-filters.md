@@ -9,14 +9,14 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/06/2018
+ms.date: 01/31/2019
 LocalizationGroup: Reports
-ms.openlocfilehash: 2a6fe04f3e905a1e2ce02bceed123b6f117e62c8
-ms.sourcegitcommit: 2954de034f5e1be655dd02cc756ff34f126d3034
+ms.openlocfilehash: 3f9195ecb4b8679ab65ad6535a85d4d271582d7d
+ms.sourcegitcommit: e05b3863c7758f639894d771193b98b12b93022a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55234435"
+ms.lasthandoff: 02/02/2019
+ms.locfileid: "55648693"
 ---
 # <a name="filter-a-report-using-query-string-parameters-in-the-url"></a>Raportin suodattaminen URL-osoitteen kyselymerkkijonoparametrien avulla
 
@@ -40,6 +40,14 @@ URL?filter=***Table***/***Field*** eq '***value***'
 
 * **Table** (Taulukko)- ja **Field** (Kenttä) -nimissä merkkikoko on merkitsevä, kun taas **value** (arvo) -kohdassa näin ei ole.
 * Kentät, jotka on piilotettu raporttinäkymästä, voidaan edelleen suodattaa.
+
+### <a name="reports-in-apps"></a>Raportit sovelluksissa
+
+Jos haluat lisätä raporttiin URL-suodattimen sovelluksessa, muotoilu on hiukan erilainen. Sovelluksen raportteihin osoittavissa linkeissä on kyselyparametri (ctid), joka lisätään URL-osoitteeseen. Kyselyparametrit on erotettava toisistaan &-merkillä. Sinun on siis lisättävä kyselyn perään &filter= (ctid-parametrin jälkeen) eikä ?filter=. 
+
+Tässä esimerkki:
+
+app.powerbi.com/groups/me/apps/*app-id*/reports/*report-id*/ReportSection?ctid=*ctid*&filter=*Table*/*Field* eq '*value*'
 
 ### <a name="field-types"></a>Kenttätyypit
 
@@ -118,10 +126,10 @@ Power BI:n URL-suodatin voi sisältää lukuja seuraavissa muodoissa.
 |Luvun tyyppi  |Esimerkki  |
 |---------|---------|
 |**kokonaisluku**     |   5      |
-|**pitkä**     |   5L tai 5l      |
+|**pitkä**     |   5 L tai 5 l      |
 |**kaksinkertainen**     |   5.5 tai 55e-1 tai 0.55e+1 tai 5D tai 5d tai 0.5e1D tai 0.5e1d tai 5.5D tai 5.5d tai 55e-1D tai 55e-1d     |
-|**desimaaliluku**     |   5M tai 5m tai 5.5M tai 5.5m      |
-|**liukuluku**     | 5F tai 5f tai 0.5e1F tai 0.5e-1d        |
+|**desimaaliluku**     |   5 M tai 5 m tai 5.5 M tai 5.5 m      |
+|**liukuluku**     | 5 F tai 5 f tai 0.5e1 F tai 0.5e-1 d        |
 
 ### <a name="date-data-types"></a>Päivämäärän tietotyypit
 

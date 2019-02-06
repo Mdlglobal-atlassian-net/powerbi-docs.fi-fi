@@ -1,20 +1,20 @@
 ---
-title: Etsi ja tarkastele raporttinäkymiäsi nopeasti Cortanan avulla
+title: Etsi ja tarkastele raportteja ja raporttinäkymiä nopeasti Cortanan avulla
 description: Käytä Cortanaa Power BI:n kanssa saadaksesi vastauksia tiedoistasi. Tämä toimii tällä hetkellä raporttien ja raporttinäkymien kanssa.
 author: maggiesMSFT
 manager: kfile
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/24/2018
+ms.date: 01/30/2019
 ms.author: maggies
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: bcd07bb0cb53ea4818195e15c1492a27f424cf38
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 26bd41c8fa2d1300a0f9e106c7899777ac5950f7
+ms.sourcegitcommit: 7df786871b196725a1c5422ee561c7557660894e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54292588"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55482725"
 ---
 # <a name="quickly-find-and-view-your-power-bi-data-using-cortana-for-power-bi"></a>Power BI -tietojen nopea etsiminen ja tarkastelu Power BI:n Cortana-ominaisuuden avulla
 Saat heti vastauksia liiketoimintaa koskeviin tärkeisiin kysymyksiisi Windows 10 -laitteilla Cortanan avulla. Power BI -integraation avulla Cortana voi noutaa avaintietoja suoraan Power BI -raporttinäkymistä ja -raporteista. Tarvitset vain Windows 10:n marraskuun 2015 version tai sitä uudemman, Cortanan, Power BI:n ja vähintään yhden tietojoukon käyttöoikeudet.
@@ -22,7 +22,7 @@ Saat heti vastauksia liiketoimintaa koskeviin tärkeisiin kysymyksiisi Windows 1
 ![Cortana-hakukenttä](media/service-cortana-intro/power-bi-cortana-searchbox.png)
 
 ## <a name="preview-the-new-cortana-dashboard-search-experience-for-windows-10"></a>Esikatsele uuden Cortana *-raporttinäkymän* hakukokemusta Windows 10:llä
-Aiemmin [Cortanan avulla on voinut noutaa tietyntyyppisiä raporttisivuja](service-cortana-answer-cards.md). Nyt olemme lisänneet **uuden käyttökokemuksen**: mahdollisuuden hakea myös raporttinäkymiä. Kokeile sitä ja [lähetä meille palautetta ](mailto:pbicortanasg@microsoft.com). *Uutta käyttökokemusta* laajennetaan niin, että lopulta se sisältää myös raporttien Cortana-haun.  Eräs uuden käyttökokemuksen suurimmista eduista on se, että sen käyttöönottoon ei vaadita mitään erityistä, kuten Cortanan käyttöönottoa tai Windows 10:n määrittämistä. Se vain toimii.
+Aiemmin [Cortanan avulla on voinut noutaa tietyntyyppisiä raporttisivuja](service-cortana-answer-cards.md). Nyt olemme lisänneet **uuden käyttökokemuksen**: mahdollisuuden hakea myös raporttinäkymiä. Kokeile sitä ja [lähetä meille palautetta Power BI:n Ideat-ominaisuuden kautta](https://ideas.powerbi.com/forums/265200-power-bi). *Uutta käyttökokemusta* laajennetaan niin, että lopulta se sisältää myös raporttien Cortana-haun.  Eräs uuden käyttökokemuksen suurimmista eduista on se, että sen käyttöönottoon ei vaadita mitään erityistä, kuten Cortanan käyttöönottoa tai Windows 10:n määrittämistä. Se vain toimii.
 
 > [!NOTE]
 > Jos se ei ”vain toimi”, tutustu [vianmääritysartikkelin](service-cortana-troubleshoot.md) ohjeisiin.
@@ -127,7 +127,8 @@ Kun esität Cortanalle kysymyksen, Power BI antaa vastaukseksi erityisesti Corta
 * Power BI:n Cortana-ominaisuus on tällä hetkellä käytettävissä vain englanniksi.
 * Power BI:n Cortana-ominaisuus on käytettävissä vain Windows-mobiililaitteissa.
 
-Onko sinulla muuta kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
+Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/).
+Haluatko antaa palautetta? [Lähetä palautetta Power BI:n Ideat-ominaisuuden kautta](https://ideas.powerbi.com/forums/265200-power-bi).
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 [Cortanan käyttöönotto ja integrointi Power BI:hin Windowsissa](service-cortana-enable.md)
