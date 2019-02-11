@@ -8,15 +8,15 @@ ms.reviewer: nishalit
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 12/20/2018
-ms.openlocfilehash: 785461290493db59c534a58b548620b6d2f58cd7
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.date: 02/05/2019
+ms.openlocfilehash: f50305eed647bfc94bc5c19ee1a298cb9ac9c782
+ms.sourcegitcommit: 0abcbc7898463adfa6e50b348747256c4b94e360
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54284169"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "55762693"
 ---
-# <a name="use-row-level-security-with-power-bi-embedded-content"></a>Rivitason suojaus Power BI:n upotetussa sisällössä
+# <a name="row-level-security-with-power-bi-embedded"></a>Rivitason suojaus Power BI Embeddedissä
 
 **Rivitason suojauksen (RLS)** avulla voidaan rajoittaa käyttäjien käyttöoikeuksia raporttinäkymien, ruutujen, raporttien ja tietojoukkojen tietoihin. Eri käyttäjät voivat työskennellä samojen kohteiden parissa ja nähdä eri tiedot. Upottaminen tukee rivitason suojausta.
 
@@ -79,7 +79,7 @@ Kun suodatinta käytetään näin, kaikki **Alue-**, **Myymälä-** ja **Myynti*
 
 Nyt kun Power BI Desktop -roolit on määritetty, sovelluksesi on määritettävä, jotta voit hyödyntää rooleja.
 
-Sovelluksesi todentaa ja valtuuttaa käyttäjäsi, ja upotettavien tunnusten avulla heille voidaan myöntää käyttöoikeudet valittuun Power BI Embedded -raporttiin. Power BI Embedded ei sisällä tietoja siitä, kuka käyttäjä on. Jotta rivitason suojaus toimii, sinun on välitettävä käyttäjätietoja upotustunnuksen osana. Voit välittää käyttäjätiedot käyttämällä [Upotustunnus](https://docs.microsoft.com/rest/api/power-bi/embedtoken)-ohjelmointirajapintaa.
+Sovelluksesi todentaa ja valtuuttaa käyttäjäsi, ja upotettavien tunnusten avulla heille voidaan myöntää käyttöoikeudet valittuun Power BI Embedded -raporttiin. Power BI Embedded ei sisällä tietoja siitä, kuka käyttäjä on. Jotta rivitason suojaus toimii, sinun on välitettävä käyttäjätietoja upotustunnuksen osana. Voit välittää käyttäjätietojen käyttämällä [Upotustunnus](https://docs.microsoft.com/rest/api/power-bi/embedtoken)-ohjelmointirajapintaa.
 
 Ohjelmointirajapinta tukee käyttäjätietojen luetteloa, joka sisältää viittauksen oleellisiin tietojoukkoihin. Jotta rivitason suojaus toimii, sinun on välitettävä alla olevat tiedot osana käyttäjätietoja.
 
@@ -129,11 +129,11 @@ Nyt kun kaikki osat on koottu yhteen ja henkilö kirjautuu sovellukseesi tarkast
 
 Rivitason suojausta voi käyttää paikallisilla palvelimilla reaaliaikaisten Analysis Services -yhteyksien avulla. Kun käytät tämäntyyppistä yhteyttä, sinun tulee tuntea muutama käsite.
 
-Käyttäjänimi-ominaisuudelle määritettyjen voimassaolevien käyttäjätietojen on vastattava Windows-käyttäjää, jolla on käyttöoikeudet Analysis Services -palvelimella.
+Käyttäjänimi-ominaisuuden on vastattava Windows-käyttäjää, jolla on käyttöoikeudet Analysis Services -palvelimella.
 
 ### <a name="on-premises-data-gateway-configuration"></a>Paikallisen tietoyhdyskäytävän määritys
 
-[Paikallista tietoyhdyskäytävää](../service-gateway-onprem.md) käytetään, kun käsittelet reaaliaikaisia Analysis Services -yhteyksiä. Upotuksen tunnusta luotaessa, kun käyttäjätiedot on luetteloitu, päätili on lueteltava yhdyskäytävän järjestelmänvalvojana. Jos päätili ei ole luettelossa, rivitason suojausta ei käytetä tietojen ominaisuuksiin. Yhdyskäytävän muu käyttäjä kuin järjestelmänvalvoja voi lisätä rooleja, mutta hänen on annettava voimassaoleviksi käyttäjätiedoiksi oma käyttäjänimensä.
+[Paikallista tietoyhdyskäytävää](../service-gateway-onprem.md) käytetään, kun käsittelet reaaliaikaisia Analysis Services -yhteyksiä. Upotuksen tunnusta luotaessa, kun käyttäjätieto on luetteloitu, päätili on lueteltava yhdyskäytävän järjestelmänvalvojana. Jos päätili ei ole luettelossa, rivitason suojausta ei käytetä tietojen ominaisuuksiin. Yhdyskäytävän muu käyttäjä kuin järjestelmänvalvojien voi lisätä rooleja, mutta hänen on annettava käyttäjätiedoksi oma käyttäjänimensä.
 
 ### <a name="use-of-roles"></a>Roolien käyttäminen
 
@@ -247,7 +247,7 @@ Asiakkaat, jotka säilyttävät tietojaan **Azure SQL -tietokannassa**, voivat n
 
 Upotetun tunnuksen luonnin aikana voidaan määrittää käyttäjän voimassaolevat käyttäjätiedot Azure SQL:ssä. Voit määrittää käyttäjän voimassaolevat käyttäjätiedot välittämällä AAD-käyttöoikeustietueen palvelimeen. Käyttöoikeustietuetta käytetään vain tätä käyttäjää koskevien olennaisten tietojen noutamiseen Azure SQL:stä tätä tiettyä istuntoa varten.
 
-Sen avulla voidaan hallita kunkin käyttäjän näkymää Azure SQL:ssä tai kirjautua sisään Azure SQL:een erityisenä asiakkaana monen vuokraajan tietokannassa. Sitä voidaan käyttää myös rivitason suojauksen soveltamiseen tähän istuntoon Azure SQL:ssä ja vain olennaisten tietojen hakemiseen tätä istuntoa varten, joten RLS:ää ei tarvitse enää hallita Power BI:ssä.
+Sen avulla voidaan hallita kunkin käyttäjän näkymää Azure SQL:ssä tai kirjautua sisään Azure SQL:een erityisenä asiakkaana monen vuokraajan tietokannassa. Sen avulla voidaan käyttää rivitason suojausta Azure SQL -istunnossa, jos haluat hakea vain olennaiset tiedot tätä istuntoa varten, joten RLS:ää ei tarvitse enää hallita Power BI:ssä.
 
 Tällaisia voimassaolevia käyttäjätietoja sovelletaan RLS-sääntöihin suoraan Azure SQL Serverissä. Power BI Embedded käyttää annettua käyttöoikeustietuetta tietojen kyselemiseen Azure SQL Serveristä. Käyttäjän täydellinen käyttäjätunnus (jota varten käyttöoikeustietue annettiin) saadaan USER_NAME() SQL -funktion avulla.
 
@@ -308,6 +308,18 @@ Käyttäjätietojen blob-objektissa annetun arvon on oltava kelvollinen käyttö
 
    ![Sovelluksen rekisteröinti](media/embedded-row-level-security/token-based-app-reg-azure-portal.png)
 
+## <a name="on-premises-data-gateway-with-service-principal-preview"></a>Paikallinen tietoyhdyskäytävä ja palvelun päänimi (esikatselu)
+
+Asiakkaat, jotka määrittävät rivitason suojauksen (RLS) SQL Server Analysis Servicesin (SSAS) paikallisella reaaliaikaisen yhteyden tietolähteellä, voivat hyödyntää uutta [palvelun päänimen](embed-service-principal.md) toimintoa. Sen avulla he voivat hallita käyttäjiä ja heidän käyttöoikeuksiaan SSAS-tietoihin, kun he integroivat **Power BI Embeddedin**.
+
+[Power BI REST -ohjelmointirajapintojen](https://docs.microsoft.com/rest/api/power-bi/) avulla voit määrittää SSAS:n paikallisten reaaliaikaisten yhteyksien käytössä olevat käyttäjätiedot upotustunnukselle [palvelun päänimen objektin](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals#service-principal-object) avulla.
+
+Kun halusit määrittää SSAS:n paikallisen reaaliaikaisen yhteyden käytössä olevat käyttäjätiedot aiemmin, pääkäyttäjän, joka loi upotustunnuksen, piti olla yhdyskäytävän järjestelmänvalvoja. Nyt käyttäjän ei tarvitse olla yhdyskäytävän järjestelmänvalvoja, koska yhdyskäytävän järjestelmänvalvoja voi antaa käyttäjälle oikeuden kyseiseen tietolähteeseen. Tämän ansiosta käyttäjä voi kumota käytössä olevat käyttäjätiedot, kun upotustunnus luodaan. Tämä uusi toiminto mahdollistaa palvelun päänimellä upottamisen reaaliaikaisissa SSAS-yhteyksissä.
+
+Jos haluat käyttää tätä toimintoa, yhdyskäytävän järjestelmänvalvojan täytyy antaa [tietolähteen käyttäjän lisäämisen REST-ohjelmointirajapinnalla](https://docs.microsoft.com/rest/api/power-bi/gateways/adddatasourceuser) palvelun päänimelle *ReadOverrideEffectiveIdentity*-oikeus BI Embeddedissä.
+
+Tätä oikeutta ei voi määrittää hallintaportaalissa. Sen voi määrittää vain ohjelmointirajapinnalla. Näet hallintaportaalissa ilmoituksen niiden käyttäjien ja palvelun päänimien kohdalla, joilla on nämä oikeudet.
+
 ## <a name="considerations-and-limitations"></a>Huomioitavat asiat ja rajoitukset
 
 * Käyttäjien määrittäminen rooleihin Power BI -palvelussa ei vaikuta rivitason suojaukseen upotustunnusta käytettäessä.
@@ -315,7 +327,7 @@ Käyttäjätietojen blob-objektissa annetun arvon on oltava kelvollinen käyttö
 * Reaaliaikaisia Analysis Services -yhteyksiä tuetaan paikallisissa palvelimissa.
 * Reaaliaikaiset Azure Analysis Services -yhteydet tukevat suodattamista roolien mukaan. Dynaaminen suodatus voidaan tehdä CustomData-toiminnon avulla.
 * Jos pohjana oleva tietojoukko ei vaadi rivitason suojausta, GenerateToken-pyyntö **ei** saa sisältää käytössä olevia käyttäjätietoja.
-* Jos pohjana oleva tietojoukko on pilvimalli (välimuistissa oleva tai DirectQuery-malli), käytössä olevien käyttäjätietojen on sisällettävä vähintään yksi rooli, tai roolimääritystä ei tehdä.
+* Jos pohjana oleva tietojoukko on pilvimalli (välimuistissa oleva tai DirectQuery-malli), käytössä olevien käyttäjätietojen on sisällettävä vähintään yksi rooli. Muussa tapauksessa roolimääritystä ei tehdä.
 * Käyttäjätietojen luettelo mahdollistaa useat käyttäjätietojen tunnukset koontinäyttöjen upotusta varten. Luettelo sisältää yksittäisen käyttäjän tiedot kaikille muille kohdetyypeille.
 
 ### <a name="token-based-identity-limitations-preview"></a>Tunnuspohjaisten käyttäjätietojen rajoitukset (esikatselu)

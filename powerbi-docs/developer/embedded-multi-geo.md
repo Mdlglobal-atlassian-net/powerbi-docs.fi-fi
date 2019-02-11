@@ -4,18 +4,17 @@ description: Lue, miten voit ottaa sisältöä käyttöön tietokeskuksissa muil
 author: markingmyname
 ms.author: maghan
 manager: kfile
-ms.reviewer: ''
+ms.reviewer: nishalit
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 08/31/2018
-LocalizationGroup: Embedded
-ms.openlocfilehash: ab1b0f7ea7dbee13f39fbf47505a00e2ed6d41ea
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.date: 02/05/2019
+ms.openlocfilehash: 25627709af2faa78fd30b28cffba21d1442e0d3f
+ms.sourcegitcommit: 0abcbc7898463adfa6e50b348747256c4b94e360
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54280420"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "55762417"
 ---
 # <a name="multi-geo-support-for-power-bi-embedded-preview"></a>Power BI Embeddedin Multi-Geo-tuki (esikatselu)
 
@@ -56,7 +55,9 @@ Et voi muuttaa Power BI Embedded -resurssin sijaintia, kun olet luonut uuden kap
 Siirrä Power BI -sisältösi eri alueelle toimimalla seuraavasti:
 
 1. [Luo uusi kapasiteetti](azure-pbie-create-capacity.md) eri alueelle.
+
 2. Määritä kaikki työtilat olemassa olevasta kapasiteetista uuteen kapasiteettiin.
+
 3. Poista tai keskeytä vanha kapasiteetti.
 
 On tärkeää huomata, että jos päätät poistaa kapasiteetin määrittämättä sen sisältöä uudelleen, kaikki kyseisen kapasiteetin sisältö siirtyy jaettuun kapasiteettiin, joka on kotialueellasi.
@@ -66,7 +67,9 @@ On tärkeää huomata, että jos päätät poistaa kapasiteetin määrittämätt
 Jotta voidaan tukea kapasiteettien hallintaa Multi-Geossa ohjelmointirajapinnan kautta, olemassa oleviin ohjelmointirajapintoihin on tehty joitakin muutoksia:
 
 1. **[Kapasiteettien hakeminen](https://docs.microsoft.com/rest/api/power-bi/capacities/getcapacities)** – Ohjelmointirajapinta palauttaa kapasiteettiluettelon, jota käyttäjä voi käyttää. Vastaus sisältää nyt alue-nimisen lisäominaisuuden, joka määrittää kapasiteetin sijainnin.
-2. **[Kapasiteettiin määrittäminen](https://docs.microsoft.com/rest/api/power-bi/capacities)** – Ohjelmointirajapinnan avulla tietty työtila voidaan määrittää kapasiteettiin. Tämä toiminto ei salli työtilojen määrittämistä kotialueesi ulkopuoliseen kapasiteettiin tai työtilojen siirtämistä eri alueilla sijaitsevien kapasiteettien välillä. Jotta käyttäjä voi tehdä tämän toiminnon, hänellä on edelleen oltava järjestelmänvalvojan oikeudet työtilaan ja kohdekapasiteetin järjestelmänvalvonta- tai määritysoikeudet.
+
+2. **[Kapasiteettiin määrittäminen](https://docs.microsoft.com/rest/api/power-bi/capacities)** – Ohjelmointirajapinnan avulla tietty työtila voidaan määrittää kapasiteettiin. Tämä toiminto ei salli työtilojen määrittämistä kotialueesi ulkopuoliseen kapasiteettiin tai työtilojen siirtämistä eri alueilla sijaitsevien kapasiteettien välillä. Tämän toiminnon suorittaminen edellyttää, että käyttäjällä tai [palvelun päänimellä](embed-service-principal.md) on järjestelmänvalvojan oikeudet työtilaan sekä kohdekapasiteetin järjestelmänvalvonta- tai määritysoikeudet.
+
 3. **[Azure Resource Manager -ohjelmointirajapinta](https://docs.microsoft.com/rest/api/power-bi-embedded/capacities)** – Kaikki Azure Resource Manager -ohjelmointirajapinnan toiminnot, mukaan lukien *luominen* ja *poistaminen*, tukevat Multi-Geoa.
 
 ## <a name="limitations-and-considerations"></a>Rajoitukset ja huomioitavat asiat

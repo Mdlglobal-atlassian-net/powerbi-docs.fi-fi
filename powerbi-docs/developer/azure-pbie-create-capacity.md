@@ -2,24 +2,24 @@
 title: Power BI Embedded -kapasiteetin luominen Azure-portaalissa | Microsoft Docs
 description: Tässä artikkelissa esitellään, miten voit luoda Power BI Embedded -kapasiteetin Microsoft Azuressa.
 author: markingmyname
-manager: kfile
 ms.author: maghan
+manager: kfile
 ms.service: power-bi-embedded
 ms.subservice: ''
 ms.devlang: csharp, javascript
 ms.topic: conceptual
-ms.reviewer: ''
-ms.date: 07/31/2018
-ms.openlocfilehash: caab7ce649687ec22d171e112382aa13d7652fb9
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.reviewer: zakharb
+ms.date: 02/05/2019
+ms.openlocfilehash: 1d829dc31bc6e2419d4f2c187b40d6945f963f69
+ms.sourcegitcommit: 0abcbc7898463adfa6e50b348747256c4b94e360
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54288539"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "55762555"
 ---
 # <a name="create-power-bi-embedded-capacity-in-the-azure-portal"></a>Power BI Embedded -kapasiteetin luominen Azure-portaalissa
 
-Tässä artikkelissa esitellään, miten voit luoda Power BI Embedded -kapasiteetin Microsoft Azuressa. Power BI Embedded yksinkertaistaa Power BI -ominaisuuksia auttamalla sinua lisäämään upeita visualisointeja, raportteja ja koontinäyttöjä sovelluksiisi nopeasti.
+Tässä artikkelissa esitellään, miten voit luoda [Power BI Embedded](azure-pbie-what-is-power-bi-embedded.md) -kapasiteetin Microsoft Azuressa. Power BI Embedded yksinkertaistaa Power BI -ominaisuuksia auttamalla sinua lisäämään upeita visualisointeja, raportteja ja koontinäyttöjä sovelluksiisi nopeasti.
 
 Jos sinulla ei ole Azure-tilausta, luo [ilmainen tili](https://azure.microsoft.com/free/) ennen aloittamista.
 
@@ -38,13 +38,11 @@ Tarvitset tämän pikaoppaan suorittamiseen seuraavat asiat:
 
 1. Kirjaudu sisään [Azure-portaaliin](https://portal.azure.com/).
 
-2. Valitse **Luo resurssi** > **Tiedot ja analytiikka**.
+2. Kirjoita hakuruutuun *Power BI Embedded*.
 
-3. Kirjoita hakuruutuun *Power BI Embedded*.
+3. Valitse Power BI Embeddedissä **Luo**.
 
-4. Valitse Power BI Embeddedissä **Luo**.
-
-5. Täytä tarvittavat tiedot ja valitse sitten **Luo**.
+4. Täytä tarvittavat tiedot ja valitse sitten **Luo**.
 
     ![Täytettävät kentät uuden kapasiteetin luomista varten](media/azure-pbie-create-capacity/azure-portal-create-power-bi-embedded.png)
 
@@ -57,9 +55,7 @@ Tarvitset tämän pikaoppaan suorittamiseen seuraavat asiat:
     |**Sijainti**|Sijainti, jossa Power BI sijaitsee vuokraajaasi varten. Oletussijainti on kotialueesi, mutta voit muuttaa sijainnin [Multi-Geo-asetuksissa](embedded-multi-geo.md).
     |**Hinnoittelutaso**|Valitse SKU (näennäisytimien määrä ja muistin koko), joka vastaa tarpeitasi.  Lisätietoja on kohdassa [Power BI Embedded -hinnoittelu](https://azure.microsoft.com/pricing/details/power-bi-embedded/)|
 
-6. Valitse **Luo**.
-
-Luonti kestää yleensä alle minuutin, usein vain muutamia sekunteja. Jos valitset **Kiinnitä koontinäyttöön**, voit siirtyä koontinäyttöön ja tarkastella uutta kapasiteettiasi. Vaihtoehtoisesti voit siirtyä kohtaan **Kaikki palvelut** > **Power BI Embedded** ja katsoa, onko kapasiteettisi valmis.
+Voit siirtyä kohtaan **Kaikki palvelut** > **Power BI Embedded** ja tarkistaa, onko kapasiteettisi valmis. Jos haluat siirtyä koontinäyttöön tarkastelemaan uutta kapasiteettiasi, voit myös valita ilmoitusosiosta tai ruudusta **Kiinnitä koontinäyttöön**.
 
 ![Azure-portaalin koontinäyttö ja Power BI Embedded -kapasiteetti](media/azure-pbie-create-capacity/azure-portal-dashboard.png)
 

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 01/24/2019
 ms.author: mihart
 LocalizationGroup: Consumer
-ms.openlocfilehash: 174886acf1d827497b48d660bb89e2b4057b09b9
-ms.sourcegitcommit: 2954de034f5e1be655dd02cc756ff34f126d3034
+ms.openlocfilehash: 35d5a6f9911afea7b91b37299225c191cd4d7ac9
+ms.sourcegitcommit: 54d44deb6e03e518ad6378656c769b06f2a0b6dc
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55234587"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55794843"
 ---
 # <a name="visualization-types-in-power-bi"></a>Visualisointityypit Power BI:ssä
 Visualisointeja löytyy raporteista, koontinäytöistä, sovelluksista ja Q&A:sta. Jotkin näistä visualisointityypeistä ovat Power BI:hin sisältyviä visualisointeja ja jotkin ovat *mukautettuja visualisointeja*. Mukautetut visualisoinnit luodaan Power BI:n ulkopuolella siten, että *raporttien suunnittelijat* voivat lisätä niitä Power BI:n raportteihin, koontinäyttöihin ja sovelluksiin. 
@@ -26,7 +26,7 @@ Tämä artikkeli on yleiskatsaus Power BI:hin sisältyvistä visualisoinneista. 
 > Jos haluat lisätietoja mukautetuista visualisoinneista, hae niitä [Microsoft AppSourcen](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals) **Power BI -visualisointien osiossa**. Näet kustakin visualisoinnista kuvauksen, sen tekijän tiedot ja joko näyttökuvia tai videon. 
 
 ## <a name="list-of-visualizations-available-in-power-bi"></a>Luettelo visualisoinneista, jotka ovat käytettävissä Power BI:ssa
-Kaikki nämä visualisoinnit löytyvät Power BI:n sovelluksista, koontinäytöistä, raporteista ja tietyistä [Q&A-osioista](#gna).
+Kaikki nämä visualisoinnit löytyvät Power BI:n sovelluksista, koontinäytöistä, raporteista ja tietyistä [Q&A-osioista](#qna). Jos haluat lukea ohjeita visualisointien käyttöön, lue ohjeartikkeli [Visualisointien käyttö raporteissa, koontinäytöissä ja sovelluksissa](end-user-visualizations.md).
 
 ### <a name="area-charts-basic-layered-and-stacked"></a>Aluekaaviot: Perus (kerrostettu) ja pinottu
 ![aluekaavio](../visuals/media/power-bi-visualization-types-for-reports-and-q-and-a/basicareamapsmall.png)
@@ -56,7 +56,7 @@ Monirivisissä korteissa näytetään yksi arvopiste tai useita arvopisteitä, y
 
 Yhdistelmäkaavio yhdistää pylväskaavion ja viivakaavion. Näiden kahden kaavion yhdistäminen nopeuttaa tietojen vertailua. Yhdistelmäkaavioissa voi olla yksi y-akseli tai kaksi y-akselia, joten tarkista kaavio tarkasti. 
 
-Yhdistelmäkaavio on hyvä vaihtoehto, kun
+Yhdistelmäkaavio on hyvä vaihtoehto, kun:
 - sinulla on viivakaavio ja pylväskaavio, joilla on sama X-akseli
 - haluat vertailla useita mittayksiköitä eri arvoalueilla
 - haluat havainnollistaa kahden mittayksikön välistä korrelaatiota yhdessä visualisoinnissa
@@ -92,7 +92,7 @@ Viisarimittarikaaviossa on pyöreä kaari, ja siinä on yksi arvo, joka mittaa e
 
 Yllä olevassa esimerkissä olemme automyyjä, joka seuraa myyntitiimin keskimääräistä myyntiä kuukaudessa. Tavoitteemme on 140, ja sitä edustaa musta neula. Pienin mahdollinen keskimääräinen myynti on 0, ja maksimiksi on asetettu 200. Sininen varjostus näyttää, että olemme tällä hetkellä noin 120 kappaleen vauhdissa tässä kuussa. Onneksi meillä on vielä viikko aikaa tavoitteiden saavuttamiseksi.
 
-Viisarimittarit ovat hyvä vaihtoehto, kun
+Viisarimittarit ovat hyvä vaihtoehto, kun:
 - esitetään edistyminen kohti tavoitetta
 - esitetään prosenttiyksiköitä, kuten suorituskyvyn mittareita
 - näytetään yhden mittauksen kunto
@@ -202,7 +202,7 @@ Taulukko on hyvä vaihtoehto:
 
 Puukartat ovat värillisiä suorakulmioita, joiden koko vastaa arvoa.  Ne voivat olla hierarkkisia, suorakulmiot sisäkkäin pääsuorakulmioissa. Kunkin suorakulmion sisällä oleva suorakulmio perustuu mitattavaan arvoon. Suorakulmiot järjestetään koon mukaan vasemmasta yläkulmasta (suurin) oikeaan alakulmaan (pienin).
 
-Puukartat ovat hyvä vaihtoehto, kun haluat
+Puukartat ovat hyvä vaihtoehto seuraaville:
 - näyttää suuria määriä hierarkkisia tietoja
 - palkkikaaviolla ei voida tehokkaasti käsitellä suuria määriä arvoja
 - näyttää kunkin osan väliset ja koko kokonaisuuden mittasuhteet
@@ -232,5 +232,5 @@ Power BI Q&A:lla kirjoitettaessa kyselyjä luonnollisella kielellä voit määri
 ![q&a-istunto](../visuals/media/power-bi-visualization-types-for-reports-and-q-and-a/qatreemap.png)
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
-[Visualisoinnit Power BI -raporteissa](end-user-visualizations.md)    
+[Visualisointien käyttö raporteissa, koontinäytöissä ja sovelluksissa](end-user-visualizations.md)    
 [Oikealla oleva visuaalinen viite osoitteesta sqlbi.com](http://www.sqlbi.com/wp-content/uploads/videotrainings/dashboarddesign/visuals-reference-may2017-A3.pdf)

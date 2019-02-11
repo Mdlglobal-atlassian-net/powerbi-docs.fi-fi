@@ -2,89 +2,100 @@
 title: Power BI Embedded -siirtotyökalu
 description: Tämän siirtotyökalun avulla voit kopioida raportit Power BI Embedded Azure -palvelusta (PaaS) Power BI -palveluun (SaaS).
 author: markingmyname
+ms.author: maghan
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 06/30/2018
-ms.author: maghan
-ms.openlocfilehash: cd88270c75b46267217147d8f02fc707eeef26ab
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 41ab7f06da3038e48e2d1188edc8b91edeee8d4f
+ms.sourcegitcommit: 0abcbc7898463adfa6e50b348747256c4b94e360
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54290397"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "55762348"
 ---
 # <a name="power-bi-embedded-migration-tool"></a>Power BI Embedded -siirtotyökalu
+
 Tämän siirtotyökalun avulla voit kopioida raportit Power BI Embedded Azure -palvelusta (PaaS) Power BI -palveluun (SaaS).
 
 Voit siirtää sisältösi työtilakokoelmista Power BI -palveluun rinnakkain nykyisen ratkaisusi kanssa ilman käyttökatkoa.
 
 ## <a name="limitations"></a>Rajoitukset
+
 * Lähetettyjä tietojoukkoja ei voi ladata palvelusta, ja ne on luotava uudelleen Power BI REST -ohjelmointirajapinnoille Power BI -palvelua varten.
 * Ennen 26. marraskuuta 2016 tuotuja PBIX-tiedostoja ei voi ladata palvelusta.
 
 ## <a name="download"></a>Lataa palvelusta
+
 Voit ladata siirtotyökalunäytteen [GitHubista](https://github.com/Microsoft/powerbi-migration-sample). Voit ladata palvelusta joko säilön zipin tai kloonata sen paikallisesti. Kun se on ladattu palvelusta, voit avata *powerbi-migration-sample.sln*-näytteen Visual Studiossa siirtotyökalun luomiseksi ja suorittamiseksi.
 
 ## <a name="migration-plans"></a>Siirtosuunnitelmat
+
 Siirtosuunnitelma on vain metatieto, joka kertoo Power BI Embedded -palvelun sisällön ja tavan, jolla haluat julkaista sen Power BI -palveluun.
 
 ### <a name="start-with-a-new-migration-plan"></a>Aloita uudella siirtosuunnitelmalla
+
 Siirtosuunnitelma on metatieto Power BI Embedded -palvelussa saatavilla olevista kohteista, jotka haluat sitten siirtää Power BI -palveluun. Siirtosuunnitelma tallennetaan XML-tiedostona.
 
 Haluat aloittaa luomalla uuden siirtosuunnitelman. Voit luoda uuden siirtosuunnitelman seuraavasti.
 
 1. Valitse **Tiedosto** > **Uusi siirtosuunnitelma**.
-   
-    ![](media/migrate-tool/migrate-tool-plan.png)
+
+    ![Työkalusuunnitelma](media/migrate-tool/migrate-tool-plan.png)
+
 2. Haluat valita **Valitse Power BI Embedded -resurssiryhmä** -valintaikkunasta avattavan Ympäristö-luettelon ja valita tuotannon.
+
 3. Sinua kehotetaan kirjautumaan sisään. Käytät Azure-tilauksesi kirjautumistunnusta.
-   
+
    > [!IMPORTANT]
    > Kyse **ei** ole Office 365:n organisaation tilistä, jolla kirjaudut sisään Power BI -palveluun.
-   > 
-   > 
+
 4. Valitse Azure-tilaus, joka tallentaa Power BI Embedded -työtilakokoelmat.
-   
-    ![](media/migrate-tool/migrate-tool-select-resource-group.png)
+
+    ![Resurssiryhmä](media/migrate-tool/migrate-tool-select-resource-group.png)
 5. Valitse tilausluettelon alta **Resurssiryhmä**, joka sisältää työtilakokoelmat, ja valitse **Valitse**.
-   
-    ![](media/migrate-tool/migrate-tool-select-resource-group2.png)
+
+    ![Valitse resurssiryhmä](media/migrate-tool/migrate-tool-select-resource-group2.png)
+
 6. Valitse **Analysoi**. Saat näin Azure-tilauksessa olevien kohteiden inventaarion, jonka avulla voit aloittaa suunnitelman työstämisen.
-   
-    ![](media/migrate-tool/migrate-tool-analyze-group.png)
-   
+
+    ![Analysoi ryhmä](media/migrate-tool/migrate-tool-analyze-group.png)
+
    > [!NOTE]
    > Analysointiprosessi voi viedä pari minuuttia työtilakokoelmien määrän ja niiden sisällön määrän mukaan.
-   > 
-   > 
+
 7. Kun **Analysoi**-vaihe on suoritettu, sinua kehotetaan tallentamaan siirtosuunnitelma.
 
 Olet tässä vaiheessa yhdistänyt siirtosuunnitelmasi Azure-tilaukseesi. Lue alta, miten työnkulku sujuu siirtosuunnitelmassa. Se sisältää kohteet Analysoi ja suunnittele siirtoa, Lataa palvelusta, Luo ryhmät ja Lataa palveluun.
 
 ### <a name="save-your-migration-plan"></a>Tallenna siirtosuunnitelma
+
 Voit tallentaa siirtosuunnitelman myöhempää käyttöä varten. Se luo XML-tiedoston, joka sisältää siirtosuunnitelmasi kaikki tiedot.
 
 Voit tallentaa siirtosuunnitelmasi seuraavasti.
 
 1. Valitse **Tiedosto** > **Tallenna siirtosuunnitelma**.
-   
-    ![](media/migrate-tool/migrate-tool-save-plan.png)
+
+    ![Tallenna suunnitelma](media/migrate-tool/migrate-tool-save-plan.png)
+
 2. Anna tiedostollesi nimi tai käytä luotua tiedostonimeä ja valitse **Tallenna**.
 
 ### <a name="open-an-existing-migration-plan"></a>Avaa olemassa oleva siirtosuunnitelma
+
 Voit avata tallennetun siirtosuunnitelman, jos haluat jatkaa siirron työstämistä.
 
 Voit avata olemassa olevan siirtosuunnitelman seuraavasti.
 
 1. Valitse **Tiedosto** > **Avaa olemassa oleva siirtosuunnitelma**.
-   
-    ![](media/migrate-tool/migrate-tool-open-plan.png)
+
+    ![Avaa suunnitelma](media/migrate-tool/migrate-tool-open-plan.png)
+
 2. Valitse siirtotiedosto ja valitse **Avaa**.
 
 ## <a name="step-1-analyze--plan-migration"></a>Vaihe 1: Analysoi ja suunnittele siirtoa
+
 **Analysoi ja suunnittele siirtoa** -välilehden avulla voit tarkastella Azure-tilauksesi resurssiryhmän tämänhetkistä sisältöä.
 
 ![Analysoi ja suunnittele siirtoa -välilehti](media/migrate-tool/migrate-tool-step1.png)
@@ -92,52 +103,53 @@ Voit avata olemassa olevan siirtosuunnitelman seuraavasti.
 Tarkastelemme esimerkkinä *SampleResourceGroupia*.
 
 ### <a name="paas-topology"></a>PaaS-topologia
+
 Tämä on luettelo kohteesta *Resurssiryhmä > Työtilakokoelmat > Työtilat*. Resurssiryhmä ja työtilakokoelmat näyttävät kutsumanimen. Työtilat näyttävät GUID-tunnuksen.
 
-Luettelon kohteissa näytetään myös väri ja numero muodossa (#/#). Tämä osoittaa niiden raporttien määrän, jotka voidaan ladata palvelusta. Musta väri tarkoittaa, että kaikki raportit voidaan ladata palvelusta.
+Luettelon kohteissa näytetään myös väri ja numero muodossa (#/#). Tämä osoittaa niiden raporttien määrän, jotka voidaan ladata palvelusta.
+Musta väri tarkoittaa, että kaikki raportit voidaan ladata palvelusta.
 
 Punainen väri tarkoittaa, että joitakin raportteja ei voida ladata. Vasemmalla oleva numero ilmaisee, kuinka monta raporttia voidaan yhteensä ladata palvelusta. Oikealla oleva numero ilmaisee, kuinka monta raporttia ryhmässä on yhteensä.
 
 Voit valita PaaS-topologian kohteen näkymään raportissa Raportit-osiossa.
 
 ### <a name="reports"></a>Raportit
+
 Raportit-osiossa on luettelo saatavilla olevista raporteista. Se ilmaisee, voidaanko ne ladata palvelusta vai ei.
 
-![](media/migrate-tool/migrate-tool-analyze-reports.png)
+![Analysoi raportit](media/migrate-tool/migrate-tool-analyze-reports.png)
 
 ### <a name="target-structure"></a>Kohderakenne
+
 Ilmoitat **Kohderakenne**-kohdassa, mistä palvelusta kohteet ladataan ja miten ne ladataan palveluun.
 
 #### <a name="download-plan"></a>Lataa suunnitelma palvelusta
+
 Polku luodaan automaattisesti puolestasi. Voit halutessasi muuttaa tätä polkua. Jos muutat polkua, sinun on valittava **Päivitä polut**.
 
 > [!NOTE]
 > Tämä ei varsinaisesti suorita latausta palvelusta vaan vain määrittää rakenteen, mistä raportit ladataan.
-> 
-> 
 
 #### <a name="upload-plan"></a>Lataa suunnitelma palveluun
+
 Voit täällä määrittää etuliitteen, jota käytetään Power BI -palvelussa luotavassa sovelluksen työtilassa. Sen jälkeen etuliitteenä toimii GUID-tunnus työtilalle, joka oli jo olemassa Azuressa.
 
-![](media/migrate-tool/migrate-tool-upload-plan.png)
+![Lataa suunnitelma](media/migrate-tool/migrate-tool-upload-plan.png)
 
 > [!NOTE]
 > Tämä ei varsinaisesti luo ryhmiä Power BI -palvelussa vaan vain määrittää ryhmien nimeämisrakenteen.
-> 
-> 
 
 Jos muutat etuliitettä, sinun on valittava **Luo palveluun ladattava suunnitelma**.
 
 Voit napsauttaa hiiren oikealla painikkeella ryhmää ja nimetä ryhmän uudelleen halutessasi Lataa suunnitelma suoraan palveluun -kohdassa.
 
-![](media/migrate-tool/migrate-tool-upload-report-rename-item.png)
+![Lataa raportti ja nimeä kohde uudelleen](media/migrate-tool/migrate-tool-upload-report-rename-item.png)
 
 > [!NOTE]
 > *Ryhmän* nimi ei saa sisältää välilyöntejä tai virheellisiä merkkejä.
-> 
-> 
 
 ## <a name="step-2-download"></a>Vaihe 2: Lataa
+
 **Lataa**-välilehdessä näet luettelon raporteista ja liitännäisestä metatiedosta. Näet täällä viennin tilan sekä edellisen viennin tilan.
 
 ![](media/migrate-tool/migrate-tool-download-tab.png)
@@ -147,45 +159,48 @@ Sinulla on kaksi vaihtoehtoa.
 * Valitse tietyt raportit ja valitse **Lataa valitut kohteet palvelusta**
 * Valitse **Lataa kaikki kohteet palvelusta**.
 
-![](media/migrate-tool/migrate-tool-download-options.png)
+![Latausasetukset](media/migrate-tool/migrate-tool-download-options.png)
 
 Jos lataus palvelusta onnistui, näet tilan *Valmis*. Se tarkoittaa, että PBIX-tiedosto on luotu.
 
 Kun lataus palvelusta on valmis, valitse **Luo ryhmät** -välilehti.
 
 ## <a name="step-3-create-groups"></a>Vaihe 3: Luo ryhmiä
+
 Kun olet ladannut saatavilla olevat raportit palvelusta, voit siirtyä **Luo ryhmät** -välilehteen. Tämä välilehti luo sovelluksen työtilat Power BI -palvelussa luomasi siirtosuunnitelman mukaan. Se luo sovelluksen työtilan nimellä, jonka annoit **Lataa**-välilehden **Analysoi ja suunnittele siirtoa** -kohdassa.
 
-![](media/migrate-tool/migrate-tool-create-groups.png)
+![Luo ryhmiä](media/migrate-tool/migrate-tool-create-groups.png)
 
 Jos haluat luoda sovelluksen työtilat, voit valita joko **Luo valitut ryhmät** tai **Luo kaikki puuttuvat ryhmät**.
 
 Kun valitset jommankumman näistä vaihtoehdoista, sinua kehotetaan kirjautumaan sisään. *Haluat käyttää tunnistetietojasi Power BI -palvelulle, jonka haluat luoda sovelluksen työtiloissa.*
 
-![](media/migrate-tool/migrate-tool-create-group-sign-in.png)
+![Luo ryhmäkirjautuminen](media/migrate-tool/migrate-tool-create-group-sign-in.png)
 
 Tämä luo sovelluksen työtilan Power BI -palvelussa. Tämä ei lataa raportteja sovelluksen työtilaan.
 
 Voit varmistaa, että sovelluksen työtila luotiin kirjautumalla sisään Power BI:hin, ja että työtila on olemassa. Huomaat, että työtilassa ei ole mitään.
 
-![](media/migrate-tool/migrate-tool-app-workspace.png)
+![Sovellustyötila](media/migrate-tool/migrate-tool-app-workspace.png)
 
 Työtilan luomisen jälkeen voit siirtyä **Lataa palveluun** -välilehteen.
 
 ## <a name="step-4-upload"></a>Vaihe 4: Lataa
+
 Voit **Lataa palveluun** -välilehdessä ladata raportit Power BI -palveluun. Näet luettelon palvelusta ladatuista raporteista Lataa palvelusta -välilehdessä yhdessä kohderyhmän nimen kanssa siirtosuunnitelman mukaan.
 
-![](media/migrate-tool/migrate-tool-upload-tab.png)
+![Latausvälilehti](media/migrate-tool/migrate-tool-upload-tab.png)
 
 Voit ladata valitut raportit tai kaikki raportit palveluun. Voit myös vaihtaa Lataa palveluun -tilaksi kohteiden uudelleenlataus.
 
 Voit myös valita, mitä haluat tehdä, jos löytyy samanniminen raportti. Voit valita **Keskeytä**, **Ohita** ja **Korvaa**.
 
-![](media/migrate-tool/migrate-tool-upload-report-same-name.png)
+![Lataa raportti samalla nimellä](media/migrate-tool/migrate-tool-upload-report-same-name.png)
 
-![](media/migrate-tool/migrate-tool-upload-selected.png)
+![Lataa valitut](media/migrate-tool/migrate-tool-upload-selected.png)
 
 ### <a name="duplicate-report-names"></a>Samat raportin nimet
+
 Jos sinulla on samanniminen raportti, jonka tiedät kuitenkin olevan eri raportti, sinun on muutettava raportin **kohteen nimeä**. Voit muuttaa nimeä muokkaamalla manuaalisesti siirtosuunnitelman XML-tiedostoa.
 
 Siirtotyökalu on suljettava muutoksen tekemiseksi. Työkalu ja siirtosuunnitelma on sitten avattava uudelleen.
@@ -222,11 +237,12 @@ Voimme sitten avata suunnitelman uudelleen siirtotyökalussa ja ladata epäonnis
 
 Kun palaamme takaisin Power BI -palveluun, näemme, että raportit ja tietojoukot on ladattu sovelluksen työtilaan.
 
-![](media/migrate-tool/migrate-tool-upload-app-workspace.png)
+![Lataa sovellustyötila](media/migrate-tool/migrate-tool-upload-app-workspace.png)
 
 <a name="upload-local-file"></a>
 
 ### <a name="upload-a-local-pbix-file"></a>Lataa paikallinen PBIX-tiedosto palveluun
+
 Voit ladata Power BI Desktop -tiedoston paikallisen version palveluun. Sulje työkalu, muokkaa XML-tiedostoa ja anna paikallisen PBIX-tiedoston täydellinen polku **PbixPath**-ominaisuudessa.
 
 ```
@@ -238,6 +254,7 @@ Kun olet muokannut XML-tiedostoa, avaa suunnitelma uudelleen siirtotyökalussa j
 <a name="directquery-reports"></a>
 
 ### <a name="directquery-reports"></a>DirectQuery-raportit
+
 Sinun on päivitettävä DirectQuery-raporttien yhteysmerkkijonoa. Se voidaan tehdä *powerbi.comissa* tai voit ohjelmallisesti kysellä yhteysmerkkijonoa Power BI Embedded (Paas) -palvelusta. Katso esimerkkiä tästä artikkelista [DirectQuery-yhteysmerkkijonon poimiminen PaaS-raportista](migrate-code-snippets.md#extract-directquery-connection-string-from-paas-report).
 
 Voit sitten päivittää tietojoukon yhteysmerkkijonon Power BI -palvelussa (SaaS) ja määrittää tietolähteen tunnistetiedot. Näet seuraavien esimerkkien avulla, miten se tapahtuu.
@@ -246,11 +263,13 @@ Voit sitten päivittää tietojoukon yhteysmerkkijonon Power BI -palvelussa (Saa
 * [DirectQuery-tunnistetietojen määrittäminen SaaS-työtilassa](migrate-code-snippets.md#set-directquery-credentials-in-saas-workspace)
 
 ## <a name="embedding"></a>Upottaminen
+
 Kun raportit on nyt siirretty Power BI Embedded Azure -palvelusta Power BI -palveluun, voit nyt päivittää sovelluksesi ja aloittaa raporttien upottamisen tässä sovelluksen työtilassa.
 
 Katso lisätietoja artikkelista [Miten Power BI Embedded -työtilakokoelman sisältö siirretään Power BI -palveluun](migrate-from-powerbi-embedded.md).
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
+
 [Upottaminen Power BI:n avulla](embedding.md)  
 [Miten Power BI Embedded -työtilakokoelman sisältö siirretään Power BI -palveluun](migrate-from-powerbi-embedded.md)  
 [Mikä on Power BI Premium?](../service-premium.md)  
@@ -260,4 +279,3 @@ Katso lisätietoja artikkelista [Miten Power BI Embedded -työtilakokoelman sis�
 [Power BI Premiumin tekninen raportti](https://aka.ms/pbipremiumwhitepaper)  
 
 Onko sinulla muuta kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)
-
