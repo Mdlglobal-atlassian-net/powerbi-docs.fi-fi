@@ -61,6 +61,8 @@ items:
         href: ../power-bi-visualizations-arcgis.md
     - name: Yleiset tehtävät
       items:
+      - name: Sisällön omistajan ja viimeisen päivityspäivän tarkistaminen
+        href: end-user-fresh.md
       - name: Eri tapoja lähentää sisältöön kohdistuksen ja koko näytön tilan avulla
         href: end-user-focus.md
       - name: Power BI:n suosikkikoontinäytöt, -raportit ja -sovellukset
@@ -191,9 +193,9 @@ items:
     items:
     - name: Mobiilisovellusten tuetut kielet
       href: mobile/mobile-apps-supported-languages.md
-ms.openlocfilehash: 39f29c1fdc719defe1afe1f9bcdb5ef98a34c3c5
-ms.sourcegitcommit: 54d44deb6e03e518ad6378656c769b06f2a0b6dc
+ms.openlocfilehash: f0e5454a60f1434b1098484e7ef3cc74d3ce3be5
+ms.sourcegitcommit: 88ac51106ec7d0ead8c2a1550a11afae0d502bb9
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55794532"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56086559"

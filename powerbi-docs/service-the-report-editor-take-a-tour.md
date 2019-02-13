@@ -8,21 +8,23 @@ featuredvideoid: IkJda4O7oGs
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/25/2019
+ms.date: 02/07/2019
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: 51a99d59c74160d229c0d18defe2c5e7be4f48fb
-ms.sourcegitcommit: 5bd9bd890db9a7f9d5988c81232f40b9b260a96f
+ms.openlocfilehash: 66e40462081ee2f1156840d137d4c67ad0eb7b45
+ms.sourcegitcommit: b717118c44499c8fd8f57534a275f2f78aacc0f1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "55147400"
+ms.lasthandoff: 02/09/2019
+ms.locfileid: "55971690"
 ---
 # <a name="tour-the-report-editor-in-power-bi"></a>Power BI -raporttieditoriin tutustuminen
 
-Power BI -palvelun *raporttieditori* ja Power BI Desktopin raporttieditori ovat samankaltaisia. Videossa näytetään Power BI Desktopin raporttieditori ja tässä artikkelissa näytetään Power BI -palvelun raporttieditori. 
+Power BI -palvelun *raporttieditori* ja Power BI Desktopin raporttieditori ovat samankaltaisia. Aloitat tavallisesti raporttien luomisesta Power BI Desktopissa. Seuraavaksi julkaiset ne Power BI -palveluun, jossa voit jatkaa niiden muokkaamista. Power BI -palvelussa luot myös raportteihisi perustuvat koontinäytöt.
 
-Raportin luojana voit luoda ja muokata koontinäyttöjä ja raportteja. Voit sitten jakaa ne raportin käyttäjille. He voivat käsitellä koontinäyttöjä ja raportteja lukunäkymässä Power BI -palvelussa, mutta eivät voi muokata niitä. Lue lisää siitä, [mitä raporttien käyttäjät voivat tehdä Power BI -palvelussa](consumer/end-user-reading-view.md) 
+Kun olet luonut koontinäyttöjä ja raportteja, jaat ne raporttien kuluttajille. Jakamistavan mukaan loppukäyttäjät saattavat voida käsitellä niitä Power BI -palvelun lukunäkymässä, mutta eivät muokata. Lue lisää siitä, [mitä raporttien käyttäjät voivat tehdä Power BI -palvelussa](consumer/end-user-reading-view.md). 
+
+Tässä videossa näytetään Power BI Desktopin raporttieditori. Tässä artikkelissa kerrotaan Power BI -palvelussa raporttieditorista. 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/IkJda4O7oGs" frameborder="0" allowfullscreen></iframe>
 
@@ -90,6 +92,12 @@ Suodattimet-ruudulla on myös toinen tehokas ominaisuus: voit suodattaa käyttä
 ![Suodattimet-ruutu](media/service-the-report-editor-take-a-tour/power-bi-formatting-pane.png)
 
 Katso lisätietoja artikkelista [Suodattimen lisääminen raporttiin](power-bi-report-add-filter.md).
+
+Uusi suodatuskokemus on tällä hetkellä esikatseluvaiheessa. Voit muotoilla uusia suodattimia niin, että ne näyttävät samalta kuin itse raportti. Voit myös lukita suodattimia tai piilottaa ne raportin kuluttajilta. 
+
+![Uusi suodatuskokemus](media/service-the-report-editor-take-a-tour/power-bi-filter-reading.png)
+
+Lue lisää [uudesta suodatuskokemuksesta](power-bi-report-filter-preview.md).
 
 - - -
 ## <a name="the-fields-pane"></a>Kentät-ruutu

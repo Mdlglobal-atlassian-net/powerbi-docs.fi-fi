@@ -9,12 +9,12 @@ ms.subservice: power-bi-developer
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 02/05/2019
-ms.openlocfilehash: a0b1722a54f1e5ea5bf01d8e5bb5fb4753351a60
-ms.sourcegitcommit: 0abcbc7898463adfa6e50b348747256c4b94e360
+ms.openlocfilehash: 81a40e021ecd094e5e678504f2dd60300802d909
+ms.sourcegitcommit: b717118c44499c8fd8f57534a275f2f78aacc0f1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "55763063"
+ms.lasthandoff: 02/09/2019
+ms.locfileid: "55971667"
 ---
 # <a name="service-principal-with-power-bi-preview"></a>Palvelun päänimi ja Power BI (esikatselu)
 
@@ -108,9 +108,6 @@ Palvelun päänimen (sovellustunnus) käyttö eroaa tavallisen päätilin käyt�
     Add-AzureADGroupMember -ObjectId $($group.ObjectId) -RefObjectId $($sp.ObjectId)
     ```
 
-    > [!Note]
-    > Vain yleinen AAD-järjestelmänvalvoja voi luoda AAD-käyttöoikeusryhmiä.
-
 3. Power BI -järjestelmänvalvojana sinun täytyy ottaa palvelun päänimi käyttöön Power BI -hallintaportaalin **kehittäjäasetuksissa**. Lisää Azure AD:ssä luomasi käyttöoikeusryhmä **kehittäjäasetusten** **tietyn käyttöoikeusryhmän** osiossa.
 
    > [!Important]
@@ -173,6 +170,7 @@ Alla on esimerkkikomentosarja, jolla voit hakea palvelun päänimen objektitunnu
 * Power BI -järjestelmänvalvojan oikeuksia edellytetään, kun otat palvelun päänimen käyttöön Power BI -hallintaportaalin kehittäjäasetuksissa.
 * Et voi asentaa tai hallita paikallista tietoyhdyskäytävää palvelun päänimellä.
 * [Organisaatiosi upotetut sovellukset](embed-sample-for-your-organization.md) eivät voi käyttää palvelun päänimeä.
+* [Tietovoiden](../service-dataflows-overview.md) hallintaa ei tueta.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 

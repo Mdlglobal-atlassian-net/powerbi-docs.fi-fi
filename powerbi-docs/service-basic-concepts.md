@@ -8,23 +8,25 @@ featuredvideoid: B2vd4MQrz4M
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/18/2018
+ms.date: 02/07/2019
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: 29e6fe1bfb5a85d2a5ea42db406d4a127a65ec25
-ms.sourcegitcommit: 5bd9bd890db9a7f9d5988c81232f40b9b260a96f
+ms.openlocfilehash: d09ff277ed1c47b9ab11d6ffed4e5c8a57059465
+ms.sourcegitcommit: b717118c44499c8fd8f57534a275f2f78aacc0f1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "55147446"
+ms.lasthandoff: 02/09/2019
+ms.locfileid: "55971713"
 ---
 # <a name="basic-concepts-for-designers-in-the-power-bi-service"></a>Power BI -palvelun peruskäsitteitä suunnittelijoille
 
-Tässä artikkelissa oletetaan, että olet jo [rekisteröitynyt Power BI -palvelun käyttäjäksi](service-self-service-signup-for-power-bi.md) ja [lisännyt palveluun joitakin tietoja](service-get-data.md). Jos sinulla ei ole vielä tietoja, yritä asentaa [Power BI -mallin sisältöpaketti](sample-datasets.md#the-power-bi-samples-as-content-packs).
+Tässä artikkelissa esitellään Power BI -palvelua: mitä ovat sen eri elementit, miten ne toimivat yhteen ja miten voit käyttää niitä. Saatat hyötyä artikkelista eniten, jos olet jo [rekisteröitynyt Power BI -palvelun käyttäjäksi](service-self-service-signup-for-power-bi.md) ja [lisännyt palveluun joitakin tietoja](service-get-data.md). Suunnittelijana työnkulkusi alkaa yleensä raporttien luomisesta Power BI Desktopissa. Seuraavaksi julkaiset ne Power BI -palveluun, jossa voit jatkaa niiden muokkaamista. Power BI -palvelussa luot myös raportteihisi perustuvat koontinäytöt. 
+
+Jos sinulla ei ole vielä omia raportteja, yritä asentaa [Power BI -mallin sisältöpaketti](sample-datasets.md#the-power-bi-samples-as-content-packs) tätä artikkelia varten.
 
 ![Power BI -palvelun aloitusnäyttö selaimessa](media/service-basic-concepts/power-bi-home-screen.png)
 
-Seuraavassa on elementtejä, jotka näet, kun avaat Power BI -palvelun selaimessa:
+Kun avaat Power BI -palvelun selaimessa, palvelun Aloitussivu avautuu. Saatat nähdä seuraavia elementtejä:
 
 1. Siirtymisruutu (vasen siirtymispalkki)
 2. Office 365 -sovellusten käynnistystoiminto
@@ -34,9 +36,9 @@ Seuraavassa on elementtejä, jotka näet, kun avaat Power BI -palvelun selaimess
 6. Ruudut suosituimmasta koontinäytöstä
 7. Suosituimmat ja yleisimmät koontinäytöt ja raportit
 
-Tutustumme näihin ominaisuuksiin myöhemmin tarkemmin, mutta käydään ensin läpi muutamia Power BI:n peruskäsitteitä.
+Raporttiesi ja koontinäyttöjesi loppukäyttäjät aloittavat samasta näkymästä käyttäessään Power BI -palvelua selaimella.
 
-Voit myös katsoa tämän videon ennen kuin luet tämän artikkelin loppuun.  Videolla Will kertoo peruskäsitteistä ja esittelee Power BI -palvelua.
+Tutustumme näihin ominaisuuksiin myöhemmin tarkemmin, mutta käydään ensin läpi muutamia Power BI:n peruskäsitteitä. Vaihtoehtoisesti voit katsoa tämän videon ensin.  Videolla Will kertoo peruskäsitteistä ja esittelee Power BI -palvelua.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/B2vd4MQrz4M" frameborder="0" allowfullscreen></iframe>
 
@@ -45,13 +47,12 @@ Voit myös katsoa tämän videon ennen kuin luet tämän artikkelin loppuun.  Vi
 Power BI:n neljä peruselementtiä ovat: **_koontinäytöt_**, **_raportit_**, **_työkirjat_** ja **_tietojoukot_**. Ne on kaikki järjestetty **_työtiloiksi_**. Työtilojen käsite on tärkeä ymmärtää ennen neljään peruselementtiin tutustumista, joten aloitetaan siitä.
 
 ## <a name="workspaces"></a>Työtilat
-Työtilat ovat Power BI:ssä olevia säilöjä koontinäytöille, raporteille, työkirjoille ja tietojoukoille. Työtiloja on kahdenlaisia: *Oma työtila* ja *sovellustyötilat*. Entä mitä tarkoitetaan *sovelluksella*? Power BI -*sovellus* on kokoelma koontinäyttöjä ja raportteja, joiden avulla voit kuvata organisaatiosi keskeisiä mittalukuja. Sovellukset ovat vuorovaikutteisia, mutta niitä ei voi muokata.
+Työtilat ovat Power BI:ssä olevia säilöjä koontinäytöille, raporteille, työkirjoille ja tietojoukoille. Työtiloja on kahdenlaisia: *Oma työtila* ja *sovellustyötilat*. Entä mitä tarkoitetaan *sovelluksella*? Power BI -*sovellus* on kokoelma koontinäyttöjä ja raportteja, joiden avulla voit kuvata keskeisiä mittalukuja organisaatiosi Power BI -loppukäyttäjille. Sovellukset ovat vuorovaikutteisia, mutta loppukäyttäjät eivät voi muokata niitä.
 
 - *Oma työtila* on jokaisen Power BI -asiakkaan henkilökohtainen työtila oman sisällön käsittelyyn. Vain sinulla on käyttöoikeus omaan työtilaasi. Oman työtilan kautta voi jakaa raporttinäkymiä ja raportteja. Jos haluat käsitellä koontinäyttöjä ja raportteja yhteistyössä tai luoda sovelluksen, sinun kannattaa käyttää sovellustyötilaa.      
 -  *Sovellustyötiloja* käytetään yhteistyöhön ja sisällön jakamiseen kollegoiden kanssa. Niissä voi myös luoda, julkaista ja hallita sovelluksia organisaatiollesi. Niitä voi ajatella tietynlaisina valmisteluympäristöinä ja säilöinä sisällölle, josta muodostuu Power BI -sovellus. Voit lisätä kollegoita sovellustyötilan käyttäjiksi ja käsitellä koontinäyttöjä, raportteja, työkirjoja ja tietojoukkoja yhteistyössä. Kaikki sovellustyötilan jäsenet tarvitsevat Power BI Pro -käyttöoikeudet, mutta sovelluksen kuluttajilla (sovelluksen käyttöoikeuden saaneilla kollegoilla) ei välttämättä tarvitse olla Pro-käyttöoikeuksia.  
 
-Lisätietoja on sisällysluettelon **Työn jakaminen** -osiossa, jonka ensimmäisenä aiheena on [Miten voin jakaa koontinäyttöjä ja raportteja sekä työstää niitä yhdessä muiden kanssa?](service-how-to-collaborate-distribute-dashboards-reports.md)
-
+Lisätietoja saat artikkelista [Tapoja jakaa koontinäyttöjä töistäsi](service-how-to-collaborate-distribute-dashboards-reports.md).
 
 Siirrytään nyt Power BI:n peruselementteihin. Raporttinäkymiä tai raportteja ei voi olla ilman tietoja – tai tyhjinä niistä ei ainakaan ole hyötyä –, joten aloitetaan **tietojoukoista**.
 
@@ -72,7 +73,7 @@ Alla olevassa esimerkissä olen valinnut Myynti ja markkinointi -sovellustyötil
 
   ![Tietojoukkokaavio](media/service-basic-concepts/drawing2.png)
 
-Voit [yhdistää tietojoukkoon tai tuoda tietojoukon](service-get-data.md) valitsemalla **Nouda tiedot** (vasemman siirtymisruudun alareunassa) tai valitsemalla **+ Luo > Tietojoukko** (oikeassa yläkulmassa). Noudata ohjeita yhteyden muodostamiseen tiettyyn lähteeseen tai lähteen tuomiseen. Lisää tietojoukko aktiiviseen työtilaan. Uudet tietojoukot on merkitty keltaisella tähdellä. Power BI:ssä tekemäsi työ ei muuta pohjana olevaa tietojoukkoa.
+Voit [yhdistää tietojoukkoon tai tuoda tietojoukon](service-get-data.md) valitsemalla **Nouda tiedot** vasemman siirtymisruudun alareunassa. Noudata ohjeita yhteyden muodostamiseen tiettyyn lähteeseen tai lähteen tuomiseen. Lisää tietojoukko aktiiviseen työtilaan. Uudet tietojoukot on merkitty keltaisella tähdellä. Power BI:ssä tekemäsi työ ei muuta pohjana olevaa tietojoukkoa.
 
 Jos olet [osa **_sovellustyötilaa_**](service-collaborate-power-bi-workspace.md), yhden työtilan jäsenen lisäämät tietojoukot ovat työtilan muiden jäsenten käytettävissä.
 
@@ -111,7 +112,7 @@ Alla olevassa esimerkissä olen valinnut Myynti ja markkinointi -sovellustyötil
 * [Raportit Power BI -mobiilisovelluksissa](mobile-reports-in-the-mobile-apps.md)
 
 ## <a name="dashboards"></a>koontinäytöt
-*Koontinäytön* voit luoda itse **Power BI -palvelussa**, tai vaihtoehtoisesti kollega luo sen **Power BI -palvelussa** ja jakaa kanssasi. Se on yksittäinen kangas, joka sisältää ruutuja ja pienoissovelluksia – tai voi olla myös tyhjä. Jokainen raportista tai [Q&A](power-bi-q-and-a.md)-tuloksista kiinnitetty ruutu näyttää yksittäisen [visualisoinnin](power-bi-report-visualizations.md), jotka on luotu tietojoukosta ja kiinnitetty koontinäyttöön. Myös raportin kokonaisia sivuja voi kiinnittää koontinäyttöön yksittäisenä ruutuna. Ruutuja voi lisätä koontinäyttöön monella tavalla, joista kaikkia ei käsitellä tässä yleiskatsauksessa. Lisätietoja on artikkelissa [Koontinäyttöruudut Power BI:ssä](service-dashboard-tiles.md).
+*Koontinäytön* voit luoda itse **Power BI -palvelussa**, tai vaihtoehtoisesti kollega luo sen **Power BI -palvelussa** ja jakaa sen kanssasi. Se on yksittäinen kangas, joka sisältää ruutuja ja pienoissovelluksia – tai voi olla myös tyhjä. Jokainen raportista tai [Q&A](power-bi-q-and-a.md)-tuloksista kiinnitetty ruutu näyttää yksittäisen [visualisoinnin](power-bi-report-visualizations.md), jotka on luotu tietojoukosta ja kiinnitetty koontinäyttöön. Myös raportin kokonaisia sivuja voi kiinnittää koontinäyttöön yksittäisenä ruutuna. Ruutuja voi lisätä koontinäyttöön monella tavalla, joista kaikkia ei käsitellä tässä yleiskatsauksessa. Lisätietoja on artikkelissa [Koontinäyttöruudut Power BI:ssä](service-dashboard-tiles.md).
 
 Miksi koontinäyttöjä luodaan?  Tässä on vain muutamia syitä:
 
