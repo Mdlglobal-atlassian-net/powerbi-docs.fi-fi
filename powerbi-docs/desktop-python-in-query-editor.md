@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 06/18/2018
 ms.author: otarb
 LocalizationGroup: Connect to data
-ms.openlocfilehash: d97c59b7c5d25e85dee5f3b5b5b6ae8d24ae6cb2
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 28463c065c965b90beb32feabcd5de029311c612
+ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54283318"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56217041"
 ---
 # <a name="using-python-in-query-editor"></a>Pythonin käyttö kyselyeditorissa
 Voit käyttää tilastoijien, tiedemiesten ja tietoanalysoijien käyttämää **Python**-ohjelmointikieltä Power BI Desktopin **kyselyeditorissa**. Tämän Pythonin **kyselyeditoriin** integroinnin avulla voit suorittaa tietojen puhdistamisen Pythonilla ja suorittaa kehittynyttä tietojen muotoilemista ja analyysia tietojoukoissa, kuten puuttuvien tietojen täydentämistä, ennusteita ja klusterointia. **Python** on tehokas kieli, ja sitä voidaan käyttää **kyselyeditorissa** valmistelemaan tietomallisi ja raporttien luomiseen.
@@ -43,10 +43,12 @@ Katso, miten **Pythonia** voi käyttää **kyselyeditorissa**, tutustumalla täh
    ![](media/desktop-python-in-query-editor/python-in-query-editor-5.png)
 6. Anna tässä esimerkissä seuraava komentosarjakoodi:
    
+    ```python
        import pandas as pd
        completedData = dataset.fillna(method='backfill', inplace=False)
        dataset["completedValues"] =  completedData["SMI missing values"]
-   
+   ```
+
    > [!NOTE]
    > Python-ympäristöön on oltava asennettuna *pandas*-kirjasto, jotta edellinen komentosarjakoodi toimisi oikein. Asenna pandas suorittamalla seuraava komento Python-asennuksessasi: |      > pip install pandas
    > 

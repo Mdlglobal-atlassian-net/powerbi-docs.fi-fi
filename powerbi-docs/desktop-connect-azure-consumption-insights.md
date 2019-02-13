@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 12/06/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 7280d7c601e59b15ffad6ececfed8b111ab796cb
-ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
+ms.openlocfilehash: 1302ede9c28cc42b3605e55705f07620f2974990
+ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55430966"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56216052"
 ---
 # <a name="connect-to-azure-consumption-insights-in-power-bi-desktop-beta"></a>Azure Consumption Insightsiin yhdistäminen Power BI Desktopissa (beeta)
 **Azure Consumption Insights** -liittimen avulla voit yhdistää **Power BI Desktopin** Azureen ja saada tarkkoja tietoja organisaatiosi Azure-palveluiden käytöstä. Voit myös luoda mittayksiköitä, mukautettuja sarakkeita ja visualisointeja ja raportoida ja jakaa tietoja organisaatiosi Azuren käytöstä. Tämä **Azure Consumption and Insights** -liitin on beetaversio, johon saattaa tulla muutoksia.

@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 03/02/2018
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 4dec423e991b695097134d575de8c687b518a66c
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 0cad14c9d00c6d027c0235714305fb33847b5f8a
+ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54287067"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56215696"
 ---
 # <a name="add-image-text-video-and-more-to-your-dashboard"></a>Kuvan, tekstin, videon ja muiden elementtien lisääminen koontinäyttöön
 <iframe width="560" height="315" src="https://www.youtube.com/embed/e2PD8m1Q0vU" frameborder="0" allowfullscreen></iframe>
@@ -101,12 +101,12 @@ Voit liittää tai kirjoittaa mitä tahansa HTML-sisältöä.  Power BI lisää 
 ## <a name="tips-for-embedding-web-content"></a>Vihjeitä verkkosisällön upottamiseen
 * Käytä iframe-kehyksissä suojattua lähdettä. Jos annat iframe-upotuskoodin ja näyttöön tulee tyhjä ruutu, tarkista, onko iframe-lähteenä **http**.  Jos on, vaihda se **https**-muotoon.
   
-  ```
+  ```html
   <iframe src="https://xyz.com">
   ```
 * Muokkaa leveys- ja korkeustietoja. Tämä upotuskoodi upottaa videon ja määrittää videosoittimen kooksi 560 x 315 kuvapistettä.  Tämä koko ei muutu, vaikka muuttaisit ruudun kokoa.
   
-  ```
+  ```html
   <iframe width="560" height="315"
   src="https://www.youtube.com/embed/Cle_rKBpZ28" frameborder="0"
    allowfullscreen></iframe>
@@ -114,14 +114,14 @@ Voit liittää tai kirjoittaa mitä tahansa HTML-sisältöä.  Power BI lisää 
   
   Jos haluat, että soittimen koko muuttuu ruudun koon mukaan, määritä leveydeksi ja korkeudeksi 100 %.
   
-  ```
+  ```html
   <iframe width="100%" height="100%"
   src="https://www.youtube.com/embed/Cle_rKBpZ28" frameborder="0"
    allowfullscreen></iframe>
   ```
 * Tämä koodi upottaa twiitin ja säilyttää koontinäytössä erilliset linkit seuraaviin elementteihin: **AFK**-podcast, **käyttäjän @GuyInACube Twitter-sivu**, **Seuraa**,  **#analytics**, **vastaus**, **uudelleentwiittaus** ja **tykkäys**.  Valitsemalla itse ruudun siirryt Twitterin podcastiin.
   
-  ```
+  ```html
   <blockquote class="twitter-tweet" data-partner="tweetdeck">
   <p lang="en" dir="ltr">Listen to
   <a href="https://twitter.com/GuyInACube">@GuyInACube</a> talk to

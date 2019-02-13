@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 09/10/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 5c383cf3c7fcbae88be6943bb418026c849db196
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: f30ff44fbc4d99818661abc53cb99bb96cfde673
+ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54277430"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56215731"
 ---
 # <a name="use-report-themes-in-power-bi-desktop"></a>Raporttiteemojen käyttäminen Power BI Desktopissa
 **Raporttiteemojen** avulla voit käyttää väriteemaa koko raportissa. Tällä tavalla voit käyttää esimerkiksi yrityksen omaa väriteemaa, kausivärejä tai muita väriteemoja. Kun otat käyttöön **raporttiteeman**, kaikissa raporttisi visualisoinneissa käytetään valitun teeman värejä. Muutamia poikkeuksia on, ja ne kuvataan jäljempänä tässä artikkelissa.
@@ -101,6 +101,7 @@ Jos haluat ottaa tyylin käyttöön **taulukon** tai **matriisin** visualisoinni
 
 Tässä on *St. Patricks Day.json* -tiedoston teksti, jota käyttämällä voit luoda oman JSON-tiedostosi:
 
+```json
     {
         "name": "St Patricks Day",
         "dataColors": ["#568410", "#3A6108", "#70A322", "#915203", "#D79A12", "#bb7711", "#114400", "#aacc66"],
@@ -108,6 +109,7 @@ Tässä on *St. Patricks Day.json* -tiedoston teksti, jota käyttämällä voit 
         "foreground": "#3A6108",
         "tableAccent": "#568410"
     }
+```
 
 Voit täältä syöttää oman väriheksadesimaalikoodisi valittuja värejä varten.
 
@@ -158,6 +160,7 @@ Haluatko aloittaa **raporttiteemojen** käytön? Seuraavassa on joitakin valmiit
 
 Latauksen sijaan käytettävissäsi on Valentine's day -teeman JSON-tiedoston koodi:
 
+```json
     {
         "name": "Valentine's Day",
         "dataColors": ["#990011", "#cc1144", "#ee7799", "#eebbcc", "#cc4477", "#cc5555", "#882222", "#A30E33"],
@@ -165,6 +168,7 @@ Latauksen sijaan käytettävissäsi on Valentine's day -teeman JSON-tiedoston ko
         "foreground": "#ee7799",
         "tableAccent": "#990011"
     }
+```
 
 **Raporttiteemojen** avulla voit ilmaista Power BI Desktop -raporteissasi itseäsi, organisaatiotasi, juhlapyhää tai vuodenaikaa värikkäin tavoin. 
 
@@ -303,7 +307,8 @@ Seuraavassa taulukossa määritetään *cardName*-arvot. Jokaisen solun ensimmä
 ### <a name="properties-within-each-card"></a>Kunkin kortin ominaisuudet
 Seuraavassa osiossa määritetään kunkin kortin ominaisuudet:
 
-    "general":
+```json
+      "general":
         "responsive": {
           "type": [
             "bool"
@@ -371,7 +376,7 @@ Seuraavassa osiossa määritetään kunkin kortin ominaisuudet:
           ]
         }
       },
-    "categoryAxis": {
+      "categoryAxis": {
         "show": {
           "type": [
             "bool"
@@ -557,7 +562,7 @@ Seuraavassa osiossa määritetään kunkin kortin ominaisuudet:
           ]
         }
       },
-    "valueAxis": {
+      "valueAxis": {
         "show": {
           "type": [
             "bool"
@@ -865,7 +870,7 @@ Seuraavassa osiossa määritetään kunkin kortin ominaisuudet:
           ]
         }
       },
-    "dataPoint": {
+      "dataPoint": {
         "defaultColor": {
           "type": [
             "fill"
@@ -901,7 +906,7 @@ Seuraavassa osiossa määritetään kunkin kortin ominaisuudet:
           ]
         }
       },
-    "labels": {
+      "labels": {
         "show": {
           "type": [
             "bool"
@@ -1019,7 +1024,7 @@ Seuraavassa osiossa määritetään kunkin kortin ominaisuudet:
           ]
         }
       },
-    "lineStyles": {
+      "lineStyles": {
         "strokeWidth": {
           "type": [
             "numeric"
@@ -1094,7 +1099,7 @@ Seuraavassa osiossa määritetään kunkin kortin ominaisuudet:
           ]
         }
       },
-    "plotArea": {
+      "plotArea": {
         "transparency": {
           "type": [
             "numeric"
@@ -1107,7 +1112,7 @@ Seuraavassa osiossa määritetään kunkin kortin ominaisuudet:
           ]
         }
       },
-    "trend": {
+      "trend": {
         "show": {
           "type": [
             "bool"
@@ -1297,7 +1302,7 @@ Seuraavassa osiossa määritetään kunkin kortin ominaisuudet:
           ]
         }
       },
-    "referenceLine": {
+      "referenceLine": {
         "show": {
           "type": [
             "bool"
@@ -1433,7 +1438,7 @@ Seuraavassa osiossa määritetään kunkin kortin ominaisuudet:
           ]
         }
       },
-    "line": {
+      "line": {
         "lineColor": {
           "type": [
             "fill"
@@ -1470,7 +1475,7 @@ Seuraavassa osiossa määritetään kunkin kortin ominaisuudet:
           ]
         }
       },
-    "fill": {
+      "fill": {
         "show": {
           "type": [
             "bool"
@@ -1499,7 +1504,7 @@ Seuraavassa osiossa määritetään kunkin kortin ominaisuudet:
           ]
         }
       },
-    "rotation": {
+      "rotation": {
         "angle": {
           "type": [
             "numeric"
@@ -1509,7 +1514,7 @@ Seuraavassa osiossa määritetään kunkin kortin ominaisuudet:
           ]
         }
       },
-    "categoryLabels": {
+      "categoryLabels": {
         "show": {
           "type": [
             "bool"
@@ -1546,7 +1551,7 @@ Seuraavassa osiossa määritetään kunkin kortin ominaisuudet:
           ]
         }
       },
-    "wordWrap": {
+      "wordWrap": {
         "show": {
           "type": [
             "bool"
@@ -1556,7 +1561,7 @@ Seuraavassa osiossa määritetään kunkin kortin ominaisuudet:
           ]
         }
       },
-    "dataLabels": {
+      "dataLabels": {
         "color": {
           "type": [
             "fill"
@@ -1585,7 +1590,7 @@ Seuraavassa osiossa määritetään kunkin kortin ominaisuudet:
           ]
         }
       },
-    "cardTitle": {
+      "cardTitle": {
         "color": {
           "type": [
             "fill"
@@ -1614,7 +1619,7 @@ Seuraavassa osiossa määritetään kunkin kortin ominaisuudet:
           ]
         }
       },
-    "card": {
+      "card": {
         "outline": {
           "type": [
             "enumeration"
@@ -1695,7 +1700,7 @@ Seuraavassa osiossa määritetään kunkin kortin ominaisuudet:
           ]
         }
       },
-    "percentBarLabel": {
+      "percentBarLabel": {
         "show": {
           "type": [
             "bool"
@@ -1732,7 +1737,7 @@ Seuraavassa osiossa määritetään kunkin kortin ominaisuudet:
           ]
         }
       },
-    "axis": {
+      "axis": {
         "min": {
           "type": [
             "numeric"
@@ -1758,7 +1763,7 @@ Seuraavassa osiossa määritetään kunkin kortin ominaisuudet:
           ]
         }
       },
-    "target": {
+      "target": {
         "show": {
           "type": [
             "bool"
@@ -1817,7 +1822,7 @@ Seuraavassa osiossa määritetään kunkin kortin ominaisuudet:
           ]
         }
       },
-    "calloutValue": {
+      "calloutValue": {
         "show": {
           "type": [
             "bool"
@@ -1860,7 +1865,7 @@ Seuraavassa osiossa määritetään kunkin kortin ominaisuudet:
           ]
         }
       },
-    "forecast": {
+      "forecast": {
         "show": {
           "type": [
             "bool"
@@ -1927,7 +1932,7 @@ Seuraavassa osiossa määritetään kunkin kortin ominaisuudet:
           ]
         }
       },
-    "bubbles": {
+      "bubbles": {
         "bubbleSize": {
           "type": [
             "formatting"
@@ -1937,7 +1942,7 @@ Seuraavassa osiossa määritetään kunkin kortin ominaisuudet:
           ]
         }
       },
-    "mapControls": {
+      "mapControls": {
         "autoZoom": {
           "type": [
             "bool"
@@ -1962,7 +1967,7 @@ Seuraavassa osiossa määritetään kunkin kortin ominaisuudet:
           ]
         }
       },
-    "mapStyles": {
+      "mapStyles": {
         "mapTheme": {
           "type": [
             "enumeration"
@@ -1972,7 +1977,7 @@ Seuraavassa osiossa määritetään kunkin kortin ominaisuudet:
           ]
         }
       },
-    "shape": {
+      "shape": {
         "map": {
           "type": [
             "geoJson"
@@ -1990,7 +1995,7 @@ Seuraavassa osiossa määritetään kunkin kortin ominaisuudet:
           ]
         }
       },
-    "zoom": {
+      "zoom": {
         "autoZoom": {
           "type": [
             "bool"
@@ -2025,7 +2030,7 @@ Seuraavassa osiossa määritetään kunkin kortin ominaisuudet:
           ]
         }
       },
-    "xAxisReferenceLine": {
+      "xAxisReferenceLine": {
         "show": {
           "type": [
             "bool"
@@ -2150,7 +2155,7 @@ Seuraavassa osiossa määritetään kunkin kortin ominaisuudet:
           ]
         }
       },
-    "fillPoint": {
+      "fillPoint": {
         "show": {
           "type": [
             "bool"
@@ -2160,7 +2165,7 @@ Seuraavassa osiossa määritetään kunkin kortin ominaisuudet:
           ]
         }
       },
-    "colorByCategory": {
+      "colorByCategory": {
         "show": {
           "type": [
             "bool"
@@ -2170,7 +2175,7 @@ Seuraavassa osiossa määritetään kunkin kortin ominaisuudet:
           ]
         }
       },
-    "plotAreaShading": {
+      "plotAreaShading": {
         "show": {
           "type": [
             "bool"
@@ -2213,7 +2218,7 @@ Seuraavassa osiossa määritetään kunkin kortin ominaisuudet:
           ]
         }
       },
-    "ratioLine": {
+      "ratioLine": {
         "show": {
           "type": [
             "bool"
@@ -2253,7 +2258,7 @@ Seuraavassa osiossa määritetään kunkin kortin ominaisuudet:
           ]
         }
       },
-    "grid": {
+      "grid": {
         "outlineColor": {
           "type": [
             "fill"
@@ -2373,7 +2378,7 @@ Seuraavassa osiossa määritetään kunkin kortin ominaisuudet:
           ]
         }
       },
-    "columnHeaders": {
+      "columnHeaders": {
         "outline": {
           "type": [
             "enumeration"
@@ -2448,7 +2453,7 @@ Seuraavassa osiossa määritetään kunkin kortin ominaisuudet:
           ]
         }
       },
-    "values": {
+      "values": {
         "outline": {
           "type": [
             "enumeration"
@@ -2567,7 +2572,7 @@ Seuraavassa osiossa määritetään kunkin kortin ominaisuudet:
           ]
         }
       },
-    "total": {
+      "total": {
         "outline": {
           "type": [
             "enumeration"
@@ -2631,7 +2636,7 @@ Seuraavassa osiossa määritetään kunkin kortin ominaisuudet:
           ]
         }
       },
-    "columnFormatting": {
+      "columnFormatting": {
         "fontColor": {
           "type": [
             "fill"
@@ -2687,7 +2692,7 @@ Seuraavassa osiossa määritetään kunkin kortin ominaisuudet:
           ]
         }
       },
-    "rowHeaders": {
+      "rowHeaders": {
         "outline": {
           "type": [
             "enumeration"
@@ -2776,7 +2781,7 @@ Seuraavassa osiossa määritetään kunkin kortin ominaisuudet:
           ]
         }
       },
-    "subTotals": {
+      "subTotals": {
         "outline": {
           "type": [
             "enumeration"
@@ -2848,7 +2853,7 @@ Seuraavassa osiossa määritetään kunkin kortin ominaisuudet:
           ]
         }
       },
-    "selection": {
+      "selection": {
         "selectAllCheckboxEnabled": {
           "type": [
             "bool"
@@ -2866,7 +2871,7 @@ Seuraavassa osiossa määritetään kunkin kortin ominaisuudet:
           ]
         }
       },
-    "header": {
+      "header": {
         "show": {
           "type": [
             "bool"
@@ -2919,7 +2924,7 @@ Seuraavassa osiossa määritetään kunkin kortin ominaisuudet:
           ]
         }
       },
-    "items": {
+      "items": {
         "fontColor": {
           "type": [
             "fill"
@@ -2964,7 +2969,7 @@ Seuraavassa osiossa määritetään kunkin kortin ominaisuudet:
           ]
         }
       },
-    "numericInputStyle": {
+      "numericInputStyle": {
         "fontColor": {
           "type": [
             "fill"
@@ -3001,7 +3006,7 @@ Seuraavassa osiossa määritetään kunkin kortin ominaisuudet:
           ]
         }
       },
-    "slider": {
+      "slider": {
         "show": {
           "type": [
             "bool"
@@ -3019,7 +3024,7 @@ Seuraavassa osiossa määritetään kunkin kortin ominaisuudet:
           ]
         }
       },
-    "dateRange": {
+      "dateRange": {
         "includeToday": {
           "type": [
             "bool"
@@ -3029,7 +3034,7 @@ Seuraavassa osiossa määritetään kunkin kortin ominaisuudet:
           ]
         }
       },
-    "sentimentColors": {
+      "sentimentColors": {
         "increaseFill": {
           "type": [
             "fill"
@@ -3063,7 +3068,7 @@ Seuraavassa osiossa määritetään kunkin kortin ominaisuudet:
           ]
         }
       },
-    "breakdown": {
+      "breakdown": {
         "maxBreakdowns": {
           "type": [
             "integer"
@@ -3076,7 +3081,7 @@ Seuraavassa osiossa määritetään kunkin kortin ominaisuudet:
           ]
         }
       },
-    "indicator": {
+      "indicator": {
         "indicatorDisplayUnits": {
           "type": [
             "formatting"
@@ -3108,7 +3113,7 @@ Seuraavassa osiossa määritetään kunkin kortin ominaisuudet:
           ]
         }
       },
-    "trendline": {
+      "trendline": {
         "show": {
           "type": [
             "bool"
@@ -3118,7 +3123,7 @@ Seuraavassa osiossa määritetään kunkin kortin ominaisuudet:
           ]
         }
       },
-    "goals": {
+      "goals": {
         "showGoal": {
           "type": [
             "bool"
@@ -3136,7 +3141,7 @@ Seuraavassa osiossa määritetään kunkin kortin ominaisuudet:
           ]
         }
       },
-    "status": {
+      "status": {
         "direction": {
           "type": [
             "enumeration"
@@ -3170,13 +3175,14 @@ Seuraavassa osiossa määritetään kunkin kortin ominaisuudet:
           ]
         }
       }
-
+```
 
 
 
 ### <a name="enumerations-in-the-json-file"></a>Luetteloinnit JSON-tiedostossa
 Seuraavassa osiossa määritetään luetteloinnit, joita voit käyttää JSON-tiedostossa.
 
+```json
     {
         "legend": {
             "position": [
@@ -4205,3 +4211,4 @@ Seuraavassa osiossa määritetään luetteloinnit, joita voit käyttää JSON-ti
          ]
        }
     }
+```

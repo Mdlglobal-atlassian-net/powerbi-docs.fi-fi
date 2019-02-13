@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 4571f3e4622dd4e1f0bc476e02e25e835a7d1e20
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 8074e91ff3c336b26004a2f439a48ff54bfec147
+ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54292886"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56215431"
 ---
 # <a name="connect-to-snowflake-in-power-bi-desktop"></a>Snowflakeen yhdistäminen Power BI Desktopissa
 Voit muodostaa Power BI Desktopissa yhteyden **Snowflake Computing** -varastoon ja käyttää sen tietoja samaan tapaan kuin muita tietolähteitä käytetään Power BI Desktopissa. 

@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 02/05/2019
-ms.openlocfilehash: 52ee2dec11029f7c529362fdb44e2291846449c1
-ms.sourcegitcommit: 0abcbc7898463adfa6e50b348747256c4b94e360
+ms.openlocfilehash: 353104bcc99b65bdabe83f58edffd2653c48731c
+ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "55761980"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56215914"
 ---
 # <a name="step-5-add-rows-to-a-power-bi-table"></a>Vaihe 5: Rivien lisääminen Power BI -taulukkoon
 
@@ -42,7 +42,7 @@ Lisää tämä koodi kohtaan Program.cs.
 
 * Kohdassa static void Main(string[] args):
   
-  ```
+  ```csharp
    static void Main(string[] args)
    {
   
@@ -62,7 +62,7 @@ Lisää tämä koodi kohtaan Program.cs.
   ```
 * Lisää AddRows()-menetelmä:
 
-```
+```csharp
     #region Add rows to a Power BI table
     private static void AddRows(string datasetId, string tableName)
     {
@@ -111,6 +111,8 @@ Alla on [kattava koodiluettelo](#code).
 <a name="code"/>
 
 ## <a name="complete-code-listing"></a>Kattava koodiluettelo
+
+```csharp
     using System;
     using Microsoft.IdentityModel.Clients.ActiveDirectory;
     using System.Net;
@@ -307,6 +309,7 @@ Alla on [kattava koodiluettelo](#code).
             #endregion
         }
     }
+```
 
 Vaikka tarkensimme, että **_//Saamme ensimmäisen tunnuksen_** yllä olevasta koodista, oikea tapa on etsiä tietojoukko nimen mukaan.
 

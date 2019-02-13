@@ -10,12 +10,12 @@ ms.subservice: powerbi-gateways
 ms.topic: conceptual
 ms.date: 08/08/2018
 LocalizationGroup: Gateways
-ms.openlocfilehash: 623eb93c27f0ec762b2c9d063b646d757c3b1f0c
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: afc4df99b90d6c6d7016f34983ca3691fb500325
+ms.sourcegitcommit: 80961ace38ff9dac6699f81fcee0f7d88a51edf4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54296566"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56223916"
 ---
 # <a name="troubleshooting-the-on-premises-data-gateway"></a>Paikallisen tietoyhdyskäytävän vianmääritys
 
@@ -35,11 +35,15 @@ Yhdyskäytävä suoritetaan Windows-palveluna, joten voit käynnistää ja sammu
 
 * Voit lopettaa palvelun suorittamalla seuraavan komennon:
 
-    '''   net stop PBIEgwService   '''
+    ```
+    net stop PBIEgwService
+    ```
 
 * Voit käynnistää palvelun suorittamalla seuraavan komennon:
 
-    '''   net start PBIEgwService   '''
+    ```
+    net start PBIEgwService
+    ```
 
 ### <a name="log-file-configuration"></a>Lokitiedoston määrittäminen
 
@@ -186,7 +190,7 @@ Varmista, että tilisi on lueteltu tietolähteen **Käyttäjät**-välilehdellä
 
 Varmista, että olet lisännyt yhden tai useamman tietolähteen yhdyskäytävään kohdassa [Tietolähteen lisääminen](service-gateway-manage.md#add-a-data-source) kuvatulla tavalla. Jos yhdyskäytävä ei näy hallintaportaalin kohdassa **Yhdyskäytävien hallinta**, kokeile tyhjentää selaimen välimuisti tai kirjautua ulos palvelusta ja sitten takaisin sisään.
 
-## <a name="datasets"></a>tietojoukot
+## <a name="datasets"></a>Tietojoukot
 
 ### <a name="error-there-is-not-enough-space-for-this-row"></a>Virhe: Tälle riville ei ole tarpeeksi tilaa
 
@@ -318,7 +322,7 @@ Vaihda tiedoston *Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config
 > [!IMPORTANT]
 > Kun otat EmitQueryTraces-asetuksen käyttöön, lokitiedoston koko voi kasvaa merkittävästi, mutta tämä riippuu yhdyskäytävän käytöstä. Kun olet tarkistanut lokit, sinun kannattaa vaihtaa EmitQueryTraces-asetuksen arvoksi False. Tämän asetuksen jättämistä käyttöön pitkäksi aikaa ei suositella.
 
-```
+```xml
 <setting name="EmitQueryTraces" serializeAs="String">
     <value>True</value>
 </setting>
@@ -362,7 +366,7 @@ Vaihda tiedoston *Microsoft.PowerBI.DataMovement.Pipeline.Diagnostics.dll.config
 > [!IMPORTANT]
 > Kun vaihdat TracingVerbosity-asetuksen arvoksi `5`, lokitiedoston koko voi kasvaa merkittävästi (yhdyskäytävän käytöstä riippuen). Kun olet tarkistanut lokit, vaihda TraceVerbosity-asetuksen arvoksi `4`. Tämän asetuksen jättämistä käyttöön pitkäksi aikaa ei suositella.
 
-```
+```xml
 <setting name="TracingVerbosity" serializeAs="String">
     <value>5</value>
 </setting>
@@ -486,7 +490,7 @@ Saat 1033-virheen, kun ulkoinen SAP HANA:ssa määritetty tunnus ei täsmää ki
 
     ![sAMAccount](media/service-gateway-onprem-tshoot/sAMAccount-02.png)
 
-```
+```xml
       <setting name="ADUserNameReplacementProperty" serializeAs="String">
         <value>sAMAccount</value>
       </setting>

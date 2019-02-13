@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 12/14/2017
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 512b189575acd7651dea8747c36e8666875edae5
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: ef8146501969697b15a3d1ff3cae2c605cabaacc
+ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54295743"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56216811"
 ---
 # <a name="on-premises-data-gateway-personal-mode"></a>Paikallinen tietoyhdyskäytävä (henkilökohtainen tila)
 Yhdyskäytävän avulla voit käyttää paikallisia tietolähteitä ja luoda Power BI -raportteja ja -koontinäyttöjä. **Yhdyskäytävä** on ohjelmisto, joka helpottaa pääsyä yksityiseen ja paikalliseen verkkoon tallennettuihin tietoihin. Kyseisiä tietoja voi sitten käyttää online-palveluissa, kuten **Power BI -palvelussa**. **Paikallinen tietoyhdyskäytävä (henkilökohtainen tila)** on Power BI -yhdyskäytävään äskettäin julkaistu päivitys, jonka avulla käyttäjät voivat asentaa yhdyskäytävän omiin tietokoneisiinsa ja käyttää paikallisia tietoja.
@@ -86,11 +86,11 @@ Jos olet käyttänyt **nopeaa yhdistämistä** aiemmassa yhdyskäytävässä, si
    ```
 2. Lisää seuraava teksti tiedoston alareunaan:
    
-       ```
-       <setting name="EnableFastCombine" serializeAs="String">```
+    ```xml
+       <setting name="EnableFastCombine" serializeAs="String">
        <value>true</value>
-       </setting>
-       ```
+    </setting>
+    ```
 3. Kun olet valmis, asetus tulee voimaan noin minuutin kuluttua. Vahvista **nopean yhdistämisen** toiminta suorittamalla päivitys **Power BI -palvelussa**.
 
 ## <a name="limitations-and-considerations"></a>Rajoitukset ja huomioon otettavat seikat

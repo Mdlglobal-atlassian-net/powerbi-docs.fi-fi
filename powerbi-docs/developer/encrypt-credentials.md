@@ -9,12 +9,12 @@ ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 04/02/2019
 ms.author: mahirdiab
-ms.openlocfilehash: 050628dfe179a39ca24d2df72f1296acf48aa261
-ms.sourcegitcommit: 0abcbc7898463adfa6e50b348747256c4b94e360
+ms.openlocfilehash: 79ab3731abfdf972de1ee9d40456ebb0c5ebfa62
+ms.sourcegitcommit: 80961ace38ff9dac6699f81fcee0f7d88a51edf4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "55763077"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56223509"
 ---
 # <a name="encrypt-credentials"></a>Tunnistetietojen salaaminen
 Kun kutsut [tietolähteen luomista](https://docs.microsoft.com/rest/api/power-bi/gateways/createdatasource) tai [tietolähteen päivitystä](https://docs.microsoft.com/rest/api/power-bi/gateways/updatedatasource) **yrityksen paikallisessa yhdyskäytävässä** [Power BI REST API:n](https://docs.microsoft.com/rest/api/power-bi/) avulla, tunnistetietoarvon täytyy olla salattu yhdyskäytävän julkisella avaimella.
@@ -24,28 +24,28 @@ Alla olevasta koodiesimerkistä näet, miten tunnistetiedot salataan .NET:issä.
 EncodeCredentials-menetelmälle alla toimitettujen tunnistetietojen täytyy olla jossain seuraavista muodoista (tunnistetietotyypin mukaan):
 
 **perustunnistetiedot tai Windows-tunnistetiedot**
-```
+```csharp
 var credentials = "{\"credentialData\":[{\"name\":\"username\", \"value\":\"john\"},{\"name\":\"password\", \"value\":\"*****\"}]}";
 ```
 
 **avaintunnistetiedot**
-```
+```csharp
 var credentials = "{\"credentialData\":[{\"name\":\"key\", \"value\":\"ec....LA=\"}]}";
 ```
 
 **OAuth2-tunnistetiedot**
-```
+```csharp
 var credentials = "{\"credentialData\":[{\"name\":\"accessToken\", \"value\":\"eyJ0....fwtQ\"}]}";
 ```
 
 
 **avaintunnistetiedot**
-```
+```csharp
 var credentials = "{\"credentialData\":\"\"}";
 ```
 
 **salaustunnistetiedot.**
-```
+```csharp
 public static class AsymmetricKeyEncryptionHelper
 {
 

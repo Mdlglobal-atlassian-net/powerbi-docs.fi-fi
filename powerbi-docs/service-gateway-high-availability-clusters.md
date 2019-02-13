@@ -10,12 +10,12 @@ ms.subservice: powerbi-gateways
 ms.topic: conceptual
 ms.date: 08/08/2018
 LocalizationGroup: Gateways
-ms.openlocfilehash: 51eb5c2947dc6d621e6c2ef6d3e2361a4542a0f1
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: ee7b69bbf8857f12cabb6f7147f8e1d779b2a17e
+ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54276925"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56215063"
 ---
 # <a name="high-availability-clusters-for-on-premises-data-gateway"></a>Suuren käytettävyyden klusterit paikallisessa tietoyhdyskäytävässä
 
@@ -59,13 +59,13 @@ Jotta taulukossa olevia PowerShell-komentoja voidaan suorittaa, sinun on ensin s
 1. Avaa PowerShell-komentoikkuna järjestelmänvalvojana
 2. Suorita sitten seuraava, yhden kerran suoritettava PowerShell-komento (tässä oletetaan, että nykyisellä laitteella ei ole koskaan suoritettu PowerShell-komentoja):
 
-    ```
+    ```powershell
     Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Force
     ```
 
 3. Siirry seuraavaksi PowerShell-ikkunassa olevaan, paikallisen tietoyhdyskäytävän asennuskansioon ja tuo tarvittava moduuli seuraavan komennon avulla:
 
-    ```
+    ```powershell
     Import-Module .\OnPremisesDataGatewayHAMgmt.psm1
     ```
 

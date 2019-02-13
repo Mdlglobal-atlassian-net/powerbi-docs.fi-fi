@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 02/05/2019
-ms.openlocfilehash: b8f78821ccd6f32f9b943b55a45de20b720f3f3c
-ms.sourcegitcommit: 0abcbc7898463adfa6e50b348747256c4b94e360
+ms.openlocfilehash: fd311466d244e3ca9297f107edfad7b2cc930bfb
+ms.sourcegitcommit: 80961ace38ff9dac6699f81fcee0f7d88a51edf4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "55762095"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56223831"
 ---
 # <a name="troubleshoot-your-embedded-application"></a>Upotetun sovelluksen vianmääritys
 
@@ -161,7 +161,7 @@ Yritä selvittää syy kokeilemalla seuraavaa.
 
 ### <a name="aadsts90094-the-grant-requires-admin-permission"></a>AADSTS90094: Myöntäminen edellyttää järjestelmänvalvojan käyttöoikeutta
 
-**_Oireet:_**</br>
+**_Oireet:_**<br>
 Kun muu kuin järjestelmänvalvojana toimiva käyttäjä yrittää ensimmäistä kertaa kirjautua sisään sovellukseen luvan myöntämiseksi ja näkyviin jokin seuraavista virheistä:
 
 * ConsentTest tarvitsee organisaatiosi resurssien käyttöoikeuden, jonka vain järjestelmänvalvoja voi myöntää. Pyydä järjestelmänvalvojaa myöntämään käyttöoikeus tähän sovellukseen, jotta voit käyttää sitä.
@@ -171,7 +171,7 @@ Kun muu kuin järjestelmänvalvojana toimiva käyttäjä yrittää ensimmäistä
 
 Järjestelmänvalvojana toimiva käyttäjä voi kirjautua sisään ja myöntää luvan.
 
-**_Pääsyy:_**</br>
+**_Pääsyy:_**<br>
 Käyttäjän lupa on poistettu käytöstä vuokraajalle.
 
 **_Ongelma voidaan korjata eri tavoin:_**
