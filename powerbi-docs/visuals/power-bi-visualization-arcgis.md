@@ -6,24 +6,24 @@ manager: kvivek
 ms.reviewer: lukaszp
 featuredvideoid: EKVvOZmxg9s
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: powerbi-visuals
 ms.topic: conceptual
-ms.date: 01/29/2019
+ms.date: 02/10/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 279fea3f1b36a86e7606f3b6d69f19ab42763805
-ms.sourcegitcommit: 2954de034f5e1be655dd02cc756ff34f126d3034
+ms.openlocfilehash: 6b3f1c3780b60efc2ade444960a92234afecc71e
+ms.sourcegitcommit: 88ac51106ec7d0ead8c2a1550a11afae0d502bb9
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55234584"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56086582"
 ---
 # <a name="arcgis-maps-in-power-bi-service-and-power-bi-desktop-by-esri"></a>Esri ArcGIS -kartat Power BI -palvelussa ja Power BI Desktopissa
-Tämä opetusohjelma on kirjoitettu ArcGIS-karttaa luovan henkilön näkökulmasta. Kun tekijä jakaa ArcGIS-kartan työtoverille, kyseinen työtoveri voi tarkastella ja käsitellä karttaa mutta ei tallentaa muutoksia. Lisätietoja ArcGIS-kartan tarkastelemisesta on ohjeartikkelissa [ArcGIS-karttojen käsittely](../consumer/power-bi-visualizations-arcgis.md).
+Tämä opetusohjelma on kirjoitettu ArcGIS-karttaa luovan henkilön näkökulmasta. Kun tekijä jakaa ArcGIS-kartan työtoverille, kyseinen työtoveri voi tarkastella ja käsitellä karttaa mutta ei tallentaa muutoksia. Lisätietoja ArcGIS-kartan tarkastelemisesta on ohjeartikkelissa [ArcGIS-karttojen käsittely](power-bi-visualizations-arcgis.md).
 
 ArcGIS-kartat ja Power BI yhdessä tekevät kartoista muutakin kuin vain esitettäviä pisteitä. Valitse pohjakarttoja, sijaintityyppejä, teemoja, symbolityylejä ja viittauskerroksia, joiden avulla voit luoda upeita, informatiivisia karttavisualisointeja. Määräävien tietokerrosten yhdistäminen tila-analyysiä sisältävien karttojen kanssa mahdollista visualisaation tietojen entistä tarkemman ymmärtämisen.
 
- Mobiililaitteella voit tarkastella ja käsitellä ArcGIS-karttoja, mutta et luoda niitä. Katso [ArcGIS-karttojen käsittely](../consumer/power-bi-visualizations-arcgis.md).
+ Mobiililaitteella voit tarkastella ja käsitellä ArcGIS-karttoja, mutta et luoda niitä. Katso [ArcGIS-karttojen käsittely](power-bi-visualizations-arcgis.md).
 
 > [!TIP]
 > GIS on lyhenne sanoista Geographic Information Systems (paikkatietojärjestelmät).
@@ -91,7 +91,7 @@ Katso, miten Will luo muutamia erilaisia ArcGIS-karttavisualisointeja ja kokeile
 ## <a name="settings-and-formatting-for-arcgis-maps"></a>ArcGIS-karttojen asetukset ja muotoilu
 **ArcGIS Maps for Power BI** -muotoiluominaisuuksien käyttö:
 
-1. Voit käyttää lisätoimintoja valitsemalla kolme pistettä visualisoinnin oikeasta yläkulmasta ja valitsemalla **Muokkaa**.
+1. Voit käyttää lisätoimintoja valitsemalla kolme pistettä visualisoinnin oikeasta yläkulmasta ja valitsemalla sitten **Muokkaa**.
    
    ![](media/power-bi-visualization-arcgis/power-bi-edit2.png)
    
@@ -175,7 +175,8 @@ Ajoaika-ruudulla voit valita sijainnin ja määrittää sitten, mitkä kartan ko
     ![](media/power-bi-visualization-arcgis/power-bi-esri-drive-time.png)
 
 1. Valitse **Ajoaika**-välilehti ja valitse yksittäisten tai useiden kohteiden valintatyökalu. Valitse Washington D.C.:n nasta yksittäisellä valinnalla.
-    ![](media/power-bi-visualization-arcgis/power-bi-esri-single-select.png)
+
+   ![](media/power-bi-visualization-arcgis/power-bi-esri-single-select.png)
    
    > [!TIP]
    > Sijainti on helpompi valita, jos lähennät karttanäkymää (+ -kuvake).
@@ -340,7 +341,7 @@ Et. Power BI tarvitsee verkkoyhteyden karttojen näyttämiseen.
 Et vielä. Kun [äänestät tätä ideaa](https://ideas.powerbi.com/forums/265200-power-bi-ideas/suggestions/9154765-arcgis-geodatabases), saat sähköpostiviestin kun ominaisuuden kehittäminen aloitetaan.  
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
-[Kanssasi jaetun ArcGIS-kartan käsitteleminen](../consumer/power-bi-visualizations-arcgis.md)
+[Kanssasi jaetun ArcGIS-kartan käsitteleminen](power-bi-visualizations-arcgis.md)
 
 [Blogimerkintä, jossa ilmoitetaan ArcGIS Maps for Power BI:n saatavuudesta](https://powerbi.microsoft.com/blog/announcing-arcgis-maps-for-power-bi-by-esri-preview/)
 

@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 10/30/2018
-ms.openlocfilehash: 850d4c01248a16029b3874548b61c2f9170560bb
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: bedf9092e48b0e28c14ec510f1f3b4431e81ea27
+ms.sourcegitcommit: 88ac51106ec7d0ead8c2a1550a11afae0d502bb9
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54281501"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56086398"
 ---
 # <a name="publish-custom-visuals-to-appsource"></a>Omien visualisointien julkaiseminen AppSourcessa
 
@@ -30,7 +30,7 @@ Kun olet luonut oman visualisoinnin, voit julkaista sen AppSourcessa, josta muut
 
 ## <a name="preparing-to-submit-your-custom-visual"></a>Oman visualisoinnin julkaisun valmisteleminen
 
-Kun olet koodannut ja testannut oman visualisointisi ja paketoinut sen pbiviz-tiedostoon, kerää valmiiksi myös alla mainitut asiat julkaisua varten.
+Kun olet koodannut ja [testannut oman visualisointisi](https://github.com/Microsoft/PowerBI-visuals/blob/master/Tutorial/SubmissionTesting.md) ja paketoinut sen pbiviz-tiedostoon, kerää valmiiksi myös alla mainitut asiat julkaisua varten.
 
 | Kohde | Pakollinen | Kuvaus |
 | --- | --- | --- |

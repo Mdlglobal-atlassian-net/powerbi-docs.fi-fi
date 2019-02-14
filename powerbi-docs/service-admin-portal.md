@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 10/30/2018
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: 1bc7539eba4f390c02417edd52ea3f792613abe6
-ms.sourcegitcommit: 3729c88bd991e450fcb2d9b79e6ab478b6e8dc76
+ms.openlocfilehash: f7e28ce1f72a58fe2bb52103b79fa0106a0024ca
+ms.sourcegitcommit: 88ac51106ec7d0ead8c2a1550a11afae0d502bb9
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55888229"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56086467"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>Power BI:n hallinta hallintaportaalissa
 
@@ -236,12 +236,17 @@ Organisaation käyttäjät voivat käyttää Azure-hausta riippuvaisia ulkoisia 
 
 ## <a name="custom-visuals-settings"></a>Mukautettujen visualisointien asetukset
 
-### <a name="enable-custom-visuals-for-the-entire-organization"></a>Mukautettujen visualisointien käyttöön ottaminen koko organisaatiossa
+### <a name="add-and-use-custom-visuals"></a>Lisää ja käytä mukautettuja visualisointeja
 
 Organisaation käyttäjät voivat käyttää mukautettuja visualisointeja ja jakaa niitä. [Lue lisää](power-bi-custom-visuals.md)
 
 > [!NOTE]
-> Tämä asetus koskee koko organisaatiota, joten sitä ei rajoittaa ryhmien avulla.
+> Tämä asetus voidaan ulottaa koskemaan koko organisaatiota tai rajoittaa määrättyihin ryhmiin.
+
+### <a name="allow-only-certified-visuals"></a>Salli vain sertifioidut visualisoinnit
+
+Organisaation käyttäjät, joille on annettu oikeudet lisätä ja käyttää mukautettuja visualisointeja ”Lisää ja käytä mukautettuja visualisointeja” -asetuksen mukaisesti, saavat käyttää ainoastaan [sertifioituja mukautettuja visualisointeja](https://go.microsoft.com/fwlink/?linkid=2002010) (sertifioimattomat visualisoinnit estetään ja käyttöyritys johtaa virheilmoitukseen). 
+
 
 ## <a name="r-visuals-settings"></a>R-visualisointien asetukset
 

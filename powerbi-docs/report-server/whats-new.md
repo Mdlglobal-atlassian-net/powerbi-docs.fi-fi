@@ -48,7 +48,7 @@ Järjestelmänvalvojat voivat määrittää seuraavat palvelinklusterin asetukse
 
 **AllowedResourceExtensionsForUpload** Määritä niiden resurssien tiedostopäätteet, joita raporttipalvelimeen voi ladata. Sisäänrakennettujen tiedostotyyppien tiedostopäätteitä, kuten &ast;.rdl ja &ast;.pbix, ei tarvitse lisätä. Oletusasetus on ”&ast;, &ast;.xml, &ast;.xsd, &ast;.xsl, &ast;.png, &ast;.gif, &ast;.jpg, &ast;.tif, &ast;.jpeg, &ast;.tiff, &ast;.bmp, &ast;.pdf, &ast;.svg, &ast;.rtf, &ast;.txt, &ast;.doc, &ast;.docx, &ast;.pps, &ast;.ppt, &ast;.pptx”. 
 
-**SupportedHyperlinkSchemes** Määrittää CSV-muotoisen luettelon hyperlinkkitoiminnoissa sallituista URI-malleista, joiden hahmontaminen sallitaan. &ast; sallii kaikki hyperlinkkimallit. Esimerkiksi asetus ”http,https” sallisi hyperlinkit osoitteeseen https://www. contoso.com mutta poistaisi hyperlinkit osoitteeseen mailto:bill@contoso.com tai javascript:window.open(‘www.contoso.com’, ‘_blank’). Oletusasetus on &ast;.
+**SupportedHyperlinkSchemes** Määrittää CSV-muotoisen luettelon hyperlinkkitoiminnoissa sallituista URI-malleista, joiden hahmontaminen sallitaan. &ast; sallii kaikki hyperlinkkimallit. Esimerkiksi asetus ”http,https” sallisi hyperlinkit osoitteeseen https://www. contoso.com mutta poistaisi hyperlinkit osoitteeseen “mailto:bill@contoso.com” tai javascript:window.open(‘www.contoso.com’, ‘_blank’). Oletusasetus on &ast;.
 
 ## <a name="august-2018"></a>Elokuu 2018
 

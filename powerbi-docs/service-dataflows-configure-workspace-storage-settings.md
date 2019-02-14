@@ -10,18 +10,18 @@ ms.topic: conceptual
 ms.date: 12/10/2018
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 96b6e1a8a92b19181463de404967625b37418582
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: bcde69d25b6b73787a4b9d16e4ba2b39b183ffd7
+ms.sourcegitcommit: 88ac51106ec7d0ead8c2a1550a11afae0d502bb9
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54291943"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56086421"
 ---
 # <a name="configure-workspace-dataflow-settings-preview"></a>Määritä työtilan tietovuoasetukset (esikatselu)
 
 Power BI:nja tietovoiden avulla voit tallentaa työtilan tietovuon määritystiedoston ja datatiedostot Azure Data Lake Storage Gen2 -tiliisi. Työtilojen järjestelmänvalvojat voivat määrittää Power BI:n tätä varten. Tässä artikkelissa käydään läpi tarvittavat vaiheet. 
 
-Ennen kuin voit määrittää työtilan tietovuon tallennussijainnin, yrityksesi yleisen järjestelmänvalvojan on yhdistettävä organisaatiosi tallennustili Power BI:hin ja otettava käyttöön tallennustilan määritysoikeudet kyseisessä tallennustilissä. * [Yhdistä Azure Data Lake Storage Gen2 tietovuotallennusta varten (esikatselu)](service-dataflows-connect-azure-data-lake-storage-gen2.md) 
+Ennen kuin voit määrittää työtilan tietovuon tallennussijainnin, yrityksesi yleisen järjestelmänvalvojan on yhdistettävä organisaatiosi tallennustili Power BI:hin ja otettava käyttöön tallennustilan määritysoikeudet kyseisessä tallennustilissä. *[Yhdistä Azure Data Lake Storage Gen2 tietovuon tallennukseen (esikatselu)](service-dataflows-connect-azure-data-lake-storage-gen2.md)* 
 
 Työtilan tietovuon tallennusasetukset voidaan määrittää kahdella tavalla: 
 
