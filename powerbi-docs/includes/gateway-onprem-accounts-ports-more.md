@@ -43,7 +43,7 @@ Tässä on luettelo yhdyskäytävän käyttämistä täysin valtuutetuista toimi
 
 Voit pakottaa yhdyskäytävän vaihtamaan tietoja Azuren palveluväylän kanssa HTTPS-yhteydellä suoran TCP-yhteyden sijaan. HTTPS:n käyttämisellä voi olla vaikutusta suorituskykyyn. Voit tehdä tämän muokkaamalla *Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config* -tiedostoa muuttamalla arvon `AutoDetect` arvoksi `Https`suoraan tämän kappaleen jälkeen esitetyn koodikatkelma mukaisesti. Tiedosto löytyy (oletusarvoisesti) sijainnista *C:\Program Files\On-premises data gateway*.
 
-```
+```xml
 <setting name="ServiceBusSystemConnectivityModeString" serializeAs="String">
     <value>Https</value>
 </setting>
