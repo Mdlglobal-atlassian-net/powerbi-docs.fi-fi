@@ -1,7 +1,7 @@
 ---
 title: Vinkkejä tyylikkäiden raporttien luomiseen
 description: Vinkkejä tyylikkäiden raporttien luomiseen Power BI -palvelussa ja Power BI Desktopissa
-author: davidi
+author: davidiseminger
 manager: kfile
 ms.reviewer: willthom
 ms.service: powerbi
@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 04/13/2018
 ms.author: davidi
 LocalizationGroup: Reports
-ms.openlocfilehash: 02202e8b5e89aa8d312a96d448c825f2ca44447a
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: d88a455b5448b92d86719251bfada6bd807a4c91
+ms.sourcegitcommit: 80961ace38ff9dac6699f81fcee0f7d88a51edf4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54290494"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56223808"
 ---
 # <a name="tips-and-tricks-for-creating-reports-in-power-bi-desktop-and-power-bi-service"></a>Vinkkejä tyylikkäiden raporttien luomiseen Power BI Desktopissa ja Power BI -palvelussa
 Joskus voi tarvita hieman ylimääräistä apua, jotta tiedoista saa kaiken hyödyn irti. Olemme koonneet yhteen muutamia vinkkejä, joita voit hyödyntää, kun luot raportteja Microsoftin Power BI Desktopissa, Power BI -palvelussa *ja* Microsoft Excel 2016:ssa. Niistä on hyötyä myös Excel 2013 Pro Plus -versioissa, joissa Power Pivot -apuohjelma on otettu käyttöön sekä Power Query asennettuna ja käytössä.
@@ -145,7 +145,7 @@ Jotta voit muodostaa suhteen tässä tapauksessa, sinun on luotava looginen tiet
 4. Valitse **CustomerNames** -kyselyssä valintanauhasta **Liitä**-vaihtoehto. Valitse sitten **Temp**-kysely.
 5. Valitse **CustomerNames**-kyselyssä **Poista kaksoiskappaleet**.
 
-Nyt sinulla on dimensiotaulukko, jonka avulla voit luoda CustomerIndicents- ja WorkItems-kohteille suhteen, joka sisältää kummankin kaikki arvot.  
+Nyt sinulla on dimensiotaulukko, jota voit käyttää viittaamaan CustomerIndicents- ja WorkItems-kohteisiin, jotka sisältävät kummankin kaikki arvot.  
 
 ### <a name="patterns-to-jump-start-your-use-of-the-query-editor"></a>Kyselyeditorin käytön aloittaminen mallien avulla
 Kyselyeditori on hyvin tehokas työkalu tietojen muokkaamiseen ja puhdistamiseen visualisointia ja mallintamista varten. Käyttäjän on kuitenkin hyvä tietää editorin muutamista toimintamalleista.

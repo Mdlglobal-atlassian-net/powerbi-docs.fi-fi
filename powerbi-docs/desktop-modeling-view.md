@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/13/2018
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 84e2bc663a4e3912608279c7315bc494b3c9844a
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: ccb78c8d22fdb7b9fecbb202dca488c44d36a15d
+ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54296520"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56216305"
 ---
 # <a name="modeling-view-in-power-bi-desktop-preview"></a>Mallintamisnäkymä Power BI Desktopissa (esikatselu)
 
@@ -24,7 +24,7 @@ ms.locfileid: "54296520"
 
 ## <a name="enabling-the-modeling-view-preview-feature"></a>Mallintamisnäkymän esikatselutoiminnon ottaminen käyttöön
 
-Mallintamisnäkymä-ominaisuus on esikatseluvaiheessa. Sen täytyy olla käytössä **Power BI Desktopissa**. Voit ottaa mallintamisnäkymän käyttöön valitsemalla **Tiedosto > Asetukset ja vaihtoehdot > Asetukset > Esikatselutoiminnot** ja valitsemalla sitten **Mallintamisnäkymä**-valintaruudun seuraavassa kuvassa näkyvällä tavalla.
+Mallintamisnäkymä-ominaisuus on esikatseluvaiheessa. Sen täytyy olla käytössä **Power BI Desktopissa**. Voit ottaa mallintamisnäkymän käyttöön valitsemalla **Tiedosto > Vaihtoehdot ja asetukset > Vaihtoehdot > Esikatselutoiminnot** ja valitsemalla sitten **Mallintamisnäkymä**-valintaruudun seuraavassa kuvassa esitetyn mukaisesti.
 
 ![Mallintamisnäkymän esikatselutoiminnon ottaminen käyttöön Power BI Desktopissa](media/desktop-modeling-view/modeling-view_01.png)
 

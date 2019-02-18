@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 12/10/2018
+ms.date: 02/11/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: b82f739d8e5dd5497ab2a41e44097fda12345bd3
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 50dd529366a06cc46b2ca906bfc8987a3988cb72
+ms.sourcegitcommit: d010b10bc14097a1948daeffbc91b864bd91f7c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54278212"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56226071"
 ---
 # <a name="previous-monthly-updates-to-power-bi-desktop"></a>Power BI Desktopin aiemmat kuukausipäivitykset
 
@@ -33,6 +33,80 @@ Kunkin päivityksen vieressä olevat linkit tarkoittavat seuraavaa:
 Voit myös katsoa **Uusimmat päivitykset** -videon, joka on aivan tämän artikkelin alussa. Napsauta päivitysluettelon alla olevan videokuvan **toistokuvaketta**.
 
 Seuraavat osiot käsittelevät **Power BI Desktopin** aiempien kuukausien päivityksiä.
+
+
+## <a name="december-2018-update-2655313501"></a>Joulukuun 2018 päivitys (2.65.5313.501)
+
+Joulukuun päivitykset saivat aikaan juhlatunnelman asiakkaiden keskuudessa tai ainakin tarjosivat näyttäviä tietopohjaisia visualisointeja. 
+
+Voit nyt [ladata Power BI Desktopin uusimman version](https://powerbi.microsoft.com/desktop). Jos käytössäsi on Windows 10, voit hankkia **Power BI Desktopin** Microsoft Storesta. **Power BI Desktopin** kuukausittaiset versiot ovat samat, vaikka versioiden numerointi saattaa poiketa. Lisätietoja on [tässä artikkelissa](desktop-get-the-desktop.md). 
+
+Kunkin päivityksen vieressä olevat linkit tarkoittavat seuraavaa:
+
+* **[video]**-leikkeet toistetaan uudessa selainvälilehdessä uuden ominaisuuden kuvailun yhteydessä.
+* Tietyistä ominaisuuksista on tarjolla oma **[artikkeli]**, joka sisältää lisätietoja.
+* Useimmat ominaisuudet on selitetty kuukausittaisen päivityksen **[blogi]**-kirjoituksessa.
+* Lopuksi jotkin ominaisuudet ovat itsestään selviä eivätkä tarvitse tuekseen artikkelia tai videota.
+
+Voit myös katsoa **Uusimmat päivitykset** -videon, joka on aivan tämän artikkelin alussa. Napsauta päivitysluettelon alla olevan videokuvan **toistokuvaketta**.
+
+Seuraavat päivitykset olivat uutta **Power BI Desktopissa** tässä kuussa:
+
+### <a name="reporting"></a>Raportointi
+
+* Älykkäitä apuneuvoja objektien tasaamiseen sivulla  [[video]](https://youtu.be/AHNlkjRFdYI?t=11)  [[artikkeli]](power-bi-reports-filters-and-highlighting.md)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#smartGuides) 
+* ArcGIS Maps for Power BI:n päivityksiä [[video]](https://youtu.be/AHNlkjRFdYI?t=84)  [[artikkeli]](visuals/power-bi-visualization-arcgis.md)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#arcGIS) 
+* Kenttäluettelon helppokäyttötoimintojen tuki [[video]](https://youtu.be/AHNlkjRFdYI?t=464)  [[artikkeli]](desktop-report-view.md#copy-and-paste-between-reports)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#fieldList)
+* Sarkainjärjestyksen asettaminen sivun objekteille [[video]](https://youtu.be/AHNlkjRFdYI?t=643)   [[artikkeli]](power-bi-reports-filters-and-highlighting.md)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#tabOrder)
+* Työkaluvihjeitä painikevisualisoinneille [[video]](https://youtu.be/AHNlkjRFdYI?t=884)  [[artikkeli]](desktop-accessibility.md)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#tooltips)
+* Päivitetyt kuvakkeet *visualisointitoimille*  [[video]](https://youtu.be/AHNlkjRFdYI?t=974)  [[artikkeli]](desktop-accessibility.md)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#icons)
+
+
+
+### <a name="analytics"></a>Analytiikka
+
+* Live-yhteystuki Q&A:lle (esikatselu) [[video]](https://youtu.be/AHNlkjRFdYI?t=1037)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#liveConnectQA) 
+
+
+### <a name="modeling"></a>Mallintaminen
+
+* DAX-kaavarivin päivitykset [[video]](https://youtu.be/AHNlkjRFdYI?t=1132)  [[artikkeli]](desktop-modeling-view.md)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#daxFormulaBar) 
+* Tietonäkymän helppokäyttötoimintojen tuki [[video]](https://youtu.be/AHNlkjRFdYI?t=1253)  [[artikkeli]](desktop-composite-models.md)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#dataView) 
+
+
+### <a name="custom-visuals"></a>Mukautetut visualisoinnit
+
+* Yksi uusi mukautettu visualisointi  [[video]](https://youtu.be/AHNlkjRFdYI?t=1370)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#customVisuals) 
+
+### <a name="data-connectivity"></a>Tietoyhteydet
+
+* AtScale-yhdistin (beeta) [[video]](https://youtu.be/AHNlkjRFdYI?t=1449)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#atScale) 
+* Oracle Essbase -yhdistin (beeta)  [[video]](https://youtu.be/AHNlkjRFdYI?t=1449)   [[artikkeli]](desktop-connect-pdf.md)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#essbase) 
+
+
+### <a name="data-preparation"></a>Tietojen valmistelu
+
+* Sumean yhdistämisen tuki parhaille Ylimmät N -vastaavuuksille [[video]](https://youtu.be/AHNlkjRFdYI?t=1480)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#fuzzyMerge) 
+
+
+### <a name="other"></a>Muut
+* Suuren kontrastin tuki kaikille ruuduille ja raportin alatunnisteelle [[video]](https://youtu.be/AHNlkjRFdYI?t=1631)   [[artikkeli]](desktop-connect-pdf.md)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#highContrast) 
+* Päivitetty pikanäppäinten valintaikkuna [[video]](https://youtu.be/AHNlkjRFdYI?t=1654)   [[artikkeli]](desktop-accessibility.md)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#keyboardShortcuts) 
+
+
+
+> [!NOTE]
+> Voit myös [tutustua kaikkiin Power BI Desktopille saatavilla oleviin tietolähteisiin](desktop-data-sources.md). Luettelo kasvaa jatkuvasti, joten se kannattaa tarkistaa usein.
+
+Haluatko lisätietoja näistä päivityksistä? Tutustu [blogikirjoitukseen](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary), josta saat tarkempia tietoja kustakin uudesta ominaisuudesta (tämä on sama blogikirjoitus, johon viitataan yllä olevassa luettelossa).
+
+
+Seuraavassa videokanavassa esitellään jokainen näistä päivityksistä. Näet videot myös blogikirjoituksen kautta.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/AHNlkjRFdYI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+> [!NOTE]
+> Sinua saattavat myös kiinnostaa [Power BI -palvelun uudet ominaisuudet](service-whats-new.md). Tutustu myös [Power BI -mobiilisovellusten uutuuksiin](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 ## <a name="november-2018-update-2645285461"></a>Marraskuun 2018 päivitys (2.64.5285.461)
 
@@ -2032,7 +2106,7 @@ Tähän päivitykseen on lisätty seuraavat ominaisuudet:
 
 -   Viimeksi käytettyjen tiedostojen avaaminen aloitussivun Tiedosto -\> Avaa -valikosta
 
--   Exchange UPN -tunnistetietojen tuki Exchange-yhdistimessä
+-   Exchange UPN -tunnistetietojen tuki Exchange-yhdistimessä.
 
 Kaikkien näiden uusien ominaisuuksien **Power BI Desktop tuli saataville 42 kielellä.** Voit tutustua kieliluetteloon ja asentaa haluamasi kielen [virallisella lataussivulla](https://www.microsoft.com/download/details.aspx?id=45331).
 
@@ -2062,7 +2136,7 @@ Tähän päivitykseen on lisätty seuraavat ominaisuudet:
 
 -   Uuden tekstisarakkeen suodattimet – **Ei ala merkkijonolla** ja **Ei lopu merkkijonoon**
 
--   Parannettu Yksityisyystasot-valintaikkuna
+-   Parannettu Tietosuojatasot-valintaikkuna
 
 Lisätietoja saat katsomalla seuraavan videon:
 

@@ -9,12 +9,12 @@ ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 03/31/2018
 ms.author: jtarquino
-ms.openlocfilehash: 034fc149dcd76102ae83864fe65d53c55b57c96a
-ms.sourcegitcommit: 7df786871b196725a1c5422ee561c7557660894e
+ms.openlocfilehash: 346e1a3d096ba5e8ea8d16b49d49e02c0c65e54a
+ms.sourcegitcommit: 80961ace38ff9dac6699f81fcee0f7d88a51edf4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55482748"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56224038"
 ---
 # <a name="changelog-for-power-bi-report-server"></a>Power BI -raporttipalvelimen muutosloki
 
@@ -94,7 +94,7 @@ Lisätietoja uusista ominaisuuksista on artikkelissa [Power BI -raporttipalvelin
                 - Raportit voidaan päivittää, kun palvelin on määritetty käyttämään mukautettua tarkistusta
                 - Raportin ominaisuuksien muokkaaminen ei palauta tietolähteen tunnistetietoja
             - Sivutetut raportit (RDL)
-                - Toiminnon `Lookup()` tai johdannaistoimintojen `LookupSet()` ja `MultiLookup()` käytöstä RDL Expressions -lausekkeissa ei enää seuraa `#Error`
+                - `Lookup()`-toiminnon tai johdannaistoimintojen, kuten `LookupSet()` ja `MultiLookup()`, käyttö RDL-lausekkeissa ei enää anna tulokseksi `#Error`
                 - Linkitetyt raportit noudattavat kohderaportin sivukokoa tulostuksen yhteydessä
                 - Tilauksia voidaan luoda linkitetyille raporteille, jotka käyttävät johdannaisia parametrejä
                 - Moniarvoisten parametrien oletusarvoja voi muokata IE11:ssä

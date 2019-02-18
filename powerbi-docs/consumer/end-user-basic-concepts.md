@@ -12,12 +12,12 @@ ms.topic: conceptual
 ms.date: 12/06/2018
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: e8e27c55cdcd85fd9f88a3b1ad425829cfa9cf0d
-ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
+ms.openlocfilehash: c363d71b9d8796f1bd05ac01e12e9424a499a439
+ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55430598"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56216190"
 ---
 # <a name="basic-concepts-for-power-bi-service-consumers"></a>Peruskäsitteet Power BI -palvelun ***kuluttajille***
 
@@ -61,7 +61,7 @@ Kaikista yksinkertaisimmillaan.
 
     Katso lisätietoja artikkelista [Koontinäytöt Power BI:n *kuluttajille*](end-user-dashboards.md)
 
-* ![raporttikuvake](media/end-user-basic-concepts/report.png) *Raportti* sisältää yhden tai useamman sivun sekä vuorovaikutteisia visualisointeja, tekstiä ja kuvia, jotka yhdessä muodostavat yksittäisen raportin. Raportti perustuu yhteen tietojoukkoon. Tyypillisesti raportissa olevat sivut järjestetään niin, että jokainen sivu keskittyy yhteen keskeiseen asiaan tai antaa vastauksen yksittäiseen kysymykseen.
+* ![raporttikuvake](media/end-user-basic-concepts/report.png) *Raportti* sisältää yhden tai useamman sivun sekä vuorovaikutteisia visualisointeja, tekstiä ja kuvia, jotka yhdessä muodostavat yksittäisen raportin. Raportti perustuu yhteen tietojoukkoon. Raporttisivut on järjestetty usein siten, että kukin niistä käsittelee keskeistä kiinnostavaa aihetta tai vastaa yhteen kysymykseen.
 
     Katso lisätietoja artikkelista [Raportit Power BI:n *kuluttajille*](end-user-reports.md)
 
@@ -87,7 +87,7 @@ Kun suunnittelija jakaa sovelluksen kanssasi, näet, mitkä tietojoukot sisälty
 * voi käyttää useissa erilaisissa raporteissa
 * Tämän yhden tietojoukon visualisointeja voi näyttää useissa eri koontinäytöissä
   
-  ![tietojoukon monta-yhteen-suhde](media/end-user-basic-concepts/drawing2.png)
+  ![tietojoukon monta-yhteen-suhteet](media/end-user-basic-concepts/drawing2.png)
 
 Siirrytään seuraavaan peruselementtiin – visualisointeihin.
 __________________________________________________________

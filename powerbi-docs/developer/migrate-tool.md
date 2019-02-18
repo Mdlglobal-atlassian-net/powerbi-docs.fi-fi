@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 06/30/2018
-ms.openlocfilehash: 41ab7f06da3038e48e2d1188edc8b91edeee8d4f
-ms.sourcegitcommit: 0abcbc7898463adfa6e50b348747256c4b94e360
+ms.openlocfilehash: 76e6ebec14d5feefd319213c05fddb0839a55ccd
+ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "55762348"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56216374"
 ---
 # <a name="power-bi-embedded-migration-tool"></a>Power BI Embedded -siirtotyökalu
 
@@ -189,7 +189,7 @@ Työtilan luomisen jälkeen voit siirtyä **Lataa palveluun** -välilehteen.
 
 Voit **Lataa palveluun** -välilehdessä ladata raportit Power BI -palveluun. Näet luettelon palvelusta ladatuista raporteista Lataa palvelusta -välilehdessä yhdessä kohderyhmän nimen kanssa siirtosuunnitelman mukaan.
 
-![Latausvälilehti](media/migrate-tool/migrate-tool-upload-tab.png)
+![Lataa välilehti](media/migrate-tool/migrate-tool-upload-tab.png)
 
 Voit ladata valitut raportit tai kaikki raportit palveluun. Voit myös vaihtaa Lataa palveluun -tilaksi kohteiden uudelleenlataus.
 
@@ -207,7 +207,7 @@ Siirtotyökalu on suljettava muutoksen tekemiseksi. Työkalu ja siirtosuunnitelm
 
 Yllä olevassa esimerkissä yksi kloonatuista raporteista epäonnistui ja sait ilmoituksen, jonka mukaan samanniminen raportti on jo olemassa. Jos tarkastelemme siirtosuunnitelman XML-tiedostoa, näemme seuraavat asiat.
 
-```
+```xml
 <ReportMigrationData>
     <PaaSWorkspaceCollectionName>SampleWorkspaceCollection</PaaSWorkspaceCollectionName>
     <PaaSWorkspaceId>4c04147b-d8fc-478b-8dcb-bcf687149823</PaaSWorkspaceId>
@@ -229,7 +229,7 @@ Yllä olevassa esimerkissä yksi kloonatuista raporteista epäonnistui ja sait i
 
 Voimme muuttaa epäonnistuneelle kohteelle SaaSTargetReportNamen nimeä.
 
-```
+```xml
 <SaaSTargetReportName>cloned2</SaaSTargetReportName>
 ```
 
@@ -245,7 +245,7 @@ Kun palaamme takaisin Power BI -palveluun, näemme, että raportit ja tietojouko
 
 Voit ladata Power BI Desktop -tiedoston paikallisen version palveluun. Sulje työkalu, muokkaa XML-tiedostoa ja anna paikallisen PBIX-tiedoston täydellinen polku **PbixPath**-ominaisuudessa.
 
-```
+```xml
 <PbixPath>[Full Path to PBIX file]</PbixPath>
 ```
 

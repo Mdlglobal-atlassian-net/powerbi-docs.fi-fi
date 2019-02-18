@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: c6f3e3cf3947abf9ead15fa6b91445c8aadd6420
-ms.sourcegitcommit: 750f0bfab02af24c8c72e6e9bbdd876e4a7399de
+ms.openlocfilehash: aec463a4ce72f89f0cbbcf1bd42737605657a43c
+ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/04/2019
-ms.locfileid: "54008346"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56215754"
 ---
 # <a name="connect-to-acumatica-with-power-bi"></a>Yhteyden muodostaminen Acumaticaan Power BI:n avulla
 Power BI Acumatica -sisältöpaketin avulla saat nopeasti merkityksellisiä tietoja mahdollisuustiedoistasi. Power BI noutaa tiedot, esimerkiksi mahdollisuudet, tilit ja asiakkaat, ja laatii sitten oletuskoontinäytön ja siihen liittyvät raportit kyseisten tietojen perusteella.
@@ -45,11 +45,11 @@ Muodosta yhteys [Acumatica-sisältöpakettiin](https://app.powerbi.com/getdata/s
 5. Valitse todennusmenetelmäksi **Perus**. Anna Acumatica-tilisi käyttäjänimi ja salasana ja valitse sitten **Kirjaudu sisään**.
    
     ![](media/service-connect-to-acumatica/creds2.png)
-6. Kun Power BI on tuonut tiedot, näet vasemmassa siirtymisruudussa uuden koontinäytön, raportin ja tietojoukon. Uudet kohteet on merkitty keltaisella tähdellä \*, joka katoaa, kun kohde valitaan ensimmäisen kerran. Kun koontinäyttö valitaan, sen asettelu näyttää seuraavalta:
+6. Kun Power BI on tuonut tiedot, näet vasemmassa siirtymisruudussa uuden koontinäytön, raportin ja tietojoukon. Uudet kohteet merkitään keltaisella tähdellä \*, joka katoaa, kun kohteet valitaan. Esiin tulee seuraavankaltainen koontinäyttö:
    
     ![](media/service-connect-to-acumatica/dashboard.png)
 
-**Mitä nyt?**
+**Mitä seuraavaksi?**
 
 * Kokeile [kysymyksen esittämistä raporttinäkymän yläreunassa olevassa Q&A-ruudussa](consumer/end-user-q-and-a.md).
 * [Muuta koontinäytön ruutuja](service-dashboard-edit-tile.md).

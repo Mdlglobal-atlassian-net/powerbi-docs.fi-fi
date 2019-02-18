@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 09/27/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: c219a7ac9ce88d3dca9d01a09868835062fe93ce
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 3835bedc1b4ab2df87abf4704ef338ff7f4abc5d
+ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54291897"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56215040"
 ---
 # <a name="waterfall-charts-in-power-bi"></a>Vesiputouskaaviot Power BI:ssä
 Vesiputouskaavio näyttää juoksevan summan, kun arvoja lisätään tai vähennetään. On hyödyllistä ymmärtää, kuinka positiivisten ja negatiivisten muutosten sarja vaikuttaa alkuarvoon (esimerkiksi nettotuloon).
@@ -51,7 +51,7 @@ Luomme vesiputouskaavion, joka näyttää myynnin vaihtelun (arvioitu myynti vs.
    
     ![valitse lajitteluperuste > FiscalMonth](media/power-bi-visualization-waterfall-charts/power-bi-sort-by.png)
    
-    ![tulokset nousevassa järjestyksessä uuden lajitteluperusteen mukaisesti](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-sorted.png)
+    ![uuden nousevan järjestyksen lajittelun tulokset](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-sorted.png)
 6. Tarkastele hieman enemmän nähdäksesi, mikä aiheuttaa eniten muutoksia kuukausittain. Vedä **Myymälä** > **Alue** ja **Erittely**-säilöön.
    
     ![Näyttää Myymälän Erittely-säilössä](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-breakdown.png)

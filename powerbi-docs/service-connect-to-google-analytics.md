@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: f8777774981e89a88f1fb4f85573fd5a7e078dd6
-ms.sourcegitcommit: 750f0bfab02af24c8c72e6e9bbdd876e4a7399de
+ms.openlocfilehash: 9d0eafea7f1ec25d8af86bf05fa130abb1bbd9c2
+ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/04/2019
-ms.locfileid: "54008392"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56216282"
 ---
 # <a name="connect-to-google-analytics-with-power-bi"></a>Google Analyticsin yhdistäminen Power BI:hin
 Yhteyden muodostaminen Google Analyticsiin Power BI:n kautta alkaa muodostamalla yhteys Google Analytics -tiliin. Saat Power BI:n koontinäytön ja joukon Power BI -raportteja, jotka tarjoavat merkityksellisiä tietoja sivuston liikenne- ja käyttäjädimensioista. Voit käsitellä koontinäyttöä ja raportteja, mutta et voi tallentaa muutoksia. Tiedot päivitetään automaattisesti kerran päivässä.
@@ -52,7 +52,7 @@ Voit luoda mukautettuja koontinäyttöjä ja raportteja aloittamalla [Google Ana
 Jotta yhteys voidaan muodostaa Power BI:stä, sinulla on oltava [Google Analytics](https://www.google.com/analytics/) -tili. Muista Google-tileistä, joihin ei ole yhdistetty Google Analytics -tiliä, näytetään todennusvirhe.
 
 ## <a name="troubleshooting"></a>Vianmääritys
-**Tunnistetiedot** Jos sinulla on useita Google-tilejä, käytä incognito-tilaa tai yksityistä selainikkunaa yhteyden muodostamisessa, jotta käytössä on varmasti oikea tili.
+**Tunnistetiedot** Jos sinulla on useita Google-tilejä, käytä Incognito-tilaa tai yksityistä selainikkunaa yhteyden muodostamisessa, jotta käytössä on varmasti oikea tili.
 
 Jos näyttöön tulee virhesanoma, jonka mukaan tunnistetiedot ovat virheelliset, vaikka voit kirjautua Googleen, varmista, että käytössäsi on [Google Analytics](https://www.google.com/analytics/) -tili.
 

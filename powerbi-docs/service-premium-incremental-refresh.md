@@ -5,55 +5,49 @@ author: christianwade
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-admin
+ms.component: powerbi-admin
 ms.topic: conceptual
-ms.date: 10/19/2018
+ms.date: 01/24/2019
 ms.author: chwade
 LocalizationGroup: Premium
-ms.openlocfilehash: 92bd4043e4cfa37bd8f712491ccbc2990dc0b6a9
-ms.sourcegitcommit: 54d44deb6e03e518ad6378656c769b06f2a0b6dc
+ms.openlocfilehash: caa350274b7af62078098d9ef7730046f6e14627
+ms.sourcegitcommit: d010b10bc14097a1948daeffbc91b864bd91f7c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55794377"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56225979"
 ---
-# <a name="incremental-refresh-in-power-bi-premium"></a>Lisäävää päivitys Power BI Premiumissa
+# <a name="incremental-refresh-in-power-bi-premium"></a>Lisäävä päivitys Power BI Premiumissa
 
 Lisäävä päivitys mahdollistaa erittäin suurien tietojoukkojen käytön Power BI Premium -palvelussa tarjoamalla seuraavat edut:
 
-- **Päivitykset ovat entistä nopeampia.** Vain muuttuneet tiedot on päivitettävä. Päivitä esimerkiksi vain viimeiset viisi päivää 10 vuoden tietojoukosta.
+- **Päivitykset sujuvat nopeammin**: vain muutetut tiedot päivitetään. Voit esimerkiksi päivittää vain viimeiset viisi päivää 10 vuoden tietojoukosta.
 
-- **Päivitykset ovat entistä luotettavampia.** Ei ole esimerkiksi tarpeen säilyttää pitkäkestoisia yhteyksiä lyhytkestoisiin lähdejärjestelmiin.
+- **Päivitykset ovat luotettavampia**: sinun ei tarvitse enää säilyttää pitkäkestoisia yhteyksiä lyhytkestoisiin lähdejärjestelmiin.
 
-- **Resurssien kulutus on vähäisempää.** Kun päivitettäviä tietoja on vähemmän, muistin ja muiden resurssien yleinen kulutus on pienempi.
+- **Resurssien kulutus on vähäisempää**: kun päivitettäviä tietoja on vähemmän, muistin ja muiden resurssien yleinen kulutus on pienempi.
 
-## <a name="how-to-use-incremental-refresh"></a>Lisäävän päivityksen käyttäminen
+## <a name="configure-incremental-refresh"></a>Lisäävän päivityksen määrittäminen
 
-Lisäävän päivityksen käytännöt määritellään Power BI Desktopissa, ja ne otetaan käyttöön, kun ne on julkaistu Power BI -palvelussa.
+Lisäävän päivityksen käytännöt on määritetty Power BI Desktopissa, ja ne otetaan käyttöön, kun ne on julkaistu Power BI -palvelussa.
 
-Aloita ottamalla käyttöön lisäävän päivityksen esiversio-ominaisuudet.
+Aloita ottamalla käyttöön lisäävän päivityksen **esiversiotoiminnot**.
 
 ![Asetukset – esiversiotoiminnot](media/service-premium-incremental-refresh/preview-features.png)
 
 ### <a name="filter-large-datasets-in-power-bi-desktop"></a>Suurien tietojoukkojen suodattaminen Power BI Desktopissa
 
-Mahdollisesti miljardeja rivejä sisältävät suuret tietojoukot eivät välttämättä mahdu Power BI Desktopiin, koska normaalisti käyttäjän pöytätietokoneessa käytettävissä olevat resurssit rajoittavat sitä. Siksi tällaisia tietojoukkoja yleensä suodatetaan tuonnin yhteydessä, jotta ne mahtuvat Power BI Desktopiin. Näin on riippumatta siitä, käytetäänkö lisäävää päivitystä vai ei.
+Mahdollisesti miljardeja rivejä sisältävät suuret tietojoukot eivät ehkä mahdu Power BI Desktop -malliin, koska pöytätietokoneessa saatavilla olevat muistiresurssit rajoittavat PBIX-tiedostoa. Tällaisia tietojoukkoja suodatetaan siksi yleensä tuonnin yhteydessä. Tämäntyyppistä suodatusta sovelletaan siitä huolimatta, käytetäänkö lisäävää päivitystä vai ei. Lisäävän päivityksen suodatuksessa käytetään Power Queryn päivämäärä-/aikaparametreja.
 
 #### <a name="rangestart-and-rangeend-parameters"></a>RangeStart- ja RangeEnd-parametrit
 
-Jos haluat käyttää lisäävää päivitystä Power BI -palvelussa, suodatuksessa on käytettävä Power Queryn päivämäärä/aika-parametreja siihen varatuilla, kirjainkooltaan merkitsevillä nimillä **RangeStart** ja **RangeEnd**.
+Jos haluat käyttää lisäävää päivitystä, tietojoukot suodatetaan Power Queryn päivämäärä/aikaparametrien avulla varatuilla, kirjainkooltaan merkitsevillä nimillä **RangeStart** ja **RangeEnd**. Näiden parametrien avulla tuodut tiedot suodatetaan Power BI Desktopiin ja tiedot jaetaan myös dynaamisesti alueisiin, kun ne on julkaistu Power BI -palvelussa. Palvelu korvaa parametriarvot kunkin osion suodattamiseksi. Julkaisun jälkeen Power BI -palvelu ohittaa parametrin arvot automaattisesti. Niitä ei tarvitse määrittää palvelun tietojoukon asetuksissa. Julkaisun jälkeen Power BI -palvelu ohittaa parametrin arvot automaattisesti. 
 
-Julkaisun jälkeen Power BI -palvelu ohittaa parametrin arvot automaattisesti. Niitä ei tarvitse määrittää palvelun tietojoukon asetuksissa.
-
-On tärkeää, että suodatin lähetetään lähdejärjestelmään lähetettäessä kyselyitä päivittämistoimintoja varten. Suodattimen lähettäminen vaatii, että tietolähde tukee ”kyselyn taittamista”. Useimmat tietolähteet, jotka tukevat SQL-kyselyitä, tukevat kyselyn taittamista. Sen sijaan tietolähteet kuten tietuetiedostot, blob-objektit, verkko ja OData-syötteet eivät yleensä tue sitä. Kun otetaan huomioon kunkin tietolähteen kyselyn taitostuen eri tasot, on suositeltavaa, että vahvistat suodatinlogiikan sisältyvän lähdekyselyihin. Jos tietolähteen tausta ei tue suodatinta, suodatinta ei voi lähettää. Tässä tapauksessa koostemoduuli kompensoi ja ottaa suodattimen käyttöön paikallisesti, mikä saattaa edellyttää koko tietojoukon noutamista tietolähteestä. Tämä voi hidastaa lisäävää päivitystä merkittävästi, ja prosessi voi johtaa resurssien loppumiseen joko Power BI -palvelussa tai paikallisessa tietoyhdyskäytävässä.
-
-Suodatinta käytetään tietojen jakamiseen alueisiin Power BI -palvelussa. Sitä ei ole suunniteltu tukemaan suodatetun päivämääräsarakkeen päivittämistä. Päivitys tulkitaan lisäämiseksi ja poistamiseksi (ei päivitykseksi). Jos poisto tehdään historialliselta alueelta eikä lisäävältä alueelta, sitä ei poimita. Tämä voi aiheuttaa tietojen päivittämisen virheitä osion avain -ristiriitojen vuoksi.
-
-Valitse Power Query -editorissa **Parametrien hallinta** ja määritä parametrit oletusarvoilla.
+Voit määrittää parametreille oletusarvot valitsemalla Power Query -editorissa **Parametrien hallinta**.
 
 ![Parametrien hallinta](media/service-premium-incremental-refresh/manage-parameters.png)
 
-Kun parametrit on määritetty, voit käyttää suodatinta valitsemalla **Mukautettu suodatin** -valikkovaihtoehdon sarakkeessa.
+Kun parametrit on määritetty, voit käyttää suodatinta valitsemalla **Mukautettu suodatin** -valikkovaihtoehdon sarakkeelle.
 
 ![Mukautettu suodatin](media/service-premium-incremental-refresh/custom-filter.png)
 
@@ -62,11 +56,23 @@ Varmista, että rivit suodatetaan, kun sarakkeen arvo *on suurempi tai yhtä suu
 ![Rivien suodattaminen](media/service-premium-incremental-refresh/filter-rows.png)
 
 > [!TIP]
-> Vaikka parametrien tietotyypin on oltava päivämäärä/aika, ne on mahdollista muuntaa vastaamaan tietolähteen vaatimuksia. Esimerkiksi seuraava Power Query -funktio muuntaa päivämäärän/ajan arvon muistuttamaan tietovarastoissa yleisen muodon *vvvvkkpp* kokonaisluvun korvaavaa avainta. Funktio voidaan kutsua suodattimen vaiheen mukaan.
+> Vaikka parametrien tietotyypin on oltava päivämäärä/aika, se voidaan muuntaa vastaamaan tietolähteen vaatimuksia. Esimerkiksi seuraava Power Query -funktio muuntaa päivämäärän/ajan arvon muistuttamaan tietovarastoissa yleisen muodon *vvvvkkpp* kokonaisluvun korvaavaa avainta. Funktio voidaan kutsua suodattimen vaiheen mukaan.
 >
 > `(x as datetime) => Date.Year(x)*10000 + Date.Month(x)*100 + Date.Day(x)`
 
 Valitse **Sulje ja ota käyttöön** Power Query -editorissa. Sinulla pitäisi olla tietojoukon alijoukko Power BI Desktopissa.
+
+#### <a name="filter-date-column-updates"></a>Päivämääräsarakkeen päivitysten suodattaminen
+
+Päivämääräsarakkeen suodatinta käytetään tietojen jakamiseen dynaamisesti alueisiin Power BI -palvelussa. Lisäävää päivitystä ei ole suunniteltu tukemaan tapauksia, joissa suodatettu päivämääräsarake on päivitetty lähdejärjestelmässä. Päivitys tulkitaan lisäämiseksi ja poistamiseksi (ei todelliseksi päivitykseksi). Jos poisto tehdään historialliselta alueelta eikä lisäävältä alueelta, sitä ei poimita. Tämä voi aiheuttaa tietojen päivittämisen virheitä osion avain -ristiriitojen vuoksi.
+
+#### <a name="query-folding"></a>Kyselyn taittaminen
+
+On tärkeää, että jakosuodattimet lähetetään lähdejärjestelmään, kun kyselyjä lähetetään päivitystoimintoja varten. Suodattimen lähettäminen edellyttää, että tietolähde tukee kyselyn taittamista. Useimmat tietolähteet, jotka tukevat SQL-kyselyitä, tukevat kyselyn taittamista. Kuitenkin tietolähteet, kuten tietuetiedostot, blob-objektit, verkko ja OData-syötteet, eivät yleensä tue sitä. Jos tietolähteen tausta ei tue suodatinta, suodatinta ei voi lähettää. Tässä tapauksessa koostemoduuli kompensoi ja ottaa suodattimen käyttöön paikallisesti, mikä saattaa edellyttää koko tietojoukon noutamista tietolähteestä. Tämä voi hidastaa lisäävää päivitystä merkittävästi, ja prosessi voi johtaa resurssien loppumiseen joko Power BI -palvelussa tai paikallisessa tietoyhdyskäytävässä.
+
+Kun otetaan huomioon kunkin tietolähteen kyselyn taitostuen eri tasot, on suositeltavaa, että tarkistat suodatinlogiikan sisältyvän lähdekyselyihin. Tämän helpottamiseksi Power BI Desktop yrittää suorittaa tämän tarkistuksen puolestasi. Jos tarkistusta ei voida suorittaa, lisäävän päivityksen valintaikkunassa näkyy varoitus lisäävän päivityksen käytäntöä määritettäessä. SQL-pohjaiset tietolähteet, kuten SQL, Oracle ja Teradata, voivat käyttää tätä varoitusta. Muut lähteet eivät ehkä pysty suorittamaan tarkistusta ilman kyselyjen jäljitystä. Jos Power BI Desktop ei pysty suorittamaan tarkistusta, näyttöön tulee seuraava varoitus.
+
+ ![Kyselyn taittaminen](media/service-premium-incremental-refresh/query-folding.png)
 
 ### <a name="define-the-refresh-policy"></a>Päivityskäytännön määrittäminen
 
@@ -85,13 +91,13 @@ Lisäävä päivitys -valintaikkuna tulee näkyviin. Ota valintaikkuna käyttö�
 
 Otsikkoteksti kertoo seuraavaa:
 
-- Lisäävää päivitystä tuetaan vain Premium-kapasiteetin työtiloissa. Päivityskäytännöt määritetään Power BI Desktopissa; palvelun päivitystoiminnot käyttävät niitä.
+- Lisäävää päivitystä tuetaan vain Premium-kapasiteetin työtiloissa. Päivityskäytännöt määritetään Power BI Desktopissa, ja palvelun päivitystoiminnot käyttävät niitä.
 
-- Jos et pysty lataamaan lisäävän päivityskäytännön sisältävää PBIX-tiedostoa Power BI-palvelusta, se ei avaudu Power BI Desktopissa. Pian et voi ladata sitä ollenkaan. Vaikka tätä saatetaan tukea tulevaisuudessa, huomaa, että tietojoukot voivat kasvaa niin suuriksi, että niitä on hankala ladata ja avata tavallisella pöytätietokoneella.
+- Jos et pysty lataamaan lisäävän päivityskäytännön sisältävää PBIX-tiedostoa Power BI -palvelusta, se ei avaudu Power BI Desktopissa. Vaikka tätä saatetaan tukea tulevaisuudessa, huomaa, että nämä tietojoukot voivat kasvaa niin suuriksi, että niitä on hankala ladata ja avata tavallisella pöytätietokoneella.
 
 #### <a name="refresh-ranges"></a>Päivitysalueet
 
-Seuraavassa esimerkissä määritetään päivityskäytäntö tallentamaan tiedot viideksi kokonaiseksi kalenterivuodeksi sekä kuluvan vuoden tiedot nykyiseen päivämäärään saakka ja päivittämään asteittain 10 päivän tiedot. Ensimmäinen päivitystoiminto lataa historiatietoja. Myöhemmät päivitykset ovat lisääviä ja, jos ne ovat määritelty suoritettavaksi päivittäin, suorittavat seuraavat toiminnot.
+Seuraavassa esimerkissä määritetään päivityskäytäntö tallentamaan tiedot viideksi kokonaiseksi kalenterivuodeksi sekä kuluvan vuoden tiedot nykyiseen päivämäärään saakka ja päivittämään asteittain 10 päivän tiedot. Ensimmäinen päivitystoiminto lataa historiatietoja. Myöhemmät päivitykset ovat lisääviä ja, jos ne ovat määritelty suoritettavaksi päivittäin, ne suorittavat seuraavat toiminnot:
 
 - Lisää uusi tietopäivä.
 
@@ -103,13 +109,14 @@ Power BI -palvelun ensimmäinen päivitys saattaa kestää kauemmin kaikkien vii
 
 ![Päivitysalueet](media/service-premium-incremental-refresh/refresh-ranges.png)
 
-**Alueiden määritys saattaa olla ainoa asia, mitä sinun tarvitsee tehdä, jolloin voit siirtyä suoraan alla olevaan julkaisuvaiheeseen. Muut avattavat valikot on tarkoitettu kehittyneille ominaisuuksille.**
+> [!NOTE]
+> Alueiden määritys saattaa olla ainoa asia, mitä sinun tarvitsee tehdä, jolloin voit siirtyä suoraan alla olevaan julkaisuvaiheeseen. Muut avattavat valikot on tarkoitettu kehittyneille ominaisuuksille.
 
 ### <a name="advanced-policy-options"></a>Lisäkäytäntöasetukset
 
 #### <a name="detect-data-changes"></a>Havaitse tietojen muutokset
 
-10 päivän lisäävä päivitys on luonnollisesti paljon tehokkaampi kuin viiden vuoden koko päivitys. Tehokkuutta on kuitenkin mahdollista lisätä entisestään. Jos valitset **Havaitse tietojen muutokset** -valintaruudun, voit valita päivämäärä/aika-sarakkeen, jonka avulla tunnistetaan ja päivitetään vain päivät, joiden tiedot ovat muuttunut. Tällöin oletetaan, että lähdejärjestelmässä on kyseinen sarake, joka on yleensä valvontaa varten. **Tämä ei saa olla sama sarake kuin jota käytetään tietojen jakamiseen RangeStart- ja RangeEnd-parametreilla.** Tämän sarakkeen suurin arvo lasketaan jokaisen lisäävän alueen ajanjakson osalta. Jos arvo ei ole muuttunut viimeisen päivityksen jälkeen, ajanjaksoa ei tarvitse päivittää. Esimerkissä asteittain päivitettävien päivien määrä voisi vähentyä kymmenestä ehkä kahteen.
+10 päivän lisäävä päivitys on paljon tehokkaampi kuin viiden vuoden koko päivitys. Voit kuitenkin tehostaa toimintaa vieläkin enemmän. Jos valitset **Havaitse tietojen muutokset** -valintaruudun, voit valita päivämäärä/aika-sarakkeen, jonka avulla tunnistetaan ja päivitetään vain päivät, joiden tiedot ovat muuttunut. Tällöin oletetaan, että lähdejärjestelmässä on kyseinen sarake, joka on yleensä valvontaa varten. **Tämä ei saa olla sama sarake kuin jota käytetään tietojen jakamiseen RangeStart- ja RangeEnd-parametreilla.** Tämän sarakkeen suurin arvo lasketaan jokaisen lisäävän alueen ajanjakson osalta. Jos arvo ei ole muuttunut viimeisen päivityksen jälkeen, ajanjaksoa ei tarvitse päivittää. Esimerkissä lisäävästi päivitettävien päivien määrä voisi vähentyä vielä kymmenestä noin kahteen.
 
 ![Muutosten havaitseminen](media/service-premium-incremental-refresh/detect-changes.png)
 

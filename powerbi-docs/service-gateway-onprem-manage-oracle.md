@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 01/24/2018
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 5e737978b7c39abd331f51fbb12e24656d54e838
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: f2c7cff36639007276622b095980a9460e539285
+ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54275912"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56216742"
 ---
 # <a name="manage-your-data-source---oracle"></a>Tietolähteen hallinta – Oracle
 Kun paikallinen tietoyhdyskäytävä on asennettu, sinun on lisättävä tietolähteitä, joita voidaan käyttää kyseisen yhdyskäytävän kanssa. Tässä artikkelissa tarkastellaan yhdyskäytävien ja tietolähteiden käsittelyä. Voit käyttää Oracle-tietolähdettä joko ajoitettua päivitystä tai DirectQuerya varten.
@@ -155,7 +155,7 @@ Jos sinut on lisätty yhdyskäytävän sisällä määritellyn tietolähteen **K
 ![](media/service-gateway-onprem-manage-oracle/powerbi-gateway-enterprise-schedule-refresh.png)
 
 ## <a name="troubleshooting"></a>Vianmääritys
-Voit saada lukuisia virheitä Oraclesta, jos nimeämissyntaksi on joko virheellinen tai sitä ei ole määritetty oikein.
+Voit kohdata useita Oracle-virheitä, kun nimeämissyntaksi on joko virheellinen tai sitä ei ole määritetty oikein.
 
 * ORA-12154: TNS: määritettyä yhteystunnistetta ei voitu selvittää  
 * ORA-12514: TNS: kuuntelutoiminto ei tällä hetkellä tunnista pyydettyä palvelun kuvaajaa  

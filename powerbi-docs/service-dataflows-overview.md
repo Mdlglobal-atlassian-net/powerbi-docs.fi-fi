@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 01/10/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 83961f3ad469a4a7a76ceb6e1e4dba846a6edb04
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 68d350035732d8335079bf76a859919d696e2721
+ms.sourcegitcommit: 80961ace38ff9dac6699f81fcee0f7d88a51edf4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54287626"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56223670"
 ---
 # <a name="self-service-data-prep-in-power-bi-preview"></a>Omatoiminen tietojen valmistelu Power BI:ssä (esikatselu)
 
@@ -23,7 +23,7 @@ Tietojen määrä kasvaa jatkuvasti, ja on yhä haasteellisempaa saattaa tiedot 
 
 ![Tietovoiden käyttäminen Power BI:ssä](media/service-dataflows-overview/powerbi-dataflows_01.png)
 
-Power BI:n **tietovoiden** avulla organisaatiot voivat yhdistää eri lähteistä olevia tietoja ja valmistella ne mallinnusta varten. Analyytikot voivat luoda helposti tietovoita tutuilla, omatoimisilla työkaluilla. Tietovoiden avulla voidaan käyttää, muuntaa, yhdistää ja täydentää massadataa määrittämällä tietolähdeyhteyksiä, keräämis-, muuntamis- ja lataamislogiikka, päivitysaikatauluja ja paljon muuta. Lisäksi uusi malliin perustuva laskin, joka on osa tietovoita, tekee tietojen valmistelusta helpommin hallittavaa, deterministisempää ja yksinkertaisempaa tietoanalyytikoille ja muille raporttien luojille. Samaan tapaan kuin laskentataulukot käsittelevät kaikkien kaavojen uudelleenlaskennat, tietovuot hallitsevat entiteetin tai tietoelementin muutoksia puolestasi automatisoimalla päivitykset ja helpottamalla aiemmin vaivalloisia ja aikaa vieviä logiikan tarkistuksia jopa perustason tietojen päivityksen osalta. Tehtävät, joita valvomaan tarvittiin ennen datatutkijoita (ja lukuisia työtunteja tai -päiviä), voidaan nyt tietovoiden avulla hoitaa muutamalla analyytikon ja raportin luojan tekemällä napsautuksella. 
+Power BI:n **tietovoiden** avulla organisaatiot voivat yhdistää eri lähteistä olevia tietoja ja valmistella ne mallinnusta varten. Analyytikot voivat luoda helposti tietovoita tutuilla, omatoimisilla työkaluilla. Tietovoiden avulla voidaan käyttää, muuntaa, yhdistää ja täydentää massadataa määrittämällä tietolähdeyhteyksiä, keräämis-, muuntamis- ja lataamislogiikka, päivitysaikatauluja ja paljon muuta. Lisäksi uusi mallipohjainen laskentamoottori, joka on osa tietovoita, helpottaa tietojen valmistelun hallintaa ja määritystä sekä keventää sekä tietoanalyytikkojen että raporttien luojien työtaakkaa. Samaan tapaan kuin laskentataulukot käsittelevät kaikkien kaavojen uudelleenlaskennat, tietovuot hallitsevat entiteetin tai tietoelementin muutoksia puolestasi automatisoimalla päivitykset ja helpottamalla aiemmin vaivalloisia ja aikaa vieviä logiikan tarkistuksia jopa perustason tietojen päivityksen osalta. Tehtävät, joita valvomaan tarvittiin ennen datatutkijoita (ja lukuisia työtunteja tai -päiviä), voidaan nyt tietovoiden avulla hoitaa muutamalla analyytikon ja raportin luojan tekemällä napsautuksella. 
 
 Tiedot tallennetaan entiteetteinä [**Common Data Modeliin**](https://docs.microsoft.com/powerapps/common-data-model/overview) Azure Data Lake Storage Gen2:ssa. Tietovoita luodaan ja hallitaan sovellustyötiloissa Power BI -palvelun avulla.  
 

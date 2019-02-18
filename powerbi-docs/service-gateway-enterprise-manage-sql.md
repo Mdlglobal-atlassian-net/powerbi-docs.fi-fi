@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 01/24/2018
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 5bd1ee87d540fc4d4c212313483c78d168d7e104
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 6771e2da33448fe3aa54a0184a220437ffb54fce
+ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54277618"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56215852"
 ---
 # <a name="manage-your-data-source---sql-server"></a>Tietolähteen hallinta – SQL Server
 Kun paikallinen tietoyhdyskäytävä on asennettu, sinun on lisättävä tietolähteitä, joita voidaan käyttää kyseisen yhdyskäytävän kanssa. Tässä artikkelissa tarkastellaan yhdyskäytävien ja tietolähteiden käsittelyä. Voit käyttää SQL Server-tietolähdettä joko ajoitettua päivitystä tai DirectQuerya varten.

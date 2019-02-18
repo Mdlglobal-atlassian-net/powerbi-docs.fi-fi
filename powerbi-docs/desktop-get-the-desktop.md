@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/01/2018
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: be4ebfdfa7dca5ce212c2b5d242d87b0001b7750
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 0f2443ac5dff167e633d89834a23d186c19f858b
+ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54281915"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56216604"
 ---
 # <a name="get-power-bi-desktop"></a>Power BI Desktopin hankkiminen
 **Power BI Desktopilla** voit luoda tarkempia kyselyjä, malleja ja raportteja, jotka visualisoivat tietoja. **Power BI Desktopilla** voit luoda tietomalleja ja raportteja sekä jakaa töitäsi julkaisemalla niitä Power BI -palvelussa.  **Power BI Desktop** on ladattavissa maksutta.
@@ -62,7 +62,7 @@ Voit hankkia **Power BI Desktopin** myös Microsoft Storesta seuraavan linkin av
 
 * **Automaattiset päivitykset**: Windows lataa uusimman version automaattisesti taustalla heti, kun uusi versio on saatavilla, joten sovellus pysyy aina ajan tasalla.
 * **Pienemmät lataukset**: **Microsoft Store** varmistaa, että koneeseesi ladataan vain ne komponentit, jotka ovat muuttuneet kussakin päivityksessä. Tämä pienentää kunkin päivityksen latauskokoa.
-* **Järjestelmänvalvojaoikeuksia ei tarvita**: MSI-tiedoston lataamiseen ja asentamiseen tarvitaan järjestelmänvalvojaoikeudet, jotta asennus onnistuu. Kun hankit **Power BI Desktopin** Microsoft Storesta, järjestelmänvalvojaoikeuksia *ei* tarvita.
+* **Järjestelmänvalvojan oikeuksia ei tarvita**: kun lataat  MSI:n suoraan ja asennat sen, sinun on oltava järjestelmänvalvoja, jotta asennus voidaan suorittaa. Kun hankit **Power BI Desktopin** Microsoft Storesta, järjestelmänvalvojan oikeuksia *ei* tarvita.
 * **Helpompi käyttöönotto**: **Microsoft Store** -version *käyttöönotto* on helpompaa kaikille organisaation käyttäjille. Lisäksi IT-osasto voi tarjota **Power BI Desktopin** **Microsoft Store for Businessissa**.
 * **Kielen tunnistaminen**: **Microsoft Store** -versio sisältää kaikki tuetut kielet. Lisäksi se tarkistaa tietokoneessasi käytetyn kielen aina, kun sovellus käynnistetään. Tämä vaikuttaa myös **Power BI Desktopissa** luotuihin lokalisointimalleihin. Esimerkiksi sisäiset päivämäärähierarkiat vastaavat kieltä, jolla **Power BI Desktopia** käytettiin, kun .pbix-tiedosto luotiin.
 
@@ -112,7 +112,7 @@ Jotkin käyttäjät ovat kohdanneet seuraavanlaisen virheen käyttäessään van
 Power BI Desktopin päivitys nykyisen versioon ratkaisee yleensä ongelman.
 
 ### <a name="disabling-notifications"></a>Ilmoitusten poistaminen käytöstä
-On suositeltavaa päivittää Power BI Desktopin uusimpaan versioon ominaisuuksiin, suorituskykyyn ja vakauteen tehtyjen ja muiden parannusten hyödyntämiseksi. Jotkin organisaatiot ei ehkä halua käyttäjien päivittävän jokaiseen uuteen versioon. Voit poistaa ilmoitukset käytöstä muokkaamalla rekisteriä seuraavien ohjeiden mukaisesti:
+Suosittelemme päivittämään Power BI Desktopin uusimpaan versioon ominaisuuksiin, suorituskykyyn ja vakauteen tehtyjen parannusten ja muiden parannusten hyödyntämiseksi. Jotkin organisaatiot ei ehkä halua käyttäjien päivittävän jokaiseen uuteen versioon. Voit poistaa ilmoitukset käytöstä muokkaamalla rekisteriä seuraavien ohjeiden mukaisesti:
 
 1. Siirry Rekisterieditoria käyttämällä kohtaan *HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft Power BI Desktop*
 2. Luo uusi merkintä seuraavilla asetuksilla: *REG_DWORD : DisableUpdateNotification*

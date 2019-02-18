@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 11/06/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: c6395785c3d3e386aa2ac735439a265f5fe3fb02
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 1bb6cfa195e3e6158259c9ff23cb3efdc3da4a09
+ms.sourcegitcommit: 80961ace38ff9dac6699f81fcee0f7d88a51edf4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54286998"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56223302"
 ---
 # <a name="customize-x-axis-and-y-axis-properties"></a>X- ja Y-akselin ominaisuuksien muokkaaminen
 Tässä opetusohjelmassa käydään läpi monia tapoja mukauttaa X-akselia ja Y-akselia visualisoinneissa. Kaikissa visualisoinneissa ei ole akseleita, tai niitä ei voi mukauttaa; esimerkiksi ympyräkaaviossa ei ole akseleita. Mukautusasetukset vaihtelevat myös visualisoinnista riippuen, joten yksi artikkeli ei riitä kaikkien vaihtoehtojen läpikäymiseen. Tämä artikkeli tarjoaa yleiskatsauksen useimmin käytettyihin akselien mukautuksiin ja visualisoinnin muotoiluvälilehteen Power BI -raporttipohjassa.  
@@ -70,7 +70,7 @@ Jos haluat palauttaa kaikki tehdyt mukautukset, valitse **Palauta oletusasetukse
 3. Siirrä Y-akselin **sijainti** oikealle.
 4. Muotoile tekstin väriä, kokoa ja fonttia. Tässä esimerkissä olemme määrittäneet tekstin **väriksi** musta, **tekstin kooksi** 14 ja **fontiksi** Arial Black.  
 5. Säilytä **Näyttöyksiköt** miljoonina ja **Arvon desimaalit** nollana.
-6. Y-akselin otsikko ei paranna tätä visualisointia, joten jätä **Otsikko** poissa käytöstä.  
+6. Tämän visualisoinnin tapauksessa Y-akselin otsikko ei paranna visualisointia, joten jätä **Otsikko** pois päältä.  
 7. Varmista, että ruudukko erottuu, muuttamalla **värin** tummanharmaaksi ja suurentamalla **viivanleveyden** arvoon 2.
 
     Mukautusten jälkeen pylväskaavion pitäisi näyttää suunnilleen tältä:
@@ -136,7 +136,7 @@ Jos raportin omistaja on luokitellut X-akselin päivämääräksi, **Tyyppi**-as
 ## <a name="next-steps"></a>Seuraavat vaiheet
 Lisätietoja [Power BI -raporttien visualisoinneista](power-bi-report-visualizations.md)
 
-[O](power-bi-visualization-customize-title-background-and-legend.md)[tsikoiden, taustojen ja selitteiden mukauttaminen](power-bi-visualization-customize-title-background-and-legend.md)
+[Otsikoiden, taustojen ja selitteiden mukauttaminen](power-bi-visualization-customize-title-background-and-legend.md)
 
 [Värien ja akselin ominaisuuksien mukauttaminen](service-getting-started-with-color-formatting-and-axis-properties.md)
 

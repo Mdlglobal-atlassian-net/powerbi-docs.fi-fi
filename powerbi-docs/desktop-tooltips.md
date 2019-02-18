@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 12/10/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 545e8f874cca18167ee260daa92eec3ef1c3e925
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 0893d63c9f153b3b2810116a902a13afff3cb2ce
+ms.sourcegitcommit: 80961ace38ff9dac6699f81fcee0f7d88a51edf4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54291483"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56223946"
 ---
 # <a name="create-tooltips-based-on-report-pages-in-power-bi-desktop"></a>Power BI Desktopissa luotuihin raporttisivuihin perustuvien työkaluvihjeiden luominen
 Voit luoda visuaalisesti monipuolisia **raporttityökaluvihjeitä**, jotka tulevat näkyviin, kun pidät hiiren osoitinta visualisoinnin päällä, ja jotka pohjautuvat **Power BI Desktopissa** luomiisi raporttisivuihin. Kun luot työkaluvihjeenä toimivan raporttisivun, mukautetut työkaluvihjeet voivat sisältää visualisointeja, kuvia ja muita kohdekokoelmia, joita luot raporttisivulla. 
@@ -81,7 +81,7 @@ Valitse sitten avattavasta **Sivu**-valikosta työkaluvihjesivu, jota haluat kä
 
 ![Valitse manuaalisen työkaluvihjeen työkaluvihjesivu](media/desktop-tooltips/desktop-tooltips_10.png)
 
-Sille, että työkaluvihjeen voi asettaa manuaalisesti, on useita käyttötarkoituksia. Voit määrittää työkaluvihjeelle tyhjän sivun ja ohittaa siten oletusarvoisesti valitun Power BI -työkaluvihjeen. Toinen käyttötarkoitus on, kun et halua käyttää työkaluvihjeenä Power BI:n automaattisesti valitsemaa työkaluvihjettä. Jos sinulla on esimerkiksi visualisointi, joka sisältää kaksi kenttää, joihin kumpaankin on liitetty työkaluvihje, Power BI valitsee näytettäväksi vain yhden. Tämä ei ehkä vastaa toiveitasi, joten voit valita manuaalisesti, minkä työkaluvihjeen haluat tulevan näkyviin.
+Sille, että työkaluvihjeen voi asettaa manuaalisesti, on useita käyttötarkoituksia. Voit määrittää työkaluvihjeelle tyhjän sivun ja ohittaa siten oletusarvoisesti valitun Power BI -työkaluvihjeen. Toinen käyttötarkoitus on, kun et halua käyttää työkaluvihjeenä Power BI:n automaattisesti valitsemaa työkaluvihjettä. Jos visualisoinnissa on esimerkiksi kaksi kenttää ja kummallakin näistä kentistä on liitetty työkaluvihje, Power BI näyttää vain yhden työkaluvihjeen. Tämä ei ehkä vastaa toiveitasi, joten voit valita manuaalisesti, minkä työkaluvihjeen haluat tulevan näkyviin.
 
 ## <a name="reverting-to-default-tooltips"></a>Oletusarvoisten työkaluvihjeiden palauttaminen
 

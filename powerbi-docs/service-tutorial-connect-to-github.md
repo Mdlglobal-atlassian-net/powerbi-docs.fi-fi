@@ -11,12 +11,12 @@ ms.topic: tutorial
 ms.date: 05/17/2018
 ms.author: maggies
 LocalizationGroup: Connect to services
-ms.openlocfilehash: bad76adc42fc9f70c1439c6da0cfe2d149bbbe43
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 8f44356f79b8a77ef06fe464671dbbaaaa4187e9
+ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54295662"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56215570"
 ---
 # <a name="tutorial-connect-to-a-github-sample-with-power-bi"></a>Opetusohjelma: Yhteyden muodostaminen GitHub-otokseen Power BI:llä
 Tässä opetusohjelmassa yhdistät Power BI:n GitHub-palvelun oikeisiin tietoihin, jolloin Power BI luo automaattisesti koontinäyttöjä ja raportteja. Muodostat yhteyden Power BI:n sisällön julkiseen säilöön (eli *säilöön*) ja näet seuraavia tietoja: kuinka moni henkilö osallistuu Power BI:n julkiseen sisältöön? Kuka osallistuu eniten? Minä viikonpäivänä on eniten osallistumisia? Lisäksi näet vastauksia muihin kysymyksiin. 
@@ -31,7 +31,7 @@ Tässä opetusohjelmassa käyt läpi seuraavat vaiheet:
 > * Avaa Power BI -palvelu
 > * Etsi GitHub-sovellus
 > * Anna Power BI:n julkisen GitHub-säilön tiedot
-> * Tarkastele GitHub-tietojen koontinäyttöä ja raporttia
+> * Tarkastele GitHub-tiedot sisältävää koontinäyttöä ja raporttia
 > * Tyhjennä resursseja poistamalla sovellus
 
 Jos et ole rekisteröitynyt Power BI:hin, [rekisteröidy ilmaiseen kokeiluversioon](https://app.powerbi.com/signupredirect?pbi_source=web) ennen aloittamista.

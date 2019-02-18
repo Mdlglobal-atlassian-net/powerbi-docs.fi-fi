@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 08/23/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: dd7360761cc78aed9b01eb99165de9f0b4b91ffe
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 892e056413212e319815341eb9ae95262ed54d46
+ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54274762"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56215408"
 ---
 # <a name="treemaps-in-power-bi"></a>Puukartat Power BI:ssä
 Puukartoissa hierarkkiset tiedot näytetään sisäkkäisten suorakulmioiden joukkona.  Hierarkian kukin taso on edustettuna värillisenä suorakulmiona (jota kutsutaan usein ”haaraksi”), joka sisältää muita suorakulmioita (”lehtiä”).  Kunkin suorakulmion sisällä oleva suorakulmio perustuu mitattavaan arvoon. Suorakulmiot järjestetään koon mukaan vasemmasta yläkulmasta (suurin) oikeaan alakulmaan (pienin).
@@ -52,7 +52,7 @@ Haluatko ensin seurata, kun joku luo puukartan?  Siirry videossa kohtaan 2:10, n
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/IkJda4O7oGs" frameborder="0" allowfullscreen></iframe>
 
-Tai luo oma puukarttasi. Näissä ohjeissa käytetään jälleenmyyntianalyysimallia. Kirjaudu Power BI -palveluun (ei Desktopiin), jotta voit seurata ohjeita. Valitse **Nouda tiedot \> Mallit \> Jälleenmyyntianalyysimalli > Yhdistä\> ja valitse \>Koontinäyttö**. Visualisoinnin luominen raporttiin edellyttää tietojoukon ja raportin muokkausoikeuksia. Onneksi Power BI -mallit ovat muokattavia. Et voi kuitenkaan lisätä visualisointeja raporttiin, jonka joku on jakanut kanssasi.  
+Tai luo oma puukarttasi. Näissä ohjeissa käytetään jälleenmyyntianalyysimallia. Kirjaudu Power BI -palveluun (ei Desktopiin), jotta voit seurata ohjeita. Valitse **Nouda tiedot \> Mallit \> Jälleenmyyntianalyysimalli > Yhdistä\> ja valitse \>Koontinäyttö**. Visualisoinnin luominen raporttiin edellyttää tietojoukon ja raportin muokkausoikeuksia. Onneksi Power BI -mallit ovat muokattavia. Et voi kuitenkaan lisätä visualisointeja raporttiin, jonka joku toinen on jakanut kanssasi.  
 
 1. Avaa Jälleenmyyntianalyysimallin raportti valitsemalla koontinäytössä ”Myymälöitä yhteensä” -ruutu.    
 2. Avaa [Muokkausnäkymä](../service-interact-with-a-report-in-editing-view.md) ja valitse **Myynti** > **Viime vuoden myynti** -mittayksikkö.   

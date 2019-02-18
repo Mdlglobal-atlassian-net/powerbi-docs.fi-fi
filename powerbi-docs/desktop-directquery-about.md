@@ -7,18 +7,18 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/28/2018
+ms.date: 02/13/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: a15707a36a34e083458da5fa407034e33dd570c0
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 1126a2cbdac7e6ed1b465d2d0ba881ae2b4f5338
+ms.sourcegitcommit: d010b10bc14097a1948daeffbc91b864bd91f7c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54284146"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56226025"
 ---
 # <a name="using-directquery-in-power-bi"></a>DirectQueryn käyttäminen Power BI:ssä
-Voit muodostaa yhteyksiä kaikenlaisiin tietolähteisiin, kun käytät **Power BI Desktopia** tai **Power BI -palvelua**. Lisäksi voit muodostaa näitä yhteyksiä eri tavoin. Voit joko *tuoda* tietoja Power BI:hin, mikä on yleisin tapa hakea, tai voit muodostaa yhteyden tietoihin suoraan niiden alkuperäisessä lähdesäilössä. Tätä tapaa kutsutaan nimellä **DirectQuery**. Tässä artikkelissa kerrotaan **DirectQuerystä** ja sen toiminnoista. Artikkelissa käsitellään seuraavia aiheita:
+Voit yhdistää kaikenlaisiin erilaisiin tietolähteisiin, kun käytät **Power BI Desktopia** tai **Power BI -palvelua**, ja muodostaa nämä tietoyhteydet eri tavoin. Voit *tuoda* tietoja Power BI:hin, mikä on yleisin tapa hakea tietoja, tai voit muodostaa yhteyden tietoihin suoraan niiden alkuperäisessä lähdesäilössä. Tätä tapaa kutsutaan nimellä **DirectQuery**. Tässä artikkelissa kuvataan **DirectQueryä** ja sen toimintoja:
 
 * DirectQueryn eri yhdistämistavat
 * tilanteet, joissa kannattaa käyttää DirectQueryä tuomisen asemesta
@@ -27,8 +27,8 @@ Voit muodostaa yhteyksiä kaikenlaisiin tietolähteisiin, kun käytät **Power B
 
 Lyhyesti sanottuna tuomista kannattaa käyttää DirectQueryn asemesta seuraavien parhaiden käytäntöjen mukaisesti:
 
-* Tiedot kannattaa **tuoda** Power BI:hin aina, kun se on mahdollista. Tässä hyödynnetään Power BI:n tehokasta kyselytoimintoa. Lisäksi tämä tarjoaa kattavammat toiminnot ja paremman tietojen käsittelyn.
-* Jos et voi saavuttaa tavoitteitasi tuomalla tietoja, tässä tapauksessa voit harkita **DirectQueryn** käyttöä. Jos tiedot esimerkiksi muuttuvat jatkuvasti ja raporttien täytyy aina olla uusimpien tietojen mukaisia, DirectQuery voi olla paras vaihtoehto. DirectQueryn käyttö on kuitenkin yleensä järkevää vain silloin, kun taustalla oleva tietolähde kykenee tarjoamaan vuorovaikutteisia kyselyitä (alle viisi sekuntia) tyypillisille koostekyselyille ja kykenee suoriutumaan kyselykuormituksesta. Lisäksi DirectQueryn rajoitukset tulee huomioida tarkasti, jotta kykenet varmasti saavuttamaan tavoitteesi.
+* Tiedot kannattaa **tuoda** Power BI:hin aina, kun se on mahdollista. Tuonnissa hyödynnetään Power BI:n tehokasta kyselytoimintoa. Lisäksi se tarjoaa pitkälti interaktiivisen tietojen käsittelyn ja kattavammat toiminnot.
+* Jos et voi saavuttaa tavoitteitasi tuomalla tietoja, tässä tapauksessa voit harkita **DirectQueryn** käyttöä. Jos tiedot esimerkiksi muuttuvat jatkuvasti ja raporttien täytyy aina olla uusimpien tietojen mukaisia, DirectQuery voi olla paras vaihtoehto. DirectQueryn käyttö on kuitenkin yleensä järkevää vain silloin, kun taustalla oleva tietolähde kykenee tarjoamaan vuorovaikutteisia kyselyitä (alle viisi sekuntia) tyypillisille koostekyselyille ja kykenee suoriutumaan kyselykuormituksesta. Lisäksi DirectQueryn käyttörajoitusten luettelo tulee huomioida tarkasti.
 
 PowerBI:n tarjoamat toiminnot molemmille yhteystavoille (sekä tuomiselle että DirectQuerylle) kehittyvät ajan myötä. Tämä tuo enemmän joustavuutta tuotujen tietojen käytölle, esimerkiksi siten, että tuotuja tietoja voi käyttää useammissa tapauksissa. Lisäksi tällä tavoin päästää eroon joistain DirectQueryn käytön varjopuolista. Parannuksista riippumatta taustalla olevan tietolähteen suorituskyky on aina merkittävä huomioitava seikka. Jos taustalla oleva tietolähde on hidas, DirectQueryn käyttö tämän tietolähteen kanssa ei ole järkevää.
 
@@ -37,7 +37,7 @@ Tässä ohjeartikkelissa käsitellään DirectQueryn käyttöä Power BI:n kanss
 Tässä artikkelissa keskitytään DirectQueryn suositeltuun työnkulkuun, kun raportti luodaan **Power BI Desktopissa**, mutta käsittelemme myös yhdistämistä suoraan **Power BI -palvelussa**.
 
 ## <a name="power-bi-connectivity-modes"></a>Power BI:n yhteystilat
-Power BI:llä voi muodostaa yhteyksiä moniin erilaisiin tietolähteisiin, esimerkiksi seuraaviin:
+Power BI:llä voi muodostaa yhteyksiä moniin erilaisiin tietolähteisiin, kuten:
 
 * verkkopalvelut (Salesforce, Dynamics 365 ja muut)
 * tietokannat (SQL Server, Access, Amazon Redshift ja muut)
@@ -55,7 +55,7 @@ Kun muodostat yhteyden tietolähteeseen (esimerkiksi SQL Serveriin) **Power BI D
 
 * **Nouda tiedot** -toiminnon ensimmäisellä suorituskerralla valituista taulukoista kukin määrittää kyselyn, joka palauttaa tietyt tiedot (näitä kyselyitä voi muokata ennen tietojen lataamista, esimerkiksi ottamalla käyttöön suodattimia, koostamalla tietoja tai yhdistämällä erillisiä taulukoita).
 * Kun tietoja ladataan, kyselyiden määrittämät tiedot tuodaan Power BI:n välimuistiin.
-* Kun luot visualisointia **Power BI Desktopissa**, tuoduille tiedoille tehdään kyselyitä. Power BI -säilö varmistaa, että kysely toimii erittäin nopeasti, minkä ansiosta kaikki muutokset visualisointiin näkyvät välittömästi.
+* Kun luot visualisointia **Power BI Desktopissa**, tuoduille tiedoille tehdään kyselyitä. Power BI -säilö varmistaa, että kysely toimii nopeasti, minkä ansiosta kaikki muutokset visualisointiin näkyvät välittömästi.
 * Mitkään taustalla olevien tietojen muutokset eivät näy missään visualisoinneissa. Jos haluat nähdä nämä muutokset, sinun täytyy *päivittää* tiedot, jolloin ne tuodaan uudelleen.
 * Kun julkaiset raportin (.pbix-tiedoston) **Power BI -palveluun**, tietojoukko luodaan ja ladataan Power BI -palveluun.  Tuodut tiedot sisältyvät tähän tietojoukkoon. Tämän jälkeen voit määrittää näiden tietojen ajoitetun päivityksen esimerkiksi siten, että tiedot tuodaan uudelleen joka päivä. Alkuperäisen tietolähteen sijainnista riippuen sinun täytyy ehkä määrittää paikallinen tietoyhdyskäytävä.
 * Kun avaat olemassa olevan raportin **Power BI -palvelussa** tai luot uutta raporttia, tuoduille tiedoille tehdään uusi kysely, mikä takaa vuorovaikutteisuuden.
@@ -69,7 +69,7 @@ Kun muodostat yhteyden tietolähteeseen **Power BI Desktopin** **Nouda tiedot** 
 * Mitkään taustalla olevien tietojen muutokset eivät näy heti missään olemassa olevissa visualisoinneissa. Tämä edellyttää päivittämistä, jolloin kunkin visualisoinnin tarvittavat kyselyt lähetetään uudelleen, jotta visualisointi voidaan päivittää.
 * Kun raportti julkaistaan **Power BI -palvelussa**, tämä tuottaa tietojoukon Power BI -palveluun, aivan kuten tietoja tuodessakin. Tämä tietojoukko *ei kuitenkaan sisällä mitään tietoja*.
 * Kun avaat aiemmin luodun raportin **Power BI -palvelussa** tai luot uuden raportin, tarvittavat tiedot haetaan tekemällä jälleen kysely taustalla olevaan tietolähteeseen. Alkuperäisen tietolähteen sijainnista riippuen sinun täytyy ehkä määrittää paikallinen tietoyhdyskäytävä, aivan kuten tietoja päivitettäessä tuontitilassakin.
-* Visualisointeja tai kokonaisia raporttisivuja voi kiinnittää koontinäytön ruutuihin. Koontinäytön avaamisen nopeuden takaamiseksi ruudut päivitetään automaattisesti aikataulun mukaisesti (esimerkiksi kerran tunnissa). Voit muokata päivitysväliä esimerkiksi sen mukaan, kuinka usein tiedot muuttuvat tai kuinka tärkeää uusimpien tietojen näkeminen on. Kun avaat koontinäytön, ruudut näyttävät siis tiedot viimeisimmän päivityksen ajankohdalta, eivät välttämättä taustalla olevan tietolähteen kaikkein uusimpien tietojen mukaisesti. Voit päivittää avatun koontinäytön milloin tahansa varmistaaksesi sen ajantasaisuuden.    
+* Visualisointeja tai kokonaisia raporttisivuja voi kiinnittää koontinäytön ruutuihin. Koontinäytön avaamisen nopeuden takaamiseksi ruudut päivitetään automaattisesti aikataulun mukaisesti (esimerkiksi kerran tunnissa). Voit muokata tätä päivitysväliä esimerkiksi sen mukaan, kuinka usein tiedot muuttuvat tai kuinka tärkeää uusimpien tietojen näkeminen on. Kun avaat koontinäytön, ruudut näyttävät siis tiedot viimeisimmän päivityksen ajankohdalta, eivät välttämättä taustalla olevan tietolähteen kaikkein uusimpien tietojen mukaisesti. Voit päivittää avatun koontinäytön milloin tahansa varmistaaksesi sen ajantasaisuuden.    
 
 ### <a name="live-connections"></a>Reaaliaikaiset yhteydet
 Kun yhdistät **SQL Server Analysis Servicesiin** (SSAS), voit joko tuoda tiedot tai muodostaa reaaliaikaisen yhteyden valittuun tietomalliin. Jos valitset **Tuo**, sinun täytyy määrittää kysely ulkoiselle SSAS-lähteelle, minkä jälkeen tiedot tuodaan normaalisti. Jos valitset **Yhdistä reaaliajassa**, sinun ei tarvitse määrittää mitään kyselyä, sillä koko ulkoinen malli näytetään kenttäluettelossa. Jos valitset **DirectQuery**, kyselyt lähetetään ulkoiseen SSAS-lähteeseen, kun luot visualisointeja. Toisin kuin DirectQueryn kohdalla, tällä tavalla et kuitenkaan luo uutta *mallia*. Toisin sanoen et siis voi määrittää uusia laskettuja sarakkeita, hierarkioita, suhteita ja niin edelleen. Muodostat sen sijaan yhteyden suoraan ulkoiseen SSAS-malliin.
@@ -104,15 +104,15 @@ Kun otamme huomioon DirectQueryn nykyiset toiminnot Power BI:n kanssa käytettä
 * Tiedot muuttuvat miltei jatkuvasti, joten tarvitaan miltei reaaliaikaista raportointia.
 * Käsittelet erittäin suurta määrää tietoja, joita ei tarvitse esikoostaa.
 * Voimassa on tietojen suvereniteettirajoituksia.
-* Lähde on monidimensioinen lähde (esimerkiksi SAP BW), joka sisältää mittayksiköitä.
+* Lähde on monidimensioinen lähde, joka sisältää mittayksiköitä (kuten SAP BW).
 
-Ota huomioon, että edellä olevan luettelon tiedot koskevat vain Power BI:n käyttöä. Sinulla on aina mahdollisuus käyttää sen sijasta myös ulkoista SQL Server Analysis Services- tai Azure Analysis Services -mallia, jolla tuot tiedot. Tämän jälkeen voit muodostaa yhteyden tähän malliin Power BI:llä. Tämä tapa edellyttää enemmän osaamista, mutta se on myös joustavampi tapa. Tällä tavoin voit esimerkiksi tuoda paljon suurempia määriä tietoja eikä tietojen päivitysaikataululla ole rajoituksia.
+Edellä olevan luettelon tiedot koskevat yksinomaan Power BI:n käyttöä. Sinulla on aina mahdollisuus käyttää sen sijasta myös ulkoista SQL Server Analysis Services- tai Azure Analysis Services -mallia, jolla tuot tiedot. Tämän jälkeen voit muodostaa yhteyden tähän malliin Power BI:llä. Tämä tapa edellyttää enemmän osaamista, mutta se on myös joustavampi tapa. Tällä tavoin voit esimerkiksi tuoda paljon suurempia määriä tietoja eikä tietojen päivitysaikataululla ole rajoituksia.
 
 ## <a name="implications-of-using-directquery"></a>DirectQueryn käytössä huomioitavia seikkoja
 **DirectQueryn** käytöllä voi olla myös negatiivisia vaikutuksia, joita käsitellään tässä osiossa. Jotkin näistä rajoituksista ovat hieman erilaisia käytetystä tietolähteestä riippuen. Kerromme tällaisista tilanteista erikseen. Lisäksi tarjoamme erilliset ohjeartikkelit lähteille, jotka eroavat merkittävästi.  
 
 ### <a name="performance-and-load-on-the-underlying-source"></a>Taustalla olevan lähteen suorituskyky ja kuormitus
-Kun käytät **DirectQueryä**, yleinen käytettävyys riippuu hyvin pitkälti taustalla olevan tietolähteen tehokkuudesta. Jos jokaisen visualisoinnin päivitys (esimerkiksi osittaja-arvon muuttamisen jälkeen) vie muutaman sekunnin (alle viisi sekuntia), käytettävyys on kohtuullinen, vaikkakin käyttö saattaa tuntua hitaalta verrattuna siihen, kuinka nopeasti järjestelmä toimii, kun tuot tiedot Power BI:hin. Jos lähde on taas niin hidas, että yksittäisten visualisointien päivittäminen vie tätä kauemmin (kymmeniä sekunteja), käytettävyys on erittäin huono. Se voi olla jopa niin huono, että kyselyt aikakatkaistaan.
+Kun käytät **DirectQueryä**, yleinen käytettävyys riippuu hyvin pitkälti taustalla olevan tietolähteen tehokkuudesta. Jos jokaisen visualisoinnin päivitys (esimerkiksi osittaja-arvon muuttamisen jälkeen) vie muutaman sekunnin (alle viisi sekuntia), käytettävyys on kohtuullinen, vaikkakin käyttö saattaa tuntua hitaalta verrattuna siihen, kuinka nopeasti järjestelmä yleensä toimii, kun tuot tiedot Power BI:hin. Jos lähde on taas niin hidas, että yksittäisten visualisointien päivittäminen vie tätä kauemmin (kymmeniä sekunteja), käytettävyys on erittäin huono. Se voi olla jopa niin huono, että kyselyt aikakatkaistaan.
 
 Taustalla olevan tietolähteen tehokkuuden lisäksi sinun tulee huomioida tarkasti tietolähteelle koituva kuormitus, mikä tietysti usein vaikuttaa tehokkuuteen. Kuten myöhemmin tässä artikkelissa kerromme, jokainen käyttäjä, joka avaa jaetun raportin, ja jokainen koontinäytön ruutu, joka päivitetään säännöllisesti, lähettää ainakin yhden kyselyn per visualisointi taustalla olevaan lähteeseen. Tämä edellyttää sitä, että lähde kykenee suoriutumaan tällaisesta kuormituksesta siten, että käytettävyys pysyy kohtuullisena.
 
@@ -162,7 +162,7 @@ Kun käytät **DirectQueryä**, voit edelleen hyödyntää monia näistä mallin
 ### <a name="reporting-limitations"></a>Raportoinnin rajoitukset
 DirectQuery-malleissa tuetaan miltei kaikkia raportointitoimintoja. Voit siis käyttää samoja visualisointeja, kunhan taustalla oleva lähde tarjoaa riittävän suorituskyvyn. **Power BI -palvelussa** raportin julkaisemisen jälkeen tarjottavilla muilla toiminnoilla on kuitenkin joitain tärkeitä rajoituksia. Ne kuvataan alla:
 
-* **Nopeita merkityksellisiä tietoja ei tueta:** Power BI:n Nopeat merkitykselliset tiedot -toiminto hakee tietojoukosta erilaisia alijoukkoja ja hyödyntää kehittyneitä algoritmeja, joiden avulla se pyrkii tunnistamaan mahdollisesti merkityksellisiä tietoja. Tätä toimintoa ei tueta DirectQueryä käytettäessä, koska kyselyiden täytyy olla erittäin suorituskykyisiä.
+* **Nopeita merkityksellisiä tietoja ei tueta:** Power BI:n Nopeat merkitykselliset tiedot -toiminto hakee tietojoukosta erilaisia alijoukkoja ja hyödyntää kehittyneitä algoritmeja, joiden avulla se pyrkii tunnistamaan mahdollisesti merkityksellisiä tietoja. Tätä toimintoa ei tueta DirectQueryä käyttävissä tietojoukoissa, koska kyselyjen täytyy olla erittäin suorituskykyisiä.
 * **Q&A-toimintoa ei tueta:** Power BI:n Q&A-toiminnolla voit tutkia tietojasi helppokäyttöisillä luonnollisen kielen toiminnoilla ja hankkia vastauksia kaavioiden sekä kuvaajien muodossa. Tätä toimintoa ei kuitenkaan tueta DirectQueryä käyttävissä tietojoukoissa.
 * **Tutki-toiminnon käyttö Excelissä hidastaa todennäköisesti käyttöä:** Voit tutkia tietojasi tietojoukon Tutki Excelissä -toiminnolla. Tällä tavalla voit luoda Pivot-taulukoita ja -kaavioita Excelissä. Vaikka tätä toimintoa tuetaankin DirectQueryä käyttävissä tietojoukossa, se toimii yleensä hitaammin kuin visualisointien luominen Power BI:ssä. Jos siis Excelin käyttö on sinulle tärkeää, ota tämä huomioon, kun mietit, kannattaako sinun käyttää DirectQueryä.
 
@@ -188,7 +188,7 @@ Yksittäisiä visualisointeja tai kokonaisia sivuja voi kiinnittää koontinäyt
 
 Jos mallissa ei ole määritetty mitään rivitason suojausta, jokainen ruutu päivitetään kerran, minkä jälkeen tulokset jaetaan kaikille käyttäjille. Jos rivitason suojauksia on määritetty, tällä voi olla suuri kerrannaisvaikutus, sillä jokainen ruutu edellyttää omat kyselynsä taustalähteeseen käyttäjäkohtaisesti.  
 
-Jos sinulla on siis kymmenen ruutua sisältävä koontinäyttö, joka on jaettu sadalle käyttäjälle, joka on luotu **DirectQuery**-tietojoukosta, jossa käytetään rivitason suojausta ja joka on määritetty päivitettäväksi 15 minuutin välein, tämä tarkoittaa sitä, että järjestelmä lähettää taustatietolähteeseen tuhat kyselyä 15 minuutin välein.
+Jos sinulla on siis kymmenen ruutua sisältävä koontinäyttö, joka on jaettu sadalle käyttäjälle, joka on luotu **DirectQuery**-tietojoukosta, jossa käytetään rivitason suojausta ja joka on määritetty päivitettäväksi 15 minuutin välein, järjestelmä lähettää taustatietolähteeseen tuhat kyselyä 15 minuutin välein.
 
 Siksi rivitason suojauksen käyttö ja päivitysaikataulu on syytä harkita tarkkaan.
 
@@ -208,7 +208,7 @@ Siksi rivitason suojauksen käyttö ja päivitysaikataulu on syytä harkita tark
 * **Mikä tahansa kysely voi palauttaa enintään miljoona riviä:** Yhdellä taustatietolähteen kyselyllä voi palauttaa enintään miljoona riviä. Tämä rajoitus on kiinteä. Tällä ei yleensä ole käytännöllisiä vaikutuksia, sillä itse visualisoinnit eivät näytä näin montaa pistettä. Tämä rajoitus saattaa kuitenkin tulla vastaan, jos Power BI ei optimoi täysin lähetettäviä kyselyitä ja jos järjestelmä pyytää jotain välitulosta, joka ylittää tämän rajoituksen. Näin voi käydä myös visualisointia luotaessa, kun se ei ole vielä lopullisessa muodossaan. Esimerkiksi asiakkaiden ja kokonaismyynnin sarakkeiden sisällyttäminen ylittäisi tämän rajoituksen ennen suodattimien käyttöä, jos asiakkaita olisi yli miljoona.
   
   Saisit tässä tapauksessa seuraavan virheilmoituksen: ulkoisen tietolähteen kyselyn tulosjoukko on ylittänyt suurimman sallitun koon, joka on 1 000 000 riviä.
-* **Tuontitilasta ei voi vaihtaa DirectQuery-tilaan:**  Vaikka yleensä onkin mahdollista vaihtaa malli DirectQuery-tilasta tuontitilaan, ota kuitenkin huomioon, että tämä tarkoittaa sitä, että kaikki tarvittavat tiedot on tuotava. Takaisin vaihtaminen ei kuitenkaan ole mahdollista. Pääasiassa tämä johtuu niistä toiminnoista, joita DirectQuery-tila ei tue. DirectQuery-malleja, jotka käyttävät SAP BW:n kaltaisia monidimensioisia lähteitä, ei myöskään voi vaihtaa DirectQuery-tilasta tuontitilaan, koska ulkoisia mittayksiköitä käsitellään täysin eri tavalla.
+* **Tuontitilasta ei voi vaihtaa DirectQuery-tilaan:**  Vaikka yleensä onkin mahdollista vaihtaa malli DirectQuery-tilasta tuontitilaan, tämä tarkoittaa sitä, että kaikki tarvittavat tiedot on tuotava. Takaisin vaihtaminen ei kuitenkaan ole mahdollista. Pääasiassa tämä johtuu niistä toiminnoista, joita DirectQuery-tila ei tue. DirectQuery-malleja, jotka käyttävät SAP BW:n kaltaisia monidimensioisia lähteitä, ei myöskään voi vaihtaa DirectQuery-tilasta tuontitilaan, koska ulkoisia mittayksiköitä käsitellään täysin eri tavalla.
 
 ## <a name="directquery-in-the-power-bi-service"></a>DirectQuery Power BI -palvelussa
 Kaikkia **Power BI Desktopin** malleja tuetaan. Jotkin lähteet ovat myös käytettävissä suoraan **Power BI -palvelusta**. Yrityskäyttäjä voi esimerkiksi muodostaa Power BI:llä yhteyden Salesforce-tietoihinsa, jolloin hän saa heti käyttöönsä koontinäytön ilman **Power BI Desktopin** käyttöä.
@@ -216,17 +216,17 @@ Kaikkia **Power BI Desktopin** malleja tuetaan. Jotkin lähteet ovat myös käyt
 Palvelussa on suoraan käytettävissä vain kaksi DirectQueryä käyttävää lähdettä:
 
 * Spark
-* Azure SQL Data Warehouse.
+* Azure SQL Data Warehouse
 
-Suosittelemme kuitenkin erittäin painokkaasti, että mikä tahansa **DirectQueryn** käyttö näiden kahden lähteen kanssa aloitetaan **Power BI Desktopista**. Syynä on se, että kun yhteys tehdään alun perin **Power BI -palvelussa**, sillä on monia rajoituksia. Vaikka aloittaminen Power BI -palvelusta on helppoa, tällä tavalla käytettäessä on monia rajoituksia sille, kuinka tulokseksi saatavia raportteja voi jalostaa (tällä tavalla ei esimerkiksi voi luoda mitään laskelmia, käyttää monia analyysitoimintoja tai edes päivittää metatietoja taustatietolähteen muutosten mukaisiksi).   
+Suosittelemme kuitenkin, että mikä tahansa **DirectQueryn** käyttö näiden kahden lähteen kanssa aloitetaan **Power BI Desktopista**. Syynä on se, että kun yhteys tehdään alun perin **Power BI -palvelussa**, sillä on monia rajoituksia. Vaikka aloittaminen Power BI -palvelusta on helppoa, tällä tavalla käytettäessä on monia rajoituksia sille, kuinka tulokseksi saatavia raportteja voi jalostaa (tällä tavalla ei esimerkiksi voi luoda mitään laskelmia, käyttää monia analyysitoimintoja tai edes päivittää metatietoja taustatietolähteen muutosten mukaisiksi).   
 
 ## <a name="guidance-for-using-directquery-successfully"></a>Ohjeet DirectQueryn onnistuneeseen käyttöön
 Jos aiot käyttää **DirectQueryä**, tästä osiosta saat yleisiä ohjeita käytön onnistumiseen. Tämän osion ohjeet perustuvat aiemmin tässä artikkelissa käsiteltyihin DirectQueryn käyttöön liittyviin huomioitaviin seikkoihin.
 
 ### <a name="backend-data-source-performance"></a>Taustatietolähteen suorituskyky
-Suosittelemme ehdottomasti tarkistamaan, että yksinkertaisten visualisointien päivitys onnistuu kohtuullisessa ajassa. Päivityksen tulisi onnistua alle viidessä sekunnissa kohtuullisen käytettävyyden takaamiseksi. Jos visualisointien päivittäminen vie yli 30 sekuntia, kohtaat erittäin todennäköisesti ongelmia raportin julkaisemisen jälkeen. Tämä voi johtaa siihen, että ratkaisu ei ole käyttökelpoinen.
+Sinun on vahvistettava, että yksinkertaiset visualisoinnit voidaan päivittää kohtuullisen ajan kuluessa eli korkeintaan viidessä sekunnissa kohtuullisen interaktiivisen kokemuksen takaamiseksi. Jos visualisointien päivittäminen vie yli 30 sekuntia, kohtaat erittäin todennäköisesti ongelmia raportin julkaisemisen jälkeen. Tämä voi johtaa siihen, että ratkaisu ei ole käyttökelpoinen.
 
-Jos kyselyt toimivat hitaasti, sinun kannattaa ensimmäisenä tarkistaa taustalähteeseen lähetettävät kyselyt ja syy sille, miksi kyselyt toimivat hitaasti. Tässä ohjeartikkelissa ei käsitellä tietokantojen optimoinnin monia erilaisia parhaita käytäntöjä kaikkien mahdollisten taustatietolähteiden kanssa, mutta annamme kuitenkin muutamia yleisiä tietokantojen vakiokäytäntöjä, jotka pätevät useimmissa tilanteissa:
+Jos kyselyt toimivat hitaasti, sinun kannattaa ensimmäisenä tarkistaa taustalähteeseen lähetettävät kyselyt ja syy sille, miksi kyselyt toimivat hitaasti. Tässä artikkelissa ei käsitellä tietokannan optimoinnin monia erilaisia parhaita käytäntöjä kaikkien mahdollisten taustalla olevien tietolähteiden kanssa, mutta se sisältää kuitenkin muutamia yleisiä tietokannan vakiokäytäntöjä, jotka pätevät useimmissa tilanteissa:
 
 * Kokonaislukusarakkeisiin perustuvat suhteet toimivat yleensä paremmin kuin muiden tietotyyppien sarakkeiden liitokset.
 * Soveltuvat indeksit on syytä luoda. Yleensä tämä tarkoittaa sarakesäilöindeksien käyttämistä lähteissä, jotka tukevat niitä (esimerkiksi SQL Server).
@@ -235,9 +235,9 @@ Jos kyselyt toimivat hitaasti, sinun kannattaa ensimmäisenä tarkistaa taustal�
 ### <a name="model-design-guidance"></a>Ohjeita mallin suunnitteluun
 Huomioi seuraavat seikat, kun määrität mallia:
 
-* **Vältä monimutkaisia kyselyitä kyselyeditorissa.** Kyselyeditorissa luotu kysely käännetään yhdeksi SQL-kyselyksi, joka sitten sisällytetään alivalintaan jokaisessa kyseiseen taulukkoon lähetettävässä kyselyssä. Jos tämä kysely on monimutkainen, jokainen lähetettävä kysely saattaa toimia hitaasti. Voit tarkistaa vaihejoukon varsinaisen SQL-kyselyn valitsemalla kyselyeditorissa viimeisen vaiheen ja valitsemalla sitten pikavalikosta *Näytä natiivi kysely*.
-* **Pidä mittayksiköt yksinkertaisina.** Suosittelemme, että ainakin aluksi käytät mittayksiköinä vain yksinkertaisia koosteita. Jos ne toimivat tyydyttävästi, voit määrittää monimutkaisempia mittayksiköitä. Huomioi kuitenkin niiden jokaisen tehokkuus tarkasti.
-* **Vältä suhteita lasketuissa sarakkeissa.** Tämä on erityisen tärkeää tietokannoissa, joissa täytyy yhdistää useita sarakkeita. Power BI ei salli tällä hetkellä sitä, että suhde perustuu useisiin sarakkeisiin viiteavaimena/perusavaimena. Yleensä tämän voi kiertää ketjuttamalla sarakkeet yhteen lasketulla sarakkeella ja perustamalla liitoksen sitten tähän. Vaikka tämä kiertotapa toimii kohtuullisesti tuoduilla tiedoilla, **DirectQueryn** kohdalla se tuottaa lausekeliitoksen, joka yleensä estää kaikkien indeksien käytön, mikä heikentää suorituskykyä. Ainoa tapa tämän kiertämiseen on yhdistää useiden sarakkeiden tiedot yhteen sarakkeen taustatietokannassa.
+* **Vältä monimutkaisia kyselyitä kyselyeditorissa.** Kyselyeditorissa määritetty kysely käännetään yhdeksi SQL-kyselyksi, joka sisällytetään sitten alivalintaan jokaisessa kyseiseen taulukkoon lähetettävässä kyselyssä. Jos tämä kysely on monimutkainen, jokainen lähetettävä kysely saattaa toimia hitaasti. Voit tarkistaa vaihejoukon varsinaisen SQL-kyselyn valitsemalla kyselyeditorissa viimeisen vaiheen ja valitsemalla sitten pikavalikosta *Näytä natiivi kysely*.
+* **Pidä mittayksiköt yksinkertaisina.** Suosittelemme, että ainakin aluksi käytät mittayksiköinä vain yksinkertaisia koosteita. Jos mittayksiköt toimivat tyydyttävästi, voit määrittää monimutkaisempia mittayksiköitä. Huomioi kuitenkin niiden jokaisen tehokkuus tarkasti.
+* **Vältä suhteita lasketuissa sarakkeissa.** Tämä on tärkeää tietokannoissa, joissa täytyy yhdistää useita sarakkeita. Power BI ei salli tällä hetkellä sitä, että suhde perustuu useisiin sarakkeisiin viiteavaimena/perusavaimena. Yleensä tämän voi kiertää ketjuttamalla sarakkeet yhteen lasketulla sarakkeella ja perustamalla liitoksen sitten tähän. Vaikka tämä kiertotapa toimii kohtuullisesti tuoduilla tiedoilla, **DirectQueryn** kohdalla se tuottaa lausekeliitoksen, joka yleensä estää kaikkien indeksien käytön, mikä heikentää suorituskykyä. Ainoa tapa tämän kiertämiseen on yhdistää useiden sarakkeiden tiedot yhteen sarakkeen taustatietokannassa.
 * **Vältä suhteita uniqueidentifier-sarakkeissa.** Power BI ei oletusarvoisesti tue uniqueidentifier-tietotyyppiä. Jos siis määrität suhteen kahden uniqueidentifier-tietotyypin sarakkeen välille, tuloksena on kysely, jossa on liitos, jossa on mukana muuntolause. Yleensä myös tämä johtaa heikkoon suorituskykyyn. Ellei tätä tapausta nimenomaisesti optimoida, ainoa tapa tämän kiertämiseen on luoda sarakkeet eri tietotyypillä taustatietokannassa.
 * **Piilota *to*-sarake suhteissa.** Suhteiden *to*-sarakkeen (yleensä *to*-taulukon perusavain) tulisi yleensä olla piilotettuna, jotta sitä ei näytetä kenttäluettelossa ja jotta sitä ei voi käyttää visualisoinneissa. Usein sarakkeet, joihin suhteet perustuvat, ovat itse asiassa *järjestelmäsarakkeita* (esimerkiksi tietovaraston korvaavia avaimia). Näiden sarakkeiden piilottaminen on hyvä käytäntö joka tapauksessa. Jos sarakkeella on merkitys, luo laskettu sarake, joka on näkyvissä ja jossa on yksinkertainen lauseke sille, että sen arvot vastaavat perusavainta. Esimerkki:
   
@@ -298,6 +298,20 @@ Ota yllä mainittujen ehdotusten lisäksi huomioon myös se, että kaikki seuraa
 
 * **Harkitse kokonaissummien poistamista käytöstä visualisoinneissa:** Taulukot ja matriisit näyttävät oletusarvoisesti kokonaissummat ja välisummat. Monissa tapauksissa näiden arvojen hakeminen edellyttää erillisten kyselyiden lähettämistä taustalähteeseen. Tämä koskee kaikkia *erillisten määrän* koosteiden suorituksia tai kaikkia tilanteita, joissa käytät DirectQueryä SAP BW:n tai SAP HANAn kanssa. Tällaiset summat kannattaa poistaa käytöstä (**Muotoile**-ruudussa), jos niitä ei tarvitse. 
 
+### <a name="maximum-number-of-connections-option-for-directquery"></a>DirectQueryn yhteysvaihtoehtojen enimmäismäärä
+
+Voit määrittää niiden yhteyksien enimmäismäärän, jotka DirectQuery avaa kullekin taustalla olevalle tietolähteelle, ja hallita siten kuhunkin tietolähteeseen samanaikaisesti lähetettävien kyselyjen määrää. 
+
+Sen jälkeen avataan DirectQueryn samanaikaisten yhteyksien oletusenimmäismäärä. Voit muuttaa tätä nykyiselle tiedostolle **Power BI Desktopissa** siirtymällä kohtaan **Tiedosto > Asetukset ja vaihtoehdot > Asetukset**, ja valitsemalla sitten vasemman ruudun **Nykyinen tiedosto** -osiosta **DirectQuery**. 
+
+![DirectQuery-yhteyksien enimmäismäärän käyttöönotto](media/desktop-directquery-about/directquery-about_05b.png)
+
+Asetus on käytössä vain, kun nykyisessä raportissa on vähintään yksi DirectQuery-lähde. Arvoa sovelletaan kaikkiin DirectQuery-lähteisiin ja samaan raporttiin lisättyihin kaikkiin uusiin DirectQuery-lähteisiin.
+
+**Yhteyksien enimmäismäärän** arvon lisääminen varmistaa sen, että taustalla olevaan tietolähteeseen voidaan lähettää enemmän kyselyjä (korkeintaan määritetty enimmäismäärä). Tästä on hyötyä, kun yhdellä sivulla on lukuisia visualisointeja tai useat käyttäjät käsittelevät raporttia samanaikaisesti. Kun yhteyksien enimmäismäärä on saavutettu, muut kyselyt  laitetaan jonoon, kunnes yhteys on saatavilla. Tämän rajan nostaminen lisää taustalla olevan tietolähteen kuormitusta, joten asetus ei välttämättä paranna yleistä suorituskykyä.
+
+Kun raportti on julkaistu, taustalla olevaan tietolähteeseen lähetettyjen samanaikaisten kyselyjen enimmäismäärä riippuu myös määritetyistä rajoista sen kohdeympäristön mukaan, jossa raportti julkaistaan. Eri ympäristöt (kuten Power BI, Power BI Premium tai Power BI -raporttipalvelin) voivat kukin määrätä erilaisia rajoja.
+
 ### <a name="diagnosing-performance-issues"></a>Suorituskykyongelmien vianmääritys
 Tässä osiossa annetaan ohjeita suorituskykyongelmien vianmääritykseen sekä siihen, miten voit hankkia lisätietoja raporttien optimoimiseksi.
 
@@ -349,7 +363,7 @@ Avaa jäljitystiedosto seuraavasti:
 2. Anna tällä hetkellä auki olevan Power BI -istunnon jäljitystiedoston polku. Se voi olla esimerkiksi seuraava:
    
          C:\Users\<user>\AppData\Local\Microsoft\Power BI Desktop\AnalysisServicesWorkspaces\AnalysisServicesWorkspace2058279583\Data
-3. Avaa FlightRecorderCurrent.trc.
+3. Avaa FlightRecorderCurrent.trc
 
 Näet kaikki nykyisen istunnon tapahtumat. Alla olevassa esimerkissä on korostettu tietyt tapahtumat. Jokaisella ryhmällä on seuraavat:
 
@@ -367,14 +381,14 @@ Muita huomionarvoisia sarakkeita ovat seuraavat:
 * **Duration:** tämä ilmaisee DAX- tai SQL-kyselyn suoritusajan millisekunteina.
 * **Error:** Tämä ilmaisee, aiheuttiko tapahtuma virheen. Jos tapahtuma aiheutti virheen, tapahtuma näytetään punaisena.
 
-Ota huomioon, että yllä olevassa kuvassa joitain vähemmän kiinnostavia sarakkeita on kavennettu, jotta kiinnostavat sarakkeet näkyvät paremmin.
+Yllä olevassa kuvassa joitain vähemmän kiinnostavia sarakkeita on kavennettu, jotta kiinnostavat sarakkeet näkyvät paremmin.
 
 Suosittelemme seuraavaa tapaa mahdollisten suorituskykyongelmien määrittämiseen jäljitystietojen avulla:
 
 * Avaa yksi **Power BI Desktop** -istunto, jotta sinulla ei ole useita työtilakansioita.
 * Suorita **Power BI Desktopissa** toiminnot, joita haluat tutkia. Suorita niiden lisäksi myös muutama muu toiminto. Näin varmistat, että tapahtumat, joita haluat tutkia, kirjataan varmasti jäljitystiedostoon.
 * Avaa **SQL Server Profiler** ja tutki jäljitystiedostoa aiemmin annettujen ohjeiden mukaisesti. Muista, että jäljitystiedosto poistetaan, kun suljet **Power BI Desktopin**. Ota huomioon myös se, että Power BI Desktopin toiminnot eivät näy heti: sulje jäljitystiedosto ja avaa se uudelleen, jotta näet uudet tapahtumat.
-* Pidä yksittäiset istunnot kohtuullisen pieninä (kymmenien sekuntien tapahtumat, ei satojen), jotta jäljitystiedoston lukeminen on helpompaa. Koska jäljitystiedoston koko on rajoitettu, erittäin pitkässä istunnossa et välttämättä näe jäljitystiedostosta istunnon alun tapahtumia.
+* Pidä yksittäiset istunnot kohtuullisen pieninä (10 sekunnin tapahtumat, ei satojen), jotta jäljitystiedoston lukeminen on helpompaa (ja koska jäljitystiedoston kokoa on rajoitettu, erittäin pitkissä istunnoissa et välttämättä näe jäljitystiedostosta istunnon alun tapahtumia).
 
 #### <a name="understanding-the-form-of-query-sent-by-power-bi-desktop"></a>Power BI Desktopin lähettämän kyselyn tulkitseminen
 **Power BI Desktopin** luomissa ja lähettämissä kyselyissä käytetään yleensä alivalintoja jokaiselle viitatulle taulukolle: alivalinta määritetään **kyselyeditorissa** määritetyn kyselyn mukaisesti. Otetaan esimerkiksi seuraavat TPC-DS-taulukot SQL Serverissä:
@@ -396,7 +410,7 @@ Yksi syy sille, miksi Power BI käyttää tätä tapaa, on se, että käytetty S
 ![](media/desktop-directquery-about/directquery-about_12.png)
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
-Tässä artikkelissa kuvataan **DirectQueryn** niitä osa-alueita, jotka ovat yhteisiä kaikille tietolähteille. Tietyillä yksittäisillä lähteillä on kuitenkin tiettyjä omia tärkeitä huomioitavia seikkojaan. Saat lisätietoja eri lähteistä seuraavista ohjeartikkeleista:
+Tässä artikkelissa kuvataan **DirectQueryn** niitä osa-alueita, jotka ovat yhteisiä kaikille tietolähteille. Tietyillä yksittäisillä lähteillä on kuitenkin tiettyjä omia tärkeitä huomioitavia seikkojaan. Saat lisätietoja erityisistä lähteistä seuraavista artikkeleista:
 
 * [DirectQuery ja SAP HANA](desktop-directquery-sap-hana.md)
 * [DirectQuery ja SAP BW](desktop-directquery-sap-bw.md)

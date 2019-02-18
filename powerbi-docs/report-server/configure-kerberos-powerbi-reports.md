@@ -9,19 +9,19 @@ ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 11/01/2017
 ms.author: maghan
-ms.openlocfilehash: b9fcd2dbd664ac4f119c3f00c3d1a173b9251bd3
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 5342f509fdd0705b2752aab3315a4968d610b681
+ms.sourcegitcommit: 80961ace38ff9dac6699f81fcee0f7d88a51edf4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54296183"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56223762"
 ---
 # <a name="configure-kerberos-to-use-power-bi-reports"></a>Kerberoksen määrittäminen Power BI -raporttien käyttöön
 <iframe width="640" height="360" src="https://www.youtube.com/embed/vCH8Fa3OpQ0?showinfo=0" frameborder="0" allowfullscreen></iframe>
 
 Opi määrittämään raporttipalvelimen Kerberos-todennus hajautetun ympäristön Power BI -raporteissa käytettyjä tietolähteitä varten.
 
-Power BI -raporttipalvelin sisältää mahdollisuuden isännöidä Power BI -raportteja. Raporttipalvelin tukee useita eri tietolähteitä. Vaikka tässä artikkelissa keskitytään erityisesti SQL Server Analysis Servicesiin, voit hyödyntää samoja periaatteita muihin tietolähteisiin, kuten SQL Serveriin.
+Power BI -raporttipalvelin sisältää mahdollisuuden isännöidä Power BI -raportteja. Raporttipalvelin tukee useita eri tietolähteitä. Vaikka tässä artikkelissa keskitytään erityisesti SQL Server Analysis Servicesiin, voit käyttää konsepteja ja soveltaa niitä muihin tietolähteisiin, kuten SQL Serveriin.
 
 Voit asentaa Power BI -raporttipalvelimen, SQL Serverin ja Analysis Servicesin yhteen tietokoneeseen, jolloin kaiken pitäisi toimia ilman muita määrityksiä. Tämä on kätevää testiympäristössä. Saatat kohdata virheitä, jos asennat nämä palvelut erillisiin tietokoneisiin eli hajautettuun ympäristöön. Tässä ympäristössä sinun on käytettävä Kerberos-todennusta. Sen toteuttaminen edellyttää määritystä. 
 
@@ -63,7 +63,7 @@ Sinun on etsittävä rsreportserver.config-tiedostosta **Authentication/Authenti
 
 Haluamme varmistaa, että RSWindowsNegotiate on listattu ja että se on ensimmäisenä todennustyyppien luettelossa. Näkymän kuuluu näyttää seuraavankaltaiselta.
 
-```
+```xml
 <AuthenticationTypes>
     <RSWindowsNegotiate/>
     <RSWindowsNTLM/>

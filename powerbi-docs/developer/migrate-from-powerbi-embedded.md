@@ -7,12 +7,12 @@ ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 06/30/2018
-ms.openlocfilehash: 9901d5a60c0fe3127dada9523e659d48fbe7bf8b
-ms.sourcegitcommit: 0abcbc7898463adfa6e50b348747256c4b94e360
+ms.openlocfilehash: 23907633ec92a172a9cdd392ad62b43d367260b3
+ms.sourcegitcommit: 80961ace38ff9dac6699f81fcee0f7d88a51edf4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "55762187"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56223601"
 ---
 # <a name="how-to-migrate-power-bi-workspace-collection-content-to-power-bi-embedded"></a>Power BI -työtilakokoelman sisällön siirtäminen Power BI Embedded -palveluun
 
@@ -71,7 +71,7 @@ Vuokraajassa on oltava seuraavat tilit.
     Sovellusten taustapalvelu tallentaa tämän tilin tunnistetiedot ja käyttää tiliä Azure AD ‑tunnuksen hankkimiseen Power BI REST ‑ohjelmointirajapintoja varten. Tiliä käytetään sovelluksen upotettavan tunnuksen luontiin. Lisäksi tämän tilin on oltava upottamista varten luotujen sovellustyötilojen järjestelmänvalvoja.
 
 > [!NOTE]
-> Tämä tarkoittaa yksinkertaisesti organisaatiosi tavallista käyttäjätiliä, jota käytetään upottamistarkoituksiin.
+> Tämä on vain organisaatiosi tavallinen käyttäjätili, jota käytetään upottamistarkoituksiin.
 
 ## <a name="app-registration-and-permissions"></a>Sovelluksen rekisteröinti ja käyttöoikeudet
 

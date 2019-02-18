@@ -1,6 +1,6 @@
 ---
 title: Käytä merkityksellisiä tietoja löytääksesi eriävät jakaumat (esikatselu)
-description: Saat Power BI Desktopissa helposti merkityksellistä tietoa siitä, mistä löydät kaaviossa näkyvän jakauman
+description: Hanki helposti merkityksellisiä tietoja selvittääksesi, missä kohtaa kaavion jakauma eroaa Power BI Desktopissa
 author: davidiseminger
 manager: kfile
 ms.reviewer: ''
@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 12/06/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 416313f9271950c2f12a554107ab74933c5c31b7
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 82844a1e928d30db12ba5659edcee7b07eaaf7b3
+ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54277752"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56215345"
 ---
 # <a name="use-insights-in-power-bi-desktop-to-find-where-a-distribution-is-different-preview"></a>Käytä Power BI Desktopin merkityksellisiä tietoja löytääksesi eriävät jakaumat (esikatselu)
 
@@ -38,7 +38,7 @@ Tässä esimerkissä automatisoitu analyysi näyttää nopeasti, että *Touring 
 > 
 
 ## <a name="using-insights"></a>Merkityksellisten tietojen käyttö
-Selvitä merkityksellisten tietojen avulla, missä kohtaa kaavioiden jakaumat eroavat napsauttamalla mitä tahansa arvopistettä (tai visualisointia kokonaisuutena) hiiren kakkospainikkeella ja valitse **Analysoi > Etsi eriävä jakauma**.
+Selvitä merkityksellisten tietojen avulla, missä kohtaa kaavioiden jakaumat eroavat napsauttamalla mitä tahansa arvopistettä (tai visualisointia kokonaisuutena) hiiren kakkospainikkeella ja valitsemalla **Analysoi > Etsi eriävä jakauma**.
 
 ![Merkitykselliset tiedot hiiren kakkospainiketta napsauttamalla](media/desktop-insights-find-where-different/find-where-different_03.png)
 
@@ -131,7 +131,7 @@ Seuraavassa luettelossa on esitetty tilanteita, joissa **merkityksellistä tieto
 * Mittayksikkösuodattimet
 * Muu kuin numeeriset mittayksiköt
 * ”Näytä arvo muodossa” -toiminnon käyttö
-* Suodatetut mittayksiköt - Suodatetut mittayksiköt ovat visuaalisen tason laskutoimituksia, joihin liittyy tietty suodatin (esimerkiksi *Ranskan kokonaismyynti*), ja niitä käytetään joissakin merkitykselliset tiedot -toiminnon visualisoinneissa
+* Suodatetut mittayksiköt - Suodatetut mittayksiköt ovat visuaalisen tason laskutoimituksia, joihin liittyy tietty suodatin (esimerkiksi *Ranskan kokonaismyynti*), ja niitä käytetään joissakin merkitykselliset tiedot -toiminnon avulla luoduissa visualisoinneissa
 
 Lisäksi seuraavia mallityyppejä ja tietolähteitä ei tueta tällä hetkellä merkityksellisten tietojen osalta:
 

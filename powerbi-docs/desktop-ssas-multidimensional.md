@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 8668e477a2778bfdeec8260a31ca63af9d4124a6
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: b68cbafd3572100d5983eb8b17f07464d39baf3f
+ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54287688"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56217064"
 ---
 # <a name="connect-to-ssas-multidimensional-models-in-power-bi-desktop"></a>Yhteyden muodostaminen SSAS-monidimensiomalleihin Power BI Desktopissa
 Power BI Desktopin kautta on mahdollista käyttää **SSAS-monidimensiomalleja**, jotka tunnetaan myös lyhenteellä **SSAS MD**.
@@ -80,7 +80,7 @@ Monidimensiomallit tukevat dimensio- ja solutason suojausta *roolien* kautta. Ku
 
 * Jotta Power BI Desktopin SSAS MD ‑liitin toimisi oikein, palvelimissa on oltava käytössä Analysis Servicesistä versio SQL Server 2012 SP1 CU4 tai uudempi versio.
 * *Toiminnot* ja *Nimetyt joukot* eivät näy Power BI:ssä, mutta voit silti muodostaa yhteyden kuutioihin, jotka sisältävät myös *toimintoja* ja *nimettyjä joukkoja* ja luoda visualisointeja ja raportteja.
-* Voit kohdata ongelman, missä Power BI näyttää SSAS-mallin metatiedot, mutta et pysty hakemaan mallista tietoja. Tämä saattaa tapahtua, jos järjestelmään on asennettuna 32-bittinen MSOLAP-palvelun versio, eikä 64-bittinen versio. 64-bittisen version asentaminen saattaa ratkaista ongelman.
+* Saatat kohdata ongelman, kun Power BI näyttää SSAS-mallin metatiedot, mutta et pysty noutamaan tietoja mallista. Tämä saattaa tapahtua, jos järjestelmään on asennettuna 32-bittinen MSOLAP-palvelun versio, eikä 64-bittinen versio. 64-bittisen version asentaminen saattaa ratkaista ongelman.
 * Et voi luoda raporttitason mittayksiköitä, kun luot raporttia, joka on yhteydessä käytössä olevaan SSAS-monidimensiomalliin. Käytettävissä ovat ainoastaan MD-mallissa määritetyt mittayksiköt.
 
 ## <a name="supported-features-of-ssas-md-in-power-bi-desktop"></a>Power BI Desktopin tukemat SSAS MD:n ominaisuudet

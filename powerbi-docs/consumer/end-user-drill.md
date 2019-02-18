@@ -12,12 +12,12 @@ ms.topic: conceptual
 ms.date: 12/06/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: d935b044e5cbe1a2c84ce5749c3a0b58c528bab0
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: bc5033df204fafcc7316d6708d7b39429e8e9cba
+ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54282352"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56216581"
 ---
 # <a name="drill-mode-in-a-visualization-in-power-bi"></a>Visualisointiin porautumistila Power BI:ssä
 
@@ -112,9 +112,9 @@ Tässä menetelmässä käytetään Poraudu alaspäin -kuvaketta, joka näkyy it
 
 2. Valitse *lehti* kohteelle **TN**. Puukartassa näkyvät nyt kaikki Tennesseen kaupungit, joissa on myymälä. 
 
-    ![puukartassa näkyvät vain Tennesseen tiedot](media/end-user-drill/power-bi-drill-down-one1.png)
+    ![puukartta näyttää vain Tennesseetä koskevat tiedot](media/end-user-drill/power-bi-drill-down-one1.png)
 
-2. Tässä vaiheessa voit jatkaa porautumista alaspäin Tennessee-näkymässä, tai voit porautua tiettyyn Tennesseen kaupunkiin tai laajentaa näkymää (katso alta **Kaikkien kenttien laajentaminen kerralla**). Poraudutaan jälleen alaspäin yksi kenttä kerrallaan.  Valitse **Knoxville, TN**. Puukartassa näkyy nyt Knoxvillen myymälän postinumero. 
+2. Tässä vaiheessa voit jatkaa porautumista alaspäin Tennesseelle tai porautua alaspäin tiettyyn Tennesseen kaupunkiin tai laajentaa sen sijaan näkymää (katso alta **Kaikkien kenttien laajentaminen kerralla**). Poraudutaan jälleen alaspäin yksi kenttä kerrallaan.  Valitse **Knoxville, TN**. Puukartassa näkyy nyt Knoxvillen myymälän postinumero. 
 
    ![puukartassa näkyy 37919](media/end-user-drill/power-bi-drill-down-one2.png)
 
@@ -129,16 +129,16 @@ Puukartta, jossa näkyy vain postinumero, ei ole kovin havainnollinen.  Laajenne
 
 2. Jos haluat nähdä kaikki neljä Tennesseen hierarkiatasoa, valitse Poraudu ylöspäin -nuoli, kunnes saavutat puukartan toisen tason, **Yksiköt yhteensä tänä vuonna alueen ja kaupungin mukaan**. 
 
-    ![puukartassa näkyvät kaikki Tennesseen tiedot](media/end-user-drill/power-bi-drill-down-one1.png)
+    ![puukartta, joka näyttää kaikki Tennesseen tiedot](media/end-user-drill/power-bi-drill-down-one1.png)
 
 
 3. Varmista, että porautuminen on edelleen käytössä ![porautuminen alaspäin käytössä](./media/end-user-drill/power-bi-drill-icon2.png) ja valitse *Laajenna alaspäin* -kuvake ![laajenna alaspäin -kuvake](./media/end-user-drill/power-bi-drill-icon6.png). Puukartassa näkyy nyt joitakin lisätietoja. Pelkän kaupungin ja osavaltion sijasta siinä näkyy myös postinumero. 
 
     ![kaksinkertainen porautumiskuvake](./media/end-user-drill/power-bi-expand-one3.png)
 
-4. Valitse *laajenna alaspäin* -kuvake vielä kerran, niin näet puukartassa Tennesseen kaikki neljä hierarkiatasoa. Osoittamalla lehteä näet vielä lisää tietoja.
+4. Valitse *Laajenna alaspäin* -kuvake vielä kertaalleen, jotta näet puukartassa Tennesseen tietojen kaikki neljä hierarkiatasoa. Osoittamalla lehteä näet vielä lisää tietoja.
 
-   ![puukartta Tennesseen tiedoilla](./media/end-user-drill/power-bi-expand-all.png)
+   ![puukartta, jossa näytetään Tennesseen tiedot](./media/end-user-drill/power-bi-expand-all.png)
 
 ## <a name="drilling-filters-other-visuals"></a>Poraaminen suodattaa muut visualisoinnit
 Kun työskentelet Poraudu-tilassa, päätät itse, millä tavoin alaspäin porautuminen ja laajentaminen vaikuttaa sivun muihin visualisointeihin. 

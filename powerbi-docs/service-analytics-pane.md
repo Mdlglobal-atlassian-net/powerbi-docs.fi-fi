@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/14/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 842d29978fa6a4a714b42b1665112661e0704357
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: ce99539e1804746970eae20dc9396f0f0536afea
+ms.sourcegitcommit: 80961ace38ff9dac6699f81fcee0f7d88a51edf4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54293737"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56223693"
 ---
 # <a name="create-dynamic-reference-lines-for-visuals-in-the-power-bi-service"></a>Dynaamisten viiteviivojen luominen visualisointeihin Power BI -palvelussa
 
@@ -48,13 +48,13 @@ Voit tarkastella tietylle visualisoinnille käytettävissä olevia dynaamisia vi
    
    ![lisää keskiarvon viiva](media/service-analytics-pane/power-bi-add.png)
 
-3. Jos haluat luoda uuden rivin, valitse **+ Lisää** ja päätä mittayksikkö, jota käytetään rivin luomisessa.  Avattava **Mittayksikkö**-luettelo täytetään automaattisesti valitun visualisoinnin käytettävissä olevilla tiedoilla. Käytetään määrettä **Avoimien myymälöiden lukumäärä**.
+3. Jos haluat luoda uuden viivan, valitse **+ Lisää** ja päätä mittayksikkö, jota käytetään viivan luomisessa.  Avattava **Mittayksikkö**-luettelo täytetään automaattisesti valitun visualisoinnin käytettävissä olevilla tiedoilla. Käytetään määrettä **Avoimien myymälöiden lukumäärä**.
 
-5. Viivalle on valittavissa monenlaisia asetuksia, kuten väri, läpinäkyvyys, tyyli ja sijainti (suhteessa visualisoinnin tietoelementteihin). Jos haluat antaa viivalle otsikon, anna sille otsikko ja siirrä sitten **Arvopisteen otsikko** -liukusäädin asentoon **Käytössä**.  Tässä tapauksessa annamme riville otsikon *Avoimien myymälöiden keskim. määrä* ja muutamme muutamia muita asetuksia, kuten jäljempänä esitetään.
+5. Voit valita viivalle kaikenlaisia vaihtoehtoja, kuten värin, läpinäkyvyyden, tyylin ja sijainnin (liittyen visualisoinnin tietoelementteihin). Jos haluat antaa viivalle otsikon, anna sille otsikko ja siirrä sitten **Arvopisteen otsikko** -liukusäädin asentoon **Käytössä**.  Tässä tapauksessa annamme viivalle otsikon *Avoimien myymälöiden keskim. määrä* ja muutamme muutamia muita asetuksia, kuten jäljempänä esitetään.
    
    ![mukautettu keskiarvon viivan analysointi](media/service-analytics-pane/power-bi-average-line2.png)
 
-1. Huomioi luku, joka näkyy **Keskiarvon viiva** -kohdan vieressä **Analytiikka**-ruudussa. Se osoittaa, kuinka monta dynaamista viivaa visualisoinnissa on sillä hetkellä ja minkä tyyppisiä ne ovat. Jos lisäämme **yhtenäisen viivan** myymälämäärän tavoitteelle 9, huomaa, että **Analytiikka**-ruudussa näkyy, että tässä visualisoinnissa on nyt käytössä myös **Yhtenäinen viiva** -viiteviiva.
+1. Huomioi luku, joka näkyy **Keskiarvon viiva** -kohdan vieressä **Analytiikka**-ruudussa. Se kertoo sinulle, kuinka monta dynaamista viivaa sinulla on tällä hetkellä visualisoinnissa ja minkä tyyppisiä ne ovat. Jos lisäämme **yhtenäisen viivan** myymälämäärän tavoitteelle 9, huomaa, että **Analytiikka**-ruudussa näkyy, että tässä visualisoinnissa on nyt käytössä myös **Yhtenäinen viiva** -viiteviiva.
    
    ![](media/service-analytics-pane/power-bi-reference-lines.png)
    

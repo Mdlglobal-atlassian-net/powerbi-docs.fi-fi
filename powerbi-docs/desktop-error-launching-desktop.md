@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: f527fa17ab242f6835ca99a3ff3ef3e2525a001f
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 4b859611df09d5c374ae7483a1ef406b432389ba
+ms.sourcegitcommit: 80961ace38ff9dac6699f81fcee0f7d88a51edf4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54277131"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56223716"
 ---
 # <a name="resolve-issues-when-power-bi-desktop-will-not-launch"></a>Ratkaise ongelmat, kun Power BI Desktop ei käynnisty
 **Power BI Desktopissa** on mahdollista, että jos käyttäjällä on asennettuna ja käytössä aiempia versioita **Power BI:n paikallisesta tietoyhdyskäytävästä**, häneltä estetään Power BI Desktopin käynnistäminen, koska Power BI:n paikallisella yhdyskäytävällä on hallinnollisia käytäntöjä, joiden mukaan se rajoittaa nimettyjä putkia paikallisella koneella. 
@@ -32,7 +32,7 @@ Jos et enää tarvitse Power BI:n paikallista tietoyhdyskäytävää, voit poist
 ### <a name="resolution-3-run-power-bi-desktop-with-administrator-privilege"></a>Ratkaisu 3: Suorita Power BI Desktop järjestelmänvalvojan oikeuksilla
 Voit vaihtoehtoisesti käynnistää Power BI Desktopin järjestelmänvalvojana. On silti suositeltavaa, että asennat uusimman version Power BI:n paikallisesta tietoyhdyskäytävästä tässä artikkelissa aiemmin annettujen ohjeiden mukaisesti.
 
-On tärkeää huomata, että Power BI Desktop on suunniteltu moniajoarkkitehtuuriksi ja useat prosessit käyttävät kommunikoidessaan Windowsin nimettyjen putkia. Muut prosessit saattavat häiritä näiden nimettyjen putkien toimintaa. Yleisin syy tällaisille häiriöille on suojaus, mukaan lukien tilanteet, joissa virustentorjuntaohjelmisto tai palomuurit saattavat estää putkien toimintaa tai niiden liikennettä ohjataan tiettyyn porttiin. Power BI Desktopin käynnistäminen järjestelmänvalvojan oikeuksilla saattaa ratkaista ongelman. Jos käynnistäminen järjestelmänvalvojan oikeuksilla ei ole mahdollista, ota yhteys järjestelmänvalvojaan, selvittääksesi, mitkä suojaussäännöt estävät nimettyjä putkia kommunikoimasta oikein, ja lisää Power BI Desktop ja sen asianmukaiseen aliprosessit sallittujen prosessien listaan.
+On tärkeää huomata, että Power BI Desktop on suunniteltu moniajoarkkitehtuuriksi ja useat prosessit käyttävät kommunikoidessaan Windowsin nimettyjen putkia. Muut prosessit saattavat häiritä näiden nimettyjen putkien toimintaa. Yleisin syy tällaisille häiriöille on suojaus, mukaan lukien tilanteet, joissa virustentorjuntaohjelmisto tai palomuurit saattavat estää putkien toimintaa tai niiden liikennettä ohjataan tiettyyn porttiin. Power BI Desktopin käynnistäminen järjestelmänvalvojan oikeuksilla saattaa ratkaista ongelman. Jos käynnistäminen ei onnistu järjestelmänvalvojan oikeuksilla, ota yhteyttä järjestelmänvalvojaan sen määrittämiseksi, mitkä suojaussäännöt estävät nimettyjen putkien asianmukaisen viestinnän, ja lisää Power BI Desktop ja sen vastaavat aliprosessit sallittujen luetteloon.
 
 ## <a name="resolve-issues-when-connecting-to-sql-server"></a>Ratkaise ongelmat yhdistettäessä SQL-palvelimeen
 Jos kohtaat SQL Server-tietokantaan yhdistettäessä seuraavan kaltaisen virhesanoman, voit usein korjata ongelman käynnistämällä **Power BI Desktopin** järjestelmänvalvojana ja yhdistämällä tämän jälkeen SQL-palvelimeen:

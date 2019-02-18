@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 10/01/2018
-ms.openlocfilehash: 70883adbc224f568e8a7a3a2843fb419d1c15308
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 548f84c38705e269998fd3c124b4f93d3c83d2ef
+ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54278971"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56215454"
 ---
 # <a name="power-bi-permissions"></a>Power BI -käyttöoikeudet
 
@@ -37,7 +37,7 @@ Power BI -käyttöoikeudet antavat sovellukselle mahdollisuuden suorittaa tietty
 | Kaikkien kapasiteettien luku- ja kirjoitusoikeus |Sovelluksella on luku- ja kirjoitusoikeus kaikkiin kirjautuneen käyttäjän kapasiteetteihin sekä kapasiteetteihin, joihin käyttäjällä on käyttöoikeus. Tämä ei anna oikeuksia luoda uutta kapasiteettia. |Capacities.ReadWrite.All |
 | Kaikkien kapasiteettien lukuoikeus |Sovelluksella on luku- ja kirjoitusoikeus kaikkiin kirjautuneen käyttäjän kapasiteetteihin sekä kapasiteetteihin, joihin käyttäjällä on käyttöoikeus. Tämä ei anna oikeuksia luoda uutta kapasiteettia. |Capacities.Read.All |
 | Kaiken vuokraajan sisällön luku- ja kirjoitusoikeus |Sovelluksella on luku- ja kirjoitusoikeus kaikkiin Power BI:n artefakteihin, kuten ryhmiin, raportteihin, raporttinäkymiin ja tietojoukkoihin. Edellyttää, että kirjautunut käyttäjä on Power BI -palvelun järjestelmänvalvoja. |Tenant.ReadWrite.All |
-| Kaiken vuokraajan sisällön lukuoikeus |Sovelluksella on lukuoikeus kaikkiin Power BI:n artefakteihin, kuten ryhmiin, raportteihin, raporttinäkymiin ja tietojoukkoihin. Edellyttää, että kirjautunut käyttäjä on Power BI -palvelun järjestelmänvalvoja. |Tenant.Read.All |
+| Kaiken vuokraajan sisällön lukuoikeus |Sovellus voi tarkastella kaikkia artefakteja, kuten ryhmiä, raportteja, koontinäyttöjä ja tietojoukkoja Power BI:ssä. Edellyttää, että kirjautunut käyttäjä on Power BI -palvelun järjestelmänvalvoja. |Tenant.Read.All |
 
 Sovellus voi pyytää käyttöoikeuksia, kun se yrittää ensimmäistä kertaa kirjautua sisään käyttäjän sivulle, välittämällä pyydetyt käyttöoikeudet kutsun vaikutusalueparametrissa. Jos käyttöoikeudet myönnetään, sovellukselle palautetaan käyttöoikeustietue, jota voidaan käyttää tulevissa ohjelmointirajapintojen kutsuissa. Käyttöoikeus on vain tietyn sovelluksen käytössä.
 

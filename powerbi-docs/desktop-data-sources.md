@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 12/10/2018
+ms.date: 02/13/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: f5fc52df86faa69683fa1e76f8893fb1d1a09ab9
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: da269e3bb025e8d53ee3bb7707f3bb78d592e011
+ms.sourcegitcommit: d010b10bc14097a1948daeffbc91b864bd91f7c8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54281156"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56225910"
 ---
 # <a name="data-sources-in-power-bi-desktop"></a>Power BI Desktopin tietolähteet
 Power BI Desktopin avulla voit yhdistää tietoja monista eri lähteistä. Täydellinen luettelo käytettävissä olevista tietolähteistä on tämän sivun alareunassa.
@@ -77,11 +77,14 @@ Seuraavassa kuvassa näkyy **Tiedosto**-luokan **Nouda tiedot** -ikkuna.
 * Amazon Redshift
 * Impala
 * Google BigQuery
+* Vertica
 * Snowflake
 * Essbase (beeta)
-* BI-liitin
+* Dremio
 * Exasol
-* Dremio (beeta)
+* MarkLogic (beeta)
+* AtScale-kuutiot (beeta)
+* BI-liitin
 * Jethro (beeta)
 * Kyligence Enterprise (beeta)
 
@@ -136,8 +139,6 @@ Seuraavassa kuvassa näkyy **Azure**-luokan **Nouda tiedot** -ikkuna.
 * Google Analytics
 * Adobe Analytics
 * appFigures (beeta)
-* comScore Digital Analytix (beeta)
-* Dynamics 365 for Customer Insights (beeta)
 * Data.World – nouda tietojoukko (beeta)
 * Facebook
 * GitHub (beeta)
@@ -157,6 +158,8 @@ Seuraavassa kuvassa näkyy **Azure**-luokan **Nouda tiedot** -ikkuna.
 * Webtrends (beeta)
 * Zendesk (beeta)
 * TeamDesk (beeta)
+* Emigo-tietolähde (beeta)
+* Microsoft Graph Security (beeta)
 
 Seuraavassa kuvassa näkyy **Online-palvelut**-luokan **Nouda tiedot** -ikkuna.
 
@@ -164,7 +167,6 @@ Seuraavassa kuvassa näkyy **Online-palvelut**-luokan **Nouda tiedot** -ikkuna.
 
 **Muut**-luokka tarjoaa seuraavat tietoyhteydet:
 
-* Vertica
 * Verkko
 * SharePoint List
 * OData-syöte
@@ -176,8 +178,12 @@ Seuraavassa kuvassa näkyy **Online-palvelut**-luokan **Nouda tiedot** -ikkuna.
 * Python-komentosarja
 * ODBC
 * OLE DB
+* Työvoiman dimensiot (beeta)
 * Denado
 * Paxata (beeta)
+* SurveyMonkey (beeta)
+* QubolePresto (beeta)
+* Quick Base (beeta)
 * Tyhjä kysely
 
 Seuraavassa kuvassa näkyy **Muut**-luokan **Nouda tiedot** -ikkuna.
@@ -190,7 +196,7 @@ Seuraavassa kuvassa näkyy **Muut**-luokan **Nouda tiedot** -ikkuna.
 ## <a name="connecting-to-a-data-source"></a>Yhteyden muodostaminen tietolähteeseen
 Jos haluat muodostaa yhteyden tietolähteeseen, valitse tietolähde **Nouda tiedot** -ikkunassa ja valitse **Muodosta yhteys**. Seuraavassa kuvassa **Muut**-tietoyhteysluokasta on valittu **WWW**.
 
-![Yhdistä verkkoon](media/desktop-data-sources/data-sources_08a.png)
+![Yhdistä verkkoon](media/desktop-data-sources/data-sources_08.png)
 
 Näyttöön tulee tietoyhteyden mukainen yhteysikkuna. Jos tunnistetietoja vaaditaan, sinua pyydetään antamaan ne. Seuraavassa kuvassa näytetään URL-osoitteen kirjoittaminen WWW-tietolähteeseen yhdistämistä varten.
 

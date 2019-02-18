@@ -11,15 +11,15 @@ ms.topic: conceptual
 ms.date: 05/02/2018
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: ad044a5b3f6ddcb4b8e1dbffa1bb2a7dac01eb31
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 273cfbd86573a5eceaf9705ac19b0f7928b59176
+ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54284974"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56214994"
 ---
 # <a name="pin-a-tile-to-a-power-bi-dashboard-from-excel"></a>Ruudun kiinnittäminen Power BI -raporttinäkymään Excelistä
-Ennen kuin voit kiinnittää ruudun Excel-työkirjasta, yhdistät kyseisen työkirjan Power BI -palveluun (app.powerbi.com). Työkirjan yhdistäminen tuo linkitetyn vain luku -version kyseisestä työkirjasta Power BI -palveluun ja mahdollistaa alueiden kiinnittämisen raporttinäkymiin. Voit kiinnittää jopa kokonaisen laskentataulukon raporttinäkymään.  
+Ennen kuin voit kiinnittää ruudun Excel-työkirjasta, yhdistät kyseisen työkirjan Power BI -palveluun (app.powerbi.com). Työkirjan yhdistäminen tuo lähinnä tämän työkirjan linkitetyn vain luku -version Power BI -palveluun, ja voit näin kiinnittää alueita raporttinäkymiin. Voit kiinnittää jopa kokonaisen laskentataulukon raporttinäkymään.  
 Jos työkirja on jaettu kanssasi, voit tarkastella omistajan kiinnittämiä ruutuja, mutta et voi luoda raporttinäkymän ruutuja itse. 
 
 Lue lisää siitä, miten Excel ja Power BI toimivat yhdessä, artikkelista [Tietojen noutaminen Excel-työkirjatiedostoista](http://go.microsoft.com/fwlink/?LinkID=521962).

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 12/10/2018
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 763b331fd0a5ff47263ea54d17f6cb17516de79d
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 1c503492da52592730b82857725b388ca440f2bd
+ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54296773"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56215580"
 ---
 # <a name="dataflows-and-azure-data-lake-integration-preview"></a>Tietovuot ja Azure Data Lake -integrointi (esikatselu)
 
@@ -65,7 +65,7 @@ CDM-kansioiden luomiseen ja hallitsemiseen Power BI -tiedostojärjestelmässä t
 
 CDM-kansioiden jakaminen tietojen kuluttajille, kuten käyttäjille tai palveluille, joiden on päästävä lukemaan tietoja, on entistä yksinkertaisempaa Active Directory OAuth Bearer -tunnusten ja POSIX ACL -käyttöoikeusluetteloiden ansiosta. Tällöin järjestelmänvalvojat voivat valvoa, ketkä käyttävät CDM-kansiota. Järjestelmänvalvojan tarvitsee vain myöntää halutulle Active Directory -objektille (kuten käyttäjäryhmälle tai palvelulle) CDM-kansion käyttöoikeus. Suosittelemme, että CDM-kansion kaikki käyttöoikeudet määritetään vain luku -tasolle tietojen tuottajaa lukuun ottamatta. Tämä toimintatapa varmistaa tuottajan luomien tietojen eheyden.
 
-Jotta CDM-kansioita voidaan lisätä Power BI:hin, CDM-kansion lisäävällä käyttäjällä tulee olla *lukuoikeuksien* käyttöoikeusluettelot sekä itse CDM-kansiossa että kaikissa sen sisältämissä tiedostoissa tai kansioissa. Lisäksi *suorituksen* käyttöoikeusluettelot on oltava sekä CDM-kansiossa ja sen sisältämissä kansioissa. Suosittelemme, että luet lisätietoja sekä [tiedostojen ja hakemiston käyttöoikeuksien valvontaluetteloita](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-access-control#access-control-lists-on-files-and-directories) että [Azure Data Lake Storage Gen2 -järjestelmän parhaita käytäntöjä](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-best-practices) käsittelevistä artikkeleista.
+Jotta CDM-kansioita voidaan lisätä Power BI:hin, CDM-kansion lisäävällä käyttäjällä tulee olla *lukuoikeuksien* käyttöoikeusluettelot sekä itse CDM-kansiossa että kaikissa sen sisältämissä tiedostoissa tai kansioissa. Lisäksi *suorituksen* käyttöoikeusluettelot on oltava sekä CDM-kansiossa ja sen sisältämissä kansioissa. Suosittelemme, että katsot lisätietoja artikkeleista [Tiedostojen ja hakemistojen käyttöoikeuksien hallintaluettelot](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-access-control#access-control-lists-on-files-and-directories) ja [Azure Data Lake Storage Gen2:n parhaat käytännöt](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-best-practices).
 
 
 ### <a name="alternative-forms-of-authorization"></a>Vaihtoehtoiset käyttöoikeuksien myöntämistavat

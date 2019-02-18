@@ -10,15 +10,15 @@ ms.topic: conceptual
 ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: a07f266ccdc0b02cd6a18f84b48b5e2b3564b642
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 7b34bd31592f59048899ccf04385d7b302fd3204
+ms.sourcegitcommit: 80961ace38ff9dac6699f81fcee0f7d88a51edf4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54279005"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56223279"
 ---
 # <a name="troubleshooting-sign-in-for-power-bi-desktop"></a>Power BI Desktopin kirjautumisongelmien vianmääritys
-Saatat **Power BI Desktopiin** kirjautuessasi kohdata ongelmia. Sisäänkirjautumisongelmiin on kaksi yleistä syytä: **Välityspalvelimen todennusvirheet** ja **URL-osoitteiden virheet uudelleenohjattaessa muuhun kuin HTTPS-protokollaan**. 
+Voit toisinaan kohdata virheitä, kun yrität kirjautua sisään **Power BI Desktopiin**. Sisäänkirjautumisongelmiin on kaksi yleistä syytä: **Välityspalvelimen todennusvirheet** ja **URL-osoitteiden virheet uudelleenohjattaessa muuhun kuin HTTPS-protokollaan**. 
 
 Ensimmäinen vaihe voit selvittää, mistä kirjautumisongelma johtuu. Ota yhteyttä järjestelmänvalvojaan ja anna diagnostiikkatiedot, jotta ongelman syy voidaan määrittää. Jäljittämällä kirjautumisongelmiin liittyvien ongelmien syyt järjestelmänvalvojat voivat määrittää, mitkä seuraavista virheistä koskevat sinua. 
 

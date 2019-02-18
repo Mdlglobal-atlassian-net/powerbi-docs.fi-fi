@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/16/2018
+ms.date: 2/9/2019
 ms.author: nikhilga
 LocalizationGroup: Get started
-ms.openlocfilehash: d811ff6c68155d354df1785ae722829e1187543c
-ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
+ms.openlocfilehash: 5a9fa6b5e854fc51487f0a0b4feaef8650b94057
+ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55431081"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56216857"
 ---
 ---
 # <a name="whats-new-in-the-power-bi-service"></a>Power BI -palvelun uudet toiminnot ja ominaisuudet
@@ -31,10 +31,41 @@ Saat lisätietoja uusista toiminnoista ja ominaisuuksista myös YouTube-kanavist
 * [Microsoft Power BI (YouTube)](https://www.youtube.com/channel/UCy--PYvwBwAeuYaR8JLmrfg)
 * [Kaveri kuutiossa (YouTube)](https://www.youtube.com/channel/UCFp1vaKzpfvoGai0vE5VJ0w)
 
-## <a name="september-2018"></a>Syyskuu 2018
-* [Koontinäytön kommentointi](https://powerbi.microsoft.com/blog/announcing-dashboard-comments-in-power-bi/) Power BI -palvelussa.
 
-## <a name="previous-months-2018"></a>Edelliset kuukaudet (2018)
+## <a name="february-2019"></a>Helmikuu 2019
+* Kuormitukset ja aktiivisten tietojoukkojen kokotiedot [kapasiteetin valvontasovelluksessa](https://powerbi.microsoft.com/blog/new-monitoring-capabilities-for-power-bi-premium-capacities/).
+* Vie PDF-tiedostoon ja pyynnöstä hankittuihin sähköpostitilauksiin (service-report-subscribe.md).
+* Joukkotoiminnot hallintaportaalissa.
+
+## <a name="previous-months-2019"></a>Edelliset kuukaudet (2019)
+### <a name="january-2019"></a>Tammikuu 2019
+* [Turvallisten Power BI -raporttien upottaminen](service-embed-secure.md) sisäisiin portaaleihin tai verkkosivustoihin.
+* Päivittää [tietovoiden](service-dataflows-overview.md) editoriin uudet liittimet sekä alkuperäisten SQL-kyselyjen ja Power Query Online -muunnosten tuen.
+* [Henkilökohtaiset kirjanmerkit](https://powerbi.microsoft.com/en-us/blog/announcing-personal-bookmarks-in-the-power-bi-service/) Power BI -palvelussa.
+* Sähköpostitilausten aikaperusteinen ajoitus.
+
+## <a name="2018"></a>2018
+### <a name="december-2018"></a>Joulukuu 2018
+* Tekoälyavusteiset [suositellut sovellukset](https://powerbi.microsoft.com/en-us/blog/announcing-ai-powered-app-recommendations-getting-the-right-insights-to-the-right-people/) Power BI Homessa.
+* [Työtilan hallinta](https://powerbi.microsoft.com/en-us/blog/workspace-management-in-the-admin-portal/) hallintaportaalissa.
+* Power BI -tietovoiden esikatselu ja Azure Data Lake Storage Gen2 -integrointi [tietovoihin](service-dataflows-overview.md).
+* Power BI -ratkaisumalleista tuli avoin lähdekoodi.
+
+### <a name="november-2018"></a>Marraskuu 2018
+* Power BI -tietojen valmistelu saatavissa [tietovoiden](service-dataflows-overview.md) julkisessa esikatselussa.
+* [Sivutettujen raporttien](paginated-reports-report-builder-power-bi.md) julkinen esikatselu Power BI Premiumissa.
+* Tietojen koko ja tietojoukkojen lukumäärä muistissa [kapasiteetin valvontasovelluksessa](https://powerbi.microsoft.com/blog/new-monitoring-capabilities-for-power-bi-premium-capacities/).
+
+### <a name="october-2018"></a>Lokakuu 2018
+* Koosteet [desktop aggregations.md] Power BI -palvelussa.
+* Power BI laajennettu kolmelle uudelle alueelle: Intian keskiosa, Itä-Australia ja Yhdysvaltojen keskiosa (Iowa). 
+* Vie PowerPointiin -toiminto yleisesti saatavissa.
+
+### <a name="september-2018"></a>Syyskuu 2018
+* [Koontinäytön kommentointi](https://powerbi.microsoft.com/blog/announcing-dashboard-comments-in-power-bi/) Power BI -palvelussa.
+* [Power BI Homen ja yleishaun](https://powerbi.microsoft.com/en-us/blog/introducing-power-bi-home-and-global-search/) julkinen esikatselu.
+* [Kyselyn seuranta](https://powerbi.microsoft.com/en-us/blog/query-metrics-available-in-power-bi-premium-capacity-metrics-app/) [kapasiteetin valvontasovelluksessa](https://powerbi.microsoft.com/blog/new-monitoring-capabilities-for-power-bi-premium-capacities/).
+
 ### <a name="august-2018"></a>Elokuu 2018
 * [Kapasiteetin valvontasovellus](https://powerbi.microsoft.com/blog/new-monitoring-capabilities-for-power-bi-premium-capacities/) Power BI Premiumissa.
 * Power BI [-raportin URL-suodattimen](service-url-filters.md) parannukset
@@ -78,7 +109,7 @@ Saat lisätietoja uusista toiminnoista ja ominaisuuksista myös YouTube-kanavist
 *   Ajoitetun päivityksen tuki Azure Analysis Servicesille (AAS).
 
 ## <a name="previous-months-2017"></a>Edelliset kuukaudet (2017)
-## <a name="october-and-november-2017"></a>Lokakuu ja marraskuu 2017
+### <a name="october-and-november-2017"></a>Lokakuu ja marraskuu 2017
 *   Valikoiva sisällön julkaisu [Power BI -sovellusten](service-create-distribute-apps.md) avulla.
 *   Jakaminen ulkoisille käyttäjille [Azure Active Directory B2B:n](https://powerbi.microsoft.com/blog/power-bi-expands-access-to-intelligence-for-external-guest-users/preview/) avulla.
 * Tekoälyavusteiset sovellussuositukset.
@@ -86,7 +117,7 @@ Saat lisätietoja uusista toiminnoista ja ominaisuuksista myös YouTube-kanavist
 * Sähköpostitilausten tuki sovelluksille. 
 * Tarkka hallintatoiminto [verkkoon julkaisemista](https://docs.microsoft.com/power-bi/service-admin-portal#export-and-sharing-settings) varten.
 
-## <a name="september-2017"></a>Syyskuu 2017
+### <a name="september-2017"></a>Syyskuu 2017
 * Jaa Premium-kapasiteetissa koontinäytöt käyttäjille, joilla ei ole Power BI Pro -käyttöoikeutta.
 * Varaa kapasiteetteja yrityksesi tarpeiden mukaan näennäisytimen ryhmittämisen avulla.
 * Suurenna tai pienennä kapasiteetteja hetkessä yhdellä napsautuksella.

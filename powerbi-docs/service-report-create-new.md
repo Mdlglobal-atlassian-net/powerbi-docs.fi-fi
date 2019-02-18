@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/24/2018
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: 31a7221d3b284e6342b192384f92616a52e12631
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: b46896a06c9d7ed66e643aa218ec7dbd3da8c9ee
+ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54280244"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56216949"
 ---
 # <a name="create-a-new-report-in-power-bi-service-by-importing-a-dataset"></a>Uuden raportin luominen Power BI -palvelussa tuomalla tietojoukko
 Olet lukenut [Power BI -raportit](consumer/end-user-reports.md) ja haluat nyt luoda omasi. Voit luoda raportin monella eri tavalla, ja aloitamme tämän artikkelin luomalla hyvin perustasoisen raportin Excel-tietojoukosta käyttämällä Power BI -palvelua. Kun ymmärrät raportin luomisen perusteet, **Seuraavat vaiheet** näytön alareunassa vievät sinut monimutkaisempia raportteja koskevaan aiheisiin.  
@@ -56,7 +56,7 @@ Nyt kun tietojoukkomme on tuotu, aloitetaan vastaamaan kysymyksiin.  Markkinoint
 1. Valitse Kentät-ruudussa **Myynti**  >  **Tämän vuoden myynti** > **Arvo**.
    
     ![pylväskaavio raporttieditorissa](media/service-report-create-new/power-bi-report-step1.png)
-2. Visualisoinnin muuntaminen mittariksi valitsemalla ![Mittarin malli](media/service-report-create-new/powerbi-gauge-icon.png) mittarin kuvakkeesta **Visualisoinnit**-ruudussa.
+2. Voit muuntaa visualisoinnin mittariksi valitsemalla mittarin mallin ![mittarin kuvakkeesta](media/service-report-create-new/powerbi-gauge-icon.png) **Visualisoinnit**-ruudussa.
    
     ![Mittarin visualisointi raporttieditorissa](media/service-report-create-new/power-bi-report-step2.png)
 3. Vedä **Myynti** > **Tämän vuoden myynti** > **Tavoite** kohtaan **Tavoitearvo**. Näyttää siltä, että olemme hyvin lähellä tavoitteitamme.
@@ -73,7 +73,7 @@ CMO haluaa esittää meille joitakin lisäkysymyksiä vastattavaksi. Hän haluaa
 2. Poista mittarin valinta. Valitse Kentät-ruudussa **Myynti** > **Tämän vuoden myynti** > **Arvo** ja valitse **Myynti**  >  **Viime vuoden myynti**.
    
     ![raporttieditori ja mittari sekä palkkikaavio](media/service-report-create-new/power-bi-report-step4.png)
-3. Visualisoinnin muuntaminen aluekaavioksi valitsemalla Aluekaavion malli ![mittarin kuvakkeesta](media/service-report-create-new/power-bi-areachart-icon.png) **Visualisoinnit**-ruudussa.
+3. Voit muuntaa visualisoinnin aluekaavioksi valitsemalla Aluekaavion malli ![mittarin kuvakkeesta](media/service-report-create-new/power-bi-areachart-icon.png) **Visualisoinnit**-ruudussa.
 4. Valitse **Aika**  >  **Jakso** ja lisää se **Akseli**-kohtaan.
    
     ![raporttieditori ja aluekaavio aktiivisena](media/service-report-create-new/power-bi-report-step5.png)

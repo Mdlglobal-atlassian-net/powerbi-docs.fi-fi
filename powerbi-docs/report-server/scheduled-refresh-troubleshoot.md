@@ -9,12 +9,12 @@ ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 11/01/2017
 ms.author: maghan
-ms.openlocfilehash: 3aa4047f5a4b0146c534a5734d8d13a42c46fe58
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: e829d0cf174cc81148287ce1b25449246300606c
+ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54287803"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56216696"
 ---
 # <a name="troubleshoot-scheduled-refresh-in-power-bi-report-server"></a>Ajoitetun päivityksen vianmääritys Power BI -raporttipalvelimessa
 Tässä artikkelissa kerrotaan resursseista, joita on saatavilla ajoitetun päivityksen vianmääritykseen Power BI -raporttipalvelimessa.
@@ -25,7 +25,7 @@ Tätä artikkelia päivitetään hyödyllisillä tiedoilla sitä mukaa kuin onge
 Seuraavat ovat yleisimpiä ongelmia, joita voit kohdata, kun yrität ajoittaa päivitystä raportille. 
 
 ### <a name="driver-related-problems"></a>Ohjaimeen liittyvät ongelmat
-Eri tietolähteisiin yhdistämistä varten voidaan tarvita kolmansien osapuolten ohjaimia, jotka on asennettava yhteyden onnistumiseksi. Sinun on asennettava ne laitteelle, jolla käytät Power BI Desktopia, mutta tämän lisäksi sinun on varmistettava, että ohjain on asennettu raporttipalvelimeen.
+Yhdistäminen eri tietolähteisiin voi edellyttää kolmannen osapuolen ohjaimia, jotka on asennettava yhteyden onnistumiseksi. Sinun on asennettava ne laitteelle, jolla käytät Power BI Desktopia, mutta tämän lisäksi sinun on varmistettava, että ohjain on asennettu raporttipalvelimeen.
 
 Ohjain voi olla 32-bittinen tai 64-bittinen. Varmista, että asennat 64-bittisen ohjaimen, sillä Power BI -raporttipalvelin on 64-bittinen.
 
@@ -60,7 +60,7 @@ Seuraavien asetusten avulla voidaan vaikuttaa ajoitettuun päivitykseen. SQL Ser
 
 **Asetukset tiedostossa rsreportserver.config:**
 
-```
+```xml
 <Configuration>
     <Service>
         <PollingInterval>10</PollingInterval>
@@ -145,7 +145,7 @@ Power BI -raporttien suorituslokimerkinnät eroavat muuntyyppisten raporttien me
     * **SaveToCatalog**: aina, kun tietomallia tallennetaan takaisin luetteloon.
 
 ## <a name="analysis-services"></a>Analysis Services
-Saatat joskus haluta muokata Analysis Servicesiä vianmääritystä varten tai säätää muistirajoituksia.
+Haluat ehkä toisinaan muokata Analysis Servicesiä vianmääritystä varten tai säätää muistirajoituksia.
 
 > [!IMPORTANT]
 > Nämä asetukset palautetaan joka kerta, kun päivität raporttipalvelinta. Varmista, että säilytät kopion muutoksistasi, ja käytä niitä uudelleen tarvittaessa.

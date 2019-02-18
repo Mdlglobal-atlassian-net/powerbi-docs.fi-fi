@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 09/11/2018
 ms.author: maggies
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 985c4b4dc7afa3fc68945f483e8ff775b925e462
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 087fe859c7b1a8ca732619866d492f143ff413c9
+ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54276557"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56216121"
 ---
 # <a name="delete-almost-anything-in-power-bi-service"></a>Poista melkein mitä tahansa Power BI -palvelussa
 Tässä artikkelissa opetetaan, miten Power BI -palvelussa poistetaan koontinäyttö, raportti, työkirja, tietojoukko, sovellus, visualisointi ja työtila.
@@ -51,7 +51,7 @@ Koontinäyttöjä voidaan poistaa. Koontinäytön poistaminen ei poista sen pohj
    >
 
 ## <a name="delete-a-workbook"></a>Työkirjan poistaminen
-Työkirjoja voidaan poistaa. Työkirjan poistaminen poistaa kuitenkin myös kaikki raportit ja koontinäyttöruudut, jotka sisältävät tietoja tästä työkirjasta.
+Työkirjat voidaan poistaa. Työkirjan poistaminen poistaa kuitenkin myös kaikki raportit ja koontinäyttöruudut, jotka sisältävät tietoja tästä työkirjasta.
 
 Jos työkirja on tallennettu OneDrive for Businessissa, sen poistaminen Power BI:stä ei poista sitä OneDrivesta.
 

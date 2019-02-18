@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 12/06/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 4b8c436088bcd7538c09d4acf0fd5d529f9c8a8f
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: f5896505d724c0704e22c95df132ee3318b23009
+ms.sourcegitcommit: 80961ace38ff9dac6699f81fcee0f7d88a51edf4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54278838"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56224015"
 ---
 # <a name="use-insights-in-power-bi-desktop-to-explain-increases-and-decreases-seen-in-visuals-preview"></a>Merkityksellisten tietojen avulla voit selittää Power BI Desktopissa visualisointien nousuja ja laskuja (esikatselu)
 
@@ -116,7 +116,7 @@ Seuraavassa luettelossa on esitetty tilanteita, joissa **lisäyksen/vähennyksen
 * Mittayksikkösuodattimet
 * Muu kuin numeeriset mittayksiköt
 * ”Näytä arvo muodossa” -toiminnon käyttö
-* Suodatetut mittayksiköt - Suodatetut mittayksiköt ovat visuaalisen tason laskutoimituksia, joihin liittyy tietty suodatin (esimerkiksi *Ranskan kokonaismyynti*), ja niitä käytetään joissakin merkitykselliset tiedot -toiminnon visualisoinneissa
+* Suodatetut mittayksiköt - Suodatetut mittayksiköt ovat visuaalisen tason laskutoimituksia, joihin sovelletaan tiettyä suodatinta (esimerkiksi *Ranskan kokonaismyynti*), ja joita käytetään joissakin merkityksellisten tietojen toiminnon luomissa visualisoinneissa
 * X-akselin luokitellut sarakkeet, elleivät ne määritä lajittelua sarakkeen mukaan, joka on skalaarisia. Jos käytät hierarkiaa, aktiivisen hierarkian jokaisen sarakkeen on vastattava tätä ehtoa
 
 

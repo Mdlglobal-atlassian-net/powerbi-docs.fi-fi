@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 4ad7ce28c512f69e144af98098ab9f13a15b6023
-ms.sourcegitcommit: 750f0bfab02af24c8c72e6e9bbdd876e4a7399de
+ms.openlocfilehash: 4131758dad29b28de56e3ac450bed22d64c25e46
+ms.sourcegitcommit: 80961ace38ff9dac6699f81fcee0f7d88a51edf4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/04/2019
-ms.locfileid: "54008622"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56223785"
 ---
 # <a name="connect-to-marketo-with-power-bi"></a>Yhteyden muodostaminen Marketoon Power BI:llä
 Power BI -sisältöpaketti Marketolle mahdollistaa merkityksellisten tietojen saamisen Marketo-tilistäsi liideihin ja niiden toimintaan liittyvillä tiedoilla. Tämän yhteyden luominen noutaa tietosi ja tarjoaa automaattisesti koontinäytön ja asiaankuuluvat raportit kyseisten tietojen perusteella.
@@ -48,7 +48,7 @@ Muodosta yhteys [Marketo-sisältöpakettiin](https://app.powerbi.com/getdata/ser
 
 **Mitä seuraavaksi?**
 
-* Kokeile [kysymyksen esittämistä koontinäytön yläreunassa olevassa Q&A-ruudussa](consumer/end-user-q-and-a.md).
+* Kokeile [kysymyksen esittämistä raporttinäkymän yläreunassa olevassa Q&A-ruudussa](consumer/end-user-q-and-a.md).
 * [Muuta koontinäytön ruutuja](service-dashboard-edit-tile.md).
 * [Valitse jokin ruutu](consumer/end-user-tiles.md), jolloin siihen liittyvä raportti avautuu.
 * Tietojoukko on ajastettu päivittymään päivittäin, mutta voit muuttaa päivitysaikataulua tai kokeilla tietojoukon päivittämistä **Päivitä nyt** -toiminnolla haluamanasi ajankohtana
@@ -59,7 +59,7 @@ Seuraavat tiedot ovat saatavilla Marketosta Power BI:ssä, jos toiminto on tapah
 | Taulukon nimi | Kuvaus |
 | --- | --- |
 | EmailActivities |Liideille tai yhteystiedoille lähetettyjä sähköposteja koskevat tiedot, mukaan luettuina tiedot seuraavista: laitteet, luokat, toimittamattomien viestien määrä ja prosenttiosuus, napsautettujen viestien määrä ja prosenttiosuus, avattujen viestien määrä ja prosenttiosuus sekä ohjelman nimi. Power BI:ssä näytettävä sähköpostiaktiviteetit on absoluuttinen sähköpostien toimitettavuutta koskeva raportti, se ei sovella tietoihin mitään muuta logiikkaa. Tämän vuoksi jotkut tulokset voivat olla erilaisia Marketo-asiakkaan ja Power BI:n välillä. |
-| ProgramActivites |Tietoa ohjelmista, joiden tilassa on tapahtunut muutos. Tähän sisältyvät tiedot, kuten kuten syy, onnistumiset, ohjelman hankinnan määrä ja prosenttiosuus sekä ohjelman onnistumisten määrä ja prosenttiosuus. |
+| ProgramActivities |Tietoa ohjelmista, joiden tilassa on tapahtunut muutos. Tähän sisältyvät tiedot, kuten kuten syy, onnistumiset, ohjelman hankinnan määrä ja prosenttiosuus sekä ohjelman onnistumisten määrä ja prosenttiosuus. |
 | WebPageActivities |Tiedot käyttäjän vierailuista verkkosivuilla, mukaan luettuina hakuagentti, käyttäjäagentti, verkkosivu ja kellonaika. |
 | Datetable |Tämän päivän ja kuluneen vuoden päivämäärät.  Tämän avulla voit analysoida Marketo-tietoja päivämäärän mukaan. |
 | Liidit |Liidin tiedot, kuten yritys, tuoton koko, työntekijöiden määrä, maa, ala, liidin pistemäärä ja liidin tila. Liidit noudetaan sen mukaan, miten ne esiintyvät sähköposti-, ohjelma- ja verkkosivutoimintoja koskevissa tiedoissa. |

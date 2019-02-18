@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/10/2017
 ms.author: maghan
 LocalizationGroup: Data from databases
-ms.openlocfilehash: 6e29e750a22bbd6843e203a5cd93b5c0628b1d05
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 2716696f4884b967735778db46a2300385a86988
+ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54288769"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56215822"
 ---
 # <a name="sql-server-analysis-services-live-data-in-power-bi"></a>SQL Server Analysis Servicesin reaaliaikaiset tiedot Power BI:ssä
 Power BI:ssä on käytössä kaksi tapaa muodostaa reaaliaikainen yhteys SQL Server Analysis Services -palvelimeen. **Nouda tiedot** -osassa voit muodostaa yhteyden joko suoraan SQL Server Analysis Services -palvelimeen tai vaihtoehtoisesti [Power BI Desktop -tiedostoon](service-desktop-files.md) tai [Excel-työkirjaan](service-excel-workbook-files.md), joka on jo yhteydessä Analysis Services -palvelimeen. Parhaana käytäntönä Microsoft suosittelee käyttämään Power BI Desktopia, sillä siinä on hyvä työkaluvalikoima ja mahdollisuus ylläpitää Power BI Desktop -tiedoston paikallista varmuuskopiota.
@@ -35,10 +35,10 @@ Power BI:ssä on käytössä kaksi tapaa muodostaa reaaliaikainen yhteys SQL Ser
 3. Valitse **SQL Server Analysis Services**  >  **Yhdistä**. 
    
    ![](media/sql-server-analysis-services-tabular-data/connecttoas_getdata_2.png)
-4. Valitse palvelin. Jos et näe palvelinten luetteloa, yhdyskäytävää ja tietolähdettä ei ole määritetty tai tiliäsi ei ole listattu tietolähteen **Käyttäjät**-välilehdellä yhdyskäytävässä. Pyydä apua järjestelmänvalvojalta.
+4. Valitse palvelin. Jos et näe palvelinten luetteloa, yhdyskäytävää ja tietolähdettä ei ole määritetty tai tiliäsi ei ole listattu tietolähteen **Käyttäjät**-välilehdellä yhdyskäytävässä. Tarkista asia järjestelmänvalvojalta.
 5. Valitse malli, johon haluat muodostaa yhteyden. Se voi olla joko taulukko- tai monidimensiomalli.
 
-Yhteyden muodostamisen jälkeen malli näkyy Power BI -sivustosi kohdassa **Oma työtila -> Tietojoukot**. Jos olit vaihtanut ryhmän työtilaan, tietojoukko näkyy ryhmässä.
+Yhteyden muodostamisen jälkeen malli näkyy Power BI -sivustosi kohdassa **Oma työtila -> Tietojoukot**. Jos vaihdoit ryhmän työtilaan, tietojoukko näkyy silloin ryhmässä.
 
 ![](media/sql-server-analysis-services-tabular-data/connecttoas_dataset_5.png)
 

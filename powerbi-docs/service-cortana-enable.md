@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 12/20/2017
 ms.author: maggies
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 130c18bb51c99813999f87c69c465dc59783e638
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: ff99fc731b5388acd4dbb7c98fe13b227e7d5789
+ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54276717"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56216754"
 ---
 # <a name="enable-cortana-to-access-power-bi-reports-and-their-underlying-datasets"></a>Mahdollista Cortanalle Power BI-raporttien (ja niiden taustalla olevien tietojoukkojen) käyttö
 Olet lukenut sivun [Perehdytys Cortanaan ja Power BI:hin](service-cortana-intro.md) (jos et ole, kannattaa se lukea ensin ja palata sitten takaisin). Ja nyt haluat kokeilla sitä itse.  Muutamien vaatimusten on täytyttävä ennen kuin voit esittää luonnollisella ohjelmointikielellä kysymyksiä Cortanassa ja etsiä vastauksia Power BI ***raportit*** -osioon tallennetuista tiedoista. Tarkemmin sanottuna sinun pitää toimia seuraavasti.
@@ -75,7 +75,7 @@ Käytössäsi olevan Windows 10:n version on oltava 1511 tai sitä uudempi.
    * Avaa **asetukset** > **tilit**.
      
        ![Asetukset – tilit](media/service-cortana-enable/power-bi-windows-accounts.png)
-   * Vieritä alas ja valitse **lisää työ- tai koulutili**. Tai **tilit**sivun valinta**pääsy työpaikkaan tai oppilaitokseen  >muodosta yhteys**.
+   * Vieritä alas ja valitse **Lisää työ- tai koulutili**. Tai, valitse **Tilit**-sivulta **Käytä työ- tai koulutiliä > Yhdistä**.
      
      ![Työtilin lisääminen](media/service-cortana-enable/power-bi-add-work-account2.png)
 
