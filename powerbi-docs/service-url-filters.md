@@ -117,7 +117,7 @@ Power BI tukee useita muitakin operaattoreita kuin **and**. Seuraavassa taulukos
 |**in\*\***     |  mukaan lukien       | kyllä | kyllä |  kyllä | Student/Age in (27, 29)
 
 
-\*\** Kun käytät **in**-operaattoria, **in**-operaattorin oikealla puolella olevat arvot voidaan merkitä sulkeiden sisälle pilkuilla erotettuna luettelona tai yksittäisenä lausekkeena, joka palauttaa kokoelman.
+\*\* Kun käytät **in**-operaattoria, **in**-operaattorin oikealla puolella olevat arvot voidaan merkitä sulkeiden sisälle pilkuilla erotettuna luettelona tai yksittäisenä lausekkeena, joka palauttaa kokoelman.
 
 ### <a name="numeric-data-types"></a>Numeeriset tietotyypit
 
