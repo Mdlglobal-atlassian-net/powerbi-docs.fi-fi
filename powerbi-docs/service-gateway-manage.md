@@ -11,18 +11,18 @@ ms.date: 04/18/2018
 ms.author: mblythe
 ms.custom: seodec18
 LocalizationGroup: Gateways
-ms.openlocfilehash: ff9f75b216ba64dfdb0b8244bb99016d0edd4ede
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 9a2fac64959ece431471eb8d3f32961c9d592c66
+ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54276993"
+ms.lasthandoff: 02/16/2019
+ms.locfileid: "56324828"
 ---
 # <a name="manage-a-power-bi-on-premises-gateway"></a>Power BI:n paikallisen yhdyskäytävän hallinta
 
-Kun olet [asentanut Power BI -tietoyhdyskäytävän](service-gateway-install.md), voit hallita sitä tarpeidesi mukaan. Tässä aiheessa kerrotaan, miten voit lisätä ja poistaa tietolähteitä ja käyttäjiä; käynnistää yhdyskäytävän uudelleen; siirtää, palauttaa, ottaa haltuun ja poistaa yhdyskäytävän. 
+Kun olet [asentanut Power BI -tietoyhdyskäytävän](service-gateway-install.md), voit hallita sitä tarpeidesi mukaan. Tässä aiheessa kerrotaan, miten voit lisätä ja poistaa tietolähteitä ja käyttäjiä; käynnistää yhdyskäytävän uudelleen; siirtää, palauttaa, ottaa haltuun ja poistaa yhdyskäytävän.
 
-Voit hallita yhdyskäytävää Power BI -palvelun **Yhdyskäytävien hallinta** -alueen, paikallisen tietokoneen yhdyskäytäväsovelluksen ja PowerShell-komentosarjojen avulla. Tässä artikkelissa keskitytään Power BI -palveluun. 
+Voit hallita yhdyskäytävää Power BI -palvelun **Yhdyskäytävien hallinta** -alueen, paikallisen tietokoneen yhdyskäytäväsovelluksen ja PowerShell-komentosarjojen avulla. Tässä artikkelissa keskitytään Power BI -palveluun.
 
 Jos olet juuri asentanut yhdyskäytävän, suosittelemme seuraavaksi [lisäämään tietolähteen](#add-a-data-source) ja sitten [lisäämään käyttäjiä](#add-users-to-a-data-source), jotta he voivat käyttää tietolähdettä.
 

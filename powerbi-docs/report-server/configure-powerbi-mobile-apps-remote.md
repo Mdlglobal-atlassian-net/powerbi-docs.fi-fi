@@ -1,20 +1,20 @@
 ---
 title: iOS-mobiilisovelluksen käyttöoikeuksien etämäärittäminen raporttipalvelimelle
 description: Lue, miten voit etämäärittää iOS-mobiilisovelluksen raporttipalvelimelle.
-author: maggiesMSFT
+author: markingmyname
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 11/15/2018
-ms.author: maggies
-ms.openlocfilehash: 6a815d3b8042a53bd7196902e59019d3a6b61220
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.author: maghan
+ms.openlocfilehash: c50f9c482ba689fe81ee22b2b52564dec3cbf1d6
+ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54293576"
+ms.lasthandoff: 02/16/2019
+ms.locfileid: "56324365"
 ---
 # <a name="configure-power-bi-ios-mobile-app-access-to-a-report-server-remotely"></a>Raporttipalvelimen käyttöoikeuksien etämäärittäminen Power BI -iOS-mobiilisovellukselle
 
@@ -35,10 +35,10 @@ Parit on havainnollistettu seuraavassa taulukossa.
 
 |Avain  |Tyyppi  |Kuvaus  |
 |---------|---------|---------|
-| com.microsoft.powerbi.mobile.ServerURL | Merkkijono | Raporttipalvelimen URL-osoite </br> Tulee alkaa merkkijonolla http tai https |
-| com.microsoft.powerbi.mobile.ServerUsername | Merkkijono | [valinnainen] </br> Käyttäjänimi, jota käytetään muodostettaessa yhteyttä palvelimeen. </br> Jos sellaista ei ole, sovellus pyytää käyttäjää antamaan käyttäjänimen yhteyden muodostamista varten.| 
-| com.microsoft.powerbi.mobile.ServerDisplayName | Merkkijono | [valinnainen] </br> Oletusarvo on ”Raporttipalvelin” </br> Kutsumanimi, joka edustaa palvelinta sovelluksessa | 
-| com.microsoft.powerbi.mobile.OverrideServerDetails | Totuusarvo | Oletusarvo on Tosi (True) </br>Kun arvoksi on määritetty Tosi, se ohittaa mobiililaitteessa jo olevat raporttipalvelimen määritelmät. Tässä yhteydessä poistetaan olemassa olevat palvelimet, jotka on jo määritetty. </br> Ohituksen Tosi-arvo estää käyttäjää poistamista kyseistä määritystä. </br> Epätosi-arvo lisää lähetetyt arvot poistamatta olemassa olevia asetuksia. </br> Jos sama palvelimen URL-osoite on jo määritetty mobiilisovelluksessa, sovellus jättää sen määrityksen ennalleen. Sovellus ei pyydä käyttäjää todentamaan uudelleen samalle palvelimelle. |
+| com.microsoft.powerbi.mobile.ServerURL | Merkkijono | Raporttipalvelimen URL-osoite <br> Tulee alkaa merkkijonolla http tai https |
+| com.microsoft.powerbi.mobile.ServerUsername | Merkkijono | [valinnainen] <br> Käyttäjänimi, jota käytetään muodostettaessa yhteyttä palvelimeen. <br> Jos sellaista ei ole, sovellus pyytää käyttäjää antamaan käyttäjänimen yhteyden muodostamista varten.| 
+| com.microsoft.powerbi.mobile.ServerDisplayName | Merkkijono | [valinnainen] <br> Oletusarvo on ”Raporttipalvelin” <br> Kutsumanimi, joka edustaa palvelinta sovelluksessa | 
+| com.microsoft.powerbi.mobile.OverrideServerDetails | Totuusarvo | Oletusarvo on Tosi (True) <br>Kun arvoksi on määritetty Tosi, se ohittaa mobiililaitteessa jo olevat raporttipalvelimen määritelmät. Tässä yhteydessä poistetaan olemassa olevat palvelimet, jotka on jo määritetty. <br> Ohituksen Tosi-arvo estää käyttäjää poistamista kyseistä määritystä. <br> Epätosi-arvo lisää lähetetyt arvot poistamatta olemassa olevia asetuksia. <br> Jos sama palvelimen URL-osoite on jo määritetty mobiilisovelluksessa, sovellus jättää sen määrityksen ennalleen. Sovellus ei pyydä käyttäjää todentamaan uudelleen samalle palvelimelle. |
 
 Tässä on esimerkki määrityskäytännön asettamisesta Intunen avulla.
 

@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 12/20/2017
 ms.author: maggies
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: d768956f26256bd06516981b2bae0ab17ef3ca90
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 5aac4b32fc90720af4954dff2afa61243b1f1587
+ms.sourcegitcommit: 8207c9269363f0945d8d0332b81f1e78dc2414b0
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54296313"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56249041"
 ---
 # <a name="troubleshoot-cortana-for-power-bi"></a>Cortanan ja Power BI:n vianmääritys
 Tämä artikkeli on osa pidempää sarjaa. Jos et ole vielä lukenut aiempia osia, suosittelemme lukemaan seuraavat artikkelit:
@@ -79,7 +79,7 @@ Onko sinulla edelleen ongelmia?  Seuraavaksi kannattaa suorittaa Cortanan vianm�
 
    ![Vastauskortti](media/service-cortana-troubleshoot/power-bi-answer-card-new.png)
 
-   </br>
+   <br>
 
    ![Vastauskorttivälilehti Power BI:ssä](media/service-cortana-troubleshoot/power-bi-answer-card2.png)
 4. Joskus, kun kirjoitat jotain **Utterance** (Ilmaus) ‑kenttään ensimmäistä kertaa, mitään ei tapahdu. Ajattele sitä järjestelmän alustamisena: ilmoitat vianmääritystyökalulle, että sen pitää käynnistyä. Leikkaa ja liitä teksti tai kirjoita se uudelleen **Utterance** (Ilmaus) ‑kenttään. Tässä esimerkissä vastauskortin nimi on **Cortana stores**. **Cortana stores** ‑tekstin liittäminen tai kirjoittaminen työkalun kenttään tuottaa yhden tuloksen, joka tulee näkyviin **Interpretations** (Tulkinnat) ‑kenttään. Napsauta sitä, niin vastauskortti tulee näkyviin Cortanan ikkunassa – tässä tapauksessa kortti on **Cortana stores**.

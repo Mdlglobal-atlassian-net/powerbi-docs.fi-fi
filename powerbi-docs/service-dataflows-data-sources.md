@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 12/06/2018
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: cef34e7be0767ce16b84b066663318b66bcbd2d0
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 5bf9694c42a3a70fbc65085326a03618ae62a8f6
+ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54280548"
+ms.lasthandoff: 02/16/2019
+ms.locfileid: "56324917"
 ---
 # <a name="connect-to-data-sources-for-power-bi-dataflows-preview"></a>Yhteyden muodostaminen Power BI -tietovoiden tietolähteisiin (esikatselu)
 
@@ -76,6 +76,7 @@ Tietovoiden tietolähteet on järjestetty seuraaviin luokkiin, jotka ilmestyvät
 * SQL Server -tietokanta
 * Sybase-tietokanta
 * Teradata-tietokanta
+* Vertica
 
 **Power BI** -luokka sisältää seuraavat saatavilla olevat tietovoiden tietoyhteydet:
 
@@ -91,6 +92,7 @@ Tietovoiden tietolähteet on järjestetty seuraaviin luokkiin, jotka ilmestyvät
 
 **Online-palvelut** sisältää seuraavat saatavilla olevat tietovoiden tietoyhteydet:
 
+* Amazon Redshift
 * Common Data Service for Apps
 * Microsoft Exchange Online
 * Salesforce-objektit
@@ -154,12 +156,8 @@ Komentosarja muodostaa sitten yhteyden tietolähteeseen, jonka määritit.
 
 Seuraavassa luettelossa näytetään, mitä liittimiä voit käyttää tällä hetkellä M-kyselyn kopioimiseen ja liittämiseen tyhjään kyselyyn:
 
-* Amazon Redshift
 * SAP Business Warehouse 
-* SAP HANA
-* Analysis Services
 * Azure Analysis Services
-* Google Analytics
 * Adobe Analytics
 * ODBC
 * OLE DB
@@ -170,7 +168,6 @@ Seuraavassa luettelossa näytetään, mitä liittimiä voit käyttää tällä h
 * Azure HDInsight (HDFS)
 * Hadoop-tiedosto HDFS
 * Informix (beeta)
-* Vertica
 
 Tässä kaikki, joka sinun tarvitsee tietää yhteyden muodostamiseksi tietolähteisiin Power BI -tietovoissa.
 
