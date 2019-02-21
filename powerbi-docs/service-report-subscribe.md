@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 01/29/2019
 ms.author: maggies
 LocalizationGroup: Common tasks
-ms.openlocfilehash: a7c9c72dfbb75958be3119db61fa3aa03ac89171
-ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
+ms.openlocfilehash: 09539bfd26685ffdd9866810b566699e5cdb4a41
+ms.sourcegitcommit: a2f274cfb392fe3b1b466a39ec7eaf58a7c5ce00
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55430943"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "56408111"
 ---
 # <a name="subscribe-yourself-and-others-to-a-report-or-dashboard-in-the-power-bi-service"></a>Power BI -palvelun raporttien tai koontinäyttöjen tilaaminen itsellesi ja muille
 
@@ -27,7 +27,7 @@ Voit tilata itsellesi ja kollegoillesi tärkeimmät raporttisivut ja koontinäyt
 Voit luoda tilauksia vain Power BI -palvelussa. Saat sähköpostin, joka sisältää raporttisivun tai koontinäytön tilannevedoksen sekä linkin raportin tai koontinäytön avaamiseksi. Mobiililaitteissa, joihin on asennettu Power BI -sovelluksia, linkin valitseminen käynnistää Power BI -sovelluksen (tämä ei siis avaa raporttia tai koontinäyttöä Power BI -sivustossa).
 
 ## <a name="requirements"></a>Vaatimukset
-- Tilauksen **luominen** on Power BI Pro -toiminto.
+- Tilauksen **luominen** on Power BI Pro -ominaisuus.
 - Jos haluat luoda tilauksen itsellesi, et tarvitse muokkausoikeuksia sisältöön (koontinäyttö tai raportti), mutta jos haluat luoda tilauksen jollekin muulle, tarvitset muokkausoikeudet. 
 - Tammikuusta 2019 alkaen tietojoukon päivityksen ei enää tarvitse olla määritettynä tilausten käyttämiseksi.  Tilaus toteutetaan riippumatta määrittämistäsi ajoitetuista päivityksistä.  
 
@@ -60,12 +60,10 @@ Koontinäytön ja raportin tilausprosessit ovat samankaltaiset. Samaa painiketta
 7. Valitse **Tallenna ja sulje**. Tilauksen vastaanottajat saavat sähköpostin ja tilannevedoksen koontinäytöstä tai raporttisivusta määrittämäsi aikataulun mukaisesti. Voit luoda jopa 24 tilausta per raportti ja koontinäyttö. Voit määrittää kullekin tilaukselle omat vastaanottajat, kellonajat ja lähetystiheydet.  Kaikissa tilauksissa, joiden tiheydeksi määritetään **Tietojen päivittämisen jälkeen**, lähetetään sähköpostia vain raportin tai koontinäytön kyseisen päivän ensimmäisen ajoitetun päivityksen jälkeen.   
       
    > [!TIP]
-   > Haluatko nähdä sähköpostin saman tien? Käynnistä sähköpostiviestin lähettäminen päivittämällä jokin koontinäyttöön liittyvistä tietojoukoista tai raporttiin liittyvä tietojoukko. Jos sinulla ei ole tietojoukkoon muokkausoikeuksia, pyydä muokkausoikeudet omaavaa henkilöä tekemään se puolestasi. Jos haluat nähdä liittyvät tietojoukot, valitse **Näytä aiheeseen liittyvät** -kuvake ![Näytä aiheeseen liittyvät -kuvake](media/service-report-subscribe/power-bi-view-related.png). Näytölle avautuu **Liittyvä sisältö** -ikkuna, josta voit sitten valita päivityskuvakkeen ![päivityskuvake](media/service-report-subscribe/power-bi-refresh.png). 
+   > Haluatko lähettää sähköpostiviestin tilauksesta heti vai pyydettäessä milloin tahansa? Valitse **Suorita nyt** niille koontinäytön tai raportin tilauksille, jotka haluat lähettää. Näkyviin tulee ilmoitus, että sähköpostiviesti on matkalla kaikille kyseisen tilauksen käyttäjille.  Voit tehdä tämän niin usein kuin haluat. Toiminto ei vaikuta päivittäiseen 24 ajoitetun tilauksen rajoitukseen raporttia tai koontinäyttöä kohti. Huomaa, että tämä EI aloita pohjana olevan tietojoukon tietojen päivittämistä. 
    > 
    > 
    
-   ![Liittyvät tietojoukot](media/service-report-subscribe/power-bi-view-related-screen.png)
-
 ## <a name="email-languages"></a>Sähköpostin kielet
 
 Sähköpostissa ja tilannevedoksessa käytetään samaa kieliasetusta kuin Power BI:ssä (katso [Power BI:ssä tuetut kielet ja maat/alueet](supported-languages-countries-regions.md)). Jos mitään kieltä ei ole määritetty, Power BI käyttää senhetkisen selaimesi paikka-asetuksen mukaista kieltä. Jos haluat nähdä kieliasetuksesi tai muuttaa sitä, valitse hammasrataskuvake ![hammasrataskuvake](media/service-report-subscribe/power-bi-settings-icon.png) > **Asetukset > Yleiset > Kieli**. 
@@ -84,6 +82,7 @@ Näytettävät tilaukset riippuvat siitä, mikä työtila on sillä hetkellä ak
 Tilaus päättyy, jos Pro-käyttöoikeus umpeutuu, omistaja poistaa koontinäytön tai raportin tai tilauksen luomiseen käytetty käyttäjätili poistetaan.
 
 ## <a name="considerations-and-troubleshooting"></a>Huomioon otettavat seikat ja vianmääritys
+* Jos koontinäytössä on yli 25 kiinnitettyä ruutua tai 4 kiinnitettyä reaaliaikaisista raporttisivua, koontinäyttö ei ehkä hahmonnu täysin käyttäjille lähetetyissä tilauksen sähköpostiviesteissä.  Tilauksia koontinäyttöihin, joissa on tätä enemmän ruutuja, ei estetä. Niitä ei kuitenkaan katsota tuetuiksi, jos niiden yhteydessä ilmenee ongelmia, joten niitä tulee muokata niin, että ne vastaavat tuettua aluetta.
 * Jos koontinäytön sähköpostitilausten joillakin ruuduilla on käytössä rivitason suojaus (RLS), näitä ruutuja ei näytetä.  Jos raportin sähköpostitilausten tietojoukko käyttää rivitason suojausta (RSL), et voi luoda tilausta.
 * Raporttisivujen tilaukset on sidottu raporttisivun nimeen. Jos tilaat raporttisivun ja nimeät sen uudelleen, sinun on luotava myös tilaus uudelleen.
 * Tietyt organisaatiosi Azure Active Directoryyn määrittämät asetukset voivat rajoittaa sähköpostitilausten käyttämistä Power BI:ssä.  Tällaisia rajoituksia voivat olla esimerkiksi monimenetelmäinen todentaminen tai IP-aluerajoitukset resursseja käytettäessä.

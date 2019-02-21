@@ -1,3 +1,16 @@
+---
+author: mgblythe
+ms.service: powerbi
+ms.topic: include
+ms.date: 02/15/2019
+ms.author: mblythe
+ms.openlocfilehash: 44ef0aa9d436f3a8a02f9a6b831847d5c996558a
+ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 02/16/2019
+ms.locfileid: "56333962"
+---
 ## <a name="limitations"></a>Rajoitukset
 
 Tässä on luettelo tämänhetkisistä rajoituksista pilvimallien rivitason suojaukselle.
@@ -8,7 +21,7 @@ Tässä on luettelo tämänhetkisistä rajoituksista pilvimallien rivitason suoj
 
 * Vain ETL- ja DirectQuery-yhteyksiä tuetaan. Reaaliaikaisista yhteyksistä Analysis Servicesiin huolehditaan paikallisessa mallissa.
 
-* Q&A:ta ja Cortanaa ei tällä hetkellä tueta rivitason suojauksen kanssa. Q&A-tekstiruutua ei näytetä raporttinäkymissä, jos kaikille malleille on määritetty rivitason suojaus. Tämä on suunnitteilla, mutta aikataulua ei ole.
+* Cortanaa ei tällä hetkellä tueta rivitason suojauksen kanssa.
 
 ## <a name="known-issues"></a>Tunnetut ongelmat
 

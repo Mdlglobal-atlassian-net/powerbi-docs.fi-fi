@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 12/06/2017
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: ef4f9de49619a26e17fbdf2b0df47bc56ba23f4d
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 18458820f98bcea32eb5288389d57808646d462c
+ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54279316"
+ms.lasthandoff: 02/16/2019
+ms.locfileid: "56325010"
 ---
 # <a name="on-premises-data-gateway-in-depth"></a>Paikallinen tietoyhdyskäytävä tarkemmin
 Organisaatiosi käyttäjät voivat käyttää paikallisia tietoja (joihin heillä on jo käyttöoikeus), mutta ennen kuin kyseiset käyttäjät voivat muodostaa yhteyden paikalliseen tietolähteeseen, paikallinen tietoyhdyskäytävä on asennettava ja määritettävä. Yhdyskäytävä helpottaa nopeaa ja turvallista taustaviestintää pilvipalvelussa olevalta käyttäjältä paikalliselle tietolähteelle ja takaisin pilvipalveluun.
@@ -90,7 +90,7 @@ Azure AD Connectin käyttäminen varmistaa, että AAD:n ja paikallisen Active Di
 > 
 
 ## <a name="now-this-is-where-the-gateway-comes-in"></a>Tässä vaiheessa yhdyskäytävä tulee mukaan kuvaan.
-Yhdyskäytävä toimii siltana pilvipalvelun ja paikallisen palvelimen välillä. Pilvipalvelun ja yhdyskäytävän välinen tiedonsiirto suojataan [Azuren palveluväylän](/azure/service-bus-messaging/service-bus-messaging-overview) avulla. Palveluväylä luo suojatun kanavan pilven ja paikallisen palvelimen välille yhdyskäytävän lähtevän yhteyden kautta.  Saapuvia yhteyksiä, jotka olisi avattava paikallisessa palomuurissa, ei ole.
+Yhdyskäytävä toimii siltana pilvipalvelun ja paikallisen palvelimen välillä. Pilvipalvelun ja yhdyskäytävän välinen tiedonsiirto suojataan [Azuren palveluväylän](/azure/service-bus-messaging/service-bus-messaging-overview) avulla. Palveluväylä luo suojatun kanavan pilven ja paikallisen palvelimen välille yhdyskäytävän lähtevän yhteyden kautta.  Saapuvia yhteyksiä, jotka olisi avattava paikallisessa palomuurissa, ei ole. Power BI hallitsee Azuren palveluväylää puolestasi, joten lisäkustannuksia ei ole eikä määritysvaihetta vaadita.
 
 Jos sinulla on Analysis Services -tietolähde, sinun on asennettava yhdyskäytävä sellaisessa tietokoneessa, joka on liitetty samaan toimialuepuuryhmään tai toimialueeseen kuin Analysis Services -palvelin.
 

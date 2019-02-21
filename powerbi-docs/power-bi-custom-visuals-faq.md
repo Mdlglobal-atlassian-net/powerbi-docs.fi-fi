@@ -10,12 +10,12 @@ ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 12/17/2018
-ms.openlocfilehash: 0418016fd7a194ff2e37e979219b97e94520f9ae
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 9b4ff995b1cfaede1608e976bf2715feece0ade6
+ms.sourcegitcommit: a2f274cfb392fe3b1b466a39ec7eaf58a7c5ce00
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54282099"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "56408134"
 ---
 # <a name="frequently-asked-questions-about-power-bi-custom-visuals"></a>Usein kysyttyjä kysymyksiä – Power BI:n mukautetut visualisoinnit
 
@@ -98,6 +98,9 @@ Jos olet tekemässä mukautettua IAP-visualisointia tai sinulla jo on sellainen,
 Jos siinä on logo, varmista, että se on ohjeiden mukainen (väri, paikka, koko ja toiminnon käynnistäminen).
 
 Ohjeista löydät tietoa myös parhaista käytännöistä.  
+> [!Note]
+> Kaikki maksuttomat visualisoinnit säilyttävät ne samat maksuttomat ominaisuudet, jotka olivat aiemmin tarjolla. Voit lisätä valinnaisia maksullisia lisäominaisuuksia aiempien maksuttomien ominaisuuksien lisäksi. Suosittelemme lähettämään sovelluskohtaisten tuotteiden visualisoinnit lisäominaisuuksien kanssa uusina visualisointeina sen sijaan, että päivittäisit vanhat, maksuttomat visualisoinnit.
+
 
 ### <a name="can-i-get-my-iap-custom-visual-certified"></a>Miten saan mukautetun IAP-visualisointini sertifioitua?
 

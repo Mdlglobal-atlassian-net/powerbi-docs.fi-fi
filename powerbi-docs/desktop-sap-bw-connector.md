@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 10/15/2018
+ms.date: 02/14/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: f1ddcee1e39f8704eda7cc94cffb27c1a8b6b75f
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: c45900d98dfa25dd991ae0cee1f165a41964c51e
+ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54290333"
+ms.lasthandoff: 02/16/2019
+ms.locfileid: "56324764"
 ---
 # <a name="use-the-sap-bw-connector-in-power-bi-desktop"></a>SAP BW -yhdistimen käyttö Power BI Desktopissa
 Voit nyt käyttää **SAP Business Warehouse (BW)** -tietoja Power BI Desktopilla.
@@ -218,6 +218,29 @@ Tämä osio sisältää vianmäärityksen tilanteita ja ratkaisuja käytettäess
    * BAPI_IOBJ_GETDETAIL
 
    Voit ratkaista ongelman varmistamalla, että käyttäjällä on oikeus käyttää erilaisia *MDPROVIDER*- ja *BAPI_IOBJ_GETDETAIL*-moduuleita. Jos haluat tehdä tällaisen tai vastaavan ongelman vianmäärityksen, valitse Power BI Desktopin *asetusten* *Diagnostiikka*-ikkunassa *Ota jäljitys käyttöön*. Yritä hakea tietoja SAP BW:stä, kun jäljitys on käytössä, ja tutki lisätietoja jäljitystiedostosta.
+
+## <a name="sap-bw-connection-support"></a>SAP BW -yhteyden tuki
+
+Seuraavassa taulukossa esitetään SAP BW:n nykyinen tuki.
+
+
+
+|Tuote  |Tila  |Todentaminen  |Liitin  |SNC-kirjasto  |Tuetaan  |
+|---------|---------|---------|---------|---------|---------|
+|Power BI Desktop     |Mikä tahansa         | Käyttäjä / salasana  | Sovelluspalvelin | –  | Kyllä  |
+|Power BI Desktop     |Mikä tahansa         | Windows          | Sovelluspalvelin | sapcrypto + gsskrb5/gx64krb5  | Kyllä  |
+|Power BI Desktop     |Mikä tahansa         | Windows tekeytymisen kautta | Sovelluspalvelin | sapcrypto + gsskrb5/gx64krb5  | Kyllä  |
+|Power BI Desktop     |Mikä tahansa         | Käyttäjä / salasana        | Viestipalvelin | –  | Kyllä  |
+|Power BI Desktop     |Mikä tahansa         | Windows        | Viestipalvelin | sapcrypto + gsskrb5/gx64krb5  | Kyllä  |
+|Power BI Desktop     |Mikä tahansa         | Windows tekeytymisen kautta | Viestipalvelin | sapcrypto + gsskrb5/gx64krb5  | Kyllä  |
+|Power BI Gateway     |Tuo      | Sama kuin Power BI Desktopilla |         |   |   |
+|Power BI Gateway     |DirectQuery | Käyttäjä / salasana        | Sovelluspalvelin | –  | Kyllä  |
+|Power BI Gateway     |DirectQuery | Windows tekeytymisen kautta (kiinteä käyttäjä, ei kertakirjautumista) | Sovelluspalvelin | sapcrypto + gsskrb5/gx64krb5  | Kyllä  |
+|Power BI Gateway     |DirectQuery | Käytä DirectQuery-kyselyissä kertakirjautumista Kerberoksen kautta | Sovelluspalvelin | *vain* gsskrb5/gx64krb5   | Kyllä  |
+|Power BI Gateway     |DirectQuery | Käyttäjä / salasana        | Viestipalvelin | –  | Kyllä  |
+|Power BI Gateway     |DirectQuery | Windows tekeytymisen kautta (kiinteä käyttäjä, ei kertakirjautumista) | Viestipalvelin | sapcrypto + gsskrb5/gx64krb5  | Kyllä  |
+|Power BI Gateway     |DirectQuery | Käytä DirectQuery-kyselyissä kertakirjautumista Kerberoksen kautta | Viestipalvelin | sapcrypto + gsskrb5/gx64krb5  | Ei  |
+
 
 
 ## <a name="next-steps"></a>Seuraavat vaiheet

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: f8b9f775b43f2c1b26b7ef56c5bb0985fc3f7ca2
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: d4f1936f02edf4ece60b4761d4e541801384a5d2
+ms.sourcegitcommit: 8207c9269363f0945d8d0332b81f1e78dc2414b0
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54292041"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56249340"
 ---
 # <a name="create-and-manage-relationships-in-power-bi-desktop"></a>Suhteiden luominen ja hallinta Power BI Desktopissa
 Useita taulukoita tuodessa aiotaan todennäköisesti luoda analyyseja käyttäen tietoja kaikista tuotavista taulukoista. Näiden taulukoiden välisiä suhteita tarvitaan tuloksien tarkkaan laskemiseen ja oikeiden tietojen esittämiseen raporteissa. Power BI Desktop tekee näiden suhteiden luomisesta helppoa. Itse asiassa useimmissa tapauksissa sinun ei tarvitse tehdä mitään, automaattinen tunnistus tekee kaiken puolestasi. Joissakin tapauksissa joudut ehkä luomaan suhteita itse tai muokkaamaan joitakin suhteita. Joka tapauksessa on tärkeää ymmärtää Power BI Desktopissa olevia suhteita ja miten niitä voi luoda ja muokata.
@@ -58,6 +58,8 @@ Kun luot tai muokkaat suhteen, voit määrittää lisäasetuksia.  Oletusarvon m
 **Monta yhteen (\*:1)** – Tämä on yleisin, oletustyyppi. Monta yhteen -tyyppi tarkoittaa sitä, että arvo voi esiintyä toisessa taulukossa useammin kuin kerran ja esiintyä vain kerran toisessa taulukossa, jota kutsutaan usein hakutaulukoksi.
 
 **Yksi yhteen (1:1)** – Tämä tarkoittaa, että tietty arvo esiintyy vain kerran kummassakin taulukossa, joiden välille on muodostettu suhde.
+
+**Monta-moneen-yhteys**: Yhdistelmämallien avulla voit määrittää taulukoiden välille monta-moneen-yhteyksiä. Tämä lähestymistapa poistaa vaatimuksen siitä, että taulukoiden arvojen pitäisi olla yksilöllisiä. Se myös poistaa edelliset ratkaisut, kuten uusien taulukoiden lisäämisen vain yhteyksien muodostamiseksi. Lisätietoja on artikkelissa [Moni-moneen-kardinaliteetin sisältävät suhteet](https://docs.microsoft.com/power-bi/desktop-many-to-many-relationships). 
 
 Katso lisätietoja kardinaliteetin vaihtamisesta tämän artikkelin Tietoja lisäasetuksista -osasta.
 

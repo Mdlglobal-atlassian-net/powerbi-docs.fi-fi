@@ -10,12 +10,12 @@ ms.topic: overview
 ms.date: 04/18/2018
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 0a2c1cb446a0a975a574f5d3f2684ddf80f4f273
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 9c88a09eccd887007df8d2539be861b964c31b5f
+ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54274716"
+ms.lasthandoff: 02/16/2019
+ms.locfileid: "56324480"
 ---
 # <a name="what-are-power-bi-gateways"></a>Mitä ovat Power BI -yhdyskäytävät?
 
@@ -53,7 +53,7 @@ Asentamasi yhdyskäytävä suoritetaan Windows palveluna **paikallisena tietoyhd
 Kyselyt ja tietovuo:
 
 1. Pilvipalvelu luo kyselyn paikallisen tietolähteen salatuilla tunnistetiedoilla. Kysely lähetetään jonoon yhdyskäytävän käsiteltäväksi.
-2. Yhdyskäytävän pilvipalvelu analysoi kyselyn ja siirtää pyynnön Azuren palveluväylään.
+2. Yhdyskäytävän pilvipalvelu analysoi kyselyn ja siirtää pyynnön Azuren palveluväylään. Power BI hallitsee Azuren palveluväylää puolestasi, joten lisäkustannuksia ei ole eikä määritysvaihetta vaadita.
 3. Paikallinen tietoyhdyskäytävä tekee kyselyn Azuren palveluväylään odottavia pyyntöjä varten.
 4. Yhdyskäytävä saa kyselyn, purkaa salauksen tunnistetiedot ja muodostaa yhteyden tietolähteisiin kyseisillä tunnistetiedoilla.
 5. Yhdyskäytävä lähettää kyselyn tietolähteeseen suoritusta varten.

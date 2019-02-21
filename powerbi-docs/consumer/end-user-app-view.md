@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 01/16/2019
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: b48feeaacc5ec0beff3b9b250f22b1aa605de9f7
-ms.sourcegitcommit: 6c75e38660b1ab4c1af355c85709859ffde09e25
+ms.openlocfilehash: f4e6f0204ed9832a3ed3c3ed8347a44300f606df
+ms.sourcegitcommit: 8207c9269363f0945d8d0332b81f1e78dc2414b0
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55068047"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56249386"
 ---
 # <a name="install-and-use-apps-with-dashboards-and-reports-in-power-bi"></a>Koontinäyttöjä ja raportteja hyödyntävien sovellusten asentaminen ja käyttäminen Power BI:ssä
 Nyt sinulla on [perustiedot sovelluksista](end-user-apps.md), joten voimme opetella niiden avaamista ja käyttämistä. 
@@ -25,7 +25,7 @@ Muista, että voit hankkia uuden sovelluksen usealla eri tavalla. Raportin suunn
 
 Jos käytät Power BI:tä mobiililaitteella, et voi asentaa sovellusta AppSourcen kautta vaan tarvitset suoran linkin. Jos sovelluksen tekijä asentaa sovelluksen automaattisesti, näet sen sovellusluettelossa.
 
-### <a name="install-an-app-from-a-direct-link"></a>Sovelluksen asentaminen suoran linkin kautta
+## <a name="install-an-app-from-a-direct-link"></a>Sovelluksen asentaminen suoran linkin kautta
 Helpoin tapa asentaa uusi sovellus omatoimisesti on saada sovelluksen tekijältä sähköpostitse suora linkki.  
 
 **Tietokone** 
@@ -40,7 +40,7 @@ Kun napsautat sähköpostissa olevaa linkkiä mobiililaitteessa, sovellus asentu
 
 ![Sovelluksen sisältöluettelo mobiililaitteessa](./media/end-user-app-view/power-bi-app-index-it-spend-360.png)
 
-### <a name="get-the-app-from-microsoft-appsource"></a>Sovelluksen hakeminen Microsoft AppSourcesta
+## <a name="get-the-app-from-microsoft-appsource"></a>Sovelluksen hakeminen Microsoft AppSourcesta
 Voit etsiä ja asentaa sovelluksia myös Microsoft AppSourcesta. Näet vain ne sovellukset, joihin sinulla on käyttöoikeus (eli joihin sovelluksen tekijä on antanut sinulle tai kaikille käyttöoikeuden).
 
 1. Valitse **Sovellukset** ![Sovellukset vasemmanpuoleisessa siirtymisruudussa](./media/end-user-apps/power-bi-apps-bar.png) > **Hanki sovelluksia**. 

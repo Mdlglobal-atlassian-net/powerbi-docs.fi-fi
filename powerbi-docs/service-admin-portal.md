@@ -8,15 +8,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 10/30/2018
+ms.date: 01/24/2019
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: f7e28ce1f72a58fe2bb52103b79fa0106a0024ca
-ms.sourcegitcommit: 88ac51106ec7d0ead8c2a1550a11afae0d502bb9
+ms.openlocfilehash: 868c1226b70bd12762c20c3af5b0ee1ff59857e5
+ms.sourcegitcommit: a2f274cfb392fe3b1b466a39ec7eaf58a7c5ce00
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56086467"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "56408180"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>Power BI:n hallinta hallintaportaalissa
 
@@ -172,11 +172,11 @@ Seuraavassa kuvassa näkyy tietojen vieminen ruudusta.
 > [!NOTE]
 > Jos poistat **Vie tiedot** -toiminnon käytöstä, käyttäjät eivät voi käyttää myöskään **Analysoi Excelissä** -toimintoa tai Power BI -palvelun reaaliaikaista yhteyttä.
 
-### <a name="export-reports-as-powerpoint-presentations"></a>Vie raportit PowerPoint-esityksinä
+### <a name="export-reports-as-powerpoint-presentations-or-pdf-documents"></a>Vie raportit PowerPoint-esityksinä tai PDF-tiedostoina
 
-Organisaation käyttäjät voivat viedä Power BI -raportteja PowerPoint-tiedostoina. [Lue lisää](consumer/end-user-powerpoint.md)
+Organisaation käyttäjät voivat viedä Power BI -raportteja PowerPoint-tiedostoina tai PDF-tiedostoina. [Lue lisää](consumer/end-user-powerpoint.md)
 
-Seuraavassa kuvassa näkyy raportin **Tiedosto**-valikko, kun **Vie raportit PowerPoint-esityksinä** -asetus on käytössä.
+Seuraavassa kuvassa näkyy raportin **Tiedosto**-valikko, kun **Vie raportit PowerPoint-esityksinä tai PDF-tiedostoina** -asetus on käytössä.
 
 ![Vie raportit PowerPoint-esityksinä](media/service-admin-portal/powerbi-admin-powerpoint.png)
 
@@ -202,9 +202,9 @@ Seuraavassa kuvassa näkyy **Koko organisaatio** -vaihtoehto sisältöpaketin lu
 
 ![Sisältöpaketin julkaiseminen organisaatiolle](media/service-admin-portal/powerbi-admin-publish-entire-org.png)
 
-### <a name="create-template-organizational-content-packs-and-apps"></a>Luo organisaation sisältöpakettien ja sovellusten malleja
+### <a name="create-template-apps"></a>Luo mallisovelluksia
 
-Organisaation käyttäjät voivat luoda mallisisältöpaketteja, jotka käyttävät Power BI Desktopissa luotuja tietojoukkoja. [Lue lisää](template-content-pack-authoring.md)
+Organisaation käyttäjät voivat luoda mallisovelluksia, jotka käyttävät Power BI Desktopissa luotuja tietojoukkoja. Lue lisätietoja [mallisovelluksista](template-content-pack-authoring.md)
 
 ### <a name="push-apps-to-end-users"></a>Lähetä sovellukset käyttäjille
 
@@ -301,6 +301,18 @@ Organisaatiosi käyttäjät voivat luoda ja käyttää tietovoita. Saat yleiskat
 
 > [!NOTE]
 > Tämä asetus koskee koko organisaatiota, joten sitä ei rajoittaa ryhmien avulla.
+
+## <a name="template-apps-settings-preview"></a>Mallisovellusten asetukset (esikatselu)
+
+Mallisovelluksiin vaikuttaa kaksi asetusta. 
+
+![Power BI -hallintaportaalin mallisovellusten asetukset](media/service-admin-portal/power-bi-admin-portal-template-apps.png)
+
+Ensimmäinen asetus, **Luo mallisovelluksia**, määrittää sen, ketkä organisaatiossa voivat luoda mallisovelluksia. Mallisovellusten kehittäjät voivat sitten jakaa mallisovellukset organisaatiosi ulkopuolisille asiakkaille AppSourcen tai jonkin muun jakelumenetelmän kautta.
+
+![Power BI -hallintaportaali, Luo mallisovelluksia -asetus](media/service-admin-portal/power-bi-admin-portal-template-app-settings.png)
+
+Toinen asetus, **Asenna mallisovellukset**, määrittää sen, ketkä organisaatiossa voivat ladata ja asentaa mallisovelluksia AppSourcesta tai muusta lähteestä
 
 ## <a name="capacity-settings"></a>Kapasiteettiasetukset
 

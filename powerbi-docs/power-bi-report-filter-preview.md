@@ -7,21 +7,24 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/30/2019
+ms.date: 02/14/2019
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: 13ab7ccf690c834168da8f9c6dcb0932178651ca
-ms.sourcegitcommit: 7df786871b196725a1c5422ee561c7557660894e
+ms.openlocfilehash: b130ccbe6b3fe6fa09b9a4c4efe388f79350c500
+ms.sourcegitcommit: f07520591db6c3f27ab6490612cc56384abc6633
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55482702"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56298818"
 ---
 # <a name="the-new-filter-experience-in-power-bi-reports-preview"></a>Uusi suodatuskokemus Power BI -raporteissa (esikatselu)
 
 Tässä artikkelissa käsitellään uutta suodatuskokemusta: Power BI -suodattimet saavat uusia toimintoja ja uuden rakenteen. Kun suunnittelet raportteja Power BI Desktopissa tai Power BI -palvelussa, voit saada Suodattimet-ruudun näyttämään samalta ja toimimaan samoin kuin koko raportti. Uudessa kokemuksessa vanha Suodattimet-ruutu toimii suodattimen muokkausruutuna ja uusi Suodattimet-ruutu on ainoa, jonka raportin kuluttajat näkevät. 
  
 ![Oletusnäkymä (ei lisämukautuksia)](media/power-bi-report-filter-preview/power-bi-filter-reading.png)
+
+> [!NOTE]
+> Uusi suodatuskokemus on esikatseluvaiheessa. Uudet koontiversiot saattavat ohittaa määrittämäsi muotoilut.
 
 Raportin suunnittelijana voit tehdä seuraavia asioita uusilla suodattimilla:
 
@@ -83,6 +86,7 @@ Iso osa tätä uutta kokemusta on se, että voit nyt muotoilla suodatinruudun va
 - Taustan läpinäkyvyys
 - Suodatinruudun reuna käytössä tai pois käytöstä
 - Suodatinruudun reunan väri
+- Suodatinruudun otsikon ja ylätunnisteen fontti, väri ja tekstin koko
 
 Voit myös muotoilla näitä elementtejä suodatinkorteissa sen mukaan, onko ne otettu käyttöön (määritetty jollekin) vai käytettävissä (eivät valittuja): 
 
@@ -90,6 +94,8 @@ Voit myös muotoilla näitä elementtejä suodatinkorteissa sen mukaan, onko ne 
 - Taustan läpinäkyvyys
 - Reuna: käytössä tai pois käytöstä
 - Reunan väri
+- Fontti, väri ja tekstin koko
+- Syöteruudun väri
 
 ### <a name="set-the-format-for-the-filters-pane-and-cards"></a>Määritä Suodattimet-ruudun ja korttien muotoilu
 
@@ -100,11 +106,11 @@ Voit myös muotoilla näitä elementtejä suodatinkorteissa sen mukaan, onko ne 
 
 1. Laajenna **suodatinruutu** määrittääksesi taustan värin, kuvakkeen ja vasemman reunan täydentämään raporttisivua.
 
-    ![Laajenna suodatinruutu](media/power-bi-report-filter-preview/power-bi-filter-format-pane.png)
+    ![Laajenna suodatinruutu](media/power-bi-report-filter-preview/power-bi-filter-format-pane-font.png)
 
 1. Laajenna **suodatinkortit** määrittääksesi **Käytettävissä**- ja **Otettu käyttöön** -kohtien värin ja reunan. Jos teet Käytettävissä- ja Otettu käyttöön -kohtien korteista eri väriset, on selvää, mitkä suodattimet on otettu käyttöön. 
   
-    ![Laajenna suodatinkortti](media/power-bi-report-filter-preview/power-bi-filter-format-card.png)
+    ![Laajenna suodatinkortti](media/power-bi-report-filter-preview/power-bi-filter-format-card-font.png)
 
 ## <a name="view-filters-for-a-visual-in-reading-mode"></a>Näytä visualisoinnin suodattimet lukutilassa
 

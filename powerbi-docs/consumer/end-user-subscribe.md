@@ -8,14 +8,14 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 02/05/2019
+ms.date: 12/14/2019
 LocalizationGroup: Common tasks
-ms.openlocfilehash: df167f8693708c08bc44e935cff184917d8aaf54
-ms.sourcegitcommit: 54d44deb6e03e518ad6378656c769b06f2a0b6dc
+ms.openlocfilehash: 26ba6d0ea23451863d05b13a79e57d483b15881f
+ms.sourcegitcommit: f07520591db6c3f27ab6490612cc56384abc6633
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55794312"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56298841"
 ---
 # <a name="subscribe-to-a-report-or-dashboard-in-power-bi-service"></a>Raportin tai koontinäytön tilaaminen Power BI -palvelussa 
 Ei ole koskaan ollut näin helppoa pysyä ajan tasalla tärkeimmistä koontinäytöistä ja raporteista. Kun tilaat itsellesi tärkeimmät raporttisivut ja koontinäytöt, Power BI lähettää sinulle sähköpostitse niistä tilannevedoksen. Voit määrittää, miten usein haluat Power BI:n lähettävän sähköpostia: päivittäin, viikoittain tai tietojen päivittyessä. Voit myös määrittää tietyn ajankohdan sille, milloin Power BI lähettää sähköpostit, tai voit suorittaa tämän nyt.  
@@ -73,6 +73,7 @@ Vain sinä voit hallita tilauksiasi. Valitse uudelleen **Tilaa** ja valitse vase
 Tilaus päättyy, jos Pro-käyttöoikeus umpeutuu, omistaja poistaa koontinäytön tai tilauksen luomiseen käytetty käyttäjätili poistetaan.
 
 ## <a name="considerations-and-troubleshooting"></a>Huomioon otettavat seikat ja vianmääritys
+* Jos koontinäytössä on yli 25 kiinnitettyä ruutua tai neljä kiinnitettyä reaaliaikaisista raporttisivua, koontinäyttö ei ehkä hahmonnu täysin käyttäjille lähetetyissä tilauksen sähköpostiviesteissä. Suosittelemme, että vähennät kiinnitettyjen ruutujen määrän alle 25:een ja kiinnitettyjen reaaliaikaisten raporttien määrän alle neljään, jotta sähköpostiviesti hahmontuisi oikein.  
 * Jos koontinäytön sähköpostitilausten joillakin ruuduilla on käytössä rivitason suojaus (RLS), näitä ruutuja ei näytetä.  Jos raportin sähköpostitilausten tietojoukko käyttää rivitason suojausta (RSL), et pysty luomaan tilausta.
 * Raporttisivujen tilaukset on sidottu raporttisivun nimeen. Jos tilaat raporttisivun ja nimeät sen uudelleen, sinun on luotava myös tilaus uudelleen.
 * Jos et voi käyttää tilaustoimintoa, ota yhteyttä järjestelmänvalvojaasi. Organisaatiosi on ehkä poistanut tämän toiminnon käytöstä todennussyistä tai muista syistä.  

@@ -10,12 +10,12 @@ ms.topic: tutorial
 ms.date: 02/10/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: a82bbc3e4b31dca0a304c1d3f64d4bc63e4e7fb3
-ms.sourcegitcommit: 88ac51106ec7d0ead8c2a1550a11afae0d502bb9
+ms.openlocfilehash: d7ad1cc4ffb339aeb1a64cd28274fde4f8ef6af6
+ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56086766"
+ms.lasthandoff: 02/16/2019
+ms.locfileid: "56325147"
 ---
 # <a name="key-influencers-visualization"></a>Tärkeiden vaikuttajien visualisointi
 Tärkeiden vaikuttajien visualisoinnin avulla ymmärrät paremmin sinua kiinnostavaa arvoa säätäviä tekijöitä. Se analysoi tietosi, panee merkitsevät tekijät järjestykseen ja näyttää ne tärkeinä vaikuttajina. Olet ehkä kiinnostunut tietämään, mikä vaikuttaa työntekijöiden vaihtuvuuteen. Yksi tekijä voi olla työsopimuksen pituus ja toinen työntekijän ikä. 
@@ -167,11 +167,11 @@ Tässä ryhmässä 74,3 % on antanut alhaisen luokituksen. Keskimääräinen asi
  
 Tärkeimpien vaikuttajien visualisointi on tällä hetkellä julkisessa esikatselussa, ja käyttäjien tulisi olla tietoisia eräistä rajoituksista. Toimintoihin, joita ei tällä hetkellä tueta, kuuluvat: 
 - Sellaisten arvojen analysointi, jotka ovat koosteita/mittauksia 
-- Visualisoinnin käyttäminen upotettuna 
-- Visualisoinnin käyttäminen Power BI -mobiilissa 
+- Visualisoinnin käyttäminen Power BI Embeddedissä
+- Visualisoinnin käyttäminen Power BI -mobiilisovelluksissa
 - Rivitason suojauksen tuki 
 - Suorien kyselyjen tuki 
-- Reaaliaikaisten kyselyjen tuki 
+- Live-yhteyksien tuki 
  
 **Näen sellaisen virheen, että vaikuttajia/segmenttejä ei ole löytynyt ollenkaan. Mistä tämä johtuu?**  
 
@@ -247,15 +247,16 @@ Tämä johtuu siitä, että visualisointi ottaa huomioon myös arvopisteiden mä
 
 **Miten tärkeimmät vaikuttajat lasketaan?**
 
-Taustalla AI-visualisointi suorittaa logistista regressiota tärkeimpien vaikuttajien laskemiseksi. Logistinen regressio on tilastotieteellinen malli, joka vertaa erilaisia ryhmiä toisiinsa. Jos olisimme selvittämässä, mistä alhaiset luokitukset johtuvat, logistinen regressio selvittäisi, miten alhaisen pistemäärän antaneet asiakkaat eroavat korkean pistemäärän antaneista. Jos meillä olisi useita luokkia (korkea pistemäärä, neutraali pistemäärä, alhainen pistemäärä), tarkastelisimme sitä, miten alhaisen luokituksen antaneet asiakkaat eroavat niistä, jotka eivät antaneet alhaista luokitusta (miten he eroavat niistä, jotka antoivat korkean TAI neutraalin luokituksen). 
+Taustalla AI-visualisointi suorittaa [ML.NET](https://dotnet.microsoft.com/apps/machinelearning-ai/ml-dotnet)-ympäristön avulla logistista regressiota tärkeimpien vaikuttajien laskemiseksi. Logistinen regressio on tilastotieteellinen malli, joka vertaa erilaisia ryhmiä toisiinsa. Jos olisimme selvittämässä, mistä alhaiset luokitukset johtuvat, logistinen regressio selvittäisi, miten alhaisen pistemäärän antaneet asiakkaat eroavat korkean pistemäärän antaneista. Jos meillä olisi useita luokkia (korkea pistemäärä, neutraali pistemäärä, alhainen pistemäärä), tarkastelisimme sitä, miten alhaisen luokituksen antaneet asiakkaat eroavat niistä, jotka eivät antaneet alhaista luokitusta (miten he eroavat niistä, jotka antoivat korkean TAI neutraalin luokituksen). 
  
 Logistinen regressio etsii tiedoista kuvioita selvittäen, miten alhaisen luokituksen antaneet asiakkaat mahdollisesti eroavat korkean luokituksen antaneista. Se saattaa esimerkiksi havaita, että asiakkaat, joilla on enemmän tukipalvelupyyntöjä, antavat paljon suuremman %-määrän alhaisia luokituksia kuin ne, joilla on harvoja tai ei ollenkaan tukipalvelupyyntöjä.
  
 Logistinen regressio ottaa huomioon myös arvopisteiden määrän. Jos esimerkiksi asiakkaat, jotka ovat järjestelmänvalvojan roolissa, antavat suhteessa enemmän kielteisiä pistemääriä, mutta järjestelmänvalvojia on vain kourallinen, tätä ei pidetä vaikutusvaltaisena tekijänä. Tämä johtuu siitä, että käytettävissä ei ole riittävän paljon arvopisteitä, jotta niistä voitaisiin päätellä kuvion olemassaolo. Tilastoanalyysitestiä (Waldin testiä) käytetään sen määrittämiseen, voidaanko tekijää pitää vaikuttajana. Visualisointi määrittää kynnysarvon käyttämällä p-arvoa 0,05. 
- 
+
+
 **Miten segmentit lasketaan?**
 
-AI-visualisointi suorittaa taustalla päätöspuuta kiinnostavien aliryhmien löytämiseksi. Päätöspuun tarkoituksena on saada koottua aliryhmä arvopisteitä, jolla meitä kiinnostava mittausarvo on suhteellisen korkealla (esimerkiksi alhaisen luokituksen antaneet asiakkaat). 
+AI-visualisointi suorittaa taustalla [ML.NET](https://dotnet.microsoft.com/apps/machinelearning-ai/ml-dotnet)-ympäristön avulla päätöspuuta kiinnostavien aliryhmien löytämiseksi. Päätöspuun tarkoituksena on saada koottua aliryhmä arvopisteitä, jolla meitä kiinnostava mittausarvo on suhteellisen korkealla (esimerkiksi alhaisen luokituksen antaneet asiakkaat). 
 
 Päätöspuun ottaa kunkin selittävän tekijän käsittelyyn ja pyrkii selvittämään, millä tekijällä saadaan paras jako. Jos esimerkiksi suodatamme tiedot niin, että ne sisältävät enää vain suuryritysasiakkaat, erottaako tämä joukosta asiakkaat, jotka antoivat meille korkean tai alhaisen luokituksen? Tai ehkä on parempi suodattaa tiedot niin, että ne sisältävät vain tietoturva-asioita kommentoineet asiakkaat? 
 

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 01/11/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: d0c6222c4b10307985ad039c3b391c8648614979
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 18872e65154f70e882c4f6f60c04420b17038d32
+ms.sourcegitcommit: 8207c9269363f0945d8d0332b81f1e78dc2414b0
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54280052"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56249110"
 ---
 # <a name="accessibility-in-power-bi-desktop-reports"></a>Power BI Desktop -raporttien helppokäyttöisyys
 Power BI:ssa on ominaisuuksia, joiden avulla toimintarajoitteisten henkilöiden on helppo käyttää ja käsitellä Power BI -raportteja. Näitä ominaisuuksia ovat esimerkiksi mahdollisuus käyttää raporttia näppäimistön tai näytönlukuohjelman avulla, kohdistaminen sivun eri objekteihin sarkaimella sekä ymmärtäväinen merkkien käyttö visualisoinneissa.
@@ -141,6 +141,11 @@ Pyrkimyksissämme parantaa helppokäyttötoimintoja yllä olevan luettelon kokem
 ### <a name="pane-navigation"></a>Siirtyminen ruudussa
 | Toiminto           | Paina                |
 | :------------------- | :------------------- |
+| Valitse useita | Ctrl + välilyönti |
+| Kutista yksittäinen taulukko | Vasen nuolinäppäin |
+| Laajenna yksittäinen taulukko | Oikea nuolinäppäin |
+| Kutista kaikki taulukot | Alt + Vaihto + 1 |
+| Laajenna kaikki taulukot | Alt + Vaihto + 9 |
 | Avaa pikavalikko | <ul><li>Windows-näppäimistö: Windows-kontekstinäppäin + F10.  Windows-kontekstiavain on vasemman Alt-näppäimen ja vasemman nuolinäppäimen välissä</li><li>Muu näppäimistö: Vaihto + F10</li></ul> |
 
 ### <a name="slicer"></a>Osittaja

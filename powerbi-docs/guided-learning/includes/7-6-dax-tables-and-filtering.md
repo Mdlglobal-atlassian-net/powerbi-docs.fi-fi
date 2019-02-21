@@ -21,7 +21,7 @@ Voit yhdistellä taulukkofunktioita lausekkeissasi, kunhan kukin funktio käytt�
 
 Tämä lauseke lisää suodattimen koko *taulukkoon* ja ohittaa kaiken nykyisen suodatinsisällön.
 
-DISTINCT-funktio palauttaa sarakkeen erilliset arvot, jotka ovat myös näkyvissä nykyisessä kontekstissa. Yllä olevan esimerkin DAX-lausekkeessa **ALL**-funktio ohittaa suodattimet, mutta jos korvaat **ALL**-funktion **DISTINCT**-funktiolla, ne huomioidaan.
+DISTINCT-funktio palauttaa sarakkeen erilliset arvot, jotka ovat myös näkyvissä nykyisessä kontekstissa. Yllä olevan esimerkin DAX-lausekkeessa **ALL**-funktio ohittaa suodattimet, mutta jos korvaat **ALL**-funktion **DISTINCT**-funktiolla, suodattimet huomioidaan.
 
 ## <a name="counting-values-with-dax"></a>Arvojen laskeminen DAX:n avulla
 Power BI -raporttien käyttäjät haluavat usein löytää vastauksen seuraavaan kysymykseen:

@@ -8,15 +8,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/06/2018
+ms.date: 02/14/2019
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: 8dd9af8b44e74aafb97e3265b9ee1c32a05edc64
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 9e1ed67302b3fc4d7bf990040259e9e4615794a5
+ms.sourcegitcommit: f07520591db6c3f27ab6490612cc56384abc6633
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54281547"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56298910"
 ---
 # <a name="export-reports-from-power-bi-to-powerpoint"></a>Raporttien vieminen Power BI:stä PowerPointiin
 Voit julkaista Power BI:llä raportin **Microsoft PowerPointiin** ja luoda helposti Power BI -raporttiin perustuvan diasarjan. **PowerPointiin vietäessä** tapahtuu seuraavaa:
@@ -35,6 +35,10 @@ Valitse Power BI -palvelussa raportti, joka näytetään kankaalla. Voit myös v
 Kun PowerPointiin vietävä raportti näkyy kankaalla, valitse **Tiedosto > Vie PowerPointiin** Power BI -palvelun valikkoriviltä.
 
 ![Lähikuva vasemmasta siirtymispalkista, jossa Oma työtila on valittuna, avattava Tiedosto-valikko valittuna](media/end-user-powerpoint/powerbi_to_powerpoint_1.png)
+   
+Näkyviin tulee ponnahdusikkuna, jossa on vaihtoehtoina **Nykyinen näkymä** ja **Oletusnäkymä**.  **Nykyinen näkymä** vie raportin nykyisessä tilassa, johon sisältyvät ne aktiiviset muutokset, joita olet tehnyt osittajan ja suodattimen arvoihin.  Useimmat käyttäjät valitsevat tämän vaihtoehdon.  Vaihtoehtoisesti voit valita **Oletusnäkymä**-vaihtoehdon, joka vie raportin sen alkuperäisessä tilassa (jossa laatija on jakanut sen) eikä sisällä mitään alkuperäiseen tilaan tekemiäsi muutoksia.
+    
+Ponnahdusikkunassa on myös valintaruutu, jossa voit valita, viedäänkö raportin piilotetut välilehdet.  Valitse tämä valintaruutu, jos haluat viedä vain sellaiset raportin välilehdet, joita voit tarkastella selaimessasi.  Jos haluat viedä myös kaikki piilotetut välilehdet, voit jättää tämän valintaruudun valitsematta.  Jos valintaruutu näkyy harmaana, raportissa ei ole piilotettuja välilehtiä.  Kun olet tehnyt valintasi, jatka napsauttamalla **Vie**.
 
 Näet Power BI -palvelun selainikkunan oikeassa yläkulmassa ilmoituspalkin, jossa ilmoitetaan raportin viemisestä PowerPointiin. Raportin vieminen voi kestää muutamia minuutteja, minkä aikana voit jatkaa Power BI:ssä työskentelemistä.
 
@@ -74,7 +78,6 @@ Edellä olevien vaiheiden jälkeen voit tehdä PowerPoint-esitykselläsi ja sen 
 ## <a name="limitations"></a>Rajoitukset
 Huomioi seuraavat seikat ja rajoitukset, kun käytät **Vieminen PowerPointiin** -ominaisuutta.
 
-* Istunnon sisäinen vuorovaikutteisuus, kuten korostus ja suodatus sekä porautuminen, eivät vielä ole vielä tuettuja ominaisuuksia PowerPointiin vietäessä. Viety PowerPoint näyttää alkuperäiset visualisoinnit sellaisina kuin ne tallennettiin raporttiin. Jos olet käyttänyt suodattimia ja osittajia ja haluat säilyttää ne viennissä, tallenna raportti ja vie se tallentamisen jälkeen.
 * **R-visualisointeja** ei tällä hetkellä tueta. Tällaiset visualisoinnit viedään tyhjinä kuvina PowerPointiin virhesanoman kanssa, jossa ilmoitetaan, ettei visualisointia tueta.
 * **Sertifioituja** **mukautettuja visualisointeja** tuetaan. Saat lisätietoja sertifioiduista mukautetuista visualisoinneista, mukaan lukien sertifioinnin hakemisesta visualisoinnille, artikkelista [Mukautetun visualisoinnin sertifiointi](../power-bi-custom-visuals-certified.md). Ei-sertifioidut mukautetut visualisoinnit viedään tyhjinä kuvina PowerPointiin virhesanoman kanssa, jossa ilmoitetaan, ettei visualisointia tueta.
 * Yli 30 raporttisivua sisältäviä raportteja ei tällä hetkellä voi viedä.

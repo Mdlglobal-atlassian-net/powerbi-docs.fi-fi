@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/10/2019
+ms.date: 02/14/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 68d350035732d8335079bf76a859919d696e2721
-ms.sourcegitcommit: 80961ace38ff9dac6699f81fcee0f7d88a51edf4
+ms.openlocfilehash: 5e1bd67ba14ed35a97d91e5ed76f7a3bd8de56ea
+ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56223670"
+ms.lasthandoff: 02/16/2019
+ms.locfileid: "56324809"
 ---
 # <a name="self-service-data-prep-in-power-bi-preview"></a>Omatoiminen tietojen valmistelu Power BI:ssä (esikatselu)
 
@@ -52,6 +52,9 @@ Tässä on joitakin esimerkkejä siitä, miten voit käyttää tietovoita:
 ## <a name="how-to-use-dataflows"></a>Tietovoiden käyttäminen
 
 Edellisessä osiossa kuvailtiin muutamia tapoja luoda nopeasti tehokkaita analyyseja Power BI:ssä tietovoiden avulla. Tässä osiossa kerrotaan, miten voit luoda nopeasti merkityksellisiä tietoja käyttämällä tietovoita organisaatiossa, sekä käydään pikaisesti läpi, miten BI-asiantuntijat voivat luoda omia tietovoitaan ja mukauttaa merkityksellisiä tietoja omalle organisaatiolleen.
+
+> [!NOTE]
+> Tietovoiden käyttämiseksi tarvitset maksetun Power BI-tilin, kuten Power BI Pro- tai Power BI Premium -tilin, mutta tietovoiden käyttämisestä ei veloiteta erikseen. 
 
 ### <a name="extend-the-common-data-model-for-your-business-needs"></a>Common Data Modelin laajentaminen liiketoimintatarpeisiisi
 Organisaatioissa, jotka haluavat laajentaa Common Data Modelia (CDM), BI-asiantuntijat voivat mukauttaa vakioentiteettejä tai luoda uusia tietovoiden avulla. Tätä tietomallin mukauttamisen omatoimista lähestymistapaa voidaan käyttää tietovoiden kanssa organisaatiolle räätälöityjen sovellusten ja Power BI -raporttinäkymien luomiseen.

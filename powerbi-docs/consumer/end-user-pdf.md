@@ -8,15 +8,15 @@ ms.reviewer: cmfinlan
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 02/04/2019
+ms.date: 02/14/2019
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: c18257f1f4e4e3f325c8d4d895e3b6abf88e900c
-ms.sourcegitcommit: 54d44deb6e03e518ad6378656c769b06f2a0b6dc
+ms.openlocfilehash: 1aaa57006b9a5aac2b077d3326ed6a39e6a4206d
+ms.sourcegitcommit: f07520591db6c3f27ab6490612cc56384abc6633
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55794986"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56298864"
 ---
 # <a name="export-reports-from-power-bi-to-pdf"></a>Raporttien vieminen Power BI:stä PDF-muotoon
 Power BI:llä voit julkaista raportin PDF-muodossa ja luoda helposti Power BI -raporttiisi perustuvan PDF-tiedoston. Kun **viet PDF-muotoon**, jokaisesta Power BI -raportin sivusta tulee yksittäinen sivu PDF-tiedostossa.
@@ -28,6 +28,10 @@ Valitse Power BI -palvelussa raportti, joka näytetään kankaalla. Voit myös v
 
     ![Tiedosto-kohdan valitseminen valikkopalkista, nuoli osoittamassa Vie PDF-muotoon -kohtaa](media/end-user-pdf/power-bi-export-pdf.png)
 
+    Näkyviin tulee ponnahdusikkuna, jossa on vaihtoehtoina **Nykyinen näkymä** ja **Oletusnäkymä**.  **Nykyinen näkymä** vie raportin nykyisessä tilassa, johon sisältyvät ne aktiiviset muutokset, joita olet tehnyt osittajan ja suodattimen arvoihin.  Useimmat käyttäjät valitsevat tämän vaihtoehdon.  Vaihtoehtoisesti voit valita **Oletusnäkymä**-vaihtoehdon, joka vie raportin sen alkuperäisessä tilassa (jossa laatija on jakanut sen) eikä sisällä mitään alkuperäiseen tilaan tekemiäsi muutoksia.
+    
+    Ponnahdusikkunassa on myös valintaruutu, jossa voit valita, viedäänkö raportin piilotetut välilehdet.  Valitse tämä valintaruutu, jos haluat viedä vain sellaiset raportin välilehdet, joita voit tarkastella selaimessasi.  Jos haluat viedä myös kaikki piilotetut välilehdet, voit jättää tämän valintaruudun valitsematta.  Jos valintaruutu näkyy harmaana, raportissa ei ole piilotettuja välilehtiä.  Kun olet tehnyt valintasi, jatka napsauttamalla Vie-painiketta.
+    
     Oikeassa yläkulmassa näytetään edistymispalkki. Vieminen voi kestää muutamia minuutteja, minkä aikana voit jatkaa Power BI:n käyttöä.
 
     ![Viennin edistymisilmoitus](media/end-user-pdf/power-bi-export-message.png)
@@ -43,8 +47,6 @@ Siinä kaikki. Voit ladata tiedoston ja avata sen millä tahansa PDF-lukuohjelma
 
 ## <a name="limitations-and-considerations"></a>Rajoitukset ja huomioitavat asiat
 Huomioi seuraavat seikat ja rajoitukset, kun käytät **Vie PDF-muotoon** -toimintoa.
-
-- Istunnon sisäinen vuorovaikutteisuus, kuten korostus ja suodatus sekä porautuminen, eivät vielä ole vielä tuettuja ominaisuuksia PDF-muotoon vietäessä. Viety PDF-tiedosto näyttää alkuperäiset visualisoinnit sellaisina kuin ne tallennettiin raporttiin. Jos olet käyttänyt suodattimia ja osittajia ja haluat säilyttää ne viennissä, tallenna raportti ja vie se tallentamisen jälkeen.
 
 * **R-visualisointeja** ei tällä hetkellä tueta. Nämä visualisoinnit ovat tyhjiä PDF-tiedostossa. Niiden tilalla näytetään virheilmoitus.  
 
