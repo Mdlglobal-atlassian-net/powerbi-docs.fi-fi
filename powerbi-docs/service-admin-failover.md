@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 01/30/2019
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 7446cb9db0f4ebbb20e316365263fa6f09de71bb
-ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
+ms.openlocfilehash: a5f3f5003eb1d22b0667698691471150f04553d8
+ms.sourcegitcommit: 654fae0af739bd599e029d692f142faeba0a502f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55448217"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56426558"
 ---
 # <a name="power-bi-high-availability-failover-and-disaster-recovery-faq"></a>Power BI:n suuren käytettävyyden, vikasietoisuuden ja järjestelmäpalautuksen usein kysytyt kysymykset
 
@@ -29,7 +29,7 @@ Power BI on täysin hallittu palveluna tarjottava ohjelmisto eli SaaS-ohjelmisto
 
 Power BI:n kustakin komponentista ylläpidetään useita esiintymiä Azuren eri palvelinkeskuksissa (eri alueilla) liiketoiminnan jatkuvuuden takaamiseksi. Jos ilmenee vika tai ongelma, jonka vuoksi Power BI ei ole käytettävissä tietyllä alueella tai tietyssä palvelinkeskuksessa, Power BI siirtää vikasietoisesti kaikki komponentit alueelle ja palvelinkeskukseen, jossa on vastaava varmuuskopioesiintymä. Vikasietoisuus palauttaa Power BI -palvelun toimintakuntoon uudella alueella (yleensä tämä on maantieteellisesti samalla alueella, kuten [Microsoft Trust Centerissä](https://www.microsoft.com/TrustCenter/CloudServices/business-application-platform/data-location) kerrotaan).
 
-Vikasietoinen Power BI -palvelun esiintymä tukee vain _lukutoimintoja_. Tämä tarkoittaa sitä, että seuraavia toimintoja ei tueta vikasietoisuuden aikana: päivitykset, raporttien julkaisutoiminnot, koontinäyttöjen ja raporttien muokkaukset sekä muut toiminnot, jotka edellyttävät muutoksia Power BI -metatietoihin (esimerkiksi kommentin lisääminen raporttiin).  Lukutoiminnot, esimerkiksi koontinäyttöjen ja raporttien näyttäminen (jotka eivät perustu paikallisten tietolähteiden Direct Query- ja Live Connect -yhteyksiin), toimivat normaalisti.
+Vikasietoinen Power BI -palvelun esiintymä tukee vain _lukutoimintoja_. Tämä tarkoittaa sitä, että seuraavia toimintoja ei tueta vikasietoisuuden aikana: päivitykset, raporttien julkaisutoiminnot, koontinäyttöjen ja raporttien muokkaukset sekä muut toiminnot, jotka edellyttävät muutoksia Power BI -metatietoihin (esimerkiksi kommentin lisääminen raporttiin).  Lukutoiminnot, esimerkiksi koontinäyttöjen ja raporttien näyttäminen (jotka eivät perustu paikallisten tietolähteiden DirectQuery- ja Live Connect -yhteyksiin), toimivat normaalisti.
 
 ## <a name="how-are-backup-instances-kept-in-sync-with-my-data"></a>Miten varmuuskopioesiintymät pidetään synkronoituina tietojeni kanssa?
 
@@ -69,4 +69,4 @@ Jos organisaatiosi käyttämään Power BI -ratkaisuun liittyy jokin seuraavista
 
 ## <a name="will-gateways-function-when-in-failover-mode"></a>Toimivatko yhdyskäytävät vikasietotilassa?
 
-Eivät. Paikallisten tietolähteiden tiedot (Direct Queryyn ja Live Connectiin perustuvat raportit ja koontinäytöt) eivät toimi vikasietoisuuden aikana. Yhdyskäytävämääritys ei kuitenkaan muutu: kun Power BI -esiintymä palaa alkuperäiseen tilaansa, yhdyskäytävien normaali toiminta jatkuu.
+Ei. Paikallisten tietolähteiden tiedot (Direct Queryyn ja Live Connectiin perustuvat raportit ja koontinäytöt) eivät toimi vikasietoisuuden aikana. Yhdyskäytävämääritys ei kuitenkaan muutu: kun Power BI -esiintymä palaa alkuperäiseen tilaansa, yhdyskäytävien normaali toiminta jatkuu.

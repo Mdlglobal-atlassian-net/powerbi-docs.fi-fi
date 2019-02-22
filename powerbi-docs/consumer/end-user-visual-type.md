@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/24/2019
+ms.date: 02/12/2019
 ms.author: mihart
 LocalizationGroup: Consumer
-ms.openlocfilehash: 35d5a6f9911afea7b91b37299225c191cd4d7ac9
-ms.sourcegitcommit: 54d44deb6e03e518ad6378656c769b06f2a0b6dc
+ms.openlocfilehash: 0118c9b7bb1d00daf1b6baeb7638916b49d8af49
+ms.sourcegitcommit: 654fae0af739bd599e029d692f142faeba0a502f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55794843"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56426765"
 ---
 # <a name="visualization-types-in-power-bi"></a>Visualisointityypit Power BI:ssä
 Visualisointeja löytyy raporteista, koontinäytöistä, sovelluksista ja Q&A:sta. Jotkin näistä visualisointityypeistä ovat Power BI:hin sisältyviä visualisointeja ja jotkin ovat *mukautettuja visualisointeja*. Mukautetut visualisoinnit luodaan Power BI:n ulkopuolella siten, että *raporttien suunnittelijat* voivat lisätä niitä Power BI:n raportteihin, koontinäyttöihin ja sovelluksiin. 
@@ -98,10 +98,12 @@ Viisarimittarit ovat hyvä vaihtoehto, kun:
 - näytetään yhden mittauksen kunto
 - näytetään tiedot, joita voidaan nopeasti tarkistaa ja ymmärtää.
 
-<!-- ### Key influencers chart
-![key influencer](../visuals/media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-influencers2.png)
+ ### <a name="key-influencers-chart"></a>Tärkeimpien vaikuttajien kaavio
+![tärkein vaikuttaja](../visuals/media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-influencer.png)
 
-A key influencer chart displays the major contributors to a selected result or value.  -->
+Tärkeimpien vaikuttajien kaaviossa näytetään valittuun tulokseen tai arvoon eniten vaikuttavat tekijät.
+
+Tärkeimmät vaikuttajat auttaa sinua ymmärtämään tekijöitä, jotka vaikuttavat johonkin tärkeään arvoon. Tällainen vaikuttaja voi olla esimerkiksi se, *mikä saa asiakkaat tekemään toisen tilauksen *tai* miksi myynti oli hyvällä tasolla viime kesäkuussa*. 
 
 ### <a name="kpis"></a>Suorituskyvyn mittarit
 ![suorituskykymittari](../visuals/media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-kpi.png)

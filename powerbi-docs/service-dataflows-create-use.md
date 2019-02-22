@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/06/2018
+ms.date: 02/19/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: bb550bb2a009c5f227541db41a9bc45fc708d1e1
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: b2b928ea308f546c7cf023c6ef187aa7c516987c
+ms.sourcegitcommit: 654fae0af739bd599e029d692f142faeba0a502f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54279040"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56426627"
 ---
 # <a name="creating-and-using-dataflows-in-power-bi-preview"></a>Tietovoiden luominen ja käyttäminen Power BI:ssä (esikatselu)
 
@@ -155,6 +155,10 @@ Joskus voi käydä niin, että tietovuon yhteyden muodostamisessa tietolähteese
 * **Salesforce-liitin** – Salesforce-kokeilutilin ja tietovuon käyttö on aiheuttanut yhteysvirheen eikä mitään tietoja ole annettu. Voit ratkaista ongelman käyttämällä tuotannon Salesforce-tiliä tai kehittäjätiliä testaamiseen.
 
 * **SharePoint-liitin** – Varmista, että annat SharePoint-sivuston pääosoitteen ilman alikansioita tai tiedostoja. Käytä esimerkiksi seuraavankaltaista linkkiä: https://microsoft.sharepoint.com/teams/ObjectModel/ 
+
+* **JSON-tiedostoyhdistin** – tällä hetkellä voit muodostaa yhteyden JSON-tiedostoon vain perustodentamista.  Yhdistämistä JSON-tiedostoon antamalla tunnistetiedot URL-osoitteessa (esimerkiksi https://XXXXX.blob.core.windows.net/path/file.json?sv=2019-01-01&si=something&sr=c&sig=123456abcdefg...) **ei** tällä hetkellä tueta.  
+
+* **Azure SQL Data Warehouse** – tietovuot eivät tällä hetkellä tue Azure SQL Data Warehousen Azure Active Directory (AAD) -todentamista. Käytä tähän skenaarioon perustodentamista.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 

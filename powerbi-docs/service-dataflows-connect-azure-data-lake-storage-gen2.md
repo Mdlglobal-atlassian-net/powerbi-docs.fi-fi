@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 01/10/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 8cc1201c506e98ae33b68ef0cf802dae20b6f493
-ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
+ms.openlocfilehash: dc22c075c479510810b4a914fd999e38118e12e5
+ms.sourcegitcommit: 654fae0af739bd599e029d692f142faeba0a502f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56216512"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56426719"
 ---
 # <a name="connect-azure-data-lake-storage-gen2-for-dataflow-storage-preview"></a>Yhdistä Azure Data Lake Storage Gen2 tietovuon tallennukseen (esikatselu)
 
@@ -70,6 +70,8 @@ Noudata artikkelin [Roolin määrittäminen suojausobjektille](https://docs.micr
 Valitse **Lisää roolimääritys** -ikkunassa **Lukija**-rooli, joka määritetään Power BI -palvelulle. Etsi sitten haun avulla **Power BI -palvelu**. Seuraavassa kuvassa näytetään Power BI -palvelulle määritetty **Lukija**-rooli.
 
 ![Lukija-roolille määritetty Power BI -palvelu](media/service-dataflows-connect-azure-data-lake-storage-gen2/dataflows-connect-adlsg2_05.jpg)
+
+Huomautus: Odota vähintään 30 minuuttia, jotta käyttöoikeus ehtii siirtyä portaalista Power BI:hin. Aina kun muutat oikeutta portaalissa, se tulee voimaan aikaisintaan 30 minuutin kuluttua Power BI:ssä. 
 
 
 ### <a name="create-a-file-system-for-power-bi"></a>Luo tiedostojärjestelmä Power BI:tä varten
