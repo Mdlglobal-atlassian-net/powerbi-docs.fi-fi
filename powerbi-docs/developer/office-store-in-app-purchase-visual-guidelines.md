@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 11/26/2018
-ms.openlocfilehash: 097095cda1e0ffea4f43059351f22638c502e8b4
-ms.sourcegitcommit: a2f274cfb392fe3b1b466a39ec7eaf58a7c5ce00
+ms.openlocfilehash: 4cbd17a08a8cb7c7253f60f29a19341598c9800f
+ms.sourcegitcommit: 654fae0af739bd599e029d692f142faeba0a502f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56408065"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56426535"
 ---
 # <a name="guidelines-for-power-bi-visuals-with-additional-purchases"></a>Ohjeet Power BI -visualisointeihin, jotka sisältävät lisäostoja
 
@@ -34,6 +34,9 @@ Kehittäjät lataavat ostoja sisältävät visualisointinsa AppSourceen myyjien 
 ## <a name="what-is-a-power-bi-visual-with-iap-features"></a>Mikä on sovelluskohtaisia ostoja sisältävä Power BI -visualisointi?
 
 Sovelluskohtaisia ostoja sisältävä visualisointi on maksuttomia ominaisuuksia tarjoava maksuton visualisointi, joka kuitenkin sisältää myös lisäominaisuuksia, joiden käyttö saattaa edellyttää lisämaksuja. Kehittäjien on ilmoitettava käyttäjille visualisoinnin kuvauksessa siitä, minkä ominaisuuksien käyttö edellyttää lisäostoja. Microsoft ei tällä hetkellä tarjoa omia ohjelmointirajapintoja tukemaan ostoja sovelluksissa ja apuohjelmissa. Kehittäjät voivat käyttää ostoihin haluamaansa kolmannen osapuolen maksujärjestelmää. Tutustu kaupan [käytäntöön](https://docs.microsoft.com/office/dev/store/validation-policies#2-apps-or-add-ins-can-display-certain-ads).
+
+> [!NOTE]
+> Vesileimoja ei sallita ilmaisissa ominaisuuksissa. Kehittäjät saattavat näyttää ponnahdusikkunan tai vesileiman, jos valinnaisia maksullisia lisäominaisuuksia käytetään ilman kelvollista käyttöoikeutta.  
 
 ## <a name="logo-guidelines"></a>Logo-ohjeet
 

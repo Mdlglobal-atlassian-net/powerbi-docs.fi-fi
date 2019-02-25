@@ -3,19 +3,19 @@ title: Tärkeimpien vaikuttajien visualisoinnin opetusohjelma
 description: Opetusohjelma – tärkeiden vaikuttajien visualisoinnin luominen Power BI:ssä
 author: mihart
 manager: kvivek
-ms.reviewer: justyna
+ms.reviewer: juluczni
 ms.service: powerbi
 ms.component: powerbi-visuals
 ms.topic: tutorial
-ms.date: 02/10/2019
+ms.date: 02/12/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: d7ad1cc4ffb339aeb1a64cd28274fde4f8ef6af6
-ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
+ms.openlocfilehash: c937104d570409023373a5ccbcf94e1b66e6aaab
+ms.sourcegitcommit: 654fae0af739bd599e029d692f142faeba0a502f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/16/2019
-ms.locfileid: "56325147"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56426788"
 ---
 # <a name="key-influencers-visualization"></a>Tärkeiden vaikuttajien visualisointi
 Tärkeiden vaikuttajien visualisoinnin avulla ymmärrät paremmin sinua kiinnostavaa arvoa säätäviä tekijöitä. Se analysoi tietosi, panee merkitsevät tekijät järjestykseen ja näyttää ne tärkeinä vaikuttajina. Olet ehkä kiinnostunut tietämään, mikä vaikuttaa työntekijöiden vaihtuvuuteen. Yksi tekijä voi olla työsopimuksen pituus ja toinen työntekijän ikä. 
@@ -46,7 +46,7 @@ Analysoitavan arvon on oltava luokkakenttä.
 
 6. ***Oikea ruutu*** – oikea ruutu sisältää yhden visualisoinnin. Tässä tapauksessa pylväskaavio näyttää kaikki arvot **tärkeimmälle vaikuttajalle**, **teema** joka valitaan vasemmasta ruudusta. Tietty arvo (**Käytettävyys**) vasemmasta ruudusta on vihreä ja kaikki muut **Teeman** arvot ovat mustalla.
 
-7. ***Keskiarvon viiva*** – keskiarvo lasketaan kaikille muille mahdollisille **Teeman** arvoille paitsi **käytettävyydelle**. Laskelma koskee siis kaikkia mustalla näkyviä arvoja. Se kertoo meille, mikä muiden **teemojen** prosenttiosuus johti alhaiseen luokitukseen. Toisin sanoen antaessaan luokituksen asiakas ilmoittaa luokitukselle myös syyn eli **teeman**. Teemoja ovat esimerkiksi käytettävyys, nopeus, tietoturva ym. **Teema** = **Käytettävyys** on vasemman ruudun visualisoinnin mukaan toiseksi tärkein alhaiseen luokitukseen vaikuttava tekijä. Jos laskemme keskiarvon kaikista muista teemoista ja niiden vaikutuksesta **alhaiseen** luokitukseen, saamme tuloksen, joka tässä näkyy punaisena. 
+7. ***Keskiarvon viiva*** – keskiarvo lasketaan kaikille muille mahdollisille **Teeman** arvoille paitsi **käytettävyydelle**. Laskelma koskee siis kaikkia mustalla näkyviä arvoja. Se kertoo meille, mikä muiden **teemojen** prosenttiosuus johti alhaiseen luokitukseen. Toisin sanoen antaessaan luokituksen asiakas ilmoittaa luokitukselle myös syyn eli **teeman**. Teemoja ovat esimerkiksi käytettävyys, nopeus, tietoturva ym. **Teema** = **Käytettävyys** on vasemman ruudun visualisoinnin mukaan toiseksi tärkein alhaiseen luokitukseen vaikuttava tekijä. Jos laskemme keskiarvon kaikista muista teemoista ja niiden vaikutuksesta **alhaiseen** luokitukseen, saamme tuloksen, joka tässä näkyy punaisena. Kaikkien muiden teemojen joukosta vain 11,35 prosenttia niistä ovat suurempia kuin **käytettävyys**. 
 
 8. ***Valintaruutu*** – näytä vain sellaiset arvot, jotka ovat vaikuttajia.
 
@@ -217,7 +217,7 @@ Tarkemmin sanoen, asiakkaat, jotka eivät käytä palvelua selaimen kautta, anta
 
 ![virhe – ratkaistu](media/power-bi-visualization-influencers/power-bi-error3-solution.png)
 
-**Näen varoituksen, että mittayksiköitä ei sisälly analyysiini. Mistä tämä johtuu?** [2052261] 
+**Näen varoituksen, että mittayksiköitä ei sisälly analyysiini. Mistä tämä johtuu?** 
 
 ![virhe – mittayksiköt eivät sisälly](media/power-bi-visualization-influencers/power-bi-measures-not-included.png)
 
