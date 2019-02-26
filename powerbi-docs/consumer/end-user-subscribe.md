@@ -6,16 +6,16 @@ manager: kvivek
 ms.reviewer: cmfinlan
 featuredvideoid: ''
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: powerbi-consumer
 ms.topic: conceptual
 ms.date: 12/14/2019
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 26ba6d0ea23451863d05b13a79e57d483b15881f
-ms.sourcegitcommit: f07520591db6c3f27ab6490612cc56384abc6633
+ms.openlocfilehash: e8d849c711bb190951feffca072a883137275af7
+ms.sourcegitcommit: a054782370dec56d49bb205ee10b7e2018f22693
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56298841"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56661780"
 ---
 # <a name="subscribe-to-a-report-or-dashboard-in-power-bi-service"></a>Raportin tai koontinäytön tilaaminen Power BI -palvelussa 
 Ei ole koskaan ollut näin helppoa pysyä ajan tasalla tärkeimmistä koontinäytöistä ja raporteista. Kun tilaat itsellesi tärkeimmät raporttisivut ja koontinäytöt, Power BI lähettää sinulle sähköpostitse niistä tilannevedoksen. Voit määrittää, miten usein haluat Power BI:n lähettävän sähköpostia: päivittäin, viikoittain tai tietojen päivittyessä. Voit myös määrittää tietyn ajankohdan sille, milloin Power BI lähettää sähköpostit, tai voit suorittaa tämän nyt.  

@@ -4,16 +4,17 @@ description: Power BI esittelee monia uusia termejä ja uusia käyttöjä tutuil
 services: power-bi
 ms.custom: seodec18
 author: mihart
-ms.service: powerbi-service
+ms.service: powerbi
+ms.subservice: powerbi-consumer
 ms.topic: resource
 ms.date: 12/06/2018
 ms.author: mihart
-ms.openlocfilehash: 1722c401dfd5d2fdfbba530f440cecf9f1e075f3
-ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
+ms.openlocfilehash: 91ac7e9990844f6e4f481473d402647a47249ba6
+ms.sourcegitcommit: a054782370dec56d49bb205ee10b7e2018f22693
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55431265"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56662407"
 ---
 # <a name="glossary-for-power-bi-service"></a>Power BI -palvelun sanasto
 Power BI -palvelussa saattaa olla ennestään tuntematonta tai sekavalta vaikuttavaa terminologiaa. Sanasto on hyvä paikka termien hakuun, joten se on hyvä lisätä suosikkeihin. Toinen hyvä resurssi lisätietojen saamiseen Power BI -palvelun muodostavista rakenneosista ovat [peruskäsitteet](end-user-basic-concepts.md). Peruskäsitteet tarjoavat korkean tason yleiskatsauksen Power BI:n *osiin* ja niiden yhteyksiin.
