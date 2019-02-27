@@ -6,17 +6,17 @@ manager: kvivek
 ms.custom: ''
 ms.reviewer: cmfinlan
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: powerbi-consumer
 ms.topic: conceptual
 ms.date: 02/14/2019
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: 1aaa57006b9a5aac2b077d3326ed6a39e6a4206d
-ms.sourcegitcommit: f07520591db6c3f27ab6490612cc56384abc6633
+ms.openlocfilehash: 35efd62e6f00edd9ce6b58774dd73925a721dec5
+ms.sourcegitcommit: a054782370dec56d49bb205ee10b7e2018f22693
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56298864"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56661924"
 ---
 # <a name="export-reports-from-power-bi-to-pdf"></a>Raporttien vieminen Power BI:stä PDF-muotoon
 Power BI:llä voit julkaista raportin PDF-muodossa ja luoda helposti Power BI -raporttiisi perustuvan PDF-tiedoston. Kun **viet PDF-muotoon**, jokaisesta Power BI -raportin sivusta tulee yksittäinen sivu PDF-tiedostossa.
@@ -63,6 +63,8 @@ Huomioi seuraavat seikat ja rajoitukset, kun käytät **Vie PDF-muotoon** -toimi
 * PDF-muotoon ei voi julkaista raportteja, jotka ovat vuokraajan Power BI -toimialueen ulkopuolisen käyttäjän omistamia (esimerkiksi organisaation ulkopuolisen henkilön omistama raportti, joka on jaettu kanssasi).
 
 * Jos jaat koontinäytön organisaatiosi ulkopuoliselle henkilölle (joka ei ole Power BI -vuokraajasi toimialueella), kyseinen henkilö ei voi viedä jaettuun koontinäyttöön liittyviä raportteja PDF-muotoon. Jos olet esimerkiksi aaron@contoso.com, voit jakaa sisältöä käyttäjän cassie@cohowinery.com kanssa. cassie@cohowinery.com ei kuitenkaan voi viedä siihen liittyviä raportteja PDF-muotoon.
+
+* Kun PDF-muotoon viedään raportteja, jotka sisältävät taustakuvan, kuva saattaa vääristyä viennissä, jos Sivun tausta -asetuksena käytetään ”Sovita”-vaihtoehtoa.  Parhaan tuloksen varmistamiseksi on suositeltavaa käyttää ”Normaali”- tai ”Täytä”-asetusta, jolloin vältetään vietyyn tiedostoon liittyvät ongelmat.
 
 * Power BI -palvelu käyttää PDF-viennin kielenä Power BI:n kieliasetuksen kieltä. Jos tarkistaa kieliasetuksesi tai muuttaa sitä, valitse hammasrataskuvake > **Asetukset** > **Yleiset** > **Kieli**.
 

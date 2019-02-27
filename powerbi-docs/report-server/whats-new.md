@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 01/22/2019
-ms.openlocfilehash: ad3025b9649529566972f75e9c447bb7558132b8
-ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
+ms.openlocfilehash: e645cd84b646e180114027464ea4781277d5245f
+ms.sourcegitcommit: a054782370dec56d49bb205ee10b7e2018f22693
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/16/2019
-ms.locfileid: "56325193"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56662453"
 ---
 # <a name="whats-new-in-power-bi-report-server"></a>Power BI -raporttipalvelinten uudet ominaisuudet
 
@@ -41,6 +41,10 @@ Seuraavien Power BI -raporttien ominaisuuksien tuki:
 [**Älykkäät tasauksen apuviivat**](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#smartGuides) Näet älykkäitä tasauksen apuviivoja siirtäessäsi objekteja raporttisivulla, samaan tapaan kuin PowerPointissa. Niiden avulla saat objektit helposti tasattua sivulle. Näet apuviivat aina, kun vedät objektia sivulla tai muutat sen kokoa. Jos siirrät objektin toisen objektin lähelle, se napsahtaa paikalleen tasattuna toisen objektin mukaan.
 
 **Helppokäyttötoiminnot** Liian monia helppokäyttötoimintoja lueteltaviksi: esimerkiksi [Kentät-luetteloruudun helppokäyttöisyyden tuki](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#fieldList). Kentät-luetteloruutu on nyt täysin helppokäyttöinen. Voit siirtyä ruudussa näppäimistön ja näytönlukuohjelman avulla ja lisätä raporttisivuun kenttiä pikavalikosta.
+
+#### <a name="custom-visuals"></a>Mukautetut visualisoinnit
+
+- Tämä versio sisältää ohjelmointirajapinnan version 2.3.
 
 ### <a name="administrator-settings"></a>Järjestelmänvalvojan asetukset
 

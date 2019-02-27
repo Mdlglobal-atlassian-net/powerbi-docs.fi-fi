@@ -9,12 +9,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 11/08/2018
 ms.author: mshenhav
-ms.openlocfilehash: 771b7361efaea436d67c26ee05741f6dc3eba810
-ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
+ms.openlocfilehash: 7c17d41d4278c292e494fe6f7203a32d93f2714d
+ms.sourcegitcommit: 796bf513bf8669676e2a44627b56221b1629a6a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55431242"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56826717"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Power BI -mobiilisovellusten uudet ominaisuudet
 Lisätietoja aiheeseen liittyvistä uusista ominaisuuksista:
@@ -22,6 +22,16 @@ Lisätietoja aiheeseen liittyvistä uusista ominaisuuksista:
 * [Power BI -tiimin mobiilisovelluksia käsittelevä blogi](https://powerbi.microsoft.com/blog/tag/mobile/)
 * [Power BI Desktopin uudet ominaisuudet](../../desktop-latest-update.md)  
 * [Power BI -palvelun uudet ominaisuudet](../../service-whats-new.md)  
+
+## <a name="january---february-2019"></a>Tammikuu - helmikuu 2019
+ 
+### <a name="visio-visuals"></a>Vision visualisoinnit
+
+Kertakirjautumisen (SSO) käyttöönotto Visio-visualisoinneissa, joten ylimääräisiä sisäänkirjautumisen vaiheita ei vaadita, kun raporttia katsellaan sovelluksessa Visio-visualisoinnilla. 
+
+### <a name="dashboard-commenting-is-coming-to-power-bi-mobile-windows-app"></a>Koontinäytön kommentointi on tulossa Power BI Mobile Windows -sovellukseen
+
+Voit lisätä kommentteja suoraan koontinäyttöihin ja tiettyihin ruutuihin keskustellaksesi tiedoistasi, ja kaikki koontinäyttöä tarkastelevat näkevät kommentit. 
 
 ## <a name="december-2018"></a>Joulukuu 2018
 

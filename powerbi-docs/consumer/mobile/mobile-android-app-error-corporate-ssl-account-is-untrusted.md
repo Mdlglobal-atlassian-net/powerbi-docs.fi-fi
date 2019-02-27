@@ -10,12 +10,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 05/18/2018
 ms.author: mshenhav
-ms.openlocfilehash: 2b296d465b312486a91e1407b5866e15b0b48b54
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: de103412e21e0d26d20058e2d4e1fb9a8a5449bf
+ms.sourcegitcommit: a054782370dec56d49bb205ee10b7e2018f22693
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54280788"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56662315"
 ---
 # <a name="fixing-corporate-ssl-certificate-is-untrusted---power-bi"></a>Yrityksen SSL-varmenne ei ole luotettava – Power BI -ongelman korjaaminen
 Kun kirjaudut sisään Microsoft Power BI:n Android-mobiilisovellukseen, saatat nähdä viestin siitä, ettei todentaminen onnistunut, koska laite ei luota yrityksen SSL-varmenteeseen. Viestissä kehotetaan ottamaan yhteyttä yrityksesi IT-järjestelmänvalvojaan. 
@@ -41,9 +41,9 @@ Laitteesi aikavyöhykeasetukset saattavat olla väärin.
 Tarkista ne valitsemalla **Asetukset** > **Järjestelmä** > **Päivämäärä ja kellonaika**.
 
 ## <a name="custom-authentication-server"></a>Mukautettu todennuspalvelin
-Jos käytät mukautettua todennuspalvelinta, yrityksen todennuspalvelimen SSL-varmenne ei ehkä ole kelvollinen. Pyydä apua organisaatiosi IT-järjestelmänvalvojalta.
+Jos käytät mukautettua todennuspalvelinta, yrityksen todennuspalvelimen SSL-varmenne ei ehkä ole kelvollinen. Toimi organisaatiosi IT-osaston kanssa, ja testatkaa yrityksen todennuspalvelimen määritykset noudattamalla [tässä artikkelissa](https://support.microsoft.com/en-us/help/3203929/using-adal-to-authenticate-from-android-devices-fails-if-additional-ce) annettuja ohjeita.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 * [Lataa Android-sovellus](http://go.microsoft.com/fwlink/?LinkID=544867) Androidin sovelluskaupasta.
-* Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)
+* Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/) 
 
