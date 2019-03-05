@@ -9,12 +9,12 @@ ms.author: owend
 ms.reviewer: owend
 author: minewiskan
 manager: kfile
-ms.openlocfilehash: e31f67d978471f4dcc6472860fc5f8315212e563
-ms.sourcegitcommit: 54d44deb6e03e518ad6378656c769b06f2a0b6dc
+ms.openlocfilehash: d7cebbd569d16192f4acfa1c96394130731efa17
+ms.sourcegitcommit: d4d36b6b200f2693b545e4a3e66d94c77a3cfafb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55794881"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57014572"
 ---
 # <a name="microsoft-power-bi-premium-capacity-resource-management-and-optimization"></a>Microsoft Power BI Premium -kapasiteetin resurssien hallinta ja optimointi
 
@@ -55,7 +55,7 @@ Jos millekään kapasiteetissa olevalle tietojoukolle tehdään interaktiivinen 
 
 ### <a name="workloads"></a>Kuormitukset
 
-Oletusarvoisesti **Power BI Premiumin** ja **Power BI Embeddedin** kapasiteetit tukevat vain kuormitusta, joka liittyy Power BI -kyselyiden suorittamiseen pilvipalvelussa. Esikatselun tuki tarjotaan nyt myös kahdelle muulle kuormitukselle: **sivutetut raportit** ja **tietovuot**. Jos nämä työnkulut ovat käytössä, ne voivat vaikuttaa muistin käyttöön kapasiteetissasi. Lisätietoja on kohdassa [Kuormituksien määrittäminen](service-admin-premium-manage.md#configure-workloads).
+Oletusarvoisesti **Power BI Premiumin** ja **Power BI Embeddedin** kapasiteetit tukevat vain kuormitusta, joka liittyy Power BI -kyselyiden suorittamiseen pilvipalvelussa. Esikatselun tuki tarjotaan nyt myös kahdelle muulle kuormitukselle: **sivutetut raportit** ja **tietovuot**. Jos nämä työnkulut ovat käytössä, ne voivat vaikuttaa muistin käyttöön kapasiteetissasi. 
 
 ## <a name="cpu-resource-management-in-premium-capacity"></a>Suorittimen resurssien hallinta premium-kapasiteetissa
 
@@ -116,6 +116,3 @@ Käytä Power BI Embedded -kapasiteettia Azuressa testataksesi eri varastointiyk
 
 Joissain tapauksissa mallin Power BI Desktop (.pbix) -tiedoston avaaminen tietokoneellasi ja muistin ja suorittimen kulutuksen tarkistaminen voi kertoa paljon ongelmasta. Tämä ei auta erittäin isojen mallien yhteydessä, mutta joidenkin pienempien mallien kohdalla voit yrittää mallin avaamista, uudelleen lataamista ja kyselemistä tietokoneellasi. Tarkista mallin koko, käytetty muisti ja suorittimen kulutus, kun avaat mallin. Yritä päivittämistä uudelleen ja kyselyä. Käytä tehtävienhallintaa suorittimen ja muistin käytön tarkistamiseen paikallisessa tiedostossa. Joskus nämä mittatiedot yksinään kertovat, että alempi kapasiteetti kuten P1/P2 ei välttämättä riitä ratkaisullesi.
 
-## <a name="next-steps"></a>Seuraavat vaiheet
-
-[Kapasiteettien hallinta Power BI Premiumissa ja Power BI Embeddedissä](service-admin-premium-manage.md)

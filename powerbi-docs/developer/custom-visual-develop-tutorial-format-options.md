@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: tutorial
 ms.date: 11/21/2018
-ms.openlocfilehash: fd1df09e9ef431bf04c566996867c355350fdb2e
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 56247275d39c3feb978a8ec38841c7f69de8787a
+ms.sourcegitcommit: 364ffa1178cdfb0a20acffc0fd79922ebc892d72
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54279740"
+ms.lasthandoff: 03/02/2019
+ms.locfileid: "57226177"
 ---
 # <a name="tutorial-adding-formatting-options-to-a-power-bi-custom-visual"></a>Opetusohjelma: Muotoiluasetusten lisääminen Power BI:n mukautettuun visualisointiin
 
@@ -146,7 +146,10 @@ Voit lisätä mukautettuja ominaisuuksia, joiden avulla voit määrittää ympyr
 
     ```typescript
     this.visualSettings = VisualSettings.parse<VisualSettings>(dataView);
-    this.visualSettings.circle.circleThickness = Math.max(0, this.visualSettings.circle.circleThickness)this.visualSettings.circle.circleThickness = Math.min(10, this.visualSettings.circle.circleThickness);
+
+    this.visualSettings.circle.circleThickness = Math.max(0, this.visualSettings.circle.circleThickness);
+
+    this.visualSettings.circle.circleThickness = Math.min(10, this.visualSettings.circle.circleThickness);
     ```
     Tämä koodi noutaa muotoiluasetukset. Se säätää mitä tahansa **circleThickness**-ominaisuuteen välitettyä arvoa. Se muuttaa sen arvoksi 0, jos se on negatiivinen, tai arvoksi 10, jos se on suurempi kuin 10.
 

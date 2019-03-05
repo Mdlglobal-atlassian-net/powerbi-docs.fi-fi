@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 01/24/2019
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: 868c1226b70bd12762c20c3af5b0ee1ff59857e5
-ms.sourcegitcommit: a2f274cfb392fe3b1b466a39ec7eaf58a7c5ce00
+ms.openlocfilehash: a4180f211a2b31a8610d410a74e0cca25dcdad15
+ms.sourcegitcommit: d4d36b6b200f2693b545e4a3e66d94c77a3cfafb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56408180"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57014641"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>Power BI:n hallinta hallintaportaalissa
 
@@ -297,7 +297,7 @@ Organisaation käyttäjät voivat upottaa Power BI -koontinäyttöjä ja -raport
 
 ### <a name="create-and-use-dataflows-preview"></a>Tietovoiden luominen ja käyttäminen (esikatselu)
 
-Organisaatiosi käyttäjät voivat luoda ja käyttää tietovoita. Saat yleiskatsauksen tietovoista artikkelista [Omatoiminen tietojen valmistelu Power BI:ssä (esikatselu)](service-dataflows-overview.md). Jos haluat ottaa tietovuot käyttöön Premium-kapasiteetissa, tutustu artikkeliin [Kuormitusten määrittäminen](service-admin-premium-manage.md#configure-workloads).
+Organisaatiosi käyttäjät voivat luoda ja käyttää tietovoita. Saat yleiskatsauksen tietovoista artikkelista [Omatoiminen tietojen valmistelu Power BI:ssä (esikatselu)](service-dataflows-overview.md). Jos haluat ottaa tietovuot käyttöön Premium-kapasiteetissa, tutustu artikkeliin [Kuormitusten määrittäminen](service-admin-premium-workloads.md).
 
 > [!NOTE]
 > Tämä asetus koskee koko organisaatiota, joten sitä ei rajoittaa ryhmien avulla.
@@ -321,8 +321,6 @@ Toinen asetus, **Asenna mallisovellukset**, määrittää sen, ketkä organisaat
 **Power BI Premium** -välilehdessä voit hallita mitä tahansa organisaatiollesi ostettua Power BI Premium -kapasiteettia (EM- tai P-varastointiyksikkö). Kaikki organisaation käyttäjät näkevät **Power BI Premium** -asetusten välilehden, mutta sen sisällön näkevät vain käyttäjät, joilla on *kapasiteetin järjestelmänvalvojan* oikeudet tai määrityskäyttöoikeudet. Jos käyttäjällä ei ole mitään oikeuksia, näyttöön tulee seuraava ilmoitus.
 
 ![Ei Premium-asetusten käyttöoikeutta](media/service-admin-portal/premium-settings-no-access.png)
-
-Jos haluat lisätietoja Premium-asetusten hallinnasta, lue ohjeartikkeli [Power BI Premiumin hallinta](service-admin-premium-manage.md).
 
 ### <a name="power-bi-embedded"></a>Power BI Embedded
 
@@ -410,6 +408,5 @@ Järjestelmänvalvojana voit tarkastella vuokraajassa olevia työtiloja. Voit la
 
 [Power BI:n hallinta organisaatiossa](service-admin-administering-power-bi-in-your-organization.md)  [Power BI -järjestelmänvalvojaroolin kuvaus](service-admin-role.md)  
 [Organisaation Power BI:n valvonta](service-admin-auditing.md)  
-[Power BI Premiumin hallinta](service-admin-premium-manage.md)  
 
 Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)

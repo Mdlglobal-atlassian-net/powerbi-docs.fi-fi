@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 12/07/2018
-ms.openlocfilehash: 377e601bde58c0e0a8e5634cd798e3373ebee7b7
-ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
+ms.openlocfilehash: 109c0f98705f81d48811f756c49150c8cb286e27
+ms.sourcegitcommit: d4d36b6b200f2693b545e4a3e66d94c77a3cfafb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/16/2019
-ms.locfileid: "56324894"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57014434"
 ---
 # <a name="install-power-bi-report-server"></a>Power BI -raporttipalvelimen asentaminen
 
@@ -37,11 +37,11 @@ Microsoft suosittelee ennen Power BI -raporttipalvelimen asentamista tutustumaan
 
 Jos olet ostanut Power BI Premiumin, löydät Power BI -raporttipalvelimen tuoteavaimen Power BI -hallintaportaalin **Premium-asetukset**-välilehdeltä. Tämä on käytettävissä vain Yleisille järjestelmänvalvojille ja käyttäjille, joille on määritetty Power BI -palvelun järjestelmänvalvojan rooli.
 
-![Premium-asetukset](../media/service-admin-premium-manage/pbirs-product-key.png "Power BI -raporttipalvelimen avain Premium-asetuksissa")
+![Premium-asetukset](../report-server/media/install-report-server/pbirs-product-key.png "Power BI -raporttipalvelimen avain Premium-asetuksissa")
 
 Voit avata tuoteavaimen sisältävän valintaikkunan valitsemalla **Power BI -raporttipalvelimen avain** -kohdan. Voit kopioida avaimen ja käyttää sitä asennuksessa.
 
-![Tuoteavain](../media/service-admin-premium-manage/pbirs-product-key-dialog.png "Power BI -raporttipalvelimen tuoteavain")
+![Tuoteavain](../report-server/media/install-report-server/pbirs-product-key-dialog.png "Power BI -raporttipalvelimen tuoteavain")
 
 #### <a name="sql-server-enterprise-software-assurance-sa"></a>SQL Server Enterprise Software Assurance (SA)
 
