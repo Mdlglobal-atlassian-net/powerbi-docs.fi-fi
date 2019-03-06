@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 02/14/2019
+ms.date: 02/22/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: fda2732ff33c324377a73ceb93480fbbcdd404bd
-ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
+ms.openlocfilehash: 59d5ccd6a7179ca4c44210854fb66abb5371ac6c
+ms.sourcegitcommit: 76772a361e6cd4dd88824b2e4b32af30656e69db
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/16/2019
-ms.locfileid: "56325036"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56892409"
 ---
 # <a name="use-bookmarks-to-share-insights-and-build-stories-in-power-bi"></a>Kirjanmerkkien avulla voit jakaa merkityksellisiä tietoja ja koostaa tarinoita Power BI:ssä 
 Käyttämällä **kirjanmerkkejä** Power BI:ssä voit tallentaa raporttisivun senhetkisen määritetyn näkymän suodatukset ja visualisointien tila mukaan lukien. Voit myöhemmin palata tähän tilaan valitsemalla tallennetun kirjanmerkin. 
@@ -25,6 +25,9 @@ Voit myös luoda kokoelman kirjanmerkkejä ja järjestää ne haluamaasi järjes
 ![Kirjanmerkit Power BI:ssä](media/desktop-bookmarks/bookmarks_01.png)
 
 Kirjanmerkeille on useita käyttötarkoituksia. Niiden avulla voit seurata omaa edistymistäsi raporttien luomisessa, sillä niitä on helppo lisätä, poistaa ja nimetä uudelleen. Kirjanmerkeillä voit myös koota PowerPoint-tyyppisiä esityksiä käymällä läpi kirjanmerkkejä järjestyksessä, jolloin voit raporttisi avulla kertoa haluamasi tarinan. Käyttötapoja voi olla monia muitakin riippuen siitä, miten haluat niitä käyttää.
+
+> [!TIP]
+> Tietoa Omien kirjanmerkkien käytöstä Power BI ‑palvelussa saat Omat kirjanmerkit ‑toiminnon julkaisusta kertovasta [blogikirjoituksesta](https://powerbi.microsoft.com/blog/announcing-personal-bookmarks-in-the-power-bi-service/). 
 
 ### <a name="enable-the-bookmarks-preview-versions-prior-to-march-2018"></a>Kirjanmerkkien esiversion käyttöönotto (maaliskuuta 2018 edeltävissä versioissa)
 Power BI Desktopin maaliskuun 2018 versiosta alkaen kirjanmerkit ovat olleet yleisesti saatavilla. 

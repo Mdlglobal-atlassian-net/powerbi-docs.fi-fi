@@ -8,21 +8,21 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 12/06/2018
+ms.date: 02/21/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: f5896505d724c0704e22c95df132ee3318b23009
-ms.sourcegitcommit: 80961ace38ff9dac6699f81fcee0f7d88a51edf4
+ms.openlocfilehash: 28db4891ad2ca67fefb0f6ec7d993977bbba7043
+ms.sourcegitcommit: 76772a361e6cd4dd88824b2e4b32af30656e69db
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56224015"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56892248"
 ---
 # <a name="use-insights-in-power-bi-desktop-to-explain-increases-and-decreases-seen-in-visuals-preview"></a>Merkityksellisten tietojen avulla voit selittää Power BI Desktopissa visualisointien nousuja ja laskuja (esikatselu)
 
 Visualisointien arvoissa näkyy usein suuria lisäyksiä ja jyrkkiä laskuja, mitkä saattavat herättää ihmetystä. **Power BI Desktopin** **merkitykselliset tiedot** paljastavat syyn muutamalla napsautuksella.
 
-Otetaan esimerkiksi seuraava visualisointi, jossa *myynnin määrä* esitetään *vuoden* ja *maan* mukaan. Myynti pienenee suuresti vuonna 2014, jolloin myynnissä ilmenee jyrkkä lasku *1. neljänneksen* ja *2. neljänneksen* välillä. Tällaisissa tapauksissa voit tutkia tietoja ja selvittää, mistä muutos on johtunut. 
+Otetaan esimerkiksi seuraava visualisointi, jossa *myynnin määrä* esitetään *vuoden* ja *vuosineljänneksen* mukaan. Myynti pienenee suuresti vuonna 2014, jolloin myynnissä ilmenee jyrkkä lasku *1. neljänneksen* ja *2. neljänneksen* välillä. Tällaisissa tapauksissa voit tutkia tietoja ja selvittää, mistä muutos on johtunut. 
 
 ![Visualisointi, jossa nousuja ja laskuja](media/desktop-insights/insights_01a.png)
 

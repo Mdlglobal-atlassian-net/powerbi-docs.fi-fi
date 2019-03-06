@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 09/27/2018
+ms.date: 02/21/2019
 ms.author: davidi
 LocalizationGroup: Data refresh
-ms.openlocfilehash: 097f0ae9da29d193fd7a337c9a164ab8c67dc4d9
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 2f5680df2077a306532165c62367fcc09c517227
+ms.sourcegitcommit: 76772a361e6cd4dd88824b2e4b32af30656e69db
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54277660"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56892478"
 ---
 # <a name="data-refresh-in-power-bi"></a>Tietojen päivittäminen Power BI:ssä
 Varmista, että saat käyttöösi aina uusimmat tiedot päätöksenteon tueksi. Olet todennäköisesti jo käyttänyt Nouda tiedot -toimintoa Power BI:ssä yhteyden muodostamiseksi ja tietojen lataamiseksi sekä luonut raportteja ja raporttinäkymän. Nyt haluat varmistaa, että tiedot todella ovat uusimpia ja ajan tasalla.
@@ -216,7 +216,7 @@ Reaaliaikaiset raporttinäkymät hyödyntävät Microsoft Power BI REST -ohjelmo
 Lisätietoja ajoitetun päivityksen määrittämisestä on kohdassa [Ajoitetun päivityksen määrittäminen](refresh-scheduled-refresh.md)
 
 ## <a name="common-data-refresh-scenarios"></a>Yleiset tietojen päivittämisen esimerkkitilanteet
-Joskus paras perehtyä tietojen päivittämiseen on tarkastella Power BI -esimerkkejä. Tässä on joitakin yleisiä tietojen päivittämisen esimerkkitilanteita:
+Joskus paras tapa perehtyä tietojen uudelleenlataamiseen Power BI:ssä on tarkastella esimerkkejä. Tässä on joitakin yleisiä tietojen päivittämisen esimerkkitilanteita:
 
 ### <a name="excel-workbook-with-tables-of-data"></a>Excel-työkirja, jossa on tietoja sisältäviä taulukoita
 Sinulla on Excel-työkirja, jossa on useita tietoja sisältäviä taulukoita, mutta mitään niistä ei ole ladattu Excel-tietomalliin. Lataat työkirjatiedoston paikallisesta asemasta Power BI:hin Nouda tiedot -toiminnolla ja luot raporttinäkymän. Nyt olet kuitenkin tehnyt joitakin muutoksia paikallisessa asemassa sijaitsevan työkirjan taulukoihin ja haluat päivittää Power BI -raporttinäkymän uusilla tiedoilla.

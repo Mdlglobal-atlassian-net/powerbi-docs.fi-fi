@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/28/2018
+ms.date: 02/22/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 826338a5e5524bb54c2ebb2207a3d438a8d428b1
-ms.sourcegitcommit: 3c8196be5626a0f037599abb6ccbd294fb1249df
+ms.openlocfilehash: b28c4ea9b4cacc77a7f98af5bfc006670f40af94
+ms.sourcegitcommit: 76772a361e6cd4dd88824b2e4b32af30656e69db
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54899223"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56892271"
 ---
 # <a name="connect-to-an-oracle-database"></a>Oracle-tietokantaan yhdistäminen
 Yhteyden muodostaminen Oracle-tietokantaan **Power BI Desktopilla** edellyttää, että tietokoneessa on asennettuna Power BI Desktop ja oikea Oracle-asiakasohjelmisto. Oracle-asiakasohjelmiston versio (**32-bittinen** vai **64-bittinen**) määräytyy tietokoneeseen asennetun Power BI Desktop -version mukaan.
@@ -43,8 +43,13 @@ Kun tietokoneessa on asennettuna vastaava Oracle-asiakasohjelman ohjain, voit mu
    
    ![](media/desktop-connect-oracle-database/connect-oracle-database_2.png)
 2. Kirjoita avautuvaan **Oracle Database** -valintaikkunaan palvelimen nimi ja valitse **Muodosta yhteys**. Jos SID-tunnus vaaditaan, voit määrittää sen muodossa: *PalvelimenNimi/SID*, jossa SID on tietokannan yksilöivä nimi. Jos *PalvelimenNimi/SID*-muoto ei toimi, kokeile *PalvelimenNimi/PalvelunNimi*-muotoa, jossa PalvelunNimi on yhteyden muodostuksessa käytetty alias.
-   
+
+
    ![](media/desktop-connect-oracle-database/connect-oracle-database_3.png)
+
+   > [!TIP]
+   > Jos sinulla ilmenee tässä vaiheessa vaikeuksia yhteyden muodostamisessa, kokeile käyttää Palvelimen nimi ‑kentässä seuraavaa muotoa: (DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=isäntänimi)(PORT=portin_nro))(CONNECT_DATA=(SERVICE_NAME=palvelun_nimi)))
+   
 3. Jos haluat tuoda tietoja alkuperäisen tietokantakyselyn avulla, voit kirjoittaa kyselyn **SQL-lause**-ruutuun, jonka saa näkyviin laajentamalla **Oracle Database** -valintaikkunan **Lisäasetukset**-osion.
    
    ![](media/desktop-connect-oracle-database/connect-oracle-database_4.png)

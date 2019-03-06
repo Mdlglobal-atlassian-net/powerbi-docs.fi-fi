@@ -10,12 +10,12 @@ ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 12/17/2018
-ms.openlocfilehash: 9b4ff995b1cfaede1608e976bf2715feece0ade6
-ms.sourcegitcommit: a2f274cfb392fe3b1b466a39ec7eaf58a7c5ce00
+ms.openlocfilehash: 503a722a387c05952933a4cfa9aaa06eccc164da
+ms.sourcegitcommit: 76772a361e6cd4dd88824b2e4b32af30656e69db
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56408134"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56892317"
 ---
 # <a name="frequently-asked-questions-about-power-bi-custom-visuals"></a>Usein kysyttyjä kysymyksiä – Power BI:n mukautetut visualisoinnit
 
@@ -57,8 +57,44 @@ Kyllä. Jos järjestelmänvalvoja poistaa mukautetut visualisoinnit käytöstä 
 
 ### <a name="what-are-certified-custom-visuals"></a>Mitä ovat sertifioidut mukautetut visualisoinnit?
 
-Sertifioidut mukautetut visualisoinnit ovat [Marketplacen](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals) visualisointeja, jotka täyttävät Power BI-tiimin [määrittämät](power-bi-custom-visuals-certified.md) tietyt koodi- ja testausvaatimukset.  Suoritettavat testit on suunniteltu varmistamaan, ettei visualisointi käytä ulkoisia palveluita tai resursseja. Microsoft ei kuitenkaan ole kolmannen osapuolen mukautettujen visualisointien tekijä. Kehotamme asiakkaita ottamaan yhteyttä suoraan tekijään visualisoinnin toiminnan varmistamiseksi.
+Sertifioidut mukautetut visualisoinnit ovat [Marketplacen](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals) visualisointeja, jotka täyttävät Power BI-tiimin [määrittämät](power-bi-custom-visuals-certified.md) tietyt koodi- ja testausvaatimukset.  Suoritettavat testit on suunniteltu varmistamaan, ettei visualisointi käytä ulkoisia palveluita tai resursseja. Microsoft ei kuitenkaan ole kolmannen osapuolen mukautettujen visualisointien tekijä, ja se kehottaa asiakkaita ottamaan yhteyttä suoraan tekijään visualisoinnin toiminnan varmistamiseksi.
 
+### <a name="what-tests-are-done-during-the-certification-process"></a>Millaisia testejä sertifiointiprosessin aikana tehdään?
+
+Sertifiointiprosessin aikana tehdään muun muassa seuraavat testit: Koodin arviointeja, staattisen koodin analysointi, tietojen vuotaminen, tietojen sumea testaus, penetraatiotesti, sivustojen välisiin komentosarjoihin pääsemisen testaus, haitallisten tietojen lisääminen, syötteiden tarkistus ja toiminnallinen testaus.
+ 
+### <a name="do-you-certify-visuals-every-submission"></a>Sertifioidaanko visualisoinnit jokaisella lähetyskerralla?
+
+Kyllä. Aina kun sertifioidusta visualisoinnista lähetetään Marketplaceen uusi versio, visualisoinnin versiopäivitykselle tehdään samat sertifiointitarkistukset.
+
+Huomautus kehittäjille: jos lähetät sertifioidusta visualisoinnista versiopäivityksen, sinun ei tarvitse lähettää siitä erillistä sähköpostiviestiä, kuten [ensimmäisen sertifiointipyynnön yhteydessä.](https://docs.microsoft.com/power-bi/power-bi-custom-visuals-certified#process-for-submitting-a-custom-visual-for-certification) Versiopäivitysten sertifiointi tapahtuu automaattisesti, ja hylkäykseen johtaneista rikkomuksista lähetetään sähköpostitse ilmoitus, jossa kerrotaan korjaustarpeet. 
+
+### <a name="is-it-possible-that-a-certified-visual-stops-being-certified-with-a-new-update"></a>Onko mahdollista, että sertifioitu visualisointi lakkaa olemasta sertifioitu uuden päivityksen myötä?
+
+Ei, se ei ole mahdollista. Visualisoinnin sertifiointia ei voida purkaa uuden päivityksen perusteella. Sen sijaan päivitys voidaan hylätä.
+ 
+### <a name="do-i-need-to-share-my-code-in-public-repository-if-i-am-submitting-to-the-certification-process"></a>Jos lähetän työni sertifioitavaksi, onko minun jaettava koodini julkiseen säilöön?
+
+Ei, sinun ei tarvitse jakaa koodiasi julkisesti. Sinun on kuitenkin annettava meille lukuoikeudet visualisoinnin koodin tarkistamista varten, esimerkiksi yksityiseen säilöön GitHubissa.
+ 
+### <a name="do-we-have-to-publishhttpsdocsmicrosoftcompower-bideveloperoffice-store-the-visual-in-the-marketplacehttpsappsourcemicrosoftcommarketplaceappspage1productpower-bi-visuals-to-certify-it"></a>Edellyttääkö sertifioinnin saaminen, että visualisointi on [julkaistava](https://docs.microsoft.com/power-bi/developer/office-store) [Marketplacessa](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals)?
+
+Kyllä. Visualisoinnin julkaiseminen ensin Marketplacessa on pakollinen vaatimus sertifioinnin saamiseksi.
+Jos haluat, että mukautettu visualisointisi sertifioidaan, sen täytyy olla palvelimillamme. Emme voi sertifioida yksityisiä visualisointeja.
+ 
+### <a name="how-long-does-it-take-to-certify-my-visual"></a>Miten kauan visualisoinnin sertifiointi kestää?
+
+Jos kyseessä on versiopäivitys, sertifiointiin saattaa kulua enintään kaksi viikkoa. Uusien lähetysten (ensimmäistä kertaa sertifioitavien) sertifiointi kestää enintään kolme viikkoa. 
+
+### <a name="does-the-certification-process-ensure-that-no-data-leakage-occurs"></a>Takaako sertifiointiprosessi, ettei tietovuotoja voi tapahtua?
+
+Suoritettavat testit on suunniteltu varmistamaan, ettei visualisointi käytä ulkoisia palveluita tai resursseja. Microsoft ei kuitenkaan ole kolmannen osapuolen mukautettujen visualisointien tekijä, ja se kehottaa asiakkaita ottamaan yhteyttä suoraan tekijään visualisoinnin toiminnan varmistamiseksi.
+ 
+### <a name="are-uncertified-custom-visuals-safe-to-use"></a>Onko sertifioimattomien mukautettujen visualisointien käyttö turvallista?
+
+Mukautettujen visualisointien sertifioimattomuus ei välttämättä tarkoita, etteivät visualisoinnit olisi turvallisia käyttää.
+Jotkin visualisoinnit eivät ole sertifioituja, koska ne eivät täytä yhtä tai useampaa [sertifiointivaatimusta](https://docs.microsoft.com/power-bi/power-bi-custom-visuals-certified?#certification-requirements). Tällaisia ovat esimerkiksi karttavisualisoinnit, jotka muodostavat yhteyden ulkoisiin palveluihin, tai visualisoinnit, jotka hyödyntävät kaupallisia kirjastoja.
+ 
 ## <a name="visuals-with-additional-purchases"></a>Lisäostoja sisältävät visualisoinnit
 
 ### <a name="what-is-a-visual-with-additional-purchases"></a>Mikä on lisäostoja sisältävä visualisointi?
@@ -100,7 +136,6 @@ Jos siinä on logo, varmista, että se on ohjeiden mukainen (väri, paikka, koko
 Ohjeista löydät tietoa myös parhaista käytännöistä.  
 > [!Note]
 > Kaikki maksuttomat visualisoinnit säilyttävät ne samat maksuttomat ominaisuudet, jotka olivat aiemmin tarjolla. Voit lisätä valinnaisia maksullisia lisäominaisuuksia aiempien maksuttomien ominaisuuksien lisäksi. Suosittelemme lähettämään sovelluskohtaisten tuotteiden visualisoinnit lisäominaisuuksien kanssa uusina visualisointeina sen sijaan, että päivittäisit vanhat, maksuttomat visualisoinnit.
-
 
 ### <a name="can-i-get-my-iap-custom-visual-certified"></a>Miten saan mukautetun IAP-visualisointini sertifioitua?
 

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 6a44443918fe0bb9c25343c8960aaaadd5a6977e
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 8568013438f6be84b2d4a48efdeffd99db352ed8
+ms.sourcegitcommit: 76772a361e6cd4dd88824b2e4b32af30656e69db
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54285618"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56892363"
 ---
 # <a name="get-data-from-excel-workbook-files"></a>Tietojen noutaminen Excel-työkirjatiedostoista
 ![](media/service-excel-workbook-files/excel_icon.png)
@@ -78,7 +78,7 @@ Kun valitset **Yhdistä**, työkirjasi näkyy Power BI:ssä aivan samalla tavall
 
 Työkirjaa ei voi muokata Power BI:ssä. Jos muutoksia on tehtävä, voit valita Muokkaa-vaihtoehdon ja sitten työkirjan muokkaamisen joko Excel Onlinessa tai tietokoneesi Excelissä. Tekemäsi muutokset tallennetaan työkirjaan OneDrivessa.
 
-Kun valitaan tämä tapa, Power BI:ssä ei luoda tietojoukkoa. Työkirja näkyy Power BI -työtilan siirtymisruudussa Raportit-kohdassa. Yhdistetyissä työkirjoissa on erityinen Excel-kuvake.
+Kun valitaan tämä tapa, Power BI luo vastaavan tietojoukon yhdistettyyn työkirjaan. Voit tarvittaessa käyttää kyseistä tietojoukkoa Power BI ‑raportin luomiseen. Työkirja näkyy myös Power BI -työtilan siirtymisruudussa Raportit-kohdassa. Yhdistetyissä työkirjoissa on erityinen Excel-kuvake.
 
 Valitse tämä vaihtoehto, jos sinulla on vain tietoja laskentataulukoissa tai tietojoukkoja, pivot-taulukoita ja kaavioita, jotka haluat kiinnittää raporttinäkymiin.
 
