@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 02/22/2019
+ms.date: 03/01/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: d388812985ce30b5692a385fc44e3cf7fc49161f
-ms.sourcegitcommit: 76772a361e6cd4dd88824b2e4b32af30656e69db
+ms.openlocfilehash: 4c32f27a04b055eb67015d9c8308866b972c06a7
+ms.sourcegitcommit: 364ffa1178cdfb0a20acffc0fd79922ebc892d72
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56892340"
+ms.lasthandoff: 03/02/2019
+ms.locfileid: "57226085"
 ---
 # <a name="self-service-data-prep-in-power-bi-preview"></a>Omatoiminen tietojen valmistelu Power BI:ssä (esikatselu)
 
@@ -75,9 +75,7 @@ Katso lisätietoja Azure Data Lake Storage Gen2:sta ja tietovoiden integroinnist
 
 ## <a name="dataflow-capabilities-on-power-bi-premium"></a>Tietovuon ominaisuudet Power BI Premiumissa
 
-Jotta tietovuon ominaisuudet ja kuormitukset toimivat Power BI Premium -tilauksessa, tietovuokuormituksen on oltava käytössä kyseisessä Premium-kapasiteetissa. Lisätietoja Power BI Premiumista on artikkelissa [Mikä on Power BI Premium?](service-premium.md). 
-
-Seuraavassa taulukossa kuvataan tietovuon ominaisuudet ja niiden kapasiteetit, kun käytössä on Power BI Pro -tili, sekä verrataan niitä Power BI Premiumiin.
+Jotta tietovuon ominaisuudet ja kuormitukset toimivat Power BI Premium -tilauksessa, tietovuokuormituksen on oltava käytössä kyseisessä Premium-kapasiteetissa. Seuraavassa taulukossa kuvataan tietovuon ominaisuudet ja niiden kapasiteetit, kun käytössä on Power BI Pro -tili, sekä verrataan niitä Power BI Premiumiin.
 
 
 |Tietovuon ominaisuus | Power BI Pro |   Power BI Premium |
@@ -95,7 +93,7 @@ Seuraavassa taulukossa kuvataan tietovuon ominaisuudet ja niiden kapasiteetit, k
 |Tietovuon linkitetyt entiteetit| |        +|
 |Standardoitu rakenne / Common Data Modelin sisäinen tuki|  +|  +|
 
-Lisätietoja tietovuokuormitusten käyttöönotosta Premium-kapasiteetissa saat Power BI Premiumia koskevasta [Kuormitusten määrittäminen](service-admin-premium-manage.md#configure-workloads) -osiosta. Tietovuokuormituksia ei ole nykyisin saatavilla Multi-Geo-kapasiteeteissa.
+Lisätietoja tietovuokuormitusten käyttöönotosta Premium-kapasiteetissa saat [Kuormitusten määrittäminen Premium-kapasiteetissa](service-admin-premium-workloads.md) -osiosta. Tietovuokuormituksia ei ole nykyisin saatavilla Multi-Geo-kapasiteeteissa.
 
 ## <a name="summary-of-self-service-data-prep-for-big-data-in-power-bi"></a>Yhteenveto massadatan omatoimisesta tietojen valmistelusta Power BI:ssä
 Kuten aiemmin tässä artikkelissa mainittiin, on olemassa useita skenaarioita ja esimerkkejä, joissa voit **tietovoiden** avulla hallita yritystietojasi entistä paremmin ja saada merkityksellisiä tietoja nopeammin. Käyttämällä Common Data Modelin määrittämää vakiotietomallia (rakennetta) tietovuot voivat tuoda arvokkaita yritystietoja ja valmistella tiedot mallinnusta ja merkityksellisten BI-tietojen luomista varten erittäin lyhyessä ajassa, mihin aiemmin kului kuukausia tai pidempään. 

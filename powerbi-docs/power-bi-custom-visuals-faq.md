@@ -10,12 +10,12 @@ ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 12/17/2018
-ms.openlocfilehash: 503a722a387c05952933a4cfa9aaa06eccc164da
-ms.sourcegitcommit: 76772a361e6cd4dd88824b2e4b32af30656e69db
+ms.openlocfilehash: c33ec747af514611df0ef00832acb785f04c40f1
+ms.sourcegitcommit: d4d36b6b200f2693b545e4a3e66d94c77a3cfafb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56892317"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57014158"
 ---
 # <a name="frequently-asked-questions-about-power-bi-custom-visuals"></a>Usein kysyttyjä kysymyksiä – Power BI:n mukautetut visualisoinnit
 
@@ -99,7 +99,7 @@ Jotkin visualisoinnit eivät ole sertifioituja, koska ne eivät täytä yhtä ta
 
 ### <a name="what-is-a-visual-with-additional-purchases"></a>Mikä on lisäostoja sisältävä visualisointi?
 
-Lisäostoja sisältävä visualisointi vastaa sovelluskohtaisia ostoja (IAP) Marketplacessa. Nämä apuohjelmat on merkitty hintatunnisteella  **Lisäosto saatetaan vaatia**.
+Lisäostoja sisältävä visualisointi vastaa sovelluskohtaisia ostoja (IAP) Marketplacessa. Nämä apuohjelmat on merkitty hintatunnisteella**Lisäosto saatetaan vaatia**.
 
 Mukautetut IAP-visualisoinnit ovat maksuttomia ja ladattavia mukautettuja visualisointeja. Niiden lataaminen Marketplacesta ei maksa mitään. IAP-visualisoinnit tarjoavat mahdollisuuden sovelluskohtaisiin ostoihin, joilla saa käyttöön lisäominaisuuksia.  
 

@@ -8,15 +8,15 @@ featuredvideoid: ajTPGNpthcg
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/22/2018
+ms.date: 02/26/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 23e237428b86046cf75b02e2e98082da18d671cf
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 5ae83079ae0dffca42498644f4de628bc626bb5e
+ms.sourcegitcommit: d4d36b6b200f2693b545e4a3e66d94c77a3cfafb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54286678"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57014457"
 ---
 # <a name="tips-and-tricks-for-power-bi-map-visualizations"></a>Power BI:n kartan visualisointeihin liittyviä vinkkejä
 Power BI:n voi integroida Bing Mapsin kanssa, jolloin karttoja voidaan luoda oletusarvoisten karttakoordinaattien avulla (prosessia kutsutaan geokoodaukseksi). Power BI ja Bing Maps käyttävät algoritmeja oikean sijainnin määrittämiseen, mutta joskus sijainnin määritys perustuu parhaaseen arvaukseen. Jos Power BI ei pysty luomaan kartan visualisointia itse, se käyttää apuna Bing Mapsia. 
@@ -31,8 +31,8 @@ Voit parantaa geokoodausta seuraavien vinkkien avulla. Tutustu ensimmäisen vink
 ## <a name="what-is-sent-to-bing-maps"></a>Mitä tietoja Bing Mapsiin lähetetään?
 Power BI -palvelu ja Power BI Desktop lähettävät Bingiin maantieteellisiä tietoja, joita se tarvitsee kartan visualisoinnin luomiseen. Nämä maantieteelliset tiedot voivat sisältää tietoja **Sijainti**-, **Leveysaste**- ja **Pituusaste**-säilöistä sekä **Raporttitason suodattimet**-, **Sivutason suodattimet**- tai **Visuaalisen tason suodattimet** -säilöjen geokentistä. Lähetettävät tiedot vaihtelevat kartan tyypin mukaan. Lue lisätietoja [Bing Maps -tietosuojatiedoista](https://go.microsoft.com/fwlink/?LinkID=248686).
 
-* Jos kartoille (kuplakartoille) on annettu leveys- ja pituusasteet, tietoja ei lähetetä Bingiin. Muussa tapauksessa Bingiin lähetetään Sijainti-säilössä (ja suodattimien säilöissä) olevat tiedot.     
-* Täytetyissä kartoissa on oltava kenttä Sijainti-säilössä, vaikka leveys- ja pituusasteet on annettu. Kaikki Sijainti-, Leveysaste- tai Pituusaste-säilöissä olevat tiedot lähetetään Bingiin.
+* Jos kartoille (kuplakartoille) on annettu leveys- ja pituusasteet, tietoja ei lähetetä Bingiin. Muussa tapauksessa Bingiin lähetetään **Sijainti**-säilössä (ja suodattimien säilöissä) olevat tiedot.     
+* Täytetyissä kartoissa on oltava kenttä **Sijainti**-säilössä, vaikka leveys- ja pituusasteet on annettu. Kaikki **Sijainti**-, **Leveysaste**- tai **Pituusaste**-säilöissä olevat tiedot lähetetään Bingiin.
   
     Seuraavassa esimerkissä geokoodauksessa käytetään **Toimittaja**-kenttää, joten kaikki toimittajatiedot lähetetään Bingiin. **Koko**- ja **Värikylläisyys**-säilöjen tietoja ei lähetetä Bingiin.
   

@@ -12,12 +12,12 @@ ms.topic: conceptual
 ms.date: 12/06/2018
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 994645f2ca52c992b8d61590bc02d9f9f63891ce
-ms.sourcegitcommit: a054782370dec56d49bb205ee10b7e2018f22693
+ms.openlocfilehash: db9f6218d0657946f04b7589a15be99270cf7030
+ms.sourcegitcommit: 086b610cdfd1df5de61abb47acf97589df128a4c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56662247"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57196455"
 ---
 # <a name="basic-concepts-for-power-bi-service-consumers"></a>Peruskäsitteet Power BI -palvelun ***kuluttajille***
 
@@ -88,6 +88,10 @@ Kun suunnittelija jakaa sovelluksen kanssasi, näet, mitkä tietojoukot sisälty
 * Tämän yhden tietojoukon visualisointeja voi näyttää useissa eri koontinäytöissä
   
   ![tietojoukon monta-yhteen-suhteet](media/end-user-basic-concepts/drawing2.png)
+
+Lisäksi muiden työtilojen tietojoukkojen avulla voidaan luoda sisältöä (raportteja, koontinäyttöjä) omaan työtilaasi. Nämä tietojoukot näkyvät viittauksen sisältävän tietojoukkokuvakkeen avulla: 
+
+![tietokanta, jossa linkkikuvake](media/end-user-basic-concepts/power-bi-dataset-reference-icon.png)
 
 Siirrytään seuraavaan peruselementtiin – visualisointeihin.
 __________________________________________________________

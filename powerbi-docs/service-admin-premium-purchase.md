@@ -8,18 +8,21 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 02/26/2019
+ms.date: 02/28/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: 8922bb329e4b598745fd259c67e74b063368b7be
-ms.sourcegitcommit: 76772a361e6cd4dd88824b2e4b32af30656e69db
+ms.openlocfilehash: b4f2d58b9e33e603b6e2dbc97972bb54c66f065c
+ms.sourcegitcommit: d4d36b6b200f2693b545e4a3e66d94c77a3cfafb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56892386"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57014135"
 ---
 # <a name="how-to-purchase-power-bi-premium"></a>Ohjeet Power BI Premiumin ostamiseen
 
-Tässä artikkelissa kuvataan, miten voit ostaa organisaatiollesi Power BI Premium -kapasiteettia (P1–P3). Voit ostaa Power BI Premium -kapasiteettia Office 365 -hallintakeskuksessa ja voit [hallita kapasiteettejasi](service-admin-premium-manage.md) Power BI -hallintaportaalissa. Ajantasaiset hinnoittelu- ja suunnittelutiedot löytyvät [Power BI -hinnoittelusivulta](https://powerbi.microsoft.com/pricing/) ja [Power BI Premium -laskimesta](https://powerbi.microsoft.com/calculator/).
+> [!NOTE]
+> Tätä artikkelia päivitetään parhaillaan. Tulossa on uusien ominaisuuksien kuvauksia, tietojen tarkennuksia ja luettavuutta parantavia muutoksia. 
+
+Tässä artikkelissa kuvataan, miten voit ostaa organisaatiollesi Power BI Premium -kapasiteettia (P1–P3). Voit ostaa Power BI Premium -kapasiteettia Office 365 -hallintakeskuksessa ja voit hallita kapasiteettejasi Power BI -hallintaportaalissa. Ajantasaiset hinnoittelu- ja suunnittelutiedot löytyvät [Power BI -hinnoittelusivulta](https://powerbi.microsoft.com/pricing/) ja [Power BI Premium -laskimesta](https://powerbi.microsoft.com/calculator/).
 
 Sisällöntekijät tarvitsevat edelleen Power BI Pro -käyttöoikeuden, vaikka organisaatiosi käyttäisikin Power BI Premiumia. Varmista, että ostat vähintään yhden Power BI Pro -käyttöoikeuden organisaatiollesi.
 

@@ -1,5 +1,5 @@
 ---
-title: Mitä ovat Power BI -yhdyskäytävät?
+title: Mitä ovat paikalliset tietoyhdyskäytävät?
 description: Opi Power BI -tietoyhdyskäytävien perusteet.
 author: mgblythe
 manager: kfile
@@ -10,14 +10,14 @@ ms.topic: overview
 ms.date: 04/18/2018
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 9c88a09eccd887007df8d2539be861b964c31b5f
-ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
+ms.openlocfilehash: f1ae47dcb7c9281db018952d619691607d331003
+ms.sourcegitcommit: 87e81ba92f3d1d65c26f9fc007bf106f96f37bfd
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/16/2019
-ms.locfileid: "56324480"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57461645"
 ---
-# <a name="what-are-power-bi-gateways"></a>Mitä ovat Power BI -yhdyskäytävät?
+# <a name="what-are-on-premises-data-gateways"></a>Mitä ovat paikalliset tietoyhdyskäytävät?
 
 Power BI -yhdyskäytävä on ohjelmisto, jonka asennat paikalliseen verkkoon; se helpottaa tietojen käyttöä kyseisessä verkossa. Se muistuttaa portinvartijaa, joka kuuntelee yhteyspyyntöjä ja myöntää ne vain, kun käyttäjien pyynnöt täyttävät tietyt ehdot. Näin organisaatiot voivat säilyttää tietokannat ja muut tietolähteet paikallisissa verkoissa ja käyttää niitä turvallisesti Power BI -raportteja ja -raporttinäkymiä varten.
 

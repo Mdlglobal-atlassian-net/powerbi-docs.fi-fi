@@ -8,19 +8,22 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 01/15/2019
+ms.date: 02/28/2019
 ms.custom: seodec18
 LocalizationGroup: Premium
-ms.openlocfilehash: a048f589b19acd1a7c38a5b81cf781d1e76b7b5b
-ms.sourcegitcommit: 187d20180d9bae5a2ec53748cede9e7301e0343e
+ms.openlocfilehash: cb9280f47f1f2d28ce6fabda2dbc173fbdc837ac
+ms.sourcegitcommit: 364ffa1178cdfb0a20acffc0fd79922ebc892d72
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "56725336"
+ms.lasthandoff: 03/02/2019
+ms.locfileid: "57226131"
 ---
 # <a name="what-is-microsoft-power-bi-premium"></a>Mikä on Microsoft Power BI Premium?
 
-Microsoft Power BI Premium tarjoaa organisaatiollesi resurssit Power BI -palvelun käyttämiseen. Se mahdollistaa entistä luotettavamman suorituskyvyn ja suuremmat tietomäärät. Premiumin avulla voit jakaa sisältöä laajasti ilman kuluttajakohtaisten Pro-käyttöoikeuksien hankkimista.  
+> [!NOTE]
+> Tätä artikkelia päivitetään parhaillaan. Tulossa on uusien ominaisuuksien kuvauksia, tietojen tarkennuksia ja luettavuutta parantavia muutoksia. Katso uusimmat tiedot kohdasta [Power BI Premium -kapasiteettien käyttöönotto ja hallinta](whitepaper-powerbi-premium-deployment.md).
+
+Power BI Premium tarjoaa organisaatiollesi resurssit Power BI -palvelun käyttämiseen. Se mahdollistaa entistä luotettavamman suorituskyvyn ja suuremmat tietomäärät. Premiumin avulla voit jakaa sisältöä laajasti ilman kuluttajakohtaisten Pro-käyttöoikeuksien hankkimista.  
 
 ## <a name="premium-capacity-and-shared-capacity"></a>Premium-kapasiteetti ja jaettu kapasiteetti
 
@@ -79,9 +82,7 @@ Power BI Premium on saatavilla solmumäärityksinä eri näennäisydinkapasiteet
 
 ## <a name="workloads-in-premium-capacity"></a>Kuormitukset Premium-kapasiteetissa
 
-Voit ajatella kuormituksia Power BI:ssä palveluina, jotka voit paljastaa käyttäjille. Oletusarvoisesti **Power BI Premiumin** ja **Power BI Embeddedin** kapasiteetit tukevat vain kuormitusta, joka liittyy Power BI -kyselyiden suorittamiseen pilvipalvelussa.
-
-Esikatselun tuki tarjotaan nyt myös kahdelle muulle kuormitukselle: **sivutetut raportit** ja **tietovuot**. Voit ottaa nämä kuormitukset käyttöön Power BI -hallintaportaalin tai Power BI REST -ohjelmointirajapinnan kautta. Voit määrittää enimmäismuistin jokaiselle kuormitukselle. Näin voit hallita sitä, miten eri kuormitukset vaikuttavat toistensa toimintaan. Lisätietoja on kohdassa [Kuormituksien määrittäminen](service-admin-premium-manage.md#configure-workloads).
+Oletusarvoisesti **Power BI Premiumin** ja **Power BI Embeddedin** kapasiteetit tukevat vain kuormitusta, joka liittyy Power BI -kyselyiden suorittamiseen pilvipalvelussa. Premium tukee myös muita kuormituksia **AI**:n, **tietovoiden** ja **sivutettujen raporttien** käsittelyyn. Voit ottaa nämä kuormitukset käyttöön Power BI -hallintaportaalin tai Power BI REST -ohjelmointirajapinnan kautta. Voit määrittää enimmäismuistin jokaiselle kuormitukselle. Näin voit hallita sitä, miten eri kuormitukset vaikuttavat toistensa toimintaan. Lisätietoja on artikkelissa [Kuormitusten määrittäminen](service-admin-premium-workloads.md).
 
 ### <a name="default-memory-settings"></a>Oletusmuistiasetukset
 
@@ -114,10 +115,10 @@ Power BI Premium sisältää myös mahdollisuuden suorittaa Power BI -raporttipa
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
-[Power BI Premiumin UKK](service-premium-faq.md)
-[Power BI Premiumin ostaminen](service-admin-premium-purchase.md)
-[Power BI Premiumin hallinta](service-admin-premium-manage.md)
-[Microsoft Power BI Premiumin tekninen raportti](https://aka.ms/pbipremiumwhitepaper)
-[Power BI:n yrityskäyttöönoton suunnittelemisen tekninen raportti](https://aka.ms/pbienterprisedeploy)
+[Power BI Premium -kapasiteettien käyttöönotto ja hallinta](whitepaper-powerbi-premium-deployment.md)   
+[Ohjeet Power BI Premiumin ostamiseen](service-admin-premium-purchase.md)   
+[Power BI Premiumin usein kysytyt kysymykset](service-premium-faq.md)   
+
+
 
 Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
