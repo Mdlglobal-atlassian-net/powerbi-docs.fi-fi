@@ -7,20 +7,20 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 08/08/2018
+ms.date: 02/28/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 7b835231356ad14ab434b86a2d1f99aa7212358d
-ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
+ms.openlocfilehash: 2f64973650edd951a9a780090426afba3e8471f5
+ms.sourcegitcommit: 883a58f63e4978770db8bb1cc4630e7ff9caea9a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56215626"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57555585"
 ---
 # <a name="export-reports-to-pdf-from-power-bi-desktop"></a>Raporttien vienti PDF-tiedostoon Power BI Desktopista
-**Power BI Desktopissa** voit viedä raportteja PDF-tiedostoon, ja jakaa tai tulostaa näitä raportteja siten helposti tästä PDF-tiedostosta.
+**Power BI Desktopissa** tai Power BI -palvelussa voit viedä raportteja PDF-tiedostoon, ja jakaa tai tulostaa näitä raportteja helposti tästä PDF-tiedostosta.
 
-![Vienti PDF-tiedostoon](media/desktop-export-to-pdf/export-to-pdf_01.png)
+![Vie PDF-tiedostoon](media/desktop-export-to-pdf/export-to-pdf_01.png)
 
 Voit viedä raportin helposti **Power BI Desktopista** PDF-tiedostoon, jotta voit tulostaa PDF-raportin tai jakaa tämän PDF-asiakirjan muiden kanssa. Valitse vain **Tiedosto > Vie PDF-tiedostoon** Power BI Desktopista.
 
@@ -35,7 +35,6 @@ Kun vienti on valmis, PDF-tiedosto ladataan tietokoneen oletusarvoiseen PDF-kats
 ## <a name="considerations-and-limitations"></a>Huomioitavat asiat ja rajoitukset
 **Vie PDF-tiedostoon** -ominaisuuden osalta on otettava huomioon pari seikkaa:
 
-* **Vie PDF-tiedostoon** -ominaisuus on saatavilla vain **Power BI Desktopissa**, eikä sitä ole tällä hetkellä saatavilla **Power BI -palvelussa**.
 * Ominaisuuden avulla voit viedä mukautettuja visualisointeja, mutta *et* taustakuvaa, jota olet ehkä käyttänyt raporttiin.
 
 Koska taustakuvaa ei viedä PDF-tiedostoon, sinun on kiinnitettävä erityistä huomiota raportteihin, jotka käyttävät tummaa taustakuvaa. Jos raportin teksti on vaaleaa tai valkoista, eikä erotu tummasta taustakuvasta, tekstiä voi olla vaikea lukea tai sitä ei voida lukea lainkaan vientiprosessin aikana PDF-tiedostoon, koska taustakuvaa ei viedä raportin muiden osien kanssa. 

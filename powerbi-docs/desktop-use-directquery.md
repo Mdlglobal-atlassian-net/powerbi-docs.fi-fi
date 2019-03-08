@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/28/2018
+ms.date: 02/28/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: a5aaa50aff2302742d6845c9cb16b0fc36ea2677
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: bf41700b367b7c3c2302eeec9c03b93fa294ed3f
+ms.sourcegitcommit: 883a58f63e4978770db8bb1cc4630e7ff9caea9a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54276778"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57555669"
 ---
 # <a name="use-directquery-in-power-bi-desktop"></a>DirectQueryn käyttö Power BI Desktopissa
 Kun muodostat yhteyden tietolähteeseen, voit **Power BI Desktopin** avulla aina tuoda kopion tiedoista **Power BI Desktopiin**. Joillekin tietolähteille on saatavilla vaihtoehtoinen menetelmä: yhteyden muodostaminen suoraan tietolähteeseen **DirectQueryn** avulla.
@@ -48,12 +48,12 @@ Artikkelissa [Power BI ja DirectQuery](desktop-directquery-about.md) kuvataan **
 ## <a name="limitations-of-directquery"></a>DirectQueryn rajoitukset
 **DirectQueryn** käyttöön liittyy nykyisin joitakin rajoituksia:
 
-* Kaikkien taulukoiden on oltava peräisin yksittäisestä tietokannasta.
+* Kaikkien taulukoiden on oltava peräisin yksittäisestä tietokannasta, ellei käytetä [yhdistelmämalleja](desktop-composite-models.md).
 * Jos **kyselyeditorin** kysely on liian monimutkainen, tapahtuu virhe. Virheen korjaamiseksi on joko poistettava ongelmallinen vaihe **kyselyeditorissa** tai *tuotava* tiedot **DirectQueryn** käytön sijasta. Moniulotteisten tietolähteiden, kuten SAP Business Warehousen, tapauksessa ei voi käyttää **kyselyeditoria**.
 * Suhteen suodatus on rajoitettu yhteen suuntaan molempien suuntien sijasta (vaikka on mahdollista ottaa käyttöön ristisuodatus molempiin suuntiin **DirectQuerylle** esikatseluominaisuutena). Moniulotteisten lähteiden, kuten SAP Business Warehousen, tapauksessa mallissa ei ole määritetty suhteita.
 * Aikatieto-ominaisuudet eivät ole käytettävissä **DirectQueryssä**. Esimerkiksi päivämääräsarakkeiden (vuosi, vuosineljännes, kuukausi, päivä jne.) erityiskohtelua ei tueta **DirectQuery**-tilassa.
 * Oletusarvoisesti rajoitukset sijoitetaan DAX-lausekkeisiin sallittuina toimenpiteinä. Katso lisätietoja seuraavasta kappaleesta (luettelomerkeillä varustetun luettelon jälkeen).
-* Tietojen palautuksen tapauksessa on miljoonan rivin rajoitus käytettäessä **DirectQueryä**. Tämä ei vaikuta koosteisiin tai laskelmiin, joita on käytetty **DirectQueryn** avulla palautetun tietojoukon luontiin, vaan pelkästään palautettuihin riveihin. Voit esimerkiksi koostaa 10 miljoonaa riviä tietolähteestä tehdystä kyselystä ja palauttaa tarkasti tämän koosteen tulokset Power BI:hin **DirectQueryn** avulla, jos Power BI:hin palautettujen tietojen koko on alle miljoona riviä. Jos **DirectQuerystä** palautetaan yli miljoona riviä, Power BI palauttaa virheen.
+* Tietojen palautuksen tapauksessa on miljoonan rivin rajoitus käytettäessä **DirectQueryä**. Rajoitus ei vaikuta koosteisiin tai laskelmiin, joita on käytetty **DirectQueryn** avulla palautetun tietojoukon luontiin, vaan pelkästään palautettuihin riveihin. Voit esimerkiksi koostaa 10 miljoonaa riviä tietolähteestä tehdystä kyselystä ja palauttaa tarkasti tämän koosteen tulokset Power BI:hin **DirectQueryn** avulla, jos Power BI:hin palautettujen tietojen koko on alle miljoona riviä. Jos **DirectQuerystä** palautetaan yli miljoona riviä, Power BI palauttaa virheen.
 
 Sen varmistamiseksi, että pohjana olevaan tietolähteeseen lähetettyjen kyselyjen suorituskyky on riittävä, mitoille määritetään oletusarvoisesti rajoituksia. Edistyneet käyttäjät voivat ohittaa tämän rajoituksen valitsemalla **Tiedosto > Vaihtoehdot ja asetukset > Vaihtoehdot** ja sitten **DirectQuery**, ja valitsemalla sitten vaihtoehdon *Salli rajoittamattomat toimenpiteet DirectQuery-tilassa*. Kun tämä vaihtoehto on valittu, voidaan käyttää mitä tahansa DAX-lauseketta, joka on kelvollinen mitalle. Käyttäjien on kuitenkin pantava merkille, että jotkin lausekkeet, jotka suoriutuvat erittäin hyvin tietojen tuonnin aikana, voivat hidastaa paljonkin kyselyjä taustalähteeseen DirectQuery-tilassa.
 
