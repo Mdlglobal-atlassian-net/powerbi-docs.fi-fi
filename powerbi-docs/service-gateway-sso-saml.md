@@ -8,14 +8,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: conceptual
-ms.date: 10/10/2018
+ms.date: 03/05/2019
 LocalizationGroup: Gateways
-ms.openlocfilehash: f6a17a3e4033d5a97c5ae7744fef955aeed16eeb
-ms.sourcegitcommit: e9c45d6d983e8cd4cb5af938f838968db35be0ee
+ms.openlocfilehash: c1ca797efa2e40bf74384a1e9f2362acd26c6f8f
+ms.sourcegitcommit: 883a58f63e4978770db8bb1cc4630e7ff9caea9a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57327730"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57555651"
 ---
 # <a name="use-security-assertion-markup-language-saml-for-single-sign-on-sso-from-power-bi-to-on-premises-data-sources"></a>Security Assertion Markup Languagen (SAML) käyttäminen kertakirjautumista (SSO) varten Power BI:stä paikallisiin tietolähteisiin
 
@@ -38,6 +38,8 @@ Jotta voit käyttää SAML:a, luo ensin varmenne SAML-tunnistetietopalvelua vart
     ```
 
 1. Napsauta SAP HANA Studiossa SAP HANA -palvelintasi hiiren kakkospainikkeella ja siirry kohtaan **Tietoturva** > **Avaa tietoturvakonsoli** > **SAML-tunnistetietopalvelu** > **OpenSSL-salauskirjasto**.
+
+    On mahdollista käyttää myös OpenSSL:n SAP-salauskirjastoa (se tunnetaan myös nimillä CommonCryptoLib tai sapcrypto) näiden määritysvaiheiden suorittamiseen. Katso lisätietoja virallisesta SAP-dokumentaatiosta.
 
 1. Valitse **Tuo**, etsi samltest.crt-tiedosto ja tuo se.
 
@@ -121,6 +123,37 @@ Lopuksi seuraa näitä ohjeita lisätäksesi varmenteen allekirjoituksen yhdysk�
 Nyt voit käyttää Power BI:n **yhdyskäytävän hallintasivua** tietolähteen määrittämiseen. Ota sen **Lisäasetukset**-kohdassa kertakirjautuminen käyttöön. Sitten voit julkaista kyseiseen tietolähteeseen liittyvät raportit ja tietojoukot.
 
 ![Lisäasetukset](media/service-gateway-sso-saml/advanced-settings.png)
+
+## <a name="troubleshooting"></a>Vianmääritys
+
+Kun olet määrittänyt SSO:n, saatat saada seuraavan virheilmoituksen Power BI -portaalista: ”Annettuja tunnistetietoja ei voida käyttää SapHana-lähteelle.” Tämä virheilmoitus merkitsee, että SAP HANA on hylännyt SAML-tunnistetiedon.
+
+Todentamisen jäljityksistä saa yksityiskohtaisia tietoja SAP HANA:n tunnistetieto-ongelmien vianmääritystä varten. Määritä SAP HANA -palvelimen seuranta oheisella tavalla.
+
+1. Käynnistä todentamisen jäljitys SAP HANA -palvelimella suorittamalla seuraava kysely.
+
+    ```
+    ALTER SYSTEM ALTER CONFIGURATION ('indexserver.ini', 'SYSTEM') set ('trace', 'authentication') = 'debug' with reconfigure 
+    ```
+
+1. Toista kokemasi ongelma.
+
+1. Avaa HANA Studion hallintakonsoli ja siirry **Diagnoositiedostot**-välilehteen.
+
+1. Avaa viimeisin indexserver-jäljitys ja hae SAMLAuthenticator.cpp.
+
+    Sinun pitäisi löytää yksityiskohtainen virheilmoitus, joka ilmaisee pääsyyn, kuten seuraava esimerkki.
+
+    ```
+    [3957]{-1}[-1/-1] 2018-09-11 21:40:23.815797 d Authentication   SAMLAuthenticator.cpp(00091) : Element '{urn:oasis:names:tc:SAML:2.0:assertion}Assertion', attribute 'ID': '123123123123123' is not a valid value of the atomic type 'xs:ID'.
+    [3957]{-1}[-1/-1] 2018-09-11 21:40:23.815914 i Authentication   SAMLAuthenticator.cpp(00403) : No valid SAML Assertion or SAML Protocol detected
+    ```
+
+1. Kun vianetsintä on valmis, poista todentamisen jäljitys käytöstä suorittamalla seuraava kysely.
+
+    ```
+    ALTER SYSTEM ALTER CONFIGURATION ('indexserver.ini', 'SYSTEM') UNSET ('trace', 'authentication');
+    ```
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
