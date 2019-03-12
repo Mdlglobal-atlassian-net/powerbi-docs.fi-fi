@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 6a1834c88fbd7077f49560bc56b545539917ed3e
-ms.sourcegitcommit: 086b610cdfd1df5de61abb47acf97589df128a4c
+ms.openlocfilehash: f22cac734d98e98cd17a915c09d6705e2cad121a
+ms.sourcegitcommit: 378265939126fd7c96cb9334dac587fc80291e97
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57196432"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57580055"
 ---
 # <a name="organizational-content-packs-copy-refresh-and-get-access"></a>Organisaation sisältöpaketit: kopioiminen, päivittäminen ja käyttöoikeuden hankkiminen
 
@@ -25,13 +25,13 @@ Sisältöpakettien luominen eroaa koontinäyttöjen jakamisesta tai niiden työs
 
 > [!NOTE]
 > Et voi luoda tai asentaa organisaation sisältöpaketteja uuden työtilakokemuksen esiversiossa. Nyt on hyvä aika päivittää sisältöpaketit sovelluksiin, jos et ole vielä aloittanut päivittämistä. Lue [lisätietoja uudesta työtilakokemuksesta](service-create-the-new-workspaces.md).
-> 
+>
 
 ## <a name="create-a-copy-of-an-organizational-content-pack"></a>Kopion luominen organisaation sisältöpaketista
 Luo sisältöpaketista oma kopiosi, joka ei näy muille.
 
 1. Valitse kolme pistettä (...) sisältöpaketin koontinäytön vieressä ja valitse Tee kopio.
-   
+
     ![](media/service-organizational-content-pack-copy-refresh-access/power-bi-create-copy-organizational-content-pack.png)
 2. Valitse **Tallenna**.  
 
@@ -41,7 +41,7 @@ Nyt sinulla on kopio, jota voit muokata. Kukaan muu ei näe tekemiäsi muutoksia
 > Aiemmin sisältöpaketin asentaminen tai kopioiminen aiheutti sen, että työtilan sisältöluetteloon ilmestyi uusi tietojoukko. Viimeisin päivitys yksinkertaisti käyttökokemusta niin, että näet vain yhden kohteen, jossa käytetään uutta, viittauksen sisältävää tietojoukkokuvaketta:
 >
 > ![tietokanta, jossa linkkikuvake](media/service-organizational-content-pack-copy-refresh-access/power-bi-dataset-reference-icon.png)
-> 
+>
 
 ## <a name="help--i-can-no-longer-access-the-content-pack"></a>Apua!  Sisältöpaketti ei ole enää käytettävissä
 Tämä voi johtua useista syistä:
@@ -51,7 +51,7 @@ Tämä voi johtua useista syistä:
 * **Suojausasetukset muuttuvat**: Jos koontinäyttö ja raportit on yhdistetty paikallisiin SSAS-tietolähteisiin ja suojausasetuksia muutetaan, käyttöoikeutesi kyseiseen palvelimeen on ehkä kumottu.
 
 ## <a name="how-are-organizational-content-packs-refreshed"></a>Miten organisaation sisältöpaketit päivitetään?
-Kun sisältöpaketti luodaan, päivitysasetukset periytyvät tietojoukon kanssa.  Kun luot sisältöpaketista kopion, uusi versio säilyttää yhteyden alkuperäiseen tietojoukkoon ja sen päivitysaikatauluun. 
+Kun sisältöpaketti luodaan, päivitysasetukset periytyvät tietojoukon kanssa.  Kun luot sisältöpaketista kopion, uusi versio säilyttää yhteyden alkuperäiseen tietojoukkoon ja sen päivitysaikatauluun.
 
 Katso [Organisaation sisältöpakettien hallinta, päivitys ja poistaminen](service-organizational-content-pack-manage-update-delete.md).
 
@@ -59,4 +59,3 @@ Katso [Organisaation sisältöpakettien hallinta, päivitys ja poistaminen](serv
 * [Johdanto organisaation sisältöpaketteihin](service-organizational-content-pack-introduction.md)
 * [Ryhmän luominen Power BI:ssä](service-create-distribute-apps.md)
 * Onko sinulla muuta kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
-
