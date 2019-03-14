@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 01/24/2019
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: a4180f211a2b31a8610d410a74e0cca25dcdad15
-ms.sourcegitcommit: d4d36b6b200f2693b545e4a3e66d94c77a3cfafb
+ms.openlocfilehash: ca9a2eff3d05ec10c83dde90eabb779370ca5e96
+ms.sourcegitcommit: f176ba9d52d50d93f264eca21bb3fd987dbf934b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57014641"
+ms.lasthandoff: 03/12/2019
+ms.locfileid: "57757342"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>Power BI:n hallinta hallintaportaalissa
 
@@ -192,6 +192,13 @@ Seuraavassa kuvassa näkyy raportin **Tiedosto**-valikko, kun **Tulosta koontin�
 
 ![Raportin tulostaminen](media/service-admin-portal/powerbi-admin-print-report.png)
 
+### <a name="allow-external-guest-users-to-edit-and-manage-content-in-the-organization"></a>Salli ulkoisten vieraskäyttäjien muokata ja hallita sisältöä organisaatiossa
+Azuren B2B-vieraskäyttäjät voivat muokata ja hallita sisältöä organisaatiossa. [Lue lisää](service-admin-azure-ad-b2b.md)
+
+Seuraava kuva näyttää asetuksen Salli ulkoisten vieraskäyttäjien muokata ja hallita sisältöä organisaatiossa.
+
+![Salli ulkoisten vieraskäyttäjien muokata ja hallita sisältöä organisaatiossa](media/service-admin-portal/powerbi-admin-tenant-settings-b2b-guest-edit-manage.png)
+
 ## <a name="content-pack-and-app-settings"></a>Sisältöpaketin ja sovelluksen asetukset
 
 ### <a name="publish-content-packs-and-apps-to-the-entire-organization"></a>Julkaise sisältöpaketteja ja sovelluksia koko organisaatiolle
@@ -243,10 +250,45 @@ Organisaation käyttäjät voivat käyttää mukautettuja visualisointeja ja jak
 > [!NOTE]
 > Tämä asetus voidaan ulottaa koskemaan koko organisaatiota tai rajoittaa määrättyihin ryhmiin.
 
+
+Power BI Desktop (alkaen maaliskuun 2019 julkaisusta) tukee **ryhmäkäytäntöä** mukautettujen visualisointien poistamiseksi käytöstä organisaation käyttöön otetuilla tietokoneilla.
+
+<table>
+<tr><th>Määrite</th><th>Arvo</th>
+</tr>
+<td>avain</td>
+    <td>Software\Policies\Microsoft\Power BI Desktop\</td>
+<tr>
+<td>valueName</td>
+<td>EnableCustomVisuals</td>
+</tr>
+</table>
+
+Arvo 1 (desimaalimuotoinen) ottaa käyttöön mukautetut visualisoinnit Power BI:ssä (tämä on oletusarvo).
+
+Arvo 0 (desimaalimuotoinen) poistaa käytöstä mukautetut visualisoinnit Power BI:ssä.
+
 ### <a name="allow-only-certified-visuals"></a>Salli vain sertifioidut visualisoinnit
 
 Organisaation käyttäjät, joille on annettu oikeudet lisätä ja käyttää mukautettuja visualisointeja ”Lisää ja käytä mukautettuja visualisointeja” -asetuksen mukaisesti, saavat käyttää ainoastaan [sertifioituja mukautettuja visualisointeja](https://go.microsoft.com/fwlink/?linkid=2002010) (sertifioimattomat visualisoinnit estetään ja käyttöyritys johtaa virheilmoitukseen). 
 
+
+Power BI Desktop (alkaen maaliskuun 2019 julkaisusta) tukee **ryhmäkäytäntöä** sertifioimattomien mukautettujen visualisointien poistamiseksi käytöstä organisaation käyttöön otetuilla tietokoneilla.
+
+<table>
+<tr><th>Määrite</th><th>Arvo</th>
+</tr>
+<td>avain</td>
+    <td>Software\Policies\Microsoft\Power BI Desktop\</td>
+<tr>
+<td>valueName</td>
+<td>EnableUncertifiedVisuals</td>
+</tr>
+</table>
+
+Arvo 1 (desimaalimuotoinen) ottaa käyttöön sertifioimattomat mukautetut visualisoinnit Power BI:ssä (tämä on oletusarvo).
+
+Arvo 0 (desimaalimuotoinen) poistaa käytöstä sertifioimattomat mukautetut visualisoinnit Power BI:ssä (tämä asetus sallii vain [sertifioidut mukautetut visualisoinnit](https://go.microsoft.com/fwlink/?linkid=2002010)).
 
 ## <a name="r-visuals-settings"></a>R-visualisointien asetukset
 

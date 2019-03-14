@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: d7f30dd43fe875380939520f3dc54fcbbe2f4c9c
+ms.sourcegitcommit: 883a58f63e4978770db8bb1cc4630e7ff9caea9a
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57555964"
+---
 **DAX**- ja Excel-kaavakielien yksi merkittävimmistä eroista on se, että DAX mahdollistaa *kokonaisten taulukoiden* välittämisen lausekkeiden välillä (eli tätä ei ole rajoitettu yhteen arvoon). Tämän ansiosta DAX-lausekkeet tarjoavat mahdollisuuden suodattaa taulukoita ja käsitellä sitten suodatettuja arvojoukkoja.
 
 ![](media/7-6-dax-tables-and-filtering/dax-tables-filtering_1.png)
@@ -11,9 +19,9 @@ DAX sisältää laajan valikoiman **taulukkofunktioita**. Käytettävissä ovat 
 * ALL
 * VALUES
 * DISTINCT
-* RELATEDTABLE.
+* RELATEDTABLE
 
-Nämä funktiot palauttavat arvon asemesta koko taulukon. Yleensä **taulukkofunktion** tuloksia käytetään jatkoanalysoinnissa osana laajempaa lauseketta (sen sijaan, että käyttäisit palautettua taulukkoa lopullisena arvona). On tärkeää muistaa se, että kun käytät taulukkofunktiota, tulokset perivät sarakkeidensa suhteet.
+Nämä funktiot palauttavat yksittäisen arvon asemesta koko taulukon. Yleensä **taulukkofunktion** tuloksia käytetään jatkoanalysoinnissa osana laajempaa lauseketta (sen sijaan, että käyttäisit palautettua taulukkoa lopullisena arvona). On tärkeää muistaa se, että kun käytät taulukkofunktiota, tulokset perivät sarakkeidensa suhteet.
 
 Voit yhdistellä taulukkofunktioita lausekkeissasi, kunhan kukin funktio käyttää taulukkoa ja palauttaa taulukon. Otetaan esimerkiksi seuraava DAX-lauseke:
 

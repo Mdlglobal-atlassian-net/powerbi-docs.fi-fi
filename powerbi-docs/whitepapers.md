@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/09/2019
+ms.date: 03/07/2019
 ms.author: maggies
-ms.openlocfilehash: 76ea3250c3032c253b87f5f2b0713460a805787e
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 5af870bfd3cb6f9c925dd3d6268d0a1cb54df09b
+ms.sourcegitcommit: 378265939126fd7c96cb9334dac587fc80291e97
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54295797"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57580009"
 ---
 # <a name="whitepapers-for-power-bi"></a>Power BI:n tekniset raportit
 
@@ -28,8 +28,8 @@ Teknisten raporttien avulla voit tutustua Power BI:n aiheisiin syvällisemmin. T
 | [Upotetun analytiikan sopimuskapasiteetti Power BI Premiumin yhteydessä](https://aka.ms/pbiewhitepaper) |Tämä raportti sisältää ohjeita sovelluskehittäjälle tai ISV:lle yritykselle parhaiten sopivan kapasiteetin määrittämiseksi. | Lokakuu 2017 |
 | [Power BI:n yrityskäyttöönoton suunnitteleminen](https://go.microsoft.com/fwlink/?linkid=2057861) |Tässä teknisessä raportissa käydään läpi huomioitavat seikat, kun halutaan toteuttaa hyvin toimiva ja turvallinen Power BI -käyttöönotto organisaatiossa. | Heinäkuu 2018 |
 | [Ohjeita kapasiteetin suunnitteluun Power BI -raporttipalvelimella](report-server/capacity-planning.md) |Tämän artikkelin tarkoituksena on antaa ohjeita kapasiteetin suunnitteluun Power BI -raporttipalvelimen avulla jakamalla eri kuormituksille tehtyjen erilaisten kuormitustestien tuloksia. | Maaliskuu 2018 |
-| [Tietoturva](service-admin-power-bi-security.md) |Tämä raportti sisältää tarkan kuvauksen Power BI:n tietoturvasta. | Heinäkuu 2018 |
-| [Power BI -sisällön jakaminen ulkoisille vieraskäyttäjille Azure Active Directory B2B:n avulla](https://aka.ms/powerbi-b2b-whitepaper)|Tässä raportissa kerrotaan, miten sisältöä jaetaan organisaation ulkopuolisille käyttäjille käyttäen Microsoft Azure Active Directoryn yritysten välistä (AAD B2B) integrointia.| Maaliskuu 2018 |
+| [Tietoturva](service-admin-power-bi-security.md) |Tämä raportti sisältää tarkan kuvauksen Power BI:n tietoturvasta. | Maaliskuu 2019 |
+| [Power BI -sisällön jakaminen ulkoisille vieraskäyttäjille Azure Active Directory B2B:n avulla](whitepaper-azure-b2b-power-bi.md)|Tässä raportissa kerrotaan, miten sisältöä jaetaan organisaation ulkopuolisille käyttäjille käyttäen Microsoft Azure Active Directoryn yritysten välistä (AAD B2B) integrointia.| Maaliskuu 2018 |
 | [Kehittynyt analytiikka Power BI:ssä](https://info.microsoft.com/advanced-analytics-with-power-bi.html?Is=Website) |Tässä artikkelissa kuvataan Power BI:n kehittyneet analytiikkaominaisuudet, kuten ennakoiva analyysi, mukautetut visualisoinnit, R-integrointi ja tietojen analysointilausekkeet. | Helmikuu 2017 |
 | [Raporttien ja visualisointien parhaat suunnittelukäytännöt](visuals/power-bi-visualization-best-practices.md) |Tästä raportista voit lukea parhaita käytäntöjä raporttien suunnitteluun Power BI:ssä. | Kesäkuu 2018 |
 | [Kaksisuuntainen suodatus](desktop-bidirectional-filtering.md) |Tässä raportissa selitetään kaksisuuntainen ristisuodatus Power BI Desktopissa (tekninen raportti kattaa myös SQL Server Analysis Services 2016:n, molemmat toimivat samalla tavalla). | Heinäkuu 2018 |

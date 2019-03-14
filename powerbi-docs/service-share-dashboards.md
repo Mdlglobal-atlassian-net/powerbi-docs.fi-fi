@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 12/10/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: a4f10253619393ffd9807b1e33730a4dd37a47ff
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: f96e5235aba6f90e6f80286ebfb409004ccd5052
+ms.sourcegitcommit: 378265939126fd7c96cb9334dac587fc80291e97
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54277384"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57580239"
 ---
 # <a name="share-your-power-bi-dashboards-and-reports-with-coworkers-and-others"></a>Power BI -koontinäyttöjen ja -raporttien jakaminen työtovereiden ja muiden kanssa
 *Jakaminen* on kätevä keino myöntää parille henkilölle käyttöoikeus luomiisi koontinäyttöihin ja raportteihin. Power BI tarjoaa myös [useita muita tapoja tehdä yhteistyötä ja jakaa koontinäyttöjä ja raportteja](service-how-to-collaborate-distribute-dashboards-reports.md).
@@ -98,7 +98,7 @@ Kun jaat sisältöä organisaatiosi ulkopuolisten henkilöiden kanssa, he saavat
 
 Kun he ovat kirjautuneet sisään, he näkevät jaetun koontinäytön tai raportin sen omassa selainikkunassa ilman vasenta siirtymisruutua, eivät tavanomaisessa Power BI -portaalissaan. Heidän on luotava kirjainmerkki linkille, jotta he voivat käyttää tätä raporttinäkymää tai raporttia vastaisuudessa.
 
-He eivät voi muokata mitään tämän koontinäytön tai raportin sisältöä. He voivat käsitellä kaavioita ja muuttaa suodattimia tai osittajia raportissa, mutta he eivät voi tallentaa tekemiään muutoksia.
+He eivät voi muokata mitään tämän koontinäytön tai raportin sisältöä. He voivat käsitellä kaavioita ja muuttaa suodattimia tai osittajia raportissa, mutta he eivät voi tallentaa tekemiään muutoksia. 
 
 Vain suorat vastaanottajasi voivat nähdä jaetun koontinäytön tai raportin. Jos lähetit esimerkiksi sähköpostiviestin Vicki@contoso.comlle, vain Vicki voi nähdä koontinäytön. Kukaan muu ei voi nähdä tätä koontinäyttöä, vaikka heillä olisi linkki. Vickin on myös käytettävä samaa sähköpostiosoitetta, jotta hän voi käyttää tätä koontinäyttöä. Jos hän rekisteröityy jollakin muulla sähköpostiosoitteella, hän ei voi myöskään käyttää tätä koontinäyttöä.
 
@@ -106,7 +106,9 @@ Organisaatiosi ulkopuoliset henkilöt eivät näe mitään tietoja, jos rooli - 
 
 Jos lähetit linkin Power BI -mobiilisovelluksesta organisaatiosi ulkopuolisille henkilöille, kun he napsauttavat linkkiä, koontinäyttö avautuu selaimessa eikä Power BI -mobiilisovelluksessa.
 
-## <a name="limitations-and-considerations"></a>Rajoitukset ja huomioon otettavat seikat
+Jos vieraskäyttäjien käyttöoikeus perustuu [Salli ulkoisten vieraskäyttäjien muokata ja hallita sisältöä organisaatiossa](service-admin-portal.md#export-and-sharing-settings) -asetukseen, vain kuluttajakokemuksen salliva oletusasetus ei koske heitä. [Lue lisää](service-admin-azure-ad-b2b.md)
+
+## <a name="limitations-and-considerations"></a>Rajoitukset ja huomioitavat asiat
 Kun jaat koontinäyttöjä ja raportteja, ota huomioon seuraavat seikat:
 
 * Työtoverisi näkevät yleensä samat tiedot kuin sinä koontinäytössä ja raportissa. Näin ollen jos sinulla on käyttöoikeus nähdä enemmän tietoja kuin työtoverisi, he näkevät kaikki tietosi koontinäytössä tai raportissa. Kuitenkin jos [rivitason suojausta (RLS)](service-admin-rls.md) sovelletaan koontinäytön tai raportin pohjana olevaan tietojoukkoon, jokaisen henkilön tunnistetietoja käytetään sen määrittämiseen, mitä tietoja he voivat käyttää.

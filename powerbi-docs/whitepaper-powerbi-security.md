@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 02/28/2019
+ms.date: 03/07/2019
 ms.author: davidi
 LocalizationGroup: Conceptual
-ms.openlocfilehash: 8415e731fd8749397b9604277f9f37f126b5413f
-ms.sourcegitcommit: 76772a361e6cd4dd88824b2e4b32af30656e69db
+ms.openlocfilehash: 957c6d5fe8797f1b03eaab3a54846e7110b302fb
+ms.sourcegitcommit: 378265939126fd7c96cb9334dac587fc80291e97
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56892987"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57580285"
 ---
 # <a name="power-bi-security-whitepaper"></a>Power BI:n suojausraportti
 
@@ -34,7 +34,7 @@ ms.locfileid: "56892987"
 
 **Power BI** on Microsoftin online-ohjelmistopalvelu (_SaaS_ eli Software as a Service, ”ohjelmisto palveluna”), jonka avulla voit nopeasti ja helposti luoda omatoimisia liiketoimintatietojen koontinäyttöjä, raportteja, tietojoukkoja ja visualisointeja. Power BI:n avulla voit muodostaa yhteyden moniin eri tietolähteisiin, yhdistää ja muotoilla tietoja kyseisistä yhteyksistä sekä luoda sitten raportteja ja koontinäyttöjä, jotka voidaan jakaa muiden kanssa.
 
-Power BI-palveluun liittyvät [Microsoftin verkkopalvelujen ehdot](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=31) ja [Microsoftin yritystason tietosuojalausunto](http://www.microsoft.com/privacystatement/OnlineServices/Default.aspx). Tietojenkäsittelyn sijainti ilmoitetaan Microsoftin verkkopalvelujen ehtojen kohdassa Tietojen siirrot ja sijaintipaikka. Yhteensopivuuden lisätietojen osalta [Microsoft Trust Center](https://www.microsoft.com/trustcenter) on ensisijainen resurssi Power BI:tä varten. Power BI -ryhmä tekee kovasti töitä saadakseen asiakkaidensa käyttöön uusimmat innovaatiot ja parhaan tuottavuuden. Power BI on tällä hetkellä [Office 365 -yhteensopivuuskehyksen](http://go.microsoft.com/fwlink/p/?LinkID=618494) tasolla D.
+Power BI-palveluun liittyvät [Microsoftin verkkopalvelujen ehdot](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=31) ja [Microsoftin yritystason tietosuojalausunto](http://www.microsoft.com/privacystatement/OnlineServices/Default.aspx). Tietojenkäsittelyn sijainti on Microsoftin verkkopalvelujen ehtojen kohdassa Tietojen siirrot ja sijaintipaikka. Yhteensopivuuden lisätietojen osalta [Microsoft Trust Center](https://www.microsoft.com/trustcenter) on ensisijainen resurssi Power BI:tä varten. Power BI -ryhmä tekee kovasti töitä saadakseen asiakkaidensa käyttöön uusimmat innovaatiot ja parhaan tuottavuuden. Power BI on tällä hetkellä [Office 365 -yhteensopivuuskehyksen](http://go.microsoft.com/fwlink/p/?LinkID=618494) tasolla D.
 
 Tässä artikkelissa kuvataan Power BI -suojausta kertomalla Power BI -arkkitehtuurista sekä selitetään, miten käyttäjät todennetaan Power BI -palvelussa ja miten tietoyhteydet muodostetaan. Lisäksi kuvataan, kuinka Power BI tallentaa ja siirtää tietoja palvelussa. Viimeisessä osiossa käsitellään tietoturvaan liittyviä kysymyksiä ja myös vastataan niihin.
 
@@ -56,19 +56,19 @@ Power BI käyttää tilin todentamiseen ja hallintaan Azure Active Directorya (*
 
 Kun käyttäjät yrittävät muodostaa yhteyden Power BI-palveluun, asiakkaan DNS-palvelu voi olla yhteydessä **Azure-liikennehallintaan** ja etsiä lähimmän palvelinkeskuksen, jossa on Power BI -käyttöönotto. Katso tähän prosessiin liittyviä lisätietoja artikkelista [Suorituskyvyn liikenteen reititysmenetelmä Azure-liikennehallinnalle](https://azure.microsoft.com/documentation/articles/traffic-manager-routing-methods/#performance-traffic-routing-method).
 
-Käyttäjän lähin WFE-klusteri hoitaa kirjautumis- ja todentamisvaiheen (kuvataan myöhemmin tässä artikkelissa) sekä toimittaa käyttäjälle AAD-tunnuksen, kun todentaminen on onnistunut. WFE-klusterin ASP.NET-osa jäsentää pyynnön ja määrittää, mihin organisaatioon käyttäjä kuuluu, minkä jälkeen se konsultoi Power BI:n **yleistä palvelua**. Yleinen palvelu on yksittäinen Azure-taulukko, joka on jaettu maailman kaikkien WFE- ja Back End -klustereiden kesken ja joka liittää käyttäjät ja asiakasorganisaatiot tietokeskukseen, jossa heidän Power BI -vuokraajaansa säilytetään. WFE määrittää selaimelle, missä Back End -klusterissa organisaation vuokraajaa säilytetään. Kun käyttäjä on todennettu, seuraavat vuorovaikutukset asiakkaan kanssa tapahtuvat suoraan Back End -klusterissa, niin että WFE ei toimi välittäjänä pyynnöille.
+Käyttäjän lähin WFE-klusteri hoitaa kirjautumis- ja todentamisvaiheen (kuvataan myöhemmin tässä artikkelissa) sekä toimittaa käyttäjälle AAD-tunnuksen, kun todentaminen on onnistunut. WFE-klusterin ASP.NET-osa jäsentää pyynnön ja määrittää, mihin organisaatioon käyttäjä kuuluu, minkä jälkeen se konsultoi Power BI:n **yleistä palvelua**. Yleinen palvelu on yksittäinen Azure-taulukko, joka on jaettu maailman kaikkien WFE- ja Back-End-klustereiden kesken ja joka liittää käyttäjät ja asiakasorganisaatiot tietokeskukseen, jossa heidän Power BI -vuokraajaansa säilytetään. WFE määrittää selaimelle, missä Back-End-klusterissa organisaation vuokraajaa säilytetään. Kun käyttäjä on todennettu, seuraavat vuorovaikutukset asiakkaan kanssa tapahtuvat suoraan Back-End-klusterissa, niin että WFE ei toimi välittäjänä pyynnöille.
 
-### <a name="the-power-bi-back-end-cluster"></a>Power BI -palvelun Back End -klusteri
+### <a name="the-power-bi-back-end-cluster"></a>Power BI -palvelun Back-End-klusteri
 
 Todennetut asiakkaat vuorovaikuttavat Power BI -palvelun kanssa **Back End** -klusterin kautta. **Back End** -klusteri hallitsee visualisointeja, käyttäjien koontinäyttöjä, tietojoukkoja, raportteja, tiedon tallennusta, tietoyhteyksiä, tietojen päivittämistä ja muita Power BI -palvelun vuorovaikutusominaisuuksia.
 
-![Back End -klusteri](media/whitepaper-powerbi-security/powerbi-security-whitepaper_03.png)
+![Back-End-klusteri](media/whitepaper-powerbi-security/powerbi-security-whitepaper_03.png)
 
 **Yhdyskäytävän rooli** toimii yhdyskäytävänä käyttäjäpyyntöjen ja Power BI -palvelun välillä. Käyttäjät eivät ole suorassa vuorovaikutuksessa muun roolin kuin yhdyskäytävän roolin kanssa.
 
 **Tärkeää:** On ehdottoman tärkeää huomata, että _vain_ Azure API Management (**APIM**)- ja yhdyskäytävä (**GW**) -roolit ovat käytettävissä julkisen Internetin kautta. Ne tarjoavat todennus-, valtuutus-, SSoS-suojaus-, rajoittamis-, kuormituksen tasaus-, reititys- ja muut ominaisuudet.
 
-Pisteviiva yllä olevassa **Back End** -klusterin kuvassa osoittaa käyttäjien käytettävissä olevien kahden roolin (pisteviivan vasemmalla puolella) ja vain järjestelmän käytettävissä olevien roolien välisen rajan. Kun todennettu käyttäjä muodostaa yhteyden Power BI -palveluun, **yhdyskäytävän rooli** ja **Azure API Management** hyväksyvät yhteyden ja asiakkaan pyynnön ja hallitsevat niitä. Ne vuorovaikuttavat sitten muun Power BI -palvelun kanssa käyttäjän puolesta. Kun asiakas esimerkiksi yrittää tarkastella koontinäyttöä, **yhdyskäytävän rooli** hyväksyy pyynnön ja lähettää pyynnön erikseen **esityksen roolille**, joka noutaa selaimen koontinäytön hahmontamiseen tarvitsemat tiedot.
+Pisteviiva yllä olevassa **Back-End**-klusterin kuvassa osoittaa käyttäjien käytettävissä olevien kahden roolin (pisteviivan vasemmalla puolella) ja vain järjestelmän käytettävissä olevien roolien välisen rajan. Kun todennettu käyttäjä muodostaa yhteyden Power BI -palveluun, **yhdyskäytävän rooli** ja **Azure API Management** hyväksyvät yhteyden ja asiakkaan pyynnön ja hallitsevat niitä. Ne vuorovaikuttavat sitten muun Power BI -palvelun kanssa käyttäjän puolesta. Kun asiakas esimerkiksi yrittää tarkastella koontinäyttöä, **yhdyskäytävän rooli** hyväksyy pyynnön ja lähettää pyynnön erikseen **esityksen roolille**, joka noutaa selaimen koontinäytön hahmontamiseen tarvitsemat tiedot.
 
 ![Yhdyskäytävän rooli](media/whitepaper-powerbi-security/powerbi-security-whitepaper_04.png)
 
@@ -78,7 +78,7 @@ Pisteviiva yllä olevassa **Back End** -klusterin kuvassa osoittaa käyttäjien 
 
 ![Power BI Premium](media/whitepaper-powerbi-security/powerbi-security-whitepaper_05.png)
 
-Luonnin jälkeen kaikki liikenne Premium-klusterin kanssa reititetään Power BI:n Back End -klusterin kautta, jossa muodostetaan yhteys asiakkaan erillisiin **Power BI Premium** -tilauksen näennäiskoneisiin.
+Luonnin jälkeen kaikki liikenne Premium-klusterin kanssa reititetään Power BI:n Back-End-klusterin kautta, jossa muodostetaan yhteys asiakkaan erillisiin **Power BI Premium** -tilauksen näennäiskoneisiin.
 
 ### <a name="data-storage-architecture"></a>Tietojen tallentamisen arkkitehtuuri
 
@@ -98,7 +98,7 @@ Vuokraaja säilyttää yrityksen käyttäjät ja niihin liittyvät tiedot – sa
 
 Power BI -vuokraaja luodaan siinä tietokeskuksessa, jonka katsotaan olevan lähimpänä niitä maa- (tai alue-) ja osavaltiotietoja, jotka vuokraajalle määritettiin Azure Active Directoryssa, kun Office 365- tai Power BI -palvelu alunperin valmisteltiin. Power BI -vuokraaja ei nykyään siirry kyseisestä tietokeskuksen sijainnista.
 
-### <a name="multiple-geographies-multi-geo---preview"></a>Multi-Geo – esikatselu
+### <a name="multiple-geographies-multi-geo"></a>Useita alueita (Multi-Geo)
 
 Jotkin organisaatiot vaativat Power BI -tavoitettavuutta useilla alueilla liiketoiminnan tarpeiden vuoksi. Yrityksellä saattaa esimerkiksi olla Power BI -vuokraaja Yhdysvalloissa, minkä lisäksi yrityksellä on liiketoimintaa muilla maantieteellisillä alueilla, kuten Australiassa, joten yritys tarvitsee Power BI -palveluita ja -tietoja voidakseen jatkaa toimintaansa kyseisellä etäalueella.  Vuoden 2018 toiselta puoliskolta alkaen organisaatiot, joiden vuokraaja sijaitsee jollakin alueella, voivat käyttää myös toisen alueen Power BI -resursseja, jos valmistelut on tehty oikein. Tätä ominaisuutta kutsutaan kätevyyden vuoksi tässä asiakirjassa nimellä **Multi-Geo**.
 
@@ -108,7 +108,7 @@ Eri alueilla toimittaessa tulee pitää mielessä tiettyjä teknisiä seikkoja, 
 - Etäalueella olevat PBIX- ja XLSX-tiedostojen raportit, jotka julkaistaan Power BI:hin, saattavat joskus aiheuttaa sen, että kopio tai tilannevedos tallennetaan Power BI:n Azure Blob -säilöön, jolloin tiedot salataan käyttäen Azuren SSE (Storage Service Encryption) -salausta.
 - Kun tietoja siirretään Multi-Geo-ympäristössä alueelta toiselle, muistin tiivistäminen alueella, jolta tietoja on siirretty pois, suositetaan tehtäväksi 7–10 päivän kuluessa, jolloin alkuperäisestä sijainnista siirrettyjen tietojen kopio poistetaan.
 
-Seuraavassa kuvassa esitetään, miten Multi-Geo-ympäristössä etäalueen Power BI -palvelut reititetään **Power BI -palvelun Back End** -klusteriin, jossa muodostetaan yhteys asiakkaan Power BI -tilauksen etänäennäiskoneeseen.
+Seuraavassa kuvassa esitetään, miten Multi-Geo-ympäristössä etäalueen Power BI -palvelut reititetään **Power BI -palvelun Back-End**-klusteriin, jossa muodostetaan yhteys asiakkaan Power BI -tilauksen etänäennäiskoneeseen.
 
 ![Multi-Geo](media/whitepaper-powerbi-security/powerbi-security-whitepaper_07.png)
 
@@ -121,46 +121,13 @@ Seuraavissa linkeissä on lisätietoja Azure-tietokeskuksista.
 - [Azure-alueet](http://azure.microsoft.com/regions/) – tietoa Azuren maailmanlaajuisesta edustuksesta ja sijainneista
 - [Azure-palvelut alueittain](http://azure.microsoft.com/regions/#services) – Täydellinen luettelo kullakin alueella saatavilla olevista Microsoftin Azure-palveluista (sekä infrastruktuuripalvelut että käyttöympäristön palvelut).
 
-Tällä hetkellä Power BI -palvelu on saatavilla seuraavilla alueilla, joilla palvelun tarjoavat seuraavat ensisijaiset tietokeskukset:
+Tällä hetkellä Power BI -palvelu on käytettävissä tietyillä palvelinkeskusten palvelemilla alueilla, kuten [Microsoft Trust Center]((https://www.microsoft.com/TrustCenter/CloudServices/business-application-platform/data-location)issä on kuvattu. Seuraava linkki näyttää kartan Power BI -palvelinkeskuksista. Kun viet hiiren osoittimen alueen päällä, näet alueella sijaitsevat palvelinkeskukset:
 
-- United States
-  - Itäinen Yhdysvallat
-  - Itäinen Yhdysvallat 2
-  - Yhdysvaltojen pohjoinen keskiosa
-  - Yhdysvaltojen eteläinen keskiosa
-  - Länsi-Yhdysvallat
-  - Länsi-Yhdysvallat 2
-- Kanada
-  - Kanada, keskinen
-  - Kanada, itäinen
-- Yhdistynyt kuningaskunta
-  - Yhdistynyt kuningaskunta, länsi
-  - Yhdistynyt kuningaskunta, etelä
-- Brasilia
-  - Brasilia, etelä
-- Saksa
-  - Saksa, keskinen
-  - Saksa, koillinen
-- Eurooppa
-  - Pohjois-Eurooppa
-  - Länsi-Eurooppa
-- Japani
-  - Japani, itä
-  - Japani, länsi
-- Intia
-  - Keski-Intia
-  - Etelä-Intia
-  - Länsi-Intia
-- Tyynenmeren Aasia
-  - Itä-Aasia
-  - Kaakkois-Aasia
-- Australia
-  - Itä-Australia
-  - Kaakkois-Australia
+* [Power BI -palvelinkeskukset](https://www.microsoft.com/TrustCenter/CloudServices/business-application-platform/data-location)
 
 Microsoft tarjoaa palvelinkeskuksia myös maakohtaisesti. Lisätietoja Power BI-palvelun käytettävyydestä maakohtaisissa pilvipalveluissa on artikkelissa [Power BI:n maakohtaiset pilvipalvelut](https://powerbi.microsoft.com/clouds/).
 
-Lisätietoja siitä, mihin tietosi tallennetaan ja miten niitä käytetään, on [Microsoft Trust Centerissä](https://www.microsoft.com/TrustCenter/Transparency/default.aspx#_You_know_where). Sitoumukset levossa säilytettävien asiakastietojen sijainnista määritetään [Microsoftin verkkopalvelujen ehdoissa](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=31) kohdassa **Tietojenkäsittelyehdot**.
+Lisätietoja siitä, mihin tietosi tallennetaan ja miten niitä käytetään, löydät [Microsoft Trust Centeristä](https://www.microsoft.com/TrustCenter/Transparency/default.aspx#_You_know_where). Sitoumukset levossa säilytettävien asiakastietojen sijainnista määritetään [Microsoftin verkkopalvelujen ehdoissa](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=31) kohdassa **Tietojenkäsittelyehdot**.
 
 ## <a name="user-authentication"></a>Käyttäjän todennus
 
@@ -182,35 +149,47 @@ Power BI -palvelun käyttäjän todentamisjakso tapahtuu seuraavissa vaiheissa k
 
 2. Selain lähettää evästeen, joka saatiin onnistuneen Microsoft Online Services -palveluihin kirjautumisen yhteydessä ja jonka **ASP.NET-palvelu** tutkii **WFE-klusterissa**.
 
-3. WFE-klusteri tarkistaa **Azure Active Directory** (**AAD**) -palvelulta käyttäjän Power BI -palvelun tilauksen todennuksen ja hankkii palvelulta AAD-suojaustunnuksen. Kun AAD palauttaa käyttäjän onnistuneen todennuksen ja palauttaa AAD-suojaustunnuksen, WFE-klusteri konsultoi **Power BI *** yleistä palvelua**, joka ylläpitää vuokraajaluetteloa sekä vuokraajien Power BI -Back End -klusterien sijainteja, ja määrittää, mikä Power BI -palvelun klusteri sisältää käyttäjän vuokraajan. WFE-klusteri ohjaa sitten käyttäjän Power BI -klusteriin, jossa sen vuokraaja sijaitsee, ja palauttaa käyttäjän selaimeen kokoelman kohteita:
+3. WFE-klusteri tarkistaa **Azure Active Directory** (**AAD**) -palvelulta käyttäjän Power BI -palvelun tilauksen todennuksen ja hankkii palvelulta AAD-suojaustunnuksen. Kun AAD palauttaa käyttäjän onnistuneen todennuksen ja palauttaa AAD-suojaustunnuksen, WFE-klusteri konsultoi **Power BI *** yleistä palvelua**, joka ylläpitää vuokraajaluetteloa sekä vuokraajien Power BI -Back-End-klusterien sijainteja, ja määrittää, mikä Power BI -palvelun klusteri sisältää käyttäjän vuokraajan. WFE-klusteri ohjaa sitten käyttäjän Power BI -klusteriin, jossa sen vuokraaja sijaitsee, ja palauttaa käyttäjän selaimeen kokoelman kohteita:
 
 
       - **AAD-suojaustunnuksen**
       - **istunnon tiedot**
-      - sen **Back End** -klusterin verkko-osoitteen, jonka kanssa käyttäjä voi viestiä ja jota käyttäjä voi käsitellä.
+      - sen **Back-End**-klusterin verkko-osoitteen, jonka kanssa käyttäjä voi viestiä ja jota käyttäjä voi käsitellä
 
 
-1. Käyttäjän selain muodostaa sitten yhteyden määritettyyn Azure-sisältöverkkoon (tai joidenkin tiedostojen yhteydessä WFE:hen) ja lataa kokoelman määritettyjä yleisiä tiedostoja, joiden avulla selain voi olla vuorovaikutuksessa Power BI -palvelun kanssa. Selaimen sivu sisältää AAD-tunnuksen, istunnon tiedot, istuntoon liittyvän Back End -klusterin sijainnin sekä joukon tiedostoja, jotka on ladattu Azure CDN- ja WFE-klusterista Power BI-palvelun selainistunnon ajaksi.
+1. Käyttäjän selain muodostaa sitten yhteyden määritettyyn Azure-sisältöverkkoon (tai joidenkin tiedostojen yhteydessä WFE:hen) ja lataa kokoelman määritettyjä yleisiä tiedostoja, joiden avulla selain voi olla vuorovaikutuksessa Power BI -palvelun kanssa. Selaimen sivu sisältää AAD-tunnuksen, istunnon tiedot, istuntoon liittyvän Back-End-klusterin sijainnin sekä joukon tiedostoja, jotka on ladattu Azure CDN- ja WFE- klusterista Power BI -palvelun selainistunnon ajaksi.
 
 ![Azure-sisältöverkon vuorovaikutus](media/whitepaper-powerbi-security/powerbi-security-whitepaper_09.png)
 
-Kun kohteet ovat valmiita, selain ottaa yhteyden määritettyyn Back End -klusteriin ja käyttäjän toiminta Power BI -palvelun kanssa alkaa. Tästä eteenpäin kaikki kutsut Power BI -palveluun liittyvät määritettyyn Back End -klusteriin ja kaikki kutsut sisältävät käyttäjän AAD-tunnuksen. AAD-tunnuksella on yhden tunnin aikakatkaisu; WFE päivittää tunnuksen säännöllisesti, jos käyttäjän istunto pysyy avoimena, niin että käyttöoikeudet säilyvät.
+Kun kohteet ovat valmiita, selain ottaa yhteyden määritettyyn Back-End-klusteriin ja käyttäjän toiminta Power BI -palvelun kanssa alkaa. Tästä eteenpäin kaikki kutsut Power BI -palveluun liittyvät määritettyyn Back-End-klusteriin ja kaikki kutsut sisältävät käyttäjän AAD-tunnuksen. AAD-tunnuksella on yhden tunnin aikakatkaisu; WFE päivittää tunnuksen säännöllisesti, jos käyttäjän istunto pysyy avoimena, niin että käyttöoikeudet säilyvät.
 
 ## <a name="data-storage-and-movement"></a>Tietojen tallentaminen ja siirtäminen
 
 Power BI -palvelussa tiedot ovat joko _levossa säilytettäviä_ (Power BI -käyttäjän käytettävissä olevat tiedot, joita ei parhaillaan käsitellä) tai _käsittelyssä_ (esimerkiksi kyselyitä suoritetaan, tietoyhteyksiä ja malleja käsitellään, tietoja ja/tai malleja ladataan Power BI -palveluun sekä muita toimintoja, joita käyttäjät tai Power BI -palvelu saattavat suorittaa tietoihin, joita käytetään aktiivisesti tai päivitetään). Käsiteltävänä olevia tietoja kutsutaan _käsittelyssä oleviksi tiedoiksi_. Levossa säilytettävät tiedot on salattu Power BI:ssä. Myös siirrossa olevat tiedot (eli Power BI -palvelu lähettää tai vastaanottaa tietoja) on salattu.
 
-Lisäksi Power BI -palvelu hallitsee tietoja eri tavoin sen mukaan, käsitelläänkö tietoja **DirectQuery-kyselyllä** vai _ei_ DirectQuery-kyselyllä. Power BI:ssä on siis kaksi käyttäjätietojen luokkaa: DirectQuery-kyselyn käsittelemiä tietoja sekä tietoja, joita DirectQuery ei käsittele.
+Lisäksi Power BI -palvelu hallitsee tietoja eri tavoin sen mukaan, käsitelläänkö tietoja **DirectQuery-kyselyllä** vai tuonnilla. Power BI:ssä on siis kaksi käyttäjätietojen luokkaa: DirectQuery-kyselyn käsittelemiä tietoja sekä tietoja, joita DirectQuery ei käsittele.
 
 **DirectQuery** on kysely, jota varten Power BI -käyttäjän kysely on käännetty Microsoftin DAX (Data Analysis Expressions) -kielestä – siis kielestä, jota Power BI ja muut Microsoftin tuotteet käyttävät kyselyiden muodostamiseen – tietolähteen alkuperäiseksi tietokieleksi (kuten T-SQL-kieleksi tai muuksi alkuperäiseksi tietokantakieleksi). DirectQuery-kyselyyn liittyvät tiedot on tallennettu vain viitteeksi, eli lähdetietoja ei säilytetä Power BI:ssä, kun DirectQuery ei ole aktiivinen (lukuun ottamatta visualisointitietoja, joita käytetään koontinäyttöjen ja raporttien esittämiseen, kuten jäljempänä olevassa _Käsittelyssä olevat tiedot (tietojen siirto)_ -osiossa on kuvattu). Sen sijaan tallennetaan viittaukset DirectQuery-tietoihin, jotka mahdollistavat kyseisten tietojen käytön, kun DirectQuery-kysely suoritetaan. DirectQuery sisältää kaikki tarvittavat tiedot kyselyn suorittamiseen, mukaan lukien yhteysmerkkijonon ja tunnistetiedot, joilla tietolähteitä käytetään, joten DirectQuery voi muodostaa yhteyden sisältyviin tietolähteisiin automaattista päivitystä varten. DirectQuery-kyselyssä pohjana olevan tietomallin tiedot sisältyvät DirectQuery-kyselyyn.
 
-Jos kysely **ei** käytä DirectQuery-kyselyä, koostuu se DAX-kyselyiden kokoelmasta, jota _ei_ voi kääntää suoraan minkään pohjana olevan tietolähteen omalle kielelle. Muut kuin DirectQuery-kyselyt eivät sisällä pohjana olevien tietojen tunnistetietoja ja pohjana olevat tiedot ladataan Power BI-palveluun, elleivät ne ole paikallisia tietoja, joita käsitellään [Power BI Gatewayn](https://powerbi.microsoft.com/documentation/powerbi-gateway-enterprise/) kautta, jolloin kysely tallentaa vain viittaukset paikallisiin tietoihin.
+Tuontitietojoukon kysely kostuu joukosta DAX-kyselyitä, jota _ei_ käännetä suoraan minkään pohjana olevan tietolähteen omalle kielelle. Tuontikyselyt eivät sisällä pohjana olevien tietojen tunnistetietoja ja pohjana olevat tiedot ladataan Power BI-palveluun, elleivät ne ole paikallisia tietoja, joita käsitellään [Power BI Gatewayn](service-gateway-onprem.md) kautta, jolloin kysely tallentaa vain viittaukset paikallisiin tietoihin.
+
+Seuraava taulukko kuvaa Power BI -tietoja käytettävän kyselyn tyypin mukaan. **X** ilmaisee liittyvää kyselytyyppiä käytettäessä Power BI -tietojen olemassaolon.
+
+
+|  |Tuo  |DirectQuery  |Reaaliaikainen yhteys  |
+|---------|---------|---------|---------|
+|Rakenne     |     X    |    X     |         |
+|Rivitiedot     |    X     |         |         |
+|Visualisointitietojen tallentaminen välimuistiin     |    X     |     X    |    X     |
+
+
+
 
 DirectQuery-kyselyiden ja muiden kyselyiden välinen ero määrittää sen, miten Power BI -palvelu käsittelee levossa säilytettäviä tietoja ja onko itse kysely salattu. Seuraavissa osissa kuvataan levossa säilytettäviä tietoja ja siirrettäviä tietoja sekä kuvataan salaus, sijainti ja tietojen käsittelyn prosessi.
 
 ### <a name="data-at-rest"></a>Levossa säilytettävät tiedot
 
-Kun tietoja säilytetään levossa, Power BI -palvelu tallentaa tietojoukot, raportit ja koontinäyttöruudut seuraavissa osioissa kuvatulla tavalla. Kuten aiemmin mainittiin, Power BI:n levossa säilytettävät tiedot salataan. PML on seuraavissa osioissa lyhenne sanoista Poimi, Muunna ja Lataa.
+Kun tietoja säilytetään levossa, Power BI -palvelu tallentaa tietojoukot, raportit ja koontinäyttöruudut seuraavissa alakohdissa kuvatulla tavalla. Kuten aiemmin mainittiin, Power BI:n levossa säilytettävät tiedot salataan. PML on seuraavissa osioissa lyhenne sanoista Poimi, Muunna ja Lataa.
 
 #### <a name="encryption-keys"></a>Salausavaimet
 
@@ -361,7 +340,7 @@ Jos Riitta käyttäisi jaettua koontinäyttöä tai raporttia, samat toimet suor
 
 Power BI:n ja ExpressRouten avulla voit luoda yksityisen verkkoyhteyden omasta organisaatiostasi Power BI:hin (tai käyttämällä palveluntarjoajan ulkoistamisominaisuutta), niin että ohitat Internetin ja suojaat entistä paremmin luottamuksellisia Power BI -tietoja ja yhteyksiä.
 
-ExpressRoute on Azure-palvelu, jonka avulla voit luoda yksityisen yhteyden Azure-tietokeskuksen (jossa Power BI sijaitsee) ja paikallisen infrastruktuurin välille tai luoda yksityisiä yhteyksiä Azure-palvelinkeskusten ja colocation-ympäristön välillä. Lisätietoja on artikkelissa [Power BI ja ExpressRoute](https://powerbi.microsoft.com/documentation/powerbi-admin-power-bi-expressroute/).
+ExpressRoute on Azure-palvelu, jonka avulla voit luoda yksityisen yhteyden Azure-tietokeskuksen (jossa Power BI sijaitsee) ja paikallisen infrastruktuurin välille tai luoda yksityisiä yhteyksiä Azure-palvelinkeskusten ja colocation-ympäristön välillä. Lisätietoja on artikkelissa [Power BI ja ExpressRoute](service-admin-power-bi-expressroute.md).
 
 ## <a name="power-bi-mobile"></a>Power BI Mobile
 
@@ -370,7 +349,7 @@ Power BI Mobile on kokoelma sovelluksia, jotka on suunniteltu kolmea ensisijaist
 * Laitteiden välinen tietoliikenne
 * Laitteessa olevat sovellukset ja tiedot
 
-**Laitteiden välisen tietoliikenteen** osalta kaikki Power BI Mobile -sovellukset ovat yhteydessä Power BI -palveluun sekä käyttävät samaa yhteyttä ja käyttöoikeuksien tarkistusmenetelmiä kuin selaimet; nämä on kuvattu tarkemmin aiemmin tässä raportissa. IOS:n ja Androidin Power BI -mobiilisovellukset tuovat selainistunnon itse sovellukseen, kun taas Windows-mobiilisovellus käyttää välittäjää, joka muodostaa tiedonvälityskanavan Power BI:n kanssa.
+**Laitteiden välisen tietoliikenteen** osalta kaikki Power BI -mobiilisovellukset ovat yhteydessä Power BI -palveluun sekä käyttävät samaa yhteyttä ja käyttöoikeuksien tarkistusmenetelmiä kuin selaimet; nämä on kuvattu tarkemmin aiemmin tässä raportissa. IOS:n ja Androidin Power BI -mobiilisovellukset tuovat selainistunnon itse sovellukseen, kun taas Windows-mobiilisovellus käyttää välittäjää, joka muodostaa tiedonvälityskanavan Power BI:n kanssa.
 
 Seuraavassa taulukossa selvitetään, mitkä mobiililaitteiden käyttöympäristöt tukevat Power BI Mobilen varmennepohjaista todennusta (CBA):
 
@@ -391,7 +370,7 @@ Power BI Mobile -sovellukset ovat aktiivisesti yhteydessä Power BI -palvelun ka
 
 Power BI Mobilen välimuisti säilyy laitteessa joko kahden viikon ajan tai kunnes sovellus poistetaan, käyttäjä kirjautuu ulos Power BI Mobilesta tai käyttäjä ei onnistu kirjautumaan sisään (jos esimerkiksi tunnuksen voimassaoloaika päättyy tai salasana vaihtuu). Välimuisti sisältää koontinäytöt ja raportit, joita on aiemmin käytetty Power BI Mobile -sovelluksen kautta.
 
-Power BI Mobile -sovellukset eivät käsittele laitteen kansioita. Lue [lisätietoja offline-tiedoista Power BI Mobile -sovelluksissa](https://powerbi.microsoft.com/documentation/powerbi-mobile-offline-android/).
+Power BI Mobile -sovellukset eivät käsittele laitteen kansioita. 
 
 Kaikki kolme ympäristöä, joissa Power BI Mobile on käytettävissä, tukevat Microsoft Intune -ohjelmistopalvelua, joka mahdollistaa mobiililaitteiden ja sovellusten hallinnan. Kun Intune on otettu käyttöön ja määritetty, mobiililaitteen tiedot salataan eikä itse Power BI -sovellusta voi asentaa SD-kortille. Lue [lisätietoja Microsoft Intunesta](http://www.microsoft.com/cloud-platform/microsoft-intune).
 
@@ -403,11 +382,11 @@ Seuraavat kysymykset ovat yleisiä Power BI:n suojaukseen liittyviä kysymyksiä
 
 * **Power BI:n tunnistetiedot ja toimialueen tunnistetiedot:** Käyttäjät kirjautuvat Power BI:hin käyttämällä sähköpostiosoitetta; kun käyttäjä yrittää muodostaa yhteyden tietoresurssiin, Power BI välittää Power BI -kirjautumissähköpostiosoitteen tunnistetietoina. Jos kyseessä on toimialueeseen yhdistetty resurssi (joko paikallinen tai pilvipohjainen), hakemistopalvelu määrittää kirjautumissähköpostiosoitetta vastaavan _käyttäjän ensisijaisen nimen_ ([UPN](https://msdn.microsoft.com/library/windows/desktop/aa380525(v=vs.85).aspx)), joka määrittää, riittävätkö tunnistetiedot sallimaan käytön. Jos organisaatio käyttää Power BI:hin kirjautumiseen työpohjaisia sähköpostiosoitteita (samaa sähköpostia, jolla organisaatiossa kirjaudutaan työresursseihin, esimerkiksi _david@contoso.com_), yhdistäminen voi tapahtua saumattomasti; jos organisaatio käyttää muita kuin työpohjaisia sähköpostiosoitteita (esimerkiksi _david@contoso.onmicrosoft.com_), hakemistojen yhdistäminen on suoritettava, jotta Power BI -sisäänkirjautumistiedoilla voidaan sallia paikallisten resurssien käyttöoikeus.
 
-* **SQL Server Analysis Services ja Power BI:** Power BI tarjoaa organisaatioille, jotka käyttävät paikallisia SQL Server Analysis Services -palveluita, Power BI:n paikallisen tietoyhdyskäytävän (joka on **yhdyskäytävä**, kuten aiemmissa osioissa on kuvattu).  Power BI:n paikallinen tietoyhdyskäytävä voi toteuttaa tietolähteissä roolitason suojauksen (RLS). Jos haluat lisätietoja RLS-suojauksesta, katso tämän asiakirjan aiempi osio **Käyttäjien todentaminen tietolähteissä**. Voit myös lukea syvällisemmän artikkelin, jonka aiheena on [Power BI Gateway](https://powerbi.microsoft.com/documentation/powerbi-gateway-enterprise/).
+* **SQL Server Analysis Services ja Power BI:** Power BI tarjoaa organisaatioille, jotka käyttävät paikallisia SQL Server Analysis Services -palveluita, Power BI:n paikallisen tietoyhdyskäytävän (joka on **yhdyskäytävä**, kuten aiemmissa osioissa on kuvattu).  Power BI:n paikallinen tietoyhdyskäytävä voi toteuttaa tietolähteissä roolitason suojauksen (RLS). Jos haluat lisätietoja RLS-suojauksesta, katso tämän asiakirjan aiempi osio **Käyttäjien todentaminen tietolähteissä**. Voit myös lukea syvällisemmän artikkelin, jonka aiheena on [Power BI Gateway](service-gateway-manage.md).
 
   Organisaatiot voivat myös käyttää Kerberosta **kertakirjautumiseen** (SSO) ja muodostaa saumattoman yhteyden Power BI:stä paikallisiin tietolähteisiin, joita voivat olla esimerkiksi SQL Server, SAP HANA ja Teradata. Katso lisätietoja ja määritysvaatimukset artikkelista [ **Käytä Kerberosta kertakirjautumiseen Power BI:stä paikallisiin tietolähteisiin**](https://docs.microsoft.com/power-bi/service-gateway-kerberos-for-sso-pbi-to-on-premises-data).
 
-* **Muut kuin toimialueen yhteydet** : Jos tietoyhteyttä ei ole liitetty toimialueeseen eikä tietoyhteys voi suorittaa roolitason suojausta (RLS), käyttäjän on annettava yhteydenmuodostusvaiheessa tunnistetiedot, jotka Power BI sitten välittää tietolähteeseen yhteyden muodostamiseksi. Jos käyttöoikeudet riittävät, tiedot ladataan tietolähteestä Power BI -palveluun.
+* **Muut kuin toimialueen yhteydet**: Jos tietoyhteyttä ei ole liitetty toimialueeseen eikä tietoyhteys voi suorittaa roolitason suojausta (RLS), käyttäjän on annettava yhteydenmuodostusvaiheessa tunnistetiedot, jotka Power BI sitten välittää tietolähteeseen yhteyden muodostamiseksi. Jos käyttöoikeudet riittävät, tiedot ladataan tietolähteestä Power BI -palveluun.
 
 **Miten tietoja siirretään Power BI:hin?**
 
@@ -443,7 +422,7 @@ Seuraavat kysymykset ovat yleisiä Power BI:n suojaukseen liittyviä kysymyksiä
 
 **Mitä portteja paikallinen tietoyhdyskäytävä ja henkilökohtainen yhdyskäytävä käyttävät? Onko sellaisia toimialuenimiä, jotka on sallittava yhteyksiä varten?**
 
-* Yksityiskohtainen vastaus tähän kysymykseen on saatavilla seuraavan linkin kautta: [https://powerbi.microsoft.com/documentation/powerbi-gateway-enterprise](https://powerbi.microsoft.com/documentation/powerbi-gateway-enterprise)
+* Yksityiskohtainen vastaus tähän kysymykseen on saatavilla seuraavan linkin kautta: [Power BI Gateway](service-gateway-manage.md)
 
 **Kun käytössä on paikallinen tietoyhdyskäytävä, miten palautusavaimia käytetään ja mihin ne on tallennettu? Entä suojattu käyttöoikeuksien hallinta?**
 
@@ -460,15 +439,15 @@ Seuraavat kysymykset ovat yleisiä Power BI:n suojaukseen liittyviä kysymyksiä
 
 * Yhdyskäytävä tukee seuraavia kahta kommunikaatioprotokollaa:
 
-  - **AMQP 1.0 – TCP + TLS** : Tämä protokolla edellyttää, että portit 443, 5671–5672 ja 9350–9354 ovat avoinna lähtevää tietoliikennettä varten. Tätä protokollaa suositellaan, koska sen tietoliikennekustannukset ovat pienemmät.
+  - **AMQP 1.0 – TCP + TLS**: Tämä protokolla edellyttää, että portit 443, 5671–5672 ja 9350–9354 ovat avoinna lähtevää tietoliikennettä varten. Tätä protokollaa suositellaan, koska sen tietoliikennekustannukset ovat pienemmät.
 
-  - **HTTPS – WebSockets ja HTTPS + TLS** : Tämä protokolla käyttää vain porttia 443. WebSocket käynnistetään yksittäisellä HTTP CONNECT -viestillä. Kun kanava on muodostettu, tietoliikenne on käytännössä muotoa TCP + TLS. Voit pakottaa yhdyskäytävän käyttämään tätä protokollaa muokkaamalla asetusta, joka on kuvattu [paikallisen yhdyskäytävän artikkelissa](https://powerbi.microsoft.com/documentation/powerbi-gateway-onprem/).
+  - **HTTPS – WebSockets ja HTTPS + TLS**: Tämä protokolla käyttää vain porttia 443. WebSocket käynnistetään yksittäisellä HTTP CONNECT -viestillä. Kun kanava on muodostettu, tietoliikenne on käytännössä muotoa TCP + TLS. Voit pakottaa yhdyskäytävän käyttämään tätä protokollaa muokkaamalla asetusta, joka on kuvattu [paikallisen yhdyskäytävän artikkelissa](service-gateway-manage.md).
 
 **Mikä on Azure CDN:n rooli Power BI:ssä?**
 
 * Kuten aiemmin todettiin, Power BI käyttää **Azure Content Delivery Networkia** (CDN) tarpeellisen staattisen sisällön ja tiedostojen jakamiseen käyttäjille aluekohtaisten asetusten perusteella. Tarkemmin sanottuna Power BI -palvelu käyttää useita **CDN**-kohteita, jotta se saa tehokkaasti jaettua tarpeellisen staattisen sisällön ja tiedostot käyttäjille julkisen Internetin kautta. Näitä staattisia tiedostoja ovat tuotelataukset (kuten **Power BI Desktop**, **paikallinen tietoyhdyskäytävä** tai riippumattomien palveluntarjoajien Power BI -sovellukset), selaimen määritystiedostot, joilla alustetaan ja muodostetaan myöhempiä yhteyksiä Power BI -palvelulle, sekä alkuperäinen turvallinen Power BI -kirjautumissivu.
 
-  Ensimmäisen Power BI-palveluyhteyden aikana toimitettujen tietojen perusteella käyttäjän selain muodostaa yhteyden määritettyyn Azure-**sisältöverkkoon** (tai joidenkin tiedostojen yhteydessä **WFE**:hen) ja lataa kokoelman määritettyjä yleisiä tiedostoja, joiden avulla selain voi olla vuorovaikutuksessa Power BI -palvelun kanssa. Selaimen sivu sisältää AAD-tunnuksen, istunnon tiedot, istuntoon liittyvän **Back End** -klusterin sijainnin sekä joukon tiedostoja, jotka on ladattu Azure **CDN**- ja **WFE** - klusterista Power BI -palvelun selainistunnon ajaksi.
+  Ensimmäisen Power BI-palveluyhteyden aikana toimitettujen tietojen perusteella käyttäjän selain muodostaa yhteyden määritettyyn Azure-**sisältöverkkoon** (tai joidenkin tiedostojen yhteydessä **WFE**:hen) ja lataa kokoelman määritettyjä yleisiä tiedostoja, joiden avulla selain voi olla vuorovaikutuksessa Power BI -palvelun kanssa. Selaimen sivu sisältää AAD-tunnuksen, istunnon tiedot, istuntoon liittyvän **Back-End**-klusterin sijainnin sekä joukon tiedostoja, jotka on ladattu Azure **CDN**- ja **WFE** - klusterista Power BI -palvelun selainistunnon ajaksi.
 
 **Suorittaako Microsoft mukautettujen visualisointien suhteen minkäänlaista mukautetun visualisointikoodin arviointia suojauksen tai tietoturvan kannalta, ennen kuin kohteita julkaistaan Valikoimaan?**
 
@@ -476,7 +455,7 @@ Seuraavat kysymykset ovat yleisiä Power BI:n suojaukseen liittyviä kysymyksiä
 
 **Lähettävätkö muut Power BI -visualisoinnit tietoja asiakkaan verkon ulkopuolelle?**
 
-* Kyllä. Bing Maps- ja ESRI-visualisoinnit siirtävät tietoja Power BI -palvelun ulkopuolelle kyseisiä palveluita käyttäville visualisoinneille. Voit katsoa lisätietoja ja tarkat kuvaukset Power BI:n ulkopuolelle suuntautuvasta vuokraajan liikenteestä artikkelista [ **Power BI ja ExpressRoute**](https://powerbi.microsoft.com/documentation/powerbi-admin-power-bi-expressroute/).
+* Kyllä. Bing Maps- ja ESRI-visualisoinnit siirtävät tietoja Power BI -palvelun ulkopuolelle kyseisiä palveluita käyttäville visualisoinneille. Voit katsoa lisätietoja ja tarkat kuvaukset Power BI:n ulkopuolelle suuntautuvasta vuokraajan liikenteestä artikkelista [ **Power BI ja ExpressRoute**](service-admin-power-bi-expressroute.md).
 
 **Entä tietojen maakohtaisuus? Voimmeko valmistella vuokraajat palvelinkeskuksissa, jotka sijaitsevat tietyillä maantieteellisillä alueilla, jotta tiedot eivät varmasti siirry maan rajojen ulkopuolelle?**
 
@@ -490,7 +469,7 @@ Seuraavat kysymykset ovat yleisiä Power BI:n suojaukseen liittyviä kysymyksiä
 
 ## <a name="conclusion"></a>Päätelmät
 
-Power BI -palveluarkkitehtuuri perustuu kahteen klusteriin – WFE (Web Front End) -klusteriin ja Back End -klusteriin. WFE-klusteri vastaa Power BI -palvelun ensiyhteydenotosta ja todentamisesta. Todennuksen jälkeen Back End käsittelee kaiken käyttäjien vuorovaikutuksen. Power BI käyttää Azure Active Directorya (AAD) käyttäjätietojen tallentamiseen ja hallitsemiseen. Se hallitsee tietoja ja metatietoja Azure Blob- ja Azuren SQL-tietokantojen avulla (vastaavassa järjestyksessä).
+Power BI -palveluarkkitehtuuri perustuu kahteen klusteriin – WFE (Web Front End) -klusteriin ja Back-End-klusteriin. WFE-klusteri vastaa Power BI -palvelun ensiyhteydenotosta ja todentamisesta. Todennuksen jälkeen Back End käsittelee kaiken käyttäjien vuorovaikutuksen. Power BI käyttää Azure Active Directorya (AAD) käyttäjätietojen tallentamiseen ja hallitsemiseen. Se hallitsee tietoja ja metatietoja Azure Blob- ja Azuren SQL-tietokantojen avulla (vastaavassa järjestyksessä).
 
 Tietojen tallennus ja tietojen käsittely Power BI:ssä eroaa sen mukaan, käsitelläänkö tietoja DirectQueryn avulla ja ovatko tietolähteet pilvessä vai paikallisia. Power BI voi myös pakottaa roolitason suojauksen (Role Level Security, RLS), ja se toimii sellaisten yhdyskäytävien kanssa, jotka mahdollistavat pääsyn paikallisiin tietoihin.
 
@@ -500,15 +479,15 @@ Arvostamme kaikkea saamaamme palautetta. Toivomme kuulevamme ehdotuksia, jotka l
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
-Lisätietoja Power BI -palvelusta on seuraavissa resursseissa.
+Lisää tietoja Power BI -palvelusta on seuraavissa resursseissa.
 
 - [Ryhmät Power BI:ssä](https://support.powerbi.com/knowledgebase/articles/654247)
 - [Power BI Desktopin käytön aloittaminen](https://support.powerbi.com/knowledgebase/articles/471664)
-- [Power BI Gateway](https://powerbi.microsoft.com/documentation/powerbi-gateway-enterprise/)
+- [Power BI Gateway](service-gateway-manage.md)
 - [Power BI REST -ohjelmointirajapinnan yleiskatsaus](https://msdn.microsoft.com/library/dn877544.aspx)
 - [Power BI -ohjelmointirajapinnan viite](https://msdn.microsoft.com/library/mt147898.aspx)
-- [Paikallinen tietoyhdyskäytävä](https://powerbi.microsoft.com/documentation/powerbi-gateway-onprem/)
-- [Power BI ja ExpressRoute](https://powerbi.microsoft.com/documentation/powerbi-admin-power-bi-expressroute/)
+- [Paikallinen tietoyhdyskäytävä](service-gateway-manage.md)
+- [Power BI ja ExpressRoute](service-admin-power-bi-expressroute.md)
 - [Power BI:n maakohtaiset pilvipalvelut](https://powerbi.microsoft.com/clouds/)
 - [Power BI Premium](https://aka.ms/pbipremiumwhitepaper)
-- [Kerberoksen käyttäminen kertakirjautumista (SSO) varten Power BI:stä paikallisiin tietolähteisiin](https://docs.microsoft.com/power-bi/service-gateway-kerberos-for-sso-pbi-to-on-premises-data)
+- [Kerberoksen käyttäminen kertakirjautumista (SSO) varten Power BI:stä paikallisiin tietolähteisiin](service-gateway-sso-overview.md)

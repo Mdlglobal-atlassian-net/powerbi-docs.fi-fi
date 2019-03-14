@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/31/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: e71844110eb3452cbcb3b224bbca9db57475367e
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 08536d412796b1516b689ed728af0126330edf93
+ms.sourcegitcommit: 378265939126fd7c96cb9334dac587fc80291e97
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54282168"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57580130"
 ---
 # <a name="where-is-my-power-bi-tenant-located"></a>Missä Power BI -vuokraajani sijaitsee?
 
@@ -29,7 +29,7 @@ Etsi alue, jolla vuokraajasi sijaitsee, toimi seuraavasti.
 
 1. Valitse Power BI -palvelun yläreunan valikosta ohje (**?**) ja sitten **Tietoja Power BI:stä**.
 
-1. Etsii arvo kohdan **Tietosi on tallennettu kohteeseen** vierestä. Tämä on alue, jolla vuokraajasi sijaitsee.
+1. Etsii arvo kohdan **Tietosi on tallennettu kohteeseen** vierestä. Tämä on alue, jolla vuokraajasi sijaitsee. Tämä on myös alue, johon tietosi on tallennettu, ellet käytä erikseen varattuja kapasiteetteja työtilojesi eri alueilla.
 
     ![Tietoalue](media/service-admin-where-is-my-tenant-located/power-bi-data-region.png)
 

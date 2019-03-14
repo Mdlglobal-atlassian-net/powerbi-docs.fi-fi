@@ -1,5 +1,5 @@
 ---
-title: Power BI Embeddedin Multi-Geo-tuki (esikatselu)
+title: Power BI Embeddedin Multi-Geo-tuki
 description: Lue, miten voit ottaa sisältöä käyttöön tietokeskuksissa muilla alueilla kuin Power BI Embeddedin kotialueella.
 author: markingmyname
 ms.author: maghan
@@ -9,16 +9,16 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 02/05/2019
-ms.openlocfilehash: 25627709af2faa78fd30b28cffba21d1442e0d3f
-ms.sourcegitcommit: 0abcbc7898463adfa6e50b348747256c4b94e360
+ms.openlocfilehash: d139f96b6aec2db23b2eabc54c3fa326e4762766
+ms.sourcegitcommit: bd1f0178fd9df152f9e9be57da415829f42116e9
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "55762417"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57572021"
 ---
-# <a name="multi-geo-support-for-power-bi-embedded-preview"></a>Power BI Embeddedin Multi-Geo-tuki (esikatselu)
+# <a name="multi-geo-support-for-power-bi-embedded"></a>Power BI Embeddedin Multi-Geo-tuki
 
-**Power BI Embeddedin Multi-Geo-tuki (esikatselu)** tarkoittaa, että ISV:t ja organisaatiot, jotka luovat sovelluksia Power BI Embeddedin avulla analyysin upottamiseksi sovelluksiinsa, voivat nyt käyttää tietojaan eri alueilla ympäri maailmaa.
+**Power BI Embeddedin Multi-Geo-tuki** tarkoittaa, että ISV:t ja organisaatiot, jotka luovat sovelluksia Power BI Embeddedin avulla analyysin upottamiseksi sovelluksiinsa, voivat nyt käyttää tietojaan eri alueilla ympäri maailmaa.
 
 **Power BI Embeddediä** käyttävät asiakkaat voivat nyt määrittää **kapasiteetin** käyttämällä **Multi-Geo**-asetuksia samojen ominaisuuksien ja rajoitusten perusteella kuin joita [Power BI Premium tukee Multi-Geon avulla](../service-admin-premium-Multi-Geo.md).
 
