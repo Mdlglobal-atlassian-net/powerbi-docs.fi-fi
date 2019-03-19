@@ -10,15 +10,15 @@ ms.topic: conceptual
 ms.date: 12/10/2018
 ms.author: maggies
 LocalizationGroup: Create reports
-ms.openlocfilehash: 8808391d0794ec4a487526cc5bbe4216fe0f75a6
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 760f469ff3b146671292efd70a3c6854aec98b5a
+ms.sourcegitcommit: 8fda7843a9f0e8193ced4a7a0e5c2dc5386059a6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54275314"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58174587"
 ---
 # <a name="create-reports-optimized-for-the-power-bi-mobile-apps"></a>Power BI -mobiilisovelluksille optimoitujen raporttien luominen
-Voit parantaa käyttökokemusta, kun raporttejasi tarkastellaan mobiilisovelluksissa puhelimella tai tabletilla. Voit luoda raportista pystysuuntaisen asettelun erityisesti puhelimia ja tabletteja varten. Power BI Desktopissa ja Power BI -palvelussa raportti mukautetaan niin, että raportin visualisointeja järjestellään uudelleen ja niiden kokoa muutetaan pystysuuntaisessa asettelussa parhaan mahdollisen käyttökokemuksen tuottamiseksi. Niitä kaikkia ei tarvitse sisällyttää. Lisäksi voit luoda [ *reagoivia* visualisointeja](#optimize-a-visual-for-any-size) ja [reagoivia osittajia](#enhance-slicers-to-to-work-well-in-phone-reports), joiden koko muuttuu kätevästi puhelimella tarkastelemista ajatellen. Jos lisäät raporttiin suodattimia, suodattimet näkyvät automaattisesti myös optimoidussa raportissa. Raportin lukijat voivat nähdä ne ja käyttää niitä raportin suodattamiseen.
+Voit parantaa käyttökokemusta, kun raporttejasi tarkastellaan mobiilisovelluksissa puhelimella tai tabletilla. Voit luoda raportista pystysuuntaisen asettelun erityisesti puhelimia ja tabletteja varten. Power BI Desktopissa ja Power BI -palvelussa raportti mukautetaan niin, että raportin visualisointeja järjestellään uudelleen ja niiden kokoa muutetaan pystysuuntaisessa asettelussa parhaan mahdollisen käyttökokemuksen tuottamiseksi. Niitä kaikkia ei tarvitse sisällyttää. Lisäksi voit luoda [ *reagoivia* visualisointeja](#optimize-a-visual-for-any-size) ja [reagoivia osittajia](#enhance-slicers-to-work-well-in-phone-reports), joiden koko muuttuu kätevästi puhelimella tarkastelemista ajatellen. Jos lisäät raporttiin suodattimia, suodattimet näkyvät automaattisesti myös optimoidussa raportissa. Raportin lukijat voivat nähdä ne ja käyttää niitä raportin suodattamiseen.
 
 ![Optimoitu raportti puhelimessa](media/desktop-create-phone-report/desktop-create-phone-report-1.png)
 

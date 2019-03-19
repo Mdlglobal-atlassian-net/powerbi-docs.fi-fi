@@ -10,12 +10,12 @@ ms.subservice: powerbi-gateways
 ms.topic: conceptual
 ms.date: 10/10/2018
 LocalizationGroup: Gateways
-ms.openlocfilehash: e2183596a66526ced7cfa4a298420972b63a87ca
-ms.sourcegitcommit: 364ffa1178cdfb0a20acffc0fd79922ebc892d72
+ms.openlocfilehash: eb50d8096c448e1a01533a7d8570e9dcc716ef23
+ms.sourcegitcommit: 8fda7843a9f0e8193ced4a7a0e5c2dc5386059a6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57226246"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58174978"
 ---
 # <a name="use-kerberos-for-single-sign-on-sso-from-power-bi-to-on-premises-data-sources"></a>Kerberoksen käyttäminen kertakirjautumista (SSO) varten Power BI:stä paikallisiin tietolähteisiin
 
@@ -60,7 +60,7 @@ Normaalissa asennuksessa yhdyskäytävä toimii tietokoneen paikallisena palvelu
 
 ![Näyttökuva palvelutilistä](media/service-gateway-sso-kerberos/service-account.png)
 
-Jotta rajoitettu Kerberos-delegointi voidaan ottaa käyttöön, yhdyskäytävän on toimittava toimialuetilinä, ellei Azure Active Directorya (Azure AD) ole jo synkronoitu paikallisen Active Directory -esiintymän kanssa (käyttämällä Azure AD DirSynciä/Connectia). Jos haluat vaihtaa toimialuetiliin, tutustu kohtaan [Yhdyskäytävän vaihtaminen toimialuetiliin](#switching-the-gateway-to-a-domain-account) myöhemmin tässä artikkelissa.
+Jotta rajoitettu Kerberos-delegointi voidaan ottaa käyttöön, yhdyskäytävän on toimittava toimialuetilinä, ellei Azure Active Directorya (Azure AD) ole jo synkronoitu paikallisen Active Directory -esiintymän kanssa (käyttämällä Azure AD DirSynciä/Connectia). Jos haluat vaihtaa toimialuetiliin, tutustu kohtaan [Yhdyskäytävän vaihtaminen toimialuetiliin](#switch-the-gateway-to-a-domain-account) myöhemmin tässä artikkelissa.
 
 > [!NOTE]
 > Jos Azure AD Connect on määritetty ja käyttäjätilit synkronoidaan, yhdyskäytäväpalvelun ei tarvitse tehdä paikallisia hakuja Azure AD:stä suorituksen aikana. Voit käyttää yhdyskäytäväpalveluun paikallisen palvelun SID-tunnusta (toimialuetilin vaatimisen sijasta). Tässä artikkelissa kuvatut rajoitetun Kerberos-delegoinnin määritysvaiheet ovat samat kuin kyseinen määritys. Niitä sovelletaan Azure AD:ssä yhdyskäytävän tietokoneobjektiin toimialuetilin sijaan.
@@ -188,7 +188,7 @@ Voit tarvittaessa vaihtaa paikallisen palvelutilin toimialuetilinä suoritettava
 
 ## <a name="configure-sap-bw-for-sso"></a>SAP BW:n määrittäminen kertakirjautumista varten
 
-Nyt kun ymmärrät, miten Kerberos toimii yhdyskäytävän kanssa, voit määrittää kertakirjautumisen SAP Business Warehousea (SAP BW) varten. Seuraavissa vaiheissa oletetaan, että olet jo [valmistellut rajoitetun Kerberos-delegoinnin](#preparing-for-kerberos-constrained-delegation) tässä artikkelissa aiemmin kuvatulla tavalla.
+Nyt kun ymmärrät, miten Kerberos toimii yhdyskäytävän kanssa, voit määrittää kertakirjautumisen SAP Business Warehousea (SAP BW) varten. Seuraavissa vaiheissa oletetaan, että olet jo [valmistellut rajoitetun Kerberos-delegoinnin](#prepare-for-kerberos-constrained-delegation) tässä artikkelissa aiemmin kuvatulla tavalla.
 
 Tämä opas pyrkii olemaan mahdollisimman kattava. Jos olet jo suorittanut joitakin näistä vaiheista, voit ohittaa ne. Olet saattanut esimerkiksi jo luoda palvelukäyttäjän SAP BW -palvelimelle ja yhdistänyt siihen SPN:n, tai ehkä olet jo asentanut `gsskrb5`-kirjaston.
 
@@ -356,7 +356,7 @@ Jos Azure AD Connectia ei ole määritetty, noudata seuraavia toimia jokaiselle 
 
 ### <a name="add-a-new-sap-bw-application-server-data-source-to-the-power-bi-service"></a>Uuden SAP BW -sovelluspalvelimen tietolähteen lisääminen Power BI -palveluun
 
-Lisää SAP BW-tietolähde yhdyskäytävääsi seuraamalla aiemmin tässä artikkelissa annettuja ohjeita [raportin suorittamisesta](#running-a-power-bi-report).
+Lisää SAP BW-tietolähde yhdyskäytävääsi seuraamalla aiemmin tässä artikkelissa annettuja ohjeita [raportin suorittamisesta](#run-a-power-bi-report).
 
 1. Kirjoita tietolähteen määritysikkunassa sovelluspalvelimen **Isäntänimi**, **Järjestelmänumero** ja **asiakastunnus** samalla tavalla kuin silloin, kun kirjaudut sisään SAP BW -palvelimeesi Power BI Desktopin kautta. Valitse **todennusmenetelmäksi** **Windows**.
 

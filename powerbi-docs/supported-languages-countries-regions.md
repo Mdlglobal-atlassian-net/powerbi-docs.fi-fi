@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 04/13/2018
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: 98c637692b3c31e598a11c3039b60be3dec61348
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: a593a918c59452c922f6061189ad6c2885478aad
+ms.sourcegitcommit: 8fda7843a9f0e8193ced4a7a0e5c2dc5386059a6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54281179"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58174863"
 ---
 # <a name="supported-languages-and-countriesregions-for-power-bi"></a>Power BI:n tuetut kielet ja maat tai alueet
 
@@ -120,7 +120,7 @@ Voit hankkia Power BI Desktopin kahdella tavalla: voit ladata sen tai asentaa se
 
 * Kun [asennat Power BI Desktopin Windows-kaupasta](#choose-a-language-for-power-bi-desktop-installed-from-the-windows-store), se asentaa kaikki kielet ja näyttää Windowsin oletuskieltä vastaavan kielen.
 * Kun [lataat Power BI Desktopin](#choose-a-language-when-you-download-power-bi-desktop), valitset haluamasi kielen latauksen yhteydessä. 
-* Voit myös [valita tietoja tuotaessa käytettävät aluekohtaiset asetukset](#choose-the-locale-to-be-used-when-importing-data-into-power-bi-desktop) tietylle raportille. 
+* Voit myös [valita tietoja tuotaessa käytettävät aluekohtaiset asetukset](#choose-the-locale-for-importing-data-into-power-bi-desktop) tietylle raportille.
 
 ### <a name="choose-a-language-for-power-bi-desktop-installed-from-the-windows-store"></a>Windows-kaupasta asennetun Power BI Desktopin kielen valitseminen
 1. [Asenna Power BI Desktop](http://aka.ms/pbidesktopstore) Windows-kaupasta.

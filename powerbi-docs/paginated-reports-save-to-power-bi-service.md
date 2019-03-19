@@ -9,18 +9,18 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 11/05/2018
-ms.openlocfilehash: d1d1f3c34483737e49129176c833be8384ade999
-ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
+ms.openlocfilehash: 58fc7a6b8ebc5519c1c4bb1835758ca94ba225d2
+ms.sourcegitcommit: 8fda7843a9f0e8193ced4a7a0e5c2dc5386059a6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/16/2019
-ms.locfileid: "56324711"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58174541"
 ---
 # <a name="publish-a-paginated-report-to-the-power-bi-service-preview"></a>Sivutetun raportin julkaiseminen Power BI -palveluun (esikatselu)
 
 Tässä artikkelissa opit julkaisemaan sivutetun raportin Power BI -palveluun lataamalla sen paikallisesta tietokoneesta. Voit ladata sivutetut raportit omaan työtilaasi tai mihin tahansa muuhun työtilaan niin kauan kuin työtila on Premium-kapasiteetissa. Etsi vinoneliökuvaketta ![Power BI Premium -kapasiteetin vinoneliökuvaketta](media/paginated-reports-save-to-power-bi-service/premium-diamond.png) työtilan nimen vieressä. 
 
-Jos raportin tietolähde on paikallinen, sinun on [luotava yhdyskäytävä](#create-a-gateway-to-an-on-premises-data-source) raportin lataamisen jälkeen.
+Jos raportin tietolähde on paikallinen, sinun on [luotava yhdyskäytävä](#create-a-gateway) raportin lataamisen jälkeen.
 
 ## <a name="add-a-workspace-to-a-premium-capacity"></a>Työtilan lisääminen Premium-kapasiteettiin
 
