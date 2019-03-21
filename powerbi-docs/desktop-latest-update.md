@@ -7,21 +7,21 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 02/13/2019
+ms.date: 03/12/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 3372526dfd7190a90061f3ca83f483dc74a0555f
-ms.sourcegitcommit: d010b10bc14097a1948daeffbc91b864bd91f7c8
+ms.openlocfilehash: 05df6a2053a5804f99a22651b053dc0ef06ebfd8
+ms.sourcegitcommit: ac63b08a4085de35e1968fa90f2f49ea001b50c5
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56225887"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "57964866"
 ---
 # <a name="whats-new-in-the-latest-power-bi-desktop-update"></a>Mitä uutta viimeisin Power BI Desktop -päivitys sisältää? 
 
-## <a name="february-2019-update-2655313501"></a>Helmikuun 2019 päivitys (2.65.5313.501)
+## <a name="march-2019-update-2655313501"></a>Maaliskuun 2019 päivitys (2.65.5313.501)
 
-Helmikuun päivityksemme sisältävät mahtavia uusia tietoliittimiä, toimintoja ja analyysiparannuksia. Aivan kuten suklaarasia, et koskaan tiedä, mitä saat... toisin kuin tämä helmikuun päivitys, joka on täynnä herkullisia ominaisuuksia. 
+Maaliskuun päivityksemme ovat täynnä kiinnostavia ja hyödyllisiä päivityksiä ja toivomme, että nämä parannukset saavat sinulle yhtä onnekkaan olon kuin nelilehtisen apilan löytäminen. 
 
 Voit nyt [ladata Power BI Desktopin uusimman version](https://powerbi.microsoft.com/desktop). Jos käytössäsi on Windows 10, voit hankkia **Power BI Desktopin** Microsoft Storesta. **Power BI Desktopin** kuukausittaiset versiot ovat samat, vaikka versioiden numerointi saattaa poiketa. Lisätietoja on [tässä artikkelissa](desktop-get-the-desktop.md). 
 
@@ -37,46 +37,49 @@ Voit myös katsoa **Uusimmat päivitykset** -videon, joka on aivan tämän artik
 Seuraavat päivitykset olivat uutta **Power BI Desktopissa** tässä kuussa:
 
 ### <a name="reporting"></a>Raportointi
-* Uuden suodatinruudun (esikatselu) päivitykset [[video]](https://youtu.be/dMD25wfElLg?t=11)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2019-feature-summary/#smartGuides) 
-* Ristiinkorostus yhdessä pisteessä viivakaavioissa [[video]](https://youtu.be/dMD25wfElLg?t=197)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2019-feature-summary/#line)
-* Automaattinen rivitys otsikoissa [[video]](https://youtu.be/dMD25wfElLg?t=298)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2019-feature-summary/#wordWrap)
-* Oletusarvoisen visuaalisen vuorovaikutuksen päivitys ristiinsuodatusta varten [[video]](https://youtu.be/dMD25wfElLg?t=358)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2019-feature-summary/#crossFilter)
-* Visuaalisten reunusten pyöristetyt kulmat [[video]](https://youtu.be/dMD25wfElLg?t=526)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2019-feature-summary/#roundedCorners)
+* Yksittäinen valinta -osittaja [[video]](https://youtu.be/rBPGH6eYlT0?t=10)[[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2019-feature-summary/#singleSelectSlicer) 
+* Lämpökartta-tuki Bing-kartoille [[video]](https://youtu.be/rBPGH6eYlT0?t=43)[[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2019-feature-summary/#heatMap)
+* Ristiinkorostus akseleiden nimien mukaan [[video]](https://youtu.be/rBPGH6eYlT0?t=90)[[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2019-feature-summary/#crossHighlighting)
+* Työkaluvihjeen oletusmuotoilu [[video]](https://youtu.be/rBPGH6eYlT0?t=132)[[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2019-feature-summary/#tooltipFormatting)
+* Staattisten URL-verkko-osoitteiden tuki painikkeille, muodoille ja kuville [[video]](https://youtu.be/rBPGH6eYlT0?t=204)[[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2019-feature-summary/#staticURL)
+* Suodatusruudun parannuksia  [[video]](https://youtu.be/rBPGH6eYlT0?t=234)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2019-feature-summary/#filterPane)
+* Sivun tasausasetukset [[video]](https://youtu.be/rBPGH6eYlT0?t=253)[[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2019-feature-summary/#pageAlignment)
+* Valintaruudun parannuksia  [[video]](https://youtu.be/rBPGH6eYlT0?t=291)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2019-feature-summary/#selectionPane)
+* Karttojen muotoilupäivitykset [[video]](https://youtu.be/rBPGH6eYlT0?t=291) [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2019-feature-summary/#mapFormatting)
+* Helppokäyttöinen visuaalinen vuorovaikutus [[video]](https://youtu.be/rBPGH6eYlT0?t=310)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2019-feature-summary/#accessibility)
+
 
 ### <a name="analytics"></a>Analytiikka
-* Tärkeimpien vaikuttajien visualisointi (esikatselu) [[video]](https://youtu.be/dMD25wfElLg?t=608)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2019-feature-summary/#keyInfluencers) 
-* Merkityksellisiä tietoja koskevat kysymykset Q&A:ssa [[video]](https://youtu.be/dMD25wfElLg?t=1121)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2019-feature-summary/#insights) 
-* Automaattisesti luodut ehdotetut kysymykset Q&A-resurssienhallintaa varten [[video]](https://youtu.be/dMD25wfElLg?t=1121)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2019-feature-summary/#autoSuggestions) 
-* Parannettu Python- ja R-komentosarjaeditori [[video]](https://youtu.be/dMD25wfElLg?t=1282)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2019-feature-summary/#scriptEditor) 
+* Q&A-suositukset tulosten parantamiseksi [[video]](https://youtu.be/rBPGH6eYlT0?t=357)[[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2019-feature-summary/#QA) 
+* Näytä päivämäärät hierarkiana nyt yleisesti saatavilla [[video]](https://youtu.be/rBPGH6eYlT0?t=397)[[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2019-feature-summary/#dateHierarchy) 
+
+
+### <a name="modelling"></a>Mallintaminen
+* Uusi mallinnusnäkymä nyt yleisesti saatavilla [[video]](https://youtu.be/rBPGH6eYlT0?t=417)[[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2019-feature-summary/#modellingView) 
+* Uudet DAX-funktiot [[video]](https://youtu.be/rBPGH6eYlT0?t=560)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2019-feature-summary/#DAX) 
 
 ### <a name="custom-visuals"></a>Mukautetut visualisoinnit
-* Kymmenen uutta mukautettua visualisointia, uusi mukautettujen visualisointien toiminto [[video]](https://youtu.be/dMD25wfElLg?t=1324)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2019-feature-summary/#customVisuals) 
+* Uusi sertifioidut mukautetut visualisoinnit -asetus hallintaportaalissa [[video]](https://youtu.be/rBPGH6eYlT0?t=624)[[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2019-feature-summary/#certifiedAdminSetting) 
+* Kaksi uutta mukautettua visualisointia  [[video]](https://youtu.be/rBPGH6eYlT0?t=693)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2019-feature-summary/#customVisuals) 
+
 
 ### <a name="data-connectivity"></a>Tietoyhteydet
 
-* Microsoft Graph Security [[video]](https://youtu.be/dMD25wfElLg?t=2787)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2019-feature-summary/#microsoftGraph) 
-* Guidanz' BI -liitin OBIEE:lle  [[video]](https://youtu.be/dMD25wfElLg?t=2807)   [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2019-feature-summary/#biConnector) 
-* MarkLogic [[video]](https://youtu.be/dMD25wfElLg?t=2825)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2019-feature-summary/#markLogic) 
-* Kronos-työvoimadimensiot [[video]](https://youtu.be/dMD25wfElLg?t=2846)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2019-feature-summary/#kronos) 
-* SurveyMonkey [[video]](https://youtu.be/dMD25wfElLg?t=2857)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2019-feature-summary/#surveyMonkey) 
-* Qubole Presto [[video]](https://youtu.be/dMD25wfElLg?t=2872)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2019-feature-summary/#qubole) 
-* Quick Base [[video]](https://youtu.be/dMD25wfElLg?t=2899)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2019-feature-summary/#quickBase) 
-* Sagra Emigo [[video]](https://youtu.be/dMD25wfElLg?t=2909)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2019-feature-summary/#emigo) 
+* PDF-yhdistin tukee nyt monisivuisia taulukoita (esikatselu) [[video]](https://youtu.be/rBPGH6eYlT0?t=990)[[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2019-feature-summary/#PDFconnector) 
+* Älykäs toimipisteen teollinen App Store -liitin [[video]](https://youtu.be/rBPGH6eYlT0?t=1035)[[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2019-feature-summary/#IntelligentPlantsIndustrialAppStore) 
+* Azure Cost Management -liitin [[video]](https://youtu.be/rBPGH6eYlT0?t=1085)[[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2019-feature-summary/#AzureCostManagement) 
 
-
-### <a name="other"></a>Muut
-* Parannettu Live-yhteys ja DirectQuery-virhesanomat [[video]](https://youtu.be/dMD25wfElLg?t=2926)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2019-feature-summary/#error) 
 
 
 > [!NOTE]
 > Voit myös [tutustua kaikkiin Power BI Desktopille saatavilla oleviin tietolähteisiin](desktop-data-sources.md). Luettelo kasvaa jatkuvasti, joten se kannattaa tarkistaa usein.
 
-Haluatko lisätietoja näistä päivityksistä? Tutustu [blogikirjoitukseen](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2019-feature-summary/), josta saat tarkempia tietoja kustakin uudesta ominaisuudesta (tämä on sama blogikirjoitus, johon viitataan yllä olevassa luettelossa).
+Haluatko lisätietoja näistä päivityksistä? Tutustu [blogikirjoitukseen](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2019-feature-summary/), josta saat tarkempia tietoja kustakin uudesta ominaisuudesta (tämä on sama blogikirjoitus, johon viitataan yllä olevassa luettelossa).
 
 
 Seuraavassa videokanavassa esitellään jokainen näistä päivityksistä. Näet videot myös blogikirjoituksen kautta.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/dMD25wfElLg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/rBPGH6eYlT0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 > [!NOTE]
 > Sinua saattavat myös kiinnostaa [Power BI -palvelun uudet ominaisuudet](service-whats-new.md). Tutustu myös [Power BI -mobiilisovellusten uutuuksiin](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).

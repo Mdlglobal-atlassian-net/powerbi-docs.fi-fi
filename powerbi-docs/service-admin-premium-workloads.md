@@ -8,22 +8,44 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 03/11/2019
+ms.date: 03/15/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: 0baab138ee98d2ec96bc9f47e6e727525a57ed3e
-ms.sourcegitcommit: f176ba9d52d50d93f264eca21bb3fd987dbf934b
+ms.openlocfilehash: e22b598b81f34e80431d0def93d52f7301c500d4
+ms.sourcegitcommit: ac63b08a4085de35e1968fa90f2f49ea001b50c5
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/12/2019
-ms.locfileid: "57757242"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "57964636"
 ---
 # <a name="configure-workloads-in-a-premium-capacity"></a>Premium-kapasiteettien kuormitusten määrittäminen
 
-Tässä artikkelissa kuvaillaan, miten voit ottaa käyttöön ja määrittää Power BI Premium -kapasiteettien kuormituksia. Oletusarvoisesti kapasiteetit tukevat ainoastaan Power BI -kyselyjen suorittamiseen liittyviä kuormituksia. Kyselyn kuormitukset on optimoitu Premium-kapasiteetin SKU:lle, jonka resurssit määrittävät kuormitusten rajat. Premium-kapasiteetit tukevat myös muita kuormituksia, jotka voivat käyttää kapasiteetin resursseja.
+Tässä artikkelissa kuvaillaan, miten voit ottaa käyttöön ja määrittää Power BI Premium -kapasiteettien kuormituksia. Oletusarvoisesti kapasiteetit tukevat ainoastaan Power BI -kyselyjen suorittamiseen liittyviä kuormituksia. Voit myös ottaa käyttöön ja määrittää muita kuormituksia **[tekoälylle (kognitiiviset palvelut)](service-cognitive-services.md)**, **[tietovoille](service-dataflows-overview.md#dataflow-capabilities-on-power-bi-premium)** ja **[sivutetuille raporteille](paginated-reports-save-to-power-bi-service.md)**.
+
+## <a name="default-memory-settings"></a>Oletusmuistiasetukset
+
+Kyselyn kuormitukset on optimoitu Premium-kapasiteetin SKU:lle, jonka resurssit määrittävät kuormitusten rajat. Premium-kapasiteetit tukevat myös muita kuormituksia, jotka voivat käyttää oman kapasiteettisi resursseja. Näiden kuormitusten oletusmuistiarvot perustuvat SKU:n käytettävissä oleviin kapasiteetin solmuihin. Enimmäismuistiasetukset eivät ole kumulatiivisia. Enintään enimmäisarvoa vastaava muistimäärä varataan AI:lle ja tietovuolle dynaamisesti, mutta sivutetuille raporteille staattisesti. 
+
+### <a name="microsoft-office-skus-for-software-as-a-service-saas-scenarios"></a>Microsoft Office -varastointiyksiköt Software as a Service (SaaS) -skenaarioille
+
+|                     | EM2                      | EM3                       | P1                      | P2                       | P3                       |
+|---------------------|--------------------------|--------------------------|-------------------------|--------------------------|--------------------------|
+| Tekoäly (kognitiiviset palvelut) | Oletus 20 %, vähimmäisarvo TBD| Oletus 20 %, vähimmäisarvo TBD | Oletus 20 %, vähimmäisarvo TBD | Oletus 20 %, vähimmäisarvo TBD | Oletus 20 %, vähimmäisarvo TBD |
+| Tietovuot | – |Oletus 20 %, vähintään 12  | Oletus 20 %, vähintään 5 %  | Oletus 20 %, vähintään 3 % | Oletus 20 %, vähintään 2 %  |
+| Sivutetut raportit | – |– | Oletus 20 %, vähintään 10 % | Oletus 20 %, vähintään 5 % | Oletus 20 %, vähintään 2,5 % |
+| | | | | | |
+
+### <a name="microsoft-azure-skus-for-platform-as-a-service-paas-scenarios"></a>Microsoft Azure -varastointiyksiköt Platform as a Service (PaaS) -skenaarioille
+
+|                  | A1                       | A2                       | A3                      | A4                       | A5                      | A6                        |
+|-------------------|--------------------------|--------------------------|-------------------------|--------------------------|-------------------------|---------------------------|
+| Tekoäly (kognitiiviset palvelut) | –                      | Oletus 20 %, vähimmäisarvo TBD                      | Oletus 20 %, vähimmäisarvo TBD                     | Oletus 20 %, vähimmäisarvo TBD | Oletus 20 %, vähimmäisarvo TBD | Oletus 20 %, vähimmäisarvo TBD |
+| Tietovuot         | Oletus 40 %, vähintään 40 % | Oletus 24 %, vähintään 24 % | Oletus 20 %, vähintään 12 % | Oletus 20 %, vähintään 5 %  | Oletus 20 %, vähintään 3 % | Oletus 20 %, vähintään 2 %   |
+| Sivutetut raportit | –                      | –                      | –                     | Oletus 20 %, vähintään 10 % | Oletus 20 %, vähintään 5 % | Oletus 20 %, vähintään 2,5 % |
+| | | | | | |
 
 ## <a name="configure-workloads"></a>Kuormitusten määrittäminen
 
-Voit ottaa käyttöön ja määrittää muita kuormituksia AI:lle, [tietovoille](service-dataflows-overview.md#dataflow-capabilities-on-power-bi-premium) ja [sivutetuille raporteille](paginated-reports-save-to-power-bi-service.md). Näiden kuormitusten oletusmuistiarvot perustuvat SKU:n käytettävissä oleviin kapasiteetin solmuihin. Enimmäismuistiasetukset eivät ole kumulatiivisia. Enintään enimmäisarvoa vastaava muistimäärä varataan AI:lle ja tietovuolle dynaamisesti, mutta sivutetuille raporteille staattisesti. 
+Suurenna kapasiteetin käytettävissä olevien resurssien määrää ottamalla käyttöön kuormituksia vain, jos niitä käytetään. Muuta muistiasetuksia vain, jos olet todennut, että oletusasetukset eivät vastaa kapasiteettisi resurssivaatimuksia.  
 
 ### <a name="to-configure-workloads-in-the-power-bi-admin-portal"></a>Kuormitusten määrittäminen Power BI -hallintaportaalin kautta
 
@@ -41,11 +63,13 @@ Voit ottaa käyttöön ja määrittää muita kuormituksia AI:lle, [tietovoille]
 > [!NOTE]
 > Jos otat käyttöön sivutettujen raporttien kuormituksen, muista, että sivutettujen raporttien avulla voit suorittaa omaa koodia raporttia hahmontaessasi. Näin voit esimerkiksi sallia tekstin värin dynaamisen muuttamisen sisällön perusteella. Power BI Premium suorittaa sivutetut raportit rajoitetussa tilassa kapasiteetin sisällä. Tälle tilalle osoitetaan kaikki määrittämäsi muisti riippumatta siitä, onko kuormitus aktiivinen. Jos käytät Power BI -raportteja tai tietovoita samassa kapasiteetissa, varmista, että olet määrittänyt sivutetuille raporteille riittävän vähän muistia, jotta muiden kuormitusten nopeus ei kärsi. Sivutetut raportit -kuormitus saattaa lakata toimimasta joissain harvinaisissa tapauksissa. Näissä tapauksissa kuormitus näyttää virhetilan hallintaportaalissa ja raportin hahmontaminen aikakatkaistaan käyttäjiltä. Voit ratkaista ongelman poistamalla kuormituksen käytöstä ja ottamalla sen uudelleen käyttöön.
 
-
 ### <a name="rest-api"></a>REST-ohjelmointirajapinta
 
 Kuormituksia voidaan ottaa käyttöön ja määrittää kapasiteetille käyttämällä [Kapasiteetit](https://docs.microsoft.com/rest/api/power-bi/capacities)-REST-ohjelmointirajapintoja.
 
+## <a name="monitoring-workloads"></a>Kuormitusten valvonta
+
+[Power BI Premium Capacity Metrics -sovellus](service-admin-premium-monitor-capacity.md) tarjoaa tietojoukkojen, tietovoiden ja sivutettujen raporttien mittareita, joiden avulla voit valvoa kapasiteeteissasi käyttöön otettuja kuormituksia. 
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 

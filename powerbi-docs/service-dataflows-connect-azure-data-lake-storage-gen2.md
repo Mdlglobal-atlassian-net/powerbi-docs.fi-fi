@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 01/10/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: dc22c075c479510810b4a914fd999e38118e12e5
-ms.sourcegitcommit: 654fae0af739bd599e029d692f142faeba0a502f
+ms.openlocfilehash: 875f30a6e051561f20a7ca54bc48343dd7248e79
+ms.sourcegitcommit: 8fda7843a9f0e8193ced4a7a0e5c2dc5386059a6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56426719"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58174748"
 ---
 # <a name="connect-azure-data-lake-storage-gen2-for-dataflow-storage-preview"></a>Yhdistä Azure Data Lake Storage Gen2 tietovuon tallennukseen (esikatselu)
 
@@ -65,7 +65,7 @@ Noudata artikkelin [Azure Data Lake Storage Gen2 -tallennustilin luominen](https
 
 Seuraavaksi sinun on myönnettävä Power BI -palvelulle lukijan rooli luomallesi tallennustilille. Kyse on sisäänrakennetusta roolista, joten vaiheet ovat yksinkertaisia. 
 
-Noudata artikkelin [Roolin määrittäminen suojausobjektille](https://docs.microsoft.com/azure/storage/common/storage-auth-aad-rbac#assign-a-role-to-a-security-principal) ohjeita.
+Noudata [Sisäisen RBAC-roolin määrittäminen](https://docs.microsoft.com/azure/storage/common/storage-auth-aad-rbac#assign-a-built-in-rbac-role) -artikkelin ohjeita.
 
 Valitse **Lisää roolimääritys** -ikkunassa **Lukija**-rooli, joka määritetään Power BI -palvelulle. Etsi sitten haun avulla **Power BI -palvelu**. Seuraavassa kuvassa näytetään Power BI -palvelulle määritetty **Lukija**-rooli.
 
@@ -150,6 +150,9 @@ Voit yhdistää **Azure Data Lake Storage Gen2** -tilisi seuraavasti:
 6. Valitse **Muodosta yhteys**.
 
 Kun nämä vaiheet on suoritettu, Azure Data Lake Storage Gen2 -tilisi on yhdistetty Power BI:hin. 
+
+> [!NOTE]
+> Jotta voit määrittää yhteyden Azure Data Lake Storage Gen2:een Power BI -hallintaportaalissa, tarvitset yleisen järjestelmänvalvojan oikeudet. Yleiset järjestelmänvalvojat eivät kuitenkaan voi muodostaa yhteyttä ulkoiseen säilöön hallintaportaalissa.  
 
 Sinun on seuraavaksi sallittava organisaatiosi työntekijöiden määrittää työtilansa, jotta ne voivat käyttää tallennustiliä tietovuon määritykseen ja tietojen tallennukseen. Tehdään se seuraavassa osiossa. 
 

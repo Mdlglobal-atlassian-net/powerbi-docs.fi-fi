@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 11/26/2018
 ms.author: maikelson
-ms.openlocfilehash: fb2b169650360a7dc6a4afaee1c43abb733255c9
-ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
+ms.openlocfilehash: 9fbd47dcefb2daf8d86c6932b5c70617b8bf7ac9
+ms.sourcegitcommit: ac63b08a4085de35e1968fa90f2f49ea001b50c5
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55430989"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "57964705"
 ---
 # <a name="power-bi-webinars"></a>Power BI -verkkoseminaarit
 
@@ -22,13 +22,19 @@ Rekisteröidy tuleviin reaaliaikaisiin verkkoseminaareihin tai katso nauhoitettu
 
 ## <a name="upcoming-webinars"></a>Tulevat verkkoseminaarit
 
-Mitään verkkoseminaaria ei ole vielä ajoitettu. Palaa pian takaisin tarkistamaan muut tulevat tapahtumat.
+**Molemminpuolisen voittotilanteen toteuttaminen asiakastuotteiden valmistajille ja jälleenmyyjille**
+<br>pitäjä: Liz McCreesh
+<br>[Rekisteröidy nyt](https://info.microsoft.com/Achieving-a-Win-Win-for-Consumer-Packaged-Goods-Manufacturers-and-Retailers-registration.html)
 
 >[Tulevia Power BI -yhteisön verkkoseminaareja](https://powerbi.microsoft.com/blog/tag/community-webinars/?Is=Website)
 
 ## <a name="featured-webinars"></a>Esittelyssä verkkoseminaarit
 
 Aloita näistä suosituista verkkoseminaareista
+
+**Power BI sekä modernin ja yritys-BI:n tulevaisuus**
+<br>pitäjät: Arun Ulag ja Amir Netz
+<br>[Rekisteröidy ja katso nyt](https://info.microsoft.com/ww-landing-The-Future-of-Modern-and-Enterprise-BI-video.html?LCID=EN-US)
 
 **Power BI:n käytön aloittaminen**
 <br>tekijä: Miguel Martinez
@@ -46,13 +52,9 @@ Aloita näistä suosituista verkkoseminaareista
 <br>Cory Hrncirik ja Miguel Martinez
 <br>[Rekisteröidy ja katso nyt](https://info.microsoft.com/Microsoft-Runs-on-Power-BI-OnDemandRegistration.html?Is=Website)
 
-**Power BI: tehokasta analytiikkaa**
-<br>tekijä: Gohul Shanmugalingam
-<br>[Rekisteröidy ja katso nyt](https://info.microsoft.com/CA-PowerBI-WBNR-FY19-11Nov-08-PowerBIAnalyticsDoneRight-MCW0008690_01Registration-ForminBody.html?Is=Website)
-
-**Visualisoi Power BI -tietosi:  peruskaaviotyypit ja niiden käyttö**
-<br>tekijä: Miranda Li
-<br>[Rekisteröidy ja katso nyt](https://info.microsoft.com/Make-your-Power-BI-Data-Visual-Registration.html?Is=Website)
+**Tehosta sovelluksiasi Power BI:n JavaScript-ohjelmointirajapinnalla**
+<br>tekijä: Nimrod Shalit
+<br>[Rekisteröidy ja katso nyt](https://info.microsoft.com/ww-landing-PBI-JavaScript-API-video.html)
 
 **Power BI, Excel ja Office 365: yrityksen tietojen optimointi**
 <br>Olaf Hubel ja Miguel Martinez
@@ -62,10 +64,6 @@ Aloita näistä suosituista verkkoseminaareista
 <br>tekijä: Miranda Li
 <br>[Rekisteröidy ja katso nyt](https://info.microsoft.com/ww-landing-powerbi-tips-for-better-visualization-design.html?Is=Website)
 
-**Microsoft Flow'n ja PowerAppsin taloudelliset kokonaisvaikutukset**
-<br>Jonathan Lipsitz ja Enrique Plaza Garcia
-<br>[Rekisteröidy ja katso nyt](https://info.microsoft.com/The-TEI-of-PowerApps-and-Microsoft-Flow-OnDemandRegistration.html?Is=Website)
-
 >[Selaa yhteisön asiantuntijoiden vetämien Power BI -verkkoseminaarien kirjastoa](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/bd-p/VideoTipsTricks?filter=webinars&featured=yes&Is=Website)
 
 ## <a name="on-demand-webinars"></a>Nauhoitetut verkkoseminaarit
@@ -74,9 +72,25 @@ Katso tallennetut istuntoja milloin tahansa
 
 ### <a name="getting-started"></a>Aloittaminen
 
+**Automatisoi päivittäisiä liiketoimintaprosesseja Power BI:n, PowerAppsin ja Microsoft Flow’n avulla**
+<br>Wim Coorevits ja Enrique Plaza Garcia
+<br>[Rekisteröidy ja katso nyt](https://info.microsoft.com/Automate-Day-to-Day-Business-Processes-with-Power-BI-Power-Apps-and-Microsoft-Flow-OnDemandRegistration.html)
+
+**Power BI: tehokasta analytiikkaa**
+<br>tekijä: Gohul Shanmugalingam
+<br>[Rekisteröidy ja katso nyt](https://info.microsoft.com/CA-PowerBI-WBNR-FY19-11Nov-08-PowerBIAnalyticsDoneRight-MCW0008690_01Registration-ForminBody.html?Is=Website)
+
+**Visualisoi Power BI -tietosi:  peruskaaviotyypit ja niiden käyttö**
+<br>tekijä: Miranda Li
+<br>[Rekisteröidy ja katso nyt](https://info.microsoft.com/Make-your-Power-BI-Data-Visual-Registration.html?Is=Website)
+
 **Visuaalisesti näyttävien Power BI -raporttien luominen**
 <br>tekijä: Charles Sterling
 <br>[Katso nyt](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/5-3-17-Webinar-How-to-Design-Visually-Stunning-Power-BI-Reports/m-p/168204?Is=Website)
+
+**Microsoft Flow'n ja PowerAppsin taloudelliset kokonaisvaikutukset**
+<br>Jonathan Lipsitz ja Enrique Plaza Garcia
+<br>[Rekisteröidy ja katso nyt](https://info.microsoft.com/The-TEI-of-PowerApps-and-Microsoft-Flow-OnDemandRegistration.html?Is=Website)
 
 **Paremmat yhdessä: 5 Excel-käyttäjien Power BI:n käytöstä saamaa etua**
 <br>tekijät: Carlos Otero ja Miguel Martinez
@@ -100,6 +114,10 @@ Katso tallennetut istuntoja milloin tahansa
 
 ### <a name="partners"></a>Kumppanit ###
 
+**Asiakastietojen muuntaminen jälleenmyynnin menestykseksi Power BI:n avulla**
+<br>tekijä: Angad Soni (Hitachi Solutions)
+<br>[Rekisteröidy ja katso nyt](https://info.microsoft.com/Transform-Your-Customer-Data-into-Retail-Success-OnDemandRegistration.html?LCID=EN-US?wt.mc_id=undefined)
+
 **Hyväksi havaitut hoitoalan ratkaisut parantavat sekä potilaiden hoitotuloksia että tuottavuutta**
 <br>tekijät: Stephen Cracknell ja Stuart Macanliss US Medical IT:stä
 <br>[Rekisteröidy ja katso nyt](https://info.microsoft.com/Proven-Techniques-for-Building-Effective-Dashboards-Registration.html?Is=Website)
@@ -111,6 +129,10 @@ Katso tallennetut istuntoja milloin tahansa
 **Sovelletut tiedot myynnissä ja palveluissa**
 <br>tekijä: Ed Bobrin Avanadesta
 <br>[Rekisteröidy ja katso nyt](https://info.microsoft.com/applied-intelligence-for-sales-service.html?Is=Website)
+
+**Menestyvän trendinluojan 5 tapaa - Rohit Bhargava**
+<br>tekijä: Rohit Bhargava (Non-Obvious)
+<br>[Rekisteröidy ja katso nyt](https://info.microsoft.com/ww-landing-5-Habits-of-a-Successful-Trend-Curator-Video.html?LCID=EN-US)
 
 **Valmistajat: Ala käy läpi digitaalista muutosta – säilytä johtajuus hyödyntämällä analyyseja kannattavuuden maksimoimiseen**
 <br>tekijät: Jon Thompson Blue Marginista ja Jim Pastor Elgin Fastener Groupista

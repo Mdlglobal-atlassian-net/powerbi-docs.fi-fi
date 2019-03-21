@@ -10,18 +10,20 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 03/12/2019
-ms.openlocfilehash: a29d251c629437184ff31de275a17c1d152abff3
-ms.sourcegitcommit: f176ba9d52d50d93f264eca21bb3fd987dbf934b
+ms.openlocfilehash: 1605293474a7cbfefb448d74127639153e29325c
+ms.sourcegitcommit: ac63b08a4085de35e1968fa90f2f49ea001b50c5
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/12/2019
-ms.locfileid: "57757773"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "57964613"
 ---
 # <a name="troubleshooting-sign-in-issues-for-power-bi"></a>Power BI -kirjautumisongelmien vianmääritys
 
-Tämä artikkeli kuvaa sellaisen [tukisisällön](https://powerbi.microsoft.com/support/) luomista, joka selvittää, mitä polkua voit seurata kirjautumisongelmiesi ratkaisemiseksi.
+Tässä artikkelissa kuvataan, miten saat [tukea](https://powerbi.microsoft.com/support/) Power BI -kirjautumisongelmien yhteydessä.
 
-Ensimmäiseksi sinun on **otettava yhteyttä sisäiseen tukitiimiisi** avun saamiseksi. Mutta jos olet organisaatiossasi **vuokraajan järjestelmänvalvoja**, etkä voi kirjautua Power BI:hin, jatka alla olevilla tiedoilla.
+Ensimmäiseksi sinun tulee **ottaa yhteyttä organisaatiosi sisäiseen tukitiimiin** ja pyytää apua.
+
+Jos kuitenkin olet organisaatiossasi **vuokraajan järjestelmänvalvoja** etkä kuitenkaan voi kirjautua Power BI:hin, jatka alla olevilla tiedoilla.
 
 ## <a name="engage-the-support-team"></a>Käänny tukitiimin puoleen
 
@@ -30,11 +32,13 @@ Yritä ensin luoda tukipalvelupyyntö [Power BI -tukisivulla](https://powerbi.mi
 Jos et kykene pääsemään Power BI -tukisivulle, koeta luoda tukipalvelupyyntö [Office 365 (O365) -tukisivulla](https://support.office.com/home/contact).
 
 Jos et voi luoda tukipalvelupyyntöä Power BI -tukisivun etkä O365:n kautta, yritä saada tukea puhelimitse.
+
 * Asiakkaille Pohjois-Amerikassa ja muualla Amerikan mantereilla: +1-800-936-5800
 * Asiakkaille Euroopassa, Lähi-idässä ja Aasiassa: +44-844-800-2400
 * Asiakkaille Intiassa: + 1-800-419-5666
 
-Toinen mahdollisuus saada apua Microsoft-tuelta on ostaa [Microsoft Premier -tuki](https://support.microsoft.com/premier). Jos tiedät organisaatiosi ostaneen Microsoft Premier -tuen etkä edelleenkään voi luoda tukitapausta minkään O365- tai Power BI -kanavan kautta, voit ottaa Premier-tukeen yhteyttä puhelimitse.
+Toinen mahdollisuus saada apua Microsoft-tuelta on ostaa [Microsoft Premier -tuki](https://support.microsoft.com/premier). Jos tiedät organisaatiosi ostaneen Microsoft Premier -tuen etkä edelleenkään voi luoda tukitapausta minkään Power BI- tai O365-kanavan kautta, voit ottaa Premier-tukeen yhteyttä puhelimitse.
+
 * Asiakkaille Pohjois-Amerikassa ja muualla Amerikan mantereilla: +1-800-936-3100
 * Asiakkaille Euroopassa, Lähi-idässä ja Aasiassa: +44-844-800-8338
 * Asiakkaille Intiassa: + 1-800-425-5666

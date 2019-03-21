@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
 ms.custom: ''
 ms.date: 12/17/2018
-ms.openlocfilehash: d17a5875569f29da41d62ca61efcbdae3b9242e9
-ms.sourcegitcommit: f176ba9d52d50d93f264eca21bb3fd987dbf934b
+ms.openlocfilehash: 9c5d2665f012881f951a186c3ec8c9fd94031a28
+ms.sourcegitcommit: ac63b08a4085de35e1968fa90f2f49ea001b50c5
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/12/2019
-ms.locfileid: "57757319"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "57980354"
 ---
 # <a name="frequently-asked-questions-about-power-bi-custom-visuals"></a>Usein kysyttyjä kysymyksiä – Power BI:n mukautetut visualisoinnit
 
@@ -23,7 +23,7 @@ ms.locfileid: "57757319"
 
 ### <a name="how-can-the-admin-manage-the-organizational-custom-visuals"></a>Miten järjestelmänvalvoja voi hallita organisaation mukautettuja visualisointeja?
 
-Hallintaportaalin Organisaation mukautetut visualisoinnit -välilehdellä järjestelmänvalvoja voi nähdä ja [hallita kaikkia organisaation mukautettuja visualisointeja](https://docs.microsoft.com/power-bi/service-admin-portal#organization-visuals), kuten lisätä, poistaa ja ottaa käyttöön tai pois käytöstä.
+Hallintaportaalin Organisaation mukautetut visualisoinnit -välilehdellä järjestelmänvalvoja voi nähdä ja [hallita kaikkia organisaation mukautettuja visualisointeja](service-admin-portal.md#organizational-visuals), kuten lisätä, poistaa ja ottaa käyttöön tai pois käytöstä.
 Visualisointeja ei enää tarvitse jakaa sähköpostitse tai jakamalla kansioita. Kun ne on otettu käyttöön organisaation säilössä, organisaation käyttäjät voivat helposti löytää ne ja tuoda ne raportteihinsa suoraan Power BI Desktopista tai Power BI -palvelusta. Organisaation mukautetut visualisoinnit löytyvät sisäisen säilön *OMA ORGANISAATIO* -välilehdeltä Power BI Desktopissa ja Power BI -palvelussa. Kun järjestelmänvalvoja lataa organisaation mukautetun visualisoinnin uuden version, kaikki organisaatiossa saavat saman päivitetyn version. Raporttien tekijöiden ei tarvitse poistaa visualisointeja raporteistaan saadakseen niiden uudet versiot, sillä kaikki niitä käyttävät raportit päivitetään automaattisesti. Päivitysmenetelmä muistuttaa Marketplacen visualisointeja.
 
 ### <a name="if-an-admin-uploads-a-custom-visual-from-the-public-marketplace-to-the-organization-store-is-it-automatically-updated-once-a-vendor-updates-the-visual-in-the-public-marketplace"></a>Jos järjestelmänvalvoja lataa mukautetun visualisoinnin julkisesta Marketplacesta organisaation sisäiseen säilöön, päivittyykö se automaattisesti, kun toimittaja päivittää visualisoinnin julkisessa Marketplacessa?

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/16/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 9002b1871f5e7db4ef67d4f2f77b6b8769aa1de6
-ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
+ms.openlocfilehash: 25d6c8020e500096507ba5e80a020a7a1c3052a6
+ms.sourcegitcommit: ac63b08a4085de35e1968fa90f2f49ea001b50c5
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55430276"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "57980423"
 ---
 # <a name="administering-power-bi---frequently-asked-questions-faq"></a>Power BI:n hallinnointi - usein kysytyt kysymykset (UKK)
 
@@ -84,7 +84,7 @@ Organisaation käyttäjiin saattaa liittyä kolme tilannetta:
 
 Näillä toimenpiteillä voit järjestelmänvalvojana estää käyttäjiä liittymästä aiemmin luotuun Office 365 -vuokraajaasi. Jos estät käytön, käyttäjien rekisteröitymisyritykset epäonnistuvat ja heitä pyydetään ottamaan yhteyttä organisaation järjestelmänvalvojaan. Tätä prosessia ei tarvitse toistaa, jos olet jo poistanut automaattisen käyttöoikeuksien jakelun käytöstä (esim. Office 365 for Education opiskelijoille, opetushenkilöstölle ja muulle henkilöstölle).
 
-Estä uusia käyttäjiä liittymästä hallittuun vuokraajaan seuraavan PowerShell-komentosarjan avulla. [Lisätietoja PowerShellistä](#basic-powershell-information)
+Estä uusia käyttäjiä liittymästä hallittuun vuokraajaan seuraavan PowerShell-komentosarjan avulla. ([Lue lisätietoja PowerShellistä][1].)
 
 ```powershell
 $msolcred = get-credential
@@ -98,7 +98,7 @@ Set-MsolCompanySettings -AllowEmailVerifiedUsers $false
 
 ### <a name="how-can-i-allow-users-to-join-my-existing-office-365-tenant"></a>Miten voin sallia käyttäjien liittyä aiemmin luotuun Office 365 -vuokraajaan?
 
-Salli uusien käyttäjien liittyminen hallittuun vuokraajaan seuraavan PowerShell-komentosarjan avulla. [Lisätietoja PowerShellistä](#basic-powershell-information)
+Salli uusien käyttäjien liittyminen hallittuun vuokraajaan seuraavan PowerShell-komentosarjan avulla. ([Lue lisätietoja PowerShellistä][1].)
 
 ```powershell
 $msolcred = get-credential
@@ -109,7 +109,7 @@ Set-MsolCompanySettings -AllowEmailVerifiedUsers $true
 
 ### <a name="how-do-i-verify-if-i-have-the-block-on-in-the-tenant"></a>Miten voin vahvistaa, onko minulla lohko vuokraajassa?
 
-Tarkista asetukset seuraavan PowerShell-komentosarjan avulla. *AllowEmailVerifiedUsers*-asetuksen tulee olla false (epätosi). [Lisätietoja PowerShellistä](#basic-powershell-information)
+Tarkista asetukset seuraavan PowerShell-komentosarjan avulla. *AllowEmailVerifiedUsers*-asetuksen tulee olla false (epätosi). ([Lue lisätietoja PowerShellistä][1].)
 
 ```powershell
 $msolcred = get-credential
@@ -122,7 +122,7 @@ Get-MsolCompanyInformation | fl allow*
 
 Tätä ohjaava Azure AD -asetus on **AllowAdHocSubscriptions**. Useimmissa vuokraajissa tämä asetus on true (tosi), mikä tarkoittaa, että se on käytössä. Jos hankit Power BI:n kumppanin kautta, asetuksena saattaa olla false (epätosi), mikä tarkoittaa, että se on poistettu käytöstä.
 
-Seuraavan PowerShell-komentosarjan avulla voit poistaa ad-hoc-tilaukset käytöstä. [Lisätietoja PowerShellistä](#basic-powershell-information)
+Seuraavan PowerShell-komentosarjan avulla voit poistaa ad-hoc-tilaukset käytöstä. ([Lue lisätietoja PowerShellistä][1].)
 
 1. Kirjaudu Azure Active Directoryyn käyttämällä Office 365 -tunnistetietojasi. PowerShell-komentosarjan ensimmäinen rivi kehottaa antamaan tunnistetiedot. Toinen rivi muodostaa yhteyden Azure Active Directoryyn.
 
@@ -270,3 +270,5 @@ Power BI perustuu Office 365:een, joka puolestaan perustuu Azure-palveluihin, ku
 [Office 365:n ryhmän hallinta](/office365/admin/email/create-edit-or-delete-a-security-group/)  
 
 Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)
+
+[1]: https://docs.microsoft.com/powershell/scripting/overview

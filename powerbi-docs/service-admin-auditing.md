@@ -11,12 +11,12 @@ ms.date: 11/16/2018
 ms.author: mblythe
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: 24701392b6cfa3400ed96be8a496791d250204d5
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 59916f904c2905a6858e0c20a67a2c0eae9e8cca
+ms.sourcegitcommit: ac63b08a4085de35e1968fa90f2f49ea001b50c5
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54291161"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "57980400"
 ---
 # <a name="using-auditing-within-your-organization"></a>Valvonnan käyttö organisaatiossa
 
@@ -56,7 +56,7 @@ Power BI:n valvontalokit ovat saatavilla suoraan [Office 365:n tietoturva- ja yh
 
 ## <a name="search-only-power-bi-activities"></a>Vain Power BI -toimien haku
 
-Voit rajata tulokset vain Power BI -toimiin seuraavasti. Katso toimien luettelo jäljempänä tässä artikkelissa olevasta kohdasta, jossa on [Power BI:n valvomien toimien luettelo](#list-of-activities-audited-by-power-bi).
+Voit rajata tulokset vain Power BI -toimiin seuraavasti. Katso toimien luettelo jäljempänä tässä artikkelissa olevasta kohdasta, jossa on [Power BI:n valvomien toimien luettelo](#activities-audited-by-power-bi).
 
 1. Valitse **Haku valvontalokista** -sivun **Haku**-kohdasta avattava **Toimet**-luettelo.
 

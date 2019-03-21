@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/24/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 451b5967dd648d982132282d2debbd4c4f86780f
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 051609c59e155cb6d5c2a982483a7e6d2d91a665
+ms.sourcegitcommit: ac63b08a4085de35e1968fa90f2f49ea001b50c5
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54294049"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "57964682"
 ---
 # <a name="publish-apps-with-dashboards-and-reports-in-power-bi"></a>Raporttinäkymiä ja raportteja sisältävien sovellusten julkaiseminen Power BI:ssä
 
@@ -121,6 +121,11 @@ Sovelluksia lähetettäessä käyttäjille kannattaa ottaa huomioon seuraavat as
 
 ## <a name="unpublish-an-app"></a>Sovelluksen julkaisun peruuttaminen
 Kuka tahansa sovelluksen työtila jäsen voi peruuttaa sovelluksen julkaisun.
+
+>[!NOTE]
+>Jos peruutat sovelluksen julkaisun, sovelluksen käyttäjät menettävät omat muokkauksensa. Kaikki sovelluksen sisältöön liittyvät omat kirjanmerkit, kommentit ja tilaukset siis menetetään. Peruuta sovelluksen julkaisu vain, jos sinun on poistettava sovellus.
+> 
+> 
 
 * Valitse sovelluksen työtilassa kolme pistettä (**...** ) oikeasta yläkulmasta > **Peruuta sovelluksen julkaisu**.
   

@@ -8,14 +8,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 02/28/2019
+ms.date: 03/12/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: b4f2d58b9e33e603b6e2dbc97972bb54c66f065c
-ms.sourcegitcommit: d4d36b6b200f2693b545e4a3e66d94c77a3cfafb
+ms.openlocfilehash: 312e010bfa3ea635ef014a0b2dd913fa9e3911b6
+ms.sourcegitcommit: ac63b08a4085de35e1968fa90f2f49ea001b50c5
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57014135"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "57964843"
 ---
 # <a name="how-to-purchase-power-bi-premium"></a>Ohjeet Power BI Premiumin ostamiseen
 
@@ -95,13 +95,15 @@ Voit peruuttaa tilauksen Office 365 -hallintakeskuksessa. Jos haluat peruuttaa P
 
 1. Lue tiedot ja, jos haluat jatkaa, valitse **Peruuta tilaus**.
 
+### <a name="when-canceling-or-your-license-expires"></a>Jos peruutat tai käyttöoikeutesi vanhenee
+
+Jos peruutat Premium-tilauksesi tai kapasiteetin käyttöoikeutesi umpeutuu, voit jatkaa Premium-kapasiteettien käyttämistä 30 päivän ajan peruuttamispäivästä tai käyttöoikeuden vanhenemisen päivämäärästä. 30 päivän jälkeen et enää pysty käyttämään Premium-kapasiteettejasi tai niiden sisältämiä työtiloja.
+
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
-[Power BI -hinnoittelusivu](https://powerbi.microsoft.com/pricing/)
-[Power BI Premium -laskin](https://powerbi.microsoft.com/calculator/)
-[Mikä on Power BI Premium?](service-premium.md)
-[Power BI Premiumin usein kysytyt kysymykset](service-premium-faq.md)
-[Microsoft Power BI Premiumin tekninen raportti](https://aka.ms/pbipremiumwhitepaper)
+[Power BI -hinnoittelusivu](https://powerbi.microsoft.com/pricing/)   
+[Power BI Premium -laskin](https://powerbi.microsoft.com/calculator/)   
+[Power BI Premiumin usein kysytyt kysymykset](service-premium-faq.md)   
 [Power BI:n yrityskäyttöönoton suunnittelemisen tekninen raportti](https://aka.ms/pbienterprisedeploy)
 
 Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)

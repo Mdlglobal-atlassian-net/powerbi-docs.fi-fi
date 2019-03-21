@@ -10,12 +10,12 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 02/25/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: 032fae40a7e2328879ba01b6d94c3c532369b3ab
-ms.sourcegitcommit: 796bf513bf8669676e2a44627b56221b1629a6a8
+ms.openlocfilehash: ac6559ccc9e6dbdf8c4be0550d8522765a4a8b23
+ms.sourcegitcommit: 8fda7843a9f0e8193ced4a7a0e5c2dc5386059a6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56826671"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58174909"
 ---
 # <a name="monitor-premium-capacities-with-the-app"></a>Premium-kapasiteettien valvonta sovelluksen avulla
 
@@ -97,7 +97,7 @@ Koontinäyttö sisältää seuraavat mittausarvot:
 | DirectQuery-yhteyksien tai reaaliaikaisten yhteyksien korkean käyttöasteen määrä| Kuinka monta kertaa DirectQuery-yhteydet tai reaaliaikaiset yhteydet ylittivät 80 prosenttia raja-arvoista viimeisten seitsemän päivän aikana kolmen minuutin osiin jaettuna. |
 | DirectQuery-yhteyksien tai reaaliaikaisten yhteyksien suurin käyttömäärä| Ajankohdat, jolloin DirectQuery-yhteydet tai reaaliaikaiset yhteydet useimmin ylittivät 80 prosenttia viimeisten seitsemän päivän aikana tunnin osiin jaettuna. |
 | DirectQuery-yhteyksien tai reaaliaikaisten yhteyksien suurin korkea käyttöaste | Kuinka monta kertaa enimmillään DirectQuery-yhteydet tai reaaliaikaiset yhteydet ylittivät 80 prosenttia raja-arvoista viimeisten seitsemän päivän aikana kolmen minuutin osiin jaettuna.|
-| DirectQuery-yhteyksien tai reaaliaikaisten yhteyksien enimmäismäärän aika | Paikallinen aika, jolloin DirectQuery-yhteydet tai reaaliaikaiset yhteydet useimmin ylittivät 80 prosenttia tunnin aikana. |
+| DirectQuery-yhteyksien tai reaaliaikaisten yhteyksien enimmäismäärän aika | UTC-aika, jolloin DirectQuery-yhteydet tai reaaliaikaiset yhteydet useimmin ylittivät 80 prosenttia tunnin aikana. |
 | Päivitykset yhteensä | Päivitysten kokonaismäärä seitsemän viime päivän aikana. |
 | Päivityksen luotettavuus (%) | Onnistuneiden päivitysten määrä jaettuna päivitysten kokonaismäärällä seitsemän viime päivän aikana. |
 | Päivitysten keskimääräinen kesto (minuuttia) | Keskimääräinen päivityksen valmistumiseen kuluva aika. |
@@ -162,8 +162,8 @@ Tietojoukot-sivulla on erilaisia *alueita*, joihin sisältyvät **Päivitykset**
 | Päivitykset |  Kokonaismäärä: Kunkin tietojoukon päivitysten kokonaismäärä.<br>  Luotettavuus: Kullekin tietojoukolle suoritettujen päivitysten prosenttiosuus.<br>  Keskimääräinen odotusaika: Keskimääräinen viive ajoitetun ajankohdan ja tietojoukon päivityksen alkamisen välillä minuutteina.<br>  Enimmäisodotusaika: Tietojoukon enimmäisodotusaika minuutteina.<br>  Keskimääräinen kesto: Tietojoukon päivityksen keskimääräinen kesto minuutteina.<br>  Enimmäiskesto: Tietojoukon pitkäkestoisimman päivityksen kesto minuutteina. |
 | 5 parasta tietojoukkoa keskimääräisen keston mukaan (minuutteina) |  Viisi tietojoukkoa, joilla on pisin päivityksen keskimääräinen kesto minuutteina. |
 | 5 parasta tietojoukkoa keskimääräisen odotusajan mukaan (minuutteina) |  Viisi tietojoukkoa, joilla on pisin päivityksen keskimääräinen odotusaika minuutteina. |
-| Päivitysmäärä tunneittain ja muistin käyttö (Gt) |  Onnistumiset, epäonnistumiset ja muistin käyttö tunnin osiin jaettuna paikallisessa ajassa ilmoitettuna. |
-| Päivityksen keskimääräinen odotusaika tunneittain (minuutteina) |  Tämä on päivityksen keskimääräinen odotusaika tunnin osiin jaettuna paikallisessa ajassa ilmoitettuna. Useat korkeat päivityksen odotusaikapiikit ovat merkki kuumana käyvästä kapasiteetista. |
+| Päivitysmäärä tunneittain ja muistin käyttö (Gt) |  Onnistumiset, epäonnistumiset ja muistin käyttö tunnin osiin jaettuna UTC-ajassa ilmoitettuna. |
+| Päivityksen keskimääräinen odotusaika tunneittain (minuutteina) |  Tämä on päivityksen keskimääräinen odotusaika tunnin osiin jaettuna UTC-ajassa ilmoitettuna. Useat korkeat päivityksen odotusaikapiikit ovat merkki kuumana käyvästä kapasiteetista. |
 |  |  |
 
 #### <a name="query-durations-area"></a>Kyselyjen kestot -alue
@@ -173,8 +173,8 @@ Tietojoukot-sivulla on erilaisia *alueita*, joihin sisältyvät **Päivitykset**
 | Kyselyjen kestot |  Tämän osion tiedot on ositettu tietojoukkojen, työtilan ja tunnittaisten säilöjen mukaan viimeisten seitsemän päivän ajalta.<br>  Yhteensä: Tietojoukolle suoritettavien kyselyjen kokonaismäärä.<br>  Keskiarvo: tietojoukon kyselyn keskimääräinen kesto millisekunteina<br>  Enimmäisarvo: Tietojoukon pitkäkestoisimman kyselyn kesto millisekunteina.|
 | Kyselyn keston jakauma |  Kyselyn keston histogrammi on jaoteltu kyselyjen kestojen mukaan (millisekunneissa) seuraaviin luokkiin: < 30 ms, 30–100 ms, 100–300 ms, 300 ms–1 s, 1–3 s, 3–10 s, 10–30 s ja > 30 s. Kyselyjen pitkät kestot ja odotusajat ovat osoitus siitä, että kapasiteetti on äärirajoilla. Se saattaa myös tarkoittaa sitä, että yksi tietojoukko aiheuttaa ongelmia ja tarkempaa tutkimusta tarvitaan. |
 | 5 parasta tietojoukkoa keskimääräisen keston mukaan |  Viisi tietojoukkoa, joilla on pisin kyselyn keskimääräinen kesto millisekunteina. |
-| Kyselyn keston jakauma tunneittain |  Kyselyjen määrä ja keskimääräinen kesto (millisekunteina) vs. muistin käyttö gigatavuina tunnin osiin jaettuna paikallisessa ajassa ilmoitettuna. |
-| DirectQuery-yhteydet / Reaaliaikaiset yhteydet (> 80 prosentin käyttöaste) |  Kerrat, jolloin DirectQuery-yhteys tai reaaliaikainen yhteys ylitti suorittimen 80 prosentin käyttöasteen tunnin osiin jaettuna paikallisessa ajassa ilmoitettuna. |
+| Kyselyn keston jakauma tunneittain |  Kyselyjen määrä ja keskimääräinen kesto (millisekunteina) vs. muistin käyttö gigatavuina tunnin osiin jaettuna UTC-ajassa ilmoitettuna. |
+| DirectQuery-yhteydet / Reaaliaikaiset yhteydet (> 80 prosentin käyttöaste) |  Kerrat, jolloin DirectQuery-yhteys tai reaaliaikainen yhteys ylitti suorittimen 80 prosentin käyttöasteen tunnin osiin jaettuna UTC-ajassa ilmoitettuna. |
 |  |  |
 
 #### <a name="query-waits-area"></a>Kysely odottaa -alue
@@ -184,7 +184,7 @@ Tietojoukot-sivulla on erilaisia *alueita*, joihin sisältyvät **Päivitykset**
 | Kyselyn odotusajat |  Tämän osion tiedot on ositettu tietojoukkojen, työtilan ja tunnittaisten säilöjen mukaan viimeisten seitsemän päivän ajalta.<br>  Yhteensä: Tietojoukolle suoritettavien kyselyjen kokonaismäärä.<br>  Odotusmäärä: Ennen suorittamisen aloittamista järjestelmäresursseissa odottaneiden kyselyjen määrä tietojoukossa.<br>  Keskiarvo: Tietojoukon kyselyn keskimääräinen odotusaika millisekunteina.<br>  Enimmäisarvo: Tietojoukon pisimpään odottaneen kyselyn kesto millisekunteina.|
 | 5 parasta tietojoukkoa keskimääräisen odotusajan mukaan |  Viisi tietojoukkoa, joilla on pisin keskimääräinen odotusaika kyselyn suorittamisen aloittamiseen millisekunteina. |
 | Odotusajan jakaumat |  Kyselyn keston histogrammi on jaoteltu kyselyjen kestojen mukaan (millisekunneissa) seuraaviin luokkiin: < 50 ms, 50–100 ms, 100–200 ms, 200–400 ms, 400 ms–1 s, 1–5 s ja > 5 s. |
-| Kyselyiden odotusajan jakaumat tunneittain |  Odottavien kyselyjen määrä ja keskimääräinen odotusaika (millisekunteina) vs. muistin käyttö gigatavuina tunnin osiin jaettuna paikallisessa ajassa ilmoitettuna. |
+| Kyselyiden odotusajan jakaumat tunneittain |  Odottavien kyselyjen määrä ja keskimääräinen odotusaika (millisekunteina) vs. muistin käyttö gigatavuina tunnin osiin jaettuna UTC-ajassa ilmoitettuna. |
 |  |  |
 
 #### <a name="datasets-area"></a>Tietojoukot-alue
@@ -193,8 +193,8 @@ Tietojoukot-sivulla on erilaisia *alueita*, joihin sisältyvät **Päivitykset**
 | --- | --- |
 | Tietojoukkojen koot  |  Enimmäiskoko: Tietojoukon enimmäiskoko megatavuina näytetyllä ajanjaksolla. |
 | Tietojoukon poistolaskuri |  Yhteensä: kapasiteetista *häädettävien* tietojoukkojen kokonaismäärä. Kun kapasiteetti kohtaa muistipainetta, solmu häätää yhden tai useamman tietojoukon muistista. Passiiviset tietojoukot (joihin ei kyseisellä hetkellä kohdistu kysely- tai uudelleenlataustoimintoja) häädetään ensin. Seuraavaksi häätöjärjestyksessä sovelletaan ”viimeiseksi käytetyt ensin” -periaatetta.|
-| Tunneittain ladattujen tietojoukkojen määrä |  Muistiin ladattujen tietojoukkojen määrä vs. muistin käyttö gigatavuina tunnin osiin jaettuna paikallisessa ajassa ilmoitettuna. |
-| Tietojoukkojen häätö ja muistin käyttö tunneittain |  Tietojoukkojen häädöt vs. muistin käyttö gigatavuina tunnin osiin jaettuna paikallisessa ajassa ilmoitettuna. |
+| Tunneittain ladattujen tietojoukkojen määrä |  Muistiin ladattujen tietojoukkojen määrä vs. muistin käyttö gigatavuina tunnin osiin jaettuna UTC-ajassa ilmoitettuna. |
+| Tietojoukkojen häätö ja muistin käyttö tunneittain |  Tietojoukkojen häädöt vs. muistin käyttö gigatavuina tunnin osiin jaettuna UTC-ajassa ilmoitettuna. |
 | Kulutetun muistin prosenttiosuudet |  Tämä on muistissa olevien aktiivisten tietojoukkojen kokonaismuistista viemä prosenttiosuus. Erottelun aktiivisten ja kaikkien määritettyjen tietojoukkojen välillä voi poistaa. Tämä näytetään tunneittain seitsemältä edelliseltä päivältä. |
 |  |  |
 
@@ -205,8 +205,8 @@ Tietojoukot-sivulla on erilaisia *alueita*, joihin sisältyvät **Päivitykset**
 | Kokonaiskäyttö |  Katselukerrat yhteensä: Kuinka monta kertaa käyttäjät ovat katselleet raporttia.<br>  Rivimäärä: Raportin tietorivien määrä.<br>  Nouto (keskimääräinen): raportin tietojen noutamiseen keskimääräisesti kuluva aika millisekunteina. Pitkä kesto voi olla osoitus kyselyjen hitaasta suorittamisesta tai muista tietolähteeseen liittyvistä ongelmista. <br>  Käsittely (keskimääräinen): Raportin tietojen käsittelemiseen keskimääräisesti kuluva aika millisekunteina.<br> Hahmontaminen (keskimääräinen): Raportin hahmontamiseen selaimessa keskimääräisesti kuluva aika millisekunteina.<br>  Kokonaisaika: Raportin kaikkiin vaiheisiin kuluva aika millisekunteina. |
 | 5 parasta raporttia tietojen keskimääräisen noutoajan mukaan |  Viisi raporttia, joissa on pisin tietojen keskimääräinen noutoaika millisekunteina. |
 | 5 parasta raporttia keskimääräisen käsittelyajan mukaan |  Viisi raporttia, joissa on pisin raportin keskimääräinen käsittelyaika millisekunteina. |
-| Tulokset tunneittain |  Onnistumiset, epäonnistumiset ja muistin käyttö tunnin osiin jaettuna paikallisessa ajassa ilmoitettuna. |
-| Kestot tunneittain |  Tietojen nouto vs. käsittely- ja hahmonnusaika tunnin osiin jaettuna paikallisessa ajassa ilmoitettuna. |
+| Tulokset tunneittain |  Onnistumiset, epäonnistumiset ja muistin käyttö tunnin osiin jaettuna UTC-ajassa ilmoitettuna. |
+| Kestot tunneittain |  Tietojen nouto vs. käsittely- ja hahmonnusaika tunnin osiin jaettuna UTC-ajassa ilmoitettuna. |
 |  |  |
 
 ### <a name="dataflows"></a>Tietovuot
@@ -216,8 +216,8 @@ Tietojoukot-sivulla on erilaisia *alueita*, joihin sisältyvät **Päivitykset**
 | Päivitykset |  Yhteensä: Kunkin tietovuon päivitysten kokonaismäärä.<br>  Luotettavuus: Kullekin tietovuolle suoritettujen päivitysten prosenttiosuus.<br>  Keskimääräinen odotusaika: Keskimääräinen viive ajoitetun ajankohdan ja tietovuon päivityksen alkamisen välillä minuutteina.<br>  Enimmäisodotusaika: Tietovuon enimmäisodotusaika minuutteina.<br>  Keskimääräinen kesto: Tietovuon päivityksen keskimääräinen kesto minuutteina.<br>  Enimmäiskesto: Tietovuon pitkäkestoisimman päivityksen kesto minuutteina. |
 | 5 parasta tietovuota päivityksen keskimääräisen keston mukaan |  Viisi tietovuota, joilla on pisin päivityksen keskimääräinen kesto minuutteina. |
 | 5 parasta tietovuota keskimääräisen odotusajan mukaan |  Viisi tietovuota, joilla on pisin päivityksen keskimääräinen odotusaika minuutteina. |
-| Päivityksen keskimääräinen odotusaika tunneittain |  Tämä on päivityksen keskimääräinen odotusaika tunnin osiin jaettuna paikallisessa ajassa ilmoitettuna. Useat korkeat päivityksen odotusaikapiikit ovat merkki kuumana käyvästä kapasiteetista. |
-| Päivitysmäärä tunneittain ja muistin käyttö |  Onnistumiset, epäonnistumiset ja muistin käyttö tunnin osiin jaettuna paikallisessa ajassa ilmoitettuna. |
+| Päivityksen keskimääräinen odotusaika tunneittain |  Tämä on päivityksen keskimääräinen odotusaika tunnin osiin jaettuna UTC-ajassa ilmoitettuna. Useat korkeat päivityksen odotusaikapiikit ovat merkki kuumana käyvästä kapasiteetista. |
+| Päivitysmäärä tunneittain ja muistin käyttö |  Onnistumiset, epäonnistumiset ja muistin käyttö tunnin osiin jaettuna UTC-ajassa ilmoitettuna. |
 |  |  |
 
 ### <a name="resource-consumption"></a>Resurssien kulutus

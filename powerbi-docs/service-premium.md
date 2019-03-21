@@ -8,15 +8,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 02/28/2019
+ms.date: 03/12/2019
 ms.custom: seodec18
 LocalizationGroup: Premium
-ms.openlocfilehash: cb9280f47f1f2d28ce6fabda2dbc173fbdc837ac
-ms.sourcegitcommit: 364ffa1178cdfb0a20acffc0fd79922ebc892d72
+ms.openlocfilehash: f327cb95c10756f079778d20e62cba4871b95c02
+ms.sourcegitcommit: ac63b08a4085de35e1968fa90f2f49ea001b50c5
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57226131"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "57964935"
 ---
 # <a name="what-is-microsoft-power-bi-premium"></a>Mikä on Microsoft Power BI Premium?
 
@@ -66,15 +66,15 @@ Power BI Premium on saatavilla solmumäärityksinä eri näennäisydinkapasiteet
 
 * EM-solmuja voi käyttää vain upotetuissa käyttöönotoissa. EM-solmut eivät tue Premium-ominaisuuksia, kuten sovellusten jakamista käyttäjille, joilla ei ole Power BI Pro -käyttöoikeutta.
 
-| Kapasiteetin solmu | V-ytimiä yhteensä<br/>*(Tausta+edusta)*  | Taustan näennäisytimet <sup>[1](#fn1)</sup> | Edustan näennäisytimet <sup>[2](#fn2)</sup> | DirectQueryn/live-yhteyden rajoitukset | Samanaikaisten päivitysten enimmäismäärä |  Käytettävyys
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| EM1 (kuukausittain) |1 näennäisydin |0,5 näennäisydintä, 2,5 Gt RAM |0,5 näennäisydintä |3,75 sekunnissa |  1 | Käytettävissä |
-| EM2 (kuukausittain) |2 näennäisydintä |1 näennäisydin, 5 Gt RAM |1 näennäisydin |7,5 sekunnissa |  2 | Käytettävissä |
-| EM3 (kuukausittain) |4 näennäisydintä |2 näennäisydintä, 10 Gt RAM |2 näennäisydintä | | 3 |  Käytettävissä |
-| P1 |8 näennäisydintä |4 näennäisydintä, 25 Gt RAM |4 näennäisydintä |30 sekunnissa | 6 | Käytettävissä (kuukausittainen vaihtoehto myös käytettävissä) |
-| P2 |16 näennäisydintä |8 näennäisydintä, 50 Gt RAM |8 näennäisydintä |60 sekunnissa | 12 | Käytettävissä |
-| P3 |32 näennäisydintä |16 näennäisydintä, 100 Gt RAM |16 näennäisydintä |120 sekunnissa | 24 | Käytettävissä |
-| | | | | | | |
+| Kapasiteetin solmu | V-ytimiä yhteensä<br/>*(Tausta+edusta)*  | Taustan näennäisytimet <sup>[1](#fn1)</sup> | Edustan näennäisytimet <sup>[2](#fn2)</sup> | DirectQueryn/live-yhteyden rajoitukset | Samanaikaisten päivitysten enimmäismäärä |
+| --- | --- | --- | --- | --- | --- |
+| EM1 (kuukausittain) |1 näennäisydin |0,5 näennäisydintä, 2,5 Gt RAM |0,5 näennäisydintä |3,75 sekunnissa |  1 |
+| EM2 (kuukausittain) |2 näennäisydintä |1 näennäisydin, 5 Gt RAM |1 näennäisydin |7,5 sekunnissa |  2 |
+| EM3 (kuukausittain) |4 näennäisydintä |2 näennäisydintä, 10 Gt RAM |2 näennäisydintä | 15 | 3 |
+| P1 |8 näennäisydintä |4 näennäisydintä, 25 Gt RAM |4 näennäisydintä |30 sekunnissa | 6 |
+| P2 |16 näennäisydintä |8 näennäisydintä, 50 Gt RAM |8 näennäisydintä |60 sekunnissa | 12 |
+| P3 |32 näennäisydintä |16 näennäisydintä, 100 Gt RAM |16 näennäisydintä |120 sekunnissa | 24 |
+| | | | | | |
 
 <a name="fn1">1</a>: Edustan näennäisytimet vastaavat verkkopalvelusta. Tähän sisältyvät esimerkiksi raporttinäkymän ja raportin tiedostohallinta, käyttöoikeuksien hallinta, ajoitus, ohjelmointirajapinnat, lataukset ja yleisesti ottaen kaikki, mikä liittyy käyttökokemukseen. 
 
@@ -82,32 +82,7 @@ Power BI Premium on saatavilla solmumäärityksinä eri näennäisydinkapasiteet
 
 ## <a name="workloads-in-premium-capacity"></a>Kuormitukset Premium-kapasiteetissa
 
-Oletusarvoisesti **Power BI Premiumin** ja **Power BI Embeddedin** kapasiteetit tukevat vain kuormitusta, joka liittyy Power BI -kyselyiden suorittamiseen pilvipalvelussa. Premium tukee myös muita kuormituksia **AI**:n, **tietovoiden** ja **sivutettujen raporttien** käsittelyyn. Voit ottaa nämä kuormitukset käyttöön Power BI -hallintaportaalin tai Power BI REST -ohjelmointirajapinnan kautta. Voit määrittää enimmäismuistin jokaiselle kuormitukselle. Näin voit hallita sitä, miten eri kuormitukset vaikuttavat toistensa toimintaan. Lisätietoja on artikkelissa [Kuormitusten määrittäminen](service-admin-premium-workloads.md).
-
-### <a name="default-memory-settings"></a>Oletusmuistiasetukset
-
-Seuraava taulukko näyttää muistin oletus- ja vähimmäisarvot, jotka perustuvat käytettävissä oleviin erilaisiin [kapasiteettisolmuihin](#premium-capacity-nodes). Muistin kohdistetaan tietovoille dynaamisesti, mutta sivutetuille raporteille staattisesti. Jos haluat lisätietoja, katso seuraavassa osio: [Huomioitavaa sivutetuissa raporteissa](#considerations-for-paginated-reports).
-
-#### <a name="microsoft-office-skus-for-software-as-a-service-saas-scenarios"></a>Microsoft Office -varastointiyksiköt Software as a Service (SaaS) -skenaarioille
-
-|                     | EM3                      | P1                       | P2                      | P3                       |
-|---------------------|--------------------------|--------------------------|-------------------------|--------------------------|
-| Sivutetut raportit | – | Oletus 20 %, vähintään 10 % | Oletus 20 %, vähintään 5 % | Oletus 20 %, vähintään 2,5 % |
-| Tietovuot | Oletus 20 %, vähintään 8 %  | Oletus 20 %, vähintään 4 %  | Oletus 20 %, vähintään 2 % | Oletus 20 %, vähintään 1 %  |
-| | | | | |
-
-#### <a name="microsoft-azure-skus-for-platform-as-a-service-paas-scenarios"></a>Microsoft Azure -varastointiyksiköt Platform as a Service (PaaS) -skenaarioille
-
-|                  | A1                       | A2                       | A3                      | A4                       | A5                      | A6                        |
-|-------------------|--------------------------|--------------------------|-------------------------|--------------------------|-------------------------|---------------------------|
-| Sivutetut raportit | –                      | –                      | –                     | Oletus 20 %, vähintään 10 % | Oletus 20 %, vähintään 5 % | Oletus 20 %, vähintään 2,5 % |
-| Tietovuot         | Oletus 27 %, vähintään 27 % | Oletus 20 %, vähintään 16 % | Oletus 20 %, vähintään 8 % | Oletus 20 %, vähintään 4 %  | Oletus 20 %, vähintään 2 % | Oletus 20 %, vähintään 1 %   |
-
-### <a name="considerations-for-paginated-reports"></a>Huomioitavaa sivutetuissa raporteissa
-
-Jos käytät sivutettuja raportteja, muista, että niiden avulla voit suorittaa omaa koodia raporttia hahmontaessasi. Näin voit esimerkiksi sallia tekstin värin dynaamisen muuttamisen sisällön perusteella. Power BI Premium -kapasiteetin turvaamiseksi sivutetut raportit suoritetaan kapasiteetin sisäisessä erillisessä tilassa. Tälle tilalle osoitetaan kaikki määrittämäsi muisti riippumatta siitä, onko kuormitus aktiivinen. Jos käytät Power BI -raportteja tai tietovoita samassa kapasiteetissa, varmista, että olet määrittänyt sivutetuille raporteille riittävän vähän muistia, jotta muiden kuormitusten nopeus ei kärsi.
-
-Sivutetut raportit -kuormitus saattaa lakata toimimasta joissain harvinaisissa tapauksissa. Näissä tapauksissa kuormitus näyttää virhetilan hallintaportaalissa ja raportin hahmontaminen aikakatkaistaan käyttäjiltä. Voit ratkaista ongelman poistamalla kuormituksen käytöstä ja ottamalla sen uudelleen käyttöön.
+Oletusarvoisesti Power BI Premiumin ja Power BI Embeddedin kapasiteetit tukevat vain kuormitusta, joka liittyy Power BI -kyselyjen suorittamiseen pilvipalvelussa. Premium tukee myös muita kuormituksia **AI**:n, **tietovoiden** ja **sivutettujen raporttien** käsittelyyn. Ennen kuin nämä työnkulut voivat käyttää kapasiteettisi resursseja, ne on otettava käyttöön Power BI -hallintaportaalissa tai Power BI REST -ohjelmointirajapinnan kautta. Kullakin kuormituksella on oletusasetukset sen suhteen, paljonko muistia kukin kuormitus voi enintään kuluttaa. Voit kuitenkin määrittää erilaisia muistin kulutusasetuksia ja määrittää niiden avulla, miten kuormitukset vaikuttavat toisiinsa ja kuluttavat kapasiteetin resursseja. Lisätietoja on artikkelissa [Kuormitusten määrittäminen](service-admin-premium-workloads.md).
 
 ## <a name="power-bi-report-server"></a>Power BI -raporttipalvelin
 

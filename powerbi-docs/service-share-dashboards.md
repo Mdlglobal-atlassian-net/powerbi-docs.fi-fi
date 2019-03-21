@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 12/10/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: f96e5235aba6f90e6f80286ebfb409004ccd5052
-ms.sourcegitcommit: 378265939126fd7c96cb9334dac587fc80291e97
+ms.openlocfilehash: 61aedc6c6bce52b172a92b938f9a2f278c841d6f
+ms.sourcegitcommit: ac63b08a4085de35e1968fa90f2f49ea001b50c5
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57580239"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "57964751"
 ---
 # <a name="share-your-power-bi-dashboards-and-reports-with-coworkers-and-others"></a>Power BI -koontinäyttöjen ja -raporttien jakaminen työtovereiden ja muiden kanssa
 *Jakaminen* on kätevä keino myöntää parille henkilölle käyttöoikeus luomiisi koontinäyttöihin ja raportteihin. Power BI tarjoaa myös [useita muita tapoja tehdä yhteistyötä ja jakaa koontinäyttöjä ja raportteja](service-how-to-collaborate-distribute-dashboards-reports.md).
@@ -38,12 +38,18 @@ Katso, miten Amanda jakaa koontinäyttönsä työtovereiden kanssa yrityksensä 
 
 1. Valitse koontinäyttöjen tai raporttien luettelossa tai avatussa koontinäytössä tai raportissa **Jaa** ![Jaa-kuvake](media/service-share-dashboards/power-bi-share-icon.png).
 
-1. Kirjoita yläreunan ruutuun henkilöiden, jakeluryhmien tai käyttöoikeusryhmien koko sähköpostiosoitteet. Et voi jakaa sisältöä dynaamisten jakeluluetteloiden kanssa. 
+2. Kirjoita yläreunan ruutuun henkilöiden, jakeluryhmien tai käyttöoikeusryhmien koko sähköpostiosoitteet. Et voi jakaa sisältöä dynaamisten jakeluluetteloiden kanssa. 
    
    Voit jakaa sisältöä organisaatiosi ulkopuolisten henkilöiden kanssa, mutta näyttöön tulee varoitus.
    
    ![Varoitus jakamisesta ulkoisesti](media/service-share-dashboards/power-bi-share-dialog-warning.png) 
  
+   >[!NOTE]
+   >Syöteruutu tukee enintään 100 käyttäjää tai ryhmää. Jos haluat jakaa useille käyttäjille, voit jakaa useita kertoja tai jakaa käyttäjäryhmän kanssa.
+   > 
+   > 
+
+
 3. Voit lisätä halutessasi viestin, mutta se on valinnaista.
 4. Jotta työtoverisi voivat jakaa sisältöäsi muiden kanssa, valitse **Salli vastaanottajien jakaa koontinäyttösi/raporttisi**.
    
@@ -119,6 +125,7 @@ Kun jaat koontinäyttöjä ja raportteja, ota huomioon seuraavat seikat:
 * Työtoverit, joilla on sama sähköpostin toimialue kuin sinulla, ja työtoverit, joiden toimialue on erilainen, mutta joka on rekisteröity samassa vuokraajassa, voivat jakaa koontinäytön muiden kanssa. Oletetaan esimerkiksi, että toimialueet contoso.com ja contoso2.com on rekisteröity samassa vuokraajassa. Jos sähköpostiosoitteesi on konrads@contoso.com, sekä ravali@contoso.com että gustav@contoso2.com voivat jakaa, jos olet antanut heille oikeuden jakamiseen.
 * Jos työtovereillasi on jo käyttöoikeus tiettyyn koontinäyttöön tai raporttiin, voit lähettää suoran linkin kopioimalla URL-osoitteen, kun olet koontinäytössä tai raportissa. Esimerkiksi: `https://powerbi.com/dashboards/g12466b5-a452-4e55-8634-xxxxxxxxxxxx`
 * Samoin jos työtovereillasi on jo käyttöoikeus tiettyyn koontinäyttöön, voit [lähettää suoran linkin pohjana olevaan raporttiin](service-share-reports.md). 
+* Yhdellä jakamistoiminnolla voit jakaa enintään 100 käyttäjälle tai ryhmälle. Voit kuitenkin antaa yli 500 käyttäjälle kohteen käyttöoikeuden. Voit tehdä tämän joko jakamalla useita kertoja, niin että määrität käyttäjät yksitellen, tai jakamalla käyttäjäryhmälle, joka sisältää kaikki käyttäjät.
 
 ## <a name="troubleshoot-sharing"></a>Jakamisen vianmääritys
 

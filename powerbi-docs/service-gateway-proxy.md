@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/21/2017
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 7264ef7b1057f64d6eb51ccc77cbec2a74be6d0e
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 2122ce9bd6eb850a51a06188ca1c10faf78f4bb1
+ms.sourcegitcommit: ac63b08a4085de35e1968fa90f2f49ea001b50c5
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54283985"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "57964659"
 ---
 # <a name="configuring-proxy-settings-for-the-on-premises-data-gateway"></a>Paikallisen tietoyhdyskäytävän välityspalvelinasetusten määrittäminen
 Työympäristö saattaa edellyttää, että käytät Internetiä välityspalvelimen kautta. Se voi estää paikalliselta tietoyhdyskäytävältä yhteyden palveluun.
@@ -46,24 +46,41 @@ Toinen on tarkoitettu Windows-palvelulle, joka on vuorovaikutuksessa Power BI -p
 ## <a name="configuring-proxy-settings"></a>Välityspalvelinasetusten määrittäminen
 Välityspalvelimen oletusmääritys on seuraava.
 
-    <system.net>
-        <defaultProxy useDefaultCredentials="true" />
-    </system.net>
+```
+<system.net>
+    <defaultProxy useDefaultCredentials="true" />
+</system.net>
+```
+
 
 Oletusmääritys toimii Windows-todennuksen kanssa. Jos välityspalvelin käyttää toista todennusmuotoa, asetuksia on muutettava. Jos et ole varma, ota yhteyttä verkonvalvojaasi. Välityspalvelimen perustodentamista ei suositella, sillä sen käyttö saattaa aiheuttaa välityspalvelimen todennusvirheitä, jotka johtavat siihen, ettei yhdyskäytävää ole määritetty oikein. Käytä välityspalvelimessa vahvempaa todentamista ratkaistaksesi ongelman.
 
 Oletustunnistetietojen käyttämisen lisäksi voit lisätä <proxy> elementin määrittämään välityspalvelimen asetuksia tarkemmin. Voit esimerkiksi määrittää, että paikallisen tietoyhdyskäytävän tulee aina käyttää välityspalvelinta, myös paikallisia resursseja käytettäessä, määrittämällä bypassonlocal-parametrin arvoksi epätosi. Tämä auttaa vianmääritystilanteissa, jos haluat seurata kaikkia välityspalvelimen lokitiedostojen https-pyyntöjä, jotka ovat peräisin paikallisesta tietoyhdyskäytävästä. Seuraavat malliasetukset määrittävät, että kaikki pyynnöt tulee siirtää tietylle välityspalvelimelle, jonka IP-osoite on 192.168.1.10.
 
-    <system.net>
-        <defaultProxy useDefaultCredentials="true">
-            <proxy  
-                autoDetect="false"  
-                proxyaddress="http://192.168.1.10:3128"  
-                bypassonlocal="false"  
-                usesystemdefault="true"
-            />  
-        </defaultProxy>
-    </system.net>
+```
+<system.net>
+    <defaultProxy useDefaultCredentials="true">
+        <proxy  
+            autoDetect="false"  
+            proxyaddress="http://192.168.1.10:3128"  
+            bypassonlocal="false"  
+            usesystemdefault="true"
+        />  
+    </defaultProxy>
+</system.net>
+```
+
+Päivitä lisäksi seuraava tiedosto, jotta yhdyskäytävä voi muodostaa yhteyden pilvipalvelutietolähteisiin välityspalvelimen kautta: *C:\Program Files\On-premises data gateway\Microsoft.Mashup.Container.NetFX45.exe*. Laajenna tiedoston `<configurations>`-osiota niin, että se sisältää alla olevan sisällön, ja päivitä `proxyaddress`-määrite välityspalvelimen tiedoilla. Seuraava esimerkki reitittää kaikki pilvipalvelun pyynnöt tietyn välityspalvelimen kautta, jonka IP-osoite on 192.168.1.10 kautta.
+
+```
+<configuration>
+<system.net>
+    <defaultProxy useDefaultCredentials="true" enabled="true">
+    <proxy proxyaddress=""http://192.168.1.10:3128" bypassonlocal="true" />
+    </defaultProxy>
+</system.net>
+</configuration>
+```
 
 Lisätietoja välityspalvelinelementtien määrittämisestä .NET-määritystiedostoja varten on artikkelissa [Oletusarvoinen välityspalvelinelementti (Verkkoasetukset)](https://msdn.microsoft.com/library/kd3cf2ex.aspx).
 

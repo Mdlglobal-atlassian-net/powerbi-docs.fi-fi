@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 02/05/2019
-ms.openlocfilehash: da5394c0d1e63619229542b914ae7fd4deed7447
-ms.sourcegitcommit: 80961ace38ff9dac6699f81fcee0f7d88a51edf4
+ms.openlocfilehash: 9663c7eb6921718ac4b9690ddc50d78e59c6db3b
+ms.sourcegitcommit: 8fda7843a9f0e8193ced4a7a0e5c2dc5386059a6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56223739"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58174886"
 ---
 # <a name="frequently-asked-questions-about-power-bi-embedded"></a>Usein kysyttyjä kysymyksiä – Power BI Embedded
 
@@ -137,7 +137,7 @@ Kyllä, voit luoda ja hallita PBIE-resursseja Powershellin cmdlet-komentojen ja 
 
 ### <a name="what-is-the-pbi-embedded-dedicated-capacity-role-in-a-pbi-embedded-solution"></a>Mikä on PBI Embeddedin varatun kapasiteetin rooli PBI Embedded -ratkaisussa?
 
-Jos haluat [viedä ratkaisusi hyötykäyttöön](https://docs.microsoft.com/power-bi/developer/embedding-content#step-3-promote-your-solution-to-production), tarvitset Power BI -sisältöä (sovellustyötila, jota käytät sovelluksessa ja joka määritetään Power BI Embedded -kapasiteetille eli A SKU:lle).
+Jos haluat [viedä ratkaisusi hyötykäyttöön](embed-sample-for-customers.md#move-to-production), tarvitset Power BI -sisältöä (sovellustyötila), jota käytät sovelluksessa ja joka määritetään Power BI Embedded -kapasiteetille eli A SKU:lle.
 
 ### <a name="what-are-the-azure-regions-pbi-embedded-is-available"></a>Millä Azure-alueilla PBI Embedded on saatavilla?
 
@@ -167,7 +167,7 @@ Voit hankkia AAD-tunnuksen jollain [Azure Active Directory -todennuskirjastolla]
 
 ### <a name="my-application-already-uses-aad-for-user-authentication-how-can-we-use-this-identity-when-authenticating-to-power-bi-in-a-user-owns-data-scenario"></a>Oma sovellus käyttää jo AAD:tä käyttäjien todentamiseen. Miten voimme käyttää tätä identiteettiä, kun todennamme Power BI: hin ”Käyttäjä omistaa tiedot” -skenaariossa?
 
-Kyse on OAuth-vakiotodennuksesta toisen puolesta suoritettavassa työnkulussa (https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-scenarios#web-application-to-web-api) sovellus on määritettävä siten, että se edellyttää käyttöoikeuksia PowerBI -palveluun (vaadittujen soveltamisalueiden kanssa). Kun olet antanut käyttäjätunnuksen sovellukseen, voit kutsua ADAL API AcquireTokenAsyncin käyttämällä käyttäjätunnusta ja määrittämällä Power BI -resurssin URL-osoitteen resurssin tunnukseksi. Katso alla olevaa koodikatkelmaa, joka näyttää, miten tämä tehdään:
+Kyse on OAuth-vakiotodennuksesta toisten puolesta suoritettavassa työnkulussa (<https://docs.microsoft.com/azure/active-directory/develop/web-api>). Sovellus on määritettävä siten, että se edellyttää käyttöoikeuksia Power BI -palveluun (vaadittujen soveltamisalueiden kanssa). Kun olet antanut käyttäjätunnuksen sovellukseen, voit kutsua ADAL API AcquireTokenAsyncin käyttämällä käyttäjätunnusta ja määrittämällä Power BI -resurssin URL-osoitteen resurssin tunnukseksi. Alla olevassa koodikatkelmassa näytetään, miten tämä tehdään:
 
 ```csharp
 var context = new AD.AuthenticationContext(authorityUrl);
@@ -344,7 +344,7 @@ Jos käytät **organisaatiolle tarkoitettua upotusta**, tallenna ja pura *PowerB
 
 ### <a name="how-can-i-edit-my-registered-application"></a>Miten voi muokata rekisteröityä sovellusta?
 
-Voit oppia muokkaamaan AAD-rekisteröityjä sovelluksia [täällä](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications#updating-an-application).
+Jos haluat oppia muokkaamaan Azure AD -rekisteröityjä sovelluksia, katso [Pikaopas: Sovelluksen päivittäminen Azure Active Directoryssa](https://docs.microsoft.com/azure/active-directory/develop/quickstart-v1-update-azure-ad-app).
 
 ### <a name="how-can-i-edit-my-power-bi-user-profile-or-data"></a>Miten voit muokata Power BI käyttäjäprofiilia tai tietoja?
 
