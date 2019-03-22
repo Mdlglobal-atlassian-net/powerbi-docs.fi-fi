@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 12/06/2018
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: a8a7aa8ed33e5c1baa7319ea65a67b6338c41ca2
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: fc403220ae45fda879802fe480853a3c94fd53c0
+ms.sourcegitcommit: 69c31c15020e2707f961697eeb05cb550c9968f6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54277798"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "58220950"
 ---
 # <a name="using-computed-entities-on-power-bi-premium-preview"></a>Laskettujen entiteettien käyttäminen Power BI Premiumissa (esikatselu)
 
@@ -79,7 +79,9 @@ On tärkeää huomioida, että jos poistat työtilan Power BI Premium -kapasitee
 
 Kun käsittelet tietovoita, jotka on luotu erityisesti organisaation Azure Data Lake Storage Gen2 -tilillä, linkitetyt entiteetit ja lasketut entiteetit toimivat oikein vain, kun entiteetit sijaitsevat samalla tallennustilillä. Katso lisätietoja artikkelista [Yhdistä Azure Data Lake Storage Gen2 tietovuotallennusta varten (esikatselu)](service-dataflows-connect-azure-data-lake-storage-gen2.md).
 
-Lisäksi linkitetyt entiteetit eivät ole käytettävissä CDM-kansioista luoduille tietovoille. Katso [Lisää CDM-kansio Power BI:hin tietovuona (esikatselu)](service-dataflows-add-cdm-folder.md).
+Linkitetyt entiteetit eivät ole saatavilla tietovoille, jotka on luotu Common Data Model (CDM) -kansioista. Katso lisätietoja artikkelista [Lisää CDM-kansio Power BI:hin tietovuona (esikatselu)](service-dataflows-add-cdm-folder.md).
+
+Kun suoritat laskutoimituksia tiedoista, joihin on yhdistetty paikallisia tietoja ja pilvipalvelutietoja, paras keino on luoda uusi entiteetti tällaisten laskutoimitusten suorittamiseksi. Saat näin paremman kokemuksen kuin käyttämällä laskutoimituksiin olemassa olevaa entiteettiä, joka kyselee myös tietoja kummastakin lähteestä ja suorittaa in-lake-muuntoja.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
