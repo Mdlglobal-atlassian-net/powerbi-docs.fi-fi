@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/01/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: f1244535259de2a5b5726d295a64229a0f92f02b
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 635a64c08056e82539d33904d4cce60d4cfc00cd
+ms.sourcegitcommit: 20ae9e9ffab6328f575833be691073de2061a64d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54296441"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58382934"
 ---
 # <a name="unable-to-add-power-bi-to-office-365-partner-subscription"></a>Power BI:tä ei voi lisätä Office 365 -kumppanitilaukseen
 
@@ -33,9 +33,9 @@ Jos haluat ostaa Power BI Pro- tai Power BI Premium -tilauksen, tee yhteistyöt�
 
 ## <a name="purchase-from-microsoft-or-another-channel"></a>Ostaminen Microsoftilta tai toisesta kanavasta
 
-Kumppanisuhteesta riippuen saatat voida ostaa Power BI:n suoraan Microsoftilta tai toiselta kumppanilta. Voit tarkistaa, voitko lisätä Power BI -tilauksia Office 365 -hallintaportaalissa (edellyttää Yleinen järjestelmänvalvoja- tai Laskutusjärjestelmänvalvoja-roolin jäsenyyttä).
+Kumppanisuhteesta riippuen saatat voida ostaa Power BI:n suoraan Microsoftilta tai toiselta kumppanilta. Voit tarkistaa, voitko lisätä Power BI -tilauksia Microsoft 365 -hallintakeskuksessa (edellyttää Yleinen järjestelmänvalvoja- tai Laskutusjärjestelmänvalvoja-roolin jäsenyyttä).
 
-1. Siirry [Office 365 -hallintaportaaliin](https://admin.microsoft.com/AdminPortal/Home#/homepage).
+1. Siirry [Microsoft 365 -hallintakeskukseen](https://admin.microsoft.com/AdminPortal/Home#/homepage).
 
 1. Avaa vasemmasta valikosta **Laskutus**:
 
