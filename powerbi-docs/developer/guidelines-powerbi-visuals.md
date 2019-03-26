@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 03/10/2019
-ms.openlocfilehash: 02ce5146a154583d784de8030a0b0ec84740fcb3
-ms.sourcegitcommit: 8fda7843a9f0e8193ced4a7a0e5c2dc5386059a6
+ms.openlocfilehash: cf9a613e82b4f5b7ce9cc67f5b920760d01ccbf7
+ms.sourcegitcommit: 39bc75597b99bc9e8d0a444c38eb02452520e22b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58175463"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58430296"
 ---
 # <a name="guidelines-for-power-bi-visuals"></a>Power BI -visualisointien ohjeet
 
@@ -29,7 +29,6 @@ Viime aikoihin asti Marketplace (AppSource) hyväksyi ainoastaan maksuttomia Pow
 
 >[!IMPORTANT]  
 > Jos päivität visualisoinnin ilmaisesta ”Lisäosto saattaa olla tarpeen” -tasolle, käyttäjien on saatava sama ilmainen toimintotaso kuin ennen päivitystä. Voit lisätä valinnaisia maksullisia lisäominaisuuksia aiempien maksuttomien ominaisuuksien lisäksi. Suosittelemme lähettämään sovelluskohtaisten tuotteiden visualisoinnit lisäominaisuuksien kanssa uusina visualisointeina sen sijaan, että päivittäisit aiemmat, maksuttomat visualisoinnit.
-
 
 ## <a name="what-changed-in-the-submission-process"></a>Miten lähetysprosessi on muuttunut?
 
@@ -51,17 +50,17 @@ Tässä osiossa annetaan ohjeet visualisoinnin logojen ja logotyyppien lisäämi
 > [!IMPORTANT]
 > Logot sallitaan **ainoastaan muokkaustilassa**. Logoja **ei voi** näyttää tarkastelutilassa.
 
-![Määritelmät](media/office-store-in-app-purchase-visual-guidelines/definitions.png)
+![Määritelmät](media/guidelines-powerbi-visuals/definitions.png)
 
-![Huomioitavia seikkoja](media/office-store-in-app-purchase-visual-guidelines/things-to-keep-in-mind.png)
+![Huomioitavia seikkoja](media/guidelines-powerbi-visuals/things-to-keep-in-mind.png)
 
-![Mitä kannattaa välttää](media/office-store-in-app-purchase-visual-guidelines/things-to-avoid.png)
+![Mitä kannattaa välttää](media/guidelines-powerbi-visuals/things-to-avoid.png)
 
-![Koko ja muotoilu](media/office-store-in-app-purchase-visual-guidelines/size-and-format.png)
+![Koko ja muotoilu](media/guidelines-powerbi-visuals/size-and-format.png)
 
-![Reunukset ja koko](media/office-store-in-app-purchase-visual-guidelines/margins-and-sizes.png)
+![Reunukset ja koko](media/guidelines-powerbi-visuals/margins-and-sizes.png)
 
-![Muokkaustila](media/office-store-in-app-purchase-visual-guidelines/logos-in-edit-mode.png)
+![Muokkaustila](media/guidelines-powerbi-visuals/logos-in-edit-mode.png)
 
 ## <a name="best-practices"></a>Parhaat käytännöt
 

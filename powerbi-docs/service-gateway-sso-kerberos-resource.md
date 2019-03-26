@@ -10,12 +10,12 @@ ms.subservice: powerbi-gateways
 ms.topic: conceptual
 ms.date: 01/08/2018
 LocalizationGroup: Gateways
-ms.openlocfilehash: e1d8d240e4fd5bc05fc015f1c12971a8646370dd
-ms.sourcegitcommit: 364ffa1178cdfb0a20acffc0fd79922ebc892d72
+ms.openlocfilehash: 6da5d89ae1ad3b98a879e4d99a10aa69224e1c46
+ms.sourcegitcommit: 20ae9e9ffab6328f575833be691073de2061a64d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57226108"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58383356"
 ---
 # <a name="use-resource-based-kerberos-for-single-sign-on-sso-from-power-bi-to-on-premises-data-sources"></a>Resurssipohjaisen Kerberoksen käyttäminen kertakirjautumiseen (SSO) Power BI:stä paikallisiin tietolähteisiin
 
@@ -23,7 +23,7 @@ Käytä [resurssipohjaista rajoitettua Kerberos-delegointia](/windows-server/sec
 
 ## <a name="preparing-for-resource-based-kerberos-constrained-delegation"></a>Resurssipohjaisen rajoitetun Kerberos-delegoinnin valmisteleminen
 
-Useita kohteita on määritettävä, jotta rajoitettu Kerberos-delegointi toimisi oikein, muun muassa _palvelun päänimet_ (SPN) ja palvelutilien delegointiasetukset.
+Useita kohteita on määritettävä, jotta rajoitettu Kerberos-delegointi toimisi oikein, muun muassa _palvelun päänimet_ (SPN) ja palvelutilien delegointiasetukset. 
 
 ### <a name="prerequisite-1-operating-system-requirements"></a>Edellytys 1: Käyttöjärjestelmävaatimukset
 
@@ -105,8 +105,8 @@ Käytä näitä esimerkkinimiä ja asetuksia varten seuraavia määritysvaiheita
 1. Avaa komentokehote ja suorita seuraavat komennot toimialueen ohjauskoneessa **PBIEgwTestBack-end**-toimialueelle taustapalvelutilin msDS-AllowedToActOnBehalfOfOtherIdentity-määritteen päivittämiseksi:
 
     ```powershell
-    $c=get-adgroupResourceDelGroup
-    set-aduser **SQLService** -principalsAllowedToDelegateToAccount$c
+    $c = Get-ADGroup ResourceDelGroup
+    Set-ADUser SQLService -PrincipalsAllowedToDelegateToAccount $c
     ```
 
 1. Voit tarkistaa, että päivitys näkyy taustapalvelutilin ominaisuuksien ”Määrite-editori”-välilehdessä **Active Directory -käyttäjät ja -tietokoneet** -laajennuksessa.
