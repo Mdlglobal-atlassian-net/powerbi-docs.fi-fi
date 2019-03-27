@@ -2,20 +2,20 @@
 title: Power BI:n suojausraportti
 description: Tekninen raportti, jossa käsitellään ja kuvataan Power BI:n tietoturva-arkkitehtuuria ja tietoturvan toteutusta
 author: davidiseminger
+ms.author: davidi
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 03/07/2019
-ms.author: davidi
 LocalizationGroup: Conceptual
-ms.openlocfilehash: 957c6d5fe8797f1b03eaab3a54846e7110b302fb
-ms.sourcegitcommit: 378265939126fd7c96cb9334dac587fc80291e97
+ms.openlocfilehash: 8a86d17252bea3dbdb6ad30de35667cfbd844c8b
+ms.sourcegitcommit: 39bc75597b99bc9e8d0a444c38eb02452520e22b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57580285"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58430388"
 ---
 # <a name="power-bi-security-whitepaper"></a>Power BI:n suojausraportti
 
@@ -125,7 +125,7 @@ Tällä hetkellä Power BI -palvelu on käytettävissä tietyillä palvelinkesku
 
 * [Power BI -palvelinkeskukset](https://www.microsoft.com/TrustCenter/CloudServices/business-application-platform/data-location)
 
-Microsoft tarjoaa palvelinkeskuksia myös maakohtaisesti. Lisätietoja Power BI-palvelun käytettävyydestä maakohtaisissa pilvipalveluissa on artikkelissa [Power BI:n maakohtaiset pilvipalvelut](https://powerbi.microsoft.com/clouds/).
+Microsoft tarjoaa palvelinkeskuksia myös maakohtaisesti. Lisätietoja Power BI-palvelun käytettävyydestä kansallisissa pilvipalveluissa on artikkelissa [Power BI:n kansalliset pilvipalvelut](https://powerbi.microsoft.com/clouds/).
 
 Lisätietoja siitä, mihin tietosi tallennetaan ja miten niitä käytetään, löydät [Microsoft Trust Centeristä](https://www.microsoft.com/TrustCenter/Transparency/default.aspx#_You_know_where). Sitoumukset levossa säilytettävien asiakastietojen sijainnista määritetään [Microsoftin verkkopalvelujen ehdoissa](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=31) kohdassa **Tietojenkäsittelyehdot**.
 
@@ -151,11 +151,9 @@ Power BI -palvelun käyttäjän todentamisjakso tapahtuu seuraavissa vaiheissa k
 
 3. WFE-klusteri tarkistaa **Azure Active Directory** (**AAD**) -palvelulta käyttäjän Power BI -palvelun tilauksen todennuksen ja hankkii palvelulta AAD-suojaustunnuksen. Kun AAD palauttaa käyttäjän onnistuneen todennuksen ja palauttaa AAD-suojaustunnuksen, WFE-klusteri konsultoi **Power BI *** yleistä palvelua**, joka ylläpitää vuokraajaluetteloa sekä vuokraajien Power BI -Back-End-klusterien sijainteja, ja määrittää, mikä Power BI -palvelun klusteri sisältää käyttäjän vuokraajan. WFE-klusteri ohjaa sitten käyttäjän Power BI -klusteriin, jossa sen vuokraaja sijaitsee, ja palauttaa käyttäjän selaimeen kokoelman kohteita:
 
-
       - **AAD-suojaustunnuksen**
       - **istunnon tiedot**
       - sen **Back-End**-klusterin verkko-osoitteen, jonka kanssa käyttäjä voi viestiä ja jota käyttäjä voi käsitellä
-
 
 1. Käyttäjän selain muodostaa sitten yhteyden määritettyyn Azure-sisältöverkkoon (tai joidenkin tiedostojen yhteydessä WFE:hen) ja lataa kokoelman määritettyjä yleisiä tiedostoja, joiden avulla selain voi olla vuorovaikutuksessa Power BI -palvelun kanssa. Selaimen sivu sisältää AAD-tunnuksen, istunnon tiedot, istuntoon liittyvän Back-End-klusterin sijainnin sekä joukon tiedostoja, jotka on ladattu Azure CDN- ja WFE- klusterista Power BI -palvelun selainistunnon ajaksi.
 
@@ -182,9 +180,6 @@ Seuraava taulukko kuvaa Power BI -tietoja käytettävän kyselyn tyypin mukaan. 
 |Rivitiedot     |    X     |         |         |
 |Visualisointitietojen tallentaminen välimuistiin     |    X     |     X    |    X     |
 
-
-
-
 DirectQuery-kyselyiden ja muiden kyselyiden välinen ero määrittää sen, miten Power BI -palvelu käsittelee levossa säilytettäviä tietoja ja onko itse kysely salattu. Seuraavissa osissa kuvataan levossa säilytettäviä tietoja ja siirrettäviä tietoja sekä kuvataan salaus, sijainti ja tietojen käsittelyn prosessi.
 
 ### <a name="data-at-rest"></a>Levossa säilytettävät tiedot
@@ -210,9 +205,9 @@ Pilvipohjaisten tietolähteiden osalta Tietojen siirron rooli salaa salausavaime
 #### <a name="datasets"></a>Tietojoukot
 
 1. Metatiedot (taulukot, sarakkeet, mittayksiköt, laskutoimitukset, yhteysmerkkijonot jne.)
-      
+
     a. Paikallisen Analysis Services -palvelun osalta mitään ei tallenneta palveluun, lukuun ottamatta viittausta tietokantaan, joka tallennetaan salattuna Azuren SQL-tietokantaan.
- 
+
     b. Kaikki muut PML:n, DirectQueryn ja Push-tietojen metatiedot salataan ja tallennetaan Azure Blob -säilöön.
 
 1. Alkuperäisten tietolähteiden tunnistetiedot
@@ -255,7 +250,7 @@ Power BI toteuttaa tietojen eheyden valvonnan seuraavilla tavoilla:
    a. Raportit voivat olla joko Office 365:n Excel-raportteja tai Power BI -raportteja. Raportin lajin mukaan metatietoihin pätevät seuraavat asiat:
 
        a. Excel Report metadata is stored encrypted in SQL Azure. Metadata is also stored in Office 365.
-       
+
        b. Power BI reports are stored encrypted in Azure SQL database.
 
 2. Staattiset tiedot
@@ -358,7 +353,7 @@ Seuraavassa taulukossa selvitetään, mitkä mobiililaitteiden käyttöympärist
 | **Power BI** (palveluun kirjautuminen) | Tuetaan | Tuetaan | Ei tueta |
 | **SSRS-ADFS** (yhteys SSRS-palvelimeen) | Ei tueta | Tuetaan | Ei tueta |
 
-Power BI Mobile -sovellukset ovat aktiivisesti yhteydessä Power BI -palvelun kanssa. Telemetrian avulla kerätään mobiilisovelluksen käyttötilastoja ja vastaavaa tietoa, jotka toimitetaan palveluihin, joilla valvotaan käyttöä ja aktiivisuutta; telemetrian tietojen yhteydessä ei lähetetä henkilötietoja (Personally Identifiable Information, PII).
+Power BI Mobile -sovellukset ovat aktiivisesti yhteydessä Power BI -palvelun kanssa. Telemetrian avulla kerätään mobiilisovelluksen käyttötilastoja ja vastaavaa tietoa, jotka toimitetaan palveluihin, joilla valvotaan käyttöä ja aktiivisuutta; telemetrian tietojen yhteydessä ei lähetetä henkilökohtaisia tietoja.
 
 **Laitteessa oleva Power BI -sovellus** tallentaa laitteeseen tiedot, jotka helpottavat sovelluksen käyttöä:
 
@@ -414,7 +409,7 @@ Seuraavat kysymykset ovat yleisiä Power BI:n suojaukseen liittyviä kysymyksiä
 
 **Miten Power BI -ryhmät toimivat?**
 
-* Power BI -ryhmien avulla käyttäjät voivat nopeasti ja helposti luoda yhteistyönä raporttinäkymiä, raportteja ja tietomalleja vakiintuneissa tiimeissä. Jos esimerkiksi jokin Power BI -ryhmä sisältää kaikki oman lähiryhmäsi käyttäjät, voit tehdä helposti yhteistyötä koko tiimisi kanssa valitsemalla ryhmän Power BI:ssä. Power BI -ryhmät vastaavat Office 365:n universaaleja ryhmiä (joista voit [lukea](https://support.office.com/Article/Find-help-about-Groups-in-Office-365-7a9b321f-b76a-4d53-b98b-a2b0b7946de1) ja joita voit [luoda](https://support.office.com/Article/View-create-and-delete-Groups-in-the-Office-365-admin-center-a6360120-2fc4-46af-b105-6a04dc5461c7) ja [hallita](https://support.office.com/Article/Manage-Group-membership-in-the-Office-365-admin-center-e186d224-a324-4afa-8300-0e4fc0c3000a)), ja ne käyttävät samaa todentamistapoja kuin mitä Azure Active Directoryssa käytetään tietojen suojaamiseen. Voit [luoda ryhmiä Power BI:ssä](https://support.powerbi.com/knowledgebase/articles/654250) tai luoda universaalin ryhmän Office 365 -hallintakeskuksessa; molemmilla toiminnoilla on sama tulos Power BI:n ryhmien luonnin kannalta.
+* Power BI -ryhmien avulla käyttäjät voivat nopeasti ja helposti luoda yhteistyönä raporttinäkymiä, raportteja ja tietomalleja vakiintuneissa tiimeissä. Jos esimerkiksi jokin Power BI -ryhmä sisältää kaikki oman lähiryhmäsi käyttäjät, voit tehdä helposti yhteistyötä koko tiimisi kanssa valitsemalla ryhmän Power BI:ssä. Power BI -ryhmät vastaavat Office 365:n universaaleja ryhmiä (joista voit [lukea](https://support.office.com/Article/Find-help-about-Groups-in-Office-365-7a9b321f-b76a-4d53-b98b-a2b0b7946de1) ja joita voit [luoda](https://support.office.com/Article/View-create-and-delete-Groups-in-the-Office-365-admin-center-a6360120-2fc4-46af-b105-6a04dc5461c7) ja [hallita](https://support.office.com/Article/Manage-Group-membership-in-the-Office-365-admin-center-e186d224-a324-4afa-8300-0e4fc0c3000a)), ja ne käyttävät samaa todentamistapoja kuin mitä Azure Active Directoryssa käytetään tietojen suojaamiseen. Voit [luoda ryhmiä Power BI:ssä](https://support.powerbi.com/knowledgebase/articles/654250) tai luoda universaalin ryhmän Microsoft 365 -hallintakeskuksessa; molemmilla toiminnoilla on sama tulos Power BI:n ryhmien luonnin kannalta.
 
   Huomaa, että Power BI -ryhmien kanssa jaetut tiedot noudattavat samoja suojausperiaatteita kuin kaikki Power BI:ssä jaetut tiedot. Jos kyseessä on **muu kuin RLS**-tietolähde, Power BI **ei** todenna käyttäjiä uudelleen tietojen alkuperäisestä tietolähteestä, ja kun tiedot on ladattu Power BI:hin, lähdetietojen osalta todennettu käyttäjä on vastuussa sen hallinnoinnista, ketkä toiset käyttäjät ja ryhmät voivat tarkastella tietoja. Jos haluat lisätietoja, katso tämän asiakirjan aiempi osio **Käyttäjien todentaminen tietolähteissä**.
 
@@ -459,9 +454,9 @@ Seuraavat kysymykset ovat yleisiä Power BI:n suojaukseen liittyviä kysymyksiä
 
 **Entä tietojen maakohtaisuus? Voimmeko valmistella vuokraajat palvelinkeskuksissa, jotka sijaitsevat tietyillä maantieteellisillä alueilla, jotta tiedot eivät varmasti siirry maan rajojen ulkopuolelle?**
 
-* Tietyillä maantieteellisillä alueilla jotkut asiakkaat voivat luoda vuokraajan maakohtaisessa pilvipalvelussa, jossa tietojen tallennus ja käsittely suoritetaan erillään kaikista muista tietokeskuksista. Maakohtaisissa pilvipalveluissa suojaus toteutetaan hieman eri tavalla, koska erillinen tietojen valtuuttaja käyttää maakohtaista Power BI -palvelua Microsoftin puolesta.
+* Tietyillä maantieteellisillä alueilla jotkut asiakkaat voivat luoda vuokraajan kansallisessa pilvipalvelussa, jossa tietojen tallennus ja käsittely suoritetaan erillään kaikista muista tietokeskuksista. Kansallisissa pilvipalveluissa suojaus toteutetaan hieman eri tavalla, koska erillinen tietojen valtuuttaja käyttää kansallista Power BI -palvelua Microsoftin puolesta.
 
-  Vaihtoehtoisesti asiakkaat voivat myös määrittää vuokraajan tietyllä alueella, mutta tällaisilla vuokraajilla ei ole erillistä tietojen valtuuttajaa Microsoftin lisäksi. Maakohtaisten pilvipalveluiden hinnoittelu eroaa yleisesti saatavilla olevasta kaupallisesta Power BI -palvelusta. Lisätietoja Power BI-palvelun käytettävyydestä maakohtaisissa pilvipalveluissa on artikkelissa [Power BI:n maakohtaiset pilvipalvelut](https://powerbi.microsoft.com/clouds/).
+  Vaihtoehtoisesti asiakkaat voivat myös määrittää vuokraajan tietyllä alueella, mutta tällaisilla vuokraajilla ei ole erillistä tietojen valtuuttajaa Microsoftin lisäksi. Kansallisten pilvipalveluiden hinnoittelu eroaa yleisesti saatavilla olevasta kaupallisesta Power BI -palvelusta. Lisätietoja Power BI-palvelun käytettävyydestä kansallisissa pilvipalveluissa on artikkelissa [Power BI:n kansalliset pilvipalvelut](https://powerbi.microsoft.com/clouds/).
 
 **Miten Microsoft käsittelee sellaisten asiakkaiden yhteydet, joilla on Power BI Premium -tilauksia? Eroavatko kyseiset yhteydet niistä yhteyksistä, joita on tarjolla muille kuin Premium Power BI -palvelun käyttäjille?**
 
@@ -488,6 +483,6 @@ Lisää tietoja Power BI -palvelusta on seuraavissa resursseissa.
 - [Power BI -ohjelmointirajapinnan viite](https://msdn.microsoft.com/library/mt147898.aspx)
 - [Paikallinen tietoyhdyskäytävä](service-gateway-manage.md)
 - [Power BI ja ExpressRoute](service-admin-power-bi-expressroute.md)
-- [Power BI:n maakohtaiset pilvipalvelut](https://powerbi.microsoft.com/clouds/)
+- [Power BI:n kansalliset pilvipalvelut](https://powerbi.microsoft.com/clouds/)
 - [Power BI Premium](https://aka.ms/pbipremiumwhitepaper)
 - [Kerberoksen käyttäminen kertakirjautumista (SSO) varten Power BI:stä paikallisiin tietolähteisiin](service-gateway-sso-overview.md)

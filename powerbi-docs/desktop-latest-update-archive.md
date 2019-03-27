@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/13/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 48ea3d5e60c6f6a079be1d7040266817fdf5b97b
-ms.sourcegitcommit: ac63b08a4085de35e1968fa90f2f49ea001b50c5
+ms.openlocfilehash: 536e433540d371838b027e06f857609024e213f3
+ms.sourcegitcommit: 39bc75597b99bc9e8d0a444c38eb02452520e22b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "57964981"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58430480"
 ---
 # <a name="previous-monthly-updates-to-power-bi-desktop"></a>Power BI Desktopin aiemmat kuukausipäivitykset
 
@@ -558,7 +558,7 @@ Seuraavat päivitykset olivat uutta **Power BI Desktopissa** kesäkuussa:
 
 ### <a name="other"></a>Muut
 
-* Maakohtaisen pilvipalvelun -valitsin [[video]](https://youtu.be/4VpGtWSrssE?t=27m45s)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2018-feature-summary/#nationalCloud) 
+* Kansallisen pilvipalvelun valitsin [[video]](https://youtu.be/4VpGtWSrssE?t=27m45s)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2018-feature-summary/#nationalCloud) 
 
 
 > [!NOTE]
@@ -2250,7 +2250,7 @@ Lisätietoja tästä päivityksestä saat katsomalla seuraavan videon:
 
 Tähän päivitykseen on lisätty seuraavat ominaisuudet:
 
--   **Uudet tietoyhdistimet**: appFigures, Quickbooks Online, Zendesk, Github, Twilio ja SweetIQ.
+-   **Uudet tietoyhdistimet**: appFigures, Quickbooks Online, Zendesk, GitHub, Twilio ja SweetIQ.
 
 -   **Uusia muunnoksia**: tekstisarakkeen ensimmäisten, viimeisten tai tietyn alueen merkkien poimiminen; mahdollisuus määrittää liitostyyppi Kyselyjen yhdistäminen -valintaikkunassa; mahdollisuus mukauttaa lainausmerkkityyliä Jaa sarake osiin erottimen mukaan -valintaikkunassa.
 

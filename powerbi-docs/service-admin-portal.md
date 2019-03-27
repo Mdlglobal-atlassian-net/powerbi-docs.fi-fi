@@ -1,6 +1,6 @@
 ---
 title: Power BI -hallintaportaali
-description: Hallintaportaalissa voit hallita organisaatiosi Power BI -vuokraajia. Hallintaportaali sisältää esimerkiksi käyttömittareita ja asetuksia. Sen kautta voit käyttää myös Office 365 -hallintakeskusta.
+description: Hallintaportaalissa voit hallita organisaatiosi Power BI -vuokraajia. Hallintaportaali sisältää esimerkiksi käyttömittareita ja asetuksia. Sen kautta voit käyttää myös Microsoft 365 -hallintakeskusta.
 author: mgblythe
 ms.author: mblythe
 manager: kfile
@@ -11,16 +11,16 @@ ms.topic: conceptual
 ms.date: 01/24/2019
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: d592cca246b7d8bf348a9cdd889b6d8ba0e248c1
-ms.sourcegitcommit: ac63b08a4085de35e1968fa90f2f49ea001b50c5
+ms.openlocfilehash: 2b5e65ff8e9f603dad0e0537ba52e7da799bf177
+ms.sourcegitcommit: 20ae9e9ffab6328f575833be691073de2061a64d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "57980377"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58383550"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>Power BI:n hallinta hallintaportaalissa
 
-Hallintaportaalissa voit hallita organisaatiosi Power BI *-vuokraajaa*. Hallintaportaali sisältää esimerkiksi käyttömittareita ja asetuksia. Sen kautta voit käyttää myös Office 365 -hallintakeskusta.
+Hallintaportaalissa voit hallita organisaatiosi Power BI *-vuokraajaa*. Portaali sisältää esimerkiksi käyttömittareita ja asetuksia. Sen kautta voit käyttää myös Microsoft 365 -hallintakeskusta.
 
 Hallintaportaalin kaikkia toimintoja voivat käyttää kaikki Office 365:n yleiset järjestelmänvalvojat ja käyttäjät, joille on määritetty Power BI -palvelun järjestelmänvalvojan rooli. Jos et ole tällainen käyttäjä, näet portaalissa vain **kapasiteettiasetukset**. Jos haluat lisätietoja Power BI -palvelun järjestelmänvalvojan roolista, lue ohjeartikkeli [Power BI -järjestelmänvalvojaroolin kuvaus](service-admin-role.md).
 
@@ -83,9 +83,9 @@ Näin saat tarkan kuvan siitä, kuinka organisaatiosi käyttäjät käyttävät 
 
 ## <a name="users"></a>Käyttäjät
 
-Voit hallita Power BI -käyttäjiä, -ryhmiä ja -järjestelmänvalvojia Office 365 -hallintakeskuksessa. **Käyttäjät**-välilehdessä on linkki vuokraajasi hallintakeskukseen.
+Voit hallita Power BI -käyttäjiä, -ryhmiä ja -järjestelmänvalvojia Microsoft 365 -hallintakeskuksessa. **Käyttäjät**-välilehdessä on linkki vuokraajasi hallintakeskukseen.
 
-![Siirry O365-hallintakeskukseen](media/service-admin-portal/powerbi-admin-manage-users.png)
+![Siirry Microsoft 365 -hallintakeskukseen](media/service-admin-portal/powerbi-admin-manage-users.png)
 
 ## <a name="audit-logs"></a>Valvontalokit
 

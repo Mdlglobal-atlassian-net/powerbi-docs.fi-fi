@@ -10,12 +10,12 @@ ms.subservice: powerbi-gateways
 ms.topic: conceptual
 ms.date: 03/05/2019
 LocalizationGroup: Gateways
-ms.openlocfilehash: c1ca797efa2e40bf74384a1e9f2362acd26c6f8f
-ms.sourcegitcommit: 883a58f63e4978770db8bb1cc4630e7ff9caea9a
+ms.openlocfilehash: 91a4cf3ff4fef4530c7c45712a86419298da53f4
+ms.sourcegitcommit: 89e9875e87b8114abecff6ae6cdc0146df40c82a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57555651"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58306500"
 ---
 # <a name="use-security-assertion-markup-language-saml-for-single-sign-on-sso-from-power-bi-to-on-premises-data-sources"></a>Security Assertion Markup Languagen (SAML) käyttäminen kertakirjautumista (SSO) varten Power BI:stä paikallisiin tietolähteisiin
 
@@ -27,23 +27,43 @@ Tuemme tällä hetkellä SAP HANA:a SAML:n kanssa. Lisätietoja kertakirjautumis
 
 Tuemme muita tietolähteitä [Kerberoksen](service-gateway-sso-kerberos.md) avulla.
 
+Huomaa, että HANA:n käytössä on **erittäin** suositeltavaa, että salaus otetaan käyttöön ennen SAML SSO -yhteyden muodostamista (eli HANA-palvelin tulisi määrittää hyväksymään salattuja yhteyksiä ja myös yhdyskäytävä tulisi määrittää käyttämään salausta HANA-palvelimen kanssa kommunikoitaessa). HANA ODBC -ohjain **ei** oletuksena voi salata SAML-vahvistuksia, ja ilman salausta allekirjoitetut SAML-vahvistukset lähetetään yhdyskäytävästä HANA-palvelimeen ”näkyvillä”, jolloin kolmas osapuoli voi pysäyttää ne ja käyttää niitä uudelleen.
+
 ## <a name="configuring-the-gateway-and-data-source"></a>Yhdyskäytävän ja tietolähteen määrittäminen
 
-Jotta voit käyttää SAML:a, luo ensin varmenne SAML-tunnistetietopalvelua varten ja yhdistä sitten Power BI -käyttäjä käyttäjätietoihin.
+Jotta voit käyttää SAML:ää, on muodostettava luottamussuhde HANA-palvelimen, jolle haluat ottaa SSO:n käyttöön, ja yhdyskäytävän välille, joka toimii tässä tilanteessa SAML-tunnistetietopalveluna (IdP). On monia tapoja muodostaa tämä suhde, kuten tuomalla yhdyskäytävän IdP:n x509-varmenne HANA-palvelimen luottamussäilöön tai määrittämällä HANA-palvelin luottamaan varmenteen päämyöntäjän allekirjoittamaan yhdyskäytävän X509-varmenteeseen. Tässä oppaassa kuvataan jälkimmäinen lähestymistapa, mutta voit käyttää toista menetelmää, jos se on kätevämpää.
 
-1. Luo varmenne. Varmista, että käytät SAP HANA -palvelimen täydellistä toimialuenimeä kun täytät *kutsumanimen*. Varmenne vanhenee 365 päivässä.
+Huomaa myös, että vaikka tässä oppaassa käytetään OpenSSL:ää HANA-palvelimen salauspalveluna, OpenSSL:n asemesta on myös mahdollista käyttää SAP-salauskirjastoa (tunnetaan myös nimillä CommonCryptoLib tai sapcrypto) luottamussuhteen muodostamisen vaiheisiin. Katso lisätietoja virallisesta SAP-dokumentaatiosta.
 
-    ```
-    openssl req -newkey rsa:2048 -nodes -keyout samltest.key -x509 -days 365 -out samltest.crt
-    ```
+Seuraavissa vaiheissa kuvataan, miten voit muodostaa luottamussuhteen HANA-palvelimen ja yhdyskäytävän IdP:n välillä allekirjoittamalla yhdyskäytävän IdP:n X509-varmenteen HANA-palvelimen luottamalla varmenteen päämyöntäjällä.
+
+1. Luo päämyöntäjän X509-varmenne ja yksityinen avain. Voit esimerkiksi luoda päämyöntäjän X509-varmenteen ja yksityisen avaimen .pem-muodossa näin:
+
+```
+openssl req -new -x509 -newkey rsa:2048 -days 3650 -sha256 -keyout CA_Key.pem -out CA_Cert.pem -extensions v3_ca
+```
+
+Lisää varmenne (esimerkiksi CA_Cert.pem) HANA-palvelimen luottamussäilöön niin, että HANA-palvelin luottaa mihin tahansa juuri luomasi päämyöntäjän allekirjoittamaan varmenteeseen. HANA-palvelimen luottamussäilön sijainti löytyy tarkastelemalla **ssltruststore**-määrityksiä. Jos olet noudattanut SAP-dokumentaatiota OpenSSL:n määrittämisessä, HANA-palvelin saattaa jo luottaa päämyöntäjään, jota voit käyttää uudelleen. [Katso lisätietoja, kuinka voit määrittää OpenSSL SAP HANA Studion SAP HANA -palvelimeen](https://archive.sap.com/documents/docs/DOC-39571). Jos sinulla on useita HANA-palvelimia, joille haluat ottaa SAML SSO:n käyttöön, varmista, että kaikki palvelimet luottavat tähän päämyöntäjään.
+
+1. Luo yhdyskäytävän IdP:n X509-varmenne. Jos haluat esimerkiksi luoda varmenteen allekirjoituspyynnön (IdP_Req.pem) ja yksityisen avaimen (IdP_Key.pem), jotka ovat voimassa vuoden, suorita seuraava komento:
+
+```
+ openssl req -newkey rsa:2048 -days 365 -sha256 -keyout IdP_Key.pem -out IdP_Req.pem -nodes
+```
+
+
+Allekirjoita varmenteen allekirjoituspyyntö käyttämällä sitä päämyöntäjää, johon HANA-palvelin on määritetty luottamaan. Voit esimerkiksi allekirjoittaa IdP_Req.pem:n käyttämällä CA_Cert.pem:tä ja CA_Key.pem:tä (varmenne ja päämyöntäjän avain), suorittamalla seuraavan komennon:
+
+  ```
+openssl x509 -req -days 365 -in IdP_Req.pem -sha256 -extensions usr_cert -CA CA_Cert.pem -CAkey CA_Key.pem -CAcreateserial -out IdP_Cert.pem
+```
+Tuloksena oleva IdP-varmenne on voimassa vuoden ajan (katso -days-asetusta). Luo seuraavaksi uusi SAML-tunnistetietopalvelu tuomalla IdP-varmenne HANA Studioon.
 
 1. Napsauta SAP HANA Studiossa SAP HANA -palvelintasi hiiren kakkospainikkeella ja siirry kohtaan **Tietoturva** > **Avaa tietoturvakonsoli** > **SAML-tunnistetietopalvelu** > **OpenSSL-salauskirjasto**.
 
-    On mahdollista käyttää myös OpenSSL:n SAP-salauskirjastoa (se tunnetaan myös nimillä CommonCryptoLib tai sapcrypto) näiden määritysvaiheiden suorittamiseen. Katso lisätietoja virallisesta SAP-dokumentaatiosta.
-
-1. Valitse **Tuo**, etsi samltest.crt-tiedosto ja tuo se.
-
     ![Tunnistetietopalvelut](media/service-gateway-sso-saml/identity-providers.png)
+
+1. Valitse **Tuo**, etsi IdP_Cert.pem-tiedosto ja tuo se.
 
 1. Valitse SAP HANA Studiossa **Tietoturva**kansio.
 
@@ -61,10 +81,10 @@ Jotta voit käyttää SAML:a, luo ensin varmenne SAML-tunnistetietopalvelua vart
 
 Nyt kun olet määrittänyt varmenteen ja käyttäjätiedot, muunna varmenne pfx-muotoon ja määritä yhdyskäytäväkone käyttämään varmennetta.
 
-1. Voit muuntaa varmenteen pfx-muotoon suorittamalla seuraavan komennon.
+1. Voit muuntaa varmenteen pfx-muotoon suorittamalla seuraavan komennon. Huomaa, että tämä komento asettaa pfx-tiedoston salasanaksi ”root”.
 
     ```
-    openssl pkcs12 -inkey samltest.key -in samltest.crt -export -out samltest.pfx
+    openssl pkcs12 -export -out samltest.pfx -in IdP_Cert.pem -inkey IdP_Key.pem -passin pass:root -passout pass:root
     ```
 
 1. Kopioi pfx-tiedosto yhdyskäytäväkoneeseen:

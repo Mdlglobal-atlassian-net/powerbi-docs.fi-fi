@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/30/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: e4cd85e0e5b4f10ead772875434bce3bd0973505
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 2de78497698af3ee00ce77ef9c389169ef460546
+ms.sourcegitcommit: 20ae9e9ffab6328f575833be691073de2061a64d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54287561"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58382801"
 ---
 # <a name="understanding-the-power-bi-service-administrator-role"></a>Tietoja Power BI -palvelun järjestelmänvalvojan roolista
 
@@ -25,23 +25,23 @@ Lue, miten voit käyttää Power BI -palvelun järjestelmänvalvojaroolia organi
 
 Power BI -palvelun järjestelmänvalvojan rooli voidaan määrittää käyttäjille, joilla on oltava Power BI -hallintaportaalin käyttöoikeus, antamatta heille muita Office 365:n järjestelmänvalvojan käyttöoikeuksia.
 
-Office 365:n käyttäjähallinnan järjestelmänvalvojat määrittävät käyttäjiä Power BI -palvelun järjestelmänvalvojarooliin Office 365 -hallintakeskuksessa tai PowerShell-komentosarjan avulla. Kun käyttäjä on määritetty, hän voi käyttää [Power BI -hallintaportaalia](service-admin-portal.md). Portaalissa käyttäjä voi käyttää koko vuokraajan laatuisia käyttömittareita ja hallita Power BI -ominaisuuksien käyttöä koko vuokraajan laajuudelta.
+Office 365:n käyttäjähallinnan järjestelmänvalvojat määrittävät käyttäjiä Power BI -palvelun järjestelmänvalvojarooliin Microsoft 365 -hallintakeskuksessa tai PowerShell-komentosarjan avulla. Kun käyttäjä on määritetty, hän voi käyttää [Power BI -hallintaportaalia](service-admin-portal.md). Portaalissa käyttäjä voi käyttää koko vuokraajan laatuisia käyttömittareita ja hallita Power BI -ominaisuuksien käyttöä koko vuokraajan laajuudelta.
 
 ## <a name="limitations-and-considerations"></a>Rajoitukset ja huomioitavat asiat
 
 Power BI -palvelun järjestelmänvalvojarooli ei sisällä seuraavia oikeuksia:
 
-* Mahdollisuus muokata käyttäjiä ja käyttöoikeuksia Office 365 -hallintakeskuksessa,
+* Mahdollisuus muokata käyttäjiä ja käyttöoikeuksia Microsoft 365 -hallintakeskuksessa,
 
 * Valvontalokien käyttö. Lisätietoja on artikkelissa [Valvonnan käyttö organisaatiossa](service-admin-auditing.md).
 
 ## <a name="assign-users-to-the-admin-role-in-office-365"></a>Käyttäjien määrittäminen järjestelmänvalvojan rooliin Office 365:ssä
 
-Voit määrittää käyttäjiä Power BI -järjestelmänvalvojan rooliin Office 365 -hallintakeskuksessa seuraavasti.
+Voit määrittää käyttäjiä Power BI -järjestelmänvalvojan rooliin Microsoft 365 -hallintakeskuksessa seuraavasti.
 
-1. Valitse Office 365 -hallintakeskuksessa **Käyttäjät** > **Aktiiviset käyttäjät**.
+1. Valitse Microsoft 365 -hallintakeskuksessa **Käyttäjät** > **Aktiiviset käyttäjät**.
 
-    ![Office 365 -hallintakeskus](media/service-admin-role/powerbi-admin-users.png)
+    ![Microsoft 365 -hallintakeskus](media/service-admin-role/powerbi-admin-users.png)
 
 1. Valitse käyttäjä, jolle haluat määrittää roolin.
 

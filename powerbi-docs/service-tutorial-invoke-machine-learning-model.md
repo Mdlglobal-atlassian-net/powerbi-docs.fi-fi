@@ -11,12 +11,12 @@ ms.topic: tutorial
 ms.date: 03/12/2019
 ms.author: davidi
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 54515259d0e258284cd5a2e86432a5ef6be89a9e
-ms.sourcegitcommit: 06ae54ed221979939699c67d63aeccba8b9dfcda
+ms.openlocfilehash: 6c63f0bbcf836c90eecf7407d2d9805fc9ab443a
+ms.sourcegitcommit: 39bc75597b99bc9e8d0a444c38eb02452520e22b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57965482"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58430319"
 ---
 # <a name="tutorial-invoke-a-machine-learning-studio-model-in-power-bi-preview"></a>Opetusohjelma: Automaattianalyysistudion mallin käynnistys Power BI:ssä (esikatselu)
 
@@ -32,7 +32,7 @@ Opetusohjelmassa on seuraavat vaiheet:
 
 ## <a name="create-and-publish-an-azure-ml-model"></a>Azuren automaattianalyysipalveluiden mallin luominen ja julkaiseminen
 
-Noudata [Ohjeiden vaihe 1: Luo automaattianalyysistudion työtila](https://docs.microsoft.com/azure/machine-learning/studio/walkthrough-1-create-ml-workspace) -kohdan ohjeita ja luo **Automaattianalyysipalvelut**-työtila.
+Noudata ohjeita kohdassa [Ohjeiden vaihe 1: Luo automaattianalyysistudion työtila](https://docs.microsoft.com/azure/machine-learning/studio/walkthrough-1-create-ml-workspace) -kohdan ohjeita ja luo **Automaattianalyysipalvelut**-työtila.
 
 Voit käyttää näitä vaiheita minkä tahansa valmiin Azuren automaattianalyysipalveluiden mallin tai tietojoukon kanssa. Jos sinulla ei ole julkaistua mallia, voit luoda mallin hetkessä katsomalla ohjeet [Luo ensimmäinen datatiedekokeilu Azuren automaattianalyysistudiossa](https://docs.microsoft.com/azure/machine-learning/studio/create-experiment) -artikkelista, jossa määritetään Azuren automaattianalyysipalveluiden malli autojen hintaennusteita varten.
 
@@ -92,7 +92,7 @@ Seuraavassa näytössä sinua pyydetään muodostamaan yhteys tietolähteeseen. 
 
 `https://raw.githubusercontent.com/santoshc1/PowerBI‑AI‑samples/master/Tutorial\_MLStudio\_model\_integration/Automobile%20price%20data%20\_Raw\_.csv`
 
-!Connect to data source](media/service-tutorial-invoke-machine-learning-model/tutorial-invoke-machine-learning-model_08.png)
+![Muodosta yhteys tietolähteeseen](media/service-tutorial-invoke-machine-learning-model/tutorial-invoke-machine-learning-model_08.png)
 
 Power Query -editori näyttää CSV-tiedostossa olevien tietojen esikatselun. Valitse komentopalkista **Muunna taulukko** ja valitse sitten **Käytä ensimmäistä riviä otsikkoina**.  Tämä lisää _Ylennetyt otsikot_ -kyselyvaiheen oikealla puolella olevaan **Käytössä olevat vaiheet** -ruutuun. Voit myös nimetä kyselyn uudelleen ja määrittää sille kätevämmän nimen, kuten _Auton hinnoittelu_, käyttämällä oikealla olevaa ruutua.
 
@@ -137,7 +137,7 @@ Jos haluat käyttää Azuren automaattianalyysipalveluiden mallia _autojen hinta
 
 Valitse valintanauhan **Tekoälyn merkitykselliset tiedot** -painike ja valitse sitten vasemmasta siirtymisvalikosta _Azuren koneoppimismallit_ -kansio.
 
-Valitse **Azuren koneoppimismallit** -kansio. Ne Azuren automaattianalyysipalveluiden mallit, joihin olet saanut käyttöoikeudet, näkyvät Power Query -funktioina etuliitteellä *AzureML*.  Kun napsautat _AutomobilePricePrediction_-mallia vastaavaa funktiota, mallin verkkopalvelun parametrit merkitään funktioparametreiksi.
+Ne Azuren automaattianalyysipalveluiden mallit, joihin olet saanut käyttöoikeudet, näkyvät Power Query -funktioina etuliitteellä *AzureML*.  Kun napsautat _AutomobilePricePrediction_-mallia vastaavaa funktiota, mallin verkkopalvelun parametrit merkitään funktioparametreiksi.
 
 Jos haluat käynnistää Azuren automaattianalyysipalveluiden mallin, voit määrittää avattavassa luettelossa minkä tahansa valitun entiteetin sarakkeista syötteeksi. Voit myös määrittää syötteenä käytettävän vakioarvon käyttämällä syötevalintaikkunan vasemmalla puolella olevaa sarakekuvaketta. Kun sarakkeen nimi, joka vastaa funktion jonkin parametrin nimeä, saraketta ehdotetaan automaattisesti syötteeksi.  Jos sarakkeen nimi ei vastaa mitään, voit valita sen avattavasta valikosta.
 

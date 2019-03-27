@@ -10,12 +10,12 @@ ms.topic: overview
 ms.date: 10/29/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: d00e6f2a972e6e41d4d9badc51e30a13a6dc98cc
-ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
+ms.openlocfilehash: 214a8a3ce0fd647cecd9855b48589cef02bf01c8
+ms.sourcegitcommit: 20ae9e9ffab6328f575833be691073de2061a64d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55430116"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58383310"
 ---
 # <a name="what-is-power-bi-administration"></a>Mitä on Power BI:n hallinta?
 
@@ -71,7 +71,7 @@ Power BI:n hallintaan liittyy useita työkaluja, jotka on kuvattu seuraavassa ta
 | **Työkalu** | **Tavalliset tehtävät** |
 | --- | --- |
 | Power BI -hallintaportaali |<ul><li>Premium-kapasiteetin hankinta ja käsittely</li><li>Palvelun laadun varmistaminen</li><li>Yritystietojen luokittelun hallinta</li><li>Sisällön julkaisemisen ja jakamisen käytäntöjen valvonnan tukeminen</li><li>Työtilojen hallinta<br><li>Mukautettujen visualisointien julkaiseminen</li><li>Power BI:n muihin sovelluksiin upottamiseen käytettyjen koodien vahvistaminen</li><li>Tietojen käytön ja muiden ongelmien vianmääritys</li></ul>|
-| Office 365 -hallintakeskus |<ul><li>Käyttäjien rekisteröitymisen hallinta</li><li>Pro-käyttöoikeuksien hankinta ja määritys</li><li>Power BI:n käytön estäminen käyttäjiltä</li></ul>|
+| Microsoft 365 -hallintakeskus |<ul><li>Käyttäjien rekisteröitymisen hallinta</li><li>Pro-käyttöoikeuksien hankinta ja määritys</li><li>Power BI:n käytön estäminen käyttäjiltä</li></ul>|
 | Office 365:n tietoturva- ja yhteensopivuuskeskus |<ul><li>Tapahtumien valvonnan arviointi ja hallinta</li></ul>|
 | Azure Active Directory (AAD) Azure-portaalissa |<ul><li>Power BI -resurssien ehdollisen käyttöoikeuden määrittäminen AAD:n kautta</li><li>Power BI Embedded -kapasiteetin valmistelu</li></ul>|
 | PowerShellin cmdlet-komennot |<ul><li>Työtilojen ja muiden Power BI:n ominaisuuksien hallinta komentosarjojen hallinta</li></ul>|
