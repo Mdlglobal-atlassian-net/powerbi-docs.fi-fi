@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/16/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 25d6c8020e500096507ba5e80a020a7a1c3052a6
-ms.sourcegitcommit: ac63b08a4085de35e1968fa90f2f49ea001b50c5
+ms.openlocfilehash: 54bdc0cb3490cf2149f2fda51939c201cd51518f
+ms.sourcegitcommit: 20ae9e9ffab6328f575833be691073de2061a64d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "57980423"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58383435"
 ---
 # <a name="administering-power-bi---frequently-asked-questions-faq"></a>Power BI:n hallinnointi - usein kysytyt kysymykset (UKK)
 
@@ -60,7 +60,7 @@ Jotkin tämän osion toimintosarjat edellyttävät Windows PowerShell -komentosa
 
 ### <a name="how-do-users-sign-up-for-power-bi"></a>Miten käyttäjät voivat rekisteröityä Power BI:hin?
 
-Järjestelmänvalvojana voit rekisteröityä Power BI:hin [Power BI -sivuston](https://powerbi.microsoft.com) tai Office 365 -hallintakeskuksen[Ostopalvelut](https://admin.microsoft.com/AdminPortal/Home#/catalog)-sivun kautta. Kun järjestelmänvalvoja rekisteröityy Power BI:hin, hän voi määrittää käyttöoikeudet käyttäjille, jotka tarvitsevat käyttöoikeuden.
+Järjestelmänvalvojana voit rekisteröityä Power BI:hin [Power BI -sivuston](https://powerbi.microsoft.com) tai Microsoft 365 -hallintakeskuksen[Ostopalvelut](https://admin.microsoft.com/AdminPortal/Home#/catalog)-sivun kautta. Kun järjestelmänvalvoja rekisteröityy Power BI:hin, hän voi määrittää käyttöoikeudet käyttäjille, jotka tarvitsevat käyttöoikeuden.
 
 Lisäksi organisaation yksittäiset käyttäjät voivat ehkä rekisteröityä Power BI:hin [Power BI -sivuston](https://powerbi.microsoft.com) kautta. Kun organisaatiosi käyttäjä rekisteröityy Power BI:hin, hän saa automaattisesti Power BI -lisenssin. Lisätietoja on artikkeleissa [Rekisteröityminen Power BI:hin yksityishenkilönä](service-self-service-signup-for-power-bi.md) ja [Power BI -käyttöoikeudet organisaatiossasi](service-admin-licensing-organization.md).
 
@@ -169,7 +169,7 @@ Organisaation käyttäjiin saattaa liittyä kolme tilannetta:
 
 ### <a name="how-do-we-manage-power-bi"></a>Miten Power BI:tä hallitaan?
 
-Power BI sisältää hallintaportaalin, jossa on käyttötilastoja, linkki Office 365:n hallintakeskukseen käyttäjien ja ryhmien hallintaa varten ja mahdollisuus hallita koko vuokraajaa koskevia asetuksia.
+Power BI sisältää hallintaportaalin, jossa on käyttötilastoja, linkki Microsoft 365 -hallintakeskukseen käyttäjien ja ryhmien hallintaa varten ja mahdollisuus hallita koko vuokraajaa koskevia asetuksia.
 
 Jotta voit käyttää Power BI -hallintaportaalia, tililläsi täytyy olla **yleisen järjestelmänvalvojan** oikeudet Office 365:ssä tai Azure Active Directoryssa tai Power BI -palvelun järjestelmänvalvojan oikeudet. Lisätietoja on artikkeleissa [Power BI -järjestelmänvalvojaroolin kuvaus](service-admin-role.md) ja [Power BI -hallintaportaali](service-admin-portal.md).
 
@@ -196,7 +196,7 @@ Jos et tee mitään, jokaista käyttäjän sähköpostin toimialuetta ja alitoim
 
 Jos käyttäjä on rekisteröitynyt Power BI:hin, mutta et enää halua hänen käyttävän Power BI:tä, voit poistaa Power BI -käyttöoikeuden kyseiseltä käyttäjältä.
 
-1. Siirry [Office 365:n hallintakeskukseen](https://admin.microsoft.com/AdminPortal/Home#/homepage).
+1. Siirry [Microsoft 365 -hallintakeskukseen](https://admin.microsoft.com/AdminPortal/Home#/homepage).
 
 1. Valitse vasemmassa siirtymispalkissa **Käyttäjät** > **Aktiiviset käyttäjä**.
 
@@ -214,7 +214,7 @@ Jos käyttäjä on rekisteröitynyt Power BI:hin, mutta et enää halua hänen k
 
 Käyttäjille, jotka ovat liittyneet vuokraajaan osana tätä ohjelmaa, määritetään yksilöivä lisenssi, jota voit käyttää suodattimessa järjestelmänvalvojan koontinäytön aktiivisen käyttäjän ruudussa. Luo tämä uusi näkymä seuraavien ohjeiden mukaan.
 
-1. Siirry [Office 365:n hallintakeskukseen](https://admin.microsoft.com/AdminPortal/Home#/homepage).
+1. Siirry [Microsoft 365 -hallintakeskukseen](https://admin.microsoft.com/AdminPortal/Home#/homepage).
 
 1. Valitse vasemmassa siirtymispalkissa **Käyttäjät** > **Aktiiviset käyttäjä**.
 
@@ -232,7 +232,7 @@ Käyttäjille, jotka ovat liittyneet vuokraajaan osana tätä ohjelmaa, määrit
 
 Salasanan vaihtamispyyntöjä saattaa tulla enemmän. Lisätietoja tästä prosessista on artikkelissa [Käyttäjän salasanan vaihtaminen](/office365/admin/add-users/reset-passwords).
 
-Voit poistaa käyttäjän vuokraajasta tavalliseen tapaan Office 365:n hallintakeskuksen kautta. Jos käyttäjällä on edelleen aktiivinen sähköpostiosoite organisaatiossasi, hän voi liittyä takaisin, ellet estä kaikkia käyttäjiä liittymästä.
+Voit poistaa käyttäjän vuokraajasta tavalliseen tapaan Microsoft 365 -hallintakeskuksen kautta. Jos käyttäjällä on edelleen aktiivinen sähköpostiosoite organisaatiossasi, hän voi liittyä takaisin, ellet estä kaikkia käyttäjiä liittymästä.
 
 ### <a name="where-is-my-power-bi-tenant-located"></a>Missä Power BI -vuokraajani sijaitsee?
 

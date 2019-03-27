@@ -10,19 +10,19 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 03/12/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: 312e010bfa3ea635ef014a0b2dd913fa9e3911b6
-ms.sourcegitcommit: ac63b08a4085de35e1968fa90f2f49ea001b50c5
+ms.openlocfilehash: 25e36334390ad88d7856124c67e275db5c7fcd1c
+ms.sourcegitcommit: 20ae9e9ffab6328f575833be691073de2061a64d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "57964843"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58383004"
 ---
 # <a name="how-to-purchase-power-bi-premium"></a>Ohjeet Power BI Premiumin ostamiseen
 
 > [!NOTE]
 > Tätä artikkelia päivitetään parhaillaan. Tulossa on uusien ominaisuuksien kuvauksia, tietojen tarkennuksia ja luettavuutta parantavia muutoksia. 
 
-Tässä artikkelissa kuvataan, miten voit ostaa organisaatiollesi Power BI Premium -kapasiteettia (P1–P3). Voit ostaa Power BI Premium -kapasiteettia Office 365 -hallintakeskuksessa ja voit hallita kapasiteettejasi Power BI -hallintaportaalissa. Ajantasaiset hinnoittelu- ja suunnittelutiedot löytyvät [Power BI -hinnoittelusivulta](https://powerbi.microsoft.com/pricing/) ja [Power BI Premium -laskimesta](https://powerbi.microsoft.com/calculator/).
+Tässä artikkelissa kuvataan, miten voit ostaa organisaatiollesi Power BI Premium -kapasiteettia (P1–P3). Voit ostaa Power BI Premium -kapasiteettia Microsoft 365 -hallintakeskuksessa ja voit hallita kapasiteettejasi Power BI -hallintaportaalissa. Ajantasaiset hinnoittelu- ja suunnittelutiedot löytyvät [Power BI -hinnoittelusivulta](https://powerbi.microsoft.com/pricing/) ja [Power BI Premium -laskimesta](https://powerbi.microsoft.com/calculator/).
 
 Sisällöntekijät tarvitsevat edelleen Power BI Pro -käyttöoikeuden, vaikka organisaatiosi käyttäisikin Power BI Premiumia. Varmista, että ostat vähintään yhden Power BI Pro -käyttöoikeuden organisaatiollesi.
 
@@ -42,7 +42,7 @@ Jos haluat ostaa Premium-kapasiteetin, toimi seuraavasti.
 
     ![Office 365 -sovellusvalitsin](media/service-admin-premium-purchase/o365-app-picker.png)
 
-    Voit myös selata Office 365 -hallintakeskuksessa. Pääset siihen siirtymällä osoitteeseen https://portal.office.com ja valitsemalla **Järjestelmänvalvoja**.
+    Voit myös selata Microsoft 365 -hallintakeskuksessa. Pääset siihen siirtymällä osoitteeseen https://portal.office.com ja valitsemalla **Järjestelmänvalvoja**.
 
 1. Valitse **Laskutus** > **Ostopalvelut**.
 
@@ -62,7 +62,7 @@ Kun olet suorittanut oston, **ostopalveluiden** sivulla näkyy, että tuote on o
 
 Nyt kun sinulla on kapasiteetti, voit ostaa lisää kapasiteettia tarpeidesi mukaan. Voit myös käyttää organisaatiosi sisällä mitä tahansa Premium-kapasiteetin varastointiyksiköiden (P1–P3) yhdistelmää. Eri varastointiyksiköt sisältävät eri resurssiominaisuuksia.
 
-1. Valitse Office 365 -hallintakeskuksessa, **Laskutus** > **Ostopalvelut**.
+1. Valitse Microsoft 365 -hallintakeskuksessa **Laskutus** > **Ostopalvelut**.
 
 1. Etsi lisää ostettava Power BI Premium -tuote kohdasta **Muut palvelupaketit**.
 
@@ -81,9 +81,9 @@ Nyt kun sinulla on kapasiteetti, voit ostaa lisää kapasiteettia tarpeidesi muk
 
 ## <a name="cancel-your-subscription"></a>Tilauksen peruuttaminen
 
-Voit peruuttaa tilauksen Office 365 -hallintakeskuksessa. Jos haluat peruuttaa Premium-tilauksesi, toimi seuraavasti.
+Voit peruuttaa tilauksen Microsoft 365 -hallintakeskuksessa. Jos haluat peruuttaa Premium-tilauksesi, toimi seuraavasti.
 
-1. Siirry Office 365 -hallintakeskukseen.
+1. Siirry Microsoft 365 -hallintakeskukseen.
 
 1. Valitse **Laskutus** > **Tilaukset**.
 

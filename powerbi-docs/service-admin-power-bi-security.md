@@ -2,27 +2,29 @@
 title: Power BI:n suojaus
 description: Power BI:n suojaus. Miten Power BI liittyy Azure Active Directory- ja muihin Azure-palveluihin. Tässä ohjeaiheessa on myös linkki yksityiskohtaiseen raporttiin.
 author: davidiseminger
+ms.author: davidi
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 03/11/2019
-ms.author: davidi
 LocalizationGroup: Administration
-ms.openlocfilehash: e067ac55d606372c05da1e0ebff76e4d05f35e9c
-ms.sourcegitcommit: f176ba9d52d50d93f264eca21bb3fd987dbf934b
+ms.openlocfilehash: b70d23d7f4f5dfab9273319ad890a21c9b74ead2
+ms.sourcegitcommit: 39bc75597b99bc9e8d0a444c38eb02452520e22b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/12/2019
-ms.locfileid: "57757503"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58430365"
 ---
 # <a name="power-bi-security"></a>Power BI:n suojaus
+
 Saat yksityiskohtaisen kuvauksen Power BI:n suojauksesta [lukemalla Power BI:n suojauksen teknisen raportin](whitepaper-powerbi-security.md).
 
 Power BI -palvelu perustuu **Azureen**, joka on Microsoftin pilvitietojenkäsittelyinfrastruktuuri ja -alusta. Power BI -palveluarkkitehtuuri perustuu kahteen klusteriin – Web Front End (**WFE**) -klusteriin ja **Back End** -klusteriin. WFE-klusteri vastaa Power BI -palvelun ensiyhteydenotosta ja todentamisesta. Todennuksen jälkeen Back End -klusteri käsittelee kaiken käyttäjien vuorovaikutuksen. Power BI käyttää Azure Active Directorya (AAD) käyttäjätietojen tallentamiseen ja hallitsemiseen. Se hallitsee tietoja ja metatietoja Azure BLOB- ja Azure SQL -tietokantojen avulla (vastaavassa järjestyksessä).
 
 ## <a name="power-bi-architecture"></a>Power BI -arkkitehtuuri
+
 Kukin Power BI -käyttöönotto koostuu kahdesta klusterista – Web Front End (**WFE**) -klusterista ja **Back End** -klusterista.
 
 **WFE**-klusteri vastaa Power BI:n ensiyhteydenotosta ja todentamisesta. Se todentaa asiakkaat AAD:n avulla ja tarjoaa tunnukset asiakkaiden myöhemmille Power BI -palvelun yhteyksille. Power BI käyttää myös **Azure Traffic Manageria** (ATM) ohjaamaan käyttäjät lähimpään palvelinkeskukseen, mikä perustuu yhdistämistä yrittävän asiakkaan DNS-tietueeseen. Näin käyttäjä voidaan todentaa ja staattinen sisältö ja tiedostot ladata. Power BI käyttää **Azure Content Delivery Networkia** (CDN) tarpeellisen staattisen sisällön ja tiedostojen jakamiseen käyttäjille aluekohtaisten asetusten perusteella.
@@ -35,15 +37,15 @@ Todennetut asiakkaat vuorovaikuttavat Power BI -palvelun kanssa **Back End** -kl
 
 > [!IMPORTANT]
 > On ehdottoman tärkeää huomata, että vain **Azure API Management** (APIM) ja **yhdyskäytävän** (GW) roolit ovat helppokäyttöisiä julkisen Internetin kautta. Ne tarjoavat todennus-, valtuutus-, SSoS-suojaus-, rajoittamis-, kuormituksen tasaus-, reititys- ja muut ominaisuudet.
-> 
-> 
 
 ## <a name="data-storage-security"></a>Tallennustilan tietoturva
+
 Power BI käyttää kahta ensisijaista säilöä tietojen tallentamiseen ja hallintaan: käyttäjien lataamat tiedot lähetetään tavallisesti **Azure BLOB** -tallennustilaan, ja kaikki metatiedot sekä järjestelmän kohteet tallennetaan  **Azure SQL -tietokantaan**.
 
 Pisteviiva **Back End** -klusterin kuvassa yllä osoittaa käyttäjien käytettävissä olevan kahden osion rajan (pisteviivan vasemmalla puolella) ja roolit, joita vain järjestelmä voi käyttää. Kun todennettu käyttäjä muodostaa yhteyden Power BI -palveluun, **yhdyskäytävän rooli** hyväksyy yhteyden ja asiakkaan pyynnön ja hallitsee sitä (siirtyy myöhemmin **Azure API Managementille**). Yhdyskäytävän rooli vuorovaikuttaa muun Power BI -palvelun kanssa käyttäjän puolesta. Kun asiakas esimerkiksi yrittää tarkastella koontinäyttöä, **yhdyskäytävän rooli** hyväksyy pyynnön ja lähettää pyynnön erikseen **esityksen roolille**, joka noutaa selaimen koontinäytön hahmontamiseen tarvitsemat tiedot.
 
 ## <a name="user-authentication"></a>Käyttäjän todennus
+
 Power BI käyttää Azure Active Directorya ([AAD](http://azure.microsoft.com/services/active-directory/)) Power BI -palveluun kirjautuvien käyttäjien todentamiseen, joka puolestaan käyttää Power BI -kirjautumistunnuksia aina, kun käyttäjä yrittää käyttää resursseja, jotka edellyttävät todennusta. Käyttäjät kirjautuvat Power BI -palveluun käyttämällä Power BI -tilinsä luomiseen käyttämäänsä sähköpostiosoitetta; Power BI käyttää kyseistä kirjautumissähköpostia *käytössä olevana käyttäjänimenä*, joka välitetään resursseille aina, kun käyttäjä yrittää muodostaa yhteyden tietoihin. *Käytössä oleva käyttäjänimi* yhdistetään sitten *täydelliseen käyttäjätunnukseen* ([UPN](https://msdn.microsoft.com/library/windows/desktop/aa380525\(v=vs.85\).aspx) ja ratkaistaan siihen liittyvään Windows-toimialuetilin, jota vastaan todennusta käytetään.
 
 Organisaatioissa, joissa käytetään työsähköpostiosoitteita Power BI:hin kirjautumiseen (esim. <em>david@contoso.com</em>), *käytössä oleva käyttäjänimi* on helppo yhdistää UPN:ään. Organisaatioissa, joissa ei käytetä työsähköpostiosoitteita Power BI:hin kirjautumiseen (esim. <em>david@contoso.onmicrosoft.com</em>), AAD:n ja paikallisten tunnistetietojen yhdistäminen edellyttää, että [hakemistosynkronointi](https://technet.microsoft.com/library/jj573653.aspx) toimii oikein.
@@ -51,6 +53,7 @@ Organisaatioissa, joissa käytetään työsähköpostiosoitteita Power BI:hin ki
 Power BI -alustan suojaus sisältää myös usean palveltavan kohteen ympäristön suojauksen, verkon suojauksen ja mahdollisuuden lisätä AAD-pohjaisia suojausominaisuuksia.
 
 ## <a name="data-and-service-security"></a>Tietojen ja palvelun suojaus
+
 Lisätietoja on [Microsoft Trust Centerissa](https://www.microsoft.com/trustcenter).
 
 Kuten edellä kuvattiin, paikalliset Active Directory -palvelimet käyttävät käyttäjän Power BI -kirjautumista kirjautumistunnuksille suunniteltuun UPN:ään yhdistämiseen. **Tärkeää:** Huomaa, että käyttäjät ovat vastuussa jakamistaan tiedoista: jos käyttäjä muodostaa yhteyden tietoihin kirjautumistunnuksillaan ja jakaa sitten tietoihin perustuvan raportin (tai koontinäytön tai tietojoukon), käyttäjiä, joille koontinäyttö on jaettu, ei ole todennettu alkuperäiseen tietolähteeseen, ja heille myönnetään raportin käyttöoikeudet.
@@ -66,4 +69,3 @@ Järjestelmänvalvoja voi pakottaa käytön rekisteriavainten avulla. Lisätieto
 **Power BI Desktop** noudattaa artikkeleissa kuvattuja rekisteriavainasetuksia ja luo vain kyseisiin rekisteriasetuksiin perustuvia, hyväksyttyä TLS-salausta käyttäviä yhteyksiä.
 
 Katso lisätietoja rekisteriavainten määrittämisestä [TLS-rekisteriasetukset](https://docs.microsoft.com/windows-server/security/tls/tls-registry-settings)-artikkelista.
-

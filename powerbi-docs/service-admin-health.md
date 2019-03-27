@@ -1,6 +1,6 @@
 ---
 title: Power BI -palvelun kunnon seuraaminen Office 365:ssä
-description: Lue, miten voit tarkastella palvelun ajantasaista ja aikaisempaa kuntoa Office 365 -hallintakeskuksesta.
+description: Lue, miten voit tarkastella palvelun ajantasaista ja aikaisempaa kuntoa Microsoft 365 -hallintakeskuksesta.
 author: mgblythe
 manager: kfile
 ms.reviewer: ''
@@ -10,18 +10,18 @@ ms.topic: conceptual
 ms.date: 11/02/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: afb579c3163fac5da8b3a14f2f2b974d64213098
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 4ab0fe4e3398a37da34af02282a847f316f3f727
+ms.sourcegitcommit: 20ae9e9ffab6328f575833be691073de2061a64d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54296422"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58383149"
 ---
 # <a name="track-power-bi-service-health-in-office-365"></a>Power BI -palvelun kunnon seuraaminen Office 365:ssä
 
-Office 365 -hallintakeskus sisältää Power BI -järjestelmänvalvojille tärkeitä työkaluja, kuten tiedon palvelun kunnosta kyseisellä hetkellä ja aiemmin. Jos haluat käyttää näitä tietoja, sinulla on oltava jokin seuraavista rooleista: Power BI -palvelun järjestelmänvalvoja tai Office 365:n yleinen järjestelmänvalvoja. Saat lisätietoja rooleista [Power BI:hin liittyvät järjestelmänvalvojaroolit](service-admin-administering-power-bi-in-your-organization.md#administrator-roles-related-to-power-bi) -ohjeartikkelista.
+Microsoft 365 -hallintakeskus sisältää Power BI -järjestelmänvalvojille tärkeitä työkaluja, kuten tiedon palvelun kunnosta kyseisellä hetkellä ja aiemmin. Jos haluat käyttää näitä tietoja, sinulla on oltava jokin seuraavista rooleista: Power BI -palvelun järjestelmänvalvoja tai Office 365:n yleinen järjestelmänvalvoja. Saat lisätietoja rooleista [Power BI:hin liittyvät järjestelmänvalvojaroolit](service-admin-administering-power-bi-in-your-organization.md#administrator-roles-related-to-power-bi) -ohjeartikkelista.
 
-1. Kirjaudu sisään [Office 365 -hallintakeskukseen](https://portal.office.com/adminportal).
+1. Kirjaudu [Microsoft 365 -hallintakeskukseen](https://portal.office.com/adminportal).
 
 1. Valitse **Palvelun kunto** -ruutu.
 

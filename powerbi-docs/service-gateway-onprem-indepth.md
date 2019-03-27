@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 12/06/2017
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 18458820f98bcea32eb5288389d57808646d462c
-ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
+ms.openlocfilehash: fa7d10403ca6bd8dc94729b7b4fd631475a3671e
+ms.sourcegitcommit: 20ae9e9ffab6328f575833be691073de2061a64d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/16/2019
-ms.locfileid: "56325010"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58383412"
 ---
 # <a name="on-premises-data-gateway-in-depth"></a>Paikallinen tietoyhdyskäytävä tarkemmin
 Organisaatiosi käyttäjät voivat käyttää paikallisia tietoja (joihin heillä on jo käyttöoikeus), mutta ennen kuin kyseiset käyttäjät voivat muodostaa yhteyden paikalliseen tietolähteeseen, paikallinen tietoyhdyskäytävä on asennettava ja määritettävä. Yhdyskäytävä helpottaa nopeaa ja turvallista taustaviestintää pilvipalvelussa olevalta käyttäjältä paikalliselle tietolähteelle ja takaisin pilvipalveluun.
@@ -77,7 +77,7 @@ Pilvipalvelut tuntevat vain Azure Active Directoryn tilit. Vaikka olisit lisänn
 
 1. Voit lisätä tilejä Azure Active Directoryyn manuaalisesti.
    
-   Voit luoda tilin Azure-portaalissa tai Office 365 -hallintaportaalissa, ja tilin nimi vastaa paikallisen Active Directoryn tilin täydellistä käyttäjätunnusta.
+   Voit luoda tilin Azure-portaalissa tai Microsoft 365 -hallintakeskuksessa, ja tilin nimi vastaa paikallisen Active Directoryn tilin täydellistä käyttäjätunnusta.
 2. Voit synkronoida paikalliset tilit Azure Active Directory -vuokraajan kanssa [Azure AD Connect](/azure/active-directory/hybrid/how-to-connect-sync-whatis) -työkalun avulla.
    
    Azure AD Connect -työkalulla voidaan synkronoida hakemistot ja määrittää todentaminen, mukaan lukien salasanan hajautuksen synkronointi, läpivientitodentaminen ja liittoutuminen. Jos et ole vuokraajan järjestelmänvalvoja tai paikallisen toimialueen järjestelmänvalvoja, sinun on pyydettävä IT-järjestelmänvalvojaasi tekemään määritykset.

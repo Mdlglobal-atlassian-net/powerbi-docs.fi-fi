@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/06/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 4b017ae02ee88df47e426466c212ed6d87a2f92a
-ms.sourcegitcommit: 378265939126fd7c96cb9334dac587fc80291e97
+ms.openlocfilehash: d846a50ab87fe7d9f20034892e25dedde043f9ee
+ms.sourcegitcommit: 39bc75597b99bc9e8d0a444c38eb02452520e22b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57580032"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58430250"
 ---
 # <a name="power-bi-for-us-government-customers"></a>Power BI Yhdysvaltain valtionhallinnon asiakkaille
 **Power BI-palvelulla** on versio, joka on saatavilla Yhdysvaltain valtionhallinnon asiakkaille osana **Office 365 US Government Community** -tilauksia. Tässä artikkelissa kuvattu **Power BI -palvelun** versio on suunniteltu erityisesti Yhdysvaltain valtionhallinnon asiakkaille ja on erillinen ja erilainen kuin **Power BI -palvelun** kaupallinen versio.
@@ -39,7 +39,7 @@ Seuraavat ominaisuudet ovat saatavilla **Power BI US Government** -asiakkaille, 
 * Kaikki tiedot salataan sekä Azure SQL:ssä että Power BI:n Blob-säilössä
 * Muodosta yhteys palveluihin [sisältöpaketeilla](service-connect-to-services.md)
 
-## <a name="connectivity-between-government-and-public-azure-cloud-services"></a>Valtionhallinnon ja julkisten Azure Cloud -palveluiden välinen yhteys 
+## <a name="connectivity-between-government-and-global-azure-cloud-services"></a>Valtionhallinnon ja yleisten Azure Cloud -palveluiden välinen yhteys 
 
 Azure jaetaan useiden pilvien kesken. Vuokraajat voivat oletusarvoisesti avata palomuurisääntöjä pilvikohtaiseen esiintymään, mutta verkkopilvipalvelujen välinen verkko on erilainen ja edellyttää tiettyjen palomuurisääntöjen avaamista palveluiden väliselle viestinnälle. Jos olet Power BI -asiakas ja sinulla on julkisessa pilvessä aiemmin luotuja SQL-esiintymiä, joita sinun tarvitse käyttää, sinun on avattava SQL:ssä tietyt palomuurisäännöt Azure Government Cloud IP -tilaa varten seuraavissa tietokeskuksissa:
 
@@ -93,7 +93,7 @@ Seuraavat kysymykset (ja vastaukset) on toimitettu auttamaan sinua saamaan tarvi
 | --- | --- |
 | https://app.powerbi.com/ |[https://app.powerbigov.us](https://app.powerbigov.us) |
 
-**Kysymys:** Tilini on valmisteltu useammassa kuin yhdessä maakohtaisessa pilvipalvelussa. Miten voin valita yhdistettävän pilvipalvelun käyttäessäni **Power BI Desktopia**?
+**Kysymys:** Tilini on valmisteltu useammassa kuin yhdessä kansallisessa pilvipalvelussa. Miten voin valita yhdistettävän pilvipalvelun käyttäessäni **Power BI Desktopia**?
 
 **Vastaus**: Heinäkuun 2018 **Power BI Desktop** -julkaisusta alkaen voit valita, mihin pilvipalveluun haluat **Power BI Desktopilla** kirjautua.
 

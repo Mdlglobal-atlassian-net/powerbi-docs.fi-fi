@@ -2,21 +2,22 @@
 title: Laitteisto- ja ohjelmistovaatimukset Power BI-raporttipalvelimen asentamista varten
 description: Tässä artikkelissa määritetään laitteiston ja ohjelmiston vähimmäisvaatimukset Power BI -raporttipalvelimen asentamista ja käyttämistä varten.
 author: markingmyname
+ms.author: maghan
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 11/08/2018
-ms.author: maghan
-ms.openlocfilehash: 763b79b50266678a78dc956372f504f30836c4fc
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 28ff098c0f9e228b485a7eb94830ba3736a1463f
+ms.sourcegitcommit: 20ae9e9ffab6328f575833be691073de2061a64d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54292956"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58383504"
 ---
 # <a name="hardware-and-software-requirements-for-installing-power-bi-report-server"></a>Laitteisto- ja ohjelmistovaatimukset Power BI-raporttipalvelimen asentamista varten
+
 Tässä artikkelissa määritetään laitteiston ja ohjelmiston vähimmäisvaatimukset Power BI -raporttipalvelimen asentamista ja käyttämistä varten.
 
 ## <a name="processor-memory-and-operating-system-requirements"></a>Suoritin, muisti ja käyttöjärjestelmävaatimukset
@@ -28,14 +29,14 @@ Tässä artikkelissa määritetään laitteiston ja ohjelmiston vähimmäisvaati
 | Muisti |**Vähintään:** 1 GT<br/><br/> **Suositus:** Vähintään 4 Gt |
 | Suorittimen nopeus |**Vähintään:** x64-suoritin: 1,4 GHz<br/><br/> **Suositus:** 2,0 GHz tai nopeampi |
 | Suorittimen tyyppi |x64-suoritin: AMD Opteron, AMD Athlon 64, Intel Xeon ja Intel EM64T -tuki, Intel Pentium IV ja EM64T-tuki |
-| Käyttöjärjestelmä |Windows Server 2016 Datacenter<br><br>Windows Server 2016 Standard<br><br>Windows Server 2012 R2 Datacenter<br><br>Windows Server 2012 R2 Standard<br><br>Windows Server 2012 R2 Essentials<br><br>Windows Server 2012 R2 Foundation<br><br>Windows Server 2012 Datacenter<br><br>Windows Server 2012 Standard<br><br>Windows Server 2012 Essentials<br><br>Windows Server 2012 Foundation<br><br>Windows 10 Home<br><br>Windows 10 Professional<br><br>Windows 10 Enterprise<br><br>Windows 8.1<br><br>Windows 8.1 Pro<br><br>Windows 8.1 Enterprise<br><br>Windows 8<br><br>Windows 8 Pro<br><br>Windows 8 Enterprise |
+| Käyttöjärjestelmä |Windows Server 2019 Datacenter<br><br>Windows Server 2019 Standard<br><br>Windows Server 2016 Datacenter<br><br>Windows Server 2016 Standard<br><br>Windows Server 2012 R2 Datacenter<br><br>Windows Server 2012 R2 Standard<br><br>Windows Server 2012 R2 Essentials<br><br>Windows Server 2012 R2 Foundation<br><br>Windows Server 2012 Datacenter<br><br>Windows Server 2012 Standard<br><br>Windows Server 2012 Essentials<br><br>Windows Server 2012 Foundation<br><br>Windows 10 Home<br><br>Windows 10 Professional<br><br>Windows 10 Enterprise<br><br>Windows 8.1<br><br>Windows 8.1 Pro<br><br>Windows 8.1 Enterprise<br><br>Windows 8<br><br>Windows 8 Pro<br><br>Windows 8 Enterprise |
 
 > [!NOTE]
 > Power BI -raporttipalvelimen asennusta tuetaan vain x64 vain suorittimille.
-> 
-> 
+
 
 ## <a name="database-server-version-requirements"></a>Tietokantapalvelimen versiota koskevat vaatimukset
+
 SQL Serveriä käytetään isännöimään raporttipalvelintietokantoja. SQL Server-tietokantamoduulin esiintymä voi olla paikallinen tai etä-esiintymä. Raporttipalvelintietokantoja isännöivän SQL Server-tietokantamoduulin tuetut versiot ovat seuraavat:
 
 * SQL Server 2017
@@ -46,18 +47,21 @@ SQL Serveriä käytetään isännöimään raporttipalvelintietokantoja. SQL Ser
 Kun luot raporttipalvelimen tietokannan etätietokoneessa, sinun on määritettävä yhteys, jota käytetään verkkoyhteydellä varustetun toimialueen käyttäjätilin tai palvelutilin kanssa. Jos päätät käyttää SQL Server-etäesiintymää, kannattaa harkita huolellisesti, mitä tunnistetietoja raporttipalvelimen kannattaa käyttää SQL Server-esiintymään. Katso lisätietoja kohdasta [Raporttipalvelimen tietokantayhteyden määrittäminen](https://docs.microsoft.com/sql/reporting-services/install-windows/configure-a-report-server-database-connection-ssrs-configuration-manager).
 
 ## <a name="considerations"></a>Huomioitavaa
+
 Power BI-raporttipalvelin asentaa oletusarvot raporttipalvelimen ydinasetusten määrittämiseksi raporttipalvelimen toimintaa varten. Se sisältää seuraavat vaatimukset:
 
 * SQL Server-tietokantamoduulin on oltava käytettävissä asennuksen jälkeen ja ennen kuin määrität raporttipalvelimen tietokannan. Tietokantamoduulin esiintymä isännöi raporttipalvelimen tietokantaa, jonka Reporting Services Configuration Manager luo. Tietokantamoduulia ei vaadita varsinaisessa asennusvaiheessa.
-- Artikkelissa [SQL Serverin julkaisujen tukemat raportointipalveluominaisuudet](https://docs.microsoft.com/sql/reporting-services/reporting-services-features-supported-by-the-editions-of-sql-server-2016) mainitaan SQL Serverin julkaisujen erot.
+* Artikkelissa [SQL Serverin julkaisujen tukemat raportointipalveluominaisuudet](https://docs.microsoft.com/sql/reporting-services/reporting-services-features-supported-by-the-editions-of-sql-server-2016) mainitaan SQL Serverin julkaisujen erot.
 * Käyttäjätilin, jossa asennus suoritetaan, on oltava paikallisen Järjestelmänvalvojat-ryhmän jäsen.
 * Käyttäjätilillä, joka suorittaa Reporting Services Configuration Managerin, on oltava oikeus käyttää ja luoda tietokantoja tietokantamoduulin esiintymässä, joka isännöi raporttipalvelimen tietokantoja.
 * Asennusohjelman on voitava käyttää oletusarvoja varaamaan URL-osoitteet, joiden avulla saadaan pääsy raporttipalvelimelle ja verkkoportaaliin. Nämä arvot ovat portti 80, vahva yleismerkki ja näennäishakemiston nimet muodossa **ReportServer** ja **Raportit**.
 
 ## <a name="read-only-domain-controller-rodc"></a>Vain luku-toimialueen ohjain (RODC)
+
  Voit asentaa raporttipalvelimen ympäristössä, jossa on Read-Only Domain Controller (RODC). Reporting Services tarvitsee kuitenkin käyttöoikeuden Read-Write Domain Controlleriin, jotta se toimii oikein. Jos Reporting Services sisältää vain RODC-käyttöoikeuden, voi tulla virheitä, kun yrität hallita palvelua.
 
 ## <a name="power-bi-reports-and-analysis-services-live-connections"></a>Reaaliaikaisten Power BI -raporttien ja Analysis Services -yhteyksien käyttäminen
+
 Voit käyttää reaaliaikaista yhteyttä taulukkomuotoisiin tai moniulotteisiin esiintymiin. Analysis Services -palvelimen version on oltava oikea, jotta se toimii oikein.
 
 | **Palvelinversio** | **Pakollinen SKU** |
@@ -67,6 +71,7 @@ Voit käyttää reaaliaikaista yhteyttä taulukkomuotoisiin tai moniulotteisiin 
 | 2016 tai uudemmat |Standard SKU tai uudempi versio |
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
+
 [Mikä on Power BI -raporttipalvelin?](get-started.md)  
 [Järjestelmänvalvojan yleiskatsaus](admin-handbook-overview.md)  
 [Power BI -raporttipalvelimen asentaminen](install-report-server.md)  
@@ -74,4 +79,3 @@ Voit käyttää reaaliaikaista yhteyttä taulukkomuotoisiin tai moniulotteisiin 
 [SQL Server Data Tools (SSDT) -työkalujen lataaminen](http://go.microsoft.com/fwlink/?LinkID=616714)
 
 Onko sinulla muuta kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
-

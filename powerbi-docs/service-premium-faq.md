@@ -10,12 +10,12 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 02/05/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: fbb303a85895c08d0dc04630a12076a279e2586f
-ms.sourcegitcommit: 54d44deb6e03e518ad6378656c769b06f2a0b6dc
+ms.openlocfilehash: 6aa9265a006135ad87a61979b39a709c874f8d48
+ms.sourcegitcommit: 20ae9e9ffab6328f575833be691073de2061a64d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55794938"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58383333"
 ---
 # <a name="power-bi-premium-faq"></a>Power BI Premiumin usein kysytyt kysymykset
 
@@ -66,7 +66,7 @@ Kapasiteetti on yhdestä tai useammasta solmusta koostuva ryhmittely, jonka jär
 Power BI Premium laskutetaan kuukausittain vuositilauksen pohjalta.
 
 **Miten voin ostaa Power BI Premiumin?**  
-Power BI Premium on saatavilla Office 365 -hallintakeskuksessa. Lisätietoja on artikkelissa [Ohjeet Power BI Premiumin ostamiseen](service-admin-premium-purchase.md). Voit myös ottaa yhteyttä Microsoftin edustajaan ja kysyä lisätietoja.
+Power BI Premium on saatavilla Microsoft 365 -hallintakeskuksessa. Lisätietoja on artikkelissa [Ohjeet Power BI Premiumin ostamiseen](service-admin-premium-purchase.md). Voit myös ottaa yhteyttä Microsoftin edustajaan ja kysyä lisätietoja.
 
 **Mistä tietää, kuinka paljon Power BI Premium -kapasiteettia on hankittava?**  
 [Kustannuslaskurin](https://powerbi.microsoft.com/calculator/) avulla voit laskea, kuinka paljon Power BI Premium -kapasiteettia suunnilleen tarvitset.

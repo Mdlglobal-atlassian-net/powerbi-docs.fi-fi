@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 02/14/2019
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: 35efd62e6f00edd9ce6b58774dd73925a721dec5
-ms.sourcegitcommit: a054782370dec56d49bb205ee10b7e2018f22693
+ms.openlocfilehash: c268bd370f32d2089b3b80c7cf4317df33e67280
+ms.sourcegitcommit: 89e9875e87b8114abecff6ae6cdc0146df40c82a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56661924"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58306477"
 ---
 # <a name="export-reports-from-power-bi-to-pdf"></a>Raporttien vieminen Power BI:stä PDF-muotoon
 Power BI:llä voit julkaista raportin PDF-muodossa ja luoda helposti Power BI -raporttiisi perustuvan PDF-tiedoston. Kun **viet PDF-muotoon**, jokaisesta Power BI -raportin sivusta tulee yksittäinen sivu PDF-tiedostossa.
@@ -64,7 +64,7 @@ Huomioi seuraavat seikat ja rajoitukset, kun käytät **Vie PDF-muotoon** -toimi
 
 * Jos jaat koontinäytön organisaatiosi ulkopuoliselle henkilölle (joka ei ole Power BI -vuokraajasi toimialueella), kyseinen henkilö ei voi viedä jaettuun koontinäyttöön liittyviä raportteja PDF-muotoon. Jos olet esimerkiksi aaron@contoso.com, voit jakaa sisältöä käyttäjän cassie@cohowinery.com kanssa. cassie@cohowinery.com ei kuitenkaan voi viedä siihen liittyviä raportteja PDF-muotoon.
 
-* Kun PDF-muotoon viedään raportteja, jotka sisältävät taustakuvan, kuva saattaa vääristyä viennissä, jos Sivun tausta -asetuksena käytetään ”Sovita”-vaihtoehtoa.  Parhaan tuloksen varmistamiseksi on suositeltavaa käyttää ”Normaali”- tai ”Täytä”-asetusta, jolloin vältetään vietyyn tiedostoon liittyvät ongelmat.
+* Kun PDF-muotoon viedään raportteja, jotka sisältävät taustakuvan, kuva saattaa vääristyä viennissä, jos Sivun tausta -asetuksena käytetään ”Normaali”- tai ”Täyttö”-vaihtoehtoa.  Parhaan tuloksen varmistamiseksi on suositeltavaa käyttää ”Sovita”-asetusta, jolloin vältetään vietyyn tiedostoon liittyvät ongelmat.
 
 * Power BI -palvelu käyttää PDF-viennin kielenä Power BI:n kieliasetuksen kieltä. Jos tarkistaa kieliasetuksesi tai muuttaa sitä, valitse hammasrataskuvake > **Asetukset** > **Yleiset** > **Kieli**.
 

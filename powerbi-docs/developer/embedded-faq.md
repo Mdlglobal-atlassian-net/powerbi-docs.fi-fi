@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 02/05/2019
-ms.openlocfilehash: 9663c7eb6921718ac4b9690ddc50d78e59c6db3b
-ms.sourcegitcommit: 8fda7843a9f0e8193ced4a7a0e5c2dc5386059a6
+ms.openlocfilehash: abc45f3c32ee5db81f71295268db85bfce23aafd
+ms.sourcegitcommit: 39bc75597b99bc9e8d0a444c38eb02452520e22b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58174886"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58430434"
 ---
 # <a name="frequently-asked-questions-about-power-bi-embedded"></a>Usein kysyttyjä kysymyksiä – Power BI Embedded
 
@@ -274,9 +274,9 @@ Kyllä, voit käyttää [Azure-saldoasi](https://azure.microsoft.com/free/) Powe
 
 Power BI Embedded on osa Azurea, joten palvelua on mahdollista käyttää [rekisteröitymisen yhteydessä saadulla 200 $:n saldolla](https://azure.microsoft.com/free/).
 
-### <a name="is-power-bi-embedded-available-for-sovereign-clouds-us-government-germany-china"></a>Onko Power BI Embedded saatavilla maakohtaisissa pilvipalveluissa (Yhdysvaltain julkishallinto, Saksa, Kiina)?
+### <a name="is-power-bi-embedded-available-for-national-clouds-us-government-germany-china"></a>Onko Power BI Embedded saatavilla kansallisissa pilvipalveluissa (Yhdysvaltain julkishallinto, Saksa, Kiina)?
 
-Power BI Embedded on saatavilla joissakin [maakohtaisissa pilvipalveluissa](embed-sample-for-customers-sovereign-clouds.md). Se **EI** ole vielä saatavilla Kiinan pilvipalvelussa.
+Power BI Embedded on käytettävissä myös [kansallisissa pilvipalveluissa](embed-sample-for-customers-national-clouds.md).
 
 ### <a name="is-power-bi-embedded-available-for-non-profits-and-educational"></a>Onko Power BI Embedded käytettävissä järjestö- ja opetustarkoituksiin?
 

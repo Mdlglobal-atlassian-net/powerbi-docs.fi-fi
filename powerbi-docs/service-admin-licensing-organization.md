@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/30/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 65889d1082cee75ed56edc67ece9c99b5f344a6e
-ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
+ms.openlocfilehash: 5da6b465adc544bf64fd4dfb090a2e1faabee59d
+ms.sourcegitcommit: 20ae9e9ffab6328f575833be691073de2061a64d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55430217"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58383234"
 ---
 # <a name="power-bi-licensing-in-your-organization"></a>Power BI -käyttöoikeudet organisaatiossasi
 
@@ -35,7 +35,7 @@ Voit ostaa Power BI Pro -käyttöoikeudet Microsoft Office 365:n tai sertifioidu
 
 Yksittäiset käyttäjät organisaatiossasi voivat rekisteröityä Power BI Pro -kokeiluversion käyttäjäksi. Jos haluat lisätietoja, katso kohta [Rekisteröityminen Power BI:hin yksityishenkilönä](service-self-service-signup-for-power-bi.md).
 
-Käyttäjät, jotka hyödyntävät tätä tuotekohtaista Power BI Pro -kokeiluversiota, eivät näy Office 365:n järjestelmävalvojien portaalissa Power BI Pro Trial -käyttäjinä (he näkyvät Power BI:n ilmaiskäyttäjinä). He näkyvät kuitenkin Power BI Pro -kokeiluversion käyttäjinä Power BI:n tallennussivun hallinnassa.
+Käyttäjät, jotka hyödyntävät tätä tuotekohtaista Power BI Pro -kokeiluversiota, eivät näy Microsoft 365 -hallintakeskuksessa Power BI Pro Trial -käyttäjinä (he näkyvät Power BI:n ilmaiskäyttäjinä). He näkyvät kuitenkin Power BI Pro -kokeiluversion käyttäjinä Power BI:n tallennussivun hallinnassa.
 
 ### <a name="power-bi-pro-trial-for-organizations"></a>Power BI Pron kokeiluversio organisaatioille
 
@@ -47,7 +47,7 @@ Pidä mielessä seuraavat asiat ennen rekisteröitymistä:
 
 * Jokaista vuokraajaa kohti on rajattu vain yksi organisaatiokohtainen kokeiluversio. Tämä tarkoittaa sitä, että jos vuokraajallasi on jo käytössä Power BI Pro -kokeiluversio, et voi enää hankkia sitä uudelleen. Jos tarvitset apua, ota yhteyttä [Office 365:n laskutustukeen](https://support.office.microsoft.com/article/contact-support-for-business-products-admin-help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b?CorrelationId=552bbf37-214f-4202-80cb-b94240dcd671).
 
-1. Siirry [Office 365:n hallintakeskukseen](https://portal.office.com/adminportal/home#/homepage).
+1. Siirry [Microsoft 365 -hallintakeskukseen](https://portal.office.com/adminportal/home#/homepage).
 
 1. Valitse vasemmalla olevassa siirtymisruudussa **Laskutus** ja sitten **Tilaukset**.
 
@@ -71,7 +71,7 @@ Voit nyt [määrittää käyttöoikeuksia Office 365:ssä](https://support.offic
 
 Organisaatiosi käyttäjät voivat saada pääsyn maksuttomiin Power BI -käyttöoikeuksiin kahdella eri tavalla:
 
-* Voit antaa heille Power BI -lisenssin Office 365 -hallintaportaalissa.
+* Voit antaa heille Power BI -lisenssin Microsoft 365 -hallintakeskuksessa.
 
 * Jos käyttäjä [rekisteröityy Power BI Pro -kokeiluversion](service-self-service-signup-for-power-bi.md) käyttäjäksi ja kokeilujakso päättyy, käyttäjälle määritetään maksuton käyttöoikeus.
 
@@ -81,7 +81,7 @@ Jos aiot hallita käyttöoikeuspyyntöjä ja määrityksiä keskitetysti, tarkis
 
 Tämä käyttöoikeuslohko tulee näkyviin sen jälkeen, kun joku rekisteröityy ensimmäistä kertaa Power BI:hin yksittäisenä käyttäjänä. Prosessin aikana tämä käyttöoikeuslohko kiinnittyy organisaatioosi ja käyttöoikeus määritetään rekisteröityvälle käyttäjälle.
 
-1. Office 365 -hallintakeskuksessa kohdassa **Laskutus** > **Käyttöoikeudet** valitse **rajoittamaton**.
+1. Microsoft 365 -hallintakeskuksen kohdassa **Laskutus** > **Käyttöoikeudet** valitse **rajoittamaton**.
 
     ![Ilmainen rajoittamaton käyttöoikeuslohko](media/service-admin-licensing-organization/unlimited-licenses.png)
 
@@ -93,7 +93,7 @@ Tämä käyttöoikeuslohko tulee näkyviin sen jälkeen, kun joku rekisteröityy
 
 Jos rajoittamaton Power BI (ilmainen) -käyttöoikeuslohko ei ole käytettävissä etkä halua tehdä yksittäisiä rekisteröintejä, noudata näitä ohjeita.
 
-1. Siirry [Office 365:n hallintakeskukseen](https://portal.office.com/admin/default.aspx).
+1. Siirry [Microsoft 365 -hallintakeskukseen](https://portal.office.com/admin/default.aspx).
 
 1. Valitse vasemmasta siirtymisruudusta **Laskutus** > **Tilaukset**.
 

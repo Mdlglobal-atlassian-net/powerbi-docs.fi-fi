@@ -11,12 +11,12 @@ ms.date: 11/16/2018
 ms.author: mblythe
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: 59916f904c2905a6858e0c20a67a2c0eae9e8cca
-ms.sourcegitcommit: ac63b08a4085de35e1968fa90f2f49ea001b50c5
+ms.openlocfilehash: 27776b251734d025e4dcde9f525f321008647455
+ms.sourcegitcommit: 20ae9e9ffab6328f575833be691073de2061a64d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "57980400"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58383481"
 ---
 # <a name="using-auditing-within-your-organization"></a>Valvonnan käyttö organisaatiossa
 
@@ -34,7 +34,7 @@ Seuraavat vaatimukset on täytettävä valvontalokien käyttämistä varten:
 
     Jos haluat antaa valvontalokin käyttöoikeuden muulle kuin järjestelmänvalvojatilille, sinun on lisättävä kyseinen käyttäjä jompaankumpaan edellä mainituista rooliryhmistä. Vaihtoehtoisesti voit luoda Exchangen hallintakeskuksessa mukautetun rooliryhmän, jolle määrität valvontalokien käytön tai tarkastelun sallivan roolin ja johon sitten lisäät kyseisen tilin. Lisätietoja saat [Manage role groups in Exchange Online](/Exchange/permissions-exo/role-groups) (Rooliryhmien hallinta Exchange Onlinessa) -ohjeartikkelista.
 
-    Jos et pääse Exchangen hallintakeskukseen Office 365 -hallintakeskuksesta, siirry osoitteeseen https://outlook.office365.com/ecp ja kirjaudu sisään tunnistetiedoillasi.
+    Jos et pääse Exchangen hallintakeskukseen Microsoft 365 -hallintakeskuksesta, siirry osoitteeseen https://outlook.office365.com/ecp ja kirjaudu sisään tunnistetiedoillasi.
 
 * Jos pääset valvontalokiin, mutta et ole yleinen järjestelmänvalvoja tai Power BI -palvelun järjestelmänvalvoja, et voi käyttää Power BI -hallintaportaalia. Tässä tapauksessa sinun on käytettävä suoraa linkkiä [Office 365:n tietoturva- ja yhteensopivuuskeskukseen](https://sip.protection.office.com/#/unifiedauditlog).
 
@@ -50,9 +50,9 @@ Power BI:n valvontalokit ovat saatavilla suoraan [Office 365:n tietoturva- ja yh
 
 1. Valitse **Valvontalokit**.
 
-1. Valitse **Siirry O365-hallintakeskukseen**.
+1. Valitse **Siirry Microsoft 365 -hallintakeskukseen**.
 
-   ![Siirry O365-hallintakeskukseen](media/service-admin-auditing/audit-log-o365-admin-center.png)
+   ![Siirry Microsoft 365 -hallintakeskukseen](media/service-admin-auditing/audit-log-o365-admin-center.png)
 
 ## <a name="search-only-power-bi-activities"></a>Vain Power BI -toimien haku
 
@@ -214,7 +214,7 @@ Power BI valvoo seuraavia toimia.
 | Ota haltuun Power BI -tietolähde                   | TakeOverDatasource                          |                                          |
 | Ota haltuun Power BI -tietojoukko                        | TakeOverDataset                             |                                          |
 | Julkaisematon Power BI -sovellus                          | UnpublishApp                                |                                          |
-| Päivitä kapasiteetin resurssin hallinnan asetukset      | UpdateCapacityResourceGovernanceSettings    | Ei tällä hetkellä käytössä Office 365 -hallintaportaalissa |
+| Päivitä kapasiteetin resurssin hallinnan asetukset      | UpdateCapacityResourceGovernanceSettings    | Ei tällä hetkellä Microsoft 365 -hallintakeskuksessa |
 | Päivitetty kapasiteetin järjestelmänvalvoja                            | UpdateCapacityAdmins                        |                                          |
 | Päivitetty kapasiteetin näyttönimi                     | UpdateCapacityDisplayName                   |                                          |
 | Päivitetyt organisaation Power BI -asetukset          | UpdatedAdminFeatureSwitch                   |                                          |
