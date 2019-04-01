@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/06/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: d846a50ab87fe7d9f20034892e25dedde043f9ee
-ms.sourcegitcommit: 39bc75597b99bc9e8d0a444c38eb02452520e22b
+ms.openlocfilehash: 9cf3eea99813d315c72f3210f3938deae94505b0
+ms.sourcegitcommit: 9f31cd41bd92e398717da5a69a074273e8c6f8a6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58430250"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58473863"
 ---
 # <a name="power-bi-for-us-government-customers"></a>Power BI Yhdysvaltain valtionhallinnon asiakkaille
 **Power BI-palvelulla** on versio, joka on saatavilla Yhdysvaltain valtionhallinnon asiakkaille osana **Office 365 US Government Community** -tilauksia. Tässä artikkelissa kuvattu **Power BI -palvelun** versio on suunniteltu erityisesti Yhdysvaltain valtionhallinnon asiakkaille ja on erillinen ja erilainen kuin **Power BI -palvelun** kaupallinen versio.
@@ -60,6 +60,7 @@ Jotkin ominaisuudet, jotka ovat saatavilla **Power BI -palvelun** kaupallisessa 
 * **Power BI -sisältö Cortanassa** – Power BI:n tulokset eivät näy Cortanan hakutuloksissa. Tämä sisältää Power BI -sisällön (koontinäytöt, raportit, sovellukset) tulokset sekä tulokset, jotka näyttävät Cortanalle optimoidut raporttisivujen avainsanat.
 * **Ulkoisen käyttäjän kanssa jakaminen** – jakaminen on sallittua Power BI -vuokralaisen sisällä, ja alkaen kesäkuussa 2018 voita jakaa myös Power BI -vuokraajan ulkopuolisten käyttäjien kanssa. Katso artikkeli [Power BI -sisällön jakaminen ulkoisille vieraskäyttäjille Azure AD B2B:n avulla](service-admin-azure-ad-b2b.md).
 * **Raporttinäkymien ja raporttien käyttötilastot** – käyttötilastot eivät ole käytettävissä raporteille ja raporttinäkymille. Asiakkaat voivat käyttää valvontalokitietoja saadakseen organisaation sisäisen sisällön käyttötietoja.
+* **Tietovuot** – Tietovuot eivät ole käytettävissä.
 
 Jos sinulla on maksuttomia **Power BI** -käyttöoikeuksia määritettynä tilillesi, kyseiset tilit toimivat kaupallisessa**Power BI** -palvelun versiossa, joten ne ovat eivät ole osa **Power BI US Government** -tarjontaa. Voit kohdata seuraavia ongelmia maksuttomissa tileissä:
 

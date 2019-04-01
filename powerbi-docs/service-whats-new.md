@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 2/9/2019
 ms.author: nikhilga
 LocalizationGroup: Get started
-ms.openlocfilehash: 96faaf87c2aa04bdc1175f1b7cb78229bbb87a24
-ms.sourcegitcommit: 20ae9e9ffab6328f575833be691073de2061a64d
+ms.openlocfilehash: b65acda3ceb8d375cb34393828b74e191b2e5504
+ms.sourcegitcommit: 4aa99a8dde4e98909da888c151a71476f7bbfe81
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58383711"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58489587"
 ---
 ---
 # <a name="whats-new-in-the-power-bi-service"></a>Power BI -palvelun uudet toiminnot ja ominaisuudet
@@ -32,12 +32,21 @@ Saat lisätietoja uusista toiminnoista ja ominaisuuksista myös YouTube-kanavist
 * [Kaveri kuutiossa (YouTube)](https://www.youtube.com/channel/UCFp1vaKzpfvoGai0vE5VJ0w)
 
 
-## <a name="february-2019"></a>Helmikuu 2019
-* Kuormitukset ja aktiivisten tietojoukkojen kokotiedot [kapasiteetin valvontasovelluksessa](https://powerbi.microsoft.com/blog/new-monitoring-capabilities-for-power-bi-premium-capacities/).
-* Vie PDF-tiedostoon ja pyynnöstä hankittuihin sähköpostitilauksiin (service-report-subscribe.md).
-* Joukkotoiminnot hallintaportaalissa.
+## <a name="march-2019"></a>Maaliskuu 2019
+* Power BI Premiumin Multi-Geo tulee yleisesti saataville.
+* Azure B2B:n Power BI -sisällön tuen muokkaaminen ja hallinta.
 
 ## <a name="previous-months-2019"></a>Edelliset kuukaudet (2019)
+### <a name="february-2019"></a>Helmikuu 2019
+* Kuormitukset ja aktiivisten tietojoukkojen kokotiedot [kapasiteetin valvontasovelluksessa](https://powerbi.microsoft.com/blog/new-monitoring-capabilities-for-power-bi-premium-capacities/).
+* Power BI -raporttien vienti PDF-muotoon.
+* [Sähköpostitilaukset tarvittaessa](service-report-subscribe.md).
+* Joukkotoiminnot hallintaportaalissa.
+* Suodatettu vienti PPT- ja PDF-muotoon.
+* [Ohje- ja tukiasetukset](https://powerbi.microsoft.com/en-us/blog/tailoring-help-and-support-for-power-bi-users/) hallintaportaalissa.
+* Tietojen periytymisen käyttökokemus [tietovuoille](service-dataflows-overview.md).
+* Sertifioidut mukautetut visualisoinnit -asetus hallintaportaalissa.
+
 ### <a name="january-2019"></a>Tammikuu 2019
 * [Turvallisten Power BI -raporttien upottaminen](service-embed-secure.md) sisäisiin portaaleihin tai verkkosivustoihin.
 * Päivittää [tietovoiden](service-dataflows-overview.md) editoriin uudet liittimet sekä alkuperäisten SQL-kyselyjen ja Power Query Online -muunnosten tuen.

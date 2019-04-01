@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 02/14/2019
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: c268bd370f32d2089b3b80c7cf4317df33e67280
-ms.sourcegitcommit: 89e9875e87b8114abecff6ae6cdc0146df40c82a
+ms.openlocfilehash: e15cb6e09ff493512bb1b87939004c851b31fa10
+ms.sourcegitcommit: 9f31cd41bd92e398717da5a69a074273e8c6f8a6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58306477"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58473725"
 ---
 # <a name="export-reports-from-power-bi-to-pdf"></a>Raporttien vieminen Power BI:stä PDF-muotoon
 Power BI:llä voit julkaista raportin PDF-muodossa ja luoda helposti Power BI -raporttiisi perustuvan PDF-tiedoston. Kun **viet PDF-muotoon**, jokaisesta Power BI -raportin sivusta tulee yksittäinen sivu PDF-tiedostossa.
@@ -67,6 +67,8 @@ Huomioi seuraavat seikat ja rajoitukset, kun käytät **Vie PDF-muotoon** -toimi
 * Kun PDF-muotoon viedään raportteja, jotka sisältävät taustakuvan, kuva saattaa vääristyä viennissä, jos Sivun tausta -asetuksena käytetään ”Normaali”- tai ”Täyttö”-vaihtoehtoa.  Parhaan tuloksen varmistamiseksi on suositeltavaa käyttää ”Sovita”-asetusta, jolloin vältetään vietyyn tiedostoon liittyvät ongelmat.
 
 * Power BI -palvelu käyttää PDF-viennin kielenä Power BI:n kieliasetuksen kieltä. Jos tarkistaa kieliasetuksesi tai muuttaa sitä, valitse hammasrataskuvake > **Asetukset** > **Yleiset** > **Kieli**.
+
+* URL-suodattimia ei oteta tällä hetkellä huomioon, kun valitset viennin kohdalla ”Nykyiset arvot”.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 [Raportin tulostaminen](end-user-print.md)

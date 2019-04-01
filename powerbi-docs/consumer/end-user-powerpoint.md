@@ -11,18 +11,19 @@ ms.topic: conceptual
 ms.date: 02/28/2019
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: 385a2cb41c0fa58ec3df4ea675a6f43a5b868935
-ms.sourcegitcommit: d4d36b6b200f2693b545e4a3e66d94c77a3cfafb
+ms.openlocfilehash: f06b67dc0072c125d9430079fa756d963fd99f23
+ms.sourcegitcommit: 9f31cd41bd92e398717da5a69a074273e8c6f8a6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57014296"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58473794"
 ---
 # <a name="export-reports-from-power-bi-to-powerpoint"></a>Raporttien vieminen Power BI:stä PowerPointiin
 Voit julkaista Power BI:llä raportin **Microsoft PowerPointiin** ja luoda helposti Power BI -raporttiin perustuvan diasarjan. **PowerPointiin vietäessä** tapahtuu seuraavaa:
 
 * Jokaisesta Power BI -raportin sivusta tulee yksittäinen dia PowerPointissa
-* Power BI -raportin jokainen sivu viedään yksittäisenä, korkean resoluution kuvana PowerPointiin <!-- * The filters and slicers settings that you added to the report are preserved. -->
+* Power BI -raportin jokainen sivu viedään yksittäisenä, korkean resoluution kuvana PowerPointiin
+<!-- * The filters and slicers settings that you added to the report are preserved. -->
 * PowerPointissa luodaan linkki Power BI -raporttiin 
 
 **Power BI -raportin** vieminen **PowerPointiin** on nopeaa. Seuraa seuraavassa osiossa kuvailtuja vaiheita.
@@ -91,6 +92,7 @@ Huomioi seuraavat seikat ja rajoitukset, kun käytät **Vieminen PowerPointiin**
 * Kuten edellä mainittiin, kukin raporttisivu viedään PowerPoint-tiedostoon yhtenä kuvana.
 * Power BI -palvelu käyttää PowerPoint-viennin kielenä Power BI:n kieliasetusta. Jos haluat nähdä kieliasetuksesi tai muuttaa sitä, valitse hammasrataskuvake ![hammasrataskuvake](media/end-user-powerpoint/power-bi-settings-icon.png)  **> Asetukset > Yleiset > Kieli**.
 * Viedyn PowerPoint-tiedoston kansidian **Latausajankohta**-kellonajaksi määritetään tietokoneesi aikavyöhyke vientihetkellä.
+* URL-suodattimia ei oteta tällä hetkellä huomioon, kun valitset viennin kohdalla ”Nykyiset arvot”.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 [Raportin tulostaminen](end-user-print.md)

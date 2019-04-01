@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 01/22/2019
-ms.openlocfilehash: 254b0c5c2e5a9b39f5d04f002a2791f1cd432c52
-ms.sourcegitcommit: 364ffa1178cdfb0a20acffc0fd79922ebc892d72
+ms.openlocfilehash: 5a39c976a9b9812754ade2e30eac13aa922fd7f9
+ms.sourcegitcommit: 4aa99a8dde4e98909da888c151a71476f7bbfe81
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57226200"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58489564"
 ---
 # <a name="row-level-security-rls-in-power-bi-report-server"></a>Rivitason suojaus (RLS) Power BI -raporttipalvelimessa
 
@@ -28,11 +28,11 @@ Voit määrittää rivitason suojauksen raporteille, jotka on tuotu Power BI:hin
 
 Oletuksena rivitason suojauksen suodatuksessa käytetään yksisuuntaisia suodattimia riippumatta siitä, onko suhteet määritetty yksi- vai kaksisuuntaisiksi. Voit ottaa rivitason suojauksessa kaksisuuntaisen ristiinsuodatuksen käyttöön manuaalisesti.
 
-- Valitse suhde ja sitten  **Ota suojaussuodattimet käyttöön molempiin suuntiin**  -valintaruutu. 
+- Valitse suhde ja sitten **Ota suojaussuodattimet käyttöön molempiin suuntiin** -valintaruutu. 
 
     ![Suojaussuodattimen käyttäminen](media/row-level-security-report-server/rls-apply-security-filter.png)
 
-Valitse tämä ruutu, jos otat käyttöön käyttäjänimeen tai kirjautumistunnukseen perustuvan  [dynaamisen rivitason suojauksen](https://docs.microsoft.com/sql/analysis-services/supplemental-lesson-implement-dynamic-security-by-using-row-filters). 
+Valitse tämä ruutu, jos otat käyttöön käyttäjänimeen tai kirjautumistunnukseen perustuvan [dynaamisen rivitason suojauksen](https://docs.microsoft.com/sql/analysis-services/supplemental-lesson-implement-dynamic-security-by-using-row-filters). 
 
 Lisätietoja on artikkelissa [Kaksisuuntainen ristiinsuodatus käyttämällä DirectQueryä Power BI Desktopissa](../desktop-bidirectional-filtering.md) ja teknisessä raportissa [Taulukkomuotoisen liiketoimintatietojen semanttisen mallin suojaaminen](http://download.microsoft.com/download/D/2/0/D20E1C5F-72EA-4505-9F26-FEF9550EFD44/Securing%20the%20Tabular%20BI%20Semantic%20Model.docx).
 
@@ -85,7 +85,7 @@ Seuraavassa on luettelo Power BI -mallien rivitason suojauksen tämänhetkisist�
 
 Käyttäjät, joiden raporteissa käytettiin username()-DAX-funktiota, huomaavat funktion uuden toimintatavan, jossa funktio palauttaa täydellisen käyttäjätunnuksen PAITSI JOS DirectQuerya käytetään yhdessä integroidun suojauksen kanssa.  Koska rivitason suojaus ei kyseisessä skenaariossa päde, skenaarioon ei tule muutoksia.
 
-Voit määrittää rivitason suojauksen vain tietojoukoille, jotka on luotu Power BI Desktopin avulla. Jos haluat ottaa rivitason suojauksen käyttöön tietojoukoille, jotka on luotu Excelin avulla, sinun on ensin muunnettava tiedostosi Power BI Desktop (PBIX) -tiedostoiksi. Lue lisätietoja artikkelista [Excel-tiedostojen muuntaminen](../desktop-import-excel-workbooks.md).
+Voit määrittää rivitason suojauksen vain tietojoukoille, jotka on luotu Power BI Desktopin avulla. Jos haluat ottaa rivitason suojauksen käyttöön tietojoukoille, jotka on luotu Excelin avulla, sinun on ensin muunnettava tiedostosi Power BI Desktop (PBIX) -tiedostoiksi. Lue lisätietoja artikkelista [Excel-tiedostojen muuntaminen](../desktop-import-excel-workbooks.md).
 
 Toiminto tukee ainoastaan keräämistä, muuntamista ja lataamista (ETL) sekä DirectQuery-yhteyksiä, joissa käytetään tallennettuja tunnistetietoja. Analysis Servicesiin muodostettavat reaaliaikaiset yhteydet ja DirectQuery-yhteydet, joissa käytetään integroitua todentamista, käsitellään pohjana olevassa tietolähteessä. 
 
