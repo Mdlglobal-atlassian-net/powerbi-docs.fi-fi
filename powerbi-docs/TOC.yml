@@ -402,6 +402,8 @@ items:
       href: service-tutorial-use-cognitive-services.md
     - name: Automaattianalyysipalveluiden Power BI -integrointi
       href: service-tutorial-invoke-machine-learning-model.md
+    - name: Koneoppimismallin luominen Power BI:llä (esikatselu)
+      href: service-tutorial-build-machine-learning-model.md
   - name: Käsitteet
     items:
     - name: Power BI -palvelun uudet toiminnot ja ominaisuudet
@@ -654,8 +656,10 @@ items:
         href: service-dataflows-add-cdm-folder.md
       - name: Integroi Automaattianalyysipalvelut Power BI:ssä
         href: service-machine-learning-integration.md
-      - name: Käytä Kognitiivisia palveluja Power BI:ssä
+      - name: Kognitiivisten palveluiden käyttäminen Power BI:ssä
         href: service-cognitive-services.md
+      - name: Automaattianalyysipalvelut Power BI:ssä (esikatselu)
+        href: service-machine-learning-automated.md
     - name: Sivutetut raportit Power BI:ssä
       items:
       - name: Mitä sivutetut raportit ovat? (esikatselu)
@@ -1327,9 +1331,9 @@ items:
       href: service-admin-governance.md
     - name: Power BI:n suojaus
       href: service-admin-power-bi-security.md
-ms.openlocfilehash: 3259c3fe3bc8756355dd75324a84dd0322bfef3a
-ms.sourcegitcommit: c98fe18c52cd06a52b12aa9aa09d58e8a406542a
+ms.openlocfilehash: 1de602579c97a56c7db5b0b92a8b6bc9f1134ec6
+ms.sourcegitcommit: 6070b5726629dde6dee262f77e9957496405d501
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58563662"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58639364"
