@@ -628,21 +628,21 @@ items:
         href: publisher-for-excel.md
     - name: Omatoiminen tietojen valmistelu
       items:
-      - name: Omatoiminen tietojen valmistelu tietovoita käyttäen (esikatselu)
+      - name: Omatoiminen tietojen valmisteleminen tietovoiden avulla
         href: service-dataflows-overview.md
-      - name: Tietovoiden luominen ja käyttäminen (esikatselu)
+      - name: Tietovoiden luominen ja käyttäminen
         href: service-dataflows-create-use.md
-      - name: Lasketut entiteetit ja Power BI Premium (esikatselu)
+      - name: Lasketut entiteetit ja Power BI Premium
         href: service-dataflows-computed-entities-premium.md
-      - name: Yhteyden muodostaminen tietovoita sisältäviin tietolähteisiin (esikatselu)
+      - name: Yhteyden muodostaminen tietovoita sisältäviin tietolähteisiin
         href: service-dataflows-data-sources.md
-      - name: Tietovoiden käyttö paikallisiin tietolähteisiin (esikatselu)
+      - name: Tietovoiden käyttö paikallisiin tietolähteisiin
         href: service-dataflows-on-premises-gateways.md
-      - name: Entiteettien linkittäminen tietovoiden välillä (esikatselu)
+      - name: Entiteettien linkittäminen tietovoiden välillä
         href: service-dataflows-linked-entities.md
-      - name: Lisäävän päivityksen käyttö tietovoiden kanssa (esikatselu)
+      - name: Lisäävän päivityksen käyttö tietovoiden kanssa
         href: service-dataflows-incremental-refresh.md
-      - name: Tietovoiden kehittäjäresurssit (esikatselu)
+      - name: Kehittäjien tietovuoresurssit
         href: service-dataflows-developer-resources.md
       - name: Yhdistäminen tietovoihin Power BI Desktopissa
         href: desktop-connect-dataflows.md
@@ -654,9 +654,9 @@ items:
         href: service-dataflows-configure-workspace-storage-settings.md
       - name: Lisää CDM-kansio Power BI:hin tietovuona (esikatselu)
         href: service-dataflows-add-cdm-folder.md
-      - name: Integroi Automaattianalyysipalvelut Power BI:ssä
+      - name: Integroi Automaattianalyysipalvelut Power BI:ssä (esikatselu)
         href: service-machine-learning-integration.md
-      - name: Kognitiivisten palveluiden käyttäminen Power BI:ssä
+      - name: Kognitiivisten palveluiden käyttäminen Power BI:ssä (esikatselu)
         href: service-cognitive-services.md
       - name: Automaattianalyysipalvelut Power BI:ssä (esikatselu)
         href: service-machine-learning-automated.md
@@ -1331,9 +1331,9 @@ items:
       href: service-admin-governance.md
     - name: Power BI:n suojaus
       href: service-admin-power-bi-security.md
-ms.openlocfilehash: 1de602579c97a56c7db5b0b92a8b6bc9f1134ec6
-ms.sourcegitcommit: 6070b5726629dde6dee262f77e9957496405d501
+ms.openlocfilehash: 82627f07ebaca2c0d80444c979e660802b8dd561
+ms.sourcegitcommit: 8525b6365f3e224176730f4b8e5dae83f540a4ff
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58639364"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58795747"
