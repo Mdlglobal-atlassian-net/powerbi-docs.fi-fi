@@ -880,6 +880,18 @@ items:
         href: developer/embedding.md
       - name: Mikä on Power BI Embedded Azuressa
         href: developer/azure-pbie-what-is-power-bi-embedded.md
+    - name: Pika-aloitus
+      items:
+      - name: Kapasiteettien hallinta Azuressa
+        items:
+        - name: Luo kapasiteettia Azuressa
+          href: developer/azure-pbie-create-capacity.md
+        - name: Luo kapasiteettia Multi-Geon avulla Azuressa
+          href: developer/embedded-multi-geo.md
+        - name: Skaalaa kapasiteettia Azuressa
+          href: developer/azure-pbie-scale-capacity.md
+        - name: Keskeytä ja käynnistä kapasiteettia Azuressa
+          href: developer/azure-pbie-pause-start.md
     - name: Opetusohjelmat
       items:
       - name: Upota asiakkaille tarkoitettua sisältöä
@@ -1034,6 +1046,16 @@ items:
       items:
       - name: Tietojen työntäminen tietojoukkoon
         href: developer/walkthrough-push-data.md
+      - name: Sovelluksen Azure AD -rekisteröinti
+        href: developer/walkthrough-push-data-register-app-with-azure-ad.md
+      - name: Todennustunnuksen hankkiminen
+        href: developer/walkthrough-push-data-get-token.md
+      - name: Tietojoukon luominen
+        href: developer/walkthrough-push-data-create-dataset.md
+      - name: Tietojoukon hakeminen rivien lisäämiseksi
+        href: developer/walkthrough-push-data-get-datasets.md
+      - name: Rivien lisääminen taulukkoon
+        href: developer/walkthrough-push-data-add-rows.md
     - name: Käsitteet
       items:
       - name: Automaattinen reaaliaikaisten tietojen säilytyskäytäntö
@@ -1048,16 +1070,6 @@ items:
           href: developer/api-data-model-versioning.md
     - name: Ohjeet
       items:
-      - name: Sovelluksen Azure AD -rekisteröinti
-        href: developer/walkthrough-push-data-register-app-with-azure-ad.md
-      - name: Todennustunnuksen hankkiminen
-        href: developer/walkthrough-push-data-get-token.md
-      - name: Tietojoukon luominen
-        href: developer/walkthrough-push-data-create-dataset.md
-      - name: Tietojoukon hakeminen rivien lisäämiseksi
-        href: developer/walkthrough-push-data-get-datasets.md
-      - name: Rivien lisääminen taulukkoon
-        href: developer/walkthrough-push-data-add-rows.md
       - name: Tunnistetietojen määrittäminen
         href: developer/configure-credentials.md
       - name: Tunnistetietojen salaaminen
@@ -1331,9 +1343,9 @@ items:
       href: service-admin-governance.md
     - name: Power BI:n suojaus
       href: service-admin-power-bi-security.md
-ms.openlocfilehash: 82627f07ebaca2c0d80444c979e660802b8dd561
-ms.sourcegitcommit: 8525b6365f3e224176730f4b8e5dae83f540a4ff
+ms.openlocfilehash: acffbdf5b7a4951baae0dc6a4afc624371da560b
+ms.sourcegitcommit: 3a05f34dbeabac62ea8c35c12a045284271971bc
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58795747"
+ms.lasthandoff: 04/03/2019
+ms.locfileid: "58872589"
