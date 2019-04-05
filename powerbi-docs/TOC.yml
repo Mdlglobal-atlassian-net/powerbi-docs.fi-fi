@@ -500,8 +500,10 @@ items:
         href: refresh-excel-file-local-drive.md
       - name: Excel-työkirjan tietojoukon päivittäminen – pilvipalvelu
         href: refresh-excel-file-onedrive.md
-      - name: OneDriven .csv-tiedostosta luodun tietojoukon päivittäminen
+      - name: OneDriven .csv-tiedoston tietojoukon päivittäminen
         href: refresh-csv-file-onedrive.md
+      - name: Kyselyn tallentaminen välimuistiin Power BI Premiumissa
+        href: power-bi-query-caching.md
       - name: Päivitystilanteiden vianmääritys
         href: refresh-troubleshooting-refresh-scenarios.md
     - name: koontinäytöt
@@ -1343,9 +1345,9 @@ items:
       href: service-admin-governance.md
     - name: Power BI:n suojaus
       href: service-admin-power-bi-security.md
-ms.openlocfilehash: acffbdf5b7a4951baae0dc6a4afc624371da560b
-ms.sourcegitcommit: 3a05f34dbeabac62ea8c35c12a045284271971bc
+ms.openlocfilehash: 9790d4bc855411ed54ce12123d03f5ef731d4689
+ms.sourcegitcommit: de0b72915183a8a784d3227838bd704c1c209422
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/03/2019
-ms.locfileid: "58872589"
+ms.lasthandoff: 04/04/2019
+ms.locfileid: "58914209"
