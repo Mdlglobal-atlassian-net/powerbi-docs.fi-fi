@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 03/31/2018
-ms.openlocfilehash: 9589c2cf5277995459a9f43f573b6e19c4c8f748
-ms.sourcegitcommit: e9c45d6d983e8cd4cb5af938f838968db35be0ee
+ms.openlocfilehash: 3897464cbc2a233f7b1aa6ee2f0fd70d39ff16aa
+ms.sourcegitcommit: 3a05f34dbeabac62ea8c35c12a045284271971bc
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57327960"
+ms.lasthandoff: 04/03/2019
+ms.locfileid: "58872497"
 ---
 # <a name="changelog-for-power-bi-report-server"></a>Power BI -raporttipalvelimen muutosloki
 
@@ -23,6 +23,13 @@ Power BI -raporttipalvelimen muutoslokissa on listattu jokaisen koontiversion uu
 Lisätietoja uusista ominaisuuksista on artikkelissa [Power BI -raporttipalvelinten uudet ominaisuudet](whats-new.md). 
 
 ## <a name="january-2019"></a>Tammikuu 2019
+
+- **Power BI -raporttipalvelin**          
+    - *Versio 1.4.7024.16477 (koontiversio 15.0.1102.299), julkaistu: 28. maaliskuuta 2019*
+        - Ohjelmavirhekorjauksia
+            - Power BI -raportit
+                - Korjattu SAP Hanan ja SAP BW:n suoran kyselyn yhteydessä ilmennyt perustunnistetietoihin liittyvä ongelma
+                - Korjattu OData-syötteen päivityksen epäonnistuminen ”Tiedostoa tai kokoonpanoa Microsoft.OData.Core.NetFX35.V7 ei voitu ladata”
 
 - **Power BI -raporttipalvelin**            
     - *Versio 1.4.6969.7395 (koontiversio 15.0.1102.235), julkaistu: 30. tammikuuta 2019*
@@ -185,7 +192,7 @@ Lisätietoja uusista ominaisuuksista on artikkelissa [Power BI -raporttipalvelin
         - Ominaisuudet
             - Sisältää Power BI -raporttipalvelinyhteyden edellyttämiä muutoksia (maaliskuu 2017).
 
-## <a name="june-2017"></a>Kesäkuu 2017
+## <a name="june-2017"></a>Kesä 2017
 
 - **Power BI -raporttipalvelin**
     - *Koontiversio 14.0.600.309, julkaistu: 10. tammikuuta 2018*
@@ -213,8 +220,8 @@ Lisätietoja uusista ominaisuuksista on artikkelissa [Power BI -raporttipalvelin
 
 [Mikä on Power BI -raporttipalvelin?](get-started.md)
 [Järjestelmänvalvojien yleiskatsaus](admin-handbook-overview.md)  
-[Power BI -raporttipalvelimen asentaminen](install-report-server.md)  
+[Asenna Power BI -raporttipalvelin](install-report-server.md)  
 [Raportin muodostimen lataaminen](https://www.microsoft.com/download/details.aspx?id=53613)  
 [SQL Server Data Tools (SSDT) -työkalujen lataaminen](http://go.microsoft.com/fwlink/?LinkID=616714)
 
-Onko sinulla muuta kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
+Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)

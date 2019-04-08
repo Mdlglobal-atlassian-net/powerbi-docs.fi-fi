@@ -596,11 +596,11 @@ items:
         href: service-insights-optimize.md
     - name: Yhteistyö Power BI:ssä
       items:
+      - name: Uusien työtilojen luominen
+        href: service-create-the-new-workspaces.md
       - name: Sovellustyötilojen luominen
         href: service-create-workspaces.md
-      - name: Uusien työtilojen luominen (esikatselu)
-        href: service-create-the-new-workspaces.md
-      - name: Sovellusten luominen ja jakaminen
+      - name: Sovellusten julkaisu työtiloista
         href: service-create-distribute-apps.md
       - name: Tietojen tallennuksen hallinta työtiloissa
         href: service-admin-manage-your-data-storage-in-power-bi.md
@@ -882,18 +882,6 @@ items:
         href: developer/embedding.md
       - name: Mikä on Power BI Embedded Azuressa
         href: developer/azure-pbie-what-is-power-bi-embedded.md
-    - name: Pika-aloitus
-      items:
-      - name: Kapasiteettien hallinta Azuressa
-        items:
-        - name: Luo kapasiteettia Azuressa
-          href: developer/azure-pbie-create-capacity.md
-        - name: Luo kapasiteettia Multi-Geon avulla Azuressa
-          href: developer/embedded-multi-geo.md
-        - name: Skaalaa kapasiteettia Azuressa
-          href: developer/azure-pbie-scale-capacity.md
-        - name: Keskeytä ja käynnistä kapasiteettia Azuressa
-          href: developer/azure-pbie-pause-start.md
     - name: Opetusohjelmat
       items:
       - name: Upota asiakkaille tarkoitettua sisältöä
@@ -930,6 +918,8 @@ items:
         href: developer/get-azuread-access-token.md
       - name: Q&A:n upottaminen
         href: developer/qanda.md
+      - name: Upotetun sovelluksen vianmääritys
+        href: developer/embedded-troubleshoot.md
       - name: Kapasiteettien hallinta Azuressa
         items:
         - name: Luo kapasiteettia Azuressa
@@ -940,8 +930,6 @@ items:
           href: developer/azure-pbie-scale-capacity.md
         - name: Keskeytä ja käynnistä kapasiteettia Azuressa
           href: developer/azure-pbie-pause-start.md
-        - name: Upotetun sovelluksen vianmääritys
-          href: developer/embedded-troubleshoot.md
       - name: Siirtyminen työtilakokoelmista
         items:
         - name: Siirtyminen Power BI -työtilakokoelmista
@@ -1048,8 +1036,6 @@ items:
       items:
       - name: Tietojen työntäminen tietojoukkoon
         href: developer/walkthrough-push-data.md
-      - name: Sovelluksen Azure AD -rekisteröinti
-        href: developer/walkthrough-push-data-register-app-with-azure-ad.md
       - name: Todennustunnuksen hankkiminen
         href: developer/walkthrough-push-data-get-token.md
       - name: Tietojoukon luominen
@@ -1345,9 +1331,9 @@ items:
       href: service-admin-governance.md
     - name: Power BI:n suojaus
       href: service-admin-power-bi-security.md
-ms.openlocfilehash: 9790d4bc855411ed54ce12123d03f5ef731d4689
-ms.sourcegitcommit: de0b72915183a8a784d3227838bd704c1c209422
+ms.openlocfilehash: a804129b06b4eb92e67ae18251cbb9f950fe1beb
+ms.sourcegitcommit: ce59fa2b49658d67a2cbc77f81c53a8266a34e36
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/04/2019
-ms.locfileid: "58914209"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59053434"

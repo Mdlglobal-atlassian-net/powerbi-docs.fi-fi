@@ -9,19 +9,29 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 11/08/2018
 ms.author: mshenhav
-ms.openlocfilehash: 7c17d41d4278c292e494fe6f7203a32d93f2714d
-ms.sourcegitcommit: 796bf513bf8669676e2a44627b56221b1629a6a8
+ms.openlocfilehash: 8755f48653097d5754c4c908f07ea91bdb3c0d53
+ms.sourcegitcommit: 3a05f34dbeabac62ea8c35c12a045284271971bc
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56826717"
+ms.lasthandoff: 04/03/2019
+ms.locfileid: "58872727"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Power BI -mobiilisovellusten uudet ominaisuudet
 Lisätietoja aiheeseen liittyvistä uusista ominaisuuksista:
 
 * [Power BI -tiimin mobiilisovelluksia käsittelevä blogi](https://powerbi.microsoft.com/blog/tag/mobile/)
 * [Power BI Desktopin uudet ominaisuudet](../../desktop-latest-update.md)  
-* [Power BI -palvelun uudet ominaisuudet](../../service-whats-new.md)  
+* [Power BI -palvelun uudet toiminnot ja ominaisuudet](../../service-whats-new.md)  
+
+## <a name="march-2019"></a>Maaliskuu 2019
+
+### <a name="supporting-external-guest-users-in-power-bi-apps-ios-android"></a>Ulkopuolisten vieraskäyttäjien tukeminen Power BI -sovelluksissa (iOS, Android)
+
+Voit käyttää toisen organisaation kanssasi jakamaa Power BI -sisältöä suoraan sovelluksesta (B2B). Lue lisää Power BI -mobiilisovellusten B2B:stä [tästä](https://powerbi.microsoft.com/blog/power-bi-mobile-apps-now-support-azure-ad-b2b-guest-users/).
+
+### <a name="enhancing-windows-presentation-mode-with-slideshow-windows"></a>Diaesityksen lisääminen Windows-esitystilaan (Windows)
+
+[Diaesityksen](https://powerbi.microsoft.com/blog/enhancing-presentation-mode-with-slideshow-in-windows-power-bi-app/) ansiosta voit käyttää toimistosi julkisia näyttöjä Power BI -raporttien esittämiseksi koko näytössä kiertäen automaattisesti raporttisivuja.  
 
 ## <a name="january---february-2019"></a>Tammikuu - helmikuu 2019
  
@@ -377,7 +387,7 @@ Jos kuvaruudulla on koontinäytön omistajan määrittämä mukautettu URL-osoit
 
 Voit nyt päivittää Apple Watch -tiedot suoraan Watch-sovelluksesta. Päivitä tiedot painamalla koontinäytön indeksisivua pitkään. (Power BI -mobiilisovelluksen on oltava käynnissä taustalla iPhonessa, jotta tämä toimii.)
 
-#### <a name="android"></a>Android
+#### <a name="android"></a>Android-
 **Mukautettu URL-osoite kuvaruudussa**
 
 Jos kuvaruudulla on koontinäytön omistajan määrittämä mukautettu URL-osoite, siirryt nyt ruutua napauttaessasi suoraan kyseiseen URL-osoitteeseen avaamatta ruutua kohdistustilassa. Lisäksi valmiiksi määritettyjä mukautettuja URL-osoitteita sisältävät koontinäytön ruudut voivat ohjata lukijat sovelluksessa suoraan raportteihin.

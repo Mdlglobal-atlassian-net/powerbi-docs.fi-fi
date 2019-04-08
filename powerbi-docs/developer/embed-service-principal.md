@@ -8,13 +8,13 @@ ms.reviewer: nishalit
 ms.subservice: power-bi-developer
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 02/05/2019
-ms.openlocfilehash: 8d91b6cc03bb142d6d4aa101f87d8e3c1e6f3196
-ms.sourcegitcommit: d4d36b6b200f2693b545e4a3e66d94c77a3cfafb
+ms.date: 03/29/2019
+ms.openlocfilehash: 9b72c1c432e7fa560862452849491c12395d29d1
+ms.sourcegitcommit: 3a05f34dbeabac62ea8c35c12a045284271971bc
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57014411"
+ms.lasthandoff: 04/03/2019
+ms.locfileid: "58872543"
 ---
 # <a name="service-principal-with-power-bi-preview"></a>Palvelun päänimi ja Power BI (esikatselu)
 
@@ -111,7 +111,7 @@ Palvelun päänimen (sovellustunnus) käyttö eroaa tavallisen päätilin käyt�
 3. Power BI -järjestelmänvalvojana sinun täytyy ottaa palvelun päänimi käyttöön Power BI -hallintaportaalin **kehittäjäasetuksissa**. Lisää Azure AD:ssä luomasi käyttöoikeusryhmä **kehittäjäasetusten** **tietyn käyttöoikeusryhmän** osiossa.
 
    > [!Important]
-   > Palvelun päänimet perivät käyttöoikeudet kaikkiin Power BI -vuokraaja-asetuksiin käyttöoikeusryhmästään. Jos haluat rajoittaa käyttöoikeuksia, luo erillinen käyttöoikeusryhmä palvelun päänimille ja lisää se asianmukaisten käyttöön otettujen Power BI -asetusten Lukuun ottamatta tiettyjä käyttöoikeusryhmiä -luetteloon.
+   > Palvelun päänimet voivat käyttää kaikkia vuokraaja-asetuksia, jotka on otettu käyttöön koko organisaatiolle tai käyttöoikeusryhmille, joihin palvelun päänimet kuuluvat. Jos haluat rajoittaa palvelun päänimen käyttöä tietyissä vuokraaja-asetuksissa, salli vain tiettyjen käyttöoikeusryhmien käyttö tai luo erillinen käyttöoikeusryhmä palvelun päänimille ja jätä se pois.
 
     ![Hallintaportaali](media/embed-service-principal/admin-portal.png)
 
@@ -119,10 +119,12 @@ Palvelun päänimen (sovellustunnus) käyttö eroaa tavallisen päätilin käyt�
 
 5. Lisää palvelun päänimi **järjestelmänvalvojaksi** uuteen luomaasi työtilaan. Voit hallita tätä [ohjelmointirajapinnoilla](https://docs.microsoft.com/rest/api/power-bi/groups/addgroupuser) tai Power BI -palvelussa.
 
+    ![Palvelun päänimen lisääminen työtilaan](media/embed-service-principal/add-service-principal-in-the-UI.png)
+
 6. Nyt voit upottaa sisältöä mallisovellukseen tai omaan sovellukseesi.
 
     * [Sisällön upottaminen mallisovelluksen avulla](embed-sample-for-customers.md#embed-content-using-the-sample-application)
-    * [Sisällön upottaminen oman sovelluksen avulla](embed-sample-for-customers.md#embed-content-within-your-application)
+    * [Sisällön upottaminen sovellukseen](embed-sample-for-customers.md#embed-content-within-your-application)
 
 7. Nyt olet valmis [siirtymään hyötykäyttöön](embed-sample-for-customers.md#move-to-production).
 
@@ -171,6 +173,7 @@ Alla on esimerkkikomentosarja, jolla voit hakea palvelun päänimen objektitunnu
 * Et voi asentaa tai hallita paikallista tietoyhdyskäytävää palvelun päänimellä.
 * [Organisaatiosi upotetut sovellukset](embed-sample-for-your-organization.md) eivät voi käyttää palvelun päänimeä.
 * [Tietovoiden](../service-dataflows-overview.md) hallintaa ei tueta.
+* Palvelun päänimi ei tue järjestelmänvalvojien ohjelmointirajapintoja.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
