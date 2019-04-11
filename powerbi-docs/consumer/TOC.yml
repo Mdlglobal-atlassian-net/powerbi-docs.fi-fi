@@ -61,6 +61,8 @@ items:
         href: ../power-bi-visualizations-arcgis.md
     - name: Yleiset tehtävät
       items:
+      - name: Tietojen vieminen Exceliin
+        href: end-user-export.md
       - name: Sisällön omistajan ja viimeisen päivityspäivän tarkistaminen
         href: end-user-fresh.md
       - name: Eri tapoja lähentää sisältöön kohdistuksen ja koko näytön tilan avulla
@@ -137,6 +139,8 @@ items:
         href: mobile/mobile-tiles-in-the-mobile-apps.md
       - name: Suosikit mobiilisovelluksissa
         href: mobile/mobile-apps-favorites.md
+      - name: Raportin vuorovaikutuksen määrittäminen mobiilisovelluksissa (vain puhelin)
+        href: mobile/mobile-app-single-tap.md
       - name: Tietoilmoitusten määrittäminen Power BI -mobiilisovelluksissa
         href: mobile/mobile-set-data-alerts-in-the-mobile-apps.md
       - name: Power BI -mobiilisovellusten ilmoitusten vastaanottaminen
@@ -175,6 +179,8 @@ items:
         href: mobile/mobile-app-ssrs-kpis-mobile-on-premises-reports.md
       - name: Puhelimelle optimoitujen raporttien tarkasteleminen
         href: mobile/mobile-apps-view-phone-report.md
+      - name: Sisällön käyttäminen ulkoisesta organisaatiosta
+        href: mobile/mobile-apps-b2b.md
       - name: Power BI QR-koodin lukeminen puhelimella
         href: mobile/mobile-apps-qr-code.md
       - name: Merkintöjen tekeminen ja jakaminen mobiilisovelluksissa
@@ -195,9 +201,9 @@ items:
     items:
     - name: Mobiilisovellusten tuetut kielet
       href: mobile/mobile-apps-supported-languages.md
-ms.openlocfilehash: e32baf6ff64b485b1be29dea76bcbe864d2cdc59
-ms.sourcegitcommit: 8207c9269363f0945d8d0332b81f1e78dc2414b0
+ms.openlocfilehash: 6f9f080de3711a6a1a28f49da0298a67932d87e5
+ms.sourcegitcommit: c0add3d749f7e714e23824a742e105e694e4c129
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56248972"
+ms.lasthandoff: 04/10/2019
+ms.locfileid: "59430278"
