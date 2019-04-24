@@ -80,7 +80,7 @@ Mallintaminen vaikuttaa myös siihen, kuinka hyvin kysymykset ja vastaukset tarj
 
 Varmista, että olet:
 * käyttänyt muotoilua kaikissa arvosarakkeissa käyttänyt tyyppejä kyselyssä  
-* käyttänyt muotoilua kaikissa mittayksiköissä 
+* käyttänyt muotoilua kaikissa mittareissa 
 * määrittänyt oletusyhteenvedon, erityisesti ”Älä tee yhteenvetoa” -vaihtoehdon soveltuvissa tapauksissa (esimerkiksi yksilöllisille arvoille)  
 * määrittänyt tietoluokan soveltuvissa tapauksissa  
 * määrittänyt suhteet tarpeen mukaan.  

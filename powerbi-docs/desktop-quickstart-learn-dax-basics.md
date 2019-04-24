@@ -29,23 +29,23 @@ Uuden Power BI Desktop -tiedoston luominen ja tietojen tuominen siihen on melk
 ## <a name="prerequisites"></a>Edellytykset
 Kaavojen luominen Microsoft Excelissä saattaa olla sinulle jo tuttua. Tästä tietämyksestä on apua DAX:n ymmärtämisessä, mutta vaikka sinulla ei olisi kokemusta Excel-kaavoista, tässä kuvattujen käsitteiden avulla pääset heti alkuun DAX-kaavojen luomisessa ja oikeiden liiketoimintatiedon hallintaongelmien ratkaisemissa.
 
-Painopisteenä on saada antaa käsitys DAX-kaavoista, joita käytetään laskutoimituksissa, ja erityisesti mittayksiköissä ja lasketuissa sarakkeissa. Power BI Desktopin, tietojen tuonnin ja kenttien lisäämisen raporttiin tulisi olla sinulle jo tuttuja, minkä lisäksi sinun tulisi tuntea peruskäsitteet [mittayksikkö](desktop-measures.md) ja [laskettu sarake](desktop-calculated-columns.md).
+Painopisteenä on saada antaa käsitys DAX-kaavoista, joita käytetään laskutoimituksissa, ja erityisesti mittareissa ja lasketuissa sarakkeissa. Power BI Desktopin, tietojen tuonnin ja kenttien lisäämisen raporttiin tulisi olla sinulle jo tuttuja, minkä lisäksi sinun tulisi tuntea peruskäsitteet [mittari](desktop-measures.md) ja [laskettu sarake](desktop-calculated-columns.md).
 
 **Esimerkkityökirja**
 
-Paras tapa oppia DAX on luoda joitakin peruskaavoja, käyttää sitä todellisten tietojen kanssa ja nähdä tulokset itse. Tässä esitetyissä esimerkeissä ja tehtävissä käytetään Contoso Sales Sample for Power BI Desktop Preview -tiedostoa. Samaa mallitiedostoa käytetään [Opetusohjelma: Omien mittayksiköiden luominen Power BI Desktopissa](desktop-tutorial-create-measures.md) -artikkelissa. Voit ladata [mallitiedoston](http://download.microsoft.com/download/4/6/A/46AB5E74-50F6-4761-8EDB-5AE077FD603C/Contoso%20Sales%20for%20Power%20BI%20Designer.zip) täältä.
+Paras tapa oppia DAX on luoda joitakin peruskaavoja, käyttää sitä todellisten tietojen kanssa ja nähdä tulokset itse. Tässä esitetyissä esimerkeissä ja tehtävissä käytetään Contoso Sales Sample for Power BI Desktop Preview -tiedostoa. Samaa mallitiedostoa käytetään [Opetusohjelma: Omien mittarien luominen Power BI Desktopissa](desktop-tutorial-create-measures.md) -artikkelissa. Voit ladata [mallitiedoston](http://download.microsoft.com/download/4/6/A/46AB5E74-50F6-4761-8EDB-5AE077FD603C/Contoso%20Sales%20for%20Power%20BI%20Designer.zip) täältä.
 
 ## <a name="lets-begin"></a>Aloitetaan!
 Muodostamme ymmärryksemme DAX:ista kolmen peruskäsitteen ympärille: *syntaksi*, *funktiot* ja *konteksti*. DAX sisältää tietysti muitakin tärkeitä käsitteitä, mutta näiden kolmen käsitteen ymmärtäminen tarjoaa parhaan perustan DAX-taidoillesi.
 
 ### <a name="syntax"></a>Syntaksi
-Ennen kuin luot omia kaavoja, tutustutaan DAX-kaavan syntaksiin. Syntaksi sisältää eri elementtejä, jotka muodostavat kaavan, tai yksinkertaisemmin ilmaistuna se kertoo, kuinka kaava on kirjoitettu. Otetaan esimerkiksi yksinkertainen mittayksikön DAX-kaava.
+Ennen kuin luot omia kaavoja, tutustutaan DAX-kaavan syntaksiin. Syntaksi sisältää eri elementtejä, jotka muodostavat kaavan, tai yksinkertaisemmin ilmaistuna se kertoo, kuinka kaava on kirjoitettu. Otetaan esimerkiksi yksinkertainen mittarin DAX-kaava.
 
 ![](media/desktop-quickstart-learn-dax-basics/qsdax_1_syntax.png)
 
 Tämä kaava sisältää seuraavat syntaksielementit:
 
-**A.** Mittayksikön nimi **Total Sales**.
+**A.** Mittarin nimi **Total Sales**.
 
 **B.** Yhtäläisyysmerkkioperaattori (**=**) ilmaisee kaavan alun. Kun laskutoimitus on tehty, se palauttaa tuloksen.
 
@@ -63,13 +63,13 @@ Kun yrität ymmärtää DAX-kaavaa, on usein hyödyllistä eritellä kukin eleme
 > 
 > 
 
-Kun tämä mittayksikkö lisätään raporttiin, se laskee ja palauttaa arvot laskemalla yhteen myyntimäärät kaikkien muiden kenttien osalta, jotka otamme mukaan, esimerkiksi matkapuhelimet Suomessa.
+Kun tämä mittari lisätään raporttiin, se laskee ja palauttaa arvot laskemalla yhteen myyntimäärät kaikkien muiden kenttien osalta, jotka otamme mukaan, esimerkiksi matkapuhelimet Suomessa.
 
-Saatat ajatella: ”Eikö tämä mittayksikkö tee saman kuin jos vain lisäisin SalesAmount-kentän omaan raporttiini?” Kyllä vain. Mutta on hyvä syy sille, miksi kannattaa luoda oma mittayksikkö, joka laskee yhteen SalesAmount-kentän arvoja: voimme käyttää sitä argumenttina muissa kaavoissa. Tämä saattaa nyt vaikuttaa hieman sekavalta, mutta kun DAX-kaavataitosi kasvavat, tämän tietäminen tekee kaavoistasi ja mallistasi tehokkaampia. Tulet itse asiassa näkemään Total Sales -mittayksikön argumenttina muissa kaavoissa myöhemmin.
+Saatat ajatella: ”Eikö tämä mittari tee saman kuin jos vain lisäisin SalesAmount-kentän omaan raporttiini?” Kyllä vain. Mutta on hyvä syy sille, miksi kannattaa luoda oma mittari, joka laskee yhteen SalesAmount-kentän arvoja: voimme käyttää sitä argumenttina muissa kaavoissa. Tämä saattaa nyt vaikuttaa hieman sekavalta, mutta kun DAX-kaavataitosi kasvavat, tämän tietäminen tekee kaavoistasi ja mallistasi tehokkaampia. Tulet itse asiassa näkemään Total Sales -mittarin argumenttina muissa kaavoissa myöhemmin.
 
 Käydäänpä seuraavaksi läpi muutamia muita tätä kaavaa koskevia seikkoja. Toimme esiin erityisesti funktion [SUM](https://msdn.microsoft.com/library/ee634387.aspx). Funktiot ovat ennalta laadittuja kaavoja, jotka helpottavat monimutkaisia laskutoimituksia ja käsittelytoimintoja mm. numeroiden, päivämäärien, ajan ja tekstin kanssa. Funktioista on lisätietoja jäljempänä.
 
-Näet myös, että kaavassa sarakkeen [SalesAmount] edellä oli Sales-taulukko, johon sarake kuuluu. Tätä kutsutaan sarakkeen täydelliseksi nimeksi, koska se sisältää sarakkeen nimen, jonka edessä on taulukon nimi. Samassa taulukossa viitatut sarakkeet eivät vaadi taulukon nimen sisällyttämistä kaavaan. Tämä voi tehdä pitkistä kaavoista, jotka viittaavat moniin sarakkeisiin, lyhyempiä ja helppolukuisempia. On kuitenkin hyvä sisällyttää taulukon nimi mittayksikkökaavoihin, myös silloin kun ne ovat samassa taulukossa.
+Näet myös, että kaavassa sarakkeen [SalesAmount] edellä oli Sales-taulukko, johon sarake kuuluu. Tätä kutsutaan sarakkeen täydelliseksi nimeksi, koska se sisältää sarakkeen nimen, jonka edessä on taulukon nimi. Samassa taulukossa viitatut sarakkeet eivät vaadi taulukon nimen sisällyttämistä kaavaan. Tämä voi tehdä pitkistä kaavoista, jotka viittaavat moniin sarakkeisiin, lyhyempiä ja helppolukuisempia. On kuitenkin hyvä sisällyttää taulukon nimi mittarikaavoihin, myös silloin kun ne ovat samassa taulukossa.
 
 > [!NOTE]
 > Jos taulukon nimessä on välilyöntejä, varattuja avainsanoja tai ei-sallittuja merkkejä, sinun on kirjoitettava taulukon nimi puolilainausmerkkien sisään. Taulukoiden nimet on kirjoitettava lainausmerkkien sisään myös, jos nimi sisältää aakkosnumeeriseen ANSI-merkkialueeseen kuulumattomia merkkejä, huolimatta siitä, tukevatko aluekohtaiset asetukset merkistöä vai ei.
@@ -80,12 +80,12 @@ On tärkeää, että kaavojen syntaksi on oikea. Jos syntaksi ei ole oikea, usei
 
 Luodaanpa yksinkertainen kaava. Tämä tehtävä auttaa sinua ymmärtämään paremmin kaavan syntaksia ja sitä, miten kaavarivin ehdotustoiminto voi auttaa sinua.
 
-### <a name="task-create-a-measure-formula"></a>Tehtävä: mittayksikön kaavan luominen
+### <a name="task-create-a-measure-formula"></a>Tehtävä: mittarin kaavan luominen
 Tämän tehtävän tekemistä varten sinun on avattava Contoso Sales Sample Power BI Desktop -tiedosto.
     
-1. Napsauta raporttinäkymän kenttäluettelossa hiiren kakkospainikkeella **Sales**-taulukkoa ja valitse sitten **Uusi mittayksikkö**.
+1. Napsauta raporttinäkymän kenttäluettelossa hiiren kakkospainikkeella **Sales**-taulukkoa ja valitse sitten **Uusi mittari**.
     
-2. Korvaa kaavarivillä näkyvä **Measure** (Mittayksikkö) -sana kirjoittamalla uusi mittayksikön nimi **Previous Quarter Sales** (Edellisen neljänneksen myynti).
+2. Korvaa kaavarivillä näkyvä **Measure** (Mittari) -sana kirjoittamalla uusi mittarin nimi **Previous Quarter Sales** (Edellisen neljänneksen myynti).
     
 3. Kirjoita yhtäläisyysmerkin jälkeen ensimmäiset kirjaimet **CAL** ja kaksoisnapsauta sitten haluamaasi funktiota. Tässä kaavassa halutaan käyttää **CALCULATE**-funktiota.
 
@@ -111,7 +111,7 @@ Tämän tehtävän tekemistä varten sinun on avattava Contoso Sales Sample Powe
     
 9. Vahvista kaava ja lisää se malliin napsauttamalla kaavarivin valintamerkkiä ![](media/desktop-quickstart-learn-dax-basics/qsdax_syntax_taskcheckmark.png) tai painamalla Enter-näppäintä.
 
-Teit sen! Olet juuri luonut mittayksikön käyttämällä DAX-kaavaa, eikä mitään helppoa sitä paitsi. Tämä kaava laskee edellisen vuosineljänneksen kokonaismyynnin raportissa käytettyjen suodattimien mukaan. Jos esimerkiksi sijoitamme SalesAmount-mittayksikön ja uuden Previous Quarter Sales -mittayksikkömme kaavioon ja lisäämme sen jälkeen Year- ja QuarterOfYear-kentät osittajiksi, saisimme tulokseksi jotakin tämänkaltaista:
+Teit sen! Olet juuri luonut mittarin käyttämällä DAX-kaavaa, eikä mitään helppoa sitä paitsi. Tämä kaava laskee edellisen vuosineljänneksen kokonaismyynnin raportissa käytettyjen suodattimien mukaan. Jos esimerkiksi sijoitamme SalesAmount-mittarin ja uuden Previous Quarter Sales -mittarimme kaavioon ja lisäämme sen jälkeen Year- ja QuarterOfYear-kentät osittajiksi, saisimme tulokseksi jotakin tämänkaltaista:
 
 ![](media/desktop-quickstart-learn-dax-basics/qsdax_3_chart.png)
 
@@ -156,7 +156,7 @@ Konteksti on yksi niistä DAX-käsitteistä, joiden ymmärtäminen on hyvin tär
 
 **Rivikonteksti**
 
-Rivikonteksti ymmärretään tavallisesti nykyiseksi riviksi. Sitä käytetään aina, kun kaavassa on funktio, joka käyttää suodattimia taulukon yksittäisen rivin tunnistamiseen. Funktio käyttää luontaisesti rivikontekstia jokaiseen sen taulukon riviin, jota se suodattaa. Tämäntyyppistä rivikontekstia sovelletaan useimmiten mittayksiköihin.
+Rivikonteksti ymmärretään tavallisesti nykyiseksi riviksi. Sitä käytetään aina, kun kaavassa on funktio, joka käyttää suodattimia taulukon yksittäisen rivin tunnistamiseen. Funktio käyttää luontaisesti rivikontekstia jokaiseen sen taulukon riviin, jota se suodattaa. Tämäntyyppistä rivikontekstia sovelletaan useimmiten mittareihin.
 
 **Suodatinkonteksti**
 
@@ -166,7 +166,7 @@ Suodatinkontekstia ei käytetä rivikontekstin sijasta, vaan sitä käytetään 
 
 Suodatinkontekstia näkee helpoimmin raporteissa. Kun esimerkiksi lisäät visualisointiin TotalCost-arvon ja lisäät sen jälkeen vuoden ja alueen, määrität suodatinkontekstin, joka valitsee tietojen alijoukon antamasi tietyn vuoden ja alueen perusteella.
 
-Miksi suodatinkonteksti on niin tärkeä DAX-kielelle? Suodatinkontekstia on helpointa käyttää lisäämällä visualisointiin kenttiä, mutta suodatinkontekstia voidaan myös käyttää DAX-kaavassa määrittämällä suodatin, joka käyttää funktioita kuten ALL, RELATED, FILTER ja CALCULATE, käyttämällä suhteita ja käyttämällä muita mittayksiköitä ja sarakkeita. Tarkastellaanpa esimerkiksi seuraavaa kaavaa StoreSales-nimisessä mittayksikössä:
+Miksi suodatinkonteksti on niin tärkeä DAX-kielelle? Suodatinkontekstia on helpointa käyttää lisäämällä visualisointiin kenttiä, mutta suodatinkontekstia voidaan myös käyttää DAX-kaavassa määrittämällä suodatin, joka käyttää funktioita kuten ALL, RELATED, FILTER ja CALCULATE, käyttämällä suhteita ja käyttämällä muita mittareita ja sarakkeita. Tarkastellaanpa esimerkiksi seuraavaa kaavaa StoreSales-nimisessä mittarissa:
 
 ![](media/desktop-quickstart-learn-dax-basics/qsdax_4_context.png)
 
@@ -174,7 +174,7 @@ Tämä kaava on helpompi ymmärtää, kun se eritellään samalla tavalla kuin m
 
 Tämä kaava sisältää seuraavat syntaksielementit:
 
-**A.** Mittayksikön nimi **Store Sales**.
+**A.** Mittarin nimi **Store Sales**.
 
 **B.** Yhtäläisyysmerkkioperaattori (**=**) ilmaisee kaavan alun.
 
@@ -182,7 +182,7 @@ Tämä kaava sisältää seuraavat syntaksielementit:
 
 **D.** Kaarisulkeet **()** ympäröivät lauseketta, joka sisältää yhden tai useampia argumentteja.
 
-**E.** Mittayksikkö **[Total Sales]** samassa taulukossa lausekkeena. Total Sales -mittayksikön kaava on: =SUM(Sales[SalesAmount]).
+**E.** Mittari **[Total Sales]** samassa taulukossa lausekkeena. Total Sales -mittarin kaava on: =SUM(Sales[SalesAmount]).
 
 **F.** Pilkku (**,**) erottaa ensimmäisen lausekeargumentin suodatinargumentista.
 
@@ -190,7 +190,7 @@ Tämä kaava sisältää seuraavat syntaksielementit:
 
 **H.** Tietty arvo, **Store**, suodattimena. Tämä on suodatinkontekstimme.
 
-Tämä kaava varmistaa, että vain Total Sales -mittayksikön suodattimena määrittämät myyntiarvot lasketaan vain Channel[ChannelName]-sarakkeen sellaisille riveille, joissa on suodattimena ”Store”-arvo.
+Tämä kaava varmistaa, että vain Total Sales -mittarin suodattimena määrittämät myyntiarvot lasketaan vain Channel[ChannelName]-sarakkeen sellaisille riveille, joissa on suodattimena ”Store”-arvo.
 
 Kuten voit kuvitella, mahdollisuus määrittää suodatinkonteksteja kaavassa tarjoaa valtaisaa ja tehokasta käyttöpotentiaalia. Mahdollisuus viitata vain tiettyyn arvoon liittyvässä taulukossa on vain yksi esimerkki siitä. Älä huolestu, vaikka et heti ymmärtäisikään kontekstia täysin. Kun luot omia kaavojasi, opit paremmin ymmärtämään kontekstia ja sen tärkeyttä DAX-kielessä.
 
@@ -202,14 +202,14 @@ Kuten voit kuvitella, mahdollisuus määrittää suodatinkonteksteja kaavassa ta
 Vastaukset ovat tämän artikkelin lopussa.
 
 ## <a name="summary"></a>Yhteenveto
-Nyt kun sinulla on perustietämys DAX-kielen tärkeimmistä käsitteistä, voit aloittaa DAX-kaavojen luomisen mittayksiköille. DAX:n opetteleminen voi olla hieman hankalaa, mutta saatavilla on monia resursseja. Kun olet lukenut tämän artikkelin ja kokeillut muutamia omia kaavoja, voit perehtyä muihin DAX-käsitteisiin ja kaavoihin, jotka voivat auttaa omien liiketoimintaongelmiesi ratkaisemisessa. Saatavilla on useita DAX-resursseja, joista tärkein on [Data Analysis Expressions (DAX) Reference](https://msdn.microsoft.com/library/gg413422.aspx).
+Nyt kun sinulla on perustietämys DAX-kielen tärkeimmistä käsitteistä, voit aloittaa DAX-kaavojen luomisen mittareille. DAX:n opetteleminen voi olla hieman hankalaa, mutta saatavilla on monia resursseja. Kun olet lukenut tämän artikkelin ja kokeillut muutamia omia kaavoja, voit perehtyä muihin DAX-käsitteisiin ja kaavoihin, jotka voivat auttaa omien liiketoimintaongelmiesi ratkaisemisessa. Saatavilla on useita DAX-resursseja, joista tärkein on [Data Analysis Expressions (DAX) Reference](https://msdn.microsoft.com/library/gg413422.aspx).
 
 DAX on ollut käytössä useita vuosia muissa Microsoftin BI-työkaluissa, kuten Power Pivotin ja Analysis Servicesin taulukkomuotoisissa malleissa, joten saatavilla on paljon erinomaisia tietolähteitä. Voit etsiä lisätietoja kirjoista, teknisistä raporteista ja blogeista, joita Microsoft ja BI-huippuasiantuntijat ovat kirjoittaneet. [TechNetin DAX Resource Center Wiki ](http://social.technet.microsoft.com/wiki/contents/articles/dax-resource-center.aspx) on myös hyvä paikka aloittaa.
 
 ### <a name="quickquiz-answers"></a>Testin vastaukset
 Syntaksi:
 
-1. Vahvistaa ja syöttää mittayksikön malliin.
+1. Vahvistaa ja syöttää mittarin malliin.
 2. Hakasulkeet [].
 
 Funktiot:

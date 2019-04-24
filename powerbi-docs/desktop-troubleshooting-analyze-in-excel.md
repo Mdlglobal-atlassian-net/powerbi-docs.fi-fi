@@ -36,7 +36,7 @@ Tässä artikkelissa on seuraavat osat:
 * Tietomalleja ei ole
 * Tunnus on vanhentunut -virhe
 * Yhteyden muodostaminen paikalliseen Analysis Services -palvelimeen epäonnistui
-* Vetäminen ei onnistu Pivot-taulukon Arvot-alueelle (mittayksiköitä ei ole)
+* Vetäminen ei onnistu Pivot-taulukon Arvot-alueelle (mittareita ei ole)
 
 ## <a name="update-excel-libraries-for-the-ole-db-provider"></a>Päivitä OLE DB -palvelun Excel-kirjastot
 Jos haluat käyttää **Analysoi Excelissä** -toimintoa, tietokoneessa on oltava asennettuna aktiivinen AS OLE DB -palvelu. Tämä [yhteisön julkaisu](http://community.powerbi.com/t5/Service/Analyze-in-Excel-Initialization-of-the-data-source-failed/m-p/30837#M8081) on hyvä tietolähde, jos haluat tarkistaa OLE DB -palvelun asennuksen tai ladata uusimman version.
@@ -85,21 +85,21 @@ Jos kohtaat virheen, joka ilmoittaa, että **OLAP-kuution mallia ei löydy**, ky
 ## <a name="unable-to-access-on-premises-analysis-services"></a>Yhteyden muodostaminen paikalliseen Analysis Services -palvelimeen epäonnistui
 Jos yrität käyttää tietojoukkoa, jolla on yhteyksiä paikallisiin Analysis Services -tietoihin, näyttöön saattaa tulla virhesanoma. **Analysoi Excelissä** tukee paikallisten **Analysis Services** -tietojoukkojen ja raporttien käyttöä yhteysmerkkijonon avulla, kunhan tietokone on samassa toimialueessa kuin **Analysis Services** -palvelin ja tilillä on **Analysis Services** -palvelimen käyttöoikeus.
 
-## <a name="cant-drag-anything-to-the-pivottable-values-area-no-measures"></a>Vetäminen ei onnistu Pivot-taulukon Arvot-alueelle (mittayksiköitä ei ole)
-Kun **Analysoi Excelissä** muodostaa yhteyden ulkoiseen OLAP-malliin (näin Excel yhdistää Power BI:hin), *Pivot-taulukko* [edellyttää määritettyjä **toimenpiteitä** ulkoisessa mallissa](https://support.microsoft.com/kb/234700), koska kaikki laskutoimitukset suoritetaan palvelimella. Tämä on eri kuin käsiteltäessä paikallista tietolähdettä (kuten taulukoita Excelissä tai tietojoukkoja **Power BI Desktopissa** tai **Power BI -palvelussa**), jolloin taulukkomalli on käytettävissä paikallisesti ja [voit käyttää implisiittisiä mittayksiköitä](https://msdn.microsoft.com/library/gg399077.aspx), jotka ovat dynaamisesti luotuja toimenpiteitä, joita ei tallenneta tietomalliin. Näissä tapauksissa toiminta Excelissä eroaa **Power BI Desktopista** tai **Power BI -palvelusta**: tiedoissa voi olla sarakkeita, joita voidaan käsitellä mittayksiköinä Power BI:ssä mutta ei arvoina (mittayksiköinä) Excelissä.
+## <a name="cant-drag-anything-to-the-pivottable-values-area-no-measures"></a>Vetäminen ei onnistu Pivot-taulukon Arvot-alueelle (mittareita ei ole)
+Kun **Analysoi Excelissä** muodostaa yhteyden ulkoiseen OLAP-malliin (näin Excel yhdistää Power BI:hin), *Pivot-taulukko* [edellyttää määritettyjä **toimenpiteitä** ulkoisessa mallissa](https://support.microsoft.com/kb/234700), koska kaikki laskutoimitukset suoritetaan palvelimella. Tämä on eri kuin käsiteltäessä paikallista tietolähdettä (kuten taulukoita Excelissä tai tietojoukkoja **Power BI Desktopissa** tai **Power BI -palvelussa**), jolloin taulukkomalli on käytettävissä paikallisesti ja [voit käyttää implisiittisiä mittareita](https://msdn.microsoft.com/library/gg399077.aspx), jotka ovat dynaamisesti luotuja mittareita, joita ei tallenneta tietomalliin. Näissä tapauksissa toiminta Excelissä eroaa **Power BI Desktopista** tai **Power BI -palvelusta**: tiedoissa voi olla sarakkeita, joita voidaan käsitellä mittareina Power BI:ssä mutta ei arvoina (mittareina) Excelissä.
 
 Tämän ongelman ratkaisuun on muutamia vaihtoehtoja:
 
-1. Luo [tietomallin mittayksiköt **Power BI Desktopissa**](desktop-tutorial-create-measures.md), julkaise tietomalli **Power BI -palveluun** ja käytä julkaistua tietojoukkoa Excelissä.
-2. Luo [tietomallin mittayksiköt Excel PowerPivotissa](https://support.office.com/article/Create-a-Measure-in-Power-Pivot-d3cc1495-b4e5-48e7-ba98-163022a71198).
-3. Jos olet tuonut tietoja Excel-työkirjasta, jossa on vain taulukoita (ei tietomallia), voit tämän jälkeen [lisätä taulukot tietomalliin](https://support.office.com/article/Add-worksheet-data-to-a-Data-Model-using-a-linked-table-d3665fc3-99b0-479d-ba09-a37640f5be42) ja sitten luoda mittayksiköitä tietomallissa noudattamalla vaihtoehdon 2 ohjeita yllä.
+1. Luo [tietomallin mittarit **Power BI Desktopissa**](desktop-tutorial-create-measures.md), julkaise tietomalli **Power BI -palveluun** ja käytä julkaistua tietojoukkoa Excelissä.
+2. Luo [tietomallin mittarit Excel PowerPivotissa](https://support.office.com/article/Create-a-Measure-in-Power-Pivot-d3cc1495-b4e5-48e7-ba98-163022a71198).
+3. Jos olet tuonut tietoja Excel-työkirjasta, jossa on vain taulukoita (ei tietomallia), voit tämän jälkeen [lisätä taulukot tietomalliin](https://support.office.com/article/Add-worksheet-data-to-a-Data-Model-using-a-linked-table-d3665fc3-99b0-479d-ba09-a37640f5be42) ja sitten luoda mittareita tietomallissa noudattamalla vaihtoehdon 2 ohjeita yllä.
 
-Kun mittayksiköt on määritetty mallissa Power BI -palvelussa, niitä voidaan käyttää **Arvot**-alueella Excelin Pivot-taulukoissa.
+Kun mittarit on määritetty mallissa Power BI -palvelussa, niitä voidaan käyttää **Arvot**-alueella Excelin Pivot-taulukoissa.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 [Analysoi Excelissä](service-analyze-in-excel.md)
 
-[Opetusohjelma: Omien mittayksiköiden luominen Power BI Desktopissa](desktop-tutorial-create-measures.md)
+[Opetusohjelma: Omien mittarien luominen Power BI Desktopissa](desktop-tutorial-create-measures.md)
 
 [Mittayksiköt PowerPivotissa](https://msdn.microsoft.com/library/gg399077.aspx)
 

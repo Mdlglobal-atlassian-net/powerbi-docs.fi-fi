@@ -53,7 +53,7 @@ Voit tarkastella tietylle visualisoinnille käytettävissä olevia dynaamisia vi
    ![](media/desktop-analytics-pane/analytics-pane_3.png)
 3. Luo uusi viiva valitsemalla **+ Lisää**. Voit sitten määrittää viivalle nimen kaksoisnapsauttamalla tekstiruutua ja kirjoittamalla haluamasi nimen.
    
-   Viivalle on mahdollista valita monenlaisia asetuksia, kuten *väri*, *läpinäkyvyys*, *tyyli* ja *sijainti* (suhteessa visualisoinnin tietoelementteihin) sekä mahdollisen otsikon sisällyttäminen. Voit myös valita, mihin visualisoinnin **mittayksikköön** haluat viivan perustuvan, valitsemalla avattavan **Mittayksikkö**-luettelon, joka täyttyy automaattisesti visualisoinnin tietoelementeillä. Tässä esimerkkitapauksessa valitsemme mittayksikön *Sää*, annamme sille otsikon *Keskimääräinen sää* ja mukautamme muutamia muita asetuksia alla esitetyllä tavalla.
+   Viivalle on mahdollista valita monenlaisia asetuksia, kuten *väri*, *läpinäkyvyys*, *tyyli* ja *sijainti* (suhteessa visualisoinnin tietoelementteihin) sekä mahdollisen otsikon sisällyttäminen. Voit myös valita, mihin visualisoinnin **mittariin** haluat viivan perustuvan, valitsemalla avattavan **Mittari**-luettelon, joka täyttyy automaattisesti visualisoinnin tietoelementeillä. Tässä esimerkkitapauksessa valitsemme mittarin *Sää*, annamme sille otsikon *Keskimääräinen sää* ja mukautamme muutamia muita asetuksia alla esitetyllä tavalla.
    
    ![](media/desktop-analytics-pane/analytics-pane_4.png)
 4. Jos haluat arvopisteen otsikon näkyvän, liikuta **Arvopisteen otsikko** -liukusäädintä. Tekemällä niin saat näkyviin koko joukon arvopisteen otsikon lisäasetuksia, kuten seuraavassa kuvassa esitetään.

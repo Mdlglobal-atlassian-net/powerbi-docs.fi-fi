@@ -22,7 +22,7 @@ ms.locfileid: "54275520"
 ## <a name="overview-of-the-opportunity-analysis-sample"></a>Mahdollisuusanalyysimallin yleiskatsaus
 **Mahdollisuusanalyysimalli** sisältää koontinäytön (ja siihen liittyvän raportin) ohjelmistoyritykselle, jolla on 2 myyntikanavaa: *suora* ja *kumppani*. Myyntipäällikkö loi tämän koontinäytön seuratakseen mahdollisuuksia ja tuloja alueen, kaupan koon ja kanavan mukaan.
 
-Myyntipäällikkö käyttää kahta tuottoa koskevaa mittayksikköä:
+Myyntipäällikkö käyttää kahta tuottoa koskevaa mittaria:
 
 * **Tuotto** – tämä on myyjän arvio siitä, mikä tuotto on.
 * **Laskutettu tuotto** – tämä lasketaan kaavalla Tuotto X Todennäköisyysprosentti, ja sen hyväksytään yleisesti olevan tarkempi ennuste todellisesta myyntituotosta. Todennäköisyyden määrittää kaupan senhetkinen ***myynnin vaihe***.

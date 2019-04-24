@@ -70,7 +70,7 @@ Voit myös määrittää kaksi muuta **lisäasetusta**: kielikoodi ja mukautettu
 
 ![yhteyden lisätiedot](media/desktop-sap-bw-connector/sap_bw_4a.png)
 
-Jos MDX-lauseketta ei ole määritelty, näytölle aukeaa **Navigator**-ikkuna, jossa näkyy lista palvelimella olevista kuutioista, mahdollisuus porautua ja valita tietoyksikköjä valittavissa olevista kuutioista, mukaan lukien mitat ja mittayksiköt. Power BI tuo esiin kyselyt ja kuutiot, jotka [BW Open Analysis Interface OLAP -sovellusympäristöt](https://help.sap.com/saphelp_nw70/helpdata/en/d9/ed8c3c59021315e10000000a114084/content.htm) ovat paljastaneet.
+Jos MDX-lauseketta ei ole määritelty, näytölle aukeaa **Navigator**-ikkuna, jossa näkyy lista palvelimella olevista kuutioista, mahdollisuus porautua ja valita tietoyksikköjä valittavissa olevista kuutioista, mukaan lukien dimensiot ja mittarit. Power BI tuo esiin kyselyt ja kuutiot, jotka [BW Open Analysis Interface OLAP -sovellusympäristöt](https://help.sap.com/saphelp_nw70/helpdata/en/d9/ed8c3c59021315e10000000a114084/content.htm) ovat paljastaneet.
 
 Kun valitset yhden tai useamman tietoyksikön palvelimelta, tulostetaulukosta luodaan esikatselu, joka perustuu valintaan.
 

@@ -28,7 +28,7 @@ Sarakkeet ovat värillisiä, jotta näet nopeasti nousut ja laskut. Alkuarvon ja
 ## <a name="when-to-use-a-waterfall-chart"></a>Milloin kannattaa käyttää vesiputouskaaviota
 Vesiputouskaavio on hyvä vaihtoehto:
 
-* kun olet tehnyt muutoksia mittayksikön aikasarjaan tai eri luokkiin
+* kun olet tehnyt muutoksia mittarin aikasarjaan tai eri luokkiin
 * jos haluat valvoa tärkeimpiä kokonaisarvoon vaikuttavia muutoksia
 * jos haluat tehdä kaavion yrityksen vuosittaisesta tuotosta näyttämällä eri tulonlähteitä ja lopulta kokonaisvoiton (tai tappion).
 * jos haluat havainnollistaa yrityksen alku- ja lopetushenkilöstömäärän vuoden aikana

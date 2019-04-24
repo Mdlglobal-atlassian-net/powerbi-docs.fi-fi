@@ -30,7 +30,7 @@ Viisarimittarit ovat hyvä vaihtoehto, kun:
 
 * esitetään edistyminen kohti tavoitetta.
 * esitetään prosenttiyksiköitä, kuten suorituskyvyn mittareita.
-* näytetään yhden mittauksen kunto.
+* näytetään yhden mittarin kunto.
 * näytetään tiedot, joita voidaan nopeasti tarkistaa ja ymmärtää.
 
 ### <a name="prerequisites"></a>Edellytykset

@@ -27,9 +27,9 @@ Yhdistelmäkaaviossa voi olla yksi tai kaksi Y-akselia.
 Yhdistelmäkaavio on hyvä vaihtoehto, kun:
 
 * sinulla on viivakaavio ja pylväskaavio, joilla on sama X-akseli
-* haluat vertailla useita mittayksiköitä eri arvoalueilla
-* haluat havainnollistaa kahden mittayksikön välistä korrelaatiota yhdessä visualisoinnissa
-* haluat tarkistaa, täyttääkö mittayksikkö toisen mittayksikön määrittämän tavoitteen
+* haluat vertailla useita mittareita eri arvoalueilla
+* haluat havainnollistaa kahden mittarin välistä korrelaatiota yhdessä visualisoinnissa
+* haluat tarkistaa, täyttääkö mittari toisen mittarin määrittämän tavoitteen
 * haluat säästää tilaa piirtoalustalla.
 
 ### <a name="prerequisites"></a>Edellytykset

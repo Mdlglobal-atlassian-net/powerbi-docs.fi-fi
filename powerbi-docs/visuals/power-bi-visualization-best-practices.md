@@ -299,7 +299,7 @@ Jätämme tässä osiossa esimerkkiraporttisivumme rauhaan hetkeksi ja tarkastel
 ### <a name="planning--choose-the-right-visual"></a>Suunnittelu – valitse oikea visualisointi
 Samalla tavoin kuin on tärkeää suunnitella raportti ennen sen luomista, jokainen visualisointi vaatii myös suunnittelua.  Kysy itseltäsi ”Minkä tarinan yritän kertoa tämän visualisoinnin avulla?” Selvitä sitten, millainen visualisointityyppi kertoo tarinan parhaiten. Voit näyttää edistymisen myyntisyklissä palkkikaaviossa, mutta eikö vesiputous- tai suppilokaavio kertoisi sitä paremmin? Jos tarvitset tässä apua, lue tämän teknisen raportin viimeinen osio ”Visualisointityypit ja parhaat käytännöt”, jossa kuvataan joidenkin yleisempien tyyppien parhaita käytäntöjä.  Älä hämmästy, jos ensimmäinen valitsemasi visualisointityyppi ei loppujen lopuksi olekaan paras vaihtoehto.  Kokeile useampaa kuin yhtä visualisointityyppiä, jotta löydät parhaimmalta näyttävän vaihtoehdon.
 
-Tutustu siihen, miten luokittaiset ja kvantitatiiviset tiedot eroavat toisistaan ja mitkä visualisointityypit toimivat parhaiten tietyntyyppisten tietojen kanssa. Kvantitatiivisiin tietoihin viitataan usein mittoina ja ne ovat yleensä numeerisia. Luokittaisiin tietoihin viitataan usein dimensioina ja niitä voidaan luokitella. Käsittelemme tätä tarkemmin jäljempänä osiossa ”Oikean mitan valinta”.
+Tutustu siihen, miten luokittaiset ja kvantitatiiviset tiedot eroavat toisistaan ja mitkä visualisointityypit toimivat parhaiten tietyntyyppisten tietojen kanssa. Kvantitatiivisiin tietoihin viitataan usein mittareina ja ne ovat yleensä numeerisia. Luokittaisiin tietoihin viitataan usein dimensioina ja niitä voidaan luokitella. Käsittelemme tätä tarkemmin jäljempänä osiossa ”Oikean mittarin valinta”.
 
 Vältä houkutusta käyttää muodikkaita tai monimutkaisempia visualisointityyppejä vain siksi, että raportti tekisi suuremman vaikutuksen. Tavoitteena on soveltaa kaikkein yksinkertaisinta vaihtoehtoa tarinasi välittämiseen. Tiedot voidaan välittää nopeasti vaakasuuntaisten palkkikaavioiden ja yksinkertaisten viivakaavioiden avulla.  Ne ovat tuttuja ja helppokäyttöisiä, ja useimmat lukijat pystyvät tulkitsemaan ne vaivattomasti.  Lisäksi etuna on myös se, että useimmat lukevat vasemmalta oikealla ja ylhäältä alas. Nämä kaksi kaaviotyyppiä voidaan siten käydä läpi ja ymmärtää nopeasti.
 
@@ -307,10 +307,10 @@ Onko visualisointia vieritettävä tarinan kertomiseksi? Jos mahdollista, vält�
 
 Vaikka valitsisit ehdottomasti parhaimman visualisoinnin tarinalle, saatat kuitenkin tarvita apua tarinan kertomiseen.  Tässä vaiheessa voit käyttää selitteitä, otsikkoja, valikkoja, värejä ja kokoja. Käsittelemme näitä rakenne-elementtejä myöhemmin osiossa ”Rakenne-elementit”.
 
-### <a name="choose-the-right-measure"></a>Valitse oikea mitta
+### <a name="choose-the-right-measure"></a>Valitse oikea mittari
 Onko visualisoinnin avulla kerrottu tarina kiinnostava? Onko sillä merkitystä?  Älä luo visualisointeja turhaan. Ajattelit ehkä, että tiedot kertovat kiinnostavan tarina, mutta näin ei olekaan. Älä pelkää aloittaa alusta ja etsiä kiinnostavampaa tarinaa. Tai ehkä tarina on olemassa, mutta sitä on mitattava eri tavalla.
 
-Oletetaan esimerkiksi, että haluat mitata myyntiesimiestesi onnistumista. Mitä mittaa käyttäisit tähän tehtävään?  Pitäisitkö mittapuuna parasta kokonaismyyntiä tai kokonaistuottoa, kasvua viime vuoteen verrattuna tai suorituskykyä verrattuna kohdetavoitteeseen? Myyjänä toimiva Sirkka on saavuttanut suurimman tuoton, ja jos näytät kokonaistuoton myyjän mukaan palkkikaaviossa, hän saattaa näyttää rokkitähdeltä verrattuna muihin myyjiin.  Mutta jos Sirkan myyntikustannukset (kuten matka-, toimitus- ja valmistuskulut) ovat korkeat, pelkkä myynnin tarkasteleminen ei kerro parasta tarinaa.
+Oletetaan esimerkiksi, että haluat mitata myyntiesimiestesi onnistumista. Mitä mittaria käyttäisit tähän tehtävään?  Pitäisitkö mittarina parasta kokonaismyyntiä tai kokonaistuottoa, kasvua viime vuoteen verrattuna tai suorituskykyä verrattuna kohdetavoitteeseen? Myyjänä toimiva Sirkka on saavuttanut suurimman tuoton, ja jos näytät kokonaistuoton myyjän mukaan palkkikaaviossa, hän saattaa näyttää rokkitähdeltä verrattuna muihin myyjiin.  Mutta jos Sirkan myyntikustannukset (kuten matka-, toimitus- ja valmistuskulut) ovat korkeat, pelkkä myynnin tarkasteleminen ei kerro parasta tarinaa.
 
 #### <a name="reflect-realitydont-distort-reality"></a>Heijasta todellisuutta / älä vääristele totuutta
 On mahdollista luoda visualisointi, joka vääristelee totuutta. Eräällä verkkosivustolla tietojen tehokäyttäjät jakavat näitä ”huonoja” visualisointeja. Kommenteissa tulee yleisesti esiin pettymys yritykseen, joka loi ja jakoi tämän visualisoinnin.  Se välittää viestin siitä, ettei tähän yritykseen voi luottaa.
@@ -636,7 +636,7 @@ Jos viivakaavioita käytetään yleensä tietojen tarkastelemiseen ajan kuluessa
   ![](media/power-bi-visualization-best-practices/power-bi-data-labels.png)
   
   **Kuva 52: Ota arvopisteiden otsikot käyttöön**
-* Edellä oleva palkkikaavio on todella kätevä verrattaessa yhtä mittaa monen **yksittäisen pisteessä kanssa ajalla mitattuna**.  Samalla kun edellä oleva viivakaavio näytti trendin ajan kuluessa, palkkikaavio näyttää trendin yhdelle luokalle tiettynä ajankohtana.  Voimme yhdellä silmäyksellä havaita, että palkkiokaavion mukaan Espanjan työttömyysaste on yksi maailman huonoimmista eli 25 %.
+* Edellä oleva palkkikaavio on todella kätevä verrattaessa yhtä mittaria monen **yksittäisen pisteessä kanssa ajalla mitattuna**.  Samalla kun edellä oleva viivakaavio näytti trendin ajan kuluessa, palkkikaavio näyttää trendin yhdelle luokalle tiettynä ajankohtana.  Voimme yhdellä silmäyksellä havaita, että palkkiokaavion mukaan Espanjan työttömyysaste on yksi maailman huonoimmista eli 25 %.
 * Kun koko palkki-/pylväskaavio ei mahdu varattuun tilaan, Power BI lisää vierityspalkkeja. Kun se on mahdollista ja järkevää, jäsennä visualisointi ja raportti näyttämään koko kaavio, jotta lukija saa yleiskäsityksen koko jakautumisesta.  Valitettavasti tämä ei ole mahdollista esimerkissämme ympäri maailmaa sijaitsevien maiden suuren lukumäärän vuoksi.
   
   Yksi keino rajoittaa sisällytettäviä arvoja on käyttää suodatinta. Voit esimerkiksi lisätä visuaalisen tason suodattimen, joka näyttää maan vain, jos työttömyysaste on yli 20 prosenttia.
@@ -711,7 +711,7 @@ Tarkkaile akseleitasi! Onko yhdistelmäkaaviota helppo lukea ja tulkita?  Vai k�
 
    **Kuva 59: Epäonnistunut viivakaavio**
 
-Yhdistelmäkaaviosta ei ole myöskään hyötyä, jos pylväskaavio ja viivakaavio käyttävät kahta erilaista mittaa, etkä luo kaksinkertaisia akseleita.  Esimerkiksi dollarit verrattuna prosentteihin. Muista sisällyttää kummatkin akselit, jotta lukija ymmärtää paremmin kaaviota. Voit myös harkita akselin otsikkojen lisäämistä.
+Yhdistelmäkaaviosta ei ole myöskään hyötyä, jos pylväskaavio ja viivakaavio käyttävät kahta erilaista mittaria, eikä kaksinkertaisia akseleita luoda.  Esimerkiksi dollarit verrattuna prosentteihin. Muista sisällyttää kummatkin akselit, jotta lukija ymmärtää paremmin kaaviota. Voit myös harkita akselin otsikkojen lisäämistä.
 
 Avaa tätä varten muotoiluruutu, laajenna **Y-akselia** ja ota  **Näytä toissijainen** käyttöön (jos se ei ole jo käytössä). Tätä asetusta on joskus vaikea löytää; laajenna **Y-akselia (sarake)** ja vieritä alaspäin, kunnes näet **Näytä toissijainen**. Ota myös Y-akselin (sarake) **Otsikko** ja Y-akselin (viiva) **Otsikko** käyttöön.
 
@@ -723,7 +723,7 @@ Avaa tätä varten muotoiluruutu, laajenna **Y-akselia** ja ota  **Näytä toiss
 
 **Kuva 61: Luo sittenkin yhdistelmäkaavio**
 
-* Hyödynnä kaksinkertaisia akseleita. Se on kätevä tapa vertailla useita mittoja, joilla on erilaisia arvoalueita. Se on myös kätevä tapa havainnollistaa kahden mitan välistä korrelaatiota yhdessä visualisoinnissa.
+* Hyödynnä kaksinkertaisia akseleita. Se on kätevä tapa vertailla useita mittareita, joilla on erilaisia arvoalueita. Se on myös kätevä tapa havainnollistaa kahden mittarin välistä korrelaatiota yhdessä visualisoinnissa.
 
 Lisätietoja:
 
@@ -733,7 +733,7 @@ Lisätietoja:
 ### <a name="scatter-chart"></a>Pistekaavio
 ![](media/power-bi-visualization-best-practices/power-bi-scatter.png)
 
-Toisinaan meillä voi olla useita muuttujia, jotka haluamme nähdä yhdessä. Pistekaavio voi tällöin olla hyvin kätevä keino yleiskuvan saamiseen.  Pistekaaviot näyttävät kahden (pistekaavio) tai kolmen (kuplakaavio) määrällisen mitan väliset suhteet.  Pistekaaviossa on aina kaksi arvoakselia, jotka näyttävät yhden numeerisen tietosarjan vaakasuuntaisella akselilla ja toisen numeerisen arvosarjan pystysuuntaisella akselilla. Kaaviossa näytetään arvopisteet numeerisen arvon X ja Y leikkauskohdassa yhdistämällä nämä kaksi arvoa yhdeksi arvopisteeksi. Nämä arvopisteet voidaan jakaa tasaisesti tai epätasaisesti vaakasuuntaiselle akselille tietojen mukaan.
+Toisinaan meillä voi olla useita muuttujia, jotka haluamme nähdä yhdessä. Pistekaavio voi tällöin olla hyvin kätevä keino yleiskuvan saamiseen.  Pistekaaviot näyttävät kahden (pistekaavio) tai kolmen (kuplakaavio) määrällisen mittarin väliset suhteet.  Pistekaaviossa on aina kaksi arvoakselia, jotka näyttävät yhden numeerisen tietosarjan vaakasuuntaisella akselilla ja toisen numeerisen arvosarjan pystysuuntaisella akselilla. Kaaviossa näytetään arvopisteet numeerisen arvon X ja Y leikkauskohdassa yhdistämällä nämä kaksi arvoa yhdeksi arvopisteeksi. Nämä arvopisteet voidaan jakaa tasaisesti tai epätasaisesti vaakasuuntaiselle akselille tietojen mukaan.
 
 Kuplakaaviossa arvopisteet korvataan kuplilla ja kuplan koko edustaa tietojen muuta dimensiota.
 
@@ -768,7 +768,7 @@ Ensimmäinen puukartta antaa esimerkiksi laajemman käsityksen BKT-koon järjest
 
 **Kuva 63: Etelä-Amerikan BKT:n vertailu puukarttana**
 
-Olemme nyt lisänneet toisen tietotason eli alueen. Voimme täällä nähdä BKT:n yleisen jakautumisen alueittain sekä suhteellisen vaikutuksen alueiden sisällä. Muista, että jos toimit näin muun kuin yhteenlaskettavan mitan (kuten keskiarvojen) kanssa, tietojen summa ei ehkä edusta yhdistetyn tason todellista arvoa.
+Olemme nyt lisänneet toisen tietotason eli alueen. Voimme täällä nähdä BKT:n yleisen jakautumisen alueittain sekä suhteellisen vaikutuksen alueiden sisällä. Muista, että jos toimit näin muun kuin yhteenlaskettavan mittarin (kuten keskiarvojen) kanssa, tietojen summa ei ehkä edusta yhdistetyn tason todellista arvoa.
 
 ![](media/power-bi-visualization-best-practices/power-bi-treemap2.png)
 

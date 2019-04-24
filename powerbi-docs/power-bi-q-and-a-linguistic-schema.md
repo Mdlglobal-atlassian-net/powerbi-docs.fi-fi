@@ -67,7 +67,7 @@ Lingvistisiä rakenteita voidaan muokata, tuoda ja viedä Power BI Desktopin [su
 ![Synonyymit-ruutu](media/power-bi-q-and-a-linguistic-schema/power-bi-synonyms-pane.png)
 
 
- Toinen tapa muokata lingvististä rakennetta on viedä YAML-tiedosto ja muokata sitä suoraan.  Kun muokkaat lingvistisen rakenteen YAML-tiedostoa, merkitset taulukon sarakkeet eri kieliopillisiksi elementeiksi ja määrität sanoja, joita työtoveri saattaisi käyttää kysymyksen muodostamiseen. Merkitset esimerkiksi sarakkeet, jotka ovat verbin subjekti ja objekti. Lisäät vaihtoehtoisia sanoja, joilla työtoverit voivat viitata taulukoihin, sarakkeisiin ja mittayksiköihin mallissasi. 
+ Toinen tapa muokata lingvististä rakennetta on viedä YAML-tiedosto ja muokata sitä suoraan.  Kun muokkaat lingvistisen rakenteen YAML-tiedostoa, merkitset taulukon sarakkeet eri kieliopillisiksi elementeiksi ja määrität sanoja, joita työtoveri saattaisi käyttää kysymyksen muodostamiseen. Merkitset esimerkiksi sarakkeet, jotka ovat verbin subjekti ja objekti. Lisäät vaihtoehtoisia sanoja, joilla työtoverit voivat viitata taulukoihin, sarakkeisiin ja mittareihin mallissasi. 
 
 ![lingvistisen rakenteen yaml-mallitiedosto](media/power-bi-q-and-a-linguistic-schema/power-bi-linguistic-schema.png)
 
@@ -197,13 +197,13 @@ Binding: {Table: Products}
       Adjectives: [discontinued]
 ```
 
-*Mitan adjektiivimuotoilut* määrittävät uuden adjektiivin numeerisen arvon perusteella, joka osoittaa alan, jota adjektiivi koskee, kuten ”pituudet ilmaisevat, kuinka pitkiä joet ovat” ja ”pienillä mailla on pienet maa-alueet”. Mitan adjektiivimuotoiluja käytetään esimerkiksi seuraavanlaisissa kysymyksissä:
+*Mitan adjektiivimuotoilut* määrittävät uuden adjektiivin numeerisen arvon perusteella, joka osoittaa alan, jota adjektiivi koskee, kuten ”pituudet ilmaisevat, kuinka pitkiä joet ovat” ja ”pienillä mailla on pienet maa-alueet”. Mittarin adjektiivimuotoiluja käytetään esimerkiksi seuraavanlaisissa kysymyksissä:
 - Luetteloi pitkät joet
 - Mitkä joet ovat pisimmät?
 - Luetteloi pienimmät maat, jotka ovat voittaneet kultaa koripallossa
 - Kuinka pitkä on Rio Grande?
 
-Tässä on esimerkki siitä, miltä mitan adjektiivimuotoilu näyttää lingvistisen rakenteen joella_on_pituus sisällä:
+Tässä on esimerkki siitä, miltä mittarin adjektiivimuotoilu näyttää lingvistisen rakenteen joella_on_pituus sisällä:
 
  ```json
 Binding: {Table: Rivers}
@@ -232,7 +232,7 @@ Binding: {Table: Products}
 
  
 ## <a name="noun-phrasings"></a>Substantiivimuotoilut
-Substantiivimuotoilut määrittävät uusia substantiiveja, jotka kuvaavat asioiden alijoukkoja mallissasi. Ne sisältävät usein jonkin mallikohtaisen mitan tai ehdon. Esimerkiksi Olympialaiset-malliin voitaisiin lisätä muotoiluja, jotka erottavat mestarit mitalisteista, palloilulajit vesiurheilulajeista, joukkueet yksilöistä, urheilijoiden ikäluokat (teinit, aikuiset, seniorit) jne. Elokuvatietokantaan voitaisiin lisätä substantiivimuotoiluja muotoilulle ”flopit ovat elokuvia, joissa nettotuotto < 0”, jotta voidaan esittää kysymyksiä, kuten ”laske flopit vuoden mukaan”. Substantiivimuotoiluja on kaksi eri tilanteissa käytettäväksi.
+Substantiivimuotoilut määrittävät uusia substantiiveja, jotka kuvaavat asioiden alijoukkoja mallissasi. Ne sisältävät usein jonkin mallikohtaisen mittarin tai ehdon. Esimerkiksi Olympialaiset-malliin voitaisiin lisätä muotoiluja, jotka erottavat mestarit mitalisteista, palloilulajit vesiurheilulajeista, joukkueet yksilöistä, urheilijoiden ikäluokat (teinit, aikuiset, seniorit) jne. Elokuvatietokantaan voitaisiin lisätä substantiivimuotoiluja muotoilulle ”flopit ovat elokuvia, joissa nettotuotto < 0”, jotta voidaan esittää kysymyksiä, kuten ”laske flopit vuoden mukaan”. Substantiivimuotoiluja on kaksi eri tilanteissa käytettäväksi.
 
 *Yksinkertaiset substantiivimuotoilut* määrittävät uuden substantiivin ehdon perusteella, esimerkiksi ”alihankkijat ovat työntekijöitä, joissa täysi aika = epätosi” ja ”mestari on urheilija, jossa mitalien lukumäärä > 5”. Yksinkertaisia substantiivimuotoiluja käytetään esimerkiksi seuraavanlaisissa kysymyksissä:
 

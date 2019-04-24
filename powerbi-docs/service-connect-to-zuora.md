@@ -63,9 +63,9 @@ Sisältöpaketti käyttää Zuora AQUA -ohjelmointirajapintaa seuraavien tauluko
 | InvoiceAdjustment |RatePlan | |
 | InvoiceItem |RatePlanCharge | |
 
-Se sisältää myös nämä lasketut mittayksiköt:
+Se sisältää myös nämä lasketut mittarit:
 
-| Mittayksikkö | Kuvaus | Pseudo-laskenta |
+| Mittari | Kuvaus | Pseudo-laskenta |
 | --- | --- | --- |
 | Tili: maksut |Kokonaismaksusummat tietyllä ajanjaksolla maksun voimaantulopäivän mukaan. |SUM (Payment.Amount) <br>WHERE<br>Payment.EffectiveDate =< TimePeriod.EndDate<br>AND    Payment.EffectiveDate >= TimePeriod.StartDate |
 | Tili: hyvitykset |Kokonaishyvityssummat tietyllä ajanjaksolla hyvityksen päivämäärän mukaan. Summa ilmoitetaan negatiivisena lukuna. |-1*SUM(Refund.Amount)<br>WHERE<br>Refund.RefundDate = < TimePeriod.EndDate<br>AND    Refund.RefundDate >= TimePeriod.StartDate |

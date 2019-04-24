@@ -59,7 +59,7 @@ Seuraa mukana avaamalla [Hankinta-analyysimallin raportti](../sample-procurement
     ![](media/power-bi-visualization-export-data/power-bi-export-data5.png)
 6. Valitse **Yhteenvedetyt tiedot** > **Vie** ja valitse .xlsx tai .csv. Power BI vie tiedot.  Jos olet käyttänyt suodattimia visualisoinnissa, viedyt tiedot viedään suodatettuina. Kun valitset **Vie**, selain pyytää sinua tallentamaan tiedoston. Kun tiedosto on tallennettu, avaa se Excelissä.
 
-   **Yhteenvedetyt tiedot**: valitse tämä vaihtoehto, jos haluat viedä tietoja siitä, mitä näet tässä visualisoinnissa.  Tällainen vientityyppi näyttää vain tiedot (sarakkeet ja mittayksiköt), jotka valitsit visualisoinnin luomiseksi.  Jos visualisoinnissa on kooste, viet koottuja tietoja. Jos sinulla on palkkikaavio 4 palkilla, saat 4 tietoriviä. Yhteenvedetyt tiedot voidaan tallentaa .xlsx- tai .csv-muodossa.
+   **Yhteenvedetyt tiedot**: valitse tämä vaihtoehto, jos haluat viedä tietoja siitä, mitä näet tässä visualisoinnissa.  Tällainen vientityyppi näyttää vain tiedot (sarakkeet ja mittarit), jotka valitsit visualisoinnin luomiseksi.  Jos visualisoinnissa on kooste, viet koottuja tietoja. Jos sinulla on palkkikaavio 4 palkilla, saat 4 tietoriviä. Yhteenvedetyt tiedot voidaan tallentaa .xlsx- tai .csv-muodossa.
 
    Tässä esimerkissä Excel-vienti näyttää kunkin kaupungin kokonaissumman. Koska Atlanta on suodatettu pois, se ei sisälly tuloksiin.  Laskentataulukon ensimmäisellä rivillä näkyy suodattimet, joita käytettiin poimittaessa tietoja Power BI:stä.
 
@@ -77,18 +77,18 @@ Seuraa mukana avaamalla [Hankinta-analyysimallin raportti](../sample-procurement
    ![](media/power-bi-visualization-export-data/power-bi-export-data8.png)
 
 ## <a name="export-underlying-data-details"></a>Pohjana olevien tietojen vieminen
-Kun valitset **Pohjana olevat tiedot**, saatat nähdä erilaisia tietoja. Näiden tietojen ymmärtäminen saattaa vaatia järjestelmänvalvojan tai IT-osaston apua. Power BI Desktopin tai palvelun raportointinäkymässä tulee esiin *mittayksikkö* Kentät-luettelossa, jossa laskinkuvake ![näyttää kuvakkeen](media/power-bi-visualization-export-data/power-bi-calculator-icon.png). Mittayksiköt luodaan Power BI Desktopissa, ei Power BI -palvelussa.
+Kun valitset **Pohjana olevat tiedot**, saatat nähdä erilaisia tietoja. Näiden tietojen ymmärtäminen saattaa vaatia järjestelmänvalvojan tai IT-osaston apua. Power BI Desktopin tai palvelun raportointinäkymässä tulee esiin *mittari* Kentät-luettelossa, jossa laskinkuvake ![näyttää kuvakkeen](media/power-bi-visualization-export-data/power-bi-calculator-icon.png). Mittarit luodaan Power BI Desktopissa, ei Power BI -palvelussa.
 
 
 | Visualisoinnin sisältö |                                                                              Mitä näet viennissä                                                                              |
 |-----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |   Koosteet    |                                                 *ensimmäisen* koosteen ja ei-piilotetut tiedot tämän koosteen koko taulukosta                                                  |
 |   Koosteet    | liittyvät tiedot – jos visualisointi käyttää muita tietoja muista tietotaulukoista, jotka  *liittyvät* koosteen sisältävään tietotaulukkoon (kunhan tämä suhde on \*:1 tai 1:1) |
-|    Mittayksiköt     |                                      Kaikki toimenpiteet visualisoinnissa *ja* kaikki toimenpiteet mistä tahansa tietotaulukosta, joka sisältää visualisoinnissa käytetyn mittayksikön                                      |
-|    Mittayksiköt     |                                       Kaikki ei-piilotetut tiedot taulukoista, jotka sisältävät tämän mittayksikön (kunhan tämä suhde on \*:1 tai 1:1)                                       |
-|    Mittayksiköt     |                                      Kaikki tiedot kaikista taulukoista, jotka liittyvät mittayksiköt sisältävään taulukkoon ketjun \*:1/1:1) kautta                                      |
-|  Vain mittayksiköt  |                                                   Kaikki ei-piilotetut sarakkeet kaikista liittyvistä taulukoista (mittayksikön laajentamiseksi)                                                   |
-|  Vain mittayksiköt  |                                                             Yhteenvedetyt tiedot kaikille mallin mittayksiköiden monistetuille riveille.                                                              |
+|    Mittarit     |                                      Kaikki mittarit visualisoinnissa *ja* kaikki mittarit mistä tahansa tietotaulukosta, joka sisältää visualisoinnissa käytetyn mittarin                                      |
+|    Mittarit     |                                       Kaikki ei-piilotetut tiedot taulukoista, jotka sisältävät tämän mittarin (kunhan tämä suhde on \*:1 tai 1:1)                                       |
+|    Mittarit     |                                      Kaikki tiedot kaikista taulukoista, jotka liittyvät mittarit sisältävään taulukkoon ketjun \*:1/1:1) kautta                                      |
+|  Vain mittarit  |                                                   Kaikki ei-piilotetut sarakkeet kaikista liittyvistä taulukoista (mittarin laajentamiseksi)                                                   |
+|  Vain mittarit  |                                                             Koostetut tiedot kaikille mallin mittarien monistetuille riveille.                                                              |
 
 ### <a name="set-the-export-options"></a>Vientiasetusten määrittäminen
 Power BI:n raporttien suunnitteluohjelmassa määritetään, mitkä tietojen vientiasetukset ovat kuluttajien käytettävissä. Vaihtoehdot ovat seuraavat:

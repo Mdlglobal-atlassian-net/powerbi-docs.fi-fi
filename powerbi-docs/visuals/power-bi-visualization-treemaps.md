@@ -39,7 +39,7 @@ Puukartat ovat hyvä vaihtoehto seuraaville:
 * kun halutaan näyttää suuria määriä hierarkkisia tietoja.
 * kun palkkikaaviolla ei voida tehokkaasti käsitellä suuria määriä arvoja.
 * kun halutaan näyttää kunkin osan väliset ja koko kokonaisuuden mittasuhteet.
-* kun halutaan näyttää mittayksikön jakautuminen kuviona kussakin hierarkian luokkatasossa.
+* kun halutaan näyttää mittarin jakautuminen kuviona kussakin hierarkian luokkatasossa.
 * kun halutaan näyttää määritteet käyttämällä kokovertailua ja värikoodausta.
 * kun halutaan, että kuviot, poikkeavat arvot, tärkeimmät tekijät ja poikkeukset erottuvat selvästi.
 
@@ -55,7 +55,7 @@ Haluatko ensin seurata, kun joku luo puukartan?  Siirry videossa kohtaan 2:10, n
 Tai luo oma puukarttasi. Näissä ohjeissa käytetään jälleenmyyntianalyysimallia. Kirjaudu Power BI -palveluun (ei Desktopiin), jotta voit seurata ohjeita. Valitse **Nouda tiedot \> Mallit \> Jälleenmyyntianalyysimalli > Yhdistä\> ja valitse \>Koontinäyttö**. Visualisoinnin luominen raporttiin edellyttää tietojoukon ja raportin muokkausoikeuksia. Onneksi Power BI -mallit ovat muokattavia. Et voi kuitenkaan lisätä visualisointeja raporttiin, jonka joku toinen on jakanut kanssasi.  
 
 1. Avaa Jälleenmyyntianalyysimallin raportti valitsemalla koontinäytössä ”Myymälöitä yhteensä” -ruutu.    
-2. Avaa [Muokkausnäkymä](../service-interact-with-a-report-in-editing-view.md) ja valitse **Myynti** > **Viime vuoden myynti** -mittayksikkö.   
+2. Avaa [Muokkausnäkymä](../service-interact-with-a-report-in-editing-view.md) ja valitse **Myynti** > **Viime vuoden myynti** -mittari.   
    ![](media/power-bi-visualization-treemaps/treemapfirstvalue_new.png)   
 3. Muuta kaavio puukartaksi.  
    ![](media/power-bi-visualization-treemaps/treemapconvertto_new.png)   

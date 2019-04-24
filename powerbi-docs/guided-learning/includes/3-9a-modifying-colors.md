@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: d2ba689be99955c649930c1ee4b203b67577619c
+ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56222780"
+---
 Saatat usein haluta muokata kaavioissa tai visualisoinneissa käytettyjä värejä. Power BI tarjoaa useita mahdollisuuksia värien näyttämisen hallintaan. Aloita valitsemalla visualisointi ja napsauta sitten **sivellinkuvaketta** **Visualisoinnit**-ruudussa.
 
 ![](media/3-9a-modifying-colors/3-9a_1.png)
@@ -10,7 +18,7 @@ Voit myös muuttaa kunkin palkin (tai muun elementin valitsemasi visualisointity
 
 ![](media/3-9a-modifying-colors/3-9a_3.png)
 
-Voit myös muuttaa väriä arvon tai mitan perusteella. Vedä tällöin kenttä Visualisoinnit-ruudun **Värikylläisyys**-ryhmään (huomaa, että se on käytettävissä **kenttien yhteenveto** -osassa eikä **sivellin**-osassa).
+Voit myös muuttaa väriä arvon tai mittarin perusteella. Vedä tällöin kenttä Visualisoinnit-ruudun **Värikylläisyys**-ryhmään (huomaa, että se on käytettävissä **kenttien yhteenveto** -osassa eikä **sivellin**-osassa).
 
 ![](media/3-9a-modifying-colors/3-9a_4.png)
 

@@ -53,7 +53,7 @@ Luodaan uusi taulukko, jonka nimi on Länsialueen työntekijät.
 
  ![](media/desktop-calculated-tables/calctables_westregionempl.png)
 
-Jeffin uusi Länsialueen työntekijät -taulukko näyttää Kentät-listassa täysin samalta kuin mikä tahansa muu taulukko. Hän voi luoda suhteita muihin taulukkoihin ja laskettuihin sarakkeisiin ja mittayksiköihin sekä lisätä taulukon kenttiä raportteihin, kuten missä tahansa taulukossa.
+Jeffin uusi Länsialueen työntekijät -taulukko näyttää Kentät-listassa täysin samalta kuin mikä tahansa muu taulukko. Hän voi luoda suhteita muihin taulukkoihin ja laskettuihin sarakkeisiin ja mittareihin sekä lisätä taulukon kenttiä raportteihin, kuten missä tahansa taulukossa.
 
  ![](media/desktop-calculated-tables/calctables_fieldlist.png)
 

@@ -84,7 +84,7 @@ Katso, miten Will luo muutamia erilaisia ArcGIS-karttavisualisointeja ja kokeile
    
     ![](media/power-bi-visualization-arcgis/power-bi-fields-pane3new.png)
 2. Muunna visualisointi ArcGIS-kartaksi valitsemalla malli Visualisoinnit-ruudusta ![](media/power-bi-visualization-arcgis/power-bi-arcgis-template.png).
-3. Vedä **Kentät**-ruudussa mitta **Koko**-säilöön, jos haluat säätää tietojen näyttötapaa. Tässä esimerkissä arvoina käytetään **Myynti > Viime vuoden myynti**.
+3. Vedä **Kentät**-ruudussa mittari **Koko**-säilöön, jos haluat säätää tietojen näyttötapaa. Tässä esimerkissä arvoina käytetään **Myynti > Viime vuoden myynti**.
    
     ![](media/power-bi-visualization-arcgis/power-bi-esri-point-map-size2new.png)
 

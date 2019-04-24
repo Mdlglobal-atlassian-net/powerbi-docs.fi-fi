@@ -114,7 +114,7 @@ Kentät-ruudussa näytetään tiedoissasi olevat taulukot ja kentät, joiden avu
 Katso lisätietoja artikkelista [Power BI -raporttien koosteet](service-aggregates.md).
 
 ![Laskimen kuvake](media/service-the-report-editor-take-a-tour/pbi_calculated_icon.png) **Lasketut mitat (kutsutaan myös lasketuiksi kentiksi)**  
-Jokaisella lasketulla kentällä on oma pysyväiskoodattu kaavansa. Et voi muuttaa laskutoimitusta. Jos se on  esimerkiksi summa, se voi olla vain summa. Saat lisätietoja artikkelista [Mittayksikköjen ymmärtäminen](desktop-measures.md).
+Jokaisella lasketulla kentällä on oma pysyväiskoodattu kaavansa. Et voi muuttaa laskutoimitusta. Jos se on  esimerkiksi summa, se voi olla vain summa. Saat lisätietoja artikkelista [Mittarien ymmärtäminen](desktop-measures.md)
 
 ![Yksilöllisen kentän kuvake](media/service-the-report-editor-take-a-tour/icon.png) **Yksilölliset kentät**  
 Tämän kuvakkeen kentät on tuotu Excelistä ja ne on määritetty näyttämään kaikki arvot, vaikka niillä olisi kaksoiskappaleita. Tiedoissa voi olla esimerkiksi kaksi tietuetta henkilölle nimeltä ”Matti Virtanen”, ja jokaista niistä käsitellään yksilöllisenä, eikä niitä lasketa yhteen.  

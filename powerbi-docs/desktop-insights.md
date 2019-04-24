@@ -69,7 +69,7 @@ Kunkin palautetun sarakkeen osalta voidaan esittää neljä visualisointia. Näi
 
 ### <a name="the-scatter-plot"></a>Pistekaavio
 
-Pistekaavio-visualisointi näyttää mittayksikön arvon ensimmäisellä ajanjaksolla (x-akselilla) verrattuna mittayksikön arvoon toisella ajanjaksolla (y-akselilla) kullekin sarakkeen arvolle (tässä tapauksessa *Luokka*). Kuten seuraavassa kuvassa näkyy, arvopisteet ovat vihreällä alueella, jos arvo on kasvanut, ja punaisella alueella, jos arvo on laskenut. 
+Pistekaavio-visualisointi näyttää mittarin arvon ensimmäisellä ajanjaksolla (x-akselilla) verrattuna mittarin arvoon toisella ajanjaksolla (y-akselilla) kullekin sarakkeen arvolle (tässä tapauksessa *Luokka*). Kuten seuraavassa kuvassa näkyy, arvopisteet ovat vihreällä alueella, jos arvo on kasvanut, ja punaisella alueella, jos arvo on laskenut. 
 
 Pisteviiva näyttää parhaan vastaavuuden, joten tämän viivan yläpuolella olevat arvopisteet ovat kasvaneet yleistä trendiä enemmän ja viivan alapuolella olevat arvopisteet vähemmän.  
 
@@ -79,13 +79,13 @@ Huomaa, että pistekaaviossa eivät näy sellaiset tieto-osat, joiden arvo oli t
 
 ### <a name="the-100-stacked-column-chart"></a>100 %:n pinottu pylväskaavio
 
-100 %:n pinottu pylväskaavio -visualisointi näyttää mittayksikön arvon ennen ja jälkeen, valitun sarakkeen mukaisesti ja esitettynä 100 %:n pinottuna pylväskaaviona. Näin voit vertailla osuuden suuruutta rinnakkain ennen ja jälkeen. Työkaluvihjeet näyttävät valitun arvon todellisen osuuden.
+100 %:n pinottu pylväskaavio -visualisointi näyttää mittarin arvon ennen ja jälkeen, valitun sarakkeen mukaisesti ja esitettynä 100 %:n pinottuna pylväskaaviona. Näin voit vertailla osuuden suuruutta rinnakkain ennen ja jälkeen. Työkaluvihjeet näyttävät valitun arvon todellisen osuuden.
 
 ![100 %:n pinottu pylväskaavio](media/desktop-insights/insights_01c.png)
 
 ### <a name="the-ribbon-chart"></a>Nauhakaavio
 
-Myös nauhakaavio-visualisointi näyttää mittayksikön arvon ennen ja jälkeen. Se on erityisen hyödyllinen esitettäessä muutoksia osuuteen, kun muutosten seurauksena osallistujien *järjestys* muuttuu (jos esimerkiksi *Tietokoneet* oli aiemmin suurin osallistuja, mutta nyt pudonnut sijalle kolme). 
+Myös nauhakaavio-visualisointi näyttää mittarin arvon ennen ja jälkeen. Se on erityisen hyödyllinen esitettäessä muutoksia osuuteen, kun muutosten seurauksena osallistujien *järjestys* muuttuu (jos esimerkiksi *Tietokoneet* oli aiemmin suurin osallistuja, mutta nyt pudonnut sijalle kolme). 
 
 ![nauhakaavio](media/desktop-insights/insights_01d.png)
 
@@ -113,10 +113,10 @@ Seuraavassa luettelossa on esitetty tilanteita, joissa **lisäyksen/vähennyksen
 
 * TopN-suodattimet
 * Sisällyttää tai jättää pois suodattimet
-* Mittayksikkösuodattimet
-* Muu kuin numeeriset mittayksiköt
+* Mittarisuodattimet
+* Muu kuin numeeriset mittarit
 * ”Näytä arvo muodossa” -toiminnon käyttö
-* Suodatetut mittayksiköt - Suodatetut mittayksiköt ovat visuaalisen tason laskutoimituksia, joihin sovelletaan tiettyä suodatinta (esimerkiksi *Ranskan kokonaismyynti*), ja joita käytetään joissakin merkityksellisten tietojen toiminnon luomissa visualisoinneissa
+* Suodatetut mittarit - Suodatetut mittarit ovat visuaalisen tason laskutoimituksia, joihin sovelletaan tiettyä suodatinta (esimerkiksi *Ranskan kokonaismyynti*), ja joita käytetään joissakin merkityksellisten tietojen toiminnon luomissa visualisoinneissa
 * X-akselin luokitellut sarakkeet, elleivät ne määritä lajittelua sarakkeen mukaan, joka on skalaarisia. Jos käytät hierarkiaa, aktiivisen hierarkian jokaisen sarakkeen on vastattava tätä ehtoa
 
 

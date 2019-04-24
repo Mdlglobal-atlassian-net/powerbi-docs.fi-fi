@@ -39,7 +39,7 @@ Power BI Desktop luo tyhjän **Muotokartta**-visualisoinnin suunnittelualustan.
 
 Voit luoda **muotokartan** seuraavasti:
 
-1. Vedä **Kentät**-ruudussa tietokenttä, joka sisältää alueiden nimet (tai lyhenteet), **Sijainti**-säilöön ja tietomittayksikkökenttä **Värikylläisyys**-säilöön (et näe vielä karttaa).
+1. Vedä **Kentät**-ruudussa tietokenttä, joka sisältää alueiden nimet (tai lyhenteet), **Sijainti**-säilöön ja tietomittarikenttä **Värikylläisyys**-säilöön (et näe vielä karttaa).
 
    > [!NOTE]
    > Alla olevasta **Karttatietojen hakeminen** -osiosta saat ohjeet siihen, miten voit hakea karttatiedot nopeasti **muotokartan** testaamiseksi.

@@ -29,7 +29,7 @@ Power BI tukee Excel 2007:ssä ja uudemmissa versioissa luotujen työkirjojen tu
 Jos työkirjassa on tietojoukkoja sisältäviä yksinkertaisia laskentataulukoita, muotoile tietojoukot taulukoiksi, jotta saat niistä kaiken hyödyn irti Power BI:ssä. Tällöin luodessasi raportteja Power BI:ssä näet Kentät-ruudussa nimettyjä taulukoita ja sarakkeita, mikä helpottaa tietojen visualisointia huomattavasti.
 
 ### <a name="workbooks-with-data-models"></a>Tietomalleja sisältävät työkirjat
-Työkirja voi sisältää tietomallin, johon on ladattu yksi tai useampi tietotaulukko käyttämällä linkitettyjä taulukoita, Power Queryä (Hae ja muunna Excel 2016:ssa) tai Power Pivotia. Power BI tukee kaikkia tietomallin ominaisuuksia, kuten suhteita, mittayksiköitä, hierarkioita ja suorituskykyilmaisimia.
+Työkirja voi sisältää tietomallin, johon on ladattu yksi tai useampi tietotaulukko käyttämällä linkitettyjä taulukoita, Power Queryä (Hae ja muunna Excel 2016:ssa) tai Power Pivotia. Power BI tukee kaikkia tietomallin ominaisuuksia, kuten suhteita, mittareita, hierarkioita ja suorituskykyilmaisimia.
 
 > [!NOTE]
 > Tietomalleja sisältäviä työkirjoja ei voi jakaa Power BI -vuokraajien kesken. Esimerkiksi käyttäjä, joka kirjautuu sisään Power BI:hin *contoso.com*-tilillä, ei voi jakaa Excel-työkirjaa sellaisen käyttäjän kanssa, joka kirjautuu sisään käyttämällä Power BI -kirjautumistiliä kohteesta *woodgrovebank.com*.

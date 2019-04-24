@@ -40,7 +40,7 @@ Tässä esimerkissä Power BI näyttää *[Color-Size]*-yhdistelmät, jotka esii
 
 Valitaan seuraavaksi erilainen yhdistelmä:
 
-**2. Ryhmät, jotka ovat peräisin eri taulukoista, jotka liittyvät toisiinsa suoraan, sekä mittayksikkö:** *ProductStyle[Finish] – Product[Color] – Sum(Sales[Quantity])*
+**2. Ryhmät, jotka ovat peräisin eri taulukoista, jotka liittyvät toisiinsa suoraan, sekä mittari:** *ProductStyle[Finish] – Product[Color] – Sum(Sales[Quantity])*
 
 |*ProductStyle[Finish]*  |*Product[Color]*  |*[SumQuantity]*  |
 |---------|---------|---------|
@@ -51,7 +51,7 @@ Tässä esimerkissä Power BI näyttää vain ne yhdistelmät, jotka ovat olemas
 
 Katsotaanpa erilaista tapausta: 
 
-**3. Ryhmät, jotka ovat peräisin eri taulukoista, jotka liittyvät toisiinsa, ilman mittayksikköä:** *ProductStyle[Finish] – Product[Color]*
+**3. Ryhmät, jotka ovat peräisin eri taulukoista, jotka liittyvät toisiinsa, ilman mittaria:** *ProductStyle[Finish] – Product[Color]*
 
 |*ProductStyle[Finish]*  |*Product[Color]*  |
 |---------|---------|
@@ -59,7 +59,7 @@ Katsotaanpa erilaista tapausta:
 |Kiiltävä     |Punainen         |
 |Matta     |Sininen         |
 
-Koska eksplisiittistä mittayksikköä ei ole ja taulukot liittyvät suoraan toisiinsa, Power BI yrittää lisätä mittayksikön rajoittaakseen tuloksena olevia yhdistelmiä. Tässä tapauksessa Power BI lisää *CALCULATE(COUNTROWS('Product'))*-mittayksikön, jonka arvo ei saa olla tyhjä, koska *Product*-taulukko on yhteinen molemmille taulukoille.
+Koska eksplisiittistä mittaria ei ole ja taulukot liittyvät suoraan toisiinsa, Power BI yrittää lisätä mittarin rajoittaakseen tuloksena olevia yhdistelmiä. Tässä tapauksessa Power BI lisää *CALCULATE(COUNTROWS('Product'))*-mittarin, jonka arvo ei saa olla tyhjä, koska *Product*-taulukko on yhteinen molemmille taulukoille.
 
 Siispä Power BI näyttää yhdistelmät, joilla on tietoja Product-taulukossa, eli jättää pois yhdistelmät *(”Ei mitään” + ”Sininen”)* ja *(”Matta” + ”Punainen”)*.
 
@@ -74,7 +74,7 @@ Esimerkkinä käytetyssä mallissa ei ole tällaista yhdistelmää, mutta jos k�
 
 Edellisessä osiossa kuvataan, miten Power BI määrittää, mitkä tiedot kannattaa näyttää. Toisinaan saatat kuitenkin *haluta* näyttää kohteita, jotka eivät sisällä tietoja. 
 
-Tämä onnistuu **Näytä kohteet, joilla ei ole tietoja** -ominaisuuden avulla: voit sisällyttää esitykseen tietorivit ja sarakkeet, jotka eivät sisällä mittayksikkötietoja (tyhjät mittayksikön arvot).
+Tämä onnistuu **Näytä kohteet, joilla ei ole tietoja** -ominaisuuden avulla: voit sisällyttää esitykseen tietorivit ja sarakkeet, jotka eivät sisällä mittaritietoja (tyhjät mittarin arvot).
 
 Jos haluat ottaa **Näytä kohteet, joilla ei ole tietoja** -ominaisuuden käyttöön, valitse visualisointi, napsauta **Kentät**-osiosta haluamaasi kenttää hiiren kakkospainikkeella ja valitse avautuvasta valikosta **Näytä kohteet, joilla ei ole tietoja** seuraavassa kuvassa esitetyllä tavalla:
 
@@ -83,14 +83,14 @@ Jos haluat ottaa **Näytä kohteet, joilla ei ole tietoja** -ominaisuuden käytt
 
 **Näytä kohteet, joilla ei ole tietoja** -ominaisuudella *ei* ole vaikutusta seuraavissa tilanteissa:
 
-* Visualisointiin ei ole lisätty mittayksikköä ja ryhmiteltävät sarakkeet ovat peräisin samasta taulukosta.
+* Visualisointiin ei ole lisätty mittaria ja ryhmiteltävät sarakkeet ovat peräisin samasta taulukosta
 * Ryhmät eivät liity toisiinsa. Power BI ei suorita kyselyjä visualisoinneille, jotka sisältävät toisiinsa liittymättömiä ryhmiä.
-* Mittayksikkö ei liity mihinkään ryhmään. Syynä on, että mittayksikkö ei milloinkaan jää tyhjäksi vain joissakin ryhmien yhdistelmissä.
-* Käyttäjän määrittämä mittayksikkösuodatin jättää pois tyhjät mittayksiköt. Esimerkki: *SalesAmount > 0*
+* Mittari ei liity mihinkään ryhmään. Syynä on, että mittari ei milloinkaan jää tyhjäksi vain joissakin ryhmien yhdistelmissä
+* Käyttäjän määrittämä mittarisuodatin jättää pois tyhjät mittarit. Esimerkki: *SalesAmount > 0*
 
 ### <a name="how-show-items-with-no-data-works"></a>Näytä kohteet, joilla ei ole tietoja -ominaisuuden toiminta
 
-Kiinnostavimpia **Näytä kohteet, joilla ei ole tietoja** -ominaisuuden käyttötapauksia ovat ne, joissa käytetään mittayksiköitä. Tarkastellaanpa tilannetta, jossa ryhmät ovat peräisin samasta taulukosta tai ne voidaan liittää toisiinsa mallissa olevan polun kautta. Esimerkiksi *ProductStyle* liittyy suoraan *Product*-taulukkoon ja epäsuorasti *Sales*-taulukkoon, *ProductStyle* ja *ProductCategory* voidaan yhdistää *Product*-taulukon kautta ja niin edelleen.
+Kiinnostavimpia **Näytä kohteet, joilla ei ole tietoja** -ominaisuuden käyttötapauksia ovat ne, joissa käytetään mittareita. Tarkastellaanpa tilannetta, jossa ryhmät ovat peräisin samasta taulukosta tai ne voidaan liittää toisiinsa mallissa olevan polun kautta. Esimerkiksi *ProductStyle* liittyy suoraan *Product*-taulukkoon ja epäsuorasti *Sales*-taulukkoon, *ProductStyle* ja *ProductCategory* voidaan yhdistää *Product*-taulukon kautta ja niin edelleen.
 
 Seuraavaksi tarkastellaan muutamaa mielenkiintoista tapausta ja verrataan tilanteita ennen **Näytä kohteet, joilla ei ole tietoja** -ominaisuuden käyttöönottoa ja sen jälkeen. 
 

@@ -99,7 +99,7 @@ Visualisointi, joka näyttää *Osavaltio*-tiedot (*Kaupunkidata*-taulukosta) *A
 > [!NOTE]
 > Koska kiertotavassa käytetään osavaltioita *Kaupunkidata*-taulukosta, vain taulukossa olevat osavaltiot luetellaan, jonka vuoksi Teksas on jäänyt pois. Lisäksi toisin kuin *monta-yhteen*-yhteyksissä, summarivi sisältää kyllä kaikki *Myynti*-tiedot (myös Teksasin), mutta tietoihin ei sisälly tyhjää riviä, joka kattaa tällaiset ristiriitaiset rivit. Vastaavasti mukana ei olisi tyhjää riviä *Myynti*-tiedoille, joiden *Osavaltio*-arvo on null.
 
-Jos *Kaupunki*-arvo lisättäisiin myös visualisointiin, *kaupunkikohtainen* asukasmäärä olisi toki tiedossa, mutta *Myynti*-tieto *kaupungille* vain toistaisi *Myynti*-tiedon vastaavalle *osavaltiolle*. Näin normaalisti käykin, kun sarakkeessa oleva ryhmittely ei liity johonkin koostettuun mittayksikköön, kuten seuraavassa kuvassa esitetään:
+Jos *Kaupunki*-arvo lisättäisiin myös visualisointiin, *kaupunkikohtainen* asukasmäärä olisi toki tiedossa, mutta *Myynti*-tieto *kaupungille* vain toistaisi *Myynti*-tiedon vastaavalle *osavaltiolle*. Näin normaalisti käykin, kun sarakkeessa oleva ryhmittely ei liity johonkin koostettuun mittariin, kuten seuraavassa kuvassa esitetään:
 
 ![Taulukkovisualisointi](media/desktop-many-to-many-relationships/many-to-many-relationships_10.png)
 
@@ -127,7 +127,7 @@ Seuraava **suhdenäkymä** näyttäisi kyseisen kahden taulukon välisen suoran 
 
 * Näytetyt arvot eivät sisällä toisen taulukon ristiriitaisista riveistä johtuvaa tyhjää riviä. Arvot eivät myöskään sisällä rivejä, joissa yhteydessä käytettävän toisen taulukon sarake sisältää null-arvoja.
 * `RELATED()`-funktion käyttäminen ei ole mahdollista, koska useampi kuin yksi rivi voi olla liittyvä.
-* `ALL()`-funktion käyttäminen taulukossa ei poista suodattimia, joita käytetään taulukkoon moni-moneen-yhteydellä yhdistetyissä muissa taulukoissa. Edellisessä esimerkissä mittayksikkö, joka on määritetty seuraavan komentosarjan tavoin, ei poistaisi yhdistetyn *Kaupunkitiedot*-taulukon sarakkeissa olevia suodattimia:
+* `ALL()`-funktion käyttäminen taulukossa ei poista suodattimia, joita käytetään taulukkoon moni-moneen-yhteydellä yhdistetyissä muissa taulukoissa. Edellisessä esimerkissä mittari, joka on määritetty seuraavan komentosarjan tavoin, ei poistaisi yhdistetyn *Kaupunkitiedot*-taulukon sarakkeissa olevia suodattimia:
 
     ![Komentosarjaesimerkki](media/desktop-many-to-many-relationships/many-to-many-relationships_13.png)
 

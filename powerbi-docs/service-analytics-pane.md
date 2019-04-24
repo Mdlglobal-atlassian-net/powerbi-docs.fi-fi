@@ -48,7 +48,7 @@ Voit tarkastella tietylle visualisoinnille käytettävissä olevia dynaamisia vi
    
    ![lisää keskiarvon viiva](media/service-analytics-pane/power-bi-add.png)
 
-3. Jos haluat luoda uuden viivan, valitse **+ Lisää** ja päätä mittayksikkö, jota käytetään viivan luomisessa.  Avattava **Mittayksikkö**-luettelo täytetään automaattisesti valitun visualisoinnin käytettävissä olevilla tiedoilla. Käytetään määrettä **Avoimien myymälöiden lukumäärä**.
+3. Jos haluat luoda uuden viivan, valitse **+ Lisää** ja päätä mittayksikkö, jota käytetään viivan luomisessa.  Avattava **Mittari**-luettelo täytetään automaattisesti valitun visualisoinnin käytettävissä olevilla tiedoilla. Käytetään määrettä **Avoimien myymälöiden lukumäärä**.
 
 5. Voit valita viivalle kaikenlaisia vaihtoehtoja, kuten värin, läpinäkyvyyden, tyylin ja sijainnin (liittyen visualisoinnin tietoelementteihin). Jos haluat antaa viivalle otsikon, anna sille otsikko ja siirrä sitten **Arvopisteen otsikko** -liukusäädin asentoon **Käytössä**.  Tässä tapauksessa annamme viivalle otsikon *Avoimien myymälöiden keskim. määrä* ja muutamme muutamia muita asetuksia, kuten jäljempänä esitetään.
    

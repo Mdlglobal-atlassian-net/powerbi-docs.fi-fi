@@ -37,18 +37,18 @@ Seuraavassa taulukossa esitetään monidimensioisten objektien ja Power BI Deskt
 | Kuutio |Malli |
 | Kuutiodimensio |Taulukko |
 | Dimension määritteet (avaimet), nimi |Sarakkeet |
-| Mittayksikköryhmä |Taulukko |
-| Mittayksikkö |Mittayksikkö |
-| Mittayksiköt ilman niihin liittyvää mittayksikköryhmää |Taulukon sisällä kutsuttavat *mittayksiköt* |
+| Mittariryhmä |Taulukko |
+| Mittari |Mittari |
+| Mittarit ilman niihin liittyvää mittariryhmää |Taulukon sisällä kutsuttavat *mittarit* |
 | Mittayksikköryhmän suhde kuution dimensioon |Suhde |
 | Perspektiivi |Perspektiivi |
 | Suorituskykyilmaisin |Suorituskykyilmaisin |
 | Käyttäjien / pää- ja alikohteiden hierarkiat |Hierarkiat |
 
-### <a name="measures-measure-groups-and-kpis"></a>Mittayksiköt, mittayksikköryhmät ja suorituskykyilmaisimet
-Monidimensioisen kuution mittayksikköryhmät näkyvät Power BI:ssä taulukkoina, joiden vieressä on **Kentät**-ruudussa merkki ∑. Lasketut mitat, joihin ei ole liitetty mittayksikköryhmää, ryhmitellään taulukkomuotoisissa metatiedoissa erikoistaulukkoon nimeltä *Mittayksiköt*.
+### <a name="measures-measure-groups-and-kpis"></a>Mittarit, mittariryhmät ja suorituskykyilmaisimet
+Monidimensioisen kuution mittariryhmät näkyvät Power BI:ssä taulukkoina, joiden vieressä on **Kentät**-ruudussa merkki ∑. Lasketut mittarit, joihin ei ole liitetty mittariryhmää, ryhmitellään taulukkomuotoisissa metatiedoissa erikoistaulukkoon nimeltä *Mittarit*.
 
-Monidimensiomallissa voi yksinkertaistaa kompleksisia malleja määrittämällä joukon mittayksikköjä tai suorituskykyilmaisimia kuutioon, joka sijoitetaan *Näyttökansioon*. Power BI tunnistaa taulukkomuotoisissa metatiedoissa näyttökansiot ja näyttää niiden sisällä olevat mittayksiköt ja suorituskykyilmaisimet. Monidimensioisten tietokantojen suorituskykyilmaisimet tukevat seuraavia: *Arvo*, *Tavoite*, *tilagrafiikka* ja *trendigrafiikka*.
+Monidimensiomallissa voi yksinkertaistaa kompleksisia malleja määrittämällä joukon mittareita tai suorituskykyilmaisimia kuutioon, joka sijoitetaan *Näyttökansioon*. Power BI tunnistaa taulukkomuotoisissa metatiedoissa näyttökansiot ja näyttää niiden sisällä olevat mittarit ja suorituskykyilmaisimet. Monidimensioisten tietokantojen suorituskykyilmaisimet tukevat seuraavia: *Arvo*, *Tavoite*, *tilagrafiikka* ja *trendigrafiikka*.
 
 ### <a name="dimension-attribute-type"></a>Dimension määritetyyppi
 Monidimensiomallit tukevat myös niihin liittyviä dimensiomääritteitä, jotka ovat tiettyä dimension määritetyyppiä. Taulukkomuotoisissa metatiedoissa näytetään esimerkiksi **Paikkatieto**-dimensio, jossa *Kaupunki*-, *Osavaltio tai provinssi*-, *Maa*- ja *Postinumero*-dimensiomääritteisiin on liitetty asianmukaiset paikkatietotyypit. Power BI tunnistaa nämä metatiedot, joten voit luoda niistä karttavisualisointeja. Tunnistat liittyvät tiedot siitä, että elementin vieressä näkyy Power BI:ssä **Kenttä**-ruudussa *kartan* kuvake.
@@ -81,7 +81,7 @@ Monidimensiomallit tukevat dimensio- ja solutason suojausta *roolien* kautta. Ku
 * Jotta Power BI Desktopin SSAS MD ‑liitin toimisi oikein, palvelimissa on oltava käytössä Analysis Servicesistä versio SQL Server 2012 SP1 CU4 tai uudempi versio.
 * *Toiminnot* ja *Nimetyt joukot* eivät näy Power BI:ssä, mutta voit silti muodostaa yhteyden kuutioihin, jotka sisältävät myös *toimintoja* ja *nimettyjä joukkoja* ja luoda visualisointeja ja raportteja.
 * Saatat kohdata ongelman, kun Power BI näyttää SSAS-mallin metatiedot, mutta et pysty noutamaan tietoja mallista. Tämä saattaa tapahtua, jos järjestelmään on asennettuna 32-bittinen MSOLAP-palvelun versio, eikä 64-bittinen versio. 64-bittisen version asentaminen saattaa ratkaista ongelman.
-* Et voi luoda raporttitason mittayksiköitä, kun luot raporttia, joka on yhteydessä käytössä olevaan SSAS-monidimensiomalliin. Käytettävissä ovat ainoastaan MD-mallissa määritetyt mittayksiköt.
+* Et voi luoda raporttitason mittareita, kun luot raporttia, joka on yhteydessä käytössä olevaan SSAS-monidimensiomalliin. Käytettävissä ovat ainoastaan MD-mallissa määritetyt mittarit.
 
 ## <a name="supported-features-of-ssas-md-in-power-bi-desktop"></a>Power BI Desktopin tukemat SSAS MD:n ominaisuudet
 Power BI Desktop tukee seuraavia SSAS MD:n ominaisuuksia:
@@ -94,8 +94,8 @@ Power BI Desktop tukee seuraavia SSAS MD:n ominaisuuksia:
   * Dimension lasketut jäsenet (Jos dimensiossa on enemmän kuin yksi määrite, siinä on oltava yksi oikea jäsen; se ei voi olla dimension avainmäärite, paitsi ollessaan ainoa määrite, eikä se voi olla pää-alikohdemäärite.)
   * Dimension määritetyypit
   * Hierarkiat
-  * Mittayksiköt (mittayksikköryhmien kanssa tai ilman niitä)
-  * Mittayksiköt varianttina
+  * Mittarit (mittariryhmien kanssa tai ilman niitä)
+  * Mittarit varianttina
   * Suorituskykyilmaisimet
   * ImageUrl-tyypit
   * Dimension suojaus

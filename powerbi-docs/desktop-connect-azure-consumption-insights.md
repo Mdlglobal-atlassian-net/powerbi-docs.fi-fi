@@ -20,7 +20,7 @@ ms.locfileid: "57327983"
 ---
 # <a name="analyze-azure-cost-and-usage-data-in-power-bi-desktop"></a>Azuren kustannus- ja käyttötietojen analysointi Power BI Desktopissa
 
-Power BI desktop voi muodostaa yhteyden Azureen, jolloin saat tarkempia tietoja Azuren käytöstä organisaatiossasi. Sen avulla voit luoda mukautettuja raportteja ja mittayksiköitä, joiden avulla saat entistä paremman käsityksen ja analyysit Azuren käytöstä.
+Power BI desktop voi muodostaa yhteyden Azureen, jolloin saat tarkempia tietoja Azuren käytöstä organisaatiossasi. Sen avulla voit luoda mukautettuja raportteja ja mittareita, joiden avulla saat entistä paremman käsityksen ja analyysit Azuren käytöstä.
 
 Power BI tukee tällä hetkellä Enterprise Agreement -sopimusten ja asiakassopimusten laskutustileihin yhdistämistä.
 
@@ -87,7 +87,7 @@ Kun valitsemasi tiedot on ladattu, valitsemasi taulukot ja kentät näkyvät **K
 ## <a name="using-azure-consumption-insights"></a>Azure Consumption Insightsin käyttö
 **Azure Consumption Insights** -liittimen käyttö edellyttää, että sinulla on käyttöoikeus Azure-portaalin yritysominaisuuksiin.
 
-Kun olet ladannut tiedot onnistuneesti **Azure Consumption Insights** -liittimen avulla, voit luoda omia mukautettuja mittayksiköitä ja sarakkeita käyttämällä **kyselyeditoria**. Voit myös luoda visualisointeja, raportteja ja koontinäyttöjä, joita voit jakaa **Power BI -palvelussa**.
+Kun olet ladannut tiedot onnistuneesti **Azure Consumption Insights** -liittimen avulla, voit luoda omia mukautettuja mittareita ja sarakkeita käyttämällä **kyselyeditoria**. Voit myös luoda visualisointeja, raportteja ja koontinäyttöjä, joita voit jakaa **Power BI -palvelussa**.
 
 Azure sisältää myös kokoelman mukautettuja mallikyselyitä, joita voit hakea käyttämällä tyhjää kyselyä. Voit hakea niitä valitsemalla **Power BI Desktopin** **Aloitus**-valintanauhasta **Nouda tiedot** -kohdan avausnuoli ja sen jälkeen **Tyhjä kysely**. Voit tehdä haun myös napsauttamalla hiiren kakkospainikkeella **kyselyeditorin** vasemmassa sivussa näkyvää **Kyselyt**-ruutua ja valitsemalla avautuvasta valikosta **Uusi kysely > Tyhjä kysely**.
 
@@ -134,15 +134,15 @@ Sinun tulee luonnollisesti korvata *enrollmentNumber*-arvo omalla rekisteröinti
 
 Kun valitset **Laajennettu editori** -ikkkunan **Valmis**-painikkeen, esikatselu päivittyy ja näet taulukossa tiedot määrittämältäsi kuukausiväliltä. Valitse **Sulje ja ota käyttöön** ja palaa.
 
-### <a name="step-3-move-measures-and-custom-columns-to-the-new-report"></a>Vaihe 3: Siirrä mittayksiköt ja mukautetut sarakkeet uuteen raporttiin
-Seuraavaksi on siirrettävä luomasi mukautetut sarakkeet tai mittayksiköt uuteen tietotaulukkoon. Vaiheet ovat seuraavat:
+### <a name="step-3-move-measures-and-custom-columns-to-the-new-report"></a>Vaihe 3: Siirrä mittarit ja mukautetut sarakkeet uuteen raporttiin
+Seuraavaksi on siirrettävä luomasi mukautetut sarakkeet tai mittarit uuteen tietotaulukkoon. Vaiheet ovat seuraavat:
 
 1. Avaa Muistio (tai muu tekstieditori).
-2. Valitse mittayksikkö, jonka haluat siirtää, kopioi teksti *Kaava*-kentästä ja lisää se Muistioon.
+2. Valitse mittari, jonka haluat siirtää, kopioi teksti *Kaava*-kentästä ja lisää se Muistioon.
    
    ![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_11.png)
 3. Muuta *Kysely1*:n nimeksi alkuperäisen tietotaulukon nimi.
-4. Luo taulukkoon uusia mittayksiköitä ja mukautettuja sarakkeita napsauttamalla taulukkoa hiiren kakkospainikkeella ja valitsemalla **Uusi mittayksikkö**. Leikkaa ja liimaa sen jälkeen tallennetut mittayksiköt ja sarakkeet, kunnes ne ovat kaikki valmiit.
+4. Luo taulukkoon uusia mittareita ja mukautettuja sarakkeita napsauttamalla taulukkoa hiiren kakkospainikkeella ja valitsemalla **Uusi mittari**. Leikkaa ja liimaa sen jälkeen tallennetut mittarit ja sarakkeet, kunnes ne ovat kaikki valmiit.
 
 ### <a name="step-4-re-link-tables-that-had-relationships"></a>Vaihe 4: Linkitä uudelleen suhteita sisältäneet taulukot
 Monissa koontinäytöissä on lisäksi taulukoita, joita käytetään hakuun tai suodatukseen, kuten päivämäärätaulukoita tai mukautettuihin projekteihin käytettyjä taulukoita. Näiden suhteiden muodostaminen uudelleen ratkaisee useimmat jäljellä olevat ongelmat. Näin voit tehdä sen.
@@ -203,7 +203,7 @@ Tietojen sarakkeet ja nimet Azure-portaalissa ovat vastaavat ohjelmointirajapinn
 | Subscription Name |subscriptionName |Subscription Name |Ei |
 | Tags |tags |Tags |Ei |
 | TagsId | | |Kyllä |
-| Unit Of Measure |unitOfMeasure |Unit Of Measure |Ei |
+| Mittayksikkö |unitOfMeasure |Mittayksikkö |Ei |
 | Vuosi | |Vuosi |Ei |
 | SubscriptionId |subscriptionId |SubscriptionId |Kyllä |
 | SubscriptionGuid |subscriptionGuid |SubscriptionGuid |Ei |

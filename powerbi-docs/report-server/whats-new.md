@@ -89,7 +89,7 @@ Yksi ehdollista muotoilua koskeva merkittävä parannus on mahdollisuus muotoill
 
 #### <a name="conditional-formatting-by-values"></a>Ehdollinen muotoilu arvojen mukaan
 
-Toinen uusi ehdollisen muotoilun tyyppi on mahdollisuus käyttää **muotoiluperusteena kentän arvoa**. Kun muotoiluperusteena on kentän arvo, voit määrittää taustan tai fontin värin mittayksiköllä tai sarakkeella, joka sisältää kyseisen värin heksadesimaalikoodin tai nimen.
+Toinen uusi ehdollisen muotoilun tyyppi on mahdollisuus käyttää **muotoiluperusteena kentän arvoa**. Kun muotoiluperusteena on kentän arvo, voit määrittää taustan tai fontin värin mittarilla tai sarakkeella, joka sisältää kyseisen värin heksadesimaalikoodin tai nimen.
 
 #### <a name="report-page-tooltips"></a>Raporttisivun työkaluvihjeet
 

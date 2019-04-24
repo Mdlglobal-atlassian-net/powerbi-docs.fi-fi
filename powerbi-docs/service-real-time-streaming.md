@@ -221,7 +221,7 @@ Push-tietojoukkojen kohdalla voit yrittää luoda raporttivisualisoinnin viimeis
 Valitettavasti tämä ei ole käytettävissä tällä hetkellä.
 
 #### <a name="given-the-previous-question-how-can-i-do-any-modeling-on-real-time-datasets"></a>Ottaen huomioon edellisen kysymyksen, miten voin tehdä mallinnuksia reaaliaikaisiin tietojoukkoihin?
-Mallinnuksen tekeminen ei ole mahdollista suoratoistettaviin tietojoukkoihin, koska tietoja ei tallenneta pysyvästi. Push-tietojoukon kohdalla voit käyttää tietojoukon/taulukon päivitystä REST-ohjelmointirajapinnassa mittayksiköiden ja suhteiden lisäämiseksi. 
+Mallinnuksen tekeminen ei ole mahdollista suoratoistettaviin tietojoukkoihin, koska tietoja ei tallenneta pysyvästi. Push-tietojoukon kohdalla voit käyttää tietojoukon/taulukon päivitystä REST-ohjelmointirajapinnassa mittarien ja suhteiden lisäämiseksi. 
 
 #### <a name="how-can-i-clear-all-the-values-on-a-push-dataset-how-about-streaming-dataset"></a>Miten voit poistaa kaikki push-tietojoukon arvot? Entä suoratoistettavan tietojoukon?
 Push-tietojoukolle voit käyttää Poista rivejä -kutsua REST -ohjelmointirajapinnassa. Tällä hetkellä tietoja ei voida poistaa suoratoistettavasta tietojoukosta, tiedot tosin poistuvat itsestään tunnin kuluessa.

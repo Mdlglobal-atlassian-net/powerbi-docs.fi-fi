@@ -33,17 +33,17 @@ Lisäksi on *äärimmäisen tärkeää* ymmärtää, että monia SAP BW:n toimin
 Kun muodostat yhteyden SAP BW:n Power BI:n DirectQuerylla, ensisijaiset mallinnuksen lisärajoitukset ovat seuraavat:
 
 * **Laskettuja sarakkeita ei tueta:** Laskettujen sarakkeiden luominen ei ole mahdollista. Tämä tarkoittaa sitä, että myöskään ryhmittely ja klusterointi eivät ole käytettävissä, sillä ne luovat laskettuja sarakkeita.
-* **Mittayksiköiden lisärajoitukset:** Mittayksiköissä käytettäville DAX-lausekkeille on lisärajoitukset SAP BW:n tarjoaman tukitason vuoksi.
+* **Mittayksiköiden lisärajoitukset:** Mittareissa käytettäville DAX-lausekkeille on lisärajoitukset SAP BW:n tarjoaman tukitason vuoksi.
 * **Suhteiden määrittämistä ei tueta:** Suhteet ovat luontaisia ulkoisessa SAP-lähteessä, joten mallissa ei voi määrittää muita suhteita.
 * **Ei tietonäkymää:** **Tietonäkymässä** näytetään yleensä taulukoiden tarkemmat tiedot. SAP BW:n kaltaisten OLAP-lähteiden luonteesta johtuen tämä näkymä ei ole käytettävissä SAP BW -tietoja käytettäessä.
-* **Sarakkeiden ja mittayksiköiden tiedot ovat kiinteät:** Kenttäluettelossa näkyvä sarakkeiden ja mittayksiköiden luettelo on kiinteä taustalla olevan lähteen mukaisesti, joten sitä ei voi muokata. Et voi esimerkiksi poistaa saraketta tai vaihtaa sen tietotyyppiä (voit kuitenkin vaihtaa sen nimeä).
-* **Muut DAX-rajoitukset:** Mittayksikkömääritelmissä käytettävälle DAX:lle on lisärajoituksia lähteen rajoitusten vuoksi. Et esimerkiksi voi käyttää koostefunktiota taulukossa.
+* **Sarakkeiden ja mittayksiköiden tiedot ovat kiinteät:** Kenttäluettelossa näkyvä sarakkeiden ja mittarien luettelo on kiinteä taustalla olevan lähteen mukaisesti, joten sitä ei voi muokata. Et voi esimerkiksi poistaa saraketta tai vaihtaa sen tietotyyppiä (voit kuitenkin vaihtaa sen nimeä).
+* **Muut DAX-rajoitukset:** Mittarimääritelmissä käytettävälle DAX:lle on lisärajoituksia lähteen rajoitusten johdosta. Et esimerkiksi voi käyttää koostefunktiota taulukossa.
 
 ## <a name="additional-visualization-restrictions"></a>Visualisointien lisärajoitukset
 Kun muodostat yhteyden SAP BW:n Power BI:n DirectQuerylla, ensisijaiset visualisointien lisärajoitukset ovat seuraavat:
 
 * **Ei sarakkeiden koostamista:** Et voi vaihtaa visualisoinnin sarakkeen koostamista. Sen asetus on aina *Älä tee yhteenvetoa*
-* **Mittayksiköiden suodatus ei ole käytössä:** SAP BW:n tarjoamasta tukitasosta johtuen mittayksiköiden suodatus ei ole käytettävissä.
+* **Mittayksiköiden suodatus ei ole käytössä:** SAP BW:n tarjoamasta tukitasosta johtuen mittarien suodatus ei ole käytettävissä.
 * **Monivalinta sekä sisällyttäminen/pois jättäminen:** Visualisoinnissa ei voi valita useita arvopisteitä, jos pisteet edustavat arvoja useammasta kuin yhdestä sarakkeesta. Jos sinulla on esimerkiksi palkkikaavio, joka kuvaa myyntiä maittain ja jonka selite on Luokka, et voi valita pistettä, joka edustaa Yhdysvaltoja ja pyöriä, sekä pistettä, joka edustaa Ranskaa ja vaatteita. Et myöskään voi valita pistettä, joka edustaa Yhdysvaltoja ja pyöriä, ja jättää sitä pois visualisoinnista. Molemmat rajoitukset johtuvat SAP BW:n tarjoamasta tuesta.
 
 ## <a name="support-for-sap-bw-features"></a>SAP BW:n toimintojen ja ominaisuuksien tuki
@@ -72,7 +72,7 @@ Seuraavassa taulukossa luetellaan kaikki SAP BW:n toiminnot ja ominaisuudet, joi
 | Käyttäjien kieliasetus |Kieliasetus, joka on käytössä SAP BW:hen yhdistettäessä, määritetään osana yhteystietoja, joten ei vastaa raportin lopullisen käyttäjän kieliasetusta. |
 | Tekstimuuttujat |SAP BW mahdollistaa sen, että kenttänimet voivat sisältää muuttujien paikkamerkkejä (esimerkiksi "$YEAR$ Actuals"), jotka sitten korvataan valitulla arvolla. Kenttä voidaan esimerkiksi näyttää muodossa "2016 Actuals" BEx-työkaluissa, jos muuttujaksi on valittu vuosi 2016. <br/> <br/> Sarakkeen nimeä Power BI:ssä ei vaihdeta muuttujan arvon mukaisesti, joten se näytetään muodossa "$YEAR$ Actuals".  Sarakkeen nimeä voi kuitenkin sitten vaihtaa Power BI:ssä. |
 | Customer Exit -muuttujat | Julkinen ohjelmointirajapinta ei tarjoa Customer Exit -muuttujia, joten niitä ei tueta Power BI:ssä. |
-| Ominaisuusrakenteet | Mitkä tahansa ominaisuusrakenteet taustalla olevassa SAP BW -lähteessä aiheuttavat Power BI:ssä näytettävien mittayksiköiden ”räjähdyksen”. Jos esimerkiksi käytössä on kaksi mittayksikköä, Sales ja Costs, sekä ominaisuusrakenne, joka sisältää Budget- ja Actual-mittayksiköt, näytetään neljä mittayksikköä: Sales.Budget, Sales.Actual, Costs.Budget, Costs.Actual. |
+| Ominaisuusrakenteet | Mitkä tahansa ominaisuusrakenteet taustalla olevassa SAP BW -lähteessä aiheuttavat Power BI:ssä näytettävien mittarien ”räjähdyksen”. Jos esimerkiksi käytössä on kaksi mittaria, Sales ja Costs, sekä ominaisuusrakenne, joka sisältää Budget- ja Actual-mittarit, näytetään neljä mittaria: Sales.Budget, Sales.Actual, Costs.Budget, Costs.Actual. |
 
 
 ## <a name="next-steps"></a>Seuraavat vaiheet

@@ -204,7 +204,7 @@ Pilvipohjaisten tietolähteiden osalta Tietojen siirron rooli salaa salausavaime
 
 #### <a name="datasets"></a>Tietojoukot
 
-1. Metatiedot (taulukot, sarakkeet, mittayksiköt, laskutoimitukset, yhteysmerkkijonot jne.)
+1. Metatiedot (taulukot, sarakkeet, mittarit, laskutoimitukset, yhteysmerkkijonot jne.)
 
     a. Paikallisen Analysis Services -palvelun osalta mitään ei tallenneta palveluun, lukuun ottamatta viittausta tietokantaan, joka tallennetaan salattuna Azuren SQL-tietokantaan.
 
@@ -284,7 +284,7 @@ Seuraavassa kuvataan tietoja, jotka on tallennettu tilapäisesti ei-väliaikaisi
 
 #### <a name="datasets"></a>Tietojoukot
 
-1. Metatiedot (taulukot, sarakkeet, mittayksiköt, laskutoimitukset, yhteysmerkkijonot jne.)
+1. Metatiedot (taulukot, sarakkeet, mittarit, laskutoimitukset, yhteysmerkkijonot jne.)
 
 2. Jotkin rakenteeseen liittyvät artefaktit voidaan tallentaa tietokonesolmujen levylle rajoitetuksi ajaksi. Jotkin artefaktit voidaan tallentaa salaamattomina myös Azure REDIS Cache -välimuistiin rajoitetuksi ajaksi.
 

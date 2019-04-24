@@ -48,7 +48,7 @@ Selvitä merkityksellisten tietojen avulla, missä kohtaa kaavioiden jakaumat er
 
 Valitun suodattimen käyttämät arvot näytetään käyttämällä normaalia oletusväriä. Kokonaisarvot näytetään alkuperäisen aloitusvisualisoinnin mukaisesti harmaana vertailun helpottamiseksi. Voit sisällyttää kaavioon enintään kolme eri suodatinta (tässä esimerkissä *Touring Bikes*, *Mountain Bikes* ja *Road Bikes*) ja valita eri suodattimia napsauttamalla niitä (tai valita useita pitämällä Ctrl-näppäintä pohjassa).
 
-Yksinkertaisten lisäarvojen, kuten tässä esimerkissä *Kokonaismyyntilukujen* vertailu perustuu absoluuttisten arvojen sijasta suhteellisiin arvoihin. Tästä johtuen, vaikka Touring Bikesien myynti on huomattavasti vähäisempää kuin kaikkien luokkien yhteismyyntiarvo, visualisointi käyttää oletusarvoisesti kaksoisakselia, jotta eri maiden Touring Bikesien myyntiosuuksien vertailu kaikkien muiden pyöräkategorioiden kanssa olisi mahdollista.  Visualisoinnin piilottaminen ja näyttäminen mahdollistavat näiden kahden arvon näkymisen samalla akselilla, jolloin absoluuttiset arvot ovat helposti vertailtavissa (kuten seuraavassa kuvassa).    
+Yksinkertaisten lisämittarien, kuten tässä esimerkissä *Kokonaismyyntilukujen* vertailu perustuu absoluuttisten arvojen sijasta suhteellisiin arvoihin. Tästä johtuen, vaikka Touring Bikesien myynti on huomattavasti vähäisempää kuin kaikkien luokkien yhteismyyntiarvo, visualisointi käyttää oletusarvoisesti kaksoisakselia, jotta eri maiden Touring Bikesien myyntiosuuksien vertailu kaikkien muiden pyöräkategorioiden kanssa olisi mahdollista.  Visualisoinnin piilottaminen ja näyttäminen mahdollistavat näiden kahden arvon näkymisen samalla akselilla, jolloin absoluuttiset arvot ovat helposti vertailtavissa (kuten seuraavassa kuvassa).    
 
 ![Merkityksellisissä tiedoissa käytettävät visualisoinnit](media/desktop-insights-find-where-different/find-where-different_04.png)
 
@@ -77,9 +77,9 @@ Tietyn tuoteluokan *”Road Bike*) myyntijakauma saattaisi olla:
 |Yhdysvallat      |3        |
 |Kanada   |1         |
 
-Vaikka luvut eroavatkin kyseisissä taulukoissa toisistaan, USA:n ja Kanadan suhteelliset arvot ovat samat (kokonaismyynti sekä Road Bikesien myynti 75 % ja 25 %). Tämän vuoksi näitä ei katsota poikkeaviksi. Tästä syystä, tämänkaltaisten yksinkertaisten lisäarvojen kohdalla algoritmi etsii eroja *suhteellisista* arvoista.  
+Vaikka luvut eroavatkin kyseisissä taulukoissa toisistaan, USA:n ja Kanadan suhteelliset arvot ovat samat (kokonaismyynti sekä Road Bikesien myynti 75 % ja 25 %). Tämän vuoksi näitä ei katsota poikkeaviksi. Tästä syystä tämänkaltaisten yksinkertaisten lisämittarien kohdalla algoritmi etsii eroja *suhteellisista* arvoista.  
 
-Sen sijaan sellaisten arvojen, kuten katteen kohdalla, josta lasketaan sekä tuotto että kustannukset, jos USA:n ja Kanadan kokonaiskatteet olisivat seuraavat
+Sen sijaan sellaisten mittarien, kuten katteen kohdalla, josta lasketaan sekä tuotto että kustannukset, jos USA:n ja Kanadan kokonaiskatteet olisivat seuraavat
 
 |Maa  |Kate (%)|
 |---------|----------|
@@ -93,13 +93,13 @@ Tietyn tuoteluokan *”Road Bike*) myyntijakauma saattaisi olla:
 |Yhdysvallat      |3        |
 |Kanada   |1         |
 
-Arvojen luonteesta johtuen arvoja *pidetään* merkittävästi poikkeavina. Ei-lisättävien arvojen ollessa kyseessä, kuten tässä esimerkissä kate, algoritmi etsii eroja absoluuttisten arvojen välillä.
+Mittarien luonteesta johtuen arvoja *pidetään* merkittävästi poikkeavina. Ei-lisättävien mittarien ollessa kyseessä, kuten tässä esimerkissä kate, algoritmi etsii eroja absoluuttisten arvojen välillä.
 
 Näytettävistä visualisoinneista on tarkoitus näkyä selvästi kokonaisjakaumissa havaitut erot (alkuperäisen visualisoinnin mukaisesti) ja arvot tiettyä suodatinta käyttämällä.  
 
-Lisättävien arvojen, kuten edellisessä esimerkissä *myynnin* ollessa kyseessä, käytetään pylväs- ja kaavioita, joissa asianmukaisesti skaalattu kaksoisakseli tekee suhteellisten arvojen vertailusta helppoa. Sarakkeissa näkyvät suodattimen mukaiset arvot ja rivillä kokonaisarvo (normaalisti sarakeakseli vasemmalla ja riviakseli oikealla). Rivin näytetään *porrastetulla* tyylillä, jossa on harmaalla täytetty katkoviiva. Edelliseen esimerkkiin viitaten, jos sarakeakselin enimmäisarvo on 4 ja riviakselin enimmäisarvo on 20, tekee se USA:n ja Kanada suodatettujen kokonaisarvojen suhteellisten arvojen vertailun helpoksi. 
+Lisättävien mittarien, kuten edellisessä esimerkissä *myynnin* ollessa kyseessä, käytetään pylväs- ja viivakaavioita, joissa asianmukaisesti skaalattu kaksoisakseli tekee suhteellisten arvojen vertailusta helppoa. Sarakkeissa näkyvät suodattimen mukaiset arvot ja rivillä kokonaisarvo (normaalisti sarakeakseli vasemmalla ja riviakseli oikealla). Rivin näytetään *porrastetulla* tyylillä, jossa on harmaalla täytetty katkoviiva. Edelliseen esimerkkiin viitaten, jos sarakeakselin enimmäisarvo on 4 ja riviakselin enimmäisarvo on 20, tekee se USA:n ja Kanada suodatettujen kokonaisarvojen suhteellisten arvojen vertailun helpoksi. 
 
-Samalla tavalla ei-lisättäville mittayksiköille, kuten edellisen esimerkin *katteelle* käytetään pylväs- ja viivakaaviota, jossa yksittäisen akselin absoluuttiset arvot ovat helposti vertailtavissa. Viiva (harmaalla täytetty) näyttää taas kokonaisarvon. Vertailtiinpa sitten todellisia tai suhteellisia arvoja, jakaumien eroavaisuuden määrittäminen ei ole yksinkertaisesti vain arvojen eroavaisuuksien laskemista. Esimerkki:
+Samalla tavalla ei-lisättäville mittareille, kuten edellisen esimerkin *katteelle* käytetään pylväs- ja viivakaaviota, jossa yksittäisen akselin absoluuttiset arvot ovat helposti vertailtavissa. Viiva (harmaalla täytetty) näyttää taas kokonaisarvon. Vertailtiinpa sitten todellisia tai suhteellisia arvoja, jakaumien eroavaisuuden määrittäminen ei ole yksinkertaisesti vain arvojen eroavaisuuksien laskemista. Esimerkki:
 
 * Populaation koko otetaan huomioon, koska eroavaisuus on vähemmän tilastollisesti merkittävä ja mielenkiintoinen kun sitä sovelletaan kokonaispopulaation pienempään osuuteen. Esimerkiksi myyntijakauma eri maiden välillä saattaa olla hyvin erilainen jollekin tietylle tuotteelle. Tätä ei pidetä kiinnostavana jos kyseessä on tuhansia eri tuotteita, koska yksittäinen tuote muodostaa vain pienen prosenttiosuuden kokonaismyynnistä.
 
@@ -128,10 +128,10 @@ Nämä laitettaisiin seuraavanlaiseen sarakejärjestykseen:
 Seuraavassa luettelossa on esitetty tilanteita, joissa **merkityksellistä tietoa** ei tällä hetkellä tueta:
 
 * TopN-suodattimet
-* Mittayksikkösuodattimet
-* Muu kuin numeeriset mittayksiköt
+* Mittarisuodattimet
+* Muu kuin numeeriset mittarit
 * ”Näytä arvo muodossa” -toiminnon käyttö
-* Suodatetut mittayksiköt - Suodatetut mittayksiköt ovat visuaalisen tason laskutoimituksia, joihin liittyy tietty suodatin (esimerkiksi *Ranskan kokonaismyynti*), ja niitä käytetään joissakin merkitykselliset tiedot -toiminnon avulla luoduissa visualisoinneissa
+* Suodatetut mittarit - Suodatetut mittarit ovat visuaalisen tason laskutoimituksia, joihin sovelletaan tiettyä suodatinta (esimerkiksi *Ranskan kokonaismyynti*), ja joita käytetään joissakin merkityksellisten tietojen toiminnon luomissa visualisoinneissa
 
 Lisäksi seuraavia mallityyppejä ja tietolähteitä ei tueta tällä hetkellä merkityksellisten tietojen osalta:
 

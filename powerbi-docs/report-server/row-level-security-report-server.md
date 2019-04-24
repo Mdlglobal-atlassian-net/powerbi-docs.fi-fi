@@ -104,7 +104,7 @@ Raporttien tekijöillä ei ole raporttitietojen tarkasteluoikeutta Power BI -rap
 
 Voit, jos tiedot on tuotu Power BI Desktopiin. Jos käytät reaaliaikaista yhteyttä, et pysty määrittämään rivitason suojausta Power BI -palvelun sisällä. Se määritetään Analysis Services -mallissa paikallisesti. 
 
-### <a name="can-i-use-rls-to-limit-the-columns-or-measures-accessible-by-my-users"></a>Voinko käyttää rivitason suojausta rajoittamaan käyttäjien käytössä olevia sarakkeita tai mittayksiköitä? 
+### <a name="can-i-use-rls-to-limit-the-columns-or-measures-accessible-by-my-users"></a>Voinko käyttää rivitason suojausta rajoittamaan käyttäjien käytössä olevia sarakkeita tai mittareita? 
 
 Ei. Jos käyttäjällä on tietyn tietorivin käyttöoikeus, hän voi nähdä kaikki kyseisen rivin tietosarakkeet. 
 

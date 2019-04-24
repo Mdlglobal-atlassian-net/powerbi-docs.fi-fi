@@ -63,7 +63,7 @@ Kun liukusäädin on Käytössä-asennossa, voit määrittää kentät, joissa h
 
 ![Lisää kenttiä määrittääksesi, missä työkaluvihje tulee näkyviin](media/desktop-tooltips/desktop-tooltips_08.png)
  
-Voit sisällyttää **Työkaluvihjekentät**-ryhmään sekä luokittaisia että numeerisia kenttiä, mittayksiköt mukaan lukien.
+Voit sisällyttää **Työkaluvihjekentät**-ryhmään sekä luokkakenttiä että numeerisia kenttiä, mittarit mukaan lukien.
 
 Kun tämä on valmis, luomaasi työkaluvihjeen raporttisivua käytetään visualisoinneissa työkaluvihjeenä raportissa, joka käyttää **Työkaluvihjekentät**-ryhmään sijoittamiasi kenttiä, ja se korvaa oletusarvoisen Power BI -työkaluvihjeen.
 
