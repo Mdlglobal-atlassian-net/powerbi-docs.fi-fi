@@ -68,5 +68,5 @@ Näyttämällä osittajassa **lyhyen päivämäärän** muodon varmistat, että 
 **Numeerisen alueen osittajaa** koskevat tällä hetkellä seuraavat rajoitukset ja huomioon otettavat seikat:
 
 * **Numeerisen alueen osittaja** suodattaa tällä hetkellä kaikki tietojen pohjana olevat rivit eikä koostettuja arvoja. Esimerkiksi jos käytetään kenttää *Myynnin määrä*, suodatetaan jokainen kenttään *Myynnin määrä* pohjautuva tapahtuma eikä summaa, joka saadaan visualisoinnin kunkin arvopisteen *Myynnin määrä* -kentistä.
-* Osittaja ei tällä hetkellä toimi mittayksiköiden kanssa.
+* Osittaja ei tällä hetkellä toimi mittarien kanssa.
 * Voit kirjoittaa minkä tahansa luvun tekstiruutuun numeerisessa osittajassa, vaikka luku olisi pohjana olevan sarakkeen arvojen alueen ulkopuolella. Tämän avulla voit määrittää suodattimia, jos tiedät, että tiedot voivat muuttua tulevaisuudessa.

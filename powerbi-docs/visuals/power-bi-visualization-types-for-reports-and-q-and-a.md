@@ -152,7 +152,7 @@ Nauhakaaviot näyttävät, millä tietoluokalla on paras sijoitus (suurin arvo).
 ![](media/power-bi-visualization-types-for-reports-and-q-and-a/pbi_nancy_viz_bubble.png)
 
 >[!TIP]
->Näyttävät suhteen kahden (pistekaavio) tai kolmen (kuplakaavio) määrällisen mitan välillä, onko niitä, missä järjestyksessä jne.
+>Näyttävät suhteen kahden (pistekaavio) tai kolmen (kuplakaavio) määrällisen mittarin välillä, onko niitä, missä järjestyksessä jne.
 
 Lisätietoja on artikkelissa [Power BI -pistekaaviot](power-bi-visualization-scatter.md).
 

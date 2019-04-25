@@ -52,7 +52,7 @@ items:
 
 
     [!INCLUDE [](includes/2-4-optimize-data-models.md)]
-- title: Laskettujen mittojen luominen
+- title: Laskettujen mittarien luominen
   durationInMinutes: 14
   content: >
     > [!Video https://www.youtube.com/embed/yn2bXVQJLx8?rel=0]

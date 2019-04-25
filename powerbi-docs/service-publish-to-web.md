@@ -137,7 +137,7 @@ Mukautettuja visualisointeja tuetaan **Julkaise verkkoon** -toiminnossa. Kun kä
 - ”R”-visualisointeja ei tällä hetkellä tueta Julkaise verkkoon -raporteissa.
 - Tietojen vieminen visualisoinneista raportissa, joka on julkaistu verkkoon
 - Power BI -visualisointien ArcGIS Maps
-- Raportit, jotka sisältävät raporttitason DAX-mittayksiköitä
+- Raportit, jotka sisältävät raporttitason DAX-mittareita
 - Kertakirjautuminen tietokyselymalleissa
 - [Luottamuksellisten tai omistusoikeudellisten tietojen suojaaminen](#publish-to-web-from-power-bi)
 - **Upota**-vaihtoehdon tarjoama automaattisen todentamisen mahdollisuus ei toimi Power BI:n JavaScript-ohjelmointirajapinnan kanssa. Jos käytät Power BI:n JavaScript-ohjelmointirajapintaa, käytä upotuksessa [käyttäjä omistaa tiedot](developer/embed-sample-for-your-organization.md) -menetelmää. Lue lisää [käyttäjän omistamista tiedoista](developer/embed-sample-for-your-organization.md).

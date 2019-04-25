@@ -60,7 +60,7 @@ Seuraavassa osiossa kuvataan yleisiä parhaita käytäntöjä yhdistämiseen Dir
   
 ### <a name="db-design-guidance"></a>Ohjeita tietokannan suunnitteluun
 
-- Työnnä laskettuja sarakkeita ja mittayksiköitä lähteeseen, mikäli mahdollista – mitä lähempänä ne ovat lähdettä, sitä suurempi todennäköisyys suorituskyvyn parantumiseen.
+- Työnnä laskettuja sarakkeita ja mittareita lähteeseen, mikäli mahdollista – mitä lähempänä ne ovat lähdettä, sitä suurempi todennäköisyys suorituskyvyn parantumiseen.
 - Optimoi! Ymmärrä kyselyiden suoritussuunnitelmia, lisää indeksejä usein suodatettaviin sarakkeisiin jne.
 
 ### <a name="modeling-guidance"></a>Mallinnusohjeet
@@ -68,7 +68,7 @@ Seuraavassa osiossa kuvataan yleisiä parhaita käytäntöjä yhdistämiseen Dir
 - Aloita Power BI Desktopissa.
 - Vältä monimutkaisia kyselyitä kyselyeditorissa.
 - Älä käytä suhteellista päivämäärien suodattamista kyselyeditorissa.  
-- Pidä mittayksiköt aluksi yksinkertaisina ja lisää monimutkaisuutta asteittain.
+- Pidä mittarit aluksi yksinkertaisina ja lisää monimutkaisuutta asteittain.
 - Vältä yhteyksiä lasketuissa sarakkeissa ja yksilöllisten tunnisteiden sarakkeissa.
 - Kokeile käyttää suhteisiin Oleta viite-eheys -asetusta – monissa tapauksissa tämä voi parantaa merkittävästi kyselyn toimintaa.  
 

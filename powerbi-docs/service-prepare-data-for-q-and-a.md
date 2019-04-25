@@ -41,7 +41,7 @@ Seuraavassa on joitakin vinkkejä, joiden avulla voit hyödyntää Q&A:ta tehokk
 
 * Jos työkirjassa on PowerPivot-tietomalli, voit tehdä muitakin optimointeja. Lue Microsoftin luonnollisen kielen tiimin asiantuntijoiden kirjoittama artikkeli, jossa [kerrotaan tarkemmin Power BI Q&A:sta (osa 2)](http://blogs.msdn.com/b/powerbi/archive/2014/02/27/demystifying-power-bi-q-amp-a-part-2.aspx).
 
-* Avaa tietojoukko Power BI Desktopissa ja luo esimerkiksi uusia sarakkeita, luo laskettuja mittoja, luo yksilöllisiä arvoja yhdistämällä kenttiä sekä luokittele tietoja tyypin mukaan (esimerkiksi päivämäärät, merkkijonot, maantieteelliset alueet, kuvat, URL-osoitteet).
+* Avaa tietojoukko Power BI Desktopissa ja luo esimerkiksi uusia sarakkeita, luo laskettuja mittareita, luo yksilöllisiä arvoja yhdistämällä kenttiä sekä luokittele tietoja tyypin mukaan (esimerkiksi päivämäärät, merkkijonot, maantieteelliset alueet, kuvat, URL-osoitteet).
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 Takaisin artikkeliin [Q&A Power BI:ssä](consumer/end-user-q-and-a.md)  

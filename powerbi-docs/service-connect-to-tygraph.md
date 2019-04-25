@@ -18,7 +18,7 @@ ms.lasthandoff: 01/04/2019
 ms.locfileid: "54007854"
 ---
 # <a name="connect-to-tygraph--with-power-bi"></a>Yhteyden muodostaminen tyGraphiin Power BI:n avulla
-Visualisoi ja tutki tyGraph-tietoja Power BI:ssä Power BI -sisältöpaketin avulla. Aloita yhdistämällä tyGraph-tiliisi ja lataamalla raporttinäkymän, raportit ja tietojoukon. Heti käytettävän sisältöön kuuluu merkityksellisiä tietoja, Aktiivisen osallistumisen mittaustiedot (Measure of Active Engagement, MAE) ja suosituimmat sisällönluojat. Voit mukauttaa sitä edelleen, jotta voit korostaa sinua eniten kiinnostavia tietoja.  Tiedot päivitetään automaattisesti määrittämäsi aikataulun mukaan.
+Visualisoi ja tutki tyGraph-tietoja Power BI:ssä Power BI -sisältöpaketin avulla. Aloita yhdistämällä tyGraph-tiliisi ja lataamalla raporttinäkymän, raportit ja tietojoukon. Heti käytettävän sisältöön kuuluu merkityksellisiä tietoja, Aktiivisen osallistumisen mittaritiedot (Measure of Active Engagement, MAE) ja suosituimmat sisällönluojat. Voit mukauttaa sitä edelleen, jotta voit korostaa sinua eniten kiinnostavia tietoja.  Tiedot päivitetään automaattisesti määrittämäsi aikataulun mukaan.
 
 Yhteyden muodostaminen [tyGraphiin Power BI:ssä](https://app.powerbi.com/getdata/services/tygraph).
 

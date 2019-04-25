@@ -1,8 +1,16 @@
-Jos haluat verrata kahta eri mittaa, kuten yksikkömyyntiä ja tuloja, yleensä visualisointina käytetään pistekaaviota.
+---
+ms.openlocfilehash: cab4d5f47c7e0518bae3c11b3f298802cb67f6d7
+ms.sourcegitcommit: b343e44dbafc0b718c564402593d4b6e3a8ce97c
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51207800"
+---
+Jos haluat verrata kahta eri mittaria, kuten yksikkömyyntiä ja tuloja, yleensä visualisointina käytetään pistekaaviota.
 
 ![](media/3-7-create-scatter-charts/3-7_1.png)
 
-Luo tyhjä kaavio valitsemalla **Pistekaavio** **Visualisoinnit**-ruudusta. Vedä ja pudota kaksi kenttää, joita haluat verrata, **Kentät**-ruudusta *X-akseli*- ja *Y-akseli*-vaihtoehtoryhmiin. Tässä vaiheessa pistekaaviossasi on todennäköisesti vain pieni kupla keskellä visualisointia. Sinun on ilmoitettava, miten haluat segmentoida tiedot, lisäämällä mitta *Tiedot*-ryhmään. Jos esimerkiksi vertaat nimikkeen myyntiä ja tuloja, saatat haluta jakaa tiedot luokan tai valmistajan tai myyntikuukauden mukaan.
+Luo tyhjä kaavio valitsemalla **Pistekaavio** **Visualisoinnit**-ruudusta. Vedä ja pudota kaksi kenttää, joita haluat verrata, **Kentät**-ruudusta *X-akseli*- ja *Y-akseli*-vaihtoehtoryhmiin. Tässä vaiheessa pistekaaviossasi on todennäköisesti vain pieni kupla keskellä visualisointia. Sinun on ilmoitettava, miten haluat segmentoida tiedot, lisäämällä mittari *Tiedot*-ryhmään. Jos esimerkiksi vertaat nimikkeen myyntiä ja tuloja, saatat haluta jakaa tiedot luokan tai valmistajan tai myyntikuukauden mukaan.
 
 Ylimääräisen kentän lisääminen *Selite*-ryhmään värittää kuplat kentän arvon mukaan. Voit myös lisätä kentän *Koko*-ryhmään kuplan koon muuttamiseksi kyseisen arvon mukaan.
 

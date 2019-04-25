@@ -52,7 +52,7 @@ Tässä opetusohjelmassa opit:
 
     ![Näytä muotoiluasetukset](media/custom-visual-develop-tutorial-format-options/view-formatting-options.png)
 
-6. Valitse **Otsikko**-asetukseksi *Ei käytössä*. Huomaa, että visualisointi ei enää näytä mittayksikön nimeä vasemmassa yläkulmassa.
+6. Valitse **Otsikko**-asetukseksi *Ei käytössä*. Huomaa, että visualisointi ei enää näytä mittarin nimeä vasemmassa yläkulmassa.
 
     ![Ruutu-asetus ei ole käytössä](media/custom-visual-develop-tutorial-format-options/tile-option-off.png)
 

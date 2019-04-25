@@ -22,7 +22,7 @@ Annamme kehittäjille keinot mukautettujen visualisointien vaivattomaan lisääm
 
 Visualisointikehyksen lisäksi tarjoamme käyttöön testiohjelmiston ja työkalut, joiden avulla yhteisö voi kehittää korkealaatuisia mukautettuja visualisointeja Power BI:hin.
 
-Tässä opetusohjelmassa näytetään, miten voit kehittää mukautetun Power BI -visualisoinnin nimeltä Circle Card. Sen avulla voi näyttää muotoillun mittayksikköarvon ympyrän sisällä. Circle Card -visualisointi tukee täytevärin ja ääriviivan paksuuden mukauttamista.
+Tässä opetusohjelmassa näytetään, miten voit kehittää mukautetun Power BI -visualisoinnin nimeltä Circle Card. Sen avulla voi näyttää muotoillun mittariarvon ympyrän sisällä. Circle Card -visualisointi tukee täytevärin ja ääriviivan paksuuden mukauttamista.
 
 Power BI Desktop -raportissa kortit muokataan Circle Card -visualisoinneiksi.
 
@@ -486,7 +486,7 @@ Nyt voimme kehittää mukautetun visualisoinnin, joka näyttää ympyrän ja mal
 
 ## <a name="configuring-data-binding"></a>Tietojen sidonnan määrittäminen
 
-Määritä tietoroolien ja tietonäkymän yhdistämismääritykset. Muokkaa sitten mukautetun visualisoinnin logiikkaa näyttämään mittayksikön arvo ja näyttönimi.
+Määritä tietoroolien ja tietonäkymän yhdistämismääritykset. Muokkaa sitten mukautetun visualisoinnin logiikkaa näyttämään mittarin arvo ja näyttönimi.
 
 ### <a name="configuring-the-capabilities"></a>Ominaisuuksien määrittäminen
 
@@ -503,7 +503,7 @@ Muokkaa **capabilities.json**-tiedostoa tietoroolien ja tietonäkymän yhdistäm
      "kind": "Measure"
     }
     ```
-    **DataRoles**-matriisi määrittää nyt yksittäisen **mittayksikkö**-tyyppiä olevan tietoroolin, jonka nimenä on **mittayksikkö** ja näyttönimenä **Mittayksikkö**. Tämä tietorooli sallii joko mittayksikkö-kentän tai yhteenvetokentän välittämisen.
+    **DataRoles**-matriisi määrittää nyt yksittäisen **mittayksikkö**-tyyppiä olevan tietoroolin, jonka nimenä on **mittayksikkö** ja näyttönimenä **Mittayksikkö**. Tämä tietorooli sallii joko mittarikentän tai yhteenvetokentän välittämisen.
 
 3. Poista kaikki sisältö riveiltä 10–31 **dataViewMappings**-matriisin sisällä.
 
@@ -523,9 +523,9 @@ Muokkaa **capabilities.json**-tiedostoa tietoroolien ja tietonäkymän yhdistäm
 
 5. Tallenna **capabilities.json**-tiedosto.
 
-6. Huomaa, että voit nyt Power BI:ssä määrittää visualisoinnin **mittayksikön** avulla.
+6. Huomaa, että voit nyt Power BI:ssä määrittää visualisoinnin **mittarin** avulla.
 
-    ![Määrän mittayksikkö](media/custom-visual-develop-tutorial/quantity_measure.png)
+    ![Määrän mittari](media/custom-visual-develop-tutorial/quantity_measure.png)
 
     > [!Note]
     > Visualisointiprojekti ei vielä sisällä tietojen sidontalogiikkaa.

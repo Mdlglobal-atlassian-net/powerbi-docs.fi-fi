@@ -18,7 +18,7 @@ ms.lasthandoff: 01/04/2019
 ms.locfileid: "54008806"
 ---
 # <a name="connect-to-microsoft-dynamics-crm-with-power-bi"></a>Yhteyden muodostaminen Microsoft Dynamics CRM:ään Power BI:n avulla
-Power BI:lle kehitetyn Microsoft Dynamics CRM Onlinen avulla voit helposti käyttää ja analysoida tietojasi. Power BI luo OData-syötteen perusteella kuvaavan mallin, joka sisältää kaikki tarvittavat entiteetit ja mittaustiedot, kuten tilit, toiminnan, mahdollisuudet, tuotteen, liidit, käyttäjät ja muuta. Kun olet asentanut sovelluksen, voit tarkastella raporttinäkymää ja raportteja Power BI -palvelussa ([https://powerbi.com](https://powerbi.com)) ja Power BI -mobiilisovelluksissa. 
+Power BI:lle kehitetyn Microsoft Dynamics CRM Onlinen avulla voit helposti käyttää ja analysoida tietojasi. Power BI luo OData-syötteen perusteella kuvaavan mallin, joka sisältää kaikki tarvittavat entiteetit ja mittaritiedot, kuten tilit, toiminnan, mahdollisuudet, tuotteen, liidit, käyttäjät ja muuta. Kun olet asentanut sovelluksen, voit tarkastella raporttinäkymää ja raportteja Power BI -palvelussa ([https://powerbi.com](https://powerbi.com)) ja Power BI -mobiilisovelluksissa. 
 
 Yhteyden muodostaminen Dynamics CRM Online [Sales Manageriin](https://msit.powerbi.com/groups/me/getdata/services/dynamics-crm-sales-manager) tai [Service Manageriin](https://msit.powerbi.com/groups/me/getdata/services/dynamics-crm-customer-service). Lue lisää Power BI:n [Dynamics CRM Online -integroinnista](https://powerbi.microsoft.com/integrations/microsoft-dynamicscrm).
 

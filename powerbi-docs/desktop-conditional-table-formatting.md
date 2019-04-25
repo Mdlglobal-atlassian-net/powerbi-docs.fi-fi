@@ -98,7 +98,7 @@ Jos **Näytä vain palkki** -asetus on valittu, taulukkosolussa näkyy vain palk
 
 ## <a name="color-formatting-by-field-value"></a>Värin muotoileminen kentän arvon mukaan
 
-Voit käyttää mittayksikköä tai värin määrittävää saraketta joko tekstiarvon tai heksadesimaalikoodin mukaan, ja soveltaa tätä väriä taulukon tai matriisivisualisoinnin fonttiväriin. Voit myös luoda mukautetun logiikan tiettyä kenttää varten, ja antaa tämän logiikan soveltaa haluttua väriä fonttiin tai taustaan.
+Voit käyttää mittaria tai värin määrittävää saraketta joko tekstiarvon tai heksadesimaalikoodin mukaan ja soveltaa tätä väriä taulukon tai matriisivisualisoinnin fonttiväriin. Voit myös luoda mukautetun logiikan tiettyä kenttää varten, ja antaa tämän logiikan soveltaa haluttua väriä fonttiin tai taustaan.
 
 Esimerkiksi seuraavassa taulukossa on kuhunkin tuotemalliin liittyvä väri. 
 

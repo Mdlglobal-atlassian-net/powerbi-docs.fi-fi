@@ -1,12 +1,20 @@
+---
+ms.openlocfilehash: 6ed1690ec77880467007200c30038d185c98d6c2
+ms.sourcegitcommit: b343e44dbafc0b718c564402593d4b6e3a8ce97c
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51206351"
+---
 Voit luoda DAX:llä kahdenlaisia päälaskelmia:
 
 * **lasketut sarakkeet**
 * **lasketut mitat**.
 
-Ennen kuin perehdymme niihin, on kuitenkin syytä tutustua taulukoiden ja sarakkeiden DAX-syntaksiin, jota käytät luodessasi **laskettuja sarakkeita** ja **laskettuja mittoja**.
+Ennen kuin perehdymme niihin, on kuitenkin syytä tutustua taulukoiden ja sarakkeiden DAX-syntaksiin, jota käytät luodessasi **laskettuja sarakkeita** ja **laskettuja mittareita**.
 
 ## <a name="dax-table-and-column-name-syntax"></a>DAX-taulukoiden ja sarakkeiden nimien syntaksi
-Riippumatta siitä, oletko luomassa uutta saraketta vai mittaa, on tärkeää tuntea DAX:n yleinen taulukkonimien muoto:
+Riippumatta siitä, oletko luomassa uutta saraketta vai mittaria, on tärkeää tuntea DAX:n yleinen taulukkonimien muoto:
 
     'Table Name'[ColumnName]
 
@@ -43,18 +51,18 @@ Lasketun sarakkeen pakollisia elementtejä ovat seuraavat:
 
 Jos viittaat lasketun sarakkeen kaavassa taulukkoon tai sarakkeeseen, sinun ei tarvitse määrittää taulukon riviä, koska Power BI laskee nykyisen rivin sarakkeen kussakin laskutoimituksessa.
 
-## <a name="creating-calculated-measures"></a>Laskettujen mittojen luominen
-Käytä **laskettua mittaa**, kun lasket prosentteja tai osuuksia tai kun tarvitset monimutkaisia koosteita. Kun haluat luoda mitan DAX-kaavalla, valitse **Mallinnus**-välilehdestä **Uusi mitta**. Suosittelemme tässäkin yhteydessä Power BI Desktopin **Tiedot-näkymää**, sillä siinä näet **kaavarivin** ja voit kirjoittaa DAX-kaavasi helposti.
+## <a name="creating-calculated-measures"></a>Laskettujen mittarien luominen
+Käytä **laskettua mittaria**, kun lasket prosentteja tai osuuksia tai kun tarvitset monimutkaisia koosteita. Kun haluat luoda mittarin DAX-kaavalla, valitse **Mallinnus**-välilehdestä **Uusi mitta**. Suosittelemme tässäkin yhteydessä Power BI Desktopin **Tiedot-näkymää**, sillä siinä näet **kaavarivin** ja voit kirjoittaa DAX-kaavasi helposti.
 
 ![](media/7-2-dax-calculation-types/dax-calc-types_4.png)
 
-Kun käytät **mittoja**, näet uuden mitan kuvakkeen **Kentät**-ruudussa. Näet myös mitan nimen. **Kaavariville** lisätään taas DAX-kaavasi nimi (tällä kertaa mitan kanssa).
+Kun käytät **mittareita**, näet uuden mittarin kuvakkeen **Kentät**-ruudussa. Näet myös mittarin nimen. **Kaavariville** lisätään taas DAX-kaavasi nimi (tällä kertaa mitan kanssa).
 
 ![](media/7-2-dax-calculation-types/dax-calc-types_5.png)
 
-Lasketun mitan pakollisia elementtejä ovat samat kuin lasketussa sarakkeessa:
+Lasketun mittarin pakolliset elementit ovat samat kuin lasketussa sarakkeessa:
 
-* uuden mitan nimi
+* uuden mittarin nimi
 * ainakin yksi funktio tai lauseke.
 
 > Videon sisällön on luonut [Alberto Ferrari, SQLBI](http://www.sqlbi.com/learning-dax).

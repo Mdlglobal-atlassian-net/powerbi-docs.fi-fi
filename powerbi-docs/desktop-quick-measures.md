@@ -1,6 +1,6 @@
 ---
 title: Pikamittareiden avulla voit suorittaa yleisiä ja tehokkaita laskutoimituksia
-description: Pikamittarit tarjoavat valmiita DAX-kaavoja, joilla yleiset laskutoimitukset onnistuvat nopeasti.
+description: Pikamittarit tarjoavat valmiita DAX-kaavoja, joilla yleiset laskutoimitukset onnistuvat nopeasti
 author: davidiseminger
 manager: kfile
 ms.reviewer: ''
@@ -18,7 +18,7 @@ ms.contentlocale: fi-FI
 ms.lasthandoff: 01/15/2019
 ms.locfileid: "54283456"
 ---
-# <a name="use-quick-measures-to-easily-perform-common-and-powerful-calculations"></a>Pikamittareiden avulla voit suorittaa helposti yleisiä ja tehokkaita laskutoimituksia.
+# <a name="use-quick-measures-to-easily-perform-common-and-powerful-calculations"></a>Pikamittareiden avulla voit suorittaa helposti yleisiä ja tehokkaita laskutoimituksia
 **Pikamittareiden** avulla voit suorittaa helposti sekä nopeasti yleisiä ja tehokkaita laskutoimituksia. **Pikamittari** suorittaa joukon DAX-komentoja taustalla (sinun ei tarvitse kirjoittaa DAX-kaavaa, se tehdään puolestasi) sen perusteella, mitä tietoja annat valintaikkunassa, ja näyttää sitten tulokset, joita voit käyttää raportissa. Parasta on se, että näet pikamittarin suorittaman DAX-kaavan, minkä ansiosta voit laajentaa ja parantaa omaa DAX-osaamistasi.
 
 ![](media/desktop-quick-measures/quick-measures_01.png)
@@ -38,7 +38,7 @@ Kun haluat käyttää **pikamittaria**, napsauta mitä tahansa**Power BI Desktop
 
 ![](media/desktop-quick-measures/quick-measures_01.png)
 
-Kun käytät reaaliaikaisia SQL Server Analysis Services (SSAS) -yhteyksiä, jotkin **pikamittarit** ovat käytettävissä. **Power BI Desktop** näyttää vain ne **pikamittarit**, joita se SSAS-versio tukee, johon yhteys on muodostettu. Jos siis olet yhteydessä reaaliaikaiseen SSAS-tietolähteeseen ja et näe luettelossa tiettyjä **pikamittareita**, tämä johtuu siitä, että yhdistetty SSAS-versio ei tue DAX-mittayksikköä, jolla nämä **pikamittarit** toteutetaan.
+Kun käytät reaaliaikaisia SQL Server Analysis Services (SSAS) -yhteyksiä, jotkin **pikamittarit** ovat käytettävissä. **Power BI Desktop** näyttää vain ne **pikamittarit**, joita se SSAS-versio tukee, johon yhteys on muodostettu. Jos siis olet yhteydessä reaaliaikaiseen SSAS-tietolähteeseen etkä näe luettelossa tiettyjä **pikamittareita**, tämä johtuu siitä, että yhdistetty SSAS-versio ei tue DAX-mittaria, jolla nämä **pikamittarit** toteutetaan.
 
 Kun valitset pikamittarikohdan hiiren kakkospainikevalikosta, näyttöön avautuu seuraava **Pikamittari**-ikkuna. Siitä voit valita haluamasi laskelman ja kentät, joissa haluat sen suorittaa.
 
@@ -100,7 +100,7 @@ Kun napsautat **Values (Arvot)** -kenttää hiiren kakkospainikkeella ja valitse
 Kun valitset **OK**, tapahtuu muutama mielenkiintoinen asia, kuten näet luettelon jälkeisestä kuvasta:
 
 1. **Matrix (Matriisi)** -visualisoinnissa on nyt uusi sarake, joka näyttää laskutoimituksemme (tässä tapauksessa se on *Average SalesAmount within SalesAmount* eli keskimääräinen myynnin määrä myynnin määrässä).
-2. Järjestelmä luo uuden **mittayksikön**, joka on käytettävissä **Kentät**-kohdassa ja joka on korostettuna (Power BI luo sen ympärille keltaisen laatikon). Tämä mittayksikkö on käytettävissä missä tahansa raportin visualisoinnissa, ei vain siinä visualisoinnissa, jossa se luotiin alun perin.
+2. Järjestelmä luo uuden **mittarin**, joka on käytettävissä **Kentät**-kohdassa ja joka on korostettuna (Power BI luo sen ympärille keltaisen laatikon). Tämä mittari on käytettävissä missä tahansa raportin visualisoinnissa, ei vain siinä visualisoinnissa, jossa se luotiin alun perin.
 3. **Pikamittarille** luotu DAX-kaava näytetään kaavarivillä.
 
 ![](media/desktop-quick-measures/quick-measures_07.png)
@@ -116,7 +116,7 @@ Ota huomioon, että **pikamittari** on käytössä visualisoinnissa. Näkyvissä
 Seuraavassa osiossa keskustelemme DAX-kaavioista.
 
 ## <a name="learn-dax-using-quick-measures"></a>DAX-käytön opettelu pikamittareiden avulla
-**Pikamittarit** ovat käteviä myös siksi, että niistä näet suoraan DAX-kaavan, jolla mittari on toteutettu. Seuraavassa kuvassa on valittuna **pikamittarin** luoma mittayksikkö (se on nyt **Kentät**-kohdassa, joten meidän täytyy napsauttaa sitä). Kun teemme näin, näyttöön avautuu **kaavarivi**, jolta näemme DAX-kaavan, jolla Power BI on toteuttanut pikamittarin.
+**Pikamittarit** ovat käteviä myös siksi, että niistä näet suoraan DAX-kaavan, jolla mittari on toteutettu. Seuraavassa kuvassa on valittuna **pikamittarin** luoma mittari (se on nyt **Kentät**-kohdassa, joten meidän täytyy napsauttaa sitä). Kun teemme näin, näyttöön avautuu **kaavarivi**, jolta näemme DAX-kaavan, jolla Power BI on toteuttanut pikamittarin.
 
 ![](media/desktop-quick-measures/quick-measures_10.png)
 

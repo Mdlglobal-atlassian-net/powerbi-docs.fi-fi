@@ -107,7 +107,7 @@ Voit hallita ilmoituksia usealla tavalla: suoraan raporttinäkymän ruudusta, Po
 3. Täällä voit ottaa hälytyksiä käyttöön ja poistaa niitä käytöstä, avata **Ilmoitusten hallinta** -ikkunan, jos haluat muuttaa tai poistaa hälytyksen.
 
 ## <a name="tips-and-troubleshooting"></a>Vihjeet ja vianmääritys
-* Hälytyksiä ei tällä hetkellä tueta Bing-ruuduissa tai korttiruuduissa, joissa on päivämäärä/aika-mittayksiköitä.
+* Hälytyksiä ei tällä hetkellä tueta Bing-ruuduissa tai korttiruuduissa, joissa on päivämäärä/aika-mittareita.
 * Hälytykset toimivat vain numeerisissa tietotyypeissä.
 * Ilmoitukset toimivat vain tiedoissa, joita päivitetään. Ne eivät toimi staattisissa tiedoissa.
 * Ilmoitukset toimivat virtautustietojoukoissa vain, jos luot suorituskykyilmaisimen, kortin tai mittarin raportin visualisoinnin ja kiinnität kyseisen visualisoinnin koontinäyttöön.

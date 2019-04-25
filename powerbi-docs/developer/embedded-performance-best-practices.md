@@ -67,7 +67,7 @@ Pidä työkalut ja SDK-paketit ajan tasalla.
     * NuGet-paketti: Microsoft.PowerBI.JavaScript
 
 > [!Note]
-> Muista, että latausaika riippuu pääasiassa raportille ja itse tiedoille relevanteista elementeistä. Niitä ovat esimerkiksi visualisointien määrä, tietojen koko sekä kyselyjen ja laskettujen mittayksikköjen monimutkaisuus. Paranna raportin latausaikaa noudattamalla [parhaita käytäntöjä](../power-bi-reports-performance.md).
+> Muista, että latausaika riippuu pääasiassa raportille ja itse tiedoille relevanteista elementeistä. Niitä ovat esimerkiksi visualisointien määrä, tietojen koko sekä kyselyjen ja laskettujen mittarien monimutkaisuus. Paranna raportin latausaikaa noudattamalla [parhaita käytäntöjä](../power-bi-reports-performance.md).
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 

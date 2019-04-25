@@ -58,9 +58,9 @@ Yhdistelmäkaavio yhdistää pylväskaavion ja viivakaavion. Näiden kahden kaav
 
 Yhdistelmäkaavio on hyvä vaihtoehto, kun:
 - sinulla on viivakaavio ja pylväskaavio, joilla on sama X-akseli
-- haluat vertailla useita mittayksiköitä eri arvoalueilla
-- haluat havainnollistaa kahden mittayksikön välistä korrelaatiota yhdessä visualisoinnissa
-- haluat tarkistaa, täyttääkö mittayksikkö toisen mittayksikön määrittämän tavoitteen
+- haluat vertailla useita mittareita eri arvoalueilla
+- haluat havainnollistaa kahden mittarin välistä korrelaatiota yhdessä visualisoinnissa
+- haluat tarkistaa, täyttääkö mittari toisen mittarin määrittämän tavoitteen
 - haluat säästää tilaa piirtoalustalla.
 
 ### <a name="doughnut-charts"></a>Rengaskaaviot
@@ -95,7 +95,7 @@ Yllä olevassa esimerkissä olemme automyyjä, joka seuraa myyntitiimin keskimä
 Viisarimittarit ovat hyvä vaihtoehto, kun:
 - esitetään edistyminen kohti tavoitetta
 - esitetään prosenttiyksiköitä, kuten suorituskyvyn mittareita
-- näytetään yhden mittauksen kunto
+- näyttää yhden mittarin kunnon
 - näytetään tiedot, joita voidaan nopeasti tarkistaa ja ymmärtää.
 
  ### <a name="key-influencers-chart"></a>Tärkeimpien vaikuttajien kaavio
@@ -192,7 +192,7 @@ Erillinen kuva on graafinen elementti, joka on lisätty raporttiin tai koontinä
 ### <a name="tables"></a>Taulukot
 ![taulukkokaavio](../visuals/media/power-bi-visualization-types-for-reports-and-q-and-a/tabletype.png)
 
-Taulukko on ruudukko, joka sisältää tietoja järjestettynä loogiseen sarjaan rivejä ja sarakkeita. Se voi sisältää myös otsikkoja ja summarivin. Taulukot toimivat hyvin kvantitatiivisessa vertailussa, jossa tarkastellaan moni arvoja tietystä kategoriasta. Esimerkiksi tässä taulukossa näkyvät luokan viisi eri mittayksikköä.
+Taulukko on ruudukko, joka sisältää tietoja järjestettynä loogiseen sarjaan rivejä ja sarakkeita. Se voi sisältää myös otsikkoja ja summarivin. Taulukot toimivat hyvin kvantitatiivisessa vertailussa, jossa tarkastellaan moni arvoja tietystä kategoriasta. Esimerkiksi tässä taulukossa näkyvät luokan viisi eri mittaria.
 
 Taulukko on hyvä vaihtoehto:
 - yksityiskohtaisen tiedon ja tarkkojen arvojen selaamiseen ja vertailemiseen (visuaalisten esitysmuotojen sijaan).
@@ -208,7 +208,7 @@ Puukartat ovat hyvä vaihtoehto seuraaville:
 - näyttää suuria määriä hierarkkisia tietoja
 - palkkikaaviolla ei voida tehokkaasti käsitellä suuria määriä arvoja
 - näyttää kunkin osan väliset ja koko kokonaisuuden mittasuhteet
-- näyttää mittayksikön jakautuminen kuviona kussakin hierarkian luokkatasossa
+- näyttää mittarin jakautuminen kuviona kussakin hierarkian luokkatasossa
 - näyttää määritteet kokovertailun ja värikoodauksen avulla
 - kuvioiden, poikkeavien arvojen, tärkeimpien tekijöiden ja poikkeusten erottuvan selvästi.
 
@@ -220,7 +220,7 @@ Vesiputouskaavio näyttää juoksevan summan, kun arvoja lisätään tai vähenn
 Sarakkeet ovat värillisiä, jotta näet nopeasti nousut ja laskut. Alkuarvon ja lopullisen arvon sarakkeet usein alkavat vaaka-akselilla, kun taas keskitason arvot ovat irrallisia sarakkeita. Tämän ulkoasun vuoksi vesiputouskaavioita kutsutaan myös siltakaavioiksi.
 
 Vesiputouskaavio on hyvä vaihtoehto:
-- kun olet tehnyt muutoksia mittayksikön aikasarjaan tai eri luokkiin
+- kun olet tehnyt muutoksia mittarin aikasarjaan tai eri luokkiin
 - jos haluat valvoa tärkeimpiä kokonaisarvoon vaikuttavia muutoksia
 - jos haluat tehdä kaavion yrityksen vuosittaisesta tuotosta näyttämällä eri tulonlähteitä ja lopulta kokonaisvoiton (tai tappion).
 - jos haluat havainnollistaa yrityksen alku- ja lopetushenkilöstömäärän vuoden aikana

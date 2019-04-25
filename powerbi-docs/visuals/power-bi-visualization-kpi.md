@@ -34,7 +34,7 @@ Suorituskykyilmaisin on hyvä vaihtoehto, kun halutaan
 * mitata etäisyyttä tavoitteeseen (kuinka paljon edellä tai jäljessä olen?)   
 
 ## <a name="kpi-requirements"></a>Suorituskykyilmaisimia koskevat vaatimukset
-Suorituskykyilmaisin perustuu tiettyyn mittayksikköön, ja se on suunniteltu mittayksikön nykyisen arvon ja tilan arviointiin määritettyyn kohteeseen verrattuna. Siksi suorituskykyilmaisimen visualisointi edellyttää *perustason* mittayksikköä, joka tekee arvioinnin arvoon ja *kohde*mittayksikköön tai arvoon ja *raja-arvoon* tai *tavoitteeseen*.
+Suorituskykyilmaisin perustuu tiettyyn mittariin, ja se on suunniteltu mittarin nykyisen arvon ja tilan arviointiin määritettyyn kohteeseen verrattuna. Siksi suorituskykyilmaisimen visualisointi edellyttää *perustason* mittaria, joka tekee arvioinnin arvoon ja *kohde*mittariin tai arvoon ja *raja-arvoon* tai *tavoitteeseen*.
 
 Tällä hetkellä suorituskykyilmaisimen tietojoukon pitää sisältää suorituskykyilmaisimen tavoitearvoja. Jos tietojoukko ei sisällä niitä, voit luoda tavoitteita lisäämällä tietomalliin tai PBIX-tiedostoon Excel-taulukon, jossa on tavoitteita.
 

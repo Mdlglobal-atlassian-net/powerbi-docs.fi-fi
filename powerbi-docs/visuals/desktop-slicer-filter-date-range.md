@@ -45,7 +45,7 @@ Nämä valinnat on esitetty seuraavassa kuvassa.
 
 *Suhteellisen päivämäärän osittajan* seuraavat (keskimmäiset) asetukset sallivat numeron kirjoittamisen suhteellisen päivämääräalueen määrittelemiseksi.
 
-Kolmannen asetuksen avulla voit valita päivämäärämitan. Sinulla on seuraavat vaihtoehdot:
+Kolmannen asetuksen avulla voit valita päivämäärämittarin. Sinulla on seuraavat vaihtoehdot:
 
 * Päivät
 * Viikot

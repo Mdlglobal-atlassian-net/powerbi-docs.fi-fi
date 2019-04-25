@@ -84,7 +84,7 @@ Voit siirtyä raporttiin valitsemalla **< Takaisin raporttiin** pohjan vasemmast
 > [!NOTE]
 >**Näytä tietueet** -toiminnolla on seuraavat rajoitukset:
 > - Et voi muuttaa tietoja **Näytä tietueita** -näkymässä ja tallentaa niitä takaisin raporttiin.
-> - Et voi käyttää **Näytä tietueet** -toimintoa, kun visualisointi käyttää laskettua mittayksikköä.
+> - Et voi käyttää **Näytä tietueet** -toimintoa, kun visualisointi käyttää laskettua mittaria.
 > - Et voi käyttää **Näytä tietueet** -toimintoa, kun olet yhteydessä reaaliaikaiseen MD-malliin.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet

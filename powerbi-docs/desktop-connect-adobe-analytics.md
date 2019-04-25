@@ -31,7 +31,7 @@ Valitse avautuvasta **Adobe Analytics** -ikkunasta **Kirjaudu sisään** -painik
 
 ![Adobe Analyticsiin kirjautuminen](media/desktop-connect-adobe-analytics/connect-adobe-analytics_03.png)
 
-Kirjoita käyttäjänimesi ja salasanasi pyydettäessä. Kun yhteys on muodostettu, voit esikatsella ja valita useita dimensioita ja mittayksiköitä Power BI:n **Siirtymistoiminto**-valintaikkunassa ja luoda sitten yksittäisen taulukkotulosteen. Voit myös antaa kaikki tarvittavat valittujen kohteiden edellyttämät syöteparametrit. 
+Kirjoita käyttäjänimesi ja salasanasi pyydettäessä. Kun yhteys on muodostettu, voit esikatsella ja valita useita dimensioita ja mittareita Power BI:n **Siirtymistoiminto**-valintaikkunassa ja luoda sitten yksittäisen taulukkotulosteen. Voit myös antaa kaikki tarvittavat valittujen kohteiden edellyttämät syöteparametrit. 
 
 ![Tietojen valitseminen siirtymistoiminnon avulla](media/desktop-connect-adobe-analytics/connect-adobe-analytics_04.png)
 

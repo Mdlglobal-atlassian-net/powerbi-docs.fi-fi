@@ -1,10 +1,18 @@
+---
+ms.openlocfilehash: d39f9a6a974e194c38c2f4e9bf69314ff6d0cec2
+ms.sourcegitcommit: b343e44dbafc0b718c564402593d4b6e3a8ce97c
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51207415"
+---
 Raporttien julkaiseminen Power BI -palveluun on nopeaa ja helppoa.
 
 Kun olet saanut raporttisi valmiiksi **Power BI Desktopissa**, napsauta **Julkaise**-painiketta Power BI Desktopin **Aloitus**-välilehdellä, niin prosessi alkaa.
 
 ![](media/4-1-publish-reports/4-1_1.png)
 
-Raportti ja tiedot, mukaan lukien visualisoinnit, kyselyt ja mukautetut mitat, pakataan kokonaisuudeksi ja ladataan Power BI -palveluun.
+Raportti ja tiedot, mukaan lukien visualisoinnit, kyselyt ja mukautetut mittarit, pakataan kokonaisuudeksi ja ladataan Power BI -palveluun.
 
 ![](media/4-1-publish-reports/4-1_2.png)
 

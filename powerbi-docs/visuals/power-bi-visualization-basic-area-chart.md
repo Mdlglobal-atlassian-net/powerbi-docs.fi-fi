@@ -76,7 +76,7 @@ Lisätietoja on artikkelissa [Visualisointitoimet raporteissa](../service-report
 
 ## <a name="considerations-and-troubleshooting"></a>Huomioon otettavat seikat ja vianmääritys   
 * [Tee raportista helpommin käytettävä toimintarajoitteisille ihmisille](../desktop-accessibility.md)
-* Perusaluekaaviot eivät toimi arvojen vertailussa kerrostettujen alueiden eston vuoksi. Power BI käyttää läpinäkyvyyttä osoittamaan alueiden päällekkäisyyttä. Se kuitenkin toimii hyvin vain kahdella tai kolmella eri alueella. Kun haluat verrata trendiä yli kolmeen mittayksikköön, kokeile viivakaavioiden käyttämistä. Kun haluat verrata määrää yli kolmeen mittayksikköön, kokeile puukartan käyttämistä.
+* Perusaluekaaviot eivät toimi arvojen vertailussa kerrostettujen alueiden eston vuoksi. Power BI käyttää läpinäkyvyyttä osoittamaan alueiden päällekkäisyyttä. Se kuitenkin toimii hyvin vain kahdella tai kolmella eri alueella. Kun haluat verrata trendiä yli kolmeen mittariin, kokeile viivakaavioiden käyttämistä. Kun haluat verrata määrää yli kolmeen mittariin, kokeile puukartan käyttämistä.
 
 ## <a name="next-step"></a>Seuraava vaihe
 [Raportit Power BI:ssä](power-bi-visualization-card.md)  

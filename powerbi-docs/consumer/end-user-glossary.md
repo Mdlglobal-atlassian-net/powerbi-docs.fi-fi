@@ -166,7 +166,7 @@ Vasemmanpuoleinen tai vasen siirtymisruutu.
 
 **Mobile app (Mobiilisovellus)** Sovellukset, joiden avulla voit käyttää Power BI:tä iOS-, Android- ja Windows-laitteissa.
 
-**modeling (mallinnus)** [Power BI Desktop] Niiden tietojen valmisteleminen käyttöä varten, joihin olet muodostanut yhteyden Power BI:ssä. Tämä sisältää suhteiden luomisen taulukoiden välillä useissa tietolähteissä, mittojen luomisen ja arvojen määrittämisen.
+**modeling (mallinnus)** [Power BI Desktop] Niiden tietojen valmisteleminen käyttöä varten, joihin olet muodostanut yhteyden Power BI:ssä. Tämä sisältää suhteiden luomisen taulukoiden välillä useissa tietolähteissä, mittarien luomisen ja arvojen määrittämisen.
 
 **My workspace (Oma työtila)** Jokaisen Power BI -asiakkaan työtila sisällön luomiselle. Jos he haluavat niputtaa jotakin täällä luotua sovellukseksi ja heillä on *suunnittelijan* käyttöoikeudet, he lataavat sisällön soveltuvaan sovelluksen työtilaan tai luovat uuden.
 
@@ -260,7 +260,7 @@ Usean perspektiivin yksittäisen tietojoukon näkymä, jonka visualisoinnit edus
 
 **report editor (raporttieditori)**
 
-**report measures (raportin mittayksiköt)** Kutsutaan myös mukautetuiksi laskutoimituksiksi. Excel kutsuu näitä lasketuiksi kentiksi. Katso myös *measures (mittayksiköt)*.   
+**report measures (raportin mittayksiköt)** Kutsutaan myös mukautetuiksi laskutoimituksiksi. Excel kutsuu näitä lasketuiksi kentiksi. Katso myös *measures (mittarit)*.   
 **report server (raporttipalvelin)** Raporttipalvelimen esiintymä.
 
 **responsive visuals (reagoivat visualisoinnit)** Visualisoinnit, jotka muuttuvat dynaamisesti näyttämään dataa ja merkityksellisiä tietoja suurin mahdollinen määrä, oli näyttö minkäkokoinen tahansa.

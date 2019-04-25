@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 3fd97374836978a4902a878da141865c271df643
+ms.sourcegitcommit: b343e44dbafc0b718c564402593d4b6e3a8ce97c
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51207732"
+---
 Yleensä visualisointeja käytetään kahden tai useamman eri arvon vertailuun. Saatat kuitenkin joskus raportteja laatiessasi haluta seurata vain yhtä suorituskykyilmaisinta tai arvoa ajan kuluessa. Tämä onnistuu Power BI Desktopissa **Mittari**- tai **Yksittäinen numero** -kortin visualisoinnilla. Luo jommankumman tyyppinen tyhjä kaavio valitsemalla sen kuvake **Visualisoinnit**-ruudusta.
 
 ![](media/3-9-create-gauges-cards/3-9_1.png)
@@ -14,7 +22,7 @@ Korttivisualisoinnit näyttävät kentän numeerisen esityksen. Korttivisualisoi
 
 ![](media/3-9-create-gauges-cards/3-9_3.png)
 
-Eräs mielenkiintoinen tapa käyttää kortteja on näyttää niissä mukautettu mitta, johon olet yhdistänyt tekstin. Jos käytetään aiempaa esimerkkiä, mukautetun mitan avulla korttisi voisi sisältää DAX-lisäfunktioita ja esimerkiksi tekstin ”Kokonaistulot tänä vuonna: 5 mrd $” tai ”Yksikkömyynnin kehitys tänä vuonna:” ja kehitystä vastaavan luvun.
+Eräs mielenkiintoinen tapa käyttää kortteja on näyttää niissä mukautettu mittari, johon olet yhdistänyt tekstin. Jos käytetään aiempaa esimerkkiä, mukautetun mittarin avulla korttisi voisi sisältää DAX-lisäfunktioita ja esimerkiksi tekstin ”Kokonaistulot tänä vuonna: 5 mrd $” tai ”Yksikkömyynnin kehitys tänä vuonna:” ja kehitystä vastaavan luvun.
 
 ![](media/3-9-create-gauges-cards/3-9_4.png)
 

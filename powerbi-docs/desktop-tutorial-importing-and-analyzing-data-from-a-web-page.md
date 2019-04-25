@@ -142,7 +142,7 @@ Luodaksesi tietoihin perustuvan visualisoinnin:
 
    ![Suurenna kartta](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage14.png)
    
-3. Kartassa näkyvät kaikki identtiset arvopisteet jokaisesta maasta, jotka on voittanut Euro Cup -turnauksen. Saadaksesi kunkin arvopisteen koon kuvastamaan kuinka usein maan on voittanut, vedä **Vuosi**-kenttä **Vedä tietokentät tähän** -kohtaan **Koko**-valikon alla, **Visualisoinnit**-ruudun alaosassa. Kenttä muuttuu automaattisesti **Vuosien määrä** -mittayksiköksi ja kartan visualisointi näyttää nyt niiden maiden arvopisteet suurempina, jotka ovat voittaneet useimpia turnauksia. 
+3. Kartassa näkyvät kaikki identtiset arvopisteet jokaisesta maasta, jotka on voittanut Euro Cup -turnauksen. Saadaksesi kunkin arvopisteen koon kuvastamaan kuinka usein maan on voittanut, vedä **Vuosi**-kenttä **Vedä tietokentät tähän** -kohtaan **Koko**-valikon alla, **Visualisoinnit**-ruudun alaosassa. Kenttä muuttuu automaattisesti **Vuosien määrä** -mittariksi ja kartan visualisointi näyttää nyt niiden maiden arvopisteet suurempina, jotka ovat voittaneet useimpia turnauksia. 
    
    ![](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage15.png)
    

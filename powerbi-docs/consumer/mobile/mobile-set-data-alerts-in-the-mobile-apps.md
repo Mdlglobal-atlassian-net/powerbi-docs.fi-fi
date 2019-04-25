@@ -160,7 +160,7 @@ Tietolähteet määritetään usein päivittymään päivittäin, vaikka jotkin 
 > 
 
 ## <a name="tips-and-troubleshooting"></a>Vihjeet ja vianmääritys
-* Ilmoituksia ei tällä hetkellä tueta Bing-ruuduissa tai korttiruuduissa, joissa on päivämäärä/aika-mittayksiköitä.
+* Ilmoituksia ei tällä hetkellä tueta Bing-ruuduissa tai korttiruuduissa, joissa on päivämäärä/aika-mittareita.
 * Ilmoitukset toimivat vain numeerisissa tiedoissa.
 * Ilmoitukset toimivat vain tiedoissa, joita päivitetään. Ne eivät toimi staattisissa tiedoissa.
 * Ilmoitukset eivät toimi ruuduissa, jotka sisältävät virtautettavia tietoja.

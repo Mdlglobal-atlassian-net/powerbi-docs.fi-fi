@@ -28,7 +28,7 @@ Voit verrata merkityksellisiä tietoja tietojoukkoon tai koontinäytön ruutuun.
 Seuraavana muutamia käyttämiämme algoritmeja:
 
 ## <a name="category-outliers-topbottom"></a>Luokan poikkeavat havainnot (ylä/ala)
-Korostaa tapaukset, joissa mallin mittayksikössä yhdellä tai kahdella dimension jäsenellä on paljon suuremmat arvot kuin muilla dimension jäsenillä.  
+Korostaa tapaukset, joissa mallin mittarissa yhdellä tai kahdella dimension jäsenellä on paljon suuremmat arvot kuin muilla dimension jäsenillä.  
 
 ![Esimerkki luokan poikkeavista havainnoista](./media/end-user-insight-types/pbi_auto_insight_types_category_outliers.png)
 
@@ -38,7 +38,7 @@ Korostaa kohdat, joissa tietojen aikasarjan trendeissä on merkittäviä muutoks
 ![Esimerkki aikasarjan muutospisteistä](./media/end-user-insight-types/pbi_auto_insight_types_changepoint.png)
 
 ## <a name="correlation"></a>Korrelaatio
-Havaitsee tilanteet, joissa usea mittayksikkö osoittaa keskinäistä korrelaatiota, kun niitä verrataan tietojoukon dimensioon.
+Havaitsee tilanteet, joissa usea mittari osoittaa keskinäistä korrelaatiota, kun niitä verrataan tietojoukon dimensioon.
 
 ![Esimerkki korrelaatiosta](./media/end-user-insight-types/pbi_auto_insight_types_correlation.png)
 
