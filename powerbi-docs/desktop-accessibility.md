@@ -36,7 +36,7 @@ Voit myös vaihtaa kohdistusta raporttisivujen välilehtien tai raportin tietyn 
 * Kun kohdistus on *raportin sivujen välilehdillä*, käytä *sarkain*- tai *nuolinäppäimiä* siirtääksesi kohdistuksen sivulta toiselle. Näytönlukuohjelma lukee raporttisivun otsikon ja sen, onko kyseinen sivu sillä hetkellä valittuna. Voit ladata raportin sivun, jossa kohdistus on sillä hetkellä, painamalla *Enter*- tai *välilyöntinäppäintä*.
 * Kun kohdistus on ladatulla *raportin sivulla*, voit siirtää kohdistuksen *sarkainpainikkeella* sivun objektien välillä. Objekteja ovat kaikki tekstiruudut, kuvat, muodot ja kaaviot. Näytönlukuohjelma lukee objektin tyypin, kyseisen objektin mahdollisen otsikon ja objektin kuvauksen, jos raportin kirjoittaja on sille sellaisen antanut. 
 
-Voit siirtää kohdistuksen visualisoinnin ylätunnisteeseen eri visualisointien välillä siirtyessäsi painamalla **Alt + Vaihto + F10**. Ylätunniste sisältää asetuksia, kuten lajittelun, kaavion tietojen tarkastelun ja kohdistustilan. 
+Voit siirtää kohdistuksen visualisoinnin ylätunnisteeseen eri visualisointien välillä siirtyessäsi painamalla **Alt + Vaihto + F10**. Ylätunniste sisältää asetuksia, kuten lajittelun, kaavion tietojen tarkastelun ja tarkastelutilan. 
 
 ![Siirrä kohdistus visuaaliseen otsikkoon painamalla Power BI Desktopissa Alt + vaihto + F10](media/desktop-accessibility/accessibility_08.png)
 

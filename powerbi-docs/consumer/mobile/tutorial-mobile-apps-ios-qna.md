@@ -106,9 +106,9 @@ Nyt voit siirtyä tarkastelemaan mallia iOS-laitteessa.
      Q&A:n virtuaalinen analyytikko näyttää merkityksellisen tiedon 2.
 
     ![Merkityksellinen tieto 2](./media/tutorial-mobile-apps-ios-qna/power-bi-ios-qna-show-insight-2.png)
-5. Avaa kaavio kohdistustilassa napauttamalla sitä.
+5. Avaa kaavio tarkastelutilassa napauttamalla sitä.
 
-    ![Merkityksellinen tieto 2 -kaavio kohdistustilassa](./media/tutorial-mobile-apps-ios-qna/power-bi-ios-qna-open-insight-2.png)
+    ![Merkityksellinen tieto 2 -kaavio tarkastelutilassa](./media/tutorial-mobile-apps-ios-qna/power-bi-ios-qna-open-insight-2.png)
 6. Siirry takaisin Q&A:n virtuaaliseen analyytikkoon napauttamalla vasemmassa yläkulmassa olevaa nuolta.
 
 ## <a name="clean-up-resources"></a>Resurssien tyhjentäminen

@@ -92,7 +92,7 @@ Jos raportin tekijä on lisännyt porautumisominaisuuden visualisointiin, voit p
   
   ![Porautuminen ylöspäin](./media/mobile-reports-in-the-mobile-apps/power-bi-mobile-drill-up-tooltip.png)
 
-* Voit porautua alaspäin kaikissa visualisoinnin arvopisteissä. Avaa kohdistustila, napauta tutkimiskuvaketta ja valitse sitten näytä kaikki seuraavalla tasolla, tai laajenna nähdäksesi nykyisen ja seuraavan tason.
+* Voit porautua alaspäin kaikissa visualisoinnin arvopisteissä. Avaa tarkastelutila, napauta tutkimiskuvaketta ja valitse sitten näytä kaikki seuraavalla tasolla, tai laajenna nähdäksesi nykyisen ja seuraavan tason.
 
    ![Power BI poraudu alaspäin kaikissa](./media/mobile-reports-in-the-mobile-apps/power-bi-drill-down-all.png)
 

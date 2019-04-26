@@ -75,7 +75,7 @@ Voit tarkastella raporttinäkymiä vaakasuunnassa kääntämällä puhelimesi si
 
 ![Raporttinäkymä vaakasuunnassa](././media/mobile-apps-view-dashboard/power-bi-iphone-dashboard-landscape.png)
 
-Voit lähentää ja loitontaa raporttinäkymän eri alueita nipistämällä ja siirtyä näkymässä panoroimalla. Voit edelleen avata ruudun kohdistustilassa ja käsitellä tietojasi [napauttamalla ruutua](mobile-tiles-in-the-mobile-apps.md).
+Voit lähentää ja loitontaa raporttinäkymän eri alueita nipistämällä ja siirtyä näkymässä panoroimalla. Voit edelleen avata ruudun tarkastelutilassa ja käsitellä tietojasi [napauttamalla ruutua](mobile-tiles-in-the-mobile-apps.md).
 
 ## <a name="view-dashboards-on-your-ipad"></a>Raporttinäkymien tarkastelu iPadissa
 1. Avaa Power BI -sovellus.
@@ -139,12 +139,12 @@ Voit lähentää ja loitontaa raporttinäkymän eri alueita nipistämällä ja s
    ![Kolme pistettä -valikko](././media/mobile-apps-view-dashboard/pbi_andr_dashellipsis.png)
 4. Katso kaikki [raporttinäkymän ruudut](mobile-tiles-in-the-mobile-apps.md) sipaisemalla ylös- ja alaspäin. 
    
-   Voit lähentää ja loitontaa raporttinäkymän eri alueita nipistämällä ja siirtyä näkymässä panoroimalla. Voit edelleen avata ruudun kohdistustilassa ja käsitellä tietojasi [napauttamalla ruutua](mobile-tiles-in-the-mobile-apps.md).
+   Voit lähentää ja loitontaa raporttinäkymän eri alueita nipistämällä ja siirtyä näkymässä panoroimalla. Voit edelleen avata ruudun tarkastelutilassa ja käsitellä tietojasi [napauttamalla ruutua](mobile-tiles-in-the-mobile-apps.md).
 5. Siirry raporttinäkymien aloitussivulle napauttamalla raporttinäkymän nimeä, jolloin navigointipolku avautuu. Valitse sitten **Oma työtila**:
    
     ![Navigointipolku](./media/mobile-apps-view-dashboard/power-bi-android-tablet-breadcrumb.png)
 
-    Voit lähentää ja loitontaa raporttinäkymän eri alueita nipistämällä ja siirtyä näkymässä panoroimalla. Voit edelleen avata ruudun kohdistustilassa ja käsitellä tietojasi [napauttamalla ruutua](mobile-tiles-in-the-mobile-apps.md).
+    Voit lähentää ja loitontaa raporttinäkymän eri alueita nipistämällä ja siirtyä näkymässä panoroimalla. Voit edelleen avata ruudun tarkastelutilassa ja käsitellä tietojasi [napauttamalla ruutua](mobile-tiles-in-the-mobile-apps.md).
 
 ## <a name="view-dashboards-on-your-windows-10-device"></a>Raporttinäkymien tarkastelu Windows 10 -laitteessa
 1. Avaa Windows 10 -laitteen Power BI -sovellus ja kirjaudu sisään.
@@ -183,7 +183,7 @@ Voit myös tarkastella raporttinäkymiä vaakasuunnassa kääntämällä puhelin
 
 ![Raporttinäkymä vaakasuunnassa](./media/mobile-apps-view-dashboard/pbi_iph_landscape.png)
 
-Voit lähentää ja loitontaa raporttinäkymän eri alueita nipistämällä ja siirtyä näkymässä panoroimalla. Voit edelleen avata ruudun kohdistustilassa ja käsitellä tietojasi [napauttamalla ruutua](mobile-tiles-in-the-mobile-apps.md).
+Voit lähentää ja loitontaa raporttinäkymän eri alueita nipistämällä ja siirtyä näkymässä panoroimalla. Voit edelleen avata ruudun tarkastelutilassa ja käsitellä tietojasi [napauttamalla ruutua](mobile-tiles-in-the-mobile-apps.md).
 
 ## <a name="create-a-phone-view-of-a-dashboard-in-the-power-bi-service"></a>Puhelinnäkymän luominen raporttinäkymästä Power BI -palvelussa
 Jos olet raporttinäkymän omistaja, *Power BI -palvelussa* voit luoda raporttinäkymästä pystysuuntaisen näkymän puhelimille. 

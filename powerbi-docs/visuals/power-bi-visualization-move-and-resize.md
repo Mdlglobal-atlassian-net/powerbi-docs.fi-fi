@@ -30,8 +30,8 @@ Avaa Power BI:ssa raportti, jossa on vähintään yksi visualisointi tai [luo uu
 * Valitse visualisointi, jotta reuna tulee näkyviin, ja muuta kokoa napsauttamalla ja vetämällä tummia kehyksen koonmuuttokahvoja.  
   ![](media/power-bi-visualization-move-and-resize/untitled.gif)
 
-## <a name="select-focus-mode-to-see-more-detail"></a>Valitse Kohdistustila, jotta näet tarkemmin.
-* Osoita visualisointia ja napsauta Kohdistustila-kuvaketta.
+## <a name="select-focus-mode-to-see-more-detail"></a>Valitse tarkastelutila, jotta näet tarkemmin.
+* Osoita visualisointia ja napsauta tarkastelutila-kuvaketta.
   ![](media/power-bi-visualization-move-and-resize/pbi_popouticon.jpg)
 
 ## <a name="next-steps"></a>Seuraavat vaiheet

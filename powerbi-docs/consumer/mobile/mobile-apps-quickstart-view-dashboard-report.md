@@ -97,13 +97,13 @@ Nyt voit siirtyä tarkastelemaan mallia Android-laitteessa.
 
 4. Selaa alaspäin ja napauta viivakaaviota ”Tämän vuoden myynti, Viime vuoden myynti”.
 
-    ![Napauta ruutua siirtyäksesi kohdistustilaan](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-tap-tile-fave.png)
+    ![Napauta ruutua siirtyäksesi tarkastelutilaan](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-tap-tile-fave.png)
 
-    Tämä avaa kohdistustilan.
+    Tämä avaa tarkastelutilan.
 
-7. Napauta kohdistustilassa kaavion kohtaa Apr. Näet huhtikuun arvot esitettynä kaavion yläosassa.
+7. Napauta tarkastelutilassa kaavion kohtaa Apr. Näet huhtikuun arvot esitettynä kaavion yläosassa.
 
-    ![Ruutu kohdistustilassa](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-tile-focus.png)
+    ![Ruutu tarkastelutilassa](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-tile-focus.png)
 
 8. Napauta Raporttikuvaketta ![Raporttikuvake](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-report-icon.png) oikeassa yläkulmassa. Tähän ruutuun liittyvä raportti avautuu vaakatilassa.
 

@@ -49,7 +49,7 @@ Tällainen URI-tunnus avaa Power BI ‑mobiilisovelluksessa tietyn ruudun:
 
     mspbi://app/OpenTile?DashboardObjectId=<36-character-dashboard-id>&TileObjectId=<36-character-tile-id>
 
-Löydät koontinäytön ja ruudun 36-merkkiset objektitunnukset siirtymällä Power BI -palvelussa (https://powerbi.com) haluamaasi koontinäyttöön ja avaamalla ruudun kohdistustilassa. Katso esimerkiksi tämän URL-osoitteen korostetut osat:
+Löydät koontinäytön ja ruudun 36-merkkiset objektitunnukset siirtymällä Power BI -palvelussa (https://powerbi.com) haluamaasi koontinäyttöön ja avaamalla ruudun tarkastelutilassa. Katso esimerkiksi tämän URL-osoitteen korostetut osat:
 
 `https://powerbi.com/groups/me/dashboards/**3784f99f-b460-4d5e-b86c-b6d8f7ec54b7**/tiles/**565f9740-5131-4648-87f2-f79c4cf9c5f5**/infocus`
 

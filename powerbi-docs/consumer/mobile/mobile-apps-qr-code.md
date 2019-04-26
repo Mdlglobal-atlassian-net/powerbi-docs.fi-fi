@@ -46,7 +46,7 @@ Jos työtoverisi ei ole jakanut koontinäyttöä tai raporttia sinulle, voit pyy
 5. Kameran näkymään ilmestyy ruutu tai raportti.
    
     ![](media/mobile-apps-qr-code/power-bi-ios-qr-ar-scanner.png)
-6. Voit joko avata ruudun tai raportin kohdistustilassa napauttamalla sitä tai palata takaisin viivakoodinlukijaan.
+6. Voit joko avata ruudun tai raportin tarkastelutilassa napauttamalla sitä tai palata takaisin viivakoodinlukijaan.
 
 ### <a name="scan-a-qr-code-from-an-external-scanner-on-your-iphone"></a>QR-koodin lukeminen iPhonella ulkoisen viivakoodinlukijan avulla
 1. Avaa mikä tahansa puhelimeen asennettu viivakoodinlukija ja osoita se kohti haluttua Power BI:n QR-koodia, niin pääset välittömästi siirtymään ruutuun tai raporttiin. 

@@ -95,7 +95,7 @@ Nyt voit siirtyä tarkastelemaan malleja iOS-laitteessa.
 
     ![](media/mobile-apps-ios-qna/power-bi-ios-q-n-a-tap-expand-feedback.png)
 
-    Kaavio avautuu kohdistustilassa sovelluksessa.
+    Kaavio avautuu tarkastelutilassa sovelluksessa.
 
     ![](media/mobile-apps-ios-qna/power-bi-ios-q-n-a-expanded-chart.png)
 7. Siirry takaisin Q&A:n virtuaalisen analyytikon keskusteluikkunaan napauttamalla vasemmassa yläkulmassa olevaa nuolta.

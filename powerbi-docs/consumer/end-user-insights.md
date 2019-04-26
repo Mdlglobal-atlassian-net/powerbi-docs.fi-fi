@@ -35,9 +35,9 @@ Kun suoritat merkitykselliset tiedot koontinäytön ruudulle, Power BI hakee vai
     ![kolme pistettä -valikkotila](./media/end-user-insights/power-bi-hover.png)
 
 
-3. Ruutu avautuu [kohdistustilassa](end-user-focus.md) ja merkityksellisten tietojen kortit näytetään oikealla.    
+3. Ruutu avautuu [tarkastelutilassa](end-user-focus.md) ja merkityksellisten tietojen kortit näytetään oikealla.    
    
-    ![Kohdistustila](./media/end-user-insights/pbi-insights-tile.png)    
+    ![Tarkastelutila](./media/end-user-insights/pbi-insights-tile.png)    
 4. Herättivätkö yksittäiset merkitykselliset tiedot kiinnostuksesi? Tutustu asiaan tarkemmin valitsemalla kyseinen kortti. Valitut merkitykselliset tiedot näytetään vasemmalla ja uudet kortit, joiden tiedot peruvat pelkästään kyseisiin merkityksellisiin tietoihin, näytetään oikealla.    
 
  ## <a name="interact-with-the-insight-cards"></a>Vuorovaikutus merkityksellisten tietojen korttien kanssa
@@ -55,7 +55,7 @@ Kun sinulla on merkityksellinen tieto avattuna, jatka siihen tutustumista.
      
      ![suodatetut merkitykselliset tiedot](./media/end-user-insights/power-bi-insights-on-insights-new.png)
 
-Voit palata alkuperäiseen merkityksellisten tietojen pohjaan valitsemalla vasemmasta yläkulmasta **Poistu kohdistustilasta**.
+Voit palata alkuperäiseen merkityksellisten tietojen pohjaan valitsemalla vasemmasta yläkulmasta **Poistu tarkastelutilasta**.
 
 ## <a name="considerations-and-troubleshooting"></a>Huomioon otettavat seikat ja vianmääritys
 - **Näytä merkitykselliset tiedot** ei toimi DirectQueryllä – se toimii vain Power BI:hin ladatuilla tiedoilla.

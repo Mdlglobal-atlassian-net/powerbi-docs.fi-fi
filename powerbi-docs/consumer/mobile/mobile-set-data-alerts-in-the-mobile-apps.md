@@ -36,7 +36,7 @@ Voit määrittää ilmoituksia ruuduille, jos sinulla on Power BI Pro -käyttöo
 
 ## <a name="data-alerts-on-an-iphone-or-ipad"></a>Tietoilmoitukset iPhonella tai iPadilla
 ### <a name="set-an-alert-on-an-iphone-or-ipad"></a>Ilmoituksen asettaminen iPhonella tai iPadilla
-1. Napauttamalla numero- tai mittariruutua koontinäytöllä voit avata sen kohdistustilassa.  
+1. Napauttamalla numero- tai mittariruutua koontinäytöllä voit avata sen tarkastelutilassa.  
    
    ![](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-iphone-card-visual.png)
 2. Napauttamalla kellokuvaketta ![](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-iphone-alert-icon.png) voit lisätä ilmoituksen.  

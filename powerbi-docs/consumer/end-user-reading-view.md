@@ -171,9 +171,9 @@ Siirry helposti raporttisivun visualisointien välillä.
     ![raportin Valinta-ruutu](media/end-user-reading-view/power-bi-selection-pane-new.png)
 
 ### <a name="zoom-in-on-individual-visuals"></a>Lähennä yksittäisissä visualisoinneissa
-Osoita visualisointia ja napsauta **Kohdistustila**-kuvaketta![](media/end-user-reading-view/pbi_popouticon.jpg). Kun tarkastelet visualisointia kohdistustilassa, se laajentaa koko raportin pohjan täyttämiseksi alla kuvatulla tavalla.
+Osoita visualisointia ja napsauta **Tarkastelutila**-kuvaketta![](media/end-user-reading-view/pbi_popouticon.jpg). Kun tarkastelet visualisointia tarkastelutilassa, se laajentaa koko raportin pohjan täyttämiseksi alla kuvatulla tavalla.
 
-![kohdistustila](media/end-user-reading-view/powerbi-focus-mode.png)
+![tarkastelutila](media/end-user-reading-view/powerbi-focus-mode.png)
 
 Voit näyttää saman visualisoinnin ilman häiritseviä valikkopalkkeja, suodatinruutua ja muita ylimääräisiä osia valitsemalla **koko näytön** kuvakkeen yläreunan valikkoriviltä ![koko näytön kuvake](media/end-user-reading-view/power-bi-focus-icon.png).
 

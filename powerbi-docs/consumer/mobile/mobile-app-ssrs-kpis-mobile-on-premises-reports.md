@@ -111,9 +111,9 @@ Power BI -raportit, Reporting Services -mobiiliraportit ja suorituskykyilmaisime
 * Power BI Desktopissa raporttien omistajat voivat [optimoida raportin](../../desktop-create-phone-report.md) Power BI -mobiilisovelluksia silmällä pitäen. Matkapuhelimessa optimoiduilla raporteilla on erityinen kuvake, ![Optimoidun Power BI -raportin kuvake](./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-rs-mobile-optimized-icon.png) ja asettelu.
   
     ![Mobiililaitteille optimoitu Power BI -raportti](./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-rs-mobile-optimized-report.png)
-* Napauta Suorituskykyilmaisinta sen näkemiseksi kohdistustilassa.
+* Napauta Suorituskykyilmaisinta sen näkemiseksi tarkastelutilassa.
   
-    ![Suorituskykyilmaisin kohdistustilassa](./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/pbi_ipad_ssmrp_tile.png)
+    ![Suorituskykyilmaisin tarkastelutilassa](./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/pbi_ipad_ssmrp_tile.png)
 
 ## <a name="view-your-favorite-kpis-and-reports"></a>Suosikkisuorituskykyilmaisinten ja -raporttien tarkastelu
 Voit merkitä suorituskykyilmaisimia ja raportteja suosikeiksi verkkoportaalissa ja tarkastella niitä yhdessä kätevässä kansiossa mobiililaitteessasi Power BI -suosikkikoontinäyttöjesi kera.

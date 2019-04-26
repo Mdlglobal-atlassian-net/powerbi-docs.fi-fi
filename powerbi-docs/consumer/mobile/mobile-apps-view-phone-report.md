@@ -57,16 +57,16 @@ Kun valitset puhelinraportissa visualisoinnin, puhelinraportti korostaa visualis
 
 Kun visualisointi on valittuna, voit tehdä erilaisia toimintoja, kuten vierittää visualisointia. Kun haluat poistaa visualisoinnin valinnan, kosketa aluetta visualisoinnin ulkopuolella.
 
-## <a name="open-visuals-in-focus-mode"></a>Visualisointien avaaminen kohdistustilassa
-Puhelinraporteissa on käytettävissä myös kohdistustila, jonka ansiosta voit nähdä yksittäisen visualisoinnin suurempana ja tarkastella lähemmin sekä visualisointia että raporttia.
+## <a name="open-visuals-in-focus-mode"></a>Visualisointien avaaminen tarkastelutilassa
+Puhelinraporteissa on käytettävissä myös tarkastelutila, jonka ansiosta voit nähdä yksittäisen visualisoinnin suurempana ja tarkastella lähemmin sekä visualisointia että raporttia.
 
 * Napauta puhelinraportissa visualisoinnin oikeasta yläkulmasta kolmea pistettä (**...**) > **Laajenna kohdistustilaan**.
   
-    ![Laajenna kohdistustilaan](././media/mobile-apps-view-phone-report/power-bi-phone-report-focus-mode.png)
+    ![Laajenna tarkastelutilaan](././media/mobile-apps-view-phone-report/power-bi-phone-report-focus-mode.png)
 
-Kohdistustilassa tekemäsi toimet tulevat myös käyttöön myös raporttipohjassa ja päinvastoin, mikä tuottaa saumattoman katselukokemuksen. Jos esimerkiksi korostat visualisoinnista jonkin arvon ja palaat sitten koko raporttiin, koko raportti on suodatettu visualisoinnissa korostamasi arvon mukaan.
+Tarkastelutilassa tekemäsi toimet tulevat myös käyttöön myös raporttipohjassa ja päinvastoin, mikä tuottaa saumattoman katselukokemuksen. Jos esimerkiksi korostat visualisoinnista jonkin arvon ja palaat sitten koko raporttiin, koko raportti on suodatettu visualisoinnissa korostamasi arvon mukaan.
 
-Näytön kokorajoitusten vuoksi jotkin toiminnot ovat käytettävissä vain kohdistustilassa:
+Näytön kokorajoitusten vuoksi jotkin toiminnot ovat käytettävissä vain tarkastelutilassa:
 
 * **Poraudu alaspäin** johdattaa tarkastelijan syvemmälle visualisoinnin esittämiin tietoihin. Lisätietoja [alas- ja ylöspäin porautumisesta](mobile-apps-view-phone-report.md#drill-down-in-a-visual) puhelinraporteissa annetaan jäljempänä.
 * **Lajittele** visualisoinnin arvoja.
@@ -83,7 +83,7 @@ Jos visualisointiin on määritetty hierarkiatasot, voit porautua syvemmälle vi
 
 1. Napauta puhelimella raportin oikeasta yläkulmasta kolmea pistettä (**...**) > **Laajenna kohdistustilaan**.
    
-    ![Laajenna kohdistustilaan](././media/mobile-apps-view-phone-report/power-bi-phone-report-focus-mode.png)
+    ![Laajenna tarkastelutilaan](././media/mobile-apps-view-phone-report/power-bi-phone-report-focus-mode.png)
    
     Tässä esimerkissä palkit kuvaavat osavaltioiden arvoja.
 2. Napauta tutkimiskuvaketta ![Tutkimiskuvake](./media/mobile-apps-view-phone-report/power-bi-phone-report-explore-icon.png) vasemmasta alakulmasta.

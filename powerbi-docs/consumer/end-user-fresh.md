@@ -54,9 +54,9 @@ Sovelluksen näytössä näkyy sekä suunnittelijan nimi että sovelluksen luomi
 Jos olet kiinnostunut, voit hakea suurimmalle osalle sisällöstä sen viimeisen uudelleenlatauspäivämäärän. 
 
 ### <a name="dashboard-tiles"></a>Koontinäytön ruudut
-Tarkastele koontinäytön ruutua kohdistustilassa, niin saat nähdä sen viimeisimmän päivityksen aikaleiman.
+Tarkastele koontinäytön ruutua tarkastelutilassa, niin saat nähdä sen viimeisimmän päivityksen aikaleiman.
 
-1. Valitse koontinäytön ruudussa kolme pistettä (...) ja valitse sitten **Avaa kohdistustilassa**.
+1. Valitse koontinäytön ruudussa kolme pistettä (...) ja valitse sitten **Avaa tarkastelutilassa**.
 
     ![valikko joka tulee näkyviin kun olet valinnut kolme pistettä](media/end-user-fresh/power-bi-focus.png)
 

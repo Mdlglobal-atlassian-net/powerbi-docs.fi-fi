@@ -34,7 +34,7 @@ Sähköposti, jossa tilannevedos ruudusta, raportista tai visualisoinnista, sis�
 Voit myös [jakaa ruudun Windows 10 -laitteiden Power BI -mobiilisovelluksesta](mobile-windows-10-phone-app-get-started.md), mutta et lisätä siihen merkintöjä.
 
 ## <a name="open-a-tile-for-annotating"></a>Ruudun avaaminen merkintöjen lisäämiseksi
-1. Napauta ruutua sen avaamiseksi kohdistustilassa.
+1. Napauta ruutua sen avaamiseksi tarkastelutilassa.
 2. Napauta Lisää merkintä -kuvaketta ![Lisää merkintä -kuvake](./././media/mobile-annotate-and-share-a-tile-from-the-mobile-apps/power-bi-ios-annotate-icon.png) ruudun oikeassa yläkulmassa.
 3. Nyt voit [lisätä merkintöjä ja jakaa ruudun](mobile-annotate-and-share-a-tile-from-the-mobile-apps.md#annotate-and-share-the-tile-report-or-visual).
 
@@ -44,9 +44,9 @@ Voit myös [jakaa ruudun Windows 10 -laitteiden Power BI -mobiilisovelluksesta](
 3. Nyt voit [lisätä merkintöjä ja jakaa raportin](mobile-annotate-and-share-a-tile-from-the-mobile-apps.md#annotate-and-share-the-tile-report-or-visual).
 
 ## <a name="open-a-visual-for-annotating"></a>Visualisoinnin avaaminen merkintöjen lisäämiseksi
-1. Napauta raportissa visualisointia, ja napauta sitten laajennuskuvaketta sen avaamiseksi kohdistustilassa. 
+1. Napauta raportissa visualisointia, ja napauta sitten laajennuskuvaketta sen avaamiseksi tarkastelutilassa. 
    
-    ![Kohdistustila-kuvake](./media/mobile-annotate-and-share-a-tile-from-the-mobile-apps/power-bi-ios-visual-focus-mode.png)
+    ![Tarkastelutila-kuvake](./media/mobile-annotate-and-share-a-tile-from-the-mobile-apps/power-bi-ios-visual-focus-mode.png)
 2. Napauta Lisää merkintä -kuvaketta ![Lisää merkintä -kuvake](./././media/mobile-annotate-and-share-a-tile-from-the-mobile-apps/power-bi-ios-annotate-icon.png) visualisoinnin oikeassa yläkulmassa.
 3. Nyt voit [lisätä merkintöjä ja jakaa visualisoinnin](mobile-annotate-and-share-a-tile-from-the-mobile-apps.md#annotate-and-share-the-tile-report-or-visual).
 

@@ -257,7 +257,7 @@ Saat kaikki tiedot [Power BI -tiimin blogista](https://powerbi.microsoft.com/blo
 
 **28. huhtikuuta 2016**
 
-* [Nopeat merkitykselliset tiedot koontinäytön ruuduissa](consumer/end-user-insights.md): kun tarkastelet ruutua kohdistustilassa, valitse Nouda merkityksellisiä tietoja ja hae ruutua ja siihen liittyviä tietoja korrelaatioista, poikkeavista havainnoista, trendeistä, kausivaihtelusta, trendien muutospisteistä ja päätekijöistä automaattisesti sekunneissa.
+* [Nopeat merkitykselliset tiedot koontinäytön ruuduissa](consumer/end-user-insights.md): kun tarkastelet ruutua tarkastelutilassa, valitse Nouda merkityksellisiä tietoja ja hae ruutua ja siihen liittyviä tietoja korrelaatioista, poikkeavista havainnoista, trendeistä, kausivaihtelusta, trendien muutospisteistä ja päätekijöistä automaattisesti sekunneissa.
 
 Saat kaikki tiedot [Power BI -tiimin blogista](https://powerbi.microsoft.com/blog/find-more-insights-in-your-dashboards-with-quick-insights/)
 
@@ -551,7 +551,7 @@ Saat kaikki tiedot [Power BI -blogista](http://blogs.msdn.com/b/powerbi/archive/
 
 * Koko näytön tila koontinäyttöjen ja raporttien näyttämiseksi suurilla TV-ruuduilla
 * Sovita näyttöön -tuki koko näytön tilassa koko koontinäytön näyttämiseksi käytettävissä olevassa tilassa
-* Kohdistustila lisätietojen saamiseksi koontinäytön ruuduista
+* Tarkastelutila lisätietojen saamiseksi koontinäytön ruuduista
 * Mahdollisuus tarkastella kunkin ruudun viimeisintä päivitysaikaa
 * Mahdollisuus tarkastella kunkin ruudun lähdettä
 * Planview Enterprise on portfolion- ja resurssinhallinnan päästä päähän -ratkaisu, joka yhdistää strategian suorittamiseen, mikä parantaa päätöksentekoa yrityksessä. Power BI:n Planview Enterprise -sisältöpaketin avulla voit visualisoida resurssien ja työn hallinnan tietoja kokonaan uudella tavalla. Kirjaudu sisään tunnistetiedoillasi ja ala perehtyä vuorovaikutteisesti portfoliosijoituskulutukseesi, budjetin tilaan ja siihen, miten hyvin projektisi vastaa strategisia prioriteetteja.

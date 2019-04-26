@@ -151,11 +151,11 @@ Tutustutaan seuraavaksi **korostus**- ja **kohdistustilan** eroihin.
 1. **Kohdistus**tilassa yksi visualisointi voi täyttää koko kankaan, kun valitset **kohdistustilan** kuvakkeen.
 2. **Korostuksella** voit nostaa esiin yhden visualisoinnin sen alkuperäisessä koossa siten, että kaikki muut sivun visualisoinnit häivytetään lähes läpinäkyviksi. 
 
-![Vertaa kohdistustilaa korostukseen](media/desktop-bookmarks/bookmarks_11.png)
+![Vertaa tarkastelutilaa korostukseen](media/desktop-bookmarks/bookmarks_11.png)
 
 Kun edellisen kuvan visualisoinnin **kohdistus**kuvaketta napsautetaan, sivu näyttää seuraavanlaiselta:
 
-![kohdistustila](media/desktop-bookmarks/bookmarks_12.png)
+![tarkastelutila](media/desktop-bookmarks/bookmarks_12.png)
 
 Sen sijaan kun **korostus**tila valitaan visualisoinnin ellipsivalikosta, sivu näyttää tältä:
 

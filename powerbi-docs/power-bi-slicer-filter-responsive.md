@@ -76,7 +76,7 @@ Voit seurata samoja vaiheita tehdessäsi ajan tai alueen osittajan reagoivaksi. 
 - Visualisoinnit optimoivat syöteruutujen järjestyksen alustan sallitun koon mukaan. 
 - Tietoelementin näyttö on optimoitu tekemään osittajista mahdollisimman käyttökelpoisia piirtoalustan salliman koon perusteella. 
 - Uudet liukusäätimien pyöreät kädensijat optimoivat kosketusohjauksen. 
-- Jos visualisoinnista tulee liian pieni, jotta siitä olisi hyötyä, siitä tulee kuvake, joka edustaa visualisoinnin tyyppiä omalla paikallaan. Voit käsitellä sitä kaksoisnapauttamalla se auki kohdistustilassa. Tämä säästää arvokasta tilaa raportin sivulla toiminnoista tinkimättä.
+- Jos visualisoinnista tulee liian pieni, jotta siitä olisi hyötyä, siitä tulee kuvake, joka edustaa visualisoinnin tyyppiä omalla paikallaan. Voit käsitellä sitä kaksoisnapauttamalla se auki tarkastelutilassa. Tämä säästää arvokasta tilaa raportin sivulla toiminnoista tinkimättä.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 

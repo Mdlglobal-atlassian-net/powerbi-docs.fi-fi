@@ -31,7 +31,7 @@ Saat nopeita merkityksellisiä tietoja ja voit luoda tietoihin perustuvia mielen
 Merkityksellisiä tietoja -ominaisuus on perustuu kasvavaan [edistyneiden analyysialgoritmien joukkoon](service-insight-types.md), jota kehitetään yhdessä Microsoft Researchin kanssa. Sen avulla entistä useammat ihmiset voivat saada merkityksellisiä tietoja tiedoistaan uusilla ja intuitiivisilla tavoilla.
 
 ## <a name="run-quick-insights-on-a-dataset"></a>Nopeiden merkityksellisten tietojen suorittaminen tietojoukkoon
-Katso, kuinka Amanda suorittaa nopeat merkitykselliset tiedot tietojoukkoon, avaa merkityksellisen tiedon kohdistustilassa, kiinnittää yhden tiedoista ruutuna koontinäytölleen ja hakee sitten merkityksellisiä tietoja koontinäytön ruudusta.
+Katso, kuinka Amanda suorittaa nopeat merkitykselliset tiedot tietojoukkoon, avaa merkityksellisen tiedon tarkastelutilassa, kiinnittää yhden tiedoista ruutuna koontinäytölleen ja hakee sitten merkityksellisiä tietoja koontinäytön ruudusta.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/et_MLSL2sA8" frameborder="0" allowfullscreen></iframe>
 
@@ -65,7 +65,7 @@ Nyt on sinun vuorosi. Tutustu merkityksellisiin tietoihin [toimittajan laatuanal
 2. Osoita korttia, valitse kolme pistettä (...) ja valitse **Näytä merkitykselliset tiedot**. Merkitykselliset tiedot avataan koko näytölle.
    
     ![Merkitykselliset tiedot koko näytöllä](media/service-insights/power-bi-insight-focus.png)
-3. Kohdistustilassa voit:
+3. Tarkastelutilassa voit:
    
    * suodattaa visualisointeja.  Voit tarkastella suodattimia valitsemalla oikeasta yläkulmasta nuolen, joka laajentaa Suodattimet-ruudun.
         ![merkitykselliset tiedot- ja suodatinvalikko laajennettuna](media/service-insights/power-bi-insights-filter-new.png)
@@ -77,15 +77,15 @@ Nyt on sinun vuorosi. Tutustu merkityksellisiin tietoihin [toimittajan laatuanal
      Merkitykselliset tiedot näytetään vasemmalla ja uudet kortit, joiden tiedot peruvat pelkästään kyseisiin merkityksellisiin tietoihin, näytetään oikealla.
      
        ![suodatetut merkitykselliset tiedot](media/service-insights/power-bi-insights-on-insights-new.png)
-4. Voit palata alkuperäiseen merkityksellisten tietojen pohjaan valitsemalla vasemmasta yläkulmasta **Poistu kohdistustilasta**.
+4. Voit palata alkuperäiseen merkityksellisten tietojen pohjaan valitsemalla vasemmasta yläkulmasta **Poistu tarkastelutilasta**.
 
 ## <a name="run-insights-on-a-dashboard-tile"></a>Merkityksellisten tietojen suorittaminen koontinäytön ruudulle
 Sen sijaan, että hakisit merkityksellisiä tietoja koko tietojoukosta, tarkenna hakuasi yksittäisen koontinäytön ruudun luomiseen käytettyihin tietoihin. Tätäkin kutsutaan usein **tietojen suodattamiseksi**.
 
 1. Avaa koontinäyttö.
-2. Osoita ruutua. Valitse kolme pistettä (...) ja sitten **Näytä merkitykselliset tiedot**. Ruutu avautuu [kohdistustilassa](service-focus-mode.md) ja merkityksellisten tietojen kortit näytetään oikealla.    
+2. Osoita ruutua. Valitse kolme pistettä (...) ja sitten **Näytä merkitykselliset tiedot**. Ruutu avautuu [tarkastelutilassa](service-focus-mode.md) ja merkityksellisten tietojen kortit näytetään oikealla.    
    
-    ![Kohdistustila](media/service-insights/pbi-insights-tile.png)    
+    ![Tarkastelutila](media/service-insights/pbi-insights-tile.png)    
 4. Herättivätkö yksittäiset merkitykselliset tiedot kiinnostuksesi? Tutustu asiaan tarkemmin valitsemalla kyseinen kortti. Valitut merkitykselliset tiedot näytetään vasemmalla ja uudet kortit, joiden tiedot peruvat pelkästään kyseisiin merkityksellisiin tietoihin, näytetään oikealla.    
 6. Jatka tietoihin tutustumista. Kun löydät mielenkiintoisia merkityksellisiä tietoja, kiinnitä se koontinäyttöösi valitsemalla **Kiinnitä visualisointi** oikeasta yläkulmasta.
 

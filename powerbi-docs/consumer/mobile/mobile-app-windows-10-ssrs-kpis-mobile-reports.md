@@ -73,9 +73,9 @@ Reporting Services -mobiiliraportit ja suorituskykymittarit näkyvät samoissa k
 
 ![Raportin kansiot](./media/mobile-app-windows-10-ssrs-kpis-mobile-reports/power-bi-ssrs-mobile-report-folders.png)
 
-* Napauta Suorituskykymittaria sen näkemiseksi kohdistustilassa.
+* Napauta Suorituskykyilmaisinta sen näkemiseksi tarkastelutilassa.
   
-    ![Suorituskykymittari kohdistustilassa](./media/mobile-app-windows-10-ssrs-kpis-mobile-reports/power-bi-ssrs-mobile-report-kpis.png)
+    ![Suorituskykyilmaisin tarkastelutilassa](./media/mobile-app-windows-10-ssrs-kpis-mobile-reports/power-bi-ssrs-mobile-report-kpis.png)
 * Napauta mobiiliraporttia Power BI -sovelluksen avaamista ja käyttöä varten.
   
     ![Reporting Servicesin mobiiliraportit](././media/mobile-app-windows-10-ssrs-kpis-mobile-reports/power-bi-ssrs-mobile-report.png)
