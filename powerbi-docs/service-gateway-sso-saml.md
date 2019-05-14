@@ -10,12 +10,12 @@ ms.subservice: powerbi-gateways
 ms.topic: conceptual
 ms.date: 03/05/2019
 LocalizationGroup: Gateways
-ms.openlocfilehash: 91a4cf3ff4fef4530c7c45712a86419298da53f4
-ms.sourcegitcommit: 89e9875e87b8114abecff6ae6cdc0146df40c82a
+ms.openlocfilehash: 3c9fd8877347ad0eebf7db059cc791583c89f353
+ms.sourcegitcommit: af2b2238fe77eaa1b2392a19a143a0250b8665cf
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58306500"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "65533698"
 ---
 # <a name="use-security-assertion-markup-language-saml-for-single-sign-on-sso-from-power-bi-to-on-premises-data-sources"></a>Security Assertion Markup Languagen (SAML) käyttäminen kertakirjautumista (SSO) varten Power BI:stä paikallisiin tietolähteisiin
 
@@ -75,7 +75,7 @@ Tuloksena oleva IdP-varmenne on voimassa vuoden ajan (katso -days-asetusta). Luo
 
     ![SAML:n määrittäminen](media/service-gateway-sso-saml/configure-saml.png)
 
-1. Valitse tunnistetietopalvelu, jonka loit vaiheessa 2. Syötä kohtaan **Ulkoiset käyttäjätiedot** Power BI -käyttäjän täydellinen käyttäjätunnus ja valitse sitten **Lisää**.
+1. Valitse tunnistetietopalvelu, jonka loit vaiheessa 2. - **Tunnistetietojen ulkoiset**, anna Power BI-käyttäjän UPN (yleensä sähköpostiosoite käyttäjä kirjautuu sisään Power BI kanssa) ja valitse sitten **Lisää**. Huomaa, että jos olet määrittänyt yhdyskäytäväsi käyttämään ADUserNameReplacementProperty määritysvaihtoehto sinun tulee arvo, joka korvaa Power BI-käyttäjän alkuperäinen täydellinen. Esimerkiksi Jos arvoksi määritetään ADUserNameReplacementProperty SAMAccountName sinun tulisi antaa käyttäjän SAMAccountName.
 
     ![Tunnistetietopalvelun valitseminen](media/service-gateway-sso-saml/select-identity-provider.png)
 
