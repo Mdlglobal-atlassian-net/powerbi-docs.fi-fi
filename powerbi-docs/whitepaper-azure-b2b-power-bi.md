@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/07/2019
 ms.author: davidi
 LocalizationGroup: Conceptual
-ms.openlocfilehash: de993d9cf7ef86ce5d25f31c300d4e7b1c9f06e7
-ms.sourcegitcommit: 244d110b28d4978f360cbece3a7c896e1a645258
-ms.translationtype: HT
+ms.openlocfilehash: 79b8ae80413cc54b065d12bf36ccb1651a670812
+ms.sourcegitcommit: ec5b6a9f87bc098a85c0f4607ca7f6e2287df1f5
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "65202416"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66051589"
 ---
 # <a name="distribute-power-bi-content-to-external-guest-users-using-azure-active-directory-b2b"></a>Power BI -sisällön jakaminen ulkoisille vieraskäyttäjille Azure Active Directory B2B:n avulla
 
@@ -265,7 +265,7 @@ Power BI:n integrointi Azure AD B2B:hen antaa Contosolle saumattoman ja vaivatto
     ![Kutsulinkki](media/whitepaper-azure-b2b-power-bi/whitepaper-azure-b2b-power-bi_17.png)
 
 
-    Kun vieraskäyttäjä napsauttaa linkkiä, hän voi käyttää Contoso Azure AD -vuokraajan sisältöä.
+    Kun vierailevien käyttäjien napsauttavat linkkiä, he voivat käyttää-Contoso Azure AD-vuokraajan sisältöä.
 
     > [!NOTE]
     > Kutsuviestin asettelua voi muuttaa käyttämällä Azure AD:n Tuotemukautus-ominaisuutta [tässä](https://docs.microsoft.com/azure/active-directory/active-directory-b2b-invitation-email) kuvatulla tavalla.
@@ -275,7 +275,7 @@ Power BI:n integrointi Azure AD B2B:hen antaa Contosolle saumattoman ja vaivatto
 
     Entä jos Contoso ei tiedä kaikkia kutsuttavia vieraskäyttäjiä etukäteen? Tai entä jos BI-portaalin luonut Contoson analyytikko haluaa itse jakaa sisältöä vieraskäyttäjille? Tuemme myös tätä skenaariota Power BI:ssä ad hoc -kutsujen muodossa.
 
-    Analyytikko voi lisätä ulkoiset käyttäjät sovelluksen käyttöoikeusluetteloon julkaistessaan sovelluksen. Vieraskäyttäjä saa kutsun, ja kun hän hyväksyy sen, hänet ohjataan automaattisesti Power BI -sisältöön.
+    Analyytikon vain lisätä Ulkoiset käyttäjät-sovelluksen käyttö-luetteloon ne ovat julkaisemisen yhteydessä. Uusien käyttäjien noutaa kutsua ja kun he hyväksyvät sen, he ohjataan automaattisesti Power BI-sisältöä.
 
     ![Lisää ulkoinen käyttäjä](media/whitepaper-azure-b2b-power-bi/whitepaper-azure-b2b-power-bi_18.png)
 
@@ -438,7 +438,7 @@ Contoso luo myös roolin ”AllRole” sisäisille käyttäjilleen, jotka näkev
 
 Ladattuaan Power BI Desktop -tiedoston palveluun, Contoso voi määrittää vieraskäyttäjät rooliin ”SecurityRole” ja sisäiset käyttäjät rooliin ”AllRole”
 
-Kun vieraskäyttäjä nyt avaa raportin, hän näkee vain ryhmän A myynnit:
+Nyt kun vierailevien käyttäjien avata raportin, ne näkee vain ryhmä A: myynti
 
 ![Vain ryhmästä A](media/whitepaper-azure-b2b-power-bi/whitepaper-azure-b2b-power-bi_38.png)
 

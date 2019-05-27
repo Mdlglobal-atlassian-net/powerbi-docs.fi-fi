@@ -1,8 +1,8 @@
 ---
 title: Power BI Premiumin usein kysytyt kysymykset
 description: Selaa Power BI Premium -tarjoomaa koskevien usein kysyttyjen kysymysten ja vastausten luetteloa.
-author: minewiskan
-ms.author: owend
+author: mgblythe
+ms.author: mblythe
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
@@ -10,16 +10,16 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 02/05/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: 6aa9265a006135ad87a61979b39a709c874f8d48
-ms.sourcegitcommit: 20ae9e9ffab6328f575833be691073de2061a64d
+ms.openlocfilehash: 92b515cfa9c4d3ca796d48ac90415cc0d1d5d5a9
+ms.sourcegitcommit: 317980e9f40fb3ed6eeb91b92056f242bd814a2c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58383333"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65565377"
 ---
 # <a name="power-bi-premium-faq"></a>Power BI Premiumin usein kysytyt kysymykset
 
-Tämä artikkeli vastaa usein kysyttyihin kysymyksiin, jotka liittyvät Power BI Premiumiin. Katso yleiskatsaus aiheesta kohdassa [Mikä on Power BI Premium?](service-premium.md).
+Tämä artikkeli vastaa usein kysyttyihin kysymyksiin, jotka liittyvät Power BI Premiumiin. Katso yleiskatsaus aiheesta kohdassa [Mikä on Power BI Premium?](service-premium-what-is.md).
 
 * Jos sinulla on muita kysymyksiä, [voit esittää niitä Power BI -yhteisössä](http://community.powerbi.com/).
 * Eikö ongelma ratkennut? Käy [Power BI -tukisivulla](https://powerbi.microsoft.com/support/).
@@ -84,7 +84,7 @@ Lisätietoja on artikkelissa [Power BI -raporttipalvelimen käytön aloittaminen
 
 **Seuraavat vaiheet**
 
-[Mikä on Power BI Premium? ](service-premium.md)
+[Mikä on Power BI Premium? ](service-premium-what-is.md)
 [Power BI Premiumin julkaisutiedot](service-premium-release-notes.md)
 [Microsoft Power BI Premiumin tekninen raportti](https://aka.ms/pbipremiumwhitepaper)
 [Power BI:n yrityskäyttöönoton suunnittelemisen tekninen raportti](https://aka.ms/pbienterprisedeploy)

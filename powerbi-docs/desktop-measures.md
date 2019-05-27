@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 08/08/2018
+ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: 56935d4c4c30e759056f3d383e40d570bfd81ae8
-ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
+ms.openlocfilehash: 4395884dfbc7ef5ebfb0df34e416d69ee553ebd3
+ms.sourcegitcommit: 10a87c016f497dbeba32f94ed1f3688a70816fea
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56215346"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65514145"
 ---
 # <a name="measures-in-power-bi-desktop"></a>Mittarit Power BI Desktopissa
 
@@ -25,12 +25,12 @@ Mittareita käytetään joissakin yleisimmissä tietoanalyyseissa, kuten summat,
 
 ## <a name="understanding-measures"></a>Mittarien ymmärtäminen
 
-**Power BI Desktopissa** mittayksiköitä luodaan ja käytetään **raporttinäkymässä** tai **tietonäkymässä**. Omat luodut mittarit näkyvät kentät-listassa laskin-kuvakkeen kanssa. Mittarit voit nimetä miten tahansa ja niitä voi lisätä uuteen tai jo olemassa olevan raportin visualisointiin muiden kenttien tapaan.
+**Power BI Desktopissa** mittareita luodaan ja käytetään **raporttinäkymässä** tai **tietonäkymässä**. Omat luodut mittarit näkyvät kentät-listassa laskin-kuvakkeen kanssa. Mittarit voit nimetä miten tahansa ja niitä voi lisätä uuteen tai jo olemassa olevan raportin visualisointiin muiden kenttien tapaan.
 
 ![](media/desktop-measures/measuresinpbid_measinfieldlist.png)
 
 > [!NOTE]
-> **Pikamittarit** ovat valmiiksi luotuja mittayksikköjä, jotka ovat valittavissa valintaikkunoista. Niiden avulla on helppo luoda mittareita nopeasti, sekä oppia DAX-syntaksi, sillä niiden automaattisesti luodut DAX-kaavat ovat tarkasteltavissa. Katso artikkeli: [pikamittarit](desktop-quick-measures.md).
+> **Pikamittarit** ovat valmiiksi luotuja mittareita, jotka ovat valittavissa valintaikkunoista. Niiden avulla on helppo luoda mittareita nopeasti, sekä oppia DAX-syntaksi, sillä niiden automaattisesti luodut DAX-kaavat ovat tarkasteltavissa. Katso artikkeli: [pikamittarit](desktop-quick-measures.md).
 > 
 > 
 

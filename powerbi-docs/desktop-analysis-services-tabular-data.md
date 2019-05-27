@@ -7,22 +7,22 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/28/2018
+ms.date: 05/07/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: cdf8613159aa729d7d5b9c9096364e19c48a494e
-ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
+ms.openlocfilehash: 996a65bd001626fd184ac98ee76dc61c22922707
+ms.sourcegitcommit: b11e908650379913d00673215e3eaf25d712b122
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56215109"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65239972"
 ---
 # <a name="using-analysis-services-tabular-data-in-power-bi-desktop"></a>Analysis Servicesin taulukkomuotoisten tietojen käyttäminen Power BI Desktopissa
 Power BI Desktopissa on kaksi tapaa muodostaa yhteys SQL Server Analysis Servicesin taulukkomalleihin ja hakea niistä tietoja: Tutustu käyttämällä reaaliaikaista yhteyttä tai Valitse kohteet ja tuo Power BI Desktopiin.
 
 Menetelmien kuvailu on alla.
 
-**Tutustu käyttämällä reaaliaikaista yhteyttä** – Kun käytät reaaliaikaista yhteyttä, taulukkomallin tai perspektiivin kohteet, kuten taulukot, sarakkeet ja mittayksiköt näkyvät Power BI Desktopin Kentät-luettelossa. Voit käyttää Power BI Desktopin kehittyneitä visualisointi- ja raportointityökaluja taulukkomallin tutkimiseen uusilla, erittäin vuorovaikutteisilla tavoilla.
+**Tutustu käyttämällä reaaliaikaista yhteyttä** – Kun käytät reaaliaikaista yhteyttä, taulukkomallin tai perspektiivin kohteet, kuten taulukot, sarakkeet ja mittarit näkyvät Power BI Desktopin Kentät-luettelossa. Voit käyttää Power BI Desktopin kehittyneitä visualisointi- ja raportointityökaluja taulukkomallin tutkimiseen uusilla, erittäin vuorovaikutteisilla tavoilla.
 
 Kun muodostat yhteyden reaaliajassa, mallista ei tuoda tietoja Power BI Desktopiin. Aina kun olet vuorovaikutuksessa visualisoinnin kanssa, Power BI Desktop lähettää taulukkomallille kyselyn ja laskee näkemäsi tulokset. Näet aina taulukkomallin uusimmat käytettävissä olevat tiedot, jotka ovat peräisin joko viimeisimmästä käsittelykerrasta tai taulukkomallissa käytettävissä olevista Direct Query -taulukoista. 
 
@@ -30,7 +30,7 @@ Muista, että taulukkomallien suojaus on erittäin tehokas. Power BI Desktopissa
 
 Kun olet luonut dynaamisia raportteja Power BI Desktopissa, voit jakaa ne julkaisemalla ne Power BI -sivustossasi. Kun julkaiset Power BI Desktop -tiedoston käyttäen reaaliaikaista yhteyttä Power BI -sivustollasi olevaan taulukkomalliin, järjestelmänvalvojan on pitänyt asentaa ja määrittää paikallisen tietoyhdyskäytävän. Voit lukea lisää [paikallisesta tietoyhdyskäytävästä](service-gateway-onprem.md).
 
-**Valitse kohteet ja tuo ne Power BI Desktopiin** – Kun muodostat yhteyden tämän asetuksen avulla, voit valita esim. taulukoita, sarakkeita ja mittayksiköitä taulukkomallista tai perspektiivistä ja ladata ne Power BI Desktop -malliin. Voit räätälöidä tiedostoa lisää Power BI Desktopin edistyneellä kyselyeditorilla. Voit käyttää Power BI Desktop mallinnusominaisuuksia malliin tietojen lisämallintamiseen. Power BI Desktopin ja taulukkomallin välillä ei säilytetä reaaliaikaista yhteyttä. Voit tutustua Power BI Desktop -mallin offline-tilassa tai julkaista sen Power BI -sivustollasi.
+**Valitse kohteet ja tuo ne Power BI Desktopiin** – Kun muodostat yhteyden tämän asetuksen avulla, voit valita esim. taulukoita, sarakkeita ja mittareita taulukkomallista tai perspektiivistä ja ladata ne Power BI Desktop -malliin. Voit räätälöidä tiedostoa lisää Power BI Desktopin edistyneellä kyselyeditorilla. Voit käyttää Power BI Desktop mallinnusominaisuuksia malliin tietojen lisämallintamiseen. Power BI Desktopin ja taulukkomallin välillä ei säilytetä reaaliaikaista yhteyttä. Voit tutustua Power BI Desktop -mallin offline-tilassa tai julkaista sen Power BI -sivustollasi.
 
 ## <a name="to-connect-to-a-tabular-model"></a>Yhteyden muodostaminen taulukkomalliin
 1. Napsauta Power BI Desktopin **Aloitus**-välilehdellä **Hae tiedot**.

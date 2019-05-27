@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 02/13/2019
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 3f3c901140ca4f2ae2d93d1c3bc17bb519d41212
-ms.sourcegitcommit: d010b10bc14097a1948daeffbc91b864bd91f7c8
+ms.openlocfilehash: 97718ee6411d0063aa145e768fd20d3ebb6024b6
+ms.sourcegitcommit: c9080e77ab705f1814a352c0dda6b10910a5018e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56225956"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "65941446"
 ---
 # <a name="relationships-with-a-many-many-cardinality-in-power-bi-desktop"></a>Moni-moneen-kardinaliteetin sisältävät suhteet Power BI Desktopissa
 
@@ -25,7 +25,7 @@ Power BI Desktopin *moni-moneen-kardinaliteetin sisältävien suhteiden* ominais
 
 Power BI Desktopin *moni-moneen-kardinaliteetin sisältävien suhteiden* ominaisuus on yksi kolmesta toisiinsa liittyvästä ominaisuudesta:
 
-* **Yhdistelmämallit**: Antavat mahdollisuuden sisällyttää raporttiin kaksi tietoyhteyttä tai enemmän (kuten DirectQuery-yhteydet tai tuonnin) minä tahansa yhdistelminä. Jos haluat lisätietoja, katso [Yhdistelmämallien käyttäminen Power BI Desktopissa (esikatselu)](desktop-composite-models.md).
+* **Yhdistelmämallit**: Antavat mahdollisuuden sisällyttää raporttiin kaksi tietoyhteyttä tai enemmän (kuten DirectQuery-yhteydet tai tuonnin) minä tahansa yhdistelminä. Jos haluat lisätietoja, katso [Yhdistelmämallit Power BI Desktopissa](desktop-composite-models.md).
 
 * **Moni-moneen-kardinaliteetin sisältävät suhteet**: *Yhdistelmämallien* avulla voit määrittää taulukoiden välille *moni-moneen-kardinaliteetin sisältävät suhteet*. Tämä lähestymistapa poistaa vaatimuksen siitä, että taulukoiden arvojen pitäisi olla yksilöllisiä. Se myös poistaa edelliset ratkaisut, kuten uusien taulukoiden lisäämisen vain yhteyksien muodostamiseksi. Ominaisuutta kuvataan tarkemmin myöhemmin tässä artikkelissa.
 
@@ -157,7 +157,7 @@ DirectQueryn olemassa olevia käyttörajoituksia sovelletaan edelleen, kun käyt
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
 Seuraavissa artikkeleissa on lisätietoja yhdistelmämalleista ja DirectQuerysta:
-* [Yhdistelmämallit Power BI Desktopissa (esikatselu)](desktop-composite-models.md)
+* [Yhdistelmämallit Power BI Desktopissa](desktop-composite-models.md)
 * [Tallennustilan tila Power BI Desktopissa (esikatselu)](desktop-storage-mode.md)
 * [DirectQueryn käyttö Power BI Desktopissa](desktop-directquery-about.md)
 * [DirectQueryn tukemat tietolähteet Power BI Desktopissa](desktop-directquery-data-sources.md)

@@ -8,15 +8,15 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 12/06/2018
+ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 3f3b1435e7c696d0edf810b8b69be201ff1d92ce
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 0a582eb5c160685784c6db497353f92d2dd3d2cf
+ms.sourcegitcommit: 10a87c016f497dbeba32f94ed1f3688a70816fea
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54278650"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65514129"
 ---
 # <a name="connect-to-data-in-power-bi-desktop"></a>Tietoihin yhdistäminen Power BI Desktopissa
 Power BI Desktopilla voit helposti muodostaa yhteyden alati laajenevaan tietomaailmaan. Jos sinulla ei ole Power BI Desktopia, voit [ladata](http://go.microsoft.com/fwlink/?LinkID=521662) ja asentaa sen.

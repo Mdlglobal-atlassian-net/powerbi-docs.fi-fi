@@ -1,7 +1,7 @@
 ---
 title: Tietojen lisääminen suoraan sivutettuun raporttiin Raportin muodostimessa (esikatselu)
 description: Tässä artikkelissa kerrotaan, miten voit lisätä tietoja suoraan sivutettuun raporttiin Raportin muodostimessa.
-author: markingmyname
+author: maggiesMSFT
 ms.author: maggies
 manager: kfile
 ms.reviewer: ''
@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 11/19/2018
-ms.openlocfilehash: 27f8434b336c2d1281fb087d4e9acf83958f7329
-ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
+ms.openlocfilehash: 3237f4751083f374ac00a959f226429b17757b50
+ms.sourcegitcommit: 244d110b28d4978f360cbece3a7c896e1a645258
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/16/2019
-ms.locfileid: "56324986"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61424464"
 ---
 # <a name="enter-data-directly-in-a-paginated-report-in-report-builder-preview---power-bi"></a>Tietojen lisääminen suoraan sivutettuun raporttiin Raportin muodostimessa (esikatselu) – Power BI
 
@@ -23,7 +23,7 @@ Tässä artikkelissa kerrotaan SQL Server 2016:n Raportin muodostimen uusimman v
 ## <a name="prerequisites"></a>Edellytykset
 
 - Jotta voisit lisätä tietoja suoraan sivutettuun raporttiin, sinun on asennettava [Raportin muodostimen uusi versio Microsoft Download Centeristä](https://www.microsoft.com/download/details.aspx?id=53613). 
-- Jos haluat tallentaa sivutetun raportin Power BI -palveluun, tarvitset [Power BI Pro -tilin](service-self-service-signup-for-power-bi.md) ja kirjoitusoikeudet [Power BI Premium -kapasiteetin](service-premium.md) työtilaan.
+- Jos haluat tallentaa sivutetun raportin Power BI -palveluun, tarvitset [Power BI Pro -tilin](service-self-service-signup-for-power-bi.md) ja kirjoitusoikeudet [Power BI Premium -kapasiteetin](service-premium-what-is.md) työtilaan.
 - Jos haluat tallentaa sivutetun raportin raporttipalvelimeen, tarvitset [RsReportServer.config-tiedoston muokkausoikeudet](#upload-the-paginated-report-to-a-report-server).
 
 ## <a name="get-started"></a>Aloittaminen

@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 09/27/2018
+ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: 323391268e930d3b7b2926590f3377b850b65624
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 64957fa71249c551b4f69b619a12baf03fae6b06
+ms.sourcegitcommit: 10a87c016f497dbeba32f94ed1f3688a70816fea
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54282582"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65513703"
 ---
 # <a name="dax-basics-in-power-bi-desktop"></a>DAX-perusteet Power BI Desktopissa
 Tämä artikkeli on tarkoitettu uusille Power BI Desktopin käyttäjille. Sen on tarkoitus antaa sinulle helppo ja nopea esittely siitä, miten voit käyttää Data Analysis Expression (DAX) -kaavaa ja ratkaista sillä useita peruslaskutoimituksia ja tietojen analysointiongelmia. Artikkeli sisältää käsitteellisiä tietoja, joukon harjoitustehtäviä ja muutamia tietovisoja, joilla voit testata, mitä olet oppinut. Kun olet käynyt tämän artikkelin läpi, sinulla pitäisi olla hyvä käsitys DAX:n tärkeimmistä peruskäsitteistä.
@@ -59,7 +59,7 @@ Tämä kaava sisältää seuraavat syntaksielementit:
 
 Kun yrität ymmärtää DAX-kaavaa, on usein hyödyllistä eritellä kukin elementti kielellä, jolla ajattelet ja jota puhut päivittäin. Voit esimerkiksi lukea tämän kaavan seuraavasti:
 
-> *Mittayksikölle nimeltä Total Sales, laske (=) Sales-taulukon [SalesAmount ] -sarakkeen arvojen summa (SUM).*
+> *Mittarille nimeltä Total Sales, laske (=) Sales-taulukon [SalesAmount ] -sarakkeen arvojen summa (SUM).*
 > 
 > 
 

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 12/06/2017
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 5ebc5472ffcbd5d6b493b919b3e2965968261d20
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.openlocfilehash: e3092c320008df760ef72408c93f601dde26cdef
+ms.sourcegitcommit: ec5b6a9f87bc098a85c0f4607ca7f6e2287df1f5
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54279845"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66051147"
 ---
 # <a name="guidance-for-deploying-a-data-gateway-for-power-bi"></a>Power BI:n tietoyhdyskäytävän käyttöönotto-ohjeet
 
@@ -42,7 +42,7 @@ Jos kaikki käyttäjät käyttävät tiettyä raporttia joka päivä samaan aika
 ### <a name="connection-type"></a>Yhteystyyppi
 **Power BI** tarjoaa kaksi yhteystyyppiä: **DirectQueryn** ja **tuonnin**. Kaikki tietolähteet eivät tue molempia yhteystyyppejä ja useat syyt voivat vaikuttaa siihen, kumpi valitaan, kuten suojausvaatimukset, suorituskyky, tietorajoitukset ja tietomallikoot. Lisätietoja yhteystyypistä ja tuetuista tietolähteistä on *On-premises data gateway* -artikkelin osiossa, joka sisältää[ luettelon käytettävissä olevista tietolähdetyypeistä](service-gateway-onprem.md).
 
-Käytössä oleva yhteystyypin mukaan yhdyskäytävän käyttö voi olla erilaista. Sinun tulee esimerkiksi yrittää erottaa **DirectQuery**-tietolähteet **ajoitetun päivityksen** tietolähteistä aina kun mahdollista (olettaen, että ne ovat eri raporteissa ja voidaan erottaa). Tämä estää sen, että yhdyskäytävällä olisi tuhansia DirectQuery-pyyntöjä jonossa samaan aikaan aamuksi ajoitetun suurikokoisen tietomallin päivityksen kanssa, jota käytetään yrityksen pääasiallisessa raporttinäkymässä. Seuraavassa on kummankin osalta huomioitavia seikkoja:
+Sen mukaan, mitä yhteyttä käytetään yhdyskäytävän käyttö voi olla eri. Sinun tulee esimerkiksi yrittää erottaa **DirectQuery**-tietolähteet **ajoitetun päivityksen** tietolähteistä aina kun mahdollista (olettaen, että ne ovat eri raporteissa ja voidaan erottaa). Tämä estää sen, että yhdyskäytävällä olisi tuhansia **DirectQuery** pyyntöjä jonossa samaan aikaan aamuksi ajoitetun päivityksen kanssa, suurikokoisen tietomallin, jota käytetään yrityksen pääasiallisessa raporttinäkymässä. Seuraavassa on kummankin osalta huomioitavia seikkoja:
 
 * **Ajoitettu päivitys**: Riippuen kyselyn koosta ja päivittäin tehtävien päivitysten määrästä voit valita, pysytkö suositeltujen laitteistovaatimusten välillä vai päivitätkö suuremman suorituskyvyn koneeseen. Jos tiettyä kyselyä ei ole taitettu, yhdyskäytäväkoneessa tapahtuu muunnoksia ja siten yhdyskäytäväkone hyötyy suuremmasta käytettävissä olevasta RAM-muistista.
 * **DirectQuery**: Kysely lähetään aina, kun joku käyttäjä avaa raportin tai tarkastelee tietoja. Joten jos arvelet yli 1 000 käyttäjän käyttävän tietoja samanaikaisesti, kannattaa varmistaa, että tietokoneessa on tehokkaat ja suorituskykyiset laitteisto-osat. Suoritinydinten määrän lisääminen parantaa **DirectQuery**-yhteyden siirtomäärää.
