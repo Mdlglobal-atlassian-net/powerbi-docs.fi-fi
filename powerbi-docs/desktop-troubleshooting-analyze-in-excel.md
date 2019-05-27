@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 11/28/2018
+ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: f50ab78ff6a96beb127376ff9a8b1c7396dd2cc5
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 083d78552c124c3a53d669357678fb473dfcd5f2
+ms.sourcegitcommit: 10a87c016f497dbeba32f94ed1f3688a70816fea
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54282873"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65514575"
 ---
 # <a name="troubleshooting-analyze-in-excel"></a>Analysoi Excelissä -toiminnon vianmääritys
 Analysoi Excelissä -toiminto voi ajoittain antaa odottamattomia tuloksia tai toimia odottamattomalla tavalla. Tämä sivu sisältää ratkaisuja yleisiin ongelmiin käytettäessä Analysoi Excelissä -toimintoa.
@@ -86,7 +86,7 @@ Jos kohtaat virheen, joka ilmoittaa, että **OLAP-kuution mallia ei löydy**, ky
 Jos yrität käyttää tietojoukkoa, jolla on yhteyksiä paikallisiin Analysis Services -tietoihin, näyttöön saattaa tulla virhesanoma. **Analysoi Excelissä** tukee paikallisten **Analysis Services** -tietojoukkojen ja raporttien käyttöä yhteysmerkkijonon avulla, kunhan tietokone on samassa toimialueessa kuin **Analysis Services** -palvelin ja tilillä on **Analysis Services** -palvelimen käyttöoikeus.
 
 ## <a name="cant-drag-anything-to-the-pivottable-values-area-no-measures"></a>Vetäminen ei onnistu Pivot-taulukon Arvot-alueelle (mittareita ei ole)
-Kun **Analysoi Excelissä** muodostaa yhteyden ulkoiseen OLAP-malliin (näin Excel yhdistää Power BI:hin), *Pivot-taulukko* [edellyttää määritettyjä **toimenpiteitä** ulkoisessa mallissa](https://support.microsoft.com/kb/234700), koska kaikki laskutoimitukset suoritetaan palvelimella. Tämä on eri kuin käsiteltäessä paikallista tietolähdettä (kuten taulukoita Excelissä tai tietojoukkoja **Power BI Desktopissa** tai **Power BI -palvelussa**), jolloin taulukkomalli on käytettävissä paikallisesti ja [voit käyttää implisiittisiä mittareita](https://msdn.microsoft.com/library/gg399077.aspx), jotka ovat dynaamisesti luotuja mittareita, joita ei tallenneta tietomalliin. Näissä tapauksissa toiminta Excelissä eroaa **Power BI Desktopista** tai **Power BI -palvelusta**: tiedoissa voi olla sarakkeita, joita voidaan käsitellä mittareina Power BI:ssä mutta ei arvoina (mittareina) Excelissä.
+Kun **Analysoi Excelissä** muodostaa yhteyden ulkoiseen OLAP-malliin (näin Excel yhdistää Power BI:hin), *Pivot-taulukko*[edellyttää määritettyjä **mittareita** ulkoisessa mallissa](https://support.microsoft.com/kb/234700), koska kaikki laskutoimitukset suoritetaan palvelimella. Tämä on eri kuin käsiteltäessä paikallista tietolähdettä (kuten taulukoita Excelissä tai tietojoukkoja **Power BI Desktopissa** tai **Power BI -palvelussa**), jolloin taulukkomalli on käytettävissä paikallisesti ja [voit käyttää implisiittisiä mittareita](https://msdn.microsoft.com/library/gg399077.aspx), jotka ovat dynaamisesti luotuja mittareita, joita ei tallenneta tietomalliin. Näissä tapauksissa toiminta Excelissä eroaa **Power BI Desktopista** tai **Power BI -palvelusta**: tiedoissa voi olla sarakkeita, joita voidaan käsitellä mittareina Power BI:ssä mutta ei arvoina (mittareina) Excelissä.
 
 Tämän ongelman ratkaisuun on muutamia vaihtoehtoja:
 
@@ -101,9 +101,9 @@ Kun mittarit on määritetty mallissa Power BI -palvelussa, niitä voidaan käyt
 
 [Opetusohjelma: Omien mittarien luominen Power BI Desktopissa](desktop-tutorial-create-measures.md)
 
-[Mittayksiköt PowerPivotissa](https://msdn.microsoft.com/library/gg399077.aspx)
+[Mittarit PowerPivotissa](https://msdn.microsoft.com/library/gg399077.aspx)
 
-[Mittayksiköiden luominen PowerPivotissa](https://support.office.com/article/Create-a-Measure-in-Power-Pivot-d3cc1495-b4e5-48e7-ba98-163022a71198)
+[Mittarien luominen PowerPivotissa](https://support.office.com/article/Create-a-Measure-in-Power-Pivot-d3cc1495-b4e5-48e7-ba98-163022a71198)
 
 [Laskentataulukkotietojen lisääminen tietomalliin linkitetyn taulukon avulla](https://support.office.com/article/Add-worksheet-data-to-a-Data-Model-using-a-linked-table-d3665fc3-99b0-479d-ba09-a37640f5be42)
 

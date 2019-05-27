@@ -8,15 +8,15 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/06/2018
+ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Dashboards
-ms.openlocfilehash: ca4af083e616023196b7a983d6f04dcdd97826a9
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 152b8f3bffa25a66d08af4806f9c7f1fe9bc90f7
+ms.sourcegitcommit: 10a87c016f497dbeba32f94ed1f3688a70816fea
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54279914"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65514342"
 ---
 # <a name="power-bi-publisher-for-excel"></a>Power BI Publisher for Excel
 Microsoftin **Power BI Publisher for Excelin** avulla voit ottaa tilannevedoksia Excelin tärkeimmistä merkityksellisistä tiedoista, kuten pivot-taulukoista, kaavioista ja solualueista, ja kiinnittää niitä Power BI:n koontinäyttöihin.
@@ -112,7 +112,7 @@ Tässä **Power BI Publisher for Excelin** versioissa on muutamia huomioon otett
 * **Jaetut tiedot** – kanssasi jaetut tiedot, jotka eivät ole suoraan nähtävissäsi Power BI:ssä, eivät ole käytettävissä **Yhdistä tietoihin** -toiminnolla.
 * **Paikallinen SSAS** – Jos valitsemasi tietojoukko on peräisin paikallisesta SQL Server Analysis Servicesistä (SSAS) ja Power BI:ssä oleva tietojoukko käyttää DirectQuerya tietojen käyttämiseen, **Power BI Publisher for Excel** yhdistää näihin tietoihin paikallisen verkkoyhteyden kautta. Se *ei* siis muodosta yhteyttä tietoihin Power BI:n kautta. Tällaisiin tietojoukkoihin yhteyttä muodostavan käyttäjän on oltava yhteydessä paikalliseen verkkoon. Käyttäjän käyttöoikeus tietoihin todennetaan tietojen tallennuspaikkana toimivan Analysis Services -esiintymän käyttämällä todennusmenetelmällä.
 * **Pakolliset ohjaimet**  -  **Power BI Publisher for Excel** asentaa kaikki ominaisuuden toiminnan edellyttämät ohjaimet automaattisesti. Automaattisesti asennettuihin ohjaimiin sisältyy Excel OLE DB -ohjain Analysis Servicesille. Jos tämä ohjain poistetaan käyttäjän toimesta tai jostain muusta syystä, yhteys Power BI -tietoihin ei toimi.
-* **Tietojoukossa on oltava mittayksiköitä** – Tietojoukkoon on määritettävä mittayksikkömalleja, jotta Excelin käsitellä voi mittayksikköjä pivot-taulukkojen arvoina ja analysoida tietoja oikein. Lue lisätietoja [mittareista](desktop-measures.md).
+* **Tietojoukossa on oltava mittareita** – Tietojoukkoon on määritettävä mittarimalleja, jotta Excel voi käsitellä mittareita pivot-taulukkojen arvoina ja analysoida tietoja oikein. Lue lisätietoja [mittareista](desktop-measures.md).
 * **Tuki ryhmille** – tietyn ryhmän ulkopuolisille henkilöille jaettuja tietojoukkoja ei tueta, eikä sellaisiin voi muodostaa yhteyttä.
 * **Maksuttoman tilauksen ja Pro-tilauksen erot** – ryhmiin liittyviä toimintoja ei tueta Power BI:n maksuttoman tilauksen käyttäjille. He eivät siksi näe ryhmälle jaettuja tietojoukkoja tai raportteja omassa työtilassaan.
 * **Jaetut raportit tai tietojoukot** – käyttäjälle jaettuihin raportteihin tai tietojoukkoihin ei voi muodostaa yhteyttä.

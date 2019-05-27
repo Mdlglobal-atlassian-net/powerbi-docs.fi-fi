@@ -12,23 +12,24 @@ ms.service: powerbi
 ms.topic: quickstart
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/06/2018
+ms.date: 05/13/2019
 ms.author: mihart
-ms.openlocfilehash: 84ce069913b1c262ce4e91138f8496cf3f19dddd
-ms.sourcegitcommit: cd85d88fba0d9cc3c7a4dc03d2f35d2bd096759b
+ms.openlocfilehash: babdcebcdbc45ce3f7f737785ca4becab50cb3be
+ms.sourcegitcommit: 187f306438d53ba8742db2c7a5532f1acc81fa36
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/12/2018
-ms.locfileid: "53280117"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65608275"
 ---
-<!-- once the sample aps are live, change this so consumers can follow along -->
+<!-- once the sample apps are live, change this so consumers can follow along -->
 # <a name="quickstart-learn-about-the-power-bi-capabilities-for-consumers"></a>Pikaopas: Tutustu ***kuluttajille suunnattuihin*** Power BI -ominaisuuksiin
 Tässä pikaoppaassa opit käyttämään Power BI:tä löytääksesi tietopohjaisia merkityksellisiä liiketoimintatietoja. Tämä artikkeli ei ole tarkoitettu syvälliseksi ohjeeksi, vaan se tarjoaa lyhyen katsauksen **kuluttajille** suunnattuihin Power BI -toimintoihin.
 
 Jos et ole rekisteröitynyt Power BI:hin, [rekisteröidy ilmaiseen kokeiluversioon](https://app.powerbi.com/signupredirect?pbi_source=web) ennen aloittamista.
 
 ## <a name="prerequisites"></a>Edellytykset
-- Power BI -palvelu (app.powerbi.com) <!-- app from AppSource -->
+- Power BI -palvelu (app.powerbi.com)
+<!-- app from AppSource -->
 
 ## <a name="reading-view"></a>Lukunäkymä
 Lukunäkymä on saatavilla Power BI:ssä raportin *kuluttajille*. Kun työtoverisi jakaa raportin kanssasi, voit tutkia ja käsitellä raporttia lukunäkymässä. 
@@ -86,7 +87,7 @@ Valitse koontinäytössä tai raportissa **Näytä aiheeseen liittyvät** yläre
 ### <a name="use-qa-to-ask-questions-using-natural-language"></a>Käytä Q&A-toimintoa esittääksesi kysymyksiä luonnollisella kielellä
 Joskus nopein tapa saada vastauksia tiedoista on esittää kysymyksiä luonnollisella kielellä. Q&A-kysymysruutu on käytettävissä koontinäytön yläreunassa. Esimerkiksi ”näytä suuri mahdollisuuksien määrä myyntivaiheen mukaan suppilona”. 
 
-![Q&A](./media/end-user-reading-view/power-bi-qna.png)
+![Kysymykset ja vastaukset](./media/end-user-reading-view/power-bi-qna.png)
 
 ### <a name="favorite-a-dashboard"></a>Koontinäytön lisääminen suosikkeihin
 Kun lisäät sisällön *suosikkeihin*, voit käyttää sitä vasemmasta siirtymispalkista. Vasen siirtymispalkki on näkyvissä lähes kaikissa Power BI:n alueissa. Suosikkeja ovat yleensä koontinäytöt, raporttisivut ja sovellukset, joita käytät useimmin.
@@ -185,7 +186,7 @@ Power BI:n visualisointi rakentuu pohjana olevien tietojoukkojen tiedoista. Jos 
 1. Avaa raportti Power BI -palvelussa ja valitse visualisointi.  
 2. Jos haluat tuoda visualisoinnin taustalla olevat tiedot näkyviin, valitse kolme pistettä (...) ja valitse **Näytä tiedot**.
    
-   ![valitse Näytä tiedot](./media/end-user-show-data/power-bi-show-data2.png)
+   ![valitse Näytä tiedot](./media/end-user-show-data/power-bi-explore-show-data.png)
 
 Tämä on vain lyhyt yleiskuvaus siitä, mitä **kuluttajat** voivat tehdä Power BI -palvelussa.  
 

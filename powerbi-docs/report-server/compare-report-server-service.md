@@ -2,20 +2,20 @@
 title: Power BI -raporttipalvelimen ja Power BI -palvelun vertailu
 description: Tässä artikkelissa verrataan Power BI -raporttipalvelimen ja Power BI -palvelun ominaisuuksia.
 keywords: ''
-author: markingmyname
-ms.author: maghan
+author: maggiesMSFT
+ms.author: maggies
 ms.topic: overview
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 manager: kfile
 ms.custom: mvc
-ms.date: 02/06/2019
-ms.openlocfilehash: ba10e13062e4071e5afcc5d395836c96ed1401fd
-ms.sourcegitcommit: e9c45d6d983e8cd4cb5af938f838968db35be0ee
+ms.date: 05/22/2019
+ms.openlocfilehash: c4254420ae949b1fae6a1407cd045589c23da3c8
+ms.sourcegitcommit: bccbfc278ae85615dcfb7791d89e071a43d1ae23
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57327914"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66187672"
 ---
 # <a name="comparing-power-bi-report-server-and-the-power-bi-service"></a>Power BI -raporttipalvelimen ja Power BI -palvelun vertailu
 
@@ -34,11 +34,11 @@ Power BI -raporttipalvelimessa ja Power BI -palvelussa on monia samankaltaisuuks
 | Luo Power BI -raportteja selaimessa | Ei | Kyllä |  |
 | Yhdyskäytävä tarvitaan | Ei | Kyllä (paikalliset tietolähteet) |  |
 | Reaaliaikainen virtauttaminen | Ei | Kyllä | [Reaaliaikainen virtauttaminen Power BI:ssä](../service-real-time-streaming.md) |
-| koontinäytöt | Ei | Kyllä | [Raporttinäkymät Power BI -palvelussa](../consumer/end-user-dashboards.md) |
+| Koontinäytöt | Ei | Kyllä | [Raporttinäkymät Power BI -palvelussa](../consumer/end-user-dashboards.md) |
 | Raporttiryhmien jakaminen sovellusten avulla | Ei | Kyllä | [Raporttinäkymiä ja raportteja sisältävien sovellusten luominen ja julkaiseminen](../service-create-distribute-apps.md) |
 | Sisältöpaketit | Ei | Kyllä | [Organisaation sisältöpaketit: Johdanto](../service-organizational-content-pack-introduction.md) |
 | Yhteyden muodostaminen palveluihin (mm. Salesforce) | Kyllä | Kyllä | [Muodosta yhteys palveluihin, joita käytät](../service-connect-to-services.md) sisältöpakettien avulla Power BI -palvelussa. Muodosta yhteys palveluihin sertifioitujen liittimien avulla Power BI -raporttipalvelimessa. Katso lisätietoja artikkelista [Power BI -raportin tietolähteet Power BI -raporttipalvelimessa](data-sources.md). |
-| Kysymykset ja vastaukset | Ei | Kyllä | [Q&A Power BI -palvelussa ja Power BI Desktopissa](../consumer/end-user-q-and-a.md) 
+| Kysymykset ja vastaukset | Ei | Kyllä | [Q&A Power BI -palvelussa ja Power BI Desktopissa](../power-bi-tutorial-q-and-a.md) 
 | Nopeat merkitykselliset tiedot | Ei | Kyllä | [Merkityksellisten tietojen automaattinen luominen Power BI:llä](../consumer/end-user-insights.md) |
 | Analysoi Excelissä | Ei | Kyllä | [Analysoi Excelissä](../service-analyze-in-excel.md) 
 | Sivutetut raportit | Kyllä | Kyllä | [Sivutetut raportit ovat käytettävissä Power BI -palvelussa](../paginated-reports-report-builder-power-bi.md) esikatselutilassa Premium-kapasiteetissa |

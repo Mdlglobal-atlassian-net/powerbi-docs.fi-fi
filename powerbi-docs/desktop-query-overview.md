@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/28/2018
+ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 85429f76159854bf5eb4e2dc671b2d2bc1521dbf
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 56c38a4e42dcdb3fb22e9dc92446c7e963f50e3e
+ms.sourcegitcommit: 10a87c016f497dbeba32f94ed1f3688a70816fea
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54277039"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65513563"
 ---
 # <a name="query-overview-in-power-bi-desktop"></a>Power BI Desktopin kyselyiden yleiskatsaus
 **Power BI Desktopilla** voit muodostaa yhteyden kasvavaan tietomäärään, luoda houkuttelevia ja perustavanlaatuisia raportteja ja jakaa työsi hedelmät muiden kanssa, jotka voivat taas hyödyntää niitä omassa työssään ja laajentaa liiketoimintatietojaan.
@@ -23,7 +23,7 @@ ms.locfileid: "54277039"
 Power BI Desktopissa on kolme näkymää:
 
 * **Raportti**näkymässä voit luomiesi kyselyjen avulla muodostaa vaikuttavia visualisointeja, jotka voit järjestää haluamallasi tavalla, jotka sisältävät useita sivuja ja jotka voit jakaa muiden kanssa.
-* **Tieto**näkymässä voit tarkastella raportin tietoja tietomallin muodossa, jossa voit lisätä mittayksiköitä, luoda uusia sarakkeita ja hallita yhteyksiä.
+* **Tieto**näkymässä voit tarkastella raportin tietoja tietomallin muodossa, jossa voit lisätä mittareita, luoda uusia sarakkeita ja hallita yhteyksiä
 * **Yhteydet**-näkymässä näet graafisen esityksen yhteyksistä, jotka on otettu käyttöön tietomallissa, ja voit hallita tai muokata niitä tarpeen mukaan.
 
 Näitä näkymiä voi käyttää valitsemalla jonkin seuraavista kolmesta kuvakkeista Power BI Desktopin vasemmassa reunassa. Seuraavassa kuvassa Raporttinäkymä on valittuna, mistä on merkkinä kuvakkeen vieressä oleva keltainen nauha.  
