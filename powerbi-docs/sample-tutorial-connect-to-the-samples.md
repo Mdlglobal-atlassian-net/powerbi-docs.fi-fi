@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 12/06/2018
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: 63924dd4769b4ce452d2d8de4252228bb6d37d37
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 846f783e2a022504f192cf0c03179ce3f3c00e22
+ms.sourcegitcommit: 1dfabc8596ec2eb66ccccceb11419361f704b607
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54275544"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65625070"
 ---
 #  <a name="connect-to-the-samples-in-the-power-bi-service"></a>Yhteyden muodostaminen malleihin Power BI -palvelussa
 
@@ -78,7 +78,7 @@ Tutustu nyt itsenäisesti koontinäyttöön, tietojoukkoon ja raporttiin. Omiin 
     ![raporttisivu, jossa vastaavat visualisoinnit korostettuna](media/sample-tutorial-connect-to-the-samples/power-bi-report.png)
    
    > [!NOTE]
-   > Jos ruutu olisi luotu [Power BI Q&A](consumer/end-user-q-and-a.md) -työkalulla, Q&A-sivu olisi avautunut. Jos ruutu olisi [kiinnitetty Excelistä](service-dashboard-pin-tile-from-excel.md), Excel Online olisi avautunut Power BI:n sisällä.
+   > Jos ruutu olisi luotu [Power BI Q&A](power-bi-tutorial-q-and-a.md) -työkalulla, Q&A-sivu olisi avautunut. Jos ruutu olisi [kiinnitetty Excelistä](service-dashboard-pin-tile-from-excel.md), Excel Online olisi avautunut Power BI:n sisällä.
    > 
    > 
 1. **Tietojoukot**-välilehdessä on useita vaihtoehtoja tietojoukkoon tutustumiseen.  Et voi avata sitä ja tarkastella kaikkia rivejä ja sarakkeita (toisin kuin Power BI Desktop -versiossa tai Excelissä).  Jaettaessa sisältöpaketti työkaverin kanssa halutaan yleensä jakaa merkitykselliset tiedot eikä antaa suoraa pääsyä tietoihin. Tämä ei kuitenkaan tarkoita sitä, etteikö tietojoukkoon voisi tutustua.  
@@ -129,11 +129,9 @@ Tutustu nyt itsenäisesti tietojoukkoon, suhteisiin ja raporttiin. Jos tarvitset
 
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
-[Power BI:n peruskäsitteet](consumer/end-user-basic-concepts.md)
 
-[Power BI -palvelun mallit](sample-datasets.md)
-
-[Power BI:n tietolähteet](service-get-data.md)
+- [Power BI:n peruskäsitteet](consumer/end-user-basic-concepts.md)
+- [Power BI -palvelun mallit](sample-datasets.md)
+- [Power BI:n tietolähteet](service-get-data.md)
 
 Onko sinulla muuta kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
-

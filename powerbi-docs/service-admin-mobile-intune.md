@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/01/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 65c2de2d505866b3b00a88eaaa309d7c61a7625d
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: d28a27d69d6e8799f08ddaa05e734ded62150c8f
+ms.sourcegitcommit: a284c38d42dd8042e468e10c0157f30918c2bdd1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54296221"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65710931"
 ---
 # <a name="configure-mobile-apps-with-microsoft-intune"></a>Mobiilisovellusten määrittäminen Microsoft Intunella
 
@@ -86,7 +86,7 @@ Voit luoda sovelluksen tai käytännön ensin. Lisäysjärjestyksellä ei ole me
 
 1. Valitse avattavasta luettelosta **Hallittu iOS-sovellus App Storesta**.
 
-1. Anna sovelluksen URL-osoite, jonka haimme [vaiheessa 1](#step-1-get-the-URL-for-the-application), ja valitse **Seuraava**.
+1. Anna sovelluksen URL-osoite, jonka haimme [vaiheessa 1](#step-1-get-the-url-for-the-application), ja valitse **Seuraava**.
 
     ![Ohjelmiston asennus: iOS](media/service-admin-mobile-intune/intune-add-software-ios1.png)
 
@@ -104,7 +104,7 @@ Voit luoda sovelluksen tai käytännön ensin. Lisäysjärjestyksellä ei ole me
 
 1. Valitse avattavasta luettelosta **Ulkoinen linkki**.
 
-1. Anna sovelluksen URL-osoite, jonka haimme [vaiheessa 1](#step-1-get-the-URL-for-the-application), ja valitse **Seuraava**.
+1. Anna sovelluksen URL-osoite, jonka haimme [vaiheessa 1](#step-1-get-the-url-for-the-application), ja valitse **Seuraava**.
 
     ![Ohjelmiston asennus: Android-](media/service-admin-mobile-intune/intune-add-software-android1.png)
 

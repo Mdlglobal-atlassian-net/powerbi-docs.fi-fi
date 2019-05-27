@@ -1,20 +1,21 @@
 ---
 title: Palvelun päänimi ja Power BI
 description: Lue ohjeet siihen, miten voit rekisteröidä sovelluksen Azure Active Directoryssä palvelun päänimellä Power BI -sisällön upottamiseksi.
-author: markingmyname
-ms.author: maghan
+author: rkarlin
+ms.author: rkarlin
 manager: kfile
 ms.reviewer: nishalit
-ms.subservice: power-bi-developer
+ms.service: powerbi
+ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 03/29/2019
-ms.openlocfilehash: 9b72c1c432e7fa560862452849491c12395d29d1
-ms.sourcegitcommit: 3a05f34dbeabac62ea8c35c12a045284271971bc
+ms.openlocfilehash: 5c97eacbdbf89a9ef828dad3a5da01e794952f15
+ms.sourcegitcommit: a284c38d42dd8042e468e10c0157f30918c2bdd1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/03/2019
-ms.locfileid: "58872543"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65710531"
 ---
 # <a name="service-principal-with-power-bi-preview"></a>Palvelun päänimi ja Power BI (esikatselu)
 
@@ -124,7 +125,7 @@ Palvelun päänimen (sovellustunnus) käyttö eroaa tavallisen päätilin käyt�
 6. Nyt voit upottaa sisältöä mallisovellukseen tai omaan sovellukseesi.
 
     * [Sisällön upottaminen mallisovelluksen avulla](embed-sample-for-customers.md#embed-content-using-the-sample-application)
-    * [Sisällön upottaminen sovellukseen](embed-sample-for-customers.md#embed-content-within-your-application)
+    * [Sisällön upottaminen oman sovelluksen avulla](embed-sample-for-customers.md#embed-content-within-your-application)
 
 7. Nyt olet valmis [siirtymään hyötykäyttöön](embed-sample-for-customers.md#move-to-production).
 
