@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 11/28/2018
+ms.date: 05/07/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 3ecd859f9f1b88032cb293fda106b899b07eac05
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: aa1c75a30d82a818ec82730c1939d1427b751dfc
+ms.sourcegitcommit: b11e908650379913d00673215e3eaf25d712b122
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54275362"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65239408"
 ---
 # <a name="connect-to-adobe-analytics-in-power-bi-desktop"></a>Adobe Analyticsiin yhdistäminen Power BI Desktopissa 
 Voit **Power BI Desktopissa** yhdistää **Adobe Analyticsiin** ja käyttää pohjana olevia tietoja samalla tavalla kuin mitä tahansa muuta tietolähdettä Power BI Desktopissa. 
