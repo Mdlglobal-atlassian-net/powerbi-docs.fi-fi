@@ -7,14 +7,14 @@ author: mihart
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: resource
-ms.date: 12/06/2018
+ms.date: 05/14/2019
 ms.author: mihart
-ms.openlocfilehash: 91ac7e9990844f6e4f481473d402647a47249ba6
-ms.sourcegitcommit: a054782370dec56d49bb205ee10b7e2018f22693
-ms.translationtype: HT
+ms.openlocfilehash: 4a67e7ef8171b3f342530d187590e9e018f584df
+ms.sourcegitcommit: d88cc6a87d4ba82ad2c4d496a3634f927e4ac529
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56662407"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66412889"
 ---
 # <a name="glossary-for-power-bi-service"></a>Power BI -palvelun sanasto
 Power BI -palvelussa saattaa olla ennestään tuntematonta tai sekavalta vaikuttavaa terminologiaa. Sanasto on hyvä paikka termien hakuun, joten se on hyvä lisätä suosikkeihin. Toinen hyvä resurssi lisätietojen saamiseen Power BI -palvelun muodostavista rakenneosista ovat [peruskäsitteet](end-user-basic-concepts.md). Peruskäsitteet tarjoavat korkean tason yleiskatsauksen Power BI:n *osiin* ja niiden yhteyksiin.
@@ -27,7 +27,7 @@ Tämä sanasto on yhteisön luoma.  Etkö näe etsimääsi sanaa? Pyydä meitä 
 
 **admin portal (hallintaportaali)** Paikka, jossa Power BI -järjestelmänvalvojat voivat hallita Power BI:n käyttäjiä, ominaisuuksia ja asetuksia organisaatiossaan. (Huomautus: (Office 365, Azure ja PowerApps käyttävät hallintakeskusta.)
 
-**aggregates (koosteet)** Kun useiden rivien arvot on ryhmitelty yhteen syötteenä ehdoista yhden arvon muodostamiseksi, joka on merkityksellisempi tai joka on mitta-arvo.
+**koosteet** Kun useiden rivien arvot on ryhmitelty yhteen syötteenä ehdoista yhden arvon muodostamiseksi, joka on merkityksellisempi tai joka on mittari.
 
 **aggregation (koostaminen)** Pohjana olevien tietolähteiden rivien vähentäminen mallin mukaan. Tuloksena on kooste.
 
@@ -142,6 +142,8 @@ Power BI -ympäristö (vuokraaja) -termiä voidaan käyttää dokumentaatiossa, 
 ## <a name="h"></a>H
 **high-density visuals (suuren tiheyden visualisoinnit)** Visualisoinnit, joissa on enemmän arvopisteitä kuin Power BI pystyy hahmontamaan. Power BI näyttää muodon ja poikkeavat arvot ottamalla tiedoista näytteitä.
 
+**Aloitus** purkamisen Power BI-Palvelukäyttäjät ikä oletusarvo. Muokkaa mitä tahansa. Voi kutsua Power BI aloitus- tai yksinkertaisesti koti.
+
 ## <a name="i"></a>I
 
 **insights (merkitykselliset tiedot)** automaattinen tietoanalyysi, joka tehdään suorittamalla Microsoftin merkityksellisten tietojen koneoppimisen algoritmeja.
@@ -240,7 +242,7 @@ Voidaan lisätä URL-osoitteeseen Power BI -raportin tulosten suodattamiseksi. L
 **Quick Insights (Nopeat merkitykselliset tiedot)**
 
 
-**quick measures (pikamittarit)**
+**pikamittarit**
 
 ## <a name="r"></a>R
 **R, Microsoft R**
@@ -260,7 +262,7 @@ Usean perspektiivin yksittäisen tietojoukon näkymä, jonka visualisoinnit edus
 
 **report editor (raporttieditori)**
 
-**report measures (raportin mittayksiköt)** Kutsutaan myös mukautetuiksi laskutoimituksiksi. Excel kutsuu näitä lasketuiksi kentiksi. Katso myös *measures (mittarit)*.   
+**report measures (raportin mittarit)** Kutsutaan myös mukautetuiksi laskutoimituksiksi. Excel kutsuu näitä lasketuiksi kentiksi. Katso myös *measures (mittarit)* .   
 **report server (raporttipalvelin)** Raporttipalvelimen esiintymä.
 
 **responsive visuals (reagoivat visualisoinnit)** Visualisoinnit, jotka muuttuvat dynaamisesti näyttämään dataa ja merkityksellisiä tietoja suurin mahdollinen määrä, oli näyttö minkäkokoinen tahansa.
@@ -288,7 +290,7 @@ Mobiililaitteissa jakaminen voi viitata alkuperäiseen käyttöjärjestelmän ja
 
 **streaming data (tietojen virtautus)** Katso *reaaliaikainen virtauttaminen*.
 
-**subscriptions (tilaukset)**, **Subscribe (tilata)**  
+**subscriptions (tilaukset)** , **Subscribe (tilata)**  
 Voit tilata raportin sivuja, sovelluksia ja koontinäyttöjä sekä vastaanottaa sähköpostiviestejä, jotka sisältävät tilannevedoksen. Edellyttää Power BI Pro -käyttöoikeutta.
 
 **summarization (yhteenveto)** [Power BI Desktop] Yhden sarakkeen arvoihin sovellettava toiminto.

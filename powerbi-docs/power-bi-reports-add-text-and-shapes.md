@@ -1,6 +1,6 @@
 ---
 title: Tekstiruudut ja muodot Power BI -raporteissa
-description: Ohjeista tekstiruutujen ja muotojen lisäämisestä ja luomisesta raportissa käyttämällä Microsoft Power BI -palvelua.
+description: Lisää ja luo tekstiruudut ja muodot raportissa käyttämällä Microsoft Power BI-palvelussa.
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
@@ -8,20 +8,20 @@ featuredvideoid: _3q6VEBhGew
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 01/16/2019
+ms.date: 05/29/2019
 ms.author: maggies
 LocalizationGroup: Visualizations
-ms.openlocfilehash: cf5cecc8df5c1e6c3057cab6eb41e40e934b1510
-ms.sourcegitcommit: 658b0de4f5a544d0906665b40925552804a61880
-ms.translationtype: HT
+ms.openlocfilehash: 26cca0f809f261144ad5e5ee5cfacae3de4f37a4
+ms.sourcegitcommit: d88cc6a87d4ba82ad2c4d496a3634f927e4ac529
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/19/2019
-ms.locfileid: "54406542"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66413017"
 ---
-# <a name="text-boxes-and-shapes-power-bi-reports"></a>Tekstiruudut ja muodot Power BI -raporteissa
-Raportteihin voi lisätä tekstiruutuja ja muotoja käyttämällä Power BI -palvelua ja Power BI Desktopia. Kummassakin tapauksessa sinulla on oltava raportin muokkausoikeudet. Jos raportti on jaettu kanssasi Power BI -palvelussa, sinulla ei ole raportin muokkausoikeuksia. 
+# <a name="text-boxes-and-shapes-in-power-bi-reports"></a>Tekstiruudut ja muodot Power BI -raporteissa
+Voit lisätä tekstiruudut ja muodot raportteja käyttämällä Power BI-palvelussa ja Power BI Desktop. Kummassakin tapauksessa sinulla on oltava raportin muokkausoikeudet. Jos raportti on jaettu kanssasi Power BI-palvelussa, ei ole raportin muokkausoikeuksia. 
 
-Katso, miten Will käyttää Power BI Desktopia ja [lisää staattisia kuvia raporttiin](guided-learning/visualizations.yml?tutorial-step=11). Kokeile sitten lisäämistä itse alla olevien ohjeiden avulla ja käytä Power BI -palvelua sen sijaan.
+Katso käyttää Power BI Desktop- [staattisia kuvia lisääminen raporttiin](guided-learning/visualizations.yml?tutorial-step=11), ja noudata ohjeita kokeile sitten itse käyttämällä Power BI-palvelussa.
 > 
 > <iframe width="560" height="315" src="https://www.youtube.com/embed/_3q6VEBhGew" frameborder="0" allowfullscreen></iframe>
 > 
@@ -29,42 +29,43 @@ Katso, miten Will käyttää Power BI Desktopia ja [lisää staattisia kuvia rap
 ## <a name="add-a-text-box-to-a-report"></a>Tekstiruudun lisääminen raporttiin
 1. Avaa raportti muokkausnäkymässä.
 
-2. Aseta kohdistin raportin piirtoalustan tyhjälle alueelle ja valitse **Tekstiruutu**.
+2. Aseta kohdistin raportin piirtoalustan tyhjälle alueelle ja valitse **tekstiruudun** yläreunan valikosta.
    
-   ![](media/power-bi-reports-add-text-and-shapes/pbi_textbox.png)
-2. Kirjoita tekstiruutuun tekstiä ja määritä halutessasi fontti, väri ja tekstin tasaus. 
+   ![Valitse tekstiruutu](media/power-bi-reports-add-text-and-shapes/pbi_textbox.png)
+3. Kirjoita tekstiruutuun ja määritä halutessasi muodossa fontti, väri ja tekstin tasaus. 
    
-   ![](media/power-bi-reports-add-text-and-shapes/pbi_textbox2new.png)
-3. Jos haluat muuttaa tekstiruudun sijaintia, valitse yläosan harmaa alue ja vedä siitä. Jos haluat muuttaa tekstiruudun kokoa, valitse ja vedä jostakin ääriviivan kahvasta. 
+   ![Kirjoita teksti](media/power-bi-reports-add-text-and-shapes/pbi_textbox2new.png)
+4. Jos haluat muuttaa tekstiruudun sijaintia, valitse yläosan harmaa alue ja vedä siitä. Jos haluat muuttaa tekstiruudun kokoa, valitse ja vedä jostakin ääriviivan kahvasta. 
    
-   ![](media/power-bi-reports-add-text-and-shapes/textboxsmaller.gif)
+   ![Sijainti-tekstiruutu](media/power-bi-reports-add-text-and-shapes/textboxsmaller.gif)
 
-4. Kun tekstiruutu on edelleen valittuna, voit lisätä muita muotoiluja VISUALISOINNIT-ruudussa. Tässä esimerkissä on muotoiltu taustaa ja reunaa. Voit myös luoda tekstiruudulle tarkan koon ja sijainnin.  
+5. Kun tekstiruutu on edelleen valittuna, lisätä muita muotoiluja **visualisoinnit** ruudussa. Tässä esimerkissä on muotoiltu taustaa ja reunaa. Voit myös luoda tekstiruudulle tarkan koon ja sijainnin.  
 
-   ![](media/power-bi-reports-add-text-and-shapes/power-bi-borders.png)
+   ![Tekstiruudun muotoilu](media/power-bi-reports-add-text-and-shapes/power-bi-borders.png)
 
-5. Sulje tekstiruutu valitsemalla mikä tahansa tyhjä kohta raportin piirtoalustassa. 
+6. Sulje tekstiruutu valitsemalla mikä tahansa tyhjä kohta raportin piirtoalustassa. 
 
-5. Kiinnitä tekstiruutu koontinäyttöön valitsemalla Kiinnitä-kuvake ![](media/power-bi-reports-add-text-and-shapes/pbi_pintile.png). 
+7. Valitse Kiinnitä-kuvake  ![Kiinnitä-kuvake](media/power-bi-reports-add-text-and-shapes/pbi_pintile.png) Kiinnitä tekstiruutu koontinäyttöön. 
 
 ## <a name="add-a-shape-to-a-report"></a>Muodon lisääminen raporttiin
 1. Aseta kohdistin mihin tahansa kohtaan raportin piirtoalustalla ja valitse **Muodot**.
    
-   ![](media/power-bi-reports-add-text-and-shapes/power-bi-shapes.png)
-2. Lisää muoto raportin piirtoalustaan valitsemalla muoto avattavasta valikosta. Lisätään nyt nuoli, joka ohjaa huomion kuplaan, jossa on suurin myyntivariaatio. 
+   ![Valitse muodot](media/power-bi-reports-add-text-and-shapes/power-bi-shapes.png)
+2. Lisää muoto raportin piirtoalustaan valitsemalla muoto avattavasta valikosta. Tässä esimerkissä Lisää nuolen, joka ohjaa huomion kuplaan, jossa on suurin myyntivariaatio. 
    
    Mukauta muotoa **Muotoile muoto** -ruudussa. Tässä esimerkissä olemme luoneet punaisen nuolen tummanpunaisella reunuksella kierrettynä 90 astetta.
    
-   ![](media/power-bi-reports-add-text-and-shapes/power-bi-arrrow.png)
-3. Jos haluat muuttaa muodon sijaintia, valitse yläosan harmaa alue ja vedä siitä. Jos haluat muuttaa muodon kokoa, valitse ja vedä jostakin ääriviivan kahvasta. Voit myös tekstiruudun tavoin luoda muodolle tarkan koon ja sijainnin.
+   ![Mukauta muotoa](media/power-bi-reports-add-text-and-shapes/power-bi-arrrow.png)
+3. Jos haluat muuttaa muodon sijaintia, valitse yläosan harmaa alue ja vedä siitä. Muodon kokoa, valitse ja vedä jostakin ääriviivan kahvasta. Voit myös tekstiruudun tavoin luoda muodolle tarkan koon ja sijainnin.
 
-> **HUOMAUTUS**: muotoja ei voi kiinnittää koontinäyttöön lukuun ottamatta yhtenä visualisointina, kun [kiinnitetään reaaliaikainen sivu](service-dashboard-pin-live-tile-from-report.md). 
-> 
-> 
+   > [!NOTE]
+   > muotoja ei voi kiinnittää koontinäyttöön lukuun ottamatta yhtenä visualisointina, kun [kiinnitetään reaaliaikainen sivu](service-dashboard-pin-live-tile-from-report.md). 
+   > 
+   > 
 
-### <a name="next-steps"></a>Seuraavat vaiheet
+## <a name="next-steps"></a>Seuraavat vaiheet
 [Hyperlinkin lisääminen tekstiruutuun](service-add-hyperlink-to-text-box.md)
 
-[Power BI:n peruskäsitteet](consumer/end-user-basic-concepts.md)
+[Power BI-palvelun kuluttajille peruskäsitteet](consumer/end-user-basic-concepts.md)
 
-Onko sinulla muuta kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
+Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)

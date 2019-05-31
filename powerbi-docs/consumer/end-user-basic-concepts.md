@@ -13,11 +13,11 @@ ms.date: 12/06/2018
 ms.author: mihart
 LocalizationGroup: Get started
 ms.openlocfilehash: 8172934357c24516a40a670c68e008521bd4d82d
-ms.sourcegitcommit: 378265939126fd7c96cb9334dac587fc80291e97
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57580101"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61051420"
 ---
 # <a name="basic-concepts-for-power-bi-service-consumers"></a>Peruskäsitteet Power BI -palvelun ***kuluttajille***
 
@@ -104,7 +104,7 @@ Power BI:ssa visualisointeja voi järjestää esimerkiksi seuraavanlaisiin muoto
 
    ![8 mallivisualisointia](media/end-user-basic-concepts/power-bi-visuals.png)
 
-Myös yhteisösi voi luoda omia visualisointeja, joita kutsutaan *mukautetuiksi visualisoinneiksi*. Jos et tunnista raportissa olevaa visualisointia, se on todennäköisesti mukautettu visualisointi. Jos et osaa tulkita saamaasi mukautettua visualisointia, <!--[look up the name of the report or dashboard *designer*](end-user-owner.md)-->etsi raportin tai koontinäytön *suunnittelijan* yhteystiedot ja ota häneen yhteyttä.
+Myös yhteisösi voi luoda omia visualisointeja, joita kutsutaan *mukautetuiksi visualisoinneiksi*. Jos et tunnista raportissa olevaa visualisointia, se on todennäköisesti mukautettu visualisointi. Jos tarvitset apua tulkitseminen mukautettu visualisointi <!--[look up the name of the report or dashboard *designer*](end-user-owner.md)-->Etsi raportin tai koontinäytön nimen *suunnittelutyökalu* ja pyydä häntä.
 
 **YHTÄ** visualisointia raportissa...
 
