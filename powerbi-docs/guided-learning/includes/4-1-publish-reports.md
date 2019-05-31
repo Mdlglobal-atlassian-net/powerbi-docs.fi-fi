@@ -1,10 +1,10 @@
 ---
 ms.openlocfilehash: d39f9a6a974e194c38c2f4e9bf69314ff6d0cec2
-ms.sourcegitcommit: b343e44dbafc0b718c564402593d4b6e3a8ce97c
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51207415"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61255590"
 ---
 Raporttien julkaiseminen Power BI -palveluun on nopeaa ja helppoa.
 

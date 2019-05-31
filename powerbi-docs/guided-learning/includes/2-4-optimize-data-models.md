@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: b42efb2c9237baf85a71be12cfaf61da189601d4
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61255687"
+---
 Tuodut tiedot sisältävät usein kenttiä, joita ei oikeastaan tarvita raportoinnissa ja visualisointitehtävissä, joko koska tiedot ovat ylimääräisiä tai koska sama tieto on jo saatavissa toisesta sarakkeesta. Power BI Desktopissa on työkaluja, joilla tietoja voi optimoida ja niistä voi tehdä hyödyllisempiä raporttien ja visualisointien luomisen sekä jaettujen raporttien tarkastelun kannalta.
 
 ## <a name="hiding-fields"></a>Kenttien piilottaminen

@@ -12,11 +12,11 @@ ms.date: 10/24/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
 ms.openlocfilehash: 0106c59c5fc4d122205a144d85a6e7f643c5a429
-ms.sourcegitcommit: 80961ace38ff9dac6699f81fcee0f7d88a51edf4
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56223394"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61279852"
 ---
 # <a name="tables-in-power-bi-reports-and-dashboards"></a>Taulukot Power BI -raporteissa ja raporttinäkymissä
 Taulukko on ruudukko, joka sisältää tietoja järjestettynä loogiseen sarjaan rivejä ja sarakkeita. Se voi sisältää myös otsikkoja ja summarivin. Taulukot toimivat hyvin kvantitatiivisessa vertailussa, jossa tarkastellaan moni arvoja tietystä kategoriasta. Esimerkiksi tässä taulukossa näkyvät **luokan** viisi eri mittaria.

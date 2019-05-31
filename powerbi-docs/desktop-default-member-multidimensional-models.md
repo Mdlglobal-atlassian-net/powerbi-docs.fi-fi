@@ -11,11 +11,11 @@ ms.date: 01/10/2019
 ms.author: davidi
 LocalizationGroup: Data from files
 ms.openlocfilehash: 01b0cdf70c985169d474a130ed4ad846ad708963
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54284744"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61308810"
 ---
 # <a name="default-member-in-multidimensional-models-in-power-bi"></a>Oletusjäsen Power BI:n monidimensiomalleissa
 
@@ -36,7 +36,7 @@ Kuvitellaan esimerkiksi, että *Valuutta*-sarakkeessa on oletusjäsen, jonka arv
 * Tässä esimerkkitapauksessa, jos kortissa on *Kokonaismyynnit*-sarake, arvossa sovelletaan oletusjäsentä, ja näemme ”USD”-arvoa vastaavat myynnit.
 * Jos vedämme *Valuutta*-sarakkeen suodatinkorttiruutuun, näemme *USD*-arvon valittuna oletusarvona. *Kokonaismyynnit*-sarake pysyy samana, koska sovelletaan oletusjäsentä.
 * Jos sitä vastoin poistamme *USD*-arvon suodatinkortista, *Valuutta*-sarakkeen oletusjäsen tyhjennetään, ja *Kokonaismyynnit* heijastaa nyt kaikkia valuuttoja.
-* Samalla tavoin kun valitsemme toisen arvon suodatinkortissa (oletetaan, että valitsemme *EURO*-arvon) yhdessä oletusjäsenen kanssa, *Kokonaismyynnit* heijastaa suodattimen *valuuttaa arvona {USD, EURO}*.
+* Samalla tavoin kun valitsemme toisen arvon suodatinkortissa (oletetaan, että valitsemme *EURO*-arvon) yhdessä oletusjäsenen kanssa, *Kokonaismyynnit* heijastaa suodattimen *valuuttaa arvona {USD, EURO}* .
 
 ## <a name="grouping-behavior"></a>Ryhmittelytoiminta
 

@@ -1,37 +1,37 @@
 ---
 title: Unohditko Power BI -salasanasi?
-description: Unohditko Power BI -salasanasi?
+description: Jos olet unohtanut salasanasi, voit käyttää linkkiä pyytääksesi salasanasi palauttamista.
 author: mgblythe
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 06/28/2017
+ms.date: 05/14/2019
 ms.author: mblythe
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: 3a6f1228e46beb4d1a087f43799542ca8b511dbb
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.openlocfilehash: 855fae9f23527c47802eef6dac2ded5ffcc8b786
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54289390"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65710330"
 ---
 # <a name="forgot-your-password-for-power-bi"></a>Unohditko Power BI -salasanasi?
+
 Jos olet unohtanut salasanasi, voit käyttää seuraavaa linkkiä pyytääksesi salasanasi palauttamista.
 
 <https://passwordreset.microsoftonline.com>
 
-Jos sinulle sanotaan, että salasanan palauttaminen ei ole tilissäsi käytössä, sinun tulee ottaa yhteyttä Office 365 -järjestelmänvalvojaasi. Jos käytät maksutonta kokeiluversiota, järjestelmänvalvoja on ensimmäinen rekisteröitynyt henkilö yrityksessäsi.
+Jos sinulle sanotaan tilisi ei ole määritetty salasanan palauttaminen, ota yhteyttä Office 365-järjestelmänvalvojaasi. Jos käytät ilmainen kokeiluversio, järjestelmänvalvoja on ensimmäinen henkilö organisaatiosi rekisteröitynyt.
 
-Jos et vieläkään pääse kirjautumaan tilillesi, voit yrittää ottaa yhteyttä tukiryhmään salasanan palauttamista varten. Tämä ei ole Power BI -palvelun tukinumero!
+Jos kohtaat edelleen tilillesi, voit kokeilla tukiryhmään salasanan vaihtamista varten.
 
 *1-800-642-7676*
 
+On tärkeää huomata, että tämä puhelinnumero ei ole Power BI-palvelun tukinumero.
+
 > [!NOTE]
-> Huomaa, että tukea tarjotaan Yhdysvaltain itärannikon aikavyöhykkeen (EST) mukaisesti. Tukea tarjotaan työaikana ja tällä hetkellä ainoastaan englannin kielellä.
-> 
-> 
+> Power BI tukee työaikana tavallista itäinen normaaliaika (EST)-aikavyöhykkeellä. Tuki on tällä hetkellä vain annettu-englanti.
 
-Onko sinulla muuta kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)
-
+Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)

@@ -11,11 +11,11 @@ ms.date: 06/18/2018
 ms.author: otarb
 LocalizationGroup: Connect to data
 ms.openlocfilehash: 28463c065c965b90beb32feabcd5de029311c612
-ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56217041"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61286543"
 ---
 # <a name="using-python-in-query-editor"></a>Pythonin käyttö kyselyeditorissa
 Voit käyttää tilastoijien, tiedemiesten ja tietoanalysoijien käyttämää **Python**-ohjelmointikieltä Power BI Desktopin **kyselyeditorissa**. Tämän Pythonin **kyselyeditoriin** integroinnin avulla voit suorittaa tietojen puhdistamisen Pythonilla ja suorittaa kehittynyttä tietojen muotoilemista ja analyysia tietojoukoissa, kuten puuttuvien tietojen täydentämistä, ennusteita ja klusterointia. **Python** on tehokas kieli, ja sitä voidaan käyttää **kyselyeditorissa** valmistelemaan tietomallisi ja raporttien luomiseen.

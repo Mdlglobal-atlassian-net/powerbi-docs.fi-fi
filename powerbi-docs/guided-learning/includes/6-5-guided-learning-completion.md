@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: a0510b9f9bc7303d7ed63a5a1c4c7ee9862d7c85
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61255549"
+---
 Teit sen! **Onnittelut!** Olet suorittanut Power BI:n **Ohjattu oppiminen** -kurssin. Olet nyt oppinut Power BI:n perusasiat, tutustunut sen toimintoihin ja elementteihin sekä oppinut, miten ne toimivat yhdessä.
 
 ![](media/6-5-guided-learning-completion/c0a0_2.png)
@@ -25,5 +33,5 @@ Tarjolla on myös runsaasti muuta **ohje- ja tukisisältöä**. Siirry vain täm
 Toivomme, että olet nauttinut **Power BI:n ohjatusta oppimisesta**. Toivotamme sinulle onnea jatkoon, olkoon Power BI -visualisointisi aina tehokkaita ja tyylikkäitä!
 
 ## <a name="one-more-section-for-dax-users"></a>Lisäosio DAX-käyttäjille
-Haluatko lisää? Oletko kiinnostunut **DAX:stä (Data Analysis Expressions)**, jolla voit luoda, suodattaa ja käyttää omia sarakkeita ja taulukoita Power BI:ssä? Tarjolla on vielä yksi osio käyttäjille, jotka haluavat hyödyntää koodia Power BI:ssä. Se on nimeltään **Johdanto DAXiin**. Jos tämä kiinnostaa sinua, tutustu ihmeessä myös siihen. Sisältö on yhtä helppokäyttöistä kuin muukin ohjatun oppimisen sisältö.
+Haluatko lisää? Oletko kiinnostunut **DAX:stä (Data Analysis Expressions)** , jolla voit luoda, suodattaa ja käyttää omia sarakkeita ja taulukoita Power BI:ssä? Tarjolla on vielä yksi osio käyttäjille, jotka haluavat hyödyntää koodia Power BI:ssä. Se on nimeltään **Johdanto DAXiin**. Jos tämä kiinnostaa sinua, tutustu ihmeessä myös siihen. Sisältö on yhtä helppokäyttöistä kuin muukin ohjatun oppimisen sisältö.
 

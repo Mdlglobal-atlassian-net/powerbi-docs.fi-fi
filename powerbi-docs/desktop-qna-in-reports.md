@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 12/05/2018
 ms.author: maggies
 LocalizationGroup: Create reports
-ms.openlocfilehash: 440874b96b4bf01023c86e3ef053e8c77e9ef289
-ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
-ms.translationtype: HT
+ms.openlocfilehash: a34de25af7febf63b34d7608ff7ef40e8b653fc4
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55430094"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61284820"
 ---
 # <a name="use-qa-in-power-bi-desktop-for-natural-language-queries"></a>Tee kyselyitä luonnollisella kielellä käyttämällä Power BI Desktopin Q&A-toimintoa
 Yleisien lauseiden ja luonnollisen kielen käyttäminen tiedoista esitettävissä kysymyksissä on tehokasta. Vielä tehokkaampaa on, kun tiedot vastaavat, minkä **Power BI Desktopin** Q&A-toiminto mahdollistaa.
@@ -23,7 +23,7 @@ Yleisien lauseiden ja luonnollisen kielen käyttäminen tiedoista esitettäviss�
 Jotta Q&A pystyy tulkitsemaan onnistuneesti laajaa kysymysvalikoimaa, johon se pystyy vastaamaan, Q&A:n on tehtävä mallista oletuksia. Jos mallin rakenne ei vastaa vähintään yhtä näistä oletuksista, sinun on muutettava malliasi. Kyseiset Q&A:ta varten tehtävät muutokset ovat samat parhaiden käytäntöjen mukaiset optimoinnit kaikille malleille Power BI:ssä riippumatta siitä, käytätkö Q&A:ta. 
 
 > [!NOTE]
-> Q&A on käytettävissä vain käsiteltäessä mallia, joka sisältää **tuotuja** tietoja. Reaaliaikaisia yhteyksiä SSAS- ja DirectQuery-malleihin ei tueta.
+> Q & A on käytettävissä vain käsiteltäessä mallia, joka sisältää **tuotu** tietoja tai reaaliaikaisia yhteyksiä SSAS. DirectQuery-malleille ei tueta.
 >
 > Q&A: käyttö edellyttää seuraavan C runtime -päivityksen, jos käytät Windows 10:ä edeltävää Windows-versiota. Voit yrittää asentaa tärkeät päivitykset Windows Updatesta tai asentaa tarvittavan komponentin manuaalisesti Microsoftilta (KB2999226). [https://support.microsoft.com/en-us/help/2999226/update-for-universal-c-runtime-in-windows](https://support.microsoft.com/help/2999226/update-for-universal-c-runtime-in-windows)
 >
@@ -195,5 +195,5 @@ Tämä vaihe voi olla tärkeä. Silloinkin, kun taulukon ja sarakkeiden nimet ov
 Lisätietoja Power BI Desktopin ominaisuuksista on seuraavissa artikkeleissa:
 
 * [Porautumisen käyttäminen Power BI Desktopissa](desktop-drillthrough.md)
-* [Koontinäytön ruudun tai raporttivisualisoinnin näyttäminen kohdistustilassa](consumer/end-user-focus.md)
+* [Koontinäytön ruudun tai raporttivisualisoinnin näyttäminen tarkastelutilassa](consumer/end-user-focus.md)
 

@@ -11,11 +11,11 @@ ms.date: 01/03/2019
 ms.author: davidi
 LocalizationGroup: Data from files
 ms.openlocfilehash: a687e42ef2963ce5e85bd1e0be72c2562afa5b6c
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54279983"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61370466"
 ---
 # <a name="show-items-with-no-data-in-power-bi"></a>Power BI:n Näytä kohteet, joilla ei ole tietoja -ominaisuus
 
@@ -36,7 +36,7 @@ Yksinkertaisen taulukkoesimerkin avulla on helppo alkaa tutustua tapaan, jolla P
 |Sininen     |Pieni         |
 |Punainen     |Suuri         |
 
-Tässä esimerkissä Power BI näyttää *[Color-Size]*-yhdistelmät, jotka esiintyvät taulukossa *[Product]*. 
+Tässä esimerkissä Power BI näyttää *[Color-Size]* -yhdistelmät, jotka esiintyvät taulukossa *[Product]* . 
 
 Valitaan seuraavaksi erilainen yhdistelmä:
 
@@ -47,7 +47,7 @@ Valitaan seuraavaksi erilainen yhdistelmä:
 |Kiiltävä     |Sininen         |10         |
 |Matta     |Sininen         |15         |
 
-Tässä esimerkissä Power BI näyttää vain ne yhdistelmät, jotka ovat olemassa. Se ei esimerkiksi näytä yhdistelmää ("Ei mitään" + "Sininen") tai ("Matta" + "Punainen"), koska kyseisiä yhdistelmiä ei ole mallissa. Ehto, jolla määritetään, mitkä yhdistelmät ovat olemassa, on, että *Sum(Sales[Quantity])*-arvo ei ole tyhjä.
+Tässä esimerkissä Power BI näyttää vain ne yhdistelmät, jotka ovat olemassa. Se ei esimerkiksi näytä yhdistelmää ("Ei mitään" + "Sininen") tai ("Matta" + "Punainen"), koska kyseisiä yhdistelmiä ei ole mallissa. Ehto, jolla määritetään, mitkä yhdistelmät ovat olemassa, on, että *Sum(Sales[Quantity])* -arvo ei ole tyhjä.
 
 Katsotaanpa erilaista tapausta: 
 
@@ -59,9 +59,9 @@ Katsotaanpa erilaista tapausta:
 |Kiiltävä     |Punainen         |
 |Matta     |Sininen         |
 
-Koska eksplisiittistä mittaria ei ole ja taulukot liittyvät suoraan toisiinsa, Power BI yrittää lisätä mittarin rajoittaakseen tuloksena olevia yhdistelmiä. Tässä tapauksessa Power BI lisää *CALCULATE(COUNTROWS('Product'))*-mittarin, jonka arvo ei saa olla tyhjä, koska *Product*-taulukko on yhteinen molemmille taulukoille.
+Koska eksplisiittistä mittaria ei ole ja taulukot liittyvät suoraan toisiinsa, Power BI yrittää lisätä mittarin rajoittaakseen tuloksena olevia yhdistelmiä. Tässä tapauksessa Power BI lisää *CALCULATE(COUNTROWS('Product'))* -mittarin, jonka arvo ei saa olla tyhjä, koska *Product*-taulukko on yhteinen molemmille taulukoille.
 
-Siispä Power BI näyttää yhdistelmät, joilla on tietoja Product-taulukossa, eli jättää pois yhdistelmät *(”Ei mitään” + ”Sininen”)* ja *(”Matta” + ”Punainen”)*.
+Siispä Power BI näyttää yhdistelmät, joilla on tietoja Product-taulukossa, eli jättää pois yhdistelmät *(”Ei mitään” + ”Sininen”)* ja *(”Matta” + ”Punainen”)* .
 
 **4. Ryhmät, jotka ovat peräisin eri taulukoista, jotka eivät liity toisiinsa**
 
@@ -134,8 +134,8 @@ Näkymä, kun **Näytä kohteet, joilla ei ole tietoja** -ominaisuus on käytös
 
 Huomaa, että yhdistelmät *(Kiiltävä – Punainen)* ja *(Ei mitään – tyhjä)* tulivat näkyviin. Ne näytetään seuraavasta syystä:
 * Power BI käsitteli ensin ProductStyle[Finish]-kohdan, ja kaikki arvot valittiin näytettäviksi. Tuloksena olivat Kiiltävä, Matta ja Ei mitään.
-* Näiden arvojen perusteella Power BI valitsi kaikki vastaavat *Product[Color]*-tiedot. 
-* Koska *Ei mitään* -arvo ei vastaa mitään *Product[Color]*-arvoa, se jää tyhjäksi.
+* Näiden arvojen perusteella Power BI valitsi kaikki vastaavat *Product[Color]* -tiedot. 
+* Koska *Ei mitään* -arvo ei vastaa mitään *Product[Color]* -arvoa, se jää tyhjäksi.
 
 On tärkeää huomata, että järjestys vaikuttaa sarakkeiden arvojen valintaan, ja valintamekanismia voidaankin ajatella *vasen ulkoliitos* -toimintona taulukoiden välillä. Jos sarakkeiden järjestystä vaihdetaan, myös tulokset muuttuvat.
 

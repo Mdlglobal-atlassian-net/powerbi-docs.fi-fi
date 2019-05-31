@@ -9,30 +9,27 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 12/06/2018
+ms.date: 05/14/2019
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 766f92c855420cc2fdc891a28207ab5c2e03fa06
-ms.sourcegitcommit: a054782370dec56d49bb205ee10b7e2018f22693
-ms.translationtype: HT
+ms.openlocfilehash: 7222f13d5ee4f25d7d55655bb5a7e5f2f28c77d4
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56661587"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65608624"
 ---
 # <a name="featured-dashboards-in-power-bi-service"></a>Power BI -palvelun Suositellut koontinäytöt
 ## <a name="create-a-featured-dashboard"></a>Suositellun koontinäytön luominen
 Monilla meillä on tietty koontinäyttö, jolla käymme useammin kuin muilla.  Se saattaa olla koontinäyttö, jota käytetään yrityksen pyörittämiseen tai vaikkapa koontinäyttö, joka sisältää ruutukoosteen monista eri koontinäytöistä ja raporteista.
 
-![Aseta suositelluksi -kuvake](./media/end-user-featured/power-bi-feature-nav.png)
+![Aseta suositelluksi -kuvake](./media/end-user-featured/power-bi-dropdown.png)
 
-Kun määrität koontinäytön *suositelluksi*, niin aina, kun avaat Power BI -palvelun, se aukeaa siten, että kyseinen koontinäyttö on näkyvissä.  
+Kun valitset koontinäytön *suositeltu*, aina, kun avaat Power BI-palvelun, se aukeaa siten, että koontinäyttö on näkyvissä.  
 
 Voit myös valita joitakin koontinäyttöjä ja asettaa ne *suosikeiksi*. Katso [Koontinäyttöjen suosikit](end-user-favorite.md).
 
-> [!NOTE] 
->Tämä aihe koskee vain Power BI -palvelua, ei Power BI Desktopia.
-
-Jos et ole vielä määrittänyt suositeltua koontinäyttöä, Power BI avaa koontinäytön, jota olet viimeksi käyttänyt.  
+Jos et ole vielä määrittänyt suositeltua koontinäyttöä, Power BI avautuu viimeksi käytettyyn koontinäyttöön tai Power BI aloitus.  
 
 ### <a name="to-set-a-dashboard-as-featured"></a>Koontinäytön asettaminen **suositelluksi**
 Katso, kun Amanda luo suositellun koontinäytön, ja seuraa sitten videon alla olevia ohjeita ja kokeile sitä itse.
@@ -42,12 +39,12 @@ Katso, kun Amanda luo suositellun koontinäytön, ja seuraa sitten videon alla o
 
 
 1. Avaa koontinäyttö, jonka haluat asettaa *Suositelluksi*. 
-2. Yläreunan valikkorivissä näkyy joko **Aseta suositelluksi** tai vain suositeltu ![suositeltu-kuvake](./media/end-user-featured/power-bi-featured-icon.png) -kuvake. Valitse jompikumpi.
+2. Valitse yläreunan valikkoriviltä kolme pistettä (...) ja valitse **Aseta suositelluksi**.  
    
-    ![Aseta suositelluksi -kuvake](./media/end-user-featured/power-bi-set-as-featured.png)
+    ![Aseta suositelluksi -kuvake](./media/end-user-featured/power-bi-dropdown.png)
 3. Vahvista valinta.
    
-    ![Aseta suositeltu koontinäyttö](./media/end-user-featured/power-bi-create-featured.png)
+    ![Aseta suositeltu koontinäyttö](./media/end-user-featured/power-bi-featured-confirm.png)
 
 ## <a name="change-the-featured-dashboard"></a>Suositellun koontinäytön vaihtaminen
 Jos muutat mielesi myöhemmin, voit tietenkin määrittää uuden koontinäytön suositelluksi koontinäytöksi.
@@ -57,18 +54,16 @@ Jos muutat mielesi myöhemmin, voit tietenkin määrittää uuden koontinäytön
     ![Vaihda suositeltua koontinäyttöä -ikkuna](./media/end-user-featured/power-bi-change-feature.png)
 2. Valitse **Aseta suositelluksi**. Koontinäytön poistaminen suositelluista ei poista sitä työtilastasi.  
    
-    ![onnistumisilmoitus](./media/end-user-featured/power-bi-success.png)
+    ![onnistumisilmoitus](./media/end-user-featured/power-bi-unfeature-new.png)
 
 ## <a name="remove-the-featured-dashboard"></a>Suositellun koontinäytön poistaminen
 Jos et halua asettaa mitään koontinäyttöä suositelluksi, seuraavassa on ohjeet koontinäytön poistamiseksi suositelluista.
 
 1. Avaa sillä hetkellä suositeltuna oleva koontinäyttö.
-2. Valitse ylemmästä valikkopalkista **Poista suositeltu**.
+2. Valitse yläreunan valikkoriviltä kolme pistettä (...) ja valitse **poisteta suositeltu käytöstä**.
+
+    ![Poistetaanko valittu suositeltu koontinäyttö käytöstä](./media/end-user-featured/power-bi-unfeature-newer.png)
    
-    ![poista suositeltu](./media/end-user-featured/power-bi-unfeature.png)
-
-Nyt Power BI avautuu viimeksi käytettyyn koontinäyttöön.  
-
 ## <a name="next-steps"></a>Seuraavat vaiheet
 [Koontinäytön lisääminen suosikkeihin](end-user-favorite.md)
 

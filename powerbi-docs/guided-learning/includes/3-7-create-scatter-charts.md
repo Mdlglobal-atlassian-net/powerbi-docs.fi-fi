@@ -1,10 +1,10 @@
 ---
 ms.openlocfilehash: cab4d5f47c7e0518bae3c11b3f298802cb67f6d7
-ms.sourcegitcommit: b343e44dbafc0b718c564402593d4b6e3a8ce97c
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51207800"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61396819"
 ---
 Jos haluat verrata kahta eri mittaria, kuten yksikkömyyntiä ja tuloja, yleensä visualisointina käytetään pistekaaviota.
 

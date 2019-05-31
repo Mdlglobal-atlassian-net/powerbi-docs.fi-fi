@@ -11,11 +11,11 @@ ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
 ms.openlocfilehash: 9152538204089ed9c75b69b79a08dc7496a8cca9
-ms.sourcegitcommit: 750f0bfab02af24c8c72e6e9bbdd876e4a7399de
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/04/2019
-ms.locfileid: "54007702"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61156093"
 ---
 # <a name="connect-to-troux-for-power-bi"></a>Yhteyden muodostaminen Trouxiin Power BI:lle
 Troux-sisältöpaketin avulla voit visualisoida yritysarkkitehtuurisäilösi kokonaan uusilla tavoilla suoraan Power BI:ssä. Sisältöpaketti tarjoaa joukon merkityksellisiä tietoja liiketoimintasi ominaisuuksista, kyseiset ominaisuudet mahdollistavista sovelluksista sekä näitä sovelluksia tukevista tekniikoista, jotka ovat Power BI:n avulla täysin mukautettavissa.

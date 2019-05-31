@@ -1,18 +1,18 @@
 ---
 title: Power BI -työtilakokoelman sisällön siirtäminen Power BI:hin
 description: Opi siirtämään Power BI ‑työtilakokoelma Power BI Embedded ‑palveluun ja hyödynnä sisällön upottamisesta sovelluksiin syntyvät edut.
-author: markingmyname
-ms.author: maghan
+author: rkarlin
+ms.author: rkarlin
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 06/30/2018
-ms.openlocfilehash: 23907633ec92a172a9cdd392ad62b43d367260b3
-ms.sourcegitcommit: 80961ace38ff9dac6699f81fcee0f7d88a51edf4
-ms.translationtype: HT
+ms.openlocfilehash: 7f05da6d49a1aeddedfe145bebf0324e3af51572
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56223601"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61270431"
 ---
 # <a name="how-to-migrate-power-bi-workspace-collection-content-to-power-bi-embedded"></a>Power BI -työtilakokoelman sisällön siirtäminen Power BI Embedded -palveluun
 
@@ -131,7 +131,7 @@ Välimuistissa olevat tietojoukot tarkoittavat PBIX-tiedostoja, joihin on tuotu 
 3. Tallenna PBIX.
 4. Kutsu Import PBIX ‑ohjelmointirajapinta SaaS-työtilaan.
 5. Päivitä yhteysmerkkijono kutsumalla - POST  https://api.powerbi.com/v1.0/myorg/datasets/{dataset_id}/Default.SetAllConnections
-6. Hanki GW-tunnus ja tietolähdetunnus kutsumalla – GET https://api.powerbi.com/v1.0/myorg/datasets/{dataset_id}/Default.GetBoundGatewayDataSources
+6. Hanki GW ja datasource tunnisteita kutsumalla – GET https://api.powerbi.com/v1.0/myorg/datasets/{dataset_id}/Default.GetBoundGatewayDataSources
 7. Päivitä käyttäjän tunnistetiedot kutsumalla - PATCH https://api.powerbi.com/v1.0/myorg/gateways/{gateway_id}/datasources/{datasource_id}
 
 #### <a name="old-dataset--reports"></a>Vanha tietojoukko ja raportit
@@ -200,7 +200,7 @@ Sinun on vielä tehtävä Azuressa joitakin puhdistustoimia.
 [Power BI ‑työtilakokoelman siirtotyökalu](migrate-tool.md)  
 [Koodikatkelmia sisällön siirtämiseen Power BI ‑työtilakokoelmasta](migrate-code-snippets.md)  
 [Power BI:n koontinäyttöjen, raporttien ja ruutujen upottaminen](embedding-content.md)  
-[Power BI Premium – mikä se on?](../service-premium.md)  
+[Power BI Premium – mikä se on?](../service-premium-what-is.md)  
 [JavaScript API Git -säilö](https://github.com/Microsoft/PowerBI-JavaScript)  
 [Power BI C# Git -säilö](https://github.com/Microsoft/PowerBI-CSharp)  
 [JavaScript-upotuksen näyte](https://microsoft.github.io/PowerBI-JavaScript/demo/)  

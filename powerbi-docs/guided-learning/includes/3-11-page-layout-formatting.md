@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: e2745c211dbb9f855bcf90589f0fbbe65857b3a3
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61396839"
+---
 Power BI Desktopin avulla voi hallita raporttisivujesi asettelua ja muotoilua, kuten kokoa ja suuntaa.
 
 Muuta raporttisivujesi skaalausta Aloitus-välilehden **Sivunäkymä**-valikon avulla. Käytettävissä olevat vaihtoehdot ovat **Sovita sivulle** (oletus), **Sovita leveyteen** ja **Todellinen koko**.

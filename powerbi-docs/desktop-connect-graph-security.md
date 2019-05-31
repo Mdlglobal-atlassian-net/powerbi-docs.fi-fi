@@ -12,11 +12,11 @@ ms.date: 01/29/2019
 ms.author: preetikr
 LocalizationGroup: Connect to data
 ms.openlocfilehash: 9c265a5d8ad1a08396e0bb4fb553a87a134472fd
-ms.sourcegitcommit: 89e9875e87b8114abecff6ae6cdc0146df40c82a
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58306454"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61317880"
 ---
 # <a name="connect-to-the-microsoft-graph-security-api-in-power-bi-desktop"></a>Muodosta yhteys Microsoft Graph Security -ohjelmointirajapintaan Power BI Desktopissa
 
@@ -49,7 +49,7 @@ Käytä liitintä seuraavasti:
 
 1. Valitse **Nouda tiedot** > **Lisää** Power BI Desktopin **Aloitus**-valintanauhasta.
 2. Valitse vasemmalla olevan ikkunan luokkien luettelosta **Online-palvelut**.
-3. Valitse **Microsoft Graph Security (beeta)**.
+3. Valitse **Microsoft Graph Security (beeta)** .
 
     ![Nouda tiedot -valintaikkuna](media/desktop-connect-graph-security/GetData.PNG)
     

@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: fcf73962534ec8f1fda009304768fd43aaa0955a
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61255701"
+---
 Laskettujen sarakkeiden luominen on helppo tapa rikastaa ja tehostaa tietoja. **Laskettu sarake** on uusi sarake, joka luodaan määrittämällä laskutoimitus, joka muuntaa tai yhdistää vähintään kaksi olemassa olevan tietoelementtiä. Voit esimerkiksi luoda uuden sarakkeen yhdistämällä kaksi saraketta.
 
 Lasketun sarakkeen luominen on hyödyllistä esimerkiksi silloin, kun haluat muodostaa suhteen taulukoiden välille eikä suhteen muodostamiseen käytettävää yksilöivää kenttää ole olemassa. Suhteen puuttuminen käy selväksi, kun luot yksinkertaisen taulukkovisualisoinnin Power BI Desktopissa ja huomaat, että kaikissa merkinnöissä on sama arvo, vaikka tiedät, että pohjana olevissa tiedoissa on eroja.

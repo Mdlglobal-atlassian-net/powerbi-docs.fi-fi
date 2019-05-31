@@ -11,11 +11,11 @@ ms.date: 03/01/2018
 ms.author: maggies
 LocalizationGroup: Dashboards
 ms.openlocfilehash: 4fe3b56f1891423a80019186668dc55f361d580a
-ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56215608"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61225872"
 ---
 # <a name="pin-a-tile-from-one-dashboard-to-another-dashboard"></a>Yhden koontinäytön ruudun kiinnittäminen toiseen koontinäyttöön
 Yksi tapa lisätä uusi [koontinäytön ruutu](consumer/end-user-tiles.md) on kopioida se toisesta koontinäytöstä. Kukin näistä ruuduista on napsautettaessa linkki takaisin sinne, jossa se luotiin, joko Q&A:lle tai raporttiin. 

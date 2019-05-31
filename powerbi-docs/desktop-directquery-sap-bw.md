@@ -11,11 +11,11 @@ ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
 ms.openlocfilehash: 61de19e50437cf8cb5920d2a413821e325da2a1a
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54278074"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61304397"
 ---
 # <a name="directquery-and-sap-business-warehouse-bw"></a>DirectQuery ja SAP Business Warehouse (BW)
 Voit muodostaa yhteyden **SAP Business Warehouse (BW)** -tietolähteisiin suoraan **DirectQueryn** avulla. SAP BW:n OLAP- ja monidimensioluonteesta johtuen DirectQueryn käytöllä SAP BW:n kanssa ja DirectQueryn käytöllä relaatiolähteiden (esimerkiksi SQL Server) kanssa on monia tärkeitä eroja. Nämä erot esitellään seuraavassa:
@@ -33,17 +33,17 @@ Lisäksi on *äärimmäisen tärkeää* ymmärtää, että monia SAP BW:n toimin
 Kun muodostat yhteyden SAP BW:n Power BI:n DirectQuerylla, ensisijaiset mallinnuksen lisärajoitukset ovat seuraavat:
 
 * **Laskettuja sarakkeita ei tueta:** Laskettujen sarakkeiden luominen ei ole mahdollista. Tämä tarkoittaa sitä, että myöskään ryhmittely ja klusterointi eivät ole käytettävissä, sillä ne luovat laskettuja sarakkeita.
-* **Mittayksiköiden lisärajoitukset:** Mittareissa käytettäville DAX-lausekkeille on lisärajoitukset SAP BW:n tarjoaman tukitason vuoksi.
+* **Mittarien lisärajoitukset:** Mittareissa käytettäville DAX-lausekkeille on lisärajoitukset SAP BW:n tarjoaman tukitason vuoksi.
 * **Suhteiden määrittämistä ei tueta:** Suhteet ovat luontaisia ulkoisessa SAP-lähteessä, joten mallissa ei voi määrittää muita suhteita.
 * **Ei tietonäkymää:** **Tietonäkymässä** näytetään yleensä taulukoiden tarkemmat tiedot. SAP BW:n kaltaisten OLAP-lähteiden luonteesta johtuen tämä näkymä ei ole käytettävissä SAP BW -tietoja käytettäessä.
-* **Sarakkeiden ja mittayksiköiden tiedot ovat kiinteät:** Kenttäluettelossa näkyvä sarakkeiden ja mittarien luettelo on kiinteä taustalla olevan lähteen mukaisesti, joten sitä ei voi muokata. Et voi esimerkiksi poistaa saraketta tai vaihtaa sen tietotyyppiä (voit kuitenkin vaihtaa sen nimeä).
+* **Sarakkeiden ja mittarien tiedot ovat kiinteät:** Kenttäluettelossa näkyvä sarakkeiden ja mittarien luettelo on kiinteä taustalla olevan lähteen mukaisesti, joten sitä ei voi muokata. Et voi esimerkiksi poistaa saraketta tai vaihtaa sen tietotyyppiä (voit kuitenkin vaihtaa sen nimeä).
 * **Muut DAX-rajoitukset:** Mittarimääritelmissä käytettävälle DAX:lle on lisärajoituksia lähteen rajoitusten johdosta. Et esimerkiksi voi käyttää koostefunktiota taulukossa.
 
 ## <a name="additional-visualization-restrictions"></a>Visualisointien lisärajoitukset
 Kun muodostat yhteyden SAP BW:n Power BI:n DirectQuerylla, ensisijaiset visualisointien lisärajoitukset ovat seuraavat:
 
 * **Ei sarakkeiden koostamista:** Et voi vaihtaa visualisoinnin sarakkeen koostamista. Sen asetus on aina *Älä tee yhteenvetoa*
-* **Mittayksiköiden suodatus ei ole käytössä:** SAP BW:n tarjoamasta tukitasosta johtuen mittarien suodatus ei ole käytettävissä.
+* **Mittarien suodatus ei ole käytössä:** SAP BW:n tarjoamasta tukitasosta johtuen mittarien suodatus ei ole käytettävissä.
 * **Monivalinta sekä sisällyttäminen/pois jättäminen:** Visualisoinnissa ei voi valita useita arvopisteitä, jos pisteet edustavat arvoja useammasta kuin yhdestä sarakkeesta. Jos sinulla on esimerkiksi palkkikaavio, joka kuvaa myyntiä maittain ja jonka selite on Luokka, et voi valita pistettä, joka edustaa Yhdysvaltoja ja pyöriä, sekä pistettä, joka edustaa Ranskaa ja vaatteita. Et myöskään voi valita pistettä, joka edustaa Yhdysvaltoja ja pyöriä, ja jättää sitä pois visualisoinnista. Molemmat rajoitukset johtuvat SAP BW:n tarjoamasta tuesta.
 
 ## <a name="support-for-sap-bw-features"></a>SAP BW:n toimintojen ja ominaisuuksien tuki

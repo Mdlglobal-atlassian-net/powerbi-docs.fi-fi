@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 74be4112071aba3f629d6b44d322cf2caa522f18
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61396869"
+---
 Tervetuloa Power BI:n **Ohjattu oppiminen** -kurssin **Visualisoinnit**-osioon. Luvassa on hauska, mielenkiintoinen ja valaiseva retki, jolla tutustutaan Power BI:n tarjoamiin lukuisiin visualisointimahdollisuuksiin. Eivätkä ne tähän lopu – visualisointeja tulee jatkuvasti lisää.
 
 ![](media/3-1-intro-visualizations/3-1_1.png)

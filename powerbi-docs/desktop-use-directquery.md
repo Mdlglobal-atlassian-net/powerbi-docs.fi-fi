@@ -11,11 +11,11 @@ ms.date: 02/28/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
 ms.openlocfilehash: bf41700b367b7c3c2302eeec9c03b93fa294ed3f
-ms.sourcegitcommit: 883a58f63e4978770db8bb1cc4630e7ff9caea9a
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57555669"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61348841"
 ---
 # <a name="use-directquery-in-power-bi-desktop"></a>DirectQueryn käyttö Power BI Desktopissa
 Kun muodostat yhteyden tietolähteeseen, voit **Power BI Desktopin** avulla aina tuoda kopion tiedoista **Power BI Desktopiin**. Joillekin tietolähteille on saatavilla vaihtoehtoinen menetelmä: yhteyden muodostaminen suoraan tietolähteeseen **DirectQueryn** avulla.
@@ -55,7 +55,7 @@ Artikkelissa [Power BI ja DirectQuery](desktop-directquery-about.md) kuvataan **
 * Oletusarvoisesti rajoitukset sijoitetaan DAX-lausekkeisiin sallittuina mittareina. Katso lisätietoja seuraavasta kappaleesta (luettelomerkeillä varustetun luettelon jälkeen)
 * Tietojen palautuksen tapauksessa on miljoonan rivin rajoitus käytettäessä **DirectQueryä**. Rajoitus ei vaikuta koosteisiin tai laskelmiin, joita on käytetty **DirectQueryn** avulla palautetun tietojoukon luontiin, vaan pelkästään palautettuihin riveihin. Voit esimerkiksi koostaa 10 miljoonaa riviä tietolähteestä tehdystä kyselystä ja palauttaa tarkasti tämän koosteen tulokset Power BI:hin **DirectQueryn** avulla, jos Power BI:hin palautettujen tietojen koko on alle miljoona riviä. Jos **DirectQuerystä** palautetaan yli miljoona riviä, Power BI palauttaa virheen.
 
-Sen varmistamiseksi, että pohjana olevaan tietolähteeseen lähetettyjen kyselyjen suorituskyky on riittävä, mittareille määritetään oletusarvoisesti rajoituksia. Edistyneet käyttäjät voivat ohittaa tämän rajoituksen valitsemalla **Tiedosto > Vaihtoehdot ja asetukset > Vaihtoehdot** ja sitten **DirectQuery**, ja valitsemalla sitten vaihtoehdon *Salli rajoittamattomat toimenpiteet DirectQuery-tilassa*. Kun tämä vaihtoehto on valittu, voidaan käyttää mitä tahansa DAX-lauseketta, joka on kelvollinen mittarille. Käyttäjien on kuitenkin pantava merkille, että jotkin lausekkeet, jotka suoriutuvat erittäin hyvin tietojen tuonnin aikana, voivat hidastaa paljonkin kyselyjä taustalähteeseen DirectQuery-tilassa.
+Sen varmistamiseksi, että pohjana olevaan tietolähteeseen lähetettyjen kyselyjen suorituskyky on riittävä, mittareille määritetään oletusarvoisesti rajoituksia. Edistyneet käyttäjät voivat ohittaa tämän rajoituksen valitsemalla **Tiedosto &gt; Vaihtoehdot ja asetukset &gt; Vaihtoehdot** ja sitten **DirectQuery**, ja valitsemalla sitten vaihtoehdon *Salli rajoittamattomat mittarit DirectQuery-tilassa*. Kun tämä vaihtoehto on valittu, voidaan käyttää mitä tahansa DAX-lauseketta, joka on kelvollinen mittarille. Käyttäjien on kuitenkin pantava merkille, että jotkin lausekkeet, jotka suoriutuvat erittäin hyvin tietojen tuonnin aikana, voivat hidastaa paljonkin kyselyjä taustalähteeseen DirectQuery-tilassa.
 
 ## <a name="important-considerations-when-using-directquery"></a>DirectQueryn käytössä huomioitavia tärkeitä seikkoja
 Kun käytät **DirectQueryä**, ota huomioon seuraavat kolme seikkaa:

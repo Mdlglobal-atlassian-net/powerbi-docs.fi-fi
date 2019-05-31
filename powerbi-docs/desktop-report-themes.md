@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 09/10/2018
+ms.date: 04/15/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: f30ff44fbc4d99818661abc53cb99bb96cfde673
-ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
-ms.translationtype: HT
+ms.openlocfilehash: 5f0f09c3f64795ca0530bbe5ec5cec09de6c7b53
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56215731"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "60989205"
 ---
 # <a name="use-report-themes-in-power-bi-desktop"></a>Raporttiteemojen käyttäminen Power BI Desktopissa
 **Raporttiteemojen** avulla voit käyttää väriteemaa koko raportissa. Tällä tavalla voit käyttää esimerkiksi yrityksen omaa väriteemaa, kausivärejä tai muita väriteemoja. Kun otat käyttöön **raporttiteeman**, kaikissa raporttisi visualisoinneissa käytetään valitun teeman värejä. Muutamia poikkeuksia on, ja ne kuvataan jäljempänä tässä artikkelissa.
@@ -24,21 +24,7 @@ ms.locfileid: "56215731"
 
 Kun otat käyttöön **raporttiteeman**, tarvitset perusrakennetta käyttävän JSON-tiedoston. Voit tuoda tämän JSON-tiedoston Power BI Desktopiin ja ottaa sen käyttöön raportissasi. JSON-tiedoston rakenteen määrittäminen ja sen tuominen on nopeaa ja helppoa (edellyttää vain muutaman painikkeen napsauttamista).
 
-**Power BI Desktopin** syyskuun 2017 versiosta alkaen voit määrittää useampia raporttiteemaelementtejä JSON-tiedoston avulla. Voit myös mukauttaa ja yhdenmukaistaa lähes kaikki elementit. Voit mukauttaa käyttämällä JSON-tiedostoa, jota voit säätää manuaalisesti **Muotoilu**-ruudussa. Syyskuun 2017 julkaisun (ja sitä uudempien julkaisujen) tavoitteena on antaa käyttäjille täydet mahdollisuudet hallita omien raporttiensa ulkoasua yksityiskohtaisesti.
-
-### <a name="enable-report-themes"></a>Raporttiteemojen käyttöön ottaminen
-**Power BI Desktopin** elokuun 2018 versiosta alkaen raporttiteema on yleisesti saatavilla, eikä sitä tarvitse ottaa käyttöön. 
-
-Jos käytät aiempaa **Power BI Desktopin** versiota, voit ottaa sen käyttöön esikatselutoimintona seuraavasti: 
-
-1. Valitse **Tiedosto > Asetukset ja vaihtoehdot > Asetukset > Esikatselutoiminnot**. 
-2. Valitse **Mukautetut raporttiteemat** -kohdan valintaruutu. 
-
-Sinun täytyy käynnistää **Power BI Desktop** uudelleen tämän jälkeen.
-
-![Mukautetut raporttiteemat](media/desktop-report-themes/report-themes_2.png)
-
-On suositeltavaa päivittää aina **Power BI Desktopin** uusimpaan versioon, jonka saat [Hanki Power BI Desktop](desktop-get-the-desktop.md) -linkistä. 
+Voit myös mukauttaa ja yhdenmukaistaa lähes kaikki elementit. Voit mukauttaa käyttämällä JSON-tiedostoa, jota voit säätää manuaalisesti **Muotoilu**-ruudussa. Tavoitteena on antaa täyden hallinnan miten raporttien ulkoasua yksityiskohtaisesti raporttiensa.
 
 ## <a name="how-report-themes-work"></a>Raporttiteemojen toiminta
 Jos haluat käyttää raporttiteemaa Power BI Desktop -raportissa, valitse jokin käytettävissä olevista valmiista raporttiteemoista tai tuo mukautettu teema.
@@ -113,7 +99,7 @@ Tässä on *St. Patricks Day.json* -tiedoston teksti, jota käyttämällä voit 
 
 Voit täältä syöttää oman väriheksadesimaalikoodisi valittuja värejä varten.
 
-**Power BI Desktopin** syyskuun 2017 versiosta alkaen JSON-tiedosto voi olla paljon monimutkaisempi. JSON-tiedostossa määrität vain muotoilun, jota haluat muokata, joten kaikessa, mitä *ei* ole määritetty JSON-tiedostossa, käytetään Power BI:n oletusasetuksia.
+JSON-tiedostossa määrität vain muotoilun, jota haluat muokata, joten kaikessa, mitä *ei* ole määritetty JSON-tiedostossa, käytetään Power BI:n oletusasetuksia.
 
 JSON-tiedoston luomisella on monia etuja Voit esimerkiksi määrittää kaikkien kaavioiden fonttikooksi 12, tai tietyn fonttiperheen käyttämisen tietyissä visualisoinneissa. Voit myös poistaa arvopisteen otsikot käytöstä tietyissä kaaviotyypeissä.
 
