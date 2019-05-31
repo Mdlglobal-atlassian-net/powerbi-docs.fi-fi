@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: fa6296485897b983c3ca4044ffa2875de3326dec
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61264686"
+---
 Power BI voi tuoda tietoja lähes mistä tahansa lähteestä, mutta sen visualisointi- ja mallinnustyökalut toimivat parhaiten, jos tiedot on järjestetty sarakkeisiin. Toisinaan tietoja ei muotoilla yksinkertaisiin sarakkeisiin, kuten usein Excel-laskentataulukoissa, joissa ihmissilmille selkeä taulukko ei välttämättä sovellu parhaalla mahdollisella tavalla automatisoituihin kyselyihin. Seuraavassa laskentataulukossa on esimerkiksi käytetty otsikoita, jotka ulottuvat usean sarakkeen alueelle.
 
 ![](media/1-5-cleaning-irregular-data/1-5_1.png)

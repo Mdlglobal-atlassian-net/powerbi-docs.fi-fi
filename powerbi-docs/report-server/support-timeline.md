@@ -1,20 +1,20 @@
 ---
 title: Power BI -raporttipalvelimen tuen aikajana
 description: Luettelo Power BI -raporttipalvelimen versioista ja saatavuudesta.
-author: markingmyname
-ms.author: maghan
+author: maggiesMSFT
+ms.author: maggies
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 01/24/2019
-ms.openlocfilehash: 06946f4f838446113d244d4acec74b9f66a60a45
-ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
-ms.translationtype: HT
+ms.date: 05/22/2019
+ms.openlocfilehash: 9eaef23963c369d9fa124124c616b20d4d8a4752
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/16/2019
-ms.locfileid: "56324615"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66187411"
 ---
 # <a name="support-timeline-for-power-bi-report-server"></a>Power BI -raporttipalvelimen tuen aikajana
 
@@ -36,6 +36,7 @@ Tämän tukikäytännön ansiosta voimme tarjota asiakkaillemme uusia innovaatio
 | Maaliskuu 2018 | 19. maaliskuuta 2018 | 19. maaliskuuta 2019 |
 | Elokuu 2018 | 15. elokuuta 2018 | 15. elokuuta 2019 |
 | Tammikuu 2019 | 23. tammikuuta 2019 | 23. tammikuuta 2020 |
+| Toukokuuta 2019: lle | 22. toukokuuta 2019 | 22. toukokuuta 2020 |
 
 Lataa Power BI -raporttipalvelin ja Power BI -raporttipalvelimelle optimoitu Power BI Desktop tutustumalla ohjeaiheeseen [Paikallinen raportointi Power BI -raporttipalvelimella](https://powerbi.microsoft.com/report-server/).
 

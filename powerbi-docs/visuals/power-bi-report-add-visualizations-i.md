@@ -12,11 +12,11 @@ ms.date: 08/23/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
 ms.openlocfilehash: 52c0211aea0462e0bf79d7a48808f1f826c09fb6
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54296083"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "60978559"
 ---
 # <a name="part-i-add-visualizations-to-a-power-bi-report"></a>Visualisointien lisääminen Power BI -raporttiin, osa 1
 Tässä artikkelissa annetaan lyhyt esittely visualisointien lisäämisestä raporttiin joko Power BI -palvelulla tai Power BI Desktopilla.  Katso lisätietoja edistyneemmästä sisällöstä [osasta II](power-bi-report-add-visualizations-ii.md). Katso kuinka Amanda esittelee joitakin eri tapoja, joilla raportille voidaan luoda visualisointeja ja kuinka niitä voidaan muokata ja muotoilla. Voit sitten kokeilla itse luomalla oman raportin [Myynti- ja markkinointimallista](../sample-datasets.md).

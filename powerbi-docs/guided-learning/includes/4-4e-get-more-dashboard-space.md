@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 605ef74cc97843cc475a677f5fa2ebdbdaec909a
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61263395"
+---
 Joskus koontinäyttöjä luodessa voi huomata, että sisältöä on enemmän kuin koontinäyttöön mahtuu. Koontinäytön näyttämistä voi hallita muutamalla eri ratkaisulla, jotta koontinäytön koko sisältö voidaan saada esiin.
 
 Helpoin tapa koko koontinäytön näyttämiseen samalla näytöllä on napsauttaa koontinäytön oikeassa yläkulmassa olevaa **Koko näytön tila** -painiketta.

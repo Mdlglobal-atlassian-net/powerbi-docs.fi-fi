@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 5cabb57af08ba197c7f70598e988fb3249815ab8
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61271367"
+---
 Tämän kokoelman avulla olet oppinut, miten helposti voit hyödyntää olemassa olevia Excel-työkirjatiedostojasi lataamalla ne analysoitavaksi Power BI:hin. Voit ladata Excel-työkirjoja, joissa on yksinkertaisia taulukoita, sekä Excelin kehittyneemmillä BI-toiminnoilla (esimerkiksi Power Pivotilla ja Power View'lla) luotuja työkirjoja.
 
 Olet myös oppinut yhdistämään **OneDrive for Businessiin** tallennettuja **Excel**-tiedostoja sekä pitämään raporttisi ja koontinäyttösi ajan tasalla Power BI:n **automaattisilla** päivitystoiminnoilla, kun teet muutoksia työkirjoihisi.

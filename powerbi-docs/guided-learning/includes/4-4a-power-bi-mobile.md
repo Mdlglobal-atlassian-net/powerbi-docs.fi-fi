@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 3548f02e91c6ebc5a2ea985777cdaceda9661185
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61255588"
+---
 Jos haluat pitää kirjaa tiedoistasi matkan päältä, voit käyttää iOS-, Android- ja Windows-laitteiden Power BI-mobiilisovelluksia.
 
 Kun käytät Power BI -sovellusta, kirjaudu ensin sisään käyttäen Power BI -palvelun tiliäsi. Windows-mobiililaitteella (tässä tapauksessa tabletilla) kirjautuminen näyttää seuraavalta.

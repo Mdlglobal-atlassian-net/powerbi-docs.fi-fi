@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: eeb063707e9a81b3d3551dd4e79e9da01bfe7178
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61255618"
+---
 Tällä oppitunnilla opit jakamaan Power BI -raportin verkkosivulla tai sähköpostitse muutaman helpon toimenpiteen avulla. Tätä Power BI:n toimintoa, jonka käyttö ja hallinta on helppoa, kutsutaan usein **verkkoon julkaisemiseksi**.
 
 Valitse Power BI:ssä raportti, jonka haluat jakaa, jotta näet sen pohjalla. Valitse sitten valikosta **Tiedosto > Julkaise verkkoon**.

@@ -1,5 +1,5 @@
 ---
-title: Visualisointien käyttäminen kuluttajana
+title: Kuluttajana visualisointien käyttäminen
 description: Power BI:n käsitteet ja termit – visualisoinnit Mikä Power BI:n visualisointi on?
 author: mihart
 manager: kvivek
@@ -8,51 +8,52 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 01/30/2019
+ms.date: 05/12/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: b6a78c14f08bd77fb90a2e271135174bd4073293
-ms.sourcegitcommit: a054782370dec56d49bb205ee10b7e2018f22693
-ms.translationtype: HT
+ms.openlocfilehash: 55130c6694bf8a0d5ec83610d00b6173d6aabf84
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56662361"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65607772"
 ---
-# <a name="interact-with-visualizations-in-reports-dashboards-and-apps"></a>Visualisointien käyttö raporteissa, koontinäytöissä ja sovelluksissa
+# <a name="interact-with-visuals-in-reports-dashboards-and-apps"></a>Käyttää visualisointeja raporteissa, koontinäyttöjä ja sovellukset
 
-***Visualisointi*** (tai *visual*) on periaatteessa Power BI:n *suunnitteluohjelman* luoma kaaviotyyppi, jossa on hyödynnetty *raporttien* ja *tietojoukkojen* tietoja. 
+Tällä sen yleisin ***visualisoinnin*** (tai *visual*), on eräänlainen luotuja Power BI *suunnittelijat* tiedoista raportteja ja tietojoukkoja. 
 
 > [!TIP]
 > Suosittelemme lukemaan ensin [Power BI:n peruskäsitteet *kuluttajille -yleiskuvauksen*](end-user-basic-concepts.md) ennen tämän yksityiskohtaisemman sisällön lukemista.
 
-## <a name="what-can-i-do-with-visualizations"></a>Mitä visualisointien avulla voi tehdä?
+## <a name="what-can-i-do-with-visuals"></a>Mitä visualisointeja voi tehdä?
 
-Visualisoinnit luodaan raporttien ja koontinäyttöjen *suunnitteluohjelman* avulla ja jaetaan *kuluttajille*. Kuluttajilla on monia vaihtoehtoja visualisointien käsittelyyn ja merkityksellisten tietojen tunnistamiseen sekä tietopohjaisten liiketoimintapäätösten tekemiseen. Kaikki vaihtoehdot on lueteltu alla olevassa taulukossa, joka sisältää linkit yksityiskohtaisiin ohjeisiin.
+Visualisointeja luovat raportin ja koontinäytön *suunnittelijat* ja kanssa *kuluttajien*. Kuluttajana on monia vaihtoehtoja visualisointeja ja saa vieläkin tietoja tekemään tietoihin perustuvia päätöksiä käsittelyyn. Kaikki vaihtoehdot on lueteltu alla olevassa taulukossa, joka sisältää linkit yksityiskohtaisiin ohjeisiin.
 
 > [!IMPORTANT]
-> Aluksi kuitenkin hieman tietoa Q&A:sta. Q&A on Power BI:n luonnollisen kielen mukainen hakutyökalu. Voit kirjoittaa kysymyksen luonnollisella kielellä ja Q&A vastaa kysymykseen visualisoinnin muodossa. Kuluttajat voivat luoda omia visualisointejaan Q&A:n avulla. Q&A:n avulla luotuja visualisointeja ei voi kuitenkaan tallentaa. Q&A on kuitenkin hyvä vaihtoehto, jos haluat tietoja jostakin tietystä aiheesta, jota suunnitteluohjelma ei ottanut mukaan raporttiin tai koontinäyttöön. Lue lisää Q&A:sta kohdasta [Q&A kuluttajille](end-user-q-and-a.md).
+> Aluksi kuitenkin hieman tietoa Q&A:sta. Q&A on Power BI:n luonnollisen kielen mukainen hakutyökalu. Kirjoitat kysymyksen esittää kysymyksiä luonnollisella kielellä ja Q & A: n vastaukset visualisoinnin muodossa. Q & A on tapaa, jolla käyttäjät voivat luoda omia visualisointeja. Kuitenkin visualisointeja, voit luoda Q & A ei voi tallentaa. Q&A on kuitenkin hyvä vaihtoehto, jos haluat tietoja jostakin tietystä aiheesta, jota suunnitteluohjelma ei ottanut mukaan raporttiin tai koontinäyttöön. Lue lisää Q&A:sta kohdasta [Q&A kuluttajille](end-user-q-and-a.md).
 
 
 
 |Tehtävä  |Koontinäytössä  |Raportissa  | Q&A:ssa
 |---------|---------|---------|--------|
-|[Lisää kommentteja visualisointiin tai aloita keskustelu visualisoinnista työtovereiden kanssa](end-user-comment.md).     |  kyllä       |   ei      |  ei  |
-|[Avaa raportti, johon visualisointi luotiin, ja tutustu siihen](end-user-tiles.md).     |    kyllä     |   ei      |  ei |
-|[Avaa visualisointi ja tutustu siihen Q&A:ssa (jos visualisointi luotiin Q&A:n avulla)](end-user-q-and-a.md)     |   kyllä      |   ei      |  ei  |
-|[Pyydä Power BI:tä etsimään kiinnostavia faktoja tai trendejä](end-user-insights.md) visualisoinnin tiedoista.  Näitä kutsutaan *automaattisiksi merkityksellisiksi tiedoiksi*.     |    kyllä     |   kyllä      | ei   |
-|[Näytä vain yksi visualisointi kerrallaan *kohdistus*tilaa](end-user-focus.md) käyttämällä.     | kyllä        |   kyllä      | ei  |
-|Katso, milloin visualisointi on viimeksi päivitetty.     |  kyllä       |    kyllä     | ei  |
-|[Näytä vain yksi visualisointi kerrallaan ilman reunoja tai siirtymispalkkeja *koko näytön* tilaa](end-user-focus.md) käyttämällä.     |   kyllä      |  kyllä       | ei  |
+|[Lisää kommentteja itse visualisointiin tai Aloita keskustelu visualisoinnin tietoja työtovereiden kanssa](end-user-comment.md).     |  kyllä       |   kyllä      |  ei  |
+|[Avaa ja tutustu raportin, jossa visualisointi on luotu](end-user-tiles.md).     |    kyllä     |   ei      |  ei |
+|[Avaa ja tutustu visualisoinnin Q & A (Jos visualisoinnin luomiseen käytetty Q & A)](end-user-q-and-a.md)     |   kyllä      |   ei      |  ei  |
+|[Esittää Power BI voi etsiä kiinnostavaa faktat tai trendejä](end-user-insights.md) visualisoinnin tiedot puolestasi.  Näitä kutsutaan *automaattisiksi merkityksellisiksi tiedoiksi*.     |    kyllä     |   kyllä      | ei   |
+|[Näytä vain yhden visualisoinnin milloin käyttämällä *kohdistuksen* tilassa](end-user-focus.md).     | kyllä        |   kyllä      | ei  |
+|Etsi visualisoinnin päivittämisen viimeisin ajankohta.     |  kyllä       |    kyllä     | ei  |
+|[Näytä vain yhden visualisoinnin kerrallaan ilman reunoja tai siirtymispalkkeja, käyttämällä *koko näytön* tilassa](end-user-focus.md).     |   kyllä      |  kyllä       | ei  |
 |[Tulosta](end-user-print.md).     |  kyllä       |   kyllä      | ei  |
-|Pureudu syvemmälle visualisointiin lisäämällä ja muokkaamalla visualisoinnin suodattimia.     |    ei     |   kyllä      | kyllä  |
-|Näytä lisätietoja ja työkaluvihjeitä pitämällä hiiren osoitinta visualisoinnin päällä.     |    kyllä     |   kyllä      | kyllä  |
-|Ristiinsuodata ja ristiinkorosta sivun muita visualisointeja.     |   ei      |   kyllä      | ei  |
-|[Näytä visualisoinnin lähdetiedot](end-user-show-data.md).     |  ei       |   kyllä      | kyllä  |
-| [Muuta visualisoinnin lajittelutapaa](end-user-search-sort.md). | ei  | kyllä  | ei  |
-| Lisää korostus visualisointiin. | ei  | kyllä  |  ei |
-| Analysoi (visualisointityypin mukaan). | ei  | kyllä  | ei  |
+|[Syvemmälle visualisoinnin lisääminen ja muokkaamalla visuaalisia suodattimia.](end-user-report-filter.md)     |    ei     |   kyllä      | kyllä  |
+|Osoittamalla visualisointia lisätiedot ja työkaluvihje tulee näkyviin.     |    kyllä     |   kyllä      | kyllä  |
+|[Ristiinsuodattaa ja ristiinkorostaa sivun muita visualisointeja.](end-user-interactions.md)    |   ei      |   kyllä      | ei  |
+|[Näyttää visualisoinnin luomiseen käytetyt tiedot](end-user-show-data.md).     |  ei       |   kyllä      | ei  |
+| [Muuttaa tapaa, jolla visualisointi on lajiteltu](end-user-search-sort.md). | ei  | kyllä  | Voit muuttaa Lajittele rewording kysymys  |
+| Lisää spotlight visualisointiin. | ei  | kyllä  |  ei |
+| Analysoi (sen mukaan, visualisointityyppiä). | ei  | kyllä  | ei  |
+| [Vie Exceliin.](end-user-export.md) | kyllä | kyllä | ei|
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 Palaa [Peruskäsitteet kuluttajille](end-user-basic-concepts.md)   -yleiskuvaukseen  
-[Avaa raportti valitsemalla visualisointi](end-user-report-open.md)    
-[Power BI:ssa käytettävissä olevat visualisointityypit](end-user-visual-type.md)
+[Valitse visualisointi, jotta raportin avaaminen](end-user-report-open.md)    
+[Visualisointityyppejä Power BI-](end-user-visual-type.md)

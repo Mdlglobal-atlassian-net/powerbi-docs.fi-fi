@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 0e29076a33a17b6097fd3fbf1db411f97ff45818
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61271381"
+---
 Tervetuloa Power BI:n **Ohjattu oppiminen** -kurssin **Power BI ja Excel** -osioon.
 
 Olet todennäköisesti käyttänyt **Exceliä** ennenkin. Ehkä olet käyttänyt Exceliä omien raporttien luomiseen tai tarkastelemiseen tai ympyräkaavioiden tai muiden visuaalisten esitysten muodostamiseen. Tai ehkä olet käyttänyt **Power Pivotia** tai **Power Queryä** teknisempien ratkaisujen rakentamiseen. Siinä tapauksessa Power BI on mukava ratkaisu sinulle ja työkirjoillesi.

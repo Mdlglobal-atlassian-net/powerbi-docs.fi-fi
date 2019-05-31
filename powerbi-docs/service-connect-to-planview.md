@@ -11,11 +11,11 @@ ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
 ms.openlocfilehash: 6095faca7fd0d7d42fd6b3871c9e45658a32a14f
-ms.sourcegitcommit: 750f0bfab02af24c8c72e6e9bbdd876e4a7399de
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/04/2019
-ms.locfileid: "54007725"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61162826"
 ---
 # <a name="connect-to-planview-enterprise-with-power-bi"></a>Yhteyden muodostaminen Planview Enterpriseen Power BI:llä
 Planview Enterprise -sisältöpaketin avulla voit visualisoida resurssien ja työn hallinnan tietoja kokonaan uudella tavalla suoraan Power BI:ssä. Käytä Planview Enterprise-tunnistetietojasi, niin näet vuorovaikutteisesti portfolio-sijoituksesi kulutuksen sekä budjetin ylitykset ja alitukset. Näin saat tietää, kuinka hyvin projektisi kohdistuvat yrityksen strategisiin prioriteetteihin. Voit myös laajentaa valmista raporttinäkymää ja raportteja, jotta saat sinulle tärkeimmät merkitykselliset tiedot.

@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 08/06/2018
+ms.date: 05/07/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 4b45c6708f2f4c1ec0f8df2a330dcbb683210926
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.openlocfilehash: e23fd2aca90ee14c2376b0175c7c8b5132cf9a9f
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54292037"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66222271"
 ---
 # <a name="conditional-formatting-in-tables"></a>Ehdollinen muotoilu taulukoissa 
 Taulukoiden ehdollisen muotoilun avulla voit määrittää mukautettuja solujen värejä, jotka perustuvat solujen arvoihin tai muihin arvoihin tai kenttiin. Voit käyttää myös liukuvärejä. Voit myös näyttää solun arvot tietopalkeilla. 
@@ -129,6 +129,12 @@ Voit sitten saada seuraavan matriisin kaltaiset tulokset.
 ![Matriisivisualisointi KPI-arvoon perustuvan värin kanssa](media/desktop-conditional-table-formatting/conditional-table-formatting_07.png)
 
 Voit luoda monia muita variaatioita käyttämällä mielikuvitustasi ja joitakin DAX-laskutoimituksia.
+
+Voit käyttää CSS väri-spec luetellut arvot [ https://www.w3.org/TR/css-color-3/ ](https://www.w3.org/TR/css-color-3/) visualisointien väri:
+* 3, 6 tai 8 numero heksadesimaaleina koodit esimerkiksi #3E4AFF. Varmista, että voit sisällyttää koodin alussa #-merkki. ”3E4AFF” ei ole kelvollinen. 
+* RGB tai RGBA arvoista esimerkiksi RGBA (234 234 234, 0,5)
+* HSL tai HSLA arvoista esimerkiksi HSLA (123, 75 %, 75 prosenttia, 0,5)
+* Väri nimet esimerkiksi vihreä, SkyBlue, PeachPuff 
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 Katso lisätietoja seuraavasta artikkelista:  

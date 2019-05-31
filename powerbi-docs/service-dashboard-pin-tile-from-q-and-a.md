@@ -11,11 +11,11 @@ ms.date: 03/02/2018
 ms.author: maggies
 LocalizationGroup: Dashboards
 ms.openlocfilehash: 33598798104d88f3044a6689effa54e9b4256274
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54285181"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61139223"
 ---
 # <a name="pin-a-tile-to-a-dashboard-from-qa"></a>Ruudun kiinnittäminen koontinäyttöön Q&A:sta
 ## <a name="how-to-pin-a-tile-from-qa"></a>Ohjeet ruudun kiinnittämiseen Q&A:sta
@@ -62,6 +62,6 @@ Avaa seuraamista varten [Jälleenmyyntianalyysimalli](sample-retail-analysis.md)
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 [Nimeäminen uudelleen, koon muuttaminen, hyperlinkin lisääminen ja ruudun sijoittaminen uudelleen](service-dashboard-edit-tile.md)    
-[Koontinäytön ruudun näyttäminen kohdistustilassa](consumer/end-user-focus.md)     
+[Koontinäytön ruudun näyttäminen tarkastelutilassa](consumer/end-user-focus.md)     
 [Takaisin Q&A:han Power BI:ssä](consumer/end-user-q-and-a.md)  
 Onko sinulla muuta kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)

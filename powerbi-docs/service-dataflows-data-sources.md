@@ -7,23 +7,23 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/06/2018
+ms.date: 04/02/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 5bf9694c42a3a70fbc65085326a03618ae62a8f6
-ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
-ms.translationtype: HT
+ms.openlocfilehash: 81449d7a07bec3c142930573154ecd13a0ceff49
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/16/2019
-ms.locfileid: "56324917"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61141104"
 ---
-# <a name="connect-to-data-sources-for-power-bi-dataflows-preview"></a>Yhteyden muodostaminen Power BI -tietovoiden tietolähteisiin (esikatselu)
+# <a name="connect-to-data-sources-for-power-bi-dataflows"></a>Yhteyden muodostaminen tietolähteisiin Power BI dataflows varten
 
 Voit Power BI -tietovoiden avulla muodostaa yhteyden moniin eri tietolähteisiin uusien tietovoiden luomiseksi tai uusien entiteettien lisäämiseksi olemassa olevaan tietovuohon.
 
 Tässä artikkelissa on luettelo monista saatavilla olevista tietolähteistä tietovoiden luomiseksi tai lisäämiseksi. Siinä kuvataan myös sitä, miten näitä tietovoita voidaan luoda näiden tietolähteiden avulla.
 
-Artikkelissa [Tietovoiden luominen ja käyttäminen Power BI:ssä (esikatselu)](service-dataflows-create-use.md) on yleiskatsaus tietovoiden luomiseen ja käyttämiseen.
+Katso, miten voit luoda ja käyttää dataflows yhteenveto [luomisesta ja käyttämisestä dataflows Power BI](service-dataflows-create-use.md).
 
 ## <a name="create-a-dataflow-from-a-data-source"></a>Tietovuon luominen tietolähteestä
 
@@ -61,7 +61,7 @@ Tietovoiden tietolähteet on järjestetty seuraaviin luokkiin, jotka ilmestyvät
 
 **Tiedosto**-luokka sisältää seuraavat saatavilla olevat tietovoiden tietoyhteydet:
 
-* Käyttö
+* Käyttöoikeudet
 * Excel
 * JSON
 * Teksti/CSV
@@ -176,11 +176,11 @@ Tässä kaikki, joka sinun tarvitsee tietää yhteyden muodostamiseksi tietoläh
 
 Tässä artikkelissa näytettiin, mitkä tietolähteet voit yhdistää tietovoihin. Seuraavissa artikkeleissa perehdytään tarkemmin tietovoiden yleisiin käyttöskenaarioihin. 
 
-* [Omatoiminen tietojen valmisteleminen Power BI:ssä (esikatselu)](service-dataflows-overview.md)
+* [Omatoiminen tietojen valmistautuminen Power BI](service-dataflows-overview.md)
 * [Tietovoiden luominen ja käyttäminen Power BI:ssä](service-dataflows-create-use.md)
-* [Laskettujen entiteettien käyttäminen Power BI Premiumissa (esikatselu)](service-dataflows-computed-entities-premium.md)
-* [Tietovoiden käyttäminen paikallisten tietolähteiden kanssa (esikatselu)](service-dataflows-on-premises-gateways.md)
-* [Kehittäjien resurssit Power BI -tietovoille (esikatselu)](service-dataflows-developer-resources.md)
+* [Laskettuja entiteettejä käyttämällä Power BI Premium](service-dataflows-computed-entities-premium.md)
+* [Dataflows käyttö paikallisiin tietolähteisiin](service-dataflows-on-premises-gateways.md)
+* [Power BI dataflows Kehittäjien resurssit](service-dataflows-developer-resources.md)
 * [Tietovuot ja Azure Data Lake -integrointi (esikatselu)](service-dataflows-azure-data-lake-integration.md)
 
 Lisätietoja Power Querysta ja ajoitetusta päivityksestä on seuraavissa artikkeleissa:

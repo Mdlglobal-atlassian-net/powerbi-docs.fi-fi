@@ -11,10 +11,10 @@ ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Learn more
 ms.openlocfilehash: 6974e0eccd8c16bdb06a050873e40f1a5be6f75f
-ms.sourcegitcommit: 10a87c016f497dbeba32f94ed1f3688a70816fea
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/09/2019
+ms.lasthandoff: 05/29/2019
 ms.locfileid: "65514547"
 ---
 # <a name="tutorial-create-calculated-columns-in-power-bi-desktop"></a>Opetusohjelma: Laskettujen sarakkeiden luominen Power BI Desktopissa
@@ -44,7 +44,7 @@ Myyntiraportissa haluat tuoteluokat ja aliluokat näkyviin yksittäisinä arvoin
     
     ![Kaavarivi](media/desktop-tutorial-create-calculated-columns/create3.png)
     
-2.  Uuden sarakkeen nimi on oletusarvoisesti vain Sarake. Jos et nimeä sitä uudelleen, uusille sarakkeille annetaan nimeksi Sarake 2, Sarake 3 ja niin edelleen. Haluat varmasti sarakkeen olevan helpommin tunnistettava, joten koska **Sarake**-nimi on jo korostettu kaavarivillä, nimeä se uudelleen kirjoittamalla **ProductFullCategory** ja lisää sitten yhtäläisyysmerkki (**=**).
+2.  Uuden sarakkeen nimi on oletusarvoisesti vain Sarake. Jos et nimeä sitä uudelleen, uusille sarakkeille annetaan nimeksi Sarake 2, Sarake 3 ja niin edelleen. Haluat varmasti sarakkeen olevan helpommin tunnistettava, joten koska **Sarake**-nimi on jo korostettu kaavarivillä, nimeä se uudelleen kirjoittamalla **ProductFullCategory** ja lisää sitten yhtäläisyysmerkki ( **=** ).
     
 3.  Haluat uudessa sarakkeessa olevien arvojen alkavan ProductCategory-nimellä. Koska tämä sarake on erilaisessa, mutta liittyvässä taulukossa, voit käyttää apuna sen hakemisessa [RELATED](https://msdn.microsoft.com/library/ee634202.aspx) (SUHTEET) -funktiota.
     
@@ -56,19 +56,19 @@ Myyntiraportissa haluat tuoteluokat ja aliluokat näkyviin yksittäisinä arvoin
     
     ![Valitse ProductCategory](media/desktop-tutorial-create-calculated-columns/create5.png)
     
-4.  Haluat **ProductCategory**-taulukon **ProductCategory**-sarakkeen. Valitse **ProductCategory [ProductCategory]**, paina **Enter**-painiketta ja kirjoita oikea sulkumerkki.
+4.  Haluat **ProductCategory**-taulukon **ProductCategory**-sarakkeen. Valitse **ProductCategory [ProductCategory]** , paina **Enter**-painiketta ja kirjoita oikea sulkumerkki.
     
     > [!TIP]
     > Syntaksivirheitä aiheutuvat useimmin puuttuvasta tai väärään paikkaan sijoitetusta loppusulkeesta, vaikka joskus Power BI Desktop lisää sen puolestasi.
     
-4. Haluat, että yhdysmerkit ja välilyönnit erottelevat ProductCategories- ja ProductSubcategories-arvot uusissa arvoissa, joten ensimmäinen lausekkeen loppusulkeen jälkeen lisää välilyönti, et-merkki (**&**), kaksinkertainen lainausmerkki (**”**), välilyönti, ajatusviiva (**-**), toinen välilyönti, toinen kaksinkertainen lainausmerkki ja toinen et-merkki. Kaavan pitäisi nyt näyttää tältä:
+4. Haluat, että yhdysmerkit ja välilyönnit erottelevat ProductCategories- ja ProductSubcategories-arvot uusissa arvoissa, joten ensimmäinen lausekkeen loppusulkeen jälkeen lisää välilyönti, et-merkki ( **&** ), kaksinkertainen lainausmerkki ( **”** ), välilyönti, ajatusviiva ( **-** ), toinen välilyönti, toinen kaksinkertainen lainausmerkki ja toinen et-merkki. Kaavan pitäisi nyt näyttää tältä:
     
     `ProductFullCategory = RELATED(ProductCategory[ProductCategory]) & " - " &`
     
     > [!TIP]
     > Jos tarvitset lisää tilaa, laajenna kaavaeditoria valitsemalla kaavarivin oikealla puolella oleva alaspäin osoittava nuoli. Editorissa siirry seuraavalle riville painamalla **Alt- ja Enter**-näppäimiä ja siirry kohteesta toiseen käyttämällä **Tab**-näppäintä.
     
-5.  Tee kaava valmiiksi kirjoittamalla avaava hakasulje (**[**) ja valitsemalla **[ProductSubcategory]**-sarake. 
+5.  Tee kaava valmiiksi kirjoittamalla avaava hakasulje ( **[** ) ja valitsemalla **[ProductSubcategory]** -sarake. 
     
     ![Valitse ProductSubcategory](media/desktop-tutorial-create-calculated-columns/create6.png)
     
@@ -106,15 +106,15 @@ Onneksi Stores-taulukossa on sarake nimeltä **Status**, jossa on arvot ”On”
     
     ![Valitse IF](media/desktop-tutorial-create-calculated-columns/if1.png)
     
-3.  IF-funktion ensimmäinen argumentti on looginen testi siitä, onko myymälän tila ”On”. Kirjoita avaava hakasulje **[**, joka luetteloi sarakkeet Myymälät-taulukosta, ja valitse **[Status]** (tila).
+3.  IF-funktion ensimmäinen argumentti on looginen testi siitä, onko myymälän tila ”On”. Kirjoita avaava hakasulje **[** , joka luetteloi sarakkeet Myymälät-taulukosta, ja valitse **[Status]** (tila).
     
     ![Valitse [Status] (Tila)](media/desktop-tutorial-create-calculated-columns/if2.png)
     
-4.  Kirjoita heti kohdan **[Status]** jälkeen **="On"** ja lisää sitten pilkku (**,**) lopettamaan argumentti. Työkaluvihje ehdottaa, että sinun on lisättävä arvo, joka palautetaan, kun tulos on TRUE.
+4.  Kirjoita heti kohdan **[Status]** jälkeen **="On"** ja lisää sitten pilkku ( **,** ) lopettamaan argumentti. Työkaluvihje ehdottaa, että sinun on lisättävä arvo, joka palautetaan, kun tulos on TRUE.
     
     ![TRUE-arvon lisääminen](media/desktop-tutorial-create-calculated-columns/if3.png)
     
-5.  Jos myymälän tila on ”On” (Käytössä), haluat näkyviin myymälän nimen. Kirjoita avaava hakasulje (**[**) ja valitse **[StoreName]**-sarake. Lisää sen jälkeen toinen pilkku. Työkaluvihje osoittaa, että sinun on nyt lisättävä arvo, joka palautetaan, kun tulos on FALSE. 
+5.  Jos myymälän tila on ”On” (Käytössä), haluat näkyviin myymälän nimen. Kirjoita avaava hakasulje ( **[** ) ja valitse **[StoreName]** -sarake. Lisää sen jälkeen toinen pilkku. Työkaluvihje osoittaa, että sinun on nyt lisättävä arvo, joka palautetaan, kun tulos on FALSE. 
     
     ![Lisää FALSE-arvo](media/desktop-tutorial-create-calculated-columns/if4.png)
     

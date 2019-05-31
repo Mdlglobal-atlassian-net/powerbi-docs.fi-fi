@@ -1,24 +1,24 @@
 ---
 title: Sivutettujen raporttien käsittely Raportin suunnittelunäkymässä (esikatselu)
 description: Raportin muodostimessa olevassa Raportin suunnittelunäkymässä voit luoda sivutettuja raportteja julkaistavaksi Power BI -palvelussa.
-author: markingmyname
-ms.author: maghan
+author: maggiesMSFT
+ms.author: maggies
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: overview
 ms.date: 11/05/2018
-ms.openlocfilehash: 7b84b967a9e6228258027302fc2e4ad4df5b0073
-ms.sourcegitcommit: 8fda7843a9f0e8193ced4a7a0e5c2dc5386059a6
-ms.translationtype: HT
+ms.openlocfilehash: 2e9c402c09bc6f504729b8d6057ef5052f489f41
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58174771"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61423338"
 ---
 # <a name="getting-around-in-report-design-view-for-paginated-reports-preview"></a>Sivutettujen raporttien käsittely Raportin suunnittelunäkymässä (esikatselu)
 
-Raportin muodostimessa olevassa Raportin suunnittelunäkymässä voit luoda sivutettuja raportteja julkaistavaksi Power BI -palveluun. Suunnittelualue on Raportin muodostimen keskellä, ja sen ympärillä on valintanauha ja ruutuja. Voit lisätä ja järjestellä raporttikohteita suunnittelualueella. Tässä artikkelissa kerrotaan raporttiresurssien lisäämiseen, valitsemiseen ja järjestämiseen käytetyistä ruuduista ja raporttikohteiden ominaisuuksien muuttamisesta.  
+Raportin Suunnittelunäkymä Power BI-raportin muodostimessa on rakenteen tilaa, voit julkaista Power BI-palvelun Sivutettujen raporttien luomista varten. Suunnittelualue on Raportin muodostimen keskellä, ja sen ympärillä on valintanauha ja ruutuja. Voit lisätä ja järjestellä raporttikohteita suunnittelualueella. Tässä artikkelissa kerrotaan raporttiresurssien lisäämiseen, valitsemiseen ja järjestämiseen käytetyistä ruuduista ja raporttikohteiden ominaisuuksien muuttamisesta.  
 
 ![Raportin suunnittelunäkymä Raportin muodostimessa](media/paginated-reports-report-design-view/power-bi-paginated-report-design-view.png)
 

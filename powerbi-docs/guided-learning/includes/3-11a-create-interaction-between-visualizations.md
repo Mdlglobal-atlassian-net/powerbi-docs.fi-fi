@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 29a274bb847c6c0395d3cdba868024ded326290e
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61396826"
+---
 Kun samalla raporttisivulla on useita visualisointeja, tietyn segmentin valitseminen napsauttamalla sitä tai osittajan käyttäminen vaikuttaa kaikkiin sivulla oleviin visualisointeihin. Joissakin tapauksissa saatat kuitenkin haluta osittaa vain tietyt visualisoinnit. Näin on erityisesti käytettäessä pistekaavioiden kaltaisia elementtejä, joissa tietojen rajoittaminen tiettyyn segmenttiin poistaa ratkaisevan merkityksen. Onneksi Power BI Desktopissa on mahdollista hallita toimien vaikutusta visualisointeihin.
 
 Jos haluat muuttaa visualisointien välistä vuorovaikutusta, valitse **Aloitus**-valintanauhan Visualisoinnit-osasta **Muokkaa** ja ota käyttöön **Muokkaustila**.

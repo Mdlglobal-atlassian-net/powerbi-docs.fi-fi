@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 7415008e3e1faf3aa2665c643523db2e861bfe85
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61396799"
+---
 Tietoihin sidottujen visualisointien lisäksi voit lisätä staattisia elementtejä, kuten tekstiruutuja, kuvia ja muotoja, raporttiesi visuaalisen ilmeen kohentamiseksi. Jos haluat lisätä visuaalisen elementin, valitse **Aloitus**-välilehdeltä **Tekstiruutu**, **Kuva** tai **Muodot**.
 
 ![](media/3-10-create-shapes-images/3-10_1.png)

@@ -11,10 +11,10 @@ ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Model your data
 ms.openlocfilehash: 64957fa71249c551b4f69b619a12baf03fae6b06
-ms.sourcegitcommit: 10a87c016f497dbeba32f94ed1f3688a70816fea
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/09/2019
+ms.lasthandoff: 05/29/2019
 ms.locfileid: "65513703"
 ---
 # <a name="dax-basics-in-power-bi-desktop"></a>DAX-perusteet Power BI Desktopissa
@@ -47,9 +47,9 @@ Tämä kaava sisältää seuraavat syntaksielementit:
 
 **A.** Mittarin nimi **Total Sales**.
 
-**B.** Yhtäläisyysmerkkioperaattori (**=**) ilmaisee kaavan alun. Kun laskutoimitus on tehty, se palauttaa tuloksen.
+**B.** Yhtäläisyysmerkkioperaattori ( **=** ) ilmaisee kaavan alun. Kun laskutoimitus on tehty, se palauttaa tuloksen.
 
-**C.** DAX-funktio **SUM** laskee yhteen kaikki **Sales[SalesAmount]**-sarakkeen luvut. Funktioista on lisätietoja jäljempänä.
+**C.** DAX-funktio **SUM** laskee yhteen kaikki **Sales[SalesAmount]** -sarakkeen luvut. Funktioista on lisätietoja jäljempänä.
 
 **D.** Kaarisulkeet **()** ympäröivät lauseketta, joka sisältää yhden tai useampia argumentteja. Kaikki funktiot vaativat vähintään yhden argumentin. Argumentti välittää arvon funktiolle.
 
@@ -91,19 +91,19 @@ Tämän tehtävän tekemistä varten sinun on avattava Contoso Sales Sample Powe
 
    CALCULATE-funktion avulla suodatat määrät, jotka haluamme laskea yhteen argumentilla, jonka välitämme CALCULATE-funktioon. Näitä kutsutaan sisäkkäisiksi funktioiksi. CALCULATE-funktiolla on vähintään kaksi argumenttia. Ensimmäinen on laskettava lauseke, ja toinen on suodatin.
    
-4. Kirjoita **CALCULATE**-funktion alkusulkeen **(** jälkeen **SUM** ja sen toinen alkusulje **(**. Nyt välitämme argumentin SUM-funktioon.
+4. Kirjoita **CALCULATE**-funktion alkusulkeen **(** jälkeen **SUM** ja sen toinen alkusulje **(** . Nyt välitämme argumentin SUM-funktioon.
 
-5. Ala kirjoittaa **Sal**, ja valitse sitten **Sales[SalesAmount]** ja lisää sen jälkeen loppusulje **)**. Tämä on CALCULATE-funktiomme ensimmäinen lausekeargumentti.
+5. Ala kirjoittaa **Sal**, ja valitse sitten **Sales[SalesAmount]** ja lisää sen jälkeen loppusulje **)** . Tämä on CALCULATE-funktiomme ensimmäinen lausekeargumentti.
     
-6. Kirjoita pilkku (**,**) ja lisää sen perään välilyönti, mikä määrittää ensimmäisen suodattimen. Kirjoita sitten **PREVIOUSQUARTER**. Tämä on suodattimemme.
+6. Kirjoita pilkku ( **,** ) ja lisää sen perään välilyönti, mikä määrittää ensimmäisen suodattimen. Kirjoita sitten **PREVIOUSQUARTER**. Tämä on suodattimemme.
     
    Käytät PREVIOUSQUARTER-aikatietofunktiota suodattaaksesi SUM-tulokset edellisellä neljänneksellä.
     
-7. Kirjoita PREVIOUSQUARTER-funktion alkusulkeen **(** jälkeen **Calendar[DateKey]**.
+7. Kirjoita PREVIOUSQUARTER-funktion alkusulkeen **(** jälkeen **Calendar[DateKey]** .
     
    PREVIOUSQUARTER-funktiolla on yksi argumentti, peräkkäisistä päivämääristä muodostuvan alueen sisältä sarake. Tässä tapauksessa kyseessä on kalenteri-taulukon DateKey-sarake.
     
-8. Varmista, että PREVIOUSQUARTER-funktioon ja CALCULATE-funktioon välitettyjen argumenttien perässä on kaksi loppusuljetta **))**.
+8. Varmista, että PREVIOUSQUARTER-funktioon ja CALCULATE-funktioon välitettyjen argumenttien perässä on kaksi loppusuljetta **))** .
     
    Kaavan pitäisi nyt näyttää tältä:
     
@@ -176,7 +176,7 @@ Tämä kaava sisältää seuraavat syntaksielementit:
 
 **A.** Mittarin nimi **Store Sales**.
 
-**B.** Yhtäläisyysmerkkioperaattori (**=**) ilmaisee kaavan alun.
+**B.** Yhtäläisyysmerkkioperaattori ( **=** ) ilmaisee kaavan alun.
 
 **C.** **CALCULATE**-laskee argumenttina lausekkeen kontekstissa, jota on muutettu määritetyillä suodattimilla.
 
@@ -184,9 +184,9 @@ Tämä kaava sisältää seuraavat syntaksielementit:
 
 **E.** Mittari **[Total Sales]** samassa taulukossa lausekkeena. Total Sales -mittarin kaava on: =SUM(Sales[SalesAmount]).
 
-**F.** Pilkku (**,**) erottaa ensimmäisen lausekeargumentin suodatinargumentista.
+**F.** Pilkku ( **,** ) erottaa ensimmäisen lausekeargumentin suodatinargumentista.
 
-**G.** Täydellinen viitattu sarake **Channel [ChannelName]**. Tämä on rivikontekstimme. Jokainen tämän sarakkeen rivi määrittää kanavan: Store, Online, jne.
+**G.** Täydellinen viitattu sarake **Channel [ChannelName]** . Tämä on rivikontekstimme. Jokainen tämän sarakkeen rivi määrittää kanavan: Store, Online, jne.
 
 **H.** Tietty arvo, **Store**, suodattimena. Tämä on suodatinkontekstimme.
 

@@ -7,19 +7,19 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/12/2018
+ms.date: 05/09/2019
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 734af04ae515b1cae19b5afc99166619a85ab828
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.openlocfilehash: f3d67d0b57f2f04a31d99fb36476871c164aad4d
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54290453"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65533586"
 ---
 # <a name="use-composite-models-in-power-bi-desktop"></a>Yhdistelmämallien käyttäminen Power BI Desktopissa
 
-Kun aiemmin Power BI Desktopissa käytit DirectQuerya raportissa, muita tietoyhteyksiä&mdash;DirectQuery tai tuonti&mdash; ei sallittu tälle raportille. Yhdistelmämalleissa tämä rajoitus on poistettu. Raporttiin voi saumattomasti sisällyttää tietoyhteyksiä useasta DirectQuerysta tai tietojen tuontiyhteydestä valitsemanasi yhdistelmänä.
+Aiemmin Power BI Desktop-raportin, tietoyhteyksiä ei ole muita - DirectQuery käytettäessä, DirectQuery vai tuonti - on sallittu raportin. Yhdistelmämalleissa tämä rajoitus on poistettu. Raporttiin voi saumattomasti sisällyttää tietoyhteyksiä useasta DirectQuerysta tai tietojen tuontiyhteydestä valitsemanasi yhdistelmänä.
 
 ![Yhdistelmämallit Power BI Desktopissa](media/desktop-composite-models/composite-models_01.png)
 
@@ -39,7 +39,7 @@ Yhdistelmämalleilla voit muodostaa yhteyden erilaisiin tietolähteisiin, kun k�
 * Tuomalla tiedot Power BI:hin, mikä on yleisin tapa hakea tietoja.
 * Muodostamalla yhteyden suoraan tietoihin niiden alkuperäisessä lähdesäilössä käyttämällä DirectQueryä. Katso lisätietoja DirectQuerystä kohdasta [ DirectQuery Power BI:ssä](desktop-directquery-about.md).
 
-DirectQuerya käytettäessä *yhdistelmämalleilla* on mahdollista luoda Power BI -malli (kuten Power BI Desktopin yksittäinen *.pbix*-tiedosto), joka toimii jommallakummalla tai kummallakin seuraavista tavoista:
+Kun käytät Directqueryä, *yhdistelmämallit* mahdollista luoda Power BI-mallin (kuten yksittäisen *.pbix* Power BI Desktop-tiedosto), joka käyttää jompikumpi tai molemmat seuraavista:
 
 * yhdistää tietoja yhdestä tai useammasta DirectQuery-lähteestä
 * yhdistää tietoja DirectQuery-lähteistä ja tuo tietoja.
@@ -52,8 +52,6 @@ Yhdistelmämalleilla voit esimerkiksi luoda mallin, joka yhdistää seuraavat ti
 
 Sellaista mallia, johon yhdistetään useamman kuin yhden DirectQuery-lähteen tietoja ja tuotuja tietoja, kutsutaan *yhdistelmämalliksi*.
 
-> [!NOTE]
-> Power BI Desktopin lokakuun 2018 julkaisusta lähtien yhdistelmämalleja *voi* julkaista Power BI -palveluun. Ajoitetun päivityksen ja koontinäytön ruudun päivityksen osalta Power BI -palvelun yhdistelmämallit toimivat samalla tavalla kuin tuontimallit. 
 
 Voit luoda yhteyksiä taulukoiden välille niin kuin ennenkin, vaikka taulukot olisivat peräisin eri lähteistä. Tätä koskee kuitenkin rajoitus: sellaiset ristilähdeyhteyksien kardinaliteetiksi on määritettävä *monta moneen* niiden todellisesta kardinaliteetitista riippumatta. Tällaiset yhteydet toimivat samoin kuin tavalliset *monta moneen* -yhteydet, jotka on kuvattu artikkelissa [Monta moneen -yhteydet Power BI Desktopissa (esikatselu)](desktop-many-to-many-relationships.md). 
 
@@ -90,7 +88,7 @@ Power BI Desktopin **suhdenäkymässä** voimme vastaavasti nähdä lisätauluko
 
 ![Taulukoiden suhdenäkymä](media/desktop-composite-models/composite-models_08.png)
 
-Meidän on nyt liitettävä nämä taulukot mallin muihin taulukoihin. Kuten aina, luomme suhteen SQL Serverin **Polkupyörä**-taulukon ja tuodun **Tuotepäälliköt**-taulukon välille. Suhde on välillä *Polkupyörä [Tuotenimi]* ja *Tuotepäälliköt [Tuotenimi]*. Aiemmin kuvatulla tavalla kaikissa lähteiden välisissä suhteissa on oltava oletusarvona *monta moneen* -kardinaliteetti. 
+Meidän on nyt liitettävä nämä taulukot mallin muihin taulukoihin. Kuten aina, luomme suhteen SQL Serverin **Polkupyörä**-taulukon ja tuodun **Tuotepäälliköt**-taulukon välille. Suhde on välillä *Polkupyörä [Tuotenimi]* ja *Tuotepäälliköt [Tuotenimi]* . Aiemmin kuvatulla tavalla kaikissa lähteiden välisissä suhteissa on oltava oletusarvona *monta moneen* -kardinaliteetti. 
 
 ![Luo suhde -ikkuna](media/desktop-composite-models/composite-models_09.png)
 
@@ -102,7 +100,7 @@ Voimme nyt luoda visualisointeja käyttämällä **Kentät**-luettelon kenttiä.
 
 ![Kentät-ruutu](media/desktop-composite-models/composite-models_11.png)
 
-Seuraavassa esimerkissä esitetään yleinen tapaus, jossa on *dimensiotaulukko*&mdash;, kuten *Tuote* tai *Asiakas*&mdash;, joka laajennetaan joillakin muualta tuoduilla lisätiedoilla. On myös mahdollista käyttää DirectQueryä yhteyden muodostamiseksi eri lähteisiin. Oletetaan esimerkkitaulukon jatkamiseksi, että *maa*- ja *kausikohtaiset* *myyntitavoitteet* tallennetaan erilliseen osastokohtaiseen tietokantaan. Voit muodostaa yhteyden näihin tietoihin *GetDataa* käyttämällä tavalliseen tapaan seuraavassa kuvassa esitetyllä tavalla. 
+Seuraavassa esimerkissä näyttää Yleinen tapaus *dimension* taulukon – kuten *tuotteen* tai *asiakkaan* -, joka on laajennettu joitakin ylimääräiset muualta tuotujen tietojen kanssa. On myös mahdollista käyttää DirectQueryä yhteyden muodostamiseksi eri lähteisiin. Oletetaan esimerkkitaulukon jatkamiseksi, että *maa*- ja *kausikohtaiset* *myyntitavoitteet* tallennetaan erilliseen osastokohtaiseen tietokantaan. Voit muodostaa yhteyden näihin tietoihin *GetDataa* käyttämällä tavalliseen tapaan seuraavassa kuvassa esitetyllä tavalla. 
 
 ![Siirtymistoimintoikkuna](media/desktop-composite-models/composite-models_12.png)
 
@@ -124,7 +122,7 @@ Tallennustilan tilan voi nähdä myös kunkin taulukon työkaluvihjeessä.
 
 ![Työkaluvihje, joka näyttää tallennustilan tilan](media/desktop-composite-models/composite-models_16.png)
 
-Kaikille Power BI Desktop -tiedostoille (*.pbix*-tiedostoille), jotka sisältävät joitakin DirectQuery-taulukoita ja joitakin tuotuja taulukoita, tilarivin ilmaisema tallennustilan tila on **Yhdistelmä**. Voit napsauttaa kyseistä termiä tilarivillä ja vaihtaa kaikki taulukot tuontitaulukoiksi.
+Kaikille Power BI Desktop -tiedostoille ( *.pbix*-tiedostoille), jotka sisältävät joitakin DirectQuery-taulukoita ja joitakin tuotuja taulukoita, tilarivin ilmaisema tallennustilan tila on **Yhdistelmä**. Voit napsauttaa kyseistä termiä tilarivillä ja vaihtaa kaikki taulukot tuontitaulukoiksi.
 
 Lisätietoja tallennustilan tilasta löytyy artikkelista [Tallennustilan tila Power BI Desktopissa (esikatselu)](desktop-storage-mode.md).  
 
@@ -154,7 +152,7 @@ Vastaavista syistä varovaisuuteen on aihetta, kun avataan epäluotettavasta lä
 
 DirectQueryä käytettäessä suorituskyky on aina otettava huomioon ensisijassa sen varmistamiseksi, että taustalähteellä on riittävästi resursseja hyvän käyttökokemuksen tarjoamiseen. Hyvä käyttökokemus tarkoittaa, että visualisoinnit päivittyvät enintään viidessä sekunnissa. Kannattaa myös noudattaa suorituskykyä koskevia neuvoja artikkelissa [DirectQueryn käyttäminen Power BI:ssä](desktop-directquery-about.md). 
 
-Yhdistelmämallien käyttäminen tuo mukanaan myös muita suorituskykyyn liittyviä huomionarvoisia seikkoja. Yksittäinen visualisointi voi saada aikaan kyselyiden lähettämisen useisiin lähteisiin, mikä usein välittää tulokset yhdestä kyselystä toiseen lähteeseen. Tällainen tilanne voi tuottaa seuraavanlaisia suorituksia:
+Yhdistelmämallien käyttäminen tuo mukanaan myös muita suorituskykyyn liittyviä huomionarvoisia seikkoja. Yksittäisen visualisoinnin voi aiheuttaa kyselyiden lähettämistä useista lähteistä, joka välittää usein tulokset yhden kyselyn toiseen tietolähteeseen. Tällainen tilanne voi tuottaa seuraavanlaisia suorituksia:
 
 * **SQL-kysely, joka sisältää suuren määrän literaaliarvoja**: Esimerkiksi visualisoinnille, joka pyytää *kokonaissummaa* joukolle valittuja *tuotepäälliköitä*, on ensin löydettävä, mitkä *tuotteet* näille tuotepäälliköille on määritetty. Tämän on tapahduttava ennen kuin visualisointi lähettää SQL-kyselyn, joka sisältää kaikki tuotetunnukset *WHERE*-lausekkeessa.
 
@@ -162,7 +160,7 @@ Yhdistelmämallien käyttäminen tuo mukanaan myös muita suorituskykyyn liittyv
 
 * **Useita SQL-kyselyjä, yksi per ryhmä arvon mukaan**: Kun koostaminen käyttää **DistinctCount**-arvoa toisen lähteen jonkin sarakkeen ryhmittelemänä ja jos ulkoinen lähde ei tue ryhmittelyn määrittävien useiden literaaliarvojen tehokasta välittämistä, on lähetettävä yksi SQL-kysely per ryhmä arvon mukaan. 
 
-   Visualisointi voi esimerkiksi pyytää erillistä *Asiakastilinumero*-määrää (SQL Server -taulukosta) *tuotepäällikköjen* mukaan (laskentataulukosta tuotuna). Silloin visualisoinnin on välitettävä *Tuotepäälliköt*-taulukon tiedot SQL Serveriin lähetettävässä kyselyssä. Esimerkiksi Redshiftin kaltaisissa muissa lähteissä tämä ei olisi mahdollista. Sen sijaan lähetettäisiin yksi SQL-kysely per *myyntipäällikkö*&mdash; johonkin käytännölliseen rajaan asti, minkä ylittämisen jälkeen kysely epäonnistuu. 
+   Visualisointi voi esimerkiksi pyytää erillistä *Asiakastilinumero*-määrää (SQL Server -taulukosta) *tuotepäällikköjen* mukaan (laskentataulukosta tuotuna). Silloin visualisoinnin on välitettävä *Tuotepäälliköt*-taulukon tiedot SQL Serveriin lähetettävässä kyselyssä. Esimerkiksi Redshiftin kaltaisissa muissa lähteissä tämä ei olisi mahdollista. Sen sijaan on yksi SQL-kyselyn lähetetyt *myyntipäällikkö* – enintään joitakin käytännön limit, jolloin kysely epäonnistuu. 
 
 Jokaisella näistä tapauksista on suorituskykyyn omat vaikutuksensa, joiden yksityiskohdat vaihtelevat tietolähteittäin. Jos kahden lähteen yhdistämiseen käyttävien sarakkeiden kardinaliteetti säilyy alhaisena (muutamassa tuhannessa), suorituskyvyn ei pitäisi heiketä. Tämän kardinaliteetin kasvaessa sinun tulee kiinnittää enemmän huomiota suorituskykyyn. Käytä näitä ohjeita hyvänä perussääntönä. 
 
@@ -170,7 +168,9 @@ Lisäksi *monta moneen* -yhteyksien käyttäminen tarkoittaa, että jokaista sum
 
 ## <a name="limitations-and-considerations"></a>Rajoitukset ja huomioitavat asiat
 
-Yhdistelmämalleissa on muutamia rajoituksia.
+Tässä versiossa yhdistelmämallit esittää joitakin rajoituksia:
+
+Tällä hetkellä [lisäävän päivityksen](service-premium-incremental-refresh.md) tuetaan vain SQL, Oracle ja Teradata tietolähteisiin yhdistämiseen yhdistelmämallit.
 
 Seuraavia Live Connectin monidimensioisia lähteitä ei voi käyttää yhdistelmämallien kanssa:
 
@@ -187,8 +187,8 @@ DirectQueryn olemassa olevat käyttörajoitukset koskevat edelleen yhdistelmäma
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
 Seuraavissa artikkeleissa on lisätietoja yhdistelmämalleista ja DirectQuerysta:
-* [Moni-moneen-yhteydet Power BI Desktopissa (esikatselu)](desktop-many-to-many-relationships.md)
-* [Tallennustilan tila Power BI Desktopissa (esikatselu)](desktop-storage-mode.md)
+* [Moni-moneen-yhteydet Power BI Desktopissa](desktop-many-to-many-relationships.md)
+* [Power BI Desktop-tallennustila](desktop-storage-mode.md)
 * [DirectQueryn käyttö Power BI:ssä](desktop-directquery-about.md)
 * [DirectQueryn tukemat tietolähteet Power BI:ssä](desktop-directquery-data-sources.md)
 

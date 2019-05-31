@@ -8,15 +8,15 @@ featuredvideoid: zIZPA0UrJyA
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: tutorial
-ms.date: 10/25/2018
+ms.date: 05/14/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: e2c9daf54ec18b53655043cd4a472674ee5123be
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.openlocfilehash: f5eed81a5750bebb4df968a09cd1fcfd2aa069d1
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54295943"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65710812"
 ---
 # <a name="slicers-in-power-bi"></a>Osittajat Power BI:ssä
 Haluat, että raportinlukijasi voivat tarkastella yleisiä myyntitilastoja, mutta myös korostaa yksittäisten aluepäälliköiden suorituskykyä ja eri aikavälejä. Voit luoda erillisiä raportteja tai vertailukaavioita tai osittajia. Osittaja on vaihtoehtoinen suodatustapa, jolla voit rajoittaa tietojoukon osaa, joka näkyy muissa raportin visualisoinneissa. 
@@ -42,7 +42,7 @@ Power BI -osittajia koskevat seuraavat rajoitukset:
 
 ## <a name="create-slicers"></a>Osittajien luominen
 
-Jos haluat luoda uuden osittajan, voit valita osittajan kuvakkeen ja sitten suodatettavan datakentän, joiden mukaan suodatetaan (tai vetämällä se **Kentät**-ruutuun **Visualisoinnit** -ruudussa), tai voit valita tai vetää datakentän ensin visualisoinnin luomiseksi ja valita sitten osittajakuvakkeen visualisoinnin kääntämiseksi osittajaksi. Eri datatyypit luovat erilaisia osittajia eri tehosteilla ja asetuksilla. 
+Jos haluat luoda uuden osittajan, voit valita osittajan kuvakkeen ja valitse sitten suodattaa tiedot kenttä (tai vetämällä se **suodattimet** ruutuun **visualisoinnit** ruudussa), tai voit valita tai vetää datakentän ensin Luo visualisointi ja valita sitten osittajakuvakkeen visualisoinnin kääntämiseksi osittajaksi. Eri datatyypit luovat erilaisia osittajia eri tehosteilla ja asetuksilla. 
 
 Kun ensimmäisen kerran muutat raporttia, **Palauta oletus** -painike syttyy. Tämä on muistutus siitä, että olet tehnyt muutoksen alkuperäisen raportin asetuksiin. Jos siirryt pois raportista, muutokset tallennetaan (jatkuvasti). Kun palaat raporttiin, sinun ei tarvitse osittaa raporttia uudelleen.  Jos kuitenkin haluat palauttaa raportin tekijän oletusasetuksiin, valitse **Palauta oletusasetukseen** -painike ylimmästä valikkopainikkeesta.
 
@@ -51,26 +51,30 @@ Kun ensimmäisen kerran muutat raporttia, **Palauta oletus** -painike syttyy. T�
 > [!NOTE]
 > Jos **Palauta oletusasetukseen** -painike on poissa käytöstä, se joko tarkoittaa, että raportin tekijä on poistanut käytöstä raportin ominaisuuden tai raportti sisältää mukautettua visualisointia. Osoittamalla osoittimella painiketta voit lukea työkaluvihjeen. 
 
-**Luo uusi osittaja tietojen suodattamiseksi aluejohtajan mukaan**
+**Luo uusi osittaja tietojen suodattamiseksi Aluejohtajan mukaan**
 
-1. Avaa [Jälleenmyyntianalyysimalli](../sample-retail-analysis.md) Power BI Desktopissa tai Power BI -palvelussa. (Valitse Power BI -palvelussa **Muokkaa raporttia**.)
-2. **Yleiskatsaus**-sivulla, kun pohjassa ei ole mitään valittuna, valitse **Osittaja**-kuvake ![osittajakuvake](media/power-bi-visualization-slicers/slicer-icon.png) - **Visualisoinnit**-ruudusta uuden osittajan luomiseksi. 
-3. Kun uusi osittaja on valittuna, valitse **Aluejohtaja** kohdasta **Alue** **Kentät**-ruudussa osittajan lisäämiseksi. Uusi osittajan on luettelo, jossa on valintaruutu ennen nimeä. 
+1. Avaa Power BI Desktop-tai Power BI-palvelussa [Jälleenmyyntianalyysimalli](../sample-retail-analysis.md). (Valitse Power BI -palvelussa **Muokkaa raporttia**.)
+2. Yleiskatsaus-sivulla, kun mitään ei ole valittuna pohjalla, valitse **osittajan** kuvake ![osittajakuvake](media/power-bi-visualization-slicers/slicer-icon.png) - **visualisoinnit** ruudusta uuden osittajan luomiseksi. 
+3. Kun uusi osittaja on valittuna, valitse kentät-ruudussa Valitse **alueen** > **DM** osittajan lisäämiseksi. Uusi osittajan on luettelo, jossa on valintaruutu ennen nimeä. 
     
-    ![uusi osittaja](media/power-bi-visualization-slicers/2-slicer.png)
+    ![uusi osittaja](media/power-bi-visualization-slicers/power-bi-new-slicer.png)
     
 4. Muuta osittajan kokoa ja vedä se ja muut alustan elementit tehdäksesi tilaa osittajalle. Huomaa, että osittajan nimikkeet leikataan, jos pienennät osittajan liian pieneksi. 
-5. Valitse nimet osittajasta ja huomaa sivulla olevien muiden visualisointien vaikutukset. Valitse nimet uudelleen ja poista niiden valinta. Pidä **Ctrl**-näppäintä alhaalla yhden kuin useamman nimen valitsemiseksi. Kaikkien nimien valinnalla on sama vaikutus kuin jos ei valittaisi mitään. 
+5. Valitse nimet osittajasta ja huomaa sivulla olevien muiden visualisointien vaikutukset. Valitse nimet uudelleen ja poista niiden valinta. Pidä **Ctrl**-näppäintä alhaalla yhden kuin useamman nimen valitsemiseksi. Kaikkien nimien valinnalla on sama vaikutus kuin jos ei valittaisi mitään. \
 
+6. Vaihtoehtoisesti valitsemalla maalitelakuvakkeen osittajan muotoiluun. Vaihtoehtoja on yksinkertaisesti liian monta kuvataan kaikki tähän – siis kokeilla ja osittajan luominen kyseisen toimii puolestasi. Seuraavissa esimerkeissä ensimmäinen osittaja on muunnettu avattavasta tilan säästämiseksi ja mahdollisuus ”Valitse kaikki-vaihtoehto on lisätty.  Toinen osittajan on alustettu väreillä fontteja, kokoja ja sallii vain yhden valinnan.
+
+   ![uusi osittaja](media/power-bi-visualization-slicers/power-bi-filter-examples.png)
 >[!TIP]
->Osittajan luettelot on lajiteltu nousevaan järjestykseen aakkosnumeerisessa järjestyksessä oletuksena. Jos haluat palauttaa lajittelujärjestyksen laskevaksi, valitse osittajan oikeasta yläkulmasta kolmen pisteen symboli (**...**) ja valitse pudotusvalikosta **Lajittelu aluejohtajan mukaan**. 
+>Osittajan luettelot on lajiteltu nousevaan järjestykseen aakkosnumeerisessa järjestyksessä oletuksena. Jos haluat palauttaa lajittelujärjestyksen laskevaksi, valitse osittajan oikeasta yläkulmasta kolmen pisteen symboli ( **...** ) ja valitse pudotusvalikosta **Lajittelu aluejohtajan mukaan**. 
 
 **Uuden osittajan luominen tietojen suodattamiseksi päivämääräalueen mukaan**
 
-1. Kun alustalta ei ole valittu mitään, vedä alas **Aika** Kentät-ruudussa ja vedä **Kuukausi** (tai **päivämäärä** Power BI-palvelussa) **Arvot**-ruudussa uuden visualisoinnin luomiseksi Visualisoinnit-ruudussa.
+1. Mitään ei ole valittuna pohjalla, jonka avattava **päivämäärä** kentät-ruudussa ja vedä **päivämäärä** - **arvot** ruudussa uuden visualisoinnin luomiseksi visualisoinnit-ruudussa.
 2. Kun uusi visualisointi on valittuna, valitse **Osittaja**-kuvake visualisoinnin muuttamiseksi osittajaksi. Tämä osittaja on liukusäädin, johon on täytetty päivämääräalue.
     
-    ![uuden alueen osittaja](media/power-bi-visualization-slicers/2a-date-slicer.png)
+    ![uuden alueen osittaja](media/power-bi-visualization-slicers/power-bi-date-slicer.png)
+
     
 4. Muuta osittajan kokoa ja vedä se ja muut alustan elementit tehdäksesi tilaa osittajalle. Huomaa, että liukusäädin muuttaa osittajan kokoa, mutta se katoaa ja päivämäärät leikkautuvat pois, jos muutat osittajan koon liian pieneksi. 
 4. Valitse liukusäätimellä eri päivämääräalue tai valitse päivämääräkenttä kirjoittaaksesi arvon tai ota esiin kalenteri tarkemman valinnan tekemiseksi. Huomaa vaikutukset muihin sivulla oleviin visualisointeihin.
@@ -78,8 +82,11 @@ Kun ensimmäisen kerran muutat raporttia, **Palauta oletus** -painike syttyy. T�
     >[!NOTE]
     >Numeerinen ja päivämäärä/kellonaika-tietotyypit muodostavat alueen liukusäätimen osittajat oletusarvoisesti. Helmikuun 2018 Power BI -päivityksestä alkaen kokonaisluvun tietotyypin alueen liukusäätimet kohdistavat nyt kokonaislukuarvoihin desimaalien sijaan. 
 
->[!TIP]
->Vaikka **Kuukausi**-tietokenttä tuottaa **Välillä**-alueen liukusäätimen osittajan tyypin oletuksena, voit muuttaa sen muihin osittajan tyyppeihin ja valinta-asetuksiin. Voit muuttaa osittajan tyyppiä osittaja valittuna siirtämällä kohdistinta osittajan oikeaan yläkulmaan, pudottamalla esiin tulevan merkin ja valitsemalla toisen valinnoista, kuten **Luettelo** tai **Ennen**. Huomaa, miten osittajan ulkoasun ja valinnan vaihtoehdot muuttuvat. 
+
+5. Muuta nyt kenttäarvo **päivämäärä** - **MonthIndex**.  Tämä tuottaa **välillä** alueen liukusäätimen osittajan tyypin oletuksena, mutta voit muuttaa sen muihin osittajan tyyppeihin ja valinta-asetukset. Voit muuttaa osittajan tyyppiä osittaja valittuna siirtämällä kohdistinta osittajan oikeaan yläkulmaan, pudottamalla esiin tulevan merkin ja valitsemalla toisen valinnoista, kuten **Luettelo** tai **Ennen**. Huomaa, miten osittajan ulkoasun ja valinnan vaihtoehdot muuttuvat. 
+ 
+    ![uuden alueen osittaja](media/power-bi-visualization-slicers/power-bi-between-slicer.png)
+
 
 Jos haluat lisätietoja alueen päivämäärä- ja numeroalueen liukusäätimien luomisesta, katso seuraava video ja lue [Numeerisen alueen osittajan käyttö Power BI Desktopissa](../desktop-slicer-numeric-range.md).
 <iframe width="560" height="315" src="https://www.youtube.com/embed/zIZPA0UrJyA" frameborder="0" allowfullscreen></iframe> 

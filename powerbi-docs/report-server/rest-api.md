@@ -1,20 +1,20 @@
 ---
 title: Power BI -raporttipalvelimen REST-ohjelmointirajapintojen käyttö ohjelmankehityksessä
 description: REST-ohjelmointirajapinta tarjoaa ohjelmallinen pääsyn Power BI -raporttipalvelimen hakemiston objekteihin.
-author: markingmyname
-ms.author: maghan
+author: maggiesMSFT
+ms.author: maggies
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 05/25/2018
-ms.openlocfilehash: 154415f3662aebaa086d3452eb84e589333ecd28
-ms.sourcegitcommit: e9c45d6d983e8cd4cb5af938f838968db35be0ee
-ms.translationtype: HT
+ms.openlocfilehash: 8f35b7a3c19751b4537a49fa8cb30f4347f080ed
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57327845"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "64770753"
 ---
 # <a name="develop-with-the-rest-apis-for-power-bi-report-server"></a>Power BI -raporttipalvelimen REST-ohjelmointirajapintojen käyttö ohjelmankehityksessä
 
@@ -39,7 +39,7 @@ REST-ohjelmointirajapinnan pyyntö/vastaus-pari voidaan jakaa viiteen osaan:
   * Pakollinen [HTTP-menetelmä](https://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html) (tunnetaan myös nimellä toiminto tai verbitoiminto), joka kertoo palvelulle minkä tyyppinen pyytämäsi toiminnon on. Reporting Services REST-ohjelmointirajapinnat tukevat menetelmiä DELETE, GET, HEAD, PUT, POST ja PATCH.
   * Valinnaisia muita otsikkokenttiä, joita tietty URI- ja HTTP-menetelmä vaatii.
 * Valinnaiset HTTP-**pyyntöviestin tekstikentät**, jotka tukevat URI- ja HTTP-toimintoja. Esimerkiksi POST-toiminnot sisältävät MIME-koodattuja objekteja, jotka monimutkaisina parametreina ohitetaan. POST- tai PUT-toiminnoissa tulee tekstiosan MIME-koodaustyyppi määritellä myös `Content-type`pyyntöotsikossa. Jotkin palvelut edellyttävät, että käytät tiettyä MIME-tyyppiä, kuten `application/json`.
-* HTTP-**-vastausviestiotsikon** kentät:
+* HTTP- **-vastausviestiotsikon** kentät:
   
   * [HTTP-tilakoodi](http://www.w3.org/Protocols/HTTP/HTRESP.html), joka voi olla aina 2xx-onnistumiskoodeista 4xx- tai 5xx-virhekoodeihin. Vaihtoehtoisesti saatetaan palauttaa palvelun määrittämä tilakoodi, kuten esitetty rajapinnan dokumentaatiossa.
   * Valinnaisia muita otsikkokenttiä sen mukaan, mitä tarvitaan tukemaan pyynnön vastausta, kuten `Content-type`vastausotsikko.

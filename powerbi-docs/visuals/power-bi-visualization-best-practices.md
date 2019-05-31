@@ -11,11 +11,11 @@ ms.date: 06/22/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
 ms.openlocfilehash: e426d781f7a2e663687f443c423e1fc326624289
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54296719"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61146571"
 ---
 # <a name="best-design-practices-for-reports-and-visuals"></a>Raporttien ja visualisointien parhaat suunnittelukäytännöt
 <!-- Shared newnav Include -->
@@ -581,7 +581,7 @@ Jälkeen
 3. Täytetty kartta: **tietojen värejä** muutettiin, jotta ne erottuvat paremmin. Otettiin käyttöön **Eriytyvä** ja **Minimi**-asetukseksi määritettiin vaaleanpunainen ja **Maksimi**-asetukseksi punainen.
 4. Puukartta: poistettiin suodatin, joka oli määritetty vain Yhdysvalloille. **Arvopisteen otsikot** määritettiin yhteen desimaaliin. Visualisoinnissa käytettiin Luokka-kenttää, mikä ei ole kovin hyödyllistä, koska se on lähes aina 33 % (kulta/hopea/pronssi).  Valittiin erilainen kiinnostavampi kenttä, sukupuoli. Vesilajit muutettiin sinisiksi ja yleisurheilulajit harmaiksi.
 5. Yläosan palkkikaavio: otsikkoa lyhennettiin, poistettiin arvopisteen otsikot, selitteen otsikko poistettiin käytöstä. Otsikon sanajärjestystä muutettiin sopimaan alla olevaan kaavioon.
-6. Alaosan palkkikaavio: lajiteltiin nousevan vuoden mukaan vastaamaan yllä olevaa kaaviota. Muutettiin värejä vastaamaan luokkaa. Muutettiin otsikkoa. Poistettiin kuvateksti käytöstä, jotta tiedoille jää enemmän tilaa. Otettiin käyttöön tietopisteen otsikot, jotka eivät näy raportissa (koska visualisointi on liian pieni, jotta selitteitä voidaan lukea), mutta jotka tulevat näkyviin, kun visualisointi avataan tarkastelutilassa. [Lisätietoja Kohdistus-tilasta](../consumer/end-user-focus.md). **Työkaluvihjeisiin** lisättiin tapahtumien lukumäärä (erillinen), joten kun hiirtä liikutetaan pinotun pylvään yläpuolella, työkaluvihjeet kertovat nyt myös, kuinka monta kilpailua järjestettiin tänä vuonna.
+6. Alaosan palkkikaavio: lajiteltiin nousevan vuoden mukaan vastaamaan yllä olevaa kaaviota. Muutettiin värejä vastaamaan luokkaa. Muutettiin otsikkoa. Poistettiin kuvateksti käytöstä, jotta tiedoille jää enemmän tilaa. Otettiin käyttöön tietopisteen otsikot, jotka eivät näy raportissa (koska visualisointi on liian pieni, jotta selitteitä voidaan lukea), mutta jotka tulevat näkyviin, kun visualisointi avataan tarkastelutilassa. [Lisätietoja tarkastelutilasta](../consumer/end-user-focus.md). **Työkaluvihjeisiin** lisättiin tapahtumien lukumäärä (erillinen), joten kun hiirtä liikutetaan pinotun pylvään yläpuolella, työkaluvihjeet kertovat nyt myös, kuinka monta kilpailua järjestettiin tänä vuonna.
 7. Visuaaliset vuorovaikutukset: vuorovaikutukset poistettiin käytöstä kummallekin kortille, koska haluan niiden näyttävän aina pelien ja urheilulajien kokonaismäärän.
 
 ## <a name="visual-types-and-best-practices"></a>Visualisointityypit ja parhaat käytännöt

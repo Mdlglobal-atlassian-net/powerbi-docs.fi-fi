@@ -1,20 +1,20 @@
 ---
 title: Upotetun sovelluksen vianmääritys
 description: Tässä artikkelissa käsitellään joitain yleisiä ongelmia, joita saattaa ilmetä upotettaessa sisältöä Power BI:stä.
-author: markingmyname
-ms.author: maghan
+author: rkarlin
+ms.author: rkarlin
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 02/05/2019
-ms.openlocfilehash: ebe536aad292fbd780d937cd4b35812afaedbdda
-ms.sourcegitcommit: 8fda7843a9f0e8193ced4a7a0e5c2dc5386059a6
-ms.translationtype: HT
+ms.openlocfilehash: 43cb59853e884b1e3e6a49c328aa3385e88b62fc
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58174817"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "64770485"
 ---
 # <a name="troubleshoot-your-embedded-application"></a>Upotetun sovelluksen vianmääritys
 
@@ -109,7 +109,7 @@ Voit ratkaista tämän poistamalla kohdan oauth2/authorize/ valtuutuksen URL-oso
 
 ### <a name="authentication-failed-with-aadsts70002-or-aadsts50053"></a>Todentaminen epäonnistui AADSTS70002:n tai AADSTS50053:n kanssa
 
-**_(AADSTS70002: Virhe vahvistettaessa tunnistetietoja. AADSTS50053: Olet yrittänyt kirjautua sisään liian monta kertaa virheellisellä käyttäjätunnuksella tai salasanalla)_**
+** _(AADSTS70002: Virhe vahvistettaessa tunnistetietoja. AADSTS50053: Olet yrittänyt kirjautua sisään liian monta kertaa virheellisellä käyttäjätunnuksella tai salasanalla)_ **
 
 Jos käytät Power BI Embedded -palvelua ja Azure AD:n suoraa todennusta ja saat kirjautumisviestejä, kuten ***error:unauthorized_client, error_description:AADSTS70002: Virhe vahvistettaessa tunnistetietoja. AADSTS50053: Olet yrittänyt kirjautua sisään liian monta kertaa virheellisellä käyttäjätunnuksella tai salasanalla***, koska suora todennus ei ole ollut oletusarvoisesti käytössä 14.6.2018 jälkeen.
 
@@ -161,7 +161,7 @@ Yritä selvittää syy kokeilemalla seuraavaa.
 
 ### <a name="aadsts90094-the-grant-requires-admin-permission"></a>AADSTS90094: Myöntäminen edellyttää järjestelmänvalvojan käyttöoikeutta
 
-**_Oireet:_**<br>
+**_Oireet:_ **<br>
 Kun muu kuin järjestelmänvalvojana toimiva käyttäjä yrittää ensimmäistä kertaa kirjautua sisään sovellukseen luvan myöntämiseksi ja näkyviin jokin seuraavista virheistä:
 
 * ConsentTest tarvitsee organisaatiosi resurssien käyttöoikeuden, jonka vain järjestelmänvalvoja voi myöntää. Pyydä järjestelmänvalvojaa myöntämään käyttöoikeus tähän sovellukseen, jotta voit käyttää sitä.
@@ -171,10 +171,10 @@ Kun muu kuin järjestelmänvalvojana toimiva käyttäjä yrittää ensimmäistä
 
 Järjestelmänvalvojana toimiva käyttäjä voi kirjautua sisään ja myöntää luvan.
 
-**_Pääsyy:_**<br>
+**_Pääsyy:_ **<br>
 Käyttäjän lupa on poistettu käytöstä vuokraajalle.
 
-**_Ongelma voidaan korjata eri tavoin:_**
+**_Ongelma voidaan korjata eri tavoin:_ **
 
 *Ota käyttäjän lupa käyttöön koko vuokraajalle (kaikki käyttäjät, kaikki sovellukset)*
 
@@ -184,6 +184,10 @@ Käyttäjän lupa on poistettu käytöstä vuokraajalle.
     ![ConsentTest-korjaus](media/embedded-troubleshoot/consent-test-02.png)
 
 *Myönnä käyttöoikeudet* sovellukseen järjestelmänvalvojana joko koko vuokraajalle tai tietylle käyttäjälle.
+
+### <a name="cs1061-error"></a>CS1061 virhe
+
+Lataa [Microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/2.22.302111727) Jos kohtaat ”” AuthenticationContext' ei sisällä määritelmää 'AcquireToken' ja ei voi käyttää 'AcquireToken' hyväksymällä ensimmäisen argumentin tyyppi ” AuthenticationContext' löydy (Voit puuttuu using direktiivin tai kokoonpanoviittausta?) ”virhe.
 
 ## <a name="data-sources"></a>Tietolähteet
 

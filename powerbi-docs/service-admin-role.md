@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/30/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 2de78497698af3ee00ce77ef9c389169ef460546
-ms.sourcegitcommit: 20ae9e9ffab6328f575833be691073de2061a64d
-ms.translationtype: HT
+ms.openlocfilehash: aad02103903837afbb7bbce48ab9607b5dbf62c3
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58382801"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65099625"
 ---
 # <a name="understanding-the-power-bi-service-administrator-role"></a>Tietoja Power BI -palvelun järjestelmänvalvojan roolista
 
@@ -39,7 +39,7 @@ Power BI -palvelun järjestelmänvalvojarooli ei sisällä seuraavia oikeuksia:
 
 Voit määrittää käyttäjiä Power BI -järjestelmänvalvojan rooliin Microsoft 365 -hallintakeskuksessa seuraavasti.
 
-1. Valitse Microsoft 365 -hallintakeskuksessa **Käyttäjät** > **Aktiiviset käyttäjät**.
+1. - [Microsoft 365-hallintakeskukseen](https://portal.office.com/adminportal/home#/homepage), valitse **käyttäjät** > **aktiiviset käyttäjät**.
 
     ![Microsoft 365 -hallintakeskus](media/service-admin-role/powerbi-admin-users.png)
 
@@ -61,9 +61,14 @@ Kyseisen käyttäjän roolina pitäisi näkyä **Power BI -palvelun järjestelm�
 
 ## <a name="assign-users-to-the-admin-role-with-powershell"></a>Käyttäjien määrittäminen järjestelmänvalvojan rooliin PowerShellin avulla
 
-Voit määrittää käyttäjiä rooleihin myös PowerShellin avulla. Käyttäjiä hallitaan Azure Active Directoryn (Azure AD) avulla. Jos sinulla ei vielä ole Azure AD:n PowerShell-moduulia, [lataa ja asenna uusin versio](https://www.powershellgallery.com/packages/AzureAD/).
+Voit määrittää käyttäjiä rooleihin myös PowerShellin avulla. Käyttäjiä hallitaan Azure Active Directory (Azure AD). Jos sinulla ei vielä ole Azure AD:n PowerShell-moduulia, [lataa ja asenna uusin versio](https://www.powershellgallery.com/packages/AzureAD/).
 
-1. Hae ensin **ObjectId**-tunnus **Power BI -palvelun järjestelmänvalvojan** roolille. Saat **ObjectId**-tunnuksen suorittamalla komennon [Get-AzureADDirectoryRole](/powershell/module/azuread/get-azureaddirectoryrole).
+1. Yhdistä ensin Azure AD: hen:
+   ```
+   PS C:\Windows\system32> Connect-AzureAD
+   ```
+
+1. Hae toiseksi **ObjectId** varten **Power BI-palvelun järjestelmänvalvojan** roolin. Saat **ObjectId**-tunnuksen suorittamalla komennon [Get-AzureADDirectoryRole](/powershell/module/azuread/get-azureaddirectoryrole).
 
     ```
     PS C:\Windows\system32> Get-AzureADDirectoryRole
@@ -85,7 +90,7 @@ Voit määrittää käyttäjiä rooleihin myös PowerShellin avulla. Käyttäji�
 1. Hae seuraavaksi käyttäjän **ObjectId**. Saat sen selville suorittamalla komennon [Get-AzureADUser](/powershell/module/azuread/get-azureaduser).
 
     ```
-    PS C:\Windows\system32> Get-AzureADUser -SearchString 'tim@contoso.com'
+    PS C:\Windows\system32> Get-AzureADUser -ObjectId 'tim@contoso.com'
 
     ObjectId                             DisplayName UserPrincipalName      UserType
     --------                             ----------- -----------------      --------

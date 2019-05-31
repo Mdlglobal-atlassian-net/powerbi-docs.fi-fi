@@ -1,29 +1,27 @@
 ---
 title: Valvo Power BI Premium -kapasiteetteja Power BI Premium -kapasiteetin mittausarvot -sovelluksella.
 description: Power BI -hallintaportaalin ja Power BI Premium -kapasiteetin mittausarvot -sovellus
-author: minewiskan
-ms.author: owend
+author: mgblythe
+ms.author: mblythe
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 02/25/2019
+ms.date: 03/27/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: ac6559ccc9e6dbdf8c4be0550d8522765a4a8b23
-ms.sourcegitcommit: 8fda7843a9f0e8193ced4a7a0e5c2dc5386059a6
-ms.translationtype: HT
+ms.openlocfilehash: 5a8db746606e42b4e9b094dc6d17d6d2e0f08f67
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58174909"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65565306"
 ---
 # <a name="monitor-premium-capacities-with-the-app"></a>Premium-kapasiteettien valvonta sovelluksen avulla
 
 Kapasiteettien valvonta on tärkeää, jotta voit tehdä järkeviä päätöksiä Premium-kapasiteettien resurssien hyödyntämisen suhteen. Voit valvoa kapasiteetteja hallintaportaalissa tai **Power BI Premium -kapasiteetin mittausarvot** -sovelluksella. Tässä artikkelissa annetaan ohjeet Power BI Premium -kapasiteetin mittausarvot -sovelluksen käyttöön. Sovellus tarjoaa tarkimmat tiedot kapasiteettiesi toiminnasta ja suorituskyvystä. Jos haluat yleisempiä keskiarvotietoja seitsemän edellisen päivän ajalta, voit käyttää hallintaportaalia. Jos haluat lisätietoja valvonnasta portaalissa, lue ohjeartikkeli [Premium-kapasiteettien valvonta hallintaportaalissa](service-admin-premium-monitor-portal.md).
 
-Sovellusta päivitetään säännöllisesti uusin toiminnoin. Varmista, että käytät uusinta versiota.   
-**Uusin sovellusversio on 1.10.1.2 (22.2.2019)**.   
-Jos sinulla on asennettuna sovelluksen vanhempi versio, sinun kannattaa poistaa se sovelluksista. Kun olet tehnyt tämän, tee päivitys painamalla CTRL+F5. 
+Sovellusta päivitetään säännöllisesti uusin toiminnoin. Varmista, että käytössäsi on uusin versio. Jos sinulla on asennettuna sovelluksen vanhempi versio, sinun kannattaa poistaa se sovelluksista. Kun olet tehnyt tämän, tee päivitys painamalla CTRL+F5. 
 
 ## <a name="install-the-app"></a>Sovelluksen asentaminen
 
@@ -39,7 +37,6 @@ Voit siirtyä suoraan [Power BI Premium -kapasiteetin mittausarvot -sovellukseen
 
 Ole kärsivällinen. Asennus ja arvojen päivittäminen kestää muutaman minuutin. Jos sovellus näyttää tyhjiä arvoja, päivitä selainnäkymä painamalla F5-näppäintä.
 
-
 ## <a name="get-app-refresh-history"></a>Sovelluksen päivityshistorian hakeminen
 
 Jos haluat tarkistaa, koska Power BI Premium -kapasiteetin mittausarvot -sovellus on viimeksi päivitetty, valitse **Asetukset** > **Tietojoukot** > **Power BI Premium -kapasiteetin mittausarvot** > **Päivityshistoria**. 
@@ -52,7 +49,7 @@ Näet viimeisimmän päivityksen. Jos haluat nähdä ajoitetut ja manuaaliset p�
 
 ## <a name="monitor-capacities-with-the-app"></a>Kapasiteettien valvonta sovelluksen avulla
 
-Nyt kun olet asentanut sovelluksen, näet organisaatiosi kapasiteettien mittausarvot. Sovelluksessa on [koontinäyttö](#Dashboard), joka sisältää mittausten yhteenvetoja, sekä yksityiskohtaisia mittausten [raportteja](#Reports).
+Nyt kun olet asentanut sovelluksen, näet organisaatiosi kapasiteettien mittausarvot. Sovellus tarjoaa koontinäyttö, jossa mittareita yhteenvetojen ja yksityiskohtaiset luomiseen.
 
 ### <a name="dashboard"></a>Koontinäyttö
 
@@ -136,6 +133,19 @@ Koontinäyttö sisältää seuraavat mittausarvot:
 | Muisti - Sivutetut raportit keskimäärin (Gt) | Sivutettujen raporttien kuormituksen keskimääräinen muistin kulutus seitsemän viime päivän aikana. |
 |||
 
+#### <a name="ai-summary"></a>AI yhteenveto
+
+| Tieto | Kuvaus |
+| --- | --- |
+| Päivitykset yhteensä | Päivitysten kokonaismäärä seitsemän viime päivän aikana. |
+| Päivityksen luotettavuus (%) | Onnistuneiden päivitysten määrä jaettuna päivitysten kokonaismäärällä seitsemän viime päivän aikana. |
+| Suorittimen Max (%)| Suurin suorittimen-kulutus AI kuormituksen mukaan viimeisten seitsemän päivän aikana. |
+| Muistin Max (gt) | Suurin muistinkulutus AI kuormituksen mukaan viimeisten seitsemän päivän aikana.|
+| Päivittää Max odotusaika (MS) | Pisimmän ajanjakson, ennen kuin aloitat päivitys. |
+| Päivitykset keskimääräinen odotusaika (MS)| Keskimääräinen aika, joka kuluu ennen päivityksen alkamista. |
+| Päivittää enimmäiskesto (MS) | Pisimmän valmis päivittämistä. |
+| Päivitykset keskimääräinen kesto (MS)| Keskimääräinen päivityksen valmistumiseen kuluva aika. |
+| | |
 
 ### <a name="reports"></a>Raportit
 
@@ -143,10 +153,11 @@ Raporteissa on yksityiskohtaisempia mittareita. Saat näkyviin sellaisten kapasi
 
 Raporttieditorin alareunassa on viisi *välilehteä*:
 
-[**Tietojoukot**](#datasets) - Antaa yksityiskohtaisia mittausarvoja Power BI -tietojoukkojen kunnosta kapasiteeteissasi.   
-[**Sivutetut raportit**](#paginated-reports) - Antaa yksityiskohtaisia mittausarvoja sivutettujen raporttien kunnosta kapasiteeteissasi.   
-[**Tietovuot**](#dataflows) - Antaa yksityiskohtaisia tietovoiden päivitysmittausarvoja kapasiteeteissasi.   
-[**Resurssien kulutus**](#resource-consumption) - Antaa yksityiskohtaisia mittausarvoja resurssin mittausarvoista, kuten muistista ja suorittimen korkeasta käytöstä.    
+[**Tietojoukot**](#datasets) - Antaa yksityiskohtaisia mittausarvoja Power BI -tietojoukkojen kunnosta kapasiteeteissasi.
+[**Sivutetut raportit**](#paginated-reports) - Antaa yksityiskohtaisia mittausarvoja sivutettujen raporttien kunnosta kapasiteeteissasi.
+[**Tietovuot**](#dataflows) - Antaa yksityiskohtaisia tietovoiden päivitysmittausarvoja kapasiteeteissasi.
+[**AI** ](#ai) -tarjoaa yksityiskohtaisia mittareita AI-Funktiot, joita käytetään sisään-kapasiteettien kunnon.
+[**Resurssien kulutus**](#resource-consumption) - Antaa yksityiskohtaisia mittausarvoja resurssin mittausarvoista, kuten muistista ja suorittimen korkeasta käytöstä.
 [**Tunnukset ja tiedot**](#ids-and-info): nämä ovat kapasiteettien, työtilojen ja työmäärien nimet, tunnukset ja omistajat.
 
 Kukin välilehti avaa sivun, jossa voit suodattaa mittareita kapasiteetin ja päivämääräalueen mukaan. Jos suodattimia ei ole valittuna, raportti näyttää oletuksena edellisen viikon mittausarvot kaikille kapasiteeteille, jotka ovat raportointimittareita. 
@@ -159,7 +170,7 @@ Tietojoukot-sivulla on erilaisia *alueita*, joihin sisältyvät **Päivitykset**
 
 | Raporttiosa | Arvot |
 | --- | --- |
-| Päivitykset |  Kokonaismäärä: Kunkin tietojoukon päivitysten kokonaismäärä.<br>  Luotettavuus: Kullekin tietojoukolle suoritettujen päivitysten prosenttiosuus.<br>  Keskimääräinen odotusaika: Keskimääräinen viive ajoitetun ajankohdan ja tietojoukon päivityksen alkamisen välillä minuutteina.<br>  Enimmäisodotusaika: Tietojoukon enimmäisodotusaika minuutteina.<br>  Keskimääräinen kesto: Tietojoukon päivityksen keskimääräinen kesto minuutteina.<br>  Enimmäiskesto: Tietojoukon pitkäkestoisimman päivityksen kesto minuutteina. |
+| Päivitykset |  Kokonaismäärä: Kunkin tietojoukon päivitysten kokonaismäärä.<br>  Luotettavuus: Päivitykset, joiden käsittelyssä kullekin tietojoukolle prosenttiosuus.<br>  Keskimääräinen odotusaika: Keskimääräinen viive ajoitetun ajankohdan ja tietojoukon päivityksen alkamisen välillä minuutteina.<br>  Enimmäisodotusaika: Tietojoukon enimmäisodotusaika minuutteina.<br>  Keskimääräinen kesto: Tietojoukon päivityksen keskimääräinen kesto minuutteina.<br>  Enimmäiskesto: Tietojoukon pitkäkestoisimman päivityksen kesto minuutteina. |
 | 5 parasta tietojoukkoa keskimääräisen keston mukaan (minuutteina) |  Viisi tietojoukkoa, joilla on pisin päivityksen keskimääräinen kesto minuutteina. |
 | 5 parasta tietojoukkoa keskimääräisen odotusajan mukaan (minuutteina) |  Viisi tietojoukkoa, joilla on pisin päivityksen keskimääräinen odotusaika minuutteina. |
 | Päivitysmäärä tunneittain ja muistin käyttö (Gt) |  Onnistumiset, epäonnistumiset ja muistin käyttö tunnin osiin jaettuna UTC-ajassa ilmoitettuna. |
@@ -192,7 +203,7 @@ Tietojoukot-sivulla on erilaisia *alueita*, joihin sisältyvät **Päivitykset**
 | **Raporttiosa** | **Mittausarvot** |
 | --- | --- |
 | Tietojoukkojen koot  |  Enimmäiskoko: Tietojoukon enimmäiskoko megatavuina näytetyllä ajanjaksolla. |
-| Tietojoukon poistolaskuri |  Yhteensä: kapasiteetista *häädettävien* tietojoukkojen kokonaismäärä. Kun kapasiteetti kohtaa muistipainetta, solmu häätää yhden tai useamman tietojoukon muistista. Passiiviset tietojoukot (joihin ei kyseisellä hetkellä kohdistu kysely- tai uudelleenlataustoimintoja) häädetään ensin. Seuraavaksi häätöjärjestyksessä sovelletaan ”viimeiseksi käytetyt ensin” -periaatetta.|
+| Tietojoukon poistolaskuri |  Yhteensä: kapasiteetista *häädettävien* tietojoukkojen kokonaismäärä. Kun kapasiteetti kohtaa muistipainetta, solmu häätää yhden tai useamman tietojoukon muistista. Passiiviset tietojoukot (joihin ei kyseisellä hetkellä kohdistu kysely- tai uudelleenlataustoimintoja) häädetään ensin. Seuraavaksi häätöjärjestyksessä sovelletaan ”viimeiseksi käytetyt ensin” -mittaria.|
 | Tunneittain ladattujen tietojoukkojen määrä |  Muistiin ladattujen tietojoukkojen määrä vs. muistin käyttö gigatavuina tunnin osiin jaettuna UTC-ajassa ilmoitettuna. |
 | Tietojoukkojen häätö ja muistin käyttö tunneittain |  Tietojoukkojen häädöt vs. muistin käyttö gigatavuina tunnin osiin jaettuna UTC-ajassa ilmoitettuna. |
 | Kulutetun muistin prosenttiosuudet |  Tämä on muistissa olevien aktiivisten tietojoukkojen kokonaismuistista viemä prosenttiosuus. Erottelun aktiivisten ja kaikkien määritettyjen tietojoukkojen välillä voi poistaa. Tämä näytetään tunneittain seitsemältä edelliseltä päivältä. |
@@ -213,12 +224,23 @@ Tietojoukot-sivulla on erilaisia *alueita*, joihin sisältyvät **Päivitykset**
 
 | **Raporttiosa** | **Mittausarvot** |
 | --- | --- |
-| Päivitykset |  Yhteensä: Kunkin tietovuon päivitysten kokonaismäärä.<br>  Luotettavuus: Kullekin tietovuolle suoritettujen päivitysten prosenttiosuus.<br>  Keskimääräinen odotusaika: Keskimääräinen viive ajoitetun ajankohdan ja tietovuon päivityksen alkamisen välillä minuutteina.<br>  Enimmäisodotusaika: Tietovuon enimmäisodotusaika minuutteina.<br>  Keskimääräinen kesto: Tietovuon päivityksen keskimääräinen kesto minuutteina.<br>  Enimmäiskesto: Tietovuon pitkäkestoisimman päivityksen kesto minuutteina. |
+| Päivitykset |  Yhteensä: Kunkin tietovuon päivitysten kokonaismäärä.<br>  Luotettavuus: Prosenttiosuus, joka suorittaa jokaisen tietovirrassa päivitykset.<br>  Keskimääräinen odotusaika: Keskimääräinen viive ajoitetun ajankohdan ja tietovuon päivityksen alkamisen välillä minuutteina.<br>  Enimmäisodotusaika: Tietovuon enimmäisodotusaika minuutteina.<br>  Keskimääräinen kesto: Tietovuon päivityksen keskimääräinen kesto minuutteina.<br>  Enimmäiskesto: Tietovuon pitkäkestoisimman päivityksen kesto minuutteina. |
 | 5 parasta tietovuota päivityksen keskimääräisen keston mukaan |  Viisi tietovuota, joilla on pisin päivityksen keskimääräinen kesto minuutteina. |
 | 5 parasta tietovuota keskimääräisen odotusajan mukaan |  Viisi tietovuota, joilla on pisin päivityksen keskimääräinen odotusaika minuutteina. |
 | Päivityksen keskimääräinen odotusaika tunneittain |  Tämä on päivityksen keskimääräinen odotusaika tunnin osiin jaettuna UTC-ajassa ilmoitettuna. Useat korkeat päivityksen odotusaikapiikit ovat merkki kuumana käyvästä kapasiteetista. |
 | Päivitysmäärä tunneittain ja muistin käyttö |  Onnistumiset, epäonnistumiset ja muistin käyttö tunnin osiin jaettuna UTC-ajassa ilmoitettuna. |
 |  |  |
+
+### <a name="ai"></a>AI
+
+| **Raporttiosa** | **Mittausarvot** |
+| --- | --- |
+| Kokonaiskäyttö | Kokonaismäärä: Työtilan tai tietovirrassa AI-funktioiden määrä. <br> Luotettavuus: Päivitykset, joiden käsittelyssä prosenttiosuus.<br> Keskim. Odotusaika: Ajoitettu aika – päivityksen millisekunteina alku keskimääräinen viive.<br> Enimmäisodotusaika: Suurin Odota aika millisekunteina.<br> Keskim. Kesto: Päivityksen millisekunteina keskimääräinen kesto.<br> Enimmäiskesto: Pisimmän käynnissä kesto päivittää millisekunteina.<br> Keskimääräinen syöte koon: Keskiarvon syöte koko tavuina suorittaa tietovirrassa päivityksen AI-funktiolle.<br> Keskimääräinen näyttökoko: Keskimääräinen output koko tavuina suorittaa tietovirrassa päivityksen AI-funktiolle. |
+| Ylimmät 5 AI funktioiden keskimääräinen kesto | Viisi funktioita pisimmän keskiarvo päivittää millisekunteina. |
+| Ylimmät 5 AI-Funktiot keskimääräinen syötteen koon mukaan | Suurin keskimääräinen tietojen viisi funktioita syöte koko tavuina. |
+| Päivitysmäärä tunneittain ja muistin käyttö | Onnistumiset, epäonnistumiset ja muistin käyttö tunnin osiin jaettuna UTC-ajassa ilmoitettuna. |
+| Tunnittainen keskimääräinen kesto | Keskimääräinen kesto päivitys yhden tunnin säilöjen osiin ilmoitti UTC-aika. |
+| | |
 
 ### <a name="resource-consumption"></a>Resurssien kulutus
 
@@ -274,7 +296,7 @@ Voit käyttää Power BI Premium -kapasiteetin mittausarvot -sovellusta *A SKU* 
 
 1. Avaa kapasiteettisi Azure-portaalissa.
 
-1. Valitse **Käyttöoikeuksien valvonta (IAM)** ja lisää sitten **Power BI Premium** -sovellus lukijan rooliin. Jos et löydä sovellusta nimen mukaan, voit myös lisätä sen asiakastunnuksen mukaan: `cb4dc29f-0bf4-402a-8b30-7511498ed654`.
+1. Valitse **Käyttöoikeuksien valvonta (IAM)** ja lisää sitten **Power BI Premium** -sovellus lukijan rooliin. Jos et voi etsiä sovellusta nimen mukaan, voit myös lisätä sen asiakkaan tunnuksen mukaan: `cb4dc29f-0bf4-402a-8b30-7511498ed654`.
 
     ![Power BI Embeddedin käyttöoikeudet](media/service-admin-premium-monitor-capacity/embedded-permissions.png)
 
@@ -285,4 +307,4 @@ Voit käyttää Power BI Premium -kapasiteetin mittausarvot -sovellusta *A SKU* 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
 > [!div class="nextstepaction"]
-> [Power BI Premium -kapasiteetin resurssien hallinta ja optimointi](service-premium-understand-how-it-works.md)
+> [Power BI Premium-kapasiteetteja optimointi](service-premium-capacity-optimize.md)

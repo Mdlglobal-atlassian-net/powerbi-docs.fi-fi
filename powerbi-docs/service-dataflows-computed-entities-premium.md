@@ -7,17 +7,17 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/06/2018
+ms.date: 04/02/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: fc403220ae45fda879802fe480853a3c94fd53c0
-ms.sourcegitcommit: 69c31c15020e2707f961697eeb05cb550c9968f6
-ms.translationtype: HT
+ms.openlocfilehash: ccd8569650bd4f3da1a05c0999ad510029e5ab49
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "58220950"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61137906"
 ---
-# <a name="using-computed-entities-on-power-bi-premium-preview"></a>Laskettujen entiteettien käyttäminen Power BI Premiumissa (esikatselu)
+# <a name="using-computed-entities-on-power-bi-premium"></a>Laskettujen entiteettien käyttäminen Power BI Premiumissa
 
 Voit suorittaa **laskutoimituksia tallennustilassa**, kun käytät **tietovoita** Power BI Premium -tilauksessa. Näin voit suorittaa laskutoimituksia aiemmin luoduilla tietovoilla ja palauttaa tulokset, joiden avulla voit keskittyä raporttien luomiseen ja analysointiin. 
 
@@ -31,10 +31,6 @@ Voit yhdistää tietovuon tiedot Power BI:hin kahdella eri tavalla:
 * Käyttämällä ulkoista tietovuota
 
 Seuraavissa osioissa käsitellään laskettujen entiteettien luomista tietovuon tiedoista.
-
-> [!NOTE]
-> Tietovuotoiminto on esikatselutilassa, ja sitä voidaan muuttaa ja päivittää ennen kuin se on yleisesti saatavilla.
-
 
 ## <a name="how-to-create-computed-entities"></a>Laskettujen entiteettien luominen 
 
@@ -89,8 +85,8 @@ Tässä artikkelissa käsiteltiin laskettuja entiteettejä ja tietovoita, jotka 
 
 * [Omatoiminen tietojen valmistelu tietovoiden avulla](service-dataflows-overview.md)
 * [Tietovoiden luominen ja käyttäminen Power BI:ssä](service-dataflows-create-use.md)
-* [Tietovoiden käyttäminen paikallisten tietolähteiden kanssa (esikatselu)](service-dataflows-on-premises-gateways.md)
-* [Kehittäjien resurssit Power BI -tietovoille (esikatselu)](service-dataflows-developer-resources.md)
+* [Dataflows käyttö paikallisiin tietolähteisiin](service-dataflows-on-premises-gateways.md)
+* [Power BI dataflows Kehittäjien resurssit](service-dataflows-developer-resources.md)
 * [Määritä työtilan tietovuoasetukset (esikatselu)](service-dataflows-configure-workspace-storage-settings.md)
 * [Lisää CDM-kansio Power BI:hin tietovuona (esikatselu)](service-dataflows-add-cdm-folder.md)
 * [Yhdistä Azure Data Lake Storage Gen2 tietovuotallennusta varten (esikatselu)](service-dataflows-connect-azure-data-lake-storage-gen2.md)

@@ -11,11 +11,11 @@ ms.date: 11/14/2018
 ms.author: mihart
 LocalizationGroup: Reports
 ms.openlocfilehash: ce99539e1804746970eae20dc9396f0f0536afea
-ms.sourcegitcommit: 80961ace38ff9dac6699f81fcee0f7d88a51edf4
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56223693"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61184029"
 ---
 # <a name="create-dynamic-reference-lines-for-visuals-in-the-power-bi-service"></a>Dynaamisten viiteviivojen luominen visualisointeihin Power BI -palvelussa
 
@@ -48,9 +48,9 @@ Voit tarkastella tietylle visualisoinnille käytettävissä olevia dynaamisia vi
    
    ![lisää keskiarvon viiva](media/service-analytics-pane/power-bi-add.png)
 
-3. Jos haluat luoda uuden viivan, valitse **+ Lisää** ja päätä mittayksikkö, jota käytetään viivan luomisessa.  Avattava **Mittari**-luettelo täytetään automaattisesti valitun visualisoinnin käytettävissä olevilla tiedoilla. Käytetään määrettä **Avoimien myymälöiden lukumäärä**.
+3. Jos haluat luoda uuden rivin, valitse **+ Lisää** ja päätä mittari, jota käytetään rivin luomisessa.  Avattava **Mittari**-luettelo täytetään automaattisesti valitun visualisoinnin käytettävissä olevilla tiedoilla. Käytetään määrettä **Avoimien myymälöiden lukumäärä**.
 
-5. Voit valita viivalle kaikenlaisia vaihtoehtoja, kuten värin, läpinäkyvyyden, tyylin ja sijainnin (liittyen visualisoinnin tietoelementteihin). Jos haluat antaa viivalle otsikon, anna sille otsikko ja siirrä sitten **Arvopisteen otsikko** -liukusäädin asentoon **Käytössä**.  Tässä tapauksessa annamme viivalle otsikon *Avoimien myymälöiden keskim. määrä* ja muutamme muutamia muita asetuksia, kuten jäljempänä esitetään.
+5. Voit valita viivalle kaikenlaisia vaihtoehtoja, kuten värin, läpinäkyvyyden, tyylin ja sijainnin (liittyen visualisoinnin tietoelementteihin). Jos haluat antaa viivalle otsikon, anna sille otsikko ja siirrä sitten **Arvopisteen otsikko** -liukusäädin asentoon **Käytössä**.  Tässä tapauksessa annamme riville otsikon *Avoimien myymälöiden keskim. määrä* ja muutamme muutamia muita asetuksia, kuten jäljempänä esitetään.
    
    ![mukautettu keskiarvon viivan analysointi](media/service-analytics-pane/power-bi-average-line2.png)
 

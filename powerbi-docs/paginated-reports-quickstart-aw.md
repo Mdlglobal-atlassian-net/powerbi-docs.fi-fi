@@ -1,24 +1,24 @@
 ---
 title: 'Opetusohjelma: sivutetun raportin luominen ja lataaminen Power BI -palveluun (esikatselu)'
 description: Tässä opetusohjelmassa muodostat yhteyden Azure SQL -mallitietokantaan. Sen jälkeen luot sivutetun raportin Raportin muodostimen ohjatun toiminnon avulla. Sen jälkeen lataat sivutetun raportin Power BI -palvelussa olevaan Premium-kapasiteetin työtilaan.
-author: markingmyname
-ms.author: maghan
+author: maggiesMSFT
+ms.author: maggies
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: tutorial
 ms.date: 11/06/2018
-ms.openlocfilehash: 15c7d9e922ef7041c6b0f021382cae8d2aca84e9
-ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
-ms.translationtype: HT
+ms.openlocfilehash: e7baff9a6427578266e08e7bde91be664e46edb9
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/16/2019
-ms.locfileid: "56325239"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "60989656"
 ---
 # <a name="tutorial-create-a-paginated-report-and-upload-it-to-the-power-bi-service-preview"></a>Opetusohjelma: sivutetun raportin luominen ja lataaminen Power BI -palveluun (esikatselu)
 
-Tässä opetusohjelmassa muodostat yhteyden Azure SQL -mallitietokantaan. Sen jälkeen luot Raportin muodostimen ohjatun toiminnon avulla sivutetun raportin, joka sisältää useille sivuille rivitetyn taulukon. Sen jälkeen lataat sivutetun raportin Power BI -palvelussa olevaan Premium-kapasiteetin työtilaan. Power BI -palvelun sivutetut raportit ovat esikatseluvaiheessa.
+Tässä opetusohjelmassa muodostat yhteyden Azure SQL -mallitietokantaan. Sitten voit ohjatun toiminnon avulla Power BI-raportin muodostimessa Luo sivutettu raportti sisältää taulukon, jossa selitteeseen useita sivuja. Sen jälkeen lataat sivutetun raportin Power BI -palvelussa olevaan Premium-kapasiteetin työtilaan. Power BI -palvelun sivutetut raportit ovat esikatseluvaiheessa.
 
 ![Sivutettu raportti Power BI -palvelussa](media/paginated-reports-quickstart-aw/power-bi-paginated-report-service.png)
 
@@ -26,7 +26,7 @@ Suoritat tässä opetusohjelmassa seuraavat vaiheet:
 
 > [!div class="checklist"]
 > * Azure-mallitietokannan luominen
-> * matriisin luominen Raportin muodostimen ohjatun toiminnon avulla
+> * Matriisin luominen Power BI-raportin muodostimessa ohjatun toiminnon avulla.
 > * raportin muotoilu: otsikon, sivunumeron ja sarakkeiden otsikot kullakin sivulla
 > * valuutan muotoileminen
 > * raportin julkaiseminen Power BI -palveluun.
@@ -37,18 +37,18 @@ Jos sinulla ei ole Azure-tilausta, luo [ilmainen tili](https://azure.microsoft.c
 
 Edellytykset sivutetun raportin luomiseen:
 
-- [Raportin muodostimen asentaminen Microsoft Download Centeristä](http://go.microsoft.com/fwlink/?LinkID=734968). 
+- Asenna [Power BI-raportin muodostimen Microsoft Download Centeristä](https://go.microsoft.com/fwlink/?linkid=2086513). 
 
 - [Azure SQL -mallitietokannan luominen Azure-portaalissa](https://docs.microsoft.com/azure/sql-database/sql-database-get-started-portal) -pikaoppaan noudattaminen. **Palvelimen nimi** -ruudussa olevan arvon kopioiminen ja tallentaminen **Yleiskatsaus**-välilehdelle. Muista Azuressa luomasi käyttäjänimi ja salasana.
 
 Sivutetun raportin lataaminen Power BI -palveluun edellyttää seuraavia:
 
 - [Power BI Pro -lisenssi](service-admin-power-bi-pro-in-your-organization.md).
-- Sovellustyötila palvelun [Power BI Premium -kapasiteetissa](service-premium.md). Työtilan nimen vieressä on ![Premium-vinoneliökuvake](media/paginated-reports-quickstart-aw/premium-diamond.png).
+- Sovellustyötila palvelun [Power BI Premium -kapasiteetissa](service-premium-what-is.md). Työtilan nimen vieressä on ![Premium-vinoneliökuvake](media/paginated-reports-quickstart-aw/premium-diamond.png).
 
 ## <a name="create-the-matrix-with-a-wizard"></a>Matriisin luominen ohjatun toiminnon avulla
   
-1.  Käynnistä Raportin muodostin tietokoneella.  
+1.  Aloita Power BI-raportin muodostimen tietokoneesta.  
   
      **Aloitus**-valintaikkuna aukeaa.  
   
@@ -177,7 +177,7 @@ Sinun on suoritettava raportti, jotta näet todelliset arvot.
 
 1. Valitse **Suorita** **Aloitus**-työkaluriviltä.
 
-   Näet nyt arvot. Matriisissa on paljon enemmän rivejä kuin Suunnittelunäkymässä näit. Huomaa, että Raportin muodostimen mukaan kyseessä on sivu **1**/**2?**. Raportin muodostin lataa raportin mahdollisimman nopeasti, joten se hakee vain muutaman sivun tiedot kerralla. Kysymysmerkki ilmaisee, että Raportin muodostin ei ole vielä ladannut kaikkia tietoja.
+   Näet nyt arvot. Matriisissa on paljon enemmän rivejä kuin Suunnittelunäkymässä näit. Huomaa, että Raportin muodostimen mukaan kyseessä on sivu **1**/**2?** . Raportin muodostin lataa raportin mahdollisimman nopeasti, joten se hakee vain muutaman sivun tiedot kerralla. Kysymysmerkki ilmaisee, että Raportin muodostin ei ole vielä ladannut kaikkia tietoja.
 
    ![Raportin suorittaminen](media/paginated-reports-quickstart-aw/power-bi-paginated-run-report.png)
 
@@ -249,7 +249,7 @@ Saatoit huomata raporttia suorittaessasi, että dollarisummia ei ole vielä muot
 
     ![Valuutta-arvoja sisältävien solujen valitseminen](media/paginated-reports-quickstart-aw/power-bi-paginated-select-money-cells.png)
 
-2. Valitse **Aloitus**-välilehdeltä dollarimerkin näköinen (**$**) valuuttasymboli ja valitse sitten **Paikkamerkkityylit** > **Näytearvot** -kohdan vieressä oleva nuoli.
+2. Valitse **Aloitus**-välilehdeltä dollarimerkin näköinen ( **$** ) valuuttasymboli ja valitse sitten **Paikkamerkkityylit** > **Näytearvot** -kohdan vieressä oleva nuoli.
  
     ![Näytä malliarvot](media/paginated-reports-quickstart-aw/power-bi-paginated-format-currency.png)
 

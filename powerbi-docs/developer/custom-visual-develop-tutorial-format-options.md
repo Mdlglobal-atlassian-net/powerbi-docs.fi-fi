@@ -10,11 +10,11 @@ ms.subservice: powerbi-custom-visuals
 ms.topic: tutorial
 ms.date: 11/21/2018
 ms.openlocfilehash: 56134143a752a094c339248c3eeeab57116d3501
-ms.sourcegitcommit: d0abedcf07f964418c9e5ea8d8ee3338b0b97a50
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "57695146"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61379812"
 ---
 # <a name="tutorial-adding-formatting-options-to-a-power-bi-custom-visual"></a>Opetusohjelma: Muotoiluasetusten lisääminen Power BI:n mukautettuun visualisointiin
 
@@ -205,13 +205,13 @@ Anna mukautetun visualisointiprojektin ominaisuusarvot, päivitä kuvaketiedosto
 
 4. Kirjoita seuraava teksti **description**-ominaisuutta varten.
 
-    *Näyttää muotoillun mittayksikköarvon ympyrän sisällä*
+    *Näyttää muotoillun mittariarvon ympyrän sisällä*
 
 5. Voit halutessasi kirjoittaa omat tietosi **author**-objektiin.
 
 6. Tallenna **pbiviz.json**-tiedosto.
 
-7. Huomaa, että asiakirja määrittää polun kuvakkeeseen **assets**-objektissa. Kuvake on kuva, joka näkyy **_Visualisoinnit_**-ruudussa. Sen on oltava **PNG**-tiedosto, jonka koko on *20 × 20 kuvapistettä*.
+7. Huomaa, että asiakirja määrittää polun kuvakkeeseen **assets**-objektissa. Kuvake on kuva, joka näkyy **_Visualisoinnit_** -ruudussa. Sen on oltava **PNG**-tiedosto, jonka koko on *20 × 20 kuvapistettä*.
 
 8. Kopioi Windowsin Resurssienhallinnassa icon.png-tiedosto ja korvaa sillä assets-kansiossa oleva oletustiedosto.
 
@@ -239,7 +239,7 @@ Voit nyt avata Power BI Desktop -raportin ja tuoda mukautetun Circle Card -visua
 
 1. Avaa **Power BI Desktop** ja luo uusi raportti millä tahansa *mallitietojoukolla*.
 
-2. Valitse **_Visualisoinnit_**-ruudussa **pistekuvake** ja valitse sitten **Tuo tiedostosta**.
+2. Valitse **_Visualisoinnit_** -ruudussa **pistekuvake** ja valitse sitten **Tuo tiedostosta**.
 
     ![Lisää mukautettu visualisointi Desktop-raporttiin](media/custom-visual-develop-tutorial-format-options/add-custom-viz-to-desktop.png)
 
@@ -251,7 +251,7 @@ Voit nyt avata Power BI Desktop -raportin ja tuoda mukautetun Circle Card -visua
 
 6. Kun visualisointi on tuotu onnistuneesti, valitse **OK**.
 
-7. Varmista, että visualisointi on lisätty **_Visualisoinnit_**-ruutuun.
+7. Varmista, että visualisointi on lisätty **_Visualisoinnit_** -ruutuun.
 
     ![Tarkastele PBI Desktopin Visualisoinnit-ruudussa](media/custom-visual-develop-tutorial-format-options/view-in-desktop-viz-pane.png)
 

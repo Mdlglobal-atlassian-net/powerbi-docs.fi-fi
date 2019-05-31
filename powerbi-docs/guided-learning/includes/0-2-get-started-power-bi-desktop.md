@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 4c1a7bce8eb24534974fe6a06a8bada4ba9fb708
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61264687"
+---
 Tässä aiheessa tarkastellaan lähemmin sitä, miten Power BI:n kaksi ensimmäistä osaa sopivat yhteen:
 
 * raportin luominen **Power BI Desktopissa**
@@ -33,7 +41,7 @@ Aloita visualisoinnin luominen vetämällä kenttä **Kentät**-luettelosta **Ra
 
 Vaikuttavaa, eikö totta? Power BI Desktop loi automaattisesti karttapohjaisen visualisoinnin, koska se tunnisti, että State-kenttä sisälsi maantieteellistä sijaintia kuvaavia tietoja.
 
-Voimme harpata nyt prosessissa hieman eteenpäin. Olemme luoneet muutamia visualisointeja sisältävän raportin, jonka haluamme nyt julkaista Power BI -palveluun.  Valitse Power BI Desktopin **Aloitus**-valintanauhasta **Julkaise**.
+Voimme harpata nyt prosessissa hieman eteenpäin. Olemme luoneet muutamia visualisointeja sisältävän raportin, jonka haluamme nyt julkaista Power BI -palveluun. Valitse Power BI Desktopin **Aloitus**-valintanauhasta **Julkaise**.
 
 ![](media/0-2-get-started-power-bi-desktop/c0a2_6.png)
 

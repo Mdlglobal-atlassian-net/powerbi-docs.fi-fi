@@ -11,11 +11,11 @@ ms.date: 09/26/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
 ms.openlocfilehash: 164385fc232774999a21e1870b02fcb59b74ad50
-ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55430184"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61152888"
 ---
 # <a name="card-visualizations"></a>Kortin visualisoinnit
 Joskus yksittäinen luku on tärkein seikka, jota haluat seurata Power BI-raporttinäytöllä tai raportissa, kuten kokonaismyynti, markkinaosuus vuositasolla tai kokonaismahdollisuudet. Tämä visualisointi on nimeltään *Kortti*. Samoin kuin lähes kaikki alkuperäiset Power BI-visualisoinnit, kortit voidaan luoda käyttäen raporttieditoria tai Q&A:ta.

@@ -1,26 +1,26 @@
 ---
 title: Käyttäjien todentaminen ja Azure AD -käyttöoikeustietueen hankkiminen sovellukselle
 description: Lue ohjeet siihen, miten voit rekisteröidä sovelluksen Azure Active Directoryssä Power BI -sisällön upottamiseksi.
-author: markingmyname
-ms.author: maghan
+author: rkarlin
+ms.author: rkarlin
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 02/05/2019
-ms.openlocfilehash: 7b2249964f2fff26bc68fea19fd0010d8990110b
-ms.sourcegitcommit: 0abcbc7898463adfa6e50b348747256c4b94e360
-ms.translationtype: HT
+ms.openlocfilehash: a38547807fbbcf3c76366f32caa46945e57ca8bc
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "55762532"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65710311"
 ---
 # <a name="get-an-azure-ad-access-token-for-your-power-bi-application"></a>Azure AD -käyttöoikeustietueen hankkiminen Power BI -sovellukselle
 
 Lue ohjeet siihen, miten voit todentaa käyttäjiä Power BI -sovelluksessa ja noutaa käyttöoikeustietueen REST-ohjelmointirajapinnassa käytettäväksi.
 
-Ennen kuin voit kutsua Power BI REST -ohjelmointirajapintaa, sinun on saatava Azure Active Directoryn (Azure AD) **todennuksen käyttöoikeustietue** (käyttöoikeustietue). **Käyttöoikeustietueella** annetaan sovellukselle oikeus käyttää **Power BI:n** koontinäyttöjä, ruutuja ja raportteja. Katso lisätietoja Azure Active Directoryn **käyttöoikeustietuetta** koskevasta työnkulusta kohdasta [Azure AD -valtuutuskoodin myöntämistä koskeva työnkulku](https://msdn.microsoft.com/library/azure/dn645542.aspx).
+Ennen kuin voit kutsua Power BI REST -ohjelmointirajapintaa, sinun on saatava Azure Active Directoryn (Azure AD) **todennuksen käyttöoikeustietue** (käyttöoikeustietue). **Käyttöoikeustietueella** annetaan sovellukselle oikeus käyttää **Power BI:n** koontinäyttöjä, ruutuja ja raportteja. Katso lisätietoja Azure Active Directoryn **käyttöoikeustietuetta** koskevasta työnkulusta kohdasta [Azure AD -valtuutuskoodin myöntämistä koskeva työnkulku](https://docs.microsoft.com/azure/active-directory/develop/v1-protocols-oauth-code).
 
 Käyttöoikeustietueen hakemistapa riippuu siitä, miten upotat sisältöä. Tässä artikkelissa käytetään kahta eri tapaa.
 
@@ -56,7 +56,7 @@ var @params = new NameValueCollection
 
 Kun olet muodostanut kyselymerkkijonon, ohjaa uudelleen **Azure AD:hen** saadaksesi **valtuutuskoodin**.  Alla on valmis C#-menetelmä **valtuutuskoodia** koskevan kyselymerkkijonon muodostamiseen ja ohjaamiseen uudelleen **Azure AD:hen**. Kun sinulla on valtuutuskoodi, saat **käyttöoikeustietueen** käyttämällä **valtuutuskoodia**.
 
-[AuthenticationContext.AcquireTokenByAuthorizationCode](https://msdn.microsoft.com/library/azure/dn479531.aspx) tekee kutsun kohteessa redirect.aspx.cs tietueen luomiseksi.
+[AuthenticationContext.AcquireTokenByAuthorizationCode](https://docs.microsoft.com/dotnet/api/microsoft.identitymodel.clients.activedirectory.authenticationcontext.acquiretokenbyauthorizationcodeasync?view=azure-dotnet#Microsoft_IdentityModel_Clients_ActiveDirectory_AuthenticationContext_AcquireTokenByAuthorizationCodeAsync_System_String_System_Uri_Microsoft_IdentityModel_Clients_ActiveDirectory_ClientCredential_System_String_) tekee kutsun kohteessa redirect.aspx.cs tietueen luomiseksi.
 
 #### <a name="get-authorization-code"></a>Valtuutuskoodin hankkiminen
 
@@ -89,7 +89,7 @@ protected void signInButton_Click(object sender, EventArgs e)
 
     //Redirect authority
     //Authority Uri is an Azure resource that takes a client id to get an Access token
-    // AADAuthorityUri = https://login.microsoftonline.net/common/
+    // AADAuthorityUri = https://login.microsoftonline.com/common/
     string authorityUri = Properties.Settings.Default.AADAuthorityUri;
     var authUri = String.Format("{0}?{1}", authorityUri, queryString);
     Response.Redirect(authUri);
@@ -196,6 +196,10 @@ var authenticationContext = new AuthenticationContext(AuthorityUrl);
 
 m_tokenCredentials = new TokenCredentials(authenticationResult.AccessToken, "Bearer");
 ```
+
+## <a name="troubleshoot"></a>Vianmääritys
+
+* Lataa [Microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/2.22.302111727) Jos kohtaat ”” AuthenticationContext' ei sisällä määritelmää 'AcquireToken' ja ei voi käyttää 'AcquireToken' hyväksymällä ensimmäisen argumentin tyyppi ” AuthenticationContext' löydy (Voit puuttuu using direktiivin tai kokoonpanoviittausta?) ”virhe.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 

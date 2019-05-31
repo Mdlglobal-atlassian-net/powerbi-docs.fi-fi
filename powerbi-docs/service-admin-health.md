@@ -7,34 +7,42 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 11/02/2018
+ms.date: 05/14/2019
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 4ab0fe4e3398a37da34af02282a847f316f3f727
-ms.sourcegitcommit: 20ae9e9ffab6328f575833be691073de2061a64d
-ms.translationtype: HT
+ms.openlocfilehash: 37108c88b3a4f1efe2d324d2b182276252072d78
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58383149"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65710463"
 ---
 # <a name="track-power-bi-service-health-in-office-365"></a>Power BI -palvelun kunnon seuraaminen Office 365:ssä
 
-Microsoft 365 -hallintakeskus sisältää Power BI -järjestelmänvalvojille tärkeitä työkaluja, kuten tiedon palvelun kunnosta kyseisellä hetkellä ja aiemmin. Jos haluat käyttää näitä tietoja, sinulla on oltava jokin seuraavista rooleista: Power BI -palvelun järjestelmänvalvoja tai Office 365:n yleinen järjestelmänvalvoja. Saat lisätietoja rooleista [Power BI:hin liittyvät järjestelmänvalvojaroolit](service-admin-administering-power-bi-in-your-organization.md#administrator-roles-related-to-power-bi) -ohjeartikkelista.
+Microsoft 365-hallintakeskus sisältää Power BI-järjestelmänvalvojille tärkeitä työkaluja. Työkalut sisältävät tiedon palvelun kunnosta kyseisellä hetkellä ja aiemmin. Käyttää palvelun kunnon tietoja, sinun on oltava jossakin seuraavista rooleista:
+
+* Power BI -palvelun järjestelmänvalvoja
+
+* Office 365:n yleinen järjestelmänvalvoja
+
+Katso lisätietoja roolit [Power BI liittyvät järjestelmänvalvojaroolit](service-admin-administering-power-bi-in-your-organization.md#administrator-roles-related-to-power-bi).
 
 1. Kirjaudu [Microsoft 365 -hallintakeskukseen](https://portal.office.com/adminportal).
 
-1. Valitse **Palvelun kunto** -ruutu.
+1. Valitse vasemmassa siirtymispalkissa **Näytä kaikki** > **kunnon** > **palvelun kunto**. Palvelun kunto-sivulla näkyy:
 
-    ![Palvelun kunto -ruutu](media/service-admin-health/service-health-tile.png)
+    ![Näyttökuva niin, että kuntoa ja palvelun kunnon asetukset kutsutaan Microsoft 365-hallintakeskuksessa.](media/service-admin-health/service-health-tile.png)
 
-1. Valitse ajankohtaisten tietojen luettelosta **N neuvoa** tai **N tapausta** ja tarkista tulokset. Alla olevasta kuvasta näet yhden kolmesta aktiivisesta neuvosta.
+1. Valitse **kaikki palvelut** luettelosta **neuvot** tai **tapaukset** ja Tarkista tulokset. Seuraavassa näyttökuvassa näet yhden kolmesta aktiivisesta neuvosta.
 
-    ![Aktiiviset neuvot](media/service-admin-health/active-advisories.png)
+    ![Näyttökuva kanssa Power BI-ja Näytä tiedot valinta kolme neuvot palvelun kunto-sivulla.](media/service-admin-health/active-advisories.png)
 
-1. Saat lisätietoja valitsemalla **Näytä tiedot** kohteen kohdalta. Alla olevasta kuvasta näet lisätietoja, kuten viimeaikaiset tilapäivitykset.
+1. Saat lisätietoja valitsemalla **Näytä tiedot** kohteen kohdalta. Seuraavassa näyttökuvassa näet lisätietoja, kuten viimeaikaiset tilapäivitykset.
 
-    ![Neuvon tiedot](media/service-admin-health/advisory-details.png)
+    ![Näyttökuva neuvon tiedot.](media/service-admin-health/advisory-details.png)
 
     Vieritä alas nähdäksesi lisätietoja ja sulje ruutu, kun olet valmis.
 
-1. Saat kaikkien palveluiden historiatiedot valitsemalla pääluettelon oikeasta yläkulmasta **Näytä historia**. Valitse **Viimeiset 7 päivää** tai **Viimeiset 30 päivää**. Voit palata palvelun senhetkisen kunnon näkymään valitsemalla **Näytä nykyinen tila**.
+1. Näet historiatiedot kaikkien palveluiden oikeassa yläkulmassa **palvelun kunto** sivulla **Näytä historia**. Valitse **Viimeiset 7 päivää** tai **Viimeiset 30 päivää**. 
+
+1. Voit palata palvelun senhetkisen kunnon näkymään valitsemalla **Näytä nykyinen tila**.

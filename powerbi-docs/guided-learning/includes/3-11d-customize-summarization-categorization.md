@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 1db5f34ce7a08b32b665409322836eba483be927
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61396846"
+---
 Power BI:ssä on ominaisuuksia, joita voit määrittää mallissasi oleville kentille ja joiden avulla voit visualisoida ja esittää tietoja selkeämmin. Saatat esimerkiksi joskus haluta esittää lukuluettelon keskiarvon, mutta Power BI laskee automaattisesti luettelon summan. Power BI:ssä voit määrittää, millainen yhteenveto kyseisistä lukuluetteloista luodaan.
 
 ## <a name="numeric-control-over-summarization"></a>Yhteenvedon numeerinen hallinta

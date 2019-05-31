@@ -1,5 +1,5 @@
 ---
-title: Power BI -palvelun Q&A-toiminnon yleiskatsaus
+title: Q & A Power BI-käyttäjille
 description: Yleiskatsaus aiheeseen Power BI:n Q&A-kyselyt luonnollisella kielellä.
 author: mihart
 manager: kvivek
@@ -8,19 +8,20 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 12/06/2018
+ms.date: 05/01/2019
 ms.author: mihart
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: e6f95eedbd84ad5f512bbc1a1255cee7130a60d7
-ms.sourcegitcommit: a054782370dec56d49bb205ee10b7e2018f22693
-ms.translationtype: HT
+ms.openlocfilehash: 35ff71d5956c1c48c304324c121f79addf04cb56
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56661970"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65625123"
 ---
 # <a name="qa-for-power-bi-consumers"></a>Q&A Power BI -**kuluttajille**
 ## <a name="what-is-qa"></a>Mikä on Q&A?
-Joskus nopein tapa saada vastauksia tiedoista on kysyä kysymyksiä luonnollisella kielellä. Esimerkiksi ”mikä oli viime vuoden kokonaismyynti”.  
+Joskus nopein tapa saada vastauksia tiedoista on kysyä kysymyksiä luonnollisella kielellä. Esimerkiksi ”mikä oli viime vuoden kokonaismyynti”.
+
 Q&A-toiminnolla voit tutkia tietojasi intuitiivisesti luonnollisella kielellä sekä saada vastauksia eri kaavioiden muodossa. Q&A eroaa hakukoneesta – Q&A antaa vain tuloksia Power BI:n tiedoista.
 
 **Power BI:n Q&A** tukee vastaamista vain englanniksi kysyttyihin, luonnollisella kielellä esitettyihin kyselyihin. Espanjan kielelle löytyy esikatseluversio, jonka Power BI -järjestelmänvalvojasi voi ottaa käyttöön.
@@ -35,7 +36,7 @@ Kysymyksen esittäminen on vasta alkua.  Toivottavasti tämä artikkeli auttaa s
 Kokemus on todella interaktiivinen … ja nopea! Muistissa oleva tallennustila tarjoaa vastauksen lähes välittömästi.
 
 ## <a name="where-can-i-use-qa"></a>Missä voin käyttää Q&A:ta?
-Q&A löytyy Power BI -palvelun koontinäytöistä, Power BI -mobiilisovelluksen koontinäytön alareunasta ja Power BI Embeddedin visualisointien yläpuolelta. Jos suunnittelija ei ole antanut sinulle muokkausoikeuksia, pystyt ainoastaan tutkimaan tietoja Q&A-toiminnon avulla, mutta et voi tallentaa sen avulla luotuja visualisointeja.
+Löydät Q & A-koontinäyttöjä ja raportteja Power BI-palvelussa ja Power BI-raporttinäkymän alareunassa mobiilisovelluksen. Jos suunnittelija ei ole antanut sinulle muokkausoikeuksia, pystyt ainoastaan tutkimaan tietoja Q&A-toiminnon avulla, mutta et voi tallentaa sen avulla luotuja visualisointeja.
 
 ![kysymysruutu](media/end-user-q-and-a/powerbi-qna.png)
 
@@ -68,7 +69,7 @@ Voit myös kertoa Q&A:lle mistä visualisoinnista haluat hakea lisäämällä se
 **Vastaus 1**: Jos kysymysruutua ei näy, tarkista ensin asetuksesi. Valitse hammasrataskuvake Power BI -työkalurivin oikeasta yläkulmasta.   
 ![hammasrataskuvake](media/end-user-q-and-a/power-bi-settings.png)
 
-Valitse sitten **Asetukset** > **Koontinäytöt**. Varmista, että **Näytä Q&A-hakuruutu tässä koontinäytössä** -vaihtoehdon vieressä on valintamerkki.
+Valitse sitten **Asetukset** > **Koontinäytöt**. Varmista, että **Näytä Q&A-hakuruutu tässä koontinäytössä** -vaihtoehdon vieressä on valintamerkki.    
 ![Q&A:n koontinäyttöasetukset](media/end-user-q-and-a/power-bi-turn-on.png)  
 
 

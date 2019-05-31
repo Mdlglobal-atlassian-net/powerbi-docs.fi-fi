@@ -11,11 +11,11 @@ ms.date: 02/22/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
 ms.openlocfilehash: b28c4ea9b4cacc77a7f98af5bfc006670f40af94
-ms.sourcegitcommit: 76772a361e6cd4dd88824b2e4b32af30656e69db
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56892271"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61314960"
 ---
 # <a name="connect-to-an-oracle-database"></a>Oracle-tietokantaan yhdistäminen
 Yhteyden muodostaminen Oracle-tietokantaan **Power BI Desktopilla** edellyttää, että tietokoneessa on asennettuna Power BI Desktop ja oikea Oracle-asiakasohjelmisto. Oracle-asiakasohjelmiston versio (**32-bittinen** vai **64-bittinen**) määräytyy tietokoneeseen asennetun Power BI Desktop -version mukaan.
@@ -23,7 +23,7 @@ Yhteyden muodostaminen Oracle-tietokantaan **Power BI Desktopilla** edellyttää
 **Tuetut versiot**: Oracle 9 ja sitä uudemmat versiot sekä Oracle-asiakasohjelmisto 8.1.7 ja sitä uudemmat versiot.
 
 ## <a name="determining-which-version-of-power-bi-desktop-is-installed"></a>Asennettuna olevan Power BI Desktop -version selvittäminen
-Voit selvittää asennettuna olevan Power BI Desktop -version valitsemalla **Tiedosto > Ohje > Tietoja** ja tarkistamalla sitten **Versio:**-rivin tiedot. Seuraavassa kuvassa asennettuna on Power BI Desktopin 64-bittinen versio:
+Voit selvittää asennettuna olevan Power BI Desktop -version valitsemalla **Tiedosto > Ohje > Tietoja** ja tarkistamalla sitten **Versio:** -rivin tiedot. Seuraavassa kuvassa asennettuna on Power BI Desktopin 64-bittinen versio:
 
 ![](media/desktop-connect-oracle-database/connect-oracle-database_1.png)
 

@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: d6755233733c4500865615c28850793aae7972d9
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61263400"
+---
 Olemme jo nähneet, miten Power BI auttaa löytämään tietoja, keräämään ne tietomalliksi ja rakentamaan tiedoista raportteja ja visualisointeja. Olemme myös nähneet, miten näitä raportteja voi julkaista Power BI -palveluun ja miten voidaan luoda koontinäyttöjä, jotka auttavat valvomaan tietoja ajan kuluessa. Kaikki nämä ominaisuudet ovat vielä tehokkaampia, kun jaat merkitykselliset tiedot toisten kanssa organisaatiossasi. Onneksi koontinäyttöjen jakaminen on helppoa.
 
 Voit jakaa koontinäytön avaamalla sen Power BI -palvelussa ja valitsemalla **Jaa**-linkki oikeasta yläkulmasta.

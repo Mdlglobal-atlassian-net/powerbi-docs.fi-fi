@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 4a9d873632853a69c835d7326653102107dd239f
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61263390"
+---
 Power BI:n avulla voit lisätä itse ehdottamiasi kysymyksiä toisille käyttäjille, jotka käyttävät luonnollisella kielellä käytettävää koontinäyttöjen kysymysruutua, eli tuttavallisemmin **Q&A**-ruutua. Käyttäjät näkevät näitä ehdotettuja kysymyksiä napsauttaessaan koontinäytön yläreunassa olevaa syöttöruutua.
 
 ![](media/4-3a-suggested-questions/4-3a_1.png)

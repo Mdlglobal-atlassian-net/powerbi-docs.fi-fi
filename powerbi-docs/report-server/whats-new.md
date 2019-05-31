@@ -1,32 +1,102 @@
 ---
 title: Power BI -raporttipalvelinten uudet ominaisuudet
 description: Lue Power BI -raporttipalvelimen uusista ominaisuuksista. Tämä koskee tärkeimpiä ominaisuuksia, ja tietoja päivitetään uusien julkaisujen myötä.
-author: markingmyname
-ms.author: maghan
+author: maggiesMSFT
+ms.author: maggies
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 01/22/2019
-ms.openlocfilehash: e645cd84b646e180114027464ea4781277d5245f
-ms.sourcegitcommit: a054782370dec56d49bb205ee10b7e2018f22693
-ms.translationtype: HT
+ms.date: 05/22/2019
+ms.openlocfilehash: 364795a25aaffb92afc4a7148c9bf6b3f88d2ac8
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56662453"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66187310"
 ---
 # <a name="whats-new-in-power-bi-report-server"></a>Power BI -raporttipalvelinten uudet ominaisuudet
 
-Lue Power BI -raporttipalvelimen uusista ominaisuuksista. Tämä artikkeli käsittelee tärkeimpiä ominaisuuksia, ja sitä päivitetään uusien julkaisujen myötä.
-
-Lataa Power BI -raporttipalvelimen ja Power BI -raporttipalvelimelle optimoidun Power BI Desktopin uusimmat versiot tutustumalla ohjeaiheeseen [Paikallinen raportointi Power BI -raporttipalvelimella](https://powerbi.microsoft.com/report-server/).
+Lue lisätietoja uusista Power BI-raporttipalvelimen ja Power BI-Raporttipalvelimelle optimoitu Power BI Desktop. Tämä artikkeli käsittelee tärkeimpiä ominaisuuksia, ja sitä päivitetään uusien julkaisujen myötä.
 
 Lisätietoja Power BI:hin liittyvistä uusista ominaisuuksista:
 
 * [Power BI -palvelun uudet ominaisuudet](../service-whats-new.md)
 * [Power BI Desktopin uudet ominaisuudet](../desktop-latest-update.md)
 * [Power BI -mobiilisovellusten uudet ominaisuudet](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)
+
+## <a name="may-2019-power-bi-desktop-for-power-bi-report-server"></a>Toukokuuta 2019: Power BI Desktop Power BI-raporttipalvelimeen
+
+Katso [Power BI-raporttipalvelimen toukokuun 2019](https://powerbi.microsoft.com/blog/power-bi-report-server-update-may-2019/) blogikirjoitus, johon Lisätietoja uusista ominaisuuksista.
+
+Seuraavassa on joitakin julkaisemisen kohokohdat:
+
+### <a name="performance-analyzer"></a>Suorituskyvyn analysointi 
+
+Jos raportti suoritetaan odotettua hitaammin, kokeile Power BI Desktop suorituskyvyn-analysoiminen. Kun se käynnistetään, se luo lokitiedoston tietoja kestää raportin jokainen toiminto. Lue lisää [suorituskyvyn analysoiminen](../desktop-performance-analyzer.md).
+
+### <a name="new-modeling-view"></a>Mallinnus uusi näkymä
+
+Uusi Power BI Desktop-mallinnus-näkymä voit tarkastella ja käsitellä monimuotoisiin tietojoukkoihin, jotka sisältävät useita taulukoita. Kohokohdat sisältävät useita kaavion asetteluja ja joukkomäärittää sarakkeet, mittayksiköt ja taulukoiden muokkaamista. Lue lisää [mallinnus näkymän](../desktop-modeling-view.md).
+
+### <a name="accessible-visual-interaction"></a>Käytettävissä visuaalinen vuorovaikutus
+
+Voit nyt käyttää arvopisteitä monia valmiita visualisointeja näppäimistöllä. Lue lisää [Power BI-raporttien helppokäyttöisyys](../desktop-accessibility.md).
+
+### <a name="conditional-formatting-titles-and-web-url-actions"></a>Ehdollinen muotoilu otsikot ja web URL-osoite toiminnot
+
+Power BI-raportit ovat vuorovaikutteisia. Järkevää, että otsikot raportissa on dynaaminen vastaamaan raportin nykyisen tilan. Saman lausekkeen sidotut muotoilun avulla voit tehdä painikkeita, muotojen ja kuvien URL-osoitteet dynaamisen. Lue lisää [lausekepohjaisia otsikot](../desktop-conditional-format-visual-titles.md).
+
+### <a name="cross-highlight-by-axis-labels"></a>Ristiinkorostaa akselinimet mukaan
+
+Valitse luokka akselinimet haluaa ristiinkorostaa sivun muita elementtejä visualisoinnin vain valitaan arvopisteet visualisointiin. Lue lisää [ristiinkorostus](../power-bi-reports-filters-and-highlighting.md#ad-hoc-highlighting).
+
+### <a name="all-the-new-features"></a>Kaikki uudet ominaisuudet
+
+Tässä on luettelo uusia ominaisuuksia:
+
+### <a name="reporting"></a>Raportointi
+
+- Ristiinkorostaa yksittäisen kohtaa viiva 
+- Automaattinen rivitys otsikot 
+- Päivitä suodattavat ¬ oletusarvon visuaalinen vuorovaikutus
+- Visuaalisten reunusten pyöristettyjä 
+- Valitse yksittäinen osittaja  
+- Bing maps lämmön kartta-tuki  
+- Ristiinkorostaa akselinimet mukaan  
+- Työkaluvihje oletusmuotoilu  
+- Staattisen web URL-osoite, joka on tuki painikkeita, muotoja ja kuvia  
+- Sivun tasausasetukset   
+- Valinta-ruudun parannuksia  
+- Käytettävissä visuaalinen vuorovaikutus  
+- Ehdollinen muotoilu visualisoinnin otsikot  
+- Ehdollinen muotoilu web URL-osoite toimintoja painikkeiden, muotoja ja kuvia
+- Suorituskyvyn analyzer ruutu
+- Taulukkojen ja matriisien näppäimistöllä
+- Rivin tietojen selitteen sijainti hallinta
+- Suorituskykyilmaisimen visuaaliset ilmaisimen tekstiohjausobjekti
+
+### <a name="analytics"></a>Analytiikka
+
+- Näytä päivämäärät hierarkiana nyt yleisesti saatavilla  
+
+### <a name="modeling"></a>Mallintaminen
+
+- Mallinnus uusi näkymä on nyt yleisesti saatavilla
+- Uusia DAX-funktioita
+- Päivitä ALLSELECTED DAX-funktio
+- Poista automaattinen-päivämäärätaulukot uusien raporttien käytöstä
+
+## <a name="may-2019-power-bi-report-server"></a>Toukokuuta 2019: Power BI -raporttipalvelin
+
+### <a name="support-for-trusted-visuals"></a>Luotettu visualisointien tuki
+
+Olemme lisänneet tuen luotettu visualisointien Power BI-raporttipalvelimeen. Tällä hetkellä tuemme Mapbox ja PowerOn. ESRI Visio ja Powerappsin ei tueta tässä versiossa.)
+
+### <a name="improved-security-features"></a>Parannettu suojauksen ominaisuudet
+
+**RestrictedResourceMimeTypeForUpload**, mitkä järjestelmänvalvojat voivat käyttää määrittämään kielletyn mime-tyypit, kuten teksti ja html pilkuin eroteltu luettelo.
 
 ## <a name="january-2019"></a>Tammikuu 2019
 
@@ -126,7 +196,7 @@ Suoran SAP HANA SSO -kyselyn Kerberos-tuki on nyt käytettävissä Power BI -rap
 - [Suuren kontrastin tuki raporteille](https://powerbi.microsoft.com/blog/power-bi-report-server-update-august-2018/#highContrast)
 - [Renkaan säde -ohjausobjekti](https://powerbi.microsoft.com/blog/power-bi-report-server-update-august-2018/#donutRadius)
 - [Ympyrä- ja rengaskaavion tieto-otsikoiden sijainnin ohjausobjekti](https://powerbi.microsoft.com/blog/power-bi-report-server-update-august-2018/#detailLabels)
-- [Arvopisteiden otsikoiden muotoilu erikseen kullekin yhdistelmäkaavion mittayksikölle](https://powerbi.microsoft.com/blog/power-bi-report-server-update-august-2018/#comboLabels)
+- [Arvopisteiden otsikoiden muotoilu erikseen kullekin yhdistelmäkaavion mittarille](https://powerbi.microsoft.com/blog/power-bi-report-server-update-august-2018/#comboLabels)
 - [Joustavuutta ja muotoilumahdollisuuksia lisäävät uudet visualisoinnin otsikot](https://powerbi.microsoft.com/blog/power-bi-report-server-update-august-2018/#visualHeader)
 - [Taustakuvan muotoilu](https://powerbi.microsoft.com/blog/power-bi-report-server-update-august-2018/#wallpaper)
 - [Taulukoiden ja matriisien työkaluvihjeet](https://powerbi.microsoft.com/blog/power-bi-report-server-update-august-2018/#tableTooltips)
@@ -143,7 +213,7 @@ Suoran SAP HANA SSO -kyselyn Kerberos-tuki on nyt käytettävissä Power BI -rap
 ### <a name="analytics"></a>Analytiikka
 
 - [Uusi DAX-funktio: COMBINEVALUES()](https://powerbi.microsoft.com/blog/power-bi-report-server-update-august-2018/#combineValues)
-- [Mittayksiköihin porautuminen](https://powerbi.microsoft.com/blog/power-bi-report-server-update-august-2018/#measureDrillthrough)
+- [Mittareihin porautuminen](https://powerbi.microsoft.com/blog/power-bi-report-server-update-august-2018/#measureDrillthrough)
 - [Ehdollinen muotoilu toisen kentän mukaan](https://powerbi.microsoft.com/blog/power-bi-report-server-update-august-2018/#conditionalFormattingField)
 - [Ehdollinen muotoilu arvojen mukaan](https://powerbi.microsoft.com/blog/power-bi-report-server-update-august-2018/#conditionalFormattingValue)
 
@@ -151,7 +221,7 @@ Suoran SAP HANA SSO -kyselyn Kerberos-tuki on nyt käytettävissä Power BI -rap
 
 - [Suodattaminen ja lajitteleminen tietonäkymässä](https://powerbi.microsoft.com/blog/power-bi-report-server-update-august-2018/#filterAndSort)
 - [Parannettu aluekohtainen muotoilu](https://powerbi.microsoft.com/blog/power-bi-report-server-update-august-2018/#locale)
-- [Mittayksiköiden tietoluokat](https://powerbi.microsoft.com/blog/power-bi-report-server-update-august-2018/#dataCategory)
+- [Mittarien tietoluokat](https://powerbi.microsoft.com/blog/power-bi-report-server-update-august-2018/#dataCategory)
 - [Tilastolliset DAX-funktiot](https://powerbi.microsoft.com/blog/power-bi-report-server-update-august-2018/#dax)
 
 ## <a name="may-2018"></a>Tou 2018

@@ -11,11 +11,11 @@ ms.date: 05/21/2018
 ms.author: v-thepet
 LocalizationGroup: Learn more
 ms.openlocfilehash: 94e40681d065591db008f8a9062d851e0bd83f61
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54285756"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61368340"
 ---
 # <a name="tutorial-combine-sales-data-from-excel-and-an-odata-feed"></a>Opetusohjelma: Excelin ja OData-syötteen myyntitietojen yhdistäminen
 
@@ -94,7 +94,7 @@ Kun yhdistät tietolähteisiin, joissa on useita taulukoita, kuten relaatiotieto
    
 3. Toimi avattavassa **Expand**-valikossa seuraavasti:
    
-   1. Jos haluat tyhjentää kaikki sarakkeet, valitse **(Valitse kaikki sarakkeet)**.
+   1. Jos haluat tyhjentää kaikki sarakkeet, valitse **(Valitse kaikki sarakkeet)** .
       
    2. Valitse **ProductID**, **UnitPrice** ja **Quantity**, ja valitse sitten **OK**.
       
@@ -114,7 +114,7 @@ Power Query -editorin avulla voit luoda laskutoimituksia ja täydentää tietoja
    
 2. Kirjoita **Mukautettu sarake** -valintaikkunassa **LineTotal** **Uuden sarakkeen nimi** -kenttään.
 
-3. **Mukautettu sarakkeen kaava** -kentässä, kohdan **=** jälkeen, syötä **[Order_Details.UnitPrice]** \* **[Order_ Details.Quantity]**. (Voit myös valita kenttien nimet **Käytettävissä olevat sarakkeet** -vieritysruudusta ja valita **<< Lisää** niiden kirjoittamisen sijaan.) 
+3. **Mukautettu sarakkeen kaava** -kentässä, kohdan **=** jälkeen, syötä **[Order_Details.UnitPrice]** \* **[Order_ Details.Quantity]** . (Voit myös valita kenttien nimet **Käytettävissä olevat sarakkeet** -vieritysruudusta ja valita **<< Lisää** niiden kirjoittamisen sijaan.) 
 3. Valitse **OK**.
    
    ![Mukautettu sarake -valintaikkuna](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/11.png)
@@ -208,7 +208,7 @@ Luo ensin pinottu pylväskaavio, joka käyttää kummankin kyselyn kenttiä kunk
    
 2. Valitse **ProductName**-kenttä **Products**-kohdasta **Fields**-ruudussa tai vedä se kaavioon kunkin tilatun tuotteen määrän näyttämiseksi. 
    
-3. Lajittele tuotteet suurimmasta tilatusta määrästä pienimpään tilattuun määrään valitsemalla **Lisäasetukset** kolme pistettä (**...** ) visualisoinnin oikeassa yläkulmassa ja valitsemalla sitten **Lajittele määrän mukaan**.
+3. Lajittele tuotteet suurimmasta tilatusta määrästä pienimpään tilattuun määrään valitsemalla **Lisäasetukset** kolme pistettä ( **...** ) visualisoinnin oikeassa yläkulmassa ja valitsemalla sitten **Lajittele määrän mukaan**.
    
 4. Käytä kaavion kulmissa olevia kahvoja kaavion suurentamiseksi, jotta enemmän tuotenimiä tulee näkyviin. 
    

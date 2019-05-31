@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 01/16/2019
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: ef29c6b73a9a430fda35c2274dd278d11bd29dcc
-ms.sourcegitcommit: a054782370dec56d49bb205ee10b7e2018f22693
-ms.translationtype: HT
+ms.openlocfilehash: f32a5704d611153e5b4a0f3a485f2a4a25f93e8b
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56661947"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61059945"
 ---
 # <a name="frequently-asked-questions-about-power-bi"></a>Usein kysyttyjä kysymyksiä Power BI:stä
 * Jos sinulla on muita kysymyksiä, [voit esittää niitä Power BI -yhteisössä](http://community.powerbi.com/).
@@ -31,8 +31,9 @@ Power BI Pro on yksittäinen käyttöoikeus, joka sallii kaiken sisällön ja ka
 Premium tarjoaa varatun kapasiteetin, joka takaa tasaisemman suorituskyvyn ja tukee suurempia tietomääriä Power BI:ssä. Yksittäisten käyttäjien kohdalla Premium mahdollistaa myös Pro-version käyttäjien luoman sisällön laaja-alaisen jakamisen ilman, että sisältöä katselevilla vastaanottajilla on oltava käyttäjäkohtainen käyttöoikeus.
 
 ## <a name="what-happens-if-my-power-bi-pro-license-expires"></a>Mitä tapahtuu, jos Power BI Pro -käyttöoikeus päättyy?
-Power BI Pro -käyttöoikeuden päätyttyä alkaa 30 päivän lisäaika.
-Power BI Pro -tilauksen elinkaari on sama kuin Office 365:llä. Lisätietoja on artikkelissa [Mitä tiedoilleni ja käyttöoikeudelleni tapahtuu, kun Office 365 for Business -tilaus päättyy?](https://support.office.com/article/What-happens-to-my-data-and-access-when-my-Office-365-for-business-subscription-ends-4436582f-211a-45ec-b72e-33647f97d8a3)
+Power BI Pro -käyttöoikeuden päätyttyä alkaa lisäaika. Jos kyseessä on volyymikäyttöoikeushankinta, lisäaika on 90 päivää. Jos kyseessä on suoraan hankittu käyttöoikeus, lisäaika on 30 päivää.
+
+Power BI Pro -tilauksen elinkaari on sama kuin Office 365:llä. Jos haluat lisätietoja, katso [mitä tapahtuu ja käyttö, kun Oma Office 365 for business-tilaus päättyy?](https://support.office.com/article/What-happens-to-my-data-and-access-when-my-Office-365-for-business-subscription-ends-4436582f-211a-45ec-b72e-33647f97d8a3).
 
 ## <a name="what-if-i-have-questions-about-power-bi-premium"></a>Entä jos minulla on kysyttävää Power BI Premiumista?
 Jos sinulla on Power BI Premiumiin liittyviä kysymyksiä, tutustu [Power BI Premiumin usein kysyttyihin kysymyksiin](../service-premium-faq.md).
@@ -90,11 +91,6 @@ Tässä on täydellinen luettelo [Power BI:n tukemista alueista ja kielistä](..
 Voit ostaa Power BI Pro -käyttöoikeuksia suoraan tai keskustella edustajan kanssa osoitteessa [www.powerbi.com](http://www.powerbi.com).
 
 Voit myös etsiä [Microsoft-kumppanin](https://partner.microsoft.com/), joka auttaa sinua Power BI:n käyttöönotossa.
-
-## <a name="what-happens-if-my-power-bi-pro-license-expires"></a>Mitä tapahtuu, jos Power BI Pro -käyttöoikeus päättyy?
-Power BI Pro -käyttöoikeuden päätyttyä alkaa lisäaika. Jos kyseessä on volyymikäyttöoikeushankinta, lisäaika on 90 päivää. Jos kyseessä on suoraan hankittu käyttöoikeus, lisäaika on 30 päivää.
-
-Power BI Pro -tilauksen elinkaari on sama kuin Office 365:llä. Lisätietoja on artikkelissa [Mitä tiedoilleni ja käyttöoikeudelleni tapahtuu, kun Office 365 for Business -tilaus päättyy?](https://support.office.com/article/What-happens-to-my-data-and-access-when-my-Office-365-for-business-subscription-ends-4436582f-211a-45ec-b72e-33647f97d8a3)
 
 ## <a name="does-power-bi-meet-national-regional-and-industry-specific-compliance-requirements"></a>Onko Power BI kansallisten, alueellisten ja alakohtaisten vaatimusten mukainen?
 Lisätietoja Power BI:n vaatimustenmukaisuudesta on [Microsoft Trust Centerissä](http://go.microsoft.com/fwlink/?LinkId=785324).

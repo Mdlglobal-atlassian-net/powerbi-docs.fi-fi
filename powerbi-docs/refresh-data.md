@@ -1,21 +1,21 @@
 ---
 title: Tietojen päivittäminen Power BI:ssä
 description: Tietojen päivittäminen Power BI:ssä
-author: davidiseminger
+author: mgblythe
 manager: kfile
-ms.reviewer: ''
+ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 02/21/2019
-ms.author: davidi
+ms.author: mblythe
 LocalizationGroup: Data refresh
-ms.openlocfilehash: 2f5680df2077a306532165c62367fcc09c517227
-ms.sourcegitcommit: 76772a361e6cd4dd88824b2e4b32af30656e69db
-ms.translationtype: HT
+ms.openlocfilehash: 149f6963cc59c70342bee824579f6ae4c97a16d1
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56892478"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "60974184"
 ---
 # <a name="data-refresh-in-power-bi"></a>Tietojen päivittäminen Power BI:ssä
 Varmista, että saat käyttöösi aina uusimmat tiedot päätöksenteon tueksi. Olet todennäköisesti jo käyttänyt Nouda tiedot -toimintoa Power BI:ssä yhteyden muodostamiseksi ja tietojen lataamiseksi sekä luonut raportteja ja raporttinäkymän. Nyt haluat varmistaa, että tiedot todella ovat uusimpia ja ajan tasalla.

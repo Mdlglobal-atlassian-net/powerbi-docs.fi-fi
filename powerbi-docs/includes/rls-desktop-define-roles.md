@@ -1,10 +1,10 @@
 ---
 ms.openlocfilehash: 240045c05a35a6583b537b785c6639a39c6aa9d4
-ms.sourcegitcommit: ac63b08a4085de35e1968fa90f2f49ea001b50c5
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58051677"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61193830"
 ---
 ## <a name="define-roles-and-rules-in-power-bi-desktop"></a>Roolien ja sääntöjen määrittäminen Power BI Desktopissa
 Power BI Desktopissa voit määrittää rooleja ja sääntöjä. Kun julkaiset Power BI:ssä, myös roolimääritykset julkaistaan.
@@ -29,7 +29,7 @@ Voit määrittää käyttöoikeusroolit seuraavien ohjeiden mukaisesti.
 7. Anna DAX-lausekkeet. Lausekkeen tulisi palauttaa joko arvo tosi tai epätosi. Esimerkki: [Entiteetin tunnus] = ”arvo”.
    
    > [!NOTE]
-   > Voit käyttää lausekkeessa funktiota *username()*. Huomaa, että *username()* on Power BI Desktopissa muodossa *TOIMIALUE\käyttäjänimi*. Power BI -palvelussa ja Power BI -raporttipalvelimessa se ilmoitetaan täydellisenä käyttäjätunnuksena. Vaihtoehtoisesti voit käyttää funktiota *userprincipalname()*, joka palauttaa aina käyttäjän täydellisen käyttäjätunnuksen, *username\@contoso.com*.
+   > Voit käyttää lausekkeessa funktiota *username()* . Huomaa, että *username()* on Power BI Desktopissa muodossa *TOIMIALUE\käyttäjänimi*. Power BI -palvelussa ja Power BI -raporttipalvelimessa se ilmoitetaan täydellisenä käyttäjätunnuksena. Vaihtoehtoisesti voit käyttää funktiota *userprincipalname()* , joka palauttaa aina käyttäjän täydellisen käyttäjätunnuksen, *username\@contoso.com*.
    > 
    > 
    
@@ -39,5 +39,5 @@ Voit määrittää käyttöoikeusroolit seuraavien ohjeiden mukaisesti.
    ![](./media/rls-desktop-define-roles/powerbi-desktop-security-validate-dax.png)
 9. Valitse **Tallenna**.
 
-Käyttäjille ei voi määrittää roolia Power BI Desktopissa. Voit määrittää ne Power BI -palvelussa. Voit ottaa käyttöön Power BI Desktopin dynaamiset suojausominaisuudet hyödyntämällä *username()*- tai *userprincipalname()*-DAX-funktioita, kun oikeat suhteet on määritetty. 
+Käyttäjille ei voi määrittää roolia Power BI Desktopissa. Voit määrittää ne Power BI -palvelussa. Voit ottaa käyttöön Power BI Desktopin dynaamiset suojausominaisuudet hyödyntämällä *username()* - tai *userprincipalname()* -DAX-funktioita, kun oikeat suhteet on määritetty. 
 

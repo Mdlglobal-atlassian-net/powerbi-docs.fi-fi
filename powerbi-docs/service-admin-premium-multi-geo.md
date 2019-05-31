@@ -1,8 +1,8 @@
 ---
 title: Multi-Geo-tuki Power BI Premiumille
 description: Ota selvää, miten voit ottaa sisällön tietokeskuksia käyttöön muilla alueilla kuin Power BI -vuokraajan kotialueella.
-author: minewiskan
-ms.author: owend
+author: mgblythe
+ms.author: mblythe
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
@@ -10,14 +10,14 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 02/05/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: dfa412e32c49e0b3de406f2665fcd9bd6d1a345e
-ms.sourcegitcommit: bd1f0178fd9df152f9e9be57da415829f42116e9
-ms.translationtype: HT
+ms.openlocfilehash: 7735ce3d6d28f51ca95efbe12394c2e0cb2cba29
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57571975"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65564937"
 ---
-# <a name="multi-geo-support-for-power-bi-premium"></a>Multi-Geo-tuki Power BI Premiumille
+# <a name="configure-multi-geo-support-for-power-bi-premium"></a>Määritä Power BI Premium useiden Geo-tuki
 
 Multi-Geo on Power BI Premiumin ominaisuus, joka auttaa monikansallisia asiakkaita huomioimaan organisaation aluekohtaiset, alakohtaiset ja tietojen säilytykseen liittyvät vaatimukset. Ota selvää, miten voit Power BI Premium -asiakkaana ottaa sisällön tietokeskuksia käyttöön muilla alueilla kuin Power BI -vuokraajan kotialueella. Maantieteellinen alue voi sisältää useamman kuin yhden alueen. Esimerkiksi Yhdysvallat on maantieteellinen alue, ja esimerkiksi Yhdysvaltojen läntinen keskiosa sekä Yhdysvaltojen eteläinen keskiosa ovat Yhdysvaltain alueita. Voit halutessasi ottaa sisältöä käyttöön millä tahansa seuraavista alueista:
 
@@ -35,7 +35,7 @@ Multi-Geo ei ole käytettävissä Saksan Power BI:ssä, 21Vianetin ylläpitämä
 
 Multi-Geo on nyt käytettävissä myös Power BI Embeddedissä. Lisätietoja on artikkelissa [Multi-Geo-tuki Power BI Embeddedissä](developer/embedded-multi-geo.md).
 
-## <a name="using-multi-geo"></a>Multi-Geon käyttäminen
+## <a name="enable-and-configure"></a>Ota käyttöön ja määrittäminen
 
 Voit ottaa Multi-Geon käyttöön uusille kapasiteeteille valitsemalla avattavasta valikosta muun kuin oletusalueen.  Kukin käytettävissä oleva kapasiteetti näyttää alueen, minne se tällä hetkellä sijoittuu, kuten **Yhdysvaltojen läntinen keskiosa**.
 
@@ -68,7 +68,7 @@ Nämä kohteet säilyvät vuokraajan kotialueella:
 - Käyttöoikeudet
 - Tietojoukon tunnistetiedot
 
-## <a name="view-capacity-regions"></a>Kapasiteettien alueiden tarkasteleminen
+## <a name="view-capacity-regions"></a>Näytä kapasiteetin alueet
 
 Hallintaportaalissa voit tarkastella Power BI -vuokraajan kaikkia kapasiteetteja ja niiden nykyisiä alueita.
 
@@ -98,7 +98,7 @@ Voit ottaa työtiloja ulos Multi-Geo-kapasiteetista jommallakummalla seuraavista
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
-- [Power BI Premium: Mikä se on?](service-premium.md)
+- [Mikä on Power BI Premium?](service-premium-what-is.md)
 - [Multi-Geo Power BI Embedded -kapasiteeteille](developer/embedded-multi-geo.md)
 
 Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)

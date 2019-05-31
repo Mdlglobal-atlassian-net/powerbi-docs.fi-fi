@@ -10,11 +10,11 @@ ms.topic: conceptual
 ms.date: 06/28/2018
 ms.author: mshenhav
 ms.openlocfilehash: aa0827c0be31d65db7bff2c6e2476e5db59b2895
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54286400"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "60977992"
 ---
 # <a name="explore-tiles-in-the-power-bi-mobile-apps"></a>Tutustu ruutuihin Power BI -mobiilisovelluksissa
 Koskee seuraavia:
@@ -71,7 +71,7 @@ Power BI -mobiilisovelluksissa avaat ruutuja tarkastelutilassa ja olet vuorovaik
    * Napauttaa kaaviota siirtääksesi palkkia viiva-, palkki-, pylväs- tai kuplakaaviossa, jotta voit tarkastella visualisoinnin tietyn pisteen arvoja.  
    * Napauttaa Jaa tilannevedos -kuvaketta ![](./media/mobile-tiles-in-the-mobile-apps/pbi_andr_sharesnapicon.png) [huomautuksen lisäämiseksi ruutuun ja sen jakamiseksi](mobile-annotate-and-share-a-tile-from-the-mobile-apps.md) muiden kanssa.
    * Napauttaa Avaa raportti -kuvaketta ![](./media/mobile-tiles-in-the-mobile-apps/power-bi-android-tablet-open-report-icon.png)[tarkastellaksesi raporttia](mobile-reports-in-the-mobile-apps.md) mobiilisovelluksessa.
-3. Joskus koontinäytön tekijä on lisännyt linkin ruutuun. Jos näin on, napauttaessasi pystysuuntaisia kolmea pistettä (**...**) näkyy **Avaa linkki** ![](media/mobile-tiles-in-the-mobile-apps/power-bi-iphone-link-icon.png):
+3. Joskus koontinäytön tekijä on lisännyt linkin ruutuun. Jos näin on, napauttaessasi pystysuuntaisia kolmea pistettä ( **...** ) näkyy **Avaa linkki** ![](media/mobile-tiles-in-the-mobile-apps/power-bi-iphone-link-icon.png):
    
     ![](media/mobile-tiles-in-the-mobile-apps/power-bi-android-tile-link.png)
    

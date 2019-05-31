@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: d600581b9d1df8c8436da45e9629fccb79873c21
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61260254"
+---
 Kuten olemme oppineet, yleinen työnkulku Power BI:ssä on raportin luominen Power BI Desktopissa ja julkaiseminen Power BI -palvelussa sekä sen jakaminen muille palvelussa tai mobiilisovelluksessa tarkasteltavaksi.
 
 Osa käyttäjistä aloittaa kuitenkin Power BI -palvelulla, joten tutustutaan pikaisesti siihen sekä helppoon ja suosittuun tapaan luoda visualisointeja nopeasti Power BI *-sisältöpaketeilla*.

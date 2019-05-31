@@ -1,26 +1,26 @@
 ---
 title: Sivutettujen raporttien parametrien luominen Power BI -palvelussa (esikatselu)
 description: Tässä artikkelissa opit luomaan sivutettujen raporttien parametreja Power BI -palvelussa.
-author: markingmyname
-ms.author: maghan
+author: maggiesMSFT
+ms.author: maggies
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 11/05/2018
-ms.openlocfilehash: 2240d2bf622122527d4d052a9d7098be648e368d
-ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
-ms.translationtype: HT
+ms.openlocfilehash: d58d1c84199c698089f4b3abccb26f9dbaea76d6
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/16/2019
-ms.locfileid: "56324599"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "60987649"
 ---
 # <a name="create-parameters-for-paginated-reports-in-the-power-bi-service-preview"></a>Sivutettujen raporttien parametrien luominen Power BI -palvelussa (esikatselu)
 
 Tässä artikkelissa opit luomaan sivutettujen raporttien parametreja Power BI -palvelussa.  Raporttiparametrien avulla voit valita raportin tiedot ja muuttaa raportin esitystapaa. Voit antaa oletusarvon ja käytettävissä olevien arvojen luettelon, jolloin raportin lukijat voivat muuttaa valintaa.  
 
-Seuraavassa kuvassa näkyy Raportin muodostimen Suunnittelunäkymä, jossa parametrit ovat @BuyingGroup, @Customer, @FromDate ja @ToDate. 
+Seuraavassa kuvassa näkyy Power BI-raportin muodostimen Suunnittelunäkymä raportin parametrit @BuyingGroup, @Customer, @FromDate, ja @ToDate. 
   
 ![Parametrit Raportin muodostimessa](media/paginated-reports-parameters/power-bi-paginated-parameters-report-builder.png)
   
@@ -37,7 +37,7 @@ Seuraavassa kuvassa näkyy Raportin muodostimen Suunnittelunäkymä, jossa param
   
 ## <a name="create-or-edit-a-report-parameter"></a>Raporttiparametrin luominen tai muokkaaminen  
   
-1.  Avaa sivutettu raportti Raportin muodostimessa.
+1.  Avaa sivutettu raportti Power BI-raportin muodostimessa.
 
 1. Napsauta **Raporttitiedot**-ruudussa olevaa **Parametrit**-solmua hiiren kakkospainikkeella > **Lisää parametri**. **Raporttiparametrin ominaisuudet** -valintaikkuna avautuu.  
   

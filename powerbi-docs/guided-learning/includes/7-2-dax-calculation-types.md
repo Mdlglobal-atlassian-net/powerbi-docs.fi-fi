@@ -1,15 +1,15 @@
 ---
 ms.openlocfilehash: 6ed1690ec77880467007200c30038d185c98d6c2
-ms.sourcegitcommit: b343e44dbafc0b718c564402593d4b6e3a8ce97c
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51206351"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61273385"
 ---
 Voit luoda DAX:llä kahdenlaisia päälaskelmia:
 
 * **lasketut sarakkeet**
-* **lasketut mitat**.
+* **lasketut mittarit**.
 
 Ennen kuin perehdymme niihin, on kuitenkin syytä tutustua taulukoiden ja sarakkeiden DAX-syntaksiin, jota käytät luodessasi **laskettuja sarakkeita** ja **laskettuja mittareita**.
 
@@ -40,7 +40,7 @@ Voit luoda laskettuja sarakkeita Power BI Desktopissa valitsemalla **Mallinnus**
 
 ![](media/7-2-dax-calculation-types/dax-calc-types_2a.png)
 
-Kun napsautat **Uusi sarake** -painiketta, **kaavariville** lisätään perussarakenimi (jota muokkaat tietysti kaavasi mukaan) ja **=**-operaattori. Lisäksi uusi sarake näytetään tietoruudukossa, kuten seuraavassa kuvassa.
+Kun napsautat **Uusi sarake** -painiketta, **kaavariville** lisätään perussarakenimi (jota muokkaat tietysti kaavasi mukaan) ja **=** -operaattori. Lisäksi uusi sarake näytetään tietoruudukossa, kuten seuraavassa kuvassa.
 
 ![](media/7-2-dax-calculation-types/dax-calc-types_3.png)
 
@@ -56,7 +56,7 @@ Käytä **laskettua mittaria**, kun lasket prosentteja tai osuuksia tai kun tarv
 
 ![](media/7-2-dax-calculation-types/dax-calc-types_4.png)
 
-Kun käytät **mittareita**, näet uuden mittarin kuvakkeen **Kentät**-ruudussa. Näet myös mittarin nimen. **Kaavariville** lisätään taas DAX-kaavasi nimi (tällä kertaa mitan kanssa).
+Kun käytät **mittareita**, näet uuden mittarin kuvakkeen **Kentät**-ruudussa. Näet myös mittarin nimen. **Kaavariville** lisätään taas DAX-kaavasi nimi (tällä kertaa mittarin kanssa).
 
 ![](media/7-2-dax-calculation-types/dax-calc-types_5.png)
 

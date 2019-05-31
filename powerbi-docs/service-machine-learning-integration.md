@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 03/12/2019
+ms.date: 04/02/2019
 ms.author: davidi
 LocalizationGroup: conceptual
-ms.openlocfilehash: 9a7afafaa14ed890e10e77507aafb637755cd87f
-ms.sourcegitcommit: 06ae54ed221979939699c67d63aeccba8b9dfcda
-ms.translationtype: HT
+ms.openlocfilehash: 6c09392566805f2857c50784f16c0e3f9d4b5697
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57965490"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61232398"
 ---
 # <a name="azure-machine-learning-integration-in-power-bi-preview"></a>Azuren automaattianalyysipalveluiden integroiminen Power BI:hin (esikatselu)
 
@@ -106,9 +106,9 @@ Tässä artikkelissa annettiin yleiskuva siitä, miten automaattianalyysit integ
 
 Lisätietoja tietovoista on seuraavissa artikkeleissa:
 * [Tietovoiden luominen ja käyttäminen Power BI:ssä](service-dataflows-create-use.md)
-* [Laskettujen entiteettien käyttäminen Power BI Premiumissa (esikatselu)](service-dataflows-computed-entities-premium.md)
-* [Tietovoiden käyttäminen paikallisten tietolähteiden kanssa (esikatselu)](service-dataflows-on-premises-gateways.md)
-* [Kehittäjien resurssit Power BI -tietovoille (esikatselu)](service-dataflows-developer-resources.md)
+* [Laskettuja entiteettejä käyttämällä Power BI Premium](service-dataflows-computed-entities-premium.md)
+* [Dataflows käyttö paikallisiin tietolähteisiin](service-dataflows-on-premises-gateways.md)
+* [Power BI dataflows Kehittäjien resurssit](service-dataflows-developer-resources.md)
 * [Tietovuot ja Azure Data Lake -integrointi (esikatselu)](service-dataflows-azure-data-lake-integration.md)
 
 

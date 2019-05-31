@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 226fdd59b00dc2daa625f9b1941599d21cc35087
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61396816"
+---
 Power BI Desktopilla voit tehdä analyyttisiä ja tilastollisia analyyseja ja luoda vakuuttavia visualisointeja R-integroinnin avulla. Voit esittää kyseisiä R-visualisointeja Power BI Desktop -raportissa.
 
 Kun napsautat **R-visualisointi**-kuvaketta **Visualisoinnit**-ruudussa, Power BI luo pohjalle paikkamerkin R-visualisointia varten ja esittää R-komentosarjaeditorin, jota voit käyttää suoraan pohjalla. Sitä mukaa kun lisäät kenttiä R-visualisointiin, Power BI Desktop lisää ne R-komentosarjaeditoriruutuun.

@@ -11,11 +11,11 @@ ms.date: 08/28/2018
 ms.author: maggies
 LocalizationGroup: Data from files
 ms.openlocfilehash: d1e3d6b50b91643dc7c1e658094a5ae7763edc8f
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54290388"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61139654"
 ---
 # <a name="from-excel-workbook-to-stunning-report-in-no-time"></a>Excel-työkirjasta upeaksi raportiksi nopeasti
 Esimiehesi haluaa raportin viimeisimmistä myyntiluvuista yhdistettynä viimeisimmän kampanjan näyttökertoihin vielä tämän päivän aikana. Uusimmat tiedot sijaitsevat kuitenkin erilaisissa kolmannen osapuolen järjestelmissä ja kannettavan tietokoneesi tiedostoissa. Aiemmin visualisointien luominen ja raportin muotoilu on vienyt tunteja. Tunnet, kuinka ahdistus alkaa vallata alaa.

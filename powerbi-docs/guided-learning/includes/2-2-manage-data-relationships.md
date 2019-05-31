@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: b1658a9351c05a8673c6cc582a4e54ad982791fc
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61255696"
+---
 Power BI:n avulla voit määrittää taulukkojen tai elementtien välisen suhteen visuaalisesti. Voit tarkastella tietojasi kaaviomuodossa **Suhde-näkymän** avulla. Se sijaitsee uloimpana vasemmalla raporttipohjan vieressä.
 
 ![](media/2-2-manage-data-relationships/2-2_1.png)

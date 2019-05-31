@@ -10,11 +10,11 @@ ms.topic: conceptual
 ms.date: 06/28/2018
 ms.author: mshenhav
 ms.openlocfilehash: dc117c9b17e9d20d1e5be6e6fedd18cb7aa3ae61
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54279224"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61139320"
 ---
 # <a name="view-dashboards-and-reports-in-the-power-bi-mobile-apps"></a>Raporttinäkymien ja raporttien tarkastelu Power BI -mobiilisovelluksissa
 Koskee seuraavia:
@@ -62,7 +62,7 @@ Tässä on Power BI -raporttinäkymä Power BI -palvelussa:
     ![Raporttinäkymä vaakasuunnassa](././media/mobile-apps-view-dashboard/power-bi-iphone-dashboard-landscape.png)
 3. Katso kaikki raporttinäkymän ruudut sipaisemalla ylös- ja alaspäin. Voit:
    
-   * [napauttaa ruutua](mobile-tiles-in-the-mobile-apps.md) ja avata sen kohdistustilassa ja käsitellä sitä.
+   * [napauttaa ruutua](mobile-tiles-in-the-mobile-apps.md) ja avata sen tarkastelutilassa ja käsitellä sitä.
    * napauttaa ![suosikkitähteä](././media/mobile-apps-view-dashboard/power-bi-mobile-not-favorite-icon.png) ja [tehdä siitä suosikin](mobile-apps-favorites.md).
    * napauttaa kohtaa **Kutsu** ![Kutsu-kuvake](./media/mobile-apps-view-dashboard/pbi_ipad_shareiconblk.png) ja [kutsua työtoverisi](mobile-share-dashboard-from-the-mobile-apps.md) tarkastelemaan raporttinäkymää.
    * [synkronoida raporttinäkymän Apple Watch -kelloosi](mobile-apple-watch.md).
@@ -87,7 +87,7 @@ Voit lähentää ja loitontaa raporttinäkymän eri alueita nipistämällä ja s
    
    * Keltaiset tähdet ![Suosikkitähti](././././media/mobile-apps-view-dashboard/power-bi-mobile-yes-favorite-icon.png) näyttävät, mitkä raporttinäkymät ovat suosikkeja. 
    * Kunkin raporttinäkymän nimen (tässä tapauksessa "MBI") alapuolella oleva merkintä ![Tietojen luokitus](././media/mobile-apps-view-dashboard/power-bi-dashboard-ios-medium-classification.png) kertoo, miten kunkin raporttinäkymän tiedot on luokiteltu. Lue lisää [tietojen luokittelusta Power BI:ssä](../../service-data-classification.md).
-3. Voit jakaa raporttinäkymän työtilastasi. Napauta raporttinäkymäruudun oikeassa alakulmassa kolmea pistettä (**...**) ja napauta **Kutsu muita** -kohtaa.
+3. Voit jakaa raporttinäkymän työtilastasi. Napauta raporttinäkymäruudun oikeassa alakulmassa kolmea pistettä ( **...** ) ja napauta **Kutsu muita** -kohtaa.
    
    ![Kutsu-kuvake](./media/mobile-apps-view-dashboard/power-bi-ipad-tile-invite-others.png)
 4. Voit myös avata raporttinäkymän napauttamalla ja tarkastella kyseisen raporttinäkymän ruutuja. Raporttinäkymässä voit käsitellä sen sisältöä:

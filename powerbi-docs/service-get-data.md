@@ -11,11 +11,11 @@ ms.date: 01/02/2019
 ms.author: davidi
 LocalizationGroup: Get started
 ms.openlocfilehash: 26c7c1b428f513fe2b79a3377085004506412604
-ms.sourcegitcommit: 3c8196be5626a0f037599abb6ccbd294fb1249df
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54899292"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61235349"
 ---
 # <a name="data-sources-for-the-power-bi-service"></a>Power BI -palvelun tietolähteet
 Tiedot ovat Power BI:n ydin. Aina, kun olet tutkimassa tietoja, luomassa kaavioita ja koontinäyttöjä tai tutustumassa kysymyksiin ja vastauksiin, kaikkien näkemiesi visualisointien ja vastausten pohjana olevat tiedot ovat peräisin tietojoukosta. Mutta mistä tietojoukko on peräisin? No, tietolähteestä.
@@ -31,7 +31,7 @@ Voit saada tietoja mistä tahansa tietolähteestä Power BI:ssä Valitsemalla **
 
 **Excel** (.xlsx, .xlxm) – Excel on ainutlaatuinen siinä mielessä, että työkirja voi sisältää sekä laskentataulukoihin itse syöttämiäsi tietoja että ulkoisista tietolähteistä Power Queryn (Get & Transform Excel 2016:ssa) tai Power Pivotin avulla hakemiasi ja lataamiasi tietoja. Voit tuoda laskentataulukoiden tauluissa olevia tietoja (tietojen *on* oltava taulussa) tai tuoda tietoja, jotka on ladattu tietomallin. Lisätietoja on artikkelissa [Tietojen hakeminen Excelistä](service-get-data-from-files.md).
 
-**Power BI Desktop** (.pbix) – Voit käyttää Power BI Desktopia tietojen hakemiseen ja lataamiseen ulkoisista tietolähteistä, tietomallien laajentamiseen mittayksiköillä ja suhteilla sekä raporttien luomiseen. Voit tuoda Power BI Desktop -tiedoston Power BI -sivustoon. Power BI Desktop sopii parhaiten kokeneille käyttäjille, joilla on paljon ymmärrystä tietolähteitä sekä tietojen hakemista, muuntamista ja mallinnusta koskevista käsitteistä. Lisätietoja on artikkelissa [Tietoihin yhdistäminen Power BI Desktopissa](desktop-connect-to-data.md).
+**Power BI Desktop** (.pbix) – Voit käyttää Power BI Desktopia tietojen hakemiseen ja lataamiseen ulkoisista tietolähteistä, tietomallien laajentamiseen mittareilla ja suhteilla sekä raporttien luomiseen. Voit tuoda Power BI Desktop -tiedoston Power BI -sivustoon. Power BI Desktop sopii parhaiten kokeneille käyttäjille, joilla on paljon ymmärrystä tietolähteitä sekä tietojen hakemista, muuntamista ja mallinnusta koskevista käsitteistä. Lisätietoja on artikkelissa [Tietoihin yhdistäminen Power BI Desktopissa](desktop-connect-to-data.md).
 
 **Pilkuilla erotetut arvot** (.csv) – Tiedostot ovat yksinkertaisia tekstitiedostoja, jotka sisältävät tietorivejä. Kukin rivi voi sisältää yhden tai useita arvoja, jotka on erotettu toisistaan pilkulla. Esimerkiksi nimi- ja osoitetietoja sisältävässä .csv-tiedostossa voi olla useita rivejä, jossa kullakin rivillä on arvot etunimelle, sukunimelle, katuosoitteelle, kaupungille, maalle ja niin edelleen. Et voi tuoda tietoja .csv-tiedostoon, mutta monet sovellukset, kuten Excel, voivat tallentaa yksinkertaisia taulutietoja .csv-tiedostoon.
 

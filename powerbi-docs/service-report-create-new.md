@@ -1,36 +1,36 @@
 ---
-title: 'Uuden raportin luominen tietojoukosta '
-description: Uuden raportin luominen tietojoukosta.
+title: Raportin luominen tietojoukosta
+description: Power BI-raportin luominen tietojoukosta.
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 03/24/2018
+ms.date: 04/25/2019
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: b46896a06c9d7ed66e643aa218ec7dbd3da8c9ee
-ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
-ms.translationtype: HT
+ms.openlocfilehash: 6b69c2b1fa811d395a26403de852c44af33491c7
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56216949"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "64770219"
 ---
-# <a name="create-a-new-report-in-power-bi-service-by-importing-a-dataset"></a>Uuden raportin luominen Power BI -palvelussa tuomalla tietojoukko
-Olet lukenut [Power BI -raportit](consumer/end-user-reports.md) ja haluat nyt luoda omasi. Voit luoda raportin monella eri tavalla, ja aloitamme tämän artikkelin luomalla hyvin perustasoisen raportin Excel-tietojoukosta käyttämällä Power BI -palvelua. Kun ymmärrät raportin luomisen perusteet, **Seuraavat vaiheet** näytön alareunassa vievät sinut monimutkaisempia raportteja koskevaan aiheisiin.  
+# <a name="create-a-report-in-the-power-bi-service-by-importing-a-dataset"></a>Raportin luominen Power BI-palvelussa tuomalla tietojoukko
+Olet lukenut [Power BI -raportit](consumer/end-user-reports.md) ja haluat nyt luoda omasi. Voit luoda raportin monella eri tavalla. Aloitamme tämän artikkelin luomalla perustasoisen raportin Excel-tietojoukosta Power BI-palvelussa. Kun ymmärrät raportin luomisen perusteet, tutustu [seuraavat vaiheet](#next-steps) Lisää loppuun advanced raportin aiheet.  
 
 ## <a name="prerequisites"></a>Edellytykset
-> - Power BI -palvelu (katso raporttien luominen Power BI Desktopissa kohdasta [Työpöydän raporttinäkymä](desktop-report-view.md) )  
-> - Jälleenmyyntianalyysimallin tietojoukko
+- [Rekisteröidy Power BI-palveluun](service-self-service-signup-for-power-bi.md). Katso Power BI Desktop-raporttien luominen [työpöydän raporttinäkymä](desktop-report-view.md). 
+- [Lataa jälleenmyyjän analyysin Excel-tietojoukkoesimerkki](http://go.microsoft.com/fwlink/?LinkId=529778) ja tallenna se OneDrive for Businessiin tai paikallisesti.
 
 ## <a name="import-the-dataset"></a>Tuo tietojoukko
-Tämä raporttien luontimenetelmä alkaa tietojoukosta ja tyhjästä raporttipohjasta. Seuraavaksi [Lataa jälleenmyyjän analyysin Excel-tietojoukkoesimerkki](http://go.microsoft.com/fwlink/?LinkId=529778) ja tallenna se OneDrive for Businessiin (ensisijainen) tai paikallisesti.
+Tämä raporttien luontimenetelmä alkaa tietojoukosta ja tyhjästä raporttipohjasta. Voit seurata Jälleenmyyntianalyysimallin näytteen Excel-tietojoukon.
 
-1. Luomme raportin Power BI -palvelun työtilassa, joten valitse aiemmin luotu työtila tai luo uusi.
+1. Olemme raportin luominen Power BI-palvelun työtilassa niin aiemmin luotu työtila tai luo yksi.
    
    ![Luettelo sovellustyötiloista](media/service-report-create-new/power-bi-workspaces2.png)
-2. Valitse vasemman siirtymisruudun alaosassa, **Nouda tiedot**.
+2. Valitse vasemman siirtymisruudun alaosassa **Nouda tiedot**.
    
    ![Nouda tiedot](media/service-report-create-new/power-bi-get-data3.png)
 3. Valitse **Tiedostot** ja siirry sijaintiin, johon tallensit jälleenmyyntianalyysimallin.
@@ -46,8 +46,8 @@ Tämä raporttien luontimenetelmä alkaa tietojoukosta ja tyhjästä raporttipoh
    
    ![raporttieditori](media/service-report-create-new/power-bi-blank-report.png)
 
-> **VIHJE**: Jos et tunne raporttien muokkauspohjaa tai haluat päivittää tietojasi, [katso esittely raporttieditorista ](service-the-report-editor-take-a-tour.md) ennen jatkamista.
-> 
+> [!TIP]
+> Jos tunne raporttien tai haluat kerrata, [raporttieditorin esittely](service-the-report-editor-take-a-tour.md) ennen jatkamista. > 
 > 
 
 ## <a name="add-a-radial-gauge-to-the-report"></a>Viisarimittarin lisääminen raporttiin
@@ -62,7 +62,7 @@ Nyt kun tietojoukkomme on tuotu, aloitetaan vastaamaan kysymyksiin.  Markkinoint
 3. Vedä **Myynti** > **Tämän vuoden myynti** > **Tavoite** kohtaan **Tavoitearvo**. Näyttää siltä, että olemme hyvin lähellä tavoitteitamme.
    
     ![Mittarin visualisointi tavoite tavoitearvona](media/service-report-create-new/power-bi-report-step3.png)
-4. Nyt olisi hyvä aika [tallentaa raporttisi](service-report-save.md).
+4. Nyt olisi hyvä aika Tallenna raportti.
    
    ![Tiedosto-valikko](media/service-report-create-new/powerbi-save.png)
 
@@ -78,7 +78,7 @@ CMO haluaa esittää meille joitakin lisäkysymyksiä vastattavaksi. Hän haluaa
    
     ![raporttieditori ja aluekaavio aktiivisena](media/service-report-create-new/power-bi-report-step5.png)
 5. Voit lajitella visualisoinnin ajanjakson mukaan valitsemalla kolme pistettä ja valitsemalla **Lajitteluperuste**.
-6. Nyt lisätään osittaja. Valitse pohjalta tyhjä alue ja valitse osittaja ![Osittajakuvake-](media/service-report-create-new/power-bi-slicer-icon.png)    malli. Tämä lisää pohjalle tyhjän osittajan.
+6. Nyt lisätään osittaja. Valitse pohjalta tyhjä alue ja valitse osittaja ![Osittajakuvake-](media/service-report-create-new/power-bi-slicer-icon.png) malli. Tarjoamme nyt pohjalle tyhjän osittajan.
    
     ![raportin pohja](media/service-report-create-new/power-bi-report-step6.png)    
 7. Valitse Kentät-ruudussa **Alue** > **Alue**. Siirrä ja muuta osittajan kokoa.

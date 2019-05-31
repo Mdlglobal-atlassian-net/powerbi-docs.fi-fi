@@ -12,11 +12,11 @@ ms.author: mblythe
 ms.custom: seodec18
 LocalizationGroup: Troubleshooting
 ms.openlocfilehash: 9461609b7ecaa674d3ef4d01482752a78071dbe2
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54295761"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61187812"
 ---
 # <a name="office-365-dedicated-customers---known-issues"></a>Omistautuneet Office 365 -käyttäjät – tunnetut ongelmat
 Power BI:tä tuetaan nyt omistautuneille Office 365 -käyttäjille.  Jos olet omistautunut O365-käyttäjä, voit kirjautua sisään sen vuokraajan tilillä ja käyttää Power BI:tä. Tällä hetkellä on kaksi tunnettua ongelmaa.

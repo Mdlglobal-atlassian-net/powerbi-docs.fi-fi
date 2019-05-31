@@ -1,21 +1,21 @@
 ---
 title: Upotettu analysointi Power BI:n sisällön upottamiseksi sovellukseen organisaatiollesi
 description: Lue, miten voit integroida tai upottaa raportteja, koontinäyttöjä tai ruutuja organisaatiotasi varten käyttämällä upotetussa analysoinnissa Power BI -ohjelmointirajapintoja. Lue, miten voit integroida Power BI:n sovellukseesi käyttämällä upotetun analysoinnin ohjelmistoa, upotetun analysoinnin työkaluja tai upotetun liiketoimintatiedon työkaluja.
-author: markingmyname
-ms.author: maghan
+author: rkarlin
+ms.author: rkarlin
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.custom: seodec18
-ms.date: 03/12/2019
-ms.openlocfilehash: 34d7ec423f3d4cb0f7487c78eff68c580ff0489e
-ms.sourcegitcommit: f176ba9d52d50d93f264eca21bb3fd987dbf934b
-ms.translationtype: HT
+ms.date: 04/02/2019
+ms.openlocfilehash: 53311929aa6277efd621fb2b944ea062ab99999d
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/12/2019
-ms.locfileid: "57757457"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61355025"
 ---
 # <a name="tutorial-embed-power-bi-content-into-an-application-for-your-organization"></a>Opetusohjelma: Power BI -sisällön upottaminen sovellukseen organisaatiolle
 
@@ -116,17 +116,17 @@ Saat **ApplicationID**:n seuraavasti:
 
 2. Valitse vasemmassa siirtymisruudussa **Kaikki palvelut** ja sitten **Sovelluksen rekisteröinnit**.
 
-    ![Sovelluksen rekisteröinnin etsintä](media/embed-sample-for-customers/embed-sample-for-customers-003.png)
-
 3. Valitse sovellus, joka tarvitsee **applicationId**-arvon.
 
-    ![Sovelluksen valitseminen](media/embed-sample-for-customers/embed-sample-for-customers-006.png)
+    ![Sovelluksen valitseminen](media/embed-sample-for-your-organization/embed-sample-for-your-organization-042.png)
 
 4. Näet **sovellustunnuksen**, joka on merkitty GUID-tunnuksena. Käytä tätä **Sovellustunnusta** sovelluksen **applicationId**:nä.
 
-    ![applicationID](media/embed-sample-for-customers/embed-sample-for-customers-007.png)
+    ![applicationID](media/embed-sample-for-your-organization/embed-sample-for-your-organization-043.png)
 
 ### <a name="application-secret"></a>Sovellussalaisuus
+
+Tämä määrite on pakollinen vain, kun käytät todennustyyppinä [palvelun päänimeä](embed-service-principal.md).
 
 Täytä **ApplicationSecret** -tiedot **Avaimet**-osiosta **Sovelluksen rekisteröinnit** -kohdasta **Azuressa**.  Tämä määrite toimii, kun käytät [palvelun päänimeä](embed-service-principal.md).
 
@@ -136,23 +136,17 @@ Saat **ApplicationSecretin** seuraavasti:
 
 2. Valitse vasemmassa siirtymisruudussa **Kaikki palvelut** ja sitten **Sovelluksen rekisteröinnit**.
 
-    ![Sovelluksen rekisteröinnin etsintä](media/embed-sample-for-your-organization/embed-sample-for-your-organization-003.png)
-
 3. Valitse sovellus, joka käyttää **ApplicationSecretiä**.
 
-    ![Sovelluksen valitseminen](media/embed-sample-for-your-organization/embed-sample-for-your-organization-006.png)
+    ![Sovelluksen valitseminen](media/embed-sample-for-your-organization/embed-sample-for-your-organization-042.png)
 
-4. Valitse **Asetukset**.
+4. Valitse **varmenteet ja salaisuudet** kohdassa **hallinta**.
 
-    ![Valitse Asetukset](media/embed-sample-for-your-organization/embed-sample-for-your-organization-038.png)
-
-5. Valitse **Avaimet**.
-
-    ![Valitse Avaimet](media/embed-sample-for-your-organization/embed-sample-for-your-organization-039.png)
+5. Valitse **uusi asiakassalaisuus**.
 
 6. Kirjoita nimi **Kuvaus**-ruutuun ja valitse kesto. Valitse sitten **Tallenna** saadaksesi sovellukselle **arvon**. Kun suljet **Avaimet**-ruudun avainarvon tallentamisen jälkeen, arvokenttä näkyy vain piilotettuna. Tässä vaiheessa et pysty noutamaan avaimen arvoa. Jos kadotat avainarvon, luo uusi Azure-portaalissa.
 
-    ![Avainarvo](media/embed-sample-for-your-organization/embed-sample-for-your-organization-031.png)
+    ![Avainarvo](media/embed-sample-for-your-organization/embed-sample-for-your-organization-046.png)
 
 ### <a name="workspace-id"></a>Työtilan tunnus
 
@@ -190,9 +184,9 @@ Get-PowerBIworkspace -name "User Owns Embed Test" | Get-PowerBIReport
 
 Täytä kohdan **AADAuthorityUrl** tietoihin se URL-osoite, joka joko sallii upotuksen joko organisaation vuokraajaan tai vieraskäyttäjään.
 
-Käytä organisaation vuokraajaan upottamiseen URL-osoitetta *https://login.microsoftonline.com/common/oauth2/authorize*.
+Käytä organisaation vuokraajaan upottamiseen URL-osoitetta *https://login.microsoftonline.com/common/oauth2/authorize* .
 
-Käytä vieraaseen upottamiseen URL-osoitetta *https://login.microsoftonline.com/report-owner-tenant-id*, jolloin korvaat kohdan *report-owner-tenant-id* raportin omistajan vuokraajatunnuksella.
+Käytä vieraaseen upottamiseen URL-osoitetta *https://login.microsoftonline.com/report-owner-tenant-id* , jolloin korvaat kohdan *report-owner-tenant-id* raportin omistajan vuokraajatunnuksella.
 
 ### <a name="run-the-application"></a>Suorita sovellus
 
@@ -400,7 +394,7 @@ Kun olet nyt kehittänyt sovelluksesi, on aika varata sovelluksen työtilalle ka
 
 ### <a name="create-a-dedicated-capacity"></a>Luo varattua kapasiteettia
 
-Luomalla varattua kapasiteettia voit hyödyntää sitä, että sovellustyötilan sisällölle varataan tietty resurssi. Voit luoda varattua kapasiteettia käyttämällä [Power BI Premiumia](../service-premium.md).
+Luomalla varattua kapasiteettia voit hyödyntää sitä, että sovellustyötilan sisällölle varataan tietty resurssi. Voit luoda varattua kapasiteettia käyttämällä [Power BI Premiumia](../service-premium-what-is.md).
 
 Seuraavassa taulukossa esitetään Power BI Premiumin SKU:t, jotka ovat käytettävissä [Microsoft Office 365:ssä](../service-admin-premium-purchase.md):
 

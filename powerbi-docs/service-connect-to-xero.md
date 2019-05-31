@@ -11,11 +11,11 @@ ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
 ms.openlocfilehash: d09936f2cce1d7835efdb82929d9e8eed2291163
-ms.sourcegitcommit: 80961ace38ff9dac6699f81fcee0f7d88a51edf4
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56223348"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61156253"
 ---
 # <a name="connect-to-xero-with-power-bi"></a>Yhteyden muodostaminen Xeroon Power BI:n avulla
 Xero on helppokäyttöinen verkkokirjanpito-ohjelmisto, joka on suunniteltu erityisesti pienille yrityksille. Tämän Power BI -sisältöpaketin avulla voit luoda vaikuttavia visualisointeja Xeron taloustietojen pohjalta. Oletuskoontinäyttö sisältää useita pienyritysten mittareita, kuten käteistilanteen, tuoton vs kulut, voiton ja tappion trendin, velallisen maksupäivät ja sijoitetun pääoman tuoton.

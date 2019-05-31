@@ -11,11 +11,11 @@ ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
 ms.openlocfilehash: bcd92dc0288fc347c5f5931d40b94cf769f5293f
-ms.sourcegitcommit: 8207c9269363f0945d8d0332b81f1e78dc2414b0
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56249018"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61180265"
 ---
 # <a name="connect-to-adobe-analytics-with-power-bi"></a>Adobe Analyticsin yhdistäminen Power BI:hin
 Yhteyden muodostaminen Adobe Analyticsiin Power BI:n kautta alkaa muodostamalla yhteys Adobe Analytics Marketing Cloud -tiliin. Saat sovelluksen, jossa on Power BI:n koontinäyttö ja joukko Power BI -raportteja, jotka tarjoavat merkityksellisiä tietoja sivuston liikenne- ja käyttäjädimensioista. Tiedot päivitetään automaattisesti kerran päivässä. Voit käsitellä koontinäyttöä ja raportteja, mutta et voi tallentaa muutoksia.
@@ -91,7 +91,7 @@ Adoben [dokumentaatiosta](https://marketing.adobe.com/resources/help/en_US/refer
 ## <a name="troubleshooting"></a>Vianmääritys
 Jos näet tunnistetietojen antamisen jälkeen virheen, joka ilmoittaa, että sinulla ei ole oikeuksia, vahvista järjestelmänvalvojalta, että sinulla on Adobe Analytics -ohjelmointirajapinnan käyttöoikeudet. Vahvista myös, että saamasi Adobe-tunnus on linkitetty Marketing Cloud Organizationiin (joka liittyy Adobe Analytics -yritykseen).
 
-Jos olet onnistuneesti antanut tunnistetiedot näytöllä ennen kuin virhe ilmenee, on mahdollista, että raporttien valmistuminen kestää liian kauan. Yleinen virhe on muodossa *”Tietojen saaminen Adobe Analytics -raportista epäonnistui. Sisältöön sisältyi &quot;suosittelija, sivu&quot;, arvioitu kesto oli xx sekuntia ”*. Lue lisätietoja ”Sisältö”-osasta ja vertaa Adobe-esiintymän kokoa. Valitettavasti tämän aikakatkaisun kiertämiseksi ei ole vielä keinoa. Harkitsemme kuitenkin uusia päivityksiä suurempien tahojen tukemiseksi, joten anna palautetta Power BI -työryhmälle osoitteessa https://ideas.powerbi.com
+Jos olet onnistuneesti antanut tunnistetiedot näytöllä ennen kuin virhe ilmenee, on mahdollista, että raporttien valmistuminen kestää liian kauan. Yleinen virhe on muodossa *”Tietojen saaminen Adobe Analytics -raportista epäonnistui. Sisältöön sisältyi &quot;suosittelija, sivu&quot;, arvioitu kesto oli xx sekuntia ”* . Lue lisätietoja ”Sisältö”-osasta ja vertaa Adobe-esiintymän kokoa. Valitettavasti tämän aikakatkaisun kiertämiseksi ei ole vielä keinoa. Harkitsemme kuitenkin uusia päivityksiä suurempien tahojen tukemiseksi, joten anna palautetta Power BI -työryhmälle osoitteessa https://ideas.powerbi.com
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 * [Mitä ovat Power BI:n sovellukset?](service-create-distribute-apps.md)

@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/28/2018
+ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 80905abfe271ebd5d0aeec73d1287428e281da99
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.openlocfilehash: f67f73dd66da7f1d3e8d84a3373a15d20f81645e
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54276671"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65513812"
 ---
 # <a name="publish-from-power-bi-desktop"></a>Power BI Desktopista julkaiseminen
 Kun julkaiset **Power BI Desktop** -tiedoston **Power BI -palvelussa**, mallin tiedot ja **Raportti**-näkymässä luomasi raportit julkaistaan Power BI:n työtilassasi. Näet uuden tietojoukon samalla nimellä ja mahdolliset raportit Työtila-siirtymistoiminnossa.
@@ -28,7 +28,7 @@ Julkaiseminen **Power BI Desktopista** vaikuttaa samalla tavalla kuin **Nouda ti
 > 
 
 ## <a name="to-publish-a-power-bi-desktop-dataset-and-reports"></a>Power BI Desktop -tietojoukon ja -raporttien julkaiseminen
-1. Valitse Power BI Desktopissa \> **Tiedosto** \> **Julkaise** \> **Julkaise Power BI:hin**, tai napsauta valintanauhan **Julkaise**-painiketta.  
+1. Power BI Desktop valitsemalla **tiedoston** \> **Julkaise** \> **Julkaise Power BI** tai valitse **Julkaise** käyttöön valintanauha.  
 
    ![Julkaise-painike](media/desktop-upload-desktop-files/pbid_publish_publishbutton.png)
 
@@ -44,7 +44,7 @@ Kun olet valmis, saat linkin raporttiin. Napsauttamalla linkkiä voit avata rapo
 ## <a name="re-publish-or-replace-a-dataset-published-from-power-bi-desktop"></a>Power BI Desktopista julkaistun tietojoukon julkaiseminen uudelleen tai julkaistun tietojoukon korvaaminen
 Kun julkaiset **Power BI Desktop** -tiedoston, **Power BI Desktopissa** luomasi tietojoukko ja raportit ladataan Power BI -sivustoosi. Kun julkaiset **Power BI Desktop** -tiedoston uudelleen, Power BI -sivustossasi oleva tietojoukko korvataan **Power BI Desktop** -tiedoston päivitetyllä tietojoukolla.
 
-Tämä on kaikki aika yksinkertaista, mutta seuraavat seikat kannattaa ottaa huomioon:
+Tämä on kaikki yksinkertaista, mutta kannattaa ottaa huomioon joitakin asioita:
 
 * Jos Power BI:ssä on jo vähintään kaksi tietojoukkoa **Power BI Desktop** -tiedoston kanssa samalla nimellä, julkaiseminen voi epäonnistua. Varmista, että Power BI:ssä on ainoastaan yksi tietojoukko samalla nimellä. Voit myös nimetä tiedoston uudelleen ja julkaista, jolloin luodaan uusi tietojoukko, jolla on sama nimi kuin tiedostolla.
 * Jos nimeät uudelleen tai poistat sarakkeen tai mittarin, kaikki Power BI:ssä jo olevat visualisoinnit kyseisellä kentällä voivat rikkoutua. 

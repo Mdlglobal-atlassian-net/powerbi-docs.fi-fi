@@ -11,11 +11,11 @@ ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
 ms.openlocfilehash: 9029d5b6268cacf17fc862a4c0a3d19f440f7de1
-ms.sourcegitcommit: 750f0bfab02af24c8c72e6e9bbdd876e4a7399de
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/04/2019
-ms.locfileid: "54007924"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61163850"
 ---
 # <a name="connect-to-lithium-with-power-bi"></a>Lithiumiin yhdistäminen Power BI:n avulla
 Lithium rakentaa luotettuja suhteita maailman parhaiden tuotemerkkien ja niiden asiakkaiden välille auttaen ihmisiä saamaan vastauksia ja jakamaan kokemuksiaan. Yhdistämällä Lithium-sisältöpaketin Power BI:hin voit mitata tärkeitä tietoja verkkoyhteisöstäsi auttaen lisäämään myyntiä, pienentämään palvelukustannuksia ja lisäämään uskollisuutta. 
@@ -35,7 +35,7 @@ Yhdistä Power BI:n [Lithium-sisältöpakettiin](https://app.powerbi.com/getdata
 3. Valitse **Lithium** \> **Nouda**.
    
    ![](media/service-connect-to-lithium/lithiumconnect.png)
-4. Anna Lithium-yhteisön URL-osoite. Sen muoto on *https://community.yoursite.com*.
+4. Anna Lithium-yhteisön URL-osoite. Sen muoto on *https://community.yoursite.com* .
    
    ![](media/service-connect-to-lithium/params.png)
 5. Anna pyydettäessä Lithium-tunnistetiedot. Valitse todennusmenetelmäksi **oAuth 2**, napsauta **Kirjaudu sisään** ja noudata Lithium-todentamisen vaiheita.

@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 8fc17759ea38cc96c69e7639ed25172e782a9d4d
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61263385"
+---
 Kun olet muodostanut koontinäytön, voit muokata sen **Ruutuja* Power BI-palvelussa ja muuttaa sen muotoilua.
 
 Muokkaa ruutua osoittamalla sitä ja napsauttamalla ellipsikuvaketta (kolme pistettä), niin esiin tulee erilaisia kuvakkeita, joiden avulla ruutua voi muokata.

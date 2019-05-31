@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 10/30/2018
+ms.date: 04/23/2019
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 5da6b465adc544bf64fd4dfb090a2e1faabee59d
-ms.sourcegitcommit: 20ae9e9ffab6328f575833be691073de2061a64d
-ms.translationtype: HT
+ms.openlocfilehash: 003d179902ad3eeb5dc6dea841936a217a292d0c
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58383234"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65099809"
 ---
 # <a name="power-bi-licensing-in-your-organization"></a>Power BI -käyttöoikeudet organisaatiossasi
 
@@ -27,9 +27,15 @@ Tässä artikkelissa keskitytään käyttäjäkohtaiseen käyttöoikeuteen järj
 
 Järjestelmänvalvojana voit ostaa ja määrittää Power BI Pro -käyttöoikeuksia, ja voit myös rekisteröidä Power BI Pro -kokeiluversion organisaatiollesi. Yksittäiset käyttäjät voivat myös rekisteröityä Power BI Pro -kokeiluversion käyttäjäksi.
 
-### <a name="purchasing-power-bi-pro"></a>Power BI Pron ostaminen
+### <a name="purchase-power-bi-pro"></a>Osta Power BI Pro
 
 Voit ostaa Power BI Pro -käyttöoikeudet Microsoft Office 365:n tai sertifioidun Microsoft-kumppanin kautta. Kun olet ostanut käyttöoikeudet, voit määrittää ne yksittäisille käyttäjille. Jos haluat lisätietoja, katso kohta [Power BI Pro -käyttöoikeuksien hankinta ja määritys](service-admin-purchasing-power-bi-pro.md).
+
+### <a name="power-bi-pro-license-expiration"></a>Power BI Pro-käyttöoikeuden vanhentuminen
+
+Power BI Pro -käyttöoikeuden päätyttyä alkaa lisäaika. Jos kyseessä on volyymikäyttöoikeushankinta, lisäaika on 90 päivää. Jos kyseessä on suoraan hankittu käyttöoikeus, lisäaika on 30 päivää.
+
+Power BI Pro -tilauksen elinkaari on sama kuin Office 365:llä. Jos haluat lisätietoja, katso [mitä tapahtuu ja käyttö, kun Oma Office 365 for business-tilaus päättyy?](https://support.office.com/article/What-happens-to-my-data-and-access-when-my-Office-365-for-business-subscription-ends-4436582f-211a-45ec-b72e-33647f97d8a3).
 
 ### <a name="power-bi-pro-trial-for-individuals"></a>Power BI Pron kokeiluversio yksittäisille käyttäjille
 
@@ -57,7 +63,7 @@ Pidä mielessä seuraavat asiat ennen rekisteröitymistä:
 
    ![Lisää tilauksia](media/service-admin-licensing-organization/service-power-bi-pro-in-your-organization-06.png)
 
-1. **Muut palvelupaketit** -kohdan alla siirrä hiiren osoitin Power BI Pron kolmen pisteen (**. . .**) päälle ja valitse **Aloita ilmaisen kokeiluversion käyttö**.
+1. **Muut palvelupaketit** -kohdan alla siirrä hiiren osoitin Power BI Pron kolmen pisteen ( **. . .** ) päälle ja valitse **Aloita ilmaisen kokeiluversion käyttö**.
 
    ![Aloita ilmainen kokeilu](media/service-admin-licensing-organization/service-power-bi-pro-in-your-organization-07.png) 
 
@@ -97,9 +103,9 @@ Jos rajoittamaton Power BI (ilmainen) -käyttöoikeuslohko ei ole käytettäviss
 
 1. Valitse vasemmasta siirtymisruudusta **Laskutus** > **Tilaukset**.
 
-1. Valitse oikealta puolelta **Lisää tilauksia +**.
+1. Valitse oikealta puolelta **Lisää tilauksia +** .
 
-1. **Muut palvelupaketit** -kohdan alla siirrä hiiren osoitin Power BI (ilmainen) -version kolmen pisteen (**. . .**) päälle ja valitse **Osta nyt**.
+1. **Muut palvelupaketit** -kohdan alla siirrä hiiren osoitin Power BI (ilmainen) -version kolmen pisteen ( **. . .** ) päälle ja valitse **Osta nyt**.
 
     ![Osta nyt – Power BI (ilmainen)](media/service-admin-licensing-organization/buy-powerbi-free.png)
 
@@ -128,12 +134,12 @@ Rekisteröitymistä ohjaava AAD-asetus on **AllowAdHocSubscriptions**. Useimmiss
      connect-msolservice -credential $msolcred
     ```
 
-   ![Sisäänkirjautuminen Azure Active Directoryyn](media/service-admin-licensing-organization/aad-signin.png)
+   ![Sisäänkirjautuminen Azure Active Directoryyn](media/service-admin-licensing-organization/azure-ad-sign-in.png)
 
-1. Kun olet kirjautunut sisään, suorita seuraava komento, jotta näet, mikä asetus vuokraajalla on tällä hetkellä määritettynä.
+1. Kun olet kirjautunut sisään, suorita seuraava komento, jotta näet, mikä asetus vuokraajalla on tällä hetkellä määritettynä. (Huomaa, että 'fl ”alla kirjain” l ”, ei numero 1.)
 
     ```powershell
-     Get-MsolCompanyInformation | fl AllowAdHocSubscriptions
+     Get-MsolCompanyInformation | fl AllowAdHocSubscriptions 
     ```
 1. Suorittamalla seuraavan komennon voit ottaa käyttöön ($true) tai poistaa käytöstä ($false) **AllowAdHocSubscriptions**-asetuksen.
 

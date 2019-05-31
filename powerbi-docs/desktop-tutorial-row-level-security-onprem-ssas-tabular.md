@@ -12,10 +12,10 @@ ms.date: 05/08/2019
 ms.author: selvar
 LocalizationGroup: Connect to data
 ms.openlocfilehash: 57a285b075b17b2229ec4267a476cdd4b86ea7ad
-ms.sourcegitcommit: 10a87c016f497dbeba32f94ed1f3688a70816fea
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/09/2019
+ms.lasthandoff: 05/29/2019
 ms.locfileid: "65513603"
 ---
 # <a name="dynamic-row-level-security-with-analysis-services-tabular-model"></a>Dynaaminen rivitason suojaus Analysis Servicen taulukkomallissa
@@ -32,7 +32,7 @@ Tämän opetusohjelman aikana seuraavat vaiheet on kuvattu yksityiskohtaisesti, 
 * Luo raporttiin perustuva uusi, raporttiin perustuva koontinäyttö ja lopuksi
 * jaa koontinäyttö työtovereille
 
-Jotta voit noudattaa tämän opetusohjelman vaiheita, tarvitset **AdventureworksDW2012**-tietokannan, joka on ladattavissa **[tietovarastosta](https://github.com/Microsoft/sql-server-samples/releases/tag/adventureworks)**.
+Jotta voit noudattaa tämän opetusohjelman vaiheita, tarvitset **AdventureworksDW2012**-tietokannan, joka on ladattavissa **[tietovarastosta](https://github.com/Microsoft/sql-server-samples/releases/tag/adventureworks)** .
 
 ## <a name="task-1-create-the-user-security-table-and-define-data-relationship"></a>Tehtävä 1: Käyttäjän tietoturvataulukon luominen ja tietojen yhteyden määrittäminen
 Lukuiset julkaistut artikkelit opastavat rivitason dynaamisen suojauksen määrittämisessä **taulukkomuotoiseen SQL Server Analysis Services (SSAS)** -malliin. Tässä esimerkissä noudatetaan [Dynaamisen suojauksen toteuttaminen rivisuodattimien avulla](https://msdn.microsoft.com/library/hh479759.aspx) -artikkelin ohjeita. Voit suorittaa opetusohjelman ensimmäisen tehtävän seuraavasti:
@@ -40,7 +40,7 @@ Lukuiset julkaistut artikkelit opastavat rivitason dynaamisen suojauksen määri
 1. Esimerkissä käytetään **AdventureworksDW2012**-relaatiotietokantaa. Luo kyseiseen tietokantaan **DimUserSecurity**-taulukko seuraavassa kuvassa esitetyllä tavalla. Tässä esimerkissä taulukon luomiseen käytetään SQL Server Management Studiota (SSMS).
    
    ![](media/desktop-tutorial-row-level-security-onprem-ssas-tabular/createusersecuritytable.png)
-2. Kun taulukko on luotu ja tallennettu, sinun on luotava suhde **DimUserSecurity**-taulukon ja **SalesTerritoryID**-sarakkeen sekä **DimSalesTerritory**-taulukon ja **SalesTerritoryKey**-sarakkeen välille seuraavassa kuvassa esitetyllä tavalla. Voit tehdä tämän **SSMS**:ssä napsauttamalla hiiren kakkospainikkeella **DimUserSecurity**-taulukkoa ja valitsemalla **Rakenne**. Valitse sitten valikosta **Taulukon suunnittelu -> Suhteet...** 
+2. Kun taulukko on luotu ja tallennettu, sinun on luotava suhde **DimUserSecurity**-taulukon ja **SalesTerritoryID**-sarakkeen sekä **DimSalesTerritory**-taulukon ja **SalesTerritoryKey**-sarakkeen välille seuraavassa kuvassa esitetyllä tavalla. Voit tehdä tämän **SSMS**:ssä napsauttamalla hiiren kakkospainikkeella **DimUserSecurity**-taulukkoa ja valitsemalla **Rakenne**. Valitse sitten valikosta **Taulukon suunnittelu -> Suhteet...**
    
    ![](media/desktop-tutorial-row-level-security-onprem-ssas-tabular/createusersecuritytable_keys.png)
 3. Tallenna taulukko ja lisää siihen muutama rivi käyttäjän tietoja napsauttamalla **DimUserSecurity**-taulukkoa uudelleen hiiren kakkospainikkeella ja valitsemalla sitten **Muokkaa 200 ylintä riviä**. Kun olet lisännyt kyseiset käyttäjät, **DimUserSecurity**-taulukon rivit näyttävät seuraavalta:
@@ -70,7 +70,7 @@ Lukuiset julkaistut artikkelit opastavat rivitason dynaamisen suojauksen määri
 6. Tässä vaiheessa käytetään **LOOKUPVALUE**-funktiota palauttamaan arvot sarakkeelle, jossa Windows-käyttäjänimi on sama kuin **USERNAME**-funktion palauttama käyttäjänimi. Kyselyt voidaan sen jälkeen rajoittaa **LOOKUPVALUE**-funktion palauttamiin arvoihin, jotka vastaavat saman tai liittyvän taulukon arvoja. Kirjoita seuraava kaava **DAX-suodattimen** sarakkeeseen:
    
        =DimSalesTerritory[SalesTerritoryKey]=LOOKUPVALUE(DimUserSecurity[SalesTerritoryID], DimUserSecurity[UserName], USERNAME(), DimUserSecurity[SalesTerritoryID], DimSalesTerritory[SalesTerritoryKey])
-    Tässä kaavassa **LOOKUPVALUE**-funktio palauttaa kaikki arvot **DimUserSecurity[SalesTerritoryID]**-sarakkeesta, jossa **DimUserSecurity[UserName]** on nykyinen kirjautunut Windows-käyttäjänimi ja **DimUserSecurity[SalesTerritoryID]** on sama kuin **DimSalesTerritory[SalesTerritoryKey]**.
+    Tässä kaavassa **LOOKUPVALUE**-funktio palauttaa kaikki arvot **DimUserSecurity[SalesTerritoryID]** -sarakkeesta, jossa **DimUserSecurity[UserName]** on nykyinen kirjautunut Windows-käyttäjänimi ja **DimUserSecurity[SalesTerritoryID]** on sama kuin **DimSalesTerritory[SalesTerritoryKey]** .
    
     > [!IMPORTANT]
     > Huomaa, että DAX-funktiota [USERELATIONSHIP](https://msdn.microsoft.com/query-bi/dax/userelationship-function-dax) ei tueta rivitason suojausta käytettäessä.

@@ -12,10 +12,10 @@ ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Create reports
 ms.openlocfilehash: 4c37f3bb8f84c6ab40dceb3327f2b244559e9170
-ms.sourcegitcommit: 10a87c016f497dbeba32f94ed1f3688a70816fea
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/09/2019
+ms.lasthandoff: 05/29/2019
 ms.locfileid: "65513977"
 ---
 # <a name="use-quick-measures-to-easily-perform-common-and-powerful-calculations"></a>Pikamittareiden avulla voit suorittaa helposti yleisiä ja tehokkaita laskutoimituksia
@@ -93,7 +93,7 @@ Seuraavasta **Matrix**-visualisoinnista (esimerkki on englanninkielisestä käyt
 
 ![](media/desktop-quick-measures/quick-measures_05.png)
 
-Kun napsautat **Values (Arvot)** -kenttää hiiren kakkospainikkeella ja valitset **Quick measures (Pikamittarit)**, voit valita *Calculation*-kohdassa laskutoimitukseksi *Average per category (keskimäärä per luokka)* ja valita sitten *Base Value -arvoksi eli perusarvoksi*  *Sum of SalesAmount (myynnin määrän summa)* ja määrittää sitten *SalesAmount-arvon eli myynnin määrän* vetämällä tämän kentän oikean ruudun *Fields (Kentät)* -ruudusta vasemmalle *Category (Luokka)* -osioon.
+Kun napsautat **Values (Arvot)** -kenttää hiiren kakkospainikkeella ja valitset **Quick measures (Pikamittarit)** , voit valita *Calculation*-kohdassa laskutoimitukseksi *Average per category (keskimäärä per luokka)* ja valita sitten *Base Value -arvoksi eli perusarvoksi*  *Sum of SalesAmount (myynnin määrän summa)* ja määrittää sitten *SalesAmount-arvon eli myynnin määrän* vetämällä tämän kentän oikean ruudun *Fields (Kentät)* -ruudusta vasemmalle *Category (Luokka)* -osioon.
 
 ![](media/desktop-quick-measures/quick-measures_06.png)
 

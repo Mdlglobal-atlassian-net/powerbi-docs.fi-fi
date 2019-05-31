@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 09/14/2018
+ms.date: 04/22/2019
 ms.author: mshenhav
-ms.openlocfilehash: 99f40837f4b2c188120c4ca0311be3e9ded5fe95
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.openlocfilehash: 79ca47f83bb39ab9d6df141b5a26dcb54e00c72c
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54276902"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65100948"
 ---
 # <a name="view-power-bi-reports-optimized-for-your-phone"></a>Puhelimelle optimoitujen Power BI ‑raporttien tarkastelu
 
@@ -24,9 +24,7 @@ Koskee seuraavia:
 |:--- |:--- |
 | iPhonet |Android-puhelimet |
 
-Kun luot Power BI Desktopissa tai Power BI -palvelussa Power BI ‑raportin, voit myös [luoda raportista version, joka on optimoitu ](../../desktop-create-phone-report.md) puhelimessa olevassa Power BI ‑sovelluksessa tarkastelua varten.
-
-Kun avaat Power BI ‑raportin puhelimessa, Power BI tunnistaa, onko raportti optimoitu puhelimia varten ja avaa automaattisesti optimoidun raportin pystysuuntaisessa tilassa.
+Kun tarkastelet Power BI-raportti puhelimessa, Power BI tarkistaa, onko raportti optimoitu puhelimia varten. Jos se on Power BI Avaa automaattisesti optimoidun raportin pystynäkymässä.
 
 ![Raportti pystysuuntaisessa tilassa](./media/mobile-apps-view-phone-report/07-power-bi-phone-report-portrait.png)
 
@@ -40,7 +38,7 @@ Kaikki muut Power BI ‑raporttien ominaisuudet toimivat myös puhelinoptimoidui
 * [Raportit Android-puhelimissa](mobile-reports-in-the-mobile-apps.md).
 
 ## <a name="filter-the-report-page-on-a-phone"></a>Raporttisivun suodattaminen puhelimella
-Jos puhelinoptimoituun raporttiin on määritetty suodattimia, voit käyttää niitä tarkastellessasi raporttia puhelimella. Raportti avautuu puhelimessa suodatettuna verkossa olevassa raportissa suodatettuihin arvoihin ja saat ilmoituksen, että sivulla on aktiivisia suodattimia. Voit muuttaa suodattimia puhelimessasi.
+Jos puhelinoptimoituun raporttiin on määritetty suodattimia, voit käyttää niitä tarkastellessasi raporttia puhelimella. Raportti avautuu puhelimessasi suodatettu raportissa verkossa suodatetaan arvot. Saat ilmoituksen siitä, että sivulla on aktiivisia suodattimia. Voit muuttaa suodattimia puhelimessasi.
 
 1. Napauta suodatinkuvaketta ![Puhelimen suodatinkuvake](./media/mobile-apps-view-phone-report/power-bi-phone-filter-icon.png) sivun alareunasta. 
 2. Tuo esiin sinua kiinnostavat tulokset käyttämällä joko perus- tai lisäsuodattimia.
@@ -48,7 +46,7 @@ Jos puhelinoptimoituun raporttiin on määritetty suodattimia, voit käyttää n
     ![BI-puhelinversion puhelinraportin lisäsuodatin](./media/mobile-apps-view-phone-report/power-bi-iphone-advanced-filter-toronto.gif)
 
 ## <a name="cross-highlight-visuals"></a>Visualisointien ristiinkorostaminen
-Visualisointien ristiinkorostaminen puhelinraporteissa toimii samalla tavoin kuin Power BI -palvelussa ja puhelinraporteissa vaakasuunnassa: kun valitset tietoja yhdessä visualisoinnissa, tiedot korostuvat myös muissa tämän sivun visualisoinneissa.
+Näytä toimii pysty visualisointien ristiinkorostaminen samalla tavoin kuin Power BI-palvelussa ja vaaka-näkymää: kun valitset tietoja yhdessä visualisoinnissa, tiedot korostuvat myös muissa tämän sivun visualisoinneissa.
 
 Lue lisää [suodattamisesta ja korostamisesta Power BI:ssä](../../power-bi-reports-filters-and-highlighting.md).
 
@@ -58,13 +56,13 @@ Kun valitset puhelinraportissa visualisoinnin, puhelinraportti korostaa visualis
 Kun visualisointi on valittuna, voit tehdä erilaisia toimintoja, kuten vierittää visualisointia. Kun haluat poistaa visualisoinnin valinnan, kosketa aluetta visualisoinnin ulkopuolella.
 
 ## <a name="open-visuals-in-focus-mode"></a>Visualisointien avaaminen tarkastelutilassa
-Puhelinraporteissa on käytettävissä myös tarkastelutila, jonka ansiosta voit nähdä yksittäisen visualisoinnin suurempana ja tarkastella lähemmin sekä visualisointia että raporttia.
+Puhelinraportit on myös Kohdistustila: Hanki suurempi nähdä yksittäisen visualisoinnin ja tutustu entistä helpommin.
 
-* Napauta puhelinraportissa visualisoinnin oikeasta yläkulmasta kolmea pistettä (**...**) > **Laajenna kohdistustilaan**.
+* Napauta puhelinraportissa visualisoinnin oikeasta yläkulmasta kolmea pistettä ( **...** ) &gt; **Laajenna tarkastelutilaan**.
   
     ![Laajenna tarkastelutilaan](././media/mobile-apps-view-phone-report/power-bi-phone-report-focus-mode.png)
 
-Tarkastelutilassa tekemäsi toimet tulevat myös käyttöön myös raporttipohjassa ja päinvastoin, mikä tuottaa saumattoman katselukokemuksen. Jos esimerkiksi korostat visualisoinnista jonkin arvon ja palaat sitten koko raporttiin, koko raportti on suodatettu visualisoinnissa korostamasi arvon mukaan.
+Älä kohdistustilassa toteuttaa raporttipohjassa ja päinvastoin. Esimerkiksi Korosta arvoa visualisoinnissa, ja palaat sitten koko raporttiin, raportti on suodatettu visualisoinnissa arvon haluat.
 
 Näytön kokorajoitusten vuoksi jotkin toiminnot ovat käytettävissä vain tarkastelutilassa:
 
@@ -72,21 +70,33 @@ Näytön kokorajoitusten vuoksi jotkin toiminnot ovat käytettävissä vain tark
 * **Lajittele** visualisoinnin arvoja.
 * **Kumoa**: poistaa visualisoinnin tarkastelussa tehdyt toimet ja palauttaa raportin luonnin yhteydessä määritetyn tietojoukon.
   
-    Jos haluat poistaa kaikki tarkastelutoimet, napauta kolmea pistettä (**...**) > **Kumoa**.
+    Jos haluat poistaa kaikki tarkastelutoimet, napauta kolmea pistettä ( **...** ) > **Kumoa**.
   
     ![Kumoa](././media/mobile-apps-view-phone-report/power-bi-phone-report-revert-levels.png)
   
-    Kumoaminen on käytettävissä sekä raportin tasolla, jolloin se poistaa kaikki tarkastelutoimet kaikista visualisoinneista, että visualisoinnin tasolla, jolloin se poistaa kaikki tarkastelutoimet valittuna olevasta yksittäisestä visualisoinnista.   
+    Kumoaminen on käytettävissä sekä raporttitasolla, tyhjentää tarkastelutoimet kaikista visualisoinneista tai visualisoinnin tasolla tyhjentää valitun visualisoinnin tarkastelemisen.   
 
 ## <a name="drill-down-in-a-visual"></a>Porautuminen alaspäin visualisoinnissa
-Jos visualisointiin on määritetty hierarkiatasot, voit porautua syvemmälle visualisoinnin esittämien tietojen yksityiskohtiin ja palata sitten takaisin ylöspäin. [Lisää visualisointiin mahdollisuus porautua alaspäin](../end-user-drill.md) joko Power BI -palvelussa tai Power BI Desktopissa. Porautuminen alaspäin toimii vain puhelinoptimoiduissa Power BI ‑raporteissa, joita tarkastellaan puhelimella. 
+Jos visualisointiin on määritetty hierarkiatasot, voit porautua syvemmälle visualisoinnin esittämien tietojen yksityiskohtiin ja palata sitten takaisin ylöspäin. [Lisää visualisointiin mahdollisuus porautua alaspäin](../end-user-drill.md) joko Power BI -palvelussa tai Power BI Desktopissa.
 
-1. Napauta puhelimella raportin oikeasta yläkulmasta kolmea pistettä (**...**) > **Laajenna kohdistustilaan**.
+On muutamia porautuminen tyyppiä:
+
+### <a name="drill-down-on-a-value"></a>Poraudu alaspäin arvo
+1. Napauta pitkään arvopistettä visualisoinnissa (Napauta ja pidä).
+2. Työkaluvihje tulee näkyviin, ja jos hierarkia on määritetty, sitten työkaluvihjeen alatunniste näkyy Poraudu alaspäin ja ylöspäin osoittava nuoli.
+3. Napauta alanuolta porautuminen
+
+    ![Napauta Poraudu alaspäin](././media/mobile-apps-view-phone-report/report-drill-down.png)
+    
+4. Napauta Poraamisen ylänuolta.
+
+### <a name="drill-to-next-level"></a>Siirry seuraavalle tasolle
+1. Napauta puhelimella raportin oikeasta yläkulmasta kolmea pistettä ( **...** ) &gt; **Laajenna tarkastelutilaan**.
    
     ![Laajenna tarkastelutilaan](././media/mobile-apps-view-phone-report/power-bi-phone-report-focus-mode.png)
    
     Tässä esimerkissä palkit kuvaavat osavaltioiden arvoja.
-2. Napauta tutkimiskuvaketta ![Tutkimiskuvake](./media/mobile-apps-view-phone-report/power-bi-phone-report-explore-icon.png) vasemmasta alakulmasta.
+2. Napauta tutkimiskuvaketta ![Tutkimiskuvake](./media/mobile-apps-view-phone-report/power-bi-phone-report-explore-icon.png) vasemmassa alakulmassa.
    
     ![Tutkimistila](./media/mobile-apps-view-phone-report/power-bi-phone-report-explore-mode.png)
 3. Napauta joko vaihtoehtoa **Näytä seuraava taso** tai **Laajenna seuraavalle tasolle**.
@@ -99,9 +109,26 @@ Jos visualisointiin on määritetty hierarkiatasot, voit porautua syvemmälle vi
 4. Jos napautat vasemmassa yläkulmassa olevaa nuolta, palaat puhelinraporttiin, jossa arvot näkyvät edelleen alemmalle tasolle laajennettuna.
    
     ![Laajennettuna edelleen alemmalle tasolle](./media/mobile-apps-view-phone-report/power-bi-back-to-phone-report-expanded-levels.png)
-5. Voit palata takaisin alkuperäiselle tasolle napauttamalla uudelleen kolmea pistettä (**...** ) > **Kumoa**.
+5. Voit palata takaisin alkuperäiselle tasolle napauttamalla uudelleen kolmea pistettä ( **...** ) > **Kumoa**.
    
     ![Kumoa](././media/mobile-apps-view-phone-report/power-bi-phone-report-revert-levels.png)
+
+## <a name="drill-through-from-a-value"></a>Porautua arvo
+Porautuminen yhdistää yhden raporttisivun arvot raportin muilla sivuilla. Kun voit porautua arvopisteestä raportin toiselle sivulle, arvopisteiden arvot on käytetty Porattu-sivun kautta tai se on valitut tiedot kontekstissa.
+Raporttien tekijät voivat [määrittää porautuminen](https://docs.microsoft.com/power-bi/desktop-drillthrough) luodessaan raportin.
+
+1. Napauta pitkään arvopistettä visualisoinnissa (Napauta ja pidä).
+2. Työkaluvihje tulee näkyviin, ja jos porautuminen on määritetty, sitten työkaluvihjeen alatunniste näkyy porautuminen nuolta.
+3. Napauta nuolta porautuminen
+
+    ![Napauta porautuminen](././media/mobile-apps-view-phone-report/report-drill-through1.png)
+
+4. Valitse Poraudu raporttisivu
+
+    ![Valitse raporttisivu](././media/mobile-apps-view-phone-report/report-drill-through2.png)
+
+5. Käytä app-otsikkoa ja palaa sivulle, voit käynnistää takaisin-painike.
+
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 * [Power BI -puhelinsovelluksille optimoitujen raporttien luominen](../../desktop-create-phone-report.md)

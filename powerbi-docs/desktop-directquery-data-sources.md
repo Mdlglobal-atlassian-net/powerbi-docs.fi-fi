@@ -8,14 +8,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/01/2018
+ms.date: 04/10/2019
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 84e40e9fbce07716a2250a58bfcbd396a40d2842
-ms.sourcegitcommit: 796bf513bf8669676e2a44627b56221b1629a6a8
-ms.translationtype: HT
+ms.openlocfilehash: 3bb7de9685a1e0fc9fa423328ad9e1e5faa53603
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56826556"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61305451"
 ---
 # <a name="data-sources-supported-by-directquery-in-power-bi"></a>{0}DirectQueryn tukemat tietolähteet Power BI:ssä
 
@@ -24,26 +24,29 @@ ms.locfileid: "56826556"
 Seuraavat tietolähteet tukevat DirectQueryä Power BI:ssä:
 
 * Amazon Redshift
-* Azure HDInsight Spark (beeta)
+* AtScale (beeta)
+* Azure HDInsight Spark
 * Azure SQL -tietokanta
 * Azure SQL Data Warehouse
-* Google BigQuery (beeta)
+* Google BigQuery
+* HDInsight Interactive Query
 * IBM DB2 -tietokanta
-* IBM Netezza (beeta)
+* IBM Netezza
 * Impala (versio 2.x)
 * Oracle-tietokanta (versio 12 tai uudempi versio)
+* Oracle Essbase
 * SAP Business Warehouse -sovelluspalvelin
-* SAP Business Warehouse -viestipalvelin (beeta)
+* SAP Business Warehouse -viestipalvelin
 * SAP HANA
 * Snowflake
-* Spark (beeta) (versio 0.9 tai uudempi versio)
+* Spark (versio 0.9 tai tai uudempi)
 * SQL Server
 * Teradata-tietokanta
-* Vertica (beeta)
+* Vertica
 
-Tietolähteet, joiden nimien perässä on **(beeta)** tai **(esikatselu)**, voivat muuttua, eikä niiden tuotantokäyttöä tueta. Niitä ei myöskään välttämättä tueta raportin julkaisemisen jälkeen **Power BI -palveluun**, mikä tarkoittaa sitä, että julkaistun raportin avaaminen tai tietojoukon tutkiminen voi aiheuttaa virheen.
+Tietolähteet, joiden nimien perässä on **(beeta)** tai **(esikatselu)** , voivat muuttua, eikä niiden tuotantokäyttöä tueta. Niitä ei myöskään välttämättä tueta raportin julkaisemisen jälkeen **Power BI -palveluun**, mikä tarkoittaa sitä, että julkaistun raportin avaaminen tai tietojoukon tutkiminen voi aiheuttaa virheen.
 
-Ainoa ero **(beeta)**- ja **(esikatselu)**-tietolähteiden välillä on se, että **(esikatselu)**-merkittyjen lähteiden on oltava käytössä esikatselutoimintoja, ennen kuin ne tulevat saataville käyttöä varten. Ota käyttöön **(esikatselu)**-tietoyhdistin **Power BI Desktopissa** valitsemalla **Tiedosto > Asetukset ja vaihtoehdot > Asetukset** ja valitsemalla sitten **Esikatselutoiminnot**.
+Ainoa ero **(beeta)** - ja **(esikatselu)** -tietolähteiden välillä on se, että **(esikatselu)** -merkittyjen lähteiden on oltava käytössä esikatselutoimintoja, ennen kuin ne tulevat saataville käyttöä varten. Ota käyttöön **(esikatselu)** -tietoyhdistin **Power BI Desktopissa** valitsemalla **Tiedosto > Asetukset ja vaihtoehdot > Asetukset** ja valitsemalla sitten **Esikatselutoiminnot**.
 
 > [!NOTE]
 > SQL Serverille lähetettyjen DirectQuery-kyselyjen käyttö edellyttävää todennusta senhetkisillä Windows-todennuksen tunnistetiedoilla tai tietokannan tunnistetiedoilla. Vaihtoehtoisten tunnistetietojen käyttöä ei tueta.

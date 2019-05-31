@@ -12,17 +12,17 @@ ms.topic: tutorial
 ms.date: 12/06/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 3732939dbf3d8a3569d0c945d9a4d0935d573c86
-ms.sourcegitcommit: a054782370dec56d49bb205ee10b7e2018f22693
-ms.translationtype: HT
+ms.openlocfilehash: cd92374a23a2ee7023c75cfb2612c00d513e9895
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56662154"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61065646"
 ---
 # <a name="tutorial-set-data-alerts-in-power-bi-service"></a>Opetusohjelma: Power BI -palvelun tietoilmoitusten määrittäminen
 Aseta ilmoituksia ilmoittamaan sinulle, kun koontinäyttösi tiedot muuttuvat asettamiesi rajojen ulkopuolelle. 
 
-Voit asettaa ruutujen ilmoituksia, jos sinulla on Power BI Pro - käyttöoikeus tai jos koontinäyttö on jaettu kanssasi [Premium-kapasiteetista](../service-premium.md). Ilmoitukset voidaan määrittää vain ruuduille, jotka on kiinnitetty raportin visualisoineista, ja vain mittareissa, suorituskykyilmaisimissa ja korteissa. Ilmoitukset voidaan määrittää visualisoinneille, jotka on luotu virtautustietojoukoista, jotka on kiinnitetty koontinäyttöön raportista, mutta niitä ei voi määrittää virtautusruuduille, jotka on luotu suoraan koontinäytöstä valitsemalla **Lisää ruutu**  >  **Mukautetut virtautettavat tiedot** . 
+Voit asettaa ruutujen ilmoituksia, jos sinulla on Power BI Pro - käyttöoikeus tai jos koontinäyttö on jaettu kanssasi [Premium-kapasiteetista](../service-premium-what-is.md). Ilmoitukset voidaan määrittää vain ruuduille, jotka on kiinnitetty raportin visualisoineista, ja vain mittareissa, suorituskykyilmaisimissa ja korteissa. Ilmoitukset voidaan määrittää visualisoinneille, jotka on luotu virtautustietojoukoista, jotka on kiinnitetty koontinäyttöön raportista, mutta niitä ei voi määrittää virtautusruuduille, jotka on luotu suoraan koontinäytöstä valitsemalla **Lisää ruutu**  >  **Mukautetut virtautettavat tiedot** . 
 
 Vain sinä näet asettamasi hälytykset, vaikka jakaisit koontinäyttösi. Tietoilmoitukset synkronoidaan täysin kaikissa ympäristöissä. Määritä ja tarkastele tietoilmoituksia [Power BI -mobiilisovelluksissa](mobile/mobile-set-data-alerts-in-the-mobile-apps.md) ja Power BI -palvelussa. 
 

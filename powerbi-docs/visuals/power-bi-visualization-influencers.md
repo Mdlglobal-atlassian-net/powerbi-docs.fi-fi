@@ -1,280 +1,344 @@
 ---
 title: Tärkeimpien vaikuttajien visualisoinnin opetusohjelma
-description: Opetusohjelma – tärkeiden vaikuttajien visualisoinnin luominen Power BI:ssä
+description: 'Opetusohjelma: Avaimen influencers visualisoinnin luominen Power BI'
 author: mihart
 manager: kvivek
 ms.reviewer: juluczni
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: tutorial
-ms.date: 02/12/2019
+ms.date: 05/22/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 1f55a12e306af8a28e297e9feab2f2c0ae0cd60b
-ms.sourcegitcommit: 87e81ba92f3d1d65c26f9fc007bf106f96f37bfd
-ms.translationtype: HT
+ms.openlocfilehash: 8d2d6755d01a8ea9d5dad9813fcd7f4b4c1f8232
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57461668"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66051611"
 ---
 # <a name="key-influencers-visualization"></a>Tärkeiden vaikuttajien visualisointi
-Tärkeiden vaikuttajien visualisoinnin avulla ymmärrät paremmin sinua kiinnostavaa arvoa säätäviä tekijöitä. Se analysoi tietosi, panee merkitsevät tekijät järjestykseen ja näyttää ne tärkeinä vaikuttajina. Olet ehkä kiinnostunut tietämään, mikä vaikuttaa työntekijöiden vaihtuvuuteen. Yksi tekijä voi olla työsopimuksen pituus ja toinen työntekijän ikä. 
+Visualisoinnin avaimen influencers auttaa ymmärtämään tekijät asemaan mittausarvoa, josta olet kiinnostunut. Se analysoi tietosi, panee merkitsevät tekijät järjestykseen ja näyttää ne tärkeinä vaikuttajina. Oletetaan, että haluat mitä vaikutuksista työntekijän liikevaihto, joka tunnetaan myös churn sanomia. Pääsee saattaa olla työsuhde sopimuksen pituus ja toinen tekijä voi olla työntekijän ikä. 
  
-## <a name="when-to-use-key-influencers"></a>Milloin kannattaa käyttää tärkeimpiä vaikuttajia? 
-Tärkeimpien vaikuttajien visualisointi on hyvä valinta, kun haluat: 
-- Nähdä, mitkä tekijät vaikuttavat analysoitavaan arvoon.
-
-- Verrata näiden tekijöiden suhteellista tärkeyttä toisiinsa. Onko lyhytaikaisilla työsopimuksilla esimerkiksi enemmän merkitystä työntekijöiden vaihtuvuuteen kuin pitkäaikaisilla? 
+## <a name="when-to-use-key-influencers"></a>Milloin kannattaa käyttää avaimen influencers 
+Avaimen influencers visualisointi on hyvä vaihtoehto, jos haluat: 
+- Katso, mitkä tekijät vaikuttavat analysoitavassa mittausarvo.
+- Kontrasti suhteellinen tärkeys näistä tekijöistä. Onko lyhytaikaisilla työsopimuksilla esimerkiksi enemmän merkitystä työntekijöiden vaihtuvuuteen kuin pitkäaikaisilla? 
 
 ## <a name="key-influencer-requirements"></a>Tärkeimpien vaikuttajien vaatimukset 
-Analysoitavan arvon on oltava luokkakenttä.    
+Voit analysoida arvon on oltava luokittaista tai numeerinen kenttä (koosteet ja mittayksiköitä ei vielä tueta).
 
+## <a name="features-of-the-key-influencers-visual"></a>Visualisoinnin avaimen influencers ominaisuudet
 
-## <a name="features-of-the-key-influencer-visual"></a>Tärkeimpien vaikuttajien visualisoinnin ominaisuudet
+![Numeroitu ominaisuudet](media/power-bi-visualization-influencers/power-bi-ki-numbers-new.png)
 
-![numeroidut ominaisuudet](media/power-bi-visualization-influencers/power-bi-ki-numbers-new.png)    
+1. **Välilehdet**: Valitse välilehti näkymissä. **Avaimen influencers** kerrotaan ylimmät osallistujat valitun metric-arvoa. **Ylin segmentit** kerrotaan yläreunan segmentit, jotka vaikuttavat valitun metric-arvo. *Segmentti* koostuu arvojen yhdistelmästä. Esimerkiksi yhdestä segmentistä saattaa olla kuluttajille, joilla on vähintään 20 vuotta asiakkaille ja live lännessä. 
 
-1. ***Välilehdet*** – siirry näkymästä toiseen valitsemalla välilehti. Tärkeimmissä vaikuttajissa näet valittuun mittausarvoon eniten vaikuttavat tekijät. Ylimmissä segmenteissä näet valittuun mittausarvoon eniten vaikuttavat segmentit. *Segmentti* koostuu arvojen yhdistelmästä.  Yksi segmentti voivat olla kuluttajat, jotka ovat olleet kuluttajia ainakin kahdenkymmenen vuoden ajan ja asuvat maan länsiosissa. 
+2. **Avattavasta luetteloruudusta**: Mittarin tutkimuksen kohteena arvo. Tässä esimerkissä tarkastelee mittausarvon **luokitus**. Valitulla arvolla on **pieni**.
 
-2. ***Avattavan taulukko*** – tutkittavan tiedon arvo. Tässä esimerkissä tarkastelemme mitattavaa tietoa **luokitus** ja sille valitsemamme arvo on **alhainen**.    
+3. **Oikaisussa**: Se auttaa tulkita visualisoinnin vasemmassa ruudussa.
 
-3. ***Oikaisu*** – auttaa meitä tulkitsemaan vasemman ruudun visualisoinnin. 
+4. **Vasemmassa ruudussa**: Vasemmassa ruudussa on yksi visualisointi. Tässä tapauksessa vasemmassa ruudussa näkyy yläreunan avaimen influencers luettelo.
 
-4. ***Vasen ruutu*** – vasen ruutu sisältää yhden visualisoinnin.  Tässä tapauksessa vasen ruutu näyttää meille luettelon tärkeimmistä vaikuttajista.
+5. **Oikaisussa**: Se auttaa tulkita visual oikeanpuoleisessa ruudussa.
 
-5. ***Oikaisu*** – auttaa meitä tulkitsemaan oikean ruudun visualisoinnin.
+6. **Oikeanpuoleisessa ruudussa**: Oikeanpuoleisessa ruudussa on yksi visualisointi. Tässä tapauksessa pylväskaavio näyttää kaikki arvot avaimen vaikuttajana **teeman** , joka valittiin vasemmassa ruudussa. Tietyn arvon **käytettävyyttä** vasemmassa ruudussa näkyy vihreänä. Kaikki muut arvot **teeman** näkyvät mustaksi.
 
-6. ***Oikea ruutu*** – oikea ruutu sisältää yhden visualisoinnin. Tässä tapauksessa pylväskaavio näyttää kaikki arvot **tärkeimmälle vaikuttajalle**, **teema** joka valitaan vasemmasta ruudusta. Tietty arvo (**Käytettävyys**) vasemmasta ruudusta on vihreä ja kaikki muut **Teeman** arvot ovat mustalla.
+7. **Keskiarvon viiva**: Kaikki muut mahdolliset arvot lasketaan keskiarvo **teeman** lukuun ottamatta **käytettävyyttä**. Laskelma koskee siis kaikkia mustalla näkyviä arvoja. Se ilmaisee, mikä prosenttiosuus toinen **teemat** sait alhaista luokitusta vastaavaksi. Toisin sanoen, kun asiakas annetaan luokitus, asiakkaan kuvataan syy tai luokitus teeman myös. Jotkin teemat ovat käytettävyyttä, nopeuden ja suojausasetukset. 
 
-7. ***Keskiarvon viiva*** – keskiarvo lasketaan kaikille muille mahdollisille **Teeman** arvoille paitsi **käytettävyydelle**. Laskelma koskee siis kaikkia mustalla näkyviä arvoja. Se kertoo meille, mikä muiden **teemojen** prosenttiosuus johti alhaiseen luokitukseen. Toisin sanoen antaessaan luokituksen asiakas ilmoittaa luokitukselle myös syyn eli **teeman**. Teemoja ovat esimerkiksi käytettävyys, nopeus, tietoturva ym. **Teema** = **Käytettävyys** on vasemman ruudun visualisoinnin mukaan toiseksi tärkein alhaiseen luokitukseen vaikuttava tekijä. Jos laskemme keskiarvon kaikista muista teemoista ja niiden vaikutuksesta **alhaiseen** luokitukseen, saamme tuloksen, joka tässä näkyy punaisena. Kaikkien muiden teemojen joukosta vain 11,35 prosenttia niistä ovat suurempia kuin **käytettävyys**. 
+   **Teema on käytettävyyttä** on toiseksi avaimen vaikuttajana-alhaista luokitusta vastaavaksi, visualisoinnin vasemmassa ruudussa mukaan. Jos keskimääräinen kaikki muut teemat ja niiden luokitus on vaikutus **pieni**, näytetään punaisina tuloksen. Kaikki muut teemoista annetaan, vain 11.35 % on suurempi kuin **käytettävyyttä**.
 
-8. ***Valintaruutu*** – näytä vain sellaiset arvot, jotka ovat vaikuttajia.
+8. **Valintaruutu**: **Näytä vain arvot, jotka ovat influencers**.
 
 ## <a name="create-a-key-influencers-visual"></a>Tärkeimpien vaikuttajien visualisoinnin luominen 
  
-Katso tästä videosta, miten tärkeimpien vaikuttajien visualisointi luodaan, ja luo sitten itse sellainen noudattamalla seuraavia ohjeita. 
+Katso tämä video ja lue, miten voit luoda avaimen influencers visualisoinnin. Noudata näitä ohjeita luo sellainen. 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/fDb5zZ3xmxU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Microsoftin tuotteiden hallinta haluaa selvittää, mitkä tekijät saavat asiakkaat esittämään kielteisiä mielipiteitä pilvipalvelustamme.  Jos haluat osallistua, avaa [asiakaspalautteen PBIX-tiedosto](https://github.com/Microsoft/powerbi-desktop-samples/blob/master/2019/customerfeedback.pbix) Power BI Desktopissa. Voit myös ladata [asiakaspalautteen Excel-tiedoston Power Bi -palvelulle tai Power Bi Desktopille](https://github.com/Microsoft/powerbi-desktop-samples/blob/master/2019/customerfeedback.xlsx). 
+Tuotteen esimiehesi haluaa sinun sanomia joka tekijät liidi asiakkaat voivat jättää negatiivinen kirjoituksia-pilvipalveluun. Jos haluat osallistua, avaa [asiakaspalautteen PBIX-tiedosto](https://github.com/Microsoft/powerbi-desktop-samples/blob/master/2019/customerfeedback.pbix) Power BI Desktopissa. Voit myös ladata [asiakkaan palaute Excel-tiedoston Power BI-palvelussa tai Power BI Desktop](https://github.com/Microsoft/powerbi-desktop-samples/blob/master/2019/customerfeedback.xlsx). 
 
 > [!NOTE]
-> Asiakaspalautteen tietojoukko perustuu lähteeseen [Moro et al., 2014] S. Moro, P. Cortez ja P. Rita. A Data-Driven Approach to Predict the Success of Bank Telemarketing. Decision Support Systems, Elsevier, 62:22-31, kesäkuu 2014 
+> Asiakaspalaute tietojoukko on perusteella, [Moro prohon tai, 2014] S. Moro s. Cortez ja s. Rita. ”Tietoihin perustuvia lähestymistavan ennusteen pankin puhelinmarkkinoinnin onnistumista”. *Tue järjestelmiä Decision*, Elsevier, 62:22-31, kesäkuussa 2014. 
 
-1. Avaa raportti ja valitse tärkeimpien vaikuttajien kuvake.  
+1. Avaa raportti ja valitse **avaimen influencers** kuvake. 
 
     ![Valitse Visualisoinnit-ruudusta Tärkeimmät vaikuttajat -malli](media/power-bi-visualization-influencers/power-bi-template-new.png)
 
-2. Vedä tutkittava mittausarvo **Analysoi**-kenttään. **Analysoi**-kenttä tukee vain luokkamuuttujia, ei jatkuvia muuttujia. Koska haluamme nähdä, mikä saa asiakkaan antamaan palvelumme laadulle luokituksen **Alhainen**, teemme valinnan **Asiakastaulu** > **Luokitus**.    
-3. Vedä sitten mielestäsi **Luokitukseen** vaikuttavia kenttiä **Selitysperuste**-säilöön. Voit vetää sinne aivan niin monta kenttää kuin haluat. Tässä tapauksessa aloitamme seuraavista: 
+2. Siirrä mittausarvoa, joita haluat tutkia tietoja **analysoi** kenttä. **Analysoi** kenttä tukee vain luokittaista tai satunnaista, muuttujan. Määrittää asiakas Nähdäksesi luokitus palvelun vähäistä, valitse **asiakasrekisteriin** > **luokitus**. 
+3. Siirrä kenttiä, jotka mielestäsi voivat vaikuttaa **luokitus** tietoja **selittää mukaan** kenttä. Voit siirtää niin monta kenttää kuin haluat. Tässä tapauksessa alkaa:
     - Maa tai alue 
     - Rooli organisaatiossa 
     - Paketin tyyppi 
     - Yrityksen koko 
-    - teema     
-4. Koska olemme kiinnostuneita negatiivisista luokituksista, valitse **Alhainen** avattavasta luettelosta **Miksi luokitus on**.  
+    - teema 
+1. Keskitytään negatiivinen luokitukset, valitse **pieni** - **mikä vaikuttaa olevan luokitus** avattavasta ruudusta.  
 
-    ![valitse avattavasta luettelosta Alhainen](media/power-bi-visualization-influencers/power-bi-key-influencers.png)
+    ![Valitse avattavasta luetteloruudusta pieni](media/power-bi-visualization-influencers/power-bi-key-influencers.png)
 
-Analyysi tapahtuu analysoitavan kentän taulukkotasolla. Tässä tapauksessa meitä kiinnostaa **Luokitus**-mittausarvo, joka määritellään asiakkaan tasolla (jokainen asiakas on antanut joko korkean tai alhaisen pistemäärän). Kaikki selitystekijämme on määriteltävä asiakastasolla, jotta visualisointi voi hyödyntää niitä. 
+Analyysi suoritetaan kentälle, jota analysoidaan taulukkotasolla. Tässä tapauksessa se on **luokitus** mittausarvo. Tämän mittausarvon on määritetty asiakkaan tasolla. Kullekin asiakkaalle on annettu, suuri pistemäärä tai alhainen arvo. Kaikki selittävän tekijät on määritettävä visualisointi, jotta asiakas-tasolla käyttää niitä. 
 
-Yllä olevassa esimerkissä kaikki selitystekijämme ovat joko yksi yhteen- tai monta yhteen -suhteessa mittausarvoomme. Kukin pistemäärä esimerkiksi liittyy vain yhteen teemaan (asiakasarvion pääteemaan). Vastaavasti jos asiakkaat ovat kotoisin tietystä maasta, edustavat tiettyä jäsenyystyyppiä ja heillä on tietty rooli organisaatiossaan. Selittävät tekijät ovat siis jo asiakkaan määritteitä, eikä mitään muunnoksia tarvita – visualisointi voi käyttää niitä välittömästi. 
+Edellisessä esimerkissä selittävän tekijöistä on yksi-yhteen tai mittausarvon monta yhteen suhdetta. Tässä tapauksessa kukin pistemäärä on täsmälleen yksi teema siihen. Tämä teema oli tärkein teeman asiakkaan tarkastelun. Vastaavasti asiakkaat ovat yksi maasta on yksi Jäsenyystyyppi ja suorittaa yksi organisaation sisällä. Selittävän tekijät on jo asiakkaan ja mitään muunnoksia tarvitaan. Visualisoinnin tehdä niistä heti käyttöön. 
 
-Myöhemmin tarkastelemme tässä opetusohjelmassa mutkikkaampia esimerkkejä, joissa on kyse yksi moneen -suhteista. Tällaisissa tapauksissa sarakkeet on ensin koostettava asiakkaan tasolle asti, ennen kuin analyysi voidaan suorittaa.  
+Tässä opetusohjelmassa tarkastelemme monimutkaisempia esimerkkejä, joissa on yksi-moneen-suhteita. Tällaisessa tapauksessa sarakkeiden on ensin voi koostaa asiakkaan tasolle ennen kuin voit suorittaa analyysi. 
 
-Selittävinä tekijöinä käytetyt mitat ja koosteet arvioidaan myös **Analysoi**-mittausarvon taulukkotasolla, mistä näemme tässä artikkelissa myöhemmin esimerkkejä. 
+Mittayksiköt ja koosteet käyttää selittävän tekijät arvioidaan taulukon tasolla **analysoi** mittausarvo. Esimerkkejä näytetään myöhemmin tässä artikkelissa. 
 
-## <a name="interpreting-categorical-key-influencers"></a>Tärkeimpien luokkavaikuttajien tulkitseminen 
-Katsotaanpa tärkeimpiä vaikuttajia alhaisten luokitusten takana. 
+## <a name="interpret-categorical-key-influencers"></a>Tulkita luokittaista avaimen influencers 
+Katsotaanpa avaimen influencers alhainen luokitukset varten. 
 
-### <a name="top-single-factor-influencing-likelihood-of-a-low-rating"></a>Tärkein yksittäinen tekijä, joka vaikuttaa alhaisten luokitusten todennäköisyyteen
+### <a name="top-single-factor-that-influences-the-likelihood-of-a-low-rating"></a>Yläreunan yhdestä tekijästä, joka vaikuttaa alhaista luokitusta vastaavaksi todennäköisyyttä
 
-Organisaatiossamme on kolme roolia: kuluttajat, järjestelmänvalvojat ja julkaisijat. Näemme, että kuluttajan rooli on tärkeimpiä alhaiseen luokitukseen liittyviä tekijöitä. 
+Organisaation tässä esimerkissä on kolme roolia: kuluttajan, järjestelmänvalvoja ja julkaisijan. Käyttäjä on yläreunan kerroin, joka osallistuu alhaista luokitusta vastaavaksi. 
 
-![valitse Rooli organisaatiossa = kuluttaja](media/power-bi-visualization-influencers/power-bi-role-consumer.png)
+![Valitse rooli organisaatiossa on kuluttaja](media/power-bi-visualization-influencers/power-bi-role-consumer.png)
 
 
-Vielä tarkemmin: kuluttajamme antavat meille kielteisen arvion 2,57 kertaa todennäköisemmin. Tärkeimpien vaikuttajien kaavio luetteloi tekijän **Rooli organisaatiossa = kuluttaja** vasemmalla olevan luettelon kärkeen. Kun valitset **Rooli organisaatiossa = kuluttaja**, Power BI näyttää meille lisätietoja oikeanpuoleisessa ruudussa – kunkin **roolin** vaikutus alhaisen luokituksen todennäköisyyteen.
+Tarkemmin että kuluttajien todennäköisimmin 2.57 kertaa antaa palvelusi negatiivinen arvo. Avaimen influencers kaavion luettelot **organisaation roolin on kuluttaja** vasemmalla luettelossa ensimmäisenä. Valitsemalla **organisaation roolin on kuluttaja**, Power BI Näyttää lisätietoja oikeanpuoleisessa ruudussa. Näytetään jokaisen roolin vertailutiedot vaikutus todennäköisyyttä alhaista luokitusta vastaavaksi.
   
-- 14,93 % kuluttajista antaa alhaisen pistemäärän  
-- Keskimäärin kaikki muut roolit antavat alhaisen pistemäärän 5,78 % ajasta 
-- Kuluttajat antavat siksi alhaisen pistemäärän 2,57 kertaa todennäköisemmin kaikkiin muihin rooleihin verrattuna (erotus vihreän viivan ja punaisen katkoviivan välillä) 
+- 14.93 % kuluttajien antaa alhainen arvo. 
+- Keskimäärin muita rooleja antaa alhainen pistemäärä 5.78 % ajasta.
+- Kuluttajien todennäköisimmin 2.57 kertaa antaa alhainen pistemäärä verrattuna muita rooleja. Voit selvittää tämän vihreän palkki jakamalla punainen pisteviiva. 
 
-### <a name="second-single-factor-influencing-likelihood-of-a-low-rating"></a>Toiseksi tärkein yksittäinen tekijä, joka vaikuttaa alhaisten luokitusten todennäköisyyteen
+### <a name="second-single-factor-that-influences-the-likelihood-of-a-low-rating"></a>Toinen yhdestä tekijästä, joka vaikuttaa alhaista luokitusta vastaavaksi todennäköisyyttä
 
-Tärkeimpien vaikuttajien visualisointi kykenee vertaamaan ja panemaan tärkeysjärjestykseen tekijöitä monilta eri muuttujilta.  Toinen vaikuttajamme ei liity mitenkään **rooliin organisaatiossa**.  Valitse luettelon toinen vaikuttava tekijä; **Teema = käytettävyys**. 
+Visualisoinnin avaimen influencers vertaa ja luokittelee tekijät-useita eri muuttujia. Toinen vaikuttajana ei ole mitään tekemistä kanssa **organisaation roolin**. Valitse luettelo, joka on toisen vaikuttajana **teema on käytettävyyttä**. 
 
-![valitse Teema = käytettävyys](media/power-bi-visualization-influencers/power-bi-theme.png)
+![Valitse teema on käytettävyyttä](media/power-bi-visualization-influencers/power-bi-theme.png)
 
-Tässä näemme, että toiseksi tärkein tekijä liittyy asiakasarvostelun teemaan. Asiakkaat, jotka antoivat palautetta tuotteen *käytettävyydestä*, antoivat 2,21 kertaa todennäköisemmin alhaisen pistemäärän kuin asiakkaat, jotka antoivat palautetta muista teemoista, kuten luotettavuudesta, rakenteesta tai nopeudesta. 
+Tarkista asiakkaan teeman liittyy toiseksi Tärkein tekijä. Asiakkaat, jotka Kommentoitu tietoja tuotteen käytettävyyttä oli 2.55 kertaa todennäköisesti antaa alhainen pistemäärä asiakkaat, jotka muut teemoja, kuten luotettavuuden, rakenne tai nopeus Kommentoitu verrattuna. 
 
-Näet visualisoinnista toiseen siirtyessä, että keskiarvoviiva (punainen katkoviiva) on muuttunut 5,78 %:sta 11,34 %:iin. Keskiarvo on muuttuva, koska se perustuu kaikkien muiden arvojen keskiarvoon. Ensimmäisen vaikuttajan tapauksessa keskiarvon laskemiseen ei otettu mukaan asiakkaan roolia, kun taas toisessa tapauksessa siitä jätettiin pois käytettävyyden teema. 
+Visualisointien, välille keskiarvoa, joka näkyy punainen pisteviiva, muuttaa 5.78 % 11.34 %. Keskiarvo on dynaaminen, koska se perustuu muiden arvojen keskiarvon. Ensimmäinen vaikuttajana keskiarvon jätetty pois asiakkaan rooli. Toinen vaikuttajana se jätetty pois käytettävyyttä teeman. 
  
-Jos visualisoinnin alariville jätetään valintamerkki, visualisointi suodattaa arvot niin, että vain vaikuttavat arvot jäävät (tässä tapauksessa alhaiseen pistemäärään myötävaikuttavat arvot). Siirrymme siis 12 teemasta niihin neljään, jotka Power BI on tunnistanut alhaisia luokituksia aiheuttaviksi. 
+Valitse **Näytä vain arvot, jotka ovat influencers** valintaruudun voit suodattaa käyttämällä vaikutusvaltaiset arvoja. Tässä tapauksessa ne rooleja, jotka ohjaavat alhainen pistemäärä. 12 teemat on vähennetty, Power BI tunnistaa teemoja, jotka ohjaavat alhainen luokitukset neljän. 
 
-![valitse valintaruutu](media/power-bi-visualization-influencers/power-bi-only-show.png)
+![Valitse valintaruutu](media/power-bi-visualization-influencers/power-bi-only-show.png)
 
-## <a name="interacting-with-other-visuals"></a>Vuorovaikutus muiden visualisointien kanssa 
+## <a name="interact-with-other-visuals"></a>Muiden visualisointien 
  
-Aina kun käyttäjä napsauttaa osittajaa, suodatinta tai muuta pohjalla olevaa visualisointia, Tärkeimmät vaikuttajat -visualisointi suorittaa analyysinsa uudelleen uudelle tieto-osalle. Vedetäänpä esimerkiksi Yrityksen koko raporttiin ja käytetään sitä osittajana. Haluamme nähdä, ovatko yritysasiakkaidemme tärkeimmät vaikuttajat (yrityksen koko suurempi kuin 50 000) erilaisia kuin koko väestö.  
+Aina, kun olet valinnut osittajan, suodattaa tai muu visualisointi pohjalla, visual avaimen influencers suorittaa sen tiedot uusi osa analyysi uudelleen. Voit esimerkiksi siirtää **yrityksen koko** raporttiin ja käyttää sitä osittajana. Sen avulla voit yrityksen asiakkaille avaimen influencers on eri kuin väestön. Enterprise-yrityksen koko on suurempi kuin 50 000 työntekijät.
  
-Valitsemalla **> 50 000** analyysi saadaan suoritettua uudelleen, ja voimme nähdä, että vaikuttajat ovat muuttuneet. Suurten yritysasiakkaiden ollessa kyseessä alhaisten luokitusten tärkein vaikuttaja liittyy **teemaltaan** **tietoturvaan**. Haluamme tutkia asiaa tarkemmin sen selvittämiseksi, ovatko suuret asiakkaamme tyytymättömiä joihinkin tiettyihin tietoturvaominaisuuksiin. 
+Valitsemalla **> 50 000** uusinnoiksi analyysi, ja voit nähdä, influencers muuttunut. Suuri yritysasiakkaille yläreunan vaikuttajana-alhainen luokitukset teemaa suojauksesta. Haluat ehkä tutkia Katso lisäksi, jos on suuri asiakkaita kehotetaan surullinen tietoja tietyn suojausominaisuuksia. 
 
-![sektori yrityksen koon mukaan](media/power-bi-visualization-influencers/power-bi-filter.png)
+![Sektorin yrityksen koon mukaan](media/power-bi-visualization-influencers/power-bi-filter.png)
 
-## <a name="interpreting-continuous-key-influencers"></a>Jatkuvasti tärkeimpinä pysyvien vaikuttajien tulkitseminen 
+## <a name="interpret-continuous-key-influencers"></a>Jatkuva avaimen influencers tulkita 
  
-Toistaiseksi olemme käyttäneet visualisointeja sen selvittämiseen, kuinka erilaiset luokkakentät vaikuttavat alhaisiin luokituksiin. On mahdollista käyttää myös jatkuvia tekijöitä (esimerkiksi ikä, pituus, hinta) Selitysperuste-kohdassa. Katsotaan, mitä tapahtuu, jos pudotamme ’Asiakkuuden pituus’ Asiakas-taulukosta ’Selitysperusteeseen’. Asiakkuuden pituus tarkoittaa, kuinka kauan asiakas on käyttänyt palvelua. 
+Tähän mennessä olet nähnyt visualisoinnin avulla voit tutkia miten eri luokittaisia kenttiä vaikuttaa alhainen luokitukset. On myös mahdollista, että jatkuva tekijät, kuten ikä, height ja hinnan **selittää mukaan** kenttä. Katsotaan mitä tapahtuu, kun **työuran kesto** siirretään asiakkaan taulukon **selittää mukaan**. Työuran kesto kuvataan miten kauan asiakas on käyttää palvelua. 
  
-Voimme huomata, että kuin **Asiakkuuden pituus** kasvaa, myös alhaisemman luokituksen todennäköisyys kasvaa. Tästä trendistä voidaan päätellä, että pitkäaikaisemmat asiakkaamme antavat todennäköisemmin kielteisen arvion. Tätä mielenkiintoista tietoa on ehkä syytä pohtia myöhemmin.  
+Kun työuran kesto kasvaa, saat pienempi luokitus todennäköisyyttä kasvaa. Tämä trendi ehdottaa, että kausierot asiakkaat todennäköisimmin antaa negatiivinen arvo. Nämä merkitykselliset tiedot ovat mielenkiintoisia, ja toinen, jota haluat seurata, myöhemmin. 
  
-Visualisointi kertoo, että aina kun asiakkuuden kesto kasvaa 13,44 kuukaudella, alhaisen luokituksen todennäköisyys kasvaa keskimäärin 1,23 kertaa. Tässä tapauksessa 13,44 kuukautta kuvaa asiakkuuden keston keskihajontaa. Näin saamamme merkityksellinen tieto tarkastelee sitä, kuinka asiakkuuden keston nostaminen vakiomäärän (asiakkuuden keston standardihajonnan) verran vaikuttaa alhaisen luokituksen todennäköisyyteen. 
+Visualisointi näyttää, että aina, kun 13.44 kuukauden mukaan suurenee työuran kesto keskimäärin alhaista luokitusta vastaavaksi todennäköisyyttä suurentaa 1,23 kertaa. Tässä tapauksessa 13,44 kuukautta kuvaa asiakkuuden keston keskihajontaa. Jotta saat merkityksellisiä tietoja käsitellään kasvattamista työuran kesto standard verran, joka on työuran kesto keskihajonnan, vaikuttaa todennäköisyyttä saat alhaista luokitusta vastaavaksi. 
  
-Oikealla puolella pistekaavio piirtää keskimääräisen %:n asiakkuuden keston kunkin arvon alhaisille luokituksille ja sisältää trendiviivan, joka korostaa kaltevuutta.  
+Oikeanpuoleisessa ruudussa Pistekaavio-piirron piirtää alhainen luokitukset kullekin arvolle työuran kesto prosentteina. Se korostaa kulmakerroin trendiviiva kanssa.
 
 
-![pistekaavio Asiakkuuden kestolle](media/power-bi-visualization-influencers/power-bi-tenure.png)
+![Pistekaavio-työuran kesto](media/power-bi-visualization-influencers/power-bi-tenure.png)
 
-## <a name="interpreting-measuresaggregate-as-key-influencers"></a>Mittasuhteiden/koosteen tulkitseminen tärkeimpinä vaikuttajina 
+## <a name="interpret-measures-and-aggregates-as-key-influencers"></a>Tulkitse avaimen influencers mittayksiköt ja koosteet 
  
-Käyttäjät voivat myös käyttää mittasuhteita ja koosteita selvittävinä tekijöinä analyysissaan. Haluamme ehkä nähdä, miten asiakkaiden palvelupyyntöjen määrä tai avoimen palvelupyynnön keskimääräinen kesto vaikuttavat saamaamme pistemäärään. 
+Voit käyttää mittayksiköt ja koosteet selittävän tekijät analyysin sisällä. Haluat esimerkiksi nähdä, mitä vaikutus asiakkaan tuki palvelupyyntöjen määrä tai avaa lippu keskimääräinen kesto on pistemäärän näyttöön. 
  
-Tässä tapauksessa haluamme nähdä, vaikuttaako asiakkaan tukipalvelupyyntöjen määrä hänen meille antamaansa pistemäärään. Aiomme nyt siirtää tukipalvelupyynnön tunnuksen pois tukipalvelupyyntötaulukosta. Koska asiakkaalla voi olla useita tukipalvelupyyntöjä, meidän tarvitsee koostaa tunnus asiakastasolle. Tämä koostaminen on tärkeää, koska suoritamme analyysiä asiakkaan tasolla, jolloin kaikki ohjaimet tulee määritellä kyseisellä askelvälitasolla. 
+Tässä tapauksessa haluat nähdä, jos, asiakkaalla on tuki-palvelupyyntöjen määrä vaikuttaa ne antavat pistemäärä. Nyt voit tuoda **tue lippu tunnus** tuki lippu taulukosta. Koska asiakas voi olla useita tuki tukipyynnöt, koostaa asiakkaan tason tunnus. Kooste on tärkeää, koska analyysi suoritetaan asiakkaan tasolla, joten kaikki ohjaimet on määritettävä askelväliä kyseisellä tasolla. 
  
-Tarkastelemme tunnusten määrää (niin, että jokaisella asiakasrivillä näkyy siihen liittyvien palvelupyyntöjen määrä). Tässä tapauksessa näemme, että kun palvelupyyntöjen määrä kasvaa, luokituksen alhaisuuden todennäköisyys kasvaa 5,51-kertaiseksi. Oikeanpuoleinen visualisointi näyttää meille tukipalvelupyyntöjen keskiarvomäärän erilaisten luokitusarvojen mukaan (arvioitu asiakastasolla). 
+Katsotaan tunnukset määrä. Asiakkaan kullakin rivillä on tuki palvelupyyntöjä siihen määrän. Tässä tapauksessa tuki palvelupyyntöjä kasvaa määränä todennäköisyyttä luokitus on ylin suurenee 5.51 kertaa. Visualisoinnin oikealla näyttää tuki palvelupyyntöjen keskimääräinen määrä eri **luokitus** arvot arvioida asiakkaan tasolla. 
 
-![Tukipalvelupyyntöjen tunnusten vaikutus](media/power-bi-visualization-influencers/power-bi-support-ticket.png)
+![vaikutus Tukitunnus lippu](media/power-bi-visualization-influencers/power-bi-support-ticket.png)
 
 
-
-## <a name="interpreting-the-results-top-segments"></a>Tulosten tulkitseminen: ylimmät segmentit 
+## <a name="interpret-the-results-top-segments"></a>Tulkitse tulokset: Ylimmät segmentit 
  
-Samalla kun Tärkeimmät vaikuttajat -välilehti sallii käyttäjien arvioida kutakin tekijää erikseen, käyttäjät voivat siirtyä Ylimpiin segmentteihin nähdäkseen, miten tekijöiden yhdistelmä vaikuttaa heidän analysoimaansa arvoon. 
+Voit määrittää **avaimen influencers** välilehti arvioida kunkin palvelun erikseen. Voit myös käyttää **ensimmäiset segmentit** välilehti, niin näet, miten tekijöiden vaikuttaa arvon, joka analysointisi. 
  
-Ylimmissä segmenteissä näytetään ensiksi yleiskatsaus kaikkiin niihin segmentteihin, jotka Power BI on löytänyt. Alla olevassa esimerkissä näemme, että on löytynyt kuusi segmenttiä. Nämä segmentit luokitellaan segmentin sisäisen alhaisten luokituksen %:n mukaan. Näemme esimerkiksi, että segmentillä 1 on 74,3 % alhaista asiakasluokitusta.  Mitä korkeammalla kuplakaavio on, sitä suurempi on alhaisten luokitusten osuus. Kuplakaavion koko taas edustaa sitä, kuinka monta asiakasta segmentissä on. 
+Yläreunan segmentit näyttää aluksi, Power BI löydetyt segmentit yleiskatsaus. Seuraavassa esimerkissä kuusi segmentit löytyi. Näillä segmenteillä toimintaistunnot luokitellaan alhainen luokitukset segmentin prosenttiluvun mukaan. 1, segmentillä on esimerkiksi 74.3 % asiakkaan luokitukset, jotka ovat vähissä. Mitä korkeammalla kuplakaavio on, sitä suurempi on alhaisten luokitusten osuus. Kuplan koko edustaa montako asiakkaita kehotetaan segmentissä. 
 
-![valitse välilehti Ylimmät segmentit](media/power-bi-visualization-influencers/power-bi-top-segments-tab.png)
+![Valitse yläreunan segmentit-välilehti](media/power-bi-visualization-influencers/power-bi-top-segments-tab.png)
 
-Valitsemalla kuplakaavion poraudut segmentin yksityiskohtiin. Jos esimerkiksi valitsemme segmentin 1, huomaamme, että se koostuu suhteellisen vakiintuneista asiakkaista (ovat olleet asiakkaitamme ainakin 29 kuukauden ajan), joilla on suuri määrä tukipalvelupyyntöjä (enemmän kuin 4). He eivät myöskään ole julkaisijoita (joten he ovat joko kuluttajia tai järjestelmänvalvojia).  
+Valitsemalla kuplakaavion poraudut segmentin yksityiskohtiin. Jos valitset segmentti 1, esimerkiksi löydät, että se koostuu suhteellisen vakiintuneet asiakkaiden. Ne on 29 kuukautta asiakkaille ja on yli neljä tuki palvelupyyntöjä. Lopuksi ne eivät ole julkaisijat, jotta ne ovat käyttäjät ja järjestelmänvalvojat. 
  
-Tässä ryhmässä 74,3 % on antanut alhaisen luokituksen. Keskimääräinen asiakas antaa alhaisen luokituksen 11,7 % ajasta, joten tällä segmentillä on merkittävästi suurempi määrä alhaisia luokituksia (63 prosenttiyksikköä korkeampi). Huomaamme myös, että segmentti 1 sisältää noin 2,2 % tiedosta, joten se edustaa perusjoukon käytettävää osaa. 
+Tämän ryhmän 74.3 % asiakkaiden antoi alhaista luokitusta vastaavaksi. Keskimääräinen asiakkaan antoi luokitus 11.7 % ajasta, joten tämän segmentin on suurempi alhainen luokitukset pieni. Se on 63 prosenttiosuus pistettä suurempi. Segmentin 1 sisältää myös noin 2.2 % tiedoista, jotta se edustaa käytettävää osaa populaation. 
 
-![valitse ensimmäinen ylimmistä segmenteistä](media/power-bi-visualization-influencers/power-bi-top-segments2.png)
+![Valitse ensimmäinen yläreunan Segmentti](media/power-bi-visualization-influencers/power-bi-top-segments2.png)
+
+## <a name="working-with-numerical-data"></a>Numeeristen tietojen kanssa työskenteleminen
+
+Jos siirryt numeerinen kenttä **analysoi** kentän, voit valita miten käsitellään skenaarion. Voit muuttaa visualisoinnin ongelma siirtymällä **muotoilu-ruudun** ja Siirtyminen **Luokittaista Analysis tyyppi** ja **jatkuvaa Analysis tyyppiä**.
+
+![Muuta luokittaista jatkuva](media/power-bi-visualization-influencers/power-bi-ki-formatting.png)
+
+A **Luokittaista Analysis tyyppi** toimii edellä kuvatulla tavalla. Esimerkiksi jos tarkastelemallesi kyselyyn pisteet väliltä 1-10, voit kysyä ”mitä vaikuttaa kyselyyn pisteet 1”?
+
+A **jatkuvaa Analysis tyyppiä** muuttuu kysymyksen jatkuva yksi. Yllä oleva esimerkki Microsoftin uutta kysymystä olisi ”mitä vaikuttaa kyselyyn pisteet voit suurentaa tai pienentää”?
+
+Tunnukseen on paljon hyötyä, kun paljon yksilöivät arvot ovat analysointi-kentässä. Alla olevassa esimerkissä tarkastelemme rakennuksen hinnat. Se ei ole lukuna pyytämään ”mitä vaikuttaa olevan 156,214 hinta rakennuksen”? se on erittäin tiettyjen ja todennäköisesti ei on riittävästi tietoja johda kuviota.
+
+Sen sijaan haluamme ehkä esittää, ”mitä vaikuttaa rakennuksen hinta lisäämiseksi'? jonka avulla voimme käsitellä rakennuksen hinnat alue erillisiä arvoja sijasta.
+
+![Numeerinen kysymys](media/power-bi-visualization-influencers/power-bi-ki-numeric-question.png)
+
+## <a name="interpret-the-results-key-influencers"></a>Tulkitse tulokset: Tärkeimmät vaikuttajat 
+
+Tässä tilanteessa tarkastelemme, mikä vaikuttaa rakennuksen hinta lisäämiseksi'. Emme käy selittävän tekijöistä, jotka saattavat vaikuttaa rakennuksen hinta, kuten **vuoden luotu** (vuosi talon on luotu) **KitchenQual** (kitchenin, ylläpitäjä laatu) ja **YearRemodAdd** (vuosi talon oli remodeled). 
+
+Alla olevassa esimerkissä tarkastelemme Microsoftin yläreunan vaikuttajana, joka on parhaillaan erinomainen kitchenin, ylläpitäjä laadun. Tulokset ovat hyvin samankaltaisia kuin Muistatko analysoidaan meidän on muutamia tärkeitä eroja luokittaista mittaustiedot:
+
+- Pylväskaavio oikealla tarkastelet keskiarvot prosenttiosuudet sijasta. Se näyttää siksi meille mitä rakennuksen kanssa erinomainen kitchenin, ylläpitäjä rakennuksen keskimääräinen hinta on (vihreä palkki) verrattuna rakennuksen keskimääräinen hinta rakennuksen ilman erinomainen kitchenin, ylläpitäjä (pisteviivan)
+- Kuplan numero on yhä punainen pisteviiva ja vihreä palkki ero, mutta se ilmaistaan lukuna ($158. 49K) sen sijaan, että todennäköistä (1.93 x). Niin edelleen keskimääräinen, selvitysyhteisöjen erinomainen keittiöistä kanssa on lähes $160K enemmän kuin selvitysyhteisöjen erinomainen keittiöistä ilman kalliita.
+
+![Numeerinen kohde luokittaista influencers](media/power-bi-visualization-influencers/power-bi-ki-numeric-categorical.png)
+
+Alla olevassa esimerkissä olemme tarkastelet vaikutus jatkuva kerroin (vuosi rakennuksen oli remodeled) on rakennuksen hinnan. Miten luokittaista mittareita jatkuva influencers analysoidaan verrattuna erot ovat seuraavat:
+
+-   Oikeanpuoleisessa ruudussa Pistekaavio-piirron piirtää rakennuksen keskimääräinen hinta jokaiselle erilliselle arvolle remodeled vuoden. 
+-   Kuplan arvo kerrotaan, kuinka paljon keskimääräinen talon mukaan hinta kasvaa (Tässä tapauksessa $2. 87k) kun talon oli vuoden remodeled jakautumisen mukaan sen keskihajonnan (Tässä tapauksessa 20 vuotta)
+
+![Numeerinen kohde jatkuva influencers](media/power-bi-visualization-influencers/power-bi-ki-numeric-continuous.png)
+
+Lopuksi voimme löytää keskimääräinen vuoden toimenpiteiden rakennuksen on luotu. Tätä analysis on seuraava:
+
+-   Oikeanpuoleisessa ruudussa scatterplot piirtää rakennuksen keskimääräinen hinta jokaiselle erilliselle arvolle taulukossa
+-   Kuplan arvo kerrotaan, kuinka paljon keskimääräinen talon mukaan hinta kasvaa (Tässä tapauksessa $1. 35K) kun keskimääräinen vuoden suurentaa sen keskihajonnan (Tässä tapauksessa 30 vuotta)
+
+![Numeerinen kohde mittayksiköt influencers](media/power-bi-visualization-influencers/power-bi-ki-numeric-measures.png)
+
+## <a name="interpret-the-results-top-segments"></a>Tulkitse tulokset: Yläreunan segmentit
+
+Yläreunan segmentit-numeeristen kohteet Näytä ryhmät, joissa Talon hinnat keskimäärin on suurempi kuin yleisen tietojoukon. Esimerkiksi alla näemme, **segmentti 1** koostuu selvitysyhteisöjen jossa **GarageCars** (autotallin mahtuu autojen määrä) on suurempi kuin 2 ja **RoofStyle** on Hip. Selvitysyhteisöjen, joilla on nämä ominaisuudet on keskimääräinen hinta-$355K-tiedot, jotka ovat $180K yleistä keskiarvo.
+
+![Numeerinen kohde mittayksiköt influencers](media/power-bi-visualization-influencers/power-bi-ki-numeric-segments.png)
 
 ## <a name="considerations-and-troubleshooting"></a>Huomioon otettavat seikat ja vianmääritys 
  
-**Mitä rajoituksia esikatseluun liittyy?** 
+**Mitä ovat esikatselun rajoituksia?** 
  
-Tärkeimpien vaikuttajien visualisointi on tällä hetkellä julkisessa esikatselussa, ja käyttäjien tulisi olla tietoisia eräistä rajoituksista. Toimintoihin, joita ei tällä hetkellä tueta, kuuluvat: 
-- Sellaisten arvojen analysointi, jotka ovat koosteita/mittauksia 
-- Visualisoinnin käyttäminen Power BI Embeddedissä
-- Visualisoinnin käyttäminen Power BI -mobiilisovelluksissa
-- Rivitason suojauksen tuki 
-- Suorien kyselyjen tuki 
-- Live-yhteyksien tuki 
+Avaimen influencers visual on tällä hetkellä julkisen esikatselun, ja se on joitakin rajoituksia. Sisältää ominaisuuksia, joita ei tueta tällä hetkellä: 
+- Analysoidaan mittareita, jotka ovat koosteet tai mittayksiköitä.
+- Käyttö Power BI Embedded visualisoinnissa.
+- Kuluttaja visualisoinnin Power BI-mobiilisovelluksissa.
+- Rivitason suojauksen tuki.
+- Suorien kyselyjen tuki.
+- Reaaliaikaisen yhteyden tukea.
+
+![Numeerinen kysymys](media/power-bi-visualization-influencers/power-bi-ki-numeric-question.png)
+
+**Näkyviin tulee virhesanoma, joka influencers tai segmenttejä ei löytynyt. Mistä tämä johtuu?** 
+
+![Ei löytynyt virhe influencers](media/power-bi-visualization-influencers/power-bi-error1.png)
+
+
+Tämä virhe ilmenee, kun kenttien mukana **selittää mukaan** mutta ei ole influencers ei löytynyt. 
+- Oli analysointi mittausarvo sisältyvät molemmat **analysoi** ja **selittää mukaan**. Poista se **selittää mukaan**. 
+- Selityskentissäsi on liian monta luokkaa, joissa on liian vähän havaintoja. Tässä tilanteessa helpottaa visualisoinnin ja määritä, mitkä tekijät influencers on vaikea. Siinä on vaikea generalize vain muutama havainnot perusteella. Jos toimialuepohjaisten numeerisen kentän sinun kannattaa vaihtaa **Luokittaista Analysis** - **jatkuva Analysis** - **muotoilu-ruudun** kohdassa  **Analysis** kortti.
+- Selittävän tekijät on tarpeeksi huomautuksia generalize, mutta visualisointia ei löytynyt mitään merkityksellinen korrelaatioita raporttiin.
  
-**Näen sellaisen virheen, että vaikuttajia/segmenttejä ei ole löytynyt ollenkaan. Mistä tämä johtuu?**  
+**Näkyviin tulee virhesanoma analysoin mittausarvoa ei ole riittävästi tietoja analyysi suoritetaan. Mistä tämä johtuu?** 
 
-![virhe – vaikuttajia ei löytynyt](media/power-bi-visualization-influencers/power-bi-error1.png)
+![Tietoja ei ole tarpeeksi virhe](media/power-bi-visualization-influencers/power-bi-not-enough-data.png)
 
+Visualisointi toimii katsomalla kuviot tiedoissa yhden ryhmän verrattuna muihin ryhmiin. Se etsii esimerkiksi asiakkaiden, jotka antoi pieni verrattuna luokitukset, joka antoi suuren luokitukset asiakkaille. Jos mallissasi on vain muutama havainnot, saadaan vaikea löytää. Jos visualisointia ei ole riittävästi tietoja löydät kuvaava influencers, se ilmaisee, että analyysi suorittamiseen tarvitaan enemmän tietoja. 
 
-Tämä virhe ilmenee, kun olet sisällyttänyt kenttiä kohtaan **Selitysperuste**, mutta vaikuttajia ei ole löytynyt.   
-- Olet sisällyttänyt analysoitavan arvon sekä kohtaan ’Analysoi’ että kohtaan ’Selitysperuste’ (sinun on poistettava se kohdasta **Selitysperuste**) 
-- Selityskentissäsi on liian monta luokkaa, joissa on liian vähän havaintoja. Tällöin visualisoinnin on vaikea määrittää, mitkä tekijät ovat vaikuttajia, koska on vaikeaa tehdä yleistyksiä pienestä määrästä havaintoja 
-- Selittävillä tekijöilläsi on riittävästi havaintoja yleistysten tekemiseen, mutta visualisointi ei löytänyt niistä merkityksellisiä korrelaatioita raportoitaviksi 
+Suosittelemme, että sinulla on valitussa tilassa vähintään 100 huomautukset. Tässä tapauksessa osavaltio on asiakkaat, jotka churn. Tarvitset myös osavaltioiden vertailun käyttää vähintään 10 huomautukset. Tässä tapauksessa vertailu-tila on asiakkaat, jotka eivät churn.
+
+Jos toimialuepohjaisten numeerisen kentän sinun kannattaa vaihtaa **Luokittaista Analysis** - **jatkuva Analysis** - **muotoilu-ruudun** kohdassa  **Analysis** kortti.
+
+**Näkyviin tulee virhesanoma, joka kenttä *selittää mukaan* ei ole yksilöivästi liittyvät analysoin arvon sisältävä taulukko. Mistä tämä johtuu?**
  
-**Näen sellaisen virheen, että arvolla, jota analysoin, ei ole riittävästi tietoja analyysin suorittamiseksi. Mistä tämä johtuu?**  
+Analyysi suoritetaan kentälle, jota analysoidaan taulukkotasolla. Esimerkiksi jos asiakaspalautteen analysoida-palvelussa, sinulla on taulukko, joka kertoo, onko asiakas antoi korkeaa luokitusta tai alhaista luokitusta vastaavaksi. Tässä tapauksessa analyysit suoritetaan asiakkaan taulukon tasolla. 
 
-![virhe – ei riittävästi tietoja](media/power-bi-visualization-influencers/power-bi-not-enough-data.png)
-
-Visualisointi toimii tarkastelemalla kuvioita yhden ryhmän tiedoissa (esimerkiksi asiakkaiden, jotka ovat antaneet alhaisia luokituksia) verrattuna toiseen ryhmään (esimerkiksi asiakkaisiin, jotka ovat antaneet korkeita luokituksia). Jos mallisi tiedoissa on vain vähän havaintoja, on vaikea löytää kuvioita. Jos visualisoinnilla ei ole riittävästi tietoja käytettävissään merkityksellisten vaikuttajien löytämiseksi, analyysin suorittamiseen tarvitaan enemmän tietoja. On suositeltavaa kerätä ainakin 100 havaintoja valitulle tilalle (vaihtuvat asiakkaat) ja ainakin 10 havaintoa verrokkitilalle (asiakkaat, jotka eivät vaihdu).  
+Jos sinulla on liittyvä taulukko, joka on määritetty tarkemmat tasolla kuin taulukon, joka sisältää-mittausarvo, näet tämän virheen. Tässä on esimerkki: 
  
-**Näen sellaisen virheen, että ’Selitysperuste’-kenttä ei ole ainutlaatuisessa suhteessa taulukkoon, joka sisältää analysoimani arvon. Mistä tämä johtuu?**  
+- Voit analysoida asiakkaat voivat antaa alhainen luokitukset palvelun määrittää.
+- Haluat nähdä, jos laite, johon asiakkaan kuluttaa palvelusi vaikuttaa ne antavat tarkistukset.
+- Asiakas voivat käyttää palvelun useilla eri tavoilla.
+- Seuraavassa esimerkissä asiakkaan 10000000 käyttää selaimessa ja tabletilla palvelun käyttämiseksi.
+
+![Liittyvä taulukko, joka on määritetty tarkemmat tasolla kuin taulukon, joka sisältää-mittausarvo](media/power-bi-visualization-influencers/power-bi-error2.png)
+
+Jos yrität käyttää laitteen sarakkeen selittävän tekijä, näet seuraavan virheen: 
+
+![Virheellinen sarakkeen virhe](media/power-bi-visualization-influencers/power-bi-error3.png)
+
+Tämä virhesanoma tulee näkyviin, koska laite ei ole määritetty asiakkaan tasolla. Yhden asiakkaan voivat käyttää palvelun eri laitteille. Voit etsiä kuviot visualisoinnin laitteen on oltava määritteen asiakkaan. On useita ratkaisuja, jotka ovat riippuvaisia liiketoiminnan ymmärrät: 
  
-Analyysi tapahtuu analysoitavan kentän taulukkotasolla. Jos esimerkiksi analysoit palvelusi saamaa asiakaspalautetta, sinulla on ehkä taulukko, josta ilmenee, onko tietty asiakas antanut sinulle korkean vai alhaisen luokituksen. Tässä tapauksessa analyysisi suoritetaan asiakastaulukkotasolla. 
-
-Jos sinulla on asiaan liittyvä taulukko, joka on määritetty rakeisemmalle tasolle kuin mittausarvosi sisältävä taulukko, saat tämän virheilmoituksen. Kuvaillaan tätä seuraavalla esimerkillä: 
+- Voit muuttaa laitteiden määrä yhteenveto. Jos laitteiden määrä saattaa vaikuttaa pistemäärä, joka antaa asiakkaalle, esimerkiksi käyttää määrä. 
+- Voit käsitellä laitteen sarakkeessa, jos kuluttaja tietyn laitteen huolto vaikuttaa asiakkaan luokitus.
  
-- Olet analysoimassa syitä siihen, että asiakkaat antavat alhaisia luokituksia palvelullesi 
-- Olet kiinnostunut näkemään, vaikuttaako asiakkaiden antamiin arvioihin laite, jolla he käyttävät palveluasi 
-- Asiakas voi hyödyntää palvelua monin eri tavoin   
-- Alla olevassa esimerkissä asiakas 10000000 käyttää sekä selainta että taulutietokonetta palvelun tavoittamiseen 
+Tässä esimerkissä tablet ja luoda uusia sarakkeita selaimen, mobiilisovellus, oli poimia tietoja. Voit nyt käyttää nämä laitteet- **selittää mukaan**. Kaikki laitteet vaaleammat influencers ja selain on asiakkaan pistemäärä suurin vaikutus.
 
-![virhe – Jos sinulla on asiaan liittyvä taulukko, joka on määritelty rakeisemmalle tasolle kuin mittausarvosi sisältävä taulukko](media/power-bi-visualization-influencers/power-bi-error2.png)
+Tarkemmin, käyttävät asiakkaat eivät selainta käyttää palvelun todennäköisimmin 3.79 kertaa antaa alhainen arvo kuin asiakkaat, jotka tehdä. LOWER alas luettelossa mobiililaitteille käänteisen on TOSI. Asiakkaat, jotka käyttävät mobiilisovelluksen todennäköisimmin alhainen arvo kuin asiakkaat, jotka eivät anna. 
 
-Jos yrität käyttää laitesaraketta selittävänä tekijänä, saat seuraavan virheilmoituksen: 
+![Ratkaistut](media/power-bi-visualization-influencers/power-bi-error3-solution.png)
 
-![virhe – väärä sarake](media/power-bi-visualization-influencers/power-bi-error3.png)
+**Näyttöön varoitusta mittayksiköitä ei sisälly Omat analysis. Mistä tämä johtuu?** 
 
-Tämä johtuu siitä, että laitetta ei ole määritetty asiakkaan tasolla – sama asiakas voi hyödyntää palvelua useilla eri laitteilla. Jotta visualisointi voisi etsiä kuvioita, laitteesta on tehtävä asiakkaan määrite. Tässä tapauksessa voin tarjota useita ratkaisua, jotka riippuvat siitä, miten ymmärrän yrityksen toiminnan: 
+![Mittayksiköt eivät kuulu virhe](media/power-bi-visualization-influencers/power-bi-measures-not-included.png)
+
+
+Analyysi suoritetaan kentälle, jota analysoidaan taulukkotasolla. Jos voit analysoida asiakkaan arvioivan, joudut ehkä taulukon, joka kertoo, onko asiakas churned vai ei. Tässä tapauksessa analyysit suoritetaan asiakkaan taulukon tasolla.
  
-- Voin muuttaa laitteen yhteenvedon esimerkiksi lukumääräksi, jos uskon, että laitteiden lukumäärä voi vaikuttaa asiakkaan antamaan pistemäärään 
-- Voin pivotoida laitesarakkeen nähdäkseni, vaikuttaako palvelun käyttäminen tietyllä laitteella asiakkaan luokitukseen  
+Mittayksiköt ja koosteet ovat oletusarvoisesti Analysoidut taulukon tasolla. Jos keskimääräinen kuukausittain kulujen mitta, se analysoida asiakkaan taulukon tasolla. 
+
+Jos Asiakas-taulukosta ei ole yksilöivä tunnus, ei voi arvioida mittayksikön, ja se ohitetaan analyysi mukaan. Voit välttää tämän tilanteen, varmista, että taulukkoa, jonka-mittausarvo on yksilöivä tunnus. Tässä tapauksessa se on Asiakas-taulukosta ja yksilöivä tunnus on asiakkaan tunnus. On myös helppo Lisää indeksisarake käyttämällä Power Query.
  
-Tässä esimerkissä pivotoin tietoni luodakseni uudet sarakkeet selaimelle, mobiililaitteelle ja taulutietokoneelle. Nyt voin käyttää niitä selitysperusteena. Ilmenee, että kaikki laitteet osoittautuvat vaikuttajiksi, jolloin selaimella on kaikkein suurin vaikutus asiakkaan antamaan pistemäärään. 
+**Näyttöön varoitusta analysoin mittausarvo on yli 10 yksilöllisiä arvoja ja määrä saattaa vaikuttaa Omat analysis laadun. Mistä tämä johtuu?** 
 
-Tarkemmin sanoen, asiakkaat, jotka eivät käytä palvelua selaimen kautta, antavat 3,79 kertaa todennäköisemmin alhaiset pisteet kuin ne, jotka käyttävät. Alempana luettelossa näemme, että mobiililaitteen ollessa kyseessä asia on päinvastoin. Asiakkaat, jotka käyttävät mobiilisovellusta, antavat todennäköisemmin alhaiset pisteet kuin ne, jotka eivät.  
+AI-visualisointia voit analysoida luokittaisia kenttiä ja numeerisia kenttiä. Luokittaisia kenttiä, esimerkiksi voivat olla arvioivan on Kyllä tai ei, asiakastyytyväisyys on suuri, Normaali tai pieni. Analysoitava luokkia suurentaminen voit on vähemmän havainnot per luokka. Tässä tilanteessa vaikeuttaa visualisointi etsiä kuviot tiedoissa. 
 
-![virhe – ratkaistu](media/power-bi-visualization-influencers/power-bi-error3-solution.png)
+Kun analysoit numeerisia kenttiä voit valita välillä käsitellen numeerisia kenttiä, kuten tekstiä, jolloin suoritat saman analysis kuten luokkatiedot (**Luokittaista Analysis**). Jos sinulla on paljon eri analysis-valitsimen arvot, suosittelemme, että **jatkuva Analysis** kuin, joka tarkoittaa, että olemme johda mallit-kun luvut Suurenna tai Pienennä sijaan käsitellen kuin erillisiä arvoja. Voit vaihtaa **Luokittaista Analysis** - **jatkuva Analysis** - **muotoilu-ruudun** kohdassa **Analysis** kortti.
 
-**Näen varoituksen, että mittayksiköitä ei sisälly analyysiini. Mistä tämä johtuu?** 
+Löytää vahvempaa influencers Suosittelemme ryhmitellä samankaltaisia arvot yhdeksi yhdessä. Esimerkiksi jos sinulla on hinta mittarin, joita tulet todennäköisesti saada paremman tulokset ryhmittelemällä samankaltaisia hinnat suuri, Normaali ja vs. yksittäisen hinnan pisteiden alhainen luokat. 
 
-![virhe – mittayksiköt eivät sisälly](media/power-bi-visualization-influencers/power-bi-measures-not-included.png)
+![Yli 10 yksilöivä tekijät varoitus](media/power-bi-visualization-influencers/power-bi-error4.png)
 
 
-Analyysi tapahtuu analysoitavan kentän taulukkotasolla. Jos arvioit asiakkaiden vaihtuvuutta, sinulla saattaa olla taulukko, joka kertoo, onko asiakas vaihtunut vai ei. Tässä tapauksessa analyysisi suoritetaan asiakastaulukkotasolla.
+**Tiedot, joka näyttää tältä, niiden on oltava avaimen influencers on tekijöitä, mutta ne eivät ole. Miten näin voi käydä?**
+
+Seuraavassa esimerkissä asiakkaille, jotka ovat kuluttajien asema alhainen luokitukset 14.93 % luokituksen, jotka ovat vähissä. Järjestelmänvalvoja-rooli on myös paljon alhainen luokitukset 13.42 %, mutta se ei ole pidetään vaikuttajana. 
+
+Tämä määritys syy on se, että visualisoinnin katsoo arvopisteiden määrän myös kun se havaitsee influencers. Seuraavassa esimerkissä on yli 29,000 kuluttajille ja 10 kertaa vähemmän Järjestelmänvalvojat, noin 2,900. Vain 390 niistä antoi alhaista luokitusta vastaavaksi. Visualisointia ei ole tarpeeksi tietoja määrittämään, onko se löysi mallia, joiden järjestelmänvalvoja tai jos se on juuri nyt löytäminen. 
+
+![Miten influencers määritetään](media/power-bi-visualization-influencers/power-bi-error5.png)
+
+**Miten voit laskea avaimen influencers luokittaista analyysia varten?**
+
+AI-visualisointi käyttää taustalla, [ML.NET](https://dotnet.microsoft.com/apps/machinelearning-ai/ml-dotnet) logistic regression laskemiseen avaimen influencers suorittamiseen. Logistinen regressio on tilastotieteellinen malli, joka vertaa erilaisia ryhmiä toisiinsa. 
+
+Jos haluat nähdä määrittää alhainen luokitukset, logistic regression tarkastelee siitä, miten asiakkaat, jotka antoi alhainen pistemäärä eroavat asiakkaat, jotka ovat antaneet suuri pistemäärä. Jos sinulla on useita luokkia, kuten, Neutraali, ja alimmat pisteet tarkastelet siitä, miten asiakkaat, jotka ovat antaneet alhaista luokitusta vastaavaksi eroavat asiakkaat, jotka ei anna alhaista luokitusta vastaavaksi. Tässä tapauksessa asiakkaat, jotka antoi alhainen pistemäärä suoratoistoon asiakkailta, jotka ovat antaneet korkeaa luokitusta tai neutraali luokitus? 
  
-Mittayksiköt ja koosteet analysoidaan oletusarvoisesti taulukkotasolla. Jos meillä olisi mittayksikkö kohteelle ’Keskimääräiset kuukausittaiset kulut’, se analysoitaisiin asiakastaulukkotasolla.  
-
-Jos asiakastaulukolla ei ole yksilöivää tunnusta, emme voi tehdä mittayksikköperustaista arviota, ja analyysi jättää sen huomiotta. Varmista tämän välttämiseksi, että mittausarvosi sisältävällä taulukolla (tässä tapauksessa asiakastaulukolla) on yksilöivä tunnus (esimerkiksi asiakastunnus). On myös helppoa lisätä indeksisarake käyttämällä Power Queryä.
+Logistic regression kuviot tiedoissa etsii ja miten asiakkaat, jotka ovat antaneet alhaista luokitusta vastaavaksi saattaa vaihdella asiakkailta, jotka ovat antaneet korkeaa luokitusta etsii. Se saattaa hakea, esimerkiksi asiakkaille, joilla Lisää tukea palvelupyyntöjä antaa suurempi prosenttiosuus alhainen luokitukset kuin asiakkaille, joilla on vain vähän tai ei tue palvelupyyntöjä.
  
-**Saan varoituksen, että analysoimallani mittausarvolla on yli 10 yksilöllistä arvoa ja että tämä voi vaikuttaa analyysini laatuun. Mistä tämä johtuu?**  
+Logistic regression pitää myös, kuinka monta arvopisteet ovat olemassa. Esimerkiksi jos asiakkaat, jotka toista järjestelmänvalvojaroolissa antaa suhteellisesti enemmän negatiivisia pisteet, mutta on vain muutama Järjestelmänvalvojat, kertoimen ei huomioida samaa mieltä. Tämä määritys on tehty, koska ei ole tarpeeksi käytettävissä johda kuviota arvopisteitä. Tilastoanalyysit testiä, kutsutaan Wald testi, käytetään määrittämään, onko kerroin pidetään vaikuttajana. Visualisointi määrittää kynnysarvon käyttämällä p-arvoa 0,05. 
 
-AI-visualisointi on optimoitu analysoimaan luokkia (esimerkiksi Vaihtuvuus on ’Kyllä’ tai ’Ei’, Asiakastyytyväisyys on ’Suuri’, ’Keskinkertainen’ tai ’Alhainen’ jne.) Lisäämällä analysoitavien luokkien määrää saamme vähemmän havaintoja/luokka, mikä tarkoittaa, että visualisoinnin on vaikeampaa löytää tiedoista kuvioita. 
+**Miten voit laskea avaimen influencers numeerinen analyysia varten?**
 
-Vahvempien vaikuttajien löytämiseksi suosittelemme samanlaisten arvojen ryhmittämistä yksittäiseksi yksiköksi. Jos yksi mittausarvoistasi on hinta, saat luultavasti parempia tuloksia ryhmittämällä samansuuntaiset hinnat säilöiksi, kuten ’Kallis’, ’Keskihintainen’ ja ’Halpa’, sen sijaan että käyttäisit yksittäisiä hintapisteitä. 
+AI-visualisointi käyttää taustalla, [ML.NET](https://dotnet.microsoft.com/apps/machinelearning-ai/ml-dotnet) lineaarisen regression laskemiseen avaimen influencers suorittamiseen. Lineaarisen regression on tilastoanalyysit malli, joka näyttää, miten kenttä on analysointi tulos muuttuu selittävän tekijöiden perusteella.
 
-![virhe – enemmän kuin kymmenen yksilöivää tekijää](media/power-bi-visualization-influencers/power-bi-error4.png)
+Esimerkiksi jos olemme toimialuepohjaisten rakennuksen hinnat, lineaarisen regression tarkastellaan vaikutus ottaa erinomainen kitchenin, ylläpitäjä sillä rakennuksen hinnan. Selvitysyhteisöjen erinomainen keittiöistä kanssa on yleensä alemman tai ylemmän rakennuksen hinnat verrattuna selvitysyhteisöjen ilman erinomainen keittiöistä?
 
-
-**Tiedoissani on tekijöitä, jotka näyttävät tärkeiltä vaikuttajilta, mutta eivät ole sellaisia. Miten näin voi käydä?**
-
-Alla olevassa esimerkissä näemme, että asiakkaat, jotka ovat kuluttajia, ovat alhaisia luokituksia aiheuttava tekijä (14,93 % on alhainen luokitus). Kiinnostavaa kyllä myös järjestelmänvalvojan rooliin liittyy korkea prosenttimäärä alhaisia luokituksia (13,42 %), mutta roolia ei pidetä vaikuttajana. 
-
-Tämä johtuu siitä, että visualisointi ottaa huomioon myös arvopisteiden määrän hakiessaan vaikuttajia. Alla olevassa esimerkissä on yli 29 000 kuluttajaa ja 10 kertaa vähemmän järjestelmänvalvojia (noin 2900). Lisäksi heistä vain 390 on antanut alhaisen luokituksen. Visualisoinnilla ei siksi ole riittävästi tietoja sen määrittämiseksi, onko se todella löytänyt järjestelmänvalvojiin liittyvän kuvion, vai onko kyseessä vain satunnainen löytö.  
-
-![virhe – miten vaikuttajat määritetään](media/power-bi-visualization-influencers/power-bi-error5.png)
-
-**Miten tärkeimmät vaikuttajat lasketaan?**
-
-Taustalla AI-visualisointi suorittaa [ML.NET](https://dotnet.microsoft.com/apps/machinelearning-ai/ml-dotnet)-ympäristön avulla logistista regressiota tärkeimpien vaikuttajien laskemiseksi. Logistinen regressio on tilastotieteellinen malli, joka vertaa erilaisia ryhmiä toisiinsa. Jos olisimme selvittämässä, mistä alhaiset luokitukset johtuvat, logistinen regressio selvittäisi, miten alhaisen pistemäärän antaneet asiakkaat eroavat korkean pistemäärän antaneista. Jos meillä olisi useita luokkia (korkea pistemäärä, neutraali pistemäärä, alhainen pistemäärä), tarkastelisimme sitä, miten alhaisen luokituksen antaneet asiakkaat eroavat niistä, jotka eivät antaneet alhaista luokitusta (miten he eroavat niistä, jotka antoivat korkean TAI neutraalin luokituksen). 
- 
-Logistinen regressio etsii tiedoista kuvioita selvittäen, miten alhaisen luokituksen antaneet asiakkaat mahdollisesti eroavat korkean luokituksen antaneista. Se saattaa esimerkiksi havaita, että asiakkaat, joilla on enemmän tukipalvelupyyntöjä, antavat paljon suuremman %-määrän alhaisia luokituksia kuin ne, joilla on harvoja tai ei ollenkaan tukipalvelupyyntöjä.
- 
-Logistinen regressio ottaa huomioon myös arvopisteiden määrän. Jos esimerkiksi asiakkaat, jotka ovat järjestelmänvalvojan roolissa, antavat suhteessa enemmän kielteisiä pistemääriä, mutta järjestelmänvalvojia on vain kourallinen, tätä ei pidetä vaikutusvaltaisena tekijänä. Tämä johtuu siitä, että käytettävissä ei ole riittävän paljon arvopisteitä, jotta niistä voitaisiin päätellä kuvion olemassaolo. Tilastoanalyysitestiä (Waldin testiä) käytetään sen määrittämiseen, voidaanko tekijää pitää vaikuttajana. Visualisointi määrittää kynnysarvon käyttämällä p-arvoa 0,05. 
-
+Lineaarisen regression pitää myös arvopisteiden määrän. Esimerkiksi jos selvitysyhteisöjen tenniskentät kanssa on korkeampi hinnat, mutta Meillä on vain harvoja selvitysyhteisöjen, joilla Tenniskenttä, kertoimen ei pidetä samaa mieltä. Tämä määritys on tehty, koska ei ole tarpeeksi käytettävissä johda kuviota arvopisteitä. Tilastoanalyysit testiä, kutsutaan Wald testi, käytetään määrittämään, onko kerroin pidetään vaikuttajana. Visualisointi määrittää kynnysarvon käyttämällä p-arvoa 0,05. 
 
 **Miten segmentit lasketaan?**
 
-AI-visualisointi suorittaa taustalla [ML.NET](https://dotnet.microsoft.com/apps/machinelearning-ai/ml-dotnet)-ympäristön avulla päätöspuuta kiinnostavien aliryhmien löytämiseksi. Päätöspuun tarkoituksena on saada koottua aliryhmä arvopisteitä, jolla meitä kiinnostava mittausarvo on suhteellisen korkealla (esimerkiksi alhaisen luokituksen antaneet asiakkaat). 
+AI-visualisointi käyttää taustalla, [ML.NET](https://dotnet.microsoft.com/apps/machinelearning-ai/ml-dotnet) päätöspuu löydät mielenkiintoisia alaryhmiä suorittamiseen. Päätöspuun tavoitteena on aliryhmä arvopistettä, joka on melko suuren arvon, josta olet kiinnostunut päättyä. Tämä voi asiakkaille, joilla on vähän luokitukset tai selvitysyhteisöjen suuren hinnat.
 
-Päätöspuun ottaa kunkin selittävän tekijän käsittelyyn ja pyrkii selvittämään, millä tekijällä saadaan paras jako. Jos esimerkiksi suodatamme tiedot niin, että ne sisältävät enää vain suuryritysasiakkaat, erottaako tämä joukosta asiakkaat, jotka antoivat meille korkean tai alhaisen luokituksen? Tai ehkä on parempi suodattaa tiedot niin, että ne sisältävät vain tietoturva-asioita kommentoineet asiakkaat? 
+Päätöspuun ottaa kunkin selittävän tekijä ja yrittää syy, mitkä Authentication antaa parhaan *jakaa*. Esimerkiksi, jos voit suodattaa tietoja sisältämään vain suuri Yritysasiakkaat, on, erottaa asiakkaat, jotka ovat antaneet korkeaa luokitusta vs. alhaista luokitusta vastaavaksi? Tai ehkä tuli paremmin sisältämään vain asiakkaat, jotka tietoturvasta Kommentoitu tietojen suodattamiseen? 
 
-Kun päätöspuu tekee jaon, se ottaa tietyn tietojen aliryhmän (esimerkiksi juuri tietoturva-asioita kommentoineet asiakkaat) ja yrittää selvittää, mikä olisi seuraavaksi paras jako juuri näille tiedoille. Kunkin jaon jälkeen se pohtii myös, onko jäljellä riittävästi arvopisteitä, jotta saatua ryhmää voidaan pitää kyllin edustavana kuvion päättelemiseksi, vai voisiko kyse olla vain tietoanomaliasta, jota ei voi pitää oikeana segmenttinä. (Toista tilastoanalyysitestiä sovelletaan jaetun ehdon tilastollisen merkittävyyden selvittämiseksi p-arvon ollessa 0,05). 
+Kun Päätöspuun tekee jaon, se vie tiedot aliryhmä ja määrittää seuraava paras jako-tiedot. Tässä tapauksessa aliryhmä on asiakkaat, jotka Kommentoitu suojaus. Kunkin Jaa jälkeen se pitää onko tämän ryhmän edustavan tarpeeksi johtaa kuvion vai onko se poikkeamien, tiedot ja todellisia segmentin tarpeeksi arvopisteitä. Toinen tilastoanalyysit test käytetään Tarkista tilastoanalyysit merkitsevyyden Jaa ehdon 0,05 p-arvo. 
 
-Kun päätöspuun suorittaminen on päättynyt, se ottaa kaikki jaot (tietoturvakommentit, suuryritykset) ja luo Power BI -suodattimia. Tämä suodatinyhdistelmä pakataan segmenttimuotoon visualisoinnissa. 
+Kun Päätöspuun on päättynyt, se vie kaikki jakaa suojaus kommentit ja suuri yritys, kuten ja luo Power BI-suodattimia. Tämä suodatinyhdistelmä pakataan segmenttimuotoon visualisoinnissa. 
  
-**Miksi eräät tekijät muuttuvat vaikuttajiksi tai lakkaavat olemasta vaikuttajia, kun vedän lisää kenttiä Selitysperuste-kohtaan?**
+**Miksi tehdä tiettyjen tekijöiden tulee influencers tai estää kuin kenttiä tietoja siirretään influencers *selittää mukaan* kentän?**
 
-Visualisointi arvioi kaikki selittävät tekijät yhdessä. Tämä tarkoittaa, että tekijä, joka yksinään voi olla vaikuttaja, ei ehkä ole, jos sitä pohditaan yhteydessä muihin tekijöihin. Ajatellaanpa, että olemme analysoimassa sitä, mikä nostaa talon hintaa, selittävinä tekijöinä makuuhuoneiden lukumäärä ja talon koko: 
-- Yksinään makuuhuoneiden määrän kasvu voi olla talon hintaa nostava ohjain 
-- Jos otamme talon koon mukaan analyysiin, se tarkoittaa, että katsomme, mitä tapahtuu makuuhuoneille kun talon koko pysyy vakiona 
-- Jos määritämme talon kooksi 140 neliö- metriä, on epätodennäköistä, että makuuhuoneiden määrän jatkuva lisääminen nostaa talon hintaa dramaattisesti. Makuuhuoneet eivät välttämättä ole yhtä tärkeä tekijä kuin ennen talon koon huomiointia. 
+Visualisointi arvioi kaikki selittävät tekijät yhdessä. Tekijä voi olla vaikuttajana yksinään, mutta kun katsotaan muiden tekijöiden mukaan se ei välttämättä ole. Oletetaan, että haluat analysoida määrittää rakennuksen hinta on suuri Makuuhuoneiden ja rakennuksen kokoisia selittävän tekijät:
+
+- Yksinään yksi Makuuhuoneiden voi olla rakennuksen hinnat olevan suuren ohjainta.
+- Mukaan lukien rakennuksen koon analyysi merkitys tarkastelet nyt tapahtuva Makuuhuoneiden rakennuksen koko pysyy vakiona.
+- Jos rakennuksen koon vahvistetaan 1 500 neliöjalkaa, on epätodennäköistä, että jatkuva lisääntyminen Makuuhuoneiden määrä kasvaa huomattavasti rakennuksen hinnan. 
+- Makuuhuoneiden ei ehkä ole tärkeäksi kerroin, kuin se oli ennen rakennuksen koon käsiteltiin. 
 
 
 
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
-[Yhdistelmäkaaviot Power BI:ssä](power-bi-visualization-combo-chart.md)
-
-[Visualisointityypit Power BI:ssä](power-bi-visualization-types-for-reports-and-q-and-a.md)
+- [Yhdistelmäkaaviot Power BI:ssä](power-bi-visualization-combo-chart.md)
+- [Visualisointityypit Power BI:ssä](power-bi-visualization-types-for-reports-and-q-and-a.md)

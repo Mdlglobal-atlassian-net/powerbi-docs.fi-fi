@@ -1,24 +1,24 @@
 ---
 title: Power BI -tietojoukon ominaisuudet
 description: Lisätietoja Power BI -tietojoukon ohjelmointirajapintojen ominaisuuksista
-author: markingmyname
-ms.author: maghan
+author: rkarlin
+ms.author: rkarlin
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 06/08/2018
-ms.openlocfilehash: d272914fc41c8bd4abc78ae36a46de9e53817c81
-ms.sourcegitcommit: 8207c9269363f0945d8d0332b81f1e78dc2414b0
-ms.translationtype: HT
+ms.openlocfilehash: 508f304e2f5033c301db683e3b7557856fb3731b
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56248926"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61386289"
 ---
 # <a name="dataset-properties"></a>Tietojoukon ominaisuudet
 
-Nykyinen tietojoukkojen ohjelmointirajapinnan v1 sallii tietojoukkoja luotavan vain nimen ja taulukkokokoelman kanssa. Kullakin taulukolla voi olla nimi ja sarakekokoelma. Kullakin sarakkeella on nimi ja tietotyyppi. Laajennamme näitä ominaisuuksia etenkin lisäämällä mittayksiköiden ja taulukkojen välisten suhteiden tuen. Seuraavassa on täydellinen luettelo tuetuista ominaisuuksista tätä julkaisua varten:
+Nykyinen tietojoukkojen ohjelmointirajapinnan v1 sallii tietojoukkoja luotavan vain nimen ja taulukkokokoelman kanssa. Kullakin taulukolla voi olla nimi ja sarakekokoelma. Kullakin sarakkeella on nimi ja tietotyyppi. Laajennamme näitä ominaisuuksia etenkin lisäämällä mittarien ja taulukkojen välisten suhteiden tuen. Seuraavassa on täydellinen luettelo tuetuista ominaisuuksista tätä julkaisua varten:
 
 > [!IMPORTANT]
 > Siihen pääsee [Tietojoukkojen toimintaryhmät](https://docs.microsoft.com/rest/api/power-bi/datasets) -sivulta.
@@ -31,7 +31,7 @@ tunnus     |  GUID-tunnus       | Järjestelmän laajuinen yksilöllinen tunnus 
 nimi     | Merkkijono        | Käyttäjän määrittämä tietojoukon nimi.        | Epätosi        | Tosi        
 taulukot     | Table[]        | Taulukkokokoelma.        |  Epätosi       | Epätosi        
 suhteet     | Relationship[]        | Taulukkojen välisten suhteiden kokoelma.        | Epätosi        |  Epätosi  
-defaultMode     | Merkkijono        | Määrittää, onko tietojoukkoon työnnetty tai virtautettu tai sekä työnnetty että virtautettu arvot ”Push”, ”Streaming” ja ”PushStreaming”.         | Epätosi        |  Epätosi
+defaultMode     | Merkkijono        | Määrittää, onko tietojoukko lähetetään, Laadi luettelo virtautetuista, tai molemmat arvot ”Push” ja ”suoratoisto”.         | Epätosi        |  Epätosi
 
 ## <a name="table"></a>Taulukko
 
@@ -39,7 +39,7 @@ Nimi  |Tyyppi  |Kuvaus  |Vain luku  |Pakollinen
 ---------|---------|---------|---------|---------
 nimi     | Merkkijono        |  Käyttäjän määrittämä taulukon nimi. Sitä käytetään myös taulun tunnuksena.       | Epätosi        |  Tosi       
 sarakkeet     |  sarake[]       |  Sarakekokoelma.       | Epätosi        |  Tosi       
-mittayksiköt     | mittayksikkö[]        |  Mittayksikkökokoelma.       | Epätosi        |  Epätosi       
+mittarit     | mittari[]        |  Mittarikokoelma.       | Epätosi        |  Epätosi       
 isHidden     | Totuusarvo        | Jos arvo on tosi, taulukko on piilotettu asiakastyökaluilta.        | Epätosi        | Epätosi        
 
 ## <a name="column"></a>Sarake
@@ -54,11 +54,11 @@ dataCategory     | Merkkijono        |  Merkkijonon arvo, jota käytetään tiet
 isHidden    |  Totuusarvo       |  Ominaisuus, joka ilmaisee, onko sarake piilotettu näkyvistä. Oletusarvona on epätosi.       | Epätosi        | Epätosi        
 summarizeBy     | Merkkijono        |  Sarakkeen oletusarvoinen koostemenetelmä. Arvoja ovat: default, none, sum, min, max, count, average, distinctCount     |  Epätosi       | Epätosi
 
-## <a name="measure"></a>Mittayksikkö
+## <a name="measure"></a>Mittari
 
 Nimi  |Tyyppi  |Kuvaus  |Vain luku  |Pakollinen
 ---------|---------|---------|---------|---------
-nimi     | Merkkijono        |  Käyttäjän määrittämä mittayksikön nimi.       |  Epätosi       | Tosi        
+nimi     | Merkkijono        |  Käyttäjän määrittämä mittarin nimi.       |  Epätosi       | Tosi        
 lauseke     | Merkkijono        | Kelvollinen DAX-lauseke.        | Epätosi        |  Tosi       
 formatString     | Merkkijono        |  Merkkijono, joka kuvaa, miten arvoa olisi muotoiltava, kun se näytetään. Lisätietoja merkkijonon muotoilemisesta on artikkelissa [Merkkijonon sisällön muotoileminen](https://msdn.microsoft.com/library/ms146084.aspx).       | Epätosi        | Epätosi        
 isHidden     | Merkkijono        |  Jos arvo on tosi, taulukko on piilotettu asiakastyökaluilta.       |  Epätosi       | Epätosi       

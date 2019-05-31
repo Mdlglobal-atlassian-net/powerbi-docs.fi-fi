@@ -1,20 +1,20 @@
 ---
 title: Power BI Embeddedin suorituskykyä parantavat parhaat käytännöt
 description: Tässä artikkelissa annetaan ohjeita upotettujen analyysitoimintojen parhaisiin käytäntöihin
-author: markingmyname
-ms.author: maghan
+author: rkarlin
+ms.author: rkarlin
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-embedded
 ms.topic: conceptual
 ms.date: 12/12/2018
-ms.openlocfilehash: 50fbb175640e38431db62df34276417f1080e42a
-ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
-ms.translationtype: HT
+ms.openlocfilehash: ac8052b78e452f5da1f3db8988a180923c08e0b6
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55430346"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61343164"
 ---
 # <a name="power-bi-embedded-performance-best-practices"></a>Power BI Embeddedin suorituskykyä parantavat parhaat käytännöt
 
@@ -26,7 +26,7 @@ Powerbi.embed()-menetelmä vastaanottaa muutamia parametreja raportin, koontinä
 
 ### <a name="embed-url"></a>Upota URL-osoite
 
-Vältä upotetun URL-osoitteen muodostamista itse. Varmista sen sijaan, että hankit upotetun URL-osoitteen kutsumalla [raporttien](/rest/api/power-bi/reports/getreportsingroup), [koontinäyttöjen](/rest/api/power-bi/dashboards/getdashboardsingroup) tai [ruutujen](/rest/api/power-bi/dashboards/gettilesingroup) kutsumisen ohjelmointirajapintaa. Olemme lisänneet URL-osoitteeseen uuden **_config_**-nimisen parametrin, jota käytetään suorituskyvyn parantamiseen.
+Vältä upotetun URL-osoitteen muodostamista itse. Varmista sen sijaan, että hankit upotetun URL-osoitteen kutsumalla [raporttien](/rest/api/power-bi/reports/getreportsingroup), [koontinäyttöjen](/rest/api/power-bi/dashboards/getdashboardsingroup) tai [ruutujen](/rest/api/power-bi/dashboards/gettilesingroup) kutsumisen ohjelmointirajapintaa. Olemme lisänneet URL-osoitteeseen uuden **_config_** -nimisen parametrin, jota käytetään suorituskyvyn parantamiseen.
 
 ### <a name="permissions"></a>Käyttöoikeudet
 

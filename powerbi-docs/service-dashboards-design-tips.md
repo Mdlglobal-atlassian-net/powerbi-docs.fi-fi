@@ -11,11 +11,11 @@ ms.date: 06/22/2018
 ms.author: maggies
 LocalizationGroup: Dashboards
 ms.openlocfilehash: a113cf75ae238b19cdc54b03ffc049bdcdfb8368
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54281800"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61150327"
 ---
 # <a name="tips-for-designing-a-great-power-bi-dashboard"></a>Vinkkejä laadukkaiden Power BI -koontinäyttöjen suunnitteluun
 Nyt kun olet luonut koontinäytön ja lisännyt siihen ruutuja, mieti, miten voisit parantaa sen toiminnallisuutta. Yleensä tämä tarkoittaa tärkeimpien tietojen korostamista ja koontinäytön selkeyttämistä.

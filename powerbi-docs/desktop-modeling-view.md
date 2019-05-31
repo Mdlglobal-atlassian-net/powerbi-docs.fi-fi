@@ -1,5 +1,5 @@
 ---
-title: Mallintamisnäkymän käyttäminen Power BI Desktopissa (esikatselu)
+title: Mallinnus tarkastella Power BI Desktop
 description: Mallintamisnäkymän avulla voit tarkastella monimuotoisia tietojoukkoja visuaalisessa muodossa Power BI Desktopissa
 author: davidiseminger
 manager: kfile
@@ -7,30 +7,20 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/13/2018
+ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: ccb78c8d22fdb7b9fecbb202dca488c44d36a15d
-ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
-ms.translationtype: HT
+ms.openlocfilehash: 1fdb6058a6306f63f53c770812f85ccd9f9113ea
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56216305"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65941353"
 ---
-# <a name="modeling-view-in-power-bi-desktop-preview"></a>Mallintamisnäkymä Power BI Desktopissa (esikatselu)
+# <a name="modeling-view-in-power-bi-desktop"></a>Näytä Power BI Desktop mallinnus
 
-**Mallintamisnäkymän** avulla **Power BI Desktopissa** voit tarkastella ja käsitellä monimuotoisia tietojoukkoja, jotka sisältävät useita taulukoita. Voit tehdä seuraavia asioita mallintamisnäkymässä:
+**Mallintamisnäkymän** avulla **Power BI Desktopissa** voit tarkastella ja käsitellä monimuotoisia tietojoukkoja, jotka sisältävät useita taulukoita.
 
-
-## <a name="enabling-the-modeling-view-preview-feature"></a>Mallintamisnäkymän esikatselutoiminnon ottaminen käyttöön
-
-Mallintamisnäkymä-ominaisuus on esikatseluvaiheessa. Sen täytyy olla käytössä **Power BI Desktopissa**. Voit ottaa mallintamisnäkymän käyttöön valitsemalla **Tiedosto > Vaihtoehdot ja asetukset > Vaihtoehdot > Esikatselutoiminnot** ja valitsemalla sitten **Mallintamisnäkymä**-valintaruudun seuraavassa kuvassa esitetyn mukaisesti.
-
-![Mallintamisnäkymän esikatselutoiminnon ottaminen käyttöön Power BI Desktopissa](media/desktop-modeling-view/modeling-view_01.png)
-
-Esikatselutoiminnon käyttöönotto edellyttää **Power BI Desktopin** käynnistämistä uudelleen. Saat tästä kehotteen. 
-
-![Ota esikatselutoiminnot käyttöön käynnistämällä Power BI Desktop uudelleen](media/desktop-modeling-view/modeling-view_01b.png)
 
 ## <a name="using-modeling-view"></a>Mallintamisnäkymän käyttäminen
 
@@ -66,9 +56,9 @@ Voit esimerkiksi muuttaa [tallennustilan](desktop-storage-mode.md) useiden taulu
 Seuraavissa artikkeleissa kerrotaan lisää tietomalleista ja kuvataan myös DirectQuery yksityiskohtaisemmin.
 
 * [Koosteet Power BI Desktopissa (esikatselu)](desktop-aggregations.md)
-* [Yhdistelmämallit Power BI Desktopissa (esikatselu)](desktop-composite-models.md)
+* [Yhdistelmämallit Power BI Desktopissa](desktop-composite-models.md)
 * [Tallennustilan tila Power BI Desktopissa (esikatselu)](desktop-storage-mode.md)
-* [Moni-moneen-yhteydet Power BI Desktopissa (esikatselu)](desktop-many-to-many-relationships.md)
+* [Moni-moneen-yhteydet Power BI Desktopissa](desktop-many-to-many-relationships.md)
 
 
 DirectQuery-artikkeleita:

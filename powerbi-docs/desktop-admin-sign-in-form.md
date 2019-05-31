@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 02/21/2019
+ms.date: 04/15/2019
 ms.author: davidi
-ms.openlocfilehash: 9e35bbffec40aa57d3097e122bd038659405dfed
-ms.sourcegitcommit: 76772a361e6cd4dd88824b2e4b32af30656e69db
-ms.translationtype: HT
+ms.openlocfilehash: 5c31277b640b16882bef5c5f2cd9c56b441ede82
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56892294"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61329874"
 ---
 # <a name="how-administrators-can-manage-the-power-bi-desktop-sign-in-form"></a>Miten järjestelmänvalvojat voivat hallita Power BI Desktopin kirjautumislomaketta
 Kun Power BI Desktop käynnistetään ensimmäisen kerran, näyttöön tulee kirjautumislomake. Tiedot voidaan täyttää, tai voit jatkaa kirjautumalla Power BI:hin. Järjestelmänvalvojat hallitsevat tätä lomaketta rekisteriavaimen avulla. 
@@ -27,8 +27,17 @@ Järjestelmänvalvojat poistavat kirjautumislomakkeen käytöstä seuraavalla re
 Key: HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Microsoft Power BI Desktop
 valueName: ShowLeadGenDialog
 ```
+Voit myös kokeilla seuraava avain, joka on onnistunut asiakkaita niiden määritykset perusteella:
+
+```
+Key: HKEY_CURRENT_USER\SOFTWARE\Microsoft\Microsoft Power BI Desktop
+valueName: ShowLeadGenDialog
+```
 
 Arvo 0 poistaa valintaikkunan käytöstä.
+
+
+
 
 Onko sinulla muuta kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)
 

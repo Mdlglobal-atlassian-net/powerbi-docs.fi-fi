@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: d6424f63d992eaa7c8a4a8a5f76765b6aeb6104d
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61263405"
+---
 Kun työskentelet Power BI -palvelussa koontinäytön, raportin tai tietojoukon parissa, Power BI voi etsiä niistä nopeita merkityksellisiä tietoja. Napsauta Power BI:ssä vasemmanpuolisen ruudun **Tietojoukot**-osiossa *ellipsikuvaketta* (kolme pistettä) sen tietojoukon vierestä, josta olet kiinnostunut. Esiin tulee valikko, ja oikeassa laidassa näkyy **Nopeat merkitykselliset tiedot** -valinta.
 
 ![](media/4-1a-quick-insights/4-1a_1.png)

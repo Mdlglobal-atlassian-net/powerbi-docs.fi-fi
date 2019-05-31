@@ -11,11 +11,11 @@ ms.date: 01/10/2019
 ms.author: davidi
 LocalizationGroup: Data from files
 ms.openlocfilehash: 111e38fd37bcdfa2a72986bb08a37d89345bbe69
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54282260"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "60972608"
 ---
 # <a name="reduce-the-size-of-an-excel-workbook-to-view-it-in-power-bi"></a>Excel-työkirjan koon pienentäminen Power BI:ssä tarkastelua varten
 Voit ladata minkä tahansa, alle 1 Gt:n kokoisen Excel-työkirjan Power BI:hin. Excel-työkirjassa voi olla kaksi osaa: tietomalli ja raportin muut osat eli laskentataulukon ydinsisältö. Jos raportti täyttää seuraavat kokorajoitukset, voit tallentaa sen **OneDrive for Businessiin**. muodostaa siihen yhteyden Power BI:stä ja tarkastella sitä Excel Onlinessa:

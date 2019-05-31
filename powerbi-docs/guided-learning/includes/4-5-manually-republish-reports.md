@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 68645069b22163ca7ae2a64310e43f1a801434f5
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61255552"
+---
 Voit päivittää raportteja ja tietojoukkoja, jotka olet jo julkaissut Power BI Desktopista Power BI -palveluun. Sen voi tehdä valitsemalla **Julkaise** valintanauhan **Aloitus**välilehdellä.
 
 ![](media/4-5-manually-republish-reports/4-5_0.png)

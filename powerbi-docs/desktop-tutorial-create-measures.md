@@ -11,10 +11,10 @@ ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Learn more
 ms.openlocfilehash: 306738f4df765638c591c9612adf885facdceda0
-ms.sourcegitcommit: 10a87c016f497dbeba32f94ed1f3688a70816fea
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/09/2019
+ms.lasthandoff: 05/29/2019
 ms.locfileid: "65513881"
 ---
 # <a name="tutorial-create-your-own-measures-in-power-bi-desktop"></a>Opetusohjelma: Omien mittarien luominen Power BI Desktopissa
@@ -97,8 +97,8 @@ Haluat analysoida nettomyyntiäsi vähentämällä alennukset ja palautukset myy
     
     
 5.  Kahden muun sarakkeen vähentäminen:
-    1. Kirjoita ensimmäisen lausekkeen loppusulkeen jälkeen välilyönti, miinusoperaattori (**-**) ja toinen välilyönti. 
-    2. Syötä toinen SUM-funktio ja ala kirjoittaa "DiscountAmount", kunnes voit valita **Sales[DiscountAmount]**-sarakkeen argumentiksi. Lisää loppusulje. 
+    1. Kirjoita ensimmäisen lausekkeen loppusulkeen jälkeen välilyönti, miinusoperaattori ( **-** ) ja toinen välilyönti. 
+    2. Syötä toinen SUM-funktio ja ala kirjoittaa "DiscountAmount", kunnes voit valita **Sales[DiscountAmount]** -sarakkeen argumentiksi. Lisää loppusulje. 
     3. Kirjoita välilyönti, toinen miinusoperaattori, välilyönti, toinen SUM-funktio, jonka argumenttina on **Sales[ReturnAmount]** ja loppusulje.
     
     ![Valmis kaava](media/desktop-tutorial-create-measures/meastut_netsales_newmeasure_formula_discamount.png)
@@ -160,15 +160,15 @@ Haluat selvittää, minkä tuotteiden nettomyyntimäärä myytyä yksikköä koh
 
 1.  Luo Sales-taulukkoon uusi mittari nimeltä **Net Sales per Unit** (Nettomyynti yksikköä kohti).
     
-2.  Ala kirjoittaa kaavariville **Net Sales** -sanaa. Ehdotusluettelo näyttää, mitä voit lisätä. Valitse **[Net Sales]**.
+2.  Ala kirjoittaa kaavariville **Net Sales** -sanaa. Ehdotusluettelo näyttää, mitä voit lisätä. Valitse **[Net Sales]** .
     
     ![Kaava, jossa käytetään Net Sales -mittayksikköä](media/desktop-tutorial-create-measures/meastut_nspu_formulastep2a.png)
     
-    Voit viitata mittareihin myös vain kirjoittamalla avaavan hakasulkeen (**[**). Ehdotusluettelossa näkyvät vain kaavaan lisättävät mittarit.
+    Voit viitata mittareihin myös vain kirjoittamalla avaavan hakasulkeen ( **[** ). Ehdotusluettelossa näkyvät vain kaavaan lisättävät mittarit.
     
     ![Hakasulje näyttää vain mittarit](media/desktop-tutorial-create-measures/meastut_nspu_formulastep2b.png)
     
-3.  Lisää välilyönti, jako-operaattori (**/**), toinen välilyönti, SUM-funktio ja kirjoita **Quantity** (Määrä). Ehdotusluettelo näyttää kaikki sarakkeet, joiden nimessä on sana Quantity. Valitse **Sales[SalesQuantity]**, kirjoita loppusulje ja vahvista kaava painamalla ENTER-näppäintä tai valitsemalla valintamerkki. Kaavan pitäisi näyttää tältä:
+3.  Lisää välilyönti, jako-operaattori ( **/** ), toinen välilyönti, SUM-funktio ja kirjoita **Quantity** (Määrä). Ehdotusluettelo näyttää kaikki sarakkeet, joiden nimessä on sana Quantity. Valitse **Sales[SalesQuantity]** , kirjoita loppusulje ja vahvista kaava painamalla ENTER-näppäintä tai valitsemalla valintamerkki. Kaavan pitäisi näyttää tältä:
     
     `Net Sales per Unit = [Net Sales] / SUM(Sales[SalesQuantity])`
     

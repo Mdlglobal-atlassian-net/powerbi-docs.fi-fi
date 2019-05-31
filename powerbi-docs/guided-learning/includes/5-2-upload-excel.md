@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: cff8e70e43496b264fd0dd549759f939bf90e33f
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61271382"
+---
 Tässä aiheessa tarkastellaan ensin sitä, miten Power BI:ihn voidaan tuoda yksinkertainen **taulukko** paikallisessa asemassa sijaitsevasta Excel-työkirjatiedostosta. Opit myös, miten voit aloittaa taulukon tietoja tarkastelemisen Power BI:ssä luomalla raportin.
 
 ## <a name="make-sure-your-data-is-formatted-as-a-table"></a>Varmista tietojen taulukoksi muotoileminen

@@ -7,21 +7,32 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 11/08/2018
+ms.date: 04/08/2019
 ms.author: mshenhav
-ms.openlocfilehash: 8755f48653097d5754c4c908f07ea91bdb3c0d53
-ms.sourcegitcommit: 3a05f34dbeabac62ea8c35c12a045284271971bc
-ms.translationtype: HT
+ms.openlocfilehash: 967af5bc560d5312cd26964e5ca6b2b7eafd60d7
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/03/2019
-ms.locfileid: "58872727"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65991054"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Power BI -mobiilisovellusten uudet ominaisuudet
 Lisätietoja aiheeseen liittyvistä uusista ominaisuuksista:
 
 * [Power BI -tiimin mobiilisovelluksia käsittelevä blogi](https://powerbi.microsoft.com/blog/tag/mobile/)
 * [Power BI Desktopin uudet ominaisuudet](../../desktop-latest-update.md)  
-* [Power BI -palvelun uudet toiminnot ja ominaisuudet](../../service-whats-new.md)  
+* [Power BI -palvelun uudet ominaisuudet](../../service-whats-new.md)  
+
+## <a name="april-2019"></a>Huhtikuun 2019: lle
+
+### <a name="key-influencers-visual"></a>Avain Influencers visual 
+Avain Influencers visual on nyt käytettävissä mobiilisovellus. Tämän visualisoinnin avulla voit analysoida avaimen ohjaimet paremman tietojen kanssa muutamalla hanat.
+
+### <a name="add-comments-to-report-content-android-and-ios"></a>Kommenttien lisääminen raportin sisällön (Android ja iOS)
+Nyt voit tehdä yhteistyötä ja Anna palautetta raporttisivuja ja visualisointeja kommentit. Lue lisätietoja Power BI-palvelussa ja Mobile kommentointi raportin [tämän blogissa](https://powerbi.microsoft.com/blog/announcing-report-commenting-for-power-bi-service-and-mobile/). 
+
+### <a name="maximize-the-view-with-full-screen-mode-android-and-ios"></a>Suurenna näkymän koko näytön tilassa (Android ja iOS)
+Olemme lisänneet uusi painike, joiden avulla voit hallita kun keskitytään tiedot poistamalla raportin ylä- ja alatunnisteet ja tarjoaa suurin tila raporttien tarkastelun kannalta.
 
 ## <a name="march-2019"></a>Maaliskuu 2019
 
@@ -31,7 +42,20 @@ Voit käyttää toisen organisaation kanssasi jakamaa Power BI -sisältöä suor
 
 ### <a name="enhancing-windows-presentation-mode-with-slideshow-windows"></a>Diaesityksen lisääminen Windows-esitystilaan (Windows)
 
-[Diaesityksen](https://powerbi.microsoft.com/blog/enhancing-presentation-mode-with-slideshow-in-windows-power-bi-app/) ansiosta voit käyttää toimistosi julkisia näyttöjä Power BI -raporttien esittämiseksi koko näytössä kiertäen automaattisesti raporttisivuja.  
+Kanssa [diaesityksen](https://powerbi.microsoft.com/blog/enhancing-presentation-mode-with-slideshow-in-windows-power-bi-app/) julkinen näyttää sijaitsevat office avulla voit suorittaa Power BI-raportteja koko näytön tilassa, joka automaattinen Kierrä raporttisivujen välillä.  
+
+### <a name="supporting-pbi-rs-reports-over-adfs-and-wap-configuration-ios-only"></a>PBI RS raportit tukevat kautta ADFS ja WAP-määritys (vain iOS)
+
+Power BI-raporttien (PBIX) isännöidyissä PBI RS ADFS-määrityksen kautta voi nyt käyttää Power BI-iOS-sovellus.
+
+### <a name="enabling-single-tap-interaction-with-report-visuals"></a>Yhdellä napautuksella käsittelemisen raportin visualisointien ottaminen käyttöön
+
+Voimme muuttaa raportin vuorovaikutuksen, joten se edellyttää vain yksi visualisoinnin napauttamalla painiketta ja osittajan käsitellä sen tietoja heti. Käyttäjien ei enää tarvitse napauttamalla sitä ja käsitellä sitä napauttamalla uudelleen visualisoinnin, yhdellä napautuksella niitä molempia.
+
+![Yhdellä napautuksella vuorovaikutus](./media/mobile-whats-new-in-the-mobile-apps/single-tap-2.gif)
+
+> [!NOTE]
+> Aiemmin luodut käyttäjät on näin app-asetuksen käyttöön. Jos haluat lisätietoja, katso [määrittäminen yhdellä napautuksella raportin vuorovaikutuksen](https://docs.microsoft.com/power-bi/consumer/mobile/mobile-app-single-tap) artikkelissa.
 
 ## <a name="january---february-2019"></a>Tammikuu - helmikuu 2019
  
@@ -346,7 +370,7 @@ Kyseinen valikko on uusi iOS- ja Android-puhelimissa vaakatilassa sekä Android-
 Lue [tammikuun 2017 mobiilisovellusten blogin ominaisuusyhteenveto](https://powerbi.microsoft.com/blog/power-bi-mobile-apps-feature-summary-january-2017).
 
 #### <a name="all-devices"></a>Kaikki laitteet
-**Lataa yli 100 riviä taulukoissa ja matriiseissa** Jos sinulla on nyt suuri taulukko tai matriisi koontinäytössä tai raportissa, näytämme ruudussa mahdollisimman paljon tietoa. Kohdistustilassa voit vierittää alaspäin ja ladata lisää rivejä.
+**Lataa yli 100 riviä taulukoissa ja matriiseissa** Jos sinulla on nyt suuri taulukko tai matriisi koontinäytössä tai raportissa, näytämme ruudussa mahdollisimman paljon tietoa. Tarkastelutilassa voit vierittää alaspäin ja ladata lisää rivejä.
 
 **Puhelinraportti – yleinen käytettävyys** Power BI:n puhelinraportit ovat nyt yleisesti saatavilla. Power BI Desktopissa voi luoda olemassa olevasta raportista pystynäkymän mobiilikatseluohjelmia varten. Lue lisätietoja [puhelinraporttien luomisesta Power BI Desktopissa](../../desktop-create-phone-report.md) ja [raportin käyttökokemuksesta puhelimissa](mobile-apps-view-phone-report.md).
 
@@ -380,17 +404,17 @@ Jos skannaat QR-koodin koontinäytöstä, jonka käyttöoikeutta sinulla ei ole,
 
 **Mukautettu URL-osoite kuvaruudussa**
 
-Jos kuvaruudulla on koontinäytön omistajan määrittämä mukautettu URL-osoite, siirryt nyt ruutua napauttaessasi suoraan kyseiseen URL-osoitteeseen avaamatta ruutua kohdistustilassa. 
+Jos kuvaruudulla on koontinäytön omistajan määrittämä mukautettu URL-osoite, siirryt nyt ruutua napauttaessasi suoraan kyseiseen URL-osoitteeseen avaamatta ruutua tarkastelutilassa. 
 
 #### <a name="iphone"></a>iPhone
 **Apple Watch -parannukset**
 
 Voit nyt päivittää Apple Watch -tiedot suoraan Watch-sovelluksesta. Päivitä tiedot painamalla koontinäytön indeksisivua pitkään. (Power BI -mobiilisovelluksen on oltava käynnissä taustalla iPhonessa, jotta tämä toimii.)
 
-#### <a name="android"></a>Android-
+#### <a name="android"></a>Android
 **Mukautettu URL-osoite kuvaruudussa**
 
-Jos kuvaruudulla on koontinäytön omistajan määrittämä mukautettu URL-osoite, siirryt nyt ruutua napauttaessasi suoraan kyseiseen URL-osoitteeseen avaamatta ruutua kohdistustilassa. Lisäksi valmiiksi määritettyjä mukautettuja URL-osoitteita sisältävät koontinäytön ruudut voivat ohjata lukijat sovelluksessa suoraan raportteihin.
+Jos kuvaruudulla on koontinäytön omistajan määrittämä mukautettu URL-osoite, siirryt nyt ruutua napauttaessasi suoraan kyseiseen URL-osoitteeseen avaamatta ruutua tarkastelutilassa. Lisäksi valmiiksi määritettyjä mukautettuja URL-osoitteita sisältävät koontinäytön ruudut voivat ohjata lukijat sovelluksessa suoraan raportteihin.
 
 ### <a name="november-2016"></a>Marraskuu 2016
 Lue [marraskuun 2016 Power BI -mobiilisovellusten ominaisuusyhteenveto](https://powerbi.microsoft.com/blog/power-bi-mobile-apps-feature-summary-november-2016/).
@@ -448,7 +472,7 @@ Lue [lokakuun 2016 Power BI -mobiilisovellusten ominaisuusyhteenveto](https://po
 * [Ilmoitukset Windows 10 -laitteiden Power BI -sovelluksessa](mobile-set-data-alerts-in-the-mobile-apps.md)
 
 #### <a name="ios-on-iphones-and-ipads"></a>iOS iPhone-puhelimissa ja iPad-tableteissa
-**Koko näytön kokoiset ruudut kohdistustilassa iPadissa** Kun napautat ruutua iPadissasi, ruutu avautuu nyt koko näytön kokoisena kohdistustilassa hyödyntäen iPadin koko näytön kokoa.
+**Koko näytön kokoiset ruudut tarkastelutilassa iPadissa** Kun napautat ruutua iPadissasi, ruutu avautuu nyt koko näytön kokoisena tarkastelutilassa hyödyntäen iPadin koko näytön kokoa.
 
 **Päivitä ruudut manuaalisesti** Päivitä ruudut manuaalisesti avaamalla koontinäyttö Power BI:n iOS-mobiilisovelluksessa ja vetämällä alaspäin näytön yläreunasta. 
 
@@ -548,7 +572,7 @@ Lue [Power BI -mobiilisovellusten blogi maaliskuulle 2016](https://powerbi.micro
 
 **Uusimmat tiedot offline-tilassa** Uusi taustapäivitys päivittää välimuistiin kopioidut tietosi automaattisesti, kun olet online-tilassa, joten sinulla on uusimmat tiedot [myös ollessasi offline-tilassa](mobile-apps-offline-data.md). 
 
-**Bing- ja R-ruudut** Avaa Bing- ja R-ruudut kohdistustilassa.
+**Bing- ja R-ruudut** Avaa Bing- ja R-ruudut tarkastelutilassa.
 
 #### <a name="android-mobile-app"></a>Android-mobiilisovellus
 **SQL Server 2016 -mobiiliraportit ja -suorituskykyilmaisimet** [Tarkastele SQL Server 2016 -mobiiliraportteja ja -suorituskykyilmaisimia](mobile-app-ssrs-kpis-mobile-on-premises-reports.md) ja siirry SSRS-kansiosta toiseen.
@@ -560,7 +584,7 @@ Lue [Power BI -mobiilisovellusten blogi maaliskuulle 2016](https://powerbi.micro
 #### <a name="power-bi-app-for-windows-10-devices"></a>Power BI -sovellus Windows 10 -laitteille
 **Nopea käyttö** Käytä koontinäyttöjä, raportteja ja ryhmiä nopeasti uuden viimeksi katsottujen luettelon ja yleisen haun avulla, jotta löydät tarvitsemasi tiedot.
 
-**Bing- ja R-ruudut** Avaa Bing- ja R-ruudut kohdistustilassa.
+**Bing- ja R-ruudut** Avaa Bing- ja R-ruudut tarkastelutilassa.
 
 **Enemmän reaaliaikaisia ruutuja aloitusnäytössä** [Kiinnitä suorituskykyilmaisimia ja rivikortteja aloitusnäyttösi tapahtumaruutuun](mobile-pin-dashboard-start-screen-windows-10-phone-app.md) reaaliaikaisina ruutuina, jotta näet kaikki tärkeät mittarisi yhdellä silmäyksellä.
 
@@ -673,8 +697,8 @@ Parannuksia Power BI -mobiilisovelluksiin: Android, iOS (iPhone ja iPad) ja Wind
 * Palautteen lähettäminen ja luokitus lisätty sovellukseen: Lisätty sovellukseen mahdollisuus lähettää palautetta ja antaa luokituksia, jotta voimme kasvattaa yhteisön vaikutusta suunnitelmiimme ja ylentää ongelmia helposti ja suoraan sovelluksesta.
 
 #### <a name="windows"></a>Windows
-* Parannettu karttaruudun hahmontaminen kohdistustilassa, jotta näyttöala on käytettävissä mahdollisimman tehokkaasti.
+* Parannettu karttaruudun hahmontaminen tarkastelutilassa, jotta näyttöala on käytettävissä mahdollisimman tehokkaasti.
 * Parannettu käyttökokemus käytettäessä roolipohjaista suojausta käyttäviä koontinäyttöjä. 
-* Uuden ominaisuuden avulla voit selata edestakaisin koontinäytön ruuduissa ja tarkastella niitä suoraan kohdistustilassa ilman, että joudut palaamaan takaisin koontinäyttöön seuraavan ruudun valitsemista varten.
+* Uuden ominaisuuden avulla voit selata edestakaisin koontinäytön ruuduissa ja tarkastella niitä suoraan tarkastelutilassa ilman, että joudut palaamaan takaisin koontinäyttöön seuraavan ruudun valitsemista varten.
 * Lisää vakauden ja suorituskyvyn parannuksia. 
 

@@ -1,72 +1,93 @@
 ---
 title: Yhteyden muodostaminen GitHubin Power BI:n välillä
 description: GitHub for Power BI
-author: SarinaJoan
+author: maggiesMSFT
 manager: kfile
-ms.reviewer: maggiesMSFT
+ms.reviewer: sarinas
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: conceptual
-ms.date: 10/16/2017
-ms.author: sarinas
+ms.date: 04/26/2019
+ms.author: maggies
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 1683c849a765f5326fbaa06f82979b09f0cd2dcf
-ms.sourcegitcommit: 750f0bfab02af24c8c72e6e9bbdd876e4a7399de
-ms.translationtype: HT
+ms.openlocfilehash: b0f2bd53f1d8b82b70072446723c2ca3723eeacd
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/04/2019
-ms.locfileid: "54008047"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65608423"
 ---
 # <a name="connect-to-github-with-power-bi"></a>Yhteyden muodostaminen GitHubin Power BI:n välillä
-Power BI:n GitHub -sisältöpaketin avulla saat tietoa GitHub-säiliöstä, osallistumistiedoista, ongelmista, noutopyynnöistä sekä aktiivisista käyttäjistä.
+Tässä artikkelissa käydään läpi GitHub-tilin sovelluksessa Power BI-mallin tiedot vetämällä. Malli, sovellus muodostaa työtilan koontinäytön, raportteja ja tietojoukon, joiden avulla voit tarkastella GitHub-tietoihin. Power BI GitHub-sovellus näyttää GitHub-säilön tunnetaan myös säilössä panoksestasi, ongelmia, pull-pyynnöt ja aktiivisten käyttäjien merkityksellisiä tietoja.
 
-Muodosta yhteys [GitHub -sisältöpakettiin](https://app.powerbi.com/getdata/services/github) tai lue lisää Power Bi:n [GitHub-integroinnista](https://powerbi.microsoft.com/integrations/github).
+Kun olet asentanut sovelluksen mallin, voit muuttaa koontinäyttöä ja raporttia. Sitten voit jakaa sen sovelluksena työtovereiden organisaatiossasi.
+
+Muodosta yhteys [GitHub-mallin sovellus](https://app.powerbi.com/getdata/services/github) tai Lue lisää [GitHub-integrointi](https://powerbi.microsoft.com/integrations/github) kanssa Power BI.
+
+Voit myös kokeilla [GitHub-opetusohjelma](service-tutorial-connect-to-github.md). Todellinen GitHub-tietoja Power BI-dokumentaation julkisen säilön asentaa siihen.
 
 >[!NOTE]
->Sisältöpaketti vaatii GitHub-tilin, jotta sinulla on käyttöoikeus säilöön. Lisätietoja vaatimuksista on alla.
+>Malli-sovellus edellyttää pääsyä säilön GitHub-tili. Lisätietoja vaatimuksista on alla.
 
 ## <a name="how-to-connect"></a>Yhteyden muodostaminen
-1. Valitse vasemman siirtymisruudun alareunassa **Nouda tiedot**.
+[!INCLUDE [powerbi-service-apps-get-more-apps](./includes/powerbi-service-apps-get-more-apps.md)]
    
-   ![](media/service-connect-to-github/pbi_getdata.png) 
-2. Valitse **Palvelut**-ruudussa **Nouda**.
+3. Valitse **GitHub** \> **hanki se nyt**.
+4. - **Asentaa Power BI-sovelluksesta?** Valitse **asentaa**.
+4. - **Sovelluksia** ruudussa **GitHub** ruudun.
+
+    ![Power BI GitHub-ruutu](media/service-connect-to-github/power-bi-github-tile.png)
+
+6. - **Uuden sovelluksen käytön aloittaminen**, valitse **yhdistää tiedot**.
+
+    ![Aloita uuden sovelluksesi käyttö](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-connect-data.png)
+
+5. Kirjoita säilön nimi ja omistaja. Lisätietoja [näiden parametrien löytämisestä](#FindingParams) on alla.
    
-   ![](media/service-connect-to-github/pbi_get_services.png) 
-3. Valitse **GitHub** \> **Nouda**.
-   
-   ![](media/service-connect-to-github/github.png)
-4. Kirjoita säilön nimi ja omistaja. Lisätietoja [näiden parametrien löytämisestä](#FindingParams) on alla.
-   
-   ![](media/service-connect-to-github/pbi_github1.png)
-5. Anna GitHub -tunnistetietosi (tämä vaihe voidaan ohittaa, jos olet jo kirjautunut sisään selaimellasi). 
+    ![Power BI GitHub-säilön nimi](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-connect.png)
+
+5. Anna GitHub-tunnistetietosi (tämä vaihe voidaan ohittaa, jos olet jo kirjautunut sisään selaimellasi). 
 6. Valitse **todennusmenetelmäksi** **oAuth2** \> **Kirjaudu sisään**. 
-7. Noudata GitHubin todennusnäyttöjä. Myönnä Power BI:n GitHub-sisältöpaketille pääsy GitHub-tietoihin.
+7. Noudata Githubin todennusnäyttöjä. Myönnä Power BI-mallin sovelluksen käyttöoikeus GitHub-tietojen GitHub.
    
-   ![](media/service-connect-to-github/github_authorize.png)
+   ![Power BI GitHub-valtuutus](media/service-connect-to-github/github_authorize.png)
    
-   Tämä muodostaa yhteyden Power BI:n ja GitHubin välillä ja sallii Power BI:lle yhteyden tietoihin.  Tiedot päivitetään kerran päivässä.
-8. Kun yhteys säilöön on muodostettu, Power BI tuo tiedot. Näet vasemmassa siirtymisruudussa uuden [GitHub-koontinäytön](https://powerbi.microsoft.com/integrations/github), raportin ja tietojoukon. Uudet kohteet on merkitty keltaisella tähdellä \*.
-   
-   ![](media/service-connect-to-github/pbi_githubdash.png)
+    Power BI muodostaa yhteyden GitHub ja tiedot.  Tiedot päivitetään kerran päivässä. Kun Power BI on tuonut tiedot, näkyviin tulee uusi GitHub-työtila sisällön.
 
-**Mitä seuraavaksi?**
+## <a name="modify-and-distribute-your-app"></a>Muokata ja jakaa sovelluksen
 
-* Kokeile [kysymyksen esittämistä raporttinäkymän yläreunassa olevassa Q&A-ruudussa](consumer/end-user-q-and-a.md).
-* [Muuta koontinäytön ruutuja](service-dashboard-edit-tile.md).
-* [Valitse jokin ruutu](consumer/end-user-tiles.md), jolloin siihen liittyvä raportti avautuu.
-* Tietojoukko on ajastettu päivittymään päivittäin, mutta voit muuttaa päivitysaikataulua tai kokeilla tietojoukon päivittämistä **Päivitä nyt** -toiminnolla haluamanasi ajankohtana
+Olet asentanut mallin GitHub-sovellus. Tämä tarkoittaa myös luomasi GitHub-sovelluksen työtilassa. Työtilassa voit muuttaa raportin ja koontinäytön ja jakaa sen *sovelluksen* työtovereiden organisaatiossasi. 
 
-## <a name="whats-included"></a>Paketin sisältö
+1. Valitse vasemmassa siirtymispalkissa työtilan nimen vieressä olevaa nuolta. Näet työtila sisältää koontinäytön ja raportin.
+
+    ![Sovelluksen vasemmasta siirtymisruudusta](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-left-nav-expanded.png)
+
+8. Valitse uusi [GitHub-koontinäyttö](https://powerbi.microsoft.com/integrations/github).    
+    ![Power BI GitHub-koontinäyttö](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-new-dashboard.png)
+
+3. Tarkastele uusi GitHub-työtila sisällön vasemmassa siirtymispalkissa valitsemalla **työtilat** > **GitHub**.
+ 
+   ![GitHub-työtilan vasemmanpuoleisessa siirtymisruudussa](media/service-connect-to-github/power-bi-github-left-nav.png)
+
+    Tämä näkymä on työtilan sisältöluettelosta. Näet oikeassa yläkulmassa, **Päivitä sovellus**. Kun olet valmis jakamaan sovelluksesi työtovereillesi, joka on jossa aloitat. 
+
+    ![GitHub-sisältöluettelo](media/service-connect-to-github/power-bi-github-content-list.png)
+
+2. Valitse **raporttien** ja **tietojoukkoja** Nähdäksesi työtilan muut elementit.
+
+    Lue [jakaminen sovellusten](service-create-distribute-apps.md) työtovereillesi.
+
+## <a name="whats-included-in-the-app"></a>Mitä sisällytetään sovellus
 Seuraavat tiedot ovat käytettävissä GitHubista Power BI:ssä:     
 
 | Taulukon nimi | Kuvaus |
 | --- | --- |
-| Osallistumiset |Osallistumiset-taulukko laskee lisäyksien kokonaismäärän, poistot ja vahvistaa osallistujan tekemät muutokset, jotka koostetaan viikoittain. Ensimmäiset 100 osallistujaa lasketaan mukaan. |
+| Osallistumiset |Osallistumiset-taulukko antaa kokonaismäärän, poistot ja vahvistaa osallistujan koostetaan viikoittain tekijä. Ensimmäiset 100 osallistujaa lasketaan mukaan. |
 | Ongelmat |Listaa kaikki valitun säilön ongelmat ja sisältää laskelmia, kuten kokonaisajan ja keskimääräisen ongelman sulkemiseen käytetyn ajan, avoimien ongelmien kokonaismäärän ja suljettujen ongelmien kokonaismäärän. Tämä taulukko on tyhjä, jos säilössä ei ole ongelmia. |
-| Noutopyynnöt |Tämä taulukko sisältää kaikki säilöön kohdistetut noutopyynnöt, sekä tiedot siitä, kuka pyynnön on tehnyt. Se sisältää myös laskelmia, kuten montako avointa ja suljettua noutopyyntöä on, sekä niiden kokonaismäärän, miten kauan noutopyynnön toteuttamisessa on kestänyt ja miten kauan noutopyynnön toteuttamisessa on keskimääräisesti kulunut aikaa. Tämä taulukko on tyhjä, jos säilössä ei ole ongelmia. |
-| Käyttäjät |Tässä taulukossa on lueteltu valitun säilön GitHub-käyttäjät tai osallistujat, arkistoidut ongelmat tai toteutetut noutopyynnöt. |
+| Noutopyynnöt |Tämä taulukko sisältää kaikki säilöön kohdistetut noutopyynnöt, sekä tiedot siitä, kuka pyynnön on tehnyt. Se sisältää myös laskelmia, kuten montako Avaa suljettu ja yhteensä pull-pyynnöt, miten kauan noutopyynnön kestänyt ja miten kauan noutopyynnön keskimääräisesti. Tämä taulukko on tyhjä, jos säilössä ei ole ongelmia. |
+| Käyttäjät |Tämä taulukko sisältää luettelon GitHub-käyttäjät tai osallistujat on tehty panoksestasi, Arkistoidut ongelmat tai toteutetut noutopyynnöt valitusta säilöstä. |
 | Välitavoitteet |Siinä ovat kaikki valitun säilön välitavoitteet. |
-| DateTable |Tämä taulukko sisältää päivämääriä tästä päivästä aikaisempiin vuosiin, joiden avulla voit analysoida GitHub-tietojasi päivämäärän mukaan. |
+| DateTable |Tämä taulukko sisältää päivämääriä tästä päivästä aikaisempiin aiemmin, joiden avulla voit analysoida GitHub-tietojasi päivämäärän mukaan. |
 | ContributionPunchCard |Tätä taulukkoa voidaan käyttää valitun osallistumisreikäkorttina valitulle säilölle. Se näyttää vahvistetut muutokset viikonpäivän ja kellonajan mukaan järjestettyinä. Tätä taulukkoa ei ole yhdistetty muihin mallin taulukoihin. |
 | RepoDetails |Tämä taulukko sisältää yksityiskohtaisia tietoja valitusta säilöstä. |
 
@@ -76,14 +97,13 @@ Seuraavat tiedot ovat käytettävissä GitHubista Power BI:ssä:
 * Riittävästi käytettävissä olevia API-ohjelmointirajapintakutsuja tietojen vastaanottamista ja päivittämistä varten.  
 
 ### <a name="de-authorize-power-bi"></a>Power BI:n valtuutuksien poisto
-Poistaaksesi Power BI:n valtuutukset ja estääksesi yhteyden GitHub-säilöön, voit kumota käyttöoikeudet GitHubissa. Lisätietoja löytyy [GitHub-apu](https://help.github.com/articles/keeping-your-ssh-keys-and-application-access-tokens-safe/#reviewing-your-authorized-applications-oauth) -aiheesta.
+Estääksesi yhteyden GitHub-säilöön valtuutukset Power BI, ja voit kumota käyttöoikeudet githubissa. Tutustu tähän [GitHub-apu](https://help.github.com/articles/keeping-your-ssh-keys-and-application-access-tokens-safe/#reviewing-your-authorized-applications-oauth) ohjeaiheen.
 
 <a name="FindingParams"></a>
-
 ## <a name="finding-parameters"></a>Parametrien löytäminen
 Voit määrittää omistajan ja säilön tarkastelemalla säilöä GitHubissa:
 
-![](media/service-connect-to-github/github_ownerrepo.png)
+![Säilön nimi ja omistaja](media/service-connect-to-github/github_ownerrepo.png)
 
 Ensimmäisen osan ”Azure” on omistaja ja toisen osan ”azure-sdk-for-php” on säilö itse.  Nämä kaksi asiaa näkyvät myös säilön URL-osoitteessa:
 
@@ -92,10 +112,15 @@ Ensimmäisen osan ”Azure” on omistaja ja toisen osan ”azure-sdk-for-php”
 ## <a name="troubleshooting"></a>Vianmääritys
 Voit tarvittaessa varmistaa GitHub-tunnistetietosi.  
 
-1. Avaa GitHubin web-sivusto uudessa ikkunassa ja kirjaudu sisään GitHubiin. Näet, oletko kirjautuneena sisään, GitHub-sivuston oikeasta yläkulmasta.    
+1. Toisessa selainikkunassa GitHub-sivustossa ja kirjaudu sisään GitHub. Näet, oletko kirjautuneena sisään, GitHub-sivuston oikeasta yläkulmasta.    
 2. Siirry GitHubissa säilön URL-osoitteeseen, jota aiot käyttää Power BI:ssä. Esimerkki: https://github.com/dotnet/corefx.  
 3. Koita seuraavaksi yhdistää GitHubiin Power BI:ssä. Käytä määritä GitHub -valintaikkunassa säilön ja säilön omistajan nimiä samalle säilölle.  
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
-* [Mikä on Power BI?](power-bi-overview.md)
-* [Nouda tiedot](service-get-data.md)
+
+* [Opetusohjelma: Power BI-ja GitHub-säilön yhdistäminen](service-tutorial-connect-to-github.md)
+* [Luo uusi työtilat Power BI](service-create-the-new-workspaces.md)
+* [Asenna ja käytä sovelluksia Power BI:ssä](consumer/end-user-apps.md)
+* [Power BI-sovelluksista ulkoisiin palveluihin yhdistäminen](service-connect-to-services.md)
+* Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)
+

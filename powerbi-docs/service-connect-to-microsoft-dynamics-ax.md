@@ -11,11 +11,11 @@ ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
 ms.openlocfilehash: 688f0e9bc1070c1cd9605a508d2086f52f7e5730
-ms.sourcegitcommit: 750f0bfab02af24c8c72e6e9bbdd876e4a7399de
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/04/2019
-ms.locfileid: "54008116"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61174275"
 ---
 # <a name="connect-to-microsoft-dynamics-ax-content-pack-with-power-bi"></a>Yhteyden muodostaminen Microsoft Dynamics AX -sisältöpakettiin Power BI:n avulla
 Microsoft Dynamics AX sisältää kolme Power BI -sisältöpakettia, jotka on suunnattu eri yrityskäyttäjille. Erityisesti talousjohtajille suunniteltu Taloudellinen menestys -sisältöpaketti tarjoaa pääsyn organisaatiosi taloudellista suorituskykyä koskeviin merkityksellisiin tietoihin. Vähittäismyyntikanavan menestys -sisältöpaketti on suunnattu kanavajohtajille, ja se keskittyy myynnin suorituskykyyn trendien ennustamiseksi ja merkityksellisten tietojen tunnistamiseksi hyödyntämällä suoraan vähittäismyyntiä ja kauppaa koskevia tietoja. Kustannustenhallinta on suunniteltu operatiivisille johtajille ja talousjohtajille, ja se tarjoaa tietoja toiminnan suorituskyvystä.

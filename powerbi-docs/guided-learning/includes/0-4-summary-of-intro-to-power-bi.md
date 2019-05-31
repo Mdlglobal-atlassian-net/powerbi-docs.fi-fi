@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: b7f2dbd4fa58e86598c0258c432d31cf2f775ecf
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61260241"
+---
 Kerrataan nopeasti ensimmäisessä osiossa opitut asiat.
 
 **Power BI** on kokoelma ohjelmistopalveluja, sovelluksia ja yhdistimiä, jotka yhdessä muuntavat tiedon vuorovaikutteisiksi näkemyksiksi. Voit käyttää tietoja yksittäisistä lähteistä, kuten Excel-työkirjasta, tai noutaa tietoja useista tietokannoista ja pilvilähteistä monimuotoisiin tietojoukkoihin ja raportteihin. Power BI:tä voi käyttää yhtä hyvin yksinkertaisiin tehtäviin kuin suuryrityksen globaalin liiketoiminnan monitahoisiin tarpeisiin.

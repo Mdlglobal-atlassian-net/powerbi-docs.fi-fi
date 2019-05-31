@@ -11,11 +11,11 @@ ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
 ms.openlocfilehash: c8c17fe5349486d9583b8f44ccee1af36e86c761
-ms.sourcegitcommit: 750f0bfab02af24c8c72e6e9bbdd876e4a7399de
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/04/2019
-ms.locfileid: "54008726"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61180959"
 ---
 # <a name="connect-to-circuit-id-with-power-bi"></a>Yhteyden muodostaminen piiritunnukseen Power BI:n avulla
 Viestintätietojen analysointi piiritunnukselta on helppoa Power BI:n avulla. Power BI noutaa tiedot ja laatii sitten oletuskoontinäytön ja siihen liittyvät raportit kyseisten tietojen perusteella. Kun olet luonut yhteyden, voit tarkastella tietojasi ja mukauttaa koontinäyttöä tarpeidesi mukaan. Tiedot päivitetään automaattisesti joka päivä.

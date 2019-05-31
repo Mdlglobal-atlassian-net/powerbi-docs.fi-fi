@@ -11,11 +11,11 @@ ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
 ms.openlocfilehash: 5afb79f52c4717887ba16d9ca43f913ba3446627
-ms.sourcegitcommit: 750f0bfab02af24c8c72e6e9bbdd876e4a7399de
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/04/2019
-ms.locfileid: "54008369"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61178236"
 ---
 # <a name="connect-to-at-internet-bridge-with-power-bi"></a>Yhteyden muodostaminen AT Internet Bridgeen Power BI:n avulla
 AT Internetin ja sen digitaalisen Analytics Suite -analyysialustan avulla voit poimia tiedoistasi välittömän arvon. Power BI:lle kehitetty AT Internet Bridge -sisältöpaketti sisältää tietoja, jotka koskevat sivuston vierailuja, lähteitä, lokalisointia ja laitteita.

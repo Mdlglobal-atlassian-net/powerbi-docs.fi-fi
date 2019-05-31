@@ -1,20 +1,20 @@
 ---
 title: Rivitason suojaus Power BI:n upotetussa sisällössä
 description: Lue ohjeet, miten voit upottaa Power BI -sisältöä sovellukseesi.
-author: markingmyname
-ms.author: maghan
+author: rkarlin
+ms.author: rkarlin
 manager: kfile
 ms.reviewer: nishalit
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 02/05/2019
-ms.openlocfilehash: fdc4e90c65ef02f7416ffce9a41b0b2ed028abc8
-ms.sourcegitcommit: e9c45d6d983e8cd4cb5af938f838968db35be0ee
-ms.translationtype: HT
+ms.date: 03/27/2019
+ms.openlocfilehash: 4fc35b88496674206437507ae866e9eb8cb5dd39
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57328006"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61353814"
 ---
 # <a name="row-level-security-with-power-bi-embedded"></a>Rivitason suojaus Power BI Embeddedissä
 
@@ -47,9 +47,9 @@ RLS on luotu Power BI Desktopissa. Kun tietojoukko ja raportti on avattu, voimme
 
 Huomioi seuraavat asiat tässä rakenteessa:
 
-* Kaikki mitattavat arvot, kuten **Kokonaismyynti**, on tallennettu **Myynti**-faktataulukkoon.
+* Kaikki mittarit, kuten **Kokonaismyynti**, on tallennettu **Myynti**-faktataulukkoon.
 * Saatavilla on neljä muuta liittyvää dimensiotaulukkoa: **Kohde**, **Aika**, **Säilö** ja **Alue**.
-* Yhteysviivojen nuolet osoittavat, mihin suuntaan suodattimet voivat jatkua taulukosta toiseen. Jos suodatin on sijoitettu esimerkiksi **Aika[Päivämäärä]**-kohtaan, nykyisessä rakenteessa se suodattaa arvot vain **Myynti**-taulukosta eteenpäin. Tämä suodatin ei vaikuta muihin taulukoihin, sillä kaikki yhteysviivojen nuolet osoittavat myyntitaulukkoon eivätkä siitä poispäin.
+* Yhteysviivojen nuolet osoittavat, mihin suuntaan suodattimet voivat jatkua taulukosta toiseen. Jos suodatin on sijoitettu esimerkiksi **Aika[Päivämäärä]** -kohtaan, nykyisessä rakenteessa se suodattaa arvot vain **Myynti**-taulukosta eteenpäin. Tämä suodatin ei vaikuta muihin taulukoihin, sillä kaikki yhteysviivojen nuolet osoittavat myyntitaulukkoon eivätkä siitä poispäin.
 * **Alue**-taulukko ilmaisee kunkin alueen johtajan:
   
     ![Aluetaulukon rivit](media/embedded-row-level-security/powerbi-embedded-district-table.png)
@@ -64,7 +64,7 @@ Ohjeet:
 2. Luo uusi rooli, jonka nimi on **Johtaja**.
 
     ![Luo uusi rooli](media/embedded-row-level-security/powerbi-embedded-new-role.png)
-3. Kirjoita **Alue**-taulukkoon seuraava DAX-lauseke: **[alueen johtaja] = USERNAME()**.
+3. Kirjoita **Alue**-taulukkoon seuraava DAX-lauseke: **[alueen johtaja] = USERNAME()** .
 
     ![Rivitason suojauksen säännön DAX-lauseke](media/embedded-row-level-security/powerbi-embedded-new-role-dax.png)
 4. Varmista sääntöjen toimivuus valitsemalla **Mallinnus**-välilehdeltä **Näytä rooleina** ja valitsemalla sitten sekä juuri luomasi **Johtaja**-rooli että **Muut käyttäjät**. Valitse **Antero Ma** käyttäjäksi.
@@ -73,7 +73,7 @@ Ohjeet:
 
     Raportit näyttävät tiedot nyt ikään kuin olisit kirjautuneena **Antero Ma** -tilillä.
 
-Kun suodatinta käytetään näin, kaikki **Alue-**, **Myymälä-** ja **Myynti**-taulukkojen tietueet suodatetaan. **Myynti-** ja **Aika**-taulukkojen, **Myynti-** ja **Kohde**-taulukkojen ja **Kohde-** ja **Aika**-taulukkojen yhteyksiin käytettyjen suodattimien suunnan vuoksi taulukoita ei suodateta alaspäin. Saat lisätietoja kaksisuuntaisesta ristiinsuodatuksesta lataamalla [Kaksisuuntainen ristiinsuodatus SQL Server Analysis Services 2016:ssa ja Power BI Desktopissa](http://download.microsoft.com/download/2/7/8/2782DF95-3E0D-40CD-BFC8-749A2882E109/Bidirectional%20cross-filtering%20in%20Analysis%20Services%202016%20and%20Power%20BI.docx) -raportin.
+Kun suodatinta käytetään näin, kaikki **Alue-** , **Myymälä-** ja **Myynti**-taulukkojen tietueet suodatetaan. **Myynti-** ja **Aika**-taulukkojen, **Myynti-** ja **Kohde**-taulukkojen ja **Kohde-** ja **Aika**-taulukkojen yhteyksiin käytettyjen suodattimien suunnan vuoksi taulukoita ei suodateta alaspäin. Saat lisätietoja kaksisuuntaisesta ristiinsuodatuksesta lataamalla [Kaksisuuntainen ristiinsuodatus SQL Server Analysis Services 2016:ssa ja Power BI Desktopissa](http://download.microsoft.com/download/2/7/8/2782DF95-3E0D-40CD-BFC8-749A2882E109/Bidirectional%20cross-filtering%20in%20Analysis%20Services%202016%20and%20Power%20BI.docx) -raportin.
 
 ## <a name="applying-user-and-role-to-an-embed-token"></a>Käyttäjän ja roolin käyttäminen upotustunnukseen
 
@@ -98,7 +98,7 @@ var generateTokenRequestParameters = new GenerateTokenRequest(accessLevel: "view
 var tokenResponse = await client.Reports.GenerateTokenInGroupAsync(GroupId, report.Id, generateTokenRequestParameters);
 ```
 
-vastaanottaja
+to
 
 ```csharp
 var generateTokenRequestParameters = new GenerateTokenRequest("View", null, identities: new List<EffectiveIdentity> { new EffectiveIdentity(username: "username", roles: new List<string> { "roleA", "roleB" }, datasets: new List<string> { "datasetId" }) });
@@ -145,11 +145,11 @@ CustomData-ominaisuus toimii vain malleilla, jotka sijaitsevat **Azure Analysis 
 
 CustomData-ominaisuuden avulla voit lisätä rivisuodattimen tarkasteltaessa sovelluksesi Power BI -tietoja, kun käytät **Azure Analysis Servicesiä** tietolähteenä (Azure Analysis Servicesiin yhdistettyjen Power BI -tietojen tarkasteleminen sovelluksessa).
 
-CustomData-ominaisuus mahdollistaa vapaan tekstin (merkkijonon) välittämisen CustomDatan yhteysmerkkijono-ominaisuuden avulla. Analysis Services käyttää tätä arvoa *CUSTOMDATA()*-funktion kautta.
+CustomData-ominaisuus mahdollistaa vapaan tekstin (merkkijonon) välittämisen CustomDatan yhteysmerkkijono-ominaisuuden avulla. Analysis Services käyttää tätä arvoa *CUSTOMDATA()* -funktion kautta.
 
-Ainoa tapa saada dynaaminen rivitason suojaus (joka käyttää dynaamisia arvoja suodattimen arviointiin) **Azure Analysis Servicesissä** on käyttää *CUSTOMDATA()*-funktiota.
+Ainoa tapa saada dynaaminen rivitason suojaus (joka käyttää dynaamisia arvoja suodattimen arviointiin) **Azure Analysis Servicesissä** on käyttää *CUSTOMDATA()* -funktiota.
 
-Voit käyttää sitä DAX-kyselyn roolissa. Voit käyttää sitä ilman roolia mittayksikön DAX-kyselyssä.
+Voit käyttää sitä DAX-kyselyn roolissa. Voit käyttää sitä ilman roolia mittarin DAX-kyselyssä.
 CustomData-ominaisuus on osa tunnuksen luontitoimintoja, joita voi käyttää koontinäyttöjen, raporttien ja ruutujen kanssa. Koontinäytöillä voi olla useita CustomData-käyttäjätietoja (yksi ruutu mallia kohden).
 
 #### <a name="customdata-sdk-additions"></a>CustomDatan SDK-lisäykset
@@ -205,7 +205,7 @@ Voit alkaa määrittää CustomData()-ominaisuutta Power BI Embedded -sovellukse
 
     ![Roolin luominen – Jäsenyyden määrittäminen](media/embedded-row-level-security/azure-analysis-services-database-create-role-membership.png)
 
-5. Määritä **rivisuodattimien** DAX-kysely *CUSTOMDATA()*-funktion avulla.
+5. Määritä **rivisuodattimien** DAX-kysely *CUSTOMDATA()* -funktion avulla.
 
     ![Roolin luominen – Rivisuodattimien määrittäminen](media/embedded-row-level-security/azure-analysis-services-database-create-role-row-filters.png)
 
@@ -214,6 +214,8 @@ Voit alkaa määrittää CustomData()-ominaisuutta Power BI Embedded -sovellukse
     ![PBI-raporttimalli](media/embedded-row-level-security/rls-sample-pbi-report.png)
 
 7. Power BI -ohjelmointirajapintojen avulla voit käyttää CustomData-ominaisuutta sovelluksessasi.  Sinulla on oltava käyttäjänimi CustomData-ominaisuuden sisältävää tunnusta luotaessa. Käyttäjänimen on oltava sama kuin pääkäyttäjän täydellinen käyttäjätunnus. Pääkäyttäjän on oltava luomasi roolin jäsen. Jos rooleja ei määritetä, kaikkia rooleja, joiden jäsen pääkäyttäjä on, käytetään rivitason suojauksen arviointiin.
+
+    Kun käsittelet [palveluobjektia](embed-service-principal.md), sinun on myös tehdä yllä olevat vaiheet sijaan päätietokannan tilillä. Kun muodostetaan upotettavan tunnuksen, käyttää [palvelun päänimen Objektitunnus](embed-service-principal.md#how-to-get-the-service-principal-object-id) käyttäjänimeksi.
 
     > [!Note]
     > Kun olet valmis ottamaan sovelluksesi tuotantoon, pääkäyttäjän tili -kentän tai -vaihtoehdon ei pitäisi näkyä käyttäjälle.
@@ -237,7 +239,7 @@ Kun päätät suodattaa raportin tietoja, voit käyttää **rivitason suojausta*
 * Roolien määrittäminen tietolähteen tasolla (vain Analysis Servicesin reaaliaikainen yhteys).
 * Ohjelmallisesti [upotustunnuksella](https://docs.microsoft.com/rest/api/power-bi/embedtoken/datasets_generatetokeningroup) käyttämällä `EffectiveIdentity`-komentoa. Kun käytetään upotustunnusta, todellinen suodatin läpäisee tietyn istunnon upotustunnuksen.
 
-[JavaScript-suodattimien](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Filters#page-level-and-visual-level-filters) avulla käyttäjä voi käyttää rajoitettua, kohdennettua tai suodatettua tietonäkymää. Käyttäjällä on kuitenkin yhä pääsy mallin rakenteen taulukoihin, sarakkeisiin ja mittayksiköihin, ja hän voi mahdollisesti käyttää niiden tietoja. Tietojen käyttöoikeuksien rajoitus voidaan ottaa käyttöön vain rivitason suojauksella eikä asiakaspuolen suodatinohjelmointirajapintojen kautta.
+[JavaScript-suodattimien](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Filters#page-level-and-visual-level-filters) avulla käyttäjä voi käyttää rajoitettua, kohdennettua tai suodatettua tietonäkymää. Käyttäjällä on kuitenkin yhä pääsy mallin rakenteen taulukoihin, sarakkeisiin ja mittareihin, ja hän voi mahdollisesti käyttää niiden tietoja. Tietojen käyttöoikeuksien rajoitus voidaan ottaa käyttöön vain rivitason suojauksella eikä asiakaspuolen suodatinohjelmointirajapintojen kautta.
 
 ## <a name="token-based-identity-with-azure-sql-database-preview"></a>Tunnuspohjaiset käyttäjätiedot Azure SQL -tietokannassa (esikatselu)
 

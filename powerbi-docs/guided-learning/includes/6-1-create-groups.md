@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: e3d62b182f9b142f912a608bee693b7356b1a68d
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61255565"
+---
 Tällä oppitunnilla luomme ensin *ryhmän*. **Ryhmä** määrittää käyttäjät, joilla on käyttöoikeudet tiettyihin koontinäyttöihin, raportteihin ja tietoihin.
 
 Power BI:n ryhmät perustuvat Office 365:n ryhmiin. Jos olet siis hallinnut ryhmäsi sähköpostia, kalenteria ja tiedostoja Office 365 -ryhmillä, huomaat, että Power BI tarjoaa samat toiminnot – ja paljon muutakin. Kun käytät ryhmää Power BI:ssä, luot itse asiassa Office 365 -ryhmän.

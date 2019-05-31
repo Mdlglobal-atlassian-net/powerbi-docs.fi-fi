@@ -11,11 +11,11 @@ ms.subservice: powerbi-custom-visuals
 ms.custom: ''
 ms.date: 12/17/2018
 ms.openlocfilehash: 9c5d2665f012881f951a186c3ec8c9fd94031a28
-ms.sourcegitcommit: ac63b08a4085de35e1968fa90f2f49ea001b50c5
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "57980354"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "60977198"
 ---
 # <a name="frequently-asked-questions-about-power-bi-custom-visuals"></a>Usein kysyttyjä kysymyksiä – Power BI:n mukautetut visualisoinnit
 
@@ -149,7 +149,7 @@ Muista, että sertifioiminen on valinnainen prosessi. Päätät itse, haluatko s
 
 ### <a name="how-to-get-support"></a>Miten saan tukea?
 
-Mukautettujen visualisointien tukitiimille voit lähettää kysymyksiä ja kommentteja:  *pbicvsupport@microsoft.com* .  
+Mukautettujen visualisointien tukitiimille voit lähettää kysymyksiä ja kommentteja:  *pbicvsupport@microsoft.com*  .  
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 

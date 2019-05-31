@@ -7,19 +7,19 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/13/2018
+ms.date: 04/18/2019
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: a593a918c59452c922f6061189ad6c2885478aad
-ms.sourcegitcommit: 8fda7843a9f0e8193ced4a7a0e5c2dc5386059a6
-ms.translationtype: HT
+ms.openlocfilehash: 02fbe26fc4d0c8be0439ca656151ef7712d201b6
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58174863"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61398995"
 ---
 # <a name="supported-languages-and-countriesregions-for-power-bi"></a>Power BI:n tuetut kielet ja maat tai alueet
 
-Tämä artikkeli sisältää luettelot Power BI -palvelun, Power BI Desktopin ja Power BI:n dokumentaation tuetuista kielistä ja maista tai alueista.
+Tässä artikkelissa on luettelo tuetuista kielistä ja maista tai alueista Power BI-palvelun, Power BI Desktop ja Power BI-dokumentaation.
 
 ## <a name="countries-and-regions-where-power-bi-is-available"></a>Maat ja alueet, joissa Power BI on saatavilla
 Katso maat ja alueet, joissa Power BI on saatavilla, [kansainvälisen saatavuuden luettelosta](https://products.office.com/business/international-availability). 
@@ -73,11 +73,11 @@ Power BI -palvelu (selaimessa) on saatavilla seuraavilla 44 kielellä:
 * vietnam – Tiếng Việt
 
 ### <a name="whats-translated"></a>Käännetyt osat
-Valikot, painikkeet, viestit ja muut käyttöliittymän osat on käännetty kielellesi, jolloin sinun on helpompi siirtyä Power BI:hin ja käyttää sitä.
+Power BI kääntää valikot, painikkeet, viestit ja muut elementit käyttökokemuksen-kielelle.
 
 Tällä hetkellä joitakin ominaisuuksia on saatavilla vain englanniksi:
 
-* Raporttinäkymät ja raportit, jotka Power BI luo puolestasi, kun muodostat yhteyden palveluihin, kuten Microsoft Dynamics CRM -palveluun, Google Analyticsiin, Salesforceen ja niin edelleen. (Voit edelleen luoda omia raporttinäkymiä ja raportteja omalla kielelläsi.)
+* Koontinäyttöjä ja raportteja, jotka Power BI Luo, kun muodostat yhteyden palveluihin, kuten Microsoft Dynamics CRM, Google Analytics ja Salesforce. Voit edelleen luoda omia raporttinäkymiä ja raportteja omalla kielelläsi.
 * Tietojen tutkiminen Q&A:n avulla
 
 Lisäominaisuuksia on tulossa muilla kielillä. 
@@ -142,7 +142,7 @@ Power BI Desktopille valitsemasi kieli vaikuttaa lukujen ja päivämäärien nä
 Jos haluat vaihtaa kielen Power BI Desktopissa, palaa takaisin lataussivulle ja lataa se toisella kielellä.
 
 ### <a name="choose-the-locale-for-importing-data-into-power-bi-desktop"></a>Aluekohtaisten asetusten valitseminen tietojen Power BI Desktopiin tuomista varten
-Riippumatta siitä, lataatko Power BI Desktopin vai asennatko sen Windows-kaupasta, voit valita tietylle raportille aluekohtaiset asetukset, jotka ovat muut kuin Power BI Desktop -versiossasi. Tämä muuttaa tietojen tulkintatapaa, kun tiedot tuodaan tietolähteestä, esimerkiksi onko ”3/4/2017” 3. huhtikuuta vai 4. maaliskuuta. 
+Riippumatta siitä, lataatko Power BI Desktopin vai asennatko sen Windows-kaupasta, voit valita tietylle raportille aluekohtaiset asetukset, jotka ovat muut kuin Power BI Desktop -versiossasi. Tietojen tulkitaan, kun tiedot tuodaan tiedoista aluekohtaisten asetusten muutokset tietolähteeseen, esimerkiksi onko ”3/4/2017” tulkitaan 3. huhtikuuta vai 4. maaliskuuta. 
 
 1. Siirry Power BI Desktopissa kohtaan **Tiedosto** > **Asetukset ja vaihtoehdot** > **Asetukset**.
 2. Valitse kohdassa **Nykyinen tiedosto** **Aluekohtaiset asetukset**.
@@ -193,5 +193,5 @@ Ohje on lokalisoitu näille 10 kielelle:
 ## <a name="next-steps"></a>Seuraavat vaiheet
 * Onko käytössäsi jokin Power BI -mobiilisovelluksista? Katso lisätietoja artikkelista [Power BI -mobiilisovelluksissa tuetut kielet](consumer/mobile/mobile-apps-supported-languages.md).
 * Onko sinulla kysyttävää? Voit esittää kysymyksiä [Power BI -yhteisössä](http://community.powerbi.com/).
-* Eikö ongelma ratkennut? Käy [Power BI -tukisivulla](https://powerbi.microsoft.com/support/).
+* Eikö ongelma ratkennut? Vieraile [Power BI -tukisivulla](https://powerbi.microsoft.com/support/).
 

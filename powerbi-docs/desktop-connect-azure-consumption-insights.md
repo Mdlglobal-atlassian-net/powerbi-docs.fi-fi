@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 12/06/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 39678850b2e1acd16c678206feba8cccffa6477d
-ms.sourcegitcommit: e9c45d6d983e8cd4cb5af938f838968db35be0ee
-ms.translationtype: HT
+ms.openlocfilehash: 383d28a9e24165b12cda73ee254541a32db4391c
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57327983"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61325028"
 ---
 # <a name="analyze-azure-cost-and-usage-data-in-power-bi-desktop"></a>Azuren kustannus- ja käyttötietojen analysointi Power BI Desktopissa
 
@@ -24,7 +24,9 @@ Power BI desktop voi muodostaa yhteyden Azureen, jolloin saat tarkempia tietoja 
 
 Power BI tukee tällä hetkellä Enterprise Agreement -sopimusten ja asiakassopimusten laskutustileihin yhdistämistä.
 
-Enterprise Agreement -sopimusten käyttäjien tulee muodostaa yhteys Azure Consumption Insights -liittimellä. Asiakassopimustilien käyttäjien tulee muodostaa yhteys Azure Cost Management -liittimellä.
+* **Enterprise Agreement-sopimuksen** käyttäjien tulee yhdistää kanssa **Azure Consumption Insights-yhdistin**.
+
+* **Asiakassopimus** käyttäjien tulee yhdistää kanssa **Azure Cost Management-liitin**.
 
 ## <a name="connect-with-azure-consumption-insights"></a>Yhteyden muodostaminen Azure Consumption Insightsin avulla
 
@@ -34,7 +36,7 @@ Tässä artikkelissa kerrotaan, kuinka voit saada tarvitsemasi tiedot ja kuinka 
 
 Jotta yhteyden muodostaminen **Azure Consumption Insights** -liittimen avulla onnistuisi, sinulla on oltava käyttöoikeus Azure-portaalin yritysominaisuuksiin.
 
-Voit yhdistää **Azure Consumption Insights** -liittimellä valitsemalla **Power BI Desktopin** **Aloitus**-valintanauhasta **Nouda tiedot**. Valitse vasemmalla olevista kategorioista **Online-palvelut**, jolloin näkyviin tulee **Microsoft Azure Consumption Insights (beeta)**. Valitse **Muodosta yhteys**.
+Voit yhdistää **Azure Consumption Insights** -liittimellä valitsemalla **Power BI Desktopin** **Aloitus**-valintanauhasta **Nouda tiedot**. Valitse vasemmalla olevista kategorioista **Online-palvelut**, jolloin näkyviin tulee **Microsoft Azure Consumption Insights (beeta)** . Valitse **Muodosta yhteys**.
 
 ![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_01b.png)
 
@@ -107,7 +109,7 @@ Kun käsittelet raportteja ja luot kyselyitä, käytä seuraavia:
 * *Älä* käytä *numberOfMonth*-parametria yhdessä *startBillingDataWindow*- tai *endBillingDataWindow*-parametrin kanssa.
 
 ## <a name="migrating-from-the-azure-enterprise-connector"></a>Siirtyminen Azure Enterprise -liittimestä
-Osa asiakkaista loi visualisointeja *Azure-yrityssovellusliittimellä (beeta)*, jota ei tulevaisuudessa enää ole saatavilla ja joka korvataan **Azure Consumption Insights** -liittimellä. **Azure Consumption Insights** -liittimessä on mm. seuraavia ominaisuuksia ja parannuksia:
+Osa asiakkaista loi visualisointeja *Azure-yrityssovellusliittimellä (beeta)* , jota ei tulevaisuudessa enää ole saatavilla ja joka korvataan **Azure Consumption Insights** -liittimellä. **Azure Consumption Insights** -liittimessä on mm. seuraavia ominaisuuksia ja parannuksia:
 
 * *taseen yhteenvetoa* ja *Marketplace-ostoksia* varten saatavilla olevat lisätietolähteet
 * uudet ja edistykselliset parametrit, kuten *startBillingDataWindow* ja *endBillingDataWindow*
@@ -212,7 +214,12 @@ Tietojen sarakkeet ja nimet Azure-portaalissa ovat vastaavat ohjelmointirajapinn
 
 Tässä osiossa opit muodostamaan yhteyden asiakassopimusten laskutustiliin.
 
-Voit yhdistää **Azure Cost Management** -liittimellä valitsemalla **Nouda tiedot** **Power BI Desktopin** **Aloitus**-valintanauhasta.  Valitse **Azure** vasemmalla olevista luokista, niin näet **Azure Cost Managementin (beeta)**. Valitse **Muodosta yhteys**.
+> [!NOTE]
+> Azure Cost Management-liitin tukee tällä hetkellä asiakkaille **asiakassopimus**.  **Enterprise Agreement-sopimuksen** asiakkaiden tulee käyttää Microsoft Azure Consumption Insights-liitin.
+> 
+> 
+
+Voit yhdistää **Azure Cost Management** -liittimellä valitsemalla **Nouda tiedot** **Power BI Desktopin** **Aloitus**-valintanauhasta.  Valitse **Azure** vasemmalla olevista luokista, niin näet **Azure Cost Managementin (beeta)** . Valitse **Muodosta yhteys**.
 
 ![](media/desktop-connect-azure-consumption-insights/azure-cost-management-00.png)
 
@@ -234,8 +241,8 @@ Sinua pyydetään kirjautumaan sisään Azure-sähköpostiosoitteella ja -salasa
 * **Marketplace**: Näyttää käyttöön perustuvat Azure Marketplace -maksut.
 * **Hintataulukot**: Sisältää valittua laskutusprofiilia koskevat hintatiedot.
 * **Varattujen esiintymien veloitukset**: Näyttää varattuihin esiintymiin liittyvät maksut viimeisten 24 kuukauden ajalta.
-* **Varattujen esiintymien suositukset (yksi)**: Näyttää varatun esiintymän ostosuositukset käyttötrendien perusteella yhdessä tilauksessa viimeisten 7, 30 tai 60 päivän ajalta.
-* **Varattujen esiintymien suositukset (jaetut)**: Näyttää varatun esiintymän ostosuositukset käyttötrendien perusteella kaikissa tilauksissa viimeisten 7, 30 tai 60 päivän ajalta.
+* **Varattujen esiintymien suositukset (yksi)** : Näyttää varatun esiintymän ostosuositukset käyttötrendien perusteella yhdessä tilauksessa viimeisten 7, 30 tai 60 päivän ajalta.
+* **Varattujen esiintymien suositukset (jaetut)** : Näyttää varatun esiintymän ostosuositukset käyttötrendien perusteella kaikissa tilauksissa viimeisten 7, 30 tai 60 päivän ajalta.
 * **Varattujen esiintymien käyttö**: Näyttää varattujen esiintymien kulutustiedot viimeisen kuukauden ajalta.
 * **Käyttötiedot**: Näyttää erittelyn valittua laskutusprofiilin tunnusta koskevista kulutetuista määristä ja arvioidut maksut.
 

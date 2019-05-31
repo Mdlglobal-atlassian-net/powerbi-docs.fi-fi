@@ -11,11 +11,11 @@ ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
 ms.openlocfilehash: 2a19cc832f7e03acfd224c6ab2409016ce8da770
-ms.sourcegitcommit: 750f0bfab02af24c8c72e6e9bbdd876e4a7399de
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/04/2019
-ms.locfileid: "54008731"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61179726"
 ---
 # <a name="connect-to-appfigures-with-power-bi"></a>appFiguresien yhdistäminen Power BI:n avulla
 Sovelluksia koskevien tärkeiden tilastotietojen seuraaminen on helppoa Power BI:n ja appFigures-sisältöpaketin avulla. Power BI noutaa tiedot, esimerkiksi sovellusmyynnin, lataukset ja mainostilastot ja laatii sitten oletuskoontinäytön ja siihen liittyvät raportit kyseisten tietojen perusteella.
@@ -29,7 +29,7 @@ Muodosta yhteys [appFigures-sisältöpakettiin](https://app.powerbi.com/getdata/
 2. Valitse **Palvelut**-ruudussa **Nouda**.
    
    ![](media/service-connect-to-appfigures/pbi_getservices.png)
-3. Valitse **appFigures** \> **Nouda**.  
+3. Valitse **appFigures** \> **Nouda**.
    
    ![](media/service-connect-to-appfigures/appfigures.png)
 4. Valitse **todennusmenetelmäksi** **oAuth2** \> **Kirjaudu sisään**. Anna pyydettäessä appFiguresin tunnistetiedot ja noudata todennusprosessia.

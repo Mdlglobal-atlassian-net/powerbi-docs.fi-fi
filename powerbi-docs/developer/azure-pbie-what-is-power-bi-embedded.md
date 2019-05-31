@@ -1,8 +1,8 @@
 ---
 title: Mikä on Azure Power BI Embedded ja upotettu analysointi | Microsoft Docs
 description: Power BI Embedded on upotetun analysoinnin työkalu. Sen tarkoituksena on yksinkertaistaa sitä, miten riippumattomat ohjelmistotoimittajat ja -kehittäjät käyttävät Power BI -ominaisuuksia auttamalla heitä lisäämään sovelluksiin nopeasti upeita visualisointeja, raportteja ja koontinäyttöjä. Lue, miten käyttää upotetun analysoinnin ohjelmistoa, upotetun analysoinnin työkaluja tai upotetun liiketoimintatiedon hallinnan työkaluja Power BI Embeddin avulla.
-author: markingmyname
-ms.author: maghan
+author: rkarlin
+ms.author: rkarlin
 manager: kfile
 ms.reviewer: nishalit
 ms.service: power-bi-embedded
@@ -11,12 +11,12 @@ ms.devlang: csharp, javascript
 ms.topic: overview
 ms.custom: seodec18
 ms.date: 12/10/2018
-ms.openlocfilehash: 2e60d29602fb412f66f74d5258081003610c30cd
-ms.sourcegitcommit: 0abcbc7898463adfa6e50b348747256c4b94e360
-ms.translationtype: HT
+ms.openlocfilehash: 6e91b2e958a738961255f9ad9b6b0514fed759bb
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "55762072"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61385013"
 ---
 # <a name="what-is-power-bi-embedded-in-azure"></a>Mikä on Power BI Embedded Azuressa?
 

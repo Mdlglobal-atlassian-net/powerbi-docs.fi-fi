@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 8d9388977c088c51094cf2835c8dab9e7d019a59
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61260246"
+---
 Kaikki Power BI:ssä tehtävät asiat voidaan jakaa muutamiin **peruselementteihin**. Kun olet sisäistänyt nämä peruselementit, voit ryhtyä laajentamaan tietämystäsi jokaisesta ja aloittaa yksityiskohtaisten ja monipuolisten raporttien tekemisen. Lopultahan jopa monimutkaisimmilta näyttävät asiat rakentuvat peruselementeistä aivan niin kuin rakennukset puusta, teräksestä, betonista ja lasista tai autot metallista, kankaasta ja kumista. Niin rakennukset kuin autotkin voivat olla rakenteeltaan yksinkertaisia tai monimutkaisia riippuen siitä, miten niiden peruselementit on järjestelty.
 
 Seuraavaksi tutustumme Power BI:n peruselementteihin ja niillä suoritettaviin perustason tehtäviin. Saat myös maistiaisen sen monimutkaisemmista mahdollisuuksista.

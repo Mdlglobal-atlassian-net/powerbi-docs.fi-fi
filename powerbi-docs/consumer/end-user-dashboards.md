@@ -8,15 +8,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 01/22/2019
+ms.date: 05/12/2019
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 1dc085d822463ecf394d6257741d4af82d72b8c0
-ms.sourcegitcommit: a054782370dec56d49bb205ee10b7e2018f22693
-ms.translationtype: HT
+ms.openlocfilehash: 81987b864224b6afd254a3bffe17ecbb019198d0
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56661584"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65608343"
 ---
 # <a name="dashboards-for-power-bi-service-consumers"></a>Koontinäytöt Power BI -palvelun kuluttajille
 
@@ -24,7 +24,7 @@ Power BI ***-koontinäyttö*** on yksi sivu, jota kutsutaan usein pohjaksi, joss
 
 ![koontinäyttö](media/end-user-dashboards/power-bi-dashboard2.png)
 
-Koontinäytössä näkyviä visualisointeja kutsutaan *ruuduiksi*, ja raporttisuunnittelijat *kiinnittävät* ne koontinäyttöön. Valitsemalla ruudun pääset sille raporttisivulle, jossa visualisointi on luotu. Jos olet uusi Power BI:n käyttäjä, saat hyvän pohjan sen käyttöön lukemalla [Power BI:n peruskäsitteet](end-user-basic-concepts.md).
+Koontinäytön visualisointeja kutsutaan *ruutuja* ja *kiinnitetty* raportin koontinäyttöön *suunnittelijat*. Useimmissa tapauksissa ruudun valitseminen ohjaa sinut raporttisivulle missä visualisointi on luotu. Jos olet uusi Power BI:n käyttäjä, saat hyvän pohjan sen käyttöön lukemalla [Power BI:n peruskäsitteet](end-user-basic-concepts.md).
 
 > [!NOTE]
 > Koontinäyttöjä voi [tarkastella ja jakaa mobiililaitteissa](mobile/mobile-apps-view-dashboard.md).
@@ -39,7 +39,7 @@ Koontinäytön visualisoinnit ovat peräisin raporteista ja kukin raportti perus
 ## <a name="advantages-of-dashboards"></a>Koontinäyttöjen edut
 Koontinäytöt tarjoavat erinomaisen tavan liiketoiminnan tarkkailuun, vastausten etsimiseen ja tärkeimpien tietojesi näkemiseen yhdellä silmäyksellä. Koontinäytöillä olevat visualisoinnit saattavat olla peräisin yhdestä tai useammasta tietojoukosta sekä yhdestä tai useammasta pohjana olevasta raportista. Raporttinäkymä voi yhdistää paikalliset ja pilvipalvelussa olevat tiedot tarjoten niistä yhdistetyn näkymän riippumatta siitä, missä tiedot todella sijaitsevat.
 
-Koontinäyttö ei ole vain nätti kuva, vaan se on erittäin vuorovaikutuskykyinen ja laajalti mukautettava, ja sen ruudut päivittyvät sitä mukaa, kun sen pohjana olevat tiedot muuttuvat.
+Koontinäyttö ei ole vain nätti kuva; on vuorovaikutteinen ja ruudut päivittyvät sitä mukaa kun pohjana olevat tiedot muuttuvat.
 
 ## <a name="dashboards-versus-reports-for-power-bi-consumers"></a>Koontinäytöt ja raportit Power BI ***-kuluttajille***
 Raportit sekoitetaan usein koontinäyttöihin, koska nekin ovat pohjia, jotka ovat täynnä visualisointeja. Niiden välillä on kuitenkin merkittäviä eroja Power BI *-kuluttajien* näkökulmasta.
@@ -48,11 +48,9 @@ Raportit sekoitetaan usein koontinäyttöihin, koska nekin ovat pohjia, jotka ov
 | --- | --- | --- |
 | Sivut |Yksi sivu |Yksi tai useampi sivu |
 | Tietolähteet |Yksi tai useampi raportti ja yksi tai useampi tietojoukko koontinäyttöä kohden |Yksi tietojoukko raporttia kohden |
-| Tilaa |Koontinäytön sähköpostiviestit voi tilata |Raporttisivun sähköpostiviestit voi tilata |
 | Suodatus |Ei voi suodattaa tai jakaa sektoreihin |Monta eri tapaa suodattaa, korostaa ja jakaa sektoreihin |
 | Hälytysten asettaminen |Voit luoda hälytyksiä lähetettäväksi sähköpostina, kun tietyt ehdot täyttyvät |Ei |
 | Esittelyssä |Voit määrittää jonkin koontinäytön ”esittelyssä” olevaksi koontinäytöksi |Esittelyssä olevaa raporttia ei voida luoda |
-| Kyselyt luonnollisella kielellä |Käytettävissä koontinäytöltä |Ei ole käytettävissä raporteista |
 | Pohjana olevat tietojoukkojen taulukot ja kentät ovat näkyvissä |Ei. Voit viedä tietoja, mutta etänäe taulukoita ja kenttiä itse koontinäytössä. |Kyllä. Tietojoukon taulukot ja kentät ja arvot ovat näkyvissä. |
 
 

@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 8e5755f632a0cfab8b0b4bc79871c96ee9e2aeef
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61263415"
+---
 Tervetuloa Power BI:n **Ohjattu oppiminen** -kurssin **Tietojen tutkiminen** -osioon. Nyt kun hallitset Power BI Desktopin ja tietojen haun ja visualisoinnin, voit siirtyä Power BI -palvelun tietojen tutkimiseen.
 
 ![](media/4-0-intro-power-bi-service/4-0_2.png)

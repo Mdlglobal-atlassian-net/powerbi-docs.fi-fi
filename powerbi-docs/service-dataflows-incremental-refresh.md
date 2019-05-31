@@ -1,23 +1,23 @@
 ---
 title: Lisäävän päivityksen käyttäminen Power BI -tietovoiden kanssa
 description: Opi määrittämään lisäävä päivitys tietovoille
-author: davidiseminger
+author: mgblythe
 manager: kfile
-ms.reviewer: ''
+ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 11/06/2018
-ms.author: davidi
+ms.date: 04/02/2019
+ms.author: mblythe
 LocalizationGroup: Data from files
-ms.openlocfilehash: 224fc07fccc2b12b0a28c016f427a4d5f4613290
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.openlocfilehash: 1bc9e0d5de909c5d0859b6d31185cf0cb27bda23
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54293706"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61136555"
 ---
-# <a name="using-incremental-refresh-with-power-bi-dataflows-preview"></a>Lisäävän päivityksen käyttäminen Power BI -tietovoiden kanssa (esikatselu)
+# <a name="using-incremental-refresh-with-power-bi-dataflows"></a>Lisäävän päivityksen käyttäminen Power BI -tietovoiden kanssa
 
 Tietovoiden avulla voit tuoda suuria tietomääriä Power BI:hin ja luoda kiinnostavia raportteja ja analyyseja. Joissain tapauksissa ei kuitenkaan kannata päivittää täydellistä kopiota tietolähteestä jokaisen päivityksen yhteydessä. Hyvä vaihtoehto on **lisäävä päivitys**, joka tarjoaa seuraavat edut tietovoille:
 
@@ -27,13 +27,13 @@ Tietovoiden avulla voit tuoda suuria tietomääriä Power BI:hin ja luoda kiinno
 
 ![Tietovoiden lisäävä päivitys](media/service-dataflows-incremental-refresh/dataflows-incremental-refresh_03.png)
 
-Lisäävän päivityksen käyttäminen Power BI -tietovoissa edellyttää, että työtila, jossa tietovuo sijaitsee, on [Premium-kapasiteetissa](service-premium.md), ja tietovuossa käsitellyllä tietolähteellä on oltava *päivämäärä/aika*-kenttä, jonka mukaan lisäävä päivitys voidaan suodattaa. 
+Lisäävän päivityksen käyttäminen Power BI -tietovoissa edellyttää, että työtila, jossa tietovuo sijaitsee, on [Premium-kapasiteetissa](service-premium-what-is.md), ja tietovuossa käsitellyllä tietolähteellä on oltava *päivämäärä/aika*-kenttä, jonka mukaan lisäävä päivitys voidaan suodattaa. 
 
 ## <a name="configuring-incremental-refresh-for-dataflows"></a>Lisäävän päivityksen määrittäminen tietovoille
 
 Tietovuo voi sisältää useita entiteettejä. Lisäävä päivitys määritetään entiteettitasolla, jolloin tietovuo voi sisältää sekä täysin päivitetyt entiteetit että lisäävästi päivitetyt entiteetit.
 
-Jos haluat määrittää lisäävästi päivitetyn entiteetin, aloita määrittämällä entiteetti aivan kuin mikä tahansa muu entiteetti. Lisätietoja tietovuon määrittämisestä on artikkelissa [Omatoiminen tietojen valmistelu Power BI:ssä (esikatselu)](service-dataflows-overview.md).
+Jos haluat määrittää lisäävästi päivitetyn entiteetin, aloita määrittämällä entiteetti aivan kuin mikä tahansa muu entiteetti. Saat lisätietoja tietovirrassa määrittää [Omatoiminen tietojen valmistautuminen Power BI](service-dataflows-overview.md).
 
 Kun tietovuo on luotu ja tallennettu, valitse **lisäävän päivityksen** kuvake entiteettinäkymässä seuraavassa kuvassa esitetyllä tavalla:
 
@@ -156,8 +156,8 @@ Tässä artikkelissa kuvattiin tietovoiden lisäävä päivitys. Seuraavassa on 
 
 * [Omatoiminen tietojen valmistelu tietovoiden avulla](service-dataflows-overview.md)
 * [Tietovoiden luominen ja käyttäminen Power BI:ssä](service-dataflows-create-use.md)
-* [Tietovoiden käyttäminen paikallisten tietolähteiden kanssa (esikatselu)](service-dataflows-on-premises-gateways.md)
-* [Kehittäjien resurssit Power BI -tietovoille (esikatselu)](service-dataflows-developer-resources.md)
+* [Dataflows käyttö paikallisiin tietolähteisiin](service-dataflows-on-premises-gateways.md)
+* [Power BI dataflows Kehittäjien resurssit](service-dataflows-developer-resources.md)
 
 Lisätietoja Power Querysta ja ajoitetusta päivityksestä on seuraavissa artikkeleissa:
 * [Kyselyn yleiskatsaus Power BI Desktopissa](desktop-query-overview.md)

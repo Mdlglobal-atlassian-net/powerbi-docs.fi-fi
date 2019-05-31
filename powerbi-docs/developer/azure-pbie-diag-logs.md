@@ -1,19 +1,19 @@
 ---
 title: Power BI Embedded -palvelun diagnostiikan kirjaus Azuressa | Microsoft Docs
 description: Lue lisätietoja diagnostiikan kirjauksen määrittämisestä Azuren Power BI Embedded -palveluun.
-author: markingmyname
-ms.author: maghan
+author: rkarlin
+ms.author: rkarlin
 manager: kfile
 ms.reviewer: ''
 ms.service: power-bi-embedded
 ms.topic: conceptual
 ms.date: 08/13/2018
-ms.openlocfilehash: 93181a7ecaad0ec5bcd837f55ad7863fae53772c
-ms.sourcegitcommit: 8207c9269363f0945d8d0332b81f1e78dc2414b0
-ms.translationtype: HT
+ms.openlocfilehash: 695d1f219b3438f07125447db04aad3ba971683a
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56249133"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61385304"
 ---
 # <a name="diagnostic-logging-for-power-bi-embedded-in-azure"></a>Power BI Embedded -palvelun diagnostiikan kirjaus Azuressa
 
@@ -30,7 +30,7 @@ Diagnostiikan avulla voit hoitaa monenlaisia skenaarioita. Voit esimerkiksi
 
 ### <a name="azure-portal"></a>Azure-portaali
 
-1. Valitse [Azure-portaalissa](https://portal.azure.com) Power BI Embedded -resurssin vasemmassa siirtymisruudussa **Diagnostic logs (Diagnostiikan lokit)** ja valitse sitten **Turn on diagnostics (Diagnostiikka käyttöön)**.
+1. Valitse [Azure-portaalissa](https://portal.azure.com) Power BI Embedded -resurssin vasemmassa siirtymisruudussa **Diagnostic logs (Diagnostiikan lokit)** ja valitse sitten **Turn on diagnostics (Diagnostiikka käyttöön)** .
 
     ![Diagnostiikan kirjauksen käyttöönotto Azure-portaalin Power BI Embedded -palvelussa](media/azure-pbie-diag-logs/azure-pbie-diag-logs-01.png)
 
@@ -171,11 +171,11 @@ Jos haluat tarkastella diagnostiikkatietojasi Log Analytics -toiminnossa, avaa *
 
 ![Log Analytics -sivu.](media/azure-pbie-diag-logs/azure-pbie-diag-logs-analytics.png)
 
-Kun olet nyt ottanut käyttöön tietojen keräämisen, valitse **Logs (Lokit)** -kohdassa **All collected data (Kaikki kerätyt tiedot)**.
+Kun olet nyt ottanut käyttöön tietojen keräämisen, valitse **Logs (Lokit)** -kohdassa **All collected data (Kaikki kerätyt tiedot)** .
 
 ![All collected Data (Kaikki kerätyt tiedot).](media/azure-pbie-diag-logs/azure-pbie-diag-logs-analytics-all-collected-data.png)
 
-Valitse **Type (Tyyppi)** -kohdasta **AzureDiagnostics** ja valitse sitten **Apply (Käytä)**. AzureDiagnostics-vaihtoehto sisältää moduulin tapahtumat. Huomaa, että Log Analytics -kysely luodaan lennosta.
+Valitse **Type (Tyyppi)** -kohdasta **AzureDiagnostics** ja valitse sitten **Apply (Käytä)** . AzureDiagnostics-vaihtoehto sisältää moduulin tapahtumat. Huomaa, että Log Analytics -kysely luodaan lennosta.
 
 ![Azure-diagnostiikka.](media/azure-pbie-diag-logs/azure-pbie-diag-logs-analytics-azure-diagnostics.png)
 

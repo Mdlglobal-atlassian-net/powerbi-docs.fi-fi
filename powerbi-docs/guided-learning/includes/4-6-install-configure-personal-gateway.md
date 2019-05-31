@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: ea958349988cade1045e80b073254ab1f29bbe9e
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61263410"
+---
 Edellisissä aiheissa on tarkasteltu, miten Power BI:tä voidaan käyttää tietolähteisiin yhdistämiseen ja miten Power BI -palvelussa olevia tietojoukkoja voi päivittää manuaalisesti. Tietojen päivittäminen jokaisen muutoksen jälkeen ei kuitenkaan ole käytännöllistä, joten voit määrittää Power BI:n suorittamaan ajoitetun päivityksen, joka muodostaa yhteyden tietolähteisiin ja julkaisee ne automaattisesti Power BI -palveluun. Tällä tavalla palvelu voidaan myös yhdistää kaikenlaisiin paikallisiin tietolähteisiin, kuten Excel-tiedostoihin, Access-tietokantoihin, SQL-tietokantoihin ja muihin kohteisiin.
 
 Paikalliset tietolähteet yhdistetään Power BI -palveluun **tietoyhdyskäytävällä**. Tietoyhdyskäytävä on pieni sovellus, joka suoritetaan tietokoneella ja joka käyttää valmista aikataulua tietoihin yhdistämiseen, päivitysten keräämiseen ja niiden päivittämiseen Power BI -palveluun. **Henkilökohtainen yhdyskäyttävä** on **tietoyhdyskäytävä**, jota voidaan käyttää ilman järjestelmänvalvojamääritystä.

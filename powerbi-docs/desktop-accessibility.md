@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 01/11/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: e3dd7d9120b524dd09d6f0d60764385185210d83
-ms.sourcegitcommit: 89e9875e87b8114abecff6ae6cdc0146df40c82a
-ms.translationtype: HT
+ms.openlocfilehash: 54c842a91684eec1cf60eca4442592500d1bcb11
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58306293"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "64770423"
 ---
 # <a name="accessibility-in-power-bi-desktop-reports"></a>Power BI Desktop -raporttien helppokäyttöisyys
 Power BI:ssa on ominaisuuksia, joiden avulla toimintarajoitteisten henkilöiden on helppo käyttää ja käsitellä Power BI -raportteja. Näitä ominaisuuksia ovat esimerkiksi mahdollisuus käyttää raporttia näppäimistön tai näytönlukuohjelman avulla, kohdistaminen sivun eri objekteihin sarkaimella sekä ymmärtäväinen merkkien käyttö visualisoinneissa.
@@ -23,7 +23,7 @@ Power BI:ssa on ominaisuuksia, joiden avulla toimintarajoitteisten henkilöiden 
 ![Erilaiset merkinnät parantavat viiva- ja aluekaavioiden helppokäyttöisyyttä](media/desktop-accessibility/accessibility_01.png)
 
 ## <a name="consuming-a-power-bi-desktop-report-with-a-keyboard-or-screen-reader"></a>Power BI Desktop -raporttien käyttö näppäimistöllä tai näytönlukuohjelmalla
-Syyskuun 2017 julkaisusta alkaen **Power BI Desktopissa** on voinut painaa **?**-näppäintä, joka avaa **Power BI Desktopissa** käytettävien pikanäppäinten ohjeruudun.
+Syyskuun 2017 julkaisusta alkaen **Power BI Desktopissa** on voinut painaa **?** -näppäintä, joka avaa **Power BI Desktopissa** käytettävien pikanäppäinten ohjeruudun.
 
 ![Paina ?-näppäintä Power BI Desktopissa tarkastellaksesi helppokäyttötoimintojen pikanäppäimiä](media/desktop-accessibility/accessibility_03.png)
 
@@ -60,7 +60,7 @@ Seuraavien vihjeiden avulla voit luoda entistä helppokäyttöisempiä **Power B
 
 ### <a name="general-tips-for-accessible-reports"></a>Yleisiä vinkkejä helppokäyttöisten raporttien luomiseen
 
-* Jos käytössä on **Rivi-**, **Alue-**, **Yhdistelmä-**, **Pistekaavio-** ja/tai **Kupla**-tyyppisiä visualisointeja, ota merkinnät käyttöön ja käytä kullakin rivillä eri *merkintämuotoa*.
+* Jos käytössä on **Rivi-** , **Alue-** , **Yhdistelmä-** , **Pistekaavio-** ja/tai **Kupla**-tyyppisiä visualisointeja, ota merkinnät käyttöön ja käytä kullakin rivillä eri *merkintämuotoa*.
   
   * Voit ottaa *Merkinnät* käyttöön valitsemalla **Muoto**-osion **Visualisoinnit**-ruudussa, laajentamalla **Muodot**-osion ja vierittämällä sitten alaspäin **Merkit**-kohtaan. Valitse sen asetukseksi *Käytössä*.
   * Valitse kunkin rivin (tai alueen, jos käytössä on **Alue**-kaavio) nimi **Muodot**-osion avattavasta ruudusta. Avattavan luettelon alta voit säätää valitun rivin merkinnän muotoa, väriä, kokoa ja muita ominaisuuksia.
@@ -144,6 +144,12 @@ Pyrkimyksissämme parantaa helppokäyttötoimintoja yllä olevan luettelon kokem
 | Valitse useita | Ctrl + Enter tai Ctrl + välilyönti |
 | Napsauta hiiren kakkospainikkeella | <ul><li>Windows-näppäimistö: Windows-kontekstinäppäin + F10.  Windows-kontekstiavain on vasemman Alt-näppäimen ja vasemman nuolinäppäimen välissä</li><li>Muu näppäimistö: Vaihto + F10</li></ul> |
 | Tyhjennä valinta | Ctrl + Vaihto + C |
+
+### <a name="table--matrix-navigation"></a>Taulukon & matriisin siirtyminen
+| Toiminto           | Paina                |
+| :------------------- | :------------------- |
+| Siirrä kohdistus ylä- tai alaspäin yhden solun (eri kaikki solut kaikilla alueilla)  | Avaimen / ALANUOLINÄPPÄIMILLÄ nuolinäppäintä nuoli ylös |
+| Siirrä kohdistusta vasemmalle / juuri yhden solun (eri kaikki solut kaikilla alueilla)  | Vasenta / nuolinäppäintä oikealle |
 
 ### <a name="pane-navigation"></a>Siirtyminen ruudussa
 | Toiminto           | Paina                |

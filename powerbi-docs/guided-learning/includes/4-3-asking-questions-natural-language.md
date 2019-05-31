@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 2a0ec80120e30d8d652eb2bd28461b9f88f7610a
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61263375"
+---
 Power BI:ssä on tehokas kielentunnistusmoduuli, jonka avulla voit esittää kysymyksiä tietojoukosta käyttämällä keskustelumaisia ilmaisuja ja kysymyksiä. Näin voit raporttien ja visualisointien lisäksi luoda kaavioita Power BI:n avulla esittämällä yksinkertaisia kysymyksiä.
 
 Voit esittää tiedoista kysymyksiä avaamalla koontinäytön Power BI:ssä. Näytön yläreunassa on syöttöruutu, johon voit kirjoittaa esitettyjä tietoja koskevia kysymyksiä. Tähän viitataan joskus *Kysymykset ja vastaukset* -ominaisuutena, mutta useimmiten puhutaan vain **Q&A**:sta.

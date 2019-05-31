@@ -8,15 +8,15 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 12/06/2018
+ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: a1f55d09de68d5ac29b81c72f3b1dc6cf98c1597
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.openlocfilehash: b0dc84d7b2d8da0df8a9e61a43f35898d197c188
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54289942"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65513772"
 ---
 # <a name="project-online-connect-to-data-through-power-bi-desktop"></a>Project Online: tietoihin yhdistäminen Power BI Desktopilla
 Voit muodostaa Power BI Desktopilla yhteyden Project Onlinessa oleviin tietoihin.
@@ -30,16 +30,16 @@ Voit muodostaa Power BI Desktopilla yhteyden Project Onlinessa oleviin tietoihin
 3. Valitse **OData-syöte** ja valitse **Yhdistä**.
 4. Kirjoita osoite URL-kenttään OData-syötteesi osoite ja valitse sitten OK.
    
-   Jos Project Web App ‑sivustosi osoite on muotoa https://\<vuokraajannimi\>.sharepoint.com/sites/pwa, niin OData-syötteen annettava osoite on muotoa https://\<vuokraajannimi\>.sharepoint.com/sites/pwa/\_api/Projectdata.
+   Jos Project Web App-sivuston osoite pitäisi näyttää samalta kuin *https://\<vuokraajannimi\>.sharepoint.com/sites/pwa*, OData-syötteen kirjoitat osoite on *https://\<vuokraajannimi\>.sharepoint.com/sites/pwa/\_api/Projectdata*.
    
    Tässä esimerkissä käytetään osoitetta https://contoso.sharepoint.com/sites/pwa/default.aspx
 5. Power BI Desktop kehottaa sinua todentamaan itsesi Office 365 ‑tilin avulla. Valitse organisaation tili ja anna tunnistetietosi.
    
    ![](media/desktop-project-online-connect-to-data/image.png)
 
-Huomaa, että tilillä, jota käytät yhteyden muodostamiseksi OData-syötteeseen, on oltava Project Web App ‑sivustolle vähintään yksi Portfolion katselutoiminto ‑käyttöoikeus. 
+Tilillä, jota käytät yhteyden OData-syöte on oltava vähintään yksi portfolion katselutoiminto Project Web App-sivustoon. 
 
-Tästä näkymästä voit valita mihin taulukoihin haluat muodostaa yhteyden ja luoda kyselyn.  Haluatko käsityksen siitä, miten pääset alkuun?  Seuraavassa blogikirjoituksessa kerrotaan, miten Project Online ‑tiedoista voidaan luoda edistymiskäyrä.  Blogikirjoituksessa puhutaan Power Queryn käyttämisestä yhteyden muodostamiseksi Project Onlineen, mutta sama koskee Power BI Desktopiakin.
+Tästä näkymästä voit valita mihin taulukoihin haluat muodostaa yhteyden ja luoda kyselyn.  Haluatko käsityksen siitä, miten pääset alkuun?  Seuraavassa blogikirjoituksessa kerrotaan, miten voit luoda luettelo kaavion Project Online-tietojen tallennus.  Blogikirjoituksessa puhutaan Power Queryn käyttämisestä yhteyden muodostamiseksi Project Onlineen, mutta sama koskee Power BI Desktopiakin.
 
-[Edistymiskäyrien luominen projektille Power Pivot’n ja Power Queryn avulla](http://blogs.office.com/2014/03/24/creating-burndown-charts-for-project-using-power-pivot-and-power-query/)
+[Tallennus alaspäin kaavioiden luominen projektille Power Pivot-ja Power Query](http://blogs.office.com/2014/03/24/creating-burndown-charts-for-project-using-power-pivot-and-power-query/)
 

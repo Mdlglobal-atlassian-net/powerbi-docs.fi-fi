@@ -13,11 +13,11 @@ ms.date: 12/06/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
 ms.openlocfilehash: bc5033df204fafcc7316d6708d7b39429e8e9cba
-ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56216581"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61052989"
 ---
 # <a name="drill-mode-in-a-visualization-in-power-bi"></a>Visualisointiin porautumistila Power BI:ssä
 
@@ -43,7 +43,7 @@ Päivämäärät ovat hierarkian yksilöivä tyyppi. Kun lisäät visualisointii
 
 1. Power BI -palvelussa ja Desktopissa porautuminen edellyttää visualisointia, jolla on hierarkia. 
    
-2. [Avaa Jälleenmyyntianalyysimalli](../sample-datasets.md) ja luo puukartta, jossa näkyvät **yksiköt yhteensä tänä vuonna** (Arvot) alueen **(Territory)**, kaupungin **(City)**, postinumeron **(PostalCode)** ja nimen **(Name)** (Ryhmä) mukaan.  Puukartassa on alueesta, kaupungista, postinumerosta ja postitoimipaikasta koostuva hierarkia. Jokainen alue sisältää yhden tai useamman kaupungin, jokainen kaupunki yhden tai useamman postinumeron ja niin edelleen. Visualisointi näyttää oletusarvoisesti vain alueen tiedot, koska *Territory* (Alue) näkyy luettelossa ensimmäisenä.
+2. [Avaa Jälleenmyyntianalyysimalli](../sample-datasets.md) ja luo puukartta, jossa näkyvät **yksiköt yhteensä tänä vuonna** (Arvot) alueen **(Territory)** , kaupungin **(City)** , postinumeron **(PostalCode)** ja nimen **(Name)** (Ryhmä) mukaan.  Puukartassa on alueesta, kaupungista, postinumerosta ja postitoimipaikasta koostuva hierarkia. Jokainen alue sisältää yhden tai useamman kaupungin, jokainen kaupunki yhden tai useamman postinumeron ja niin edelleen. Visualisointi näyttää oletusarvoisesti vain alueen tiedot, koska *Territory* (Alue) näkyy luettelossa ensimmäisenä.
    
    ![Valitse alue (Territory)](media/end-user-drill/power-bi-hierarcy-list.png)
 

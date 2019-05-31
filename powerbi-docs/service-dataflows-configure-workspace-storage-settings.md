@@ -1,21 +1,21 @@
 ---
 title: Määritä työtilan tietovuoasetukset
-description: Määritä sovelluksen työtila Power BI:ssä tallentamaan tietovuon määritys- ja datatiedostot Azure Data Lake Storage Gen2:ssa
+description: Määritä sovelluksen työtilan Power BI tallentaa sen tietovirrassa määritys ja datatiedostot Azure Data Lake Storage Gen2
 author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/10/2018
+ms.date: 04/02/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 8c17a7b4ad455077d383eaff9b35a5d1004fce11
-ms.sourcegitcommit: 80961ace38ff9dac6699f81fcee0f7d88a51edf4
-ms.translationtype: HT
+ms.openlocfilehash: 52ef3f57276e7f7560b9d7df7bc1be465d842eb3
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56223624"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61168473"
 ---
 # <a name="configure-workspace-dataflow-settings-preview"></a>Määritä työtilan tietovuoasetukset (esikatselu)
 
@@ -52,9 +52,6 @@ Laajenna seuraavaksi **Luo sovellustyötila** -valintaikkunassa **Lisäasetukset
 ![Uuden työtilan lisäasetukset](media/service-dataflows-configure-workspace-storage-settings/dataflow-storage-settings_04.jpg)
 
 Luo uusi työtila valitsemalla **Tallenna**. Jokainen tässä työtilassa luotu uusi tietovuo tallentaa nyt määritystiedoston (Model.json-tiedoston) ja tiedot organisaatiosi Azure Data Lake Storage Gen2 -tilille. 
-
-> [!NOTE]
-> Tietovuotoiminto on esikatselutilassa, ja sitä voidaan muuttaa ja päivittää ennen kuin se on yleisesti saatavilla.
 
 ## <a name="update-dataflow-storage-for-an-existing-workspace"></a>Päivitä aiemmin luodun työtilan tietovuon tallennustila
 

@@ -11,11 +11,11 @@ ms.date: 02/22/2019
 ms.author: davidi
 LocalizationGroup: Create reports
 ms.openlocfilehash: 59d5ccd6a7179ca4c44210854fb66abb5371ac6c
-ms.sourcegitcommit: 76772a361e6cd4dd88824b2e4b32af30656e69db
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56892409"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61325939"
 ---
 # <a name="use-bookmarks-to-share-insights-and-build-stories-in-power-bi"></a>Kirjanmerkkien avulla voit jakaa merkityksellisiä tietoja ja koostaa tarinoita Power BI:ssä 
 Käyttämällä **kirjanmerkkejä** Power BI:ssä voit tallentaa raporttisivun senhetkisen määritetyn näkymän suodatukset ja visualisointien tila mukaan lukien. Voit myöhemmin palata tähän tilaan valitsemalla tallennetun kirjanmerkin. 
@@ -148,7 +148,7 @@ Kirjanmerkit toivat mukanaan myös **korostuksen**. **Korostus**toiminnolla voit
 
 Tutustutaan seuraavaksi **korostus**- ja **kohdistustilan** eroihin.
 
-1. **Kohdistus**tilassa yksi visualisointi voi täyttää koko kankaan, kun valitset **kohdistustilan** kuvakkeen.
+1. **Tarkastelu**tilassa yksi visualisointi voi täyttää koko kankaan, kun valitset **tarkastelutilan** kuvakkeen.
 2. **Korostuksella** voit nostaa esiin yhden visualisoinnin sen alkuperäisessä koossa siten, että kaikki muut sivun visualisoinnit häivytetään lähes läpinäkyviksi. 
 
 ![Vertaa tarkastelutilaa korostukseen](media/desktop-bookmarks/bookmarks_11.png)
@@ -184,5 +184,5 @@ Tähän versioon **kirjanmerkkitoiminnosta** liittyy tiettyjä rajoituksia ja hu
 Seuraavissa artikkeleissa on lisätietoja ominaisuuksista, jotka muistuttavat kirjanmerkkejä tai toimivat niiden kanssa:
 
 * [Porautumisen käyttäminen Power BI Desktopissa](desktop-drillthrough.md)
-* [Koontinäytön ruudun tai raporttivisualisoinnin näyttäminen kohdistustilassa](consumer/end-user-focus.md)
+* [Koontinäytön ruudun tai raporttivisualisoinnin näyttäminen tarkastelutilassa](consumer/end-user-focus.md)
 

@@ -1,20 +1,20 @@
 ---
 title: Usean palveltavan kohteen hallinta Power BI Embeddedin analyysitoiminnoilla
 description: Suunnittele monen vuokraajan sovellus, jossa käytetään upotettuja analyysitoimintoja.
-author: markingmyname
-ms.author: maghan
+author: rkarlin
+ms.author: rkarlin
 manager: kfile
 ms.reviewer: nishalit
 ms.service: powerbi
 ms.subservice: powerbi - developer
 ms.topic: conceptual
 ms.date: 01/11/2019
-ms.openlocfilehash: 60441e950eb8ddea386e38731b794a58c2342620
-ms.sourcegitcommit: d4d36b6b200f2693b545e4a3e66d94c77a3cfafb
-ms.translationtype: HT
+ms.openlocfilehash: 31222828d1a12a5f46fd7c04b3aa32240ff35736
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57014250"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61374656"
 ---
 # <a name="manage-multi-tenancy-with-power-bi-embedded-analytics"></a>Usean vuokraajan hallinta Power BI Embeddedin analyysitoiminnoilla
 
@@ -53,7 +53,7 @@ Tässä artikkelissa kuvataan eri lähestymistapoja ja analysoidaan niitä erila
 
 **AAD-sovelluksen käyttäjä (palvelun päänimi)** – Käyttäjätiedot, jotka edustavat SaaS-sovellusta Power BI -ympäristössä ja joita SaaS-sovellus käyttää kutsuessaan Power BI -ohjelmointirajapintoja. Tämän on oltava AAD-verkkosovellus. Voi korvata *pääkäyttäjän*, kun suoritetaan Power BI -todennusta.
 
-**Kapasiteetti** – Joukko resursseja, jotka on omistettu Power BI -palvelun suoritukseen. [Power BI Premium -kapasiteetit](../service-premium.md) – Nämä on tarkoitettu suurille yrityksille, joissa Power BI on sisäisessä käytössä, kun taas [Power BI Embedded -kapasiteetit](azure-pbie-create-capacity.md) on tarkoitettu sovelluskehittäjille, jotka kehittävät SaaS-sovelluksia kolmansille osapuolille.
+**Kapasiteetti** – Joukko resursseja, jotka on omistettu Power BI -palvelun suoritukseen. [Power BI Premium -kapasiteetit](../service-premium-what-is.md) – Nämä on tarkoitettu suurille yrityksille, joissa Power BI on sisäisessä käytössä, kun taas [Power BI Embedded -kapasiteetit](azure-pbie-create-capacity.md) on tarkoitettu sovelluskehittäjille, jotka kehittävät SaaS-sovelluksia kolmansille osapuolille.
 
 **[Power BI Pro -käyttöoikeus](../service-admin-purchasing-power-bi-pro.md)** – Käyttäjäkohtainen käyttöoikeus, joka antaa oikeuden julkaista sisältöä sovellusten työtiloihin, kuluttaa sovelluksia ilman Premium-kapasiteettia, jakaa koontinäyttöjä sekä tilata koontinäyttöjä ja raportteja.
 
@@ -142,9 +142,9 @@ Sovelluskehittäjä voi lisätä eristystä määrittämällä kullekin työtila
 
 ### <a name="scalability"></a>Skaalattavuus
 
-Tämän mallin yhtenä etuna on, että kun tiedot erotellaan useisiin tietojoukkoihin kutakin vuokraajaa varten, voidaan välttää [yksittäisen tietojoukon kokorajoitukset](https://docs.microsoft.com/power-bi/service-premium-large-datasets) (kapasiteetti tällä hetkellä 10 Gt). Kun kapasiteetti on ylikuormittunut, [siitä voidaan poistaa käyttämättömiä tietojoukkoja](../service-premium-understand-how-it-works.md), mikä vapauttaa muistia aktiivisia tietojoukkoja varten. Tämä ei ole mahdollista yksittäisen suuren tietojoukon kanssa. Jos käytössä on useita tietojoukkoja, vuokraajia voidaan tarvittaessa myös erotella useisiin Power BI -kapasiteetteihin.
+Tämän mallin yhtenä etuna on, että kun tiedot erotellaan useisiin tietojoukkoihin kutakin vuokraajaa varten, voidaan välttää [yksittäisen tietojoukon kokorajoitukset](https://docs.microsoft.com/power-bi/service-premium-large-datasets) (kapasiteetti tällä hetkellä 10 Gt). Kun kapasiteetti on ylikuormittunut, se voi poistaa käyttämättömät tietojoukot Vapauta muistia aktiivisia tietojoukkoja. Tämä ei ole mahdollista yksittäisen suuren tietojoukon kanssa. Jos käytössä on useita tietojoukkoja, vuokraajia voidaan tarvittaessa myös erotella useisiin Power BI -kapasiteetteihin.
 
-Näistä eduista huolimatta tulee aina ottaa huomioon, millaisen laajuuden SaaS-sovellus saattaa tavoittaa tulevaisuudessa. Vastaan saattaa tulla rajoituksia esimerkiksi sen suhteen, montako artefaktia voi hallita. Lisätietoja aiheesta on edempänä tässä artikkelissa käyttöönoton [rajoitusten](#summary-comparison-of-the-different-approaches) yhteydessä. SKU:n käyttämä kapasiteetti määrittää rajoituksia sille, millaiseen muistimäärään tietojoukkojen tulee mahtua, [montako päivitystä voidaan suorittaa samanaikaisesti](../service-premium-understand-how-it-works.md) ja kuinka usein tietoja voidaan enintään ladata uudelleen. Jos hallittavana on satoja tai tuhansia tietojoukkoja, testaamista suositellaan. On suositeltavaa ottaa huomioon myös keskimääräinen käyttö ja enimmäiskäyttö sekä vuokraajat, joilla on suuria tietojoukkoja tai erilaisia käyttömalleja ja joita tulee hallita eri tavalla kuin muita vuokraajia.
+Näistä eduista huolimatta tulee aina ottaa huomioon, millaisen laajuuden SaaS-sovellus saattaa tavoittaa tulevaisuudessa. Vastaan saattaa tulla rajoituksia esimerkiksi sen suhteen, montako artefaktia voi hallita. Lisätietoja aiheesta on edempänä tässä artikkelissa käyttöönoton [rajoitusten](#summary-comparison-of-the-different-approaches) yhteydessä. Kapasiteetin SKU: N käyttää esittelee, että tietojoukot tarvitsevat mahtumaan, kuinka monta päivitykset voidaan suorittaa aikaa ja tietojen päivityksiä enimmäistaajuus muistin koon rajoitettu. Jos hallittavana on satoja tai tuhansia tietojoukkoja, testaamista suositellaan. On suositeltavaa ottaa huomioon myös keskimääräinen käyttö ja enimmäiskäyttö sekä vuokraajat, joilla on suuria tietojoukkoja tai erilaisia käyttömalleja ja joita tulee hallita eri tavalla kuin muita vuokraajia.
 
 ### <a name="automation--operational-complexity"></a>Automaatio ja toiminnallinen monimutkaisuus
 
@@ -245,17 +245,17 @@ Kun loppukäyttäjät muokkaavat tai luovat raportteja, he voivat käyttää tuo
 
 **Power BI -kapasiteetin huomioitavat asiat ja rajoitukset:**
 
-* Kukin kapasiteetti voi käyttää [ostetun varastointiyksikön](../service-premium.md) mukaisesti vain sille varattua muistia ja näennäisytimiä.
-* Kunkin varastointiyksikön suositellut tietojoukkokoot ovat kohdassa [Suuret Premium-tietojoukot](../service-premium-large-datasets.md).
+* Kukin kapasiteetti voi käyttää [ostetun varastointiyksikön](../service-premium-what-is.md) mukaisesti vain sille varattua muistia ja näennäisytimiä.
+* Kunkin varastointiyksikön suositellut tietojoukkokoot ovat kohdassa [Suuret Premium-tietojoukot](../service-premium-what-is.md#large-datasets).
 * Varatun kapasiteetin suurin mahdollinen tietojoukon koko on 10 gigatavua.
 * Ajoitettujen päivitysten määrä *tuontitilan* tietojoukolle on 48 päivässä.
 * Ajoitettujen päivitysten välinen aika *tuontitilan* tietojoukolle on 30 minuuttia.
-* Kapasiteetissa samanaikaisesti mahdollisesti suoritettavien päivitysten määrä on annettu kohdassa [resurssien hallinta ja optimointi](../service-premium-understand-how-it-works.md).
+* Kapasiteetissa samanaikaisesti mahdollisesti suoritettavien päivitysten määrä on annettu kohdassa [resurssien hallinta ja optimointi](../service-premium-what-is.md#capacity-nodes).
 * Kapasiteetin skaalaukseen keskimäärin kuluva aika on 1–2 minuuttia. Tänä aikana kapasiteetti ei ole käytettävissä. Suosittelemme [käyttökatkojen välttämiseksi](https://powerbi.microsoft.com/blog/power-bi-developer-community-november-update-2018/#scale-script) skaalausratkaisua.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
 * [Upotettu analysointi Power BI:n avulla](embedding.md)
 * [Power BI Embedded](azure-pbie-what-is-power-bi-embedded.md)
-* [Power BI Premium](../service-premium.md)
+* [Power BI Premium](../service-premium-what-is.md)
 * [Rivitason suojaus](embedded-row-level-security.md)

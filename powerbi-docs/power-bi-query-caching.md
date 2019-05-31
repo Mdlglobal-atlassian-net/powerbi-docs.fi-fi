@@ -7,15 +7,15 @@ ms.reviewer: bhmerc
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/03/2019
+ms.date: 04/25/2019
 ms.author: maggies
 LocalizationGroup: ''
-ms.openlocfilehash: fbfd8c98743144e0c9604aca4174d6ef32916e77
-ms.sourcegitcommit: de0b72915183a8a784d3227838bd704c1c209422
-ms.translationtype: HT
+ms.openlocfilehash: c981a3e2a05129a470c8d26675226bfb42c1bb68
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/04/2019
-ms.locfileid: "58914272"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "64769541"
 ---
 # <a name="query-caching-in-power-bi-premium"></a>Kyselyn tallentaminen välimuistiin Power BI Premiumissa
 
@@ -26,9 +26,7 @@ Power BI Premiumia käyttävät organisaatiot voivat hyödyntää *kyselyn talle
 
 Välimuistissa olevat kyselytulokset ovat käyttäjä- ja tietojoukkokontekstikohtaisia ja noudattavat aina suojaussääntöjä. Tällä hetkellä kyselyn tallentaminen välimuistiin koskee vain aloitussivua. Toisin sanoen kyselyt eivät tallennu välimuistiin, kun käsittelet raporttia. Välimuisti kuvastaa omia kirjanmerkkejä ja pysyviä suodattimia. [Koontinäyttöruudut](service-dashboard-tiles.md), jotka käyttävät samoja kyselyjä, hyötyvät myös kyselyn tallentamisesta välimuistiin. Etenkin suorituskyky hyötyy, kun tietojoukkoa käytetään usein eikä sitä tarvitse päivittää usein. Kyselyn tallentaminen välimuistiin voi myös pienentää Premium-kapasiteetin kuormitusta vähentämällä kyselyjen kokonaismäärää.
 
-Voit hallita kyselyn tallentamista välimuistiin tietojoukon **Asetukset**-sivulla Power BI -palvelussa. Asetusvaihtoehtoja on kolme:
-
-- **Kapasiteetin oletusarvo**: Tietojoukko perii asetuksen Premium-kapasiteetista. Power BI Premium -kapasiteetin järjestelmänvalvoja hallitsee kapasiteetin oletusarvoa.
+Voit hallita kyselyn tallentamista välimuistiin tietojoukon **Asetukset**-sivulla Power BI -palvelussa. Se on kaksi mahdollista asetukset:
 
 - **Ei käytössä**: Älä käytä kyselyn tallentamista välimuistiin tälle tietojoukolle.
 

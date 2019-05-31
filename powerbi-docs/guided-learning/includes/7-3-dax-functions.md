@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 06ee6ad7ade46d811c6340d905150c6dd3810c55
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61273386"
+---
 DAX sisältää runsaan joukon funktioita, joilla voit jäsentää, muotoilla ja analysoida tietojasi. Nämä funktiot voidaan jakaa muutamaan luokkaan:
 
 * **koostamisfunktiot**
@@ -50,9 +58,9 @@ DAX sisältää esimerkiksi seuraavat **loogiset** funktiot:
 * IF
 * IFERROR.
 
-Näitä erikoisfunktioita voi ilmaista myös *operaattoreilla*. Esimerkiksi **AND** voidaan kirjoittaa (ja korvata) DAX-kaavoissa muodossa **&&**.
+Näitä erikoisfunktioita voi ilmaista myös *operaattoreilla*. Esimerkiksi **AND** voidaan kirjoittaa (ja korvata) DAX-kaavoissa muodossa **&&** .
 
-Voit käyttää operaattoreita (esimerkiksi **&&**), kun tarvitset kaavaasi enemmän kuin kaksi ehtoa. Muissa tapauksissa suosittelemme itse funktion nimen (esimerkiksi **AND**) käyttöä DAX-koodin luettavuuden parantamiseksi.
+Voit käyttää operaattoreita (esimerkiksi **&&** ), kun tarvitset kaavaasi enemmän kuin kaksi ehtoa. Muissa tapauksissa suosittelemme itse funktion nimen (esimerkiksi **AND**) käyttöä DAX-koodin luettavuuden parantamiseksi.
 
 ## <a name="information-functions"></a>Tietofunktiot
 DAX sisältää esimerkiksi seuraavat **tietofunktiot**:

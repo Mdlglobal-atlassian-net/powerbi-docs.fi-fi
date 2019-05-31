@@ -1,10 +1,10 @@
 ---
 ms.openlocfilehash: 3fd97374836978a4902a878da141865c271df643
-ms.sourcegitcommit: b343e44dbafc0b718c564402593d4b6e3a8ce97c
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51207732"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61396836"
 ---
 Yleensä visualisointeja käytetään kahden tai useamman eri arvon vertailuun. Saatat kuitenkin joskus raportteja laatiessasi haluta seurata vain yhtä suorituskykyilmaisinta tai arvoa ajan kuluessa. Tämä onnistuu Power BI Desktopissa **Mittari**- tai **Yksittäinen numero** -kortin visualisoinnilla. Luo jommankumman tyyppinen tyhjä kaavio valitsemalla sen kuvake **Visualisoinnit**-ruudusta.
 

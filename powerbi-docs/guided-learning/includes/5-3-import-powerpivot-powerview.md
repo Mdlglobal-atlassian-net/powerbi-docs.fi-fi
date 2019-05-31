@@ -1,10 +1,10 @@
 ---
 ms.openlocfilehash: e87ea8470464e458c1da2037f25adfcee857361e
-ms.sourcegitcommit: b343e44dbafc0b718c564402593d4b6e3a8ce97c
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51206593"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61271395"
 ---
 Jos käytät Excelin edistyneitä BI-ominaisuuksia, kuten **Power Queryä** (nimellä **Get & Transform** Excel 2016:ssa) tietojen hakemiseen ja lataamiseen, **Power Pivotia** tehokkaiden tietomallien luomiseen ja **Power Wiev’tä** dynaamisten raporttien luomiseen, voit tuoda nekin Power BI:hin.
 
@@ -16,5 +16,5 @@ Jos työkirjassa on **Power View -taulukoita**, ei hätää. Power BI luo ne uud
 
 ![](media/5-3-import-powerpivot-powerview/5-3_2.png)
 
-Yhtenä Power BI:n mahtavista ominaisuuksista Power Queryllä tai Power Pivotilla ulkoisesta tietolähteestä yhdistetyt, haetut ja ladatut tiedot voidaan **päivittää ajoitetusti**, kun työkirja on tuotu Power BI:hin. Käyttämällä ajoitettua päivitystä Power BI hyödyntää työkirjan yhteystietoja suoraan tietolähteeseen yhdistämiseen ja kaikkien muuttuneiden tietojen hakemiseen ja lataamiseen. Kaikki raporttien visualisoinnit päivitetään myös automaattisesti.
+Ja tässä on yksi Power BI: n mahtavista ominaisuuksista: Jos käytät Power Query-tai Power Pivot-yhteyden muodostamiseen, tietojen hakemiseen ja lataamiseen ulkoisesta tietolähteestä, kun olet tuonut työkirjan Power BI: hin, voit määrittää **ajoitetun päivityksen**. Käyttämällä ajoitettua päivitystä Power BI hyödyntää työkirjan yhteystietoja suoraan tietolähteeseen yhdistämiseen ja kaikkien muuttuneiden tietojen hakemiseen ja lataamiseen. Kaikki raporttien visualisoinnit päivitetään myös automaattisesti.
 

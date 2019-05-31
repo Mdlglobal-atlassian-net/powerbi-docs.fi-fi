@@ -1,20 +1,20 @@
 ---
 title: Jaettujen tietojoukkojen käyttö OData-syötteinä Power BI-raporttipalvelimessa
 description: Power BI -raportteja voi yhdistää eri tietolähteisiin. Käytettävissä on eri tietolähteitä riippuen siitä, miten tietoja käytetään.
-author: markingmyname
+author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 01/05/2018
-ms.author: maghan
-ms.openlocfilehash: cf322fc518185d87021f2df3d4573805315e625f
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.author: maggies
+ms.openlocfilehash: 7505860f7eedf62fe4384fea051a2731a932fce9
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54295339"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "64769904"
 ---
 # <a name="accessing-shared-datasets-as-odata-feeds-in-power-bi-report-server"></a>Jaettujen tietojoukkojen käyttö OData-syötteinä Power BI-raporttipalvelimessa
 Voit käyttää jaettuja tietojoukkoja OData-syötteellisellä Power BI Desktopilla.

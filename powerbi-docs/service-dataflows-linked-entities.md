@@ -7,17 +7,17 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 11/06/2018
+ms.date: 04/02/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 52876f05eba098466b3f0b8cebc614d10a3cd277
-ms.sourcegitcommit: 69c31c15020e2707f961697eeb05cb550c9968f6
-ms.translationtype: HT
+ms.openlocfilehash: d766730185a9064241621d15efc9faf31334fe95
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "58220904"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61136439"
 ---
-# <a name="link-entities-between-dataflows-in-power-bi-preview"></a>Entiteettien linkittäminen tietovoiden välillä Power BI:ssä (esikatselu)
+# <a name="link-entities-between-dataflows-in-power-bi"></a>Entiteettien linkittäminen tietovoiden välillä Power BI:ssä
 
 Power BI:n tietovoiden ansiosta voit saada yhden organisatoristen tietojen säilön lähteen, jossa yritysanalyytikot voivat valmistella ja hallita tietoja kertaheitolla ja sitten käyttää niitä uudelleen eri analyysisovellusten välillä organisaatiossa. 
 
@@ -29,7 +29,7 @@ Linkitetyt entiteetit ovat **vain luku** -tilassa. Jos haluat luoda linkitetyn e
 
 ## <a name="linked-entity-availability"></a>Linkitetyn entiteetin saatavuus
 
-Linkitettyjen entiteettien päivitys edellyttää [Power BI Premium](service-premium.md) -tilausta. Linkitetyt entiteetit ovat saatavilla missä tahansa tietovuossa työtilassa, jota isännöidään Power BI Premium -kapasiteetissa. Lähteen tietovuohon ei liity rajoituksia.
+Linkitettyjen entiteettien päivitys edellyttää [Power BI Premium](service-premium-what-is.md) -tilausta. Linkitetyt entiteetit ovat saatavilla missä tahansa tietovuossa työtilassa, jota isännöidään Power BI Premium -kapasiteetissa. Lähteen tietovuohon ei liity rajoituksia.
 
 Linkitetyt entiteetit toimivat kunnolla vain uusissa Power BI -työtiloissa. Lue lisää [uusista Power BI -työtiloista](service-create-the-new-workspaces.md). Kaikkien linkitettyjen tietovoiden on sijaittava uusissa työtiloissa, jotta ne toimivat kunnolla.
 
@@ -88,11 +88,11 @@ Linkitettyjen entiteettien käsittelyn aikana on hyvä pitää mielessä pari ra
 
 Seuraavista artikkeleista voi olla hyötyä, kun luot tai käsittelet tietovoita. 
 
-* [Omatoiminen tietojen valmisteleminen Power BI:ssä (esikatselu)](service-dataflows-overview.md)
+* [Omatoiminen tietojen valmistautuminen Power BI](service-dataflows-overview.md)
 * [Tietovoiden luominen ja käyttäminen Power BI:ssä](service-dataflows-create-use.md)
-* [Laskettujen entiteettien käyttäminen Power BI Premiumissa (esikatselu)](service-dataflows-computed-entities-premium.md)
-* [Tietovoiden käyttäminen paikallisten tietolähteiden kanssa (esikatselu)](service-dataflows-on-premises-gateways.md)
-* [Kehittäjien resurssit Power BI -tietovoille (esikatselu)](service-dataflows-developer-resources.md)
+* [Laskettuja entiteettejä käyttämällä Power BI Premium](service-dataflows-computed-entities-premium.md)
+* [Dataflows käyttö paikallisiin tietolähteisiin](service-dataflows-on-premises-gateways.md)
+* [Power BI dataflows Kehittäjien resurssit](service-dataflows-developer-resources.md)
 
 Lisätietoja Power Querysta ja ajoitetusta päivityksestä on seuraavissa artikkeleissa:
 * [Kyselyn yleiskatsaus Power BI Desktopissa](desktop-query-overview.md)

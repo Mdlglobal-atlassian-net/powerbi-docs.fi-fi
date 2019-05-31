@@ -11,11 +11,11 @@ ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
 ms.openlocfilehash: e7db66dfb79cd0348967369d92e7b13c698d8f71
-ms.sourcegitcommit: 750f0bfab02af24c8c72e6e9bbdd876e4a7399de
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/04/2019
-ms.locfileid: "54007842"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61180789"
 ---
 # <a name="connect-to-clickdimensions-with-power-bi"></a>Yhteyden muodostaminen ClickDimensionsiin Power BI:n avulla
 ClickDimensions-sisältöpaketti Power BI:lle antaa käyttäjien hyödyntää ClickDimensionsin markkinointidataa Power BI:ssa, jolloin johtotiimit saavat merkityksellistä tietoa myynti- ja markkinointiponnistelujen tehokkuudesta. Visualisoi ja analysoi sähköpostiviestintää, verkkokäyntejä ja lähetettyjä lomakkeita Power BI -koontinäyttöjen ja raporttien avulla.
@@ -29,7 +29,7 @@ Muodosta yhteys [Power BI:n ClickDimensions-sisältöpakettiin.](https://app.pow
 2. Valitse **Palvelut**-ruudussa **Nouda**.
    
    ![](media/service-connect-to-clickdimensions/services.png)
-3. Valitse **ClickDimensions** \> **Nouda**.  
+3. Valitse **ClickDimensions** \> **Nouda**.
    
    ![](media/service-connect-to-clickdimensions/clickdimensions.png)
 4. Anna palvelinkeskuksen sijaintitiedot (Yhdysvallat, EU tai AU) ja valitse **Seuraava**.

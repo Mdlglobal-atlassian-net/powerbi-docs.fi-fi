@@ -7,25 +7,23 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/02/2018
+ms.date: 05/29/2019
 ms.author: maggies
 LocalizationGroup: Create reports
-ms.openlocfilehash: e1748c478f9f58b568b901f3a243e64e4658f6a6
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.openlocfilehash: bb0f6febfaee30c3eab3ce8b8aa618eb09c464bf
+ms.sourcegitcommit: 8bf2419b7cb4bf95fc975d07a329b78db5b19f81
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54273083"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66375234"
 ---
 # <a name="use-power-bi-service-or-power-bi-desktop-to-create-a-custom-answer-page-for-cortana"></a>Käytä Power BI -palvelua tai Power BI Desktopia luodaksesi mukautettuja vastaussivuja Cortanaa varten
 Hyödynnä Power BI:n kaikkia ominaisuuksia ja luo erityisiä raporttisivuja, joita kutsutaan *Cortana-vastaussivuiksi* (sekä joskus nimellä *Cortana-vastauskortit*), ja jotka on suunniteltu vastaamaan erityisesti Cortana-kysymyksiin.
 
-![](media/service-cortana-answer-cards/power-bi-cortana.png)
-
 > [!IMPORTANT]
-> Jos kokeilet Cortanan ja Power BI:n **koontinäytön** esikatselua, voit ohittaa loput tästä artikkelista. Cortanalle ei ole asennusvaatimuksia, jotta se voisi etsiä Power BI -raporttinäkymiäsi.
-> 
-> 
+> Power BI-ollaan poistamassa Cortanan integrointia tuetaan. Alkaen kesäkuussa 11 Cortana ei enää toimi koontinäytöille ja raporteille.
+
+![](media/service-cortana-answer-cards/power-bi-cortana.png)
 
 ## <a name="before-you-begin"></a>Alkutoimet
 Neljä asiakirjaa opastavat Cortanan määrittämisessä ja käyttämisessä Power BI:ssä. Aloita lukemalla artikkeli 1, jos et ole vielä tehnyt niin. Artikkeli 2 on erityisen tärkeä, koska siinä käsitellään joitakin vaiheita, jotka on suoritettava, ennen kuin voit käyttää Cortana-vastaussivuja.

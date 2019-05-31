@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 1c000b2bfce4b6eeaa40b1a641321a20cea49d13
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66051115"
+---
 Power BI:n perusteet ovat nyt hallussa, joten voimme siirtyä käytännön kokeilun ja ohjatun esittelyn pariin. Videoesittelyn vetää **Will Thompson**, joka on Microsoftin Power BI -tiimin ohjelmajohtaja. Myöhemmässä vaiheessa kurssia nähdään myös vierailevia esiintyjiä.
 
 Kun Will kuvailee Power BI:n monia mahdollisuuksia, kannattaa muistaa, että kaikki nämä tehtävät toimet ja analyysit noudattavat yleensä samaa järjestystä. Toimien **yleinen kulku** on Power BI:ssä seuraava:
@@ -9,7 +17,7 @@ Kun Will kuvailee Power BI:n monia mahdollisuuksia, kannattaa muistaa, että kai
 
 ![](media/0-1-intro-using-power-bi/c0a1_1.png)
 
-Kuten aiemmin mainittiin, voit aivan hyvin käyttää yksinomaan **Power BI -palvelua**, noutaa tietoja ja luoda koontinäyttöjä. Joku toinen tiimisi jäsen saattaa puolestaan käyttää yksinomaan **Power BI Desktopia**. Esittelemme sinulle Power BI:n koko jatkumon ja sen täydet mahdollisuudet kokonaan, minkä jälkeen voit itse päättää, miten sitä parhaiten hyödynnät.
+Kuten aiemmin mainittiin, voit aivan hyvin käyttää yksinomaan **Power BI -palvelua**, noutaa tietoja ja luoda koontinäyttöjä. Joku toinen tiimisi jäsen saattaa osan **Power BI Desktop**, yksinomaan. Esittelemme sinulle Power BI:n koko jatkumon ja sen täydet mahdollisuudet kokonaan, minkä jälkeen voit itse päättää, miten sitä parhaiten hyödynnät.
 
-Annetaan Willin nyt opastaa ratkaisun käyttämisessä. Tärkeysjärjestyksessä ensimmäisenä on ymmärtää Power BI:n peruselementit. Se muodostaa hyvän perustan, kun siirrymme oppimaan Power BI:n tapoja muuttaa tiedot näyttäviksi raporteiksi ja visualisoinneiksi. 
+Annetaan Willin nyt opastaa ratkaisun käyttämisessä. Tärkeysjärjestyksessä ensimmäisenä on ymmärtää Power BI:n peruselementit. Se muodostaa hyvän perustan, kun siirrymme oppimaan Power BI:n tapoja muuttaa tiedot näyttäviksi raporteiksi ja visualisoinneiksi.
 

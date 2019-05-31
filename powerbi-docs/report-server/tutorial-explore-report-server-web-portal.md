@@ -1,20 +1,20 @@
 ---
 title: 'Opetusohjelma: Tutustu Power BI -raporttipalvelimeen VM:ssä'
 description: Tässä opetusohjelmassa opit luomaan näennäiskoneen Power BI -raporttipalvelimen ollessa jo asennettu sekä tutkimaan verkkoportaalia.
-author: markingmyname
+author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: tutorial
-ms.date: 05/18/2018
-ms.author: maghan
-ms.openlocfilehash: 098aa1cd2c031a200e3ce246890a467a6e15149d
-ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
-ms.translationtype: HT
+ms.date: 05/06/2019
+ms.author: maggies
+ms.openlocfilehash: d30a396eeb4d461d7c36cecf9759306236810cab
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/16/2019
-ms.locfileid: "56325078"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65240019"
 ---
 # <a name="tutorial-explore-the-power-bi-report-server-web-portal-in-a-vm"></a>Opetusohjelma: Power BI -raporttipalvelimen verkkoportaaliin tutustuminen näennäiskoneella
 Tässä opetusohjelmassa luot Azure-virtuaalikoneen Power BI -raporttipalvelimen ollessa jo asennettu, jotta voit tutustua Power BI- ja sivutettujen näyteraporttien ja suorituskykyilmaisimien tarkasteluun, muokkaamiseen ja hallintaan.
@@ -37,32 +37,38 @@ Tämä opetusohjelma edellyttää, että sinulla on Azure-tilaus. Jos sinulla ei
 
 Power BI -tiimi on onneksi luonut näennäiskoneen, johon Power BI -raporttipalvelin on jo asennettu.
 
-1. Avaa [Power BI -raporttipalvelin](https://azuremarketplace.microsoft.com/marketplace/apps/reportingservices.technical-preview?tab=Overview) Azure Marketplacessa.  
+1. Valitse Power BI-raporttipalvelimen Azure Marketplacessa. Tämä linkki avautuu se suoraan: [Power BI-raporttipalvelimen](https://azuremarketplace.microsoft.com/marketplace/apps/reportingservices.technical-preview?tab=Overview).  
 
 2. Valitse **Hanki se nyt**.
 3. Hyväksy tarjoajan käyttöehdot ja tietosuojakäytäntö valitsemalla **Jatka**.
 
-    ![Power BI -raporttipalvelimen näennäiskoneen luominen](media/tutorial-explore-report-server-web-portal/power-bi-report-server-virtual-machine-create.png)
+4. Valitse **Luo**.
 
-4. Kirjoita **Vaihe 1 Perusteet** -kohdassa **Näennäiskoneen nimi** -kentän arvoksi **reportservervm**.
+    ![Power BI -raporttipalvelimen näennäiskoneen luominen](media/tutorial-explore-report-server-web-portal/power-bi-report-server-create.png)
+
+5. - **Vaihe 1 perusteet**,- **Näennäiskoneen nimi**, kutsua sen **reportservervm**.
+
+    Power BI-raportin Server VM-nimi ei voi sisältää yhdysmerkkejä.
 
 5. Luo käyttäjänimi ja salasana.
 
-6. Säilytä **Resurssiryhmä**-kohdan **Luo uusi** -valinta ja anna sen nimeksi **reportserverresourcegroup**.
+6. - **Resurssiryhmä**, valitse **Luo uusi**, ja kutsua sen **reportserverresourcegroup** > **OK**.
 
     Jos seuraat opetusohjelmaa useamman kuin yhden kerran, sinun on annettava resurssiryhmälle eri nimi ensimmäisen kerran jälkeen. Et voi käyttää resurssiryhmän nimeä kahdesti samassa tilauksessa. 
 
-7. Säilytä muut oletusarvot > **OK**.
-
     ![Nimeä näennäiskone ja resurssiryhmä](media/tutorial-explore-report-server-web-portal/power-bi-report-server-create-resource-group.png)
 
-8. Säilytä **Vaihe 2 Asetukset** -kohdan oletusasetukset > **OK**.
+7. Säilytä muut oletusarvot > **OK**.
 
-9. **Vaihe 3 Yhteenveto** > **OK**.
+8. - **Vaihe 2 asetukset**, Säilytä oletusarvot > **OK**.
+ 
+    **SQL-tallennustili** ja **diagnostiikka tallennustili** myös arvojen on oltava yksilöllisiä. Jos seuraat opetusohjelmaa useammin kuin kerran, sinun tarvitse antaa heille eri nimet.
 
-10. Tarkista **Vaihe 4** -kohdassa käyttöehdot ja tietosuojakäytäntö > **Luo**.
+9. - **Vaihe 3 yhteenveto**, Tarkista valinnat > **OK**.
 
-    **Käyttöönottoa lähetetään Power BI -raporttipalvelimeen** -käsittely kestää muutamia minuutteja.
+10. - **Vaiheessa 4 ostaa**, tarkista käyttöehdot ja tietosuojakäytäntö > **Luo**.
+
+    **Power BI-raporttipalvelimen käyttöönottoa lähetetään** voi kestää useita minuutteja.
 
 ## <a name="connect-to-your-virtual-machine"></a>Muodosta yhteys näennäiskoneeseen
 
@@ -78,11 +84,13 @@ Power BI -tiimi on onneksi luonut näennäiskoneen, johon Power BI -raporttipalv
 
     ![Yhdistä näennäiskoneeseen](media/tutorial-explore-report-server-web-portal/power-bi-report-server-connect-to-virtual-machine.png)
 
-5. Valitse Etätyöpöytäyhteys-valintaikkunasta **Yhdistä**.
+5. - **Näennäiskoneen yhdistäminen** ruudussa Säilytä oletusarvot ja valitse **Lataa RDP-tiedosto**.
+
+1. Tässä **Etätyöpöytäyhteys** valintaikkunasta **Yhdistä**.
 
 6. Anna näennäiskonetta varten luomasi käyttäjänimi ja salasana > **OK**.
 
-7. Seuraavassa valintaikkunassa ilmoitetaan, että etätietokonetta ei tunnisteta. Valitse **Kyllä**.
+7. Seuraavassa valintaikkunassa lukee **etätietokoneeseen käyttäjätietoja ei voitu tunnistaa**. Valitse **Kyllä**.
 
    Uusi näennäiskone avautuu.
 
@@ -90,15 +98,15 @@ Power BI -tiimi on onneksi luonut näennäiskoneen, johon Power BI -raporttipalv
 
 Kun näennäiskone avautuu, näet työpöydällä seuraavat kohteet.
 
-![Power BI -raporttipalvelimen näennäiskone käynnistyy](media/tutorial-explore-report-server-web-portal/power-bi-report-server-start-vm-numbered.png)
+![Power BI -raporttipalvelimen näennäiskone käynnistyy](media/tutorial-explore-report-server-web-portal/power-bi-report-server-vm-5-numbers.png)
 
 |Luku  |Merkitys  |
 |---------|---------|
-|![Numero 1](media/tutorial-explore-report-server-web-portal/number-1.png) | Käynnistää SQL Server Data Tools -työkalun sivutettujen (. RDL) raporttien luomista varten |
-|![Numero 2](media/tutorial-explore-report-server-web-portal/number-2.png) | Power BI -malliraportit (.PBIX)  |
-|![Numero 3](media/tutorial-explore-report-server-web-portal/number-3.png) | Linkki Power BI -raporttipalvelimen ohjeisiin   |
-|![Numero 4](media/tutorial-explore-report-server-web-portal/number-4.png) | Käynnistää Power BI -raporttipalvelimelle optimoidun Power BI Desktopin (maaliskuu 2018)  |
-|![Numero 5](media/tutorial-explore-report-server-web-portal/number-5.png) | Avaa Power BI -raporttipalvelimen verkkoportaalin selaimessa   |
+|![Numero 1](media/tutorial-explore-report-server-web-portal/number-1.png) | Power BI -malliraportit (.PBIX) |
+|![Numero 2](media/tutorial-explore-report-server-web-portal/number-2.png) | Linkki Power BI -raporttipalvelimen ohjeisiin |
+|![Numero 3](media/tutorial-explore-report-server-web-portal/number-3.png) | Käynnistää Power BI Desktop-Power BI-Raporttipalvelimelle (tammikuu 2019: lle) |
+|![Numero 4](media/tutorial-explore-report-server-web-portal/number-4.png) | Avaa Power BI -raporttipalvelimen verkkoportaalin selaimessa |
+|![Numero 5](media/tutorial-explore-report-server-web-portal/number-5.png) | Käynnistää SQL Server Data Tools -työkalun sivutettujen (. RDL) raporttien luomista varten |
 
 Kaksoisnapsauta **Raporttipalvelimen verkkoportaali** -kuvaketta. `http://localhost/reports/browse` avataan selaimella. Verkkoportaalista näet tyypin mukaan ryhmitellyt tiedostot. 
 
@@ -117,7 +125,7 @@ Kaksoisnapsauta **Raporttipalvelimen verkkoportaali** -kuvaketta. `http://localh
 ## <a name="tag-your-favorites"></a>Merkitse suosikkisi tunnisteella
 Voit lisätä tunnisteen niihin raportteihin ja suorituskykyilmaisimiin, joiden haluat olevan suosikkeja. Ne on helpompi löytää, sillä ne on kaikki kerätty yhteen Suosikit-kansioon sekä verkkoportaalissa että Power BI -mobiilisovelluksissa. 
 
-1. Valitse kolme pistettä (**…**) **Kate**-suorituskykyilmaisimen oikeasta yläkulmasta > **Lisää suosikkeihin**.
+1. Valitse kolme pistettä ( **…** ) **Kate**-suorituskykyilmaisimen oikeasta yläkulmasta > **Lisää suosikkeihin**.
    
     ![Lisää suosikkeihin](media/tutorial-explore-report-server-web-portal/power-bi-report-server-add-to-favorites.png)
 2. Valitse **Suosikit** verkkoportaalin valintanauhasta, niin näet sen verkkoportaalin Suosikit-sivulla olevien muiden suosikkien ohella.
@@ -131,7 +139,7 @@ Verkkoportaalin sisältö näkyy oletusarvoisesti ruutunäkymässä.
 
 Voit siirtyä luettelonäkymään, jossa voit helposti siirtää tai poistaa useita kohteita samalla kertaa. 
 
-1. Valitse **Ruudut** > **-luettelo**.
+1. Valitse **Ruudut** >  **-luettelo**.
    
     ![Vaihda näkymää](media/tutorial-explore-report-server-web-portal/report-server-web-portal-list-view.png)
 
@@ -155,11 +163,9 @@ Verkkoportaalin kautta voit käynnistää Power BI Desktopin ja tarkastella ja k
 
 1. Valitse **Salli**, jotta verkkosivusto voidaan avata tietokoneelle asennetulla ohjelmalla. 
 
-     Raportti avataan Power BI Desktopissa. Huomaa yläpalkissa oleva nimi ”Power BI Desktop (maaliskuu 2018)”. Kyseessä on Power BI -raporttipalvelimelle optimoitu versio.
+     Raportti avataan Power BI Desktopissa. Huomaa yläpalkissa ”Power BI Desktop (tammikuu 2019)” nimi. Kyseessä on Power BI -raporttipalvelimelle optimoitu versio.
 
-    ![Power BI Desktop](media/tutorial-explore-report-server-web-portal/power-bi-report-server-power-bi-desktop.png)
-
-     Käytä näennäiskoneelle asennettua Power BI Desktop -versiota. Et voi siirtyä toimialueiden välillä ladataksesi raportin palvelimelle.
+    Käytä näennäiskoneelle asennettua Power BI Desktop -versiota. Et voi siirtyä toimialueiden välillä ladataksesi raportin palvelimelle.
 
 3. Laajenna Asiakkaat-taulukko Kentät-ruudussa ja vedä Ammatti-kenttä Raporttitason suodattimiin.
 

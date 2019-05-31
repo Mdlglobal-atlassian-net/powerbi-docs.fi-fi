@@ -12,11 +12,11 @@ ms.date: 01/25/2019
 ms.author: maggies
 LocalizationGroup: Get started
 ms.openlocfilehash: 06b60e5d493532efbdb49932ace48897e17961c1
-ms.sourcegitcommit: 5bd9bd890db9a7f9d5988c81232f40b9b260a96f
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "55147492"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61238350"
 ---
 # <a name="tutorial-get-started-with-the-power-bi-service-apppowerbicom"></a>Opetusohjelma: Power BI -palvelun (app.powerbi.com) käytön aloittaminen
 Tämä opetusohjelma neuvoo ***Power BI -palvelun*** käytön aloittamisessa. Suosittelemme lukemaan [Mikä Power BI on](power-bi-overview.md) -ohjeartikkelin, jotta saat käsityksen, miten Power BI -palvelu sopii yhteen muiden Power BI -tuotteiden kanssa.

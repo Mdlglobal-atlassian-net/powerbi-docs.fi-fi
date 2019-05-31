@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/28/2018
+ms.date: 04/12/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 9a0e87eca537fc8c22dffaad6a725dc949b2b121
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.openlocfilehash: 02beb69148c347847f346c170651ef31ddd1e786
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54275567"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "60987922"
 ---
 # <a name="connect-to-datasets-in-the-power-bi-service-from-power-bi-desktop"></a>Tietojoukkoihin yhdistäminen Power BI -palvelussa Power BI Desktopista
 Voit muodostaa reaaliaikaisen yhteyden jaettuun tietojoukkoon Power BI -palvelussa ja luoda useita erilaisia raportteja samasta tietojoukkoryhmästä. Tämä tarkoittaa sitä, että voit luoda täydellisen tietomallin Power BI Desktopissa ja julkaista sen Power BI -palvelussa. Voit näin luoda, tai muut voivat luoda, useita erilaisia raportteja (erillisissä .pbix-tiedostoissa) samasta, yleisestä tietomallista. Tätä ominaisuutta kutsutaan **Power BI -palvelun reaaliaikaiseksi yhteydeksi**.
@@ -77,9 +77,8 @@ Kun prosessi on valmis, **Power BI Desktop** näyttää onnistumisen ja tarjoaa 
 Katsotaanpa seuraavaksi, miten muut tiimin jäsenet, joilla on käyttöoikeus työtilaan, jossa raportti (ja tietojoukko) julkaistaan, voivat muodostaa yhteyden tietojoukkoon ja luoda omia raporttejaan.
 
 ### <a name="establish-a-power-bi-service-live-connection-to-the-published-dataset"></a>Power BI -palvelun reaaliaikaisen yhteyden muodostaminen julkaistuun tietojoukkoon
-Jotta voit muodostaa yhteyden julkaistuun raporttiin ja luoda oman raporttisi julkaistun tietojoukon perusteella, valitse **Nouda tiedot** **Aloitus**-valintanauhasta **Power BI Desktopissa** ja valitse **Power BI -palvelu**. Voit myös valita sen kohteesta **Nouda tiedot > Online-palvelut > Power BI -palvelu**.
+Jos haluat muodostaa yhteyden julkaistuun raporttiin ja luoda oman raporttisi julkaistun tietojoukon perusteella, valitse **Nouda tiedot** - **aloitus** valintanauhasta **Power BI Desktop** , valitse **Power BI** vasemmassa ruudussa ja valitse sitten **Power BI-tietojoukkoja**.
 
-![](media/desktop-report-lifecycle-datasets/report-lifecycle_08.png)
 
 Jos et ole kirjautunut sisään Power BI -palveluun, sinua kehotetaan tekemään niin. Kun olet kirjautunut sisään, näkyviin tulee ikkuna. Näet siitä, minkä työtilan jäsen olet. Voit myös valita, mikä työtila sisältää tietojoukon, johon haluat muodostaa **Power BI -palvelun reaaliaikaisen yhteyden**.
 

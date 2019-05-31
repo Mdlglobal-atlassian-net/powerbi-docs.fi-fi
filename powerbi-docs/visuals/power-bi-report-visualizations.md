@@ -9,20 +9,20 @@ featuredvideoid: SYk_gWrtKvM
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 08/21/2018
+ms.date: 05/28/2019
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 83ef4aa17de5edb18bc6b9cff1b50c29596704f7
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.openlocfilehash: d470a262bd8a5e6590746fb07889b1230f5cfc25
+ms.sourcegitcommit: 8bf2419b7cb4bf95fc975d07a329b78db5b19f81
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54292863"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66375652"
 ---
 # <a name="visualizations-in-power-bi-reports"></a>Visualisoinnit Power BI -raporteissa
 
 Visualisoinnit näyttävät merkityksellisiä tietoja datasta. Power BI -raportissa voi olla yksittäinen visualisointi yhdellä sivulla tai sivukaupalla visualisointeja. Power BI -palvelussa visualisointeja voi [kiinnittää raporteista koontinäyttöihin](../service-dashboard-pin-tile-from-report.md).
 
-On tärkeää erottaa raporttien *luojat* niiden *kuluttajista*. Jos muodostat tai muokkaat raporttia, olet luoja.  Luojilla on raportin ja sen pohjana olevan tietojoukon muokkausoikeudet. Power BI Desktopissa tämä tarkoittaa, että voit avata tietojoukon tietonäkymässä ja luoda visualisointeja raporttinäkymässä. Power BI -palvelussa tämä tarkoittaa, että voit avata tietojoukon tai raportin editorin [muokkausnäkymässä](../consumer/end-user-reading-view.md). Jos raportti tai koontinäyttö on [jaettu kanssasi](../consumer/end-user-shared-with-me.md), olet raportin **kuluttaja**. Voit tarkastella ja käsitellä raporttia ja sen visualisointeja, mutta et voi tallentaa muutoksia.
+On tärkeää erottaa raportin *suunnittelijat* ja raportin *kuluttajien* Jos olet tai muokkaat raporttia ja olet suunnittelutyökalua.  Kehittäjät ovat raportin ja sen pohjana olevan tietojoukon muokkausoikeuksia. Power BI Desktopissa tämä tarkoittaa, että voit avata tietojoukon tietonäkymässä ja luoda visualisointeja raporttinäkymässä. Power BI-palvelussa Tämä tarkoittaa sitä, voit avata tietojoukon tai raportin raporttieditorin [muokkausnäkymässä](../consumer/end-user-reading-view.md). Jos raportti tai koontinäyttö on [jaettu kanssasi](../consumer/end-user-shared-with-me.md), olet raportin **kuluttaja**. Pystyt voit tarkastella ja käsitellä raporttia ja sen visualisointeja, mutta ei voi tallentaa merkittäviä muutoksia.
 
 Power BI:ssä on monta erilaista visualisointityyppiä käytettävissä suoraan VISUALISOINNIT-ruudusta.
 
@@ -50,6 +50,11 @@ Kokeile [muuttaa visualisointityyppiä](power-bi-report-change-visualization-typ
 ## <a name="pin-the-visualization"></a>Visualisoinnin kiinnittäminen
 
 Power BI -palvelussa visualisointeja voi [kiinnittää koontinäyttöön](../service-dashboard-pin-tile-from-report.md) ruutuna. Jos muutat visualisointia kiinnittämisen jälkeen, koontinäytön ruutu ei muutu – jos se oli viivakaavio, se pysyy viivakaaviona, vaikka muuttaisit sen raportissa rengaskaavioksi.
+
+## <a name="limitations-and-considerations"></a>Rajoitukset ja huomioitavat asiat
+- Visualisoinnin voi ladata hitaasti tietolähteen ja (mittareilla tai sarakkeilla) kenttien määrän mukaan.  On suositeltavaa rajoittaa visualisoinnit 10 – 20 yhteensä kenttiin, sekä luettavuutta ja suorituskyvyn syistä. 
+
+- Visualisointien yläraja on 100 kentät (mittareilla tai sarakkeilla). Jos visualisoinnin lataaminen epäonnistuu, pienentää kenttien määrän.   
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 

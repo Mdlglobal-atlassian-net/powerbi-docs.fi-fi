@@ -12,11 +12,11 @@ ms.date: 08/23/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
 ms.openlocfilehash: 892e056413212e319815341eb9ae95262ed54d46
-ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56215408"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61276803"
 ---
 # <a name="treemaps-in-power-bi"></a>Puukartat Power BI:ssä
 Puukartoissa hierarkkiset tiedot näytetään sisäkkäisten suorakulmioiden joukkona.  Hierarkian kukin taso on edustettuna värillisenä suorakulmiona (jota kutsutaan usein ”haaraksi”), joka sisältää muita suorakulmioita (”lehtiä”).  Kunkin suorakulmion sisällä oleva suorakulmio perustuu mitattavaan arvoon. Suorakulmiot järjestetään koon mukaan vasemmasta yläkulmasta (suurin) oikeaan alakulmaan (pienin).

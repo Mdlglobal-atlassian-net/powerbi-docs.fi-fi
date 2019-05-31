@@ -7,23 +7,23 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/10/2019
+ms.date: 04/15/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 875f30a6e051561f20a7ca54bc48343dd7248e79
-ms.sourcegitcommit: 8fda7843a9f0e8193ced4a7a0e5c2dc5386059a6
-ms.translationtype: HT
+ms.openlocfilehash: 79bba3b65d508716bc451c1c4876a8674242fcc2
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58174748"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61138673"
 ---
 # <a name="connect-azure-data-lake-storage-gen2-for-dataflow-storage-preview"></a>Yhdistä Azure Data Lake Storage Gen2 tietovuon tallennukseen (esikatselu)
 
 Power BI:n työtilat voidaan määrittää tallentamaan tietovuot organisaatiosi Azure Data Lake Storage Gen2 -tilille. Tässä artikkelissa kuvataan yleisiä vaiheita tämän tekemiseksi sekä annetaan samalla ohjeita ja parhaita käytäntöjä. Työtilojen määrittämisessä on joitakin etuja tietovuon määritelmien ja tietotiedostojen tallentamiseksi Data Lakeen, kuten seuraavat:
 
 * Azure Data Lake Storage Gen2 tarjoaa valtavan skaalattavan tallennusvälineen tiedoille
-* IT-osaston kehittäjät voivat hyödyntää tietovuon tietoja ja määritelmätiedostoja Azure-tietojen ja tekoälyn (AI) palvelujen hyödyntämiseksi, kuten [Azure-tietopalvelujen github-malleissa](https://aka.ms/cdmadstutorial) on näytetty.
-* Organisaatiosi kehittäjät voivat integroida tietovuon tiedot sisäisiin sovelluksiin ja tärkeisiin liiketoimintaratkaisuihin käyttämällä tietovoiden ja Azuren kehittäjäresursseja
+* Tietovirrassa tiedot ja määritys tiedostoja voidaan hyödyntää mukaan IT-osastosi kehittäjät voivat hyödyntää Azure-tietojen ja Tekoälyn (AI) services jokaisessa [GitHub malleja Azure-tietopalvelut](https://aka.ms/cdmadstutorial)
+* Organisaatiosi kehittäjät voivat tietovirrassa tietojen integrointi sisäisiä sovelluksia ja liiketoiminta ratkaisuja, Kehittäjien resurssit dataflows ja Azureen
 
 Jos haluat käyttää Azure Data Lake Storage Gen2:ta tietovoita varten, tarvitset seuraavat:
 
@@ -31,11 +31,13 @@ Jos haluat käyttää Azure Data Lake Storage Gen2:ta tietovoita varten, tarvits
 * **Yleinen järjestelmänvalvoja -tili** – tätä tiliä vaaditaan yhdistämiseen ja Power BI:n määrittämiseen tietovuon määritelmän ja tietojen tallentamiseksi Azure Data Lake Storage Gen2 -tilille
 * **Azure-tilaus** – tarvitset Azure-tilauksen Azure Data Lake Storage Gen2:n käyttämiseksi
 * **Resurssiryhmä** – käytä olemassa olevaa resurssiryhmää tai luo uusi
-* **Azure Storage -tili, jossa on käytössä Data Lake Storage Gen2 (esikatselu) -ominaisuus** – jotta voit muodostaa yhteyden Azure Data Lake Storage Gen2:een, sinun on rekisteröidyttävä sen julkiseen esikatseluun
+* **Azure Storage-tililläsi, kun Data Lake Storage Gen2 toiminto on käytössä** 
 
 > [!TIP]
 > Jos sinulla ei ole Azure-tilausta, luo [ilmainen tili](https://azure.microsoft.com/free/) ennen aloittamista.
 
+> [!WARNING]
+> Kun tietovuon tallennussijainti on määritetty, sitä ei voi muuttaa. Katso [huomioitavat asiat ja rajoitukset](#considerations-and-limitations) osiossa lähellä muita tärkeitä elementtejä, jotta Harkitse tämän artikkelin lopussa.
 
 ## <a name="prepare-your-azure-data-lake-storage-gen2-for-power-bi"></a>Azure Data Lake Storage Gen2:n valmisteleminen Power BI:tä varten
 
@@ -49,9 +51,6 @@ Ennen kuin voit määrittää Power BI:hin Azure Data Lake Storage Gen2 -tilin, 
 6. Power BI -palvelut on valtuutettava käyttämään luomaasi **powerbi**-tiedostojärjestelmää.
 
 Seuraavissa osioissa käydään tarkemmin läpi vaiheita, joita tarvitaan Azure Data Lake Storage Gen2 -tilisi määrittämiseen.
-
-> [!NOTE]
-> Tietovuotoiminto on esikatselutilassa, ja sitä voidaan muuttaa ja päivittää ennen kuin se on yleisesti saatavilla.
 
 ### <a name="create-the-storage-account"></a>Tallennustilin luominen
 
@@ -71,7 +70,9 @@ Valitse **Lisää roolimääritys** -ikkunassa **Lukija**-rooli, joka määritet
 
 ![Lukija-roolille määritetty Power BI -palvelu](media/service-dataflows-connect-azure-data-lake-storage-gen2/dataflows-connect-adlsg2_05.jpg)
 
-Huomautus: Odota vähintään 30 minuuttia, jotta käyttöoikeus ehtii siirtyä portaalista Power BI:hin. Aina kun muutat oikeutta portaalissa, se tulee voimaan aikaisintaan 30 minuutin kuluttua Power BI:ssä. 
+
+> [!NOTE]
+> Salli vähintään 30 minuuttia, että käyttöoikeutta välittää sen Power BI-portaalista. Kun muutat portaalin käyttöoikeudet Salli 30 minuuttia, että näkyy Power BI-käyttöoikeudet. 
 
 
 ### <a name="create-a-file-system-for-power-bi"></a>Luo tiedostojärjestelmä Power BI:tä varten
@@ -114,7 +115,7 @@ Etsi vuokraajan sovelluksia seuraavasti:
 
     ![Etsi Power-sovelluksia](media/service-dataflows-connect-azure-data-lake-storage-gen2/dataflows-connect-adlsg2_07.jpg)
 
-5. Valitse ja kopioi Power BI -palvelun ja Power BI Premiumin molemmat objektitunnukset hakutuloksistasi. Valmistaudu liittämään nämä arvot myöhemmissä vaiheissa.
+5. Valitse ja kopioida haun tulosten Objektitunnuksista Power BI-palvelussa sekä Power Query-online-tilassa. Valmistaudu liittämään nämä arvot myöhemmissä vaiheissa.
 
 7. Siirry sitten **Azure Storage Explorerin** avulla *powerbi*-tiedostojärjestelmään, jonka loit edellisessä osiossa. Noudata [Käyttöoikeuksien hallinta](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-how-to-set-permissions-storage-explorer#managing-access) -osion ohjeita, jotka löytyvät artikkelista [Tiedostojen ja hakemistotason käyttöoikeuksien määrittäminen Azure Storage Explorerin avulla](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-how-to-set-permissions-storage-explorer).
 
@@ -130,17 +131,17 @@ Etsi vuokraajan sovelluksia seuraavasti:
 
     ![määritä lopuksi Muut-vaihtoehdolle Suoritus-käyttöoikeus](media/service-dataflows-connect-azure-data-lake-storage-gen2/dataflows-connect-adlsg2_07c.jpg)
 
-## <a name="connect-your-azure-data-lake-storage-gen2-to-power-bi"></a>Azure Data Lake Storage Gen2:n yhdistäminen Power BI:hin 
+## <a name="connect-your-azure-data-lake-storage-gen2-to-power-bi"></a>Azure Data Lake Storage Gen2:n yhdistäminen Power BI:hin
 
-Kun olet määrittänyt Azure Data Lake Storage Gen2 -tilisi Azure-portaalissa, yhdistät sen Power BI:hin **Power BI -hallintaportaalissa**. Hallitset myös Power BI -tietovuon tallennusta Power BI -hallintaportaalin **Tietovuon tallennus (esikatselu)** -asetusosiossa. Katso tarkempia ohjeita käynnistyksestä ja perustason käytöstä artikkelista [Siirtyminen hallintaportaaliin](service-admin-portal.md).
+Kun olet määrittänyt tilisi Azure Data Lake Storage Gen2 Azure-portaalissa, se kytketään Power BI **Power BI-hallintaportaalissa**. Voit myös hallita Power BI tietovirrassa storage- **tietovirrassa tallennustilan** Power BI-hallintaportaalin osassa asetukset. Katso tarkempia ohjeita käynnistyksestä ja perustason käytöstä artikkelista [Siirtyminen hallintaportaaliin](service-admin-portal.md).
 
 Voit yhdistää **Azure Data Lake Storage Gen2** -tilisi seuraavasti:
 
-1. Siirry **Power BI -hallintaportaalin** **Tietovuon asetukset (esikatselu)** -välilehteen.
+1. Siirry **tietovirrassa asetukset** välilehdessä **Power BI-hallintaportaalissa**
 
-    ![Power BI -hallintaportaali](media/service-dataflows-connect-azure-data-lake-storage-gen2/dataflows-connect-adlsg2_08.jpg) 
+    ![Power BI -hallintaportaali](media/service-dataflows-connect-azure-data-lake-storage-gen2/dataflows-connect-08b.png) 
 
-2. Valitse **Yhdistä Azure Data Lake Storage Gen2:n esikatselu** -painike. Näyttöön avautuu seuraava ikkuna.
+2. Valitse **yhteyden Azure Data Lake Storage Gen2** painike. Näyttöön avautuu seuraava ikkuna.
 
     ![Azure Data Lake Storage Gen2](media/service-dataflows-connect-azure-data-lake-storage-gen2/dataflows-connect-adlsg2_09.jpg) 
 
@@ -161,7 +162,7 @@ Sinun on seuraavaksi sallittava organisaatiosi työntekijöiden määrittää ty
 
 Tietovuon määritys ja tietotiedostot tallennetaan oletusarvoisesti Power BI:n tarjoamaan tallennustilaan. Jotta työtilan järjestelmänvalvojat voivat käyttää tietovuon tiedostoja omalla tallennustililläsi, heidän on ensin määritettävä työtila sallimaan tietovoiden määritys ja tallennus uudella tallennustilillä. Ennen kuin työtilan järjestelmänvalvojat voivat määrittää tietovuon tallennusasetukset, järjestelmänvalvojan on myönnettävä tallennustilan määrityksen käyttöoikeudet **Power BI -hallintaportaalissa**.
 
-Jotta voit myöntää tallennustilan määrityksen käyttöoikeudet, siirry **Tietovuon asetukset (esikatselu)** -välilehteen **Power BI -hallintaportaalissa**. Täällä on valintanappi *Salli työtilan järjestelmänvalvojien määrittää työtilat tälle tallennustilille*, jonka arvoksi on määritettävä **Salli**. Kun olet ottanut liukusäätimen käyttöön, valitse **Käytä**-painike, jotta muutos tulee voimaan. 
+Jos haluat myöntää tallennustilan määrittämisen käyttöoikeudet, siirry **tietovirrassa asetukset** välilehdessä **Power BI-hallintaportaalissa**. Täällä on valintanappi *Salli työtilan järjestelmänvalvojien määrittää työtilat tälle tallennustilille*, jonka arvoksi on määritettävä **Salli**. Kun olet ottanut liukusäätimen käyttöön, valitse **Käytä**-painike, jotta muutos tulee voimaan. 
 
 ![Salli järjestelmänvalvojien määrittää työtiloja](media/service-dataflows-connect-azure-data-lake-storage-gen2/dataflows-connect-adlsg2_10.jpg) 
 
@@ -183,7 +184,7 @@ Power BI Desktop -asiakkaat eivät voi käyttää **Azure Data Lake Storage -til
 
 1. Anna on luonut uuden sovellustyötilan ja määrittänyt sen tallentamaan tietovuot organisaation Data Lake -järjestelmään. 
 2. Ben, joka on myös Annan luoman työtilan jäsen, haluaa noutaa tietoja Annan luomasta tietovuosta Power BI Desktopin ja tietovuon liittimen avulla.
-3. Ben saa seuraavan kuvan kaltaisen virheen, koska häntä ei ole lisätty tietovuon CDM-kansion valtuutetuksi käyttäjäksi Lake-järjestelmässä.
+3. Ben saa virheen, koska hän ei vielä ole sallittu tietovirrassa CDM-kansioon lakeen.
 
 Yleisiä kysymyksiä ja vastauksia ovat muun muassa seuraavat:
 
@@ -209,9 +210,9 @@ Lisätietoja tietovoista, CDM:stä ja Azure Data Lake Storage Gen2:sta on seuraa
 Lisätietoja tietovoista yleisesti on seuraavissa artikkeleissa:
 
 * [Tietovoiden luominen ja käyttäminen Power BI:ssä](service-dataflows-create-use.md)
-* [Laskettujen entiteettien käyttäminen Power BI Premiumissa (esikatselu)](service-dataflows-computed-entities-premium.md)
-* [Tietovoiden käyttäminen paikallisten tietolähteiden kanssa (esikatselu)](service-dataflows-on-premises-gateways.md)
-* [Kehittäjien resurssit Power BI -tietovoille (esikatselu)](service-dataflows-developer-resources.md)
+* [Laskettuja entiteettejä käyttämällä Power BI Premium](service-dataflows-computed-entities-premium.md)
+* [Dataflows käyttö paikallisiin tietolähteisiin](service-dataflows-on-premises-gateways.md)
+* [Power BI dataflows Kehittäjien resurssit](service-dataflows-developer-resources.md)
 
 Lisätietoja Azure-tallennustilasta on seuraavissa artikkeleissa:
 * [Azure-tallennuksen suojausopas](https://docs.microsoft.com/azure/storage/common/storage-security-guide)

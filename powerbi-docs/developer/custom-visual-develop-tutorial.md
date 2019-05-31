@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: tutorial
 ms.date: 03/15/2019
-ms.openlocfilehash: 4efb4e2c02671671d42d9f66c1f9f57ee028c9a1
-ms.sourcegitcommit: 8fda7843a9f0e8193ced4a7a0e5c2dc5386059a6
-ms.translationtype: HT
+ms.openlocfilehash: e7afdddc6d87b9494fa9264bdd253a3f93de6192
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58174671"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61383233"
 ---
 # <a name="tutorial-developing-a-power-bi-custom-visual"></a>Opetusohjelma: Power BI:n mukautetun visualisoinnin kehittäminen
 
@@ -79,7 +79,7 @@ Nyt sinun on asennettava **pbiviz**-paketti.
     pbiviz --create-cert
     ```
 
-  Se palauttaa tuloksen, joka tuottaa *tunnuslauseen*. Tässä tapauksessa *tunnuslause* on **_15105661266553327_**.
+  Se palauttaa tuloksen, joka tuottaa *tunnuslauseen*. Tässä tapauksessa *tunnuslause* on **_15105661266553327_** .
 
   ![PowerShellin kautta luotu varmenne](media/custom-visual-develop-tutorial/cert-create.png)
 
@@ -95,7 +95,7 @@ Nyt sinun on asennettava **pbiviz**-paketti.
 
 4. Valitse **Tuotava tiedosto** -vaiheessa *Seuraava*.
 
-5. Liitä **Yksityisen avaimen suojaus** -vaiheessa salasanaruutuun tunnuslause, jonka varmenteen luomisvaiheessa.  Tässä tapauksessa se on siis **_15105661266553327_**.
+5. Liitä **Yksityisen avaimen suojaus** -vaiheessa salasanaruutuun tunnuslause, jonka varmenteen luomisvaiheessa.  Tässä tapauksessa se on siis **_15105661266553327_** .
 
       ![Kopioi tunnuslause](media/custom-visual-develop-tutorial/cert-install-wizard-show-passphrase.png)
 
@@ -503,7 +503,7 @@ Muokkaa **capabilities.json**-tiedostoa tietoroolien ja tietonäkymän yhdistäm
      "kind": "Measure"
     }
     ```
-    **DataRoles**-matriisi määrittää nyt yksittäisen **mittayksikkö**-tyyppiä olevan tietoroolin, jonka nimenä on **mittayksikkö** ja näyttönimenä **Mittayksikkö**. Tämä tietorooli sallii joko mittarikentän tai yhteenvetokentän välittämisen.
+    **DataRoles**-matriisi määrittää nyt yksittäisen **mittari**-tyyppiä olevan tietoroolin, jonka nimenä on **mittari** ja näyttönimenä **Mittari**. Tämä tietorooli sallii joko mittarikentän tai yhteenvetokentän välittämisen.
 
 3. Poista kaikki sisältö riveiltä 10–31 **dataViewMappings**-matriisin sisällä.
 
@@ -519,7 +519,7 @@ Muokkaa **capabilities.json**-tiedostoa tietoroolien ja tietonäkymän yhdistäm
             }
            }
     ```
-    **DataViewMappings**-matriisi määrittää nyt yhden kentän, jonka voi välittää tietorooliin nimeltä **mittayksikkö**.
+    **DataViewMappings**-matriisi määrittää nyt yhden kentän, jonka voi välittää tietorooliin nimeltä **mittari**.
 
 5. Tallenna **capabilities.json**-tiedosto.
 
@@ -559,14 +559,14 @@ Muokkaa **capabilities.json**-tiedostoa tietoroolien ja tietonäkymän yhdistäm
 
     Tämä lauseke määrittää *DataView’n* muuttujaan käytön helpottamiseksi ja määrittää muuttujan viittaamaan *dataView*-objektiin.
 
-2. Korvaa **päivitysmenetelmässä** .text(”Value”)** seuraavalla.
+2. Tässä **päivittää** menetelmä, korvaa **.text("Value")** Seuraava.
 
     ```typescript
     .text(dataView.single.value as string)
     ```
     ![Korvaa textValue](media/custom-visual-develop-tutorial/text-value-replace.png)
 
-3. Korvaa **päivitysmenetelmässä** **.text(”Label”)** seuraavalla.
+3. Tässä **päivittää** menetelmä, korvaa **.text("Label")** Seuraava.
 
     ```typescript
     .text(dataView.metadata.columns[0].displayName)

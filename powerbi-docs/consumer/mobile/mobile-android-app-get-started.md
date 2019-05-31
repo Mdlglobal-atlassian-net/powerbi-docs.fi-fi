@@ -10,11 +10,11 @@ ms.topic: conceptual
 ms.date: 06/28/2018
 ms.author: mshenhav
 ms.openlocfilehash: c5d6549c449c77cea709783b1634318e12fc2e52
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54289290"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61350753"
 ---
 # <a name="get-started-with-the-power-bi-mobile-app-on-android-devices"></a>Android-laitteiden Power BI -mobiilisovelluksen käytön aloittaminen
 Android-sovellus Microsoft Power BI:lle tarjoaa BI-mobiilikäyttökokemuksen Power BI:lle, Power BI-raporttipalvelimelle ja Reporting Services -palveluille. Voit tarkastella ja käsitellä yrityksen koontinäyttöjä paikallisesti ja pilvipalvelussa missä tahansa, live-tilassa kosketusnäytöllisessä mobiilikäytössä. Tarkastele tietoja koontinäytöissä ja jaa sähköpostitse tai tekstiviestillä työtovereiden kanssa. 

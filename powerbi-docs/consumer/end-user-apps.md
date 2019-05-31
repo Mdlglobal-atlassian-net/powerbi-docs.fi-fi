@@ -8,15 +8,15 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 01/21/2019
+ms.date: 05/11/2019
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: f5572d5b5a8a8d9d652eabce95edc16ea9a2d0c6
-ms.sourcegitcommit: a054782370dec56d49bb205ee10b7e2018f22693
-ms.translationtype: HT
+ms.openlocfilehash: 1b5891ce24c43b0a7416cd82cec3e9a10c1989bf
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56662131"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65608353"
 ---
 # <a name="apps-in-power-bi"></a>Sovellukset Power BI:ssä
 ## <a name="what-is-a-power-bi-app"></a>Mikä Power BI -sovellus on?
@@ -30,10 +30,10 @@ Sovellukset on järjestetty **Sovellukset**-sisältöluetteloon.
 > Sovellusominaisuuden käyttö edellyttää Power BI Pro -käyttöoikeutta. <!-- add link to how to figure out your license -->
 
 ## <a name="app-designers-and-app-consumers"></a>Sovelluksen ***suunnittelijat*** ja sovelluksen ***kuluttajat***
-Roolistasi riippuen saatat olla henkilö, joka luo sovelluksia (suunnittelija) omaan käyttöönsä tai jakaa niitä työtovereidensa kanssa. Vaihtoehtoisesti voit olla henkilö, joka vastaanottaa ja lataa muiden luomia sovelluksia (kuluttaja). Tämä artikkeli on tarkoitettu sovellusten *kuluttajille*.
+Roolistasi riippuen voit olla joku, joka luo sovelluksia (*suunnittelutyökalu*) omaan käyttöönsä tai jakaa niitä työtovereidensa kanssa. Tai voit olla joku, joka vastaanottaa ja lataa sovellukset (*kuluttajan*) muiden luoman. Tämä artikkeli on tarkoitettu sovellusten *kuluttajille*.
 
 ## <a name="advantages-of-apps"></a>Sovellusten edut
-Sovellukset on helppo löytää ja asentaa Power BI -palvelussa ([https://powerbi.com](https://powerbi.com)) ja mobiililaitteessa. Kun olet asentanut sovelluksen, sinun ei tarvitse muistaa monien eri raporttinäkymien nimiä, sillä ne ovat kaikki yhdessä sovelluksessa, selaimessa tai mobiililaitteessa.
+Sovelluksia on helppo löytää ja asentaa Power BI -palveluun ([https://powerbi.com](https://powerbi.com)) ja mobiililaitteeseen. Kun olet asentanut sovelluksen, sinun ei tarvitse muistaa monien eri raporttinäkymien nimiä, sillä ne ovat kaikki yhdessä sovelluksessa, selaimessa tai mobiililaitteessa.
 
 Kun käytät sovelluksia,näet muutokset automaattisesti aina, kun sovelluksen tekijä julkaisee päivityksiä. Tekijä määrittää myös, kuinka usein tiedot ajoitetaan päivittymään, joten sinun ei tarvitse huolehtia niiden pitämisestä ajan tasalla. 
 

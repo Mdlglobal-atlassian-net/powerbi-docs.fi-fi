@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 50cdaded75f81828542afa10abf104079d09ebd8
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61396859"
+---
 Oletuksena sarakeotsikot näytetään raporteissa vain, jos ne sisältävät tietoja. Jos esimerkiksi esität tulot maan mukaan eikä Norjassa ole myyntiä, Norja ei näy ollenkaan visualisoinnissa.
 
 Jos haluat näyttää tyhjiä luokkia, napsauta alanuolta muutettavassa kentässä **Visualisoinnit**-ruudussa ja valitse **Näytä kohteet, joilla ei ole tietoja**.

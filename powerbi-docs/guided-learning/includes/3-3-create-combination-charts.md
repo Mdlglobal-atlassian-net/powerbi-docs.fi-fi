@@ -1,10 +1,10 @@
 ---
 ms.openlocfilehash: c7af7eb4a75ebe22416dba74a40c2edcf00c1194
-ms.sourcegitcommit: b343e44dbafc0b718c564402593d4b6e3a8ce97c
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51207772"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61396889"
 ---
 Kun haluat visualisoida kaksi mittaria, joiden asteikot ovat hyvin erilaiset, kuten tulot ja yksiköt, viivan ja pylvään eri akselien asteikoilla näyttävä **yhdistelmäkaavio** on erittäin kätevä. Power BI tukee oletuksena monia erityyppisiä yhdistelmäkaavioita, kuten suosittuja **Viiva**- ja **Pinottu pylväs** -kaavioita.
 

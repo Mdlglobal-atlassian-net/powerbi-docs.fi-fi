@@ -11,11 +11,11 @@ ms.date: 06/23/2018
 ms.author: maggies
 LocalizationGroup: Samples
 ms.openlocfilehash: 18b99bf86f49f1355d4ab9f20ff6e8a83c89731d
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54287344"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61233615"
 ---
 # <a name="procurement-analysis-sample-for-power-bi-take-a-tour"></a>Hankinta-analyysimalli Power BI:lle: aloita esittely
 
@@ -71,7 +71,7 @@ Aloitetaan tutustumalla kulutuksen trendeihin luokan ja sijainnin mukaan.
 
 Huomaa muutama asia:
 
-* **Laskut yhteensä kuukauden ja luokan mukaan** -viivakaavio: **Suora**-luokassa on melko yhtenäinen kulutus, **Logistiikka** on huipussaan joulukuussa ja ** Muut** on huipussaan helmikuussa.
+* **Laskut yhteensä kuukauden ja luokan mukaan** -viivakaavio: **Suora**-luokassa on melko yhtenäinen kulutus, **Logistiikka** on huipussaan joulukuussa ja  **Muut** on huipussaan helmikuussa.
 * **Kokonaislaskutus maan ja alueen mukaan** -kartta: Suurin osa kulutuksesta tapahtuu Yhdysvalloissa.
 * **Laskut yhteensä alaluokan mukaan** -pylväskaavio: **Laitteisto** ja **Epäsuorat hyödykkeet ja palvelut** ovat suurimmat kulutusluokat.
 * Laskut yhteensä tason mukaan -palkkikaavio: Suurin osa liiketoiminnasta tapahtuu tason 1 (10 suurinta) toimittajien kanssa. Tämä auttaa hallitsemaan paremmin toimittajasuhteita.

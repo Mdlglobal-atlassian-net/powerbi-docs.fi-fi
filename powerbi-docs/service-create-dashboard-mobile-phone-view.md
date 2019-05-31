@@ -1,5 +1,5 @@
 ---
-title: Matkapuhelimille tarkoitetun Power BI -koontinäyttönäkymän luominen
+title: Matkapuhelimet – Power BI-koontinäytön
 description: Lue, miten Power BI -palvelussa luodaan erityisesti matkapuhelimille tarkoitettu mukautettu koontinäyttö.
 author: maggiesMSFT
 manager: kfile
@@ -7,20 +7,20 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/12/2017
+ms.date: 04/18/2019
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: cd7df8383ad22d273ebf396fc1cf8297f110dde5
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.openlocfilehash: f2b8c2c4be343dc135fe1b133bfcb956c1549de4
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54288148"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61158201"
 ---
-# <a name="create-a-view-of-a-power-bi-dashboard-optimized-for-mobile-phones"></a>Matkapuhelimille optimoidun Power BI -koontinäyttönäkymän luominen
-Kun tarkastelet koontinäyttöjä Power BI -mobiilisovelluksella puhelimessa, voit huomata, että koontinäytön ruudut ovat saman kokoisia ja aseteltu yksi toisensa jälkeen. Power BI -palvelussa voit luoda ennen kaikkea puhelimille tarkoitetun mukautetun näkymän mistä tahansa omistamastasi koontinäytöstä.
+# <a name="optimize-a-dashboard-for-mobile-phones---power-bi"></a>Matkapuhelimet – Power BI-koontinäytön 
+Kun tarkastelet koontinäyttöjä pystysuuntaisen puhelimessa, voit huomata, että koontinäyttöruudut ovat aseteltu yksi toisensa jälkeen saman kokoisia. Power BI-palvelussa voit luoda mukautetun koontinäytön, erityisesti puhelinten pystysuuntaisen näkymän. Vaikka luot puhelinnäkymän, kun käännät puhelimen sivuttain, näet koontinäytön, se on asettelun palvelun mukaan.
 
-Kun käännät puhelimen sivuttain, näet koontinäytön palvelussa näkyvällä tavalla, ei puhelimille tarkoitetulla tavalla.
+Etsitkö lisätietoja koontinäyttöjen tarkasteleminen mobiililaitteessa Kokeile tätä Pikaopasta [raporttinäkymien ja raporttien tarkastelu Power BI-mobiilisovelluksissa](consumer/mobile/mobile-apps-quickstart-view-dashboard-report.md) sen sijaan.
 
 > [!NOTE]
 > Muokatessasi puhelinnäkymää kaikki koontinäyttöä puhelimella tarkastelevat voivat nähdä reaaliaikaisesti tekemäsi muutokset. Esimerkiksi, jos poistat kaikkien koontinäytön puhelinnäkymän ruutujen kiinnityksen, puhelimen koontinäytössä ei enää ole ruutuja. 

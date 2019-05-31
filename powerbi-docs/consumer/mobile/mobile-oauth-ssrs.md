@@ -1,20 +1,20 @@
 ---
 title: Yhdistäminen Power BI -raporttipalvelimeen ja SSRS-palvelimeen OAuthia käyttämällä
 description: Opi määrittämään ympäristö tukemaan OAuth-todennusta Power BI -mobiilisovelluksella ja muodostamaan yhteys SQL Server Reporting Services 2016:een tai uudempaan versioon.
-author: markingmyname
-ms.author: maghan
+author: maggiesMSFT
+ms.author: maggies
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 06/07/2018
-ms.openlocfilehash: 6e0b1c5d4a067925e4898cf23968cc14fd3f8fd6
-ms.sourcegitcommit: 20ae9e9ffab6328f575833be691073de2061a64d
-ms.translationtype: HT
+ms.openlocfilehash: ae56a27393ba476828ff87d7f458815318ea79c1
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58383619"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "64770359"
 ---
 # <a name="using-oauth-to-connect-to-power-bi-report-server-and-ssrs"></a>Yhdistäminen Power BI -raporttipalvelimeen ja SSRS-palvelimeen OAuthia käyttämällä
 
@@ -25,7 +25,7 @@ Opi määrittämään ympäristö tukemaan OAuth-todennusta Power BI -mobiilisov
 Voit käyttää OAuthia muodostaessasi yhteyden Power BI-raporttipalvelimeen ja Reporting Servicesiin, tarkastellaksesi mobiiliraporttejasi tai suorituskykyilmaisimia. Windows Server 2016 sisältää joitain Web Application Proxy (WAP) -roolin parannuksia, jotka sallivat tällaisen todennuksen.
 
    > [!NOTE]
-   > Power BI -raporttipalvelimella isännöityjen Power BI -raporttien tarkastelemista WAP-todentamisen kautta ei tällä hetkellä tueta virallisesti.
+   > Power BI-raporttipalvelimella isännöityjen Power BI-raporttien tarkasteleminen WAP avulla voit todentaa tällä hetkellä tuetaan vain iOS-sovellus. Android-sovellus ei tueta virallisesti tällä hetkellä.
 
 ## <a name="requirements"></a>Vaatimukset
 
@@ -118,7 +118,7 @@ Voit luoda sovellusryhmän noudattamalla seuraavia ohjeita.
    > [!NOTE]
    > Huomaa, että tämän URL-osoitteen kirjainkoko on merkitsevä.
 
-   *https://<url to report server>/reports*
+   *https://< raporttipalvelimen URL-osoite > tai raportteja*
 
    ![ADFS-sovellusryhmän ohjattu toiminto 03](media/mobile-oauth-ssrs/adfs-application-group-wizard3.png)
 9. Valitse **Seuraava**.
@@ -191,7 +191,7 @@ Rajoitettu delegointi kannattaa määrittää seuraavasti.
 Voit julkaista sovelluksia myös raporttien käytön hallintakonsolin kautta, mutta tässä esimerkissä sovellus luodaan PowerShellin kautta. Tällä komennolla voit lisätä sovelluksen.
 
 ```powershell
-Add-WebApplicationProxyApplication -Name "Contoso Reports" -ExternalPreauthentication ADFS -ExternalUrl https://reports.contoso.com/reports/ -ExternalCertificateThumbprint "0ff79c75a725e6f67e3e2db55bdb103efc9acb12" -BackendServerUrl http://ContosoSSRS/reports/ -ADFSRelyingPartyName "Reporting Services - Web API" -BackendServerAuthenticationSPN "http/ContosoSSRS.contoso.com" -UseOAuthAuthentication
+Add-WebApplicationProxyApplication -Name "Contoso Reports" -ExternalPreauthentication ADFS -ExternalUrl https://reports.contoso.com/ -ExternalCertificateThumbprint "0ff79c75a725e6f67e3e2db55bdb103efc9acb12" -BackendServerUrl http://ContosoSSRS/ -ADFSRelyingPartyName "Reporting Services - Web API" -BackendServerAuthenticationSPN "http/ContosoSSRS.contoso.com" -UseOAuthAuthentication
 ```
 
 | Parametri | Kommentit |

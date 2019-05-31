@@ -13,11 +13,11 @@ ms.date: 12/09/2018
 ms.author: mihart
 LocalizationGroup: Get started
 ms.openlocfilehash: abf6052d7cb912f9a8ff33f064b5dc1d44f5ba3e
-ms.sourcegitcommit: a054782370dec56d49bb205ee10b7e2018f22693
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56662086"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61050350"
 ---
 # <a name="view-related-content-in-power-bi-service"></a>Tarkastele aiheeseen liittyvää sisältöä Power BI -palvelussa
 **Aiheeseen liittyvä sisältö** -ruutu näyttää, miten Power BI -palvelun sisältösi -- koontinäytöt, raportit ja tietojoukot --on yhdistetty toisiinsa. Aiheeseen liittyvä sisältö -ruutu on myös paikka, jossa voi käynnistää toiminnon. Ruudun avulla voit päivittää, nimetä uudelleen, luoda merkityksellisiä tietoja ja paljon muuta. Valitse aiheeseen liittyvä raportti tai raporttinäkymä ja se avautuu Power BI -työtilassasi.   

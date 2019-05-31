@@ -12,10 +12,10 @@ ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Learn more
 ms.openlocfilehash: d6cdcf47b42be4a9b541aa355efb3dd5e9667204
-ms.sourcegitcommit: 10a87c016f497dbeba32f94ed1f3688a70816fea
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/09/2019
+ms.lasthandoff: 05/29/2019
 ms.locfileid: "65514626"
 ---
 # <a name="tutorial-analyze-web-page-data-using-power-bi-desktop"></a>Opetusohjelma: Verkkosivun tietojen analysointi Power BI Desktopissa
@@ -127,7 +127,7 @@ Kysely ladataan Power BI Desktopin **Raporttinäkymään**, jossa se näkyy **Ke
    ![Kentät-ruutu](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage11.png)
 >[!TIP]
 >Pääset aina takaisin **Power Query -editoriin**, jossa voit muokata ja parannella kyselyäsi:
->- valitsemalla **Lisäasetuksista** kolme pistettä (**...**) **Euroopan-mestaruus voittajat**-kohdan vierestä**Kentät**-ruudusta ja valitsemalla avautuvasta valikosta **Muokkaa kyselyä** tai
+>- valitsemalla **Lisäasetuksista** kolme pistettä ( **...** ) **Euroopan-mestaruus voittajat**-kohdan vierestä**Kentät**-ruudusta ja valitsemalla avautuvasta valikosta **Muokkaa kyselyä** tai
 >- valitsemalla **Muokkaa kyselyitä** > **Muokkaa kyselyitä** **Ulkoiset tiedot** - ryhmästä raporttinäkymän **Koti** -valintanauhasta. 
 
 ## <a name="create-a-visualization"></a>Visualisoinnin luominen
@@ -163,7 +163,7 @@ Voit muuttaa visualisoinnin ulkoasua valitsemalla sen ja valitsemalla sitten **M
    ![Värin muuttaminen](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/get-data-web16.png)
    
 3. Valitse **Otsikko** avataksesi otsikon asetukset ja syötä **Otsikkoteksti**-kenttään nykyisen otsikon paikalle **Euroopan-mestaruus voittajat**. 
-4. Vaihda **Tekstin väri** punaiseksi, **Tekstikooksi** **12** ja **Fonttiperheeksi** **Segoe (lihavoitu)**. 
+4. Vaihda **Tekstin väri** punaiseksi, **Tekstikooksi** **12** ja **Fonttiperheeksi** **Segoe (lihavoitu)** . 
    
    ![Tietojen värien muotoileminen](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/get-data-web17.png)
    
@@ -181,7 +181,7 @@ Jos haluat muuttaa kartan ympyräkaavioksi, valitse kartta ja valitse sitten **Y
 
 >[!TIP]
 >- Voit käyttää **Tietojen värit** -muotoiluasetuksia ja tehdä ”Saksasta” ja ”Länsi-Saksasta” saman väriset. 
->- Ryhmitelläksesi eniten voittaneet maat yhteen ympyräkaaviossa, valitse kolme pistettä (**...**) visualisoinnin oikeassa yläkulmassa ja valitse sitten avautuvasta luettelosta **Lajittele vuosimäärän perusteella**. 
+>- Ryhmitelläksesi eniten voittaneet maat yhteen ympyräkaaviossa, valitse kolme pistettä ( **...** ) visualisoinnin oikeassa yläkulmassa ja valitse sitten avautuvasta luettelosta **Lajittele vuosimäärän perusteella**. 
 
 Power BI Desktop tarjoaa saumattoman kokemuksen alusta loppuun. Sen avulla voit hakea tietoja laajasta tietolähteiden joukosta ja muotoilla ne analyysitarpeidesi mukaan ja visualisoida tiedot monipuolisilla ja vuorovaikutteisilla tavoilla. Kun raportti on valmis, voit [ladata sen Power BI:hin](desktop-upload-desktop-files.md) ja luoda siihen perustuvia koontinäyttöjä, joita voit jakaa muiden Power BI -käyttäjien kanssa.
 

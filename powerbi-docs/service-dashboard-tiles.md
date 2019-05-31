@@ -12,11 +12,11 @@ ms.date: 11/21/2018
 ms.author: maggies
 LocalizationGroup: Dashboards
 ms.openlocfilehash: c8b5728c951bc1a25e71da8885997814c5485cd4
-ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56215983"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61139003"
 ---
 # <a name="intro-to-dashboard-tiles-for-power-bi-designers"></a>Johdatus raporttinäkymien ruutuihin Power BI -suunnittelijoille
 
@@ -43,7 +43,7 @@ Voit lisätä (kiinnittää) ruudun koontinäyttöön monella eri tavalla. Ruutu
 * [toinen koontinäyttö](service-pin-tile-to-another-dashboard.md)
 * [OneDrive for Businessin Excel-työkirja](service-dashboard-pin-tile-from-excel.md)
 * [Power BI Publisher for Excel](publisher-for-excel.md)
-* [Nopeat merkitykselliset tiedot](service-insights.md)
+* [Quick Insights (Nopeat merkitykselliset tiedot)](service-insights.md)
 * [Reporting Services](https://docs.microsoft.com/sql/reporting-services/pin-reporting-services-items-to-power-bi-dashboards)
 
 Voit luoda erillisiä ruutuja kuville, muokkausruuduille, videoille, suoratoistotiedoille ja verkkosisällölle suoraan koontinäytössä valitsemalla [Lisää ruutu](service-dashboard-add-widget.md).
@@ -68,7 +68,7 @@ Tartu ruutuun ja [siirrä sitä koontinäytössä](service-dashboard-edit-tile.m
    
    * [avata laskentataulukon, jolla tämä ruutu on luotu ](service-reports.md) ![laskentataulukkokuvake](media/service-dashboard-tiles/power-bi-open-worksheet.png)  
      
-    * [tarkastella kohdistustilassa ](service-focus-mode.md) ![kohdistuskuvake](media/service-dashboard-tiles/fullscreen-icon.jpg)  
+    * [tarkastella tarkastelutilassa ](service-focus-mode.md)![kohdistuskuvake](media/service-dashboard-tiles/fullscreen-icon.jpg)  
      * [viedä ruudussa käytettyjä tietoja](visuals/power-bi-visualization-export-data.md) ![vie tiedot -kuvake](media/service-dashboard-tiles/export-icon.png)
      * [muokata otsikkoa ja alaotsikkoa, lisätä hyperlinkin](service-dashboard-edit-tile.md) ![muokkauskuvake](media/service-dashboard-tiles/pencil-icon.jpg)
      * [suorittaa merkityksellisiä tietoja ](service-insights.md) ![merkityksellisiä tietoja -kuvake](media/service-dashboard-tiles/power-bi-insights.png)

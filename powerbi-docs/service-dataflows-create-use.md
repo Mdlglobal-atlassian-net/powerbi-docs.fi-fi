@@ -7,17 +7,17 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 02/19/2019
+ms.date: 04/02/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: b2b928ea308f546c7cf023c6ef187aa7c516987c
-ms.sourcegitcommit: 654fae0af739bd599e029d692f142faeba0a502f
-ms.translationtype: HT
+ms.openlocfilehash: 4507490fc2986ec7934af4c9e7417585523c7a05
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56426627"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61143349"
 ---
-# <a name="creating-and-using-dataflows-in-power-bi-preview"></a>Tietovoiden luominen ja käyttäminen Power BI:ssä (esikatselu)
+# <a name="creating-and-using-dataflows-in-power-bi"></a>Tietovoiden luominen ja käyttäminen Power BI:ssä
 
 **Power BI:n** kehittyneen tietojen valmistelun ansiosta voit luoda tietovuoksi kutsutun tietokokoelman, jonka avulla voit yhdistää eri lähteistä tulevat liiketoimintatiedot, puhdistaa tiedot, muuntaa ne ja ladata ne Power BI -tallennustilaan.
 
@@ -34,9 +34,6 @@ Tietovuon käyttämisessä on kolme ensisijaista vaihetta:
 3. Tietojoukon luominen tietovuon ja Power BI Desktopin avulla 
 
 Seuraavissa osioissa tarkastellaan näitä vaiheita ja tutustutaan kunkin vaiheen suorittamisessa tarvittaviin työkaluihin. Aloitetaanpa.
-
-> [!NOTE]
-> Tietovuotoiminto on esikatselutilassa, ja sitä voidaan muuttaa ja päivittää ennen kuin se on yleisesti saatavilla.
 
 ## <a name="creating-a-dataflow"></a>Tietovuon luominen
 Luo tietovuo käynnistämällä Power BI -palvelu selaimessa ja valitsemalla **sovellustyötila** (tietovuot eivät ole käytettävissä *omassa työtilassa* Power BI -palvelussa) vasemmasta siirtymisruudusta seuraavan kuvan mukaisesti. Voit myös luoda uuden työtilan, jossa luot uuden tietovuon. 
@@ -165,9 +162,9 @@ Joskus voi käydä niin, että tietovuon yhteyden muodostamisessa tietolähteese
 Tässä artikkelissa kerrottiin, miten voit luoda oman **tietovuon** sekä luoda tietojoukon ja raportin **Power BI Desktopissa** ja hyödyntää niitä. Seuraavissa artikkeleissa on lisätietoja ja esimerkkitilanteita tietovoiden käytöstä:
 
 * [Omatoiminen tietojen valmistelu tietovoiden avulla](service-dataflows-overview.md)
-* [Laskettujen entiteettien käyttäminen Power BI Premiumissa (esikatselu)](service-dataflows-computed-entities-premium.md)
-* [Tietovoiden käyttäminen paikallisten tietolähteiden kanssa (esikatselu)](service-dataflows-on-premises-gateways.md)
-* [Kehittäjien resurssit Power BI -tietovoille (esikatselu)](service-dataflows-developer-resources.md)
+* [Laskettuja entiteettejä käyttämällä Power BI Premium](service-dataflows-computed-entities-premium.md)
+* [Dataflows käyttö paikallisiin tietolähteisiin](service-dataflows-on-premises-gateways.md)
+* [Power BI dataflows Kehittäjien resurssit](service-dataflows-developer-resources.md)
 * [Tietovuot ja Azure Data Lake -integrointi (esikatselu)](service-dataflows-azure-data-lake-integration.md)
 
 Lisätietoja Common Data Modelista on sen yleiskatsauksen sisältävässä artikkelissa:

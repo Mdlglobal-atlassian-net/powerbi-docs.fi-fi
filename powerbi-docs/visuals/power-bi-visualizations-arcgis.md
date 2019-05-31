@@ -11,11 +11,11 @@ ms.topic: conceptual
 ms.date: 02/10/2019
 ms.author: mihart
 ms.openlocfilehash: 49eb11698d05ee8877f78b6b3d4cbbc6ef403e75
-ms.sourcegitcommit: 88ac51106ec7d0ead8c2a1550a11afae0d502bb9
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56086720"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61136966"
 ---
 # <a name="interacting-with-arcgis-maps-in-power-bi"></a>ArcGIS-karttojen käsittely Power BI:ssä
 Tämä ohjeaihe on kirjoitettu sellaisen käyttäjän näkökulmasta, joka on ArcGIS-kartan *kuluttaja* ja tarkastelee karttaa Power BI -palvelussa, Desktopissa tai mobiililaitteelta. Kun ArcGIS-kartan tehnyt henkilö jakaa kartan sinulle, voit toimia kartan kanssa monin eri tavoin.  Jos haluat lisätietoa ArcGIS-karttojen luomisesta, katso [opetusohjelma Esrin ArcGIS-kartoista](../visuals/power-bi-visualization-arcgis.md).

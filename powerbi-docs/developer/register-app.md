@@ -1,20 +1,20 @@
 ---
 title: Sovelluksen rekisteröinti Power BI -sisällön upottamiseksi
 description: Lue, miten voit rekisteröidä sovelluksen Azure Active Directoryssä Power BI -sisällön upottamiseksi.
-author: markingmyname
-ms.author: maghan
+author: rkarlin
+ms.author: rkarlin
 manager: kfile
 ms.reviewer: nishalit
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 02/05/2019
-ms.openlocfilehash: 2fb633c8f23d5d9d70dc6a01c2467debb169da54
-ms.sourcegitcommit: 0abcbc7898463adfa6e50b348747256c4b94e360
-ms.translationtype: HT
+ms.date: 04/02/2019
+ms.openlocfilehash: 73cca097ce6693c3bbee538eb1518a2ede19beab
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "55762371"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61269571"
 ---
 # <a name="register-an-azure-ad-application-to-use-with-power-bi"></a>Azure AD -sovelluksen rekisteröinti Power BI:ssä käytettäväksi
 
@@ -53,7 +53,7 @@ Voit rekisteröidä sovelluksen Power BI -sovelluksen rekisteröintityökalun av
 
     ![Sovellustyyppi](media/register-app/register-app-new-design-app-type.png)
 
-5. Jos valitset sovellustyypiksi **palvelinpuolen verkkosovelluksen**, anna **aloitussivun URL-osoite** ja **uudelleenohjauksen URL-osoite**. **Uudelleenohjauksen URL-osoite** voi olla mikä tahansa kelvollinen URL-osoite. Sen tulisi vastata luomaasi sovellusta. Jos valitset **alkuperäisen** sovellustyypin, jatka vaiheeseen 6.
+5. Jos valitset sovellustyypiksi **palvelinpuolen verkkosovelluksen**, anna **aloitussivun URL-osoite** ja **uudelleenohjauksen URL-osoite**. **Uudelleenohjauksen URL-Osoitteena** toimii mikä tahansa kelvollinen URL-osoite ja vastattava olet luonut sovelluksen kanssa. Jos valitset **alkuperäisen** sovellustyypin, jatka vaiheeseen 6.
 
 6. Valitse sovelluksesi tarvitsemat Power BI -ohjelmointirajapinnat. Katso lisätietoja Power BI -käyttöoikeuksista artikkelista [Power BI -käyttöoikeudet](power-bi-permissions.md). Valitse sitten **Rekisteröi**.
 
@@ -62,7 +62,7 @@ Voit rekisteröidä sovelluksen Power BI -sovelluksen rekisteröintityökalun av
     > [!Important]
     > Jos otat käyttöön palvelun päänimet käytettäväksi Power BI:n kanssa, Azure Active Directory -käyttöoikeudet eivät ole enää voimassa. Käyttöoikeuksia hallitaan Power BI -hallintaportaalissa.
 
-7. Jos valitset **alkuperäisen** sovellustyypin, sinulle annetaan **sovellustunnus**. Jos valitset sovellustyypiksi **palvelinpuolen verkkosovelluksen**, saat **sovellustunnuksen** ja **sovellussalaisuuden**.
+7. Jos valitset **alkuperäisen** sovelluksen tyypille sitten olet sitten antamasi **Sovellustunnus**. Jos valitset sovellustyypiksi **palvelinpuolen verkkosovelluksen**, saat **sovellustunnuksen** ja **sovellussalaisuuden**.
 
     > [!Note]
     > **Sovellustunnuksen** voi tarvittaessa hakea myöhemmin Azure-portaalista. Jos kadotat **sovellussalaisuuden**, sinun on luotava uusi Azure-portaalissa.
@@ -83,16 +83,11 @@ Toinen vaihtoehto sovelluksen rekisteröintiin on tehdä se suoraan Azure-portaa
 
 3. Valitse Azure AD -vuokraajasi valitsemalla tili sivun oikeassa yläkulmassa.
 
-4. Valitse vasemmassa siirtymisruudussa **Kaikki palvelut**, valitse **Azure Active Directory**, valitse **Sovellusrekisteröinnit** ja valitse sitten **Uuden sovelluksen rekisteröinti**.
-
-    ![Uuden sovelluksen rekisteröinti](media/register-app/azuread-new-app-registration.png)
+4. Siirry vasemmassa siirtymisruudussa **kaikki palvelut**, valitse **sovelluksen rekisteröinnit** ja valitse sitten **uuden rekisteröinti**.
 
 5. Noudata kehotteita ja luo uusi sovellus.
 
-   * Anna verkkosovelluksille kirjautumisen URL-osoite. Se toimii sovelluksen URL-perusosoitteena, jossa käyttäjät voivat kirjautua sisään (esimerkiksi `http://localhost:13526`).
-   * Anna Native-sovelluksille **uudelleenohjaus-URL-osoite**, jonka avulla Azure AD palauttaa tunnusvastaukset. Anna sovellukseen liittyvä arvo (esimerkiksi `http://myapplication/Redirect`).
-
-Katso lisätietoja siitä, miten voit rekisteröidä sovelluksia Azure Active Directoryssä, artikkelista [Sovellusten integrointi Azure Active Directoryyn](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications).
+   Katso lisätietoja siitä, miten voit rekisteröidä sovelluksia Azure Active Directory [Azure Active Directory-sovelluksen rekisteröinti](https://docs.microsoft.com/azure/active-directory/develop/quickstart-v2-register-an-app)
 
 ## <a name="how-to-get-the-application-id"></a>Sovellustunnuksen hakeminen
 
@@ -112,30 +107,21 @@ Sinun on kirjauduttava sisään joko *päätilillä*, jota käytetään upotukse
 
 1. Selaa kohtaan [Sovelluksen rekisteröinnit](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ApplicationsListBlade) Azure-portaalissa ja valitse sovellus, jota käytät upottamiseen.
 
-    ![Azure AD -rekisteröidyt sovellukset](media/register-app/powerbi-embedded-azuread-registered-apps.png)
-2. Valitse **Tarvittavat käyttöoikeudet** kohdasta **Ohjelmointirajapinnan käyttö**.
+2. Valitse **Ohjelmointirajapinnan käyttöoikeudet** kohdassa **hallinta**.
 
-    ![Azure AD -sovelluksen vaaditut käyttöoikeudet](media/register-app/powerbi-embedded-azuread-app-required-permissions.png)
-
-3. Valitse kohdassa **Tarvittavat käyttöoikeudet** **Power BI -palvelu (Power BI)**.
+3. Sisällä **Ohjelmointirajapinnan käyttöoikeudet**, valitse **Lisää oikeutta**ja valitse sitten **Power BI-palvelun**.
 
     ![Sovelluskäyttöoikeudet 3](media/register-app/powerbi-embedded-azuread-app-permissions03.png)
 
-   > [!NOTE]
-   > Jos olet luonut sovelluksen suoraan Azure AD -portaalissa **Power BI -palvelua (Power BI)** ei ehkä ole. Jos se puuttuu, valitse **+ Lisää** ja valitse sitten **1 Valitse ja ohjelmointirajapinta**. Valitse **Power BI -palvelu** ohjelmointirajapintaluettelosta ja valitse **Valitse**.  Jos **Power BI -palvelua (Power BI)** ei ole saatavilla kohdassa **+ Lisää**, rekisteröidy Power BI:hin vähintään yhdellä käyttäjällä.
+4. Valitse tietyt käyttöoikeudet on tarpeen **delegoidut käyttöoikeudet**. Valitse ne yksi kerrallaan valintojen tallentamiseksi. Kun olet valmis, valitse **Tallenna**.
 
-4. Valitse kaikki käyttöoikeudet kohdasta **Delegoidut käyttöoikeudet**. Valitse ne yksi kerrallaan valintojen tallentamiseksi. Kun olet valmis, valitse **Tallenna**.
+5. Valitse **myönnä suostumuksen**.
 
-    ![Sovelluskäyttöoikeudet 4](media/register-app/powerbi-embedded-azuread-app-permissions04.png)
-5. Valitse kohdasta **Tarvittavat käyttöoikeudet** **Myönnä käyttöoikeuksia**.
-
-    **Myönnä käyttöoikeuksia** -toiminto edellyttää *päätiliä*, jotta Azure AD ei pyydä lupaa. Jos toiminnon suorittava tili on yleinen järjestelmänvalvoja, sovelluksen käyttöoikeudet myönnetään organisaation kaikille käyttäjille. Jos toiminnon suorittava tili on *päätili* eikä se ole yleinen järjestelmänvalvoja, käyttöoikeudet sovellukseen myönnetään vain *päätilille*.
-
-    ![Käyttöoikeuksien myöntäminen tarvittavassa käyttöoikeusikkunassa](media/register-app/powerbi-embedded-azuread-app-grant-permissions.png)
+    **Myönnä suostumuksen** toiminto tarvitsee *päätilille* päätililtä lupaa Azure AD. Jos toiminnon suorittava tili on yleinen järjestelmänvalvoja, sovelluksen käyttöoikeudet myönnetään organisaation kaikille käyttäjille. Jos toiminnon suorittava tili on *päätili* eikä se ole yleinen järjestelmänvalvoja, käyttöoikeudet sovellukseen myönnetään vain *päätilille*.
 
 ### <a name="applying-permissions-programmatically"></a>Käyttöoikeuksien soveltaminen ohjelmallisesti
 
-1. Sinun on hankittava olemassa olevat palvelun pääkohteet (käyttäjät) vuokraajassa. Lisätietoja tämän tekemisestä on artikkelissa [Get servicePrincipal](https://developer.microsoft.com/graph/docs/api-reference/beta/api/serviceprincipal_get).
+1. Sinun on hankittava olemassa olevat palvelun pääkohteet (käyttäjät) vuokraajassa. Katso lisätietoja siitä, miten voit tehdä tämän, [servicePrincipal](https://docs.microsoft.com/graph/api/resources/serviceprincipal?view=graph-rest-beta).
 
     Voit kutsua *Get servicePrincipal*-ohjelmointirajapintaa ilman {tunnusta}. Näin saat kaikki vuokraajassa olevat palvelun päänimet.
 
@@ -161,7 +147,7 @@ Sinun on kirjauduttava sisään joko *päätilillä*, jota käytetään upotukse
    **ConsentType**-arvoksi voidaan antaa joko **AllPrincipals**- tai **Principal**-arvo.
 
    * **AllPrincipals**-arvoa voi käyttää vain vuokraajan järjestelmänvalvoja, myöntääkseen käyttöoikeuksia vuokraajan kaikkien käyttäjien puolesta.
-   * **Principal**-arvoa käytetään käyttöoikeuksia myöntämiseen tietyn käyttäjän puolesta. Tässä tapauksessa lisäominaisuus tulee lisätä pyynnön runkoon - *principalId = {User_ObjectId}*.
+   * **Principal**-arvoa käytetään käyttöoikeuksia myöntämiseen tietyn käyttäjän puolesta. Tässä tapauksessa lisäominaisuus tulee lisätä pyynnön runkoon - *principalId = {User_ObjectId}* .
 
      Sinun täytyy *myöntää käyttöoikeudet* päätilille, jotta Azure AD ei pyydä päätililtä lupaa, mikä ei ole mahdollista ei-vuorovaikutteista kirjautumista käytettäessä.
 
@@ -190,8 +176,8 @@ Sinun on kirjauduttava sisään joko *päätilillä*, jota käytetään upotukse
 
    **ConsentType**-arvoksi voidaan antaa joko **AllPrincipals**- tai **Principal**-arvo.
 
-   * **AllPrincipals**-arvoa voi käyttää vain vuokraajan järjestelmänvalvoja, myöntääkseen käyttöoikeuksia vuokraajan kaikkien käyttäjien puolesta.
-   * **Principal**-arvoa käytetään käyttöoikeuksia myöntämiseen tietyn käyttäjän puolesta. Tässä tapauksessa lisäominaisuus tulee lisätä pyynnön runkoon - *principalId = {User_ObjectId}*.
+   * **AllPrincipals** voi käyttää vain vuokraajan järjestelmänvalvoja, myöntääkseen käyttöoikeuksia vuokraajan kaikkien käyttäjien.
+   * **Objektin** käytetään tietyn käyttäjän käyttöoikeuksia. Tässä tapauksessa lisäominaisuus tulee lisätä pyynnön runkoon - *principalId = {User_ObjectId}* .
 
    Sinun täytyy *myöntää käyttöoikeudet* päätilille, jotta Azure AD ei pyydä päätililtä lupaa, mikä ei ole mahdollista ei-vuorovaikutteista kirjautumista käytettäessä.
 

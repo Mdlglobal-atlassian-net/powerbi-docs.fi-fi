@@ -1,35 +1,36 @@
 ---
-title: Uusien työtilojen luominen (esiversio) – Power BI
-description: Lue, miten luodaan uusia työtiloja, jotka ovat raporttinäkymien ja raporttien kokoelmia, joiden avulla voit kuvata organisaatiosi keskeisiä mittalukuja.
+title: Luo uuden työtilakokemuksen - Power BI
+description: Lue, miten voit luoda uuden työtilakokemuksen kokoelmia koontinäyttöjen, raporttien ja Sivutettujen raporttien, joiden avulla voit kuvata organisaatiosi keskeisiä mittalukuja.
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/11/2019
+ms.date: 04/18/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: eba4e740f6fd08ffd60b95dfc437551dfb95e7b8
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.openlocfilehash: d0c0781ea5d3864f1cf3627cd42d53cca632102d
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54293696"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61141948"
 ---
-# <a name="create-the-new-workspaces-preview-in-power-bi"></a>Uusien työtilojen luominen (esiversio) Power BI:ssä
+# <a name="create-the-new-workspaces-in-power-bi"></a>Luo uusi työtilat Power BI
 
-Power BI:ssä esitellään uusi työtilakokemus esiversiona. Työtilat ovat edelleen paikkoja, joissa voi yhteistyössä työtovereiden kanssa luoda kokoelmia raporttinäkymistä ja raporteista. Kokoelmat voi paketoida *sovelluksiksi* ja jakaa koko organisaatiolle tai tietyille henkilöille tai ryhmille. 
+Power BI on ottanut käyttöön työtilan uuden kokemuksen. Työtilat ovat edelleen paikassa, voit tehdä yhteistyötä työtovereiden kanssa kokoelmia koontinäyttöjen, raporttien ja Sivutettujen raporttien luomiseksi. Sitten voit niputtaa kyseisen sivustokokoelman *sovelluksen* ja jakaa sen koko organisaatiolle tai tietyille henkilöille tai ryhmille. 
 
-![Power BI:n uusien työtilojen esiversio](media/service-create-the-new-workspaces/power-bi-new-workspaces-preview.png)
-
-Uusien työtilojen esikatselun avulla voit nyt suorittaa seuraavia toimintoja:
+Tässä on tietoja. Uuden työtilakokemuksen voit tehdä seuraavaa:
 
 - Työtilan roolien määrittäminen käyttäjäryhmille: käyttöoikeusryhmät, jakeluluettelot, Office 365 -ryhmiä ja henkilöt.
 - Työtilan luominen Power BI:ssä luomatta Office 365 -ryhmää.
 - Tarkempien työtilaroolien käyttäminen oikeuksien määrittämiseksi työtilassa entistä joustavammin.
 
-Katso lisätietoja artikkelista [Uudet työtilat (esikatselu)](service-new-workspaces.md).
+> [!NOTE]
+> Jos haluat ottaa rivitason suojaus (RLS) Power BI Pro käyttäjille selaamalla sisältöä työtilassa, edelleen käyttää [perinteinen työtilat](service-create-workspaces.md). Valitse **jäsenet voivat vain tarkastella Power BI-sisältöä** vaihtoehto. Vaihtoehtoisesti julkaista Power BI-sovelluksen näille käyttäjille tai sisällön jakamisen avulla. Tulevan Viewer-roolin mahdollistaa tämän skenaarion tulevaisuudessa työtiloissa uusi työtilan käyttökokemuksen.
+
+Katso lisätietoja tausta [uuden työtilakokemuksen](service-new-workspaces.md) artikkelissa.
 
 ## <a name="create-one-of-the-new-app-workspaces"></a>Uuden sovellustyötilan luominen
 
@@ -37,29 +38,111 @@ Katso lisätietoja artikkelista [Uudet työtilat (esikatselu)](service-new-works
    
      ![Luo sovellustyötila](media/service-create-the-new-workspaces/power-bi-create-app-workspace.png)
 
-2. Valitse **Esikatsele paranneltuja työtiloja** -kohdassa **Kokeile nyt**.
+2. Automaattisesti luot päivitetyn työtilassa, ellei annat **perinteinen palata**.
    
-     ![Esikatsele paranneltuja työtiloja](media/service-create-the-new-workspaces/power-bi-preview-improved-workspaces.png)
+     ![Uusi työtila-käyttökokemus](media/service-create-the-new-workspaces/power-bi-new-workspace.png)
+     
+     Jos valitset **perinteinen palata**, luot työtila Office 365-ryhmän perusteella. Käytä tätä vaihtoehtoa, jos tarvitset **jäsenet voivat vain tarkastella Power BI-sisältöä** vaihtoehto, jos haluat ottaa rivitason suojaus (RLS) pakotetusti käyttöön työtilan jäseniä.
 
-2. Anna työtilalle nimi. Jos nimi ei ole käytettävissä, muokkaa nimeä niin, että saat yksilöllisen tunnuksen.
+2. Anna työtilalle nimi. Jos nimi ei ole käytettävissä, Muokkaa nimeä niin, jolla on yksilöivä nimi.
    
-     Sovelluksella on sama nimi kuin työtilalla.
+     Sovelluksen työtilan on sama nimi ja kuvake työtila.
    
-1. Lisää kuva, jos haluat. Tiedostokoon on oltava pienempi kuin 45 kt.
- 
-    ![Työtilan nimeäminen ja kuvan lisääminen](media/service-create-the-new-workspaces/power-bi-name-workspace.png)
+1. Tässä on joitakin valinnainen kohteita, voit määrittää työtilassa:
+
+    Lataa **työtilan kuvan**. Tiedostoja voi olla .png tai .jpg-muodossa. Tiedostokoko on oltava alle 45 kt.
+    
+    [Lisää **yhteystietoluettelo**](#workspace-contact-list). Työtilan järjestelmänvalvojat ovat oletusarvoisesti yhteystiedot. 
+    
+    [Määritä **työtilan OneDrive** ](#workspace-onedrive) kirjoittamalla nimi olemassa oleva Office 365-ryhmä, ei URL-osoite. Tämän työtilan voit nyt käyttää kyseisen Office 365-ryhmän tallennustilan sijainti. 
+
+    ![Määritä OneDrive sijainti](media/service-create-the-new-workspaces/power-bi-new-workspace-onedrive.png)
+
+    Määrittää työtila **varattu kapasiteetti**, **Premium** välilehti ja valitse **varattu kapasiteetti**.
+     
+    ![Varattu kapasiteetti](media/service-create-the-new-workspaces/power-bi-workspace-premium.png)
 
 1. Valitse **Tallenna**.
 
-    Tässä on uuden työtilasi **Tervetuloa**-näyttö. Voit lisätä tietoja. 
+    Power BI luo työtilan ja avaa sen. Näet sen niiden työtilojen luettelossa, joiden jäsen olet. 
+
+## <a name="workspace-contact-list"></a>Työtilan yhteystietoluettelon
+
+Uusi työtila-yhteystietoluettelon avulla voit määrittää käyttäjät, jotka saat ilmoituksen kohteiden työtilan ongelmista. Oletusarvon mukaan kaikki käyttäjän tai ryhmän määritetty työtilan järjestelmänvalvojan ilmoitetaan, mutta voit mukauttaa luetteloa. Käyttäjille tai ryhmille, ota yhteyttä luettelossa näytetään käyttöliittymässä (UI), joiden avulla käyttäjät saavat työtilaan liittyviä ohjeita.
+
+1. Käyttää uusi **yhteystietoluettelo** asetus kahdella eri tavalla:
+
+    Tässä **Luo työtila** ruudussa, kun luot sen.
+
+    Valitse vasemmassa siirtymisruudussa nuolta kohdan **työtilat**, valitse työtilan nimen vierestä kohdasta kolme pistettä (...) > **työtilan asetukset**. **Asetukset** ruutu avautuu.
+
+    ![Työtilan asetukset](media/service-create-the-new-workspaces/power-bi-workspace-settings.png)
+
+2. Valitse **lisäasetukset** > **yhteystietoluettelo**, hyväksyä oletusarvon **työtilan järjestelmänvalvojat**, tai lisätä omia luettelo **tietyille käyttäjille tai ryhmille**. 
+3. Valitse **Tallenna**.
+
+## <a name="workspace-onedrive"></a>Workspace OneDrive
+
+Työtilan OneDrive-ominaisuuden avulla voit määrittää Office 365-ryhmä SharePoint-tiedostokirjastoon jonka tiedostosäilö on työtilan käyttäjien käytettävissä. Ryhmän ulkopuolella Power BI luo ensin. 
+
+Power BI ei synkronoi käyttäjät tai ryhmät, jotka on määritetty työtila Office 365-ryhmän jäsenyys käytön käyttöoikeudet. Paras käytäntö on annettava sama Office 365-ryhmän, jonka määrität tämän asetuksen Office 365-ryhmän tiedostosäilö [työtilan käyttöoikeus](#give-access-to-your-workspace). Sitten voit hallita työtilan käyttöoikeus Office 365-ryhmän jäsenyyden hallinta. 
+
+1. Käyttää uusi **työtilan OneDrive** asetus kahdella eri tavalla:
+
+    Tässä **Luo työtila** ruudussa, kun luot sen.
+
+    Valitse vasemmassa siirtymisruudussa nuolta kohdan **työtilat**, valitse työtilan nimen vierestä kohdasta kolme pistettä (...) > **työtilan asetukset**. **Asetukset** ruutu avautuu.
+
+    ![Työtilan asetukset](media/service-create-the-new-workspaces/power-bi-workspace-settings.png)
+
+2. Valitse **lisäasetukset** > **työtilan OneDrive**, Office 365-ryhmän luomasi käyttöoikeusjoukon nimi. Ryhmän OneDrive vastataan automaattisesti Power BI.
+
+    ![Määritä OneDrive sijainti](media/service-create-the-new-workspaces/power-bi-new-workspace-onedrive.png)
+
+3. Valitse **Tallenna**.
+
+### <a name="access-the-workspace-onedrive-location"></a>Käyttää OneDrive-sijainti-työtila
+
+Sen jälkeen, kun olet määrittänyt OneDrive-sijaintiin, pääset sen työtilaan joitakin eri paikoista:
+
+- Valitse **työtilat** > *työtilan nimi* > kolme pistettä ( **...** ) valikko > **tiedostot**. 
+
+    ![Työtilan sijainti](media/service-new-workspaces/power-bi-new-workspace-files.png)
+
+- Valitse kolme pistettä ( **...** ) valikko työtilan oikeassa yläkulmassa > **tiedostot**.
+
+    ![Työtilan sijainti](media/service-new-workspaces/power-bi-new-workspace-files-2.png)
+    
+- Tässä **Nouda tiedot** > **tiedostot** kohdata. **OneDrive – yritys** tapahtuma on oma OneDrive for Businessiin. Toinen OneDrive on lisätty.
+
+    ![Työtilan sijainti - Nouda tiedot](media/service-new-workspaces/power-bi-new-workspace-get-data-onedrive.png)
+
+## <a name="add-content-to-your-app-workspace"></a>Sisällön lisääminen sovellustyötilaan
+
+Kun olet luonut uusi työtilan kokemus työtila, on aika sisällön lisäämiseen. Uudet ja perinteinen työtiloissa muistuttaa lisääminen sisältöä. Käytä Luo-painiketta tai lisätä sisältöä työtilassa Nouda tiedot.
+
+1. Tässä **Tervetuloa** näytön uusi työtilassa voit lisätä sisältöä. 
 
     ![Uuden työtilan Tervetuloa-näyttö](media/service-create-the-new-workspaces/power-bi-workspace-welcome-screen.png)
 
 1. Valitse esimerkiksi **Mallit** > **Asiakkaan tuottavuuden malli**.
 
-    Näet työtilan sisältöluettelossa **uusien työtilojen esiversion**. Koska olet järjestelmänvalvoja, näet myös uuden toiminnon **Käyttö**.
+> [!NOTE]
+> Uusien työtilojen voi kuluttaa organisaation sisältöpakettien tai kolmannen osapuolen Sisältöpaketit. Sovellukset ovat käytettävissä kaikki kolmannen osapuolen sisältöpaketteja, voit käyttää aiemmin. Käytä perinteinen työtilat, jos haluat jatkaa Sisältöpaketit. Sisältöpaketit ovat vanhentuneet, joten Suosittelemme käyttämään sovelluksia.
 
-    ![Työtilojen esiversion sisältöluettelo](media/service-create-the-new-workspaces/power-bi-workspaces-preview-content-list.png)
+Kun sisältöä tarkastellaan sovellustyötilan sisältöluettelossa, sovellustyötilan nimenä näkyy omistajan nimi.
+
+### <a name="connecting-to-third-party-services-in-new-workspaces"></a>Uusi työtiloissa kolmannen osapuolen palveluihin yhdistäminen
+
+Keskitymme uusien työtilojen kokemuksessa *sovelluksiin*. Kolmannen osapuolen palveluille tarkoitettujen sovellusten avulla käyttäjät voivat helposti noutaa tietoja käyttämistään palveluista, kuten Microsoft Dynamics CRM:stä, Salesforcesta tai Google Analyticsista.
+
+Työtilan uuden kokemuksen ei voi luoda tai käyttää organisaation sisältöpaketteja. Voit sen sijaan käyttää saatavilla olevia sovelluksia ja muodostaa yhteyden kolmannen osapuolen palveluihin tai pyytää sisäisiä ryhmiä tarjoamaan sovellukset tällä hetkellä käytössäsi oleviin sisältöpaketteihin. 
+
+## <a name="give-access-to-your-workspace"></a>Käyttöoikeuden myöntäminen työtilassa
+
+1. Työtilan sisältöluettelosta, koska olet järjestelmänvalvoja näet uuden toiminnon **Access**.
+
+    ![Työtilat sisältöluettelo](media/service-create-the-new-workspaces/power-bi-workspace-content-list.png)
 
 1. Valitse **Käyttö**.
 
@@ -69,35 +152,15 @@ Katso lisätietoja artikkelista [Uudet työtilat (esikatselu)](service-new-works
 
 9. Valitse **Lisää** > **Sulje**.
 
-1. Power BI luo työtilan ja avaa sen. Näet sen niiden työtilojen luettelossa, joiden jäsen olet. Järjestelmänvalvojana voit valita kolme pistettä (...) ja palata takaisin tekemään muutoksia työtilan asetuksiin, lisäämään uusia jäseniä ja muuttamaan jäsenten käyttöoikeuksia.
-
-     ![Työtilan asetusten ja käyttöoikeuksien muokkaaminen](media/service-create-the-new-workspaces/power-bi-edit-workspace.png)
-
-## <a name="add-content-to-your-app-workspace"></a>Sisällön lisääminen sovellustyötilaan
-
-Kun olet luonut uutta tyyliä olevan sovellustyötilan, on aika lisätä siihen sisältöä. Sisällön lisääminen tapahtuu samankaltaisella tavalla uusissa ja vanhoissa työtiloissa yhdellä poikkeuksella. Ollessasi jommassakummassa sovelluksen työtilassa voit ladata tai muodostaa yhteyden tiedostoihin aivan samalla tavalla kuin tekisit Omassa työtilassa. Uusissa työtiloissa et voi muodostaa yhteyttä organisaation sisältöpaketteihin tai kolmannen osapuolen sisältöpaketteihin, kuten Microsoft Dynamics CRM:ään, Salesforceen tai Google Analyticsiin. Voit nykyisissä työtiloissa muodostaa yhteyden sisältöpaketteihin.
-
-Kun sisältöä tarkastellaan sovellustyötilan sisältöluettelossa, sovellustyötilan nimenä näkyy omistajan nimi.
-
-### <a name="connecting-to-third-party-services-in-new-workspaces-preview"></a>Kolmannen osapuolen palveluihin yhdistäminen uusissa työtiloissa (esiversio)
-
-Keskitymme uusien työtilojen kokemuksessa *sovelluksiin*. Kolmannen osapuolen palveluille tarkoitettujen sovellusten avulla käyttäjät voivat helposti noutaa tietoja käyttämistään palveluista, kuten Microsoft Dynamics CRM:stä, Salesforcesta tai Google Analyticsista.
-Organisaation sovellusten kautta käyttäjät pääsevät käyttämään tarvitsemiansa sisäisiä tietoja. Aiomme lisätä ominaisuuksia organisaation sovelluksiin, jotta käyttäjät voivat mukauttaa sovelluksista löytyvää sisältöä. Tämän toiminnon ansiosta sisältöpaketteja ei enää tarvita. 
-
-Et voi luoda tai käyttää organisaation sisältöpaketteja uusien työtilojen esiversiossa. Voit sen sijaan käyttää saatavilla olevia sovelluksia ja muodostaa yhteyden kolmannen osapuolen palveluihin tai pyytää sisäisiä ryhmiä tarjoamaan sovellukset tällä hetkellä käytössäsi oleviin sisältöpaketteihin. 
 
 ## <a name="distribute-an-app"></a>Sovelluksen jakaminen
 
-Kun sisältö on valmis, valitset, mitkä raporttinäkymät ja raportit haluat julkaista, ja sitten julkaiset sen *sovelluksena*. Voit luoda yhden sovelluksen kustakin työtilasta. Työtoverisi voivat saada sovelluksesi käyttöönsä eri tavoin. Voit asentaa sen automaattisesti työtovereittesi Power BI -tileille, jos Power BI -järjestelmänvalvojasi antaa sinulle luvan. Muussa tapauksessa he voivat hakea ja asentaa sovelluksesi Microsoft AppSourcesta tai voit lähettää heille suoran linkin. He saavat päivitykset automaattisesti, ja sinä voit määrittää, kuinka usein tiedot päivitetään. Lisätietoja on artikkelissa [Raporttinäkymiä ja raportteja sisältävien sovellusten julkaiseminen Power BI:ssä](service-create-distribute-apps.md).
+Jos haluat virallinen sisältöä organisaation sisällä suuri yleisö, voit julkaista sovelluksen työtilasta.  Kun sisältö on valmis, valitse, mitkä koontinäytöt ja raportit haluat julkaista ja julkaise se *sovelluksen*. Voit luoda yhden sovelluksen kustakin työtilasta.
 
-## <a name="convert-old-app-workspaces-to-new-app-workspaces"></a>Vanhojen sovellustyötilojen muuntaminen uusiksi sovellustyötiloiksi
-
-Esiversion aikana et voi muuntaa vanhoja sovellustyötiloja automaattisesti uusiksi. Voit kuitenkin luoda uuden sovellustyötilan ja julkaista sisältöä uudessa sijainnissa. 
-
-Kun uudet työtilat ovat yleisesti käytettävissä (GA), voit siirtää vanhat työtilat automaattisesti. Jonkin aikaa GA:n jälkeen ne on siirrettävä.
+Lue [uuden työtilakokemuksen sovelluksen julkaiseminen](service-create-distribute-apps.md)
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
-* Lue [työn järjestämisestä uusissa työtiloissa (esikatselu) Power BI:ssä](service-new-workspaces.md)
-* [Nykyisten työtilojen luominen](service-create-workspaces.md)
-* [Asenna ja käytä sovelluksia Power BI:ssä](service-create-distribute-apps.md)
+* Lue [järjestäminen uuden työtilat-toiminnon Power BI: ssä](service-new-workspaces.md)
+* [Perinteiset työtilan luominen](service-create-workspaces.md)
+* [Julkaise Power BI-sovelluksen uuden työtilakokemuksen](service-create-distribute-apps.md)
 * Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)
