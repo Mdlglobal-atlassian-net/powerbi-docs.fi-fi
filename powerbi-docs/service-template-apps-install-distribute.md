@@ -7,26 +7,26 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 02/07/2019
+ms.date: 04/19/2019
 ms.author: maggies
-ms.openlocfilehash: cd3a1f94aa4c965327ea3e5bcb7271326aa3514d
-ms.sourcegitcommit: 8207c9269363f0945d8d0332b81f1e78dc2414b0
-ms.translationtype: HT
+ms.openlocfilehash: 2b7b2630e665fca9013920718ff58dd973f01392
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56249672"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "64578576"
 ---
 # <a name="install-and-distribute-template-apps-in-your-organization---power-bi-preview"></a>Mallisovellusten asentaminen ja jakaminen organisaatiossa - Power BI (esikatselu)
 
-Power BI:n uusien *mallisovellusten* avulla Power BI -kumppanit voivat kehittää Power BI -sovelluksia käyttäen vain vähän tai ei lainkaan koodausta, minkä lisäksi sovellukset voidaan ottaa käyttöön kenelle tahansa Power BI -asiakkaalle. Artikkeli on tarkoitettu Power BI -analyytikoille. Tässä kerrotaan, kuinka Power BI -kumppanin luoma mallisovellus asennetaan, mukautetaan ja jaetaan. Jos olet kiinnostunut luomaan mallisovelluksia ja jakamaan niitä itse, katso [Mallisovelluksen luominen Power BI:ssä](service-template-apps-create.md).
+Oletko Power BI-analyytikko? Jos siis tässä artikkelissa kerrotaan, miten voit asentaa *mallin sovelluksia* muodostaa yhteyden moniin palveluihin, joita käytät liiketoiminnassasi, kuten Salesforce, Microsoft Dynamics ja Google Analytics. Voit muokata koontinäyttöä ja raportteja organisaatiosi tarpeisiin ja jakaa niitä työtovereillesi kuin *sovelluksen*. 
 
 ![Asennetut Power BI -sovellukset](media/service-template-apps-install-distribute/power-bi-get-apps.png)
 
-Kun asennat Power BI -kumppanin luoman mallisovelluksen, voit muokata sitä organisaatiosi tarpeiden mukaan ja jakaa sen sitten työtovereillesi sovelluksena.  
+Jos olet kiinnostunut luomaan mallisovelluksia ja jakamaan niitä itse, katso [Mallisovelluksen luominen Power BI:ssä](service-template-apps-create.md). Power BI-kumppaneille, voit Power BI-sovellusten kanssa vain vähän tai ei-koodaus ja ottaa käyttöön Power BI-asiakkaille. 
 
 ## <a name="prerequisites"></a>Edellytykset  
 
-Mallisovelluksen asentamiseen, mukauttamiseen ja jakamiseen liittyvät seuraavat vaatimukset:  
+Mallisovelluksen asentamiseen, mukauttamiseen ja jakamiseen liittyvät seuraavat vaatimukset: 
 
 - [Power BI Pro -käyttöoikeus](service-self-service-signup-for-power-bi.md)
 - [Power BI-peruskäsitteiden](service-basic-concepts.md) tuntemus
