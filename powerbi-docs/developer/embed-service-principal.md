@@ -10,12 +10,12 @@ ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 03/29/2019
-ms.openlocfilehash: 5c97eacbdbf89a9ef828dad3a5da01e794952f15
-ms.sourcegitcommit: a284c38d42dd8042e468e10c0157f30918c2bdd1
-ms.translationtype: HT
+ms.openlocfilehash: 8fa11926a66b5e295ee23fa6c5b90bfedb2b9761
+ms.sourcegitcommit: 8bf2419b7cb4bf95fc975d07a329b78db5b19f81
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "65710531"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66375075"
 ---
 # <a name="service-principal-with-power-bi-preview"></a>Palvelun päänimi ja Power BI (esikatselu)
 
@@ -120,7 +120,7 @@ Palvelun päänimen (sovellustunnus) käyttö eroaa tavallisen päätilin käyt�
 
 5. Lisää palvelun päänimi **järjestelmänvalvojaksi** uuteen luomaasi työtilaan. Voit hallita tätä [ohjelmointirajapinnoilla](https://docs.microsoft.com/rest/api/power-bi/groups/addgroupuser) tai Power BI -palvelussa.
 
-    ![Palvelun päänimen lisääminen työtilaan](media/embed-service-principal/add-service-principal-in-the-UI.png)
+    ![Lisää palveluobjektin järjestelmänvalvojana työtilaan](media/embed-service-principal/add-service-principal-in-the-UI.png)
 
 6. Nyt voit upottaa sisältöä mallisovellukseen tai omaan sovellukseesi.
 
@@ -174,10 +174,11 @@ Alla on esimerkkikomentosarja, jolla voit hakea palvelun päänimen objektitunnu
 * Et voi asentaa tai hallita paikallista tietoyhdyskäytävää palvelun päänimellä.
 * [Organisaatiosi upotetut sovellukset](embed-sample-for-your-organization.md) eivät voi käyttää palvelun päänimeä.
 * [Tietovoiden](../service-dataflows-overview.md) hallintaa ei tueta.
-* Palvelun päänimi ei tue järjestelmänvalvojien ohjelmointirajapintoja.
+* Palvelun päänimen ei tällä hetkellä tue mitään järjestelmänvalvojan ohjelmointirajapintoja.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
 * [Sovelluksen rekisteröiminen](register-app.md)
 * [Power BI Embedded asiakkaillesi](embed-sample-for-customers.md)
 * [Sovellusobjektit ja palvelun päänimen objektit Azure Active Directoryssa](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals)
+* [Rivitason suojausta palveluobjektia (esikatselu) paikallisen tietoyhdyskäytävän avulla](embedded-row-level-security.md#on-premises-data-gateway-with-service-principal-preview)

@@ -11,12 +11,12 @@ ms.topic: tutorial
 ms.date: 03/12/2019
 ms.author: davidi
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 6c63f0bbcf836c90eecf7407d2d9805fc9ab443a
-ms.sourcegitcommit: 39bc75597b99bc9e8d0a444c38eb02452520e22b
-ms.translationtype: HT
+ms.openlocfilehash: 31c1cd7a8455232fdaa3bb3d391fb93e87ad5062
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58430319"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61404229"
 ---
 # <a name="tutorial-invoke-a-machine-learning-studio-model-in-power-bi-preview"></a>Opetusohjelma: Automaattianalyysistudion mallin käynnistys Power BI:ssä (esikatselu)
 
@@ -48,7 +48,7 @@ Kirjaudu sisään [Azure-portaaliin](https://portal.azure.com) ja siirry **Tilau
 
 ![Azure-portaali](media/service-tutorial-invoke-machine-learning-model/tutorial-invoke-machine-learning-model_01.png)
 
-Valitse Azure-tilaus, jota käytit mallin julkaisemiseen, ja valitse sitten **Käyttöoikeuksien hallinta (IAM)**. Valitse **Lisää roolimääritys**, valitse **Lukija**-rooli ja valitse sitten Power BI -käyttäjä. Kun olet valmis, valitse **Tallenna**. Valinnat näkyvät seuraavassa kuvassa.
+Valitse Azure-tilaus, jota käytit mallin julkaisemiseen, ja valitse sitten **Käyttöoikeuksien hallinta (IAM)** . Valitse **Lisää roolimääritys**, valitse **Lukija**-rooli ja valitse sitten Power BI -käyttäjä. Kun olet valmis, valitse **Tallenna**. Valinnat näkyvät seuraavassa kuvassa.
 
 ![Azure-portaalin Käyttöoikeuksien hallinta](media/service-tutorial-invoke-machine-learning-model/tutorial-invoke-machine-learning-model_02.png)
 
@@ -90,7 +90,7 @@ Valitse tietolähteeksi **teksti- tai CSV-tiedosto**.
 
 Seuraavassa näytössä sinua pyydetään muodostamaan yhteys tietolähteeseen. Liitä linkki tietoihin, joita käytit Azuren automaattianalyysipalveluiden mallin luomiseen. Jos käytit _Automotive Pricing_ -tietoja, voit liittää seuraavan linkin **Tiedostopolku tai URL-osoite** -ruutuun ja valita sitten **Seuraava**.
 
-`https://raw.githubusercontent.com/santoshc1/PowerBI‑AI‑samples/master/Tutorial\_MLStudio\_model\_integration/Automobile%20price%20data%20\_Raw\_.csv`
+`https://raw.githubusercontent.com/MicrosoftLearning/Principles-of-Machine-Learning-Python/master/Module7/Automobile%20price%20data%20_Raw_.csv`
 
 ![Muodosta yhteys tietolähteeseen](media/service-tutorial-invoke-machine-learning-model/tutorial-invoke-machine-learning-model_08.png)
 
@@ -98,7 +98,7 @@ Power Query -editori näyttää CSV-tiedostossa olevien tietojen esikatselun. Va
 
 ![Azure-portaali](media/service-tutorial-invoke-machine-learning-model/tutorial-invoke-machine-learning-model_09.png)
 
-Lähdetietojoukossa tuntemattomien arvojen muodoksi on määritetty ’?’.  Arvon '?' voi korvata arvolla '0', jotta jatkossa vältytään virheiltä.  Voit tehdä tämän valitsemalla sarakkeet *normalisoidut-menetykset (normalized-losses)*, *putki (bore)*, *tahtisuus (stroke)*, *puristussuhde (compression-ratio)*, *hevosvoimat (horsepower)*, *huippukierrokset (peak-rpm)* ja *hinta (price)* napsauttamalla sarakkeiden nimiä sarakeotsikoissa ja valitsemalla ensin Muunna sarakkeet ja sitten Korvaa arvot.  Korvaa ?-merkki 0-merkillä.
+Lähdetietojoukossa tuntemattomien arvojen muodoksi on määritetty ’?’.  Arvon '?' voi korvata arvolla '0', jotta jatkossa vältytään virheiltä.  Voit tehdä tämän valitsemalla sarakkeet *normalisoidut-menetykset (normalized-losses)* , *putki (bore)* , *tahtisuus (stroke)* , *puristussuhde (compression-ratio)* , *hevosvoimat (horsepower)* , *huippukierrokset (peak-rpm)* ja *hinta (price)* napsauttamalla sarakkeiden nimiä sarakeotsikoissa ja valitsemalla ensin Muunna sarakkeet ja sitten Korvaa arvot.  Korvaa ?-merkki 0-merkillä.
 
 ![Korvaa arvot](media/service-tutorial-invoke-machine-learning-model/tutorial-invoke-machine-learning-model_10.png)
 

@@ -13,11 +13,11 @@ ms.date: 12/06/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
 ms.openlocfilehash: 34bb77c84d1813e32421b87e957e24a946f282f7
-ms.sourcegitcommit: a054782370dec56d49bb205ee10b7e2018f22693
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56661993"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61066195"
 ---
 # <a name="view-power-bi-notifications"></a>Power BI -ilmoitusten näyttäminen
 Ilmoituskeskus tarjoaa säännöllistä tietoa Power BI:n käyttöön liittyvistä asioista. Avaamalla sen voit lukea viestit, jotka koskevat uusia, kanssasi jaettuja koontinäyttöjä, muutoksia Ryhmätilassa sekä tarjoavat tietoa Power BI -tapahtumista ja -tapaamisista, asettamistasi ilmoituksista ja paljon muusta. Voit [asettaa ilmoituksia Power BI-palvelussa](../service-set-data-alerts.md) ja Power BI -mobiilisovelluksissa.

@@ -7,101 +7,110 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 06/28/2018
+ms.date: 04/24/2019
 ms.author: mshenhav
-ms.openlocfilehash: ccb3b390b0654c7dc850cf66a7f0c9a7ec02f910
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.openlocfilehash: 4e09b10e38b018f8e5572343b343a243ace3bf81
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54278396"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "64906525"
 ---
 # <a name="create-a-link-to-a-specific-location-in-the-power-bi-mobile-apps"></a>Linkin luominen tiettyyn sijaintiin Power BI ‑mobiilisovelluksissa
-Voit luoda URI-tunnuksen (uniform resource identifier) ja tehdä sen avulla linkin tiettyyn sijaintiin (*tarkka linkki*) Power BI ‑mobiilisovelluksissa kaikissa mobiiliympäristöissä: iOS:ssä, Android-laitteilla ja Windows 10:ssä.
+Linkkien avulla voit käyttää suoraan Power BI-osat: Raportin, koontinäytön ja ruudun.
 
-URI-linkit voivat osoittaa suoraan koontinäyttöihin, ruutuihin ja raportteihin.
+On pääasiassa kahta linkkien käyttäminen Power BI Mobile: 
 
-Tarkan linkin kohde määrittää URI-tunnuksen muodon. Näiden ohjeiden avulla voit luoda tarkkoja linkkejä eri sijainteihin. 
-
-## <a name="open-the-power-bi-mobile-app"></a>Power BI ‑mobiilisovelluksen avaaminen
-Käyttämällä tätä URI-tunnusta voit avata Power BI ‑mobiilisovelluksen millä tahansa laitteella:
-
-    mspbi://app/
+* Avaa Power BI- **sovelluksen ulkopuolella**, ja askelvälit tekevät tietty sisältö (raportin tai koontinäytön tai sovelluksen). Tämä on tavallisesti integrointiskenaario, kun haluat avata Power BI Mobile muiden sovelluksen. 
+* Jos haluat **siirtyä** Power BI sisällä. Tämä on yleensä, kun haluat luoda mukautettu siirtyminen Power BI.
 
 
-## <a name="open-to-a-specific-dashboard"></a>Siirtyminen suoraan tiettyyn koontinäyttöön
-Tällainen URI-tunnus avaa Power BI ‑mobiilisovelluksen tietyn koontinäytön:
+## <a name="use-links-from-outside-of-power-bi"></a>Käytä ulkopuolella Power BI-linkit
+Kun käytät linkin Power BI-sovelluksen ulkopuolella, haluat varmistaa, että se avautuu sovelluksen, ja jos sovellus ei ole asennettu laitteen ja tarjota käyttäjän asentaa sitä. Olemme luoneet erityiset muotoa voidaan tukea, jota. Tätä muotoa varmistetaan, että laitteen avulla avata linkin sovellukseen, että jos sovellus ei ole asennettu laitteeseen, se tarjoaa käyttäjän Siirry kauppaan, jotta saat sen.
 
-    mspbi://app/OpenDashboard?DashboardObjectId=<36-character-dashboard-id>
+Linkki tulee alkaa merkkijonolla seuraavat  
+```html
+https://app.powerbi.com/Redirect?[**QUERYPARAMS**]
+```
 
-Löydät koontinäytön 36-merkkisen objektitunnuksen siirtymällä Power BI -palvelussa (https://powerbi.com) haluamaasi koontinäyttöön. Katso esimerkiksi tämän URL-osoitteen korostettua osaa:
+> [!IMPORTANT]
+> Jos sisällön isännöidään erityinen datacenter, kuten Goverment, kiina ja niin edelleen. Linkki tulee alkaa merkkijonolla Power BI-osoitteen, kuten `app.powerbigov.us` tai `app.powerbi.cn`.   
+>
 
-`https://powerbi.com/groups/me/dashboards/**61b7e871-cb98-48ed-bddc-6572c921e270**`
 
-Jos koontinäyttö on osa jotakin muuta ryhmää kuin omaa työtilaa, lisää joko ennen koontinäytön tunnusta tai sen perään `&GroupObjectId=<36-character-group-id>`. Esimerkki: 
+**KYSELYN parametrit** ovat:
+* **toiminto** (pakollinen) = OpenApp / OpenDashboard / OpenTile / AvaaRaportti
+* **appId** =, jos haluat avata raportin tai koontinäytön, jotka ovat osa sovellus 
+* **groupObjectId** =, jos haluat avata raportin tai koontinäytön, jotka ovat osa työtilan (mutta ei oma työtila)
+* **dashboardObjectId** = koontinäytön Objektitunnus (Jos toiminto on OpenDashboard tai OpenTile)
+* **reportObjectId** = raportin Objektitunnus (Jos toiminto on AvaaRaportti)
+* **tileObjectId** = ruudun Objektitunnus (Jos toiminto on OpenTile)
+* **reportPage** =, jos haluat avata tietyn raporttiosan (Jos toiminto on AvaaRaportti)
+* **ctId** = kohde Organisaatiotunnus (B2B-skenaario kannalta. Tämä voidaan jättää pois Jos käyttäjän organisaatiolla kuuluu kohteen).
 
-mspbi://app/OpenDashboard?DashboardObjectId=e684af3a-9e7f-44ee-b679-b9a1c59b5d60 **&GroupObjectId=8cc900cc-7339-467f-8900-fec82d748248**
+**Esimerkkejä:**
 
-Huomaa, että niiden väliin tulee et-merkki (&).
+* Avaa Sovelluslinkki 
+  ```html
+  https://app.powerbi.com/Redirect?action=OpenApp&appId=appidguid&ctid=organizationid
+  ```
 
-## <a name="open-to-a-specific-tile-in-focus"></a>Tietyn ruudun avaaminen kohdistustilassa
-Tällainen URI-tunnus avaa Power BI ‑mobiilisovelluksessa tietyn ruudun:
+* Avaa koontinäyttö, joka on osa sovellus 
+  ```html
+  https://app.powerbi.com/Redirect?action=OpenDashboard&appId=**appidguid**&dashboardObjectId=**dashboardidguid**&ctid=**organizationid**
+  ```
 
-    mspbi://app/OpenTile?DashboardObjectId=<36-character-dashboard-id>&TileObjectId=<36-character-tile-id>
+* Avaa raportti, joka on osa työtila
+  ```html
+  https://app.powerbi.com/Redirect?Action=OpenReport&reportObjectId=**reportidguid**&groupObjectId=**groupidguid**&reportPage=**ReportSectionName**
+  ```
 
-Löydät koontinäytön ja ruudun 36-merkkiset objektitunnukset siirtymällä Power BI -palvelussa (https://powerbi.com) haluamaasi koontinäyttöön ja avaamalla ruudun tarkastelutilassa. Katso esimerkiksi tämän URL-osoitteen korostetut osat:
+### <a name="how-to-get-the-right-link-format"></a>Oikea muotoa hankkiminen
 
-`https://powerbi.com/groups/me/dashboards/**3784f99f-b460-4d5e-b86c-b6d8f7ec54b7**/tiles/**565f9740-5131-4648-87f2-f79c4cf9c5f5**/infocus`
+#### <a name="links-of-apps-and-items-in-app"></a>Sovellukset ja sovelluksen kohteiden linkit
 
-Tämän ruudun URI olisi:
+- **Sovellusten ja -raportteja ja koontinäyttö, jotka ovat osa sovelluksen**, on helpoin tapa saada linkki on sovelluksen työtilasta ja valitse ”Päivitä sovellus”. Tämä avaa ”Julkaise sovellus”-kokemus ja ratkaisutiedosto Access-välilehti **linkit** osiossa. Laajennetaan, että osion ja tulee luettelo sovellus ja kaikki sen sisältö, joka linkittää voidaan käyttää suoraan.
 
-    mspbi://app/OpenTile?DashboardObjectId=3784f99f-b460-4d5e-b86c-b6d8f7ec54b7&TileObjectId=565f9740-5131-4648-87f2-f79c4cf9c5f5
+![Power BI julkaista sovelluksen linkkejä ](./media/mobile-apps-links/mobile-link-copy-app-links.png)
 
-Huomaa, että niiden väliin tulee et-merkki (&).
+#### <a name="links-of-items-not-in-app"></a>Linkit kohteiden ei sovelluksessa 
 
-Jos koontinäyttö on osa jotakin muuta ryhmää kuin omaa työtilaa, lisää `&GroupObjectId=<36-character-group-id>`
+Raportteja ja koontinäyttöjä, jotka eivät ole osa sovelluksen tarvitset tunnukset poimia kohteen URL-osoite.
 
-## <a name="open-to-a-specific-report"></a>Tietyn raportin avaaminen
-Tällainen URI-tunnus avaa Power BI ‑mobiilisovelluksessa tietyn raportin:
+Esimerkiksi löytää 36-merkkisen **koontinäytön** objektitunnus, siirry tiettyyn koontinäyttöön Power BI-palvelussa 
 
-    mspbi://app/OpenReport?ReportObjectId=<36-character-report-id>
+```html
+https://app.powerbi.com/groups/me/dashboards/**dashboard guid comes here**?ctid=**organization id comes here**`
+```
 
-Löydät raportin 36-merkkisen objektitunnuksen siirtymällä Power BI -palvelussa (https://powerbi.com) haluamaasi raporttiin. Katso esimerkiksi tämän URL-osoitteen korostettua osaa:
+Etsi 36-merkkisen **raportin** objektitunnus, siirry tietyn raportin Power BI-palvelussa.
+Tässä on esimerkki raportin ”oman työtilan”
 
-`https://powerbi.com/groups/me/reports/df9f0e94-31df-450b-b97f-4461a7e4d300`
+```html
+https://app.powerbi.com/groups/me/reports/**report guid comes here**/ReportSection3?ctid=**organization id comes here**`
+```
+Yllä oleva URL-osoite sisältää myös tietyn raporttisivun **”ReportSection3”** .
 
-Jos raportti on muussa ryhmässä kuin Oma työtila, lisää `&GroupObjectId=<36-character-group-id>` joko ennen raportin tunnusta tai sen jälkeen. Esimerkki: 
+Tässä on esimerkki raportin työtilasta (ei oma työtila)
 
-mspbi://app/OpenReport?ReportObjectId=e684af3a-9e7f-44ee-b679-b9a1c59b5d60 **&GroupObjectId=8cc900cc-7339-467f-8900-fec82d748248**
+```html
+https://app.powerbi.com/groups/**groupid comes here**/reports/**reportid comes here**/ReportSection1?ctid=**organizationid comes here**
+```
 
-Huomaa, että niiden väliin tulee et-merkki (&).
+## <a name="use-links-inside-power-bi"></a>Linkkien sisällä Power BI
 
-## <a name="open-to-a-specific-report-page"></a>Tietyn raporttisivun avaaminen
-Tällainen URI-tunnus avaa Power BI ‑mobiilisovelluksessa tietyn raporttisivun:
+Power BI sisällä linkit toimivat mobiilisovelluksissa tarkalleen kuten Power BI-palvelussa.
 
-    mspbi://app/OpenReport?ReportObjectId=<36-character-report-id>&reportPage=ReportSection<number>
+Jos haluat Lisää linkin raporttiin, joka viittaa toisen Power BI-kohteen, voit kopioida vain kyseisen kohteen URL-Osoitteen selaimen osoiteriviltä. Lue lisää [hyperlinkin lisääminen tekstiruutuun raportissa](https://docs.microsoft.com/power-bi/service-add-hyperlink-to-text-box).
 
-Raporttisivun nimityksenä on ”ReportSection” ja sitä seuraava numero. Avaa jälleen raportti Power BI -palvelussa (https://powerbi.com) ja siirry haluamallesi raporttisivulle. 
+## <a name="use-report-url-with-filter"></a>Käytä raportin URL-osoite, suodatin
+Sama kuin Power BI-palvelussa, Power BI Mobile-sovellusten tukevat myös raportin URL-osoite, joka sisältää filter-kysely-parametri. Voit avata raportin Power BI-mobiilisovellus ja suodattaa se tiettyyn tilaan. Esimerkiksi tämän URL-Osoitteen Avaa myynti-raportin ja suodattaa alueen mukaan
 
-Katso esimerkiksi tämän URL-osoitteen korostettua osaa:
+```html
+https://app.powerbi.com/groups/me/reports/**report guid comes here**/ReportSection3?ctid=**organization id comes here**&filter=Store/Territory eq 'NC'
+```
 
-`https://powerbi.com/groups/me/reports/df9f0e94-31df-450b-b97f-4461a7e4d300/ReportSection11`
-
-## <a name="open-in-full-screen-mode"></a>Koko näytön tilassa avaaminen
-Jos haluat, että jokin raportti avautuu koko näytön tilassa, lisää korostettuna oleva parametri:
-
-    mspbi://app/OpenReport?ReportObjectId=<36-character-report-id>**&openFullScreen=true**
-
-Esimerkki: 
-
-mspbi://app/OpenReport?ReportObjectId=500217de-50f0-4af1-b345-b81027224033&openFullScreen=true
-
-## <a name="add-context-optional"></a>Kontekstin lisääminen (valinnainen)
-Voit lisätä merkkijonoon myös kontekstin. Sitten jos sinulle tulee tarvetta ottaa meihin yhteyttä, me voimme suodattaa kontekstin avulla tietojamme sovellukseesi. Lisää linkkiin `&context=<app-name>`
-
-Katso esimerkiksi tämän URL-osoitteen korostettua osaa: 
-
-`https://powerbi.com/groups/me/reports/df9f0e94-31df-450b-b97f-4461a7e4d300/&context=SlackDeepLink`
+Lue lisää [luoda kyselyn param suodattaa raporttien](https://docs.microsoft.com/power-bi/service-url-filters).
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 Palaute auttaa meitä päättämään, mitä toimintoja otamme käyttöön tulevaisuudessa, joten muista äänestää muita ominaisuuksia, jotka haluaisit nähdä Power BI ‑mobiilisovelluksissa. 

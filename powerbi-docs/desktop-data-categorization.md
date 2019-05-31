@@ -11,10 +11,10 @@ ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Model your data
 ms.openlocfilehash: 5b6bbf7a203d8e87d129b6336be4f4531ae34107
-ms.sourcegitcommit: 2116af72f435cd30f1401bb9c7afdcbc76b1c3ce
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/09/2019
+ms.lasthandoff: 05/29/2019
 ms.locfileid: "65454501"
 ---
 # <a name="data-categorization-in-power-bi-desktop"></a>Tietojen luokittelu Power BI Desktopissa
@@ -33,7 +33,7 @@ Pitäisikö Power BI Desktopin käsitellä GeoCode-sarakkeen koodeja maalyhentei
 **Tietoluokan määrittäminen**
 
 1. Valitse raporttinäkymässä tai tietonäkymässä olevasta **Kentät**-luettelosta kenttä, jonka haluat lajiteltavan eri luokittelun mukaan.
-2. Napsauta valintanauhan **Mallinnus**-välilehdessä avattavaa luetteloa **Tietoluokka:**.  Tämä näyttää luettelon mahdollisista tietoluokista, jotka voit sarakkeellesi valita.  Jotkut valinnat voi olla poistettu käytöstä, jos ne eivät toimi sarakkeesi tämänhetkisen tietotyypin kanssa.  Esimerkiksi jos sarake on binaarista tietotyyppiä, Power BI Desktop ei anna sinun valita maantieteellisten tietojen luokkia. 
+2. Napsauta valintanauhan **Mallinnus**-välilehdessä avattavaa luetteloa **Tietoluokka:** .  Tämä näyttää luettelon mahdollisista tietoluokista, jotka voit sarakkeellesi valita.  Jotkut valinnat voi olla poistettu käytöstä, jos ne eivät toimi sarakkeesi tämänhetkisen tietotyypin kanssa.  Esimerkiksi jos sarake on binaarista tietotyyppiä, Power BI Desktop ei anna sinun valita maantieteellisten tietojen luokkia. 
 
 ![](media/desktop-data-categorization/datacategorization.gif)
 

@@ -1,22 +1,22 @@
 ---
 title: Ruutuvirheiden vianmääritys
 description: Yleisiä virheitä voi ilmetä, kun ruutu yrittää päivittyä Power BI:ssä
-author: davidiseminger
+author: mgblythe
 manager: kfile
-ms.reviewer: ''
+ms.reviewer: kayu
 ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 12/06/2018
-ms.author: davidi
+ms.author: mblythe
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: bfb6178908a9d6a4bcfe81f8d3d9771ac5b12b9d
-ms.sourcegitcommit: 88ac51106ec7d0ead8c2a1550a11afae0d502bb9
-ms.translationtype: HT
+ms.openlocfilehash: c1df7e6293db703922f37c3f28546bb296d1a46a
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56086628"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66050988"
 ---
 # <a name="troubleshooting-tile-errors"></a>Ruutuvirheiden vianmääritys
 Seuraavassa on yleisiä virheitä, joita voit kohdata ruutujen kohdalla sekä niiden selitykset.
@@ -64,6 +64,17 @@ Kenttä on todennäköisesti poistettu tai nimetty uudelleen. Voit poistaa viall
 **Tietoja ei voitu hakea tälle visualisoinnille. Yritä myöhemmin uudelleen.**
 
 Tämä on tavallisesti tilapäinen ongelma. Jos yrität myöhemmin uudelleen ja näet tämän viestin edelleen, ota yhteyttä tukeen.
+
+**Ruutujen edelleen suodattamattomaan tietojen single-kirjautumisen yhteydessä (SSO) käyttöönoton jälkeen.**
+
+Tämä voi tapahtua, jos pohjana oleva tietojoukko on määritetty käyttämään DirectQuery-tilassa tai Analysis Services-Live-yhteydellä paikallisen tietoyhdyskäytävän kautta. Tässä tapauksessa ruudut edelleen suodattamattomaan tietoja käyttöönoton SSO tietolähteen, kunnes seuraava ruudun päivitys on määräaika jälkeen. Ruudun seuraavan päivityksen yhteydessä Power BI käyttää SSO määritetty ja ruudut näyttävät tiedot suodatetaan käyttäjätietojen mukaan. 
+
+Jos haluat nähdä suodatetut tiedot heti, voit pakottaa ruudun päivityksen valitsemalla koontinäytön oikeassa yläkulmassa kolme pistettä (...) ja valitsemalla **Päivitä koontinäyttöruudut**.
+
+Tietojoukon omistaja voit myös muuttaa ruudun päivitystiheyden ja määrittää sen 15 minuuttia nopeuttaa ruudun päivitys. Valitse Power BI-palvelun oikeasta yläkulmasta hammaspyöräkuvake ja valitse sitten **asetukset**. Käyttöön **asetukset** sivulla **tietojoukkoja** välilehti. Laajenna **ajoitettu välimuistin päivitys** ja muuta **päivitystaajuus**. Varmista, että voit palauttaa määritykset alkuperäisen päivitystiheyden sen jälkeen, kun Power BI tekee seuraavan ruudun päivitys.
+
+> [!NOTE]
+> **Ajoitettu välimuistin päivitys** osa on käytettävissä tietojoukoille DirectQuery tai LiveConnection tilassa vain. Tietojoukot tuontitilassa eivät edellytä erillisen ruudun päivityksen, koska ruudut päivitetään automaattisesti seuraavan ajoitetun tietojen päivittämisen aikana.
 
 ## <a name="contact-support"></a>Ota yhteyttä tukeen
 Jos sinulla on edelleen ongelma, [ota yhteyttä tukeen](https://support.powerbi.com) asian tutkimiseksi tarkemmin.

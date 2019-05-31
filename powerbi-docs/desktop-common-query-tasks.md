@@ -11,10 +11,10 @@ ms.date: 05/07/2019
 ms.author: davidi
 LocalizationGroup: Transform and shape data
 ms.openlocfilehash: dc6aa42691c7caa2593b28e441f96985b1e3bcda
-ms.sourcegitcommit: b11e908650379913d00673215e3eaf25d712b122
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/07/2019
+ms.lasthandoff: 05/29/2019
 ms.locfileid: "65239456"
 ---
 # <a name="common-query-tasks-in-power-bi-desktop"></a>Yleiset kyselytehtävät Power BI Desktopissa
@@ -63,7 +63,7 @@ Muut tietoyhteydet ovat samankaltaisia. Jos tietoyhteyden muodostaminen edellytt
 Jos haluat vaiheittaiset ohjeet tietoihin yhdistämiseen Power BI Desktopissa, lue ohjeartikkeli [Tietoihin yhdistäminen Power BI Desktopissa](https://docs.microsoft.com/power-bi/desktop-connect-to-data).
 
 ## <a name="shape-and-combine-data"></a>Tietojen muotoileminen ja yhdistäminen
-Kyselyeditorilla voit muotoilla ja yhdistää tietoja helposti. Tämä osio sisältää muutamia esimerkkejä tietojen muotoilemisesta. Jos haluat kattavamman esittelyn tietojen muotoilemisesta ja yhdistämisestä, lue ohjeartikkeli **[Tietojen muotoileminen ja yhdistäminen Power BI Desktopissa](https://docs.microsoft.com/power-bi/desktop-shape-and-combine-data)**.
+Kyselyeditorilla voit muotoilla ja yhdistää tietoja helposti. Tämä osio sisältää muutamia esimerkkejä tietojen muotoilemisesta. Jos haluat kattavamman esittelyn tietojen muotoilemisesta ja yhdistämisestä, lue ohjeartikkeli **[Tietojen muotoileminen ja yhdistäminen Power BI Desktopissa](https://docs.microsoft.com/power-bi/desktop-shape-and-combine-data)** .
 
 Edellisessä osiossa yhdistimme kaksi tietojoukkoa: Excel-työkirjan ja verkkoresurssin. Kun ne on ladattu kyselyeditoriin, näemme alla olevassa kuvassa näkyvät tiedot ja verkkosivun kyselyn valittuna (se on valittu kyselyeditorin vasemman puolen **Kyselyt**-ruudussa käytettävissä olevien kyselyiden luettelosta).
 
@@ -86,14 +86,14 @@ Tarkistetaan, kuinka monta virastoa (tämä käsittää koulupiirit ja muut opet
 
 ![](media/desktop-common-query-tasks/commonquerytasks_groupby.png)
 
-**Ryhmittelyperuste...**-ikkuna avautuu näyttöön. Kun kyselyeditori ryhmittelee rivejä, se luo uuden sarakkeen, jonka se lisää **Ryhmittelyperuste**-tuloksiin. Voit muokata **Ryhmittelyperuste**-toimintoa seuraavin tavoin:
+**Ryhmittelyperuste...** -ikkuna avautuu näyttöön. Kun kyselyeditori ryhmittelee rivejä, se luo uuden sarakkeen, jonka se lisää **Ryhmittelyperuste**-tuloksiin. Voit muokata **Ryhmittelyperuste**-toimintoa seuraavin tavoin:
 
 1. *Ryhmittelyperuste*: Tämä on ryhmiteltävä sarake. Kyselyeditori valitsee valitun sarakkeen, mutta voit vaihtaa sitä tässä ikkunassa (voit valita minkä tahansa taulukon sarakkeen).
 2. *Uuden sarakkeen nimi:* Kyselyeditori ehdottaa uudelle sarakkeelle nimeä sen perusteella, minkä toiminnon se suorittaa ryhmiteltävälle sarakkeelle. Voit kuitenkin antaa sarakkeelle minkä tahansa haluamasi nimen.
 3. *Toiminto*: tässä määrität kyselyeditorin suorittaman toiminnon.
 4. *Lisää ryhmittely* ja *Lisää kooste*: Nämä toiminnot näytetään, kun valitset **Lisäasetukset**. Voit suorittaa ryhmittelytoimintoja (**Ryhmittelyperuste**-toimintoja) useille sarakkeille ja suorittaa useita koostetoimintoja **Ryhmittelyperuste**-ikkunassa yhdellä toiminnolla. Kyselyeditori luo uuden sarakkeen (ikkunassa tekemiesi valintojen mukaisesti), joka hyödyntää tietoja useista sarakkeista. 
 
-Jos haluat lisätä **Ryhmittelyperuste**-toimintoon lisää ryhmittelyitä tai koosteita, napsauta **Lisää ryhmittely**- tai **Lisää kooste** -painiketta. Voit poistaa ryhmittelyn tai koosteen napsauttamalla **...**-kuvaketta ja valitsemalla **Poista**. Kokeile tätä ja katso, miltä tulokset näyttävät.
+Jos haluat lisätä **Ryhmittelyperuste**-toimintoon lisää ryhmittelyitä tai koosteita, napsauta **Lisää ryhmittely**- tai **Lisää kooste** -painiketta. Voit poistaa ryhmittelyn tai koosteen napsauttamalla **...** -kuvaketta ja valitsemalla **Poista**. Kokeile tätä ja katso, miltä tulokset näyttävät.
    
    ![](media/desktop-common-query-tasks/commonquerytasks_groupbynumbered.png)
 

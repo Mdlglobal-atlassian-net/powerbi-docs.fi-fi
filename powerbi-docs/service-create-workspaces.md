@@ -1,36 +1,34 @@
 ---
-title: Työtilojen luominen työtovereiden kanssa Power BI:ssä
-description: Lue, miten luodaan työtiloja, jotka ovat raporttinäkymien ja raporttien kokoelmia, joiden avulla voit kuvata organisaatiosi keskeisiä mittalukuja.
+title: Luo perinteinen työtilat Power BI
+description: Lue, miten voit luoda työtiloja, kokoelmia koontinäyttöjen, raporttien ja Sivutettujen raporttien, joiden avulla voit kuvata organisaatiosi keskeisiä mittalukuja.
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/21/2018
+ms.date: 04/18/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 23c011eded113a0249f5e4a354f909a30bc97148
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.openlocfilehash: dcf9b8befabfec98fcae154e6276f8e698b3ddc2
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54277910"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61150830"
 ---
-# <a name="create-workspaces-with-your-colleagues-in-power-bi"></a>Työtilojen luominen työtovereiden kanssa Power BI:ssä
+# <a name="create-classic-workspaces-in-power-bi"></a>Luo perinteinen työtilat Power BI
 
-Voit luoda Power BI:ssä *työtiloja*. Ne ovat paikkoja, joissa voit yhteistyössä työtovereiden kanssa luoda ja tarkentaa raporttinäkymien ja raporttien kokoelmia. Niputa sitten kokoelma yhteen *sovelluksiin*, joita voit jakaa koko organisaatiolle tai tietyille henkilöille tai ryhmille. 
+Voit luoda Power BI *työtilat*, voit tehdä yhteistyötä työtovereiden, voit luoda ja tarkentaa koontinäytöt, raportit, kokoelmia sijoittaa ja sivutetut raportit. Sitten voit niputtaa kokoelman yhdessä *sovelluksia* , jotka voit jakaa koko organisaatiolle tai tietyille henkilöille tai ryhmille. 
 
-![Power BI -sovellukset](media/service-create-workspaces/power-bi-apps-left-nav.png)
+**Tiesitkö?** Power BI tarjoaa työtilan uuden kokemuksen, joka on nyt oletusarvo. Lue [järjestää työ uuden työtilakokemuksen](service-new-workspaces.md) uuden työtilakokemuksen lisätietoja. 
 
-Kun luot työtilan, luot taustalla toimivan, työtilaan liitetyn Office 365 -ryhmän. Työtilaa hallitaan Office 365:ssä. Voit lisätä työtovereita näihin työtiloihin jäseninä tai järjestelmänvalvojina. Työtilassa kaikki voivat tehdä yhteistyötä koontinäyttöjen, raporttien tai muiden artikkeleiden parissa, jotka haluat julkaista laajemmalle lukijakunnalle. Jokainen sovellustyötilaan lisätty jäsen tarvitsee Power BI Pro -käyttöoikeuden. 
-
-**Tiesitkö?** Power BI:ssä esikatsellaan uutta työtilakokemusta. Katso lisätietoja uusista työtiloista artikkelista [Työn järjestäminen uusissa työtiloissa (esikatselu)](service-new-workspaces.md). 
+Kun luot perinteiseen työtilaan, olet luomassa pohjana, liittyvät Office 365-ryhmään. Työtilaa hallitaan Office 365:ssä. Voit lisätä työtovereita näihin työtiloihin jäseninä tai järjestelmänvalvojina. Työtilassa kaikki voivat tehdä yhteistyötä koontinäyttöjen, raporttien tai muiden artikkeleiden parissa, jotka haluat julkaista laajemmalle lukijakunnalle. Jokainen sovellustyötilaan lisätty jäsen tarvitsee Power BI Pro -käyttöoikeuden. 
 
 ## <a name="video-apps-and-app-workspaces"></a>Video: Sovellukset ja sovelluksen työtilat
 <iframe width="640" height="360" src="https://www.youtube.com/embed/Ey5pyrr7Lk8?showinfo=0" frameborder="0" allowfullscreen></iframe>
 
-## <a name="create-an-app-workspace-based-on-an-office-365-group"></a>Office 365 -ryhmään perustuvan sovellustyötilan luominen
+## <a name="create-a-classic-app-workspace-based-on-an-office-365-group"></a>Luo Office 365-ryhmän perusteella perinteinen sovellustyötila
 
 Kun luot sovellustyötilan, se perustuu Office 365 -ryhmään.
 
@@ -52,6 +50,8 @@ Oletusarvoisesti Power BI luo sovelluksellesi pienen värillisen ympyrän, jossa
 3. Valitse kynäkuvake uudelleen, ja etsi kuva, jota haluat käyttää.
    
      ![Valitse kynä uudelleen](media/service-create-distribute-apps/power-bi-apps-workspace-edit-group.png)
+
+     Kuvien tyyppi voi olla .png tai .jpg .bmp tiedostoja. Koosta voivat olla suuria-3 Mt ylös. 
 
 4. Valitse **Tallenna**.
    
@@ -77,9 +77,16 @@ Nykyisissä työtiloissa voit myös muodostaa yhteyden käyttämällä organisaa
 
 ## <a name="distribute-an-app"></a>Sovelluksen jakaminen
 
-Kun sisältö on valmis, valitset, mitkä raporttinäkymät ja raportit haluat julkaista, ja sitten julkaiset sen *sovelluksena*. Työtoverisi saavat sovelluksesi käyttöönsä eri tavoin. Voit asentaa ne automaattisesti työtovereittesi Power BI -tileille, jos Power BI -järjestelmänvalvojasi antaa sinulle luvan. Muussa tapauksessa he voivat hakea ja asentaa sovelluksesi Microsoft AppSourcesta tai voit lähettää heille suoran linkin. He saavat päivitykset automaattisesti, ja sinä voit määrittää, kuinka usein tiedot päivitetään. Lisätietoja on artikkelissa [Raporttinäkymiä ja raportteja sisältävien sovellusten julkaiseminen Power BI:ssä](service-create-distribute-apps.md).
+Jos haluat virallinen sisältöä organisaation sisällä suuri yleisö, voit julkaista sovelluksen työtilasta.  Kun sisältö on valmis, valitse, mitkä koontinäytöt ja raportit haluat julkaista ja julkaise se *sovelluksen*. Voit luoda yhden sovelluksen kustakin työtilasta.
 
-## <a name="power-bi-apps-faq"></a>Power BI -sovellusten usein kysytyt kysymykset
+Sovellukset-luettelossa vasemmassa siirtymisruudussa näkyy asentamiasi sovelluksia. Työtoverisi voivat saada sovelluksesi käyttöönsä eri tavoin. 
+- He voivat etsiä ja asentaa sovelluksesi Microsoft AppSource
+- Voit lähettää heille suoran linkin. 
+- Voit asentaa sen automaattisesti työtovereittesi Power BI -tileille, jos Power BI -järjestelmänvalvojasi antaa sinulle luvan. 
+
+Käyttäjät näkevät päivitetyt sovelluksen sisältö automaattisesti, kun olet julkaissut päivitys työtilasta. Voit määrittää, kuinka usein tiedot päivitetään asettamalla päivitysaikataulu käyttää sovelluksen sisällön työtilan tietojoukot. Katso [Julkaise Power BI-sovelluksen uuden työtilakokemuksen](service-create-distribute-apps.md) lisätietoja.
+
+## <a name="power-bi-classic-apps-faq"></a>Power BI perinteinen sovellusten usein kysytyt kysymykset
 
 ### <a name="how-are-apps-different-from-organizational-content-packs"></a>Miten sovellukset eroavat organisaation sisältöpaketeista?
 Sovellukset ovat organisaation sisältöpakettien seuraava kehitysaste. Jos sinulla on jo organisaation sisältöpaketteja, ne toimivat edelleen rinnakkain sovellusten kanssa. Sovelluksilla ja sisältöpaketeilla on muutamia merkittäviä eroja. 

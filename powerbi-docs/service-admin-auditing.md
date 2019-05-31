@@ -1,5 +1,5 @@
 ---
-title: Valvonnan käyttö organisaatiossa
+title: Valvonnan organisaatiossa
 description: Lue, miten voit Power BI:n avulla käyttää valvontaa toteutettujen toimien seuraamista ja tutkimista varten. Voit käyttää tietoturva- ja yhteensopivuuskeskusta tai PowerShelliä.
 author: mgblythe
 manager: kfile
@@ -7,119 +7,119 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 11/16/2018
+ms.date: 04/23/2019
 ms.author: mblythe
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: 27776b251734d025e4dcde9f525f321008647455
-ms.sourcegitcommit: 20ae9e9ffab6328f575833be691073de2061a64d
-ms.translationtype: HT
+ms.openlocfilehash: 559ff45974274420e2545228720000359d5fe971
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58383481"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "64906859"
 ---
-# <a name="using-auditing-within-your-organization"></a>Valvonnan käyttö organisaatiossa
+# <a name="use-auditing-within-your-organization"></a>Valvonnan organisaatiossa
 
-Sen tietäminen, kuka tekee mitä toimia missäkin Power BI -vuokraajasi kohteissa, voi olla ratkaisevaa, kun autetaan organisaatiotasi toteuttamaan sille asetetut vaatimukset, kuten säädösten noudattaminen ja tietueiden hallinta. Voit Power BI -valvonnan avulla valvoa käyttäjien suorittamia toimia, kuten ”Näytä raportti” ja ”Näytä koontinäyttö”. Valvonnan avulla ei voi valvoa käyttöoikeuksia.
+Tietäminen, kuka tekee mitä toimia missäkin Power BI-vuokraajan voi olla ratkaisevaa organisaatiosi toteuttaa asetetut vaatimukset, kuten säädösten noudattaminen ja tietueiden hallintaa. Käytä Power BI-valvontatoimintoa valvoaksesi käyttäjien, kuten ”Näytä raportti” ja ”Näytä koontinäyttö” tehdä toimia. Valvonnan avulla ei voi valvoa käyttöoikeuksia.
 
 Voit käyttää valvonnassa Office 365:n tietoturva-ja yhteensopivuuskeskusta tai PowerShelliä. Valvonta käyttää Exchange Onlinen toimintoja, jotka valmistellaan automaattisesti tukemaan Power BI:tä.
 
-Voit suodattaa valvontatiedot päivämääräalueen, käyttäjän, koontinäytön, raportin, tietojoukon ja toimintatyypin mukaan. Voit myös ladata toimet CSV-tiedostoon (tiedosto, jonka arvot on erotettu luetteloerottimella) offline-tilassa analysointia varten.
+Voit voit suodattaa valvontatiedot päivämääräalueen, käyttäjän, koontinäytön, raportin, tietojoukon ja toimintotyyppi mukaan. Voit myös ladata toiminnot csv (pilkuin eroteltu arvo)-tiedostoon ja analysoida offline-tilassa.
 
 ## <a name="requirements"></a>Vaatimukset
 
 Seuraavat vaatimukset on täytettävä valvontalokien käyttämistä varten:
 
-* Sinun on oltava yleinen järjestelmänvalvoja tai sinulla on oltava Exchange Onlinessa rooli, joka sallii valvontalokien käytön tai tarkastelun, jotta pääset näkemään valvontalokin. Oletusarvoisesti kyseiset roolit määritetään Yhteensopivuuden hallinta- ja Organisaation hallinta -rooliryhmille Exchangen hallintakeskuksen **Käyttöoikeudet**-sivulla.
+* On oltava joko Yleinen järjestelmänvalvoja tai joille on määritetty valvontalokien tai View-Only-valvontalokien rooli Exchange Online käyttää valvontalokia. Oletusarvon mukaan yhteensopivuus-hallinnan ja organisaation hallinta rooliryhmät mukana nämä roolit määritetty **käyttöoikeudet** sivun Exchange-hallintakeskuksessa.
 
-    Jos haluat antaa valvontalokin käyttöoikeuden muulle kuin järjestelmänvalvojatilille, sinun on lisättävä kyseinen käyttäjä jompaankumpaan edellä mainituista rooliryhmistä. Vaihtoehtoisesti voit luoda Exchangen hallintakeskuksessa mukautetun rooliryhmän, jolle määrität valvontalokien käytön tai tarkastelun sallivan roolin ja johon sitten lisäät kyseisen tilin. Lisätietoja saat [Manage role groups in Exchange Online](/Exchange/permissions-exo/role-groups) (Rooliryhmien hallinta Exchange Onlinessa) -ohjeartikkelista.
+    Jotta muiden kuin järjestelmänvalvojien tilien valvontalokia, sinun on lisättävä käyttäjä yksi näiden Rooliryhmien jäsen. Jos haluat tehdä sen toisella tavalla, voit luoda mukautettu rooliryhmän Exchangen hallintakeskuksen, Määritä Valvontalokeihin tai View-Only-valvontalokit-rooli tähän ryhmään ja lisää sitten uuden rooliryhmän muulla kuin järjestelmänvalvojatilillä. Lisätietoja saat [Manage role groups in Exchange Online](/Exchange/permissions-exo/role-groups) (Rooliryhmien hallinta Exchange Onlinessa) -ohjeartikkelista.
 
     Jos et pääse Exchangen hallintakeskukseen Microsoft 365 -hallintakeskuksesta, siirry osoitteeseen https://outlook.office365.com/ecp ja kirjaudu sisään tunnistetiedoillasi.
 
-* Jos pääset valvontalokiin, mutta et ole yleinen järjestelmänvalvoja tai Power BI -palvelun järjestelmänvalvoja, et voi käyttää Power BI -hallintaportaalia. Tässä tapauksessa sinun on käytettävä suoraa linkkiä [Office 365:n tietoturva- ja yhteensopivuuskeskukseen](https://sip.protection.office.com/#/unifiedauditlog).
+* Jos pääset valvontalokiin, mutta eivät ole yleinen järjestelmänvalvoja tai Power BI-palvelun järjestelmänvalvoja, ei ole Power BI-hallintaportaalin käyttöoikeus. Tässä tapauksessa sinun on käytettävä suoraa linkkiä [Office 365:n tietoturva- ja yhteensopivuuskeskukseen](https://sip.protection.office.com/#/unifiedauditlog).
 
-## <a name="accessing-your-audit-logs"></a>Valvontalokien käyttö
+## <a name="access-your-audit-logs"></a>Käyttää valvontalokien
 
-Jos haluat käyttää lokeja, varmista ensin, että sisäänkirjaus on käytössä Power BI:ssä. Jos haluat lisätietoja, katso artikkelia [Valvontalokit](service-admin-portal.md#audit-logs) hallintaportaalin dokumentaatiossa. Valvonnan käyttöönoton ja valvontatietojen tarkastelumahdollisuuden välillä voi olla jopa 48 tunnin viive. Jos et näe tietoja välittömästi, tarkista valvontalokit myöhemmin. Jos haet oikeuksia hallintalokien tarkasteluun, samanlainen viive voi esiintyä, ennen kuin oikeudet on myönnetty.
+Käyttämään lokit Varmista ensin käyttöön Power BI kirjautumisessa. Jos haluat lisätietoja, katso artikkelia [Valvontalokit](service-admin-portal.md#audit-logs) hallintaportaalin dokumentaatiossa. Voi olla jopa 48 tunnin viive välillä olet ottanut valvonnan käyttöön ja kun tarkastelet valvontatiedot. Jos et näe tietoja välittömästi, tarkista valvontalokit myöhemmin. Jos haet oikeuksia hallintalokien tarkasteluun, samanlainen viive voi esiintyä, ennen kuin oikeudet on myönnetty.
 
-Power BI:n valvontalokit ovat saatavilla suoraan [Office 365:n tietoturva- ja yhteensopivuuskeskuksessa](https://sip.protection.office.com/#/unifiedauditlog). Täällä on myös linkki Power BI:n hallintaportaalista:
+Power BI:n valvontalokit ovat saatavilla suoraan [Office 365:n tietoturva- ja yhteensopivuuskeskuksessa](https://sip.protection.office.com/#/unifiedauditlog). On myös linkki Power BI-hallintaportaalissa:
 
-1. Valitse Power BI:ssä oikeasta yläkulmasta **hammasrataskuvake** ja valitse sitten **Hallintaportaali**.
+1. Valitse Power BI **hammaspyöräkuvake** oikeassa yläkulmassa ja valitse sitten **hallintaportaalissa**.
 
-   ![Hallintaportaali](media/service-admin-auditing/powerbi-admin.png)
+   ![Näyttökuva hammasrataskuvake avattava valikko, jossa järjestelmänvalvojan portaalin asetusta kutsutaan.](media/service-admin-auditing/powerbi-admin.png)
 
 1. Valitse **Valvontalokit**.
 
-1. Valitse **Siirry Microsoft 365 -hallintakeskukseen**.
+1. Valitse **Siirry O365-hallintakeskukseen**.
 
-   ![Siirry Microsoft 365 -hallintakeskukseen](media/service-admin-auditing/audit-log-o365-admin-center.png)
+   ![Näyttökuva hallintaportaalissa valvontalokien kirjaa asetus ja siirry Microsoft O365-hallintakeskukseen vaihtoehdot kutsutaan.](media/service-admin-auditing/audit-log-o365-admin-center.png)
 
 ## <a name="search-only-power-bi-activities"></a>Vain Power BI -toimien haku
 
 Voit rajata tulokset vain Power BI -toimiin seuraavasti. Katso toimien luettelo jäljempänä tässä artikkelissa olevasta kohdasta, jossa on [Power BI:n valvomien toimien luettelo](#activities-audited-by-power-bi).
 
-1. Valitse **Haku valvontalokista** -sivun **Haku**-kohdasta avattava **Toimet**-luettelo.
+1. Valitse **haku valvontalokista** sivun **haku**, valitse avattavasta- **toiminnot**.
 
 2. Valitse **Power BI -toimet**.
 
-   ![Haku valvontalokista](media/service-admin-auditing/audit-log-search-filter-by-powerbi.png)
+   ![Näyttökuva-haku valvontalokista Power BI-toimintojen kutsutaan.](media/service-admin-auditing/audit-log-search-filter-by-powerbi.png)
 
 3. Napsauta mistä tahansa valintaruudun ulkopuolelta sulkeaksesi sen.
 
-Hakusi suodatetaan nyt vain Power BI -toimiin.
+Haut, palauttaa vain Power BI-toimintoja.
 
 ## <a name="search-the-audit-logs-by-date"></a>Haku valvontalokeista päivämäärän mukaan
 
-Voit hakea lokeista päivämääräalueen mukaan käyttämällä **Aloituspäivämäärä**- ja **Lopetuspäivämäärä**-kenttiä. Oletusarvoisesti valittuna on seitsemän viime päivää. Päivämäärä ja aika näytetään muodossa koordinoitu yleisaika (UTC). Suurin päivämääräalue, jonka voit määrittää, on 90 päivää. 
+Voit hakea lokeista päivämääräalueen mukaan käyttämällä **Aloituspäivämäärä**- ja **Lopetuspäivämäärä**-kenttiä. Oletusarvon mukainen valinta on viimeisten seitsemän päivän aikana. Näytön esittää päivämäärä ja kellonaika UTC-aika (UTC)-muodossa. Suurin päivämääräalue, jonka voit määrittää, on 90 päivää. 
 
-Näkyviin tulee virhe, jos valittu päivämääräalue on yli 90 päivää. Jos käytät 90 päivän suurinta mahdollista päivämääräaluetta, valitse **aloituspäivämääräksi** tämänhetkinen aika. Muutoin näkyviin tulee virhe, jossa ilmoitetaan alkamispäivämäärän olevan päättymispäivämäärää aiemmin. Jos olet ottanut valvonnan käyttöön viimeisen 90 päivän aikana, suurin mahdollinen päivämääräalue ei voi alkaa ennen päivämäärää, jolloin valvonta otettiin käyttöön.
+Saat virheen, jos valittu päivämääräalue on yli 90 päivää. Jos käytät 90 päivän suurinta mahdollista päivämääräaluetta, valitse **aloituspäivämääräksi** tämänhetkinen aika. Muutoin näkyviin tulee virhe, jossa ilmoitetaan alkamispäivämäärän olevan päättymispäivämäärää aiemmin. Jos olet ottanut valvonnan käyttöön viimeisen 90 päivän aikana, suurin mahdollinen päivämääräalue ei voi alkaa ennen päivämäärää, jolloin valvonta otettiin käyttöön.
 
-![Hae päivämäärän mukaan](media/service-admin-auditing/search-audit-log-by-date.png)
+![Näyttökuva-haku valvontalokista kutsutaan alkamispäivän ja päättymispäivän jälkeen asetuksilla.](media/service-admin-auditing/search-audit-log-by-date.png)
 
 ## <a name="search-the-audit-logs-by-users"></a>Haku valvontalokeista käyttäjien mukaan
 
-Voit hakea valvontalokimerkinnöistä tiettyjen käyttäjien suorittamia toimia. Voit tehdä tämän syöttämällä yhden tai useamman käyttäjänimen **Käyttäjät**-kenttään. Käyttäjänimi näyttää sähköpostiosoitteelta; se on tili, jolla käyttäjät kirjautuvat sisään Power BI:hin. Jätä tämä ruutu tyhjäksi, jos haluat tulokseksi merkintöjä organisaatiosi kaikkien käyttäjien (ja palvelutilien) osalta.
+Voit hakea valvontalokimerkinnöistä toimintojen tehdä tietyille käyttäjille. Anna vähintään yksi käyttäjänimet **käyttäjät** kenttä. Käyttäjänimi Näyttää sähköpostiosoitteelta. Se on tili, jolla käyttäjät kirjautuvat sisään Power BI-kanssa. Jätä tämä ruutu tyhjäksi, jos haluat tulokseksi merkintöjä organisaatiosi kaikkien käyttäjien (ja palvelutilien) osalta.
 
 ![Hae käyttäjien mukaan](media/service-admin-auditing/search-audit-log-by-user.png)
 
 ## <a name="view-search-results"></a>Näytä hakutulokset
 
-Kun olet valinnut **Hae**, hakutulokset ladataan, ja hetken kuluttua ne näytetään **Tulokset**-kohdassa. Kun haku on valmis, löytyneiden tulosten määrä tulee näkyviin. Näyttöön tulee enintään 1 000 tapahtumaa; jos hakuehtojen mukaisia tapahtumia on yli 1 000, näytetään uusimmat 1 000 tapahtumaa.
+Kun olet valinnut **haku**, hakutulokset ladataan. Hetken kuluttua ne näkyvät **tulokset**. Kun haku on valmis, näytössä näkyy löytyneiden tulosten määrä. **Haku valvontalokista** näyttää enintään 1 000 tapahtumaa. Jos hakuehtojen mukaisia tapahtumia yli 1 000, sovellus näyttää uusimmat 1 000 tapahtumaa.
 
 ### <a name="view-the-main-results"></a>Näytä tärkeimmät tulokset
 
-**Tulokset**-alue sisältää seuraavat tiedot kullekin haun palauttamalle tapahtumalle. Voit lajitella tulokset valitsemalla sarakkeen otsikon **Tulokset**-kohdasta.
+**Tulokset** alue on seuraavat tiedot jokaisesta haun palauttamasta tapahtumasta. Voit lajitella tulokset valitsemalla sarakkeen otsikon **Tulokset**-kohdasta.
 
 | **Sarake** | **Määritelmä** |
 | --- | --- |
 | Päivämäärä |Päivämäärä ja aika (UTC-muodossa), jolloin tapahtuma ilmeni. |
-| IP-osoite |Sen laitteen IP-osoite, jota käytettiin toimen kirjaamisen aikana. IP-osoite näkyy joko IPv4- tai IPv6-osoitemuodossa. |
+| IP-osoite |Laitetta, jota käytetään kirjattu toimintaa IP-osoite. Sovellus näyttää IP-osoitteen joko IPv4- tai IPv6-osoitemuodossa. |
 | Käyttäjä |Käyttäjä (tai palvelutili), joka suoritti tapahtuman aiheuttaneen toimen. |
 | Toimi |Käyttäjän suorittama toimi. Tämä arvo vastaa toimia, jotka olet valinnut avattavassa **Toimet**-luettelossa. Exchange-järjestelmänvalvojan valvontalokin tapahtuman osalta tämän sarakkeen arvo on Exchange cmdlet-komento. |
-| Kohde |Objekti, joka luotiin tai jota muokattiin vastaavan toimen seurauksena. Esimerkiksi tiedosto, jota tarkasteltiin tai muokattiin, tai käyttäjätili, jota päivitettiin. Kaikilla toimilla ei ole arvoa tässä sarakkeessa. |
+| Kohde |Objekti luodaan tai jota muutettiin vastaavan toiminnon vuoksi. Esimerkiksi tarkasteltu tai muokatut-tiedosto tai päivitetty käyttäjätili. Kaikilla toimilla ei ole arvoa tässä sarakkeessa. |
 | Tieto |Lisätieto toimesta. Tässäkään kaikilla toimilla ei ole arvoa. |
 
 ### <a name="view-the-details-for-an-event"></a>Tapahtuman tietojen tarkasteleminen
 
-Voit nähdä tapahtumasta lisätietoja napsauttamalla tapahtuman tietuetta hakutulosluettelosta. Näkyviin tulee **Tiedot**-sivu, johon sisältyvät yksityiskohtaiset ominaisuudet tapahtuman tietueesta. Näytettävät ominaisuudet riippuvat siitä, missä Office 365 -palvelussa tapahtuma ilmenee. 
+Jos haluat tarkastella lisätietoja tapahtuma, valitse tapahtuman hakutulosten luettelossa. A **tiedot** sivu tulee näkyviin, jolla on yksityiskohtaiset ominaisuudet tapahtuman tietueesta. **Tiedot** sivu näyttää ominaisuudet mukaan Office 365-palvelussa, jossa tapahtuma ilmenee.
 
 Saat näkyviin nämä tiedot valitsemalla **Lisätiedot**. Kaikkien Power BI -syötteiden RecordType-ominaisuuden arvo on 20. Katso lisätietoja muista ominaisuuksista artikkelista [Yksityiskohtaiset ominaisuudet valvontalokissa](/office365/securitycompliance/detailed-properties-in-the-office-365-audit-log/).
 
-   ![Valvontatiedot](media/service-admin-auditing/audit-details.png)
+   ![Näyttökuva valvonnan tiedot keskustelu, jossa lisätietojen vaihtoehto kutsutaan.](media/service-admin-auditing/audit-details.png)
 
 ## <a name="export-search-results"></a>Hakutulosten vieminen
 
-Voit viedä Power BI -valvontalokin CSV-tiedostoon seuraavasti.
+Jos haluat viedä Power BI-valvontalokin CSV-tiedostoon, toimi seuraavasti.
 
 1. Valitse **Vie tulokset**.
 
 1. Valitse joko **Tallenna ladatut tulokset** tai **Lataa kaikki tulokset**.
 
-    ![Vie tulokset](media/service-admin-auditing/export-auditing-results.png)
+    ![Näyttökuva vienti-tulokset vaihtoehto.](media/service-admin-auditing/export-auditing-results.png)
 
 ## <a name="use-powershell-to-search-audit-logs"></a>Valvontalokien hakeminen PowerShellin avulla
 
-Voit myös käyttää valvontalokeja PowerShellin avulla sisäänkirjautumisesi perusteella. Seuraavassa esimerkissä näytetään, miten voit muodostaa yhteyden Exchange Online PowerShelliin ja hakea sitten Power BI -valvontalokisyötteet [Search-UnifiedAuditLog](/powershell/module/exchange/policy-and-compliance-audit/search-unifiedauditlog?view=exchange-ps/)-komennolla. Jotta voit suorittaa komentosarjan, sinulla on oltava [Vaatimukset](#requirements)-osiossa kuvatut oikeudet.
+Voit myös käyttää valvontalokeja PowerShellin avulla sisäänkirjautumisesi perusteella. Seuraavassa esimerkissä näytetään, miten voit muodostaa yhteyden Exchange Online PowerShelliin ja hakea sitten Power BI -valvontalokisyötteet [Search-UnifiedAuditLog](/powershell/module/exchange/policy-and-compliance-audit/search-unifiedauditlog?view=exchange-ps/)-komennolla. Suorita komentosarja, järjestelmänvalvojan on määritettävä voit tarvittavia käyttöoikeuksia kuvatulla tavalla [vaatimukset](#requirements) osiossa.
 
 ```powershell
 Set-ExecutionPolicy RemoteSigned
@@ -136,7 +136,7 @@ Lisätietoja Exchange Onlineen yhdistämisestä on kohdassa [Yhdistäminen kohte
 
 ## <a name="activities-audited-by-power-bi"></a>Power BI:n valvomat toimet
 
-Power BI valvoo seuraavia toimia.
+Seuraavat toiminnot ovat valvoo Power BI:
 
 | Kutsumanimi                                     | Toiminnon nimi                              | Huomautukset                                  |
 |---------------------------------------------------|---------------------------------------------|------------------------------------------|

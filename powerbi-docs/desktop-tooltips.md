@@ -11,10 +11,10 @@ ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Create reports
 ms.openlocfilehash: c074d6aa4fc7bdc530aa52f125f7f3d898b402c0
-ms.sourcegitcommit: 10a87c016f497dbeba32f94ed1f3688a70816fea
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/09/2019
+ms.lasthandoff: 05/29/2019
 ms.locfileid: "65514512"
 ---
 # <a name="create-tooltips-based-on-report-pages-in-power-bi-desktop"></a>Power BI Desktopissa luotuihin raporttisivuihin perustuvien työkaluvihjeiden luominen
@@ -27,7 +27,7 @@ Voit luoda niin monta työkaluvihjesivua kuin haluat. Jokainen työkaluvihjesivu
 Raporttityökaluvihjeet avaavat monia hyödyllisiä mahdollisuuksia. Tutustutaan seuraavaksi siihen, miten voit luoda työkaluvihjeitä ja mitä sinun on tehtävä niiden määrittämiseksi.
 
 ## <a name="create-a-report-tooltip-page"></a>Luo raportin työkaluvihjesivu
-Luo ensin uusi sivu valitsemalla **+**-painike, joka on **Power BI Desktop** -raporttipohjan alaosassa sivun välilehtialueella. Painike on raportin viimeisen sivun vieressä. 
+Luo ensin uusi sivu valitsemalla **+** -painike, joka on **Power BI Desktop** -raporttipohjan alaosassa sivun välilehtialueella. Painike on raportin viimeisen sivun vieressä. 
 
 ![Luo työkaluvihjeelle uusi raporttisivu](media/desktop-tooltips/desktop-tooltips_02.png)
 

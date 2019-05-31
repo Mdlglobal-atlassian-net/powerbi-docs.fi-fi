@@ -1,20 +1,20 @@
 ---
 title: Sivutetun raportin julkaiseminen Power BI -palveluun (esikatselu)
 description: Tässä opetusohjelmassa opit julkaisemaan sivutetun raportin Power BI -palveluun lataamalla sen paikallisesta tietokoneesta.
-author: markingmyname
-ms.author: maghan
+author: maggiesMSFT
+ms.author: maggies
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 11/05/2018
-ms.openlocfilehash: 58fc7a6b8ebc5519c1c4bb1835758ca94ba225d2
-ms.sourcegitcommit: 8fda7843a9f0e8193ced4a7a0e5c2dc5386059a6
-ms.translationtype: HT
+ms.openlocfilehash: 93b712d385b78ea806e57769da72bdf41fbaefc3
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58174541"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61424004"
 ---
 # <a name="publish-a-paginated-report-to-the-power-bi-service-preview"></a>Sivutetun raportin julkaiseminen Power BI -palveluun (esikatselu)
 
@@ -26,7 +26,7 @@ Jos raportin tietolähde on paikallinen, sinun on [luotava yhdyskäytävä](#cre
 
 Jos työtilassa ei ole vinoneliökuvaketta ![Power BI Premium -kapasiteetin vinoneliökuvaketta](media/paginated-reports-save-to-power-bi-service/premium-diamond.png) nimen vieressä, sinun on lisättävä työtila Premium-kapasiteettiin. 
 
-1. Valitse **Työtilat**, valitse työtilan nimen vierestä kolme pistettä (**...**) , ja valitse sitten **Muokkaa työtilaa**.
+1. Valitse **Työtilat**, valitse työtilan nimen vierestä kolme pistettä ( **...** ) , ja valitse sitten **Muokkaa työtilaa**.
 
     ![Valitse Muokkaa työtilaa](media/paginated-reports-save-to-power-bi-service/power-bi-paginated-edit-workspace.png)
 

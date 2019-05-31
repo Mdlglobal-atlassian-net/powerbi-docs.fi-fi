@@ -11,10 +11,10 @@ ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Learn more
 ms.openlocfilehash: f945c46d96bea4e0326c99f7fcb881f495ba560f
-ms.sourcegitcommit: 10a87c016f497dbeba32f94ed1f3688a70816fea
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/09/2019
+ms.lasthandoff: 05/29/2019
 ms.locfileid: "65513685"
 ---
 # <a name="tutorial-facebook-analytics-using-power-bi-desktop"></a>Opetusohjelma: Facebook-analytiikka Power BI Desktopin avulla
@@ -23,9 +23,9 @@ Tässä opetusohjelmassa opit tuomaan tietoja Facebookista ja käyttämään nii
 
 ## <a name="connect-to-a-facebook-page"></a>Yhteyden muodostaminen Facebook-sivulle
 
-Tässä opetusohjelmassa käytetään tietoja [Microsoft Power BI:n Facebook-sivulta](https://www.facebook.com/microsoftbi) (*https://www.facebook.com/microsoftbi*). Et tarvitse erityisiä tunnistetietoja yhteyden muodostamiseen ja tietojen tuomiseen tältä sivulta henkilökohtaista Facebook-tiliä lukuun ottamatta.
+Tässä opetusohjelmassa käytetään tietoja [Microsoft Power BI:n Facebook-sivulta](https://www.facebook.com/microsoftbi) ( *https://www.facebook.com/microsoftbi* ). Et tarvitse erityisiä tunnistetietoja yhteyden muodostamiseen ja tietojen tuomiseen tältä sivulta henkilökohtaista Facebook-tiliä lukuun ottamatta.
 
-1. Avaa Power BI Desktop ja valitse **Nouda tiedot** **Aloitus**-valintaikkunasta tai valitse valintanauhan **Aloitus**-välilehdeltä **Nouda tiedot** ja sitten **Lisää...**.
+1. Avaa Power BI Desktop ja valitse **Nouda tiedot** **Aloitus**-valintaikkunasta tai valitse valintanauhan **Aloitus**-välilehdeltä **Nouda tiedot** ja sitten **Lisää...** .
    
 2. Valitse **Nouda tiedot** -valintaikkunan **Online-palvelut**-ryhmästä **Facebook** ja valitse sitten **Yhdistä**.
    
@@ -147,7 +147,7 @@ Nyt kun olet tuonut tietoja Facebook-sivulta, voit nopeasti ja helposti saada me
    
    ![Lajittele kommenttien määrän mukaan](media/desktop-tutorial-facebook-analytics/barchart2.png)
    
-5. Huomaa, että useimmat kommentit liittyivät **tyhjiin** viesteihin (nämä viestit ovat voineet olla tarinoita, linkkejä, videoita tai muuta kuin tekstisisältöä). Jos haluat suodattaa tyhjän rivin pois, valitse **viesti (kaikki)** Visualisoinnit-ruudun alareunan **Suodattimet**-kohdasta, valitse **Valitse kaikki** ja sitten  **Tyhjä**, jolloin sen valinta poistuu. Suodattimet-kohdan merkinnäksi muuttuu **viesti ei ole (tyhjä)**, ja tyhjä rivi katoaa kaavion visualisoinnista. 
+5. Huomaa, että useimmat kommentit liittyivät **tyhjiin** viesteihin (nämä viestit ovat voineet olla tarinoita, linkkejä, videoita tai muuta kuin tekstisisältöä). Jos haluat suodattaa tyhjän rivin pois, valitse **viesti (kaikki)** Visualisoinnit-ruudun alareunan **Suodattimet**-kohdasta, valitse **Valitse kaikki** ja sitten  **Tyhjä**, jolloin sen valinta poistuu. Suodattimet-kohdan merkinnäksi muuttuu **viesti ei ole (tyhjä)** , ja tyhjä rivi katoaa kaavion visualisoinnista. 
    
    ![Suodata tyhjä pois](media/desktop-tutorial-facebook-analytics/barchart3.png)
    
@@ -220,7 +220,7 @@ Päätät antaa kaaviolle paremmin kuvaavan ja kiinnostavan otsikon.
 1. Kun kaavio on valittuna, valitse **muotoilukuvake** ja laajenna **Otsikko** valitsemalla alanuolipainike.
 2. Muuta **Otsikkoteksti**-kohtaan **Julkaisukohtaiset kommentit**. 
 3. Valitse **Fontin väri** -kohdan alanuolipainike ja valitse sitten vihreä väri vastaamaan visualisoinnin vihreitä palkkeja.
-4. Suurenna **Tekstin koko** -arvoksi **10** ja muuta **Fonttiperheeksi** **Segoe (lihavoitu)**.
+4. Suurenna **Tekstin koko** -arvoksi **10** ja muuta **Fonttiperheeksi** **Segoe (lihavoitu)** .
 
 ![Muotoile kaavion otsikko](media/desktop-tutorial-facebook-analytics/formatting1.png)
 

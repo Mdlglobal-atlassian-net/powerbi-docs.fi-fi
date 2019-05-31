@@ -3,21 +3,21 @@ title: Lisäävää päivitys Power BI Premiumissa
 description: Opi ottamaan käyttöön erittäin suuria tietojoukkoja Power BI Premium -palvelussa.
 author: christianwade
 manager: kfile
-ms.reviewer: ''
+ms.reviewer: kayu
 ms.service: powerbi
 ms.component: powerbi-admin
 ms.topic: conceptual
-ms.date: 01/24/2019
+ms.date: 05/10/2019
 ms.author: chwade
 LocalizationGroup: Premium
-ms.openlocfilehash: caa350274b7af62078098d9ef7730046f6e14627
-ms.sourcegitcommit: d010b10bc14097a1948daeffbc91b864bd91f7c8
-ms.translationtype: HT
+ms.openlocfilehash: b338044433d1d87f07ab38d64c15974a1cfaa173
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56225979"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65536133"
 ---
-# <a name="incremental-refresh-in-power-bi-premium"></a>Lisäävä päivitys Power BI Premiumissa
+# <a name="incremental-refresh-in-power-bi-premium"></a>Lisäävää päivitys Power BI Premiumissa
 
 Lisäävä päivitys mahdollistaa erittäin suurien tietojoukkojen käytön Power BI Premium -palvelussa tarjoamalla seuraavat edut:
 
@@ -160,3 +160,7 @@ let
 in
     #"Filtered Rows"
 ```
+
+## <a name="limitations"></a>Rajoitukset
+
+Tällä hetkellä- [yhdistelmämallit](desktop-composite-models.md), lisäävää päivitystä tuetaan SQL-Oracle- ja Teradata-tietolähteisiin vain.

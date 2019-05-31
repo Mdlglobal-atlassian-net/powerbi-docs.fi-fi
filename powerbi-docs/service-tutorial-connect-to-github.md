@@ -1,5 +1,5 @@
 ---
-title: 'Opetusohjelma: Yhteyden muodostaminen GitHub-otokseen Power BI:llä'
+title: 'Opetusohjelma: Power BI-ja GitHub-säilön yhdistäminen'
 description: Tässä opetusohjelmassa yhdistät Power BI:n GitHub-palvelun oikeisiin tietoihin, jolloin Power BI luo automaattisesti koontinäyttöjä ja raportteja.
 author: maggiesMSFT
 manager: kfile
@@ -8,18 +8,18 @@ ms.service: powerbi
 ms.subservice: powerbi-service
 ms.custom: connect-to-services
 ms.topic: tutorial
-ms.date: 05/17/2018
+ms.date: 04/19/2019
 ms.author: maggies
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 8f44356f79b8a77ef06fe464671dbbaaaa4187e9
-ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
-ms.translationtype: HT
+ms.openlocfilehash: 3aeb1fc16ae200399125a2366a8993d45aad34c4
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56215570"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "64578611"
 ---
-# <a name="tutorial-connect-to-a-github-sample-with-power-bi"></a>Opetusohjelma: Yhteyden muodostaminen GitHub-otokseen Power BI:llä
-Tässä opetusohjelmassa yhdistät Power BI:n GitHub-palvelun oikeisiin tietoihin, jolloin Power BI luo automaattisesti koontinäyttöjä ja raportteja. Muodostat yhteyden Power BI:n sisällön julkiseen säilöön (eli *säilöön*) ja näet seuraavia tietoja: kuinka moni henkilö osallistuu Power BI:n julkiseen sisältöön? Kuka osallistuu eniten? Minä viikonpäivänä on eniten osallistumisia? Lisäksi näet vastauksia muihin kysymyksiin. 
+# <a name="tutorial-connect-to-a-github-repo-with-power-bi"></a>Opetusohjelma: Power BI-ja GitHub-säilön yhdistäminen
+Tässä opetusohjelmassa yhdistät Power BI:n GitHub-palvelun oikeisiin tietoihin, jolloin Power BI luo automaattisesti koontinäyttöjä ja raportteja. Voit muodostaa yhteyden Power BI-sisällön julkiseen säilöön (tunnetaan myös nimellä *säilön*) ja vastauksia kysymyksiin, kuten: kuinka moni henkilö osallistuu Power BI:n julkiseen sisältöön? Kuka osallistuu eniten? Minä viikonpäivänä on eniten osallistumisia? Ja muihin kysymyksiin. 
 
 ![GitHub-raportti Power BI:ssä](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-punch-card.png)
 
@@ -40,76 +40,90 @@ Jos et ole rekisteröitynyt Power BI:hin, [rekisteröidy ilmaiseen kokeiluversio
 
 Tarvitset tämän opetusohjelman suorittamiseen GitHub-tilin, jos sinulla ei ole vielä sellaista. 
 
-- Rekisteröi [GitHub-tili](https://docs.microsoft.com/contribute/get-started-setup-github)
+- Rekisteröi [GitHub-tilin](https://docs.microsoft.com/contribute/get-started-setup-github).
 
 
 ## <a name="how-to-connect"></a>Yhteyden muodostaminen
-1. Kirjaudu sisään Power BI -palveluun (http://powerbi.com). 
+1. Kirjaudu sisään Power BI -palveluun (https://app.powerbi.com). 
 2. Valitse vasemmassa siirtymisruudussa **Sovellukset** ja **Hanki sovelluksia**.
    
    ![Power BI Hanki sovelluksia](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial.png) 
 
-3. Valitse **Sovellukset**, kirjoita **github** hakuruutuun > **Hanki se nyt**.
+3. Valitse **sovelluksia**, tyyppi **GitHub** hakuruutuun > **hanki se nyt**.
    
-   ![Power BI Hanki GitHub](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-get-it-now.png) 
+   ![Power BI Hanki GitHub](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-app-source.png) 
 
-4. Kirjoita säilön nimi ja omistaja. Tämän säilön URL-osoite on https://github.com/MicrosoftDocs/powerbi-docs, joten **Säilön omistaja** on **MicrosoftDocs** ja **Säilö** on **powerbi-docs**. 
+4. - **Asentaa Power BI-sovelluksesta?** Valitse **asentaa**.
+5. - **Uusi sovellus on valmis**, valitse **Siirry sovellukseen**.
+6. - **Uuden sovelluksen käytön aloittaminen**, valitse **yhdistää tiedot**.
+
+    ![Aloita uuden sovelluksesi käyttö](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-connect-data.png)
+
+7. Kirjoita säilön nimi ja omistaja. Tämän säilön URL-osoite on https://github.com/MicrosoftDocs/powerbi-docs, joten **Säilön omistaja** on **MicrosoftDocs** ja **Säilö** on **powerbi-docs**. 
    
-    ![Power BI GitHub-säilön nimi](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-repo-name.png)
+    ![Power BI GitHub-säilön nimi](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-connect.png)
 
 5. Anna luomasi GitHub-tunnistetiedot. Power BI saattaa ohittaa tämän vaiheen, jos olet jo kirjautuneena GitHubiin selaimessa. 
 
-6. Valitse **todennusmenetelmäksi** **oAuth2** \> **Kirjaudu sisään**.
+6. - **Todennusmenetelmä**, pidä **oAuth2** valitun \> **Kirjaudu sisään**.
 
-7. Noudata GitHubin todennusnäyttöjä. Anna Power BI:lle GitHub-tietojen käyttöoikeus.
+7. Noudata Githubin todennusnäyttöjä. Anna Power BI:lle GitHub-tietojen käyttöoikeus.
    
    Nyt Power BI voi muodostaa yhteyden GitHubiin ja tietoihin.  Tiedot päivitetään kerran päivässä.
 
-8. Kun Power BI on tuonut tiedot, näkyviin tulee uusi GitHub-ruutu. 
+8. Kun Power BI on tuonut tiedot, näkyviin tulee uusi GitHub-työtila sisällön. 
+9. Valitse vasemmassa siirtymispalkissa työtilan nimen vieressä olevaa nuolta. Näet työtila sisältää koontinäytön ja raportin. 
+
+    ![Sovelluksen vasemmasta siirtymisruudusta](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-left-nav-expanded.png)
+
+10. Valitse kolme pistettä (...) koontinäytön nimen vieressä > **nimeä** > tyyppi **GitHub-koontinäyttö**.
  
-   ![Power BI GitHub-ruutu](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-tile.png) 
+    ![Power BI GitHub-ruutu](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-left-nav.png) 
 
 8. Pienennä vasen siirtymisruutu valitsemalla yleinen siirtymiskuvake, jotta saat enemmän tilaa.
 
     ![Yleinen siirtymiskuvake](media/service-tutorial-connect-to-github/power-bi-global-navigation-icon.png)
 
-10. Valitse GitHub-ruutu vaiheesta 8. 
+10. Valitse GitHub-koontinäyttö.
     
-    GitHub-koontinäyttö avautuu. Nämä ovat reaaliaikaisia tietoja, joten näkemäsi arvot voivat olla erilaisia.
+    GitHub-koontinäyttö sisältää reaaliaikaisia tietoja, joten näkemäsi arvot voivat olla erilaisia.
 
-    ![GitHub-koontinäyttö Power BI:ssä](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-dashboard.png)
+    ![GitHub-koontinäyttö Power BI:ssä](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-new-dashboard.png)
 
     
 
 ## <a name="ask-a-question"></a>Esitä kysymys
 
-11. Siirrä kohdistin **Esitä tietojasi koskeva kysymys** -kohtaan ja valitse sitten **noutopyynnöt**. 
+1. Siirrä kohdistin **esitä tietojasi koskeva kysymys**. Power BI tarjoaa **kysymyksiä alkuun pääsemiseksi**. 
 
-    ![Power BI Esitä tietojasi koskeva kysymys](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-ask-question.png)
-
-12. Kirjoita **kuukauden mukaan**.
+1. Valitse **kuinka moni onko**.
  
-    ![Noutopyynnöt kuukauden mukaan](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-ask-question-by-month.png)
+    ![Kuinka monta käyttäjää onko](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-qna-how-many-users.png)
 
-     Power BI luo palkkikaavion, joka näyttää noutopyyntöjen määrän kuukautta kohti.
+13. Väliltä **montako** ja **käyttäjät ovat olemassa**, tyyppi **pull-pyyntöjen**. 
 
-13. Valitse **Poistu Q&A:sta**.
+     Power BI Luo palkkikaavion, joka näyttää noutopyyntöjen henkilöä kohti määrän.
+
+    ![Kuinka monta käyttäjää kohti noutopyynnöt onko](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-qna-how-many-prs.png)
+
+
+13. Valitse Kiinnitä se koontinäyttöön, sitten PIN-koodi **poistu Q & A: n**.
 
 ## <a name="view-the-github-report"></a>GitHub-raportin tarkasteleminen 
 
-1. Avaa raportti valitsemalla GitHub-koontinäytössä yhdistetty sarake- ja rivikaavio **Noutopyynnöt kuukauden mukaan**.
+1. Valitse GitHub-koontinäyttö pylväskaavio **noutopyynnöt kuukauden mukaan** Avaa raportti.
 
-    ![Noutopyynnöt kuukauden mukaan -yhdistelmäkaavio](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-pull-requests-combo-chart.png)
+    ![Noutopyynnöt kuukauden pylväskaavio mukaan](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-column-chart.png)
 
-2. Valitse käyttäjänimi **Noutopyynnöt yhteensä käyttäjän mukaan** -kaaviosta ja katso tämän esimerkin mukaisesti, että keskimääräinen tuntimäärä on suurempi kuin keskimääräinen kokonaismäärä maaliskuussa.
+2. Valitse käyttäjänimi **noutopyynnöt yhteensä käyttäjän mukaan** kaavion. Tässä esimerkissä näemme tunnit useimmat oli helmikuuta.
 
-    ![Power BI GitHub-raportin korostaminen](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-report-highlight.png)
+    ![Power BI GitHub-raportin korostaminen](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-cross-filter-total-prs.png)
 
 3. Näytä raportin seuraava sivu valitsemalla **Pistekortti**-välilehti. 
  
     ![Power BI GitHub-raportin Pistekortti](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-tues-3pm.png)
 
-    Ilmeisesti tiistai kello 15 on yleisin viikonpäivä ja aika *vahvistuksille*, kun käyttäjät kuittaavat työnsä.
+    Ilmeisesti tiistai kello 15 on eniten yleisin ja aika viikon päivä *vahvistuksia*, kun käyttäjät kuittaavat työnsä.
 
 ## <a name="clean-up-resources"></a>Resurssien tyhjentäminen
 

@@ -8,15 +8,15 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/06/2018
+ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 5c4bf7c1e1abb8fd87b97c48bfa94b57d5481b00
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.openlocfilehash: 16114793b190996b3ef9e800e562dd0caf62089c
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54295853"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65514823"
 ---
 # <a name="frequently-asked-questions-for-power-bi-for-germany-cloud-customers"></a>Usein kysyttyjä kysymyksiä Power BI:n pilvipalvelun saksalaisille asiakkaille
 **Power BI -palvelusta** on saatavilla Euroopan unionin ja Euroopan Vapaakauppajärjestön sopimuksen (EU/EFTA) asiakkaille versio, johon viitataan usein nimellä Microsoft Cloud Deutschland (MCD). Tässä artikkelissa kuvattu **Power BI -palvelun** versio on suunniteltu erityisesti EU/EFTA -asiakkaille ja on erillinen ja erilainen kuin **Power BI -palvelun** kaupallinen versio, joka on tarjolla valtionhallinnon asiakkaille.
@@ -32,10 +32,10 @@ Seuraavat kysymykset ja vastaukset tarjoavat tärkeää tietoa Microsoft Cloud D
    EU/EFTA-asiakkaille tarkoitettu Power BI -palvelu, jota kutsutaan myös nimellä Microsoft Cloud Deutschland (MCD) on EU/EFTA -yhteensopiva Saksan tietokeskuksien tarjoama Power BI -pilvipalvelu. EU/EFTA Power BI -pilvipalvelussa kaikkia asiakastietoja säilytetään Saksassa, T-Systemin toimiessa riippumattomana saksalaisena tietojen edunvalvojana, ja joiden fyysistä ja loogista käyttöä hallitaan Saksan lain mukaan. EU/EFTA Power BI -pilvipalvelu vaatii erottuvan ja erillisen tilin kaupallisessa versiossa käytetystä Power BI -palvelutilistä. Lue lisää Microsoft Cloud Deutschlandista [täältä](https://www.microsoft.com/trustcenter/cloudservices/nationalcloud).
 2. **Mistä voin löytää Power BI Saksan pilvipalvelun hinnoittelu- ja rekisteröintitiedot?**
    
-   [Power BI Saksan pilvipalvelun kotisivuilta](https://powerbi.microsoft.com/power-bi-germany/) löytyy paljon tietoa, mm. hinnoittelusta. Sivuilta löytyy myös linkki, jonka kautta voi rekisteröityä **Power BI Pro -palvelun** käyttäjäksi 30 päivän kokeiluversioon, joka sisältää 25 käyttöoikeutta. Osana kokeiluversioon rekisteröitymistä, saat mahdollisuuden ostaa tai lisätä käyttöoikeuksia tarpeen vaatiessa. Tarjoamme myös Enterprise Agreement (EA) -sopimuksen ja voittoa tavoittelemattoman hinnoittelun. Ota yhteyttä Microsoftin asiakasedustajaan saadaksesi lisätietoja.
+   [Power BI Saksan pilvipalvelun kotisivuilta](https://powerbi.microsoft.com/power-bi-germany/) löytyy paljon tietoa, mm. hinnoittelusta. Kyseisellä sivulla sivuilta löytyy myös linkki rekisteröityä **Power BI Pro-palvelun** 30 päivän kokeiluversion sisältää 25 käyttöoikeutta. Osana kokeiluversioon Rekisteröidy sinulla mahdollisuuden ostaa tai lisätä käyttöoikeuksia tarpeen mukaan. Tarjoamme myös Enterprise Agreement (EA) -sopimuksen ja voittoa tavoittelemattoman hinnoittelun. Ota yhteyttä Microsoftin asiakasedustajaan lisätietoja.
 3. **Minulla on Saksan pilvipalvelun -vuokraaja osana Azure Saksan ja/tai Office 365 Saksan tilausta. Voinko käyttää olemassa olevaa vuokraajaa rekisteröityessäni Power Bi Saksaan?**
    
-   Kyllä. Osana rekisteröitymisprosessia, voit vaihtoehtoisesti kirjautua sisään olemassa olevalla Saksan pilvipalvelun vuokraajan järjestelmänvalvojatilillä, ja lisätä Power BI Pro -palvelun käyttöoikeuden olemassa olevaan Saksan pilvipalvelun vuokraajan. Huomioi, että Saksan pilvipalvelun vuokraajat ja käyttäjätilit eroavat Power BI -palvelu Saksan pilvipalvelun vastaavista.
+   Kyllä. Osana rekisteröitymisprosessia, voit vaihtoehtoisesti kirjautua sisään olemassa olevalla Saksan pilvipalvelun vuokraajan järjestelmänvalvojatilillä, ja lisätä Power BI Pro -palvelun käyttöoikeuden olemassa olevaan Saksan pilvipalvelun vuokraajan. Huomaa, että Saksan Pilvipalvelun vuokraajat ja käyttäjätilit eroavat Power BI-palvelu Saksan Pilvipalvelun.
 4. **Onko olemassa maksutonta Power Bi Saksan pilvipalvelua?**
    
    Ei. Emme tarjoa ilmaisia käyttöoikeusversioita Power BI Saksan pilvipalvelusta. Voit kuitenkin rekisteröityä [ilmaiseksi Power Bi:n julkiseen pilvipalveluun](https://powerbi.microsoft.com/get-started/) jos yrityksesi tarpeet on mahdollista tyydyttää ilmaisen Power BI -palvelun avulla.
@@ -56,7 +56,7 @@ Seuraavat kysymykset ja vastaukset tarjoavat tärkeää tietoa Microsoft Cloud D
    * Power BI Embedded (erillinen käytön mukaan laskutettava ISV -käyttöoikeus tulee tulevaisuudessa saataville [Microsoft Azure Saksan](https://azure.microsoft.com/overview/clouds/germany/)kautta)
 7. **Mistä löydän Power BI Saksan pilvipalvelun tarkat kokoonpanotiedot, jotta voin integroida ja käyttää niitä omissa sovelluksissani?**
    
-   Olemme päivittäneet [SaaS Embedding -kehittäjämallit](https://github.com/Microsoft/PowerBI-Developer-Samples) Saksan ja muiden Power BI -pilvipalveluiden tarkat kokoonpanotiedot. Tarkastele mallien **Pilvipalvelumääritykset**-kansioita löytääksesi pilvipalveluita koskevat määritysten loppupisteet. Seuraavassa taulukossa on lueteltu useita määritysten loppupisteitä Power BI Saksan pilvipalvelulle (sekä ristiviittaukseksi julkiselle pilvipalvelulle).
+   Olemme päivittäneet [SaaS Embedding -kehittäjämallit](https://github.com/Microsoft/PowerBI-Developer-Samples) Saksan ja muiden Power BI -pilvipalveluiden tarkat kokoonpanotiedot. Katso **Pilvipalvelumääritykset** löytääksesi pilvikohtaiseen määritysten loppupisteet. Seuraavassa taulukossa on lueteltu useita määritysten loppupisteitä Power BI Saksan pilvipalvelulle (sekä ristiviittaukseksi julkiselle pilvipalvelulle).
 
 | **Loppupisteen nimi ja/tai käyttö** | **Power BI -palvelun Saksan pilvipalvelun URL-osoite** | **Julkinen pilvipalvelun vastaava URL-osoite (ristiviittaukseksi)** |
 | --- | --- | --- |
@@ -68,7 +68,7 @@ Seuraavat kysymykset ja vastaukset tarjoavat tärkeää tietoa Microsoft Cloud D
 | Power BI -palvelun resurssi URI |[https://analysis.cloudapi.de/powerbi/api](https://analysis.cloudapi.de/powerbi/api) |[https://analysis.windows.net/powerbi/api](https://analysis.windows.net/powerbi/api) |
 | Mukautettujen visualisointien kirjasto |[https://app.powerbi.de/visuals/](https://app.powerbi.de/visuals/) |[https://app.powerbi.com/visuals/](https://app.powerbi.com/visuals/) |
 | Rekisteröi Power BI -sovellus (Embedded:lle) |[https://app.powerbi.de/apps](https://app.powerbi.de/apps) |[https://app.powerbi.com/apps](https://app.powerbi.com/apps) |
-| Azure-portaali (Embedded:lle) |[https://portal.microsoftazure.de/](https://portal.microsoftazure.de/) |[https://portal.azure.com/](https://portal.azure.com/) |
+| Azure-portaalissa (-Embedded) |[https://portal.microsoftazure.de/](https://portal.microsoftazure.de/) |[https://portal.azure.com/](https://portal.azure.com/) |
 | Yhteisö |[https://community.powerbi.com/](https://community.powerbi.com/) |[https://community.powerbi.com/](https://community.powerbi.com/) |
 
 ## <a name="next-steps"></a>Seuraavat vaiheet

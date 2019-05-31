@@ -6,23 +6,21 @@ manager: kfile
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/20/2017
+ms.date: 05/29/2019
 ms.author: maggies
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: ff99fc731b5388acd4dbb7c98fe13b227e7d5789
-ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
-ms.translationtype: HT
+ms.openlocfilehash: 584dacbb3823f1a7c2475c780124985992a4b1d4
+ms.sourcegitcommit: 8bf2419b7cb4bf95fc975d07a329b78db5b19f81
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56216754"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66375150"
 ---
 # <a name="enable-cortana-to-access-power-bi-reports-and-their-underlying-datasets"></a>Mahdollista Cortanalle Power BI-raporttien (ja niiden taustalla olevien tietojoukkojen) käyttö
 Olet lukenut sivun [Perehdytys Cortanaan ja Power BI:hin](service-cortana-intro.md) (jos et ole, kannattaa se lukea ensin ja palata sitten takaisin). Ja nyt haluat kokeilla sitä itse.  Muutamien vaatimusten on täytyttävä ennen kuin voit esittää luonnollisella ohjelmointikielellä kysymyksiä Cortanassa ja etsiä vastauksia Power BI ***raportit*** -osioon tallennetuista tiedoista. Tarkemmin sanottuna sinun pitää toimia seuraavasti.
 
-> [!NOTE]
-> Jos kokeilet Cortanan ja Power BI:n ***koontinäytön*** esikatselua, voit ohittaa tämän artikkelin loppuosan. Cortanalle ei ole asennusvaatimuksia, jotta se voisi etsiä Power BI -raporttinäkymiäsi.
-> 
-> 
+> [!IMPORTANT]
+> Power BI-ollaan poistamassa Cortanan integrointia tuetaan. Alkaen kesäkuussa 11 Cortana ei enää toimi koontinäytöille ja raporteille.
 
 Power BI -palvelussa
 
@@ -75,7 +73,7 @@ Käytössäsi olevan Windows 10:n version on oltava 1511 tai sitä uudempi.
    * Avaa **asetukset** > **tilit**.
      
        ![Asetukset – tilit](media/service-cortana-enable/power-bi-windows-accounts.png)
-   * Vieritä alas ja valitse **Lisää työ- tai koulutili**. Tai, valitse **Tilit**-sivulta **Käytä työ- tai koulutiliä > Yhdistä**.
+   * Vieritä alas ja valitse **lisää työ- tai koulutili**. Tai, valitse **Tilit**-sivulta **Käytä työ- tai koulutiliä > Yhdistä**.
      
      ![Työtilin lisääminen](media/service-cortana-enable/power-bi-add-work-account2.png)
 

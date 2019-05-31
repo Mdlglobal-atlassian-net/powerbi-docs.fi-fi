@@ -11,10 +11,10 @@ ms.date: 02/13/2019
 ms.author: davidi
 LocalizationGroup: Transform and shape data
 ms.openlocfilehash: 97718ee6411d0063aa145e768fd20d3ebb6024b6
-ms.sourcegitcommit: c9080e77ab705f1814a352c0dda6b10910a5018e
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/20/2019
+ms.lasthandoff: 05/29/2019
 ms.locfileid: "65941446"
 ---
 # <a name="relationships-with-a-many-many-cardinality-in-power-bi-desktop"></a>Moni-moneen-kardinaliteetin sisältävät suhteet Power BI Desktopissa
@@ -39,7 +39,7 @@ Kahdessa taulukossa saattoi olla esimerkiksi *Maa*-niminen sarake, mutta *Maa*-s
 
 ## <a name="use-relationships-with-a-many-many-cardinality"></a>*Moni-moneen-kardinaliteetin sisältävien suhteiden* käyttäminen
 
-Kun määrität Power BI:ssä kahden taulukon välisen suhteen, sinun täytyy määrittää suhteen kardinaliteetti. Esimerkiksi taulukoiden *Tuotemyynti* ja *Tuote*&mdash;käyttämällä sarakkeita *Tuotemyynti[Tuotekoodi]* ja *Tuote[Tuotekoodi]*&mdash; yhteys määritettäisiin *monta-yhteen*-yhteydeksi. Yhteys määritetään näin, koska kullekin tuotteelle on useita myyntejä ja sarake *Tuote*-taulukossa *(Tuotekoodi)* on yksilöllinen. Kun määrität suhteen kardinaliteetiksi *monta-yhteen*, *yksi-moneen* tai *yksi-yhteen*, Power BI tarkistaa, että valittu kardinaliteetti vastaa varsinaisia tietoja.
+Kun määrität Power BI:ssä kahden taulukon välisen suhteen, sinun täytyy määrittää suhteen kardinaliteetti. Esimerkiksi taulukoiden *Tuotemyynti* ja *Tuote*&mdash;käyttämällä sarakkeita *Tuotemyynti[Tuotekoodi]* ja *Tuote[Tuotekoodi]* &mdash; yhteys määritettäisiin *monta-yhteen*-yhteydeksi. Yhteys määritetään näin, koska kullekin tuotteelle on useita myyntejä ja sarake *Tuote*-taulukossa *(Tuotekoodi)* on yksilöllinen. Kun määrität suhteen kardinaliteetiksi *monta-yhteen*, *yksi-moneen* tai *yksi-yhteen*, Power BI tarkistaa, että valittu kardinaliteetti vastaa varsinaisia tietoja.
 
 Tutustu esimerkiksi seuraavan kuvan yksinkertaiseen malliin:
 

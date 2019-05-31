@@ -12,11 +12,11 @@ ms.date: 11/06/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
 ms.openlocfilehash: 1bb6cfa195e3e6158259c9ff23cb3efdc3da4a09
-ms.sourcegitcommit: 80961ace38ff9dac6699f81fcee0f7d88a51edf4
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56223302"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61068147"
 ---
 # <a name="customize-x-axis-and-y-axis-properties"></a>X- ja Y-akselin ominaisuuksien muokkaaminen
 Tässä opetusohjelmassa käydään läpi monia tapoja mukauttaa X-akselia ja Y-akselia visualisoinneissa. Kaikissa visualisoinneissa ei ole akseleita, tai niitä ei voi mukauttaa; esimerkiksi ympyräkaaviossa ei ole akseleita. Mukautusasetukset vaihtelevat myös visualisoinnista riippuen, joten yksi artikkeli ei riitä kaikkien vaihtoehtojen läpikäymiseen. Tämä artikkeli tarjoaa yleiskatsauksen useimmin käytettyihin akselien mukautuksiin ja visualisoinnin muotoiluvälilehteen Power BI -raporttipohjassa.  

@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 03/31/2018
-ms.openlocfilehash: 3897464cbc2a233f7b1aa6ee2f0fd70d39ff16aa
-ms.sourcegitcommit: 3a05f34dbeabac62ea8c35c12a045284271971bc
-ms.translationtype: HT
+ms.openlocfilehash: bb25bfb9b3278ef5eccfd54436a6de430d17677d
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/03/2019
-ms.locfileid: "58872497"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65990616"
 ---
 # <a name="changelog-for-power-bi-report-server"></a>Power BI -raporttipalvelimen muutosloki
 
@@ -22,10 +22,34 @@ Power BI -raporttipalvelimen muutoslokissa on listattu jokaisen koontiversion uu
 
 Lisätietoja uusista ominaisuuksista on artikkelissa [Power BI -raporttipalvelinten uudet ominaisuudet](whats-new.md). 
 
+## <a name="may-2019"></a>Toukokuuta 2019: lle
+
+- **Power BI -raporttipalvelin**          
+    - *1.5.7074.36177 (koontiversio 15.0.1102.371), julkaistu versio: 21. toukokuuta 2019*
+        - Ohjelmavirhekorjauksia
+            - Sivutetut raportit
+                - Korjaa käyttöön aina pdf-fonttien upottaminen.
+                - Korjaa määrittämään Secure kuin https-yhteyden välityksellä lähetettyjä evästeet
+                - Korjaa ongelmia pop pohjautuvia komentosarjavirheiden vuoksi
+                - Näytä ongelmia mobiilisovellus Android-puhelimissa korjattu
+                - Korjattu Mobile raportin Aikasiirtymistoiminto näyttämään oikeaa viikon numero riippumatta tilivuoden alku
+                - Lisätty 'RestrictedResourceMimeTypeForUpload'-järjestelmänvalvojien määrittää määritettävissä oleva ominaisuus estetty mime-tyypit
+         - Ominaisuudet
+            - Luotettu visualisointien tuki lisääminen PBIRS
+
+- **Power BI Desktop (optimoitu Power BI -raporttipalvelimelle)**
+    - *Versio: 2.69.5467.1801 (toukokuun 2019), julkaistu: 21. toukokuuta 2019*
+        - Ohjelmavirhekorjauksia
+            - Korjaa voit välttää tunnistetiedot takaisin PBIRS PBIX lataamisen aikana
+            - Asiakirjojen avaaminen # tiedostonimessä korjauksia
+            - Lisätty helpompaa linkin edelliseen siirtyminen PBIRS valinta-ikkuna
+            - Korjaa PBIRS näyttävät takaisin-painiketta, Näytä varoitusta visual viestit suuren kontrastin-tilaan.
+            - Valinta-ruutu Käyttöliittymän korjaukset pohjaan skaalaus.
+
 ## <a name="january-2019"></a>Tammikuu 2019
 
 - **Power BI -raporttipalvelin**          
-    - *Versio 1.4.7024.16477 (koontiversio 15.0.1102.299), julkaistu: 28. maaliskuuta 2019*
+    - *1.4.7024.16477 (koontiversio 15.0.1102.299), julkaistu versio: 28. maaliskuuta 2019*
         - Ohjelmavirhekorjauksia
             - Power BI -raportit
                 - Korjattu SAP Hanan ja SAP BW:n suoran kyselyn yhteydessä ilmennyt perustunnistetietoihin liittyvä ongelma
@@ -192,7 +216,7 @@ Lisätietoja uusista ominaisuuksista on artikkelissa [Power BI -raporttipalvelin
         - Ominaisuudet
             - Sisältää Power BI -raporttipalvelinyhteyden edellyttämiä muutoksia (maaliskuu 2017).
 
-## <a name="june-2017"></a>Kesä 2017
+## <a name="june-2017"></a>Kesäkuu 2017
 
 - **Power BI -raporttipalvelin**
     - *Koontiversio 14.0.600.309, julkaistu: 10. tammikuuta 2018*
@@ -220,8 +244,8 @@ Lisätietoja uusista ominaisuuksista on artikkelissa [Power BI -raporttipalvelin
 
 [Mikä on Power BI -raporttipalvelin?](get-started.md)
 [Järjestelmänvalvojien yleiskatsaus](admin-handbook-overview.md)  
-[Asenna Power BI -raporttipalvelin](install-report-server.md)  
+[Power BI -raporttipalvelimen asentaminen](install-report-server.md)  
 [Raportin muodostimen lataaminen](https://www.microsoft.com/download/details.aspx?id=53613)  
 [SQL Server Data Tools (SSDT) -työkalujen lataaminen](http://go.microsoft.com/fwlink/?LinkID=616714)
 
-Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
+Onko sinulla muuta kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)

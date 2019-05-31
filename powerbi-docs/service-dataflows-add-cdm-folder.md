@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/06/2018
+ms.date: 04/02/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 3c5b33b4b056a5d2dfeeffd4c72ea878cf7d79c0
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.openlocfilehash: 6d03097eb886813b934c75b61ddb056b55bde7b8
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54280282"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61160945"
 ---
 # <a name="add-a-cdm-folder-to-power-bi-as-a-dataflow-preview"></a>Lisää CDM-kansio Power BI:hin tietovuona (esikatselu)
 
@@ -30,9 +30,6 @@ Tietovoiden luomiseen CDM-kansioista on muutamia vaatimuksia, kuten seuraavassa 
 * Sinulla on oltava luku- ja käyttöoikeudet kaikkiin CDM-kansiossa oleviin tiedostoihin ja kansioihin, jotta ne voi lisätä Power BI:hin.
 
 Seuraavissa osissa kuvataan tietovuon luominen CDM-kansiosta.
-
-> [!NOTE]
-> Tietovuotoiminto on esikatselutilassa, ja sitä voidaan muuttaa ja päivittää ennen kuin se on yleisesti saatavilla.
 
 ## <a name="create-a-dataflow-from-a-cdm-folder"></a>Tietovuon luominen CDM-kansiosta
 
@@ -99,9 +96,9 @@ Lisätietoja tietovoista, CDM:stä ja Azure Data Lake Storage Gen2:sta on seuraa
 Lisätietoja tietovoista yleisesti on seuraavissa artikkeleissa:
 
 * [Tietovoiden luominen ja käyttäminen Power BI:ssä](service-dataflows-create-use.md)
-* [Laskettujen entiteettien käyttäminen Power BI Premiumissa (esikatselu)](service-dataflows-computed-entities-premium.md)
-* [Tietovoiden käyttäminen paikallisten tietolähteiden kanssa (esikatselu)](service-dataflows-on-premises-gateways.md)
-* [Kehittäjien resurssit Power BI -tietovoille (esikatselu)](service-dataflows-developer-resources.md)
+* [Laskettuja entiteettejä käyttämällä Power BI Premium](service-dataflows-computed-entities-premium.md)
+* [Dataflows käyttö paikallisiin tietolähteisiin](service-dataflows-on-premises-gateways.md)
+* [Power BI dataflows Kehittäjien resurssit](service-dataflows-developer-resources.md)
 
 Lisätietoja Azure-tallennustilasta on seuraavissa artikkeleissa:
 * [Azure-tallennuksen suojausopas](https://docs.microsoft.com/azure/storage/common/storage-security-guide)

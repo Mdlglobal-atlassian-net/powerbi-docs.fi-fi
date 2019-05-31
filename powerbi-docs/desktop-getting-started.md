@@ -11,10 +11,10 @@ ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Get started
 ms.openlocfilehash: ecd58ca21e7fb6c5fb0bc2d3410788e2563efa9b
-ms.sourcegitcommit: 2116af72f435cd30f1401bb9c7afdcbc76b1c3ce
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/09/2019
+ms.lasthandoff: 05/29/2019
 ms.locfileid: "65454507"
 ---
 # <a name="getting-started-with-power-bi-desktop"></a>Power BI Desktopin käytön aloittaminen
@@ -148,7 +148,7 @@ Meidän on vielä tehtävä pari muuta muutosta, jotta kyselystä tulee sellaine
 
 * *Vaihdetaan taulukon nimi* – **Table 0** ei ole hyödyllinen kuvaus, mutta nimen vaihtaminen on helppoa.
 
-Jokainen näistä vaiheista esitellään ohjeartikkelissa **[Tietojen muotoilu ja yhdistäminen Power BI Desktopissa](desktop-shape-and-combine-data.md)**. Tutustu vapaasti kyseiseen sivuun tai jatka tämän oppaan seuraamista ja katso seuraavat vaiheet. Seuraavassa osassa jatketaan siitä, kun edellä mainitut muutokset on otettu käyttöön.
+Jokainen näistä vaiheista esitellään ohjeartikkelissa **[Tietojen muotoilu ja yhdistäminen Power BI Desktopissa](desktop-shape-and-combine-data.md)** . Tutustu vapaasti kyseiseen sivuun tai jatka tämän oppaan seuraamista ja katso seuraavat vaiheet. Seuraavassa osassa jatketaan siitä, kun edellä mainitut muutokset on otettu käyttöön.
 
 ## <a name="combine-data"></a>Tietojen yhdistäminen
 Nämä tiedot eri osavaltioista ovat mielenkiintoisia. Niistä on myös hyötyä muidenkin analyysien ja kyselyiden luomisessa. Tässä on kuitenkin yksi ongelma: suurin osa saatavilla olevista tiedoista käyttää kaksikirjaimisia osavaltiolyhenteitä, ei osavaltioiden koko nimiä. Meidän täytyy siis yhdistää osavaltioiden nimet ja niiden lyhenteet.
@@ -161,7 +161,7 @@ Valitaan **kyselyeditorin** **Aloitus**-valintanauhasta **Nouda tiedot \> Verkko
 
  ![](media/desktop-getting-started/designer_gsg_usstateabbreviationsnavigator.png)
 
-Valitse **Taulukko[muokkaa]**, koska se sisältää haluamamme tiedot. Niitä täytyy kuitenkin muotoilla melko paljon, ennen kuin voimme yhdistää taulukon tiedot. Jokainen näistä vaiheista esitellään ohjeartikkelissa **[Tietojen muotoilu ja yhdistäminen Power BI Desktopissa](desktop-shape-and-combine-data.md)**. Yhteenveto mainituista vaiheista on seuraava:
+Valitse **Taulukko[muokkaa]** , koska se sisältää haluamamme tiedot. Niitä täytyy kuitenkin muotoilla melko paljon, ennen kuin voimme yhdistää taulukon tiedot. Jokainen näistä vaiheista esitellään ohjeartikkelissa **[Tietojen muotoilu ja yhdistäminen Power BI Desktopissa](desktop-shape-and-combine-data.md)** . Yhteenveto mainituista vaiheista on seuraava:
 
 Valitaan **Muokkaa** ja sitten:
 

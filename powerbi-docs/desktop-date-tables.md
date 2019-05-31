@@ -7,19 +7,19 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 11/28/2018
+ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: 8da4922245a1d02484988dd26da68afceaa1fc2c
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.openlocfilehash: 9bbe302c7187419abae556bb34f991efa1fdae00
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54275623"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65454373"
 ---
 # <a name="set-and-use-date-tables-in-power-bi-desktop"></a>Päivämäärätaulukkojen määrittäminen ja käyttäminen Power BI Desktopissa
 
-**Power BI Desktop** toimii taustalla tunnistaen taulukoita automaattisesti **päivämäärätaulukoiksi** ja luo sitten päivämäärähierarkioita ja muita mallin käyttöönoton metatietoja puolestasi. Voit sitten käyttää näitä valmiita hierarkioita, kun luot raporttiominaisuuksia, kuten visualisointeja, taulukoita, pikamittareita, sektoreita ja niin edelleen. Power BI Desktop tekee tämän luomalla puolestasi piilotettuja taulukkoja, joita voit sitten käyttää raporttien ja DAX-lausekkeiden luomiseen.
+**Power BI Desktop** toimii taustalla tunnistaen automaattisesti sarakkeet, jotka edustavat päivämäärät ja luo sitten päivämäärähierarkioita ja muita mallin käyttöönoton metatietoja puolestasi. Voit sitten käyttää näitä valmiita hierarkioita, kun luot raporttiominaisuuksia, kuten visualisointeja, taulukoita, pikamittareita, sektoreita ja niin edelleen. Power BI Desktop tekee tämän luomalla puolestasi piilotettuja taulukkoja, joita voit sitten käyttää raporttien ja DAX-lausekkeiden luomiseen.
 
 Monet tietoanalyytikot luovat mieluummin itse omat päivämäärätaulukkonsa, mikä tietysti sopii mainiosti. **Power BI Desktopissa** voit määrittää taulukon, jota haluat mallisi käyttävän **päivämäärätaulukkona**, ja voit sitten luoda päivämäärään liittyviä visualisointeja, taulukoita, pikamittareita ja niin edelleen käyttäen kyseisen taulukon päivämäärätietoja. Kun määrität oman päivämäärätaulukon, hallitset mallissasi luotuja päivämäärähierarkioita ja käytät niitä **pikamittareissa** ja muissa toiminnoissa, jotka käyttävät oman mallisi päivämäärätaulukkoa. 
 
@@ -52,7 +52,7 @@ Kun määrität päivämäärätaulukon, voit valita, mikä sarake tässä taulu
 
 ![](media/desktop-date-tables/date-tables_03.png)
 
-On tärkeää ottaa huomioon, että määrittäessäsi oman päivämäärätaulukon **Power BI Desktop** ei luo automaattisesti hierarkioita, jotka se muussa tapauksessa loisi malliin puolestasi. Jos myöhemmin poistat päivämäärätaulukon valinnan (ja sinulla ei enää ole manuaalisesti määritettyä päivämäärätaulukkoa), Power BI Desktop luo puolestasi uudelleen automaattisesti luodut sisäiset päivämäärätaulukot taulukon päivämääräsarakkeita varten.
+On tärkeää ottaa huomioon, että määrittäessäsi oman päivämäärätaulukon **Power BI Desktop** ei luo automaattisesti hierarkioita, jotka se muussa tapauksessa loisi malliin puolestasi. Jos myöhemmin poistat päivämäärätaulukon (ja ei enää ole manuaalisesti päivämäärätaulukkoa), Power BI Desktop automaattisesti luodut sisäiset päivämäärätaulukot, taulukon päivämääräsarakkeita varten.
 
 Lisäksi on tärkeää huomioida, että merkitessäsi taulukon päivämäärätaulukoksi Power BI Desktopin luoma sisäinen (automaattisesti luotu) päivämäärätaulukko poistetaan, ja mahdolliset aikaisemmin luomasi näihin sisäisiin taulukkoihin perustuvat visualisoinnit tai DAX-lausekkeet eivät enää toimi oikein. 
 

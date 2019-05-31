@@ -1,26 +1,26 @@
 ---
 title: Tietojen työntäminen tietojoukkoon
 description: Tietojen työntäminen Power BI -tietojoukkoon
-author: markingmyname
-ms.author: maghan
+author: rkarlin
+ms.author: rkarlin
 manager: kfile
 ms.reviewer: madia
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 02/05/2019
-ms.openlocfilehash: 642a8e7dd118838b5ea12c8758841ee44a8e6595
-ms.sourcegitcommit: 0abcbc7898463adfa6e50b348747256c4b94e360
-ms.translationtype: HT
+ms.date: 05/22/2019
+ms.openlocfilehash: 9eb81610044f795b6f9dc5c58aeefad13de06542
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "55762256"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66222149"
 ---
 # <a name="push-data-into-a-power-bi-dataset"></a>Tietojen työntäminen Power BI -tietojoukkoon
 
-Power BI ‑ohjelmointirajapinnan avulla voit työntää tietoja Power BI -tietojoukkoon. Voit esimerkiksi laajentaa aiemmin luotua liiketoiminnan työnkulkua ja työntää avaintietoja tietojoukkoon. Tässä tapauksessa haluat työntää Tuote-taulukon sisältävän Myyntimarkkinointi-tietojoukon tietojoukkoon.
+Power BI API-avulla voit työntää tietoja Power BI-tietojoukkoon. Tässä artikkelissa esittelemme miten voit lähettää Myyntimarkkinointi-tietojoukon, joka sisältää aiemmin luodun tietojoukon tuote-taulukko.
 
-Tarvitset Azure Active Directoryn (Azure AD) ja [Power BI -tilin](create-an-azure-active-directory-tenant.md) ennen kuin voit aloittaa tietojen työntämisen tietojoukkoon.
+Ennen aloittamista, sinun Azure Active Directory (Azure AD) ja [Power BI-tilin](create-an-azure-active-directory-tenant.md).
 
 ## <a name="steps-to-push-data-into-a-dataset"></a>Vaiheet tietojen työntämiseksi tietojoukkoon
 
@@ -34,7 +34,7 @@ Seuraava osa sisältää yleistä keskustelua Power BI -ohjelmointirajapinnan to
 
 ## <a name="power-bi-api-operations-to-push-data"></a>Power BI -ohjelmointirajapinnan toiminnot tietojen työntämiseksi
 
-Power BI:n REST‑ohjelmointirajapinnan avulla voit työntää tietolähteitä Power BI:hin. Kun sovellus lisää rivejä tietojoukkoon, koontinäytön ruudut päivittyvät automaattisesti päivitetyillä tiedoilla. Käytät tietojen työntämiseen [Julkaise tietojoukko](https://docs.microsoft.com/rest/api/power-bi/pushdatasets) -toimintoa yhdessä [Julkaise rivejä](https://docs.microsoft.com/rest/api/power-bi/pushdatasets/datasets_postrows) -toiminnon kanssa. Käytät tietojoukon löytämiseen [Hae tietojoukot](https://docs.microsoft.com/rest/api/power-bi/datasets/getdatasets) -toimintoa. Voit missä tahansa näistä toiminnoista välittää ryhmän tunnuksen ja käsitellä kyseistä ryhmää. Saat luettelon ryhmätunnuksista käyttämällä [Hae ryhmät](https://docs.microsoft.com/rest/api/power-bi/groups/getgroups) -toimintoa.
+Power BI:n REST‑ohjelmointirajapinnan avulla voit työntää tietolähteitä Power BI:hin. Kun sovellus lisää rivejä tietojoukkoon, koontinäytön ruutuihin päivityksen automaattisesti uusia tietoja. Tietojen työntämiseen [Julkaise tietojoukko](https://docs.microsoft.com/rest/api/power-bi/pushdatasets/datasets_postdataset) ja [Julkaise rivejä](https://docs.microsoft.com/rest/api/power-bi/pushdatasets/datasets_postrows) toimintoja. Voit etsiä tietojoukon avulla [Hae tietojoukot](https://docs.microsoft.com/rest/api/power-bi/datasets/getdatasets) toiminto. Voit välittää ryhmän tunnuksen ja käsitellä missä tahansa näistä toiminnoista ryhmälle. Jos haluat ryhmän tunnus luettelon, käytä [Hae ryhmät](https://docs.microsoft.com/rest/api/power-bi/groups/getgroups) toiminto.
 
 Seuraavassa luetellaan toiminnot, jotka työntävät tietoja tietojoukkoon:
 
@@ -59,7 +59,7 @@ Tietojoukon JSON-merkkijonossa noudatetaan seuraavaa muotoilua:
         ]
     }
 
-Näin ollen Myyntimarkkinointi-tietojoukon esimerkissä välitetään alla olevaa esimerkkiä vastaava JSON-merkkijono. Tässä esimerkissä **Myyntimarkkinointi** on tietojoukon nimi ja **Tuote** on taulukon nimi. Kun olet määrittänyt taulukon, voit määrittää taulukon rakenteen. **Myyntimarkkinointi**-tietojoukossa taulukon rakenne sisältää seuraavat sarakkeet: ProductID, Valmistaja, Luokka, Segmentti, Tuote ja IsComplete.
+Myyntimarkkinointi tietojoukon esimerkissä välitetään JSON-merkkijonon, kuten alla. Tässä esimerkissä **Myyntimarkkinointi** on tietojoukon nimi, ja **tuotteen** on taulukkonimi. Kun olet määrittänyt taulukon, voit määrittää taulukkorakennetta. **Myyntimarkkinointi**-tietojoukossa taulukon rakenne sisältää seuraavat sarakkeet: ProductID, Valmistaja, Luokka, Segmentti, Tuote ja IsComplete.
 
 **Esimerkkitietojoukon JSON-objekti**
 
@@ -105,10 +105,10 @@ Power BI:n taulukon rakenteessa voi käyttää seuraavia tietotyyppejä.
 | **Tietotyyppi** | **Rajoitukset** |
 | --- | --- |
 | Int64 |Int64.MaxValue ja Int64.MinValue eivät ole sallittuja. |
-| Double |Double.MaxValue- ja Double.MinValue-arvoja ei sallita. NaN:ää ei tueta. Komentoja +Infinity ja -Infinity ei tueta tietyissä funktioissa (esim. Min, Max). |
+| Double |Double.MaxValue- ja Double.MinValue-arvoja ei sallita. NaN ei tueta. komentoja + Infinity ja - Infinity ei tueta tietyissä funktioissa (esimerkiksi Min, Max). |
 | Totuusarvo |Ei mitään |
-| Päivämäärä ja aika |Tietojen lataamisen aikana arvot muutetaan määrällisiksi 1/300 sekunnin (3,33 ms) kerrannaisten päiväosiin. |
-| Merkkijono |Tällä hetkellä sallitaan enintään 128 000 merkkiä. |
+| Päivämäärä ja aika |Tietojen lataaminen, aikana määrällisiksi 1/300 sekunnin (3,33 ms) kerrannaisten päiväosiin arvot. |
+| Merkkijono |Tällä hetkellä sallitaan enintään 128 K-merkkiä. |
 
 ## <a name="learn-more-about-pushing-data-into-power-bi"></a>Lisätietoja tietojen työntämisestä Power BI:hin
 

@@ -13,11 +13,11 @@ ms.date: 12/06/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
 ms.openlocfilehash: fcfb16de53b4e6c67b7c46fec87ab614d07cb9b1
-ms.sourcegitcommit: a054782370dec56d49bb205ee10b7e2018f22693
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56661556"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61049105"
 ---
 # <a name="view-data-insights-on-dashboard-tiles-with-power-bi"></a>Merkityksellisten tietojen tarkasteleminen koontinäytön ruuduissa Power BI:n avulla
 Koontinäytön visualisointiruutujen kautta voit tarkastella tietoja. Kun valitset ruudun, raportti avautuu. Raportissa voit suodattaa ja lajitella raportin taustalla olevaa tietojoukkoa ja perehtyä siihen tarkemmin. Kun suoritat merkityksellisiä tietoja, Power BI tarkastelee tietoja puolestasi.
@@ -59,7 +59,7 @@ Voit palata alkuperäiseen merkityksellisten tietojen pohjaan valitsemalla vasem
 
 ## <a name="considerations-and-troubleshooting"></a>Huomioon otettavat seikat ja vianmääritys
 - **Näytä merkitykselliset tiedot** ei toimi DirectQueryllä – se toimii vain Power BI:hin ladatuilla tiedoilla.
-- **Näytä merkitykselliset tiedot** ei toimi kaikissa koontinäytön ruututyypeissä. Se ei ole käytettävissä esimerkiksi mukautetuissa visualisoinneissa.<!--[custom visuals](end-user-custom-visuals.md)-->
+- **Näytä merkitykselliset tiedot** ei toimi kaikissa koontinäytön ruututyypeissä. Esimerkiksi ei ole käytettävissä mukautettuja visualisointeja.<!--[custom visuals](end-user-custom-visuals.md)-->
 
 
 ## <a name="next-steps"></a>Seuraavat vaiheet

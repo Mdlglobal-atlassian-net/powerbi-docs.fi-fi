@@ -11,11 +11,11 @@ ms.date: 10/17/2018
 ms.author: maggies
 LocalizationGroup: Ask questions of your data
 ms.openlocfilehash: 760335b0a08156b3c5b594ffc27be4cb0ad12342
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54289919"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61420620"
 ---
 # <a name="edit-qa-linguistic-schema-and-add-phrasings-in-power-bi-desktop"></a>Q&A:n lingvistisen rakenteen muokkaaminen ja muotoilujen lisääminen Power BI Desktopissa 
 Yleisien lauseiden ja luonnollisen kielen käyttäminen tiedoista esitettävissä kysymyksissä on tehokasta. Vielä tehokkaampaa on, kun tiedot vastaavat, minkä Power BI:n Q&A-toiminto mahdollistaa. Kun esität Power BI Q&A:lle kysymyksen, se pyrkii parhaansa mukaan vastaamaan oikein. 
@@ -197,7 +197,7 @@ Binding: {Table: Products}
       Adjectives: [discontinued]
 ```
 
-*Mitan adjektiivimuotoilut* määrittävät uuden adjektiivin numeerisen arvon perusteella, joka osoittaa alan, jota adjektiivi koskee, kuten ”pituudet ilmaisevat, kuinka pitkiä joet ovat” ja ”pienillä mailla on pienet maa-alueet”. Mittarin adjektiivimuotoiluja käytetään esimerkiksi seuraavanlaisissa kysymyksissä:
+*Mittarin adjektiivimuotoilut* määrittävät uuden adjektiivin numeerisen arvon perusteella, joka osoittaa alan, jota adjektiivi koskee, kuten ”pituudet ilmaisevat, kuinka pitkiä joet ovat” ja ”pienillä mailla on pienet maa-alueet”. Mittarin adjektiivimuotoiluja käytetään esimerkiksi seuraavanlaisissa kysymyksissä:
 - Luetteloi pitkät joet
 - Mitkä joet ovat pisimmät?
 - Luetteloi pienimmät maat, jotka ovat voittaneet kultaa koripallossa

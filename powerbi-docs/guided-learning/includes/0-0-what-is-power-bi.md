@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 30cd80cbeafe2da4468a0049bfa0c34715bce0d3
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66051094"
+---
 Tervetuloa Power BI:n **Ohjattu oppiminen** -kurssille. Verkkokurssissa käydään läpi Power BI:n ominaisuuksia järjestyksessä alkeista yhä edistyneempiin aiheisiin, joten voit kartuttaa osaamistasi luontevasti ja omaan tahtiin.
 
 Kurssi tarjoaa ohjeita helposti omaksuttavissa annoksissa ja siten, että käsitteet, tiedot ja esimerkit esitellään loogisessa järjestyksessä. Oppimisen tueksi on tarjolla myös paljon havaintomateriaalia ja videoita.
@@ -23,7 +31,7 @@ Jokainen osista – **työpöytäsovellus**, **verkkopalvelu** ja **mobiilisovel
 ## <a name="how-power-bi-matches-your-role"></a>Power BI:n tuki käyttäjärooleille
 Power BI:n käyttämisen tapa voi riippua roolistasi projektissa tai tiimissä. Vastaavasti muissa rooleissa toimivat voivat käyttää sitä omilla tavoillaan.
 
-Saatat itse käyttää ensisijaisesti **Power BI -palvelua**, kun taas runsaasti laskentatehoa vaativia liiketoimintaraportteja tuottava kollegasi luottaa **Power BI Desktopiin** – ja julkaisee Desktop-raportit sitten Power BI -palveluun tarkasteltaviksesi. Toinen kollega myynnin puolelta voi käyttää pääasiassa Power BI -puhelinsovellusta myyntitavoitteidensa seurantaan ja uusien liiditietojen tutkimiseen.
+Saatat itse käyttää ensisijaisesti **Power BI -palvelua**, kun taas runsaasti laskentatehoa vaativia liiketoimintaraportteja tuottava kollegasi luottaa **Power BI Desktopiin** – ja julkaisee Desktop-raportit sitten Power BI -palveluun tarkasteltaviksesi. Toinen kollega myynnin puolelta voi käyttää ja Power BI-puhelinsovellusta etenemistä myynnin kiintiöistä ja uusi myyntiliidi yksityiskohtiin pääsemiseksi.
 
 Saatat käyttää **Power BI:n** eri osia aina sen mukaan, mitä on tarkoitus saavuttaa tai mikä roolisi on tietyssä projektissa tai tehtävässä.
 

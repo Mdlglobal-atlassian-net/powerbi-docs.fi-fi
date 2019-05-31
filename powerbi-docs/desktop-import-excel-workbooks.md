@@ -11,10 +11,10 @@ ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
 ms.openlocfilehash: 1b6b74682f1c74ab78f27be857dbec42efa29347
-ms.sourcegitcommit: 2116af72f435cd30f1401bb9c7afdcbc76b1c3ce
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/09/2019
+ms.lasthandoff: 05/29/2019
 ms.locfileid: "65454182"
 ---
 # <a name="import-excel-workbooks-into-power-bi-desktop"></a>Excel-työkirjojen tuominen Power BI Desktopiin
@@ -55,7 +55,7 @@ Power BI Desktop voi tuoda seuraavat elementit, joita kutsutaan Excelissä yleis
 | --- | --- |
 | Power Query -kyselyt |Kaikki Excelin Power Query -kyselyt muunnetaan kyselyiksi Power BI Desktopissa. Jos Excel-työkirjaan oli määritetty kyselyryhmiä, sama organisaatio replikoidaan Power BI Desktopiin. Kaikki kyselyt ladataan, paitsi jos on määritetty Excelissä tilaan ”Luo vain yhteys”. Lataustoimintaa voi mukauttaa **Ominaisuudet**-valintaikkunassa Power BI Desktopin **Kyselyeditorin** **Aloitus**-välilehdellä. |
 | Power Pivotin ulkoiset tietoyhteydet |Kaikki Power Pivotin ulkoiset tietoyhteydet muunnetaan kyselyiksi Power BI Desktopissa. |
-| Linkitetyt taulukot tai nykyisen työkirjan taulukot |Jos Excelissä on laskentataulukon taulukko, joka on linkitetty tietomalliin tai kyselyyn (käyttämällä *Taulukosta* tai *Excel.CurrentWorkbook()*-funktiota M:ssä), näytetään seuraavat vaihtoehdot: <ol><li>Tuo taulukko Power BI Desktop -tiedostoon. Tämä taulukko on kertaluonteinen tilannevedos tiedoista, jonka jälkeen et voi muokata taulukon tietoja Power BI Desktopissa. Tämän vaihtoehdon avulla luotujen taulukoiden kokorajoitus on miljoona merkkiä (yhteensä kaikki sarakeotsikot ja solut yhteen laskettuina).</li><li>Säilytä yhteys alkuperäiseen työkirjaan. Vaihtoehtoisesti voit säilyttää yhteyden alkuperäiseen Excel-työkirjaan, ja Power BI Desktop noutaa kyseisen taulukon uusimman sisällön kunkin päivityksen yhteydessä samaan tapaan kuin mikä tahansa muu kysely, joka on luotu Excel-työkirjaa vasten Power BI Desktopissa.</li></ul> |
+| Linkitetyt taulukot tai nykyisen työkirjan taulukot |Jos Excelissä on laskentataulukon taulukko, joka on linkitetty tietomalliin tai kyselyyn (käyttämällä *Taulukosta* tai *Excel.CurrentWorkbook()* -funktiota M:ssä), näytetään seuraavat vaihtoehdot: <ol><li>Tuo taulukko Power BI Desktop -tiedostoon. Tämä taulukko on kertaluonteinen tilannevedos tiedoista, jonka jälkeen et voi muokata taulukon tietoja Power BI Desktopissa. Tämän vaihtoehdon avulla luotujen taulukoiden kokorajoitus on miljoona merkkiä (yhteensä kaikki sarakeotsikot ja solut yhteen laskettuina).</li><li>Säilytä yhteys alkuperäiseen työkirjaan. Vaihtoehtoisesti voit säilyttää yhteyden alkuperäiseen Excel-työkirjaan, ja Power BI Desktop noutaa kyseisen taulukon uusimman sisällön kunkin päivityksen yhteydessä samaan tapaan kuin mikä tahansa muu kysely, joka on luotu Excel-työkirjaa vasten Power BI Desktopissa.</li></ul> |
 | Tietomallin lasketut sarakkeet, mittarit, suorituskykyilmaisimet, tietoluokat ja suhteet |Nämä tietomallin objektit muunnetaan Power BI Desktopin vastaaviksi objekteiksi. Huomaa, että on tiettyjä tietoluokkia, jotka eivät ole käytettävissä Power BI Desktopissa, kuten **Kuva**. Näissä tapauksissa tietoluokkaa koskevat tiedot palautetaan kyseessä olevien sarakkeiden osalta. |
 | Power View -laskentataulukot |Uusi raporttisivu luodaan jokaiselle Excelin Power View -laskentataulukolle. Näiden raporttisivujen nimi ja järjestys vastaavat alkuperäistä Excel-työkirjaa. |
 

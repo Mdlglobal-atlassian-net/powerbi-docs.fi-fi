@@ -1,20 +1,20 @@
 ---
 title: Rivitason suojaus (RLS) Power BI -raporttipalvelimessa
 description: Lue lisää rivitason suojauksen (RLS) käytöstä Power BI -raporttipalvelimessa.
-author: markingmyname
-ms.author: maghan
+author: maggiesMSFT
+ms.author: maggies
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 01/22/2019
-ms.openlocfilehash: 5a39c976a9b9812754ade2e30eac13aa922fd7f9
-ms.sourcegitcommit: 4aa99a8dde4e98909da888c151a71476f7bbfe81
-ms.translationtype: HT
+ms.openlocfilehash: b4a5d11697cff2cae8d137916636907967a7c276
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "58489564"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "64769807"
 ---
 # <a name="row-level-security-rls-in-power-bi-report-server"></a>Rivitason suojaus (RLS) Power BI -raporttipalvelimessa
 
@@ -46,7 +46,7 @@ Kun olet tallentanut raportin Power BI -raporttipalvelimeen, voit määrittää 
  Jos raportissa ei ole tarvittavia rooleja, sinun on avattava raportti Power BI Desktopissa, lisättävä tai muokattava rooleja siellä ja tallennettava raportti sitten uudelleen Power BI -raporttipalvelimeen. 
 
 1. Tallenna raportti Power BI Desktopissa Power BI -raporttipalvelimeen. Sinulla on käytettävä Power BI -raporttipalvelimelle optimoitua Power BI Desktop -versiota.
-2. Valitse Power BI -raporttipalvelussa raportin vieressä oleva kolmen pisteen kuvake (**…**). 
+2. Valitse Power BI -raporttipalvelussa raportin vieressä oleva kolmen pisteen kuvake ( **…** ). 
 
 3. Valitse **hallinta** > **Rivitason suojaus**. 
 

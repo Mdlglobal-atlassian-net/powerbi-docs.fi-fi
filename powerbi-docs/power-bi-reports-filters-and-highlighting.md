@@ -1,5 +1,5 @@
 ---
-title: Tietoja Power BI -raporttien suodattimista ja korostamisesta
+title: Suodattimista ja korostamisesta Power BI-raportit
 description: Tietoja Power BI -raporttien suodattimista ja korostamisesta
 author: maggiesMSFT
 manager: kfile
@@ -7,32 +7,37 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 09/28/2018
+ms.date: 05/22/2019
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: ace392570dbabc65d128941fc735231622f2c008
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.openlocfilehash: 8084b8dbbc27c856633d84c6628727dcd426964d
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54285319"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66187557"
 ---
-# <a name="about-filters-and-highlighting-in-power-bi-reports"></a>Tietoja Power BI -raporttien suodattimista ja korostamisesta
- Tässä artikkelissa esitellään suodattaminen ja korostaminen Power BI -palvelussa. Käyttökokemus on lähes sama kuin Power BI Desktopissa. ***Suodattimet*** poistavat kaikki muut tiedot paitsi ne, joihin haluat keskittyä. ***Korostus*** ei suodata. Se ei poista tietoja, vaan korostaa näkyvien tietojen alijoukon, jolloin korostamattomat tiedot pysyvät näkyvissä, mutta himmeinä.
+# <a name="filters-and-highlighting-in-power-bi-reports"></a>Suodattimista ja korostamisesta Power BI-raportit
+ Tässä artikkelissa esitellään suodattaminen ja korostaminen Power BI-palvelussa. Käyttökokemus on lähes sama kuin Power BI Desktopissa. *Suodattimet* poistavat kaikki muut tiedot paitsi ne, joihin haluat keskittyä. *Korostus* suodatus ei ole. Se ei poista tietoja, mutta sen sijaan korostaa näkyvissä; tietojen alijoukon joka ei ole korostettuna tiedot pysyvät näkyvissä, mutta himmennettynä.
 
 Raportteja voidaan suodattaa ja korostaa monin eri tavoin Power BI:ssä. Kaikkien näiden tietojen kokoaminen yhteen artikkeliin olisi turhan sekavaa, joten tiedot on jaettu seuraaviin osioihin:
 
-* Johdanto suodattimiin ja korostuksiin (artikkeli, jota luet parhaillaan)
-* Tavat, joilla voit [luoda ja käyttää muokkausnäkymän suodattimia](power-bi-report-add-filter.md) raporteissa. Kun sinulla on raportin muokkausoikeudet, voit luoda, muokata ja poistaa suodattimia raporteissa.
-* Tavat, joilla voit [käyttää suodattimia ja korostuksia kanssasi jaetussa raportissa](consumer/end-user-reading-view.md), raportin lukunäkymässä. Se, mitä voit tehdä, on rajoitetumpaa, mutta käytettävissäsi on silti laaja valikoima vaihtoehtoja suodattamiseen ja korostamiseen.  
-* Yksityiskohtainen esittely [suodattimien ja korostusten ohjaimista, jotka ovat käytettävissä muokkausnäkymässä](consumer/end-user-report-filter.md), mukaan lukien perusteellisempi esittely suodatintyypeistä (esimerkiksi päivämäärä ja aika, numerot ja teksti) sekä perusvaihtoehtojen ja lisävaihtoehtojen välinen ero.
-* Kun olet oppinut, miten suodattimet ja korostus toimivat oletusarvoisesti, voit lukea siitä, [miten sivulla olevat visualisoinnit suodattavat ja korostavat toisiaan](consumer/end-user-interactions.md)
+* Johdanto suodattimiin ja korostuksiin, artikkelin jota luet parhaillaan.
+* Miten [luoda ja käyttää suodattimet muokkausnäkymässä](power-bi-report-add-filter.md) raporteissa Power BI Desktop ja Power BI-palvelussa. Kun sinulla on raportin muokkausoikeudet, voit luoda, muokata ja poistaa suodattimia raporteissa.
+* Miten visualisointeja [suodattaa ja korostaa raportin kanssasi](consumer/end-user-interactions.md)-raportin Lukunäkymä Power BI-palvelussa. Se, mitä voit tehdä, on rajoitetumpaa, mutta käytettävissäsi on silti laaja valikoima vaihtoehtoja suodattamiseen ja korostamiseen.  
+* Yksityiskohtainen esittely [suodatinten ja korostusten ohjaimista, jotka ovat käytettävissä muokkausnäkymässä](power-bi-report-add-filter.md) Power BI Desktop ja Power BI-palvelussa. Artikkelin kestää tarkemmin siihen, kuten päivämäärä ja kellonaika, numerot ja Suodatintyyppejä ja teksti. Se kattaa myös ja laajempien vaihtoehtojen erot.
+* Kun olet oppinut, miten suodattimet ja korostus toimivat oletusarvoisesti, voit lukea siitä, [miten sivulla olevat visualisoinnit suodattavat ja korostavat toisiaan](service-reports-visual-interactions.md)
+
+**Tiesitkö?** Power BI:ssä on uusi suodatuskokemus, joka on tällä hetkellä esikatseluvaiheessa. Lue lisää [uudesta suodatuskokemuksesta Power BI -raporteissa](power-bi-report-filter-preview.md).
+
+![Uusi suodatuskokemus](media/power-bi-reports-filters-and-highlighting/power-bi-filter-reading.png)
+
 
 ## <a name="intro-to-the-filters-pane"></a>Suodattimet-ruudun esittely
 
 Voit käyttää suodattimia **Suodattimet**-ruudussa tai [tekemällä valintoja osittajissa](visuals/power-bi-visualization-slicers.md) suoraan itse raportissa. Suodattimet-ruudussa näkyvät taulukot ja kentät, joita on käytetty raportissa sekä suodattimet, joita on mahdollisesti käytetty. 
 
-![](media/power-bi-reports-filters-and-highlighting/power-bi-add-filter-reading-view.png)
+![Suodattimet-ruutu](media/power-bi-reports-filters-and-highlighting/power-bi-add-filter-reading-view.png)
 
 Käytössä on neljä erilaista suodatinta:
 
@@ -56,36 +61,39 @@ Raportteja voidaan käsitellä kahdessa eri näkymässä: [lukunäkymässä](con
 ### <a name="filters-in-reading-view"></a>Suodattimet lukunäkymässä
 Jos sinulla on oikeudet raporttiin vain lukunäkymässä, Suodattimet-ruutu näyttää tältä:
 
-![](media/power-bi-reports-filters-and-highlighting/power-bi-filter-reading-view.png)
+![Suodattimet lukunäkymässä](media/power-bi-reports-filters-and-highlighting/power-bi-filter-reading-view.png)
 
 Tällä raportin sivulla on kuusi sivutason suodatinta ja yksi raporttitason suodatin.
 
 Jokaisessa visualisoinnissa voi olla suodattimia kaikille visualisoinnin kentille, ja raportin tekijä voi lisätä muita. Alla olevassa kuvassa kuplakaaviossa on kuusi suodatinta.
 
-![](media/power-bi-reports-filters-and-highlighting/power-bi-filter-visual-level.png)
+![Visuaalisen tason suodatin](media/power-bi-reports-filters-and-highlighting/power-bi-filter-visual-level.png)
 
 Lukunäkymässä voit tutkia tietoja muokkaamalla olemassa olevia suodattimia. Tekemäsi muutokset tallennetaan raporttiin myös silloin, kun avaat raportin mobiilisovelluksessa. Lue ohjeet [raportin Suodattimet-ruudun esittelystä](consumer/end-user-report-filter.md)
 
 Kun suljet raportin, suodattimet tallennetaan. Jos haluat kumota suodatuksen ja palata takaisin raportin laatijan oletusarvoiseen suodatukseen, jaotteluun, porautumiseen ja lajitteluun, valitse yläosan valikosta **Palauta oletukset**.
 
-![](media/power-bi-reports-filters-and-highlighting/power-bi-reset-to-default.png)
+![Palauta oletus-kuvake](media/power-bi-reports-filters-and-highlighting/power-bi-reset-to-default.png)
 
 ### <a name="filters-in-editing-view"></a>Suodattimet muokkausnäkymässä
 Kun sinulla on raportin omistajan oikeudet ja avaat raportin muokkausnäkymässä, näet, että **Suodattimet** on vain yksi monista käytettävissä olevista muokkausruuduista.
 
-![](media/power-bi-reports-filters-and-highlighting/power-bi-add-filter-editing-view.png)
+![Suodattimet-ruutu muokkausnäkymässä](media/power-bi-reports-filters-and-highlighting/power-bi-add-filter-editing-view.png)
 
 Kuten lukunäkymässä, tällä raportin sivulla on kuusi sivutason suodatinta ja yksi raporttitason suodatin. Valitsemalla kuplakaavion voitaisiin nähdä, että sillä on kuusi visuaalisen tason suodatinta.
 
 Suodattimia ja korostamista voidaan hyödyntää enemmän muokkausnäkymässä. Pääasiassa voidaan lisätä uusia suodattimia. Lue siitä, miten [raporttiin lisätään suodatin](power-bi-report-add-filter.md), ja paljon muuta.
 
-## <a name="ad-hoc-highlighting"></a>Ad-hoc-korostaminen
-Valitse raporttipohjasta kenttä sivun muiden visualisointien korostamiseksi. Valitse sitten tyhjä tila samassa visualisoinnissa sen poistamiseksi. Tämäntyyppinen korostaminen on hauska tapa tutustua nopeasti tietojen vaikutuksiin. Ohjeet tällaisen ristiinkorostuksen hienosäätämisestä ovat artikkelissa [Visualisointitoimet](consumer/end-user-interactions.md) .
+## <a name="ad-hoc-highlighting"></a>Ad-hoc korostaminen
+Valitse arvo tai akselin nimen, jotta korostaa sivun muut visualisoinnit. Jos haluat poistaa korostuksen, valitse arvo uudelleen tai valitse tyhjän tilan samaan visualisointiin. Korostaminen on hauska tapa tutustua nopeasti tietojen vaikutuksiin. Ohjeet tällaisen ristiinkorostuksen hienosäätämisestä ovat artikkelissa [Visualisointitoimet](service-reports-visual-interactions.md) .
 
-![](media/power-bi-reports-filters-and-highlighting/power-bi-adhoc-filter.gif)
+![Ristiinkorostus](media/power-bi-reports-filters-and-highlighting/power-bi-adhoc-filter.gif)
 
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
+
+[Uuden suodattimen kokemuksen, Power BI-raporteissa](power-bi-report-filter-preview.md)
+
 [Lisää suodatin raporttiin (muokkausnäkymässä)](power-bi-report-add-filter.md)
 
 [Tutustu raportin suodattimiin](consumer/end-user-report-filter.md)

@@ -11,11 +11,11 @@ ms.date: 08/10/2017
 ms.author: amac
 LocalizationGroup: Dashboards
 ms.openlocfilehash: b7d9bdf0982ea7ad4f57225e5a1eaf8c9da90b50
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54276096"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61139597"
 ---
 # <a name="dashboard-data-classification"></a>Koontinäytön tietojen luokittelu
 Jokainen koontinäyttö on erilainen ja riippuen yhdistetystä tietolähteestä, havaitset luultavasti, että sinun ja työtovereidesi, joiden kanssa jaat tietoja, on suoritettava eri varotoimia tietojen arkaluontoisuuden mukaisesti. Joitakin koontinäyttöjä ei pitäisi koskaan jakaa yrityksen ulkopuolisille henkilöille tai tulostaa, kun taas osa voidaan jakaa vapaasti. Käyttämällä koontinäytön tietojen luokitusta, pystyt nostamaan tietoisuutta koontinäyttösi tarkastelijoiden keskuudessa siitä, mitä suojaustasoa tulisi käyttää. Voit lisätä koontinäyttöösi tunnisteen, jossa luokitukset on määritelty yrityksesi IT-osaston mukaan, joten kaikilla ketkä katselevat sisältöä, on saman tasoinen ymmärrys tietojen arkaluontoisuudesta.

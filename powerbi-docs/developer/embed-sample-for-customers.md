@@ -1,21 +1,21 @@
 ---
 title: Upotetut analyysitoiminnot ja Power BI -sisällön upottaminen sovellukseen asiakkaille
 description: Opi integroimaan tai upottamaan raportteja, raporttinäkymiä tai ruutuja sovellukseen asiakkaita varten käyttämällä upotetuissa analyysitoiminnoissa Power BI -ohjelmointirajapintoja. Lue, miten voit integroida Power BI:n sovellukseesi käyttämällä upotetun analysoinnin ohjelmistoa, upotetun analysoinnin työkaluja tai upotetun liiketoimintatiedon työkaluja.
-author: markingmyname
-ms.author: maghan
+author: rkarlin
+ms.author: rkarlin
 manager: kfile
 ms.reviewer: nishalit
 ms.topic: tutorial
 ms.service: powerbi
-ms.component: powerbi-developer
+ms.subservice: powerbi-developer
 ms.custom: seodec18
-ms.date: 02/05/2019
-ms.openlocfilehash: 5bb4a739b6a333ecaf0ddc3ee2596fc210033470
-ms.sourcegitcommit: 8fda7843a9f0e8193ced4a7a0e5c2dc5386059a6
-ms.translationtype: HT
+ms.date: 04/02/2019
+ms.openlocfilehash: e945e19505d7342cf3ba2236b4811e87a69730ab
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58174955"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65710966"
 ---
 # <a name="tutorial-embed-power-bi-content-into-an-application-for-your-customers"></a>Opetusohjelma: Power BI -sisällön upottaminen sovellukseen asiakkaille
 
@@ -62,7 +62,7 @@ Jos käytät palvelun päänimeä, sinun täytyy rekisteröidä **palvelinpuolen
 
 ### <a name="create-an-app-workspace"></a>Sovelluksen työtilan luominen
 
-Jos upotat asiakkaille raportteja, raporttinäkymiä tai ruutuja, sisältö tulee sijoittaa sovelluksen työtilaan. Voit ottaa käyttöön erityyppisiä työtiloja: [perinteisiä työtiloja](../service-create-workspaces.md) tai [uusia työtiloja](../service-create-the-new-workspaces.md). Jos käytät *päätiliä*, käyttämiesi työtilojen tyypillä ei ole väliä. Jos kirjaudut sovellukseesi *[palvelun päänimellä](embed-service-principal.md)*, sinun täytyy käyttää uusia työtiloja. Molemmissa tapauksissa *päätilin* tai *palvelun päänimen* täytyy olla sovellukseesi liittyvien sovellustyötilojen järjestelmänvalvoja.
+Jos upotat asiakkaille raportteja, raporttinäkymiä tai ruutuja, sisältö tulee sijoittaa sovelluksen työtilaan. Voit ottaa käyttöön erityyppisiä työtiloja: [perinteisiä työtiloja](../service-create-workspaces.md) tai [uusia työtiloja](../service-create-the-new-workspaces.md). Jos käytät *päätiliä*, käyttämiesi työtilojen tyypillä ei ole väliä. Jos kirjaudut sovellukseesi *[palvelun päänimellä](embed-service-principal.md)* , sinun täytyy käyttää uusia työtiloja. Molemmissa tapauksissa *päätilin* tai *palvelun päänimen* täytyy olla sovellukseesi liittyvien sovellustyötilojen järjestelmänvalvoja.
 
 ### <a name="create-and-publish-your-reports"></a>Luo ja julkaise raportteja
 
@@ -192,23 +192,19 @@ Saat **ApplicationSecretin** seuraavasti:
 
 2. Valitse vasemmassa siirtymisruudussa **Kaikki palvelut** ja sitten **Sovelluksen rekisteröinnit**.
 
-    ![Sovelluksen rekisteröinnin etsintä](media/embed-sample-for-your-organization/embed-sample-for-your-organization-003.png)
+    ![Sovelluksen rekisteröinnin etsintä](media/embed-sample-for-customers/embed-sample-for-customers-003.png)
 
 3. Valitse sovellus, joka käyttää **ApplicationSecretiä**.
 
-    ![Sovelluksen valitseminen](media/embed-sample-for-your-organization/embed-sample-for-your-organization-006.png)
+    ![Sovelluksen valitseminen](media/embed-sample-for-customers/embed-sample-for-customers-0038.png)
 
-4. Valitse **Asetukset**.
+4. Valitse **varmenteet ja salaisuudet** kohdassa **hallinta**.
 
-    ![Valitse Asetukset](media/embed-sample-for-your-organization/embed-sample-for-your-organization-038.png)
-
-5. Valitse **Avaimet**.
-
-    ![Valitse Avaimet](media/embed-sample-for-your-organization/embed-sample-for-your-organization-039.png)
+5. Valitse **uusi asiakas salaisuuksia**.
 
 6. Kirjoita nimi **Kuvaus**-ruutuun ja valitse kesto. Valitse sitten **Tallenna** saadaksesi sovellukselle **arvon**. Kun suljet **Avaimet**-ruudun avainarvon tallentamisen jälkeen, arvokenttä näkyy vain piilotettuna. Tässä vaiheessa et pysty noutamaan avaimen arvoa. Jos kadotat avainarvon, luo uusi Azure-portaalissa.
 
-    ![Avainarvo](media/embed-sample-for-your-organization/embed-sample-for-your-organization-031.png)
+    ![Avainarvo](media/embed-sample-for-customers/embed-sample-for-customers-042.png)
 
 ### <a name="tenant"></a>Vuokraaja
 
@@ -369,7 +365,7 @@ Seuraavan taulukon avulla voit määrittää, mikä Power BI Embedded -kapasitee
 | A5 |16 näennäisydintä |8 ydintä, 50 Gt RAM |8 ydintä |60 sekunnissa |
 | A6 |32 näennäisydintä |16 ydintä, 100 Gt RAM |16 ydintä |120 sekunnissa |
 
-**_A-varastointiyksiköillä et pysty käyttämään Power BI -sisältöä ilmaisella Power BI -käyttöoikeudella._**
+**_A-varastointiyksiköillä et pysty käyttämään Power BI -sisältöä ilmaisella Power BI -käyttöoikeudella._ **
 
 Upotustunnusten käyttö PRO-käyttöoikeudella on tarkoitettu kehitystestaukseen, joten Power BI -päätili tai palvelun päänimi voi luoda vain rajallisen määrän upotettavia tunnuksia. Hyötykäyttöympäristössä upottamista varten täytyy ostaa varattua kapasiteettia. Varatun kapasiteetin avulla luotavien upotettavien tunnuksien määrää ei ole rajoitettu. Siirry [Käytettävissä olevat ominaisuudet](https://docs.microsoft.com/rest/api/power-bi/availablefeatures/getavailablefeatures) -kohtaan tarkistaaksesi käyttöarvon, joka ilmaisee nykyisen upotetun käytön prosenttilukuna. Käytettävä määrä on päätilikohtainen.
 

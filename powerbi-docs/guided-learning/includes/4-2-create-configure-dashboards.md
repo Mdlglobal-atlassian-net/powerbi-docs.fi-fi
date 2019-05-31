@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 94ff18339d2eb14faebf124786cab7f9ac66393e
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61263420"
+---
 Power BI:n **koontinäytöissä** Power BI -palvelussa luodut tiedot esitetään kootusti visualisointeina. Koontinäyttöjä luodaan **kiinnittämällä** visualisointeja raporteista, jotka olet tehnyt ja julkaissut Power BI Desktopilla. Visualisointeja voi myös luoda Power BI -palvelussa itsessään. Visualisoinnin **kiinnittäminen** koontinäyttöön on sama kuin kiinnittäisi kuvan nastalla ilmoitustauluun – se pysyy valitussa paikassa kaikkien näkyvillä. Kiinnitä visualisointi avaamalla sen raportti Power BI -palvelussa. Osoita sitä visualisointia, jonka haluat kiinnittää, ja napsauta **nastakuvaketta**.
 
 ![](media/4-2-create-configure-dashboards/4-2_1.png)

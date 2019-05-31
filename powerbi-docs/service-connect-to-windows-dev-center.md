@@ -11,11 +11,11 @@ ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
 ms.openlocfilehash: 81498dff9c70deaf8135faf244db96509b1cf18d
-ms.sourcegitcommit: 750f0bfab02af24c8c72e6e9bbdd876e4a7399de
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/04/2019
-ms.locfileid: "54008829"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61163976"
 ---
 # <a name="connect-to-windows-dev-center-with-power-bi"></a>Windowsin kehityskeskukseen yhdistäminen Power BI:n avulla
 Tutki ja katsele Windowsin kehityskeskuksen sovelluksen analytiikkatietoja Power BI:ssä Power BI -sisältöpaketin avulla. Tiedot päivitetään automaattisesti kerran päivässä.

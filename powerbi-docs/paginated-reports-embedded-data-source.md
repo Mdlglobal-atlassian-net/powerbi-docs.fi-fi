@@ -1,20 +1,20 @@
 ---
 title: Sivutettujen raporttien upotetut tietolähteet Power BI -palvelussa (esikatselu)
 description: Tässä artikkelissa opit luomaan upotetun tietolähteen sivutettuun raporttiin Power BI -palvelussa ja muokkaamaan sitä.
-author: markingmyname
-ms.author: maghan
+author: maggiesMSFT
+ms.author: maggies
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 11/05/2018
-ms.openlocfilehash: 340b4d26b8beed4dfda5f7af4dc949088f3857ae
-ms.sourcegitcommit: d2805894fd372c35e11d519f724de2be98407fda
-ms.translationtype: HT
+ms.date: 05/16/2019
+ms.openlocfilehash: 4dd9ad935a9f7b286aa64d977a78364f2aed0e0f
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "59070018"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65853389"
 ---
 # <a name="create-an-embedded-data-source-for-paginated-reports-in-the-power-bi-service-preview"></a>Upotetun tietolähteen luominen sivutettuun raporttiin Power BI -palvelussa (esikatselu)
 
@@ -23,13 +23,19 @@ Tässä artikkelissa opit luomaan upotetun tietolähteen sivutettuun raporttiin 
 - Azuren SQL-tietokanta ja tietovarasto
 - SQL Server
 - SQL Server Analysis Services
+- Oracle 
+- Teradata 
+
+Käytä näitä tietolähteitä [SQL Server Analysis Services-yhteys](service-premium-connect-tools.md) vaihtoehto:
+
 - Azure Analysis Services
+- Power BI Premium-tietojoukot
 
 Sivutetut raportit yhdistetään paikallisiin tietolähteisiin yhdyskäytävän avulla. Määrität yhdyskäytävän, kun olet julkaissut raportin Power BI -palveluun. Lue lisätietoja [Power BI -yhdyskäytävistä](service-gateway-getting-started.md). 
 
 ## <a name="create-an-embedded-data-source"></a>Upotetun tietolähteen luominen
   
-1. Avaa Raportin muodostin.
+1. Avaa Power BI-raportin muodostin.
 
 1. Valitse raporttitietoruudun työkaluriviltä **Uusi** > **tietolähde**. **Tietolähteen ominaisuudet** -valintaikkuna avautuu.
 
@@ -45,7 +51,7 @@ Sivutetut raportit yhdistetään paikallisiin tietolähteisiin yhdyskäytävän 
   
     -   Kirjoita yhteysmerkkijono suoraan **Yhteysmerkkijono**-tekstiruutuun. 
   
-    -   Luo lauseke, joka antaa tulokseksi yhteysmerkkijonon, valitsemalla lausekepainike (**fx)**. Kirjoita lauseke Lauseke-ruutuun **Lauseke**-valintaikkunassa. Valitse **OK**. 
+    -   Luo lauseke, joka antaa tulokseksi yhteysmerkkijonon, valitsemalla lausekepainike (**fx)** . Kirjoita lauseke Lauseke-ruutuun **Lauseke**-valintaikkunassa. Valitse **OK**. 
   
     -   Valitse **Muodosta**, niin vaiheessa 2 valitsemasi tietolähteen **Yhteyden ominaisuudet** -valintaikkuna avautuu.  
   

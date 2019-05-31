@@ -11,10 +11,10 @@ ms.date: 11/01/2018
 ms.author: mblythe
 LocalizationGroup: Administration
 ms.openlocfilehash: d28a27d69d6e8799f08ddaa05e734ded62150c8f
-ms.sourcegitcommit: a284c38d42dd8042e468e10c0157f30918c2bdd1
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/16/2019
+ms.lasthandoff: 05/29/2019
 ms.locfileid: "65710931"
 ---
 # <a name="configure-mobile-apps-with-microsoft-intune"></a>Mobiilisovellusten määrittäminen Microsoft Intunella
@@ -50,11 +50,11 @@ Jotta saamme sovelluksen URL-osoitteen iOS:ssä, se on noudettava iTunesista.
 
     ![iTunes-sovelluksen URL-osoite](media/service-admin-mobile-intune/itunes-url.png)
 
-Näkymän kuuluu näyttää seuraavankaltaiselta: *https://itunes.apple.com/us/app/microsoft-power-bi/id929738808?mt=8*.
+Näkymän kuuluu näyttää seuraavankaltaiselta: *https://itunes.apple.com/us/app/microsoft-power-bi/id929738808?mt=8* .
 
 ### <a name="get-android-url"></a>Androidin URL-osoitteen hankkiminen
 
-Saat Google Play -kaupan URL-osoitteen [Power BI -mobiilisivulta](https://powerbi.microsoft.com/mobile/). Kun napsautat **Lataa Google Play -kaupasta** -kuvaketta, pääset sovelluksen sivulle. Voit kopioida URL-osoitteen selaimen osoiteriviltä. Näkymän kuuluu näyttää seuraavankaltaiselta: *https://play.google.com/store/apps/details?id=com.microsoft.powerbim*.
+Saat Google Play -kaupan URL-osoitteen [Power BI -mobiilisivulta](https://powerbi.microsoft.com/mobile/). Kun napsautat **Lataa Google Play -kaupasta** -kuvaketta, pääset sovelluksen sivulle. Voit kopioida URL-osoitteen selaimen osoiteriviltä. Näkymän kuuluu näyttää seuraavankaltaiselta: *https://play.google.com/store/apps/details?id=com.microsoft.powerbim* .
 
 ## <a name="step-2-create-a-mobile-application-management-policy"></a>Vaihe 2: Mobiilisovellusten hallintakäytännön luominen
 
@@ -66,7 +66,7 @@ Voit luoda sovelluksen tai käytännön ensin. Lisäysjärjestyksellä ei ole me
 
     ![Intune-portaali](media/service-admin-mobile-intune/intune-policy.png)
 
-1. Valitse **Lisää...**.
+1. Valitse **Lisää...** .
 
 1. Voit valita **Ohjelmisto**-kohdasta mobiilisovellusten hallinnan joko Androidille tai iOS:lle. Jos haluat päästä alkuun nopeasti, valitse **Luo käytäntö käyttäen suositeltuja asetuksia**. Voit vaihtoehtoisesti luoda mukautetun käytännön.
 

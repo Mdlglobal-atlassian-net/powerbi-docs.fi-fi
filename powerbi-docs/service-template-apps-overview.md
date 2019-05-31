@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 02/04/2019
+ms.date: 04/26/2019
 ms.author: maggies
-ms.openlocfilehash: 445f5f087bd9589b18f798e8db40a63b0ddceafe
-ms.sourcegitcommit: 8207c9269363f0945d8d0332b81f1e78dc2414b0
-ms.translationtype: HT
+ms.openlocfilehash: 0ea8f19fa36bf1f9ceb5f8f0b92bd53ebdfa2a01
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56249742"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "64578520"
 ---
 # <a name="what-are-power-bi-template-apps-preview"></a>Mitä Power BI -mallisovellukset ovat? (esikatselu)
 
@@ -24,10 +24,10 @@ Mallisovellukset korvaavat nykyiset palvelun sisältöpaketit. Power BI -kumppan
 
 Voit kehittää mallisovelluksia, joiden avulla asiakkaasi voivat yhdistää ja alustaa tiedot omiin tileihinsä. Toimialueen asiantuntijoina he voivat avata tietojen lukituksen siten, että ne ovat helposti heidän yrityskäyttäjiensä käytettävissä.  
 
-Lähetä kumppanien kehittämät mallisovellukset pilvikumppaniportaaliin. Sovellukset ovat sitten julkisesti saatavilla Power BI -sovellusvalikoimassa (app.powerbi.com/getdata/services) ja Microsoft AppSourcessa (appsource.microsoft.com). Tässä on esimerkki julkisen mallisovelluksen käyttökokemuksesta.  
+Lähetä mallin sovellusten Pilvipalvelukumppanin portaalista. Sovellukset ovat sitten julkisesti saatavilla Power BI -sovellusvalikoimassa (app.powerbi.com/getdata/services) ja Microsoft AppSourcessa (appsource.microsoft.com). Tässä on julkinen mallin sovelluksen luomisen käyttökokemus korkean tason siihen.  
 
-## <a name="overview"></a>Yleiskatsaus
-Mallisovelluksen yleiseen kehittämis- ja lähetysprosessiin liittyy useita vaiheita, joista joissakin saattaa olla useita samanaikaisia toimintoja.
+## <a name="process"></a>Prosessi
+Yleinen malli-sovellus ja muodostamisprosessiin liittyy useita vaiheita. Joitakin vaiheita voivat sisältää useamman kuin yhden toiminnon samanaikaisesti.
 
 
 | Vaihe | Power BI Desktop |  |Power BI -palvelu  |  |Pilvikumppaniportaali  |

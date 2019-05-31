@@ -12,11 +12,11 @@ ms.date: 02/21/2019
 ms.author: mihart
 LocalizationGroup: Get started
 ms.openlocfilehash: 2f8c2468b56db190f9e794ed2d81ce86449a970d
-ms.sourcegitcommit: a054782370dec56d49bb205ee10b7e2018f22693
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56661878"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61048220"
 ---
 # <a name="navigation-searching-finding-and-sorting-content-in-power-bi-service"></a>Siirtyminen: sisällön hakeminen, löytäminen ja lajitteleminen Power BI -palvelussa
 Sisältöön voi siirtyä monella tavalla Power BI -palvelussa. Sisältö on jaettu työtilassasi tyypin mukaan koontinäyttöihin, raportteihin, työkirjoihin ja tietojoukkoihin.  Lisäksi sisältö on järjestetty käytön mukaan suosikkeihin, viimeksi avattuihin, sovelluksiin, kanssani jaettuihin ja esiteltyihin. Kaikki sisältö näkyy aloitussivulla, jotta siirtyminen olisi helpompaa. Näiden eri kulkureittien kautta löydät tarvitsemasi sisällön nopeasti Power BI -palvelussa.  

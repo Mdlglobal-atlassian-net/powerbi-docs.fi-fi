@@ -8,15 +8,15 @@ featuredvideoid: lnv66cTZ5ho
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 09/27/2018
+ms.date: 05/22/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 896c415028b99db8662e93b5d709b76520996fef
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.openlocfilehash: e461480f53f4a97aeb4282e64a8a03eb8e1418d1
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54275751"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66187789"
 ---
 # <a name="combo-chart-in-power-bi"></a>Yhdistelmäkaavio Power BI:ssä
 Power BI:ssä yhdistelmäkaavio on yksittäinen visualisointi, joka yhdistää viivakaavion ja pylväskaavion. Näiden kahden kaavion yhdistäminen nopeuttaa tietojen vertailua.
@@ -52,7 +52,7 @@ Seuraavassa videossa luodaan yhdistelmäkaavio käyttämällä myynti- ja markki
 
     b.  Vedä **Myynti** \> **Tämän vuoden myyntikate** **Arvo**-kohtaan.
 
-    c.  Valitse **Aika** \> **FiscalMonth** ja lisää se **Akseli**-kohtaan.
+    c. Valitse **Aika** \> **FiscalMonth** ja lisää se **Akseli**-kohtaan.
 
     ![](media/power-bi-visualization-combo-chart/combotutorial1new.png)
 5. Valitse kolme pistettä (...) visualisoinnin oikeasta yläkulmasta ja valitse **Lajitteluperuste > FiscalMonth**. Jos haluat muuttaa lajittelujärjestyksen, valitse kolme pistettä uudelleen ja valitse joko **Lajittele nousevaan järjestykseen** tai **Lajittele laskevaan järjestykseen**.
@@ -71,7 +71,7 @@ Seuraavassa videossa luodaan yhdistelmäkaavio käyttämällä myynti- ja markki
 ## <a name="create-a-combo-chart-with-two-axes"></a>Kahden akselin yhdistelmäkaavion luominen
 Tässä tehtävässä verrataan myyntikatetta ja myyntiä.
 
-1. Luo uusi viivakaavio, joka seuraa **viime vuoden myyntikateprosenttia** **kuukauden** mukaan. Valitse kolme pistettä ja lajittele kaavio **kuukauden** mukaan **nousevassa järjestyksessä**.  
+1. Luo uusi viivakaavio, joka seuraa **viime vuoden myyntikateprosenttia** mukaan **FiscalMonth**. Valitse kolme pistettä ja lajittele kaavio **kuukauden** mukaan **nousevassa järjestyksessä**.  
 Myyntikate oli tammikuussa 35 %, huipussaan 45 % huhtikuussa, laski heinäkuussa ja nousi uudelleen elokuussa. Näemmekö samanlaisen kuvion edellisen ja tämän vuoden myynnissä?
 
    ![](media/power-bi-visualization-combo-chart/combo1_new.png)
@@ -83,22 +83,22 @@ Myyntikate oli tammikuussa 35 %, huipussaan 45 % huhtikuussa, laski heinäkuussa
    ![](media/power-bi-visualization-combo-chart/converttocombo_new.png)
 4. Vedä **Edellisen vuoden myyntikateprosentti** **sarakearvoista** **riviarvoihin**. Power BI luo kaksi akselia, jolloin tietojoukkoja voidaan skaalata erikseen; vasen mittaa myyntiä euroissa ja oikea prosenttilukua. Saat vastauksen kysymykseen; kyllä, samanlainen kuvio on havaittavissa.
 
-   ![](media/power-bi-visualization-combo-chart/power-bi-combochart.png)    
+   ![](media/power-bi-visualization-combo-chart/power-bi-clustered-combo.png)    
 
 ## <a name="add-titles-to-the-axes"></a>Akselien otsikoiden lisääminen
 1. Avaa Muotoilu-ruutu valitsemalla maalitelakuvakkeen ![](media/power-bi-visualization-combo-chart/power-bi-paintroller.png).
 2. Laajenna **Y-akselin** asetukset alanuolella.
-3. Aseta **Y-akseli (sarake)** > **Sijainti** > **vasemmalla**, **Otsikko** > **Käytössä**, **Tyyli** > **Näytä vain otsikko** ja **Näytä** > **Miljoonat**.
+3. - **Y-akseli (sarake)** , Määritä **sijainti** - **vasemmalle**, Määritä **otsikko** - **-** ,  **Tyyli** - **Näytä vain otsikko**, ja **Näyttöyksiköitä** kuin **miljoonia**.
 
-   ![](media/power-bi-visualization-combo-chart/power-bi-y-axis-column.png)
-4. Kohdassa **Y-akseli (sarake)** vieritä alaspäin ja varmista, että **Näytä toissijainen** on **Käytössä**. Tämä näyttää yhdistelmäkaavion viivakaavio-osan muotoiluvaihtoehdot.
+   ![](media/power-bi-visualization-combo-chart/power-bi-open-y.png)
+4. Valitse **y-akseli (sarake)** , Vieritä alaspäin, kunnes näet **Näytä toissijainen**. Koska vaihtoehtoja on niin paljon Y-akseleille, saatat joutua käyttämään sekä vierityspalkit. Näytä toissijainen osan muotoiluvaihtoehdot osan yhdistelmäkaavion.
 
-   ![](media/power-bi-visualization-combo-chart/power-bi-show-secondary.png)
+   ![](media/power-bi-visualization-combo-chart/power-bi-secondary.png)
 5. Jätä **Y-akseli (rivi)** > **Sijainti** > **oikealla** sekä määritä **Otsikko** > **Käytössä** ja **Tyyli** > **Näytä vain otsikko**.
 
    Yhdistelmäkaavio näyttää nyt kaksi akselia otsikoilla.
 
-   ![](media/power-bi-visualization-combo-chart/power-bi-titles-on.png)
+   ![](media/power-bi-visualization-combo-chart/power-bi-2-titles.png)
 
 6. Halutessasi voit parantaa kaavion luettavuutta muokkaamalla tekstin fonttia, kokoa ja väriä sekä määrittämällä muita muotoiluasetuksia.
 

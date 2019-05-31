@@ -1,30 +1,32 @@
 ---
 title: Power BI -raporttipalvelimen asentaminen
 description: Opi asentamaan Power BI -raporttipalvelin.
-author: markingmyname
-ms.author: maghan
+author: maggiesMSFT
+ms.author: maggies
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 12/07/2018
-ms.openlocfilehash: 109c0f98705f81d48811f756c49150c8cb286e27
-ms.sourcegitcommit: d4d36b6b200f2693b545e4a3e66d94c77a3cfafb
-ms.translationtype: HT
+ms.date: 05/22/2019
+ms.openlocfilehash: 02104acdbff6e6a1a4e785553b689a3e74183a4d
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57014434"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66187736"
 ---
 # <a name="install-power-bi-report-server"></a>Power BI -raporttipalvelimen asentaminen
 
 Opi asentamaan Power BI -raporttipalvelin.
 
- **Lataa** ![lataa](media/install-report-server/download.png "lataa")
+## <a name="download-power-bi-report-server"></a>Power BI -raporttipalvelimen lataaminen
 
-Lataa Power BI -raporttipalvelin tutustumalla ohjeaiheeseen [Paikallinen raportointi Power BI -raporttipalvelimella](https://powerbi.microsoft.com/report-server/). Valitse sitten **Lataa ilmainen kokeiluversio**. 
+[Lataa Power BI-raporttipalvelin](https://www.microsoft.com/download/details.aspx?id=56722) Microsoft Download Centeristä.
 
-## <a name="before-you-begin"></a>Alkutoimet
+On myös maksuttoman kokeiluversion. Valitse [paikallinen raportointi Power BI-raporttipalvelimella](https://powerbi.microsoft.com/report-server/) sivulla **Lataa ilmainen kokeiluversio**.
+
+## <a name="before-you-install"></a>Ennen kuin asennat
 
 Microsoft suosittelee ennen Power BI -raporttipalvelimen asentamista tutustumaan [Power BI -raporttipalvelimen asentamisen laitteisto- ja ohjelmistovaatimuksiin](system-requirements.md).
 
@@ -32,6 +34,13 @@ Microsoft suosittelee ennen Power BI -raporttipalvelimen asentamista tutustumaan
  > Microsoft Power BI -raporttipalvelin voidaan asentaa ympäristöön, jossa on Vain luku-toimialueen ohjain (RODC), mutta Power BI -raporttipalvelin tarvitsee käyttöoikeuden luku- ja kirjoitus-toimialueen ohjaimelle toimiakseen oikein. Jos Power BI -raporttipalvelin sisältää vain RODC-käyttöoikeuden, voi tulla virheitä, kun yrität hallita palvelua.
 
 ### <a name="power-bi-report-server-product-key"></a>Power BI -raporttipalvelimen tuoteavain
+
+Saat Power BI-raporttipalvelimen tuoteavain kaksi eri lähteistä:
+
+- Power BI Premium
+- SQL Server Enterprise Software Assurance (SA)
+
+Lue lisää tiedot.
 
 #### <a name="power-bi-premium"></a>Power BI Premium
 
@@ -66,8 +75,8 @@ SQL Server -tietokantamoduulin palvelimen ei tarvitse olla käytettävissä asen
 
     ![Versio 2](media/install-report-server/pbireportserver-choose-edition2.png)
 
-    Muussa tapauksessa voit antaa palvelimen tuoteavaimen, jonka olet saanut joko Power BI -palvelusta tai volyymikäyttöoikeuskeskuksesta. Lisätietoja tuoteavaimen hankkimisesta on [Alkutoimet](#before-you-begin)-osassa.
-4. Lue ja hyväksy käyttöoikeussopimuksen ehdot ja valitse sitten **Seuraava**.
+    Anna tuoteavain, sait Power BI-palvelusta tai Volyymikäyttöoikeuskeskuksesta muussa tapauksessa. Katso lisätietoja tuoteavaimen [ennen kuin asennat](#before-you-install) yllä.
+4. Lue ja hyväksy käyttöoikeussopimuksen ehdot ja määräykset ja valitse sitten **seuraava**.
 
     ![Käyttöoikeusehdot](media/install-report-server/pbireportserver-eula.png)
 5. Tietokantamoduulin on oltava käytettävissä raporttipalvelimen tietokannan tallennusta varten. Valitse **Seuraava** asentaaksesi vain raporttipalvelimen.
@@ -83,7 +92,7 @@ SQL Server -tietokantamoduulin palvelimen ei tarvitse olla käytettävissä asen
 
     ![Määritä raporttipalvelin](media/install-report-server/pbireportserver-configure.png)
 
-## <a name="configuring-your-report-server"></a>Raporttipalvelimen määrittäminen
+## <a name="configure-your-report-server"></a>Määritä raporttipalvelin
 
 Kun valitset asetuksissa **Määritä raporttipalvelin**, näyttöön tulee Reporting Services Configuration Manager. Lisätietoja on artikkelissa [Reporting Services Configuration Manager](https://docs.microsoft.com/sql/reporting-services/install-windows/reporting-services-configuration-manager-native-mode).
 

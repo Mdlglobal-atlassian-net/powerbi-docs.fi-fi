@@ -11,11 +11,11 @@ ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
 ms.openlocfilehash: c1e8e449c2db7e751d719f8fca38b194a9a0042a
-ms.sourcegitcommit: 8fda7843a9f0e8193ced4a7a0e5c2dc5386059a6
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58174564"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61181616"
 ---
 # <a name="collaborate-in-your-power-bi-app-workspace"></a>Yhteiskäyttö Power BI -sovelluksen työtilassa
 Power BI -sovelluksen työtilat on käteviä paikkoja tehdä yhteistyötä työtovereidesi kanssa raporttinäkymässä, raporteissa ja tietojoukoissa *sovellusten* luomiseksi. Yhteiskäyttö ei pääty Power BI:n työtiloihin. Office 365 tarjoaa muita ryhmäpalveluita kuten tiedostojen jakaminen OneDrive for Business -palvelussa, keskustelut Exchangessa, jaetun kalenterin, tehtävät ja niin edelleen. Lue lisää [Office 365-ryhmistä](https://support.office.com/article/Create-a-group-in-Office-365-7124dc4c-1de9-40d4-b096-e8add19209e9).
@@ -43,7 +43,7 @@ Kun olet luonut Power BI Desktop-tiedoston, jos julkaiset sen Power BI-sovelluks
 ## <a name="collaborate-in-office-365"></a>Tee yhteistyötä Office 365:ssa
 Yhteiskäyttö Office 365:ssa alkaa sovelluksen työtilasta Power BI:ssa.
 
-1. Valitse Power BI -palvelussa kohdan Työtilat vieressä oleva nuoli > valitse työtilasi nimen vierestä kolme pistettä (**…**). 
+1. Valitse Power BI -palvelussa kohdan Työtilat vieressä oleva nuoli > valitse työtilasi nimen vierestä kolme pistettä ( **…** ). 
    
    ![Työtilat-valikko](media/service-collaborate-power-bi-workspace/power-bi-app-ellipsis.png)
 2. Tästä valikosta voit tehdä yhteistyötä ryhmän kanssa muutamalla eri tavalla: 
@@ -64,7 +64,7 @@ Yhteiskäyttö Office 365:ssa alkaa sovelluksen työtilasta Power BI:ssa.
 2. Lue lisää [ryhmäkeskusteluista Outlook for Office 365:ssa](https://support.office.com/Article/Have-a-group-conversation-a0482e24-a769-4e39-a5ba-a7c56e828b22).
 
 ## <a name="schedule-an-event-on-the-apps-group-workspace-calendar"></a>Tapahtuman ajoittaminen sovelluksen ryhmän työtilan kalenteriin
-1. Valitse kolme pistettä (**…**) sovelluksen työtilan nimen vierestä kohdasta \> **Kalenteri**. 
+1. Valitse kolme pistettä ( **…** ) sovelluksen työtilan nimen vierestä kohdasta \> **Kalenteri**. 
    
    ![Kalenteri-välilehti](media/service-collaborate-power-bi-workspace/power-bi-app-ellipsis.png)
    

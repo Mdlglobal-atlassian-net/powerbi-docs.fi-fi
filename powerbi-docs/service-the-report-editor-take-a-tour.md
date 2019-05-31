@@ -12,11 +12,11 @@ ms.date: 02/07/2019
 ms.author: maggies
 LocalizationGroup: Reports
 ms.openlocfilehash: 66e40462081ee2f1156840d137d4c67ad0eb7b45
-ms.sourcegitcommit: b717118c44499c8fd8f57534a275f2f78aacc0f1
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/09/2019
-ms.locfileid: "55971690"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61404723"
 ---
 # <a name="tour-the-report-editor-in-power-bi"></a>Power BI -raporttieditoriin tutustuminen
 
@@ -113,7 +113,7 @@ Kentät-ruudussa näytetään tiedoissasi olevat taulukot ja kentät, joiden avu
 **∑ Koosteet** Kooste on numeerinen arvo, joka esimerkiksi ynnätään yhteen tai pyöristetään keskiarvoksi. Koosteita tuodaan yhdessä tietojen kanssa (määritetty tietomallissa, johon raportti perustuu).
 Katso lisätietoja artikkelista [Power BI -raporttien koosteet](service-aggregates.md).
 
-![Laskimen kuvake](media/service-the-report-editor-take-a-tour/pbi_calculated_icon.png) **Lasketut mitat (kutsutaan myös lasketuiksi kentiksi)**  
+![Laskimen kuvake](media/service-the-report-editor-take-a-tour/pbi_calculated_icon.png)**Lasketut mittarit (kutsutaan myös lasketuiksi kentiksi)**  
 Jokaisella lasketulla kentällä on oma pysyväiskoodattu kaavansa. Et voi muuttaa laskutoimitusta. Jos se on  esimerkiksi summa, se voi olla vain summa. Saat lisätietoja artikkelista [Mittarien ymmärtäminen](desktop-measures.md)
 
 ![Yksilöllisen kentän kuvake](media/service-the-report-editor-take-a-tour/icon.png) **Yksilölliset kentät**  

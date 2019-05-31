@@ -12,11 +12,11 @@ ms.date: 12/05/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
 ms.openlocfilehash: 3a341dda238996db4953fa7c68d7053034ca40b8
-ms.sourcegitcommit: a054782370dec56d49bb205ee10b7e2018f22693
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56661648"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61050136"
 ---
 # <a name="dashboard-tiles-in-power-bi"></a>Koontinäyttöruudut Power BI:ssä
 Ruutu on tietojen tilannevedos, jonka *suunnittelija* on kiinnittänyt koontinäyttöön. Ruutu voidaan luoda raportista, tietojoukosta, koontinäytöstä, Q&A-kyselyruudusta, Excelistä, SQL Server Reporting Servicesistä (SSRS) ja niin edelleen.  Tämä näyttökuva esittää useita eri ruutuja, jotka on kiinnitetty koontinäyttöön.
@@ -56,7 +56,7 @@ Tarvitsetko apua Power BI:n rakenneosien kanssa?  Katso [Power BI - peruskäsitt
    
 
    * [avata työkirjan, jolla tämä ruutu on luotu ](end-user-reports.md) ![laskentataulukkokuvake](./media/end-user-tiles/power-bi-open-worksheet.png)  
-    * [tarkastella ruutua kohdistustilassa ](end-user-focus.md) ![kohdistuskuvake](./media/end-user-tiles/fullscreen-icon.jpg)  
+    * [tarkastella ruutua tarkastelutilassa ](end-user-focus.md)![kohdistuskuvake](./media/end-user-tiles/fullscreen-icon.jpg)  
      * [suorittaa merkityksellisiä tietoja ](end-user-insights.md) ![merkityksellisiä tietoja -kuvake](./media/end-user-tiles/power-bi-insights.png)
     * [lisätä kommentin ja aloittaa keskustelun](end-user-comment.md)  ![kommenttikuvake](./media/end-user-tiles/comment-icons.png)
 
