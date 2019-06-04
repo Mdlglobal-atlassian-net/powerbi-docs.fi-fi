@@ -11,12 +11,12 @@ ms.date: 04/18/2018
 ms.author: mblythe
 ms.custom: seodec18
 LocalizationGroup: Gateways
-ms.openlocfilehash: 9a2fac64959ece431471eb8d3f32961c9d592c66
-ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
-ms.translationtype: HT
+ms.openlocfilehash: 5d9e468ecf3bf1fdc2e138ac06202820bbd96bcf
+ms.sourcegitcommit: 57a12aa42c8549debc60ff1c8e78533dc42e1b86
+ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/16/2019
-ms.locfileid: "56324828"
+ms.lasthandoff: 06/03/2019
+ms.locfileid: "66469776"
 ---
 # <a name="manage-a-power-bi-on-premises-gateway"></a>Power BI:n paikallisen yhdyskäytävän hallinta
 
@@ -38,26 +38,26 @@ Power BI tukee monia paikallisia tietolähteitä, joista jokaisella on omat vaat
 
     ![Hallitse yhdyskäytäviä](media/service-gateway-manage/manage-gateways.png)
 
-2. Valitse yhdyskäytävä > **tietolähde** tai siirry kohtaan Yhdyskäytävät > **Lisää tietolähde**.
+1. Valitse yhdyskäytävä > **tietolähde** tai siirry kohtaan Yhdyskäytävät > **Lisää tietolähde**.
 
     ![Lisää tietolähde](media/service-gateway-manage/add-data-source.png)
 
-3. Valitse **tietolähteen tyyppi**.
+1. Valitse **tietolähteen tyyppi**.
 
     ![Valitse SQL Server](media/service-gateway-manage/select-sql-server.png)
 
 
-4. Anna tietolähteen tiedot. Tässä esimerkissä annetut tiedot ovat **Palvelin**, **Tietokanta** ja muuta.  
+1. Anna tietolähteen tiedot. Tässä esimerkissä annetut tiedot ovat **Palvelin**, **Tietokanta** ja muuta.  
 
     ![Tietolähdeasetukset](media/service-gateway-manage/data-source-settings.png)
 
-5. SQL Serverin tapauksessa valitaan **Todennusmenetelmäksi** **Windows** tai **Perus** (SQL-todennus).  Jos valitset **Perus**, anna tietolähteen tunnistetiedot.
+1. SQL Serverin tapauksessa valitaan **Todennusmenetelmäksi** **Windows** tai **Perus** (SQL-todennus).  Jos valitset **Perus**, anna tietolähteen tunnistetiedot.
 
-6. **Lisäasetukset**-kohdassa voit halutessasi määrittää tietolähteen [yksityisyystason](https://support.office.com/article/Privacy-levels-Power-Query-CC3EDE4D-359E-4B28-BC72-9BEE7900B540) (ei koske [DirectQuerya](desktop-directquery-about.md)).
+1. Kohdassa **lisäasetukset**, voit myös määrittää [tietosuojatason](https://support.office.com/article/Privacy-levels-Power-Query-CC3EDE4D-359E-4B28-BC72-9BEE7900B540) tietolähteen (ei koske [DirectQuery](desktop-directquery-about.md)).
 
     ![Lisäasetukset](media/service-gateway-manage/advanced-settings.png)
 
-7. Valitse **Lisää**. *Yhteyden muodostaminen onnistui* -teksti tulee näkyviin, jos yhteys muodostettiin.
+1. Valitse **Lisää**. *Yhteyden muodostaminen onnistui* -teksti tulee näkyviin, jos yhteys muodostettiin.
 
     ![Yhteyden muodostaminen onnistui](media/service-gateway-manage/connection-successful.png)
 
