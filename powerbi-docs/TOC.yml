@@ -53,13 +53,13 @@
       items:
         - name: Mitä uutta viimeisin Power BI Desktop -päivitys sisältää?
           href: desktop-latest-update.md
-        - name: Mallintamisnäkymä Power BI Desktopissa (esikatselu)
+        - name: Mallintamisnäkymä Power BI Desktopissa
           href: desktop-modeling-view.md
         - name: Koosteet Power BI Desktopissa (esikatselu)
           href: desktop-aggregations.md
         - name: Yhdistelmämallit Power BI Desktopissa
           href: desktop-composite-models.md
-        - name: Moni-moneen-yhteydet Power BI Desktopissa (esikatselu)
+        - name: Moni-moneen-suhteet Power BI Desktopissa
           href: desktop-many-to-many-relationships.md
         - name: Tallennustilamoodi Power BI Desktopissa (esikatselu)
           href: desktop-storage-mode.md
@@ -177,7 +177,7 @@
               href: desktop-directquery-sap-hana.md
             - name: Oleta viite-eheys -asetus Power BI Desktopissa
               href: desktop-assume-referential-integrity.md
-            - name: SAP BW -yhdistimen käyttö Power BI Desktopissa (esikatselu)
+            - name: SAP BW -yhdistimen käyttö Power BI Desktopissa
               href: desktop-sap-bw-connector.md
             - name: OneDrive for Business -linkkien käyttö Power BI Desktopissa
               href: desktop-use-onedrive-business-links.md
@@ -189,8 +189,6 @@
               href: desktop-project-online-connect-to-data.md
         - name: Tietojen muuntaminen ja muotoilu
           items:
-            - name: Muotokarttojen käyttö Power BI Desktopissa (esikatselu)
-              href: visuals/desktop-shape-map.md
             - name: Yhdistä binaarit
               href: desktop-combine-binaries.md
         - name: Tietojen mallintaminen
@@ -213,6 +211,8 @@
               href: desktop-import-and-display-kpis.md
         - name: Raporttien luominen
           items:
+            - name: Suorituskyvyn analysoinnin käyttö Power BI Desktopissa
+              href: desktop-performance-analyzer.md
             - name: Raporttien visuaaliset elementit
               href: desktop-visual-elements-for-reports.md
             - name: Luo raporttisivuihin perustuvia työkaluvihjeitä
@@ -259,7 +259,7 @@
               href: desktop-add-custom-column.md
             - name: 'Reagoivien visualisointien luominen Power BI:ssä'
               href: visuals/desktop-create-responsive-visuals.md
-            - name: Sidottujen hierarkiaselitteiden käyttö Power BI Desktopissa (esikatselu)
+            - name: Sidottujen hierarkiaselitteiden käyttö Power BI Desktopissa
               href: desktop-inline-hierarchy-labels.md
             - name: Numeerisen alueen osittajan käyttö
               href: desktop-slicer-numeric-range.md
@@ -283,7 +283,7 @@
               href: desktop-conditional-format-visual-titles.md
             - name: Sarakkeen perusteella lajittelu Power BI Desktopissa
               href: desktop-sort-by-column.md
-            - name: Mobiilisovelluksiin optimoitujen raporttien luominen
+            - name: Raporttien optimoiminen mobiilisovelluksissa
               href: desktop-create-phone-report.md
             - name: Näytä tiedot- ja Näytä tietueet -toimintojen käyttö
               href: desktop-see-data-see-records.md
@@ -349,6 +349,8 @@
               href: visuals/power-bi-visualization-scatter.md
             - name: Suuren tiheyden pistekaaviot
               href: visuals/desktop-high-density-scatter-charts.md
+            - name: Muotokarttojen käyttö Power BI Desktopissa (esikatselu)
+              href: visuals/desktop-shape-map.md
             - name: 'Osittajat Power BI:ssä'
               href: visuals/power-bi-visualization-slicers.md
             - name: 'Taulukot Power BI:ssä'
@@ -375,6 +377,8 @@
           href: desktop-privacy-levels.md
         - name: 'Liittimen laajennettavuus Power BI:ssä'
           href: desktop-connector-extensibility.md
+        - name: Allekirjoitettuihin kolmansien osapuolten liittimiin luottaminen
+          href: desktop-trusted-third-party-connectors.md
     - name: Resurssit
       items:
         - name: Power BI Desktop -videot
@@ -401,12 +405,14 @@
           href: service-get-started.md
         - name: Yhdistä GitHub-malliin
           href: service-tutorial-connect-to-github.md
-        - name: 'Kognitiivisten palvelujen käyttö Power BI:ssä'
+        - name: Kognitiivisten palvelujen käyttö
           href: service-tutorial-use-cognitive-services.md
-        - name: Automaattianalyysipalveluiden Power BI -integrointi
+        - name: Automaattianalyysipalveluiden integrointi
           href: service-tutorial-invoke-machine-learning-model.md
-        - name: 'Koneoppimismallin luominen Power BI:llä (esikatselu)'
+        - name: Koneoppimismallin luominen (esikatselu)
           href: service-tutorial-build-machine-learning-model.md
+        - name: Tietojen päivittäminen SQL Serveristä
+          href: service-gateway-sql-tutorial.md
     - name: Käsitteet
       items:
         - name: Power BI -palvelun uudet toiminnot ja ominaisuudet
@@ -479,6 +485,22 @@
               href: service-publish-from-excel.md
             - name: Excel-työkirjan koon pienentäminen
               href: reduce-the-size-of-an-excel-workbook.md
+        - name: Tietojen noutaminen jaetuista tietojoukoista
+          items:
+            - name: Tietojoukkojen käyttö kaikissa työtiloissa
+              href: service-datasets-across-workspaces.md
+            - name: Tietojoukkojen luominen ja jakaminen (esikatselu)
+              href: service-datasets-build-permissions.md
+            - name: Tietojoukkoihin perustuvien raporttien luominen
+              href: service-datasets-discover-across-workspaces.md
+            - name: Tietojoukkoihin perustuvien raporttien kopioiminen
+              href: service-datasets-copy-reports.md
+            - name: Tietojoukkojen korottaminen
+              href: service-datasets-promote.md
+            - name: Tietojoukkojen sertifioiminen
+              href: service-datasets-certify.md
+            - name: Tietojoukkojen käytön hallinta
+              href: service-datasets-admin-across-workspaces.md
         - name: Tietojen noutaminen tietokannoista
           items:
             - name: Azure ja Power BI
@@ -495,13 +517,13 @@
           items:
             - name: Ajoitetun päivityksen määrittäminen
               href: refresh-scheduled-refresh.md
-            - name: Power BI Desktop -tiedoston tietojoukon päivittäminen – paikallinen
+            - name: Paikallisen Power BI Desktop -tiedoston tietojoukon päivittäminen
               href: refresh-desktop-file-local-drive.md
-            - name: Power BI Desktop -tiedoston tietojoukon päivittäminen – pilvipalvelu
+            - name: Power BI Desktop -pilvitiedoston tietojoukon päivittäminen
               href: refresh-desktop-file-onedrive.md
-            - name: Excel-työkirjan tietojoukon päivittäminen – paikallinen
+            - name: Paikallisen Excel-työkirjan tietojoukon päivittäminen
               href: refresh-excel-file-local-drive.md
-            - name: Excel-työkirjan tietojoukon päivittäminen – pilvipalvelu
+            - name: Excel-pilvityökirjan tietojoukon päivittäminen
               href: refresh-excel-file-onedrive.md
             - name: OneDriven .csv-tiedoston tietojoukon päivittäminen
               href: refresh-csv-file-onedrive.md
@@ -509,7 +531,7 @@
               href: power-bi-query-caching.md
             - name: Päivitystilanteiden vianmääritys
               href: refresh-troubleshooting-refresh-scenarios.md
-        - name: koontinäytöt
+        - name: Koontinäytöt
           items:
             - name: Koontinäyttöjen esittely
               href: service-dashboards.md
@@ -537,7 +559,7 @@
               href: service-dashboard-edit-tile.md
             - name: Vinkkejä laadukkaiden koontinäyttöjen suunnitteluun
               href: service-dashboards-design-tips.md
-            - name: Koontinäytön puhelinnäkymän luominen
+            - name: Raporttinäkymän optimoiminen puhelimille
               href: service-create-dashboard-mobile-phone-view.md
             - name: Ruudun QR-koodin luominen
               href: service-create-qr-code-for-tile.md
@@ -551,11 +573,11 @@
           items:
             - name: Raportin luominen tietojoukosta
               href: service-report-create-new.md
-            - name: Tietoja suodattimista ja korostamisesta raporteissa
+            - name: Suodattimet ja korostaminen raporteissa
               href: power-bi-reports-filters-and-highlighting.md
             - name: Suodattimen lisääminen raporttiin
               href: power-bi-report-add-filter.md
-            - name: 'Raportin tallentaminen Power BI:ssä'
+            - name: Raportin tallentaminen
               href: service-report-save.md
             - name: Raportin käsittely muokkausnäkymässä
               href: service-interact-with-a-report-in-editing-view.md
@@ -577,11 +599,11 @@
               href: power-bi-reports-performance.md
         - name: Kysymysten kysyminen tiedoistasi
           items:
-            - name: 'Power BI Q&A:n käytön aloittaminen'
-              href: power-bi-visualization-introduction-to-q-and-a.md
-            - name: Visualisointien ja raporttien luominen Q&A-toiminnolla
+            - name: 'Tietojen tutkiminen Q&A:n avulla'
               href: power-bi-tutorial-q-and-a.md
-            - name: Tietojen muokkaaminen toimimaan hyvin Q&A-toiminnon kanssa
+            - name: 'Visualisoinnin luominen Q&A:n avulla'
+              href: power-bi-visualization-introduction-to-q-and-a.md
+            - name: 'Excel-tietojen muokkaaminen toimimaan hyvin Q&A:n kanssa'
               href: service-prepare-data-for-q-and-a.md
             - name: Q&A-toiminnon suositeltujen kysymysten luominen
               href: service-q-and-a-create-featured-questions.md
@@ -689,6 +711,8 @@
               href: paginated-reports-view-power-bi-service.md
             - name: Parametrien käsittely (esikatselu)
               href: paginated-reports-view-parameters.md
+            - name: Tilaaminen itselle tai muille
+              href: paginated-reports-subscriptions.md
         - name: Mallisovellukset
           items:
             - name: Mallisovellusten yleiskatsaus
@@ -721,6 +745,8 @@
               href: service-admin-troubleshooting-power-bi-personal-gateway.md
             - name: Tukemattoman tietolähteen vianmääritys päivitystä varten
               href: service-admin-troubleshoot-unsupported-data-source-for-refresh.md
+            - name: Tekstinä palautettujen sisäkkäisten arvojen vianmääritys
+              href: service-troubleshooting-nested-values.md
             - name: Azure SQL -tietokantojen ajoitetun päivityksen vianmääritys
               href: service-admin-troubleshooting-scheduled-refresh-azure-sql-databases.md
             - name: 'Virhe: Excel-työkirjasta ei löydy mitään tietoja'
@@ -741,7 +767,7 @@
               href: service-delete.md
             - name: Palveluihin yhdistäminen
               items:
-                - name: Acumatica
+                - name: Sovelluksia sisältäviin palveluihin yhdistäminen
                   href: service-connect-to-services.md
                 - name: Acumatica
                   href: service-connect-to-acumatica.md
@@ -771,8 +797,6 @@
                   href: service-connect-to-connect-to.md
                 - name: GitHub
                   href: service-connect-to-github.md
-                - name: Google Analytics
-                  href: service-connect-to-google-analytics.md
                 - name: Insightly
                   href: service-connect-to-insightly.md
                 - name: IntelliBoard
@@ -873,6 +897,40 @@
               href: whitepaper-powerbi-premium-deployment.md
             - name: 'Power BI -sisällön jakaminen ulkoisille käyttäjille Azure Active Directory B2B:n avulla'
               href: whitepaper-azure-b2b-power-bi.md
+- name: Power BI Premium
+  items:
+    - name: Yleiskatsaus
+      items:
+        - name: Mikä on Power BI Premium?
+          href: service-premium-what-is.md
+    - name: Käsitteet
+      items:
+        - name: Premium-kapasiteettien hallinta
+          href: service-premium-capacity-manage.md
+        - name: Premium-kapasiteettien optimointi
+          href: service-premium-capacity-optimize.md
+        - name: Premium-kapasiteettitilanteet
+          href: service-premium-capacity-scenarios.md
+        - name: Power BI Premiumin usein kysytyt kysymykset
+          href: service-premium-faq.md
+    - name: Ohjeet
+      items:
+        - name: Osta Power BI Premium
+          href: service-admin-premium-purchase.md
+        - name: Kuormitusten määrittäminen
+          href: service-admin-premium-workloads.md
+        - name: Kapasiteettien valvonta sovelluksen avulla
+          href: service-admin-premium-monitor-capacity.md
+        - name: Kapasiteettien valvonta hallintaportaalissa
+          href: service-admin-premium-monitor-portal.md
+        - name: Lisäävän päivityksen määrittäminen
+          href: service-premium-incremental-refresh.md
+        - name: Multi-Geon määrittäminen
+          href: service-admin-premium-multi-geo.md
+        - name: Käynnistä Premium-kapasiteetti uudelleen
+          href: service-admin-premium-restart.md
+        - name: Tietojoukkoihin yhdistäminen asiakassovelluksilla ja -työkaluilla
+          href: service-premium-connect-tools.md
 - name: Power BI kehittäjille
   items:
     - name: 'Mitä kehittäjät voivat tehdä Power BI:llä?'
@@ -913,6 +971,8 @@
           items:
             - name: Upottaminen sovelluksesta
               href: developer/embed-from-apps.md
+            - name: Sovellusten automaattinen asentaminen
+              href: developer/embed-auto-install-app.md
             - name: Azure Active Directory -vuokraajan luominen
               href: developer/create-an-azure-active-directory-tenant.md
             - name: Sovelluksen rekisteröinti
@@ -1209,6 +1269,8 @@
           href: service-gateway-install.md
         - name: Hallitse yhdyskäytäviä
           href: service-gateway-manage.md
+        - name: Yhdyskäytävän suorituskyvyn valvonta
+          href: service-gateway-performance-monitoring.md
         - name: Yrityksen tietolähteen hallinta – Analysis Services
           href: service-gateway-enterprise-manage-ssas.md
         - name: Yrityksen tietolähteen hallinta – SAP HANA
@@ -1245,6 +1307,10 @@
           href: service-gateway-custom-connectors.md
         - name: Paikallisen tietoyhdyskäytävän vianmääritys
           href: service-gateway-onprem-tshoot.md
+    - name: Resurssit
+      items:
+        - name: Yhdyskäytävän kuukausittaiset päivitykset
+          href: service-gateway-monthly-updates.md
 - name: Hallinta
   items:
     - name: Yleiskatsaus
@@ -1253,32 +1319,6 @@
           href: service-admin-administering-power-bi-in-your-organization.md
     - name: Käsitteet
       items:
-        - name: Power BI Premium
-          items:
-            - name: Mikä on Power BI Premium?
-              href: service-premium.md
-            - name: 'Premium-kapasiteetti muistin käyttö, optimointi'
-              href: service-premium-understand-how-it-works.md
-            - name: Osta Power BI Premium
-              href: service-admin-premium-purchase.md
-            - name: Kapasiteettien valvonta sovelluksen avulla
-              href: service-admin-premium-monitor-capacity.md
-            - name: Kapasiteettien valvonta hallintaportaalissa
-              href: service-admin-premium-monitor-portal.md
-            - name: Kuormitusten määrittäminen
-              href: service-admin-premium-workloads.md
-            - name: Käynnistä Premium-kapasiteetti uudelleen
-              href: service-admin-premium-restart.md
-            - name: Suurten tietojoukkojen tuki
-              href: service-premium-large-datasets.md
-            - name: Lisäävä päivitys
-              href: service-premium-incremental-refresh.md
-            - name: Multi-Geo-tuki
-              href: service-admin-premium-multi-geo.md
-            - name: Tietojoukkoihin yhdistäminen asiakassovelluksilla ja -työkaluilla
-              href: service-premium-connect-tools.md
-            - name: Power BI Premiumin usein kysytyt kysymykset
-              href: service-premium-faq.md
         - name: 'Hallintarooli Office 365:ssä'
           href: service-admin-role.md
         - name: Usein kysytyt kysymykset
