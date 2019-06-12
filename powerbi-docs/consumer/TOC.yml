@@ -22,7 +22,7 @@
           href: end-user-alerts.md
     - name: Ohjeet
       items:
-        - name: Koontinäytöt
+        - name: koontinäytöt
           items:
             - name: koontinäytöt
               href: end-user-dashboards.md
@@ -176,12 +176,20 @@
           items:
             - name: iOS-sovelluksen käytön aloittaminen
               href: mobile/mobile-iphone-app-get-started.md
+            - name: 'Suojautuminen Face ID:n, Touch ID:n tai tunnuskoodin avulla'
+              href: mobile/mobile-ios-native-secure-access.md
             - name: Q&A virtuaalinen analyytikko iOS-mobiilisovelluksissa
               href: mobile/mobile-apps-ios-qna.md
+            - name: Power BI -mobiilisovelluksen integrointi Siri-pikakuvakkeiden kanssa
+              href: mobile/mobile-apps-iOS-siri-Shortcuts.md
+            - name: iOS-laitteen haun integrointi
+              href: mobile/mobile-apps-iOS-search-integration.md
             - name: 'Power BI:n Apple Watch -sovellus'
               href: mobile/mobile-apple-watch.md
             - name: Viivakoodin lukeminen iPhone-sovelluksella
               href: mobile/mobile-apps-scan-barcode-iphone.md
+            - name: Määrittäminen mobiililaitteiden hallinnan avulla
+              href: mobile/mobile-app-configuration.md
         - name: Android-laitteet
           items:
             - name: Android-sovelluksen käytön aloittaminen

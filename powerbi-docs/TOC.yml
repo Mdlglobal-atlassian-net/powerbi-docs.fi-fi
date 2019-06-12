@@ -681,9 +681,9 @@
               href: service-dataflows-configure-workspace-storage-settings.md
             - name: 'Lisää CDM-kansio Power BI:hin tietovuona (esikatselu)'
               href: service-dataflows-add-cdm-folder.md
-            - name: 'Integroi Automaattianalyysipalvelut Power BI:ssä (esikatselu)'
+            - name: 'Integroi Automaattianalyysipalvelut Power BI:ssä'
               href: service-machine-learning-integration.md
-            - name: 'Kognitiivisten palveluiden käyttäminen Power BI:ssä (esikatselu)'
+            - name: 'Kognitiivisten palveluiden käyttäminen Power BI:ssä'
               href: service-cognitive-services.md
             - name: 'Automaattianalyysipalvelut Power BI:ssä (esikatselu)'
               href: service-machine-learning-automated.md
@@ -745,8 +745,6 @@
               href: service-admin-troubleshooting-power-bi-personal-gateway.md
             - name: Tukemattoman tietolähteen vianmääritys päivitystä varten
               href: service-admin-troubleshoot-unsupported-data-source-for-refresh.md
-            - name: Tekstinä palautettujen sisäkkäisten arvojen vianmääritys
-              href: service-troubleshooting-nested-values.md
             - name: Azure SQL -tietokantojen ajoitetun päivityksen vianmääritys
               href: service-admin-troubleshooting-scheduled-refresh-azure-sql-databases.md
             - name: 'Virhe: Excel-työkirjasta ei löydy mitään tietoja'
@@ -927,6 +925,8 @@
           href: service-premium-incremental-refresh.md
         - name: Multi-Geon määrittäminen
           href: service-admin-premium-multi-geo.md
+        - name: Tuo omat salausavaimet
+          href: service-encryption-byok.md
         - name: Käynnistä Premium-kapasiteetti uudelleen
           href: service-admin-premium-restart.md
         - name: Tietojoukkoihin yhdistäminen asiakassovelluksilla ja -työkaluilla
