@@ -257,8 +257,6 @@
               href: desktop-add-column-from-example.md
             - name: Mukautetun sarakkeen lisääminen
               href: desktop-add-custom-column.md
-            - name: 'Reagoivien visualisointien luominen Power BI:ssä'
-              href: visuals/desktop-create-responsive-visuals.md
             - name: Sidottujen hierarkiaselitteiden käyttö Power BI Desktopissa
               href: desktop-inline-hierarchy-labels.md
             - name: Numeerisen alueen osittajan käyttö
@@ -689,24 +687,6 @@
               href: service-machine-learning-automated.md
         - name: 'Sivutetut raportit Power BI:ssä'
           items:
-            - name: Mitä sivutetut raportit ovat? (esikatselu)
-              href: paginated-reports-report-builder-power-bi.md
-            - name: Sivutettujen raporttien usein kysytyt kysymykset (esikatselu)
-              href: paginated-reports-faq.md
-            - name: Sivutetun raportin luominen ja lataaminen (esikatselu)
-              href: paginated-reports-quickstart-aw.md
-            - name: Siirtyminen raportin suunnittelunäkymässä (esikatselu)
-              href: paginated-reports-report-design-view.md
-            - name: Tietojen lisääminen suoraan sivutettuun raporttiin (esikatselu)
-              href: paginated-reports-enter-data.md
-            - name: Upotetun tietolähteen luominen (esikatselu)
-              href: paginated-reports-embedded-data-source.md
-            - name: Upotetun tietojoukon luominen (esikatselu)
-              href: paginated-reports-create-embedded-dataset.md
-            - name: Parametrien luominen (esikatselu)
-              href: paginated-reports-parameters.md
-            - name: Sivutetun raportin julkaiseminen (esikatselu)
-              href: paginated-reports-save-to-power-bi-service.md
             - name: Sivutetun raportin tarkastelu (esikatselu)
               href: paginated-reports-view-power-bi-service.md
             - name: Parametrien käsittely (esikatselu)
@@ -931,6 +911,52 @@
           href: service-admin-premium-restart.md
         - name: Tietojoukkoihin yhdistäminen asiakassovelluksilla ja -työkaluilla
           href: service-premium-connect-tools.md
+- name: 'Power BI:n sivutetun raportin muodostin'
+  items:
+    - name: Yleiskatsaus
+      items:
+        - name: Mitä sivutetut raportit ovat?
+          href: paginated-reports-report-builder-power-bi.md
+        - name: 'Power BI:n raportin muodostin'
+          href: report-builder-power-bi.md
+    - name: Opetusohjelmat
+      items:
+        - name: Sivutetun raportin luominen ja lataaminen
+          href: paginated-reports-quickstart-aw.md
+    - name: Käsitteet
+      items:
+        - name: Siirry raportin suunnittelunäkymässä
+          href: paginated-reports-report-design-view.md
+        - name: Raportin suunnittelu
+          href: report-builder-planning-report.md
+        - name: Raportin muodostimen tiedot
+          href: report-builder-data.md
+        - name: Suunnitteluvinkkejä
+          href: report-builder-design-tips.md
+        - name: 'Taulukot, matriisit, luettelot'
+          href: report-builder-tables-matrices-lists.md
+        - name: Parametrit
+          href: report-builder-parameters.md
+        - name: Lausekkeet
+          href: report-builder-expressions.md
+        - name: Lauseke-esimerkit
+          href: report-builder-expression-examples.md
+        - name: Raporttien esikatselu
+          href: report-builder-previewing-reports.md
+        - name: Sivutettujen raporttien usein kysytyt kysymykset
+          href: paginated-reports-faq.md
+    - name: Ohjeet
+      items:
+        - name: Anna tiedot suoraan sivutettuun raporttiin
+          href: paginated-reports-enter-data.md
+        - name: Upotetun tietolähteen luominen
+          href: paginated-reports-embedded-data-source.md
+        - name: Upotetun tietojoukon luominen
+          href: paginated-reports-create-embedded-dataset.md
+        - name: Parametrien luominen
+          href: paginated-reports-parameters.md
+        - name: Sivutetun raportin julkaiseminen
+          href: paginated-reports-save-to-power-bi-service.md
 - name: Power BI kehittäjille
   items:
     - name: 'Mitä kehittäjät voivat tehdä Power BI:llä?'
