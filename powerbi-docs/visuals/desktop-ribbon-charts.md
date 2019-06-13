@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 01/30/2019
+ms.date: 06/10/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 08a2de32b092ba24b66ddd9f173be1eaea8819ab
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 3400071c6b8cee472bb61475e6d3482189680563
+ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61394461"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "66840103"
 ---
 # <a name="use-ribbon-charts-in-power-bi"></a>Nauhakaavioiden käyttäminen Power BI:ssä
 Voit käyttää nauhakaavioita tietojen visualisointiin ja selvittääksesi nopeasti, millä tietoluokalla on korkein sija (suurin arvo). Nauhakaaviot esittävät luokkamuutoksen tehokkaasti, koska korkein sija (suurin arvo) näkyy aina ylimpänä kullakin ajanjaksolla. 
@@ -27,7 +27,7 @@ Avaa seuraamista varten [Jälleenmyyntianalyysin malliraportti](../sample-retail
 
 1. Luo nauhakaavio valitsemalla **Nauhakaavio** **Visualisoinnit**-ruudusta.
 
-    ![visualisointimallit](media/desktop-ribbon-charts/ribbon-charts_02.png)
+    ![visualisointimallit](media/desktop-ribbon-charts/power-bi-template.png)
 
     Nauhakaavioissa tietoluokat yhdistetään visualisoidun aikajatkumon ajan nauhoilla, joten näet helposti, miten tietty luokka sijoittuu kaavion koko x-akselille (yleensä aikajana).
 

@@ -7,16 +7,16 @@ ms.reviewer: ''
 ms.custom: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
-ms.topic: how-to
+ms.topic: conceptual
 ms.date: 01/24/2019
 ms.author: mihart
 LocalizationGroup: Getting started
-ms.openlocfilehash: d828748cf4b625ee555bbc98b91b3ec0c6d85365
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 328010a97825f84e103a1100c8783cd02769d67f
+ms.sourcegitcommit: 81ba3572531cbe95ea0b887b94e91f94050f3129
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61049824"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66750973"
 ---
 # <a name="sign-in-to-power-bi-service"></a>Power BI -palveluun kirjautuminen
 
@@ -25,12 +25,12 @@ Tarvitset tilin, jotta voit kirjautua Power BI -palveluun. Voit hankkia Power BI
 
 ## <a name="sign-in-for-the-first-time"></a>Ensimmäinen kirjautumiskerta
 
-### <a name="step-one-open-a-browser"></a>1. vaihe: avaa selain
+### <a name="step-one-open-a-browser"></a>1\. vaihe: avaa selain
 Power BI -palvelua käytetään selaimella.  Avaa siis suosikkiselaimesi ja anna osoitteeksi **app.powerbi.com**.
 
 ![selainkenttä, johon on kirjoitettu](media/end-user-sign-in/power-bi-sign-in.png)
 
-### <a name="step-two-type-your-email-address"></a>2. vaihe: kirjoita sähköpostiosoitteesi
+### <a name="step-two-type-your-email-address"></a>2\. vaihe: kirjoita sähköpostiosoitteesi
 Kun kirjaudut ensimmäistä kertaa, sinulta kysytään sähköpostiosoitettasi.  Voit käyttää työpaikan tai oppilaitoksen sähköpostiosoitetta, jolla Power BI:hin on rekisteröidytty.  
 
 Tarkista postilaatikostasi Power BI -järjestelmänvalvojalta saamasi viesti. Useimmat järjestelmänvalvojat lähettävät tervetulosähköpostin, joka sisältää tilapäisen salasanasi. Kirjaudu sisään tällä sähköpostitilillä. 
@@ -39,14 +39,14 @@ Tarkista postilaatikostasi Power BI -järjestelmänvalvojalta saamasi viesti. Us
 
 
  
-### <a name="step-three-create-a-new-password"></a>3. vaihe: luo uusi salasana
+### <a name="step-three-create-a-new-password"></a>3\. vaihe: luo uusi salasana
 Jos Power BI -järjestelmänvalvoja on lähettänyt sinulla tilapäisen salasanan, kirjoita se **Nykyinen salasana** -kenttään. Jos et ole saanut tätä salasanaa sähköpostitse, ota yhteyttä Power BI -järjestelmänvalvojaasi
 
 ![kirjautumiskenttään kirjoitettu sähköpostiosoite](media/end-user-sign-in/power-bi-login2.png)
 
 Power BI muistaa tunnistetietosi, joten sinun ei tarvitse antaa käyttäjänimeäsi ja salasanaasi enää seuraavalla kirjautumiskerralla. 
 
-### <a name="step-four-review-your-home-page"></a>4. vaihe: tarkista aloitussivu
+### <a name="step-four-review-your-home-page"></a>4\. vaihe: tarkista aloitussivu
 Ensimmäisellä käyttökerralla Power BI avautuu **aloitussivullesi**. Jos **aloitussivusi** ei avaudu, valitse se vasemmasta siirtymisruudusta. 
 
 ![kirjautumiskenttään kirjoitettu sähköpostiosoite](media/end-user-sign-in/power-bi-home-select.png)
