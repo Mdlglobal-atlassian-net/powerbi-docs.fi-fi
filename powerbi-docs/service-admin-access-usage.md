@@ -1,6 +1,6 @@
 ---
 title: Kirjautuneena olevien Power BI -käyttäjien etsiminen
-description: Jos olet vuokraajan järjestelmänvalvoja ja haluat nähdä, kuka on kirjautuneena sisään Power BI, voit käyttää Azure Active Directory ‑käyttöoikeudella raportit käyttöraporteista.
+description: Jos olet vuokraajan järjestelmänvalvoja ja haluat nähdä, kuka on kirjautuneena sisään Power BI:hin, voit katsoa sen Azure Active Directory -käyttöoikeudella käyttöraporteista.
 author: mgblythe
 manager: kfile
 ms.reviewer: ''
@@ -10,27 +10,25 @@ ms.topic: conceptual
 ms.date: 04/23/2019
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: e513607dd89aee15f10145cf62bd461621cc12c0
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 7149d8601aa7a834f91a8d98f3a7a9deac7bf43b
+ms.sourcegitcommit: 762857c8ca09ce222cc3f8b006fa1b65d11e4ace
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "64906721"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66721323"
 ---
 # <a name="find-power-bi-users-that-have-signed-in"></a>Kirjautuneena olevien Power BI -käyttäjien etsiminen
 
-Jos olet vuokraajan järjestelmänvalvoja ja haluat nähdä, kuka on kirjautuneena sisään Power BI käyttää [Azure Active Directory ‑käyttöoikeudella raporttien](/azure/active-directory/reports-monitoring/concept-sign-ins) käyttöraporteista.
-
-<iframe width="640" height="360" src="https://www.youtube.com/embed/1AVgh9w9VM8?showinfo=0" frameborder="0" allowfullscreen></iframe>
+Jos olet vuokraajan järjestelmänvalvoja ja haluat nähdä, kuka on kirjautuneena sisään Power BI:hin, katso se [Azure Active Directory -käyttöoikeudella käyttöraporteista](/azure/active-directory/reports-monitoring/concept-sign-ins).
 
 > [!NOTE]
-> **Sisäänkirjautumiset** raportti sisältää hyödyllisiä tietoja, mutta se ei tunnista käyttöoikeus kullakin käyttäjällä on tyyppiä. Katso käyttöoikeudet Microsoft 365 -hallintakeskuksessa.
+> Tämä **Kirjautumiset**-raportti sisältää hyödyllisiä tietoja, mutta se ei määritä kullakin käyttäjällä olevaa käyttöoikeustyyppiä. Katso käyttöoikeudet Microsoft 365 -hallintakeskuksessa.
 
 ## <a name="requirements"></a>Vaatimukset
 
 Kaikki käyttäjät (myös muut kuin järjestelmänvalvojat) voivat nähdä raportin omista kirjautumisistaan, mutta sinun on täytettävä seuraavat vaatimukset, jotta voit nähdä raportin kaikista käyttäjistä.
 
-* Vuokraajan on oltava liitetty Azure Active Directory Premium-käyttöoikeus.
+* Vuokraajalla on oltava vuokraajaan liitetty Azure Active Directory Premium -käyttöoikeus.
 
 * Sinulla on oltava jokin seuraavista rooleista: Yleinen järjestelmänvalvoja, Suojauksen järjestelmänvalvoja tai rooli, jolla on suojaustietojen lukuoikeudet.
 
@@ -42,29 +40,29 @@ Jos haluat tarkastella kirjautumistoimintaa, toimi seuraavien ohjeiden mukaisest
 
 1. Valitse **Valvonta**-kohdassa **Kirjautumiset**.
    
-    ![Näyttökuva Azure-Käyttöliittymän korostettuna Azure Active Directory- ja sisäänkirjautumiset asetuksiin.](media/service-admin-access-usage/azure-portal-sign-ins.png)
+    ![Näyttökuva Azure-käyttöliittymästä, jossa on korostettuna Azure Active Directory- ja Kirjautumiset -asetukset.](media/service-admin-access-usage/azure-portal-sign-ins.png)
 
 1. Valitse Sovellus-kenttään suodattimeksi joko **Microsoft Power BI** tai **Power BI Gateway** ja valitse **Käytä**.
 
-    **Microsoft Power BI** suodattimet kirjautumistoimintaa liittyvät palveluun, olisi **Power BI Gateway** kirjautumistoimintaa paikallisen tietoyhdyskäytävän tiettyjä suodattimia.
+    **Microsoft Power BI** suodattaa palvelun kirjautumistoiminnan, kun taas **Power BI Gateway** suodattaa paikallisen tietoyhdyskäytävän tietyt kirjautumiset.
    
-    ![Näyttökuva sisäänkirjautumiset suodattimen korostettuna sovellukset-kentän.](media/service-admin-access-usage/sign-in-filter.png)
+    ![Näyttökuva Kirjautumiset-suodattimesta Sovellukset-kenttä korostettuna.](media/service-admin-access-usage/sign-in-filter.png)
 
 ## <a name="export-the-data"></a>Tietojen vieminen
 
-Voit myös [sisäänkirjautumisen raportin lataaminen](/azure/active-directory/reports-monitoring/quickstart-download-sign-in-report) jommassakummassa seuraavista muodoista: CSV-tiedostosta tai JSON-tiedosto.
+Voit [ladata kirjautumisraportin](/azure/active-directory/reports-monitoring/quickstart-download-sign-in-report) kahdessa muodossa, joko CSV-tiedostona tai JSON-tiedostona.
 
-![Näyttökuva Lataa-painiketta.](media/service-admin-access-usage/download-sign-in-data-csv.png)
+![Näyttökuva latauspainikkeesta.](media/service-admin-access-usage/download-sign-in-data-csv.png)
 
-Yläosassa **sisäänkirjautumiset** raportin, valitse **Lataa** ja valitse jokin seuraavista vaihtoehdoista:
+Valitse **Kirjautumiset**-raportin yläreunasta **Lataa** ja sitten toinen seuraavista vaihtoehdoista:
 
-* **CSV** lataamaan mukaiset tiedot CSV-tiedostona.
+* **CSV** ladataksesi suodattimien mukaiset tiedot csv-tiedostona.
 
-* **JSON** ladata mukaiset tiedot JSON-tiedoston.
+* **JSON** ladataksesi suodattimien mukaiset tiedot json-tiedostona.
 
 ## <a name="data-retention"></a>Tietojen säilytys
 
-Kirjautumiseen liittyvät tiedot ovat käytettävissä enintään 30 päivän ajan. Katso lisätietoja, [Azure Active Directory-raporttien säilytyskäytännöt](/azure/active-directory/reports-monitoring/reference-reports-data-retention).
+Kirjautumiseen liittyvät tiedot ovat käytettävissä enintään 30 päivän ajan. Lisätietoja on artikkelissa [Azure Active Directoryn raporttien säilytyskäytännöt](/azure/active-directory/reports-monitoring/reference-reports-data-retention).
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 

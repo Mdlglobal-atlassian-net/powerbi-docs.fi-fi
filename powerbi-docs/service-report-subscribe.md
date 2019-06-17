@@ -1,6 +1,6 @@
 ---
-title: Tilaa itsellesi ja muille raportteja ja koontinäyttöjä - Power BI
-description: Lue, miten voit tilata itsellesi ja muille Power BI-raporttisivun, koontinäytön tai sivutetun raportin tilannevedos.
+title: Raporttien ja koontinäyttöjen tilaaminen itsellesi ja muille – Power BI
+description: Opi tilaamaan tilannevedoksia Power BI:n raporttisivuista, koontinäytöistä ja sivutetuista raporteista.
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
@@ -11,16 +11,16 @@ ms.topic: conceptual
 ms.date: 05/20/2019
 ms.author: maggies
 LocalizationGroup: Common tasks
-ms.openlocfilehash: a344e3cdd93fbd237387b61fb4735b41f22625e3
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: b1d0914f146ea56697ada2a64c59744690595054
+ms.sourcegitcommit: 24781cdab5fbe43fc14248db636169cc54ef6721
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65991125"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66498073"
 ---
 # <a name="subscribe-yourself-and-others-to-reports-and-dashboards-in-the-power-bi-service"></a>Power BI -palvelun raporttien ja koontinäyttöjen tilaaminen itsellesi ja muille
 
-Voit tilata itsellesi ja raporttisivuja, koontinäyttöjä ja sivutettuja raportteja, jotka sinulle. Power BI lähettää tilannevedos Saapuneet-kansioosi. Voit määrittää, miten usein haluat Power BI:n lähettävän sähköpostia: päivittäin, viikoittain tai tietojen päivittyessä (päivän ensimmäinen päivitys).  Jos valitset päivittäin tai viikoittain, voit valita aika haluat on tilaus, suorita.  Voit määrittää jopa 24 eri tilausta per päivä kullekin raporttisivulle ja koontinäytölle.
+Voit tilata itsellesi ja kollegoillesi tärkeimmät raporttisivut, koontinäytöt ja sivutetut raportit. Tällä tavalla Power BI lähettää sinulle sähköpostitse niistä tilannevedoksen. Voit määrittää, miten usein haluat Power BI:n lähettävän sähköpostia: päivittäin, viikoittain tai tietojen päivittyessä (päivän ensimmäinen päivitys).  Jos tilaat päivittäin tai viikoittain, voit valita kellonajan, jolloin sähköpostit lähetetään.  Voit määrittää jopa 24 eri tilausta per päivä kullekin raporttisivulle ja koontinäytölle.
 
 ![sähköpostitilannevedos koontinäytöstä](media/service-report-subscribe/power-bi-dashboard-email-new.jpg) 
 
@@ -30,13 +30,12 @@ Voit luoda tilauksia vain Power BI -palvelussa. Saat sähköpostin, joka sisält
 
 - Tilauksen **luominen** on Power BI Pro -ominaisuus.
 - Jos haluat luoda tilauksen itsellesi, et tarvitse muokkausoikeuksia sisältöön (koontinäyttö tai raportti), mutta jos haluat luoda tilauksen jollekin muulle, tarvitset muokkausoikeudet. 
-- Tammikuusta 2019 alkaen tietojoukon päivityksen ei enää tarvitse olla määritettynä tilausten käyttämiseksi.  Tilaus toteutetaan riippumatta määrittämistäsi ajoitetuista päivityksistä.  
 
 ## <a name="subscribe-to-a-dashboard-report-page-or-paginated-report"></a>Koontinäytön, raporttisivun tai sivutetun raportin tilaaminen
 
-Olet tilaat koontinäytön, raportin tai sivutetun raportin, prosessi on samankaltainen kuin. Samaa painiketta painamalla voit tilata Power BI -palvelun koontinäyttöjä ja raportteja.
+Koontinäytön, raportin ja sivutetun raportin tilausprosessit ovat samankaltaiset. Samaa painiketta painamalla voit tilata Power BI -palvelun koontinäyttöjä ja raportteja.
 
-Sivutettujen raporttien tilaaminen on hieman erilainen. Katso [itsellesi ja muille tilata sivutetun raportin Power BI-palvelussa](paginated-reports-subscriptions.md) lisätietoja.
+Sivutettujen raporttien tilaaminen on hieman erilaista. Saat lisätietoja ohjeartikkelista [Power BI -palvelun sivutettujen raporttien tai koontinäyttöjen tilaaminen itsellesi ja muille](paginated-reports-subscriptions.md).
  
 ![Tilaa-kuvakkeen valitseminen](media/service-report-subscribe/power-bi-subscribe-orientation.png).
 
@@ -64,7 +63,7 @@ Sivutettujen raporttien tilaaminen on hieman erilainen. Katso [itsellesi ja muil
 7. Valitse **Tallenna ja sulje**. Tilauksen vastaanottajat saavat sähköpostin ja tilannevedoksen koontinäytöstä tai raporttisivusta määrittämäsi aikataulun mukaisesti. Voit luoda jopa 24 tilausta per raportti ja koontinäyttö. Voit määrittää kullekin tilaukselle omat vastaanottajat, kellonajat ja lähetystiheydet.  Kaikissa tilauksissa, joiden tiheydeksi määritetään **Tietojen päivittämisen jälkeen**, lähetetään sähköpostia vain raportin tai koontinäytön kyseisen päivän ensimmäisen ajoitetun päivityksen jälkeen.   
       
    > [!TIP]
-   > Haluatko lähettää sähköpostiviestin tilauksesta heti vai pyydettäessä milloin tahansa? Valitse **Suorita nyt** niille koontinäytön tai raportin tilauksille, jotka haluat lähettää. Näkyviin tulee ilmoitus, että sähköpostiviesti on matkalla kaikille kyseisen tilauksen käyttäjille.  Se voi tehdä niin monta kertaa kuin haluat. Toiminto ei vaikuta päivittäiseen 24 ajoitetun tilauksen rajoitukseen raporttia tai koontinäyttöä kohti. Käynnistä pohjana olevan tietojoukon tietojen päivittämistä. 
+   > Haluatko lähettää sähköpostiviestin tilauksesta heti vai pyydettäessä milloin tahansa? Valitse **Suorita nyt** niille koontinäytön tai raportin tilauksille, jotka haluat lähettää. Näkyviin tulee ilmoitus, että sähköpostiviesti on matkalla kaikille kyseisen tilauksen käyttäjille.  Voit tehdä tämän niin usein kuin haluat. Toiminto ei vaikuta päivittäiseen 24 ajoitetun tilauksen rajoitukseen raporttia tai koontinäyttöä kohti. Tämä EI aloita pohjana olevan tietojoukon tietojen päivittämistä. 
    > 
    > 
    
@@ -87,10 +86,11 @@ Tilaus päättyy, jos Pro-käyttöoikeus umpeutuu, omistaja poistaa koontinäyt�
 
 ## <a name="considerations-and-troubleshooting"></a>Huomioon otettavat seikat ja vianmääritys
 
-* Jos koontinäytössä on yli 25 kiinnitettyä ruutua tai 4 kiinnitettyä reaaliaikaisista raporttisivua, koontinäyttö ei ehkä hahmonnu täysin käyttäjille lähetetyissä tilauksen sähköpostiviesteissä.  Näiden ruutujen määrää yli koontinäyttöihin tilaukset eivät ole estetty. Ne ovat kuitenkin huomioon Jos kohtaat ongelmia, joita ei tueta. Harkitse muokkaamalla niitä vastaavasti kirjoitettavat tuetulla alueella.
-* Sähköposti-tilauksesi määritettäessä säilytetään muista on välinen viive tilauksen työn käynnistyessä ja tarkka ajan sähköpostiviesti lähetetään.  Määritä näiden kahden välillä viiveen minimoimiseksi-ajoitetun tietojen päivittämisen kuin kun sähköposti-tilauksesi on ajoitettu suoritettavaksi eri ajaksi.
-* Koontinäytön sähköpostitilaukset, jos joillakin ruuduilla on rivitason suojaus (RLS) käytössä, näitä ruutuja ei Näytä.  
-* -Raportin sähköpostitilaukset, jos tietojoukko käyttää rivitason suojaus, voit luoda tilauksen itsellesi. Et voi tilata muille raportin kanssa rivitason suojaus (RLS) käytössä.
+* Jos koontinäytössä on yli 25 kiinnitettyä ruutua tai 4 kiinnitettyä reaaliaikaisista raporttisivua, koontinäyttö ei ehkä hahmonnu täysin käyttäjille lähetetyissä tilauksen sähköpostiviesteissä.  Koontinäyttöjen tilauksia näin monissa ruuduissa ei ole estetty. Niitä ei kuitenkaan tueta mahdollisissa ongelmatilanteissa. Sinun kannattaa ehkä muokata ruutujen määrä tuettuun määrään.
+* Tämä on aika, jolloin tilaustyösi alkaa. Joissain tilanteissa saattaa kestää muutaman minuutin, ennen kuin sähköposti toimitetaan postilaatikkoosi.
+* Joissain harvoissa tapauksissa sähköpostitilausten toimittaminen vastaanottajille saattaa kestää yli 15 minuuttia. Jos näin käy, suosittelemme, että suoritat tietojen päivittämisen ja sähköpostien tilaamisen eri aikoihin toimitusten varmistamiseksi. Jos ongelma jatkuu, ota yhteyttä Power BI -tukeen.
+* Jos koontinäytön sähköpostitilausten joillakin ruuduilla on käytössä rivitason suojaus (RLS), näitä ruutuja ei näytetä.  
+* Jos raportin sähköpostitilausten tietojoukko käyttää rivitason suojausta (RSL), voit luoda tilauksen itsellesi. Et kuitenkaan voi tilata muille raporttia, jossa käytetään rivitason suojausta.
 * Raporttisivujen tilaukset on sidottu raporttisivun nimeen. Jos tilaat raporttisivun ja nimeät sen uudelleen, sinun on luotava myös tilaus uudelleen.
 * Tietyt organisaatiosi Azure Active Directoryyn määrittämät asetukset voivat rajoittaa sähköpostitilausten käyttämistä Power BI:ssä.  Tällaisia rajoituksia voivat olla esimerkiksi monimenetelmäinen todentaminen tai IP-aluerajoitukset resursseja käytettäessä.
 * Tällä hetkellä reaaliaikaisen yhteyden tietojoukkoja käyttävien raporttien/raporttinäkymien sähköpostitilauksia ei tueta, kun tilauksia tehdään muille käyttäjille kuin itsellesi.
@@ -105,6 +105,6 @@ Tilaus päättyy, jos Pro-käyttöoikeus umpeutuu, omistaja poistaa koontinäyt�
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
-- [Tilaa itsellesi ja muille sivutetun raportin Power BI-palvelussa](paginated-reports-subscriptions.md)
+- [Power BI -palvelun sivutettujen raporttien tai koontinäyttöjen tilaaminen itsellesi ja muille](paginated-reports-subscriptions.md)
 - Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)    
 - [Lue blogimerkintä](https://powerbi.microsoft.com/blog/introducing-dashboard-email-subscriptions-a-360-degree-view-of-your-business-in-your-inbox-every-day/)

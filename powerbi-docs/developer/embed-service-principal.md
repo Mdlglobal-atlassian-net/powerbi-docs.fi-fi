@@ -10,12 +10,12 @@ ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 03/29/2019
-ms.openlocfilehash: 8fa11926a66b5e295ee23fa6c5b90bfedb2b9761
-ms.sourcegitcommit: 8bf2419b7cb4bf95fc975d07a329b78db5b19f81
-ms.translationtype: MT
+ms.openlocfilehash: 1b0386d523e4a89b7687506564f575e31b55f2e7
+ms.sourcegitcommit: 762857c8ca09ce222cc3f8b006fa1b65d11e4ace
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66375075"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66720343"
 ---
 # <a name="service-principal-with-power-bi-preview"></a>Palvelun päänimi ja Power BI (esikatselu)
 
@@ -120,7 +120,7 @@ Palvelun päänimen (sovellustunnus) käyttö eroaa tavallisen päätilin käyt�
 
 5. Lisää palvelun päänimi **järjestelmänvalvojaksi** uuteen luomaasi työtilaan. Voit hallita tätä [ohjelmointirajapinnoilla](https://docs.microsoft.com/rest/api/power-bi/groups/addgroupuser) tai Power BI -palvelussa.
 
-    ![Lisää palveluobjektin järjestelmänvalvojana työtilaan](media/embed-service-principal/add-service-principal-in-the-UI.png)
+    ![Palvelun päänimen lisääminen järjestelmänvalvojaksi työtilaan](media/embed-service-principal/add-service-principal-in-the-UI.png)
 
 6. Nyt voit upottaa sisältöä mallisovellukseen tai omaan sovellukseesi.
 
@@ -168,17 +168,17 @@ Alla on esimerkkikomentosarja, jolla voit hakea palvelun päänimen objektitunnu
 
 * Palvelun päänimi toimi vain [uusien sovellustyötilojen](../service-create-the-new-workspaces.md) kanssa.
 * **Omaa työtilaa** ei tueta, kun käytät palvelun päänimeä.
-* Tarvitset varattua Premium-kapasiteettia, kun siirryt hyötykäyttöön.
+* Tarvitset varattua kapasiteettia, kun siirryt hyötykäyttöön.
 * Et voi kirjautua Power BI -portaaliin palvelun päänimellä.
 * Power BI -järjestelmänvalvojan oikeuksia edellytetään, kun otat palvelun päänimen käyttöön Power BI -hallintaportaalin kehittäjäasetuksissa.
 * Et voi asentaa tai hallita paikallista tietoyhdyskäytävää palvelun päänimellä.
 * [Organisaatiosi upotetut sovellukset](embed-sample-for-your-organization.md) eivät voi käyttää palvelun päänimeä.
 * [Tietovoiden](../service-dataflows-overview.md) hallintaa ei tueta.
-* Palvelun päänimen ei tällä hetkellä tue mitään järjestelmänvalvojan ohjelmointirajapintoja.
+* Palvelun päänimi ei tällä hetkellä tue mitään järjestelmänvalvojien ohjelmointirajapintoja.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
 * [Sovelluksen rekisteröiminen](register-app.md)
 * [Power BI Embedded asiakkaillesi](embed-sample-for-customers.md)
 * [Sovellusobjektit ja palvelun päänimen objektit Azure Active Directoryssa](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals)
-* [Rivitason suojausta palveluobjektia (esikatselu) paikallisen tietoyhdyskäytävän avulla](embedded-row-level-security.md#on-premises-data-gateway-with-service-principal-preview)
+* [Paikallista tietoyhdyskäytävää ja palvelun päänimeä käyttävä rivitason suojaus (esikatselu)](embedded-row-level-security.md#on-premises-data-gateway-with-service-principal-preview)

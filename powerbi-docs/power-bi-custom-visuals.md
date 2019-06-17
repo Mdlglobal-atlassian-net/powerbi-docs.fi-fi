@@ -10,24 +10,24 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 05/15/2019
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 3fd2f3e47c9b6dd2144ed5a66d45e65a00c5b92e
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 23436fb8e21e1be3a863986a773d7d969da65122
+ms.sourcegitcommit: 24781cdab5fbe43fc14248db636169cc54ef6721
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66051253"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66498052"
 ---
 # <a name="custom-visuals-in-power-bi"></a>Mukautetut visualisoinnit Power BI:ssä
 
-Kun luot tai muokkaat Power BI-raporttiin, voit käyttää monia eri visualisointityyppejä. Nämä visualisoinnit kuvakkeet näkyvät **visualisoinnit** ruudussa. Nämä visualisoinnit ovat näihin sovelluksiin esimääritetyn, kun lataat [Power BI Desktop](https://powerbi.microsoft.com/desktop/) tai avaa [Power BI-palvelun](https://app.powerbi.com).
+Kun luot tai muokkaat Power BI -raporttia, käytettävissäsi on monia eri visualisointityyppejä. Näiden visualisointien kuvakkeet näytetään **Visualisoinnit**-ruudussa. Nämä visualisoinnit ovat heti käytettävissäsi, kun lataat [Power BI Desktopin](https://powerbi.microsoft.com/desktop/) tai avaat [Power BI -palvelun](https://app.powerbi.com).
 
 ![visualisoinnit](media/power-bi-custom-visuals/power-bi-visualizations.png)
 
-Et ole kuitenkin ainoat visualisointien. Jos valitset alareunassa kolme pistettä (...), toinen raportin visualisointien lähde, on käytettävissä -*mukautettujen visualisointien*.
+Sinun ei kuitenkaan tarvitse tyytyä pelkästään näihin visualisointeihin. Kun valitset alareunasta kolme pistettä (...), näet toisenkin lähteen raporttivisualisoinneille: *mukautetut visualisoinnit*.
 
-Kehittäjät luoda mukautettuja visualisointeja mukautettujen visualisointien SDK: N käyttäminen. Nämä visualisoinnit yrityskäyttäjät voivat tarkastella tietojaan parhaiten Omat tavalla. Raporttien tekijät voit sitten tuoda mukautetut visualisointitiedostot raportteihinsa ja käyttää niitä Power BI-visualisointien tapaan. Mukautetut visualisoinnit ovat Power BI ensimmäisen luokan kansalainen ja voidaan suodattaa korostetun, muokattu, jaetun ja niin edelleen.
+Kehittäjät luovat mukautettuja visualisointeja niiden SDK:lla. Näillä visualisoinneilla yrityskäyttäjät voivat tarkastella tietoja tarpeisiinsa sopivilla tavoilla. Raporttien tekijät voivat tuoda mukautettuja visualisointitiedostoja raportteihinsa ja käyttää niitä minkä tahansa muun Power BI -visualisoinnin tapaan. Mukautetut visualisoinnit ovat Power BI:n ykkösluokkaa: niitä voi suodattaa, korostaa, muokata, jakaa ja niin edelleen.
 
-Mukautetut visualisoinnit on otettu käyttöön kolmella tavalla:
+Mukautettuja visualisointeja voi ottaa käyttöön kolmella tavalla:
 
 * Mukautetut visualisointitiedostot
 * Organisaation visualisoinnit
@@ -35,33 +35,33 @@ Mukautetut visualisoinnit on otettu käyttöön kolmella tavalla:
 
 ## <a name="custom-visual-files"></a>Mukautetut visualisointitiedostot
 
-Mukautetut visualisoinnit ovat paketteja, jotka sisältävät koodin antaa heille tietojen hahmontamista varten. Kuka tahansa voi luoda mukautetun visualisoinnin ja pakata sen yksittäisen `.pbiviz` -tiedosto, joka voidaan sitten tuoda Power BI-raporttiin.
+Mukautetut visualisoinnit ovat paketteja, jotka sisältävät koodin niille tarjottujen tietojen näyttämiseksi (hahmontamiseksi). Kuka tahansa voi luoda mukautetun visualisoinnin ja pakata sen yksittäiseksi `.pbiviz`-tiedostoksi, jonka voi sitten tuoda Power BI -raporttiin.
 
 > [!WARNING]
-> Mukautettu visualisointi voi sisältää koodia, suojaus- tai tietosuojariskejä. Varmista, että luotat tekijään ja mukautetun visualisoinnin lähde ennen kuin tuot sen raporttiisi.
+> Mukautettu visualisointi voi sisältää koodia, joka aiheuttaa suojaus- tai tietosuojariskejä. Varmista, että luotat mukautetun visualisoinnin tekijään ja lähteeseen, ennen kuin tuot sen raporttiisi.
 
 ## <a name="organizational-visuals"></a>Organisaation visualisoinnit
 
-Power BI-järjestelmänvalvojat Hyväksy ja ottaa käyttöön organisaatiossaan, joka raporttien tekijät voivat helposti löytää, päivittää ja käyttää mukautettuja visualisointeja. Järjestelmänvalvojat voivat hallita helposti (esimerkiksi version päivitys, käytöstäpoisto/käyttöönotto) nämä visualisoinnit.
+Power BI -järjestelmänvalvojat hyväksyvät mukautettuja visualisointeja ja ottavat niitä käyttöön organisaatiossaan, jotta raporttien tekijät voivat helposti etsiä, päivittää ja käyttää niitä. Järjestelmänvalvojat voivat hallita näitä visualisointeja helposti (esimerkiksi päivittää version, ottaa käyttöön ja poistaa käytöstä).
 
- [Lue lisätietoja organisaation visualisointien](power-bi-custom-visuals-organization.md).
+ [Lue lisätietoja organisaation visualisoinneista](power-bi-custom-visuals-organization.md).
 
 ## <a name="marketplace-visuals"></a>Marketplacen visualisoinnit
 
-Yhteisön jäsenet ja Microsoft ovat antaneet yleiseen käyttöön mukautettuja julkinen etua ja julkaisseet ne [AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals) Marketplacessa. Voit ladata nämä visualisoinnit ne lisätään Power BI-raportteja. Microsoft on testannut ja hyväksynyt mukautettujen visualisointien toiminnan ja laadun.
+Yhteisön jäsenet ja Microsoft ovat antaneet mukautetut visualisointinsa yleiseen käyttöön ja julkaisseet ne [AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals) Marketplacessa. Voit ladata näitä visualisointeja ja lisätä niitä Power BI -raportteihisi. Microsoft on testannut ja hyväksynyt kaikkien näiden mukautettujen visualisointien toiminnan ja laadun.
 
-Mikä [AppSource](developer/office-store.md) on? Se on paikka, voit etsiä sovelluksia, apuohjelmia ja laajennuksia Microsoft-ohjelmiston. [AppSource](https://appsource.microsoft.com/) yhdistää miljoonat käyttäjät tuotteita, kuten Office 365, Azure, Dynamics 365, Cortanan ja Power BI-ratkaisuihin, joilla voit työskennellä tehokkaammin, insightfully, ja beautifully kuin ennen.
+Mikä [AppSource](developer/office-store.md) on? Se on paikka, josta löydät sovelluksia, apuohjelmia ja laajennuksia Microsoft-ohjelmistollesi. AppSource yhdistää miljoonat Office 365:n, Azuren, Dynamics 365:n, Cortanan ja Power BI:n kaltaisten tuotteiden käyttäjät ratkaisuihin, joiden avulla he voivat työskennellä entistä tehokkaammin, älykkäämmin ja tyylikkäämmin.
 
 ### <a name="certified-visuals"></a>Sertifioidut visualisoinnit
 
-Power BI-sertifioidut visualisoinnit ovat Marketplacen visualisointeja, jotka ovat läpäisseet tiukkojen laadun testaus ja tuetaan lisätilanteissa, kuten [sähköpostitilausten](https://docs.microsoft.com/power-bi/service-report-subscribe), ja [PowerPointiin](https://docs.microsoft.com/power-bi/service-publish-to-powerpoint).
-Jos haluat tarkastella luetteloa sertifioiduista mukautetuista visualisoinneista tai lähettää oman, lue artikkeli [Sertifioidut mukautetut visualisoinnit](https://docs.microsoft.com/power-bi/power-bi-custom-visuals-certified).
+Power BI -sertifioidut visualisoinnit ovat Marketplacen visualisointeja, jotka ovat läpäisseet ylimääräisen tiukan laatutestauksen ja joita tuetaan erilaisissa käyttötilanteissa, esimerkiksi [sähköpostitilauksissa](service-report-subscribe.md) ja [PowerPointiin viennissä](service-publish-to-powerpoint.md).
+Jos haluat tarkastella luetteloa sertifioiduista mukautetuista visualisoinneista tai lähettää oman, lue artikkeli [Sertifioidut mukautetut visualisoinnit](power-bi-custom-visuals-certified.md).
 
-Oletko Web-kehittäjä ja kiinnostunut omien visualisointien luomisesta ja niiden lisäämisestä AppSourceen? Katso [kehittäminen Power BI-visualisointisi](developer/custom-visual-develop-tutorial.md) ja oppia miten [mukautettujen visualisointien julkaiseminen Appsourceen](https://docs.microsoft.com/power-bi/developer/office-store).
+Oletko Web-kehittäjä ja kiinnostunut omien visualisointien luomisesta ja niiden lisäämisestä AppSourceen? Katso artikkeli [Power BI:n mukautetun visualisoinnin kehittäminen](developer/custom-visual-develop-tutorial.md) ja lue lisää [mukautettujen visualisointien julkaisemisesta AppSourcessa](developer/office-store.md).
 
 ### <a name="import-a-custom-visual-from-a-file"></a>Mukautetun visualisoinnin tuominen tiedostosta
 
-1. Valitse kolme pistettä alaosasta **visualisoinnit** ruudussa.
+1. Valitse kolme pistettä **Visualisoinnit**-ruudun alareunasta.
 
     ![visualisoinnit2](media/power-bi-custom-visuals/power-bi-visualizations2.png)
 
@@ -69,13 +69,13 @@ Oletko Web-kehittäjä ja kiinnostunut omien visualisointien luomisesta ja niide
 
     ![tuo tiedostosta](media/power-bi-custom-visuals/power-bi-custom-visual-import-from-file.png)
 
-3. Valitse Avaa Tiedosto-valikosta `.pbiviz` tiedosto, jonka haluat tuoda, ja valitse sitten **Avaa**. Mukautetun visualisoinnin kuvake lisätään alareunassa- **visualisoinnit** ruudussa ja on nyt valmis käytettäväksi raportissa.
+3. Valitse **Avaa tiedosto** -valikosta `.pbiviz`-tiedosto, jonka haluat tuoda, ja valitse sitten **Avaa**. Mukautetun visualisoinnin kuvake lisätään **Visualisoinnit**-ruudun alaosaan. Lisäksi visualisointi on nyt valmis käytettäväksi raportissa.
 
     ![mukautettu visualisointi tuotu](media/power-bi-custom-visuals/power-bi-custom-visual-imported.png)
 
 ### <a name="import-organizational-visuals"></a>Organisaation visualisointien tuominen
 
-1. Valitse kolme pistettä alaosasta **visualisoinnit** ruudussa.
+1. Valitse kolme pistettä **Visualisoinnit**-ruudun alareunasta.
 
     ![visualisointi org 1](media/power-bi-custom-visuals/power-bi-visual-org-01.png)
 
@@ -91,17 +91,17 @@ Oletko Web-kehittäjä ja kiinnostunut omien visualisointien luomisesta ja niide
 
     ![visualisointi org 4](media/power-bi-custom-visuals/power-bi-visual-org-04.png)
 
-5. Valitse **Lisää** mukautetun visualisoinnin tuominen. Sen kuvake lisätään alareunassa- **visualisoinnit** ruudussa ja on nyt valmis käytettäväksi raportissa.
+5. Tuo mukautettu visualisointi valitsemalla **Lisää**. Mukautetun visualisoinnin kuvake lisätään **Visualisoinnit**-ruudun alaosaan. Lisäksi visualisointi on nyt valmis käytettäväksi raportissa.
 
     ![visualisointi org 5](media/power-bi-custom-visuals/power-bi-visual-org-05.png)
 
 ## <a name="download-or-import-custom-visuals-from-microsoft-appsource"></a>Mukautettujen visualisointien lataaminen tai tuominen Microsoft AppSourcesta
 
-Sinulla on kaksi vaihtoehtoa mukautettujen visualisointien lataamiseen ja tuomiseen:-Power BI-ja - [AppSource sivusto](https://appsource.microsoft.com/).
+Sinulla on kaksi vaihtoehtoa mukautettujen visualisointien lataamiseen ja tuomiseen: Power BI ja [AppSource-sivusto](https://appsource.microsoft.com/).
 
 ### <a name="import-custom-visuals-from-within-power-bi"></a>Mukautettujen visualisointien tuominen Power BI:stä
 
-1. Valitse kolme pistettä alaosasta **visualisoinnit** ruudussa.
+1. Valitse kolme pistettä **Visualisoinnit**-ruudun alareunasta.
 
     ![visualisoinnit 2](media/power-bi-custom-visuals/power-bi-visualizations2.png)
 
@@ -125,7 +125,7 @@ Sinulla on kaksi vaihtoehtoa mukautettujen visualisointien lataamiseen ja tuomis
 
     ![Arvostelut](media/power-bi-custom-visuals/power-bi-reviews.png)
 
-7. Valitse **Lisää** mukautetun visualisoinnin tuominen. Sen kuvake lisätään alareunassa- **visualisoinnit** ruudussa ja on nyt valmis käytettäväksi raportissa.
+7. Tuo mukautettu visualisointi valitsemalla **Lisää**. Mukautetun visualisoinnin kuvake lisätään **Visualisoinnit**-ruudun alaosaan. Lisäksi visualisointi on nyt valmis käytettäväksi raportissa.
 
     ![visualisointi tuotu](media/power-bi-custom-visuals/power-bi-custom-visual-imported.png)
 
@@ -135,15 +135,15 @@ Sinulla on kaksi vaihtoehtoa mukautettujen visualisointien lataamiseen ja tuomis
 
     ![AppSource](media/power-bi-custom-visuals/power-bi-appsource-apps.png)
 
-2. Siirry [sovellusten tulossivulle](https://appsource.microsoft.com/marketplace/apps), jossa voit tarkastella kunkin luokan suosituimpia sovelluksia, mukaan lukien *Power BI -sovelluksia*. Haetaan mukautettuja visualisointeja, joten valitse **Power BI-visualisointien** rajata tulokset vasemmassa siirtymisruudussa luettelosta.
+2. Siirry [sovellusten tulossivulle](https://appsource.microsoft.com/marketplace/apps), jossa voit tarkastella kunkin luokan suosituimpia sovelluksia, mukaan lukien *Power BI -sovelluksia*. Koska nyt haetaan mukautettuja visualisointeja, rajataan tuloksia valitsemalla vasemmasta siirtymisluettelosta **Power BI -visualisoinnit**. Tämä pienentää tulosten määrää.
 
     ![AppSource-visualisoinnit](media/power-bi-custom-visuals/power-bi-appsource-visuals.png)
 
-3. AppSource näyttää kunkin mukautetun visualisoinnin ruudun.  Jokaisessa ruudussa on mukautetun visualisoinnin tilannevedos lyhyt kuvaus ja latauslinkki. Saat lisätietoja valitsemalla ruudun.
+3. AppSource näyttää kunkin mukautetun visualisoinnin ruudun.  Jokaisessa ruudussa on tilannevedos mukautetusta visualisoinnista, lyhyt kuvaus ja latauslinkki. Saat lisätietoja valitsemalla ruudun.
 
     ![Mukauta valittu visualisointi](media/power-bi-custom-visuals/powerbi-custom-select-visual.png)
 
-4. Tietosivulla voit tarkastella näyttökuvia, videoita, yksityiskohtaista kuvausta ja muita tietoja. Valitse **hanki se nyt** mukautetun visualisoinnin lataaminen ja sitten hyväksyt käyttöehdot.
+4. Tietosivulla voit tarkastella näyttökuvia, videoita, yksityiskohtaista kuvausta ja muita tietoja. Lataa mukautettu visualisointi valitsemalla **Hanki se nyt** ja hyväksymällä sitten käyttöehdot.
 
     ![Hae AppSourcesta](media/power-bi-custom-visuals/power-bi-appsource-get.png)
 
@@ -151,25 +151,25 @@ Sinulla on kaksi vaihtoehtoa mukautettujen visualisointien lataamiseen ja tuomis
 
     ![Lataa](media/power-bi-custom-visuals/powerbi-custom-download.png)
 
-    Lataus-sivulla sisältää myös ohjeet mukautetun visualisoinnin tuominen Power BI Desktop ja Power BI-palvelussa.
+    Lataussivu sisältää myös ohjeet mukautetun visualisoinnin tuomiseen Power BI Desktopiin ja Power BI -palveluun.
 
     Voit myös ladata malliraportin, joka sisältää mukautetun visualisoinnin ja esittelee sen ominaisuuksia.
 
     ![Kokeile mallia](media/power-bi-custom-visuals/powerbi-custom-try-sample.png)
 
-6. Tallenna `.pbiviz` tiedosto ja avaa sitten Power BI.
+6. Tallenna `.pbiviz`-tiedosto ja avaa sitten Power BI.
 
-7. Tuonti `.pbiviz` tiedosto raporttiin. (Katso ohjeet ylempää osiosta [Mukautetun visualisoinnin tuominen tiedostosta](#import-a-custom-visual-from-a-file).)
+7. Tuo `.pbiviz`-tiedosto raporttiin. (Katso ohjeet ylempää osiosta [Mukautetun visualisoinnin tuominen tiedostosta](#import-a-custom-visual-from-a-file).)
 
 ## <a name="considerations-and-limitations"></a>Huomioitavat asiat ja rajoitukset
 
 * Mukautettu visualisointi lisätään tiettyyn raporttiin tuotaessa. Jos haluat käyttää visualisointia toisessa raportissa, sinun on tuotava se myös kyseiseen raporttiin. Kun mukautetun visualisoinnin sisältävä raportti tallennetaan käyttämällä **Tallenna nimellä** -vaihtoehtoa, kopio mukautetusta visualisoinnista tallennetaan uuden raportin yhteydessä.
 
-* Jos et näe **visualisoinnit** ruudun, joka tarkoittaa, että sinulla ei ole raportin muokkausoikeuksia.  Voit lisätä mukautettuja visualisointeja vain raportteihin, joita voit muokata, et kanssasi jaettuihin raportteihin.
+* Jos et näe **Visualisoinnit**-ruutua, sinulla ei ole raportin muokkausoikeuksia.  Voit lisätä mukautettuja visualisointeja vain raportteihin, joita voit muokata, et kanssasi jaettuihin raportteihin.
 
 ## <a name="troubleshoot"></a>Vianmääritys
 
-Vianmääritys, katso [Power BI: n mukautettujen visualisointien vianmääritys](power-bi-custom-visuals-troubleshoot.md).
+Vianmääritysohjeet löytyvät kohdasta [Power BI:n mukautettujen visualisointien vianmääritys](power-bi-custom-visuals-troubleshoot.md).
 
 ## <a name="faq"></a>Usein kysytyt kysymykset
 
@@ -177,6 +177,6 @@ Saat lisätietoja ja vastauksia kysymyksiisi [Power BI:n mukautettujen visualiso
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
-* [Visualisoinnit Power BI-raporteissa](visuals/power-bi-report-visualizations.md)
+* [Visualisoinnit Power BI -raporteissa](visuals/power-bi-report-visualizations.md)
 
 Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/).

@@ -11,12 +11,12 @@ ms.reviewer: ''
 ms.custom: ''
 ms.date: 06/20/2018
 LocalizationGroup: Data from databases
-ms.openlocfilehash: 896e58b95f253c403bf7cd4bc3e1c069b3628f69
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 69b40b81677de8af259f9c8ce871c39f5303c09a
+ms.sourcegitcommit: c539726c9c180e899a8a34443e3fda2b9848beb2
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "64770257"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66448443"
 ---
 # <a name="azure-sql-data-warehouse-with-directquery"></a>Azure SQL Data Warehouse ja DirectQuery
 
@@ -40,7 +40,7 @@ Nämä rajoitukset ja muistiinpanot saattavat muuttua jatkaessamme käyttökokem
 
 Helpoin tapa siirtyä SQL Data Warehousen ja Power BI:n välillä on **Avaa Power BI:ssä** -painikkeella Azure-portaalissa. Tämän painikkeen avulla voit aloittaa saumattomasti uusien koontinäyttöjen luomisen Power BI:ssä.
 
-1. Aloita siirtymällä SQL Data Warehouse -esiintymään Azure-portaalissa. Huomaa, että SQL Data Warehousella on näkyvyys ainoastaan Azuren esikatseluportaalissa tällä hetkellä.
+1. Aloita siirtymällä SQL Data Warehouse -esiintymään Azure-portaalissa. Ota huomioon, että SQL Data Warehousella on näkyvyys ainoastaan Azure-portaalissa tällä hetkellä.
 
 2. Napsauta **Avaa Power BI:ssä** -painiketta
 
@@ -56,7 +56,7 @@ SQL Data Warehouse näkyy myös Power BI:n Nouda tiedot -sivulla.
 
 1. Valitse vasemman siirtymisruudun alareunassa **Nouda tiedot**.  
 
-    ![Nouda tiedot-painike](media/service-azure-sql-data-warehouse-with-direct-connect/getdatabutton.png)
+    ![Nouda tiedot -painike](media/service-azure-sql-data-warehouse-with-direct-connect/getdatabutton.png)
 
 2. Valitse **Tietokannat**-kohdassa **Nouda**.
 
@@ -64,7 +64,7 @@ SQL Data Warehouse näkyy myös Power BI:n Nouda tiedot -sivulla.
 
 3. Valitse **SQL Data Warehouse** \> **Yhdistä**.
 
-    ![Azure SQL-DW ja suoraa yhteyden](media/service-azure-sql-data-warehouse-with-direct-connect/azuresqldatawarehouseconnect.png)
+    ![Azure SQL DW ja suora yhteys](media/service-azure-sql-data-warehouse-with-direct-connect/azuresqldatawarehouseconnect.png)
 
 4. Anna tarvittavat tiedot, jotta voit muodostaa yhteyden. **Parametrien etsiminen** -kohdassa alla näkyy, missä tiedot voivat sijaita Azure-portaalissa.
 
@@ -79,20 +79,22 @@ SQL Data Warehouse näkyy myös Power BI:n Nouda tiedot -sivulla.
 
 5. Poraudu tietojoukkoon valitsemalla uuden ruudun tai juuri luodun tietojoukon, jonka merkkinä on tähti. Tällä tietojoukolla on sama nimi kuin tietokannalla.
 
-    ![Tietojoukon 2](media/service-azure-sql-data-warehouse-with-direct-connect/dataset2.png)
+    ![Tietojoukko 2](media/service-azure-sql-data-warehouse-with-direct-connect/dataset2.png)
 
 6. Voit tutkia kaikkia taulukoita ja sarakkeita. Sarakkeen valitseminen lähettää kyselyn takaisin lähteeseen luoden visualisoinnin dynaamisesti. Suodattimet myös käännetään kyselyiksi takaisin tietovarastoon. Nämä visualisoinnit voidaan tallentaa uudessa raportissa ja kiinnittää takaisin koontinäyttöön.
 
-    ![Tutustu 3](media/service-azure-sql-data-warehouse-with-direct-connect/explore3.png)
+    ![Tutki 3](media/service-azure-sql-data-warehouse-with-direct-connect/explore3.png)
 
 ## <a name="finding-parameter-values"></a>Parametriarvojen etsiminen
 
-Täydellinen palvelimen nimi ja tietokannan nimi löytyvät Azure-portaalista. Huomaa, että SQL Data Warehousella on näkyvyys ainoastaan Azuren esikatseluportaalissa tällä hetkellä.
+Täydellinen palvelimen nimi ja tietokannan nimi löytyvät Azure-portaalista. Ota huomioon, että SQL Data Warehousella on näkyvyys ainoastaan Azure-portaalissa tällä hetkellä.
 
 ![Azure-portaali](media/service-azure-sql-data-warehouse-with-direct-connect/azureportal.png)
 
 > [!NOTE]
 > Jos Power BI -vuokraaja on samalla alueella kuin Azure SQL Data Warehouse, lähtevän liikenteen maksuja ei ole. Voit etsiä Power BI -vuokraajan sijainnin [näiden ohjeiden](https://docs.microsoft.com/power-bi/service-admin-where-is-my-tenant-located) avulla.
+
+[!INCLUDE [direct-query-sso](includes/direct-query-sso.md)]
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 

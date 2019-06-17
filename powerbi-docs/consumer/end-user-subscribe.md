@@ -1,5 +1,5 @@
 ---
-title: Tilaa itsellesi ja muille raportteja ja koontinäyttöjä
+title: Raporttien ja koontinäyttöjen tilaaminen itsellesi ja muille
 description: Opi tilaamaan itsellesi ja työtovereillesi sähköpostitse tilannevedoksia Power BI ‑raporteista ja ‑koontinäytöistä.
 author: mihart
 ms.author: mihart
@@ -11,15 +11,15 @@ ms.subservice: powerbi-consumer
 ms.topic: conceptual
 ms.date: 05/11/2019
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 472b2736dae2dbc5a1633d0afb6e8e8f32b7ea3c
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: d452b036c7890d59e27df328ae12ad7f5b3b8dbb
+ms.sourcegitcommit: 24781cdab5fbe43fc14248db636169cc54ef6721
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65607859"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66497956"
 ---
 # <a name="subscribe-to-a-report-or-dashboard-in-power-bi-service"></a>Raportin tai koontinäytön tilaaminen Power BI -palvelussa 
-Ei ole koskaan ollut näin helppoa pysyä ajan tasalla tärkeimmistä koontinäytöistä ja raporteista. Tilaa raporttisivut ja koontinäytöt, sinulle ja Power BI sinulle sähköpostitse tilannevedoksen Saapuneet-kansioosi. Voit määrittää, miten usein haluat Power BI:n lähettävän sähköpostia: päivittäin, viikoittain tai tietojen päivittyessä. Voit myös määrittää tietyn ajankohdan sille, milloin Power BI lähettää sähköpostit, tai voit suorittaa tämän nyt.  
+Ei ole koskaan ollut näin helppoa pysyä ajan tasalla tärkeimmistä koontinäytöistä ja raporteista. Kun tilaat itsellesi tärkeimmät raporttisivut ja koontinäytöt, Power BI lähettää sinulle sähköpostitse niistä tilannevedoksen. Voit määrittää, miten usein haluat Power BI:n lähettävän sähköpostia: päivittäin, viikoittain tai tietojen päivittyessä. Voit myös määrittää tietyn ajankohdan sille, milloin Power BI lähettää sähköpostit, tai voit suorittaa tämän nyt.  
 
 Sähköpostissa ja tilannevedoksessa käytetään samaa kieliasetusta kuin Power BI:ssä (katso [Power BI:ssä tuetut kielet ja maat/alueet](../supported-languages-countries-regions.md)). Jos mitään kieltä ei ole määritetty, Power BI käyttää senhetkisen selaimesi paikka-asetuksen mukaista kieltä. Jos haluat nähdä kieliasetuksesi tai muuttaa sitä, valitse hammasrataskuvake ![hammasrataskuvake](./media/end-user-subscribe/power-bi-settings-icon.png) > **Asetukset > Yleiset > Kieli**. 
 
@@ -47,44 +47,45 @@ Koontinäytön ja raportin tilausprosessit ovat samankaltaiset. Samaa painiketta
 
 4. Voit ottaa tilauksen käyttöön tai poistaa sen käytöstä keltaisella liukusäätimellä.  Liukusäätimen asettaminen Poissa käytöstä -asentoon ei poista itse tilausta. Jos haluat poistaa tilauksen, valitse roskakorikuvake.
 
-4. Sähköpostiosoitteesi lisätään automaattisesti **tilaa** kenttä. Tilata muille organisaatiosi Lisää myös tässä sähköpostiosoitteet. 
+4. Sähköpostiosoitteesi lisätään automaattisesti **Tilaa**-kenttään. Jos haluat tilata organisaatiosi muille käyttäjille, lisää tässä myös heidän sähköpostiosoitteensa. 
 
 5. Voit myös täyttää sähköpostiviestin tiedot. 
 
 5. Valitse tilauksesi **tiheys**.  Voit valita Päivittäin, Viikoittain tai Tietojen päivittämisen jälkeen (päivittäin).  Jos haluat saada tilauksen sähköpostit vain tiettyinä päivinä, valitse **Viikoittain** ja valitse sitten, minä päivinä haluat saada sähköposteja.  Jos haluat saada tilauksen sähköpostit esimerkiksi vain arkipäivinä, valitse tiheydeksi **Viikoittain** ja poista sitten lauantain ja sunnuntain valintaruutujen valinnat.   
 
-6. Voit valita sähköpostien lähetyskellonajan valitsemalla tiheydeksi Päivittäin tai Viikoittain ja määrittämällä sitten tilaukselle **ajoitetun** **ajan**.   
+6. Voit valita sähköpostien lähetyskellonajan valitsemalla tiheydeksi Päivittäin tai Viikoittain ja määrittämällä sitten tilaukselle **ajoitetun** **ajan**.  Tämä on aika, jolloin tilaustyösi alkaa. Joissain tilanteissa saattaa kestää muutaman minuutin, ennen kuin sähköposti toimitetaan postilaatikkoosi.    
 
 7. Määritä alkamis- ja päättymispäivät päivämääräkenttiin. Tilauksesi alkamisaika on oletusarvoisesti tilauksen luomispäivä ja päättymispäivä on oletusarvoisesti vuoden päässä. Tilaus lopetetaan päättymispäivänä, jos et ota sitä uudelleen käyttöön.  Saat ennen tilauksen päättymistä ilmoituksia, jossa kysytään, haluatko jatkaa tilausta.     
 
 8. Jos haluat tarkistaa tilauksesi ja testata sitä, valitse **Suorita nyt**.  Tämä lähettää sähköpostin sinulle heti. 
 
-8. Jos kaikki näyttää olevan kunnossa, tallenna tilaus valitsemalla **Tallenna ja sulje**. Sinä ja työtoverisi subscribed saavat sähköpostitse tilannevedoksen koontinäytön tai raportin aikataulun mukaisesti, voit määrittää. Kaikissa tilauksissa, joiden tiheydeksi määritetään **Tietojen päivittämisen jälkeen**, lähetetään sähköpostia vain kyseisen päivän ensimmäisen ajoitetun päivityksen jälkeen.
+8. Jos kaikki näyttää olevan kunnossa, tallenna tilaus valitsemalla **Tallenna ja sulje**. Saat (ja muutkin tilaajat saavat) sähköpostin ja tilannevedoksen koontinäytöstä tai raportista määrittämäsi aikataulun mukaisesti. Kaikissa tilauksissa, joiden tiheydeksi määritetään **Tietojen päivittämisen jälkeen**, lähetetään sähköpostia vain kyseisen päivän ensimmäisen ajoitetun päivityksen jälkeen.
    
    ![sähköpostitilannevedos koontinäytöstä](media/end-user-subscribe/power-bi-subscribe-email.png)
    
-    Raporttisivun päivittäminen ei päivitä tietojoukkoa. Vain tietojoukon omistaja voi manuaalisesti päivittää tietojoukon. Etsi löytyvillä synonyymeillä omistajan nimen, valitsemalla **Näytä Aiheeseen liittyvät** yläreunan valikkoriviltä tai etsiä alkuperäisen sähköpostiviestin tilauksen.
+    Raporttisivun päivittäminen ei päivitä tietojoukkoa. Vain tietojoukon omistaja voi manuaalisesti päivittää tietojoukon. Etsi pohjana olevan tietojoukon omistajan nimi valitsemalla **Näytä aiheeseen liittyvät** yläreunan valikkoriviltä tai etsi alkuperäinen tilaussähköposti.
    
     ![Liittyvät tietojoukot](./media/end-user-subscribe/power-bi-view-related-screen.png)
 
 
 ## <a name="manage-your-subscriptions"></a>Tilausten hallinta
-Voit hallita vain luot tilauksia. Valitse uudelleen **Tilaa** ja valitse vasemmasta alakulmasta **Kaikkien tilausten hallinta** (katso yllä olevat näyttökuvat). 
+Vain sinä itse voit hallita luomiasi tilauksia. Valitse uudelleen **Tilaa** ja valitse vasemmasta alakulmasta **Kaikkien tilausten hallinta** (katso yllä olevat näyttökuvat). 
 
 ![kaikkien tilausten tarkastelu Omassa työtilassa](./media/end-user-subscribe/power-bi-manage.png)
 
 Tilaus päättyy, jos Pro-käyttöoikeus umpeutuu, omistaja poistaa koontinäytön tai tilauksen luomiseen käytetty käyttäjätili poistetaan.
 
 ## <a name="considerations-and-troubleshooting"></a>Huomioon otettavat seikat ja vianmääritys
-* Jos koontinäytössä on yli 25 kiinnitettyä ruutua tai neljä kiinnitettyä reaaliaikaisista raporttisivua, koontinäyttö ei ehkä hahmonnu täysin käyttäjille lähetetyissä tilauksen sähköpostiviesteissä. Suosittelemme, että yhteyttä Raporttinäkymät-ikkunan suunnittelusovelluksen ja pyydä häntä pienentää kiinnitettyjen ruutujen alle 25 ja kiinnitetyn reaaliaikaisen raporttien alle neljä sen varmistamiseksi, että sähköpostiviestin hahmontaa oikein.  
+* Jos koontinäytössä on yli 25 kiinnitettyä ruutua tai neljä kiinnitettyä reaaliaikaisista raporttisivua, koontinäyttö ei ehkä hahmonnu täysin käyttäjille lähetetyissä tilauksen sähköpostiviesteissä. Suosittelemme, että otat yhteyttä koontinäytön tekijään ja pyydät häntä vähentämään kiinnitettyjen ruutujen määrän alle 25:een ja kiinnitettyjen reaaliaikaisten raporttien määrän alle neljään, jotta sähköpostiviesti näytetään oikein.  
 * Jos koontinäytön sähköpostitilausten joillakin ruuduilla on käytössä rivitason suojaus (RLS), näitä ruutuja ei näytetä.  Jos raportin sähköpostitilausten tietojoukko käyttää rivitason suojausta (RSL), et pysty luomaan tilausta.
-* Raporttisivujen tilaukset on sidottu raporttisivun nimeen. Jos tilaat raporttisivun ja noutaa nimetä uudelleen, sinun on luotava myös tilaus.
+* Raporttisivujen tilaukset on sidottu raporttisivun nimeen. Jos tilaat raporttisivun ja nimeät sen uudelleen, sinun on luotava myös tilaus uudelleen.
 * Jos et voi käyttää tilaustoimintoa, ota yhteyttä järjestelmänvalvojaasi. Organisaatiosi on ehkä poistanut tämän toiminnon käytöstä todennussyistä tai muista syistä.  
 * Sähköpostitilaukset eivät tue suurinta osaa [mukautetuista visualisoinneista](../power-bi-custom-visuals.md).  Poikkeuksena ovat mukautetut visualisoinnit, jotka on [sertifioitu](../power-bi-custom-visuals-certified.md).  
 * Sähköpostitilaukset eivät tue R:ää hyödyntäviä mukautettuja visualisointeja tällä hetkellä.  
 * Erityisesti koontinäyttötilausten osalta tiettyjä ruututyyppejä ei vielä tueta.  Sellaisia ovat esimerkiksi suoratoisto-, video- ja mukautetut verkkosisältöruudut.     
 * Tilaukset voi epäonnistua sähköpostiviestien kokorajoitusten vuoksi, jos koontinäytöissä tai raporteissa on erittäin suuria kuvia.    
-* Power BI keskeyttää automaattisesti sellaisten tietojoukkojen päivittämisen, joihin liittyvissä koontinäytöissä tai raporteissa ei ole käyty yli kahteen kuukauteen.  Kuitenkin jos lisäät koontinäytön tai raportin tilauksen, päivitystä ei lopeteta, vaikka kohteessa ei vierailtaisikaan.    
+* Power BI keskeyttää automaattisesti sellaisten tietojoukkojen päivittämisen, joihin liittyvissä koontinäytöissä tai raporteissa ei ole käyty yli kahteen kuukauteen.  Jos lisäät koontinäytön tai raportin tilauksen, päivitystä kuitenkaan ei lopeteta, vaikka kohteessa ei käytäisikään.
+* Joissain harvoissa tapauksissa sähköpostitilausten toimittaminen vastaanottajille saattaa kestää yli 15 minuuttia.  Jos näin käy, suosittelemme, että suoritat tietojen päivittämisen ja sähköpostien tilaamisen eri aikoihin toimitusten varmistamiseksi.  Jos ongelma jatkuu, ota yhteyttä Power BI -tukeen.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 

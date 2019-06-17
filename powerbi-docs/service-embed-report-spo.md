@@ -11,34 +11,34 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 LocalizationGroup: Share your work
 ms.date: 05/16/2019
-ms.openlocfilehash: c8789d47ed1b67f9fd6808865514120457a29dfe
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: ec70f4c9d6f3e6f51210a32f7efac7f160f462cb
+ms.sourcegitcommit: 24781cdab5fbe43fc14248db636169cc54ef6721
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66051280"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66498014"
 ---
 # <a name="embed-with-report-web-part-in-sharepoint-online"></a>Upota raportin verkko-osa SharePoint Onlinessa
 
 Power BI:n uuden, SharePoint Onlineen tarkoitetun raportin verkko-osan avulla voit helposti upottaa vuorovaikutteisia Power BI -raportteja SharePoint Onlinen sivuille.
 
-Kun käytetään uutta **Upota SharePoint Onlinessa** asetusta, upotetut raportit ovat täysin suojattuja, jotta voit helposti luoda suojattuja sisäisiä portaaleja.
+Kun käytät uutta **Upota SharePoint Onlinessa** -asetusta, upotetut raportit ovat täysin suojattuja, jotta voit helposti luoda suojattuja sisäisiä portaaleja.
 
 ## <a name="requirements"></a>Vaatimukset
 
-- **Upota SharePoint Onlinessa** raporttien käyttöön, seuraavat vaaditaan:
+**Upota SharePoint Onlinessa** -raporttien käyttö edellyttää seuraavia:
 
-* Power BI Pro-käyttöoikeus tai [Power BI Premium-kapasiteetti (EM tai P-Varastointiyksikköä)](service-premium-what-is.md) ja Power BI-käyttöoikeus.
+* Tarvitset Power BI Pro -käyttöoikeuden tai [Power BI Premium -kapasiteetin (EM tai P SKU)](service-premium-what-is.md) ja Power BI -käyttöoikeuden.
 * Power BI -verkko-osa SharePoint Onlineen edellyttää [moderneja sivuja](https://support.office.com/article/Allow-or-prevent-creation-of-modern-site-pages-by-end-users-c41d9cc8-c5c0-46b4-8b87-ea66abc6e63b).
 
 ## <a name="embed-your-report"></a>Upota raportti
-Jos haluat upottaa raporttisi SharePoint Onlineen, sinun on raportin URL-osoite ja käyttää sitä SharePoint Onlinen uuden Power BI-verkko-osan.
+Jos haluat upottaa raporttisi SharePoint Onlineen, sinun täytyy hankkia raportin URL-osoite ja käyttää sitä SharePoint Online Power BI -verkko-osan kanssa.
 
 ### <a name="get-a-report-url"></a>Hanki raportin URL-osoite
 
-1. Tarkastele raporttia Power BI sisällä.
+1. Avaa raportti Power BI:ssä.
 
-2. Valitse **tiedoston** valikosta, valitse **Upota SharePoint Onlinessa**.
+2. Valitse avattavasta **Tiedosto**-valikosta **Upota SharePoint Onlinessa**.
 
     ![Tiedosto-valikko](media/service-embed-report-spo/powerbi-file-menu.png)
 
@@ -52,11 +52,11 @@ Jos haluat upottaa raporttisi SharePoint Onlineen, sinun on raportin URL-osoite 
 
     ![SP: muokkaussivu](media/service-embed-report-spo/powerbi-sharepoint-edit-page.png)
 
-    Tai Sharepoint Onlineen, valitse **+ uusi** luoda uuden modernin sivuston sivun.
+    Voit halutessasi luoda uuden modernin sivuston sivun valitsemalla SharePoint Onlinessa **+ Uusi**.
 
     ![SP: uusi sivu](media/service-embed-report-spo/powerbi-sharepoint-new-page.png)
 
-2. Valitse **+** avattava valikko ja valitse sitten **Power BI**.
+2. Valitse avattava **+** -valikko ja valitse sitten **Power BI** -verkko-osa.
 
     ![SP: uusi verkko-osa](media/service-embed-report-spo/powerbi-sharepoint-new-web-part.png)
 
@@ -64,7 +64,7 @@ Jos haluat upottaa raporttisi SharePoint Onlineen, sinun on raportin URL-osoite 
 
     ![SP: uusi raportti](media/service-embed-report-spo/powerbi-sharepoint-new-report.png)  
 
-4. Liitä aiemmin kopioitu raportin URL-osoite **Power BI-Raporttilinkki** ruudussa. Raportti latautuu automaattisesti.
+4. Liitä aiemmin kopioimasi raportin URL-osoite **Power BI -raporttilinkin** ruutuun. Raportti latautuu automaattisesti.
 
     ![SP: uuden verkko-osan ominaisuudet](media/service-embed-report-spo/powerbi-sharepoint-new-web-part-properties.png)
 
@@ -74,30 +74,30 @@ Jos haluat upottaa raporttisi SharePoint Onlineen, sinun on raportin URL-osoite 
 
 ## <a name="grant-access-to-reports"></a>Raporttien käyttöoikeuksien myöntäminen
 
-Raportin upottaminen SharePoint Onlinessa ei automaattisesti antaa käyttäjille oikeuden raportin – sinun on asetettava tarkasteluoikeuksia Power BI.
+Kun raportti upotetaan SharePoint Onlineen, käyttäjät eivät saa automaattisesti raportin tarkasteluoikeuksia. Sinun täytyy määrittää ne Power BI:ssä.
 
 > [!IMPORTANT]
 > Katso Power BI -palvelussa, kuka saa nähdä raportin, ja myönnä käyttöoikeudet niille, jotka eivät ole luettelossa.
 
-Power BI-raportin käyttöoikeuden kahdella eri tavalla. Ensimmäinen tapa, jos käytät Office 365-ryhmä SharePoint Online-työryhmäsivuston luomiseen, Lisää jäsen käyttäjä on **Power BI-palvelun sovellustyötilan** ja **SharePoint-sivuun**. Jos haluat lisätietoja, katso, miten voit [hallita sovelluksen työtilaa](service-manage-app-workspace-in-power-bi-and-office-365.md).
+Raportin käyttöoikeuden voi myöntää Power BI:ssä kahdella tavalla. 1\. tapa: Jos luot SharePoint Online -työryhmäsivuston Office 365 -ryhmän avulla, lisää käyttäjä **Power BI -palvelun sovellustyötilan** ja **SharePoint-sivun** jäseneksi. Jos haluat lisätietoja, katso, miten voit [hallita sovelluksen työtilaa](service-manage-app-workspace-in-power-bi-and-office-365.md).
 
-Toinen tapa on sovelluksen sisällä raportin upottaminen ja jakaa sen suoraan käyttäjien kanssa:  
+2\. tapa: Upota raportti sovellukseen ja se suoraan käyttäjien kanssa.  
 
-1. Tekijä (on oltava Pro-käyttäjä) luo raportin sovelluksen työtilassa. Jakaminen **Power BI: n maksuttoman version käyttäjien**, sovelluksen työtilan on asetettava **Premium-työtila**.
+1. Laatija, jonka täytyy olla Pro-käyttäjä, luo raportin sovellustyötilassa. Jos haluat jakaa *Power BI:n maksuttomien käyttäjien kanssa*, sovellustyötila täytyy määrittää *Premium-työtilaksi*.
 
-2. Tekijä julkaisee sovelluksen ja asentaa sen. Tekijä on varmistaa, että asennat sovelluksen käyttöoikeudet raportin URL-osoite, jota käytetään upottaminen SharePoint Onlineen.
+2. Laatija julkaisee sovelluksen ja sitten asentaa sen. Hänen täytyy asentaa sovellus, jotta se voi käyttää raportin URL-osoitetta, jota käytetään SharePoint Onlineen upottamisessa.
 
-3. Kaikkien loppukäyttäjien on myös nyt asennettava sovellus. Voit myös käyttää **Asenna sovellus automaattisesti** toiminto, jonka haluat ottaa [Power BI-hallintaportaalissa](service-admin-portal.md), joka on asennettu valmiiksi käyttäjille sovelluksen.
+3. Kaikkien loppukäyttäjien on myös nyt asennettava sovellus. Voit myös käyttää **Asenna sovellus automaattisesti** -toimintoa, jonka voit ottaa käyttöön [Power BI -hallintaportaalissa](service-admin-portal.md). Sen avulla sovellus voidaan esiasentaa loppukäyttäjille.
 
    ![Asenna sovellus automaattisesti](media/service-embed-report-spo/install-app-automatically.png)
 
 4. Laatija avaa sovelluksen ja siirtyy raporttiin.
 
-5. Tekijä Kopioi raportti sovellus asennettuna Upota raportin URL-osoite. **Älä käytä alkuperäisen raportin URL-osoite sovelluksen työtilasta.**
+5. Laatija kopioi upotetun raportin URL-osoitteen sovelluksen asentamasta raportista. Älä käytä alkuperäisen raportin URL-osoitetta sovellustyötilasta.
 
 6. Luo uusi työryhmäsivusto SharePoint Onlinessa.
 
-7. Lisää Power BI-verkko-osa aiemmin kopioitu raportin URL-osoite.
+7. Lisää aiemmin kopioitu raportin URL-osoite Power BI -verkko-osaan.
 
 8. Lisää kaikki loppukäyttäjät ja/tai ryhmät, jotka käyttävät tietoja SharePoint Online -sivulla ja Power BI -sovelluksessa, jonka olet luonut.
 
@@ -108,36 +108,36 @@ Loppukäyttäjä voi nyt siirtyä työryhmäsivustolle SharePoint Onlinessa ja t
 
 ## <a name="multi-factor-authentication"></a>Monimenetelmäinen todentaminen
 
-Jos Power BI -ympäristösi edellyttää kirjautumista monimenetelmäistä todentamista käyttäen, sinua voidaan pyytää kirjautumaan suojauslaitteelta henkilöllisyytesi varmistamiseksi. Näin tapahtuu, jos ei Kirjaudu sisään SharePoint Onlineen käyttäen monimenetelmäistä todentamista, mutta Power BI-ympäristösi edellyttää suojauslaitetta vahvistaminen tiliä.
+Jos Power BI -ympäristösi edellyttää kirjautumista monimenetelmäistä todentamista käyttäen, sinua voidaan pyytää kirjautumaan suojauslaitteelta henkilöllisyytesi varmistamiseksi. Näin tapahtuu, jos et kirjautunut SharePoint Onlineen monimenetelmäisellä todentamisella ja Power BI -ympäristösi vaatii suojauslaitetta tilin vahvistamiseksi.
 
 > [!NOTE]
-> Azure Active Directory 2.0 ei tue multi-factor authentication-palvelun - käyttäjät näkevät virhesanoman. Jos käyttäjä kirjautuu uudelleen SharePoint Onlineen suojauslaitetta käyttäen, hän saattaa nähdä raportin.
+> Power BI ei vielä tue monimenetelmäistä todentamista Azure Active Directory 2.0:lla (käyttäjät saavat virheilmoituksen). Jos käyttäjä kirjautuu uudelleen SharePoint Onlineen suojauslaitetta käyttäen, hän saattaa nähdä raportin.
 
 ## <a name="web-part-settings"></a>Verkko-osan asetukset
 
-Alla ovat käytettävissä, voit säätää Power BI-verkko-osan SharePoint Onlineen.
+Alla on lueteltu asetukset, joita voit muokata Power BI -verkko-osalle SharePoint Onlinessa.
 
 ![SP: verkko-osan ominaisuudet](media/service-embed-report-spo/powerbi-sharepoint-web-part-properties.png)
 
 | Ominaisuus | Kuvaus |
 | --- | --- |
-| Sivun nimi |Määrittää verkko-osa sivun. Valitse arvo avattavasta luettelosta. Jos sivuja ei näy, raportissasi on vain yksi sivu tai liittämäsi URL-osoite sisältää sivun nimen. Valitse tietty sivu poistamalla raporttiosa URL-osoitteesta. |
-| Näytä |Määrittää, miten raportti mahtuu SharePoint Online-sivulle. |
+| Sivun nimi |Määrittää verkko-osan oletussivun. Valitse arvo avattavasta luettelosta. Jos sivuja ei näy, raportissasi on vain yksi sivu tai liittämäsi URL-osoite sisältää sivun nimen. Valitse tietty sivu poistamalla raporttiosa URL-osoitteesta. |
+| Näytä |Määrittää, miten raportti sovitetaan SharePoint Online -sivulle. |
 | Näytä siirtymisruutu |Näyttää tai piilottaa sivun siirtymisruudun. |
 | Näytä suodatusruutu |Näyttää tai piilottaa suodatusruudun. |
 
 ## <a name="reports-that-do-not-load"></a>Raportit, joiden lataaminen ei onnistu
 
-Jos raportti ei lataudu Power BI-verkko-osa, saatat nähdä seuraavan sanoman:
+Jos raporttisi ei lataudu Power BI -verkko-osaan, saatat saada seuraavan ilmoituksen:
 
-![Tämä sisältö ei ole käytettävissä viesti](media/service-embed-report-spo/powerbi-sharepoint-report-not-found.png)
+![Tämä sisältö ei ole käytettävissä -viesti](media/service-embed-report-spo/powerbi-sharepoint-report-not-found.png)
 
 Tähän viestiin on kaksi yleistä syytä.
 
-1. Sinulla ei ole raportin käyttöoikeudet.
+1. Sinulla ei ole raportin käyttöoikeuksia.
 2. Raportti on poistettu.
 
-Omistajalta SharePoint Onlinen sivun ratkaisemaan ongelman.
+Ota yhteyttä SharePoint Online -sivun omistajaan ratkaistaksesi ongelman.
 
 ## <a name="licensing"></a>Käyttöoikeudet
 
@@ -151,7 +151,7 @@ Raporttia SharePointissa tarkastelevat käyttäjät tarvitsevat **Power BI Pro -
   
   1. Kirjaudu ulos SharePointista ja kirjaudu uudelleen sisään. Muista sulkea kaikki selainikkunat, ennen kuin kirjaudut uudelleen sisään.
 
-  2. Jos käyttäjätilisi edellyttää monimenetelmäisen todennuksen (MFA), kirjaudu sisään SharePointiin MFA laitteesi (esimerkiksi puhelinsovellus, älykortin) käyttämistä.
+  2. Jos käyttäjätilisi edellyttää monimenetelmäistä todentamista (MFA), kirjaudu sisään SharePointiin monimenetelmäisen todentamisen laitteella (esimerkiksi puhelinsovellus, älykortti ja niin edelleen).
   
   3. Azuren B2B -vieraiden käyttäjätilejä ei tueta. Käyttäjät näkevät Power BI -logon, joka näyttää osan latautuvan, mutta raporttia ei näytetä.
 

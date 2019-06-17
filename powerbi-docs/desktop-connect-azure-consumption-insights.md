@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 12/06/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 383d28a9e24165b12cda73ee254541a32db4391c
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 4c2ef62dc3ea8aac9c4a0d30ba4dba58e2279490
+ms.sourcegitcommit: 57a12aa42c8549debc60ff1c8e78533dc42e1b86
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61325028"
+ms.lasthandoff: 06/03/2019
+ms.locfileid: "66469829"
 ---
 # <a name="analyze-azure-cost-and-usage-data-in-power-bi-desktop"></a>Azuren kustannus- ja käyttötietojen analysointi Power BI Desktopissa
 
@@ -24,15 +24,15 @@ Power BI desktop voi muodostaa yhteyden Azureen, jolloin saat tarkempia tietoja 
 
 Power BI tukee tällä hetkellä Enterprise Agreement -sopimusten ja asiakassopimusten laskutustileihin yhdistämistä.
 
-* **Enterprise Agreement-sopimuksen** käyttäjien tulee yhdistää kanssa **Azure Consumption Insights-yhdistin**.
+* **Enterprise Agreement** -sopimusten käyttäjien tulee muodostaa yhteys **Azure Consumption Insights** -liittimellä.
 
-* **Asiakassopimus** käyttäjien tulee yhdistää kanssa **Azure Cost Management-liitin**.
+* **Asiakassopimusten** käyttäjien tulee muodostaa yhteys **Azure Cost Management -liittimellä**.
 
 ## <a name="connect-with-azure-consumption-insights"></a>Yhteyden muodostaminen Azure Consumption Insightsin avulla
 
 Azure Consumption Insightsin avulla voit muodostaa yhteyden Azure Enterprise Agreement -sopimuksen laskutustileihin.
 
-Tässä artikkelissa kerrotaan, kuinka voit saada tarvitsemasi tiedot ja kuinka voit siirtyä Azure Enterprise -liittimen käytöstä. Lisäksi saat yhteenvedon *käyttötietosarakkeista*, jotka ovat saatavilla **ACI** (Azure Consumption Insights) -ohjelmointirajapinnassa.
+Tässä artikkelissa kerrotaan, kuinka voit hankkia tarvitsemasi tiedot ja kuinka voit siirtyä Azure Enterprise -liittimen käytöstä. Lisäksi saat yhteenvedon *käyttötietosarakkeista*, jotka ovat saatavilla **ACI** (Azure Consumption Insights) -ohjelmointirajapinnassa.
 
 Jotta yhteyden muodostaminen **Azure Consumption Insights** -liittimen avulla onnistuisi, sinulla on oltava käyttöoikeus Azure-portaalin yritysominaisuuksiin.
 
@@ -45,9 +45,9 @@ Anna avautuvaan valintaikkunaan oma *rekisteröintinumerosi*.
 ![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_02.png)
 
 * Löydät rekisteröintinumerosi [Azure Enterprise Portalista](https://ea.azure.com) seuraavassa kuvassa näkyvästä sijainnista:
-  
+
   ![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_08.png)
-  
+
   Tämä liitinversio tukee vain yritysrekisteröintejä osoitteesta https://ea.azure.com. Kiinassa tehtyjä rekisteröintejä ei tueta tällä hetkellä.
 
 Anna seuraavaksi *tiliavaimesi* yhteyden muodostamista varten.
@@ -55,11 +55,11 @@ Anna seuraavaksi *tiliavaimesi* yhteyden muodostamista varten.
 ![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_03.png)
 
 * Löydät rekisteröintiin tarvittavan tiliavaimesi [Azure Enterprise Portalista](https://ea.azure.com).
-  
+
   ![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_09.png)
 
-Kun annat *tiliavaimesi* ja valitset **Yhdistä**, näyttöön avautuu **selainikkuna**, jossa on yhdeksän käytettävissä olevaa taulukkoa: 
-* **Budgets**: Näyttää budjettitiedot todellisten kustannusten tai käytön tarkastelemiseksi olemassa oleviin budjettitavoitteisiin verrattuna. 
+Kun annat *tiliavaimesi* ja valitset **Yhdistä**, näyttöön avautuu **selainikkuna**, jossa on yhdeksän käytettävissä olevaa taulukkoa:
+* **Budgets**: Näyttää budjettitiedot todellisten kustannusten tai käytön tarkastelemiseksi olemassa oleviin budjettitavoitteisiin verrattuna.
 * **MarketPlace**: Näyttää käyttöön perustuvat Azure Marketplace -maksut.
 * **PriceSheets**: Näyttää käytettävissä olevat hinnat mittarin mukaan rekisteröintiä varten.
 * **RICharges**: Näyttää varattuihin esiintymiin liittyvät maksut viimeisten 24 kuukauden ajalta.
@@ -75,8 +75,8 @@ Voit avata esikatselun valitsemalla minkä tahansa taulukon vieressä olevan val
 
 > [!NOTE]
 > *Summary* (Yhteenveto)- ja *PriceSheet* (Hinnasto) -taulukot ovat käytettävissä vain rekisteröintitason ohjelmointirajapinta-avaimelle. Lisäksi näiden taulukoiden tiedot sisältävät oletusarvoisesti kuluvan kuukauden käyttöä koskevat *Usage* (Käyttö) -tiedot ja *PriceSheet* (Hinnasto) -tiedot. *Summary* (Yhteenveto)- ja *MarketPlace*-taulukot eivät rajoitu kuluvaan kuukauteen.
-> 
-> 
+>
+>
 
 Kun valitset **Lataa**, tiedot ladataan **Power BI Desktopiin**.
 
@@ -141,7 +141,7 @@ Seuraavaksi on siirrettävä luomasi mukautetut sarakkeet tai mittarit uuteen ti
 
 1. Avaa Muistio (tai muu tekstieditori).
 2. Valitse mittari, jonka haluat siirtää, kopioi teksti *Kaava*-kentästä ja lisää se Muistioon.
-   
+
    ![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_11.png)
 3. Muuta *Kysely1*:n nimeksi alkuperäisen tietotaulukon nimi.
 4. Luo taulukkoon uusia mittareita ja mukautettuja sarakkeita napsauttamalla taulukkoa hiiren kakkospainikkeella ja valitsemalla **Uusi mittari**. Leikkaa ja liimaa sen jälkeen tallennetut mittarit ja sarakkeet, kunnes ne ovat kaikki valmiit.
@@ -150,7 +150,7 @@ Seuraavaksi on siirrettävä luomasi mukautetut sarakkeet tai mittarit uuteen ti
 Monissa koontinäytöissä on lisäksi taulukoita, joita käytetään hakuun tai suodatukseen, kuten päivämäärätaulukoita tai mukautettuihin projekteihin käytettyjä taulukoita. Näiden suhteiden muodostaminen uudelleen ratkaisee useimmat jäljellä olevat ongelmat. Näin voit tehdä sen.
 
 - Valitse **Power BI Desktopin** **Mallinnus**-välilehdeltä **Suhteiden hallinta**, jolloin näyttöön avautuu ikkuna, jossa voit hallita mallin sisältämiä suhteita. Linkitä taulukot uudelleen tarpeen mukaan.
-   
+
     ![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_12.png)
 
 ### <a name="step-5-verify-your-visuals-and-adjust-field-formatting-as-needed"></a>Vaihe 5: Tarkista visualisoinnit ja säädä kentän muotoilua tarpeen mukaan
@@ -215,9 +215,9 @@ Tietojen sarakkeet ja nimet Azure-portaalissa ovat vastaavat ohjelmointirajapinn
 Tässä osiossa opit muodostamaan yhteyden asiakassopimusten laskutustiliin.
 
 > [!NOTE]
-> Azure Cost Management-liitin tukee tällä hetkellä asiakkaille **asiakassopimus**.  **Enterprise Agreement-sopimuksen** asiakkaiden tulee käyttää Microsoft Azure Consumption Insights-liitin.
-> 
-> 
+> Azure Cost Management -liitin tukee tällä hetkellä **asiakassopimusten** asiakkaita.  **Enterprise Agreement** -sopimusten käyttäjien tulee käyttää Microsoft Azure Consumption Insights -liitintä.
+>
+>
 
 Voit yhdistää **Azure Cost Management** -liittimellä valitsemalla **Nouda tiedot** **Power BI Desktopin** **Aloitus**-valintanauhasta.  Valitse **Azure** vasemmalla olevista luokista, niin näet **Azure Cost Managementin (beeta)** . Valitse **Muodosta yhteys**.
 
@@ -234,7 +234,7 @@ Voit hakea laskutusprofiilin tunnuksen [Azure-portaalista](https://portal.azure.
 Sinua pyydetään kirjautumaan sisään Azure-sähköpostiosoitteella ja -salasanalla.  Kun olet kirjautunut, näet **Siirtymistoiminto**-ikkunan, jossa on kaksitoista taulukkoa:
 
 * **Laskutustapahtumat**: Sisältää uusien laskujen, hyvitysostojen ja muiden tietojen tapahtumalokin.
-* **Budgets**: Näyttää budjettitiedot todellisten kustannusten tai käytön tarkastelemiseksi olemassa oleviin budjettitavoitteisiin verrattuna. 
+* **Budgets**: Näyttää budjettitiedot todellisten kustannusten tai käytön tarkastelemiseksi olemassa oleviin budjettitavoitteisiin verrattuna.
 * **Veloitukset**: Sisältää yhteenvedon Azuren käytöstä kuukausittain, markkinamaksuista ja erikseen laskutetuista veloituksista.
 * **Hyvitysostot**: Sisältää tiedon kyseisen laskutusprofiilin Azure-hyvitysten ostotiedoista.
 * **Hyvitysten yhteenveto**: Sisältää yhteenvedon kyseisen laskutusprofiilin hyvityksistä.
@@ -257,6 +257,8 @@ Kun valitset **Lataa**, tiedot ladataan **Power BI Desktopiin**.
 Kun valitsemasi tiedot on ladattu, valitsemasi taulukot ja kentät näkyvät **Kentät**-ruudussa.
 
 ![](media/desktop-connect-azure-consumption-insights/azure-cost-management-05.png)
+
+Katso video [kulujen analysoinnista Power BI:ssä Azure Consumption Insightsin](https://www.youtube.com/watch?v=QKBMXXrlpEk) avulla. Siitä saat lisätietoja kustannustietojen analysoinnista Power BI Desktopissa Azure Consumption Insights -liittimen avulla.
 
 ## <a name="writing-custom-queries"></a>Mukautettujen kyselyjen kirjoittaminen
 
@@ -288,4 +290,3 @@ Power BI Desktopin avulla voit muodostaa yhteyden hyvin monenlaisiin tietoihin. 
 * [Tietojen muotoilu ja yhdistäminen Power BI Desktopissa](desktop-shape-and-combine-data.md)
 * [Yhteyden muodostaminen Excel-työkirjoihin Power BI Desktopissa](desktop-connect-excel.md)   
 * [Tietojen antaminen suoraan Power BI Desktopiin](desktop-enter-data-directly-into-desktop.md)   
-

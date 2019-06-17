@@ -1,6 +1,6 @@
 ---
-title: Yhteyden muodostaminen Power BI Premium-tietojoukkoja, joilla asiakassovellusten ja työkalut (esikatselu)
-description: Kuvataan, miten muodostat yhteyden Power BI Premium-tietojoukkoja asiakassovellusten ja työkalut.
+title: Yhdistäminen Power BI Premium -tietojoukkoihin asiakassovelluksilla ja työkalulla (esikatselu)
+description: Lue ohjeet siihen, miten voit yhdistää Power BI Premium -tietojoukkoihin asiakassovelluksilla ja -työkaluilla.
 author: minewiskan
 ms.author: owend
 manager: kfile
@@ -8,111 +8,109 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 05/20/2019
+ms.date: 05/31/2019
 ms.custom: seodec18
 LocalizationGroup: Premium
-ms.openlocfilehash: 063f43cb2345ccb3d1fec5c414100beb8ccde451
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: b671d2f55135312fb529d4b4b30af3941c525a26
+ms.sourcegitcommit: c539726c9c180e899a8a34443e3fda2b9848beb2
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65941516"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66448312"
 ---
-# <a name="connect-to-datasets-with-client-applications-and-tools-preview"></a>Tietojoukkoihin asiakassovellusten ja työkalujen (esikatselu)
+# <a name="connect-to-datasets-with-client-applications-and-tools-preview"></a>Tietojoukkoihin yhdistäminen asiakassovelluksilla ja työkaluilla (esikatselu)
 
-Työtilat ja tietojoukkojen tuki Power BI Premium *vain luku-* yhteydet Microsoftin ja kolmansien osapuolten sovelluksissa ja työkalut. 
+Power BI Premiumin työtilat ja tietojoukot tukevat Microsoftin sekä muiden valmistajien asiakassovellusten ja työkalujen *Vain luku* -yhteyksiä. 
 
 > [!NOTE]
-> Tämä artikkeli on tarkoitettu vain, jos haluat ottaa käyttöön vain luku-yhteys Power BI Premium-työtilojen ja tietojoukkoja. Se *ei ole* tarkoitus on tarkempia tietoja ohjelmoitavuusominaisuuden työkalut ja, arkkitehtuuri ja sovellusten hallinnan työtila ja tietojoukon. Tässä kuvattu rekisteröidyiksi edellyttävät tiedot siitä, että Analysis Services-taulukkomallissa tietokannan arkkitehtuuri ja hallinnan.
+> Tämä artikkeli on tarkoitettu vain Power BI Premiumin työtilojen ja tietojoukkojen Vain luku -yhteyksien esittelyksi. Sen tarkoitus *ei ole* tarjota tarkkoja tietoja ohjelmoitavuudesta, tietyistä työkaluista ja sovelluksista, arkkitehtuurista tai työtilojen sekä tietojoukkojen hallinnasta. Tässä käsitellyt aiheet edellyttävät vankkaa ymmärrystä Analysis Servicesin taulukkomallisesta tietokanta-arkkitehtuurista ja -ylläpidosta.
 
 ## <a name="protocol"></a>Protokolla
 
-Käyttää Power BI Premium [XML for Analysis](https://docs.microsoft.com/bi-reference/xmla/xml-for-analysis-xmla-reference) asiakassovellusten ja moduuli, joka hallitsee työtilat ja tietojoukkojen välinen tietoliikenne (XMLA)-protokollan. Ilmoitukset on kautta, mitä ovat kutsutaan yleisesti XMLA-päätepisteitä. XMLA on Microsoft Analysis Services-moduulia, joka käyttölupaa, toimii Power BI semanttisen mallinnus, hallinnon, elinkaaren ja tietojen hallinta käyttää samaa tietoliikennettä-protokollaa. 
+Power BI Premium käyttää [XML for Analysis](https://docs.microsoft.com/bi-reference/xmla/xml-for-analysis-xmla-reference) (XMLA) -protokollaa viestinnässä asiakassovellusten välillä ja moduulissa, joka hallitsee työtilojasi ja tietojoukkojasi. Tämä viestintä kulkee niin sanottujen XMLA-päätepisteiden välillä. XMLA on sama viestintäprotokolla, jota käytetään Microsoft Analysis Services -moduulissa. Se perustuu Power BI:n semanttiseen mallinnukseen, valvontaan, elinkaareen ja tiedonhallintaan. 
 
-Useimmissa sovelluksissa ja työkaluja, joilla ei eksplisiittisesti muodostaa moottorin käyttämällä XMLA-päätepisteitä. Käytä sen sijaan ne asiakaskirjastot, kuten MSOLAP, ADOMD-yhteyksien ja AMO asiakassovelluksen ja moduulia, joka viestii yksinomaan käyttämällä XMLA muodostettu.
+Valtaosa asiakassovelluksista ja työkaluista ei nimenomaisesti ole yhteydessä moduulin kanssa XMLA-päätepisteiden avulla. Ne käyttävät sen sijaan asiakaskirjastoja (esimerkiksi MSOLAP, ADOMD ja AMO) välittäjänä asiakassovelluksen ja moduulin välillä, joka viestii ainoastaan XMLA:n välityksellä.
 
 
-## <a name="supported-tools"></a>Tuettuja työkaluja
+## <a name="supported-tools"></a>Tuetut työkalut
 
-Näiden työkalujen tukevat vain luku-oikeudet Power BI Premium-työtilojen ja tietojoukkojen:
+Seuraavat työkalut tukevat Power BI Premiumin työtilojen ja tietojoukkojen Vain luku -käyttöä:
 
-**SQL Server Management Studio (SSMS)** -tukee DAX-, MDX-, XMLA- ja TraceEvent kyselyitä. Edellyttää versiota 18.0. Lataa [tähän](https://docs.microsoft.com/sql/ssms/download-sql-server-management-studio-ssms). 
+**SQL Server Management Studio (SSMS)** : Tukee DAX-, MDX-, XMLA- ja TraceEvent-kyselyitä. Edellyttää versiota 18.0. Lataa [täältä](https://docs.microsoft.com/sql/ssms/download-sql-server-management-studio-ssms). 
 
-**SQL Server Profiler** -mukana SSMS 18.0 (esikatselu), tämä työkalu tarjoaa seuranta ja virheenkorjauksen palvelimen tapahtumiin. Voi siepata ja Tallenna tiedosto tai taulukkoon analysoida myöhemmin tapahtuman tietoja. Kun tuote virallisesti vanhentunut SQL Server, Profiler jatkuu sisällytettävä ssms: ssä ja pysyy tuetut Analysis Services ja Power BI Premium nyt. Lisätietoja on artikkelissa [SQL Server Profiler](https://docs.microsoft.com/sql/tools/sql-server-profiler/sql-server-profiler).
+**SQL Server Profiler**: Tämä SSMS 18.0:aan (esikatselu) sisältyvä työkalu tarjoaa palvelintapahtumien seurannan ja virheenkorjauksen. Voit kirjata ja tallentaa tietoja kustakin tapahtumasta tiedostoon tai taulukkoon myöhemmin analysoitavaksi. Vaikka Profiler on virallisesti poistettu käytöstä SQL Serverille, se on kuitenkin edelleen mukana SSMS:ssä ja sitä tuetaan edelleen Analysis Servicesille ja nyt Power BI Premiumille. Saat lisätietoja [SQL Server Profilerin](https://docs.microsoft.com/sql/tools/sql-server-profiler/sql-server-profiler) ohjeartikkelista.
 
-**DAX-Studio** – avoimen lähdekoodin yhteisön työkalu suoritetaan ja analysointi DAX-kyselyt Analysis Services-vastaan. Edellyttää 2.8.2 versio tai uudempi versio. Lisätietoja on artikkelissa [daxstudio.org](https://daxstudio.org/).
+**DAX Studio**: Tämä on avoimen lähdekoodin yhteisötyökalu, jolla voit suorittaa ja analysoida DAX-kyselyitä Analysis Servicesin kanssa. Edellyttää versiota 2.8.2 tai tätä uudempaa. Saat lisätietoja osoitteesta [daxstudio.org](https://daxstudio.org/).
 
-**Excelin pivot-taulukot** – pika-versio Office 16.0.11326.10000 tai uudempi on pakollinen.
+**Excelin Pivot-taulukot**: edellyttää Officen (vähintään versio 16.0.11326.10000) pika-asennusversiota.
 
-**Kolmannen osapuolen** – sisältää asiakassovellukset tietojen visualisointi ja työkaluja, joiden avulla voit muodostaa yhteyden, kyselyn ja käyttää Power BI Premium-tietojoukkoja. Useimmat Työkalut edellyttävät MSOLAP-asiakaskirjastot uusimmat versiot, mutta jotkin voi käyttää ADOMD-yhteyksien.
+**Muut ohjelmistovalmistajat**: tarjolla on esimerkiksi tietojen visualisoinnin asiakassovelluksia ja työkaluja, joilla voit muodostaa yhteyden Power BI Premiumin tietojoukkoihin, tehdä kyselyitä niihin ja käyttää niitä. Useimmat työkalut edellyttävät MSOLAP-asiakaskirjastojen uusimpia versioita, mutta jotkin saattavat käyttää ADOMD-kirjastoja.
 
 ## <a name="client-libraries"></a>Asiakaskirjastot
 
-Asiakaskirjastot tarvitaan yhteyden muodostamiseen Power BI Premium-työtilojen asiakassovellusten ja työkalut. Power BI Premium tukee myös muodostaa yhteyden Analysis Services käyttää samaa asiakaskirjastot. Microsoft-asiakassovellusten, kuten Excel, SQL Server Management Studio (SSMS) ja SQL Server Data Tools (SSDT) asentaa kaikki kolme asiakaskirjastot ja päivitä ne. sekä säännöllisesti sovellusten päivitykset. Erityisesti kolmannen osapuolen sovellukset ja työkaluja, ja joissakin tapauksissa joudut ehkä asentaa asiakaskirjastot uudempia. Asiakaskirjastot päivitetään kuukausittain. Lisätietoja on artikkelissa [muodostettaessa yhteyttä Analysis Services-asiakaskirjastot](https://docs.microsoft.com/azure/analysis-services/analysis-services-data-providers).
+Asiakassovellukset ja työkalut edellyttävät asiakaskirjastoja voidakseen muodostaa yhteyden Power BI Premium -työtiloihin. Samoja asiakaskirjastoja, joilla muodostetaan yhteys Analysis Servicesiin, tuetaan myös Power BI Premiumissa. Microsoftin asiakassovellukset, esimerkiksi Excel, SQL Server Management Studio (SSMS) ja SQL Server Data Tools (SSDT), asentavat kaikki kolme asiakaskirjastoa ja päivittävät niitä säännöllisesti sovelluspäivitysten yhteydessä. Joissain tapauksissa, etenkin muiden ohjelmistovalmistajien sovelluksia ja työkaluja käytettäessä, sinun täytyy ehkä asentaa asiakaskirjastojen uudemmat versiot. Asiakaskirjastoja päivitetään kuukausittain. Saat lisätietoja ohjeartikkelista [Asiakaskirjastot Analysis Servicesiin yhdistämiseksi](https://docs.microsoft.com/azure/analysis-services/analysis-services-data-providers).
 
-## <a name="connecting-to-a-premium-workspace"></a>Yhteyden muodostaminen Premium-työtila
+## <a name="connecting-to-a-premium-workspace"></a>Premium-työtilaan yhdistäminen
 
-Voit muodostaa yhteyden työtilat määritetty varattu Premium-kapasiteetteja. Määritetty varattua kapasiteettia työtilat ovat yhteysmerkkijono URL-Osoitteen muoto. 
+Voit yhdistää työtiloihin, joille on määritetty omat Premium-kapasiteetit. Työtiloilla, jotka on määritetty omalle kapasiteetilleen, on yhteysmerkkijono URL-muodossa. 
 
-Saada Power BI-työtila-yhteysmerkkijono tässä **työtilan asetukset**edelleen **Premium** -välilehden **työtilan yhteyden**, valitse **kopioi**.
+Voit hakea työtilan yhteysmerkkijonon valitsemalla Power BI:ssä **työtilan asetusten** **Premium**-välilehden **työtilayhteyden** kohdassa **Kopioi**.
 
 ![Työtilan yhteysmerkkijono](media/service-premium-connect-tools/connect-tools-workspace-connection.png)
 
-Työtilan yhteydet käyttämällä URL-muotoa osoite työtilan tavoin Analysis Services-palvelimen nimi:   
+Työtilayhteydet käyttävät seuraavaa URL-muotoa työtiloille kuin ne olisivat Analysis Services -palvelinnimiä:   
 `powerbi://api.powerbi.com/v1.0/[tenant name]/[workspace name]` 
 
-Esimerkiksi `powerbi://api.powerbi.com/v1.0/contoso.com/Sales Workspace`
-> [!NOTE]
-> `[workspace name]` on merkitsevä ja voi olla välilyöntejä. 
+esimerkiksi `powerbi://api.powerbi.com/v1.0/contoso.com/Sales Workspace`.
 
-### <a name="to-connect-in-ssms"></a>Yhteyden ssms: ssä
+### <a name="to-connect-in-ssms"></a>Yhdistäminen SSMS:ssä
 
-- **Muodosta yhteys palvelimeen** > **palvelintyyppi**, valitse **Analysis Services-** . - **Palvelimen nimi**, anna URL-osoite. - **Todentamisen**, valitse **Active Directory - Universal MFA-tuen**, ja valitse sitten **käyttäjänimi**, anna organisaation käyttäjätunnuksesi. 
+Valitse **Connect to Server** > **Server Type** > **Analysis Services**. Anna URL-osoite **Server name** -kenttään. Valitse **Authentication** -kohdassa **Active Directory - Universal with MFA Support**. Anna sitten **User name** -kenttään organisaation käyttäjätunnuksesi. 
 
-Kun yhteys on muodostettu, työtilan näytetään Analysis Services-palvelimeen ja työtilan tietojoukot näkyvät tietokantoja.  
+Kun yhteys on muodostettu, työtila näytetään Analysis Services -palvelimensa ja työtilan tietojoukot tietokantoina.  
 
-![SSMS: SSÄ](media/service-premium-connect-tools/connect-tools-ssms.png)
+![SSMS](media/service-premium-connect-tools/connect-tools-ssms.png)
 
 ### <a name="initial-catalog"></a>Alkuperäinen luettelo
 
-Jotkin työkaluja, kuten SQL Server Profiler joudut ehkä määrittämään *alkuperäinen luettelo*. Määritä työtilan tietojoukko (tietokanta). - **Muodosta yhteys palvelimeen**, valitse **asetukset**. - **Muodosta yhteys palvelimeen** valintaikkunassa, **yhteyden ominaisuudet** -välilehden **tietokannan yhdistäminen**, tietojoukon nimi.
+Jotkin työkalut, esimerkiksi SQL Server Profiler, saattavat edellyttää, että määrität *alkuperäisen luettelon*. Määritä tietojoukko (tietokanta) työtilaasi. Valitse **Yhdistä palvelimeen** -kohdassa **Asetukset**. Anna **Yhdistä palvelimeen** -valintaikkunan **yhteyden ominaisuuksien** välilehden **Yhdistä tietokantaan** -kohdassa tietojoukon nimi.
 
-### <a name="duplicate-workspace-name"></a>Työtilan nimen kaksoiskappale
+### <a name="duplicate-workspace-name"></a>Päällekkäinen työtilan nimi
 
-Kun muodostat yhteyden käyttäen samaa nimeä kuin työtiloissa työtilan, saatat saada seuraavan virheen: **Ei voi muodostaa yhteyttä powerbi://api.powerbi.com/v1.0/ [vuokraajan nimi] / [työtilan nimi].**
+Kun yhdistät työtilaan, jolla on sama nimi kuin toisella työtilalla, saatat saada seuraavan virheilmoituksen: **Cannot connect to powerbi://api.powerbi.com/v1.0/[vuokraajan nimi]/[työtilan nimi].**
 
-Voit kiertää tämän virheen lisäksi työtilan nimi määrittämällä käyttämiseen, joka voidaan kopioida URL-työtilan objectid-tunnus. Lisää yhteys URL-Osoitteeseen objectid-kohdetta. Esimerkiksi ”powerbi://api.powerbi.com/v1.0/myorg/Contoso myynti - 9d83d204 82a9-4b36-98f2-a40099093830'
+Voit kiertää tämän ongelman määrittämällä työtilan nimen lisäksi myös ObjectIDGuid-arvon, jonka voit kopioida työtilan URL-osoitteesta objectID-kohdasta. Liitä objectID yhteyden URL-osoitteen loppuun. Esimerkki: powerbi://api.powerbi.com/v1.0/myorg/Contoso Sales - 9d83d204-82a9-4b36-98f2-a40099093830
 
-### <a name="duplicate-dataset-name"></a>Tietojoukon nimen kaksoiskappale
+### <a name="duplicate-dataset-name"></a>Päällekkäinen tietojoukon nimi
 
-Kun muodostat yhteyden tietojoukkoon käyttäen samaa nimeä kuin samassa työtilassa tietojoukosta, liitetään tietojoukon nimen tietojoukon GUID-tunnus. Saat tietojoukon sekä nimi *ja* GUID-tunnus, kun yhteys on muodostettu työtilan ssms: ssä. 
+Kun yhdistät tietojoukkoon, jolla on sama nimi kuin toisella tietojoukolla samassa työtilassa, liitä tietojoukon GUID-tunnus tietojoukon nimeen. Voit hakea sekä tietojoukon nimen *että* GUID-tunnuksen, kun olet yhteydessä työtilaan SSMS:ssä. 
 
-### <a name="delay-in-datasets-shown"></a>Tietojoukot näkyvät viive
+### <a name="delay-in-datasets-shown"></a>Viive näytetyissä tietojoukoissa
 
-Muodostettaessa yhteyttä työtilan muutokset uusi poistettu ja nimetty tietojoukoista voi kestää jopa viisi minuuttia näkyvät. 
+Kun yhdistät työtilaan, muutokset uusista, poistetuista ja uudelleennimetyistä tietojoukoista saattavat näkyä vasta jopa viiden minuutin viipeellä. 
 
-### <a name="unsupported-datasets"></a>Ei tueta tietojoukkoja
+### <a name="unsupported-datasets"></a>Tietojoukot, joita ei tueta
 
-Seuraavissa tietojoukoissa ei voi käyttää käyttämällä XMLA-päätepisteitä. Nämä tietojoukot *ei* näkyy työtilan ssms: ssä tai muissa työkaluissa: 
+Seuraavia tietojoukkoja ei voi käyttää XMLA-päätepisteillä. Näitä tietojoukkoja *ei* näytetä työtilassa SSMS:ssä tai muissa työkaluissa: 
 
-- Tietojoukkoja, joilla on reaaliaikainen yhteys Analysis Services-malleja. 
-- Tietojoukkoja, joissa on tietojen siirtämiseen REST-Ohjelmointirajapinnan avulla.
-- Excel-työkirjan tietojoukoista. 
+- tietojoukot, joilla on reaaliaikainen yhteys Analysis Services -malleihin 
+- tietojoukot, jotka lähettävät tietoja REST API:n avulla
+- Excel-työkirjojen tietojoukot. 
 
-Seuraavissa tietojoukoissa ei tueta Power BI-palvelussa:   
+Seuraavia tietojoukkoja ei tueta Power BI -palvelussa:   
 
-- Tietojoukot käyttäen reaaliaikaista yhteyttä Power BI-tietojoukkoon.
+- tietojoukot, joilla on reaaliaikainen yhteys Power BI -tietojoukkoon.
 
 ## <a name="audit-logs"></a>Valvontalokit 
 
-Kun asiakassovellusten ja työkaluja, joilla yhteyden työtilaan, access XMLA-päätepisteiden kautta on kirjautunut sisään Power BI-valvontalokit **GetWorkspaces** toiminto. Lisätietoja on artikkelissa [valvonta Power BI-](service-admin-auditing.md).
+Kun asiakassovellukset ja työkalut yhdistävät työtilaan, käyttö XMLA-päätepisteiden kautta kirjataan Power BI -valvontalokeihin **GetWorkspaces**-toiminnon alle. Saat lisätietoja artikkelista [Power BI:n valvonta](service-admin-auditing.md).
 
 ## <a name="see-also"></a>Katso myös
 
-[Analysis Services References](https://docs.microsoft.com/bi-reference/#pivot=home&panel=home-all)   
+[Analysis Services -viittaukset](https://docs.microsoft.com/bi-reference/#pivot=home&panel=home-all)   
 [SQL Server Management Studio](https://docs.microsoft.com/sql/ssms/sql-server-management-studio-ssms)   
-[SQL Server Analysis Services taulukkomuotoisia protokolla](https://docs.microsoft.com/openspecs/sql_server_protocols/ms-ssas-t/b98ed40e-c27a-4988-ab2d-c9c904fe13cf)   
-[Dynaamista näkymät (DMVs)](https://docs.microsoft.com/sql/analysis-services/instances/use-dynamic-management-views-dmvs-to-monitor-analysis-services)   
+[SQL Server Analysis Servicesin taulukkomuotoinen protokolla](https://docs.microsoft.com/openspecs/sql_server_protocols/ms-ssas-t/b98ed40e-c27a-4988-ab2d-c9c904fe13cf)   
+[Dynaamiset hallintanäkymät](https://docs.microsoft.com/sql/analysis-services/instances/use-dynamic-management-views-dmvs-to-monitor-analysis-services)   
 
 
 Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)

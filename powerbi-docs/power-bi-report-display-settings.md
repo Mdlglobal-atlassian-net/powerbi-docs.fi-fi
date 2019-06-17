@@ -11,59 +11,59 @@ ms.topic: conceptual
 ms.date: 05/29/2019
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: 8a96371d6cb54d47d412165ef179df78a34b8e19
-ms.sourcegitcommit: d88cc6a87d4ba82ad2c4d496a3634f927e4ac529
-ms.translationtype: MT
+ms.openlocfilehash: 97df2d6910f0215bd01875c88ea5d81d5dcc2c7c
+ms.sourcegitcommit: 762857c8ca09ce222cc3f8b006fa1b65d11e4ace
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66412946"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66720836"
 ---
 # <a name="page-display-settings-in-a-power-bi-report"></a>Power BI -raportin sivun näyttöasetukset
-Ymmärrämme on pitää raportin asettelu pikselilleen täydellisen. Joskus se voi olla haastavaa, koska sinä ja työtoverisi voivat tarkastella näitä raportteja erikokoisilta näytöiltä, joissa eri kuvasuhteet. 
+Ymmärrämme, miten tärkeää on pitää raportin asettelu pikselilleen oikeana. Joskus se voi olla hankalaa, koska sinä ja työtoverisi saatatte katsella raportteja erikokoisilta näytöiltä, joissa on erilaiset kuvasuhteet. 
 
-Näyttönäkymän oletusasetuksena on **Sovita sivulle**, ja näytön koon oletusasetus on **16:9**. Jos haluat lukita käyttöön jonkin muun kuvasuhteen tai sovittaa raportin eri tavalla, käytettävissäsi on kaksi työkalua: ***Sivunäkymä*** asetukset ja ***sivun koko*** asetukset.
+Näyttönäkymän oletusasetuksena on **Sovita sivulle**, ja näytön koon oletusasetus on **16:9**. Jos haluat lukita käyttöön jonkin muun kuvasuhteen tai sovittaa raportin eri tavalla, käytettävissäsi on kaksi työkalua: ***Sivunäkymä***-asetukset ja ***Sivun koko*** -asetukset.
 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/5tg-OXzxe2g" frameborder="0" allowfullscreen></iframe>
 
 
-## <a name="where-to-find-page-view-settings-in-the-power-bi-service-and-power-bi-desktop"></a>Sivun näkymäasetukset mistä Power BI-palvelussa ja Power BI Desktop
-Sivun näkymäasetukset ovat käytettävissä Power BI-palvelussa ja Power BI Desktop, mutta niiden käyttöliittymät poikkeavat hieman erilainen. Seuraavassa kerrotaan löytämiseen näkymäasetukset sijaitsevat kummassakin Power BI ‑työkalussa.
+## <a name="where-to-find-page-view-settings-in-the-power-bi-service-and-power-bi-desktop"></a>Sivun näkymäasetusten sijainti Power BI -palvelussa ja Power BI Desktopissa
+Sivun näkymäasetukset ovat käytettävissä sekä Power BI -palvelussa että Power BI Desktopissa, mutta niiden käyttöliittymät poikkeavat hieman toisistaan. Seuraavissa osioissa kerrotaan, missä näkymäasetukset sijaitsevat kummassakin Power BI -työkalussa.
 
 ### <a name="in-power-bi-desktop"></a>Power BI Desktopissa
 Valitse Raporttinäkymästä **Näkymä**, jolloin esiin tulee sivun näkymäasetukset sekä puhelimen asetteluasetukset.
 
   ![Työpöydän sivun näkymäasetukset](media/power-bi-report-display-settings/power-bi-desktop-view-settings.png)
 
-### <a name="in-the-power-bi-service-apppowerbicom"></a>Power BI-palvelussa (app.powerbi.com)
-Avaa Power BI-palvelussa raportti ja valitse **näkymän** vasemmasta yläkulmasta valikko.
+### <a name="in-the-power-bi-service-apppowerbicom"></a>Power BI -palvelussa (app.powerbi.com)
+Avaa Power BI -palvelussa raportti ja valitse vasemmasta yläkulmasta valikko **Näkymä**.
 
 ![palvelun sivun näkymäasetukset](media/power-bi-report-display-settings/power-bi-change-page-view.png)
 
-Sivun näkymäasetukset ovat käytettävissä sekä [Lukunäkymä ja Muokkausnäkymä](consumer/end-user-reading-view.md). Muokkausnäkymässä raportin omistaja voi määrittää yksittäisille raporttisivuille sivun näkymäasetukset ja asetukset tallentuvat raportin kanssa. Kun työtoverit avaavat raportin lukunäkymässä, he näkevät raportin sivut omistajan asetusten mukaisesti. Lukunäkymässä, työtoverit voivat muuttaa *joitakin* , **Sivunäkymä** asetukset, mutta muutoksia ei tallenneta raportin sulkemisen yhteydessä.
+Sivun näkymäasetukset ovat käytettävissä sekä [luku- että muokkausnäkymässä](consumer/end-user-reading-view.md). Muokkausnäkymässä raportin omistaja voi määrittää yksittäisille raportin sivuille sivun näkymäasetukset, ja asetukset tallentuvat yhdessä raportin kanssa. Kun työtoverit avaavat raportin lukunäkymässä, he näkevät raportin sivut omistajan asetusten mukaisesti. Lukunäkymässä työtoverit voivat muuttaa *joitakin* **Sivunäkymä**-asetuksia, mutta muutoksia ei tallenneta raportin sulkemisen yhteydessä.
 
 ## <a name="page-view-settings"></a>Sivun näkymäasetukset
-Sivun näkymäasetukset ensimmäiset määrittää raporttisivun suhteessa selainikkunaan. Vaihtoehdot ovat:
+Ensimmäiset Sivunäkymä-asetukset määrittävät raporttisivun näyttämisen suhteessa selainikkunaan. Vaihtoehdot ovat:
 
-* **Sovita sivulle** (oletus): Sisältö skaalataan sopimaan sivulle parhaiten
-* **Sovita leveyteen**: Sisältö ovat skaalataan mahtumaan sivulle leveyssuunnassa
+* **Sovita sivulle** (oletus): Sisältö skaalataan sen mukaan, miten se sopii sivulle parhaiten
+* **Sovita leveyteen**: Sisältö skaalataan mahtumaan sivulle leveyssuunnassa
 * **Todellinen koko**: Sisältö näytetään täydessä koossa
 
-Toinen joukko sivun asetukset ohjausobjektit raporttipohjalla objektien asettelun. Vaihtoehdot ovat:
+Seuraavat Sivunäkymä-asetukset määrittävät objektien asettelun raporttipohjalla. Vaihtoehdot ovat:
 
-* **Näytä ruudukon viivat**: Ota käyttöön ruudukon, joka auttaa objektien sijoittelemisessa raporttipohjalle.
-* **Kohdista ruudukkoon**: Käyttäminen **Näytä ruudukon viivat** - ‑asetuksen objektien raporttipohjalla. 
-* **Lukitse objektit**: Lukitse objektien piirtoalustalla, niin, että niitä voi siirtää eikä niiden kokoa muuttaa.
-* **Valinta-ruutu**: **Valinta** ruudussa näkyvät kaikkien objektien pohjalla. Voit päättää, mitkä näytetään ja mitkä piilotetaan.
+* **Näytä ruudukon viivat**: Ottaa käyttöön ruudukon, joka auttaa objektien sijoittelemisessa raporttipohjalle.
+* **Kohdista ruudukkoon**: käytetään **Näytä ruudukon viivat** -asetuksen kanssa objektien tasaamiseen tarkasti raporttipohjalle. 
+* **Lukitse objektit**: lukitsee kaikki pohjalla olevat objektit niin, ettei niitä voi siirtää eikä niiden kokoa muuttaa.
+* **Valintaruutu**: **Valinta**-ruudussa näkyvät kaikki kankaalla olevat objektit. Voit päättää, mitkä näytetään ja mitkä piilotetaan.
 
     ![Valinta-paneeli](media/power-bi-report-display-settings/power-bi-selection-pane.png)
 
 
 
-## <a name="page-size-settings"></a>Sivun koon asetukset
-![Muuta sivun koon asetukset](media/power-bi-report-display-settings/power-bi-page-size.png)
+## <a name="page-size-settings"></a>Sivun koko -asetukset
+![muuta sivun kokoa -asetukset](media/power-bi-report-display-settings/power-bi-page-size.png)
 
-**Sivun koko** asetukset ovat vain raportin omistajan käytettävissä. Power BI-palvelussa (app.powerbi.com) se tarkoittaa, että pystyy avaamaan raportin [muokkausnäkymässä](consumer/end-user-reading-view.md). **Sivun koko** asetukset ovat **visualisoinnit** ruudussa ja ohjausobjektin kuvasuhde ja todellinen koko (kuvapisteinä) raporttipohjan:   
+**Sivun koko** -asetukset ovat vain raportin omistajan käytettävissä. Power BI -palvelussa (app.powerbi.com) se tarkoittaa, että raportin pystyy avaamaan [muokkausnäkymässä](consumer/end-user-reading-view.md). **Sivun koko** -asetukset ovat **Visualisoinnit**-ruudussa, ja ne määrittävät raporttipohjan kuvasuhteen ja todellisen koon (kuvapisteinä):   
 
 * Suhde 4:3
 * Suhde 16:9 (oletusasetus)
@@ -72,13 +72,13 @@ Toinen joukko sivun asetukset ohjausobjektit raporttipohjalla objektien asettelu
 * Mukautettu (korkeus ja leveys kuvapisteinä)
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
-[Raporttinäkymä Power BI Desktop](desktop-report-view.md)
+[Raporttinäkymä Power BI Desktopissa](desktop-report-view.md)
 
-[Muuta sivun näkymä ja sivun koon asetukset-Power BI-raporteissa](consumer/end-user-report-view.md)
+[Muuta sivun näkymä- ja kokoasetuksia omissa Power BI -raporteissasi](consumer/end-user-report-view.md)
 
 Lue lisää [Power BI -raporteista](consumer/end-user-reports.md)
 
-[Power BI-palvelun kuluttajille peruskäsitteet](consumer/end-user-basic-concepts.md)
+[Power BI -palvelun peruskäsitteitä suunnittelijoille](service-basic-concepts.md)
 
 Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
 

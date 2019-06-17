@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/02/2018
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: 5c42b633b3c8746d2e26656eb5310b1f74cb2500
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 296970466505f01ae9ad11f994fe2008563f4884
+ms.sourcegitcommit: 762857c8ca09ce222cc3f8b006fa1b65d11e4ace
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61159765"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66720213"
 ---
 # <a name="export-a-report-from-power-bi-service-to-desktop-preview"></a>Raportin vieminen Power BI -palvelusta työasemaan (esikatselu)
 Voit viedä (tai *ladata*) Power BI Desktopissa raportin Power BI -palveluun tallentamalla raportti ja valitsemalla **Julkaise**. Voit myös viedä toiseen suuntaan ja ladata raportin Power BI -palvelusta työpöydälle. Vietävien tiedostojen tiedostopääte kumpaankin suuntaan on *.pbix*.
@@ -68,7 +68,7 @@ Näytä minuutin **Kaveri kuutiossa** -video tästä ominaisuudesta:
 Lisäksi seuraavassa on joitakin artikkeleita, jotka auttavat sinua käyttämään **Power BI -palvelua**:
 
 * [Raportit Power BI:ssä](consumer/end-user-reports.md)
-* [Power BI:n peruskäsitteet](consumer/end-user-basic-concepts.md)
+* [Power BI -palvelun peruskäsitteitä suunnittelijoille](service-basic-concepts.md)
 
 Kun olet asentanut **Power BI Desktopin**, seuraavan sisällön avulla voit aloittaa sen käytön nopeasti:
 

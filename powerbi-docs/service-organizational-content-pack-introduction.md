@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: f7e8d58e5fd738e5da678723ef239f5303be5070
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: da5a36454e52891df7906b444b29b4df2db44d7f
+ms.sourcegitcommit: 762857c8ca09ce222cc3f8b006fa1b65d11e4ace
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61226096"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66721182"
 ---
 # <a name="intro-to-organizational-content-packs-in-power-bi"></a>Power BI:n organisaation sisältöpakettien esittely
 > [!NOTE]
@@ -75,6 +75,6 @@ Kaikilla jakeluryhmän jäsenillä on samat tietojen käyttöoikeudet kuin sisä
 ## <a name="next-steps"></a>Seuraavat vaiheet
 * [Organisaation sisältöpaketin luominen ja julkaiseminen](service-organizational-content-pack-create-and-publish.md)
 * [Sovelluksen luominen ja jakaminen Power BI:ssä](service-create-distribute-apps.md) 
-* [Power BI:n peruskäsitteet](consumer/end-user-basic-concepts.md)
-* Onko sinulla muuta kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
+* [Power BI -palvelun peruskäsitteitä suunnittelijoille](service-basic-concepts.md)
+* Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
 

@@ -8,14 +8,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 04/10/2019
+ms.date: 05/31/2019
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 3bb7de9685a1e0fc9fa423328ad9e1e5faa53603
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: dae93a2555101a42f072158f8536319783b3f973
+ms.sourcegitcommit: aef57ff94a5d452d6b54a90598bd6a0dd1299a46
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61305451"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "66809122"
 ---
 # <a name="data-sources-supported-by-directquery-in-power-bi"></a>{0}DirectQueryn tukemat tietolähteet Power BI:ssä
 
@@ -24,10 +24,11 @@ ms.locfileid: "61305451"
 Seuraavat tietolähteet tukevat DirectQueryä Power BI:ssä:
 
 * Amazon Redshift
-* AtScale (beeta)
+* AtScale (Beta)
+* Azure Data Explorer
 * Azure HDInsight Spark
-* Azure SQL -tietokanta
-* Azure SQL Data Warehouse
+* [Azure SQL -tietokanta](service-azure-sql-database-with-direct-connect.md)
+* [Azure SQL Data Warehouse](service-azure-sql-data-warehouse-with-direct-connect.md)
 * Google BigQuery
 * HDInsight Interactive Query
 * IBM DB2 -tietokanta
@@ -39,7 +40,7 @@ Seuraavat tietolähteet tukevat DirectQueryä Power BI:ssä:
 * SAP Business Warehouse -viestipalvelin
 * SAP HANA
 * Snowflake
-* Spark (versio 0.9 tai tai uudempi)
+* Spark (versio 0.9 ja tätä uudemmat)
 * SQL Server
 * Teradata-tietokanta
 * Vertica
@@ -57,22 +58,39 @@ Seuraavassa taulukossa on määritetty, onko **Paikallinen tietoyhdyskäytävä*
 
 | Lähde | Yhdyskäytävä tarvitaan? |
 | --- | --- |
-| SQL Server |Kyllä |
+| Amazon Redshift |Ei |
+| Azure HDInsight Spark (beeta) |Ei |
 | Azure SQL -tietokanta |Ei |
 | Azure SQL Data Warehouse |Ei |
-| SAP HANA |Kyllä |
-| Oracle-tietokanta |Kyllä |
-| Teradata-tietokanta |Kyllä |
-| Amazon Redshift |Ei |
-| Impala (versio 2.x) |Kyllä |
-| Snowflake |Kyllä |
-| Spark (beeta), versio 0.9 tai uudempi versio |Kyllä |
-| Azure HDInsight Spark (beeta) |Ei |
+| Google BigQuery |Ei |
 | IBM Netezza |Kyllä |
+| Impala (versio 2.x) |Kyllä |
+| Oracle-tietokanta |Kyllä |
 | SAP Business Warehouse -sovelluspalvelin |Kyllä |
 | SAP Business Warehouse -viestipalvelin |Ei vielä tueta **Power BI -palvelussa** |
-| Google BigQuery |Ei |
+| SAP HANA |Kyllä |
+| Snowflake |Kyllä |
+| Spark (beeta), versio 0.9 tai uudempi versio |Kyllä |
+| SQL Server |Kyllä |
+| Teradata-tietokanta |Kyllä |
 
+## <a name="single-sign-on-sso-for-directquery-sources"></a>DirectQuery-lähteiden kertakirjautuminen
+
+Kun kertakirjautumisasetus on käytössä ja käyttäjät käyttävät raportteja, jotka on luotu tietolähteeseen, Power BI lähettää todennetut Azure AD -tunnistetiedot kyselyissä taustalla olevaan tietokantaan. Näin Power BI voi noudattaa tietoturva-asetuksia, jotka on määritetty tietolähteen tasolla.
+
+Kertakirjautumisen asetus tulee voimaan kaikissa tietojoukoissa, jotka käyttävät tätä tietolähdettä. Se ei vaikuta tuontitilanteissa käytettyihin todentamismenetelmiin. Seuraavat tietolähteet tukevat DirectQueryn kertakirjautumisyhteyksiä:
+
+- Azure SQL -tietokanta
+- Azure SQL Data Warehouse
+- Impala
+- SAP HANA
+- SAP BW
+- Spark
+- SQL Server
+- Teradata
+
+> [!Note]
+> Azure Multi-Factor Authenticationia (MFA) ei tueta. Käyttäjät, jotka haluavat käyttää kertakirjautumista DirectQueryn kanssa, täytyy vapauttaa MFA:n käytöstä.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 Saat lisätietoja DirectQuerystä seuraavista resursseista:

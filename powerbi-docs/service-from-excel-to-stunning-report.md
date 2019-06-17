@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/28/2018
 ms.author: maggies
 LocalizationGroup: Data from files
-ms.openlocfilehash: d1e3d6b50b91643dc7c1e658094a5ae7763edc8f
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: cd75aebb09c7b6c54c1ff3f68635bfd5033c7f80
+ms.sourcegitcommit: 762857c8ca09ce222cc3f8b006fa1b65d11e4ace
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61139654"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66721476"
 ---
 # <a name="from-excel-workbook-to-stunning-report-in-no-time"></a>Excel-työkirjasta upeaksi raportiksi nopeasti
 Esimiehesi haluaa raportin viimeisimmistä myyntiluvuista yhdistettynä viimeisimmän kampanjan näyttökertoihin vielä tämän päivän aikana. Uusimmat tiedot sijaitsevat kuitenkin erilaisissa kolmannen osapuolen järjestelmissä ja kannettavan tietokoneesi tiedostoissa. Aiemmin visualisointien luominen ja raportin muotoilu on vienyt tunteja. Tunnet, kuinka ahdistus alkaa vallata alaa.
@@ -97,7 +97,7 @@ Power BI:hin avautuu Jaa koontinäyttö -sivu. Kirjoita vastaanottajien sähköp
 Seuraavat vaiheet
 
 * [Power BI -palvelun käytön aloittaminen](service-get-started.md)
-* [Power BI Desktopin käytön aloittaminen](desktop-getting-started.md)
-* [Power BI:n peruskäsitteet](consumer/end-user-basic-concepts.md)
-* Onko sinulla muuta kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
+* [Aloita Power BI Desktopin käyttö](desktop-getting-started.md)
+* [Power BI -palvelun peruskäsitteitä suunnittelijoille](service-basic-concepts.md)
+* Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
 
