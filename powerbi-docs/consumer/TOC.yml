@@ -106,6 +106,8 @@
       items:
         - name: Sanasto ja terminologia
           href: end-user-glossary.md
+        - name: Usein kysyttyjä kysymyksiä
+          href: end-user-faq.md
         - name: Tuetut selaimet
           href: end-user-browsers.md
         - name: 'Power BI:n tukemat nopeiden merkityksellisten tietojen tyypit'
