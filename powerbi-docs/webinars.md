@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 06/01/2019
 ms.author: v-tatero
-ms.openlocfilehash: 1050cf5ee5060a19e4f38b98fb6766b6e5510451
-ms.sourcegitcommit: 81ba3572531cbe95ea0b887b94e91f94050f3129
+ms.openlocfilehash: 3465d9280af84a97ebf2ea5ec90ff60daf9e96fa
+ms.sourcegitcommit: 1c96b65a03ec0a0612e851dd58c363f4d56bca38
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66750977"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "67389547"
 ---
 # <a name="power-bi-webinars"></a>Power BI -verkkoseminaarit
 
@@ -23,10 +23,6 @@ Rekisteröidy tuleviin reaaliaikaisiin verkkoseminaareihin tai katso nauhoitettu
 ## <a name="upcoming-webinars"></a>Tulevat verkkoseminaarit
 
 Rekisteröidy, jotta saat tietoa Power BI -asiantuntijoilta ja voit osallistua reaaliaikaisiin Q&A-istuntoihin.
-
-**Microsoft Runs on Power BI: Using Power BI in Modern Treasury**,
-<br>esittäjät Pankaj Gudimella ja Guru Kirthigavasan
-<br>[Rekisteröidy ja katso 25.6. 10:00–11:00 (PST)](https://info.microsoft.com/Microsoft-Runs-on-Power-BI-Using-Power-BI-in-Modern-Treasury-Registration.html?LCID=EN-US)
 
 **Power BI: How to Get Insights from Your Workday HR Data**,
 <br>esittäjät Iman Eftekhari, Julia Paton Agile Analyticsiltä ja Shahram Karimi QBE Insurancelta
@@ -61,6 +57,10 @@ Aloita näistä suosituista verkkoseminaareista
 **Microsoft toimii Power BI:n voimalla – näin helpotat taloutesi suunnittelua ja analysointia**
 <br>Cory Hrncirik ja Miguel Martinez
 <br>[Rekisteröidy ja katso nyt](https://info.microsoft.com/Microsoft-Runs-on-Power-BI-OnDemandRegistration.html?Is=Website)
+
+**Microsoft Runs on Power BI: Using Power BI in Modern Treasury**,
+<br>esittäjät Pankaj Gudimella ja Guru Kirthigavasan
+<br>[Rekisteröidy ja katso nyt](https://info.microsoft.com/Microsoft-Runs-on-Power-BI-Using-Power-BI-in-Modern-Treasury-Registration.html?LCID=EN-US)
 
 **Tehosta sovelluksiasi Power BI:n JavaScript-ohjelmointirajapinnalla**
 <br>tekijä: Nimrod Shalit
@@ -141,17 +141,9 @@ Katso tallennetut istuntoja milloin tahansa
 <br>tekijät: Stephen Cracknell ja Stuart Macanliss US Medical IT:stä
 <br>[Rekisteröidy ja katso nyt](https://info.microsoft.com/Proven-Techniques-for-Building-Effective-Dashboards-Registration.html?Is=Website)
 
-**Tehosta BI:n toimintaa sijaintitiedoilla**
-<br>tekijät: Scott Ball Esristä ja Enrique Plaza Microsoftista
-<br>[Rekisteröidy ja katso nyt](https://info.microsoft.com/ww-ondeamnd-boost-powerbi-with-arcgis.html?Is=Website)
-
 **Sovelletut tiedot myynnissä ja palveluissa**
 <br>tekijä: Ed Bobrin Avanadesta
 <br>[Rekisteröidy ja katso nyt](https://info.microsoft.com/applied-intelligence-for-sales-service.html?Is=Website)
-
-**Menestyvän trendinluojan 5 tapaa - Rohit Bhargava**
-<br>tekijä: Rohit Bhargava (Non-Obvious)
-<br>[Rekisteröidy ja katso nyt](https://info.microsoft.com/ww-landing-5-Habits-of-a-Successful-Trend-Curator-Video.html?LCID=EN-US)
 
 **Valmistajat: Ala käy läpi digitaalista muutosta – säilytä johtajuus hyödyntämällä analyyseja kannattavuuden maksimoimiseen**
 <br>tekijät: Jon Thompson Blue Marginista ja Jim Pastor Elgin Fastener Groupista
@@ -160,6 +152,14 @@ Katso tallennetut istuntoja milloin tahansa
 **Visualisoi julkisia tai yksityisiä tietojoukkoja Power BI:n uudella Data.World-liittimellä**
 <br>tekijät: Patrick McGarry ja Miguel Martinez
 <br>[Rekisteröidy ja katso nyt](https://info.microsoft.com/data-world-connector-powerbi.html?Is=Website)
+
+**Tehosta BI:n toimintaa sijaintitiedoilla**
+<br>tekijät: Scott Ball Esristä ja Enrique Plaza Microsoftista
+<br>[Rekisteröidy ja katso nyt](https://info.microsoft.com/ww-ondeamnd-boost-powerbi-with-arcgis.html?Is=Website)
+
+**Menestyvän trendinluojan 5 tapaa - Rohit Bhargava**
+<br>tekijä: Rohit Bhargava (Non-Obvious)
+<br>[Rekisteröidy ja katso nyt](https://info.microsoft.com/ww-landing-5-Habits-of-a-Successful-Trend-Curator-Video.html?LCID=EN-US)
 
 ### <a name="community"></a>Yhteisö ###
 
