@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 01/09/2018
+ms.date: 06/10/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: d3fba99c5b6b639d851b62d5624331b0bef1567d
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: e115b886a0fd952a8d3d28f345a0594fae7f0a49
+ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61390682"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "66838501"
 ---
 # <a name="tips-and-tricks-for-color-formatting-in-power-bi"></a>Vinkkejä värimuotoiluun Power BI:ssä
 Power BI tarjoaa useita eri tapoja koontinäyttöjen ja raporttien mukauttamiseen. Tässä artikkelissa on kokoelma vinkkejä, joiden avulla voit tehdä Power BI -visualisoinneistasi mielenkiintoisempia ja tarpeisiisi sopivampia.
@@ -31,28 +31,28 @@ Saatavilla ovat seuraavat vinkit. Haluatko antaa vinkin? Hienoa! Lähetä se mei
 
 Jos haluat tehdä muutoksia, sinun on oltava raportin muokkaustilassa. Avaa raportti ja valitse ylävalikosta **Muokkaa raporttia** kuvassa esitetyllä tavalla.
 
-![](media/service-tips-and-tricks-for-color-formatting/power-bi-edit.png)
+![Muokkaa-valikon sijainti](media/service-tips-and-tricks-for-color-formatting/power-bi-edit-report.png)
 
-Kun **Visualisoinnit**-ruutu näkyy **Raportti**-piirtoalustan oikeassa reunassa, olet valmis aloittamaan mukauttaminen. Jos ruutua ei näy, avaa se napsauttamalla oikean yläkulman nuolta.
+Kun **Suodattmet**- ja **Visualisoinnit**-ruudut näkyvät piirtoalustan oikeassa reunassa, olet valmis aloittamaan mukauttamisen. Jos ruutua ei näy, avaa se napsauttamalla oikean yläkulman nuolta.
 
-![](media/service-tips-and-tricks-for-color-formatting/power-bi-formatting-pane.png)
+![piirtoalusta muokkausnäkymässä](media/service-tips-and-tricks-for-color-formatting/power-bi-edit.png)
 
 ## <a name="change-the-color-of-a-single-data-point"></a>Yhden arvopisteen värin muuttaminen
 Joskus saatat haluta korostaa yhtä tiettyä arvopistettä. Kyseessä voi olla myyntiluvut uuden tuotteen julkaisusta tai kasvaneet laatupistemäärät uuden ohjelman julkaisun jälkeen. Power BI:ssä voit korostaa tiettyä arvopistettä vaihtamalla sen väriä.
 
 Seuraava visualisointi asettaa myydyt yksiköt järjestykseen tuotesegmentin mukaan. 
 
-![](media/service-tips-and-tricks-for-color-formatting/power-bi-grey.png)
+![Muuta tietojen värit harmaaksi](media/service-tips-and-tricks-for-color-formatting/power-bi-data.png)
 
 Oletetaan, että haluat korostaa **Kätevyys**-segmenttiä värin avulla näyttääksesi, kuinka hyvin tämä uusi segmentti suoriutuu. Työvaiheet ovat seuraavanlaiset:
 
 Laajenna **Tietojen värit** -osio ja aseta **Näytä kaikki** -kohdan liukusäädin Käytössä-asentoon. Tämä näyttää jokaisen tietoelementin värit visualisoinnissa. Kun pidät hiiriosoitinta arvopisteiden päällä, vieritys on käytössä, joten voit muokata kaikkia arvopisteitä.
 
-![](media/service-tips-and-tricks-for-color-formatting/power-bi-show-all.png)
+![](media/service-tips-and-tricks-for-color-formatting/power-bi-show.png)
 
 Määritä **Kätevyys** oranssiksi. 
 
-![](media/service-tips-and-tricks-for-color-formatting/power-bi-orange.png)
+![](media/service-tips-and-tricks-for-color-formatting/power-bi-one-color.png)
 
 Valittuna **Kätevyys**-arvopiste on kauniin oranssin sävyinen ja erottuu varmasti.
 
@@ -70,52 +70,46 @@ Värin määrittäminen dynaamisesti numeerisen arvon perusteella on usein hyöd
 Seuraavissa osissa esitellään erilaisia tapoja pohjata väri numeeriseen arvoon.
 
 ## <a name="base-the-color-of-data-points-on-a-value"></a>Arvopisteiden värin pohjaaminen arvoon
-Voit muuttaa arvoon perustuvan värin vetämällä kenttää, johon haluat värin perustuvan, **Kenttä**-ruudun **Värikylläisyys**-alueelle. Seuraavassa kuvassa **%Markkinaosuus samaan aikaan viime vuonna VA** on vedetty **Värikylläisyys**-kohtaan. 
+Voit muuttaa värin arvon mukaiseksi avaamalla Muotoilu-ruutu ja valitse **Ehdollinen muotoilu** -vaihtoehto.  
 
-![](media/service-tips-and-tricks-for-color-formatting/power-bi-color-saturation.png)
+![valitse ehdollinen muotoilu -vaihtoehto napsauttamalla kolmea päällekkäistä pistettä](media/service-tips-and-tricks-for-color-formatting/power-bi-conditional-formatting.png)
 
-Määritä Muotoilu-ruudun **Tietojen värit** -kohdan alapuolelta, miten **%Markkinaosuus samaan aikaan viime vuonna VA** vaihtaa väriä ja varjostusta pylväskaaviossa. Tässä esimerkissä pienempi %Markkinaosuus on merkitty vaaleammalla ja suurempi tummemmalla sinisellä.
+Oletusvärit-ruudussa voit määrittää ehdolliseen muotoiluun käytettävät kentät avattavien luetteloiden avulla. Tässä esimerkissä on valittu **Myyntifaktat** > **Yksiköitä yhteensä** -kenttä sekä korostettu **Pienin arvo** vaaleansinisellä ja **Suurin arvo** tummansinisellä värillä. 
+
+![värin mukaisen ehdollisen muotoilun asetukset](media/service-tips-and-tricks-for-color-formatting/power-bi-conditional-formatting2-new.png)
+
+![pylväskaavio, jossa käytetty oletusvärejä](media/service-tips-and-tricks-for-color-formatting/power-bi-default-colors.png)
+
+Voit myös muotoilla visualisoinnin värin käyttämällä kenttää, joka ei ole visualisoinnin osa. Seuraavassa kuvassa **Markkinaprosenttiosuus samaan aikaan viime vuonna VA** on käytössä. 
+
+![](media/service-tips-and-tricks-for-color-formatting/power-bi-conditional-colors.png)
 
 
-![](media/service-tips-and-tricks-for-color-formatting/power-bi-data-colors2.png)
-
-
-Kuten kuvasta nähdään, vaikka sekä **Tuottavuus**- että **Äärimmäinen**-segmenttien yksiköitä on myyty enemmän (niiden sarakkeet ovat korkeammat), **Kohtuus**-segmentin **%Markkinaosuus samaan aikaan viime vuonna VA** on suurempi (sen sarakkeen värikylläisyys on vahvempi).
-
-![](media/service-tips-and-tricks-for-color-formatting/power-bi-saturation.png)
+Kuvasta näet, että vaikka **Tuottavuus**- ja **Äärimmäinen**-segmenttien yksiköitä on myyty enemmän (niiden pylväät ovat korkeammat), **Kohtuus**-segmentin **Markkinaprosenttiosuus samaan aikaan viime vuonna VA** on suurempi (pylvään värikylläisyys on vahvempi).
 
 ## <a name="customize-the-colors-used-in-the-color-scale"></a>Väriasteikossa käytettyjen värien mukauttaminen
-Voit myös mukauttaa väriasteikossa käytettyjä värejä. Oletusarvon mukaan tietojen pienin arvo on liitetty vähiten kyllästettyyn väriin ja suurin arvo eniten kyllästettyyn väriin. Yllä olevassa kuvassa käytettiin sinistä liukuväriä. 
-
-Laajenna **Tietojen värit** -kohta ja näet liukuvärit, joita tietojen visualisoinnissa käytetään. Värialue näkyy liukuväripalkissa, joka näyttää väriasteikon **Pienin**- ja **Suurin**-väriarvojen välillä niin, että **Pienin**-väriarvo on vasemmalla ja **Suurin**-väriarvo on oikealla.
-
-![](media/service-tips-and-tricks-for-color-formatting/power-bi-data-colors2.png)
-
-
-Jos haluat muuttaa skaalausta ja käyttää eri värivalikoimaa, valitse värin avattava valikko **Pienin**- tai **Suurin**-kohdan vierestä ja valitse sitten väri. Seuraavassa kuvassa on näkyvissä **Suurin**-kohdan värin muuttuminen mustaksi, ja liukuväripalkissa näkyy uusi väriasteikko välillä **Pienin** ja **Suurin**.
-
-![](media/service-tips-and-tricks-for-color-formatting/tipstrickscolor_11.png)
-
 Voit myös muuttaa tapaa, jolla arvot liitetään näihin väreihin. Seuraavassa kuvassa **Pienin**- ja **Suurin**-kohtien värit on määritetty oranssiksi ja vihreäksi.
 
 Huomaa tässä ensimmäisessä kuvassa, miten kaavion palkit vastaavat palkissa näkyvää liukuväriä. Suurin arvo on vihreä, pienin arvo on oranssi ja kunkin palkin välillä on vihreän ja oranssin väliltä oleva sävy.
 
-![](media/service-tips-and-tricks-for-color-formatting/tipstrickscolor_12.png)
+![](media/service-tips-and-tricks-for-color-formatting/power-bi-conditional4.png)
 
-Katsotaan sitten, mitä tapahtuu, jos syötämme **Pienin**- ja **Suurin**-arvoruutuihin numeerisia arvoja, jotka ovat **Pienin**- ja **Suurin**-värivalitsinten alapuolella (näkyy seuraavassa kuvassa). **Pienin**-kohdan arvoksi määritetään 20 000 000 ja **Suurin**-kohdan arvoksi 20 000 001.
+Seuraavaksi katsotaan, mitä tapahtuu, jos **Pienin** ja **Suurin**-ruutuihin lisätään numeeriset arvot. Määritetään **Pienin**-kohdan arvoksi 3 500 ja **Suurin**-kohdan arvoksi 6 000.
 
 Määrittämällä kyseiset arvot liukuväriä ei enää käytetä kaavion arvoihin, jotka ovat **Pienin**- tai **Suurin**-arvojen alapuolella. Palkki, jonka arvo on **Suurin**-arvon yläpuolella, on vihreä, ja palkki, jonka arvo on **Pienin**-arvon alapuolella, on punainen.
 
-![](media/service-tips-and-tricks-for-color-formatting/tipstrickscolor_13.png)
+![](media/service-tips-and-tricks-for-color-formatting/power-bi-conditional3.png)
 
 ## <a name="use-diverging-color-scales"></a>Erkautuvien väriasteikkojen käyttäminen
 Joskus tiedoissa voi olla luonnollisesti erkautuva asteikko. Esimerkiksi lauhkean alueen luonnollinen keskikohta on jäätymispiste, ja kannattavuuspistemäärällä on luonnollinen keskipiste (nolla).
 
-Jos haluat käyttää erkautuvaa väriasteikkoa, vedä **Erkautuva**-liukusäädin kohtaan **Käytössä**. Kun **Erkautuva** on otettu käyttöön, näkyviin tulee ylimääräinen värivalitsin ja arvoruutu, joita kumpaakin kutsutaan **keskukseksi**, seuraavassa kuvassa esitetyllä tavalla.
+Voit käyttää erkautuvia väriasteikkoja valitsemalla **Erkautuva**-vaihtoehdon. Kun **Erkautuva** on otettu käyttöön, näkyviin tulee ylimääräinen värivalitsin, jota kutsutaan **keskukseksi** (ks. seuraava kuva).
 
-![](media/service-tips-and-tricks-for-color-formatting/tipstrickscolor_14.png)
+![](media/service-tips-and-tricks-for-color-formatting/power-bi-diverging2.png)
 
-Kun **Erkauvua**-liukusäädin on käytössä, voit määrittää värit **Pienin**-, **Suurin**- ja **Keskus**-kohdille erikseen. Seuraavassa kuvassa **Keskus**-kohdan asetuksena on yksi, joten palkit, joiden arvo on suurempi kuin yksi, ovat vihreän sävyisiä, ja palkit, joiden arvo on pienempi kuin yksi, ovat punaisen sävyisiä.
+Kun **Erkauvua**-liukusäädin on käytössä, voit määrittää värit **Pienin**-, **Suurin**- ja **Keskus**-kohdille erikseen. Seuraavassa kuvassa **Keskus**-kohdan asetuksena on 0,2 **Markkinaprosenttiosuus samaan aikaan viime vuonna VA** -kohdan osalta. Tämän vuoksi pylväät, joiden arvo on suurempi kuin 0,2, näytetään vihreän eri sävyissä, ja palkit, joiden arvo on pienempi kuin yksi, näytetään punaisen eri sävyissä.
+
+![](media/service-tips-and-tricks-for-color-formatting/power-bi-diverging.png)
 
 ## <a name="how-to-undo-in-power-bi"></a>Kumoaminen Power BI:ssä
 Kuten monissa muissakin Microsoft-palveluissa ja -ohjelmistoissa, myös Power BI:ssä viimeisimmän komennon kumoaminen onnistuu helposti. Oletetaan esimerkiksi, että muutat arvopisteen tai arvopisteiden sarjan väriä etkä ole tyytyväinen väriin, kun se tulee näkyviin visualisoinnissa. Et muista täsmälleen entistä väriä, mutta tiedät haluavasi värin takaisin!

@@ -1,5 +1,5 @@
 ---
-title: Sivutettujen raporttien parametrien luominen Power BI -palvelussa (esikatselu)
+title: Sivutettujen raporttien parametrien luominen Power BI -palvelussa
 description: Tässä artikkelissa opit luomaan sivutettujen raporttien parametreja Power BI -palvelussa.
 author: maggiesMSFT
 ms.author: maggies
@@ -8,19 +8,19 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 11/05/2018
-ms.openlocfilehash: d58d1c84199c698089f4b3abccb26f9dbaea76d6
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.date: 06/06/2019
+ms.openlocfilehash: adec7af0032772022a330e3ab25377205de9ace5
+ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "60987649"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "66838974"
 ---
-# <a name="create-parameters-for-paginated-reports-in-the-power-bi-service-preview"></a>Sivutettujen raporttien parametrien luominen Power BI -palvelussa (esikatselu)
+# <a name="create-parameters-for-paginated-reports-in-the-power-bi-service"></a>Sivutettujen raporttien parametrien luominen Power BI -palvelussa
 
 Tässä artikkelissa opit luomaan sivutettujen raporttien parametreja Power BI -palvelussa.  Raporttiparametrien avulla voit valita raportin tiedot ja muuttaa raportin esitystapaa. Voit antaa oletusarvon ja käytettävissä olevien arvojen luettelon, jolloin raportin lukijat voivat muuttaa valintaa.  
 
-Seuraavassa kuvassa näkyy Power BI-raportin muodostimen Suunnittelunäkymä raportin parametrit @BuyingGroup, @Customer, @FromDate, ja @ToDate. 
+Seuraavassa kuvassa näkyy Power BI:n raportin muodostimen Suunnittelunäkymä, jossa parametrit ovat @BuyingGroup, @Customer, @FromDate ja @ToDate. 
   
 ![Parametrit Raportin muodostimessa](media/paginated-reports-parameters/power-bi-paginated-parameters-report-builder.png)
   
@@ -37,7 +37,7 @@ Seuraavassa kuvassa näkyy Power BI-raportin muodostimen Suunnittelunäkymä rap
   
 ## <a name="create-or-edit-a-report-parameter"></a>Raporttiparametrin luominen tai muokkaaminen  
   
-1.  Avaa sivutettu raportti Power BI-raportin muodostimessa.
+1.  Avaa sivutettu raportti Power BI:n raportin muodostimessa.
 
 1. Napsauta **Raporttitiedot**-ruudussa olevaa **Parametrit**-solmua hiiren kakkospainikkeella > **Lisää parametri**. **Raporttiparametrin ominaisuudet** -valintaikkuna avautuu.  
   
@@ -67,4 +67,4 @@ Seuraavassa kuvassa näkyy Power BI-raportin muodostimen Suunnittelunäkymä rap
 
 Katso [Sivutettujen raporttien parametrien tarkastelu](paginated-reports-view-parameters.md) -artikkelista, miltä parametrit näyttävät Power BI -palvelussa.
 
-Katso sivutettujen raporttien parametrien yksityiskohtaiset tiedot SQL Server Reporting Services -palveluiden [Raporttiparametrit (Raportin muodostin ja Report Designer)](https://docs.microsoft.com/sql/reporting-services/report-design/report-parameters-report-builder-and-report-designer) -artikkelista.  
+Katso sivutetut raporttiparametreja koskevat lisätiedot kohdasta [Raporttiparametrit Power BI:n raportin muodostimessa](report-builder-parameters.md).

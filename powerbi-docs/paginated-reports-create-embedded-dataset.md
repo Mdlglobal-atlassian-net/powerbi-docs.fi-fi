@@ -1,5 +1,5 @@
 ---
-title: Upotetun tietojoukon luominen sivutettuun Power BI -raporttiin (esikatselu)
+title: Upotetun tietojoukon luominen sivutettuun Power BI -raporttiin
 description: Tässä artikkelissa opit luomaan upotettuun tietolähteeseen perustuvan upotetun tietojoukon sivutettuun raporttiin Power BI -palvelussa.
 author: maggiesMSFT
 ms.author: maggies
@@ -9,22 +9,22 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 11/5/2018
-ms.openlocfilehash: 3e095da10e9f96c7ec0f10ffbb94995d44effab4
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: cf41b404385139561a97f1d5b081ae1c48ff2885
+ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61423741"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "66839031"
 ---
-# <a name="create-an-embedded-dataset-for-a-paginated-report-in-the-power-bi-service-preview"></a>Upotetun tietojoukon luominen sivutettuun raporttiin Power BI -palvelussa (esikatselu)
+# <a name="create-an-embedded-dataset-for-a-paginated-report-in-the-power-bi-service"></a>Upotetun tietojoukon luominen sivutettuun raporttiin Power BI -palvelussa
 
-Tässä artikkelissa opit luomaan upotettuun tietolähteeseen perustuvan upotetun tietojoukon sivutettuun raporttiin Power BI -palvelussa. Upotetut tietojoukot lisätään yksittäiseen sivutettuun raporttiin kyseisessä raportissa käytettäväksi. Power BI -palveluun tällä hetkellä julkaistavat sivutetut raportit edellyttävät upotettuja tietojoukkoja ja upotettuja tietolähteitä. Voit luoda upotetun tietolähteen ja tietojoukon Power BI-raportin muodostimessa, kun luot raportin. 
+Tässä artikkelissa opit luomaan upotettuun tietolähteeseen perustuvan upotetun tietojoukon sivutettuun raporttiin Power BI -palvelussa. Upotetut tietojoukot lisätään yksittäiseen sivutettuun raporttiin kyseisessä raportissa käytettäväksi. Power BI -palveluun tällä hetkellä julkaistavat sivutetut raportit edellyttävät upotettuja tietojoukkoja ja upotettuja tietolähteitä. Voit luoda upotetun tietolähteen ja tietojoukon Power BI:n raportin muodostimessa samalla, kun luot raportin. 
 
 Ennen kuin luot tietojoukon, sinun on luotava tietolähde. Ohjeet ovat kohdassa [Sivutettujen raporttien upotetut tietolähteet](paginated-reports-embedded-data-source.md) Power BI -palvelussa.
   
 ## <a name="create-an-embedded-dataset"></a>Upotetun tietojoukon luominen
   
-1. Valitse Power BI-raportin muodostimen raporttitiedot-ruudussa **uusi** > **tietojoukon**.
+1. Valitse Power BI:n raportin muodostimen raporttitietoruudusta **Uusi** > **Tietojoukko**.
 
 1. Anna tietojoukolle nimi **Tietojoukon ominaisuudet** -valintaikkunan **Kysely**-välilehdellä. Upotettu tietolähde on jo **Tietolähde**-ruudussa tai voit luoda uuden upotetun tietolähteen valitsemalla **Uusi**.
  
@@ -56,7 +56,7 @@ Ennen kuin luot tietojoukon, sinun on luotava tietolähde. Ohjeet ovat kohdassa 
  
 ## <a name="next-steps"></a>Seuraavat vaiheet 
 
-- [Mitä ovat sivutetut raportit Power BI Premiumissa? (esikatselu)](paginated-reports-report-builder-power-bi.md)  
+- [Mitä ovat sivutetut raportit Power BI Premiumissa?](paginated-reports-report-builder-power-bi.md)  
 - [Opetusohjelma: Sivutetun raportin luominen ja lataaminen Power BI -palveluun](paginated-reports-quickstart-aw.md)
 - [Sivutetun raportin julkaiseminen Power BI -palveluun](paginated-reports-save-to-power-bi-service.md)
 

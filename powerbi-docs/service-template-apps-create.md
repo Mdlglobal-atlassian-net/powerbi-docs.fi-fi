@@ -5,24 +5,24 @@ author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 04/22/2019
 ms.author: maggies
-ms.openlocfilehash: 653050fbe5c860ef1902a4700c3a70a8af2f7092
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 2dc9ae7eb7ecd82cdd6c9ea7ddbc6aa1fc70ca8b
+ms.sourcegitcommit: 81ba3572531cbe95ea0b887b94e91f94050f3129
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65514981"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66751202"
 ---
 # <a name="create-a-template-app-in-power-bi-preview"></a>Mallisovelluksen luominen Power BI:ssä (esikatselu)
 
 Power BI:n uusien *mallisovellusten* avulla Power BI -kumppanit voivat kehittää Power BI -sovelluksia käyttäen vain vähän tai ei lainkaan koodausta, minkä lisäksi sovellukset voidaan ottaa käyttöön kenelle tahansa Power BI -asiakkaalle.  Tässä artikkelissa on vaiheittaiset ohjeet Power BI -mallisovelluksen luomiseen.
 
-Jos luot Power BI-raportteja ja koontinäyttöjä, sinusta tulee *mallin sovelluskehittäjän* ja laatii paketoi analyysitietojen sisällön into *sovelluksen*. Sovelluksesi voi ottaa käyttöön muiden Power BI-vuokraajien kuten AppSource tai käyttämällä WWW-palvelun käytettävissä ympäristön kautta. Muodostimen sinulla on mahdollisuus luoda suojattuja analytics-paketin jaettavaksi.
+Jos luot Power BI -raportteja ja koontinäyttöjä, voit ryhtyä *mallisovelluksen kehittäjäksi*, joka laatii ja paketoi analyysisisältöä *sovellukseksi*. Voit ottaa sovelluksesi muiden Power BI -vuokraajien käyttöön hyödyntämällä jotakin käytettävissä olevaa ympäristöä, kuten AppSourcea, tai käyttämällä sovellusta omassa verkkopalvelussasi. Kehittäjänä voit luoda suojatun analytiikkapaketin jakelua varten.
 
-Power BI -vuokraajan järjestelmänvalvojat hallinnoivat ja ohjaavat sitä, ketkä organisaation käyttäjät voivat luoda mallisovelluksia ja ketkä voivat asentaa niitä. Kyseiset käyttäjät, joilla on oikeus voit asentaa mallin sovelluksen ja sitten muokata sitä ja jakaa sen organisaation Power BI-käyttäjille.
+Power BI -vuokraajan järjestelmänvalvojat hallinnoivat ja ohjaavat sitä, ketkä organisaation käyttäjät voivat luoda mallisovelluksia ja ketkä voivat asentaa niitä. Valtuutetut käyttäjät voivat asentaa mallisovelluksesi, muokata sitä ja jakaa sen organisaation Power BI -käyttäjille.
 
 ## <a name="prerequisites"></a>Edellytykset
 
@@ -30,7 +30,7 @@ Mallisovelluksen kehittämistä varten tarvitaan:
 
 - [Power BI Pro -käyttöoikeus](service-self-service-signup-for-power-bi.md)
 - [Power BI Desktop -asennus](desktop-get-the-desktop.md) (valinnainen)
-- Tuntee [Power BI-peruskäsitteet](service-basic-concepts.md)
+- [Power BI-peruskäsitteiden](service-basic-concepts.md) tuntemus
 - oikeudet luoda mallisovelluksia. Lisätietoja on Power BI:n [hallintaportaalin kohdassa Mallisovelluksen asetukset](service-admin-portal.md#template-apps-settings-preview).
 
 ## <a name="enable-app-developer-mode"></a>Ota käyttöön sovelluskehittäjän tila
@@ -66,7 +66,7 @@ Jotta voisit luoda mallisovelluksen, jonka voi jakaa muille Power BI -vuokraajil
 
 5. Valitse **Tallenna**.
 >[!NOTE]
->Tarvitset oikeudet edistää mallin sovelluksia Power BI-järjestelmänvalvojaasi.
+>Tarvitset Power BI -järjestelmänvalvojaltasi oikeudet tukea mallisovelluksia.
 
 ## <a name="create-the-content-in-your-template-app"></a>Luo mallisovelluksesi sisältö
 
@@ -86,43 +86,43 @@ Nyt kun työtilassasi on sisältöä, voit pakata sen mallisovellukseksi. Ensimm
 
     ![Luo sovellus](media/service-template-apps-create/power-bi-create-app.png)
 
-    Tässä täytät muita luominen asetukset mallin sovelluksesi viiden luokkiin:
+    Täällä voit lisätä mallisovellukseen viiden luokan kehitysvaihtoehtoja:
 
     **Tuotemukautus**
 
     ![Tuotemukautus](media/service-template-apps-create/power-bi-create-branding.png)
     - Sovelluksen nimi
     - Kuvaus
-    - Tukisivustossa (linkki esitetään kohdassa sovelluksen tiedot jälkeen uudelleenjakamista mallin sovelluksen organisaation sovelluksena)
-    - Sovelluksen logo (45K kokorajoituksen, kuvasuhde 1:1, .png .jpg .jpeg muodoista)
+    - Tukisivustolla (linkki esitetään sovelluksen tiedoissa, kun sovellus on jaettu organisaation mallisovelluksena)
+    - Sovelluksen logo (kokorajoitus 45 kt, kuvasuhde 1:1, muoto .png, .jpg tai .jpeg)
     - Sovelluksen teeman väri
 
     **Sisältö**
 
-    **Sovelluksen aloitussivu:** Määritä raportin tai koontinäytön aloitussivuksi sovelluksesi, käyttää, joka antaa oikeanlainen aloitussivu:
+    **Sovelluksen aloitussivu:** Määritä raportti tai raporttinäkymä sovelluksen aloitussivuksi. Käytä mallisivua, joka antaa oikeanlaisen ensivaikutelman:
 
     ![Sisältö](media/service-template-apps-create/power-bi-create-content.png)
 
     **Hallinta**
 
-    Määrittää rajoitukset ja rajoituksia, joilla sovelluksesi käyttäjät sovelluksesi sisällöllä. Tämän ohjausobjektin avulla voit suojata immateriaalioikeuksia sovelluksessasi.
+    Aseta rajoituksia, jotka säätelevät sitä, miten sovelluksen käyttäjät voivat käyttää sovelluksen sisältöä. Näin voit suojata tiettyjä sovelluksen sisältämiä immateriaalioikeuksia.
 
-    ![Ohjausobjektin](media/service-template-apps-create/power-bi-create-control.png)
+    ![Hallinta](media/service-template-apps-create/power-bi-create-control.png)
 
     >[!NOTE]
-    >Vieminen .pbix-muotoon estetään aina sovelluksen asentaminen käyttäjille.
+    >.pbix-muotoon vieminen estetään käyttäjiltä, jotka asentavat sovellusta.
 
     **Parametrit**
 
-    Tämän luokan avulla voit hallita parametrin toiminta, kun yhteyksiä tietolähteisiin. Lue lisätietoja [luominen kyselyparametrit](https://powerbi.microsoft.com/blog/deep-dive-into-query-parameters-and-power-bi-templates/).
+    Tämän luokan avulla voit hallita parametrin toiminta muodostaessa yhteyttä tietolähteisiin. Lue lisää [kyselyparametrien luomisesta](https://powerbi.microsoft.com/blog/deep-dive-into-query-parameters-and-power-bi-templates/).
 
     ![Parametrit](media/service-template-apps-create/power-bi-create-parameters.png)
     - **Arvo**: parametrin oletusarvo.
-    - **Pakollinen**: edellytä asennusohjelma käyttäjäkohtaiset syöteparametri tämän avulla.
-    - **Lukitse**: Lukituksen estää päivittämisen parametri.
-    - **Staattinen**: Ota käyttöön siltä varalta, että sovellus sisältää *vain* mallitiedot. Kun valitset **staattinen**, ohjattu asennus Pyydä käyttäjät voivat muodostaa yhteyden tietolähteeseen.
+    - **Pakollinen**: tämän avulla voit edellyttää asennusohjelmaa antamaan käyttäjäkohtaisen parametrin.
+    - **Lukitse**: Lukitus estää parametrin päivittämisen.
+    - **Staattinen**: Ota käyttöön, jos sovellus sisältää *vain* mallitietoja. Kun valitset **Staattinen**-vaihtoehdon, ohjattu asennus ei pyydä käyttäjiä muodostamaan yhteyttä tietolähteeseen.
 
-    **Access** test-vaiheessa päättää, mitkä muiden organisaatiosi asentaa ja testata sovellustasi. Eikä huolta, voit aina palata takaisin ja muuttaa näitä asetuksia myöhemmin (asetus ei vaikuta hajautetun mallin sovelluksen käyttöoikeus).
+    **Käyttöoikeudet** Päätä testivaiheessa, ketkä muut organisaatiosi käyttäjät voivat asentaa sovelluksesi ja testata sitä. Ei huolta. Voit milloin tahansa palata ja muuttaa näitä asetuksia (asetus ei vaikuta jaetun mallinsovelluksen käyttöoikeuksiin).
 
 2. Valitse **Luo sovellus**.
 
@@ -141,9 +141,9 @@ Ennen kuin julkaiset mallisovellusta, kannattaa varmistaa, että kaikki on kunno
 - Esituotantopaketin ylennys tuotannoksi: Tuotantoversio.
 - Poista paketti tai aloita uudelleen edellisestä vaiheesta.
 
-URL-osoite ei muutu, kun siirryt release vaiheiden välillä. Kampanja ei vaikuta itse URL-Osoitetta.
+URL-osoite ei muutu, kun siirryt julkaisuvaiheiden välillä. Korottaminen ei vaikuta itse URL-osoitteeseen.
 
-Käydäänpä seuraavaksi läpi vaiheet:
+Käydään seuraavaksi vaiheet läpi:
 
 1. Valitse mallisovellus-työtilassa **Julkaisun hallinta**.
 
@@ -171,15 +171,15 @@ Käydäänpä seuraavaksi läpi vaiheet:
     ![Aloita sovelluksesi käyttö](media/service-template-apps-create/power-bi-template-app-get-started.png)
 8. Valitse **Tarkastele sovellusta** ja vahvista testisovelluksen toiminta mallitietojen kanssa.
 9. Jos haluat tehdä muutoksia, palaa sovellukseen alkuperäisessä työtilassa. Päivitä testisovellusta, kunnes olet tyytyväinen.
-10. Kun olet valmis markkinoimaan sovelluksiasi ennen tuotantoon testausta edelleen vuokraajasi ulkopuolella, palaa takaisin **Julkaisuhallinta** ruudussa ja valitse **Korota sovelluksen**. 
+10. Kun olet valmis korottamaan sovelluksesi esituotantoon niin, että sen testausta voidaan jatkaa oman vuokraajasi ulkopuolella, palaa **Julkaisun hallinta** -ruutuun ja valitse **Korota sovellus**. 
 
     ![Ylennä sovellus esituotantoon](media/service-template-apps-create/power-bi-template-app-promote.png)
 
     >[!NOTE]
-    > Kun sovellus on Ylennetty tulee yleisesti saatavilla organisaatiosi ulkopuolella.
+    > Kun sovellus on korotettu, se tulee yleisesti saataville organisaatiosi ulkopuolelle.
 
 11. Vahvista valintasi valitsemalla **Ylennä**.
-12. Kopioi tämä uusi URL-osoite, niin voit jakaa sen oman vuokraajasi ulkopuolelle testausta varten. Tämä linkki on myös lähettää aloittaaksesi appsourcessa sovelluksen jakaminen luomalla [Pilvipalvelukumppanin portaalista uudeksi tarjoukseksi](https://docs.microsoft.com/azure/marketplace/cloud-partner-portal/power-bi/cpp-publish-offer). Lähetä vain ennen tuotannon linkkejä Pilvipalvelukumppanin portaalista. Vain, kun sovellus on hyväksytty ja saat ilmoituksen, että se on julkaistu appsourcessa, voit korottaa tämän paketin Power BI tuotantoon.
+12. Kopioi tämä uusi URL-osoite, niin voit jakaa sen oman vuokraajasi ulkopuolelle testausta varten. Tämän linkin lähettämällä voit myös aloittaa sovelluksesi jakamisen AppSourcessa luomalla [uuden tarjouksen pilvikumppaniportaaliin](https://docs.microsoft.com/azure/marketplace/cloud-partner-portal/power-bi/cpp-publish-offer). Lähetä vain esituotannon linkkejä pilvikumppaniportaaliin. Vasta kun sovellus on hyväksytty ja saat ilmoituksen, että se on julkaistu AppSourcessa, voit korottaa kyseisen paketin tuotantoon Power BI:ssä.
 13. Kun sovelluksesi on valmis tuotantoon tai jaettavaksi AppSourcen kautta, palaa takaisin **Julkaisuhallinta**-ruutuun ja valitse **Esituotanto**-kohdan vierestä **Ylennä sovellus**.
 14. Vahvista valintasi valitsemalla **Ylennä**.
 
@@ -202,11 +202,11 @@ Kun sovelluksesi on nyt tuotantoympäristössä, voit aloittaa alusta testausvai
 
     ![Mallisovelluksen kaksi versiota](media/service-template-apps-create/power-bi-template-app-2-versions.png)
 
-5. Kun olet valmis markkinoimaan sovelluksiasi ennen tuotantoon testausta edelleen vuokraajasi ulkopuolella, palaa Julkaisuhallinta-ruudussa ja valitse **Korota sovelluksen** kohdan **testaaminen**.
-6. Linkki on nyt käytettävissä, lähetetään uudelleen Pilvipalvelukumppanin portaalista osoitteessa ohjeiden [Power BI-sovellus tarjouksen päivitys](https://docs.microsoft.com/azure/marketplace/cloud-partner-portal/power-bi/cpp-update-existing-offer).
+5. Kun olet valmis korottamaan sovelluksesi esituotantoon niin, että sen testausta voidaan jatkaa oman vuokraajasi ulkopuolella, palaa Julkaisun hallinta -ruutuun ja valitse **Testaus**-kohdan vierestä **Korota sovellus**.
+6. Linkki on nyt käytettävissä. Lähetä se uudelleen pilvikumppaniportaaliin [Power BI -sovellustarjouksen päivitys](https://docs.microsoft.com/azure/marketplace/cloud-partner-portal/power-bi/cpp-update-existing-offer) -kohdan ohjeiden mukaisesti.
 
 >[!NOTE]
->Ylennä tuotantovaiheen sovelluksen vasta, kun sovelluksesi on hyväksynyt Pilvipalvelukumppanin portaali ja se on julkaistu.
+>Korota sovellus tuotantovaiheeseen vasta, kun pilvikumppaniportaali on hyväksynyt sovelluksen ja olet julkaissut sen.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 

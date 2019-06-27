@@ -8,42 +8,49 @@ ms.reviewer: madia
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 02/05/2019
-ms.openlocfilehash: 4a0b0f5e7d697c137da343576d05fbcc91b4a4f7
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.date: 05/29/2019
+ms.openlocfilehash: 5cb741d194d787014fec39f963e19d04de59a668
+ms.sourcegitcommit: aef57ff94a5d452d6b54a90598bd6a0dd1299a46
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65710370"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "66809085"
 ---
 # <a name="step-2-get-an-authentication-access-token"></a>Vaihe 2: Todennustunnuksen hankkiminen
 
-Tämä artikkeli on osa vaiheittaisia ohjeita, joilla [tiedot työnnetään tietojoukkoon](walkthrough-push-data.md).
+Tämä artikkeli on toinen vaihe [Tietojen työntäminen Power BI-tietojoukkoon](walkthrough-push-data.md) -sarjassa.
 
-Tietojen tietojoukkoon työntämisen **vaiheessa 1**, [Sovelluksen Azure AD -rekisteröinti](walkthrough-push-data-register-app-with-azure-ad.md), asiakassovellus rekisteröitiin Azure AD:ssa. Tässä vaiheessa hankitaan todennustunnus. Power BI -sovellukset on integroitu **Azure AD:hen**, jotta sovellukselle voidaan tarjota suojattu kirjautuminen ja käyttöoikeuksien myöntäminen. Tunnuksen avulla voit todentautua **Azure AD:ssa** ja käyttää Power BI:n resursseja.
-
-Voit hankkia todennustunnuksen seuraavasti.
+Vaiheessa 1 [rekisteröit asiakassovelluksen Azure AD:ssä](walkthrough-push-data-register-app-with-azure-ad.md). Tässä vaiheessa hankitaan todennustunnus. Power BI -sovellukset on integroitu Azure Active Directoryyn, jotta sovelluksessa voidaan käyttää suojattua kirjautumista ja todennusta. Tunnuksen avulla sovellus voi todentautua Azure AD:ssä ja käyttää Power BI -resursseja.
 
 ## <a name="get-an-authentication-access-token"></a>Todennustunnuksen hankkiminen
 
-> **HUOMAUTUS**: Varmista ennen aloittamista, että olet noudattanut edellisiä vaiheita [tietojen tietojoukkoon työntämisen](walkthrough-push-data.md) vaiheittaisissa ohjeissa.
+Ennen kuin aloitat, varmista, että olet suorittanut [Tietojen työntäminen Power BI -tietojoukkoon](walkthrough-push-data.md) -sarjan [edellisen vaiheen](walkthrough-push-data-register-app-with-azure-ad.md). 
 
-1. Luo Visual Studio (2015 tai uudempi), **Konsolisovellus** projektin.
-2. Asenna [Azure AD -todentamiskirjasto .NET NuGet -paketille](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/2.22.302111727). Jos haluat saada todentamisen suojaustunnuksen .NET-sovelluksessa, käytä tätä pakettia. Asenna paketti seuraavasti:
+Nämä toimenpiteet edellyttävät Visual Studio 2015:ttä tai uudempaa versiota.
 
-     a. Valitse Visual Studio (2015 tai uudempi) **Työkalut** > **NuGet Package Manager** > **Package Manager Consolessa**.
+1. Luo Visual Studio 2015:ssä C# **Konsolisovellus** -projekti.
 
-     b. Kirjoita **Package Manager Consolessa** Install-Package Microsoft.IdentityModel.Clients.ActiveDirectory -Version 2.21.301221612.
-3. Lisää alla oleva koodi luokkaan Program {...}.
-4. Korvaa "{ClientID}" sovellusta rekisteröidessäsi saamallasi **Client ID** -tunnuksella. Katso [Sovelluksen Azure AD -rekisteröinti](walkthrough-push-data-register-app-with-azure-ad.md).
-5. Kun olet asentanut Microsoft.IdentityModel.Clients.ActiveDirectory-paketin, lisää **using Microsoft.IdentityModel.Clients.ActiveDirectory;** kohtaan Program.cs.
-6. Suorita konsolisovellus ja kirjaudu Power BI -tiliisi. Tunnusmerkkijonon pitäisi näkyä konsoli-ikkunassa.
+2. Asenna [Azure AD -todentamiskirjasto .NET NuGet -paketille](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/2.22.302111727). .NET-sovelluksesi tarvitsee tätä pakettia todentamisen suojaustunnuksen noutamiseen. 
+
+     a. Valitse **Työkalut** > **NuGet Package Manager** > **Package Manager Console**.
+
+     b. Kirjoita **Install-Package Microsoft.IdentityModel.Clients.ActiveDirectory -Version 2.21.301221612**
+
+     c. Lisää Program.cs:ään `using Microsoft.IdentityModel.Clients.ActiveDirectory;`.
+
+3. Lisää näiden vaiheiden jälkeen luetteloitu koodinäyte Program.cs:ään.
+
+4. Korvaa ”{ClientID}” **Asiakastunnuksella**, jonka sait [sarjan edellisessä artikkelissa](walkthrough-push-data-register-app-with-azure-ad.md) sovelluksen rekisteröinnin yhteydessä.
+
+5. Suorita konsolisovellus ja kirjaudu Power BI -tilillesi. 
+
+   Tunnusmerkkijonon pitäisi näkyä konsolin ikkunassa.
 
 **Esimerkkikoodi todentamisen suojaustunnuksen saamista varten**
 
 Lisää tämä koodi kohtaan Program {...}.
 
-* Kutsutoimintojen tunnusmuuttuja:
+* Kutsutoimintojen tunnusmuuttuja: 
   
   ```csharp
   private static string token = string.Empty;
@@ -104,13 +111,10 @@ Lisää tämä koodi kohtaan Program {...}.
        #endregion
 ```
 
-Kun olet saanut todennustunnuksen, voit kutsua mitä tahansa Power BI:n toimintoa. Seuraavaksi näytetään, miten voit kutsua [Julkaise tietojoukko](https://docs.microsoft.com/rest/api/power-bi/pushdatasets) -toiminnon ja luoda tietojoukon tietojen työntämiseksi raporttinäkymään.
+Kun olet saanut todennustunnuksen, voit kutsua mitä tahansa Power BI:n toimintoa.
 
-Seuraavassa vaiheessa näytetään, miten voit [luoda tietojoukon Power BI:ssä](walkthrough-push-data-create-dataset.md).
+Seuraavassa artikkelissa näytetään, miten voit [luoda tietojoukon Power BI:ssä](walkthrough-push-data-create-dataset.md).
 
-Alla on [Kattava koodiluettelo](#code).
-
-<a name="code"/>
 
 ## <a name="complete-code-listing"></a>Kattava koodiluettelo
 
@@ -175,14 +179,13 @@ namespace walkthrough_push_data
 }
 ```
 
-[Seuraava vaihe >](walkthrough-push-data-create-dataset.md)
+
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
-[Tietojoukon luominen Power BI:ssä](walkthrough-push-data-create-dataset.md)  
-[Sovelluksen Azure AD -rekisteröinti](walkthrough-push-data-register-app-with-azure-ad.md)  
-[Azure AD -todentamiskirjasto .NET NuGet -paketille](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/)  
-[Tietojen työntäminen Power BI -tietojoukkoon](walkthrough-push-data.md)  
-[Power BI:n REST-ohjelmointirajapinnan yleiskatsaus](overview-of-power-bi-rest-api.md)  
-[Power BI:n REST-ohjelmointirajapinnan viite](https://docs.microsoft.com/rest/api/power-bi/)  
-Onko sinulla muuta kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
+[Sarjan seuraava artikkeli > Tietojoukon luominen Power BI:ssä](walkthrough-push-data-create-dataset.md).
+
+[Power BI REST -ohjelmointirajapinnan yleiskatsaus](overview-of-power-bi-rest-api.md)  
+[Power BI:n REST-ohjelmointirajapinnat](https://docs.microsoft.com/rest/api/power-bi/)  
+
+Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)

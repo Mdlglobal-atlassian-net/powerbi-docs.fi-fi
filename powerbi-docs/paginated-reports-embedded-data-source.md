@@ -1,5 +1,5 @@
 ---
-title: Sivutettujen raporttien upotetut tietolähteet Power BI -palvelussa (esikatselu)
+title: Sivutettujen raporttien upotetut tietolähteet Power BI -palvelussa
 description: Tässä artikkelissa opit luomaan upotetun tietolähteen sivutettuun raporttiin Power BI -palvelussa ja muokkaamaan sitä.
 author: maggiesMSFT
 ms.author: maggies
@@ -8,15 +8,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 05/16/2019
-ms.openlocfilehash: 4dd9ad935a9f7b286aa64d977a78364f2aed0e0f
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.date: 06/06/2019
+ms.openlocfilehash: 7b687fd67f844e000811ae00a53772ab9403ab90
+ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65853389"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "66838929"
 ---
-# <a name="create-an-embedded-data-source-for-paginated-reports-in-the-power-bi-service-preview"></a>Upotetun tietolähteen luominen sivutettuun raporttiin Power BI -palvelussa (esikatselu)
+# <a name="create-an-embedded-data-source-for-paginated-reports-in-the-power-bi-service"></a>Upotetun tietolähteen luominen sivutettuun raporttiin Power BI -palvelussa
 
 Tässä artikkelissa opit luomaan upotetun tietolähteen sivutettuun raporttiin Power BI -palvelussa ja muokkaamaan sitä. Määrität upotetun tietolähteen yhdessä raportissa, ja käytät sitä vain kyseisessä raportissa. Power BI -palveluun tällä hetkellä julkaistavat sivutetut raportit edellyttävät upotettuja tietojoukkoja ja upotettuja tietolähteitä, ja ne voidaan yhdistää seuraaviin tietolähteisiin:
 
@@ -26,16 +26,18 @@ Tässä artikkelissa opit luomaan upotetun tietolähteen sivutettuun raporttiin 
 - Oracle 
 - Teradata 
 
-Käytä näitä tietolähteitä [SQL Server Analysis Services-yhteys](service-premium-connect-tools.md) vaihtoehto:
+Käytä seuraavien tietolähteiden tapauksessa [SQL Server Analysis Services -yhteysvaihtoehtoa](service-premium-connect-tools.md):
 
 - Azure Analysis Services
-- Power BI Premium-tietojoukot
+- Power BI Premium -tietojoukot
 
-Sivutetut raportit yhdistetään paikallisiin tietolähteisiin yhdyskäytävän avulla. Määrität yhdyskäytävän, kun olet julkaissut raportin Power BI -palveluun. Lue lisätietoja [Power BI -yhdyskäytävistä](service-gateway-getting-started.md). 
+Sivutetut raportit yhdistetään paikallisiin tietolähteisiin [Power BI -yhdyskäytävän avulla](service-gateway-getting-started.md). Määrität yhdyskäytävän, kun olet julkaissut raportin Power BI -palveluun.
+
+Katso lisätiedot kohdasta [Raporttitiedot Power BI:n raportin muodostimessa](report-builder-data.md).
 
 ## <a name="create-an-embedded-data-source"></a>Upotetun tietolähteen luominen
   
-1. Avaa Power BI-raportin muodostin.
+1. Avaa Power BI:n raportin muodostin.
 
 1. Valitse raporttitietoruudun työkaluriviltä **Uusi** > **tietolähde**. **Tietolähteen ominaisuudet** -valintaikkuna avautuu.
 
@@ -68,4 +70,4 @@ Sivutetut raportit yhdistetään paikallisiin tietolähteisiin yhdyskäytävän 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
 - [Upotetun tietojoukon luominen sivutettuun raporttiin Power BI -palvelussa](paginated-reports-create-embedded-dataset.md)
-- [Mitä ovat sivutetut raportit Power BI Premiumissa? (esikatselu)](paginated-reports-report-builder-power-bi.md)
+- [Mitä ovat sivutetut raportit Power BI Premiumissa?](paginated-reports-report-builder-power-bi.md)

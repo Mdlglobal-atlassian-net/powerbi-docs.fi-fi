@@ -1,6 +1,6 @@
 ---
 title: Töiden jakamistavat Power BI:ssä
-description: Voit työstää raporttinäkymiä, raportteja, ruutuja ja sovelluksia yhdessä muiden kanssa ja jakaa niitä eri tavoilla Power BI:ssä. Jokaisella tavalla on omat etunsa.
+description: Voit työstää raporttinäkymiä, raportteja, ruutuja ja sovelluksia yhdessä muiden kanssa ja jakaa niitä eri tavoilla Power BI:ssä. Kullakin tavalla on etunsa.
 author: maggiesMSFT
 ms.author: maggies
 manager: kfile
@@ -8,57 +8,54 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/15/2019
+ms.date: 06/07/2019
 LocalizationGroup: Share your work
-ms.openlocfilehash: 10f287c72cbdec8885952dd7cec766420eabfb2e
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 00574228fbfa8954b8cfb9cb026a9230eb1bd73e
+ms.sourcegitcommit: 206806d8ddb6bdfc322c1a46fb34a1b0678acba2
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61234802"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66816533"
 ---
 # <a name="ways-to-share-your-work-in-power-bi"></a>Töiden jakamistavat Power BI:ssä
 
-Olet luonut raporttinäkymiä ja raportteja. Olet ehkä myös muokannut niitä yhdessä työtovereidesi kanssa. Haluat nyt, että muut voivat käyttää niitä. Mikä on paras tapa jakaa ne?
+Olet luonut raporttinäkymiä ja raportteja. Olet ehkä myös muokannut niitä yhdessä työtovereidesi kanssa. Haluat nyt, että muut voivat käyttää niitä. Mikä on paras tapa jakaa ne? Tässä artikkelissa vertailemme yhteistyö- ja jakamisvaihtoehtoja Power BI:ssä:
 
-Tässä artikkelissa vertailemme yhteistyö- ja jakamisvaihtoehtoja Power BI:ssä:
-
-* Yhteistyö työtovereiden kanssa kuvaavien raporttien ja koontinäyttöjen luomiseksi *työtiloissa*.
-* Kyseisten raporttinäkymien ja raporttien niputtaminen *sovelluksiin* ja niiden julkaiseminen suuremmalle ryhmälle tai koko organisaatiolle.
-* Raporttinäkymien tai raporttien jakaminen muutamalle henkilölle palvelusta tai Power BI -mobiilisovelluksista.
+* Yhteistyö työtovereiden kanssa kuvaavien raporttien ja raporttinäkymien luomiseksi *työtiloissa*.
+* Kyseisten raporttinäkymien ja raporttien niputtaminen *sovelluksiin* ja niiden julkaiseminen suurelle ryhmälle tai koko organisaatiolle.
+* Sellaisten *jaettujen tietojoukkojen* luominen, joita työtoverit voivat käyttää omien raporttiensa pohjana omissa työtiloissaan.
+* Ulkoisille Power BI -käyttäjille jaettavan *mallisovelluksen* luominen Microsoft AppSourcella.
+* Raporttinäkymien tai raporttien jakaminen muutamalle henkilölle palvelun tai Power BI -mobiilisovellusten kautta.
 * Raporttien tulostaminen.
-* Upota raportit suojattuihin portaaleihin tai julkisiin sivustoihin.
+* Raporttien *upottaminen* suojattuihin portaaleihin tai julkisiin verkkosivustoihin.
 
-Riippumatta siitä, minkä vaihtoehdon valitset, raporttinäkymän jakamiseen tarvitaan [Power BI Pro -käyttöoikeus](service-features-license-type.md), tai sisällön on oltava [Premium-kapasiteetissa](service-premium-what-is.md). Raporttinäkymiäsi tarkastelevia työtovereita koskevat käyttöoikeusvaatimukset vaihtelevat valitsemasi vaihtoehdon mukaan. Seuraavissa osioissa annetaan lisätietoja. 
+Riippumatta siitä, minkä vaihtoehdon valitset, sisällön jakamiseen tarvitaan [Power BI Pro -käyttöoikeus](service-features-license-type.md), tai sisällön on oltava [Premium-kapasiteetissa](service-premium-what-is.md). Sisältöäsi tarkastelevia työtovereita koskevat käyttöoikeusvaatimukset vaihtelevat valitsemasi vaihtoehdon mukaan. Seuraavissa osioissa annetaan lisätietoja. 
 
 ![Power BI -palvelun sovellukset](media/service-how-to-collaborate-distribute-dashboards-reports/power-bi-apps-home-blog.png)
 
 *Power BI -palvelun sovellukset*
 
-## <a name="collaborate-with-coworkers-in-a-workspace"></a>Yhteistyö työtovereiden kanssa työtilassa
+## <a name="collaborate-in-a-workspace"></a>Yhteistyö työtilassa
 
-Kun työryhmät tekevät yhteistyötä, jokaisen on päästävä käyttämään samoja asiakirjoja, jotta yhteistyö on tehokasta. Power BI-työtiloissa ryhmät ovat yhdessä jakamaan omistajuus ja niiden koontinäytöt, raportit, tietojoukot ja työkirjat hallinta. Joskus Power BI:n käyttäjät järjestävät työtilansa organisaation rakenteiden mukaan ja joskus ne luodaan tiettyjä projekteja varten. Muissa organisaatioissa käytetään useita työtiloja käytettävien raporttien tai raporttinäkymien eri versioiden tallentamiseen. 
+Kun työryhmät tekevät yhteistyötä, jokaisen on päästävä käyttämään samoja asiakirjoja, jotta yhteistyö on tehokasta. Power BI -työtilat ovat paikka, jossa työryhmät voivat kokoontua ja jakaa niille merkityksellisten raporttinäkymien, raporttien, tietojoukkojen ja työkirjojen omistajuuden ja hallinnan. Joskus Power BI:n käyttäjät järjestävät työtilansa organisaation rakenteiden mukaan ja joskus ne luodaan tiettyjä projekteja varten. Muissa organisaatioissa käytetään useita työtiloja käytettävien raporttien tai raporttinäkymien eri versioiden tallentamiseen. 
 
-Työtilat tarjoavat rooleja, jotka määrittävät, mitä oikeuksia työtovereillasi on. Voit roolien avulla määrittää, kuka voi hallita koko työtilaa tai tuottaa siihen sisältöä.
+Työtilat tarjoavat rooleja, jotka määrittävät, mitä oikeuksia työtovereillasi on. Voit roolien avulla määrittää, kuka voi hallita koko työtilaa tai muokata ja jakaa sen sisältöä.
 
 ![Työtilat](media/service-how-to-collaborate-distribute-dashboards-reports/power-bi-apps-workspaces.png)
 
-Jotkin käyttäjät luonnollisesti laittavat sisällön omaan työtilaansa ja jakavat sen sieltä. Työtilat ovat omaan työtilaan verrattuna parempi vaihtoehto yhteistyötä varten, koska ne tarjoavat sisällölle yhteisomistuksen. Voit yhdessä koko ryhmäsi kanssa päivittää sisältöä helposti tai antaa muille käyttöoikeuden. Oma työtila soveltuu parhaiten yksittäisille henkilöille kertakäyttöisen tai henkilökohtaisen sisällön käyttöön.
+Saatat luonnollisesti laittaa sisältöä omaan työtilaasi ja jakaa sen sieltä. Työtilat ovat omaan työtilaan verrattuna parempi vaihtoehto yhteistyötä varten, koska ne mahdollistavat sisällön yhteisomistuksen. Voit yhdessä koko ryhmäsi kanssa päivittää sisältöä helposti tai antaa muille käyttöoikeuden. Oma työtila soveltuu parhaiten yksittäisille henkilöille kertakäyttöisen tai henkilökohtaisen sisällön käyttöön.
 
 Oletetaan, että sinulla on valmis raporttinäkymä, joka on jaettava työtovereidesi kanssa. Mikä on paras tapa antaa heille raporttinäkymän käyttöoikeus? Vastaus riippuu useista tekijöistä. 
 
-- Jos koontinäyttö pitäminen ajan tasalla tai tarvitsevat pääsyn työtilan sisältö työtovereiden, harkitse niitä työtilaan. 
-- Jos työtovereiden vain Katso koontinäytössä ja kaikkia työtilan sisältö, sinulla uudelleen vaihtoehtoja. 
-- Jos raporttinäkymä on osa suurempaa sisältöjoukkoa, joka sinun tarvitse jakaa monelle työtoverille, sovelluksen julkaiseminen on todennäköisesti paras vaihtoehto. 
-- Kuitenkin jos työtovereiden tarvitsee vain koontinäytön, jakaa koontinäytön voi olla paras ratkaisu.
+- Jos työtoverit tarvitsevat apua raporttinäkymän pitämisessä ajan tasalla tai jos he työtilan sisällön käyttöoikeudet, harkitse niiden lisäämistä työtilaan. 
+- Jos työtoveriesi tarvitsee vain nähdä kyseinen raporttinäkymä työtilan kaiken sisällön sijasta, voit jälleen valita useista vaihtoehdoista. Jos muutama henkilö tarvitsee vain yksittäisen raporttinäkymän oikeudet, raporttinäkymän jakaminen voi olla paras ratkaisu.
+- Jos raporttinäkymä on osa suurempaa sisältöjoukkoa, joka sinun tarvitse jakaa monelle työtoverille, *sovelluksen* julkaiseminen on todennäköisesti paras vaihtoehto.
 
-Lue lisää [työtilojen luomisesta](service-create-workspaces.md).
+Power BI:ssä on uusi työtilakokemusta. Lue [uuden työtilakokemuksen luomisesta](service-create-the-new-workspaces.md), miten työtilat ovat muuttuneet. 
 
-**Tiesitkö?** Power BI on työtilan uuden kokemuksen. Lue [luoda uuden työtilakokemuksen](service-create-the-new-workspaces.md) nähdäksesi, miten työtilat muuttamassa. 
+## <a name="distribute-insights-in-an-app"></a>Merkityksellisten tietojen jakaminen sovelluksella
 
-## <a name="distribute-data-and-insights-by-creating-an-app"></a>Tietojen ja merkityksellisen tiedon jakaminen luomalla sovellus
-
-Oletetaan, että haluat jakaa raporttinäkymän laajalle yleisölle. Sinä ja työtoverisi olette luoneet *työtilan* ja sen jälkeen luoneet koontinäyttöjä, raportteja ja tietojoukkoja ja muokanneet niitä työtilassa. Nyt voit valita haluamasi raporttinäkymät ja raportit ja julkaista ne sovelluksena ryhmälle tai koko organisaatiolle.
+Oletetaan, että haluat jakaa raporttinäkymän laajalle yleisölle organisaatiossasi. Sinä ja työtoverisi olette luoneet *työtilan* ja sen jälkeen luoneet koontinäyttöjä, raportteja ja tietojoukkoja ja muokanneet niitä työtilassa. Nyt voit valita haluamasi raporttinäkymät ja raportit ja julkaista ne sovelluksena ryhmälle tai koko organisaatiolle.
 
 ![Sovelluskuvakkeen julkaiseminen](media/service-how-to-collaborate-distribute-dashboards-reports/power-bi-app-publish-600.png)
 
@@ -68,7 +65,13 @@ Sovelluksen asentamisen jälkeen he voivat tarkastella sitä selaimessa tai mobi
 
 Jotta käyttäjät voivat tarkastella sovellustasi, myös heillä täytyy olla Power BI Pro -käyttöoikeus tai sovellus on tallennettava Power BI Premium -kapasiteettiin. Lisätietoja on artikkelissa [Mikä on Power BI Premium?](service-premium-what-is.md)
 
-Voit julkaista sovelluksia myös organisaatiosi ulkopuolisille henkilöille. Myös he voivat tarkastella ja käsitellä sovelluksen sisältöä, mutta eivät jakaa sitä muille.
+Voit julkaista sovelluksia myös organisaatiosi ulkopuolisille henkilöille. Myös he voivat tarkastella ja käsitellä sovelluksen sisältöä, mutta eivät jakaa sitä muille. Nyt voit luoda *mallisovelluksia* ja ottaa ne käyttöön Power BI -asiakkaille.
+
+## <a name="share-a-dataset"></a>Tietojoukon jakaminen
+
+Jotkut käyttäjistä osaavat luoda laadukkaita, hyvin suunniteltu tietomalleja raporteissaan. Toiset taas eivät ole siinä niin hyviä. Ehkä sinä olet yksi parhaista. Koko organisaatio voi hyötyä samojen, hyvin suunniteltujen tietomallien käytöstä. *Jaetut tietojoukot* ovat tätä varten. Kun luot raportin, jonka tietomallia kaikkien pitäisi käyttää, voit tallentaa kyseisen raportin Power BI -palveluun ja antaa asianmukaisille henkilöille sen käyttöoikeudet. He voivat sitten luoda omat raporttinsa tietojoukkosi perusteella. Näin kaikkien raportit perustuvat samoihin tietoihin ja heijastavat ero näkökantoja samoihin tosiasioihin.
+
+Lue lisää [jaettujen tietojoukkojen luomisesta ja käyttämisestä](service-datasets-across-workspaces.md).
 
 ## <a name="share-dashboards-and-reports"></a>Raporttinäkymien ja raporttien jakaminen
 
@@ -98,20 +101,29 @@ Voit myös [jakaa tilannevedoksen ruudusta](consumer/mobile/mobile-windows-10-ph
 
 Voit tulostaa tai tallentaa PDF-tiedostona (tai muuna staattisena tiedostomuotona) koko raporttinäkymän, raporttinäkymän ruudun, raporttisivun tai visualisoinnin Power BI -palvelusta. Raportteja voi tulostaa vain yhden sivun kerrallaan – et voi tulostaa koko raportin kerralla. Lue lisää [tulostamisesta tai staattisena tiedostona tallentamisesta](consumer/end-user-print.md).
 
-## <a name="embed-reports-in-secure-portals-or-public-websites"></a>Raporttien upottaminen suojattuihin portaaleihin tai julkisiin sivustoihin
+## <a name="embed-reports-in-secure-portals-or-public-web-sites"></a>Raporttien upottaminen suojattuihin portaaleihin tai julkisiin verkkosivustoihin
 
-Voit upottaa Power BI -raportteja portaaleihin tai sivustoihin, joissa käyttäjäsi olettavat näkevänsä ne.  
+### <a name="embed-in-secure-portals"></a>Upottaminen suojattuihin portaaleihin
+
+Voit upottaa Power BI -raportteja portaaleihin tai verkkosivustoihin, joissa käyttäjäsi odottaisivat näkevänsä ne.  
 Voit upottaa raportteja sisäisille käyttäjille turvallisesti Power BI -palvelun **Upota SharePoint Onlinessa**- tai **Upota**-vaihtoehdon avulla. 
 
-- **Upota SharePoint Onlinessa** toimii Power BI-verkko-osa SharePoint Onlineen. Se tarjoaa yksittäisen Sign-käyttökokemusta hallita sitä, miten raportti on upotettu. 
-- **Upota** toimii portal tai sivuston, joka tukee upottamisen sisältöä URL-osoite tai Iframeen. 
+- **Upottaminen SharePoint Onlinessa** toimii Power BI:n SharePoint Online -verkko-osan kanssa. Se sisältää kertakirjautumiskokemuksen ja raportin upotuksen hallintatyökalut. 
+- **Upottaminen** toimii niissä portaaleissa ja sivustoissa, jotka tukevat sisällön upottamista URL-osoitteen tai iFramen avulla. 
 
-Sen mukaan, kumpi vaihtoehdosta, Power BI ottaa käyttöön kaikki käyttöoikeudet ja tietosuoja ennen kuin käyttäjät voivat tarkastella sisältöä. Raporttia tarkasteleva henkilö tarvitsee asianmukaisen käyttöoikeuden. Lue lisätietoja [upotetaan SharePoint Onlineen](service-embed-report-spo.md) ja [Upota](service-embed-secure.md) Power BI-vaihtoehto.
+Kummassakin tapauksessa Power BI tarkistaa käyttöoikeudet ja tietosuojan ennen kuin käyttäjät voivat nähdä sisältöä. Raporttia tarkasteleva henkilö tarvitsee asianmukaisen käyttöoikeuden. Lue lisätietoja Power BI:n [Upota SharePoint Onlinessa](service-embed-report-spo.md)- ja [Upota](service-embed-secure.md)-vaihtoehdoista.
 
-**Julkaise verkkoon** -toiminnolla voit julkaista Power BI -raportteja Internetissä upottamalla vuorovaikutteisia visualisointeja blogikirjoituksiin, sivustoille, sosiaaliseen mediaan ja muihin verkossa oleviin viesteihin millä tahansa laitteella. Kaikki Internetin käyttäjät voivat tarkastella raportteja, etkä voi hallita sitä, kuka voi nähdä julkaisemasi sisällön. Power BI -käyttöoikeutta ei tarvita. Verkossa julkaiseminen on mahdollista vain raporteille, joita voit muokata. Et voi julkaista raportteja verkossa, jos ne jaetaan kanssasi tai jos ne sisältyvät sovellukseen. Lue lisää [verkossa julkaisemisesta](service-publish-to-web.md).
+### <a name="publish-to-public-web-sites"></a>Julkisille verkkosivustoille julkaiseminen
+
+**Julkaise verkkoon** -toiminnolla voit julkaista Power BI -raportteja Internetissä upottamalla vuorovaikutteisia visualisointeja blogikirjoituksiin, verkkosivustoille, sosiaaliseen mediaan ja muihin verkossa oleviin viesteihin millä tahansa laitteella. Kaikki Internetin käyttäjät voivat tarkastella raportteja, etkä voi hallita sitä, kuka voi nähdä julkaisemasi sisällön. Power BI -käyttöoikeutta ei tarvita. Verkossa julkaiseminen on mahdollista vain raporteille, joita voit muokata. Et voi julkaista raportteja verkossa, jos ne jaetaan kanssasi tai jos ne sisältyvät sovellukseen. Lue lisää [verkossa julkaisemisesta](service-publish-to-web.md).
 
 >[!Warning]
 >Käytä [Julkaise verkkoon](service-publish-to-web.md) -toimintoa vain, jos haluat jatkaa sisältöä julkisesti. Älä käytä sitä sisäiseen jakamiseen.
+
+## <a name="create-and-deploy-template-apps"></a>Mallisovellusten luominen ja käyttöönotto
+
+*Mallinsovellukset* on tarkoitettu julkisesti (yleensä Microsoft AppSourcen kautta) jaettavaksi. Voit luoda sovelluksen ottaa sen käyttöön Power BI -asiakkaille. Koodaustaitoja tarvitaan vain vähän tai ei lainkaan. Asiakkaat yhdistävät omiin tietoihinsa ja alustavat omat tilinsä. Lue lisää [Power BI -mallisovelluksist](service-template-apps-overview.md).
+
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 

@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/15/2019
+ms.date: 06/10/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: f045e9076cdd8552d6e35e72b9c5f6e2319add68
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: b689a4d0718c92608fe7fc0cdb34d27803015269
+ms.sourcegitcommit: e48ef4c88e4a1a0b259bf899d85d520c4edd5751
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65853423"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66823538"
 ---
 # <a name="data-sources-in-power-bi-desktop"></a>Power BI Desktopin tietolähteet
 Power BI Desktopin avulla voit yhdistää tietoja monista eri lähteistä. Täydellinen luettelo käytettävissä olevista tietolähteistä on tämän sivun alareunassa.
@@ -79,7 +79,7 @@ Seuraavassa kuvassa näkyy **Tiedosto**-luokan **Nouda tiedot** -ikkuna.
 * Google BigQuery
 * Vertica
 * Snowflake
-* Essbasen
+* Essbase
 * AtScale-kuutiot (beeta)
 * BI-liitin
 * Dremio
@@ -118,8 +118,8 @@ Seuraavassa kuvassa näkyy **Power BI** -luokan **Nouda tiedot** -ikkuna.
 * Azure HDInsight (HDFS)
 * Azure HDInsight Spark
 * HDInsight Interactive Query
-* Azure-tiedot Explorer (Kusto)
-* Azure Cost Management (Beta)
+* Azure Data Explorer (Kusto)
+* Azure Cost Management (beeta)
 
 Seuraavassa kuvassa näkyy **Azure**-luokan **Nouda tiedot** -ikkuna.
 
@@ -133,7 +133,7 @@ Seuraavassa kuvassa näkyy **Azure**-luokan **Nouda tiedot** -ikkuna.
 * Dynamics NAV
 * Dynamics 365 Business Central
 * Dynamics 365 Business Central (paikallinen)
-* Common Data Service for Apps (beeta)
+* Common Data Service
 * Microsoft Azure Consumption Insights (beeta)
 * Azure DevOps (beeta)
 * Azure DevOps Server (beeta)
@@ -161,8 +161,11 @@ Seuraavassa kuvassa näkyy **Azure**-luokan **Nouda tiedot** -ikkuna.
 * Webtrends (beeta)
 * Zendesk (beeta)
 * Emigo-tietolähde (beeta)
-* IndustrialAppStore (beeta)
+* Entersoft Business Suite (beeta)
+* App Store teollisuuskäyttöön
+* Intune-tietovarasto (beeta)
 * Microsoft Graph Security (beeta)
+* Quick Base
 * TeamDesk (beeta)
 
 Seuraavassa kuvassa näkyy **Online-palvelut**-luokan **Nouda tiedot** -ikkuna.
@@ -182,15 +185,14 @@ Seuraavassa kuvassa näkyy **Online-palvelut**-luokan **Nouda tiedot** -ikkuna.
 * Python-komentosarja
 * ODBC
 * OLE DB
-* BI360 - budjetointi & talousmalli Reporting (beeta)
+* BI360 – Budjetointi- ja talousraportointi (beeta)
 * Denado
-* Ruudukon tiedot (beeta)
+* Tietoruudukko (beeta)
 * Paxata 
 * QubolePresto (beeta)
-* Quick Base (beeta)
 * Roamler (beeta)
 * SurveyMonkey (beeta)
-* Tenforce (beeta)
+* Tenforce (Smart)List (beeta)
 * Työvoiman dimensiot (beeta)
 * Tyhjä kysely
 

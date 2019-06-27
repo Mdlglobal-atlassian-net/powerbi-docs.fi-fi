@@ -10,14 +10,14 @@ ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 03/29/2019
-ms.openlocfilehash: 1b0386d523e4a89b7687506564f575e31b55f2e7
-ms.sourcegitcommit: 762857c8ca09ce222cc3f8b006fa1b65d11e4ace
+ms.openlocfilehash: 97903b4e6f906f2cb09f6285832ad6eb9a5a8dca
+ms.sourcegitcommit: e48ef4c88e4a1a0b259bf899d85d520c4edd5751
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66720343"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66823288"
 ---
-# <a name="service-principal-with-power-bi-preview"></a>Palvelun päänimi ja Power BI (esikatselu)
+# <a name="service-principal-with-power-bi"></a>Palvelun päänimi ja Power BI
 
 **Palvelun päänimellä** voit upottaa Power BI -sisältöä sovellukseen ja hyödyntää Power BI -automaatiota. Tämä on mahdollista **sovellustunnuksen** avulla. Palvelun päänimestä on hyötyä, kun käytät **Power BI Embeddediä** tai **automatisoit Power BI:n tehtäviä ja prosesseja**.
 
@@ -94,7 +94,7 @@ Palvelun päänimen (sovellustunnus) käyttö eroaa tavallisen päätilin käyt�
    > [!Important]
    > Kun otat palvelun päänimen käyttöön käytettäväksi Power BI:n kanssa, sovelluksen AD-käyttöoikeudet eivät ole enää voimassa. Sovelluksen käyttöoikeuksia hallitaan tässä tapauksessa Power BI -hallintaportaalissa.
 
-2. Luo [käyttöoikeusryhmä Azure Active Directoryssa (AAD)](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal) ja lisää luomasi sovellus tähän käyttöoikeusryhmään. Voit luoda AAD-käyttöoikeusryhmän [PowerShellillä](https://docs.microsoft.com/powershell/azure/create-azure-service-principal-azureps?view=azps-1.1.0).
+2.  **Suositus** - Luo [käyttöoikeusryhmä Azure Active Directoryssa (AAD)](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal) ja lisää luomasi sovellus tähän käyttöoikeusryhmään. Voit luoda AAD-käyttöoikeusryhmän [PowerShellillä](https://docs.microsoft.com/powershell/azure/create-azure-service-principal-azureps?view=azps-1.1.0).
 
     Alla on esimerkkikomentosarja, jolla luodaan uusi käyttöoikeusryhmä ja lisätään sovellus tähän käyttöoikeusryhmään.
 
@@ -109,7 +109,7 @@ Palvelun päänimen (sovellustunnus) käyttö eroaa tavallisen päätilin käyt�
     Add-AzureADGroupMember -ObjectId $($group.ObjectId) -RefObjectId $($sp.ObjectId)
     ```
 
-3. Power BI -järjestelmänvalvojana sinun täytyy ottaa palvelun päänimi käyttöön Power BI -hallintaportaalin **kehittäjäasetuksissa**. Lisää Azure AD:ssä luomasi käyttöoikeusryhmä **kehittäjäasetusten** **tietyn käyttöoikeusryhmän** osiossa.
+3. Power BI -järjestelmänvalvojana sinun täytyy ottaa palvelun päänimi käyttöön Power BI -hallintaportaalin **kehittäjäasetuksissa**. Lisää Azure Active Directoryssa luomasi käyttöoikeusryhmä **kehittäjäasetusten** tietyn käyttöoikeusryhmän osiossa. Voit myös ottaa käyttöön täydelliset käyttöoikeudet koko organisaation tasolla. Jos teet niin, vaihe 2 on tarpeeton.
 
    > [!Important]
    > Palvelun päänimet voivat käyttää kaikkia vuokraaja-asetuksia, jotka on otettu käyttöön koko organisaatiolle tai käyttöoikeusryhmille, joihin palvelun päänimet kuuluvat. Jos haluat rajoittaa palvelun päänimen käyttöä tietyissä vuokraaja-asetuksissa, salli vain tiettyjen käyttöoikeusryhmien käyttö tai luo erillinen käyttöoikeusryhmä palvelun päänimille ja jätä se pois.
@@ -181,4 +181,4 @@ Alla on esimerkkikomentosarja, jolla voit hakea palvelun päänimen objektitunnu
 * [Sovelluksen rekisteröiminen](register-app.md)
 * [Power BI Embedded asiakkaillesi](embed-sample-for-customers.md)
 * [Sovellusobjektit ja palvelun päänimen objektit Azure Active Directoryssa](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals)
-* [Paikallista tietoyhdyskäytävää ja palvelun päänimeä käyttävä rivitason suojaus (esikatselu)](embedded-row-level-security.md#on-premises-data-gateway-with-service-principal-preview)
+* [Paikallista tietoyhdyskäytävää ja palvelun päänimeä käyttävä rivitason suojaus](embedded-row-level-security.md#on-premises-data-gateway-with-service-principal)

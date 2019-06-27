@@ -1,5 +1,5 @@
 ---
-title: Tietojen lisääminen suoraan sivutettuun raporttiin Raportin muodostimessa (esikatselu)
+title: Tietojen lisääminen suoraan sivutettuun raporttiin Raportin muodostimessa
 description: Tässä artikkelissa kerrotaan, miten voit lisätä tietoja suoraan sivutettuun raporttiin Raportin muodostimessa.
 author: maggiesMSFT
 ms.author: maggies
@@ -8,15 +8,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 11/19/2018
-ms.openlocfilehash: 3237f4751083f374ac00a959f226429b17757b50
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.date: 06/06/2019
+ms.openlocfilehash: fd000ffd0d47935f36e72f6d0000d548623edf0a
+ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61424464"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "66839091"
 ---
-# <a name="enter-data-directly-in-a-paginated-report-in-report-builder-preview---power-bi"></a>Tietojen lisääminen suoraan sivutettuun raporttiin Raportin muodostimessa (esikatselu) – Power BI
+# <a name="enter-data-directly-in-a-paginated-report-in-report-builder---power-bi"></a>Tietojen lisääminen suoraan sivutettuun raporttiin Raportin muodostimessa – Power BI
 
 Tässä artikkelissa kerrotaan SQL Server 2016:n Raportin muodostimen uusimman version ominaisuudesta, joka mahdollistaa tietojen lisäämisen suoraan RDL-raporttiin upotettuna tietojoukkona.  Tämä ominaisuus on samankaltainen kuin Power BI Desktop. Voit kirjoittaa tiedot suoraan raportin tietojoukkoon, tai voit liittää ne toisesta ohjelmasta, kuten Microsoft Excelistä. Kun olet luonut tietojoukon antamalla tiedot, voit käyttää sitä samalla tavalla kuin mitä tahansa muuta luomaasi upotettua tietojoukkoa. Lisäksi voit lisätä useamman kuin yhden taulukon ja käyttää yhtä taulukkoa toisen suodattimena. Tämä ominaisuus on erityisen kätevä pienissä ja staattisissa tietojoukoissa, joita saatat tarvita raportissasi, kuten raportin parametreissä.
  
@@ -76,7 +76,7 @@ Voit käyttää tietojoukkoa raporttisi tietojen visualisoinnin perustana. Voit 
 
 ## <a name="upload-the-paginated-report-to-the-power-bi-service"></a>Sivutetun raportin lataaminen Power BI -palveluun
 
-Nyt kun Power BI -palvelu tukee sivutettuja raportteja esikatselutilassa, voit ladata sivutetun raportin Premium-kapasiteettiin. Lue lisää kohdasta [Sivutetun raportin lataaminen](paginated-reports-save-to-power-bi-service.md#upload-a-paginated-report).
+Nyt kun Power BI -palvelu tukee sivutettuja raportteja, voit ladata sivutetun raportin Premium-kapasiteettiin. Lue lisää kohdasta [Sivutetun raportin lataaminen](paginated-reports-save-to-power-bi-service.md#upload-a-paginated-report).
 
 ## <a name="upload-the-paginated-report-to-a-report-server"></a>Sivutetun raportin lataaminen raporttipalvelimeen
 
@@ -98,5 +98,5 @@ Siinä kaikki – nyt voit julkaista raporttipalvelimeesi raportteja, jotka hyö
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
-- [Mitä ovat sivutetut raportit Power BI Premiumissa? (esikatselu)](paginated-reports-report-builder-power-bi.md)
+- [Mitä ovat sivutetut raportit Power BI Premiumissa?](paginated-reports-report-builder-power-bi.md)
 - [Mikä on Power BI -raporttipalvelin?](report-server/get-started.md)

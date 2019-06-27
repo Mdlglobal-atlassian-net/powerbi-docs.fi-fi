@@ -1,5 +1,5 @@
 ---
-title: Azuren automaattianalyysipalveluiden integroiminen Power BI:hin (esikatselu)
+title: Automaattianalyysipalveluiden integrointi Power BI:ssä
 description: Opi käyttämään automaattianalyysipalveluita Power BI:ssä
 author: davidiseminger
 manager: kfile
@@ -10,14 +10,14 @@ ms.topic: conceptual
 ms.date: 05/31/2019
 ms.author: davidi
 LocalizationGroup: conceptual
-ms.openlocfilehash: 86fab3a760eb8bb12ed1955fd5bf357790090e0e
-ms.sourcegitcommit: c539726c9c180e899a8a34443e3fda2b9848beb2
+ms.openlocfilehash: 10ee974b73372fb2243febdcb4431b5decebdf4b
+ms.sourcegitcommit: e48ef4c88e4a1a0b259bf899d85d520c4edd5751
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66448348"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66823470"
 ---
-# <a name="azure-machine-learning-integration-in-power-bi-preview"></a>Azuren automaattianalyysipalveluiden integroiminen Power BI:hin (esikatselu)
+# <a name="azure-machine-learning-integration-in-power-bi"></a>Automaattianalyysipalveluiden integrointi Power BI:ssä
 
 Useat organisaatiot käyttävät **automaattianalyysin** malleja saadakseen parempia merkityksellisiä tietoja ja ennusteita liiketoiminnastaan. Voit visualisoida ja käynnistää merkityksellisiä tietoja näistä malleista raporteissa, koontinäytöissä ja muita analyyseissa, mikä helpottaa merkityksellisten tietojen välittämistä niille yrityskäyttäjille, jotka tarvitsevat niitä eniten.  Power BI:n avulla voi nyt helposti sisällyttää Azuren automaattianalyysipalvelussa isännöityjen mallien merkityksellisiä tietoja käyttämällä yksinkertaisia osoita ja napsauta -liikkeitä.
 
@@ -75,7 +75,7 @@ Tarkalleen ottaen käynnistyskomentosarjan *@input_schema* - ja *@output_schema*
 Näitä ohjeita, jotka koskevat skeeman luontia käynnistyskomentosarjaa päivittämällä, tulee soveltaa malleihin, jotka on luotu käyttämällä Azuren automaattianalyysipalvelujen SDK:ta käyttäviä automaattianalyysipalvelujen kokeita.
 
 > [!NOTE]
-> Mallit, jotka on luotu Azuren automaattianalyysipalvelun graafista käyttöliittymää (esikatselu) käyttämällä, eivät tällä hetkellä tue skeeman luomista. Tuki lisätään myöhemmissä versioissa. 
+> Mallit, jotka on luotu Azuren automaattianalyysipalvelun käyttöliittymää käyttämällä, eivät tällä hetkellä tue skeemojen luomista. Tuki lisätään myöhemmissä versioissa. 
 
 ## <a name="invoking-the-azure-ml-model-in-power-bi"></a>Azuren automaattianalyysipalveluiden mallin käynnistäminen Power BI:ssä
 
@@ -107,9 +107,9 @@ Kun tallennat tietovuon, malli käynnistetään automaattisesti, kun tietovuohon
 
 Tässä artikkelissa annettiin yleiskuva siitä, miten automaattianalyysit integroidaan Power BI -palveluun. Myös seuraavat artikkelit voivat olla kiinnostavia ja hyödyllisiä. 
 
-* [Opetusohjelma: Automaattianalyysistudion mallin käynnistys Power BI:ssä (esikatselu)](service-tutorial-invoke-machine-learning-model.md)
+* [Opetusohjelma: Azuren koneoppimisstudion käynnistäminen Power BI:ssä](service-tutorial-invoke-machine-learning-model.md)
 * [Opetusohjelma: Kognitiivisten palvelujen käyttö Power BI:ssä](service-tutorial-use-cognitive-services.md)
-* [Kognitiiviset palvelut Power BI:ssä (esikatselu)](service-cognitive-services.md)
+* [Kognitiiviset palvelut Power BI:ssä](service-cognitive-services.md)
 
 Lisätietoja tietovoista on seuraavissa artikkeleissa:
 * [Tietovoiden luominen ja käyttäminen Power BI:ssä](service-dataflows-create-use.md)

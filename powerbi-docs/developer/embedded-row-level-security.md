@@ -8,13 +8,13 @@ ms.reviewer: nishalit
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 03/27/2019
-ms.openlocfilehash: 4fc35b88496674206437507ae866e9eb8cb5dd39
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.date: 06/10/2019
+ms.openlocfilehash: 6aebc45f2341f098f0f54dad66652967077c2a08
+ms.sourcegitcommit: e48ef4c88e4a1a0b259bf899d85d520c4edd5751
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61353814"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66823403"
 ---
 # <a name="row-level-security-with-power-bi-embedded"></a>Rivitason suojaus Power BI Embeddedissä
 
@@ -215,7 +215,7 @@ Voit alkaa määrittää CustomData()-ominaisuutta Power BI Embedded -sovellukse
 
 7. Power BI -ohjelmointirajapintojen avulla voit käyttää CustomData-ominaisuutta sovelluksessasi.  Sinulla on oltava käyttäjänimi CustomData-ominaisuuden sisältävää tunnusta luotaessa. Käyttäjänimen on oltava sama kuin pääkäyttäjän täydellinen käyttäjätunnus. Pääkäyttäjän on oltava luomasi roolin jäsen. Jos rooleja ei määritetä, kaikkia rooleja, joiden jäsen pääkäyttäjä on, käytetään rivitason suojauksen arviointiin.
 
-    Kun käsittelet [palveluobjektia](embed-service-principal.md), sinun on myös tehdä yllä olevat vaiheet sijaan päätietokannan tilillä. Kun muodostetaan upotettavan tunnuksen, käyttää [palvelun päänimen Objektitunnus](embed-service-principal.md#how-to-get-the-service-principal-object-id) käyttäjänimeksi.
+    Kun käsittelet [palvelun päänimeä](embed-service-principal.md), sinun on suoritettava yllä olevat vaiheet päätilin käytön sijaan. Kun muodostetaan upotustunnusta, käytä [palvelun päänimen objektitunnusta](embed-service-principal.md#how-to-get-the-service-principal-object-id) käyttäjänimenä.
 
     > [!Note]
     > Kun olet valmis ottamaan sovelluksesi tuotantoon, pääkäyttäjän tili -kentän tai -vaihtoehdon ei pitäisi näkyä käyttäjälle.
@@ -310,7 +310,7 @@ Käyttäjätietojen blob-objektissa annetun arvon on oltava kelvollinen käyttö
 
    ![Sovelluksen rekisteröinti](media/embedded-row-level-security/token-based-app-reg-azure-portal.png)
 
-## <a name="on-premises-data-gateway-with-service-principal-preview"></a>Paikallinen tietoyhdyskäytävä ja palvelun päänimi (esikatselu)
+## <a name="on-premises-data-gateway-with-service-principal"></a>Paikallinen tietoyhdyskäytävä ja palvelun päänimi
 
 Asiakkaat, jotka määrittävät rivitason suojauksen (RLS) SQL Server Analysis Servicesin (SSAS) paikallisella reaaliaikaisen yhteyden tietolähteellä, voivat hyödyntää uutta [palvelun päänimen](embed-service-principal.md) toimintoa. Sen avulla he voivat hallita käyttäjiä ja heidän käyttöoikeuksiaan SSAS-tietoihin, kun he integroivat **Power BI Embeddedin**.
 

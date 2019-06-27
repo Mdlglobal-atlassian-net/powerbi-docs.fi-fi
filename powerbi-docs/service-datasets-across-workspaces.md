@@ -7,19 +7,21 @@ ms.reviewer: chbraun
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/31/2019
+ms.date: 06/07/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: a5e4b41b36dfbf6cca14a348268b96eaad21b00e
-ms.sourcegitcommit: 7c426a5209d4fdd1360fc3d0442d57991be1984d
+ms.openlocfilehash: d893088978d7a412d0e005ca7b3280824974c76c
+ms.sourcegitcommit: 206806d8ddb6bdfc322c1a46fb34a1b0678acba2
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2019
-ms.locfileid: "66461852"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66816654"
 ---
 # <a name="use-datasets-across-workspaces-preview"></a>Tietojoukkojen käyttö eri työtiloissa (esikatselu)
 
 Liiketoimintatiedon hallinta on yhteistyötä. On tärkeää luoda standardoituja tietojoukkoja, joita voidaan pitää eräänlaisina totuuden lähteinä. Näiden standardoitujen tietojoukkojen löytäminen ja uudelleenkäyttö ovat avainasemassa. Kun organisaatiosi parhaat tietomallintajat luovat ja jakavat standardoituja tietojoukkoja, raporttien tekijät voivat luoda tarkkoja raportteja näiden tietojoukkojen pohjalta. Tällä tavalla organisaatiosi saa käyttöönsä johdonmukaisia tietoja päätöksenteon tueksi. Tämä myös edistää tervettä tietokulttuuria.
+
+![Valitse jaettu tietojoukko](media/service-datasets-across-workspaces/power-bi-select-shared-dataset.png)
 
 Power BI:n avulla tietojoukkojen tekijät voivat helposti sertifioida ja ylentää tietojoukkoja, jotta muut löytävät ne. Tällä tavalla raporttien tekijät löytävät laadukkaita virallisia tietojoukkoja, joita he voivat käyttää kaikkialla Power BI:ssä. Tietojoukkojen omistajat voivat hallita tietojensa käyttöä [muodostamiskäyttöoikeuden](service-datasets-build-permissions.md#build-permissions-for-shared-datasets) avulla. Vuokraajan järjestelmänvalvojilla on uusi vuokraaja-asetus, jolla he voivat [hallita tietojoukkojen käyttöä eri työtiloissa](service-datasets-admin-across-workspaces.md).
 

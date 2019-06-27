@@ -1,7 +1,7 @@
 ---
 title: Power BI -raporttipalvelimen muutosloki
 description: Power BI -raporttipalvelimen muutoslokissa on listattu jokaisen koontiversion uudet ominaisuudet ja ohjelmavirhekorjaukset.
-ms.author: jtarquino
+ms.author: jaimeta
 author: jtarquino
 manager: kfile
 ms.reviewer: maggies
@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 03/31/2018
-ms.openlocfilehash: bb25bfb9b3278ef5eccfd54436a6de430d17677d
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: d7d3bf85661284835271b68c476ee53ec2c474bc
+ms.sourcegitcommit: 81ba3572531cbe95ea0b887b94e91f94050f3129
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65990616"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66751122"
 ---
 # <a name="changelog-for-power-bi-report-server"></a>Power BI -raporttipalvelimen muutosloki
 
@@ -22,34 +22,34 @@ Power BI -raporttipalvelimen muutoslokissa on listattu jokaisen koontiversion uu
 
 Lisätietoja uusista ominaisuuksista on artikkelissa [Power BI -raporttipalvelinten uudet ominaisuudet](whats-new.md). 
 
-## <a name="may-2019"></a>Toukokuuta 2019: lle
+## <a name="may-2019"></a>Toukokuu 2019
 
 - **Power BI -raporttipalvelin**          
-    - *1.5.7074.36177 (koontiversio 15.0.1102.371), julkaistu versio: 21. toukokuuta 2019*
+    - *Versio 1.5.7074.36177 (koontiversio 15.0.1102.371), julkaistu: 21.5.2019*
         - Ohjelmavirhekorjauksia
             - Sivutetut raportit
-                - Korjaa käyttöön aina pdf-fonttien upottaminen.
-                - Korjaa määrittämään Secure kuin https-yhteyden välityksellä lähetettyjä evästeet
-                - Korjaa ongelmia pop pohjautuvia komentosarjavirheiden vuoksi
-                - Näytä ongelmia mobiilisovellus Android-puhelimissa korjattu
-                - Korjattu Mobile raportin Aikasiirtymistoiminto näyttämään oikeaa viikon numero riippumatta tilivuoden alku
-                - Lisätty 'RestrictedResourceMimeTypeForUpload'-järjestelmänvalvojien määrittää määritettävissä oleva ominaisuus estetty mime-tyypit
+                - Korjattu ongelman, joka otti aina käyttöön pdf-fonttien upottaminen.
+                - Korjattu ongelma, joka määritti https-yhteyden välityksellä lähetetyt evästeet turvallisiksi
+                - Korjattu komentosarjavirheistä johtuneet ponnahdusikkunoiden ongelmat
+                - Korjattu ongelmia Android-mobiilisovelluksen näyttämiseen liittyneet ongelmat
+                - Korjattu mobiiliraporttien aikasiirtymistoiminto niin, että se näyttää oikeat viikon numerot tilivuoden alusta riippumatta
+                - Järjestelmänvalvojille lisätty määritettävä RestrictedResourceMimeTypeForUpload-ominaisuus, jonka avulla voidaan määrittää estetyt mime-tyypit
          - Ominaisuudet
-            - Luotettu visualisointien tuki lisääminen PBIRS
+            - Lisätty luotettujen visualisointien tuki PBIRS:ään
 
 - **Power BI Desktop (optimoitu Power BI -raporttipalvelimelle)**
-    - *Versio: 2.69.5467.1801 (toukokuun 2019), julkaistu: 21. toukokuuta 2019*
+    - *Versio: 2.69.5467.1801 (toukokuu 2019), julkaistu: 21.5.2019*
         - Ohjelmavirhekorjauksia
-            - Korjaa voit välttää tunnistetiedot takaisin PBIRS PBIX lataamisen aikana
-            - Asiakirjojen avaaminen # tiedostonimessä korjauksia
-            - Lisätty helpompaa linkin edelliseen siirtyminen PBIRS valinta-ikkuna
-            - Korjaa PBIRS näyttävät takaisin-painiketta, Näytä varoitusta visual viestit suuren kontrastin-tilaan.
-            - Valinta-ruutu Käyttöliittymän korjaukset pohjaan skaalaus.
+            - Korjattu tunnistetietojen uudelleensyöttöongelma ladattaessa PBIX:ää PBIRS:ään
+            - Korjattu sellaisten asiakirjojen avaaminen, joiden tiedostonimessä esiintyy #
+            - Lisätty helppokäyttöisempi palaamislinkki PBIRS:n Valinta-ikkunaan
+            - Korjattu PBIRS:n suuren kontrastin tilaan niin, että Takaisin-painike näkyy ja esittää varoittavat visualisointi-ilmoitukset.
+            - Valinta-ruudun käyttöliittymän korjaukset, pohjaan skaalaus.
 
 ## <a name="january-2019"></a>Tammikuu 2019
 
 - **Power BI -raporttipalvelin**          
-    - *1.4.7024.16477 (koontiversio 15.0.1102.299), julkaistu versio: 28. maaliskuuta 2019*
+    - *Versio 1.4.7024.16477 (koontiversio 15.0.1102.299), julkaistu: 28.3.2019*
         - Ohjelmavirhekorjauksia
             - Power BI -raportit
                 - Korjattu SAP Hanan ja SAP BW:n suoran kyselyn yhteydessä ilmennyt perustunnistetietoihin liittyvä ongelma

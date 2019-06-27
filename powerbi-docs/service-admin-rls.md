@@ -11,12 +11,12 @@ ms.author: mblythe
 ms.date: 01/02/2018
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: d57cd2db38e099fffc73c813f0298cfea5a34aad
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 6f7e6848b292e1e2d24cc946b2a52449b5c74376
+ms.sourcegitcommit: 81ba3572531cbe95ea0b887b94e91f94050f3129
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61193819"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66751208"
 ---
 # <a name="row-level-security-rls-with-power-bi"></a>Rivitason suojaus (RLS) Power BI:ssä
 
@@ -52,7 +52,7 @@ Voit vain luoda tai muokata rooleja Power BI Desktopissa.
 
 ### <a name="add-members"></a>Jäsenien lisääminen
 
-Voit lisätä jäsenen rooliin kirjoittamalla lisättävän käyttäjän, suojausryhmän tai jakeluluettelon sähköpostiosoitteen tai nimen. Jäsenen on oltava organisaatiostasi. Et voi lisätä Power BI:ssä luotuja ryhmiä.
+Voit lisätä jäsenen rooliin kirjoittamalla lisättävän käyttäjän, suojausryhmän tai jakeluluettelon sähköpostiosoitteen tai nimen. Et voi lisätä Power BI:ssä luotuja ryhmiä. Voit lisätä jäseniä, jotka ovat [organisaatiosi ulkopuolisia henkilöitä](whitepaper-azure-b2b-power-bi.md#data-security-for-external-partners).
 
 ![Lisää jäsen](media/service-admin-rls/rls-add-member.png)
 

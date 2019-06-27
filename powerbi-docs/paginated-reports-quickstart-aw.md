@@ -1,5 +1,5 @@
 ---
-title: 'Opetusohjelma: sivutetun raportin luominen ja lataaminen Power BI -palveluun (esikatselu)'
+title: 'Opetusohjelma: Sivutetun raportin luominen ja lataaminen Power BI -palveluun'
 description: Tässä opetusohjelmassa muodostat yhteyden Azure SQL -mallitietokantaan. Sen jälkeen luot sivutetun raportin Raportin muodostimen ohjatun toiminnon avulla. Sen jälkeen lataat sivutetun raportin Power BI -palvelussa olevaan Premium-kapasiteetin työtilaan.
 author: maggiesMSFT
 ms.author: maggies
@@ -9,16 +9,16 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: tutorial
 ms.date: 11/06/2018
-ms.openlocfilehash: e7baff9a6427578266e08e7bde91be664e46edb9
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 44af74b722e5d21c7475a382f8097f453854230d
+ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "60989656"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "66839750"
 ---
-# <a name="tutorial-create-a-paginated-report-and-upload-it-to-the-power-bi-service-preview"></a>Opetusohjelma: sivutetun raportin luominen ja lataaminen Power BI -palveluun (esikatselu)
+# <a name="tutorial-create-a-paginated-report-and-upload-it-to-the-power-bi-service"></a>Opetusohjelma: Sivutetun raportin luominen ja lataaminen Power BI -palveluun
 
-Tässä opetusohjelmassa muodostat yhteyden Azure SQL -mallitietokantaan. Sitten voit ohjatun toiminnon avulla Power BI-raportin muodostimessa Luo sivutettu raportti sisältää taulukon, jossa selitteeseen useita sivuja. Sen jälkeen lataat sivutetun raportin Power BI -palvelussa olevaan Premium-kapasiteetin työtilaan. Power BI -palvelun sivutetut raportit ovat esikatseluvaiheessa.
+Tässä opetusohjelmassa muodostat yhteyden Azure SQL -mallitietokantaan. Sen jälkeen luot Power BI:n raportin muodostimen ohjatun toiminnon avulla sivutetun raportin, joka sisältää useille sivuille rivitetyn taulukon. Sen jälkeen lataat sivutetun raportin Power BI -palvelussa olevaan Premium-kapasiteetin työtilaan.
 
 ![Sivutettu raportti Power BI -palvelussa](media/paginated-reports-quickstart-aw/power-bi-paginated-report-service.png)
 
@@ -26,7 +26,7 @@ Suoritat tässä opetusohjelmassa seuraavat vaiheet:
 
 > [!div class="checklist"]
 > * Azure-mallitietokannan luominen
-> * Matriisin luominen Power BI-raportin muodostimessa ohjatun toiminnon avulla.
+> * Luo matriisi Power BI:n raportin muodostimen ohjatun toiminnon avulla.
 > * raportin muotoilu: otsikon, sivunumeron ja sarakkeiden otsikot kullakin sivulla
 > * valuutan muotoileminen
 > * raportin julkaiseminen Power BI -palveluun.
@@ -37,7 +37,7 @@ Jos sinulla ei ole Azure-tilausta, luo [ilmainen tili](https://azure.microsoft.c
 
 Edellytykset sivutetun raportin luomiseen:
 
-- Asenna [Power BI-raportin muodostimen Microsoft Download Centeristä](https://go.microsoft.com/fwlink/?linkid=2086513). 
+- [Power BI:n raportin muodostimen asentaminen Microsoft Download Centeristä](https://go.microsoft.com/fwlink/?linkid=2086513). 
 
 - [Azure SQL -mallitietokannan luominen Azure-portaalissa](https://docs.microsoft.com/azure/sql-database/sql-database-get-started-portal) -pikaoppaan noudattaminen. **Palvelimen nimi** -ruudussa olevan arvon kopioiminen ja tallentaminen **Yleiskatsaus**-välilehdelle. Muista Azuressa luomasi käyttäjänimi ja salasana.
 
@@ -48,7 +48,7 @@ Sivutetun raportin lataaminen Power BI -palveluun edellyttää seuraavia:
 
 ## <a name="create-the-matrix-with-a-wizard"></a>Matriisin luominen ohjatun toiminnon avulla
   
-1.  Aloita Power BI-raportin muodostimen tietokoneesta.  
+1.  Käynnistä Power BI:n raportin muodostin tietokoneella.  
   
      **Aloitus**-valintaikkuna aukeaa.  
   
@@ -329,5 +329,5 @@ Nyt kun olet luonut tämän sivutetun raportin, voit ladata sen Power BI -palvel
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
-[Mitä ovat sivutetut raportit Power BI Premiumissa? (esikatselu)](paginated-reports-report-builder-power-bi.md)
+[Mitä ovat sivutetut raportit Power BI Premiumissa?](paginated-reports-report-builder-power-bi.md)
 

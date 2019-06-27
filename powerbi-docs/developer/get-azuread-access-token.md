@@ -8,27 +8,27 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 02/05/2019
-ms.openlocfilehash: a38547807fbbcf3c76366f32caa46945e57ca8bc
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.date: 06/04/2019
+ms.openlocfilehash: f0e8a9931248860e11f783d04fead6172559afc1
+ms.sourcegitcommit: 88e2a80b95b3e735689e75da7c35d84e24772e13
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65710311"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "66814274"
 ---
 # <a name="get-an-azure-ad-access-token-for-your-power-bi-application"></a>Azure AD -käyttöoikeustietueen hankkiminen Power BI -sovellukselle
 
-Lue ohjeet siihen, miten voit todentaa käyttäjiä Power BI -sovelluksessa ja noutaa käyttöoikeustietueen REST-ohjelmointirajapinnassa käytettäväksi.
+Tässä artikkelissa näytetään, miten voit todentaa käyttäjiä Power BI -sovelluksessa ja noutaa käyttöoikeustietueen [Power BI:n REST-ohjelmointirajapinnassa](https://docs.microsoft.com/rest/api/power-bi/) käytettäväksi.
 
-Ennen kuin voit kutsua Power BI REST -ohjelmointirajapintaa, sinun on saatava Azure Active Directoryn (Azure AD) **todennuksen käyttöoikeustietue** (käyttöoikeustietue). **Käyttöoikeustietueella** annetaan sovellukselle oikeus käyttää **Power BI:n** koontinäyttöjä, ruutuja ja raportteja. Katso lisätietoja Azure Active Directoryn **käyttöoikeustietuetta** koskevasta työnkulusta kohdasta [Azure AD -valtuutuskoodin myöntämistä koskeva työnkulku](https://docs.microsoft.com/azure/active-directory/develop/v1-protocols-oauth-code).
+Ennen kuin sovelluksesi kutsuu REST -ohjelmointirajapintaa, sinun on haettava Azure Active Directoryn (Azure AD) **todennuksen käyttöoikeustietue**. Käyttöoikeustietueella annetaan sovellukselle oikeus käyttää Power BI:n raporttinäkymiä, ruutuja ja raportteja. Lisätietoja on kohdassa [Azure Active Directoryn verkkosovelluksen määrittäminen käyttämään OAuth 2.0 -koodinmyöntämistyönkulkua](https://docs.microsoft.com/azure/active-directory/develop/v1-protocols-oauth-code).
 
-Käyttöoikeustietueen hakemistapa riippuu siitä, miten upotat sisältöä. Tässä artikkelissa käytetään kahta eri tapaa.
+Käyttöoikeustietueen hakemistapa riippuu siitä, miten upotat sisältöä. Tässä artikkelissa näytetään kaksi eri lähestymistapaa.
 
 ## <a name="access-token-for-power-bi-users-user-owns-data"></a>Power BI -käyttäjien käyttöoikeustietue (käyttäjä omistaa tiedot)
 
-Tämä esimerkki on tarkoitettu tilanteeseen, jossa käyttäjäsi kirjautuvat Azure AD:hen manuaalisesti organisaatiotunnuksillaan. Tätä käytetään, kun upotat sisältöä Power BI -käyttäjille, jotka käyttävät sisältöä, joka voi hyödyntää Power BI -palvelua.
+Tämä esimerkki on tarkoitettu tilanteeseen, jossa käyttäjäsi kirjautuvat Azure AD:hen manuaalisesti organisaatiotunnuksillaan. Tätä tehtävää käytetään upotettaessa sisältöä käyttäjille, joilla on Power BI -palvelun käyttöoikeus.
 
-### <a name="get-an-authorization-code-from-azure-ad"></a>Valtuutuskoodin hankkiminen Azure AD:stä
+### <a name="get-an-azure-ad-authorization-code"></a>Azure AD -valtuutuskoodin noutaminen
 
 Ensimmäinen vaihe **käyttöoikeustietueen** hankkimiseksi on valtuutuskoodin hankkiminen **Azure AD:stä**. Muodosta kyselymerkkijono seuraavilla ominaisuuksilla ja ohjaa se uudelleen **Azure AD:hen**.
 
@@ -54,7 +54,7 @@ var @params = new NameValueCollection
 };
 ```
 
-Kun olet muodostanut kyselymerkkijonon, ohjaa uudelleen **Azure AD:hen** saadaksesi **valtuutuskoodin**.  Alla on valmis C#-menetelmä **valtuutuskoodia** koskevan kyselymerkkijonon muodostamiseen ja ohjaamiseen uudelleen **Azure AD:hen**. Kun sinulla on valtuutuskoodi, saat **käyttöoikeustietueen** käyttämällä **valtuutuskoodia**.
+Kun olet muodostanut kyselymerkkijonon, ohjaa uudelleen **Azure AD:hen** saadaksesi **valtuutuskoodin**.  Alla on valmis C#-menetelmä **valtuutuskoodia** koskevan kyselymerkkijonon muodostamiseen ja ohjaamiseen uudelleen **Azure AD:hen**. Voit sen jälkeen käyttää **valtuutuskoodia** **käyttöoikeustietueen** noutamiseen.
 
 [AuthenticationContext.AcquireTokenByAuthorizationCode](https://docs.microsoft.com/dotnet/api/microsoft.identitymodel.clients.activedirectory.authenticationcontext.acquiretokenbyauthorizationcodeasync?view=azure-dotnet#Microsoft_IdentityModel_Clients_ActiveDirectory_AuthenticationContext_AcquireTokenByAuthorizationCodeAsync_System_String_System_Uri_Microsoft_IdentityModel_Clients_ActiveDirectory_ClientCredential_System_String_) tekee kutsun kohteessa redirect.aspx.cs tietueen luomiseksi.
 
@@ -98,7 +98,7 @@ protected void signInButton_Click(object sender, EventArgs e)
 
 ### <a name="get-an-access-token-from-authorization-code"></a>Käyttöoikeustietueen hankkiminen valtuutuskoodista
 
-Sinulla pitäisi nyt olla valtuutuskoodi Azure AD:stä. Kun **Azure AD** tekee uudelleenohjauksen takaisin verkkosovellukseen **varmennuskoodilla**, voit käyttää **valtuutuskoodia** saadaksesi käyttöoikeustietueen. Alla on C#-esimerkki, jota voit käyttää uudelleenohjaussivullasi sekä default.aspx-sivusi tapahtumassa Page_Load.
+Kun **Azure AD** tekee uudelleenohjauksen takaisin verkkosovellukseen **varmennuskoodilla**, voit käyttää sitä käyttöoikeustietueen noutamiseen. Alla on C#-esimerkki, jota voit käyttää uudelleenohjaussivullasi sekä default.aspx-sivusi tapahtumassa `Page_Load`.
 
 Nimitila **Microsoft.IdentityModel.Clients.ActiveDirectory** on noudettavissa [Active Directory -todentamiskirjaston](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/) NuGet-paketista.
 
@@ -165,11 +165,11 @@ protected void Page_Load(object sender, EventArgs e)
 
 ## <a name="access-token-for-non-power-bi-users-app-owns-data"></a>Muiden kuin Power BI -käyttäjien käyttöoikeustietue (sovellus omistaa tiedot)
 
-Tätä lähestymistapaa käytetään yleensä sellaisia ISV-tyyppisiä sovelluksia varten, joissa sovellus omistaa tietojen käyttöoikeudet. Käyttäjät eivät välttämättä ole Power BI -käyttäjiä, ja sovellus hallitsee loppukäyttäjien todentamista ja käyttöoikeuksia.
+Tätä lähestymistapaa käytetään yleensä sellaisia ISV-tyyppisiä sovelluksia varten, joissa sovellus omistaa tietojen käyttöoikeudet. Käyttäjät eivät välttämättä ole Power BI -käyttäjiä, ja sovellus hallitsee käyttäjien todentamista ja käyttöoikeuksia.
 
 ### <a name="access-token-with-a-master-account"></a>Käyttöoikeustietue ja päätili
 
-Tässä tavassa käytetään yksittäistä *päätiliä*, joka on Power BI Pro -käyttäjä. Tämän tilin tunnistetiedot tallennetaan sovellukseen. Sovellus todennetaan Azure AD:stä kyseisten tallennettujen tunnistetietojen avulla. Alla oleva esimerkkikoodi on peräisin [sovellus omistaa tiedot -mallista](https://github.com/guyinacube/PowerBI-Developer-Samples)
+Tässä tavassa käytetään yksittäistä *päätiliä*, joka on Power BI Pro -käyttäjä. Tilin tunnistetiedot tallennetaan sovellukseen. Sovellus todennetaan Azure AD:stä kyseisten tallennettujen tunnistetietojen avulla. Alla oleva esimerkkikoodi on peräisin [sovellus omistaa tiedot -mallista](https://github.com/guyinacube/PowerBI-Developer-Samples)
 
 ### <a name="access-token-with-service-principal"></a>Käyttöoikeustietue ja palvelun päänimi
 
@@ -199,10 +199,12 @@ m_tokenCredentials = new TokenCredentials(authenticationResult.AccessToken, "Bea
 
 ## <a name="troubleshoot"></a>Vianmääritys
 
-* Lataa [Microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/2.22.302111727) Jos kohtaat ”” AuthenticationContext' ei sisällä määritelmää 'AcquireToken' ja ei voi käyttää 'AcquireToken' hyväksymällä ensimmäisen argumentin tyyppi ” AuthenticationContext' löydy (Voit puuttuu using direktiivin tai kokoonpanoviittausta?) ”virhe.
+Virheilmoitus: "'AuthenticationContext' ei sisällä 'AcquireToken'-määritettä, eikä löytynyt käytettävissä olevaa 'AcquireToken'-tunnistetta, joka hyväksyisi 'AuthenticationContext'-arvon (puuttuuko using-direktiivi tai kokoonpanoviittaus?)”.
+
+   Yritä ladata [Microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/2.22.302111727), jos näet tämän virheen.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
-Nyt kun sinulla on käyttöoikeustietue, voit kutsua Power BI REST -ohjelmointirajapinnan upottamaan sisältöä. Jos haluat lisätietoja sisällön upottamisesta, lue ohjeartikkeli [Power BI -sisällön upottaminen](embed-sample-for-customers.md#embed-content-within-your-application).
+Nyt kun sinulla on käyttöoikeustietue, voit kutsua Power BI REST -ohjelmointirajapinnan upottamaan sisältöä. Katso lisätiedot kohdasta [Power BI -sisällön upottaminen](embed-sample-for-customers.md#embed-content-within-your-application).
 
 Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)

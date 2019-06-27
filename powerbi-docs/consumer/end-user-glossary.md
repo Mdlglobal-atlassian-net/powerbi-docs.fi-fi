@@ -6,15 +6,15 @@ ms.custom: seodec18
 author: mihart
 ms.service: powerbi
 ms.subservice: powerbi-consumer
-ms.topic: resource
+ms.topic: conceptual
 ms.date: 05/14/2019
 ms.author: mihart
-ms.openlocfilehash: 4a67e7ef8171b3f342530d187590e9e018f584df
-ms.sourcegitcommit: d88cc6a87d4ba82ad2c4d496a3634f927e4ac529
-ms.translationtype: MT
+ms.openlocfilehash: 6a66d134a3399fed3ee03eddd7059265b5cf7c13
+ms.sourcegitcommit: 81ba3572531cbe95ea0b887b94e91f94050f3129
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66412889"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66751017"
 ---
 # <a name="glossary-for-power-bi-service"></a>Power BI -palvelun sanasto
 Power BI -palvelussa saattaa olla ennestään tuntematonta tai sekavalta vaikuttavaa terminologiaa. Sanasto on hyvä paikka termien hakuun, joten se on hyvä lisätä suosikkeihin. Toinen hyvä resurssi lisätietojen saamiseen Power BI -palvelun muodostavista rakenneosista ovat [peruskäsitteet](end-user-basic-concepts.md). Peruskäsitteet tarjoavat korkean tason yleiskatsauksen Power BI:n *osiin* ja niiden yhteyksiin.
@@ -142,7 +142,7 @@ Power BI -ympäristö (vuokraaja) -termiä voidaan käyttää dokumentaatiossa, 
 ## <a name="h"></a>H
 **high-density visuals (suuren tiheyden visualisoinnit)** Visualisoinnit, joissa on enemmän arvopisteitä kuin Power BI pystyy hahmontamaan. Power BI näyttää muodon ja poikkeavat arvot ottamalla tiedoista näytteitä.
 
-**Aloitus** purkamisen Power BI-Palvelukäyttäjät ikä oletusarvo. Muokkaa mitä tahansa. Voi kutsua Power BI aloitus- tai yksinkertaisesti koti.
+**Aloitus** Power BI -palvelun käyttäjien oletussivu. Ei muuta mitään. Voit kutsua tätä Power BI:n Aloitus- tai Aloitus-sivuksi.
 
 ## <a name="i"></a>I
 

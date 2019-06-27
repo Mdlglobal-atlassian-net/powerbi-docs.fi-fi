@@ -1,5 +1,5 @@
 ---
-title: Kognitiiviset palvelut Power BI:ssä (esikatselu)
+title: Kognitiiviset palvelut Power BI:ssä
 description: Opi käyttämään kognitiivisia palveluita Power BI:ssä
 author: davidiseminger
 manager: kfile
@@ -7,17 +7,17 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/02/2019
+ms.date: 06/10/2019
 ms.author: davidi
 LocalizationGroup: conceptual
-ms.openlocfilehash: 63de805b357fd5b4d15aeea2231dc952ec9e7077
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 267534198d40b91a5550321162b42ecd45500673
+ms.sourcegitcommit: e48ef4c88e4a1a0b259bf899d85d520c4edd5751
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61181950"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66823504"
 ---
-# <a name="cognitive-services-in-power-bi-preview"></a>Kognitiiviset palvelut Power BI:ssä (esikatselu)
+# <a name="cognitive-services-in-power-bi"></a>Kognitiiviset palvelut Power BI:ssä 
 
 Power BI:n kognitiivisten palveluiden avulla voit käyttää [Azuren kognitiivisten palvelujen](https://azure.microsoft.com/services/cognitive-services/) algoritmeja ja rikastaa tietojasi tietovoiden omatoimisessa tietojen valmistelussa.
 
@@ -25,7 +25,7 @@ Tällä hetkellä tuettuja palveluita ovat [asenneanalyysi](https://docs.microso
 
 ## <a name="enabling-ai-features"></a>**Tekoälyominaisuuksien käyttöönotto**
 
-Kognitiivisia palveluja tuetaan Premium-kapasiteetin solmuissa EM2, A2 tai P1 ja suuremmat. Kapasiteetissa käytettään erillistä tekoälykuormitusta kognitiivisten palveluiden suorittamiseen. Julkisen esikatselun aikana tämä kuormitus on oletusarvon mukaan poistettu käytöstä. Ennen kuin käytät kognitiivisia palveluita Power BI:ssä, tekoälyn kuormitus on otettava käyttöön hallintaportaalin kapasiteettiasetuksissa. Voit ottaa tekoälyn kuormituksen käyttöön kuormitukset-osassa sekä määrittää muistin enimmäismäärän, jonka haluat tämän kuormituksen käyttävän. Suositeltu muistiraja on 20 %. Tämän rajan ylittäminen hidastaa kyselyä.
+Kognitiivisia palveluja tuetaan Premium-kapasiteetin solmuissa EM2, A2 tai P1 ja suuremmat. Kapasiteetissa käytettään erillistä tekoälykuormitusta kognitiivisten palveluiden suorittamiseen. Julkisen esikatselun aikana (ennen kesäkuuta 2019) tämä kuormitus oli oletusarvon mukaan poistettu käytöstä. Ennen kuin käytät kognitiivisia palveluita Power BI:ssä, tekoälyn kuormitus on otettava käyttöön hallintaportaalin kapasiteettiasetuksissa. Voit ottaa tekoälyn kuormituksen käyttöön kuormitukset-osassa sekä määrittää muistin enimmäismäärän, jonka haluat tämän kuormituksen käyttävän. Suositeltu muistiraja on 20 %. Tämän rajan ylittäminen hidastaa kyselyä.
 
 ![Kognitiiviset palvelut Power BI:ssä](media/service-cognitive-services/cognitive-services_01.png)
 
@@ -95,14 +95,14 @@ Tämä funktio edellyttää syötteeksi kuvan URL-osoitetta tai abase-64-kenttä
 
 Tässä artikkelissa on yleiskatsaus kognitiivisten palvelujen käytöstä Power BI -palvelun kanssa. Myös seuraavat artikkelit voivat olla kiinnostavia ja hyödyllisiä. 
 
-* [Opetusohjelma: Automaattianalyysistudion mallin käynnistys Power BI:ssä (esikatselu)](service-tutorial-invoke-machine-learning-model.md)
-* [Azuren automaattianalyysipalveluiden integroiminen Power BI:hin (esikatselu)](service-machine-learning-integration.md)
+* [Opetusohjelma: Azuren koneoppimisstudion käynnistäminen Power BI:ssä](service-tutorial-invoke-machine-learning-model.md)
+* [Automaattianalyysipalveluiden integrointi Power BI:ssä](service-machine-learning-integration.md)
 * [Opetusohjelma: Kognitiivisten palvelujen käyttö Power BI:ssä](service-tutorial-use-cognitive-services.md)
 
 
 Lisätietoja tietovoista on seuraavissa artikkeleissa:
 * [Tietovoiden luominen ja käyttäminen Power BI:ssä](service-dataflows-create-use.md)
-* [Laskettuja entiteettejä käyttämällä Power BI Premium](service-dataflows-computed-entities-premium.md)
-* [Dataflows käyttö paikallisiin tietolähteisiin](service-dataflows-on-premises-gateways.md)
-* [Power BI dataflows Kehittäjien resurssit](service-dataflows-developer-resources.md)
+* [Laskettujen entiteettien käyttäminen Power BI Premiumissa](service-dataflows-computed-entities-premium.md)
+* [Tietovoiden käyttö paikallisiin tietolähteisiin](service-dataflows-on-premises-gateways.md)
+* [Kehittäjien resurssit Power BI -tietovoille](service-dataflows-developer-resources.md)
 * [Tietovuot ja Azure Data Lake -integrointi (esikatselu)](service-dataflows-azure-data-lake-integration.md)

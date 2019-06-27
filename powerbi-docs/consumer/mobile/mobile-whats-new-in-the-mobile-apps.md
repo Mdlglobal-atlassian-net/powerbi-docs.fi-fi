@@ -9,12 +9,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 04/08/2019
 ms.author: mshenhav
-ms.openlocfilehash: 967af5bc560d5312cd26964e5ca6b2b7eafd60d7
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: d491855a268c57d7958d52b7c1e9e9191c28601e
+ms.sourcegitcommit: 69a0e340b1bff5cbe42293eed5daaccfff16d40a
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65991054"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67038902"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Power BI -mobiilisovellusten uudet ominaisuudet
 Lisätietoja aiheeseen liittyvistä uusista ominaisuuksista:
@@ -23,16 +23,45 @@ Lisätietoja aiheeseen liittyvistä uusista ominaisuuksista:
 * [Power BI Desktopin uudet ominaisuudet](../../desktop-latest-update.md)  
 * [Power BI -palvelun uudet ominaisuudet](../../service-whats-new.md)  
 
-## <a name="april-2019"></a>Huhtikuun 2019: lle
+## <a name="may-2019"></a>Toukokuu 2019
 
-### <a name="key-influencers-visual"></a>Avain Influencers visual 
-Avain Influencers visual on nyt käytettävissä mobiilisovellus. Tämän visualisoinnin avulla voit analysoida avaimen ohjaimet paremman tietojen kanssa muutamalla hanat.
+### <a name="siri-shortcuts-support-ios"></a>Siri-pikakuvatuki (iOS)
+Käyttäjät voivat luoda Siri-pikakuvakkeita Power BI -raportteihin ja -koontinäyttöihin ja avata ne suoraan Sirin puheliittymän kautta. [Lue, miten voit käyttää Siri-pikakuvakkeita Power BI:n iOS-sovelluksessa](https://powerbi.microsoft.com/blog/introducing-siri-integration-with-power-bi-mobile-ios-app-preview/).
 
-### <a name="add-comments-to-report-content-android-and-ios"></a>Kommenttien lisääminen raportin sisällön (Android ja iOS)
-Nyt voit tehdä yhteistyötä ja Anna palautetta raporttisivuja ja visualisointeja kommentit. Lue lisätietoja Power BI-palvelussa ja Mobile kommentointi raportin [tämän blogissa](https://powerbi.microsoft.com/blog/announcing-report-commenting-for-power-bi-service-and-mobile/). 
+### <a name="device-search-ios"></a>Laitteen haku (iOS)
+Power BI:n integrointi iOS-laitteiden haun (Spotlight) kanssa. Sisällön etsiminen iPhonella tai iPadilla sisältää nyt myös Power BI-kohteet. Kun käyttäjät käyttävät laitteen sisäänrakennettua hakua, tuloksissa näytetään myös hakuehtoja vastaavat Power BI -raportit, -koontinäytöt, -sovellukset, -työtilat ja henkilöt. [Katso lisätiedot seuraavasta blogikirjoituksesta](https://powerbi.microsoft.com/blog/introducing-siri-integration-with-power-bi-mobile-ios-app-preview/).
 
-### <a name="maximize-the-view-with-full-screen-mode-android-and-ios"></a>Suurenna näkymän koko näytön tilassa (Android ja iOS)
-Olemme lisänneet uusi painike, joiden avulla voit hallita kun keskitytään tiedot poistamalla raportin ylä- ja alatunnisteet ja tarjoaa suurin tila raporttien tarkastelun kannalta.
+
+### <a name="single-tap-report-interaction---ga"></a>Raportin käsittely yhdellä napautuksella ‎– GA
+
+Käsittely yhdellä napautuksella on nyt yleisesti saatavilla, ja se on uusien käyttäjien oletusasetus. Käyttäjät voivat halutessaan poistaa sen käytöstä asetuksista ja käsitellä raportteja kaksoisnapauttamalla.
+
+### <a name="enhanced-conditional-access-protection-ios-android"></a>Paranneltu ehdollinen käyttöoikeuksien suojaus (iOS, Android)
+
+Integroimme AAD:n [uuden sovellusten suojaukseen perustuvan ehdollisen käyttöoikeusominaisuuden](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access) parantaaksemme suojausta rajoittamalla Power BI -käyttöoikeuksia, ennen kuin sovelluskäytäntö otetaan käyttöön.
+
+### <a name="device-protection-ios"></a>Laitteen suojaus (iOS)
+
+Käyttäjät voivat suojata Power BI:n laitteen sisäisen suojauksen (kasvojentunnistus, kosketustunnistus tunnuskoodi) avulla. Käyttäjä voi hallita tätä ominaisuutta sovelluksen asetuksista. Myös järjestelmänvalvojat voivat hallita sitä Intunen ja muiden MDM-työkalujen avulla. [Lue lisää](https://docs.microsoft.com/power-bi/consumer/mobile/mobile-ios-native-secure-access).
+
+### <a name="one-page-report-slideshow-windows"></a>Yhden sivun raporttidiaesitys (Windows)
+
+Automaattisen päivityksen tuki koskee myös yhden sivun raportteja diaesityksissä. Tämä tarkoittaa sitä, että jos raportin pohjana oleva tietolähde päivitetään, tieto päivitetään myös asianmukaiselle sivulle.
+
+
+## <a name="april-2019"></a>Huhtikuu 2019
+
+### <a name="key-influencers-visual"></a>Tärkeimpien vaikuttajien visualisointi 
+
+Tärkeimpien vaikuttajien visualisointi on nyt käytettävissä mobiilisovelluksessa. Tämän visualisoinnin avulla voit analysoida tietoihin vaikuttavia tekijöitä muutamalla napautuksella.
+
+### <a name="add-comments-to-report-content-android-and-ios"></a>Kommenttien lisääminen raporttien sisällön (Android ja iOS)
+
+Nyt voit tehdä yhteistyötä ja antaa palautetta lisäämällä kommentteja raporttisivuille ja visualisointeihin. Lue lisää raporttien kommentoinnista Power BI -palvelussa ja -mobiilisovelluksessa [tästä blogista](https://powerbi.microsoft.com/blog/announcing-report-commenting-for-power-bi-service-and-mobile/). 
+
+### <a name="maximize-the-view-with-full-screen-mode-android-and-ios"></a>Näkymän suurentaminen koko näytön tilassa (Android ja iOS)
+
+Olemme lisänneet uuden painikkeen, jonka avulla voit halutessasi syventyä tietoihin poistamalla raportin ylä- ja alatunnisteet, mikä tarjoaa mahdollisimman suuren tilan raporttien tarkasteluun.
 
 ## <a name="march-2019"></a>Maaliskuu 2019
 
@@ -42,20 +71,20 @@ Voit käyttää toisen organisaation kanssasi jakamaa Power BI -sisältöä suor
 
 ### <a name="enhancing-windows-presentation-mode-with-slideshow-windows"></a>Diaesityksen lisääminen Windows-esitystilaan (Windows)
 
-Kanssa [diaesityksen](https://powerbi.microsoft.com/blog/enhancing-presentation-mode-with-slideshow-in-windows-power-bi-app/) julkinen näyttää sijaitsevat office avulla voit suorittaa Power BI-raportteja koko näytön tilassa, joka automaattinen Kierrä raporttisivujen välillä.  
+[Diaesityksen](https://powerbi.microsoft.com/blog/enhancing-presentation-mode-with-slideshow-in-windows-power-bi-app/) ansiosta voit käyttää toimistosi julkisia näyttöjä Power BI -raporttien esittämiseksi koko näytön tilassa. Raporttisivut kiertävät automaattisesti.  
 
-### <a name="supporting-pbi-rs-reports-over-adfs-and-wap-configuration-ios-only"></a>PBI RS raportit tukevat kautta ADFS ja WAP-määritys (vain iOS)
+### <a name="supporting-pbi-rs-reports-over-adfs-and-wap-configuration-ios-only"></a>PBI RS -raporttien tuki ADFS- ja WAP-määritysten kautta (vain iOS)
 
-Power BI-raporttien (PBIX) isännöidyissä PBI RS ADFS-määrityksen kautta voi nyt käyttää Power BI-iOS-sovellus.
+PBI RS:ssä isännöityjä, ADFS-määrityksen kautta käytettävät Power BI -raportit (PBIX) toimivat nyt Power BI:n iOS-sovelluksella.
 
-### <a name="enabling-single-tap-interaction-with-report-visuals"></a>Yhdellä napautuksella käsittelemisen raportin visualisointien ottaminen käyttöön
+### <a name="enabling-single-tap-interaction-with-report-visuals"></a>Yhdellä napautuksella käsittelemisen tuki raporttien visualisoinneissa
 
-Voimme muuttaa raportin vuorovaikutuksen, joten se edellyttää vain yksi visualisoinnin napauttamalla painiketta ja osittajan käsitellä sen tietoja heti. Käyttäjien ei enää tarvitse napauttamalla sitä ja käsitellä sitä napauttamalla uudelleen visualisoinnin, yhdellä napautuksella niitä molempia.
+Raporttien käsittelyä muutettiin niin, että visualisoinnin, painikkeen tai sektorin tietojen käsittely onnistuu yhdellä napautuksella. Käyttäjien ei enää tarvitse valita haluamaansa osaa napauttamalla ensin ja käsitellä sitä napauttamalla uudelleen. Yksi napautus suorittaa molemmat toiminnot.
 
-![Yhdellä napautuksella vuorovaikutus](./media/mobile-whats-new-in-the-mobile-apps/single-tap-2.gif)
+![Yhdellä napautuksella käsittely](./media/mobile-whats-new-in-the-mobile-apps/single-tap-2.gif)
 
 > [!NOTE]
-> Aiemmin luodut käyttäjät on näin app-asetuksen käyttöön. Jos haluat lisätietoja, katso [määrittäminen yhdellä napautuksella raportin vuorovaikutuksen](https://docs.microsoft.com/power-bi/consumer/mobile/mobile-app-single-tap) artikkelissa.
+> Aiemmin luotujen käyttäjien on otettava tämä asetus käyttöön sovelluksen asetuksista. Katso lisätiedot artikkelista [Raportin yhdellä napautuksella käsittelyn määrittäminen ](https://docs.microsoft.com/power-bi/consumer/mobile/mobile-app-single-tap).
 
 ## <a name="january---february-2019"></a>Tammikuu - helmikuu 2019
  

@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 08/20/2017
+ms.date: 06/11/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 201e4e75c9a1ce0d05c85112457191a8d306c596
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: c2ccbf8eaa272d6e5a57f88c76c79b5d06bb3892
+ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61248028"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "66839673"
 ---
 # <a name="change-the-type-of-visualization-in-a-power-bi-report"></a>Power BI -raportin visualisointityypin vaihtaminen
 Kokeile erityyppisiä visualisointeja Power BI -palvelussa ja Power BI Desktopissa, niin näet, kummassa tiedot kuvataan paremmin. 
@@ -24,7 +24,7 @@ Kokeile erityyppisiä visualisointeja Power BI -palvelussa ja Power BI Desktopis
 2. Valitse visualisointi, jotta siitä tulee aktiivinen. Aktiivisessa visualisoinnissa on kahvat ja reuna.    
 3. Valitse Visualisoinnit-ruudusta uusi visualisointityyppi. 
    
-   ![](media/power-bi-report-change-visualization-type/changeviz.gif).
+   ![video, jossa näytetään pylväskaavion muuttaminen viivakaavioksi](media/power-bi-report-change-visualization-type/changeviz.gif).
 4. (Valinnainen) [Kiinnitä visualisointi](../service-dashboard-pin-tile-from-report.md) koontinäyttöön ruutuna. 
 
 Jos muutat raportin visualisointityyppiä sen jälkeen, kun visualisointi on kiinnitetty koontinäyttöön, koontinäytön ruutu ei päivity automaattisesti. Jos siis olet kiinnittänyt visualisoinnin viivakaaviona ja sitten vaihtanut sen raportissa palkkikaavioon, näiden tietojen jo kiinnitetty versio säilyy viivakaaviossa. Kiinnitä palkkikaavio, niin näet myös sen koontinäytössä.

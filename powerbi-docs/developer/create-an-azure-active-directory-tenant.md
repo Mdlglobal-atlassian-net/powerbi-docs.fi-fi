@@ -1,6 +1,6 @@
 ---
 title: Luo Azure Active Directory -vuokraaja käytettäväksi Power BI:n kanssa
-description: Opettele luomaan uusi Azure Active Directory (Azure AD) -vuokraaja käytettäväksi mukautetun sovelluksesi kanssa Power BI REST -ohjelmointirajapintojen avulla.
+description: Katso, miten voit luoda uuden Azure Active Directory (Azure AD) -vuokraajan käytettäväksi mukautetun, Power BI REST -ohjelmointirajapintoja kutsuvan sovelluksesi kanssa.
 author: rkarlin
 ms.author: rkarlin
 manager: kfile
@@ -8,35 +8,33 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 11/30/2017
-ms.openlocfilehash: ae3d15cce7c0beb8122542e3768a0ec10ca0a1ae
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.date: 05/28/2019
+ms.openlocfilehash: 73dddd00b6f811cd29c76c97b04136358d6e6b7a
+ms.sourcegitcommit: aef57ff94a5d452d6b54a90598bd6a0dd1299a46
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61381693"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "66809222"
 ---
 # <a name="create-an-azure-active-directory-tenant-to-use-with-power-bi"></a>Luo Azure Active Directory -vuokraaja käytettäväksi Power BI:n kanssa
 
-Opettele luomaan uusi Azure Active Directory (Azure AD) -vuokraaja käytettäväksi mukautetun sovelluksesi kanssa Power BI REST -ohjelmointirajapintojen avulla.
+Katso, miten voit luoda uuden Azure Active Directory (Azure AD) -vuokraajan käytettäväksi mukautetun, [Power BI REST -ohjelmointirajapintoja](rest-api-reference.md) kutsuvan sovelluksesi kanssa.
 
-Vuokraaja on organisaation edustaja Azure Active Directoryssä. Se on Azure AD -palvelun erityinen esiintymä, jonka organisaatio saa käyttöön ja omistaa, kun se liittyy Microsoftin pilvipalveluun, kuten Azure, Microsoft Intune tai Office 365. Kukin Azure AD -vuokraaja on yksilöllinen ja erillinen muista Azure AD -vuokraajista.
+Vuokraaja edustaa organisaatiota Azure Active Directoryssa. Se on Azure AD -palvelun erityisesiintymä, jonka organisaatio saa käyttöönsä ja omistaa, kun se liittyy Microsoftin pilvipalveluun, kuten Azureen, Microsoft Intuneen tai Office 365:een. Kukin Azure AD -vuokraaja on yksilöllinen ja erillinen muista Azure AD -vuokraajista.
 
-Kun sinulla on Azure AD -vuokraaja, voit määrittää sovelluksen ja myöntää oikeuksia, jotta sovelluksesi voi hyödyntää Power BI REST -ohjelmointirajapintoja.
+Kun sinulla on Azure AD -vuokraaja, voit määrittää sovelluksen ja myöntää sille oikeuksia, joilla sovelluksesi voi kutsua [Power BI REST -ohjelmointirajapintoja](rest-api-reference.md).
 
-Organisaatiollasi saattaa jo olla Azure AD -vuokraaja, jota voit käyttää sovellustasi varten. Voit käyttää kyseistä vuokraajaa sovellukseen liittyviin tarpeisiisi tai luoda uuden vuokraajan erityisesti omaa sovellustasi varten. Tässä artikkelissa käsitellään uuden vuokraajan luomista.
+Organisaatiollasi saattaa jo olla Azure AD -vuokraaja, jota voit käyttää sovellustasi varten. Voit myös luoda uuden vuokraajan erityisesti omaa sovellustasi varten. Tässä artikkelissa näytetään, miten voit luoda uuden vuokraajan.
 
 ## <a name="create-an-azure-active-directory-tenant"></a>Azure Active Directory -vuokraajan luominen
 
-Jotta voit integroida Power BI:n mukautettuun sovellukseesi, sinun on määritettävä sovellus Azure AD:ssä. Sitä varten tarvitset hakemiston Azure AD:ssä. Tämä on vuokraajasi. Jos organisaatiollasi ei vielä ole vuokraajaa, koska siellä ei käytetä Power BI:tä tai Office 365:tä, [sinun on luotava sellainen](https://docs.microsoft.com/azure/active-directory/develop/active-directory-howto-tenant). Voit myös joutua luomaan sellaisen, jos et halua sovelluksesi sekoittuvan organisaatiosi vuokraajan kanssa. Näin saat pidettyä asiat erillään.
+Jotta voit integroida Power BI:n mukautettuun sovellukseesi, sinun on määritettävä sovellus Azure AD:ssä. Tämä edellyttää Azure AD -hakemistoa. Tämä hakemisto on *vuokraajasi*. Jos organisaatiollasi ei vielä ole vuokraajaa, koska siinä ei käytetä Power BI:tä tai Office 365:tä, [sinun on luotava kehitysympäristö](https://docs.microsoft.com/azure/active-directory/develop/active-directory-howto-tenant). Voit myös joutua luomaan sellaisen, jos et halua sovelluksesi sekoittuvan organisaatiosi vuokraajan kanssa. Tai ehkä haluat luoda vuokraajan testaustarkoituksiin.
 
-Tai ehkä haluat luoda vuokraajan testaustarkoituksiin.
-
-Jos haluat luoda uuden Azure AD -vuokraajan, toimi seuraavasti.
+Uuden Azure AD -vuokraajan luominen:
 
 1. Selaa [Azure-portaaliin](https://portal.azure.com) ja kirjaudu sisään tilillä, jolla on Azure-tilaus.
 
-2. Valitse **plus-kuvake (+)** ja hae *Azure Active Directory*.
+2. Valitse **plus-kuvake (+)** ja hae **Azure Active Directory**.
 
     ![Plus-kuvake (+)](media/create-an-azure-active-directory-tenant/new-directory.png)
 
@@ -46,53 +44,58 @@ Jos haluat luoda uuden Azure AD -vuokraajan, toimi seuraavasti.
 
 4. Valitse **Luo**.
 
-5. Anna **organisaation nimi** sekä **alkuperäinen toimialuenimi**. Valitse sitten **Luo**. Tämä luo hakemistosi.
+5. Anna **Organisaation nimi** ja **Alkuperäisen toimialueen nimi**. Valitse sitten **Luo**. Hakemisto on nyt luotu.
 
     ![Organisaatio ja toimialue](media/create-an-azure-active-directory-tenant/organization-and-domain.png)
 
    > [!NOTE]
-   > Alkuperäinen toimialueesi on osa toimialuetta onmicrosoft.com. Voit lisätä muita toimialuenimiä myöhemmin. Hakemistolle eli vuokraajalle voi olla määritetty useita toimialueita.
+   > Alkuperäinen toimialueesi on osa toimialuetta onmicrosoft.com. Voit lisätä muita toimialuenimiä myöhemmin. Vuokraajahakemistolle voi olla määritetty useita toimialueita.
 
 6. Kun hakemisto on luotu, valitse tietoruutu hallitaksesi uutta hakemistoasi.
 
-Hakemisto on nyt luotu. Seuraavaksi halutaan lisätä käyttäjä vuokraajaan.
+Seuraavaksi lisäät vuokraajan käyttäjiä.
 
-## <a name="create-some-users-in-your-azure-active-directory-tenant"></a>Joidenkin käyttäjien luominen Azure Active Directory -vuokraajaan
+## <a name="create-azure-active-directory-tenant-users"></a>Azure Active Directory -vuokraajan käyttäjien luominen
 
-Nyt kun meillä on hakemisto, luodaan vähintään kaksi käyttäjää. Yksi, joka on vuokraajan yleinen järjestelmänvalvoja ja toinen, joka on pääkäyttäjä upottamista varten. Ajattele tätä eräänlaisena palvelutilinä.
+Nyt kun hakemisto on luotu, luodaan vähintään kaksi käyttäjää. Toinen on vuokraajan yleinen järjestelmänvalvoja ja toinen pääkäyttäjä upottamista varten. Voit ajatella jälkimmäisen olevan palvelutili.
 
 1. Varmista Azure-portaalissa, että käytössä on Azure Active Directory -pikaikkuna.
 
     ![](media/create-an-azure-active-directory-tenant/aad-flyout.png)
 
-    Jos ei ole, valitse Azure Active Directory -kuvake vasemmalta palveluriviltä.
+    Jos ei ole, valitse Azure Active Directory -kuvake vasemmalta palvelusiirtymästä.
 
     ![](media/create-an-azure-active-directory-tenant/aad-service.png)
-2. Valitse **Hallinta**-kohdasta **Käyttäjät ja ryhmät**.
+
+2. Valitse **Hallinta**-kohdasta **Käyttäjät**.
 
     ![](media/create-an-azure-active-directory-tenant/users-and-groups.png)
+
 3. Valitse **Kaikki käyttäjät** ja sitten **+ Uusi käyttäjä**.
-4. Anna nimi ja käyttäjänimi tälle käyttäjälle. Tämä on vuokraajan yleinen järjestelmänvalvoja. Haluat lisäksi muuttaa kohdan **Hakemiston rooli** vaihtoehtoon *Yleinen järjestelmänvalvoja*. Voit myös näyttää tilapäisen salasanan. Kun olet valmis, valitse **Luo**.
+
+4. Anna vuokraajan Yleisen järjestelmänvalvojan **nimi** ja **käyttäjänimi**. Muuta **Hakemiston rooli** -kohdan arvoksi **Yleinen järjestelmänvalvoja**. Voit myös näyttää tilapäisen salasanan. Kun olet valmis, valitse **Luo**.
 
     ![](media/create-an-azure-active-directory-tenant/global-admin.png)
 
-5. Haluat tehdä saman uudelleen vuokraajasi tavalliselle käyttäjälle. Tätä voidaan käyttää myös upottamisen päätilillesi. Tällä kertaa annamme sen olla kohdassa **Hakemiston rooli** *Käyttäjä*. Merkitse salasana muistiin. Valitse sitten **Luo**.
+5. Luo tavallinen vuokraajan käyttäjä samalla tavalla. Voit käyttää tätä tiliä upottamisen päätilinäsi. Jätä tällä kertaa **Hakemiston rooli** -arvoksi **Käyttäjä**. Kirjoita salasana muistiin ja valitse sitten **Luo**.
 
     ![](media/create-an-azure-active-directory-tenant/pbiembed-user.png)
-6. Rekisteröidy Power BI:hin käyttäjätilillä, jonka loit vaiheessa 5. Voit tehdä sen siirtymällä osoitteeseen [powerbi.com](https://powerbi.microsoft.com/get-started/) ja valitsemalla **Kokeile ilmaiseksi** kohdassa *Power BI - pilviyhteistyö ja jakaminen*.
+
+6. Rekisteröidy Power BI:hin käyttäjätilillä, jonka loit vaiheessa 5. Siirtymällä osoitteeseen [powerbi.com](https://powerbi.microsoft.com/get-started/) ja valitse **Power BI - pilviyhteistyö ja jakaminen** -kohdassa **Kokeile ilmaiseksi**.
 
     ![](media/create-an-azure-active-directory-tenant/try-powerbi-free.png)
 
-    Kun rekisteröidyt, sinua pyydetään kokeilemaan Power BI Pro:ta ilmaiseksi 60 päivän ajan. Voit päättää tehdä niin, jolloin sinusta tulee pro-käyttäjä. Nyt voit myös alkaa kehittää upotettua ratkaisua, jos se on mitä haet.
+    Kun rekisteröidyt, sinua kehotetaan kokeilemaan Power BI Pro:ta ilmaiseksi 60 päivän ajan. Jos teet niin, sinusta tulee Pro-käyttäjä, jolloin voit [alkaa kehittää upotettua ratkaisua](embedding-content.md).
 
    > [!NOTE]
-   > Varmista, että rekisteröidyt sillä sähköpostiosoitteella, jonka ilmoitit käyttäjätilille.
+   > Varmista, että rekisteröidyt käyttäjätilisi sähköpostiosoitteella.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
-Nyt kun sinulla on Azure AD -vuokraaja, voit käyttää vuokraajaa kohteiden testaamiseen Power BI:ssä ja/tai voit siirtyä eteenpäin upottamaan Power BI -koontinäyttöjä ja -raportteja sovellukseesi. Kohteiden upottamista koskevia lisätietoja varten katso [Power BI -koontinäyttöjen, -raporttien ja -ruutujen upottaminen](embedding-content.md).
+Nyt kun sinulla on Azure AD -vuokraaja, voit käyttää vuokraajaa Power BI -kohteiden testaamiseen. Voit myös upottaa Power BI -raporttinäkymiä ja raportteja sovellukseesi. Katso lisätiedot kohdasta [Power BI -raporttinäkymien, -raporttien ja -ruutujen upottaminen](embedding-content.md).
 
-[Mikä on Azure AD -hakemisto?](https://docs.microsoft.com/azure/active-directory/active-directory-whatis)  
-[Azure Active Directory -vuokraajan hankkiminen](https://docs.microsoft.com/azure/active-directory/develop/active-directory-howto-tenant)  
+[Mikä Azure Active Directory on?](https://docs.microsoft.com/azure/active-directory/active-directory-whatis) 
+ 
+[Pika-aloitus: Kehitysympäristön määrittäminen](https://docs.microsoft.com/azure/active-directory/develop/active-directory-howto-tenant)  
 
-Onko sinulla muuta kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)
+Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)

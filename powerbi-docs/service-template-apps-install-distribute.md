@@ -5,24 +5,24 @@ author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 04/19/2019
 ms.author: maggies
-ms.openlocfilehash: 2b7b2630e665fca9013920718ff58dd973f01392
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 0671dfb324b3d66a9dee9585f94d3cb6825fb5eb
+ms.sourcegitcommit: 81ba3572531cbe95ea0b887b94e91f94050f3129
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "64578576"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66751242"
 ---
 # <a name="install-and-distribute-template-apps-in-your-organization---power-bi-preview"></a>Mallisovellusten asentaminen ja jakaminen organisaatiossa - Power BI (esikatselu)
 
-Oletko Power BI-analyytikko? Jos siis tässä artikkelissa kerrotaan, miten voit asentaa *mallin sovelluksia* muodostaa yhteyden moniin palveluihin, joita käytät liiketoiminnassasi, kuten Salesforce, Microsoft Dynamics ja Google Analytics. Voit muokata koontinäyttöä ja raportteja organisaatiosi tarpeisiin ja jakaa niitä työtovereillesi kuin *sovelluksen*. 
+Oletko Power BI -analyytikko? Jos olet, tässä artikkelissa kerrotaan, miten voit asentaa *mallisovelluksia*, joiden avulla voit yhdistää moniin liiketoiminnassa käyttämiisi palveluihin. Tällaisia palveluita ovat esimerkiksi Salesforce, Microsoft Dynamics ja Google Analytics. Voit muokata raporttinäkymää ja raportteja organisaatiosi tarpeiden mukaiseksi ja jakaa ne työtovereillesi *sovelluksena*. 
 
 ![Asennetut Power BI -sovellukset](media/service-template-apps-install-distribute/power-bi-get-apps.png)
 
-Jos olet kiinnostunut luomaan mallisovelluksia ja jakamaan niitä itse, katso [Mallisovelluksen luominen Power BI:ssä](service-template-apps-create.md). Power BI-kumppaneille, voit Power BI-sovellusten kanssa vain vähän tai ei-koodaus ja ottaa käyttöön Power BI-asiakkaille. 
+Jos olet kiinnostunut luomaan mallisovelluksia ja jakamaan niitä itse, katso [Mallisovelluksen luominen Power BI:ssä](service-template-apps-create.md). Power BI -kumppanit voivat muodostaa Power BI -sovelluksia ja ottaa ne käyttöön Power BI -asiakkaille. Koodausta tarvitaan hyvin vähän tai ei lainkaan. 
 
 ## <a name="prerequisites"></a>Edellytykset  
 

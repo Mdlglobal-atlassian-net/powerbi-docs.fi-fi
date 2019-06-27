@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 12/06/2017
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: e3092c320008df760ef72408c93f601dde26cdef
-ms.sourcegitcommit: ec5b6a9f87bc098a85c0f4607ca7f6e2287df1f5
-ms.translationtype: MT
+ms.openlocfilehash: f06632e80bad8796ded3e3616836832967435b24
+ms.sourcegitcommit: aef57ff94a5d452d6b54a90598bd6a0dd1299a46
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66051147"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "66809253"
 ---
 # <a name="guidance-for-deploying-a-data-gateway-for-power-bi"></a>Power BI:n tietoyhdyskäytävän käyttöönotto-ohjeet
 
@@ -42,7 +42,7 @@ Jos kaikki käyttäjät käyttävät tiettyä raporttia joka päivä samaan aika
 ### <a name="connection-type"></a>Yhteystyyppi
 **Power BI** tarjoaa kaksi yhteystyyppiä: **DirectQueryn** ja **tuonnin**. Kaikki tietolähteet eivät tue molempia yhteystyyppejä ja useat syyt voivat vaikuttaa siihen, kumpi valitaan, kuten suojausvaatimukset, suorituskyky, tietorajoitukset ja tietomallikoot. Lisätietoja yhteystyypistä ja tuetuista tietolähteistä on *On-premises data gateway* -artikkelin osiossa, joka sisältää[ luettelon käytettävissä olevista tietolähdetyypeistä](service-gateway-onprem.md).
 
-Sen mukaan, mitä yhteyttä käytetään yhdyskäytävän käyttö voi olla eri. Sinun tulee esimerkiksi yrittää erottaa **DirectQuery**-tietolähteet **ajoitetun päivityksen** tietolähteistä aina kun mahdollista (olettaen, että ne ovat eri raporteissa ja voidaan erottaa). Tämä estää sen, että yhdyskäytävällä olisi tuhansia **DirectQuery** pyyntöjä jonossa samaan aikaan aamuksi ajoitetun päivityksen kanssa, suurikokoisen tietomallin, jota käytetään yrityksen pääasiallisessa raporttinäkymässä. Seuraavassa on kummankin osalta huomioitavia seikkoja:
+Käytössä oleva yhteystyypin mukaan yhdyskäytävän käyttö voi olla erilaista. Sinun tulee esimerkiksi yrittää erottaa **DirectQuery**-tietolähteet **ajoitetun päivityksen** tietolähteistä aina kun mahdollista (olettaen, että ne ovat eri raporteissa ja voidaan erottaa). Tämä estää sen, että yhdyskäytävällä olisi tuhansia **DirectQuery**-pyyntöjä jonossa samaan aikaan aamuksi ajoitetun suurikokoisen tietomallin päivityksen kanssa, jota käytetään yrityksen pääasiallisessa raporttinäkymässä. Seuraavassa on kummankin osalta huomioitavia seikkoja:
 
 * **Ajoitettu päivitys**: Riippuen kyselyn koosta ja päivittäin tehtävien päivitysten määrästä voit valita, pysytkö suositeltujen laitteistovaatimusten välillä vai päivitätkö suuremman suorituskyvyn koneeseen. Jos tiettyä kyselyä ei ole taitettu, yhdyskäytäväkoneessa tapahtuu muunnoksia ja siten yhdyskäytäväkone hyötyy suuremmasta käytettävissä olevasta RAM-muistista.
 * **DirectQuery**: Kysely lähetään aina, kun joku käyttäjä avaa raportin tai tarkastelee tietoja. Joten jos arvelet yli 1 000 käyttäjän käyttävän tietoja samanaikaisesti, kannattaa varmistaa, että tietokoneessa on tehokkaat ja suorituskykyiset laitteisto-osat. Suoritinydinten määrän lisääminen parantaa **DirectQuery**-yhteyden siirtomäärää.
@@ -104,14 +104,34 @@ Yhdyskäytävä luo lähtevän yhteyden **Azuren palveluväylään**. Yhdyskäyt
 
 Yhdyskäytävä *ei* vaadi saapuvia portteja. Kaikki tarvittavat portit näkyvät yllä olevassa luettelossa.
 
-On suositeltavaa, että lisäät tietoalueesi IP-osoitteet sallittujen luetteloon palomuurin asetuksissa. Voit ladata IP-osoitteet, jotka löytyvät [Microsoft Azuren palvelinkeskusten IP-osoiteluettelosta](https://www.microsoft.com/download/details.aspx?id=41653). Luettelo päivitetään viikoittain. Yhdyskäytävä vaihtaa tietoja **Azuren palveluväylän** kanssa käyttämällä määritettyä IP-osoitetta ja täydellistä toimialuenimeä (FQDN). Jos pakotat yhdyskäytävän vaihtamaan tietoja HTTPS-yhteyden kautta, yhdyskäytävä käyttää ainoastaan FQDN:ää ja tietojen vaihtoa IP-osoitteita käyttämällä ei tapahdu lainkaan.
+Suosittelemme, että lisäät tietoalueesi IP-osoitteet sallittujen luetteloon palomuurin asetuksissa. Voit ladata IP-osoitteet, jotka löytyvät [Microsoft Azuren palvelinkeskusten IP-osoiteluettelosta](https://www.microsoft.com/download/details.aspx?id=41653). Luettelo päivitetään viikoittain. Yhdyskäytävä vaihtaa tietoja **Azuren palveluväylän** kanssa käyttämällä määritettyä IP-osoitetta ja täydellistä toimialuenimeä (FQDN). Jos pakotat yhdyskäytävän vaihtamaan tietoja HTTPS-yhteyden kautta, yhdyskäytävä käyttää ainoastaan FQDN:ää ja tietojen vaihtoa IP-osoitteita käyttämällä ei tapahdu lainkaan.
 
 #### <a name="forcing-https-communication-with-azure-service-bus"></a>HTTPS-tiedonsiirron pakottaminen Azuren palveluväylän kanssa
-Voit pakottaa yhdyskäytävän vaihtamaan tietoja **Azuren palveluväylän** kanssa käyttämällä HTTPS-yhteyttä suoran TCP-yhteyden sijaan. Tämä heikentää suorituskykyä hieman. Voit myös pakottaa yhdyskäytävän vaihtamaan tietoja **Azuren palveluväylän** kanssa käyttämällä HTTPS-yhteyttä yhdyskäytävän käyttöliittymän kautta (yhdyskäytävän maaliskuun 2017 julkaisusta alkaen).
 
-Voit tehdä tämän valitsemalla yhdyskäytävässä **Verkko** ja ottamalla **Azuren palveluväylän yhteystilan** **käyttöön**.
+Voit pakottaa yhdyskäytävän vaihtamaan tietoja Azuren palveluväylän kanssa HTTPS-yhteydellä suoran TCP-yhteyden sijaan.
 
-![](media/service-gateway-deployment-guidance/powerbi-gateway-deployment-guidance_04.png)
+> [!NOTE]
+> Kesäkuun 2019 julkaisusta eteenpäin uudet asennukset (ei koske päivityksiä) käyttävät oletuksena HTTPS-protokollaa TCP:n sijaa Azuren palveluväylän suositusten mukaisesti.
+
+Voit pakottaa HTTPS-yhteyden käyttöön muokkaamalla *Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config* -tiedostoa muuttamalla arvon `AutoDetect` arvoksi `Https`suoraan tämän kappaleen jälkeen esitetyn koodikatkelman mukaisesti. Tiedosto löytyy (oletusarvoisesti) sijainnista *C:\Program Files\On-premises data gateway*.
+
+```xml
+<setting name="ServiceBusSystemConnectivityModeString" serializeAs="String">
+    <value>Https</value>
+</setting>
+```
+
+*ServiceBusSystemConnectivityModeString*-parametrin arvossa kirjainkoko on merkitsevä. Kelvolliset arvot ovat *Automaattinen tunnistus* ja *Https*.
+
+Vaihtoehtoisesti voit pakottaa yhdyskäytävän valitsemaan tämän tavan käyttämällä yhdyskäytävän käyttöliittymää. Valitse yhdyskäytävän käyttöliittymässä **Verkko** ja ota **Azuren palveluväylän yhteystila** **käyttöön**.
+
+![](./includes/media/gateway-onprem-accounts-ports-more/gw-onprem_01.png)
+
+Kun se on vaihdettu ja kun valitset **Käytä** (painike, joka tulee näkyviin vain, kun teet muutoksen), *yhdyskäytävän Windows-palvelu* käynnistyy automaattisesti uudelleen, jotta muutokset tulevat voimaan.
+
+Vastaisuudessa voit käynnistää *yhdyskäytävän Windows-palvelun* uudelleen valitsemalla käyttöliittymä-valintaikkunasta **Palveluasetukset** ja sitten *Käynnistä uudelleen nyt*.
+
+![](./includes/media/gateway-onprem-accounts-ports-more/gw-onprem_02.png)
 
 ### <a name="additional-guidance"></a>Lisäohjeita
 Tässä osiossa annetaan yhdyskäytävien käyttöönottoa ja hallintaa koskevia lisäohjeita.
@@ -129,7 +149,7 @@ Jotta voit palauttaa yhdyskäytävän, varmista, että olet yhdyskäytävän jä
 Kun olet kirjautunut sisään, valitse **Migrate an existing gateway** (Siirrä olemassa oleva yhdyskäytävä) -vaihtoehto. Seuraavaksi sinun on valittava yhdyskäytävä, jonka haluat palauttaa tai siirtää. Lopuksi anna palautusavain ja valitse määritys. Kun tämä vaihe on suoritettu, vanha yhdyskäytävä korvataan uudella ja uusi yhdyskäytävä perii sen nimen ja kaikki tietolähteet, jotka on määritetty aiemmin. Kaikki tietolähteet kulkevat nyt uuden tietokoneen kautta ilman, että sinun tarvitsee julkaista mitään uudelleen. Automaattista vikasietoisuutta ei tueta vielä, mutta se on ominaisuus, jota yhdyskäytävätiimi aktiivisesti tutkii.
 
 #### <a name="administrators"></a>Järjestelmänvalvojat
-Voit etsiä yhdyskäytävän järjestelmänvalvojia **Power BI -palvelun** luettelosta. Kun olet kirjautunut sisään **Power BI** -palveluun, valitse **Settings** (Asetukset, hammaspyöräkuvake) **> Manage Gateways (Yhdyskäytävien hallinta) > Gateway UI (Yhdyskäytävän käyttöliittymä)**.  
+Voit etsiä yhdyskäytävän järjestelmänvalvojia **Power BI -palvelun** luettelosta. Kun olet kirjautunut sisään **Power BI** -palveluun, valitse **Settings** (Asetukset, hammaspyöräkuvake) **> Manage Gateways (Yhdyskäytävien hallinta) > Gateway UI (Yhdyskäytävän käyttöliittymä)** .  
 
 ![](media/service-gateway-deployment-guidance/powerbi-gateway-deployment-guidance_05.png)
 

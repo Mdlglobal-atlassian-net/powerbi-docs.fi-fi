@@ -7,32 +7,32 @@ ms.reviewer: maggiesMSFT
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: conceptual
-ms.date: 05/30/2018
+ms.date: 05/30/2019
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: ca035762f16d2e8e6c7ffb59220a2457daf10545
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: bc562c1c75f72e0ada23580aa0698f6463c129bb
+ms.sourcegitcommit: 88e2a80b95b3e735689e75da7c35d84e24772e13
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61172033"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "66814312"
 ---
 # <a name="connect-to-salesforce-with-power-bi"></a>Yhteyden muodostaminen Salesforceen Power BI:n avulla
-Power BI:ssä voit muodostaa helposti yhteyden Salesforce.com-tiliisi. Kun yhteys on luotu, tietosi noudetaan ja koontinäyttö sekä tietoihisi perustuvat raportit esitetään automaattisesti.
+Power BI:ssä voit muodostaa helposti yhteyden Salesforce.com-tiliisi. Tämän yhteyden avulla voit noutaa Salesforce-tietosi. Raporttinäkymät ja raportit tarjotaan automaattisesti.
 
-Muodosta yhteys Power BI:n [Salesforce-sisältöpakettiin](https://app.powerbi.com/getdata/services/salesforce) tai lue lisätietoja Power BI:n [Salesforce-integroinnista](https://powerbi.microsoft.com/integrations/salesforce).
+Lue lisää [Salesforcen integroinnista](https://powerbi.microsoft.com/integrations/salesforce) Power BI:hin.
 
 ## <a name="how-to-connect"></a>Yhteyden muodostaminen
-1. Valitse vasemman siirtymisruudun alareunasta **Nouda tiedot**.
+1. Valitse Power BI:n vasemman siirtymisruudun alareunasta **Nouda tiedot**.
    
    ![](media/service-connect-to-salesforce/pbi_getdata.png) 
 2. Valitse **Palvelut**-ruudussa **Nouda**.
    
    ![](media/service-connect-to-salesforce/pbi_getservices.png) 
-3. Valitse **Salesforce** ja valitse **Nouda**.  
+3. Valitse **Salesforce-analyysi** ja valitse **Hae**.  
    
    ![](media/service-connect-to-salesforce/salesforce.png)
-4. Aloita kirjautuminen valitsemalla **Kirjaudu sisään**.
+4. Valitse **Kirjaudu sisään** aloittaaksesi kirjautumisen.
    
     ![](media/service-connect-to-salesforce/dialog.png)
 5. Anna Salesforce-tunnistetietosi pyydettäessä. Valitse **Salli**, jotta Power BI voi käyttää Salesforce-perustietoja ja muita tietoja.
@@ -42,7 +42,7 @@ Muodosta yhteys Power BI:n [Salesforce-sisältöpakettiin](https://app.powerbi.c
    
    * **Koontinäyttö**
      
-     Valitse valmis koontinäyttö henkilöroolin mukaan (esimerkiksi **Myyntipäällikkö**). Nämä koontinäytöt tuovat määrätyt vakiotiedot Salesforcesta. Ne eivät sisällä mukautettuja kenttiä.
+     Valitse valmis koontinäyttö henkilöroolin mukaan (esimerkiksi **Myyntipäällikkö**). Nämä raporttinäkymät tuovat määrätyt vakiotiedot Salesforcesta. Ne eivät sisällä mukautettuja kenttiä.
      
      ![](media/service-connect-to-salesforce/pbi_salesforcechooserole.png)
    * **Raportit**
@@ -52,37 +52,46 @@ Muodosta yhteys Power BI:n [Salesforce-sisältöpakettiin](https://app.powerbi.c
      ![](media/service-connect-to-salesforce/pbi_salesforcereports.png)
      
      Jos et näe raportteja, lisää tai luo niitä Salesforce-tilissäsi ja yritä muodostaa yhteys uudelleen.
-7. Aloita tuontiprosessi valitsemalla **Yhdistä**. Näet tuonnin aikana ilmoituksen, jonka mukaan tuonti on käynnissä. Kun tuonti on valmis, näet Salesforce-tietojesi koontinäytön, raportin ja tietojoukon vasemmalla olevassa siirtymisruudussa.
+
+7. Aloita tuontiprosessi valitsemalla **Yhdistä**. Näet tuonnin aikana ilmoituksen, joka kertoo tuonnin on käynnissä. Kun tuonti on valmis, näet Salesforce-tietojesi raporttinäkymän, raportin ja tietojoukon vasemmalla olevassa siirtymisruudussa.
    
    ![](media/service-connect-to-salesforce/pbi_getdatasalesforcedash.png)
 
-Voit muokata tätä koontinäyttöä, jotta näet tiedot juuri haluamallasi tavalla. Voit esittää kysymyksiä Q&A:lla. Voit vaihtoehtoisesti napsauttaa ruutua ja [avata taustalla olevan raportin](consumer/end-user-tiles.md) ja [muokata ruutuja](service-dashboard-edit-tile.md) koontinäytössä.
+Voit muokata tätä raporttinäkymää niin, että näet tiedot juuri haluamallasi tavalla. Voit esittää kysymyksiä Q&A:lla. Voit vaihtoehtoisesti [napsauttaa ruutua](consumer/end-user-tiles.md) avataksesi taustalla olevan raportin ja [muokata tai poistaa raporttinäkymän ruutuja](service-dashboard-edit-tile.md).
 
 **Mitä seuraavaksi?**
 
 * Kokeile [kysymyksen esittämistä koontinäytön yläreunassa olevassa Q&A-ruudussa](consumer/end-user-q-and-a.md).
-* [Muuta koontinäytön ruutuja](service-dashboard-edit-tile.md).
+* [Muokkaa raporttinäkymän ruutua tai poista sellainen](service-dashboard-edit-tile.md)
 * [Valitse jokin ruutu](service-dashboard-tiles.md), jolloin siihen liittyvä raportti avautuu.
-* Tietojoukko on ajastettu päivittymään päivittäin, mutta voit muuttaa päivitysaikataulua tai kokeilla tietojoukon päivittämistä **Päivitä nyt** -toiminnolla haluamanasi ajankohtana
+* Tietojoukko on ajastettu päivittymään päivittäin, mutta voit muuttaa päivitysaikataulua tai kokeilla tietojoukon päivittämistä **Päivitä nyt** -toiminnolla
 
 ## <a name="system-requirements-and-considerations"></a>Järjestelmävaatimukset ja huomioon otettavat seikat
+
 - Yhdistetty tuotannon Salesforce-tiliin, jossa API-ohjelmointirajapinnan käyttö on sallittu
+
 - Käyttöoikeudet on myönnetty Power BI -sovellukselle sisäänkirjautumisen aikana
+
 - Tilillä on käytettävissä riittävästi API-ohjelmointirajapintakutsuja tietojen vastaanottamiseen ja päivittämiseen
-- Päivitystä varten tarvitaan kelvollinen todennustunnus. Varmista, että tuotuna on enintään 5 Salesforce-tietojoukkoa, koska Salesforcessa todennustunnusten enimmäisraja sovellusta kohden on 5.
+
+- Päivitystä varten tarvitaan kelvollinen todennustunnus. Varmista, että tuotuna on enintään viisi Salesforce-tietojoukkoa, koska Salesforcessa todennustunnusten enimmäisraja sovellusta kohden on viisi.
+
 - Salesforce-raporttien ohjelmointirajapinnassa on rajoitus, joka tukee enintään 2 000 riviä tietoja.
 
 
 ## <a name="troubleshooting"></a>Vianmääritys
-Jos kohtaat virheitä, tarkista edellä mainitut vaatimukset. Huomaa myös, että kirjautumista mukautettuun tai eristettyyn toimialueeseen ei tueta tällä hetkellä.
+
+Jos kohtaat virheitä, tarkista edellä mainitut vaatimukset. 
+
+Tällä hetkellä kirjautumista mukautettuun tai eristettyyn toimialueeseen ei tueta.
 
 ### <a name="unable-to-connect-to-the-remote-server-message"></a>”Yhteyden muodostaminen etäpalvelimeen ei onnistu” -sanoma
 
-Jos saat sanoman ”Yhteyden muodostaminen etäpalvelimeen ei onnistu”, kun yrität muodostaa yhteyden Salesforce-tiliin, katso tätä ratkaisua Outsystems-foorumissa: [Salesforce-liittimen loki virhesanomassa: Yhteyden muodostaminen etäpalvelimeen ei onnistu](https://www.outsystems.com/forums/Forum_TopicView.aspx?TopicId=17674&TopicName=log-in-error-message-unable-to-connect-to-the-remote-server&)
+Jos saat sanoman ”Yhteyden muodostaminen etäpalvelimeen ei onnistu”, kun yrität muodostaa yhteyden Salesforce-tiliin, katso seuraava ratkaisu foorumilla: [Salesforce-liittimen kirjautumisvirheilmoitus: Yhteyden muodostaminen etäpalvelimeen ei onnistu](https://www.outsystems.com/forums/Forum_TopicView.aspx?TopicId=17674&TopicName=log-in-error-message-unable-to-connect-to-the-remote-server&)
 
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 [Mikä on Power BI?](power-bi-overview.md)
 
-[Nouda tiedot](service-get-data.md)
+[Power BI -palvelun tietolähteet](service-get-data.md)
 

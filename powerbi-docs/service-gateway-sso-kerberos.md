@@ -10,12 +10,12 @@ ms.subservice: powerbi-gateways
 ms.topic: conceptual
 ms.date: 10/10/2018
 LocalizationGroup: Gateways
-ms.openlocfilehash: eb50d8096c448e1a01533a7d8570e9dcc716ef23
-ms.sourcegitcommit: 8fda7843a9f0e8193ced4a7a0e5c2dc5386059a6
+ms.openlocfilehash: d8cebda3ad0db9fba48804fb8d2dd029c1c07f8d
+ms.sourcegitcommit: aef57ff94a5d452d6b54a90598bd6a0dd1299a46
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58174978"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "66809263"
 ---
 # <a name="use-kerberos-for-single-sign-on-sso-from-power-bi-to-on-premises-data-sources"></a>Kerberoksen käyttäminen kertakirjautumista (SSO) varten Power BI:stä paikallisiin tietolähteisiin
 
@@ -146,7 +146,7 @@ Lopuksi koneessa, joka suorittaa yhdyskäytäväpalvelua (esimerkissämme **PBIE
 
     Napsauta **Ominaisuudet**-kohtaa hiiren kakkospainikkeella ja avaa se. Tarkista tililuettelo. Sen on sisällettävä yhdyskäytävän palvelutili (**PBIEgwTest\GatewaySvc**).
 
-1. Valitse **Järjestelmäoikeuksien osoitus** -kohdan käytäntöluettelosta **Käyttöjärjestelmän osana toimiminen (SeTcbPrivilege)**. Varmista, että yhdyskäytävän palvelutili sisältyy myös tililuetteloon.
+1. Valitse **Järjestelmäoikeuksien osoitus** -kohdan käytäntöluettelosta **Käyttöjärjestelmän osana toimiminen (SeTcbPrivilege)** . Varmista, että yhdyskäytävän palvelutili sisältyy myös tililuetteloon.
 
 1. Käynnistä **Paikallinen tietoyhdyskäytävä** -palveluprosessi uudelleen.
 
@@ -195,9 +195,7 @@ Tämä opas pyrkii olemaan mahdollisimman kattava. Jos olet jo suorittanut joita
 ### <a name="set-up-gsskrb5-on-client-machines-and-the-sap-bw-server"></a>gsskrb5:n määrittäminen asiakaskoneisiin ja SAP BW -palvelimelle
 
 > [!NOTE]
-> `gsskrb5` ei enää aktiivisesti tue SAP:tä. Katso lisätietoja artikkelista [SAP-huomautus 352295](https://launchpad.support.sap.com/#/notes/352295). Huomaa myös, ettei `gsskrb5` salli SSO-yhteyksiä tietoyhdyskäytävästä SAP BW -viestipalvelimiin. Vain yhteydet SAP BW -sovelluspalvelimiin sallitaan.
-
-`gsskrb5` on oltava käytössä sekä asiakaskoneessa että palvelimella SSO-yhteyden muodostamiseksi yhdyskäytävän kautta. Yleistä Crypto-kirjastoa (sapcrypto) ei tällä hetkellä tueta.
+> `gsskrb5` ei enää aktiivisesti tue SAP:tä. Katso lisätietoja artikkelista [SAP-huomautus 352295](https://launchpad.support.sap.com/#/notes/352295). Huomaa myös, ettei `gsskrb5` salli SSO-yhteyksiä tietoyhdyskäytävästä SAP BW -viestipalvelimiin. Vain yhteydet SAP BW -sovelluspalvelimiin sallitaan. `gsskrb5` on oltava käytössä sekä asiakaskoneessa että palvelimella SSO-yhteyden muodostamiseksi yhdyskäytävän kautta. Yleistä Crypto-kirjastoa (sapcrypto) tuetaan nyt SAP BW:llä.
 
 1. Lataa `gsskrb5` - `gx64krb5` [SAP Note 2115486](https://launchpad.support.sap.com/) -huomautuksesta (SAP s-käyttäjä vaaditaan). Varmista, että sinulla on vähintään versio 1.0.11.x tiedostoista gsskrb5.dll ja gx64krb5.dll.
 

@@ -1,5 +1,5 @@
 ---
-title: Sivutettujen raporttien käsittely Raportin suunnittelunäkymässä (esikatselu)
+title: Sivutettujen raporttien käsittely Raportin suunnittelunäkymässä
 description: Raportin muodostimessa olevassa Raportin suunnittelunäkymässä voit luoda sivutettuja raportteja julkaistavaksi Power BI -palvelussa.
 author: maggiesMSFT
 ms.author: maggies
@@ -9,16 +9,16 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: overview
 ms.date: 11/05/2018
-ms.openlocfilehash: 2e9c402c09bc6f504729b8d6057ef5052f489f41
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 76c12cf411f49fda9f9fe042a6d1aafa457bf914
+ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61423338"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "66839528"
 ---
-# <a name="getting-around-in-report-design-view-for-paginated-reports-preview"></a>Sivutettujen raporttien käsittely Raportin suunnittelunäkymässä (esikatselu)
+# <a name="getting-around-in-report-design-view-for-paginated-reports"></a>Sivutettujen raporttien käsittely Raportin suunnittelunäkymässä
 
-Raportin Suunnittelunäkymä Power BI-raportin muodostimessa on rakenteen tilaa, voit julkaista Power BI-palvelun Sivutettujen raporttien luomista varten. Suunnittelualue on Raportin muodostimen keskellä, ja sen ympärillä on valintanauha ja ruutuja. Voit lisätä ja järjestellä raporttikohteita suunnittelualueella. Tässä artikkelissa kerrotaan raporttiresurssien lisäämiseen, valitsemiseen ja järjestämiseen käytetyistä ruuduista ja raporttikohteiden ominaisuuksien muuttamisesta.  
+Raportin muodostimessa olevassa Power BI -raportin suunnittelunäkymässä voit luoda sivutettuja raportteja julkaistavaksi Power BI -palveluun. Suunnittelualue on Raportin muodostimen keskellä, ja sen ympärillä on valintanauha ja ruutuja. Voit lisätä ja järjestellä raporttikohteita suunnittelualueella. Tässä artikkelissa kerrotaan raporttiresurssien lisäämiseen, valitsemiseen ja järjestämiseen käytetyistä ruuduista ja raporttikohteiden ominaisuuksien muuttamisesta.  
 
 ![Raportin suunnittelunäkymä Raportin muodostimessa](media/paginated-reports-report-design-view/power-bi-paginated-report-design-view.png)
 
@@ -109,7 +109,7 @@ Jos raportti on yhdistetty palvelimeen, nykyisen raportin tilarivi näyttää pa
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
-[Mitä ovat sivutetut raportit Power BI Premiumissa? (esikatselu)](paginated-reports-report-builder-power-bi.md) 
+[Mitä ovat sivutetut raportit Power BI Premiumissa?](paginated-reports-report-builder-power-bi.md) 
 
   
   

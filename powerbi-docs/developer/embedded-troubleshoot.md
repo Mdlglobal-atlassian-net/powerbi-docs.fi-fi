@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 02/05/2019
-ms.openlocfilehash: 43cb59853e884b1e3e6a49c328aa3385e88b62fc
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 6e28af5a03fd799f088d428f16621358c2a4f7c5
+ms.sourcegitcommit: e48ef4c88e4a1a0b259bf899d85d520c4edd5751
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "64770485"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66823322"
 ---
 # <a name="troubleshoot-your-embedded-application"></a>Upotetun sovelluksen vianmääritys
 
@@ -80,6 +80,7 @@ Fiddler-sieppaus saattaa vaatia tarkempaa tutkimusta. 403-virheeseen voi olla us
 * Azure AD:n todennustunnus on vanhentunut.
 * Todennettu käyttäjä ei ole ryhmän jäsen (sovelluksen työtila).
 * Todennettu käyttäjä ei ole ryhmän järjestelmänvalvoja (sovelluksen työtila).
+* Valtuutetulla käyttäjällä ei ole oikeuksia. Voit päivittää oikeudet [refreshUserPermissions-ohjelmointirajapinnan](https://docs.microsoft.com/en-us/rest/api/power-bi/users/refreshuserpermissions) kautta
 * Käyttöoikeuksien myöntämisen otsikkoa ei ehkä ole lueteltu oikein. Varmista, että kirjoitusvirheitä ei ole.
 
 Sovelluksen taustatietokanta saattaa joutua päivittämään todennustunnuksen ennen GenerateTokenin kutsumista.
@@ -185,9 +186,9 @@ Käyttäjän lupa on poistettu käytöstä vuokraajalle.
 
 *Myönnä käyttöoikeudet* sovellukseen järjestelmänvalvojana joko koko vuokraajalle tai tietylle käyttäjälle.
 
-### <a name="cs1061-error"></a>CS1061 virhe
+### <a name="cs1061-error"></a>CS1061-virhe
 
-Lataa [Microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/2.22.302111727) Jos kohtaat ”” AuthenticationContext' ei sisällä määritelmää 'AcquireToken' ja ei voi käyttää 'AcquireToken' hyväksymällä ensimmäisen argumentin tyyppi ” AuthenticationContext' löydy (Voit puuttuu using direktiivin tai kokoonpanoviittausta?) ”virhe.
+Lataa [Microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/2.22.302111727), jos saat virheilmoitukset "'AuthenticationContext' ei sisällä 'AcquireToken'-määritettä, eikä löytynyt käytettävissä olevaa 'AcquireToken'-tunnistetta, joka hyväksyisi 'AuthenticationContext'-arvon (puuttuuko using-direktiivi tai kokoonpanoviittaus?).
 
 ## <a name="data-sources"></a>Tietolähteet
 

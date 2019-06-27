@@ -1,6 +1,6 @@
 ---
-title: Sivutetut raportit Power BI-palvelussa tilaaminen
-description: Tässä artikkelissa opit seuraavat asiat mielessä tietoja tilaaminen sivutetut raportit Power BI-palvelussa.
+title: Sivutettujen raporttien tilaaminen Power BI -palvelussa
+description: Tässä artikkelissa kerrotaan, millaiset asiat sinun on pidettävä mielessä tilatessasi sivutettuja raportteja Power BI -palvelussa.
 author: maggiesMSFT
 ms.author: maggies
 manager: kfile
@@ -9,37 +9,37 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 05/24/2019
-ms.openlocfilehash: ccec6658808d94728f2a4f14de67c36da0f51def
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 472606fcb3b823cdcb722c9d8d6421d0ec652d24
+ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66222189"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "66839551"
 ---
-# <a name="subscribe-yourself-and-others-to-paginated-reports-in-the-power-bi-service"></a>Tilaa itsellesi ja muille sivutetut raportit Power BI-palvelussa 
+# <a name="subscribe-yourself-and-others-to-paginated-reports-in-the-power-bi-service"></a>Power BI -palvelun sivutettujen raporttien tilaaminen itsellesi ja muille 
 
-Voit nyt määrittää itsellesi ja muille Sivutettujen raporttien sähköpostitilaukset Power BI-palvelussa. Yleensä prosessi on sama kuin [tilaaminen raportteja ja koontinäyttöjä Power BI-palvelussa](service-report-subscribe.md). Tässä artikkelissa havainnollisesti eroista ja huomioon otettavia seikkoja. 
+Voit nyt määrittää itsellesi ja muille sivutettujen raporttien sähköpostitilauksia Power BI -palvelussa. Prosessi on yleisesti samanlainen kuin [tilatessa raportteja ja raporttinäkymiä Power BI -palvelussa](service-report-subscribe.md). Tässä artikkelissa kerrotaan erot ja huomioitavat asiat. 
 
-Määritetään tilaukset, valitse kuinka usein haluat saada sähköpostiviestit: päivittäin, viikoittain tai tunnittaisten. Jos valitset päivittäin tai viikoittain, voit valita aika haluat suorittaa tilaus. Voit määrittää enintään 24 eri tilauksissa jokaisen raportin päivässä. 
+Kun määrität tilauksia, valitset kuinka usein haluat saada sähköpostiviestejä: päivittäin, viikoittain tai tunneittain. Jos tilaat päivittäin tai viikoittain, voit valita kellonajan, jolloin tilausalgoritmi suoritetaan. Voit määrittää enintään 24 eri tilausta päivää kohden kullekin raportille. 
 
-## <a name="considerations-for-paginated-report-subscriptions"></a>Sivutetun raportin tilauksia huomioitavat seikat 
+## <a name="considerations-for-paginated-report-subscriptions"></a>Huomioitavaa sivutettujen raporttien tilauksessa 
 
-- Toisin kuin koontinäyttöjen tai Power BI-raporttien tilaukset tilauksesi sisältää liitteen koko raportin tulos.  Liitteen seuraavista tuetaan: PDF-Muotoon, PowerPoint-esityksenä (PPTX), Excel-työkirjan (XLSX), Word-asiakirja (DOCX), CSV-tiedosto ja XML.
+- Toisin kuin raporttinäkymien tai Power BI -raporttien tilaukset, tilauksesi liite sisältää raportin täydelliset tulokset.  Tuetut liitetyypit ovat: PDF, PowerPoint-esitys (PPTX), Excel-työkirja (XLSX), Word-asiakirja (DOCX), CSV-tiedosto ja XML.
 
-- Ei sähköpostiviestin teksti raportin ei ole esikatselukuva.  Olemme suunnittelu on valinnainen kohteena raportin ensimmäisen sivun kuva. 
+- Sähköpostiviestin runko ei sisällä raportin esikatselukuvaa.  Suunnitteilla on, että raportin ensimmäinen sivu näytettäisiin valinnaisena kohteena. 
 
-- Suurin raportin liitteen koko on 25 Mt. 
+- Raportin liitteen enimmäiskoko on 25 Mt. 
 
-- Voit tilata muille käyttäjille sivutetut raportit, jotka muodostavat yhteyden tällä hetkellä tuetun tietolähteitä, mukaan lukien Azure Analysis Services- tai Power BI-tietojoukot. Pidä mielessä, raportin liitteen vastaa-käyttöoikeudet tietoja samaan tapaan kuin SQL Server Reporting Services-tänään. 
+- Voit tilata muille käyttäjille sivutettuja raportteja, jotka muodostavat yhteyden mihin tahansa tällä hetkellä tuettuun tietolähteeseen, kuten Azure Analysis Services -palveluihin tai Power BI -tietojoukkoihin. Muista, että raportin liite kuvastaa käyttöoikeuksiesi mukaisia tietoja, aivan kuten SQL Server Reporting Services -palveluissakin. 
 
-- Raporttisivujen tilaukset on sidottu raportin nimi.  
+- Raporttisivujen tilaukset on sidottu raportin nimeen.  
 
-- Sähköpostitilaukset lähetetään käyttäen raportin parametrien oletusarvot. 
+- Sähköpostitilaukset lähetetään käyttäen raportin oletusarvoisia parametriarvoja. 
 
-- Ei ole **jälkeen tietojen päivittämisen** vaihtoehto taajuuden sivutetuissa raporteissa. Saat uusimmat arvot aina taustalla olevaan tietolähteeseen. 
+- Sivutettujen raporttien tapauksessa **Tietojen päivittämisen jälkeen** -vaihtoehto ei ole saatavilla. Saat aina taustalla olevan tietolähteen uusimmat arvot. 
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
-[Tilaa itsellesi ja muille raportteja ja koontinäyttöjä Power BI-palvelussa](service-report-subscribe.md)
+[Tilaa Power BI -palvelun raportteja ja raporttinäkymiä itsellesi ja muille](service-report-subscribe.md)
 
-[Mitä ovat sivutetut raportit Power BI Premiumissa? (esikatselu)](paginated-reports-report-builder-power-bi.md)
+[Mitä ovat sivutetut raportit Power BI Premiumissa?](paginated-reports-report-builder-power-bi.md)

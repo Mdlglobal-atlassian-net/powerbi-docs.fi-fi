@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 09/11/2018
+ms.date: 06/10/2019
 ms.author: mihart
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 163fc60052c4124e7c6cbac60f1486a185c35f17
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 0789d7e77e3ae501cc2aec92c366c9c2608edd52
+ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61394683"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "66839308"
 ---
 # <a name="shape-maps-in-power-bi-desktop-preview"></a>Muotokartat Power BI Desktopissa (esikatselu)
 Luo **Muotokartta**-visualisointi alueiden vertailemiseksi kartalla värejä käyttämällä. Toisin kuin **Kartta**-visualisoinnissa **Muotokartta** ei voi näyttää arvopisteiden tarkkoja maantieteellisiä sijainteja kartalla. Sen sijaan sen päätarkoituksena on näyttää alueiden suhteellisia vertailuja kartalla eri värejä käyttämällä.
@@ -27,15 +27,15 @@ Voit testata **Muotokartta**-ohjausobjektia kartoilla, jotka sisältyvät tähä
 
 **Muotokartta**-visualisointi on esikatseluvaiheessa. Sen täytyy olla käytössä Power BI Desktopissa. Jos haluat ottaa **Muotokartta**-toiminnon käyttöön, valitse **Tiedosto > Asetukset ja vaihtoehdot > Asetukset > Esiversio-ominaisuudet** ja valitse sitten **Muotokartta-visualisointi**-valintaruutu. Sinun täytyy käynnistää Power BI Desktop uudelleen tämän jälkeen.
 
-![](media/desktop-shape-map/shape-map_1a.png)
+![ota muotokartta-esikatseluominaisuus käyttöön](media/desktop-shape-map/power-bi-preview-features.png)
 
-Kun **Muotokartta** on käytössä, napsauta **Visualisoinnit**-ruudun **Muotokartta**-ohjausobjektia.
+Kun **Muotokartta** on käytössä, valitse **Muotokartta**-kuvaketta **Visualisoinnit**-ruudussa.
 
-![](media/desktop-shape-map/shape-map_2.png)
+![valitse muotokartalle malli](media/desktop-shape-map/power-bi-shape-map-template2.png)
 
 Power BI Desktop luo tyhjän **Muotokartta**-visualisoinnin suunnittelualustan.
 
-![](media/desktop-shape-map/shape-map_3.png)
+![tyhjä muotokartta avautuu pohjalle](media/desktop-shape-map/shape-map-3.png)
 
 Voit luoda **muotokartan** seuraavasti:
 
@@ -46,26 +46,23 @@ Voit luoda **muotokartan** seuraavasti:
    > 
    > 
 
-   ![](media/desktop-shape-map/shape-map_3a.png)
+   ![muotokartan koostaminen](media/desktop-shape-map/shape-map-3a.png)
 2. Laajenna **Muotoile**-asetusruudun **Muoto**-kohta ja valitse avattavasta **Vakiokartat**-valikosta näyttääksesi tiedot. Tässä vaiheessa et näe vielä mitään, kuten seuraava kuva osoittaa.
 
-   ![](media/desktop-shape-map/shape-map_3b.png)
+   ![avaa Muotoilu-ruutu ja valitse Muoto](media/desktop-shape-map/shape-map-3b-new.png)
 
    > [!NOTE]
    > Tämän artikkelin lopussa oleva **Aluetunnukset**-osio sisältää kokoelman taulukoista, jotka sisältävät kartta-aluetunnuksia, joilla voit testata **Muotokartta**-visualisointia.
    > 
    > 
-3. Voit sitten muokata karttaprojektiota ja zoomausasetuksia sekä arvopisteiden värejä **Muotoile**-asetusruudussa. Voit muokata myös zoomausasetuksia. Voit esimerkiksi vaihtaa värejä, määrittää vähimmäis- sekä enimmäisarvot ja niin edelleen.
-
-   ![](media/desktop-shape-map/shape-map_3d.png)
-4. Voit myös lisätä luokkatietojen sarakkeen **Selite**-säilöön ja luokitella kartta-alueet luokkien perusteella.
+3. Sen jälkeen voit muokata karttaa muotoiluvaihtoehdoilla, kuten **Oletusväri**, **Zoomaus** ja paljon muuta. Voit myös lisätä luokkatietojen sarakkeen **Selite**-säilöön ja luokitella kartta-alueet luokkien perusteella.
 
 ## <a name="use-custom-maps"></a>Mukautettujen karttojen käyttäminen
 Voit käyttää **Muotokartta**-visualisoinnin kanssa mukautettuja karttoja, kunhan ne ovat **TopoJSON**-muodossa. Jos karttasi on muussa muodossa, voit muuntaa *shapefile*- tai *GeoJSON*-karttasi **TopoJSON**-muotoon verkkotyökaluilla, esimerkiksi [**MapShaper**](http://mapshaper.org/)-työkalulla.
 
 Jos haluat käyttää **TopoJSON**-karttatiedostoasi, lisää Muotokartta-visualisointi raporttiisi ja lisää joitain tietoja *Sijainti*- sekä *Värikylläisyys*-säilöihin. Avaa sitten **Visualisoinnit**-ruudun **Muotoile**-osio (kuten kohdassa (1) seuraavassa kuvassa), laajenna **Muoto**-osio ja valitse **+ Lisää kartta**.
 
-![](media/desktop-shape-map/shape-map_6.png)
+![avaa Muotoilu-ruutu ja valitse Lisää kartta](media/desktop-shape-map/shape-map-6-new.png)
 
 ## <a name="sample-custom-map"></a>Esimerkki mukautetusta kartasta
 *Offices of the United States Attorneys* julkaisee joka vuosi vuosikertomuksen, joka sisältää tiedot sen oikeusprosesseista ja oikeusjutuista.  Kaikki sen julkaisemat raportit löytyvät alla annetun linkin avulla.
@@ -74,11 +71,11 @@ https://www.justice.gov/usao/resources/annual-statistical-reports
 
 Koska Yhdysvalloissa osavaltiot voidaan jakaa useisiin tuomiopiireihin, meidän täytyy käyttää mukautettua muotokarttaa.  Kun tuomme **TopoJSON**-kartan Yhdysvaltain oikeuslaitoksen tuomiopiireistä **Power BI Desktopiin**, voimme visualisoida kunkin tuomiopiirin piirisyyttäjän toimiston vuosittaiset tiedot.  Alla olevassa kuvassa näkyy esimerkki tästä kartasta.
 
-![](media/desktop-shape-map/shape-map_7a.png)
+![mukautettu muotokarttaa](media/desktop-shape-map/shape-map-7a.png)
 
 Voit tehdä mielenkiintoisia asioita myös yksittäisten osavaltioiden kartoilla. Lisäksi voit näyttää enemmän tietoja sen perusteella, montako tuomiopiiriä osavaltioon kuuluu. 
 
-![](media/desktop-shape-map/shape-map_7b.png)
+![Texas-muotokartta](media/desktop-shape-map/shape-map-7b.png)
 
 Jos haluat kokeilla tätä tietojoukkoa ja visualisointia, voit ladata alkuperäisen PBIX-tiedoston, jolla tämä raportti on luotu. Voit ladata sen seuraavan linkin avulla.
 
@@ -87,11 +84,11 @@ Jos haluat kokeilla tätä tietojoukkoa ja visualisointia, voit ladata alkuperä
 ## <a name="getting-map-data"></a>Karttatietojen hakeminen
 Voit hakea nopeasti tietoja malliin, jotta voit testata **muotokarttaa**. Voit tehdä tämän kopioimalla jonkin tämän artikkelin lopussa olevista taulukoista ja valitsemalla sitten **Aloitus**-valintanauhasta **Anna tiedot**.
 
-![](media/desktop-shape-map/shape-map_4.png)
+![Valitse Desktopissa Anna tiedot](media/desktop-shape-map/shape-map-4-new.png)
 
 Jos tiedoissa on useita sarakkeita, sinun täytyy liittää tiedot editorilla (esimerkiksi Excelillä) ja kopioida sitten kukin tietosarake yksitellen. Tämän jälkeen voit liittää tiedot Power BI Desktopiin. Ylin rivi tunnistetaan automaattisesti otsikkoriviksi.
 
-![](media/desktop-shape-map/shape-map_5.png)
+![Luo taulukko -ruutu](media/desktop-shape-map/shape-map-5.png)
 
 Voit lisätä uuden sarakkeen kirjoittamalla uuden sarakkeen nimen (tyhjään sarakkeeseen oikealla) ja lisäämällä arvot kuhunkin soluun – aivan kuten Excelissä. Kun olet valmis, valitse **Lataa**. Tämä lisää tiedot Power BI Desktopin tietomalliin.
 

@@ -6,15 +6,15 @@ ms.author: rkarlin
 manager: kfile
 ms.reviewer: nishalit
 ms.service: powerbi
-ms.subservice: powerbi - developer
+ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 01/11/2019
-ms.openlocfilehash: 31222828d1a12a5f46fd7c04b3aa32240ff35736
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 56b417cb60f7c149b926f4307be0a50b33c278d6
+ms.sourcegitcommit: 81ba3572531cbe95ea0b887b94e91f94050f3129
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61374656"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66751032"
 ---
 # <a name="manage-multi-tenancy-with-power-bi-embedded-analytics"></a>Usean vuokraajan hallinta Power BI Embeddedin analyysitoiminnoilla
 
@@ -142,9 +142,9 @@ Sovelluskehittäjä voi lisätä eristystä määrittämällä kullekin työtila
 
 ### <a name="scalability"></a>Skaalattavuus
 
-Tämän mallin yhtenä etuna on, että kun tiedot erotellaan useisiin tietojoukkoihin kutakin vuokraajaa varten, voidaan välttää [yksittäisen tietojoukon kokorajoitukset](https://docs.microsoft.com/power-bi/service-premium-large-datasets) (kapasiteetti tällä hetkellä 10 Gt). Kun kapasiteetti on ylikuormittunut, se voi poistaa käyttämättömät tietojoukot Vapauta muistia aktiivisia tietojoukkoja. Tämä ei ole mahdollista yksittäisen suuren tietojoukon kanssa. Jos käytössä on useita tietojoukkoja, vuokraajia voidaan tarvittaessa myös erotella useisiin Power BI -kapasiteetteihin.
+Tämän mallin yhtenä etuna on, että kun tiedot erotellaan useisiin tietojoukkoihin kutakin vuokraajaa varten, voidaan välttää [yksittäisen tietojoukon kokorajoitukset](https://docs.microsoft.com/power-bi/service-premium-large-datasets) (kapasiteetti tällä hetkellä 10 Gt). Kun kapasiteetti on ylikuormittunut, siitä voidaan poistaa käyttämättömiä tietojoukkoja, mikä vapauttaa muistia aktiivisia tietojoukkoja varten. Tämä ei ole mahdollista yksittäisen suuren tietojoukon kanssa. Jos käytössä on useita tietojoukkoja, vuokraajia voidaan tarvittaessa myös erotella useisiin Power BI -kapasiteetteihin.
 
-Näistä eduista huolimatta tulee aina ottaa huomioon, millaisen laajuuden SaaS-sovellus saattaa tavoittaa tulevaisuudessa. Vastaan saattaa tulla rajoituksia esimerkiksi sen suhteen, montako artefaktia voi hallita. Lisätietoja aiheesta on edempänä tässä artikkelissa käyttöönoton [rajoitusten](#summary-comparison-of-the-different-approaches) yhteydessä. Kapasiteetin SKU: N käyttää esittelee, että tietojoukot tarvitsevat mahtumaan, kuinka monta päivitykset voidaan suorittaa aikaa ja tietojen päivityksiä enimmäistaajuus muistin koon rajoitettu. Jos hallittavana on satoja tai tuhansia tietojoukkoja, testaamista suositellaan. On suositeltavaa ottaa huomioon myös keskimääräinen käyttö ja enimmäiskäyttö sekä vuokraajat, joilla on suuria tietojoukkoja tai erilaisia käyttömalleja ja joita tulee hallita eri tavalla kuin muita vuokraajia.
+Näistä eduista huolimatta tulee aina ottaa huomioon, millaisen laajuuden SaaS-sovellus saattaa tavoittaa tulevaisuudessa. Vastaan saattaa tulla rajoituksia esimerkiksi sen suhteen, montako artefaktia voi hallita. Lisätietoja aiheesta on edempänä tässä artikkelissa käyttöönoton [rajoitusten](#summary-comparison-of-the-different-approaches) yhteydessä. SKU:n käyttämä kapasiteetti määrittää rajoituksia sille, millaiseen muistimäärään tietojoukkojen tulee mahtua, montako päivitystä voidaan suorittaa samanaikaisesti ja kuinka usein tietoja voidaan enintään ladata uudelleen. Jos hallittavana on satoja tai tuhansia tietojoukkoja, testaamista suositellaan. On suositeltavaa ottaa huomioon myös keskimääräinen käyttö ja enimmäiskäyttö sekä vuokraajat, joilla on suuria tietojoukkoja tai erilaisia käyttömalleja ja joita tulee hallita eri tavalla kuin muita vuokraajia.
 
 ### <a name="automation--operational-complexity"></a>Automaatio ja toiminnallinen monimutkaisuus
 

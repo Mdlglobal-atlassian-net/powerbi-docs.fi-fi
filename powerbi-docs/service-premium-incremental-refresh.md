@@ -1,21 +1,21 @@
 ---
 title: Lisäävää päivitys Power BI Premiumissa
 description: Opi ottamaan käyttöön erittäin suuria tietojoukkoja Power BI Premium -palvelussa.
-author: christianwade
+author: mgblythe
 manager: kfile
 ms.reviewer: kayu
 ms.service: powerbi
-ms.component: powerbi-admin
+ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 05/10/2019
-ms.author: chwade
+ms.author: mblythe
 LocalizationGroup: Premium
-ms.openlocfilehash: b338044433d1d87f07ab38d64c15974a1cfaa173
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: ee5ec87e04517ce93589b371e97116acbcb02e87
+ms.sourcegitcommit: 58c649ec5fd2447a0f9ca4c4d45a0e9fff2f1b6a
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65536133"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67408577"
 ---
 # <a name="incremental-refresh-in-power-bi-premium"></a>Lisäävää päivitys Power BI Premiumissa
 
@@ -41,7 +41,7 @@ Mahdollisesti miljardeja rivejä sisältävät suuret tietojoukot eivät ehkä m
 
 #### <a name="rangestart-and-rangeend-parameters"></a>RangeStart- ja RangeEnd-parametrit
 
-Jos haluat käyttää lisäävää päivitystä, tietojoukot suodatetaan Power Queryn päivämäärä/aikaparametrien avulla varatuilla, kirjainkooltaan merkitsevillä nimillä **RangeStart** ja **RangeEnd**. Näiden parametrien avulla tuodut tiedot suodatetaan Power BI Desktopiin ja tiedot jaetaan myös dynaamisesti alueisiin, kun ne on julkaistu Power BI -palvelussa. Palvelu korvaa parametriarvot kunkin osion suodattamiseksi. Julkaisun jälkeen Power BI -palvelu ohittaa parametrin arvot automaattisesti. Niitä ei tarvitse määrittää palvelun tietojoukon asetuksissa. Julkaisun jälkeen Power BI -palvelu ohittaa parametrin arvot automaattisesti. 
+Jos haluat käyttää lisäävää päivitystä, tietojoukot suodatetaan Power Queryn päivämäärä/aikaparametrien avulla varatuilla, kirjainkooltaan merkitsevillä nimillä **RangeStart** ja **RangeEnd**. Näiden parametrien avulla tuodut tiedot suodatetaan Power BI Desktopiin ja tiedot jaetaan myös dynaamisesti alueisiin, kun ne on julkaistu Power BI -palvelussa. Palvelu korvaa parametriarvot kunkin osion suodattamiseksi. Niitä ei tarvitse määrittää palvelun tietojoukon asetuksissa. Julkaisun jälkeen Power BI -palvelu ohittaa parametrin arvot automaattisesti.
 
 Voit määrittää parametreille oletusarvot valitsemalla Power Query -editorissa **Parametrien hallinta**.
 
@@ -163,4 +163,4 @@ in
 
 ## <a name="limitations"></a>Rajoitukset
 
-Tällä hetkellä- [yhdistelmämallit](desktop-composite-models.md), lisäävää päivitystä tuetaan SQL-Oracle- ja Teradata-tietolähteisiin vain.
+Tällä hetkellä [yhdistelmämallien](desktop-composite-models.md), asteittaista päivittämistä tuetaan vain SQL-, Oracle- ja Teradata-tietolähteillä.

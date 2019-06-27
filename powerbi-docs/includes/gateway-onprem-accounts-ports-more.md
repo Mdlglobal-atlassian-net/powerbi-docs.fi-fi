@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: e24218e2a465619fdfbfc279d3cc45370202dd6e
+ms.sourcegitcommit: aef57ff94a5d452d6b54a90598bd6a0dd1299a46
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "66814796"
+---
 ## <a name="sign-in-account"></a>Kirjautumistili
 
 Käyttäjät kirjautuvat sisään joko työpaikan tai oppilaitoksen tilillä. Tämä tili on käyttäjän **organisaatiotili**. Jos olet tilannut Office 365 -tarjooman etkä ole antanut todellista työsähköpostiasi, tilisi voi näyttää tältä: nancy@contoso.onmicrosoft.com. Tilisi on tallennettu vuokraajaan Azure Active Directoryssa (AAD). Useimmissa tapauksissa Azure Active Directory -tilin täydellinen käyttäjätunnus vastaa sähköpostiosoitetta.
@@ -15,33 +23,40 @@ Jos kohtaat todentamisongelmia välityspalvelimen kanssa, yritä vaihtaa Windows
 
 Yhdyskäytävä luo lähtevän yhteyden Azuren palveluväylään. Se viestii lähtevien porttien kautta: TCP 443 (oletusarvoinen), 5671, 5672, 9350–9354.  Yhdyskäytävä ei vaadi saapuvia portteja.
 
-On suositeltavaa, että lisäät tietoalueesi IP-osoitteet sallittujen luetteloon palomuurin asetuksissa. Voit ladata viikoittain päivitettävän [Microsoft Azuren palvelinkeskusten IP-osoiteluettelon](https://www.microsoft.com/download/details.aspx?id=41653). Yhdyskäytävä vaihtaa tietoja Azuren palveluväylän kanssa käyttämällä IP-osoitetta ja täydellistä toimialuenimeä (FQDN). Jos pakotat yhdyskäytävän vaihtamaan tietoja HTTPS-yhteyden kautta, se käyttää ainoastaan FQDN:ää ja tietojen vaihtoa IP-osoitteita käyttämällä ei tapahdu lainkaan.
+Suosittelemme, että lisäät tietoalueesi IP-osoitteet sallittujen luetteloon palomuurin asetuksissa. Voit ladata viikoittain päivitettävän [Microsoft Azuren palvelinkeskusten IP-osoiteluettelon](https://www.microsoft.com/download/details.aspx?id=41653). Voit myös noutaa tarvittavien porttien luettelon suorittamalla [Verkkoporttien testauksen](../service-gateway-onprem-tshoot.md#network-ports-test) paikallisen tietoyhdyskäytäväsovelluksen kautta. Yhdyskäytävä vaihtaa tietoja Azuren palveluväylän kanssa käyttämällä IP-osoitetta ja täydellistä toimialuenimeä (FQDN). Jos pakotat yhdyskäytävän vaihtamaan tietoja HTTPS-yhteyden kautta, se käyttää ainoastaan FQDN:ää ja tietojen vaihtoa IP-osoitteita käyttämällä ei tapahdu lainkaan.
+
 
 > [!NOTE]
 > Azuren palvelinkeskusten IP-osoiteluettelossa käytetään CIDR-merkintätapaa. Esimerkiksi 10.0.0.0/24 ei tarkoita 10.0.0.0–10.0.0.24. Lue lisätietoja [CIDR-merkintätavasta](http://whatismyipaddress.com/cidr).
 
 Tässä on luettelo yhdyskäytävän käyttämistä täysin valtuutetuista toimialuenimistä.
 
-| Toimialuenimet | Lähtevien pyyntöjen portit | Kuvaus |
-| --- | --- | --- |
-| *. download.microsoft.com |80 |Asennusohjelman lataamisessa käytettävä HTTP. |
-| *.powerbi.com |443 |HTTPS |
-| *.analysis.windows.net |443 |HTTPS |
-| *.login.windows.net |443 |HTTPS |
-| *.servicebus.windows.net |5671–5672 |Advanced Message Queuing Protocol (AMQP) |
-| *.servicebus.windows.net |443, 9350–9354 |Kuuntelutoiminnot Microsoft Azuren palveluväylässä käyttäen TCP-protokollaa (edellyttää 443:n käyttöoikeuksien hallinnan tunnuksen hankintaa varten) |
-| *.frontend.clouddatahub.net |443 |HTTPS |
-| *.core.windows.net |443 |HTTPS |
-| login.microsoftonline.com |443 |HTTPS |
-| *.msftncsi.com |443 |Käytetään Internet-yhteyden testaamiseen, jos Power BI -palvelu ei saa yhteyttä yhdyskäytävään. |
-| *.microsoftonline-p.com |443 |Käytetään todentamiseen määritysten mukaan. |
+| Toimialuenimet | Lähtevien pyyntöjen portit | Kuvaus |  |
+|-----------------------------|----------------|--------------------------------------------------------------------------------------------------------------------|---|
+| *. download.microsoft.com | 80 | Käytetään asennusohjelman lataamiseen. Tätä käytetään myös tietoyhdyskäytäväsovelluksen version ja yhdyskäytävän alueen tarkistamiseen. |  |
+| *.powerbi.com | 443 | Käytetään asianmukaisten Power BI -klusterien tunnistamiseen. |  |
+| *.analysis.windows.net | 443 | Käytetään asianmukaisten Power BI -klusterien tunnistamiseen. |  |
+| *.login.windows.net | 443 | Käytetään tietoyhdyskäytäväsovelluksen todennukseen Azure Active Directoryn / OAuth2:n kautta. |  |
+| *.servicebus.windows.net | 5671–5672 | Käytetään Advanced Message Queuing Protocol (AMQP) -protokollan kanssa. |  |
+| *.servicebus.windows.net | 443, 9350–9354 | Microsoft Azuren palveluväylän (TCP) kuuntelijoiden käytössä (edellyttää 443:n käyttöoikeuksien valvontatunnuksen hankintaa varten). |  |
+| *.frontend.clouddatahub.net | 443 | Vanhentunut – ei enää tarpeellinen. Poistetaan ohjeista tulevaisuudessa. |  |
+| *.core.windows.net | 443 | Käytetään Power BI:n tietovuossa tietojen tallentamiseksi Azure Data Lakeen. |  |
+| login.microsoftonline.com | 443 | Käytetään tietoyhdyskäytäväsovelluksen todennukseen Azure Active Directoryn / OAuth2:n kautta. |  |
+| *.msftncsi.com | 443 | Käytetään testattaessa internetyhteyttä ja sitä, saako Power BI -palvelu yhteyden yhdyskäytävään. |  |
+| *.microsoftonline-p.com | 443 | Käytetään tietoyhdyskäytäväsovelluksen todennukseen Azure Active Directoryn / OAuth2:n kautta. |  |
+| | |
 
 > [!NOTE]
-> Liikenne visualstudio.comiin tai visualstudioonline.comiin ovat sovelluksen merkityksellisiä tietoja, eivätkä ne ole pakollisia yhdyskäytävän funktiolle.
+> Kun yhdyskäytävä on asennettu ja rekisteröity, vain Azuren palveluväylän edellyttämät portit/IP-osoitteet vaaditaan (yllä servicebus.windows.net). Voit noutaa tarvittavien porttien luettelon suorittamalla [Verkkoporttien testauksen](../service-gateway-onprem-tshoot.md#network-ports-test) paikallisen tietoyhdyskäytäväsovelluksen kautta.
 
 ## <a name="forcing-https-communication-with-azure-service-bus"></a>HTTPS-tiedonsiirron pakottaminen Azuren palveluväylän kanssa
 
-Voit pakottaa yhdyskäytävän vaihtamaan tietoja Azuren palveluväylän kanssa HTTPS-yhteydellä suoran TCP-yhteyden sijaan. HTTPS:n käyttämisellä voi olla vaikutusta suorituskykyyn. Voit tehdä tämän muokkaamalla *Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config* -tiedostoa muuttamalla arvon `AutoDetect` arvoksi `Https`suoraan tämän kappaleen jälkeen esitetyn koodikatkelma mukaisesti. Tiedosto löytyy (oletusarvoisesti) sijainnista *C:\Program Files\On-premises data gateway*.
+Voit pakottaa yhdyskäytävän vaihtamaan tietoja Azuren palveluväylän kanssa HTTPS-yhteydellä suoran TCP-yhteyden sijaan.
+
+> [!NOTE]
+> Kesäkuun 2019 julkaisusta eteenpäin uudet asennukset (ei koske päivityksiä) käyttävät oletuksena HTTPS-protokollaa TCP:n sijaa Azuren palveluväylän suositusten mukaisesti.
+
+Voit pakottaa HTTPS-yhteyden käyttöön muokkaamalla *Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config* -tiedostoa muuttamalla arvon `AutoDetect` arvoksi `Https`suoraan tämän kappaleen jälkeen esitetyn koodikatkelman mukaisesti. Tiedosto löytyy (oletusarvoisesti) sijainnista *C:\Program Files\On-premises data gateway*.
 
 ```xml
 <setting name="ServiceBusSystemConnectivityModeString" serializeAs="String">

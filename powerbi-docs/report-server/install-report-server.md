@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 05/22/2019
-ms.openlocfilehash: 02104acdbff6e6a1a4e785553b689a3e74183a4d
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: c0e3666a5838ae8e3849f5defd3858c9ea205a42
+ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66187736"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "66839436"
 ---
 # <a name="install-power-bi-report-server"></a>Power BI -raporttipalvelimen asentaminen
 
@@ -22,11 +22,11 @@ Opi asentamaan Power BI -raporttipalvelin.
 
 ## <a name="download-power-bi-report-server"></a>Power BI -raporttipalvelimen lataaminen
 
-[Lataa Power BI-raporttipalvelin](https://www.microsoft.com/download/details.aspx?id=56722) Microsoft Download Centeristä.
+[Lataa Power BI -raporttipalvelin](https://www.microsoft.com/download/details.aspx?id=56722) Microsoft Download Centeristä.
 
-On myös maksuttoman kokeiluversion. Valitse [paikallinen raportointi Power BI-raporttipalvelimella](https://powerbi.microsoft.com/report-server/) sivulla **Lataa ilmainen kokeiluversio**.
+Saatavana on myös maksuton kokeiluversio. Valitse [Paikallinen raportointi Power BI -raporttipalvelimella](https://powerbi.microsoft.com/report-server/) -sivulta **Lataa ilmainen kokeiluversio**.
 
-## <a name="before-you-install"></a>Ennen kuin asennat
+## <a name="before-you-install"></a>Ennen asentamista
 
 Microsoft suosittelee ennen Power BI -raporttipalvelimen asentamista tutustumaan [Power BI -raporttipalvelimen asentamisen laitteisto- ja ohjelmistovaatimuksiin](system-requirements.md).
 
@@ -35,12 +35,12 @@ Microsoft suosittelee ennen Power BI -raporttipalvelimen asentamista tutustumaan
 
 ### <a name="power-bi-report-server-product-key"></a>Power BI -raporttipalvelimen tuoteavain
 
-Saat Power BI-raporttipalvelimen tuoteavain kaksi eri lähteistä:
+Voit noutaa Power BI -raporttipalvelimen tuoteavaimen kahdesta eri lähteestä:
 
 - Power BI Premium
 - SQL Server Enterprise Software Assurance (SA)
 
-Lue lisää tiedot.
+Lisätietoja on alla.
 
 #### <a name="power-bi-premium"></a>Power BI Premium
 
@@ -75,8 +75,8 @@ SQL Server -tietokantamoduulin palvelimen ei tarvitse olla käytettävissä asen
 
     ![Versio 2](media/install-report-server/pbireportserver-choose-edition2.png)
 
-    Anna tuoteavain, sait Power BI-palvelusta tai Volyymikäyttöoikeuskeskuksesta muussa tapauksessa. Katso lisätietoja tuoteavaimen [ennen kuin asennat](#before-you-install) yllä.
-4. Lue ja hyväksy käyttöoikeussopimuksen ehdot ja määräykset ja valitse sitten **seuraava**.
+    Muussa tapauksessa anna tuoteavain, jonka sait joko Power BI -palvelusta tai Volyymikäyttöoikeuspalvelukeskuksesta. Lisätietoja tuoteavaimen hankkimisesta on yllä olevassa [Ennen asennusta](#before-you-install) -osassa.
+4. Lue ja hyväksy käyttöoikeussopimuksen ehdot ja valitse sitten **Seuraava**.
 
     ![Käyttöoikeusehdot](media/install-report-server/pbireportserver-eula.png)
 5. Tietokantamoduulin on oltava käytettävissä raporttipalvelimen tietokannan tallennusta varten. Valitse **Seuraava** asentaaksesi vain raporttipalvelimen.

@@ -1,43 +1,43 @@
 ---
-title: Automaattinen asennus Power BI-sovellukset, kun organisaatiolle tarkoitettu upotus
-description: Lue, miten Asenna Power BI-sovellukset automaattisesti, kun avulla organisaatiolle.
+title: Power BI -sovellusten automaattinen asennus, kun upotat ne organisaatiosi käyttöön
+description: Lue, miten voit asentaa Power BI -sovellukset automaattisesti, kun upotat ne organisaatiosi käyttöön.
 ms.subservice: powerbi-developer
 author: rkarlin
 ms.author: rkarlin
 manager: kfile
-ms.topic: how-to
+ms.topic: conceptual
 ms.service: powerbi
 ms.custom: ''
 ms.date: 04/16/2019
-ms.openlocfilehash: bb9ba5531c2a23f15ccbf98261e246ab7080aecb
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 50040731ec5602dc38d9d323fe916e4e2e239d27
+ms.sourcegitcommit: 81ba3572531cbe95ea0b887b94e91f94050f3129
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61376198"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66751058"
 ---
-# <a name="auto-install-power-bi-apps-when-embedding-for-your-organization"></a>Asenna automaattisesti Power BI-sovellukset, kun organisaatiolle tarkoitettu upotus
+# <a name="auto-install-power-bi-apps-when-embedding-for-your-organization"></a>Power BI -sovellusten automaattinen asennus, kun upotat ne organisaatiosi käyttöön
 
-Jos haluat upottaa sovelluksen sisältöä, käyttäjälle, joka on upottaminen on oltava [sovelluksen käyttöoikeus](../service-create-distribute-apps.md). Jos sovellus on asennettu käyttäjälle, sitten upottaminen toimii sujuvasti. Jos haluat lisätietoja, katso [upottaa raporteissa tai raporttinäkymissä sovelluksesta](embed-from-apps.md). Se on mahdollista powerbi.comissa, johon kaikki sovellukset voidaan määrittää [asennetaan automaattisesti](https://powerbi.microsoft.com/blog/automatically-install-apps/). Tämä toiminto tehdään vuokraajan tasolla. lisäksi koskee kaikkia sovelluksia.
+Jos haluat upottaa sovelluksen sisältöä, upottavalla käyttäjällä on oltava [sovelluksen käyttöoikeus](../service-create-distribute-apps.md). Jos sovellus on asennettu käyttäjälle, upottaminen toimii saumattomasti. Katso lisätiedot [Sovelluksen raporttien ja raporttinäkymien upottamisesta](embed-from-apps.md). PowerBI.comissa voit määrittää kaikki sovellukset [asennettavaksi automaattisesti](https://powerbi.microsoft.com/blog/automatically-install-apps/). Tämä toiminto tehdään vuokraajan tasolla ja se koskee kaikkia sovelluksia.
 
-## <a name="auto-install-app-on-embedding"></a>Automaattinen asennus sovelluksen upottaminen
+## <a name="auto-install-app-on-embedding"></a>Sovelluksen automaattinen asennus upotettaessa
 
-Jos käyttäjällä on käyttöoikeus sovellukseen, mutta sovellus ei ole asennettu, upottaminen epäonnistuu. Jotta voit välttää nämä virheet upottamiseen sovelluksesta, voit sallia automaattinen asennus sovelluksen upottaminen yhteydessä. Tämä toiminto tarkoittaa sitä, jos käyttäjä yrittää Upota sovellus ei ole asennettu, se asennetaan automaattisesti puolestasi. Joten haluamasi sisältö noutaa upotettu välittömästi, käyttäjän tasainen tuloksena.
+Jos käyttäjällä on sovelluksen käyttöoikeus, mutta sovellusta ei ole asennettu, upottaminen epäonnistuu. Voit välttää nämä sovelluksesta upottamisen virheet, sallimalla sovelluksen automaattisen asennuksen upotettaessa. Tämä toiminto tarkoittaa sitä, että jos käyttäjä yrittää upottaa sisältöä sovelluksesta, jota ei ole asennettu, se asennetaan automaattisesti puolestasi. Haluamasi sisältö upotetaan välittömästi, jolloin käyttökokemus on saumaton.
 
-## <a name="embed-for-power-bi-users-user-owns-data"></a>Upota Power BI-käyttäjille (käyttäjä omistaa tiedot)
+## <a name="embed-for-power-bi-users-user-owns-data"></a>Upottaminen Power BI -käyttäjille (käyttäjä omistaa tiedot)
 
-Jotta sovellusten asentaminen automaattisesti käyttäjille, sinun on annettava sovelluksesi 'Sisällön Luo' käyttöoikeutta kun [rekisteröidään sovelluksesi](register-app.md#register-with-the-power-bi-application-registration-tool), tai lisätä sen, jos sovellus on jo rekisteröity.
+Jotta voit sallia sovellusten automaattisen asennuksen käyttäjille, sinun on annettava sovelluksellesi sisällön luontioikeudet [rekisteröidessäsi sovellusta](register-app.md#register-with-the-power-bi-application-registration-tool). Jos sovellus on jo rekisteröity, voit lisätä oikeudet jälkikäteen.
 
-![Rekisteröi sovellus luo sisältö](media/embed-auto-install-app/register-app-create-content.png)
+![Rekisteröity sovellus luo sisältöä](media/embed-auto-install-app/register-app-create-content.png)
 
-Seuraavaksi sinun on annettava liitetty URL-osoite app-tunnus. Anna Sovellustunnus sovelluksen luojan ensin täytyy asentaa sovelluksen ja sitten jollakin tuetussa [Power BI Rest-Ohjelmointirajapinnan](https://docs.microsoft.com/rest/api/power-bi/) kutsujen - [Hanki raportit](https://docs.microsoft.com/rest/api/power-bi/reports/getreports) tai [Hanki koontinäytöt](https://docs.microsoft.com/rest/api/power-bi/dashboards/getdashboards). Sovelluksen luojan on toteutettava REST-Ohjelmointirajapinnan vastauksesta liitetty URL-osoite. Sovellustunnus näkyy URL-osoite, jos sisältö on sovelluksesta.  Kun sinulla on liitetty URL-osoite, voit käyttää upottaa säännöllisesti.
+Seuraavaksi sinun on annettava liitetyn URL-osoitteen sovellustunnus. Sovelluksen luojan täytyy ensin asentaa sovellus ja käyttää sitten jotakin tuetuista [Power BI:n Rest-ohjelmointirajapinnan](https://docs.microsoft.com/rest/api/power-bi/) kutsuista – [Nouda raportit](https://docs.microsoft.com/rest/api/power-bi/reports/getreports) tai [Nouda raporttinäkymät](https://docs.microsoft.com/rest/api/power-bi/dashboards/getdashboards). Sovelluksen luojan on otettava URL-osoite REST-ohjelmointirajapinnan vastauksesta. Sovellustunnus näkyy URL-osoitteessa, jos sisältö on peräisin sovelluksesta.  Kun sinulla on upotuksen URL-osoite, voit käyttää sitä säännölliseen upottamiseen.
 
-## <a name="secure-embed"></a>Suojaa upottaa
+## <a name="secure-embed"></a>Suojattu upotus
 
-Jos haluat käyttää sovellusten automaattinen asennus, sovelluksen luojan on ensin Asenna sovellus ja siirry siirtymällä PowerBI.com sovelluksen, raportin ja hanki linkki tavallista deterministisesti. Kaikki muut käyttäjät, joilla on käyttöoikeus sovellukseen, joka käyttää linkkiä voit upottaa raportin.
+Jos haluat käyttää sovellusten automaattista asennusta, sovelluksen luojan on ensin asennettava sovellus ja siirryttävä sitten sovellukseen PowerBI.comissa, siirryttävä raporttiin ja noutaa linkki normaalisti. Kaikki muut käyttäjät, joilla on sovelluksen käyttöoikeus ja jotka voivat käyttää linkkiä, voivat upottaa raportin.
 
 ## <a name="considerations-and-limitations"></a>Huomioitavat asiat ja rajoitukset
 
-* Voit upottaa vain raportteja ja koontinäyttöjä tämän skenaarion.
+* Voit upottaa vain raportteja ja koontinäyttöjä tässä skenaariossa.
 
-* Tämä ominaisuus on tällä hetkellä tueta sovellus omistaa tiedot ja SharePoint upottaa skenaarioita.
+* Tätä ominaisuutta ei tällä hetkellä tueta tilanteissa, joissa sovellus omistaa tietoja tai joissa yritetään upottaa SharePoint-sisältöä.
