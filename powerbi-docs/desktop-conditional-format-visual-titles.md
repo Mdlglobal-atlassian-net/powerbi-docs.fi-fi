@@ -12,7 +12,7 @@ ms.author: davidi
 LocalizationGroup: Connect to data
 ms.openlocfilehash: b90ef66d2c118a70f1b18ed4fe302ce1db23e45c
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: fi-FI
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "64769751"
@@ -55,9 +55,9 @@ Nämä ovat vain muutama erityyppinen avulla voit luoda dynaamisia, lausekepohja
 
 Kun olet luonut luot mallisi kentän DAX-lauseke, sinun on käytettävä visualisoinnin otsikon.
 
-Valitse kenttä ja käyttää sitä, siirry **visualisoinnit** ruudussa. - **Muodossa** alueella **otsikko** näyttämään visualisoinnin otsikon asetukset. 
+Valitse kenttä ja käyttää sitä, siirry **visualisoinnit** ruudussa. \- **Muodossa** alueella **otsikko** näyttämään visualisoinnin otsikon asetukset. 
 
-Kun napsautat hiiren kakkospainikkeella **otsikkoteksti**, näytölle tulee kontekstivalikko, jonka avulla voit valita ***fx * ehdollisen muotoilun**. Kun valitset valikosta, **otsikkoteksti** valintaikkuna tulee näkyviin. 
+Kun napsautat hiiren kakkospainikkeella **otsikkoteksti**, näytölle tulee kontekstivalikko, jonka avulla voit valita ***fx* ehdollisen muotoilun**. Kun valitset valikosta, **otsikkoteksti** valintaikkuna tulee näkyviin. 
 
 ![Näyttökuva-otsikon teksti-valintaikkuna](media/desktop-conditional-formatting-visual-titles/expression-based-title-02b.png)
 
