@@ -1,279 +1,327 @@
 ---
 title: Tietojen päivittäminen Power BI:ssä
-description: Tietojen päivittäminen Power BI:ssä
+description: Tässä artikkelissa kuvataan Power BI:n tietojen päivitysominaisuuksia ja niiden riippuvuuksia käsitteellisellä tasolla.
 author: mgblythe
 manager: kfile
 ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 02/21/2019
+ms.date: 06/12/2019
 ms.author: mblythe
 LocalizationGroup: Data refresh
-ms.openlocfilehash: 149f6963cc59c70342bee824579f6ae4c97a16d1
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 24a559fe35291c5256a5280b3c7d63d110868f4a
+ms.sourcegitcommit: 69a0e340b1bff5cbe42293eed5daaccfff16d40a
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "60974184"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67039215"
 ---
 # <a name="data-refresh-in-power-bi"></a>Tietojen päivittäminen Power BI:ssä
-Varmista, että saat käyttöösi aina uusimmat tiedot päätöksenteon tueksi. Olet todennäköisesti jo käyttänyt Nouda tiedot -toimintoa Power BI:ssä yhteyden muodostamiseksi ja tietojen lataamiseksi sekä luonut raportteja ja raporttinäkymän. Nyt haluat varmistaa, että tiedot todella ovat uusimpia ja ajan tasalla.
 
-Monissa tapauksissa se ei edellytä sinulta mitään toimia. Jotkin tiedot, kuten Salesforce- tai Marketo-sisältöpaketista saapuvat tiedot, päivitetään automaattisesti puolestasi. Jos yhteytesi käyttää reaaliaikaista yhteyttä tai DirectQueryä, tiedot pysyvät ajan tasalla. Muissa tapauksissa, kuten käsiteltäessä Excel-työkirjoja tai Power BI Desktop -tiedostoja, jotka muodostavat yhteyden ulkoiseen tietolähteeseen joko verkossa tai paikallisesti, sinun on päivitettävä tiedot manuaalisesti tai laadittava päivitysaikataulu, jotta Power BI voi päivittää raporttiesi ja raporttinäkymiesi tiedot puolestasi.
+Power BI mahdollistaa nopeat siirtymät tietojen analysoimisesta toimiin, mutta samalla sinun on varmistettava, että Power BI -raporttien ja raporttinäkymien tiedot ovat tuoreita. Tietojen päivittämisen tunteminen on tarkkojen tulosten kannalta ensiarvoisen tärkeää.
 
-Tämä (ja muutama muu) artikkeli auttaa sinua ymmärtämään, kuinka tietojen päivitys toimii Power BI:ssä riippumatta siitä, onko sinun määritettävä päivitysaikataulu. Saat myös tietää, mitä tietojen onnistunut päivittäminen edellyttää.
+Tässä artikkelissa kuvataan Power BI:n tietojen päivitysominaisuuksia ja niiden riippuvuuksia käsitteellisellä tasolla. Artikkelissa kuvataan myös parhaita käytäntöjä ja annetaan vinkkejä yleisten päivitysongelmien välttämiseksi. Sisältö auttaa sinua ymmärtämään tietojen päivityksen toiminnan perusteita. Kohdennetut, vaiheittaiset tietojen päivitysohjeet ovat artikkelin lopussa Seuraavat vaiheet -kohdassa luetteloiduissa opetusohjelmissa ja oppaissa.
 
 ## <a name="understanding-data-refresh"></a>Tietojen päivityksen ymmärtäminen
-Ennen kuin aloitat tietojen päivityksen, sinun tulee tietää, mitä olet päivittämässä ja mistä tiedot tulevat.
 
-*Tietolähde* on paikka, josta raporttiesi ja raporttinäkymiesi tiedot tulevat. Se voi olla esimerkiksi Google Analyticsin tai QuickBooksin kaltainen online-palvelu, Azure SQL -tietokannan kaltainen pilvitietokanta tai paikallisessa organisaation tietokoneessa tai palvelimessa sijaitseva tietokanta tai tiedosto. Nämä kaikki ovat tietolähteitä. Tietolähteen tyyppi määrittää, miten tietolähteen tiedot päivitetään. Perehdymme tarkemmin kunkin tietolähdetyypin päivitystapoihin hieman edempänä [Mitä voidaan päivittää?](#what-can-be-refreshed) -osassa.
+Kun päivität tiedot, Power BI:n on suoritettava kysely pohjana oleville tietolähteille ja mahdollisesti ladattava lähteenä olevat tiedot tietojoukkoon, minkä jälkeen Power BI:n on päivitettävä kaikki päivitetystä tietojoukosta riippuvien raporttien ja raporttinäkymien visualisoinnit. Prosessissa on useita vaiheita tietojoukkojesi tallentamisen tilasta riippuen. Tätä käsitellään seuraavissa osioissa.
 
-*Tietojoukko* luodaan automaattisesti Power BI:ssä, kun käytät Nouda tiedot -toimintoa yhteyden luomiseen ja sisältöpakkauksen tai tiedoston sisältämien tietojen lataamiseen tai kun muodostat yhteyden live-tietolähteeseen. Power BI Desktopissa ja Excel 2016:ssa voit myös julkaista tiedoston käyttöoikeuden Power BI -palveluun, joka toimii avain kuten Nouda tiedot -toiminto.
+Jotta voisit ymmärtää, miten Power BI päivittää tietojoukkoja, raportteja ja raporttinäkymiä, sinun on tiedostettava seuraavat käsitteet:
 
-Kummassakin tapauksessa luodaan tietojoukko, joka tukee näkyviin Power BI -palvelun Oma työtila- tai Ryhmä -säilössä. Kun valitset tietojoukon **kolmen pisteen valikon (...)** , voit tarkastella raportin tietoja, muokata asetuksia ja määrittää päivityksen.
+- **Tallennustilat ja tietojoukkojen tyypit**: Power BI:n tukemien tallennustilojen ja tietojoukkojen tyyppien päivitysvaatimukset vaihtelevat. Voit valita joko tietojen tuomisen takaisin Power BI:hin, jolloin näet kaikki muutokset, tai kyselyn suorittamisen suoraan lähteessä.
+- **Power BI:n päivitystyypit**: Tietojoukon yksityiskohdista riippumatta eri päivitystyyppien tuntemus auttaa ymmärtämään, mitä Power BI tekee päivitystoiminnon aikana. Näiden tietojen yhdistäminen tallennustilan yksityiskohtiin auttaa ymmärtämään, mitä Power BI tarkalleen ottaen tekee, kun valitset tietojoukolle **Päivitä nyt**.
 
-![](media/refresh-data/dataset-menu.png)
+### <a name="storage-modes-and-dataset-types"></a>Tallennustilat ja tietojoukkojen tyypit
 
-Tietojoukko voi hankkia tietoja yhdestä tai useammasta tietolähteestä. Voit esimerkiksi käyttää Power BI Desktopia tietojen noutamiseen organisaation SQL-tietokannasta ja noutaa muita tietoja verkosta OData-syötteellä. Kun julkaiset tiedoston Power BI:hin, järjestelmään luodaan yksi tietojoukko, jonka tietolähteitä ovat sekä SQL-tietokanta ja OData-syöte.
+Power BI -tietojoukko voi toimia jossakin seuraavista tiloista käyttäessään useiden eri tietolähteiden tietoja. Lisätietoja on kohdassa [Tallennustila Power BI Desktopissa](desktop-storage-mode.md).
 
-Tietojoukko sisältää tietoa tietolähteistä, tietolähteen tunnistetiedot ja useimmissa tapauksissa tietojen alijoukon, joka on kopioitu tietolähteestä. Kun luot visualisointeja raportteihin ja raporttinäkymiin, näet tietojoukon tiedot. Jos käytössä on Azure SQL-tietokannan kaltainen reaaliaikainen yhteys, tietojoukko määrittää näytettävät tiedot suoraan tietolähteestä. Jos käytössä on reaaliaikainen yhteys Analysis Servicesiin, tietojoukon määritys saadaan suoraan Analysis Servicesistä.
+- Tuontitila
+- DirectQuery-tila
+- LiveConnect-tila
+- Push-tila
 
-> *Tietojen päivitys päivittää siten tiedot tietojoukossa, joka on tallennettu Power BI:hin tietolähteestäsi. Tämä päivitys on täydellinen eikä lisäävä.*
-> 
-> 
+Seuraavassa kaaviossa esitetään eri tietovuot tallennustilan perusteella. Tärkein huomio on, että vain tuontitilassa olevat tietojoukot edellyttävät tietolähteen päivittämistä. Ne edellyttävät päivitystä, koska vain tämäntyyppiset tietojoukot tuovat tietoja tietolähteistään ja koska tuodut tiedot saatetaan päivittää säännöllisesti tai ajoittain. DirectQuery-tietojoukot ja LiveConnect-tilassa olevat Analysis Services -tietojoukot eivät tuo tietoja, vaan ne lähettävät kyselyn taustalla olevalle tietolähteelle käyttäjän jokaisen toimen yhteydessä. Push-tilassa olevilla tietojoukoilla ei ole tietolähteiden suoria käyttöoikeuksia, vaan ne odottavat, että työnnät tiedot Power BI:hin. Tietojoukon päivittämisen vaatimukset vaihtelevat tallennustilan/tietojoukon tyypin mukaan.
 
-Aina, kun päivität tietojoukon tiedot joko käyttämällä Päivitä nyt -toimintoa tai määrittämällä päivitysaikataulun, Power BI käyttää tietojoukon tietoja muodostaakseen yhteyden määritettyihin tietolähteisiin, kyselläkseen päivitettyjä tietoja ja ladatakseen päivitetyt tiedot takaisin tietojoukkoon. Kaikki raporttiesi tai raporttinäkymiesi visualisoinnit, jotka perustuvat kyseisiin tietoihin, päivitetään automaattisesti.
+![Tallennustilat ja tietojoukkojen tyypit](media/refresh-data/storage-modes-dataset-types-diagram.png)
 
-Ennen kuin jatkamme, on tärkeää ymmärtää eräs toinen asia:
+#### <a name="datasets-in-import-mode"></a>Tietojoukot tuontitilassa
 
-> *Riippumatta siitä, kuinka usein päivität tietojoukon tai kuinka usein tarkastelet reaaliaikaisia tietoja, tietolähteen tietojen on oltava ensin ajan tasalla.*
-> 
-> 
+Power BI tuo tietoja alkuperäisistä tietolähteistä tietojoukkoon. Tietojoukolle lähetetyt Power BI:n raportti- ja raporttinäkymäkyselyt palauttavat tuloksia tuoduista taulukoista ja sarakkeista. Voit ajatella tällaisen tietojoukon olevan kopio tietystä hetkestä. Koska Power BI kopioi tiedot, tietojen noutaminen pohjana olevista tietolähteistä edellyttää tietojoukkojen päivittämistä.
 
-Useimmissa organisaatioissa tiedot käsitellään kerran päivässä, yleensä iltaisin. Jos ajoitat päivityksen paikalliseen tietokantaan yhdistetystä Power BI Desktop -tiedostosta luodulle tietojoukolle, ja IT-osastosi suorittaa kyseisen SQL-tietokannan käsittelyajon kerran päivässä iltaisin, sinun tarvitsee määrittää ajoitettu päivitys suoritettavaksi vain kerran päivässä. Käsittely voidaan tehdä esimerkiksi tietokannan käsittelyn jälkeen, mutta ennen kuin palaat töihin. Tämä ei tietenkään ole aina mahdollista. Power BI tarjoaa useita tapoja muodostaa yhteyden tietolähteisiin, jotka päivitetään usein tai jopa reaaliaikaisesti.
+Koska Power BI tallentaa tiedot välimuistiin, tietojoukkojen koko voi olla tuontitilassa merkittävän suuri. Katso seuraavasta taulukosta tietojoukkojen enimmäiskoko kapasiteettia kohti. Tietojoukot vaativat joskus päivitystoiminnon aikana enemmän resursseja kuin on saatavana. Voit välttää päivitysongelmat pitämällä tietojoukot reilusti enimmäiskokoa pienempinä.
 
-## <a name="types-of-refresh"></a>Päivitystyypit
-Power BI:ssä on neljä päivityksen päätyyppiä. Pakettipäivitys, mallin/tietojen päivitys, ruudun päivitys ja visualisointisäilön päivitys.
+| Kapasiteetin tyyppi | Suurin tietojoukon koko |
+| --- | --- |
+| Jaettu, A1 A2 tai A3 | 1 GT |
+| A4 tai P1 | 3 Gt |
+| A4 tai P2 | 6 Gt |
+| A6 tai P3 | 10 Gt |
+| | |
 
-### <a name="package-refresh"></a>Pakettipäivitys
-Tämä synkronoi Power BI Desktop- tai Excel-tiedoston Power BI-palvelun ja OneDriven tai SharePoint Onlinen välillä. Tämä tapa ei nouda tietoja alkuperäisestä tietolähteestä. Power BI:n tietojoukko päivitetään vain niillä tiedoilla, jotka ovat saatavana tiedostossa OneDrivessa tai SharePoint Onlinessa.
+#### <a name="datasets-in-directqueryliveconnect-mode"></a>Tietojoukot DirectQuery-/LiveConnect-tilassa
 
-![](media/refresh-data/package-refresh.png)
+Power BI tuo tietoja DirectQuery-/LiveConnect-tilassa olevien yhteyksien kautta. Sen sijaan tietojoukko palauttaa pohjana olevan tietolähteen tulokset, kun raportti tai raporttinäkymä lähettää tietojoukolle kyselyn. Power BI muuntaa kyselyt ja välittää ne tietolähteelle.
 
-### <a name="modeldata-refresh"></a>Mallin/tietojen päivitys
-Tämä viittaa tietojoukon päivittämiseen Power BI -palvelussa alkuperäisen tietolähteen tiedoilla. Päivitys tehdään käyttämällä joko ajoitettua päivitystä tai Päivitä nyt -toimintoa. Tämä edellyttää yhdyskäytävää paikallisia tietolähteitä varten.
+Vaikka DirectQuery- ja LiveConnect-tilat muistuttavat toisiaan siltä osin, että Power BI välittää kyselyt lähteelle, on tärkeää huomata, että Power BI:n ei tarvitse muuntaa kyselyitä LiveConnect-tilassa. Kyselyt lähetetään suoraan tietokannan Analysis Services -isäntäesiintymälle jaetun kapasiteetin tai Premium-kapasiteetin resursseja käyttämättä.
 
-### <a name="tile-refresh"></a>Ruudun päivitys
-Ruudun päivitys päivittää ruudun visualisointien välimuistin raporttinäkymässä, kun tiedot muuttuvat. Tämä tapahtuu noin 15 minuutin välein. Voit myös pakottaa ruudun päivityksen valitsemalla **kolmen pisteen valikon (...)**  raporttinäkymän oikeassa yläkulmassa ja valitsemalla **Päivitä raporttinäkymän ruudut**.
+Koska Power BI ei tuo tietoja, sinun ei tarvitse päivittää tietoja. Power BI päivittää edelleen ruudut ja mahdollisesti muita raportin osia. Tästä kerrotaan tarkemmin seuraavassa osiossa. Ruutu on raporttinäkymään kiinnitetty raportin visualisointi. Raporttinäkymän ruudut päivitetään noin tunnin välein siten, että ruuduissa näytetään viimeaikaiset tulokset. Voit muuttaa aikataulua tietojoukon asetuksista alla olevan näyttökuvan mukaisesti. Voit myös pakottaa raporttinäkymän päivityksen manuaalisesti **Päivitä nyt** -vaihtoehdolla.
 
-![](media/refresh-data/dashboard-tile-refresh.png)
-
-Lisätietoja yleisistä ruudun päivityksen virheistä on kohdassa [Ruutuvirheiden vianmääritys](refresh-troubleshooting-tile-errors.md).
-
-### <a name="visual-container-refresh"></a>Visualisointisäilön päivitys
-Visualisointisäilön päivitys päivittää välimuistissa olevat raporttien visualisoinnit raporttiin, kun tiedot muuttuvat.
-
-## <a name="what-can-be-refreshed"></a>Mitä voidaan päivittää?
-Power BI:ssä käytetään yleensä Nouda tiedot -toimintoa tietojen tuomiseksi paikallisessa asemassa, OneDrivessa tai SharePoint Onlinessa olevasta tiedostosta, tai yhteys muodostetaan suoraan organisaation pilvipalvelussa olevaan tietokantaan. Power BI:ssä voidaan päivittää lähes mitä tahansa tietoja, mutta päivitystarve määräytyy sen mukaan, miten tietojoukkosi on luotu ja mihin tietolähteisiin se on yhteydessä. Katsotaan seuraavaksi, miten tietoja päivitetään.
-
-Ennen kuin jatkamme, tässä on joitakin tärkeitä määritelmiä, jotka sinun on tunnettava:
-
-**Automaattinen päivitys** – Tämä tarkoittaa, että mitään käyttäjän määrityksiä ei tarvita, jotta tietojoukko päivitetään säännöllisin väliajoin. Power BI määrittää tietojen päivitysasetukset puolestasi. Online-palveluntarjoajat päivittävät tiedot yleensä kerran päivässä. OneDrivesta ladattujen tietojen automaattinen päivitys tapahtuu noin tunnin välein tiedoille, jotka eivät ole peräisin ulkoisesta tietolähteestä. Vaikka voit määrittää erilaisia ajoitettuja päivitysasetuksia ja päivittää tietoja manuaalisesti, sinun ei todennäköisesti tarvitse tehdä niin.
-
-**Käyttäjän määrittämä manuaalinen tai ajoitettu päivitys** – Tämä tarkoittaa, että voit päivittää tietojoukon manuaalisesti käyttämällä Päivitä nyt -toimintoa tai ajoitettua päivitystä tietojoukon asetuksissa. Tämäntyyppistä päivitystä tarvitaan sellaisia Power BI Desktop -tiedostoja ja Excel-työkirjoja varten, jotka muodostavat yhteyden ulkoisiin verkkotietolähteisiin ja paikallisiin tietolähteisiin.
+![Päivitysaikataulu](media/refresh-data/refresh-schedule.png)
 
 > [!NOTE]
-> Kun määrität ajan ajoitettua päivitystä varten, päivityksen alkamiseen voi tulla enintään tunnin viive.
-> 
-> 
+> **Tietojoukot**-välilehden **Ajoitettu välimuistin päivitys** -osio ei koske tietojoukkoja tuontitilassa. Nämä tietojoukot eivät edellytä erillistä ruudun päivitystä, koska Power BI päivittää ruudut automaattisesti jokaisen ajoitetun tai pyynnöstä toteutetun tietojen päivittämisen aikana.
 
-**Reaaliaikainen/DirectQuery** – Tämä tarkoittaa, että Power BI:n ja tietolähteen välillä on reaaliaikainen yhteys. Paikallisia tietolähteitä varten järjestelmänvalvojien on määritettävä yritysyhdyskäytävän sisällä oleva tietolähde, mutta käyttäjän toimia ei välttämättä tarvita.
+#### <a name="push-datasets"></a>Push-tietojoukot
 
-> [!NOTE]
-> Suorituskyvyn parantamiseksi raporttinäkymät, joissa on DirectQueryllä yhdistettyjä tietoja, päivittyvät automaattisesti. Voit myös päivittää ruudun manuaalisesti milloin tahansa käyttämällä ruudun **Lisää**-valikkoa.
-> 
-> 
-
-## <a name="local-files-and-files-on-onedrive-or-sharepoint-online"></a>Paikalliset tiedostot ja OneDrivessa tai SharePoint Onlinessa olevat tiedostot
-Tietojen päivitystä tuetaan sellaisia Power BI Desktop -tiedostoja ja Excel-työkirjoja varten, jotka muodostavat yhteyden ulkoisiin verkkotietolähteisiin tai paikallisiin tietolähteisiin. Tämä päivittää ainoastaan Power BI -palvelun sisällä olevan tietojoukon tiedot. Se ei päivitä paikallista tiedostoa.
-
-Kun säilytät tiedostosi OneDrivessa tai SharePoint Onlinessa ja muodostat niihin yhteyden Power BI:stä, saat käyttöösi joustavan ratkaisun. Joustavuuden vuoksi ratkaisun ymmärtäminen voi olla kuitenkin haastavaa. OneDriveen tai SharePoint Onlineen tallennettujen tiedostojen ajoitettu päivitys poikkeaa pakettipäivityksestä. Lisätietoja on [Päivitystyypit](#types-of-refresh)-osassa.
-
-### <a name="power-bi-desktop-file"></a>Power BI Desktop -tiedosto
-
-| **Tietolähde** | **Automaattinen päivitys** | **Käyttäjän määrittämä manuaalinen tai ajoitettu päivitys** | **Yhdyskäytävä tarvitaan** |
-| --- | --- | --- | --- |
-| Nouda tiedot -toiminnolla (valintanauhassa) muodostetaan yhteys mihin tahansa listattuun verkkotietolähteeseen ja tehdään siellä tietokyselyjä. |Ei |Kyllä |Ei (katso alla) |
-| Nouda tiedot -toiminnolla muodostetaan yhteys reaaliaikaiseen Analysis Services -tietokantaan ja tutkitaan sen sisältöä. |Kyllä |Ei |Kyllä |
-| Nouda tiedot -toiminnolla muodostetaan yhteys tuettuun paikalliseen DirectQuery-tietolähteeseen ja tutkitaan sen sisältöä. |Kyllä |Ei |Kyllä |
-| Nouda tiedot -toiminnolla muodostetaan yhteys Azure SQL -tietokantaan, Azure SQL Data Warehouseen tai Azure HDInsight Sparkiin ja tehdään siellä tietokyselyjä. |Kyllä |Kyllä |Ei |
-| Nouda tiedot -toiminnolla muodostetaan yhteys mihin tahansa listattuun paikalliseen tietolähteeseen ja tehdään siellä tietokyselyjä, lukuun ottamatta Hadoop-tiedostoja (HDFS) ja Microsoft Exchangea. |Ei |Kyllä |Kyllä |
+Push-tietojoukot eivät sisällä tietolähteen muodollista määritelmää, joten ne eivät edellytä tietojen päivittämistä Power BI:ssä. Voit päivittää ne työntämällä tietoja tietojoukkoon Azure Stream Analyticsin tai muun ulkoisen palvelun tai prosessin kautta. Tämä on yleinen tapa suorittaa reaaliaikainen analyysi Power BI:llä. Power BI suorittaa edelleen push-tietojoukon päällä käytettyjen ruutujen välimuistin päivitykset. Katso yksityiskohtaiset ohjeet [opetusohjelmasta: Stream Analytics ja Power BI: Reaaliaikainen analyysiraporttinäkymä tietovirroille](/azure/stream-analytics/stream-analytics-power-bi-dashboard).
 
 > [!NOTE]
-> Jos käytät [**Web.Page**](https://msdn.microsoft.com/library/mt260924.aspx)-toimintoa, tarvitset yhdyskäytävän, jos olet julkaissut tietojoukon tai raportin myöhemmin kuin 18. marraskuuta 2016.
-> 
-> 
+> Push-tilan toimintaan liittyy useita rajoituksia, jotka on kerrottu kohdassa [Power BI:n REST-ohjelmointirajapinnan rajoitukset](developer/api-rest-api-limitations.md).
 
-Lisätietoja on kohdassa [Power BI Desktop -tiedostosta luodun tietojoukon päivittäminen – OneDrive](refresh-desktop-file-onedrive.md).
+### <a name="power-bi-refresh-types"></a>Power BI:n päivitystyypit
 
-### <a name="excel-workbook"></a>Excel-työkirja
+Power BI:n päivitystoiminto voi koostua useista päivitystyypeistä, mukaan lukien tietojen päivittämisestä, OneDrive-päivittämisestä, kyselyn välimuistien päivittämisestä, ruutujen päivittämisestä ja raportin visualisointien päivittämisestä. Power BI määrittää tietojoukon asianmukaiset päivitysvaiheet automaattisesti, mutta sinun on hyvä tietää, miten ne vaikuttavat päivitystoiminnon kestoon ja monimutkaisuuteen. Pikaopas on seuraavassa taulukossa.
 
-| **Tietolähde** | **Automaattinen päivitys** | **Käyttäjän määrittämä manuaalinen tai ajoitettu päivitys** | **Yhdyskäytävä tarvitaan** |
-| --- | --- | --- | --- |
-| Laskentataulukon taulukoiden tietoja ei ladattu Excel-tietomalliin. |Kyllä, tunneittain *(vain OneDrive / SharePoint Online)* |Vain manuaalinen *(vain OneDrive / SharePoint Online)* |Ei |
-| Laskentataulukon taulukoiden tiedot linkitetty taulukkoon Excel-tietomallissa (linkitetyt taulukot). |Kyllä, tunneittain *(vain OneDrive / SharePoint Online)* |Vain manuaalinen *(vain OneDrive / SharePoint Online)* |Ei |
-| Power Query* -toiminnolla muodostetaan yhteys mihin tahansa listattuun verkkotietolähteeseen ja tehdään siellä tietokyselyjä sekä ladataan tiedot Excel-tietomalliin. |Ei |Kyllä |Ei |
-| Power Query* -toiminnolla muodostetaan yhteys mihin tahansa listattuun paikalliseen tietolähteeseen ja tehdään siellä tietokyselyjä, lukuun ottamatta Hadoop-tiedostoja (HDFS) ja Microsoft Exchangea, sekä ladataan tiedot Excel-tietomalliin. |Ei |Kyllä |Kyllä |
-| Power Pivot -toiminnolla muodostetaan yhteys mihin tahansa listattuun verkkotietolähteeseen ja tehdään siellä tietokyselyjä sekä ladataan tiedot Excel-tietomalliin. |Ei |Kyllä |Ei |
-| Power Pivot -toiminnolla muodostetaan yhteys mihin tahansa listattuun paikalliseen tietolähteeseen ja tehdään siellä tietokyselyjä sekä ladataan tiedot Excel-tietomalliin. |Ei |Kyllä |Kyllä |
+| Tallennustilan tila | Tietojen uudelleenlataus | OneDrive-päivittäminen | Kysely välimuisteista | Ruudun päivitys | Raportin visualisoinnit |
+| --- | --- | --- | --- | --- | --- |
+| Tuo | Ajoitettu ja pyydettäessä | Kyllä, yhdistetyille tietojoukoille | Jos käytössä Premium-kapasiteetissa | Automaattisesti ja pyydettäessä | Ei |
+| DirectQuery | Ei käytettävissä | Kyllä, yhdistetyille tietojoukoille | Jos käytössä Premium-kapasiteetissa | Automaattisesti ja pyydettäessä | Ei |
+| LiveConnect | Ei käytettävissä | Kyllä, yhdistetyille tietojoukoille | Jos käytössä Premium-kapasiteetissa | Automaattisesti ja pyydettäessä | Kyllä |
+| Push | Ei käytettävissä | Ei käytettävissä | Ei käytännöllinen | Automaattisesti ja pyydettäessä | Ei |
+| | | | | | |
 
-*\* Power Query tunnetaan Excel 2016:ssa nimellä Hae ja muunna.*
+#### <a name="data-refresh"></a>Tietojen uudelleenlataus
 
-Lisätietoja on kohdassa [OneDriven Excel-työkirjasta luodun tietojoukon päivittäminen](refresh-excel-file-onedrive.md).
+Power BI -käyttäjille tietojen päivittäminen tarkoittaa yleensä tietojen tuomista alkuperäisistä tietolähteistä tietojoukkoon joko ajoitetun päivityksen perusteella tai pyydettäessä. Voit suorittaa useita tietojoukkojen päivityksiä päivittäin. Tämä saattaa olla tarpeen, jos pohjana olevat tiedot muuttuvat usein. Power BI:ssä jaettujen kapasiteettien tietojoukot voidaan päivittää päivän aikana enintään kahdeksan kertaa. Jos tietojoukko on Premium-kapasiteetissa, voit päivittää sen enintään 48 kertaa päivässä. Katso lisätietoja Ajoitettu päivitys -kohdasta alempana tässä artikkelissa.
 
-### <a name="comma-separated-value-csv-file-on-onedrive-or-sharepoint-online"></a>Pilkuin eroteltuja arvoja sisältävä tiedosto (.csv) OneDrivessa tai SharePoint Onlinessa
+Huomaa, että päivityksen päivärajoitus koskee ajoitettujen ja pyydettyjen päivitysten määrää yhteensä. Voit käynnistää pyydetyn päivityksen valitsemalla **Päivitä nyt** tietojoukon valikosta seuraavassa näyttökuvassa esitetyllä tavalla. Voit myös käynnistää tietojen päivittämisen ohjelmallisesti Power BI:n REST-ohjelmointirajapinnan avulla. Jos olet kiinnostunut oman päivitysratkaisusi kehittämisestä, katso kohta [Tietojoukot – Tietojoukkojen päivittäminen](/rest/api/power-bi/datasets/refreshdataset).
 
-| **Tietolähde** | **Automaattinen päivitys** | **Käyttäjän määrittämä manuaalinen tai ajoitettu päivitys** | **Yhdyskäytävä tarvitaan** |
-| --- | --- | --- | --- |
-| Yksinkertainen pilkulla eroteltu arvo |Kyllä, tunneittain |Vain manuaalinen |Ei |
-
-Lisätietoja on kohdassa [OneDriven .csv-tiedostosta luodun tietojoukon päivittäminen](refresh-csv-file-onedrive.md).
-
-## <a name="content-packs"></a>Sisältöpaketit
-Power BI:ssä on kahdenlaisia sisältöpaketteja:
-
-**Sisältöpaketit online-palveluista**: esimerkiksi Adobe Analytics, SalesForce ja Dynamics CRM Online. Online-palveluista luodut tietojoukot päivitetään automaattisesti kerran päivässä. Vaikka se ei todennäköisesti ole tarpeellista, voit päivittää tiedot manuaalisesti tai määrittää ajoitetun päivityksen. Koska online-palvelut ovat pilvessä, yhdyskäytävää ei tarvita.
-
-**Organisaation sisältöpaketit**: oman organisaatiosi käyttäjien luomat ja jakamat sisältöpaketit. Sisältöpaketin käyttäjät eivät voi määrittää ajoitettua päivitystä tai tehdä manuaalista päivitystä. Ainoastaan sisältöpaketin tekijä voi määrittää sisältöpaketin tietojoukkojen päivityksen. Päivitysasetukset periytyvät tietojoukon kanssa.
-
-### <a name="content-packs-from-online-services"></a>Sisältöpaketit online-palveluista
-
-| **Tietolähde** | **Automaattinen päivitys** | **Käyttäjän määrittämä manuaalinen tai ajoitettu päivitys** | **Yhdyskäytävä tarvitaan** |
-| --- | --- | --- | --- |
-| Online-palvelut Nouda tiedot &gt; -palveluissa |Kyllä |Kyllä |Ei |
-
-### <a name="organizational-content-packs"></a>Organisaation sisältöpaketit
-Organisaation sisältöpakettiin kuuluvan tietojoukon päivitysominaisuudet määräytyvät tietojoukon mukaan. Katso edeltä lisätietoja paikallisista tiedostoista, OneDrivesta tai SharePoint Onlinesta.
-
-Lisätietoja on kohdassa [Organisaation sisältöpakettien esittely](service-organizational-content-pack-introduction.md).
-
-## <a name="live-connections-and-directquery-to-on-premises-data-sources"></a>Reaaliaikaiset yhteydet ja DirectQuery-kyselyt paikallisiin tietolähteisiin
-Paikallisen tietoyhdyskäytävän avulla voit tehdä kyselyjä Power BI:stä paikallisiin tietolähteisiin. Kun käytät visualisointia, kyselyt lähetetään Power BI:stä suoraan tietokantaan. Sen jälkeen päivitetyt tiedot palautetaan ja visualisoinnit päivitetään. Koska Power BI:n ja tietokannan välillä on suora yhteys, päivitystä ei tarvitse ajoittaa.
-
-Kun SQL Service Analysis Services (SSAS) -tietolähteeseen muodostetaan reaaliaikainen yhteys, se voidaan toteuttaa välimuistissa (toisin kuin DirectQuery) myös raportin lataamisen yhteydessä. Tämä nopeuttaa raportin latautumista. Voit pyytää uusimmat tiedot SSAS-tietolähteestä käyttämällä **Päivitä**-painiketta. SSAS-tietolähteiden omistajat voivat määrittää tietojoukon välimuistin ajoitetun päivitystiheyden varmistaakseen, että raportit ovat ajan tasalla. 
-
-Kun määrität tietolähteen käyttämään paikallista tietoyhdyskäytävää, voit käyttää kyseistä tietolähdettä ajoitettuna päivitysvaihtoehtona. Tämä korvaa henkilökohtaisen yhdyskäytävän.
+![Päivitä nyt](media/refresh-data/refresh-now.png)
 
 > [!NOTE]
-> Jos tietojoukkosi on määritetty käyttämään reaaliaikaista yhteyttä tai DirectQuery-yhteyttä, tietojoukot päivitetään noin tunnin välein tai kun tietoja käytetään. Voit muuttaa *päivitystiheyttä* manuaalisesti Power BI -palvelun *Ajoitettu välimuistin päivitys* -asetuksella.
-> 
-> 
+> Tietojen päivityksen on oltava valmis kahden tunnin kuluessa. Jos tietojoukkosi vaatii tätä pidempää päivitystoimintoa, harkitse tietojoukon siirtämistä Premium-kapasiteettiin. Premiumissa päivityksen enimmäiskesto on viisi tuntia.
 
-| **Tietolähde** | **Reaaliaikainen yhteys / DirectQuery** | **Käyttäjän määrittämä manuaalinen tai ajoitettu päivitys** | **Yhdyskäytävä tarvitaan** |
-| --- | --- | --- | --- |
-| Analysis Services -taulukkomuoto |Kyllä |Kyllä |Kyllä |
-| Moniulotteinen Analysis Services -muoto |Kyllä |Kyllä |Kyllä |
-| SQL Server |Kyllä |Kyllä |Kyllä |
-| SAP HANA |Kyllä |Kyllä |Kyllä |
-| Oracle |Kyllä |Kyllä |Kyllä |
-| Teradata |Kyllä |Kyllä |Kyllä |
+#### <a name="onedrive-refresh"></a>OneDrive-päivittäminen
 
-Lisätietoja on kohdassa [Paikallinen tietoyhdyskäytävä](service-gateway-onprem.md)
+Jos loit tietojoukot ja raportit Power BI Desktop -tiedoston, Excel-työkirjan tai pilkuin eroteltuja arvoja sisältävän tiedoston (.csv) pohjalta OneDriveen tai SharePoint Onlineen, Power BI suorittaa toisentyyppisen päivityksen, jota kutsutaan OneDrive-päivittämiseksi. Katso lisätietoja kohdasta [Tietojen noutaminen tiedostoista Power BI:hin](service-get-data-from-files.md).
 
-## <a name="databases-in-the-cloud"></a>Pilvipalveluissa olevat tietokannat
-DirectQuery muodostaa suoran yhteyden Power BI:n ja pilvipalvelussa olevan tietokannan välille. Kun käytät visualisointia, kyselyt lähetetään Power BI:stä suoraan tietokantaan. Sen jälkeen päivitetyt tiedot palautetaan ja visualisoinnit päivitetään. Koska sekä Power BI -palvelu että tietolähde ovat pilvipalvelussa, henkilökohtaista yhdyskäytävää ei tarvita.
+Toisin kuin tietojoukon päivityksessä, jolloin Power BI tuo tietoja tietolähteestä tietojoukkoon, OneDrive-päivittäminen synkronoi tietojoukot ja raportit niiden lähdetiedostojen kanssa. Oletusarvoisesti Power BI tarkistaa noin tunnin välein, edellyttääkö OneDrive- tai SharePoint-tiedostoon yhdistetty tietojoukko synkronointia. Voit tarkistaa aiemmat synkronointijaksot päivityshistorian OneDrive-välilehdeltä. Seuraavassa näyttökuvassa esitetään mallitietojoukon valmis synkronointijakso.
 
-Jos visualisointia ei käytetä, tiedot päivitetään automaattisesti noin kerran tunnissa. Voit muuttaa päivitystiheyttä käyttämällä *Ajoitettu välimuistin päivitys* -asetusta ja määrittämällä päivitystiheyden.
+![Päivityshistoria](media/refresh-data/refresh-history.png)
 
-Jos haluat määrittää päivitystiheyden, valitse **rataskuvake** Power BI -palvelun oikeassa yläkulmassa ja valitse sitten **Asetukset**.
+Kuten yllä olevasta näyttökuvasta näkyy, Power BI tunnisti tämän OneDrive-päivityksen **ajoitetuksi** päivitykseksi, mutta päivitysvälin määrittäminen ei ole mahdollista. Voit ainoastaan poistaa OneDrive-päivityksen käytöstä tietojoukon asetuksista. Päivityksen käytöstä poistamisesta on hyötyä, jos et halua, että Power BI:n tietojoukot ja raportit noutavat muutoksia lähdetiedostoista automaattisesti.
 
-![](media/refresh-data/refresh-data_2.png)
+Huomaa, että tietojoukon asetussivulla **OneDrive-tunnistetiedot** ja **OneDrive-päivitys**-osiot näkyvät vain, jos tietojoukko on yhdistetty tiedostoon, joka on OneDrivessa tai SharePoint Onlinessa, kuten näyttökuvassa alla. Tietojoukoissa, jotka eivät ole yhteydessä OneDrive- tai SharePoint Online -lähdetiedostoihin, ei näy näitä osioita.
 
-**Asetukset**-sivulla voit valita tietojoukon, jonka päivitystiheyden haluat määrittää. Valitse Asetukset-sivun yläreunasta **Tietojoukot**-välilehti.
+![OneDrive-tunnistetiedot ja OneDrive-päivitys](media/refresh-data/onedrive-credentials-refresh.png)
 
-![](media/refresh-data/refresh-data_3.png)
+Jos poistat tietojoukon OneDrive-päivityksen käytöstä, voit synkronoida tietojoukon pyydettäessä valitsemalla **Päivitä nyt** tietojoukkovalikosta. Pyydetyn päivityksen aikana Power BI tarkistaa, onko OneDrive- tai SharePoint Online -lähdetiedostosta saatavilla tietojoukkoa uudempi versio. Jos näin on, Power BI synkronoi tietojoukon. **Päivityshistoriassa** nämä toimet näkyvät pyydettyinä päivityksinä **OneDrive**-välilehdellä.
 
-Valitse tietojoukko, niin oikeanpuoleiseen ruutuun tulee näkyviin kyseisen tietojoukon asetukset. Voit määrittää DirectQuery-yhteyden tai reaaliaikaisen yhteyden päivitystiheyden (15 minuutin välein – viikoittain) käyttämällä avattavaa valikkoa seuraavan kuvan mukaisesti.
+Huomaa, että OneDrive-päivitys ei nouda tietoja alkuperäisistä tietolähteistä. OneDrive-päivitys päivittää vain Power BI -resurssit .pbix-, .xlsx- ja .csv-tiedostojen metatiedoilla ja tiedoilla, kuten seuraavassa kaaviossa esitetään. Power BI käynnistää tietojen päivityksen osana pyydettyä päivitystä varmistaakseen, että tietojoukossa on tietolähteiden uusimmat tiedot. Voit tarkistaa tämän **Päivityshistorian** **Ajoitettu**-välilehdeltä.
 
-![](media/refresh-data/refresh-data_1.png)
+![OneDrive-päivittämisen kaavio](media/refresh-data/onedrive-refresh-diagram.png)
 
-| **Tietolähde** | **Reaaliaikainen yhteys / DirectQuery** | **Käyttäjän määrittämä manuaalinen tai ajoitettu päivitys** | **Yhdyskäytävä tarvitaan** |
-| --- | --- | --- | --- |
-| SQL Azure Data Warehouse |Kyllä |Kyllä |Ei |
-| Spark HDInsight |Kyllä |Kyllä |Ei |
+Jos haluat suorittaa ajoitetun päivityksen ja OneDrive-päivittäminen on käytössä OneDriveen tai SharePoint Onlineen yhdistettyjen tietojoukkojen osalta, varmista, että määrität ajoituksen siten, että Power BI suorittaa tietojen päivittämisen OneDrive-päivittämisen jälkeen. Jos olet esimerkiksi luonut oman palvelun tai prosessin, joka päivittää OneDrivessa tai SharePoint Onlinessa olevan tietolähteen tiedoston joka yö kello 1, saatat haluta määrittää ajoitetun päivityksen kello 2.30, jotta Power BI:llä on riittävästi aikaa suorittaa OneDriven päivitysprosessi loppuun ennen tietojen päivittämistä.
 
-Lisätietoja on kohdassa [Azure ja Power BI](service-azure-and-power-bi.md).
+#### <a name="refresh-of-query-caches"></a>Kyselyn välimuistien päivittäminen
 
-## <a name="real-time-dashboards"></a>Reaaliaikaiset raporttinäkymät
-Reaaliaikaiset raporttinäkymät hyödyntävät Microsoft Power BI REST -ohjelmointirajapintaa tai Microsoft Stream Analyticsia varmistaakseen, että tiedot ovat ajan tasalla. Koska reaaliaikaiset raporttinäkymät eivät edellytä käyttäjien määrittämää päivitystä, niitä ei käsitellä tässä artikkelissa.
+Jos tietojoukkosi on Premium-kapasiteetissa, saatat ehkä voida parantaa kaikkien siihen liittyvien raporttien ja raporttinäkymien suorituskykyä ottamalla käyttöön kyselyn tallentamisen välimuistiin. Kyselyn tallentaminen välimuistiin ohjaa Premium-kapasiteetin käyttämään sen paikallista välimuistipalvelua kyselyn tulosten säilyttämiseen, jolloin pohjana oleva tietolähde ei käsittele tuloksia. Lisätietoja on kohdassa [Kyselyn tallentaminen välimuistiin Power BI Premiumissa](power-bi-query-caching.md).
 
-| **Tietolähde** | **Automaattinen** | **Käyttäjän määrittämä manuaalinen tai ajoitettu päivitys** | **Yhdyskäytävä tarvitaan** |
-| --- | --- | --- | --- |
-| Power BI Rest -ohjelmointirajapinnalla tai Microsoft Stream Analyticsilla kehitetyt mukautetut sovellukset |Kyllä, reaaliaikainen virtautus |Ei |Ei |
+![Kyselyn tallentaminen välimuistiin](media/refresh-data/query-caching.png)
+
+Tietojen päivittämisen jälkeen aiemmat välimuistiin tallennetut kyselytulokset eivät enää ole kelvollisia. Power BI hylkää nämä välimuistiin tallennetut tulokset ja sinun on muodostettava ne uudelleen. Tästä syystä kyselyn tallentaminen välimuistiin ei ehkä ole yhtä hyödyllistä hyvin usein (esim. 48 kertaa päivässä) päivittämiesi raporttien ja raporttinäkymien tapauksessa.
+
+#### <a name="tile-refresh"></a>Ruudun päivitys
+
+Power BI ylläpitää jokaiselle ruudun visualisoinnille välimuistia raporttinäkymässäsi ja päivittää ruudun välimuistit ennakoivasti tietojen muuttuessa. Toisin sanoen ruutu päivitetään automaattisesti tietojen päivittämisen jälkeen. Tämä pätee sekä ajoitettuihin päivityksiin että pyydettyihin päivityksiin. Voit myös pakottaa ruudun päivityksen valitsemalla kolmen pisteen valikon (...) raporttinäkymän oikeasta yläkulmasta ja valitsemalla **Päivitä raporttinäkymän ruudut**.
+
+![Päivitä koontinäytön ruudut](media/refresh-data/refresh-dashboard-tiles.png)
+
+Koska päivitys tapahtuu automaattisesti, voit pitää ruudun päivitystä tietojen päivitykseen kuuluvana asiana. Saatat muun muassa huomata, että päivityksen kesto kasvaa ruutujen määrän kasvaessa. Ruutujen päivitys voi kestää.
+
+Power BI ylläpitää oletusarvoisesti välimuistia jokaiselle ruudulle, mutta jos käytät dynaamista tietoturvaa, joka rajoittaa tietojen käyttöä roolien mukaan artikkelin [rivitason suojaus (RLS) Power BI:ssä](service-admin-rls.md) kuvaillulla tavalla, Power BI:n on ylläpidettävä jokaista roolia ja jokaista ruutua koskevaa välimuistia. Ruutuvälimuistien määrä kerrotaan roolien määrällä.
+
+Tilanne mutkistuu entisestään, jos tietojoukossa käytetään reaaliaikaista yhteyttä rivintason suojauksella suojattuun Analysis Services -tietomalliin. Katso lisätiedot opetusohjelmasta [Dynaaminen rivitason suojaus Analysis Services -taulukkomallissa](desktop-tutorial-row-level-security-onprem-ssas-tabular.md). Tässä tilanteessa Power BI ylläpitää ja päivittää välimuistia jokaiselle ruudulle ja jokaiselle käyttäjälle, joka on koskaan katsellut kyseistä raporttinäkymää. On yleistä, että tällaisten tietojen ruutujen päivittäminen kestää kauemmin kuin tietojen noutaminen lähteestä. Lisätietoja ruutujen päivittämisestä on kohdassa [Ruutuvirheiden vianmääritys](refresh-troubleshooting-tile-errors.md).
+
+#### <a name="refresh-of-report-visuals"></a>Raportin visualisointien päivittäminen
+
+Tämä päivitysprosessi on vähemmän tärkeä, koska sitä käytetään vain Analysis Servicesin reaaliaikaisiin yhteyksiin. Näiden yhteyksien tapauksessa Power BI tallentaa raportin visualisointien viimeisimmän tilan välimuistiin niin, että kun tarkastelet raporttia uudelleen, Power BI:n ei tarvitse lähettää kyselyä Analysis Services -taulukkomallille. Kun käsittelet raporttia esimerkiksi muuttamalla raportin suodatinta, Power BI lähettää taulukkomallille kyselyn ja päivittää raportin visualisoinnit automaattisesti. Jos epäilet, että raportissa näytetään vanhentuneita tietoja, voit myös painaa raportin Päivitä-painiketta, jolloin raportin kaikki visualisoinnit päivitetään seuraavassa näyttökuvassa kuvatulla tavalla.
+
+![Raportin visualisointien päivittäminen](media/refresh-data/refresh-report-visuals.png)
+
+## <a name="review-data-infrastructure-dependencies"></a>Tietoinfrastruktuurin riippuvuuksien tarkistaminen
+
+Tallennustilasta riippumatta tietojen päivittäminen ei voi onnistua, jos pohjana olevat tietolähteet eivät ole käytettävissä. Tietojen käyttötilanteita on kolmea päätyyppiä:
+
+- Tietojoukko käyttää paikallisia tietolähteitä
+- Tietojoukko käyttää tietolähteitä pilvipalvelussa
+- Tietojoukko käyttää sekä paikallisia että pilvipalvelutietolähteitä
+
+### <a name="connecting-to-on-premises-data-sources"></a>Yhdistäminen paikallisiin tietolähteisiin
+
+Jos tietojoukossa käytetään tietolähdettä, johon Power BI:llä ei ole pääsyä suoran verkkoyhteyden kautta, sinun on määritettävä tietojoukon yhdyskäytäväyhteys, ennen kuin voit ottaa ajoitetun päivityksen käyttöön tai suorittaa tietojen päivityspyynnön. Katso lisätietoja tietoyhdyskäytävistä ja niiden toiminnasta kohdasta [Mitä ovat paikalliset tietoyhdyskäytävät?](service-gateway-getting-started.md)
+
+Käytettävissä on seuraavat vaihtoehdot:
+
+- Valitse yrityksen tietoyhdyskäytävä vaaditulla tietolähteen määrityksellä
+- Ota käyttöön henkilökohtainen tietoyhdyskäytävä
+
+> [!NOTE]
+> Voit hakea tietolähteen tyyppejä, jotka edellyttävät tietoyhdyskäytävää, artikkelista [Tietolähteen hallinta – tuonti/ajoitettu päivitys](service-gateway-enterprise-manage-scheduled-refresh.md).
+
+#### <a name="using-an-enterprise-data-gateway"></a>Yrityksen tietoyhdyskäytävän käyttäminen
+
+Microsoft suosittelee muodostamaan yhteyden paikalliseen tietolähteeseen yrityksen yhdyskäytävän avulla henkilökohtaisen yhdyskäytävän sijasta. Varmista, että yhdyskäytävä on määritetty oikein, mikä tarkoittaa sitä, että yhdyskäytävässä on oltava uusimmat päivitykset ja kaikki tarvittavat tietolähteen määritykset. Tietolähteen määritys tarjoaa Power BI:lle tietyn lähteen yhteyden tiedot, kuten yhteyden päätepisteen, todennustilan ja tunnistetietojen tiedot. Lisätietoja tietolähteiden hallinnasta yhdyskäytävässä on kohdassa [Tietolähteen hallinta – tuonti/ajoitettu päivitys](service-gateway-enterprise-manage-scheduled-refresh.md).
+
+Tietojoukon yhdistäminen yrityksen yhdyskäytävään on yhdyskäytävän järjestelmänvalvojalle melko yksinkertaista. Järjestelmänvalvojan oikeuksilla voit päivittää yhdyskäytävän ja lisätä puuttuvat tietolähteet tarvittaessa nopeasti. Voit jopa lisätä puuttuvan tietolähteen yhdyskäytävään suoraan tietojoukon asetussivulta. Laajenna tietolähdenäkymä painamalla painiketta ja valitse sitten **Lisää yhdyskäytävään** -linkki seuraavassa näyttökuvassa esitetyllä tavalla. Jos et ole yhdyskäytävän järjestelmänvalvoja, lähetä esitetylle yhdyskäytävän järjestelmänvalvojalle vaadittujen tietolähteen määritysten lisäämispyyntö.
+
+![Yhdyskäytävään lisääminen](media/refresh-data/add-to-gateway.png)
+
+> [!NOTE]
+> Tietojoukko voi käyttää vain yhtä yhdyskäytäväyhteyttä. Paikallista tietolähdettä ei siis voi käyttää useiden yhdyskäytäväyhteyksien kautta. Tästä syystä sinun on lisättävä kaikki tarvittavat tietolähteen määritykset samaan yhdyskäytävään.
+
+#### <a name="deploying-a-personal-data-gateway"></a>Henkilökohtaisen tietoyhdyskäytävän käyttöönotto
+
+Jos käytössäsi ei ole yrityksen tietoyhdyskäytävää ja olet ainoa tietojoukkoja hallitseva henkilö (sinun ei tarvitse jakaa tietolähteitä muiden kanssa), voit ottaa tietoyhdyskäytävän käyttöön henkilökohtaisessa tilassa. Valitse **Yhdyskäytäväyhteys**-osion **Sinulla ei ole asennettuja henkilökohtaisia yhdyskäytäviä** -kohdasta **Asenna nyt**. Henkilökohtaista tietoyhdyskäytävää koskevat useat rajoitukset, jotka voit katsoa kohdasta [Paikallinen tietoyhdyskäytävä (henkilökohtainen tila)](service-gateway-personal-mode.md).
+
+Toisin kuin yrityksen tietoyhdyskäytävän tapauksessa, sinun ei tarvitse lisätä tietolähteen määrityksiä henkilökohtaiseen yhdyskäytävän. Sen sijaan voit hallita tietolähteen määrityksiä tietolähteen asetuksissa olevien **tietolähteen tunnistetietojen** avulla seuraavassa näyttökuvassa kuvatulla tavalla.
+
+![Tietolähteen tunnistetietojen määrittäminen yhdyskäytävälle](media/refresh-data/configure-data-source-credentials-gateway.png)
+
+> [!NOTE]
+> Henkilökohtainen tietoyhdyskäytävä ei tue tietojoukkoja DirectQuery-/LiveConnect-tilassa. Tietojoukon asetussivu voi pyytää sinua asentamaan sen, mutta jos käytössäsi on pelkkä henkilökohtainen yhdyskäytävä, et pysty määrittämään yhdyskäytäväyhteyttä. Tällaisten tietojoukkojen tuki edellyttää yrityksen yhdyskäytävää.
+
+### <a name="accessing-cloud-data-sources"></a>Pilvipalvelutietolähteiden käyttö
+
+Pilvipalvelutietolähteitä, kuten Azure SQL DB:tä, hyödyntävät tietojoukot eivät edellytä tietoyhdyskäytävä, jos Power BI voi muodostaa suoran verkkoyhteyden lähteeseen. Voit siis hallita näiden tietolähteiden määrityksiä tietojoukon asetuksissa olevien **tietolähteen tunnistetietojen** avulla. Kuten seuraavasta näyttökuvasta ilmenee, sinun ei tarvitse määrittää yhdyskäytäväyhteyttä.
+
+![Tietolähteen tunnistetietojen määrittäminen ilman yhdyskäytävää](media/refresh-data/configure-data-source-credentials.png)
+
+### <a name="accessing-on-premises-and-cloud-sources-in-the-same-source-query"></a>Paikallisten ja pilvilähteiden käyttäminen samassa kyselyssä
+
+Tietojoukko voi noutaa tietoja useista lähteistä, jotka voivat olla paikallisessa tai pilvitallennustilassa. Kuten edellä mainittiin, tietojoukko voi käyttää vain yhtä yhdyskäytäväyhteyttä. Pilvipalveluiden tietolähteet eivät välttämättä edellytä yhdyskäytävää, mutta yhdyskäytävä on pakollinen, jos tietojoukko muodostaa yhteyden sekä paikallisiin että pilvilähteisiin saman koostekyselyn kautta. Tällaisessa tilanteessa Power BI:n on käytettävä yhdyskäytävää myös yhdistäessään pilvitietolähteisiin. Seuraavassa kaaviossa esitetään, miten tällaiset tietojoukot käyttävät tietolähteitään.
+
+![Paikalliset ja pilvitietolähteet](media/refresh-data/cloud-on-premises-data-sources-diagram.png)
+
+> [!NOTE]
+> Jos tietojoukossa käytetään erillisiä koostekyselyitä muodostettaessa yhteyttä paikallisiin ja pilvilähteisiin, Power BI muodostaa yhteyden paikallisiin lähteisiin yhdyskäytäväyhteyden ja pilvilähteisiin suoran verkkoyhteyden avulla. Jos koostekysely yhdistää tai liittää tietoja paikallisista ja pilvitietolähteistä, Power BI vaihtaa yhdyskäytäväyhteyteen myös pilvilähteiden osalta.
+
+Power BI -tietojoukot noutavat ja käyttävät lähdetietoja Power Queryn avulla. Seuraavassa koosteluettelossa on perusesimerkki kyselystä, joka yhdistää paikallisen ja pilvilähteen tietoja.
+
+```
+Let
+
+    OnPremSource = Sql.Database("on-premises-db", "AdventureWorks"),
+
+    CloudSource = Sql.Databases("cloudsql.database.windows.net", "AdventureWorks"),
+
+    TableData1 = OnPremSource{[Schema="Sales",Item="Customer"]}[Data],
+
+    TableData2 = CloudSource {[Schema="Sales",Item="Customer"]}[Data],
+
+    MergedData = Table.NestedJoin(TableData1, {"BusinessEntityID"}, TableData2, {"BusinessEntityID"}, "MergedData", JoinKind.Inner)
+
+in
+
+    MergedData
+```
+
+Voit tukea paikallisten ja pilvilähteiden tietojen yhdistämistä tai liittämistä määrittämällä tietoyhdyskäytävän jommallakummalla tavalla:
+
+- Lisää yhdyskäytävälle paikallisten tietolähteiden lisäksi pilvitietolähteen määritys.
+- Valitse **Salli käyttäjän pilvipalvelutietolähteiden päivittäminen tämän yhdyskäytäväklusterin kautta** -valintaruutu.
+
+![Päivittäminen yhdyskäytäväklusterin kautta](media/refresh-data/refresh-gateway-cluster.png)
+
+Jos valitset yllä olevan esimerkin mukaisesti yhdyskäytävän määrityksissä olevan **Salli käyttäjän pilvipalvelutietolähteiden päivittäminen tämän yhdyskäytäväklusterin kautta** -valintaruudun, Power BI käyttää pilvipalvelulähdettä, jonka käyttäjä on määrittänyt tietojoukon asetuksissa **Tietolähteen tunnistetiedot** -kohdassa. Tämä vähentää yhdyskäytävän määrityksen resurssivaatimuksia. Jos toisaalta haluat hallita yhdyskäytäväsi muodostamia yhteyksiä tarkemmin, älä valitse tätä valintaruutua. Tässä tapauksessa sinun on lisättävä yksiselitteinen tietolähteen määritys kullekin pilvilähteelle, jonka haluat tukevan yhdyskäytävääsi. Voit myös valita valintaruudun ja lisätä pilvilähteiden yksiselitteiset tietolähdemääritykset yhdyskäytävälle. Tässä tapauksessa yhdyskäytävässä käytetään kaikkien vastaavien lähteiden tietolähdemäärityksiä.
+
+### <a name="configuring-query-parameters"></a>Kyselyparametrien määrittäminen
+
+Power Querylla luomasi kooste- eli M-kyselyt voivat olla hyvin yksinkertaisia vaiheita, parametrisoituja rakenteita tai mitä tahansa siltä väliltä. Seuraavassa luettelossa on pieni näyte koostekyselystä, jossa on käytetty kahta parametria: _SchemaName_ ja _TableName_. Niiden avulla käytetään tiettyä AdventureWorks-tietokannassa olevaa taulukkoa.
+
+```
+let
+
+    Source = Sql.Database("SqlServer01", "AdventureWorks"),
+
+    TableData = Source{[Schema=SchemaName,Item=TableName]}[Data]
+
+in
+
+    TableData
+```
+
+> [!NOTE]
+> Kyselyparametreja tuetaan vain tuontitilassa olevissa tietojoukoissa. DirectQuery-/LiveConnect-tila ei tue kyselyjen parametrimääritelmiä.
+
+Määritä koostekyselyn parametrit tietojoukon asetuksista ja varmista näin, että parametrisoitu tietojoukko käyttää asianmukaisia tietoja. Voit myös päivittää parametrit ohjelmallisesti [Power BI:n REST-ohjelmointirajapinnan](/rest/api/power-bi/datasets/updateparametersingroup) avulla. Seuraavassa näyttökuvassa esitetään yllä kuvailtua koostekyselyä käyttävä tietojoukon kyselyparametrien määrittäminen käyttöliittymän kautta.
+
+![Kyselyparametrien määrittäminen](media/refresh-data/configure-query-parameters.png)
+
+> [!NOTE]
+> Power BI ei tue parametrisoituja tietolähdemäärityksiä eli dynaamisia tietolähteitä. Et voi esimerkiksi parametrisoida tietojen käyttöfunktiota Sql.Database(”SqlServer01”, ”AdventureWorks”). Jos tietojoukossa käytetään dynaamisia tietolähteitä, Power BI ilmoittaa, että se havaitsi tuntemattoman tai tukemattoman tietolähteen. Sinun on korvattava tietojen käyttöfunktion parametrit staattisilla arvoilla, jotta Power BI voi tunnistaa tietolähteet ja muodostaa niihin yhteyden. Lisätietoja on kohdassa [Tukemattoman tietolähteen vianmääritys päivitystä varten](service-admin-troubleshoot-unsupported-data-source-for-refresh.md).
 
 ## <a name="configure-scheduled-refresh"></a>Ajoitetun päivityksen määrittäminen
-Lisätietoja ajoitetun päivityksen määrittämisestä on kohdassa [Ajoitetun päivityksen määrittäminen](refresh-scheduled-refresh.md)
 
-## <a name="common-data-refresh-scenarios"></a>Yleiset tietojen päivittämisen esimerkkitilanteet
-Joskus paras tapa perehtyä tietojen uudelleenlataamiseen Power BI:ssä on tarkastella esimerkkejä. Tässä on joitakin yleisiä tietojen päivittämisen esimerkkitilanteita:
+Liitettävyyden määrittäminen Power BI:n ja tietolähteiden välillä on haastavin osa tietojen päivityksen määrittämistä. Jäljellä olevat vaiheet on melko yksinkertaista ja sisältävät päivitysaikataulun määrittämisen sekä päivitysten virheilmoitusten käyttöönottamisen. Katso vaiheittaiset ohjeet [Ajoitetun päivityksen määrittäminen](refresh-scheduled-refresh.md) -oppaasta.
 
-### <a name="excel-workbook-with-tables-of-data"></a>Excel-työkirja, jossa on tietoja sisältäviä taulukoita
-Sinulla on Excel-työkirja, jossa on useita tietoja sisältäviä taulukoita, mutta mitään niistä ei ole ladattu Excel-tietomalliin. Lataat työkirjatiedoston paikallisesta asemasta Power BI:hin Nouda tiedot -toiminnolla ja luot raporttinäkymän. Nyt olet kuitenkin tehnyt joitakin muutoksia paikallisessa asemassa sijaitsevan työkirjan taulukoihin ja haluat päivittää Power BI -raporttinäkymän uusilla tiedoilla.
+### <a name="setting-a-refresh-schedule"></a>Päivitysaikataulun määrittäminen
 
-Valitettavasti päivittämistä ei tueta tässä tilanteessa. Jotta voit päivittää tietojoukon raporttinäkymään, sinun on ladattava työkirja uudelleen. Tähän on kuitenkin olemassa mainio ratkaisu: Siirrä työkirjatiedostosi Onedriveen tai SharePoint Onlineen!
+**Ajoitettu päivitys** -osiossa määritetään tietojoukon päivittämisen ajankohdat ja ajankohtien tiheys. Kuten aiemmin mainittiin, voit määrittää enintään kahdeksan päivittäistä ajankohtaa, jos tietojoukkosi on jaetussa kapasiteetissa, tai 48 ajankohtaa, jos tietojoukkosi on Power BI Premiumissa. Seuraavassa näyttökuvassa esitetään ajoitettu päivitys, jonka päivitysväli on 12 tuntia.
 
-Kun muodostat yhteyden OneDrivessa tai SharePoint Onlinessa olevaan tiedostoon, raporttisi ja raporttinäkymäsi näyttävät tiedot juuri sellaisina kuin ne ovat tiedostossa. Tässä tapauksessa tiedot näytetään Excel-työkirjastasi. Power BI tarkistaa tiedoston päivitykset automaattisesti noin tunnin välein. Jos teet muutoksia OneDriveen tai SharePoint Onlineen tallennettuun työkirjaan, kyseiset muutokset näkyvät raporttinäkymissäsi ja raporteissasi tunnin sisällä. Sinun ei tarvitse määrittää päivitystä. Jos haluat nähdä päivitykset heti Power BI:ssä, voit päivittää tietojoukon manuaalisesti käyttämällä Päivitä nyt -toimintoa.
+![Ajoitetun päivityksen määrittäminen](media/refresh-data/configure-scheduled-refresh.png)
 
-Lisätietoja on artikkeleissa [Excel-tiedot Power BI:ssä](service-excel-workbook-files.md) ja [OneDriven Excel-työkirjasta luodun tietojoukon päivittäminen](refresh-excel-file-onedrive.md).
+Kun päivitysaikataulu on määritetty, tietojoukon asetussivulla kerrotaan seuraavan päivityksen ajankohta yllä olevan kuvan mukaisesti. Jos haluat päivittää tiedot tätä aiemmin esimerkiksi yhdyskäytävän ja tietolähteen määritteiden testaamista varten, suorita päivitys käyttämällä vasemman siirtymisruudun tietojoukko-valikossa olevaa Päivitä nyt -toimintoa. Päivityspyynnöt eivät vaikuta seuraavan ajoitetun päivityksen ajankohtaan, mutta ne kuluttavat päivittäistä päivityskiintiötä. Tätä aihetta on käsitelty ylempänä tässä artikkelissa.
 
-### <a name="excel-workbook-connects-to-a-sql-database-in-your-company"></a>Excel-työkirja muodostaa yhteyden yrityksesi SQL-tietokantaan
-Oletetaan, että sinulla on Excel-työkirja nimeltä SalesReport.xlsx paikallisessa tietokoneessasi. Olet muodostanut yhteyden yrityksesi palvelimella olevaan SQL-tietokantaan Excelin Power Query -toiminnolla ja tehnyt kyselyn myyntitiedoista, jotka on ladattu tietomalliin. Joka aamu avaat työkirjan ja päivität Pivot-taulukot painamalla Päivitä-painiketta.
-
-Haluat nyt tarkastella myyntitietojasi Power BI:ssä, joten käytät Nouda tiedot -toimintoa yhteyden muodostamiseen ja SalesReport.xlsx-työkirjan lataamiseen paikallisesta asemasta.
-
-Tässä tapauksessa voit päivittää manuaalisesti SalesReport.xlsx-tietojoukon tiedot tai määrittää ajoitetun päivityksen. Koska tiedot ovat peräisin yrityksesi SQL-tietokannasta, sinun on ladattava ja asennettava yhdyskäytävä. Kun olet asentanut ja määrittänyt yhdyskäytävän, sinun täytyy määrittää SalesReport-tietojoukon asetukset ja kirjautua tietolähteeseen. Tämä on kuitenkin tehtävä vain kerran. Voit sen jälkeen ajoittaa päivityksen, jolloin Power BI muodostaa automaattisesti yhteyden SQL-tietokantaan ja noutaa päivitetyt tiedot. Myös raporttisi ja raporttinäkymäsi päivittyvät automaattisesti.
+Huomaa myös, että määritetty päivityksen kellonaika ei ole ehdottoman tarkka. Power BI käynnistää ajoitetut päivitykset sopivimmalla hetkellä. Pyrimme siihen, että päivitys alkaa 15 minuutin sisällä suunnitellusta ajankohdasta, mutta viive voi venyä tunninkin mittaiseksi, jos tarvittavat resurssit eivät ole saatavilla aikaisemmin.
 
 > [!NOTE]
-> Tämä päivittää ainoastaan Power BI -palvelun sisällä olevan tietojoukon tiedot. Paikallista tiedostoa ei päivitetä.
-> 
-> 
+> Power BI peruu päivitysaikataulusi aktivoinnin neljän peräkkäisen päivitysvirheen jälkeen tai havaitessaan vakavan, määritysten päivittämistä edellyttävän virheen, jota palvelu ei pysty ratkaisemaan itse. Esimerkiksi virheelliset tai vanhentuneet tunnistetiedot voivat aiheuttaa tällaisen tilanteen. Peräkkäisten päivitysvirheiden raja-arvoa ei voi muuttaa.
 
-Lisätietoja on artikkeleissa [Excel-tiedot Power BI:ssä](service-excel-workbook-files.md), [Power BI Gateway – henkilökohtainen](service-gateway-personal-mode.md), [Paikallinen tietoyhdyskäytävä](service-gateway-onprem.md) ja [Paikallisen aseman Excel-työkirjasta luodun tietojoukon päivittäminen](refresh-excel-file-local-drive.md).
+### <a name="getting-refresh-failure-notifications"></a>Päivityksen virheilmoitusten saaminen
 
-### <a name="power-bi-desktop-file-with-data-from-an-odata-feed"></a>Power BI Desktop -tiedosto, jossa on tietoja OData-syötteestä
-Tässä tapauksessa käytät Power BI Desktopin Nouda tiedot -toimintoa yhteyden muodostamiseen ja laskentatietojen tuomiseen OData-syötteestä.  Luo useita raportteja Power BI Desktopissa, annat tiedostolle nimeksi WACensus ja tallennat sen jaettuun asemaan yrityksessäsi. Sen jälkeen julkaiset tiedoston Power BI -palveluun.
+Oletusarvoisesti Power BI lähettää virheistä sähköposti-ilmoituksen tietojoukon omistajalle niin, että omistaja voi reagoida päivitysongelmiin ajoissa. Power BI lähettää sinulle ilmoituksen myös silloin, kun palvelu poistaa aikataulusi käytöstä peräkkäisten virheiden vuoksi. Microsoft suosittelee, että pidät valintaruudun **Lähetä päivityksenvirheistä sähköposti-ilmoitus** valittuna.
 
-Tässä tapauksessa voit päivittää manuaalisesti WACensus-tietojoukon tiedot tai määrittää ajoitetun päivityksen. Koska tietolähteen tiedot ovat peräisin OData-syötteestä, sinun ei tarvitse asentaa yhdyskäytävää, mutta sinun on määritettävä WACensus-tietojoukon asetukset ja kirjauduttava OData-tietolähteeseen. Voit sen jälkeen ajoittaa päivityksen, jolloin Power BI muodostaa automaattisesti yhteyden OData-syötteeseen ja noutaa päivitetyt tiedot. Myös raporttisi ja raporttinäkymäsi päivittyvät automaattisesti.
+Huomaa, että Power BI ei lähetä ainoastaan päivitysvirheistä koskevia ilmoituksia, vaan se ilmoittaa myös käyttämättömyydestä johtuvasta palvelun keskeytymisestä. Power BI pitää tietojoukkoa käyttämättömänä, kun yksikään käyttäjä ei ole käynyt raporttinäkymässä tai tietojoukosta koostetussa raportissa kahteen kuukauteen. Tällaisissa tilanteissa Power BI lähettää tietojoukon omistajalle sähköpostiviestin, jossa kerrotaan, että palvelu on poistanut käytöstä tietojoukon päivitysaikataulun. Seuraavassa näyttökuvassa on esimerkki tällaisesta ilmoituksesta.
 
-Lisätietoja on artikkeleissa [Power BI Desktopista julkaiseminen](desktop-upload-desktop-files.md), [Paikallisen aseman Power BI Desktop -tiedostosta luodun tietojoukon päivittäminen](refresh-desktop-file-local-drive.md) ja [OneDriven Power BI Desktop -tiedostosta luodun tietojoukon päivittäminen](refresh-desktop-file-onedrive.md).
+![Päivitysten keskeytymisestä ilmoittava sähköposti](media/refresh-data/email-paused-refresh.png)
 
-### <a name="shared-content-pack-from-another-user-in-your-organization"></a>Jaettu sisältöpaketti toiselta käyttäjältä organisaatiossasi
-Olet muodostanut yhteyden organisaation sisältöpakettiin. Se sisältää raporttinäkymän, useita raportteja ja tietojoukon.
+Voit jatkaa ajoitettuja päivityksiä käymällä kyseisestä tietojoukosta koostetussa raportissa tai raporttinäkymässä tai päivittämällä tietojoukon manuaalisesti **Päivitä nyt** -vaihtoehdon avulla.
 
-Tässä tilanteessa et voi määrittää tietojoukon päivittämistä. Sisältöpaketin luonut analyytikko on vastuussa tietojoukon päivittämisestä käytettävien tietolähteiden mukaan.
+### <a name="checking-refresh-status-and-history"></a>Päivityksen tilan ja historian tarkistaminen
 
-Jos sisältöpaketin raporttinäkymäsi ja raporttisi eivät päivity, ota yhteyttä sisältöpaketin luoneeseen analyytikkoon.
+Virheilmoitusten lisäksi suosittelemme tarkistamaan tietojoukot säännöllisesti päivitysvirheiden varalta. Voit tehdä tämän nopeasti avaamalla työtilan tietojoukkojen luettelon. Virheitä palauttavat tietojoukot on merkitty pienellä varoituskuvakkeella. Voit katsoa lisätiedot valitsemalla varoituskuvakkeen seuraavassa näyttökuvassa esitetyllä tavalla. Lisätietoja päivitysvirheiden vianmäärityksestä on kohdassa [Päivitystilanteiden vianmääritys](refresh-troubleshooting-refresh-scenarios.md).
 
-Lisätietoja on artikkeleissa [Organisaation sisältöpakettien esittely](service-organizational-content-pack-introduction.md) ja [Työskentely organisaation sisältöpakettien kanssa](service-organizational-content-pack-copy-refresh-access.md).
+![Päivityksen tilan varoitus](media/refresh-data/refresh-status-warning.png)
 
-### <a name="content-pack-from-an-online-service-provider-like-salesforce"></a>Sisältöpaketti online-palveluntarjoajalta, kuten Salesforcelta
-Käytät Power BI:n Nouda tiedot -toimintoa yhteyden muodostamiseen ja tietojen tuomiseen online-palveluntarjoajalta, kuten Salesforcelta. Tämä onkin helppoa. Salesforce-tietojoukko on ajoitettu päivittymään automaattisesti kerran päivässä. 
+Varoituskuvake ilmaisee tietojoukon senhetkiset ongelmat, mutta suosittelemme myös tarkistamaan päivityshistorian ajoittain. Nimensä mukaisesti päivityshistoria mahdollistaa viimeisimpien synkronointijaksojen onnistumisen tai epäonnistumisen tilan tarkistamisen. Yhdyskäytävän järjestelmänvalvoja on esimerkiksi saattanut päivittää vanhentuneet tietojoukon tunnistetiedot. Seuraavasta näyttökuvasta voit nähdä, että päivityshistoriasta ilmenee, milloin päivitysvirhe on korjattu.
 
-Kuten useimmat online-palveluntarjoajat, Salesforce päivittää tiedot kerran päivässä, yleensä yöllä. Voit halutessasi päivittää Salesforce-tietojoukkosi manuaalisesti tai ajoittaa päivityksen, mutta se ei ole tarpeen, koska Power BI päivittää tietojoukon automaattisesti ja myös raporttisi ja raporttinäkymäsi päivitetään.
+![Päivityshistorian viestit](media/refresh-data/refresh-history-messages.png)
 
-Lisätietoja on artikkelissa [Salesforce-sisältöpaketti Power BI:tä varten](service-connect-to-salesforce.md).
+> [!NOTE]
+> Linkin päivityshistoriaan on saatavana tietojoukon asetuksista. Voit myös noutaa päivityshistorian tiedot ohjelmallisesti [Power BI:n REST-ohjelmointirajapinnan](/rest/api/power-bi/datasets/getrefreshhistoryingroup) avulla. Mukautetun ratkaisun avulla voit valvoa useiden tietojoukkojen päivityshistoriaa keskitetysti.
 
-## <a name="troubleshooting"></a>Vianmääritys
-Ongelmat johtuvat yleensä siitä, että Power BI ei voi kirjautua sisään tietolähteisiin tai tietojoukko muodostaa yhteyden paikalliseen tietolähteeseen, mutta yhdyskäytävä on offline-tilassa. Varmista, että Power BI voi kirjautua sisään tietolähteisiin. Jos tietolähteeseen kirjautumisen salasana muuttuu tai jos Power BI kirjataan ulos tietolähteestä, yritä kirjautua uudelleen sisään tietolähteisiin Tietolähteen tunnistetiedot -kohdassa.
+## <a name="best-practices"></a>Parhaat käytännöt
 
-Lisätietoja vianmäärityksestä on artikkeleissa [Välineet päivitysongelmien vianmääritykseen](service-gateway-onprem-tshoot.md) ja [Päivitystilanteiden vianmääritys](refresh-troubleshooting-refresh-scenarios.md).
+Tarkistamalla tietojoukkojesi päivityshistorian säännöllisesti voit varmistaa, että raporteissa ja koontinäytöissä käytetään ajantasaisia tietoja. Tämä on parhaista käytännöistä tärkeimpiä. Jos havaitset ongelmia, korjaa ne pian ja ota tarvittaessa yhteys tietolähteiden omistajiin ja yhdyskäytävän järjestelmänvalvojiin.
+
+Huomioi seuraavat suositukset, jotka koskevat tietojoukkojen luotettavan päivitysprosessin perustamista ja ylläpitoa:
+
+- Ajoita päivitykset kiireettömiin kellonaikoihin, varsinkin jos tietojoukkosi ovat Power BI Premiumissa. Jos jaat tietojoukkojen päivitysjaksot laajemmalle aikavälille, pystyt välttämään rajallisten resurssien kuormitushuiput. Päivitysjakson käynnistysviiveet ovat merkki resurssien ylikuormituksesta. Jos kaikki Premium-kapasiteetti on käytössä, Power BI saattaa jopa ohittaa päivitysjaksoja.
+- Pidä päivitysrajat mielessäsi. Jos tietolähde muuttuu usein tai jos tietomäärät ovat merkittäviä, tuontitilan sijaan kannattaa käyttää DirectQuery-/LiveConnect-tilaa, jos lähteen lisääntynyt kuormitus ja vaikutus kyselyjen suorituskykyyn on hyväksyttävä. Älä päivitä tuontitilassa olevaa tietojoukkoa koko ajan. DirectQuery-LiveConnect-tilaa koskevat kuitenkin useat rajoitukset, kuten palautettavien tietojen yhden miljoonan rivin raja ja vastausten 225 sekunnin määräaika kyselyjä suoritettaessa. Katso lisätiedot kohdasta [DirectQueryn käyttö Power BI Desktopissa](desktop-use-directquery.md). Nämä rajoitukset saattavat kuitenkin edellyttää tuontitilan käyttöä. Jos tietomäärä on erittäin suuri, harkitse [Power BI:n koosteiden](desktop-aggregations.md) käyttöä.
+- Varmista, että tietojoukon päivitysaika ei ylitä päivityksen enimmäiskestoa. Tarkista päivityksen kesto Power BI Desktopin avulla. Jos päivitys kestää yli 2 tuntia, harkitse tietojoukon siirtämistä Power BI Premiumiin. Tietojoukkoa ei ehkä voida päivittää jaetulla kapasiteetilla. Harkitse myös sellaisten tietojoukkojen [asteittaista päivittämistä Power BI Premiumiin](service-premium-incremental-refresh.md), joiden koko on yli 1 Gt tai joiden päivittäminen kestää useita tunteja.
+- Optimoi tietojoukkosi niin, että ne sisältävät vain sellaiset taulukot ja sarakkeet, joita käytetään raportissasi ja raporttinäkymässäsi. Optimoi koostekyselyt ja vältä mahdollisuuksien mukaan dynaamisten tietolähteiden määritykset ja kalliit DAX-laskennat. Vältä erityisesti DAX-funktioita, jotka testaavat taulukon jokaisen rivin. Näiden muistin kulutus ja tietojenkäsittelykustannukset ovat korkeat.
+- Käytä samoja tietosuoja-asetuksia kuin Power BI Desktopissa. Näin voit varmistaa, että Power BI voi luoda tehokkaita lähdekyselyitä. Huomaa, että Power BI Desktop ei julkaise tietosuoja-asetuksia. Sinun on otettava nämä asetukset uudelleen käyttöön manuaalisesti tietolähteiden määrityksissä tietojoukon julkaisemisen jälkeen.
+- Rajoita visualisoinnit koontinäyttösi, erityisesti jos käytät [rivitason suojausta (RLS)](service-admin-rls.md). Kuten aiemmin tässä artikkelissa kerrottiin, raporttinäkymän ruutujen liiallinen määrä voi vaikuttaa merkittävästi päivityksen kestoon.
+- Yhdistä tietojoukot paikallisiin tietolähteisiin yrityksen luotettavan tietoyhdyskäytävän avulla. Jos huomaat yhdyskäytävään liittyviä päivityksen virheitä, kuten sellaisia, joiden mukaan yhdyskäytävä ei ole käytettävissä tai se on ylikuormittunut, ota yhteys yhdyskäytävän järjestelmänvalvojiin ja pyydä häntä lisäämään yhdyskäytäviä aiemmin luotuihin klustereihin tai ottamaan käyttöön uusia klustereita (skaalautuminen ylöspäin/vaakasuunnassa).
+- Käytä erillisiä tietoyhdyskäytäviä tietojoukkojen tuomiseen sekä tietojoukkojen DirectQuery-/LiveConnect-yhteyksiin niin, että ajoitetun päivityksen aikana tuodut tiedot eivät vaikuta DirectQuery-/LiveConnect-tietojoukkojen päällä olevien raporttien ja raporttinäkymien suorituskykyyn. Tällaiset tietojoukot lähettävät tietolähteelleen kyselyn käyttäjän jokaisen toimen yhteydessä.
+- Varmista, että Power BI voi lähettää päivityksen virheilmoituksia postilaatikkoosi. Roskapostisuodattimet saattaa estää sähköpostiviestejä tai siirtää ne eri kansioon jolloin et välttämättä huomaa niitä heti.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
+
+[Ajoitetun päivityksen määrittäminen](refresh-scheduled-refresh.md)  
 [Välineet päivitysongelmien vianmääritykseen](service-gateway-onprem-tshoot.md)  
 [Päivitystilanteiden vianmääritys](refresh-troubleshooting-refresh-scenarios.md)  
-[Power BI -yhdyskäytävä – henkilökohtainen](service-gateway-personal-mode.md)  
-[Paikallinen tietoyhdyskäytävä](service-gateway-onprem.md)  
 
-Ilmenikö muuta kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)
-
+Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)
