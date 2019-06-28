@@ -10,12 +10,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 05/02/2019
 LocalizationGroup: Conceptual
-ms.openlocfilehash: e75810d18b39619d249c3acd9a9140b3d19d5f35
-ms.sourcegitcommit: ec5b6a9f87bc098a85c0f4607ca7f6e2287df1f5
+ms.openlocfilehash: 9aa80c336fa7918632b71b25f8f57b2798fa52e5
+ms.sourcegitcommit: 8dee40f07d284ec84a8afa0100359f146e1dd88b
 ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66051476"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67418687"
 ---
 # <a name="power-bi-security-whitepaper"></a>Power BI:n suojausraportti
 
@@ -46,7 +46,7 @@ Kukin Power BI -käyttöönotto koostuu kahdesta klusterista – Web Front End (
 
 ![WFE ja Back End](media/whitepaper-powerbi-security/powerbi-security-whitepaper_01.png)
 
-Power BI käyttää tilin todentamiseen ja hallintaan Azure Active Directorya (**AAD**). Power BI käyttää myös **Azure Traffic Manageria** (ATM) ohjaamaan käyttäjät lähimpään palvelinkeskukseen, joka perustuu yhdistämistä yrittävän asiakkaan DNS-tietueeseen. Näin käyttäjä voidaan todentaa ja staattinen sisältö ja tiedostot ladata. Power BI käyttää maantieteellisesti lähinnä WFE tarpeellisen staattisen sisällön ja tiedostojen jakamiseen käyttäjille, lukuun ottamatta mukautettuja visualisointeja, jotka toimitetaan **Azure sisällön toimitusverkostosta (CDN)**.
+Power BI käyttää tilin todentamiseen ja hallintaan Azure Active Directorya (**AAD**). Power BI käyttää myös **Azure Traffic Manageria** (ATM) ohjaamaan käyttäjät lähimpään palvelinkeskukseen, joka perustuu yhdistämistä yrittävän asiakkaan DNS-tietueeseen. Näin käyttäjä voidaan todentaa ja staattinen sisältö ja tiedostot ladata. Power BI käyttää maantieteellisesti lähinnä WFE tarpeellisen staattisen sisällön ja tiedostojen jakamiseen käyttäjille, lukuun ottamatta mukautettuja visualisointeja, jotka toimitetaan **Azure sisällön toimitusverkostosta (CDN)** .
 
 ### <a name="the-wfe-cluster"></a>WFE-klusteri
 
@@ -121,7 +121,7 @@ Seuraavissa linkeissä on lisätietoja Azure-tietokeskuksista.
 - [Azure-alueet](http://azure.microsoft.com/regions/) – tietoa Azuren maailmanlaajuisesta edustuksesta ja sijainneista
 - [Azure-palvelut alueittain](http://azure.microsoft.com/regions/#services) – Täydellinen luettelo kullakin alueella saatavilla olevista Microsoftin Azure-palveluista (sekä infrastruktuuripalvelut että käyttöympäristön palvelut).
 
-Tällä hetkellä Power BI -palvelu on käytettävissä tietyillä palvelinkeskusten palvelemilla alueilla, kuten [Microsoft Trust Center]((https://www.microsoft.com/TrustCenter/CloudServices/business-application-platform/data-location)issä on kuvattu. Seuraava linkki näyttää kartan Power BI -palvelinkeskuksista. Kun viet hiiren osoittimen alueen päällä, näet alueella sijaitsevat palvelinkeskukset:
+Tällä hetkellä Power BI -palvelu on käytettävissä tietyillä palvelinkeskusten palvelemilla alueilla, kuten [Microsoft Trust Center]((https://www.microsoft.com/TrustCenter/CloudServices/business-application-platform/data-location) issä on kuvattu. Seuraava linkki näyttää kartan Power BI -palvelinkeskuksista. Kun viet hiiren osoittimen alueen päällä, näet alueella sijaitsevat palvelinkeskukset:
 
 * [Power BI -palvelinkeskukset](https://www.microsoft.com/TrustCenter/CloudServices/business-application-platform/data-location)
 
@@ -320,7 +320,7 @@ Kuhunkin tietolähteeseen käyttäjä muodostaa yhteyden niiden kirjautumisen pe
 
 Kun käyttäjä jakaa kyselyitä, koontinäyttöjä, raportteja tai mitä tahansa visualisointeja, kyseisten tietojen ja visualisointien käyttöoikeus määräytyy sen mukaan, tukevatko taustalla olevat tietolähteet roolitason suojausta (RLS).
 
-Jos taustalla oleva tietolähde kykenee **Power BI:n roolitason suojaukseen (RLS)**, Power BI -palvelu käyttää kyseisen roolitason suojausta ja käyttäjät, joiden tunnistetiedot eivät riitä pohjana olevien tietojen käsittelyyn (esimerkiksi koontinäytössä, raportissa tai muussa tieto-artefaktissa käytetty kysely), eivät näe sellaisia tietoja, joihin käyttäjän oikeudet eivät riitä. Jos käyttäjän oikeudet pohjana oleviin tietoihin poikkeavat siitä käyttäjästä, joka on luonut koontinäytön tai raportin, visualisoinnit ja muut artefaktit näyttävät vain sellaisia tietoja, joihin käyttäjällä on oikeudet.
+Jos taustalla oleva tietolähde kykenee **Power BI:n roolitason suojaukseen (RLS)** , Power BI -palvelu käyttää kyseisen roolitason suojausta ja käyttäjät, joiden tunnistetiedot eivät riitä pohjana olevien tietojen käsittelyyn (esimerkiksi koontinäytössä, raportissa tai muussa tieto-artefaktissa käytetty kysely), eivät näe sellaisia tietoja, joihin käyttäjän oikeudet eivät riitä. Jos käyttäjän oikeudet pohjana oleviin tietoihin poikkeavat siitä käyttäjästä, joka on luonut koontinäytön tai raportin, visualisoinnit ja muut artefaktit näyttävät vain sellaisia tietoja, joihin käyttäjällä on oikeudet.
 
 Jos tietolähde **ei** käytä roolitason suojausta, Power BI -kirjautumistunnuksia käytetään pohjana olevaan tietolähteeseen, tai jos yhteyden aikana on annettu muut tunnistetiedot, käytetään kyseisiä annettuja tunnistetietoja. Kun käyttäjä lataa Power BI -palveluun tietoja muusta kuin RLS-tietolähteestä, tiedot tallennetaan Power BI:hin niin kuin tämän asiakirjan **Tietojen tallentaminen ja siirtäminen** -osassa kuvataan. Jos kyseessä on muu kuin RLS-tietolähde ja tietoja jaetaan muiden käyttäjien kanssa (esimerkiksi koontinäytössä tai raportissa) tai tiedot päivitetään, tietojen käsittelyyn tai näyttämiseen käytetään alkuperäisiä tunnistetietoja.
 
@@ -380,7 +380,7 @@ Seuraavat kysymykset ovat yleisiä Power BI:n suojaukseen liittyviä kysymyksiä
 
 **Kuinka käyttäjät muodostavat yhteyden tietolähteisiin ja pääsevät käyttämään tietolähteitä Power BI:tä käyttäessään?**
 
-* **Power BI:n tunnistetiedot ja toimialueen tunnistetiedot:** Käyttäjät kirjautuvat Power BI:hin käyttämällä sähköpostiosoitetta; kun käyttäjä yrittää muodostaa yhteyden tietoresurssiin, Power BI välittää Power BI -kirjautumissähköpostiosoitteen tunnistetietoina. Jos kyseessä on toimialueeseen yhdistetty resurssi (joko paikallinen tai pilvipohjainen), hakemistopalvelu määrittää kirjautumissähköpostiosoitetta vastaavan _käyttäjän ensisijaisen nimen_ ([UPN](https://msdn.microsoft.com/library/windows/desktop/aa380525(v=vs.85).aspx)), joka määrittää, riittävätkö tunnistetiedot sallimaan käytön. Jos organisaatio käyttää Power BI:hin kirjautumiseen työpohjaisia sähköpostiosoitteita (samaa sähköpostia, jolla organisaatiossa kirjaudutaan työresursseihin, esimerkiksi _david@contoso.com_), yhdistäminen voi tapahtua saumattomasti; jos organisaatio käyttää muita kuin työpohjaisia sähköpostiosoitteita (esimerkiksi _david@contoso.onmicrosoft.com_), hakemistojen yhdistäminen on suoritettava, jotta Power BI -sisäänkirjautumistiedoilla voidaan sallia paikallisten resurssien käyttöoikeus.
+* **Power BI:n tunnistetiedot ja toimialueen tunnistetiedot:** Käyttäjät kirjautuvat Power BI:hin käyttämällä sähköpostiosoitetta; kun käyttäjä yrittää muodostaa yhteyden tietoresurssiin, Power BI välittää Power BI -kirjautumissähköpostiosoitteen tunnistetietoina. Jos kyseessä on toimialueeseen yhdistetty resurssi (joko paikallinen tai pilvipohjainen), hakemistopalvelu määrittää kirjautumissähköpostiosoitetta vastaavan _käyttäjän ensisijaisen nimen_ ([UPN](https://msdn.microsoft.com/library/windows/desktop/aa380525(v=vs.85).aspx)), joka määrittää, riittävätkö tunnistetiedot sallimaan käytön. Jos organisaatio käyttää Power BI:hin kirjautumiseen työpohjaisia sähköpostiosoitteita (samaa sähköpostia, jolla organisaatiossa kirjaudutaan työresursseihin, esimerkiksi _david@contoso.com_ ), yhdistäminen voi tapahtua saumattomasti; jos organisaatio käyttää muita kuin työpohjaisia sähköpostiosoitteita (esimerkiksi _david@contoso.onmicrosoft.com_ ), hakemistojen yhdistäminen on suoritettava, jotta Power BI -sisäänkirjautumistiedoilla voidaan sallia paikallisten resurssien käyttöoikeus.
 
 * **SQL Server Analysis Services ja Power BI:** Power BI tarjoaa organisaatioille, jotka käyttävät paikallisia SQL Server Analysis Services -palveluita, Power BI:n paikallisen tietoyhdyskäytävän (joka on **yhdyskäytävä**, kuten aiemmissa osioissa on kuvattu).  Power BI:n paikallinen tietoyhdyskäytävä voi toteuttaa tietolähteissä roolitason suojauksen (RLS). Jos haluat lisätietoja RLS-suojauksesta, katso tämän asiakirjan aiempi osio **Käyttäjien todentaminen tietolähteissä**. Voit myös lukea syvällisemmän artikkelin, jonka aiheena on [Power BI Gateway](service-gateway-manage.md).
 
@@ -426,14 +426,11 @@ Seuraavat kysymykset ovat yleisiä Power BI:n suojaukseen liittyviä kysymyksiä
 
 **Kun käytössä on paikallinen tietoyhdyskäytävä, miten palautusavaimia käytetään ja mihin ne on tallennettu? Entä suojattu käyttöoikeuksien hallinta?**
 
-* Yhdyskäytävän asentamisen ja määrittämisen aikana järjestelmänvalvoja kirjoittaa yhdyskäytävän **palautusavaimen**. Tämän **palautusavaimen** avulla luodaan kaksi joukkoa paljon vahvempia avaimia:
+* Yhdyskäytävän asentamisen ja määrittämisen aikana järjestelmänvalvoja kirjoittaa yhdyskäytävän **palautusavaimen**. Että **palautusavain** käytetään vahva **AES** symmetrisen avaimen. **RSA** asymmetrinen avain on myös luotu samanaikaisesti.
 
-  - Epäsymmetrinen **RSA**-avain
-  - Symmetrinen **AES**-avain
+    Luodut avaimet (**RSA** ja **AES**) tallennetaan tiedostoon paikallisessa koneessa. Tiedosto on myös salattu. Tiedoston sisällön salauksen voi purkaa vain kyseisellä Windows-koneella, ja vain kyseistä yhdyskäytävän palvelutiliä käyttämällä.
 
-  Luodut avaimet (**RSA** ja **AES**) tallennetaan tiedostoon paikallisessa koneessa. Tiedosto on myös salattu. Tiedoston sisällön salauksen voi purkaa vain kyseisellä Windows-koneella, ja vain kyseistä yhdyskäytävän palvelutiliä käyttämällä.
-
-  Kun käyttäjä kirjoittaa tietolähteen tunnistetiedot Power BI-palvelun käyttöliittymään, tunnistetiedot salataan selaimessa julkisella avaimella. Yhdyskäytävä salaa uudelleen (jo salatut) tunnistetiedot symmetrisellä AES-avaimella, ennen kuin tiedot tallennetaan Power BI:hin. Tämän prosessin ansiosta Power BI -palvelussa ei koskaan ole salaamattomia tietoja.
+    Kun käyttäjä kirjoittaa tietolähteen tunnistetiedot Power BI-palvelun käyttöliittymään, tunnistetiedot salataan selaimessa julkisella avaimella. Yhdyskäytävä purkaa tunnistetietojen yksityinen RSA-avain ja salaa ne uudelleen AES symmetrisen avaimen ennen kuin tiedot tallennetaan Power BI-palvelussa. Tämän prosessin ansiosta Power BI -palvelussa ei koskaan ole salaamattomia tietoja.
 
 **Mitä kommunikaatioprotokollia paikallinen tietoyhdyskäytävä käyttää, ja miten ne on suojattu?**
 
