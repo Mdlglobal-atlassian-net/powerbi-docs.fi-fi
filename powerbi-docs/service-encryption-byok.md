@@ -8,14 +8,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 06/10/2019
+ms.date: 06/18/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: 7adcfeec771796aa9fe322512f8ca8584559cea0
-ms.sourcegitcommit: c122c1a8c9f502a78ccecd32d2708ab2342409f0
+ms.openlocfilehash: 5c93a50ce481c5fad899c1911b30100dca7cb841
+ms.sourcegitcommit: 8c52b3256f9c1b8e344f22c1867e56e078c6a87c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "66829384"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67264512"
 ---
 # <a name="bring-your-own-encryption-keys-for-power-bi-preview"></a>Omien salausavainten tuominen Power BI:hin (esikatselu)
 
@@ -27,18 +27,17 @@ BYOK:n avulla on helppo noudattaa vaatimuksia, jotka määrittävät avainjärje
 
 ## <a name="data-source-and-storage-considerations"></a>Huomioitavaa tietolähteissä ja tallennusvälineissä
 
-BYOK:n käyttö edellyttää, että lataat tietoja Power BI -palveluun Power BI Desktop (PBIX) -tiedostosta. Kun muodostat yhteyden tietolähteisiin Power BI Desktopissa, sinun on määritettävä tuonnin tallennuksen tila. Et voi käyttää BYOK:ta seuraavissa tilanteissa:
+BYOK:n käyttö edellyttää, että lataat tietoja Power BI -palveluun Power BI Desktop (PBIX) -tiedostosta. Et voi käyttää BYOK:ta seuraavissa tilanteissa:
 
-- DirectQuery
 - Reaaliaikainen Analysis Services -yhteys
 - Excel-työkirjat (ellei tietoja tuoda ensin Power BI Desktopiin)
 - Push-tietojoukot
 
-Seuraavassa osiossa opit määrittämään Azure Key Vaultin, jonne salausavaimet tallennetaan BYOK:ta varten.
+BYOK koskee vain PBIX-tiedostoon liittyvää tietojoukkoa, ei ruutujen ja visualisointien kyselytulosten välimuisteja.
 
 ## <a name="configure-azure-key-vault"></a>Azure Key Vaultin määrittäminen
 
-Azure Key Vault on työkalu salausavainten ja muiden salaisuuksien tallentamiseen ja käyttöön. Voit säilyttää salausavaimia aiemmin luodussa avainholvissa tai voit luoda uuden nimenomaan Power BI -käyttöä varten.
+Tässä osiossa opit määrittämään Azure Key Vaultin, joka on salausavainten ja muiden salaisuuksien tallentamiseen ja käyttöön tarkoitettu työkalu. Voit säilyttää salausavaimia aiemmin luodussa avainholvissa tai voit luoda uuden nimenomaan Power BI -käyttöä varten.
 
 Tämän osion ohjeissa oletetaan, että sinulla on perustiedot Azure Key Vaultin käytöstä. Jos haluat lisätietoja, katso [Mikä on Azure Key Vault?](/azure/key-vault/key-vault-whatis). Avainsäilön määrittäminen:
 
@@ -86,7 +85,7 @@ Kun Azure Key Vault on määritetty oikein, voit alkaa käyttää BYOK:ta vuokra
 
 ## <a name="enable-byok-on-your-tenant"></a>BYOK:n käyttöönotto vuokraajassa
 
-Jotta voit ottaa BYOK:n käyttöön vuokraajatasolla PowerShellin avulla, sinun on ensin lisättävä Power BI -vuokraajallesi Azure Key Vaultissa luodut ja siihen tallennetut salausavaimet. Voit sen jälkeen määrittää nämä salausavaimet Premium-kapasiteettikohtaisesti kyseisen kapasiteetin sisällön salaamista varten.
+Jotta voit ottaa BYOK:n käyttöön vuokraajatasolla [PowerShellin](https://www.powershellgallery.com/packages/MicrosoftPowerBIMgmt.Admin) avulla, sinun on ensin lisättävä Power BI -vuokraajallesi Azure Key Vaultissa luodut ja siihen tallennetut salausavaimet. Voit sen jälkeen määrittää nämä salausavaimet Premium-kapasiteettikohtaisesti kyseisen kapasiteetin sisällön salaamista varten.
 
 ### <a name="important-considerations"></a>Huomioitavaa
 
@@ -98,35 +97,39 @@ Huomioi seuraavat asiat ennen kuin otat BYOK:n käyttöön:
 
 ### <a name="enable-byok"></a>BYOK:n käyttöönotto
 
-BYOK:n käyttöönotto edellyttää, että olet Power BI -palvelun vuokraajan järjestelmänvalvoja ja että kirjaudut sisään `Connect-PowerBIServiceAccount` cmdlet-komennon kautta. Sen jälkeen voit ottaa BYOK:n käyttöön `Add-PowerBIEncryptionKey`:n avulla seuraavassa esimerkissä kuvatulla tavalla:
+BYOK:n käyttöönotto edellyttää, että olet Power BI -palvelun vuokraajan järjestelmänvalvoja ja että kirjaudut sisään `Connect-PowerBIServiceAccount` cmdlet-komennon kautta. Sen jälkeen voit ottaa BYOK:n käyttöön [`Add-PowerBIEncryptionKey`](/powershell/module/microsoftpowerbimgmt.admin/Add-PowerBIEncryptionKey):n avulla seuraavassa esimerkissä kuvatulla tavalla:
 
 ```powershell
 Add-PowerBIEncryptionKey -Name'Contoso Sales' -KeyVaultKeyUri'https://contoso-vault2.vault.azure.net/keys/ContosoKeyVault/b2ab4ba1c7b341eea5ecaaa2wb54c4d2'
 ```
 
-Cmdlet-komento hyväksyy kolme kytkinparametria, jotka vaikuttavat nykyisten ja tulevien kapasiteettien salaukseen. Kaikki kytkimet ovat oletuksena pois käytöstä:
+Cmdlet-komento hyväksyy kaksi kytkinparametria, jotka vaikuttavat nykyisten ja tulevien kapasiteettien salaukseen. Kaikki kytkimet ovat oletuksena pois käytöstä:
 
 - `-Activate`: Ilmaisee, että tätä avainta käytetään kaikissa vuokraajan olemassa olevissa kapasiteeteissa.
 
 - `-Default`: Ilmaisee, että tämä avain on nyt koko vuokraajan oletusarvo. Kun luot uuden kapasiteetin, uusi kapasiteetti perii tämän avaimen.
 
-- `-DefaultAndActivate`: Ilmaisee, että tätä avainta käytetään kaikissa olemassa olevissa sekä uusissa kapasiteeteissa.
+Jos määrität `-Default`-arvon, kaikki tälle vuokraajalle jatkossa luodut kapasiteetit salataan määrittämäsi avaimen (tai päivitetyn oletusavaimen) avulla. Et voi perua oletustoimintoa, joten et voi jatkossa luoda vuokraajaasi premium-kapasiteettia, jossa ei käytetä BYO:ta.
 
-Jos määrität `-Default`- tai `-DefaultAndActivate`-arvon, kaikki tälle vuokraajalle jatkossa luodut kapasiteetit salataan määrittämäsi avaimen (tai päivitetyn oletusavaimen) avulla. Et voi perua oletustoimintoa, joten et voi jatkossa luoda vuokraajaasi premium-kapasiteettia, jossa ei käytetä BYO:ta.
-
-Voit määrittää, miten BYOK:ta käytetään vuokraajassa. Jos haluat esimerkiksi salata yksittäisen kapasiteetin, kutsu `Add-PowerBIEncryptionKey` ja sulje `-Activate`, `-Default` ja `-DefaultAndActivate` kutsun ulkopuolelle. Kutsu sitten `Set-PowerBICapacityEncryptionKey` siinä kapasiteetissa, jossa haluat ottaa BYOK:n käyttöön.
+Voit määrittää, miten BYOK:ta käytetään vuokraajassa. Jos haluat esimerkiksi salata yksittäisen kapasiteetin, kutsu `Add-PowerBIEncryptionKey` ja sulje `-Activate` tai `-Default` kutsun ulkopuolelle. Kutsu sitten `Set-PowerBICapacityEncryptionKey` siinä kapasiteetissa, jossa haluat ottaa BYOK:n käyttöön.
 
 ## <a name="manage-byok"></a>BYOK:n hallinta
 
 Power BI sisältää cmdlet-lisäkomentoja, joiden avulla voit hallintaan vuokraajasi BYOK:ta:
 
-- `Get-PowerBIEncryptionKey` mahdollistaa vuokraajassa sillä hetkellä käytössä olevan avaimen noutamisen:
+- [`Get-PowerBICapacity`](/powershell/module/microsoftpowerbimgmt.capacities/get-powerbicapacity) mahdollistaa kapasiteetissa sillä hetkellä käytössä olevan avaimen noutamisen:
+
+    ```powershell
+    Get-PowerBICapacity -Scope Organization -ShowEncryptionKey
+    ```
+
+- [`Get-PowerBIEncryptionKey`](/powershell/module/microsoftpowerbimgmt.admin/get-powerbiencryptionkey) mahdollistaa vuokraajassa sillä hetkellä käytössä olevan avaimen noutamisen:
 
     ```powershell
     Get-PowerBIEncryptionKey
     ```
 
-- `Get-PowerBIWorkspaceEncryptionStatus` näyttää, ovatko työtilan tietojoukot salattuja ja onko niiden salauksen tila synkronoitu työtilan kanssa:
+- [`Get-PowerBIWorkspaceEncryptionStatus`](/powershell/module/microsoftpowerbimgmt.admin/get-powerbiworkspaceencryptionstatus) näyttää, ovatko työtilan tietojoukot salattuja ja onko niiden salauksen tila synkronoitu työtilan kanssa:
 
     ```powershell
     Get-PowerBIWorkspaceEncryptionStatus -Name'Contoso Sales'
@@ -134,13 +137,13 @@ Power BI sisältää cmdlet-lisäkomentoja, joiden avulla voit hallintaan vuokra
 
     Huomaa, että salaus on käytössä kapasiteettitasolla, mutta saat salauksen tilan määritetyn työtilan tietojoukon tasolla.
 
-- `Set-PowerBICapacityEncryptionKey` päivittää Power BI -kapasiteetin salausavaimen:
+- [`Set-PowerBICapacityEncryptionKey`](/powershell/module/microsoftpowerbimgmt.admin/set-powerbicapacityencryptionkey) päivittää Power BI -kapasiteetin salausavaimen:
 
     ```powershell
     Set-PowerBICapacityEncryptionKey-CapacityId 08d57fce-9e79-49ac-afac-d61765f97f6f -KeyName 'Contoso Sales'
     ```
 
-- `Use Switch-PowerBIEncryptionKey` vaihtaa (tai _kierrättää_) salaukseen sillä hetkellä käytetyn avaimen. Cmdlet-komento on päivittää avaimen `-KeyVaultKeyUri`-arvon `-Name`:
+- [ `Switch-PowerBIEncryptionKey` ](/powershell/module/microsoftpowerbimgmt.admin/switch-powerbiencryptionkey) vaihtaa (tai _kierrättää_) salaukseen käytetyn avainversion. Cmdlet-komento on päivittää avaimen `-KeyVaultKeyUri`-arvon `-Name`:
 
     ```powershell
     Switch-PowerBIEncryptionKey -Name'Contoso Sales' -KeyVaultKeyUri'https://contoso-vault2.vault.azure.net/keys/ContosoKeyVault/b2ab4ba1c7b341eea5ecaaa2wb54c4d2'

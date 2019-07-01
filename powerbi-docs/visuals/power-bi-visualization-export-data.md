@@ -8,127 +8,190 @@ featuredvideoid: jtlLGRKBvXY
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/26/2018
+ms.date: 06/19/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 83ca49a3307a12e8a92c01de4175fcb117e3163d
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: d001c75d006838f46ce40a8f81bad0a9a058b148
+ms.sourcegitcommit: 90aa7ea5fcc7cf0fd7f6c3c1efeff5f27e8ef0dd
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61068092"
+ms.lasthandoff: 06/20/2019
+ms.locfileid: "67299430"
 ---
 # <a name="export-data-from-visualizations"></a>Tietojen vieminen visualisoinneista
-Jos haluat nähdä tiedot, joita käytetään visualisoinnin luomiseen, [voit näyttää nämä tiedot Power BI:ssä](service-reports-show-data.md) tai viedä nämä tiedot Exceliin .xlsx- tai .csv-tiedostona. Tietojen vienti edellyttää Pro- tai Premium-käyttöoikeutta ja tietojoukon ja raportin muokkausoikeuksia. 
 
-Katso videolta, miten tiedot viedään raportin visualisoinnista, tallennetaan .xlsx-tiedostoksi ja avataan Excelissä. Kokeile sitten itse noudattamalla videon alapuolella olevia vaiheittaisia ohjeita.
+Jos haluat nähdä tiedot, joita Power BI käyttää visualisoinnin luomiseksi, [voit näyttää nämä tiedot Power BI:ssä](service-reports-show-data.md). Voit myös viedä nämä tiedot Exceliin *.xlsx*- tai *.csv*-tiedostona. Tietojen vienti edellyttää Pro- tai Premium-käyttöoikeutta ja tietojoukon ja raportin muokkausoikeuksia.
+
+Katso videolta, miten tiedot viedään raportin visualisoinnista, tallennetaan *.xlsx*-tiedostoksi ja avataan Excelissä. Kokeile sitten itse noudattamalla videon alapuolella olevia vaiheittaisia ohjeita.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/KjheMTGjDXw" frameborder="0" allowfullscreen></iframe>
 
-## <a name="from-a-visualization-on-a-power-bi-dashboard"></a>Power BI -koontinäytön visualisoinnista
-1. Valitse visualisoinnin oikean yläkulman kolme pistettä.
+## <a name="export-data-from-a-power-bi-dashboard"></a>Tietojen vieminen Power BI -koontinäytöstä
 
-    ![](media/power-bi-visualization-export-data/pbi-export-tile3.png)
-2. Valitse **Vie tiedot** -kuvake.
+1. Valitse kolme pistettä (...) visualisoinnin oikeasta yläkulmasta.
 
-    ![](media/power-bi-visualization-export-data/pbi_export_dash.png)
-3. Tiedot viedään .csv-tiedostoon. Jos visualisointi on suodatettu, myös ladatut tiedot suodatetaan.    
-4. Selain kehottaa tallentamaan tiedoston.  Kun tiedosto on tallennettu, avaa se Excelissä.
+    ![Näyttökuva visualisoinnista, jossa nuoli osoittaa kolmeen pisteeseen (...).](media/power-bi-visualization-export-data/pbi-export-tile3.png)
 
-    ![](media/power-bi-visualization-export-data/pbi-export-to-excel.png)
+1. Valitse **Vie tiedot** -kuvake.
 
-## <a name="from-a-visualization-in-a-report"></a>Raportin visualisoinnista
+    ![Näyttökuva kolmen pisteen (...) avausvalikosta, jossa on korostettu Vie tiedot -vaihtoehto.](media/power-bi-visualization-export-data/pbi_export_dash.png)
+
+1. Power BI vie tiedot *.csv*-tiedostoon. Jos olet suodattanut visualisoinnin, sovellus suodattaa ladatut tiedot.
+
+1. Selain kehottaa tallentamaan tiedoston.  Kun tiedosto on tallennettu, avaa *.csv*-tiedosto Excelissä.
+
+    ![Näyttökuva .csv-tiedostosta, jossa näytetään viedyt tiedot.](media/power-bi-visualization-export-data/pbi-export-to-excel.png)
+
+## <a name="export-data-from-a-report"></a>Tietojen vieminen raportista
+
 Seuraa mukana avaamalla [Hankinta-analyysimallin raportti](../sample-procurement.md) muokkausnäkymässä. Lisää uusi tyhjä raporttisivu. Lisää sitten kooste ja visualisoinnin tason suodatin noudattamalla alla olevia ohjeita.
 
-1. Luo uusi pylväskaavio.  Valitse Kentät-ruudussa **Sijainti > Kaupunki** ja **Lasku > Alennusprosentti**.  Voit joutua siirtämään **alennusprosentin** Arvo-kohtaan. 
+1. Luo uusi **pinottu pylväskaavio**.
 
-    ![](media/power-bi-visualization-export-data/power-bi-export-data3.png)
-2. Muuta **alennusprosentin** kooste **määrästä** **keskiarvoksi**. Arvo-kohdassa valitse **alennusprosentin** (voi myös olla **alennusprosentin määrä**) oikealla puolella oleva nuoli ja valitse **Keskiarvo**.
+1. Valitse **Kentät**-ruudussa **Sijainti > Kaupunki** ja **Lasku > Alennusprosentti**.  Voit joutua siirtämään **alennusprosentin** **Arvo**-säilöön.
 
-    ![](media/power-bi-visualization-export-data/power-bi-export-data6.png)
-3. Lisää suodatin kohdassa **Kaupunki** ja poista **Atlanta**.
+    ![Näyttökuva luotavasta visualisoinnista, jossa on korostettu Kaupunki ja Alennusprosentti.](media/power-bi-visualization-export-data/power-bi-export-data3.png)
 
-   ![](media/power-bi-visualization-export-data/power-bi-export-data4.png)
+1. Muuta **alennusprosentin** kooste **määrästä** **keskiarvoksi**. Valitse **Arvo**-säilössä **Alennusprosentti**-kohdan (siinä voi olla **Alennusprosentin laskelma**) oikealla puolella oleva nuoli ja valitse **Keskiarvo**.
 
-   Nyt voit kokeilla molempia tietojen vientivaihtoehtoja. 
+    ![Näyttökuva Kooste-luettelosta, jossa on korostettu Keskiarvo-vaihtoehto.](media/power-bi-visualization-export-data/power-bi-export-data6.png)
 
-4. Valitse visualisoinnin oikean yläkulman kolme pistettä. Valitse **Vie tiedot**.
+1. Lisää suodatin **Kaupunki**-kohtaan, valitse kaikki kaupungit ja poista sitten **Atlanta**.
 
-   ![](media/power-bi-visualization-export-data/power-bi-export-data2.png)
-5. Jos visualisoinnissa on Power BI Onlinessa kooste (olet esimerkiksi muuttanut **Määrä**-vaihtoehdoksi *keskiarvo*, *summa* tai *pienin arvo*), sinulla on kaksi vaihtoehtoa: **Yhteenvedetyt tiedot** ja **Pohjana olevat tiedot**. Power BI Desktopissa on vain **Yhteenvedetyt tiedot** -vaihtoehto. Lue lisätietoja koosteista artikkelissa [Koosteet Power BI:ssä](../service-aggregates.md).
-    ![](media/power-bi-visualization-export-data/power-bi-export-data5.png)
-6. Valitse **Yhteenvedetyt tiedot** > **Vie** ja valitse .xlsx tai .csv. Power BI vie tiedot.  Jos olet käyttänyt suodattimia visualisoinnissa, viedyt tiedot viedään suodatettuina. Kun valitset **Vie**, selain pyytää sinua tallentamaan tiedoston. Kun tiedosto on tallennettu, avaa se Excelissä.
+    ![Näyttökuva Kaupunki-suodattimesta, josta on poistettu ja korostettu GA-valintaruutu.](media/power-bi-visualization-export-data/power-bi-export-data4.png)
 
-   **Yhteenvedetyt tiedot**: valitse tämä vaihtoehto, jos haluat viedä tietoja siitä, mitä näet tässä visualisoinnissa.  Tällainen vientityyppi näyttää vain tiedot (sarakkeet ja mittarit), jotka valitsit visualisoinnin luomiseksi.  Jos visualisoinnissa on kooste, viet koottuja tietoja. Jos sinulla on palkkikaavio 4 palkilla, saat 4 tietoriviä. Yhteenvedetyt tiedot voidaan tallentaa .xlsx- tai .csv-muodossa.
+   Nyt voit kokeilla molempia tietojen vientivaihtoehtoja.
 
-   Tässä esimerkissä Excel-vienti näyttää kunkin kaupungin kokonaissumman. Koska Atlanta on suodatettu pois, se ei sisälly tuloksiin.  Laskentataulukon ensimmäisellä rivillä näkyy suodattimet, joita käytettiin poimittaessa tietoja Power BI:stä.
+1. Valitse kolme pistettä (...) visualisoinnin oikeasta yläkulmasta. Valitse **Vie tiedot**.
 
-   ![](media/power-bi-visualization-export-data/power-bi-export-data7.png)
-7. Kokeile nyt valita **Pohjana olevat tiedot** > **Vie** ja sitten .xlsx. Power BI vie tiedot. Jos olet käyttänyt suodattimia visualisoinnissa, viedyt tiedot viedään suodatettuina. Kun valitset **Vie**, selain pyytää sinua tallentamaan tiedoston. Kun tiedosto on tallennettu, avaa se Excelissä.
+    ![Näyttökuva oikeasta yläkulmasta, jossa on kolmen pisteen (...) painike ja korostettu Vie tiedot -vaihtoehto.](media/power-bi-visualization-export-data/power-bi-export-data2.png)
 
-   >[!WARNING]
-   >Viemällä pohjana olevat tiedot käyttäjät voivat tarkastella kaikkia yksityiskohtaisia tietoja – kaikissa sarakkeissa. Power BI -palvelun järjestelmänvalvojat voivat poistaa tämän käytöstä organisaatiossa. Jos olet tietojoukon omistaja, voit määrittää sarakkeet ”piilotetuiksi” niin, että ne eivät näy kenttäluettelossa Power BI Desktopissa tai Power BI -palvelussa.
+    Jos visualisoinnissa on Power BI Onlinessa kooste (olet esimerkiksi muuttanut **Määrä**-vaihtoehdoksi *keskiarvo*, *summa* tai *pienin arvo*), sinulla on kaksi vaihtoehtoa:
 
+    - **Yhteenvedetyt tiedot**
 
-   **Pohjana olevat tiedot**: valitse tämä vaihtoehto, jos haluat nähdä visualisoinnissa olevat tiedot ***ja*** lisätiedot mallista (katso lisätietoja alla olevasta kaaviosta).  Jos visualisoinnissa on kooste, kooste voidaan poistaa valitsemalla *Pohjana olevat tiedot*. Kun valitset **Vie**, tiedot viedään .xlsx-tiedostoon ja selain pyytää sinua tallentamaan tiedoston. Kun tiedosto on tallennettu, avaa se Excelissä.
+    - **Pohjana olevat tiedot**
 
-   Tässä esimerkissä Excel-vienti näyttää yhden rivin tietojoukon kullekin kaupungille ja kyseisen rivin alennusprosentin. Toisin sanoen tiedot tasoitetaan koostamisen sijaan. Laskentataulukon ensimmäisellä rivillä näkyy suodattimet, joita käytettiin poimittaessa tietoja Power BI:stä.  
+    Power BI Desktopissa on vain **Yhteenvedetyt tiedot** -vaihtoehto. Lue lisätietoja koosteista artikkelissa [Koosteet Power BI:ssä](../service-aggregates.md).
 
-   ![](media/power-bi-visualization-export-data/power-bi-export-data8.png)
+1. Valitse **Vie tiedot** -vaihtoehdosta **Yhteenvedetyt tiedot**, valitse joko *.xlsx* tai *.csv*, ja valitse sitten **Vie**. Power BI vie tiedot.
+
+    ![Näyttökuva Vie tiedot -näyttökuvasta, jossa on korostettu Yhteenvedetyt tiedot, xlsx ja vientiasetukset.](media/power-bi-visualization-export-data/power-bi-export-data5.png)
+
+    Jos käytit suodattimia visualisointiin, viedyt tiedot viedään suodatettuina. Kun valitset **Vie**, selain pyytää sinua tallentamaan tiedoston. Kun tiedosto on tallennettu, avaa se Excelissä.
+
+    **Yhteenvedetyt tiedot**: Valitse tämä vaihtoehto, jos haluat viedä tietoja siitä, mitä näet tässä visualisoinnissa.  Tällainen vientityyppi näyttää vain tiedot (sarakkeet ja mittarit), jotka valitsit visualisoinnin luomiseksi.  Jos visualisoinnissa on kooste, viet koottuja tietoja. Esimerkiksi jos sinulla on palkkikaavio, joka näyttää neljä palkkia, saat neljä tietoriviä. Yhteenvedetyt tiedot ovat saatavilla *.xlsx*- ja *.csv*-muodossa.
+
+    Tässä esimerkissä Excel-vienti näyttää kunkin kaupungin kokonaissumman. Koska Atlanta on suodatettu pois, se ei sisälly tuloksiin. Laskentataulukon ensimmäisellä rivillä näytetään suodattimet, joita Power BI käytti poimiessaan tietoja.
+
+    ![Näyttökuva .csv-tiedostosta, jossa näytetään viedyt tiedot.](media/power-bi-visualization-export-data/power-bi-export-data7.png)
+
+1. Kokeile nyt valita **Pohjana olevat tiedot**, *.xlsx*, ja sitten **Vie**. Power BI vie tiedot. 
+
+    > [!NOTE]
+    > Raportin asetusten mukaan sinulla voi olla vaihtoehto, jonka mukaan voit tai et voi viedä pohjana olevia tietoja.
+
+    Jos käytit suodattimia visualisointiin, viedyt tiedot viedään suodatettuina. Kun valitset **Vie**, selain pyytää sinua tallentamaan tiedoston. Kun tiedosto on tallennettu, avaa se Excelissä.
+
+    >[!WARNING]
+    >Viemällä pohjana olevat tiedot käyttäjät voivat tarkastella kaikkia yksityiskohtaisia tietoja – tietojen kaikissa sarakkeissa. Power BI -palvelun järjestelmänvalvojat voivat poistaa tämän käytöstä organisaatiossaan. Jos olet tietojoukon omistaja, voit määrittää sarakkeet **piilotetuiksi** niin, että ne eivät näy **Kenttä**-luettelossa Power BI Desktopissa tai Power BI -palvelussa.
+
+    **Pohjana olevat tiedot**: Valitse tämä vaihtoehto, jos haluat nähdä visualisoinnissa olevat tiedot ***ja*** lisätiedot mallista (katso lisätietoja alla olevasta kaaviosta). Jos visualisoinnissa on kooste, kooste voidaan poistaa valitsemalla *Pohjana olevat tiedot*. Kun valitset **Vie**, Power Bi vie tiedot *.xlsx*-tiedostoon ja selain pyytää sinua tallentamaan tiedoston. Kun tiedosto on tallennettu, avaa se Excelissä.
+
+    Tässä esimerkissä Excel-vienti näyttää yhden rivin tietojoukon kullekin Kaupunki-riville ja tämän yksittäisen syötteen alennusprosentin. Power BI tasoittaa tiedot. Se ei koosta niitä. Laskentataulukon ensimmäisellä rivillä näytetään suodattimet, joita Power BI käytti poimiessaan tietoja.  
+
+    ![Näyttökuva .csv-tiedostosta, jossa näytetään viedyt tiedot.](media/power-bi-visualization-export-data/power-bi-export-data8.png)
 
 ## <a name="export-underlying-data-details"></a>Pohjana olevien tietojen vieminen
-Kun valitset **Pohjana olevat tiedot**, saatat nähdä erilaisia tietoja. Näiden tietojen ymmärtäminen saattaa vaatia järjestelmänvalvojan tai IT-osaston apua. Power BI Desktopin tai palvelun raportointinäkymässä tulee esiin *mittari* Kentät-luettelossa, jossa laskinkuvake ![näyttää kuvakkeen](media/power-bi-visualization-export-data/power-bi-calculator-icon.png). Mittarit luodaan Power BI Desktopissa, ei Power BI -palvelussa.
 
+Kun valitset **Pohjana olevat tiedot**, saatat nähdä erilaisia tietoja. Näiden tietojen ymmärtäminen saattaa vaatia järjestelmänvalvojan tai IT-osaston apua. Power BI Desktopin tai palvelun raportointinäkymässä tulee esiin *mittayksikkö*, joka näyttää **Kentät**-luettelossa laskinkuvakkeen![, jossa on kuvake](media/power-bi-visualization-export-data/power-bi-calculator-icon.png). Power BI Desktop luo mittayksiköt. Power BI -palvelu ei tee näin.
 
-| Visualisoinnin sisältö |                                                                              Mitä näet viennissä                                                                              |
-|-----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|   Koosteet    |                                                 *ensimmäisen* koosteen ja ei-piilotetut tiedot tämän koosteen koko taulukosta                                                  |
-|   Koosteet    | liittyvät tiedot – jos visualisointi käyttää muita tietoja muista tietotaulukoista, jotka  *liittyvät* koosteen sisältävään tietotaulukkoon (kunhan tämä suhde on \*:1 tai 1:1) |
-|    Mittarit     |                                      Kaikki mittarit visualisoinnissa *ja* kaikki mittarit mistä tahansa tietotaulukosta, joka sisältää visualisoinnissa käytetyn mittarin                                      |
-|    Mittarit     |                                       Kaikki ei-piilotetut tiedot taulukoista, jotka sisältävät tämän mittarin (kunhan tämä suhde on \*:1 tai 1:1)                                       |
-|    Mittarit     |                                      Kaikki tiedot kaikista taulukoista, jotka liittyvät mittarit sisältävään taulukkoon ketjun \*:1/1:1) kautta                                      |
-|  Vain mittarit  |                                                   Kaikki ei-piilotetut sarakkeet kaikista liittyvistä taulukoista (mittarin laajentamiseksi)                                                   |
-|  Vain mittarit  |                                                             Koostetut tiedot kaikille mallin mittarien monistetuille riveille.                                                              |
+| Visualisoinnin sisältö | Mitä näet viennissä  |
+|---------------- | ---------------------------|
+| Koosteet | *ensimmäisen* koosteen ja ei-piilotetut tiedot tämän koosteen koko taulukosta |
+| Koosteet | liittyvät tiedot – jos visualisointi käyttää muita tietoja muista tietotaulukoista, jotka  *liittyvät* koosteen sisältävään tietotaulukkoon (kunhan tämä suhde on \*:1 tai 1:1) |
+| Mittarit | kaikki mittarit visualisoinnissa *ja* kaikki mittarit mistä tahansa tietotaulukosta, joka sisältää visualisoinnissa käytetyn mittarin |
+| Mittarit | kaikki ei-piilotetut tiedot taulukoista, jotka sisältävät tämän mittarin (kunhan tämä suhde on \*:1 tai 1:1) |
+| Mittarit | kaikki tiedot kaikista taulukoista, jotka liittyvät mittarit sisältävään taulukkoon ketjun \*:1/1:1) kautta |
+| Vain mittarit | kaikki ei-piilotetut sarakkeet kaikista liittyvistä taulukoista (mittarin laajentamiseksi) |
+| Vain mittarit | koostetut tiedot kaikille mallin mittarien monistetuille riveille. |
 
 ### <a name="set-the-export-options"></a>Vientiasetusten määrittäminen
+
 Power BI:n raporttien suunnitteluohjelmassa määritetään, mitkä tietojen vientiasetukset ovat kuluttajien käytettävissä. Vaihtoehdot ovat seuraavat:
-- Salli vain tietojen yhteenvedon vienti (tämä on uusien raporttien oletusasetus) 
-- Salli tietojen yhteenvedon ja pohjalla olevien tietojen vienti (tämä oli oletusasetus ennen lokakuuta 2018) 
-- Älä salli minkään tietojen vientiä  
+
+- Salli loppukäyttäjien viedä yhteenvetotiedot Power BI -palvelusta tai Power BI -raporttipalvelimelta.
+
+- Salli loppukäyttäjien viedä sekä yhteenvetotiedot että pohjana olevat tiedot palvelusta tai raporttipalvelimelta.
+
+- Älä salli loppukäyttäjien viedä mitään tietoja palvelusta tai raporttipalvelimelta.
 
     > [!IMPORTANT]
     > Suosittelemme, että raportin suunnittelijat käyvät läpi vanhat raportit ja määrittävät vientiasetukset manuaalisesti tarpeen mukaan.
 
-1. Aloita näiden asetusten määrittäminen Power BI Desktopista.
+Määritä nämä asetukset seuraavasti:
 
-2. Valitse vasemmasta yläkulmasta **Tiedosto** > **Asetukset ja Vaihtoehdot** > **Asetukset**. 
+1. Aloita Power BI Desktopissa.
 
-3. Valitse **Nykyinen tiedosto** -kohdassa **Raportin asetukset**.
+1. Valitse vasemmasta yläkulmasta **Tiedosto** > **Asetukset ja Vaihtoehdot** > **Asetukset**.
+
+1. Valitse **NYKYINEN TIEDOSTO** -kohdassa **Raportin asetukset**.
 
     ![työpöydän raportin asetukset](media/power-bi-visualization-export-data/desktop-report-settings.png)
 
-4. Valitse avattavasta **Vie tiedot** -valikosta.
+1. Valitse asetus **Vie tiedot** -osiosta.
 
-Voit päivittää tätä asetusta myös Power BI -palvelussa.  
+Voit päivittää tätä asetusta myös Power BI -palvelussa.
 
-On tärkeää ottaa huomioon, että jos Power BI:n hallintaportaalin asetukset ja tietojen viennin raporttiasetukset ovat ristiriidassa keskenään, hallinta-asetukset ohittavat tietojen vientiasetukset. 
+On tärkeää panna merkille, että jos Power BI:n hallintaportaalin asetukset ja tietojen viennin raporttiasetukset ovat ristiriidassa keskenään, hallinta-asetukset ohittavat tietojen vientiasetukset.
 
 ## <a name="limitations-and-considerations"></a>Rajoitukset ja huomioitavat asiat
-* **Power BI Desktopista** ja **Power BI -palvelusta** voidaan viedä korkeintaan 30 000 riviä .csv-tiedostoon.
-* .xlsx-tiedostoon vietävien rivien enimmäismäärä on 150 000.
-* *Pohjana olevien tietojen* vienti ei toimi, jos tietolähde on reaaliaikainen Analysis Services -yhteys, versio on vanhempi kuin 2016 ja mallin taulukoilla ei ole yksilöiviä tunnuksia.  
-* *Pohjana olevien tietojen* vienti ei toimi, jos *Näytä kohteet, joilla ei ole tietoja* -asetus on käytössä vietävässä visualisoinnissa.
-* Käytettäessä DirectQueryä voidaan viedä enintään 16 Mt tietoja. Tästä johtuen kaikkia rivejä ei ehkä viedä, etenkin vietäessä useita sarakkeita tai vaikeasti pakattavia tietoja. Myös muut tekijät voivat kasvattaa tiedostokokoa ja vähentää vietyjen rivien määrää.
-* Jos visualisointi käyttää useamman kuin yhden taulukon tietoja, eikä näille taulukoille ole suhdetta tietomallissa, vain ensimmäisen taulukon tiedot viedään. 
-* Mukautettuja visualisointeja ja R-visualisointeja ei tueta tällä hetkellä.
-* Organisaation ulkopuoliset käyttäjät eivät voi viedä tietoja heidän kanssaan jaetuista koontinäytöistä. 
-* Power BI:ssä kenttä (sarake) voidaan nimetä uudelleen kaksoisnapsauttamalla kenttää ja kirjoittamalla uusi nimi.  Tätä uutta nimeä kutsutaan *aliakseksi*. On mahdollista, että Power BI -raporttiin voi päätyä kenttien nimien kaksoiskappaleita, mutta Excel ei salli kaksoiskappaleita.  Kun tiedot viedään Exceliin, kentän aliakset muunnetaan takaisin alkuperäisen kentän (sarakkeen) nimiksi.  
-* Jos .csv-tiedostossa on unicode-merkkejä, teksti ei ehkä näy oikein Excelissä. Tiedoston voi avata Muistiossa ongelmitta. Esimerkiksi valuuttasymbolit ja vieraskieliset sanat ovat Unicode-merkkejä. Vaihtoehtoinen menetelmä on tuoda .csv-tiedosto suoraan Exceliin sen avaamisen sijaan. Jos haluat tehdä tämän:
+Nämä rajoitukset ja huomioitavat asiat koskevat Power BI Desktopia ja Power BI -palvelua, mukaan lukien Power BI Prota ja Premiumia.
 
-  1. Avaa Excel
-  2. Valitse **Tiedot**-välilehdellä **Nouda ulkoiset tiedot** > **tekstistä**.
-* Power BI -järjestelmänvalvojat voivat poistaa tietojen viennin käytöstä.
+- Jos haluat viedä tiedot visualisoinnista, sinulla on oltava [pohjana olevan tietojoukon luonnin käyttöoikeus](https://docs.microsoft.com/power-bi/service-datasets-build-permissions#build-permissions-for-shared-datasets).
 
+-  **Power BI Desktopista** ja **Power BI -palvelusta** voidaan viedä *.csv*-tiedostoon korkeintaan 30 000 riviä.
+
+- Sovellukset voivat viedä *.xlsx*-tiedostoon korkeintaan 150 000 riviä.
+
+- Vienti *pohjana olevien tietojen* avulla ei toimi, jos:
+
+  - Tietolähteenä on reaaliaikainen Analysis Services -yhteys.
+
+  - Versio on vanhempi kuin 2016.
+
+  - Mallin taulukoilla ei ole yksilöivää tunnusta.
+    
+  -  Jos järjestelmänvalvoja tai raportin suunnittelija on poistanut käytöstä tämän ominaisuuden.
+
+- *Pohjana olevien tietojen* vienti ei toimi, jos *Näytä kohteet, joilla ei ole tietoja* -asetus on käytössä visualisoinnissa, jota Power BI on viemässä.
+
+- Käytettäessä DirectQueryä Power BI voi viedä enintään 16 Mt tietoja. Odottamaton tulos saattaa olla, että viet vähemmän kuin rivien enimmäismäärän. Tämä on todennäköistä, jos:
+
+    - Sarakkeita on useita.
+
+    - Sinulla on vaikeasti pakattavia tietoja.
+
+    - Muut tekijät lisäävät tiedostokokoa ja vähentävät niiden rivien määrää, jotka Power BI voi viedä.
+
+- Jos visualisointi käyttää useamman kuin yhden tietotaulukon tietoja, eikä näille taulukoille ole suhdetta tietomallissa, Power BI vie vain ensimmäisen taulukon tiedot.
+
+- Mukautettuja visualisointeja ja R-visualisointeja ei tällä hetkellä tueta.
+
+- Tietojen vienti ei ole saatavilla organisaatiosi ulkopuolisille käyttäjille, jotka käyttävät koontinäyttöä, jonka sisäinen käyttäjä on jakanut heidän kanssaan.
+
+- Voit Power BI:ssä nimetä kentän (sarakkeen) uudelleen kaksoisnapsauttamalla kenttää ja kirjoittamalla uuden nimen. Power BI viittaa uuteen nimeen *aliaksena*. On mahdollista, että Power BI -raporttiin voi päätyä kenttien nimien kaksoiskappaleita, mutta Excel ei salli kaksoiskappaleita. Kun Power BI vie sitten tiedot Exceliin, kentän aliakset muunnetaan takaisin alkuperäisen kentän (sarakkeen) nimiksi.  
+
+- Jos *.csv*-tiedostossa on Unicode-merkkejä, teksti ei ehkä näy oikein Excelissä. Esimerkiksi valuuttasymbolit ja vieraskieliset sanat ovat Unicode-merkkejä. Voit avata tiedoston Muistiossa, ja Unicode näyttää sen oikein. Jos haluat avata tiedoston Excelissä, vaihtoehtoisena menetelmänä on tuoda *.csv*-tiedosto. Vie tiedosto Exceliin seuraavasti:
+
+  1. Avaa Excel.
+
+  1. Siirry **Tiedot**-välilehteen.
+  
+  1. Valitse **Hae ulkoiset tiedot** > **Tekstistä**.
+  
+  1. Valitse paikallinen kansio, johon tiedosto on tallennettu, ja valitse *.csv*.
+
+- Power BI -järjestelmänvalvojat voivat poistaa tietojen viennin käytöstä.
 
 Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)
-

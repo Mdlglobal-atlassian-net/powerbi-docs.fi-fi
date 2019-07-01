@@ -1,22 +1,22 @@
 ---
-title: Mitä Power BI -mallisovellukset ovat? (esikatselu)
-description: Tässä artikkelissa on yleiskatsaus Power BI -mallisovellusten ohjelmasta. Opi kehittämään Power BI -sovelluksia, niin että koodausta tarvitaan vain vähän tai ei ollenkaan, ja ota sovellukset käyttöön keille tahansa Power BI -asiakkaille.
-author: maggiesMSFT
+title: Mitä Power BI -mallisovellukset ovat?
+description: Tämä artikkeli on Power BI -mallisovellusten ohjelman yleiskatsaus. Opi kehittämään Power BI -sovelluksia, niin että koodausta tarvitaan vain vähän tai ei ollenkaan, ja ota sovellukset käyttöön keille tahansa Power BI -asiakkaille.
+author: teddybercovitz
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/26/2019
-ms.author: maggies
-ms.openlocfilehash: 600e2ed603773cada415f603202cc72f22e0d25b
-ms.sourcegitcommit: 81ba3572531cbe95ea0b887b94e91f94050f3129
+ms.date: 06/24/2019
+ms.author: tebercov
+ms.openlocfilehash: c05b53a5fd61d348b6d304b17123d5f2497ab647
+ms.sourcegitcommit: 58c649ec5fd2447a0f9ca4c4d45a0e9fff2f1b6a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66751098"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67408204"
 ---
-# <a name="what-are-power-bi-template-apps-preview"></a>Mitä Power BI -mallisovellukset ovat? (esikatselu)
+# <a name="what-are-power-bi-template-apps"></a>Mitä Power BI -mallisovellukset ovat?
 
 Power BI:n uusien *mallisovellusten* avulla Power BI -kumppanit voivat kehittää Power BI -sovelluksia käyttäen vain vähän tai ei lainkaan koodausta, minkä lisäksi sovellukset voidaan ottaa käyttöön kenelle tahansa Power BI -asiakkaalle.  Tämä artikkeli on Power BI -mallisovellusten ohjelman yleiskatsaus.
 
@@ -37,7 +37,7 @@ Mallisovelluksen yleinen kehittämis- ja lähettämisprosessi koostuu useista va
 | **Kolme** | |  | Ylennä testipaketti esituotantoon, niin että se vahvistetaan Power BI -vuokraajan ulkopuolella, ja lähetä se AppSourceen  |  | Luo esituotantopaketilla Power BI -mallisovellustarjous ja aloita vahvistusprosessi |
 | **Neljä** | |  | Ylennä esituotantopaketti tuotannoksi |  | Julkaise |
 
-## <a name="requirements"></a>Vaatimukset
+## <a name="before-you-begin"></a>Alkutoimet
 
 Mallisovelluksen luomista varten tarvitaan oikeus mallisovelluksen luomiseen. Lisätietoja on Power BI:n hallintaportaalin kohdassa Mallisovelluksen asetukset. 
 
@@ -66,9 +66,11 @@ Tässä ovat ylätason vaiheet.
 
 ## <a name="requirements"></a>Vaatimukset
 
-Mallisovelluksen luomista varten tarvitaan oikeus mallisovelluksen luomiseen. Lisätietoja on Power BI:n [hallintaportaalin kohdassa Mallisovelluksen asetukset](service-admin-portal.md#template-apps-settings-preview). 
+Mallisovelluksen luomista varten tarvitaan oikeus mallisovelluksen luomiseen. Lisätietoja on Power BI:n [hallintaportaalin kohdassa Mallisovelluksen asetukset](service-admin-portal.md#template-apps-settings). 
 
 Jotta voit julkaista mallisovelluksen Power BI -palveluun ja AppSourceen, sinun on täytettävä [Cloud Marketplace -julkaisijaksi ryhtymisen](https://docs.microsoft.com/azure/marketplace/become-publisher) ehdot.
+ > [!NOTE] 
+ > Mallisovellusten lähetyksiä hallitaan [Pilvikumppaniportaalissa](https://cloudpartner.azure.com). Käytä samaa Microsoftin kehittäjäkeskuksen rekisteröintitiliä sisäänkirjautumiseen. Sinulla pitäisi olla vain yksi Microsoft-tili AppSource-tarjouksia varten. Tilien ei tulisi olla palvelu- tai tarjouskohtaisia.
 
 ## <a name="tips"></a>Vinkkejä 
 
@@ -78,7 +80,7 @@ Jotta voit julkaista mallisovelluksen Power BI -palveluun ja AppSourceen, sinun 
 - Harkitse useamman kuin yhden mallisovelluksen tarjoamista erillisiä ainutkertaisia skenaarioita varten. 
 - Ota käyttöön tietojen mukauttaminen; tue esimerkiksi mukautettua yhteyttä ja asennusohjelman määrittämiä parametreja.
 
-Lisää ehdotuksia on artikkelissa [Vihjeitä mallisovellusten luomiseen Power BI:ssä (esikatselu)](service-template-apps-tips.md)
+Lisää ehdotuksia on artikkelissa [Vihjeitä mallisovellusten luomiseen Power BI:ssä](service-template-apps-tips.md).
 
 ## <a name="support"></a>Tuki
 Saat tukea kehityksen aikana osoitteesta [https://powerbi.microsoft.com/support](https://powerbi.microsoft.com/support). Valvomme ja hallinnoimme tätä sivustoa aktiivisesti. Asiakastapaukset ohjataan nopeasti oikealle tiimille.

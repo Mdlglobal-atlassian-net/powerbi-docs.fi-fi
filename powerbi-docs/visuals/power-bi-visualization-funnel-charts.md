@@ -8,15 +8,15 @@ featuredvideoid: maTzOJSRB3g
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 09/24/2018
+ms.date: 06/12/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 071b45a4ad9cbd9c753c44de5c55a352767bccbf
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: b12b2035d7686667535dfdddba42b4b8ca014d96
+ms.sourcegitcommit: 4ae1257c5d7b33aa2fafd91caf8b353a985c6771
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61067742"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "67161110"
 ---
 # <a name="funnel-charts"></a>Suppilokaavio
 Suppilokaavion avulla voit visualisoida lineaarisen prosessin, jossa on peräkkäisiä, toisiinsa liittyviä vaiheita. Esimerkiksi myynnistä voi tehdä suppilokaavion, jossa seurataan asiakkuuksien eri vaiheita: liidi \> hyväksytty liidi \> prospekti \> sopimus \> suljettu.  Suppilon muoto välittää yhdellä silmäyksellä tarkastelemasi prosessin kunnon.
@@ -53,7 +53,7 @@ Seuraavassa videossa luodaan suppilokaavio käyttämällä myynti- ja markkinoin
 
 Nyt voit luoda oman suppilokaavion, joka esittää mahdollisuuksien määrän kussakin myyntivaiheessa.
 
-Näissä ohjeissa käytetään mahdollisuusanalyysimallia. Jos haluat seurata ohjeita itse, [lataa malli](../sample-datasets.md) joko Power BI ‑palveluun (app.powerbi.com) tai Power BI Desktopiin.   
+Näissä ohjeissa käytetään mahdollisuusanalyysimallia. Seuraa mukana [lataamalla malli](../sample-datasets.md) Power BI -palvelulle (app.powerbi.com) tai Power BI Desktopille.   
 
 1. Aloita tyhjältä raporttisivulta ja valitse kenttä **Myyntivaihe** \> **Myyntivaihe**. Jos käytät Power BI ‑palvelua, varmista, että avaat raportin [muokkausnäkymässä](../service-interact-with-a-report-in-editing-view.md).
    
@@ -61,7 +61,7 @@ Näissä ohjeissa käytetään mahdollisuusanalyysimallia. Jos haluat seurata oh
 2. [Muuta kaavio](power-bi-report-change-visualization-type.md) suppilokaavioksi. Huomaa, että **Myyntivaihe** näkyy kohdassa **Ryhmä**. 
 3. Valitse **Kentät**-paneelista **Fakta** \> **Mahdollisuuksien määrä**.
    
-    ![luo suppilokaavio](media/power-bi-visualization-funnel-charts/power-bi-funnel.png)
+    ![luo suppilokaavio](media/power-bi-visualization-funnel-charts/power-bi-funnel-2.png)
 4. Kun viet hiiren osoittimen haluamasi palkin kohdalle, esiin tulee monenlaista tietoa.
    
    * Vaiheen nimi

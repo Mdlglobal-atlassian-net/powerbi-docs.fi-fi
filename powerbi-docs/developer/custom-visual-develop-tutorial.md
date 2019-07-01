@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: tutorial
 ms.date: 03/15/2019
-ms.openlocfilehash: e7afdddc6d87b9494fa9264bdd253a3f93de6192
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: d21a0ab1bada981a563e04ba26815f661664f51a
+ms.sourcegitcommit: 4ae1257c5d7b33aa2fafd91caf8b353a985c6771
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61383233"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "67161231"
 ---
 # <a name="tutorial-developing-a-power-bi-custom-visual"></a>Opetusohjelma: Power BI:n mukautetun visualisoinnin kehittäminen
 
@@ -73,21 +73,15 @@ Nyt sinun on asennettava **pbiviz**-paketti.
 
 #### <a name="windows"></a>Windows
 
-1. Luo varmenne antamalla seuraava komento.
-
-    ```powershell
-    pbiviz --create-cert
-    ```
-
-  Se palauttaa tuloksen, joka tuottaa *tunnuslauseen*. Tässä tapauksessa *tunnuslause* on **_15105661266553327_** .
-
-  ![PowerShellin kautta luotu varmenne](media/custom-visual-develop-tutorial/cert-create.png)
-
-2. Seuraavaksi varmenne on asennettava. Asenna varmenne suorittamalla seuraava komento.
+1. Voit luoda ja asentaa varmenteen syöttämällä seuraavan komennon.
 
     ```powershell
     pbiviz --install-cert
     ```
+
+  Se palauttaa tuloksen, joka tuottaa *tunnuslauseen*. Tässä tapauksessa *tunnuslause* on **_15105661266553327_** , mikä aloittaa varmenteen tuonnin ohjatun toiminnon.
+
+  ![PowerShellin kautta luotu varmenne](media/custom-visual-develop-tutorial/cert-create.png)
 
 3. Varmista ohjatussa varmenteiden tuontitoiminnossa, että säilön sijainniksi on määritetty Nykyinen käyttäjä. Valitse *Seuraava*.
 
@@ -559,14 +553,14 @@ Muokkaa **capabilities.json**-tiedostoa tietoroolien ja tietonäkymän yhdistäm
 
     Tämä lauseke määrittää *DataView’n* muuttujaan käytön helpottamiseksi ja määrittää muuttujan viittaamaan *dataView*-objektiin.
 
-2. Tässä **päivittää** menetelmä, korvaa **.text("Value")** Seuraava.
+2. Korvaa **päivitysmenetelmässä** **.text(”Value”)** seuraavalla.
 
     ```typescript
     .text(dataView.single.value as string)
     ```
     ![Korvaa textValue](media/custom-visual-develop-tutorial/text-value-replace.png)
 
-3. Tässä **päivittää** menetelmä, korvaa **.text("Label")** Seuraava.
+3. Korvaa **päivitysmenetelmässä** **.text(”Label”)** seuraavalla.
 
     ```typescript
     .text(dataView.metadata.columns[0].displayName)

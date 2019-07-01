@@ -8,15 +8,15 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/12/2019
+ms.date: 06/19/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 2fa8fa5248ee1e4330804205b2cedb64021b1913
-ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.openlocfilehash: 0123d8123170cfa78b3d13a55ed2f367af0447ae
+ms.sourcegitcommit: 90aa7ea5fcc7cf0fd7f6c3c1efeff5f27e8ef0dd
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "66839797"
+ms.lasthandoff: 06/20/2019
+ms.locfileid: "67299331"
 ---
 # <a name="filled-maps-choropleths-in-power-bi"></a>Täytetyt kartat (koropleettikartat) Power BI:ssä
 Täytetyssä kartassa käytetään sävytystä tai kuvioita esittämään, miten arvot vaihtelevat suhteellisesti maantieteellisellä alueella.  Suhteelliset erot hahmottuvat nopeasti, kun sävytys vaihtelee vaaleammasta (tarkoittaen harvinaisempaa/pienempää) tummempaan (yleisempi/enemmän).    
@@ -70,10 +70,10 @@ Tällä videolla Kim luo peruskartan ja muuntaa sen täytetyksi kartaksi.
 1. Valitse Kentät-ruudusta **Alue** \> **Osavaltio**.    
 
    ![keltainen valintamerkki osavaltion vieressä](media/power-bi-visualization-filled-maps-choropleths/power-bi-state.png)
-5. [Muuta kaavio](power-bi-report-change-visualization-type.md) täytetyksi kartaksi. Huomaa, että kohdassa **Sijainti** näkyy nyt **Osavaltio**. Bing Maps käyttää **Sijainti**-kohdan kenttää kartan luomiseen.  Sijainti voi tarkoittaa monenlaisia kelvollisia paikkatietoja: maita, osavaltioita, piirikuntia, kaupunkeja, postinumeroita ja niin edelleen. Bing Maps tarjoaa täytettävät karttamuodot sijainteja varten, olivatpa ne missä päin maailmaa tahansa. Jos Sijainti-kohdassa ei ole kelvollista merkintää, Power BI ei voi luoda täytettyä karttaa.  
+2. [Muuta kaavio](power-bi-report-change-visualization-type.md) täytetyksi kartaksi. Huomaa, että kohdassa **Sijainti** näkyy nyt **Osavaltio**. Bing Maps käyttää **Sijainti**-kohdan kenttää kartan luomiseen.  Sijainti voi tarkoittaa monenlaisia kelvollisia paikkatietoja: maita, osavaltioita, piirikuntia, kaupunkeja, postinumeroita ja niin edelleen. Bing Maps tarjoaa täytettävät karttamuodot sijainteja varten, olivatpa ne missä päin maailmaa tahansa. Jos Sijainti-kohdassa ei ole kelvollista merkintää, Power BI ei voi luoda täytettyä karttaa.  
 
    ![mallit, joissa on korostettu täytetyn kartan kuvake](media/power-bi-visualization-filled-maps-choropleths/img003.png)
-6. Voit suodattaa kartan näyttämään vain Yhdysvaltojen mannerosat.
+3. Voit suodattaa kartan näyttämään vain Yhdysvaltojen mannerosat.
 
    a.  Etsi Visualisoinnit-ruudun alaosasta **Suodattimet**-alue.
 
@@ -83,21 +83,24 @@ Tällä videolla Kim luo peruskartan ja muuntaa sen täytetyksi kartaksi.
    c.  Valitse valintaruutu **Kaikki**-kohdan vierestä ja poista valintamerkki vaihtoehdosta **AK**.
 
    ![Osavaltion avattava valikko, jossa vaihtoehtoja Kaikki ja AK ei ole valittu](media/power-bi-visualization-filled-maps-choropleths/img005.png)
-7. Valitse **SalesFact** \> **Asenne**, jolloin valittu vaihtoehto tulee näkyviin kohtaan **Värikylläisyys**. **Värikylläisyys**-kohdassa oleva kenttää määrittää kartan sävytyksen.  
-   ![Asennearvo Värien kylläisyys -kentässä hyvä](media/power-bi-visualization-filled-maps-choropleths/power-bi-filled-map.png)
-8. Täytetty kartta sävytetään vihreällä ja punaisella niin, että punainen edustaa alempia asennearvoja ja vihreät suurempia, positiivisempia asenteita.  Seuraavassa kuvassa näkyy korostettuna Wyomingin osavaltio (WY), josta voi nähdä, että sen asennearvo on erittäin hyvä, 74.  
-   ![musta valintaikkuna, jossa näkyy osavaltio ja asennearvo](media/power-bi-visualization-filled-maps-choropleths/power-bi-wy.png)
-9. [Tallenna raportti](../service-report-save.md).
-##    <a name="adjust-the-color-formatting"></a>Värimuotoilun säätäminen
-Power BI:n avulla voit hallita täytetyn kartan ulkoasua vapaasti.
-1. Avaa Muotoilu-ruutu valitsemalla maalitelakuvake.
+4. Avaa Muotoilu-ruutu valitsemalla maalitelakuvake ja valitse **Tietojen värit**.
 
-    ![Muotoilu-ruutu](media/power-bi-visualization-filled-maps-choropleths/power-bi-data-colors.png)
+    ![Muotoiluruutu, jossa näkyy Tietojen värit -vaihtoehto](media/power-bi-visualization-filled-maps-choropleths/power-bi-data-color.png)
 
-2. Avaa väriasetukset valitsemalla **Tietojen värit**.
-3. Määritä keltainen ja sininen pienimmän ja suurimman arvon väreiksi. Lisätä suurin ja pienin arvo tietojesi perusteella. Harjoittele hallinta-asetusten käyttöä, kunnes ulkoasu vastaa odotuksiasi. 
+5. Valitse **Ehdollinen muotoilu** -vaihtoehto napsauttamalla kolmea päällekkäistä pistettä.
 
-    ![ei-eriytyvät värit](media/power-bi-visualization-filled-maps-choropleths/power-bi-color.png)
+    ![Tietojen värit -vaihtoehdon ehdollisen muotoilun painike](media/power-bi-visualization-filled-maps-choropleths/power-bi-conditional-formatting.png)
+
+6. Käytä **Oletusväri - Tietojen värit** -näyttöä määrittääksesi, miten täytetty karttasi sävytetään. Asetukset antavat sinun muun muassa valita, mihin kenttään sävytys perustuu ja miten sävytys lisätään. Tässä esimerkissä käytetään kenttää **Myyntitiedot** > **Asenne**, ja asenteen pienin arvo määritetään punaiseksi ja suurin arvo vihreäksi. Arvot, jotka jäävät maksimi- ja minimiarvon väliin, näkyvät punaisen ja vihreän sävyissä. Käytetyt värit näkyvät näytön alareunassa olevassa kuvassa. 
+
+    ![Oletusarvoinen väriruutu Asenne valittuna](media/power-bi-visualization-filled-maps-choropleths/power-bi-sentiment.png)
+
+7. Täytetty kartta sävytetään vihreällä ja punaisella niin, että punainen edustaa alempia asennearvoja ja vihreät suurempia, positiivisempia asenteita.  Jos haluat lisätietoja, vedä kenttä työkaluvihjeisiin.  Tässä olen lisännyt **Asenne-eron** ja korostanut tilan Idaho (ID), ja että asenne-ero on pieni, 6.
+   ![täytetty kartta jossa näkyy Idaho-työkaluvihjeet](media/power-bi-visualization-filled-maps-choropleths/power-bi-filled-map-idaho.png)
+
+10. [Tallenna raportti](../service-report-save.md).
+
+Power BI:n avulla voit hallita täytetyn kartan ulkoasua vapaasti. Vaihtele tietojen väriohjausobjektien kanssa, kunnes olet tyytyväinen ulkoasuun. 
 
 ## <a name="highlighting-and-cross-filtering"></a>Korostaminen ja ristiinsuodatus
 Lisätietoja Suodattimet-paneelin käyttämisestä saat ohjeaiheesta [Suodattimen lisääminen raporttiin](../power-bi-report-add-filter.md).

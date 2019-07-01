@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 05/20/2019
 ms.author: maggies
 LocalizationGroup: Common tasks
-ms.openlocfilehash: b1d0914f146ea56697ada2a64c59744690595054
-ms.sourcegitcommit: 24781cdab5fbe43fc14248db636169cc54ef6721
+ms.openlocfilehash: e7b2f03d561faa7df582b4ad5a975d09d617f98f
+ms.sourcegitcommit: 8c52b3256f9c1b8e344f22c1867e56e078c6a87c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66498073"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67264608"
 ---
 # <a name="subscribe-yourself-and-others-to-reports-and-dashboards-in-the-power-bi-service"></a>Power BI -palvelun raporttien ja koontinäyttöjen tilaaminen itsellesi ja muille
 
@@ -28,8 +28,12 @@ Voit luoda tilauksia vain Power BI -palvelussa. Saat sähköpostin, joka sisält
 
 ## <a name="requirements"></a>Vaatimukset
 
-- Tilauksen **luominen** on Power BI Pro -ominaisuus.
-- Jos haluat luoda tilauksen itsellesi, et tarvitse muokkausoikeuksia sisältöön (koontinäyttö tai raportti), mutta jos haluat luoda tilauksen jollekin muulle, tarvitset muokkausoikeudet. 
+Tilauksen voivat **luoda**:
+
+- Käyttäjät, joilla on Power BI Pro -käyttöoikeus
+- Käyttäjät, jotka tarkastelevat sisältöä Premium-työtilassa tai sovelluksessa, voivat myös tilata siellä sijaitsevaa sisältöä jopa ilman Power BI Pro -käyttöoikeutta.
+
+Jos haluat luoda tilauksen itsellesi, et tarvitse muokkausoikeuksia sisältöön (koontinäyttö tai raportti), mutta jos haluat luoda tilauksen jollekin muulle, tarvitset muokkausoikeudet. 
 
 ## <a name="subscribe-to-a-dashboard-report-page-or-paginated-report"></a>Koontinäytön, raporttisivun tai sivutetun raportin tilaaminen
 
@@ -87,7 +91,6 @@ Tilaus päättyy, jos Pro-käyttöoikeus umpeutuu, omistaja poistaa koontinäyt�
 ## <a name="considerations-and-troubleshooting"></a>Huomioon otettavat seikat ja vianmääritys
 
 * Jos koontinäytössä on yli 25 kiinnitettyä ruutua tai 4 kiinnitettyä reaaliaikaisista raporttisivua, koontinäyttö ei ehkä hahmonnu täysin käyttäjille lähetetyissä tilauksen sähköpostiviesteissä.  Koontinäyttöjen tilauksia näin monissa ruuduissa ei ole estetty. Niitä ei kuitenkaan tueta mahdollisissa ongelmatilanteissa. Sinun kannattaa ehkä muokata ruutujen määrä tuettuun määrään.
-* Tämä on aika, jolloin tilaustyösi alkaa. Joissain tilanteissa saattaa kestää muutaman minuutin, ennen kuin sähköposti toimitetaan postilaatikkoosi.
 * Joissain harvoissa tapauksissa sähköpostitilausten toimittaminen vastaanottajille saattaa kestää yli 15 minuuttia. Jos näin käy, suosittelemme, että suoritat tietojen päivittämisen ja sähköpostien tilaamisen eri aikoihin toimitusten varmistamiseksi. Jos ongelma jatkuu, ota yhteyttä Power BI -tukeen.
 * Jos koontinäytön sähköpostitilausten joillakin ruuduilla on käytössä rivitason suojaus (RLS), näitä ruutuja ei näytetä.  
 * Jos raportin sähköpostitilausten tietojoukko käyttää rivitason suojausta (RSL), voit luoda tilauksen itsellesi. Et kuitenkaan voi tilata muille raporttia, jossa käytetään rivitason suojausta.

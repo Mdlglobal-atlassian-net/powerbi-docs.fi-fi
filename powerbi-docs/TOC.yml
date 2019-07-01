@@ -417,50 +417,46 @@
           href: service-whats-new.md
         - name: Peruskäsitteet
           items:
-            - name: Peruskäsitteet suunnittelijoille
+            - name: Power BI -palvelun ymmärtäminen
               href: service-basic-concepts.md
-            - name: 'Erilaiset tiedot Power BI:ssä'
-              href: service-get-data.md
             - name: Raporttieditoriin tutustuminen
               href: service-the-report-editor-take-a-tour.md
-        - name: 'Työnkulku Power BI:ssä'
-          items:
-            - name: Töiden järjestäminen
-              href: service-new-workspaces.md
-            - name: Töiden jakamistavat
-              href: service-how-to-collaborate-distribute-dashboards-reports.md
-            - name: Tietojen pitäminen ajan tasalla
+            - name: Power BI -tietolähteet
+              href: service-get-data.md
+            - name: 'Tietojen päivittäminen Power BI:ssä'
               href: refresh-data.md
-            - name: Käytön valvonta
+        - name: 'Yhteistyö Power BI:ssä'
+          items:
+            - name: Töiden organisointi
+              href: service-new-workspaces.md
+            - name: Töiden jakaminen
+              href: service-how-to-collaborate-distribute-dashboards-reports.md
+            - name: Power BI -käytön seuranta
               href: service-usage-metrics.md
         - name: Käyttöoikeudet
           items:
-            - name: Omatoiminen kirjautuminen
+            - name: 'Rekisteröidy Power BI:hin'
               href: service-self-service-signup-for-power-bi.md
-            - name: Käyttöoikeudet organisaatiossasi
+            - name: Power BI -käyttöoikeuksien hallinta
               href: service-admin-licensing-organization.md
             - name: Toiminnot käyttöoikeustyypin mukaan
               href: service-features-license-type.md
-        - name: Lisää käsitteitä
+            - name: Power BI Pro Yhdysvaltain julkishallinnolle
+              href: service-govus-overview.md
+            - name: Usein kysyttyjä kysymyksiä saksalaisille pilviasiakkaille
+              href: service-govde-faq.md
+        - name: Hanki ohjeita ja tukea
           items:
-            - name: 10 vinkkiä ohjeiden hankkimiseen
-              href: service-tips-for-finding-help.md
             - name: Power BI -tukivaihtoehdot
               href: service-support-options.md
-            - name: Erityistapausten käyttöoikeudet
-              items:
-                - name: Laajennetun Pro-kokeiluversion aktivointi
-                  href: service-extended-pro-trial.md
-                - name: Power BI Pro Yhdysvaltain julkishallinnolle
-                  href: service-govus-overview.md
-                - name: Usein kysyttyjä kysymyksiä saksalaisille pilviasiakkaille
-                  href: service-govde-faq.md
-            - name: Muut
-              items:
-                - name: Microsoft Flow ja Power BI
-                  href: service-flow-integration.md
-                - name: Kolmannen osapuolen sovellusten käytön aloittaminen
-                  href: service-power-bi-get-started-third-party-apps.md
+            - name: 10 vinkkiä ohjeiden hankkimiseen
+              href: service-tips-for-finding-help.md
+        - name: 'Power BI:n laajentaminen'
+          items:
+            - name: Microsoft Flow ja Power BI
+              href: service-flow-integration.md
+            - name: Kolmannen osapuolen sovellusten käyttäminen
+              href: service-power-bi-get-started-third-party-apps.md
     - name: Ohjeet
       items:
         - name: Tietojen noutaminen tiedostoista
@@ -529,7 +525,7 @@
               href: power-bi-query-caching.md
             - name: Päivitystilanteiden vianmääritys
               href: refresh-troubleshooting-refresh-scenarios.md
-        - name: Koontinäytöt
+        - name: koontinäytöt
           items:
             - name: Koontinäyttöjen esittely
               href: service-dashboards.md
@@ -859,14 +855,12 @@
                   href: service-organizational-content-pack-manage-update-delete.md
                 - name: Yhteyden poistaminen sisältöpakettiin
                   href: service-organizational-content-pack-disconnect.md
+        - name: Viittaus
+          items:
+            - name: Tuetut kielet ja maat tai alueet
+          href: supported-languages-countries-regions.md
     - name: Resurssit
       items:
-        - name: Videot
-          href: videos.md
-        - name: Verkkoseminaarit
-          href: webinars.md
-        - name: Tuetut kielet ja maat tai alueet
-          href: supported-languages-countries-regions.md
         - name: Raportit
           items:
             - name: Raporttien yleiskatsaus
@@ -877,6 +871,10 @@
               href: whitepaper-powerbi-premium-deployment.md
             - name: 'Power BI -sisällön jakaminen ulkoisille käyttäjille Azure Active Directory B2B:n avulla'
               href: whitepaper-azure-b2b-power-bi.md
+        - name: Videot
+          href: videos.md
+        - name: Verkkoseminaarit
+          href: webinars.md
 - name: Power BI Premium
   items:
     - name: Yleiskatsaus

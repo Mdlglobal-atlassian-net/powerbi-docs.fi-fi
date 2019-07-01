@@ -8,36 +8,38 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/06/2018
+ms.date: 06/04/2019
 ms.author: mblythe
 LocalizationGroup: Data refresh
-ms.openlocfilehash: 2acdada1a0b6955fb7d85f445bdbf5895b795bb4
-ms.sourcegitcommit: 81ba3572531cbe95ea0b887b94e91f94050f3129
+ms.openlocfilehash: 5d704e32a9e5f85f280e17042ae4eb799058d739
+ms.sourcegitcommit: 7d52401f50944feaaa112c84113ee47f606dbf68
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66751181"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67123980"
 ---
 # <a name="refresh-a-dataset-stored-on-onedrive-or-sharepoint-online"></a>Päivitä Onedriveen tai SharePoint Onlineen tallennettuja tietojoukkoja
-Tiedostojen tuominen Onedrivesta tai SharePoint Onlinesta Power BI -palveluun on hyvä tapa varmistaa, että työ, jota olet tekemässä **Power BI Desktopissa** pysyy synkronoituna Power BI -palveluun.
+Tiedostojen tuominen OneDrivesta tai SharePoint Onlinesta Power BI -palveluun on mainio tapa varmistaa, että Power BI Desktop -työsi synkronoidaan Power BI -palvelun kanssa.
 
 ## <a name="advantages-of-storing-a-power-bi-desktop-file-on-onedrive-or-sharepoint-online"></a>Power BI Desktop -tiedoston tallennuksesta OneDriveen tai SharePoint Onlineen saatavat edut
-Kun tallennat **Power BI Desktop** -tiedoston OneDriveen tai SharePoint Onlineen, tiedoston malliin lataamasi tiedot tuodaan tietojoukkoon, ja tiedostoon luomasi raportit ladataan kohtaan **Raportit** Power BI -palvelussa. Kun teet muutoksia tiedostoon OneDrivessa tai SharePoint Onlinessa, esimerkiksi lisäämällä uusia mittareita, muuttamalla sarakenimiä tai muokkaamalla visualisointeja ja kun tallennat tiedoston, muutokset päivitetään myös Power BI-palveluun yleensä noin tunnin kuluessa.
+Kun tallennat Power BI Desktop -tiedoston OneDriveen tai SharePoint Onlineen, tiedoston malliin lataamasi kaikki tiedot tuodaan tietojoukkoon. Tiedostoon luomasi kaikki raportit ladataan **Raportit**-kohtaan Power BI -palvelussa. Oletetaan, että teet muutoksia tiedostoosi OneDrivessa tai SharePoint Onlinessa. Nämä muutokset voivat sisältää uusien mittayksiköiden lisäämisen, sarakkeiden nimien muuttamisen tai visualisointien muokkaamisen. Kun tiedosto on tallennettu, Power BI -palvelu synkronoi myös nämä muutokset yleensä noin tunnin kuluessa.
 
-Voit suorittaa vain kerran manuaalisen päivityksen suoraan Power BI Desktopissa valitsemalla Aloitus-valintanauhasta Päivitä. Kun valitset tässä kohdassa Päivitä, tiedot *tiedoston* mallissa päivitetään alkuperäisen tietolähteen päivitetyillä tiedoilla. Tällainen päivitys kokonaan Power BI Desktop-sovelluksen sisällä eroaa manuaalisesta tai ajoitetusta päivityksestä Power BI:ssä, ja on tärkeää ymmärtää tämä ero.
+Voit suorittaa manuaalisen kertapäivityksen suoraan Power BI Desktopissa valitsemalla **Aloitus**-valintanauhasta **Päivitä**. Kun valitset **Päivitä**, päivität tiedoston malliin päivitetyt tiedot alkuperäisestä tietolähteestä. Tällainen päivitys tapahtuu kokonaan itse Power BI Desktop -sovelluksesta. Se poikkeaa Power BI:n manuaalisesta tai ajoitetusta päivityksestä, ja on tärkeää ymmärtää niiden ero.
 
 ![](media/refresh-desktop-file-onedrive/pbix-refresh.png)
 
-Kun tuot Power BI Desktop-tiedostoa OneDriveen tai SharePoint Onlineen, data sekä muita tietoja mallista ladataan tietojoukkoon Power BI -palvelussa. Power BI -palvelussa, ei Power BI Desktopissa, haluat päivittää tietojoukon tietoja, koska siihen raporttisi Power BI -palvelussa perustuvat. Koska tietolähteet ovat ulkoisia, voit päivittää tietojoukon manuaalisesti valitsemalla **Päivitä nyt** tai voit asettaa päivityksen ajoituksen valitsemalla **Ajoita päivitys**.
+Kun tuot Power BI Desktop -tiedoston OneDrivesta tai SharePoint Onlinesta, lataat tiedot ja mallin tiedot Power BI:n tietojoukkoon. Haluat varmasti päivittää tietojoukon Power BI -palveluun, koska raporttisi perustuvat siihen. Koska tietolähteet ovat ulkoisia, voit päivittää tietojoukon manuaalisesti valitsemalla **Päivitä nyt**. Vaihtoehtoisesti voit asettaa päivityksen ajoituksen valitsemalla **Ajoita päivitys**. 
 
-Kun päivität tietojoukon, Power BI ei muodosta yhteyttä OneDriveen tai SharePoint Onlineen kyselemään päivitettyjä tietoja. Se käyttää tietojoukon tietoja ja muodostaa suoraan yhteyden tietolähteisiin päivitettyjen tietojen kyselyä varten, minkä jälkeen se lataa tiedot tietojoukkoon. Näitä tietojoukon päivitettyjä tietoja ei synkronoida takaisin tiedoston OneDrivessa tai SharePoint Onlinessa.
+![](media/refresh-desktop-file-onedrive/powerbi-service-refresh.png)
+
+Kun päivität tietojoukon, Power BI ei muodosta yhteyttä OneDriven tai SharePoint Onlinen tiedostoon kyselemään päivitettyjä tietoja. Se käyttää tietojoukon tietoja ja muodostaa suoraan yhteyden tietolähteisiin päivitettyjen tietojen kyselyä varten. Sen jälkeen se lataa tiedot tietojoukkoon. Näitä tietojoukon päivitettyjä tietoja ei synkronoida takaisin OneDriven tai SharePoint Onlinen tiedostoon.
 
 ## <a name="whats-supported"></a>Tuetut toiminnot:
-Power BI, Päivitä nyt ja Ajoita päivitys ovat tuettuja tietojoukkoja, jotka on luotu Power BI Desktop -tiedostoista, jotka on tuotu paikallisesta asemasta, jossa Nouda tiedot/Kyselyeditoria käytetään yhteyden muodostamiseen ja tietojen lataamiseen missä tahansa seuraavista tietolähteistä:
+Power BI tukee **Päivitä**- ja **Ajoita päivitys** -komentoja tietojoukoille, jotka on luotu sellaisista Power BI Desktop -tiedostoista, jotka tuotu paikallisesta asemasta, jossa **Nouda tiedot**- tai **Kyselyeditori**-kohtaa käytetään yhteyden muodostamiseen ja tietojen lataamiseen seuraavista tietolähteistä.
 
 ### <a name="power-bi-gateway---personal"></a>Power BI Gateway - Personal
-* Kaikki online-tietolähteet, jotka näkyvät Power BI Desktopin kohdassa Nouda tiedot ja Kyselyeditorissa.
-* Kaikki paikalliset tietolähteet, jotka näkyvät Power BI Desktopin kohdassa Nouda tiedot ja Kyselyeditorissa lukuun ottamatta Hadoop-tiedostoa (HDFS) ja Microsoft Exchangea.
+* Kaikki online-tietolähteet, jotka näkyvät Power BI Desktopin **Nouda tiedot**- ja **Kyselyeditori**-kohdassa.
+* Kaikki paikalliset tietolähteet, jotka näkyvät Power BI Desktopin **Nouda tiedot**- ja **Kyselyeditori**-kohdassa lukuun ottamatta Hadoop-tiedostoa (HDFS) ja Microsoft Exchangea.
 
 <!-- Refresh Data sources-->
 [!INCLUDE [refresh-datasources](./includes/refresh-datasources.md)]
@@ -48,33 +50,34 @@ Power BI, Päivitä nyt ja Ajoita päivitys ovat tuettuja tietojoukkoja, jotka o
 > 
 
 ## <a name="onedrive-or-onedrive-for-business-whats-the-difference"></a>OneDrive vai OneDrive for Business? Mikä niiden ero on?
-Jos sinulla on sekä henkilökohtainen OneDrive että OneDrive for Business, on suositeltavaa säilyttää tiedostot, jotka haluat tuoda Power BI:ssa OneDrive for Business -palveluun. Syynä on se, että käytät todennäköisesti kahta eri tiliä niille kirjautumista varten.
+Jos sinulla on sekä henkilökohtainen OneDrive että OneDrive for Business, sinun kannattaa säilyttää tiedostot, jotka haluat tuoda Power BI:hin OneDrive for Businessissa. Syynä on se, että käytät todennäköisesti kahta eri tiliä niille kirjautumista varten.
 
-Yhteyden muodostaminen OneDrive for Business -palveluun Power BI:ssa on yleensä saumaton, koska tili, jota käytit Power BI -kirjautumiseen on usein sama tili, jota käytetään kirjauduttaessa OneDrive for Business -palveluun. Henkilökohtaisen OneDrive olet todennäköisesti kuitenkin kirjautunut sisään toisella [Microsoft-tilillä](https://account.microsoft.com).
+Kun muodostat yhteyden OneDrive for Businessiin Power BI:ssä, yhteyden muodostaminen on helppoa, koska Power BI -tili on usein sama tili kuin OneDrive for Business -tili. Voit henkilökohtaisen OneDriven avulla yleensä kirjautua sisään eri [Microsoft-tilillä](https://account.microsoft.com).
 
-Kun olet kirjautunut sisään Microsoft-tilillesi, muista valita Pysy kirjautuneena -vaihtoehto. Power BI voi tämän jälkeen synkronoida mitä tahansa tekemiäsi päivityksiä Power BI Desktop -tiedostoon ja Power BI -tietojoukkoihin  
-    ![](media/refresh-desktop-file-onedrive/refresh_signin_keepmesignedin.png)
+Kun olet kirjautunut sisään Microsoft-tilillesi, muista valita **Pysy kirjautuneena** . Power BI voi tämän jälkeen synkronoida mitä tahansa tekemiäsi päivityksiä Power BI Desktop -tiedostoon ja Power BI -tietojoukkoihin.
 
-Jos teet muutoksia OneDrive-tiedostoon, joita ei voi synkronoida tietojoukkoon tai raporttiin Power BI:ssa, koska Microsoft-tilisi tunnistetiedot ovat ehkä muuttuneet, sinun pitää muodostaa yhteys ja tuoda tiedostosi takaisin omasta OneDrivesta.
+![](media/refresh-desktop-file-onedrive/refresh_signin_keepmesignedin.png)
+
+Jos olet muuttanut Microsoft-tunnistetietosi, muutoksia ei voi synkronoida OneDrive-tiedostosi ja Power BI -tietojoukkosi välillä. Sinun on muodostettava yhteys tiedostoon ja tuotava se uudelleen OneDrivesta.
 
 ## <a name="how-do-i-schedule-refresh"></a>Kuinka päivitys ajoitetaan?
-Kun asetat päivitysaikataulun, Power BI muodostaa suoraan yhteyden tietolähteisiin käyttämällä tietojoukon yhteystietoja ja tunnistetietoja päivitettyjen tietojen kyselyyn ja lataa sitten päivitetyt tiedot tietojoukkoon. Kaikki visualisoinnit raportteihin ja koontinäyttöihin, jotka perustuvat Power BI-palvelussa oleviin tietojoukkoihin, päivitetään myös.
+Kun asetat päivitysaikataulun, Power BI muodostaa yhteyden suoraan tietolähteisiin. Power BI käyttää tietojoukon yhteystietoja ja tunnistetietoja kyselemään päivitettyjä tietoja. Power BI lataa sitten päivitetyt tiedot tietojoukkoon. Se päivittää sen jälkeen kaikki raporttivisualisoinnit ja koontinäytöt tämän tietojoukon perusteella Power BI -palvelussa.
 
-Lisätietoja ajoitetun päivityksen määrityksestä on kohdassa [Ajoitetun päivityksen määrittäminen](refresh-scheduled-refresh.md).
+Lisätietoja ajoitetun päivityksen määrityksestä on artikkelissa [Ajoitetun päivityksen määrittäminen](refresh-scheduled-refresh.md).
 
 ## <a name="when-things-go-wrong"></a>Jos ilmenee ongelmia
-Ongelmat johtuvat yleensä siitä, että Power BI ei voi kirjautua sisään tietolähteisiin tai jos tietojoukko muodostaa yhteyden paikalliseen tietolähteeseen, mutta yhdyskäytävä on offline-tilassa. Varmista, että Power BI voi kirjautua sisään tietolähteisiin. Jos tietolähteeseen kirjautumisen salasana muuttuu tai jos Power BI kirjataan ulos tietolähteestä, yritä kirjautua uudelleen sisään tietolähteisiin Tietolähteen tunnistetiedot -kohdassa.
+Jos ilmenee ongelmia, se johtuu yleensä siitä, että Power BI ei voi kirjautua sisään tietolähteisiin. Asiat voivat myös mennä pieleen, jos tietojoukko yrittää muodostaa yhteyden paikalliseen tietolähteeseen, mutta yhdyskäytävä on offline-tilassa. Varmista näiden ongelmien välttämiseksi, että Power BI voi kirjautua sisään tietolähteisiin. Yritä kirjautua sisään tietolähteisiin **tietolähteen tunnistetiedoissa**. Joskus salasana, jota käytät kirjautuessasi sisään tietolähteeseen, muuttuu, tai Power BI kirjataan ulos tietolähteestä.
 
-Jos olet tekemässä muutoksia Power BI Desktop -tiedostoon OneDrivessa ja tallennat, eivätkä kyseiset muutokset näy Power BI:ssa noin tunnin kuluessa, se voi johtua siitä, että Power BI ei pysty muodostamaan yhteyttä OneDriveen. Yritä muodostaa yhteys uudelleen tiedostoon OneDrivessa. Jos sinua pyydetään kirjautumaan sisään, varmista, että valitset vaihtoehdon Pysy kirjautuneena. Koska Power BI ei pystynyt muodostamaan yhteyttä OneDriveen tiedoston synkronoimiseksi, sinun on tuotava tiedosto uudelleen.
+Kun tallennat muutoksesi Power BI Desktop -tiedostoon OneDrivessa, eivätkä kyseiset muutokset näy Power BI:ssa noin tunnin kuluessa, se voi johtua siitä, että Power BI ei pysty muodostamaan yhteyttä OneDriveen. Yritä muodostaa yhteys uudelleen tiedostoon OneDrivessa. Jos sinua pyydetään kirjautumaan sisään, varmista, että valitset vaihtoehdon **Pysy kirjautuneena**. Koska Power BI ei pystynyt muodostamaan yhteyttä OneDriveen tiedoston synkronoimiseksi, sinun on tuotava tiedosto uudelleen.
 
 Varmista, että jätät kohtaan **Lähetä päivitysvirheen ilmoitusviesti sähköpostiini** valintamerkin. Haluat tietää heti, jos ajoitettu päivitys epäonnistuu.
 
 ## <a name="troubleshooting"></a>Vianmääritys
-Joskus tietojen päivittäminen ei mene odotetulla tavalla. Yleensä tämä on yhdyskäytävään liittyvä ongelma. Tutustu yhdyskäytävän vianmääritystä koskeviin artikkeleihin, joissa on esitetty työkaluja ja tunnettuja ongelmia.
+Joskus tietojen päivittäminen ei mene odotetulla tavalla. Kohtaat yleensä tietojen päivitysongelmia, kun olet muodostanut yhteyden yhdyskäytävään. Tutustu yhdyskäytävän vianmääritystä koskeviin artikkeleihin, joissa on esitetty työkaluja ja tunnettuja ongelmia.
 
 [Paikallisen tietoyhdyskäytävän vianmääritys](service-gateway-onprem-tshoot.md)
 
 [Power BI -yhdyskäytävän vianmääritys – Personal](service-admin-troubleshooting-power-bi-personal-gateway.md)
 
-Onko sinulla muuta kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)
+Onko sinulla kysyttävää? Voit esittää kysymyksiä [Power BI -yhteisössä](http://community.powerbi.com/).
 

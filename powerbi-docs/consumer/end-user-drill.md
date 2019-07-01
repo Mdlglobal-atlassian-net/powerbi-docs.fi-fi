@@ -1,6 +1,6 @@
 ---
 title: Porautuminen alas- ja ylöspäin visualisoinnissa
-description: Tässä asiakirjassa kerrotaan, miten voit porautua visualisointiin Power BI -palvelussa ja Power BI Desktopissa.
+description: Tässä artikkelissa kerrotaan, miten voit porautua alaspäin visualisointiin Microsoft Power BI -palvelussa ja Power BI Desktopissa.
 author: mihart
 manager: kvivek
 ms.reviewer: ''
@@ -9,221 +9,277 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 12/06/2018
+ms.date: 6/17/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: bc5033df204fafcc7316d6708d7b39429e8e9cba
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 29823a2f1ca7f1448df54282e0ce081310974eb3
+ms.sourcegitcommit: 8c52b3256f9c1b8e344f22c1867e56e078c6a87c
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61052989"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67265657"
 ---
 # <a name="drill-mode-in-a-visualization-in-power-bi"></a>Visualisointiin porautumistila Power BI:ssä
 
+Tässä artikkelissa kerrotaan, miten voit porautua alaspäin visualisointiin Microsoft Power BI -palvelussa ja Power BI Desktopissa. Power BI -raporteissa voi olla useita tietohierarkioita, jotka antavat mahdollisimman monia merkityksellisiä tietoja datasta. Kun poraat arvopisteitä ylös- tai alaspäin, voit tutkia tarkemmin tietojesi yksityiskohtia. Voit hyödyntää niitä jopa kaikkein pienimmissä mobiililaitteissa.
+
 ## <a name="drill-requires-a-hierarchy"></a>Porautuminen edellyttää hierarkiaa
-Kun visualisoinnissa on hierarkia, saat porautumalla näkyviin lisää tietoja. Sinulla voi olla esimerkiksi visualisointi, joka kuvaa olympiamitalien määrää hierarkian mukaan, joka muodostuu urheilusta, lajista ja tapahtumasta. Visualisointi näyttää oletusarvoisesti mitalimäärän urheilulajin mukaan – esimerkiksi voimistelu, hiihto ja vesiurheilu. Mutta koska sillä on hierarkia, visualisoinnin yhden elementin (kuten palkin, rivin tai kuplan) valitseminen antaa yksityiskohtaisemman kuvan. Valitsemalla **vesiurheilu**-elementin saat näkyviin uintia, uimahyppyä ja vesipalloa koskevat tiedot.  Valitsemalla **uimahyppy**-elementin saat näkyviin ponnahduslauta-, koroke- ja taitohyppytapahtumat.
+
+Kun visualisoinnissa on hierarkia, saat porautumalla alaspäin näkyviin lisää tietoja. Sinulla voi olla esimerkiksi visualisointi, joka kuvaa olympiamitalien määrää hierarkian mukaan, joka muodostuu urheilusta, lajista ja tapahtumasta. Visualisointi näyttää oletusarvoisesti mitalimäärän urheilulajin mukaan – esimerkiksi voimistelu, hiihto ja vesiurheilu. Mutta koska sillä on hierarkia, visualisoinnin yhden elementin (kuten palkin, rivin tai kuplan) valitseminen näyttää selvästi yksityiskohtaisemman kuvan. Valitsemalla **vesiurheilu**-elementin saat näkyviin uintia, uimahyppyä ja vesipalloa koskevat tiedot.  Valitsemalla **uimahyppy**-elementin saat näkyviin ponnahduslauta-, koroke- ja taitohyppytapahtumat.
 
 Voit lisätä hierarkioita omistamiisi raportteihin, mutta et niihin, jotka on jaettu kanssasi.
-Etkö ole varma, mitkä Power BI -visualisoinnit sisältävät hierarkian?  Pidä hiiren osoitinta visualisoinnin päällä, ja jos nämä porauksen ohjausobjektit tulevat näkyviin, visualisoinnissa on hierarkia.
+Etkö ole varma, mitkä Power BI -visualisoinnit sisältävät hierarkian? Liikuta hiiren osoitinta visualisoinnin päällä. Jos nämä porauksen ohjausobjektit tulevat näkyviin yläkulmissa, visualisoinnissa on hierarkia.
 
-![poraaminen yksi taso alaspäin](./media/end-user-drill/power-bi-drill-icon4.png)  ![alaspäin porautumisen ottaminen käyttöön ja poistaminen käytöstä](./media/end-user-drill/power-bi-drill-icon2.png)  ![kuvake kaikkien kenttien poraamiseen alaspäin kerralla](./media/end-user-drill/power-bi-drill-icon3.png)
-![poraudu ylöspäin -kuvake](./media/end-user-drill/power-bi-drill-icon5.png) ![laajenna alaspäin -kuvake](./media/end-user-drill/power-bi-drill-icon6.png)  
+![Näyttökuva Poraudu alaspäin yksi taso -kuvakkeesta.](./media/end-user-drill/power-bi-drill-icon4.png)  ![Näyttökuva Ota alaspäin porautuminen käyttöön ja poista se käytöstä -kuvakkeesta.](./media/end-user-drill/power-bi-drill-icon2.png)  ![Näyttökuva Poraa kaikki kentät alaspäin kerralla -kuvakkeesta.](./media/end-user-drill/power-bi-drill-icon3.png)
+![poraa ylöspäin -kuvake](./media/end-user-drill/power-bi-drill-icon5.png) ![Näyttökuva Laajenna alaspäin -kuvakkeesta.](./media/end-user-drill/power-bi-drill-icon6.png)  
 
-Päivämäärät ovat hierarkian yksilöivä tyyppi. Kun lisäät visualisointiin päivämääräkentän, Power BI lisää automaattisesti aikahierarkian, joka sisältää vuoden, vuosineljänneksen, kuukauden ja päivän. Lisätietoja saat [Visuaaliset hierarkiat ja porautuminen](../guided-learning/visualizations.yml?tutorial-step=18) -opetusohjelmasta tai katsomalla alla oleva video.
+Päivämäärät ovat hierarkian yksilöivä tyyppi. Kun lisäät visualisointiin päivämääräkentän, Power BI lisää automaattisesti aikahierarkian, joka sisältää vuoden, vuosineljänneksen, kuukauden ja päivän. Lisätietoja saat artikkelista [Visualisoinnin hierarkiat ja porautuminen alaspäin](../guided-learning/visualizations.yml?tutorial-step=18) tai katsomalla alla olevan videon.
 
-
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/MNAaHw4PxzE?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/MNAaHw4PxzE?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
 
 > [!NOTE]
-> Opettele luomaan hierarkioita Power BI Desktopin avulla katsomalla [How to create and add hierarchies](https://youtu.be/q8WDUAiTGeU) -video
-> 
+> Jos haluat lisätietoja siitä, miten voit luoda hierarkioita Power BI Desktopin avulla, katso video [Miten hierarkioita luodaan ja lisätään](https://youtu.be/q8WDUAiTGeU).
 
 ## <a name="prerequisites"></a>Edellytykset
 
-1. Power BI -palvelussa ja Desktopissa porautuminen edellyttää visualisointia, jolla on hierarkia. 
-   
-2. [Avaa Jälleenmyyntianalyysimalli](../sample-datasets.md) ja luo puukartta, jossa näkyvät **yksiköt yhteensä tänä vuonna** (Arvot) alueen **(Territory)** , kaupungin **(City)** , postinumeron **(PostalCode)** ja nimen **(Name)** (Ryhmä) mukaan.  Puukartassa on alueesta, kaupungista, postinumerosta ja postitoimipaikasta koostuva hierarkia. Jokainen alue sisältää yhden tai useamman kaupungin, jokainen kaupunki yhden tai useamman postinumeron ja niin edelleen. Visualisointi näyttää oletusarvoisesti vain alueen tiedot, koska *Territory* (Alue) näkyy luettelossa ensimmäisenä.
-   
-   ![Valitse alue (Territory)](media/end-user-drill/power-bi-hierarcy-list.png)
+1. Power BI -palvelussa tai Desktopissa porautuminen edellyttää visualisointia, jolla on hierarkia.
 
-2. Eri porautumiskuvakkeiden yhteiskäytön ymmärtäminen voi olla hankalaa, joten suodatetaan puukartta näyttämään vain kaksi pienempää aluetta: **KY** ja **TN**. Valitse puukartta ja laajenna sitten **Alue** kohdassa **Visuaalisen tason suodattimet** ja valitse **KY** ja **TN**.
+1. Avaa seuraamista varten [Jälleenmyyntianalyysin malli](../sample-datasets.md). Luo **Puukartan** visualisointi, joka näyttää seuraavat:
 
-    ![suodatin KY:lle ja TN:lle](./media/end-user-drill/power-bi-filter.png)    
+    | Säilö | Kenttä |
+    | ---- | ----- |
+    | Arvo |Myynti<br>\|\_ Yksiköt yhteensä tänä vuonna |
+    | Ryhmä | Myymälä<br>\|\_ Alue<br>\|\_ Kaupunki<br>\|\_ Postinumero<br>\|\_ Nimi
 
-   Nyt puukartassa näkyy vain kaksi aluetta.
+    Puukartassa on alueesta, kaupungista, postinumerosta ja postitoimipaikasta koostuva hierarkia. Jokainen alue sisältää yhden tai useamman kaupungin, jokainen kaupunki yhden tai useamman postinumeron ja niin edelleen. Visualisointi näyttää oletusarvoisesti vain alueen tiedot, koska *Alue* näkyy luettelossa ensimmäisenä.
 
-   ![kaksinkertainen porautumiskuvake](./media/end-user-drill/power-bi-territories.png)
+    ![Näyttökuva Visualisoinnit-ruudusta, jossa Alue-kenttä on korostettu.](media/end-user-drill/power-bi-hierarcy-list.png)
 
-## <a name="three-ways-to-access-the-drill-features"></a>Kolme tapaa käyttää porautumisominaisuuksia
-Poraudu alaspäin-, Poraudu ylöspäin- ja Laajenna-toimintoja voi käyttää useilla eri tavoilla visualisoinneissa, jotka sisältävät hierarkioita. Tässä artikkelissa esitellään seuraavaksi ensimmäinen tapa. Kun ymmärrät alaspäin porautumisen ja laajentamisen perusteet, voit käyttää mitä tahansa näistä kolmesta menetelmästä. Niillä saadaan aikaan samoja asioita, joten voit kokeilla niitä ja valita itsellesi sopivimman tavan.
+1. Voi olla hankala ymmärtää sitä, miten erilaiset porautumiskuvakkeet toimivat yhdessä. Suodatetaanpa puukartta, jossa näytetään vain kaksi pienempää aluetta: **KY** ja **TN**. Valitse puukartta ja laajenna sitten **Alue** kohdassa **Visuaalisen tason suodattimet** ja valitse **KY** ja **TN**.
+
+    ![Näyttökuva Visualisoinnit-ruudusta, jossa on suodatin KY:lle ja TN:lle.](./media/end-user-drill/power-bi-filter.png)
+
+    Nyt puukartassa näkyy vain kaksi aluetta.
+
+    ![Näyttökuva visualisoinneista, jossa KY ja TN on korostettu.](./media/end-user-drill/power-bi-territories.png)
+
+## <a name="three-ways-to-use-the-drill-features"></a>Kolme tapaa käyttää porautumisominaisuuksia
+
+Poraudu alaspäin-, Poraudu ylöspäin- ja Laajenna-toimintoja voi käyttää useilla eri tavoilla visualisoinneissa, jotka sisältävät hierarkioita. Tässä artikkelissa esitellään seuraavaksi ensimmäinen tapa. Kun olet oppinut alaspäin porautumisen ja laajennuksen perusteet, osaat käyttää niitä kaikkea kolmea. Ne kaikki tekevät samoja asioita. Kokeile niitä ja valitse se, josta pidät eniten.
 
 - Kun osoitat visualisointia, näet kuvakkeet ja voit käyttää niitä.  
 
-    ![porautumisen polku](./media/end-user-drill/power-bi-hover.png)
+    ![Näyttökuva esimerkistä, jossa hiirtä liikutetaan vaihtoehdon päällä.](./media/end-user-drill/power-bi-hover.png)
 
 - Valikko tulee näkyviin hiiren kakkospainiketta napsauttamalla.
-    
-    ![pikavalikko](./media/end-user-drill/power-bi-drill-menu.png)
+
+    ![Näyttökuva esimerkistä, jossa napsautetaan hiiren kakkospainiketta.](./media/end-user-drill/power-bi-drill-menu.png)
 
 - Valitse Power BI-valikkoriviltä **Tutki**.
 
-   ![Tutki-vaihtoehdon valitseminen tuo näkyviin porautumiskuvakkeet ja -asetukset](media/end-user-drill/power-bi-explore.png)
+   ![Näyttökuva, jossa valitaan Resurssienhallinta, joka näyttää porautumiskuvakkeet ja vaihtoehdot.](media/end-user-drill/power-bi-explore.png)
 
 ## <a name="drill-pathways"></a>Porautumisen polut
-### <a name="drill-down"></a>Porautuminen alaspäin
-Käytettävissäsi on useita tapoja porautua visualisointiin. ***Poraudu alaspäin*** vie sinut seuraavalle tasolle hierarkiassa, joten jos tarkastelet **alueiden** tasoa, voit porautua kaupunkien tasolle, sitten postinumerojen tasolle ja lopuksi nimien tasolle. Polun jokainen vaihe tuo näkyviin uusia tietoja.
 
-![porautumisen polku](./media/end-user-drill/power-bi-drill-path.png)
+### <a name="drill-down"></a>Poraudu alaspäin
+
+Käytettävissäsi on useita tapoja porautua visualisointiin. **Poraudu alaspäin** vie sinut seuraavalle tasolle hierarkiassa. Jos tarkastelet **Alue**-tasoa, voit porautua alaspäin kaupungin tasolle, sitten postinumeron tasolle ja lopuksi nimen tasolle. Polun jokainen vaihe tuo näkyviin uusia tietoja.
+
+![Kaavio, jossa näytetään porautumisen polku](./media/end-user-drill/power-bi-drill-path.png)
 
 ### <a name="expand"></a>Laajenna
 
-***Laajenna*** lisää muita hierarkiatasoja nykyiseen näkymään. Jos siis tarkastelet **alueiden** tasoa, voit laajentaa ja lisätä kaupunkeja, postinumeroita ja nimitietoja puukarttaan. Jokainen polun vaihe tuo näkyviin edelliset tiedot ja lisää uuden tietojen tason.
+**Laajenna** lisää muita hierarkiatasoja nykyiseen näkymään. Jos siis tarkastelet **Alue**-tasoa, voit laajentaa ja lisätä kaupungin, postinumeron ja nimen tiedot puukarttaan. Jokainen polun vaihe tuo näkyviin edelliset tiedot ja lisää uuden tietojen tason.
 
-![polun laajentaminen](./media/end-user-drill/power-bi-expand-path.png)
+![Kaavio, joka näyttää Laajenna-polun](./media/end-user-drill/power-bi-expand-path.png)
 
-Voit myös valita, haluatko porautua alaspäin tai laajentaa näkymää yksi kenttä kerrallaan vai kaikki kentät kerrallaan. 
+Voit myös valita, haluatko porautua alaspäin vai laajentaa yksi kenttä kerrallaan tai kaikki kentät kerrallaan.
 
-## <a name="drill-down-all-fields-at-a-time"></a>Porautuminen alaspäin kaikki kentät kerrallaan
+## <a name="drill-down-all-fields-at-once"></a>Porautuminen alaspäin kaikki kentät kerrallaan
 
-1. Aloita puukartan ylätasolta, jossa näkyvät KY:n ja TN:n tiedot. Laajenna puukarttaa valitsemalla jokin kahvoista ja vetämällä sitä oikealle. 
+1. Aloita puukartan ylätasolta, jossa näkyvät KY:n ja TN:n tiedot. Laajenna puukarttaa valitsemalla jokin kahvoista ja vetämällä sitä oikealle.
 
-    ![kaksi osavaltiota näyttävä puukartta](./media/end-user-drill/power-bi-drill-down.png) .
+    ![Näyttökuva puukartan visualisoinnista, jossa näytetään KY ja TN](./media/end-user-drill/power-bi-drill-down.png)
 
-2. Jos haluat porautua alaspäin ***kaikki kentät kerrallaan***, valitse visualisoinnin vasemmassa yläkulmassa näkyvä kaksoisnuoli ![kaksinkertainen alaspäin porautumiskuvake](./media/end-user-drill/power-bi-drill-icon3.png). Puukartassa näkyvät nyt Kentuckyn ja Tennesseen kaupunkitiedot. 
+1. Jos haluat porautua alaspäin *kaikki kentät kerrallaan*, valitse visualisoinnin vasemmassa yläkulmassa oleva kaksoisnuoli ![kaksinkertainen alaspäin porautumiskuvake](./media/end-user-drill/power-bi-drill-icon3.png). Puukartassa näkyvät nyt Kentuckyn ja Tennesseen kaupunkitiedot.
 
-    ![kaksinkertainen porautumiskuvake](./media/end-user-drill/power-bi-drill-down1.png)
-   
-5. Porautumalla alaspäin vielä kerran siirryt postinumeroiden tasolle hierarkiassa.
+    ![Näyttökuva puukartan visualisoinnista, joka näyttää porautumisen alaspäin kaupunkeihin.](./media/end-user-drill/power-bi-drill-down1.png)
 
-    ![kaksinkertainen porautumiskuvake](./media/end-user-drill/power-bi-drill-down2.png)
+1. Porautumalla alaspäin vielä kerran siirryt postinumeron tasolle hierarkiassa.
 
-3. Jos haluat porautua takaisin ylöspäin, valitse ylänuoli visualisoinnin vasemmassa yläkulmassa ![poraudu ylöspäin yksi taso -kuvake](./media/end-user-drill/power-bi-drill-icon5.png).
+    ![Näyttökuva puukartan visualisoinnista, joka näyttää porautumisen alaspäin postinumeroon.](./media/end-user-drill/power-bi-drill-down2.png)
 
+1. Jos haluat porautua takaisin ylöspäin, valitse ylänuoli visualisoinnin vasemmassa yläkulmassa ![Näyttökuva Porautuminen ylöspäin yksi taso -kuvakkeesta.](./media/end-user-drill/power-bi-drill-icon5.png).
 
 ## <a name="drill-down-one-field-at-a-time"></a>Porautuminen alaspäin yksi kenttä kerrallaan
-Tässä menetelmässä käytetään Poraudu alaspäin -kuvaketta, joka näkyy itse visualisoinnin oikeassa yläkulmassa. 
 
-1. Valitse Poraudu alaspäin -kuvake ja vaihda sen tilaksi ![porautuminen alaspäin käytössä](./media/end-user-drill/power-bi-drill-icon2.png). Nyt voit halutessasi porautua ***yksi kenttä kerrallaan***. 
-   
-   ![nuoli, joka osoittaa porautuminen alaspäin käytössä / ei käytössä -kuvakkeeseen](media/end-user-drill/power-bi-drill-icon-new.png)
+Tässä menetelmässä käytetään Poraudu alaspäin -kuvaketta, joka näkyy itse visualisoinnin oikeassa yläkulmassa.
 
-   Jos et ota porautumista alaspäin käyttöön, visuaalisen elementin (kuten palkin, kuplan tai lehden) valitseminen ei poraudu näkymässä alaspäin, vaan ristisuodattaa muut raportin sivulla olevat kaaviot.
+1. Valitse Poraudu alaspäin -kuvake, jos haluat ottaa sen käyttöön ![Näyttökuva Porautuminen alaspäin käytössä / pois käytöstä -kuvakkeesta, joka on otettu käyttöön.](./media/end-user-drill/power-bi-drill-icon2.png).
 
-2. Valitse *lehti* kohteelle **TN**. Puukartassa näkyvät nyt kaikki Tennesseen kaupungit, joissa on myymälä. 
+    Nyt voit halutessasi porautua **yksi kenttä kerrallaan**.
 
-    ![puukartta näyttää vain Tennesseetä koskevat tiedot](media/end-user-drill/power-bi-drill-down-one1.png)
+    ![Näyttökuva visualisoinnista, jossa nuoli osoittaa Porautuminen alaspäin käytössä / pois käytöstä -kuvakkeeseen, joka on otettu käyttöön](media/end-user-drill/power-bi-drill-icon-new.png)
 
-2. Tässä vaiheessa voit jatkaa porautumista alaspäin Tennesseelle tai porautua alaspäin tiettyyn Tennesseen kaupunkiin tai laajentaa sen sijaan näkymää (katso alta **Kaikkien kenttien laajentaminen kerralla**). Poraudutaan jälleen alaspäin yksi kenttä kerrallaan.  Valitse **Knoxville, TN**. Puukartassa näkyy nyt Knoxvillen myymälän postinumero. 
+    Jos et ota porautumista alaspäin käyttöön, visualisointielementin (kuten palkin, kuplan tai lehden) valitseminen ei poraa alaspäin. Sen sijaan se ristisuodattaa muut raporttisivulla olevat kaaviot.
 
-   ![puukartassa näkyy 37919](media/end-user-drill/power-bi-drill-down-one2.png)
+1. Valitse lehti **TN:lle**. Puukartassa näytetään nyt kaikki Tennesseen kaupungit, joissa on myymälä.
 
-    Huomaa, että otsikko muuttuu porautuessasi alaspäin ja uudelleen takaisin ylös.  
+    ![Näyttökuva puukartasta, joka näyttää vain TN:n tiedot.](media/end-user-drill/power-bi-drill-down-one1.png)
+
+1. Tässä vaiheessa voit:
+
+    1. Jatkaa porautumista alaspäin Tennesseelle.
+
+    1. Porautua alaspäin tiettyyn kaupunkiin Tennesseessä.
+
+    1. Laajentaa sen sijaan (katso **Laajenna kaikki kentät kerrallaan** alla).
+
+    Poraudutaan jälleen alaspäin yksi kenttä kerrallaan.  Valitse **Knoxville, TN**. Puukartassa näkyy nyt Knoxvillen myymälän postinumero.
+
+    ![Näyttökuva puukartasta, joka näyttää postinumeron 37919.](media/end-user-drill/power-bi-drill-down-one2.png)
+
+    Huomaa, että otsikko muuttuu porautuessasi alaspäin ja uudelleen takaisin ylös.
 
 ## <a name="expand-all-and-expand-one-field-at-a-time"></a>Kaikkien kenttien laajentaminen ja laajentaminen yksi kenttä kerrallaan
+
 Puukartta, jossa näkyy vain postinumero, ei ole kovin havainnollinen.  Laajennetaan siis hierarkiaa yksi taso alaspäin.  
 
-1. Kun puukartta on aktiivinen, valitse *laajenna alaspäin* -kuvake ![laajenna alaspäin -kuvake](./media/end-user-drill/power-bi-drill-icon6.png). Puukartassa näkyy nyt kaksi hierarkian tasoa: postinumero ja myymälän nimi. 
+1. Kun puukartta on aktiivinen, valitse *Laajenna alaspäin* -kuvake ![Näyttökuva Laajenna alaspäin -kuvakkeesta.](./media/end-user-drill/power-bi-drill-icon6.png) Puukartassa näkyy nyt kaksi hierarkian tasoa: postinumero ja myymälän nimi.
 
-    ![näkyvissä postinumero ja myymälän nimi](./media/end-user-drill/power-bi-expand1.png)
+    ![Näyttökuva puukartasta, joka näyttää postinumeron ja myymälän nimen](./media/end-user-drill/power-bi-expand1.png)
 
-2. Jos haluat nähdä kaikki neljä Tennesseen hierarkiatasoa, valitse Poraudu ylöspäin -nuoli, kunnes saavutat puukartan toisen tason, **Yksiköt yhteensä tänä vuonna alueen ja kaupungin mukaan**. 
+1. Jos haluat nähdä kaikki neljä Tennesseen tietojen hierarkiatasoa, valitse Poraudu ylöspäin -nuoli, kunnes saavutat puukartan toisen tason, **Yksiköt yhteensä tänä vuonna alueen ja kaupungin mukaan**.
 
-    ![puukartta, joka näyttää kaikki Tennesseen tiedot](media/end-user-drill/power-bi-drill-down-one1.png)
+    ![Näyttökuva puukartasta, joka näyttää kaikki TN:n tiedot.](media/end-user-drill/power-bi-drill-down-one1.png)
 
+1. Varmista, että porautuminen alaspäin on edelleen käytössä, ![Näyttökuva Poraudu alaspäin käytössä / pois käytöstä -kuvakkeesta, joka on otettu käyttöön.](./media/end-user-drill/power-bi-drill-icon2.png) ja valitse *Laajenna alaspäin* -kuvake ![Näyttökuva Laajenna alaspäin -kuvakkeesta.](./media/end-user-drill/power-bi-drill-icon6.png) Puukartassa näkyy nyt joitakin lisätietoja. Pelkän kaupungin ja osavaltion sijasta siinä näkyy nyt myös postinumero.
 
-3. Varmista, että porautuminen on edelleen käytössä ![porautuminen alaspäin käytössä](./media/end-user-drill/power-bi-drill-icon2.png) ja valitse *Laajenna alaspäin* -kuvake ![laajenna alaspäin -kuvake](./media/end-user-drill/power-bi-drill-icon6.png). Puukartassa näkyy nyt joitakin lisätietoja. Pelkän kaupungin ja osavaltion sijasta siinä näkyy myös postinumero. 
+    ![Näyttökuva visualisoinnista, joka näyttää kaupungin, osavaltion ja postinumeron.](./media/end-user-drill/power-bi-expand-one3.png)
 
-    ![kaksinkertainen porautumiskuvake](./media/end-user-drill/power-bi-expand-one3.png)
+1. Valitse *Laajenna alaspäin* -kuvake vielä kertaalleen, jotta näet puukartassa Tennesseen tietojen kaikki neljä hierarkiatasoa. Osoittamalla lehteä näet vielä lisää tietoja.
 
-4. Valitse *Laajenna alaspäin* -kuvake vielä kertaalleen, jotta näet puukartassa Tennesseen tietojen kaikki neljä hierarkiatasoa. Osoittamalla lehteä näet vielä lisää tietoja.
-
-   ![puukartta, jossa näytetään Tennesseen tiedot](./media/end-user-drill/power-bi-expand-all.png)
+    ![Näyttökuva puukartasta, joka näyttää työkaluvihjeen, jossa on lehtikohtaisia tietoja.](./media/end-user-drill/power-bi-expand-all.png)
 
 ## <a name="drilling-filters-other-visuals"></a>Poraaminen suodattaa muut visualisoinnit
-Kun työskentelet Poraudu-tilassa, päätät itse, millä tavoin alaspäin porautuminen ja laajentaminen vaikuttaa sivun muihin visualisointeihin. 
 
-Oletusarvoisesti porautuminen ei vaikuta raportin muihin visualisointeihin. Tämä ominaisuus voidaan kuitenkin ottaa käyttöön Power BI Desktopissa ja Power BI -palvelussa. 
+Kun työskentelet Poraudu-tilassa, päätät itse, millä tavoin alaspäin porautuminen ja laajentaminen vaikuttaa sivun muihin visualisointeihin.
+
+Oletusarvoisesti poraaminen ei suodata raportin muita visualisointeja. Voit kuitenkin ottaa tämän ominaisuuden käyttöön Power BI Desktopissa ja Power BI -palvelussa.
 
 1. Valitse Desktopissa **Muoto**-välilehti ja merkitse sitten valintaruutu kohdassa **Poraaminen suodattaa muut visualisoinnit**.
 
-    ![asetus Power BI Desktopissa](./media/end-user-drill/power-bi-drill-filters-desktop.png)
+    ![Näyttökuva, jossa näytetään Poraaminen suodattaa muut visualisoinnit -asetus Power BI Desktopissa](./media/end-user-drill/power-bi-drill-filters-desktop.png)
 
-2. Nyt, kun poraudut alaspäin (tai poraudut ylöspäin tai laajennat näkymän) visualisoinnissa, jossa on hierarkia, toiminto suodattaa sivun muut visualisoinnit. 
+1. Kun nyt poraudut alaspäin, poraudut ylöspäin tai laajennat visualisointia hierarkiassa, tämä toiminto suodattaa sivulla olevat muut visualisoinnit.
 
-    ![asetus Desktopissa](./media/end-user-drill/power-bi-drill-filters.png)
+    ![Näyttökuva tuloksesta Desktopissa.](./media/end-user-drill/power-bi-drill-filters.png)
 
-    ![asetus Desktopissa](./media/end-user-drill/power-bi-drill-filters2.png)
+    ![Näyttökuva toisesta tuloksesta Desktopissa.](./media/end-user-drill/power-bi-drill-filters2.png)
 
 > [!NOTE]
-> Voit ottaa tämän toiminnon käyttöön Power BI -palvelussa yläreunan valikkoriviltä valitsemalla **Visualisointitoimet > Poraaminen suodattaa muut visualisoinnit**.
+> Voit ottaa tämän toiminnon käyttöön Power BI -palvelussa yläreunan valikkoriviltä valitsemalla **Visualisointitoimet** > **Poraaminen suodattaa muut visualisoinnit**.
 >
-> ![asetus Power BI -palvelussa](./media/end-user-drill/power-bi-drill-filters-service.png)
+> ![Näyttökuva, jossa näytetään Poraaminen suodattaa muut visualisoinnit -asetus Power BI -palvelussa](./media/end-user-drill/power-bi-drill-filters-service.png)
 
+## <a name="learn-about-the-hierarchy-axis-and-hierarchy-group"></a>Tietoja hierarkia-akselista ja hierarkiaryhmästä
 
+Voit ajatella hierarkia-akselia ja hierarkiaryhmää mekanismina, jonka avulla voit suurentaa ja pienentää niiden tietojen askelväliä, joita haluat tarkastella. Kaikki tiedot, jotka voidaan järjestää luokkiin ja aliluokkiin, ovat kelvollisia sisältämään hierarkian, mukaan lukien päivämäärät ja ajat.
 
-## <a name="understanding-the-hierarchy-axis-and-hierarchy-group"></a>Tietoja hierarkia-akselista ja hierarkiaryhmästä
-Voit ajatella hierarkia-akselia ja hierarkiaryhmää mekanismina, jonka avulla voit suurentaa ja pienentää niiden tietojen askelväliä, joita haluat tarkastella. Kaikki tiedot, jotka voidaan järjestää luokkiin ja aliluokkiin, ovat kelvollisia sisältämään hierarkian. Tämä sisältää tietysti päivämäärät ja kellonajat.
-
-Voit luoda hierarkian sisältävän visualisoinnin Power BI:ssä valitsemalla yhden tai useamman tietokentän lisättäväksi joko **Akseli**-ruutuun tai **Ryhmä**-ruutuun ja lisäämällä tiedot, joita haluat tarkastella tietokenttinä **Arvot**-ruudussa. Tiedät tietojen olevan hierarkkisia, jos *porautumistilan* kuvakkeet näkyvät visualisoinnin vasemmassa ja oikeassa yläkulmassa. 
+Voit luoda hierarkian sisältävän visualisoinnin Power BI:ssä valitsemalla yhden tai useamman tietokentän lisättäväksi joko **Akseli**-säilöön tai **Ryhmä**-säilöön. Lisää sitten **Arvot**-säilöön tietoja, joita haluat tarkastella tietokenttinä . Tiedät tietojen olevan hierarkkisia, jos *porautumistilan* kuvakkeet näkyvät visualisoinnin vasemmassa ja oikeassa yläkulmassa.
 
 Käytännössä kannattaa ajatella kahdenlaisia hierarkkisia tietoja:
-- Päivämäärä- ja kellonaikatiedot – jos sinulla on tietotyypin päivämäärä/aika sisältävä tietokenttä, tällöin sinulla on jo hierarkkisia tietoja. Power BI luo automaattisesti hierarkian kaikille tietokentille, joiden arvot voidaan jäsentää [päivämäärä/aika](https://msdn.microsoft.com/library/system.datetime.aspx)-rakenteeksi. Sinun tarvitsee vain lisätä yksi päivämäärä-/aikakenttä **Akseli**- tai **Ryhmä**-ruutuun.
-- Luokkatiedot – jos tiedot on saatu alikokoelmia sisältävistä kokoelmista tai niissä on muutoin tietorivejä, joilla on yhteisiä arvoja, tällöin tietosi ovat hierarkkisia.
 
-Power BI:n avulla voit tarkastella alijoukkoja yksitellen tai kaikkia kerrallaan. Voit porautua tietojen läpi nähdäksesi yksittäisen alijoukon kullakin tasolla tai nähdäksesi kaikki alijoukot samanaikaisesti kullakin tasolla. Voit esimerkiksi porautua alaspäin tiettyyn vuoteen tai tarkastella kunkin vuoden kaikkia tuloksia etenemällä hierarkiassa alaspäin. Vastaavasti voit porautua ylöspäin samalla tavalla.
+- Päivämäärä- ja kellonaikatiedot – jos sinulla on tietotyypin päivämäärä/aika sisältävä tietokenttä, tällöin sinulla on jo hierarkkisia tietoja. Power BI luo automaattisesti hierarkian kaikille tietokentille. Voit jäsentää arvot yhdeksi [DateTime](https://msdn.microsoft.com/library/system.datetime.aspx)-rakenteeksi. Sinun tarvitsee vain lisätä yksi päivämäärä-/aikakenttä **Akseli**- tai **Ryhmä**-ruutuun.
+
+- Luokkatiedot – jos Power BI poimii tiedot alikokoelmia sisältävistä kokoelmista tai niissä on muutoin tietorivejä, joilla on yhteisiä arvoja, tietosi ovat hierarkkisia.
+
+Power BI:n avulla voit laajentaa alijoukkoja yksitellen tai kaikki kerrallaan. Voit porautua alaspäin tietojen läpi nähdäksesi yksittäisen alijoukon kullakin tasolla tai nähdäksesi kaikki alijoukot samanaikaisesti kullakin tasolla. Voit esimerkiksi porautua alaspäin tiettyyn vuoteen tai tarkastella kunkin vuoden kaikkia tuloksia etenemällä hierarkiassa alaspäin.
+
+Vastaavasti voit porautua ylöspäin samalla tavalla.
 
 Seuraavissa osioissa kuvataan, kuinka poraudutaan alaspäin ylimmästä näkymästä, keskimmäisestä näkymästä ja alimmasta näkymästä.
 
 ### <a name="hierarchical-data-and-time-data"></a>Hierarkkiset tiedot ja aikatiedot
-Avaa [Jälleenmyyntianalyysimalli](../sample-datasets.md) ja luo pinottu pylväskaaviovisualisointi, jossa tarkastellaan **kuukautta** (Akseli) **kokonaismyynnin** (Arvot) mukaan.  
 
-Vaikka akselin tietokenttä onkin **kuukausi**, se luo myös **Vuosi**-luokan **Akseli**-ruutuun. Tämä johtuu siitä, että Power BI tarjoaa täyden päivämäärä/aikarakenteen kaikille arvoille, jotka se lukee. Hierarkiassa ylhäällä näytetään vuotta koskevat tiedot.
+Tässä esimerkissä:
 
-![Yksittäinen palkki, jossa näkyvät tiedot on ryhmitelty vuoden mukaan](media/end-user-drill/power-bi-hierarchical-axis-datetime-1.png)
+1. Seuraa [Jälleenmyyntianalyysin mallia](../sample-datasets.md) ja luo pinottu pylväskaaviovisualisointi, jossa tarkastellaan seuraavia:
 
-Kun porautuminen alaspäin -tila on käytössä, siirry hierarkiassa yksi taso alaspäin napsauttamalla kaavion palkkia. Näet kolme palkkia käytettävissä olevista vuosineljännestiedoista. Valitse vasemman yläkulman kuvakkeista **Expand all down one level of the hierarchy** (Laajenna kaikki alaspäin yhden hierarkiatason verran). Tee tämän jälkeen sama uudelleen siirtyäksesi hierarkian alimmalle tasolle, joka näyttää jokaisen kuukauden tulokset.
+    | Säilö | Kenttä |
+    | ---- | ----- |
+    | Akseli | Aika<br>\|\_ Kuukausi |
+    | Arvot | Myynti<br>\|\_ TotalSales |
 
-![palkkikaavio, jossa yksi palkki kullekin kuukaudelle](media/end-user-drill/power-bi-hierarchical-axis-datetime-2.png)
+    Vaikka akselin tietokenttä onkin **kuukausi**, se luo myös **Vuosi**-luokan **Akseli**-ruutuun. Tämä johtuu siitä, että Power BI tarjoaa täyden DateTime-rakenteen kaikille arvoille, jotka se lukee. Hierarkiassa ylhäällä näytetään vuotta koskevat tiedot.
 
-Visualisoinnin lisäksi näemme kussakin raportissa hahmonnettujen tietojen hierarkian. Seuraavassa taulukossa näkyvät **Näytä tiedot** -toiminnon tulokset raportissa, joka porautuu alaspäin yksittäisestä kuukaudesta tai kaikista kuukausista. 
+    ![Näyttökuva yksittäisestä palkista, joka näyttää tiedot ryhmiteltynä vuoden mukaan](media/end-user-drill/power-bi-hierarchical-axis-datetime-1.png)
 
-Huomaa, että tiedot ovat samat vuosineljänneksen ja koko vuoden raporteissa, mutta porautuessasi alaspäin **Arvot**-kohtaan määritetyn tiedon tasolle, näet, miten yksittäinen raportti muuttuu yksityiskohtaisemmaksi ja ”kaikki kuukaudet” -raportissa on enemmän tietoja.
+1. Kun Porautuminen alaspäin -tila on käytössä, siirry hierarkiassa yksi taso alaspäin valitsemalla kaavion palkin. Näet kolme palkkia saatavilla oleville vuosineljännestiedoille.
 
+1. Valitse sitten vasemman yläkulman kuvakkeista **Laajenna kaikki alaspäin yhden hierarkiatason verran**.
+
+1. Tee se jälleen kerran siirtyäksesi hierarkian alimmalle tasolle, joka näyttää jokaisen kuukauden tulokset.
+
+    ![Näyttökuva palkkikaaviosta, jossa on palkki kuukautta kohti](media/end-user-drill/power-bi-hierarchical-axis-datetime-2.png)
+
+Visualisoinnin lisäksi näemme kussakin raportissa hahmonnettujen tietojen hierarkian. Valitse oikeassa yläkulmassa olevat kolme pistettä (...) ja valitse sitten **Näytä tiedot**. Seuraavassa taulukossa näytetään alaspäin porautumisen tulokset raportissa yhdestä kuukaudesta tai kaikista kuukausista:
 
 |Laajennettu tila|Vuosi|Vuosineljännes|Kuukausi|Päivä|
-| ---|:---:|:---:|:---:|---|
+| --- |:---:|:---:|:---:|---|
 |Yksittäinen|![yksittäinen vuosi](./media/end-user-drill/power-bi-hierarchical-year.png)|![yksittäinen vuosineljännes](media/end-user-drill/power-bi-hierarchical-quarter.png)|![yksittäinen kuukausi](./media/end-user-drill/power-bi-hierarchical-one-month.png)|![yksittäinen päivä](media/end-user-drill/power-bi-hierarchical-one-day.png)|
 |Kaikki|![kaikki vuodet](./media/end-user-drill/power-bi-hierarchical-year.png)|![kaikki vuosineljännekset](media/end-user-drill/power-bi-hierarchical-quarter.png)|![kaikki kuukaudet](./media/end-user-drill/power-bi-hierarchical-all-month.png)|![kaikki päivät](media/end-user-drill/power-bi-hierarchical-all-day.png)|
 
+Huomaa, että tiedot ovat samat **vuosineljänneksen** ja **vuoden** raporteille. Kun olet porautunut alaspäin **Arvot**-kohtaan määritetyn tiedon tasolle, näet, miten yksittäinen raportti muuttuu yksityiskohtaisemmaksi ja ”kaikki kuukaudet” -raportissa on enemmän tietoja.
 
 ### <a name="hierarchical-category-data"></a>Hierarkkiset luokkatiedot
-Kokoelmista ja alikokoelmista mallinnetut tiedot ovat hierarkkisia. Hyvä esimerkki tästä ovat sijaintitiedot. Otetaan esimerkiksi tietolähteessä oleva taulukko, jonka sarakkeet ovat maa, osavaltio, kaupunki ja postinumero. Tiedot, joiden maa, osavaltio ja kaupunki ovat samat, ovat hierarkkisia.
 
-Avaa tätä esimerkkiä varten [Jälleenmyyntianalyysimalli](../sample-datasets.md). Luo pinottu pylväskaaviovisualisointi, jossa tarkastellaan **yksiköiden kokonaismäärää tänä vuonna** (Arvot) **alueen**, **kaupungin**, **postinumeron** ja **nimen** (Ryhmä) mukaan.  
+Kokoelmista ja alikokoelmista mallinnetut tiedot ovat hierarkkisia.
 
-![palkkikaavio, jossa näkyy tämän vuoden yksiköiden kokonaismäärä alueen mukaan](media/end-user-drill/power-bi-hierarchical-axis-category-1.png)
+Hyvä esimerkki tästä ovat sijaintitiedot. Otetaan esimerkiksi tietolähteessä oleva taulukko, jonka sarakkeet ovat maa, osavaltio, kaupunki ja postinumero. Tiedot, joiden maa, osavaltio ja kaupunki ovat samat, ovat hierarkkisia.
 
-Porautuminen alaspäin -tilan ollessa käytössä valitse vasemman yläkulman kuvakkeista **Expand all down one level of the hierarchy** (Laajenna kaikki alaspäin yhden hierarkiatason verran) -kuvake kolme kertaa.
-Sinun pitäisi olla hierarkian alimmalla tasolla, joka näyttää alueen, kaupungin ja postinumeron tulokset.
+Tässä esimerkissä:
 
-![palkkikaavio, jossa näkyy alin hierarkiataso ja eniten yksityiskohtia](media/end-user-drill/power-bi-hierarchical-axis-category-2.png)
+1. Seuraa [Jälleenmyyntianalyysin mallia](../sample-datasets.md). Luo pinottu pylväskaaviovisualisointi, jossa tarkastellaan seuraavia:
 
-Visualisoinnin lisäksi näemme kussakin raportissa hahmonnettujen tietojen hierarkian. Seuraavassa taulukossa näkyvät **Näytä tiedot** -toiminnon tulokset raportissa, joka porautuu alaspäin yhden alueen tiedoissa tai kaikkien alueiden tiedoissa. Porautuessasi alaspäin näet, miten yksittäinen raportti muuttuu yksityiskohtaisemmaksi ja ”kaikki alueet” -raportissa on enemmän tietoja.
+    | Säilö | Kenttä |
+    | ---- | ----- |
+    | Arvo |Myynti<br>\|\_ Yksiköt yhteensä tänä vuonna |
+    | Akseli | Myymälä<br>\|\_ Alue<br>\|\_ Kaupunki – Kaupunki on ehkä vedettävä **Selite**-säilöstä **Akseli**-säilöön.<br>\|\_ Postinumero<br>\|\_ Nimi |
 
+    ![Näyttökuva palkkikaaviosta, joka näyttää tämän vuoden yksiköiden kokonaismäärän alueen mukaan.](media/end-user-drill/power-bi-hierarchical-axis-category-1.png)
+
+1. Kun Porautuminen alaspäin -tila on käytössä, valitse vasemman yläkulman kuvakkeista **Laajenna kaikki alaspäin yhden hierarkiatason verran** kolme kertaa.
+
+    Sinun pitäisi olla hierarkian alimmalla tasolla, joka näyttää alueen, kaupungin ja postinumeron tulokset.
+
+    ![Näyttökuva palkkikaaviosta, joka näyttää alimman hierarkiatason ja eniten yksityiskohtia.](media/end-user-drill/power-bi-hierarchical-axis-category-2.png)
+
+Visualisoinnin lisäksi näemme kussakin raportissa hahmonnettujen tietojen hierarkian. Valitse oikeassa yläkulmassa olevat kolme pistettä (...) ja valitse sitten **Näytä tiedot**. Seuraavassa taulukossa näytetään alaspäin porautumisen tiedot yhdelle alueelle tai kaikille alueille.
 
 | Laajennettu tila|Alue|Kaupunki|Postinumero|Nimi|
 | ---|:---:|:---:|:---:|---|
 |Yksittäinen|![yksittäinen alue](./media/end-user-drill/power-bi-hierarchical-territory.png)|![yksittäinen kaupunki](media/end-user-drill/power-bi-hierarchical-one-territory-city.png)|![yksittäinen postinumero](./media/end-user-drill/power-bi-hierarchical-one-territory-city-postal.png)|![yksittäinen nimi](media/end-user-drill/power-bi-hierarchical-one-territory-city-postal-name.png)|
 |Kaikki|![kaikki alueet](./media/end-user-drill/power-bi-hierarchical-territory.png)|![kaikki kaupungit](media/end-user-drill/power-bi-hierarchical-all-territory-city.png)|![kaikki postinumerot](./media/end-user-drill/power-bi-hierarchical-all-territory-city-postal.png)|![kaikki nimet](media/end-user-drill/power-bi-hierarchical-all-territory-city-postal-name.png)|
 
+ Kun poraudut alaspäin, näet, miten **yksittäinen** raportti muuttuu yksityiskohtaisemmaksi ja **Kaikki** alueet -raportissa on enemmän tietoja.
 
 ## <a name="considerations-and-limitations"></a>Huomioitavat asiat ja rajoitukset
-* Jos päivämääräkentän lisääminen visualisointiin ei luo hierarkiaa, syynä voi olla, että ”päivämäärä”-kenttää ei ole todellisuudessa tallennettu päivämääräksi. Jos omistat tietojoukon, avaa se Power BI Desktopin *tietonäkymässä*, valitse päivämäärän sisältävä sarake ja muuta Mallinnus-välilehdellä **tietotyypiksi** **päivämäärä** tai  **päivämäärä/aika**. Jos raportti on jaettu kanssasi, voit pyytää muutosta omistajalta.  
-  
-  ![valitse tietonäkymä ja katso sitten Päivämäärän tyyppi oikeasta yläkulmasta](media/end-user-drill/power-bi-change-data-type2.png)
+
+Jos päivämääräkentän lisääminen visualisointiin ei luo hierarkiaa, syynä voi olla se, että Päivämäärä-kenttää ei ole todellisuudessa tallennettu päivämääräksi. Jos omistat tietojoukon:
+
+1. Avaa se *Tieto*-näkymässä Power BI Desktopissa
+
+1. Valitse sarake, jossa on päivämäärä.
+
+1. Vaihda **Mallinnus**-välilehdessä **Tietotyyppi**-kohdan vaihtoehdoksi **Päivämäärä** tai **Päivämäärä/aika**.
+
+![Näyttökuva valitusta Tieto-näkymästä. Voit oikeassa yläkulmassa nähdä Päivämäärä-tyypin.](media/end-user-drill/power-bi-change-data-type2.png)
+
+Jos raportti on jaettu kanssasi, voit pyytää muutosta omistajalta.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
+
 [Visualisoinnit Power BI -raporteissa](../visuals/power-bi-report-visualizations.md)
 
 [Power BI -raportit](end-user-reports.md)
@@ -231,4 +287,3 @@ Visualisoinnin lisäksi näemme kussakin raportissa hahmonnettujen tietojen hier
 [Power BI:n peruskäsitteet](end-user-basic-concepts.md)
 
 Onko sinulla muuta kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
-
