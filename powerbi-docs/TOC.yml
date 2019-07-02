@@ -231,6 +231,8 @@
               href: desktop-bookmarks.md
             - name: Raporttiteemojen käyttö
               href: desktop-report-themes.md
+            - name: Suodatintyypit
+              href: power-bi-report-filter-types.md
             - name: Kokeile uutta suodatuskokemusta
               href: power-bi-report-filter-preview.md
             - name: Pikamittareiden käyttö
@@ -523,9 +525,7 @@
               href: refresh-csv-file-onedrive.md
             - name: Kyselyn tallentaminen välimuistiin Power BI Premiumissa
               href: power-bi-query-caching.md
-            - name: Päivitystilanteiden vianmääritys
-              href: refresh-troubleshooting-refresh-scenarios.md
-        - name: koontinäytöt
+        - name: Koontinäytöt
           items:
             - name: Koontinäyttöjen esittely
               href: service-dashboards.md
@@ -705,6 +705,8 @@
           items:
             - name: Unohditko Power BI -salasanasi?
               href: service-admin-forgot-your-password.md
+            - name: Eikö sisäänkirjautuminen onnistu?
+              href: power-bi-cannot-sign-in.md
             - name: 'Power BI:n vianmäärityksen lisätietojen kirjaaminen'
               href: service-admin-capturing-additional-diagnostic-information-for-power-bi.md
             - name: 'Power BI:n vaihtoehtoinen sähköpostiosoite'
@@ -713,26 +715,26 @@
               href: service-admin-how-to-use-the-same-account-as-azure.md
             - name: Office 365 – tunnetut ongelmat
               href: service-admin-office-365-dedicated-known-issues.md
-            - name: Cortanan vianmääritys
-              href: service-cortana-troubleshoot.md
-            - name: Analyysien vianmääritys Excelissä
-              href: desktop-troubleshooting-analyze-in-excel.md
-            - name: Paikallisen tietoyhdyskäytävän vianmääritys
-              href: service-gateway-onprem-tshoot.md
-            - name: Power BI -yhdyskäytävän vianmääritys – henkilökohtainen
-              href: service-admin-troubleshooting-power-bi-personal-gateway.md
+            - name: Päivitystilanteiden vianmääritys
+              href: refresh-troubleshooting-refresh-scenarios.md
             - name: Tukemattoman tietolähteen vianmääritys päivitystä varten
               href: service-admin-troubleshoot-unsupported-data-source-for-refresh.md
             - name: Azure SQL -tietokantojen ajoitetun päivityksen vianmääritys
               href: service-admin-troubleshooting-scheduled-refresh-azure-sql-databases.md
-            - name: 'Virhe: Excel-työkirjasta ei löydy mitään tietoja'
-              href: service-admin-troubleshoot-excel-workbook-data.md
             - name: Ruutuvirheiden vianmääritys
               href: refresh-troubleshooting-tile-errors.md
+            - name: Paikallisen tietoyhdyskäytävän vianmääritys
+              href: service-gateway-onprem-tshoot.md
+            - name: Power BI -yhdyskäytävä – henkilökohtainen
+              href: service-admin-troubleshooting-power-bi-personal-gateway.md
+            - name: Analysoi Excelissä -toiminnon vianmääritys
+              href: desktop-troubleshooting-analyze-in-excel.md
+            - name: 'Virhe: Excel-työkirjasta ei löydy mitään tietoja'
+              href: service-admin-troubleshoot-excel-workbook-data.md
+            - name: Cortanan vianmääritys
+              href: service-cortana-troubleshoot.md
             - name: 'Xero-sisältöpaketin tunnistetietojen päivitys, jos päivitys epäonnistuu'
               href: service-refresh-xero-credentials.md
-            - name: Sisäänkirjautuminen ei onnistu
-              href: power-bi-cannot-sign-in.md
         - name: Muut tehtävät
           items:
             - name: 'Sisällön uudelleennimeäminen Power BI:llä'
@@ -855,9 +857,9 @@
                   href: service-organizational-content-pack-manage-update-delete.md
                 - name: Yhteyden poistaminen sisältöpakettiin
                   href: service-organizational-content-pack-disconnect.md
-        - name: Viittaus
-          items:
-            - name: Tuetut kielet ja maat tai alueet
+    - name: Viittaus
+      items:
+        - name: Tuetut kielet ja maat tai alueet
           href: supported-languages-countries-regions.md
     - name: Resurssit
       items:
