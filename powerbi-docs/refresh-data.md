@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 06/12/2019
 ms.author: mblythe
 LocalizationGroup: Data refresh
-ms.openlocfilehash: 24a559fe35291c5256a5280b3c7d63d110868f4a
-ms.sourcegitcommit: 69a0e340b1bff5cbe42293eed5daaccfff16d40a
+ms.openlocfilehash: 2760731e7be1216c4ec8755884467eca9d7eb4c4
+ms.sourcegitcommit: 8dee40f07d284ec84a8afa0100359f146e1dd88b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67039215"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67418777"
 ---
 # <a name="data-refresh-in-power-bi"></a>Tietojen päivittäminen Power BI:ssä
 
@@ -272,7 +272,7 @@ Liitettävyyden määrittäminen Power BI:n ja tietolähteiden välillä on haas
 
 ![Ajoitetun päivityksen määrittäminen](media/refresh-data/configure-scheduled-refresh.png)
 
-Kun päivitysaikataulu on määritetty, tietojoukon asetussivulla kerrotaan seuraavan päivityksen ajankohta yllä olevan kuvan mukaisesti. Jos haluat päivittää tiedot tätä aiemmin esimerkiksi yhdyskäytävän ja tietolähteen määritteiden testaamista varten, suorita päivitys käyttämällä vasemman siirtymisruudun tietojoukko-valikossa olevaa Päivitä nyt -toimintoa. Päivityspyynnöt eivät vaikuta seuraavan ajoitetun päivityksen ajankohtaan, mutta ne kuluttavat päivittäistä päivityskiintiötä. Tätä aihetta on käsitelty ylempänä tässä artikkelissa.
+Kun päivitysaikataulu on määritetty, tietojoukon asetussivulla kerrotaan seuraavan päivityksen ajankohta yllä olevan kuvan mukaisesti. Jos haluat päivittää tiedot tätä aiemmin esimerkiksi yhdyskäytävän ja tietolähteen määritteiden testaamista varten, suorita päivitys vasemman siirtymisruudun tietojoukko-valikossa olevalla **Päivitä nyt** -toiminnolla. Päivityspyynnöt eivät vaikuta seuraavan ajoitetun päivityksen ajankohtaan, mutta ne kuluttavat päivittäistä päivityskiintiötä. Tätä aihetta on käsitelty ylempänä tässä artikkelissa.
 
 Huomaa myös, että määritetty päivityksen kellonaika ei ole ehdottoman tarkka. Power BI käynnistää ajoitetut päivitykset sopivimmalla hetkellä. Pyrimme siihen, että päivitys alkaa 15 minuutin sisällä suunnitellusta ajankohdasta, mutta viive voi venyä tunninkin mittaiseksi, jos tarvittavat resurssit eivät ole saatavilla aikaisemmin.
 
@@ -283,7 +283,7 @@ Huomaa myös, että määritetty päivityksen kellonaika ei ole ehdottoman tarkk
 
 Oletusarvoisesti Power BI lähettää virheistä sähköposti-ilmoituksen tietojoukon omistajalle niin, että omistaja voi reagoida päivitysongelmiin ajoissa. Power BI lähettää sinulle ilmoituksen myös silloin, kun palvelu poistaa aikataulusi käytöstä peräkkäisten virheiden vuoksi. Microsoft suosittelee, että pidät valintaruudun **Lähetä päivityksenvirheistä sähköposti-ilmoitus** valittuna.
 
-Huomaa, että Power BI ei lähetä ainoastaan päivitysvirheistä koskevia ilmoituksia, vaan se ilmoittaa myös käyttämättömyydestä johtuvasta palvelun keskeytymisestä. Power BI pitää tietojoukkoa käyttämättömänä, kun yksikään käyttäjä ei ole käynyt raporttinäkymässä tai tietojoukosta koostetussa raportissa kahteen kuukauteen. Tällaisissa tilanteissa Power BI lähettää tietojoukon omistajalle sähköpostiviestin, jossa kerrotaan, että palvelu on poistanut käytöstä tietojoukon päivitysaikataulun. Seuraavassa näyttökuvassa on esimerkki tällaisesta ilmoituksesta.
+Huomaa, että Power BI ei lähetä ainoastaan päivitysvirheistä koskevia ilmoituksia, vaan se ilmoittaa myös käyttämättömyydestä johtuvasta palvelun keskeytymisestä. Power BI pitää tietojoukkoa käyttämättömänä, kun yksikään käyttäjä ei ole käynyt raporttinäkymässä tai tietojoukosta koostetussa raportissa kahteen kuukauteen. Tällaisissa tilanteissa Power BI lähettää tietojoukon omistajalle sähköpostiviestin, jossa kerrotaan, että palvelu on pysäyttänyt tietojoukon päivitysaikataulun. Seuraavassa näyttökuvassa on esimerkki tällaisesta ilmoituksesta.
 
 ![Päivitysten keskeytymisestä ilmoittava sähköposti](media/refresh-data/email-paused-refresh.png)
 
