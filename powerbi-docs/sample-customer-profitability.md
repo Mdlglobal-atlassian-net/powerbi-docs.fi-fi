@@ -10,16 +10,15 @@ ms.topic: conceptual
 ms.date: 06/20/2019
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: 70f47e4885b3abeb6ee17bea23dec35a230d57ec
-ms.sourcegitcommit: a2c4f912af1729fdfdf20369bf3eff67c3927eec
+ms.openlocfilehash: af20d5842664311a0d543ee189ef671f7865058b
+ms.sourcegitcommit: 8dee40f07d284ec84a8afa0100359f146e1dd88b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "67349330"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67418753"
 ---
 # <a name="customer-profitability-sample-for-power-bi-take-a-tour"></a>Asiakkaan tuottavuuden malli Power BI:lle: aloita esittely
 
-## <a name="overview-of-the-customer-profitability-sample"></a>Asiakkaan tuottavuuden mallin yleiskatsaus
 Asiakkaan tuottavuuden malli -sisältöpaketti sisältää koontinäytön, raportin ja tietojoukon yritykselle, joka valmistaa markkinointimateriaalia. Talousjohtaja loi tämän koontinäytön nähdäkseen tärkeitä arvoja viidestä liiketoimintayksikön johtajasta, tuotteista, asiakkaista ja myyntikatteista. Hän näkee yhdellä vilkaisulla, mitkä tekijät vaikuttavat kannattavuuteen.
 
 ![Asiakkaan tuottavuuden mallin koontinäyttö](media/sample-customer-profitability/power-bi-dash.png)
@@ -203,9 +202,8 @@ Tutustutaan Jakelualaan.
 
     Voimme tutkia vastaavasti muita aloja ja jopa lisätä asiakkaita visualisointeihin, jotta ymmärrämme Valeryn suorituskyvyn syyt.
 
+## <a name="next-steps-connect-to-your-data"></a>Seuraavat vaiheet: Yhdistä tietoihisi
 Tässä ympäristössä on turvallista tehdä kokeiluja, koska voit jättää tekemäsi muutokset tallentamatta. Jos kuitenkin tallennat ne, voit aina siirtyä **Nouda tiedot** -kohtaan, jolloin saat mallista uuden kopion.
 
-## <a name="next-steps-connect-to-your-data"></a>Seuraavat vaiheet: Yhdistä tietoihisi
 Toivomme, että tämä esittely on osoittanut, miten Power BI -koontinäytöt, kysymysosio ja raportit voivat tarjota uusia näkökulmia asiakastietoihin. Nyt on sinun vuorosi – muodosta yhteys omiin tietoihisi. Power BI:n avulla voit yhdistää useisiin eri tietolähteisiin. Lisätietoja on artikkelissa [Power BI -palvelun käytön aloittaminen](service-get-started.md).
 
-[Power BI:n mallit](sample-datasets.md)  

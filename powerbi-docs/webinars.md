@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 06/01/2019
 ms.author: v-tatero
-ms.openlocfilehash: 3465d9280af84a97ebf2ea5ec90ff60daf9e96fa
-ms.sourcegitcommit: 1c96b65a03ec0a0612e851dd58c363f4d56bca38
+ms.openlocfilehash: ec50369715efdd7bcb9ab764a3240acceb72508e
+ms.sourcegitcommit: 8dee40f07d284ec84a8afa0100359f146e1dd88b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "67389547"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67418655"
 ---
 # <a name="power-bi-webinars"></a>Power BI -verkkoseminaarit
 
@@ -22,11 +22,7 @@ Rekisteröidy tuleviin reaaliaikaisiin verkkoseminaareihin tai katso nauhoitettu
 
 ## <a name="upcoming-webinars"></a>Tulevat verkkoseminaarit
 
-Rekisteröidy, jotta saat tietoa Power BI -asiantuntijoilta ja voit osallistua reaaliaikaisiin Q&A-istuntoihin.
-
-**Power BI: How to Get Insights from Your Workday HR Data**,
-<br>esittäjät Iman Eftekhari, Julia Paton Agile Analyticsiltä ja Shahram Karimi QBE Insurancelta
-<br>[Rekisteröidy ja katso 27.6. 13:30–14:30 (PST)](https://info.microsoft.com/How-to-Get-insights-from-Your-Workday-HR-Data-Registration.html?Lcid=en-us)
+Mitään verkkoseminaaria ei ole vielä ajoitettu. Palaa pian takaisin tarkistamaan muut tulevat tapahtumat.
 
 >[Tulevia Power BI -yhteisön verkkoseminaareja](https://powerbi.microsoft.com/blog/tag/community-webinars/?Is=Website)
 
@@ -128,6 +124,10 @@ Katso tallennetut istuntoja milloin tahansa
 
 ### <a name="partner-solutions-series"></a>Kumppanien ratkaisut -sarja ###
 [Katso tämä sarja](https://info.microsoft.com/ww-landing-PartnerWebinarSeriesPage.html)
+
+**Power BI: How to Get Insights from Your Workday HR Data**,
+<br>esittäjät Iman Eftekhari, Julia Paton Agile Analyticsiltä ja Shahram Karimi QBE Insurancelta
+<br>[Rekisteröidy ja katso nyt](https://info.microsoft.com/How-to-Get-insights-from-Your-Workday-HR-Data-Registration.html?Lcid=en-us)
 
 **Molemminpuolisen voittotilanteen toteuttaminen asiakastuotteiden valmistajille ja jälleenmyyjille**
 <br>Tekijä: Liz McCreesh, Thorogood
