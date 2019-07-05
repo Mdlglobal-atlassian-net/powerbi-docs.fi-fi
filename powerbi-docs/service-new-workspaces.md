@@ -1,6 +1,6 @@
 ---
-title: 'Järjestä uuden työtilakokemuksen - Power BI: ssä'
-description: Lue lisää uuden työtilakokemuksen, joka on kokoelma koontinäyttöjä ja raportteja, joiden avulla voit kuvata organisaatiosi keskeisiä mittalukuja.
+title: Työn järjestäminen uusiin työtiloihin – Power BI
+description: Lue uusista työtiloista, jotka ovat koontinäyttöjen ja raporttien kokoelmia. Voit niiden avulla kuvata organisaatiosi keskeisiä mittalukuja.
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: lukaszp
@@ -10,99 +10,105 @@ ms.topic: conceptual
 ms.date: 04/18/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 9f5dfaa5a23ae46fef131a52355531b5fbde3051
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 419cd2137b8924f153009843d6f60db594219059
+ms.sourcegitcommit: a42c6758aa255c21ece6366a3257b0dd82f3606b
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65100681"
+ms.lasthandoff: 06/24/2019
+ms.locfileid: "67345528"
 ---
-# <a name="organize-work-in-the-new-workspaces-in-power-bi"></a>Järjestä keskeneräisten uusi Power BI-työtiloissa
+# <a name="organize-work-in-the-new-workspaces-in-power-bi"></a>Työn järjestäminen uusiin työtiloihin Power BI:ssä
 
- *Työtilat* on paikkoja tehdä yhteistyötä työtovereiden kanssa kokoelmia koontinäyttöjen, raporttien ja Sivutettujen raporttien luomiseksi. Työtilan uuden kokemuksen avulla voit hallita paremmin käyttöoikeuden sisältöön. Tässä artikkelissa kuvataan uuden työtilakokemuksen ja miten ne eroavat perinteinen työtilat.  Kuin perinteinen työtilojen kanssa voit edelleen käyttää niitä sovellusten luominen ja jakeleminen. Lue lisää [luoda uuden kokemuksen työtilan](service-create-the-new-workspaces.md).
+ *Työtilat* ovat paikkoja, joissa voit yhdessä työtovereiden kanssa luoda koontinäyttöjen, raporttien ja sivutettujen raporttien kokoelmia. Uusi työtilakokemus auttaa sinua paremmin hallitsemaan sisältöä. Tässä artikkelissa kuvataan uusia työtiloja ja sitä, miten ne eroavat perinteisistä työtiloista.  Perinteisten työtilojen tavoin voit yhä käyttää niitä sovellusten luomiseen ja jakamiseen. Lue lisää siitä, miten voit [luoda uuden työtilakokemuksen](service-create-the-new-workspaces.md).
 
-Uusi työtila-käyttökokemus on saavuttanut yleisesti käytettävissä (GA) ja on nyt oletustyötilaan. Voit kuitenkin edelleen luoda ja käyttää [perinteinen työtilat](service-create-workspaces.md) Office 365-ryhmien perusteella. 
+Uusi työtilakokemus on yleisesti käytettävissä (GA), ja se on nyt oletustyötila. Voit kuitenkin edelleen luoda ja käyttää Office 365 -ryhmiin perustuvia [perinteisiä työtiloja](service-create-workspaces.md). 
 
 > [!NOTE]
-> Jos haluat ottaa rivitason suojaus (RLS) Power BI Pro käyttäjille selaamalla sisältöä työtilassa, edelleen käyttää [perinteinen työtilat](service-create-workspaces.md). Valitse **jäsenet voivat vain tarkastella Power BI-sisältöä** vaihtoehto. Vaihtoehtoisesti julkaista Power BI-sovelluksen näille käyttäjille tai sisällön jakamisen avulla. Tulevan Viewer-roolin mahdollistaa tämän skenaarion tulevaisuudessa työtiloissa uusi työtilan käyttökokemuksen.
+> Jotta voit ottaa käyttöön rivitason suojauksen (RLS) käyttäjille, jotka selaavat sisältöä työtilassa, käytä Katselija-roolia. Jos Katselija-rooli ei ole vielä käytettävissä vuokraajassasi, voit edelleen käyttää [perinteisiä työtiloja](service-create-workspaces.md) ja valita **Jäsenet voivat tarkastella vain Power BI -sisältöä** -vaihtoehdon. Vaihtoehtoisesti voit julkaista Power BI -sovelluksen näille käyttäjille tai käyttää jakamista sisällön jakelemiseksi.
 
-Uusien työtilojen avulla voit tehdä seuraavaa:
+Uusien työtilojen avulla voit:
 
 - Työtilan roolien määrittäminen käyttäjäryhmille: käyttöoikeusryhmät, jakeluluettelot, Office 365 -ryhmiä ja henkilöt.
 - Työtilan luominen Power BI:ssä luomatta Office 365 -ryhmää.
 - Tarkempien työtilaroolien käyttäminen oikeuksien määrittämiseksi työtilassa entistä joustavammin.
+- Power BI -järjestelmänvalvoja voi hallita sitä, kuka voi luoda työtiloja Power BI:ssä.
 
-Kun luot jonkin uusista työtiloista, et luo taustalla toimivaa, työtilaan liitettyä Office 365 -ryhmää. Työtilaa hallitaan Power BI:ssä Office 365:n sijasta. Työtilan uuden kokemuksen voit nyt lisätä Office 365-ryhmän työtilan käyttöoikeusluettelossa Jatka sisältöön Office 365-ryhmien avulla käyttöoikeuksien hallinnasta.
+Kun luot jonkin uusista työtiloista, et luo taustalla toimivaa, työtilaan liitettyä Office 365 -ryhmää. Työtilaa hallitaan Power BI:ssä Office 365:n sijasta. Voit uudessa työtilakokemuksessa nyt lisätä Office 365 -ryhmän työtilan käyttöoikeusluetteloon, jotta voit jatkaa käyttäjien käyttöoikeuksien hallitsemista sisältöön Office 365 -ryhmien kautta.
 
-## <a name="administering-new-workspace-experience-workspaces"></a>Uusi työtilan kokemus työtilojen hallinta
-Uusi työtila kokemus työtilojen hallinta on nyt Power BI-Power BI-järjestelmänvalvojat luettelonäkymässä kuka organisaatiossa voi luoda työtiloja. He voivat hallita ja palauttaa työtila. Voit tehdä tämän ne on käytettävä Power BI-hallintaportaalissa tai PowerShellin cmdlet-komennot. Työtilojen perinteinen Office 365-ryhmien perusteella hallinnan ilmenee edelleen Office 365-hallintaportaalissa ja Azure Active Directory.
+## <a name="administering-new-workspace-experience-workspaces"></a>Uuden työtilakokemuksen työtilojen hallinta
+Koska uuden työtilakokemuksen työtilojen hallinta tapahtuu nyt Power BI:ssä, Power BI:n järjestelmänvalvojat päättävät, kuka voi luoda työtiloja organisaatiossa. Järjestelmänvalvojat voivat myös hallita ja palauttaa työtiloja. Tämän vuoksi heidän on käytettävä Power BI -hallintaportaalia tai PowerShellin cmdlet-komentoja. Office 365 -ryhmiin perustuvissa perinteisissä työtiloissa hallinta tapahtuu edelleen Office 365 -hallintaportaalissa ja Azure Active Directoryssä.
 
-- **Työtilan asetukset** hallintaportaalissa, järjestelmänvalvojat Luo työtiloja (uuden työtilan kokemuksen) asettaminen menevätkin tai ei salli organisaation avulla voit luoda uuden työtilan kokemus työtiloja. He voivat myös rajoittaa luomisen tiettyjen käyttöoikeusryhmien jäsenille.
+Järjestelmänvalvojat voivat hallintaportaalin **Työtilan asetukset** -kohdassa käyttää Luo työtilat (uusi työtilakokemus) -asetusta salliakseen organisaation kaikkien käyttäjien tai ei yhdenkään käyttäjän luoda uuden työtilakokemuksen työtiloja. He voivat myös rajoittaa luomisen tiettyjen käyttöoikeusryhmien jäsenille.
 
 > [!NOTE]
-> Luo työtiloja (uuden työtilan kokemuksen), asetuksen oletusarvo on vain käyttäjät, jotka voit luoda uuden työtilakokemuksen luomiseen Power BI Office 365-ryhmiä. Muista määrittää arvon Power BI-hallintaportaalissa, jotta voit varmistaa asianmukaiset käyttäjät voivat luoda uusi työtila kokemus työtiloja.
+> Luo työtiloja (uusi työtilakokemus) -oletusasetuksen mukaan uusia työtiloja saavat luoda Power BI:ssä vain ne käyttäjät, jotka voivat luoda Office 365 -ryhmiä. Muista määrittää arvo Power BI -hallintaportaalissa sen varmistamiseksi, että asianmukaiset käyttäjät voivat luoda uuden työtilakokemuksen työtiloja.
 
 ![Työtilan asetukset hallintaportaalissa](media/service-new-workspaces/power-bi-workspace-admin-settings.png)
 
-[Työtilat luettelo on käytettävissä](service-admin-portal.md#workspaces) Power BI-hallintaportaalissa. 
+[Työtilojen luettelo on käytettävissä](service-admin-portal.md#workspaces) Power BI -hallintaportaalissa. 
 
 ![Työtilojen luettelo](media/service-admin-portal/workspaces-list.png)
 
-## <a name="new-workspaces-side-by-side-with-classic-workspaces"></a>Uusien työtilojen rinnakkain perinteinen työtilojen kanssa
+## <a name="new-workspaces-side-by-side-with-classic-workspaces"></a>Uudet työtilat ovat käytettävissä rinnakkain perinteisten työtilojen kanssa
 
-Uusi työtiloja, päivitetty ja aiemmin perinteinen työtilat olla asennettuna rinnakkain ja voit luoda. Uusi työtila on työtilan oletustyyppi. Power BI jatkossakin luettelo kaikki Office 365-ryhmiä käyttäjä on välttämiseksi muuttaminen olemassa olevat työnkulut Power BI-jäsen. Lue miten voit luoda uuden työtilan [luoda uuden työtilakokemuksen](service-create-the-new-workspaces.md). Lue luominen perinteiseen työtilaan [perinteinen työtilan luominen](service-create-workspaces.md).
+Uudet päivitetyt työtilat ja aiemmat perinteiset työtilat ovat käytettävissä rinnakkain, ja voit luoda niitä kumpiakin. Uusi työtilakokemus on työtilan oletustyyppi. Power BI luettelee jatkossakin kaikki Office 365 -ryhmät, joiden jäsen käyttäjä on Power BI:ssä, jotta aiempia työnkulkuja ei tarvitse muuttaa. Lue, miten voit luoda uuden työtilan, artikkelista [Uusien työtilojen luominen](service-create-the-new-workspaces.md). Lue, miten voit luoda perinteisen työtilan, artikkelista [Perinteisten työtilojen luominen](service-create-workspaces.md).
 
 ## <a name="roles-in-the-new-workspaces"></a>Roolit uusissa työtiloissa
 
-Uusi työtila käyttöoikeus, Lisää käyttäjä- tai henkilöille työtilan rooleihin: jäsenet ja järjestelmänvalvojat osallistujia. Kaikki käyttäjäryhmän jäsenet saavat määrittämäsi roolin. Jos käyttäjä on useita käyttäjäryhmät, he saavat parhaan mahdollisen antama rooleja, ne on määritetty käyttöoikeus.
+Voit myöntää käyttöoikeuden uuteen työtilaan lisäämällä käyttäjäryhmiä tai henkilöitä yhteen työtilarooliin: katselijat, jäsenet, osallistujat tai järjestelmänvalvojat. Kaikki käyttäjäryhmän jäsenet saavat määrittämäsi roolin. Jos henkilö on useissa käyttäjäryhmissä, hän saa hänelle myönnettyjen roolien antaman korkeimman käyttöoikeustason.
 
 Roolien avulla voit hallita, kuka voi tehdä mitäkin työtilassa, joten ryhmät voivat tehdä yhteistyötä. Uusissa työtiloissa voit määrittää henkilöille ja käyttäjäryhmille rooleja. Voit käyttää käyttöoikeusryhmiä, Office 365 -ryhmiä ja jakeluluetteloita. 
 
 Kun määrität rooleja käyttäjäryhmälle, ryhmän käyttäjät voivat käyttää sisältöä. Jos asetat sisäkkäin käyttäjäryhmiä, kaikilla ryhmien käyttäjillä on käyttöoikeus. Käyttäjä, joka on useissa käyttäjäryhmissä, joille on määritetty eri rooleja, saa parhaan myönnetyn käyttöoikeuden. 
 
-Uusissa työtiloissa on kolme roolia: järjestelmänvalvojat, jäsenet ja osallistujat.
+Uusissa työtiloissa on neljä roolia: järjestelmänvalvojat, jäsenet, osallistujat ja katselijat.
 
-|Ominaisuuden   | Järjestelmänvalvoja  | Jäsen  | Osallistuja  | 
-|---|---|---|---|
-| Päivittää työtilaa ja poistaa sen.  | X  |   |   |
-| Lisätä tai poistaa ihmisiä, myös muita järjestelmänvalvojia.  | X  |   |   |
-| Lisätä jäseniä tai muita, joilla on vähäisemmät oikeudet.  |  X | X  |   |
-| Julkaista ja päivittää sovelluksen. |  X | X  |   |
-| Jakaa kohteen tai sovelluksen. |  X | X  |   |
-| Sallia muille kohteiden jakaminen uudelleen. |  X | X  |   |
-| Luoda, muokata ja poistaa työtilan sisältöä.  |  X | X  | X  |
-| Julkaista raportteja työtilaan ja poistaa sisältöä. |  X | X  | X  |
+|Ominaisuus   | Järjestelmänvalvoja  | Jäsen  | Osallistuja  | Katselija |
+|---|---|---|---|---|
+| Päivittää työtilaa ja poistaa sen.  | X  |   |   |   | 
+| Lisätä tai poistaa ihmisiä, myös muita järjestelmänvalvojia.  | X  |   |   |   |
+| Lisätä jäseniä tai muita, joilla on vähäisemmät oikeudet.  |  X | X  |   |   |
+| Julkaista ja päivittää sovelluksen. |  X | X  |   |   |
+| Jakaa kohteen tai sovelluksen. |  X | X  |   |   |
+| Sallia muille kohteiden jakaminen uudelleen. |  X | X  |   |   |
+| Luoda, muokata ja poistaa työtilan sisältöä.  |  X | X  | X  |   |
+| Julkaista raportteja työtilaan ja poistaa sisältöä.  |  X | X  | X  |   |
+| Tarkastella kohdetta. |  X | X  | X  | X  |
  
  
 ## <a name="licensing"></a>Käyttöoikeudet
-Jokainen työtilaan lisätty jäsen tarvitsee Power BI Pro -käyttöoikeuden. Työtilassa nämä käyttäjät voivat tehdä yhteistyötä niiden koontinäyttöjen ja raporttien parissa, jotka aiot julkaista laajemmalle lukijakunnalle tai jopa koko organisaatiolle. Jos haluat jakaa sisältöä muille organisaatiosi sisällä, voit määrittää Power BI Pro -käyttöoikeudet kyseisille käyttäjille tai sijoittaa työtilan Power BI Premium -kapasiteettiin.
+Jokainen jäsen, jonka lisäät työtilaan jaetussa kapasiteetissa, tarvitsee Power BI Pro -käyttöoikeuden. Työtilassa nämä käyttäjät voivat tehdä yhteistyötä niiden koontinäyttöjen ja raporttien parissa, jotka aiot julkaista laajemmalle lukijakunnalle tai jopa koko organisaatiolle. 
+
+Jos haluat jakaa sisältöä muille organisaatiosi sisällä, voit määrittää Power BI Pro -käyttöoikeudet kyseisille käyttäjille tai sijoittaa työtilan Power BI Premium -kapasiteettiin.
+
+Kun työtila on Power BI Premium -kapasiteetissa, Katselija-roolin saaneet käyttäjät voivat käyttää työtilaa, vaikka heillä ei olisi Power BI Pro -käyttöoikeutta. Kuitenkin, jos määrität näille käyttäjille korkeamman roolin, kuten järjestelmänvalvoja, jäsen tai osallistuja, he eivät voi käyttää työtilaa. Heitä kehotetaan käynnistämään Pro-kokeiluversio, kun he yrittävät käyttää työtilaa. Jotta voit myöntää Katselija-ominaisuuden käyttäjille ilman Pro-käyttöoikeuksia, varmista, että Katselija-roolissa olevat käyttäjät eivät ole muissa työtilarooleissa joko erikseen tai käyttäjäryhmän kautta. 
 
 > [!NOTE]
-> Raporttien julkaiseminen työtilan uuden kokemuksen on tiukempia pakotukseen licensing-sääntöjä. Käyttäjä yrittää julkaista Power BI Desktop-tai muiden asiakkaiden Työkalut ilman Pro-käyttöoikeus nähdä virheilmoituksen ”vain käyttäjät, joilla on Power BI Pro-käyttöoikeuksia julkaista tähän työtilaan”.
+> Nykyisiä käyttöoikeussääntöjä sovelletaan tiukemmin raporttien julkaisemiseen uuteen työtilakokemukseen. Käyttäjät, jotka yrittävät julkaista raportteja Power BI Desktopista tai muista asiakkaiden työkaluista ilman Pro-käyttöoikeutta, näkevät virheen ”Vain käyttäjät, joilla on Power BI Pro -käyttöoikeudet, voivat julkaista tähän työtilaan”.
 
 ## <a name="how-are-the-new-workspaces-different-from-current-workspaces"></a>Miten uudet työtilat eroavat nykyisistä työtiloista?
 
-Uusien työtilojen myötä suunnittelemme joitakin ominaisuuksia uudelleen. Seuraavassa on aiot voi olla pysyvä muutokset. 
+Uusien työtilojen myötä suunnittelemme joitakin ominaisuuksia uudelleen. Seuraavassa on muutoksia, joiden voit odottaa säilyvän pysyvästi. 
 
-* Nämä työtilojen luominen ei luo Office 365-ryhmille, kuten perinteinen työtilat tekevät. Voit nyt käyttää Office 365-ryhmään antaa käyttäjille pääsy työtilaasi määrittämällä rooli. 
-* Perinteiset työtilat voit lisätä vain yksittäisiä henkilöitä jäsenten ja järjestelmänvalvojien luetteloihin. Uusissa työtiloissa voit lisätä useita AD-suojausryhmiä, jakeluluetteloita tai Office 365 -ryhmiä näihin luetteloihin, mikä helpottaa käyttäjien hallintaa. 
-- Voit luoda organisaation Sisältöpaketin perinteinen työtilasta. Et voi luoda sisältöpakettia uusista työtiloista.
-- Voit käyttää organisaation Sisältöpaketin perinteinen työtilasta. Et voi käyttää sitä jostakin uudesta työtilasta.
+* Näiden työtilojen luominen ei luo Office 365 -ryhmiä perinteisten työtilojen tavoin. Voit kuitenkin nyt käyttää Office 365 -ryhmää antamaan käyttäjille pääsyn työtilaasi myöntämälle tälle roolin. 
+* Perinteisissä työtiloissa voit lisätä vain yksittäisiä henkilöitä jäsenten ja järjestelmänvalvojien luetteloihin. Uusissa työtiloissa voit lisätä useita AD-suojausryhmiä, jakeluluetteloita tai Office 365 -ryhmiä näihin luetteloihin, mikä helpottaa käyttäjien hallintaa. 
+- Voit luoda organisaation sisältöpaketin perinteisestä työtilasta. Et voi luoda sisältöpakettia uusista työtiloista.
+- Voit käyttää organisaation sisältöpakettia perinteisestä työtilasta. Et voi käyttää sitä jostakin uudesta työtilasta.
 
-## <a name="workspace-contact-list"></a>Työtilan yhteystietoluettelon
-Uusi **yhteystietoluettelo** ominaisuuden avulla voit määrittää käyttäjät, jotka saat ilmoituksen kohteiden työtilan ongelmista. Oletusarvon mukaan kaikki käyttäjän tai ryhmän määritetty työtilan järjestelmänvalvojan ilmoitetaan, mutta voit mukauttaa luetteloa. Käyttäjille tai ryhmille, ota yhteyttä luettelossa näytetään käyttöliittymässä (UI), joiden avulla käyttäjät saavat työtilaan liittyviä ohjeita. 
+## <a name="workspace-contact-list"></a>Työtilan yhteystietoluettelo
+Uuden **Yhteystietoluettelo**-ominaisuuden avulla voit määrittää käyttäjät, joille ilmoitetaan työtilassa esiintyneistä ongelmista. Oletusarvon mukaan ilmoitus annetaan kaikille käyttäjille tai ryhmille, jotka on määritetty työtilan järjestelmänvalvojiksi, mutta voit mukauttaa luetteloa. Yhteystietoluettelossa luetellut käyttäjät tai ryhmät näytetään käyttöliittymässä (UI), jotta käyttäjät saavat työtilaa koskevaa apua. 
 
-Lue lisää [asetuksen työtilan yhteystietoluettelon](service-create-the-new-workspaces.md#workspace-contact-list).
+Lue lisää [työtilan yhteystietoluettelon määrittämisestä](service-create-the-new-workspaces.md#workspace-contact-list).
 
-## <a name="workspace-onedrive"></a>Workspace OneDrive
-Työtilan OneDrive-ominaisuuden avulla voit määrittää Office 365-ryhmä SharePoint-tiedostokirjastoon jonka tiedostosäilö on työtilan käyttäjien käytettävissä. Ryhmä on luotava Power BI ulkopuolella. 
+## <a name="workspace-onedrive"></a>Työtilan OneDrive
+Työtilan OneDrive -ominaisuuden avulla voit määrittää Office 365 -ryhmän, jonka SharePoint-tiedostokirjaston tiedostosäilö on työtilan käyttäjien käytettävissä. Ryhmä on luotava Power BI:n ulkopuolella. 
 
-Power BI ei synkronoi käyttäjät tai ryhmät, jotka on määritetty työtila Office 365-ryhmän jäsenyys käytön käyttöoikeudet. Paras käytäntö on työtilan hallitsevat saman Office 365-ryhmän tiedostosäilöön, jonka voit määrittää asetuksen kautta. 
+Power BI ei synkronoi niiden käyttäjien tai ryhmien käyttöoikeuksia, joille on määritetty työtilan käyttöoikeus Office 365 -ryhmän jäsenyyden yhteydessä. Paras käytäntö on hallita työtilan käyttöoikeutta saman Office 365 -ryhmän kautta, jonka tiedostosäilön määritit tässä asetuksessa. 
 
-Lue lisää [Määritä ja käytä työtilan OneDrive](service-create-the-new-workspaces.md#workspace-onedrive).  
+Lue lisää siitä, miten [voit määrittää työtilan OneDriven ja käyttää sitä](service-create-the-new-workspaces.md#workspace-onedrive).  
    
 ## <a name="auditing"></a>Valvonta
-Seuraavat toiminnot ovat valvoo Power BI-työtilojen uusi työtilan käyttökokemuksen.
+Power BI valvoo seuraavia uuden työtilakokemuksen työtiloja.
 
 | Kutsumanimi |   Toiminnon nimi |
 |---|---|
@@ -111,41 +117,43 @@ Seuraavat toiminnot ovat valvoo Power BI-työtilojen uusi työtilan käyttökoke
 | Päivitetty Power BI -kansio | UpdateFolder |
 | Päivitetty Power BI -kansion käyttöoikeus| UpdateFolderAccess |
 
-Lue lisää [Power BI valvonta](service-admin-auditing.md#activities-audited-by-power-bi).
+Lue lisää [Power BI:n valvonnasta](service-admin-auditing.md#activities-audited-by-power-bi).
 
 ## <a name="limitations-and-considerations"></a>Rajoitukset ja huomioitavat asiat
 
 Huomioitavia rajoituksia:
 
 - Työtiloissa voi olla korkeintaan 1 000 tietojoukkoa tai 1 000 raporttia tietojoukkoa kohti. 
-- Henkilö, jolla on Power BI Pro-käyttöoikeuden voi olla enintään 1 000 työtilat jäsen.
-- Power BI publisher for Excelin ei tueta.
+- Henkilö, jolla on Power BI Pro -käyttöoikeus, voi olla korkeintaan 1 000 työtilan jäsen.
+- Power BI Publisher for Exceliä ei tueta.
 
 ## <a name="workspace-features-that-work-differently"></a>Eri tavalla toimivat työtilan ominaisuudet
 
-Jotkin ominaisuudet toimivat uusissa työtiloissa eri tavalla kuin nykyisissä työtiloissa. Nämä erot on tarkoituksellista, olemme olet saanut asiakkailta ja ota käyttöön joustavampi tapa yhteistyö työtilojen kanssa palautteen perusteella:
+Jotkin ominaisuudet toimivat uusissa työtiloissa eri tavalla kuin nykyisissä työtiloissa. Nämä erot ovat tarkoituksellisia. Ne perustuvat saatuun asiakaspalautteeseen ja mahdollistavat entistä joustavamman yhteistyötavan työtiloissa:
 
-- Käyttöoikeuksien pakotukseen: Raporttien julkaiseminen työtilan uuden kokemuksen käyttää aiemmin käyttöoikeuksien sääntöjä, jotka edellyttävät Power BI Pro-käyttöoikeuden käyttäjille yhteistyö työtiloissa tai jakaminen muille Power BI-palvelussa. Pro-käyttöoikeus ilman käyttäjät näkevät virhe ”vain käyttäjät, joilla Powre BI Pro-käyttöoikeuksia julkaista tähän työtilaan”.
+- Käyttöoikeuksien pakottaminen: Raporttien julkaiseminen uuteen työtilakokemukseen pakottaa nykyiset käyttöoikeussäännöt, jotka edellyttävät Power BI Pro -käyttöoikeutta käyttäjiltä, jotka tekevät yhteistyötä työtiloissa tai jakavat sisältöä muille Power BI -palvelussa. Käyttäjät, joilla ei ole Pro-käyttöoikeutta, näkevät virheen ”Vain käyttäjät, joilla on Power BI Pro -käyttöoikeudet, voivat julkaista tähän työtilaan”.
 - Jäsenet voivat tai eivät voi jakaa uudelleen: korvataan osallistujan roolilla
-- Vain luku -työtilat: Sen sijaan, että myöntäisit käyttäjille Vain luku -käyttöoikeuden työtilaan, määrität käyttäjille tulevan katselijan roolin, johon kuuluu samankaltainen Vain luku -käyttöoikeus työtilan sisältöön.
+- Vain luku -työtilat: Sen sijaan, että myöntäisit käyttäjille Vain luku -käyttöoikeuden työtilaan, myönnät käyttäjille Katselija-roolin, johon kuuluu samankaltainen Vain luku -käyttöoikeus työtilan sisältöön.
+- Käyttäjät, joilla ei ole Pro-käyttöoikeutta, voivat käyttää työtilaa, jos työtila on Power BI Premium -kapasiteetissa, vaikka heillä olisi vain Katselija-rooli.
+- Jotta käyttäjät, joilla on Katselija-rooli, voisivat viedä tietoja, varmista, että heillä on Koontiversio-oikeus työtilan tietojoukoille.
 - Ei **Poistu työtilasta** -painiketta.
 
 ## <a name="frequently-asked-questions"></a>Usein kysyttyjä kysymyksiä
 
-**Uusi työtila vaikuta olemassa oleva sisältö linkkejä kohdata GA ovat**
+**Vaikuttaako uuden työtilakokemuksen yleinen käytettävyys linkkeihin olemassa olevaan sisältöön?**
 
-Ei. Aiemmin kohteet perinteisessä työtiloissa linkkejä ei vaikuta työtilan uuden kokemuksen. Työtilan uuden kokemuksen yleisesti käytettävissä (GA) muutokset oletustyötilaan, mutta ei muuta aiemmin työtilat. 
+Ei. Uusi työtilakokemus ei vaikuta linkkeihin olemassa oleviin kohteisiin perinteisissä työtiloissa. Uuden työtilakokemuksen yleinen käytettävyys (GA) muuttaa luomaasi oletustyötilaa, mutta ei muuta olemassa olevia työtiloja. 
 
-**On olemassa uusi työtilan kokemusta GA päivittää työtilat**
+**Päivitetäänkö olemassa olevat työtilat uuteen työtilakokemukseen, johon liittyy yleinen käytettävyys (GA)?**
 
-Ei. Uusi työtila-kokemus GA muuttuu työtilan oletustyyppi vain työtilan uuden käyttökokemuksen. Aiemmin perinteinen työtilat, jotka perustuvat Office 365-ryhmiä ei muuteta.
+Ei. Uuden työtilakokemuksen yleinen käytettävyys (GA) muuttaa vain oletustyötilan tyypin uudeksi työtilakokemukseksi. Office 365 -ryhmiin perustuvia olemassa olevia perinteisiä työtiloja ei muuteta.
 
-**Työtilat edelleen luodaan automaattisesti Office 365-ryhmiä**
+**Luodaanko työtiloja edelleen automaattisesti Office 365 -ryhmille?**
 
-Kyllä. Koska emme tue kummankin tyyppisiä työtilat rinnakkain, voimme jatkaa luettelo kaikki Office 365-ryhmiä käyttäjällä on käyttöoikeus työtilat-luettelossa.
+Kyllä. Koska tuemme kummankin tyyppistä työtilaa rinnakkain, luettelemme edelleen kaikki Office 365 -ryhmät, joihin käyttäjällä on käyttöoikeus työtilojen luettelossa.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
-* [Luo uusi työtilat Power BI](service-create-the-new-workspaces.md)
-* [Perinteiset työtilan luominen](service-create-workspaces.md)
+* [Luo uusia työtiloja Power BI:ssä](service-create-the-new-workspaces.md)
+* [Luo perinteisiä työtiloja](service-create-workspaces.md)
 * [Asenna ja käytä sovelluksia Power BI:ssä](service-create-distribute-apps.md)
 * Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)

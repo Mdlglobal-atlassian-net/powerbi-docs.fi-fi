@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/07/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: e2412fe72d62549277001b64121ecf9db2ea5502
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 5633370259662141296550aa3d5d2343ac4fedaa
+ms.sourcegitcommit: 58c649ec5fd2447a0f9ca4c4d45a0e9fff2f1b6a
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65239565"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67408568"
 ---
 # <a name="add-a-custom-column-in-power-bi-desktop"></a>Mukautettujen sarakkeiden lisääminen Power BI Desktopissa
 Voit helposti lisätä uuden mukautetun tietosarakkeen mallin avulla **Kyselyeditoria** - **Power BI Desktopia**. Voit luoda ja nimetä mukautetun sarakkeen helppokäyttöisten painikkeiden avulla käyttämällä [M-kaavoja](https://msdn.microsoft.com/library/mt270235.aspx) , joka määrittävät mukautetun sarakkeen. M-kaava on [kattavan funktion viittauksen sisältöjoukko](https://msdn.microsoft.com/library/mt779182.aspx). 
@@ -68,6 +68,5 @@ Voit myös luoda mukautetun sarakkeen (ja muokata mitä tahansa kyselysi vaihett
 On olemassa myös muita tapoja luoda mukautettu sarake, mukaan lukien sarakkeen luominen niiden esimerkkien avulla, jotka annat **Kyselyeditoriin**. Katso seuraavasta artikkelista lisätietoja mukautettujen sarakkeiden luomisesta esimerkeistä:
 
 * [Sarakkeen lisääminen esimerkistä Power BI Desktopissa](desktop-add-column-from-example.md)
-* [Johdanto M-kaavan kieleen](https://msdn.microsoft.com/library/mt270235.aspx)
-* [M-funktion viite](https://msdn.microsoft.com/library/mt779182.aspx)  
+* [Power Query M Reference](/powerquery-m/power-query-m-reference)  
 

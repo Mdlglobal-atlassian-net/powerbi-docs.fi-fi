@@ -7,117 +7,123 @@ ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/23/2018
+ms.date: 06/20/2019
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: 0a71a0e0fe7af3c074c94ab26083839ff114f815
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: eea93888cf3a8ea5c7ca7b6eb9389cbabc79dc9c
+ms.sourcegitcommit: 8dee40f07d284ec84a8afa0100359f146e1dd88b
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61232685"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67418713"
 ---
 # <a name="it-spend-analysis-sample-for-power-bi-take-a-tour"></a>IT-kulutusanalyysimalli Power BI:lle: aloita esittely
 
-## <a name="overview-of-the-it-spend-analysis-sample"></a>IT-kulutusanalyysimallin yleiskuva
-IT-kulutusanalyysin [sisältöpaketti](service-organizational-content-pack-introduction.md) (koontinäyttö, raportti ja tietojoukko) analysoi IT-osaston suunnitellut ja todelliset kulut. Tämän vertailun avulla voi arvioida sitä, kuinka hyvin yritys suunnitteli vuoden, sekä tutkia osa-alueita, jotka poikkeavat merkittävästi suunnitelmasta. Esimerkin yritys käyttää vuosittaista ennustejaksoa ja tuottaa neljännesvuosittain uusimman arvion, jonka avulla voidaan analysoida IT-osaston kuluissa tilivuoden aikana tapahtuneita muutoksia.
+IT-kulutusanalyysimallin sisältöpaketti sisältää koontinäytön, raportin ja tietojoukon, jotka analysoivat IT-osaston suunniteltuja kuluja verrattuna todellisiin kuluihin. Tämän vertailun avulla voi arvioida sitä, kuinka hyvin yritys suunnitteli vuoden, sekä tutkia osa-alueita, jotka poikkeavat merkittävästi suunnitelmasta. Tämän esimerkin yritys käyttää vuosittaista suunnittelujaksoa ja laatii neljännesvuosittain uusimman arvion, jonka avulla voidaan analysoida IT-osaston kuluissa tilivuoden aikana tapahtuneita muutoksia.
 
-![](media/sample-it-spend/it1.png)
+![IT-kulutusanalyysimallin koontinäyttö](media/sample-it-spend/it1.png)
 
-Tämä malli kuuluu sarjaan, jossa esitellään, miten Power BI:tä voidaan käyttää liiketoimintaan suuntautuneiden tietojen, raporttien ja koontinäyttöjen kanssa. Nämä ovat oikeita tietoja obviEnceltä (<http://obvience.com/>), jotka on muunnettu nimettömään muotoon.
+Tämä malli kuuluu sarjaan, jossa esitellään, miten Power BI:tä voidaan käyttää liiketoimintaan suuntautuneiden tietojen, raporttien ja koontinäyttöjen kanssa. Sen luomiseen on käytetty [obviEnceltä](http://www.obvience.com/) saatuja oikeita tietoja, jotka on muunnettu nimettömään muotoon. Tiedot ovat käytettävissä useissa muodoissa: sisältöpaketti/sovellus, Power BI Desktopin .pbix-tiedosto tai Excel-työkirja. Tutustu [Power BI:n malleihin](sample-datasets.md). 
+
+Tässä opetusohjelmassa käytetään Power BI -palvelua ja IT-kulutusanalyysimallin sisältöpakettia. Koska raportin käyttökokemukset ovat hyvin samankaltaisia, voit myös seurata käyttäen Power BI Desktopia ja mallin PBIX-tiedostoa.
 
 ## <a name="prerequisites"></a>Edellytykset
 
- Ennen kuin voit käyttää mallia, se on ensin ladattava [sisältöpakettina](https://docs.microsoft.com/power-bi/sample-it-spend#get-the-content-pack-for-this-sample), [.pbix-tiedostona](http://download.microsoft.com/download/E/9/8/E98CEB6D-CEBB-41CF-BA2B-1A1D61B27D87/IT%20Spend%20Analysis%20Sample%20PBIX.pbix) tai [Excel-työkirjana](http://go.microsoft.com/fwlink/?LinkId=529783).
+ Ennen kuin voit käyttää mallia, se on ensin ladattava [sisältöpakettina](#get-the-content-pack-for-this-sample), [.pbix-tiedostona](#get-the-pbix-file-for-this-sample) tai [Excel-työkirjana](#get-the-excel-workbook-for-this-sample).
 
 ### <a name="get-the-content-pack-for-this-sample"></a>Mallin sisältöpaketin noutaminen
 
-1. Avaa Power BI -palvelu (app.powerbi.com) ja kirjaudu sisään.
+1. Avaa Power BI -palvelu (app.powerbi.com), kirjaudu sisään ja avaa työtila, johon haluat tallentaa mallin.
+
 2. Valitse vasemmasta alakulmasta **Nouda tiedot**.
    
-    ![](media/sample-datasets/power-bi-get-data.png)
-3. Valitse ilmestyvältä Nouda tiedot -sivulta **Mallit**-kuvake.
+   ![Valitse Nouda tiedot](media/sample-datasets/power-bi-get-data.png)
+3. Valitse avautuvalta **Nouda tiedot** -sivulta **Mallit**.
    
-   ![](media/sample-datasets/power-bi-samples-icon.png)
-4. Valitse **IT-kulutusanalyysimalli** ja **Yhdistä**.  
+4. Valitse **IT-kulutusanalyysimalli** ja valitse sitten **Yhdistä**.  
   
-   ![Nouda tiedot](media/sample-it-spend/it-connect.png)
+   ![Yhdistä malliin](media/sample-it-spend/it-connect.png)
    
-5. Power BI tuo sisältöpaketin ja lisää uuden koontinäytön, raportin ja tietojoukon senhetkiseen työtilaasi. Uusi sisältö merkitään keltaisella tähdellä. 
+5. Power BI tuo sisältöpaketin ja lisää sitten uuden koontinäytön, raportin ja tietojoukon senhetkiseen työtilaasi.
    
-   ![Tähti](media/sample-it-spend/it-asterisk.png)
+   ![IT-kulutusanalyysimallin syöte](media/sample-it-spend/it-spend-analysis-sample-entry.png)
   
 ### <a name="get-the-pbix-file-for-this-sample"></a>Hae tämän mallin .pbix-tiedosto
 
-Vaihtoehtoisesti voit ladata näytteen .pbix-tiedostona, joka on suunniteltu käytettäväksi Power BI Desktopilla. 
-
- * [IT-kulutusanalyysimalli](http://download.microsoft.com/download/E/9/8/E98CEB6D-CEBB-41CF-BA2B-1A1D61B27D87/IT%20Spend%20Analysis%20Sample%20PBIX.pbix)
+Vaihtoehtoisesti voit ladata IT-kulutusanalyysimallin [.pbix-tiedostona](http://download.microsoft.com/download/E/9/8/E98CEB6D-CEBB-41CF-BA2B-1A1D61B27D87/IT%20Spend%20Analysis%20Sample%20PBIX.pbix), joka on suunniteltu käytettäväksi Power BI Desktopilla.
 
 ### <a name="get-the-excel-workbook-for-this-sample"></a>Hae tämän näytteen Excel-työkirja
-Voit myös [ladata vain tietojoukon (Excel-työkirjan)](http://go.microsoft.com/fwlink/?LinkId=529783) tälle mallille. Työkirja sisältää Power View -taulukoita, joita voit tarkastella ja muokata. Raakatiedot saa näkyviin valitsemalla **Power Pivot > Hallinta**.
 
+Jos haluat perehtyä tämän mallin tietolähteeseen, se on saatavana myös [Excel-työkirjana](http://go.microsoft.com/fwlink/?LinkId=529783). Työkirja sisältää Power View -taulukoita, joita voit tarkastella ja muokata. Saat raakatiedot näkyviin ottamalla käyttöön Tietojen analysointi -apuohjelmat ja valitsemalla sitten **Power Pivot > Hallinta**. Voit ottaa Power View- ja Power Pivot -apuohjelmat käyttöön [tutustumalla Excelin sisältämien Excel-mallien](sample-datasets.md#optional-take-a-look-at-the-excel-samples-from-inside-excel-itself) lisätietoihin.
 
-## <a name="the-it-spend-analysis-sample-dashboard"></a>IT-kulutusanalyysimallin koontinäyttö
-Koontinäytön kaksi numeroruutua, **Varianssisuunnitelma %** ja **Varianssin uusin arvio % 3. vuosineljännes**, antavat yleiskuvan siitä, miten yritys on suoriutunut verrattuna suunnitelmaan ja uusimpaan vuosineljännesarvioon (LE3 = uusin arvio 3. vuosineljännes). Yhteensä ero suunnitelmaan on noin 6 prosenttia. Tutkitaan, mistä varianssi johtuu – milloin, missä ja missä luokassa?
+## <a name="it-spend-analysis-sample-dashboard"></a>IT-kulutusanalyysimallin koontinäyttö
+Koontinäytön vasemman reunan kaksi numeroruutua, **Varianssisuunnitelma %** ja **Varianssin uusin arvio % 3. vuosineljännes**, antavat yleiskuvan siitä, miten yritys on suoriutunut verrattuna suunnitelmaan ja uusimpaan vuosineljännesarvioon (LE3 = uusin arvio 3. vuosineljännes). Yleisesti ero suunnitelmaan on noin 6 prosenttia. Tutkitaanpa, mistä varianssi johtuu – milloin, missä ja missä luokassa.
 
-## <a name="ytd-it-spend-trend-analysis-page"></a>”IT-kulutrendianalyysi vuoden alusta” -sivu
-**Varianssisuunnitelma % myyntialueittain** -koontinäyttöruudun valitseminen siirtää sinut IT-kulutusanalyysimallin raportin ”IT-kulutrendianalyysi” -sivulle. Näemme yhdellä silmäyksellä, että varianssi on positiivinen Yhdysvalloissa ja Euroopassa sekä negatiivinen Kanadassa, Latinalaisessa Amerikassa ja Australiassa. Yhdysvalloissa on noin 6 % +LE-varianssi ja Australiassa on noin 7 % -LE-varianssi.
+## <a name="ytd-it-spend-trend-analysis-page"></a>IT-kulutrendianalyysi vuoden alusta -sivu
+**Varianssisuunnitelma % myyntialueittain** -koontinäyttöruudun valitseminen siirtää sinut IT-kulutusanalyysimallin raportin **IT-kulutrendianalyysi vuoden alusta** -sivulle. Näemme yhdellä silmäyksellä, että varianssi on positiivinen Yhdysvalloissa ja Euroopassa sekä negatiivinen Kanadassa, Latinalaisessa Amerikassa ja Australiassa. Yhdysvalloissa on noin 6 % +LE-varianssi ja Australiassa on noin 7 % -LE-varianssi.
 
-![](media/sample-it-spend/it2.png)
+![Varianssisuunnitelma (%) myyntialueittain](media/sample-it-spend/it2.png)
 
 Mutta vain tämän kaavion katsominen ja päätelmien tekeminen sen perusteella voi olla harhaanjohtavaa. Meidän on tutustuttava todellisiin rahamääriin, jos haluamme todellisen kuvan asioista.
 
-1. Valitse **Aus ja NZ** Varianssisuunnitelma % myyntialueittain -kaaviossa ja katso Varianssisuunnitelma IT-alueittain -kaaviota.
+1. Valitse **Aus ja NZ** **Varianssisuunnitelma % myyntialueittain** -kaaviossa ja katso **Varianssisuunnitelma IT-alueittain** -kaaviota.
 
-   ![](media/sample-it-spend/it3.png)
-2. Valitse seuraavaksi **USA**. Näet, miten asiat ovat – Australia vastaa hyvin pienestä osasta kokonaiskulutuksestamme Yhdysvaltoihin verrattuna.
+   ![IT-kulutrendianalyysi vuoden alusta -sivu](media/sample-it-spend/it3.png)
+2. Valitse seuraavaksi **USA**. Huomaa, että Australian ja Uuden-Seelannin osuus on hyvin pieni yleistä kulutuksestamme verrattuna Yhdysvaltoihin.
 
-    Joten, rajoitamme analyysin Yhdysvaltoihin, mitä nyt? Katsotaan, mikä luokka Yhdysvalloissa aiheuttaa varianssin.
+    Katsotaanpa seuraavaksi, mikä luokka Yhdysvalloissa aiheuttaa varianssin.
 
 ## <a name="ask-questions-of-the-data"></a>Kysymysten kysyminen tiedoista
-1. Valitse **IT-kulutusanalyysimalli** yläreunan siirtymispalkista ja palaa koontinäyttöihin.
-2. Kirjoita kysymysruutuun ”Näytä IT alueiden, varianssisuunnitelman % ja le3-varianssin % palkkikaavio”.
+1. Valitse **IT-kulutusanalyysimalli** yläreunan siirtymispalkista palataksesi mallikoontinäyttöön.
+2. Valitse **Kysymysten kysyminen tiedoista**.
+3. Valitse **Kysymyksiä, joiden avulla pääset alkuun** -luettelosta vasemmalla puolella **suunnitelma IT-alueen mukaan**.
 
-   ![](media/sample-it-spend/it4.png)
+   ![Suunnittele IT-alueittain -kaavio](media/sample-it-spend/it-area-chart.png)
 
-   Ensimmäisellä IT-alueella (**infrastruktuuri**) prosenttiosuus on muuttunut huomattavasti alkuperäisen varianssisuunnitelman ja varianssisuunnitelman uusimman arvion välillä.
+4. Poista Q&A-ruudussa aiempi syöte ja syötä *Näytä IT-alueet, varianssisuunnitelma % ja varianssi le3 % -palkkikaavio*.
 
-## <a name="ytd-spend-by-cost-elements-page"></a>”YTD-kulutus kustannustasoittain” -sivu
-Siirry takaisin koontinäytölle ja katso **Varianssisuunnitelma %, Varianssi LE3 %** -koontinäyttöruutua.
+   ![Varianssisuunnitelma % ja varianssisuunnitelma LE3 % IT-alueittain -kaavio](media/sample-it-spend/it4.png)
 
-![](media/sample-it-spend/it5.png)
+   Ensimmäisellä IT-alueella, **Infrastruktuuri**, prosenttiosuus on muuttunut huomattavasti alkuperäisen varianssisuunnitelman ja varianssisuunnitelman uusimman arvion välillä.
 
-Infrastruktuuri erottuu joukosta suurella positiivisella varianssilla suunnitelmaan verrattuna.
+## <a name="ytd-spend-by-cost-elements-page"></a>YTD-kulutus kustannustasoittain -sivu
 
-1. Napsauttamalla tätä ruutua voit siirtyä ”YTD-kulutus kustannustasoittain” -sivulle IT-kulutusanalyysimalli-raportissa.
-2. Napsauta **Infrastruktuuri**-palkkia vasemmassa alakulmassa olevassa ”Varianssisuunnitelma ja varianssi LE3 % IT-alueittain”-kaaviossa ja katso, mikä on varianssi suunnitelmaan verrattuna ”Varianssisuunnitelma % myyntialueittain” -kohdassa vasemmalla.
+1. Palaa koontinäyttöön ja tarkastele **Varianssisuunnitelma %, varianssin uusin arvio % – 3. vuosineljännes** -koontinäyttöruutua.
 
-    ![](media/sample-it-spend/it6.png)
-3. Napsauta kunkin kustannustasoryhmän nimeä sektorissa löytääksesi kustannustasot suurella varianssilla.
-4. Kun **Muu** on valittuna, valitse **Infrastruktuuri** IT-alueella ja napsauta alialuetta IT-alialue-sektorissa suurimmalla varianssilla varustetun alialueen löytämiseksi.  
+   ![Varianssisuunnitelma %, varianssi LE3 -ruutu](media/sample-it-spend/it5.png)
 
-   Huomaamme, että varianssi on suurta **Verkkopalveluissa**.
+   Huomaa, että Infrastruktuuri-alue erottuu suuren positiivisen varianssinsa ansiosta verrattuna suunnitelmaan.
 
-   Ilmeisesti yritys päätti antaa työntekijöilleen puhelinpalveluita etuutena, mutta tekoa ei suunniteltu.
+1. Valitse tämä ruutu raportin avaamiseksi ja **YTD-kulutus kustannustasoittain** -sivun tarkastelemiseksi.
+2. Valitse **Infrastruktuuri**-palkki oikeasta alakulmasta **Varianssisuunnitelma % ja varianssi LE3 % IT-alueittain** -kaaviosta ja tarkastele varianssi suunnitelmaan verrattuna -arvoja vasemman alakulman **Varianssisuunnitelma % myyntialueittain** -kaaviossa.
 
-## <a name="plan-variance-analysis-page"></a>”Suunnitelmavarianssianalyysi”-sivu
-Raportissa siirry raportin sivulle 3 napsauttamalla ”Suunnitelmavarianssianalyysi”-välilehteä raportin alareunassa.
+    ![YTD-kulutus kustannustasoittain -sivu](media/sample-it-spend/it6.png)
+3. Valitse kukin nimi vuorostaan **Kustannustasoryhmä**-osittajasta löytääksesi kustannustason, jolla on suurin varianssi.
+4. Kun **Muu** on valittuna, valitse **Infrastruktuuri** **IT-alue**-osittajassa ja napsauta alialueita **IT-alialue**-osittajassa suurimmalla varianssilla varustetun alialueen löytämiseksi.  
 
-”Varianssisuunnitelma ja Varianssisuunnitelma % liiketoiminta-alueittain” -yhdistelmäkaaviossa vasemmalla korosta muualla sivulla olevat infrastruktuuriarvot napsauttamalla infrastruktuurisaraketta.
+   Huomaa **Verkko**-kohdan suuri varianssi. Ilmeisesti yritys päätti antaa työntekijöilleen puhelinpalveluja etuutena, vaikka tätä toimenpidettä ei suunniteltu.
 
-![](media/sample-it-spend/it7.png)
+## <a name="plan-variance-analysis-page"></a>Suunnitelmavarianssianalyysi-sivu
 
-Voit huomata ”Varianssisuunnitelma % kuukausittain ja liiketoiminta-alueittain” -kaaviossa, että infrastruktuurissa alkoi olla positiivista varianssia suunnilleen helmikuussa, minkä jälkeen se on jatkanut kasvamistaan. Voit myös huomata, miten varianssi infrastruktuurin suunnitelma-arvoon vaihtelee maan mukaan, verrattuna kaikkien liiketoiminta-alueiden arvoon. Oikealla olevien ”IT-alue”- ja ”IT-alialueet” -sektoreiden avulla voit suodattaa muualla sivulla olevia arvoja niiden korostamisen sijaan. Tutki tietoja toisella tavalla napsauttamalla eri IT-alueita oikealla. Voit myös napsauttaa IT-alialueita ja nähdä varianssin kyseisellä tasolla.
+1. Valitse **Suunnitelmavarianssianalyysi**-välilehti sivun alareunasta.
+
+2. Valitse vasemmalta **Varianssisuunnitelma ja Varianssisuunnitelma % liiketoiminta-alueittain** -kaaviosta **Infrastruktuuri**-kaavio infrastruktuurin korostamiseksi liiketoiminta-alueittain sivun muissa osissa.
+
+    ![Suunnitelmavarianssianalyysi-sivu](media/sample-it-spend/it7.png)
+
+   Huomaa **Varianssisuunnitelma % kuukausittain ja liiketoiminta-alueittain** -kaaviossa, että infrastruktuurin liiketoiminta-alueen positiivinen varianssi alkoi helmikuussa. Huomaa myös, miten varianssi verrattuna suunnitelmaan -arvo vaihtelee maan mukaan verrattuna kaikkiin muihin liiketoiminta-alueisiin. 
+
+3. Oikealla olevien **IT-alue**- ja **IT-alialue**-osittajien avulla voit suodattaa sivun muissa osissa olevia arvoja ja tarkastella tietoja. 
 
 ## <a name="edit-the-report"></a>Muokkaa raporttia
-Valitse **Muokkaa raporttia** vasemmassa yläkulmassa ja tutustu muokkausnäkymään.
+Valitse vasemmasta yläkulmasta **Muokkaa raporttia** muokkausnäkymän tarkastelemiseksi:
 
-* Katso, miten sivut muodostetaan – kunkin kaavion kentät, sivuilla olevat suodattimet
-* Lisää sivuja ja kaavioita perustuen samoihin tietoihin
-* Muuta kunkin kaavion visualisointityyppiä
-* Kiinnitä ne koontinäyttöösi
-
-Tämä on turvallinen ympäristö kaikenlaisille kokeiluille. Voit aina jättää tekemäsi muutokset tallentamatta. Jos kuitenkin tallennat ne, voit aina siirtyä Nouda tiedot -kohtaan, jolloin saat mallista uuden kopion.
+* Katso, miten sivut muodostetaan, kussakin kaaviossa olevat kentät ja sivuilla olevat suodattimet.
+* Lisää sivuja ja kaavioita samojen tietojen perusteella.
+* Muuta kunkin kaavion visualisointityyppiä.
+* Koontinäytössä olevat kiinnostavat PIN-kaaviot.
 
 ## <a name="next-steps-connect-to-your-data"></a>Seuraavat vaiheet: Yhdistä tietoihisi
-Toivomme, että tämä esittely on osoittanut, miten Power BI -koontinäytöt, Q&A ja raportit voivat tarjota uusia näkökulmia IT-kulutustietoihin. Nyt sinun vuorosi – muodosta yhteys omiin tietoihisi. Power BI:n avulla voit yhdistää useita eri tietolähteitä. Lisätietoja [Power BI:n käytön aloittamisesta](service-get-started.md).
+Tässä ympäristössä on turvallista tehdä kokeiluja, koska voit jättää tekemäsi muutokset tallentamatta. Jos kuitenkin tallennat ne, voit aina siirtyä **Nouda tiedot** -kohtaan, jolloin saat tästä mallista uuden kopion.
+
+Toivomme, että tämä esittely on osoittanut, miten Power BI -koontinäytöt, Q&A ja raportit voivat tarjota uusia näkökulmia IT-kulutustietoihin. Nyt on sinun vuorosi – muodosta yhteys omiin tietoihisi. Power BI:n avulla voit yhdistää useisiin eri tietolähteisiin. Lisätietoja on artikkelissa [Power BI -palvelun käytön aloittaminen](service-get-started.md).

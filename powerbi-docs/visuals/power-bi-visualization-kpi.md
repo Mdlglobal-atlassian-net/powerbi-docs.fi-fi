@@ -1,6 +1,6 @@
 ---
-title: Suorituskykyilmaisimien visualisoinnit
-description: KPI-visualisointien luominen Power BI:ssä
+title: Suorituskykyilmaisimen (KPI) visualisoinnit
+description: Suorituskykyilmaisimen (KPI) visualisoinnit Power BI:ssä
 author: mihart
 manager: kvivek
 ms.reviewer: ''
@@ -8,71 +8,97 @@ featuredvideoid: xmja6EpqaO0
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: tutorial
-ms.date: 11/24/2018
+ms.date: 06/24/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 3d197da63be256825efc44c9e97988648d049efa
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 8fa39c7cc57e24f0c19e1a484c0e925bfeec94f7
+ms.sourcegitcommit: 1c96b65a03ec0a0612e851dd58c363f4d56bca38
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61067480"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "67389653"
 ---
-# <a name="kpi-visuals"></a>Suorituskykyilmaisimien visualisoinnit
-Suorituskykyilmaisin (KPI) on visuaalinen vihje, joka kertoo edistymisen määrän kohti mitattavissa olevaa tavoitetta. Katso lisätietoja suorituskykyilmaisimista [Microsoft Developer Networkista](https://msdn.microsoft.com/library/hh272050).
+# <a name="key-performance-indicator-kpi-visuals"></a>Suorituskykyilmaisimen (KPI) visualisoinnit
 
-Jos et ole rekisteröitynyt Power BI:hin, [rekisteröidy ilmaiseen kokeiluversioon](https://app.powerbi.com/signupredirect?pbi_source=web) ennen aloittamista.
+Suorituskykyilmaisin (KPI) on visuaalinen vihje, joka kertoo edistymisen määrän kohti mitattavissa olevaa tavoitetta. Lisätietoja suorituskykyilmaisimista on artikkelissa [Suorituskykyilmaisimet (KPI) PowerPivotissa](/previous-versions/sql/sql-server-2012/hh272050(v=sql.110)).
 
-## <a name="prerequisites"></a>Edellytykset
-* [Power BI Desktop – se on ilmainen!](https://powerbi.microsoft.com/get-started/)
-* [Jälleenmyyntianalyysimallin PBIX-tiedosto](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix)
-
-## <a name="when-to-use-a-kpi"></a>Milloin suorituskykyilmaisinta kannattaa käyttää?
-Suorituskykyilmaisin on hyvä vaihtoehto, kun halutaan
-
-* mitata edistymistä (minkä edellä vai jäljessä olen?)
-* mitata etäisyyttä tavoitteeseen (kuinka paljon edellä tai jäljessä olen?)   
-
-## <a name="kpi-requirements"></a>Suorituskykyilmaisimia koskevat vaatimukset
-Suorituskykyilmaisin perustuu tiettyyn mittariin, ja se on suunniteltu mittarin nykyisen arvon ja tilan arviointiin määritettyyn kohteeseen verrattuna. Siksi suorituskykyilmaisimen visualisointi edellyttää *perustason* mittaria, joka tekee arvioinnin arvoon ja *kohde*mittariin tai arvoon ja *raja-arvoon* tai *tavoitteeseen*.
-
-Tällä hetkellä suorituskykyilmaisimen tietojoukon pitää sisältää suorituskykyilmaisimen tavoitearvoja. Jos tietojoukko ei sisällä niitä, voit luoda tavoitteita lisäämällä tietomalliin tai PBIX-tiedostoon Excel-taulukon, jossa on tavoitteita.
-
-
-## <a name="how-to-create-a-kpi"></a>Suorituskykyilmaisimen luominen
-Jos haluat seurata mukana, avaa [jälleenmyyntianalyysin .PBIX-tiedosto](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix) Power BI Desktopissa. Luomme suorituskykyilmaisimen, joka mittaa edistymisen kohti myynnin tavoitetta.
-
-Tai kello näyttää, miten voit luoda yksittäisten arvojen visualisoinnit: mittarit, kortit ja suorituskyvyn mittarit.
+Will näyttää sivulle, miten voit luoda yksittäisten arvojen visualisoinnit: mittarit, kortit ja suorituskyvyn mittarit.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/xmja6EpqaO0?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
 
-1. Avaa raportti raporttinäkymässä ja lisää uusi sivu valitsemalla keltainen välilehti.    
-2. Valitse Kentät-ruudussa **Myynti > Yksikköjen kokonaismäärä tänä vuonna**.  Tämä on ilmaisin.
-3. Lisää **Aika > FiscalMonth**.  Tämä edustaa trendiä.
-4. TÄRKEÄÄ: Lajittele kaavio **FiscalMonth**-arvon mukaan. Kun muunnat visualisoinnin suorituskykyilmaisimeksi, lajitteluvaihtoehtoa ei ole.
+## <a name="when-to-use-a-kpi"></a>Milloin suorituskykyilmaisinta kannattaa käyttää?
 
-    ![](media/power-bi-visualization-kpi/power-bi-chart.png)
-5. Muunna visualisointi suorituskykyilmaisimeksi valitsemalla suorituskykyilmaisimen kuvake Visualisointi-ruudusta.
-   
-    ![](media/power-bi-visualization-kpi/power-bi-kpi-template.png)
-6. Lisää tavoite. Lisää edellisen vuoden myynti tavoitteeksi. Vedä **Yksikköjen kokonaismäärä viime vuonna** **Kohdetavoitteet**-kenttään.
-   
-    ![](media/power-bi-visualization-kpi/power-bi-kpi-done.png)
-7. Vaihtoehtoisesti voit muotoilla suorituskykyilmaisimen avaamalla muotoiluruudun valitsemalla maalitelakuvakkeen.
-   
-   * **Ilmaisin** – ohjaa ilmaisimen näyttöyksiköitä ja desimaaleja.
-   * **Trendiakseli** – kun arvona on **Käytössä**, trendiakseli näkyy suorituskykyilmaisimen visualisoinnin taustalla.  
-   * **Tavoitteet** – kun arvona on **Käytössä**, visualisointi näyttää tavoitteen ja etäisyyden tavoitteesta prosenttilukuna.
-   * **Värikoodaus > Suunta** – joitakin suorituskykyilmaisimia pidetään *parempina* suuremmille arvoille ja joitakin pidetään *parempina* pienemmille arvoille. Esimerkiksi tulot vs. odotusaika. Yleensä tulojen suurempi arvo on parempi verrattuna odotusajan suurempaan arvoon. Valitse **suuri on parempi**, ja voit myös muuttaa väriasetuksia.
+Suorituskykyilmaisin on hyvä vaihtoehto, kun halutaan
 
+* Mitata edistymistä. Vastata kysymykseen ”Mitä olen edellä tai jäljessä?”.
 
-Suorituskykyilmaisimet ovat myös käytettävissä Power BI -palvelussa ja mobiililaitteissa – voit siis aina olla yhteydessä liiketoimintasi sykkeeseen.
+* Mitata etäisyyttä tavoitteeseen. Vastata kysymykseen ”Kuinka paljon edellä tai jäljessä olen?”.
+
+## <a name="kpi-requirements"></a>Suorituskykyilmaisimia koskevat vaatimukset
+
+Suunnittelija käyttää KPI-visualisoinnin pohjana tiettyä mittaria. Suorituskykyilmaisimen tarkoituksena on auttaa sinua arvioimaan mittarin nykyistä arvoa ja tilaa verrattuna määritettyyn tavoitteeseen. Siksi suorituskykyilmaisimen visualisointi edellyttää *perustason* mittaria, joka tekee arvioinnin arvoon, *kohde*mittariin tai arvoon ja *raja-arvoon* tai *tavoitteeseen*.
+
+KPI-tietojoukon pitää sisältää suorituskykyilmaisimen tavoitearvoja. Jos tietojoukko ei sisällä tavoitearvoja, voit luoda niitä lisäämällä tietomalliin tai PBIX-tiedostoon Excel-laskentataulukon, jossa on tavoitteita.
+
+## <a name="prerequisites"></a>Edellytykset
+
+Jos et ole rekisteröitynyt Power BI:hin, [rekisteröidy ilmaiseen kokeiluversioon](https://app.powerbi.com/signupredirect?pbi_source=web) ennen aloittamista.
+
+* [Power BI Desktop](https://powerbi.microsoft.com/get-started/) – se on ilmainen!
+
+* [Jälleenmyyntianalyysimallin PBIX-tiedosto](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix)
+
+## <a name="how-to-create-a-kpi"></a>Suorituskykyilmaisimen luominen
+
+Jos haluat seurata mukana, avaa [jälleenmyyntianalyysin .PBIX-tiedosto](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix) Power BI Desktopissa. Luomme suorituskykyilmaisimen, joka mittaa edistymistä kohti myyntitavoitetta.
+
+1. Avaa **Jälleenmyyntianalyysimalli** raporttinäkymässä ![Näyttökuva raporttinäkymän kuvakkeesta.](media/power-bi-visualization-kpi/power-bi-report-view.png).
+
+1. Valitse ![Näyttökuva keltaisesta välilehdestä.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) uuden sivun lisäämiseksi.
+
+1. Valitse **Kentät**-ruudussa **Myynti > Yksikköjen kokonaismäärä tänä vuonna**.  Tämä arvo on ilmaisin.
+
+1. Lisää **Aika > FiscalMonth**.  Tämä arvo edustaa trendiä.
+
+1. Valitse visualisoinnin oikeasta yläkulmasta kolme pistettä (...) ja tarkista, että Power BI lajittelee sarakkeet nousevaan järjestykseen **FiscalMonth**-arvon mukaan.
+
+    > [!IMPORTANT]
+    > Kun muunnat visualisoinnin suorituskykyilmaisimeksi, lajitteluvaihtoehtoa **ei** ole. Sinun täytyy lajitella se oikein nyt.
+
+    ![Näyttökuva kolmen pisteen (...) laajennetusta valikosta, jossa on valittuna Lajittele nousevaan järjestykseen ja FiscalMonth.](media/power-bi-visualization-kpi/power-bi-ascending-by-fiscal-month.png)
+
+    Kun visualisointi on lajiteltu oikein, se näyttää tältä:
+
+    ![Näyttökuva oikein lajitellusta visualisoinnista.](media/power-bi-visualization-kpi/power-bi-chart.png)
+
+1. Muunna visualisointi suorituskykyilmaisimeksi valitsemalla **suorituskykyilmaisimen** kuvake **Visualisointi**-ruudusta.
+
+    ![Näyttökuva Visualisoinnit-ruudusta, jossa on korostettu suorituskykyilmaisimen kuvake.](media/power-bi-visualization-kpi/power-bi-kpi-template.png)
+
+1. Lisää tavoite vetämällä **Yksikköjen kokonaismäärä viime vuonna** **Kohdetavoitteet**-kenttään.
+
+    ![Näyttökuva valmiista suorituskykyilmaisimen visualisoinnista ja Kentät-ruudusta, jossa on esitetty arvot.](media/power-bi-visualization-kpi/power-bi-kpi-done.png)
+
+1. Vaihtoehtoisesti voit muotoilla suorituskykyilmaisimen avaamalla muotoiluruudun valitsemalla maalirullakuvakkeen.
+
+    * **Ilmaisin** – ohjaa ilmaisimen näyttöyksiköitä ja desimaaleja.
+
+    * **Trendiakseli** – kun arvona on **Käytössä**, visualisointi näyttää trendiakselin suorituskykyilmaisimen visualisoinnin taustalla.  
+
+    * **Tavoitteet** – kun arvona on **Käytössä**, visualisointi näyttää tavoitteen ja etäisyyden tavoitteesta prosenttilukuna.
+
+    * **Värikoodaus > Suunta** – joitakin suorituskykyilmaisimia pidetään parempina *suuremmille* arvoille ja joitakin pidetään parempina *pienemmille* arvoille. Esimerkiksi tulot vs. odotusaika. Yleensä tulojen suurempi arvo on parempi verrattuna odotusajan suurempaan arvoon. Valitse **suuri on parempi**, ja muuta vaihtoehtoisesti väriasetuksia.
+
+Suorituskykyilmaisimet ovat saatavilla Power BI -palvelussa ja mobiililaitteissa. Sen avulla voit olla aina yhteydessä liiketoimintasi sykkeeseen.
 
 ## <a name="considerations-and-troubleshooting"></a>Huomioon otettavat seikat ja vianmääritys
-* Jos suorituskykyilmaisimesi ei näytä samalta kuin edellä, sinun täytyy ehkä lajitella fiscalmonth-arvon mukaan. Koska suorituskykyilmaisimissa ei ole lajitteluasetusta, sinun täytyy lajitella fiscalmonth-arvon mukaan *ennen* visualisoinnin muuntamista suorituskykyilmaisimeksi.
+
+Jos suorituskykyilmaisimesi ei näytä samalta kuin yksi edellisistä, se johtuu ehkä siitä, ettet lajitellut sitä **FiscalMonth**-arvon mukaan. Suorituskykyilmaisimissa ei ole lajitteluvaihtoehtoa. Sinun täytyy aloittaa uudestaan ja lajitella **FiscalMonth**-arvon mukaan *ennen* visualisoinnin muuntamista suorituskykyilmaisimeksi.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
-[Perustason kartat Power BI:ssä](power-bi-map-tips-and-tricks.md)
+* [Vinkkejä Power BI -karttavisualisoinneille](power-bi-map-tips-and-tricks.md)
 
-[Visualisointityypit Power BI:ssä](power-bi-visualization-types-for-reports-and-q-and-a.md)
+* [Visualisointityypit Power BI:ssä](power-bi-visualization-types-for-reports-and-q-and-a.md)
+
+Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)

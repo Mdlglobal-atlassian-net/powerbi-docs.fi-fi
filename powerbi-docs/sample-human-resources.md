@@ -7,139 +7,159 @@ ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/26/2018
+ms.date: 06/20/2019
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: 4b36c02abe0ca0bbd2d117559855a69edff370db
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: ae2e4dcfe1fdcd88c3e6ff9e4942afdedf9d126b
+ms.sourcegitcommit: a2c4f912af1729fdfdf20369bf3eff67c3927eec
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61233767"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "67349464"
 ---
 # <a name="human-resources-sample-for-power-bi-take-a-tour"></a>Power BI:n henkilöstöhallintomalli: aloita esittely
 
 ## <a name="overview-of-the-human-resources-sample"></a>Yleiskuva henkilöstöhallintomallista
-Henkilöstöosasto käyttää samaa raportointimallia eri yrityksissä toimialasta tai koosta riippumatta. Tässä mallissa tarkastellaan uusia palkkauksia, aktiivisia työntekijöitä ja lähteneitä työntekijöitä sekä yritetään tuoda esiin palkkausstrategian trendejä. Päätavoitteemme on ymmärtää seuraavat asiat:
+Henkilöstöhallintomallin sisältöpaketti sisältää henkilöstöhallinto-osaston koontinäytön, raportin ja tietojoukon. Tässä mallissa henkilöstöhallinto-osasto käyttää samaa raportointimallia eri yrityksissä toimialasta tai koosta riippumatta. Tämä malli tarkastelee vastikään rekrytoituja työntekijöitä, aktiivisia työntekijöitä ja yrityksestä lähteneitä työntekijöitä. Se pyrkii selvittämään palkkausstrategian mahdolliset trendit. Päätavoitteemme on ymmärtää seuraavat asiat:
 
 * Keitä palkkaamme
 * Vääristymät palkkausstrategiassamme
 * Trendit vapaaehtoisissa irtisanoutumisissa
 
-![](media/sample-human-resources/hr1.png)
+![Koontinäyttö henkilöstöhallintomallista](media/sample-human-resources/hr1.png)
 
-Tämä malli kuuluu sarjaan, jossa esitellään, miten Power BI:tä voidaan käyttää liiketoimintaan suuntautuneiden tietojen, raporttien ja koontinäyttöjen kanssa. Nämä ovat oikeita tietoja obviEnceltä ([www.obvience.com](http://www.obvience.com/)), jotka on muunnettu nimettömään muotoon. Tiedot ovat käytettävissä useissa muodoissa: sisältöpaketti/sovellus, Excel-työkirja tai Power BI Desktopin .pbix-tiedosto. Lisätietoja on artikkelissa [Mallitietojoukot](sample-datasets.md).
+Tämä malli kuuluu sarjaan, jossa esitellään, miten Power BI:tä voidaan käyttää liiketoimintaan suuntautuneiden tietojen, raporttien ja koontinäyttöjen kanssa. Sen luomiseen on käytetty [obviEnceltä](http://www.obvience.com/) saatuja todellisia tietoja, jotka on muunnettu nimettömään muotoon. Tiedot ovat käytettävissä useissa muodoissa: sisältöpaketti/sovellus, Power BI Desktopin .pbix-tiedosto tai Excel-työkirja. Tutustu [Power BI:n malleihin](sample-datasets.md). 
+
+Tässä opetusohjelmassa käytetään Power BI -palvelua ja henkilöstöhallintomallin sisältöpakettia. Koska raportin käyttökokemukset ovat hyvin samankaltaisia, voit myös seurata käyttäen Power BI Desktopia ja mallin PBIX-tiedostoa. 
 
 ## <a name="prerequisites"></a>Edellytykset
 
- Ennen kuin voit käyttää mallia, se on ensin ladattava [sisältöpakettina](https://docs.microsoft.com/power-bi/sample-human-resources#get-the-content-pack-for-this-sample), [.pbix-tiedostona](http://download.microsoft.com/download/6/9/5/69503155-05A5-483E-829A-F7B5F3DD5D27/Human%20Resources%20Sample%20PBIX.pbix) tai [Excel-työkirjana](http://go.microsoft.com/fwlink/?LinkId=529780).
+Ennen kuin voit käyttää mallia, se on ensin ladattava [sisältöpakettina](#get-the-content-pack-for-this-sample), [.pbix-tiedostona](#get-the-pbix-file-for-this-sample) tai [Excel-työkirjana](#get-the-excel-workbook-for-this-sample).
 
 ### <a name="get-the-content-pack-for-this-sample"></a>Mallin sisältöpaketin noutaminen
 
-1. Avaa Power BI -palvelu (app.powerbi.com) ja kirjaudu sisään.
+1. Avaa Power BI -palvelu (app.powerbi.com), kirjaudu sisään ja avaa työtila, johon haluat tallentaa mallin.
+
 2. Valitse vasemmasta alakulmasta **Nouda tiedot**.
    
-    ![](media/sample-datasets/power-bi-get-data.png)
-3. Valitse ilmestyvältä Nouda tiedot -sivulta **Mallit**-kuvake.
+   ![Valitse Nouda tiedot](media/sample-datasets/power-bi-get-data.png)
+3. Valitse avautuvalta **Nouda tiedot** -sivulta **Mallit**.
    
-   ![](media/sample-datasets/power-bi-samples-icon.png)
-4. Valitse **Jälleenmyyntianalyysimalli** ja **Yhdistä**.  
+4. Valitse **Henkilöstöhallintomalli** ja valitse sitten **Yhdistä**.  
    
-   ![Nouda tiedot](media/sample-human-resources/pbi_hr_sample_connect.png)
-5. Power BI tuo sisältöpaketin ja lisää uuden koontinäytön, raportin ja tietojoukon senhetkiseen työtilaasi. Uusi sisältö merkitään keltaisella tähdellä. 
+   ![Yhdistä malliin](media/sample-human-resources/pbi_hr_sample_connect.png)
+
+5. Power BI tuo sisältöpaketin ja lisää sitten uuden koontinäytön, raportin ja tietojoukon senhetkiseen työtilaasi.
    
-   ![Tähti](media/sample-human-resources/human-resources-sample-asterisk.png)
+   ![Henkilöstöhallintomallin syöte](media/sample-human-resources/hr-sample-entry.png)
   
 ### <a name="get-the-pbix-file-for-this-sample"></a>Hae tämän mallin .pbix-tiedosto
 
-Vaihtoehtoisesti voit ladata näytteen .pbix-tiedostona, joka on suunniteltu käytettäväksi Power BI Desktopilla. 
-
- * [Henkilöstöhallintomalli PBIX](http://download.microsoft.com/download/6/9/5/69503155-05A5-483E-829A-F7B5F3DD5D27/Human%20Resources%20Sample%20PBIX.pbix)
+Vaihtoehtoisesti voit ladata henkilöstöhallintomallin [.pbix-tiedostona](http://download.microsoft.com/download/6/9/5/69503155-05A5-483E-829A-F7B5F3DD5D27/Human%20Resources%20Sample%20PBIX.pbix), joka on suunniteltu käytettäväksi Power BI Desktopilla.
 
 ### <a name="get-the-excel-workbook-for-this-sample"></a>Hae tämän näytteen Excel-työkirja
-Voit myös [ladata vain tietojoukon (Excel-työkirjan)](http://go.microsoft.com/fwlink/?LinkId=529780) tälle mallille. Työkirja sisältää Power View -taulukoita, joita voit tarkastella ja muokata. Raakatiedot saa näkyviin valitsemalla **Power Pivot > Hallinta**.
+
+Jos haluat perehtyä tämän mallin tietolähteeseen, se on saatavana myös [Excel-työkirjana](http://go.microsoft.com/fwlink/?LinkId=529780). Työkirja sisältää Power View -taulukoita, joita voit tarkastella ja muokata. Saat raakatiedot näkyviin ottamalla käyttöön Tietojen analysointi -apuohjelmat ja valitsemalla sitten **Power Pivot > Hallinta**. Voit ottaa Power View- ja Power Pivot -apuohjelmat käyttöön [tutustumalla Excelin sisältämien Excel-mallien](sample-datasets.md#optional-take-a-look-at-the-excel-samples-from-inside-excel-itself) lisätietoihin.
 
 ## <a name="new-hires"></a>Uudet palkkaukset
 Tutustutaan ensin uusiin palkkauksiin.
 
-1. Työtilalla valitse **Koontinäytöt**-välilehti ja avaa Henkilöstöhallinto-koontinäyttö.
-2. Koontinäytöllä valitse **Uusien palkkausten määrä, uusien palkkausten määrä samana aikana viime vuonna, aktiivisten muutos vuodesta toiseen** **Kuukauden mukaan** -ruutu.  
-   ![](media/sample-human-resources/hr2.png)  
+1. Valitse työtilassa **Koontinäytöt**-välilehti ja avaa **Henkilöstöhallintomalli**-koontinäyttö.
+2. Valitse koontinäytössä **Uusien palkkausten määrä, uusien palkkausten määrä samana aikana viime vuonna, aktiivisten muutos vuodesta toiseen % kuukauden mukaan** -ruutu.  
 
-   Henkilöstöhallintomalli-raportin **Uuden palkkaukset** -sivu avautuu.  
+   ![Uusien palkkausten määrä -ruutu](media/sample-human-resources/hr2.png)  
 
-   ![](media/sample-human-resources/hr3.png)
+   Henkilöstöhallintomalli-raportin **Uudet palkkaukset** -sivu avautuu.  
 
-Huomaa seuraava:
+   ![Uudet palkkaukset -sivu](media/sample-human-resources/hr3.png)
 
-* **Uusien palkkausten määrä, uusien palkkausten määrä samana aikana viime vuonna, aktiivisten muutos vuodesta toiseen kuukauden mukaan** -yhdistelmäkaavio näyttää, että olemme palkanneet enemmän ihmisiä joka kuukausi tänä vuonna viime vuoteen verrattuna sekä huomattavasti enemmän ihmisiä joinakin kuukausina.
-* Yhdistelmäkaaviossa **Uusien palkkausten määrä ja aktiivisten työntekijöiden määrä alueen ja etnisen taustan mukaan** voidaan huomata, että olemme palkanneet vähemmän ihmisiä **Itä**-alueella.
-* **Uusien palkkausten vuosivarianssi ikäryhmän mukaan** -vesiputouskaavio näyttää, että palkkaamme pääasiassa nuorempia henkilöitä. Tämä voi johtua siitä, että työt ovat pääasiassa osa-aikaisia.
-* **Uusien palkkausten määrä sukupuolen mukaan** -ympyräkaavio näyttää melko tasaiselta.
+3. Katso seuraavia kiinnostavia kohteita:
 
-Löydätkö enemmän tietoa; esimerkiksi alueen, jolla sukupuolijakauma ei ole tasainen? Valitse eri ikäryhmiä ja sukupuolia kaavioissa iän, sukupuolen, alueen ja etisen taustan välisten suhteiden löytämiseksi.
+    * **Uusien palkkausten määrä, uusien palkkausten määrä samana aikana viime vuonna, aktiivisten muutos vuodesta toiseen % kuukauden mukaan** -yhdistelmäkaavio näyttää, että olemme palkanneet enemmän ihmisiä joka kuukausi tänä vuonna viime vuoteen verrattuna sekä huomattavasti enemmän ihmisiä joinakin kuukausina.
+    * Yhdistelmäkaaviossa **Uusien palkkausten määrä ja aktiivisten työntekijöiden määrä alueen ja etnisen taustan mukaan** voidaan huomata, että olemme palkanneet vähemmän ihmisiä **Itä**-alueella.
+    * **Uusien palkkausten vuosivarianssi ikäryhmän mukaan** -vesiputouskaavio näyttää, että palkkaamme pääasiassa nuorempia henkilöitä. Tämä trendi voi johtua siitä, että työt ovat pääasiassa osa-aikaisia.
+    * **Uusien palkkausten määrä sukupuolen mukaan** -ympyräkaavio näyttää melko tasaiselta.
 
-Valitsemalla koontinäytön nimen yläreunan siirtymispalkista voit palata koontinäyttöön.
+    Löydätkö enemmän merkityksellistä tietoa? Esimerkiksi alueen, jolla sukupuolijakauma ei ole tasainen. 
 
-![](media/sample-human-resources/power-bi-breadcrumbs.png)
+4. Valitse eri ikäryhmiä ja sukupuolia kaavioissa iän, sukupuolen, alueen ja etisen taustan välisten suhteiden löytämiseksi.
 
-## <a name="compare-current-active-and-former-employees"></a>Vertaa nykyisiä aktiivisia ja entisiä työntekijöitä
+5. Valitse **Henkilöstöhallintomalli** yläreunan siirtymispalkista koontinäyttöön palaamiseksi.
+
+   ![Palaa koontinäyttöön](media/sample-human-resources/power-bi-breadcrumbs.png)
+
+## <a name="compare-currently-active-and-former-employees"></a>Vertaa nykyisiä aktiivisia ja entisiä työntekijöitä
 Tutustutaan nykyisten aktiivisten työntekijöiden tietoihin sekä niiden työntekijöiden tietoihin, jotka eivät enää työskentele yrityksessä.
 
-Koontinäytössä valitse **Aktiivisten työntekijöiden määrä ikäryhmän mukaan** -ruutu.  
-![](media/sample-human-resources/pbi_hr_sample_activepie.png)
+1. Koontinäytössä valitse **Aktiivisten työntekijöiden määrä ikäryhmän mukaan** -ruutu.
 
-Henkilöstöhallintomalli-raportin **Aktiiviset työntekijät verrattuna irtisanoutumisiin** -sivu avautuu.  
-![](media/sample-human-resources/hr5.png)
+   ![Aktiivisten työntekijöiden määrä iän mukaan -ruutu](media/sample-human-resources/pbi_hr_sample_activepie.png)
 
-**Kiinnostuksen kohteet**:
+   Henkilöstöhallintomalli-raportin **Aktiiviset työntekijät verrattuna irtisanoutumisiin** -sivu avautuu.  
 
-* Yhdistelmäkaaviot vasemmalla osoittavat muutoksen vuodesta toiseen aktiivisille työntekijöille ja irtisanoutuneille. Meillä on enemmän aktiivisia työntekijöitä tänä vuonna nopean palkkaamistahdin vuoksi, mutta myös enemmän irtisanoutuneita kuin viime vuonna.
-* Elokuussa meillä oli enemmän irtisanoutuneita verrattuna muihin kuukausiin. Valitse eri ikäryhmiä, sukupuolia tai alueita nähdäksesi, löytyykö tiedoista poikkeavia arvoja.
-* Kun katsomme ympyräkaavioita, voimme huomata, että aktiivisten työntekijöiden sukupuoli- ja ikäryhmäjakauma on melko tasainen. Valitse eri ikäryhmät nähdäksesi sukupuolijakauman erot iän perusteella. Onko sukupuolijakauma tasainen kaikissa ikäryhmissä?
+   ![Aktiiviset työntekijät verrattuna Irtisanoutumiset-sivu](media/sample-human-resources/hr5.png)
+
+ 2. Katso seuraavia kiinnostavia kohteita:
+
+    * Kaksi yhdistelmäkaaviota vasemmalla osoittavat muutoksen vuodesta toiseen aktiivisille työntekijöille ja irtisanoutuneille. Meillä on enemmän aktiivisia työntekijöitä tänä vuonna nopean palkkaamistahdin vuoksi, mutta myös enemmän irtisanoutuneita kuin viime vuonna.
+    * Elokuussa meillä oli enemmän irtisanoutuneita verrattuna muihin kuukausiin. Valitse eri ikäryhmiä, sukupuolia tai alueita nähdäksesi, löytyykö tiedoista poikkeavia arvoja.
+    * Kun katsomme ympyräkaavioita, voimme huomata, että aktiivisten työntekijöidemme sukupuoli- ja ikäryhmäjakauma on tasainen. Valitse eri ikäryhmät nähdäksesi sukupuolijakauman erot iän mukaan. Onko sukupuolijakauma tasainen kaikissa ikäryhmissä?
 
 ## <a name="reasons-for-separation"></a>Irtisanoutumisen syyt
-Tutustutaan raporttiin muokkausnäkymässä. Valitse **Muokkaa raporttia** vasemmassa yläkulmassa.
+Tutustutaan raporttiin muokkausnäkymässä. Voit muuttaa ympyräkaavioita näyttämään työntekijän irtisanoutumistiedot aktiivisten työntekijöiden tietojen sijasta.
 
-Muuta ympyräkaavioita siten, että ne näyttävät irtisanoutuneiden tiedot aktiivisten sijaan.
+1. Valitse **Muokkaa raporttia** vasemmassa yläkulmassa.
 
-1. Valitse **Aktiivisten työntekijöiden määrä ikäryhmän mukaan** -ympyräkaavio.
-2. **Kentät**-kohdassa laajenna Työntekijät-taulukkoa **Työntekijät**-kohdan vieressä olevan nuolen avulla. Poista kyseinen kenttä poistamalla valintaruudun valinta kohdan **Aktiivisten työntekijöiden määrä** vieressä.
-3. Valitsemalla valintaruudun kohdan **Irtisanoutumisten määrä** -vieressä Työntekijät-taulukossa voit lisätä sen **Arvot**-ruutuun kentässä.
-4. Raporttipohjalla valitse **Vapaaehtoinen**-palkki **Irtisanoutumisten määrä irtisanoutumisen syyn mukaan** -palkkikaaviossa. Tämä korostaa henkilöt, jotka lähtivät vapaaehtoisesti, raportin muissa visualisoinneissa.
-5. Napsauta Irtisanoutumisten määrä ikäryhmittäin -ympyräkaavion 50+-sektoria.
+2. Valitse **Aktiivisten työntekijöiden määrä ikäryhmän mukaan** -ympyräkaavio.
 
-   Katso Irtisanoutumiset syyn mukaan -viivakaaviota oikeassa alakulmassa. Tämä kaavio on suodatettu näyttämään vapaaehtoiset irtisanoutumiset.  
-   ![](media/sample-human-resources/pbi_hr_sample_sepsover50.png)
+3. **Kentät**-kohdassa laajenna **Työntekijät**-kohtaa **Työntekijät**-taulukon laajentamiseksi. Poista tämä kenttä poistamalla **Aktiivisten työntekijöiden määrä** -kohdan valinta.
 
-   Huomaatko 50+-ikäryhmän trendin? Vuoden loppupuolella suurempi määrä yli 50-vuotiaita työntekijöitä irtisanoutuu vapaaehtoisesti. Tämä on alue, jota kannattaisi tutkia tarkemmin suuremman tietomäärän kanssa.
-6. Voit toimia samoin myös **Aktiivisten työntekijöiden määrä sukupuolen mukaan** -ympyräkaaviossa ja tarkastella irtisanoutuneita aktiivisten työntekijöiden sijaan. Tutustu vapaaehtoisesti irtisanoutuneiden tietoihin ja katso, löydätkö muita tietoja.
-7. Palaa takaisin koontinäytötön valitsemalla **Power BI** yläreunan siirtymispalkissa. Voit joko tallentaa raporttiin tekemäsi muutokset tai jättää ne tallentamatta.
+4. Valitse **Irtisanoutumisten määrä** **Työntekijät**-taulukossa sen lisäämiseksi **Arvot**-ruutuun **Kentät**-alueella.
+
+5. Valitse raporttipohjalla **Vapaaehtoinen**-palkki **Irtisanoutumisten määrä irtisanoutumisen syyn mukaan** -palkkikaaviossa. 
+
+   Tämä palkki korostaa henkilöt, jotka lähtivät vapaaehtoisesti, raportin muissa visualisoinneissa.
+
+6. Valitse **Irtisanoutumisten määrä ikäryhmittäin** -ympyräkaavion 50+-sektori.
+
+7. Katso viivakaaviota oikeassa alakulmassa. Tämä kaavio on suodatettu näyttämään vapaaehtoiset irtisanoutumiset.  
+
+   ![Työntekijän irtisanoutumiset yli 50](media/sample-human-resources/pbi_hr_sample_sepsover50.png)
+
+   Pane merkille 50+-ikäryhmän trendi. Vuoden loppupuolella suurempi määrä yli 50-vuotiaita työntekijöitä irtisanoutui vapaaehtoisesti. Tämä trendi on alue, jota kannattaa tutkia tarkemmin suuremman tietomäärän avulla.
+
+8. Voit toimia samoin myös **Aktiivisten työntekijöiden määrä sukupuolen mukaan** -ympyräkaaviossa ja tarkastella irtisanoutuneita aktiivisten työntekijöiden sijaan. Tutustu vapaaehtoisesti irtisanoutuneiden tietoihin ja katso, löydätkö muita tietoja.
+
+9. Valitse **Henkilöstöhallintomalli** yläreunan siirtymispalkista koontinäyttöön palaamiseksi. Voit halutessasi tallentaa raporttiin tekemäsi muutokset.
 
 ## <a name="bad-hires"></a>Huonot palkkaukset
-Viimeinen tutustuttava alue ovat huonot palkkaukset. Huonoiksi palkkauksiksi määritellään työntekijät, joiden palkkaus kesti alle 60 päivää. Palkkaamme nopeasti. Palkkaammeko hyviä ehdokkaita?
+Viimeinen tutustuttava alue ovat huonot palkkaukset. Huonoiksi palkkauksiksi määritellään työntekijät, joiden palkkaus kesti alle 60 päivää. Palkkaamme nopeasti, mutta palkkaammeko hyviä ehdokkaita?
 
-1. Valitse **Huonojen palkkausten prosenttimäärä aktiivisista ikäryhmän mukaan** -koontinäyttöruutu. Raportin sivu 3, ”Huonot palkkaukset”, avautuu.
+1. Valitse **Huonojen palkkausten prosenttimäärä aktiivisista ikäryhmän mukaan** -koontinäyttöruutu. Raportti avautuu kolmannen välilehden, **Huonot palkkaukset**, kohdalla.
 
-   ![](media/sample-human-resources/hr7.png)  
-2. Valitse **Luode**-valintaruutu Alue-sektorissa vasemmalla ja **Miespuolinen**-sektori Huonojen palkkausten määrä sukupuolen mukaan -rengaskaaviossa.  Tutustu muihin kaavioihin ”Huonot palkkaukset” -sivulla. Enemmän miespuolisia huonoja palkkauksia kuin naispuolisia, ja paljon ryhmän A huonoja palkkauksia.
-   ![](media/sample-human-resources/pbi_hr_sample_badhirespage.png)  
-3. Kun tarkastelemme **Huonot palkkaukset sukupuolen mukaan** -rengaskaaviota ja napsautamme **Alue**-sektorin kohtia voimme huomata, että Itä on ainoa alue, jossa naispuolisia huonoja palkkauksia on miespuolisia enemmän.  
+   ![Huonojen palkkausten prosenttimäärä aktiivisista Ikäryhmä-ruudun mukaan](media/sample-human-resources/hr7.png)  
+2. Valitse **Luode** **Alue**-sektorissa vasemmalla ja valitse **Miespuolinen** **Huonojen palkkausten määrä sukupuolen mukaan** -rengaskaaviossa. Tutustu muihin kaavioihin **Huonot palkkaukset** -sivulla. Huomaa, että miespuolisia huonoja palkkauksia on enemmän kuin naispuolisia, ja ryhmässä A on paljon huonoja palkkauksia.
+
+   ![Luode-kohdan huonot palkkaukset](media/sample-human-resources/pbi_hr_sample_badhirespage.png)  
+
+3. Jos tarkastelet **Huonojen palkkausten määrä sukupuolen mukaan** -rengaskaaviota ja valitset eri alueet **Alue**-osittajassa, huomaat, että Itä-alue on ainoa alue, jossa naispuolisia huonoja palkkauksia on enemmän kuin miespuolisia huonoja palkkauksia.  
+
 4. Valitsemalla koontinäytön nimen yläreunan siirtymispalkista voit palata koontinäyttöön.
 
-## <a name="asking-a-question-in-the-qa-box"></a>Kysymyksen kysyminen Q&A-ruudussa
-[Q&A-kysymysruudun](power-bi-tutorial-q-and-a.md) kautta voit esittää kysymyksiä luonnollisella kielellä. Q&A tunnistaa kirjoittamasi sanat ja etsii niiden avulla vastauksen tietojoukosta.
+## <a name="ask-a-question-in-the-dashboard-qa-box"></a>Esitä kysymys koontinäytön Q&A-ruudussa
+Koontinäytön [Q&A-kysymysruudussa](power-bi-tutorial-q-and-a.md) koontinäytössä voit esittää kysymyksen tiedoista luonnollisen kielen avulla. Q&A tunnistaa kirjoittamasi sanat ja etsii niiden avulla vastauksen tietojoukosta.
 
-1. Napsauta Q&A-kysymysruutua. Voit huomata, että ennen kuin edes alat kirjoittaa, Q&A-ruutu sisältää ehdotuksia:
+1. Valitse Q&A-kysymysruutu. Huomaa, että jo ennen kuin alat kirjoittaa, Q&A näyttää ehdotuksia kysymyksen muodostamisen auttamiseksi.
 
-   ![](media/sample-human-resources/pbi_hr_sample_qabox.png)
-2. Voit valita yhden näistä ehdotuksia tai kirjoittaa: **näytä ikäryhmä, sukupuoli ja huonot palkkaukset, kun alue on Itä**.  
+   ![Q&A-ruudun ehdotukset](media/sample-human-resources/pbi_hr_sample_qabox.png)
 
-   ![](media/sample-human-resources/pbi_hr_sample_qa_answer.png)
+2. Voit valita yhden näistä ehdotuksista tai kirjoittaa: *näytä ikäryhmä, sukupuoli ja huonot palkkaukset SPLY, kun alue on Itä*.  
+
+   ![Q&A-ruudun vastaukset](media/sample-human-resources/pbi_hr_sample_qa_answer.png)
 
    Huomaa, että suurin osa naispuolisista huonoista palkkauksista on alle 30-vuotiaita.
 
-Tämä on turvallinen ympäristö kaikenlaisille kokeiluille. Voit aina jättää tekemäsi muutokset tallentamatta. Jos kuitenkin tallennat ne, voit aina siirtyä **Nouda tiedot** -kohtaan, jolloin saat mallista uuden kopion.
+Tässä ympäristössä on turvallista tehdä kokeiluja, koska voit jättää tekemäsi muutokset tallentamatta. Jos kuitenkin tallennat ne, voit aina siirtyä **Nouda tiedot** -kohtaan, jolloin saat mallista uuden kopion.
 
 ## <a name="next-steps-connect-to-your-data"></a>Seuraavat vaiheet: Yhdistä tietoihisi
-Toivomme, että tämä esittely on osoittanut, miten Power BI -koontinäytöt, Q&A ja raportit voivat tarjota uusia näkökulmia henkilöstötietoihin. Nyt sinun vuorosi – muodosta yhteys omiin tietoihisi. Power BI:n avulla voit yhdistää useita eri tietolähteitä. Lisätietoja [Power BI:n käytön aloittamisesta](service-get-started.md).  
+Toivomme, että tämä esittely on osoittanut, miten Power BI -koontinäytöt, Q&A ja raportit voivat tarjota uusia näkökulmia henkilöstötietoihin. Nyt on sinun vuorosi – muodosta yhteys omiin tietoihisi. Power BI:n avulla voit yhdistää useisiin eri tietolähteisiin. Lisätietoja on artikkelissa [Power BI -palvelun käytön aloittaminen](service-get-started.md).

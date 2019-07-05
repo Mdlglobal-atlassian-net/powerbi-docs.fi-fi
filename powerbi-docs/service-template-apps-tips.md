@@ -1,22 +1,22 @@
 ---
-title: Vihjeitä mallisovellusten luomiseen Power BI:ssä (esikatselu)
+title: Vihjeitä mallisovellusten kehittämiseen Power BI:ssä
 description: Vihjeitä, jotka liittyvät kyselyiden, tietomallien, raporttien ja koontinäyttöjen luomiseen hyviä mallisovelluksia varten
-author: maggiesMSFT
+author: teddybercovitz
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/19/2019
-ms.author: maggies
-ms.openlocfilehash: 83049a16ecd42b41375da57a5a99a374596a9846
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.date: 06/26/2019
+ms.author: tebercov
+ms.openlocfilehash: 59d581697091df68df827ec699c8999a6993daef
+ms.sourcegitcommit: 58c649ec5fd2447a0f9ca4c4d45a0e9fff2f1b6a
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65514857"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67408351"
 ---
-# <a name="tips-for-authoring-template-apps-in-power-bi-preview"></a>Vihjeitä mallisovellusten luomiseen Power BI:ssä (esikatselu)
+# <a name="tips-for-authoring-template-apps-in-power-bi"></a>Vihjeitä mallisovellusten kehittämiseen Power BI:ssä
 
 Kun [kehität mallisovellustasi](service-template-apps-create.md) Power BI:ssä, sinun tulee hallita myös työtilan luonnin, testauksen ja tuotannon logistiikka. Lisäksi sinun tulee luonnollisesti luoda raportti ja koontinäyttö. Luontiprosessin voi jakaa neljään pääosioon. Näiden osioiden avulla voit luoda parhaan mahdollisen mallisovelluksen:
 
@@ -24,7 +24,7 @@ Kun [kehität mallisovellustasi](service-template-apps-create.md) Power BI:ssä,
 * **Tietomallin** avulla voit luoda [suhteita](desktop-create-and-manage-relationships.md), [mittareita](desktop-measures.md) ja Q&A-parannuksia.  
 * **[Raportin sivut](desktop-report-view.md)** sisältävät visualisointeja ja suodattimia, jotka antavat merkityksellisiä tietoja.  
 * **[Koontinäytöt](consumer/end-user-dashboards.md)** ja [ruudut](service-dashboard-create.md) antavat yleiskatsauksen mallisovellukseen sisältyvistä merkityksellisistä tiedoista.
-* Mallitietojen avulla sovelluksesi löydettävä heti asennuksen jälkeen.
+* Mallitietojen avulla löydät sovelluksen heti asennuksen jälkeen.
 
 Nämä voivat olla tuttuja nykyisten Power BI -ominaisuuksien kautta. Kun luot mallisovellusta, kuhunkin osioon liittyy muitakin huomioon otettavia seikkoja. Lisätietoja on seuraavissa osissa.
 
@@ -36,12 +36,10 @@ Power BI Desktopissa luotuja kyselyitä käytetään mallisovelluksissa tietolä
 ### <a name="connect-to-your-api"></a>Ohjelmointirajapintaan yhdistäminen
 Aloita kyselyiden rakentaminen muodostamalla yhteys Power BI Desktopista ohjelmointirajapintaasi.
 
-Voit käyttää ohjelmointirajapinnan yhdistämiseen tietoyhdistimiä, jotka ovat valmiina Power BI Desktop -versiossa. Voit käyttää verkkotietojen yhdistintä (Hae tiedot -> Verkko) Rest-ohjelmointirajapinnan yhdistämiseen tai OData-yhdistintä (Hae tiedot -> OData-syöte) OData-syötteen yhdistämiseen. Nämä yhdistimet toimivat suoraan vain, jos ohjelmointirajapintasi tukee perustodennusta.
+Voit käyttää ohjelmointirajapintaan yhdistämiseen tietoyhdistimiä, jotka ovat käytettävissä Power BI Desktopissa. Voit käyttää verkkotietojen yhdistintä (Hae tiedot -> Verkko) Rest-ohjelmointirajapinnan yhdistämiseen tai OData-yhdistintä (Hae tiedot -> OData-syöte) OData-syötteen yhdistämiseen.
 
 > [!NOTE]
-> Jos ohjelmointirajapintasi käyttää mitä tahansa muuta todennustyyppiä, kuten OAuth 2.0 -todennusta tai verkkopalvelujen ohjelmointirajapinnan avainta, sinun on kehitettävä oma tietoyhdistin, jotta Power BI Desktop voi muodostaa yhteyden ohjelmointirajapintaasi ja todentaa sen. Mukautetun liittimen on lisättävä PBI-palveluun, jotta se voi käyttää mallia sovelluksen asennusohjelma. <br> Lisätietoja oman tietoyhdistimen kehittämisestä mallisovellustasi varten saat [tietoyhdistimien ohjeista](https://aka.ms/DataConnectors). 
->
->
+> Tällä hetkellä mallisovellukset eivät tue mukautettuja yhdistimiä, joten on suositeltavaa tutustua Odatafeed Auth 2.0:iin korjauskeinona joitakin yhteyskäyttötapauksia varten tai lähettää yhdistin sertifiointia varten. Lisätietoja yhdistimen kehittämisestä ja sertifioinnista on [tietoyhdistimien ohjeissa](https://aka.ms/DataConnectors).
 
 ### <a name="consider-the-source"></a>Huomioi lähde
 Kyselyt määrittelevät tiedot, jotka sisällytetään tietomalliin. Järjestelmäsi koosta riippuen näissä kyselyissä on myös oltava suodattimia, jotta koko on asiakkaittesi kannalta hallittavissa ja sopii liiketoimintaskenaarioosi.
@@ -101,7 +99,7 @@ Raporttisivut antavat lisää merkityksellisiä tietoja mallisovellukseesi sisä
 
 <a name="dashboard"></a>
 
-## <a name="dashboards"></a>Koontinäytöt
+## <a name="dashboards"></a>koontinäytöt
 Koontinäyttö on mallisovelluksesi tärkein vuorovaikutuspiste asiakkaittesi kannalta. Siinä tulisi olla yleiskatsaus paketin sisällöstä ja erityisesti liiketoimintaskenaariosi tärkeistä metriikoista.
 
 Voit luoda mallisovelluksellesi koontinäytön lataamalla PBIX-tiedoston kohdassa Hae tiedot > Tiedostot tai julkaisemalla sen suoraan Power BI Desktopin kautta.
@@ -116,40 +114,40 @@ Voit luoda mallisovelluksellesi koontinäytön lataamalla PBIX-tiedoston kohdass
 * Harkitse koontinäytön sisällön ryhmittelyä eri skenaarioita varten joko pysty- tai vaakasuunnassa.  
 
 ## <a name="sample-data"></a>Mallitiedot
-Mallin sovelluksia sovelluksen luomisen vaiheessa osana rivittyy välimuistitiedot osana sovelluksen työtilassa:
+Mallisovellukset lisäävät sovelluksen luomisvaiheen osana välimuistitiedot työtilaan osana sovellusta:
 
-* Avulla voit ymmärtää toimintoja ja sovelluksen tarkoitus ennen kuin muodostat tiedot.
-* Luo käyttökokemus, joka määrittää asennusohjelma voit tutustua tarkemmin sovelluksen ominaisuuksia, mikä johtaa yhdistämistä sovelluksen tietojoukon.
+* Niiden avulla asentaja voi ymmärtää toimintoa ja sovelluksen tarkoituksen ennen tietojen yhdistämistä.
+* Ne luovat kokemuksen, jonka ansiosta asentaja tutustuu tarkemmin sovelluksen ominaisuuksiin ja sovelluksen tietojoukon yhdistämiseen.
 
-On suositeltavaa ottaa laatu mallitietoja, ennen kuin luot sovelluksen. Varmista, että sovelluksen raportin ja koontinäyttöjä täytetään tiedoilla.
+Suosittelemme hankkimaan laadukkaita mallitietoja ennen sovelluksen luomista. Varmista, että sovelluksen raportti ja koontinäytöt täytetään tiedoilla.
 
-## <a name="publishing-on-appsource"></a>Julkaiseminen appsourcessa
-Mallin sovellukset voidaan julkaista appsourcessa, seuraavien ohjeiden mukaisesti ennen sovelluksesi appsourceen lähettämistä:
+## <a name="publishing-on-appsource"></a>Julkaisu AppSourceen
+Mallisovellukset voidaan julkaista AppSourcessa. Noudata seuraavia ohjeita ennen sovelluksen lähettämistä AppSourceen:
 
-* Varmista, että luot mallin sovelluksen käyttävät mallitietoja, jotka auttavat ymmärtämään sovelluksen tehdä asennusohjelma (tyhjä raportin ja koontinäytön eivät ole hyväksytyt).
-Mallin sovellukset tukevat tiedot vain Mallisovelluksia, varmista, että staattinen app-valintaruutu. [Lue lisää](https://docs.microsoft.com/power-bi/service-template-apps-create#create-the-test-template-app)
-* Ole vahvistus-tiimin seurata, joka sisältää tunnistetiedot ja parametreja, jotka tarvitaan yhteyden muodostamiseen tietojen Ohje.
-* Sovelluksen on oltava sovelluksen kuvake Power BI-ja CPP tarjous. [Lue lisää](https://docs.microsoft.com/power-bi/service-template-apps-create#create-the-test-template-app)
+* Varmista, että luot mallisovelluksen käyttämällä mielenkiintoisia mallitietoja, jotka auttavat asentajaa ymmärtämään sovelluksen toimintoja (tyhjää raporttia ja koontinäyttöä ei hyväksytä).
+Mallisovellukset tukevat mallitietoja vain sovelluksissa, joten varmista, että tarkistat staattisen sovelluksen valintaruudun. [Lue lisää](https://docs.microsoft.com/power-bi/service-template-apps-create#create-the-test-template-app)
+* Ohjeista validointitiimiä ja kerro, mitä tunnistetietoja ja parametreja vaaditaan tietoihin yhdistämiseen.
+* Sovelluksen on sisällettävä sovelluskuvake Power BI:ssä ja CPP-tarjouksessa. [Lue lisää](https://docs.microsoft.com/power-bi/service-template-apps-create#create-the-test-template-app)
 * Määritetty aloitussivu. [Lue lisää](https://docs.microsoft.com/power-bi/service-template-apps-create#create-the-test-template-app)
-* Varmista, että dokumentaatiosta seuraamalla [Power BI-sovellus tarjouksen](https://docs.microsoft.com/azure/marketplace/cloud-partner-portal/power-bi/cpp-power-bi-offer).
-* Koontinäyttö on osa sovellukseesi, varmista, että se ei ole tyhjä.
-* Asenna sovellus app-linkin avulla ennen sen lähettämistä, varmista, että voit muodostaa tietojoukon ja sovelluksen käyttökokemus on suunniteltu voit.
-* Ennen lataamista bpix mallin sovelluksen työtilaan, varmista, että lataamisen tarpeettomat yhteyksiä.
-* Noudata Power BI [parhaat suunnittelukäytännöt raporttien ja visualisointien](https://docs.microsoft.com/power-bi/visuals/power-bi-visualization-best-practices) saavuttamiseksi suurin vaikutus käyttäjät ja hyväksytään jaettavaksi.
+* Muista noudattaa [Power BI:n sovelluksen tarjouksen](https://docs.microsoft.com/azure/marketplace/cloud-partner-portal/power-bi/cpp-power-bi-offer) ohjeita.
+* Jos koontinäyttö on osa sovellustasi, varmista, että se ei ole tyhjä.
+* Asenna sovellus sovelluslinkin avulla ennen sen lähettämistä, ja varmista, että voit yhdistää tietojoukon ja sovelluskokemuksen suunnitelmien mukaan.
+* Varmista ennen bpix-tiedoston lataamista mallisovelluksen työtilaan, ettet lataa mitään tarpeettomia yhteyksiä.
+* Noudata Power BI:n [parhaita suunnittelukäytäntöjä raporteille ja visualisoinneille](https://docs.microsoft.com/power-bi/visuals/power-bi-visualization-best-practices), jotta vaikutat optimaalisesti käyttäjiisi ja saat hyväksynnän jakelulle.
 
 ## <a name="known-limitations"></a>Tunnetut rajoitukset
 
 | Ominaisuus | Tunnettu rajoitus |
 |---------|---------|
 |Sisältö:  Tietojoukot   | Tarkalleen yhden tietojoukon tulee olla käytössä. Vain Power BI Desktopissa luodut tietojoukot (.pbix-tiedostot) sallitaan. <br>Ei tueta: Tietojoukkoja, jotka ovat peräisin muista mallisovelluksista, työtilojen välisiä tietojoukkoja, sivuttuja raportteja (.rdl-tiedostot), Excel-työkirjoja |
-|Sisältö: koontinäytöt | Reaaliaikaisia ruutuja ei sallita (toisin sanoen ei tue push- tai suoratoistettaviin tietojoukkoihin) |
+|Sisältö: Koontinäytöt | Reaaliaikaisia ruutuja ei sallita (toisin sanoen push-ilmoituksia tai tietojoukkojen suoratoistoa ei tueta) |
 |Sisältö: Tietovuot | Ei tueta: Tietovuot |
 |Tiedostojen sisällöt | Vain PBIX-tiedostot sallitaan. <br>Ei tueta: .rdl-tiedostot (sivutetut raportit), Excel-työkirjat   |
-| Tietolähteet | Pilvipohjaista ajoitettua tietojen päivittämistä tukevat tietolähteet sallitaan. <br>Ei tueta: <li> DirectQuery</li><li>Reaaliaikaiset yhteydet (Azure AS ei käy)</li> <li>Paikalliset tietolähteet (henkilökohtaisen yhdyskäytävän ja yritysyhdyskäytävän ei tueta)</li> <li>Reaaliaikainen (push-tietojoukko ei tue)</li> <li>Yhdistelmämallit</li></ul> |
+| Tietolähteet | Pilvipohjaista ajoitettua tietojen päivittämistä tukevat tietolähteet sallitaan. <br>Ei tueta: <li> DirectQuery</li><li>Reaaliaikaiset yhteydet (Azure AS ei käy)</li> <li>Paikalliset tietolähteet (henkilökohtaiset yhdyskäytävät ja yritysyhdyskäytävät eivät ole tuettuja)</li> <li>Reaaliaikainen (push-tietojoukkoa ei tueta)</li> <li>Yhdistelmämallit</li></ul> |
 | Tietojoukko: työtilojen välinen | Työtilojen välisiä tietojoukkoja ei sallita  |
 | Kyselyparametrit | Ei tueta: Tyyppiä ”Any” tai ”Binary” olevat parametrit estävät tietojoukon päivitystoiminnon |
 | Mukautetut visualisoinnit | Vain julkisesti käytettävissä olevia mukautettuja visualisointeja tuetaan. [Organisaation mukautettuja visualisointeja](power-bi-custom-visuals-organization.md) ei tueta. |
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
-[Mitä Power BI -mallisovellukset ovat? (esikatselu)](service-template-apps-overview.md)
+[Mitä Power BI -mallisovellukset ovat?](service-template-apps-overview.md)

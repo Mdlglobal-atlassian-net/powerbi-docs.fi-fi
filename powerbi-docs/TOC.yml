@@ -683,9 +683,9 @@
               href: service-machine-learning-automated.md
         - name: 'Sivutetut raportit Power BI:ssä'
           items:
-            - name: Sivutetun raportin tarkastelu (esikatselu)
+            - name: Tarkastele sivutettua raporttia
               href: paginated-reports-view-power-bi-service.md
-            - name: Parametrien käsittely (esikatselu)
+            - name: Parametrien käsittely
               href: paginated-reports-view-parameters.md
             - name: Tilaaminen itselle tai muille
               href: paginated-reports-subscriptions.md

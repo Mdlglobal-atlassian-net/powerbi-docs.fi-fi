@@ -8,21 +8,21 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 12/06/2018
+ms.date: 06/26/2019
 ms.author: mihart
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 97beaa749855d29f0ac559776a99f4be851489fb
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 4f6dc7167d64385182ecbd448b6c400fa7f829df
+ms.sourcegitcommit: 58c649ec5fd2447a0f9ca4c4d45a0e9fff2f1b6a
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61048130"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67408184"
 ---
 # <a name="tips-for-asking-questions-in-power-bi-qa"></a>Vihjeitä kysymysten esittämiseen Power BI:n Q&A-toiminnolla
 ## <a name="words-and-terminology-that-qa-recognizes"></a>Q&A-toiminnon tunnistamia sanoja ja termejä
-Sivun avainsanaluettelo ei ole täydellinen.  Paras tapa nähdä, tunnistaako Power BI avainsanan, on kokeilla sen kirjoittamista kysymysruutuun.  Jos sana tai termi näkyy harmaana, Power BI ei tunnista sitä.
+Tämän sivun avainsanaluettelo ei ole tyhjentävä.  Paras tapa nähdä, tunnistaako Power BI avainsanan, on kokeilla sen kirjoittamista kysymysruutuun.  Jos sana tai termi näkyy harmaana, Power BI ei tunnista sitä.
 
-Alla olevassa luettelossa käytetään preesensiä, mutta useimmissa tapauksissa kaikki aikamuodot tunnistetaan. Esimerkki: ”is” sisältää myös muodot **are**, **was**, **were**, **will be**, **have**, **has**, **had**, **will have**, **has got**, **do**, **does**, **did**.  Ja ”lajittele” sisältää muodot **lajiteltu** ja **lajittelu**.  Power BI tunnistaa ja ottaa hakuun mukaan sanan yksikön ja monikon. 
+Alla olevassa luettelossa käytetään preesensiä, mutta useimmissa tapauksissa kaikki aikamuodot tunnistetaan. Esimerkki: ”is” sisältää myös muodot **are**, **was**, **were**, **will be**, **have**, **has**, **had**, **will have**, **has got**, **do**, **does**, **did**.  Ja ”lajittele” sisältää muodot **lajiteltu** ja **lajittelu**.  Power BI myös tunnistaa ja ottaa hakuun mukaan sanan yksikön ja monikon. 
 
 > [!NOTE]
 > Q&A-toiminto on käytettävissä myös [Microsoft Power BI -sovelluksessa iOS:lle iPad-, iPhone- ja iPod Touch -laitteissa](mobile/mobile-apps-ios-qna.md).
@@ -62,27 +62,27 @@ Alla olevassa luettelossa käytetään preesensiä, mutta useimmissa tapauksissa
 |**Alue**     |      suurempi, enemmän, isompi, yli, >, vähemmän, pienempi, harvempi, alle, <, vähintään, ei ole pienempi kuin, > =, enintään, korkeintaan, < =, välillä, alueella, alkaen, päättyen, aikaisempi, myöhäisempi, ennen, jälkeen, lähtien, aikaisemmin, myöhemmin           |
 |        |         |
 **Ajat**  |klo, kello, am, pm, keskipäivä, keskiyö, tunti, minuutti, sekunti, hh:mm:ss  |
-|  |  Esimerkkejä: klo 10, kello 23:35, 10:35:15 pm, keskipäivällä, keskiyöllä, tunti, minuutti sekunti.  |
+|  |  Esimerkkejä: klo 22.00, kello 10.35, klo 22.35:15, klo 10.00, keskipäivä, keskiyö, tunti, minuutti, sekunti.  |
 |  |  |
 |**Ylimmät N**     |     (tilaus, luokittelu): ylin, alin, suurin, pienin, ensimmäinen, viimeinen, seuraava, aikaisin, uusin, vanhin, viimeisin            |
 |        |         |
-|**Visualisointityypit**     |  kaikki Power BI:n alkuperäiset visualisointityypit.  Jos visualisointiruudussa on jokin vaihtoehto, voit sisällyttää sen kysymykseen.  Poikkeuksena ovat [Mukautetut visualisoinnit](../power-bi-custom-visuals.md), jotka olet lisännyt manuaalisesti visualisointiruutuun.  |
+|**Visualisointityypit**     |  kaikki Power BI:n alkuperäiset visualisointityypit.  Jos visualisointiruudussa on jokin vaihtoehto, voit sisällyttää sen kysymykseen.  Poikkeuksena tähän sääntöön ovat [mukautetut visualisoinnit](../power-bi-custom-visuals.md), jotka olet lisännyt manuaalisesti Visualisointi-ruutuun.  |
 |  |  Esimerkki: näytä alueet kuukauden ja kokonaismyynnin mukaan palkkikaaviona               |
 |        |         |
 |**Wh (suhde, määre)**  | milloin, missä, mikä, kuka, kenen, kuinka monta, kuinka paljon, kuinka monta kertaa, kuinka usein, määrä, numero, lukumäärä, miten pitkään, mitä                |
 
 ## <a name="qa-helps-you-phrase-the-question"></a>Q&A-toiminto auttaa kyselyn muotoilemisessa
-Q&A-toiminto pyrkii parhaansa mukaan ymmärtämään esitetyn kysymyksen ja vastaamaan siihen. Tähän pyritään usealla eri tavalla. Kaikkien vaihtoehtojen kohdalla voit hyväksyä toiminnon kokonaan, osittain tai ei ollenkaan. Kysymystä kirjoittaessasi Q&A-toiminto:
+Q&A-toiminto pyrkii parhaansa mukaan ymmärtämään esitetyn kysymyksen ja vastaamaan siihen. Se yrittää ymmärtää sitä useilla tavoilla. Kaikkien näiden lauseiden kohdalla voit hyväksyä toiminnon kokonaan, osittain tai ei ollenkaan. Kysymystä kirjoittaessasi Q&A-toiminto:
 
-* täydentää sanoja ja kysymyksiä automaattisesti. Toiminto hyödyntää eri menetelmiä, kuten tunnistettavien sanojen ja kelvollisen vastauksen palauttaneiden aiemmin esitettyjen kysymysten automaattista täydennystä. Jos tarjolla on useampi kuin yksi automaattisen täydennyksen vaihtoehto, ne esitetään avattavana luettelona.
+* täydentää sanoja ja kysymyksiä automaattisesti. Toiminto hyödyntää eri menetelmiä, kuten tunnistettavien sanojen, tallennettujen kysymysten ja kelvollisia vastauksia palauttaneiden aiemmin esitettyjen kysymysten automaattinen täydennys. Jos tarjolla on useampi kuin yksi automaattisen täydennyksen vaihtoehto, ne esitetään avattavana luettelona.
 * korjaa kirjoitusasua.
-* tarjoaa esikatselukuvan vastauksesta visualisoinnin muodossa. Visualisointi päivittyy kysymystä kirjoittaessasi ja muokatessasi (se ei odottaa Enterin painamista).
+* tarjoaa esikatselun vastauksesta visualisoinnin muodossa. Visualisointi päivittyy kysymystä kirjoittaessasi ja muokatessasi (se ei odota Enterin painamista).
 * ehdottaa vaihtoehtoisia termejä pohjalla olevasta tietojoukosta/tietojoukoista, kun siirrät osoittimen takaisin kysymysruutuun.
 * oikaisee kysymyksen pohjalla olevien tietojoukkojen tietojen perusteella. Q&A korvaa käyttämiäsi sanoja pohjalla olevasta tietojoukosta löytyvillä synonyymeillä. Lukemalla oikaisun saat selville, onko Q&A-toiminto ymmärtänyt kysymyksesi vai ei. 
 * himmentää sanoja, joita toiminto ei ymmärrä.
 
 ## <a name="dont-stop-now"></a>Älä lopeta tähän
-Kun Q&A-toiminto näyttää tulokset, jatka keskustelua! Hyödynnä visualisoinnin ja Q&A-toiminnon vuorovaikutteisia toimintoja ja saa vieläkin enemmän tietoja.
+Kun Q&A-toiminto näyttää tulokset, jatka keskustelua! Hyödynnä visualisoinnin ja Q&A-toiminnon vuorovaikutteisia toimintoja ja saat vieläkin enemmän merkityksellisiä tietoja.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 Takaisin artikkeliin [Q&A Power BI:ssä](end-user-q-and-a.md)  

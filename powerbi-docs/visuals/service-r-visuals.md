@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 02/19/2019
+ms.date: 06/24/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 587cc5b5d81ca57e809a3973c700c71a214dc045
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 0af278171a00c792e466bbd0e21a3efb5ffa8962
+ms.sourcegitcommit: 1c96b65a03ec0a0612e851dd58c363f4d56bca38
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61389505"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "67389740"
 ---
 # <a name="creating-r-visuals-in-the-power-bi-service"></a>R-visualisointien luominen Power BI -palvelussa
 Power BI -palvelu tukee R-komentosarjoilla luotujen visualisointien tarkastelemista ja käsittelemistä. R-komentosarjoilla luodut visualisoinnit, joita kutsutaan yleisesti nimellä *R-visualisoinnit*, voivat esittää kehittynyttä tietojen muotoilemista ja analytiikkaa, kuten ennusteita, hyödyntämällä R:n monipuolisia analytiikka- ja visualisointitaitoja.
@@ -64,7 +64,7 @@ Toinen esimerkki on alla olevan kuvan virhesanoma, joka tulee näkyviin, kun R-k
 ![](media/service-r-visuals/r-visuals-service_5.png)
 
 ## <a name="licensing"></a>Käyttöoikeudet
-R-visualisoinnit edellyttävät [Power BI Pro](../service-self-service-signup-for-power-bi.md) -käyttöoikeutta hahmontamiseen raporteissa, päivitykseen, suodatukseen ja ristiinsuodatukseen. Katso lisätietoja Power BI Pro -käyttöoikeuksista ja siitä, miten ne eroavat maksuttomista käyttöoikeuksista, kohdasta [Power BI Pro -sisältö – mikä se on?](../service-premium-what-is.md)
+R-visualisoinnit edellyttävät [Power BI Pro](../service-self-service-signup-for-power-bi.md) -käyttöoikeutta hahmontamiseen raporteissa, päivitykseen, suodatukseen ja ristiinsuodatukseen. Katso lisätietoja Power BI Pro -käyttöoikeuksista ja siitä, miten ne eroavat maksuttomista käyttöoikeuksista, kohdasta [Power BI Pro -sisältö – mikä se on?](../service-admin-purchasing-power-bi-pro.md)
 
 Power BI:n maksuttomat käyttäjät kuluttavat vain ruutuja, jotka on jaettu heidän kanssaan Premium-työtiloissa. Saat lisätietoja ohjeartikkelista [Power BI Pron ostaminen](../service-admin-purchasing-power-bi-pro.md).
 
@@ -73,7 +73,7 @@ Seuraavassa taulukossa on kuvattu R-visualisoinnin ominaisuudet käyttöoikeuksi
 
 |  |R-visualisointien luominen Power BI Desktopissa  | Luo PBI-palveluraportteja R-visualisointien avulla |Näytä R-visualisoinnit raporteissa  | Näytä R-ruudut koontinäytöissä |
 |---------|---------|---------|---------|--------|
-|**Vieras** (Power BI Embedded)     |  Ei soveltuva|  Ei soveltuva       | Ei tueta  | Ei soveltuva |
+|**Vieras** (Power BI Embedded)     |  Tuetaan|  Ei tueta      | Tuetaan vain Premium/Azure-kapasiteetissa  | Tuetaan vain Premium/Azure-kapasiteetissa |
 |**Muun kuin hallittu vuokraaja** (toimialue ei ole vahvistettu) | Tuetaan | Ei tueta |  Ei tueta |Tuetaan (B2B-skenaario) |
 |**Hallittu vuokraaja** maksuttomalla käyttöoikeudella    |  Tuetaan       |  Ei tueta       |    Tuetaan vain Premium-kapasiteetissa    | Tuetaan |
 **Hallittu vuokraaja** Pro-käyttöoikeudella     |   Tuetaan      | Tuetaan      | Tuetaan    |Tuetaan|

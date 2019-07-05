@@ -1,6 +1,6 @@
 ---
-title: Taulukkovisualisoinnit Power BI -raporteissa ja raporttinäkymissä
-description: Opetusohjelma siitä, miten Power BI -raporttien ja raporttinäkymien taulukkovisualisointien kanssa työskennellään ja miten sarakkeiden leveyksiä muutetaan.
+title: Taulukkovisualisoinnit Power BI -raporteissa ja -koontinäytöissä
+description: Opetusohjelma siitä, miten Power BI -raporttien ja -koontinäyttöjen taulukkovisualisointien kanssa työskennellään ja miten sarakkeiden leveyksiä muutetaan.
 author: mihart
 manager: kvivek
 ms.reviewer: ''
@@ -8,120 +8,169 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 10/24/2018
+ms.date: 06/24/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 0106c59c5fc4d122205a144d85a6e7f643c5a429
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: a0525d448d5337c2c1613d8bc8f6d332a05b13e3
+ms.sourcegitcommit: 58c649ec5fd2447a0f9ca4c4d45a0e9fff2f1b6a
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61279852"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67409206"
 ---
-# <a name="tables-in-power-bi-reports-and-dashboards"></a>Taulukot Power BI -raporteissa ja raporttinäkymissä
-Taulukko on ruudukko, joka sisältää tietoja järjestettynä loogiseen sarjaan rivejä ja sarakkeita. Se voi sisältää myös otsikkoja ja summarivin. Taulukot toimivat hyvin kvantitatiivisessa vertailussa, jossa tarkastellaan moni arvoja tietystä kategoriasta. Esimerkiksi tässä taulukossa näkyvät **luokan** viisi eri mittaria.
+# <a name="tables-in-power-bi-reports-and-dashboards"></a>Taulukot Power BI -raporteissa ja -koontinäytöissä
 
-![](media/power-bi-visualization-tables/table.png)
+Taulukko on ruudukko, joka sisältää tietoja järjestettynä loogiseen sarjaan rivejä ja sarakkeita. Se voi sisältää myös otsikkoja ja summarivin. Taulukot toimivat hyvin kvantitatiivisessa vertailussa, jossa tarkastellaan yhden luokan monia arvoja. Esimerkiksi tässä taulukossa näytetään **luokan** viisi eri mittaria.
 
-Voit luoda taulukoita raporteissa ja ristiinkorostaa taulukon elementtejä muiden samalla raporttisivulla olevien visualisointien kanssa.  Lisäksi voit valita rivejä, sarakkeita ja jopa yksittäisiä soluja ristiinkorostettavaksi. Yksittäisten ja useiden solujen valintoja voi kopioida ja liittää muihin sovelluksiin.
+![Näyttökuva taulukosta, jossa näytetään luokan viisi eri mittaria.](media/power-bi-visualization-tables/table.png)
+
+Voit luoda taulukoita raporteissa ja ristiinkorostaa taulukon elementtejä muiden samalla raporttisivulla olevien visualisointien kanssa. Voit valita rivejä, sarakkeita ja jopa yksittäisiä soluja ristiinkorostettavaksi. Voit myös kopioida ja liittää yksittäisten ja useiden solujen valintoja muihin sovelluksiin.
 
 ## <a name="when-to-use-a-table"></a>Milloin taulukkoa kannattaa käyttää?
+
 Taulukko on hyvä vaihtoehto:
 
-* yksityiskohtaisen tiedon ja tarkkojen arvojen selaamiseen ja vertailemiseen (visuaalisten esitysmuotojen sijaan).
+* yksityiskohtaisen tiedon ja tarkkojen arvojen selaamiseen ja vertailemiseen (visuaalisten esitysten sijaan).
+
 * tietojen esittämiseen taulukkomuodossa.
-* numeeristen tietojen luokiteltuun esittämiseen.   
+
+* numeeristen tietojen luokiteltuun esittämiseen.
 
 > [!NOTE]
-> Jos taulukossa on liikaa arvoja, harkitse sen muuntamista matriisiksi ja/tai alirakenteen käyttämistä. Taulukko näyttää enintään 3 500 arvopistettä.
+> Jos taulukossa on liikaa arvoja, harkitse sen muuntamista matriisiksi ja/tai alaspäin porauksen käyttämistä. Taulukko näyttää enintään 3 500 arvopistettä.
 
 ## <a name="prerequisites"></a>Edellytykset
-- Power BI -palvelu tai Power BI Desktop
-- Jälleenmyyntianalyysimalli
+
+* Power BI -palvelu tai Power BI Desktop
+
+* Jälleenmyyntianalyysimallin raportti
+
+## <a name="get-the-retail-analysis-sample-report"></a>Jälleenmyyntianalyysimallin raportin hankkiminen
+
+Näissä ohjeissa käytetään jälleenmyyntianalyysimallia. Visualisoinnin luominen edellyttää tietojoukon ja raportin muokkausoikeuksia. Kaikeksi onneksi Power BI -mallit ovat kaikki muokattavissa. Jos joku jakaa raportin kanssasi, et voi luoda visualisointeja raporteissa. Voit seurata mukana hankkimalla [jälleenmyyntianalyysimallin raportin](../sample-datasets.md).
+
+Kun olet hankkinut **jälleenmyyntianalyysimallin** tietojoukon, voit aloittaa.
 
 ## <a name="create-a-table"></a>Luo taulukko
-Luomme yllä esitetyn taulukon, jossa esitetään myyntiarvot nimikeluokan mukaisesti. Kirjaudu Power BI -palveluun (ei Desktopiin), jotta voit seurata ohjeita. Valitse **Nouda tiedot \> Mallit \> Jälleenmyyntianalyysimalli > Yhdistä** ja valitse **Koontinäyttö**. Visualisoinnin luominen edellyttää tietojoukon ja raportin muokkausoikeuksia. Kaikeksi onneksi Power BI -mallit ovat kaikki muokattavissa. Jos raportti on jaettu kanssasi, et pysty luomaan visualisointeja raporteissa.
 
-1. Valitse vasemmasta siirtymisruudusta **Työtilat > Oma työtila**.    
-2. Valitse Tietojoukot-välilehti ja vieritä alas juuri lisäämäsi Jälleenmyyntianalyysimallin tietojoukkoon.  Valitse **Raportin luominen** -kuvake.
+Luot artikkelin alussa kuvatun taulukon, jossa esitetään myyntiarvot nimikeluokan mukaisesti.
 
-    ![raporttikuvakkeen osoittaminen](media/power-bi-visualization-tables/power-bi-create-report.png)
-2. Valitse raporttieditorissa **Nimike** > **luokka**.  Power BI luo automaattisesti taulukon, jossa luetellaan kaikki luokat.
+1. Valitse **Oma työtila** -kohdasta **Tietojoukot** > **Luo raportti**.
+
+    ![Näyttökuva tietojoukoista > Luo raportti.](media/power-bi-visualization-tables/power-bi-create-a-report.png)
+
+1. Valitse **Kentät**-ruudusta **Nimike** > **luokka**.
+
+    Power BI luo automaattisesti taulukon, jossa luetellaan kaikki luokat.
 
     ![luokan lisäämisen tulos](media/power-bi-visualization-tables/power-bi-table1.png)
-3. Valitse **Myynti > Keskimääräinen nimikehinta** ja **Myynti > Viime vuoden myynti** ja **Myynti > Tämän vuoden myynti** ja valitse kaikki kolme vaihtoehtoa (Arvo, Tavoite ja Tila).   
-4. Etsi Visualisoinnit-ruudussa **Arvot** ja vedä ja pudota niitä, kunnes kaavion sarakkeiden järjestys vastaa tämän sivun ensimmäistä kuvaa.  Arvojen tulee näyttää tältä.
+
+1. Valitse **Myynti > Keskimääräinen yksikköhinta** ja **Myynti > Viime vuoden myynti**
+
+1. Valitse sitten **Myynti > Tämän vuoden myynti** ja valitse kaikki kolme vaihtoehtoa: **Arvo**, **Tavoite** ja **Tila**.
+
+1. Etsi **Visualisoinnit**-ruudusta **Arvot**, ja vedä ja pudota niitä, kunnes kaavion sarakkeiden järjestys vastaa tämän sivun ensimmäistä kuvaa. **Arvot**-säilö näyttää tältä.
 
     ![Arvot](media/power-bi-visualization-tables/power-bi-table2.png)
-5. Kiinnitä taulukko koontinäytölle valitsemalla Kiinnitä-kuvake.  
 
-     ![nasta](media/power-bi-visualization-tables/pbi_pintile.png)
+1. Kiinnitä taulukko koontinäytölle valitsemalla Kiinnitä-kuvake. ![nasta](media/power-bi-visualization-tables/pbi_pintile.png) visualisoinnin oikeassa yläkulmassa.
 
 ## <a name="format-the-table"></a>Taulukon muotoileminen
-Taulukkoa voi muotoilla erittäin monella tapaa, käsittelemme niistä tässä vain muutamia. Voit oppia lisää muista muotoilutavoista avaamalla Muotoilu-ruudun (maalitelakuvake ![maalitela](media/power-bi-visualization-tables/power-bi-format.png)) ja tutkimalla.
 
-* Kokeile taulukkoruudukon muotoilemista. Tässä olemme lisänneet sinisen pystyruudukon, lisänneet riveihin tilaa, paksuntaneet ääriviivaa ja kasvattaneet hieman tekstin kokoa.
+Taulukkoa voi muotoilla monella eri tavalla. Käsittelemme tässä artikkelissa niistä vain muutamia. Hyvä tapa oppia lisää muista muotoiluvaihtoehdoista on avata **Muotoilu**-ruutu (maalirullakuvake ![maalirulla](media/power-bi-visualization-tables/power-bi-format.png)) ja tutustua niihin.
+
+* Kokeile taulukkoruudukon muotoilemista. Olet tässä lisännyt sinisen pystyruudukon, lisännyt riveihin tilaa, paksuntanut ääriviivaa ja kasvattanut tekstin kokoa.
 
     ![Ruudukkokortti](media/power-bi-visualization-tables/power-bi-table-gridnew.png)
 
     ![tulokset näyttävä taulukko](media/power-bi-visualization-tables/power-bi-table-grid3.png)
-* Vaihdoimme sarakeotsikoiden taustaväriä, lisäsimme ääriviivan ja kasvatimme tekstin kokoa. 
+
+* Vaihda sarakeotsikoiden taustaväriä, lisää ääriviiva ja kasvata tekstin kokoa.
 
     ![Sarakkeiden otsikkokortti](media/power-bi-visualization-tables/power-bi-table-column-headers.png)
 
     ![otsikoiden muotoilu taulukossa](media/power-bi-visualization-tables/power-bi-table-column2.png)
 
-* Voit myös käyttää muotoilua yksittäisissä sarakkeissa ja sarakeotsikoissa. Aloita laajentamalla **Kentän muotoilu** ja valitsemalla muotoiltava sarake avattavasta luettelosta. Kentän muotoilun avulla voit tehdä esimerkiksi seuraavia määrityksiä sarakearvojen mukaan: näyttöyksiköt, fontin väri, desimaalipaikkojen määrä, tausta, tasaus ja paljon muuta. Kun olet säätänyt asetukset, valitse, otetaanko ne käyttöön myös otsikossa ja summariveissä.
+* Voit myös käyttää muotoilua yksittäisissä sarakkeissa ja sarakeotsikoissa. Aloita laajentamalla **Kentän muotoilu** ja valitsemalla muotoiltava sarake avattavasta luettelosta. **Kentän muotoilun** avulla voit tehdä esimerkiksi seuraavia määrityksiä sarakearvojen mukaan: näyttöyksiköt, fontin väri, desimaalipaikkojen määrä, tausta, tasaus ja paljon muuta. Kun olet säätänyt asetukset, valitse, otetaanko ne käyttöön myös otsikossa ja summariveissä.
 
     ![Tämän vuoden myynti -kentän muotoilu](media/power-bi-visualization-tables/power-bi-field-formatting.png)
 
-* Hieman lisämuokkausta ja tässä on lopullinen taulukkomme. Koska muotoiluvaihtoehtoja on niin paljon, paras tapa oppia on aloittaa tavallisesta taulukosta, avata Muotoilu-ruutu ![](media/power-bi-visualization-tables/power-bi-format.png) ja aloittaa tutustuminen. 
+    ![Tämän vuoden myynti -kentän muotoilu taulukossa](media/power-bi-visualization-tables/power-bi-field-formatting-1.png)
+
+* Hieman lisämuokkausta ja tässä on lopullinen taulukkomme.
 
     ![taulukko, joka sisältää kaikki tähän asti käytetyt muotoilut](media/power-bi-visualization-tables/power-bi-table-format.png)
 
 ### <a name="conditional-formatting"></a>Ehdollinen muotoilu
-Yhdestä muotoilutyypistä käytetään nimitystä *ehdollinen muotoilu* ja sitä käytetään **arvojen** kenttiin Power BI -palvelun tai Desktopin **Visualisointi**-ruudussa. 
 
-Taulukoiden ehdollisen muotoilun avulla voit määrittää mukautettuja solujen taustavärejä ja tekstin värejä solujen arvoihin perustuen. Voit käyttää myös liukuvärejä. 
+*Ehdollinen muotoilu* on yksi muotoilutyyppi. Power BI soveltaa kenttien ehdollista muotoilua **Visualisoinnit**-ruudun **Arvot**-säilöön.
 
-1. Valitse alaspäin osoittava nuori Power BI -palvelun tai Desktopin **Visualisoinnit**-ruudussa sen **Arvon** vierestä, jota haluat muotoilla (tai napsauta kenttää hiiren kakkospainikkeella). Voit hallita kenttien ehdollista muotoilua ainoastaan **Kenttien** **Arvot**-alueella.
+Taulukoiden ehdollisen muotoilun avulla voit määrittää mukautettuja solujen taustavärejä ja tekstin värejä solujen arvoihin perustuen. Voit käyttää myös liukuvärejä.
+
+1. Valitse **Visualisoinnit**-ruudussa **Kentät**-kuvake![kentät-kuvake](media/power-bi-visualization-tables/power-bi-fields-icon.png).
+
+1. Valitse alaspäin osoittava nuoli sen **Arvot**-säilön vierestä, jota haluat muotoilla (tai napsauta kenttää hiiren kakkospainikkeella).
+
+    > [!NOTE]
+    > Voit hallita kenttien ehdollista muotoilua ainoastaan **Kenttien** **Arvot**-alueella.
 
     ![polku Taustaväriasteikkoihin](media/power-bi-visualization-tables/power-bi-conditional-formatting-background.png)
-2. Valitse **Taustaväriasteikot**. Voit valita avautuvassa valintaikkunassa värin sekä *Vähimmäis-* ja *Enimmäis*-arvot. Jos valitset **Erkautuva**-valinnan, voit määritellä myös valinnaisen *Keski*arvon.
+
+1. Valitse **Taustaväri**.
+
+1. Voit määrittää avautuvassa valintaikkunassa värin sekä **vähimmäisarvon** ja **enimmäisarvon**. Jos valitset **Erkautuva**-vaihtoehdon, voit määrittää myös valinnaisen **keskiarvon**.
 
     ![Taustaväriasteikot-ikkuna](media/power-bi-visualization-tables/power-bi-conditional-formatting-background2.png)
 
-    Käytetäänpä räätälöityä muotoilua Keskimääräisen nimikehintamme arvoihin. Valitse **Erkautuva**, lisää vähän väriä ja paina **OK**. 
+    Käytetäänpä räätälöityä muotoilua Keskimääräisen nimikehintamme arvoihin. Valitse **Erkautuva**, lisää vähän väriä ja valitse **OK**.
 
     ![erkautuvia värejä esittävä taulukko](media/power-bi-visualization-tables/power-bi-conditional-formatting-data-background.png)
-3. Lisää taulukkoon uusi kenttä, jossa on sekä positiivisia että negatiivisia arvoja.  Valitse **Myynti > Myyntivariaatio yhteensä**. 
+1. Lisää taulukkoon uusi kenttä, jossa on sekä positiivisia että negatiivisia arvoja. Valitse **Myynti > Myyntivariaatio yhteensä**.
 
     ![oikeassa reunassa näkyvä uusi kenttä](media/power-bi-visualization-tables/power-bi-conditional-formatting2.png)
-4. Valitse tietopalkin ehdollinen muotoilu painamalla **Myyntivariaatio yhteensä** -kohdan vieressä olevaa alaspäin osoittavaa nuolta ja valitsemalla **Ehdollinen muotoilu > Tietopalkit**.
+
+1. Valitse tietopalkin ehdollinen muotoilu painamalla **Myyntivariaatio yhteensä** -kohdan vieressä olevaa alaspäin osoittavaa nuolta ja valitsemalla **Ehdollinen muotoilu > Tietopalkit**.
 
     ![Tietopalkkien valintapolku](media/power-bi-visualization-tables/power-bi-conditional-formatting-data-bars.png)
-5. Määritä avautuvassa valintaikkunassa värit **positiiviselle palkille**, **negatiiviselle palkille**, lisää valinta kohtaan **Näytä vain palkki** ja tehdä muita haluamiasi muutoksia.
+
+1. Määritä avautuvassa valintaikkunassa värit **positiiviselle palkille** ja **negatiiviselle palkille**, valitse **Näytä vain palkki** -vaihtoehto ja tee kaikki muut haluamasi muutokset.
 
     ![Näytä vain palkki -valintamerkki](media/power-bi-visualization-tables/power-bi-data-bars.png)
 
-    Kun valitset **OK**, tietopalkit korvaavat taulukon numeroarvot, mikä tekee siitä helpommin luettavan.
+1. Valitse **OK**.
+
+    Tietopalkit korvaavat taulukon numeroarvot, mikä tekee siitä helpommin luettavan.
 
     ![sama taulukko, jossa viimeiseen sarakkeeseen on lisätty palkit](media/power-bi-visualization-tables/power-bi-conditional-formatting-data-bars2.png)
-6. Jos haluat poistaa ehdollisen muotoilun visualisoinnista, napsauta vain kenttää uudelleen hiiren kakkospainikkeella ja valitse **Poista ehdollinen muotoilu**.
+
+Jos haluat poistaa ehdollisen muotoilun visualisoinnista, napsauta kenttää uudelleen hiiren kakkospainikkeella ja valitse **Poista ehdollinen muotoilu**.
 
 > [!TIP]
-> Ehdollinen muotoilu on käytettävissä myös Muotoilu-ruudusta (maalirullakuvake). Valitse muokattava arvo ja aseta sitten **Väriasteikko**- tai **Tietopalkki**-arvoksi **Käytössä**, jolloin käytetään oletusasetuksia. Jos haluat mukauttaa asetuksia, valitse **Lisäasetukset**.
-> 
+> Ehdollinen muotoilu on käytettävissä myös **Muotoilu**-ruudusta. Valitse muokattava arvo ja aseta sitten **Väriasteikko**- tai **Tietopalkki**-arvoksi **Käytössä**, jolloin käytetään oletusasetuksia. Jos haluat mukauttaa asetuksia, valitse **Lisäasetukset**.
+
 ## <a name="copy-values-from-power-bi-tables-for-use-in-other-applications"></a>Arvojen kopiointi Power BI -taulukoista muissa sovelluksissa käytettäviksi
 
-Matriisissa tai taulukossa voi olla sisältöä, jota haluat käyttää muissa sovelluksissa, kuten Dynamics CRM:ssä, Excelissä tai jopa muissa Power BI -raporteissa. Power BI:ssä voit hiiren kakkospainikkeella kopioida solun tai valikoiman soluja leikepöydälle ja liittää toiseen sovellukseen.
+Matriisissa tai taulukossa voi olla sisältöä, jota haluat käyttää muissa sovelluksissa, kuten Dynamics CRM:ssä, Excelissä tai jopa muissa Power BI -raporteissa. Power BI:ssä voit hiiren kakkospainikkeella kopioida tiedot yhteen soluun tai valikoiman soluja leikepöydälle ja liittää ne toisiin sovelluksiin.
 
+Kopioi yhden solun arvo seuraavasti:
 
-* Kopioi yksittäisen solun arvo valitsemalla solu, napsauttamalla hiiren kakkospainiketta ja valitsemalla **Kopioi arvo**. Solun muotoilematon arvo on nyt leikepöydällä, josta voit liittää sen toiseen sovellukseen.
+1. Valitse kopioitava solu.
+
+1. Napsauta solua hiiren kakkospainikkeella.
+
+1. Valitse **Kopioi** > **Kopioi arvo**.
 
     ![Kopiointivalinnat](media/power-bi-visualization-tables/power-bi-copy-value.png)
 
-* Jos haluat kopioida useita soluja, valitse solualue tai useita soluja yhdessä Ctrl-näppäimen kanssa. Kopio sisältää sarakkeiden ja rivien otsikot.
+    Solun muotoilematon arvo on leikepöydällä, josta voit liittää sen toiseen sovellukseen.
+
+Kopioi useampi kuin yksi solu seuraavasti:
+
+1. Valitse solualue tai valitse **Ctrl**-näppäimellä yksi tai useampi solu.
+
+1. Napsauta hiiren kakkospainikkeella yhden valitsemasi solun sisällä.
+
+1. Valitse **Kopioi** > **Kopioi valinta**.
 
     ![Kopiointivalinnat](media/power-bi-visualization-tables/power-bi-copy-selection.png)
 
@@ -130,15 +179,17 @@ Matriisissa tai taulukossa voi olla sisältöä, jota haluat käyttää muissa s
     ![Liitä Exceliin](media/power-bi-visualization-tables/power-bi-paste-selection.png)
 
 ## <a name="adjust-the-column-width-of-a-table"></a>Taulukon sarakeleveyden muuttaminen
-Joskus Power BI katkaisee raportin tai näkymän sarakeotsikon. Nähdäksesi sarakkeen koko nimen, pidä hiirtä otsikon oikealla puolella nähdäksesi kaksoisnuolet, valitse ja vedä.
+
+Joskus Power BI katkaisee raportin tai näkymän sarakeotsikon. Voit näyttää sarakkeen koko nimen liikuttamalla hiiren osoitinta otsikon oikealla puolella nähdäksesi kaksoisnuolet, ja valitsemalla ja vetämällä.
 
 ![videolähennys sarakkeen koon muuttamisesta](media/power-bi-visualization-tables/resizetable.gif)
 
 ## <a name="considerations-and-troubleshooting"></a>Huomioon otettavat seikat ja vianmääritys
-* Sovellettaessa sarakemuotoilua voit valita vain yhden tasausvaihtoehdon saraketta kohti: automaattinen, vasen, keskitetty, oikea. Yleensä sarake sisältää vain tekstiä tai numeroita eikä niiden yhdistelmiä. Jos sarake sisältää sekä numeroita että tekstiä, **Automaattinen** tasaa tekstin vasemmalle ja numerot oikealle. Tämä käyttäytyminen tukee kieliä, jotka luetaan vasemmalta oikealle.   
+
+Sovellettaessa sarakemuotoilua voit valita vain yhden tasausvaihtoehdon saraketta kohti: **Automaattinen**, **vasen**, **keskitetty**, **oikea**. Yleensä sarake sisältää vain tekstiä tai numeroita eikä niiden yhdistelmiä. Jos sarake sisältää sekä numeroita että tekstiä, **Automaattinen** tasaa tekstin vasemmalle ja numerot oikealle. Tämä käyttäytyminen tukee kieliä, jotka luetaan vasemmalta oikealle.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
-[Puukartat Power BI:ssä](power-bi-visualization-treemaps.md)
+* [Puukartat Power BI:ssä](power-bi-visualization-treemaps.md)
 
-[Visualisointityypit Power BI:ssä](power-bi-visualization-types-for-reports-and-q-and-a.md)
+* [Visualisointityypit Power BI:ssä](power-bi-visualization-types-for-reports-and-q-and-a.md)

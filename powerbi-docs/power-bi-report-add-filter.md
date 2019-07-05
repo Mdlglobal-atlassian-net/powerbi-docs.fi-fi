@@ -1,5 +1,5 @@
 ---
-title: Suodattimen lisääminen raporttiin muokkausnäkymässä
+title: Suodattimen lisääminen Power BI - raporttiin
 description: Sivu-, visualisointi- tai raporttisuodattimen lisääminen raporttiin Power BI:ssä
 author: maggiesMSFT
 manager: kfile
@@ -7,17 +7,17 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/22/2019
+ms.date: 06/25/2019
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: 3666335394222d32bc13ce86d8d0a4ed421b5f73
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 7cd2c7acbec9b8d21aeb78cbb159df2a46b12564
+ms.sourcegitcommit: 58c649ec5fd2447a0f9ca4c4d45a0e9fff2f1b6a
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66187643"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67409779"
 ---
-# <a name="add-a-filter-to-a-report-in-editing-view"></a>Suodattimen lisääminen raporttiin muokkausnäkymässä
+# <a name="add-a-filter-to-a-report-in-power-bi"></a>Suodattimen lisääminen Power BI - raporttiin
 
 Tässä artikkelissa kerrotaan, miten voit lisätä sivu-, visualisointi-, raportti- tai porautumissuodattimen Power BI -raporttiin. Artikkelin esimerkit koskevat Power BI -palvelua. Vaiheet ovat lähes samanlaiset Power BI Desktopissa.
 
@@ -25,24 +25,26 @@ Tässä artikkelissa kerrotaan, miten voit lisätä sivu-, visualisointi-, rapor
 
 ![Uusi suodatuskokemus](media/power-bi-report-add-filter/power-bi-filter-reading.png)
 
+Power BI tarjoaa useita erilaisia suodattimia manuaalisista ja automaattisista suodattimista porautumisen suodattimiin ja läpivientikyselyjen suodattimiin. Lue lisää [erilaisista suodattimista](power-bi-report-filter-types.md).
+
 ## <a name="filters-in-editing-view-or-reading-view"></a>Lukunäkymän tai muokkausnäkymän suodattimet
 Voit käsitellä raportteja kahdessa eri näkymässä: lukunäkymässä ja muokkausnäkymässä. Käytettävissä olevat suodatusominaisuudet vaihtelevat näkymän mukaan. [Lue lisää Power BI -raporttien suodattimista ja korostamisesta](power-bi-reports-filters-and-highlighting.md).
 
 Tässä artikkelissa kerrotaan, miten voit luoda suodattimia raporttiin **muokkausnäkymässä**.  Lisätietoja lukunäkymän suodattimista on artikkelissa [Suodattimien käsitteleminen raportissa lukunäkymässä](consumer/end-user-report-filter.md).
 
-## <a name="filter-types-in-the-filters-pane"></a>Suodatintyypit Suodattimet-ruudussa
-Suodattimet-ruutu näkyy raportin piirtoalustan oikeassa reunassa sen mukaan, onko käytössä Desktop vai Power BI. Jos et näe Suodattimet-ruutua, laajenna ruutu valitsemalla oikeasta yläkulmasta >-kuvake.
-
-Suodattimia on neljää tyyppiä: **sivusuodattimet**, **visuaaliset suodattimet**, **porautumissuodattimet** ja **raporttisuodattimet**.
-
-![Suodattimet-ruutu Lukunäkymässä](media/power-bi-report-add-filter/power-bi-add-filter-reading-view.png)
-
 Koska suodattimet *pysyvät*, kun siirryt pois raportista, Power BI säilyttää suodattimet, osittajan ja muut tietojen näkymän muutokset, jotka olet tehnyt. Näin voit jatkaa siitä, mihin jäit, kun palaat raporttiin. Jos et halua suodattimen muutosten säilyvän, valitse **Palauta oletukset** ylävalikosta.
 
 ![Pysyvät suodattimet -painike](media/power-bi-report-add-filter/power-bi-reset-to-default.png)
 
+## <a name="levels-of-filters-in-the-filters-pane"></a>Suodattimien tasot Suodattimet-ruudussa
+Suodattimet-ruutu näkyy raportin piirtoalustan oikeassa reunassa sen mukaan, onko käytössä Desktop vai Power BI. Jos et näe Suodattimet-ruutua, laajenna ruutu valitsemalla oikeasta yläkulmasta >-kuvake.
+
+Voit määrittää suodattimia raportin kolmelle eri tasolle: visualisointitason, sivutason ja raporttitason suodattimet. Voit myös määrittää porautumisen suodattimia. Tässä artikkelissa selvitetään eri tasoja.
+
+![Suodattimet-ruutu Lukunäkymässä](media/power-bi-report-add-filter/power-bi-add-filter-reading-view.png)
+
 ## <a name="add-a-filter-to-a-visual"></a>Suodattimen lisääminen visualisointiin
-Voit lisätä visuaalisen tason suodatin tietyn visualisoinnin kahdella eri tavalla. 
+Voit lisätä visualisointitason suodattimen tiettyyn visualisointiin kahdella eri tavalla. 
 
 * Voit suodattaa kentän, joka on jo käytössä visualisoinnissa.
 * Vaihtoehtoisesti voit määrittää kentän, joka ei ole käytössä visualisoinnissa, ja lisätä kyseisen kentän suoraan **Visuaalisen tason suodattimet** -säilöön.
@@ -51,30 +53,29 @@ Tässä menettelyssä käytetään jälleenmyyntianalyysimallia. Voi halutessasi
 
 ### <a name="filter-the-fields-in-the-visual"></a>Visualisoinnin kenttien suodattaminen
 
-
-1. Valitse **Muokkaa raporttia** Avaa raportti muokkausnäkymässä.
+1. Avaa raportti Muokkausnäkymässä valitsemalla **Muokkaa raporttia**.
    
    ![Muokkaa raporttia -painike](media/power-bi-report-add-filter/power-bi-edit-view.png)
 
 2. Avaa Visualisoinnit- ja Suodattimet-ruutu sekä Kentät-ruutu (jos ne eivät ole jo avoinna).
    
-   ![Visualisoinnit, suodattimet ja kentät ruudut](media/power-bi-report-add-filter/power-bi-display-panes.png)
+   ![Visualisoinnit, suodattimet ja Kentät-ruudut](media/power-bi-report-add-filter/power-bi-display-panes.png)
 3. Valitse visualisointi, jotta siitä tulee aktiivinen. Kaikki visualisoinnissa käytettävät kentät näkyvät **Kentät**-ruudussa ja luetellaan lisäksi **Visuaalisen tason suodattimet** -otsikon alla olevassa **Suodattimet**-ruudussa.
    
-   ![Valitse visuaalisen tason suodattimet](media/power-bi-report-add-filter/power-bi-default-visual-filter.png)
+   ![Valitse visualisointitason suodattimet](media/power-bi-report-add-filter/power-bi-default-visual-filter.png)
 4. Tässä vaiheessa lisäämme suodattimen kenttään, joka on jo käytössä visualisoinnissa. 
    
     Vieritä alaspäin **Visuaalisen tason suodattimet** -alueelle ja laajenna suodatettava kenttä valitsemalla nuolipainike. Tässä esimerkissä suodatamme kentän **StoreNumberName** perusteella.
      
-    ![Nuoli laajentaa suodatin](media/power-bi-report-add-filter/power-bi-visual-level-filter.png) 
+    ![Nuoli laajentaa suodatinta](media/power-bi-report-add-filter/power-bi-visual-level-filter.png) 
     
     Määritä suodatusasetukseksi **Perussuodatus**, **Lisäsuodatus** tai **Ylimmät N**. Tässä esimerkissä teemme perussuodatuksen avulla haun **cha** ja valitsemme löytyvät viisi myymälää.
      
-    ![Hae Perussuodatus](media/power-bi-report-add-filter/power-bi-search-filter.png) 
+    ![Haku perussuodatuksessa](media/power-bi-report-add-filter/power-bi-search-filter.png) 
    
     Visualisointi muuttuu vastaamaan uutta suodatinta. Jos tallennat suodattimen sisältävän raportin, raporttia lukevat käyttäjät ensinnäkin näkevät visuaalisen suodattimen ja voivat lisäksi käsitellä suodatinta lukunäkymässä valitsemalla tai tyhjentämällä arvoja.
      
-    ![Suodatettu visualisoinnissa](media/power-bi-report-add-filter/power-bi-search-visual-filter-results.png)
+    ![Suodatettu visualisointi](media/power-bi-report-add-filter/power-bi-search-visual-filter-results.png)
 
 ### <a name="filter-with-a-field-thats-not-in-the-visual"></a>Suodattaminen kentällä, joka ei ole visualisoinnissa
 
@@ -82,7 +83,7 @@ Nyt lisäämme visualisointiin uuden kentän visuaalisen tason suodattimena.
    
 1. Valitse Kentät-ruudusta kenttä, jonka haluat lisätä uutena visuaalisen tason suodattimena, ja vedä se **Visuaalisen tason suodattimet** -alueelle.  Tässä esimerkissä vedämme **Aluejohtaja**-kentän **Visuaalisen tason suodattimet** -säilöön, teemme haun **an** ja valitsemme löytyvät kolme johtajaa. 
      
-    ![Lisää kenttä suodattimet-ruutu](media/power-bi-report-add-filter/power-bi-search-add-visual-filter.png)
+    ![Lisää kenttä Suodattimet-ruutuun](media/power-bi-report-add-filter/power-bi-search-add-visual-filter.png)
 
     Huomaa, että **Aluejohtaja**-kenttää *ei* lisätä itse visualisointiin. Visualisointi muodostuu Akseli-kohdan arvosta **StoreNumberName** ja Arvo-kohdan arvosta **This Year Sales**.  
      
@@ -90,22 +91,22 @@ Nyt lisäämme visualisointiin uuden kentän visuaalisen tason suodattimena.
 
     Visualisointi suodatetaan nyt niin, että siinä näkyy vain kolmen johtajan tiettyjen myymälöiden tämän vuoden myynti.
      
-    ![Suodatettu visualisoinnissa](media/power-bi-report-add-filter/power-bi-search-visual-filter-results-2.png)
+    ![Suodatettu visualisointi](media/power-bi-report-add-filter/power-bi-search-visual-filter-results-2.png)
 
     Jos tallennat suodattimen sisältävän raportin, raporttia lukevat käyttäjät voivat käsitellä **Aluejohtaja**-suodatinta lukunäkymässä valitsemalla tai tyhjentämällä arvoja.
 
 ## <a name="add-a-filter-to-an-entire-page"></a>Suodattimen lisääminen koko sivulle
 
-Voit myös lisätä sivutason suodattimen koko sivulle.
+Voit myös lisätä sivutason suodattimen koko sivun suodattamiseksi.
 
-1. Valitse **Muokkaa raporttia** Avaa raportti muokkausnäkymässä.
+1. Avaa raportti Muokkausnäkymässä valitsemalla **Muokkaa raporttia**.
    
    ![Muokkaa raporttia -painike](media/power-bi-report-add-filter/power-bi-edit-view.png)
 2. Avaa Visualisoinnit- ja Suodattimet-ruutu sekä Kentät-ruutu (jos ne eivät ole jo avoinna).
 3. Valitse Kentät-ruudusta kenttä, jonka haluat lisätä uutena sivutason suodattimena, ja vedä se **Sivutason suodattimet** -alueelle.  
 4. Valitse suodatettavat arvot ja määritä suodatusasetukseksi **Perussuodatus** tai **Lisäsuodatus**.
    
-   Sivun kaikki visualisoinnit ovat uudelleen muutoksen.
+   Kaikki sivulla olevat visualisoinnit piirretään uudelleen vastaamaan muutosta.
    
    ![Lisää suodatin ja valitse arvot](media/power-bi-report-add-filter/filterpage.gif)
 
@@ -115,7 +116,7 @@ Voit myös lisätä sivutason suodattimen koko sivulle.
 Power BI -palvelun ja Power BI Desktopin porautumisen avulla voit luoda *kohderaporttisivun*, jolla keskitytään tiettyyn entiteettiin, kuten toimittajaan, asiakkaaseen tai valmistajaan. Nyt käyttäjät voivat muilla raporttisivuilla napsauttaa hiiren kakkospainikkeella kyseisen entiteetin arvopistettä ja porautua tiettyyn entiteettiin keskittyvälle sivulle.
 
 ### <a name="create-a-drillthrough-filter"></a>Porautumissuodattimen luominen
-Seurataksesi Lataa [asiakkaan tuottavuuden mallin](sample-customer-profitability.md). Oletetaan, että haluat luoda sivun, jolla keskitytään Johtaja-liiketoiminta-alueisiin.
+Seuraa mukana lataamalla [Asiakkaan tuottavuuden malli](sample-customer-profitability.md). Oletetaan, että haluat luoda sivun, jolla keskitytään Johtaja-liiketoiminta-alueisiin.
 
 1. Avaa raportti Muokkausnäkymässä valitsemalla **Muokkaa raporttia**.
    
@@ -125,7 +126,7 @@ Seurataksesi Lataa [asiakkaan tuottavuuden mallin](sample-customer-profitability
 2. Lisää visualisointeja, jotka seuraavat tiimijohtajien liiketoiminta-alueiden avaintietoja.    
 3. Lisää porautumissuodattimiin myös **Johtaja > Johtajan nimi**.    
    
-    ![Lisää porautumissuodattimiin](media/power-bi-report-add-filter/power-bi-drillthrough-filter.png)
+    ![Lisää arvo porautumisen suodattimiin](media/power-bi-report-add-filter/power-bi-drillthrough-filter.png)
    
     Huomaa, että Power BI lisää taaksepäin osoittavan nuolen raporttisivulle.  Valitsemalla taaksepäin osoittavan nuolen käyttäjät voivat palata *alkuperäiselle* raporttisivulle eli sivulle, jolla he valitsivat porautumisen. Taaksepäin osoittava nuoli toimii vain lukunäkymässä.
    
@@ -137,18 +138,18 @@ Katsotaan, miten porautumissuodatin toimii.
 1. Aloita **Tiimin tuloskortti** -raporttisivulta.    
 2. Oletetaan, että olet Antero Mäntylä ja haluat nähdä Tiimijohtaja-raporttisivun, joka on suodatettu näyttämään vain sinun tietosi.  Avaa Porautuminen-valikkovaihtoehto napsauttamalla hiiren kakkospainikkeella vasemman yläreunan alueen kaaviosta mitä tahansa vihreää arvopistettä.
    
-    ![Aloita drillthrough-toiminto](media/power-bi-report-add-filter/power-bi-drillthrough.png)
+    ![Aloita porautumistoiminto](media/power-bi-report-add-filter/power-bi-drillthrough.png)
 3. Poraudu **Tiimijohtaja**-raporttisivulle valitsemalla **Porautuminen > Tiimijohtaja**. Sivu suodatetaan näyttämään tietoja hiiren kakkospainikkeella napsauttamastasi arvopisteestä – tässä tapauksessa Antti Mäntylästä. Vain porautumissuodattimissa oleva kenttä välitetään porautumisraporttisivulle.  
    
-    ![Valitse drillthrough-toiminto](media/power-bi-report-add-filter/power-bi-drillthrough-executive.png)
+    ![Valitse porautumistoiminto](media/power-bi-report-add-filter/power-bi-drillthrough-executive.png)
 
-## <a name="add-a-report-level-filter-to-filter-an-entire-report"></a>Lisää raporttitason suodatin koko raportti
+## <a name="add-a-report-level-filter-to-filter-an-entire-report"></a>Lisää raporttitason suodatin koko raportin suodattamiseksi
 
 1. Avaa raportti Muokkausnäkymässä valitsemalla **Muokkaa raporttia**.
    
    ![Muokkaa raporttia -painike](media/power-bi-report-add-filter/power-bi-edit-view.png)
 
-2. Avaa visualisoinnit ja suodattimet-ruutu sekä kentät-ruudussa, jos ne eivät ole jo avoinna.
+2. Avaa Visualisoinnit- ja Suodattimet-ruutu sekä Kentät-ruutu, jos ne eivät ole jo avoinna.
 3. Valitse Kentät-ruudusta kenttä, jonka haluat lisätä uutena raporttitason suodattimena, ja vedä se **Raporttitason suodattimet** -alueelle.  
 4. Valitse arvot, joiden perusteella haluat suodattaa.
 
@@ -170,9 +171,7 @@ Katsotaan, miten porautumissuodatin toimii.
 
 [Suodattimet ja korostaminen raporteissa](power-bi-reports-filters-and-highlighting.md)
 
-[Suodattimien ja korostamisen käsitteleminen raportin lukunäkymässä](consumer/end-user-reading-view.md)
-
-[Raportin visualisointien ristiinsuodatuksen ja ristiinkorostuksen muuttaminen suhteessa toisiinsa](consumer/end-user-interactions.md)
+[Erilaiset Power BI -suodattimet](power-bi-report-filter-types.md)
 
 Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
 

@@ -1,6 +1,6 @@
 ---
-title: Raporttien ja koontinäyttöjen tilaaminen itsellesi ja muille
-description: Opi tilaamaan itsellesi ja työtovereillesi sähköpostitse tilannevedoksia Power BI ‑raporteista ja ‑koontinäytöistä.
+title: Raporttien ja koontinäyttöjen tilaaminen
+description: Opi tilaamaan itsellesi sähköpostitse tilannevedoksia Power BI ‑raportista tai ‑koontinäytöstä.
 author: mihart
 ms.author: mihart
 manager: kvivek
@@ -9,16 +9,16 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 05/11/2019
+ms.date: 06/26/2019
 LocalizationGroup: Common tasks
-ms.openlocfilehash: d452b036c7890d59e27df328ae12ad7f5b3b8dbb
-ms.sourcegitcommit: 24781cdab5fbe43fc14248db636169cc54ef6721
+ms.openlocfilehash: 85976d191fba627b75f8b415acc312817d11ed34
+ms.sourcegitcommit: 58c649ec5fd2447a0f9ca4c4d45a0e9fff2f1b6a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66497956"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67408510"
 ---
-# <a name="subscribe-to-a-report-or-dashboard-in-power-bi-service"></a>Raportin tai koontinäytön tilaaminen Power BI -palvelussa 
+# <a name="subscribe-to-a-report-or-dashboard-in-the-power-bi-service"></a>Raportin tai koontinäytön tilaaminen Power BI -palvelussa 
 Ei ole koskaan ollut näin helppoa pysyä ajan tasalla tärkeimmistä koontinäytöistä ja raporteista. Kun tilaat itsellesi tärkeimmät raporttisivut ja koontinäytöt, Power BI lähettää sinulle sähköpostitse niistä tilannevedoksen. Voit määrittää, miten usein haluat Power BI:n lähettävän sähköpostia: päivittäin, viikoittain tai tietojen päivittyessä. Voit myös määrittää tietyn ajankohdan sille, milloin Power BI lähettää sähköpostit, tai voit suorittaa tämän nyt.  
 
 Sähköpostissa ja tilannevedoksessa käytetään samaa kieliasetusta kuin Power BI:ssä (katso [Power BI:ssä tuetut kielet ja maat/alueet](../supported-languages-countries-regions.md)). Jos mitään kieltä ei ole määritetty, Power BI käyttää senhetkisen selaimesi paikka-asetuksen mukaista kieltä. Jos haluat nähdä kieliasetuksesi tai muuttaa sitä, valitse hammasrataskuvake ![hammasrataskuvake](./media/end-user-subscribe/power-bi-settings-icon.png) > **Asetukset > Yleiset > Kieli**. 
@@ -29,7 +29,7 @@ Kun saat sähköpostiviestin, siinä on mukana linkki, jonka kautta voit siirty�
 
 
 ## <a name="requirements"></a>Vaatimukset
-Tilauksen **luominen** on Power BI Pro -ominaisuus.   
+Tilauksen **luominen** itsellesi edellyttää Power BI Pro -käyttöoikeutta. Käyttäjät, jotka tarkastelevat sisältöä Premium-työtilassa tai sovelluksessa, voivat myös tilata siellä sijaitsevaa sisältöä jopa ilman Power BI Pro -käyttöoikeutta. **Muille tilaamista** voi käyttää vain koontinäytön omistaja. 
 
 ## <a name="subscribe-to-a-dashboard-or-a-report-page"></a>Koontinäytön tai raporttisivun tilaaminen
 Koontinäytön ja raportin tilausprosessit ovat samankaltaiset. Samaa painiketta painamalla voit tilata Power BI -palvelun koontinäyttöjä ja raportteja.
@@ -41,17 +41,15 @@ Koontinäytön ja raportin tilausprosessit ovat samankaltaiset. Samaa painiketta
    
    ![Tilaa-kuvake](./media/end-user-subscribe/power-bi-subscribe-icon.png)
 
-   ![Tilausikkuna](./media/end-user-subscribe/power-bi-emails-newer.png)
+   ![Tilausikkuna](./media/end-user-subscribe/power-bi-emails-newest.png)
     
     Vasemmalla olevassa näytössä näet, milloin olet koontinäytössä. Valitse siinä **Tilaa**. Oikealla olevassa näytössä näet, milloin olet raporttisivulla. Valitse siinä **Tilaa**. Voit tilata useamman kuin yhden raportin sivun valitsemalla **Lisää toinen tilaus** ja valitsemalla toisen sivun. 
 
 4. Voit ottaa tilauksen käyttöön tai poistaa sen käytöstä keltaisella liukusäätimellä.  Liukusäätimen asettaminen Poissa käytöstä -asentoon ei poista itse tilausta. Jos haluat poistaa tilauksen, valitse roskakorikuvake.
 
-4. Sähköpostiosoitteesi lisätään automaattisesti **Tilaa**-kenttään. Jos haluat tilata organisaatiosi muille käyttäjille, lisää tässä myös heidän sähköpostiosoitteensa. 
+5. Halutessasi voit lisätä aiheen ja sähköpostiviestin tiedot. 
 
-5. Voit myös täyttää sähköpostiviestin tiedot. 
-
-5. Valitse tilauksesi **tiheys**.  Voit valita Päivittäin, Viikoittain tai Tietojen päivittämisen jälkeen (päivittäin).  Jos haluat saada tilauksen sähköpostit vain tiettyinä päivinä, valitse **Viikoittain** ja valitse sitten, minä päivinä haluat saada sähköposteja.  Jos haluat saada tilauksen sähköpostit esimerkiksi vain arkipäivinä, valitse tiheydeksi **Viikoittain** ja poista sitten lauantain ja sunnuntain valintaruutujen valinnat.   
+5. Valitse tilauksesi **tiheys**.  Voit valita Päivittäin, Viikoittain tai Tietojen päivittämisen jälkeen (päivittäin).  Jos haluat saada tilauksen sähköpostit vain tiettyinä päivinä, valitse **Viikoittain** ja valitse sitten, minä päivinä haluat saada sähköposteja.  Jos haluat saada tilauksen sähköpostit esimerkiksi vain arkipäivinä, valitse tiheydeksi **Viikoittain** ja poista lauantain ja sunnuntain valintaruutujen valinnat.   
 
 6. Voit valita sähköpostien lähetyskellonajan valitsemalla tiheydeksi Päivittäin tai Viikoittain ja määrittämällä sitten tilaukselle **ajoitetun** **ajan**.  Tämä on aika, jolloin tilaustyösi alkaa. Joissain tilanteissa saattaa kestää muutaman minuutin, ennen kuin sähköposti toimitetaan postilaatikkoosi.    
 
@@ -59,7 +57,7 @@ Koontinäytön ja raportin tilausprosessit ovat samankaltaiset. Samaa painiketta
 
 8. Jos haluat tarkistaa tilauksesi ja testata sitä, valitse **Suorita nyt**.  Tämä lähettää sähköpostin sinulle heti. 
 
-8. Jos kaikki näyttää olevan kunnossa, tallenna tilaus valitsemalla **Tallenna ja sulje**. Saat (ja muutkin tilaajat saavat) sähköpostin ja tilannevedoksen koontinäytöstä tai raportista määrittämäsi aikataulun mukaisesti. Kaikissa tilauksissa, joiden tiheydeksi määritetään **Tietojen päivittämisen jälkeen**, lähetetään sähköpostia vain kyseisen päivän ensimmäisen ajoitetun päivityksen jälkeen.
+8. Jos kaikki näyttää olevan kunnossa, tallenna tilaus valitsemalla **Tallenna ja sulje**. Saat sähköpostin ja tilannevedoksen koontinäytöstä tai raportista määrittämäsi aikataulun mukaisesti. Kaikissa tilauksissa, joiden tiheydeksi määritetään **Tietojen päivittämisen jälkeen**, lähetetään sähköpostia vain kyseisen päivän ensimmäisen ajoitetun päivityksen jälkeen.
    
    ![sähköpostitilannevedos koontinäytöstä](media/end-user-subscribe/power-bi-subscribe-email.png)
    
