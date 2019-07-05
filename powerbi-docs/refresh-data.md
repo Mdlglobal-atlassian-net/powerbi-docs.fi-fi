@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 06/12/2019
 ms.author: mblythe
 LocalizationGroup: Data refresh
-ms.openlocfilehash: 2760731e7be1216c4ec8755884467eca9d7eb4c4
-ms.sourcegitcommit: 8dee40f07d284ec84a8afa0100359f146e1dd88b
+ms.openlocfilehash: 0013080f3640c4c4d3d717104dcc069ccce3923a
+ms.sourcegitcommit: 952afd75fe8ddcf9350bd9aae88e1a4c438d0f3e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "67418777"
+ms.lasthandoff: 07/04/2019
+ms.locfileid: "67561811"
 ---
 # <a name="data-refresh-in-power-bi"></a>Tietojen päivittäminen Power BI:ssä
 
@@ -177,6 +177,8 @@ Microsoft suosittelee muodostamaan yhteyden paikalliseen tietolähteeseen yrityk
 Tietojoukon yhdistäminen yrityksen yhdyskäytävään on yhdyskäytävän järjestelmänvalvojalle melko yksinkertaista. Järjestelmänvalvojan oikeuksilla voit päivittää yhdyskäytävän ja lisätä puuttuvat tietolähteet tarvittaessa nopeasti. Voit jopa lisätä puuttuvan tietolähteen yhdyskäytävään suoraan tietojoukon asetussivulta. Laajenna tietolähdenäkymä painamalla painiketta ja valitse sitten **Lisää yhdyskäytävään** -linkki seuraavassa näyttökuvassa esitetyllä tavalla. Jos et ole yhdyskäytävän järjestelmänvalvoja, lähetä esitetylle yhdyskäytävän järjestelmänvalvojalle vaadittujen tietolähteen määritysten lisäämispyyntö.
 
 ![Yhdyskäytävään lisääminen](media/refresh-data/add-to-gateway.png)
+
+Varmista, että liität oikean tietolähteen määrityksen tietolähteeseen. Kuten edellä olevasta näyttökuvasta näkyy, yhdyskäytävän järjestelmänvalvojat voivat luoda yhteen yhdyskäytävään useita, samaan tietolähteeseen yhdistettyjä määrityksiä, joilla kullakin on eri tunnistetiedot. Tässä esimerkissä myyntiosaston tietojoukon omistaja valitsisi AdventureWorksProducts-Myynti-tietolähteen määrityksen, kun taas tukiosaston tietojoukon omistaja liittäisi tietojoukon AdventureWorksProducts-Tuki-tietolähteen määritykseen. Jos tietolähteen määrityksen nimet eivät ole intuitiivisia, kysy yhdyskäytävän järjestelmänvalvojalta, mikä määritys valitaan.
 
 > [!NOTE]
 > Tietojoukko voi käyttää vain yhtä yhdyskäytäväyhteyttä. Paikallista tietolähdettä ei siis voi käyttää useiden yhdyskäytäväyhteyksien kautta. Tästä syystä sinun on lisättävä kaikki tarvittavat tietolähteen määritykset samaan yhdyskäytävään.

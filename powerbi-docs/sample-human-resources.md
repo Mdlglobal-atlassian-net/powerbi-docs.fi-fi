@@ -10,16 +10,15 @@ ms.topic: conceptual
 ms.date: 06/20/2019
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: ae2e4dcfe1fdcd88c3e6ff9e4942afdedf9d126b
-ms.sourcegitcommit: a2c4f912af1729fdfdf20369bf3eff67c3927eec
+ms.openlocfilehash: 762a28d2340a691316b1aaf26b7ce62d45cc7496
+ms.sourcegitcommit: 8dee40f07d284ec84a8afa0100359f146e1dd88b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "67349464"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67418730"
 ---
 # <a name="human-resources-sample-for-power-bi-take-a-tour"></a>Power BI:n henkilöstöhallintomalli: aloita esittely
 
-## <a name="overview-of-the-human-resources-sample"></a>Yleiskuva henkilöstöhallintomallista
 Henkilöstöhallintomallin sisältöpaketti sisältää henkilöstöhallinto-osaston koontinäytön, raportin ja tietojoukon. Tässä mallissa henkilöstöhallinto-osasto käyttää samaa raportointimallia eri yrityksissä toimialasta tai koosta riippumatta. Tämä malli tarkastelee vastikään rekrytoituja työntekijöitä, aktiivisia työntekijöitä ja yrityksestä lähteneitä työntekijöitä. Se pyrkii selvittämään palkkausstrategian mahdolliset trendit. Päätavoitteemme on ymmärtää seuraavat asiat:
 
 * Keitä palkkaamme
@@ -28,7 +27,7 @@ Henkilöstöhallintomallin sisältöpaketti sisältää henkilöstöhallinto-osa
 
 ![Koontinäyttö henkilöstöhallintomallista](media/sample-human-resources/hr1.png)
 
-Tämä malli kuuluu sarjaan, jossa esitellään, miten Power BI:tä voidaan käyttää liiketoimintaan suuntautuneiden tietojen, raporttien ja koontinäyttöjen kanssa. Sen luomiseen on käytetty [obviEnceltä](http://www.obvience.com/) saatuja todellisia tietoja, jotka on muunnettu nimettömään muotoon. Tiedot ovat käytettävissä useissa muodoissa: sisältöpaketti/sovellus, Power BI Desktopin .pbix-tiedosto tai Excel-työkirja. Tutustu [Power BI:n malleihin](sample-datasets.md). 
+Tämä malli kuuluu sarjaan, jossa esitellään, miten Power BI:tä voidaan käyttää liiketoimintaan suuntautuneiden tietojen, raporttien ja koontinäyttöjen kanssa. Sen luomiseen on käytetty [obviEnceltä](http://www.obvience.com/) saatuja oikeita tietoja, jotka on muunnettu nimettömään muotoon. Tiedot ovat käytettävissä useissa muodoissa: sisältöpaketti/sovellus, Power BI Desktopin .pbix-tiedosto tai Excel-työkirja. Tutustu [Power BI:n malleihin](sample-datasets.md). 
 
 Tässä opetusohjelmassa käytetään Power BI -palvelua ja henkilöstöhallintomallin sisältöpakettia. Koska raportin käyttökokemukset ovat hyvin samankaltaisia, voit myös seurata käyttäen Power BI Desktopia ja mallin PBIX-tiedostoa. 
 
@@ -69,7 +68,7 @@ Tutustutaan ensin uusiin palkkauksiin.
 
    ![Uusien palkkausten määrä -ruutu](media/sample-human-resources/hr2.png)  
 
-   Henkilöstöhallintomalli-raportin **Uudet palkkaukset** -sivu avautuu.  
+   Henkilöstöhallintomalli-raportin **Uuden palkkaukset** -sivu avautuu.  
 
    ![Uudet palkkaukset -sivu](media/sample-human-resources/hr3.png)
 
@@ -159,7 +158,7 @@ Koontinäytön [Q&A-kysymysruudussa](power-bi-tutorial-q-and-a.md) koontinäytö
 
    Huomaa, että suurin osa naispuolisista huonoista palkkauksista on alle 30-vuotiaita.
 
-Tässä ympäristössä on turvallista tehdä kokeiluja, koska voit jättää tekemäsi muutokset tallentamatta. Jos kuitenkin tallennat ne, voit aina siirtyä **Nouda tiedot** -kohtaan, jolloin saat mallista uuden kopion.
-
 ## <a name="next-steps-connect-to-your-data"></a>Seuraavat vaiheet: Yhdistä tietoihisi
+Tässä ympäristössä on turvallista tehdä kokeiluja, koska voit jättää tekemäsi muutokset tallentamatta. Jos kuitenkin tallennat ne, voit aina siirtyä **Nouda tiedot** -kohtaan, jolloin saat tästä mallista uuden kopion.
+
 Toivomme, että tämä esittely on osoittanut, miten Power BI -koontinäytöt, Q&A ja raportit voivat tarjota uusia näkökulmia henkilöstötietoihin. Nyt on sinun vuorosi – muodosta yhteys omiin tietoihisi. Power BI:n avulla voit yhdistää useisiin eri tietolähteisiin. Lisätietoja on artikkelissa [Power BI -palvelun käytön aloittaminen](service-get-started.md).

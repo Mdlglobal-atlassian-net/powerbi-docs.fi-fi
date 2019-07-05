@@ -1,74 +1,89 @@
 ---
-title: Power BI viivakaaviot
-description: Power BI viivakaaviot
+title: Viivakaaviot Power BI:ssä
+description: Viivakaaviot Power BI:ssä
 author: mihart
 manager: kvivek
-ms.reviewer: ''
+ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/07/2019
+ms.date: 06/26/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 0654dccf55b1e13f26d8ecaabee0349f0e56afc6
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 4b2c7c237393fd0a8e76b7ca27987c479b5c411d
+ms.sourcegitcommit: 58c649ec5fd2447a0f9ca4c4d45a0e9fff2f1b6a
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65535786"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67408603"
 ---
-# <a name="line-charts-in-power-bi"></a>Power BI viivakaaviot
-Viivakaaviot ovat arvopisteitä, jotka ovat pistettä edustaa ja yhdistetty viivoilla sarjan. Viivakaavion voi olla yksi tai useita rivejä. Viivakaaviot on X ja Y-akselin. 
+# <a name="line-charts-in-power-bi"></a>Viivakaaviot Power BI:ssä
+Viivakaaviot ovat arvopisteiden sarjoja, jotka esitetään pisteillä ja yhdistetään suorilla viivoilla. Viivakaaviossa voi olla yksi tai useampi viiva. Viivakaavioissa on X- ja Y-akseli. 
 
-![viivakaavio](media/power-bi-line-charts/power-bi-line.png)
+![yksinkertainen viivakaavio](media/power-bi-line-charts/power-bi-line.png)
 
 ## <a name="create-a-line-chart"></a>Luo viivakaavio
-Nämä ohjeet käyttämällä myynti ja markkinointi esimerkkisovellus luomaan viivakaavio, joka näyttää tämän vuoden myynti luokan mukaan. Seurataksesi noutaminen appsource.comiin mallisovellusta.
+Näissä ohjeissa käytetään myynnin ja markkinoinnin mallisovellusta sellaisen viivakaavion luomiseen, joka näyttää tämän vuoden myynnin luokittain. Seuraa mukana hankkimalla mallisovellus appsource.comista.
 
 1. Aloita tyhjältä raporttisivulta. Jos käytät Power BI ‑palvelua, varmista, että avaat raportin [muokkausnäkymässä](../service-interact-with-a-report-in-editing-view.md).
 
-2. Valitse kentät-ruudussa **SalesFact** \> **yksiköt yhteensä**, ja valitse **päivämäärä** > **kuukauden**.  Power BI Luo pylväskaavion raporttipohjalla.
+2. Valitse Kentät-ruudusta **SalesFact**\>**Yksiköt yhteensä**, ja valitse **Päivämäärä** > **Kuukausi**.  Power BI luo pylväskaavion raporttipohjalle.
 
-    ![Valitse kentät-ruudusta](media/power-bi-line-charts/power-bi-step1.png)
+    ![Valitse Kentät-ruudusta](media/power-bi-line-charts/power-bi-step1.png)
 
-4. Muunna viivakaavio valitsemalla rivin malli visualisoinnit-ruudussa. 
+4. Muunna viivakaavio valitsemalla viivakaaviomalli Visualisoinnit-ruudusta. 
 
-    ![Muunna viivakaavio](media/power-bi-line-charts/power-bi-convert-to-line.png)
+    ![muunna viivakaavioksi](media/power-bi-line-charts/power-bi-convert-to-line.png)
    
 
-4. Suodata-viivakaavion näyttämään tiedot vuoden 2012 2014. Jos suodattimet-ruutu on kutistettu, laajenna se nyt. Valitse kentät-ruudussa **päivämäärä** \> **vuoden** ja vedä se suodattimet-ruutu. Poista kohdassa **suodattimia tässä visualisoinnissa**. 
+4. Suodata viivakaavio näyttämään tiedot vuosille 2012–2014. Jos Suodattimet-ruutu on kutistettu, laajenna se nyt. Valitse Kentät-ruudusta **Päivämäärä**\>**Vuosi** ja vedä se Suodattimet-ruutuun. Pudota se otsikon **Tämän visualisoinnin suodattimet** alle. 
      
-    ![rivin vieressä kentät-ruudussa](media/power-bi-line-charts/power-bi-year-filter.png)
+    ![viiva Kentät-ruudun vieressä](media/power-bi-line-charts/power-bi-year-filter.png)
 
-    Muuta **Advanced suodattimet** - **perustason suodattimet** ja valitse **2012**, **2013** ja **2014**.
+    Vaihda **Lisäsuodattimet** tilaan **Perussuodattimet** ja valitse **2012**, **2013** ja **2014**.
 
-    ![Vuosi Filter](media/power-bi-line-charts/power-bi-filter-year.png)
+    ![Suodata vuoden mukaan](media/power-bi-line-charts/power-bi-filter-year.png)
 
 6. Voit vaihtoehtoisesti [säätää kaavion tekstin väriä ja kokoa](power-bi-visualization-customize-title-background-and-legend.md). 
 
-    ![Suurenna fonttikokoa ja muuta Y axisfont](media/power-bi-line-charts/power-bi-line-3years.png)
+    ![Suurenna fonttikokoa ja muuta Y-akselin fonttia](media/power-bi-line-charts/power-bi-line-3years.png)
 
-## <a name="add-additional-lines-to-the-chart"></a>Lisää kaavioon Lisää rivejä
-Viivakaaviot voi olla useita eri rivejä. Ja joissakin tapauksissa rivien arvot voivat olla eriäviä ja että ne eivät näy hyvin. Katsotaan lisääminen Lisää rivejä Microsoftin nykyinen kaavion ja oppia miten meidän kaavion kun edustaa rivien arvot ovat hyvin erilaiset. 
+## <a name="add-additional-lines-to-the-chart"></a>Lisää kaavioon lisäviivoja
+Viivakaavioissa voi olla useita eri viivoja. Ja joissakin tapauksissa viivojen arvot voivat olla niin erkautuvia, etteivät ne näy hyvin yhdessä. Katsotaanpa lisäviivojen lisäämistä nykyiseen kaavioomme ja sitä, miten voimme muotoilla kaaviota, kun viivojen esittämät arvot ovat hyvin erilaisia. 
 
-### <a name="add-additional-lines"></a>Lisää Lisää rivejä
-Sijaan Katsomme yksiköitä yhteensä kaikkien alueiden yksittäisen viivana kaaviossa, voimme jaetaanko yksiköitä yhteensä alueen mukaan. Lisää rivejä lisätä vetämällä **Geo** > **alueen** selite-kohtaan.
+### <a name="add-additional-lines"></a>Lisää lisäviivoja
+Sen sijaan, että tarkastelemme kaikkien alueiden yksikköjä yhtenä viivana kaaviossa, jaetaanpa yksiköiden kokonaismäärä alueen mukaan. Voit lisätä lisäviivoja vetämällä kohdan **Sijainti** > **Alue** Selite-säilöön.
 
-   ![Kukin alue yksi rivi](media/power-bi-line-charts/power-bi-line-regions.png)
+   ![Yksi viiva kullekin alueelle](media/power-bi-line-charts/power-bi-line-regions.png)
 
 
-### <a name="use-two-y-axes"></a>Kahden Y-akseleille käyttää
-Entä jos haluat kokonaismyynti ja yksiköiden kokonaismäärä samasta kaaviosta? Myyntiluvut on paljon suurempi kuin yksikkö numeroita, tekemistä viivakaavio käyttökelvottomia. Itse asiassa yksiköitä yhteensä punainen rivi tulee olla nolla.
+### <a name="use-two-y-axes"></a>Käytä kahta Y-akselia
+Entä jos haluan tarkastella kokonaismyyntiä ja yksiköiden kokonaismäärää samassa kaaviossa? Myyntiluvut ovat paljon suurempia kuin yksikkönumerot, minkä vuoksi viivakaavio on käyttökelvoton. Itse asiassa yksiköiden kokonaismäärän punainen viiva näyttää olevan nolla.
 
-   ![Eriytyvä erittäin arvot](media/power-bi-line-charts/power-bi-diverging.png)
+   ![voimakkaasti erkautuvat arvot](media/power-bi-line-charts/power-bi-diverging.png)
 
-Yhden kaavion erittäin erkautuva arvojen näyttämiseksi käyttää yhdistelmäkaaviota. Saat kaikki Yhdistelmäkaaviot lukemalla [Power BI-Yhdistelmäkaaviot](power-bi-visualization-combo-chart.md). Tässä esimerkissä alla voimme näyttää myynti- ja yksiköt yhteen yhden kaavion lisäämällä toisen Y-akselin. 
+Jotta voit näyttää voimakkaasti erkautuvat arvot yhdessä kaaviossa, käytä yhdistelmäkaaviota. Saat tietää kaiken yhdistelmäkaavioista lukemalla artikkelin [Power BI:n yhdistelmäkaaviot](power-bi-visualization-combo-chart.md). Alla olevassa esimerkissämme voimme näyttää myynnin ja yksiköiden kokonaismäärän yhteisesti yhdessä kaaviossa lisäämällä toisen Y-akselin. 
 
-   ![Eriytyvä erittäin arvot](media/power-bi-line-charts/power-bi-dual-axes.png)
+   ![voimakkaasti erkautuvat arvot](media/power-bi-line-charts/power-bi-dual-axes.png)
+
+## <a name="highlighting-and-cross-filtering"></a>Korostaminen ja ristiinsuodatus
+Lisätietoja Suodattimet-paneelin käyttämisestä saat ohjeaiheesta [Suodattimen lisääminen raporttiin](../power-bi-report-add-filter.md).
+
+Arvopisteen valitseminen viivakaaviossa ristiinkorostaa ja ristiinsuodattaa muut raporttisivulla olevat visualisoinnit... ja päinvastoin. Seuraa mukana avaamalla **Markkinaosuus**-välilehti.  
+
+Viivakaaviossa yksi arvopiste on pisteen leikkauskohta X-akselilla ja Y-akselilla. Kun valitset arvopisteen, Power BI lisää merkit osoittamaan, mikä piste (yhdelle viivalle) tai mitkä pisteet (jos viivoja on vähintään kaksi) ovat raporttisivun muiden visualisointien ristiinkorostuksen ja ristiinsuodatuksen lähde. Jos visualisointi on hyvin tiheä, Power BI valitsee lähimmän pisteet, jossa voit napsauttaa visualisointia.
+
+Tässä esimerkissä olemme valinneet arvopisteen, joka kattaa seuraavat: Heinäkuu 2014, Yksikköjen markkinaosuus-% R12 33,16 ja Yksikköjen markkinaosuus-% 34,74.
+
+![valitse yksi arvopiste viivakaaviossa](media/power-bi-line-charts/power-bi-single-select.png)
+
+Huomaa, miten pylväskaavio on ristiinkorostettu ja mittari ristiinsuodatettu.
+
+Jos haluat määrittää, miten visualisoinnit ristiinkorostavat ja -suodattavat toisiaan, katso [visualisointien vuorovaikutukset Power BI -raportissa](../service-reports-visual-interactions.md)
 
 ## <a name="considerations-and-troubleshooting"></a>Huomioon otettavat seikat ja vianmääritys
-* Yksi viivakaavio ei voi olla kaksi Y-akselia.  Sinun tulee käyttää yhdistelmäkaaviota sen sijaan.
-* Yllä esimerkkejä kaaviot muotoiltiin Suurenna fonttikokoa muuttaa fonttiväri, akselin otsikoiden lisääminen, center kaavion otsikon ja selitteen, Aloita kummatkin akselit ja nolla. Muotoilu-ruutu (maalirullakuvake) on suuri mahdollisuuksia kaavioiden näyttää ne haluamallasi tavalla. Paras tapa oppia on avata muotoilu-ruutu ja tutkia.
+* Yhdessä viivakaaviossa ei voi olla kahta Y-akselia.  Sen sijaan on käytettävä yhdistelmäkaaviota.
+* Yllä olevassa esimerkissä kaavioita muotoiltiin fonttikoon suurentamiseksi, fontin värin muuttamiseksi, akselin lisäämiseksi otsikoihin, kaavion otsikon ja selitteen keskittämiseksi, kummankin akselin aloittamiseksi nollasta ja niin edelleen. Muotoilu-ruudussa (maalirullakuvake) on siten loputon sarja vaihtoehtoja, joiden avulla saat kaaviosi näyttämään juuri siltä, miltä haluat niiden näyttävän. Paras tapa oppia on avata Muotoilu-ruutu ja tutustua eri toimintoihin.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 

@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 05/20/2019
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: 6c9d59bbc2c6bf81242166bef4cd7584f52fb633
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 992524d3467ebe9bb130b3c61476301ab2bc563c
+ms.sourcegitcommit: 58c649ec5fd2447a0f9ca4c4d45a0e9fff2f1b6a
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65941600"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67409181"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>Power BI:n hallinta hallintaportaalissa
 
@@ -44,8 +44,8 @@ Portaalissa on yhdeksän välilehteä. Tässä artikkelissa kerrotaan lisätieto
 * [Vuokraaja-asetukset](#tenant-settings)
 * [Kapasiteettiasetukset](#capacity-settings)
 * [Upotuskoodit](#embed-codes)
-* [Organisaation visualisoinnit.](#organization-visuals)
-* [Tietovirrassa tallennustilan (esikatselu)](#dataflowStorage)
+* [Organisaation visualisoinnit.](#organizational-visuals)
+* [Tietovuon tallennustila (esikatselu)](#dataflowStorage)
 * [Työtilat](#workspaces)
 
 ## <a name="usage-metrics"></a>Käyttömittarit
@@ -59,11 +59,11 @@ Kun koontinäyttö on ladattu, näet kaksi ruutuosiota. Ensimmäinen osio sisäl
 
 Näet ruuduissa seuraavat tiedot:
 
-* Näet käyttäjän työtilan kaikkien koontinäyttöjen, raporttien ja tietojoukkojen määrän.
+* Näet käyttäjän työtilassa kaikkien koontinäyttöjen, raporttien ja tietojoukkojen määrän.
   
     ![Koontinäyttöjen, raporttien ja tietojoukkojen määrät](media/service-admin-portal/powerbi-admin-usage-metrics-number-tiles.png)
 
-* Näet käytetyimmän koontinäytön ja sen käyttäjien määrän. Jos sinulla on esimerkiksi kolmelle käyttäjälle jakamasi koontinäyttö, jonka olet lisännyt myös sisältöpakettiin, johon on yhdistetty kaksi eri käyttäjää, koontinäytön käyttäjämäärä on 6 (1+3+2).
+* Näet käytetyimmän koontinäytön ja sen käyttäjien määrän. Jos sinulla on esimerkiksi kolmelle käyttäjälle jakamasi koontinäyttö, jonka olet lisännyt myös sisältöpakettiin, johon on yhdistetty kaksi eri käyttäjää, koontinäytön käyttäjämäärä on 6 (1 + 3 + 2).
   
     ![Käytetyimmät koontinäytöt](media/service-admin-portal/powerbi-admin-usage-metrics-top-dashboards.png)
 
@@ -128,23 +128,23 @@ Asetuksilla voi olla kolme tilaa:
 
 Seuraavissa osioissa luodaan yleiskatsaus vuokraaja-asetusten eri tyyppeihin.
 
-## <a name="help-and-support-settings"></a>Ohje ja tuki-asetukset
+## <a name="help-and-support-settings"></a>Ohjeiden ja tuen asetukset
 
-### <a name="publish-get-help-information"></a>Julkaise ”Hanki apua” tietoja
+### <a name="publish-get-help-information"></a>Julkaise ”Hanki apua” -tiedot
 
-Organisaation käyttäjät voivat Siirry sisäinen ohje ja tuki Power BI-Ohje. Tarkemmin sanottuna näiden parametrien muuttaa Lue yhteisön ja hae Ohje-valikkovaihtoehdot toimintaa.
+Organisaation käyttäjät voivat siirtyä sisäisiin ohje- ja tukiresursseihin Power BI:n ohjevalikosta. Tarkemmin sanottuna nämä parametrit muuttavat Lue-, Yhteisö- ja Hanki apua -valikkokohtien toimintaa.
 
-Se on myös mahdollista määrittää URL-osoite, jotta käyttäjät voivat mukautetun ratkaisun käyttöoikeuksien pyynnöille. Tämä parametri mukauttaa kohde URL-osoite, jota käyttäjällä ei ole Power BI Pro-käyttöoikeuden etsiä Power BI Pro-valintaikkuna päivitys sekä hallitse henkilökohtaista tallennustilaa sivu päivityksen tili-painiketta.
+Voit myös määrittää URL-osoitteen, joka ohjaa käyttäjät käyttöoikeuspyyntöjä koskevaan mukautettuun ratkaisuun. Tämä parametri mukauttaa Päivitä tili -painikkeen URL-kohdeosoitteen, jonka käyttäjä, jolla ei ole Power BI Pro -käyttöoikeutta, voit löytää Päivitä Power BI Pro -valintaikkunasta sekä Hallitse henkilökohtaista tallennustilaa -sivulta.
 
 ## <a name="workspace-settings"></a>Työtilan asetukset
 
-### <a name="create-workspaces"></a>Luo työtiloja
+### <a name="create-workspaces"></a>Työtilojen luominen
 
-Käyttää **luoda työtiloja** asetus ilmaisemaan, mitkä organisaation käyttäjät voivat luoda sovelluksen työtiloja tehdäkseen yhteistyötä koontinäyttöjen, raporttien tai muita sisällön. Lue lisätietoja [sovellustyötilat](service-create-the-new-workspaces.md).
+Järjestelmänvalvojat voivat **Luo työtiloja** -asetuksen avulla ilmoittaa, ketkä organisaation käyttäjät voivat luoda sovelluksen työtiloja tehdäkseen yhteistyötä koontinäyttöjen, raporttien ja muun sisällön parissa. Lue lisää [sovelluksen työtiloista](service-create-the-new-workspaces.md).
 
-Hallintaportaalissa on toinen osa asetusten lisätietoja työtiloista vuokraajassa. Tämän osion voit lajitella ja suodattaa työtiloja ja näyttää kunkin työtilan tiedot. Katso [työtilat](#workspaces) lisätietoja.
+Hallintaportaalissa on toinen asetusosio työtiloista vuokraajassa. Voit tässä osiossa lajitella ja suodattaa työtilojen luetteloja ja näyttää kunkin työtilan tiedot. Katso lisätietoja [Työtilat](#workspaces)-kohdasta.
 
-Hallintaportaalissa voit määrittää käyttäjät, jotka on oikeus jakaa sovelluksia organisaation. Katso [julkaista sisältöpaketteja ja sovelluksia koko organisaatiolle](#publish-content-packs-and-apps-to-the-entire-organization) Lisätietoja tässä artikkelissa.
+Voit hallintaportaalissa myös hallita sitä, keillä käyttäjillä on oikeus jakaa sovelluksia organisaatiossa. Katso lisätietoja tämän artikkelin kohdasta [Julkaise sisältöpaketteja ja sovelluksia koko organisaatiolle](#publish-content-packs-and-apps-to-the-entire-organization).
 
 ## <a name="export-and-sharing-settings"></a>Vienti- ja jakamisasetukset
 
@@ -213,23 +213,28 @@ Seuraava kuva näyttää asetuksen Salli ulkoisten vieraskäyttäjien muokata ja
 
 ![Salli ulkoisten vieraskäyttäjien muokata ja hallita sisältöä organisaatiossa](media/service-admin-portal/powerbi-admin-tenant-settings-b2b-guest-edit-manage.png)
 
+### <a name="email-subscriptions"></a>Sähköpostitilaukset
+Organisaatiosi käyttäjät voivat luoda sähköpostitilauksia. Lue lisää [tilauksista](service-report-subscribe.md).
+
+![Ota käyttöön sähköpostitilaukset](media/service-admin-portal/power-bi-manage-email-subscriptions.png)
+
 ## <a name="content-pack-and-app-settings"></a>Sisältöpaketin ja sovelluksen asetukset
 
 ### <a name="publish-content-packs-and-apps-to-the-entire-organization"></a>Julkaise sisältöpaketteja ja sovelluksia koko organisaatiolle
 
-Tämä asetus käyttää päättää, mitkä käyttäjät voivat julkaista sisältöpaketteja ja sovelluksia koko organisaation sijaan, että vain tietyt ryhmät. Lue lisätietoja [sovellusten julkaisemisesta](service-create-distribute-apps.md).
+Järjestelmänvalvojat voivat tämän asetuksen avulla päättä, ketkä käyttäjät voivat julkaista sisältöpaketteja ja sovelluksia koko organisaatiolle vain tietyille ryhmille julkaisemisen sijasta. Lue lisää [sovellusten julkaisemisesta](service-create-distribute-apps.md).
 
 Seuraavassa kuvassa näkyy **Koko organisaatio** -vaihtoehto sisältöpaketin luomisessa.
 
 ![Sisältöpaketin julkaiseminen organisaatiolle](media/service-admin-portal/powerbi-admin-publish-entire-org.png)
 
-### <a name="create-template-apps-and-organizational-content-packs"></a>Luo malli sovellukset ja organisaation Sisältöpaketit
+### <a name="create-template-apps-and-organizational-content-packs"></a>Luo mallisovelluksia ja organisaation sisältöpaketteja
 
-Organisaation käyttäjät voivat luoda mallin sovellukset ja organisaation sisältöpaketteja, joita käyttävät Power BI Desktop yhteen tietolähteeseen perustuvia tietojoukkoja. Lue lisätietoja [mallin sovelluksia](template-content-pack-authoring.md).
+Organisaation käyttäjät voivat luoda mallisovelluksia ja organisaation sisältöpaketteja, jotka käyttävät yhteen tietolähteeseen perustuvia tietojoukkoja Power BI Desktopissa. Lue lisää [mallisovelluksista](template-content-pack-authoring.md).
 
 ### <a name="push-apps-to-end-users"></a>Lähetä sovellukset käyttäjille
 
-Raportin luojat voivat jakaa sovelluksia suoraan käyttäjien kanssa edellyttämättä asennusta [AppSource](https://appsource.microsoft.com). Lue lisätietoja [sovellusten asentaminen automaattisesti käyttäjille](service-create-distribute-apps.md#automatically-install-apps-for-end-users).
+Raporttien luojat voivat jakaa sovelluksia suoraan käyttäjien kanssa ilman asennusta [AppSourcesta](https://appsource.microsoft.com). Lue lisää [sovellusten automaattisesta asentamisesta loppukäyttäjille](service-create-distribute-apps.md#automatically-install-apps-for-end-users).
 
 ## <a name="integration-settings"></a>Integrointiasetukset
 
@@ -351,7 +356,7 @@ Organisaation käyttäjät voivat upottaa Power BI -koontinäyttöjä ja -raport
 
 ### <a name="allow-service-principals-to-use-power-bi-apis"></a>Salli palvelun päänimien käyttää Power BI -ohjelmointirajapintoja
 
-WWW-sovelluksia, jotka on rekisteröity Azure Active Directory (Azure AD) avulla määritetyt palveluobjektia käyttää Power BI-ohjelmointirajapintoja ilman sisäänkirjautunutta käyttäjää. Sovellus käyttää palvelun päänimen todennusta sallimaan sen palveluobjekti on sisällytettävä sallittujen käyttöoikeusryhmä. [Lue lisää](developer/embed-service-principal.md)
+Azure Active Directoryyn (Azure AD) rekisteröidyt verkkosovellukset käyttävät määritettyä palvelun päänimeä Power BI -ohjelmointirajapintojen käyttöön ilman sisäänkirjautunutta käyttäjää. Jotta sovellus voi käyttää todennustyyppinä palvelun päänimeä, sen palvelun päänimen on sisällyttävä sallittuun käyttöoikeusryhmään. [Lue lisää](developer/embed-service-principal.md)
 
 > [!NOTE]
 > Palvelun päänimet perivät käyttöoikeudet kaikkiin Power BI -vuokraaja-asetuksiin käyttöoikeusryhmästään. Jos haluat rajoittaa käyttöoikeuksia, luo erillinen käyttöoikeusryhmä palvelun päänimille ja lisää se asianmukaisten käyttöön otettujen Power BI -asetusten Lukuun ottamatta tiettyjä käyttöoikeusryhmiä -luetteloon.
@@ -360,29 +365,34 @@ WWW-sovelluksia, jotka on rekisteröity Azure Active Directory (Azure AD) avulla
 
 ### <a name="create-and-use-dataflows"></a>Tietovoiden luominen ja käyttäminen
 
-Organisaatiosi käyttäjät voivat luoda ja käyttää tietovoita. Katso yleiskatsaus dataflows [Omatoiminen tietojen valmistautuminen Power BI](service-dataflows-overview.md). Jos haluat ottaa tietovuot käyttöön Premium-kapasiteetissa, tutustu artikkeliin [Kuormitusten määrittäminen](service-admin-premium-workloads.md).
+Organisaatiosi käyttäjät voivat luoda ja käyttää tietovoita. Saat yleiskatsauksen tietovoista artikkelista [Omatoiminen tietojen valmistelu Power BI:ssä](service-dataflows-overview.md). Jos haluat ottaa tietovuot käyttöön Premium-kapasiteetissa, tutustu artikkeliin [Kuormitusten määrittäminen](service-admin-premium-workloads.md).
 
 > [!NOTE]
 > Tämä asetus koskee koko organisaatiota, joten sitä ei rajoittaa ryhmien avulla.
 
-## <a name="template-apps-settings-preview"></a>Mallisovellusten asetukset (esikatselu)
+## <a name="template-apps-settings"></a>Mallisovellusten asetukset
 
-Mallisovelluksiin vaikuttaa kaksi asetusta. 
+Kolme asetusten hallinnan mallisovelluksen kyky julkaista tai asentaa mallisovelluksia.
 
 ![Power BI -hallintaportaalin mallisovellusten asetukset](media/service-admin-portal/power-bi-admin-portal-template-apps.png)
 
-### <a name="create-template-apps-preview"></a>Luo mallisovelluksia (esikatselu)
+### <a name="publish-template-apps"></a>Julkaise mallisovellukset
 
-Organisaation käyttäjät voivat luoda mallin sovelluksia. Mallin sovelluskehittäjille voit sitten jakaa ne asiakkaille saamien organisaatiosi ulkopuolisten [AppSource](https://appsource.microsoft.com) tai muita jakelumenetelmät.
+Organisaation käyttäjät voivat luoda mallisovellusten työtiloja. Ohjausobjekti, jonka avulla käyttäjät voivat julkaista mallisovelluksia tai jakaa niitä organisaatiosi ulkopuolisille asiakkaille [AppSourcen](https://appsource.microsoft.com) tai jonkin muun jakelumenetelmän kautta.
 
 ![Power BI -hallintaportaali, Luo mallisovelluksia -asetus](media/service-admin-portal/power-bi-admin-portal-template-app-settings.png)
 
-### <a name="install-template-apps-preview"></a>Asenna sovellukset malli (esikatselu)
+### <a name="install-template-apps-listed-on-appsource"></a>Asenna AppSourcessa luetellut mallisovellukset
 
-Organisaation käyttäjät voit ladata ja asentaa sovelluksia mallin [AppSource](https://appsource.microsoft.com) tai muusta lähteestä.
+Organisaation käyttäjät voivat ladata ja asentaa mallisovelluksia mallin **vain** [AppSourcesta](https://appsource.microsoft.com). Ohjausobjekti, jonka avulla tietyt käyttäjät tai käyttöoikeusryhmät voivat asentaa mallisovelluksia AppSourcesta.
 
-> [!NOTE]
-> Tämä asetus määrittää käyttäjät, jotka voit asentaa sovelluksia malli Power BI-tilinsä.
+![Power BI -hallintaportaali, Asenna mallisovelluksia -asetus](media/service-admin-portal/power-bi-admin-portal-template-app-settings-installer-appsource.png)
+
+### <a name="install-template-apps-not-listed-on-appsource"></a>Asenna mallisovellukset, joita ei ole lueteltu AppSourcessa
+
+Ohjausobjekti, jonka avulla organisaation käyttäjät voivat ladata ja asentaa mallisovelluksia, **joita ei ole lueteltu [AppSourcessa](https://appsource.microsoft.com)** .
+
+![Power BI -hallintaportaali, Asenna mallisovelluksia -asetus](media/service-admin-portal/power-bi-admin-portal-template-app-settings-installer-nonappsource.png)
 
 ## <a name="capacity-settings"></a>Kapasiteettiasetukset
 
@@ -394,7 +404,7 @@ Organisaation käyttäjät voit ladata ja asentaa sovelluksia mallin [AppSource]
 
 ### <a name="power-bi-embedded"></a>Power BI Embedded
 
-**Power BI Embedded** -välilehden avulla voit tarkastella Power BI Embedded (A-varastointiyksikkö) -kapasiteetteja, jotka olet ostanut asiakkaalle. Koska voit ostaa A-Varastointiyksikköjä vain azuresta, voit [Azure upotettujen Kapasiteettien hallinta](developer/azure-pbie-create-capacity.md) - **Azure-portaalissa**.
+**Power BI Embedded** -välilehden avulla voit tarkastella Power BI Embedded (A-varastointiyksikkö) -kapasiteetteja, jotka olet ostanut asiakkaalle. Koska voit ostaa A-varastointiyksikköjä vain Azuresta, voit [hallita Azuren upotettuja kapasiteetteja](developer/azure-pbie-create-capacity.md) **Azure-portaalista**.
 
 Lisätietoja siitä, miten voit hallita Power BI Embedded (A-varastointiyksikkö) -asetuksia, on artikkelissa [Mikä on Power BI Embedded](developer/azure-pbie-what-is-power-bi-embedded.md).
 
@@ -404,7 +414,7 @@ Järjestelmänvalvojana voit tarkastella vuokraajatilillesi luotuja upotuskoodej
 
 ![Upotuskoodit Power BI -hallintaportaalissa](media/service-admin-portal/embed-codes.png)
 
-## <a name="organizational-visuals">Organisaation visualisoinnit.</a>
+ ## <a name="organizational-visuals">Organisaation visualisoinnit.</a> 
 
 **Organisaation visualisoinnit** -välilehden avulla voit ottaa käyttöön ja hallita organisaatiosi mukautettuja visualisointeja. Organisaation visualisointien avulla voit helposti käyttää omia visualisointeja organisaatiossa, ja raporttien tekijät voivat sitten hakea ja tuoda niitä raportteihinsa Power BI Desktopista. [Lue lisää](power-bi-custom-visuals-organization.md)
 
@@ -464,13 +474,13 @@ Varmista, että visualisoinnin tunnus pysyy samana. Uusi tiedosto korvaa aiemman
 
 Saat lisätietoja [organisaation mukautettujen visualisointien usein kysytyistä kysymyksistä](https://docs.microsoft.com/power-bi/power-bi-custom-visuals-faq#organizational-custom-visuals).
 
-## <a name="dataflowStorage">Tietovirrassa tallennustilan (esikatselu)</a>
+## <a name="dataflowStorage">Tietovuon tallennustila (esikatselu)</a>
 
 Oletusarvon mukaan Power BI:ssä käytetyt tiedot tallennetaan Power BI:n tarjoamaan sisäiseen tallennustilaan. Tietovoiden ja Azure Data Lake Storage Gen2 (ADLS Gen2) -järjestelmän integroinnin myötä voit tallentaa tietovuot organisaatiosi Azure Data Lake Storage Gen2 -tilille. Lisätietoja on kohdassa [Tietovuot ja Azure Data Lake -integrointi (esikatselu)](service-dataflows-azure-data-lake-integration.md).
 
 ## <a name="workspaces"></a>Työtilat
 
-Järjestelmänvalvojana voit tarkastella vuokraajassa olevia työtiloja. Voit lajitella ja suodattaa työtilojen luetteloja ja näyttää kunkin työtilan tiedot. Taulukon sarakkeet vastaavat palauttama ominaisuuksia [järjestelmänvalvojan Power BI Rest-Ohjelmointirajapinnan](/rest/api/power-bi/admin) työtiloissa. Omat työtilat ovat tyyppiä **PersonalGroup**, perinteisessä työtilat ovat tyyppiä **ryhmän**, ja uusi työtila-kokemus työtilat ovat tyyppiä **työtilan**. Jos haluat lisätietoja, katso [Power BI Luo uuden työtilakokemuksen](service-create-the-new-workspaces.md).
+Järjestelmänvalvojana voit tarkastella vuokraajassa olevia työtiloja. Voit lajitella ja suodattaa työtilojen luetteloja ja näyttää kunkin työtilan tiedot. Taulukon sarakkeet vastaavat [Power BI -järjestelmänvalvojan REST-ohjelmointirajapinnan](/rest/api/power-bi/admin) palauttamia ominaisuuksia työtiloille. Henkilökohtaiset työtilat ovat tyyppiä **PersonalGroup**, perinteiset työtilat tyyppiä **Group** ja uuden työtilakokemuksen työtilat tyyppiä **Workspace**. Katso lisätietoja artikkelista [Uusien työtilojen luominen Power BI:ssä](service-create-the-new-workspaces.md).
 
 ![Työtilojen luettelo](media/service-admin-portal/workspaces-list.png)
 
