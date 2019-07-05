@@ -1,5 +1,5 @@
 ---
-title: Työn järjestäminen uusiin työtiloihin – Power BI
+title: Työn järjestäminen uusiin työtiloihin Power BI:ssä
 description: Lue uusista työtiloista, jotka ovat koontinäyttöjen ja raporttien kokoelmia. Voit niiden avulla kuvata organisaatiosi keskeisiä mittalukuja.
 author: maggiesMSFT
 manager: kfile
@@ -7,15 +7,15 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/18/2019
+ms.date: 06/26/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 419cd2137b8924f153009843d6f60db594219059
-ms.sourcegitcommit: a42c6758aa255c21ece6366a3257b0dd82f3606b
+ms.openlocfilehash: a3982716ac2eb64f7512ba6ef606af299f1c5f46
+ms.sourcegitcommit: 8dee40f07d284ec84a8afa0100359f146e1dd88b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/24/2019
-ms.locfileid: "67345528"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67418666"
 ---
 # <a name="organize-work-in-the-new-workspaces-in-power-bi"></a>Työn järjestäminen uusiin työtiloihin Power BI:ssä
 
@@ -135,7 +135,7 @@ Jotkin ominaisuudet toimivat uusissa työtiloissa eri tavalla kuin nykyisissä t
 - Jäsenet voivat tai eivät voi jakaa uudelleen: korvataan osallistujan roolilla
 - Vain luku -työtilat: Sen sijaan, että myöntäisit käyttäjille Vain luku -käyttöoikeuden työtilaan, myönnät käyttäjille Katselija-roolin, johon kuuluu samankaltainen Vain luku -käyttöoikeus työtilan sisältöön.
 - Käyttäjät, joilla ei ole Pro-käyttöoikeutta, voivat käyttää työtilaa, jos työtila on Power BI Premium -kapasiteetissa, vaikka heillä olisi vain Katselija-rooli.
-- Jotta käyttäjät, joilla on Katselija-rooli, voisivat viedä tietoja, varmista, että heillä on Koontiversio-oikeus työtilan tietojoukoille.
+- Jotta käyttäjät, joilla on Katselija-rooli, voisivat viedä tietoja, varmista, että heillä on Koontiversio-oikeus työtilan tietojoukoille. Lue lisää [tietojoukkojen muodostamisoikeuksista](service-datasets-build-permissions.md#build-permissions-for-shared-datasets).
 - Ei **Poistu työtilasta** -painiketta.
 
 ## <a name="frequently-asked-questions"></a>Usein kysyttyjä kysymyksiä
