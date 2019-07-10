@@ -3,206 +3,205 @@ title: 'Opetusohjelma: Yhteyden muodostaminen paikallisiin tietoihin SQL Serveri
 description: Opi käyttämään SQL Serveriä yhdyskäytävän tietolähteenä mm. tietojen päivittämiseen.
 author: mgblythe
 manager: kfile
-ms.reviewer: ''
+ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: tutorial
 ms.date: 05/03/2018
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 96ea117ff0ba28a158eb9f0eaf748d66b25f90d5
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: d73d2ea5e21196d4856d2906805e6dec1f7e60b7
+ms.sourcegitcommit: 30ee81f8c54fd7e4d47d7e3ffcf0e6c3bb68f6c2
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54278925"
+ms.lasthandoff: 06/29/2019
+ms.locfileid: "67468354"
 ---
-# <a name="tutorial-connect-to-on-premises-data-in-sql-server"></a>Opetusohjelma: Yhteyden muodostaminen paikallisiin tietoihin SQL Serverissä
+# <a name="refresh-data-from-an-on-premises-sql-server-database"></a>Tietojen päivittäminen paikallisesta SQL Server -tietokannasta
 
-Paikallinen tietoyhdyskäytävä on ohjelmisto, jonka asennat paikalliseen verkkoon; se helpottaa tietojen käyttöä kyseisessä verkossa. Tässä opetusohjelmassa luot Power BI Desktopissa raportin SQL Serveristä tuoduista tiedoista. Sen jälkeen julkaiset raportin Power BI -palvelussa ja määrität yhdyskäytävän, jotta palvelu voi käyttää paikallisia tietoja. Käyttö tarkoittaa, että palvelu voi päivittää tiedot pitääkseen raportin ajan tasalla.
+Tässä opetusohjelmassa näytetään, miten voit päivittää Power BI -tietojoukon lähiverkkosi paikallisesta relaatiotietokannasta. Tässä opetusohjelmassa käytetään SQL Server -mallitietokantaa, jota Power BI:n täytyy käyttää paikallisen tietoyhdyskäytävän kautta.
 
-Tässä opetusohjelmassa opit seuraavat asiat:
+Tässä opetusohjelmassa käyt läpi seuraavat vaiheet:
+
 > [!div class="checklist"]
-> * raportin luominen SQL Server -tiedoista
-> * raportin julkaiseminen Power BI -palveluun
-> * SQL Serverin lisääminen yhdyskäytävän tietolähteeksi
-> * raportin tietojen päivittäminen.
-
-Jos et ole rekisteröitynyt Power BI:hin, [rekisteröidy ilmaiseen kokeiluversioon](https://app.powerbi.com/signupredirect?pbi_source=web) ennen aloittamista.
-
+> * Luo ja julkaise Power BI Desktop (.pbix) -tiedosto, joka tuo tiedot paikallisesta SQL Server -tietokannasta.
+> * Määritä tietolähde ja tietojoukkoasetukset Power BI:ssä SQL Server -yhteydellä tietoyhdyskäytävän kautta.
+> * Määritä päivitysaikataulu, joka takaa Power BI -tietojoukon ajantasaisuuden.
+> * Suorita tietojoukon manuaalinen päivitys.
+> * Tarkista päivityshistoriasta aiempien päivitysten tulokset.
+> * Tyhjennä resursseja poistamalla tässä opetusohjelmassa luodut artefaktit.
 
 ## <a name="prerequisites"></a>Edellytykset
 
-* [Asenna Power BI Desktop](https://powerbi.microsoft.com/desktop/)
-* [Asenna SQL Server](https://docs.microsoft.com/sql/database-engine/install-windows/install-sql-server) paikalliselle tietokoneelle 
-* [Asenna paikallinen tietoyhdyskäytävä](service-gateway-install.md) samalle paikalliselle tietokoneelle (tuotantoympäristössä yleensä eri tietokoneelle)
+- Jos et ole vielä rekisteröitynyt Power BI -käyttäjäksi, [rekisteröi maksuton Power BI -kokeilujakso](https://app.powerbi.com/signupredirect?pbi_source=web) ennen aloittamista.
+- [Asenna Power BI Desktop](https://powerbi.microsoft.com/desktop/) paikalliseen tietokoneeseen.
+- [Asenna SQL Server](/sql/database-engine/install-windows/install-sql-server) paikalliseen tietokoneeseen ja palauta [mallitietokanta varmuuskopiosta]((https://github.com/Microsoft/sql-server-samples/releases/download/adventureworks/AdventureWorksDW2017.bak)). Saat lisätietoja AdventureWorksista ohjeartikkelista [AdventureWorksin asennus ja määritys](/sql/samples/adventureworks-install-configure).
+- [Asenna paikallinen tietoyhdyskäytävä](service-gateway-install.md) samaan paikalliseen tietokoneeseen kuin SQL Server (hyötykäytössä ne asennettaisiin yleensä eri koneisiin).
 
+> [!NOTE]
+> Jos et ole yhdyskäytävän järjestelmänvalvoja ja et halua asentaa yhdyskäytävää itse, ota yhteyttä organisaatiosi yhdyskäytäväjärjestelmänvalvojaan. Hän voi luoda tarvittavan tietolähdemääritelmän, jolla voit yhdistää tietojoukon SQL Server -tietokantaan.
 
-## <a name="set-up-sample-data"></a>Mallitietojen ottaminen käyttöön
+## <a name="create-and-publish-a-power-bi-desktop-file"></a>Power BI Desktop -tiedoston luominen ja julkaiseminen
 
-Aloita lisäämällä mallitiedot SQL Serveriin, jotta voit käyttää kyseisiä tietoja opetusohjelmassa myöhemmin.
+Seuraavien ohjeiden avulla voit luoda Power BI -perusraportin AdventureWorksDW-mallitietokannan avulla. Julkaise raportti Power BI -palveluun, jotta saat Power BI:hin tietojoukon, jonka voit sitten määrittää ja päivittää myöhemmissä vaiheissa.
 
-1. Muodosta SQL Server Management Studiossa (SSMS) yhteys SQL Server -esiintymään ja luo testitietokanta.
+1. Napsauta Power BI Desktopin **Aloitus**-välilehdellä **Hae tiedot** \> **SQL Server**.
 
-    ```sql
-    CREATE DATABASE TestGatewayDocs
-    ```
+2. Anna **SQL Server -tietokannan** valintaikkunassa **palvelimen** ja **tietokannan (vapaaehtoinen)** nimet. Varmista, että **tietoyhteystilana** on **Tuo**, ja valitse sitten **OK**.
 
-2. Lisää taulukko ja tiedot luomaasi tietokantaan.
+    ![SQL Server -tietokanta](./media/service-gateway-sql-tutorial/sql-server-database.png)
 
-    ```sql
-    USE TestGatewayDocs
+3. Vahvista **tunnistetietosi** ja valitse sitten **Yhdistä**.
 
-    CREATE TABLE Product (
-        SalesDate DATE,
-        Category  VARCHAR(100),
-        Product VARCHAR(100),
-        Sales MONEY,
-        Quantity INT
-    )
+    > [!NOTE]
+    > Jos todennus ei onnistu, varmista, että valitsit oikean todennustavan ja että käytät tiliä, jolla on oikeus käyttää tietokantaa. Testiympäristöissä voit käyttää tietokantatodennusta tietyllä käyttäjänimellä ja salasanalla. Hyötykäyttöympäristöissä käytetään yleensä Windows-todennusta. Tutustu [päivityksen vianmääritysohjeisiin](refresh-troubleshooting-refresh-scenarios.md) ja pyydä lisätukea tietokannan järjestelmänvalvojalta.
 
-    INSERT INTO Product VALUES('2018-05-05','Accessories','Carrying Case',9924.60,68)
-    INSERT INTO Product VALUES('2018-05-06','Accessories','Tripod',1350.00,18)
-    INSERT INTO Product VALUES('2018-05-11','Accessories','Lens Adapter',1147.50,17)
-    INSERT INTO Product VALUES('2018-05-05','Accessories','Mini Battery Charger',1056.00,44)
-    INSERT INTO Product VALUES('2018-05-06','Accessories','Telephoto Conversion Lens',1380.00,18)
-    INSERT INTO Product VALUES('2018-05-06','Accessories','USB Cable',780.00,26)
-    INSERT INTO Product VALUES('2018-05-08','Accessories','Budget Movie-Maker',3798.00,9)
-    INSERT INTO Product VALUES('2018-05-09','Digital video recorder','Business Videographer',10400.00,13)
-    INSERT INTO Product VALUES('2018-05-10','Digital video recorder','Social Videographer',3000.00,60)
-    INSERT INTO Product VALUES('2018-05-11','Digital','Advanced Digital',7234.50,39)
-    INSERT INTO Product VALUES('2018-05-07','Digital','Compact Digital',10836.00,84)
-    INSERT INTO Product VALUES('2018-05-08','Digital','Consumer Digital',2550.00,17)
-    INSERT INTO Product VALUES('2018-05-05','Digital','Slim Digital',8357.80,44)
-    INSERT INTO Product VALUES('2018-05-09','Digital SLR','SLR Camera 35mm',18530.00,34)
-    INSERT INTO Product VALUES('2018-05-07','Digital SLR','SLR Camera',26576.00,88)
-    ```
+1. Jos näyttöön avautuu **salaustuen** valintaikkuna, valitse **OK**.
 
-3. Vahvista taulukon tiedot valitsemalla ne.
+2. Valitse **siirtymistoiminnon** valintaikkunassa **DimProduct**-taulukko ja sitten **Lataa**.
 
-    ```sql
-    SELECT * FROM Product
-    ```
+    ![Tietolähteen siirtymistoiminto](./media/service-gateway-sql-tutorial/data-source-navigator.png)
 
-    ![Kyselyn tulokset](media/service-gateway-sql-tutorial/query-results.png)
+3. Valitse **Pinottu pylväskaavio** Power BI Desktopin **Raportti**-näkymän **Visualisoinnit**-ruudusta.
 
+    ![Pinottu pylväskaavio](./media/service-gateway-sql-tutorial/stacked-column-chart.png)
 
-## <a name="build-and-publish-a-report"></a>Raportin koostaminen ja julkaiseminen
+4. Kun pylväskaavio on valittuna raporttipohjassa, valitse **Kentät**-ruudun **EnglishProductName**- ja **ListPrice**-kentät.
 
-Nyt kun käytössäsi on mallitietoja, muodosta yhteys SQL Serveriin Power BI Desktopissa ja koosta raportti kyseisistä tiedoista. Julkaise raportti sitten Power BI -palveluun.
+    ![Kentät-ruutu](./media/service-gateway-sql-tutorial/fields-pane.png)
 
-1. Napsauta Power BI Desktopin **Aloitus**-välilehdellä **Hae tiedot** > **SQL Server**.
+5. Vedä **päättymispäivämäärä** **raporttitason suodattimiin**. Valitse sitten **perussuodatuksen** kohdasta vain **(Tyhjä)** -valintaruutu.
 
-2. Anna palvelimen nimi **Palvelin**-kohtaan kirjoita **Tietokanta**-kohtaan ”TestGatewayDocs”. Valitse **OK**. 
-
-    ![Lisää palvelin ja tietokanta](media/service-gateway-sql-tutorial/server-database.png)
-
-3. Vahvista tunnistetietosi ja valitse sitten **Yhdistä**.
-
-4. Valitse **Siirtymistoiminto**-kohdassa **Tuote**-taulukko ja sitten **Lataa**.
-
-    ![Valitse Tuote-taulukko](media/service-gateway-sql-tutorial/select-product-table.png)
-
-5. Valitse **Pinottu pylväskaavio** Power BI Desktopin **Raportti**-näkymän **Visualisoinnit**-ruudusta.
-
-    ![Pinottu pylväskaavio](media/service-gateway-sql-tutorial/column-chart.png)    
-
-6. Kun pylväskaavio on valittu raporttipohjassa, valitse **Kentät**-ruudun **Tuote**- ja **Myynti**-kentät.  
-
-    ![Valitse kentät](media/service-gateway-sql-tutorial/select-fields.png)
+    ![Raporttitason suodattimet](./media/service-gateway-sql-tutorial/report-level-filters.png)
 
     Kaavion pitäisi nyt näyttää seuraavalta.
 
-    ![Valitse Tuote-taulukko](media/service-gateway-sql-tutorial/finished-chart.png)
+    ![Valmis pylväskaavio](./media/service-gateway-sql-tutorial/finished-column-chart.png)
 
-    Huomaa, että **SLR Cameran** on nykyinen myyntijohtaja. Tämä muuttuu, kun päivität tiedot ja raportin myöhemmin tässä opetusohjelmassa.
+    Ota huomioon, että viisi **Road-250**-tuotetta luetellaan suurimmilla listahinnoilla. Tämä muuttuu, kun päivität tiedot ja raportin myöhemmin tässä opetusohjelmassa.
 
-7. Tallenna raportti nimellä ”TestGatewayDocs.pbix”.
+6. Tallenna raportti nimellä AdventureWorksProducts.pbix.
 
-8. Valitse **Aloitus**-välilehdellä **Julkaise** > **Oma työtila** > **Valitse**. Kirjaudu sisään Power BI -palveluun, jos sinua pyydetään tekemään niin. 
+7. Valitse **Aloitus**-välilehdellä **Julkaise** \> **Oma työtila**\>**Valitse**. Kirjaudu sisään Power BI -palveluun, jos sinua pyydetään tekemään niin.
 
-    ![Julkaise raportti](media/service-gateway-sql-tutorial/publish-report.png)
+8. Valitse **Onnistui**-näytöllä **Avaa AdventureWorksProducts.pbix Power BI:ssä**.
 
-9. Valitse **Onnistui**-näytöllä **Avaa 'TestGatewayDocs.pbix' Power BI:ssä**.
+    [Julkaise Power BI:hin](./media/service-gateway-sql-tutorial/publish-to-power-bi.png)
 
+## <a name="connect-a-dataset-to-a-sql-server-database"></a>Tietojoukon yhdistäminen SQL Server -tietokantaan
 
-## <a name="add-sql-server-as-a-gateway-data-source"></a>SQL Serverin lisääminen yhdyskäytävän tietolähteeksi
+Yhdistit Power BI Desktopissa suoraan paikalliseen SQL Server -tietokantaan, mutta Power BI -palvelu edellyttää tietoyhdyskäytävää, joka toimii siltana pilven ja paikallisen verkkosi välillä. Näiden ohjeiden avulla voit lisätä paikallisen SQL Server -tietokannan tietolähteeksi yhdyskäytävälle ja yhdistää sitten tietojoukon tähän tietolähteeseen.
 
-Power BI Desktopissa muodostat yhteyden suoraan SQL Serveriin, mutta Power BI -palvelu edellyttää siltana toimivaa yhdyskäytävää. Nyt voit lisätä SQL Server -esiintymän edellisessä artikkelissa luomasi yhdyskäytävän tietolähteeksi (lueteltu [Edellytykset](#prerequisites)-kohdassa). 
+1. Kirjaudu sisään Power BI:hin. Valitse oikeasta yläkulmasta asetusten hammasrataskuvake ja valitse sitten **Asetukset**.
 
-1. Valitse ![Asetukset-rataskuvake](media/service-gateway-sql-tutorial/icon-gear.png) >  Power BI -palvelun oikeasta yläkulmasta ja valitse sitten **Hallitse yhdyskäytäviä**.
+    ![Power BI:n asetukset](./media/service-gateway-sql-tutorial/power-bi-settings.png)
 
-    ![Hallitse yhdyskäytäviä](media/service-gateway-sql-tutorial/manage-gateways.png)
+2. Valitse **Tietojoukot**-välilehdestä **AdventureWorksProducts**, jotta voit yhdistää paikalliseen SQL Server -tietokantaan tietoyhdyskäytävän kautta.
 
-2. Valitse **Lisää tietolähde** ja anna **Tietolähteen nimi** -kenttään ”test-sql-source”.
+3. Laajenna **yhdyskäytäväyhteyden kohta** ja varmista, että ainakin yksi yhdyskäytävä luetellaan. Jos sinulla ei ole yhdyskäytävää, tutustu tämän opetusohjelman [Edellytykset](#prerequisites)-kohtaan. Sieltä löytyy linkki yhdyskäytävän asennus- ja määritysohjeisiin.
 
-    ![Lisää tietolähde](media/service-gateway-sql-tutorial/add-data-source.png)
+    ![Yhdyskäytäväyhteys](./media/service-gateway-sql-tutorial/gateway-connection.png)
 
-3. Valitse **SQL Serverin** **Tietolähteen tyyppi** ja kirjoita sitten muut arvot näytetyllä tavalla.
+4. Laajenna **Toiminnot**-kohdan valintapainike, jotta näet tietolähteet, ja valitse sitten **Lisää yhdyskäytävään** -linkki.
 
-    ![Anna tietolähdeasetukset](media/service-gateway-sql-tutorial/data-source-settings.png)
+    ![Tietolähteen lisääminen yhdyskäytävään](./media/service-gateway-sql-tutorial/add-data-source-gateway.png)
 
+    > [!NOTE]
+    > Jos et ole yhdyskäytävän järjestelmänvalvoja ja et halua asentaa yhdyskäytävää itse, ota yhteyttä organisaatiosi yhdyskäytäväjärjestelmänvalvojaan. Hän voi luoda tarvittavan tietolähdemääritelmän, jolla voit yhdistää tietojoukon SQL Server -tietokantaan.
 
-   |          Asetus           |                                               Arvo                                                |
-   |---------------------------|----------------------------------------------------------------------------------------------------|
-   |   **Tietolähteen nimi**    |                                          test-sql-source                                           |
-   |   **Tietolähteen tyyppi**    |                                             SQL Server                                             |
-   |        **Palvelin**         | SQL Server -esiintymän nimi (tämän on oltava sama kuin Power BI Desktopissa määritetty nimi) |
-   |       **Tietokanta**        |                                          TestGatewayDocs                                           |
-   | **Todennusmenetelmä** |                                              Windows                                               |
-   |       **Käyttäjänimi**        |             Tili, kuten michael@contoso.com, jota käytät muodostaessasi yhteyden SQL Serveriin             |
-   |       **Salasana**        |                   Salasana, jota käytät muodostaessasi yhteyden SQL Serveriin                    |
+5. Anna ja vahvista **yhdyskäytävien** hallintasivun **tietolähdeasetusten** välilehdellä alla luetellut tiedot. Valitse tämän jälkeen **Lisää**.
 
+    | Asetus | Arvo |
+    | --- | --- |
+    | Tietolähteen nimi | AdventureWorksProducts |
+    | Tietolähteen tyyppi | SQL Server |
+    | Palvelin | Tämä on SQL Server -esiintymän nimi, esimerkiksi SQLServer01 (tämän on oltava sama kuin Power BI Desktopissa määritetty nimi). |
+    | Tietokanta | Tämä on SQL Server -tietokannan nimi, esimerkiksi AdventureWorksDW (tämän on oltava sama kuin Power BI Desktopissa määritetty nimi). |
+    | Todennusmenetelmä | Tämä on Windows tai Perus (yleensä Windows). |
+    | Käyttäjänimi | Tämä on käyttäjätili, jolla muodostat yhteyden SQL Serveriin. |
+    | Salasana | Tämä on sen tilin salasana, jolla muodostat yhteyden SQL Serveriin. |
 
-4. Valitse **Lisää**. *Yhteyden muodostaminen onnistui* -teksti tulee näkyviin, kun yhteys muodostettiin.
+    ![Tietolähdeasetukset](./media/service-gateway-sql-tutorial/data-source-settings.png)
 
-    ![Yhteyden muodostaminen onnistui](media/service-gateway-sql-tutorial/connection-successful.png)
+6. Laajenna **Tietojoukot**-välilehden **yhdyskäytäväyhteyden** osio uudelleen. Valitse määrittämäsi tietoyhdyskäytävä, jonka **tilana** on Käynnissä koneessa, johon asensit sen, ja valitse sitten **Käytä**.
 
-    Nyt voit sisällyttää SQL Server -tietoja Power BI -raporttinäkymiin ja -raportteihin tämän tietolähteen avulla.
+    ![Yhdyskäytäväyhteyden päivittäminen](./media/service-gateway-sql-tutorial/update-gateway-connection.png)
 
+## <a name="configure-a-refresh-schedule"></a>Päivitysaikataulun määrittäminen
 
-## <a name="configure-and-use-data-refresh"></a>Tietojen päivittämisen määritys ja käyttö
+Nyt kun olet yhdistänyt Power BI -tietojoukon SQL Server -tietokantaan paikallisesti tietoyhdyskäytävän kautta, määritä päivitysaikataulu näiden ohjeiden mukaisesti. Tietojoukon säännöllinen päivittäminen auttaa varmistamaan, että raporttisi ja koontinäyttösi sisältävät uusimmat tiedot.
 
-Raportti on julkaistu Power BI -palveluun ja tietolähde määritetty SQL Serveriin. Kun nämä ovat kunnossa, voit tehdä muutoksen Tuote-taulukkoon. Kyseinen muutos vaikuttaa julkaistuun raporttiin yhdyskäytävän kautta. Voit myös määrittää ajoitetut päivitykset tulevien muutosten käsittelyä varten.
+1. Valitse vasemmasta siirtymisruudusta **Oma työtila** \> **Tietojoukot**. Valitse kolme pistettä ( **. . .** ) **AdventureWorksProducts**-tietojoukon kohdalla ja valitse sitten **Ajoita päivitys**.
 
-1. Päivitä Tuote-taulukko SSMS:ssä.
+    > [!NOTE]
+    > Muista valita kolme pistettä **AdventureWorksProducts**-tietojoukon kohdalta, ei samannimisen raportin kohdalta. **AdventureWorksProducts**-raportin pikavalikko ei sisällä **Ajoita päivitys** -toimintoa.
 
-    ```sql
-    UPDATE Product
-    SET Sales = 32508, Quantity = 252
-    WHERE Product='Compact Digital'     
+2. Määritä **Ajoitettu päivitys** -osion **Pidä tietosi ajan tasalla** -kohdassa päivitysasetus **käyttöön**.
 
-    ```
+3. Valitse sopiva **päivitystaajuus** (tässä esimerkissä **päivittäin**) ja valitse sitten **Aika**-kohdasta **Lisää uusi aika** ja määritä haluamasi päivitysajankohta (tässä esimerkissä 6.30 ja 18.30).
 
-2. Valitse Power BI -palvelun vasemmasta siirtymisruudusta **Oma työtila**.
+    ![Ajoitetun päivityksen määrittäminen](./media/service-gateway-sql-tutorial/configure-scheduled-refresh.png)
 
-3. Valitse **Tietojoukot**-kohdan **TestGatewayDocs**-tietojoukosta **lisää** (**...** ) > **Päivitä nyt**.
+    > [!NOTE]
+    > Voit määrittää jopa kahdeksan päivittäistä ajankohtaa, jos tietojoukkosi on jaetussa kapasiteetissa, tai 48 ajankohtaa, jos tietojoukkosi on Power BI Premiumissa.
 
-    ![Päivitä nyt](media/service-gateway-sql-tutorial/refresh-now.png)
+4. Jätä **Lähetä päivitysvirheiden ilmoitusten sähköpostiviestit minulle** -valintaruutu valituksi ja valitse sitten **Käytä**.
 
-4. Valitse **Oma työtila** > **Raportit** > **TestGatewayDocs**. Näet, miten **Compact Digital** on nyt myyntijohtaja päivityksen vaikutuksesta. 
+## <a name="perform-an-on-demand-refresh"></a>Manuaalisen päivityksen suorittaminen
 
-    ![Päivitetyt tiedot](media/service-gateway-sql-tutorial/updated-data.png)
+Nyt kun olet määrittänyt päivitysaikataulun, Power BI päivittää tietojoukkosi aikataulun mukaisesti 15 minuutin tarkkuudella. Jos haluat päivittää tiedot tätä aiemmin esimerkiksi yhdyskäytävän ja tietolähteen määritteiden testaamista varten, suorita päivitys vasemman siirtymisruudun tietojoukko-valikossa olevalla **Päivitä nyt** -toiminnolla. Päivityspyynnöt eivät vaikuta seuraavan ajoitetun päivityksen ajankohtaan, mutta ne kuluttavat päivittäistä päivityskiintiötä (kuten aiemmin mainittiin).
 
-5. Valitse **Oma työtila** > **Raportit** > **TestGatewayDocs**. Valitse **lisää** (**. . .**) > **Ajoita päivitys**.
+Simuloi nyt toimintoa kokeillaksesi muutos mallitietoihin päivittämällä AdventureWorksDW-tietokannan DimProduct-taulukkoa SQL Server Management Studiolla (SSMS).
 
-6. Valitse **Ajoita päivitys**, aseta päivityksen arvoksi **Käytössä** ja valitse sitten **Käytä**. Tietojoukko päivitetään oletuksena päivittäin.
+```sql
 
-    ![Ajoita päivitys](media/service-gateway-sql-tutorial/schedule-refresh.png)
+UPDATE [AdventureWorksDW].[dbo].[DimProduct]
+SET ListPrice = 5000
+WHERE EnglishProductName ='Road-250 Red, 58'
+
+```
+
+Toimi sitten näiden ohjeiden mukaisesti, jotta päivitetyt tiedot lähetetään yhdyskäytäväyhteyden kautta tietojoukkoon ja raportteihin Power BI:ssä.
+
+1. Valitse Power BI -palvelun vasemmasta siirtymisruudusta **Oma työtila** ja laajenna se.
+
+2. Valitse **Tietojoukot**-kohdassa kolme pistettä **(. . .** ) **AdventureWorksProducts**-tietojoukon kohdalla ja valitse sitten **Päivitä nyt**.
+
+    ![Päivitä nyt](./media/service-gateway-sql-tutorial/refresh-now.png)
+
+    Huomaat oikeasta yläkulmasta, että Power BI valmistautuu pyydetyn päivityksen suorittamiseen.
+
+3. Valitse **Oma työtila \> Raportit \> AdventureWorksProducts**. Näet, että tiedot päivittyvät ja että suurimman listahinnan tuote on nyt **Road-250 Red, 58**.
+
+    ![Päivitetty pylväskaavio](./media/service-gateway-sql-tutorial/updated-column-chart.png)
+
+## <a name="review-the-refresh-history"></a>Päivityshistorian tarkistaminen
+
+Aiempien päivitysten tulokset kannattaa tarkistaa säännöllisesti päivityshistoriasta. Tietokannan tunnistetiedot ovat saattaneet vanhentua tai yhdyskäytävä on saattanut olla offline-tilassa ajoitetun päivityksen aikana. Näiden ohjeiden avulla voit tarkistaa päivityshistorian mahdollisten ongelmien varalta.
+
+1. Valitse Power BI -käyttöliittymän oikeasta yläkulmasta asetusten hammasrataskuvake ja valitse sitten **Asetukset**.
+
+2. Siirry **tietojoukkojen** näkymään ja valitse tietojoukko, jota haluat tarkastella (esimerkiksi **AdventureWorksProducts**).
+
+3. Avaa **Päivityshistoria**-valintaikkuna valitsemalla **Päivityshistoria**.
+
+    ![Päivityshistorian linkki](./media/service-gateway-sql-tutorial/refresh-history-link.png)
+
+4. **Ajoitettujen** välilehdestä näet aiemmat ajoitetut ja manuaaliset päivitykset sekä niiden **alkamis-** ja **päättymisajat** sekä **tilan**. Tila on **Suoritettu** merkkinä siitä, että Power BI suoritti päivityksen onnistuneesti. Epäonnistuneista päivityksistä näet virheilmoituksen, josta voit lukea lisätietoja.
+
+    ![Päivityshistorian tiedot](./media/service-gateway-sql-tutorial/refresh-history-details.png)
+
+    > [!NOTE]
+    > OneDrive-välilehti koskee vain tietojoukkoja, jotka ovat yhteydessä OneDriveen tai SharePoint Onlineen tallennettuihin Power BI Desktop -tiedostoihin, Excel-työkirjoihin tai CSV-tiedostoihin. Tästä on lisätietoja kohdassa [Tietojen päivittäminen Power BI:ssä](refresh-data.md).
 
 ## <a name="clean-up-resources"></a>Resurssien tyhjentäminen
-Jos et halua enää käyttää mallitietoja, suorita `DROP DATABASE TestGatewayDocs` SSMS:ssä. Jos et halua käyttää SQL Server -tietolähdettä, [poista kyseinen tietolähde](service-gateway-manage.md#remove-a-data-source). 
 
+Jos et halua enää käyttää mallitietoja, hylkää tietokanta SQL Server Management Studiossa (SSMS). Jos et halua käyttää SQL Server -tietolähdettä, poista kyseinen tietolähde tietoyhdyskäytävästäsi. Sinun kannattaa harkita myös tietoyhdyskäytävän asennuksen poistamista, jos asensit sen vain tätä opetusohjelmaa varten. Sinun kannattaa poistaa myös AdventureWorksProducts-tietojoukko ja AdventureWorksProducts-raportti, jotka Power BI loi, kun latasit palveluun AdventureWorksProducts.pbix-tiedoston.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
-Tässä opetusohjelmassa opit seuraavat asiat:
-> [!div class="checklist"]
-> * raportin luominen SQL Server -tiedoista
-> * raportin julkaiseminen Power BI -palveluun
-> * SQL Serverin lisääminen yhdyskäytävän tietolähteeksi
-> * raportin tietojen päivittäminen.
 
-Siirry seuraavaan artikkeliin oppimaan lisää
-> [!div class="nextstepaction"]
-> [Power BI -yhdyskäytävän hallinta](service-gateway-manage.md)
+Tässä opetusohjelmassa opit tuomaan tietoja paikallisesta SQL Server -tietokannasta Power BI -tietojoukkoon sekä päivittämään tämän tietojoukon aikataulun mukaisesti tai manuaalisesti pitääksesi tätä tietojoukkoa käyttävät raportit ja koontinäytöt ajan tasalla Power BI:ssä. Nyt voit oppia lisää tietoyhdyskäytävien ja tietolähteiden hallinnasta Power BI:ssä. Sinun kannattaa tutustua ehkä myös Power BI:n tietojen päivittämistä käsittelevään käsitteelliseen artikkeliin.
 
+- [Power BI:n paikallisen yhdyskäytävän hallinta](service-gateway-manage.md)
+- [Tietolähteen hallinta – tuonti ja ajoitettu päivitys](service-gateway-enterprise-manage-scheduled-refresh.md)
+- [Tietojen päivittäminen Power BI:ssä](refresh-data.md)

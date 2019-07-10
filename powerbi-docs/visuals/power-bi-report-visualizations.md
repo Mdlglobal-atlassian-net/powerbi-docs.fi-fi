@@ -9,20 +9,20 @@ featuredvideoid: SYk_gWrtKvM
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/28/2019
+ms.date: 07/01/2019
 LocalizationGroup: Visualizations
-ms.openlocfilehash: d470a262bd8a5e6590746fb07889b1230f5cfc25
-ms.sourcegitcommit: 8bf2419b7cb4bf95fc975d07a329b78db5b19f81
-ms.translationtype: MT
+ms.openlocfilehash: aabc58e34e5ba61f44673905450c8feb8d6ace47
+ms.sourcegitcommit: e67bacbfc5638ee97e3d2e0e7f5bd2d9aac78f9c
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66375652"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67532219"
 ---
 # <a name="visualizations-in-power-bi-reports"></a>Visualisoinnit Power BI -raporteissa
 
 Visualisoinnit näyttävät merkityksellisiä tietoja datasta. Power BI -raportissa voi olla yksittäinen visualisointi yhdellä sivulla tai sivukaupalla visualisointeja. Power BI -palvelussa visualisointeja voi [kiinnittää raporteista koontinäyttöihin](../service-dashboard-pin-tile-from-report.md).
 
-On tärkeää erottaa raportin *suunnittelijat* ja raportin *kuluttajien* Jos olet tai muokkaat raporttia ja olet suunnittelutyökalua.  Kehittäjät ovat raportin ja sen pohjana olevan tietojoukon muokkausoikeuksia. Power BI Desktopissa tämä tarkoittaa, että voit avata tietojoukon tietonäkymässä ja luoda visualisointeja raporttinäkymässä. Power BI-palvelussa Tämä tarkoittaa sitä, voit avata tietojoukon tai raportin raporttieditorin [muokkausnäkymässä](../consumer/end-user-reading-view.md). Jos raportti tai koontinäyttö on [jaettu kanssasi](../consumer/end-user-shared-with-me.md), olet raportin **kuluttaja**. Pystyt voit tarkastella ja käsitellä raporttia ja sen visualisointeja, mutta ei voi tallentaa merkittäviä muutoksia.
+On tärkeää erottaa toisistaan raporttien *suunnittelija* ja *kuluttajat*.  Jos luot tai muokkaat raporttia, olet suunnittelija.  Suunnittelijoilla on raportin ja sen pohjana olevan tietojoukon muokkausoikeudet. Power BI Desktopissa tämä tarkoittaa, että voit avata tietojoukon tietonäkymässä ja luoda visualisointeja raporttinäkymässä. Power BI -palvelussa tämä tarkoittaa, että voit avata tietojoukon tai raportin editorin [muokkausnäkymässä](../consumer/end-user-reading-view.md). Jos raportti tai koontinäyttö on [jaettu kanssasi](../consumer/end-user-shared-with-me.md), olet raportin **kuluttaja**. Voit tarkastella ja käsitellä raporttia ja sen visualisointeja, mutta et voi tallentaa merkittäviä muutoksia.
 
 Power BI:ssä on monta erilaista visualisointityyppiä käytettävissä suoraan VISUALISOINNIT-ruudusta.
 
@@ -33,7 +33,7 @@ Voit myös hakea lisää vaihtoehtoja [Microsoft AppSource -yhteisösivustossa](
 <iframe width="560" height="315" src="https://www.youtube.com/embed/SYk_gWrtKvM?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
 
 
-  Jos olet uusi Power BI -käyttäjä tai haluat kerrata, löydät Power BI -visualisointien perusteet alla olevien linkkien kautta.  Vaihtoehtoisesti voit hakea lisätietoja sisällysluettelosta (artikkelin vasemmassa reunassa).
+Jos olet uusi Power BI -käyttäjä tai haluat kerrata, löydät Power BI -visualisointien perusteet alla olevien linkkien kautta.  Vaihtoehtoisesti voit hakea lisätietoja sisällysluettelosta (artikkelin vasemmassa reunassa).
 
 ## <a name="add-a-visualization-in-power-bi"></a>Visualisoinnin lisääminen Power BI:ssä
 
@@ -42,6 +42,18 @@ Voit myös hakea lisää vaihtoehtoja [Microsoft AppSource -yhteisösivustossa](
 ## <a name="upload-a-custom-visualization-and-use-it-in-power-bi"></a>Mukautetun visualisoinnin lataaminen ja käyttäminen Power BI:ssä
 
 Lisää oma tai [Microsoft AppSource -yhteisösivustosta](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals) löytämäsi mukautettu visualisointi. Oletko luova henkilö? Tutustu lähdekoodiimme ja luo [kehittäjien työkalujen](../developer/custom-visual-develop-tutorial.md) avulla uusi visualisointityyppi. Halutessasi voit [jakaa sen yhteisölle](../developer/office-store.md). Saat lisätietoja mukautetun visualisoinnin kehittämisestä [Power BI:n mukautetun visualisoinnin kehittäminen](../developer/custom-visual-develop-tutorial.md) -ohjeartikkelista.
+
+## <a name="personalize-your-visualization-pane-preview"></a>Visualisointiruudun räätälöinti (esikatselu)
+
+Jos käytät samaa mukautettua visualisointia useissa raporteissa, voit kiinnittää sen visualisointiruutuusi. Jos haluat kiinnittää visualisoinnin, napsauta sitä hiiren kakkospainikkeella ja kiinnitä se ruutuun.
+
+![Visualisointiruudun kiinnittäminen](media/power-bi-report-visualizations/power-bi-pin-custom-visual-option.png)
+
+Kun visualisointi on kiinnitetty, se liikkuu muiden oletusvisualisointien mukana. Tämä visualisointi on nyt yhdistetty tiliin, jolla olet kirjautuneena, joten uudet luomasi raportit sisältävät automaattisesti tämän visualisoinnin, jos olet kirjautuneena. Tämän ansiosta voit standardoida tietyn visualisoinnin todella helposti ilman, että sinun täytyy lisätä se jokaiseen raporttiin.
+
+![Räätälöity visualisointiruutu](media/power-bi-report-visualizations/power-bi-personalized-visualization-pane.png)
+
+Kun tämä toiminto on esikatseluvaiheessa, näet kiinnitettyjä visualisointeja vain Power BI Desktopissa. Lisäksi tämä toiminto edellyttää, että olet kirjautuneena.
 
 ## <a name="change-the-visualization-type"></a>Visualisointityypin muuttaminen
 
@@ -52,9 +64,9 @@ Kokeile [muuttaa visualisointityyppiä](power-bi-report-change-visualization-typ
 Power BI -palvelussa visualisointeja voi [kiinnittää koontinäyttöön](../service-dashboard-pin-tile-from-report.md) ruutuna. Jos muutat visualisointia kiinnittämisen jälkeen, koontinäytön ruutu ei muutu – jos se oli viivakaavio, se pysyy viivakaaviona, vaikka muuttaisit sen raportissa rengaskaavioksi.
 
 ## <a name="limitations-and-considerations"></a>Rajoitukset ja huomioitavat asiat
-- Visualisoinnin voi ladata hitaasti tietolähteen ja (mittareilla tai sarakkeilla) kenttien määrän mukaan.  On suositeltavaa rajoittaa visualisoinnit 10 – 20 yhteensä kenttiin, sekä luettavuutta ja suorituskyvyn syistä. 
+- Visualisointi saattaa latautua hitaasti. Tämä riippuu tietolähteestä ja kenttien määrästä (mittarit tai sarakkeet).  Suosittelemme luettavuus- ja suorituskykysyistä, että käytät visualisoinneissa enintään yhteensä 10–20 kenttää. 
 
-- Visualisointien yläraja on 100 kentät (mittareilla tai sarakkeilla). Jos visualisoinnin lataaminen epäonnistuu, pienentää kenttien määrän.   
+- Visualisoinnissa voi käyttää enintään 100 kenttää (mittarit tai sarakkeet). Jos visualisointisi lataaminen epäonnistuu, pienennä kenttien määrää.   
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 

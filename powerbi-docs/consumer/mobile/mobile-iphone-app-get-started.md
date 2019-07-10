@@ -9,12 +9,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 06/27/2018
 ms.author: mshenhav
-ms.openlocfilehash: b0de20cc32c32360f4f37c70e673dba01740a860
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 2de1b866a237a0193c33c552078ca70bd5e632ce
+ms.sourcegitcommit: 63a697c67e1ee37e47b21047e17206e85db64586
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61137439"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67498998"
 ---
 # <a name="get-started-with-the-power-bi-mobile-app-on-ios-devices"></a>iOS-laitteiden Power BI -mobiilisovelluksen käytön aloittaminen
 Microsoft Power BI for iOS -sovellus iPhonella, iPadilla tai iPod Touchilla tarjoaa BI-mobiilikäyttökokemuksen Power BI:lle, Power BI -raporttipalvelimelle ja Reporting Services -palveluille. Voit tarkastella ja käsitellä yrityksen koontinäyttöjä paikallisesti ja pilvipalvelussa missä tahansa, live-tilassa kosketusnäytöllisessä mobiilikäytössä. Tarkastele tietoja koontinäytöissä ja jaa sähköpostitse tai tekstiviestillä työtovereiden kanssa. Pysy ajan tasalla kaikkein ajantasaisimmilla tiedoilla [Apple Watchin](mobile-apple-watch.md) avulla.  
@@ -33,7 +33,7 @@ Katso [Power BI -mobiilisovellusten uudet ominaisuudet](mobile-whats-new-in-the-
 ## <a name="download-the-app"></a>Lataa sovellus
 [Lataa iOS-sovellus](http://go.microsoft.com/fwlink/?LinkId=522062 "Lataa iOS-sovellus") Apple-sovelluskaupasta iPhonelle, iPadille tai iPod Touchille.
 
-Voit suorittaa Power BI for iOS -sovelluksen iPhone 5:ssa tai uudemmassa käyttäen iOS 10:a tai uudempaa. Voit myös suorittaa sen iPadilla tai iPod Touchilla, jossa on iOS 10 tai uudempi. 
+Voit käyttää Power BI for iOS -sovellusta iOS 11:llä ja tätä uudemmilla käyttöjärjestelmillä. 
 
 ## <a name="sign-up-for-the-power-bi-service"></a>Rekisteröidy Power BI -palveluun
 Jos et ole jo rekisteröitynyt, siirry osoitteeseen [powerbi.com](https://powerbi.microsoft.com/get-started/) ja valitse kohdasta **Power BI - Pilviyhteistyö ja -jakaminen** **Kokeile ilmaiseksi**.

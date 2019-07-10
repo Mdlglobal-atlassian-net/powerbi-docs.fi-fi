@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 06/07/2018
-ms.openlocfilehash: ae56a27393ba476828ff87d7f458815318ea79c1
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 9673217cfd7c5af70bdd293e8d5df51e5e7dee07
+ms.sourcegitcommit: 9278540467765043d5cb953bcdd093934c536d6d
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "64770359"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67559083"
 ---
 # <a name="using-oauth-to-connect-to-power-bi-report-server-and-ssrs"></a>Yhdistäminen Power BI -raporttipalvelimeen ja SSRS-palvelimeen OAuthia käyttämällä
 
@@ -25,7 +25,7 @@ Opi määrittämään ympäristö tukemaan OAuth-todennusta Power BI -mobiilisov
 Voit käyttää OAuthia muodostaessasi yhteyden Power BI-raporttipalvelimeen ja Reporting Servicesiin, tarkastellaksesi mobiiliraporttejasi tai suorituskykyilmaisimia. Windows Server 2016 sisältää joitain Web Application Proxy (WAP) -roolin parannuksia, jotka sallivat tällaisen todennuksen.
 
    > [!NOTE]
-   > Power BI-raporttipalvelimella isännöityjen Power BI-raporttien tarkasteleminen WAP avulla voit todentaa tällä hetkellä tuetaan vain iOS-sovellus. Android-sovellus ei tueta virallisesti tällä hetkellä.
+   > Power BI -raporttipalvelimella isännöityjen Power BI -raporttien tarkastelemista WAP-todentamisen kautta tuetaan nyt iOS- ja Android-sovelluksissa.
 
 ## <a name="requirements"></a>Vaatimukset
 
@@ -63,7 +63,7 @@ Lisätietoja asianmukaisen palvelun päänimen (SPN) määrittämisestä raportt
 
 ### <a name="enabling-negotiate-authentication"></a>Todennuksen neuvottelun ottaminen käyttöön
 
-Sinun on määritettävä raporttipalvelimen todennustyypiksi RSWindowsNegotiate, jos haluat määrittää raporttipalvelimen käyttämään Kerberos-todennusta. Tämä tehdään rsreportserver.config-tiedostossa.
+Sinun on määritettävä raporttipalvelimen todennustyypiksi RSWindowsNegotiate, jos haluat määrittää raporttipalvelimen käyttämään Kerberos-todennusta. Teet tämän rsreportserver.config-tiedostossa.
 
 ```xml
 <AuthenticationTypes>  
@@ -81,7 +81,7 @@ Sinun on määritettävä ADFS-palvelut Windows 2016 -palvelimeen käyttöympär
 
 ### <a name="create-an-application-group"></a>Sovellusryhmän luominen
 
-Sinun kannattaa luoda AD FS -hallintanäytössä Reporting Servicesille sovellusryhmä, joka sisältää tietoja Power BI -mobiilisovelluksia varten.
+Sinun kannattaa luoda AD FS -hallintanäytössä Reporting Servicesille sovellusryhmä, joka sisältää tietoja Power BI -mobiilisovelluksille.
 
 Voit luoda sovellusryhmän noudattamalla seuraavia ohjeita.
 
@@ -113,12 +113,12 @@ Voit luoda sovellusryhmän noudattamalla seuraavia ohjeita.
    ![ADFS-sovellusryhmän ohjattu toiminto 02](media/mobile-oauth-ssrs/adfs-application-group-wizard2.png)
 7. Valitse **Seuraava**.
 
-8. Anna raporttipalvelimen URL-osoite. Tämä on ulkoinen URL-osoite, joka ohjaa Web Application Proxy -palvelimeesi. Sen pitäisi olla seuraavassa muodossa.
+8. Anna raporttipalvelimen URL-osoite. Osoite on ulkoinen URL-osoite, joka ohjaa Web Application Proxy -palvelimeesi. Sen pitäisi olla seuraavassa muodossa.
 
    > [!NOTE]
    > Huomaa, että tämän URL-osoitteen kirjainkoko on merkitsevä.
 
-   *https://< raporttipalvelimen URL-osoite > tai raportteja*
+   *https://< raporttipalvelimen url-osoite >/reports*
 
    ![ADFS-sovellusryhmän ohjattu toiminto 03](media/mobile-oauth-ssrs/adfs-application-group-wizard3.png)
 9. Valitse **Seuraava**.
@@ -239,7 +239,7 @@ Voit ottaa käyttöön monimenetelmäisen todentamisen lisäsuojauksen ottamisek
 
 ## <a name="troubleshooting"></a>Vianmääritys
 
-### <a name="you-receive-the-error-failed-to-login-to-ssrs-server-please-verify-server-configuration"></a>Näyttöön tulee seuraava virheviesti: Kirjautuminen SSRS-palvelimeen epäonnistui. Tarkista välityspalvelimen määritykset.
+### <a name="you-receive-the-error-failed-to-login-to-ssrs-server-verify-server-configuration"></a>Näyttöön tulee seuraava virheviesti: Kirjautuminen SSRS-palvelimeen epäonnistui. Tarkista palvelimen määritykset.
 
 ![](media/mobile-oauth-ssrs/powerbi-mobile-error.png)
 

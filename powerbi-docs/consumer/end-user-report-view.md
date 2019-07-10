@@ -8,43 +8,52 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 05/10/2018
+ms.date: 06/24/2019
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: e2d3bec59078577e2b4d4595c0925753b2cbb53a
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: d740dd012c6041893a2fa5fc5f1a97a74dcf1566
+ms.sourcegitcommit: e67bacbfc5638ee97e3d2e0e7f5bd2d9aac78f9c
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65608103"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67532462"
 ---
-# <a name="change-the-display-of-a-report-page"></a>Muuta raporttisivun näyttö
-Raportteja tarkastellaan erilaisia näyttöjen ja kuvasuhde useissa eri laitteissa.  Muuttaa tapaa, jolla raporttisivu näyttää sopimaan tarpeisiisi.    
+# <a name="change-the-display-of-a-report-page"></a>Raportin sivun näyttökoon muuttaminen
 
-![raportti näyttää kangas](media/end-user-report-view/power-bi-report.png)
+Ihmiset lukevat raportteja useilla eri laitteilla, joissa on erikokoisia näyttöjä ja erilaisia kuvasuhteita. Voit muokata raporttisivun näyttötapaa tarpeisiisi sopivaksi.
 
-## <a name="explore-the-view-menu"></a>Tutustu näkymä-valikko
-Näytä asetukset antaa sinulle mahdollisuuden Näytä raporttisivujen kokoa ja valitset leveys.
+![Näyttökuva, jossa raportti näkyy pohjalla.](media/end-user-report-view/power-bi-report.png)
 
-- Oletetaan, että tarkastelet raportin pieni laite ja on vaikea nähdä otsikoihin ja kuvateksteihin.  Valitse **Näytä** > **todellinen koko** raporttisivun koon. Raportin liikkuminen vierityspalkkeja avulla. 
+## <a name="explore-the-view-menu"></a>Näytä-valikon esittely
 
-    ![raportti näkyvissä pohjassa, kaksi vierityspalkkia](media/end-user-report-view/power-bi-actual-size-new.png)
+![Näyttökuvassa näkyvät avattavan Näytä-valikon eri vaihtoehdot.](media/end-user-report-view/power-bi-view-menu.png)
 
 
-- Toinen vaihtoehto on sopimaan näytön leveys raportti valitsemalla **Sovita leveyteen**. Tämä saattaa vaatia edelleen pystysuuntainen vierityspalkki käyttöä.
+**Näytä**-valikon toiminnoilla voit näyttää raporttisivuja joustavasti haluamallasi leveydellä ja koolla:
 
-  ![raportissa käyttämällä koko kangas leveys](media/end-user-report-view/power-bi-fit-to-width-new.png)
+- Oletetaan, että käytät raporttia pienellä laitteella ja sinulla on vaikeuksia nähdä otsikoita ja selitteitä.  Voit suurentaa raporttisivun kokoa valitsemalla **Näytä** > **Todellinen koko**. Voit siirtyä raportissa vierityspalkkien avulla.
 
-- Jos et halua tahansa vierityspalkkeja, mutta haluat kapeammaksi näytön kokoa.  Valitse **Sovita sivulle**.
+    ![Näyttökuvassa on raportti todellisen koon asetuksella. Raportissa näkyy kaksi vierityspalkkia.](media/end-user-report-view/power-bi-actual-size-new.png)
 
-   ![raportti näyttää ilman vierityspalkkeja](media/end-user-report-view/power-bi-fit-to-width.png)
+- Voit myös sovittaa raportin näytön leveyteen valitsemalla **Sovita leveyteen**. Koska tämä säätää vain leveyttä, ei korkeutta, sinun täytyy ehkä silti käyttää edelleen pystysuuntaista vierityspalkkia.
 
-   
-- Lopullinen asetusta **koko näytön**, raporttisivun ilman menubars ja otsikot näyttää. Koko näytön voi olla hyvä valinta pienillä näytöillä, jossa tiedot on vaikea nähdä.  Koko näytön voidaan myös hyvä valinta, kun kelvolliseen raporttisivujen suurilla näytöillä, jotta käyttäjät voivat tarkastella, mutta ei tee toimia.  
+  ![Näyttökuvassa on leveyteen sovitettu raportti, jossa näkyy pystysuuntainen vierityspalkki.](media/end-user-report-view/power-bi-fit-to-width-new.png)
 
-    ![raportti näkyy koko näytössä](media/end-user-report-view/power-bi-full-screen.png)
+- Jos et halua nähdä vierityspalkkeja ja haluat käyttää näytön koon tehokkaasti, valitse **Sovita sivulle**.
 
-Kun suljet raportin, näkymäasetuksia ei ole tallennettu, mutta palauttaa oletusarvoisen. Jos se on tärkeää voi tallentaa näitä asetuksia, käytä [kirjanmerkit](end-user-bookmarks.md). 
+   ![Näyttökuvassa on sivulle sovitettu raportti.](media/end-user-report-view/power-bi-fit-to-width.png)
+
+- Valittavissa on myös neljä **suuren kontrastin väriä**: Suuri kontrasti 1, Suuri kontrasti 2, Suuri kontrasti, musta ja Suuri kontrasti, valkoinen. Tämä on helppokäyttötoiminto, jonka avulla heikosti näkevät käyttäjät näkevät raportin paremmin:
+
+    ![Näyttökuvassa on raportti, jossa on käytössä Suuri kontrasti 1 -asetus.](media/end-user-report-view/power-bi-high-contrast-1.png)![Näyttökuvassa on raportti, jossa on käytössä Suuri kontrasti 2 -asetus.](media/end-user-report-view/power-bi-high-contrast-2.png)
+    ![Näyttökuvassa on raportti, jossa on käytössä Suuri kontrasti, musta -asetus.](media/end-user-report-view/power-bi-high-contrast-black.png)![Näyttökuvassa on raportti, jossa on käytössä Suuri kontrasti, valkoinen -asetus.](media/end-user-report-view/power-bi-high-contrast-white.png)
+
+- Viimeinen vaihtoehto **Koko näyttö** näyttää raporttisivun ilman valikkorivejä ja otsikoita. Koko näyttö voi olla hyvä vaihtoehto pienille näytöille, joissa yksityiskohtien näkeminen on vaikeaa.  Koko näyttö voi olla hyvä vaihtoehto myös silloin, kun heijastat raporttisivuja suurille näytöille ihmisten tarkasteltavaksi (ei käsiteltäväksi).  
+
+    ![raportti näytetään näkyy koko näytössä](media/end-user-report-view/power-bi-full-screen.png)
+
+Kun poistut raportista, **näkymäasetuksia** ei tallenneta, vaan ne palautetaan oletuksiin. Jos haluat tallentaa näitä asetuksia, käytä [kirjanmerkkejä](end-user-bookmarks.md).
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
-[Raporttien luominen Cortanaa varten](../service-cortana-answer-cards.md)
+
+* [Aloita raportin Suodattimet-ruudun esittely](end-user-report-filter.md)

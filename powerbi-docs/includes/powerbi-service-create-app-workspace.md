@@ -1,16 +1,37 @@
+---
+title: Työtilan luominen – Power BI
+description: Ohjeet työtilan luomiseen – sisällytä
+services: powerbi
+author: maggiesMSFT
+ms.service: powerbi
+ms.topic: include
+ms.date: 04/04/2019
+ms.author: maggies
+ms.custom: include file
+ms.openlocfilehash: bbd1f47b2d798e662f84f009b3260a11d39cb23d
+ms.sourcegitcommit: e67bacbfc5638ee97e3d2e0e7f5bd2d9aac78f9c
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67534623"
+---
 1. Aloita luomalla työtila. Valitse **Työtilat** > **Luo sovelluksen työtila**. 
    
      ![Luo sovellustyötila](media/powerbi-service-create-app-workspace/power-bi-create-app-workspace.png)
    
-    Sinne voit sijoittaa sisältöä, jota sinä ja työtoverisi voitte käyttää yhdessä.
+    Tänne voit sijoittaa sisältöä, jota sinä ja työtoverisi voitte työstää yhdessä.
 
-2. Anna työtilalle nimi. Jos vastaava **työtilan tunnus** ei ole käytettävissä, muokkaa nimeä niin, että saat yksilöllisen tunnuksen.
+2. Napsauta **Olet luomassa päivitettyä työtilaa** -bannerissa **Palaa perinteiseen**. 
+
+    ![Perinteiseen työtilaan palaamisen toiminto](media/powerbi-service-create-app-workspace/power-bi-revert-classic-workspace.png)
+
+3. Anna työtilalle nimi. Jos vastaava **työtilan tunnus** ei ole käytettävissä, muokkaa nimeä niin, että saat yksilöllisen tunnuksen.
    
-     Siitä tulee myös sovelluksen nimi.
+     Sovelluksella on sama nimi.
    
      ![Nimeä työtila](media/powerbi-service-create-app-workspace/power-bi-apps-create-workspace-name.png)
 
-3. Sinun täytyy määrittää joitakin asetuksia. Jos valitset vaihtoehdon **Julkinen**, kuka tahansa organisaatiossasi voi nähdä, mitä työtilassa on. **Yksityinen** puolestaan tarkoittaa, että vain työtilan jäsenet voivat nähdä sen sisällön.
+3. Sinun täytyy määrittää joitakin asetuksia. Jos valitset vaihtoehdon **Julkinen**, kuka tahansa organisaatiossasi voi nähdä, mitä työtilassa on. **Yksityinen** tarkoittaa sitä, että vain työtilan jäsenet näkevät sen sisällön.
    
      ![Määritä yksityiseksi tai julkiseksi](media/powerbi-service-create-app-workspace/power-bi-apps-create-workspace-private-public.png)
    

@@ -11,12 +11,12 @@ ms.date: 04/18/2018
 ms.author: mblythe
 ms.custom: seodec18
 LocalizationGroup: Gateways
-ms.openlocfilehash: 5d9e468ecf3bf1fdc2e138ac06202820bbd96bcf
-ms.sourcegitcommit: 57a12aa42c8549debc60ff1c8e78533dc42e1b86
-ms.translationtype: MT
+ms.openlocfilehash: 8acc0e403c983de79657cd01a7aa7f458bfb01ad
+ms.sourcegitcommit: 9278540467765043d5cb953bcdd093934c536d6d
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2019
-ms.locfileid: "66469776"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67559045"
 ---
 # <a name="manage-a-power-bi-on-premises-gateway"></a>Power BI:n paikallisen yhdyskäytävän hallinta
 
@@ -31,6 +31,8 @@ Jos olet juuri asentanut yhdyskäytävän, suosittelemme seuraavaksi [lisäämä
 
 Power BI tukee monia paikallisia tietolähteitä, joista jokaisella on omat vaatimuksensa. Yhdyskäytävää voidaan käyttää yksittäisen tai useiden tietolähteiden kanssa. Tässä esimerkissä näytetään, miten voit lisätä SQL Serverin tietolähteeksi. Vaiheita voidaan soveltaa muihinkin tietolähteisiin.
 
+> [!NOTE]
+> Yhdyskäytävän järjestelmänvalvojat voivat nyt luoda useita tietolähteitä, jotka muodostavat yhteyden samaan lähteeseen eri tunnistetiedoilla sekä lisätä käyttäjiä kuhunkin näistä tietolähteistä käyttöoikeustason perusteella.
 
 ### <a name="add-a-data-source"></a>Tietolähteen lisääminen
 
@@ -53,7 +55,12 @@ Power BI tukee monia paikallisia tietolähteitä, joista jokaisella on omat vaat
 
 1. SQL Serverin tapauksessa valitaan **Todennusmenetelmäksi** **Windows** tai **Perus** (SQL-todennus).  Jos valitset **Perus**, anna tietolähteen tunnistetiedot.
 
-1. Kohdassa **lisäasetukset**, voit myös määrittää [tietosuojatason](https://support.office.com/article/Privacy-levels-Power-Query-CC3EDE4D-359E-4B28-BC72-9BEE7900B540) tietolähteen (ei koske [DirectQuery](desktop-directquery-about.md)).
+1. Jos tämä tietolähde ei ole tällä hetkellä käytettävissä tai toimii hitaasti, valitse **Ohita testiyhteys**. Muussa tapauksessa tietolähteen luominen saattaa epäonnistua.
+
+    > [!NOTE]
+    > Testiyhteyden ohittamista ei tueta Analysis Servicesille.
+
+1. **Lisäasetukset**-kohdassa voit halutessasi määrittää tietolähteen [yksityisyystason](https://support.office.com/article/Privacy-levels-Power-Query-CC3EDE4D-359E-4B28-BC72-9BEE7900B540) (ei koske [DirectQuerya](desktop-directquery-about.md)).
 
     ![Lisäasetukset](media/service-gateway-manage/advanced-settings.png)
 
@@ -74,7 +81,7 @@ Jos haluat poistaa tietolähteen, valitse tietolähde ja sitten **Poista**.
 
 ## <a name="manage-users-and-administrators"></a>Käyttäjien ja järjestelmänvalvojien hallinta
 
-Kun olet lisännyt tietolähteen yhdyskäytävään, anna käyttäjille ja käyttöoikeusryhmille käyttöoikeudet kyseiseen tietolähteeseen (ei koko yhdyskäytävään). Tietolähteen käyttäjäluettelolla hallitaan vain sitä, ketkä voivat julkaista raportteja, jotka sisältävät tietoja kyseisestä tietolähteestä. Raporttien omistajat voivat luoda raporttinäkymiä, sisältöpaketteja ja sovelluksia ja jakaa niitä muiden käyttäjien kanssa.
+Kun olet lisännyt tietolähteen yhdyskäytävään, anna käyttäjille ja sähköpostia käyttäville käyttöoikeusryhmille käyttöoikeudet kyseiseen tietolähteeseen (ei koko yhdyskäytävään). Tietolähteen käyttäjäluettelolla hallitaan vain sitä, ketkä voivat julkaista raportteja, jotka sisältävät tietoja kyseisestä tietolähteestä. Raporttien omistajat voivat luoda raporttinäkymiä, sisältöpaketteja ja sovelluksia ja jakaa niitä muiden käyttäjien kanssa.
 
 Voit myös antaa käyttäjille ja käyttöoikeusryhmille järjestelmänvalvojan oikeudet yhdyskäytävään.
 
@@ -98,14 +105,14 @@ Siinä kaikki. Muista, että sinun on lisättävä käyttäjiä jokaiseen tietol
 
 ### <a name="remove-users-from-a-data-source"></a>Poista käyttäjiä tietolähteestä
 
-Tietolähteen **Käyttäjät**-välilehdeltä voit poistaa käyttäjiä tai käyttöoikeusryhmiä, jotka voivat käyttää tätä tietolähdettä.
+Tietolähteen **Käyttäjät**-välilehdeltä voit poistaa käyttäjiä tai sähköpostia käyttäviä käyttöoikeusryhmiä, jotka voivat käyttää tätä tietolähdettä.
 
 ![Poista käyttäjä](media/service-gateway-manage/remove-user.png)
 
 
 ### <a name="add-and-remove-administrators"></a>Lisää ja poista järjestelmänvalvojia
 
-Yhdyskäytävän **Järjestelmänvalvojat**-välilehdeltä voit lisätä ja poistaa käyttäjiä (tai käyttöoikeusryhmiä), jotka voivat hallita yhdyskäytävää.
+Yhdyskäytävän **Järjestelmänvalvojat**-välilehdeltä voit lisätä ja poistaa käyttäjiä (tai sähköpostia käyttäviä käyttöoikeusryhmiä), jotka voivat hallita yhdyskäytävää.
 
 ![Järjestelmänvalvojat-välilehti](media/service-gateway-manage/administrators-tab.png)
 

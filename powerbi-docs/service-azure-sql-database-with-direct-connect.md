@@ -9,14 +9,14 @@ ms.author: mblythe
 manager: kfile
 ms.reviewer: ''
 ms.custom: ''
-ms.date: 06/20/2018
+ms.date: 06/13/2019
 LocalizationGroup: Data from databases
-ms.openlocfilehash: 5365c076b75d0989df8db15c1dc16f4e11bc3f09
-ms.sourcegitcommit: c539726c9c180e899a8a34443e3fda2b9848beb2
+ms.openlocfilehash: 2363b9da3ac46ce9fd49f19a00950a4a3cf23502
+ms.sourcegitcommit: 30ee81f8c54fd7e4d47d7e3ffcf0e6c3bb68f6c2
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66448421"
+ms.lasthandoff: 06/29/2019
+ms.locfileid: "67468130"
 ---
 # <a name="azure-sql-database-with-directquery"></a>Azure SQL -tietokanta ja DirectQuery
 
@@ -26,12 +26,12 @@ DirectQueryn avulla kyselyt lähetetään takaisin Microsoft Azuren SQL-tietokan
 
 **Huomautukset:**
 
-* Määritä palvelimen täydellinen nimi yhteyttä muodostettaessa (katso lisätietoja alla)
-* Varmista, että tietokannan palomuurisääntöjen määrityksenä on ”[Salli Azure-palvelujen käyttö](https://msdn.microsoft.com/library/azure/ee621782.aspx)”
-* Jokainen toiminto, kuten sarakkeen valitseminen tai suodattimen lisääminen, lähettää kyselyn takaisin tietokantaan
-* Ruudut päivitetään tunnin välein (päivitystä ei tarvitse ajoittaa). Tätä voidaan muokata Lisäasetukset-kohdassa, kun muodostat yhteyden.
-* Q&A ei ole käytettävissä DirectQuery-tietojoukoissa
-* Rakenteen muutoksia ei poimita automaattisesti
+* Määritä palvelimen täydellinen nimi yhteyttä muodostettaessa (katso lisätietoja alla).
+* Varmista, että tietokannan palomuurisäännöt on määritetty [sallimaan Azure-palveluiden käyttö](https://msdn.microsoft.com/library/azure/ee621782.aspx).
+* Jokainen toiminto, kuten sarakkeen valitseminen tai suodattimen lisääminen, lähettää kyselyn takaisin tietokantaan.
+* Ruudut päivitetään tunnin välein (päivitystä ei tarvitse ajoittaa). Voit muokata päivitysväliä lisäasetuksissa, kun muodostat yhteyden.
+* Q&A ei ole käytettävissä DirectQuery-tietojoukoissa.
+* Rakenteen muutoksia ei poimita automaattisesti.
 
 Nämä rajoitukset ja muistiinpanot saattavat muuttua jatkaessamme käyttökokemusten kehittämistä. Yhdistämisen vaiheet on kuvattu alla.
 
@@ -40,11 +40,11 @@ Nämä rajoitukset ja muistiinpanot saattavat muuttua jatkaessamme käyttökokem
 
 ## <a name="power-bi-desktop-and-directquery"></a>Power BI Desktop ja DirectQuery
 
-Jotta voit muodostaa yhteyden Microsoft Azuren SQL-tietokantaan DirectQueryä käyttämällä, sinun on käytettävä Power BI Desktopia. Tämä lähestymistapa tarjoaa enemmän joustavuutta ja ominaisuuksia. Power BI Desktopin avulla luodut raportit voidaan sitten julkaista Power BI -palveluun. Saat lisätietoja yhteyden muodostamisesta [Microsoft Azuren SQL-tietokantaan DirectQueryä käyttämällä](desktop-use-directquery.md) Power BI Desktopissa.
+Jos haluat muodostaa yhteyden Azure SQL -tietokantaan DirectQueryllä, sinun täytyy käyttää Power BI Desktopia. Tämä lähestymistapa tarjoaa enemmän joustavuutta ja ominaisuuksia. Power BI Desktopin avulla luodut raportit voidaan sitten julkaista Power BI -palveluun. Saat lisätietoja yhteyden muodostamisesta [Microsoft Azuren SQL-tietokantaan DirectQueryä käyttämällä](desktop-use-directquery.md) Power BI Desktopissa.
 
-## <a name="finding-parameter-values"></a>Parametriarvojen etsiminen
+## <a name="find-parameter-values"></a>Parametriarvojen etsiminen
 
-Täydellinen palvelimen nimi ja tietokannan nimi löytyvät Azure-portaalista.
+Voit etsiä täydellisen palvelimen nimen ja tietokannan nimen Azure-portaalista.
 
 ![Uusi Azure-portaalin päivitys](media/service-azure-sql-database-with-direct-connect/azureportnew_update.png)
 
@@ -58,4 +58,4 @@ Täydellinen palvelimen nimi ja tietokannan nimi löytyvät Azure-portaalista.
 * [Mikä on Power BI?](power-bi-overview.md)  
 * [Tietojen noutaminen Power BI:hin](service-get-data.md)  
 
-Onko sinulla muuta kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
+Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)

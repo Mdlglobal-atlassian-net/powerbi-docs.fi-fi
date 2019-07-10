@@ -9,12 +9,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 04/08/2019
 ms.author: mshenhav
-ms.openlocfilehash: d491855a268c57d7958d52b7c1e9e9191c28601e
-ms.sourcegitcommit: 69a0e340b1bff5cbe42293eed5daaccfff16d40a
+ms.openlocfilehash: a6718ed8f582150ad8f13d638308700f9004a354
+ms.sourcegitcommit: 9278540467765043d5cb953bcdd093934c536d6d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67038902"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67558991"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Power BI -mobiilisovellusten uudet ominaisuudet
 Lisätietoja aiheeseen liittyvistä uusista ominaisuuksista:
@@ -22,6 +22,15 @@ Lisätietoja aiheeseen liittyvistä uusista ominaisuuksista:
 * [Power BI -tiimin mobiilisovelluksia käsittelevä blogi](https://powerbi.microsoft.com/blog/tag/mobile/)
 * [Power BI Desktopin uudet ominaisuudet](../../desktop-latest-update.md)  
 * [Power BI -palvelun uudet ominaisuudet](../../service-whats-new.md)  
+
+## <a name="june-2019"></a>Kesäkuu 2019
+
+### <a name="barcode-scanning-is-now-available-in-android"></a>Viivakoodien lukeminen nyt mahdollista Androidilla
+Voit nyt lukea Androidin (puhelin tai tabletti) Power BI -sovelluksella tuotteisiin tai hyllyihin myymälässä painettuja viivakoodeja ja saada näkyviin aiheeseen liittyviä Power BI -raportteja, jotka on suodatettu luetun arvon mukaan. Lue lisätietoja [tietojen suodattamisesta viivakoodeilla](mobile-apps-scan-barcode-iphone.md).
+
+### <a name="supporting-pbix-reports-hosted-in-pbi-rs-over-adfs-configuration-ios-android"></a>PBI RS -raporttien tuki PBI-RS-isännöinnin ADFS- ja WAP-määritysten kautta (iOS & Android)
+
+PBI RS:ssä isännöidyt ADFS-määrityksen kautta käytettävät Power BI -raportit (PBIX) toimivat nyt myös Power BI -mobiilisovelluksilla.
 
 ## <a name="may-2019"></a>Toukokuu 2019
 

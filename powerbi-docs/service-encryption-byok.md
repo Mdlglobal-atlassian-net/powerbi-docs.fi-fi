@@ -10,12 +10,12 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 06/18/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: 5c93a50ce481c5fad899c1911b30100dca7cb841
-ms.sourcegitcommit: 8c52b3256f9c1b8e344f22c1867e56e078c6a87c
+ms.openlocfilehash: 96939c3ad29418ad868175dfd8093847ab427187
+ms.sourcegitcommit: 63a697c67e1ee37e47b21047e17206e85db64586
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67264512"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67498965"
 ---
 # <a name="bring-your-own-encryption-keys-for-power-bi-preview"></a>Omien salausavainten tuominen Power BI:hin (esikatselu)
 
@@ -103,13 +103,22 @@ BYOK:n käyttöönotto edellyttää, että olet Power BI -palvelun vuokraajan j�
 Add-PowerBIEncryptionKey -Name'Contoso Sales' -KeyVaultKeyUri'https://contoso-vault2.vault.azure.net/keys/ContosoKeyVault/b2ab4ba1c7b341eea5ecaaa2wb54c4d2'
 ```
 
-Cmdlet-komento hyväksyy kaksi kytkinparametria, jotka vaikuttavat nykyisten ja tulevien kapasiteettien salaukseen. Kaikki kytkimet ovat oletuksena pois käytöstä:
+Jos haluat lisätä useita avaimia, suorita `Add-PowerBIEncryptionKey` eri arvoilla parametreille -`-Name` ja `-KeyVaultKeyUri`. 
 
-- `-Activate`: Ilmaisee, että tätä avainta käytetään kaikissa vuokraajan olemassa olevissa kapasiteeteissa.
+Cmdlet-komento hyväksyy kaksi kytkinparametria, jotka vaikuttavat nykyisten ja tulevien kapasiteettien salaukseen. Kumpaakaan kytkintä ei ole oletusarvoisesti määritetty:
+
+- `-Activate`: tämä ilmaisee sitä, että tätä avainta käytetään kaikissa vuokraajan olemassa olevissa kapasiteeteissa, joita ei ole jo salattu.
 
 - `-Default`: Ilmaisee, että tämä avain on nyt koko vuokraajan oletusarvo. Kun luot uuden kapasiteetin, uusi kapasiteetti perii tämän avaimen.
 
-Jos määrität `-Default`-arvon, kaikki tälle vuokraajalle jatkossa luodut kapasiteetit salataan määrittämäsi avaimen (tai päivitetyn oletusavaimen) avulla. Et voi perua oletustoimintoa, joten et voi jatkossa luoda vuokraajaasi premium-kapasiteettia, jossa ei käytetä BYO:ta.
+> [!IMPORTANT]
+> Jos määrität arvon parametrille `-Default`, kaikki vuokraajallesi jatkossa luodut kapasiteetit salataan määrittämäsi avaimen (tai päivitetyn oletusavaimen) avulla. Et voi perua oletustoimintoa, joten et voi jatkossa luoda Premium-kapasiteettia vuokraajaasi, jossa ei käytetä BYOK:ta.
+
+Kun otat BYOK:n käyttöön vuokraajassasi, määritä yhden tai useamman Power BI -kapasiteetin salausavain parametrilla [`Set-PowerBICapacityEncryptionKey`](/powershell/module/microsoftpowerbimgmt.admin/set-powerbicapacityencryptionkey):
+
+```powershell
+Set-PowerBICapacityEncryptionKey-CapacityId 08d57fce-9e79-49ac-afac-d61765f97f6f -KeyName 'Contoso Sales'
+```
 
 Voit määrittää, miten BYOK:ta käytetään vuokraajassa. Jos haluat esimerkiksi salata yksittäisen kapasiteetin, kutsu `Add-PowerBIEncryptionKey` ja sulje `-Activate` tai `-Default` kutsun ulkopuolelle. Kutsu sitten `Set-PowerBICapacityEncryptionKey` siinä kapasiteetissa, jossa haluat ottaa BYOK:n käyttöön.
 
@@ -136,12 +145,6 @@ Power BI sisältää cmdlet-lisäkomentoja, joiden avulla voit hallintaan vuokra
     ```
 
     Huomaa, että salaus on käytössä kapasiteettitasolla, mutta saat salauksen tilan määritetyn työtilan tietojoukon tasolla.
-
-- [`Set-PowerBICapacityEncryptionKey`](/powershell/module/microsoftpowerbimgmt.admin/set-powerbicapacityencryptionkey) päivittää Power BI -kapasiteetin salausavaimen:
-
-    ```powershell
-    Set-PowerBICapacityEncryptionKey-CapacityId 08d57fce-9e79-49ac-afac-d61765f97f6f -KeyName 'Contoso Sales'
-    ```
 
 - [ `Switch-PowerBIEncryptionKey` ](/powershell/module/microsoftpowerbimgmt.admin/switch-powerbiencryptionkey) vaihtaa (tai _kierrättää_) salaukseen käytetyn avainversion. Cmdlet-komento on päivittää avaimen `-KeyVaultKeyUri`-arvon `-Name`:
 

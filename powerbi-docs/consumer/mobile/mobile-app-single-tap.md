@@ -1,6 +1,6 @@
 ---
-title: Määritä raportin toimia yhdellä napautuksella
-description: Opi määrittämään tai napauta raportin toimia.
+title: Raportin määrittäminen käsiteltäväksi yhdellä napautuksella
+description: Lue ohjeet siihen, miten voit määrittää raportin käsiteltäväksi yhdellä napautuksella tai kaksoisnapautuksella.
 author: mshenhav
 manager: kfile
 ms.reviewer: ''
@@ -9,14 +9,14 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 04/08/2019
 ms.author: mshenhav
-ms.openlocfilehash: c7f5476ed9d47cc42f275d51801a44c4ee3482ca
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: c553b921ebeb30b8fb8ec7ba9f7bce74f6c31dee
+ms.sourcegitcommit: 9278540467765043d5cb953bcdd093934c536d6d
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61340590"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67558957"
 ---
-# <a name="configure-report-interaction-to-single-tap-or-double-tap-preview"></a>Määritä raportin vuorovaikutuksen yhdellä napautuksella tai kaksinkertainen napauttamalla (esikatselu)
+# <a name="configure-report-interaction-to-single-tap-or-double-tap"></a>Raportin määrittäminen käsiteltäväksi yhdellä napautuksella tai kaksoisnapautuksella
 Koskee seuraavia:
 
 | ![iPhone](././media/mobile-reports-in-the-mobile-apps/ios-logo-40-px.png) | ![Android-puhelin](././media/mobile-reports-in-the-mobile-apps/android-logo-40-px.png) | 
@@ -25,24 +25,24 @@ Koskee seuraavia:
 
 Power BI -raportti on vuorovaikutteinen näkymä tiedoistasi, joka sisältää eri havaintoja ja merkityksellisiä tietoja esittäviä visualisointeja.
 
-Voit määrittää, miten voit käsitellä tietojasi. Voit päättää, haluatko on yhdellä napautuksella vuorovaikutuksen tai napauta double vuorovaikutuksen.
+Voit määrittää, miten tietojasi käsitellään. Voit valita, käsitelläänkö tietojasi yhdellä napautuksella vai kaksoisnapautuksella.
 
-* Kaksinkertainen napauttamalla toimia-visualisointia ensimmäistä napauttamalla valitsee sen ja vain toinen napauttamalla visualisoinnissa suorittaa toiminnon itse, kuten osittajan kohteen valitseminen, ristiinkorostaminen tai napsauta linkkiä, painike ja niin edelleen.
+* Kaksoisnapautuskäsittelyssä visualisoinnin ensimmäinen napautus valitsee sen ja vasta visualisoinnin toinen napautus suorittaa itse toiminnon, esimerkiksi osittajakohteen valinnan, ristiinkorostuksen, linkin napsautuksen jne.
 
-* Yhdellä napautuksella toimia yhdellä napautuksella sekä – valitsee visualisoinnin ja suorittaa toiminnon.
-![Power BI mobile yhdellä napautuksella](./media/mobile-app-single-tap/single-tap-2.gif)
+* Yhden napautuksen käsittelyssä yksi napautus tekee molemmat: sekä valitsee visualisoinnin että suorittaa toiminnon.
+![Power BI Mobilen yksi napautus](./media/mobile-app-single-tap/single-tap-2.gif)
 
 
-Alkaen Power BI-sovelluksen versio 18.0 iOS-ja 112540 Android kaikki uudet asennukset määritettävä yksittäisen napauttamalla oletustoimintaa.
-Käyttäjät, jotka jo asennettu puhelimessa Power BI-ja päivittää näitä uusia versioita tarjotaan vaihtaa yhdellä napautuksella.
+iOS:n Power BI -sovellusversiosta 18.0 ja Androidin Power BI -sovellusversiosta 112540 lähtien kaikkiin asennuksiin määritetään oletustoiminnaksi yksi napautus.
+Käyttäjät, joilla on jo Power BI asennettuna puhelimeensa ja jotka päivittävät näihin uusiin versioihin, saavat mahdollisuuden vaihtaa yhteen napautukseen.
 
-## <a name="change-interaction-behavior"></a>Voit muuttaa vuorovaikutuksen käytöstä
+## <a name="change-interaction-behavior"></a>Käsittelytavan vaihtaminen
 
-Voit muuttaa vuorovaikutuksen toimintaa, siirry sovelluksen asetuksiin ja ota käyttöön tai yhdellä napautuksella vuorovaikutuksen käytöstä poistamista.
+Jos haluat vaihtaa käsittelytapaa, siirry sovelluksen asetuksiin, ja ota yhden napautuksen käsittely käyttöön tai poista se käytöstä.
 
-![Power BI-mobiilisovelluksen muuttaa raportin vuorovaikutus](./media/mobile-app-single-tap/configure-single-tap.png)
+![Power BI -mobiilisovelluksen raportin käsittelytavan vaihtaminen](./media/mobile-app-single-tap/configure-single-tap.png)
 
-Tämä artikkeli koskee sekä vaakasuuntaiseksi ja puhelinraportit.
+Tämä artikkeli koskee sekä vaakaraportteja että puhelinraportteja.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 * [Puhelimelle optimoitujen Power BI -raporttien tarkasteleminen ja käyttäminen](mobile-apps-view-phone-report.md)

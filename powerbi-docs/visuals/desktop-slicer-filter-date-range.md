@@ -7,81 +7,102 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/28/2019
+ms.date: 06/24/2019
 ms.author: mihart
 LocalizationGroup: Create reports
-ms.openlocfilehash: 3d8057c4d35294dd5e83638b721169e4d54d2adf
-ms.sourcegitcommit: 8bf2419b7cb4bf95fc975d07a329b78db5b19f81
-ms.translationtype: MT
+ms.openlocfilehash: c039b00ced1bf62c8be72d218177d04a9fd3accf
+ms.sourcegitcommit: e67bacbfc5638ee97e3d2e0e7f5bd2d9aac78f9c
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66374405"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67532616"
 ---
-# <a name="use-a-relative-date-slicer-and-filter-in-power-bi"></a>Suhteellisen päivämääräosittajan ja suodattimen käyttö Power BI
+# <a name="use-a-relative-date-slicer-and-filter-in-power-bi-desktop"></a>Suhteellisen päivämääräosittajan ja -suodattimen käyttö Power Bi Desktopissa
+
 **Suhteellisen päivämääräosittajan** tai **suhteellisen päivämääräsuodattimen** avulla voit käyttää aikasidonnaisia suodattimia missä tahansa tietomallisi päivämääräsarakkeessa. Voit esimerkiksi käyttää **suhteellisen päivämäärän osittajaa** näyttääksesi vain viimeisten 30 päivän (tai kuukauden tai kalenterikuukausien jne.) aikana tapahtuneen myynnin tiedot. Kun päivität tiedot, suhteellinen ajanjakso käyttää automaattisesti soveltuvaa suhteellisen päivämäärän rajoitusta.
 
-![](media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter-01.png)
+![Näyttökuvassa on raportti, jossa näkyy suhteelliseen päivämäärän osittajaan osoittava nuoli.](media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter-01.png)
 
-## <a name="using-the-relative-date-range-slicer"></a>Suhteellisen päivämääräalueen osittajan käyttäminen
-Voit käyttää suhteellisen päivämäärän osittajaa kuten mitä muuta tahansa osittajaa. Luo yksinkertaisesti **osittaja**raportillesi ja valitse sitten päivämääräarvo **Kenttä**-arvoksi. Seuraavassa kuvassa valittuna on *OrderDate*-kenttä.
+## <a name="use-the-relative-date-range-slicer"></a>Suhteellisen päivämääräalueen osittajan käyttäminen
 
-![](media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter-02.png)
+Voit käyttää suhteellisen päivämäärän osittajaa kuten mitä muuta tahansa osittajaa. Luo **osittaja** raportillesi ja valitse sitten päivämääräarvo **Kenttä**-arvoksi. Seuraavassa kuvassa valitsimme *OrderDate*-kentän.
 
-Valitse osittajasta piirtoalustaan ja näytölle avautuu osittajasta visualisoinnin oikeassa yläkulmassa. Jos visualisointi sisältää päivämäärä tietoja, valikosta Näytä vaihtoehto **suhteellisen**. 
+![Näyttökuvassa on Visualisoinnit-ruutu, jossa näkyy osittajavisualisointikuvakkeeseen ja kenttään osoittavia nuolia.](media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter-02.png)
 
-![](media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter-03.png)
+Valitse osittaja pohjalta ja valitse sitten osittajavisualisoinnin oikeassa yläkulmassa oleva merkki. Jos visualisoinnissa on päivämäärätietoja, valikossa näkyy **Suhteellinen**-vaihtoehto.
+
+![Näyttökuvassa on osittajavisualisointi, jossa on korostettuna oikean yläkulman merkki ja nuoli Suhteellinen-valikkokohtaan.](media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter-03.png)
 
 Valitse *Suhteellinen* suhteellisen päivämäärän osittajaa varten.
 
-Voit sitten valita haluamasi asetukset. *Suhteellisen päivämäärän osittajan* ensimmäisessä pudotusvalikossa on seuraavat vaihtoehdot:
+Voit sitten valita haluamasi asetukset.
+
+*Suhteellisen päivämäärän osittajan* ensimmäisellä asetuksella on seuraavat vaihtoehdot:
+
+![Näyttökuvassa näkyvät Suhteellinen-asetuksen ensimmäiset vaihtoehdot.](media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter-04.png)
 
 * Viimeinen
+
 * Seuraava
+
 * Tämä
 
-Nämä valinnat on esitetty seuraavassa kuvassa.
+*Suhteellisen päivämäärän osittajan* toisella (keskimmäinen) asetuksella voit antaa numeron suhteellisen päivämääräalueen määrittelemiseksi.
 
-![](media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter-04.png)
-
-*Suhteellisen päivämäärän osittajan* seuraavat (keskimmäiset) asetukset sallivat numeron kirjoittamisen suhteellisen päivämääräalueen määrittelemiseksi.
+![Näyttökuvassa näkyvät Suhteellinen-asetuksen toiset vaihtoehdot.](media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter-04a.png)
 
 Kolmannen asetuksen avulla voit valita päivämäärämittarin. Sinulla on seuraavat vaihtoehdot:
 
+![Näyttökuvassa näkyvät Suhteellinen-asetuksen kolmannet vaihtoehdot.](media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter-05.png)
+
 * Päivät
+
 * Viikot
+
 * Viikot (kalenteri)
+
 * Kuukautta
+
 * Kuukaudet (kalenteri)
+
 * Vuodet
+
 * Vuodet (kalenteri)
 
-Nämä valinnat on esitetty seuraavassa kuvassa.
+Jos valitset luettelosta **Kuukaudet** ja annat keskimmäiseksi asetukseksi *2*, tapahtuu seuraavaa:
 
-![](media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter-05.png)
+* Jos tänään on 20. heinäkuuta,
 
-Jos valitset tästä luettelosta vaihtoehdon *Kuukaudet* ja syötät keskimmäiselle asetukselle arvon 2, tapahtuu seuraavaa: jos päivämäärä on esimerkiksi 20.7., osittajan rajoittamassa taulukossa näytetään tiedot kahdelta edeltävältä kuukaudelta, alkaen 20.5. ja jatkuen aina 20.7. eli kyseisen päivän päivämäärään asti.
+* osittajan rajoittamiin visualisointeihin sisältyvät tiedot näyttävät tiedot kahdelta edelliseltä kuukaudelta:
 
-Toisaalta, jos valitsit *Kuukaudet (Kalenteri)* rajoitettu näyttö esittäisi tiedot 1.5. - 30.6. (viimeiset kaksi täyttä kalenterikuukautta).
+* 20. toukokuuta – 20. heinäkuuta (tämä päivä).
+
+Jos taas valitsit *Kuukaudet (Kalenteri)* , rajoitettu näyttö esittäisi tiedot ajalta 1.5.–30.6. (viimeiset kaksi täyttä kalenterikuukautta).
 
 ## <a name="using-the-relative-date-range-filter"></a>Suhteellisen päivämääräalueen suodattimen käyttäminen
-Voit myös luoda raporttisivullesi tai koko raportillesi suhteellisen päivämääräalueen suodattimen. Tee niin raahaamalla päivämääräkentän **sivutason suodattimien** tai **raporttitason alueen suodattimien** alueille **Kenttä**-ruudussa, kuten seuraavassa kuvassa on esitetty.
 
-![](media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter-06.png)
+Voit myös luoda raporttisivullesi tai koko raportillesi suhteellisen päivämääräalueen suodattimen. Tee niin vetämällä päivämääräkenttä **sivutason suodattimien** tai **raporttitason alueen suodattimien** kohtiin **Kenttä**-ruudussa:
 
-Kun suodatin on luotu, voit muuttaa suhteellista päivämääräaluetta samalla tavalla kuin **suhteellisen päivämäärän osittajaa**. Valitse **Suodatintyypin** pudotusvalikosta **Suhteellisen päivämäärän suodatus**.
+![Näyttökuvassa on OrderDate-kenttä, jota vedetään sivutason suodattimien kohtaan.](media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter-06.png)
 
-![](media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter-07.png)
+Siellä voit vaihtaa suhteellinen päivämääräaluetta. Tämä toimii samalla tavalla kuin **suhteellisen päivämääräosittajan** muokkaaminen. Valitse **Suodatintyypin** pudotusvalikosta **Suhteellisen päivämäärän suodatus**.
 
-Kun **Suhteellisen päivämäärän suodatus** on valittu, näet kolme muokattavaa kohtaa, mukaan lukien numerolaatikon keskellä, aivan kuten osittajankin kohdalla.
+![Näyttökuvassa näkyy suodatintyypin avattava valikko sekä hiiren osoitin, joka on suhteellisen päivämääräsuodatuksen kohdalla.](media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter-07.png)
 
-![](media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter-08.png)
+Kun valitset **suhteellisen päivämääräsuodatuksen**, näet kolme muokattavaa kohtaa, mukaan lukien numerolaatikon keskellä, aivan kuten osittajankin kohdalla.
 
-Sen enempää ei tarvita, jotta voisit käyttää näitä suhteellisen päivämäärän rajoituksia raporteissasi.
+![Näyttökuvassa näkyy raporttitason suodattimia sekä nuolia osoittamassa kohteiden näyttämisen kohteen.](media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter-08.png)
 
 ## <a name="limitations-and-considerations"></a>Rajoitukset ja huomioitavat asiat
+
 **Suhteellisen päivämäärän osittajaa** ja suodatinta koskevat seuraavat rajoitukset ja huomioon otettavat seikat.
 
 * **Power BI:n** tietomallit eivät sisällä aikavyöhyketietoja. Mallit voivat tallentaa aikoja, mutta niistä ei selviä mistä aikavyöhykkeestä on kyse.
-* Osittaja ja suodatin perustuvat aina aikaan UTC-muodossa, joten jos muokkaat suodatinta raportissa ja lähetät sen toisella aikavyöhykkeellä olevalle kollegalle, näette molemmat saman ajan. Toisaalta, jos et ole UTC-aikavyöhykkeellä, saatat nähdä eri aikasiirtymän mukaisia tietoja kuin oletit.
-* Paikallisen aikavyöhykkeen ajan mukaisesti talletetut tiedot voidaan muuttaa UTC-ajaksi **Kyselyeditoria** käyttäen.
 
+* Osittaja ja suodatin perustuvat aina UTC-aikaan. Jos siis muokkaat suodatinta raportissa ja lähetät sen toisella aikavyöhykkeellä olevalle kollegalle, näette molemmat saman ajan. Jos ette ole UTC-aikavyöhykkeellä, sekä sinun että kollegasi täytyy huomioida aikaero.
+
+* Voit muuntaa paikallisen aikavyöhykkeen ajan mukaisesti talletetut tiedot UTC-ajaksi **kyselyeditorilla**.
+
+## <a name="next-steps"></a>Seuraavat vaiheet
+
+Opettele [käyttämään ryhmittely ja lokerointia Power BI Desktopissa](../desktop-grouping-and-binning.md).

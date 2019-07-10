@@ -1,5 +1,5 @@
 ---
-title: Viivakoodin skannaaminen iPhonella Power BI -mobiilisovelluksesta
+title: Viivakoodin lukeminen Power BI -mobiilisovelluksesta
 description: Voit skannata viivakoodeja todellisessa maailmassa ja siirtyä suoraan suodatettuihin BI-tietoihin Power BI -mobiilisovelluksessa.
 author: mshenhav
 manager: kfile
@@ -9,21 +9,28 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 10/13/2017
 ms.author: mshenhav
-ms.openlocfilehash: 3fd2d4888f76490a01c0742e68e6820c7055326e
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 432b65f8d7f461ac1942cf8996f9cc67e756fc7f
+ms.sourcegitcommit: 9278540467765043d5cb953bcdd093934c536d6d
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61137238"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67559012"
 ---
-# <a name="scan-a-barcode-with-your-iphone-from-the-power-bi-mobile-app"></a>Viivakoodin skannaaminen iPhonella Power BI -mobiilisovelluksesta
+# <a name="scan-a-barcode-with-your-device-from-the-power-bi-mobile-app"></a>Viivakoodin lukeminen laitteella Power BI -mobiilisovelluksesta
 Voit skannata viivakoodeja todellisessa maailmassa ja siirtyä suoraan suodatettuihin BI-tietoihin Power BI -mobiilisovelluksessa.
 
-![](media/mobile-apps-scan-barcode-iphone/power-bi-barcode-scanner.png)
+
+Koskee seuraavia:
+
+| ![iPhone](./media/mobile-apps-quickstart-view-dashboard-report/iphone-logo-30-px.png) | ![Android-](./media/mobile-apps-quickstart-view-dashboard-report/android-logo-30-px.png) | 
+|:--- |:--- |
+| iPhone | Android (puhelin ja tabletti) | 
 
 Työtoverisi on saattanut esimerkiksi [merkitä viivakoodikentän raporttiin Power BI Desktopissa](../../desktop-mobile-barcodes.md) ja jakaa raportin kanssasi. 
 
-Kun skannaat tuotteen viivakoodin iPhonen Power BI -sovelluksen skannerilla, näet raportin (tai raporttien luettelon) kyseisellä viivakoodilla. Voit avata raportin iPhonella kyseiseen viivakoodiin suodatettuna.
+![](media/mobile-apps-scan-barcode-iphone/power-bi-barcode-scanner.png)
+
+Kun luet tuotteen viivakoodin laitteen Power BI -sovelluksen skannerilla, näet raportin (tai raporttien luettelon) kyseisellä viivakoodilla. Voit avata raportin kyseiseen viivakoodiin suodatettuna.
 
 ## <a name="scan-a-barcode-with-the-power-bi-scanner"></a>Viivakoodin skannaaminen Power BI -skannerilla
 1. Avaa Power BI-mobiilisovelluksen pääsiirtymisvalikko ![](media/mobile-apps-scan-barcode-iphone/pbi_iph_navmenu.png) vasemmasta yläkulmasta. 
@@ -34,10 +41,10 @@ Kun skannaat tuotteen viivakoodin iPhonen Power BI -sovelluksen skannerilla, nä
 4. Osoita skannerilla tuotteen viivakoodia. 
    
     Näet luettelon kyseiseen viivakoodiin liittyvistä raporteista.
-5. Napauta raportin nimeä avataksesi sen iPhonessasi, ja raportti suodattuu automaattisesti kyseisen viivakoodin mukaan.
+5. Napauta raportin nimeä avataksesi sen laitteessasi. Raportti suodattuu automaattisesti kyseisen viivakoodin mukaan.
 
 ## <a name="filter-by-other-barcodes-while-in-a-report"></a>Suodattaminen muiden viivakoodien perusteella raportissa
-Tarkastellessasi viivakoodilla suodatettua raporttia iPhonessa haluat ehkä suodattaa saman raportin eri viivakoodilla.
+Tarkastellessasi viivakoodilla suodatettua raporttia laitteellasi haluat ehkä suodattaa saman raportin eri viivakoodilla.
 
 * Jos viivakoodin kuvakkeessa on suodatin ![](media/mobile-apps-scan-barcode-iphone/power-bi-barcode-filtered-icon-black.png), suodatin on aktiivinen ja raportti on jo suodatettu viivakoodilla. 
 * Jos kuvakkeessa ei ole suodatinta ![](media/mobile-apps-scan-barcode-iphone/power-bi-barcode-unfiltered-icon.png), suodatin ei ole aktiivinen ja raporttia ei ole suodatettu viivakoodilla. 
