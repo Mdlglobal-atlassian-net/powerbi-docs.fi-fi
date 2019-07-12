@@ -102,7 +102,7 @@ Sovelluksen taustatietokanta saattaa joutua päivittämään todennustunnuksen e
 
 ### <a name="authentication-failed-with-aadsts90002-tenant-authorize-not-found"></a>Todentaminen epäonnistui virheellä AADSTS90002: Tenant 'authorize' not found
 
- Jos saat virheilmoituksia (esimerkiksi ***error: invalid_request, error_description: AADSTS90002: Tenant 'authorize' not found***) tämä johtuu siitä, että https://login.microsoftonline.com/{Tenant}/oauth2/authorize/ ei ole tuettu valtuutuksen URL-osoite ADAL 4.x:ssä.
+ Jos saat virheilmoituksia (esimerkiksi ***error: invalid_request, error_description: AADSTS90002: Tenant 'authorize' not found***) tämä johtuu siitä, että "https://login.microsoftonline.com/{Tenant}/oauth2/authorize/" ei ole tuettu valtuutuksen URL-osoite ADAL 4.x:ssä.
  
 Voit ratkaista tämän poistamalla kohdan oauth2/authorize/ valtuutuksen URL-osoitteesi lopusta. Saat lisätietoja [Power BI:n kehittäjämallien](https://github.com/Microsoft/PowerBI-Developer-Samples) ohjeartikkelista.
 
@@ -110,7 +110,7 @@ Voit ratkaista tämän poistamalla kohdan oauth2/authorize/ valtuutuksen URL-oso
 
 ### <a name="authentication-failed-with-aadsts70002-or-aadsts50053"></a>Todentaminen epäonnistui AADSTS70002:n tai AADSTS50053:n kanssa
 
-** _(AADSTS70002: Virhe vahvistettaessa tunnistetietoja. AADSTS50053: Olet yrittänyt kirjautua sisään liian monta kertaa virheellisellä käyttäjätunnuksella tai salasanalla)_ **
+** _(AADSTS70002: Virhe vahvistettaessa tunnistetietoja. AADSTS50053: Olet yrittänyt kirjautua sisään liian monta kertaa virheellisellä käyttäjätunnuksella tai salasanalla)_**
 
 Jos käytät Power BI Embedded -palvelua ja Azure AD:n suoraa todennusta ja saat kirjautumisviestejä, kuten ***error:unauthorized_client, error_description:AADSTS70002: Virhe vahvistettaessa tunnistetietoja. AADSTS50053: Olet yrittänyt kirjautua sisään liian monta kertaa virheellisellä käyttäjätunnuksella tai salasanalla***, koska suora todennus ei ole ollut oletusarvoisesti käytössä 14.6.2018 jälkeen.
 
@@ -162,7 +162,7 @@ Yritä selvittää syy kokeilemalla seuraavaa.
 
 ### <a name="aadsts90094-the-grant-requires-admin-permission"></a>AADSTS90094: Myöntäminen edellyttää järjestelmänvalvojan käyttöoikeutta
 
-**_Oireet:_ **<br>
+**_Oireet:_**<br>
 Kun muu kuin järjestelmänvalvojana toimiva käyttäjä yrittää ensimmäistä kertaa kirjautua sisään sovellukseen luvan myöntämiseksi ja näkyviin jokin seuraavista virheistä:
 
 * ConsentTest tarvitsee organisaatiosi resurssien käyttöoikeuden, jonka vain järjestelmänvalvoja voi myöntää. Pyydä järjestelmänvalvojaa myöntämään käyttöoikeus tähän sovellukseen, jotta voit käyttää sitä.
@@ -172,10 +172,10 @@ Kun muu kuin järjestelmänvalvojana toimiva käyttäjä yrittää ensimmäistä
 
 Järjestelmänvalvojana toimiva käyttäjä voi kirjautua sisään ja myöntää luvan.
 
-**_Pääsyy:_ **<br>
+**_Pääsyy:_**<br>
 Käyttäjän lupa on poistettu käytöstä vuokraajalle.
 
-**_Ongelma voidaan korjata eri tavoin:_ **
+**_Ongelma voidaan korjata eri tavoin:_**
 
 *Ota käyttäjän lupa käyttöön koko vuokraajalle (kaikki käyttäjät, kaikki sovellukset)*
 
