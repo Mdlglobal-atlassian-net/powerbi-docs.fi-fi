@@ -8,15 +8,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 05/20/2019
+ms.date: 06/27/2019
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: 992524d3467ebe9bb130b3c61476301ab2bc563c
-ms.sourcegitcommit: 58c649ec5fd2447a0f9ca4c4d45a0e9fff2f1b6a
+ms.openlocfilehash: a871a7475dd8282f9ce63646c371182548504357
+ms.sourcegitcommit: b439ded53bfbbb58be27ecedf93d618f5158df33
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "67409181"
+ms.lasthandoff: 07/04/2019
+ms.locfileid: "67568118"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>Power BI:n hallinta hallintaportaalissa
 
@@ -50,7 +50,7 @@ Portaalissa on yhdeksän välilehteä. Tässä artikkelissa kerrotaan lisätieto
 
 ## <a name="usage-metrics"></a>Käyttömittarit
 
-**Käyttömittareiden** avulla voit seurata organisaatiosi Power BI -käyttöä. Niistä näet myös, mitkä käyttäjät ja ryhmät käyttävät eniten Power BI:tä organisaatiossasi.
+**Käyttömittareiden** avulla voit seurata organisaatiosi Power BI -käyttöä. Niistä näet myös, mitkä käyttäjät ja ryhmät käyttävät eniten Power BI:tä organisaatiossasi. 
 
 > [!NOTE]
 > Kun siirryt koontinäyttöön ensimmäistä kertaa tai käyt siellä ensimmäistä kertaa pitkään aikaan, näet luultavasti latausnäytön, kun koontinäyttöä ladataan.
@@ -82,6 +82,40 @@ Näet ruuduissa seuraavat tiedot:
 Toinen osio sisältää samat tiedot ryhmille. Näiden tietojen avulla näet, mitkä organisaatiosi ryhmät ovat aktiivisimpia ja mitä sisältöä he käyttävät.
 
 Näin saat tarkan kuvan siitä, kuinka organisaatiosi käyttäjät käyttävät Power BI:tä, ja näet organisaatiosi aktiivisimmat käyttäjät sekä ryhmät.
+
+## <a name="control-usage-metrics"></a>Käyttötietojen hallinta
+
+Käyttötietoraportit ovat ominaisuus, jonka Power BI:n tai Office 365:n järjestelmänvalvoja voi ottaa käyttöön tai poistaa käytöstä. Järjestelmänvalvojat hallitsevat tarkkaan sitä, kellä käyttäjillä on oikeus käyttötietoihin. Ne ovat oletusarvoisesti **käytössä** organisaation kaikilla käyttäjillä.
+
+Järjestelmänvalvojat voivat myös määrittää, voivatko sisällön luojat nähdä käyttötietojen käyttäjäkohtaiset tiedot. 
+
+Lue lisätietoja itse raporteista osiosta [Power BI:n koontinäyttöjen ja raporttien käyttötietojen valvonta](service-usage-metrics.md).
+
+### <a name="usage-metrics-for-content-creators"></a>Käyttötiedot sisällöntekijöille
+
+1. Valitse hallintaportaalissa **Vuokraaja-asetukset** > **Käyttötiedot sisällöntekijöille**.
+
+    ![Hallintaportaalin vuokraajan asetukset, käyttötiedot](media/service-admin-portal/power-bi-admin-usage-metrics.png)
+
+1. Ota käyttötiedot käyttöön (tai poista ne käytöstä) > **Käytä**.
+
+    ![Käyttötiedot otettu käyttöön](media/service-usage-metrics/power-bi-tenant-settings-updated.png)
+
+
+### <a name="per-user-data-in-usage-metrics"></a>Käyttäjäkohtaiset tiedot käyttömittareissa
+
+Oletusarvoisesti käyttäjäkohtaiset tiedot on otettu käyttöön käyttötiedoille ja sisällön kuluttajan tilitiedot sisältyvät tietoraporttiin. Jos et halua sisällyttää näitä tietoja joillekin tai kaikille käyttäjille, poista ominaisuus käytöstä määritetyille käyttöoikeusryhmille tai koko organisaatiolle. Tilitiedot näkyvät sitten raportissa *nimettöminä*.
+
+![Käyttäjäkohtaiset käyttötiedot](media/service-admin-portal/power-bi-admin-per-user-usage-data.png)
+
+### <a name="delete-all-existing-usage-metrics-content"></a>Poista kaikki olemassa oleva käyttömittarien sisältö
+
+Kun käyttötietoja poistetaan koko organisaation käytöstä, järjestelmänvalvojat voivat käyttää yhtä tai kumpaakin seuraavista asetuksista:
+
+- **Poista kaikki olemassa oleva käyttömittarien sisältö**. Asetus poistaa kaikki aiemmin luodut raportit ja koontinäytön ruudut, jotka on luotu käyttämällä käyttötietoraportteja ja tietojoukkoja. Tämä vaihtoehto poistaa käyttöoikeuden käyttötietoihin kaikilta organisaation käyttäjiltä, jotka tietoja ehkä jo käyttävät. 
+- **Poista kaikki olemassa olevat käyttäjäkohtaiset tiedot nykyisten käyttömittarien sisällössä** Tämä vaihtoehto poistaa käyttöoikeuden käyttäjäkohtaisiin tietoihin kaikilta organisaation käyttäjiltä, jotka tietoja ehkä jo käyttävät. 
+
+Ole varovainen, sillä aiemmin luodun käyttötietosisällön ja käyttäjäkohtaisten tietojen sisällön poistamista ei voi peruuttaa.
 
 ## <a name="users"></a>Käyttäjät
 

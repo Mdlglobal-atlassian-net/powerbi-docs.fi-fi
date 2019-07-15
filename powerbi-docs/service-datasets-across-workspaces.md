@@ -7,15 +7,15 @@ ms.reviewer: chbraun
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 06/07/2019
+ms.date: 07/03/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: d893088978d7a412d0e005ca7b3280824974c76c
-ms.sourcegitcommit: 206806d8ddb6bdfc322c1a46fb34a1b0678acba2
+ms.openlocfilehash: 17a8e1c9e0d46a56d6b6ff3e46c0fda6da8ffe12
+ms.sourcegitcommit: b439ded53bfbbb58be27ecedf93d618f5158df33
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66816654"
+ms.lasthandoff: 07/04/2019
+ms.locfileid: "67567833"
 ---
 # <a name="use-datasets-across-workspaces-preview"></a>Tietojoukkojen käyttö eri työtiloissa (esikatselu)
 
@@ -23,13 +23,13 @@ Liiketoimintatiedon hallinta on yhteistyötä. On tärkeää luoda standardoituj
 
 ![Valitse jaettu tietojoukko](media/service-datasets-across-workspaces/power-bi-select-shared-dataset.png)
 
-Power BI:n avulla tietojoukkojen tekijät voivat helposti sertifioida ja ylentää tietojoukkoja, jotta muut löytävät ne. Tällä tavalla raporttien tekijät löytävät laadukkaita virallisia tietojoukkoja, joita he voivat käyttää kaikkialla Power BI:ssä. Tietojoukkojen omistajat voivat hallita tietojensa käyttöä [muodostamiskäyttöoikeuden](service-datasets-build-permissions.md#build-permissions-for-shared-datasets) avulla. Vuokraajan järjestelmänvalvojilla on uusi vuokraaja-asetus, jolla he voivat [hallita tietojoukkojen käyttöä eri työtiloissa](service-datasets-admin-across-workspaces.md).
+Power BI:ssä tietojoukkojen tekijät voivat *sertifioida* ja *ylentää* tietojoukkoja, jotta muut löytävät ne. Näin raporttien tekijät tietävät, mitkä tietojoukot ovat laadukkaita ja virallisia, ja he voivat käyttää kyseisiä tietojoukkoja aina, kun tekevät töitä Power BI:ssä. Tietojoukkojen omistajat voivat hallita tietojensa käyttöä [muodostamiskäyttöoikeuden](service-datasets-build-permissions.md#build-permissions-for-shared-datasets) avulla. Vuokraajan järjestelmänvalvojilla on uusi vuokraaja-asetus, jolla he voivat [hallita tietojoukkojen käyttöä eri työtiloissa](service-datasets-admin-across-workspaces.md).
 
 ## <a name="dataset-sharing-and-the-new-workspace-experience"></a>Tietojoukkojen jakaminen ja uudenlaiset työtilat
 
 Raporttien luominen eri työtilojen tietojoukkojen pohjalta ja raporttien kopioiminen eri työtiloihin liittyvät tiukasti [uudenlaisiin työtiloihin](service-create-the-new-workspaces.md):
 
-- Kun avaat palvelussa tietojoukkoluettelon uudenlaisessa työtilassa, tietojoukkoluettelossa näytetään oman työtilasi tietojoukot sekä uudenlaisten työtilojen tietojoukot. 
+- Kun avaat palvelussa tietojoukkoluettelon uudenlaisessa työtilassa, tietojoukkoluettelossa näytetään oman työtilasi tietojoukot sekä muiden uudenlaisten työtilojen tietojoukot. 
 - Kun avaat tietojoukkoluettelon perinteisessä työtilassa, näet vain tämän työtilan tietojoukot, et muiden työtilojen tietojoukkoja.
 - Desktopissa voit julkaista reaaliaikaisen yhteyden raportteja eri työtiloihin, kunhan niiden tietojoukot ovat uudenlaisissa työtiloissa.
 - Kun kopioit raportteja työtilasta toiseen, kohdetyötilan täytyy olla uudenlainen työtila.

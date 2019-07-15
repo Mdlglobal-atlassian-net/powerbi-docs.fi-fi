@@ -8,28 +8,29 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 04/22/2019
+ms.date: 07/06/2019
 ms.custom: seodec18
 LocalizationGroup: Premium
-ms.openlocfilehash: 1c2f867140c5a717c80d39db75b3a54e40bd1e34
-ms.sourcegitcommit: 762857c8ca09ce222cc3f8b006fa1b65d11e4ace
+ms.openlocfilehash: 21518d2c5160c8e5a696c193d3d6f4d352a02271
+ms.sourcegitcommit: 3e72c6d564d930304886d51cdf12b8fc166aa33c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66721058"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67596547"
 ---
 # <a name="what-is-power-bi-premium"></a>Mikä on Power BI Premium?
 
 Power BI Premium tarjoaa organisaatiollesi varatut ja parannetut resurssit Power BI -palvelun käyttämiseen. Esimerkki:
 
-- Parempi skaalautuvuus ja suorituskyky
-- Mahdollisuus lisensiointiin kapasiteetin mukaan
-- Yhtenäistä omatoiminen ja yrityksen liiketoimintatiedon hallinta
-- Laajenna paikallista liiketoimintatiedon hallintaa Power BI -raporttipalvelimella
-- Tietojen sijainnin tuki alueen mukaan (Multi-Geo)
-- Jaa tietoja kenen kanssa tahansa ilman käyttäjäkohtaisen käyttöoikeuden ostoa
+> [!div class="checklist"]
+> * Parempi skaalautuvuus ja suorituskyky
+> * Mahdollisuus lisensiointiin kapasiteetin mukaan
+> * Yhtenäistä omatoiminen ja yrityksen liiketoimintatiedon hallinta
+> * Laajenna paikallista liiketoimintatiedon hallintaa Power BI -raporttipalvelimella
+> * Tietojen sijainnin tuki alueen mukaan (Multi-Geo)
+> * Jaa tietoja kenen kanssa tahansa ilman käyttäjäkohtaisen käyttöoikeuden ostoa
 
-Tässä artikkelissa ei ole tarkoitus tarjota tarkkoja tietoja kaikista Power BI Premiumin ominaisuuksista – itse asiassa tämä on vain pintaraapaisu. Tarvittaessa annetaan linkkejä tarkempia tietoja sisältäviin artikkeleihin.
+Tässä artikkelissa esitellään Power BI Premiumin tärkeimmät ominaisuudet. Tarvittaessa annetaan linkkejä tarkempia tietoja sisältäviin artikkeleihin.
 
 ## <a name="subscriptions-and-licensing"></a>Tilaukset ja lisenssit
 
@@ -52,7 +53,7 @@ Järjestelmänvalvojat ostavat Power BI Premium -tilaukset Microsoft 365 -hallin
 
 Power BI Premium tarjoaa sinulle *varatut kapasiteetit*. Toisin kuin jaettu kapasiteetti, jossa kuormitukset suoritetaan muiden asiakkaiden kanssa jaetuissa laskennallisissa resursseissa, varattu kapasiteetti on tarkoitettu organisaation yksinoikeudelliseen käyttöön. Se on eristetty varatuilla laskennallisilla resursseilla, jotka tarjoavat luotettavan ja tasalaatuisen suorituskyvyn isännöidylle sisällölle. 
 
-Työtilat sijaitsevat kapasiteeteissa. Kullakin Power BI -käyttäjällä on henkilökohtainen työtila, jota kutsutaan **omaksi työtilaksi**. Yhteistyön ja käyttöönoton mahdollistamiseksi voidaan luoda lisää työtiloja, joita kutsutaan **sovellustyötiloiksi**. Työtilat, mukaan lukien henkilökohtaiset työtilat, luodaan oletusarvoisesti jaetussa kapasiteetissa. Kun sinulla on Premium-kapasiteetteja, sekä omat työtilat että sovellustyötilat voidaan määrittää Premium-kapasiteetteihin.
+Työtilat sijaitsevat kapasiteeteissa. Kullakin Power BI -käyttäjällä on henkilökohtainen työtila, jota kutsutaan **omaksi työtilaksi**. Yhteistyön mahdollistamiseksi voidaan luoda lisää työtiloja, joita kutsutaan **sovellustyötiloiksi**. Työtilat, mukaan lukien henkilökohtaiset työtilat, luodaan oletusarvoisesti jaetussa kapasiteetissa. Kun sinulla on Premium-kapasiteetteja, sekä omat työtilat että sovellustyötilat voidaan määrittää Premium-kapasiteetteihin.
 
 ### <a name="capacity-nodes"></a>Kapasiteetin solmut
 
@@ -102,7 +103,7 @@ Siksi tuontimallit ladataan muistiin ja poistetaan muistista käytön mukaan. Tu
 
 Mallin muistista poistamista kutsutaan *häätämiseksi*. Se on toiminto, jonka Power BI voi suorittaa nopeasti mallien koosta riippuen. Jos kapasiteetilla ei ole muistipaineita, mallit yksinkertaisesti ladataan muistiin, johon ne myös jäävät. Kun muistia ei ole riittävästi mallin lataamiseen, Power BI -palvelun on ensin vapautettava muistia. Palvelu vapauttaa muistia tunnistamalla mallit, jotka ovat muuttuneet passiivisiksi eli etsimällä mallit, joita ei ole käytetty viimeisen kolmen minuutin aikana \[ [1](#endnote-1)\], ja sitten häätämällä ne. Jos passiivisia malleja ei ole häädettäväksi, Power BI -palvelu pyrkii häätämään taustatoimintoja varten ladatut mallit. Kun epäonnistuneita yrityksiä on tehty 30 sekunnin ajan \[ [1](#endnote-1)\], viimeisenä keinona on hylätä vuorovaikutteinen toiminto. Tässä tapauksessa raportin käyttäjälle ilmoitetaan epäonnistumisesta ja häntä kehotetaan yrittämään pian uudelleen. Joissakin tapauksissa mallit voidaan poistaa muistista palvelutoimintojen vuoksi.
 
-On tärkeää korostaa, että tietojoukon häätäminen on tavallista ja odotettua toimintaa. Sillä pyritään maksimoimaan muistin käyttö lataamalla ja poistamalla malleja, joiden yhteenlasketut koot voivat ylittää käytettävissä olevan muistin määrän. Tämä on tarkoituksellista ja täysin läpinäkyvää raportin käyttäjille. Suuret häätömäärät eivät välttämättä tarkoita, että kapasiteetti on riittämättömästi resursoitu. Ne voivat kuitenkin muotoutua ongelmaksi, jos kyselyihin tai päivityksiin reagointi kärsii suurten häätömäärien vuoksi.
+On tärkeää korostaa, että tietojoukon häätäminen on tavallista ja odotettua toimintaa. Sillä pyritään maksimoimaan muistin käyttö lataamalla ja poistamalla malleja, joiden yhteenlasketut koot voivat ylittää käytettävissä olevan muistin määrän. Tämä on tarkoituksellista ja läpinäkyvää raportin käyttäjille. Suuret häätömäärät eivät välttämättä tarkoita, että kapasiteetti on riittämättömästi resursoitu. Ne voivat kuitenkin muotoutua ongelmaksi, jos kyselyihin tai päivityksiin reagointi kärsii suurten häätömäärien vuoksi.
 
 Tuontimallien päivitykset vaativat aina paljon muistia, sillä mallit on ladattava muistiin. Käsittelyä varten tarvitaan lisämuistia. Täydellinen päivitys voi käyttää noin kaksinkertaisen määrän muistia mallin vaatimuksiin nähden. Näin varmistetaan, että mallille voidaan tehdä kyselyitä myös käsittelyn aikana, sillä kyselyt lähetetään aiemmin luotuun malliin, kunnes päivitys on valmis ja mallin uudet tiedot ovat käytettävissä. Lisäävä päivitys edellyttää vähemmän muistia ja se voi valmistua nopeammin, jolloin kapasiteettiresursseille kohdistuvaa painetta voidaan vähentää huomattavasti. Mallien päivitykset voivat myös vaatia paljon suorittimelta. Tällaisia ovat varsinkin monimutkaiset Power Query -muunnokset tai lasketut taulukot tai sarakkeet, jotka ovat monimutkaisia tai perustuvat suuriin taulukoihin.
 
@@ -125,7 +126,7 @@ Kapasiteetteja luotaessa useimmat hallintatehtävät suoritetaan [hallintaportaa
 
 ![Hallintaportaali](media/service-premium-what-is/premium-admin-portal.png)
 
-Kapasiteetin järjestelmänvalvojat voivat määrittää kapasiteettiin työtiloja, hallita käyttöoikeuksia ja määrittää muita järjestelmänvalvojia. Kapasiteetin järjestelmänvalvojat voivat myös määrittää kuormituksia, säätää muistin varauksia ja tarvittaessa käynnistää kapasiteetin uudelleen, jolloin toiminnot palautetaan, jos kapasiteetti on ylikuormittunut.
+Kapasiteetin järjestelmänvalvojat voivat määrittää kapasiteettiin työtiloja, hallita käyttöoikeuksia ja määrittää muita järjestelmänvalvojia. Kapasiteetin järjestelmänvalvojat voivat myös määrittää kuormituksia, säätää muistin varauksia ja tarvittaessa käynnistää kapasiteetin uudelleen, jolloin toiminnot palautetaan, jos kapasiteetti ylikuormittuu.
 
 ![Hallintaportaali](media/service-premium-what-is/premium-admin-portal-mgmt.png)
 
@@ -175,7 +176,7 @@ Seuraavassa taulukossa kuvataan suositellut varastointiyksiköt eri .pbix-koille
    |P2    | < 6 Gt        |
    |P3, P4, P5    | enintään 10 Gt   |
 
-Power BI Embedded A4 -varastointiyksikkö vastaa P1-varastointiyksikköä, A5 = P2 ja A6 = P3. Huomaa, että suurten mallien julkaiseminen A- ja EM-varastointiyksiköihin voi palauttaa virheitä, jotka eivät liity erityisesti mallin kokorajoituksen virheeseen jaetussa kapasiteetissa. Suurten mallien päivitysvirheet A- ja EM-varastointiyksiköissä osoittavat todennäköisesti aikakatkaisuihin. 
+Power BI Embedded A4 -varastointiyksikkö vastaa P1-varastointiyksikköä, A5 = P2 ja A6 = P3. Suurten mallien julkaiseminen A- ja EM-varastointiyksiköihin voi palauttaa virheitä, jotka eivät liity erityisesti mallin kokorajoituksen virheeseen jaetussa kapasiteetissa. Suurten mallien päivitysvirheet A- ja EM-varastointiyksiköissä osoittavat todennäköisesti aikakatkaisuihin. 
 
 .pbix-tiedostot kuvaavat tietoja *erittäin tehokkaasti pakatussa tilassa*. Tietoja laajennetaan todennäköisesti useita kertoja, kun ne ladataan muistiin, ja uudelleen useita kertoja tietojen päivittämisen aikana.
 

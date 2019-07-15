@@ -7,21 +7,19 @@ ms.reviewer: chbraun
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/31/2019
+ms.date: 07/03/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 507af4de9d57d2d54fe3e28bca8b1aff7da5cf30
-ms.sourcegitcommit: 7c426a5209d4fdd1360fc3d0442d57991be1984d
+ms.openlocfilehash: 2db4c23b50071e387913ed79b4d01daeafb928a4
+ms.sourcegitcommit: b439ded53bfbbb58be27ecedf93d618f5158df33
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2019
-ms.locfileid: "66461461"
+ms.lasthandoff: 07/04/2019
+ms.locfileid: "67567417"
 ---
 # <a name="copy-reports-from-other-workspaces-preview"></a>Raporttien kopioiminen muista työtiloista (esikatselu)
 
-Lue ohjeet siihen, miten voit kopioida raportin yhdestä työtilasta ja tallentaa sen toiseen työtilaan. Tämän jälkeen voit muokata raporttia ja lisätä sekä poistaa visualisointeja ja muita elementtejä.
-
-Kun löydät työtilasta tai sovelluksesta raportin, josta pidät, voit ottaa siitä kopion ja muokata sitä omiin tarpeisiisi. Sinun ei tarvitse huolehtia tietomallin luomisesta. Se on jo luotu sinulle. Lisäksi on paljon helpompaa muokata aiemmin luotua raporttia kuin aloittaa kokonaan alusta.
+Kun löydät työtilasta tai sovelluksesta raportin, josta pidät, voit ottaa siitä kopion ja tallentaa sen eri työtilaan. Tämän jälkeen voit muokata raporttia ja lisätä sekä poistaa visualisointeja ja muita elementtejä. Sinun ei tarvitse huolehtia tietomallin luomisesta. Se on jo luotu sinulle. Lisäksi on paljon helpompaa muokata aiemmin luotua raporttia kuin aloittaa kokonaan alusta. Et kuitenkaan voi julkaista raportin kopiota sovelluksessa uudesta työtilasta. Tarkastele luetteloa muista [huomioitavista asioista ja rajoituksista](service-datasets-across-workspaces.md#considerations-and-limitations) artikkelissa ”Tietojoukkojen käyttö kaikissa työtiloissa”.
 
 ## <a name="save-a-copy-of-a-report"></a>Tallenna kopio raportista
 
@@ -61,6 +59,21 @@ Kun sinulla on työtilassasi raportti, sinun täytyy ehkä tietää, mihin tieto
 1. Näet kaikki liittyvät kohteet **aiheeseen liittyvän sisällön** valintaikkunasta. Tässä luettelossa tietojoukko näyttää samalta kuin kaikki muutkin. Et näe, että se on toisessa työtilassa. Tämä on tunnettu ongelma.
  
     ![Aiheeseen liittyvän sisällön valintaikkuna](media/service-datasets-copy-reports/power-bi-dataset-related.png)
+
+## <a name="delete-a-report-and-its-shared-dataset"></a>Raportin ja sen jaetun tietojoukon poistaminen
+
+Voit päättää, että et enää halua raporttia ja siihen liittyvää jaettua tietojoukkoa työtilaasi.
+
+1. Poista raportti. Valitse työtilan raporttiluettelosta **Poista**-kuvake.
+
+    ![Poista raportti -kuvake](media/service-datasets-across-workspaces/power-bi-datasets-delete-report.png)
+
+2. Huomaat, että jaetuilla tietojoukoilla ei ole **Poista**-kuvaketta tietojoukkoluettelossa. Päivitä sivu tai siirry eri sivulle ja palaa sitten takaisin. Tietojoukko on poistettu. Jos tietojoukkoa ei ole poistettu, tarkista **Näytä aiheeseen liittyvät**. Tietojoukko saattaa liittyä työntilan toiseen taulukkoon.
+
+    ![Näytä aiheeseen liittyvä kuvake](media/service-datasets-across-workspaces/power-bi-dataset-view-related-icon.png)
+
+    > [!NOTE]
+    > Jaetun tietojoukon poistaminen tässä työtilassa ei poista tietojoukkoa. Se poistaa vain viittauksen tietojoukkoon.
 
 
 ## <a name="next-steps"></a>Seuraavat vaiheet

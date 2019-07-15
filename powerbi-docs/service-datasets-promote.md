@@ -7,21 +7,21 @@ ms.reviewer: chbraun
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/29/2019
+ms.date: 07/03/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 366f80ccb1db2d226a80528da610b15082c44ed6
-ms.sourcegitcommit: 7c426a5209d4fdd1360fc3d0442d57991be1984d
+ms.openlocfilehash: 681cd9f65713738e2b842bfa3404511f9e3a98f4
+ms.sourcegitcommit: b439ded53bfbbb58be27ecedf93d618f5158df33
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2019
-ms.locfileid: "66461369"
+ms.lasthandoff: 07/04/2019
+ms.locfileid: "67567345"
 ---
 # <a name="promote-your-dataset-preview"></a>Ylennä tietojoukkosi (esikatselu)
 
 Power BI -raporttien tekijät voivat nyt ehkä käyttää monia eri tietojoukkoja, joten yritysten tulee ohjata heitä luotettavien ja laadukkaita tietojoukkojen pariin. Power BI tarjoaa kaksi tapaa tietojoukkojen *tukemiseen*:
 
-- **Ylentäminen**: Tietojoukon omistajana voit ylentää omia tietojoukkojasi, kun ne ovat valmiita laajaan käyttöön. Ylentäminen tukee tietojoukkojen leviämistä yhteistyön kautta organisaatioissa. Tämä artikkeli käsittelee tietojoukon ylentämistä.
+- **Ylentäminen**: Tietojoukon omistajana voit ylentää omia tietojoukkojasi, kun ne ovat valmiita laajaan käyttöön. Kuka tahansa työtilan jäsen, jolla kirjoitusoikeudet, voi ylentää tietojoukon. Rajoituksia sille, kuka voi ylentää tietojoukon, ei ole. Ylentäminen tukee tietojoukkojen leviämistä yhteistyön kautta organisaatioissa. Tämä artikkeli käsittelee tietojoukon ylentämistä.
 - **Sertifiointi**: Voit pyytää ylennetyn tietojoukon sertifiointia. Vuokraajan järjestelmänvalvojan **Tietojoukon sertifiointi** -asetuksessa määritetty joukko käyttäjiä päättää, mitkä tietojoukot sertifioidaan. Saat lisätietoja ohjeartikkelista [Tietojoukkojen sertifioiminen (esikatselu)](service-datasets-certify.md).
 
 ## <a name="promote-a-dataset"></a>Tietojoukon ylentäminen

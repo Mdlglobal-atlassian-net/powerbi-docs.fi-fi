@@ -7,15 +7,15 @@ ms.reviewer: chbraun
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/31/2019
+ms.date: 07/03/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: e790afee5b57b73a756ca3c1afd564b00e778186
-ms.sourcegitcommit: 7c426a5209d4fdd1360fc3d0442d57991be1984d
+ms.openlocfilehash: 915fb9d10b69142621554f29a7fd77e7a41932e5
+ms.sourcegitcommit: b439ded53bfbbb58be27ecedf93d618f5158df33
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2019
-ms.locfileid: "66461323"
+ms.lasthandoff: 07/04/2019
+ms.locfileid: "67567327"
 ---
 # <a name="certify-datasets-preview"></a>Tietojoukkojen sertifioiminen (esikatselu)
 
@@ -23,8 +23,8 @@ Organisaatiosi voi sertifioida tietojoukot, jotka ovat virallinen tärkeiden tie
 
 Power BI -käyttäjät voivat käyttää monia eri tietojoukkoja, joten yritysten tulee ohjata heitä luotettavien ja laadukkaiden tietojoukkojen pariin. Power BI:ssä on kaksi tapaa tietojoukkojen *tukemiseen*:
 
-- **Ylentäminen**: Tietojoukon omistajat voivat ylentää omia tietojoukkojaan, kun ne ovat valmiita laajaan käyttöön. Lue [Ylennä tietojoukkosi](service-datasets-promote.md), jos haluat lisätietoja. 
-- **Sertifiointi**: Tietojoukon omistajat voivat pyytää ylennetyn tietojoukon sertifiointia. Vuokraajan järjestelmänvalvojan **Tietojoukon sertifiointi** -asetuksessa määritetty joukko käyttäjiä päättää, mitkä tietojoukot sertifioidaan.
+- **Ylentäminen**: Tietojoukon omistajat ja muut työtilan käyttäjät voivat ylentää tietojoukkojaan, kun ne ovat valmiita laajaan käyttöön. Lue [Ylennä tietojoukkosi](service-datasets-promote.md), jos haluat lisätietoja. 
+- **Sertifiointi**: Tietojoukon omistajat voivat pyytää ylennetyn tietojoukon sertifiointia. Vuokraajan järjestelmänvalvojan **Tietojoukon sertifiointi** -asetuksessa määritetty joukko käyttäjiä päättää, mitkä tietojoukot sertifioidaan. Tietojoukon sertifioineen henkilön nimi näytetään työkaluvihjeessä tietojoukkojen resurssienetsinnän aikana. Voit nähdä sen osoittamalla kohtaa **Sertifioitu**.
 
 ## <a name="certify-a-dataset"></a>Sertifioi tietojoukko
 
@@ -42,5 +42,5 @@ Lue lisää siitä, miten vuokraajien järjestelmänvalvojat [hallitsevat tietoj
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
-* Lue [tietojoukkojen käytöstä kaikissa työtiloissa](service-datasets-across-workspaces.md)
+* Lue lisätietoja [tietojoukkojen käytöstä eri työtiloissa](service-datasets-across-workspaces.md)
 * Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)

@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 06/26/2019
 ms.author: tebercov
-ms.openlocfilehash: 59d581697091df68df827ec699c8999a6993daef
-ms.sourcegitcommit: 58c649ec5fd2447a0f9ca4c4d45a0e9fff2f1b6a
+ms.openlocfilehash: 5e34601c3ebacb3cfd8a4a5ddeb282756d0f700b
+ms.sourcegitcommit: 1789815c87e306b1427a5838655d30d3b9ba1d29
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "67408351"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67791817"
 ---
 # <a name="tips-for-authoring-template-apps-in-power-bi"></a>Vihjeitä mallisovellusten kehittämiseen Power BI:ssä
 
@@ -99,7 +99,7 @@ Raporttisivut antavat lisää merkityksellisiä tietoja mallisovellukseesi sisä
 
 <a name="dashboard"></a>
 
-## <a name="dashboards"></a>koontinäytöt
+## <a name="dashboards"></a>Koontinäytöt
 Koontinäyttö on mallisovelluksesi tärkein vuorovaikutuspiste asiakkaittesi kannalta. Siinä tulisi olla yleiskatsaus paketin sisällöstä ja erityisesti liiketoimintaskenaariosi tärkeistä metriikoista.
 
 Voit luoda mallisovelluksellesi koontinäytön lataamalla PBIX-tiedoston kohdassa Hae tiedot > Tiedostot tai julkaisemalla sen suoraan Power BI Desktopin kautta.
@@ -126,6 +126,7 @@ Mallisovellukset voidaan julkaista AppSourcessa. Noudata seuraavia ohjeita ennen
 
 * Varmista, että luot mallisovelluksen käyttämällä mielenkiintoisia mallitietoja, jotka auttavat asentajaa ymmärtämään sovelluksen toimintoja (tyhjää raporttia ja koontinäyttöä ei hyväksytä).
 Mallisovellukset tukevat mallitietoja vain sovelluksissa, joten varmista, että tarkistat staattisen sovelluksen valintaruudun. [Lue lisää](https://docs.microsoft.com/power-bi/service-template-apps-create#create-the-test-template-app)
+* Yleensä vain sovellus, jossa on hyödyllisiä ominaisuuksia, voidaan hyväksyä yleisesti käytettäväksi AppSourcessa. Vain mallitietosisältöä sisältävällä sovelluksella on oltava joko ohjaava tai tilastoanalyyttinen arvo.
 * Ohjeista validointitiimiä ja kerro, mitä tunnistetietoja ja parametreja vaaditaan tietoihin yhdistämiseen.
 * Sovelluksen on sisällettävä sovelluskuvake Power BI:ssä ja CPP-tarjouksessa. [Lue lisää](https://docs.microsoft.com/power-bi/service-template-apps-create#create-the-test-template-app)
 * Määritetty aloitussivu. [Lue lisää](https://docs.microsoft.com/power-bi/service-template-apps-create#create-the-test-template-app)

@@ -7,15 +7,15 @@ ms.reviewer: chbraun
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/31/2019
+ms.date: 07/03/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 99769b78060756c557223dd366da550ad3e11056
-ms.sourcegitcommit: 7c426a5209d4fdd1360fc3d0442d57991be1984d
+ms.openlocfilehash: f8229c74a233d8bc44370380bf635527506194f0
+ms.sourcegitcommit: b439ded53bfbbb58be27ecedf93d618f5158df33
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2019
-ms.locfileid: "66461277"
+ms.lasthandoff: 07/04/2019
+ms.locfileid: "67567449"
 ---
 # <a name="create-reports-based-on-datasets-from-different-workspaces-preview"></a>Eri työtilojen tietojoukkoihin perustuvien raporttien luominen (esikatselu)
 
@@ -51,7 +51,7 @@ Näin työtilan jäsenet voivat päätellä, mitkä raportit ja koontinäytöt k
 
 ## <a name="find-an-endorsed-dataset"></a>Etsi tuettu tietojoukko
 
-On kahdenlaisia tuettuja tietojoukkoja. Tietojoukon omistajat voivat *ylentää* tietojoukon, jota he suosittelevat sinulle. Power BI -vuokraajan järjestelmänvalvoja voi määrittää organisaatiosi asiantuntijat, jotka voivat *sertifioida* tietojoukkoja kaikkien käyttöön. Sekä ylennetyissä että sertifioiduissa tietojoukoissa on *merkit*, jotka näet sekä etsiessäsi tietojoukkoa että työtilan tietojoukkoluettelossa. 
+On kahdenlaisia tuettuja tietojoukkoja. Tietojoukon omistajat voivat *ylentää* tietojoukon, jota he suosittelevat sinulle. Lisäksi Power BI -vuokraajan järjestelmänvalvoja voi määrittää organisaatiosi asiantuntijat, jotka voivat *sertifioida* tietojoukkoja kaikkien käyttöön. Sekä ylennetyissä että sertifioiduissa tietojoukoissa on *merkit*, jotka näet sekä etsiessäsi tietojoukkoa että työtilan tietojoukkoluettelossa. Tietojoukon sertifioineen henkilön nimi näytetään työkaluvihjeessä tietojoukkojen resurssienetsinnän aikana. Voit nähdä sen osoittamalla kohtaa **Sertifioitu**.
 
 - Power BI -palvelussa: **Nouda tiedot** > **Julkaistut tietojoukot**.
 - Power BI Desktopissa: **Nouda tiedot** > **Power BI -tietojoukot**.
@@ -62,5 +62,5 @@ On kahdenlaisia tuettuja tietojoukkoja. Tietojoukon omistajat voivat *ylentää*
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
-- [Tietojoukkojen käyttö kaikissa työtiloissa (esikatselu)](service-datasets-across-workspaces.md)
+- [Tietojoukkojen käyttö eri työtiloissa (esikatselu)](service-datasets-across-workspaces.md)
 - Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)

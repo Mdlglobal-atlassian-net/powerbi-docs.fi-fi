@@ -7,15 +7,15 @@ ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/20/2019
+ms.date: 07/05/2019
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: af20d5842664311a0d543ee189ef671f7865058b
-ms.sourcegitcommit: 8dee40f07d284ec84a8afa0100359f146e1dd88b
+ms.openlocfilehash: 333403ca74c5c5a13c94cbd41100915c7260e304
+ms.sourcegitcommit: 1789815c87e306b1427a5838655d30d3b9ba1d29
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "67418753"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67791997"
 ---
 # <a name="customer-profitability-sample-for-power-bi-take-a-tour"></a>Asiakkaan tuottavuuden malli Power BI:lle: aloita esittely
 
@@ -23,17 +23,21 @@ Asiakkaan tuottavuuden malli -sisältöpaketti sisältää koontinäytön, rapor
 
 ![Asiakkaan tuottavuuden mallin koontinäyttö](media/sample-customer-profitability/power-bi-dash.png)
 
-Tämä malli kuuluu sarjaan, jossa esitellään, miten Power BI:tä voidaan käyttää liiketoimintaan suuntautuneiden tietojen, raporttien ja koontinäyttöjen kanssa. Sen luomiseen on käytetty obviEnceltä ([www.obvience.com](http://www.obvience.com/)) saatuja oikeita tietoja, jotka on muunnettu nimettömään muotoon. Tiedot ovat käytettävissä useissa muodoissa: sisältöpaketti/sovellus, Power BI Desktopin .pbix-tiedosto tai Excel-työkirja. Tutustu [Power BI:n malleihin](sample-datasets.md). 
+Tämä malli kuuluu sarjaan, jossa esitellään, miten Power BI:tä voidaan käyttää liiketoimintaan suuntautuneiden tietojen, raporttien ja koontinäyttöjen kanssa. Sen luomiseen on käytetty [obviEnceltä](http://www.obvience.com/) saatuja oikeita tietoja, jotka on muunnettu nimettömään muotoon. Tiedot ovat käytettävissä useissa muodoissa: sisältöpaketti, Power BI Desktopin .pbix-tiedosto tai Excel-työkirja. Tutustu [Power BI:n malleihin](sample-datasets.md). 
 
-Tässä opetusohjelmassa käytetään Power BI -palvelua ja Asiakkaan tuottavuuden malli -sisältöpakettia. Koska raportin käyttökokemukset ovat hyvin samankaltaisia, voit myös seurata käyttäen Power BI Desktopia ja mallin PBIX-tiedostoa. 
+Tässä opetusohjelmassa tutustutaan Power BI -palvelun Asiakkaan tuottavuuden malli -sisältöpakettiin. Koska raportin käyttökokemus on hyvin samankaltainen Power BI Desktopissa ja palvelussa, voit seurata ohjelmaa myös käyttämällä Power BI Desktopin mallin .pbix-tiedostoa. 
 
-## <a name="prerequisites"></a>Edellytykset
+Et tarvitse Power BI -käyttöoikeutta Power BI Desktopin malleihin tutustumiseen. Jos sinulla ei ole Power BI Pro -käyttöoikeutta, voit tallentaa mallin omaan työtilaasi Power BI -palvelussa. 
+
+## <a name="get-the-sample"></a>Hanki malli
 
 Ennen kuin voit käyttää mallia, se on ensin ladattava [sisältöpakettina](#get-the-content-pack-for-this-sample), [.pbix-tiedostona](#get-the-pbix-file-for-this-sample) tai [Excel-työkirjana](#get-the-excel-workbook-for-this-sample).
 
 ### <a name="get-the-content-pack-for-this-sample"></a>Mallin sisältöpaketin noutaminen
 
 1. Avaa Power BI -palvelu (app.powerbi.com), kirjaudu sisään ja avaa työtila, johon haluat tallentaa mallin.
+
+   Jos sinulla ei ole Power BI Pro -käyttöoikeutta, voit tallentaa mallin omaan työtilaasi.
 
 2. Valitse vasemmasta alakulmasta **Nouda tiedot**.
 
@@ -135,8 +139,8 @@ Seuraavaksi tarkastellaan kahta tiimin jäsentä yksityiskohtaisesti, jotta näe
 1. Valitse vasemmalla olevasta **Johtaja**-osittajasta Andrew’n nimi, jotta raporttisivusta suodatetaan esiin vain Andrew'n tiedot:
 
    * Voit mitata suorituskykyä nopeasti Andrew'n **Tulotila (koko vuosi)** -tiedoista: se näkyy vihreänä, mikä tarkoittaa, että hän on suoriutunut hyvin.
-   * **Tulovarianssiprosentti budjettiin kuukauden ja johtajan mukaan** -kaavio näyttää, että helmikuun pudotusta lukuun ottamatta Andrew tekee työnsä kaiken kaikkiaan melko hyvin. Hänen vahvin alueensa on itä ja hän käsittelee 49 asiakasta ja viittä tuotetta seitsemästä. Hänen myyntikatteensa ei ole suurin eikä pienin.
-   * **Koko vuoden tulot ja tuottoprosentin varianssi budjettiin kuukausittain** -kaavio näyttää, että hänen tuottonsa on vakaata. Jos suodatat valitsemalla **keski**-alueen ruudun puukartassa, huomaat, että Andrew’lla on ollut tuottoa vain maaliskuussa ja ainoastaan Indianassa. Onko tämä tarkoituksellista vai pitääkö tähän perehtyä tarkemmin?
+   * **Tulovarianssiprosentti budjettiin kuukauden ja johtajan mukaan** -kaavio näyttää, että helmikuun pudotusta lukuun ottamatta Andrew tekee työnsä hyvin. Hänen vahvin alueensa on itä ja hän käsittelee 49 asiakasta ja viittä tuotetta seitsemästä. Hänen myyntikatteensa ei ole suurin eikä pienin.
+   * **Koko vuoden tulot ja tuottoprosentin varianssi budjettiin kuukausittain** -kaavio näyttää, että hänen tuottonsa on vakaata. Jos suodatat valitsemalla **keski**-alueen ruudun puukartassa, huomaat, että Andrew’lla on ollut tuottoa vain maaliskuussa ja ainoastaan Indianassa. Onko tämä trendi tarkoituksellinen vai pitääkö tähän perehtyä tarkemmin?
 
 2. Siirrytään Valeryyn. Valitse **Johtaja**-osittajasta Valeryn nimi, jotta raporttisivusta suodatetaan esiin vain Valeryn tiedot. 
 
@@ -203,7 +207,7 @@ Tutustutaan Jakelualaan.
     Voimme tutkia vastaavasti muita aloja ja jopa lisätä asiakkaita visualisointeihin, jotta ymmärrämme Valeryn suorituskyvyn syyt.
 
 ## <a name="next-steps-connect-to-your-data"></a>Seuraavat vaiheet: Yhdistä tietoihisi
-Tässä ympäristössä on turvallista tehdä kokeiluja, koska voit jättää tekemäsi muutokset tallentamatta. Jos kuitenkin tallennat ne, voit aina siirtyä **Nouda tiedot** -kohtaan, jolloin saat mallista uuden kopion.
+Tässä ympäristössä on turvallista tehdä kokeiluja, koska voit jättää tekemäsi muutokset tallentamatta. Jos kuitenkin tallennat ne, voit aina siirtyä **Nouda tiedot** -kohtaan, jolloin saat tästä mallista uuden kopion.
 
-Toivomme, että tämä esittely on osoittanut, miten Power BI -koontinäytöt, kysymysosio ja raportit voivat tarjota uusia näkökulmia asiakastietoihin. Nyt on sinun vuorosi – muodosta yhteys omiin tietoihisi. Power BI:n avulla voit yhdistää useisiin eri tietolähteisiin. Lisätietoja on artikkelissa [Power BI -palvelun käytön aloittaminen](service-get-started.md).
+Toivomme, että tämä esittely on osoittanut, miten Power BI -raporttinäkymät, Q&A ja raportit voivat tarjota uusia näkökulmia mallitietoihin. Nyt on sinun vuorosi – muodosta yhteys omiin tietoihisi. Power BI:n avulla voit yhdistää useisiin eri tietolähteisiin. Lisätietoja on artikkelissa [Power BI -palvelun käytön aloittaminen](service-get-started.md).
 

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 04/02/2019
 ms.author: mblythe
 LocalizationGroup: Data from files
-ms.openlocfilehash: 1bc9e0d5de909c5d0859b6d31185cf0cb27bda23
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 7e9d8779480eb7a00dacfc9fc52fc81987629e7b
+ms.sourcegitcommit: 1789815c87e306b1427a5838655d30d3b9ba1d29
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61136555"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67791923"
 ---
 # <a name="using-incremental-refresh-with-power-bi-dataflows"></a>Lisäävän päivityksen käyttäminen Power BI -tietovoiden kanssa
 
@@ -33,7 +33,7 @@ Lisäävän päivityksen käyttäminen Power BI -tietovoissa edellyttää, että
 
 Tietovuo voi sisältää useita entiteettejä. Lisäävä päivitys määritetään entiteettitasolla, jolloin tietovuo voi sisältää sekä täysin päivitetyt entiteetit että lisäävästi päivitetyt entiteetit.
 
-Jos haluat määrittää lisäävästi päivitetyn entiteetin, aloita määrittämällä entiteetti aivan kuin mikä tahansa muu entiteetti. Saat lisätietoja tietovirrassa määrittää [Omatoiminen tietojen valmistautuminen Power BI](service-dataflows-overview.md).
+Jos haluat määrittää lisäävästi päivitetyn entiteetin, aloita määrittämällä entiteetti aivan kuin mikä tahansa muu entiteetti. Lisätietoja tietovuon määrittämisestä on artikkelissa [Omatoiminen tietojen valmistelu Power BI:ssä](service-dataflows-overview.md).
 
 Kun tietovuo on luotu ja tallennettu, valitse **lisäävän päivityksen** kuvake entiteettinäkymässä seuraavassa kuvassa esitetyllä tavalla:
 
@@ -156,8 +156,8 @@ Tässä artikkelissa kuvattiin tietovoiden lisäävä päivitys. Seuraavassa on 
 
 * [Omatoiminen tietojen valmistelu tietovoiden avulla](service-dataflows-overview.md)
 * [Tietovoiden luominen ja käyttäminen Power BI:ssä](service-dataflows-create-use.md)
-* [Dataflows käyttö paikallisiin tietolähteisiin](service-dataflows-on-premises-gateways.md)
-* [Power BI dataflows Kehittäjien resurssit](service-dataflows-developer-resources.md)
+* [Tietovoiden käyttö paikallisiin tietolähteisiin](service-dataflows-on-premises-gateways.md)
+* [Kehittäjien resurssit Power BI -tietovoille](service-dataflows-developer-resources.md)
 
 Lisätietoja Power Querysta ja ajoitetusta päivityksestä on seuraavissa artikkeleissa:
 * [Kyselyn yleiskatsaus Power BI Desktopissa](desktop-query-overview.md)

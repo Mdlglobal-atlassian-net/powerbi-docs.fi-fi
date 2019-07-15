@@ -8,19 +8,19 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 06/07/2018
-ms.openlocfilehash: 9673217cfd7c5af70bdd293e8d5df51e5e7dee07
-ms.sourcegitcommit: 9278540467765043d5cb953bcdd093934c536d6d
+ms.date: 07/03/2019
+ms.openlocfilehash: 7067d4c7fdc3fc328db417e5d6733569ecc7be01
+ms.sourcegitcommit: b439ded53bfbbb58be27ecedf93d618f5158df33
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67559083"
+ms.lasthandoff: 07/04/2019
+ms.locfileid: "67567787"
 ---
 # <a name="using-oauth-to-connect-to-power-bi-report-server-and-ssrs"></a>Yhdistäminen Power BI -raporttipalvelimeen ja SSRS-palvelimeen OAuthia käyttämällä
 
 Opi määrittämään ympäristö tukemaan OAuth-todennusta Power BI -mobiilisovelluksella ja muodostamaan yhteys Power BI -raporttipalvelimeen sekä SQL Server Reporting Services 2016:een tai uudempaan versioon.
 
-![](media/mobile-oauth-ssrs/powerbi-mobile-oauth.png)
+![Yhdistä palvelimeen](media/mobile-oauth-ssrs/powerbi-mobile-oauth.png)
 
 Voit käyttää OAuthia muodostaessasi yhteyden Power BI-raporttipalvelimeen ja Reporting Servicesiin, tarkastellaksesi mobiiliraporttejasi tai suorituskykyilmaisimia. Windows Server 2016 sisältää joitain Web Application Proxy (WAP) -roolin parannuksia, jotka sallivat tällaisen todennuksen.
 
@@ -118,7 +118,7 @@ Voit luoda sovellusryhmän noudattamalla seuraavia ohjeita.
    > [!NOTE]
    > Huomaa, että tämän URL-osoitteen kirjainkoko on merkitsevä.
 
-   *https://< raporttipalvelimen url-osoite >/reports*
+   *https://< report server url >/*
 
    ![ADFS-sovellusryhmän ohjattu toiminto 03](media/mobile-oauth-ssrs/adfs-application-group-wizard3.png)
 9. Valitse **Seuraava**.
@@ -209,7 +209,7 @@ Kun olet lisännyt WAP-sovelluksen, sinun on määritettävä BackendServerAuthe
 Get-WebApplicationProxyApplication “Contoso Reports” | fl
 ```
 
-![](media/mobile-oauth-ssrs/wap-application-id.png)
+![Lisää sovellusryhmä](media/mobile-oauth-ssrs/wap-application-id.png)
 
 Määritä BackendServerAuthenticationMode WAP-sovelluksen tunnuksen avulla suorittamalla seuraava komento.
 
@@ -217,21 +217,19 @@ Määritä BackendServerAuthenticationMode WAP-sovelluksen tunnuksen avulla suor
 Set-WebApplicationProxyApplication -id 30198C7F-DDE4-0D82-E654-D369A47B1EE5 -BackendServerAuthenticationMode IntegratedWindowsAuthentication
 ```
 
-![](media/mobile-oauth-ssrs/wap-application-backendauth.png)
+![Ohjattu sovellusryhmän lisäystoiminto](media/mobile-oauth-ssrs/wap-application-backendauth.png)
 
 ## <a name="connecting-with-the-power-bi-mobile-app"></a>Yhteyden muodostaminen Power BI -mobiilisovelluksen avulla
 
 Power BI -mobiilisovelluksen sisältä kannattaa muodostaa yhteys Reporting Services -esiintymään. Tätä varten sinun on annettava **ulkoisen URL-osoite** WAP-sovellustasi varten.
 
-![](media/mobile-oauth-ssrs/powerbi-mobile-app1.png)
+![Kirjoita palvelimen osoite](media/mobile-oauth-ssrs/powerbi-mobile-app1.png)
 
 Kun valitset **Yhdistä**, sinut ohjataan ADFS-kirjautumissivulle. Anna toimialueesi kirjautumistiedot.
 
-![](media/mobile-oauth-ssrs/powerbi-mobile-app2.png)
+![Kirjaudu sisään ADFS:ään](media/mobile-oauth-ssrs/powerbi-mobile-app2.png)
 
 Kun olet valinnut **Kirjaudu sisään**, näkyviin tulee elementtejä Reporting Services -palvelimestasi.
-
-![](media/mobile-oauth-ssrs/powerbi-mobile-app2.png)
 
 ## <a name="multi-factor-authentication"></a>Monimenetelmäisen todentaminen
 
@@ -239,9 +237,9 @@ Voit ottaa käyttöön monimenetelmäisen todentamisen lisäsuojauksen ottamisek
 
 ## <a name="troubleshooting"></a>Vianmääritys
 
-### <a name="you-receive-the-error-failed-to-login-to-ssrs-server-verify-server-configuration"></a>Näyttöön tulee seuraava virheviesti: Kirjautuminen SSRS-palvelimeen epäonnistui. Tarkista palvelimen määritykset.
+### <a name="you-receive-the-error-failed-to-login-to-ssrs-server"></a>Näyttöön tulee seuraava virheviesti: ”Kirjautuminen SSRS-palvelimeen epäonnistui”
 
-![](media/mobile-oauth-ssrs/powerbi-mobile-error.png)
+![”SSRS-palvelimeen kirjautuminen epäonnistui” -virheviesti](media/mobile-oauth-ssrs/powerbi-mobile-error.png)
 
 Voit määrittää [Fiddlerin](http://www.telerik.com/fiddler) toimimaan mobiililaitteiden välityspalvelimena nähdäksesi, kuinka pitkälle pyyntö etenee. Jotta voisit ottaa käyttöön Fiddler-välityspalvelimen puhelimelle, sinun on otettava käyttöön [CertMaker for iOS and Android](http://www.telerik.com/fiddler/add-ons) -lisäosa tietokoneessa, jossa Fiddler toimii. Tämä on Fiddler-lisäosa Telerikiltä.
 
