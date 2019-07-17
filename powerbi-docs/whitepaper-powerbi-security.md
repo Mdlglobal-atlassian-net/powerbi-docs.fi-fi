@@ -10,12 +10,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 05/02/2019
 LocalizationGroup: Conceptual
-ms.openlocfilehash: 9aa80c336fa7918632b71b25f8f57b2798fa52e5
-ms.sourcegitcommit: 8dee40f07d284ec84a8afa0100359f146e1dd88b
+ms.openlocfilehash: dd656f81cb0fdb32f9637f969ef538e263e20053
+ms.sourcegitcommit: 277fadf523e2555004f074ec36054bbddec407f8
 ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "67418687"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68271995"
 ---
 # <a name="power-bi-security-whitepaper"></a>Power BI:n suojausraportti
 
@@ -382,7 +382,7 @@ Seuraavat kysymykset ovat yleisiä Power BI:n suojaukseen liittyviä kysymyksiä
 
 * **Power BI:n tunnistetiedot ja toimialueen tunnistetiedot:** Käyttäjät kirjautuvat Power BI:hin käyttämällä sähköpostiosoitetta; kun käyttäjä yrittää muodostaa yhteyden tietoresurssiin, Power BI välittää Power BI -kirjautumissähköpostiosoitteen tunnistetietoina. Jos kyseessä on toimialueeseen yhdistetty resurssi (joko paikallinen tai pilvipohjainen), hakemistopalvelu määrittää kirjautumissähköpostiosoitetta vastaavan _käyttäjän ensisijaisen nimen_ ([UPN](https://msdn.microsoft.com/library/windows/desktop/aa380525(v=vs.85).aspx)), joka määrittää, riittävätkö tunnistetiedot sallimaan käytön. Jos organisaatio käyttää Power BI:hin kirjautumiseen työpohjaisia sähköpostiosoitteita (samaa sähköpostia, jolla organisaatiossa kirjaudutaan työresursseihin, esimerkiksi _david@contoso.com_ ), yhdistäminen voi tapahtua saumattomasti; jos organisaatio käyttää muita kuin työpohjaisia sähköpostiosoitteita (esimerkiksi _david@contoso.onmicrosoft.com_ ), hakemistojen yhdistäminen on suoritettava, jotta Power BI -sisäänkirjautumistiedoilla voidaan sallia paikallisten resurssien käyttöoikeus.
 
-* **SQL Server Analysis Services ja Power BI:** Power BI tarjoaa organisaatioille, jotka käyttävät paikallisia SQL Server Analysis Services -palveluita, Power BI:n paikallisen tietoyhdyskäytävän (joka on **yhdyskäytävä**, kuten aiemmissa osioissa on kuvattu).  Power BI:n paikallinen tietoyhdyskäytävä voi toteuttaa tietolähteissä roolitason suojauksen (RLS). Jos haluat lisätietoja RLS-suojauksesta, katso tämän asiakirjan aiempi osio **Käyttäjien todentaminen tietolähteissä**. Voit myös lukea syvällisemmän artikkelin, jonka aiheena on [Power BI Gateway](service-gateway-manage.md).
+* **SQL Server Analysis Services ja Power BI:** Power BI tarjoaa organisaatioille, jotka käyttävät paikallisia SQL Server Analysis Services -palveluita, Power BI:n paikallisen tietoyhdyskäytävän (joka on **yhdyskäytävä**, kuten aiemmissa osioissa on kuvattu).  Power BI:n paikallinen tietoyhdyskäytävä voi toteuttaa tietolähteissä roolitason suojauksen (RLS). Jos haluat lisätietoja RLS-suojauksesta, katso tämän asiakirjan aiempi osio **Käyttäjien todentaminen tietolähteissä**. Katso lisätietoja yhdyskäytävien [paikallisen tietoyhdyskäytävän](service-gateway-onprem.md).
 
   Organisaatiot voivat myös käyttää Kerberosta **kertakirjautumiseen** (SSO) ja muodostaa saumattoman yhteyden Power BI:stä paikallisiin tietolähteisiin, joita voivat olla esimerkiksi SQL Server, SAP HANA ja Teradata. Katso lisätietoja ja määritysvaatimukset artikkelista [ **Käytä Kerberosta kertakirjautumiseen Power BI:stä paikallisiin tietolähteisiin**](https://docs.microsoft.com/power-bi/service-gateway-kerberos-for-sso-pbi-to-on-premises-data).
 
@@ -422,7 +422,7 @@ Seuraavat kysymykset ovat yleisiä Power BI:n suojaukseen liittyviä kysymyksiä
 
 **Mitä portteja paikallinen tietoyhdyskäytävä ja henkilökohtainen yhdyskäytävä käyttävät? Onko sellaisia toimialuenimiä, jotka on sallittava yhteyksiä varten?**
 
-* Yksityiskohtainen vastaus tähän kysymykseen on saatavilla seuraavan linkin kautta: [Power BI Gateway](service-gateway-manage.md)
+* Yksityiskohtainen vastaus tähän kysymykseen on saatavilla seuraavan linkin kautta: [Yhdyskäytävän portit](/data-integration/gateway/service-gateway-communication#ports)
 
 **Kun käytössä on paikallinen tietoyhdyskäytävä, miten palautusavaimia käytetään ja mihin ne on tallennettu? Entä suojattu käyttöoikeuksien hallinta?**
 
@@ -438,7 +438,7 @@ Seuraavat kysymykset ovat yleisiä Power BI:n suojaukseen liittyviä kysymyksiä
 
   - **AMQP 1.0 – TCP + TLS**: Tämä protokolla edellyttää, että portit 443, 5671–5672 ja 9350–9354 ovat avoinna lähtevää tietoliikennettä varten. Tätä protokollaa suositellaan, koska sen tietoliikennekustannukset ovat pienemmät.
 
-  - **HTTPS – WebSockets ja HTTPS + TLS**: Tämä protokolla käyttää vain porttia 443. WebSocket käynnistetään yksittäisellä HTTP CONNECT -viestillä. Kun kanava on muodostettu, tietoliikenne on käytännössä muotoa TCP + TLS. Voit pakottaa yhdyskäytävän käyttämään tätä protokollaa muokkaamalla asetusta, joka on kuvattu [paikallisen yhdyskäytävän artikkelissa](service-gateway-manage.md).
+  - **HTTPS – WebSockets ja HTTPS + TLS**: Tämä protokolla käyttää vain porttia 443. WebSocket käynnistetään yksittäisellä HTTP CONNECT -viestillä. Kun kanava on muodostettu, tietoliikenne on käytännössä muotoa TCP + TLS. Voit pakottaa yhdyskäytävä käyttämään tätä protokollaa muokkaamalla asetus, joka on kuvattu [paikallisen yhdyskäytävän artikkelissa](/data-integration/gateway/service-gateway-communication#force-https-communication-with-azure-service-bus).
 
 **Mikä on Azure CDN:n rooli Power BI:ssä?**
 
@@ -486,10 +486,9 @@ Lisää tietoja Power BI -palvelusta on seuraavissa resursseissa.
 
 - [Ryhmät Power BI:ssä](https://support.powerbi.com/knowledgebase/articles/654247)
 - [Power BI Desktopin käytön aloittaminen](https://support.powerbi.com/knowledgebase/articles/471664)
-- [Power BI Gateway](service-gateway-manage.md)
 - [Power BI REST -ohjelmointirajapinnan yleiskatsaus](https://msdn.microsoft.com/library/dn877544.aspx)
 - [Power BI -ohjelmointirajapinnan viite](https://msdn.microsoft.com/library/mt147898.aspx)
-- [On-premises data gateway (Paikallinen tietoyhdyskäytävä)](service-gateway-manage.md)
+- [On-premises data gateway (Paikallinen tietoyhdyskäytävä)](service-gateway-onprem.md)
 - [Power BI ja ExpressRoute](service-admin-power-bi-expressroute.md)
 - [Power BI:n kansalliset pilvipalvelut](https://powerbi.microsoft.com/clouds/)
 - [Power BI Premium](https://aka.ms/pbipremiumwhitepaper)
