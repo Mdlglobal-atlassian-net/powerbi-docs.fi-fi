@@ -723,10 +723,6 @@
               href: service-admin-troubleshooting-scheduled-refresh-azure-sql-databases.md
             - name: Ruutuvirheiden vianmääritys
               href: refresh-troubleshooting-tile-errors.md
-            - name: Paikallisen tietoyhdyskäytävän vianmääritys
-              href: service-gateway-onprem-tshoot.md
-            - name: Power BI -yhdyskäytävä – henkilökohtainen
-              href: service-admin-troubleshooting-power-bi-personal-gateway.md
             - name: Analysoi Excelissä -toiminnon vianmääritys
               href: desktop-troubleshooting-analyze-in-excel.md
             - name: 'Virhe: Excel-työkirjasta ei löydy mitään tietoja'
@@ -1279,38 +1275,38 @@
   items:
     - name: Yleiskatsaus
       items:
-        - name: Mitä ovat Power BI -yhdyskäytävät?
-          href: service-gateway-getting-started.md
-    - name: Opetusohjelmat
-      items:
-        - name: SQL Server-tietoihin yhdistäminen
-          href: service-gateway-sql-tutorial.md
+        - name: Mikä paikallinen tietoyhdyskäytävä on?
+          href: service-gateway-onprem.md
     - name: Käsitteet
       items:
         - name: Tietoyhdyskäytävän käyttöönotto-ohjeet
           href: service-gateway-deployment-guidance.md
         - name: Paikallisten tietoyhdyskäytävien usein kysytyt kysymykset
-          href: service-gateway-onprem-faq.md
+          href: service-gateway-power-bi-faq.md
     - name: Ohjeet
       items:
-        - name: Asenna yhdyskäytävä
-          href: service-gateway-install.md
-        - name: Hallitse yhdyskäytäviä
-          href: service-gateway-manage.md
-        - name: Yhdyskäytävän suorituskyvyn valvonta
-          href: service-gateway-performance-monitoring.md
-        - name: Yrityksen tietolähteen hallinta – Analysis Services
-          href: service-gateway-enterprise-manage-ssas.md
-        - name: Yrityksen tietolähteen hallinta – SAP HANA
-          href: service-gateway-enterprise-manage-sap.md
-        - name: Yrityksen tietolähteen hallinta – SQL
-          href: service-gateway-enterprise-manage-sql.md
-        - name: Tietolähteen hallinta – Oracle
-          href: service-gateway-onprem-manage-oracle.md
-        - name: Yrityksen tietolähteen hallinta – tuonti ja ajoitettu päivitys
-          href: service-gateway-enterprise-manage-scheduled-refresh.md
-        - name: Paikallisten ja pilvipalvelutietolähteiden yhdistäminen
-          href: service-gateway-mashup-on-premises-cloud.md
+        - name: Paikallinen tietoyhdyskäytävä – tarkat tiedot
+          href: service-gateway-onprem-indepth.md
+        - name: Paikallinen tietoyhdyskäytävä (henkilökohtainen tila)
+          href: service-gateway-personal-mode.md
+        - name: Käyttäjien ja järjestelmänvalvojien hallinta
+          href: service-gateway-manage-admins.md
+        - name: Tietolähteiden hallinta
+          items:
+            - name: Tietolähteiden hallinta
+              href: service-gateway-data-sources.md
+            - name: Yrityksen tietolähteen hallinta – Analysis Services
+              href: service-gateway-enterprise-manage-ssas.md
+            - name: Yrityksen tietolähteen hallinta – SAP HANA
+              href: service-gateway-enterprise-manage-sap.md
+            - name: Yrityksen tietolähteen hallinta – SQL
+              href: service-gateway-enterprise-manage-sql.md
+            - name: Tietolähteen hallinta – Oracle
+              href: service-gateway-onprem-manage-oracle.md
+            - name: Yrityksen tietolähteen hallinta – tuonti ja ajoitettu päivitys
+              href: service-gateway-enterprise-manage-scheduled-refresh.md
+            - name: Paikallisten ja pilvipalvelutietolähteiden yhdistäminen
+              href: service-gateway-mashup-on-premises-cloud.md
         - name: Kertakirjautumisen (SSO) käyttöönotto
           items:
             - name: Kertakirjautuminen (SSO) – yleiskatsaus
@@ -1321,24 +1317,16 @@
               href: service-gateway-sso-kerberos-resource.md
             - name: Kertakirjautuminen (SSO) – SAML
               href: service-gateway-sso-saml.md
-        - name: Välityspalvelinasetusten määrittäminen
-          href: service-gateway-proxy.md
-        - name: Suuren käytettävyyden klusterit paikallisessa tietoyhdyskäytävässä
-          href: service-gateway-high-availability-clusters.md
-        - name: Paikallinen tietoyhdyskäytävä
-          href: service-gateway-onprem.md
-        - name: Paikallinen tietoyhdyskäytävä – tarkat tiedot
-          href: service-gateway-onprem-indepth.md
-        - name: Paikallinen tietoyhdyskäytävä (henkilökohtainen tila)
-          href: service-gateway-personal-mode.md
-        - name: Mukautetut liittimet
-          href: service-gateway-custom-connectors.md
-        - name: Paikallisen tietoyhdyskäytävän vianmääritys
+        - name: Yhdyskäytävän vianmääritys
           href: service-gateway-onprem-tshoot.md
+        - name: Yhdyskäytävän vianmääritys (henkilökohtainen tila)
+          href: service-admin-troubleshooting-power-bi-personal-gateway.md
+        - name: Mukautettujen liittimien käyttö
+          href: service-gateway-custom-connectors.md
     - name: Resurssit
       items:
         - name: Yhdyskäytävän kuukausittaiset päivitykset
-          href: service-gateway-monthly-updates.md
+          href: 'https://review.docs.microsoft.com/data-integration/gateway/service-gateway-monthly-updates?branch=master'
 - name: Hallinta
   items:
     - name: Yleiskatsaus
