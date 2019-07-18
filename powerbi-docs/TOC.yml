@@ -1289,8 +1289,6 @@
           href: service-gateway-onprem-indepth.md
         - name: Paikallinen tietoyhdyskäytävä (henkilökohtainen tila)
           href: service-gateway-personal-mode.md
-        - name: Käyttäjien ja järjestelmänvalvojien hallinta
-          href: service-gateway-manage-admins.md
         - name: Tietolähteiden hallinta
           items:
             - name: Tietolähteiden hallinta
