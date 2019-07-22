@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 06/06/2019
-ms.openlocfilehash: 3dcc8211f6752d272d550dfaff343374866187c9
-ms.sourcegitcommit: a42c6758aa255c21ece6366a3257b0dd82f3606b
+ms.openlocfilehash: 83e3ffbae43d25e89cf52077acaa731cdee9b502
+ms.sourcegitcommit: 277fadf523e2555004f074ec36054bbddec407f8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/24/2019
-ms.locfileid: "67345489"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68270838"
 ---
 # <a name="create-an-embedded-data-source-for-paginated-reports-in-the-power-bi-service"></a>Upotetun tietolähteen luominen sivutettuun raporttiin Power BI -palvelussa
 
@@ -32,7 +32,7 @@ Käytä seuraavien tietolähteiden tapauksessa [SQL Server Analysis Services -yh
 
 - Power BI Premium -tietojoukot
 
-Sivutetut raportit yhdistetään paikallisiin tietolähteisiin [Power BI -yhdyskäytävän avulla](service-gateway-getting-started.md). Määrität yhdyskäytävän, kun olet julkaissut raportin Power BI -palveluun.
+Sivutetut raportit yhdistetään paikallisiin tietolähteisiin [Power BI -yhdyskäytävän avulla](service-gateway-onprem.md). Määrität yhdyskäytävän, kun olet julkaissut raportin Power BI -palveluun.
 
 Katso lisätiedot kohdasta [Raporttitiedot Power BI:n raportin muodostimessa](report-builder-data.md).
 

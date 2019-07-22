@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 05/27/2019
-ms.openlocfilehash: 1bee1b31b5e264ec8cd092a90484fc20866db0b3
-ms.sourcegitcommit: e48ef4c88e4a1a0b259bf899d85d520c4edd5751
+ms.openlocfilehash: af3c22197e4d6783787bd72c9cf010bf6db64bc1
+ms.sourcegitcommit: 277fadf523e2555004f074ec36054bbddec407f8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66823362"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68270961"
 ---
 # <a name="frequently-asked-questions-about-power-bi-embedded"></a>Usein kysyttyjä kysymyksiä – Power BI Embedded
 
@@ -95,7 +95,7 @@ Tässä on luettelo joistain ominaisuuksien eroista.
 
 * Käyttämällä [Power BI -hallintaportaalia](../service-admin-portal.md#power-bi-embedded).
 
-* Lataamalla [mittausarvosovelluksen](https://review.docs.microsoft.com/power-bi/service-admin-premium-monitor-capacity) Power BI:ssä.
+* Lataamalla [mittausarvosovelluksen](https://docs.microsoft.com/power-bi/service-admin-premium-monitor-capacity) Power BI:ssä.
 
 * Käyttämällä [Azuren diagnostiikan kirjausta](azure-pbie-diag-logs.md).
 

@@ -8,12 +8,12 @@ ms.reviewer: ''
 ms.service: power-bi-embedded
 ms.topic: conceptual
 ms.date: 08/13/2018
-ms.openlocfilehash: 695d1f219b3438f07125447db04aad3ba971683a
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: dc1a034a062ca07fd9f31a847378913fd7ee4002
+ms.sourcegitcommit: 76fadf20c1e19ec43aa8f9c5a5e909b567419ef6
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61385304"
+ms.lasthandoff: 07/17/2019
+ms.locfileid: "68289856"
 ---
 # <a name="diagnostic-logging-for-power-bi-embedded-in-azure"></a>Power BI Embedded -palvelun diagnostiikan kirjaus Azuressa
 
@@ -22,7 +22,6 @@ ms.locfileid: "61385304"
 Diagnostiikan avulla voit hoitaa monenlaisia skenaarioita. Voit esimerkiksi
 
 * havaita pitkäaikaiset tai ongelmalliset kyselyt
-* havaita virheet, kun kapasiteettisi täyttyy
 * johtaa [kapasiteetin mittaustietoja](https://powerbi.microsoft.com/blog/power-bi-developer-community-april-update/)
 * seurata tiettyjen tietojoukkojen käyttöä.
 
@@ -127,9 +126,6 @@ Engine (Moduuli) -luokka ohjeistaa resurssin kirjaamaan seuraavat tapahtumat, ja
 | JobID | 0 | Työn tunnus edistymistä varten. |
 | ObjectId | 464 | Objektitunnus |
 | ObjectType | 802012 | ObjectType |
-| ObjectName | SalesLT-asiakas | ObjectName |
-| ObjectPath | 5eaa550e-06ac-4adf-aba9-dbf0e8fd1527.Model.SalesLT-asiakas | Objektin polku. Pilkuin eroteltu luettelo pääkohteista, alkaa objektin pääkohteesta. |
-| ObjectReference | <Object><Table>SalesLT-asiakas</Table><Model>Model</Model><Database>5eaa550e-06ac-4adf-aba9-dbf0e8fd1527</Database></Object> | Objektiviittaus. Koodattu XML-muodossa kaikille pääkohteille käyttäen tunnisteita objektin kuvailemiseen. |
 | EndTime | 2018-04-06T18:30:11.9137358Z | Aika, jolloin tapahtuma on päättynyt. |
 | Kesto | 0 | Tapahtumaan kulunut aika (millisekunteina). |
 | SessionType | Käyttäjä | Istuntotyyppi (toiminnon aiheuttanut entiteetti). |
@@ -138,7 +134,6 @@ Engine (Moduuli) -luokka ohjeistaa resurssin kirjaamaan seuraavat tapahtumat, ja
 | Severity | 0 | Poikkeuksen vakavuus. |
 | Onnistui | 1 | 1 = onnistuminen. 0 = epäonnistuminen (esimerkiksi 1 tarkoittaa käyttöoikeustarkistuksen onnistumista ja 0 epäonnistumista). |
 | Virhe | 0 | Määritetyn tapahtuman virheen numero. |
-| TextData | SET DC_KIND=\"AUTO\";  SELECT  [SalesLT-asiakas (464)].[rowguid (606)] AS [SalesLT-asiakas (464)$rowguid (606)]  FROM [SalesLT-asiakas (464)]; [Arvioitu koko (aseman järjestelytavuja): 850 6800] | Tapahtumaan liittyvät tekstitiedot. |
 | ConnectionID | 3 | Yksilöivä yhteystunnus. |
 | DatasetID | 5eaa550e-06ac-4adf-aba9-dbf0e8fd1527 | Sen tietojoukon tunnus, jossa käyttäjän lauseketta suoritetaan. |
 | SessionID | 3D063F66-A111-48EE-B960-141DEBDA8951 | Istunnon GUID-tunnus. |
@@ -146,8 +141,7 @@ Engine (Moduuli) -luokka ohjeistaa resurssin kirjaamaan seuraavat tapahtumat, ja
 | ClientProcessID | null | Asiakassovelluksen prosessitunnus. |
 | ApplicationName | null | Sen asiakasohjelman nimi, joka loi yhteyden palvelimeen. |
 | CapacityName | pbi641fb41260f84aa2b778a85891ae2d97 | Power BI Embedded -kapasiteettiresurssin nimi. |
-| RequestParameters |  |  |
-| RequestProperties |  |  |
+
 
 ### <a name="allmetrics"></a>AllMetrics
 
