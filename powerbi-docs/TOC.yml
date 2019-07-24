@@ -71,9 +71,9 @@
           href: desktop-directquery-data-sources.md
         - name: Power BI -tietolähde-edellytykset
           href: desktop-data-source-prerequisites.md
-        - name: 'Power BI:n monidimensiomallien oletusjäsen'
+        - name: 'Oletusjäsen Power BI:n monidimensiomalleissa'
           href: desktop-default-member-multidimensional-models.md
-        - name: Mukautettujen visualisointien usein kysytyt kysymykset
+        - name: Visualisointien UKK
           href: power-bi-custom-visuals-faq.md
     - name: Ohjeet
       items:
@@ -1067,48 +1067,70 @@
       items:
         - name: Yleiskatsaus
           items:
-            - name: 'Mukautetut visualisoinnit Power BI:ssä'
+            - name: 'Visualisoinnit Power BI:ssä'
               href: power-bi-custom-visuals.md
         - name: Opetusohjelmat
           items:
-            - name: 'Power BI:n mukautetun visualisoinnin kehittäminen'
+            - name: Power BI -visualisoinnin kehittäminen
               href: developer/custom-visual-develop-tutorial.md
             - name: Muotoiluasetusten lisääminen
               href: developer/custom-visual-develop-tutorial-format-options.md
+            - name: Yksikkötestausten lisääminen visualisointiprojektiin
+              href: developer/visuals/unit-tests-introduction.md
         - name: Käsitteet
           items:
-            - name: 'Organisaatioiden mukautetut visualisoinnit Power BI:ssä'
+            - name: 'Organisaatioiden visualisoinnit Power BI:ssä'
               href: power-bi-custom-visuals-organization.md
             - name: Power BI -visualisointien ohjeet
               href: developer/guidelines-powerbi-visuals.md
-            - name: Mukautettujen visualisointien usein kysytyt kysymykset
+            - name: Visualisointien UKK
               href: power-bi-custom-visuals-faq.md
             - name: Ominaisuuksien käyttö
-              href: 'https://microsoft.github.io/PowerBI-visuals/docs/concepts/capabilities/'
+              href: developer/visuals/capabilities.md
             - name: Tietonäkymän yhdistämismääritykset
-              href: 'https://microsoft.github.io/PowerBI-visuals/docs/concepts/dataviewmappings/'
+              href: developer/visuals/dataview-mappings.md
             - name: Objektit ja ominaisuudet
-              href: 'https://microsoft.github.io/PowerBI-visuals/docs/concepts/objects-and-properties/'
+              href: developer/visuals/objects-properties.md
             - name: Muokkaustilan lisäasetukset
-              href: 'https://microsoft.github.io/PowerBI-visuals/docs/concepts/advanced-edit-mode/'
-            - name: Versioituun ohjelmointirajapintaan siirtyminen -ohje
-              href: 'https://microsoft.github.io/PowerBI-visuals/docs/concepts/migrating-to-versioned-api-guide/'
+              href: developer/visuals/advanced-edit-mode.md
         - name: Ohjeet
           items:
-            - name: Mukautetun visualisoinnin sertifioinnin hankkiminen
+            - name: Visualisoinnin sertifioinnin hankkiminen
               href: power-bi-custom-visuals-certified.md
             - name: Omien visualisointien julkaiseminen AppSourcessa
               href: developer/office-store.md
             - name: 'R:ää hyödyntävien mukautettujen visualisointien käyttö Power BI:ssä'
               href: desktop-r-powered-custom-visuals.md
-            - name: Vianmääritys
-              items:
-                - name: Mukautettujen visualisointien kehittämisen vianmääritys
-                  href: power-bi-custom-visuals-troubleshoot.md
+            - name: Visualisointitoimet
+              href: developer/visuals/visuals-interactions.md
+            - name: Visualisointien työkaluvihjeiden lisääminen
+              href: developer/visuals/add-tooltips.md
+            - name: Analytiikkaruudun lisääminen
+              href: developer/visuals/analytics-pane.md
+            - name: Visualisointien suodattaminen
+              href: developer/visuals/filter-api.md
+            - name: Lisätietojen noutaminen
+              href: developer/visuals/fetch-more-data.md
+            - name: Kirjanmerkkituen lisääminen
+              href: developer/visuals/bookmarks-support.md
+            - name: Tietojen korostaminen visualisoinneissa
+              href: developer/visuals/highlight.md
+            - name: Suuren kontrastin tilan tuen lisääminen
+              href: developer/visuals/high-contrast-support.md
+            - name: Osittajien synkronoinnin käyttöönotto
+              href: developer/visuals/enable-sync-slicers.md
+            - name: Power BI -visualisointien vianmääritys
+              href: power-bi-custom-visuals-troubleshoot.md
         - name: Viittaus
           items:
-            - name: Ohjelmointirajapinnat
-              href: 'https://microsoft.github.io/PowerBI-visuals/api/references/ivisualhost/'
+            - name: Aloitussivu
+              href: developer/visuals/landing-page.md
+            - name: 'URL:n käynnistäminen'
+              href: developer/visuals/launch-url.md
+            - name: Tapahtumien hahmontaminen
+              href: developer/visuals/event-service.md
+            - name: Lajittelu
+              href: developer/visuals/sort-options.md
         - name: Resurssit
           items:
             - name: Kehityskeskus
@@ -1117,6 +1139,8 @@
               href: 'https://microsoft.github.io/PowerBI-visuals/samples/'
             - name: Mukautettujen visualisointien Git Repo
               href: 'https://go.microsoft.com/fwlink/?linkid=848277'
+            - name: SSL-varmenteen luominen
+              href: developer/visuals/create-ssl-certificate.md
     - name: Automaatio
       items:
         - name: Yleiskatsaus
