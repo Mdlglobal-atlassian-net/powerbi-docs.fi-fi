@@ -311,7 +311,7 @@ Alla on [kattava koodiluettelo](#code).
     }
 ```
 
-Vaikka tarkensimme, että ** _//Saamme ensimmäisen tunnuksen_** yllä olevasta koodista, oikea tapa on etsiä tietojoukko nimen mukaan.
+Vaikka tarkensimme, että **_//Saamme ensimmäisen tunnuksen_** yllä olevasta koodista, oikea tapa on etsiä tietojoukko nimen mukaan.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 [Tietojen työntäminen Power BI -raporttinäkymään](walkthrough-push-data.md)  
