@@ -149,7 +149,7 @@ Power BI -palvelun käyttäjän todentamisjakso tapahtuu seuraavissa vaiheissa k
 
 2. Selain lähettää evästeen, joka saatiin onnistuneen Microsoft Online Services -palveluihin kirjautumisen yhteydessä ja jonka **ASP.NET-palvelu** tutkii **WFE-klusterissa**.
 
-3. WFE-klusteri tarkistaa **Azure Active Directory** (**AAD**) -palvelulta käyttäjän Power BI -palvelun tilauksen todennuksen ja hankkii palvelulta AAD-suojaustunnuksen. Kun AAD palauttaa käyttäjän onnistuneen todennuksen ja palauttaa AAD-suojaustunnuksen, WFE-klusteri konsultoi **Power BI *** yleistä palvelua**, joka ylläpitää vuokraajaluetteloa sekä vuokraajien Power BI -Back-End-klusterien sijainteja, ja määrittää, mikä Power BI -palvelun klusteri sisältää käyttäjän vuokraajan. WFE-klusteri ohjaa sitten käyttäjän Power BI -klusteriin, jossa sen vuokraaja sijaitsee, ja palauttaa käyttäjän selaimeen kokoelman kohteita:
+3. WFE-klusteri tarkistaa **Azure Active Directory** (**AAD**) -palvelulta käyttäjän Power BI -palvelun tilauksen todennuksen ja hankkii palvelulta AAD-suojaustunnuksen. Kun AAD palauttaa käyttäjän onnistuneen todennuksen ja palauttaa AAD-suojaustunnuksen, WFE-klusteri konsultoi **Power BI** ** yleistä palvelua**, joka ylläpitää vuokraajaluetteloa sekä vuokraajien Power BI -Back-End-klusterien sijainteja, ja määrittää, mikä Power BI -palvelun klusteri sisältää käyttäjän vuokraajan. WFE-klusteri ohjaa sitten käyttäjän Power BI -klusteriin, jossa sen vuokraaja sijaitsee, ja palauttaa käyttäjän selaimeen kokoelman kohteita:
 
       - **AAD-suojaustunnuksen**
       - **istunnon tiedot**
