@@ -10,84 +10,85 @@ ms.topic: conceptual
 ms.date: 5/06/2019
 ms.author: mblythe
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: bc6eaccc2976266102dcca0d20df73df810fa5f3
-ms.sourcegitcommit: bf535771c9ef495f9bb658569403fa5e3dd82e6a
-ms.translationtype: MT
+ms.openlocfilehash: 7827ce359022eccfb75798b08da164b7504c84df
+ms.sourcegitcommit: 277fadf523e2555004f074ec36054bbddec407f8
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65853565"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68271841"
 ---
 # <a name="troubleshooting-power-bi-gateway---personal"></a>Power BI Gateway - Personal -yhdyskäytävän vianmääritys
-Seuraavassa käydään läpi joitakin yleisiä ongelmia, jotka saattavat olla eri, kun käytät Power BI Gateway-Personal.
 
-> [!NOTE]
-> Henkilökohtaiseen käyttöön tarkoitetun yhdyskäytävän nykyinen versio on **paikallinen tietoyhdyskäytävä (henkilökohtainen)**. Päivitä asennuksesi käyttämään kyseistä versiota.
-> 
-> 
+[!INCLUDE [gateway-rewrite](includes/gateway-rewrite.md)]
+
+Seuraavissa osissa käydään läpi joitakin yleisiä ongelmia, joita saatat kohdata käyttäessäsi Power BI Gateway - Personal -yhdyskäytävää.
 
 ## <a name="update-to-the-latest-version"></a>Päivitä uusimpaan versioon
-Monet ongelmat ilmenevät yhdyskäytävän versio on vanhentunut.  Se on hyvä yleinen käytäntö on varmistaa, että olet aina uusinta versiota. Jos ole päivittänyt yhdyskäytävää, kuukausi tai pidempi, harkitse yhdyskäytävän uusin versio. Katso sitten, jos toistuuko ongelma.
+
+Henkilökohtaiseen käyttöön tarkoitetun yhdyskäytävän nykyinen versio on **paikallinen tietoyhdyskäytävä (henkilökohtainen)** . Päivitä asennuksesi käyttämään kyseistä versiota.
+
+Ongelmia voi esiintyä paljon, jos yhdyskäytävän versio on vanhentunut.  Hyvä yleinen käytäntö on varmistaa, että käytät aina uusinta versiota. Jos et ole päivittänyt yhdyskäytävää ainakaan kuukauteen, sinun kannattaa harkita yhdyskäytävän uusimman version asentamista. Tarkista sitten, voitko toistaa ongelman.
 
 ## <a name="installation"></a>Asennus
-**Henkilökohtainen yhdyskäytävä on 64-bittinen** – Jos tietokoneesi on 32-bittinen, et voi asentaa henkilökohtaisen yhdyskäytävän. Käyttöjärjestelmän on oltava 64-bittinen versio. Asenna Windows 64-bittinen versio tai asenna henkilökohtaisen yhdyskäytävän 64-bittiseen tietokoneeseen.
+**Henkilökohtainen yhdyskäytävä on 64-bittinen** – Jos koneesi on 32-bittinen, henkilökohtaista yhdyskäytävää ei voi asentaa. Käyttöjärjestelmän on oltava 64-bittinen versio. Asenna Windowsin 64-bittinen versio tai asenna henkilökohtainen yhdyskäytävä 64-bittiseen tietokoneeseen.
 
-**Henkilökohtaisen yhdyskäytävän asentaminen palveluna, vaikka olet tietokoneen paikallinen järjestelmänvalvoja epäonnistuu** – asennus voi epäonnistua, jos käyttäjä kuuluu tietokoneen paikallisten järjestelmänvalvojien ryhmään, mutta Ryhmäkäytäntö ei salli kyseisen käyttäjätunnuksen Kirjaudu sisään palvelu. Tällä hetkellä Varmista, että Ryhmäkäytäntö sallii käyttäjän, kirjaudu sisään palveluna. Pyrimme korjaamaan tämän ongelman. [Lue lisää](https://technet.microsoft.com/library/cc739424.aspx)
+**Henkilökohtaisen yhdyskäytävän asentaminen palveluna epäonnistuu, vaikka olet tietokoneen paikallinen järjestelmänvalvoja** – Asennus voi epäonnistua, jos käyttäjä kuuluu tietokoneen paikallisten järjestelmänvalvojien ryhmään, mutta ryhmäkäytäntö ei salli kyseisen käyttäjätunnuksen kirjautumista palveluna. Varmista tässä tilanteessa, että ryhmäkäytäntö sallii käyttäjän kirjautumisen sisään palveluna. Pyrimme korjaamaan tämän ongelman. [Lue lisää](https://technet.microsoft.com/library/cc739424.aspx)
 
-**Toiminto aikakatkaistiin** – tämä viesti on yleinen, jos tietokoneessa (fyysinen kone tai Näennäiskone), johon olet asentamassa henkilökohtaista yhdyskäytävää on yksiytiminen suoritin. Sulje kaikki sovellukset, poista tarpeettomat prosessit käytöstä ja yritä asentaa uudelleen.
+**Toiminto aikakatkaistiin** – Tämä sanoma on yleinen, jos tietokoneessa (fyysinen kone tai näennäiskone), johon olet asentamassa henkilökohtaista yhdyskäytävää, on yksiytiminen suoritin. Sulje kaikki sovellukset, poista tarpeettomat prosessit käytöstä ja yritä asentaa uudelleen.
 
-**Tietoyhdyskäytävää tai Analysis Services Connector ei voi asentaa samaan tietokoneeseen henkilökohtaisen yhdyskäytävän** – Jos sinulla on jo Analysis Services Connector-tai tietoyhdyskäytävä asennettuna, poista ensin liittimen tai yhdyskäytävä. Yritä sitten asentaa henkilökohtainen yhdyskäytävä.
+**Tietoyhdyskäytävää tai Analysis Services Connector -liitintä ei voi asentaa samaan tietokoneeseen henkilökohtaisen yhdyskäytävän kanssa** – Jos sinulla on jo Analysis Services Connector tai tietoyhdyskäytävä asennettuna, poista ensin liittimen tai henkilökohtaisen yhdyskäytävän asennus. Yritä sitten asentaa henkilökohtainen yhdyskäytävä.
 
 > [!NOTE]
-> Jos kohtaat ongelman asennuksen aikana asennuslokit antaa tietoja, jotka auttavat sinua ratkaisemaan ongelman. Jos haluat lisätietoja, katso [asennuslokit](#SetupLogs).
+> Jos kohtaat ongelman asennuksen aikana, asennuslokeista voit saada tietoja, jotka auttavat sinua ratkaisemaan ongelman. Katso lisätietoja kohdasta [Asennuslokit](#SetupLogs).
 > 
 > 
 
- **Välityspalvelimen määritys** näyttöön saattaa tulla ongelmia henkilökohtaisen yhdyskäytävän määrityksessä, jos ympäristösi tarvitsee välityspalvelimen käyttöä. Lisätietoja välityspalvelimen tietojen määrityksestä saat artikkelista [Power BI -yhdyskäytävien välityspalvelinasetusten määrittäminen](service-gateway-proxy.md).
+ **Välityspalvelinmääritys** – Henkilökohtaisen yhdyskäytävän määrityksessä voi ilmetä ongelmia, jos ympäristössäsi on käytettävä välityspalvelinta. Lisätietoja välityspalvelimen tietojen määrityksestä saat artikkelista [Paikallisen tietoyhdyskäytävän välityspalvelinasetusten määrittäminen](/data-integration/gateway/service-gateway-proxy).
 
 ## <a name="schedule-refresh"></a>Ajoita päivitys
 **Virhe: pilveen tallennettu tunnistetieto puuttuu.**
 
-Voit saada tämän virheen asetuksissa \<tietojoukon\> Jos olet ajoittanut päivityksen asennus ja henkilökohtaisen yhdyskäytävän uudelleen. Kun henkilökohtaisen yhdyskäytävän asennuksen, joka on päivitettäväksi määritetyn tietojoukon tietolähteen tunnistetiedot poistetaan Power BI-palvelusta.
+Saatat saada tämän virheilmoituksen \<tietojoukon\> asetuksissa, jos olet ajoittanut päivityksen ja sen jälkeen poistanut henkilökohtaisen yhdyskäytävän asennuksen ja asentanut sen uudelleen. Kun poistat henkilökohtaisen yhdyskäytävän asennuksen, päivitettäväksi määritetyn tietojoukon tietolähteen tunnistetiedot poistetaan Power BI -palvelusta.
 
-**Ratkaisu:** Siirry Power BI:ssä tietojoukon päivitysasetuksiin. Tietolähteiden hallinta-virheen tietolähteen Valitse **Muokkaa tunnistetietoja** ja kirjaudu sisään tietolähteeseen uudelleen.
+**Ratkaisu:** Siirry Power BI:ssä tietojoukon päivitysasetuksiin. Valitse Tietolähteiden hallinta -kohdassa kaikkien virheen kohdanneiden tietolähteiden kohdalla **Muokkaa tunnistetietoja** -vaihtoehto ja kirjaudu sitten tietolähteeseen uudelleen.
 
 **Virhe: tietojoukolle annetut tunnistetiedot ovat virheelliset. Jatka päivittämällä tunnistetiedot päivityksen kautta tai Tietolähdeasetukset-valintaikkunassa.**
 
 **Ratkaisu**: Jos näyttöön tulee tunnistetietosanoma, se voi tarkoittaa seuraavia asioita:
 
-* Varmista, että käyttäjänimet ja salasanat kirjautua sisään tietolähteisiin ovat ajan tasalla. Siirry Power BI:ssä tietojoukon päivitysasetuksiin. Valitse tietolähteiden hallinta **Muokkaa tunnistetietoja** tietolähteen tunnistetietojen päivittäminen.
-* Koosteet pilvipalvelulähteen ja paikallisen lähteen välillä, yksittäisessä kyselyssä, eivät päivity henkilökohtaisessa yhdyskäytävässä, jos jompikumpi lähteistä käyttää OAuth-todennusta. Esimerkiksi Tämä ongelma on kooste CRM Onlinen ja paikallisen SQL Server-välillä. Kooste ei onnistu, koska CRM Online edellyttää OAuth-todennusta.
+* Varmista, että tietolähteisiin kirjautumiseen käytetyt käyttäjänimet ja salasanat ovat ajan tasalla. Siirry Power BI:ssä tietojoukon päivitysasetuksiin. Päivitä tietolähteen tunnistetiedot valitsemalla Tietolähteiden hallinnassa **Muokkaa tunnistetietoja** -vaihtoehto.
+* Koosteet pilvipalvelulähteen ja paikallisen lähteen välillä, yksittäisessä kyselyssä, eivät päivity henkilökohtaisessa yhdyskäytävässä, jos jompikumpi lähteistä käyttää OAuth-todennusta. Esimerkki tästä ongelmasta on kooste CRM Onlinen ja paikallisen SQL Serverin välillä. Kooste epäonnistuu, koska CRM Online edellyttää OAuth-todennusta.
   
-  Tämä virhe on tunnettu ongelma ja se on parhaillaan tarkastellut. Voit kiertää ongelman ole erillisiä kyselyitä pilvipalvelulähteelle ja paikalliselle lähteelle. Sitten käyttämällä Yhdistä tai liittämiskysely yhdistää ne.
+  Tämä virhe on tunnettu ongelma, joka on tarkastelun alla. Voit kiertää ongelman käyttämällä erillisiä kyselyitä pilvipalvelulähteelle ja paikalliselle lähteelle. Yhdistä ne käyttämällä Yhdistä kysely- tai Liitä kyselyt loppuun -toimintoa.
 
 **Virhe: ei-tuettu tietolähde.**
 
 **Ratkaisu:** Jos saat ei-tuetusta tietolähteestä ilmoittavan virhesanoman Ajoita päivitys -asetuksissa, se voi tarkoittaa seuraavia asioita: 
 
-* Tietolähde ei tällä hetkellä tueta Power BI-päivitys. 
-* Excel-työkirja ei sisällä tietomallia, vain laskentataulukkotietoja. Power BI tukee tällä hetkellä päivitystä vain, jos ladattu Excel-työkirja sisältää tietomallin. Kun tuot tietoja Power Queryn avulla Excelissä, muista valita Lataa tiedot tietomalliin -vaihtoehto. Tämä asetus varmistaa, että tiedot tuodaan tietomallin. 
+* Tietolähteen päivitystä ei tällä hetkellä tueta Power BI:ssä. 
+* Excel-työkirja ei sisällä tietomallia, vain laskentataulukon tietoja. Power BI tukee tällä hetkellä päivitystä vain, jos ladattu Excel-työkirja sisältää tietomallin. Kun tuot tietoja Power Queryn avulla Excelissä, muista valita Lataa tiedot tietomalliin -vaihtoehto. Tämä vaihtoehto varmistaa, että tiedot tuodaan tietomalliin. 
 
-**Virhe: [Tietojen yhdistäminen ei onnistu] &lt;kyselyosa&gt;/&lt;... &gt; / &lt;... &gt; käyttää tietolähteitä, joiden yksityisyystasoja ei voi käyttää yhdessä. Muodosta tämä tietoyhdistelmä uudelleen.**
+**Virhe: [Tietojen yhdistäminen ei onnistu] &lt;kyselyosa&gt;/&lt;…&gt;/&lt;…&gt; käyttää tietolähteitä, joiden yksityisyystasoja ei voi käyttää yhdessä. Muodosta tämä tietoyhdistelmä uudelleen.**
 
-**Ratkaisu**: Tämä virhe johtuu tietosuojatason rajoituksista ja erilaisiin tietolähteisiin, jota käytät.
+**Ratkaisu**: Tämä virhe johtuu yksityisyystason rajoituksista ja käyttämiesi tietolähteiden tyypeistä.
 
 **Virhe: Tietolähdevirhe: Arvoa ”\[Table\]” ei voi muuntaa tyypiksi Table.**
 
-**Ratkaisu**: Tämä virhe johtuu tietosuojatason rajoituksista ja erilaisiin tietolähteisiin, jota käytät.
+**Ratkaisu**: Tämä virhe johtuu yksityisyystason rajoituksista ja käyttämiesi tietolähteiden tyypeistä.
 
 **Virhe: Tälle riville ei ole tarpeeksi tilaa.**
 
-Tämä virhe ilmenee, jos sinulla on yli 4 Mt. yksittäisen rivin kokoa. Etsi rivi, tietolähteestä ja yrittää suodattaa se pois tai pienentää kyseisen rivin kokoa.
+Tämä virhe ilmenee, jos yksittäisen rivin koko on yli 4 Mt. Selvitä, mikä tietolähteen rivi on kyseessä, ja yritä suodattaa se pois tai pienentää kyseisen rivin kokoa.
 
 ## <a name="data-sources"></a>Tietolähteet
-**Puuttuva tietopalvelu** – henkilökohtainen yhdyskäytävä on vain 64-bittinen versio. Se edellyttää, että tietopalveluiden 64-bittinen versio on asennettuna samaan tietokoneeseen, jossa henkilökohtainen yhdyskäytävä on asennettuna. Jos esimerkiksi tietojoukon tietolähde on Microsoft Access, sinun on asennettava 64-bittinen ACE-palvelu samaan tietokoneeseen, johon asensit henkilökohtaisen yhdyskäytävän.  
+**Puuttuva tietopalvelu** – Henkilökohtainen yhdyskäytävä on vain 64-bittinen versio. Se edellyttää, että tietopalveluiden 64-bittinen versio on asennettuna samaan tietokoneeseen, jossa henkilökohtainen yhdyskäytävä on asennettuna. Jos esimerkiksi tietojoukon tietolähde on Microsoft Access, sinun on asennettava 64-bittinen ACE-palvelu samaan tietokoneeseen, johon asensit henkilökohtaisen yhdyskäytävän.  
 
 >[!NOTE]
->Jos sinulla on 32-bittinen Excel, et voi asentaa 64-bittinen ACE-palvelua samaan tietokoneeseen.
+>Jos sinulla on 32-bittinen Excel-versio, et voi asentaa 64-bittistä ACE-palvelua samaan tietokoneeseen.
 
 **Windows-todentamista ei tueta Access-tietokannan osalta** – Power BI tukee tällä hetkellä vain anonyymiä todentamista Access-tietokannassa. Pyrimme ottamaan Windows-todennuksen käyttöön Access-tietokannassa.
 
-**Kirjautumisvirhe tunnistetietojen antamisen yhteydessä tietolähteeseen** – Jos saat virheilmoituksen katsomalla antaessasi Windows-tunnistetietoja tietolähteelle, käytössäsi saattaa edelleen olla henkilökohtaisen yhdyskäytävän vanhempi versio. [Asenna Power BI Gateway - Personal -yhdyskäytävän uusin versio](https://powerbi.microsoft.com/gateway/).
+**Kirjautumisvirhe tunnistetietojen antamisen yhteydessä tietolähteeseen** – Jos saat tällaisen virheilmoituksen antaessasi Windows-tunnistetietoja tietolähteelle, käytössäsi saattaa edelleen olla henkilökohtaisen yhdyskäytävän vanhempi versio. [Asenna Power BI Gateway - Personal -yhdyskäytävän uusin versio](https://powerbi.microsoft.com/gateway/).
 
   ![](media/service-admin-troubleshooting-power-bi-personal-gateway/pbi_pg_credentialserror.jpg.png)
 
@@ -95,57 +96,57 @@ Tämä virhe ilmenee, jos sinulla on yli 4 Mt. yksittäisen rivin kokoa. Etsi ri
 
 ![](media/service-admin-troubleshooting-power-bi-personal-gateway/aceoledberror.png)
 
-Power BI ei tällä hetkellä tue Windows-todennusta tietolähteelle käyttämällä ACE OLEDB-palvelua.
+Power BI tällä hetkellä tue Windows-todentamista tietolähteelle ACE OLEDB -palvelun avulla.
 
-**Ratkaisu:** Voit kiertää tämän virheen valitsemalla **anonyymi todennus**. Vanhoissa ACE OLEDB-anonyymit tunnistetiedot vastaavat Windows-tunnistetietoja.
+**Ratkaisu:** Voit ohittaa tämän virheen valitsemalla **anonyymin todennuksen**. Vanhoissa ACE OLEDB -palveluissa anonyymit tunnistetiedot vastaavat Windows-tunnistetietoja.
 
 ## <a name="tile-refresh"></a>Ruudun päivitys
-Jos saat virhe koontinäyttöruudut päivittyvät, katso seuraavasta artikkelista.
+Jos saat koontinäytön ruutujen päivittämistä koskevan virheilmoituksen, tutustu seuraavaan artikkeliin.
 
 [Ruutuvirheiden vianmääritys](refresh-troubleshooting-tile-errors.md)
 
 ## <a name="tools-for-troubleshooting"></a>Työkalut vianmääritykseen
 ### <a name="refresh-history"></a>Päivityshistoria
-**Päivityshistoria** avulla näet ilmenneet virheet ja tarjoaa hyödyllisiä tietoja, jos haluat luoda tukipyyntö. Voit tarkastella ajoitettu sekä pyydettäessä päivitykset. Miten saat **päivityshistoria**.
+**Päivityshistoriasta** näet ilmenneet virheet ja hyödyllisiä tietoja, jos joudut luomaan tukipyynnön. Voit tarkistaa sekä ajoitetut päivitykset että pyynnöstä suoritetut päivitykset. Pääset **päivityshistoriaan** seuraavasti.
 
 1. Valitse Power BI:n siirtymisruudun **Tietojoukot**-kohdasta tietojoukko ja sitten &gt; Avaa valikko&gt; **Ajoita päivitys**.
    ![](media/service-admin-troubleshooting-power-bi-personal-gateway/scheduled-refresh.png)
-1. - **Asetukset...** , valitse **päivityshistoria**.  
+1. Valitse **Asetukset kohteelle...** ja **Päivityshistoria**.  
    ![](media/service-admin-troubleshooting-power-bi-personal-gateway/scheduled-refresh-2.png)
    
    ![](media/service-admin-troubleshooting-power-bi-personal-gateway/refresh-history.png)
 
 ### <a name="event-logs"></a>Tapahtumalokit
-Useita tapahtumalokeja voi antaa tietoja. Kaksi ensimmäistä, **Data Management Gateway** ja **PowerBIGateway**, ei ole, jos olet tietokoneen järjestelmänvalvoja.  Jos et ole järjestelmänvalvoja ja käytät henkilökohtaista yhdyskäytävää, näet lokimerkinnät **sovelluksen** log.
+Saatavilla on useita tapahtumalokeja, jotka voivat antaa tietoja. Kaksi ensimmäistä, **tietoyhdyskäytävä** ja **PowerBIGateway**, ovat käytettävissä, jos olet tietokoneen järjestelmänvalvoja.  Jos et ole järjestelmänvalvoja ja käytössäsi on henkilökohtainen yhdyskäytävä, näet lokimerkinnät **sovelluslokista**.
 
 **Tietoyhdyskäytävän** ja **PowerBIGatewayn** lokit ovat kohdassa **Sovellus- ja palvelulokit**.
 
 ![](media/service-admin-troubleshooting-power-bi-personal-gateway/event-logs.png)
 
 ### <a name="fiddler-trace"></a>Fiddler-jäljitys
-[Fiddler](http://www.telerik.com/fiddler) on Telerikin ilmainen työkalu, joka valvoo HTTP-liikennettä. Näet Power BI-palvelun tiedonsiirtoa tietoliikenteen. Tämä tiedote saattaa näyttää virheitä ja muita olennaisia tietoja.
+[Fiddler](http://www.telerik.com/fiddler) on Telerikin ilmainen työkalu, joka valvoo HTTP-liikennettä. Voit tarkastella Power BI -palvelun tiedonsiirtoa asiakaskoneelta. Tässä tiedonsiirrossa saattaa näkyä virheitä ja muita olennaisia tietoja.
 
 ![](media/service-admin-troubleshooting-power-bi-personal-gateway/fiddler.png)
 
 <a name="SetupLogs"></a>
 
 ### <a name="setup-logs"></a>Asennuslokit
-Jos **henkilökohtaisen yhdyskäytävän**, ei voi asentaa, näkyviin tulee linkki asennuslokiin. Asennuksen lokin näyttää voit saada lisätietoja virheestä. Nämä lokit ovat Windowsin, myös nimitystä MSI-lokit. Ne voivat olla melko monimutkaisia ja vaikealukuisia. Yleensä alareunassa on saatava virhe, mutta määritettäessä virheen syy ei ole yksinkertaisen. Se voi olla tulos eri lokissa olevista virheistä tai tulos lokissa ylempänä olevasta virheestä.
+Jos **henkilökohtaisen yhdyskäytävän** asennus epäonnistuu, näkyviin tulee linkki, jonka kautta pääset asennuslokiin. Asennusloki voi sisältää lisätietoja virheestä. Lokit ovat Windowsin asennuslokeja, joista käytetään myös nimitystä MSI-lokit. Ne voivat olla melko monimutkaisia ja vaikealukuisia. Tavallisesti tuloksena oleva virhe on alhaalla, mutta virheen syyn määrittäminen ei ole yksinkertaista. Se voi olla tulos eri lokissa olevista virheistä tai tulos lokissa ylempänä olevasta virheestä.
 
 ![](media/service-admin-troubleshooting-power-bi-personal-gateway/setup-log.png)
 
-Tai voit siirtyä- **Temp-kansioosi** (% temp %) ja etsiä tiedostoja, jotka alkavat **Power\_BI\_**.
+Voit myös siirtyä omaan **Temp-kansioosi** (%temp%) ja etsiä tiedostoja, jotka alkavat nimellä **Power\_BI\_** .
 
 > [!NOTE]
-> Hakemiston %temp% avaaminen voi viedä temp-alikansioon. **Power\_BI\_**  tiedostot ovat tilapäishakemiston juuressa.  Joudut ehkä siirtymään ylöspäin tason tai kahden verran.
+> Hakemiston %temp% avaaminen voi viedä temp-alikansioon. **Power\_BI\_** -tiedostot ovat tilapäishakemiston juuressa.  Joudut ehkä siirtymään ylöspäin tason tai kahden verran.
 > 
 > 
 
 ![](media/service-admin-troubleshooting-power-bi-personal-gateway/setup-logs2.png)
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
-[Power BI -yhdyskäytävien välityspalvelinasetusten määrittäminen](service-gateway-proxy.md)  
-[Tietojen uudelleenlataus](refresh-data.md)  
+[Paikallisen tietoyhdyskäytävän välityspalvelinasetusten määrittäminen](/data-integration/gateway/service-gateway-proxy)  
+[Tietojen päivittäminen](refresh-data.md)  
 [Power BI Gateway - Personal](service-gateway-personal-mode.md)  
 [Ruutuvirheiden vianmääritys](refresh-troubleshooting-tile-errors.md)  
 [Paikallisen tietoyhdyskäytävän vianmääritys](service-gateway-onprem-tshoot.md)  

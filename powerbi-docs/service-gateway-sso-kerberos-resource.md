@@ -8,14 +8,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: conceptual
-ms.date: 01/08/2018
+ms.date: 07/15/2019
 LocalizationGroup: Gateways
-ms.openlocfilehash: 6da5d89ae1ad3b98a879e4d99a10aa69224e1c46
-ms.sourcegitcommit: 20ae9e9ffab6328f575833be691073de2061a64d
+ms.openlocfilehash: 6dc530305634b44415ddccb9c42952c0bfbe2e5f
+ms.sourcegitcommit: 277fadf523e2555004f074ec36054bbddec407f8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58383356"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68271933"
 ---
 # <a name="use-resource-based-kerberos-for-single-sign-on-sso-from-power-bi-to-on-premises-data-sources"></a>Resurssipohjaisen Kerberoksen käyttäminen kertakirjautumiseen (SSO) Power BI:stä paikallisiin tietolähteisiin
 
@@ -23,7 +23,7 @@ Käytä [resurssipohjaista rajoitettua Kerberos-delegointia](/windows-server/sec
 
 ## <a name="preparing-for-resource-based-kerberos-constrained-delegation"></a>Resurssipohjaisen rajoitetun Kerberos-delegoinnin valmisteleminen
 
-Useita kohteita on määritettävä, jotta rajoitettu Kerberos-delegointi toimisi oikein, muun muassa _palvelun päänimet_ (SPN) ja palvelutilien delegointiasetukset. 
+Useita kohteita on määritettävä, jotta rajoitettu Kerberos-delegointi toimisi oikein, muun muassa _palvelun päänimet_ (SPN) ja palvelutilien delegointiasetukset.
 
 ### <a name="prerequisite-1-operating-system-requirements"></a>Edellytys 1: Käyttöjärjestelmävaatimukset
 
@@ -31,7 +31,7 @@ Resurssipohjainen rajoitettu delegointi voidaan määrittää vain toimialueen o
 
 ### <a name="prerequisite-2-install-and-configure-the-on-premises-data-gateway"></a>Edellytys 2: Asenna ja määritä paikallinen tietoyhdyskäytävä
 
-Tämä paikallisen tietoyhdyskäytävän versio tukee suoraa päivitystä ja aiemmin luotujen yhdyskäytävien _asetusten haltuunottoa_.
+Tämä paikallinen tietoyhdyskäytävä tukee suoraa päivitystä ja aiemmin luotujen yhdyskäytävien _asetusten haltuunottoa_.
 
 ### <a name="prerequisite-3-run-the-gateway-windows-service-as-a-domain-account"></a>Edellytys 3: Suorita yhdyskäytävän Windows-palvelu toimialuetilinä
 
@@ -39,7 +39,7 @@ Normaalissa asennuksessa yhdyskäytävä toimii tietokoneen paikallisena palvelu
 
 ![Toimialuetili](media/service-gateway-sso-kerberos-resource/domain-account.png)
 
-Jotta **rajoitettu Kerberos-delegointi voidaan ottaa käyttöön, yhdyskäytävän on toimittava toimialuetilinä, ellei Azure AD:tä ole jo synkronoitu paikallisen Active Directoryn kanssa (käyttämällä Azure AD DirSynciä/Connectia). Jos haluat vaihtaa tilin toimialuetiliin, tutustu kohtaan [Yhdyskäytävän vaihtaminen toimialuetiliin](service-gateway-sso-kerberos.md).
+Jotta **rajoitettu Kerberos-delegointi voidaan ottaa käyttöön, yhdyskäytävän on toimittava toimialuetilinä, ellei Azure AD:tä ole jo synkronoitu paikallisen Active Directoryn kanssa (käyttämällä Azure AD DirSynciä/Connectia). Jos haluat vaihtaa tilin toimialuetiliin, tutustu kohtaan [Yhdyskäytävän palvelutilin muuttaminen](/data-integration/gateway/service-gateway-service-account).
 
 Jos Azure AD-DirSync / Connect on määritetty ja käyttäjätilit synkronoidaan, yhdyskäytäväpalvelun ei tarvitse tehdä paikallisia hakuja AD:stä suorituksen aikana. Voit käyttää yhdyskäytäväpalveluun paikallisen palvelun SID-tunnusta (toimialuetilin vaatimisen sijasta). Tässä artikkelissa kuvatut rajoitetun Kerberos-delegoinnin määritysvaiheet ovat samat kuin kyseinen määritys (niitä sovelletaan yhdyskäytävän tietokoneobjektiin Active Directoryssa toimialuetilin sijaan).
 
@@ -51,9 +51,9 @@ Vaikka toimialueen järjestelmänvalvojan on teknisesti mahdollista antaa jollek
 
 Jotta järjestelmä voidaan määrittää oikein, seuraavat kaksi kohdetta on määritettävä tai vahvistettava:
 
-1. Määritä tarvittaessa palvelun päänimi yhdyskäytäväpalvelun toimialuetilille.
+* Määritä tarvittaessa palvelun päänimi yhdyskäytäväpalvelun toimialuetilille.
 
-1. Määritä yhdyskäytäväpalvelun toimialuetilin delegointiasetukset.
+* Määritä yhdyskäytäväpalvelun toimialuetilin delegointiasetukset.
 
 Huomaa, että sinun on oltava toimialueen järjestelmänvalvoja, jotta voit suorittaa nämä kaksi määritysvaihetta.
 
@@ -61,15 +61,15 @@ Nämä vaiheet kuvataan seuraavissa osissa.
 
 ### <a name="configure-an-spn-for-the-gateway-service-account"></a>SPN:n määrittäminen yhdyskäytävän palvelutilille
 
-Selvitä ensin, onko yhdyskäytävän palvelutilinä käytetylle toimialuetilille luotu jo SPN, noudattamalla näitä ohjeita:
+Selvitä ensin noudattamalla näitä ohjeita, onko yhdyskäytävän palvelutilinä käytetylle toimialuetilille jo luotu SPN:
 
 1. Käynnistä **Active Directory -käyttäjät ja -tietokoneet** toimialueen järjestelmänvalvojana.
 
-1. Napsauta toimialuetta hiiren kakkospainikkeella, valitse **Etsi** ja kirjoita yhdyskäytävän palvelutilin nimi
+1. Napsauta toimialuetta hiiren kakkospainikkeella, valitse **Etsi** ja kirjoita yhdyskäytävän palvelutilin nimi.
 
 1. Napsauta hakutuloksissa yhdyskäytävän palvelutiliä hiiren kakkospainikkeella ja valitse **Ominaisuudet**.
 
-1. Jos **Delegointi**-välilehti näkyy **Ominaisuudet**-valintaikkunassa, SPN on jo luotu ja voit siirtyä seuraavaan alakohtaan, joka koskee delegointiasetusten määrittämistä.
+1. Jos **Delegointi**-välilehti näkyy **Ominaisuudet**-valintaikkunassa, SPN on jo luotu ja voit siirtyä seuraavaan alakohtaan, joka koskee [delegointiasetusten määrittämistä](#configure-delegation-settings).
 
     Jos **Ominaisuudet**-valintaikkunassa ei ole **Delegointi**-välilehteä, voit luoda SPN:n kyseiselle tilille manuaalisesti, jolloin **Delegointi**-välilehti lisätään (välilehti on helpoin tapa määrittää delegointiasetukset). SPN voidaan luoda käyttämällä [setspn-työkalua](https://technet.microsoft.com/library/cc731241.aspx), joka sisältyy Windowsiin (SPN:n luominen edellyttää toimialueen järjestelmänvalvojan oikeuksia).
 
@@ -83,10 +83,10 @@ Selvitä ensin, onko yhdyskäytävän palvelutilinä käytetylle toimialuetilill
 
 Seuraavissa vaiheissa oletuksena on paikallinen ympäristö, jossa on kaksi konetta eri toimialueilla: yhdyskäytäväkone ja tietokantapalvelin, joka käyttää SQL Serveriä. Tässä esimerkissä käytetään seuraavia asetuksia ja nimiä:
 
-- Yhdyskäytäväkoneen nimi: **PBIEgwTestGW**
-- Yhdyskäytävän palvelutili: **PBIEgwTestFrontEnd\GatewaySvc** (tilin näyttönimi: yhdyskäytäväyhteys)
-- SQL Serverin tietolähteen koneen nimi: **PBIEgwTestSQL**
-- SQL Serverin tietolähteen palvelutili: **PBIEgwTestBackEnd\SQLService**
+* Yhdyskäytäväkoneen nimi: **PBIEgwTestGW**
+* Yhdyskäytävän palvelutili: **PBIEgwTestFrontEnd\GatewaySvc** (tilin näyttönimi: yhdyskäytäväyhteys)
+* SQL Serverin tietolähteen koneen nimi: **PBIEgwTestSQL**
+* SQL Serverin tietolähteen palvelutili: **PBIEgwTestBackEnd\SQLService**
 
 Käytä näitä esimerkkinimiä ja asetuksia varten seuraavia määritysvaiheita:
 
@@ -125,7 +125,7 @@ Lopuksi koneessa, joka suorittaa yhdyskäytäväpalvelua (esimerkissämme **PBIE
 
 1. Napsauta hiiren oikealla painikkeella ja avaa **Asiakkaaksi tekeytyminen todentamisen jälkeen** -kohdan **Ominaisuudet** ja tarkista tililuettelo. Sen on sisällettävä yhdyskäytävän palvelutili ( **PBIEgwTestFront-end**  **\GatewaySvc** ).
 
-1. Valitse **Järjestelmäoikeuksien osoitus** -kohdan käytäntöluettelosta **Käyttöjärjestelmän osana toimiminen (SeTcbPrivilege)**. Varmista, että yhdyskäytävän palvelutili sisältyy myös tililuetteloon.
+1. Valitse **Järjestelmäoikeuksien osoitus** -kohdan käytäntöluettelosta **Käyttöjärjestelmän osana toimiminen (SeTcbPrivilege)** . Varmista, että yhdyskäytävän palvelutili sisältyy myös tililuetteloon.
 
 1. Käynnistä **Paikallinen tietoyhdyskäytävä** -palveluprosessi uudelleen.
 
@@ -141,8 +141,8 @@ Tämä määritys toimii useimmissa tapauksissa. Kerberoksessa voi kuitenkin oll
 
 Lisätietoja **paikallisesta tietoyhdyskäytävästä** ja **DirectQuerystä** on seuraavissa resursseissa:
 
-- [Paikallinen tietoyhdyskäytävä](service-gateway-onprem.md)
-- [DirectQuery Power BI:ssä](desktop-directquery-about.md)
-- [DirectQueryn tukemat tietolähteet](desktop-directquery-data-sources.md)
-- [DirectQuery ja SAP BW](desktop-directquery-sap-bw.md)
-- [DirectQuery ja SAP HANA](desktop-directquery-sap-hana.md)
+* [Mikä paikallinen tietoyhdyskäytävä on?](/data-integration/gateway/service-gateway-onprem.md)
+* [DirectQuery Power BI:ssä](desktop-directquery-about.md)
+* [DirectQueryn tukemat tietolähteet](desktop-directquery-data-sources.md)
+* [DirectQuery ja SAP BW](desktop-directquery-sap-bw.md)
+* [DirectQuery ja SAP HANA](desktop-directquery-sap-hana.md)

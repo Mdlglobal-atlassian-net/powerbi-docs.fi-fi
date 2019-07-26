@@ -9,12 +9,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 04/21/2019
 ms.author: mshenhav
-ms.openlocfilehash: bee60dd6f3254b049f2445e6e985c625933caf5b
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 49ee06d544e409cadc6728d286cb841f5f4adec4
+ms.sourcegitcommit: acd9f8212c9b0c6d3d8c4d56bba3c285246f3122
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65565539"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68230284"
 ---
 # <a name="explore-reports-in-the-power-bi-mobile-apps"></a>Raporttien tutkiminen Power BI -mobiilisovelluksissa
 Koskee seuraavia:
@@ -32,78 +32,85 @@ Power BI -raportti on vuorovaikutteinen näkymä tiedoistasi, joka sisältää e
 ## <a name="open-a-power-bi-report-in-the-mobile-app"></a>Power BI -raportin avaaminen mobiilisovelluksessa
 Power BI -raportit tallennetaan eri paikkoihin mobiilisovelluksessa sen mukaan, mistä ne ovat peräisin. Sijaintipaikka voi olla Sovellukset, Jaettu kanssani, Työtilat (myös Oma työtila) tai raporttipalvelin. Joskus sinun on käytävä läpi aiheeseen liittyvä raporttinäkymä, jotta saat raportin, ja joskus raportit on luetteloitu.
 
-Luetteloiden ja valikot löydät raportin nimen vieressä kuvake auttaa sinua ymmärtämään, että tämä kohde on raportti. 
+Luetteloissa ja valikoissa on raportin nimen vieressä kuvake, joka auttaa ymmärtämään, että tämä kohde on raportti. 
 
-![raportteja omassa työtilassa](./media/mobile-reports-in-the-mobile-apps/reports-my-workspace.png) 
+![raportit omassa työtilassa](./media/mobile-reports-in-the-mobile-apps/reports-my-workspace.png) 
 
-On kaksi kuvakkeet raportteja Power BI-mobiilisovelluksissa:
+Power BI -mobiilisovelluksissa on kaksi kuvaketta raportteja varten:
 
-* ![raporttikuvake](./media/mobile-reports-in-the-mobile-apps/report-default-icon.png) Ilmaisee, raportti, joka voidaan esittää vaakasuunnassa sovelluksessa ja näytä samalta sellaisena kuin se näkyy selaimessa.
+* ![raporttikuvake](./media/mobile-reports-in-the-mobile-apps/report-default-icon.png) tarkoittaa raporttia, joka esitetään sovelluksessa vaakasuunnassa ja näyttää samalta kuin selaimessa.
 
-* ![Puhelinraportin kuvake](./media/mobile-reports-in-the-mobile-apps/report-phone-icon.png) Ilmaisee, raportti, jossa on vähintään yksi puhelin optimoidun raporttisivu, joka esitetään pystysuunnassa. 
+* ![puhelinraportin kuvake](./media/mobile-reports-in-the-mobile-apps/report-phone-icon.png) tarkoittaa raporttia, jossa on vähintään yksi puhelimelle optimoitu raporttisivu, joka esitetään pystysuunnassa. 
 
-Huomautus: Pidät puhelimen vaaka, aina saat vaaka-asettelun vaikka raportin sivulla on puhelinasettelu. 
+Huomautus: Kun pidät puhelinta vaaka-asennossa, saat aina vaakasuuntaisen asettelun, vaikka raporttisivulla olisi puhelinasettelu. 
 
-Voit siirtyä raportin koontinäytöstä, napauta ruudun oikeassa yläkulmassa kolme pistettä (...) > **Avaa raportti**.
+Jos haluat päästä raporttiin raporttinäkymästä, napauta kolmea pistettä (...) raporttinäkymän ruudun oikeassa yläkulmassa > **Avaa raportti**.
   
   ![Raportin avaaminen](./media/mobile-reports-in-the-mobile-apps/power-bi-android-open-report-tile.png)
   
   Kaikissa ruuduissa ei ole raportin avaamisvaihtoehtoa. Esimerkiksi Q&A-ruudussa kysymyksiä esittämällä luodut ruudut eivät avaa raportteja, kun niitä napautetaan. 
   
 ## <a name="interacting-with-reports"></a>Raporttien käsitteleminen
-Kun sinulla on raportin avata sovelluksen, voit aloittaa käyttämiseen. On monia asioita, voit tehdä raportin ja sen tietoja. Raportin alatunnisteeseen löydät toimintoja voit tehdä raporttiin ja napauttamalla ja pitkä napauttamalla, raportin, voit myös jakaa sektoreihin ja dice tiedot näkyvät tiedot.
+Kun raportti on avattuna sovelluksessa, voit aloittaa sen käsittelemisen. Raportilla ja sen tiedoilla voi tehdä monia asioita. Raportin alatunnisteessa on toimintoja, joita voit suorittaa raportissa. Napauttamalla ja napauttamalla pitkään raportissa näkyviä tietoja voit myös osittaa ja käsitellä tietoja.
 
-### <a name="using-tap-and-long-tap"></a>Napauta ja napauta pitkään
-Napauta yhtä suuri kuin hiiren napsauttamalla. Joten jos haluat korostaa välisiä arvopisteen perustuvan raportin, napauta arvopisteen.
-Napauttamalla osittaja-arvon, tekee valitun arvon ja raportin muut jaottelu kyseisen arvon mukaan. Napauttamalla linkkiä, painikkeen tai kirjanmerkin Aktivoi se määritetty tekijä toiminnon perusteella.
+### <a name="using-tap-and-long-tap"></a>Napauttamisen ja pitkän napauttamisen käyttäminen
+Napauttaminen vastaa napsauttamista hiirellä. Jos siis haluat ristiinkorostaa raportin arvopisteen perusteella, napauta kyseistä arvopistettä.
+Kun napautat osittajan arvoa, se valitaan ja raportin muut arvot ositetaan tämän arvon mukaan. Linkin, painikkeen tai kirjanmerkin napauttaminen aktivoi sen tekijän määrittämän toiminnon perusteella.
 
-Huomasit luultavasti, että kun napautat visualisoinnin, reuna tulee näkyviin. Valitse oikeasta yläkulmasta reunan on kolme pistettä (...). Napauttamalla sitä tuo valikko, jossa voit tehdä tämän visualisoinnin toimintoja.
+Olet luultavasti huomannut, että kun napautat visualisointia, näkyviin tulee reuna. Reunan oikeassa yläkulmassa on kolme pistettä (...). Sen napauttaminen tuo näkyviin valikon, jossa on visualisoinnissa käytettäviä toimintoja.
 
-![raportin visualisoinnin ja -valikko](./media/mobile-reports-in-the-mobile-apps/report-visual-menu.png)
+![raportin visualisointi ja valikko](./media/mobile-reports-in-the-mobile-apps/report-visual-menu.png)
 
-### <a name="tooltip-and-drill-actions"></a>Työkaluvihje-ja porautuminen
+### <a name="tooltip-and-drill-actions"></a>Työkaluvihje- ja porautumistoiminnot
 
-Pitkä napauttaessasi (Napauta ja pidä) arvopisteen työkaluvihje tulee näkyviin pitämisestä arvopisteelle edustaa arvot. 
+Kun napautat pitkään arvopistettä, näkyviin tulevassa työkaluvihjeessä näkyvät kyseisen arvopisteen edustamat arvot. 
 
 ![raportin työkaluvihje](./media/mobile-reports-in-the-mobile-apps/report-tooltip.png)
 
-Raporttien tekijät voivat määrittää hierarkiat tiedot ja suhteita raporttisivujen välillä. Hierarkian mahdollistaa Poraudu alaspäin porautuminen ylöspäin ja porautuminen toiseen raporttisivuun visualisoinnin ja arvo. Näin on, kun napautat pitkän arvon, lisäksi työkaluvihjeessä asianmukaiset porautumisesta näkyvät alatunniste. 
+Jos raportin tekijä on määrittänyt raporttisivun työkaluvihjeen, se korvaa raporttisivun oletustyökaluvihjeen.
 
-![raportin Poraudu toiminnot](./media/mobile-reports-in-the-mobile-apps/report-drill-actions.png)
+![raporttisivun työkaluvihje](./media/mobile-reports-in-the-mobile-apps/report-page-tooltip.png)
 
-Kun napautat tiettyä kohtaa visualisoinnissa, voit *porautumalla* siirtyä Power BI:ssä raportin eri sivulle, joka suodatetaan napauttamasi arvon mukaisesti.  Raportin tekijä voi määrittää yhden tai useampia porautumisvaihtoehtoja, joista jokainen siirtää sinut eri sivulle. Voit siinä tapauksessa valita mihin sivuun haluat porautua. Takaisin-painike Vie sinut takaisin raportin edelliselle sivulle.
+> [!NOTE]
+> Raportin työkaluvihjeitä tuetaan laitteissa, joiden kuvapistekoko on vähintään 640 ja näyttöikkuna 320. Jos laitteesi on tätä pienempi, sovellus käyttää oletustyökaluvihjeitä.
+
+Raportin tekijät voivat määrittää hierarkioita raporttisivujen välisissä tiedoissa ja yhteyksissä. Hierarkia sallii porautumisen alaspäin, porautumisen ylöspäin ja porautumisen toisen raporttisivun läpi visualisoinnista ja arvosta. Kun napautat arvoa pitkään, työkaluvihjeen lisäksi alatunnisteessa näkyvät tarvittavat porautumisvaihtoehdot. 
+
+![raportin porautumistoiminnot](./media/mobile-reports-in-the-mobile-apps/report-drill-actions.png)
+
+Kun napautat tiettyä kohtaa visualisoinnissa, voit *porautumalla* siirtyä Power BI:ssä raportin eri sivulle, joka suodatetaan napauttamasi arvon mukaisesti.  Raportin tekijä voi määrittää yhden tai useampia porautumisvaihtoehtoja, joista jokainen siirtää sinut eri sivulle. Voit siinä tapauksessa valita mihin sivuun haluat porautua. Takaisin-painike vie sinut takaisin edelliselle raporttisivulle.
 
 Lue lisää [porautumisen lisäämisestä Power BI Desktopiin](../../desktop-drillthrough.md).
    
    > [!IMPORTANT]
-   > Power BI-mobiilisovellus matriisien ja taulukoiden visualisoinnit porautuminen on käytössä vain solun arvon ja sarakkeiden ja rivien otsikot mukaan.
+   > Power BI -mobiilisovelluksessa porautuminen matriisissa ja taulukon visualisoinneissa on käytössä ainoastaan solun arvon kautta. Se ei toimi sarake- ja riviotsikoiden kautta.
    
    
    
-### <a name="using-the-actions-in-the-report-footer"></a>Toimintojen käyttäminen raportin alatunniste
-Raportin alatunniste on voit tehdä toimintoja, raportin tai koko raportin. Alatunnisteen on eniten hyötyä toiminnot nopea käyttö ja kaikki toiminnot voivat olla kolme pistettä (...) käyttö.
+### <a name="using-the-actions-in-the-report-footer"></a>Raportin alatunnisteessa olevien toimintojen käyttäminen
+Raportin alatunnisteessa on toimintoja, joita voi käyttää nykyisellä raporttisivulla tai koko raportissa. Alatunnisteessa hyödyllisimmät toiminnot ovat nopeasti käytettävissä, ja kaikki toiminnot ovat käytettävissä kolmen pisteen (...) kautta.
 
-![Raportin alatunniste](./media/mobile-reports-in-the-mobile-apps/report-footer.png)
+![raportin alatunniste](./media/mobile-reports-in-the-mobile-apps/report-footer.png)
 
-Alatunnisteen suoritettavat toiminnot ovat:
-1) Palauttaa raporttisuodattimen ja rajat korostaa valinnat takaisin alkuperäiseen tilaan.
-2) Avaa keskustelu-ruudussa voit tarkastella tai lisätä kommentteja Tässä raportissa.
-3) Avaa tarkastella ja muokata suodatin, joka on tällä hetkellä käytössä raportin suodattimet-ruutu.
-4) Tämän raportin kaikkien sivujen luettelo. Napauttamalla sivun nimen avulla ladata ja esittää sivun.
-Raporttisivujen välillä siirtämisen voidaan tehdä lukemalla pääsäilön näytön keskellä.
-5) Näytä kaikki Raporttitoiminnot.
+Alatunnisteen kautta suoritettavat toiminnot:
+1) Palauta raporttisuodatin ja ristiinkorostusvalinnat takaisin alkuperäiseen tilaan.
+2) Avaa keskusteluruutu, jos haluat tarkastella raportin kommentteja tai lisätä kommentteja.
+3) Voit tarkastella ja muokata raportissa käytettävää suodatinta avaamalla suodatusruudun.
+4) Luettele tämän raportin kaikki sivut. Sivun nimen napauttaminen lataa ja näyttää kyseisen sivun.
+Raporttisivujen välillä liikkuminen onnistuu pyyhkäisemällä näytön reunasta keskelle.
+5) Näytä kaikki raportin toiminnot.
 
-#### <a name="all-report-actions"></a>Kaikki Raporttitoiminnot
-Valitse napauttamalla... Raportin alatunniste vaihtoehto, se tuo kaikki raportin suoritettavat toiminnot. 
+#### <a name="all-report-actions"></a>Kaikki raportin toiminnot
+Kun napautat ...-vaihtoehtoa raportin alatunnisteessa, saat näkyviin kaikki toiminnot, joita raportissa voi käyttää. 
 
 ![raportin kaikki toiminnot](./media/mobile-reports-in-the-mobile-apps/report-all-actions.png)
 
-Jotkin toiminnot voi olla poistettu käytöstä, koska ne ovat riippuvaisia tietyn raporttiominaisuuksia.
+Osa toiminnoista voi olla poissa käytöstä, koska ne ovat riippuvaisia tietyistä raportin ominaisuuksista.
 Esimerkki:
-1) **Suodata nykyisen sijaintisi mukaan** on käytössä, jos raportin tiedot on luokitellut maantieteellisiä tietoja sisältävät tekijän mukaan. [Lue, miten voit Määritä raporttisi maantieteelliset tiedot](https://docs.microsoft.com/power-bi/desktop-mobile-geofiltering).
-2) **Tarkistuksen suodattaa raportin viivakoodin** on käytössä vain, jos raportin tietojoukko on merkitty viivakoodin. [Miten voit merkitä viivakoodeja Power BI Desktop-](https://docs.microsoft.com/power-bi/desktop-mobile-barcodes). 
-3) **Kutsu** on käytössä vain, jos sinulla on oikeus jakaa tämän raportin muiden kanssa. Voit käyttöoikeudet myönnetään vain, jos raportin omistaja tai annettiin Jaa uudelleen käyttöoikeutta omistaja.
-4) **Lisää merkintöjä ja Jaa** saattaa olla käytöstä, jos [Intune suojauskäytäntö](https://docs.microsoft.com/intune/app-protection-policies) organisaatiossasi, joka saa jakaminen Power BI-mobiilisovellus. 
+1) **Suodatus nykyisen sijainnin mukaan** on käytössä, jos raportin tiedot on luokiteltu tekijän ja maantieteellisten tietojen mukaan. [Opettele määrittämään raporttisi maantieteelliset tiedot](https://docs.microsoft.com/power-bi/desktop-mobile-geofiltering).
+2) **Raportin suodatus lukemalla viivakoodi** on käytössä vain, jos raportin tietojoukko on merkitty viivakoodiksi. [Lue lisätietoja viivakoodien merkitsemisestä Power BI Desktopissa](https://docs.microsoft.com/power-bi/desktop-mobile-barcodes). 
+3) **Kutsu** on käytössä vain, jos sinulla on oikeus jakaa tämä raportti muiden kanssa. Sinulla on oikeus vain, jos olet raportin omistaja tai jos olet saanut uudelleenjakamisoikeuden omistajalta.
+4) **Lisää merkintöjä ja jaa** saattaa olla pois käytöstä, jos organisaatiossasi on [Intune-suojauskäytäntö](https://docs.microsoft.com/intune/app-protection-policies), joka estää jakamisen Power BI -mobiilisovelluksesta. 
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 * [Puhelimelle optimoitujen Power BI -raporttien tarkasteleminen ja käyttäminen](mobile-apps-view-phone-report.md)

@@ -10,42 +10,49 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: dd6698cab5b9fed407e6e8f45ceb160209a38fae
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: a6ada87813593fd0f06d7870fa1727bc35fe7d47
+ms.sourcegitcommit: fe8a25a79f7c6fe794d1a30224741e5281e82357
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61146696"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "68324891"
 ---
-# <a name="connect-to-project-online-with-power-bi"></a>Yhteyden muodostaminen Project Onlineen Power BI:llä
-Microsoft Project Online on joustava online-ratkaisu projektiportfolion hallintaan (PPM) ja päivittäiseen työhön. Project Onlinella organisaatiot voivat aloittaa ja priorisoida projektiportfolion sijoituksia sekä toimittaa suunnitellun liiketoiminta-arvon. Power BI:n Project Online -sisältöpaketin avulla voit saada merkityksellisiä tietoja Project Onlinesta projektien, portfolioiden ja resurssien hallinnan helpottamiseksi.
+# <a name="connect-to-project-web-app-with-power-bi"></a>Yhteyden muodostaminen Project Web Appiin Power BI:llä
+Microsoft Project Web App on joustava online-ratkaisu projektisalkun hallintaan (PPM) ja päivittäiseen työhön. Project Web Appin avulla organisaatiot voivat aloittaa ja priorisoida projektisalkun sijoituksia sekä toimittaa suunnitellun liiketoiminta-arvon. Power BI:n Project Web App -mallisovelluksen avulla voit saada merkityksellisiä tietoja Project-verkkosovelluksesta projektien, salkkujen ja resurssien hallinnan helpottamiseksi.
 
-Muodosta yhteys [Project Online -sisältöpakettiin](https://app.powerbi.com/getdata/services/project-online) Power BI:tä varten.
+Muodosta yhteys Power BI:n [Project Web App -mallisovellukseen](https://appsource.microsoft.com/product/power-bi/pbi_msprojectonline.pbi-microsoftprojectwebapp).
 
 ## <a name="how-to-connect"></a>Yhteyden muodostaminen
-1. Valitse vasemman siirtymisruudun alareunassa **Nouda tiedot**.
-   
-    ![](media/service-connect-to-project-online/getdata.png)
+
+   ![](media/service-connect-to-project-online/GetApps.png)
+1. Valitse **Sovellukset** vasemmanpuoleisessa siirtymisruudussa > valitse **Hanki sovelluksia** oikeassa yläkulmassa.
 2. Valitse **Palvelut**-ruudussa **Nouda**.
    
-   ![](media/service-connect-to-project-online/services.png)
-3. Valitse **Microsoft Project Online** \> **Nouda**.
+   ![](media/service-connect-to-project-online/AppSource.png)
+3. Valitse AppSourcessa **Sovellukset**-välilehti ja hae tai valitse **Microsoft Project Web App**.
+   
+4. Kun näkyviin tulee sanoma **Asennetaanko tämä Power BI -sovellus?** , valitse **Asenna**. 
+
+   ![](media/service-connect-to-project-online/ProjectTile.png)
+5. Valitse **Sovellukset**-ruudusta **Microsoft Project Web App** -ruutu. 
+   
+   ![](media/service-connect-to-project-online/getstarted.png)
+6. Valitse **Aloita uuden sovelluksesi käyttö** -kohdassa **Yhdistä tiedot**.
    
    ![](media/service-connect-to-project-online/mproject.png)
-4. Kirjoita **Project Web Appin URL-osoite** -tekstiruutuun yhdistettävän Project Web Appin (PWA) URL-osoite ja valitse **Seuraava**. Huomaa, että se poiketa esimerkistä, jos käytössäsi on mukautettu toimialue. Valitse **PWA-sivuston kieli** -tekstiruutu ja kirjoita numero, joka vastaa PWA-sivuston kieltä. Kirjoita numero ”1” englannille, ”2” ranskalle, ”3” saksalle, ”4” portugalille (Brasilia), ”5” portugalille (Portugali) ja ”6” espanjalle. 
+7. Kirjoita **Project Web Appin URL-osoite** -tekstiruutuun yhdistettävän Project Web Appin (PWA) URL-osoite.  Huomaa, että se poiketa esimerkistä, jos käytössäsi on mukautettu toimialue. Valitse **PWA-sivuston kieli** -tekstiruutu ja kirjoita numero, joka vastaa PWA-sivuston kieltä. Kirjoita numero ”1” englannille, ”2” ranskalle, ”3” saksalle, ”4” portugalille (Brasilia), ”5” portugalille (Portugali) ja ”6” espanjalle. 
    
-    ![](media/service-connect-to-project-online/params.png)
-5. Valitse todennusmenetelmäksi **oAuth2**\>**Kirjaudu sisään**. Anna pyydettäessä Project Onlinen tunnistetietosi ja noudata todennusprosessia.
-   
-    ![](media/service-connect-to-project-online/creds.png)
+   ![](media/service-connect-to-project-online/params.png)
+8. Valitse todennusmenetelmäksi **oAuth2**\>**Kirjaudu sisään**. Anna pyydettäessä Project Web Appin tunnistetietosi ja noudata todennusprosessia.
+
     
 Huomaa, että sinulla on oltava yhdistettävässä Project Web Appissa portfolion tarkastelijan, portfolion ylläpitäjän tai järjestelmänvalvojan oikeudet.
 
-6. Näet ilmoituksen tietojesi lataamisesta. Lataaminen voi kestää jonkin aikaa tilin koosta riippuen. Kun Power BI on tuonut tiedot, näet vasemmassa siirtymisruudussa uuden koontinäytön, 13 raporttia ja tietojoukon. Tämä on oletuskoontinäyttö, jonka Power BI on luonut tietojen näyttämistä varten. Voit muokata tätä koontinäyttöä, jotta näet tiedot juuri haluamallasi tavalla.
+9. Näet ilmoituksen tietojesi lataamisesta. Lataaminen voi kestää jonkin aikaa tilin koosta riippuen. Kun Power BI on tuonut tiedot, näet uuden työtilasi sisällön. Saatat joutua päivittämään tietojoukon, jotta saat uusimmat päivitykset. 
 
-   ![](media/service-connect-to-project-online/dashboard2.png)
+Kun Power BI on tuonut tiedot, näet vasemmassa siirtymisruudussa 13-sivuisen raportin ja tietojoukon. 
 
-7. Kun koontinäyttö ja raportit ovat valmiita, jatka eteenpäin ja aloita Project Online -tietojesi tarkasteleminen! Sisältöpaketin mukana toimitetaan 13 monipuolista ja yksityiskohtaista raporttia portfolion yleiskatsausta varten (6 raporttisivua), resurssin yleiskatsaus (5 raporttisivua) ja projektin tila (2 raporttisivua). 
+10. Kun raportit ovat valmiita, jatka eteenpäin ja aloita Project Web App -tietojesi tarkasteleminen! Mallisovelluksen mukana toimitetaan 13 monipuolista ja yksityiskohtaista raporttia salkun yleiskatsausta varten (6 raporttisivua), resurssin yleiskatsaus (5 raporttisivua) ja projektin tila (2 raporttisivua). 
 
    ![](media/service-connect-to-project-online/report1.png)
    
@@ -55,12 +62,9 @@ Huomaa, että sinulla on oltava yhdistettävässä Project Web Appissa portfolio
 
 **Mitä seuraavaksi?**
 
-* Kokeile [kysymyksen esittämistä raporttinäkymän yläreunassa olevassa Q&A-ruudussa](consumer/end-user-q-and-a.md).
-* [Muuta koontinäytön ruutuja](service-dashboard-edit-tile.md).
-* [Valitse jokin ruutu](consumer/end-user-tiles.md), jolloin siihen liittyvä raportti avautuu.
 * Tietojoukko on ajastettu päivittymään päivittäin, mutta voit muuttaa päivitysaikataulua tai kokeilla tietojoukon päivittämistä **Päivitä nyt** -toiminnolla haluamanasi ajankohtana
 
-**Laajenna sisältöpakettia**
+**Laajenna mallisovellusta**
 
 Lataa [GitHub PBIT -tiedosto](https://github.com/OfficeDev/Project-Power-BI-Content-Packs), jotta voit edelleen mukauttaa ja päivittää sisältöpakettia
 

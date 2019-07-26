@@ -8,14 +8,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: conceptual
-ms.date: 10/15/2018
+ms.date: 07/15/2019
 LocalizationGroup: Gateways
-ms.openlocfilehash: 9e91c162c9b748fd0ef122aed8fc7ffee6dba5fc
-ms.sourcegitcommit: c539726c9c180e899a8a34443e3fda2b9848beb2
-ms.translationtype: MT
+ms.openlocfilehash: 6f270c28f643736f07c09ceb3e544e473f831ad9
+ms.sourcegitcommit: 277fadf523e2555004f074ec36054bbddec407f8
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66448299"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68271863"
 ---
 # <a name="overview-of-single-sign-on-sso-for-gateways-in-power-bi"></a>Yleiskatsaus kertakirjautumisen (SSO) käyttämiseen Power BI -yhdyskäytävissä
 
@@ -24,23 +24,19 @@ Saumaton kertakirjautuminen mahdollistaa Power BI -raporttien ja -koontinäyttö
 Tällä hetkellä tuemme seuraavia tietolähteitä:
 
 * SQL Server ([Kerberos](service-gateway-sso-kerberos.md))
-* SAP HANA ([Kerberos](service-gateway-sso-kerberos.md) ja [SAML](service-gateway-sso-saml.md)
-* SAP BW ([Kerberos](service-gateway-sso-kerberos.md)
+* SAP HANA ([Kerberos](service-gateway-sso-kerberos.md) ja [SAML](service-gateway-sso-saml.md))
+* SAP BW ([Kerberos](service-gateway-sso-kerberos.md))
 * Teradata ([Kerberos](service-gateway-sso-kerberos.md))
 * Spark ([Kerberos](service-gateway-sso-kerberos.md))
 * Impala ([Kerberos](service-gateway-sso-kerberos.md))
-* SSO on myös mahdollista [muiden tietolähteiden](desktop-directquery-data-sources.md#single-sign-on-sso-for-directquery-sources) käyttämättä tietoyhdyskäytävä
 
-Kun käyttäjä on vuorovaikutuksessa DirectQuery-raportin kanssa Power BI -palvelussa, jokainen ristisuodatus-, ositus-, lajittelu- ja raportin muokkaustoiminto voi aiheuttaa kyselyjä, jotka suoritetaan reaaliajassa pohjana olevalle paikalliselle tietolähteelle.  Kun tietolähteelle määritetään kertakirjautuminen, kyselyt suoritetaan Power BI:n kanssa vuorovaikutuksessa (verkkosisällön tai Power BI -mobiilisovellusten kautta) olevan käyttäjän käyttäjätiedoilla. Näin kukin käyttäjä näkee tarkasti tiedot, joihin hänellä on oikeudet pohjana olevassa tietolähteessä. Kun kertakirjautuminen on määritetty, eri käyttäjien välimuistissa ei ole jaettuja tietoja.
+Kun käyttäjä on vuorovaikutuksessa DirectQuery-raportin kanssa Power BI -palvelussa, jokainen ristisuodatus-, ositus-, lajittelu- ja raportin muokkaustoiminto voi aiheuttaa kyselyjä, jotka suoritetaan reaaliajassa pohjana olevalle paikalliselle tietolähteelle. Kun tietolähteelle määritetään kertakirjautuminen, kyselyt suoritetaan Power BI:n kanssa vuorovaikutuksessa (verkkosisällön tai Power BI -mobiilisovellusten kautta) olevan käyttäjän käyttäjätiedoilla. Näin kukin käyttäjä näkee tarkasti tiedot, joihin hänellä on oikeudet pohjana olevassa tietolähteessä. Kun kertakirjautuminen on määritetty, eri käyttäjien välimuistissa ei ole jaettuja tietoja.
 
 ## <a name="query-steps-when-running-sso"></a>Kyselyn vaiheet suoritettaessa kertakirjautumista
 
 SSO:n avulla suoritettavassa kyselyssä on kolme vaihetta, kuten seuraava kaavio osoittaa.
 
 ![Kertakirjautumiskyselyn vaiheet](media/service-gateway-sso-overview/sso-query-steps.png)
-
-> [!NOTE]
-> Oraclen SSO ei ole vielä käytössä, mutta sitä kehitetään ja se on tulossa pian.
 
 Seuraavassa on lisätietoja näistä vaiheista:
 
@@ -59,4 +55,5 @@ Seuraavassa on lisätietoja näistä vaiheista:
 Nyt kun tiedät kertakirjautumisen perusteet, voit lukea lisätietoja Kerberoksesta ja SAML:sta:
 
 * [Kertakirjautuminen (SSO) - Kerberos](service-gateway-sso-kerberos.md)
+* [Kertakirjautuminen (SSO) – Kerberos – resurssipohjainen](service-gateway-sso-kerberos-resource.md)
 * [Kertakirjautuminen (SSO) - SAML](service-gateway-sso-saml.md)

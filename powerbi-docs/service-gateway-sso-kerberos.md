@@ -8,14 +8,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: conceptual
-ms.date: 10/10/2018
+ms.date: 07/15/2019
 LocalizationGroup: Gateways
-ms.openlocfilehash: d8cebda3ad0db9fba48804fb8d2dd029c1c07f8d
-ms.sourcegitcommit: aef57ff94a5d452d6b54a90598bd6a0dd1299a46
+ms.openlocfilehash: 1a0ec90d3f6a1de5a542da7ee98f956dfcef67b1
+ms.sourcegitcommit: fe8a25a79f7c6fe794d1a30224741e5281e82357
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "66809263"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "68325139"
 ---
 # <a name="use-kerberos-for-single-sign-on-sso-from-power-bi-to-on-premises-data-sources"></a>Kerberoksen käyttäminen kertakirjautumista (SSO) varten Power BI:stä paikallisiin tietolähteisiin
 
@@ -60,14 +60,14 @@ Normaalissa asennuksessa yhdyskäytävä toimii tietokoneen paikallisena palvelu
 
 ![Näyttökuva palvelutilistä](media/service-gateway-sso-kerberos/service-account.png)
 
-Jotta rajoitettu Kerberos-delegointi voidaan ottaa käyttöön, yhdyskäytävän on toimittava toimialuetilinä, ellei Azure Active Directorya (Azure AD) ole jo synkronoitu paikallisen Active Directory -esiintymän kanssa (käyttämällä Azure AD DirSynciä/Connectia). Jos haluat vaihtaa toimialuetiliin, tutustu kohtaan [Yhdyskäytävän vaihtaminen toimialuetiliin](#switch-the-gateway-to-a-domain-account) myöhemmin tässä artikkelissa.
+Jotta rajoitettu Kerberos-delegointi voidaan ottaa käyttöön, yhdyskäytävän on toimittava toimialuetilinä, ellei Azure Active Directorya (Azure AD) ole jo synkronoitu paikallisen Active Directory -esiintymän kanssa (käyttämällä Azure AD DirSynciä/Connectia). Jos haluat vaihtaa toimialuetiliin, katso [Yhdyskäytävän palvelutilin muuttaminen](/data-integration/gateway/service-gateway-service-account).
 
 > [!NOTE]
 > Jos Azure AD Connect on määritetty ja käyttäjätilit synkronoidaan, yhdyskäytäväpalvelun ei tarvitse tehdä paikallisia hakuja Azure AD:stä suorituksen aikana. Voit käyttää yhdyskäytäväpalveluun paikallisen palvelun SID-tunnusta (toimialuetilin vaatimisen sijasta). Tässä artikkelissa kuvatut rajoitetun Kerberos-delegoinnin määritysvaiheet ovat samat kuin kyseinen määritys. Niitä sovelletaan Azure AD:ssä yhdyskäytävän tietokoneobjektiin toimialuetilin sijaan.
 
 ### <a name="prerequisite-3-have-domain-admin-rights-to-configure-spns-setspn-and-kerberos-constrained-delegation-settings"></a>Edellytys 3: Toimialueen järjestelmänvalvojan oikeuksien hankkiminen päänimien (SetSPN) ja rajoitetun Kerberos-delegoinnin asetusten määrittämiseksi
 
-Emme suosittele, että järjestelmänvalvoja antaa jollekulle muulle väliaikaiset tai pysyvät oikeudet määrittää palvelun päänimet ja Kerberos-delegointi ilman toimialueen järjestelmänvalvojan oikeuksia. Suositellut määritysvaiheet käsitellään seuraavassa osiossa.
+Emme suosittele, että toimialueen järjestelmänvalvoja antaa jollekulle muulle väliaikaiset tai pysyvät oikeudet määrittää palvelun päänimet ja Kerberos-delegointi ilman toimialueen järjestelmänvalvojan oikeuksia. Suositellut määritysvaiheet käsitellään seuraavassa osiossa.
 
 ## <a name="configure-kerberos-constrained-delegation-for-the-gateway-and-data-source"></a>Rajoitetun Kerberos-delegoinnin määrittäminen yhdyskäytävälle ja tietolähteelle
 
@@ -99,7 +99,7 @@ Toinen vaadittava määritys on yhdyskäytävän palvelutilin delegointiasetuste
 
 Rajoitettu Kerberos-delegointi on määritettävä protokollan siirtämisellä. Rajoitetussa delegoinnissa on määritettävä tarkasti, mihin palveluihin haluat delegoida. Esimerkiksi vain SQL Server tai SAP HANA -palvelin hyväksyy delegointikutsuja yhdyskäytävän palvelutililtä.
 
-Tässä osassa oletetaan, että olet jo määrittänyt SPN:t pohjana oleville tietolähteille (kuten SQL Server, SAP HANA, Teradata tai Spark). Lisätietoja kyseisten tietolähteiden palvelimen palvelun päänimien määrittämisestä löytyy vastaavan tietokantapalvelimen teknisessä dokumentaatiossa. Tutustu myös [What SPN does your app require?](https://blogs.msdn.microsoft.com/psssql/2010/06/23/my-kerberos-checklist/) -blogikirjoitukseen.
+Tässä osassa oletetaan, että olet jo määrittänyt SPN:t pohjana oleville tietolähteille (kuten SQL Server, SAP HANA, Teradata tai Spark). Lisätietoja kyseisten tietolähteiden palvelimen palvelun päänimien määrittämisestä löytyy vastaavan tietokantapalvelimen teknisessä dokumentaatiossa. Voit myös tutustua kohtaan *What SPN does your app require?* blogikirjoituksessa [My Kerberos Checklist](https://techcommunity.microsoft.com/t5/SQL-Server-Support/My-Kerberos-Checklist-8230/ba-p/316160).
 
 Seuraavissa vaiheissa oletuksena on paikallinen ympäristö, jossa on kaksi konetta: yhdyskäytäväkone ja tietokantapalvelin, joka käyttää SQL Serveriä. Esimerkissä käytetään seuraavia asetuksia ja nimiä:
 
@@ -118,21 +118,21 @@ Voit määrittää delegoinnin asetukset seuraavasti:
 
 4. Valitse **Luota tähän tietokoneeseen vain määritettyihin palveluihin delegointia varten** >  ja valitse sitten **Käytä mitä tahansa todennusprotokollaa**.
 
-6. Valitse **Palvelut, joille tämä tili voi esittää delegoidut tunnistetiedot** -kohdassa **Lisää**.
+5. Valitse **Palvelut, joille tämä tili voi esittää delegoidut tunnistetiedot** -kohdassa **Lisää**.
 
-7. Valitse uudessa valintaikkunassa **Käyttäjät tai tietokoneet**.
+6. Valitse uudessa valintaikkunassa **Käyttäjät tai tietokoneet**.
 
-8. Anna SQL Server -tietolähteen palvelutili (**PBIEgwTest\SQLService**) ja valitse **OK**.
+7. Anna tietolähteen palvelutili. Esimerkiksi SQL Server -tietolähteen palvelutili voi olla **PBIEgwTest\SQLService**. Kun tili on lisätty, valitse **OK**.
 
-9. Valitse SPN, jonka loit tietokantapalvelimelle. Tässä esimerkissä SPN:n alussa on **MSSQLSvc**. Jos olet lisännyt tietokantapalvelulle sekä FQDN- että NetBIOS-SPN:n, valitse molemmat. Saatat nähdä näistä vain toisen.
+8. Valitse SPN, jonka loit tietokantapalvelimelle. Tässä esimerkissä SPN:n alussa on **MSSQLSvc**. Jos olet lisännyt tietokantapalvelulle sekä FQDN- että NetBIOS-SPN:n, valitse molemmat. Saatat nähdä näistä vain toisen.
 
-10. Valitse **OK**. Palvelun päänimen pitäisi näkyä nyt luettelossa.
+9. Valitse **OK**. Palvelun päänimen pitäisi näkyä nyt luettelossa.
 
     Voit myös valita **Laajennettu**, jolloin näytetään sekä FQDN- että NetBIOS-SPN. Valintaikkuna näyttää samalta kuin alla, jos valitsit **Laajennettu**. Valitse **OK**.
 
     ![Näyttökuva Yhdyskäytävän liittimen ominaisuudet -valintaikkunasta](media/service-gateway-sso-kerberos/gateway-connector-properties.png)
 
-Lopuksi koneessa, joka suorittaa yhdyskäytäväpalvelua (esimerkissämme **PBIEgwTestGW**), yhdyskäytävän palvelutilille on myönnettävä paikallinen käytäntö **Asiakkaaksi tekeytyminen todentamisen jälkeen**. Voit suorittaa ja tarkistaa tämän paikallisessa ryhmäkäytäntöeditorissa (**gpedit**).
+Lopuksi koneessa, joka suorittaa yhdyskäytäväpalvelua (esimerkissämme **PBIEgwTestGW**), yhdyskäytävän palvelutilille on myönnettävä paikalliset käytännöt **Asiakkaaksi tekeytyminen todentamisen jälkeen** ja **Käyttöjärjestelmän osana toimiminen (SeTcbPrivilege)** . Voit suorittaa ja tarkistaa tämän määrityksen paikallisessa ryhmäkäytäntöeditorissa (**gpedit**).
 
 1. Suorita yhdyskäytäväkoneessa *gpedit.msc*.
 
@@ -170,40 +170,26 @@ Kun kaikki määritysvaiheet on suoritettu, voit käyttää Power BI:n **yhdysk�
 
 Tämä määritys toimii useimmissa tapauksissa. Kerberoksessa voi kuitenkin olla eri määrityksiä ympäristösi mukaan. Jos raportti ei kuitenkaan lataudu, ota yhteyttä toimialueen järjestelmänvalvojaan asian selvittämiseksi.
 
-## <a name="switch-the-gateway-to-a-domain-account"></a>Yhdyskäytävän vaihtaminen toimialuetiliin
-
-Voit tarvittaessa vaihtaa paikallisen palvelutilin toimialuetilinä suoritettavaksi **Paikallinen tietoyhdyskäytävä** -käyttöliittymän avulla. Ohjeet:
-
-1. Käynnistä **Paikallinen tietoyhdyskäytävä** -määritystyökalu.
-
-   ![Näyttökuva asetuksesta, jonka avulla voidaan käynnistää yhdyskäytävän työpöytäsovellus](media/service-gateway-sso-kerberos/gateway-desktop-app.png)
-
-2. Valitse **Kirjaudu sisään** -painike pääsivulla ja kirjaudu sisään Power BI -tililläsi.
-
-3. Kun kirjautuminen on valmis, valitse **Palveluasetukset**-välilehti.
-
-4. Käynnistä ohjattu määritys valitsemalla **Vaihda tili**.
-
-   ![Näyttökuva paikallisen tietoyhdyskäytävän työpöytäsovelluksesta, Muuta tilin asetuksia -vaihtoehto korostettuna](media/service-gateway-sso-kerberos/change-account.png)
-
 ## <a name="configure-sap-bw-for-sso"></a>SAP BW:n määrittäminen kertakirjautumista varten
 
 Nyt kun ymmärrät, miten Kerberos toimii yhdyskäytävän kanssa, voit määrittää kertakirjautumisen SAP Business Warehousea (SAP BW) varten. Seuraavissa vaiheissa oletetaan, että olet jo [valmistellut rajoitetun Kerberos-delegoinnin](#prepare-for-kerberos-constrained-delegation) tässä artikkelissa aiemmin kuvatulla tavalla.
 
 Tämä opas pyrkii olemaan mahdollisimman kattava. Jos olet jo suorittanut joitakin näistä vaiheista, voit ohittaa ne. Olet saattanut esimerkiksi jo luoda palvelukäyttäjän SAP BW -palvelimelle ja yhdistänyt siihen SPN:n, tai ehkä olet jo asentanut `gsskrb5`-kirjaston.
 
-### <a name="set-up-gsskrb5-on-client-machines-and-the-sap-bw-server"></a>gsskrb5:n määrittäminen asiakaskoneisiin ja SAP BW -palvelimelle
+### <a name="set-up-gsskrb5gx64krb5-on-client-machines-and-the-sap-bw-server"></a>gsskrb5/gx64krb5:n määrittäminen asiakaskoneisiin ja SAP BW -palvelimelle
 
 > [!NOTE]
-> `gsskrb5` ei enää aktiivisesti tue SAP:tä. Katso lisätietoja artikkelista [SAP-huomautus 352295](https://launchpad.support.sap.com/#/notes/352295). Huomaa myös, ettei `gsskrb5` salli SSO-yhteyksiä tietoyhdyskäytävästä SAP BW -viestipalvelimiin. Vain yhteydet SAP BW -sovelluspalvelimiin sallitaan. `gsskrb5` on oltava käytössä sekä asiakaskoneessa että palvelimella SSO-yhteyden muodostamiseksi yhdyskäytävän kautta. Yleistä Crypto-kirjastoa (sapcrypto) tuetaan nyt SAP BW:llä.
+> `gsskrb5/gx64krb5` ei enää aktiivisesti tue SAP:tä. Katso lisätietoja artikkelista [SAP-huomautus 352295](https://launchpad.support.sap.com/#/notes/352295). Huomaa myös, ettei `gsskrb5/gx64krb5` salli SSO-yhteyksiä tietoyhdyskäytävästä SAP BW -viestipalvelimiin. Vain yhteydet SAP BW -sovelluspalvelimiin sallitaan. SNC-kirjastona voi nyt käyttää sapcrypto/CommonCryptoLib-kirjastoa, mikä yksinkertaistaa määritysprosessia. 
 
-1. Lataa `gsskrb5` - `gx64krb5` [SAP Note 2115486](https://launchpad.support.sap.com/) -huomautuksesta (SAP s-käyttäjä vaaditaan). Varmista, että sinulla on vähintään versio 1.0.11.x tiedostoista gsskrb5.dll ja gx64krb5.dll.
+`gsskrb5` on oltava käytössä sekä asiakaskoneessa että palvelimella SSO-yhteyden muodostamiseksi yhdyskäytävän kautta.
+
+1. Lataa `gsskrb5` tai `gx64krb5` haluamasi bittitason mukaan kohdasta [SAP Note 2115486](https://launchpad.support.sap.com/) (SAP s-käyttäjä vaaditaan). Varmista, että sinulla on vähintään versio 1.0.11.x.
 
 1. Sijoita kirjasto sellaiseen paikkaan yhdyskäytäväkoneessa, jossa se on yhdyskäytävän esiintymän käytettävissä (ja myös SAP GUI:n, jos haluat testata kertakirjautumisyhteyttä SAP-kirjautumisen avulla).
 
 1. Aseta toinen kopio sellaiseen paikkaan SAP BW -palvelinkoneessa, joka on SAP BW -palvelimen käytettävissä.
 
-1. Määritä `SNC\_LIB`- ja `SNC\_LIB\_64`-ympäristömuuttujat asiakas- ja palvelinkoneissa osoittamaan niihin paikkoihin, joissa gsskrb5.dll ja gx64krb5.dll sijaitsevat (tässä mainitussa järjestyksessä).
+1. Määritä `SNC_LIB`- tai `SNC_LIB_64`-ympäristömuuttujat asiakas- ja palvelinkoneissa osoittamaan paikkaan, jossa gsskrb5.dll tai gx64krb5.dll sijaitsee (tässä mainitussa järjestyksessä). Huomaa, että tarvitset vain toisen näistä kirjastoista, et molempia.
 
 ### <a name="create-a-sap-bw-service-user-and-enable-snc-communication"></a>Luo SAP BW -palvelun käyttäjä ja ota SNC-yhteys käyttöön
 
@@ -262,7 +248,7 @@ Liitä Active Directory -käyttäjä SAP BW -sovelluspalvelimen käyttäjään j
 
     ![Näyttökuva SAP BW:n käyttäjien hallintaruudusta](media/service-gateway-sso-kerberos/user-maintenance.png)
 
-1. Valitse **SNC**-välilehti. Kirjoita SNC-nimisyöteruutuun p:\<Active Directory -käyttäjä\>@\<toimialueesi\>. Huomaa pakollinen p:, jonka on tultava ennen Active Directory -käyttäjän täydellistä käyttäjätunnusta. Määrittämäsi Active Directory -käyttäjän on kuuluttava henkilölle tai organisaatiolle, jolle haluat myöntää kertakirjautumiskäyttöoikeuden SAP BW -sovelluspalvelimeen. Jos haluat esimerkiksi myöntää kertakirjautumiskäyttöoikeuden käyttäjälle [testuser@TESTDOMAIN.COM](mailto:testuser@TESTDOMAIN.COM), syötä p:testuser@TESTDOMAIN.COM.
+1. Valitse **SNC**-välilehti. Kirjoita SNC-nimisyöteruutuun p:\<Active Directory -käyttäjä\>@\<toimialueesi\>. Huomaa pakollinen p:, jonka on tultava ennen Active Directory -käyttäjän täydellistä käyttäjätunnusta. Määrittämäsi Active Directory -käyttäjän on kuuluttava henkilölle tai organisaatiolle, jolle haluat myöntää kertakirjautumiskäyttöoikeuden SAP BW -sovelluspalvelimeen. Jos haluat esimerkiksi myöntää kertakirjautumiskäyttöoikeuden käyttäjälle testuser\@TESTDOMAIN.COM, syötä p:testuser@TESTDOMAIN.COM.
 
     ![Näyttökuva SAP BW:n käyttäjien ylläpitoruudusta](media/service-gateway-sso-kerberos/maintain-users.png)
 
@@ -290,17 +276,17 @@ Varmista, että voit kirjautua sisään palvelimelle. Käytä SAP-kirjautumista 
 
 Jos kohtaat ongelmia, toimi seuraavasti määrittääksesi viat gsskrb5-asennuksessa ja SAP-kirjautumisen kertakirjautumisyhteyksissä.
 
-- Palvelimen lokien tarkastelemisesta (...work\dev\_w0 palvelinkoneessa) voi olla hyötyä, kun yrität määrittää gsskrb5-asennuksen yhteydessä ilmeneviä virheitä. Tästä on hyötyä erityisesti, jos SAP BW -palvelin ei käynnisty profiiliparametrien muuttamisen jälkeen.
+* Palvelimen lokien tarkastelemisesta (...work\dev\_w0 palvelinkoneessa) voi olla hyötyä, kun yrität määrittää gsskrb5-asennuksen yhteydessä ilmeneviä virheitä. Tästä on hyötyä erityisesti, jos SAP BW -palvelin ei käynnisty profiiliparametrien muuttamisen jälkeen.
 
-- Jos et pysty käynnistämään SAP BW -palvelua kirjautumisvirheen vuoksi, on mahdollista, että syötit väärän salasanan, kun määritit SAP BW:n aloituskäyttäjää. Vahvista salasana kirjautumalla sisään Active Directory -ympäristössäsi olevaan tietokoneeseen SAP BW -palvelukäyttäjänä.
+* Jos et pysty käynnistämään SAP BW -palvelua kirjautumisvirheen vuoksi, on mahdollista, että syötit väärän salasanan, kun määritit SAP BW:n aloituskäyttäjää. Vahvista salasana kirjautumalla sisään Active Directory -ympäristössäsi olevaan tietokoneeseen SAP BW -palvelukäyttäjänä.
 
-- Jos saat SQL-tunnistetietoihin liittyviä virheilmoituksia, jotka estävät palvelinta käynnistymästä, varmista, että olet myöntänyt palvelukäyttäjälle käyttöoikeuden SAP BW -tietokantaan.
+* Jos saat SQL-tunnistetietoihin liittyviä virheilmoituksia, jotka estävät palvelinta käynnistymästä, varmista, että olet myöntänyt palvelukäyttäjälle käyttöoikeuden SAP BW -tietokantaan.
 
-- Saatat saada seuraavan sanoman: ”(GSS-API) määritetty kohde on tuntematon tai siihen ei saada yhteyttä”. Tämä tarkoittaa yleensä sitä, että määritetty SNC-nimi on virheellinen. Muista, että asiakassovelluksessa tulee käyttää palvelukäyttäjän täydellisen käyttäjätunnuksen lisäksi vain merkkijonoa ”p:” merkkijonon ”p:CN=” tai vastaavien sijaan.
+* Saatat saada seuraavan sanoman: ”(GSS-API) määritetty kohde on tuntematon tai siihen ei saada yhteyttä”. Tämä tarkoittaa yleensä sitä, että määritetty SNC-nimi on virheellinen. Muista, että asiakassovelluksessa tulee käyttää palvelukäyttäjän täydellisen käyttäjätunnuksen lisäksi vain merkkijonoa ”p:” merkkijonon ”p:CN=” tai vastaavien sijaan.
 
-- Saatat saada seuraavan sanoman: ”(GSS-API) Annettiin virheellinen nimi”. Varmista, että palvelimen SNC-identiteetin profiiliparametrin arvo on ”p:”.
+* Saatat saada seuraavan sanoman: ”(GSS-API) Annettiin virheellinen nimi”. Varmista, että palvelimen SNC-identiteetin profiiliparametrin arvo on ”p:”.
 
-- Voit saada seuraavan sanoman: ”(SNC-virhe) määritettyä moduulia ei löytynyt”. Tämä johtuu yleensä siitä, että `gsskrb5.dll/gx64krb5.dll` sijaitsee paikassa, joka edellyttää korkeita (järjestelmänvalvojan) käyttöoikeuksia.
+* Voit saada seuraavan sanoman: ”(SNC-virhe) määritettyä moduulia ei löytynyt”. Tämä johtuu yleensä siitä, että `gsskrb5.dll/gx64krb5.dll` sijaitsee paikassa, joka edellyttää korkeita (järjestelmänvalvojan) käyttöoikeuksia.
 
 ### <a name="add-registry-entries-to-the-gateway-machine"></a>Rekisterimerkintöjen lisääminen yhdyskäytäväkoneeseen
 
@@ -356,13 +342,13 @@ Jos Azure AD Connectia ei ole määritetty, noudata seuraavia toimia jokaiselle 
 
 Lisää SAP BW-tietolähde yhdyskäytävääsi seuraamalla aiemmin tässä artikkelissa annettuja ohjeita [raportin suorittamisesta](#run-a-power-bi-report).
 
-1. Kirjoita tietolähteen määritysikkunassa sovelluspalvelimen **Isäntänimi**, **Järjestelmänumero** ja **asiakastunnus** samalla tavalla kuin silloin, kun kirjaudut sisään SAP BW -palvelimeesi Power BI Desktopin kautta. Valitse **todennusmenetelmäksi** **Windows**.
+1. Kirjoita tietolähteen määritysikkunassa sovelluspalvelimen **Isäntänimi**, **Järjestelmänumero** ja **asiakastunnus** samalla tavalla kuin silloin, kun kirjaudut sisään SAP BW -palvelimeesi Power BI Desktopin kautta.
 
 1. Syötä **SNC-kumppanin nimi** -kenttään p: \<SPN, jonka yhdistit SAP BW -palvelukäyttäjään\>. Esimerkiksi jos SPN on SAP/BWServiceUser@MYDOMAIN.COM, syötä p:SAP/BWServiceUser@MYDOMAIN.COM **SNC-kumppanin nimi** -kenttään.
 
-1. Valitse SNC-kirjastoksi **SNC\_LIB** tai **SNC\_LIB\_64**.
+1. Valitse SNC-kirjastoksi **SNC_LIB** tai **SNC_LIB_64**. Käytä **SNC_LIB**-kirjastoa 32-bittisissä skenaarioissa ja **SNC_LIB_64**-kirjastoa 64-bittisissä skenaarioissa. Varmista, että nämä ympäristömuuttujat osoittavat bittimäärän mukaan joko tiedostoon gsskrb5.dll tai gx64krb5.dll.
 
-1. **Käyttäjänimen** ja **salasanan** tulee olla sellaisen Active Directory -käyttäjän käyttäjänimi ja salasana, jolla on oikeudet kirjautua SAP BW -palvelimelle SSO-kirjautumisen avulla. Tunnistetietojen pitää siis kuulua Active Directory -käyttäjälle, joka on yhdistetty SAP BW -käyttäjään SU01-tapahtuman avulla. Näitä tunnistetietoja käytetään vain, jos **Käytä DirectQuery-kyselyissä kertakirjautumista Kerberoksen kautta** -valintaruutu ei ole valittuna.
+1. Jos valitsit **Windowsin** **todennustavaksi**, **käyttäjänimen** ja **salasanan** tulee olla sellaisen Active Directory -käyttäjän käyttäjänimi ja salasana, jolla on oikeudet kirjautua SAP BW -palvelimelle SSO-kirjautumisen avulla. Tunnistetietojen pitää siis kuulua Active Directory -käyttäjälle, joka on yhdistetty SAP BW -käyttäjään SU01-tapahtuman avulla. Jos valintasi oli **Perus**, **käyttäjänimen** ja **salasanan** tulee olla SAP BW:n käyttäjänimi ja salasana. Näitä tunnistetietoja käytetään vain, jos **Käytä DirectQuery-kyselyissä kertakirjautumista Kerberoksen kautta** -valintaruutu ei ole valittuna.
 
 1. Valitse **Käytä kertakirjautumista Kerberosin kautta DirectQuery-kyselyille** -ruutu ja valitse **Käytä**. Jos testiyhteys ei toimi, tarkista, että suoritit aiemmat asennus- ja määritysvaiheet oikein.
 
@@ -394,9 +380,9 @@ Tuloksena on, että yhdyskäytävä ei voi tekeytyä alkuperäiseksi käyttäjä
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
-Lisätietoja **paikallisesta tietoyhdyskäytävästä** ja **DirectQuerystä** on seuraavissa resursseissa:
+Lisätietoja **paikallisesta tietoyhdyskäytävästä** ja **DirectQuerysta** on seuraavissa resursseissa:
 
-* [Paikallinen tietoyhdyskäytävä](service-gateway-onprem.md)
+* [Mikä paikallinen tietoyhdyskäytävä on?](/data-integration/gateway/service-gateway-getting-started)
 * [DirectQuery Power BI:ssä](desktop-directquery-about.md)
 * [DirectQueryn tukemat tietolähteet](desktop-directquery-data-sources.md)
 * [DirectQuery ja SAP BW](desktop-directquery-sap-bw.md)

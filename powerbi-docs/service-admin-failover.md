@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 01/30/2019
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: a5f3f5003eb1d22b0667698691471150f04553d8
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: b3fa7fd07a4c7f1992623871ed408b959582a125
+ms.sourcegitcommit: 277fadf523e2555004f074ec36054bbddec407f8
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61196906"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68270596"
 ---
 # <a name="power-bi-high-availability-failover-and-disaster-recovery-faq"></a>Power BI:n suuren käytettävyyden, vikasietoisuuden ja järjestelmäpalautuksen usein kysytyt kysymykset
 
@@ -65,7 +65,7 @@ Power BI -palvelun esiintymät palaavat alkuperäisille alueilleen, kun vikasiet
 Jos organisaatiosi käyttämään Power BI -ratkaisuun liittyy jokin seuraavista elementeistä, sinun täytyy ryhtyä tiettyihin toimiin ratkaisun suuren käytettävyyden takaamiseksi:
 
 - Jos organisaatiosi käyttää Power BI Premiumia, sinun täytyy taata, että Premium-kapasiteetti on tarpeeksi suuri käyttöönottosi kuormitukselle.  [Power BI Premiumin suunnittelun ja käyttöönoton raportista](https://aka.ms/Premium-Capacity-Planning-Deployment) sekä [Power BI Premium Capacity Metrics -sovelluksesta](service-admin-premium-monitor-capacity.md) voi olla apua tämän vaatimuksen suunnittelussa ja täyttämisessä. Lisäämme Metrics-sovellukseen ja Power BI -hallintaportaaliin säännöllisesti uusia toimintoja, joista on apua.
-- Jos organisaatiosi käyttää paikallisia tietolähteitä Power BI:n paikallisen yhdyskäytävän avulla, sinun täytyy määrittää yhdyskäytävä [tämän artikkelin ohjeiden](service-gateway-high-availability-clusters.md) mukaisesti tukemaan suurta käytettävyyttä. Noudata näitä ohjeita riippumatta siitä, oletko päivittämässä raportteja tuontitilassa tai käyttämässä tietoja tai tietomalleja DirectQueryn tai Live Connectin avulla.
+- Jos organisaatiosi käyttää paikallisia tietolähteitä paikallisen tietoyhdyskäytävän avulla, sinun täytyy määrittää yhdyskäytävä [tämän artikkelin ohjeiden](/data-integration/gateway/service-gateway-high-availability-clusters) mukaisesti tukemaan suurta käytettävyyttä. Noudata näitä ohjeita riippumatta siitä, oletko päivittämässä raportteja tuontitilassa tai käyttämässä tietoja tai tietomalleja DirectQueryn tai Live Connectin avulla.
 
 ## <a name="will-gateways-function-when-in-failover-mode"></a>Toimivatko yhdyskäytävät vikasietotilassa?
 

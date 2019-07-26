@@ -7,23 +7,23 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 01/02/2019
+ms.date: 06/19/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 68467894850248d6acb841dc2ed651f595f19b95
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: fa1311f93cd6b543d552070b990f1bada551a699
+ms.sourcegitcommit: 9d13ef7a257b5006fca5f92acf5b611f5cd143a2
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61363395"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "68307018"
 ---
 # <a name="use-the-numeric-range-slicer-in-power-bi-desktop"></a>Numeerisen alueen osittajan käyttö Power BI Desktopissa
-**Numeerisen alueen osittajan** avulla voit käyttää kaikenlaisia suodattimia mihin tahansa tietomallisi numeeriseen sarakkeeseen. Voit myös suodattaa ehdoilla lukujen **välillä**, **pienempi tai yhtä suuri** kuin luku tai **suurempi tai yhtä suuri** kuin luku. Tämä voi kuulostaa yksinkertaiselta, mutta se on hyvin tehokas tapa suodattaa tietojasi.
+Numeerisen alueen osittajan avulla voit käyttää kaikenlaisia suodattimia mihin tahansa tietomallisi numeeriseen sarakkeeseen. Numeeristen tietojen suodattamiseen on kolme vaihtoehtoa: lukujen välillä, pienempi tai yhtä suuri kuin luku ja suurempi tai yhtä suuri kuin luku. Tämä voi kuulostaa yksinkertaiselta, mutta kyseessä on tehokas tietojen suodatustapa.
 
 ![Numeerisen alueen osittajan visualisointi](media/desktop-slicer-numeric-range/desktop-slicer-numeric-range-0.png)
 
-## <a name="using-the-numeric-range-slicer"></a>Numeerisen alueen osittajan käyttö
-Voit käyttää numeerisen alueen osittajaa kuten mitä tahansa muuta osittajaa. Laadi **osittajan** visualisointi raportillesi ja valitse sitten numeerinen arvo **kentän** arvoksi. Seuraavassa kuvassa valittuna on *LineTotal*-kenttä.
+## <a name="use-the-numeric-range-slicer"></a>Numeerisen alueen osittajan käyttö
+Voit käyttää numeerisen alueen osittajaa kuten mitä tahansa muuta osittajaa. Laadi **osittajan** visualisointi raportillesi ja valitse sitten numeerinen arvo **kentän** arvoksi. Seuraavassa kuvassa valittuna on **LineTotal**-kenttä.
 
 ![Numeerisen alueen osittajan luominen](media/desktop-slicer-numeric-range/desktop-slicer-numeric-range-1-create.png)
 
@@ -33,13 +33,13 @@ Valitse **numeerisen alueen osittajan** oikeassa yläkulmassa oleva alanuoli, jo
 
 Numeerisen alueen osalta voit valita seuraavista kolmesta vaihtoehdosta:
 
-* Välillä
-* Pienempi tai yhtä suuri kuin
-* Suurempi tai yhtä suuri kuin
+* **Välillä**
+* **Pienempi tai yhtä suuri kuin**
+* **Suurempi tai yhtä suuri kuin**
 
-Kun valitset valikosta vaihtoehdon **Välillä**, näkyviin tulee liukusäädin, ja voit suodattaa lukujen välille osuvia numeerisia arvoja. Varsinaisen liukusäätimen käytön lisäksi voit napsauttaa kummasta ruudusta tahansa ja syöttää arvot. Tämä on kätevää, kun haluat osittaa tietyillä luvuilla, mutta osituspalkin siirtämisen askelvälit tekevät täsmälleen kyseiseen lukuun päätymisestä hankalaa.
+Kun valitset valikosta **Välillä**-vaihtoehdon, näkyviin tulee liukusäädin. Voit valita liukusäätimen avulla lukujen väliin jäävät numeroarvot. Joskus osittajapalkin siirtämisen askelväli vaikeuttaa osumista täsmälleen haluttuun lukuun. Voit myös käyttää liukusäädintä ja antaa haluamasi arvot napsauttamalla jompaakumpaa ruutua. Tämä vaihtoehto on kätevä, kun haluat osittaa tietyt luvut. 
 
-Seuraavassa kuvassa raporttisivu on suodatettu *LineTotal*-arvoilla, jotka ovat välillä 2500,00–6000,00.
+Seuraavassa kuvassa raporttisivu on suodatettu **LineTotal**-arvoilla, jotka ovat välillä 2500,00–6000,00.
 
 ![Numeerisen alueen osittaja Välillä-asetuksella](media/desktop-slicer-numeric-range/desktop-slicer-numeric-range-3-between-range.png)
 
@@ -47,26 +47,25 @@ Kun valitaan **Pienempi tai yhtä suuri kuin**, liukusäätimen vasemmalla oleva
 
 ![Numeerisen alueen osittaja Pienempi kuin -asetuksella](media/desktop-slicer-numeric-range/desktop-slicer-numeric-range-4-less-than.png)
 
-Jos taas valitaan **Suurempi tai yhtä suuri kuin**, liukusäätimen oikea (suurinta arvoa osoittava) kahva katoaa ja pienempää arvoa voidaan säätää seuraavassa kuvassa osoitetulla tavalla. Nyt raporttisivun visualisoinneissa näytetään vain kohteet, joiden *LineTotal*-arvo on suurempi tai yhtä suuri kuin 4902,99.
+Jos valitset lopuksi **suurempi tai yhtä suuri kuin**, liukusäätimen oikealla oleva (suurempaa arvoa osoittava) kahva häviää. Voit sitten säätää liukusäätimen alarajaa seuraavan kuvan mukaisesti. Nyt raporttisivun visualisoinneissa näytetään vain kohteet, joiden **LineTotal**-arvo on suurempi tai yhtä suuri kuin 4902,99.
 
 ![Numeerisen alueen osittaja Suurempi kuin -asetuksella](media/desktop-slicer-numeric-range/desktop-slicer-numeric-range-5-greater-than.png)
 
 ## <a name="snap-to-whole-numbers-with-the-numeric-range-slicer"></a>Kokonaislukuihin kohdistaminen numeerisen alueen osittajalla
 
-Numeerisen alueen osittaja kohdistuu kokonaislukuihin, jos pohjana olevan kentän tietotyyppi on **kokonaisluku**. Näin osittaja voi tasata siististi kokonaislukuihin. **Desimaaliluku**-tyyppisten kenttien avulla voit syöttää tai valita murtolukuja. Tekstiruudun muotoilu vastaa kentässä määritettyä muotoilua, vaikka voit kirjoittaa tai valita tarkempia lukuja.
+Numeerisen alueen osittaja kohdistuu kokonaislukuihin, jos pohjana olevan kentän tietotyyppi on **kokonaisluku**. Tämän ominaisuuden ansiosta osittaja voi tasata siististi kokonaislukuihin. **Desimaaliluku**-kenttien avulla voit syöttää tai valita murtolukuja. Tekstiruudun muotoilu vastaa kentässä määritettyä muotoilua, vaikka voit kirjoittaa tai valita tarkempia lukuja.
 
 ## <a name="display-formatting-with-the-date-range-slicer"></a>Muotoilun näyttäminen päivämääräalueen osittajan avulla
 
-Kun käytät osittajaa näyttämään tai määrittämään päivämääräalueen, päivämäärän muoto näkyy aina **lyhyen päivämäärän** muodossa käyttäjän selaimen tai käyttöjärjestelmän aluekohtaisten asetusten mukaan. Tämä näyttömuoto on aina sama pohjana olevien tietojen tai mallin tietotyyppiasetuksista huolimatta. 
+Kun käytät osittajaa päivämääräalueiden näyttämiseen tai asettamiseen, päivämäärät näkyvät **Lyhyt päivämäärä** -muodossa. Käyttäjän selaimen tai käyttöjärjestelmän aluekohtaiset asetukset määräävät päivämäärämuodon. Näin ollen se on näyttömuoto riippumatta siitä, mitkä tietotyypin asetukset on asetettu pohjana oleville tiedoille tai mallille. 
 
-Sinulla voi esimerkiksi olla pitkä päivämäärämuoto pohjana olevalle tietotyypille (kuten *pppp, p KKKK, vvvv*, joka voi muodostaa päivämäärän muissa visualisoinneissa tai tilanteissa, kuten *keskiviikko, 14. maaliskuuta 2001*), mutta päivämääräosittajassa tämä päivämäärä näytetään osittajassa muodossa *14.3.2001*.
+Pohjana olevassa tietotyypissä voi olla esimerkiksi pitkä päivämäärämuoto. Tässä tapauksessa esimerkiksi päivämäärämuoto *pppp, KKKK p, vvvv* muotoilee päivämäärän muissa visualisoinneissa tai tilanteissa muotoon *Keskiviikko 14. maaliskuuta 2001*. Päivämäärän osittajassa kyseinen päivämäärä näkyy kuitenkin muodossa *03/14/2001*.
 
 Näyttämällä osittajassa **lyhyen päivämäärän** muodon varmistat, että merkkijonon pituus säilyy aina johdonmukaisena ja lyhyenä osittajassa. 
 
-
 ## <a name="limitations-and-considerations"></a>Rajoitukset ja huomioitavat asiat
-**Numeerisen alueen osittajaa** koskevat tällä hetkellä seuraavat rajoitukset ja huomioon otettavat seikat:
+**Numeerisen alueen osittajaa** koskevat seuraavat rajoitukset ja huomioon otettavat seikat:
 
-* **Numeerisen alueen osittaja** suodattaa tällä hetkellä kaikki tietojen pohjana olevat rivit eikä koostettuja arvoja. Esimerkiksi jos käytetään kenttää *Myynnin määrä*, suodatetaan jokainen kenttään *Myynnin määrä* pohjautuva tapahtuma eikä summaa, joka saadaan visualisoinnin kunkin arvopisteen *Myynnin määrä* -kentistä.
+* **Numeerisen alueen osittaja** suodattaa kaikki tietojen pohjana olevat rivit eikä koostettuja arvoja. Oletetaan esimerkiksi, että käytät kenttää *Myynnin määrä*. Osittaja suodattaa sen jälkeen kunkin tapahtuman myynnin määrän mukaan sen sijaan, että se käyttäisi myynnin määrän summaa visualisoinnin kussakin arvopisteessä.
 * Osittaja ei tällä hetkellä toimi mittarien kanssa.
-* Voit kirjoittaa minkä tahansa luvun tekstiruutuun numeerisessa osittajassa, vaikka luku olisi pohjana olevan sarakkeen arvojen alueen ulkopuolella. Tämän avulla voit määrittää suodattimia, jos tiedät, että tiedot voivat muuttua tulevaisuudessa.
+* Voit kirjoittaa minkä tahansa luvun tekstiruutuun numeerisessa osittajassa, vaikka luku olisi pohjana olevan sarakkeen arvojen alueen ulkopuolella. Tämän vaihtoehdon avulla voit määrittää suodattimia, jos tiedät, että tiedot voivat muuttua tulevaisuudessa.

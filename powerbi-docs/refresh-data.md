@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 06/12/2019
 ms.author: mblythe
 LocalizationGroup: Data refresh
-ms.openlocfilehash: 0013080f3640c4c4d3d717104dcc069ccce3923a
-ms.sourcegitcommit: 952afd75fe8ddcf9350bd9aae88e1a4c438d0f3e
+ms.openlocfilehash: 7492651d2b5be8a63c97594fce3f3399b1122cc3
+ms.sourcegitcommit: fe8a25a79f7c6fe794d1a30224741e5281e82357
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/04/2019
-ms.locfileid: "67561811"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "68325023"
 ---
 # <a name="data-refresh-in-power-bi"></a>Tietojen päivittäminen Power BI:ssä
 
@@ -55,7 +55,7 @@ Koska Power BI tallentaa tiedot välimuistiin, tietojoukkojen koko voi olla tuon
 | --- | --- |
 | Jaettu, A1 A2 tai A3 | 1 GT |
 | A4 tai P1 | 3 Gt |
-| A4 tai P2 | 6 Gt |
+| A5 tai P2 | 6 Gt |
 | A6 tai P3 | 10 Gt |
 | | |
 
@@ -160,7 +160,7 @@ Tallennustilasta riippumatta tietojen päivittäminen ei voi onnistua, jos pohja
 
 ### <a name="connecting-to-on-premises-data-sources"></a>Yhdistäminen paikallisiin tietolähteisiin
 
-Jos tietojoukossa käytetään tietolähdettä, johon Power BI:llä ei ole pääsyä suoran verkkoyhteyden kautta, sinun on määritettävä tietojoukon yhdyskäytäväyhteys, ennen kuin voit ottaa ajoitetun päivityksen käyttöön tai suorittaa tietojen päivityspyynnön. Katso lisätietoja tietoyhdyskäytävistä ja niiden toiminnasta kohdasta [Mitä ovat paikalliset tietoyhdyskäytävät?](service-gateway-getting-started.md)
+Jos tietojoukossa käytetään tietolähdettä, johon Power BI:llä ei ole pääsyä suoran verkkoyhteyden kautta, sinun on määritettävä tietojoukon yhdyskäytäväyhteys, ennen kuin voit ottaa ajoitetun päivityksen käyttöön tai suorittaa tietojen päivityspyynnön. Katso lisätietoja tietoyhdyskäytävistä ja niiden toiminnasta kohdasta [Mitä ovat paikalliset tietoyhdyskäytävät?](service-gateway-onprem.md)
 
 Käytettävissä on seuraavat vaihtoehdot:
 
@@ -174,7 +174,10 @@ Käytettävissä on seuraavat vaihtoehdot:
 
 Microsoft suosittelee muodostamaan yhteyden paikalliseen tietolähteeseen yrityksen yhdyskäytävän avulla henkilökohtaisen yhdyskäytävän sijasta. Varmista, että yhdyskäytävä on määritetty oikein, mikä tarkoittaa sitä, että yhdyskäytävässä on oltava uusimmat päivitykset ja kaikki tarvittavat tietolähteen määritykset. Tietolähteen määritys tarjoaa Power BI:lle tietyn lähteen yhteyden tiedot, kuten yhteyden päätepisteen, todennustilan ja tunnistetietojen tiedot. Lisätietoja tietolähteiden hallinnasta yhdyskäytävässä on kohdassa [Tietolähteen hallinta – tuonti/ajoitettu päivitys](service-gateway-enterprise-manage-scheduled-refresh.md).
 
-Tietojoukon yhdistäminen yrityksen yhdyskäytävään on yhdyskäytävän järjestelmänvalvojalle melko yksinkertaista. Järjestelmänvalvojan oikeuksilla voit päivittää yhdyskäytävän ja lisätä puuttuvat tietolähteet tarvittaessa nopeasti. Voit jopa lisätä puuttuvan tietolähteen yhdyskäytävään suoraan tietojoukon asetussivulta. Laajenna tietolähdenäkymä painamalla painiketta ja valitse sitten **Lisää yhdyskäytävään** -linkki seuraavassa näyttökuvassa esitetyllä tavalla. Jos et ole yhdyskäytävän järjestelmänvalvoja, lähetä esitetylle yhdyskäytävän järjestelmänvalvojalle vaadittujen tietolähteen määritysten lisäämispyyntö.
+Tietojoukon yhdistäminen yrityksen yhdyskäytävään on yhdyskäytävän järjestelmänvalvojalle melko yksinkertaista. Järjestelmänvalvojan oikeuksilla voit päivittää yhdyskäytävän ja lisätä puuttuvat tietolähteet tarvittaessa nopeasti. Voit jopa lisätä puuttuvan tietolähteen yhdyskäytävään suoraan tietojoukon asetussivulta. Laajenna tietolähdenäkymä painamalla painiketta ja valitse sitten **Lisää yhdyskäytävään** -linkki seuraavassa näyttökuvassa esitetyllä tavalla. Jos sen sijaan et ole yhdyskäytävän järjestelmänvalvoja, sinun on otettava yhteyttä yhdyskäytävän järjestelmänvalvojaan, jotta voit lisätä tarvittavan tietolähteen määrityksen.
+
+> [!NOTE]
+> Vain yhdyskäytävän järjestelmänvalvojat voivat lisätä tietolähteitä yhdyskäytävään. Varmista myös, että yhdyskäytävän järjestelmänvalvoja lisää käyttäjätilisi luetteloon käyttäjistä, joilla on oikeudet käyttää tietolähdettä. Tietojoukon asetusten sivulla voit valita vain yritysyhdyskäytävän, jossa on vastaava tietolähde, johon sinulla on käyttöoikeus.
 
 ![Yhdyskäytävään lisääminen](media/refresh-data/add-to-gateway.png)
 
@@ -284,6 +287,8 @@ Huomaa myös, että määritetty päivityksen kellonaika ei ole ehdottoman tarkk
 ### <a name="getting-refresh-failure-notifications"></a>Päivityksen virheilmoitusten saaminen
 
 Oletusarvoisesti Power BI lähettää virheistä sähköposti-ilmoituksen tietojoukon omistajalle niin, että omistaja voi reagoida päivitysongelmiin ajoissa. Power BI lähettää sinulle ilmoituksen myös silloin, kun palvelu poistaa aikataulusi käytöstä peräkkäisten virheiden vuoksi. Microsoft suosittelee, että pidät valintaruudun **Lähetä päivityksenvirheistä sähköposti-ilmoitus** valittuna.
+
+On myös hyvä määrittää lisää vastaanottajia käyttämällä tekstiruutua **Lähetä sähköpostiviesti näille käyttäjille, kun päivitys epäonnistuu**. Määritetyt vastaanottajat saavat ilmoitukset päivitysvirheistä tietojoukon omistajan lisäksi. Tämä voi olla työtoveri, joka huolehtii tietojoukosta lomasi aikana. Se voi myös olla sähköpostialias tukiryhmään, joka hoitaa osastosi tai organisaatiosi päivitysongelmat. Päivitysvirheiden ilmoitusten lähettäminen muille tietojoukon omistajan lisäksi on hyödyllinen tapa varmistaa, että ongelmat huomataan ja käsitellään ajallaan.
 
 Huomaa, että Power BI ei lähetä ainoastaan päivitysvirheistä koskevia ilmoituksia, vaan se ilmoittaa myös käyttämättömyydestä johtuvasta palvelun keskeytymisestä. Power BI pitää tietojoukkoa käyttämättömänä, kun yksikään käyttäjä ei ole käynyt raporttinäkymässä tai tietojoukosta koostetussa raportissa kahteen kuukauteen. Tällaisissa tilanteissa Power BI lähettää tietojoukon omistajalle sähköpostiviestin, jossa kerrotaan, että palvelu on pysäyttänyt tietojoukon päivitysaikataulun. Seuraavassa näyttökuvassa on esimerkki tällaisesta ilmoituksesta.
 

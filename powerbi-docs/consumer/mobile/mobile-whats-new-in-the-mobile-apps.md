@@ -9,12 +9,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 04/08/2019
 ms.author: mshenhav
-ms.openlocfilehash: a6718ed8f582150ad8f13d638308700f9004a354
-ms.sourcegitcommit: 9278540467765043d5cb953bcdd093934c536d6d
+ms.openlocfilehash: 8600dce5012abb41c37b202dcc8eb204da11fa33
+ms.sourcegitcommit: acd9f8212c9b0c6d3d8c4d56bba3c285246f3122
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67558991"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68230187"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Power BI -mobiilisovellusten uudet ominaisuudet
 Lisätietoja aiheeseen liittyvistä uusista ominaisuuksista:
@@ -22,6 +22,18 @@ Lisätietoja aiheeseen liittyvistä uusista ominaisuuksista:
 * [Power BI -tiimin mobiilisovelluksia käsittelevä blogi](https://powerbi.microsoft.com/blog/tag/mobile/)
 * [Power BI Desktopin uudet ominaisuudet](../../desktop-latest-update.md)  
 * [Power BI -palvelun uudet ominaisuudet](../../service-whats-new.md)  
+
+## <a name="july-2019"></a>Heinäkuu 2019
+
+### <a name="report-page-tooltips"></a>Raporttisivun työkaluvihjeet
+
+Raporttisivun työkaluvihjeitä tuetaan, kun raporttia tarkastellaan mobiilisovelluksen avulla. Pidä painettuna visualisointia, johon on liitetty raportin työkaluvihje, ja vihje tulee näkyviin.  
+
+![Raportin pohjan työkaluvihje](./media/mobile-whats-new-in-the-mobile-apps/report-canvas-tooltip.png)
+
+> [!NOTE]
+> Raportin työkaluvihjeitä tuetaan laitteissa, joiden kuvapistekoko on vähintään 640 ja näyttöikkuna 320. Pienemmissä laitteissa käytetään oletusarvoisia työkaluvihjeitä.
+
 
 ## <a name="june-2019"></a>Kesäkuu 2019
 

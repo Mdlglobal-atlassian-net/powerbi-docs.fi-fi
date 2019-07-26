@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 02/28/2019
+ms.date: 07/18/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: bf41700b367b7c3c2302eeec9c03b93fa294ed3f
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 775abf014f571b508832c5cb9a52a62aad455a7b
+ms.sourcegitcommit: fe8a25a79f7c6fe794d1a30224741e5281e82357
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61348841"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "68324808"
 ---
 # <a name="use-directquery-in-power-bi-desktop"></a>DirectQueryn käyttö Power BI Desktopissa
 Kun muodostat yhteyden tietolähteeseen, voit **Power BI Desktopin** avulla aina tuoda kopion tiedoista **Power BI Desktopiin**. Joillekin tietolähteille on saatavilla vaihtoehtoinen menetelmä: yhteyden muodostaminen suoraan tietolähteeseen **DirectQueryn** avulla.
@@ -50,12 +50,10 @@ Artikkelissa [Power BI ja DirectQuery](desktop-directquery-about.md) kuvataan **
 
 * Kaikkien taulukoiden on oltava peräisin yksittäisestä tietokannasta, ellei käytetä [yhdistelmämalleja](desktop-composite-models.md).
 * Jos **kyselyeditorin** kysely on liian monimutkainen, tapahtuu virhe. Virheen korjaamiseksi on joko poistettava ongelmallinen vaihe **kyselyeditorissa** tai *tuotava* tiedot **DirectQueryn** käytön sijasta. Moniulotteisten tietolähteiden, kuten SAP Business Warehousen, tapauksessa ei voi käyttää **kyselyeditoria**.
-* Suhteen suodatus on rajoitettu yhteen suuntaan molempien suuntien sijasta (vaikka on mahdollista ottaa käyttöön ristisuodatus molempiin suuntiin **DirectQuerylle** esikatseluominaisuutena). Moniulotteisten lähteiden, kuten SAP Business Warehousen, tapauksessa mallissa ei ole määritetty suhteita.
+* Suhteen suodatus on rajoitettu yhteen suuntaan molempien suuntien sijasta (vaikka on mahdollista ottaa käyttöön ristisuodatus molempiin suuntiin **DirectQuerylle**). Moniulotteisten lähteiden, kuten SAP Business Warehousen, tapauksessa mallissa ei ole määritetty suhteita.
 * Aikatieto-ominaisuudet eivät ole käytettävissä **DirectQueryssä**. Esimerkiksi päivämääräsarakkeiden (vuosi, vuosineljännes, kuukausi, päivä jne.) erityiskohtelua ei tueta **DirectQuery**-tilassa.
-* Oletusarvoisesti rajoitukset sijoitetaan DAX-lausekkeisiin sallittuina mittareina. Katso lisätietoja seuraavasta kappaleesta (luettelomerkeillä varustetun luettelon jälkeen)
+* Mittareille määritetään oletusarvoisesti rajoituksia sen varmistamiseksi, että pohjana olevaan tietolähteeseen lähetettyjen kyselyjen suorituskyky on riittävä.
 * Tietojen palautuksen tapauksessa on miljoonan rivin rajoitus käytettäessä **DirectQueryä**. Rajoitus ei vaikuta koosteisiin tai laskelmiin, joita on käytetty **DirectQueryn** avulla palautetun tietojoukon luontiin, vaan pelkästään palautettuihin riveihin. Voit esimerkiksi koostaa 10 miljoonaa riviä tietolähteestä tehdystä kyselystä ja palauttaa tarkasti tämän koosteen tulokset Power BI:hin **DirectQueryn** avulla, jos Power BI:hin palautettujen tietojen koko on alle miljoona riviä. Jos **DirectQuerystä** palautetaan yli miljoona riviä, Power BI palauttaa virheen.
-
-Sen varmistamiseksi, että pohjana olevaan tietolähteeseen lähetettyjen kyselyjen suorituskyky on riittävä, mittareille määritetään oletusarvoisesti rajoituksia. Edistyneet käyttäjät voivat ohittaa tämän rajoituksen valitsemalla **Tiedosto &gt; Vaihtoehdot ja asetukset &gt; Vaihtoehdot** ja sitten **DirectQuery**, ja valitsemalla sitten vaihtoehdon *Salli rajoittamattomat mittarit DirectQuery-tilassa*. Kun tämä vaihtoehto on valittu, voidaan käyttää mitä tahansa DAX-lauseketta, joka on kelvollinen mittarille. Käyttäjien on kuitenkin pantava merkille, että jotkin lausekkeet, jotka suoriutuvat erittäin hyvin tietojen tuonnin aikana, voivat hidastaa paljonkin kyselyjä taustalähteeseen DirectQuery-tilassa.
 
 ## <a name="important-considerations-when-using-directquery"></a>DirectQueryn käytössä huomioitavia tärkeitä seikkoja
 Kun käytät **DirectQueryä**, ota huomioon seuraavat kolme seikkaa:

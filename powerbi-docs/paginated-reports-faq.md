@@ -8,13 +8,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: overview
-ms.date: 06/18/2019
-ms.openlocfilehash: 10ac6ed9f49241103d03f2667ccc8db5d619db6c
-ms.sourcegitcommit: a42c6758aa255c21ece6366a3257b0dd82f3606b
+ms.date: 07/15/2019
+ms.openlocfilehash: 10135e0fa725cd4093802cd1416cab302174e21d
+ms.sourcegitcommit: 277fadf523e2555004f074ec36054bbddec407f8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/24/2019
-ms.locfileid: "67345518"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68270789"
 ---
 # <a name="paginated-reports-in-power-bi-faq"></a>Sivutetut raportit Power BI:ssä: Usein kysytyt kysymykset 
 
@@ -119,10 +119,10 @@ Saat virheviestin, jos yrität ladata tiedoston, jolla on tukematon ominaisuus P
 
 Tuemme seuraavaa tietolähdettä - 
 
-- Power BI Premium -tietojoukot
+- Power BI -tietojoukot (kertakirjautumisen (SSO) kautta)
 - Azure Analysis Services (kertakirjautumisen (SSO) ja oAuth-toiminnon kautta)
 - Azure SQL Data Warehouse
-- Azure SQL Database (käyttäjänimen/salasanan ja oAuth-toiminnon kautta)
+- Microsoft Azuren SQL-tietokanta (käyttäjänimi/salasana, SSO ja oAuth)
 - SQL Server*
 - Taulukkomuotoiset SQL Server Analysis Services (SSAS) (DAX) ja monidimensioiset (MDX) mallit* 
 - Oracle* 
@@ -134,11 +134,11 @@ Kun SSAS-malleja käytetään yhdyskäytävän kautta, käyttäjä, jonka tunnis
 
 ### <a name="what-authentication-methods-do-you-support"></a>Mitä todennusmenetelmiä tuette?
 
-Tuemme kertakirjautumista sekä Azure Analysis Services - että Power BI Premium -tietolähteisiin, ja tuemme Azure SQL Databasen oAuth-toimintoa ja kertakirjautumista.  Muille tietolähteille on tallennettava nykyisin käyttäjänimi ja salasana tietolähteen kanssa portaaliin tai yhdyskäytävään.  
+Tuemme SSO:ta Azure Analysis Services -palveluissa, Microsoft Azuren SQL-tietokannassa ja Power BI -tietolähteissä.  Tuemme myös OAuthia Microsoft Azuren SQL-tietokannassa ja Azure Analysis Services -palveluissa.  Muille tietolähteille on tallennettava nykyisin käyttäjänimi ja salasana tietolähteen kanssa portaaliin tai yhdyskäytävään.  
 
 ### <a name="can-i-use-a-power-bi-dataset-as-a-data-source-for-my-paginated-report"></a>Voinko käyttää Power BI -tietojoukkoa tietolähteenä omalle sivutetulle raportilleni?
 
-Kyllä, tuemme Power BI Premium -tietojoukkoja sivutettujen raporttien tietolähteinä.
+Kyllä, tuemme Power BI -tietojoukkoja sivutettujen raporttien tietolähteinä.
 
 ### <a name="can-i-use-stored-procedures-through-the-gateway"></a>Voinko käyttää tallennettuja toimintosarjoja yhdyskäytävän kautta?
 
@@ -179,10 +179,6 @@ Tarkoituksenamme on ottaa käyttöön mahdollisimman laajasti raporttien tuki pa
 ### <a name="is-a-migration-tool-planned-so-ssrs-customers-can-move-their-existing-reports-and-assets-to-power-bi"></a>Onko suunnitteilla siirtotyökalua, jotta SSRS-asiakkaat voivat siirtää olemassa olevat raporttinsa ja resurssinsa  Power BI:hin?
 
 Arvioimme erilaisia tapoja, joilla sisältöä voi siirtää Power BI:hin automaattisesti, mutta sellainen sisällytetään vasta yleiseen julkaisuversioon.
-
-### <a name="will-i-ever-be-able-to-create-both-paginated-reports-and-power-bi-reports-in-a-single-authoring-tool"></a>Voinko vastaisuudessa luoda sekä sivutettuja raportteja että Power BI -raportteja yhdessä luontityökalussa?
-
-Olemme pohtineet keinoja tämän skenaarion käyttöönottamiseksi, mutta sitä ei ole tarkoitus tällä hetkellä ottaa käyttöön.
 
 ### <a name="is-there-a-report-viewer-control-for-paginated-reports-in-the-power-bi-service"></a>Onko Power BI -palvelussa raporttien katseluohjelman hallinta sivutetuille raporteille?
 

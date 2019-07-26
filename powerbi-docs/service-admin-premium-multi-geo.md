@@ -10,14 +10,14 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 02/05/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: 7735ce3d6d28f51ca95efbe12394c2e0cb2cba29
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: fcef4b7bc9feaee0912a8e0e9ea8098d52c66e3a
+ms.sourcegitcommit: 76fadf20c1e19ec43aa8f9c5a5e909b567419ef6
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65564937"
+ms.lasthandoff: 07/17/2019
+ms.locfileid: "68289822"
 ---
-# <a name="configure-multi-geo-support-for-power-bi-premium"></a>Määritä Power BI Premium useiden Geo-tuki
+# <a name="configure-multi-geo-support-for-power-bi-premium"></a>Power BI Premiumin Multi-Geo-tuen määrittäminen
 
 Multi-Geo on Power BI Premiumin ominaisuus, joka auttaa monikansallisia asiakkaita huomioimaan organisaation aluekohtaiset, alakohtaiset ja tietojen säilytykseen liittyvät vaatimukset. Ota selvää, miten voit Power BI Premium -asiakkaana ottaa sisällön tietokeskuksia käyttöön muilla alueilla kuin Power BI -vuokraajan kotialueella. Maantieteellinen alue voi sisältää useamman kuin yhden alueen. Esimerkiksi Yhdysvallat on maantieteellinen alue, ja esimerkiksi Yhdysvaltojen läntinen keskiosa sekä Yhdysvaltojen eteläinen keskiosa ovat Yhdysvaltain alueita. Voit halutessasi ottaa sisältöä käyttöön millä tahansa seuraavista alueista:
 
@@ -35,7 +35,7 @@ Multi-Geo ei ole käytettävissä Saksan Power BI:ssä, 21Vianetin ylläpitämä
 
 Multi-Geo on nyt käytettävissä myös Power BI Embeddedissä. Lisätietoja on artikkelissa [Multi-Geo-tuki Power BI Embeddedissä](developer/embedded-multi-geo.md).
 
-## <a name="enable-and-configure"></a>Ota käyttöön ja määrittäminen
+## <a name="enable-and-configure"></a>Käyttöön ottaminen ja määrittäminen
 
 Voit ottaa Multi-Geon käyttöön uusille kapasiteeteille valitsemalla avattavasta valikosta muun kuin oletusalueen.  Kukin käytettävissä oleva kapasiteetti näyttää alueen, minne se tällä hetkellä sijoittuu, kuten **Yhdysvaltojen läntinen keskiosa**.
 
@@ -68,7 +68,7 @@ Nämä kohteet säilyvät vuokraajan kotialueella:
 - Käyttöoikeudet
 - Tietojoukon tunnistetiedot
 
-## <a name="view-capacity-regions"></a>Näytä kapasiteetin alueet
+## <a name="view-capacity-regions"></a>Kapasiteettien alueiden tarkasteleminen
 
 Hallintaportaalissa voit tarkastella Power BI -vuokraajan kaikkia kapasiteetteja ja niiden nykyisiä alueita.
 
@@ -94,7 +94,7 @@ Voit ottaa työtiloja ulos Multi-Geo-kapasiteetista jommallakummalla seuraavista
 - Etäalueelle tallennettu välimuistissa oleva kysely pysyy alueellaan levossa. Muut siirrettävät tiedot voivat kuitenkin liikkua edestakaisin useiden maantieteellisten alueiden välillä.
 - Kun siirrät tietoja alueelta toiselle Multi-Geo-ympäristössä, lähdetiedot saattavat jäädä jopa 30 päivän ajaksi alueelle, jolta ne on siirretty. Tänä aikana loppukäyttäjät eivät pysty käyttämään niitä. Tiedot poistetaan tältä alueelta ja tuhotaan 30 päivän aikana.
 - Multi-Geon käyttäminen ei paranna yleistä suorituskykyä. Raporttien ja raporttinäkymien lataamiseen liittyy edelleen metatietopyyntöjä kotialueelle.
-- [Tietovuot](service-dataflows-overview.md)-ominaisuutta (esikatselu) ei tällä hetkellä tueta Multi-Geon yhteydessä.
+- [Tietovuot](service-dataflows-overview.md)-ominaisuutta ei tällä hetkellä tueta Multi-Geon yhteydessä.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 

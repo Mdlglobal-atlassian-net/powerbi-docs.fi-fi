@@ -1,5 +1,5 @@
 ---
-title: Koosteiden käyttäminen Power BI Desktopissa (esikatselu)
+title: Koosteiden käyttäminen Power BI Desktopissa
 description: Massadatan vuorovaikutteisen analyysin tekeminen Power BI Desktopissa
 author: davidiseminger
 manager: kfile
@@ -10,14 +10,14 @@ ms.topic: conceptual
 ms.date: 05/07/2019
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: f14b6878d44510631822dd26458bdaa17c1fe3a0
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 54264a645160542d7bda6a964164af65bfa45dfd
+ms.sourcegitcommit: fe8a25a79f7c6fe794d1a30224741e5281e82357
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65239579"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "68325179"
 ---
-# <a name="aggregations-in-power-bi-desktop-preview"></a>Koosteet Power BI Desktopissa (esikatselu)
+# <a name="aggregations-in-power-bi-desktop"></a>Koosteet Power BI Desktopissa
 
 **Koosteiden** käyttäminen Power BI:ssä mahdollistaa massadatan vuorovaikutteisen analysoinnin aivan uusilla tavoilla. **Koosteiden** avulla voidaan pienentää suurten tietojoukkojen avaamisen kustannuksia huomattavasti päätöksentekoa varten.
 
@@ -36,16 +36,6 @@ Taulukkotason tallennustilaa käytetään yleensä koostamisominaisuuden yhteyde
 Koosteita käytetään dimensiomalleja edustavien tietolähteiden, kuten tietovarastojen, tietovaraston osajoukkojen sekä Hadoop-pohjaisten massadatalähteiden yhteydessä. Tässä artikkelissa kuvataan kunkin tietolähdetyypin yleiset mallintamisen erot Power BI:ssä.
 
 Kaikki Power BI:n tuonnin lähteet ja (muut kuin moniulotteiset) DirectQuery-lähteet toimivat koosteiden kanssa.
-
-## <a name="enabling-the-aggregations-preview-feature"></a>Koosteiden esikatselutoiminnon käyttöönotto
-
-**Koostamisominaisuus** on esikatseluvaiheessa. Se on otettava käyttöön **Power BI Desktopissa**. Ota **koosteet** käyttöön valitsemalla **Tiedosto > Asetukset ja vaihtoehdot > Asetukset > Esikatselutoiminnot**. Valitse sitten **Yhdistelmämallit**- ja **Koosteiden hallinta** -valintaruudut. 
-
-![Esikatselutoimintojen ottaminen käyttöön](media/desktop-aggregations/aggregations_01.jpg)
-
-Ominaisuuden käyttöönotto edellyttää **Power BI Desktopin** käynnistämistä uudelleen.
-
-![Uudelleenkäynnistys vaaditaan, jotta muutokset tulevat voimaan](media/desktop-composite-models/composite-models_03.png)
 
 ## <a name="aggregations-based-on-relationships"></a>Yhteyksiin perustuvat koosteet
 
@@ -103,8 +93,10 @@ Ainoa tapaus, jossa *ristilähde*suhdetta pidetään vahvana, on silloin, jos mo
 
 Tietoa *ristilähde*koosteiden osumista, jotka eivät ole riipu suhteista, on alla olevassa Ryhmittelyperuste-sarakkeisiin perustuvista koosteista kertovassa osassa.
 
-### <a name="aggregation-table-is-hidden"></a>Koostetaulukko on piilotettu
-**Myyntikooste**-taulukko on piilotettu. Koostetaulukot on aina piilotettava tietojoukon käyttäjiltä. Käyttäjät ja kyselyt viittaavat tietotaulukkoon eivätkä koostetaulukkoon. Heidän ei tarvitse edes tietää koostetaulukon olemassaolosta.
+### <a name="aggregation-tables-are-not-addressable"></a>Koostetaulukoihin ei voi osoittaa
+Käyttäjät, joilla on tietojoukon vain luku -käyttö, eivät voi luoda kyselyn koostetaulukoita. Näin vältetään suojausongelmat käytettäessä RLS:ää. Käyttäjät ja kyselyt viittaavat tietotaulukkoon eivätkä koostetaulukkoon. Heidän ei tarvitse edes tietää koostetaulukon olemassaolosta.
+
+Tästä syystä **Myyntikooste**-taulukon tulee olla piilotettu. Jos se ei ole, Koosteiden hallinta -valintaikkuna määrittää sen piilotetuksi, kun napsautat Ota kaikki käyttöön -painiketta.
 
 ### <a name="manage-aggregations-dialog"></a>Koosteiden hallinta -valintaikkuna
 Seuraavaksi määritellään koosteet. Valitse **Myyntikooste**-taulukon **Koosteiden hallinta** -pikavalikko napsauttamalla taulukkoa hiiren kakkospainikkeella.
@@ -136,11 +128,7 @@ Valintaikkuna pakottaa seuraavat tärkeät vahvistukset:
 * Valitun tietosarakkeen tietotyypin on oltava sama kuin koostesarakkeessa lukuun ottamatta Määrä- ja Laske taulukon rivit -yhteenvetofunktioita. Määrä ja Laske taulukon rivit ovat käytettävissä vain kokonaislukukoostesarakkeissa, eivätkä ne edellytä vastaavaa tietotyyppiä.
 * Kolmen tai useamman taulukon kattavia ketjutettuja koosteita ei sallita. Ei ole esimerkiksi mahdollistaa määrittää koosteita **taulukosta A**, joka viittaa **taulukkoon B**, joka sisältää **taulukkoon C** viittaavia koosteita.
 * Kaksoiskappaleita koosteista, jossa kaksi merkintää käyttää samaa yhteenvetofunktiota ja viittaa samaan tietotaulukkoon tai -sarakkeeseen, ei sallita.
-
-**Koosteiden** julkisen esikatselun aikana myös seuraavat vahvistukset pakotetaan. Kyseiset vahvistukset on tarkoitus poistaa yleisesti saatavilla olevasta julkaisuversiosta.
-
-* Koosteita ei voi käyttää rivitason suojauksen (RLS) yhteydessä. *Julkisen esikatselun rajoitus.*
-* Tietotaulukon on oltava DirectQuery eikä tuonti. *Julkisen esikatselun rajoitus.*
+* Tietotaulukon on oltava DirectQuery eikä tuonti.
 
 Useimmat tällaiset vahvistukset pakotetaan poistamalla avattavan valikon arvot käytöstä ja näyttämällä ohjeteksti työkaluvihjeessä seuraavan kuvan mukaisesti.
 
@@ -149,6 +137,9 @@ Useimmat tällaiset vahvistukset pakotetaan poistamalla avattavan valikon arvot 
 ### <a name="group-by-columns"></a>Ryhmittelyperuste-sarakkeet
 
 Tässä esimerkissä kolme Ryhmittelyperuste-merkintää ovat valinnaisia. Ne eivät vaikuta koosteen toimintaan (lukuun ottamatta myöhemmässä kuvassa näkyvää DISTINCTCOUNT-esimerkkikyselyä). Ne ovat mukana pääasiassa luettavuuden vuoksi. Ilman Ryhmittelyperuste-merkintöjä koosteet saavat silti osumia yhteyksien perusteella. Tämä toiminta eroaa koosteiden käyttämisestä ilman yhteyksiä, joka käydään läpi myöhemmin tässä artikkelissa olevassa massadataa koskevassa esimerkissä.
+
+### <a name="inactive-relationships"></a>Passiiviset yhteydet
+Ryhmittelyä passiivisen yhteyden käyttämän viiteavainsarakkeen mukaan ja luottamista USERELATIONSHIP-toimintoon koostamisosumien saamiseksi ei tueta.
 
 ### <a name="detecting-whether-aggregations-are-hit-or-missed-by-queries"></a>Koosteista osumia tuottavien tai tuottamattomien kyselyiden tunnistaminen
 
@@ -191,6 +182,17 @@ Joissakin tapauksissa DISTINCTCOUNT-funktio voi hyöytä koosteista. Seuraava ky
 
 ![kyselyesimerkki](media/desktop-aggregations/aggregations-code_07.jpg)
 
+### <a name="rls"></a>RLS
+Rivitason suojauksen (RLS) lausekkeiden tulee suodattaa sekä koostetaulukko että tietotaulukko, jotta ne toimivat oikein. Seuraavassa esimerkissä **Paikkatieto**-taulukon RLS-lauseke toimii, koska Paikkatieto on yhteyden suodatuspuolella sekä **Myynti**-taulukossa että **Myyntikooste**-taulukossa. Kyselyissä, jotka osuvat koostetaulukkoon, ja niissä, jotka eivät osu siihen, RLS otetaan käyttöön.
+
+![koosteiden roolien hallinta](media/desktop-aggregations/manage-roles.jpg)
+
+**Tuote**-taulukossa oleva RLS-lauseke suodattaa vain **Myynti**-taulukon. Se ei suodata **Myyntikooste**-taulukkoa. Tätä ei suositella. Tällä roolilla tietojoukkoa käyttävien käyttäjien lähettämät kyselyt eivät hyödy koosteosumista. Koska koostetaulukko on tietotaulukossa olevien samojen tietojen toinen esitystapa, kyselyihin vastaaminen koostetaulukosta ei olisi turvallista, koska RLS-suodatinta ei voi käyttää.
+
+Itse **Myyntikooste**-taulukossa oleva RLS-lauseke suodattaa vain koostetaulukon, eikä lainkaan tietotaulukkoa. Tätä ei sallita.
+
+![koosteiden roolien hallinta](media/desktop-aggregations/filter-agg-error.jpg)
+
 ## <a name="aggregations-based-on-group-by-columns"></a>Ryhmittelyperuste-sarakkeisiin perustuvat koosteet 
 
 Hadoop-pohjaiset massadatatietomallit eroavat ominaisuuksiltaan dimensiomalleista. Suurten taulukkojen välisten liitosten välttämiseksi ne eivät usein perustu yhteyksiin. Sen sijaan dimensiomääritteet denormalisoidaan usein faktataulukoiksi. Tällaiset massadatatietomallit voidaan avata vuorovaikutteista analyysia varten ryhmittelyperuste-sarakkeisiin perustuvien **koosteiden** avulla.
@@ -225,6 +227,10 @@ Laske taulukon rivit -koosteita kannattaa käyttää erityisesti malleissa, jotk
 
 ![suodattimet-valintaikkuna](media/desktop-aggregations/aggregations_12.jpg)
 
+### <a name="rls"></a>RLS
+
+Samat RLS-säännöt, jotka on eritelty yllä yhteyksiin perustuville koosteille liittyen siihen, voiko RLS-lauseke suodattaa koostetaulukkoa, tietotaulukkoa tai molempia, koskevat myös ryhmittelysarakkeisiin perustuvia koosteita. Esimerkissä **Kuljettajan toiminta** -taulukossa käytettyä RLS-lauseketta voidaan käyttää suodattamaan **Kuljettajan toiminnan kooste** -taulukkoa, koska kaikki koostetaulukon ryhmittelysarakkeet sisältyvät tietotaulukkoon. RLS-suodatinta **Kuljettajan toiminnan kooste** -taulukossa ei kuitenkaan voi käyttää **Kuljettajan toiminta** -taulukossa, joten sitä ei sallita.
+
 ## <a name="aggregation-precedence"></a>Koosteen käsittelyjärjestys
 
 Koosteen käsittelyjärjestys sallii useiden koostetaulukoiden käsittelyn yhtenä alikyselynä.
@@ -232,8 +238,11 @@ Koosteen käsittelyjärjestys sallii useiden koostetaulukoiden käsittelyn yhten
 Katso seuraavaa esimerkkiä. Se on [yhdistelmämalli](desktop-composite-models.md), joka sisältää useita DirectQuery-lähteitä.
 
 * **Kuljettajan toiminnan kooste2** -tuontitaulukon rakeisuus on suurempi, koska ryhmittelyperuste-määritteitä on vähän ja niiden kardinaliteetti on pieni. Rivejä voi olla vain tuhansia, joten se mahtuu helposti välimuistiin. Näitä määritteitä käytetään tärkeässä johtajatason raporttinäkymässä, joten niihin viittaavien kyselyjen on oltava mahdollisimman nopeita.
-* **Kuljettajan toiminnan kooste** -taulukko on välitason koostetaulukko DirectQuery-tilassa. Se sisältää yli miljardi riviä ja on optimoitu lähteessä sarakesäilöindeksejä käyttämällä.
+* **Kuljettajan toiminnan kooste** -taulukko on välitason koostetaulukko DirectQuery-tilassa. Se sisältää yli miljardi riviä Azure SQL Data Warehousessa ja on optimoitu lähteessä sarakesäilöindeksejä käyttämällä.
 * **Kuljettajan toiminta** -taulukko on DirectQuery, ja se sisältää yli biljoona riviä IoT-tietoja massadatajärjestelmästä. Se käyttää porautumiskyselyjä yksittäisten IoT-lukemien näyttämiseen hallituissa suodatinkonteksteissa.
+
+> [!NOTE]
+> DirectQuery-koostetaulukoita, jotka käyttävät tietotaulukossa eri tietolähdettä, tuetaan vain, jos koostetaulukko on SQL Server-, Azure SQL- tai Azure SQL Data Warehouse -lähde.
 
 Tässä mallissa muistin käyttö on melko vähäistä, mutta malli avaa valtavan tietojoukon. Se edustaa tasapainotettua arkkitehtuuria, koska se jakaa kyselyn kuormituksen arkkitehtuurin osien välille käyttämällä niitä niiden vahvuuksien mukaan.
 
@@ -261,8 +270,6 @@ Seuraavassa taulukossa näkyvät **Myyntikooste**-taulukon **Koosteiden hallinta
 
 ![Myyntikooste-koostetaulukko](media/desktop-aggregations/aggregations-table_04.jpg)
 
-> Huomautus: Tämä malli edellyttää, että **Päivämäärä**-taulukko on DirectQuery-tilassa Koosteiden hallinta -valintaikkunan täyttämiseksi, koska kyseessä on tietotaulukko. Tämä on esikatselun rajoitus, joka on tarkoitus poistaa yleisesti saatavilla olevasta versiosta.
-
 ### <a name="query-examples"></a>Kyselyesimerkkejä
 
 Seuraava kysely tuottaa osumia koosteesta, koska koostetaulukko kattaa Kalenterikuukausi-arvon ja Luokan nimi on käytettävissä yksi moneen -yhteyksien kautta. **Myyntimääränä** käytetään Summa-koostetta.
@@ -285,9 +292,9 @@ Seuraava aikatietokysely ei tuota osumaa koosteessa, koska DATESYTD-funktio luo 
 
 Seuraavissa artikkeleissa kerrotaan lisää yhdistelmämalleista ja kuvataan myös DirectQuery yksityiskohtaisemmin.
 
-* [Yhdistelmämallit Power BI Desktopissa (esikatselu)](desktop-composite-models.md)
-* [Moni-moneen-yhteydet Power BI Desktopissa (esikatselu)](desktop-many-to-many-relationships.md)
-* [Tallennustilan tila Power BI Desktopissa (esikatselu)](desktop-storage-mode.md)
+* [Yhdistelmämallit Power BI Desktopissa](desktop-composite-models.md)
+* [Moni-moneen-yhteydet Power BI Desktopissa](desktop-many-to-many-relationships.md)
+* [Tallennustilan tila Power BI Desktopissa](desktop-storage-mode.md)
 
 DirectQuery-artikkeleita:
 

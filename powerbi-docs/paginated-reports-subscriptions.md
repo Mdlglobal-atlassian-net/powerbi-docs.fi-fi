@@ -8,13 +8,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 05/24/2019
-ms.openlocfilehash: 472606fcb3b823cdcb722c9d8d6421d0ec652d24
-ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.date: 07/15/2019
+ms.openlocfilehash: 2d48892450bbf6ab09a4bc88cd2be9a58bbdc863
+ms.sourcegitcommit: 9d13ef7a257b5006fca5f92acf5b611f5cd143a2
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "66839551"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "68307075"
 ---
 # <a name="subscribe-yourself-and-others-to-paginated-reports-in-the-power-bi-service"></a>Power BI -palvelun sivutettujen raporttien tilaaminen itsellesi ja muille 
 
@@ -26,15 +26,15 @@ Kun määrität tilauksia, valitset kuinka usein haluat saada sähköpostivieste
 
 - Toisin kuin raporttinäkymien tai Power BI -raporttien tilaukset, tilauksesi liite sisältää raportin täydelliset tulokset.  Tuetut liitetyypit ovat: PDF, PowerPoint-esitys (PPTX), Excel-työkirja (XLSX), Word-asiakirja (DOCX), CSV-tiedosto ja XML.
 
-- Sähköpostiviestin runko ei sisällä raportin esikatselukuvaa.  Suunnitteilla on, että raportin ensimmäinen sivu näytettäisiin valinnaisena kohteena. 
+- Voit lisätä raportin esikatselukuvan sähköpostiviestin runkoon.  Tämä on valinnainen toimenpide, ja se voi muuttaa hieman liitetyn raporttiasiakirjan ensimmäistä sivua valitun liitetiedostomuodon mukaan. 
 
 - Raportin liitteen enimmäiskoko on 25 Mt. 
 
 - Voit tilata muille käyttäjille sivutettuja raportteja, jotka muodostavat yhteyden mihin tahansa tällä hetkellä tuettuun tietolähteeseen, kuten Azure Analysis Services -palveluihin tai Power BI -tietojoukkoihin. Muista, että raportin liite kuvastaa käyttöoikeuksiesi mukaisia tietoja, aivan kuten SQL Server Reporting Services -palveluissakin. 
 
-- Raporttisivujen tilaukset on sidottu raportin nimeen.  
+- Sähköpostitilaukset voidaan lähettää joko valituilla nykyisillä parametreilla tai raportin oletusparametreilla.  Voit määrittää eri parametriarvoja kullekin raporttia varten luomallesi tilaukselle. 
 
-- Sähköpostitilaukset lähetetään käyttäen raportin oletusarvoisia parametriarvoja. 
+- Jos raportin tekijä on määrittänyt lausekepohjaisia parametreja (esimerkiksi oletusarvo on aina nykyinen päivämäärä), tilauksessa käytetään sitä oletusarvona. Voit muuttaa muita parametriarvoja ja valita nykyisten arvojen käyttämisen, mutta ellet nimenomaisesti muuta myös kyseistä arvoa, tilauksessa käytetään lausekepohjaista parametria.
 
 - Sivutettujen raporttien tapauksessa **Tietojen päivittämisen jälkeen** -vaihtoehto ei ole saatavilla. Saat aina taustalla olevan tietolähteen uusimmat arvot. 
 

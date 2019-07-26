@@ -7,15 +7,15 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: tutorial
-ms.date: 05/03/2018
+ms.date: 07/15/2019
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 1c77c272bf5c03ce7df0a5173d194a4c0583ccf2
-ms.sourcegitcommit: 3e72c6d564d930304886d51cdf12b8fc166aa33c
+ms.openlocfilehash: 54ef11b51fb02b6913b4d591967a140c5affc1b8
+ms.sourcegitcommit: 9d13ef7a257b5006fca5f92acf5b611f5cd143a2
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "67596624"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "68307388"
 ---
 # <a name="refresh-data-from-an-on-premises-sql-server-database"></a>Tietojen päivittäminen paikallisesta SQL Server -tietokannasta
 
@@ -36,7 +36,7 @@ Tässä opetusohjelmassa käyt läpi seuraavat vaiheet:
 - Jos et ole vielä rekisteröitynyt Power BI -käyttäjäksi, [rekisteröi maksuton Power BI -kokeilujakso](https://app.powerbi.com/signupredirect?pbi_source=web) ennen aloittamista.
 - [Asenna Power BI Desktop](https://powerbi.microsoft.com/desktop/) paikalliseen tietokoneeseen.
 - [Asenna SQL Server](/sql/database-engine/install-windows/install-sql-server) paikalliseen tietokoneeseen ja palauta [mallitietokanta varmuuskopiosta](https://github.com/Microsoft/sql-server-samples/releases/download/adventureworks/AdventureWorksDW2017.bak). Saat lisätietoja AdventureWorksista ohjeartikkelista [AdventureWorksin asennus ja määritys](/sql/samples/adventureworks-install-configure).
-- [Asenna paikallinen tietoyhdyskäytävä](service-gateway-install.md) samaan paikalliseen tietokoneeseen kuin SQL Server (hyötykäytössä ne asennettaisiin yleensä eri koneisiin).
+- [Asenna paikallinen tietoyhdyskäytävä](service-gateway-onprem.md) samaan paikalliseen tietokoneeseen kuin SQL Server (hyötykäytössä ne asennettaisiin yleensä eri koneisiin).
 
 > [!NOTE]
 > Jos et ole yhdyskäytävän järjestelmänvalvoja ja et halua asentaa yhdyskäytävää itse, ota yhteyttä organisaatiosi yhdyskäytäväjärjestelmänvalvojaan. Hän voi luoda tarvittavan tietolähdemääritelmän, jolla voit yhdistää tietojoukon SQL Server -tietokantaan.
@@ -202,6 +202,6 @@ Jos et halua enää käyttää mallitietoja, hylkää tietokanta SQL Server Mana
 
 Tässä opetusohjelmassa opit tuomaan tietoja paikallisesta SQL Server -tietokannasta Power BI -tietojoukkoon sekä päivittämään tämän tietojoukon aikataulun mukaisesti tai manuaalisesti pitääksesi tätä tietojoukkoa käyttävät raportit ja koontinäytöt ajan tasalla Power BI:ssä. Nyt voit oppia lisää tietoyhdyskäytävien ja tietolähteiden hallinnasta Power BI:ssä. Sinun kannattaa tutustua ehkä myös Power BI:n tietojen päivittämistä käsittelevään käsitteelliseen artikkeliin.
 
-- [Power BI:n paikallisen yhdyskäytävän hallinta](service-gateway-manage.md)
+- [Paikallisen tietoyhdyskäytävän hallitseminen](/data-integration/gateway/service-gateway-manage)
 - [Tietolähteen hallinta – tuonti ja ajoitettu päivitys](service-gateway-enterprise-manage-scheduled-refresh.md)
 - [Tietojen päivittäminen Power BI:ssä](refresh-data.md)

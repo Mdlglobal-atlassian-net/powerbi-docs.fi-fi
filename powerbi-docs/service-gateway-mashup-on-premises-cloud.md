@@ -7,24 +7,32 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: conceptual
-ms.date: 06/06/2018
+ms.date: 07/15/2019
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 7b863af882604be8c2c59fd21f26cd8441f9e170
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 39f5a01a396e45207777b1a5e58e73808ddf3f88
+ms.sourcegitcommit: a58461fe7dfa65c751490b52de5fc73f8e69a17f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54272646"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68352185"
 ---
 # <a name="merge-or-append-on-premises-and-cloud-data-sources"></a>Paikallisten ja pilvipalvelutietolähteiden yhdistäminen ja liittäminen
 
-Paikallisen tietoyhdyskäytävän avulla voit yhdistää tai liittää paikallisia ja pilvipalvelutietolähteitä samassa kyselyssä. Tästä on hyötyä, kun haluat koostaa tietoja useista lähteistä käyttämättä erillisiä kyselyjä.
+[!INCLUDE [gateway-rewrite](includes/gateway-rewrite.md)]
+
+Paikallisen tietoyhdyskäytävän avulla voit yhdistää tai liittää paikallisia ja pilvipalvelutietolähteitä samassa kyselyssä. Tästä on hyötyä, kun haluat yhdistää tietoja useista lähteistä käyttämättä erillisiä kyselyjä.
+
+>[!NOTE]
+>Tämä artikkeli koskee vain tietojoukkoja, joihin on yhdistetty sekä pilvitietolähteitä että paikallisia tietolähteitä yksittäiseen kyselyyn. Tietojoukoissa, joissa on erillisiä kyselyitä (toinen muodostaa yhteyden paikalliseen ja toinen pilvitietolähteeseen), pilvitietolähdettä käyttävää kyselyä ei suoriteta yhdyskäytävän avulla.
 
 ## <a name="prerequisites"></a>Edellytykset
 
-- [Yhdyskäytävä on asennettu](service-gateway-install.md) paikalliseen tietokoneeseen.
+- [Yhdyskäytävä on asennettu](/data-integration/gateway/service-gateway-install) paikalliseen tietokoneeseen.
 - Power BI Desktop-tiedosto, joka sisältää kyselyjä, jotka yhdistävät paikallisia ja pilvipalvelutietolähteitä.
+
+>[!NOTE]
+>Minkä tahansa pilvitietolähteen käyttäminen edellyttää sen varmistamista, että yhdyskäytävä voi käyttää kyseisiä tietolähteitä.
 
 1. Valitse ![Asetukset-rataskuvake](media/service-gateway-mashup-on-premises-cloud/icon-gear.png) >  Power BI -palvelun oikeasta yläkulmasta ja valitse sitten **Hallitse yhdyskäytäviä**.
 
@@ -46,10 +54,11 @@ Paikallisen tietoyhdyskäytävän avulla voit yhdistää tai liittää paikallis
 
    - Kohdasta **Tietolähteen tunnistetiedot**, muokkaa tarvittaessa tietolähteen tunnistetietoja.
 
+    Varmista yksityisyystasojen asianmukainen määritys sekä pilvitietolähteissä että paikallisissa tietolähteissä, jotta liitoksia käsitellään turvallisesti.
+
      ![Tietojoukon asetukset](media/service-gateway-mashup-on-premises-cloud/dataset-settings.png)
 
 7. Kun pilvipalvelun tunnistetiedot on määritetty, voit päivittää tietojoukon käyttämällä **Päivitä nyt** -vaihtoehtoa tai ajoittaa ajoittaisen päivityksen.
-
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 

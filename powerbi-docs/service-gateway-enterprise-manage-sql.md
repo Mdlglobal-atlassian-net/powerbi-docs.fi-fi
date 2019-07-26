@@ -7,122 +7,79 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: conceptual
-ms.date: 01/24/2018
+ms.date: 07/15/2019
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 6771e2da33448fe3aa54a0184a220437ffb54fce
-ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
+ms.openlocfilehash: 7d9e670d2567181a0dc99c23997ac3bc2d35f3c9
+ms.sourcegitcommit: 277fadf523e2555004f074ec36054bbddec407f8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56215852"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68271574"
 ---
 # <a name="manage-your-data-source---sql-server"></a>Tietolähteen hallinta – SQL Server
-Kun paikallinen tietoyhdyskäytävä on asennettu, sinun on lisättävä tietolähteitä, joita voidaan käyttää kyseisen yhdyskäytävän kanssa. Tässä artikkelissa tarkastellaan yhdyskäytävien ja tietolähteiden käsittelyä. Voit käyttää SQL Server-tietolähdettä joko ajoitettua päivitystä tai DirectQuerya varten.
 
-## <a name="download-and-install-the-gateway"></a>Yhdyskäytävän lataaminen ja asentaminen
-Voit ladata yhdyskäytävän Power BI -palvelusta. Valitse **Lataukset** > **Tietoyhdyskäytävä** tai siirry [yhdyskäytävän lataussivulle](https://go.microsoft.com/fwlink/?LinkId=698861).
+[!INCLUDE [gateway-rewrite](includes/gateway-rewrite.md)]
 
-![](media/service-gateway-enterprise-manage-sql/powerbi-download-data-gateway.png)
-
-## <a name="add-a-gateway"></a>Yhdyskäytävän lisääminen
-Voit lisätä yhdyskäytävän yksinkertaisesti [lataamalla](https://go.microsoft.com/fwlink/?LinkId=698861) ja asentamalla yhdyskäytävän ympäristössäsi olevalle palvelimelle. Kun olet asentanut yhdyskäytävän, se näkyy yhdyskäytävien luettelossa **yhdyskäytävien hallinta** -kohdassa.
-
-> [!NOTE]
-> **Hallinnoi yhdyskäytäviä** -valikkoa ei näytetä, jos et ole yhdenkään yhdyskäytävän järjestelmävalvoja. Näin tapahtuu, kun sinut lisätään järjestelmänvalvojana yhdyskäytävään tai asennat ja määrität yhdyskäytävän itse.
-> 
-> 
-
-## <a name="remove-a-gateway"></a>Yhdyskäytävän poistaminen
-Yhdyskäytävän poistaminen poistaa myös kaikki kyseisen yhdyskäytävän alaiset tietolähteet.  Tämä rikkoo myös kaikki koontinäytöt ja raportit, jotka ovat riippuvaisia kyseisistä tietolähteistä.
-
-1. Valitse hammaspyöräkuvake ![](media/service-gateway-enterprise-manage-sql/pbi_gearicon.png) oikeasta yläkulmasta > **Yhdyskäytävien hallinta**.
-2. Yhdyskäytävä > **Poista**
-   
-   ![](media/service-gateway-enterprise-manage-sql/datasourcesettings7.png)
+Kun [paikallinen tietoyhdyskäytävä on asennettu](/data-integration/gateway/service-gateway-install), sinun on [lisättävä tietolähteitä](service-gateway-data-sources.md#add-a-data-source), joita voidaan käyttää kyseisen yhdyskäytävän kanssa. Tässä artikkelissa perehdytään siihen, miten käsitellään yhdyskäytäviä ja SQL Server -tietolähteitä, joita käytetään joko ajoitetussa päivityksessä tai DirectQueryssa.
 
 ## <a name="add-a-data-source"></a>Tietolähteen lisääminen
-Voit lisätä tietolähteen joko valitsemalla yhdyskäytävän ja napauttamalla **Lisää tietolähde** -kohtaa tai yhdyskäytävä > **Lisää tietolähde** -valinnasta.
 
-![](media/service-gateway-enterprise-manage-sql/datasourcesettings1.png)
+Lisätietoja tietolähteen lisäämisestä on artikkelissa [Tietolähteen lisääminen](service-gateway-data-sources.md#add-a-data-source).
 
-Voit seuraavaksi valita **Tietolähdetyypin** listasta.
-
-![](media/service-gateway-enterprise-manage-sql/datasourcesettings2.png)
+![Valitse SQL Serverin tietolähde](media/service-gateway-enterprise-manage-sql/datasourcesettings2.png)
 
 > [!NOTE]
 > DirectQuery käytettäessä yhdyskäytävä tukee vain versiota **SQL Server 2012 SP1** ja sitä uudempia.
-> 
-> 
 
-Täytä sitten tietolähteen tiedot, jotka sisältävät **Palvelimen** ja **Tietokannan**.  
+Täytä sitten tietolähteen tiedot, jotka sisältävät **palvelimen** ja **tietokannan**.  
 
-Sinun on myös valittava **todennusmenetelmä**.  Tämä voi olla joko **Windows** tai **Basic**.  Haluat ehkä valita vaihtoehdon **Basic**, jos aiot käyttää SQL-todennusta Windows-todennuksen sijaan. Anna tunnistetiedot, joita käytetään tälle tietolähteelle.
+Sinun on myös valittava **todennusmenetelmä**. Tämä voi olla joko **Windows** tai **Basic**. Haluat ehkä valita vaihtoehdon **Perus**, jos aiot käyttää SQL-todennusta Windows-todennuksen sijaan. Anna tunnistetiedot, joita käytetään tälle tietolähteelle.
 
 > [!NOTE]
-> Kaikki kyselyt tietolähteelle suoritetaan käyttämällä näitä tunnistetietoja, ellei Kerberos-kertakirjautumista (SSO) ole määritetty ja käytössä tietolähteelle. SSO:n avulla tietojoukkojen tuonnissa käytetään tallennettuja tunnistetietoja, mutta DirectQuery-tietojoukkoja käytetään nykyisen Power BI -käyttäjän kyselyihin SSO:n avulla. Lisätietoja saa artikkelista Paikallisen tietojen yhdyskäytävä siitä, miten [tunnistetiedot](service-gateway-onprem.md#credentials) tallennetaan, tai artikkelista, jossa kuvataan, miten [käyttää Kerberos for SSO:a (kertakirjautuminen) Power BI:stä paikalliseen tietolähteiden ympäristöön](service-gateway-sso-kerberos.md). 
-> 
-> 
+> Kaikki kyselyt tietolähteelle suoritetaan käyttämällä näitä tunnistetietoja, ellei Kerberos-kertakirjautumista (SSO) ole määritetty ja käytössä tietolähteelle. SSO:n avulla tietojoukkojen tuonnissa käytetään tallennettuja tunnistetietoja, mutta DirectQuery-tietojoukkoja käytetään nykyisen Power BI -käyttäjän kyselyihin SSO:n avulla. Lisätietoja tunnistetietojen tallentamisesta on artikkelissa [Salattu tunnistetietojen tallentaminen pilvipalveluun](service-gateway-data-sources.md#storing-encrypted-credentials-in-the-cloud) tai artikkelissa, jossa kuvataan, miten [käyttää Kerberos for SSO:a (kertakirjautuminen) Power BI:stä paikalliseen tietolähteiden ympäristöön](service-gateway-sso-kerberos.md).
 
-![](media/service-gateway-enterprise-manage-sql/datasourcesettings3.png)
+![Tietolähdeasetusten täyttäminen](media/service-gateway-enterprise-manage-sql/datasourcesettings3.png)
 
-Napauta **Lisää**-painiketta, kun kaikki kohdat on täytetty.   Voit nyt käyttää tätä tietolähdettä ajoitettuihin päivityksiin tai DirectQueryyn paikallista SQL Serveriä vastaan. *Yhteyden muodostaminen onnistui* -teksti tulee näkyviin, jos yhteys muodostettiin onnistuneesti.
+Valitse **Lisää**, kun kaikki kohdat on täytetty. Voit nyt käyttää tätä tietolähdettä ajoitettuihin päivityksiin tai DirectQueryyn paikallista SQL Serveriä vastaan. *Yhteyden muodostaminen onnistui* -teksti tulee näkyviin, jos yhteys muodostettiin onnistuneesti.
 
-![](media/service-gateway-enterprise-manage-sql/datasourcesettings4.png)
+![Yhteyden tilan näyttäminen](media/service-gateway-enterprise-manage-sql/datasourcesettings4.png)
 
 ### <a name="advanced-settings"></a>Lisäasetukset
-Voit määrittää tietolähteellesi tietosuojatason. Tällä hallinnoidaan sitä, miten tietoja voidaan yhdistää. Tätä käytetään vain ajoitetussa päivityksessä. Tämä ei koske DirectQuerya. [Lue lisää](https://support.office.com/article/Privacy-levels-Power-Query-CC3EDE4D-359E-4B28-BC72-9BEE7900B540)
 
-![](media/service-gateway-enterprise-manage-sql/datasourcesettings9.png)
+Vaihtoehtoisesti voit määrittää tietolähteellesi yksityisyystason. Tällä hallinnoidaan sitä, miten tietoja voidaan yhdistää. Tätä käytetään vain ajoitetussa päivityksessä. Tämä ei koske DirectQuerya. Lisätietoja tietolähteen yksityisyystasoista on artikkelissa [Yksityisyystasot (Power Query)](https://support.office.com/article/Privacy-levels-Power-Query-CC3EDE4D-359E-4B28-BC72-9BEE7900B540).
 
-## <a name="remove-a-data-source"></a>Tietolähteen poistaminen
-Tietolähteen poistaminen rikkoo kyseisestä tietolähteestä riippuvaiset koontinäytöt tai raportit.  
-
-Poistaaksesi tietolähteen valitse Tietolähde > **Poista**.
-
-![](media/service-gateway-enterprise-manage-sql/datasourcesettings6.png)
-
-## <a name="manage-administrators"></a>Järjestelmävalvojien hallinta
-Yhdyskäytävän järjestelmänvalvojat-välilehdeltä voit lisätä ja poistaa käyttäjiä (tai käyttöoikeusryhmiä), jotka voivat hallita yhdyskäytävää.
-
-![](media/service-gateway-enterprise-manage-sql/datasourcesettings8.png)
-
-## <a name="manage-users"></a>Käyttäjien hallinta
-Tietolähteen käyttäjät -välilehdellä voit lisätä ja poistaa käyttäjiä tai käyttöoikeusryhmiä, jotka voivat käyttää kyseistä tietolähdettä.
-
-> [!NOTE]
-> Käyttäjälista hallinnoi pelkästään sitä, kuka pystyy julkaisemaan raportteja. Raportin omistajat voit luoda raporttinäkymiä tai sisältöpaketteja ja jakaa niitä muiden käyttäjien kanssa.
-> 
-> 
-
-![](media/service-gateway-enterprise-manage-sql/datasourcesettings5.png)
+![Yksityisyystason määrittäminen](media/service-gateway-enterprise-manage-sql/datasourcesettings9.png)
 
 ## <a name="using-the-data-source"></a>Tietolähteen käyttö
-Kun tietolähde on luotu, se on käyttäjien saatavilla joko DirectQuery -yhteyksien tai ajoitetun päivityksen välityksellä.
+
+Kun tietolähde on luotu, se on käyttäjien saatavilla joko DirectQuery-yhteyksien tai ajoitetun päivityksen välityksellä.
 
 > [!NOTE]
 > Palvelimen ja tietokannan nimien pitää täsmätä paikallisen tietoyhdyskäytävän Power BI Desktopin ja tietolähteen kanssa.
-> 
-> 
 
-Yhdyskäytävän tietojoukon ja tietolähteen välinen linkki perustuu palvelimen ja tietokannan nimiin. Näiden on täsmättävä. Jos esimerkiksi **Power BI Desktopissa** palvelimen nimelle annetaan IP-osoite, samaa IP-osoitetta tulee käyttää myös yhdyskäytävän kokoonpanon tietolähteessä. Jos käytät Power BI Desktopissa *PALVELINTA\ ESIINTYMÄÄ* on yhdyskäytävälle määritetyn tietolähteen sisällä käytettävä sitä samaa.
+Yhdyskäytävän tietojoukon ja tietolähteen välinen linkki perustuu palvelimen ja tietokannan nimiin. Näiden on täsmättävä. Jos esimerkiksi **Power BI Desktopissa** palvelimen nimelle annetaan IP-osoite, samaa IP-osoitetta tulee käyttää myös yhdyskäytävän kokoonpanon tietolähteessä. Jos käytät Power BI Desktopissa nimenä *PALVELIN\ESIINTYMÄ*, yhdyskäytävälle määritetyn tietolähteen sisällä on käytettävä samaa nimeä.
 
 Tämä koskee sekä DirectQuerya että ajoitettuja päivityksiä.
 
 ### <a name="using-the-data-source-with-directquery-connections"></a>Tietolähteen käyttö DirectQueryssa
-Palvelimen ja tietokannan nimen on täsmättävä Power **BI Desktopissa** ja yhdyskäytävälle määritetyssä tietolähteessä. Varmista myös, että käyttäjä on mainittu tietolähteen **Käyttäjät**-välilehdellä, jotta voit julkaista  DirectQuery-tietojoukkoja. DirectQuery-valinta tapahtuu Power BI Desktopissa, kun tuot tietoja ensimmäisen kerran. [Lue lisää](desktop-use-directquery.md)
+
+Palvelimen ja tietokannan nimen on täsmättävä **Power BI Desktopissa** ja yhdyskäytävälle määritetyssä tietolähteessä. Varmista myös, että käyttäjä on mainittu tietolähteen **Käyttäjät**-välilehdellä, jotta voit julkaista DirectQuery-tietojoukkoja. DirectQuery-valinta tapahtuu Power BI Desktopissa, kun tuot tietoja ensimmäisen kerran. Lisätietoja DirectQueryn käyttämisestä on artikkelissa [DirectQueryn käyttö Power BI Desktopissa](desktop-use-directquery.md).
 
 Raporttisi alkaa toimia, kun olet julkaissut tietojoukot Power BI Desktopissa tai **Nouda tiedot** -ominaisuudella. Yhdyskäytävässä luodun tietolähteen luomisen jälkeen voi kestää useita minuutteja, ennen kuin yhteyttä voidaan käyttää.
 
 ### <a name="using-the-data-source-with-scheduled-refresh"></a>Tietolähteen käyttö ajoitetun päivityksen kanssa
+
 Jos sinut on lisätty yhdyskäytävän sisällä määritellyn tietolähteen **Käyttäjät**-välilehdelle ja jos palvelimen ja tietokannan nimet täsmäävät, näet yhdyskäytävän yhtenä, ajoitetun päivityksen kanssa käytettävänä vaihtoehtona.
 
-![](media/service-gateway-enterprise-manage-sql/powerbi-gateway-enterprise-schedule-refresh.png)
+![Käyttäjien näyttäminen](media/service-gateway-enterprise-manage-sql/powerbi-gateway-enterprise-schedule-refresh.png)
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
-* [Paikallinen tietoyhdyskäytävä](service-gateway-onprem.md)  
-* [Paikallinen tietoyhdyskäytävä – tarkat tiedot](service-gateway-onprem-indepth.md)  
-* [Paikallisen tietoyhdyskäytävän vianmääritys](service-gateway-onprem-tshoot.md)
-* [Kerberoksen käyttäminen SSO:ta (kertakirjautumista) varten Power BI:stä paikallisiin tietolähteisiin](service-gateway-sso-kerberos.md). 
-* Onko sinulla muuta kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
+
+* [Yhteyden muodostaminen paikallisiin tietoihin SQL Serverissä](service-gateway-sql-tutorial.md)
+* [Paikallisen tietoyhdyskäytävän vianmääritys](/data-integration/gateway/service-gateway-tshoot)
+* [Yhdyskäytävien vianmääritys – Power BI](service-gateway-onprem-tshoot.md)
+* [Käytä Kerberosta SSO:ta varten (kertakirjautuminen) Power BI:stä paikallisiin tietolähteisiin](service-gateway-sso-kerberos.md)
+
+Onko sinulla muuta kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
 

@@ -8,15 +8,41 @@ ms.reviewer: maghan
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
-ms.date: 03/10/2019
-ms.openlocfilehash: cf9a613e82b4f5b7ce9cc67f5b920760d01ccbf7
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.date: 07/16/2019
+ms.openlocfilehash: ea1ae18f877793da9ac47023c236ba8a24f78ccf
+ms.sourcegitcommit: 277fadf523e2555004f074ec36054bbddec407f8
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61342697"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68271199"
 ---
 # <a name="guidelines-for-power-bi-visuals"></a>Power BI -visualisointien ohjeet
+Varmista ennen kuin [julkaiset](https://docs.microsoft.com/power-bi/developer/office-store) visualisoinnin AppSourcessa muiden käytettäväksi, että noudatat ohjeita, jotta käyttäjäsi saavat erinomaisen käyttökokemuksen. 
+
+## <a name="context-menu"></a>Pikavalikko
+Pikavalikko on hiiren kakkospainikkeella avautuva valikko, joka tulee näkyviin, kun hiiren osoitin on visualisoinnin päällä.
+Kaikissa Power BI:n visualisoinneissa tulee ottaa pikavalikko käyttöön, jotta käyttökokemus on yhtenäinen. Lue [tästä artikkelista](https://github.com/Microsoft/PowerBI-visuals/blob/gh-pages/tutorials/building-bar-chart/adding-context-menu-to-the-bar.md) pikavalikon lisäämisohjeet.
+
+
+## <a name="logo-guidelines"></a>Logo-ohjeet
+
+Tässä osiossa annetaan ohjeet visualisoinnin logojen ja logotyyppien lisäämiseen.
+
+> [!IMPORTANT]
+> Logot sallitaan *ainoastaan muokkaustilassa*. Logoja *ei voi* näyttää tarkastelutilassa.
+
+![Määritelmät](media/guidelines-powerbi-visuals/definitions.png)
+
+![Huomioitavia seikkoja](media/guidelines-powerbi-visuals/things-to-keep-in-mind.png)
+
+![Mitä kannattaa välttää](media/guidelines-powerbi-visuals/things-to-avoid.png)
+
+![Koko ja muotoilu](media/guidelines-powerbi-visuals/size-and-format.png)
+
+![Reunukset ja koko](media/guidelines-powerbi-visuals/margins-and-sizes.png)
+
+![Muokkaustila](media/guidelines-powerbi-visuals/logos-in-edit-mode.png)
+
 
 ## <a name="guidelines-for-power-bi-visuals-with-additional-purchases"></a>Ohjeet Power BI -visualisointeihin, jotka sisältävät lisäostoja
 
@@ -36,31 +62,13 @@ Kehittäjät lataavat ostoja sisältävät visualisointinsa AppSourceen myyjien 
 
 ## <a name="what-is-a-power-bi-visual-with-iap-features"></a>Mikä on sovelluskohtaisia ostoja sisältävä Power BI -visualisointi?
 
-Sovelluskohtaisia ostoja sisältävä visualisointi on **ilmainen** visualisointi, jossa on **maksuttomia ominaisuuksia**. Siihen liittyy myös lisäominaisuuksia, joiden käyttäminen saattaa vaatia lisämaksuja. Kehittäjien on ilmoitettava käyttäjille visualisoinnin kuvauksessa siitä, minkä ominaisuuksien käyttö edellyttää lisäostoja. Microsoft ei tällä hetkellä tarjoa omia ohjelmointirajapintoja, jotka tukisivat ostoja sovelluksissa ja apuohjelmissa.
+Sovelluskohtaisia ostoja sisältävä visualisointi on *ilmainen* visualisointi, jossa on *maksuttomia ominaisuuksia*. Siihen liittyy myös lisäominaisuuksia, joiden käyttäminen saattaa vaatia lisämaksuja. Kehittäjien on ilmoitettava käyttäjille visualisoinnin kuvauksessa siitä, minkä ominaisuuksien käyttö edellyttää lisäostoja. Microsoft ei tällä hetkellä tarjoa omia ohjelmointirajapintoja, jotka tukisivat ostoja sovelluksissa ja apuohjelmissa.
 
 Kehittäjät voivat käyttää ostoihin haluamaansa kolmannen osapuolen maksujärjestelmää. Lisätietoja on [Microsoftin myymälä-käytännössä](https://docs.microsoft.com/office/dev/store/validation-policies#2-apps-or-add-ins-can-display-certain-ads).
 
 > [!NOTE]
 > Vesileimoja ei sallita ilmaisissa ominaisuuksissa eikä ilmaisissa visualisoinneissa. Vesileimoja voi käyttää ainoastaan maksullisissa ominaisuuksissa, joita käytetään ilman kelvollista käyttöoikeutta. Suosittelemme näyttämään kaikki käyttöoikeustiedot ponnahdusikkunassa, jos maksullisia lisäominaisuuksia käytetään ilman kelvollista käyttöoikeutta.  
 
-## <a name="logo-guidelines"></a>Logo-ohjeet
-
-Tässä osiossa annetaan ohjeet visualisoinnin logojen ja logotyyppien lisäämiseen.
-
-> [!IMPORTANT]
-> Logot sallitaan **ainoastaan muokkaustilassa**. Logoja **ei voi** näyttää tarkastelutilassa.
-
-![Määritelmät](media/guidelines-powerbi-visuals/definitions.png)
-
-![Huomioitavia seikkoja](media/guidelines-powerbi-visuals/things-to-keep-in-mind.png)
-
-![Mitä kannattaa välttää](media/guidelines-powerbi-visuals/things-to-avoid.png)
-
-![Koko ja muotoilu](media/guidelines-powerbi-visuals/size-and-format.png)
-
-![Reunukset ja koko](media/guidelines-powerbi-visuals/margins-and-sizes.png)
-
-![Muokkaustila](media/guidelines-powerbi-visuals/logos-in-edit-mode.png)
 
 ## <a name="best-practices"></a>Parhaat käytännöt
 
