@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/07/2019
 ms.author: davidi
 LocalizationGroup: Conceptual
-ms.openlocfilehash: 79b8ae80413cc54b065d12bf36ccb1651a670812
-ms.sourcegitcommit: ec5b6a9f87bc098a85c0f4607ca7f6e2287df1f5
+ms.openlocfilehash: 7500b5b5ff7f3eabde730b527c16fb6fe2570b89
+ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
 ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66051589"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68523538"
 ---
 # <a name="distribute-power-bi-content-to-external-guest-users-using-azure-active-directory-b2b"></a>Power BI -sisällön jakaminen ulkoisille vieraskäyttäjille Azure Active Directory B2B:n avulla
 
@@ -265,7 +265,7 @@ Power BI:n integrointi Azure AD B2B:hen antaa Contosolle saumattoman ja vaivatto
     ![Kutsulinkki](media/whitepaper-azure-b2b-power-bi/whitepaper-azure-b2b-power-bi_17.png)
 
 
-    Kun vierailevien käyttäjien napsauttavat linkkiä, he voivat käyttää-Contoso Azure AD-vuokraajan sisältöä.
+    Kun vieras käyttäjät napsauttavat linkkiä, he voivat käyttää contoso Azure AD-vuokra ajan sisältöä.
 
     > [!NOTE]
     > Kutsuviestin asettelua voi muuttaa käyttämällä Azure AD:n Tuotemukautus-ominaisuutta [tässä](https://docs.microsoft.com/azure/active-directory/active-directory-b2b-invitation-email) kuvatulla tavalla.
@@ -275,7 +275,7 @@ Power BI:n integrointi Azure AD B2B:hen antaa Contosolle saumattoman ja vaivatto
 
     Entä jos Contoso ei tiedä kaikkia kutsuttavia vieraskäyttäjiä etukäteen? Tai entä jos BI-portaalin luonut Contoson analyytikko haluaa itse jakaa sisältöä vieraskäyttäjille? Tuemme myös tätä skenaariota Power BI:ssä ad hoc -kutsujen muodossa.
 
-    Analyytikon vain lisätä Ulkoiset käyttäjät-sovelluksen käyttö-luetteloon ne ovat julkaisemisen yhteydessä. Uusien käyttäjien noutaa kutsua ja kun he hyväksyvät sen, he ohjataan automaattisesti Power BI-sisältöä.
+    Analyytikko voi vain lisätä ulkoiset käyttäjät sovelluksen käyttö oikeus listaan, kun he julkaisevat sitä. Vieras käyttäjät saavat kutsun, ja kun he hyväksyvät sen, heidät ohjataan automaattisesti Power BI sisältöön.
 
     ![Lisää ulkoinen käyttäjä](media/whitepaper-azure-b2b-power-bi/whitepaper-azure-b2b-power-bi_18.png)
 
@@ -330,14 +330,14 @@ Power BI:n integrointi Azure AD B2B:n kanssa toimii kaikkien yrityssähköpostio
 ![Integrointivuokaavio](media/whitepaper-azure-b2b-power-bi/whitepaper-azure-b2b-power-bi_23.png)
 
 
-On tärkeää huomata, että Azure AD -tiliä käytetään tai se luodaan ulkopuolisen osapuolen Azure AD:ssä. Tämän vuoksi Lucyn on mahdollista käyttää omaa käyttäjänimeään ja salasanaansa ja hänen tunnistetietonsa lakkaavat automaattisesti toimimasta muissa vuokraajissa aina, kun hän lähtee Azure AD:tä käyttävästä yrityksestä.
+On tärkeää tunnistaa, että Azure AD-tiliä käytetään tai luodaan ulkoisen osapuolen Azure AD:ssä, minkä ansiosta Lucy voi käyttää omaa käyttäjä nimeä ja Sala sanaa, ja hänen tunniste tietonsa lakkaavat automaattisesti toimimasta muissa vuokralaisina aina kun Lucy lähtee yrityksestä, kun hänen organisaationsa käyttää myös Azure ADmia.
 
 ## <a name="licensing"></a>Käyttöoikeudet
 
 Contoso voi valita yhden kolmesta menetelmästä, kun se antaa Power BI -sisältönsä käyttöoikeuksia toimittajiensa ja kumppaniorganisaatioidensa vieraskäyttäjille.
 
 > [!NOTE]
-> _Azure AD B2B:n ilmainen taso riittää Power BI:n käyttöön Azure AD B2B:n kanssa. Jotkin kehittyneet Azure AD B2B -ominaisuudet, kuten dynaamiset ryhmät, edellyttävät lisää käyttöoikeuksia. Lue lisätietoja Azure AD B2B -dokumentaatiossa:_ [_https://docs.microsoft.com/azure/active-directory/b2b/licensing-guidance_](https://docs.microsoft.com/azure/active-directory/b2b/licensing-guidance)
+> _Azure AD B2B:n ilmainen taso riittää Power BI:n käyttöön Azure AD B2B:n kanssa. Jotkin kehittyneet Azure AD B2B -ominaisuudet, kuten dynaamiset ryhmät, edellyttävät lisää käyttöoikeuksia. Lue lisätietoja Azure AD B2B -dokumentaatiossa:_ [ _https://docs.microsoft.com/azure/active-directory/b2b/licensing-guidance_ ](https://docs.microsoft.com/azure/active-directory/b2b/licensing-guidance)
 
 ### <a name="approach-1-contoso-uses-power-bi-premium"></a>Menetelmä 1: Contoso käyttää Power BI Premiumia
 
@@ -362,7 +362,7 @@ Tässä lähestymistavassa Contoso määrittää pro-käyttöoikeudet kumppanior
 
 ### <a name="approach-3-guest-users-bring-their-own-power-bi-pro-license"></a>Menetelmä 3: Vieraskäyttäjät tuovat Power BI Pro -käyttöoikeuden mukanaan
 
-Tässä menetelmässä Toimittaja1 määrittää Power BI Pro -käyttöoikeuden Lucylle. Käyttöoikeus oikeuttaa hänet käyttämään Contoson Power BI -sovellusta. Koska Lucy voi käyttää oman organisaationsa pro-käyttöoikeutta käyttäessään ulkoista Power BI -ympäristöä, tätä menetelmää kutsutaan joskus _tuo oman käyttöoikeus_ -malliksi (bring your own license, byol-käyttöoikeusmalli). Jos molemmat organisaatiot käyttävät Power BI:tä, analytiikkaratkaisulle tarjoutuu hyödyllisiä käyttöoikeuksia ja samalla minimoidaan kulut, joita koituu käyttöoikeuksien määrittämisestä ulkopuolisille käyttäjille.
+Tässä menetelmässä Toimittaja1 määrittää Power BI Pro -käyttöoikeuden Lucylle. He voivat sitten käyttää Contoson Power BI-sovellusta tällä käyttö oikeudella. Koska Lucy voi käyttää omaa organisaationsa Pro-käyttö oikeutta, kun hän käyttää ulkoista Power BI-ympäristöä, tähän lähestymis tapaan viitataan toisinaan nimellä _Vie oma käyttö oikeutesi_ (byol). Jos molemmat organisaatiot käyttävät Power BI:tä, analytiikkaratkaisulle tarjoutuu hyödyllisiä käyttöoikeuksia ja samalla minimoidaan kulut, joita koituu käyttöoikeuksien määrittämisestä ulkopuolisille käyttäjille.
 
 > [!NOTE]
 > _Toimittaja1:n Lucylle antama pro-käyttöoikeus koskee mitä tahansa Power BI-vuokraajaa, jossa Lucy on vieraskäyttäjänä. Pro-käyttöoikeudet antavat käyttöoikeuden sisältöön, jota ei ole Power BI Premium -kapasiteetissa. Ulkoiset käyttäjät, joilla on pro-käyttöoikeus, voivat oletusarvoisesti saada vain kulutukseen oikeuttavan käyttökokemuksen. Tämä voidaan muuttaa käyttämällä myöhemmin tämän asiakirjan osiossa_  _Ulkoisten käyttäjien sisällönmuokkauksen ja -hallinnan käyttöönotto Power BI:ssä_  _kuvattua lähestymistapaa._
@@ -408,7 +408,7 @@ Kun Azure AD noutaa ratkaisun, Contoso näkee nimen ilmestyvän ikkunaan valmiin
 
 ![Näytä roolit](media/whitepaper-azure-b2b-power-bi/whitepaper-azure-b2b-power-bi_32.png)
 
-Nyt kun tämä käyttäjä avaa hänelle jaetun sovelluksen, hän näkee vain Euroopan tietoja sisältävän raportin:
+Nyt kun tämä käyttäjä avaa sovelluksen, joka jaettiin heidän kanssaan, hän näkee vain raportin, jossa on tietoja Euro opasta:
 
 ![Sisällön tarkasteleminen](media/whitepaper-azure-b2b-power-bi/whitepaper-azure-b2b-power-bi_33.png)
 
@@ -438,7 +438,7 @@ Contoso luo myös roolin ”AllRole” sisäisille käyttäjilleen, jotka näkev
 
 Ladattuaan Power BI Desktop -tiedoston palveluun, Contoso voi määrittää vieraskäyttäjät rooliin ”SecurityRole” ja sisäiset käyttäjät rooliin ”AllRole”
 
-Nyt kun vierailevien käyttäjien avata raportin, ne näkee vain ryhmä A: myynti
+Nyt, kun vieras käyttäjät avaavat raportin, he voivat vain tarkastella myyntiä ryhmästä A:
 
 ![Vain ryhmästä A](media/whitepaper-azure-b2b-power-bi/whitepaper-azure-b2b-power-bi_38.png)
 
@@ -491,7 +491,7 @@ Vieraskäyttäjät saavat vain luku -oletuskokemuksen ja eivätkä voi muokata j
 
 Auta näitä käyttäjiä kirjautumaan Power BI:hin antamalla heille vuokraajan URL-osoite. Etsi vuokraajan URL-osoite seuraavien vaiheiden mukaisesti.
 
-1. Valitse Power BI -palvelun yläreunan valikosta ohje (**?** ) ja sitten **Tietoja Power BI:stä**.
+1. Valitse Power BI -palvelun yläreunan valikosta ohje ( **?** ) ja sitten **Tietoja Power BI:stä**.
 2. Katso arvo kohdan **Vuokraajan URL-osoite** vierestä. Tämä on vuokraajan URL-osoite, jonka voit jakaa vieraskäyttäjille.
 
     ![Vuokraajan URL-osoite](media/whitepaper-azure-b2b-power-bi/whitepaper-azure-b2b-power-bi_42.png)
