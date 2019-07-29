@@ -1,5 +1,5 @@
 ---
-title: Mukautetut visualisoinnit Power BI:ssä
+title: Visualisoinnit Power BI:ssä
 description: Mukautetut visualisoinnit Power BI:ssä
 author: sranins
 ms.author: rasala
@@ -10,14 +10,14 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 05/15/2019
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 23436fb8e21e1be3a863986a773d7d969da65122
-ms.sourcegitcommit: 24781cdab5fbe43fc14248db636169cc54ef6721
+ms.openlocfilehash: 68048968bf6a3f85f2bc24e55fd1288073be1d56
+ms.sourcegitcommit: 473d031c2ca1da8935f957d9faea642e3aef9839
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66498052"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68415419"
 ---
-# <a name="custom-visuals-in-power-bi"></a>Mukautetut visualisoinnit Power BI:ssä
+# <a name="visuals-in-power-bi"></a>Visualisoinnit Power BI:ssä
 
 Kun luot tai muokkaat Power BI -raporttia, käytettävissäsi on monia eri visualisointityyppejä. Näiden visualisointien kuvakkeet näytetään **Visualisoinnit**-ruudussa. Nämä visualisoinnit ovat heti käytettävissäsi, kun lataat [Power BI Desktopin](https://powerbi.microsoft.com/desktop/) tai avaat [Power BI -palvelun](https://app.powerbi.com).
 

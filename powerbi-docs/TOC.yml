@@ -933,6 +933,8 @@
           href: report-builder-planning-report.md
         - name: Raportin muodostimen tiedot
           href: report-builder-data.md
+        - name: 'Käytä Power BI:n jaettuja tietojoukkoja'
+          href: report-builder-shared-datasets.md
         - name: Suunnitteluvinkkejä
           href: report-builder-design-tips.md
         - name: 'Taulukot, matriisit, luettelot'

@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/08/2019
+ms.date: 07/26/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: c074d6aa4fc7bdc530aa52f125f7f3d898b402c0
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: f18ed2b0e370ad4617b7eccae4fbf043233fe4c0
+ms.sourcegitcommit: 0332efe8f83cb55a9b8ea011db7c99e9b4568118
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65514512"
+ms.lasthandoff: 07/27/2019
+ms.locfileid: "68590521"
 ---
 # <a name="create-tooltips-based-on-report-pages-in-power-bi-desktop"></a>Power BI Desktopissa luotuihin raporttisivuihin perustuvien työkaluvihjeiden luominen
 Voit luoda visuaalisesti monipuolisia **raporttityökaluvihjeitä**, jotka tulevat näkyviin, kun pidät hiiren osoitinta visualisoinnin päällä, ja jotka pohjautuvat **Power BI Desktopissa** luomiisi raporttisivuihin. Kun luot työkaluvihjeenä toimivan raporttisivun, mukautetut työkaluvihjeet voivat sisältää visualisointeja, kuvia ja muita kohdekokoelmia, joita luot raporttisivulla. 
@@ -113,7 +113,6 @@ Kun visualisointia ristiinkorostetaan raportissa, raportin työkaluvihjeet näyt
 Muutamat **työkaluvihjeitä** koskevat rajoitukset ja tärkeät seikat on syytä huomioida.
 
 * **Power BI Desktopin** joulukuun 2018 versiosta alkaen painikevisualisoinnit tukevat myös työkaluvihjeitä.
-* Raporttityökaluvihjeitä ei tueta, kun raporttia tarkastellaan mobiilisovelluksella. 
 * Raportin työkaluvihjeitä ei tueta mukautetuissa visualisoinneissa. 
 * Klustereita ei tällä hetkellä tueta kenttinä, jotka voidaan näyttää raportin työkaluvihjeissä. 
 * Valittaessa raportin työkaluvihjeiden kanssa näytettävää kenttää ja käytettäessä kenttää luokan asemesta kyseisen kentän sisältävät visualisoinnit näyttävät vain määritetyn työkaluvihjeen, kun valitun kentän yhteenveto on vastaava. 
