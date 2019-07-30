@@ -947,6 +947,8 @@
           href: report-builder-expressions.md
         - name: Lauseke-esimerkit
           href: report-builder-expression-examples.md
+        - name: Raportin sivutus
+          href: paginated-reports-pagination.md
         - name: Raporttien esikatselu
           href: report-builder-previewing-reports.md
         - name: Sivutettujen raporttien usein kysytyt kysymykset
