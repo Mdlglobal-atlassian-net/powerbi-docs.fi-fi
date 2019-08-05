@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/10/2017
 ms.author: amac
 LocalizationGroup: Dashboards
-ms.openlocfilehash: b7d9bdf0982ea7ad4f57225e5a1eaf8c9da90b50
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: e687c72ae058f56ca4f528783c5e2326d82db6bb
+ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61139597"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68523145"
 ---
 # <a name="dashboard-data-classification"></a>Koontinäytön tietojen luokittelu
 Jokainen koontinäyttö on erilainen ja riippuen yhdistetystä tietolähteestä, havaitset luultavasti, että sinun ja työtovereidesi, joiden kanssa jaat tietoja, on suoritettava eri varotoimia tietojen arkaluontoisuuden mukaisesti. Joitakin koontinäyttöjä ei pitäisi koskaan jakaa yrityksen ulkopuolisille henkilöille tai tulostaa, kun taas osa voidaan jakaa vapaasti. Käyttämällä koontinäytön tietojen luokitusta, pystyt nostamaan tietoisuutta koontinäyttösi tarkastelijoiden keskuudessa siitä, mitä suojaustasoa tulisi käyttää. Voit lisätä koontinäyttöösi tunnisteen, jossa luokitukset on määritelty yrityksesi IT-osaston mukaan, joten kaikilla ketkä katselevat sisältöä, on saman tasoinen ymmärrys tietojen arkaluontoisuudesta.
@@ -45,7 +45,7 @@ Järjestelmänvalvojat voivat määrittää tunnisteelle myös URL-osoitteen tar
 ## <a name="setting-a-dashboards-classification"></a>Koontinäytön luokituksen asettaminen
 Jos tietojen luokitus on otettu yrityksessäsi käyttöön, kaikki koontinäytöt aloittavat oletusluokitustyyppisinä, mutta koontinäytön omistajana voit muuttaa luokituksen vastaamaan koontinäyttöjen suojaustasoa.
 
-Muuta luokitustyyppiä seuraavasti.
+Muuta luokitustyyppiä seuraavasti:
 
 1. Siirry koontinäytön asetuksiin valitsemalla koontinäytön nimen vieressä olevat **kolme pistettä** ja valitse **Asetukset**.
    
@@ -58,7 +58,7 @@ Muuta luokitustyyppiä seuraavasti.
 Kun muutokset on otettu käyttöön, kaikki joiden kanssa olet jakanut koontinäyttösi, näkevät päivityksen kun he seuraavan kerran lataavat koontinäytön.
 
 ## <a name="working-with-data-classification-tags-as-an-admin"></a>Tietojen luokittelutunnisteiden käsittely järjestelmänvalvojana
-Tietojen luokitus organisaatiossasi toteutetaan yleisen järjestelmänvalvojan toimesta. Voit ottaa tietojen luokitus käyttöön seuraavasti.
+Tietojen luokitus organisaatiossasi toteutetaan yleisen järjestelmänvalvojan toimesta. Ota tietojen luokitus käyttöön seuraavasti:
 
 1. Valitse Asetukset-hammaskuvake ja sitten **Hallintaportaali**.
    
@@ -79,7 +79,7 @@ Kun olet täyttänyt lomakkeen luokitustyypeilläsi, valitse **Käytä** tallent
 
 ![](media/service-data-classification/filled_in_classification_form.png)
 
-Tässä vaiheessa kaikki koontinäytöt määritetään oletusarvoiseen luokitukseen ja koontinäyttöjen omistajat voivat nyt päivittää luokitustyypin vastaamaan sisältöä. Voit palata tänne myöhemmin lisätäksesi tai poistaaksesi luokitustyyppejä, tai muuttaaksesi oletusta.  
+Tässä vaiheessa kaikille koontinäytöille määritetään oletusluokitus. Koontinäytön omistajat voivat nyt päivittää luokitustyypin niiden sisällön mukaan. Voit palata tänne myöhemmin lisätäksesi tai poistaaksesi luokitustyyppejä, tai muuttaaksesi oletusta.  
 
 > [!NOTE]
 > Tässä muutama tärkeä asia, jotka tulee muistaa kun palaat tekemään muutoksia:

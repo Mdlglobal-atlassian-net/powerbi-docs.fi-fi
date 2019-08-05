@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 07/05/2019
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: 333403ca74c5c5a13c94cbd41100915c7260e304
-ms.sourcegitcommit: 1789815c87e306b1427a5838655d30d3b9ba1d29
+ms.openlocfilehash: ddda7d6aaacbcde2d71371b316d14a9cd411bd43
+ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67791997"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68523412"
 ---
 # <a name="customer-profitability-sample-for-power-bi-take-a-tour"></a>Asiakkaan tuottavuuden malli Power BI:lle: aloita esittely
 
@@ -23,7 +23,7 @@ Asiakkaan tuottavuuden malli -sisältöpaketti sisältää koontinäytön, rapor
 
 ![Asiakkaan tuottavuuden mallin koontinäyttö](media/sample-customer-profitability/power-bi-dash.png)
 
-Tämä malli kuuluu sarjaan, jossa esitellään, miten Power BI:tä voidaan käyttää liiketoimintaan suuntautuneiden tietojen, raporttien ja koontinäyttöjen kanssa. Sen luomiseen on käytetty [obviEnceltä](http://www.obvience.com/) saatuja oikeita tietoja, jotka on muunnettu nimettömään muotoon. Tiedot ovat käytettävissä useissa muodoissa: sisältöpaketti, Power BI Desktopin .pbix-tiedosto tai Excel-työkirja. Tutustu [Power BI:n malleihin](sample-datasets.md). 
+Tämä malli kuuluu sarjaan, jossa esitellään, miten Power BI:tä voidaan käyttää liiketoimintaan suuntautuneiden tietojen, raporttien ja koontinäyttöjen kanssa. [ObviEnce](http://www.obvience.com/) on luonut sen käyttämällä oikeita tietoja, jotka on muunnettu nimettömään muotoon. Tiedot ovat käytettävissä useissa muodoissa: sisältöpaketti, Power BI Desktopin .pbix-tiedosto tai Excel-työkirja. Tutustu [Power BI:n malleihin](sample-datasets.md). 
 
 Tässä opetusohjelmassa tutustutaan Power BI -palvelun Asiakkaan tuottavuuden malli -sisältöpakettiin. Koska raportin käyttökokemus on hyvin samankaltainen Power BI Desktopissa ja palvelussa, voit seurata ohjelmaa myös käyttämällä Power BI Desktopin mallin .pbix-tiedostoa. 
 
@@ -106,7 +106,7 @@ Kaksi tämän koontinäytön ruutua, **Tavoite vs. toteutunut** ja **Tulojen kas
 
     a. Valitse **Johtaja**-liukusäätimestä **Carlos Grilo**.   
 
-    b. Ensimmäisen Pivot-taulukon mukaan Carloksen parhaan tuotteen Primuksen tuotto on pudonnut 152 % edellisestä vuodesta. **Vuosittaisessa tuoton varianssikaaviossa** näkyy, että hän jää budjetin alle useimpina kuukausina.  
+    b. Ensimmäisen Pivot-taulukon mukaan Carloksen parhaan tuotteen Primuksen tuotto on pudonnut 152 % edellisestä vuodesta. **Vuosittaisessa tuoton varianssikaaviossa** näkyy, että Carlos on jäänyt budjetin alle useimpina kuukausina.  
 
     ![Pivot-taulukko](media/sample-customer-profitability/power-bi-pivotchart.png)
 
@@ -139,7 +139,7 @@ Seuraavaksi tarkastellaan kahta tiimin jäsentä yksityiskohtaisesti, jotta näe
 1. Valitse vasemmalla olevasta **Johtaja**-osittajasta Andrew’n nimi, jotta raporttisivusta suodatetaan esiin vain Andrew'n tiedot:
 
    * Voit mitata suorituskykyä nopeasti Andrew'n **Tulotila (koko vuosi)** -tiedoista: se näkyy vihreänä, mikä tarkoittaa, että hän on suoriutunut hyvin.
-   * **Tulovarianssiprosentti budjettiin kuukauden ja johtajan mukaan** -kaavio näyttää, että helmikuun pudotusta lukuun ottamatta Andrew tekee työnsä hyvin. Hänen vahvin alueensa on itä ja hän käsittelee 49 asiakasta ja viittä tuotetta seitsemästä. Hänen myyntikatteensa ei ole suurin eikä pienin.
+   * **Tulovarianssiprosentti budjettiin kuukauden ja johtajan mukaan** -kaavio näyttää, että helmikuun pudotusta lukuun ottamatta Andrew tekee työnsä hyvin. Andrew’n vahvin alue on itä, jossa on 49 asiakasta ja viisi tuotetta seitsemästä. Andrew’n myyntikate ei ole suurin eikä pienin.
    * **Koko vuoden tulot ja tuottoprosentin varianssi budjettiin kuukausittain** -kaavio näyttää, että hänen tuottonsa on vakaata. Jos suodatat valitsemalla **keski**-alueen ruudun puukartassa, huomaat, että Andrew’lla on ollut tuottoa vain maaliskuussa ja ainoastaan Indianassa. Onko tämä trendi tarkoituksellinen vai pitääkö tähän perehtyä tarkemmin?
 
 2. Siirrytään Valeryyn. Valitse **Johtaja**-osittajasta Valeryn nimi, jotta raporttisivusta suodatetaan esiin vain Valeryn tiedot. 
@@ -147,10 +147,10 @@ Seuraavaksi tarkastellaan kahta tiimin jäsentä yksityiskohtaisesti, jotta näe
    ![Valeryn tiedot](media/sample-customer-profitability/customer3.png)
 
    * Huomaa punainen suorituskykyilmaisin **Koko vuoden tulojen tilassa**. Tätä on ehdottomasti tutkittava tarkemmin.
-   * Hänen tulovarianssinsa antaa myös aihetta huoleen – hän ei saavuta myyntikatettaan.
+   * Valeryn tulovarianssi antaa myös aihetta huoleen – hän ei saavuta asetettua myyntikatetta.
    * Valerylla on vain yhdeksän asiakasta, hän käsittelee vain kahta tuotetta ja hän työskentelee lähes yksinomaan pohjoisella myyntialueella olevien asiakkaiden parissa. Tämä erikoistuminen saattaa selittää laajan vaihtelun hänen arvoissaan.
    * Kun puukartasta valitaan **Pohjoinen**-ruutu, huomataan, että Valeryn myyntikate pohjoisessa vastaa hänen yleistä katettaan.
-   * Jos valitset jonkin muun **Kokonaistuotto alueittain** -ruudun, huomaat jotain kiinnostavaa: hänen tuottoprosenttinsa vaihtelee 23 %:n ja 79 %:n välillä. Hänen tulolukunsa muilla alueilla kuin pohjoisessa vaihtelevat runsaasti kausittain.
+   * Jos valitset jonkin muun **Kokonaistuotto alueittain** -ruudun, huomaat jotain kiinnostavaa: hänen tuottoprosenttinsa vaihtelee 23 %:n ja 79 %:n välillä. Valeryn tuloluvut muilla alueilla kuin pohjoisessa vaihtelevat runsaasti kausittain.
 
 3. Jatketaan tietojen tutkimista, jotta saamme selville, miksi Valeryn alueella on hankaluuksia. Tarkastele alueita, muita liiketoimintayksiköitä ja raportin seuraavaa sivua: **Alakateanalyysia**.
 
@@ -166,9 +166,9 @@ Tällä raporttisivulla tiedot ovat eri sektorista. Sivulla tarkastellaan koko a
 3. Kun valitset kunkin johtajan kaaviossa, huomaa seuraavat tiedot:
    * Andrew'n vaikutusala kattaa useita eri toimialasegmenttejä erittäin vaihtelevilla myyntikatteilla (useimmat positiivisen puolella) ja varianssiprosenteilla.
    * Annelien kaavio on samankaltainen sillä poikkeuksella, että hän keskittyy vain muutamiin toimialasegmentteihin (Valtio-segmentti ja Gladius-tuote).
-   * Carlos on selvästi keskittynyt Palvelut-segmenttiin ja tuotto on hyvällä tasolla. Hän on parantanut huomattavasti varianssiprosenttiaan korkean teknologian segmentissä ja hänelle uusi segmentti, Teollisuus, on toiminut poikkeuksellisen hyvin verrattuna budjetoituun.
+   * Carlos on selvästi keskittynyt Palvelut-segmenttiin ja tuotto on hyvällä tasolla. Carlos on myös parantanut huomattavasti varianssiprosenttiaan korkean teknologian segmentissä ja uusi segmentti, Teollisuus, on toiminut poikkeuksellisen hyvin verrattuna budjetoituun.
    * Tina tekee työtä useilla segmenteillä ja hänellä on korkein myyntikate, mutta hänen kupliensa pääosin pieni koko osoittaa, että hänen vaikutuksensa yrityksen tulokseen on vähäinen.
-   * Valery, jonka vastuulla on vain yksi tuote, toimii vain viidellä toimialasegmentillä. Hänen toimialavaikutuksensa on kausittaista, mutta tuloksena on aina suuri kupla, mikä osoittaa, että vaikutus yrityksen tulokseen on merkittävä. Selittyykö hänen negatiivinen suoriutumisensa toimialasegmenteillä?
+   * Valery, jonka vastuulla on vain yksi tuote, toimii vain viidellä toimialasegmentillä. Valeryn toimialavaikutus on kausittaista, mutta tuloksena on aina suuri kupla, mikä osoittaa, että vaikutus yrityksen tulokseen on merkittävä. Selittyykö hänen negatiivinen suoriutumisensa toimialasegmenteillä?
 
 ### <a name="executive-scorecard"></a>Johtajan tuloskortti
 Tämä sivu on muotoiltu Cortana-vastaussivuksi. Lisätietoja on artikkelissa [Mukautettujen vastaussivujen luominen Cortanalle](service-cortana-answer-cards.md).

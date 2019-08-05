@@ -11,12 +11,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 04/24/2019
 LocalizationGroup: Reports
-ms.openlocfilehash: cf640be131e1bffb571ad3c2ae2713dee1c4c0ca
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 1d1371fa63af51f50a631739e4b2eed5550dc7ee
+ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66051304"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68523334"
 ---
 # <a name="filter-a-report-using-query-string-parameters-in-the-url"></a>Raportin suodattaminen URL-osoitteen kyselymerkkijonoparametrien avulla
 
@@ -28,7 +28,7 @@ Kun avaat raportin Power BI -palvelussa, raportin jokaisella sivulla on oma yksi
 
 Oletetaan, että käytät Power BI Desktopia. Haluat luoda raportin, jossa on linkit muihin Power BI -raportteihin, mutta haluat näyttää vain joitakin muiden raporttien tietoja. Suodata raportit ensin kyselymerkkijonoparametrien avulla ja tallenna URL-osoitteet. Luo seuraavaksi Desktopissa taulukko, jossa käytät uusien raporttien URL-osoitteita.  Sitten voit julkaista ja jakaa raportin.
 
-Toinen kyselymerkkijonoparametrien käyttötapa on hyödyllinen edistynyttä Power BI -ratkaisua luotaessa.  DAX-kielen avulla voit luoda raportin, joka luo suodatetun raportin URL-osoitteen dynaamisesti asiakkaan nykyisessä raportissa tekemän valinnan perusteella. Kun asiakas valitsee URL-osoitteen, hän näkee vain itselleen tarkoitetut tiedot. 
+Toinen kyselymerkkijonoparametrien käyttötapa on hyödyllinen edistynyttä Power BI -ratkaisua luotaessa.  DAX-kielen avulla he luovat raportin, joka luo suodatetun raportin URL-osoitteen dynaamisesti asiakkaan nykyisessä raportissa tekemän valinnan perusteella. Kun asiakas valitsee URL-osoitteen, hän näkee vain itselleen tarkoitetut tiedot. 
 
 ## <a name="query-string-parameter-syntax-for-filtering"></a>Kyselyn merkkijonon parametrisyntaksi suodattamista varten
 
@@ -43,11 +43,11 @@ URL?filter=***Table***/***Field*** eq '***value***'
 
 ### <a name="reports-in-apps"></a>Raportit sovelluksissa
 
-Jos haluat lisätä raporttiin URL-suodattimen sovelluksessa, muotoilu on hiukan erilainen. Sovelluksen raportteihin osoittavissa linkeissä on kyselyparametri (ctid), joka lisätään URL-osoitteeseen. Erota kyselyparametreja et-merkki (&). Pidä ”? filter =” ja siirtää ctid parametrin URL-osoitteen loppuun edessä et-merkki (&). 
+Jos haluat lisätä raporttiin URL-suodattimen sovelluksessa, muotoilu on hiukan erilainen. Sovelluksen raportteihin osoittavissa linkeissä on kyselyparametri (ctid), joka lisätään URL-osoitteeseen. Erota kyselyparametrit käyttäen et-merkkiä (&). Säilytä "?filter=" ja siirrä ctid-parametri URL-osoitteen loppuun et-merkin (&) jälkeen. 
 
 Tässä esimerkki:
 
-App.powerbi.com/groups/Me/Apps/*sovellustunnus*/reports/*raporttitunnus*/ReportSection? filter =*taulukon*/*kentän* eq '*arvo*&'ctid =*ctid*
+app.powerbi.com/groups/me/apps/*app-id*/reports/*report-id*/ReportSection?filter=*Table*/*Field* eq '*value*&'ctid=*ctid*
 
 ### <a name="field-types"></a>Kenttätyypit
 
@@ -83,7 +83,7 @@ Jos haluat suodattaa raportin näyttämään tiedot vain myymälöille ”NC” 
 
 Raporttimme on suodatettu Pohjois-Carolinassa. Kaikki raporttisivun visualisoinnit näkyvät vain Pohjois-Carolinassa.
 
-![Raportti on suodatettu Pohjois-Carolina](media/service-url-filters/power-bi-report4.png)
+![Pohjois-Carolinan mukaan suodatettu raportti](media/service-url-filters/power-bi-report4.png)
 
 ## <a name="filter-on-multiple-fields"></a>Useiden kenttien suodattaminen
 
@@ -133,9 +133,9 @@ Power BI:n URL-suodatin voi sisältää lukuja seuraavissa muodoissa.
 
 ### <a name="date-data-types"></a>Päivämäärän tietotyypit
 
-Power BI tukee sekä OData V3- että V4-versioita **Date**- ja **DateTimeOffset**-tietotyypeille.  Päivämäärät esitetään EDM-muodossa (2019-02-12T00:00:00), joten kun määrität 'VVVV-KK-PP' päivämäärän, Power BI tulkitsee sen ”YYYY-MM-DDT00:00:00'.
+Power BI tukee sekä OData V3- että V4-versioita **Date**- ja **DateTimeOffset**-tietotyypeille.  Päivämäärät esitetään EDM-muodossa (2019-02-12T00:00:00), joten kun määrität päivämäärä muodossa VVVV-KK-PP, Power BI tulkitsee sen muodossa VVVV-KK-PPT00:00:00.
 
-Miksi tämä ero on merkityksellinen? Oletetaan, että luot merkkijonon Kyselyparametrin **taulukon päivämäärän gt ' 2018-08-03'** .  Sisältävätkö tulokset elokuun kolmannen päivän 2018 vai alkavatko ne elokuun neljännestä 2018? Koska Power BI kääntää kyselyn **taulukon päivämäärän gt ' 2018-08-03T00:00:00'** , tulokset sisältävät päivämäärät, joilla on nollasta poikkeava aikaosa, koska nämä päivämäärät on suurempi kuin **' 2018-08-03T00:00:00'** .
+Miksi tämä ero on merkityksellinen? Oletetaan, että luot kyselymerkkijonoparametrin **Table/Date gt '2018-08-03'** .  Sisältävätkö tulokset elokuun kolmannen päivän 2018 vai alkavatko ne elokuun neljännestä 2018? Koska Power BI kääntää kyselyn muotoon **Table/Date gt '2018-08-03T00:00:00'** , tulokset sisältävät päivämäärät, joilla on nollasta poikkeava aikaosa, koska nämä päivämäärät ovat suurempia kuin **'2018-08-03T00:00:00'** .
 
 ## <a name="special-characters-in-url-filters"></a>URL-suodattimien erikoismerkit
 
@@ -177,7 +177,7 @@ On muutamia asioita, jotka tulee ottaa huomioon merkkijonon kyselyparametreja k�
 
 * Käytettäessä *in*-operaattoria *in*-operaattorin oikealla puolella olevat arvot on esitettävä sulkeissa olevana pilkuin eroteltuna luettelona.    
 * Power BI -raporttipalvelimessa voit [välittää raporttiparametrit](https://docs.microsoft.com/sql/reporting-services/pass-a-report-parameter-within-a-url?view=sql-server-2017.md) sisällyttämällä ne raportin URL-osoitteeseen. Näissä URL-parametreissa ei ole etuliitettä, koska ne on välitetty suoraan raportin käsittelyohjelmaan.
-* Kyselyn merkkijonon suodatus ei toimi [Julkaise verkkoon](service-publish-to-web.md) tai [PDF-tiedoston vieminen](consumer/end-user-pdf.md).
+* Kyselyn merkkijonon suodatus ei toimi [Julkaise verkkoon](service-publish-to-web.md)- tai [Vie PDF-muotoon](consumer/end-user-pdf.md) -toiminnoissa.
 * [Upota raportin verkko-osa SharePoint Onlinessa](service-embed-report-spo.md) ei tue URL-suodattimia.
 * Pitkä tietotyyppi on (2^53-1) JavaScriptin rajoitusten vuoksi.
 * Raporttisuodattimien URL-suodattimissa on 10 lausekkeen rajoitus (10 AND-funktiolla yhdistettyä suodatinta).

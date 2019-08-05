@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 06/17/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 7d716c79146a0d53d261dba514aacb8787ca2fa3
-ms.sourcegitcommit: 90aa7ea5fcc7cf0fd7f6c3c1efeff5f27e8ef0dd
+ms.openlocfilehash: 53a8847f96d6aa3143e91cab07029a8e0f6afc85
+ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "67300190"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68523737"
 ---
 # <a name="best-design-practices-for-reports-and-visuals"></a>Raporttien ja visualisointien parhaat suunnittelukäytännöt
 
@@ -1007,7 +1007,7 @@ Lisätietoja puukartoista:
 
 Palkki-, pylväs- ja viivakaaviot sopivat yleensä useimpiin tilanteisiin. Ympyrä- ja rengaskaavioita on usein vaikea tulkita oikein, ja ne voivat itse asiassa usein vääristää tietoja. Vältä niitä aina kun mahdollista. Stephen Few on kirjoittanut erinomaisen artikkelin niiden taustasta ja vaaroista, [Save the Pies for Dessert](https://www.perceptualedge.com/articles/08-21-07.pdf).
 
-Ympyräkaavioista voi olla hänen mukaansa hyötyä yhdessä tilanteessa eli verrattaessa osien ja kokonaisuuden suhteita toisiinsa. Se on harvoin parempi kuin 100-prosentin pinottu pylväskaavio.
+Ympyräkaavioista voi olla Stephenin mukaan hyötyä yhdessä tilanteessa eli verrattaessa osien ja kokonaisuuden suhteita toisiinsa. Se on harvoin parempi kuin 100-prosentin pinottu pylväskaavio.
 
 Löydät toisen hauskan ympyräkaaviota koskevan artikkelin (ja animaation) [Darkhorse Analytics -sivustolta](http://www.darkhorseanalytics.com/blog/salvaging-the-pie).
 

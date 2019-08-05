@@ -10,12 +10,12 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 06/18/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: 96939c3ad29418ad868175dfd8093847ab427187
-ms.sourcegitcommit: 63a697c67e1ee37e47b21047e17206e85db64586
+ms.openlocfilehash: d1a057f56237a0609f3330d4728c7dfcded84a71
+ms.sourcegitcommit: 012f05efc4e97aeb6178fb2fc820b73bcc1ce920
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67498965"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68391127"
 ---
 # <a name="bring-your-own-encryption-keys-for-power-bi-preview"></a>Omien salausavainten tuominen Power BI:hin (esikatselu)
 
@@ -45,6 +45,9 @@ Tämän osion ohjeissa oletetaan, että sinulla on perustiedot Azure Key Vaultin
 
 1. Luo RSA-avain, jonka bittipituus on 4096 (tai käytä aiempaa tämäntyyppistä avainta) ja jolla on paketointi- ja avaamisoikeudet.
 
+    > [!IMPORTANT]
+    > Power BI BYOK tukee vain RSA-avaimia, joiden pituus on 4096 bittiä.
+
 1. Suositus: Tarkista, että avainsäilössä on käytössä _pehmeä poisto_ -asetus.
 
 ### <a name="add-the-service-principal"></a>Palvelun päänimen lisääminen
@@ -52,6 +55,9 @@ Tämän osion ohjeissa oletetaan, että sinulla on perustiedot Azure Key Vaultin
 1. Valitse Azure-portaalissa avainsäilön kohdalta **Käyttöoikeuskäytännöt** ja valitse **Lisää uusi**.
 
 1. Hae ja valitse **Valitse palvelun päänimi** -kohdasta Microsoft.Azure.AnalysisServices.
+
+    > [!NOTE]
+    > Jos et löydä kohdetta "Microsoft.Azure.AnalysisServices", on todennäköistä, että Azure Key Vaultiin liittyvään Azure-tilaukseen ei ole liitetty Power BI -resurssia. Kokeile hakea sen sijaan seuraavaa merkkijonoa: 00000009-0000-0000-c000-000000000000.
 
 1. Valitse **Avaimen käyttöoikeudet** -kohdasta **Avaa avain** ja **Paketoi avain**.
 

@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/18/2019
+ms.date: 07/22/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 19ed4e4505ed2d8eb4f3b559c0af46b2b82a0ec0
-ms.sourcegitcommit: dc0258bb4f647ff646c6fff2aaffa29b413aa2df
+ms.openlocfilehash: 591a837bb085ba901316e672112b568923995718
+ms.sourcegitcommit: 0332efe8f83cb55a9b8ea011db7c99e9b4568118
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68342201"
+ms.lasthandoff: 07/27/2019
+ms.locfileid: "68590548"
 ---
 # <a name="using-directquery-in-power-bi"></a>DirectQueryn käyttäminen Power BI:ssä
 Voit yhdistää kaikenlaisiin erilaisiin tietolähteisiin, kun käytät **Power BI Desktopia** tai **Power BI -palvelua**, ja muodostaa nämä tietoyhteydet eri tavoin. Voit *tuoda* tietoja Power BI:hin, mikä on yleisin tapa hakea tietoja, tai voit muodostaa yhteyden tietoihin suoraan niiden alkuperäisessä lähdesäilössä. Tätä tapaa kutsutaan nimellä **DirectQuery**. Tässä artikkelissa kuvataan **DirectQueryä** ja sen toimintoja:
@@ -72,7 +72,7 @@ Kun muodostat yhteyden tietolähteeseen **Power BI Desktopin** **Nouda tiedot** 
 * Visualisointeja tai kokonaisia raporttisivuja voi kiinnittää koontinäytön ruutuihin. Koontinäytön avaamisen nopeuden takaamiseksi ruudut päivitetään automaattisesti aikataulun mukaisesti (esimerkiksi kerran tunnissa). Voit muokata tätä päivitysväliä esimerkiksi sen mukaan, kuinka usein tiedot muuttuvat tai kuinka tärkeää uusimpien tietojen näkeminen on. Kun avaat koontinäytön, ruudut näyttävät siis tiedot viimeisimmän päivityksen ajankohdalta, eivät välttämättä taustalla olevan tietolähteen uusimpien tietojen mukaisesti. Voit päivittää avatun koontinäytön milloin tahansa varmistaaksesi sen ajantasaisuuden.    
 
 ### <a name="live-connections"></a>Reaaliaikaiset yhteydet
-Kun yhdistät **SQL Server Analysis Servicesiin** (SSAS), voit joko tuoda tiedot tai muodostaa reaaliaikaisen yhteyden valittuun tietomalliin. Jos valitset **Tuo**, sinun täytyy määrittää kysely ulkoiselle SSAS-lähteelle, minkä jälkeen tiedot tuodaan normaalisti. Jos valitset **Yhdistä reaaliajassa**, sinun ei tarvitse määrittää kyselyä, sillä koko ulkoinen malli näytetään kenttäluettelossa. Jos valitset **DirectQuery**, kyselyt lähetetään ulkoiseen SSAS-lähteeseen, kun luot visualisointeja. Toisin kuin DirectQueryn kohdalla, tällä tavalla et kuitenkaan luo uutta *mallia*. Toisin sanoen et siis voi määrittää uusia laskettuja sarakkeita, hierarkioita, suhteita ja niin edelleen. Muodostat sen sijaan yhteyden suoraan ulkoiseen SSAS-malliin.
+Kun yhdistät **SQL Server Analysis Servicesiin** (SSAS), voit joko tuoda tiedot tai muodostaa reaaliaikaisen yhteyden valittuun tietomalliin. Jos valitset **Tuo**, sinun täytyy määrittää kysely ulkoiselle SSAS-lähteelle, minkä jälkeen tiedot tuodaan normaalisti. Jos valitset **Yhdistä reaaliajassa**, sinun ei tarvitse määrittää kyselyä, sillä koko ulkoinen malli näytetään kenttäluettelossa.
 
 Edellisessä kappaleessa kuvattu tilanne koskee myös seuraaviin lähteisiin yhdistämistä, mutta niissä ei ole ollenkaan mahdollisuutta tietojen tuomiseen:
 
@@ -116,8 +116,8 @@ Kun käytät **DirectQueryä**, yleinen käytettävyys riippuu hyvin pitkälti t
 
 Taustalla olevan tietolähteen tehokkuuden lisäksi sinun tulee huomioida tarkasti tietolähteelle koituva kuormitus, mikä usein vaikuttaa tehokkuuteen. Kuten myöhemmin tässä artikkelissa kerromme, jokainen käyttäjä, joka avaa jaetun raportin, ja jokainen koontinäytön ruutu, joka päivitetään säännöllisesti, lähettää ainakin yhden kyselyn per visualisointi taustalla olevaan lähteeseen. Tämä edellyttää sitä, että lähde kykenee suoriutumaan tällaisesta kuormituksesta siten, että käytettävyys pysyy kohtuullisena.
 
-### <a name="limited-to-a-single-source"></a>Yhden lähteen rajoitus
-Kun tuot tietoja, voit yhdistää tietoja useista lähteistä yhteen malliin. Näin voit yhdistää helposti esimerkiksi tietoja yrityksen SQL Server -tietokannasta paikallisessa Excel-tiedostossa ylläpidettäviin tietoihin. Tämä ei ole mahdollista DirectQueryä käytettäessä. Kun valitset lähteeksi DirectQuery, voit käyttää tietoja vain tästä yhdestä lähteestä (esimerkiksi yhdestä SQL Server -tietokannasta).
+### <a name="security-implications-when-combining-data-sources"></a>Vaikutukset tietoturvaan yhdistettäessä tietolähteitä
+DirectQuery-mallissa on mahdollista käyttää useita tietolähteitä samalla tavalla kuin tietojakin tuotaessa [Yhdistelmämallit](desktop-composite-models.md)-ominaisuutta käyttämällä. Kun teet näin, on tärkeää ymmärtää, miten tietoja siirretään edestakaisin pohjana olevien tietolähteiden välillä sekä millaisia [vaikutuksia tietoturvaan](desktop-composite-models.md#security-implications) tällä on.
 
 ### <a name="limited-data-transformations"></a>Rajoitetut tietomuunnokset
 Lisäksi **kyselyeditorilla** tehtävillä tietomuunnoksilla on rajoituksia. Kun tuot tiedot, voit käyttää kehittyneitä muunnostoimintoja, joilla voit helposti puhdistaa tietoja ja muotoilla niitä uudelleen, ennen kuin luot tiedoista visualisointeja (voit esimerkiksi jäsentää JSON-tiedostoja tai pivotoida tietoja sarakkeesta rivimuotoon). Nämä muunnokset ovat rajoitetumpia DirectQueryä käytettäessä. Kun muodostat yhteyden SAP Business Warehousen kaltaiseen OLAP-malliin, et esimerkiksi voi määrittää mitään muunnoksia, vaan koko ulkoinen malli otetaan lähteestä. Jos käytät SQL Serverin kaltaista suhteellista lähdettä, voit silti määrittää joukon muunnoksia per kysely, mutta näitä muunnoksia rajoitetaan suorituskykysyistä. Mikä tahansa tällainen muunnos täytyy ottaa käyttöön jokaisessa kyselyssä taustalla olevaan tietolähteeseen (sen sijaan, että sitä käytettäisiin kerran tietoja päivitettäessä), joten nämä muunnokset on rajoitettu sellaisiin muunnoksiin, jotka voidaan kohtuullisesti kääntää yhdeksi natiivikyselyksi. Jos käytät liian monimutkaista muunnosta, saat virheilmoituksen, jolloin sinun täytyy joko poistaa muunnos tai vaihtaa malli tuontitilaan.
@@ -139,7 +139,6 @@ Kun käytät **DirectQueryä**, voit edelleen hyödyntää monia näistä mallin
 * **Ei sisäistä päivämäärähierarkiaa:** Kun tuot tiedot, jokaisella päivämääräsarakkeella ja päivämäärän ja kellonajan sarakkeella on oletusarvoisesti käytettävissä sisäinen hierarkia. Jos tuot esimerkiksi myyntitilaustaulukon, jossa on tilauspäivämäärän sarake, ja käytät tilauspäivämäärää visualisoinnissa, voit valita soveltuvan käytettävän tason (vuosi, kuukausi tai päivä). Tämä sisäinen päivämäärähierarkia ei ole käytettävissä DirectQuery-tilaa käytettäessä. Ota kuitenkin huomioon se, että jos taustalla olevassa lähteessä on käytettävissä päivämäärätaulukko (kuten monissa tietovarastoissa on), DAX-aikatietofunktioita voi käyttää normaalisti.
 * **Laskettujen sarakkeiden rajoitukset:** Lasketut sarakkeet voivat olla vain rivin sisäisiä. Tämä tarkoittaa sitä, että ne voivat viitata vain saman taulukon muiden sarakkeiden arvoihin ilman mitään koostefunktioita. Lisäksi sallitut DAX-skalaarifunktiot (esimerkiksi LEFT()) rajoitetaan vain niihin, jotka voidaan vain lähettää taustalla olevaan lähteeseen. Tämän johdosta ne siis vaihtelevat lähteen tukemien toimintojen mukaisesti. Funktioita, joita ei tueta, ei näytetä automaattisessa täydennyksessä, kun kirjoitat lasketun sarakkeen DAX-funktiota. Jos annat funktion, jota ei tueta, saat virheilmoituksen.
 * **Ei tukea pää- ja alatason DAX-funktioille:** Kun käytät DirectQuery-mallia, et voi käyttää DAX PATH() -perheen funktioita, jotka yleensä käsittelevät pää- ja alatasorakenteet (esimerkiksi tilikaavio tai työntekijähierarkia).
-* **Mittarien rajoitukset:** Mittareissa käytettäviä DAX-funktioita ja -lausekkeita rajoitetaan. Automaattinen täydennys näyttää vain sallitut funktiot. Jos käytät funktiota tai lauseketta, jota ei sallita, saat virheilmoituksen. Tämä johtuu siitä, että mittarit on rajoitettu yksinkertaisiin mittareihin, jotka eivät yksinään todennäköisesti aiheuta suorituskykyongelmia.
 * **Laskettuja taulukoita ei tueta:** laskettua taulukkoa ei voi määrittää DAX-lausekkeella DirectQuery-tilassa.
 * **Suhteiden suodatus on rajoitettu yhteen suuntaan:** Kun käytät DirectQueryä, et voi määrittää ristisuodatussuunnaksi molempia. Alla olevassa esimerkissä et voi luoda visualisointia, joka näyttää jokaisen asiakkaan sukupuolen (Customer[Gender]) ja kunkin asiakkaan ostamien tuotteiden (Product[Category]) määrän. Tällaisen kaksisuuntaisen suodatuksen käyttöä [käsitellään tässä raportissa](http://download.microsoft.com/download/2/7/8/2782DF95-3E0D-40CD-BFC8-749A2882E109/Bidirectional%20cross-filtering%20in%20Analysis%20Services%202016%20and%20Power%20BI.docx), joka sisältää esimerkkejä SQL Server Analysis Servicesin käytöstä, mutta pääperiaatteet koskevat myös Power BI:tä.
   
@@ -304,11 +303,11 @@ Kun raportti on julkaistu, taustalla olevaan tietolähteeseen lähetettyjen sama
 ### <a name="diagnosing-performance-issues"></a>Suorituskykyongelmien vianmääritys
 Tässä osiossa annetaan ohjeita suorituskykyongelmien vianmääritykseen sekä siihen, miten voit hankkia lisätietoja raporttien optimoimiseksi.
 
-Suosittelemme painokkaasti, että aloitat aina suorituskykyongelmien vianmäärityksen **Power BI Desktopista**, ei **Power BI -palvelusta**. Yleensä suorituskykyongelmat johtuvat taustatietolähteen suorituskyvystä. Tällaisten ongelmien tunnistaminen ja määrittäminen on helpompaa **Power BI Desktopin** eristetymmässä ympäristössä. Sen avulla myös vältetään alussa tietyt komponentit (esimerkiksi Power BI -yhdyskäytävä). Keskity ongelmien tutkimisessa Power BI -palvelun raporttiin vasta sitten, jos ongelmaa ei löydy Power BI Desktopissa.
+Suosittelemme painokkaasti, että aloitat aina suorituskykyongelmien vianmäärityksen **Power BI Desktopista**, ei **Power BI -palvelusta**. Yleensä suorituskykyongelmat johtuvat taustatietolähteen suorituskyvystä. Tällaisten ongelmien tunnistaminen ja määrittäminen on helpompaa **Power BI Desktopin** eristetymmässä ympäristössä. Sen avulla myös vältetään alussa tietyt komponentit (esimerkiksi Power BI -yhdyskäytävä). Keskity ongelmien tutkimisessa Power BI -palvelun raporttiin vasta sitten, jos ongelmaa ei löydy Power BI Desktopissa. [Suorituskyvyn analysointi](desktop-performance-analyzer.md) on hyödyllinen työkalu ongelmien tunnistamiseen tämän prosessin aikana.
 
 Lisäksi suosittelemme ensin ongelmien määrittämistä yksittäisessä visualisoinnissa sivun useiden visualisointien asemesta.
 
-Oletetaan, että nämä vaiheet (tämän osion aiemmassa kappaleessa) on suoritettu ja että olemme nyt **Power BI Desktopissa** sivun yksittäisessä visualisoinnissa, joka toimii edelleen hitaasti. Jos haluat tarkistaa, mitkä kyselyt Power BI Desktop lähettää taustatietolähteeseen, voi tarkastella lähteen tarjoamia jäljitys- ja vianmääritystietoja. Nämä jäljitystiedot voivat sisältää hyödyllisiä tietoja siitä, miten kysely suoritettiin ja miten sitä voi parantaa.
+Oletetaan, että nämä vaiheet (tämän osion aiemmassa kappaleessa) on suoritettu ja että olemme nyt **Power BI Desktopissa** sivun yksittäisessä visualisoinnissa, joka toimii edelleen hitaasti. Voit määrittää Power BI Desktopin pohjana olevaan lähteeseen lähettämät kyselyt käyttämällä [suorituskyvyn analysointia](desktop-performance-analyzer.md). Voit myös tarkastella jäljityksiä/diagnostiikkatietoja, jotka pohjana oleva tietolähde saattaa lähettää. Nämä jäljitystiedot voivat sisältää hyödyllisiä tietoja siitä, miten kysely suoritettiin ja miten sitä voi parantaa.
 
 Vaikka lähde ei tarjoaisi tällaisia jäljitystietoja, voit joka tapauksessa tarkistaa Power BI:n lähettämät kyselyt ja niiden suoritusajat. Saat ohjeet tähän alla.
 

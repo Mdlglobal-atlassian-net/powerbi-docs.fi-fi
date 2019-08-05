@@ -1,6 +1,6 @@
 ---
-title: Organisaation mukautetut visualisoinnit Power BI:ssä
-description: Käytä, hallinnoi ja luo organisaation mukautettuja visualisointeja Power BI:ssä
+title: Organisaation visualisoinnit Power BI:ssä
+description: Käytä, hallinnoi ja luo organisaation visualisointeja Power BI:ssä
 author: sranins
 ms.author: rasala
 manager: kfile
@@ -10,14 +10,14 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 12/11/2018
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 157b20107a5be106ac97e0cb927b1e496e1ba115
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 9775b7cd1eb936019051ae952bc270924061daaa
+ms.sourcegitcommit: 473d031c2ca1da8935f957d9faea642e3aef9839
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61421882"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68415344"
 ---
-# <a name="organizational-custom-visuals-in-power-bi"></a>Organisaation mukautetut visualisoinnit Power BI:ssä
+# <a name="organizational-visuals-in-power-bi"></a>Organisaation visualisoinnit Power BI:ssä
 
 Power BI:n mukautettujen visualisointien avulla voit luoda yksilöllisen visualisointityypin, joka on räätälöity juuri sinulle. Mukautetut visualisoinnit ovat kehittäjien työn tulosta, ja usein niitä luodaan silloin, kun Power BI:hin sisältyvä laaja visualisointivalikoima ei täysin vastaa kehittäjän tarpeita.
 

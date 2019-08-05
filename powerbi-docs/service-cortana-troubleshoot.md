@@ -11,20 +11,20 @@ ms.topic: conceptual
 ms.date: 05/29/2019
 ms.author: maggies
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 449d47606829c8555e0b64e7f07d1b414b99fea7
-ms.sourcegitcommit: 8bf2419b7cb4bf95fc975d07a329b78db5b19f81
-ms.translationtype: MT
+ms.openlocfilehash: cb0870bf6f1cdca3cb1f95dc516f5f9124422327
+ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66375227"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68523375"
 ---
 # <a name="troubleshoot-cortana-for-power-bi"></a>Cortanan ja Power BI:n vianmääritys
 Tämä artikkeli on osa pidempää sarjaa. 
 
 > [!IMPORTANT]
-> Power BI-ollaan poistamassa Cortanan integrointia tuetaan. Alkaen kesäkuussa 11 Cortana ei enää toimi koontinäytöille ja raporteille.
+> Cortanan integrointi on vanhentumassa Power BI:ssä. 11. kesäkuuta alkaen Cortana ei enää toimi koontinäyttöjen ja raporttien kanssa.
 
-Jos sinulla on ongelmia Cortana voi integroida Power BI, olet tullut oikeaan paikkaan. Tunnista ongelma ja korjaa se noudattamalla alla olevia ohjeita.
+Jos sinulla on ongelmia Cortanan integroimisessa Power BI:hin, olet tullut oikean paikkaan. Tunnista ongelma ja korjaa se noudattamalla alla olevia ohjeita.
 
 ## <a name="why-doesnt-cortana-find-answers-from-my-power-bi-reports-or-dashboards"></a>Miksi Cortana ei löydä kysymyksiini vastauksia Power BI ‑raporteistani tai koontinäytöistäni?
 1. Onko sinulla Power BI ‑tili?  Jos ei, [rekisteröi ilmainen kokeiluversio](https://powerbi.microsoft.com/get-started/).
@@ -54,7 +54,7 @@ Jos sinulla on ongelmia Cortana voi integroida Power BI, olet tullut oikeaan pai
 1. Jos etsit vastauksia raporteista, onko sinulla raportteja, joista on olemassa Cortanan **vastauskortteja**? Vastauskortit ovat ainoa tapa, jolla Cortana löytää vastauksia Power BI ‑raporteista.  Ohjeet vastauskorttien luomiseen annetaan ohjeaiheessa [Cortanan vastauskorttien luominen Power BI -palvelussa ja Power BI Desktopissa](service-cortana-answer-cards.md).
 2. Onko sinulla käytössä Windowsin versio 1511 tai uudempi versio?  Näet versiotiedot, kun avaat Windowsin asetukset ja valitset **Järjestelmä > Tietoja**. Päivitä tarvittaessa Windows-versio uudempaan.
 3. Onko Windows-tili yhdistetty Power BI ‑tiliin? Tämä voi aiheuttaa sekaannusta. Ohjeet tilien yhdistämiseen saat artikkelista [Power BI:n Cortanan käyttöönotto](service-cortana-enable.md#add-your-power-bi-credentials-to-windows).
-4. Onko raportin perustana olevat tietojoukot sallittu Cortanalle? Ehkä työtoveri on jakanut tietojoukon, jonka hän on sallinut valmiiksi Cortanan käyttöä varten. Mutta jos ei, [opettele sallimaan tietojoukkojen käyttö Cortanalle](service-cortana-enable.md) itse. Se käy helposti ja nopeasti.
+4. Onko raportin perustana olevat tietojoukot sallittu Cortanalle? Ehkä työtoveri on jakanut tietojoukon, joka on jo sallittu valmiiksi Cortanan käyttöä varten. Mutta jos ei, [opettele sallimaan tietojoukkojen käyttö Cortanalle](service-cortana-enable.md) itse. Se käy helposti ja nopeasti.
 
 ## <a name="dashboards-only-why-doesnt-cortana-find-answers-from-my-power-bi-dashboards"></a>Vain koontinäytöt: Miksi Cortana ei löydä kysymyksiini vastauksia Power BI ‑koontinäytöistäni?
 1. Varmista, että olet yhteydessä työtiliisi. Power BI tarvitsee yhteyden voidakseen todentaa tietojen käyttöoikeudet. Voit varmistaa, että olet yhteydessä – tai jos et ole, muodostaa yhteyden työtiliisi – siirtymällä Windowsin hakuruudun kautta asetukseen Yhteyden muodostaminen työpaikkaan tai oppilaitokseen.  

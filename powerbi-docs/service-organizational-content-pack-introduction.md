@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: da5a36454e52891df7906b444b29b4df2db44d7f
-ms.sourcegitcommit: 762857c8ca09ce222cc3f8b006fa1b65d11e4ace
+ms.openlocfilehash: b9c308e0593ac207e323df5b78619f0279f95594
+ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66721182"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68523450"
 ---
 # <a name="intro-to-organizational-content-packs-in-power-bi"></a>Power BI:n organisaation sisältöpakettien esittely
 > [!NOTE]
@@ -50,24 +50,24 @@ Elinkaari näyttää suunnilleen tältä:
 1. Käyttäjä luo Power BI Prossa sisältöpaketin ja julkaisee sen markkinoinnin jakeluryhmälle. Päivitysasetukset periytyvät tietojoukon kanssa, ja vain käyttäjä (sisältöpaketin luoja) voi muuttaa niitä.
    
    > [!NOTE]
-   > Jos käyttäjä luo sisältöpaketin [Power BI -sovelluksen työtilassa](service-create-distribute-apps.md), työtilan muut jäsenet voivat saada omistajuuden, jos käyttäjä poistuu työtilasta.
+   > Jos Nate luo sisältöpaketin [Power BI -sovelluksen työtilassa](service-create-distribute-apps.md), työtilan muut jäsenet voivat saada omistajuuden, jos hän poistuu työtilasta.
    > 
    > 
 2. Käyttäjä lähettää jakeluryhmälle sähköpostiviestin, jossa hän kertoo uudesta sisältöpaketista.
-3. Jakeluryhmän jäsen voi Power BI Prossa etsiä tämän sisältöpaketin AppSourcessa ja muodostaa siihen yhteyden. Hän saa sisältöpaketista vain luku -kopion.  Hän tietää, että se on vain luku -muodossa, koska vasemmassa siirtymisruudussa näkyy jakamiskuvake koontinäytön nimen ja raportin nimen vasemmalla puolella. Kun hän valitsee koontinäytön, lukkokuvake kertoo, että kyseessä on sisältöpaketin koontinäyttö. 
-4. Oletetaan, että hän päättää mukauttaa sitä. Hänellä on nyt oma kopio koontinäytöstä ja raporteista. Hänen tekemät muutokset eivät vaikuta lähteeseen, eli alkuperäiseen sisältöpakettiin, eikä jakeluryhmän muiden jäsenten työhön. Kaikki jäsenet voivat työstää omia kopioitaan koontinäytöstä ja raporteista.
-5. Luoja päivittää koontinäyttöä ja julkaisee sisältöpaketista uuden version.
+3. Jakeluryhmän jäsen Jane voi Power BI Prossa etsiä sisältöpaketin AppSourcessa ja muodostaa siihen yhteyden. Jane saa sisältöpaketista vain luku -kopion. Jane tietää, että se on vain luku -muodossa, koska vasemmassa siirtymisruudussa näkyy jakamiskuvake koontinäytön nimen ja raportin nimen vasemmalla puolella. Kun Jane valitsee koontinäytön, lukkokuvake kertoo, että kyseessä on sisältöpaketin koontinäyttö. 
+4. Oletetaan, että Jane päättää mukauttaa sitä. Hänellä on nyt oma kopio koontinäytöstä ja raporteista. Janen tekemät muutokset eivät vaikuta lähteeseen, eli alkuperäiseen sisältöpakettiin, eikä jakeluryhmän muiden jäsenten työhön. Kaikki jäsenet voivat työstää omia kopioitaan koontinäytöstä ja raporteista.
+5. Nate päivittää koontinäyttöä ja julkaisee sisältöpaketista uuden version.
    
-   * Toinen jakeluryhmän jäsen ei ole mukauttanut alkuperäistä sisältöpakettia. Uudet muutokset otetaan automaattisesti käyttöön hänen sisältöpakettiversiossaan.  
-   * Tässä esimerkissä yksi poistetuista jäsenistä on kuitenkin muokannut sisältöpakettia. Hän saa ilmoituksen uudesta versiosta.  Hän voi siirtyä AppSourceen ja hakea päivitetyn sisältöpaketin menettämättä omaa mukautettua versiotaan. Hänellä on nyt kaksi versiota: oma mukautettu versio ja päivitetty sisältöpaketti.
+   * Toinen jakeluryhmän jäsen ei ole mukauttanut alkuperäistä sisältöpakettia. Uudet muutokset otetaan automaattisesti käyttöön Janen sisältöpakettiversiossa.  
+   * Tässä esimerkissä yksi poistetuista jäsenistä on kuitenkin muokannut sisältöpakettia. Jane saa ilmoituksen uudesta versiosta.  Hän voi siirtyä AppSourceen ja hakea päivitetyn sisältöpaketin menettämättä omaa mukautettua versiotaan. Janella on nyt kaksi versiota: mukautettu versio ja päivitetty sisältöpaketti.
 6. Sisältöpaketin luoja voi muuttaa sen suojausasetuksia. Tällöin jäsenet eivät enää pääse käyttämään sisältöä. Jäseniä voi myös poistaa jakeluryhmästä.
    
    * Sisältö poistetaan automaattisesti ryhmästä poistetuilta jäseniltä, elleivät he ole muokanneet alkuperäistä sisältöpakettia. 
-   * Tässä esimerkissä yksi poistetuista jäsenistä on kuitenkin muokannut sisältöpakettia. Seuraavan kerran kun hän avaa koontinäytön, kaikki alkuperäisen sisältöpaketin ruudut on poistettu, mutta muista raporteista kiinnitetyt ruudut näkyvät edelleen (riippuen toki käyttöoikeuksista). Liittyvät raportit ja tietojoukot eivät ole enää käytettävissä (eivätkä näy vasemmassa siirtymisruudussa).
+   * Tässä esimerkissä yksi poistetuista jäsenistä on kuitenkin muokannut sisältöpakettia. Seuraavan kerran kun Jane avaa koontinäytön, kaikki alkuperäisen sisältöpaketin ruudut on poistettu, mutta muista raporteista kiinnitetyt ruudut näkyvät edelleen (riippuen toki käyttöoikeuksista). Liittyvät raportit ja tietojoukot eivät ole enää käytettävissä (eivätkä näy vasemmassa siirtymisruudussa).
 7. Vaihtoehtoisesti luoja voi poistaa sisältöpaketin.
    
    * Sisältö poistetaan automaattisesti ryhmästä poistetuilta jäseniltä, elleivät he ole muokanneet alkuperäistä sisältöpakettia. 
-   * Tässä esimerkissä yksi poistetuista jäsenistä on kuitenkin muokannut sisältöpakettia. Seuraavan kerran kun hän avaa koontinäytön, kaikki alkuperäisen sisältöpaketin ruudut on poistettu, mutta muista raporteista kiinnitetyt ruudut näkyvät edelleen. Liittyvät raportit ja tietojoukot eivät ole enää käytettävissä (eivätkä näy vasemmassa siirtymisruudussa).
+   * Tässä esimerkissä yksi poistetuista jäsenistä on kuitenkin muokannut sisältöpakettia. Seuraavan kerran kun Jane avaa koontinäytön, kaikki alkuperäisen sisältöpaketin ruudut on poistettu, mutta muista raporteista kiinnitetyt ruudut näkyvät edelleen. Liittyvät raportit ja tietojoukot eivät ole enää käytettävissä (eivätkä näy vasemmassa siirtymisruudussa).
 
 ## <a name="data-security"></a>Tietosuoja
 Kaikilla jakeluryhmän jäsenillä on samat tietojen käyttöoikeudet kuin sisältöpaketin luojalla. Ainoa poikkeus tähän on paikalliset taulukkomuotoiset SQL Server Analysis Services (SSAS) -tietojoukot. Koska raportit ja koontinäytöt muodostavat reaaliajassa yhteyden paikalliseen SSAS-malliin, tietojen käyttöoikeudet määrittyvät kunkin jakeluryhmän jäsenen tunnistetietojen perusteella.

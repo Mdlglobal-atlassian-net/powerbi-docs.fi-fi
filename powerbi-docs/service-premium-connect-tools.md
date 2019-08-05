@@ -8,19 +8,19 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 06/18/2019
+ms.date: 07/24/2019
 ms.custom: seodec18
 LocalizationGroup: Premium
-ms.openlocfilehash: 48513ea163847ee3bf1df07151e9985c5bce9656
-ms.sourcegitcommit: 5f22dcda8885d840b7da344d38e89329d02b14fb
+ms.openlocfilehash: 4c39cf5a60786f7cc1748155ce7004254d40ad00
+ms.sourcegitcommit: ebac79f8c2871d4a7e54c1e99ce6d2409345b060
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/18/2019
-ms.locfileid: "67235060"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68475624"
 ---
 # <a name="connect-to-datasets-with-client-applications-and-tools-preview"></a>Tietojoukkoihin yhdistäminen asiakassovelluksilla ja työkaluilla (esikatselu)
 
-Power BI Premiumin työtilat ja tietojoukot tukevat Microsoftin sekä muiden valmistajien asiakassovellusten ja työkalujen *Vain luku* -yhteyksiä. 
+Power BI Premiumin työtilat ja tietojoukot tukevat Microsoftin sekä muiden valmistajien asiakassovellusten ja työkalujen *Vain luku* -yhteyksiä. Oletusarvon mukaan yhteydet ovat käytössä
 
 > [!NOTE]
 > Tämä artikkeli on tarkoitettu vain Power BI Premiumin työtilojen ja tietojoukkojen Vain luku -yhteyksien esittelyksi. Sen tarkoitus *ei ole* tarjota tarkkoja tietoja ohjelmoitavuudesta, tietyistä työkaluista ja sovelluksista, arkkitehtuurista tai työtilojen sekä tietojoukkojen hallinnasta. Tässä käsitellyt aiheet edellyttävät vankkaa ymmärrystä Analysis Servicesin taulukkomallisesta tietokanta-arkkitehtuurista ja -ylläpidosta.
@@ -104,6 +104,10 @@ Seuraavia tietojoukkoja ei tueta Power BI -palvelussa:
 ### <a name="roles-and-role-memberships"></a>Roolit ja roolijäsenyydet
 
 Tällä hetkellä mallin rooleja ja roolijäsenyyksiä ei voi etsiä tai näyttää XMLA-päätepisteiden avulla.
+
+## <a name="disable-connectivity"></a>Poista yhteys käytöstä
+
+Oletusarvon mukaan XMLA-päätepisteyhteys on käytössä tietojoukkojen kuormituksessa. Voit poistaa yhteyden käytöstä [kuormituksen asetuksissa](service-admin-premium-workloads.md#workload-settings).
 
 ## <a name="audit-logs"></a>Valvontalokit 
 

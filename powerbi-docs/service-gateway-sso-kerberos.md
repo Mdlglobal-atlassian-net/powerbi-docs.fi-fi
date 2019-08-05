@@ -8,14 +8,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: conceptual
-ms.date: 07/15/2019
+ms.date: 07/25/2019
 LocalizationGroup: Gateways
-ms.openlocfilehash: 1a0ec90d3f6a1de5a542da7ee98f956dfcef67b1
-ms.sourcegitcommit: fe8a25a79f7c6fe794d1a30224741e5281e82357
+ms.openlocfilehash: bea8b954cb1c0743745ef6d3bf9d48aa8513f2fe
+ms.sourcegitcommit: bc688fab9288ab68eaa9f54b9b59cacfdf47aa2e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "68325139"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68624059"
 ---
 # <a name="use-kerberos-for-single-sign-on-sso-from-power-bi-to-on-premises-data-sources"></a>Kerberoksen käyttäminen kertakirjautumista (SSO) varten Power BI:stä paikallisiin tietolähteisiin
 
@@ -170,9 +170,96 @@ Kun kaikki määritysvaiheet on suoritettu, voit käyttää Power BI:n **yhdysk�
 
 Tämä määritys toimii useimmissa tapauksissa. Kerberoksessa voi kuitenkin olla eri määrityksiä ympäristösi mukaan. Jos raportti ei kuitenkaan lataudu, ota yhteyttä toimialueen järjestelmänvalvojaan asian selvittämiseksi.
 
-## <a name="configure-sap-bw-for-sso"></a>SAP BW:n määrittäminen kertakirjautumista varten
+## <a name="configure-sap-bw-for-sso-using-commoncryptolib"></a>SAP BW:n määrittäminen kertakirjautumista varten CommonCryptoLibiä käyttämällä
 
 Nyt kun ymmärrät, miten Kerberos toimii yhdyskäytävän kanssa, voit määrittää kertakirjautumisen SAP Business Warehousea (SAP BW) varten. Seuraavissa vaiheissa oletetaan, että olet jo [valmistellut rajoitetun Kerberos-delegoinnin](#prepare-for-kerberos-constrained-delegation) tässä artikkelissa aiemmin kuvatulla tavalla.
+
+> [!NOTE]
+> Näissä ohjeissa kerrotaan kertakirjautumisen määrittämisestä SAP BW -**sovellus**palvelimiin. Microsoft ei tällä hetkellä tue kertakirjautumisyhteyksiä SAP BW -**viesti**palvelimiin.
+
+1. Varmista, että BW-palvelimesi on määritetty oikein Kerberos-kertakirjautumista varten. Jos näin on, sinun pitäisi pystyä käyttämään kertakirjautumista BW-palvelimesi käyttämiseen SAP GUIn kaltaisen SAP-työkalun avulla. Lisätietoja asennusvaiheista on kohdassa [SAP-kertakirjautuminen: Todentaminen Kerberosin/SPNEGOn kanssa](https://blogs.sap.com/2017/07/27/sap-single-sign-on-authenticate-with-kerberosspnego/). BW-palvelimesi tulee käyttää CommonCryptoLibiä sen SNC-kirjastona, ja sillä pitää olla SNC-nimi, joka alkaa merkkijonolla "CN=", esimerkiksi "CN=BW1". Lisätietoja SNC-nimen vaatimuksista on kohdassa [Kerberos-määrityksen SNC-parametrit](https://help.sap.com/viewer/df185fd53bb645b1bd99284ee4e4a750/3.0/en-US/360534094511490d91b9589d20abb49a.html) (snc/identity/as parameter).
+
+1. Jos et ole vielä tehnyt niin, viimeistele [Rajoitetun Kerberos-delegoinnin valmisteleminen](https://docs.microsoft.com/power-bi/service-gateway-sso-kerberos#prepare-for-kerberos-constrained-delegation) -kohdan vaiheet. Varmista, että yhdyskäytäväpalvelusi käyttäjä on määritetty näyttämään palvelun käyttäjälle delegoidut tunnistetiedot, jotka edustavat BW-sovelluspalvelinta Active Directory -ympäristössäsi.
+
+1. Jos et ole vielä tehnyt niin, asenna [SAP .NET Connectorin](https://support.sap.com/en/product/connectors/msnet.html) x64-versio tietokoneeseen, johon yhdyskäytävä on asennettu. Voit tarkistaa, onko osa asennettu, yrittämällä muodostaa yhteyden BW-palvelimeen Power BI Desktopissa. Jos et voi muodostaa yhteyttä 2.0-toteutuksen avulla, .NET Connectoria ei ole asennettu.
+
+1. Varmista, että SAP Secure Login Client (SLC) ei ole käynnissä tietokoneessa, johon yhdyskäytävä on asennettu. SLC tallentaa Kerberos-liput välimuistiin tavalla, joka voi häiritä yhdyskäytävän kykyä käyttää Kerberos-kertakirjautumista. Jos SLC on asennettu, poista sen asennus tai varmista, että suljet SAP Secure Login Clientin: napsauta hiiren kakkospainikkeella ilmaisinalueella olevaa kuvaketta ja valitse Kirjaudu ulos ja Lopeta, ennen kuin yrität kertakirjautumisyhteyttä yhdyskäytävän avulla. SLC:n käyttöä ei tueta Windows Server -koneissa. Katso lisätietoja artikkelista [SAP-huomautus 2780475](https://launchpad.support.sap.com/#/notes/2780475) (s-käyttäjä vaaditaan).
+
+    ![SAP Secure Login Client](media/service-gateway-sso-kerberos/sap-secure-login-client.png)
+
+    Jos poistat SLC-asennuksen tai valitset **Kirjaudu ulos** ja **Lopeta**, avaa cmd-ikkuna ja kirjoita `klist purge` poistaaksesi välimuistissa olevat Kerberos-liput, ennen kuin yrität kertakirjautumisyhteyden muodostamista yhdyskäytävän kautta.
+
+1. Lataa CommonCryptoLib (sapcrypto.dll) -versio **8.5.25 tai uudempi** SAP Launchpadista ja kopioi se yhdyskäytäväkoneesi kansioon. Luo samassa hakemistossa, johon kopioit sapcrypto.dll-tiedoston, tiedosto nimeltä sapcrypto.ini käyttäen seuraavaa sisältöä:
+
+    ```
+    ccl/snc/enable\_kerberos\_in\_client\_role = 1
+    ```
+
+    .ini-tiedosto sisältää CommonCryptoLibin edellyttämät määritystiedot, jotka mahdollistavat kertakirjautumisen yhdyskäytäväskenaariossa.
+
+    > [!NOTE]
+    > Nämä tiedostot on tallennettava samaan sijaintiin. Toisin sanoen kohteen _/path/to/sapcrypto/_ tulee sisältää sekä sapcrypto.ini että sapcrypto.dll.
+
+    Sekä yhdyskäytäväpalvelun käyttäjä että Active Directory (AD) -käyttäjä, joksi palvelun käyttäjä tekeytyy, tarvitsee luku- ja suoritusoikeudet molempiin tiedostoihin. Suosittelemme käyttöoikeuksien myöntämistä sekä .ini- että .dll-tiedostoille Todennetut käyttäjät -ryhmälle. Testausta varten voit myös erikseen myöntää nämä oikeudet sekä yhdyskäytäväpalvelun käyttäjälle että tekeydytylle käyttäjälle. Alla olevassa näyttökuvassa olemme myöntäneet Todennetut käyttäjät -ryhmälle **luku- &amp; suoritus**oikeudet sapcrypto.dll-kohteelle:
+
+    ![Todennetut käyttäjät](media/service-gateway-sso-kerberos/authenticated-users.png)
+
+1. Jos sinulla ei ole SAP Business Warehouse -palvelimen tietolähdettä, lisää tietolähde Power BI -palvelun **Yhdyskäytävien hallinta** -sivulla. Jos sinulla on jo yhdyskäytävään liitetty BW-tietolähde, jonka läpi haluat SSO-yhteyden virtaavan, valmistaudu muokkaamaan sitä.
+
+    **SNC-kirjaston** kohdalla valitse joko **SNC\_LIB- tai SNC\_LIB\_64-ympäristömuuttuja** tai **Mukautettu**. Jos valitset **SNC\_LIB**-vaihtoehdon aseta SNC\_LIB\_64-ympäristömuuttujan arvo yhdyskäytäväkoneessa sapcrypto.dll-kohteen absoluuttiseen polkuun, kuten C:\Users\Test\Desktop\sapcrypto.dll. Jos valitset **Mukautettu**, liitä sapcrypto.dll-kohteen absoluuttinen polku Mukautetun SNC-kirjaston polku -kenttään, joka näkyy **Yhdyskäytävien hallinta** -sivulla.
+
+    Varmista **Lisäasetukset** -kohdassa, että **Käytä DirectQuery-kyselyissä kertakirjautumista Kerberoksen kautta** -valintaruutu on valittuna. Antamasi käyttäjänimi tarvitsee vain luvan muodostaa yhteys BW-palvelimeen, ja sitä käytetään ensisijaisesti tietolähdeyhteyden testaamiseen sen luomisen jälkeen. Käyttäjää käytetään myös päivittämään tuontipohjaisista tietojoukoista luodut raportit, jos sellaisia on. Jos valitset **perustodentamisen**, sinun on annettava BW-käyttäjä. Jos valitset **Windows**-todentamisen, sinun on määritettävä Windows Active Directory -käyttäjä, joka on yhdistetty BW-käyttäjään SAP GUIn SU01-tapahtuman kautta. Muiden kenttien (**Järjestelmänumero **,** Asiakastunnus **,** SNC-kumppanin nimi** jne.) on vastattava tietoja, jotka syötät Power BI Desktopiin muodostaaksesi yhteyden BW-palvelimeen kertakirjautumisen kautta. Valitse **Käytä** ja varmista, että testiyhteys onnistuu.
+
+    ![Todennusmenetelmä](media/service-gateway-sso-kerberos/authentication-method.png)
+
+1. Luo CCL\_PROFILE-järjestelmän ympäristömuuttuja ja osoita sitä sapcrypto.ini-tiedostossa:
+
+    ![CCL\_PROFILE-järjestelmän ympäristömuuttuja](media/service-gateway-sso-kerberos/ccl-profile-variable.png)
+
+    Muista, että sapcrypto.dll- ja. -ini-tiedostojen on sijaittava samassa sijainnissa. Yllä olevassa esimerkissä, jossa sapcrypto.ini sijaitsee työpöydällä, sapcrypto.dll-tiedoston pitäisi sijaita myös työpöydällä.
+
+1. Käynnistä yhdyskäytäväpalvelu uudelleen:
+
+    ![Käynnistä yhdyskäytäväpalvelu uudelleen](media/service-gateway-sso-kerberos/restart-gateway-service.png)
+
+1. Julkaise **DirectQuery-pohjainen** BW-raportti Power BI Desktopista. Tämän raportin on käytettävä tietoja, joita BW-käyttäjä voi käyttää ja jotka on yhdistetty Azure Active Directory (AAD) -käyttäjään, joka kirjautuu Power BI -palveluun. Sinun täytyy käyttää DirectQueryä tuonnin sijaan päivityksen toimintotavan vuoksi. Kun päivität tuontipohjaisia raportteja, yhdyskäytävä käyttää **Käyttäjänimi**- ja **Salasana**-kenttiin syöttämiäsi tunnistetietoja BW-tietolähteen luonnin aikana. Toisin sanoen Kerberos-kertakirjautumista **ei** käytetä. Kun julkaiset, varmista myös, että valitset yhdyskäytävän, jonka olet määrittänyt BW-kertakirjautumiselle, jos sinulla on useita yhdyskäytäviä. Power BI -palvelussa sinun pitäisi nyt pystyä päivittämään raportti tai luomaan uusi raportti julkaistun tietojoukon perusteella.
+
+### <a name="troubleshooting"></a>Vianmääritys
+
+Jos et pysty päivittämään raporttia Power BI -palvelussa, voit käyttää ongelman diagnosoinnissa yhdyskäytävän jäljitystä, CPIC-jäljitystä ja CommonCryptoLib-jäljitystä. CPIC-jäljitys ja CommonCryptoLib ovat SAP-tuotteita, joten Microsoft ei tarjoa niille suoraa tukea. Active Directory -käyttäjien kohdalla, joille myönnetään BW-kertakirjautumisoikeus, jotkin Active Directory -määritykset saattavat edellyttää, että käyttäjät ovat Järjestelmänvalvojat-ryhmän jäseniä koneessa, johon yhdyskäytävä on asennettu.
+
+1. **Yhdyskäytävän lokit:** Voit vain toistaa ongelman avaamalla [yhdyskäytäväsovelluksen](https://docs.microsoft.com/data-integration/gateway/service-gateway-app), siirtymällä **Diagnostiikka**-välilehteen ja valitsemalla **Vie lokit**:
+
+    ![Vie yhdyskäytävän lokit](media/service-gateway-sso-kerberos/export-gateway-logs.png)
+
+1. **CPIC-jäljitys:** Jos haluat ottaa CPIC-jäljityksen käyttöön, määritä kaksi ympäristömuuttujaa: CPIC\_TRACE ja CPIC\_TRACE\_DIR. Ensimmäinen muuttuja määrittää jäljitystason, ja toinen muuttuja määrittää jäljitystiedoston hakemiston. Hakemiston on oltava sijainti, johon Todennetut käyttäjät -ryhmän jäsenet voivat kirjoittaa. Määritä CPIC\_TRACE arvoon 3 ja CPIC\_TRACE\_DIR mihin tahansa hakemistoon, jonne haluat kirjoittaa jäljitystiedostot.
+
+    ![CPIC-jäljitys](media/service-gateway-sso-kerberos/cpic-tracing.png)
+
+    Yritä toistaa ongelma ja tarkista, että CPIC\_TRACE\_DIR sisältää jäljitystiedostoja.
+
+1. **CommonCryptoLib-jäljitys:** Ota CommonCryptoLib-jäljitys käyttöön lisäämällä kaksi riviä aiemmin luomaasi sapcrypto.ini-tiedostoon:
+
+    ```
+    ccl/trace/level=5
+    ccl/trace/directory=\\<drive\\>:\logs\sectrace
+    ```
+
+    Varmista, että muutat _ccl/trace/directory_-asetuksen sijaintiin, jonne Todennetut käyttäjät -ryhmän jäsenet voivat kirjoittaa. Vaihtoehtoisesti voit luoda uuden .ini-tiedoston, jos haluat muuttaa tätä toimintaa. Luo samassa hakemistossa, jossa sapcrypto.ini ja sapcrypto.dll sijaitsevat, tiedosto nimeltä sectrace.ini käyttäen seuraavaa sisältöä.  Korvaa HAKEMISTO-asetus tietokoneessasi olevalla sijainnilla, jonne todennettu käyttäjä voi kirjoittaa:
+
+    ```
+    LEVEL = 5
+    
+    DIRECTORY = \\<drive\\>:\logs\sectrace
+    ```
+
+    Nyt voit toistaa ongelman ja tarkistaa, että HAKEMISTOON määritetty sijainti sisältää jäljitystiedostoja. Varmista, että poistat CPIC- ja CCL-jäljityksen käytöstä, kun olet valmis.
+
+    Lisätietoja CommonCryptoLib-jäljityksestä on kohdassa [SAP-huomautus 2491573](https://launchpad.support.sap.com/#/notes/2491573) (s-käyttäjä vaaditaan).
+
+## <a name="configure-sap-bw-for-sso-using-gsskrb5gx64krb5"></a>SAP BW:n määrittäminen kertakirjautumista varten gsskrb5/gx64krb5:tä käyttämällä
+
+Jos et pysty käyttämään CommonCryptoLibiä SNC-kirjastona, voit käyttää sen sijaan gsskrb5/gx64krb5:tä. Asennusvaiheet ovat kuitenkin huomattavasti monimutkaisempia, eikä SAP enää tarjoa tukea gsskrb5:lle.
 
 Tämä opas pyrkii olemaan mahdollisimman kattava. Jos olet jo suorittanut joitakin näistä vaiheista, voit ohittaa ne. Olet saattanut esimerkiksi jo luoda palvelukäyttäjän SAP BW -palvelimelle ja yhdistänyt siihen SPN:n, tai ehkä olet jo asentanut `gsskrb5`-kirjaston.
 
@@ -382,7 +469,7 @@ Tuloksena on, että yhdyskäytävä ei voi tekeytyä alkuperäiseksi käyttäjä
 
 Lisätietoja **paikallisesta tietoyhdyskäytävästä** ja **DirectQuerysta** on seuraavissa resursseissa:
 
-* [Mikä paikallinen tietoyhdyskäytävä on?](/data-integration/gateway/service-gateway-getting-started)
+* [Mikä paikallinen tietoyhdyskäytävä on?](/data-integration/gateway/service-gateway-onprem)
 * [DirectQuery Power BI:ssä](desktop-directquery-about.md)
 * [DirectQueryn tukemat tietolähteet](desktop-directquery-data-sources.md)
 * [DirectQuery ja SAP BW](desktop-directquery-sap-bw.md)

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/07/2019
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: 7c7d3b04b8c954ae220fb8b157b183f615abd39c
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 641d1ac2c1bbcb9d143afdc04652b4c12b6e775f
+ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65239480"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68522223"
 ---
 # <a name="using-calculated-tables-in-power-bi-desktop"></a>Laskettujen taulukkojen käyttö Power BI Desktopissa
 Lasketuilla taulukoilla voit lisätä malliin uuden taulukon. Sen sijaan, että hakisit ja lataisit arvoja uuden taulukkosi sarakkeisiin tietolähteestä, luot Data Analysis Expression (DAX) -kaavan, joka määrittelee taulukon arvot. Power BI Desktopissa laskettuja taulukoita luodaan uusi taulukko -toiminnolla raportti- tai tiedot-näkymässä.
@@ -39,7 +39,7 @@ Jeffillä, joka on Contoson projektipäällikkö, on taulukko, jossa näkyvät m
 
  ![](media/desktop-calculated-tables/calctables_swempl.png)
 
-Näiden kahden taulukoiden yhdistäminen lasketun taulukon avulla on varsin helppoa. Jeff voi luoda lasketun taulukon sekä raporttinäkymässä että tietonäkymässä, mutta se on hieman helpompaa tietonäkymässä, koska hän voi nähdä uuden lasketun taulukkonsa välittömästi.
+Näiden kahden taulukoiden yhdistäminen lasketun taulukon avulla on varsin helppoa. Jeff voi luoda lasketun taulukon sekä raporttinäkymässä että tietonäkymässä, mutta se on hieman helpompaa tietonäkymässä, koska hän voi nähdä uuden lasketun taulukon välittömästi.
 
 Jeff napsauttaa **Uusi taulukko** **Mallinnus**-välilehden **Tietonäkymässä**. Näyttöön avautuu kaavarivi.
 
@@ -53,7 +53,7 @@ Luodaan uusi taulukko, jonka nimi on Länsialueen työntekijät.
 
  ![](media/desktop-calculated-tables/calctables_westregionempl.png)
 
-Jeffin uusi Länsialueen työntekijät -taulukko näyttää Kentät-listassa täysin samalta kuin mikä tahansa muu taulukko. Hän voi luoda suhteita muihin taulukkoihin ja laskettuihin sarakkeisiin ja mittareihin sekä lisätä taulukon kenttiä raportteihin, kuten missä tahansa taulukossa.
+Jeffin uusi Länsialueen työntekijät -taulukko näyttää Kentät-listassa täysin samalta kuin mikä tahansa muu taulukko. Jeff voi jopa luoda suhteita muihin taulukkoihin ja laskettuihin sarakkeisiin ja mittareihin sekä lisätä taulukon kenttiä raportteihin, kuten missä tahansa taulukossa.
 
  ![](media/desktop-calculated-tables/calctables_fieldlist.png)
 

@@ -8,15 +8,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 06/27/2019
+ms.date: 07/25/2019
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: a871a7475dd8282f9ce63646c371182548504357
-ms.sourcegitcommit: b439ded53bfbbb58be27ecedf93d618f5158df33
+ms.openlocfilehash: 751bcb5ee3b383853f0087bab406d59a2271b588
+ms.sourcegitcommit: 4595a6231615d253aead315cb3f85472e2f189e6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/04/2019
-ms.locfileid: "67568118"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68501768"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>Power BI:n hallinta hallintaportaalissa
 
@@ -133,7 +133,7 @@ Jotta voit käyttää valvontalokeja, varmista, että [**Valvontalokien luominen
 
 **Vuokraaja-asetukset**-välilehdessä voit hallita yksityiskohtaisemmin organisaatiossasi käyttöön tarjottavia toimintoja. Jos olet huolissasi luottamuksellisista tiedoista, jotkin toiminnoista eivät ehkä sovellu organisaatiollesi. Tai kenties ehkä haluat tarjota tietyn toiminnon vain tietylle ryhmälle.
 
-Seuraavassa kuvassa näytetään **Vuokraaja-asetukset**-välilehden kaksi ensimmäistä osiota.
+Seuraavassa kuvassa näytetään useita asetuksia **Vuokraaja-asetukset**-välilehdellä.
 
 ![Vuokraaja-asetukset](media/service-admin-portal/powerbi-admin-tenant-settings.png)
 
@@ -169,6 +169,10 @@ Seuraavissa osioissa luodaan yleiskatsaus vuokraaja-asetusten eri tyyppeihin.
 Organisaation käyttäjät voivat siirtyä sisäisiin ohje- ja tukiresursseihin Power BI:n ohjevalikosta. Tarkemmin sanottuna nämä parametrit muuttavat Lue-, Yhteisö- ja Hanki apua -valikkokohtien toimintaa.
 
 Voit myös määrittää URL-osoitteen, joka ohjaa käyttäjät käyttöoikeuspyyntöjä koskevaan mukautettuun ratkaisuun. Tämä parametri mukauttaa Päivitä tili -painikkeen URL-kohdeosoitteen, jonka käyttäjä, jolla ei ole Power BI Pro -käyttöoikeutta, voit löytää Päivitä Power BI Pro -valintaikkunasta sekä Hallitse henkilökohtaista tallennustilaa -sivulta.
+
+### <a name="receive-email-notifications-for-service-outages-or-incidents"></a>Ota vastaan sähköposti-ilmoituksia palvelukatkoista tai -tapauksista
+
+Sähköpostia käyttävät käyttöoikeusryhmät saavat sähköposti-ilmoituksia, jos palvelukatkos tai tapaus vaikuttaa tähän vuokraajaan. Lue lisätietoja [palvelun keskeytymisilmoituksista](service-interruption-notifications.md).
 
 ## <a name="workspace-settings"></a>Työtilan asetukset
 

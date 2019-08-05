@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 03/06/2019
+ms.date: 07/26/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 554a5de238af650ab4009669d55a2fadedd4a29f
-ms.sourcegitcommit: aef57ff94a5d452d6b54a90598bd6a0dd1299a46
+ms.openlocfilehash: 531cb34379c984a26e983db7acfc9b4deebf68b9
+ms.sourcegitcommit: 0332efe8f83cb55a9b8ea011db7c99e9b4568118
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "66809125"
+ms.lasthandoff: 07/27/2019
+ms.locfileid: "68590452"
 ---
 # <a name="power-bi-for-us-government-customers"></a>Power BI Yhdysvaltain valtionhallinnon asiakkaille
 **Power BI-palvelulla** on versio, joka on saatavilla Yhdysvaltain valtionhallinnon asiakkaille osana **Office 365 US Government Community** -tilauksia. Tässä artikkelissa kuvattu **Power BI -palvelun** versio on suunniteltu erityisesti Yhdysvaltain valtionhallinnon asiakkaille ja on erillinen ja erilainen kuin **Power BI -palvelun** kaupallinen versio.
@@ -48,8 +48,7 @@ Azure jaetaan useiden pilvien kesken. Vuokraajat voivat oletusarvoisesti avata p
 * USGov Texas
 * USGov Arizona
 
-Julkisessa pilvessä IP-tilat ovat saatavilla, mutta valtionhallinnon pilven osalta sinun on avattava Azure-tukipyyntö, jos haluat pyytää yllä lueteltujen tietokeskusten IP-osoitealueet. 
-
+Julkisessa pilvipalvelussa IP-tilat ovat käytettävissä. Jos kyseessä on valtionhallinnon pilvipalvelu, katso uusimmat tiedot ladattavasta [Azuren palveluasiakirjasta valtionhallinnolle](https://www.microsoft.com/download/details.aspx?id=57063).
 
 ## <a name="limitations-of-power-bi-us-government"></a>Power BI US Governmentin rajoitukset
 Jotkin ominaisuudet, jotka ovat saatavilla **Power BI -palvelun** kaupallisessa versiossa, *eivät* ole saatavilla **Power BI -palvelussa** Yhdysvaltain valtionhallinnon asiakkaille. Power BI -tiimi pyrkii aktiivisesti saamaan nämä ominaisuudet Yhdysvaltain valtionhallinnon asiakkaille ja päivittää tämän artikkelin tiedot, kun nämä ominaisuudet tulevat saataville.

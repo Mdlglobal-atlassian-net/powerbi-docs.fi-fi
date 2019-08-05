@@ -1,5 +1,5 @@
 ---
-title: Power BI:n mukautetun visualisoinnin kehittäminen
+title: Power BI -visualisoinnin kehittäminen
 description: Opetusohjelma Power BI:n mukautetun visualisoinnin kehittämisestä
 author: sranins
 ms.author: rasala
@@ -9,14 +9,14 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: tutorial
 ms.date: 03/15/2019
-ms.openlocfilehash: d21a0ab1bada981a563e04ba26815f661664f51a
-ms.sourcegitcommit: 4ae1257c5d7b33aa2fafd91caf8b353a985c6771
+ms.openlocfilehash: 2dc1d0a316319867513dc9f25a195c3f2d1140b9
+ms.sourcegitcommit: 473d031c2ca1da8935f957d9faea642e3aef9839
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "67161231"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68415420"
 ---
-# <a name="tutorial-developing-a-power-bi-custom-visual"></a>Opetusohjelma: Power BI:n mukautetun visualisoinnin kehittäminen
+# <a name="tutorial-developing-a-power-bi-visual"></a>Opetusohjelma: Power BI -visualisoinnin kehittäminen
 
 Annamme kehittäjille keinot mukautettujen visualisointien vaivattomaan lisäämiseen Power BI:hin raporttinäkymissä ja raporteissa käytettäviksi. Alkuun pääsemisen helpottamiseksi olemme julkaisseet GitHubissa koodin kaikille visualisoinneille.
 
@@ -79,35 +79,35 @@ Nyt sinun on asennettava **pbiviz**-paketti.
     pbiviz --install-cert
     ```
 
-  Se palauttaa tuloksen, joka tuottaa *tunnuslauseen*. Tässä tapauksessa *tunnuslause* on **_15105661266553327_** , mikä aloittaa varmenteen tuonnin ohjatun toiminnon.
+    Se palauttaa tuloksen, joka tuottaa *tunnuslauseen*. Tässä tapauksessa *tunnuslause* on **_15105661266553327_** . Se myös aloittaa varmenteiden tuontitoiminnon.
 
-  ![PowerShellin kautta luotu varmenne](media/custom-visual-develop-tutorial/cert-create.png)
+    ![PowerShellin kautta luotu varmenne](media/custom-visual-develop-tutorial/cert-create.png)
 
-3. Varmista ohjatussa varmenteiden tuontitoiminnossa, että säilön sijainniksi on määritetty Nykyinen käyttäjä. Valitse *Seuraava*.
+2. Varmista ohjatussa varmenteiden tuontitoiminnossa, että säilön sijainniksi on määritetty Nykyinen käyttäjä. Valitse *Seuraava*.
 
       ![Varmenteen asentaminen](media/custom-visual-develop-tutorial/install-cert-PowerShell.png)
 
-4. Valitse **Tuotava tiedosto** -vaiheessa *Seuraava*.
+3. Valitse **Tuotava tiedosto** -vaiheessa *Seuraava*.
 
-5. Liitä **Yksityisen avaimen suojaus** -vaiheessa salasanaruutuun tunnuslause, jonka varmenteen luomisvaiheessa.  Tässä tapauksessa se on siis **_15105661266553327_** .
+4. Liitä **Yksityisen avaimen suojaus** -vaiheessa salasanaruutuun tunnuslause, jonka varmenteen luomisvaiheessa.  Tässä tapauksessa se on siis **_15105661266553327_** .
 
       ![Kopioi tunnuslause](media/custom-visual-develop-tutorial/cert-install-wizard-show-passphrase.png)
 
-6. Valitse **Varmennesäilö**-vaiheessa **Sijoita kaikki varmenteet seuraavaan paikkaan** -vaihtoehto. Valitse *Selaa*.
+5. Valitse **Varmennesäilö**-vaiheessa **Sijoita kaikki varmenteet seuraavaan paikkaan** -vaihtoehto. Valitse *Selaa*.
 
       ![Kaikki varmenteet seuraavaan säilöön](media/custom-visual-develop-tutorial/all-certs-in-the-following-store.png)
 
-7. Valitse **Valitse varmennesäilö** -ikkunassa **Luotetut varmenteiden päämyöntäjät** ja sitten *OK*. Valitse **Varmennesäilö**-näytössä *Seuraava*.
+6. Valitse **Valitse varmennesäilö** -ikkunassa **Luotetut varmenteiden päämyöntäjät** ja sitten *OK*. Valitse **Varmennesäilö**-näytössä *Seuraava*.
 
       ![Luotettu päävarmenne](media/custom-visual-develop-tutorial/trusted-root-cert.png)
 
-8. Viimeistele tuonti valitsemalla **Valmis**.
+7. Viimeistele tuonti valitsemalla **Valmis**.
 
-9. Jos näyttöön tulee suojausvaroitus, valitse **Kyllä**.
+8. Jos näyttöön tulee suojausvaroitus, valitse **Kyllä**.
 
     ![Suojausvaroitus](media/custom-visual-develop-tutorial/cert-security-warning.png)
 
-10. Kun ilmoituksen tuonti onnistui, valitse **OK**.
+9. Kun ilmoituksen tuonti onnistui, valitse **OK**.
 
     ![Varmenteen tuonti onnistui](media/custom-visual-develop-tutorial/cert-import-successful.png)
 

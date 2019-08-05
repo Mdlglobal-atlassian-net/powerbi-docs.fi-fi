@@ -10,12 +10,12 @@ ms.topic: tutorial
 ms.date: 05/22/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: cf07318b5866d3f893d745fc8a8bba85cc9680d9
-ms.sourcegitcommit: 81ba3572531cbe95ea0b887b94e91f94050f3129
+ms.openlocfilehash: d41fc5991a95b51f71d0db522d4de84454de4ca2
+ms.sourcegitcommit: 0332efe8f83cb55a9b8ea011db7c99e9b4568118
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66751259"
+ms.lasthandoff: 07/27/2019
+ms.locfileid: "68590590"
 ---
 # <a name="key-influencers-visualization"></a>Tärkeiden vaikuttajien visualisointi
 Tärkeimpien vaikuttajien visualisoinnin avulla ymmärrät paremmin sinua kiinnostavaan arvoon vaikuttavia tekijöitä. Se analysoi tietosi, panee merkitsevät tekijät järjestykseen ja näyttää ne tärkeinä vaikuttajina. Oletetaan esimerkiksi, että haluat ymmärtää, millaiset asiat vaikuttavat henkilöstön vaihtuvuuteen. Yksi tekijä voi olla työsopimuksen pituus ja toinen vaikkapa työntekijän ikä. 
@@ -132,8 +132,13 @@ Visualisointi kertoo, että aina kun asiakkuuden kesto kasvaa 13,44 kuukaudella,
  
 Oikeanpuoleisessa ruudussa oleva pistekaavio näyttää alhaisen luokituksen prosenttiosuuden kunkin asiakkuuden kestoarvon mukaan. Se korostaa kulmakertoimen trendiviivalla.
 
-
 ![Asiakkuuden keston pistekaavio](media/power-bi-visualization-influencers/power-bi-tenure.png)
+
+## <a name="binned-continuous-key-influencers"></a>Lokeroidut tärkeimmät jatkuvat vaikuttajat
+
+Joissakin tapauksissa saatat huomata, että jatkuvat tekijät muuttuvat automaattisesti luokittaisiksi. Tämä johtuu huomiostamme, että muuttujien välinen suhde ei ole lineaarinen, joten emme voi kuvailla suhdetta yksinkertaisesti kasvavaksi tai väheneväksi (kuten teimme yllä olevassa esimerkissä).
+
+Suoritamme korrelaatiotestejä määrittääksemme, miten lineaarinen vaikuttaja on suhteessa kohteeseen. Jos kohde on jatkuva, suoritamme Pearsonin korrelaation, ja jos kohde on luokittainen, teemme pistebiseriaaliset korrelaatiotestit. Jos havaitsemme, että suhde ei ole riittävän lineaarinen, suoritamme valvotun lokeroinnin ja luomme enintään viisi lokeroa. Selvittääksemme mitkä lokerot ovat järkevimpiä, käytämme valvottua lokerointimenetelmää, jossa tarkastellaan selittävän tekijän ja analysoitavan kohteen välistä suhdetta.
 
 ## <a name="interpret-measures-and-aggregates-as-key-influencers"></a>Mittareiden ja koosteiden tulkitseminen tärkeimpinä vaikuttajina 
  
@@ -209,15 +214,14 @@ Numeeristen kohteiden ylimmät segmentit näyttävät ryhmät, joissa talojen hi
 
 ## <a name="considerations-and-troubleshooting"></a>Huomioon otettavat seikat ja vianmääritys 
  
-**Mitä rajoituksia esikatseluun liittyy?** 
+**Mitä rajoituksia visualisointiin liittyy?** 
  
-Tärkeimpien vaikuttajien visualisointi on tällä hetkellä julkisessa esikatselussa, ja siihen liittyy joitain rajoituksia. Toimintoihin, joita ei tällä hetkellä tueta, kuuluvat: 
-- Sellaisten arvojen analysointi, jotka ovat koosteita tai mittareita.
-- Visualisoinnin käyttäminen Power BI Embeddedissä.
-- Visualisoinnin käyttäminen Power BI -mobiilisovelluksissa.
-- Rivitason suojauksen tuki.
-- Suorien kyselyjen tuki.
-- Reaaliaikaisten yhteyksien tuki.
+Tärkeimpien vaikuttajien visualisoinnissa on joitakin rajoituksia:
+
+- Suoraa kyselyä ei tueta
+- Reaaliaikaista Azure Analysis Services- ja SQL Server Analysis Services -yhteyttä ei tueta
+- Julkaisemista verkkoon ei tueta
+- .NET Framework 4.6 tai uudempi vaaditaan
 
 ![Numeerinen kysymys](media/power-bi-visualization-influencers/power-bi-ki-numeric-question.png)
 
@@ -263,7 +267,7 @@ Tämä virhesanoma tulee näkyviin, koska laitetta ei ole määritetty asiakasta
 - Voit muuttaa laskettavien laitteiden yhteenvetoa. Käytä laskentaa esimerkiksi, jos laitteiden määrä saattaa vaikuttaa asiakkaan antamaan luokitukseen. 
 - Voit pivotoida laitesarakkeen nähdäksesi, vaikuttaako palvelun käyttäminen tietyllä laitteella asiakkaan luokitukseen.
  
-Tässä esimerkissä tietoni pivotoitiin, jotta selaimelle, mobiililaitteelle ja taulutietokoneelle voitiin luoda uudet sarakkeet. Voit nyt käyttää näitä laitteita **Selitysperuste**-kohdassa. Ilmenee, että kaikki laitteet ovat vaikuttajia ja että selaimella on kaikkein suurin vaikutus asiakkaan antamaan pistemäärään.
+Tässä esimerkissä tiedot pivotoitiin, jotta voitiin luoda uusia sarakkeita selaimelle, mobiililaitteelle ja taulutietokoneelle (varmista, että poistat suhteesi ja luot ne uudelleen mallinnusnäkymässä tietojen pivotoinnin jälkeen). Voit nyt käyttää näitä laitteita **Selitysperuste**-kohdassa. Ilmenee, että kaikki laitteet ovat vaikuttajia ja että selaimella on kaikkein suurin vaikutus asiakkaan antamaan pistemäärään.
 
 Tarkemmin sanoen, asiakkaat, jotka eivät käytä palvelua selaimen kautta, antavat 3,79 kertaa todennäköisemmin alhaiset pisteet verrattuna muihin. Alempana luettelossa ilmenee, että mobiililaitteilla tilanne on päinvastainen. Asiakkaat, jotka käyttävät mobiilisovellusta, antavat todennäköisemmin alhaiset pisteet kuin muut asiakkaat. 
 

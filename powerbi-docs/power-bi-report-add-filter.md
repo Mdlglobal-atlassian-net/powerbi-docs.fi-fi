@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 06/25/2019
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: 903883290def07ee6467dbebab1c7b31dec80b74
-ms.sourcegitcommit: dc0258bb4f647ff646c6fff2aaffa29b413aa2df
+ms.openlocfilehash: dcc273dd6bf356d9149086b38b9126e721fe63a2
+ms.sourcegitcommit: 390dc3716d5c83385bedde63dd152431a77020e2
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68342184"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "68380260"
 ---
 # <a name="add-a-filter-to-a-report-in-power-bi"></a>Suodattimen lisääminen Power BI - raporttiin
 
@@ -76,6 +76,8 @@ Tässä menettelyssä käytetään jälleenmyyntianalyysimallia. Voi halutessasi
     Visualisointi muuttuu vastaamaan uutta suodatinta. Jos tallennat suodattimen sisältävän raportin, raporttia lukevat käyttäjät ensinnäkin näkevät visuaalisen suodattimen ja voivat lisäksi käsitellä suodatinta lukunäkymässä valitsemalla tai tyhjentämällä arvoja.
      
     ![Suodatettu visualisointi](media/power-bi-report-add-filter/power-bi-search-visual-filter-results.png)
+    
+    Kun käytät suodatinta visualisoinnissa käytetyssä kentässä, ja kenttä koostetaan (esimerkiksi summa, keskiarvo tai määrä), suodatat *koostetussa* arvossa jokaisessa arvopisteessä. Jos siis haluat suodattaa yllä olevan visualisoinnin, jossa **Tämän vuoden myynti > 500000**, tarkoittaa, että tuloksessa näkyy vain **13 - Charleston Fashion Direct** -arvopiste. [Mallimittareiden](desktop-measures.md) suodattimet koskevat aina arvopisteen koostearvoa.
 
 ### <a name="filter-with-a-field-thats-not-in-the-visual"></a>Suodattaminen kentällä, joka ei ole visualisoinnissa
 
@@ -94,6 +96,8 @@ Nyt lisäämme visualisointiin uuden kentän visuaalisen tason suodattimena.
     ![Suodatettu visualisointi](media/power-bi-report-add-filter/power-bi-search-visual-filter-results-2.png)
 
     Jos tallennat suodattimen sisältävän raportin, raporttia lukevat käyttäjät voivat käsitellä **Aluejohtaja**-suodatinta lukunäkymässä valitsemalla tai tyhjentämällä arvoja.
+    
+    Jos vedät *numeerisen sarakkeen* suodatinruutuun visuaalisen tason suodattimen luomiseksi, suodatinta käytetään *pohjana olevissa tietoriveissä*. Esimerkiksi suodattimen lisääminen **Yksikkökustannus**-kenttään ja määrittämällä sen arvoksi **Yksikkökustannus** > 20 näyttää vain niiden tuoterivien tiedot, joissa yksikkökustannus oli suurempi kuin 20, visualisoinnissa näytettävien arvopisteiden kokonaisyksikkökustannuksesta riippumatta.
 
 ## <a name="add-a-filter-to-an-entire-page"></a>Suodattimen lisääminen koko sivulle
 
@@ -158,10 +162,6 @@ Katsotaan, miten porautumissuodatin toimii.
 1. Palaa edelliselle raporttisivulle valitsemalla taaksepäin osoittava nuoli.
 
 ## <a name="considerations-and-troubleshooting"></a>Huomioon otettavat seikat ja vianmääritys
-
-- Joissakin tilanteissa visuaalisen tason suodatin ja sivutason suodatin voivat palauttaa eri tuloksia.  Esimerkiksi, kun lisäät visuaalisen tason suodattimen, Power BI suodattaa kootut tulokset.  Oletuskooste on Summa, mutta voit [muuttaa koostetyyppiä](service-aggregates.md).  
-
-    Kun lisäät sivutason suodattimen, Power BI suodattaa ilman koostamista.  Koostamista ei tehdä, koska sivulla voi olla useita visualisointeja, joista jokainen voi hyödyntää eri koostetyyppiä.  Suodatinta käytetään siis jokaisella tietorivillä.
 
 - Jos Kentät-ruutu ei ole näkyvissä, varmista, että valittuna on raportin [muokkausnäkymä](service-interact-with-a-report-in-editing-view.md).    
 - Jos olet tehnyt paljon muutoksia suodattimiin ja haluat palata raportin tekijän oletusasetuksiin, valitse **Palauta oletukset** ylävalikosta.

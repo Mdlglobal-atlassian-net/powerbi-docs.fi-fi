@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 07/16/2019
-ms.openlocfilehash: ea1ae18f877793da9ac47023c236ba8a24f78ccf
-ms.sourcegitcommit: 277fadf523e2555004f074ec36054bbddec407f8
+ms.openlocfilehash: 6a2fce59171ec36241cd5de03d41f6a27f54c664
+ms.sourcegitcommit: 390dc3716d5c83385bedde63dd152431a77020e2
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68271199"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "68380221"
 ---
 # <a name="guidelines-for-power-bi-visuals"></a>Power BI -visualisointien ohjeet
 Varmista ennen kuin [julkaiset](https://docs.microsoft.com/power-bi/developer/office-store) visualisoinnin AppSourcessa muiden käytettäväksi, että noudatat ohjeita, jotta käyttäjäsi saavat erinomaisen käyttökokemuksen. 
@@ -26,7 +26,7 @@ Kaikissa Power BI:n visualisoinneissa tulee ottaa pikavalikko käyttöön, jotta
 
 ## <a name="logo-guidelines"></a>Logo-ohjeet
 
-Tässä osiossa annetaan ohjeet visualisoinnin logojen ja logotyyppien lisäämiseen.
+Tässä osiossa annetaan ohjeet visualisoinnin logojen ja logotyyppien lisäämiseen. Logot eivät ole pakollisia. Jos ne lisätään, niiden on noudatettava seuraavia ohjeita. 
 
 > [!IMPORTANT]
 > Logot sallitaan *ainoastaan muokkaustilassa*. Logoja *ei voi* näyttää tarkastelutilassa.

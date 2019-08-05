@@ -1,6 +1,6 @@
 ---
-title: Power BI Desktop lausekepohjaisia otsikoita
-description: Luo Power BI Desktop, joka muuttaa ohjelmallisen lausekkeisiin perustuvien käyttämällä ohjelmallisen ehdollisen dynaaminen otsikot
+title: Lausekepohjaiset otsikot Power BI Desktopissa
+description: Luo Power BI Desktopissa dynaamisia otsikoita, jotka muuttuvat ohjelmallisten lausekkeiden perusteella ehdollisen ohjelmallisen muotoilun avulla
 author: davidiseminger
 manager: kfile
 ms.reviewer: ''
@@ -10,32 +10,32 @@ ms.topic: reference
 ms.date: 04/10/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: b90ef66d2c118a70f1b18ed4fe302ce1db23e45c
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 1b4e134ef6f8da43a1856c8a5458c8c09b2c42b5
+ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "64769751"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68522167"
 ---
-# <a name="expression-based-titles-in-power-bi-desktop"></a>Power BI Desktop lausekepohjaisia otsikoita
+# <a name="expression-based-titles-in-power-bi-desktop"></a>Lausekepohjaiset otsikot Power BI Desktopissa
 
-Voit luoda dynaamisia, mukauttaa Power BI-visualisointien otsikot. Luot Data Analysis Expressions (DAX) perusteella kenttiä, muuttujien tai muita ohjelmallisen elementtejä, että visualisoinnit otsikot voit automaattisesti säätöjä tarpeen. Nämä muutokset perustuvat suodattimia, valinnat, tai muiden käyttäjien vuorovaikutuksen ja määritykset.
+Voit luoda dynaamisia, mukautettuja otsikoita Power BI:n visualisoinneille. Luomalla Data Analysis Expressions (DAX) -lausekkeita kenttien, muuttujien tai muiden ohjelmallisten elementtien perusteella visualisointien otsikkoja voidaan säätää automaattisesti tarvittaessa. Nämä muutokset perustuvat suodattimiin, valintoihin tai muihin käyttäjän toimiin ja määrityksiin.
 
-![Power BI Desktop näyttökuva ehdollisen muotoilun vaihtoehto](media/desktop-conditional-formatting-visual-titles/expression-based-title-01.png)
+![Näyttökuva Power BI Desktopin ehdollisen muotoilun asetuksesta](media/desktop-conditional-formatting-visual-titles/expression-based-title-01.png)
 
-Luot dynaaminen otsikoita, jota kutsutaan myös *lausekepohjaisia otsikot*, on helppoa. 
+Dynaamisten otsikkojen, joita kutsutaan joskus *lausekepohjaisiksi otsikoiksi*, luominen on helppoa. 
 
-## <a name="create-a-field-for-your-title"></a>Luo otsikko kenttä
+## <a name="create-a-field-for-your-title"></a>Luo kenttä otsikkoasi varten
 
-Ensimmäisessä vaiheessa luodaan lausekepohjaisia otsikko on luoda kentän otsikolle käyttää mallissa. 
+Lausekepohjaisen otsikon luomisen ensimmäinen vaihe on luoda malliin kenttä otsikkoa varten. 
 
-On monia erilaisia tapoja on visuaalinen otsikko vastaa mitä haluat sen oletetaan, että tai haluat express. Katsotaanpa pari esimerkkiä.
+On olemassa kaikenlaisia luovia tapoja, joiden avulla saat visualisoinnin otsikon kuvaamaan sitä, mitä haluat sen sanovan tai mitä haluat ilmaista. Tarkastellaan muutamaa esimerkkiä.
 
-Voit luoda lausekkeen, joka muutokset suodatinkontekstin, joka visualisoinnin vastaanottaa tuotteen tuotemerkin nimen perusteella. Seuraavassa kuvassa näkyy sellaisen kentän DAX-kaava.
+Voit luoda lausekkeen, joka muuttuu sen suodatuskontekstin mukaan, jonka visualisointi saa tuotteen tuotemerkin nimestä. Seuraavassa kuvassa näytetään tällaisen kentän DAX-kaava.
 
-![Näyttökuva DAX-kaava](media/desktop-conditional-formatting-visual-titles/expression-based-title-02.png)
+![Näyttökuva DAX-kaavasta](media/desktop-conditional-formatting-visual-titles/expression-based-title-02.png)
 
-Toinen esimerkki käyttää dynaamisia otsikko, joka muuttuu mukaan käyttäjän kielen tai maa-asetuksen. Voit luoda kielen mukainen otsikot käyttämällä DAX-mittayksikköä `USERCULTURE()` funktio. Tämä funktio palauttaa maa-asetuksen käyttäjälle, käyttöjärjestelmä tai selaimen asetusten perusteella. Voit valita oikean käännetty arvon DAX switch-lauseke. 
+Toinen esimerkki on käyttää dynaamista otsikkoa, joka muuttuu käyttäjän kielen tai maa-asetuksen perusteella. Voit luoda kielikohtaisia otsikoita DAX-mittayksikössä käyttämällä `USERCULTURE()`-funktiota. Tämä funktio palauttaa käyttäjän maa-asetuksen käyttöjärjestelmän tai selainasetusten perusteella. Voit käyttää seuraavaa DAX-switch-lauseketta oikean käännetyn arvon valitsemiseen. 
 
 ```
 SWITCH (
@@ -46,33 +46,35 @@ SWITCH (
 )
 ```
 
-Tai voit noutaa merkkijono, joka sisältää käännösten hakutaulukko. Taulukko sijoitetaan mallin. 
+Voit myös hakea merkkijonon hakutaulukosta, joka sisältää kaikki käännökset. Sijoita kyseinen taulukko malliin. 
 
-Nämä ovat vain muutama erityyppinen avulla voit luoda dynaamisia, lausekepohjaisia otsikot visualisoinnit Power BI Desktop esimerkkejä. Mitä voit tehdä-otsikot ovat rajoittaa vain mielikuvitustasi ja mallin.
+Nämä ovat vain muutamia esimerkkejä, joiden avulla voit luoda dynaamisia, lausekepohjaisia otsikoita Power BI Desktopin visualisoinneille. Otsikoiden käyttötapojen rajana ovat vain mielikuvituksesi ja mallisi.
 
 
-## <a name="select-your-field-for-your-title"></a>Valitse kenttä-otsikko
+## <a name="select-your-field-for-your-title"></a>Valitse kenttä otsikkoasi varten
 
-Kun olet luonut luot mallisi kentän DAX-lauseke, sinun on käytettävä visualisoinnin otsikon.
+Kun olet luonut DAX-lausekkeen malliisi luomassasi kentässä, sinun on otettava se käyttöön visualisoinnin otsikossa.
 
-Valitse kenttä ja käyttää sitä, siirry **visualisoinnit** ruudussa. \- **Muodossa** alueella **otsikko** näyttämään visualisoinnin otsikon asetukset. 
+Jos haluat valita kentän ja ottaa sen käyttöön, siirry **Visualisoinnit**-ruutuun. Näytä visualisoinnin otsikon asetukset valitsemalla **Muoto**-alueella **Otsikko**. 
 
-Kun napsautat hiiren kakkospainikkeella **otsikkoteksti**, näytölle tulee kontekstivalikko, jonka avulla voit valita ***fx* ehdollisen muotoilun**. Kun valitset valikosta, **otsikkoteksti** valintaikkuna tulee näkyviin. 
+Kun napsautat hiiren kakkospainikkeella **Otsikkoteksti**, esiin tulee pikavalikko, jossa voit valita ***fx*Ehdollinen muotoilu**. Kun valitset kyseisen valikkovaihtoehdon, näkyviin tulee **Otsikkoteksti**-valintaikkuna. 
 
-![Näyttökuva-otsikon teksti-valintaikkuna](media/desktop-conditional-formatting-visual-titles/expression-based-title-02b.png)
+![Näyttökuva Otsikkoteksti-valintaikkunasta](media/desktop-conditional-formatting-visual-titles/expression-based-title-02b.png)
 
-Valitse tämä ikkuna kenttä, jonka loit käytettävä otsikko.
+Tästä ikkunasta voit valita kentän, jonka loit otsikkosi käyttöä varten.
 
 ## <a name="limitations-and-considerations"></a>Rajoitukset ja huomioitavat asiat
 
-Visualisointien lausekepohjaisia otsikot nykyisen toteuttamiseen joitakin rajoituksia:
+Visualisointien lausekepohjaisten otsikoiden nykyiseen toteutukseen liittyy joitakin rajoituksia:
 
-* Lausekepohjaisia muotoilu ei tueta tällä hetkellä Python-visualisoinnit, R-visualisointeja tai avain Influencers visualisoinnin.
-* Voit luoda otsikon kentän on oltava merkkijono tietotyyppi. Mittayksiköitä, jotka palauttavat lukuja tai päivämäärä/kellonaika (tai minkä tahansa muun tietotyypin) ei tueta tällä hetkellä.
+* Lausekepohjaista muotoilua ei tällä hetkellä tueta Python-visualisoinneissa, R-visualisoinneissa tai Tärkeiden vaikuttajien visualisoinneissa.
+* Otsikolle luomasi kentän on oltava merkkijonotietotyyppiä. Mittayksiköitä, jotka palauttavat lukuja tai päivämääriä/aikaa (tai mitä tahansa muuta tietotyyppiä), ei tueta tällä hetkellä.
+* Lausekepohjaisia otsikoita ei siirretä, kun kiinnität visualisoinnin koontinäyttöön.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
-Tässä artikkelissa kuvataan miten voit luoda DAX-lausekkeita, jotka Ota visualisoinnit otsikot dynaaminen kenttiin, voit muuttaa, kun käyttäjät käyttävät raportteja. Sinulla voi olla hyötyä seuraavissa artikkeleissa myös.
+Tässä artikkelissa kuvataan, miten voit luoda DAX-lausekkeita, jotka muuntavat visualisointien otsikot dynaamisiksi kentiksi, jotka voivat muuttua käyttäjien käyttäessä raportteja. Myös seuraavista artikkeleista voi olla sinulle hyötyä.
 
-* [Rajat raportin porautumisen käyttäminen Power BI Desktop](desktop-cross-report-drill-through.md)
+* [Ehdollinen muotoilu taulukoissa](desktop-conditional-table-formatting.md)
+* [Raporttien välillä porautumisen käyttäminen Power BI Desktopissa](desktop-cross-report-drill-through.md)
 * [Porautumisen käyttäminen Power BI Desktopissa](desktop-drillthrough.md)

@@ -10,21 +10,21 @@ ms.topic: conceptual
 ms.date: 07/15/2019
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 39f5a01a396e45207777b1a5e58e73808ddf3f88
-ms.sourcegitcommit: a58461fe7dfa65c751490b52de5fc73f8e69a17f
+ms.openlocfilehash: 1a2415ba840a1b88f4c7a215a520d0cc88f70e49
+ms.sourcegitcommit: 8aa90f662afb7492ffcfc11ef142cdb0ccecc9aa
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68352185"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68462240"
 ---
 # <a name="merge-or-append-on-premises-and-cloud-data-sources"></a>Paikallisten ja pilvipalvelutietolähteiden yhdistäminen ja liittäminen
 
 [!INCLUDE [gateway-rewrite](includes/gateway-rewrite.md)]
 
-Paikallisen tietoyhdyskäytävän avulla voit yhdistää tai liittää paikallisia ja pilvipalvelutietolähteitä samassa kyselyssä. Tästä on hyötyä, kun haluat yhdistää tietoja useista lähteistä käyttämättä erillisiä kyselyjä.
+Voit käyttää paikallista tietoyhdyskäytävää yhdistääksesi tai liittääksesi paikalliset ja pilvipalvelutietolähteet samaan kyselyyn. Tästä ratkaisusta on hyötyä, kun haluat yhdistää tietoja useista lähteistä käyttämättä erillisiä kyselyjä.
 
 >[!NOTE]
->Tämä artikkeli koskee vain tietojoukkoja, joihin on yhdistetty sekä pilvitietolähteitä että paikallisia tietolähteitä yksittäiseen kyselyyn. Tietojoukoissa, joissa on erillisiä kyselyitä (toinen muodostaa yhteyden paikalliseen ja toinen pilvitietolähteeseen), pilvitietolähdettä käyttävää kyselyä ei suoriteta yhdyskäytävän avulla.
+>Tämä artikkeli koskee vain tietojoukkoja, joihin on yhdistetty sekä pilvitietolähteitä että paikallisia tietolähteitä yksittäiseen kyselyyn. Tietojoukoissa, joissa on erillisiä kyselyitä (toinen muodostaa yhteyden paikalliseen tietolähteeseen ja toinen pilvitietolähteeseen), yhdyskäytävä ei suorita pilvitietolähteen kyselyä.
 
 ## <a name="prerequisites"></a>Edellytykset
 
@@ -51,14 +51,13 @@ Paikallisen tietoyhdyskäytävän avulla voit yhdistää tai liittää paikallis
 6. Uuden tietojoukon **Tietojoukon asetukset** -sivulla:
 
    - Valitse kyseiseen tietolähteeseen liittyvän yhdyskäytävän paikallinen lähde.
-
-   - Kohdasta **Tietolähteen tunnistetiedot**, muokkaa tarvittaessa tietolähteen tunnistetietoja.
+   - Muokkaa tarvittaessa tietolähteen tunnistetietoja kohdassa **Tietolähteen tunnistetiedot**.
 
     Varmista yksityisyystasojen asianmukainen määritys sekä pilvitietolähteissä että paikallisissa tietolähteissä, jotta liitoksia käsitellään turvallisesti.
 
      ![Tietojoukon asetukset](media/service-gateway-mashup-on-premises-cloud/dataset-settings.png)
 
-7. Kun pilvipalvelun tunnistetiedot on määritetty, voit päivittää tietojoukon käyttämällä **Päivitä nyt** -vaihtoehtoa tai ajoittaa ajoittaisen päivityksen.
+7. Kun pilvipalvelun tunnistetiedot on määritetty, voit päivittää tietojoukon käyttämällä **Päivitä nyt** -vaihtoehtoa. Voit myös ajoittaa sen päivittämään säännöllisin väliajoin.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 

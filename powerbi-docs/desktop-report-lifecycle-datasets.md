@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 06/07/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 8b68f6ee5e475c1b53f914c84372a0875fe87b5d
-ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.openlocfilehash: cccbfb6bbe43e70ebcea94322923f7600d58aca8
+ms.sourcegitcommit: 0332efe8f83cb55a9b8ea011db7c99e9b4568118
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "66839133"
+ms.lasthandoff: 07/27/2019
+ms.locfileid: "68590499"
 ---
 # <a name="connect-to-datasets-in-the-power-bi-service-from-power-bi-desktop"></a>Tietojoukkoihin yhdistäminen Power BI -palvelussa Power BI Desktopista
 Voit muodostaa reaaliaikaisen yhteyden jaettuun tietojoukkoon Power BI -palvelussa ja luoda useita erilaisia raportteja samasta tietojoukkoryhmästä. Tämä tarkoittaa sitä, että voit luoda täydellisen tietomallin Power BI Desktopissa ja julkaista sen Power BI -palvelussa. Sen jälkeen sinä ja muut käyttäjät voitte luoda useita erilaisia raportteja (erillisiin .pbix-tiedostoihin) samasta, yleisestä tietomallista, ja tallentaa ne eri työtiloihin. Tätä ominaisuutta kutsutaan **Power BI -palvelun reaaliaikaiseksi yhteydeksi**.
@@ -28,20 +28,20 @@ Tästä ominaisuudesta on monenlaista hyötyä, mukaan lukien parhaat käytänn�
 Yksi Power BI:n suosion haaste on raporttien, koontinäyttöjen ja niiden pohjana olevien tietomallien runsaus. Tämä johtuu siitä, että näyttäviä raportteja on helppo luoda **Power BI Desktopissa**, jakaa ([julkaista](desktop-upload-desktop-files.md)) nämä raportit **Power BI -palvelussa** ja luoda upeita koontinäyttöjä näistä tietojoukoista. Koska niin monet henkilöt tekevät näin käyttäen usein samoja (tai lähes samoja) tietojoukkoja, on vaikea tietää, mikä raportti perustui mihinkin tietojoukkoon, ja ovatko nämä tietojoukot ajantasaisia. Tähän haasteeseen voidaan vastata **Power BI -palvelun reaaliaikaisen yhteyden** avulla. Se helpottaa ja yhdenmukaistaa yleisten tietojoukkojen raporttien ja koontinäyttöjen luomista, jakamista ja laajentamista.
 
 ### <a name="create-a-dataset-everyone-can-use-then-share-it"></a>Luo tietojoukko, jota jokainen voi käyttää, ja jaa se
-Oletetaan, että tiimissäsi on Anna (liiketoiminta-analyytikko), joka on taitava luomaan hienoja tietomalleja (kutsutaan usein tietojoukoiksi). Kokenut Anna luo tietojoukon ja raportin, ja jakaa sitten raportin **Power BI -palvelussa**.
+Oletetaan, että tiimissäsi on Anna (liiketoiminta-analyytikko), joka on taitava luomaan hienoja tietomalleja (kutsutaan usein tietojoukoiksi). Kokenut Anna luo tietojoukon ja raportin ja jakaa sitten raportin **Power BI -palvelussa**.
 
 ![Power BI -palveluun kirjautuminen](media/desktop-report-lifecycle-datasets/report-lifecycle_02a.png)
 
-Kaikki pitävät Annan raportista ja tietojoukosta, ja tässä ongelma juuri piilee – kaikki tiimin jäsenet yrittävät luoda *oman versionsa* tästä tietojoukosta ja jakaa sitten omat raporttinsa tiimin kanssa. Yhtäkkiä tiimin työtilassa on lukuisia raportteja (eri tietojoukoista) **Power BI -palvelussa**. Mikä on niistä uusin? Olivatko tietojoukot samat vai vain suurin piirtein samat? Mitkä olivat niiden erot? **Power BI -palvelun reaaliaikaisen yhteyden** ansiosta tilanne saadaan hallintaan. Näemme seuraavassa osiossa, miten muut voivat käyttää Annan julkaisemaa tietojoukkoa omissa raporteissaan ja omissa työtiloissaan. Näin kaikki voivat luoda saman vankan, yhtenäisen ja julkaistun tietojoukon avulla omia yksilöllisiä raporttejaan.
+Kaikki pitävät Annan raportista ja tietojoukosta, ja tässä ongelma juuri piilee – kaikki tiimin jäsenet yrittävät luoda *oman versionsa* tästä tietojoukosta ja jakavat sitten omat raporttinsa tiimin kanssa. Yhtäkkiä tiimin työtilassa voi olla lukuisia raportteja (eri tietojoukoista) **Power BI -palvelussa**. Mikä on niistä uusin? Olivatko tietojoukot samat vai vain suurin piirtein samat? Mitkä olivat niiden erot? **Power BI -palvelun reaaliaikaisen yhteyden** ansiosta tilanne saadaan hallintaan. Näemme seuraavassa osiossa, miten muut voivat käyttää Annan julkaisemaa tietojoukkoa omissa raporteissaan ja omissa työtiloissaan. Näin kaikki voivat luoda saman vankan, yhtenäisen ja julkaistun tietojoukon avulla omia yksilöllisiä raporttejaan.
 
 ### <a name="connect-to-a-power-bi-service-dataset-using-a-live-connection"></a>Yhteyden muodostaminen Power BI -palvelun tietojoukkoon reaaliaikaisen yhteyden avulla
-Kun Anna on luonut raportin (ja sen perustana olevan tietojoukon), hän julkaisee sen **Power BI -palvelussa**. Raportti näkyy nyt hänen tiiminsä työtilassa Power BI -palvelussa. Jos hän tallentaa sen *uuteen käyttökokemuksen mukaiseen työtilaan*, hän voi määrittää muodostamisoikeudet niin, että kaikki hänen työtilaansa kuuluvat ja sen ulkopuoliset henkilöt voivat nähdä raportin ja käyttää sitä.
+Anna luo raportin (ja sen perustana olevan tietojoukon) ja sitten julkaisee sen **Power BI -palvelussa**. Raportti näkyy nyt hänen tiiminsä työtilassa Power BI -palvelussa. Jos Anna tallentaa sen *uuteen käyttökokemuksen mukaiseen työtilaan*, hän voi määrittää muodostamisoikeudet niin, että kaikki hänen työtilaansa kuuluvat ja sen ulkopuoliset henkilöt voivat nähdä raportin ja käyttää sitä.
 
 Saat lisätietoja uudesta työtilojen käyttökokemuksesta [sovellustyötilat](service-new-workspaces.md)-kohdasta.
 
-Annan työtilaan kuuluvat ja sen ulkopuoliset henkilöt voivat nyt muodostaa reaaliaikaisen yhteyden Annan jaettuun tietomalliin (**Power BI -palvelun reaaliaikaisen yhteyden** avulla) ja luoda *Annan alkuperäisestä tietojoukosta* omia yksilöllisiä raporttejaan *omissa, uuden käyttökokemuksen mukaisissa työtiloissaan*.
+Annan työtilaan kuuluvat ja sen ulkopuoliset henkilöt voivat nyt muodostaa reaaliaikaisen yhteyden Annan jaettuun tietomalliin (**Power BI -palvelun reaaliaikaisen yhteyden** avulla) ja luoda *alkuperäisestä tietojoukosta* omia yksilöllisiä raporttejaan *omissa, uuden käyttökokemuksen mukaisissa työtiloissaan*.
 
-Näet seuraavassa kuvassa, miten Anna luo yhden **Power BI Desktop** -raportin ja julkaisee sen (yhdessä sen tietomallin kanssa) **Power BI -palvelussa**. Muut voivat sitten muodostaa yhteyden Annan tietomalliin **Power BI -palvelun reaaliaikaisen yhteyden** avulla ja luoda tietojoukon pohjalta omia yksilöllisiä raporttejaan.
+Näet seuraavassa kuvassa, miten Anna luo yhden **Power BI Desktop** -raportin ja julkaisee sen (yhdessä sen tietomallin kanssa) **Power BI -palvelussa**. Muut voivat sitten muodostaa yhteyden Annan tietomalliin **Power BI -palvelun reaaliaikaisen yhteyden** avulla ja luoda Annan tietojoukon pohjalta omia yksilöllisiä raporttejaan.
 
 ![Useat samaan tietojoukkoon perustuvat raportit](media/desktop-report-lifecycle-datasets/report-lifecycle_03.png)
 
@@ -54,15 +54,15 @@ Näet seuraavassa kuvassa, miten Anna luo yhden **Power BI Desktop** -raportin j
 Kun nyt tunnemme **Power BI -palvelun reaaliaikaisen yhteyden** edut ja sen, miten voimme käyttää sitä parhaana käytäntönä raportin elinkaaren hallintaan, käsittelemme seuraavaksi Annan upeaan raporttiin (ja tietojoukkoon) liittyviä vaiheita jaetun tietojoukon luomiseksi. Annan Power BI -tiimin jäsenet voivat sitten käyttää sitä.
 
 ### <a name="publish-a-power-bi-report-and-dataset"></a>Power BI -raportin ja -tietojoukon julkaiseminen
-Kun hallitset raportin elinkaarta **Power BI -palvelun reaaliaikaisen yhteyden** avulla, tarvitset ensinnäkin raportin (ja tietojoukon), jota tiimin jäsenet haluavat käyttää. Annan on siten ensin **julkaistava** raporttinsa **Power BI Desktopista**. Hän valitseekin **Julkaise** Power BI Desktopin **Aloitus**-valintanauhasta.
+Kun hallitset raportin elinkaarta **Power BI -palvelun reaaliaikaisen yhteyden** avulla, tarvitset ensinnäkin raportin (ja tietojoukon), jota tiimin jäsenet haluavat käyttää. Annan on siten ensin **julkaistava** raporttinsa **Power BI Desktopista**. Se tehdään valitsemalla **Julkaise** Power BI Desktopin **Aloitus**-valintanauhasta.
 
 ![Raportin julkaiseminen](media/desktop-report-lifecycle-datasets/report-lifecycle_02a.png)
 
-Jos hän ei ole kirjautunut sisään Power BI -palvelun tililleen, häntä kehotetaan tekemään niin.
+Jos Anna ei ole kirjautunut Power BI -palvelun tiliin, ponnahdusikkuna kehottaa häntä tekemään niin.
 
 ![Power BI Desktopiin kirjautuminen](media/desktop-report-lifecycle-datasets/report-lifecycle_04.png)
 
-Sieltä hän voi valita työtilan kohteen, johon hänen raporttinsa ja tietojoukkonsa julkaistaan. Muista, että jos hän tallentaa sen uuden käyttökokemuksen mukaiseen työtilaan, kuka tahansa, jolla on muodostamisoikeudet, voivat käyttää kyseistä tietojoukkoa. Muodostamisoikeudet määritetään julkaisemisen jälkeen Power BI -palvelussa. Jos hän tallentaa perinteiseen työtilaan, vain sellaiset jäsenet, joilla on julkaistun raportin sisältävän työtilan käyttöoikeudet, voivat käyttää sen tietojoukkoa **Power BI -palvelun reaaliaikaisen yhteyden** avulla.
+Sieltä Anna voi valita työtilan kohteen, johon hänen raporttinsa ja tietojoukkonsa julkaistaan. Muista, että jos Anna tallentaa sen uuden käyttökokemuksen mukaiseen työtilaan, kuka tahansa, jolla on muodostamisoikeudet, voi käyttää kyseistä tietojoukkoa. Muodostamisoikeudet määritetään julkaisemisen jälkeen Power BI -palvelussa. Jos työ tallennetaan perinteiseen työtilaan, vain sellaiset jäsenet, joilla on julkaistun raportin sisältävän työtilan käyttöoikeudet, voivat käyttää sen tietojoukkoa **Power BI -palvelun reaaliaikaisen yhteyden** avulla.
 
 ![Power BI -palveluun kirjautuminen](media/desktop-report-lifecycle-datasets/report-lifecycle_05.png)
 
@@ -100,8 +100,8 @@ Voit nyt itse (ja muut voivat) luoda ja jakaa mukautettuja raportteja, kaikki sa
 
 * Vain käyttäjät, joilla on tietojoukon muodostamisoikeudet, voivat muodostaa yhteyden julkaistuun tietojoukkoon **Power BI -palvelun reaaliaikaisen yhteyden** avulla. 
 * Maksuttoman version käyttäjät näkevät vain oman työtilansa sekä Premium-työtilojen tietojoukot.
-* Koska kyse on reaaliaikaisesta yhteydestä, vasen siirtymisruutu ja mallinnus ovat poissa käytöstä samalla tavoin kuin muodostettaessa yhteyttä **SQL Server Analysis Servicesiin**.
-* Koska kyse on reaaliaikaisesta yhteydestä, RLS (rivi- ja roolitason suojaus), OneDrive for Business ja muut tällaiset yhteystoiminnot pakotetaan samalla tavoin kuin muodostettaessa yhteyttä **SQL Server Analysis Servicesiin**.
+* Koska kyse on reaaliaikaisesta yhteydestä, vasen siirtymisruutu ja mallinnus ovat poissa käytöstä samalla tavoin kuin muodostettaessa yhteyttä **SQL Server Analysis Servicesiin** ja voit yhdistää vain yhteen tietojoukkoon kussakin raportissa.
+* Koska kyse on reaaliaikaisesta yhteydestä, RLS (rivi- ja roolitason suojaus) ja muut tällaiset yhteystoiminnot pakotetaan samalla tavoin kuin muodostettaessa yhteyttä **SQL Server Analysis Servicesiin**.
 * Jos omistaja muuttaa alkuperäistä jaettua .pbix-tiedostoa, **Power BI -palvelussa** jaettava tietojoukko ja raportti korvataan. Kyseiseen tietojoukkoon perustuvia raportteja ei korvata, vaan tietojoukkoon tehdyt muutokset näkyvät raportissa.
 * Työtilan jäsenet eivät voi korvata alunperin jaettua raporttia. Jos näin yritetään tehdä, näyttöön tulee varoitus, joka kehottaa sinua nimeämään tiedoston uudelleen ja julkaisemaan sen.
 * Jos poistat jaetun tietojoukon **Power BI -palvelussa**, muut tietojoukkoon perustuvat raportit enää toimi oikein eivätkä niiden visualisoinnit näy.

@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 06/19/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: d001c75d006838f46ce40a8f81bad0a9a058b148
-ms.sourcegitcommit: 90aa7ea5fcc7cf0fd7f6c3c1efeff5f27e8ef0dd
+ms.openlocfilehash: 86a3faf2095ff5100bc372a68b7d56861eb94806
+ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "67299430"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68523342"
 ---
 # <a name="export-data-from-visualizations"></a>Tietojen vieminen visualisoinneista
 
@@ -150,9 +150,9 @@ Nämä rajoitukset ja huomioitavat asiat koskevat Power BI Desktopia ja Power BI
 
 - Jos haluat viedä tiedot visualisoinnista, sinulla on oltava [pohjana olevan tietojoukon luonnin käyttöoikeus](https://docs.microsoft.com/power-bi/service-datasets-build-permissions#build-permissions-for-shared-datasets).
 
--  **Power BI Desktopista** ja **Power BI -palvelusta** voidaan viedä *.csv*-tiedostoon korkeintaan 30 000 riviä.
+-  **Power BI Desktopista** ja **Power BI -palvelusta** voidaan viedä **tuontitilaraportista** *.csv*-tiedostoon korkeintaan 30 000 riviä.
 
-- Sovellukset voivat viedä *.xlsx*-tiedostoon korkeintaan 150 000 riviä.
+- Sovellukset voivat viedä **tuontitilaraportista** *.xlsx*-tiedostoon korkeintaan 150 000 riviä.
 
 - Vienti *pohjana olevien tietojen* avulla ei toimi, jos:
 
@@ -166,7 +166,7 @@ Nämä rajoitukset ja huomioitavat asiat koskevat Power BI Desktopia ja Power BI
 
 - *Pohjana olevien tietojen* vienti ei toimi, jos *Näytä kohteet, joilla ei ole tietoja* -asetus on käytössä visualisoinnissa, jota Power BI on viemässä.
 
-- Käytettäessä DirectQueryä Power BI voi viedä enintään 16 Mt tietoja. Odottamaton tulos saattaa olla, että viet vähemmän kuin rivien enimmäismäärän. Tämä on todennäköistä, jos:
+- Käytettäessä DirectQueryä Power BI voi viedä enintään 16 Mt pakkaamattomia tietoja. Odottamaton tulos saattaa olla, että viet vähemmän kuin rivien enimmäismäärän. Tämä on todennäköistä, jos:
 
     - Sarakkeita on useita.
 
