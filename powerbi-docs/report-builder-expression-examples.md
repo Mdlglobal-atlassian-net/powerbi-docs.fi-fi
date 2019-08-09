@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.assetid: 87ddb651-a1d0-4a42-8ea9-04dea3f6afa4
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: db0ea02237a2279c26f2c47cecd3bae794a5cba4
-ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.openlocfilehash: 9f3131749a484380a1352d39ae35ea409f6dc697
+ms.sourcegitcommit: bc688fab9288ab68eaa9f54b9b59cacfdf47aa2e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "66840299"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68624136"
 ---
 # <a name="expression-examples-in-power-bi-report-builder"></a>Power BI:n raportin muodostimen lauseke-esimerkit
 Lausekkeita käytetään usein Power BI:n sivutettujen raporttien muodostimella luoduissa raporteissa sisällön ja raportin ulkoasun hallintaan. Lausekkeet kirjoitetaan Microsoft Visual Basicilla, ja niissä voidaan käyttää sisäisiä funktioita, mukautettua koodia, raportti- ja ryhmämuuttujia sekä käyttäjän määrittämiä muuttujia. Lausekkeet alkavat yhtäläisyysmerkillä (=).   
@@ -40,7 +40,7 @@ Katso kohdasta [lausekkeet Power BI:n raportin muodostimessa](report-builder-exp
 ##  <a name="VisualBasicFunctions"></a> Visual Basic -funktiot  
  Visual Basic -funktioilla voit käsitellä tietoja, jotka näytetään tekstiruuduissa tai joita käytetään parametreissa, ominaisuuksissa tai raportin muissa alueissa. Tämä osio sisältää esimerkkejä joistain tällaisista funktioista. Katso lisätiedot kohdasta [Visual Basic Runtime -kirjaston jäsenet](https://go.microsoft.com/fwlink/?LinkId=198941) MSDN:ssä.  
   
- .NET Framework tarjoaa monia mukautettuja muotoiluasetuksia, kuten tarkat päivämäärämuodot. Katso lisätiedot [Muotoilutyypit](https://go.microsoft.com/fwlink/?LinkId=112024)-kohdasta MSDN:ssä.  
+ .NET Framework tarjoaa monia mukautettuja muotoiluasetuksia, kuten tarkat päivämäärämuodot. Katso lisätiedot [Muotoilutyypit](/dotnet/standard/base-types/formatting-types)-kohdasta.  
   
 ### <a name="math-functions"></a>Matemaattiset funktiot  
   

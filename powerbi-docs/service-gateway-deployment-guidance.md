@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 07/15/2019
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 4351804330982b32582c4c782ef7c2fa0e92f197
-ms.sourcegitcommit: 277fadf523e2555004f074ec36054bbddec407f8
+ms.openlocfilehash: 5a0c29f04e7329373eec5f60af840e503ec22b3c
+ms.sourcegitcommit: 73228d0a9038b8369369c059ad06168d2c5ff062
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68271712"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "68729983"
 ---
 # <a name="guidance-for-deploying-a-data-gateway-for-power-bi"></a>Power BI:n tietoyhdyskäytävän käyttöönotto-ohjeet
 
@@ -23,7 +23,7 @@ ms.locfileid: "68271712"
 
 Tämä artikkeli sisältää ohjeita ja huomioon otettavia seikkoja, kun Power BI:n tietoyhdyskäytävä otetaan käyttöön verkko-ympäristössä.
 
-Lisätietoja paikallisen tietoyhdyskäytävän lataamisesta, asentamisesta, määrittämisestä ja hallinnasta on artikkelissa [Mikä paikallinen tietoyhdyskäytävä on](/data-integration/gateway/service-gateway-onprem). Saat lisätietoja paikallisesta tietoyhdyskäytävästä ja Power BI:stä käymällä [Microsoft Power -blogissa](https://powerbi.microsoft.com/blog/) ja [Microsoft Power BI -yhteisön](https://community.powerbi.com/) sivustossa.
+Lisätietoja paikallisen tietoyhdyskäytävän lataamisesta, asentamisesta, määrittämisestä ja hallinnasta on artikkelissa [Mikä paikallinen tietoyhdyskäytävä on?](/data-integration/gateway/service-gateway-onprem). Saat lisätietoja paikallisesta tietoyhdyskäytävästä ja Power BI:stä käymällä [Microsoft Power -blogissa](https://powerbi.microsoft.com/blog/) ja [Microsoft Power BI -yhteisön](https://community.powerbi.com/) sivustossa.
 
 ## <a name="installation-considerations-for-the-on-premises-data-gateway"></a>Paikallisen tietoyhdyskäytävän asennuksessa huomioitavat seikat
 
@@ -37,29 +37,31 @@ Yhdyskäytävää käyttävän raportin käyttäjien lukumäärä on tärkeä mi
 * Mitä yhteystyyppejä he käyttävät (DirectQuery vai tuonti)?
 * Käyttävätkö kaikki käyttäjät samaa raporttia?
 
-Jos kaikki käyttäjät käyttävät tiettyä raporttia joka päivä samaan aikaan, kannattaa varmistaa, että asennat yhdyskäytävän tietokoneeseen, joka pystyy käsittelemään kaikki kyseiset käsittelypyynnöt (seuraavissa osioissa kerrotaan resurssilaskureista ja vähimmäisvaatimuksista, jotka auttavat sinua selvittämään tämän).
+Jos kaikki käyttäjät käyttävät annettua raporttia samaan aikaan joka päivä, varmista, että asennat yhdyskäytävän tietokoneeseen, joka pystyy käsittelemään kaikki nämä pyynnöt. Seuraavissa osioissa on resurssilaskureita ja vähimmäisvaatimuksia, joiden avulla voit määrittää, onko tietokoneessa riittävästi suorituskykyä.
 
-**Power BI:ssä** on rajoitus, joka sallii vain *yhden* yhdyskäytävän *raporttia* kohti, joten vaikka raportti perustuisi useampiin tietolähteisiin, kaikkien näiden tietolähteiden on käytettävä yhtä samaa yhdyskäytävää. Jos raporttinäkymä perustuu *useisiin* raportteihin, voit kuitenkin käyttää erillistä yhdyskäytävää kullekin raportille ja siten jakaa yhdyskäytävän kuormitusta näiden useiden raporttien kesken, jotka ovat osa tätä yhtä raporttinäkymää.
+Power BI:n rajoite sallii vain *yhden* yhdyskäytävän *raporttia* kohden. Vaikka raportti perustuisi useisiin tietolähteisiin, kaikkien tällaisten tietolähteiden on mentävä yhden yhdyskäytävän läpi. Jos koontinäyttö perustuu *useisiin* raportteihin, voit käyttää erillistä yhdyskäytävää kunkin raportin kohdalla. Tällä tavoin voit jakaa yhdyskäytävän kuormitusta useiden raporttien kesken, jotka vaikuttavat yhteen koontinäyttöön.
 
 ### <a name="connection-type"></a>Yhteystyyppi
 
-**Power BI** tarjoaa kaksi yhteystyyppiä: **DirectQueryn** ja **tuonnin**. Kaikki tietolähteet eivät tue molempia yhteystyyppejä ja useat syyt voivat vaikuttaa siihen, kumpi valitaan, kuten suojausvaatimukset, suorituskyky, tietorajoitukset ja tietomallikoot. Lisätietoja yhteystyypistä ja tuetuista tietolähteistä on [käytettävissä olevien tietolähdetyyppien luettelossa](service-gateway-data-sources.md#list-of-available-data-source-types).
+Power BI tarjoaa kaksi yhteystyyppiä: DirectQueryn ja tuonnin. Kaikki tietolähteet eivät tue molempia yhteystyyppejä. Monet tekijät, kuten suojausvaatimukset, suorituskyky, tietorajoitukset ja tietomallin koot, voivat vaikuttaa valintaasi. Lisätietoja yhteystyypistä ja tuetuista tietolähteistä on [käytettävissä olevien tietolähdetyyppien luettelossa](service-gateway-data-sources.md#list-of-available-data-source-types).
 
-Käytössä oleva yhteystyypin mukaan yhdyskäytävän käyttö voi olla erilaista. Sinun tulee esimerkiksi yrittää erottaa **DirectQuery**-tietolähteet **ajoitetun päivityksen** tietolähteistä aina kun mahdollista (olettaen, että ne ovat eri raporteissa ja voidaan erottaa). Tämä estää sen, että yhdyskäytävällä olisi tuhansia DirectQuery-pyyntöjä jonossa samaan aikaan aamuksi ajoitetun suurikokoisen tietomallin päivityksen kanssa, jota käytetään yrityksen pääasiallisessa raporttinäkymässä. Seuraavassa on kummankin osalta huomioitavia seikkoja:
+Käytössä oleva yhteystyypin mukaan yhdyskäytävän käyttö voi olla erilaista. Yritä esimerkiksi erottaa DirectQuery -tietolähteet ajoitetuista päivitystietolähteistä aina, kun se on mahdollista. Oletuksena on, että ne ovat eri raporteissa ja että ne voidaan erottaa toisistaan. Lähteiden erottaminen estää sen, että yhdyskäytävällä olisi tuhansia DirectQuery-pyyntöjä jonossa samaan aikaan aamuksi ajoitetun suurikokoisen tietomallin päivityksen kanssa, jota käytetään yrityksen pääasiallisessa raporttinäkymässä. 
 
-* **Ajoitettu päivitys**: Riippuen kyselyn koosta ja päivittäin tehtävien päivitysten määrästä voit valita, pysytkö suositeltujen laitteistovaatimusten välillä vai päivitätkö suuremman suorituskyvyn koneeseen. Jos tiettyä kyselyä ei ole taitettu, yhdyskäytäväkoneessa tapahtuu muunnoksia ja siten yhdyskäytäväkone hyötyy suuremmasta käytettävissä olevasta RAM-muistista.
+Seuraavassa on kummankin osalta huomioitavia seikkoja:
 
-* **DirectQuery**: Kysely lähetään aina, kun joku käyttäjä avaa raportin tai tarkastelee tietoja. Joten jos arvelet yli 1 000 käyttäjän käyttävän tietoja samanaikaisesti, kannattaa varmistaa, että tietokoneessa on tehokkaat ja suorituskykyiset laitteisto-osat. Suoritinydinten määrän lisääminen parantaa **DirectQuery**-yhteyden siirtomäärää.
+* **Ajoitettu päivitys**: Riippuen kyselyn koosta ja päivittäin tehtävien päivitysten määrästä voit valita, pysytkö suositelluissa laitteistovaatimuksissa vai päivitätkö suuremman suorituskyvyn koneeseen. Jos tiettyä kyselyä ei ole taitettu, yhdyskäytäväkoneessa tapahtuu muunnoksia. Siten yhdyskäytäväkone hyötyy suuremmasta käytettävissä olevasta RAM-muistista.
 
-Asennuksessa käytettävää tietokonetta koskevat vaatimukset löytyvät paikallisen tietoyhdyskäytävän [asennusvaatimuksista](/data-integration/gateway/service-gateway-install#requirements).
+* **DirectQuery**: Kysely lähetään aina, kun joku käyttäjä avaa raportin tai tarkastelee tietoja. Jos odotat yli 1 000 käyttäjän käyttävän tietoja samanaikaisesti, varmista, että tietokoneessa on tehokkaat ja suorituskykyiset laitteisto-osat. Suoritinydinten määrän lisääminen parantaa DirectQuery-yhteyden siirtomäärää.
+
+Lisätietoja tietokoneen asennusvaatimuksista on paikallisen tietoyhdyskäytävän [asennusvaatimuksissa](/data-integration/gateway/service-gateway-install#requirements).
 
 ### <a name="location"></a>Sijainti
 
-Yhdyskäytäväasennuksen sijainnilla voi olla merkittävä vaikutus kyselyn suorituskykyyn, joten varmista, että yhdyskäytäväsi, tietolähteiden sijainnit ja Power BI -vuokraaja ovat mahdollisimman lähellä toisiaan verkon viiveen minimoimiseksi. Määritä Power BI -vuokraajan sijaintisi Power BI -palvelussa valitsemalla **?** -kuvake oikeassa yläkulmassa ja valitsemalla sitten **Tietoja Power BI:stä**.
+Yhdyskäytävän asennuksen sijainti voi vaikuttaa merkittävästi kyselyn suorituskykyyn. Yritä varmistaa, että yhdyskäytävä, tietolähteen sijainnit ja Power BI -vuokraaja ovat mahdollisimman lähellä toisiaan verkkoviiveen minimoimiseksi. Määritä Power BI -vuokraajan sijaintisi Power BI -palvelussa valitsemalla **?** -kuvake oikeassa yläkulmassa. Valitse sitten **Tietoja Power BI:stä**.
 
 ![Power BI -vuokraajasi sijainnin määrittäminen](media/service-gateway-deployment-guidance/powerbi-gateway-deployment-guidance_02.png)
 
-Jos aiot käyttää Power BI -yhdyskäytävää Azure Analysis Servicesin kanssa, varmista myös, että tietoalueet vastaavat toisiaan. Jos haluat lisätietoja tietoalueiden määrittämisestä useille palveluille, katso [tämä video](https://guyinacube.com/2018/01/power-bi-azure-analysis-services-gateway-data-region/).
+Jos aiot käyttää Power BI -yhdyskäytävää Azure Analysis Servicesin kanssa, varmista, että tietoalueet vastaavat toisiaan. Jos haluat lisätietoja tietoalueiden määrittämisestä useille palveluille, katso [tämä video](https://guyinacube.com/2018/01/power-bi-azure-analysis-services-gateway-data-region/).
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
@@ -67,5 +69,5 @@ Jos aiot käyttää Power BI -yhdyskäytävää Azure Analysis Servicesin kanssa
 * [Yhdyskäytävien vianmääritys – Power BI](service-gateway-onprem-tshoot.md)  
 * [Paikallisten tietoyhdyskäytävien usein kysytyt kysymykset – Power BI](service-gateway-power-bi-faq.md)  
 
-Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
+Onko sinulla kysyttävää? Kokeile [Power BI -yhteisöä](http://community.powerbi.com/).
 

@@ -9,14 +9,14 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/24/2019
+ms.date: 07/25/2019
 LocalizationGroup: Reports
-ms.openlocfilehash: 1d1371fa63af51f50a631739e4b2eed5550dc7ee
-ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
+ms.openlocfilehash: 9e2b1132e48e824b70ddb0e0d86bfed4efedff2f
+ms.sourcegitcommit: bc688fab9288ab68eaa9f54b9b59cacfdf47aa2e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68523334"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68623896"
 ---
 # <a name="filter-a-report-using-query-string-parameters-in-the-url"></a>Raportin suodattaminen URL-osoitteen kyselymerkkijonoparametrien avulla
 
@@ -53,9 +53,9 @@ app.powerbi.com/groups/me/apps/*app-id*/reports/*report-id*/ReportSection?filter
 
 Kenttätyyppi voi olla luku, päivämäärä ja aika tai merkkijono, ja käytetyn tyypin on vastattava tietojoukossa määritettyä tyyppiä.  Esimerkiksi taulukon sarakkeen määrittäminen Merkkijono-tyyppiseksi ei ole toimiva ratkaisu, jos etsit Päivämäärä-tyyppiseksi määritetyssä tietojoukon sarakkeessa sijaitsevaa päivämäärä/aika-tietoa tai numeerista arvoa (esimerkiksi Table/StringColumn eq 1).
 
-* **Merkkijonot** on sijoitettava puolilainausmerkkeihin – 'esimiehen nimi'.
-* **Luvut** eivät edellytä erityistä muotoilua.
-* **Päivämäärät ja kellonajat** on sijoitettava puolilainausmerkkeihin. OData v3:ssa niiden eteen on merkittävä sana ”datetime”, mutta sitä ei tarvita v4:ssä.
+* **Merkkijonot** on sijoitettava puolilainausmerkkeihin, esim. 'esimiehen nimi'.
+* **Luvut** eivät edellytä erityistä muotoilua. Lisätietoja on tämän artikkelin osiossa [Numeeriset tietotyypit](#numeric-data-types).
+* **Päivämäärät ja ajat** Katso tämän artikkelin osio [Päivämäärän tietotyypit](#date-data-types). 
 
 Jos tuntuu sekavalta, jatka lukemista, kohta asia selviää.  
 
@@ -133,9 +133,17 @@ Power BI:n URL-suodatin voi sisältää lukuja seuraavissa muodoissa.
 
 ### <a name="date-data-types"></a>Päivämäärän tietotyypit
 
-Power BI tukee sekä OData V3- että V4-versioita **Date**- ja **DateTimeOffset**-tietotyypeille.  Päivämäärät esitetään EDM-muodossa (2019-02-12T00:00:00), joten kun määrität päivämäärä muodossa VVVV-KK-PP, Power BI tulkitsee sen muodossa VVVV-KK-PPT00:00:00.
+Power BI tukee sekä OData V3- että V4-versioita **Date**- ja **DateTimeOffset**-tietotyypeille. OData V3 -versiossa päivämäärät on sijoitettava puolilainausmerkkeihin ja niiden edellä on oltava sana datetime. OData V4 -versiossa ei tarvitse olla puolilainausmerkkejä tai sanaa datetime. 
+  
+Päivämäärät esitetään EDM-muodossa (2019-02-12T00:00:00): Kun määrität päivämäärän muodossa 'VVVV-KK-PP', Power BI tulkitsee sen muodossa 'VVVV-KK-PPT00:00:00'. Varmista, että kuukausi ja päivä ovat kaksimerkkisiä eli KK ja PP.
 
-Miksi tämä ero on merkityksellinen? Oletetaan, että luot kyselymerkkijonoparametrin **Table/Date gt '2018-08-03'** .  Sisältävätkö tulokset elokuun kolmannen päivän 2018 vai alkavatko ne elokuun neljännestä 2018? Koska Power BI kääntää kyselyn muotoon **Table/Date gt '2018-08-03T00:00:00'** , tulokset sisältävät päivämäärät, joilla on nollasta poikkeava aikaosa, koska nämä päivämäärät ovat suurempia kuin **'2018-08-03T00:00:00'** .
+Miksi tämä ero on merkityksellinen? Oletetaan, että luot kyselymerkkijonoparametrin **Table/Date gt '2018-08-03'** .  Sisältävätkö tulokset elokuun kolmannen päivän 2018 vai alkavatko ne elokuun neljännestä 2018? Power BI kääntää kyselysi muotoon **Table/Date gt '2018-08-03T00:00:00'** . Tulokset siis sisältävät päivämäärät, joilla on nollasta poikkeava aikaosa, koska nämä päivämäärät ovat suurempia kuin **'2018-08-03T00:00:00'** .
+
+V3- ja V4-versioiden välillä on muitakin eroja. OData V3 ei tue Dates- vaan ainoastaan DateTime-muotoa. Jos siis käytät V3-muotoa, sille on annettava täydellinen päivämäärä ja aika. Päivämäärän literaaleja, kuten "datetime'2019-05-20'", ei tueta V3-muodossa. V4-muodossa voit kuitenkin kirjoittaa "2019-05-20". Seuraavassa on kaksi samanlaista suodatinkyselyä V3- ja V4-versiossa:
+
+- OData V4 -muoto: filter=Table/Date gt 2019-05-20
+- OData V3 -muoto: filter=Table/Date gt datetime'2019-05-20T00:00:00'
+
 
 ## <a name="special-characters-in-url-filters"></a>URL-suodattimien erikoismerkit
 

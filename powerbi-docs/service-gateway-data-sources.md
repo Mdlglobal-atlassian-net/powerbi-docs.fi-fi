@@ -11,32 +11,28 @@ ms.date: 07/15/2019
 ms.author: mblythe
 ms.custom: seodec18
 LocalizationGroup: Gateways
-ms.openlocfilehash: 3a4b343894f23d6f5720d95eb6c92436259befaa
-ms.sourcegitcommit: a58461fe7dfa65c751490b52de5fc73f8e69a17f
+ms.openlocfilehash: c46a5c419c242ae25ecca74428362ec27f234afd
+ms.sourcegitcommit: 73228d0a9038b8369369c059ad06168d2c5ff062
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68352202"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "68730214"
 ---
 # <a name="manage-data-sources"></a>Tietolähteiden hallinta
 
 [!INCLUDE [gateway-rewrite](includes/gateway-rewrite.md)]
 
-Power BI tukee monia paikallisia tietolähteitä, joista jokaisella on omat vaatimuksensa. Yhdyskäytävää voidaan käyttää yksittäisen tai useiden tietolähteiden kanssa. Tässä esimerkissä näytetään, miten voit lisätä SQL Serverin tietolähteeksi. Vaiheita voidaan soveltaa muihinkin tietolähteisiin.
+Power BI tukee monia paikallisia tietolähteitä, joista jokaisella on omat vaatimuksensa. Yhdyskäytävää voidaan käyttää yksittäisen tietolähteen tai useiden tietolähteiden kanssa. Tässä esimerkissä näytämme, miten voit lisätä SQL Serverin tietolähteeksi. Vaiheet ovat samanlaiset muille tietolähteille.
 
->[!NOTE]
->Useimmat tietolähteiden hallintatoiminnot voidaan suorittaa myös ohjelmointirajapintojen avulla. Lisätietoja on kohdassa [REST-ohjelmointirajapinnat (yhdyskäytävät)](/rest/api/power-bi/gateways).
+Useimmat tietolähteiden hallintatoiminnot voidaan suorittaa myös ohjelmointirajapintojen avulla. Lisätietoja on kohdassa [REST-ohjelmointirajapinnat (yhdyskäytävät)](/rest/api/power-bi/gateways).
 
 ## <a name="add-a-data-source"></a>Tietolähteen lisääminen
-
->[!NOTE]
->Ryhmiä, joilla ei ole sähköpostiosoitetta, ei voi lisätä.
 
 1. Valitse ![Asetukset-rataskuvake](media/service-gateway-data-sources/icon-gear.png) >  Power BI -palvelun oikeasta yläkulmasta ja valitse sitten **Hallitse yhdyskäytäviä**.
 
     ![Hallitse yhdyskäytäviä](media/service-gateway-data-sources/manage-gateways.png)
 
-2. Valitse yhdyskäytävä > **tietolähde** tai siirry kohtaan Yhdyskäytävät > **Lisää tietolähde**.
+2. Valitse yhdyskäytävä ja valitse sitten **Lisää tietolähde**. Tai valitse **Yhdyskäytävät** > **Lisää tietolähde**.
 
     ![Lisää tietolähde](media/service-gateway-data-sources/add-data-source.png)
 
@@ -44,7 +40,7 @@ Power BI tukee monia paikallisia tietolähteitä, joista jokaisella on omat vaat
 
     ![Valitse SQL Server](media/service-gateway-data-sources/select-sql-server.png)
 
-4. Anna tietolähteen tiedot. Tässä esimerkissä annetut tiedot ovat **Palvelin**, **Tietokanta** ja muuta.  
+4. Anna tietolähteen tiedot. Tässä esimerkissä annetut tiedot ovat **Palvelin**, **Tietokanta** ja muuta. 
 
     ![Tietolähdeasetukset](media/service-gateway-data-sources/data-source-settings.png)
 
@@ -62,13 +58,13 @@ Nyt voit sisällyttää SQL Server -tietoja Power BI -raporttinäkymiin ja -rapo
 
 ## <a name="remove-a-data-source"></a>Tietolähteen poistaminen
 
-Voit poistaa tietolähteen, jos et käytä sitä enää. Huomaa, että tietolähteen poistaminen rikkoo kyseisestä tietolähteestä riippuvaiset raporttinäkymät tai raportit.
+Voit poistaa tietolähteen, jos et käytä sitä enää. Tietolähteen poistaminen rikkoo kyseisestä tietolähteestä riippuvaiset raporttinäkymät tai raportit.
 
-Jos haluat poistaa tietolähteen, valitse tietolähde ja sitten **Poista**.
+Jos haluat poistaa tietolähteen, valitse tietolähde ja valitse sitten **Poista**.
 
 ![Tietolähteen poistaminen](media/service-gateway-data-sources/remove-data-source.png)
 
-## <a name="using-the-data-source-for-scheduled-refresh-or-directquery"></a>Tietolähteen käyttö ajoitetussa päivityksessä tai DirectQueryssa
+## <a name="use-the-data-source-for-scheduled-refresh-or-directquery"></a>Tietolähteen käyttö ajoitetussa päivityksessä tai DirectQueryssa
 
 Kun tietolähde on luotu, se on käyttäjien saatavilla joko DirectQuery-yhteyksien tai ajoitetun päivityksen välityksellä.
 
@@ -82,7 +78,7 @@ Jos sinut on lisätty yhdyskäytävän sisällä määritellyn tietolähteen **K
 ![Yhdyskäytäväyhteys](media/service-gateway-data-sources/gateway-connection.png)
 
 > [!WARNING]
-> Jos tietojoukkosi sisältää useita tietolähteitä, jokaisen tietolähteen on oltava lisättynä yhdyskäytävään. Jos yksi tai useampi tietolähde ei ole lisättynä yhdyskäytävään, ei yhdyskäytävää näytetä ajoitetun päivityksen yhteydessä.
+> Jos tietojoukkosi sisältää useita tietolähteitä, jokaisen tietolähteen on oltava lisättynä yhdyskäytävään. Jos yksi tai useampi tietolähde ei ole lisättynä yhdyskäytävään, yhdyskäytävää ei näytetä ajoitetun päivityksen yhteydessä.
 
 ### <a name="limitations"></a>Rajoitukset
 
@@ -104,11 +100,11 @@ Voit myös antaa käyttäjille ja käyttöoikeusryhmille järjestelmänvalvojan 
 
     ![Käyttäjät-välilehti](media/service-gateway-data-sources/users-tab.png)
 
-4. Valitse **Lisää**, minkä jälkeen lisätty jäsen näkyy ruudussa.
+4. Valitse **Lisää**, minkä jälkeen lisätyn jäsenen nimi näkyy ruudussa.
 
     ![Lisää käyttäjä](media/service-gateway-data-sources/add-user.png)
 
-Siinä kaikki. Muista, että sinun on lisättävä käyttäjiä jokaiseen tietolähteeseen, johon haluat myöntää käyttöoikeuden. Jokaisessa tietolähteessä on erillinen luettelo käyttäjistä, ja sinun on lisättävä käyttäjiä kuhunkin tietolähteeseen erikseen.
+Muista, että sinun on lisättävä käyttäjiä jokaiseen tietolähteeseen, johon haluat myöntää käyttöoikeuden. Kullakin tietolähteellä on erillinen käyttäjien luettelo. Lisää käyttäjiä kuhunkin tietolähteeseen erikseen.
 
 ### <a name="remove-users-from-a-data-source"></a>Poista käyttäjiä tietolähteestä
 
@@ -116,20 +112,20 @@ Tietolähteen **Käyttäjät**-välilehdeltä voit poistaa käyttäjiä tai käy
 
 ![Poista käyttäjä](media/service-gateway-data-sources/remove-user.png)
 
-## <a name="storing-encrypted-credentials-in-the-cloud"></a>Salattu tunnistetietojen tallentaminen pilvipalveluun
+## <a name="store-encrypted-credentials-in-the-cloud"></a>Salattujen tunnistetietojen tallentaminen pilvipalveluun
 
-Kun lisäät tietolähteen yhdyskäytävään, sinun on annettava tunnistetiedot kyseiselle tietolähteelle. Kaikki tietolähteeseen kohdennetut kyselyt suoritetaan näitä tunnistetietoja käyttämällä. Tunnistetiedot salataan turvallisesti epäsymmetrisellä salauksella siten, että niiden salausta ei voi purkaa pilvipalvelussa ennen kuin ne on tallennettu pilvipalveluun. Tunnistetiedot lähetetään tietokoneelle, jossa yhdyskäytävä on käynnissä paikallisesti ja jossa tietojen salaus puretaan käytettäessä tietolähteitä.
+Kun lisäät tietolähteen yhdyskäytävään, sinun on annettava tunnistetiedot kyseiselle tietolähteelle. Kaikki tietolähteeseen kohdennetut kyselyt suoritetaan näitä tunnistetietoja käyttämällä. Tunnistetiedot salataan turvallisesti. Tämä tehdään epäsymmetrisellä salauksella siten, että niiden salausta ei voi purkaa pilvipalvelussa ennen kuin ne on tallennettu pilvipalveluun. Tunnistetiedot lähetetään tietokoneelle, jossa yhdyskäytävä on käynnissä paikallisesti ja jossa tietojen salaus puretaan käytettäessä tietolähteitä.
 
 ## <a name="list-of-available-data-source-types"></a>Luettelo käytettävissä olevista tietolähdetyypeistä
 
 Paikallinen tietoyhdyskäytävä tukee seuraavia Power BI:n tietolähteitä. Paikallisten tietolähteiden lisäksi palomuurin, VPN-yhteyden tai näennäisverkon takana olevat lähteet saattavat tarvita myös tietoyhdyskäytävää.
 
-| **Tietolähde** | **Reaaliaikainen yhteys / DirectQuery** | **Käyttäjän määrittämä manuaalinen tai ajoitettu päivitys** |
+| **Tietolähde** | **Reaaliaikainen yhteys / DirectQuery** | **Manuaalinen tai ajoitettu päivitys (käyttäjän määrittämä)** |
 | --- | --- | --- |
-| ActiveDirectory |Ei |Kyllä |
 | Amazon Redshift |Kyllä |Kyllä |
-| Analysis Services |Kyllä |Kyllä |
 | AtScale-kuutiot |Kyllä |Kyllä |
+| Azure Active Directory |Ei |Kyllä |
+| Azure Analysis Services |Kyllä |Kyllä |
 | Azure-blob-objektitallennus |Ei |Kyllä |
 | Azure DevOps Server |Ei |Kyllä |
 | Azure-taulukkotallennus |Ei |Kyllä |
@@ -153,7 +149,7 @@ Paikallinen tietoyhdyskäytävä tukee seuraavia Power BI:n tietolähteitä. Pai
 | MySQL |Ei |Kyllä |
 | ODBC |Ei |Kyllä |
 | OData |Ei |Kyllä |
-| OleDb |Ei |Kyllä |
+| OLE DB |Ei |Kyllä |
 | Oracle |Kyllä |Kyllä |
 | PostgreSQL |Ei |Kyllä |
 | QubolePresto |Kyllä |Kyllä |
@@ -182,4 +178,4 @@ Paikallinen tietoyhdyskäytävä tukee seuraavia Power BI:n tietolähteitä. Pai
 * [Tietolähteen hallinta – tuonti ja ajoitettu päivitys](service-gateway-enterprise-manage-scheduled-refresh.md)
 * [Tietoyhdyskäytävän käyttöönotto-ohjeet](service-gateway-deployment-guidance.md)
 
-Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
+Onko sinulla kysyttävää? Kokeile [Power BI -yhteisöä](http://community.powerbi.com/).

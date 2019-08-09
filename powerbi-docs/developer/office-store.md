@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 3/27/2019
-ms.openlocfilehash: cf9b3335b10b7a2cd3abcc3f02c651ed4416184e
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: cb21d3baf9523a90b0446b44704587b5af73904f
+ms.sourcegitcommit: bc688fab9288ab68eaa9f54b9b59cacfdf47aa2e
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61269659"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68623790"
 ---
 # <a name="publish-custom-visuals-to-appsource"></a>Omien visualisointien julkaiseminen AppSourcessa
 
@@ -22,7 +22,7 @@ Lue ohjeet siihen, miten voit julkaista omia visualisointejasi AppSourcessa muid
 
 Kun olet luonut oman visualisoinnin, voit julkaista sen AppSourcessa, josta muutkin löytävät sen käyttöönsä. Sinun täytyy kuitenkin tehdä ennen julkaisua tietyt valmistelutoimet. Saat lisätietoja mukautettujen visualisointien luomisesta ohjeartikkelista [Power BI:n mukautetun visualisoinnin kehittäminen](custom-visual-develop-tutorial.md).
 
-   ![Office-kauppa](media/office-store/AppSource_01.jpg)
+   ![Office-kauppa](media/office-store/appsource-01.png)
 
 ## <a name="what-is-appsource"></a>Mikä AppSource on?
 
@@ -30,7 +30,7 @@ Kun olet luonut oman visualisoinnin, voit julkaista sen AppSourcessa, josta muut
 
 ## <a name="preparing-to-submit-your-custom-visual"></a>Oman visualisoinnin julkaisun valmisteleminen
 
-Kun olet valmis luku Microsoftin [Power BI-visualisointien ohjeet](guidelines-powerbi-visuals.md), koodaamisen ja [testannut oman visualisointisi](https://github.com/Microsoft/PowerBI-visuals/blob/master/Tutorial/SubmissionTesting.md) ja paketoinut sen pbiviz-tiedostoon, myös sinulla on seuraavat ready-lähettämäsi.
+Kun olet lukenut [Power BI:n visualisointien ohjeet](guidelines-powerbi-visuals.md), koodannut ja [testannut oman visualisointisi](https://github.com/Microsoft/PowerBI-visuals/blob/master/Tutorial/SubmissionTesting.md) ja paketoinut sen pbiviz-tiedostoon, kerää valmiiksi myös alla mainitut asiat julkaisua varten.
 
 | Kohde | Pakollinen | Kuvaus |
 | --- | --- | --- |

@@ -1,6 +1,6 @@
 ---
 title: Upotettu analysointi Power BI:n sisällön upottamiseksi sovellukseen organisaatiollesi
-description: Lue, miten voit integroida tai upottaa raportteja, koontinäyttöjä tai ruutuja organisaatiotasi varten käyttämällä upotetussa analysoinnissa Power BI -ohjelmointirajapintoja. Lue, miten voit integroida Power BI:n sovellukseesi käyttämällä upotetun analysoinnin ohjelmistoa, upotetun analysoinnin työkaluja tai upotetun liiketoimintatiedon työkaluja.
+description: Lue, miten voit integroida tai upottaa raportteja (Power BI- tai sivutettuja raportteja), koontinäyttöjä tai ruutuja organisaatiotasi varten käyttämällä upotetussa analysoinnissa Power BI -ohjelmointirajapintoja. Lue, miten voit integroida Power BI:n sovellukseesi käyttämällä upotetun analysoinnin ohjelmistoa, upotetun analysoinnin työkaluja tai upotetun liiketoimintatiedon työkaluja.
 author: rkarlin
 ms.author: rkarlin
 manager: kfile
@@ -9,24 +9,24 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.custom: seodec18
-ms.date: 04/02/2019
-ms.openlocfilehash: 53311929aa6277efd621fb2b944ea062ab99999d
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.date: 07/29/2019
+ms.openlocfilehash: 02e11e167d859d3ef23124fed4f9f699766db8fe
+ms.sourcegitcommit: 805d52e57a935ac4ce9413d4bc5b31423d33c5b1
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61355025"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68665545"
 ---
 # <a name="tutorial-embed-power-bi-content-into-an-application-for-your-organization"></a>Opetusohjelma: Power BI -sisällön upottaminen sovellukseen organisaatiolle
 
-Power BI:ssä voit upottaa sovellukseen raportteja, koontinäyttöjä tai ruutuja käyttämällä **user owns data** -malleja. **User owns data** -mallien avulla sovelluksesi voi laajentaa Power BI -palvelua niin, että se voi käyttää upotettua analysointia. Tässä opetusohjelmassa näytetään, miten voit integroida raportin sovellukseen. Voit käyttää Power BI .NET SDK:ta sekä Power BI JavaScript -ohjelmointirajapintaa Power BI:n upottamiseksi sovellukseen organisaatiollesi.
+**Power BI:ssä** voit upottaa sovellukseen raportteja (Power BI- tai sivutettuja raportteja), koontinäyttöjä tai ruutuja käyttämällä user owns data -malleja. **User owns data** -mallien avulla sovelluksesi voi laajentaa Power BI -palvelua niin, että se voi käyttää upotettua analysointia. Tässä opetusohjelmassa näytetään, miten voit integroida raportin (Power BI- tai sivutetun raportin) sovellukseen. Voit käyttää Power BI .NET SDK:ta sekä Power BI JavaScript -ohjelmointirajapintaa Power BI:n upottamiseksi sovellukseen organisaatiollesi.
 
 ![Power BI -raportin upottaminen](media/embed-sample-for-your-organization/embed-sample-for-your-organization-035.png)
 
 Tässä opetusohjelmassa opit tekemään seuraavat asiat:
 > [!div class="checklist"]
 > * Rekisteröimään sovelluksen Azuressa.
-> * Upottamaan Power BI -raportin sovellukseen, joka käyttää Power BI -vuokralaistasi.
+> * Upottamaan Power BI- tai sivutetun raportin sovellukseen, joka käyttää Power BI -vuokralaistasi.
 
 ## <a name="prerequisites"></a>Edellytykset
 
@@ -35,6 +35,7 @@ Tarvitset seuraavat:
 * [Power BI Pro -tili](../service-self-service-signup-for-power-bi.md).
 * Tarvitset [Microsoft Azure](https://azure.microsoft.com/) -tilauksen.
 * Sinulla on oltava oma [Azure Active Directory -vuokraaja ](create-an-azure-active-directory-tenant.md) käyttövalmiina.
+* Jos haluat upottaa sivutettuja raportteja, tarvitset vähintään A4/P1-kapasiteetin. Katso kohta[Minkä kokoista Premium-kapasiteettia tarvitsen sivutettuja raportteja varten?](../paginated-reports-faq.md#what-size-premium-capacity-do-i-need-for-paginated-reports)
 
 Jos et ole rekisteröitynyt **Power BI:hin**, [rekisteröi ilmainen kokeiluversio](https://powerbi.microsoft.com/pricing/) ennen aloittamista.
 
@@ -44,7 +45,7 @@ Jos sinulla ei ole Azure-tilausta, luo [ilmainen tili](https://azure.microsoft.c
 
 Ennen kuin ryhdyt upottamaan raportteja, raporttinäkymiä tai ruutuja sovellukseesi, varmista, että ympäristösi sallii upottamisen Power BI:n avulla.
 
-Voit käyttää [upottamisen määritystyökalua](https://aka.ms/embedsetup/UserOwnsData). Sillä pääset nopeasti alkuun ja sillä voit ladata mallisovelluksen, jossa käydään läpi sekä käyttöympäristön luominen että raportin upottaminen.
+Voit käyttää [upottamisen määritystyökalua](https://aka.ms/embedsetup/UserOwnsData). Sillä pääset nopeasti alkuun ja sillä voit ladata mallisovelluksen, jossa käydään läpi sekä käyttöympäristön luominen että raportin upottaminen. Jos kyseessä on sivutetun raportin upottaminen, sinun on määritettävä vähintään A4/P1-kapasiteetti luodulle sovelluksen työtilalle.
 
 Jos haluat määrittää ympäristön manuaalisesti, jatka lukemista.
 
@@ -60,7 +61,7 @@ Sinun on suoritettava loppuun **palvelinpuolen verkkosovelluksen** rekisteröint
 
 Jos upotat asiakkaille raportteja, raporttinäkymiä tai ruutuja, sisältö tulee sijoittaa sovelluksen työtilaan. Voit ottaa käyttöön erityyppisiä työtiloja: [perinteisiä työtiloja](../service-create-workspaces.md) tai [uusia työtiloja](../service-create-the-new-workspaces.md).
 
-### <a name="create-and-publish-your-reports"></a>Luo ja julkaise raportteja
+### <a name="create-and-publish-your-power-bi-reports"></a>Luo ja julkaise Power BI -raportteja
 
 Voit luoda raportteja ja tietojoukkoja käyttämällä Power BI Desktopia. Voit sitten julkaista raportit sovellustyötilassa. Raportit julkaiseva loppukäyttäjä tarvitsee Power BI Pro ‑käyttöoikeudet sovellustyötilassa julkaisemiseen.
 
@@ -79,7 +80,11 @@ Voit luoda raportteja ja tietojoukkoja käyttämällä Power BI Desktopia. Voit 
     Voit nyt tarkastella raporttia verkossa Power BI -palvelussa.
 
    ![Tarkastele Power BI Desktop -raporttia](media/embed-sample-for-your-organization/embed-sample-for-your-organization-029.png)
+   
+### <a name="create-and-publish-your-paginated-reports"></a>Luo ja julkaise sivutettuja raportteja
 
+Voit luoda sivutettuja raportteja käyttämällä [Power BI:n raportin muodostinta](../paginated-reports-report-builder-power-bi.md#create-reports-in-power-bi-report-builder). Sen jälkeen voit [ladata raportin](../paginated-reports-quickstart-aw.md#upload-the-report-to-the-service) sovelluksen työtilaan, jolle on määritetty vähintään A4/P1-kapasiteetti. Raportin lataavalla käyttäjällä on oltava Power BI Pro -käyttöoikeus, jotta hän voi julkaista sovelluksen työtilassa.
+   
 ## <a name="embed-your-content-by-using-the-sample-application"></a>Upota sisältöä mallisovelluksen avulla
 
 Tämä malli on tarkoituksellisesti yksinkertainen esittelyä varten.
@@ -124,30 +129,6 @@ Saat **ApplicationID**:n seuraavasti:
 
     ![applicationID](media/embed-sample-for-your-organization/embed-sample-for-your-organization-043.png)
 
-### <a name="application-secret"></a>Sovellussalaisuus
-
-Tämä määrite on pakollinen vain, kun käytät todennustyyppinä [palvelun päänimeä](embed-service-principal.md).
-
-Täytä **ApplicationSecret** -tiedot **Avaimet**-osiosta **Sovelluksen rekisteröinnit** -kohdasta **Azuressa**.  Tämä määrite toimii, kun käytät [palvelun päänimeä](embed-service-principal.md).
-
-Saat **ApplicationSecretin** seuraavasti:
-
-1. Kirjaudu sisään [Azure-portaaliin](https://portal.azure.com).
-
-2. Valitse vasemmassa siirtymisruudussa **Kaikki palvelut** ja sitten **Sovelluksen rekisteröinnit**.
-
-3. Valitse sovellus, joka käyttää **ApplicationSecretiä**.
-
-    ![Sovelluksen valitseminen](media/embed-sample-for-your-organization/embed-sample-for-your-organization-042.png)
-
-4. Valitse **varmenteet ja salaisuudet** kohdassa **hallinta**.
-
-5. Valitse **uusi asiakassalaisuus**.
-
-6. Kirjoita nimi **Kuvaus**-ruutuun ja valitse kesto. Valitse sitten **Tallenna** saadaksesi sovellukselle **arvon**. Kun suljet **Avaimet**-ruudun avainarvon tallentamisen jälkeen, arvokenttä näkyy vain piilotettuna. Tässä vaiheessa et pysty noutamaan avaimen arvoa. Jos kadotat avainarvon, luo uusi Azure-portaalissa.
-
-    ![Avainarvo](media/embed-sample-for-your-organization/embed-sample-for-your-organization-046.png)
-
 ### <a name="workspace-id"></a>Työtilan tunnus
 
 Anna **workspaceId**-kohtaan Power BI:n sovelluksen työtilan GUID. Voit hakea nämä tiedot joko URL-osoitteesta, kun olet kirjautunut Power BI -palveluun, tai PowerShellin avulla.
@@ -168,9 +149,17 @@ Get-PowerBIworkspace -name "User Owns Embed Test"
 
 Anna **reportId**-kohtaan Power BI:n raportin GUID. Voit hakea nämä tiedot joko URL-osoitteesta, kun olet kirjautunut Power BI -palveluun, tai PowerShellin avulla.
 
-URL-OSOITE <br>
+Power BI -raportin URL-osoite <br>
 
-![Raporttitunnus](media/embed-sample-for-your-organization/embed-sample-for-your-organization-041.png)
+![PBI-raporttitunnus](media/embed-sample-for-your-organization/embed-sample-for-your-organization-041.png)
+
+Sivutettu raportin URL-osoite <br>
+
+
+
+Sivutettu raportin URL-osoite<br>
+
+![Sivutettu raporttitunnus](media/embed-sample-for-your-organization/paginated-reports-url.png)
 
 Powershell <br>
 
@@ -214,7 +203,7 @@ Sinun on hankittava sovelluksessa käyttöoikeustietue Azure AD:stä, ennen kuin
 
 ### <a name="get-a-report"></a>Hanki raportti
 
-Voit hankkia Power BI -raportin käyttämällä [Hanki raportit](https://docs.microsoft.com/rest/api/power-bi/reports/getreports) -toimintoa, joka antaa Power BI -raporttien luettelon. Saat raporttien luettelosta raporttitunnuksen.
+Voit hankkia Power BI- tai sivutetun raportin käyttämällä [Hanki raportit](https://docs.microsoft.com/rest/api/power-bi/reports/getreports) -toimintoa, joka antaa Power BI- tai sivutettujen raporttien luettelon. Saat raporttien luettelosta raporttitunnuksen.
 
 ### <a name="get-reports-by-using-an-access-token"></a>Hanki raportit käyttöoikeustietueen avulla
 
@@ -275,6 +264,7 @@ public class PBIReports
 public class PBIReport
 {
     public string id { get; set; }
+    public string reportType { get; set }
     public string name { get; set; }
     public string webUrl { get; set; }
     public string embedUrl { get; set; }
@@ -394,7 +384,7 @@ Kun olet nyt kehittänyt sovelluksesi, on aika varata sovelluksen työtilalle ka
 
 ### <a name="create-a-dedicated-capacity"></a>Luo varattua kapasiteettia
 
-Luomalla varattua kapasiteettia voit hyödyntää sitä, että sovellustyötilan sisällölle varataan tietty resurssi. Voit luoda varattua kapasiteettia käyttämällä [Power BI Premiumia](../service-premium-what-is.md).
+Luomalla varattua kapasiteettia voit hyödyntää sitä, että sovellustyötilan sisällölle varataan tietty resurssi. Sivutettujen raporttien osalta sinun on varattava sovelluksen työtilalle vähintään A4/P1-kapasiteettia. Voit luoda varattua kapasiteettia käyttämällä [Power BI Premiumia](../service-premium-what-is.md).
 
 Seuraavassa taulukossa esitetään Power BI Premiumin SKU:t, jotka ovat käytettävissä [Microsoft Office 365:ssä](../service-admin-premium-purchase.md):
 
@@ -435,7 +425,7 @@ Yleiset järjestelmänvalvojat eli Power BI -palvelun järjestelmänvalvojat voi
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
-Tässä opetusohjelmassa olet oppinut, miten voit upottaa Power BI-sisältöä sovellukseen Power BI -organisaatiotiliä käyttämällä. Voit nyt yrittää upottaa Power BI -sisältöä sovellukseen sovellusten avulla. Voit myös yrittää upottaa Power BI -sisältöä asiakkaillesi:
+Tässä opetusohjelmassa olet oppinut, miten voit upottaa Power BI-sisältöä sovellukseen Power BI -organisaatiotiliä käyttämällä. Voit nyt yrittää upottaa Power BI -sisältöä sovellukseen sovellusten avulla. Voit myös yrittää upottaa Power BI -sisältöä asiakkaillesi (ei vielä tueta sivutettujen raporttien upottamisessa):
 
 > [!div class="nextstepaction"]
 > [Upottaminen sovelluksista](embed-from-apps.md)

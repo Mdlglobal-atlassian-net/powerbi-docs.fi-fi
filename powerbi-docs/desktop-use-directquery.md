@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 07/18/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 775abf014f571b508832c5cb9a52a62aad455a7b
-ms.sourcegitcommit: fe8a25a79f7c6fe794d1a30224741e5281e82357
+ms.openlocfilehash: fcad10a77ad531562443470296c9d712b2aa9724
+ms.sourcegitcommit: d74aca333595beaede0d71ba13a88945ef540e44
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "68324808"
+ms.lasthandoff: 08/03/2019
+ms.locfileid: "68757601"
 ---
 # <a name="use-directquery-in-power-bi-desktop"></a>DirectQueryn käyttö Power BI Desktopissa
 Kun muodostat yhteyden tietolähteeseen, voit **Power BI Desktopin** avulla aina tuoda kopion tiedoista **Power BI Desktopiin**. Joillekin tietolähteille on saatavilla vaihtoehtoinen menetelmä: yhteyden muodostaminen suoraan tietolähteeseen **DirectQueryn** avulla.
@@ -62,10 +62,9 @@ Kun käytät **DirectQueryä**, ota huomioon seuraavat kolme seikkaa:
   
   Tässä yhteydessä olisi myös otettava huomioon lähdetietokannan kuormitus julkaistua raporttia hyödyntävien Power BI -käyttäjien määrän mukaan. *Row Level Security* (RLS) -tason käytöllä voi olla myös merkittävä vaikutus; useiden käyttäjien jakama muu kuin RLS-koontinäyttö johtaa yhteen tietokantakyselyyn, mutta RLS:n käyttö koontinäyttöruudussa tarkoittaa yleensä sitä, että ruudun päivitys vaatii yhtä kyselyä *käyttäjää kohti*. Tämä vuorostaan lisää merkittävästi lähdetietokannan kuormitusta ja saattaa heikentää suorituskykyä.
   
-  Power BI luo kyselyjä, jotka ovat mahdollisimman tehokkaita. Luotu kysely ei ehkä kuitenkaan tietyissä tilanteissa ole riittävän tehokas mahdollisesti epäonnistuneen päivityksen välttämiseksi. Yksi esimerkki tästä tilanteesta on se, kun luotu kysely noutaa liikaa rivejä (yli miljoona) taustatietolähteestä. Tällöin tapahtuu seuraavia virheitä:
+  Power BI luo kyselyjä, jotka ovat mahdollisimman tehokkaita. Luotu kysely ei ehkä kuitenkaan tietyissä tilanteissa ole riittävän tehokas mahdollisesti epäonnistuneen päivityksen välttämiseksi. Yksi esimerkki tästä tilanteesta on se, kun luotu kysely noutaa liikaa rivejä taustatietolähteestä. Tällöin tapahtuu seuraavia virheitä:
   
       The resultset of a query to external data source has exceeded
-      the maximum allowed size of '1000000' rows.
   
   Tällainen tilanne voi ilmetä yksinkertaisen kaavion tapauksessa, kun se sisältää hyvin suuren kardinaliteettisarakkeen, jonka koostevaihtoehdoksi on määritetty *Älä tee yhteenvetoa*. Visualisoinnissa on oltava vain sarakkeita, joiden kardinaliteetti on alle miljoona, tai siihen on sovellettava asianmukaisia suodattimia.
 * **Suojaus** – Kaikki julkaistua raporttia hyödyntävät käyttäjät muodostavat yhteyden taustatietolähteeseen tunnistetiedoilla, jotka annetaan kirjautumisen jälkeen Power BI -palveluun. Tämä on sama tilanne kuin tuotujen tietojen tapauksessa: kaikki käyttäjät näkevät samat tiedot riippumatta taustalähteessä määritetyistä suojaussäännöistä. Asiakkaiden, jotka haluavat soveltaa DirectQuery-lähteisiin käyttäjäkohtaista suojausta, on käytettävä RLS-tasoa. [Lue lisää RLS-tasosta](service-admin-rls.md).

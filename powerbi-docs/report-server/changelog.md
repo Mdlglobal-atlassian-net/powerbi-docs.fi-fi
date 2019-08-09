@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 03/31/2018
-ms.openlocfilehash: d7d3bf85661284835271b68c476ee53ec2c474bc
-ms.sourcegitcommit: 81ba3572531cbe95ea0b887b94e91f94050f3129
+ms.openlocfilehash: 031274f4f35ef1e36ec17648c2cbf967f5436020
+ms.sourcegitcommit: 73228d0a9038b8369369c059ad06168d2c5ff062
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66751122"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "68729803"
 ---
 # <a name="changelog-for-power-bi-report-server"></a>Power BI -raporttipalvelimen muutosloki
 
@@ -45,6 +45,10 @@ Lisätietoja uusista ominaisuuksista on artikkelissa [Power BI -raporttipalvelin
             - Lisätty helppokäyttöisempi palaamislinkki PBIRS:n Valinta-ikkunaan
             - Korjattu PBIRS:n suuren kontrastin tilaan niin, että Takaisin-painike näkyy ja esittää varoittavat visualisointi-ilmoitukset.
             - Valinta-ruudun käyttöliittymän korjaukset, pohjaan skaalaus.
+
+    - *Versio: 2.69.5467.5201 (toukokuu 2019), julkaistu: 30. heinäkuuta 2019*
+        - Ohjelmavirhekorjauksia
+            - Korjattu virheellinen telemetriakirjaus
 
 ## <a name="january-2019"></a>Tammikuu 2019
 
@@ -93,8 +97,11 @@ Lisätietoja uusista ominaisuuksista on artikkelissa [Power BI -raporttipalvelin
         - Pikakuvake ja kiinnitetyt kuvakkeet pysyvät Power BI -raporttipalvelimen asennuksen poistamisen jälkeen
         - Korjattu ongelma, jossa Power BI -raporttipalvelimen kiinnittäminen aloitusvalikkoon johti mustaan tekstiin mustalla kuvakkeella
 
-    - *Versio: 2.65.5313.1421 (tammikuu 2019), julkaistu: 22. tammikuuta 2019*
-        - Sisältää Power BI -raporttipalvelinyhteyden edellyttämiä muutoksia (tammikuu 2019)  
+    - *Versio: 2.65.5313.1421 (tammikuu 2019), julkaistu: 22. tammikuuta 2019* (uusi koontiversio ja uusi versio)
+        - Sisältää Power BI -raporttipalvelinyhteyden edellyttämiä muutoksia (tammikuu 2019) 
+    - *Versio: 2.65.5313.5141 (tammikuu 2019), julkaistu: 31. heinäkuuta 2019* (uusi koontiversio ja uusi versio)
+        - Ohjelmavirhekorjauksia
+            - Korjattu virheellinen telemetriakirjaus
 
 ## <a name="august-2018"></a>Elokuu 2018
 

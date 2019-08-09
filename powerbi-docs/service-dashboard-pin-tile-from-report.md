@@ -8,65 +8,63 @@ featuredvideoid: lJKgWnvl6bQ
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 03/02/2018
+ms.date: 07/23/2019
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: a8acb5ab382c541b330d3448da8187238c42a3f5
-ms.sourcegitcommit: 762857c8ca09ce222cc3f8b006fa1b65d11e4ace
+ms.openlocfilehash: b27cf80985dc1789fff5797430e4592fe361b533
+ms.sourcegitcommit: bc688fab9288ab68eaa9f54b9b59cacfdf47aa2e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66720300"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68624071"
 ---
 # <a name="pin-a-tile-to-a-power-bi-dashboard-from-a-report"></a>Ruudun kiinnittäminen Power BI:n koontinäyttöön raportista
-## <a name="pinning-tiles-from-a-report"></a>Ruutujen kiinnittäminen raportista
-Uusi [raporttinäkymän ruutu](consumer/end-user-tiles.md) voidaan lisätä [Power BI -raportista](consumer/end-user-reports.md). Voit itse asiassa lisätä useita uusia ruutuja raportista.  Kukin näistä on napsautettaessa linkki takaisin raporttiin.
 
-Myös raportin kokonaisia sivuja voi kiinnittää koontinäyttöön.  Tätä kutsutaan myös kiinnittämiseksi *live*-ruutuun.  *Live* tarkoittaa, että voit käsitellä ruutua koontinäytössä interaktiivisesti ja toisin kuin yksittäisissä visualisointiruuduissa, raporttiin tehdyt muutokset synkronoidaan koontinäyttöön. Voit lukea lisätietoja asiasta alta.
+[Raporttinäkymän ruutu](consumer/end-user-tiles.md) voidaan lisätä [Power BI -raportista](consumer/end-user-reports.md). Kun valitset jonkin näistä ruudusta, se avautuu raportissa.
+
+Koko raporttisivu voidaan kiinnittää koontinäyttöön, jota kutsutaan *tapahtumaruudun* kiinnittämiseksi. Sitä kutsutaan tapahtumaruuduksi, koska voit käsitellä ruutua koontinäytössä. Yksittäisistä visualisointiruuduista poiketen raporttiin tehdyt muutokset synkronoidaan automaattisesti koontinäytön kanssa. Jos haluat lisätietoja, katso [Koko raportin sivun kiinnittäminen](#pin-an-entire-report-page).
 
 Et voi kiinnittää ruutuja raporteista, jotka on jaettu kanssasi tai jos ne ovat Power BI Desktopista. 
 
-> **VIHJE**: Jotkin visualisoinnit käyttävät taustakuvia. Kiinnittäminen ehkä toimi taustakuvan ollessa liian suuri.  Kokeile kuvan koon pienentämistä tai kuvan pakkausta.  
+> [!TIP]
+> Koska jotkin visualisoinnit käyttävät taustakuvia, kiinnittäminen ei ehkä toimi, jos taustakuva on liian suuri. Kokeile kuvan koon pienentämistä tai kuvan pakkausta.  
 > 
 > 
 
 ## <a name="pin-a-tile-from-a-report"></a>Ruudun kiinnittäminen raportista
 Amanda esittää koontinäytön luomisen kiinnittämällä visualisointeja ja kuvia Power BI -raportista.
+    
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/lJKgWnvl6bQ" frameborder="0" allowfullscreen></iframe>
 
 Nyt voit luoda oman koontinäytön käyttäen jotakin Power BI:n malliraporteista.
 
-1. Osoita sitä visualisointia, jonka haluat kiinnittää, ja napsauta ![](media/service-dashboard-pin-tile-from-report/pbi_pintile_small.png)nastakuvaketta. Power BI avaa **Kiinnitä koontinäyttööni** -näytön.
+1. Osoita raportissa sitä visualisointia, jonka haluat kiinnittää, ja napsauta Kiinnitä-kuvaketta. ![Kiinnitä-kuvake](media/service-dashboard-pin-tile-from-report/pbi_pintile_small.png). Power BI avaa **Kiinnitä koontinäyttööni** -näytön.
    
      ![Kiinnitä koontinäyttöön -ikkuna](media/service-dashboard-pin-tile-from-report/pbi_themes2.png)
 2. Valitse, haluatko kiinnittää aiemmin luotuun koontinäyttöön vai luoda uuden koontinäytön.
    
-   * Aiemmin luotu koontinäyttö: valitse avattavasta luetteloruudusta koontinäytön nimi. Kanssasi jaetut koontinäytöt eivät näy avattavassa luetteloruudussa.
-   * Uusi koontinäyttö: anna nimi uudelle koontinäytölle.
-3. Joissakin tapauksissa kiinnitettävä kohde voi olla *teema*, joka on jo käytössä.  Esimerkkinä visualisoinnit, jotka on kiinnitetty Excel-työkirjasta. Jos näin on, valitse, mitä teemaa ruudussa käytetään.
+   * **Aiemmin luotu koontinäyttö**: Valitse avattavasta luetteloruudusta koontinäytön nimi. Kanssasi jaetut koontinäytöt eivät näy avattavassa luetteloruudussa.
+   * **Uusi koontinäyttö**: anna nimi uudelle koontinäytölle.
+3. Joissakin tapauksissa kiinnitettävä kohde voi olla *teema*, joka on jo käytössä. Esimerkkinä visualisoinnit, jotka on kiinnitetty Excel-työkirjasta. Jos näin on, valitse, mitä teemaa ruudussa käytetään.
 4. Valitse **Kiinnitä**.
    
-   Onnistumissanoma (oikean yläkulman lähellä) ilmaisee, että visualisointi lisättiin ruutuna koontinäyttöön.
+   Onnistumisesta kertova ilmoitus (oikean yläkulman lähellä) ilmaisee, että visualisointi lisättiin ruutuna raporttinäkymään.
    
-   ![onnistumisilmoitus](media/service-dashboard-pin-tile-from-report/pinsuccess.png)
-5. Valitse siirtymisruudussa koontinäyttö uuden ruudun kera. Valitse ruutu, joka siirretään takaisin raporttiin. Tai [muokkaa ruudun näyttöä ja toimintaa](service-dashboard-edit-tile.md).
+   ![Onnistumisilmoitus](media/service-dashboard-pin-tile-from-report/pinsuccess.png)
+5. Valitse siirtymisruudussa koontinäyttö uuden ruudun kera. [Muokkaa ruudun näyttöä ja toimintaa](service-dashboard-edit-tile.md) tai valitse ruutu palataksesi raporttiin.
 
 ## <a name="pin-an-entire-report-page"></a>Koko raportin sivun kiinnittäminen
-Toinen vaihtoehto on koko raporttisivun kiinnittäminen koontinäyttöön. Se on helppo tapa kiinnittää kerralla useita visualisointeja.  Kun kiinnität koko sivun, ruudut ovat *reaaliaikaisia*. Voit käsitellä niitä suoraan koontinäytössä. Jos teet visualisointeihin muutoksia raporttieditorissa, kuten lisäät suodattimen tai muutat kaaviossa käytettäviä kenttiä, muutokset näkyvät myös koontinäytön ruudussa.  
+Toinen vaihtoehto on koko raporttisivun kiinnittäminen koontinäyttöön. Se on helppo tapa kiinnittää kerralla useita visualisointeja. Kun kiinnität koko sivun, ruudut ovat *reaaliaikaisia*. Voit siis käsitellä niitä suoraan koontinäytössä. Jos teet visualisointeihin muutoksia raporttieditorissa, kuten lisäät suodattimen tai muutat kaaviossa käytettäviä kenttiä, muutokset näkyvät myös koontinäytön ruudussa.  
 
-Jos haluat lisätietoja, katso [Koko raportin sivun kiinnittäminen](service-dashboard-pin-live-tile-from-report.md)
+Jos haluat lisätietoja, katso [Koko raportin sivun kiinnittäminen](service-dashboard-pin-live-tile-from-report.md).
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
-[Koontinäytöt Power BI:ssä](consumer/end-user-dashboards.md)
-
-[Koontinäyttöruudut Power BI:ssä](consumer/end-user-tiles.md)
-
-[Raportit Power BI:ssä](consumer/end-user-reports.md)
-
-[Tietojen päivittäminen Power BI:ssä](refresh-data.md)
-
-[Power BI -palvelun peruskäsitteitä suunnittelijoille](service-basic-concepts.md)
+- [Koontinäytöt Power BI -palvelun kuluttajille](consumer/end-user-dashboards.md)
+- [Koontinäyttöruudut Power BI:ssä](consumer/end-user-tiles.md)
+- [Raportit Power BI:ssä](consumer/end-user-reports.md)
+- [Tietojen päivittäminen Power BI:ssä](refresh-data.md)
+- [Power BI -palvelun peruskäsitteitä suunnittelijoille](service-basic-concepts.md)
 
 Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
 

@@ -7,25 +7,25 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/08/2019
+ms.date: 07/29/2019
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: d46fa8be055186d2430ca4d3c387fae93b91acc3
-ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
+ms.openlocfilehash: 431c1738a5d2e975fd96a8209ca8245cd4414d40
+ms.sourcegitcommit: 73228d0a9038b8369369c059ad06168d2c5ff062
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68523203"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "68730177"
 ---
 # <a name="measures-in-power-bi-desktop"></a>Mittarit Power BI Desktopissa
 
 **Power BI Desktopin** avulla tiedoistasi voi saada paremman käsityksen muutamalla napsautuksella. Joskus nämä tiedot eivät kuitenkaan sisällä kaikkea sitä, mitä tarvitaan, jotta kaikkein tärkeimpiin kysymyksiin saataisiin vastauksia. Mittarit voivat auttaa tämän saavuttamisessa.
 
-Mittareita käytetään joissakin yleisimmissä tietoanalyyseissa, kuten summat, keskiarvot, minimi- tai maksimiarvot, määrät tai monimutkaisemmat laskutoimitukset, jotka luot itse DAX-kaavan avulla. Mittarien lasketut tulokset muuttuvat aina sen mukaan, miten raporttia käsitellään, mahdollistaen nopean ja dynaamisen tietojen tarkastelun. Menetelmien kuvailu on alla.
+Mittareita käytetään joissakin yleisimmissä tietoanalyyseissa, Yksinkertaiset yhteenvedot, kuten summat, keskiarvot, pienimmät ja suurimmat arvot ja määrät, voidaan määrittää Kentät-ruudussa [Yhteenveto ja luokka](https://docs.microsoft.com/power-bi/guided-learning/visualizations?tutorial-step=16) -videossa kuvatulla tavalla. Voit luoda kehittyneempiä laskutoimituksia itse DAX-kaavan avulla. Mittarien lasketut tulokset muuttuvat aina sen mukaan, miten raporttia käsitellään, mahdollistaen nopean ja dynaamisen tietojen tarkastelun. Menetelmien kuvailu on alla.
 
 ## <a name="understanding-measures"></a>Mittarien ymmärtäminen
 
-**Power BI Desktopissa** mittareita luodaan ja käytetään **raporttinäkymässä** tai **tietonäkymässä**. Omat luodut mittarit näkyvät kentät-listassa laskin-kuvakkeen kanssa. Mittarit voit nimetä miten tahansa ja niitä voi lisätä uuteen tai jo olemassa olevan raportin visualisointiin muiden kenttien tapaan.
+**Power BI Desktopissa** mittareita luodaan ja näytetään **raporttinäkymässä** tai **tietonäkymässä**. Omat luodut mittarit näkyvät kentät-listassa laskin-kuvakkeen kanssa. Mittarit voit nimetä miten tahansa ja niitä voi lisätä uuteen tai jo olemassa olevan raportin visualisointiin muiden kenttien tapaan.
 
 ![](media/desktop-measures/measuresinpbid_measinfieldlist.png)
 
@@ -64,6 +64,25 @@ Voit myös valita mittarien tietoluokkia.
 Tämän ansiosta voit muun muassa mittarien avulla luoda dynaamisesti URL-osoitteita ja merkitä tietoluokan verkon URL-osoitteeksi. 
 
 Voit luoda taulukoita, jotka näyttävät mittarit verkon URL-osoitteina, ja napsauttaa valintasi perusteella luotua URL-osoitetta. Tämä on erityisen hyödyllistä, kun haluat linkittää muihin Power BI -raportteihin [URL-suodattimen parametrien](service-url-filters.md) avulla.
+
+
+## <a name="organizing-your-measures"></a>Mittarien järjestäminen
+
+Mittarit sisältävät *aloitus*taulukon, joka määrittää, mistä kohtaa kenttäluetteloa ne löytyvät. Voit muuttaa niiden sijaintia valitsemalla sijainnin mallin taulukoista.
+
+![Valitse mittari taulukolle](media/desktop-measures/measures-03.png)
+
+Voit myös järjestää taulukon kenttiä *näyttökansioihin*. Valitse **mallinäkymä** Power BI Desktop -ikkunan vasemmasta reunasta ja valitse sitten kenttä, jonka haluat siirtää piirtoalustalla näkyvästä käytettävissä olevien kenttien luettelosta. Ominaisuusruutuun tulee näkyviin tekstiruutu **näyttökansiota** varten. Nimen kirjoittaminen **Näyttökansio**-kenttään luo kansion ja siirtää valitun kentän kyseiseen kansioon.
+
+![Luo kenttä mittareita varten](media/desktop-measures/measures-04.gif)
+
+Voit luoda alikansioita käyttämällä kenoviivaa. Esimerkiksi *Talous\Valuutat* luo *Talous*-kansion ja sen sisälle *Valuutat*-kansion.
+
+Voit määrittää kentän näkymään useissa kansioissa käyttämällä puolipistettä kansioiden nimien erottamiseen. Esimerkiksi jos luot kohteen *Tuotteet\Nimet;Osastot*, kenttä näkyy sekä *Osastot*- että *Nimet*-kansiossa *Tuotteen*-kansiossa sisällä.
+
+Voit myös luoda erikoistaulukon, joka sisältää vain mittareita, jotka näkyvät aina **kenttäluettelon** yläosassa. Voit tehdä tämän luomalla taulukon, jossa on vain yksi sarake. Voit luoda kyseisen taulukon käyttämällä **Anna tiedot** -toimintoa. Siirrä sitten mittarit kyseiseen taulukkoon. Piilota lopuksi luomasi sarake (ei taulukkoa). Sinun on suljettava **kenttäluettelo** ja avattava se uudelleen, jotta Power BI Desktop näyttää sen oikein. Voit tehdä tämän napsauttamalla **kenttäluettelon** yläosassa olevaa kaksoisnuolikuvaketta.
+
+![Järjestä mittarit ja säilytä ne Kentät-luettelon päällä](media/desktop-measures/measures-05.png)
 
 ## <a name="learn-more"></a>Lisätietoja
 Olemme antaneet lyhyen esittelyn mittareihin, mutta on olemassa paljon enemmän ohjeistuksia omien mittarien luontia varten. Tutustu [opetusohjelmaan: Omien mittarien luominen Power BI Desktopissa](desktop-tutorial-create-measures.md), josta voi ladata mallitiedoston ja saada vaiheittaiset ohjeet mittarien luomiseen.  

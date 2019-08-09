@@ -10,18 +10,18 @@ ms.topic: conceptual
 ms.date: 07/15/2019
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 93d2c4358b0f4b4090a2c8bea3daa8eec71c4982
-ms.sourcegitcommit: 277fadf523e2555004f074ec36054bbddec407f8
+ms.openlocfilehash: b910f20935c76f8723d8ca876cb57d811976772b
+ms.sourcegitcommit: 73228d0a9038b8369369c059ad06168d2c5ff062
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68270902"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "68729933"
 ---
 # <a name="use-personal-gateways-in-power-bi"></a>Henkilökohtaisten yhdyskäytävien käyttö Power BI:ssä
 
 [!INCLUDE [gateway-rewrite](includes/gateway-rewrite.md)]
 
-Paikallinen tietoyhdyskäytävä (henkilökohtainen tila) on paikallisen tietoyhdyskäytävän versio, joka toimii vain Power BI:n kanssa. Henkilökohtaisen yhdyskäytävän avulla yksittäiset käyttäjät voivat asentaa yhdyskäytävän omaan tietokoneeseensa ja päästä käyttämään paikallisia tietoja.
+Paikallinen tietoyhdyskäytävä (henkilökohtainen tila) on paikallisen tietoyhdyskäytävän versio, joka toimii vain Power BI:n kanssa. Henkilökohtaisen yhdyskäytävän avulla voit asentaa yhdyskäytävän omaan tietokoneeseen ja päästä käyttämään paikallisia tietoja.
 
 > [!NOTE]
 > Kullekin Power BI -käyttäjälle voidaan suorittaa vain yhtä henkilökohtaisen tilan yhdyskäytävää. Jos asennat toisen henkilökohtaisen tilan yhdyskäytävän samalle käyttäjälle, jopa toiseen tietokoneeseen, uusin asennus korvaa aiemmin luodun edellisen asennuksen.
@@ -46,15 +46,15 @@ Paikallisen tietoyhdyskäytävän (henkilökohtainen tila) asentaminen:
 
 1. [Lataa paikallinen tietoyhdyskäytävä](https://go.microsoft.com/fwlink/?LinkId=820925&clcid=0x409).
 
-2. Valitse asennusohjelmasta paikallinen tietoyhdyskäytävä (henkilökohtainen tila) ja valitse sitten **Seuraava**-painike.
+2. Valitse asennusohjelmasta paikallinen tietoyhdyskäytävä (henkilökohtainen tila) ja valitse sitten **Seuraava**.
 
    ![Paikallisen tietoyhdyskäytävän (henkilökohtainen tila) valitseminen](media/service-gateway-personal-mode/personal-gateway-select.png)
 
-Kun asennus on valmis ja olet kirjautunut sisään, näet seuraavan näytön.
+Yhdyskäytävätiedostot on asennettu kohteeseen _"%localappdata%\Microsoft\Paikallinen tietoyhdyskäytävä (henkilökohtainen tila)_ . Kun asennus on valmis ja olet kirjautunut sisään, näet seuraavan näytön.
 
 ![Paikallinen tietoyhdyskäytävä (henkilökohtainen tila) onnistui](media/service-gateway-personal-mode/personal-gateway-complete.png)
 
-## <a name="using-fast-combine-with-the-personal-gateway"></a>Nopean yhdistämisen ja henkilökohtaisen yhdyskäytävän käyttäminen
+## <a name="use-fast-combine-with-the-personal-gateway"></a>Nopean yhdistämisen ja henkilökohtaisen yhdyskäytävän käyttäminen
 
 Henkilökohtaisen yhdyskäytävän nopea yhdistäminen auttaa ohittamaan määritetyt yksityisyystasot kyselyitä suoritettaessa. Nopean yhdistämisen ottaminen käyttöön paikallisen tietoyhdyskäytävän (henkilökohtainen tila) kanssa:
 
@@ -70,31 +70,31 @@ Henkilökohtaisen yhdyskäytävän nopea yhdistäminen auttaa ohittamaan määri
     </setting>
     ```
 
-3. Kun olet valmis, asetus tulee voimaan noin minuutin kuluttua. Vahvista **nopean yhdistämisen** toiminta suorittamalla päivitys **Power BI -palvelussa**.
+3. Kun olet valmis, asetus tulee voimaan noin minuutin kuluttua. Vahvista nopean yhdistämisen toiminta suorittamalla päivitys Power BI -palvelussa.
 
 ## <a name="frequently-asked-questions-faq"></a>Usein kysytyt kysymykset
 
-**Kysymys:** Voinko käyttää **paikallista tietoyhdyskäytävää (henkilökohtainen tila)** rinnakkain **paikallisen tietoyhdyskäytävän** (aiemmin yritysyhdyskäytävä) kanssa?
+**Kysymys:** Voinko käyttää paikallista tietoyhdyskäytävää (henkilökohtainen tila) rinnakkain paikallisen tietoyhdyskäytävän (aiemmin yritysyhdyskäytävä) kanssa?
   
-**Vastaus**: Kyllä, molemmat voidaan suorittaa samanaikaisesti.
+**Vastaus**: Kyllä, molemmat yhdyskäytävät voidaan suorittaa samanaikaisesti.
 
-**Kysymys:** Voinko suorittaa **paikallisen tietoyhdyskäytävän (henkilökohtainen tila)** palveluna?
+**Kysymys:** Voinko suorittaa paikallisen tietoyhdyskäytävän (henkilökohtainen tila) palveluna?
   
-**Vastaus**: Ei. **Paikallinen tietoyhdyskäytävä (henkilökohtainen tila)** voidaan suorittaa vain sovelluksena. Jos haluat suorittaa yhdyskäytävän palveluna tai järjestelmänvalvojatilassa, sinun on käytettävä [**paikallista tietoyhdyskäytävää**](/data-integration/gateway/service-gateway-onprem) (aiemmin yritysyhdyskäytävä).
+**Vastaus**: Ei. Paikallinen tietoyhdyskäytävä (henkilökohtainen tila) voidaan suorittaa vain sovelluksena. Jos haluat suorittaa yhdyskäytävän palveluna tai järjestelmänvalvojatilassa, sinun on käytettävä [paikallista tietoyhdyskäytävää](/data-integration/gateway/service-gateway-onprem) (aiemmin yritysyhdyskäytävä).
 
-**Kysymys:** Miten usein **paikallinen tietoyhdyskäytävä (henkilökohtainen tila)** päivitetään?
+**Kysymys:** Miten usein paikallinen tietoyhdyskäytävä (henkilökohtainen tila) päivitetään?
   
 **Vastaus**: Henkilökohtainen yhdyskäytävä on tarkoitus päivittää kuukausittain.
 
 **Kysymys:** Miksi minua pyydetään päivittämään tunnistetiedot?
   
-**Vastaus**: Tunnistetietojen päivittämistä voidaan pyytää useissa eri tilanteissa. Useimmiten tunnistetiedot pyydetään päivittämään silloin, kun **paikallinen tietoyhdyskäytävä (henkilökohtainen tila)** on asennettu uudelleen eri koneeseen kuin jossa **Power BI - Personal** -yhdyskäytävä on. Tietojen päivittämistä voidaan pyytää myös silloin, kun tietolähteessä on virhe ja Power BI on epäonnistunut yhteyden testaamisessa tai kun on tapahtunut aikakatkaisu tai järjestelmävirhe. Voit päivittää tunnistetiedot siirtymällä **Power BI -palvelussa** **rataskuvakkeeseen**, valitsemalla **Asetukset** ja sitten **Tietojoukot**, etsimällä kyseessä olevan tietojoukon ja valitsemalla **Tietolähteen tunnistetiedot**.
+**Vastaus**: Tunnistetietojen päivittämistä voidaan pyytää useissa eri tilanteissa. Useimmiten tunnistetiedot pyydetään päivittämään silloin, kun paikallinen tietoyhdyskäytävä (henkilökohtainen tila) on asennettu uudelleen eri koneeseen kuin jossa Power BI - Personal -yhdyskäytävä on. Tietojen päivittämistä voidaan pyytää myös silloin, kun tietolähteessä on virhe ja Power BI on epäonnistunut yhteyden testaamisessa tai kun on tapahtunut aikakatkaisu tai järjestelmävirhe. Jos haluat päivittää tunnistetietosi Power BI -palvelussa, valitse hammasrataskuvake ja valitse **Asetukset** > **Tietojoukot**. Etsi kyseessä oleva tietojoukko ja valitse **Tietolähteen tunnistetiedot**.
 
 **Kysymys:** Miten kauan aiempi henkilökohtainen yhdyskäytävä on offline-tilassa päivityksen aikana?
   
 **Vastaus**: Henkilökohtaisen yhdyskäytävän päivittäminen uuteen versioon kestää vain muutaman minuutin.
 
-**Kysymys:** Käytä R- ja Python-komentosarjoja. Tuetaanko sitä?
+**Kysymys:** Käytä R- ja Python-komentosarjoja. Tuetaanko niitä?
   
 **Vastaus**: R- ja Python-komentosarjoja tuetaan henkilökohtaisessa tilassa.
 
@@ -102,5 +102,4 @@ Henkilökohtaisen yhdyskäytävän nopea yhdistäminen auttaa ohittamaan määri
 
 * [Paikallisen tietoyhdyskäytävän välityspalvelinasetusten määrittäminen](/data-integration/gateway/service-gateway-proxy)  
 
-Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
-
+Onko sinulla kysyttävää? Kokeile [Power BI -yhteisöä](http://community.powerbi.com/).

@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: overview
 ms.date: 07/15/2019
-ms.openlocfilehash: 10135e0fa725cd4093802cd1416cab302174e21d
-ms.sourcegitcommit: 277fadf523e2555004f074ec36054bbddec407f8
+ms.openlocfilehash: 2e59499b93f4d1b4879cdec5b807f863a80718aa
+ms.sourcegitcommit: 805d52e57a935ac4ce9413d4bc5b31423d33c5b1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68270789"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68665358"
 ---
 # <a name="paginated-reports-in-power-bi-faq"></a>Sivutetut raportit Power BI:ssä: Usein kysytyt kysymykset 
 
@@ -162,7 +162,7 @@ Kyllä, tuemme kykyä suorittaa koodin raporteissasi samalla tavoin kuin SSRS:ss
 
 ### <a name="can-i-use-power-bi-embedded-to-embed-my-paginated-reports-into-an-app-im-hosting"></a>Voinko käyttää sisäistä Power BI:tä upottamaan sivutetut raportit sovellukseen, jota isännöin?
 
-SaaS-upotusta tuetaan kesäkuussa.  Tarkoituksemme on tukea PaaS-upotusta olemassa olevissa Power BI -ohjelmointirajapinnoissa, mutta emme ole vielä määrittäneet aikarajaa sille, milloin tämä skenaario on käytettävissä.
+SaaS-upotusta tuetaan jo. PaaS-upotusta ei tueta tällä hetkellä.
 
 ### <a name="can-i-drill-through-from-a-power-bi-report-to-a-paginated-report"></a>Voinko porautua Power BI -raportista sivutettuun raporttiin?
 

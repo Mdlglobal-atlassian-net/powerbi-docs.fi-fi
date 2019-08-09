@@ -10,12 +10,12 @@ ms.subservice: powerbi-gateways
 ms.topic: conceptual
 ms.date: 07/15/2019
 LocalizationGroup: Gateways
-ms.openlocfilehash: b1d84e9de9ae6d6fd8306fce4865977a8d273652
-ms.sourcegitcommit: 76fadf20c1e19ec43aa8f9c5a5e909b567419ef6
+ms.openlocfilehash: a240d84b20f63542c33bb7cbbb9a9c97af7db2f7
+ms.sourcegitcommit: d74aca333595beaede0d71ba13a88945ef540e44
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/17/2019
-ms.locfileid: "68289940"
+ms.lasthandoff: 08/03/2019
+ms.locfileid: "68757687"
 ---
 # <a name="use-security-assertion-markup-language-saml-for-single-sign-on-sso-from-power-bi-to-on-premises-data-sources"></a>Security Assertion Markup Languagen (SAML) käyttäminen kertakirjautumista (SSO) varten Power BI:stä paikallisiin tietolähteisiin
 
@@ -33,7 +33,7 @@ Huomaa, että HANA:n käytössä on **erittäin** suositeltavaa, että salaus ot
 
 Jotta voit käyttää SAML:ää, on muodostettava luottamussuhde HANA-palvelimen, jolle haluat ottaa SSO:n käyttöön, ja yhdyskäytävän välille, joka toimii tässä tilanteessa SAML-tunnistetietopalveluna (IdP). On monia tapoja muodostaa tämä suhde, kuten tuomalla yhdyskäytävän IdP:n x509-varmenne HANA-palvelimen luottamussäilöön tai määrittämällä HANA-palvelin luottamaan varmenteen päämyöntäjän allekirjoittamaan yhdyskäytävän X509-varmenteeseen. Tässä oppaassa kuvataan jälkimmäinen lähestymistapa, mutta voit käyttää toista menetelmää, jos se on kätevämpää.
 
-Huomaa myös, että vaikka tässä oppaassa käytetään OpenSSL:ää HANA-palvelimen salauspalveluna, OpenSSL:n asemesta on myös mahdollista käyttää SAP-salauskirjastoa (tunnetaan myös nimillä CommonCryptoLib tai sapcrypto) luottamussuhteen muodostamisen vaiheisiin. Katso lisätietoja virallisesta SAP-dokumentaatiosta.
+Huomaa myös, että vaikka tässä oppaassa käytetään OpenSSL:ää HANA-palvelimen salauspalveluna, SAP suosittelee käyttämään OpenSSL:n asemesta SAP-salauskirjastoa (tunnetaan myös nimillä CommonCryptoLib tai sapcrypto) luottamussuhteen muodostamisen vaiheisiin. Katso lisätietoja virallisesta SAP-dokumentaatiosta.
 
 Seuraavissa vaiheissa kuvataan, miten voit muodostaa luottamussuhteen HANA-palvelimen ja yhdyskäytävän IdP:n välillä allekirjoittamalla yhdyskäytävän IdP:n X509-varmenteen HANA-palvelimen luottamalla varmenteen päämyöntäjällä.
 
@@ -178,9 +178,9 @@ Palvelinpuolen todentamisen jäljityksistä saa yksityiskohtaisia tietoja SAP HA
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
-Lisätietoja **paikallisesta tietoyhdyskäytävästä** ja **DirectQuerystä** on seuraavissa resursseissa:
+Lisätietoja **paikallisesta tietoyhdyskäytävästä** ja **DirectQuerysta** on seuraavissa resursseissa:
 
-* [Mikä paikallinen tietoyhdyskäytävä on?](/data-integration/gateway/service-gateway-getting-started)
+* [Mikä paikallinen tietoyhdyskäytävä on?](/data-integration/gateway/service-gateway-onprem)
 * [DirectQuery Power BI:ssä](desktop-directquery-about.md)
 * [DirectQueryn tukemat tietolähteet](desktop-directquery-data-sources.md)
 * [DirectQuery ja SAP BW](desktop-directquery-sap-bw.md)

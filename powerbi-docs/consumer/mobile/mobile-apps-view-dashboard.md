@@ -7,21 +7,21 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 06/28/2018
+ms.date: 07/05/2019
 ms.author: mshenhav
-ms.openlocfilehash: dc117c9b17e9d20d1e5be6e6fedd18cb7aa3ae61
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 4629b78379ba87d58c31f8102b855e1f62565abd
+ms.sourcegitcommit: 805d52e57a935ac4ce9413d4bc5b31423d33c5b1
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61139320"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68665511"
 ---
 # <a name="view-dashboards-and-reports-in-the-power-bi-mobile-apps"></a>Raporttinäkymien ja raporttien tarkastelu Power BI -mobiilisovelluksissa
 Koskee seuraavia:
 
-| ![iPhone](./media/mobile-apps-view-dashboard/iphone-logo-50-px.png) | ![iPad](./media/mobile-apps-view-dashboard/ipad-logo-50-px.png) | ![Android-puhelin](./media/mobile-apps-view-dashboard/android-phone-logo-50-px.png) | ![Android-tabletti](./media/mobile-apps-view-dashboard/android-tablet-logo-50-px.png) | ![Windows 10 -laitteet](./media/mobile-apps-view-dashboard/win-10-logo-50-px.png) |
+| ![iPhone](./media/mobile-apps-view-dashboard/iphone-logo-50-px.png) | ![iPad](./media/mobile-apps-view-dashboard/ipad-logo-50-px.png) | ![Android-puhelin](./media/mobile-apps-view-dashboard/android-phone-logo-50-px.png) | ![Android-tabletti](./media/mobile-apps-view-dashboard/android-tablet-logo-50-px.png) | 
 |:--- |:--- |:--- |:--- |:--- |
-| [iPhonet](mobile-apps-view-dashboard.md#view-dashboards-on-your-iphone) |[iPadit](mobile-apps-view-dashboard.md#view-dashboards-on-your-ipad) |[Android-puhelimet](mobile-apps-view-dashboard.md#view-dashboards-on-your-android-phone) |[Android-tabletit](mobile-apps-view-dashboard.md#view-dashboards-on-your-android-tablet) |[Windows 10 -laitteet](mobile-apps-view-dashboard.md#view-dashboards-on-your-windows-10-device) |
+| [iPhonet](mobile-apps-view-dashboard.md#view-dashboards-on-your-iphone) |[iPadit](mobile-apps-view-dashboard.md#view-dashboards-on-your-ipad) |[Android-puhelimet](mobile-apps-view-dashboard.md#view-dashboards-on-your-android-phone) |[Android-tabletit](mobile-apps-view-dashboard.md#view-dashboards-on-your-android-tablet) |
 
 Raporttinäkymät ovat portaali yrityksesi elinkaareen ja prosesseihin. Raporttinäkymä on yleisnäkymä, jossa voit seurata yrityksen nykyistä tilaa yhdessä paikassa.
 
@@ -145,45 +145,6 @@ Voit lähentää ja loitontaa raporttinäkymän eri alueita nipistämällä ja s
     ![Navigointipolku](./media/mobile-apps-view-dashboard/power-bi-android-tablet-breadcrumb.png)
 
     Voit lähentää ja loitontaa raporttinäkymän eri alueita nipistämällä ja siirtyä näkymässä panoroimalla. Voit edelleen avata ruudun tarkastelutilassa ja käsitellä tietojasi [napauttamalla ruutua](mobile-tiles-in-the-mobile-apps.md).
-
-## <a name="view-dashboards-on-your-windows-10-device"></a>Raporttinäkymien tarkastelu Windows 10 -laitteessa
-1. Avaa Windows 10 -laitteen Power BI -sovellus ja kirjaudu sisään.
-   
-   Haluatko ensin [ladata sovelluksen](http://go.microsoft.com/fwlink/?LinkID=526478)?
-2. Avaa raporttinäkymä napauttamalla sitä.   
-   
-   ![Raporttinäkymän aloitusnäkymä](./media/mobile-apps-view-dashboard/power-bi-windows-10-device-dashboard-home.png)
-   
-   * Mustat tähdet näyttävät, mitkä raporttinäkymät ovat suosikkeja. 
-   * Kunkin raporttinäkymän nimen (tässä esimerkissä **MBI**) alapuolella oleva merkintä kertoo, miten kunkin raporttinäkymän tiedot on luokiteltu. Lue lisää [tietojen luokittelusta Power BI:ssä](../../service-data-classification.md).
-   
-   Power BI -raporttinäkymät näyttävät hiukan erilaisilta Windows 10 -puhelimessasi. Kaikki ruudut näkyvät saman levyisinä, ja ne on järjestetty peräkkäin ylhäältä alaspäin.
-   
-   ![Raporttinäkymä pystysuunnassa](./media/mobile-apps-view-dashboard/power-bi-windows-10-dashboard-0928.png)
-   
-    Voit myös tarkastella raporttinäkymiä vaakasuunnassa kääntämällä puhelimesi sivuttain.
-   
-   > [!TIP]
-   > Jos olet raporttinäkymän omistaja, Power BI -palvelussa voit [luoda raporttinäkymästä pystysuuntaisen näkymän puhelimille](../../service-create-dashboard-mobile-phone-view.md). 
-   > 
-   > 
-3. Raporttinäkymässä voit:
-   
-   * [napauttaa ruutua](mobile-tiles-in-the-mobile-apps.md) ja avata sen kohdistustilassa ja käsitellä sitä.
-   * esittää Power BI -raporttinäkymäsi ilman reunoja tai valikoita PowerPointin **Diaesitys**-näkymän tapaan napauttamalla **Koko näyttö** -kuvaketta ![Koko näytön kuvake](./media/mobile-apps-view-dashboard/power-bi-windows-10-full-screen-icon.png).
-   * [jakaa raporttinäkymäsi](mobile-share-dashboard-from-the-mobile-apps.md) työtoverin kanssa napauttamalla **Kutsu**-kuvaketta ![Kutsu-kuvake](./media/mobile-apps-view-dashboard/pbi_andr_inviteicon.png).
-   * napauttaa ![suosikkitähteä](././media/mobile-apps-view-dashboard/power-bi-mobile-not-favorite-icon.png) ja [tehdä raporttinäkymästä suosikin](mobile-apps-favorites.md).
-   * [kiinnittää raporttinäkymän Windowsin aloitusnäkymään](mobile-pin-dashboard-start-screen-windows-10-phone-app.md) napauttamalla **Kiinnitä aloitusnäyttöön** -kuvaketta. 
-4. Siirry raporttinäkymien aloitussivulle napauttamalla raporttinäkymän nimeä, jolloin navigointipolku avautuu. Valitse sitten **Oma työtila**:
-   
-    ![Navigointipolku](./media/mobile-apps-view-dashboard/power-bi-windows-10-dashboard-breadcrumb.png)
-
-### <a name="view-dashboards-in-landscape-mode-on-your-windows-10-phone"></a>Raporttinäkymien tarkastelu vaakasuunnassa Windows 10 -puhelimessa
-Voit myös tarkastella raporttinäkymiä vaakasuunnassa kääntämällä puhelintasi. Raporttinäkymän asettelu muuttuu ruuduista koko raporttinäkymän näkymään, jolloin näet kaikki raporttinäkymän ruudut sellaisina kuin ne ovat Power BI -palvelussa.
-
-![Raporttinäkymä vaakasuunnassa](./media/mobile-apps-view-dashboard/pbi_iph_landscape.png)
-
-Voit lähentää ja loitontaa raporttinäkymän eri alueita nipistämällä ja siirtyä näkymässä panoroimalla. Voit edelleen avata ruudun tarkastelutilassa ja käsitellä tietojasi [napauttamalla ruutua](mobile-tiles-in-the-mobile-apps.md).
 
 ## <a name="create-a-phone-view-of-a-dashboard-in-the-power-bi-service"></a>Puhelinnäkymän luominen raporttinäkymästä Power BI -palvelussa
 Jos olet raporttinäkymän omistaja, *Power BI -palvelussa* voit luoda raporttinäkymästä pystysuuntaisen näkymän puhelimille. 

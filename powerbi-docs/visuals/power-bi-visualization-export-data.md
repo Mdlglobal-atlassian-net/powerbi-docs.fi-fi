@@ -8,15 +8,15 @@ featuredvideoid: jtlLGRKBvXY
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 06/19/2019
+ms.date: 07/19/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 86a3faf2095ff5100bc372a68b7d56861eb94806
-ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
+ms.openlocfilehash: 21fa3c5c3907e8c1aa4d40bd3e6332c77ff62b98
+ms.sourcegitcommit: 73228d0a9038b8369369c059ad06168d2c5ff062
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68523342"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "68730074"
 ---
 # <a name="export-data-from-visualizations"></a>Tietojen vieminen visualisoinneista
 
@@ -79,6 +79,8 @@ Seuraa mukana avaamalla [Hankinta-analyysimallin raportti](../sample-procurement
     ![Näyttökuva Vie tiedot -näyttökuvasta, jossa on korostettu Yhteenvedetyt tiedot, xlsx ja vientiasetukset.](media/power-bi-visualization-export-data/power-bi-export-data5.png)
 
     Jos käytit suodattimia visualisointiin, viedyt tiedot viedään suodatettuina. Kun valitset **Vie**, selain pyytää sinua tallentamaan tiedoston. Kun tiedosto on tallennettu, avaa se Excelissä.
+    
+    Kaikki hierarkian käyttämät tiedot viedään, ei pelkästään visualisoinnin nykyisellä porautumistasolla käytettyjä tietoja. Esimerkiksi jos visualisointia ei ole vielä siirretty alaspäin ylimmältä tasolta, viedyt tiedot sisältävät kaikki hierarkian tiedot, ei vain visualisoinnin luomiseen sen nykyisellä porautumistasolla käytettyjä tietoja.
 
     **Yhteenvedetyt tiedot**: Valitse tämä vaihtoehto, jos haluat viedä tietoja siitä, mitä näet tässä visualisoinnissa.  Tällainen vientityyppi näyttää vain tiedot (sarakkeet ja mittarit), jotka valitsit visualisoinnin luomiseksi.  Jos visualisoinnissa on kooste, viet koottuja tietoja. Esimerkiksi jos sinulla on palkkikaavio, joka näyttää neljä palkkia, saat neljä tietoriviä. Yhteenvedetyt tiedot ovat saatavilla *.xlsx*- ja *.csv*-muodossa.
 
@@ -92,6 +94,8 @@ Seuraa mukana avaamalla [Hankinta-analyysimallin raportti](../sample-procurement
     > Raportin asetusten mukaan sinulla voi olla vaihtoehto, jonka mukaan voit tai et voi viedä pohjana olevia tietoja.
 
     Jos käytit suodattimia visualisointiin, viedyt tiedot viedään suodatettuina. Kun valitset **Vie**, selain pyytää sinua tallentamaan tiedoston. Kun tiedosto on tallennettu, avaa se Excelissä.
+    
+    Kaikki hierarkian käyttämät tiedot viedään, ei pelkästään visualisoinnin nykyisellä porautumistasolla käytettyjä tietoja. Esimerkiksi jos visualisointia ei ole vielä siirretty alaspäin ylimmältä tasolta, viedyt tiedot sisältävät kaikki hierarkian tiedot, ei vain visualisoinnin luomiseen sen nykyisellä porautumistasolla käytettyjä tietoja.
 
     >[!WARNING]
     >Viemällä pohjana olevat tiedot käyttäjät voivat tarkastella kaikkia yksityiskohtaisia tietoja – tietojen kaikissa sarakkeissa. Power BI -palvelun järjestelmänvalvojat voivat poistaa tämän käytöstä organisaatiossaan. Jos olet tietojoukon omistaja, voit määrittää sarakkeet **piilotetuiksi** niin, että ne eivät näy **Kenttä**-luettelossa Power BI Desktopissa tai Power BI -palvelussa.

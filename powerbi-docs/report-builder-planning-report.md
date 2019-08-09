@@ -1,22 +1,23 @@
 ---
 title: Raportin suunnittelu Power BI:n raportin muodostimessa
 description: Power BI:n sivutetun raportin muodostimen avulla voit luoda erilaisia sivutettuja raportteja. Raportista tulee hyödyllinen ja helppotajuinen, kun käytät hetken sen suunnitteluun.
-ms.date: 06/06/2019
+ms.date: 07/25/2019
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.assetid: 79113505-1ce8-4f8c-9260-d861838f7813
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: fd4a318d7a61f6f2298de6b9d5d23ad2ae063d28
-ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.openlocfilehash: 33cdb53ab411e0d2f4686f7cc9a41bb3f0fe4cb6
+ms.sourcegitcommit: bc688fab9288ab68eaa9f54b9b59cacfdf47aa2e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "66840506"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68623861"
 ---
 # <a name="planning-a-report-in-power-bi-report-builder"></a>Raportin suunnittelu Power BI:n raportin muodostimessa
-  Power BI:n sivutetun raportin muodostimen avulla voit luoda erilaisia sivutettuja raportteja. Voit esimerkiksi luoda raportteja, joissa näytetään myyntitietojen yhteenveto tai niiden tarkka katsaus, toimintaraportteja tai raporttinäkymiä. Voit myös luoda raportteja, joissa hyödynnetään monipuolista tekstin muotoiltua. Tällaisia ovat esimerkiksi myyntitilaukset, tuoteluettelot ja lomakekirjeet. Kaikki nämä raportit on luotu käyttäen samojen peruselementtien yhdistelmiä raportin muodostimessa. Raportista tulee hyödyllinen ja helppotajuinen, kun käytät hetken sen suunnitteluun. Ennen kuin aloitat, pohdi hetki seuraavia asioita:  
+
+Power BI:n sivutetun raportin muodostimen avulla voit luoda erilaisia sivutettuja raportteja. Voit esimerkiksi luoda raportteja, joissa näytetään myyntitietojen yhteenveto tai niiden tarkka katsaus, toimintaraportteja tai raporttinäkymiä. Voit myös luoda raportteja, joissa hyödynnetään monipuolista tekstin muotoiltua. Tällaisia ovat esimerkiksi myyntitilaukset, tuoteluettelot ja lomakekirjeet. Kaikki nämä raportit on luotu käyttäen samojen peruselementtien yhdistelmiä raportin muodostimessa. Raportista tulee hyödyllinen ja helppotajuinen, kun käytät hetken sen suunnitteluun. Ennen kuin aloitat, pohdi hetki seuraavia asioita:  
   
 ## <a name="in-what-format-do-you-want-the-report-to-appear"></a>Missä muodossa haluat raportin näkyvän?
   
@@ -36,7 +37,7 @@ Ehkä haluat tarkentaa raportin koskemaan tiettyjä käyttäjiä tai paikkoja ta
   
 ## <a name="do-you-need-to-create-calculations"></a>Onko sinun luotava laskutoimituksia? 
   
-     Sometimes, your data source and datasets do not contain the exact fields that you need for your report. In that situation, you might have to create your own calculated fields. For example, you might want to multiply the price per unit times the quantity to get a line item sales amount. Expressions are also used to provide conditional formatting and other advanced features. For more information, see [Expressions in Power BI Report Builder](report-builder-expressions.md).  
+Tietolähteesi ja tietojoukkosi eivät aina sisällä juuri niitä kenttiä, joita tarvitset raporttiisi. Tässä tilanteessa saatat joutua luomaan omia laskettuja kenttiä. Ehkä esimerkiksi haluat kertoa yksikkökohtaisen hinnan määrällä saadaksesi rivinimikkeen myynnin määrän. Lausekkeita käytetään myös ehdollisen muotoilun ja muiden lisäominaisuuksien saamiseksi. Lisätietoja on kohdassa [Lausekkeet Power BI:n raportin muodostimessa](report-builder-expressions.md).  
   
 ## <a name="do-you-want-to-hide-report-items-initially"></a>Haluatko piilottaa raporttikohteet aluksi?
   
@@ -44,7 +45,7 @@ Mieti, haluatko tietoalueiden, ryhmien tai sarakkeiden olevan aluksi piilossa, k
   
 ## <a name="how-are-you-going-to-deliver-your-report"></a>Miten aiot toimittaa raportin?  
   
-     You can save your report to your local computer and continue to work on it, or run it locally for your own information. However, to share your report with others, you need to save the report to Power BI. Saving it to Power BI lets others run it whenever they want to. Alternatively, you can set up a subscription and e-mail delivery of the report to other individuals. You can have the report delivered in a specific export format if you prefer. 
+Voit tallentaa raporttisi paikalliseen tietokoneeseen ja jatkaa työskentelyä sen kanssa tai suorittaa sen paikallisesti omaa käyttöäsi varten. Kuitenkin jos haluat jakaa raporttisi muiden käyttäjien kanssa, sinun on tallennettava raportti Power BI:hin. Kun tallennat raportin Power BI:hin, muut käyttäjät voivat suorittaa sen halutessaan. Vaihtoehtoisesti voit määrittää raportin tilauksen ja toimituksen sähköpostitse muille käyttäjille. Voit halutessasi toimittaa raportin tietyssä vientimuodossa. 
   
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
