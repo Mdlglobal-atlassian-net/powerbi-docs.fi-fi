@@ -9,12 +9,12 @@ ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 05/17/2018
 ms.author: maggies
-ms.openlocfilehash: 6e3bed0cf8dda765722c0076086f59a91f1f380d
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: fe8ad0b951fedb17a97007e48808d2bfd7467e88
+ms.sourcegitcommit: 6c2c7a090b0826e3cfc3a897566e802857bbacc8
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "64770802"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68808225"
 ---
 # <a name="power-bi-report-data-sources-in-power-bi-report-server"></a>Power BI -raporttien tietolähteet Power BI -raporttipalvelimessa
 Power BI -raportit voivat muodostaa yhteyden useisiin tietolähteisiin. Käytettävissä on eri tietolähteitä riippuen siitä, miten tietoja käytetään. Tiedot voidaan tuoda tai tiedoille voidaan tehdä kyselyitä suoraan DirectQuerylla tai reaaliaikaisella SQL Server Analysis Services -yhteydellä.
@@ -202,7 +202,7 @@ Power BI -raporttipalvelin ei tue OAuth-pohjaista todennusta DirectQuerylle.
 | Azure SQL -tietokanta |Ei |Ei |Kyllä |Ei |Ei |
 | Azure SQL Data Warehouse |Ei |Ei |Kyllä |Ei |Ei |
 | Oracle-tietokanta |Ei |Ei |Kyllä |Kyllä |Kyllä |
-| SAP Business Warehouse -palvelin |Ei |Ei |Kyllä |Ei |Kyllä |
+| SAP Business Warehouse -palvelin |Ei |Ei |Kyllä |Ei |Ei |
 | SAP HANA -tietokanta |Ei |Ei |Kyllä |Kyllä |Ei |
 | Teradata-tietokanta |Ei |Ei |Kyllä |Kyllä |Kyllä |
 

@@ -1,6 +1,6 @@
 ---
-title: Taulukkovisualisoinnit Power BI -raporteissa ja -koontinäytöissä
-description: Opetusohjelma siitä, miten Power BI -raporttien ja -koontinäyttöjen taulukkovisualisointien kanssa työskennellään ja miten sarakkeiden leveyksiä muutetaan.
+title: Taulukkovisualisoinnit Power BI -raporteissa ja raporttinäkymissä
+description: Opetusohjelma siitä, miten Power BI -raporttien ja raporttinäkymien taulukkovisualisointien kanssa työskennellään ja miten sarakkeiden leveyksiä muutetaan.
 author: mihart
 manager: kvivek
 ms.reviewer: ''
@@ -11,14 +11,14 @@ ms.topic: conceptual
 ms.date: 06/24/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: a0525d448d5337c2c1613d8bc8f6d332a05b13e3
-ms.sourcegitcommit: 58c649ec5fd2447a0f9ca4c4d45a0e9fff2f1b6a
+ms.openlocfilehash: 857db3240385e9bf1b4e0416cc1200d1a029d73e
+ms.sourcegitcommit: cc4b18d55b2dca8fdb1bef00f53a0a808c41432a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "67409206"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68867203"
 ---
-# <a name="tables-in-power-bi-reports-and-dashboards"></a>Taulukot Power BI -raporteissa ja -koontinäytöissä
+# <a name="tables-in-power-bi-reports-and-dashboards"></a>Taulukot Power BI -raporteissa ja raporttinäkymissä
 
 Taulukko on ruudukko, joka sisältää tietoja järjestettynä loogiseen sarjaan rivejä ja sarakkeita. Se voi sisältää myös otsikkoja ja summarivin. Taulukot toimivat hyvin kvantitatiivisessa vertailussa, jossa tarkastellaan yhden luokan monia arvoja. Esimerkiksi tässä taulukossa näytetään **luokan** viisi eri mittaria.
 
@@ -35,9 +35,6 @@ Taulukko on hyvä vaihtoehto:
 * tietojen esittämiseen taulukkomuodossa.
 
 * numeeristen tietojen luokiteltuun esittämiseen.
-
-> [!NOTE]
-> Jos taulukossa on liikaa arvoja, harkitse sen muuntamista matriisiksi ja/tai alaspäin porauksen käyttämistä. Taulukko näyttää enintään 3 500 arvopistettä.
 
 ## <a name="prerequisites"></a>Edellytykset
 
