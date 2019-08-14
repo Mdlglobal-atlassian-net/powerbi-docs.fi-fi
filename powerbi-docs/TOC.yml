@@ -593,6 +593,8 @@
               href: service-export-to-pbix.md
             - name: Raportin suodattaminen URL-osoitteen parametrien avulla
               href: service-url-filters.md
+            - name: Muokkaa SAP-muuttujia
+              href: service-edit-sap-variables.md
             - name: Parhaat käytännöt nopeiden ja luotettavien raporttien luomiseen
               href: power-bi-reports-performance.md
         - name: Kysymysten kysyminen tiedoistasi
