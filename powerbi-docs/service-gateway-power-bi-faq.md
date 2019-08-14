@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 07/15/2019
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 3a5b6b89984064101b683532cbfb77ae5540c307
-ms.sourcegitcommit: 73228d0a9038b8369369c059ad06168d2c5ff062
+ms.openlocfilehash: cd3afd0ed3ba1f5b734aab2106cbd70f65f29006
+ms.sourcegitcommit: cc4b18d55b2dca8fdb1bef00f53a0a808c41432a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "68730253"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68867061"
 ---
 # <a name="on-premises-data-gateway-faq---power-bi"></a>Paikallisten tietoyhdyskäytävien usein kysytyt kysymykset – Power BI
 
@@ -23,9 +23,9 @@ ms.locfileid: "68730253"
 
 ## <a name="power-bi"></a>Power BI
 
-**Kysymys:** täytyykö minun päivittää henkilökohtainen yhdyskäytävä? 
+**Kysymys:** Onko paikallinen tietoyhdyskäytävä (henkilökohtainen tila) päivitettävä?
 
-**Vastaus**: ei, voit jatkaa henkilökohtaisen yhdyskäytävän käyttöä Power BI:ssä.
+**Vastaus**: Ei, voit jatkaa yhdyskäytävän (henkilökohtainen tila) käyttöä Power BI:ssä.
 
 **Kysymys:** Edellyttääkö yhdyskäytävän asentaminen ja hallitseminen Power BI -palvelussa erityisiä oikeuksia?
 
@@ -41,7 +41,7 @@ ms.locfileid: "68730253"
 
 **Kysymys:** miksi en saa muodostettua yhteyttä Oracle-palvelimeeni? 
 
-**Vastaus**: Sinun täytyy ehkä asentaa Oracle-asiakasohjelma ja määrittää tnsnames.ora-tiedostoon oikeat palvelintiedot, jotta voit muodostaa yhteyden. Tämä on yhdyskäytävästä erillinen asennus. Saat lisätietoja ohjeartikkelista [Oracle-asiakasohjelman asentaminen](service-gateway-onprem-manage-oracle.md#installing-the-oracle-client).
+**Vastaus**: Sinun täytyy ehkä asentaa Oracle-asiakasohjelma ja määrittää tnsnames.ora-tiedostoon oikeat palvelintiedot, jotta voit muodostaa yhteyden. Tämä on yhdyskäytävästä erillinen asennus. Saat lisätietoja ohjeartikkelista [Oracle-asiakasohjelman asentaminen](service-gateway-onprem-manage-oracle.md#install-the-oracle-client).
 
 **Kysymys:** toimiiko yhdyskäytävä Azure ExpressRouten kanssa? 
 

@@ -1,6 +1,6 @@
 ---
 title: Raportin upottaminen turvalliseen portaaliin tai sivustoon
-description: Power BI-ominaisuuden avulla käyttäjät voivat upottaa helposti ja turvallisesti upottaa raporttien sisäinen WWW-portaalit.
+description: Power BI:n turvallisen upotusominaisuuden avulla voit antaa käyttäjille mahdollisuuden upottaa raportteja sisäisiin verkkoportaaleihin helposti ja turvallisesti.
 author: rkarlin
 ms.author: rkarlin
 manager: kfile
@@ -10,18 +10,18 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 05/20/2019
 LocalizationGroup: Share your work
-ms.openlocfilehash: bf9d7bcdf6ddaf7d0063843a5314233989b2dadd
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 3c6dc26ee1cf806ff85a9452c024e7ccbd210a25
+ms.sourcegitcommit: cc4b18d55b2dca8fdb1bef00f53a0a808c41432a
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66222250"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68867100"
 ---
 # <a name="embed-a-report-in-a-secure-portal-or-website"></a>Raportin upottaminen turvalliseen portaaliin tai sivustoon
 
-Uuden **Upota** asetus Power BI-raportit, voit helposti ja turvallisesti upottaa raporttien sisäinen WWW-portaalit. Nämä portaalit voidaan **pilvipohjainen** tai **paikallisesti Isännöidyt**, kuten SharePoint 2019: lle. Upotetut raportit noudattavat kaikki käyttöoikeudet ja tietojen suojauksen kautta [rivitason suojaus (RLS)](service-admin-rls.md). Ne tarjoavat koodia kirjoittamatta upottamiseen, joka hyväksyy URL-osoite tai IFRAME-kehyksen portaalissa. 
+Uuden Power BI -raporttien **Upotus**-ominaisuuden avulla voit antaa käyttäjille mahdollisuuden upottaa raportteja sisäisiin verkkoportaaleihin helposti ja turvallisesti. Nämä portaalit voivat olla **pilvipohjaisia** tai **isännöityjä paikallisesti**, kuten SharePoint 2019. Upotettuihin raportteihin sovelletaan kaikkia kohteille asetettuja käyttöoikeuksia ja tietosuojamenetelmiä [RLS:n (row-level security, rivitason suojaus)](service-admin-rls.md) avulla. Nämä mahdollistaa upottamisen ilman koodausta kaikkiin portaaleihin, jotka hyväksyvät upottamisen URL-osoitteen tai iFramen avulla. 
 
-**Upota** vaihtoehto tukee [URL-suodattimien](service-url-filters.md) ja URL-osoite asetukset. Sen avulla voit integroida portaalien low-code-tavalla, että vain HTML- ja JavaScript perustiedot.
+**Upota**-asetus tukee [URL-suodattimia](service-url-filters.md) ja URL-asetuksia. Voit integroida sisältöä portaaleihin ilman työlästä koodausta: perustiedot HTML:stä ja JavaScriptista riittävät.
 
 ## <a name="how-to-embed-power-bi-reports-into-portals"></a>Power BI -raporttien **upottaminen** portaaleihin
 
@@ -29,46 +29,46 @@ Uuden **Upota** asetus Power BI-raportit, voit helposti ja turvallisesti upottaa
 
     ![Avattavan luettelon Turvallinen upotus -vaihtoehto](media/service-embed-secure/secure-embed-drop-down-menu.png)
 
-2. Valitse **Upota** voi avata valintaikkuna, joka sisältää linkin ja iFrame-kehyksen avulla voit upottaa raportin turvallisesti.
+2. Valitse **Upota**-vaihtoehto. Näkyviin tulee valintaikkuna, jossa on linkki sekä iFrame, jota käytetään raportin turvalliseen upottamiseen.
 
     ![Upota-vaihtoehdon valintaikkuna](media/service-embed-secure/secure-embed-code-dialog.png)
 
-3. Käyttäjä avaa raportin URL-osoite suoraan tai yhden upotetun verkkoportaalissa, raportin käyttöoikeudet edellyttää todennusta. Seuraavassa näytössä näkyy, jos käyttäjä on ole kirjautuneena Power BI-istunnot selaimessa. Kun he valitsevat **sisäänkirjautumisen**, uudessa selainikkunassa tai välilehteä voitu avata. Pyydä häntä tarkistetaan ponnahdusikkunoiden esto, jos ne eivät saa kehottaa kirjautumaan.
+3. Jos käyttäjä avaa raportin URL-osoitteen suoraan tai yhden verkkoportaaliin upotetun, raportin käyttö edellyttää todentamista. Seuraava näyttö tulee näkyviin, jos käyttäjä ei ole kirjautunut sisään Power BI:hin selainistunnossa. Kun käyttäjä napsauttaa **Kirjaudu sisään** -vaihtoehtoa, järjestelmä saattaa avata uuden selainikkunan tai -välilehden. Jos he eivät saa sisäänkirjautumiskehotetta, pyydä heitä tarkistamaan, onko ponnahdusikkunat estetty.
 
     ![Kirjaudu sisään tarkastellaksesi tätä raporttia](media/service-embed-secure/secure-embed-sign-in.png)
 
-4. Kun käyttäjä on kirjautunut sisään, raportti avautuu, näkyy tietoja ja sallii sivulla siirtymisen ja Suodata asetus. Vain käyttäjät, joilla on tarkasteluoikeudet näet Power BI-raportissa. Kaikki [rivitason suojaus (RLS)](service-admin-rls.md) sääntöjä sovelletaan myös. Lisäksi käyttäjällä täytyy olla riittävät tuotekäyttöoikeudet: raportin tarkasteluun tarvitaan Power BI Pro -käyttöoikeus, tai raportin on vaihtoehtoisesti oltava sellaisessa työtilassa, joka kuuluu Power BI Premium -kapasiteettiin. Käyttäjän on kirjauduttava sisään aina, kun he avaavat uudessa selainikkunassa. Kuitenkin kun kirjautunut sisään, muut raportit ladata automaattisesti.
+4. Kun käyttäjä on kirjautunut sisään, raportti aukeaa ja sen tiedot tulevat näkyviin ja voidaan siirtyä sivujen välillä ja määrittää suodattimia. Vain käyttäjät, joilla on tarkasteluoikeudet, näkevät raportin Power BI:ssä. Myös kaikkia [RLS](service-admin-rls.md)-sääntöjä sovelletaan. Lisäksi käyttäjällä täytyy olla riittävät tuotekäyttöoikeudet: raportin tarkasteluun tarvitaan Power BI Pro -käyttöoikeus, tai raportin on vaihtoehtoisesti oltava sellaisessa työtilassa, joka kuuluu Power BI Premium -kapasiteettiin. Käyttäjän on kirjauduttava sisään aina, kun hän avaa uuden selainikkunan. Kun olet kirjautunut sisään, muut raportit ladataan kuitenkin automaattisesti.
 
     ![Raportin upottaminen](media/service-embed-secure/secure-embed-report.png)
 
-5. Kun iframella, saatat joutua Muokkaa **korkeus** ja **leveys** sen-portaalissa verkkosivun mahtumaan.
+5. Kun käytät iFramea, sinun on ehkä muokattava **korkeutta** ja **leveyttä**, jotta se mahtuisi portaalin verkkosivulle.
 
     ![Korkeuden ja leveyden määrittäminen](media/service-embed-secure/secure-embed-size.png)
 
 ## <a name="granting-report-access"></a>Raportin käyttöoikeuksien myöntäminen
 
-**Upota** vaihtoehto ei salli käyttäjien tarkastella raportin automaattisesti. Näytä käyttöoikeudet määritetään Power BI-palvelussa.
+**Upota**-asetus ei automaattisesti salli käyttäjien tarkastella raporttia. Käyttöoikeuksien näyttäminen on määritetty Power BI -palvelussa.
 
-Power BI-palvelussa voit jakaa upotetut raportit käyttäjien, jotka tarvitsevat kanssa. Jos käytät Office 365-ryhmä, voit näyttää käyttäjän sovelluksen työtilan jäsenenä. Jos haluat lisätietoja, katso miten [sovelluksen työtilan Power BI-ja Office 365: n hallinta](service-manage-app-workspace-in-power-bi-and-office-365.md).
+Power BI -palvelussa voit jakaa upotettuja raportteja käyttäjille, jotka tarvitsevat käyttöoikeuksia. Jos käytät Office 365 -ryhmää, voit lisätä käyttäjän sovellustyötilan jäseneksi. Lisätietoja on ohjeaiheessa [Sovellustyötilan hallinta Power BI:ssä ja Office 365:ssä](service-manage-app-workspace-in-power-bi-and-office-365.md).
 
 ## <a name="licensing"></a>Käyttöoikeudet
 
-Voit tarkastella upotettua raporttia käyttäjät tarvitsevat joko Power BI Pro-käyttöoikeuden tai sisällön on oltava on-työtila [Power BI Premium-kapasiteetti (EM tai P-Varastointiyksikköä)](service-admin-premium-purchase.md).
+Käyttäjät tarvitsevat upotetun raportin tarkasteluun Power BI Pro -käyttöoikeuden, tai sisällön on vaihtoehtoisesti oltava työtilassa, joka kuuluu [Power BI Premium -kapasiteettiin (EM- tai P-varastointiyksikkö)](service-admin-premium-purchase.md).
 
 ## <a name="customize-your-embed-experience-using-url-settings"></a>Upotustoiminnon mukauttaminen URL-asetusten avulla
 
-Voit mukauttaa käyttämällä liitetty URL-osoite syöttöasetukset käyttökokemuksen. Annettu iFrame, voit päivittää URL-osoitteen **src** asetukset.
+Voit mukauttaa käyttökokemusta upotettavan URL-osoitteen syöteasetusten avulla. Voit päivittää annetun iFrame-osoitteen **src** -asetukset.
 
 | Ominaisuus  | Kuvaus  |  |  |  |
 |--------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|---|---|
-| pageName  | Voit määrittää **pageName** kyselyn avata raporttisivu määrittää parametrin. Löydät tämän arvon raportin URL-osoitteen lopussa kun tarkastelet raporttia Power BI-palvelussa kuten alla. |  |  |  |
-| URL-suodattimet  | Voit käyttää [URL-suodattimien](service-url-filters.md) liitetty URL-osoite saamasi suodattaa Upota sisältöä Power BI-Käyttöliittymän. Näin voit luoda integraatioita HTML- ja JavaScript-perusosaamisella ilman työlästä koodaamista.  |  |  |  |
+| pageName  | **pageName**-kyselymerkkijonoparametrin avulla voit määrittää, minkä raportin sivun haluat avata. Tämä arvo löytyy raportin URL-osoitteen lopusta, kun raporttia tarkastellaan Power BI -palvelussa, kuten alla. |  |  |  |
+| URL-suodattimet  | Voit käyttää Power BI:n käyttöliittymästä saamassasi upotus-URL-osoitteessa [URL-suodattimia](service-url-filters.md) upotetun sisällön suodattamiseen. Näin voit luoda integraatioita HTML- ja JavaScript-perusosaamisella ilman työlästä koodaamista.  |  |  |  |
 
-## <a name="set-which-page-opens-for-an-embedded-report"></a>Määritä, mitä sivu avautuu upotetun raportin 
+## <a name="set-which-page-opens-for-an-embedded-report"></a>Upotetun raportin avaavan sivun valitseminen 
 
-Voit etsiä **pageName** arvo raportin URL-osoitteen lopussa, kun tarkastelet raporttia Power BI-palvelussa.
+**pageName**-arvo löytyy raportin URL-osoitteen lopusta, kun raporttia tarkastellaan Power BI -palvelussa.
 
-1. Avaa raportti Power BI-palvelun selaimessasi ja kopioi osoite palkki URL-osoite.
+1. Avaa raportti Power BI -palvelusta selaimeen ja kopioi URL-osoite osoitepalkista.
 
     ![Raporttiosa](media/service-embed-secure/secure-embed-report-section.png)
 
@@ -78,17 +78,17 @@ Voit etsiä **pageName** arvo raportin URL-osoitteen lopussa, kun tarkastelet ra
 
 ## <a name="filter-report-content-using-url-filters"></a>Raportin sisällön suodattaminen URL-suodattimien avulla 
 
-Voit käyttää [URL-suodattimien](service-url-filters.md) antamaan eri raporttinäkymiä. Esimerkiksi alla oleva URL-osoite suodattaa raportin näyttämään energiateollisuutta koskevat tiedot.
+Voit käyttää [URL-suodattimia](service-url-filters.md) eri raporttinäkymien tarjoamiseen. Esimerkiksi alla oleva URL-osoite suodattaa raportin näyttämään energiateollisuutta koskevat tiedot.
 
 **pageName**-asetuksen ja [URL-suodattimien](service-url-filters.md) yhteiskäyttö voi olla tehokasta. Voit luoda käyttötilanteita HTML- ja JavaScript-perustaidoilla.
 
-Tässä on esimerkiksi lisäät HTML-sivulle painiketta:
+Voit esimerkiksi lisätä tämän painikkeen HTML-sivuun:
 
 ```html
 <button class="textLarge" onclick='show("ReportSection", "Energy");' style="display: inline-block;">Show Energy</button>
 ```
 
-Kun valittuna, painikkeen kutsuu funktion IFRAME-kehyksen päivitetään päivitetty URL-Osoitteen, joka sisältää energia-alan suodatin.
+Valittuna painike kutsuu funktion, joka päivittää iFramen päivitetyllä URL-osoitteella, joka sisältää suodattimen energiateollisuuden tiedoille.
 
 ```javascript
 function show(pageName, filterValue)
@@ -124,20 +124,22 @@ Voit luoda mukautetun ja helposti koodattavan käyttökokemuksen lisäämällä 
 
 * Turvallinen upotus toimii Power BI -palvelussa julkaistuissa raporteissa.
 
-* Käyttäjän on kirjauduttava sisään, voit tarkastella raporttia, kun he avaavat uudessa selainikkunassa.
+* Käyttäjän on kirjauduttava sisään raportin tarkastelua varten aina, kun hän avaa uuden selainikkunan.
 
-* Jotkin selaimet edellyttää Päivitä sivu, sisäänkirjautumisen jälkeen erityisesti InPrivate- tai Incognito-tilaa käytettäessä.
+* Osa selaimista edellyttää sivun päivittämistä kirjautumisen jälkeen, erityisesti käytettäessä InPrivate- tai Incognito-tilaa.
 
-* Saavuttaa yksittäisen Sign-käyttökokemusta, upotuksen käyttäminen SharePoint Online-asetusta tai luoda mukautettuja integroinnin avulla [käyttäjä omistaa tiedot](developer/embed-sample-for-your-organization.md) upottaminen menetelmää. 
+* Voit luoda kertakirjautumisella toimivan käyttökokemuksen Upota SharePoint Onlineen -vaihtoehdon avulla tai luomalla mukautetun integraation [käyttäjä omistaa tiedot](developer/embed-sample-for-your-organization.md) -upotusmenetelmällä. 
 
-* **Upota**-vaihtoehdon tarjoama automaattisen todentamisen mahdollisuus ei toimi Power BI:n JavaScript-ohjelmointirajapinnan kanssa. Käytä Power BI JavaScript-Ohjelmointirajapinta [käyttäjä omistaa tiedot](developer/embed-sample-for-your-organization.md) upottaminen menetelmää. 
+* **Upota**-vaihtoehdon tarjoama automaattisen todentamisen mahdollisuus ei toimi Power BI:n JavaScript-ohjelmointirajapinnan kanssa. Jos käytät Power BI:n JavaScript-ohjelmointirajapintaa, käytä upotuksessa [käyttäjä omistaa tiedot](developer/embed-sample-for-your-organization.md) -menetelmää. 
+
+* Todennustunnuksen elinkaarta hallitaan AAD-asetusten mukaan. Kun todennustunnus vanhenee, käyttäjän on päivitettävä selain, jotta saat päivitetyn todennustunnuksen. Oletuselinikä on yksi tunti, mutta se voi olla lyhyempi tai pidempi organisaatiossasi.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
-* [Jakaminen Power BI-työt](service-how-to-collaborate-distribute-dashboards-reports.md)
+* [Töiden jakamistavat Power BI:ssä](service-how-to-collaborate-distribute-dashboards-reports.md)
 
-* [Voit suodattaa raportin käyttämällä kyselymerkkijonon parametreja URL-osoite](service-url-filters.md)
+* [Raportin suodattaminen URL-osoitteen kyselymerkkijonoparametrien avulla](service-url-filters.md)
 
 * [Upota raportin verkko-osa SharePoint Onlinessa](service-embed-report-spo.md)
 
-* [Julkaise verkkoon-toiminto Power BI](service-publish-to-web.md)
+* [Power BI:n Julkaise verkkoon -toiminto](service-publish-to-web.md)

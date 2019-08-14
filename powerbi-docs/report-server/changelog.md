@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 03/31/2018
-ms.openlocfilehash: 031274f4f35ef1e36ec17648c2cbf967f5436020
-ms.sourcegitcommit: 73228d0a9038b8369369c059ad06168d2c5ff062
+ms.openlocfilehash: 0aa1d964485297c5e0dae3f4a309cc0dd15b92b2
+ms.sourcegitcommit: 90ad0572a92f640684cdc32c9a6478d299de9dc0
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "68729803"
+ms.lasthandoff: 08/10/2019
+ms.locfileid: "68940910"
 ---
 # <a name="changelog-for-power-bi-report-server"></a>Power BI -raporttipalvelimen muutosloki
 
@@ -124,7 +124,10 @@ Lisätietoja uusista ominaisuuksista on artikkelissa [Power BI -raporttipalvelin
 - **Power BI Desktop (optimoitu Power BI -raporttipalvelimelle)**
     - *Versio: 2.61.5192.641 (elokuu 2018), julkaistu: 15. elokuuta 2018*
         - Sisältää Power BI -raporttipalvelinyhteyden edellyttämiä muutoksia (elokuu 2018).         
-        
+    - *Versio: 2.61.5192.7701 (elokuu 2018), julkaistu: 8. elokuuta 2019* (uusi koontiversio ja uusi versio)
+        - Ohjelmavirhekorjauksia
+            - Korjattu virheellinen telemetriakirjaus
+            
 ## <a name="march-2018"></a>Maaliskuu 2018
 
 - **Power BI -raporttipalvelin**

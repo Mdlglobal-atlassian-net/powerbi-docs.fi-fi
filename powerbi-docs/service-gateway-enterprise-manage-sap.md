@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 07/15/2019
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: a09388e8b22131c9b82771385b69142b18e3cc84
-ms.sourcegitcommit: 73228d0a9038b8369369c059ad06168d2c5ff062
+ms.openlocfilehash: 2458c99192779c0597c38ea9f3a3baf23f4e1dd2
+ms.sourcegitcommit: 9665bdabce3bfc31f68dd8256b135bfd56f60589
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "68730018"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68832468"
 ---
 # <a name="manage-your-data-source---sap-hana"></a>Tietolähteen hallinta – SAP HANA
 
@@ -25,7 +25,7 @@ Kun [paikallinen tietoyhdyskäytävä on asennettu](/data-integration/gateway/se
 
 ## <a name="add-a-data-source"></a>Tietolähteen lisääminen
 
-Lisätietoja tietolähteen lisäämisestä on artikkelissa [Tietolähteen lisääminen](service-gateway-data-sources.md#add-a-data-source). Valitse SAP HANA **tietolähteen tyypiksi**.
+Lisätietoja tietolähteen lisäämisestä on artikkelissa [Tietolähteen lisääminen](service-gateway-data-sources.md#add-a-data-source). Valitse **SAP HANA** **tietolähteen tyyppi** -kohdasta.
 
 ![SAP HANA -tietolähteen lisääminen](media/service-gateway-enterprise-manage-sap/datasourcesettings2-sap.png)
 
@@ -36,34 +36,34 @@ Kun olet valinnut SAP HANA -tietolähdetyypin, täytä sen jälkeen tietolähtee
 
 ![Tietolähdeasetusten täyttäminen](media/service-gateway-enterprise-manage-sap/datasourcesettings3-sap.png)
 
-Valitse **Lisää** sen jälkeen, kun olet saanut kaiken täytettyä. Voit nyt käyttää tätä tietolähdettä ajoitettuihin päivityksiin tai DirectQueryyn paikallista SAP HANA -palvelinta vastaan. *Yhteyden muodostaminen onnistui* -teksti tulee näkyviin, jos yhteys muodostettiin onnistuneesti.
+Kun kaikki kohdat on täytetty, valitse **Lisää.** Voit nyt käyttää tätä tietolähdettä ajoitettuihin päivityksiin tai DirectQueryyn paikallista SAP HANA -palvelinta vastaan. *Yhteyden muodostaminen onnistui* -teksti tulee näkyviin, jos yhteys muodostettiin onnistuneesti.
 
 ![Yhteyden tilan näyttäminen](media/service-gateway-enterprise-manage-sap/datasourcesettings4.png)
 
 ### <a name="advanced-settings"></a>Lisäasetukset
 
-Vaihtoehtoisesti voit määrittää tietolähteellesi yksityisyystason. Tällä hallinnoidaan sitä, miten tietoja voidaan yhdistää. Tätä käytetään vain ajoitetussa päivityksessä. Tämä ei koske DirectQuerya. Lisätietoja tietolähteen yksityisyystasoista on artikkelissa [Yksityisyystasot (Power Query)](https://support.office.com/article/Privacy-levels-Power-Query-CC3EDE4D-359E-4B28-BC72-9BEE7900B540).
+Vaihtoehtoisesti voit määrittää tietolähteellesi yksityisyystason. Tällä asetuksella hallinnoidaan sitä, miten tietoja voidaan yhdistää. Sitä käytetään vain ajoitetussa päivityksessä. Tietosuojatason asetus ei koske DirectQuerya. Lisätietoja tietolähteen yksityisyystasoista on artikkelissa [Yksityisyystasot (Power Query)](https://support.office.com/article/Privacy-levels-Power-Query-CC3EDE4D-359E-4B28-BC72-9BEE7900B540).
 
 ![Yksityisyystason määrittäminen](media/service-gateway-enterprise-manage-sap/datasourcesettings9.png)
 
-## <a name="using-the-data-source"></a>Tietolähteen käyttö
+## <a name="use-the-data-source"></a>Tietolähteen käyttäminen
 
 Kun tietolähde on luotu, se on käyttäjien saatavilla joko DirectQuery-yhteyksien tai ajoitetun päivityksen välityksellä.
 
 > [!NOTE]
 > Palvelimen ja tietokannan nimien pitää täsmätä paikallisen tietoyhdyskäytävän Power BI Desktopin ja tietolähteen kanssa.
 
-Yhdyskäytävän tietojoukon ja tietolähteen välinen linkki perustuu palvelimen ja tietokannan nimiin. Näiden on täsmättävä. Jos esimerkiksi Power BI Desktopissa palvelimen nimelle annetaan IP-osoite, samaa IP-osoitetta tulee käyttää myös yhdyskäytävän kokoonpanon tietolähteessä. Jos käytät Power BI Desktopissa nimenä *PALVELIN\ESIINTYMÄ*, yhdyskäytävälle määritetyn tietolähteen sisällä on käytettävä samaa nimeä.
+Yhdyskäytävän tietojoukon ja tietolähteen välinen linkki perustuu palvelimen ja tietokannan nimiin. Näiden nimien on vastattava toisiaan. Jos esimerkiksi Power BI Desktopissa palvelimen nimelle annetaan IP-osoite, samaa IP-osoitetta tulee käyttää myös yhdyskäytävän kokoonpanon tietolähteessä. Jos käytät Power BI Desktopissa nimeä *PALVELIN\ESIINTYMÄ*, sitä on käytettävä myös yhdyskäytävälle määritetyn tietolähteen sisällä.
 
-Tämä koskee sekä DirectQuerya että ajoitettuja päivityksiä.
+Tämä vaatimus koskee sekä DirectQuerya että ajoitettuja päivityksiä.
 
-### <a name="using-the-data-source-with-directquery-connections"></a>Tietolähteen käyttö DirectQueryssa
+### <a name="use-the-data-source-with-directquery-connections"></a>Käytä tietolähdettä DirectQueryssa
 
-Palvelimen ja tietokannan nimen on täsmättävä Power BI Desktopissa ja yhdyskäytävälle määritetyssä tietolähteessä. Varmista myös, että käyttäjä on mainittu tietolähteen **Käyttäjät**-välilehdellä, jotta voit julkaista DirectQuery-tietojoukkoja. DirectQuery-valinta tapahtuu Power BI Desktopissa, kun tuot tietoja ensimmäisen kerran. Lisätietoja DirectQueryn käyttämisestä on artikkelissa [DirectQueryn käyttö Power BI Desktopissa](desktop-use-directquery.md).
+Palvelimen ja tietokannan nimien on täsmättävä Power BI Desktopissa ja yhdyskäytävälle määritetyssä tietolähteessä. Varmista myös, että käyttäjä on mainittu tietolähteen **Käyttäjät**-välilehdellä, jotta voit julkaista DirectQuery-tietojoukkoja. DirectQuery-valinta tapahtuu Power BI Desktopissa, kun tuot tietoja ensimmäisen kerran. Lisätietoja DirectQueryn käyttämisestä on artikkelissa [DirectQueryn käyttö Power BI Desktopissa](desktop-use-directquery.md).
 
 Raporttisi alkaa toimia, kun olet julkaissut tietojoukot Power BI Desktopissa tai **Nouda tiedot** -ominaisuudella. Yhdyskäytävässä luodun tietolähteen luomisen jälkeen voi kestää useita minuutteja, ennen kuin yhteyttä voidaan käyttää.
 
-### <a name="using-the-data-source-with-scheduled-refresh"></a>Tietolähteen käyttö ajoitetun päivityksen kanssa
+### <a name="use-the-data-source-with-scheduled-refresh"></a>Tietolähteen käyttö ajoitetun päivityksen kanssa
 
 Jos sinut on lisätty yhdyskäytävän sisällä määritellyn tietolähteen **Käyttäjät**-välilehdelle ja jos palvelimen ja tietokannan nimet täsmäävät, näet yhdyskäytävän yhtenä, ajoitetun päivityksen kanssa käytettävänä vaihtoehtona.
 
@@ -72,7 +72,7 @@ Jos sinut on lisätty yhdyskäytävän sisällä määritellyn tietolähteen **K
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
 * [Paikallisen tietoyhdyskäytävän vianmääritys](/data-integration/gateway/service-gateway-tshoot)
-* [Yhdyskäytävien vianmääritys – Power BI](service-gateway-onprem-tshoot.md)  
+* [Yhdyskäytävien vianmääritys – Power BI](service-gateway-onprem-tshoot.md) 
 
-Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
+Onko sinulla kysyttävää? Voit esittää kysymyksiä [Power BI -yhteisössä](http://community.powerbi.com/).
 

@@ -1,83 +1,85 @@
 ---
-title: Yhteistyö Power BI -sovelluksen työtilassa
-description: Lue lisätietoja Power BI Desktop -tiedostojen yhteistyöstä sovelluksen työtilassa sekä Office 365-palveluista kuten tiedostojen jakamisesta OneDrive for Business -palvelussa, keskusteluista Exchange-palvelussa, kalenterista ja tehtävistä.
+title: Yhteistyö perinteisessä työtilassa
+description: Lue lisätietoja Power BI Desktop -tiedostojen yhteistyöstä työtilassa sekä Office 365-palveluista kuten tiedostojen jakamisesta OneDrive for Business -palvelussa, keskusteluista Exchange-palvelussa, kalenterista ja tehtävistä.
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 08/02/2018
+ms.date: 07/25/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: c1e8e449c2db7e751d719f8fca38b194a9a0042a
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 41aaf33602fc8a895d54666736d775ac53d5aaef
+ms.sourcegitcommit: 9665bdabce3bfc31f68dd8256b135bfd56f60589
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61181616"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68832441"
 ---
-# <a name="collaborate-in-your-power-bi-app-workspace"></a>Yhteiskäyttö Power BI -sovelluksen työtilassa
-Power BI -sovelluksen työtilat on käteviä paikkoja tehdä yhteistyötä työtovereidesi kanssa raporttinäkymässä, raporteissa ja tietojoukoissa *sovellusten* luomiseksi. Yhteiskäyttö ei pääty Power BI:n työtiloihin. Office 365 tarjoaa muita ryhmäpalveluita kuten tiedostojen jakaminen OneDrive for Business -palvelussa, keskustelut Exchangessa, jaetun kalenterin, tehtävät ja niin edelleen. Lue lisää [Office 365-ryhmistä](https://support.office.com/article/Create-a-group-in-Office-365-7124dc4c-1de9-40d4-b096-e8add19209e9).
+# <a name="collaborate-in-a-classic-workspace"></a>Yhteistyö perinteisessä työtilassa
+Power BI -työtilat on käteviä paikkoja tehdä yhteistyötä työtovereidesi kanssa raporttinäkymässä, raporteissa ja tietojoukoissa *sovellusten* luomiseksi. Tämä artikkeli koskee alkuperäisiä, *perinteisiä* työtiloja.  
+
+Yhteiskäyttö ei pääty Power BI:n työtiloihin. Kun luot yhden klassisista työtiloista Power BI:ssa, luot automaattisesti Office 365 -ryhmän taustalla. Office 365 tarjoaa muita ryhmäpalveluita kuten tiedostojen jakaminen OneDrive for Business -palvelussa, keskustelut Exchangessa, jaetun kalenterin, tehtävät ja niin edelleen. Lue lisää [Office 365-ryhmistä](https://support.office.com/article/Create-a-group-in-Office-365-7124dc4c-1de9-40d4-b096-e8add19209e9).
 
 > [!NOTE]
-> Uusi työtilakokemuksen esiversio muuttaa Power BI -työtilojen ja Office 365:n ryhmien välistä suhdetta. Et luo automaattisesti Office 365 -ryhmää aina, kun luot uuden työtilan. Lisätietoja [uusien työtilojen luomisesta (esikatselu)](service-create-the-new-workspaces.md)
+> Uusi työtilakokemus muuttaa Power BI -työtilojen ja Office 365:n ryhmien välistä suhdetta. Kun luot yhden uusista työtiloista Power BI:ssa, et enää automaattisesti luo Office 365 -ryhmää taustalla. Katso lisätietoja artikkelista [Uusien työtilojen luominen Power BI:ssä](service-create-the-new-workspaces.md).
 
-Sovellustyötilat ovat käytettävissä vain [Power BI Pro -käyttöoikeudessa](service-features-license-type.md).
+Työtilojen luomiseen tarvitaan [Power BI Pro](service-features-license-type.md) -käyttöoikeus.
 
-## <a name="collaborate-on-power-bi-desktop-files-in-your-app-workspace"></a>Power BI Desktop -tiedostojen yhteiskäyttö sovellustyötilassa
-Kun olet luonut Power BI Desktop-tiedoston, jos julkaiset sen Power BI-sovelluksen työtilassa, jokainen työtilassasi voi yhteiskäyttää sitä.
+## <a name="collaborate-on-power-bi-desktop-files-in-a-workspace"></a>Power BI Desktop -tiedostojen yhteiskäyttö työtilassa
+Kun olet luonut Power BI Desktop -tiedoston, voit julkaista sen työtilassa, jolloin jokainen työtilassasi voi yhteiskäyttää sitä.
 
-1. Valitse Power BI Desktopissa **Julkaise** **Koti**-valintanauhassa ja sitten **Valitse kohde** -ruudusta sovelluksen työtila.
+1. Valitse Power BI Desktopissa **Julkaise** **Koti**-valintanauhassa ja sitten valitse työtila **Valitse kohde** -ruudusta.
    
     ![Julkaise-kuvake](media/service-collaborate-power-bi-workspace/power-bi-group-publish-pbix.png)
-2. Valitse Power BI -palvelussa kohdan Työtilat vieressä oleva nuoli > valitse sovelluksen työtila.
+2. Valitse Power BI -palvelussa kohdan **Työtilat** vieressä oleva nuoli > valitse työtila.
    
-    ![Sovelluksen työtilat](media/service-collaborate-power-bi-workspace/power-bi-workspace-nav-arrow.png)
-3. Valitse raportit-välilehti ja valitse sitten raportti.
+    ![Työtilat](media/service-collaborate-power-bi-workspace/power-bi-workspace-nav-arrow.png)
+3. Valitse **Raportit**-välilehti ja valitse sitten raportti.
    
     ![Raportit-välilehti](media/service-collaborate-power-bi-workspace/power-bi-workspace-report.png)
    
-    Täältä katsoen se on kuin mikä tahansa raporttia Power BI:ssa. Sinä ja muut sovellukset-työtilassasi voitte [muokata raporttia](consumer/end-user-reports.md) ja tallentaa ruudut haluamaasi raporttinäkymän.
+    Täältä katsoen se on kuin mikä tahansa raporttia Power BI:ssa. Sinä ja muut työtilassasi voitte muokata raporttia ja tallentaa ruudut haluamaasi koontinäyttöön.
 
 ## <a name="collaborate-in-office-365"></a>Tee yhteistyötä Office 365:ssa
-Yhteiskäyttö Office 365:ssa alkaa sovelluksen työtilasta Power BI:ssa.
+Yhteiskäyttö Office 365:ssa alkaa klassisesta työtilasta Power BI:ssa.
 
-1. Valitse Power BI -palvelussa kohdan Työtilat vieressä oleva nuoli > valitse työtilasi nimen vierestä kolme pistettä ( **…** ). 
+1. Valitse Power BI -palvelussa kohdan **Työtilat** vieressä oleva nuoli > valitse työtilasi nimen vierestä kolme pistettä (…). 
    
    ![Työtilat-valikko](media/service-collaborate-power-bi-workspace/power-bi-app-ellipsis.png)
 2. Tästä valikosta voit tehdä yhteistyötä ryhmän kanssa muutamalla eri tavalla: 
    
-   * [Ryhmäkeskustelu Office 365:ssa](service-collaborate-power-bi-workspace.md#have-a-group-conversation-in-office-365).
-   * [Tapahtuman ajoittaminen](service-collaborate-power-bi-workspace.md#schedule-an-event-on-the-apps-group-workspace-calendar) sovelluksen ryhmän työtilan kalenteriin.
+   * [Ryhmäkeskustelu Office 365:ssa](#have-a-group-conversation-in-office-365).
+   * [Tapahtuman ajoittaminen](#schedule-an-event-on-the-group-workspace-calendar) ryhmän työtilan kalenteriin.
    
-   Kun siirryt sovelluksesi ryhmän työtilaan Office 365:ssa ensimmäistä kertaa, se saattaa kestää jonkin aikaa. Odota 15-30 minuuttia ja sitten päivitä selaimen sivu.
+   Kun siirryt ryhmän työtilaan Office 365:ssa ensimmäistä kertaa, se saattaa kestää jonkin aikaa. Odota 15-30 minuuttia ja sitten päivitä selaimen sivu.
 
 ## <a name="have-a-group-conversation-in-office-365"></a>Ryhmäkeskustelu Office 365:ssa
-1. Valitse kolme pistettä (...) sovelluksen työtilan nimen vierestä kohdasta \> **Keskustelut**. 
+1. Valitse kolme pistettä (...) työtilan nimen vierestä kohdasta \> **Keskustelut**. 
    
     ![Keskustelut-välilehti](media/service-collaborate-power-bi-workspace/power-bi-app-ellipsis.png)
    
-   Sovelluksesi ryhmän työtilan sähköpostin ja keskustelun sivusto avautuu Outlook for Office 365:ssa.
+   Ryhmän työtilan sähköpostin ja keskustelun sivusto avautuu Outlook for Office 365:ssa.
    
    ![Kalenterin valikon osa](media/service-collaborate-power-bi-workspace/pbi_grps_o365convo.png)
 2. Lue lisää [ryhmäkeskusteluista Outlook for Office 365:ssa](https://support.office.com/Article/Have-a-group-conversation-a0482e24-a769-4e39-a5ba-a7c56e828b22).
 
-## <a name="schedule-an-event-on-the-apps-group-workspace-calendar"></a>Tapahtuman ajoittaminen sovelluksen ryhmän työtilan kalenteriin
-1. Valitse kolme pistettä ( **…** ) sovelluksen työtilan nimen vierestä kohdasta \> **Kalenteri**. 
+## <a name="schedule-an-event-on-the-group-workspace-calendar"></a>Tapahtuman ajoittaminen ryhmän työtilan kalenteriin
+1. Valitse kolme pistettä (…) työtilan nimen vierestä kohdasta \> **Kalenteri**. 
    
    ![Kalenteri-välilehti](media/service-collaborate-power-bi-workspace/power-bi-app-ellipsis.png)
    
-   Tämä avaa kalenterin sovelluksesi ryhmätyötilaan Outlook for Office 365:ssa.
+   Tämä avaa kalenterin ryhmätyötilaan Outlook for Office 365:ssa.
    
    ![Outlook for Office 365](media/service-collaborate-power-bi-workspace/pbi_grps_o365_calendar.png)
 2. Lue lisää [ryhmän kalentereista Outlook in Office 365:ssa](https://support.office.com/Article/Add-edit-and-subscribe-to-group-events-0cf1ad68-1034-4306-b367-d75e9818376a).
 
-## <a name="manage-an-app-workspace"></a>Sovelluksen työtilan hallinta
-Jos olet omistaja tai järjestelmänvalvoja sovelluksen työtilassa, voit myös lisätä tai poistaa työtilan jäseniä. Lue lisää [Power BI-sovelluksen työtilan hallinnasta](service-manage-app-workspace-in-power-bi-and-office-365.md).
+## <a name="manage-a-classic-workspace"></a>Klassisen työtilan hallinta
+Jos olet omistaja tai järjestelmänvalvoja työtilassa, voit myös lisätä tai poistaa työtilan jäseniä. Lue lisää [Power BI -työtilan hallinnasta](service-manage-app-workspace-in-power-bi-and-office-365.md).
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
-* [Sovellusten ja sovellustyötilojen luominen Power BI:ssä](service-create-distribute-apps.md)
-* Onko sinulla muuta kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
-* Haluatko antaa palautetta? Siirry [Power BI:n ideasivulle](https://ideas.powerbi.com/forums/265200-power-bi)
+* [Sovellusten julkaiseminen Power BI:ssä](service-create-distribute-apps.md).
+* Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/).
+* Haluatko antaa palautetta? Siirry [Power BI:n ideasivulle](https://ideas.powerbi.com/forums/265200-power-bi).
 

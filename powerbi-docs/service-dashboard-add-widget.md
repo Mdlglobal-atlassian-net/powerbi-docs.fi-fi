@@ -1,5 +1,5 @@
 ---
-title: Kuvan, tekstin, videon ja virtautettavien tietojen lisääminen koontinäyttöön
+title: Kuvan, videon ja muiden elementtien lisääminen koontinäyttöön
 description: Ohjeet kuvan, videon, tekstiruudun, verkkokoodin ja virtautettavien tietojen ruudun lisäämiseen koontinäyttöön Lisää ruutu -pienoissovelluksen avulla.
 author: maggiesMSFT
 manager: kfile
@@ -8,103 +8,198 @@ featuredvideoid: e2PD8m1Q0vU
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 03/02/2018
+ms.date: 07/25/2019
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 1a1cb84d889b5f4df4ec53ee9a2a53b95a5daf8a
-ms.sourcegitcommit: e67bacbfc5638ee97e3d2e0e7f5bd2d9aac78f9c
+ms.openlocfilehash: 042fee1a55728884b3f4d5792a82973b3ea9fcc4
+ms.sourcegitcommit: 9665bdabce3bfc31f68dd8256b135bfd56f60589
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67533180"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68832573"
 ---
-# <a name="add-image-text-video-and-more-to-your-dashboard"></a>Kuvan, tekstin, videon ja muiden elementtien lisääminen koontinäyttöön
+# <a name="add-images-videos-and-more-to-your-dashboard"></a>Kuvan, videon ja muiden elementtien lisääminen koontinäyttöön
+
+Kun lisäät ruudun koontinäyttöön, voit sijoittaa koontinäyttöön kuvan, tekstiruudun, videon, suoratoistamisen tiedot tai verkkokoodin. 
+
+Katso, miten Amanda lisää ruutuja koontinäyttöön.
+
+   
 <iframe width="560" height="315" src="https://www.youtube.com/embed/e2PD8m1Q0vU" frameborder="0" allowfullscreen></iframe>
 
 
-## <a name="add-tile"></a>Lisää ruutu
-**Lisää ruutu** -ohjausobjektin avulla voit lisätä kuvan, tekstiruudun, videon, virtautettavat tiedot tai verkkokoodin suoraan koontinäyttöön.
+## <a name="add-an-image-video-or-other-tile"></a>Lisää kuva, video tai muu ruutu
+Voit lisätä kuvan, tekstiruudun, videon, virtautettavat tiedot tai verkkokoodin suoraan koontinäyttöön.
 
-1. Valitse ylävalikkorivillä **Lisää ruutu**. Tilarajoituksista riippuen saatat nähdä vain plus ![plusmerkki](media/service-dashboard-add-widget/power-bi-add-tile-icon-small.png) -merkin.
+1. Valitse koontinäytön ylävalikkorivillä **Lisää ruutu**. Tilarajoituksista riippuen saatat nähdä vain plus ![plusmerkki](media/service-dashboard-add-widget/power-bi-add-tile-icon-small.png) -merkin.
    
     ![Lisää ruutu -kuvake](media/service-dashboard-add-widget/power-bi-add-tile-icon.png)
-2. Valitse, millaisen ruudun haluat lisätä: **kuvan**, **tekstiruudun**, **videon**, **verkkosisällön** vai **mukautetut virtautettavat tiedot**.
+2. Valitse, millaisen ruudun haluat lisätä: 
+
+    **[Verkkosisältö](#add-web-content)**
+
+    **[Kuva](#add-an-image)**
+
+    **[Tekstiruutu](#add-a-text-box-or-dashboard-heading)**
+
+    **[Video](#add-a-video)**
+
+    **[Mukautetut virtautettavat tiedot](#add-streaming-data)**
    
     ![Lisää ruutu -ikkuna](media/service-dashboard-add-widget/power-bi-add-tile.png)
 
 ## <a name="add-an-image"></a>Kuvan lisääminen
-Kuvitellaan, että haluat koontinäyttöösi yrityksen logon tai jonkin muun kuvan. Sinun on tallennettava kuvatiedosto verkkoon ja linkitettävä se. Varmista, että kuvatiedoston käyttämiseen ei tarvita mitään erityisiä tunnistetietoja. Esimerkiksi OneDrive ja SharePoint edellyttävät todentamista, joten niihin tallennettuja kuvia ei voi lisätä koontinäyttöön tässä esitellyllä tavalla.  
+Jos haluat lisätä koontinäyttöösi yrityksesi logon tai jonkin muun kuvan, tallenna kuvatiedosto verkossa ja linkitä siihen. Varmista, että kuvatiedoston käyttämiseen ei tarvita mitään erityisiä suojaustunnistetietoja. Koska esimerkiksi OneDrive ja SharePoint edellyttävät todentamista, niihin tallennettuja kuvia ei voi lisätä koontinäyttöön tässä esitellyllä tavalla.  
 
-1. Valitse **Kuva** > **Seuraava**.
-2. Lisää kuvan tiedot **Lisää kuvaruutu** -ikkunaan.
+1. Valitse **Lisää ruutu** -ikkunassa **Kuva** >  **Seuraava**.
+
+2. Lisää kuvan tiedot **Lisää kuvaruutu** -ikkunasta:   
    
-    ![Lisää kuvaruutu -ikkuna](media/service-dashboard-add-widget/pbi-widget-add-image-new.png)
-   
-   * Jos haluat otsikon kuvan yläpuolelle, valitse *Näytä otsikko ja alaotsikko* ja kirjoita otsikko ja/tai alaotsikko.
-   * Anna kuvan URL-osoite.
-   * Jos haluat tehdä ruudusta hyperlinkin, valitse **Aseta mukautettu linkki** ja anna URL-osoite.  Kun työtoverisi napsauttavat kuvaa tai otsikkoa, heidät siirretään tähän URL-osoitteeseen.
-   * Valitse **Käytä**.  Muuta kuvan kokoa ja siirrä kuvaa tarvittaessa koontinäytössä.
+   a. Jos haluat otsikon kuvan yläpuolelle, valitse **Näytä otsikko ja alaotsikko** ja kirjoita **Otsikko** ja valinnainen **Alaotsikko**.
+
+   b. Anna kuvan **URL-osoite**.
+
+   c. Jos haluat tehdä ruudusta hyperlinkin, valitse **Aseta mukautettu linkki** ja anna **URL-osoite**. 
+
+      Kun työtoverisi napsauttavat kuvaa tai otsikkoa, heidät siirretään tähän URL-osoitteeseen.
+
+   d. Valitse **Käytä**. 
+
+      ![Lisää kuvaruutu -ikkuna](media/service-dashboard-add-widget/pbi-widget-add-image-new.png)
+
+3. Muuta kuvan kokoa ja siirrä kuvaa tarvittaessa koontinäytössä.
      
-     ![kuva koontinäytössä](media/service-dashboard-add-widget/power-bi-add-image-dash.png)
+     ![Kuva koontinäytössä](media/service-dashboard-add-widget/power-bi-add-image-dash.png)
 
 ## <a name="add-a-text-box-or-dashboard-heading"></a>Tekstiruudun tai koontinäytön otsikon lisääminen
-1. Valitse **Tekstiruutu > Seuraava**.
-   
-   > **HUOMAUTUS**: Jos haluat lisätä raporttinäkymän otsikon, kirjoita otsikko tekstiruutuun ja suurenna fonttia.
-   > 
+
+Jos haluat lisätä raporttinäkymän otsikon, kirjoita otsikko tekstiruutuun ja suurenna fonttia.
+
+1. Valitse **Lisää ruutu** -ikkunassa **Tekstiruutu** >  **Seuraava**.
+
 2. Muotoile tekstiruutua:
    
-   * Jos haluat otsikon tekstiruudun yläpuolelle, valitse **Näytä otsikko ja alaotsikko** ja kirjoita otsikko ja/tai alaotsikko.
-   * Kirjoita tekstiruudun sisältö ja muotoile se.  
-   * Halutessasi voit määrittää otsikolle mukautetun linkin. Mukautettu linkki voi olla ulkoinen sivusto tai työtilassasi oleva koontinäyttö tai raportti. Tässä esimerkissä olemme kuitenkin lisänneet hyperlinkit tekstiruudun sisään, joten jätämme **Aseta mukautettu linkki** -valintaruudun valitsematta.
+   a. Jos haluat otsikon tekstiruudun yläpuolelle, valitse **Näytä otsikko ja alaotsikko** ja kirjoita **Otsikko** ja valinnainen **Alaotsikko**.
+
+   b. Kirjoita tekstiruudun **Sisältö** ja muotoile se.  
+
+   c. Halutessasi voit määrittää otsikolle mukautetun linkin. Mukautettu linkki voi olla ulkoinen sivusto tai työtilassasi oleva koontinäyttö tai raportti. Tässä esimerkissä olemme kuitenkin lisänneet hyperlinkit tekstiruudun sisään, joten jätämme **Aseta mukautettu linkki** -valintaruudun valitsematta.
+
+   d. Valitse **Käytä**. 
 
      ![Lisää tekstiruutu -ikkuna](media/service-dashboard-add-widget/power-bi-add-textbox.png)
    
-3. Valitse **Käytä**.  Muuta tekstiruudun kokoa ja siirrä ruutua tarvittaessa koontinäytössä.
+3. Muuta tekstiruudun kokoa ja siirrä ruutua tarvittaessa koontinäytössä.
    
    ![koontinäyttö, jossa on kuva ja tekstikenttä](media/service-dashboard-add-widget/pbi-widget-text-added-new.png)
 
 ## <a name="add-a-video"></a>Videon lisääminen
 Kun lisäät koontinäyttöön YouTube- tai Vimeo-videoruudun, video toistetaan suoraan koontinäytössä.
 
-1. Valitse **Video > Seuraava**.
-2. Lisää videon tiedot **Lisää videoruutu** -ikkunassa.
+1. Valitse **Lisää ruutu** -ikkunassa **Video** >  **Seuraava**.
+2. Lisää videon tiedot **Lisää videoruutu** -ikkunassa:   
    
-    ![Lisää videoruutu -ikkuna](media/service-dashboard-add-widget/power-bi-add-video-new.png)
-   
-   * Jos haluat otsikon ja alaotsikon videoruudun yläpuolelle, valitse *Näytä otsikko ja alaotsikko* ja kirjoita otsikko ja/tai alaotsikko. Tässä esimerkissä lisäämme alaotsikon ja teemme siitä sitten hyperlinkin, joka johtaa koko soittoluetteloon YouTubessa.
-   * Anna videon URL-osoite.
-   * Lisää hyperlinkki otsikkoon ja alaotsikkoon.  Ehkäpä haluat työtoveriesi katsovan koko soittolistan YouTubessa sen jälkeen, kun he ovat katsoneet upotetun videon – lisää linkki soittolistaan tässä.
-   * Valitse **Käytä**.  Muuta videoruudun kokoa ja siirrä ruutua tarvittaessa koontinäytössä.
+   a. Jos haluat otsikon ja alaotsikon videoruudun yläpuolelle, valitse **Näytä otsikko ja alaotsikko** ja kirjoita **Otsikko** ja valinnainen **Alaotsikko**. Tässä esimerkissä lisäämme **Alaotsikon** ja teemme siitä sitten hyperlinkin, joka johtaa koko soittoluetteloon YouTubessa.
+
+   b. Anna **Videon URL-osoite**.
+
+   c. Lisää hyperlinkki **Otsikkoon** ja **Alaotsikkoon**, jotta työtoverisi voivat katsella koko soittolistaa YouTubessa katsottuaan upotetun videon. Jos haluat tehdä niin, valitse **Toiminnot**-kohdasta **Aseta mukautettu linkki** ja kirjoita sitten soittoluettelon **URL-osoite**.
+
+   d. Valitse **Käytä**.  
+
+   ![Lisää videoruutu -ikkuna](media/service-dashboard-add-widget/power-bi-add-video-new.png)
+
+3. Muuta videoruudun kokoa ja siirrä ruutua tarvittaessa koontinäytössä.
      
-      ![koontinäyttö, johon on lisätty videoruutu](media/service-dashboard-add-widget/pbi-widget-video-added-new.png)
-3. Voit toistaa videon valitsemalla videoruudun.
-4. Voit siirtyä YouTuben soittolistaan valitsemalla alaotsikon.
+   ![Koontinäyttö, johon on lisätty videoruutu](media/service-dashboard-add-widget/pbi-widget-video-added-new.png)
+4. Voit toistaa videon valitsemalla videoruudun.
+5. Voit siirtyä YouTuben soittolistaan valitsemalla alaotsikon.
 
 ## <a name="add-streaming-data"></a>Virtautettavien tietojen lisääminen
+PubNub-apuohjelman avulla voit lisätä suoratoistettavia tietoja, kuten Twitter-syötteitä tai anturitietoja, koontinäytön ruutuun. Power BI on kehittänyt integraation tietojen noutamiseen Pubnubista. Will kertoo, miten se toimii.
+   
+
+PubNub-apuohjelman avulla voit lisätä suoratoistettavia tietoja, kuten Twitter-syötteitä tai anturitietoja, koontinäytön ruutuun. Power BI on kehittänyt integraation tietojen noutamiseen Pubnubista. Will kertoo, miten se toimii. 
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/kOuINwgkEkQ" frameborder="0" allowfullscreen></iframe>
 
+1. Valitse **Lisää ruutu** -ikkunassa **Mukautetut virtautettavat tiedot** > **Seuraava**.
+2. Valitse **Lisää virtautettava tietojoukko**.
+3. Luo **Uusi virtautettava tietojoukko** käyttämällä Power BI -ohjelmointirajapintaa tai PubNubia.
+4. Täytä **Tietojoukon nimi**-, **Tilausavain**- ja **Kanavan nimi** -kentät. Jos kyseessä on suojattu yhteys, sillä on myös valtuutusavain. Voit kokeilla sitä PubNubin malliarvojen avulla.
+5. Valitse **Seuraava**.
+    Näet tietojoukossa käytettävissä olevat kentät tietotyyppeineen ja JSON-muotoineen.
+6. Valitse **Muodosta yhteys**.
+    Olet määrittänyt virtautettavan tietojoukon.
+7. Siirry takaisin koontinäyttöön ja valitse jälleen **Lisää ruutu** > **Mukautettu tietojen virtauttaminen** > **Seuraava**.
+8. Valitse luomasi sensorin tietojoukko > **Seuraava**.
+9. Valitse haluamasi visualisointityyppi. Usein viivakaavio toimii hyvin näissä tiedoissa.
+10. Valitse **Akseli**, **Selite** ja **Arvot**.
+11. Päätä minkä aikamäärän haluat näyttää, joko sekunteina, minuutteina tai tunteina.
+12. Valitse **Seuraava**.
+13. Anna sille **Otsikko** ja **Alaotsikko**, jos haluat.
+14. Kiinnitä se koontinäyttöösi.
+
+
+1. Valitse **Lisää ruutu** -ikkunassa **Mukautetut virtautettavat tiedot** > **Seuraava**.
+
+2. Valitse **Lisää virtautettava tietojoukko**.
+
+3. Luo **Uusi virtautettava tietojoukko** käyttämällä Power BI -ohjelmointirajapintaa tai PubNubia.
+
+4. Täytä **Tietojoukon nimi**-, **Tilausavain**- ja **Kanavan nimi** -kentät. Jos kyseessä on suojattu yhteys, sillä on myös valtuutusavain. Voit kokeilla sitä PubNubin malliarvojen avulla.
+
+5. Valitse **Seuraava**.
+
+   Näet tietojoukossa käytettävissä olevat kentät tietotyyppeineen ja JSON-muotoineen.
+
+6. Valitse **Muodosta yhteys**.
+
+   Olet luonut virtautettavan tietojoukon.
+
+7. Siirry takaisin koontinäyttöön ja valitse jälleen **Lisää ruutu** > **Mukautettu tietojen virtauttaminen** > **Seuraava**.
+
+8. Valitse luomasi sensorin tietojoukko > **Seuraava**.
+
+9. Valitse haluamasi visualisointityyppi. Usein viivakaavio toimii hyvin näissä tiedoissa.
+
+10. Valitse **Akseli**, **Selite** ja **Arvot**.
+
+11. Päätä minkä aikamäärän haluat näyttää, joko sekunteina, minuutteina tai tunteina.
+
+12. Valitse **Seuraava**.
+
+13. Valinnaisesti voit antaa sille **Otsikon** ja **Alaotsikon**.
+
+14. Kiinnitä se koontinäyttöösi.
+
 ## <a name="add-web-content"></a>Verkkosisällön lisääminen
-Voit liittää tai kirjoittaa mitä tahansa HTML-sisältöä.  Power BI lisää sen ruutuna koontinäyttöösi. Anna upotuskoodi käsin tai kopioi ja liitä se haluamastasi sivustosta, esimerkiksi Twitteristä, YouTubesta tai embed.ly-sivustosta.
+Voit liittää tai kirjoittaa minkä tahansa HTML-sisällön ruutuna raporttiin tai koontinäyttöön. Anna upotuskoodi käsin tai kopioi ja liitä se haluamastasi sivustosta, esimerkiksi Twitteristä, YouTubesta tai embed.ly-sivustosta, ja niin edelleen.
 
-1. Valitse **Verkkosisältö > Seuraava**.
-2. Lisää tiedot **Lisää verkkosisältöruutu** -ikkunassa.
+1. Valitse **Lisää ruutu** -ikkunassa **Verkkosisältö** >  **Seuraava**.
+
+2. Lisää tiedot **Lisää verkkosisältöruutu** -ikkunassa:
    
-    ![Lisää verkkosisältöruutu -ikkuna](media/service-dashboard-add-widget/power-bi-add-web-content.png)
+   a. Jos haluat otsikon ruudun yläpuolelle, valitse **Näytä otsikko ja alaotsikko** ja kirjoita **Otsikko** ja valinnainen **Alaotsikko**.
+
+   b. Anna upotuskoodi. Tässä esimerkissä kopioimme ja liitämme Twitter -syötteen.
+
+   c. Valitse **Käytä**.
+
+   ![Lisää verkkosisältöruutu -ikkuna](media/service-dashboard-add-widget/power-bi-add-web-content.png)
    
-   * Jos haluat otsikon ruudun yläpuolelle, valitse *Näytä otsikko ja alaotsikko* ja kirjoita otsikko ja/tai alaotsikko.
-   * Anna upotuskoodi. Tässä esimerkissä kopioimme ja liitämme Twitter -syötteen.
-3. Valitse **Käytä**.  Muuta verkkosisältöruudun kokoa ja siirrä ruutua tarvittaessa koontinäytössä.
+
+3. Muuta verkkosisältöruudun kokoa ja siirrä ruutua tarvittaessa koontinäytössä.
      
-      ![koontinäyttö, jossa on 4 ruutua](media/service-dashboard-add-widget/pbi-widget-code-added-new.png)
+   ![Koontinäyttö, jossa neljä ruutua](media/service-dashboard-add-widget/pbi-widget-code-added-new.png)
 
-## <a name="tips-for-embedding-web-content"></a>Vihjeitä verkkosisällön upottamiseen
-* Käytä iframe-kehyksissä suojattua lähdettä. Jos annat iframe-upotuskoodin ja näyttöön tulee tyhjä ruutu, tarkista, onko iframe-lähteenä **http**.  Jos on, vaihda se **https**-muotoon.
+### <a name="tips-for-embedding-web-content"></a>Vihjeitä verkkosisällön upottamiseen
+* Käytä iframe-kehyksissä suojattua lähdettä. Jos annat iFrame-upotuskoodin ja näyttöön tulee tyhjä ruutu, tarkista, onko iFrame-lähteenä *http*. Jos on, vaihda se *https*-muotoon.
   
   ```html
   <iframe src="https://xyz.com">
   ```
-* Muokkaa leveys- ja korkeustietoja. Tämä upotuskoodi upottaa videon ja määrittää videosoittimen kooksi 560 x 315 kuvapistettä.  Tämä koko ei muutu, vaikka muuttaisit ruudun kokoa.
+* Muokkaa leveys- ja korkeustietoja. Tämä upotuskoodi upottaa videon ja määrittää videosoittimen kooksi 560 x 315 kuvapistettä. Tämä koko ei muutu, vaikka muuttaisit ruudun kokoa.
   
   ```html
   <iframe width="560" height="315"
@@ -119,7 +214,7 @@ Voit liittää tai kirjoittaa mitä tahansa HTML-sisältöä.  Power BI lisää 
   src="https://www.youtube.com/embed/Cle_rKBpZ28" frameborder="0"
    allowfullscreen></iframe>
   ```
-* Tämä koodi upottaa twiitin ja säilyttää koontinäytössä erilliset linkit seuraaviin elementteihin: **AFK**-podcast, **\@GuyInACuben Twitter-sivu**, **Seuraa**, **#analytics**, **vastaus**, **uudelleentwiittaus** ja **tykkäys**.  Valitsemalla itse ruudun siirryt Twitterin podcastiin.
+* Tämä koodi upottaa twiitin ja säilyttää koontinäytössä erilliset linkit seuraaviin elementteihin: AFK-podcast, \@GuyInACuben Twitter-sivu, Seuraa, #analytics, vastaus, uudelleentwiittaus ja tykkäys.  Valitsemalla itse ruudun siirryt Twitterin podcastiin.
   
   ```html
   <blockquote class="twitter-tweet" data-partner="tweetdeck">
@@ -135,21 +230,21 @@ Voit liittää tai kirjoittaa mitä tahansa HTML-sisältöä.  Power BI lisää 
   ```
 
 ## <a name="edit-a-tile"></a>Ruudun muokkaaminen
-Jos haluat tehdä ruutuun muutoksia...
+Jos haluat tehdä muutoksia aiemmin luotuun ruutuun:
 
-1. Vie hiiren osoitin ruudun oikeaan yläkulmaan ja valitse kolme pistettä.
+1. Vie hiiren osoitin ruudun oikeaan yläkulmaan ja valitse kolme pistettä (..).
    
     ![valitse ruudun kolme pistettä](media/service-dashboard-add-widget/pbi_ellipses.png)
-2. Valitse muokkauskuvake, jolloin **Ruudun tiedot** -ikkuna avautuu uudelleen, ja tee muutokset.
+2. Valitse **Muokkaa tietoja**, jos haluat näyttää **Ruudun tiedot** -ikkunan ja tehdä muutoksia.
    
-    ![muokkauksen kynäkuvake](media/service-dashboard-add-widget/pbi-edit.png)
+    ![Muokkaa tietoja](media/service-dashboard-add-widget/pbi-edit.png)
 
 ## <a name="considerations-and-troubleshooting"></a>Huomioon otettavat seikat ja vianmääritys
-* Helpota ruudun siirtämistä koontinäytössä lisäämällä otsikko ja/tai alaotsikko.
+* Helpota ruudun siirtämistä koontinäytössä lisäämällä otsikon ja valinnaisen alaotsikon.
 * Jos haluat upottaa sivuston sisältöä, mutta et saa upotuskoodia kopioitua ja liitettyä sivustolta, tutustu embed.ly-palveluun, joka auttaa upotuskoodin luomisessa.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
-[Koontinäytön ruudut](consumer/end-user-tiles.md)
+[Johdatus raporttinäkymien ruutuihin Power BI -suunnittelijoille](service-dashboard-tiles.md)
 
-Onko sinulla muuta kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/).
+Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/).
 

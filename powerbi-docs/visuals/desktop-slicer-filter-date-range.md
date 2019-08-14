@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 06/24/2019
 ms.author: mihart
 LocalizationGroup: Create reports
-ms.openlocfilehash: c039b00ced1bf62c8be72d218177d04a9fd3accf
-ms.sourcegitcommit: e67bacbfc5638ee97e3d2e0e7f5bd2d9aac78f9c
+ms.openlocfilehash: e1dfda3c759d225019cc50d36cfe746976bd797a
+ms.sourcegitcommit: cc4b18d55b2dca8fdb1bef00f53a0a808c41432a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67532616"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68867081"
 ---
 # <a name="use-a-relative-date-slicer-and-filter-in-power-bi-desktop"></a>Suhteellisen päivämääräosittajan ja -suodattimen käyttö Power Bi Desktopissa
 
@@ -75,7 +75,7 @@ Jos valitset luettelosta **Kuukaudet** ja annat keskimmäiseksi asetukseksi *2*,
 
 * osittajan rajoittamiin visualisointeihin sisältyvät tiedot näyttävät tiedot kahdelta edelliseltä kuukaudelta:
 
-* 20. toukokuuta – 20. heinäkuuta (tämä päivä).
+* 21. toukokuuta – 20. heinäkuuta (tämä päivä)
 
 Jos taas valitsit *Kuukaudet (Kalenteri)* , rajoitettu näyttö esittäisi tiedot ajalta 1.5.–30.6. (viimeiset kaksi täyttä kalenterikuukautta).
 
