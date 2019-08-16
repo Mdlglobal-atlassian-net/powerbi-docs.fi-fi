@@ -53,6 +53,8 @@
       items:
         - name: Mitä uutta viimeisin Power BI Desktop -päivitys sisältää?
           href: desktop-latest-update.md
+        - name: Visualisointien ryhmittely Power BI Desktopissa
+          href: desktop-grouping-visuals.md
         - name: Mallintamisnäkymä Power BI Desktopissa
           href: desktop-modeling-view.md
         - name: Koosteet Power BI Desktopissa
@@ -1289,6 +1291,8 @@
               href: report-server/configure-kerberos-powerbi-reports.md
             - name: Mobiilisovelluksen käyttöoikeuksien määrittäminen etäkäytön välityksellä
               href: report-server/configure-powerbi-mobile-apps-remote.md
+            - name: 'Etämobiilikäyttö Azure AD:lla'
+              href: 'https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-integrate-with-power-bi'
             - name: Excel-työkirjojen isännöinti
               href: report-server/excel-oos.md
     - name: Viittaus
@@ -1424,3 +1428,7 @@
           href: service-admin-governance.md
         - name: 'Power BI:n suojaus'
           href: service-admin-power-bi-security.md
+- name: Opas
+  items:
+    - name: Mikä on tähtirakenne?
+      href: guidance/star-schema.md
