@@ -8,14 +8,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/02/2019
+ms.date: 08/15/2019
 LocalizationGroup: Conceptual
-ms.openlocfilehash: dd656f81cb0fdb32f9637f969ef538e263e20053
-ms.sourcegitcommit: 277fadf523e2555004f074ec36054bbddec407f8
+ms.openlocfilehash: 1ae51620a51c0dc76cd50bd85fc09aa2bfc8e026
+ms.sourcegitcommit: f6ac9e25760561f49d4257a6335ca0f54ad2d22e
 ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68271995"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69561039"
 ---
 # <a name="power-bi-security-whitepaper"></a>Power BI:n suojausraportti
 
@@ -46,7 +46,7 @@ Kukin Power BI -käyttöönotto koostuu kahdesta klusterista – Web Front End (
 
 ![WFE ja Back End](media/whitepaper-powerbi-security/powerbi-security-whitepaper_01.png)
 
-Power BI käyttää tilin todentamiseen ja hallintaan Azure Active Directorya (**AAD**). Power BI käyttää myös **Azure Traffic Manageria** (ATM) ohjaamaan käyttäjät lähimpään palvelinkeskukseen, joka perustuu yhdistämistä yrittävän asiakkaan DNS-tietueeseen. Näin käyttäjä voidaan todentaa ja staattinen sisältö ja tiedostot ladata. Power BI käyttää maantieteellisesti lähinnä WFE tarpeellisen staattisen sisällön ja tiedostojen jakamiseen käyttäjille, lukuun ottamatta mukautettuja visualisointeja, jotka toimitetaan **Azure sisällön toimitusverkostosta (CDN)** .
+Power BI käyttää tilin todentamiseen ja hallintaan Azure Active Directorya (**AAD**). Power BI käyttää myös **Azure Traffic Manageria** (ATM) ohjaamaan käyttäjät lähimpään palvelinkeskukseen, joka perustuu yhdistämistä yrittävän asiakkaan DNS-tietueeseen. Näin käyttäjä voidaan todentaa ja staattinen sisältö ja tiedostot ladata. Power BI käyttää maantieteellisesti läheisimpiä WFE-kohteita tehokkaasti tarvittavan staattisen sisällön ja tiedostojen tehokkaaseen jakeluun käyttäjille, lukuun ottamatta mukautettuja visualisointeja, jotka toimitetaan **Azure Content Delivery Networkin (CDN)** avulla.
 
 ### <a name="the-wfe-cluster"></a>WFE-klusteri
 
@@ -100,17 +100,16 @@ Power BI -vuokraaja luodaan siinä tietokeskuksessa, jonka katsotaan olevan läh
 
 ### <a name="multiple-geographies-multi-geo"></a>Useita alueita (Multi-Geo)
 
-Jotkin organisaatiot vaativat Power BI -tavoitettavuutta useilla alueilla liiketoiminnan tarpeiden vuoksi. Yrityksellä saattaa esimerkiksi olla Power BI -vuokraaja Yhdysvalloissa, minkä lisäksi yrityksellä on liiketoimintaa muilla maantieteellisillä alueilla, kuten Australiassa, joten yritys tarvitsee Power BI -palveluita ja -tietoja voidakseen jatkaa toimintaansa kyseisellä etäalueella.  Vuoden 2018 toiselta puoliskolta alkaen organisaatiot, joiden vuokraaja sijaitsee jollakin alueella, voivat käyttää myös toisen alueen Power BI -resursseja, jos valmistelut on tehty oikein. Tätä ominaisuutta kutsutaan kätevyyden vuoksi tässä asiakirjassa nimellä **Multi-Geo**.
+Jotkin organisaatiot vaativat Power BI -tavoitettavuutta useilla alueilla liiketoiminnan tarpeiden vuoksi. Esimerkiksi yrityksen Power BI Vuokraaja voi olla Yhdysvallat, mutta hän voi myös tehdä liike toimintaa muilla maantieteellisillä alueilla, kuten Australiassa, ja edellyttää, että jotkin Power BI tiedot pysyvät levossa kyseisellä alueella, jotta ne noudattavat paikallisia sääntöjä. Vuoden 2018 toisesta puoliskosta alkaen organisaatiot, joilla on koti-vuokraaja yhdessä maan tieteen parissa, voivat myös valmistella ja käyttää Power BI resursseja, jotka sijaitsevat toisessa maan tieteessä. Tätä ominaisuutta kutsutaan kätevyyden vuoksi tässä asiakirjassa nimellä **Multi-Geo**.
 
-Eri alueilla toimittaessa tulee pitää mielessä tiettyjä teknisiä seikkoja, jotka kuvataan tarkemmin tässä asiakirjassa. Tärkeisiin huomioitaviin asioihin kuuluvat muun muassa seuraavat:
+Multi-Geo-tietojen uusin ja ensisijainen artikkeli on [Power BI Premium artikkelin Multi-Geo-tuki](service-admin-premium-multi-geo.md) . 
 
-- Etäalueella välimuistiin tallennettu kysely säilyy levossa, mutta muut siirrossa olevat tiedot saattavat kulkea useiden eri alueiden välillä.
-- Etäalueella olevat PBIX- ja XLSX-tiedostojen raportit, jotka julkaistaan Power BI:hin, saattavat joskus aiheuttaa sen, että kopio tai tilannevedos tallennetaan Power BI:n Azure Blob -säilöön, jolloin tiedot salataan käyttäen Azuren SSE (Storage Service Encryption) -salausta.
-- Kun tietoja siirretään Multi-Geo-ympäristössä alueelta toiselle, muistin tiivistäminen alueella, jolta tietoja on siirretty pois, suositetaan tehtäväksi 7–10 päivän kuluessa, jolloin alkuperäisestä sijainnista siirrettyjen tietojen kopio poistetaan.
+On olemassa useita teknisiä tietoja, jotka on arvioitava paikallisten lakien ja säädösten yhteydessä, kun ne toimivat eri maantieteellisillä alueilla. Näitä tietoja ovat esimerkiksi seuraavat:
 
-Seuraavassa kuvassa esitetään, miten Multi-Geo-ympäristössä etäalueen Power BI -palvelut reititetään **Power BI -palvelun Back-End**-klusteriin, jossa muodostetaan yhteys asiakkaan Power BI -tilauksen etänäennäiskoneeseen.
-
-![Multi-Geo](media/whitepaper-powerbi-security/powerbi-security-whitepaper_07.png)
+- Etätietokoneen kyselyn suoritus taso on etäkapasiteettialueella, ja sen avulla varmistetaan, että tieto malli, väli muistit ja suurin mahdollinen tietojenkäsittely pysyvät etäkapasiteettialueella. On joitakin poikkeuksia, jotka on kuvattu [Multi-Geo for Power BI Premium-](service-admin-premium-multi-geo.md) artikkelissa.
+- Väli muistissa oleva kysely teksti ja siihen tallennettu syrjäiseen alueeseen tallennettu vastaava tulos pysyvät tällä alueella levossa, mutta muut kauttakulussa olevat tiedot voivat siirtyä edestakaisin useiden maantieteellisille alueille.
+- PBIX-tai XLSX-tiedostot, jotka on julkaistu (ladattu) Power BI-palvelu Multi-Geo-kapasiteettiin, saattavat johtaa siihen, että kopio tallennetaan tilapäisesti Azure BLOB-säilöön Power BI vuokraajaalueella. Tällaisissa tilanteissa tiedot salataan käyttämällä Azure-tallennus palvelun salausta (SSE), ja kopiointi on ajoitettu roska-kokoelmalle heti, kun tiedoston sisällön käsittely ja siirtäminen etäalueelle on valmis. 
+- Kun siirrät tietoja alueiden välillä Multi-Geo-ympäristössä, lähde alueen tietojen esiintymä poistetaan 7-30 päivän kuluessa. 
 
 ### <a name="datacenters-and-locales"></a>Tietokeskukset ja aluekohtaiset asetukset
 
@@ -231,7 +230,7 @@ Pilvipohjaisten tietolähteiden osalta Tietojen siirron rooli salaa salausavaime
 
     b. PML – Salataan Azure Blob -säilössä, mutta kaikki parhaillaan Power BI -palvelun Azure Blob -tallennustilassa olevat tiedot käyttävät [Azuren SSE (Storage Service Encryption)](https://docs.microsoft.com/azure/storage/common/storage-service-encryption) -salausta, joka tunnetaan myös palvelinpuolen salauksena. Myös Multi-Geo käyttää SSE-salausta.
 
-    c. Työnnetyt tiedot v1 – Tallennetaan salattuina Azure Blob -säilöön, mutta kaikki parhaillaan Power BI -palvelun Azure Blob -tallennustilassa olevat tiedot käyttävät [Azuren SSE (Storage Service Encryption)](https://docs.microsoft.com/azure/storage/common/storage-service-encryption) -salausta, joka tunnetaan myös palvelinpuolen salauksena. Myös Multi-Geo käyttää SSE-salausta. Palveluilmoituksen tiedot v1 on saatavilla alkaen 2016. 
+    c. Työnnetyt tiedot v1 – Tallennetaan salattuina Azure Blob -säilöön, mutta kaikki parhaillaan Power BI -palvelun Azure Blob -tallennustilassa olevat tiedot käyttävät [Azuren SSE (Storage Service Encryption)](https://docs.microsoft.com/azure/storage/common/storage-service-encryption) -salausta, joka tunnetaan myös palvelinpuolen salauksena. Myös Multi-Geo käyttää SSE-salausta. Työntö tiedot v1 lopetettiin alkaen 2016. 
 
     d. Työnnetyt tiedot v2 – Tallennetaan salattuina Azuren SQL-tietokantaan.
 
@@ -249,23 +248,23 @@ Power BI toteuttaa tietojen eheyden valvonnan seuraavilla tavoilla:
 
    a. Raportit voivat olla joko Office 365:n Excel-raportteja tai Power BI -raportteja. Raportin lajin mukaan metatietoihin pätevät seuraavat asiat:
         
-    &ensp; &ensp; a. Excel-raporttia metatiedot tallennetaan SQL Azure-salattu. Metatietojen tallennetaan myös Office 365: ssä.
+    &ensp;&ensp; a. Excel-raportin metatiedot tallennetaan salattuina SQL Azureen. Metatiedot tallennetaan myös Officeen 365.
 
-    &ensp; &ensp; b. Power BI-raportit tallennetaan salattuina Azure SQL-tietokantaan.
+    &ensp;&ensp; b. Power BI raportit tallennetaan salattuina Azure SQL-tieto kantaan.
 
 2. Staattiset tiedot
 
    Staattisiin tietoihin sisältyy artefakteja, kuten taustakuvat ja mukautetut visualisoinnit.
 
-    &ensp; &ensp; a. Jos raportti on luotu Office 365:n Excelillä, mitään ei tallenneta.
+    &ensp;&ensp; a. Jos raportti on luotu Office 365:n Excelillä, mitään ei tallenneta.
 
-    &ensp; &ensp; b. Jos kyseessä on Power BI -raportti, staattiset tiedot tallennetaan Azure Blob -säilöön ja salataan.
+    &ensp;&ensp; b. Jos kyseessä on Power BI -raportti, staattiset tiedot tallennetaan Azure Blob -säilöön ja salataan.
 
-3. Välimuistit
+3. Väli muisteja
 
-    &ensp; &ensp; a. Jos raportti on luotu Office 365:n Excelillä, mitään ei tallenneta välimuistiin.
+    &ensp;&ensp; a. Jos raportti on luotu Office 365:n Excelillä, mitään ei tallenneta välimuistiin.
 
-    &ensp; &ensp; b. Jos kyseessä on Power BI -raportti, visualisointien tiedot tallennetaan salattuina välimuistiin Azuren SQL-tietokannassa.
+    &ensp;&ensp; b. Jos kyseessä on Power BI -raportti, visualisointien tiedot tallennetaan salattuina välimuistiin Azuren SQL-tietokannassa.
  
 
 4. Power BI:hin julkaistut alkuperäiset Power BI Desktop (.pbix)- tai Excel (.xlsx) -tiedostot
@@ -282,7 +281,7 @@ Käytetystä salausmenetelmästä huolimatta Microsoft hallitsee avainten salaus
 
 ### <a name="data-transiently-stored-on-non-volatile-devices"></a>Tilapäisesti ei-väliaikaisiin laitteisiin tallennetut tiedot
 
-Pysyvä muut laitteet ovat laitteet, joissa on muistia, joka jatkuu ilman yhtenäinen power. Seuraavassa kuvataan tietoja, jotka on tallennettu tilapäisesti ei-väliaikaisiin laitteisiin. 
+Muut kuin pysyvät laitteet ovat laitteita, joiden muisti pysyy muuttumattomana ilman jatkuvaa tehoa. Seuraavassa kuvataan tietoja, jotka on tallennettu tilapäisesti ei-väliaikaisiin laitteisiin. 
 
 #### <a name="datasets"></a>Tietojoukot
 
@@ -297,7 +296,7 @@ Pysyvä muut laitteet ovat laitteet, joissa on muistia, joka jatkuu ilman yhten�
     b. DirectQuery – Tämä riippuu siitä, luodaanko malli palvelussa suoraan, jolloin se tallennetaan yhteysmerkkijonoon salatussa muodossa, niin että salausavain tallennetaan salaamattomana tekstinä samaan paikkaan (salattujen tietojen rinnalle); vai tuodaanko malli Power BI Desktopista, jolloin tunnistetietoja ei tallenneta ei-väliaikaisiin laitteisiin.
 
     > [!NOTE]
-    > Palvelun Include-mallin luonti-ominaisuus on poistettu aloitetaan 2017.
+    > Palvelu puolen mallin luonti ominaisuus lopetettiin 2017 alkaen.
 
     c. Lähetetyt tiedot – Ei mitään (ei käytettävissä).
 
@@ -316,7 +315,7 @@ Power BI valvoo käsiteltävänä olevien tietojen eheyttä käyttämällä HTTP
 
 ## <a name="user-authentication-to-data-sources"></a>Käyttäjän todentaminen tietolähteissä
 
-Kuhunkin tietolähteeseen käyttäjä muodostaa yhteyden niiden kirjautumisen perusteella ja käyttää tietoja näillä tunnistetiedoilla. Käyttäjät voivat luoda sitten kyselyitä, koontinäyttöjä ja raportteja pohjana olevien tietojen perusteella.
+Jokainen käyttäjä muodostaa yhteyden kunkin tieto lähteen kirjautumistunnuksen perusteella ja käyttää näitä tunniste tietoja. Käyttäjät voivat luoda sitten kyselyitä, koontinäyttöjä ja raportteja pohjana olevien tietojen perusteella.
 
 Kun käyttäjä jakaa kyselyitä, koontinäyttöjä, raportteja tai mitä tahansa visualisointeja, kyseisten tietojen ja visualisointien käyttöoikeus määräytyy sen mukaan, tukevatko taustalla olevat tietolähteet roolitason suojausta (RLS).
 
@@ -382,7 +381,7 @@ Seuraavat kysymykset ovat yleisiä Power BI:n suojaukseen liittyviä kysymyksiä
 
 * **Power BI:n tunnistetiedot ja toimialueen tunnistetiedot:** Käyttäjät kirjautuvat Power BI:hin käyttämällä sähköpostiosoitetta; kun käyttäjä yrittää muodostaa yhteyden tietoresurssiin, Power BI välittää Power BI -kirjautumissähköpostiosoitteen tunnistetietoina. Jos kyseessä on toimialueeseen yhdistetty resurssi (joko paikallinen tai pilvipohjainen), hakemistopalvelu määrittää kirjautumissähköpostiosoitetta vastaavan _käyttäjän ensisijaisen nimen_ ([UPN](https://msdn.microsoft.com/library/windows/desktop/aa380525(v=vs.85).aspx)), joka määrittää, riittävätkö tunnistetiedot sallimaan käytön. Jos organisaatio käyttää Power BI:hin kirjautumiseen työpohjaisia sähköpostiosoitteita (samaa sähköpostia, jolla organisaatiossa kirjaudutaan työresursseihin, esimerkiksi _david@contoso.com_ ), yhdistäminen voi tapahtua saumattomasti; jos organisaatio käyttää muita kuin työpohjaisia sähköpostiosoitteita (esimerkiksi _david@contoso.onmicrosoft.com_ ), hakemistojen yhdistäminen on suoritettava, jotta Power BI -sisäänkirjautumistiedoilla voidaan sallia paikallisten resurssien käyttöoikeus.
 
-* **SQL Server Analysis Services ja Power BI:** Power BI tarjoaa organisaatioille, jotka käyttävät paikallisia SQL Server Analysis Services -palveluita, Power BI:n paikallisen tietoyhdyskäytävän (joka on **yhdyskäytävä**, kuten aiemmissa osioissa on kuvattu).  Power BI:n paikallinen tietoyhdyskäytävä voi toteuttaa tietolähteissä roolitason suojauksen (RLS). Jos haluat lisätietoja RLS-suojauksesta, katso tämän asiakirjan aiempi osio **Käyttäjien todentaminen tietolähteissä**. Katso lisätietoja yhdyskäytävien [paikallisen tietoyhdyskäytävän](service-gateway-onprem.md).
+* **SQL Server Analysis Services ja Power BI:** Power BI tarjoaa organisaatioille, jotka käyttävät paikallisia SQL Server Analysis Services -palveluita, Power BI:n paikallisen tietoyhdyskäytävän (joka on **yhdyskäytävä**, kuten aiemmissa osioissa on kuvattu).  Power BI:n paikallinen tietoyhdyskäytävä voi toteuttaa tietolähteissä roolitason suojauksen (RLS). Jos haluat lisätietoja RLS-suojauksesta, katso tämän asiakirjan aiempi osio **Käyttäjien todentaminen tietolähteissä**. Lisä tietoja yhdyskäytävien käyttämisestä on kohdassa [Paikallinen tietoyhdyskäytävä](service-gateway-onprem.md).
 
   Organisaatiot voivat myös käyttää Kerberosta **kertakirjautumiseen** (SSO) ja muodostaa saumattoman yhteyden Power BI:stä paikallisiin tietolähteisiin, joita voivat olla esimerkiksi SQL Server, SAP HANA ja Teradata. Katso lisätietoja ja määritysvaatimukset artikkelista [ **Käytä Kerberosta kertakirjautumiseen Power BI:stä paikallisiin tietolähteisiin**](https://docs.microsoft.com/power-bi/service-gateway-kerberos-for-sso-pbi-to-on-premises-data).
 
@@ -426,11 +425,11 @@ Seuraavat kysymykset ovat yleisiä Power BI:n suojaukseen liittyviä kysymyksiä
 
 **Kun käytössä on paikallinen tietoyhdyskäytävä, miten palautusavaimia käytetään ja mihin ne on tallennettu? Entä suojattu käyttöoikeuksien hallinta?**
 
-* Yhdyskäytävän asentamisen ja määrittämisen aikana järjestelmänvalvoja kirjoittaa yhdyskäytävän **palautusavaimen**. Että **palautusavain** käytetään vahva **AES** symmetrisen avaimen. **RSA** asymmetrinen avain on myös luotu samanaikaisesti.
+* Yhdyskäytävän asentamisen ja määrittämisen aikana järjestelmänvalvoja kirjoittaa yhdyskäytävän **palautusavaimen**. **Palautus avainta** käytetään luomaan vahva **AES** -symmetrinen avain. Myös **RSA** -asymmetrinen avain luodaan samalla kertaa.
 
     Luodut avaimet (**RSA** ja **AES**) tallennetaan tiedostoon paikallisessa koneessa. Tiedosto on myös salattu. Tiedoston sisällön salauksen voi purkaa vain kyseisellä Windows-koneella, ja vain kyseistä yhdyskäytävän palvelutiliä käyttämällä.
 
-    Kun käyttäjä kirjoittaa tietolähteen tunnistetiedot Power BI-palvelun käyttöliittymään, tunnistetiedot salataan selaimessa julkisella avaimella. Yhdyskäytävä purkaa tunnistetietojen yksityinen RSA-avain ja salaa ne uudelleen AES symmetrisen avaimen ennen kuin tiedot tallennetaan Power BI-palvelussa. Tämän prosessin ansiosta Power BI -palvelussa ei koskaan ole salaamattomia tietoja.
+    Kun käyttäjä kirjoittaa tietolähteen tunnistetiedot Power BI-palvelun käyttöliittymään, tunnistetiedot salataan selaimessa julkisella avaimella. Yhdyskäytävä purkaa tunniste tiedot käyttämällä RSA-yksityistä avainta ja salaa ne uudelleen käyttäen AES-symmetristä avainta, ennen kuin tiedot tallennetaan Power BI-palvelu. Tämän prosessin ansiosta Power BI -palvelussa ei koskaan ole salaamattomia tietoja.
 
 **Mitä kommunikaatioprotokollia paikallinen tietoyhdyskäytävä käyttää, ja miten ne on suojattu?**
 
@@ -438,7 +437,7 @@ Seuraavat kysymykset ovat yleisiä Power BI:n suojaukseen liittyviä kysymyksiä
 
   - **AMQP 1.0 – TCP + TLS**: Tämä protokolla edellyttää, että portit 443, 5671–5672 ja 9350–9354 ovat avoinna lähtevää tietoliikennettä varten. Tätä protokollaa suositellaan, koska sen tietoliikennekustannukset ovat pienemmät.
 
-  - **HTTPS – WebSockets ja HTTPS + TLS**: Tämä protokolla käyttää vain porttia 443. WebSocket käynnistetään yksittäisellä HTTP CONNECT -viestillä. Kun kanava on muodostettu, tietoliikenne on käytännössä muotoa TCP + TLS. Voit pakottaa yhdyskäytävä käyttämään tätä protokollaa muokkaamalla asetus, joka on kuvattu [paikallisen yhdyskäytävän artikkelissa](/data-integration/gateway/service-gateway-communication#force-https-communication-with-azure-service-bus).
+  - **HTTPS – WebSockets ja HTTPS + TLS**: Tämä protokolla käyttää vain porttia 443. WebSocket käynnistetään yksittäisellä HTTP CONNECT -viestillä. Kun kanava on muodostettu, tietoliikenne on käytännössä muotoa TCP + TLS. Voit pakottaa yhdyskäytävän käyttämään tätä protokollaa muokkaamalla [paikallista yhdyskäytävää käsittelevässä artikkelissa](/data-integration/gateway/service-gateway-communication#force-https-communication-with-azure-service-bus)kuvattua asetusta.
 
 **Mikä on Azure CDN:n rooli Power BI:ssä?**
 
@@ -454,11 +453,11 @@ Seuraavat kysymykset ovat yleisiä Power BI:n suojaukseen liittyviä kysymyksiä
 
 * Kyllä. Bing Maps- ja ESRI-visualisoinnit siirtävät tietoja Power BI -palvelun ulkopuolelle kyseisiä palveluita käyttäville visualisoinneille. Voit katsoa lisätietoja ja tarkat kuvaukset Power BI:n ulkopuolelle suuntautuvasta vuokraajan liikenteestä artikkelista [ **Power BI ja ExpressRoute**](service-admin-power-bi-expressroute.md).
 
-**Mallin sovelluksille Microsoft tekee suojaus- tai tietosuoja arviointi ennen kohteiden julkaisemista valikoimaan malli-sovelluksen?**
-* Ei. Sovelluksen julkaisija on vastuussa asiakkaan vastuulla tarkistaa ja päättää, täytyykö mallin sovelluksen julkaisijaan sisällön. 
+**Onko Microsoft tehnyt malli sovelluksille tieto turva-tai tieto suoja-arvioinnin malli sovelluksesta ennen kohteiden julkaisemista valikoimaan?**
+* Ei. Sovelluksen julkaisija on vastuussa sisällöstä, kun asiakkaan vastuulla on tarkastella ja tarkistaa, luotatko malliin sovelluksen julkaisijaan. 
 
-**Onko mallin sovelluksia, jotka voit lähettää tietoja asiakkaan verkon ulkopuolella?**
-* Kyllä. Asiakkaan vastuulla tarkistaa julkaisijan tietosuojakäytäntö ja päättää, täytyykö asentaa malli-sovelluksen vuokraajan on. Lisäksi julkaisija on vastuussa Ilmoita sovelluksen käyttäytyminen ja ominaisuudet.
+**Onko olemassa malli sovelluksia, jotka voivat lähettää tietoja asiakas verkon ulkopuolella?**
+* Kyllä. Asiakkaan vastuulla on tarkistaa julkaisijan tieto suoja käytäntö ja päättää, asennetaanko malli sovellus vuokraajaan. Lisäksi julkaisijan vastuulla on ilmoittaa sovelluksen toiminnasta ja toiminnoista.
 
 **Entä tietojen maakohtaisuus? Voimmeko valmistella vuokraajat palvelinkeskuksissa, jotka sijaitsevat tietyillä maantieteellisillä alueilla, jotta tiedot eivät varmasti siirry maan rajojen ulkopuolelle?**
 
