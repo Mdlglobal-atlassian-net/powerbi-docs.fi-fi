@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/16/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: d6961007c3f7185b954188fa7bd7866d80a7f85a
-ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
+ms.openlocfilehash: 6d0c4a2dba1dee1c8c40da8fd3371767915729da
+ms.sourcegitcommit: d9755602235ba03594c348571b9102c9bf88d732
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68523393"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69490316"
 ---
 # <a name="administering-power-bi---frequently-asked-questions-faq"></a>Power BI:n hallinnointi - usein kysytyt kysymykset (UKK)
 
@@ -38,7 +38,6 @@ Tämä artikkeli vastaa Power BI -hallinnoinnista usein kysyttyihin kysymyksiin.
 
 * [Miten tämä muuttaa tapaa, jolla hallinnoin tällä hetkellä organisaationi käyttäjien käyttäjätietoja?](#how-will-this-change-the-way-i-manage-identities-for-users-in-my-organization-today)
 * [Miten Power BI:tä hallitaan?](#how-do-we-manage-power-bi)
-* [Millä tavalla voin hallinnoida vuokraajaa, jonka Microsoft on luonut käyttäjiäni varten?](#what-is-the-process-to-manage-a-tenant-created-by-microsoft-for-my-users)
 * [Jos minulla on useita toimialueita, voinko hallinnoida Office 365 -vuokraajaa, johon käyttäjiä lisätään?](#if-i-have-multiple-domains-can-i-control-the-office-365-tenant-that-users-get-added-to)
 * [Miten voin poistaa Power BI:n käyttäjiltä, jotka ovat jo rekisteröityneet?](#how-do-i-remove-power-bi-for-users-that-already-signed-up)
 * [Mistä tiedän, milloin uudet käyttäjät ovat liittyneet vuokraajaani?](#how-do-i-know-when-new-users-have-joined-my-tenant)
@@ -173,18 +172,6 @@ Organisaation käyttäjiin saattaa liittyä kolme tilannetta:
 Power BI sisältää hallintaportaalin, jossa on käyttötilastoja, linkki Microsoft 365 -hallintakeskukseen käyttäjien ja ryhmien hallintaa varten ja mahdollisuus hallita koko vuokraajaa koskevia asetuksia.
 
 Jotta voit käyttää Power BI -hallintaportaalia, tililläsi täytyy olla **yleisen järjestelmänvalvojan** oikeudet Office 365:ssä tai Azure Active Directoryssa tai jonkun on määritettävä käyttäjätilillesi Power BI -palvelun järjestelmänvalvojan rooli. Lisätietoja on artikkeleissa [Power BI -järjestelmänvalvojaroolin kuvaus](service-admin-role.md) ja [Power BI -hallintaportaali](service-admin-portal.md).
-
-### <a name="what-is-the-process-to-manage-a-tenant-created-by-microsoft-for-my-users"></a>Millä tavalla voin hallinnoida vuokraajaa, jonka Microsoft on luonut käyttäjiäni varten?
-
-Kun omatoiminen käyttäjä rekisteröityy Azure AD:tä käyttävään pilvipalveluun, palvelu lisää hänet hallitsemattomaan Azure AD -hakemistoon sähköpostin toimialueen perusteella. Voit vaatia jonkun toisen luoman vuokraajan käyttöösi ja hallita sitä suorittamalla *järjestelmänvalvojan haltuunottoprosessin*. Suoritettavan haltuunoton tyyppi määräytyy sen mukaan, liittyykö toimialueeseen aiemmin luotu hallittu vuokraaja:
-
-* *Sisäisen haltuunoton* avulla voit luoda toimialueelle uuden hallitun vuokraajan.
-
-* *Ulkoisen haltuunoton* avulla voit siirtää toimialueen aiemmin luotuun hallittuun vuokraajaan.
-
-Jos haluat lisätietoja, katso [Ota haltuun hallitsematon hakemisto järjestelmänvalvojana Azure Active Directoryssa](/azure/active-directory/users-groups-roles/domains-admin-takeover).
-
-Kun suoritat ulkoisen haltuunoton, palvelu sijoittaa ennen haltuunottoa luodun Power BI -sisällön [Power BI:n arkistoituun työtilaan](service-admin-power-bi-archived-workspace.md). Jos haluat käyttää sisältöä uudessa vuokraajassa, se täytyy siirtää käsin.
 
 ### <a name="if-i-have-multiple-domains-can-i-control-the-office-365-tenant-that-users-get-added-to"></a>Jos minulla on useita toimialueita, voinko hallinnoida Office 365 -vuokraajaa, johon käyttäjiä lisätään?
 
