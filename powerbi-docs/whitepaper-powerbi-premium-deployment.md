@@ -10,12 +10,12 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 03/06/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: 783f82ecd5c6dea5c26b096b8b1bfcffe388864b
-ms.sourcegitcommit: 012f05efc4e97aeb6178fb2fc820b73bcc1ce920
+ms.openlocfilehash: 1b3d455e0deff676d20c316422d4715773e0a85d
+ms.sourcegitcommit: 4a3afe761d2f4a5bd897fafb36b53961739e8466
 ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68391440"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69655064"
 ---
 # <a name="deploying-and-managing-power-bi-premium-capacities"></a>Power BI Premium kapasiteettien käyttöönotto ja hallinta
 
@@ -85,7 +85,7 @@ Power BI tieto joukot edustavat tietojen lähdettä, joka on valmis raportointia
 
 Lukuun ottamatta virta tieto \[joukkoja [3](#endnote-03)\], tieto joukko edustaa tieto mallia, joka hyödyntää Analysis Services kehittyneillä mallinnus tekniikoilla.
 
-Ota huomioon, että dokumentaatiossa toisinaan terminologia-tieto joukot ja mallit ovat vaihdettavissa. Yleensä Power BI-palvelu näkö kulmasta sitä kutsutaan tieto joukkona **, ja** kehitys perspektiivistä sitä kutsutaan **malliksi**. Tämän raportti raportin yhteydessä ne tarkoittavat paljolti samaa asiaa.
+Ota huomioon, että dokumentaatiossa toisinaan terminologia-tieto joukot ja mallit ovat vaihdettavissa. Yleensä Power BI-palvelu näkö kulmasta sitä kutsutaan tieto joukkona, ja kehitys perspektiivistä sitä kutsutaan **malliksi**. Tämän raportti raportin yhteydessä ne tarkoittavat paljolti samaa asiaa.
 
 ##### <a name="externally-hosted-models"></a>Ulkoisesti Isännöidyt mallit
 
@@ -289,7 +289,7 @@ Power BI Premium on vuokraajatason Office 365: n tilaus, joka on saatavilla kahd
 - **Em** SKU (EM1-EM3) for upottaminen, joka vaatii vuosittaisen sitoumuksen, laskutetaan kuukausittain
 - **P** SKU (P1-P3) upottamiseen ja yritys toimintoihin, jotka edellyttävät kuukausittaista tai vuosittaista sitoutumista, laskutetaan kuukausittain ja sisältää lisenssin asentaa Power BI-raporttipalvelin paikallisesti
 
-Vaihtoehtoinen tapa on ostaa Azure Power BI Embedded-tilaus, jolla on yksittäinen SKU-perhe: **Varastointi yksiköt** (a1-A6) vain upottamista ja kapasiteetin testausta varten.
+Vaihtoehtoinen tapa on ostaa Azure Power BI Embedded-tilaus, jolla on yksittäinen SKU-perhe: Varastointi yksiköt (a1-A6) vain upottamista ja kapasiteetin testausta varten.
 
 Kaikki varastointi yksiköt toimittavat v-ytimiä kapasiteettien \[ [9](#endnote-09)\]luomi seksi, mutta em-varastointi yksiköt on rajoitettu pienempään skaalattuun upottamiseen. Vaikka tämän teknisen raportin paino pisteenä on P SKU, paljon siitä, mistä keskustellaan, koskee myös A-varastointi yksiköitä.
 
@@ -468,7 +468,7 @@ Kun Premium-kapasiteetin suoritus kykyyn liittyy ongelmia, yleinen ensimmäinen 
 Kun ylimääräinen Premium-kapasiteetti vaaditaan, on kaksi vaihto ehtoa, joista keskustellaan myöhemmin tässä osiossa:
 
 - Skaalaa Premium-kapasiteettia
-- Lisää uusi Premium-kapasiteetti
+- Uuden Premium-kapasiteetin lisääminen
 
 Lopuksi testaus menetelmät ja Premium-kapasiteetin mitoitus tekevät tämän osan.
 
@@ -479,7 +479,7 @@ Parhaan hyödyntämisen ja suoritus kyvyn saavuttamiseksi on joitakin parhaita k
 - Sovellustyö tilojen käyttäminen henkilökohtaisten työtilojen sijaan
 - Liike toiminnan kriittisen ja Omatoiminen BI (SSBI)-palvelun erottaminen eri kapasiteetteihin
 
-  ![Liike toiminnan kriittisen ja omatoimisen BI:n erottaminen erilaisiin kapasiteetteihin](media/whitepaper-premium-deployment/separate-capacities.png)
+  ![Liiketoiminnan kannalta tärkeän ja omatoimisen BI:n (SSBI:n) erottaminen eri kapasiteetteihin](media/whitepaper-premium-deployment/separate-capacities.png)
 
 - Jos sisältöä jaetaan vain Power BI Pro käyttäjien kanssa, sisältöä ei välttämättä tarvitse tallentaa varattuun kapasiteettiin
 - Käytä varattuja kapasiteetteja, kun etsit tiettyä päivitys aikaa tai kun tiettyjä ominaisuuksia vaaditaan, esimerkiksi suuria tieto joukkoja tai sivutettuja raportteja
@@ -492,15 +492,15 @@ Tässä ohje aiheessa käsitellään seitsemää yleistä tuki kysymystä, jotka
 
 #### <a name="why-is-the-capacity-slow-and-what-can-i-do"></a>Miksi kapasiteetti on hidas ja mitä voin tehdä?
 
-On monia syitä, jotka voivat vaikuttaa hitaaseen Premium-kapasiteettiin. Tämä kysymys edellyttää lisä tietoja, jotta ymmärrät, mitä hitailla tarkoitetaan. Onko raporttien lataaminen hidasta? Vai onko niiden lataaminen epäonnistunut? Ovatko raportin visualisoinnit hitaita lataamaan tai päivittämään, kun käyttäjät ovat vuoro vaikutuksessa raportin kanssa? Onko päivittäminen kestää kauemmin kuin odotettiin tai aiemmin kokenut?
+On monia syitä, jotka voivat vaikuttaa hitaaseen Premium-kapasiteettiin. Tämä kysymys edellyttää lisätietoja, jotta ymmärretään, mitä hitaalla tarkoitetaan. Onko raporttien lataaminen hidasta? Vai eikö niiden lataaminen onnistu? Latautuvatko tai päivittyvätkö raportin visualisoinnit hitaasti, kun käyttäjät ovat vuorovaikutuksessa raportin kanssa? Onko päivittäminen kestää kauemmin kuin odotettiin tai aiemmin kokenut?
 
-Kun olet saanut käsityksen syyn, voit alkaa tutkia asiaa. Seuraavien kuuden kysymyksen vasta ukset auttavat sinua ratkaisemaan tarkempia ongelmia.
+Kun olet saanut käsityksen syystä, voit alkaa tutkia asiaa. Vastauksen seuraavaan kuuteen kysymykseen auttavat sinua ratkaisemaan tarkempia ongelmia.
 
-#### <a name="what-content-is-using-up-my-capacity"></a>Mitä sisältöä käyttää kapasiteettini?
+#### <a name="what-content-is-using-up-my-capacity"></a>Minkälainen sisältö käyttää eniten kapasiteettia?
 
-Voit käyttää **Power BI Premium Capacity tieto** -sovellusta kapasiteetin mukaan ja tarkistaa työtila sisällön suoritus kyvyn mittarit. Suoritus kyvyn mittarit ja resurssien käyttö tunnit on mahdollista tarkistaa kuluneina seitsemänä päivänä kaikesta Premium-kapasiteettiin tallennetusta sisällöstä. Tämä on usein ensimmäinen vaihe, joka suoritetaan, kun vian määritys on yleinen huoli Premium-kapasiteetin suoritus kyvystä.
+**Power BI Premium -kapasiteettiarvot** -sovelluksella voit suodattaa kapasiteetin mukaan ja tarkastella työtilan sisällön suorituskyvyn mittareita. Suoritus kyvyn mittarit ja resurssien käyttö tunnit on mahdollista tarkistaa kuluneina seitsemänä päivänä kaikesta Premium-kapasiteettiin tallennetusta sisällöstä. Tämä on usein ensimmäinen vaihe, joka suoritetaan, kun vian määritys on yleinen huoli Premium-kapasiteetin suoritus kyvystä.
 
-Tarkkailtavat tärkeimmät mittarit ovat seuraavat:
+Tärkeimmät valvottavat arvot:
 
 - Keskimääräinen suoritin ja suuren käyttö asteen määrä
 - Keskimääräinen muisti ja suuren käyttö asteen määrä sekä muistin käyttö tiettyjen tieto joukkojen, tietojen ja Sivutettujen raporttien osalta
@@ -510,81 +510,81 @@ Tarkkailtavat tärkeimmät mittarit ovat seuraavat:
 - Tieto joukon ja tiedon kulku-päivitys aikojen Keski arvo
 - Keskimääräiset AI-soitto ajat ja odotus ajat
 
-Lisäksi Power BI Premium kapasiteetti mittarit-sovelluksessa aktiivinen muisti näyttää raporttiin varatun muistin kokonaismäärän, jota ei voi häätää, koska se on käytössä viimeisten kolmen minuutin aikana. Päivityksen odotus ajan suuri piikki voi korreloida suuren ja/tai aktiivisen tieto joukon kanssa.
+Lisäksi Power BI Premium kapasiteetti mittarit-sovelluksessa aktiivinen muisti näyttää raporttiin varatun muistin kokonaismäärän, jota ei voi häätää, koska se on käytössä viimeisten kolmen minuutin aikana. Korkea päivityksen odotusaikapiikki saattaa korreloida suuren ja/tai aktiivisen tietojoukon kanssa.
 
 "Top 5 by Average duration"-kaavio korostaa viittä ylintä tieto joukkoa, sivutettuja raportteja, tieto joukkoja ja AI-kutsuja, jotka kuluttavat kapasiteetti resursseja. Viiden parhaan luettelon sisältö on tutkimuksen ja mahdollisen optimoinnin hakijoita.
 
 #### <a name="why-are-reports-slow"></a>Miksi raportit ovat hitaita?
 
-Seuraavissa taulu koissa näytetään mahdollisia ongelmia ja tapoja tunnistaa ja käsitellä niitä.
+Seuraavissa taulukoissa näytetään mahdollisia ongelmia ja tapoja tunnistaa ja käsitellä niitä.
 
-##### <a name="insufficient-capacity-resources"></a>Riittämättömät kapasiteetti resurssit
+##### <a name="insufficient-capacity-resources"></a>Riittämättömät kapasiteettiresurssit
 
-| Mahdolliset selitykset | Tunnistaminen | Miten ratkaistaan |
+| Mahdolliset selitykset | Tunnistaminen | Ratkaiseminen |
 | --- | --- | --- |
 | Suuren kokonaismäärän aktiivista muistia (mallia ei voi häätää, koska se on käytössä viimeisten kolmen minuutin aikana)<br><br> Useita suuren piikkiä kyselyn odotus aikoina<br><br> Monta suurta piikkiä päivityksen odotus aikoina | Valvo muistin mittareita \[ [18](#endnote-18)\]ja häätö määrät \[ [19](#endnote-19)\] | Pienennä mallin kokoa tai Muunna DirectQuery-tilaan – Lue tämän osion [Optimoi mallit](#optimizing-models) -aihe<br><br> Skaalaa kapasiteettia<br><br> Määritä sisältö eri kapasiteettiin |
 
-##### <a name="inefficient-report-designs"></a>Tehottomia raportti malleja
+##### <a name="inefficient-report-designs"></a>Tehottomat raporttimallit
 
-| Mahdolliset selitykset | Tunnistaminen | Miten ratkaistaan |
+| Mahdolliset selitykset | Tunnistaminen | Ratkaiseminen |
 | --- | --- | --- |
 | Raportti sivut sisältävät useita visualisointeja (vuorovaikutteinen suodatus voi käynnistää vähintään yhden kyselyn visualisointia kohden)<br><br> Visualisoinnit noutavat enemmän tietoja kuin on tarpeen | Raportti mallien tarkastelu<br><br> Haastattelen raportin käyttäjiä ymmärtämään, miten he käsittelevät raportteja<br><br> Valvo tieto joukon kyselyjen \[mitta lukuja [20](#endnote-20)\] | Uudelleensuunnittelu raportteja, joissa on vähemmän visualisointeja sivua kohden |
 
 ##### <a name="dataset-slow-especially-when-reports-have-previously-performed-well"></a>Tieto joukko on hidas (etenkin silloin, kun raportit ovat aiemmin suoritettuna)
 
-| Mahdolliset selitykset | Tunnistaminen | Miten ratkaistaan |
+| Mahdolliset selitykset | Tunnistaminen | Ratkaiseminen |
 | --- | --- | --- |
 | Yhä suurempi määrä tuonti tietoja<br><br> Monitasoinen tai tehoton laskenta logiikka, mukaan lukien RLS-roolit<br><br> Mallia ei ole optimoitu täysin<br><br> (DQ/LC) Yhdyskäytävän viive<br><br> Hitaan DQ-lähde kyselyn vastaus ajat | Tarkastele malli malleja<br><br> Valvo yhdyskäytävän resurssi laskureita | Lue tämän osion [Optimoi mallit](#optimizing-models) -aihe |
 
-##### <a name="high-concurrent-report-usage"></a>Suuren samanaikaisen raportin käyttö
+##### <a name="high-concurrent-report-usage"></a>Suuri raportin samanaikainen käyttö
 
-| Mahdolliset selitykset | Tunnistaminen | Miten ratkaistaan |
+| Mahdolliset selitykset | Tunnistaminen | Ratkaiseminen |
 | --- | --- | --- |
 | Suuren kyselyn odotus ajat<br><br> SUORITTIMEN kylläisyys<br><br> DQ/LC-yhteyksien rajat ylittyivät | Valvo suorittimen käyttöä \[ [21](#endnote-21)\], kyselyjen odotus aikoja ja DQ/LC-käyttöä \[ [22](#endnote-22) \] mittarit + kyselyn kestot – jos vaihteleva voi ilmaista samanaikaisuus ongelmia | Skaalaa kapasiteettia tai Määritä sisältö eri kapasiteettiin<br><br> Uudelleensuunnittelu raportteja, joissa on vähemmän visualisointeja sivua kohden |
 
-#### <a name="why-are-reports-not-loading"></a>Miksi raportteja ei ladata?
+#### <a name="why-are-reports-not-loading"></a>Miksi raportit eivät lataudu?
 
-Kun raporttien lataaminen epäonnistuu, se on pahin mahdollinen skenaario ja varma merkki siitä, että kapasiteetilla on liian vähän muistia ja että se on liian lämmitetty. Näin voi käydä, kun kaikkia ladattuja malleja kysytään aktiivisesti, joten niitä ei voi häätää ja kaikki päivitys toiminnot on keskeytetty tai viivästynyt. Power BI-palvelu yrittää ladata tieto joukon 30 sekunnin ajaksi, ja käyttäjälle annetaan kauniisti ilmoitus virheestä, joka sisältää ehdotuksen yrittää uudelleen pian.
+Kun raporttien lataaminen epäonnistuu, se on pahin mahdollinen skenaario ja varma merkki siitä, että kapasiteetilla on liian vähän muistia ja että se on liian lämmitetty. Näin voi käydä, kun kaikille ladatuille malleille tehdään aktiivinen kysely, joten niitä ei voi häätää, ja kaikki päivitystoiminnot on keskeytetty tai ne ovat viivästyneet. Power BI -palvelu yrittää ladata tietojoukkoa 30 sekunnin ajan, ja käyttäjälle ilmoitetaan virheestä ja häntä pyydetään yrittämään pian uudelleen.
 
-Tällä hetkellä raportin lataus virheiden valvontaan ei ole määritetty mittaria. Voit tunnistaa tämän ongelman potentiaalin seuraamalla järjestelmän muistia, erityisesti korkeinta käyttöä ja korkeinta käyttö aikaa. Suuren tieto joukon häädöt ja pitkä tieto joukon päivityksen keskimääräinen odotus aika voi viitata siihen, että tämä ongelma esiintyy.
+Tällä hetkellä raportin latausvirheiden valvontaan ei ole määritetty mittaria. Voit tunnistaa tämän ongelman mahdollisuuden seuraamalla järjestelmämuistia, erityisesti suurinta käyttöä ja suurimman käytön aikaa. Suuret tietojoukkojen häädöt ja pitkä tietojoukon päivityksen keskimääräinen odotusaika voi viitata siihen, että tämä ongelma on olemassa.
 
-Jos tämä tapahtuu vain hyvin satunnaisesti, tätä ei välttämättä pidetä ensisijaisena ongelmana. Raportin käyttäjille ilmoitetaan, että palvelu on varattu ja että hän yrittää uudelleen lyhyen ajan kuluttua. Jos tämä tapahtuu liian usein, ongelma voidaan selvittää korottamalla Premium-kapasiteettia tai määrittämällä sisältö eri kapasiteettiin.
+Jos tämä tapahtuu vain hyvin satunnaisesti, tätä ei välttämättä pidetä ensisijaisena ongelmana. Raportin käyttäjille ilmoitetaan, että palvelu on varattu ja että heidän kannattaa yrittää uudelleen lyhyen ajan kuluttua. Jos tämä tapahtuu liian usein, ongelma voidaan ratkaista suurentamalla Premium-kapasiteettia tai määrittämällä sisältö eri kapasiteettiin.
 
-Kapasiteetin järjestelmänvalvojat (ja Power BI-palvelu järjestelmänvalvojat) voivat tarkkailla **kyselyiden epäonnistumisista** määritettyä arvoa, jotta voit päätellä, milloin tämä tapahtuu. He voivat myös käynnistää kapasiteetin uudelleen ja nollata kaikki toiminnot järjestelmän ylikuormituksen varalta.
+Kapasiteetin järjestelmänvalvojat (ja Power BI -palvelun järjestelmänvalvojat) voivat tarkkailla **kyselyvirheiden** arvoa ja päätellä sen perusteella, milloin näin tapahtuu. He voivat myös käynnistää kapasiteetin uudelleen ja näin nollata kaikki toiminnot järjestelmän ylikuormituksen varalta.
 
-#### <a name="why-are-refreshes-not-starting-on-schedule"></a>Miksi päivityksiä ei aloiteta aika taulusta?
+#### <a name="why-are-refreshes-not-starting-on-schedule"></a>Miksi päivityksiä ei aloiteta aikataulun mukaisesti?
 
-Ajoitettujen päivitysten alkamis aikoja ei taata. Muista, että Power BI-palvelu priorisoi vuorovaikutteiset toiminnot aina tausta toimintoja varten. Päivitys on tausta toiminto, joka voi ilmetä, kun kaksi ehtoa täyttyy:
+Ajoitettuja päivitysten alkamisaikoja ei taata. Muista, että Power BI -palvelu priorisoi aina vuorovaikutteisia toimintoja taustatoimintoihin verrattuna. Päivitys on taustatoiminto, joka voi ilmetä, kun kaksi ehtoa täyttyy:
 
-- Muisti on riittävä
-- Premium-kapasiteetin tuettujen Samanaikaisten päivitysten määrää ei ylitetä
+- muistia on riittävästi
+- Premium-kapasiteetin tuettujen samanaikaisten päivitysten määrää ei ylitetä.
 
-Kun ehtoja ei täytetä, päivitys on jonossa, kunnes ehdot ovat suotuisat.
+Kun ehdot eivät täyty, päivitys on jonossa, kunnes ehdot ovat suotuisat.
 
-Jos kyseessä on täysi päivitys, muista, että vähintään kaksinkertainen nykyisen tieto joukon muistin koko on pakollinen. Jos tarpeeksi muistia ei ole käytettävissä, päivitys ei voi alkaa, ennen kuin malli häätö vapauttaa muistia – Tämä tarkoittaa viiveitä, kunnes vähintään yksi tieto joukko poistuu käytöstä ja voidaan häätää.
+Jos kyseessä on täysi päivitys, muista, että se edellyttää vähintään kaksinkertaista nykyisen tietojoukon muistin kokoa. Jos muistia ei ole käytettävissä tarpeeksi, päivitys ei voi alkaa, ennen kuin mallin häätö vapauttaa muistia. Viiveitä siis esiintyy, kunnes vähintään yhdestä tietojoukosta tulee passiivinen ja se voidaan häätää.
 
-Muista, että tuettujen Samanaikaisten päivitysten enimmäismäärä on 1,5 kertaa tausta-v-ytimistä pyöristettynä ylöspäin.
+Muista, että samanaikaisten päivitysten tuettu enimmäismäärä on 1,5 kertaa taustan näennäisytimien määrä, pyöristettynä ylöspäin.
 
-Ajoitettu päivitys epäonnistuu, kun sitä ei voi aloittaa ennen seuraavan ajoitetun päivityksen aloittamista. Manuaalisesti käyttö liittymästä käynnistetty pyydettäessä suoritettava päivitys yrittää suorittaa enintään kolme kertaa ennen epäonnistumista.
+Ajoitettu päivitys epäonnistuu, kun sitä ei voi aloittaa ennen seuraavan ajoitetun päivityksen aloittamista. Manuaalisesti käyttöliittymästä käynnistetty pyydettäessä suoritettava päivitys yritetään suorittaa enintään kolme kertaa ennen epäonnistumista.
 
-Kapasiteetin järjestelmänvalvojat (ja Power BI-palvelu järjestelmänvalvojat) voivat seurata **keskimääräisen päivityksen odotus ajan (minuutteina)** mittaria määrittääkseen keskimääräisen viiveen ajoitetun ajan ja toiminnon aloittamisen välillä.
+Kapasiteetin järjestelmänvalvojat (ja Power BI -palvelun järjestelmänvalvojat) voivat seurata **Päivityksen keskimääräinen odotusaika (minuutteina)** -arvoa määrittääkseen keskimääräisen viiveen ajoitetun ajan ja toiminnon aloittamisen välillä.
 
-Vaikka ei yleensä ole järjestelmänvalvojan prioriteetti, jotta voit vaikuttaa ajan tietoihin, varmista, että käytettävissä on tarpeeksi muistia. Tämä saattaa edellyttää tieto joukkojen eristämistä kapasiteetteihin, joiden resurssit ovat riittävät. On myös mahdollista, että järjestelmänvalvojat voivat koordinoida tieto joukon omistajien kanssa, jotta niiden avulla voidaan porrastaa tai vähentää ajoitettujen tietojen päivitys aikoja, jotta törmäykset voidaan minimoida. Ota huomioon, että järjestelmänvalvoja ei voi tarkastella päivitys jonoa tai noutaa tieto joukon ajoituksia.
+Varmista, että käytettävissä on tarpeeksi muistia, jotta voit vaikuttaa ajallaan tehtyihin tietojen päivityksiin, vaikka tämä ei yleensä olekaan järjestelmänvalvojan prioriteettina. Tämä saattaa edellyttää tietojoukkojen eristämistä kapasiteetteihin, joiden resurssit ovat varmasti riittävät. On myös mahdollista, että järjestelmänvalvojat voivat koordinoida tieto joukon omistajien kanssa, jotta niiden avulla voidaan porrastaa tai vähentää ajoitettujen tietojen päivitys aikoja, jotta törmäykset voidaan minimoida. Ota huomioon, että järjestelmänvalvoja ei voi tarkastella päivitys jonoa tai noutaa tieto joukon ajoituksia.
 
 #### <a name="why-are-refreshes-slow"></a>Miksi päivitykset ovat hitaita?
 
-Päivitykset voivat olla hitaita, tai ne koetaan hitaiksi (edellisten yleisten kysymysten osoitteina).
+Päivitykset voivat olla hitaita, tai ne koetaan hitaiksi (asia, jota käsiteltiin edellisessä yleisessä kysymyksessä).
 
-Kun päivitys on itse asiassa hidasta, se voi johtua useista syistä:
+Kun päivitys on hidasta, se voi johtua useista syistä:
 
 - SUORITIN ei riitä (päivitys voi olla hyvin SUORITINTA vaativa)
 - Muisti ei riitä, mikä aiheuttaa päivityksen keskeyttämisen (joka edellyttää, että päivitys aloitetaan alusta, kun olosuhteet ovat suotuisat uudelleen)
 - Muun kuin kapasiteetin syyt, mukaan lukien tieto lähde järjestelmän reagointi kyky, verkon viive, Virheelliset käyttö oikeudet tai yhdyskäytävän suoritus kyky
 - Tietojen määrä – hyvä syy määrittää lisäävä päivitys, kuten alla on kuvattu
 
-Kapasiteetin järjestelmänvalvojat (ja Power BI-palvelu järjestelmänvalvojat) voivat valvoa **keskimääräistä päivitys kestoa (minuuttia)** määrittääkseen vertailu pisteen vertailuun ajan mittaan ja **keskimääräisen viiveen (minuutteina)** , joka määrää Keski arvon viiveellä Keskimääräinen viive ajoitetun ajan ja toiminnon alun välillä.
+Kapasiteetin järjestelmänvalvojat (ja Power BI -palvelun järjestelmänvalvojat) voivat seurata **Päivityksen keskimääräinen kesto (minuutteina)** -arvoa määrittääkseen vertailuarvon ajan kuluessa tehtävään vertailuun sekä **Päivityksen keskimääräinen odotusaika (minuutteina)** -arvoa määrittääkseen keskimääräisen viiveen ajoitetun ajan ja toiminnon aloittamisen välillä.
 
-Lisäävä päivitys voi vähentää huomattavasti tietojen päivittämisen kestoa etenkin suurissa malli taulukoissa. Lisäävä Refresh-päivitykseen liittyy neljä etua:
+Lisäävä päivitys voi vähentää huomattavasti tietojen päivittämisen kestoa etenkin suurissa mallitaulukoissa. Lisäävään päivitykseen liittyy neljä etua:
 
 - **Päivitykset ovat nopeampia** : Vain taulukon alijoukko tarvitsee lataamista, vähentää suorittimen ja muistin käyttöä, ja rinnakkaisuus voi olla suurempi päivitettäessä useita osioita
 - **Päivitykset tapahtuvat vain tarvittaessa** : Lisäävän päivityksen käytännöt voidaan määrittää lataamaan vain, kun tiedot ovat muuttuneet
@@ -593,14 +593,14 @@ Lisäävä päivitys voi vähentää huomattavasti tietojen päivittämisen kest
 
 Lisä tietoja on Power BI Premium-asia kirjan [lisäävää päivitystä käsittelevässä kohdassa](service-premium-incremental-refresh.md) .
 
-#### <a name="why-are-data-refreshes-not-completing"></a>Miksi tietojen päivityksiä ei tehdä loppuun?
+#### <a name="why-are-data-refreshes-not-completing"></a>Miksi tietojen päivityksiä ei suoriteta loppuun?
 
-Kun tietojen päivitys alkaa, mutta se ei ole valmis, syynä voi olla useita syitä:
+Kun tietojen päivitykset aloitetaan, mutta ne eivät valmistu, se voi johtua useista syistä:
 
 - Muisti ei riitä, vaikka Premium-kapasiteetissa on vain yksi malli, eli mallin koko on hyvin suuri
 - Muun kuin kapasiteetin syyt, mukaan lukien tieto lähde järjestelmän yhteyden katkaiseminen, Virheelliset käyttö oikeudet tai yhdyskäytävävirhe
 
-Kapasiteetin järjestelmänvalvojat (ja Power BI-palvelu järjestelmänvalvojat) voivat valvoa **päivityksen virheitä** , jotka ovat muisti mittarin ulkopuolella.
+Kapasiteetin järjestelmänvalvojat (ja Power BI -palvelun järjestelmänvalvojat) voivat tarkkailla **Muistin loppumisen vuoksi epäonnistuneet päivitykset** -arvoa.
 
 #### <a name="why-are-ai-calls-failing"></a>Miksi AI-kutsut epäonnistuvat?
 
@@ -610,97 +610,97 @@ Järjestelmänvalvojien tulee valvoa AI-odotus aikoja muiden pyyntöjen varalta.
 
 ### <a name="optimizing-models"></a>Optimoidaan malleja
 
-Optimaalisen mallin suunnittelu on ratkaisevaa tehokkaan ja skaalattavan ratkaisun toimittamiseksi. Koko keskustelu on kuitenkin tämän raportti alueen ulkopuolella. Sen sijaan tässä osiossa annetaan avain alueita harkintaa varten, kun malleja optimoidaan.
+Mallin optimaalinen suunnittelu on hyvin tärkeää tehokkaan ja skaalattavan ratkaisun saamisessa. Koko keskustelu on kuitenkin tämän raportti alueen ulkopuolella. Sen sijaan tässä osiossa annetaan kerrotaan tärkeimmistä aiheista mallien optimoinnin suhteen.
 
 #### <a name="optimizing-power-bi-hosted-models"></a>Power BI isännöityjen mallien optimoiminen
 
 Premium-kapasiteettiin isännöityjen mallien optimoiminen voidaan toteuttaa tieto lähteissä ja malli kerroksissa.
 
-Harkitse tuonti mallin optimointi mahdollisuuksia:
+Mieti tuontimallin optimointimahdollisuuksia:
 
-![Tuonti mallin optimointi mahdollisuudet](media/whitepaper-premium-deployment/import-model-optimizations.png)
+![Tuontimallin optimointimahdollisuudet](media/whitepaper-premium-deployment/import-model-optimizations.png)
 
 Tieto lähde kerroksessa:
 
 - Relaatio tieto lähteet voidaan optimoida siten, että ne varmistavat nopeimman mahdollisen päivityksen integroimalla tiedot, ottamalla käyttöön sopivia indeksejä, määrittämällä lisääviin päivitys jaksoihin tasattavat taulukko osiot ja laskemalla lasku toimitukset (laskettujen malli taulukot ja-sarakkeet) tai laskenta logiikan lisääminen näkymiin
 - Muut kuin relaatio tieto lähteet voidaan integroida aiemmin relaatio säilöihin
-- Varmista, että yhdyskäytävissä on tarpeeksi resursseja, mieluiten erillisissä koneissa, joissa on riittävä verkon kaistan leveys ja jotka ovat lähellä tieto lähteitä
+- Varmista, että yhdyskäytävissä on tarpeeksi resursseja, mieluiten erillisissä koneissa, joissa on riittävä verkon kaistanleveys ja jotka ovat lähellä tietolähteitä.
 
-Malli kerroksessa:
+Mallikerroksessa:
 
-- Power Query kysely mallit voivat pienentää tai poistaa monimutkaisia muunnoksia ja etenkin ne, jotka yhdistävät eri tieto lähteitä (tieto varastot ovat saavutettavissa Extract-Transform-Load-vaiheen aikana). Sen varmistaminen, että asianmukaiset tieto lähteen tieto suoja tasot on myös valittu, tämä voi estää Power BI lataamisen koko naisia tuloksia, jotta kyselyjen yhteenlaskettu tulos voidaan tuottaa.
-- Malli rakenne määrittää ladattavat tiedot ja vaikuttaa suoraan mallin kokoon. Se voidaan suunnitella siten, että vältetään tarpeettomien tietojen lataaminen poistamalla sarakkeita, poistamalla rivejä (erityisesti historialliset tiedot) tai lataamalla Yhteenveto tietoja (yksityiskohtaisten tietojen lataamisen kustannuksella). Dramaattinen koon pienentäminen onnistuu poistamalla suuren kardinaliteetin sarakkeet (erityisesti teksti sarakkeet), jotka eivät Tallenna tai pakkaa erittäin tehokkaasti.
-- Malli kyselyn suoritus tehoa voidaan parantaa määrittämällä yksisuuntaisuuden suhteita, ellei kaksisuuntainen suodatus Salli pakottavaa syytä. Harkitse myös CROSSFILTER-toiminnon käyttämistä kaksisuuntaisen suodatuksen sijaan.
-- Koostamis taulukot voivat saavuttaa nopeat kysely vastaukset lataamalla esitiivistetyt tiedot, mutta tämä kasvattaa mallin kokoa ja aiheuttaa pidempiä päivitys aikoja. Yleensä kooste taulukot tulee varata erittäin suurille malleille tai yhdistelmä malli malleille.
-- Lasketut taulukot ja sarakkeet lisäävät mallin kokoa ja johtavat pidempiin päivitys aikoihin. Yleensä pienempi tallennus tilan koko ja nopeampi päivitys aika voidaan saavuttaa, kun tiedot toteutuvat tai lasketaan tieto lähteessä. Jos tämä ei ole mahdollista, Power Query mukautettujen sarakkeiden avulla voidaan tarjota parannettu tallennus tilan pakkaus.
-- DAX-lausekkeiden säätäminen mitta yksiköitä ja RLS-sääntöjä varten saattaa olla mahdollista, ehkäpä logiikan kirjoittamista uudelleen, jotta vältetään kalliit kaavat
-- Lisäävä päivitys voi merkittävästi lyhentää päivitys aikaa ja säästää muistia ja SUORITINTA. Lisäävä päivitys voidaan myös määrittää poistamaan historialliset tietojen säilö mallin koot.
-- Malli voidaan luoda uudelleen kahdeksi malleiksi, kun kysely malleja on eri ja ristiriitaisia. Jotkin raportit esimerkiksi esittävät korkean tason aggregaatteja koko historiassa, ja ne kestävät 24 tunnin viiveen. Muut raportit koskevat nykypäivän tietoja ja edellyttävät yksilöllisten tapahtumien käyttöä. Sen sijaan, että suunnittelisit yksittäisen mallin täyttämään kaikki raportit, luo kaksi mallia, jotka on optimoitu kullekin vaatimukselle.
+- Power Query -kyselymallit voivat pienentää tai poistaa monimutkaisia muunnoksia ja etenkin niitä, jotka yhdistävät eri tietolähteitä (tietovarastot saavuttavat tämän Poimi-Muunna-Lataa-vaiheen aikana). Sen varmistaminen, että asianmukaiset tieto lähteen tieto suoja tasot on myös valittu, tämä voi estää Power BI lataamisen koko naisia tuloksia, jotta kyselyjen yhteenlaskettu tulos voidaan tuottaa.
+- Mallirakenne määrittää ladattavat tiedot ja vaikuttaa suoraan mallin kokoon. Se voidaan suunnitella siten, että vältetään tarpeettomien tietojen lataaminen poistamalla sarakkeita, poistamalla rivejä (erityisesti historiallisia tietoja) tai lataamalla yhteenvedettyjä tietoja (yksityiskohtaisten tietojen lataamisen kustannuksella). Koon merkittävä pienentäminen onnistuu poistamalla suuren kardinaliteetin sarakkeet (erityisesti tekstisarakkeet), joita ei voi tallentaa tai pakata kovin tehokkaasti.
+- Mallikyselyn suorituskykyä voidaan parantaa määrittämällä yksisuuntaisia suhteita, ellei kaksisuuntaisen suodatuksen sallimiseen ole pakottavaa syytä. Harkitse myös CROSSFILTER-toiminnon käyttämistä kaksisuuntaisen suodatuksen sijaan.
+- Koostamistaulukot voivat saavuttaa nopeita kyselyvastauksia lataamalla ennalta yhteenvedetyt tiedot, mutta tämä kuitenkin kasvattaa mallin kokoa ja pidentää päivitysaikoja. Yleensä koostetaulukot tulee varata erittäin suurille malleille tai yhdistelmämalleille.
+- Lasketut taulukot ja sarakkeet lisäävät mallin kokoa ja pidentävät päivitysaikoja. Yleensä pienempi tallennus tilan koko ja nopeampi päivitys aika voidaan saavuttaa, kun tiedot toteutuvat tai lasketaan tieto lähteessä. Jos tämä ei ole mahdollista, Power Queryn mukautettujen sarakkeiden avulla voidaan parantaa tallennustilan pakkausta.
+- DAX-lausekkeiden säätäminen mittareita ja RLS-sääntöjä varten saattaa olla mahdollista, ehkäpä logiikan kirjoittamisella uudelleen kalliiden kaavojen välttämiseksi.
+- Lisäävä päivitys voi merkittävästi lyhentää päivitysaikaa ja säästää muistia ja suoritinta. Lisäävä päivitys voidaan myös määrittää poistamaan historialliset tiedot, jolloin mallien koot pysyvät rajattuina.
+- Malli voidaan suunnitella uudelleen kahtena mallina, kun kyselymallit poikkeavat toisistaan ja ovat ristiriitaisia. Jotkin raportit esimerkiksi esittävät korkean tason koosteita koko historiassa, ja ne kestävät 24 tunnin viiveen. Toiset raportit koskevat nykypäivän tietoja ja edellyttävät yksilöllisten tapahtumien vaiheittaista käyttöä. Sen sijaan, että suunnittelisit yksittäisen mallin täyttämään kaikkien raporttien tarpeet, voit luoda kaksi mallia, jotka on optimoitu kullekin vaatimukselle.
 
-Harkitse DirectQuery-mallin optimointi mahdollisuuksia. Koska malli antaa kysely pyyntöjä pohjana olevalle tieto lähteelle, tieto lähteen optimointi on tärkeää reagoivien malli kyselyiden toimittamiseen.
+Mieti DirectQuery-mallin optimointimahdollisuuksia. Koska malli antaa kysely pyyntöjä pohjana olevalle tieto lähteelle, tieto lähteen optimointi on tärkeää reagoivien malli kyselyiden toimittamiseen.
 
- ![DirectQuery-mallin optimointi mahdollisuudet](media/whitepaper-premium-deployment/direct-query-model-optimizations.png)
+ ![DirectQuery-mallin optimointimahdollisuudet](media/whitepaper-premium-deployment/direct-query-model-optimizations.png)
 
 Tieto lähde kerroksessa:
 
 - Tieto lähde voidaan optimoida siten, että se varmistaa mahdollisimman nopeimman tietojen integroinnin (joka ei ole mahdollista malli kerroksessa) ja käyttää sopivia indeksejä, määrittää taulukko osioita ja muodostaa Yhteenveto tietoja (Indeksoituja näkymiä). pienennetään laskennan määrää. Paras käyttö kokemus saavutetaan, kun läpi vienti kyselyt tarvitsevat vain suodattimia ja suorittavat sisäisiä liitoksia indeksoitujen taulu koiden tai näkymien välillä.
 - Varmista, että yhdyskäytävissä on tarpeeksi resursseja, mieluiten erillisissä koneissa, joilla on riittävä verkon kaistan leveys ja jotka ovat lähellä tieto lähdettä
 
-Malli kerroksessa:
+Mallikerroksessa:
 
 - Power Query kysely suunnitelmien tulee mieluiten koskea ei muunnoksia – muussa tapa uksessa yritys pitää muunnokset ehdottomana vähimmäistekijänä
-- Malli kyselyn suoritus tehoa voidaan parantaa määrittämällä yksisuuntaisuuden suhteita, ellei kaksisuuntainen suodatus Salli pakottavaa syytä. Myös malli yhteydet tulee määrittää niin, että viite-eheys on pakotettu (kun näin on), ja tuloksena on tieto lähde kyselyitä, jotka käyttävät tehokkaampia sisäisiä liitoksia (Ulkoliitosten sijaan).
+- Mallikyselyn suorituskykyä voidaan parantaa määrittämällä yksisuuntaisia suhteita, ellei kaksisuuntaisen suodatuksen sallimiseen ole pakottavaa syytä. Myös malli yhteydet tulee määrittää niin, että viite-eheys on pakotettu (kun näin on), ja tuloksena on tieto lähde kyselyitä, jotka käyttävät tehokkaampia sisäisiä liitoksia (Ulkoliitosten sijaan).
 - Vältä Power Query kyselyn mukautettujen sarakkeiden tai mallin laskettua saraketta-toteutuvat nämä tieto lähteessä, kun se on mahdollista
-- DAX-lausekkeiden säätäminen mitta yksiköitä ja RLS-sääntöjä varten saattaa olla mahdollista, ehkäpä logiikan kirjoittamista uudelleen, jotta vältetään kalliit kaavat
+- DAX-lausekkeiden säätäminen mittareita ja RLS-sääntöjä varten saattaa olla mahdollista, ehkäpä logiikan kirjoittamisella uudelleen kalliiden kaavojen välttämiseksi.
 
-Harkitse yhdistelmä mallin optimointi mahdollisuuksia. Muista, että yhdistelmä malli mahdollistaa tuonti-ja DirectQuery-taulu koiden yhdistelmän.
+Mieti yhdistelmämallin optimointimahdollisuuksia. Muista, että yhdistelmämalli mahdollistaa tuonti- ja DirectQuery-taulukoiden yhdistelmän.
 
 ![Yhdistelmä mallin optimointi mahdollisuudet](media/whitepaper-premium-deployment/composite-model-optimizations.png)
 
 - Yleensä tuonti-ja DirectQuery-mallien optimointi aiheet koskevat yhdistelmä malli taulukoita, jotka käyttävät näitä tallennus tiloja.
-- Pyri yleensä tasapainoiseen muotoiluun määrittämällä dimensio tyyppi taulukoita (jotka edustavat yritys entiteettejä) Kaksoistallennustilassa ja fakta tyyppi taulukkoina (usein suuret taulukot, jotka edustavat toiminnallisia tosiasioita) DirectQuery-tallennus tilana. Dual Storage-tila tarkoittaa sekä tuonti-että DirectQuery-tallennus tilaa, ja tämän avulla Power BI-palvelu voi määrittää tehokkaimman tallennus tilan, jota käytetään luotaessa alkuperäisen kyselyn läpi vienti.
-- Varmista, että yhdyskäytävissä on tarpeeksi resursseja, mieluiten erillisissä koneissa, joissa on riittävä verkon kaistan leveys ja jotka ovat lähellä tieto lähteitä
-- Tuonnin tallennus tilaksi määritetyt kooste taulukot voivat antaa dramaattisia kyselyjen suoritus kyky parannuksia, kun niitä käytetään Yhteenvetona DirectQuery-tallennus tilan fakta tyyppi taulukoiden yhteenvedon kanssa. Tässä tapa uksessa koostamis taulukot lisäävät mallin kokoa ja lisäävät päivitys aikaa, ja usein tämä on hyväksyttävä kompromissi nopeampien kyselyiden tekemistä varten.
+- Pyri yleensä tasapainoiseen muotoiluun määrittämällä dimensiotyyppisiä taulukoita (jotka edustavat yritysentiteettejä) Kaksois-tallennustilana ja faktatyypin taulukkoja (usein suuria taulukoita, jotka edustavat toiminnallisia faktoja) DirectQuery-tallennustilana. Dual Storage-tila tarkoittaa sekä tuonti-että DirectQuery-tallennus tilaa, ja tämän avulla Power BI-palvelu voi määrittää tehokkaimman tallennus tilan, jota käytetään luotaessa alkuperäisen kyselyn läpi vienti.
+- Varmista, että yhdyskäytävissä on tarpeeksi resursseja, mieluiten erillisissä koneissa, joissa on riittävä verkon kaistanleveys ja jotka ovat lähellä tietolähteitä.
+- Tuonti-tallennustilaksi määritetyt koostetaulukot voivat parantaa kyselyjen suorituskykyä huomattavasti, kun niitä käytetään yhteenvedon tekemiseen DirectQuery-tallennustilan faktatyypin taulukoista. Tässä tapauksessa koostetaulukot lisäävät mallin kokoa ja pidentävät päivitysaikaa, ja usein tämä on hyväksyttävä kompromissi kyselyjen nopeuttamiseksi.
 
 #### <a name="optimizing-externally-hosted-models"></a>Ulkoisesti isännöityjen mallien optimointi
 
-Monet [optimoinnista Power BI isännöidyissä malleissa](#optimizing-power-bi-hosted-models) käsitellyt optimointi mahdollisuudet koskevat myös Azure Analysis Services ja SQL Server Analysis Services kehitettyjä malleja. Selkeät poikkeukset ovat tiettyjä ominaisuuksia, joita ei tällä hetkellä tueta, mukaan lukien yhdistelmä mallit ja kooste taulukot.
+Monet [optimoinnista Power BI isännöidyissä malleissa](#optimizing-power-bi-hosted-models) käsitellyt optimointi mahdollisuudet koskevat myös Azure Analysis Services ja SQL Server Analysis Services kehitettyjä malleja. Selkeät poikkeukset ovat tiettyjä ominaisuuksia, joita ei tällä hetkellä tueta, mukaan lukien yhdistelmämallit ja koostetaulukot.
 
-Ulkoisesti isännöityjen tieto joukkojen lisä vastike on tieto kannan isännöinti suhteessa Power BI-palvelu. Azure Analysis Services Tämä tarkoittaa sitä, että Azure-resurssi luodaan samalla alueella kuin Power BI vuokraaja (koti alue). Jos kyseessä on IAS-SQL Server Analysis Services, tämä tarkoittaa sitä, että NÄENNÄISKONE on isännöitynä samalla alueella ja paikallisesti, mikä tarkoittaa tehokkaan yhdyskäytävän määrittämisen varmistamista.
+Lisäksi ulkoisesti isännöidyn tietojoukon kohdalla kannattaa ottaa huomioon tietokannan isännöinti suhteessa Power BI -palveluun. Jos kyseessä on Azure Analysis Services, Azure-resurssi luodaan samalla alueella kuin Power BI -vuokraaja (kotialue). Jos kyseessä on SQL Server Analysis Services ja IaaS, näennäiskonetta isännöidään samalla alueella, ja jos kyseessä on paikallinen, varmistetaan tehokas yhdyskäytävän määrittäminen.
 
-Sivuun voi olla kiinnostavaa huomata, että Azure Analysis Services tieto kannat ja SQL Server Analysis Services taulukko tieto kannat edellyttävät, että niiden mallit ladataan kokonaan muistiin ja että ne pysyvät siellä aina, kun ne tukevat kyselyä. Kuten Power BI-palvelu, on oltava riittävästi muistia päivitettäväksi, jos mallin on pysyttävä online-aikana päivityksen aikana. Toisin kuin Power BI-palvelu, ei ole mitään käsitystä siitä, että mallit olisivat automaattisesti vanhennettu muistissa käyttö tavan mukaan. Power BI Premium tarjoaa näin ollen entistä tehokkaamman lähestymis tavan mallin kyselyiden maksimoimiseen käyttäen pienempää muistin käyttöä.
+Voi olla myös kiinnostavaa huomata, että Azure Analysis Servicesin tietokannat ja SQL Server Analysis Servicesin taulukkotietokannat edellyttävät, että niiden mallit ladataan kokonaan muistiin ja että ne pysyvät siellä aina tukemassa kyselyä. Power BI -palvelun tapaan muistia on oltava riittävästi päivittämiseen, jos mallin on pysyttävä online-tilassa päivityksen aikana. Kuitenkin toisin kuin Power BI -palvelussa, mallit eivät automaattisesti vanhene muistissa käytön mukaan. Power BI Premium tarjoaa näin ollen tehokkaamman lähestymistavan mallin kyselyiden maksimoimiseen pienemmällä muistin käytöllä.
 
 ### <a name="capacity-planning"></a>Kapasiteetin suunnittelu
 
-Premium-kapasiteetin koko määrittää sen käytettävissä olevan muisti-ja suoritin resurssit sekä kapasiteettiin asetetut rajoitukset. Premium-kapasiteettien määrä on myös vastike, sillä useiden Premium-kapasiteettien luominen voi auttaa eristämään kuormitukset toisistaan. Huomioi, että tallennus tila on 100 TB per kapasiteetti solmu, ja tämä on todennäköisesti enemmän kuin riittävä työmäärä.
+Premium-kapasiteetin koko määrittää sen käytettävissä olevat muisti- ja suoritinresurssit sekä kapasiteettiin asetetut rajoitukset. Premium-kapasiteettien määrä kannattaa myös huomioida, sillä useiden Premium-kapasiteettien luominen voi auttaa eristämään kuormitukset toisistaan. Huomioi, että tallennustila on 100 Tt kapasiteetin solmua kohden, ja tämä todennäköisesti riittää hyvin mille tahansa työmäärälle.
 
-Premium-kapasiteettien koon ja määrän selvittäminen voi olla haastavaa erityisesti luomiesi alkuperäisten kapasiteettien osalta. Ensimmäinen vaihe, kun kapasiteetin koon määrittäminen käsittää keskimääräisen työmäärän, joka edustaa odotettua päivittäisestä käytöstä. On tärkeää ymmärtää, että kaikki kuormitukset eivät ole yhtä suuret. Esimerkiksi – yhden yksittäisen visualisoinnin sisältävän yksittäisen raportti sivun avulla voidaan helposti saavuttaa yksi spektri-100: n rinnakkaiset käyttäjät. Kuitenkin-toisessa päässä Spectrum-100 samanaikaista käyttäjää, jotka käyttävät 100 eri raporttia, joista jokaisella on 100 visualisoinnit raportti sivulla, tulee tekemään hyvin erilaisia vaatimuksia kapasiteetti resursseilta.
+Premium-kapasiteettien koon ja määrän määrittäminen voi olla haastavaa erityisesti ensimmäisten luomiesi kapasiteettien kohdalla. Ensimmäinen vaihe kapasiteetin koon määrittämisessä on ymmärtää keskimääräinen kuormitus, joka edustaa odotettua päivittäistä käyttöä. On tärkeää ymmärtää, että kaikki kuormitukset eivät ole yhtä suuret. Yhdessä ääripäässä voi olla esimerkiksi 100 samanaikaista käyttäjää, jotka käyttävät yhden visualisoinnin sisältävää raporttisivua – tämä on helposti toteutettavissa. Toisessa ääripäässä voi kuitenkin olla 100 samanaikaista käyttäjää, jotka käyttävät 100 eri raporttia, ja raporttisivulla on 100 visualisointia – tämä edellyttää kapasiteetin resursseilta paljon enemmän.
 
-Kapasiteetin järjestelmänvalvojien on siis harkittava monia ympäristöösi, sisällöösi ja odotettuun käyttöön liittyviä tekijöitä. Ensisijaisena tavoitteena on maksimoida kapasiteetin käyttö aste ja antaa samalla yhtenäiset kysely ajat, hyväksyttävät odotus ajat ja häätö hinnat. Huomioon otettavia seikkoja voivat olla seuraavat:
+Kapasiteetin järjestelmänvalvojien on siis otettava huomioon monia ympäristöösi, sisältöösi ja odotettuun käyttöön liittyviä tekijöitä. Ensisijaisena tavoitteena on maksimoida kapasiteetin käyttöaste ja antaa samalla yhtenäiset kyselyajat sekä hyväksyttävät odotusajat ja häätömäärät. Huomioon otettavia seikkoja voivat olla seuraavat:
 
-- **Mallin koko ja tietojen ominaisuudet** : Tuonti mallit on ladattava kokonaan muistiin, jotta kyselyjä voidaan tehdä tai päivittää. LC/DQ-tieto joukot voivat edellyttää huomattavaa suoritin aikaa ja mahdollisesti merkittävää muistia monimutkaisten mitta yksiköiden tai RLS-sääntöjen arvioimiseen. Kapasiteetin koko rajoittaa muistin ja suorittimen kokoa sekä LC/DQ-kyselyn suoritus nopeutta.
-- **Samanaikaiset aktiiviset mallit** : Eri tuonti mallien samanaikaiset kyselyt antavat parhaan vaste ajan ja suoritus kyvyn, kun ne pysyvät muistissa. Muistin on oltava tarpeeksi, jotta kaikki voimakkaasti kyselyn kohteena olevat mallit voidaan isännöidä, ja lisä muistia niiden päivittämiseksi.
-- **Tuo mallin päivitys** : Päivitys tyyppi (täysi tai lisäävä), Power Query kyselyiden kesto ja monimutkaisuus sekä lasketun taulukon/sarakkeen logiikka voi vaikuttaa muistiin ja erityisesti suorittimen käyttöön. Kapasiteetin koko (1,5 x tausta v-ydintä, pyöristettynä) on rajoittanut samanaikaisia päivityksiä.
-- **Samanaikaiset kyselyt** : Monet samanaikaiset kyselyt voivat aiheuttaa reagoimattoman raportin, kun suoritin-tai LC/DQ-yhteydet ylittävät kapasiteetti rajan. Tämä koskee etenkin raportti sivuja, jotka sisältävät useita visualisointeja.
+- **Mallin koko ja tietojen ominaisuudet** : Tuonti mallit on ladattava kokonaan muistiin, jotta kyselyjä voidaan tehdä tai päivittää. LC/DQ-tietojoukot saattavat edellyttää huomattavasti suoritinaikaa ja mahdollisesti merkittävästi muistia monimutkaisten mittareiden tai RLS-sääntöjen arvioimiseksi. Kapasiteetin koko rajoittaa muistin ja suorittimen kokoa sekä LC/DQ-kyselyn siirtomäärää.
+- **Samanaikaiset aktiiviset mallit** : Eri tuonti mallien samanaikaiset kyselyt antavat parhaan vaste ajan ja suoritus kyvyn, kun ne pysyvät muistissa. Muistia on oltava riittävästi kaikkien useiden kyselyjen kohteena olevien mallien isännöintiin, ja lisämuisti on tarpeen niiden päivittämistä varten.
+- **Tuo mallin päivitys** : Päivitys tyyppi (täysi tai lisäävä), Power Query kyselyiden kesto ja monimutkaisuus sekä lasketun taulukon/sarakkeen logiikka voi vaikuttaa muistiin ja erityisesti suorittimen käyttöön. Kapasiteetin koko (1,5 kertaa taustan näennäisytimien määrä, pyöristettynä ylöspäin) rajoittaa samanaikaisia päivityksiä.
+- **Samanaikaiset kyselyt** : Monet samanaikaiset kyselyt voivat aiheuttaa reagoimattoman raportin, kun suoritin-tai LC/DQ-yhteydet ylittävät kapasiteetti rajan. Tämä koskee etenkin raporttisivuja, jotka sisältävät useita visualisointeja.
 - **Dataflow-, sivutetut raportit-ja AI-Funktiot** : Kapasiteetti voidaan määrittää tuke massa dataflow-, sivutettuja raportteja-ja AI-funktioita, joista jokainen edellyttää määritettävissä olevaa enimmäisprosenttiosuutta kapasiteetti muistista. Muisti jaetaan dynaamisesti dataflow-kohteeseen, mutta se on määritetty staattisesti sivutettuihin raportteihin ja AI-kuormitukseen.
 
-Näiden tekijöiden lisäksi kapasiteetin järjestelmänvalvojat voivat harkita useiden kapasiteettien luomista. Useat kapasiteetit mahdollistavat kuormituksen eristämisen, ja ne voidaan määrittää varmistamaan, että ensisijaisilla kuormituksilla on taatut resurssit. Voit esimerkiksi luoda kaksi kapasiteettia, jotka erottavat liiketoimintakriittisiä työmääriä omatoimisen BI:n (SSBI) kuormituksista. Liike toiminnan kannalta kriittisen kapasiteetin avulla voidaan eristää suuria yritys malleja, jotka antavat niille riittävät resurssit, jolloin käyttö oikeus myönnetään vain IT-osastolle. SSBI-kapasiteetin avulla voidaan isännöidä kasvavaa määrää pienempiä malleja, joilla on käyttö oikeus yritys analyytikoille. SSBI-kapasiteetti voi toisinaan kokea kyselyn tai päivityksen odotus tilassa, jotka ovat siedettäviä.
+Näiden tekijöiden lisäksi kapasiteetin järjestelmänvalvojat voivat harkita useiden kapasiteettien luomista. Useat kapasiteetit mahdollistavat kuormituksen eristämisen, ja ne voidaan määrittää varmistamaan, että ensisijaisilla kuormituksilla on taatut resurssit. Voit esimerkiksi luoda kaksi kapasiteettia erottamaan liiketoiminnan kannalta tärkeät kuormitukset omatoimisen BI:n (SSBI) kuormituksista. Liiketoiminnan kannalta tärkeän kapasiteetin avulla voidaan eristää suuria yritysmalleja, jolloin ne saavat taatut resurssit ja käyttöoikeus myönnetään vain IT-osastolle. SSBI-kapasiteetin avulla voidaan isännöidä kasvavaa määrää pienempiä malleja, ja käyttöoikeus myönnetään yritysanalyytikoille. SSBI-kapasiteetti voi toisinaan esiintyä kyselyn tai päivityksen viiveitä, jotka ovat siedettäviä.
 
-Kapasiteetin järjestelmänvalvojat voivat ajan mittaan tasapainottaa työtiloja kapasiteetissa siirtämällä sisältöä työtilojen välillä tai työtilojen välillä kapasiteettien välillä ja skaalaamalla kapasiteettia ylös-tai alaspäin. Yleensä voit isännöidä suurempia malleja, joita skaalaat ylös, ja suurempaan samanaikaisuuteen.
+Kapasiteetin järjestelmänvalvojat voivat ajan mittaan tasapainottaa työtiloja eri kapasiteeteissa siirtämällä sisältöä työtilojen välillä tai työtiloja kapasiteettien välillä sekä suurentamalla tai pienentämällä kapasiteetteja. Yleensä voit isännöidä suurempia malleja, joita skaalaat ylös, ja suurempaan samanaikaisuuteen.
 
-Muista, että lisenssin ostaminen antaa vuokra ajalle v-ytimiä. **P3** -tila uksen oston avulla voidaan luoda yksi tai enintään neljä Premium-kapasiteettia eli 1 x P3 tai 2 x P2 tai 4 x P1. Ennen kuin P2-kapasiteetti muunnetaan P3-kapasiteettiin, voidaan harkita v-ytimien jakamista kahden P1-kapasiteetin luomi seksi.
+Muista, että käyttöoikeuden ostaminen antaa vuokraajalle näennäisytimiä. **P3**-tilauksella voidaan luoda yksi tai enintään neljä Premium-kapasiteettia eli 1 x P3 tai 2 x P2 tai 4 x P1. Lisäksi ennen kuin P2-kapasiteetti muunnetaan P3-kapasiteettiin, kannattaa harkita näennäisytimien jakamista kahden P1-kapasiteetin luomiseksi.
 
 ### <a name="testing-approaches"></a>Testaus menetelmät
 
-Kun kapasiteetin koko on päätetty, testaaminen voidaan tehdä luomalla hallittu ympäristö. Käytännöllinen ja taloudellinen vaihto ehto on luoda Azure (SKU)-kapasiteetti ja huomata, että P1-kapasiteetti on samankokoinen kuin A4-kapasiteetti. P2-ja P3-kapasiteeteilla on sama koko kuin A5-ja A6-kapasiteeteilla. Azure-kapasiteetit voidaan luoda nopeasti ja laskuttaa tunneittain. Kun testaus on valmis, ne voidaan poistaa helposti, jolloin kustannukset eivät enää Kerry.
+Kun kapasiteetin koko on päätetty, testaaminen voidaan suorittaa luomalla hallittu ympäristö. Käytännöllinen ja taloudellinen vaihtoehto on luoda Azure (A-SKU) -kapasiteetti. Huomaa, että P1-kapasiteetti on samankokoinen kuin A4-kapasiteetti, P2-kapasiteetti samankokoinen kuin A5-kapasiteetti P3-kapasiteetti samankokoinen kuin A6-kapasiteetti. Azure-kapasiteetit voidaan luoda nopeasti, ja niistä laskutetaan tunneittain. Joten kun testaus on valmis, ne voidaan poistaa helposti, jolloin kustannuksia ei enää kerry.
 
-Testi sisältö voidaan lisätä Azure-kapasiteetissa luotuihin työtiloihin, minkä jälkeen yksittäinen käyttäjä voi suorittaa raportteja ja luoda kyselyitä realistisella ja edustavilla työkuormituksella. Jos tuonti malleja on, myös kunkin mallin päivitys on suoritettava. Valvonta työkaluilla voidaan sitten tarkistaa kaikki mittarit ja ymmärtää resurssien käyttöä.
+Testisisältö voidaan lisätä Azure-kapasiteetissa luotuihin työtiloihin, minkä jälkeen yksittäinen käyttäjä voi suorittaa raportteja ja luoda kyselyistä realistisen ja edustavan kuormituksen. Jos käytössä on tuontimalleja, kunkin mallin kohdalla on myös suoritettava päivitys. Valvontatyökaluilla voidaan sitten tarkistaa kaikki arvot resurssien käytön ymmärtämiseksi.
 
-On tärkeää, että testit ovat toistettavissa: Testit tulee suorittaa useita kertoja, ja niiden pitäisi antaa suunnilleen sama tulos joka kerta. Näiden tulosten Keski arvoa voidaan käyttää työmäärän ekstrapoloimiseksi ja arvioimiseksi todellisten tuotanto ehtojen mukaisesti.
+On tärkeää, että testit ovat toistettavissa: Testit tulee suorittaa useita kertoja, ja niiden pitäisi antaa suunnilleen sama tulos joka kerta. Näiden tulosten keskiarvoa voidaan käyttää kuormituksen määrittämiseen ja arvioimiseen todellisissa tuotanto-olosuhteissa.
 
-Jos sinulla on jo kapasiteettia ja raportteja, joille haluat ladata testin, voit luoda nopeasti lataus testin [PowerShell-kuormituksen luonti työkalun](https://aka.ms/PowerBILoadTestingTool) avulla. Työkalun avulla voit arvioida, kuinka monta kunkin raportin esiintymää kapasiteettia voidaan suorittaa tunnissa. Työkalun avulla voit arvioida kapasiteettiesi kyvyn käyttää yksilöllistä raportin hahmontamistoimintoa tai useiden eri raporttien hahmontamista rinnakkain. Lisä tietoja on videossa [Microsoft Power BI: Premium-](https://www.youtube.com/watch?time_continue=1860&v=C6vk6wk9dcw)kapasiteetti.
+Jos olet jo määrittänyt kapasiteetin ja raportit, joille haluat tehdä testin, voit luoda kuormitustestin nopeasti [PowerShellin kuormituksen luontityökalun](https://aka.ms/PowerBILoadTestingTool) avulla. Työkalun avulla voit arvioida, kuinka monta kunkin raportin esiintymää kapasiteettisi pystyy suorittamaan tunnissa. Työkalun avulla voit lisäksi arvioida kapasiteettisi kyvyn yksittäisen raportin hahmontamiseen tai useiden eri raporttien hahmontamiseen rinnakkain. Lisätietoja on videossa [Microsoft Power BI: Premium-kapasiteetti](https://www.youtube.com/watch?time_continue=1860&v=C6vk6wk9dcw).
 
-Voit luoda monimutkaisemman testin kehittämällä kuormituksen testaus sovelluksen, joka simuloi realistista työmäärää. Lisä tietoja on webinaarin [kuormituksen testauksessa Power BI sovelluksissa, joissa on Visual Studio Load Test](https://blogs.msdn.microsoft.com/charles_sterling/2018/04/04/webinar-load-testing-power-bi-applications-with-visual-studio-load-test/).
+Voit luoda monimutkaisemman testin kehittämällä kuormituksen testaussovelluksen, joka simuloi realistista kuormitusta. Lisätietoja on verkkoseminaarissa [Power BI -sovellusten kuormituksen testaus Visual Studion kuormitustestillä](https://www.youtube.com/watch?v=UFbCh5TaR4w).
 
 ## <a name="exploring-real-world-scenarios"></a>Tutkitaan reaalimaailman tilanteita
 
@@ -737,7 +737,7 @@ Näitä tuloksia varten on useita mahdollisia selityksiä:
 Power BI järjestelmänvalvoja voi auttaa selvittämään seuraavaa:
 
 - Käytettävissä oleva muisti on vähissä tietojen päivittämisen aikana, kun käytettävissä oleva muisti on alle 2x päivitettävissä olevan tieto joukon koko
-- Tieto joukot, joita ei päivitetty ja joita ei ollut muistissa ennen päivitystä, mutta jotka alkoivat näyttää vuoro vaikutteista liikennettä raskaiden päivitys aikojen aikana. Jos haluat nähdä, mitkä tieto joukot ladattiin muistiin tiettynä aikana, Power BI järjestelmänvalvoja voi tarkastella sovelluksen tieto joukot **-väli lehden** tieto joukot-aluetta ja ristiinsuodatinta tiettynä ajan kohtana napsauttamalla jotakin palkeista, joka on **ladattuna tunneittain**. Paikallinen piikki (näkyy alla olevassa kuvassa) ilmaisee tunnin, kun useita tieto joukkoja ladattiin muistiin, mikä voi viivyttää ajoitettujen päivitysten alkamista
+- Tieto joukot, joita ei päivitetty ja joita ei ollut muistissa ennen päivitystä, mutta jotka alkoivat näyttää vuoro vaikutteista liikennettä raskaiden päivitys aikojen aikana. Jos haluat nähdä, mitkä tieto joukot ladattiin muistiin tiettynä aikana, Power BI järjestelmänvalvoja voi tarkastella sovelluksen tieto joukot-väli lehden tieto joukot-aluetta ja ristiinsuodatinta tiettynä ajan kohtana napsauttamalla jotakin palkeista, joka on **ladattuna tunneittain**. Paikallinen piikki (näkyy alla olevassa kuvassa) ilmaisee tunnin, kun useita tieto joukkoja ladattiin muistiin, mikä voi viivyttää ajoitettujen päivitysten alkamista
 - Lisääntynyt tieto joukko häädöt, kun tietojen päivittäminen on ajoitettu alkamaan, mikä ilmaisee, että liian monta eri vuoro vaikutteista raporttia on aiheuttanut liian paljon erilaisia vuorovaikutteisia raportteja ennen päivityksen ajan kohtaa. **Tunnin tieto joukon häädöt ja muistin kulutus** visualisointi voivat selvästi ilmaista häädöt.
 
 Seuraavassa kuvassa näytetään paikallinen piikki ladatuilla tieto joukoilla, mikä ehdottaa vuorovaikutteisten kyselyiden viivästynyttä alkamista. Kun valitset aika jakson **tunneittain ladatusta** tieto joukosta, visualisointi Ristiinsuodattaa tieto **joukon koot** visualisoinnin.
@@ -800,7 +800,7 @@ Myös käänteisarvo voi olla tosi. Power BI järjestelmänvalvoja voi tunnistaa
 
 ### <a name="determining-whether-there-is-enough-memory"></a>Sen selvittäminen, onko muistia tarpeeksi
 
-Power BI järjestelmänvalvoja voi tarkistaa, onko muistia tarpeeksi, jotta se voi viimeistellä työmääränsä, määrittämällä sovelluksen tieto joukot **-väli lehdellä** **kulutetut muisti prosentit** . **Kaikki** (Total)-muisti edustaa muistiin ladattujen tieto joukkojen kuluttamaa muistia riippumatta siitä, ovatko ne aktiivisesti kyselyitä vai käsiteltyjä. **Aktiivinen** muisti edustaa aktiivisessa käsittelyssä olevien tieto joukkojen kuluttamaa muistia.
+Power BI järjestelmänvalvoja voi tarkistaa, onko muistia tarpeeksi, jotta se voi viimeistellä työmääränsä, määrittämällä sovelluksen tieto joukot-väli lehdellä **kulutetut muisti prosentit** . **Kaikki** (Total)-muisti edustaa muistiin ladattujen tieto joukkojen kuluttamaa muistia riippumatta siitä, ovatko ne aktiivisesti kyselyitä vai käsiteltyjä. **Aktiivinen** muisti edustaa aktiivisessa käsittelyssä olevien tieto joukkojen kuluttamaa muistia.
 
 Terveessä kapasiteetissa visualisointi näyttää tältä, mikä näyttää kuilun kaikkien (Total) ja aktiivisen muistin välillä:
 
