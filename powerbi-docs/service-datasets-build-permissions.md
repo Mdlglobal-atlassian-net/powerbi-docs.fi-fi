@@ -1,5 +1,5 @@
 ---
-title: Tietojoukkojen luominen ja jakaminen (esikatselu) – Power BI
+title: Tietojoukon jakaminen (esikatselu)
 description: Tietojoukon omistajana voit luoda ja jakaa tietojoukkoja, jotta muutkin voivat käyttää niitä. Lue ohjeet siihen, miten voit hallita tietojen käyttöä muodostamiskäyttöoikeuden avulla.
 author: maggiesMSFT
 manager: kfile
@@ -7,17 +7,17 @@ ms.reviewer: chbraun
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/31/2019
+ms.date: 08/14/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 22339b3d5062c01b3795086eede24ed6a8e7d7e7
-ms.sourcegitcommit: 7c426a5209d4fdd1360fc3d0442d57991be1984d
+ms.openlocfilehash: 17c3322ed5f24d106412bafb9c4235ee15a626aa
+ms.sourcegitcommit: 4d5166944fcc6fe4666cab055ae75e7a0a77866d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2019
-ms.locfileid: "66461760"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69530523"
 ---
-# <a name="create-and-share-datasets-preview"></a>Tietojoukkojen luominen ja jakaminen (esikatselu)
+# <a name="share-a-dataset-preview"></a>Tietojoukon jakaminen (esikatselu)
 
 Power BI Desktopin *tietomallien* luojana voit jakaa niitä *tietojoukkoina* Power BI -palvelussa. Tämän jälkeen raporttien tekijät voivat helposti etsiä ja käyttää uudelleen jakamiasi tietojoukkoja. Lue ohjeet niiden jakamiseen sekä siihen, miten voit hallita niiden käyttöä muodostamiskäyttöoikeudella.
 
@@ -31,7 +31,7 @@ Power BI Desktopin *tietomallien* luojana voit jakaa niitä *tietojoukkoina* Pow
     
     Tämän työtilan muut jäsenet voivat jo luoda raportteja muihin tähän tietojoukkoon perustuviin työtiloihin.
 
-1. Nyt voit [luoda sovelluksen](service-create-distribute-apps.md) tästä työtilasta. Kun teet sen, voit määrittää **käyttöoikeuksien** sivulla, kenellä on mitkäkin käyttöoikeudet.
+1. Voit myös [julkaista sovelluksen](service-create-distribute-apps.md) tästä työtilasta. Kun teet sen, voit määrittää **käyttöoikeuksien** sivulla, kenellä on mitkäkin käyttöoikeudet.
 
     > [!NOTE]
     > Jos valitset **Koko organisaatio**, kellään organisaatiossa ei ole muodostamiskäyttöoikeuksia. Tämä on jo tunnettu ongelma. Määritä sen sijaan sähköpostiosoitteet **tiettyjen henkilöiden tai ryhmien** kohdassa.  Jos haluat antaa muodostamisoikeudet koko organisaatiolle, määritä sähköpostialias koko organisaatiolle.
@@ -46,6 +46,8 @@ Muodostamiskäyttöoikeus koskee vain tietojoukkoja. Sen avulla käyttäjät voi
 
 Käyttäjät voivat hankkia muodostamisoikeudet eri tavoin:
 
+- Jos olet työtilan jäsen ja sinulla on vähintään Osallistuja-rooli, sinulla on automaattisesti tietojoukon muodostamisoikeus ja oikeus kopioida raportti.
+ 
 - Sen työtilan, jossa tietojoukko sijaitsee, jäsen voi määrittää oikeuden tietyille käyttäjille tai käyttöoikeusryhmille käyttöoikeuskeskuksessa. Valitse kolme pistettä (... ) tietojoukon vieressä ja valitse sitten **Käyttöoikeuksien hallinta**.
 
     ![Valitse kolme pistettä](media/service-datasets-build-permissions/power-bi-dataset-manage-permissions.png)
@@ -54,13 +56,13 @@ Käyttäjät voivat hankkia muodostamisoikeudet eri tavoin:
 
     ![Käyttöoikeuskeskus](media/service-datasets-build-permissions/power-bi-dataset-permissions.png)
 
-- Sen työtilan, jossa tietojoukko sijaitsee, jäsen tai järjestelmänvalvoja voi päättää sovelluksen julkaisemisen yhteydessä, että sovelluksen käyttöoikeuden saavat käyttäjät saavat muodostamisoikeudet myös taustalla oleviin tietojoukkoihin. Saat lisätietoja ohjeartikkelista [Tietojoukon jakamisohjeet](#steps-to-sharing-your-dataset).
+- Sen työtilan, jossa tietojoukko sijaitsee, jäsen tai järjestelmänvalvoja voi päättää sovelluksen julkaisemisen yhteydessä, että sovelluksen käyttöoikeuden saavat käyttäjät saavat muodostamisoikeudet myös taustalla oleviin tietojoukkoihin. Lisätietoja on tämän artikkelin kohdassa [Tietojoukon jakamisohjeet](#steps-to-sharing-your-dataset).
 
 - Oletetaan, että sinulla on tietojoukossa oikeudet muodostamiseen ja uudelleenjakamiseen. Kun jaat raportin tai koontinäytön, joka perustuu tähän tietojoukkoon, voit määrittää, että myös vastaanottajat saavat muodostamisoikeudet taustalla olevaan tietojoukkoon.
 
     ![Muodostamisoikeudet](media/service-datasets-build-permissions/power-bi-share-report-allow-users.png)
 
-Voit poistaa käyttäjien muodostamisoikeuksia tietojoukkoon. Jos teet näin, käyttäjät näkevät yhtä jaettuun tietojoukkoon perustuvan raportin, mutta he eivät voi enää muokata sitä.
+Voit poistaa henkilöltä tietojoukon muodostamisoikeudet. Jos teet näin, käyttäjät näkevät yhtä jaettuun tietojoukkoon perustuvan raportin, mutta he eivät voi enää muokata sitä.
 
 ## <a name="more-granular-permissions"></a>Lisää eriytettyjä käyttöoikeuksia
 

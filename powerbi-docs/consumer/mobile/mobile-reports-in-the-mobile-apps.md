@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 04/21/2019
+ms.date: 08/09/2019
 ms.author: mshenhav
-ms.openlocfilehash: 49ee06d544e409cadc6728d286cb841f5f4adec4
-ms.sourcegitcommit: acd9f8212c9b0c6d3d8c4d56bba3c285246f3122
+ms.openlocfilehash: 3105736c6576428af2d00b6f502c94f94c409977
+ms.sourcegitcommit: d12bc6df16be1f1993232898f52eb80d0c9fb04e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68230284"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "68995257"
 ---
 # <a name="explore-reports-in-the-power-bi-mobile-apps"></a>Raporttien tutkiminen Power BI -mobiilisovelluksissa
 Koskee seuraavia:
@@ -42,13 +42,14 @@ Power BI -mobiilisovelluksissa on kaksi kuvaketta raportteja varten:
 
 * ![puhelinraportin kuvake](./media/mobile-reports-in-the-mobile-apps/report-phone-icon.png) tarkoittaa raporttia, jossa on vähintään yksi puhelimelle optimoitu raporttisivu, joka esitetään pystysuunnassa. 
 
-Huomautus: Kun pidät puhelinta vaaka-asennossa, saat aina vaakasuuntaisen asettelun, vaikka raporttisivulla olisi puhelinasettelu. 
+> [!NOTE]
+> Kun pidät puhelinta vaaka-asennossa, saat aina vaakasuuntaisen asettelun, vaikka raporttisivulla olisi puhelinasettelu. 
 
 Jos haluat päästä raporttiin raporttinäkymästä, napauta kolmea pistettä (...) raporttinäkymän ruudun oikeassa yläkulmassa > **Avaa raportti**.
   
   ![Raportin avaaminen](./media/mobile-reports-in-the-mobile-apps/power-bi-android-open-report-tile.png)
   
-  Kaikissa ruuduissa ei ole raportin avaamisvaihtoehtoa. Esimerkiksi Q&A-ruudussa kysymyksiä esittämällä luodut ruudut eivät avaa raportteja, kun niitä napautetaan. 
+  Kaikki ruudut eivät avaudu raportissa. Esimerkiksi Q&A-ruudussa kysymyksiä esittämällä luodut ruudut eivät avaa raportteja, kun niitä napautetaan. 
   
 ## <a name="interacting-with-reports"></a>Raporttien käsitteleminen
 Kun raportti on avattuna sovelluksessa, voit aloittaa sen käsittelemisen. Raportilla ja sen tiedoilla voi tehdä monia asioita. Raportin alatunnisteessa on toimintoja, joita voit suorittaa raportissa. Napauttamalla ja napauttamalla pitkään raportissa näkyviä tietoja voit myös osittaa ja käsitellä tietoja.
@@ -78,7 +79,7 @@ Raportin tekijät voivat määrittää hierarkioita raporttisivujen välisissä 
 
 ![raportin porautumistoiminnot](./media/mobile-reports-in-the-mobile-apps/report-drill-actions.png)
 
-Kun napautat tiettyä kohtaa visualisoinnissa, voit *porautumalla* siirtyä Power BI:ssä raportin eri sivulle, joka suodatetaan napauttamasi arvon mukaisesti.  Raportin tekijä voi määrittää yhden tai useampia porautumisvaihtoehtoja, joista jokainen siirtää sinut eri sivulle. Voit siinä tapauksessa valita mihin sivuun haluat porautua. Takaisin-painike vie sinut takaisin edelliselle raporttisivulle.
+Kun napautat tiettyä kohtaa visualisoinnissa, voit *porautumalla* siirtyä Power BI:ssä raportin eri sivulle, joka suodatetaan napauttamasi arvon mukaisesti. Raportin tekijä voi määrittää yhden tai useampia porautumisvaihtoehtoja, joista jokainen siirtää sinut eri sivulle. Voit valita, mihin sivuun haluat porautua. Takaisin-painike vie sinut takaisin edelliselle raporttisivulle.
 
 Lue lisää [porautumisen lisäämisestä Power BI Desktopiin](../../desktop-drillthrough.md).
    
@@ -97,7 +98,7 @@ Alatunnisteen kautta suoritettavat toiminnot:
 2) Avaa keskusteluruutu, jos haluat tarkastella raportin kommentteja tai lisätä kommentteja.
 3) Voit tarkastella ja muokata raportissa käytettävää suodatinta avaamalla suodatusruudun.
 4) Luettele tämän raportin kaikki sivut. Sivun nimen napauttaminen lataa ja näyttää kyseisen sivun.
-Raporttisivujen välillä liikkuminen onnistuu pyyhkäisemällä näytön reunasta keskelle.
+Voit liikkua raporttisivujen välillä liikkuminen pyyhkäisemällä näytön reunasta keskelle.
 5) Näytä kaikki raportin toiminnot.
 
 #### <a name="all-report-actions"></a>Kaikki raportin toiminnot

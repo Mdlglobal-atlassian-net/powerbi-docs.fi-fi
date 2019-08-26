@@ -10,26 +10,26 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 04/15/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: c84bebef5589ec391e3640ff3be674b1fb5a0ebd
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 49a1f02e5aa327c2704b6c2d789934a43b760ad0
+ms.sourcegitcommit: 0e50ebfa8762e19286566432870ef16d242ac78f
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65564872"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "68962025"
 ---
 # <a name="configure-workloads-in-a-premium-capacity"></a>Premium-kapasiteettien kuormitusten määrittäminen
 
-Tässä artikkelissa kuvaillaan, miten voit ottaa käyttöön ja määrittää Power BI Premium -kapasiteettien kuormituksia. Oletusarvoisesti kapasiteetit tukevat ainoastaan Power BI -kyselyjen suorittamiseen liittyviä kuormituksia. Voit myös ottaa käyttöön ja määrittää muita kuormituksia **[tekoälylle (kognitiiviset palvelut)](service-cognitive-services.md)** , **[tietovoille](service-dataflows-overview.md#dataflow-capabilities-on-power-bi-premium)** ja **[sivutetuille raporteille](paginated-reports-save-to-power-bi-service.md)** .
+Tässä artikkelissa kuvaillaan, miten voit ottaa käyttöön ja määrittää Power BI Premium -kapasiteettien kuormituksia. Oletusarvoisesti kapasiteetit tukevat ainoastaan Power BI -kyselyjen suorittamiseen liittyviä kuormituksia. Voit myös ottaa käyttöön ja määrittää muita kuormituksia **[tekoälylle (kognitiiviset palvelut)](service-cognitive-services.md)**, **[tietovoille](service-dataflows-overview.md#dataflow-capabilities-on-power-bi-premium)** ja **[sivutetuille raporteille](paginated-reports-save-to-power-bi-service.md)**.
 
 ## <a name="default-memory-settings"></a>Oletusmuistiasetukset
 
-Kyselyn kuormitukset on optimoitu Premium-kapasiteetin SKU:lle, jonka resurssit määrittävät kuormitusten rajat. Premium-kapasiteetit tukevat myös muita kuormituksia, jotka voivat käyttää oman kapasiteettisi resursseja. Näiden kuormitusten oletusmuistiarvot perustuvat SKU:n käytettävissä oleviin kapasiteetin solmuihin. Enimmäismuistiasetukset eivät ole kumulatiivisia. Enintään enimmäisarvoa vastaava muistimäärä varataan AI:lle ja tietovuolle dynaamisesti, mutta sivutetuille raporteille staattisesti. 
+Kyselyn kuormitukset on optimoitu Premium-kapasiteetin SKU:lle, jonka resurssit määrittävät kuormitusten rajat. Premium-kapasiteetit tukevat myös muita kuormituksia, jotka voivat käyttää oman kapasiteettisi resursseja. Näiden kuormitusten oletusmuistiarvot perustuvat SKU:n käytettävissä oleviin kapasiteetin solmuihin. Enimmäismuistiasetukset eivät ole kumulatiivisia. Enintään enimmäisarvoa vastaava muistimäärä varataan AI:lle ja tietovuolle dynaamisesti, mutta sivutetuille raporteille staattisesti.
 
 ### <a name="microsoft-office-skus-for-software-as-a-service-saas-scenarios"></a>Microsoft Office -varastointiyksiköt Software as a Service (SaaS) -skenaarioille
 
 |                     | EM2                      | EM3                       | P1                      | P2                       | P3                       |
 |---------------------|--------------------------|--------------------------|-------------------------|--------------------------|--------------------------|
-| AI | – | – | 20 prosenttia oletus; Pienin 20 prosenttia | Oletus 20 %, vähintään 10 % | Oletus 20 %, vähintään 5 % |
+| Tekoäly | – | – | Oletus 20 %, vähintään 20 % | Oletus 20 %, vähintään 10 % | Oletus 20 %, vähintään 5 % |
 | Tietovuot | – |Oletus 20 %, vähintään 12  | Oletus 20 %, vähintään 5 %  | Oletus 20 %, vähintään 3 % | Oletus 20 %, vähintään 2 %  |
 | Sivutetut raportit | – |– | Oletus 20 %, vähintään 10 % | Oletus 20 %, vähintään 5 % | Oletus 20 %, vähintään 2,5 % |
 | | | | | | |
@@ -38,45 +38,56 @@ Kyselyn kuormitukset on optimoitu Premium-kapasiteetin SKU:lle, jonka resurssit 
 
 |                  | A1                       | A2                       | A3                      | A4                       | A5                      | A6                        |
 |-------------------|--------------------------|--------------------------|-------------------------|--------------------------|-------------------------|---------------------------|
-| AI | –                      | 20 prosenttia oletus; 100 % pienin                     | 20 prosenttia oletus; vähintään 50 prosenttia                     | 20 prosenttia oletus; Pienin 20 prosenttia | Oletus 20 %, vähintään 10 % | Oletus 20 %, vähintään 5 % |
+| Tekoäly | –                      | Oletus 20 %, vähintään 100 %                     | Oletus 20 %, vähintään 50 %                     | Oletus 20 %, vähintään 20 % | Oletus 20 %, vähintään 10 % | Oletus 20 %, vähintään 5 % |
 | Tietovuot         | Oletus 40 %, vähintään 40 % | Oletus 24 %, vähintään 24 % | Oletus 20 %, vähintään 12 % | Oletus 20 %, vähintään 5 %  | Oletus 20 %, vähintään 3 % | Oletus 20 %, vähintään 2 %   |
 | Sivutetut raportit | –                      | –                      | –                     | Oletus 20 %, vähintään 10 % | Oletus 20 %, vähintään 5 % | Oletus 20 %, vähintään 2,5 % |
 | | | | | | |
 
-## <a name="workload-settings"></a>Kuormituksen asetukset
+## <a name="workload-settings"></a>Kuormitusasetukset
 
-### <a name="ai-preview"></a>AI (esikatselu)
+### <a name="ai-preview"></a>Tekoäly (esikatselu)
 
-Lisäksi **Max muistin** asetuksen, Tekoäly järjestelmän kuormitus on muita asetuksia, **Salli käyttö Power BI Desktop**. Oletusarvo on **käytöstä**. Tämä asetus on varattu tulevaa käyttöä varten, ja se ei ehkä näy kaikille vuokraajille.
+Tekoälykuormituksessa on **Muistin enimmäismäärä** -asetuksen lisäksi myös toinen asetus, **Salli käyttö Power BI Desktopista**. Oletusarvo on **Ei käytössä**. Tämä asetus on varattu tulevaa käyttöä varten, eikä sitä välttämättä näytetä kaikissa vuokraajissa.
 
 ### <a name="datasets-preview"></a>Tietojoukot (esikatselu)
 
-Oletusarvon mukaan tietojoukkoja järjestelmän kuormitus on käytössä ja ei voi poistaa käytöstä. Tämä kuormituksen sisältää muita asetuksia, **XMLA-päätepisteelle**. Oletusarvo on **1**, merkitys käytössä. Tämä asetus määrittää yhteydet asiakassovellusten noudattavan suojausryhmän jäsenyyden Määritä työtila ja sovelluksen tasolla. Lisätietoja on artikkelissa [tietojoukkoja, joilla asiakassovellusten ja työkaluja, joilla yhdistäminen](service-premium-connect-tools.md).
+Tietojoukkojen kuormitus on oletuksena käytössä, eikä sitä voi poistaa käytöstä. Tämä kuormitus sisältää lisäasetuksen _XMLA-päätepistettä_ varten ja joukon suorituskykyyn liittyviä asetuksia. Tämä **XMLA-päätepiste**-asetus määrittää, että asiakassovelluksista tulevissa yhteyksissä noudatetaan työtilan ja sovelluksen tasoilla määritettyä suojausryhmän jäsenyyttä. Lisätietoja on artikkelissa [Tietojoukkoihin yhdistäminen asiakassovelluksilla ja -työkaluilla](service-premium-connect-tools.md).
+
+Suorituskykyyn liittyvät asetukset kuvataan seuraavassa taulukossa.
+
+| Asetuksen nimi | Kuvaus | Käyttö |
+|---------------------------------|----------------------------------------|----------------------------------------|
+| **Välirivien enimmäismäärä** | DirectQueryn palauttamien välirivien enimmäismäärä. Oletusarvo on 1000000 ja sallittu alue on 100000–2147483647 | Hallitse resurssi-intensiivisten tai huonosti suunniteltujen raporttien vaikutusta. |
+| **Offline-tietojoukon enimmäiskoko (Gt)** | Muistissa olevan offline-tietojoukon enimmäiskoko. Tämä on pakattu koko levyllä. Oletusarvon asettaa SKU ja sallittu alue on 0,1–10 Gt | Estä raportin tekijöiltä kapasiteettiin kielteisesti vaikuttavan suuren tietojoukon julkaiseminen. |
+| **Tulosrivien enimmäismäärä** | Määrittää DAX-kyselyssä palautettavien rivien enimmäismäärän. Oletusarvo on 1 (ei rajoitusta) ja sallittu alue on 100000–2147483647 | Hallitse resurssi-intensiivisten tai huonosti suunniteltujen raporttien vaikutusta. |
+| **Kysely muistiraja (%)** | Koskee vain DAX-mittareita ja -kyselyitä. Määritetty prosenttiarvona (%) ja rajoittaa sitä, kuinka paljon tilapäiset tulokset voivat käyttää muistia kyselyn aikana. | Hallitse resurssi-intensiivisten tai huonosti suunniteltujen raporttien vaikutusta. |
+| **Kyselyn aikakatkaisu (sekuntia)** | Kokonaisluku, joka määrittää kyselyiden aikakatkaisun sekunteina. Oletusarvo on 3600 sekuntia (eli 60 minuuttia). Nolla (0) määrittää, että kyselyillä ei ole aikakatkaisua. | Hallitse paremmin pitkäkestoisia kyselyitä. |
+|  |  |  |
 
 ### <a name="dataflows"></a>Tietovuot
 
-Lisäksi **Max muistin** asetuksen, Dataflows järjestelmän kuormitus on muita asetuksia, **säilön koon**. Tämän asetuksen avulla voit optimoida tietovirrassa kuormituksen suorituskykyyn monimutkaisempia ja käsittely raskas dataflows käsittelyn.
+Tekoälykuormituksessa on **Muistin enimmäismäärä** -asetuksen lisäksi myös lisäasetus, **Säilön koko**. Tämän asetuksen avulla voit optimoida tietovuon kuormituksen suorituskyvyn, kun käsitellään monimutkaisia, käsittelyltään raskaita tietovoita.
 
-Tietovirrassa päivittäessäsi tietovirrassa kuormituksen etäasemassa säilön tietovirrassa kullekin entiteetille. Kunkin säilön voi kestää määritetty säilön koon asetuksen muistin merkkiin. Ovat kaikki Varastointiyksiköt oletusarvo on **700 Mt**. Haluat ehkä muuttaa tätä asetusta, jos:
+Tietovuon päivityksen yhteydessä tietovuon kuormitus muodostaa säilön kullekin tietovuon entiteetille. Kukin säilö voi varata muistia enintään Säilön koko -asetuksessa määritettyyn kokoon saakka. Oletusarvo kaikille SKU-yksiköille on **700 Mt**. Tätä asetusta kannattaa ehkä muuttaa, jos:
 
-- Dataflows kestää liian kauan, päivittää tai aikakatkaisu tietovirrassa päivitys epäonnistuu.
-- Laskeminen vaiheet, esimerkiksi liitoksen tietovirrassa entiteeteissä.  
+- Tietovoiden päivittyminen kestää liian kauan tai tietovuon päivitys epäonnistuu aikakatkaisun takia.
+- Tietovuon entiteetit sisältävät laskentavaiheita, kuten liittämisen.  
 
-Sen käyttäjän käytät Microsoft suosittelee [Power BI Premium-kapasiteetin Mittaustietoihin](service-admin-premium-monitor-capacity.md) sovelluksen analysoida tietovirrassa kuormituksen suorituskykyyn. 
+On suositeltavaa käyttää [Power BI Premium -kapasiteettimittarisovellusta](service-admin-premium-monitor-capacity.md) tietovuon kuormituksen suorituskyvyn analysointiin. 
 
-Joissakin tapauksissa säilön koon voi ei parantaa suorituskykyä. Esimerkiksi jos tietovirrassa on tietoja vain lähteestä suorittamatta merkittäviä laskutoimituksia, säilön koon muuttamisen todennäköisesti ei auta. Säilön koon voi auttaa, jos se mahdollistaa tietovirrassa kuormituksen muistin varaaminen entiteetin päivitystoiminnot. Voit pienentää mukaan on varattu enemmän muistia, Päivitä vahvasti laskettuja entiteettejä kuluvaa aikaa. 
+Joissakin tapauksissa säiliön koon kasvattaminen ei välttämättä paranna suorituskykyä. Jos esimerkiksi tietovuo saa tietoa vain lähteestä ilman merkittävien laskutoimitusten tekemistä, säilön koon muuttaminen ei todennäköisesti auta. Säiliön koon kasvattaminen voi auttaa, jos sen avulla tietovuon kuormitus voi varata lisää muistia entiteetin päivitystoiminnoille. Kun muistia varataan enemmän, paljon laskentaa sisältävien entiteettien päivitysaika voi lyhentyä.
 
-Säilön koko-arvo ei voi olla Dataflows kuormituksen muistin enimmäismäärän. P1-kapasiteetti on 25 gt muistia. Jos tietovirrassa työmääräryhmän muisti Max (%) määritetään 20 prosenttia säilön koko (Mt) ei voi ylittää 5000. Kaikissa tapauksissa säilön koko voi olla enintään Max-muistiin, vaikka voit määrittää suurempi arvo. 
+Säilön koko -arvo ei voi ylittää tietovoiden kuormitukselle määritettyä enimmäismuistia. Esimerkiksi P1-kapasiteetissa muistia on 25 gigatavua. Jos tietovuon kuormituksen enimmäismuistin (%) arvoksi on asetettu 20 %, säilön koko (Mt) ei voi olla yli 5000. Kaikissa tapauksissa säiliön koko ei voi ylittää enimmäismuistin arvoa, vaikka asettaisit suuremman arvon.
 
 ### <a name="paginated-reports-preview"></a>Sivutetut raportit (esikatselu)
 
-Sivutetut raportit Salli mukautetun koodin suorittaminen, kun raportin hahmontaminen. Esimerkiksi muuttaa dynaamisesti tekstin väriä, sisällön perusteella, joka voi kestää lisämuistia. Power BI Premium suorittaa sivutetut raportit rajoitetussa tilassa kapasiteetin sisällä. Suurin muistin määritetty käytetään *onko* kuormitus on aktiivinen. Jos Max muistia, asetuksen muuttamista oletusarvosta, varmista, että määrität – alhainen niin, että se ei vaikuta muiden kuormitusten negatiivisesti.
+Sivutetut raportit mahdollistavat mukautetun koodin suorittamisen, kun raporttia hahmonnetaan. Voit esimerkiksi muuttaa tekstin väriä dynaamisesti sisällön perusteella, mikä käyttää enemmän muistia. Power BI Premium suorittaa sivutetut raportit rajoitetussa tilassa kapasiteetin sisällä. Määritetty enimmäismuisti käytetään *riippumatta* siitä, onko kuormitus aktiivinen. Jos muutat muistin enimmäisasetusta oletusarvosta, varmista, että asetat sen niin pieneksi, että se ei vaikuta haitallisesti muihin kuormituksiin.
 
-Joissakin tapauksissa Sivutettujen raporttien kuormituksen voit ei ole enää käytettävissä. Tässä tapauksessa kuormituksen näyttää virhetilan hallintaportaalissa, ja käyttäjät näkevät raportin hahmontaminen aikakatkaisut. Ratkaise tämä ongelma, kuormituksen käytöstä ja ota se käyttöön uudelleen.
+Joissakin tapauksissa Sivutetut raportit -kuormitus saattaa lakata toimimasta. Näissä tapauksissa kuormitus näyttää virhetilan hallintaportaalissa ja raportin hahmontaminen aikakatkaistaan käyttäjiltä. Voit ratkaista ongelman poistamalla kuormituksen käytöstä ja ottamalla sen uudelleen käyttöön.
 
 ## <a name="configure-workloads"></a>Kuormitusten määrittäminen
 
-Suurenna kapasiteetin käytettävissä olevien resurssien määrää ottamalla käyttöön kuormituksia vain, jos niitä käytetään. Muuta muistiasetuksia vain, jos olet todennut, että oletusasetukset eivät vastaa kapasiteettisi resurssivaatimuksia.  
+Suurenna kapasiteetin käytettävissä olevien resurssien määrää ottamalla käyttöön kuormituksia vain, jos niitä käytetään. Muuta muistiasetuksia ja muita asetuksia vain, jos olet todennut, että oletusasetukset eivät vastaa kapasiteettisi resurssivaatimuksia.
 
 ### <a name="to-configure-workloads-in-the-power-bi-admin-portal"></a>Kuormitusten määrittäminen Power BI -hallintaportaalin kautta
 
@@ -84,10 +95,7 @@ Suurenna kapasiteetin käytettävissä olevien resurssien määrää ottamalla k
 
 1. Laajenna **Kuormitukset** **LISÄÄ VAIHTOEHTOJA** -kohdasta.
 
-1. Ota käyttöön yksi tai useampi kuormitus ja anna **Muistin enimmäismäärälle** arvo.   
-
-    
-    ![Kuormitusten käyttöönotto](media/service-admin-premium-workloads/admin-portal-workloads.png)
+1. Ota käyttöön yksi tai useampi kuormitus ja anna **Muistin enimmäismäärälle** ja muille asetuksille arvo.
 
 1. Valitse **Käytä**.
 
@@ -101,7 +109,7 @@ Kuormituksia voidaan ottaa käyttöön ja määrittää kapasiteetille käyttäm
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
-[Power BI Premium-kapasiteetteja optimointi](service-premium-capacity-optimize.md)     
+[Power BI Premium -kapasiteettien optimointi](service-premium-capacity-optimize.md)     
 [Omatoiminen tietovoita sisältävien tietojen valmisteleminen Power BI:ssä](service-dataflows-overview.md)   
 [Mitä ovat sivutetut raportit Power BI Premiumissa?](paginated-reports-report-builder-power-bi.md)   
 
