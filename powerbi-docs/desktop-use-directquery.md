@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/18/2019
+ms.date: 08/19/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: fcad10a77ad531562443470296c9d712b2aa9724
-ms.sourcegitcommit: d74aca333595beaede0d71ba13a88945ef540e44
+ms.openlocfilehash: 6664924a10b89e057765d70499208aede2d7fdad
+ms.sourcegitcommit: 4a3afe761d2f4a5bd897fafb36b53961739e8466
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/03/2019
-ms.locfileid: "68757601"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69654777"
 ---
 # <a name="use-directquery-in-power-bi-desktop"></a>DirectQueryn käyttö Power BI Desktopissa
 Kun muodostat yhteyden tietolähteeseen, voit **Power BI Desktopin** avulla aina tuoda kopion tiedoista **Power BI Desktopiin**. Joillekin tietolähteille on saatavilla vaihtoehtoinen menetelmä: yhteyden muodostaminen suoraan tietolähteeseen **DirectQueryn** avulla.
@@ -49,10 +49,13 @@ Artikkelissa [Power BI ja DirectQuery](desktop-directquery-about.md) kuvataan **
 **DirectQueryn** käyttöön liittyy nykyisin joitakin rajoituksia:
 
 * Kaikkien taulukoiden on oltava peräisin yksittäisestä tietokannasta, ellei käytetä [yhdistelmämalleja](desktop-composite-models.md).
+
 * Jos **kyselyeditorin** kysely on liian monimutkainen, tapahtuu virhe. Virheen korjaamiseksi on joko poistettava ongelmallinen vaihe **kyselyeditorissa** tai *tuotava* tiedot **DirectQueryn** käytön sijasta. Moniulotteisten tietolähteiden, kuten SAP Business Warehousen, tapauksessa ei voi käyttää **kyselyeditoria**.
-* Suhteen suodatus on rajoitettu yhteen suuntaan molempien suuntien sijasta (vaikka on mahdollista ottaa käyttöön ristisuodatus molempiin suuntiin **DirectQuerylle**). Moniulotteisten lähteiden, kuten SAP Business Warehousen, tapauksessa mallissa ei ole määritetty suhteita.
+
 * Aikatieto-ominaisuudet eivät ole käytettävissä **DirectQueryssä**. Esimerkiksi päivämääräsarakkeiden (vuosi, vuosineljännes, kuukausi, päivä jne.) erityiskohtelua ei tueta **DirectQuery**-tilassa.
+
 * Mittareille määritetään oletusarvoisesti rajoituksia sen varmistamiseksi, että pohjana olevaan tietolähteeseen lähetettyjen kyselyjen suorituskyky on riittävä.
+
 * Tietojen palautuksen tapauksessa on miljoonan rivin rajoitus käytettäessä **DirectQueryä**. Rajoitus ei vaikuta koosteisiin tai laskelmiin, joita on käytetty **DirectQueryn** avulla palautetun tietojoukon luontiin, vaan pelkästään palautettuihin riveihin. Voit esimerkiksi koostaa 10 miljoonaa riviä tietolähteestä tehdystä kyselystä ja palauttaa tarkasti tämän koosteen tulokset Power BI:hin **DirectQueryn** avulla, jos Power BI:hin palautettujen tietojen koko on alle miljoona riviä. Jos **DirectQuerystä** palautetaan yli miljoona riviä, Power BI palauttaa virheen.
 
 ## <a name="important-considerations-when-using-directquery"></a>DirectQueryn käytössä huomioitavia tärkeitä seikkoja

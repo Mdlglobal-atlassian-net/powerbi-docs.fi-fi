@@ -6,37 +6,37 @@ manager: kfile
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/20/2019
+ms.date: 08/15/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: eccda071b6c6abc92640024c3587bafa71038dee
-ms.sourcegitcommit: c122c1a8c9f502a78ccecd32d2708ab2342409f0
+ms.openlocfilehash: ed3a65e25694c23e1852a554742e0f8a6e6ff668
+ms.sourcegitcommit: 4d5166944fcc6fe4666cab055ae75e7a0a77866d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "66826626"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69530590"
 ---
 # <a name="publish-an-app-in-power-bi"></a>Julkaise sovellus Power BI:ssä
 
-Power BI:ssä voit luoda virallisia paketoituja sisältöjä ja sitten jakaa laajalle yleisölle *sovelluksena*. Voit luoda sovelluksia *sovellustyötiloissa*, joissa voit työstää Power BI -sisältöä yhdessä työtovereiden kanssa. Sen jälkeen voit julkaista valmiit sovellukset suurelle määrälle ihmisiä organisaatiossasi. 
+Power BI:ssä voit luoda virallisia paketoituja sisältöjä ja sitten jakaa laajalle yleisölle *sovelluksena*. Voit luoda sovelluksia *työtiloissa*, joissa voit työstää Power BI -sisältöä yhdessä työtovereiden kanssa. Sen jälkeen voit julkaista valmiit sovellukset suurelle määrälle ihmisiä organisaatiossasi. 
 
 ![Power BI -sovellukset](media/service-create-distribute-apps/power-bi-new-apps.png)
 
-Yrityskäyttäjät tarvitsevat usein monia Power BI -koontinäyttöjä ja raportteja yrityksensä pyörittämisessä. Power BI -sovelluksilla voit luoda kokoelmia koontinäytöistä ja raporteista ja julkaista nämä sovellukset koko organisaatiolle tai tietyille ihmisille tai ryhmille. Jos olet raporttien luoja tai järjestelmänvalvoja, sovellukset tekevät näiden kokoelmien käyttöoikeuksien hallinnasta helpompaa.
+Yrityskäyttäjät tarvitsevat usein monia Power BI -koontinäyttöjä ja raportteja yrityksensä pyörittämisessä. Power BI -sovelluksilla voit luoda kokoelmia koontinäytöistä ja raporteista ja julkaista nämä kokoelmat sovelluksina koko organisaatiolle tai tietyille ihmisille tai ryhmille. Jos olet raporttien luoja tai järjestelmänvalvoja, sovellukset tekevät näiden kokoelmien käyttöoikeuksien hallinnasta helpompaa.
 
 Yrityskäyttäjät saavat sovelluksesi käyttöönsä eri tavoin:
 
-- He voivat etsiä ja asentaa sovelluksen Microsoft AppSourcesta
+- He voivat etsiä ja asentaa sovelluksen Microsoft AppSourcesta.
 - Voit lähettää heille suoran linkin.
 - Voit asentaa sen automaattisesti työtovereittesi Power BI -tileille, jos Power BI -järjestelmänvalvojasi antaa sinulle luvan.
 
-Voit luoda sovelluksen, jossa on omat sisäänrakennetut siirtymiskomennot, jolloin käyttäjät voivat vaivattomasti löytää sisältösi. He eivät voi muokata sovelluksen sisältöä. He voivat käyttää sitä joko Power BI -palvelussa tai jossakin mobiilisovelluksista. He voivat suodattaa, korostaa ja lajitella tiedot itse. He saavat päivitykset automaattisesti, ja sinä voit määrittää, kuinka usein tiedot päivitetään. Lisätietoja [sovellusominaisuudesta yrityskäyttäjille](consumer/end-user-apps.md).
+Voit luoda sovelluksen, jossa on omat sisäänrakennetut siirtymiskomennot, jolloin käyttäjät voivat vaivattomasti löytää sisältösi. He eivät voi muokata sovelluksen sisältöä. He voivat käyttää sitä joko Power BI -palvelussa tai jossakin mobiilisovelluksista. He voivat suodattaa, korostaa ja lajitella tiedot itse. He saavat päivitykset automaattisesti, ja sinä voit määrittää, kuinka usein tiedot päivitetään. Voit myös antaa heille muodostamisoikeudet yhteyden muodostamiseksi pohjana oleviin tietojoukkoihin ja kopioiden luomiseksi raporteista sovelluksessa. Lue lisätietoja [muodostamisoikeudesta](service-datasets-build-permissions.md#build-permissions-for-shared-datasets).
 
 ## <a name="licenses-for-apps"></a>Sovellusten käyttöoikeudet
 Sovelluksen luomiseen tai päivittämiseen tarvitaan Power BI Pro -käyttöoikeus. Sovelluksen *kuluttajilla* on kaksi vaihtoehtoa.
 
-* Vaihtoehto 1: Kaikilla käyttäjillä pitää olla **Power BI Pro** -käyttöoikeudet sovelluksesi näkemiseksi. 
-* Vaihtoehto 2: Organisaatiosi ilmaiskäyttäjät voivat tarkastella sovelluksesi sisältöä, mikäli sovelluksesi työtila sijaitsee Power BI Premium -kapasiteetissa. Lisätietoja on artikkelissa [Mikä on Power BI Premium?](service-premium.md)
+* **Vaihtoehto 1** Tämän sovelluksen työtila *ei* ole Power BI Premium -kapasiteetissa: Kaikilla käyttäjillä pitää olla Power BI Pro -käyttöoikeudet sovelluksesi näkemiseksi. 
+* **Vaihtoehto 2** Tämän sovelluksen työtila *on* Power BI Premium -kapasiteetissa: Organisaatiosi yrityskäyttäjät ilman Power BI Pro -käyttöoikeutta voivat tarkastella sovelluksen sisältöä. He eivät kuitenkaan voi kopioida raportteja tai luoda raportteja pohjana olevien tietojoukkojen perusteella. Lisätietoja on artikkelissa [Mikä on Power BI Premium?](service-premium.md)
 
 ## <a name="publish-your-app"></a>Sovelluksen julkaiseminen
 Kun työtilasi raporttinäkymät ja raportit ovat valmiita, voit valita, mitkä raporttinäkymät ja raportit haluat julkaista. Julkaise ne sitten sovelluksena. 
@@ -57,21 +57,19 @@ Kun työtilasi raporttinäkymät ja raportit ovat valmiita, voit valita, mitkä 
    
      ![Sovelluksen luominen](media/service-create-distribute-apps/power-bi-apps-build-your-apps.png)
 
-4. Kohdassa **Siirtyminen** valitset sovelluksen osana julkaistavan sisällön. Sitten lisäät sovelluksen siirtymisen järjestääksesi sisällön osiin. Lue lisätietoja tämän artikkelin kohdasta [Suunnittele sovelluksen siirtymistoiminnot](#design-the-navigation-experience-for-your-app).
+4. Kohdassa **Siirtyminen** valitset sovelluksen osana julkaistavan sisällön. Sitten lisäät sovelluksen siirtymisen järjestääksesi sisällön osiin. Lue lisätietoja tämän artikkelin kohdasta [Suunnittele sovelluksen siirtymistoiminnot](#design-the-navigation-experience).
    
      ![Siirtyminen sovelluksessa](media/service-create-distribute-apps/power-bi-apps-navigation.png)
 
 5. **Käyttöoikeus**-kohdassa päätät, keillä on sovelluksen käyttöoikeus ja mitä he voivat sovelluksella tehdä. 
     - [Perinteisissä työtiloissa](service-create-workspaces.md): kaikki organisaatiosi henkilöt, tietyt henkilöt tai Azure Active Directory:n (AAD)käyttöoikeusryhmät.
     - [Uusissa työtilakokemuksissa](service-create-the-new-workspaces.md): tietyt henkilöt, AAD-käyttöoikeusryhmät ja jakeluluettelot ja Office 365 -ryhmät. Kaikille työtilan käyttäjille annetaan automaattisesti työtilan sovelluksen käyttöoikeudet.
-    - Voit antaa sovelluksen käyttäjien muodostaa yhteyden sovelluksen pohjana oleviin tietojoukkoihin Koonti-käyttöoikeuden avulla. Nämä tietojoukot näkyvät tietojoukkojen hauissa.
-    - Voit antaa sovelluksen käyttäjille oikeuden luoda raporttien kopioita Omaan työtilaansa tämän sovelluksen kautta. 
+    - Voit antaa sovelluksen käyttäjien muodostaa yhteyden sovelluksen pohjana oleviin tietojoukkoihin muodostamisoikeuden avulla. He näkevät nämä tietojoukot etsiessään jaettuja tietojoukkoja. Lisätietoja [luvan myöntämisestä käyttäjille sovelluksen tietojoukkoihin yhdistämistä varten](#allow-users-to-connect-to-datasets) on tässä artikkelissa.
+    - Muodostamisoikeudet saaneilla käyttäjillä voi olla myös oikeus kopioida raportteja tästä sovelluksesta toiseen työtilaan. Lisätietoja [luvan myöntämisestä käyttäjille sovelluksessa olevien raporttien kopioimista varten](#allow-users-to-copy-reports) on tässä artikkelissa.
     
     >[!IMPORTANT]
     >Jos sovellus käyttää muissa työtiloissa olevia tietojoukkoja, sinun on varmistettava, että sovelluksen käyttäjille on pohjana olevien tietojoukkojen käyttöoikeudet.
-> 
->     
-
+    >
 
 6. Voit asentaa sovelluksen automaattisesti vastaanottajille, jos Power BI -järjestelmänvalvojasi on ottanut asetuksen käyttöön sinulle Power BI -hallintaportaalissa. Lue lisää [sovelluksen asentamisesta automaattisesti](#automatically-install-apps-for-end-users) tästä artikkelista.
 
@@ -84,26 +82,26 @@ Kun työtilasi raporttinäkymät ja raportit ovat valmiita, voit valita, mitkä 
 Voit lähettää kyseisen suoran linkin henkilöille, joille olet jakanut sen, tai he voivat löytää sovelluksesi Sovellukset-välilehdestä siirtymällä kohtaan **Lataa ja etsi lisää sovelluksia AppSourcesta**. Lisätietoja [sovellusominaisuudesta yrityskäyttäjille](consumer/end-user-apps.md).
 
 ## <a name="change-your-published-app"></a>Julkaistun sovelluksen muuttaminen
-Kun olet julkaissut sovelluksesi, voit halutessasi muuttaa tai päivittää sitä. Sen päivittäminen on helppoa, jos olet järjestelmänvalvoja tai uuden sovelluksen työtilan jäsen. 
+Kun olet julkaissut sovelluksesi, voit halutessasi muuttaa tai päivittää sitä. Sen päivittäminen on helppoa, jos olet järjestelmänvalvoja tai uuden työtilan jäsen. 
 
-1. Avaa kyseistä sovellusta vastaava sovelluksen työtila. 
+1. Avaa kyseistä sovellusta vastaava työtila. 
    
      ![Työtilan avaaminen](media/service-create-distribute-apps/power-bi-apps-open-workspace.png)
 
 2. Tee koontinäytöihin tai raportteihin haluamasi muutokset.
  
-     Sovelluksen työtila on valmistelualueesi, joten tekemiäsi muutoksia ei lähetetä reaaliaikaisesti sovellukseen ennen sen julkaisemista uudelleen. Tämän avulla voit tehdä muutoksia ilman, että ne vaikuttaisivat julkaistuun sovellukseen.  
+     Työtila on valmistelualueesi, joten tekemiäsi muutoksia ei lähetetä reaaliaikaisesti sovellukseen ennen sen julkaisemista uudelleen. Tämän avulla voit tehdä muutoksia ilman, että ne vaikuttaisivat julkaistuun sovellukseen.  
  
     > [!IMPORTANT]
     > Jos poistat raportin ja päivität sovellusta ja vaikka lisäisit raportin takaisin sovellukseen, sovelluksen kuluttajat menettävät kaikki mukautukset, kuten kirjanmerkit, kommentit ja niin edelleen.  
  
-3. Siirry takaisin sovelluksen työtilan sisältöluetteloon ja valitse **Päivitä sovellus** oikeasta yläkulmasta.
+3. Siirry takaisin työtilan sisältöluetteloon ja valitse **Päivitä sovellus** oikeasta yläkulmasta.
    
 1. Päivitä **Asennus**, **Siirtyminen** ja **Käyttöoikeudet** mikäli tarpeen ja valitse sitten **Päivitä sovellus**.
    
 Henkilöt, joille olet sovelluksen julkaissut, näkevät automaattisesti sovelluksen päivitetyn version. 
 
-## <a name="design-the-navigation-experience-for-your-app"></a>Suunnittele sovelluksen siirtymistoiminnot
+## <a name="design-the-navigation-experience"></a>Suunnittele siirtymistoiminnot
 **Uusi siirtymisen muodostin** -asetuksen avulla voit luoda sovellukseen mukautetun siirtymisen. Mukautetun siirtymisen ansiosta käyttäjät voivat etsiä ja käyttää sisältöä helpommin sovelluksessa. Aiemmin luoduissa sovelluksissa tämä asetus on poissa käytöstä, ja uusissa sovelluksissa asetus on oletusarvoisesti käytössä.
 
 Kun asetus on poistettu käytöstä, voit valita **sovelluksen aloitussivuksi** joko **tietyn sisällön**, esimerkiksi koontinäytön tai raportin tai valita **Ei mitään**, jolloin käyttäjälle näytetään tavallinen luettelo sisällöstä.
@@ -160,27 +158,32 @@ Sovelluksia lähetettäessä käyttäjille kannattaa ottaa huomioon seuraavat as
 
 * Vieraskäyttäjät, jotka eivät ole hyväksyneet kutsua, eivät saa asennuksia automaattisesti asennettuina.  
 
-## <a name="allowing-users-to-connect-to-the-apps-underlying-datasets"></a>Sovelluksen pohjana oleviin tietojoukkoihin yhdistämisoikeuksien myöntäminen käyttäjille
-Kun valitset asetuksen, joka antaa kaikille käyttäjille oikeuden yhdistää sovelluksen pohjana oleviin tietojoukkoihin, sovelluksen käyttäjät saavat pohjana olevan tietojoukon Koonti-käyttöoikeudet. Näin käyttäjät voivat [käyttää sovelluksen tietojoukkoja eri työtiloissa](service-datasets-across-workspaces.md) sekä hakea näitä tietojoukkoja Power BI Desktopissa. Palvelu voi tarjota tietojen käyttökokemuksia sekä luoda näihin tietojoukkoihin perustuvia raportteja ja raporttinäkymiä. 
+## <a name="allow-users-to-connect-to-datasets"></a>Salli käyttäjien muodostaa yhteys tietojoukkoihin
 
-Kun poistat tämän asetuksen valinnan, sovellukseen lisäämäsi uudet käyttäjät eivät enää saa Koonti-käyttöoikeuksia. Pohjana olevien tietojoukkojen aiemmat käyttöoikeudet eivät muutu. Käyttöliittymän avulla voit manuaalisesti poistaa Koonti-käyttöoikeudet sovellusten käyttäjiltä, jotka eivät enää tarvitse niitä. Lue lisätietoja [muodostamisoikeudesta](service-datasets-build-permissions.md#build-permissions-for-shared-datasets).
+Kun valitset asetuksen, joka antaa **käyttäjille oikeuden yhdistää sovelluksen pohjana oleviin tietojoukkoihin**, sovelluksen käyttäjät saavat pohjana olevan tietojoukon *muodostamisoikeudet*. Tämän oikeuden avulla he voivat suorittaa useita keskeisiä toimintoja:
 
-## <a name="allowing-users-to-make-a-copy-of-the-reports-in-the-app"></a>Sovelluksen sisäisten raportin kopiointioikeuksien myöntäminen käyttäjille
-Jos valitset **Salli käyttäjien luoda sovelluksessa olevien raporttien kopioita** -asetuksen, käyttäjät voivat tallentaa minkä tahansa sovelluksessa olevista raporteista Omaan työtilaansa. Tämän jälkeen he voivat mukauttaa raporttia tarpeidensa mukaan. Tämä asetus edellyttää, että **Salli kaikkien käyttäjien yhdistää sovelluksen pohjana oleviin tietojoukkoihin Koonti-käyttöoikeuksien avulla** -asetus on käytössä. Tämä ominaisuus toimii kuten uusi [kopioi raportteja muista työtiloista](service-datasets-copy-reports.md) -ominaisuus.
+- [Sovelluksen tietojoukkoja voi käyttää](service-datasets-across-workspaces.md) raporttien pohjana.
+- Näitä tietojoukkoja voi hakea Power BI Desktopissa ja Power BI -palvelun tietojen noutotoiminnossa.
+- Raportteja ja koontinäyttöjä voi luoda näiden tietojoukkojen perusteella.
+
+Kun poistat tämän asetuksen valinnan, sovellukseen lisäämäsi uudet käyttäjät eivät enää saa muodostamisoikeuksia. Sovelluksen olemassa olevilla käyttäjillä pohjana olevien tietojoukkojen oikeudet eivät muutu. Voit poistaa muodostamisoikeudet manuaalisesti sovellusten käyttäjiltä, jotka eivät enää tarvitse niitä. Lue lisätietoja [muodostamisoikeudesta](service-datasets-build-permissions.md#build-permissions-for-shared-datasets).
+
+## <a name="allow-users-to-copy-reports"></a>Salli käyttäjien kopioida raportteja
+
+Jos valitset **Salli käyttäjien luoda sovelluksessa olevien raporttien kopioita** -asetuksen, käyttäjät voivat tallentaa minkä tahansa sovelluksessa olevista raporteista Omaan työtilaansa tai mihin tahansa muuhun työtilaan. Käyttäjät tarvitsevat kopion luomiseen Pro-käyttöoikeuden, vaikka alkuperäinen raportti olisi Premium-kapasiteetin työtilassa. Tämän jälkeen he voivat mukauttaa raporttia tarpeidensa mukaan. **Salli kaikkien käyttäjien yhdistää sovelluksen pohjana oleviin tietojoukkoihin muodostamisoikeuksien avulla** -asetus on valittava ensin. Valitsemalla nämä vaihtoehdot otat käyttöön uuden [Raporttien kopioiminen muista työtiloista](service-datasets-copy-reports.md) -toiminnon.
 
 ## <a name="unpublish-an-app"></a>Sovelluksen julkaisun peruuttaminen
-Kuka tahansa sovelluksen työtila jäsen voi peruuttaa sovelluksen julkaisun.
+Kuka tahansa työtilan jäsen voi peruuttaa sovelluksen julkaisun.
 
 >[!IMPORTANT]
 >Jos peruutat sovelluksen julkaisun, sovelluksen käyttäjät menettävät omat muokkauksensa. He menettävät kaikki sovelluksen sisältöön liittyvät omat kirjanmerkit, kommentit ja tilaukset. Peruuta sovelluksen julkaisu vain, jos sinun on poistettava sovellus.
 > 
-> 
 
-* Valitse sovelluksen työtilassa kolme pistettä ( **...** ) oikeasta yläkulmasta > **Peruuta sovelluksen julkaisu**.
+* Valitse työtilassa kolme pistettä ( **...** ) oikeasta yläkulmasta > **Peruuta sovelluksen julkaisu**.
   
      ![Peruuta sovelluksen julkaisu](media/service-create-distribute-apps/power-bi-app-unpublish.png)
 
-Tämä toiminto poistaa sovelluksen asennuksen kaikilta, joille se on julkaistu eivätkä he enää pysty käyttämään sitä. Se ei poista sovelluksen työtilaa tai sen sisältöä.
+Tämä toiminto poistaa sovelluksen asennuksen kaikilta, joille se on julkaistu eivätkä he enää pysty käyttämään sitä. Se ei poista työtilaa tai sen sisältöä.
 
 ## <a name="view-your-published-app"></a>Julkaistun sovelluksen tarkasteleminen
 
@@ -189,7 +192,7 @@ Kun sovelluksen kuluttajat avaavat sovelluksesi, he näkevät luomasi siirtymisr
 ![Sovellus, jossa voi siirtyä](media/service-create-distribute-apps/power-bi-new-apps-navigation.png)
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
-* [Sovelluksen työtilan luominen](service-create-workspaces.md)
+* [Luo työtila](service-create-workspaces.md)
 * [Asenna ja käytä sovelluksia Power BI:ssä](consumer/end-user-apps.md)
 * [Power BI -sovellukset ulkoisille palveluille](service-connect-to-services.md)
 * [Power BI -hallintaportaali](https://docs.microsoft.com/power-bi/service-admin-portal)

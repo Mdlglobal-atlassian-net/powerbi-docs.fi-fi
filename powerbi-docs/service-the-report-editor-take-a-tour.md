@@ -1,6 +1,6 @@
 ---
 title: Raporttieditoriin tutustuminen
-description: Power BI -palvelun raporttieditori ja Power BI Desktopin raporttieditori ovat samankaltaisia.
+description: Power BI Desktopissa ja Power BI -palvelussa voit rakentaa loppukäyttäjien näkemät raportit raporttieditorissa. Se on samankaltainen kummassakin ympäristössä.
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
@@ -8,70 +8,106 @@ featuredvideoid: IkJda4O7oGs
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 02/07/2019
+ms.date: 08/14/2019
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: 37337d7b544bcad5c1f357b00eb73d7af6c6da7d
-ms.sourcegitcommit: dc0258bb4f647ff646c6fff2aaffa29b413aa2df
+ms.openlocfilehash: c3a5454032a4138ce3d93c490fa6b3d5a7fecec5
+ms.sourcegitcommit: a77977a43342db4399a4dffb862b96907d16de35
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68342228"
+ms.lasthandoff: 08/14/2019
+ms.locfileid: "69023727"
 ---
 # <a name="tour-the-report-editor-in-power-bi"></a>Power BI -raporttieditoriin tutustuminen
 
-Power BI -palvelun *raporttieditori* ja Power BI Desktopin raporttieditori ovat samankaltaisia. Aloitat tavallisesti raporttien luomisesta Power BI Desktopissa. Seuraavaksi julkaiset ne Power BI -palveluun, jossa voit jatkaa niiden muokkaamista. Power BI -palvelussa luot myös raportteihisi perustuvat koontinäytöt.
+Power BI Desktopissa ja Power BI -palvelussa voit rakentaa loppukäyttäjien näkemät raportit *raporttieditorissa* käyttämällä kaavioita, taulukoita, karttoja ja muita visualisointeja. Se on samankaltainen kummassakin ympäristössä. Aloitat tavallisesti raportin luomisen Power BI Desktopissa. Seuraavaksi julkaiset sen Power BI -palveluun, jossa voit jatkaa sen muokkaamista. Power BI -palvelussa luot myös raportteihisi perustuvat koontinäytöt.
 
-Kun olet luonut koontinäyttöjä ja raportteja, jaat ne raporttien kuluttajille. Jakamistavan mukaan loppukäyttäjät saattavat voida käsitellä niitä Power BI -palvelun lukunäkymässä, mutta eivät muokata. Lue lisää siitä, [mitä raporttien käyttäjät voivat tehdä Power BI -palvelussa](consumer/end-user-reading-view.md). 
+Kun olet luonut koontinäyttöjä ja raportteja, jaat ne raporttien kuluttajille. Jakamistavan mukaan loppukäyttäjät voivat käsitellä niitä Power BI -palvelun lukunäkymässä, mutta eivät muokata. Lue lisää siitä, [mitä raporttien käyttäjät voivat tehdä Power BI -palvelussa](consumer/end-user-reading-view.md). 
 
-Tässä videossa näytetään Power BI Desktopin raporttieditori. Tässä artikkelissa kerrotaan Power BI -palvelussa raporttieditorista. 
+Tässä videossa näytetään Power BI Desktopin raporttieditori. Tässä artikkelissa näytetään myös Power BI Desktopin raporttieditori. 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/IkJda4O7oGs" frameborder="0" allowfullscreen></iframe>
 
-Power BI -palvelun raporttieditori on saatavilla vain muokkausnäkymässä. Jotta voit avata raportin muokkausnäkymässä, sinun on oltava raportin omistaja tai luoja tai sen sovelluksen työtilan käyttäjä, jossa raporttia säilytetään.
+Power BI -palvelun raporttieditori on saatavilla vain muokkausnäkymässä. Jotta voit avata raportin muokkausnäkymässä, sinun on oltava raportin omistaja tai tekijä tai sen työtilan käyttäjä, jossa raporttia säilytetään.
 
-Power BI -raporttieditorissa on kolme osaa:  
+![Raporttieditorin osat](media/service-the-report-editor-take-a-tour/power-bi-report-editor-overview-numbered.png)
 
-1. **Kentät**-, **Visualisoinnit**- ja **Suodattimet**-ruudut.
-2. yläosan siirtymispalkit    
-3. raportin pohja     
+Power BI:n raporttieditori on jaettu useisiin pääosiin:  
 
-![Raporttieditorin osat](media/service-the-report-editor-take-a-tour/power-bi-report-canvas.png)
+1. Yläreunan siirtymispalkki
+1. Raportin pohja
+1. Suodattimet-ruutu
+1. Visualisoinnit-paneeli
+1. Kentät-ruutu
 
-## <a name="1-the-report-editor-panes"></a>1. Raporttieditorin ruudut
-![Power BI -raporttieditori](media/service-the-report-editor-take-a-tour/power-bi-report-panes.png)
+## <a name="1-the-top-navigation-bar"></a>1. Yläreunan siirtymispalkki
+Yläreunan siirtymispalkissa on useita toimintoja, joita lisätään koko ajan. Saat lisätietoja tietystä toiminnosta Power BI -dokumentaation sisällysluettelosta tai hakuruudusta.
 
-Kolme ruutua näkyvät, kun avaat raportin ensimmäistä kertaa: Visualisoinnit, Suodattimet ja Kentät. Vasemmanpuoleisten Visualisoinnit- ja Suodattimet-ruutujen avulla hallitaan visualisointien ulkoasua – tyyppiä, värejä, suodatusta ja muotoilua.  Oikeanpuoleisen Kentät-ruudun avulla hallitaan visualisoinneissa käytettäviä pohjatietoja. 
 
-Raporttieditorissa näytetty sisältö vaihtelee raportin piirtoalustassa tehtyjen valintojen mukaan.  Kun esimerkiksi valitset yksittäisen visualisoinnin:
+## <a name="2-the-report-canvas"></a>2. Raportin piirtoalusta
+Työsi tulee näkyviin raportin piirtoalustalle. Kun luot visualisointeja Kentät-, Suodattimet- ja Visualisoinnit-ruutujen avulla, visualisoinnit näytetään raportin piirtoalustalla. Piirtoalustan alareunan jokainen välilehti edustaa raportin sivua. Avaa tämä sivu valitsemalla välilehti. 
 
-|  |  |
-| --- | --- |
-| ![Raporttieditorin ruudut](media/service-the-report-editor-take-a-tour/power-bi-panes.png) |<ul><li>Visualisointi-ruudun yläosassa määritetään käytettävän visualisoinnin tyyppi eli tässä esimerkissä yhdistelmäpylväskaavio.<br><br></li> <li>Visualisointi-ruudun alaosassa (sinun on ehkä vieritettävä alaspäin) näytetään visualisoinnissa käytettävät kentät. Tässä kaaviossa käytetään Verokuukausi-, Aluepäällikkö- ja  Kokonaismyyntivaihtelu-kenttiä. <br><br></li><li>Suodattimet-ruudussa (sinun on ehkä vieritettävä alaspäin) näytetään kaikki sovelletut suodattimet. <br><br></li><li>Kentät-ruudussa luetteloidaan saatavilla olevat taulukot ja, jos laajennat taulukon nimeä, tämän taulukon perustana olevat kentät. Keltainen fontti kertoo, että visualisoinnissa käytetään vähintään yhtä tämän taulukon kenttää.<br><br></li><li>![maalirullakuvake](media/service-the-report-editor-take-a-tour/power-bi-paint-roller-icon.png) Voit näyttää valitun visualisoinnin muotoiluruudun valitsemalla maalirullakuvakkeen.<br><br></li><li>![suurennuslasikuvake](media/service-the-report-editor-take-a-tour/power-bi-magnifying-icon.png) Voit näyttää Analytiikka-ruudun valitsemalla suurennuslasikuvakkeen.</ul> |
+## <a name="the-report-editor-panes"></a>Raporttieditorin ruudut
 
-## <a name="the-visualizations-pane"></a>Visualisoinnit-ruutu
-![Visualisointi-ruudun yläosa](media/service-the-report-editor-take-a-tour/selectviz.png)
+Kolme ruutua näkyvät, kun avaat raportin ensimmäistä kertaa: Suodattimet, Visualisoinnit ja Kentät. Kaksi ensimmäistä ruutua vasemmalla (Visualisoinnit ja Suodattimet) hallitsevat visualisointien ulkoasua – tyyppiä, värejä, suodatusta ja muotoilua. Oikeanpuoleisen Kentät-ruudun avulla hallitaan visualisoinneissa käytettäviä pohjatietoja. Raporttieditorissa näytetty sisältö vaihtelee raportin piirtoalustassa tehtyjen valintojen mukaan. 
 
-Voit täällä valita visualisointityypin. Pieniä kuvia kutsutaan *malleiksi*. Yllä olevassa kuvassa on valittu yhdistelmäpalkkikaavio. Jos et valitse ensin visualisointityyppiä vaan alat sen sijaan luoda visualisointia valitsemalla kentät, Power BI poimii visualisointityypin puolestasi. Voit pitää Power BI:n valinnan tai vaihtaa tyyppiä valitsemalla eri mallin. Voit vaihtaa mallia niin monta kertaa kuin tarvitset, jotta löydät tietojasi parhaiten vastaavan visualisointityypin.
+Kun esimerkiksi valitset yksittäisen visualisoinnin, kuten tämän pylväskaavion:
 
-### <a name="manage-the-fields-in-your-visual"></a>Visualisoinnin kenttien hallinta
-![Visualisointi-ruudun keskiosa](media/service-the-report-editor-take-a-tour/power-bi-field-list.png)
+![Power BI -raporttieditori](media/service-the-report-editor-take-a-tour/power-bi-report-editor-panes.png)
 
-Tässä ruudussa näytetyt säilöt (joita kutsutaan joskus *lähteiksi*) vaihtelevat valitsemasi visualisointityypin mukaan.  Jos valitsit esimerkiksi palkkikaavion, näet säilöt arvoille, akseleille ja selitteelle. Kun valitset kentän tai vedät sen piirtoalustalle, Power BI lisää tämän kentän yhteen säilöistä.  Voit myös vetää kentät Kentät-luettelosta suoraan säilöihin.  Jotkin säilöt on rajoitettu tietyntyyppisiin tietoihin.  Esimerkiksi **Arvot**-kenttään ei hyväksytä ei-numeerisia kenttiä. Jos siis vedät **Työntekijän nimi** -kentän **Arvot**-säilöön, Power BI muuttaa sen **Työntekijän nimen lukumäärä** -kentäksi.
+**Suodattimet-ruutu** näyttää visualisoinnin, sivun tai kaikkien sivujen suodattimet. Tässä tapauksessa sivutason suodattimia on, mutta visualisointitason suodattimia ei ole.
 
-### <a name="remove-a-field"></a>Kentän poistaminen
-Voit poistaa kentän visualisoinnista valitsemalla **X** kentän nimen oikealta puolelta.
+**Visualisointi-ruudun yläosassa** määritetään käytettävän visualisoinnin tyyppi. Tässä esimerkissä se on klusteroitu pylväskaavio. 
 
-![Myymälätyypin poistaminen selitteestä](media/service-the-report-editor-take-a-tour/deletefield.png)
+**Visualisointi-ruudun alaosassa** on kolme välilehteä:
 
-Katso lisätietoja artikkelista [Visualisointien lisääminen Power BI -raporttiin](visuals/power-bi-report-add-visualizations-i.md).
+![Visualisoinnin kentät](media/service-the-report-editor-take-a-tour/power-bi-fields-visualization-pane.png) **Kentät** näyttää visualisoinnin kentät. Saatat joutua vierittämään alaspäin, jotta näet kaikki tiedot. Tässä kaaviossa on käytössä MyymälänNumeroNimi ja Tämän vuoden myynti.
+
+![Maalirullakuvake](media/service-the-report-editor-take-a-tour/power-bi-paint-roller.png) **Muotoilu** Voit näyttää valitun visualisoinnin muotoiluruudun valitsemalla maalirullakuvakkeen.
+
+![suurennuslasikuvake](media/service-the-report-editor-take-a-tour/power-bi-magnifying-glass.png) **Analysointi** Voit näyttää Analysointi-ruudun valitsemalla suurennuslasikuvakkeen.
+
+**Kentät-ruudussa** on luettelo kaikista tietomallin käytettävissä olevista taulukoista. Kun laajennat taulukon, näet kentät kyseisessä taulukossa. Keltainen valintamerkki kertoo, että visualisoinnissa on vähintään yksi tämän taulukon kenttä.
+
+Lue lisätietoja kustakin ruudusta.
+
+## <a name="3-the-filters-pane"></a>3. Suodattimet-ruutu
+Voit Suodattimet-ruudun avulla tarkastella, määrittää ja muokata raporttien pysyviä suodattimia sivun, raportin, porautumisen ja visualisoinnin tasolla. Kyllä, voit suodattaa myös tilapäisesti raportin sivuja ja visualisointeja valitsemalla visualisoinnin elementit tai käyttämällä osittajien kaltaisia työkaluja. Suodattimet-ruudussa olevan suodatuksen etuna on, että suodattimien tila tallennetaan raportin mukana. 
+
+Suodattimet-ruudulla on myös toinen tehokas ominaisuus: voit suodattaa käyttämällä kenttää, *jota ei jo käytetä raportin visualisoinneissa*. Selvitän tätä tarkemmin. Kun luot visualisoinnin, Power BI lisää automaattisesti kaikki visualisoinnissa käyttämäsi kentät Suodattimet-ruudun visualisointitason suodatinalueelle. Jos haluat määrittää visualisoinnin, sivun, porauksen tai raportin suodattimen käyttämällä kenttää, jota ei tällä hetkellä käytetä visualisoinnissa, vedä se johonkin Suodattimet-säilöön.
+
+Uusi suodatuskokemus on entistä joustavampi. Voit esimerkiksi muotoilla uusia suodattimia niin, että ne näyttävät samalta kuin itse raportti. Voit myös lukita suodattimia tai piilottaa ne raportin kuluttajilta. 
+
+![Uusi suodatuskokemus](media/service-the-report-editor-take-a-tour/power-bi-filters-pane.png)
+
+Lue lisää [uudesta suodatuskokemuksesta](power-bi-report-filter.md).
+
+## <a name="4-the-visualizations-pane"></a>4. Visualisoinnit-ruutu
+
+Visualisoinnit-ruudussa on neljä osaa. Aloitamme ruudun yläreunasta.
+
+![Visualisointi-ruudun yläosa](media/service-the-report-editor-take-a-tour/power-bi-visual-pane-icons.png)
+
+Valitset täällä visualisointityypin. Pienet kuvakkeet näyttävät luotavissa olevat erityyppiset visualisoinnit. Yllä olevassa kuvassa on valittu kuplakaavio. Jos aloitat visualisoinnin rakentamisen valitsemalla kenttiä ilman että valitset ensin visualisointityypin, Power BI valitsee visualisointityypin puolestasi. Voit pitää Power BI:n valinnan tai vaihtaa tyyppiä valitsemalla eri kuvakkeen.
+
+Voit ladata mukautettuja visualisointeja Power BI Desktopiin. Myös niiden kuvakkeet näkyvät tässä ruudussa. 
+
+### <a name="manage-the-fields-in-a-visualization"></a>Visualisoinnin kenttien hallinta
+
+![Visualisointi-ruudun alareuna](media/service-the-report-editor-take-a-tour/power-bi-visualization-field-manager.png)
+
+Tämän ruudun säilöt (joita kutsutaan joskus *lähteiksi*) vaihtelevat valitsemasi visualisointityypin mukaan.  Jos valitsit esimerkiksi palkkikaavion, näet kohdat Akseli, Selite ja Arvot. Kun valitset kentän tai vedät sen pohjaan, Power BI lisää tämän kentän yhteen säilöistä.  Voit myös vetää kentät Kentät-luettelosta suoraan säilöihin.  Jotkin säilöt on rajoitettu tietyntyyppisiin tietoihin.  Esimerkiksi **Arvot**-kenttään ei hyväksytä ei-numeerisia kenttiä. Jos siis vedät **Luokka**-kentän **Arvot**-säilöön, Power BI muuttaa sen **Luokkamäärä**-kentäksi.
+
+Lisätietoja on artikkelissa [Visualisointien lisääminen Power BI -raporttiin](visuals/power-bi-report-add-visualizations-i.md).
+
+Ruudun tässä osassa on myös vaihtoehtoja, joilla hallitaan [porauksen](desktop-drillthrough.md) ja suodatuksen toimintaa.
 
 ### <a name="format-your-visuals"></a>Visualisointien muotoileminen
 Voit näyttää Muotoilu-ruudun valitsemalla maalirullakuvakkeen. Saatavilla olevat vaihtoehdot riippuvat valitun visualisoinnin tyypistä.
 
-![Raporttieditorin Muotoilu-ruutu](media/service-the-report-editor-take-a-tour/power-bi-formatting.png)
+![Raporttieditorin Muotoilu-ruutu](media/service-the-report-editor-take-a-tour/power-bi-visual-pane-format.png)
 
-Muotoilumahdollisuudet ovat lähes loputtomat.  Saat lisätietoja tutustumalla aiheeseen omatoimisesti tai lukemalla seuraavat artikkelit:
+Muotoilumahdollisuuksia on paljon.  Saat lisätietoja tutustumalla aiheeseen omatoimisesti tai lukemalla seuraavat artikkelit:
 
 * [Visualisoinnin otsikon, taustan ja selitteen mukauttaminen](visuals/power-bi-visualization-customize-title-background-and-legend.md)
 * [Värin muotoileminen](visuals/service-getting-started-with-color-formatting-and-axis-properties.md)
@@ -80,56 +116,38 @@ Muotoilumahdollisuudet ovat lähes loputtomat.  Saat lisätietoja tutustumalla a
 ### <a name="add-analytics-to-your-visualizations"></a>Analytiikan lisääminen visualisointeihin
 Voit näyttää Analytiikka-ruudun valitsemalla suurennuslasikuvakkeen. Saatavilla olevat vaihtoehdot riippuvat valitun visualisoinnin tyypistä.
 
-![Raporttieditorin Analytiikka-ruutu](media/service-the-report-editor-take-a-tour/power-bi-analytics.png)    
-Power BI -palvelun Analytiikka-ruudussa voit lisätä dynaamisia viiteviivoja visualisointeihin ja määrittää kohdistuksen tärkeille trendeille tai merkityksellisille tiedoille. Lisätietoja on artikkelissa [Power BI -palvelun Analytiikka-ruutu](service-analytics-pane.md) tai [Power BI Desktopin Analytiikka-ruutu](desktop-analytics-pane.md).
+![Raporttieditorin Analytiikka-ruutu](media/service-the-report-editor-take-a-tour/power-bi-visual-pane-analytics.png)
 
-- - -
-## <a name="the-filters-pane"></a>Suodattimet-ruutu
-Voit Suodattimet-ruudun avulla tarkastella, määrittää ja muokata raporttien pysyviä suodattimia sivun, raportin, porautumisen ja visualisoinnin tasolla. Kyllä, voit suodattaa myös tilapäisesti raportin sivuja ja visualisointeja valitsemalla visualisoinnin elementit tai käyttämällä osittajien kaltaisia työkaluja. Kun käytät Suodattimet-ruutua, suodattimien tila tallennetaan kuitenkin raportin kanssa. 
+Power BI -palvelun Analytiikka-ruudussa voit lisätä dynaamisia viiteviivoja visualisointeihin ja määrittää kohdistuksen tärkeille trendeille tai merkityksellisille tiedoille. Lisätietoja on artikkelissa [Analytiikkaruutu Power BI Desktopissa](desktop-analytics-pane.md).
 
-Suodattimet-ruudulla on myös toinen tehokas ominaisuus: voit suodattaa käyttämällä kenttää, ***jota ei jo käytetä raportin visualisoinneissa***. Selvitän tätä tarkemmin. Kun luot raportin sivun, Power BI lisää automaattisesti kaikki käyttämäsi kentät visualisointeihin Suodattimet-ruudun Visualisointi-tason suodatinalueella.  Jos haluat määrittää visualisoinnin, sivun, porauksen tai raportin suodattimen käyttämällä kenttää, jota ei tällä hetkellä käytetä visualisoinnissa, vedä se yhteen Suodattimet-säilöistä.   
-
-![Suodattimet-ruutu](media/service-the-report-editor-take-a-tour/power-bi-formatting-pane.png)
-
-Katso lisätietoja artikkelista [Suodattimen lisääminen raporttiin](power-bi-report-add-filter.md).
-
-Uusi suodatuskokemus on tällä hetkellä esikatseluvaiheessa. Voit muotoilla uusia suodattimia niin, että ne näyttävät samalta kuin itse raportti. Voit myös lukita suodattimia tai piilottaa ne raportin kuluttajilta. 
-
-![Uusi suodatuskokemus](media/service-the-report-editor-take-a-tour/power-bi-filter-reading.png)
-
-Lue lisää [uudesta suodatuskokemuksesta](power-bi-report-filter.md).
-
-- - -
-## <a name="the-fields-pane"></a>Kentät-ruutu
-Kentät-ruudussa näytetään tiedoissasi olevat taulukot ja kentät, joiden avulla voit luoda visualisointeja.
+## <a name="5-the-fields-pane"></a>5. Kentät-ruutu
+Kentät-ruudussa näytetään tiedoissasi olevat taulukot, kansiot ja kentät, joiden avulla voit luoda visualisointeja.
 
 |  |  |
 | --- | --- |
-| ![Kentät-ruutu](media/service-the-report-editor-take-a-tour/reportfields.png) |<ul><li>Voit aloittaa uuden visualisoinnin vetämällä kentän sivulle.  Voit myös vetää kentän aiemmin luotuun visualisointiin, jos haluat lisätä kentän tähän visualisointiin.<br><br></li> <li>Kun lisäät valintamerkin kentän viereen, Power BI lisää tämän kentän aktiiviseen (tai uuteen) visualisointiin. Se myös päättää, mihin säilöön tämä kenttä sijoitetaan.  Esimerkiksi pitäisikö käyttää Selite-, Akseli- vai Arvo-kenttää? Power BI tekee parhaan arvauksen, ja voit siirtää sen tästä säilöstä toiseen tarvittaessa. <br><br></li><li>Kummassakin tapauksessa kukin valittu kenttä lisätään Visualisoinnit-ruutuun raporttieditorissa.</li></ul> |
+| ![Kentät-ruutu](media/service-the-report-editor-take-a-tour/power-bi-fields-list.png) |<ul><li>Voit aloittaa uuden visualisoinnin vetämällä kentän sivulle.  Voit myös vetää kentän aiemmin luotuun visualisointiin, jos haluat lisätä kentän tähän visualisointiin.<br><br></li> <li>Kun lisäät valintamerkin kentän viereen, Power BI lisää tämän kentän aktiiviseen (tai uuteen) visualisointiin. Se myös päättää, mihin säilöön tämä kenttä sijoitetaan.  Esimerkiksi pitäisikö käyttää Selite-, Akseli- vai Arvo-kenttää? Power BI tekee parhaan arvauksen, ja voit siirtää sen tästä säilöstä toiseen tarvittaessa. <br><br></li><li>Kummassakin tapauksessa kukin valittu kenttä lisätään Visualisoinnit-ruutuun raporttieditorissa.</li></ul> |
 
-**HUOMAUTUS**: Jos käytät Power BI Desktopia, voit myös näyttää/piilottaa kentät, lisätä laskutoimituksia jne.
+Power BI Desktopissa voit myös näyttää/piilottaa kentät, lisätä laskutoimituksia jne.
 
-### <a name="what-do-the-field-icons-mean"></a>Mitä kentän kuvakkeet tarkoittavat?
-**∑ Koosteet** Kooste on numeerinen arvo, joka esimerkiksi ynnätään yhteen tai pyöristetään keskiarvoksi. Koosteita tuodaan yhdessä tietojen kanssa (määritetty tietomallissa, johon raportti perustuu).
-Katso lisätietoja artikkelista [Power BI -raporttien koosteet](service-aggregates.md).
+## <a name="the-field-icons"></a>Kenttäkuvakkeet
 
-![Laskimen kuvake](media/service-the-report-editor-take-a-tour/pbi_calculated_icon.png)**Lasketut mittarit (kutsutaan myös lasketuiksi kentiksi)**  
-Jokaisella lasketulla kentällä on oma pysyväiskoodattu kaavansa. Et voi muuttaa laskutoimitusta. Jos se on  esimerkiksi summa, se voi olla vain summa. Saat lisätietoja artikkelista [Mittarien ymmärtäminen](desktop-measures.md)
+Power BI käyttää useita eri kuvakkeita raportin kenttätyyppien ilmaisemiseen. Kun tunnistat ne, ymmärrät paremmin, miten ne toimivat eri visualisoinneissa. Seuraavassa on muutamia yleisiä kuvakkeita.
 
-![Yksilöllisen kentän kuvake](media/service-the-report-editor-take-a-tour/icon.png) **Yksilölliset kentät**  
-Tämän kuvakkeen kentät on tuotu Excelistä ja ne on määritetty näyttämään kaikki arvot, vaikka niillä olisi kaksoiskappaleita. Tiedoissa voi olla esimerkiksi kaksi tietuetta henkilölle nimeltä ”Matti Virtanen”, ja jokaista niistä käsitellään yksilöllisenä, eikä niitä lasketa yhteen.  
 
-**![Maantiedekuvake](media/service-the-report-editor-take-a-tour/pbi_geo_icon.png) Maantiede-kentät**  
-Voit sijainnin kenttien avulla luoda karttavisualisointeja. 
-
-**![Hierarkiakuvake](media/service-the-report-editor-take-a-tour/power-bi-hierarchy-icon.png) Hierarkia**  
-Valitse nuoli, jotta näet kentät, jotka muodostavat hierarkian. 
-
-## <a name="2-the-top-navigation-bar"></a>2. Yläreunan siirtymispalkki
-Yläreunan siirtymispalkissa on useita toimintoja, joita lisätään koko ajan. Saat lisätietoja tietystä toiminnosta Power BI -dokumentaation sisällysluettelosta tai hakuruudusta.
-
-## <a name="3-the-report-canvas"></a>3. Raportin piirtoalusta
-Työsi tulee näkyviin raportin piirtoalustalle. Kun luot visualisointeja Kentät-, Suodattimet- ja Visualisoinnit-ruutujen avulla, visualisoinnit näytetään raportin piirtoalustalla. Piirtoalustan alareunan jokainen välilehti edustaa raportin sivua. Avaa tämä sivu valitsemalla välilehti. 
+|Kuvake  |Merkitys  |
+|---------|---------|
+| ![Kansio](media/service-the-report-editor-take-a-tour/power-bi-field-list-folder.png) | Kansio Kentät-luettelossa |
+|![Numeerinen kenttä](media/service-the-report-editor-take-a-tour/power-bi-field-list-numeric.png) | Numeerinen kenttä: Numeeriset kentät ovat koosteita, joista voidaan laskea esimerkiksi summa tai keskiarvo. Koosteita tuodaan yhdessä tietojen kanssa ja ne on määritetty tietomallissa, johon raportti perustuu. Katso lisätietoja artikkelista [Power BI -raporttien koosteet](service-aggregates.md). |
+|![Muu kuin numeerinen laskettu sarake](media/service-the-report-editor-take-a-tour/power-bi-field-list-calculated-column.png) | Laskettu sarake, jonka tietotyyppi on muu kuin numeerinen: Uusi muu kuin numeerinen sarake, jonka luot Data Analysis Expressions (DAX) -kaavalla, joka määrittää sarakkeen arvot. Lue lisää [lasketuista sarakkeista](desktop-calculated-columns.md). |
+|![Numeerinen laskettu sarake](media/service-the-report-editor-take-a-tour/power-bi-field-list-numeric-calculated-column.png)     |   Numeerinen laskettu sarake: Uusi sarake, jonka luot Data Analysis Expressions (DAX) -kaavalla, joka määrittää sarakkeen arvot. Lue lisää [lasketuista sarakkeista](desktop-calculated-columns.md). |
+|![Mittari](media/service-the-report-editor-take-a-tour/power-bi-field-list-measure.png) |  Mittari: Mittarilla on oma pysyväiskoodattu kaavansa. Et voi muuttaa laskutoimitusta. Jos se on  esimerkiksi summa, se voi olla vain summa. Arvoja ei tallenneta sarakkeeseen. Ne lasketaan lennossa sen mukaan, mikä on niiden sijainti visualisoinnissa. Lisätietoja on artikkelissa [Mittarien ymmärtäminen](desktop-measures.md). |
+|![Mittariryhmä](media/service-the-report-editor-take-a-tour/power-bi-field-list-measure-group.png)     | Mittariryhmä  |
+|![Suorituskykyilmaisimen kuvake](media/service-the-report-editor-take-a-tour/power-bi-field-list-kpi.png) |      Suorituskykyilmaisin: Visuaalinen vihje, joka kertoo edistymisen määrän kohti mitattavissa olevaa tavoitetta. Lue lisää artikkelista [Suorituskykyilmaisimen (KPI)](visuals/power-bi-visualization-kpi.md) visualisoinnit |
+|![Hierarkian kuvake](media/service-the-report-editor-take-a-tour/power-bi-field-list-hierarchy.png)     |  Kenttien hierarkia: Näet hierarkian muodostavat kentät valitsemalla nuolen.  Saat lisätietoja katsomalla tämän YouTubessa olevan Power BI -videon [hierarkioiden luomisesta ja käyttämisestä](https://www.youtube.com/watch?v=q8WDUAiTGeU). |
+|![Maantieteelliset tiedot](media/service-the-report-editor-take-a-tour/power-bi-field-list-geo-data.png)     | Maantieteelliset tiedot: Näiden sijaintikenttien avulla voit luoda karttavisualisointeja. |
+| ![Käyttäjätiedot-kenttä](media/service-the-report-editor-take-a-tour/power-bi-field-list-identity.png)     | Käyttäjätiedot-kenttä: Tämän kuvakkeen kentät ovat *yksilöllisiä kenttiä*. Ne on määritetty näyttämään kaikki arvot, vaikka niillä olisi kaksoiskappaleita. Tiedoissa voi olla esimerkiksi kaksi tietuetta henkilölle nimeltä ”Matti Virtanen”, ja jokaista niistä käsitellään yksilöllisenä. Niitä ei lasketa yhteen.   |
+|![Parametri](media/service-the-report-editor-take-a-tour/power-bi-field-list-parameter.png)   | Parametri: Määritä parametreja, jotta raporttien ja tietomallien osat (kuten kyselysuodatin, tietolähdeviittaus, mittarin määritys jne.) on riippuvainen vähintään yhdestä parametriarvosta. Lisätietoja [kyselyparametreista](https://powerbi.microsoft.com/blog/deep-dive-into-query-parameters-and-power-bi-templates/) on tässä Power BI -blogikirjoituksessa. |
+| ![Kalenteri](media/service-the-report-editor-take-a-tour/power-bi-field-list-calendar.png) | Kalenterin päivämääräkenttä, jossa on sisäinen päivämäärätaulukko |
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 [Raportin luominen](service-report-create-new.md)

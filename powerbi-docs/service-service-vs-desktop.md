@@ -8,27 +8,27 @@ featuredvideoid: IkJda4O7oGs
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/21/2018
+ms.date: 08/12/2019
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: 8d690e8fd19ab988192c2aa36053416d2bb3d45c
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 7583c108bd996505937242cc083c4aa9abbaa5a8
+ms.sourcegitcommit: 0e50ebfa8762e19286566432870ef16d242ac78f
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61403406"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "68961692"
 ---
 # <a name="comparing-power-bi-desktop-and-the-power-bi-service"></a>Power BI Desktopin ja Power BI -palvelun vertailu
 
-Power BI Desktopin ja Power BI -palvelun Venn-vertailukaaviossa keskellä oleva alue näyttää, miten nämä kaksi palvelua limittyvät. Voit tehdä joitakin tehtäviä joko Power BI Desktopissa tai palvelussa. Venn-kaavion kummallakin puolella olevalla sovelluksella ja palvelulla on kuitenkin omat ainutlaatuiset ominaisuutensa.  
+Power BI Desktopin ja Power BI -palvelun Venn-vertailukaaviossa keskellä oleva alue näyttää, miten nämä kaksi palvelua limittyvät. Voit tehdä joitakin tehtäviä joko Power BI Desktopissa tai palvelussa. Venn-kaavion kumpikin puoli näyttää ominaisuudet, jotka ovat ainutlaatuisia sovellukselle ja palvelulle.  
 
 ![Power BI Desktopin ja palvelun Venn-kaavio](media/service-service-vs-desktop/power-bi-venn-desktop-service.png)
 
-**Power BI Desktop** on kattava tietoanalyysien ja raporttien luontityökalu. Kun asennat ilmaisen sovelluksen paikalliseen tietokoneeseen, voit muodostaa yhteyden moniin eri tietolähteisiin ja yhdistää ne (kutsutaan usein mallintamiseksi) tietomalliin. [Power BI Desktopin aloitusopas](desktop-getting-started.md) ohjaa sinut prosessin läpi.
+**Power BI Desktop** on kattava tietoanalyysien ja raporttien luontityökalu, jonka voit asentaa ilmaiseksi paikalliseen tietokoneeseesi. Asennuksessa on mukana Kyselyeditori, jonka avulla voit muodostaa yhteyden moniin eri tietolähteisiin ja yhdistää ne (kutsutaan usein mallintamiseksi) tietomalliin. Sen jälkeen voit suunnitella kyseiseen tietomalliin perustuvan raportin. [Power BI Desktopin aloitusopas](desktop-getting-started.md) ohjaa sinut prosessin läpi.
 
-**Power BI -palvelu** on pilvipohjainen verkkopalvelu kevyeen raportin muokkaukseen ja yhteistyöhön työryhmille ja yrityksille. Voit muodostaa yhteyden tietolähteisiin myös Power BI -palvelussa, mutta mallintamista on rajoitettu. 
+**Power BI -palvelu** on pilvipohjainen palvelu. Se tukee raporttien kevyttä muokkaamista ja yhteistyötä tiimeissä ja organisaatioissa. Voit muodostaa yhteyden tietolähteisiin myös Power BI -palvelussa, mutta mallintamista on rajoitettu. 
 
-Useimmat raportin suunnittelijat, jotka työskentelevät yritystietoprojekteissa, käyttävät **Power BI Desktopia** raporttien luomiseen ja sitten **Power BI -palvelua** raporttien jakamiseen muiden kanssa.
+Useimmat raportin suunnittelijat, jotka työskentelevät liiketoimintatietoprojekteissa, käyttävät **Power BI Desktopia** raporttien luomiseen ja sitten **Power BI -palvelua** raporttien jakamiseen muiden kanssa.
 
 ## <a name="report-editing"></a>Raportin muokkaaminen
 
@@ -46,9 +46,16 @@ Tässä videossa näytetään Power BI Desktopin raporttieditori.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/IkJda4O7oGs" frameborder="0" allowfullscreen></iframe>
 
-## <a name="collaborating-in-the-power-bi-service"></a>Yhteistyö Power BI -palvelussa
+## <a name="working-in-the-power-bi-service"></a>Power BI -palvelun käyttäminen
 
-Kun olet luonut raportit, voit tallentaa ne *työtilaan*  **Power BI -palvelussa**, jossa sinä ja työtoverisi teette yhteistyötä. Voit luoda *koontinäyttöjä* näiden raporttien päälle. Voit sitten jakaa kyseiset koontinäytöt ja raportit raporttien käyttäjille organisaation sisä- ja ulkopuolella. Raportin käyttäjät voivat tarkastella niitä Power BI -palvelun [lukunäkymässä](consumer/end-user-reading-view.md), ei muokkausnäkymässä. Niitä ei ole käyttää kaikkia ominaisuuksia, jotka ovat raportin luojien käytettävissä. 
+### <a name="collaborating"></a>Yhteistyö
+
+
+Kun olet luonut raportit, voit tallentaa ne *työtilaan*  **Power BI -palvelussa**, jossa sinä ja työtoverisi teette yhteistyötä. Voit luoda *koontinäyttöjä* näiden raporttien päälle. Voit sitten jakaa kyseiset koontinäytöt ja raportit raporttien käyttäjille organisaation sisä- ja ulkopuolella. Raportin käyttäjät voivat tarkastella niitä Power BI -palvelun *lukunäkymässä*, ei muokkausnäkymässä. He eivät voi käyttää kaikkia ominaisuuksia, jotka ovat saatavilla raportin tekijöille.  Voit myös jakaa tietojoukkosi ja antaa muiden luoda omia raportteja niistä. Lue lisää [yhteistyöstä Power BI -palvelussa](service-new-workspaces.md).
+
+### <a name="self-service-data-prep-with-dataflows"></a>Omatoiminen tietojen valmisteleminen tietovoiden avulla
+
+Tietovoiden avulla organisaatiot voivat yhdistää eri lähteistä olevia tietoja ja valmistella ne mallinnusta varten. Analyytikot voivat luoda helposti tietovoita tutuilla, omatoimisilla työkaluilla. Analyytikot voivat tietovoita käyttämällä käyttää, muuntaa, yhdistää ja täydentää massadataa määrittämällä tietolähdeyhteyksiä, keräämis-, muuntamis- ja lataamislogiikka, päivitysaikatauluja ja paljon muuta. Lue lisää [omatoimisesta tietojen valmistelemisesta tietovoiden avulla](service-dataflows-overview.md).
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 

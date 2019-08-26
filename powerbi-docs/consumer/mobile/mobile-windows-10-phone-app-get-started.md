@@ -7,17 +7,17 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 06/28/2018
+ms.date: 08/09/2019
 ms.author: mshenhav
-ms.openlocfilehash: aa41e1e2869ad4d2f77224e3bec99dc00c59c536
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 0a60fe526e83e5220e9b310097c8ba37682a396e
+ms.sourcegitcommit: d12bc6df16be1f1993232898f52eb80d0c9fb04e
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61337335"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "68995227"
 ---
 # <a name="get-started-with-the-power-bi-mobile-app-for-windows-10"></a>Windows 10:n Power BI -mobiilisovelluksen käytön aloittaminen
-Windows 10:n Power BI -mobiilisovellus tuo Power BI:n tablettiin tai puhelimeen ja sen myötä ajan tasalla olevan, kosketuskäyttöisen mobiiliyhteyden yritystietoihisi. Tarkastele ja käytä yrityksesi koontinäyttöjä missä tahansa kätevästi [Windowsin Aloitusnäytöllä](mobile-pin-dashboard-start-screen-windows-10-phone-app.md).
+Windows 10:n Power BI -mobiilisovellus tuo Power BI:n tablet-laitteeseen tai puhelimeen. Voit käyttää yritystietoja ajan tasalla olevan, kosketuksella toimivan mobiilijärjestelmän kautta. Tarkastele ja käytä yrityksesi koontinäyttöjä missä tahansa kätevästi [Windowsin Aloitusnäytöllä](mobile-pin-dashboard-start-screen-windows-10-phone-app.md).
 
 ![Windowsin tapahtumaruutu](./media/mobile-windows-10-phone-app-get-started/pbi_win10_livetile.gif)
 
@@ -28,12 +28,12 @@ Sitten voit käyttää koontinäyttöjä ja raportteja, tutkia tietoja ja jakaa 
 ## <a name="first-things-first"></a>Aloitetaan tärkeimmästä
 * [**Hanki Windows 10:n Power BI -mobiilisovellus**  ](http://go.microsoft.com/fwlink/?LinkID=526478) Windows Storesta.
   
-  Laitteessa on oltava käytössä Windows 10. Sovellusta voidaan käyttää laitteissa, joissa on vähintään 3 Gigatavua RAM-muistia ja 8 Gigatavua tallennustilaa.
+  Laitteen käyttöjärjestelmän on oltava Windows 10. Sovellusta voidaan käyttää laitteissa, joissa on vähintään 3 gigatavua RAM-muistia ja 8 gigatavua tallennustilaa.
    
 * Katso [Power BI -mobiilisovellusten uudet ominaisuudet](mobile-whats-new-in-the-mobile-apps.md).
 
 ## <a name="sign-up-for-the-power-bi-service-on-the-web"></a>Rekisteröidy verkossa Power BI -palveluun
-Jos et ole jo rekisteröinyt, siirry [Power BI -palveluun](http://powerbi.com/) oman tilin luomiseen, jotta voit luoda ja tallentaa koontinäyttöjä ja raportteja sekä koota kaikki tietosi yhteen. Kirjaudu sitten Power BI:hin Windows 10 -laitteellasi omien koontinäyttöjesi näkemiseksi mistä tahansa käsin.
+Jos et ole vielä rekisteröitynyt, siirry [Power BI-palveluun](http://powerbi.com/). Rekisteröi tili, jotta voit luoda ja tallentaa koontinäyttöjä ja raportteja sekä tuoda tiedot yhteen. Kirjaudu sitten Power BI:hin Windows 10 -laitteellasi, jotta näet omat koontinäyttösi missä tahansa.
 
 1. Napauta Power BI- palvelussa [Rekisteröidy](http://go.microsoft.com/fwlink/?LinkID=513879) Power BI -tilin luomiseksi.
 2. Aloita [omien koontinäyttöjen ja raporttien luominen](../../service-get-started.md).
@@ -53,7 +53,7 @@ Jos et ole jo rekisteröinyt, siirry [Power BI -palveluun](http://powerbi.com/) 
 Voit kokeilla Power BI- ja Reporting Services -malleja jopa ilman rekisteröitymistä. Kun olet ladannut sovelluksen, voit tarkastella malleja tai aloittaa sovelluksen käytön. Voit siirtyä takaisin malleihin milloin tahansa koontinäyttöjen aloitussivulta.
 
 ### <a name="power-bi-samples"></a>Power BI -mallit
-Voit tarkastella ja käsitellä Power BI -koontinäytön malleja, mutta on muutamia asioita, joita et voi niille tehdä. Et voi avata koontinäyttöjen taustalla olevia raportteja, jakaa malleja muiden kanssa tai tehdä niistä suosikkejasi.
+Voit tarkastella ja käsitellä Power BI -koontinäytön malleja. On kuitenkin muutamia asioita, joita et voi tehdä. Et voi avata koontinäyttöjen taustalla olevia raportteja, jakaa malleja muiden kanssa tai tehdä niistä suosikkejasi.
 
 1. Napauta yleistä siirtymispainiketta ![Yleinen siirtymispainike](././media/mobile-windows-10-phone-app-get-started/power-bi-windows-10-navigation-icon.png) vasemmassa yläkulmassa.
 2. Napauta **Asetukset**-kuvaketta ![Asetukset-kuvake](./media/mobile-windows-10-phone-app-get-started/power-bi-win10-settings-icon.png), valitse nimesi ja napauta sitten **Näytä mallit**.
@@ -91,8 +91,8 @@ Koontinäytöt ja raportit tallennetaan eri paikkoihin Power BI -mobiilisovelluk
 
 ![Power BI:n vasemmalle siirtyminen](./media/mobile-windows-10-phone-app-get-started/power-bi-win10-left-nav.png)
 
-## <a name="view-your-favorite-dashboards-kpis-and-reports"></a>Suosikkikoontinäyttöjen, suorituskykyilmaisinten ja raporttien tarkastelu
-Voit tarkastella kaikkia Power BI -suosikkikoontinäyttöjäsi yhdessä Reporting Servicesin suorituskykyilmaisinten ja mobiiliraporttien kanssa mobiilisovellusten Suosikit-sivulla. Kun teet koontinäytöstä *suosikin* Power BI -mobiilisovelluksessa, voit käyttää sitä kaikista laitteistasi käsin, kuten selaimesi Power BI -palvelusta. 
+## <a name="view-your-favorite-dashboards-kpis-and-reports"></a>Suosikkikoontinäyttöjen, suorituskykyilmaisimien ja raporttien tarkastelu
+Voit tarkastella Power BI -suosikkikoontinäyttöjäsi yhdessä Reporting Servicesin suorituskykyilmaisinten ja mobiiliraporttien kanssa mobiilisovellusten Suosikit-sivulla. Kun teet koontinäytöstä *suosikin* Power BI -mobiilisovelluksessa, voit käyttää sitä kaikista laitteistasi käsin, kuten selaimesi Power BI -palvelusta. 
 
 * Napauta **Suosikit**.
   
@@ -105,7 +105,7 @@ Voit tarkastella kaikkia Power BI -suosikkikoontinäyttöjäsi yhdessä Reportin
 Lue lisää [suosikeista Power BI -mobiilisovelluksissa](mobile-apps-favorites.md).
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
-Seuraavassa on joitakin muita asioita, voit tehdä Power BI -sovelluksessa Windows 10 -laitteissa, joissa on koontinäyttöjä ja raportteja Power BI:ssa sekä Reporting Services -mobiiliraportteja ja suorituskykyilmaisimia Reporting Services -verkkoportaalissa
+Seuraavassa on joitakin muita asioita, voit tehdä Power BI -sovelluksessa Windows 10 -laitteissa, joissa on koontinäyttöjä ja raportteja Power BI:ssa sekä Reporting Services -mobiiliraportteja ja suorituskykyilmaisimia Reporting Services -verkkoportaalissa.
 
 ### <a name="power-bi-dashboards-and-reports"></a>Power BI -koontinäytöt ja -raportit
 * Tarkastele [omia sovelluksia](../../service-create-distribute-apps.md).

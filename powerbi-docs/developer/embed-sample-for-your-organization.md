@@ -10,12 +10,12 @@ ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.custom: seodec18
 ms.date: 07/29/2019
-ms.openlocfilehash: ce13b161f0a9bf5291f2c0d127106b0db2c6fa29
-ms.sourcegitcommit: 6c2c7a090b0826e3cfc3a897566e802857bbacc8
+ms.openlocfilehash: 1c110022c27cf0e213484619a750140a63a7d0dc
+ms.sourcegitcommit: d9755602235ba03594c348571b9102c9bf88d732
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "68808234"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69490399"
 ---
 # <a name="tutorial-embed-power-bi-content-into-an-application-for-your-organization"></a>Opetusohjelma: Power BI -sisällön upottaminen sovellukseen organisaatiolle
 
@@ -35,7 +35,7 @@ Tarvitset seuraavat:
 * [Power BI Pro -tili](../service-self-service-signup-for-power-bi.md).
 * Tarvitset [Microsoft Azure](https://azure.microsoft.com/) -tilauksen.
 * Sinulla on oltava oma [Azure Active Directory -vuokraaja ](create-an-azure-active-directory-tenant.md) käyttövalmiina.
-* Jos haluat upottaa sivutettuja raportteja, tarvitset vähintään A4/P1-kapasiteetin. Katso kohta[Minkä kokoista Premium-kapasiteettia tarvitsen sivutettuja raportteja varten?](../paginated-reports-faq.md#what-size-premium-capacity-do-i-need-for-paginated-reports)
+* Jos haluat upottaa sivutettuja raportteja, tarvitset vähintään P1-kapasiteetin. Katso kohta [Minkä kokoista Premium-kapasiteettia tarvitsen sivutettuja raportteja varten?](../paginated-reports-faq.md#what-size-premium-capacity-do-i-need-for-paginated-reports)
 
 Jos et ole rekisteröitynyt **Power BI:hin**, [rekisteröi ilmainen kokeiluversio](https://powerbi.microsoft.com/pricing/) ennen aloittamista.
 
@@ -45,7 +45,7 @@ Jos sinulla ei ole Azure-tilausta, luo [ilmainen tili](https://azure.microsoft.c
 
 Ennen kuin ryhdyt upottamaan raportteja, raporttinäkymiä tai ruutuja sovellukseesi, varmista, että ympäristösi sallii upottamisen Power BI:n avulla.
 
-Voit käyttää [upottamisen määritystyökalua](https://aka.ms/embedsetup/UserOwnsData). Sillä pääset nopeasti alkuun ja sillä voit ladata mallisovelluksen, jossa käydään läpi sekä käyttöympäristön luominen että raportin upottaminen. Jos kyseessä on sivutetun raportin upottaminen, sinun on määritettävä vähintään A4/P1-kapasiteetti luodulle sovelluksen työtilalle.
+Voit käyttää [upottamisen määritystyökalua](https://aka.ms/embedsetup/UserOwnsData). Sillä pääset nopeasti alkuun ja sillä voit ladata mallisovelluksen, jossa käydään läpi sekä käyttöympäristön luominen että raportin upottaminen. Jos kyseessä on sivutetun raportin upottaminen, sinun on määritettävä vähintään P1-kapasiteetti luodulle sovelluksen työtilalle.
 
 Jos haluat määrittää ympäristön manuaalisesti, jatka lukemista.
 
@@ -83,7 +83,7 @@ Voit luoda raportteja ja tietojoukkoja käyttämällä Power BI Desktopia. Voit 
    
 ### <a name="create-and-publish-your-paginated-reports"></a>Luo ja julkaise sivutettuja raportteja
 
-Voit luoda sivutettuja raportteja käyttämällä [Power BI:n raportin muodostinta](../paginated-reports-report-builder-power-bi.md#create-reports-in-power-bi-report-builder). Sen jälkeen voit [ladata raportin](../paginated-reports-quickstart-aw.md#upload-the-report-to-the-service) sovelluksen työtilaan, jolle on määritetty vähintään A4/P1-kapasiteetti. Raportin lataavalla käyttäjällä on oltava Power BI Pro -käyttöoikeus, jotta hän voi julkaista sovelluksen työtilassa.
+Voit luoda sivutettuja raportteja käyttämällä [Power BI -raportin muodostinta](../paginated-reports-report-builder-power-bi.md#create-reports-in-power-bi-report-builder). Sen jälkeen voit [ladata raportin](../paginated-reports-quickstart-aw.md#upload-the-report-to-the-service) sovelluksen työtilaan, jolle on määritetty vähintään P1-kapasiteetti. Raportin lataavalla käyttäjällä on oltava Power BI Pro -käyttöoikeus, jotta hän voi julkaista sovelluksen työtilassa.
    
 ## <a name="embed-your-content-by-using-the-sample-application"></a>Upota sisältöä mallisovelluksen avulla
 
@@ -152,9 +152,6 @@ Anna **reportId**-kohtaan Power BI:n raportin GUID. Voit hakea nämä tiedot jok
 Power BI -raportin URL-osoite <br>
 
 ![PBI-raporttitunnus](media/embed-sample-for-your-organization/embed-sample-for-your-organization-041.png)
-
-Sivutettu raportin URL-osoite <br>
-
 
 
 Sivutettu raportin URL-osoite<br>
@@ -384,7 +381,7 @@ Kun olet nyt kehittänyt sovelluksesi, on aika varata sovelluksen työtilalle ka
 
 ### <a name="create-a-dedicated-capacity"></a>Luo varattua kapasiteettia
 
-Luomalla varattua kapasiteettia voit hyödyntää sitä, että sovellustyötilan sisällölle varataan tietty resurssi. Sivutettujen raporttien osalta sinun on varattava sovelluksen työtilalle vähintään A4/P1-kapasiteettia. Voit luoda varattua kapasiteettia käyttämällä [Power BI Premiumia](../service-premium-what-is.md).
+Luomalla varattua kapasiteettia voit hyödyntää sitä, että sovellustyötilan sisällölle varataan tietty resurssi. Sivutettujen raporttien osalta sovelluksen työtila on varmistettava vähintään P1-kapasiteetilla. Voit luoda varattua kapasiteettia käyttämällä [Power BI Premiumia](../service-premium-what-is.md).
 
 Seuraavassa taulukossa esitetään Power BI Premiumin SKU:t, jotka ovat käytettävissä [Microsoft Office 365:ssä](../service-admin-premium-purchase.md):
 

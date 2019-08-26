@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 07/02/2019
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: 5391fee3c5a05d1c34cac4f3a097a0577ce5d191
-ms.sourcegitcommit: 8aa90f662afb7492ffcfc11ef142cdb0ccecc9aa
+ms.openlocfilehash: b3adcf3ba97e83875187a11116fdb7b642e5560b
+ms.sourcegitcommit: 0e50ebfa8762e19286566432870ef16d242ac78f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68462379"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "68962228"
 ---
 # <a name="retail-analysis-sample-for-power-bi-take-a-tour"></a>Jälleenmyyntianalyysimalli Power BI:lle: aloita esittely
 
@@ -92,10 +92,10 @@ Jos haluat perehtyä tämän mallin tietolähteeseen, se on saatavana myös [Exc
 ## <a name="review-a-tile-created-with-power-bi-qa"></a>Tarkista Power BI:n Q&A-toiminnolla luotu ruutu
 Perehdytään asiaan tarkemmin.
 
-1. Muuta kysymys muotoon *tämän vuoden myynti **alueen mukaan*. Huomaa tulos: Q&A sijoittaa vastauksen automaattisesti palkkikaavioon ja ehdottaa muita lauseita:
+1. Muuta kysymys muotoon _tämän vuoden myynti **alueen mukaan**_ . Huomaa tulos: Q&A sijoittaa vastauksen automaattisesti palkkikaavioon ja ehdottaa muita lauseita:
 
    ![Tämän vuoden myynti alueen mukaan Q&A:ssa](media/sample-retail-analysis/retail8.png)
-2. Muuta nyt kysymyksesi muotoon *tämän vuoden myynti **postinumeron ja ketjun mukaan***.
+2. Muuta nyt kysymyksesi muotoon _tämän vuoden myynti **postinumeron ja ketjun mukaan**_ .
 
    Huomaa, miten Power BI vastaa kysymykseen kirjoittaessasi ja näyttää asianmukaiset kaaviot.
 3. Kokeile esittää lisää kysymyksiä ja katso, millaisia tuloksia saat.

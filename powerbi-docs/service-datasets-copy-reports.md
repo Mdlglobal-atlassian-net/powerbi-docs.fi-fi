@@ -7,19 +7,22 @@ ms.reviewer: chbraun
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 07/03/2019
+ms.date: 08/12/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 2db4c23b50071e387913ed79b4d01daeafb928a4
-ms.sourcegitcommit: b439ded53bfbbb58be27ecedf93d618f5158df33
+ms.openlocfilehash: af0ffa5a879a2249c34ac73895103dfdf63e4d27
+ms.sourcegitcommit: 4d5166944fcc6fe4666cab055ae75e7a0a77866d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/04/2019
-ms.locfileid: "67567417"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69530600"
 ---
 # <a name="copy-reports-from-other-workspaces-preview"></a>Raporttien kopioiminen muista työtiloista (esikatselu)
 
-Kun löydät työtilasta tai sovelluksesta raportin, josta pidät, voit ottaa siitä kopion ja tallentaa sen eri työtilaan. Tämän jälkeen voit muokata raporttia ja lisätä sekä poistaa visualisointeja ja muita elementtejä. Sinun ei tarvitse huolehtia tietomallin luomisesta. Se on jo luotu sinulle. Lisäksi on paljon helpompaa muokata aiemmin luotua raporttia kuin aloittaa kokonaan alusta. Et kuitenkaan voi julkaista raportin kopiota sovelluksessa uudesta työtilasta. Tarkastele luetteloa muista [huomioitavista asioista ja rajoituksista](service-datasets-across-workspaces.md#considerations-and-limitations) artikkelissa ”Tietojoukkojen käyttö kaikissa työtiloissa”.
+Kun löydät työtilasta tai sovelluksesta raportin, josta pidät, voit luoda siitä kopion ja tallentaa sen eri työtilaan. Tämän jälkeen voit muokata raportin kopiota ja lisätä sekä poistaa visualisointeja ja muita elementtejä. Sinun ei tarvitse huolehtia tietomallin luomisesta. Se on jo luotu sinulle. Lisäksi on paljon helpompaa muokata aiemmin luotua raporttia kuin aloittaa kokonaan alusta. Kun luot sovelluksen uudesta työtilasta, et kuitenkaan voi julkaista raportin kopiota sovelluksessa. Lisätietoja on [artikkelin Käytä tietojoukkoja eri työtiloissa kohdassa Huomioitavat asiat ja rajoitukset](service-datasets-across-workspaces.md#considerations-and-limitations).
+
+> [!NOTE]
+> Jos haluat luoda kopion, tarvitset Pro-käyttöoikeuden, vaikka alkuperäinen raportti olisi Premium-kapasiteetin työtilassa.
 
 ## <a name="save-a-copy-of-a-report"></a>Tallenna kopio raportista
 

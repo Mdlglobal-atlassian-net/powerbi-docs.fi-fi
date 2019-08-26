@@ -8,102 +8,130 @@ featuredvideoid: JbL2-HJ8clE
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 02/28/2018
+ms.date: 08/08/2019
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: a26cd6d654f9378d9fa09ae46b64762213b26089
-ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
+ms.openlocfilehash: c87a54a0e991af3faa53b9ac4ac6c92893b2ed0a
+ms.sourcegitcommit: 0e50ebfa8762e19286566432870ef16d242ac78f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68522977"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "68962612"
 ---
-# <a name="data-alerts-in-power-bi-service"></a>Power BI -palvelun tietoilmoitukset
-Aseta ilmoituksia ilmoittamaan sinulle, kun koontinäyttösi tiedot muuttuvat asettamiesi rajojen ulkopuolelle. 
+# <a name="data-alerts-in-the-power-bi-service"></a>Tietoilmoitukset Power BI -palvelussa
 
-Voit asettaa ruutujen ilmoituksia, jos sinulla on Power BI Pro - käyttöoikeus tai jos koontinäyttö on jaettu kanssasi [Premium-kapasiteetista](service-premium-what-is.md). Ilmoitukset voidaan määrittää vain ruuduille, jotka on kiinnitetty raportin visualisoineista, ja vain mittareissa, suorituskykyilmaisimissa ja korteissa. Ilmoitukset voidaan määrittää visualisoinneille, jotka on luotu virtautustietojoukoista, jotka on kiinnitetty koontinäyttöön raportista, mutta niitä ei voi määrittää virtautusruuduille, jotka on luotu suoraan koontinäytöstä valitsemalla **Lisää ruutu**  >  **Mukautetut virtautettavat tiedot** . 
+Aseta ilmoituksia ilmoittamaan sinulle, kun koontinäyttösi tiedot muuttuvat asettamiesi rajojen ulkopuolelle.
 
-Vain sinä näet asettamasi hälytykset, vaikka jakaisit koontinäyttösi. Tietoilmoitukset synkronoidaan täysin kaikissa ympäristöissä. Määritä ja tarkastele tietoilmoituksia [Power BI -mobiilisovelluksissa](consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps.md) ja Power BI -palvelussa. Ne eivät ole käytettävissä Power BI Desktopissa. Ilmoitukset voidaan myös [automatisoida ja integroida Microsoft Flowin kanssa](https://flow.microsoft.com) - [kokeile itse](service-flow-integration.md).
+Voit määrittää ilmoituksia ruuduille, jos sinulla on Power BI:n Pro-käyttöoikeus. Voit myös määrittää ilmoituksia, jos joku jakaa koontinäytön, joka on [Premium-kapasiteetissa](service-premium-what-is.md). Ilmoitukset voidaan määrittää vain ruuduille, jotka on kiinnitetty raportin visualisoinneista, ja vain mittareissa, suorituskykyilmaisimissa ja korteissa. Ilmoituksia voidaan määrittää visualisoinneille, jotka on tehty virtautettavista tietojoukoista, jotka kiinnitetään raportista koontinäyttöön. Ilmoituksia ei voi määrittää virtautettaville ruuduille, jotka on tehty suoraan koontinäytössä valitsemalla **Lisää-ruutu** > **Mukautetut virtautettavat tiedot**.
+
+Vain sinä näet asettamasi hälytykset, vaikka jakaisit koontinäyttösi. Tietoilmoitukset synkronoidaan täysin kaikissa ympäristöissä. Määritä ja tarkastele tietoilmoituksia [Power BI -mobiilisovelluksissa](consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps.md) ja Power BI -palvelussa. Ne eivät ole käytettävissä Power BI Desktopissa. Voit myös automatisoida ja integroida ilmoituksia Microsoft Flow’n avulla. Voit kokeilla sitä itse tässä [Microsoft Flow ja Power BI](service-flow-integration.md) -artikkelissa.
 
 ![ruudut](media/service-set-data-alerts/powerbi-alert-types-new.png)
 
 > [!WARNING]
-> Aineistoperäisen ilmoitukset antavat on tietoja lähdetiedoistasi. Jos tarkastelet Power BI -tietojasi mobiililaitteella ja laite varastetaan, suosittelemme kaikkien tietopohjaisten hälytysten poistamista käytöstä Power BI -palvelulla.
-> 
-> 
+> Aineistoperäiset ilmoitukset antavat tietoja lähdetiedoistasi. Jos tarkastelet Power BI -tietojasi mobiililaitteella ja laite katoaa tai varastetaan, suosittelemme kaikkien tietopohjaisten ilmoitusten poistamista käytöstä Power BI -palvelulla.
 
-## <a name="set-data-alerts-in-power-bi-service"></a>Power BI -palvelun tietoilmoitusten määrittäminen
+## <a name="set-data-alerts-in-the-power-bi-service"></a>Power BI -palvelun tietoilmoitusten määrittäminen
+
 Katsele, kuinka Amanda lisää joitakin ilmoituksia koontinäytön ruutuihin. Kokeile sitten itse noudattamalla videon alapuolella olevia vaiheittaisia ohjeita.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/JbL2-HJ8clE" frameborder="0" allowfullscreen></iframe>
 
-Tässä esimerkissä käytetään jälleenmyyntianalyysimallin koontinäytön korttiruutua.
+Tässä esimerkissä käytetään jälleenmyyntianalyysimallin koontinäytön korttiruutua. [Hanki jälleenmyyntianalyysimallin raportti](sample-retail-analysis.md#get-the-content-pack-for-this-sample), jos haluat seurata mukana.
 
-1. Aloita koontinäytöstä. Valitse koontinäytön mittarista, suorituskykyilmaisimesta tai korttiruudusta kolme pistettä.
-   
+1. Aloita koontinäytöstä. Valitse kolme pistettä **Myymälöitä yhteensä** -ruudussa.
+
    ![Myymälöitä yhteensä -ruutu](media/service-set-data-alerts/powerbi-card.png)
-2. Lisää ainakin yksi hälytys **Myymälöitä yhteensä** -ruudulle valitsemalla kellokuvake ![Hälytys-kuvake](media/service-set-data-alerts/power-bi-bell-icon.png).
-   
-1. Aloita valitsemalla **+ Lisää ilmoitussääntö**, varmista, että liukusäädin on asennossa **Käytössä**, ja anna hälytykselle nimi. Nimet helpottavat ilmoitusten tunnistamista.
-   
+
+1. Lisää ainakin yksi ilmoitus **Myymälöitä yhteensä** -ruudulle valitsemalla kellokuvake ![Hälytys-kuvake](media/service-set-data-alerts/power-bi-bell-icon.png).
+
+1. Aloita valitsemalla **+ Lisää ilmoitussääntö**, varmista, että **Aktiivinen**-liukusäädin on asennossa **Käytössä**, ja anna ilmoitukselle nimi. Nimet helpottavat ilmoitusten tunnistamista.
+
    ![Hälytysten hallinta -ikkuna](media/service-set-data-alerts/powerbi-alert-title.png)
-4. Vieritä alas ja anna hälytyksen tiedot.  Luomme tässä esimerkissä ilmoituksen, joka ilmoittaa meille kerran päivässä, jos kauppojen kokonaismäärä ylittää sadan. Ilmoitukset näkyvät ilmoituskeskuksessa. Myös Power BI lähettää meille sähköpostia.
-   
+
+1. Vieritä alas ja anna hälytyksen tiedot.  Tässä esimerkissä luodaan ilmoitus, joka ilmoittaa kerran päivässä, jos kauppojen kokonaismäärä ylittää sadan.
+
    ![Hälytysten hallinta -ikkuna, määritä Raja-arvo](media/service-set-data-alerts/power-bi-set-alert-details.png)
-5. Valitse **Tallenna**.
+
+    Ilmoitukset näkyvät **ilmoituskeskuksessa**. Power BI lähettää myös sähköpostiviestin ilmoituksesta, jos valitset kyseisen valintaruudun.
+
+1. Valitse **Tallenna ja sulje**.
 
 ## <a name="receiving-alerts"></a>Ilmoitusten vastaanottaminen
-Kun seuratut tiedot saavuttavat jonkin määrittämistäsi raja-arvoista, tapahtuu useita asioita. Power BI tarkistaa ensin, onko edellisen ilmoituksen lähettämisestä yli tunti tai yli 24 tuntia (valitsemasi vaihtoehdon mukaan). Kunhan tiedot ylittävät raja-arvon, saat ilmoituksen.
 
-Power BI lähettää seuraavaksi ilmoituksen ilmoituskeskukseen ja valinnaisesti myös sähköpostiin. Kussakin ilmoituksessa on suora linkki tietoihin. Avaa asiaankuuluva ruutu, jossa voit tutkia, jakaa ja hankkia lisätietoja, valitsemalla linkki.  
+Kun seuratut tiedot saavuttavat jonkin määrittämistäsi raja-arvoista, tapahtuu useita asioita. Power BI tarkistaa ensin, onko edellisen ilmoituksen lähettämisestä yli tunti tai yli 24 tuntia (valitsemasi vaihtoehdon mukaan). Jos tiedot ylittävät raja-arvon, saat ilmoituksen.
 
-1. Jos olet määrittänyt ilmoitukset lähettämään sinulle sähköpostia, Saapuneet-kansiossasi näkyy jotain seuraavanlaista.
-   
+Power BI lähettää seuraavaksi ilmoituksen **ilmoituskeskukseen** ja valinnaisesti myös sähköpostiin. Kussakin ilmoituksessa on suora linkki tietoihin. Avaa asiaankuuluva ruutu, jossa voit tutkia, jakaa ja hankkia lisätietoja, valitsemalla linkki.  
+
+* Jos olet määrittänyt ilmoitukset lähettämään sinulle sähköpostia, Saapuneet-kansiossasi näkyy jotain seuraavanlaista.
+
    ![Ilmoituksen sähköpostiviesti](media/service-set-data-alerts/powerbi-alerts-email.png)
-2. Power BI lisää viestin **ilmoituskeskukseesi** ja lisää uuden ilmoituksen kuvakkeen kyseiseen ruutuun.
-   
+
+* Power BI lisää viestin **ilmoituskeskukseesi** ja lisää uuden ilmoituksen kuvakkeen kyseiseen ruutuun.
+
    ![Ilmoituksen kuvake Power BI -palvelussa](media/service-set-data-alerts/powerbi-alert-notifications.png)
-3. Näytä ilmoituksen tiedot avaamalla ilmoituskeskus.
-   
+
+* Ilmoituksen tiedot näkyvät **ilmoituskeskuksessa**.
+
     ![lue ilmoitus](media/service-set-data-alerts/powerbi-alert-notification.png)
-   
+
    > [!NOTE]
-   > Ilmoitukset toimivat vain tiedoissa, joita päivitetään. Kun tiedot päivitetään, Power BI tarkistaa, onko tiedoille määritetty ilmoitus. Jos tiedot saavuttavat ilmoituksen raja-arvon, aktivoidaan ilmoitus.
-   > 
-   > 
+   > Ilmoitukset toimivat vain päivitetyssä tiedoissa. Kun tiedot päivitetään, Power BI tarkistaa, onko tiedoille määritetty ilmoitus. Jos tiedot saavuttavat ilmoituksen raja-arvon, Power BI käynnistää ilmoituksen.
 
 ## <a name="managing-alerts"></a>Ilmoitusten hallinta
-Voit hallita ilmoituksia usealla tavalla: suoraan raporttinäkymän ruudusta, Power BI -asetukset -valikosta, ruudusta [iPhonen Power BI -mobiilisovelluksessa](consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps.md) tai [Windows 10:n Power BI -mobiilisovelluksessa](consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps.md).
 
-### <a name="from-the-tile-itself"></a>Suoraan ruudusta
-1. Jos haluat muuttaa tai poistaa ruudun ilmoituksen, avaa **Hallitse ilmoituksia** -ikkuna uudelleen valitsemalla kellokuvakkeen ![Ilmoituskuvake](media/service-set-data-alerts/power-bi-bell-icon.png). Kaikki kyseiselle ruudulle määrittämäsi ilmoitukset tulevat näyttöön.
-   
-    ![Hälytysten hallinta -ikkuna](media/service-set-data-alerts/powerbi-see-alerts.png).
-2. Jos haluat muuttaa ilmoitusta, valitse haluamasi ilmoituksen nimen vasemmalla puolella oleva nuoli.
-   
-    ![ilmoituksen nimen viereinen nuoli](media/service-set-data-alerts/powerbi-see-alerts-arrow.png).
-3. Poista ilmoitus valitsemalla ilmoituksen nimen oikealla puolella oleva roskakori.
-   
+Voit hallita ilmoituksia usealla tavalla:
+
+* Koontinäytön ruudusta.
+
+* Power BI:n Asetukset-valikosta.
+
+* Ruudusta [Power BI -mobiilisovelluksissa](consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps.md).
+
+### <a name="from-the-dashboard-tile"></a>Koontinäytön ruudusta
+
+1. Jos haluat muuttaa tai poistaa ruudun ilmoituksen, avaa **Hallitse ilmoituksia** -ikkuna uudelleen valitsemalla kellokuvakkeen ![Ilmoituskuvake](media/service-set-data-alerts/power-bi-bell-icon.png).
+
+    Power BI näyttää kaikki kyseiselle ruudulle määrittämäsi ilmoitukset.
+
+    ![Hälytysten hallinta -ikkuna](media/service-set-data-alerts/powerbi-see-alerts.png)
+
+1. Jos haluat muuttaa ilmoitusta, valitse haluamasi ilmoituksen nimen vasemmalla puolella oleva nuoli.
+
+    ![ilmoituksen nimen viereinen nuoli](media/service-set-data-alerts/powerbi-see-alerts-arrow.png)
+
+1. Poista ilmoitus valitsemalla ilmoituksen nimen oikealla puolella oleva roskakori.
+
       ![roskakorikuvake valittu](media/service-set-data-alerts/powerbi-see-alerts-delete.png)
 
 ### <a name="from-the-power-bi-settings-menu"></a>Power BI:n Asetukset-valikosta
-1. Valitse Power BI -valikkopalkin rataskuvake.
-   
+
+1. Valitse Power BI -valikkopalkin rataskuvake ja valitse sitten **Asetukset**.
+
     ![rataskuvake](media/service-set-data-alerts/powerbi-gear-icon.png).
-2. Valitse kohdasta **Asetukset** komento **Ilmoitukset**.
-   
+
+1. Valitse kohdasta **Asetukset** komento **Ilmoitukset**.
+
     ![Asetukset-ikkunan Ilmoitukset-välilehti](media/service-set-data-alerts/powerbi-alert-settings.png)
-3. Täällä voit ottaa hälytyksiä käyttöön ja poistaa niitä käytöstä, avata **Ilmoitusten hallinta** -ikkunan, jos haluat muuttaa tai poistaa hälytyksen.
+
+1. Täällä voit ottaa hälytyksiä käyttöön ja poistaa niitä käytöstä, avata **Ilmoitusten hallinta** -ikkunan, jos haluat muuttaa tai poistaa hälytyksen.
 
 ## <a name="tips-and-troubleshooting"></a>Vihjeet ja vianmääritys
-* Hälytyksiä ei tällä hetkellä tueta Bing-ruuduissa tai korttiruuduissa, joissa on päivämäärä/aika-mittareita.
+
+* Ilmoituksia ei tueta korttiruuduissa, joissa on päivämäärä/aika-mittareita.
+
 * Hälytykset toimivat vain numeerisissa tietotyypeissä.
-* Ilmoitukset toimivat vain tiedoissa, joita päivitetään. Ne eivät toimi staattisissa tiedoissa.
-* Ilmoitukset toimivat virtautustietojoukoissa vain, jos luot suorituskykyilmaisimen, kortin tai mittarin raportin visualisoinnin ja kiinnität kyseisen visualisoinnin koontinäyttöön.
+
+* Ilmoitukset toimivat vain päivitetyssä tiedoissa. Ne eivät toimi staattisissa tiedoissa.
+
+* Ilmoitukset toimivat virtautettavissa tietojoukoissa vain, jos luot suorituskykyilmaisimen, kortin tai mittarin raportin visualisoinnin ja kiinnität kyseisen visualisoinnin koontinäyttöön.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
-[Luo Microsoft Flow, joka sisältää tietoilmoituksen](service-flow-integration.md)    
-[Määritä tietoilmoitukset mobiililaitteellasi](consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps.md)    
-[Mikä on Power BI?](power-bi-overview.md)    
-Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)
 
+* [Luo Microsoft Flow, joka sisältää tietoilmoituksen](service-flow-integration.md).
+
+* [Määritä tietoilmoitukset mobiililaitteellasi](consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps.md).
+
+* [Mikä on Power BI?](power-bi-overview.md)
+
+Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)

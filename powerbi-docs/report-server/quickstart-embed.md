@@ -1,38 +1,39 @@
 ---
-title: Raportin upottaminen iFramea käyttäen
-description: Power BI -raporttipalvelimen raportin upottaminen iFrameen SharePoint-palvelimessa
+title: Power BI -raporttipalvelimen raportin upottaminen iFramella SharePoint-palvelimessa
+description: Tässä artikkelissa kerrotaan, miten Power BI -raporttipalvelimen raportti upotetaan iFramella SharePoint-palvelimessa
 author: maggiesMSFT
 ms.author: maggies
-ms.date: 05/04/2018
-ms.topic: quickstart
+ms.date: 08/12/2019
+ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.custom: mvc
 manager: kfile
-ms.openlocfilehash: ca26770c652c12573bf28e24b218b214bf1196fa
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: e1787863d2b5db50cdb9a8d09907fbee6623972f
+ms.sourcegitcommit: d12bc6df16be1f1993232898f52eb80d0c9fb04e
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "64769852"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "68994983"
 ---
-# <a name="quickstart-embed-a-power-bi-report-server-report-using-an-iframe-in-sharepoint-server"></a>Pikaopas: Power BI -raporttipalvelimen raportin upottaminen iFramella SharePoint-palvelimessa
+# <a name="embed-a-power-bi-report-server-report-using-an-iframe-in-sharepoint-server"></a>Power BI -raporttipalvelimen raportin upottaminen iFramella SharePoint-palvelimessa
 
-Tässä pikaoppaassa opit upottamaan Power BI -raporttipalvelimen raportin iFramella SharePoint-sivuun. Jos käytät SharePoint Onlinea, Power BI -raporttipalvelimen on oltava julkisesti käytettävissä. SharePoint Onlinessa Power BI:n verkko-osa, joka toimii Power BI -palvelun kanssa, ei toimi Power BI -raporttipalvelimen kanssa. 
+Tässä artikkelissa opit upottamaan Power BI -raporttipalvelimen raportin iFramella SharePoint-sivuun. Jos käytät SharePoint Onlinea, Power BI -raporttipalvelimen on oltava julkisesti käytettävissä. SharePoint Onlinessa Power BI:n verkko-osa, joka toimii Power BI -palvelun kanssa, ei toimi Power BI -raporttipalvelimen kanssa.  
 
 ![iFrame-malli](media/quickstart-embed/quickstart_embed_01.png)
+
 ## <a name="prerequisites"></a>Edellytykset
-* Sinulla on oltava [Power BI -raporttipalvelin](https://powerbi.microsoft.com/report-server/) asennettuna ja määritettynä.
-* Sinulla on oltava asennettuna [Power BI -raporttipalvelimelle optimoitu Power BI Desktop](install-powerbi-desktop.md).
-* Sinulla on oltava [SharePoint](https://docs.microsoft.com/sharepoint/install/install)-ympäristö asennettuna ja määritettynä.
+* [Power BI -raporttipalvelin](https://powerbi.microsoft.com/report-server/) asennettuna ja määritettynä.
+* [Power BI Desktop (optimoitu Power BI -raporttipalvelimelle)](install-powerbi-desktop.md) asennettuna.
+* [SharePoint](https://docs.microsoft.com/sharepoint/install/install)-ympäristö asennettuna ja määritettynä.
 
-## <a name="creating-the-power-bi-report-server-report-url"></a>Power BI -raporttipalvelimen raportin URL-osoitteen luominen
+## <a name="create-the-power-bi-report-url"></a>Luo Power BI -raportin URL-osoite
 
-1. Lataa malli GitHubista – [blogiesittely](https://github.com/Microsoft/powerbi-desktop-samples).
+1. Lataa malli GitHubista: [Blogiesittely](https://github.com/Microsoft/powerbi-desktop-samples). Valitse **Kloonaa tai lataa** ja valitse sitten **Lataa ZIP**.
 
     ![Lataa PBIX-mallitiedosto](media/quickstart-embed/quickstart_embed_14.png)
 
-2. Avaa PBIX-mallitiedosto GitHubista **Power BI -raporttipalvelimelle optimoidussa Power BI Desktopissa**.
+2. Pura ZIP-tiedosto ja avaa .pbix-mallitiedosto Power BI -raporttipalvelimelle optimoidussa Power BI Desktopissa.
 
     ![PBI RS Desktop -työkalu](media/quickstart-embed/quickstart_embed_02.png)
 
@@ -40,19 +41,19 @@ Tässä pikaoppaassa opit upottamaan Power BI -raporttipalvelimen raportin iFram
 
     ![PBI RS Save](media/quickstart-embed/quickstart_embed_03.png)
 
-4. Tarkastele raporttia **verkkoportaalissa**.
+4. Tarkastele raporttia Power BI -raporttipalvelimen verkkoportaalissa.
 
     ![Verkkoportaali](media/quickstart-embed/quickstart_embed_04.png)
 
-### <a name="capturing-the-url-parameter"></a>URL-parametrin sieppaaminen
+### <a name="capture-the-url-parameter"></a>Sieppaa URL-parametri
 
-Kun sinulla on URL-osoite, voit luoda SharePoint-sivulla iFramen, jonka sisällä raportti isännöidään. Voit lisätä mitä tahansa Power BI -raporttipalvelimen raportin URL-osoitetta varten querystring-parametrin `?rs:embed=true` upottaaksesi raportin iFrameen. 
+Kun sinulla on URL-osoite, voit luoda SharePoint-sivulla iFramen, jonka sisällä raportti isännöidään. Lisää mitä tahansa Power BI -raporttipalvelimen raportin URL-osoitetta varten seuraava kyselymerkkijonoparametri, joka upottaa raporttisi SharePointin iFrameen: `?rs:embed=true`.
 
    Esimerkki:
     ``` 
     http://myserver/reports/powerbi/Sales?rs:embed=true
     ```
-## <a name="embedding-a-power-bi-report-server-report-in-a-sharepoint-iframe"></a>Power BI -raporttipalvelimen raportin upottaminen iFrameen SharePointissa
+## <a name="embed-the-report-in-a-sharepoint-iframe"></a>Upota raportti SharePointin iFrameen
 
 1. Siirry SharePointin **Sivuston sisältö** -sivulle.
 
@@ -62,27 +63,23 @@ Kun sinulla on URL-osoite, voit luoda SharePoint-sivulla iFramen, jonka sisäll�
 
     ![Sivuston sisältö -sivun sovellus](media/quickstart-embed/quickstart_embed_06.png)
 
-3. Valitse hammasrataskuvake ylimpänä oikealla ja valitse **Muokkaa sivua**.
+3. Valitse hammasrataskuvake oikeasta yläkulmasta ja valitse **Muokkaa sivua**.
 
     ![Muokkaa sivua -vaihtoehto](media/quickstart-embed/quickstart_embed_07.png)
 
 4. Valitse **Lisää verkko-osa**.
 
-    ![Lisää verkko-osa](media/quickstart-embed/quickstart_embed_08.png)
+5. Valitse **Luokat**-kohdasta **Media ja sisältö**. Valitse **Osat**-kohdasta **Sisältöeditori** ja valitse sitten **Lisää**.
 
-5. Valitse **Luokat**-kohdasta **Media ja sisältö**, valitse **Osat**-kohdasta **Sisällön muokkaus**, ja valitse sitten **Lisää** .
-
-    ![Valitse Verkko-osan sisällön muokkaus](media/quickstart-embed/quickstart_embed_09.png) ![Valitse Lisää](media/quickstart-embed/quickstart_embed_091.png)
+    ![Valitse Verkko-osan sisällön muokkaus](media/quickstart-embed/quickstart_embed_09.png)
 
 6. Valitse **Lisää uutta sisältöä napsauttamalla tästä**.
 
-    ![Lisää uutta sisältöä](media/quickstart-embed/quickstart_embed_10.png)
-
-7. Valitse valintanauhasta **Muotoile tekstiä** -välilehti ja valitse sitten **Muokkaa lähdettä**.
+7. Valitse yläreunan valikosta **Muotoile tekstiä** ja valitse sitten **Muokkaa lähdettä**.
 
      ![Muokkaa lähdettä](media/quickstart-embed/quickstart_embed_11.png)
 
-8. Liitä iFrame-koodi Muokkaa lähdettä -ikkunaan ja valitse OK.
+8. Liitä **Muokkaa lähdettä** -ikkunassa iFrame-koodi **HTML-lähde**-kohtaan ja valitse **OK**.
 
     ![iFrame-koodi](media/quickstart-embed/quickstart_embed_12.png)
 
@@ -91,17 +88,17 @@ Kun sinulla on URL-osoite, voit luoda SharePoint-sivulla iFramen, jonka sisäll�
      <iframe width="800" height="600" src="http://myserver/reports/powerbi/Sales?rs:embed=true" frameborder="0" allowFullScreen="true"></iframe>
      ```
 
-9. Valitse valintanauhasta **Sivu**-välilehti ja valitse **Lopeta muokkaaminen**.
+9. Valitse yläreunan valikosta **Sivu** ja valitse sitten **Lopeta muokkaaminen**.
 
     ![Lopeta muokkaaminen](media/quickstart-embed/quickstart_embed_13.png)
 
-10. Raportin pitäisi nyt näkyä sivulla.
+    Raportti tulee näkyviin sivulla.
 
     ![iFrame-malli](media/quickstart-embed/quickstart_embed_01.png)
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
-[Pika-aloitus: Power BI -raportin luominen Power BI -raporttipalvelimeen](quickstart-create-powerbi-report.md)  
-[Pika-aloitus: Sivutetun raportin luominen Power BI -raporttipalvelimeen](quickstart-create-paginated-report.md)  
+- [Power BI -raportin luominen Power BI -raporttipalvelimeen](quickstart-create-powerbi-report.md)  
+- [Sivutetun raportin luominen Power BI -raporttipalvelimeen](quickstart-create-paginated-report.md)  
 
-Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/) 
+Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](https://community.powerbi.com/). 

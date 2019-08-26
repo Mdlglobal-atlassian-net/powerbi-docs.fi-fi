@@ -1426,3 +1426,5 @@
       href: guidance/star-schema.md
     - name: Tietomallin koon pienentäminen
       href: guidance/import-modeling-data-reduction.md
+    - name: JAKO-funktion ja jako-operaattorin (/) vertailu
+      href: guidance/dax-divide-function-operator.md

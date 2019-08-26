@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 11/15/2018
+ms.date: 08/08/2019
 ms.author: maggies
-ms.openlocfilehash: 27b3aad6f1a96c069f56ed68823b71b38115a98a
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 7727157a9227a5340fccf0af129d87f69edd8c72
+ms.sourcegitcommit: d12bc6df16be1f1993232898f52eb80d0c9fb04e
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "64770640"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "68994806"
 ---
 # <a name="configure-power-bi-ios-mobile-app-access-to-a-report-server-remotely"></a>Raporttipalvelimen käyttöoikeuksien etämäärittäminen Power BI -iOS-mobiilisovellukselle
 
@@ -63,8 +63,10 @@ Tässä on esimerkki määrityskäytännön asettamisesta Intunen avulla.
 Nyt käyttäjä voi tarkastella ja käsitellä raporttipalvelimeen tallennettuja suorituskykyilmaisimia ja Power BI -raportteja.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
-[Järjestelmänvalvojan yleiskatsaus](admin-handbook-overview.md)  
-[Power BI -raporttipalvelimen asentaminen](install-report-server.md)  
+
+- [Power BI -mobiilisovelluksen etäkäytön käyttöönotto Azure Active Directory -sovellusvälityspalvelimen avulla](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-integrate-with-power-bi)
+- [Järjestelmänvalvojan yleiskatsaus](admin-handbook-overview.md)  
+- [Power BI -raporttipalvelimen asentaminen](install-report-server.md)  
 
 Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
 

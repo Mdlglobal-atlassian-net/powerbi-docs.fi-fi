@@ -1,5 +1,5 @@
 ---
-title: Raportin vieminen Power BI -palvelusta työasemaan (esikatselu)
+title: Raportin lataaminen Power BI -palvelusta Power BI Desktopiin (esikatselu)
 description: Raportin lataaminen Power BI -palvelusta Power BI Desktop -tiedostoon
 author: maggiesMSFT
 manager: kfile
@@ -7,72 +7,69 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 03/02/2018
+ms.date: 08/12/2019
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: 296970466505f01ae9ad11f994fe2008563f4884
-ms.sourcegitcommit: 762857c8ca09ce222cc3f8b006fa1b65d11e4ace
+ms.openlocfilehash: 61fc821e63889951aefd0ef815f885ffa8a880cf
+ms.sourcegitcommit: d12bc6df16be1f1993232898f52eb80d0c9fb04e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66720213"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "68994812"
 ---
-# <a name="export-a-report-from-power-bi-service-to-desktop-preview"></a>Raportin vieminen Power BI -palvelusta työasemaan (esikatselu)
-Voit viedä (tai *ladata*) Power BI Desktopissa raportin Power BI -palveluun tallentamalla raportti ja valitsemalla **Julkaise**. Voit myös viedä toiseen suuntaan ja ladata raportin Power BI -palvelusta työpöydälle. Vietävien tiedostojen tiedostopääte kumpaankin suuntaan on *.pbix*.
+# <a name="download-a-report-from-the-power-bi-service-to-power-bi-desktop-preview"></a>Raportin lataaminen Power BI -palvelusta Power BI Desktopiin (esikatselu)
+Voit julkaista Power BI Desktopissa raportin ( *.pbix*-tiedoston) paikallisesta tietokoneesta Power BI -palveluun. Power BI -raportit voivat myös siirtyä toiseen suuntaan: Voit ladata raportin Power BI -palvelusta Power BI Desktop -tiedostoon. Power BI -raportin tiedostotunniste on kummassakin tapauksessa .pbix.
 
 Tähän liittyy tiettyjä rajoituksia ja huomioitavia asioita, joita käsitellään tuonnempana tässä artikkelista.
 
 ![Tiedoston avattava valikko](media/service-export-to-pbix/power-bi-file-export.png)
 
-## <a name="download-the-report-as-a-pbix"></a>Lataa raportti .pbix-muodossa
+## <a name="download-the-report-as-a-pbix-file"></a>Lataa raportti .pbix-tiedostona
+
+Voit ladata vain raportteja, jotka on [luotu Power BI Desktopissa](guided-learning/publishingandsharing.yml?tutorial-step=2) 23.11.2016 jälkeen ja päivitetty sen jälkeen. Jos raportti on luotu tätä ennen, **Lataa raportti** -valikkovaihtoehto Power BI -palvelussa näkyy harmaana.
+
 Lataa .pbix-tiedosto toimimalla seuraavasti:
 
-1. Avaa **Power BI-palvelussa** raportti, jonka haluat ladata [muokkausnäkymässä](consumer/end-user-reading-view.md).
-2. Valitse valikkorivistä **Tiedosto > Lataa raportti**.
-   
-   > [!NOTE]
-   > Raportti on [luotava käyttäen Power BI Desktopia](guided-learning/publishingandsharing.yml?tutorial-step=2) marraskuun 23. 2016 ja sen jälkeen tehdyissä päivityksissä raportin lataamiseksi. Jos näin ei ole, *Lataa raportti* -valikkovaihtoehto Power BI-palvelussa näkyy harmaana.
-   > 
-   > 
-3. Kun .pbix-tiedostoa luodaan, edistyminen näkyy tilapalkissa. Kun tiedosto on valmis, sinua pyydetään avaamaan tai tallentamaan .pbix-tiedosto. Tiedoston nimi vastaa raportin otsikkoa.
-   
-    ![Avaa, tallenna tai peruuta](media/service-export-to-pbix/power-bi-save-pbix.png)
-   
-    Voit nyt halutessasi avata .pbix-tiedoston Power BI -palvelussa (app.powerbi.com) tai Power BI Desktopissa.     
-4. Avaa raportti työpöydällä heti valitsemalla **Avaa**. Jos haluat tallentaa tiedoston tiettyyn sijaintiin, valitse **Tallenna > Tallenna nimellä**. Jos et ole vielä tehnyt sitä, [asenna Power BI Desktop](desktop-get-the-desktop.md).
-   
-    Kun avaat raportin Desktopissa, näet ehkä varoituksen siitä, että jotkin ominaisuudet, jotka ovat käytettävissä Power BI -palvelun raportissa, ei ole välttämättä käytettävissä Desktopissa.
-   
-    ![varoitus-valintaikkuna](media/service-export-to-pbix/power-bi-export-to-pbix_2.png)
+1. Avaa Power BI -palvelussa raportti, jonka haluat ladata [muokkausnäkymässä](https://docs.microsoft.com/power-bi/service-interact-with-a-report-in-editing-view).
 
-5. Desktopin raporttieditori ja Power BI -palvelun raporttieditori ovat hyvin samankaltaisia.  
+2. Valitse yläreunan siirtymispalkista **Tiedosto > Lataa raportti**.
    
-    ![Desktop -raporttieditori](media/service-export-to-pbix/power-bi-desktop.png)
+3. Kun raporttia ladataan, edistyminen näkyy tilapalkissa. Kun tiedosto on valmis, sinua pyydetään valitsemaan .pbix-tiedoston tallennuspaikka. Tiedoston oletusnimi on raportin otsikko.
+   
+4. Jos et ole vielä asentanut [Power BI Desktopia](desktop-get-the-desktop.md), asenna se ja avaa .pbix-tiedosto Power BI Desktopissa.
+   
+    Kun avaat raportin Power BI Desktopissa, näet ehkä varoituksen siitä, että jotkin ominaisuudet, jotka ovat käytettävissä Power BI -palvelun raportissa, eivät ole käytettävissä Power BI Desktopissa.
+   
+    ![Varoitusikkuna](media/service-export-to-pbix/power-bi-export-to-pbix_2.png)
+
+5. Power BI Desktopin raporttieditori ja Power BI -palvelun raporttieditori ovat samankaltaisia.  
+   
+    ![Power BI Desktop -raporttieditori](media/service-export-to-pbix/power-bi-desktop.png)
 
 ## <a name="considerations-and-troubleshooting"></a>Huomioon otettavat seikat ja vianmääritys
-On muutamia tärkeitä huomioon otettavia seikkoja ja rajoituksia, jotka liittyvät *.pbix* tiedoston lataamiseen (vientiin) Power BI -palvelusta.
+On muutamia tärkeitä huomioon otettavia seikkoja ja rajoituksia, jotka liittyvät .pbix-tiedoston lataamiseen Power BI -palvelusta.
 
-* Jotta voit ladata tiedoston, sinulla on oltava muokkausoikeus raporttiin
-* Raportti on pitänyt luoda käyttäen **Power BI Desktopia** ja *julkaista* **Power BI -palveluun**, tai .pbix on pitänyt *ladata* palveluun.
-* Raporttien on oltava julkaistu tai päivitetty 23. marraskuuta 2016 jälkeen. Ennen sitä julkaistut raportit eivät ole ladattavissa.
-* Tämä ominaisuus ei toimi raporteissa, jotka on alun perin luotu **Power BI-palvelussa**, mukaan lukien sisältöpaketit.
-* Sinun tulee aina käyttää **Power BI Desktopin** uusinta versiota, kun avaat ladattuja tiedostoja. Ladatut *.pbix*-tiedostot eivät välttämättä avaudu muissa kuin nykyisissä **Power BI Desktopin** versioissa.
-* Jos järjestelmänvalvojasi on poistanut käytöstä mahdollisuuden viedä tietoja, tämä ominaisuus ei ole näkyvissä **Power BI-palvelussa**.
-* Tietojoukkoa, jossa on lisäävä päivitys, ei voi ladata *.pbix*-tiedostoon.
+* Jotta voit ladata tiedoston, sinulla on oltava raportin muokkausoikeus.
+* Raportti on pitänyt luoda käyttäen Power BI Desktopia ja *julkaista* Power BI -palveluun, tai .pbix-tiedosto on pitänyt *ladata* Power BI -palveluun.
+* Raporttien on oltava julkaistu tai päivitetty 23. marraskuuta 2016 jälkeen. Aiemmin julkaistut raportit eivät ole ladattavissa.
+* Tämä ominaisuus ei toimi raporteissa ja sisältöpaketeissa, jotka on alun perin luotu Power BI -palvelussa.
+* Käytä aina Power BI Desktopin uusinta versiota, kun avaat ladattuja tiedostoja. Ladatut .pbix-tiedostot eivät välttämättä avaudu muissa kuin nykyisissä Power BI Desktopin versioissa.
+* Jos järjestelmänvalvojasi on poistanut käytöstä mahdollisuuden ladata tietoja, tämä ominaisuus ei ole näkyvissä Power BI -palvelussa.
+* Tietojoukkoa, jossa on lisäävä päivitys, ei voi ladata .pbix-tiedostoon.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 Näytä minuutin **Kaveri kuutiossa** -video tästä ominaisuudesta:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ymWqU5jiUl0" frameborder="0" allowfullscreen></iframe>
 
-Lisäksi seuraavassa on joitakin artikkeleita, jotka auttavat sinua käyttämään **Power BI -palvelua**:
+Seuraavassa on joitakin artikkeleita, jotka auttavat sinua käyttämään Power BI -palvelua:
 
 * [Raportit Power BI:ssä](consumer/end-user-reports.md)
 * [Power BI -palvelun peruskäsitteitä suunnittelijoille](service-basic-concepts.md)
 
-Kun olet asentanut **Power BI Desktopin**, seuraavan sisällön avulla voit aloittaa sen käytön nopeasti:
+Kun olet asentanut Power BI Desktopin, seuraavan artikkelin avulla voit aloittaa sen käytön nopeasti:
 
 * [Power BI Desktopin käytön aloittaminen](desktop-getting-started.md)
 
-Onko sinulla muuta kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)   
+Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/).
 

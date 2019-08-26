@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/03/2019
+ms.date: 08/16/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: a687e42ef2963ce5e85bd1e0be72c2562afa5b6c
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 637a6476af6368fae2bcfed8d89aeb9f43276a6b
+ms.sourcegitcommit: f6ac9e25760561f49d4257a6335ca0f54ad2d22e
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61370466"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69560843"
 ---
 # <a name="show-items-with-no-data-in-power-bi"></a>Power BI:n Näytä kohteet, joilla ei ole tietoja -ominaisuus
 
@@ -25,7 +25,7 @@ Power BI:n avulla voit visualisoida kaikenlaisia tietoja eri lähteistä. Kun lu
 
 ## <a name="determining-relevant-data"></a>Merkityksellisten tietojen määrittäminen
 
-Yksinkertaisen taulukkoesimerkin avulla on helppo alkaa tutustua tapaan, jolla Power BI määrittää, mitkä tiedot ovat merkityksellisiä ja tulee siis näyttää. Tarkastele artikkelin lopusta löytyvässä esimerkkiosiossa olevaa mallia. Oletetaan, että sinun olisi luotava taulukko, jossa käytetään seuraavia asetuksia:
+Yksinkertaisen taulukkoesimerkin avulla on helppo alkaa tutustua tapaan, jolla Power BI määrittää, mitkä tiedot ovat merkityksellisiä ja tulee siis näyttää. Tarkastele artikkelin lopusta löytyvässä [Esimerkkitietomalli](#example-data-model)-osiossa olevaa mallia. Oletetaan, että sinun olisi luotava taulukko, jossa käytetään seuraavia asetuksia:
 
 **1. Ryhmät, jotka ovat peräisin samasta taulukosta:** *Product[Color] – Product[Size]*
 
@@ -153,6 +153,25 @@ Näkymä, kun **Näytä kohteet, joilla ei ole tietoja** -ominaisuus on käytös
 
 Huomaa, että tässä tapauksessa *ProductStyle[Finish]-kohdan arvo Ei mitään* ei näy taulukossa. Syynä tähän on se, että Power BI valitsi tällä kertaa ensin kaikki *Color*-arvot *Product*-taulukosta. Tämän jälkeen Power BI valitsi kutakin väriä vastaavat *Finish*-arvot, jotka sisälsivät tietoja. Koska *Ei mitään* ei näy missään *Color*-yhdistelmässä, sitä ei valittu.
 
+
+## <a name="power-bi-visual-behavior"></a>Power BI:n visuaalinen toiminta
+
+Kun **Näytä kohteet, joilla ei ole tietoja** on käytössä visualisoinnin yhdessä kentässä, ominaisuus otetaan automaattisesti käyttöön kaikissa muissakin kentissä, jotka ovat kyseisessä samassa *visuaalisessa säilössä* tai hierarkiassa. Visuaalinen säilö tai hierarkia voi olla sen **Akseli** tai **Selite**, **Luokka**, **Rivit** tai **Sarakkeet**.
+
+![Kentät akselille ja selitteelle](media/desktop-show-items-no-data/show-items-no-data-04.png)
+
+Jos esimerkiksi matriisivisualisoinnissa on neljä kenttää **Rivit**-säilössä ja yhdessä kentässä on käytössä **Näytä kohteet, joilla ei ole tietoja**, se on käytössä kaikissa matriisin kohteissa. Seuraavassa kuvassa **Näytä kohteet, joilla ei ole tietoja** on käytössä ensimmäisessä kentässä **Rivit**-säilössä. Kyseessä on *Toimittajan tunnus* -kenttä. Se otetaan automaattisesti käyttöön myös muissa **Rivit**-säilön kentissä.
+
+![Saman visualisoinnin kentät ottavat automaattisesti käyttöön Näytä kohteet, joilla ei ole tietoja](media/desktop-show-items-no-data/show-items-no-data-05.png)
+
+Sitä vastoin **Sarakkeet**-säilön *Maanosa*-kentässä **Näytä kohteet, joilla ei ole tietoja** *ei* ole automaattisesti käytössä. 
+
+Tätä visuaalista toimintaa nähdään usein, kun visualisointi muunnetaan eri tyypiksi, esimerkiksi matriisivisualisointi muunnetaan taulukkovisualisoinniksi. Tällaisissa muunnoksissa **Näytä kohteet, joilla ei ole tietoja** otetaan automaattisesti käyttöön kaikissa kentissä, jotka siirretään säilöön, jonka jossakin kentässä kyseinen toiminto on käytössä. Jos edellisessä esimerkissä *toimittajan tunnuksessa* on **Näytä kohteet, joilla ei ole tietoja** -ominaisuus käytössä ja visualisointi muunnetaan taulukoksi, *Maanosa*-kenttä **Sarakkeet**-säilöstä siirretään (**Rivit**-säilön kenttien kanssa) taulukon visualisoinnissa käytettävään ainoaan säilöön eli **Arvot**-säiliöön. Näin ollen kaikissa **Arvot**-säilön kentissä on käytössä **Näytä kohteet, joilla ei ole tietoja** -ominaisuus.
+
+### <a name="exporting-data"></a>Tietojen vienti
+
+Kun käytät **Vie yhteenvedetyt tiedot** -toimintoa, **Näytä kohteet, joilla ei ole tietoja** -ominaisuus toimii samalla tavalla kuin jos vienti muunnettaisiin taulukon visualisoinniksi. Kun viet visualisoinnin, kuten kaaviomatriisivisualisoinnin, viedyt tiedot saattavat näyttää erilaiselta kuin visualisoinnissa. Tämä johtuu siitä, että vientiprosessin osana tehtävä muuntaminen taulukkovisualisoinniksi ottaa käyttöön **Näytä kohteet, joilla ei ole tietoja** -ominaisuuden kaikissa vietävissä kentissä. 
+
 ## <a name="example-data-model"></a>Esimerkkitietomalli
 
 Tämä osio sisältää esimerkkitietomallin, jota on käytetty artikkelin esimerkeissä.
@@ -186,8 +205,8 @@ Tämä osio sisältää esimerkkitietomallin, jota on käytetty artikkelin esime
 
 |Sales[SaleId]| Sales[ProductId]|   Sales[Date]|    Sales[Quantity]|
 |---------|---------|---------|---------|
-|1  |1  |1.1.2012 0.00| 10 |
-|2  |2  |1.1.2013 0.00| 15 |
+|1  |1  |1\.1.2012 0.00| 10 |
+|2  |2  |1\.1.2013 0.00| 15 |
 
 
 

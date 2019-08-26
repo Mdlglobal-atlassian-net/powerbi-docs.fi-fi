@@ -9,14 +9,14 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 06/28/2019
+ms.date: 08/15/2019
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 30552ee407460856fd1548073f0b3046ab508115
-ms.sourcegitcommit: b439ded53bfbbb58be27ecedf93d618f5158df33
+ms.openlocfilehash: e77bfdf771e84afbc87335aa77993640d10282b0
+ms.sourcegitcommit: 4d5166944fcc6fe4666cab055ae75e7a0a77866d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/04/2019
-ms.locfileid: "67567565"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69530534"
 ---
 # <a name="monitor-usage-metrics-for-power-bi-dashboards-and-reports"></a>Power BI:n koontinäyttöjen ja raporttien käyttötietojen valvonta
 
@@ -41,20 +41,7 @@ Voit hakea käyttötietoraportteja vain Power BI-palvelussa. Jos kuitenkin talle
 - Käyttötietojen käyttäminen tietyssä koontinäytössä tai raportissa edellyttää, että sinulla on muokkausoikeus kyseiseen koontinäyttöön tai raporttiin.
 - Power BI -järjestelmänvalvojan on täytynyt ottaa käyttöön käyttötiedot sisällöntekijöille. Power BI -järjestelmänvalvoja on voinut ottaa käyttöön myös käyttäjäkohtaisten käyttötietojen tietojen keruun. Lue lisää [näiden asetusten käyttöönotosta hallintaportaalissa](service-admin-portal.md#control-usage-metrics). 
 
-## <a name="about-the-usage-metrics-report"></a>Tietoja käyttötietoraportista
-
-Kun valitset **Käyttötiedot**-vaihtoehdon tai ![käyttötietokuvakkeen](media/service-usage-metrics/power-bi-usage-metrics-report-icon.png) koontinäytön tai raportin vierestä, Power BI luo valmiiksi luodun raportin kyseisen sisällön käyttötiedoista viimeisten 90 päivän ajalta.  Raportti näyttää samanlaiselta kuin Power BI-raportit, joihin olet jo tutustunut. Voit osittaa tietoja esimerkiksi sen mukaan, miten loppukäyttäjät käyttivät sisältöä tai käytettiinkö sitä verkossa vai mobiilisovelluksella. Sitä mukaa kun koontinäyttösi ja raporttisi kehittyvät, kehittyy myös käyttötietoraportti, sillä siihen päivitetään uusia tietoja joka päivä.  
-
-Käyttötietoraportit eivät näy **Viimeaikaiset**-, **Työtilat**-, **Suosikit**- tai muissa sisältöluetteloissa. Niitä ei voi lisätä sovellukseen. Jos kiinnität ruudun käyttötietoraportista koontinäyttöön, et voi lisätä koontinäyttöä sovellukseen.
-
-Jos haluat syventyä raportin tietoihin tai luoda omia raporttejasi pohjana olevan tietojoukon perusteella, sinulla on kaksi vaihtoehtoa: 
-
-- Luo raportista kopio Power BI -palvelussa. Lue lisätietoja tämän artikkelin osiosta [Käyttötietoraportin kopion tallentaminen](#save-a-copy-of-the-usage-metrics-report).
-- Muodosta yhteys tuloksiin Power BI Desktopista. Lue lisätietoja artikkelista [Yhteyden muodostaminen julkaistuun tietojoukkoon](desktop-report-lifecycle-datasets.md#establish-a-power-bi-service-live-connection-to-the-published-dataset).
-
-    ![Muodosta yhteys käyttöraportin tietojoukkoon](media/service-usage-metrics/power-bi-usage-dataset.png)
-
-## <a name="open-a-usage-metrics-report-for-a-dashboard-or-report"></a>Käyttötietoraportin avaaminen koontinäyttöä tai raporttia varten
+## <a name="view-a-usage-metrics-report"></a>Käyttötietoraportin tarkasteleminen
 
 1. Aloita työtilasta, joka sisältää koontinäytön tai raportin.
 2. Valitse joko työtilan sisältöluettelosta tai itse koontinäytöstä tai raportista **Käyttötiedot**-kuvake ![käyttötietokuvake](media/service-usage-metrics/power-bi-usage-metrics-report-icon.png).
@@ -82,6 +69,18 @@ Jos haluat syventyä raportin tietoihin tai luoda omia raporttejasi pohjana olev
 
 ![Raportin käyttötietoraportti](media/service-usage-metrics/power-bi-report-usage-metrics-update.png)
 
+## <a name="about-the-usage-metrics-report"></a>Tietoja käyttötietoraportista
+
+Kun valitset **Käyttötiedot**-vaihtoehdon tai ![käyttötietokuvakkeen](media/service-usage-metrics/power-bi-usage-metrics-report-icon.png) koontinäytön tai raportin vierestä, Power BI luo valmiiksi luodun raportin kyseisen sisällön käyttötiedoista viimeisten 90 päivän ajalta.  Raportti näyttää samanlaiselta kuin Power BI-raportit, joihin olet jo tutustunut. Voit osittaa tietoja esimerkiksi sen mukaan, miten loppukäyttäjät käyttivät sisältöä tai käytettiinkö sitä verkossa vai mobiilisovelluksella. Sitä mukaa kun koontinäyttösi ja raporttisi kehittyvät, kehittyy myös käyttötietoraportti, sillä siihen päivitetään uusia tietoja joka päivä.  
+
+Käyttötietoraportit eivät näy **Viimeaikaiset**-, **Työtilat**-, **Suosikit**- tai muissa sisältöluetteloissa. Niitä ei voi lisätä sovellukseen. Jos kiinnität ruudun käyttötietoraportista koontinäyttöön, et voi lisätä koontinäyttöä sovellukseen.
+
+Jos haluat syventyä raportin tietoihin tai luoda omia raporttejasi pohjana olevan tietojoukon perusteella, sinulla on kaksi vaihtoehtoa: 
+
+- Luo raportista kopio Power BI -palvelussa. Lue lisätietoja tämän artikkelin osiosta [Käyttötietoraportin kopion tallentaminen](#save-a-copy-of-the-usage-metrics-report).
+- Muodosta yhteys tuloksiin Power BI Desktopista. Jokaisessa työtilassa tietojoukolla on nimi "Raportin käyttötiedot -malli". Lue lisätietoja artikkelista [Yhteyden muodostaminen julkaistuun tietojoukkoon](desktop-report-lifecycle-datasets.md#establish-a-power-bi-service-live-connection-to-the-published-dataset).
+
+    ![Muodosta yhteys käyttöraportin tietojoukkoon](media/service-usage-metrics/power-bi-usage-dataset.png)
 
 ## <a name="which-metrics-are-reported"></a>Mitkä tiedot raportoidaan?
 
@@ -105,7 +104,7 @@ Jos haluat syventyä raportin tietoihin tai luoda omia raporttejasi pohjana olev
 
 Valitse **Tallenna nimellä**, jos haluat muuntaa käyttötietoraportin tavalliseksi Power BI -raportiksi, jota voit mukauttaa omien tarpeidesi mukaan. Voit käyttää myös Power BI Desktopia mukautettujen käyttötietoraporttien luomiseen pohjana olevan tietojoukon perusteella. Lue lisätietoja artikkelista [Yhteyden muodostaminen julkaistuun tietojoukkoon](desktop-report-lifecycle-datasets.md#establish-a-power-bi-service-live-connection-to-the-published-dataset).
 
-Mikä parasta, pohjana olevaan tietojoukkoon sisältyvät työtilan kaikkien koontinäyttöjen ja raporttien käyttötiedot. Tämä avaa lisää mahdollisuuksia. Voit esimerkiksi luoda raportin, jossa verrataan kaikkia työtilan koontinäyttöjä käytön perusteella. Vaihtoehtoisesti voit luoda käyttötietojen koontinäytön Power BI -sovelluksellesi yhdistämällä käyttötiedot kaikesta sovelluksessa jaellusta sisällöstä.  Lue tämän artikkeli osio [Sivutason suodattimen poisto](#remove-the-filter-to-see-all-workspace-usage-metrics).
+Mikä parasta, pohjana olevaan tietojoukkoon sisältyvät työtilan kaikkien koontinäyttöjen ja raporttien käyttötiedot. Tämä avaa lisää mahdollisuuksia. Voit esimerkiksi luoda raportin, jossa verrataan kaikkia työtilan koontinäyttöjä käytön perusteella. Vaihtoehtoisesti voit luoda käyttötietojen koontinäytön Power BI -sovelluksellesi yhdistämällä käyttötiedot kaikesta sovelluksessa jaellusta sisällöstä.  Lue, miten voit poistaa suodattimen ja [tarkastella työtilan kaikkia käyttömittareita](#see-all-workspace-usage-metrics) jäljempänä tässä artikkelissa.
 
 ### <a name="create-a-copy-of-the-usage-report"></a>Luo kopio käyttötietoraportista
 
@@ -121,7 +120,7 @@ Kun luot kopion vain luku -tyyppisestä, valmiiksi luodusta käyttöraportista, 
 
     ![Raportit-välilehti](media/service-usage-metrics/power-bi-new-report.png)
 
-## <a name="remove-the-filter-to-see-all-workspace-usage-metrics"></a>Suodattimen poistaminen työtilan *kaikkien* käyttötietojen näkemiseksi
+## <a name="see-all-workspace-usage-metrics"></a>Näytä *kaikki* työtilan käyttömittarit
 
 Jos haluat nähdä työtilan kaikkien koontinäyttöjen tai raporttien käyttötiedot, sinun on poistettava suodatin. Oletusarvoisesti raportti on suodatettu näyttämään vain sen luomiseen käyttämäsi koontinäytön tai raportin tiedot.
 
@@ -169,7 +168,7 @@ Käyttömittareiden ja valvontalokien mahdollisten erojen lisäksi seuraavat kä
 
 **Kysymys:**    Tallentavatko käyttötiedot näyttökerrat upotetuista koontinäytöistä ja raporteista?
 
-**Vastaus:**    Käyttötiedot eivät tällä hetkellä tue upotettujen koontinäyttöjen, raporttien ja [verkkoon julkaistujen tietojen](service-publish-to-web.md) käytön tallentamista.          Suosittelemme tällaisissa tapauksissa käyttämään muuta verkko-analytiikkaratkaisua isännöivän sovelluksen tai portaalin käytön seurantaan.
+**Vastaus:**    Käyttömittarit eivät tällä hetkellä tue upotettujen koontinäyttöjen, raporttien ja [verkkoon julkaistujen tietojen](service-publish-to-web.md) käytön tallentamista. Suosittelemme tällaisissa tapauksissa käyttämään muuta verkko-analytiikkaratkaisua isännöivän sovelluksen tai portaalin käytön seurantaan.
 
 **Kysymys:**    En voi käyttää käyttötietoja mistään sisällöstä.
 

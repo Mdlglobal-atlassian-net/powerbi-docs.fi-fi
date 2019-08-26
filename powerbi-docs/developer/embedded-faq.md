@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 05/27/2019
-ms.openlocfilehash: af3c22197e4d6783787bd72c9cf010bf6db64bc1
-ms.sourcegitcommit: 277fadf523e2555004f074ec36054bbddec407f8
+ms.openlocfilehash: 62b5498558b2c89a23e2ed2caf3dacdf343d3a79
+ms.sourcegitcommit: d9755602235ba03594c348571b9102c9bf88d732
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68270961"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69490345"
 ---
 # <a name="frequently-asked-questions-about-power-bi-embedded"></a>Usein kysyttyjä kysymyksiä – Power BI Embedded
 
@@ -66,9 +66,10 @@ Tässä on luettelo joistain ominaisuuksien eroista.
 
 | Ominaisuus | Power BI Embedded | Power BI Premium -kapasiteetti | Power BI Premium -kapasiteetti |
 |----------------------------------------------------------------------------------|-------------------|---------------------------|---------------------------|
-|   | (A-varastointiyksiköt) | (EM-varastointiyksiköt) | (P-varastointiyksiköt) |
-| Upotusartefaktit Power BI -sovelluksen työtilasta | Azure-kapasiteetti | Office 365 -kapasiteetti | Office 365 -kapasiteetti |
-| Power BI -raporttien käyttäminen Embedded-sovelluksessa | Kyllä | Kyllä | Kyllä |
+|   | A-varastointiyksiköt – Azure-kapasiteetti | EM-varastointiyksiköt – O365-kapasiteetti | P-varastointiyksiköt – O365-kapasiteetti |
+| Upotusartefaktit Power BI -sovelluksen työtilasta | Kyllä | Kyllä | Kyllä |
+| Power BI -raporttien käyttäminen upotetussa sovelluksessa – SaaS | Ei | Kyllä | Kyllä |
+| Power BI -raporttien käyttäminen upotetussa sovelluksessa – PaaS-palvelu | Kyllä | Kyllä | Kyllä |
 | Power BI -raporttien käyttäminen SharePointissa | Ei | Kyllä | Kyllä |
 | Power BI -raporttien käyttäminen Dynamicsissa | Ei | Kyllä | Kyllä |
 | Power BI -raporttien käyttäminen Teamsissa (ei sisällä mobiilisovellusta) | Ei | Kyllä | Kyllä |

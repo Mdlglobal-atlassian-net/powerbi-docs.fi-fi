@@ -10,12 +10,12 @@ ms.topic: tutorial
 ms.date: 05/22/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: d41fc5991a95b51f71d0db522d4de84454de4ca2
-ms.sourcegitcommit: 0332efe8f83cb55a9b8ea011db7c99e9b4568118
+ms.openlocfilehash: a3e88d853f59a0e9a188d6d6796559ad2d9059a9
+ms.sourcegitcommit: d12bc6df16be1f1993232898f52eb80d0c9fb04e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/27/2019
-ms.locfileid: "68590590"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "68995279"
 ---
 # <a name="key-influencers-visualization"></a>Tärkeiden vaikuttajien visualisointi
 Tärkeimpien vaikuttajien visualisoinnin avulla ymmärrät paremmin sinua kiinnostavaan arvoon vaikuttavia tekijöitä. Se analysoi tietosi, panee merkitsevät tekijät järjestykseen ja näyttää ne tärkeinä vaikuttajina. Oletetaan esimerkiksi, että haluat ymmärtää, millaiset asiat vaikuttavat henkilöstön vaihtuvuuteen. Yksi tekijä voi olla työsopimuksen pituus ja toinen vaikkapa työntekijän ikä. 
@@ -24,9 +24,6 @@ Tärkeimpien vaikuttajien visualisoinnin avulla ymmärrät paremmin sinua kiinno
 Tärkeimpien vaikuttajien visualisointi on hyvä valinta, kun haluat: 
 - nähdä, mitkä tekijät vaikuttavat analysoitavaan arvoon
 - verrata näiden tekijöiden suhteellista tärkeyttä toisiinsa. Onko lyhytaikaisilla työsopimuksilla esimerkiksi enemmän merkitystä työntekijöiden vaihtuvuuteen kuin pitkäaikaisilla? 
-
-## <a name="key-influencer-requirements"></a>Tärkeimpien vaikuttajien vaatimukset 
-Analysoitavan arvon on oltava luokittainen tai numeerinen kenttä (koosteita ja mittareita ei vielä tueta).
 
 ## <a name="features-of-the-key-influencers-visual"></a>Tärkeimpien vaikuttajien visualisoinnin ominaisuudet
 
@@ -44,15 +41,13 @@ Analysoitavan arvon on oltava luokittainen tai numeerinen kenttä (koosteita ja 
 
 6. **Oikea ruutu**: Oikea ruutu sisältää yhden visualisoinnin. Tässä tapauksessa pylväskaavio näyttää kaikki arvot tärkeimmälle vaikuttajalle **Teema**, joka valittiin vasemmasta ruudusta. Tietty vasemman ruudun **käytettävyys**-arvo näkyy vihreänä. Kaikki muut **Teemaan** liittyvät arvot näkyvät mustana.
 
-7. **Keskiarvon viiva**: Keskiarvo lasketaan kaikille muille mahdollisille **Teeman** arvoille paitsi **käytettävyydelle**. Laskelma koskee siis kaikkia mustalla näkyviä arvoja. Se kertoo, mikä muiden **teemojen** prosenttiosuus johti alhaiseen luokitukseen. Toisin sanoen antaessaan luokituksen asiakas ilmoittaa luokitukselle myös syyn eli teeman. Teemoja ovat esimerkiksi käytettävyys, nopeus, tietoturva ym. 
+7. **Keskiarvon viiva**: Keskiarvo lasketaan kaikille mahdollisille **Teeman** arvoille paitsi **käytettävyydelle** (joka on valittu vaikuttaja). Laskelma koskee siis kaikkia mustalla näkyviä arvoja. Se kertoo, millä muiden **teemojen** prosenttiosuudella oli alhainen luokitus. Tässä tapauksessa 11,35 prosentilla oli alhainen luokitus (näytetään pisteviivana).
 
-   **Teema on käytettävyys** on vasemman ruudun visualisoinnin mukaan toiseksi tärkein alhaiseen luokitukseen vaikuttava tekijä. Jos lasket keskiarvon kaikista muista teemoista ja niiden vaikutuksesta **alhaiseen** luokitukseen, tulos näkyy punaisena. Kaikista muista teemoista vain 11,35 prosenttia on suurempia kuin **käytettävyys**.
+8. **Valintaruutu**: Tämä suodattaa oikeanpuoleisessa ruudussa näkyvän visualisoinnin näyttämään vain arvot, jotka ovat kyseisen kentän vaikuttajia. Tässä esimerkissä visualisointi suodatetaan käytettävyyden, suojauksen ja navigoinnin mukaan.
 
-8. **Valintaruutu**: **Näytä vain arvot, jotka ovat vaikuttajia**.
-
-## <a name="create-a-key-influencers-visual"></a>Tärkeimpien vaikuttajien visualisoinnin luominen 
+## <a name="analyze-a-metric-that-is-categorical"></a>Luokittaisen arvon analysointi
  
-Katso tästä videosta, miten voit luoda visualisoinnin tärkeimmistä vaikuttajista. Luo sitten visualisointi näiden vaiheiden avulla. 
+Katso tästä videosta, miten voit luoda visualisoinnin tärkeimmistä vaikuttajista luokittaisen arvon avulla. Luo sitten visualisointi näiden vaiheiden avulla. 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/fDb5zZ3xmxU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -65,20 +60,24 @@ Tuotepäällikkö haluaa selvittää, mitkä tekijät saavat asiakkaat esittäm�
 
     ![Valitse Visualisoinnit-ruudusta Tärkeimmät vaikuttajat -malli](media/power-bi-visualization-influencers/power-bi-template-new.png)
 
-2. Siirrä tutkittava mittausarvo **Analysoi**-kenttään. **Analysoi**-kenttä tukee vain luokkamuuttujia ja ei-jatkuvia muuttujia. Jatkuvia muuttujia ei tueta. Katso, mikä aiheuttaa palvelun matalat luokitukset, valitsemalla **Asiakastaulukko** > **Luokitus**. 
+2. Siirrä tutkittava mittausarvo **Analysoi**-kenttään. Katso, mikä aiheuttaa palvelun matalat luokitukset, valitsemalla **Asiakastaulukko** > **Luokitus**.
+
 3. Vedä sitten mielestäsi **Luokitukseen** vaikuttavia kenttiä **Selitysperuste**-kenttään. Voit siirtää niin monta kenttää kuin haluat. Aloita tässä tapauksessa seuraavista:
     - Maa tai alue 
     - Rooli organisaatiossa 
     - Paketin tyyppi 
     - Yrityksen koko 
-    - teema 
-1. Jotta voit keskittyä negatiivisiin luokituksiin, valitse **alhainen**-vaihtoehto avattavasta **Mikä aiheuttaa luokituksen olevan** -ruudusta.  
+    - teema
+    
+4. Jätä **Laajenna**-kenttä tyhjäksi. Tätä kenttää käytetään vain analysoitaessa mittaria tai yhteenvetokenttää. 
+
+5. Jotta voit keskittyä negatiivisiin luokituksiin, valitse **alhainen**-vaihtoehto avattavasta **Mikä aiheuttaa luokituksen olevan** -ruudusta.  
 
     ![Valitse avattavasta luettelosta Alhainen](media/power-bi-visualization-influencers/power-bi-key-influencers.png)
 
 Analyysi tapahtuu analysoitavan kentän taulukkotasolla. Tässä tapauksessa se on **Luokitus**-arvo. Tämä mittausarvon on määritetty asiakastasolla. Kullekin asiakkaalle on annettu joko suuri tai alhainen pistemäärä. Kaikki selittävät tekijät on määriteltävä asiakastasolla, jotta visualisointi voi hyödyntää niitä. 
 
-Edellisessä esimerkissä kaikki selittävät tekijät vastaavat mittausarvoa yksi yhteen- tai monta yhteen -suhteessa. Tässä tapauksessa kukin pistemäärä liittyy täsmälleen yhteen teemaan. Tämä teema oli asiakasarviointien pääteema. Vastaavasti asiakkaat ovat kotoisin tietystä maasta, edustavat tiettyä jäsenyystyyppiä ja heillä on tietty rooli organisaatiossaan. Selittävät tekijät ovat siis jo asiakkaan määritteitä, eikä mitään muunnoksia tarvita. Visualisointi voi käyttää niitä välittömästi. 
+Edellisessä esimerkissä kaikki selittävät tekijät vastaavat mittausarvoa yksi yhteen- tai monta yhteen -suhteessa. Tässä tapauksessa jokainen asiakas määritti luokitukselleen yksittäisen teeman. Vastaavasti asiakkaat ovat kotoisin tietystä maasta, edustavat tiettyä jäsenyystyyppiä ja heillä on tietty rooli organisaatiossaan. Selittävät tekijät ovat siis jo asiakkaan määritteitä, eikä mitään muunnoksia tarvita. Visualisointi voi käyttää niitä välittömästi. 
 
 Myöhemmin tarkastelemme tässä opetusohjelmassa mutkikkaampia esimerkkejä, joissa on kyse yksi moneen -suhteista. Tällaisissa tapauksissa sarakkeet on ensin koostettava asiakastasolle, ennen kuin analyysi voidaan suorittaa. 
 
@@ -89,7 +88,7 @@ Katsotaanpa tärkeimpiä vaikuttajia alhaisten luokitusten takana.
 
 ### <a name="top-single-factor-that-influences-the-likelihood-of-a-low-rating"></a>Tärkein yksittäinen tekijä, joka vaikuttaa alhaisen luokituksen todennäköisyyteen
 
-Tässä esimerkissä organisaatiolla on kolme roolia: kuluttaja, järjestelmänvalvoja ja julkaisija. Kuluttajan rooli on tärkeimpiä alhaiseen luokitukseen liittyviä tekijöitä. 
+Tässä esimerkissä asiakkaalla voi olla kolme roolia: kuluttaja, järjestelmänvalvoja ja julkaisija. Kuluttajan rooli on tärkeimpiä alhaiseen luokitukseen liittyviä tekijöitä. 
 
 ![Valitse Rooli organisaatiossa = kuluttaja](media/power-bi-visualization-influencers/power-bi-role-consumer.png)
 
@@ -165,9 +164,29 @@ Tämän ryhmän edustajista 74,3 % asiakkaista antoi alhaisen luokituksen. Keski
 
 ![Valitse ensimmäinen ylimmistä segmenteistä](media/power-bi-visualization-influencers/power-bi-top-segments2.png)
 
-## <a name="working-with-numerical-data"></a>Numeeristen tietojen käsittely
+## <a name="adding-counts"></a>Määrien lisääminen
 
-Jos siirrät numeerisen kentän **Analysoi**-kenttään, voit valita miten kyseistä skenaariota käsitellään. Voit muuttaa visualisoinnin toimintaa siirtymällä **Muotoilu-ruutuun** ja vaihtamalla **Luokittainen analyysityyppi** ja **Jatkuva analyysityyppi** -vaihtoehtojen välillä.
+Joskus vaikuttajalla voi olla suuri vaikutus, mutta se edustaa hyvin pientä määrää tietoja. Esimerkiksi **Teema** on **käytettävyys** on toiseksi suurin vaikuttaja alhaisille luokituksille. Käytettävyydestä on kuitenkin ehkä valittanut vain jokunen asiakas. Määrät voivat auttaa sinua asettamaan etusijalle ne vaikuttajat, joihin kannattaa keskittyä.
+
+Voit ottaa määrän käyttöön Muotoilu-ruudun **Analyysi-kortissa**.
+
+![Lisää määriä](media/power-bi-visualization-influencers/power-bi-ki-counts-toggle.png)
+
+Kun määrät on otettu käyttöön, näet kehän kunkin vaikuttajan kuplan ympärillä. Se edustaa likimääräistä prosenttiosuutta tiedoista, jotka vaikuttaja sisältää. Mitä suuremman osan kuplasta kehä ympäröi, sitä enemmän tietoja se sisältää. Voimme huomata, että **Teema** on **käytettävyys** sisältää hyvin pienen osuuden tiedoista.
+
+![Näytä määrät](media/power-bi-visualization-influencers/power-bi-ki-counts-ring.png)
+
+Voit myös lajitella kuplat ensin määrän mukaan vaikutuksen sijasta käyttämällä visualisoinnin vasemmassa alakulmassa olevaa Lajitteluperuste-vaihtopainiketta. **Tilauksen tyyppi** on **Premier** on tärkein vaikuttaja määrän perusteella.
+
+![Lajittelu määrän mukaan](media/power-bi-visualization-influencers/power-bi-ki-counts-sort.png)
+
+Jos kehä on kokonaan ympyrän ympärillä, vaikuttaja sisältää 100 % tiedoista. Voit vaihtaa määrän tyypin suhteelliseksi suurimman vaikuttajan mukaan käyttämällä avattavaa **Määrän tyyppi** -valikkoa muotoiluruudun **Analyysi-kortissa**. Nyt suurimman tietomäärän vaikuttaja esitetään täydellä kehällä ja kaikki muut määrät suhteutetaan siihen.
+
+![Näytä suhteelliset määrät](media/power-bi-visualization-influencers/power-bi-ki-counts-type.png)
+
+## <a name="analyze-a-metric-that-is-numeric"></a>Numeerisen arvon analysointi
+
+Jos siirrät yhteenvetämättömän numeerisen kentän **Analysoi**-kenttään, voit valita, miten kyseistä skenaariota käsitellään. Voit muuttaa visualisoinnin toimintaa siirtymällä **Muotoilu-ruutuun** ja vaihtamalla **Luokittainen analyysityyppi** ja **Jatkuva analyysityyppi** -vaihtoehtojen välillä.
 
 ![Luokittaisesta jatkuvaan vaihtaminen](media/power-bi-visualization-influencers/power-bi-ki-formatting.png)
 
@@ -212,6 +231,30 @@ Numeeristen kohteiden ylimmät segmentit näyttävät ryhmät, joissa talojen hi
 
 ![Numeeristen kohdearvojen vaikuttajat](media/power-bi-visualization-influencers/power-bi-ki-numeric-segments.png)
 
+## <a name="analyze-a-metric-that-is-a-measure-or-a-summarized-column"></a>Analysoi arvo, joka on mittari tai yhteenvetosarake
+
+Jos kyseessä on mittari tai yhteenvetosarake, analyysi palautuu oletuksena [edellä](https://docs.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-influencers#analyze-a-metric-that-is-numeric) kuvatuksi **jatkuvaksi analyysityypiksi**. Tätä ei voi muuttaa. Suurin ero mittari/yhteenvetosarakkeen ja yhteenvetämättömän numeerisen sarakkeen analysoinnissa on taso, jolla analyysi suoritetaan.
+
+Yhteenvetämättömien sarakkeiden tapauksessa analyysi suoritetaan aina taulukon tasolla. Yllä olevassa talon hinnan esimerkissä analysoimme **talon hinnan** arvo, jotta näemme, mikä vaikuttaa talon hintaan nostavasti/laskevasti. Analyysi suoritetaan automaattisesti taulukon tasolla. Taulukossa on yksilöivä tunnus kullekin talolle, joten analyysi suoritetaan talon tasolla.
+
+![Mittayksiköt-taulukko](media/power-bi-visualization-influencers/power-bi-ki-measures-table.png)
+
+Mittayksiköissä ja yhteenvetosarakkeissa ei tiedetä heti, millä tasolla ne analysoidaan. Jos **talon hinta** tiivistettiin **keskiarvoksi**, meidän tulee pohtia, millä tasolla haluamme laskea tämän keskimääräisen talon hinnan. Onko se keskimääräinen talon hinta naapuruston tasolla? Vai kenties alueellisella tasolla?
+
+Mittayksiköt ja yhteenvetosarakkeet analysoidaan automaattisesti käytettyjen **Selitysperuste**-kenttien tasolla. Oletetaan, että olemme kiinnostuneita kolmesta **Selitysperuste**-kentästä: **keittiön laatu**, **rakennuksen tyyppi** ja **ilmastointi**. **Keskimääräinen talon hinta** laskettaisiin kullekin näiden kolmen kentän yksilölliselle yhdistelmälle. Usein on hyödyllistä vaihtaa taulukkonäkymään sen tarkistamiseksi, miltä arvioidut tiedot näyttävät.
+
+![Mittayksiköt-taulukko](media/power-bi-visualization-influencers/power-bi-ki-measures-table2.png)
+
+Tämä analyysi on hyvin tiivistetty, joten regressiomallin on vaikea löytää tiedoista mitään mallia, josta se voisi oppia. Meidän pitäisi suorittaa analyysi yksityiskohtaisemmalla tasolla parempien tulosten saamiseksi. Jos haluamme analysoida talon hintaa talon tasolla, meidän on eksplisiittisesti lisättävä analyysiin **Tunnus**-kenttä. Emme kuitenkaan halua, että talon tunnusta pidetään vaikuttajana. Ei ole hyödyllistä oppia, että talon tunnuksen kasvaessa myös talon hinta nousee. Tässä kohtaa **Laajenna**-kentän asetus on kätevä. Voit **Laajenna**-asetuksen avulla lisätä käytettäviksi haluamasi kentät analyysin tason asettamiseksi etsimättä uusia vaikuttajia.
+
+Tutustu siihen, miltä visualisointi näyttää, kun lisäämme **tunnuksen** **Laajenna**-asetukseen. Kun olet määrittänyt tason, jolla haluat mitata mittayksikköä, vaikuttajat tulkitaan täsmälleen samalla tavalla kuin [yhteenvetämättömissä numeerisissa sarakkeissa](https://docs.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-influencers#analyze-a-metric-that-is-numeric).
+
+![Mittayksiköt-taulukko](media/power-bi-visualization-influencers/power-bi-ki-measures-analysis.png)
+
+Jos haluat lisätietoja siitä, miten voit analysoida mittayksiköitä tärkeimpien vaikuttajien visualisoinnissa, katso seuraava opetusohjelma.
+
+<iframe width="1167" height="631" src="https://www.youtube.com/embed/2X1cW8oPtc8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## <a name="considerations-and-troubleshooting"></a>Huomioon otettavat seikat ja vianmääritys 
  
 **Mitä rajoituksia visualisointiin liittyy?** 
@@ -244,6 +287,12 @@ Visualisointi etsii toistuvia kuvioita yhden ryhmän tiedoista verrattuna muihin
 Suosittelemme, että valitussa tilassa on vähintään 100 havaintoa. Tässä tapauksessa tilan muodostavat vaihtuvat asiakkaat. Verrattavissa tiloissa on oltava vähintään 10 havaintoa. Tässä tapauksessa vertailutilan muodostavat asiakkaat, jotka eivät vaihdu.
 
 Jos analysoit numeerista kenttää, sinun kannattaa vaihtaa **Luokittainen analyysi** **Jatkuvaan analyysiin** **Analyysi**-kortin **Muotoilu-ruudusta**.
+
+**Näkyviin tulee virhesanoma, jonka mukaan Analysoi-kohteessa ei ole yhteenvetoa, mutta analyysi suoritetaan sen päätaulukon rivitasolla. Tämän tason muuttamista Laajenna-kenttien kautta ei sallita. Mistä tämä johtuu?**
+
+Kun analysoidaan numeraalista tai luokittaista saraketta, analyysi suoritetaan aina taulukon tasolla. Jos esimerkiksi analysoit talojen hintoja ja taulukkosi sisältää tunnussarakkeen, analyysi suoritetaan automaattisesti talon tunnuksen tasolla. 
+
+Kun analysoit mittayksikköä tai yhteenvetosaraketta, sinun on eksplisiittisesti ilmoitettava, millä tasolla haluat suorittaa analyysin. Voit **Laajenna**-kentän avulla muuttaa mittayksiköiden ja yhteenvetosarakkeiden analyysin tasoa lisäämättä uusia vaikuttajia. Jos **Talon hinta** on määritetty mittayksiköksi, voit lisätä Talon tunnus -sarakkeen **Laajenna**-kentäksi, jos haluat muuttaa analyysin tasoa.
 
 **Näen sellaisen virheen, että *Selitysperuste*-kohdan kenttä ei ole ainutlaatuisessa suhteessa taulukkoon, joka sisältää analysoimani arvon. Mistä tämä johtuu?**
  

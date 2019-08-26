@@ -1,6 +1,6 @@
 ---
-title: Tarkastele Power BI-sisällön ulkoisen Vieras käyttäjänä (Azure AD B2B)
-description: Power BI-mobiilisovellusten avulla voit tarkastella ulkoisen organisaatiosta kanssasi jaettua sisältöä.
+title: Power BI -sisällön tarkasteleminen ulkopuolisena vieraskäyttäjänä (Azure AD B2B)
+description: Power BI -mobiilisovellusten avulla voit tarkastella sisältöä, joka on jaettu kanssasi ulkoisesta organisaatiosta.
 author: mshenhav
 manager: kfile
 ms.reviewer: ''
@@ -9,16 +9,16 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 03/27/2019
 ms.author: mshenhav
-ms.openlocfilehash: a15da4349ce97e34c8321909abc862e424b2839c
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 900c7b57c2b6283c44e4a1923dd223d7dfd40ef7
+ms.sourcegitcommit: d9755602235ba03594c348571b9102c9bf88d732
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61338696"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69490358"
 ---
-# <a name="view-power-bi-content-shared-with-you-from-an-external-organization"></a>Näytä Power BI-sisältö on jaettu ulkoisen organisaatiosta
+# <a name="view-power-bi-content-shared-with-you-from-an-external-organization"></a>Kanssasi ulkoisesta organisaatiosta jaetun Power BI -sisällön tarkasteleminen
 
-Power BI on integroitu Azure Active Directory business-to-Businessin (Azure AD B2B), jotta Power BI-sisältöä organisaatiosi ulkopuolisten vierailevien käyttäjien kanssa. Ja ulkoisen vierailevien käyttäjien käyttää Power BI-mobiilisovelluksen kyseisen Power BI-sisältöä, joka on jaettu heidän kanssaan. 
+Power BI on integroitu Azure Active Directory Business-to-Businessin (Azure AD B2B) kanssa, jotta Power BI -sisältöä voidaan jakaa turvallisesti organisaation ulkopuolisten vierailevien käyttäjien kanssa. Ulkoiset vieraskäyttäjät voivat käyttää Power BI -mobiilisovellusta ja käyttää jaettua Power BI -sisältöä sen avulla. 
 
 
 Koskee seuraavia:
@@ -27,28 +27,30 @@ Koskee seuraavia:
 |:--- |:--- |:--- |:--- |
 | iPhonet |iPadit |Android-puhelimet |Android-tabletit |
 
-## <a name="accessing-shared-content"></a>Käytettäessä jaettua sisältöä
+## <a name="accessing-shared-content"></a>Jaetun sisällön käyttäminen
 
-**Ensin sinun täytyy joku jakaa kohteen kanssasi ulkoisen organisaatiosta.** Kun joku [kohde jakaa sinulle](../../service-share-dashboards.md), sama organisaatio tai ulkoinen organisaatio, saat sähköpostiviestin, jossa on linkki, joka on jaettu kohde. Seuraavan linkin mobiililaitteeseesi avautuu Power BI-mobiilisovelluksessa. Jos sovellus tunnistaa kohde on jaettu ulkoisen organisaatiosta, sovellus muodostaa kyseisen organisaation käyttäjätietojen yhteydessä. Sovelluksen lataa sitten kaikki kohteet, jotka jaettiin kanssasi organisaatioiden.
+**Tarvitset ensin ulkoisesta organisaatiosta henkilön, joka jakaa kohteen kanssasi.** Kun joku [jakaa kohteen kanssasi](../../service-share-dashboards.md), joko samasta organisaatiosta tai ulkoisesta organisaatiosta, saat sähköpostiviestin, jossa on linkki kyseiseen jaettuun kohteeseen. Kun avaat linkin mobiililaitteessasi, Power BI -mobiilisovellus avautuu. Jos sovellus tunnistaa, että kohde on jaettu ulkoisesta organisaatiosta, sovellus muodostaa yhteyden kyseiseen organisaatioon käyttäjätietojesi avulla. Sovellus lataa sitten kaikki kohteet, jotka on jaettu kanssasi kyseisestä organisaatiosta.
 
-![Power BI Avaa jaetun kohteen sähköpostiviestistä ](./media/mobile-apps-b2b/mobile-b2b-open-item-email.png)
+![Power BI avaa jaetun kohteen sähköpostista ](./media/mobile-apps-b2b/mobile-b2b-open-item-email.png)
 
 > [!NOTE]
-> Jos tämä on jaettu ulkoisen Vieraskäyttäjä kuin ensimmäinen kohde, on lunasta kutsun selaimessa. Sinun ei voi käyttää kutsua Power BI-sovelluksessa.
+> Jos tämä on ensimmäinen kohde, joka on jaettu kanssasi ulkoisena vieraskäyttäjänä, sinun on lunastettava kutsu selaimessa. Et voi lunastaa kutsua Power BI -sovelluksessa.
 
-Kun olet muodostanut yhteyden ulkoisen organisaation musta otsikko näkyy sovelluksessa. Tämä otsikko ilmaisee, että et ole muodostanut koti organisaatiollesi. Muodostaa koti organisaatioon Lopeta Vieras tilasta.
+Kun olet yhteydessä ulkoiseen organisaatioon, sovelluksessa näkyy musta ylätunniste. Tämä ylätunniste ilmaisee, että et ole muodostanut yhteyttä kotiorganisaatioosi. Jos haluat muodostaa yhteyden takaisin kotiorganisaatioosi, poistu vierastilasta.
 
-![Power BI Vieras käyttäjän otsikko](./media/mobile-apps-b2b/mobile-b2b-exit-home.png)
+![Power BI:n vieraskäyttäjän otsikko](./media/mobile-apps-b2b/mobile-b2b-exit-home.png)
 
-Vaikka sinulla on oltava Power BI artefaktin linkin muodostaa ulkoisen organisaatiolle, kun sovellus siirtyy, voit käyttää kaikki kohteet, jotka on jaettu (ei ainoastaan sähköpostiviestistä avata kohdetta). Voit tarkastella kaikkia kohteita, voit käyttää ulkoista organisaation sovelluksen valikosta ja valitsemalla **jaettu kanssani**. Valitse **sovelluksia** löydät sovelluksia, joita voit käyttää myös.
+Vaikka sinulla on oltava Power BI:n artefaktin linkki ulkoiseen organisaatioon yhdistämistä varten, voit käyttää kaikkia kanssasi jaettuja kohteita (ei vain sähköpostista avaamaasi kohdetta) sovelluksen siirtymisen jälkeen. Jos haluat nähdä kaikki kohteet, joita voit käyttää ulkoisessa organisaatiossa, siirry sovellusvalikkoon ja valitse **Jaettu kanssani**. **Sovellukset**-kohdasta löydät sovelluksia, joita voit myös käyttää.
 
-![Power BI sovelluksen valikosta Vieras ulkoisen käyttäjänä](./media/mobile-apps-b2b/mobile-b2b-menu.png)
+![Power BI -sovellusvalikko vieraana ulkoisena käyttäjänä](./media/mobile-apps-b2b/mobile-b2b-menu.png)
 
 ## <a name="limitations"></a>Rajoitukset
 
-- Ehdollisen käyttöoikeuden ja muut Intune-käytäntöjä ei tueta Azure AD B2B: n ja Power BI-mobiilisovelluksessa. Tämä tarkoittaa, että sovelluksen pakottaa vain koti organisaation käytäntöjä, jos ne ovat olemassa.
-- Palveluilmoituksia vastaanotetaan sivustosta sovelluksiini vain (jopa kun käyttäjä on liitetty ulkoisen organisaatiolle vieraana). Käyttäjän sovelluksiini sivuston sovelluksen muodostaa uudelleen avaamalla ilmoitus.
-- Jos käyttäjä sulkee sovelluksen, kun avata uudelleen sovelluksen muodostaa automaattisesti yhteyden käyttäjän sovelluksiini.
-- Ulkoinen organisaatiolle yhteydessä joitakin toimintoja on poistettu käytöstä: suosikin kohdetta, Tietoilmoitukset, kommentoinnin ja jakaminen.
-- Offline-tietoja ei ole käytettävissä yhdistettynä ulkoisen organisaatiolle.
-- Jos sinulla on yritysportaali-sovellus on asennettu laitteeseesi, sitten laite täytyy rekisteröidä.
+- Käyttäjillä on oltava aktiivinen Power BI -tili ja aloitusvuokraaja.
+- Käyttäjien on oltava kirjautuneina Power BI -aloitusvuokraajaan, ennen kuin he voivat käyttää sisältöä, joka on jaettu heidän kanssaan ulkoisesta vuokraajasta.
+- Ehdollista käyttöä ja muita Intune-käytäntöjä ei tueta Azure AD B2B:ssä ja Power BI -mobiilisovelluksessa. Tämä tarkoittaa sitä, että sovellus valvoo vain kotiorganisaation käytäntöjä, jos sellaisia on.
+- Palveluilmoitukset vastaanotetaan vain kotiorganisaation sivustolta (silloinkin, kun käyttäjä on yhdistetty vieraana ulkoiseen organisaatioon). Ilmoituksen avaaminen yhdistää sovelluksen uudelleen käyttäjän kotiorganisaation sivustoon.
+- Jos käyttäjä sulkee sovelluksen, sovellus muodostaa automaattisesti yhteyden käyttäjän kotiorganisaatioon, kun sovellus avataan uudelleen.
+- Kun yhteys ulkoiseen organisaatioon on muodostettu, seuraavat toiminnot on poistettu käytöstä: suosikkikohteet, tietoilmoitukset, kommentointi ja jakaminen.
+- Offline-tiedot eivät ole käytettävissä, kun yhteys on muodostettu ulkoiseen organisaatioon.
+- Jos sinulla on Yritysportaali-sovellus asennettuna laitteeseesi, laitteen on oltava rekisteröity.

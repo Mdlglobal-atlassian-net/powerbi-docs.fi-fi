@@ -7,22 +7,22 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/26/2019
+ms.date: 08/15/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 9fa79bc17e87863d094afbc479d664c8bbf9daaf
-ms.sourcegitcommit: 0332efe8f83cb55a9b8ea011db7c99e9b4568118
+ms.openlocfilehash: 8b92bd2917165cd6dc89e0c9f9a94e83d69f1c2a
+ms.sourcegitcommit: f6ac9e25760561f49d4257a6335ca0f54ad2d22e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/27/2019
-ms.locfileid: "68590484"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69560858"
 ---
 # <a name="get-power-bi-desktop"></a>Power BI Desktopin hankkiminen
 **Power BI Desktopilla** voit luoda tarkempia kyselyjä, malleja ja raportteja, jotka visualisoivat tietoja. **Power BI Desktopilla** voit luoda tietomalleja ja raportteja sekä jakaa töitäsi julkaisemalla niitä Power BI -palvelussa.  **Power BI Desktop** on ladattavissa maksutta.
 
 Voit hankkia **Power BI Desktopin** kahdella tavalla, jotka kuvataan seuraavissa osioissa:
 
-* Voit **ladata** sen suoraan MSI-pakettina, jonka asennat tietokoneeseesi.
+* **Lataa** se suoraan pakettina, jonka asennat tietokoneeseesi.
 * Voit asentaa sen sovelluksena **Microsoft Storesta**.
 
 Molemmilla tavoilla saat uusimman **Power BI Desktop** -version tietokoneeseesi, mutta tavoilla on muutamia eroja, jotka on syytä huomioida ja jotka kuvataan seuraavissa osioissa.
@@ -30,21 +30,23 @@ Molemmilla tavoilla saat uusimman **Power BI Desktop** -version tietokoneeseesi,
 ## <a name="download-power-bi-desktop"></a>Power BI Desktopin lataaminen
 Jos haluat ladata **Power BI Desktopin** uusimman version, valitse latauskuvake Power BI -palvelun oikeasta yläkulmasta ja valitse sitten **Power BI Desktop**.
 
-![](media/desktop-get-the-desktop/getpbid_downloads.png)
+![Lataa uusin Power BI Desktop -versio](media/desktop-get-the-desktop/getpbid_downloads.png)
 
 Voit ladata Power BI Desktopin uusimman version myös seuraavalta lataussivulta:
 
 * [**Power BI Desktopin lataus** (sekä 32- että 64-bittiset versiot)](https://powerbi.microsoft.com/desktop).
   
-  [![](media/service-admin-power-bi-security/PBI_Security_01.png)](https://powerbi.microsoft.com/desktop)
+  [![Lataa uusin Power BI Desktop -versio](media/service-admin-power-bi-security/PBI_Security_01.png)](https://powerbi.microsoft.com/desktop)
 
 Riippumatta siitä, kummalla tavalla lataat, sinua kehotetaan suorittamaan asennustiedosto, kun **Power BI Desktop** on ladattu tietokoneeseesi.
 
-![](media/desktop-get-the-desktop/getpbid_3.png)
+![Suorita Power BI Desktop -asennustiedosto](media/desktop-get-the-desktop/getpbid_3.png)
 
-**Power BI Desktop** asennetaan sovelluksena, jonka voit suorittaa työpöydältäsi.
+Heinäkuun 2019 versiosta alkaen **Power BI Desktop** toimitetaan yksittäisenä .exe-asennuspakettina, joka sisältää kaikki tuetut kielet. 32- ja 64-bittisille versioille on erilliset .exe-tiedostot. Syyskuun 2019 version jälkeen .msi-pakettien jakelu lopetetaan, minkä jälkeen sinun on asennettava .exe-tiedosto. Tämä lähestymistapa tekee jakelusta, päivityksistä ja asennuksesta (erityisesti järjestelmänvalvojille) paljon helpompaa ja kätevämpää. Voit myös mukauttaa asennusprosessia käyttämällä komentoriviparametreja, jotka on kuvattu jäljempänä tämän artikkelin kohdassa [komentorivivalintojen käyttö asennuksen aikana](#using-command-line-options-during-installation).
 
-![](media/desktop-get-the-desktop/designer_gsg_install.png)
+Kun käynnistät asennuspaketin, **Power BI Desktop** asennetaan sovelluksena, jonka voit suorittaa työpöydältäsi.
+
+![Power BI Desktop -sovellus suoritetaan työpöydällä](media/desktop-get-the-desktop/designer_gsg_install.png)
 
 > [!NOTE]
 > **Power BI Desktopin** ladattavan MSI-version ja **Microsoft Store** -version asentamista samaan tietokoneeseen tueta. (Tätä kutsutaan joskus *rinnakkaisasennukseksi*.)
@@ -56,20 +58,20 @@ Voit hankkia **Power BI Desktopin** myös Microsoft Storesta seuraavan linkin av
 
 * [asenna **Power BI Desktop** **Microsoft Storesta**](http://aka.ms/pbidesktopstore).
 
-![](media/desktop-get-the-desktop/getpbid_04.png)
+  ![Hanki Power BI Desktop Microsoft Storesta](media/desktop-get-the-desktop/getpbid_04.png)
 
 **Power BI Desktopin** Microsoft Storesta hankkimisella on muutamia etuja:
 
 * **Automaattiset päivitykset**: Windows lataa uusimman version automaattisesti taustalla heti, kun uusi versio on saatavilla, joten sovellus pysyy aina ajan tasalla.
 * **Pienemmät lataukset**: **Microsoft Store** varmistaa, että koneeseesi ladataan vain ne komponentit, jotka ovat muuttuneet kussakin päivityksessä. Tämä pienentää kunkin päivityksen latauskokoa.
-* **Järjestelmänvalvojan oikeuksia ei tarvita**: kun lataat  MSI:n suoraan ja asennat sen, sinun on oltava järjestelmänvalvoja, jotta asennus voidaan suorittaa. Kun hankit **Power BI Desktopin** Microsoft Storesta, järjestelmänvalvojan oikeuksia *ei* tarvita.
+* **Järjestelmänvalvojan oikeuksia ei tarvita**: kun lataat paketin suoraan ja asennat sen, sinun on oltava järjestelmänvalvoja, jotta asennus voidaan suorittaa. Kun hankit **Power BI Desktopin** Microsoft Storesta, järjestelmänvalvojan oikeuksia *ei* tarvita.
 * **Helpompi käyttöönotto**: **Microsoft Store** -version *käyttöönotto* on helpompaa kaikille organisaation käyttäjille. Lisäksi IT-osasto voi tarjota **Power BI Desktopin** **Microsoft Store for Businessissa**.
 * **Kielen tunnistaminen**: **Microsoft Store** -versio sisältää kaikki tuetut kielet. Lisäksi se tarkistaa tietokoneessasi käytetyn kielen aina, kun sovellus käynnistetään. Tämä vaikuttaa myös **Power BI Desktopissa** luotuihin lokalisointimalleihin. Esimerkiksi sisäiset päivämäärähierarkiat vastaavat kieltä, jolla **Power BI Desktopia** käytettiin, kun .pbix-tiedosto luotiin.
 
 **Power BI Desktopin** asentamisella Microsoft Storesta on muutamia huomioitavia seikkoja ja rajoituksia. Näitä ovat esimerkiksi seuraavat:
 
 * Jos käytät SAP-yhdistintä, sinun täytyy ehkä siirtää SAP-ohjaintiedostot *Windows\System32*-kansioon.
-* Kun asennat **Power BI Desktopin** Microsoft Storesta, käyttäjäasetuksia ei kopioida MSI-versiosta. Sinun täytyy ehkä yhdistää uudelleen viimeisimmät tietolähteet ja antaa tietolähteiden tunnistetiedot uudelleen. 
+* Kun asennat **Power BI Desktopin** Microsoft Storesta, käyttäjäasetuksia ei kopioida .exe-versiosta. Sinun täytyy ehkä yhdistää uudelleen viimeisimmät tietolähteet ja antaa tietolähteiden tunnistetiedot uudelleen. 
 
 > [!NOTE]
 > **Power BI Desktopin** ladattavan MSI-version ja **Microsoft Store** -version asentamista samaan tietokoneeseen tueta. (Tätä kutsutaan joskus *rinnakkaisasennukseksi*.) Poista **Power BI Desktopin** asennus manuaalisesti, ennen kuin lataat sen **Microsoft Storesta**.
@@ -82,7 +84,7 @@ Voit hankkia **Power BI Desktopin** myös Microsoft Storesta seuraavan linkin av
 ## <a name="using-power-bi-desktop"></a>Power BI Desktopin käyttäminen
 Kun käynnistät **Power BI Desktopin**, näyttöön avautuu *Tervetuloa*-näyttö.
 
-![](media/desktop-get-the-desktop/getpbid_05.png)
+![Power BI Desktopin tervetulonäyttö](media/desktop-get-the-desktop/getpbid_05.png)
 
 Jos käytät **Power BI Desktopia** ensimmäistä kertaa (jos asennus ei siis ole päivitys), sinua pyydetään täyttämään lomake ja vastaamaan muutamaan kysymykseen tai kirjautumaan **Power BI -palveluun**, ennen kuin voit jatkaa.
 
@@ -102,6 +104,25 @@ Alla on lueteltu **Power BI Desktopin** käytön vähimmäisvaatimukset:
 ## <a name="considerations-and-limitations"></a>Huomioitavat asiat ja rajoitukset
 
 Tavoitteena on, että Power BI Desktopin käyttökokemuksesi on aina hyvä. Saatat joskus kohdata ongelman Power BI Desktopissa, joten tässä osiossa on ratkaisuja tai ehdotuksia mahdollisten ongelmien selvittämiseksi. 
+
+
+### <a name="using-command-line-options-during-installation"></a>Komentorivivalintojen käyttö asennuksen aikana 
+
+Kun asennat Power BI Desktopin, voit määrittää ominaisuuksia ja asetuksia komentorivivalintojen avulla. Tästä on hyötyä erityisesti järjestelmänvalvojille, jotka hallitsevat tai helpottavat Power BI Desktop -asennusta eri organisaatioissa. Nämä asetukset koskevat .msi- ja .exe-asennuksia. 
+
+
+|Komentorivivalinta  |Toiminta  |
+|---------|---------|
+|-q, -quiet, -s, -silent     |hiljainen asennus         |
+|-passive     |näytä vain edistymispalkki asennuksen aikana         |
+|-norestart     |jätä pois tietokoneen uudelleenkäynnistysvaatimus         |
+|-forcerestart     |käynnistä tietokone uudelleen asennuksen jälkeen ilman kehotetta         |
+|-promptrestart     |esitä käyttäjälle kehote, jos tietokone on käynnistettävä uudelleen (oletus)         |
+|-l<>, -log<>     |kirjaa asennus tiettyyn lokitiedostoon, tiedosto määritetään kohdassa <>         |
+|-uninstall     |Power BI Desktopin asennuksen poistaminen         |
+|-repair     |korjaa asennus (tai asenna, jos sovellus ei ole tällä hetkellä asennettuna)         |
+|-package, -update     |asenna Power BI Desktop (oletus, kunhan vaihtoehtoa -uninstall tai -repair ei ole määritetty)         |
+
 
 ### <a name="issues-when-using-previous-releases-of-power-bi-desktop"></a>Ongelmia Power BI Desktopin aiempia versioita käytettäessä
 
