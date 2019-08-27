@@ -47,7 +47,7 @@ Näitä ohjeita noudattamalla voit lähettää kutsuja Azure-portaalissa.
 
 1. Valitse **Hallinta**-kohdassa **Käyttäjät** > **Kaikki käyttäjät** > **Uusi vieraskäyttäjä**.
 
-    ![Näyttökuva Azure-portaalista, jossa näkyy Uusi vieraskäyttäjän -asetus.](media/service-admin-azure-ad-b2b/azure-ad-portal-new-guest-user.png)
+    ![Näyttökuva Azure-portaalista, jossa näkyy Uusi vieraskäyttäjä -asetus.](media/service-admin-azure-ad-b2b/azure-ad-portal-new-guest-user.png)
 
 1. Kirjoita **sähköpostiosoite** ja **henkilökohtainen viesti**.
 
@@ -71,7 +71,7 @@ Vieraskäyttäjä saa sähköpostin, josta ilmenee että olet jakanut sovellukse
 
 ![Näyttökuva, jossa sovelluksen sähköposti jaetaan vieraskäyttäjälle](media/service-admin-azure-ad-b2b/guest-user-invite-email-2.png)
 
-Vieraskäyttäjän tulee kirjautua sisään organisaatiossaan käyttämällä sähköpostiosoitteella. Sisäänkirjautumisen jälkeen he saavat kehotuksen hyväksyä kutsun. Sisäänkirjautumisen jälkeen sovellus aukeaa vieraskäyttäjälle. Jotta käyttäjä voi palata sovellukseen, hän voi lisätä linkin kirjanmerkkeihin tai tallentaa sähköpostin.
+Vieraskäyttäjän tulee kirjautua sisään organisaatiossaan käyttämällä sähköpostiosoitteella. Sisäänkirjautumisen jälkeen he saavat kehotuksen hyväksyä kutsu. Sisäänkirjautumisen jälkeen sovellus aukeaa vieraskäyttäjälle. Jotta käyttäjä voi palata sovellukseen, hän voi lisätä linkin kirjanmerkkeihin tai tallentaa sähköpostin.
 
 ## <a name="licensing"></a>Käyttöoikeudet
 
@@ -103,7 +103,7 @@ Kun käytät [Salli ulkoisten vieraskäyttäjien muokata ja hallita sisältöä 
  
 Auta näitä käyttäjiä kirjautumaan Power BI:hin antamalla heille vuokraajan URL-osoite. Etsi vuokraajan URL-osoite seuraavien vaiheiden mukaisesti.
 
-1. Valitse Power BI -palvelun yläreunan valikosta ohje ( **?** ) ja sitten **Tietoja Power BI:stä**.
+1. Valitse Power BI -palvelun yläreunan valikosta ohje (**?**) ja sitten **Tietoja Power BI:stä**.
 
 2. Katso arvo kohdan **Vuokraajan URL-osoite** vierestä. Arvo on vuokraajan URL-osoite, jonka voit jakaa vieraskäyttäjille.
 
