@@ -129,7 +129,7 @@ Power BI -ympäristö (vuokraaja) -termiä voidaan käyttää dokumentaatiossa, 
 
 **formatting (muotoilu)**
 
-**focus mode (kohdistustila)** [Power BI -palvelu]
+**focus mode (tarkastelutila)** [Power BI -palvelu]
 
 **Free account (ilmainen tili)** Katso tili tässä termikokoelmassa.
 

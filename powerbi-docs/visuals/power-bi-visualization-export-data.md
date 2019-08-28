@@ -108,7 +108,7 @@ Seuraa mukana avaamalla [Hankinta-analyysimallin raportti](../sample-procurement
 
 ## <a name="export-underlying-data-details"></a>Pohjana olevien tietojen vieminen
 
-Kun valitset **Pohjana olevat tiedot**, saatat nähdä erilaisia tietoja. Näiden tietojen ymmärtäminen saattaa vaatia järjestelmänvalvojan tai IT-osaston apua. Power BI Desktopin tai palvelun raportointinäkymässä tulee esiin *mittayksikkö*, joka näyttää **Kentät**-luettelossa laskinkuvakkeen![, jossa on kuvake](media/power-bi-visualization-export-data/power-bi-calculator-icon.png). Power BI Desktop luo mittayksiköt. Power BI -palvelu ei tee näin.
+Kun valitset **Pohjana olevat tiedot**, saatat nähdä erilaisia tietoja. Näiden tietojen ymmärtäminen saattaa vaatia järjestelmänvalvojan tai IT-osaston apua. Power BI Desktopin tai palvelun raportointinäkymässä tulee näkyviin *mittari*, joka näyttää **Kentät**-luettelossa laskinkuvakkeen![, jossa on kuvake](media/power-bi-visualization-export-data/power-bi-calculator-icon.png). Power BI Desktop luo mittayksiköt. Power BI -palvelu ei tee näin.
 
 | Visualisoinnin sisältö | Mitä näet viennissä  |
 |---------------- | ---------------------------|
