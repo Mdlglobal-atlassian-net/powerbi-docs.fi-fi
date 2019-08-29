@@ -6,15 +6,15 @@ manager: kfile
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: overview
-ms.date: 05/30/2019
+ms.date: 08/19/2019
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: d6c9eb47d5f88a2d835c1ba6835e871b0c64bf1c
-ms.sourcegitcommit: fe8a25a79f7c6fe794d1a30224741e5281e82357
+ms.openlocfilehash: 0e12d110708c955e0c63e11f7578523222375448
+ms.sourcegitcommit: 4a3afe761d2f4a5bd897fafb36b53961739e8466
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "68324786"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69654979"
 ---
 # <a name="what-is-power-bi"></a>Mikä Power BI on?
 **Power BI** on kokoelma ohjelmistopalveluja, sovelluksia ja yhdistimiä, jotka yhdessä muuntavat toisiinsa liittymättömistä lähteistä peräisin olevan tiedon johdonmukaisiksi, visuaalisesti vaikuttaviksi ja vuorovaikutteisiksi näkemyksiksi. Tiedot voivat olla Excel-laskentataulukossa tai joukossa pilvipohjaisia ja paikallisia hybriditietovarastoja. Power BI:n avulla voit helposti muodostaa yhteyden tietolähteisiin, visualisoida ja löytää tärkeitä asioita sekä jakaa niitä kenen kanssa haluat.
@@ -27,9 +27,9 @@ Power BI:tä voi käyttää yksinkertaisesti ja nopeasti, kun on tarve tuottaa m
 Power BI koostuu seuraavista: 
 - Windowsin työpöytäsovellus nimeltä **Power BI Desktop**
 - Verkossa oleva SaaS (*Software as a Service*) -palvelu nimeltä **Power BI -palvelu** 
-- Power BI **-mobiilisovellukset** Windows-, iOS- ja Android-laitteille
+- Power BI **-mobiilisovellukset** Windows-, iOS- ja Android-laitteille.
 
-![Power BI Desktop, palvelu, mobiilisovellus](media/power-bi-overview/power-bi-blocks.png)
+![Power BI Desktop, palvelu, mobiilisovellus](media/power-bi-overview/power-bi-overview-blocks.png)
 
 Jokainen osista – &mdash;Power BI Desktop, Power BI -palvelu ja mobiilisovellukset&mdash; – on suunniteltu siten, että merkityksellisten liiketoimintatietojen tuottaminen, jakaminen ja hyödyntäminen on mahdollisimman tehokasta kunkin käyttäjän tai hänen roolinsa kannalta.
 

@@ -1,5 +1,5 @@
 ---
-title: Siirtyminen Power BI:n uudessa ulkoasussa
+title: Power BI -palvelun uusi ulkoasu
 description: Power BI -palvelulla (app.powerbi.com) on uusi ulkoasu. Tässä artikkelissa kuvataan, miten raporteissa voidaan siirtyä käyttämällä uutta ulkoasua.
 author: maggiesMSFT
 manager: kfile
@@ -7,19 +7,19 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 07/24/2019
+ms.date: 08/19/2019
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: aa7de324e77b8f2b1c58e558c0814df97d997631
-ms.sourcegitcommit: 8aa90f662afb7492ffcfc11ef142cdb0ccecc9aa
+ms.openlocfilehash: 6c752b6083d2f3baecf7e1a9ce20f77e8c5a46d0
+ms.sourcegitcommit: 4a3afe761d2f4a5bd897fafb36b53961739e8466
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68471303"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69654936"
 ---
-# <a name="navigate-the-new-look-of-the-power-bi-service"></a>Siirtyminen Power BI:n uudessa ulkoasussa
+# <a name="the-new-look-of-the-power-bi-service"></a>Power BI -palvelun uusi ulkoasu
 
-Power BI -palvelulla on uusi ulkoasu. Olemme helpottaneet raporttien tarkastelua. Uusi ulkoasu on yksinkertaisempi, moderni kokemus, joka perustuu muiden Microsoft-tuotteiden tuntemukseesi. Olemme painottaneet koko Power BI -palvelussa raportin sisältöä vaihtamalla vaaleampaan väriteemaan ja päivittämällä kuvakkeita. Seuraavassa on yleiskatsaus siitä, mitä uutta uudessa ulkoasussa on. Lisätietoja on numeroiduissa osioissa:
+Power BI -palvelussa (app.powerbi.com) on uusi ulkoasu, jonka ansiosta raportteja on helpompi tarkastella ja käyttää. Uusi ulkoasu on yksinkertaisempi, moderni kokemus, joka perustuu muiden Microsoft-tuotteiden tuntemukseesi. Olemme painottaneet koko Power BI -palvelussa raportin sisältöä vaihtamalla vaaleampaan väriteemaan ja päivittämällä kuvakkeita. Seuraavassa on yleiskatsaus siitä, mitä uutta uudessa ulkoasussa on. Lisätietoja on numeroiduissa osioissa:
 
 ![Yleiskatsaus uuden ulkoasun muutoksista](media/service-new-look/power-bi-new-look-changes.png)
 
@@ -35,7 +35,7 @@ Kaikki Power BI -palvelun käyttäjät voivat valita uuden ulkoasun. Siirrä vai
 
 ![Uuden ulkoasun ottaminen käyttöön](media/service-new-look/power-bi-new-look-off.png)
 
-Jos haluat palata käyttämään vanhaa ulkoasua, valitse oikeassa yläkulmassa kolmen pisteen (...) valikko.
+Jos sinun on palattava vanhaan näkymään, siirrä valitsin takaisin kohtaan **pois käytöstä** ![Uusi ulkoasu käytössä](media/service-new-look/power-bi-new-look-toggle-on.png). Jos et näe sitä, valitse oikeasta yläkulmasta kolme pistettä -valikko.
 
 ![Uuden ulkoasun poistaminen käytöstä](media/service-new-look/power-bi-new-look-on.png)
 

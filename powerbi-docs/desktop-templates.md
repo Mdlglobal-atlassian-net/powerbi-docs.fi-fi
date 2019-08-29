@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/16/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 7965751740384c5a5f1cc663389a559e0c1bd1c0
-ms.sourcegitcommit: f6ac9e25760561f49d4257a6335ca0f54ad2d22e
+ms.openlocfilehash: e28306532714369830df46304aa4a1ebff67bd8f
+ms.sourcegitcommit: e62889690073626d92cc73ff5ae26c71011e012e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69563662"
+ms.lasthandoff: 08/23/2019
+ms.locfileid: "69985646"
 ---
 # <a name="using-templates-in-power-bi-desktop"></a>Mallien käyttäminen Power BI Desktopissa
 
@@ -70,7 +70,10 @@ Kun parametrit ja tiedot on määritetty, luodaan raportti, joka sisältää kai
 Siinä kaikki! Raporttimallien luominen ja käyttäminen Power BI Desktopissa on helppoa. Voit helposti toistaa vaikuttavia asetteluja ja muita raportin ominaisuuksia ja jakaa ne muille.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
-Voit tehdä kaikenlaista Power BI Desktopilla. Saat lisätietoja sen toiminnoista seuraavista resursseista:
+Voit olla myös kiinnostunut **kyselyparametreista**:
+* [Käytätkö kyselyparametreja Power BI Desktopissa?](https://docs.microsoft.com/power-query/power-query-query-parameters)
+
+Voit lisäksi tehdä kaikenlaista Power BI Desktopilla. Saat lisätietoja sen toiminnoista seuraavista resursseista:
 
 * [Mikä on Power BI Desktop?](desktop-what-is-desktop.md)
 * [Power BI Desktopin kyselyiden yleiskatsaus](desktop-query-overview.md)

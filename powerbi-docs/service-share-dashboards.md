@@ -8,26 +8,26 @@ featuredvideoid: 0tUwn8DHo3s
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/24/2019
+ms.date: 08/19/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: d82b03325991276924f25da5511baadfe53127e1
-ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
+ms.openlocfilehash: da7b8999dfb6185b044960dde7795008d7e716f7
+ms.sourcegitcommit: 4a3afe761d2f4a5bd897fafb36b53961739e8466
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68522992"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69655119"
 ---
 # <a name="share-power-bi-dashboards-and-reports-with-coworkers-and-others"></a>Power BI -koontinäyttöjen ja -raporttien jakaminen työtovereiden ja muiden kanssa
 *Jakaminen* on kätevä keino myöntää parille henkilölle käyttöoikeus luomiisi koontinäyttöihin ja raportteihin. Power BI tarjoaa myös [useita muita tapoja tehdä yhteistyötä ja jakaa koontinäyttöjä ja raportteja](service-how-to-collaborate-distribute-dashboards-reports.md).
 
-![Kuvakkeen jakaminen suosituimpien koontinäyttöjen luettelossa](media/service-share-dashboards/power-bi-share-dash-report-favorites.png)
+![Kuvakkeen jakaminen koontinäyttöjen luettelossa](media/service-share-dashboards/power-bi-share-new-look.png)
 
 Kun jaat sisältöä organisaatiosi sisä- tai ulkopuolella, tarvitset jakamiseen [Power BI Pro -käyttöoikeuden](service-features-license-type.md). Vastaanottajasi tarvitsevat myös Power BI Pro -käyttöoikeudet, ellei sisältö ole [Premium-tasoista](service-premium-what-is.md). 
 
-Voit jakaa koontinäyttöjä ja raportteja useimmista paikoista Power BI -palvelussa: Suosikit, Viimeaikaiset, Jaettu kanssani (jos omistaja sallii sen), Oma työtila tai muut työtilat. Kun jaat koontinäytön tai raportin, niiden vastaanottajat voivat tarkastella ja käsitellä niitä, mutta eivät voi muokata niitä. He näkevät samat tiedot kuin sinä koontinäytössä tai raportissa, ellei sovelleta [rivitason suojausta (RLS)](service-admin-rls.md). Työtoverit, joille tiedot jaat, voivat myös jakaa niitä omien työtovereidensa kanssa, jos sallit sen. Organisaatiosi ulkopuoliset henkilöt voivat myös tarkastella ja käsitellä koontinäyttöä tai raporttia, mutta eivät voi jakaa sitä. 
+Voit jakaa koontinäyttöjä ja raportteja useimmista paikoista Power BI -palvelussa: Suosikit, Viimeaikaiset, Jaettu kanssani (jos omistaja sallii sen), Oma työtila tai muut työtilat. Kun jaat koontinäytön tai raportin, vastaanottajat voivat tarkastella ja käsitellä sitä, mutta eivät voi muokata sitä. He näkevät samat tiedot kuin sinä koontinäytössä tai raportissa, ellei sovelleta [rivitason suojausta (RLS)](service-admin-rls.md). Työtoverit, joille tiedot jaat, voivat myös jakaa niitä omien työtovereidensa kanssa, jos sallit sen. Organisaatiosi ulkopuoliset henkilöt voivat myös tarkastella ja käsitellä koontinäyttöä tai raporttia, mutta eivät voi jakaa sitä. 
 
-Voit myös [jakaa koontinäytön mistä tahansa Power BI -mobiilisovelluksesta](consumer/mobile/mobile-share-dashboard-from-the-mobile-apps.md). Koontinäyttöjä ei kuitenkaan voi jakaa Power BI Desktopista.
+Koontinäyttöjä ei voi jakaa Power BI Desktopista. Voit kuitenkin [jakaa koontinäytön mistä tahansa Power BI -mobiilisovelluksesta](consumer/mobile/mobile-share-dashboard-from-the-mobile-apps.md).  
 
 ## <a name="video-share-a-dashboard"></a>Video: Jaa koontinäyttö
 Katso, miten Amanda jakaa koontinäyttönsä työtovereiden kanssa yrityksensä sisä- ja ulkopuolella. Kokeile sitten itse noudattamalla videon alapuolella olevia vaiheittaisia ohjeita.
@@ -55,7 +55,9 @@ Katso, miten Amanda jakaa koontinäyttönsä työtovereiden kanssa yrityksensä 
    
    Kun sallit muiden jakaa sisältöäsi, tätä kutsutaan *uudelleenjakamiseksi*. Jos sallit sen, he voivat jakaa sisältöäsi uudelleen Power BI -palvelusta ja -mobiilisovelluksista tai välittää sähköpostikutsun organisaation muille käyttäjille. Kutsu vanhenee kuukauden kuluttua. Organisaatiosi ulkopuoliset henkilöt eivät voi jakaa sisältöä uudelleen. Voit sisällön omistajana poistaa uudelleenjakamisen käytöstä tai palauttaa uudelleenjakamisen yksilökohtaisesti. Katso [Jakamisen lopettaminen tai muiden jakamisen estäminen](#stop-sharing-or-stop-others-from-sharing).
 
-5. Valitse **Jaa**.
+5. Jos valitset **Salli käyttäjien muodostaa uutta sisältöä käyttäen pohjana olevia tietojoukkoja** -vaihtoehdon, käyttäjät voivat luoda omia raporttejaan muissa työtiloissa tämän koontinäytön tietojoukon pohjalta.
+
+1. Valitse **Jaa**.
    
    ![Jaa-painikkeen valitseminen](media/service-share-dashboards/power-bi-share-dialog-share.png)  
    
@@ -63,11 +65,11 @@ Katso, miten Amanda jakaa koontinäyttönsä työtovereiden kanssa yrityksensä 
    
    Kun organisaatiossasi olevat vastaanottajat napsauttavat linkkiä, Power BI lisää koontinäytön tai raportin vastaanottajien **Jaettu kanssani** -luettelosivulle. He voivat valita nimesi, jotta he näkevät kaiken sisällön, jonka olet jakanut heidän kanssaan. 
    
-   ![Jaettu kanssani -luettelosivu](media/service-share-dashboards/power-bi-shared-with-me-dashboards-reports.png)
+   ![Jaettu kanssani -luettelosivu](media/service-share-dashboards/power-bi-shared-with-me-new-look.png)
    
-   Kun organisaatiosi ulkopuoliset vastaanottajat napsauttavat linkkiä, he näkevät koontinäytön tai raportin, mutta eivät tavallista Power BI -portaalia. Lisätietoja on kohdassa [Koontinäytön tai raportin jakaminen organisaatiosi ulkopuolisten henkilöiden kanssa](#share-a-dashboard-or-report-with-people-outside-your-organization).
+   Kun organisaatiosi ulkopuoliset vastaanottajat napsauttavat linkkiä, he näkevät koontinäytön tai raportin, mutta eivät tavallista Power BI -portaalia. Lisätietoja on kohdassa [Koontinäytön tai raportin jakaminen organisaatiosi ulkopuolisten henkilöiden kanssa](#share-a-dashboard-or-report-outside-your-organization).
 
-## <a name="who-has-access-to-a-dashboard-or-report-you-shared"></a>Kenellä on oikeus käyttää jakamaasi koontinäyttöä tai raporttia?
+## <a name="see-who-has-access-to-a-dashboard-or-report"></a>Katso, kenellä on oikeus käyttää koontinäyttöä tai raporttia
 Toisinaan sinun on nähtävä henkilöt, joiden kanssa olet jakanut sisältöä, sekä se, kenen kanssa he ovat jakaneet sisältöä:
 
 1. Valitse koontinäyttöjen ja raporttien luettelosta tai itse koontinäytöstä tai raportista **Jaa** ![Jaa-kuvake](media/service-share-dashboards/power-bi-share-icon.png). 
@@ -99,7 +101,7 @@ Vain koontinäytön tai raportin omistaja voi ottaa uudelleenjakamisen käyttö�
 
     ![Power BI:n jakamisen varoitusvalintaikkuna](media/service-share-dashboards/power-bi-sharing-warning-dialog.png)
 
-## <a name="share-a-dashboard-or-report-with-people-outside-your-organization"></a>Koontinäytön tai raportin jakaminen organisaatiosi ulkopuolisten henkilöiden kanssa
+## <a name="share-a-dashboard-or-report-outside-your-organization"></a>Koontinäytön tai raportin jakaminen organisaatiosi ulkopuolisten henkilöiden kanssa
 Kun jaat sisältöä organisaatiosi ulkopuolisten henkilöiden kanssa, he saavat sähköpostiviestin ja linkin jaettuun koontinäyttöön tai raporttiin. Jos he haluavat tarkastella tätä sisältöä, heidän on kirjauduttava sisään Power BI -palveluun. Jos heillä ei ole Power BI Pro -käyttöoikeutta, he voivat rekisteröityä käyttöoikeuden saamiseksi napsautettuaan linkkiä.
 
 Kun he ovat kirjautuneet sisään, he näkevät jaetun koontinäytön tai raportin sen omassa selainikkunassa, eivät tavanomaisessa Power BI -portaalissaan. Jos haluat myöhemmin käyttää tätä koontinäyttöä tai raporttia, heidän on lisättävä linkki kirjanmerkkeihin.

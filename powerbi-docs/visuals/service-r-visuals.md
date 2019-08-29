@@ -7,21 +7,21 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/24/2019
+ms.date: 08/16/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 0af278171a00c792e466bbd0e21a3efb5ffa8962
-ms.sourcegitcommit: 1c96b65a03ec0a0612e851dd58c363f4d56bca38
+ms.openlocfilehash: 93b3be374707b3e49f87d0875795d160f4530410
+ms.sourcegitcommit: 4a3afe761d2f4a5bd897fafb36b53961739e8466
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "67389740"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69655017"
 ---
 # <a name="creating-r-visuals-in-the-power-bi-service"></a>R-visualisointien luominen Power BI -palvelussa
 Power BI -palvelu tukee R-komentosarjoilla luotujen visualisointien tarkastelemista ja käsittelemistä. R-komentosarjoilla luodut visualisoinnit, joita kutsutaan yleisesti nimellä *R-visualisoinnit*, voivat esittää kehittynyttä tietojen muotoilemista ja analytiikkaa, kuten ennusteita, hyödyntämällä R:n monipuolisia analytiikka- ja visualisointitaitoja.
 
 > [!NOTE]
-> [R-ohjelmointikieli](https://www.r-project.org/) on yksi yleisimmin käytetyistä ohjelmointikielistä, jota tilastotieteilijät, datatutkijat ja liiketoiminta-analyytikot käyttävät. R-kielessä on avoimen lähdekoodin yhteisö, joka tarjoaa yli 7 000 lisäosapakettia sekä hyvin laajasti käytetyt R-käyttäjäryhmät. Power BI -palvelussa käytetty R-versio on *Revolution R Open 3.2.2.*
+> [R-ohjelmointikieli](https://www.r-project.org/) on yksi yleisimmin käytetyistä ohjelmointikielistä, jota tilastotieteilijät, datatutkijat ja liiketoiminta-analyytikot käyttävät. R-kielessä on avoimen lähdekoodin yhteisö, joka tarjoaa yli 7 000 lisäosapakettia sekä hyvin laajasti käytetyt R-käyttäjäryhmät. Power BI -palvelussa käytetty R-versio on *Microsoft R 3.4.4.*
 > 
 > 
 

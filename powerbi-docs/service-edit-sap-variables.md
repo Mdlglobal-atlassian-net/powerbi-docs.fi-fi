@@ -1,8 +1,8 @@
 ---
 title: SAP-muuttujien muokkaus Power BI -palvelussa (esikatselu)
 description: Azure ja Power BI
-author: maggiesMSFT
-ms.author: maggies
+author: Sujata994
+ms.author: sunaraya
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
@@ -10,12 +10,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 08/12/2019
 LocalizationGroup: Data from databases
-ms.openlocfilehash: aff72d8efed716af2e7f4c881b22af12e248c207
-ms.sourcegitcommit: 0e50ebfa8762e19286566432870ef16d242ac78f
+ms.openlocfilehash: db1d4a8a9734c910514b4952b664bf7ebce324c1
+ms.sourcegitcommit: 4a3afe761d2f4a5bd897fafb36b53961739e8466
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68962891"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69654885"
 ---
 # <a name="edit-sap-variables-in-the-power-bi-service-preview"></a>SAP-muuttujien muokkaus Power BI -palvelussa (esikatselu)
 
@@ -34,7 +34,7 @@ SAP-muokkausmuuttujien käyttämiseen on joitakin vaatimuksia. Seuraavassa luett
 - Valitse vasemmasta siirtymispalkista **Nykyinen tiedosto** -kohdan alta **Raportin asetukset**.
 - Valitse **Suodatuskokemus**-kohdassa **Ota käyttöön päivitetty suodatinruutu**.
 
-**DirectQuery-yhteydet vaaditaan ** – yhteys SAP-tietolähteeseen on muodostettava DirectQueryn avulla. Tuontiyhteyksiä ei tueta.
+**DirectQuery-yhteydet vaaditaan**  – yhteys SAP-tietolähteeseen on muodostettava DirectQueryn avulla. Tuontiyhteyksiä ei tueta.
 
 **Power BI Premium -tilaus vaaditaan** – SAP-muokkausmuuttujat toimivat tällä hetkellä vain Power BI Premium -tilauksissa.
 

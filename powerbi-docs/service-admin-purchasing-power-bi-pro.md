@@ -10,16 +10,16 @@ ms.topic: quickstart
 ms.date: 10/21/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 15cd5e021969a050937b9d67eb7695f4fcde07c0
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 4778fd8beb1faa30562bcf3dcca6d78bfac5dac4
+ms.sourcegitcommit: 4a3afe761d2f4a5bd897fafb36b53961739e8466
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61188432"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69654805"
 ---
 # <a name="purchase-and-assign-power-bi-pro-licenses"></a>Power BI Pro -käyttöoikeuksien hankinta ja määritys
 
-Power BI Pro on yksittäinen käyttöoikeus, joka sallii kaiken sisällön ja kaikkien ominaisuuksien käytön Power BI -palvelussa, eli myös sisällön jakamisen ja yhteistyön muiden Pro-käyttäjien kanssa. Vain Pro-käyttäjät voivat julkaista ja käyttää sisältöä sovelluksen työtiloista, jakaa koontinäyttöjä sekä tilata koontinäyttöjä ja raportteja. Jos haluat lisätietoja, katso kohta [Power BI:n ominaisuudet käyttöoikeustyypin mukaan](service-features-license-type.md).
+Power BI Pro on yksittäinen käyttöoikeus, joka sallii kaiken sisällön ja kaikkien ominaisuuksien käytön Power BI -palvelussa, eli myös sisällön jakamisen ja yhteistyön muiden Pro-käyttäjien kanssa. Vain Pro-käyttäjät voivat julkaista sisältöä sovelluksen työtiloihin, jakaa koontinäyttöjä sekä tilata koontinäyttöjä ja raportteja. Jos haluat lisätietoja, katso kohta [Power BI:n ominaisuudet käyttöoikeustyypin mukaan](service-features-license-type.md).
 
 Tässä artikkelissa kerrotaan ensin, miten voit ostaa Power BI Pro -käyttöoikeuksia Office 365:ssä. Artikkelissa selitetään sitten kahta vaihtoehtoa, joiden avulla voit määrittää nämä käyttöoikeudet yksittäisille käyttäjille: Office 365 ja Azure (valitse yksi vaihtoehto).
 

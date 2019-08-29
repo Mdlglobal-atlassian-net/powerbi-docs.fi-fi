@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 04/15/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: dee2ff4376242883d30f606e687184c0dde43ffe
-ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
+ms.openlocfilehash: 8000397e5d8f26847349c35b541aa82c5907292e
+ms.sourcegitcommit: ba95d4979f1869f49a7d266c591f95e2810fdb29
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68523478"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "69621247"
 ---
 # <a name="connect-azure-data-lake-storage-gen2-for-dataflow-storage-preview"></a>Yhdistä Azure Data Lake Storage Gen2 tietovuon tallennukseen (esikatselu)
 
@@ -177,6 +177,7 @@ Tämä ominaisuus on esikatseluominaisuus, ja sen toiminta saattaa muuttua ennen
 * Vain Azure Data Lake Storage Gen2:een tallennetun tietovuon omistajat voivat käyttää sen tietoja oletusarvoisesti. Jotta muut henkilöt voivat käyttää Azureen tallennettuja tietovoita, sinun on lisättävä heidät tietovuon CDM-kansioon. 
 * Tietovoiden luominen linkitettyjen entiteettien kanssa on mahdollista vain, kun ne on tallennettu samalle tallennustilille.
 * Power BI:n jaettujen kapasiteettien paikallisia tietolähteitä ei tueta tietovoissa, jotka on tallennettu organisaatiosi Data Lake-järjestelmään.
+* Tilannevedoksia ei poisteta automaattisesti ADLS Gen 2:ssa. Jos haluat vapauttaa tilaa, voit luoda Azure-funktion, joka poistaa vanhat tilannevedokset säännöllisesti.
 
 Tähän liittyy myös joitakin tunnettuja ongelmia, kuten tässä osiossa on kuvattu.
 

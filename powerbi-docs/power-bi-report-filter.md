@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 07/18/2019
+ms.date: 08/19/2019
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: 148f4881f78b5bba9b6936f5688ba6aaea3a0145
-ms.sourcegitcommit: dc0258bb4f647ff646c6fff2aaffa29b413aa2df
+ms.openlocfilehash: 73db8f9741685549042dbaf1172e57a55a26ab36
+ms.sourcegitcommit: 4a3afe761d2f4a5bd897fafb36b53961739e8466
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68346356"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69654485"
 ---
 # <a name="the-new-filter-experience-in-power-bi-reports"></a>Uusi suodatuskokemus Power BI -raporteissa
 
@@ -48,6 +48,10 @@ Uusi suodatuskokemus otetaan käyttöön oletuksena uusissa raporteissa. Voit ot
 3. Valitse **Suodatuskokemus**-kohdan alta **Ota käyttöön päivitetty suodatinruutu ja näytä suodattimet visualisoinnin otsikossa tälle raportille**.
 
 ### <a name="turn-on-new-filters-for-an-existing-report-in-the-service"></a>Ota käyttöön uudet suodattimet aiemmin luodussa raportissa palvelussa
+
+Jos olet ottanut **uuden ulkoasun** käyttöön Power BI -palvelussa ![Uusi ulkoasu käytössä](media/power-bi-report-filter/power-bi-new-look-on.png), uusi suodatuskokemus otetaan käyttöön automaattisesti. Lue lisää [Power BI -palvelun uudesta ulkoasusta](service-new-look.md).
+
+Jos et ole ottanut uutta ulkoasua käyttöön, voit nähdä uuden suodatuskokemuksen noudattamalla seuraavia vaiheita.
 
 1. Valitse Power BI -palvelussa **Raportit**-välilehti työtilan sisältöluettelosta.
 2. Etsi raportti, jonka haluat ottaa käyttöön, ja valitse kyseisen raportin **Asetukset**-kuvake ](media/power-bi-report-filter/power-bi-settings-icon.png)Raportin asetukset -kuvake![.
@@ -121,15 +125,13 @@ Voit myös muotoilla näitä elementtejä suodatinkorteissa sen mukaan, onko ne 
 1. Napsauta raportissa joko itse raporttia tai taustaa (*taustakuva*) ja valitse sitten **Visualisoinnit**-ruudussa **Muotoilu**. 
     Näet vaihtoehtoja raporttisivun, taustakuvan ja myös Suodattimet-ruudun ja Suodattimet-korttien muotoiluun.
 
-    ![Valitse Muotoilu-kuvake](media/power-bi-report-filter/power-bi-filter-format.png)    
-
 1. Laajenna **suodatinruutu** määrittääksesi taustan värin, kuvakkeen ja vasemman reunan täydentämään raporttisivua.
 
-    ![Laajenna suodatinruutu](media/power-bi-report-filter/power-bi-filter-format-pane-font.png)
+    ![Laajenna suodatinruutu](media/power-bi-report-filter/power-bi-format-filter-pane.png)
 
 1. Laajenna **suodatinkortit** määrittääksesi **Käytettävissä**- ja **Otettu käyttöön** -kohtien värin ja reunan. Jos teet Käytettävissä- ja Otettu käyttöön -kohtien korteista eri väriset, on selvää, mitkä suodattimet on otettu käyttöön. 
   
-    ![Laajenna suodatinkortti](media/power-bi-report-filter/power-bi-filter-format-card-font.png)
+    ![Laajenna suodatinkortti](media/power-bi-report-filter/power-bi-format-filter-cards.png)
 
 ## <a name="theming-for-filter-pane"></a>Suodattimet-ruudun teeman määrittäminen
 Voit nyt muuttaa suodatinruudun oletusasetuksia teematiedoston avulla. Tässä on esimerkki teemakatkelmasta, jonka avulla pääset alkuun:

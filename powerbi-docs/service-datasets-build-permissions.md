@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/14/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 17c3322ed5f24d106412bafb9c4235ee15a626aa
-ms.sourcegitcommit: 4d5166944fcc6fe4666cab055ae75e7a0a77866d
+ms.openlocfilehash: c5b880132255fbdf37996273dc6c70029e548df6
+ms.sourcegitcommit: 4a3afe761d2f4a5bd897fafb36b53961739e8466
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69530523"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69654908"
 ---
 # <a name="share-a-dataset-preview"></a>Tietojoukon jakaminen (esikatselu)
 
@@ -42,7 +42,7 @@ Power BI Desktopin *tietomallien* luojana voit jakaa niitä *tietojoukkoina* Pow
 
 ## <a name="build-permissions-for-shared-datasets"></a>Jaettujen tietojoukkojen muodostamisoikeudet
 
-Muodostamiskäyttöoikeus koskee vain tietojoukkoja. Sen avulla käyttäjät voivat luoda uutta sisältöä tietojoukkoon, esimerkiksi raportteja, koontinäyttöjä, Q&A;n kiinnitettyjä ruutuja ja merkityksellisten tietojen hakuja. Käyttäjät voivat luoda uutta sisältöä tietojoukkoon myös Power BI:n ulkopuolella, esimerkiksi Excel-laskentataulukoita Analysoi Excelissä -toiminnolla, XMLA:lla ja viemällä.
+Muodostamiskäyttöoikeus koskee vain tietojoukkoja. Sen avulla käyttäjät voivat luoda uutta sisältöä tietojoukkoon, esimerkiksi raportteja, koontinäyttöjä, Q&A;n kiinnitettyjä ruutuja ja merkityksellisten tietojen hakuja. Käyttäjät voivat luoda uutta sisältöä tietojoukkoon myös Power BI:n ulkopuolella, esimerkiksi Excel-laskentataulukoita Analysoi Excelissä -toiminnolla, XMLA:lla ja viemällä pohjana olevat tiedot.
 
 Käyttäjät voivat hankkia muodostamisoikeudet eri tavoin:
 
@@ -72,7 +72,7 @@ Tämän eriytetymmän muodostamisoikeuden avulla voit valita, ketkä voivat aino
 
 Jos tietojoukkoasi käytetään raportissa tietojoukon työtilan ulkopuolella, et voi poistaa kyseistä työtilaa. Saat sen sijaan virheilmoituksen.
 
-Voit poistaa muodostamisoikeuksia. Jos poistat oikeuksia, käyttäjät, joiden oikeudet poistat, näkevät yhä raportin, mutta he eivät voi enää muokata sitä.
+Voit poistaa muodostamisoikeuksia. Jos poistat oikeuksia, käyttäjät, joiden oikeudet poistat, näkevät yhä raportin, mutta he eivät voi enää muokata sitä tai viedä pohjana olevia tietoja. Käyttäjät, joilla on vain lukuoikeus, voivat yhä viedä yhteenvedettyjä tietoja. 
 
 ## <a name="track-your-dataset-usage"></a>Tietojoukon käytön seuranta
 

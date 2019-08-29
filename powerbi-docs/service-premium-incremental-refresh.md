@@ -7,25 +7,24 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 07/03/2019
+ms.date: 08/21/2019
 ms.author: mblythe
 LocalizationGroup: Premium
-ms.openlocfilehash: c743f56de101cb63db2357acf869aba80162c181
-ms.sourcegitcommit: 9278540467765043d5cb953bcdd093934c536d6d
+ms.openlocfilehash: 4f3c709c0ea699c0c9ad7ebee61889e6c7bceef8
+ms.sourcegitcommit: e62889690073626d92cc73ff5ae26c71011e012e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67559037"
+ms.lasthandoff: 08/23/2019
+ms.locfileid: "69985757"
 ---
 # <a name="incremental-refresh-in-power-bi-premium"></a>Lisäävää päivitys Power BI Premiumissa
 
 Lisäävä päivitys mahdollistaa erittäin suurien tietojoukkojen käytön Power BI Premium -palvelussa tarjoamalla seuraavat edut:
 
-- **Päivitykset sujuvat nopeammin**: vain muutetut tiedot päivitetään. Voit esimerkiksi päivittää vain viimeiset viisi päivää 10 vuoden tietojoukosta.
-
-- **Päivitykset ovat luotettavampia**: sinun ei tarvitse enää säilyttää pitkäkestoisia yhteyksiä lyhytkestoisiin lähdejärjestelmiin.
-
-- **Resurssien kulutus on vähäisempää**: kun päivitettäviä tietoja on vähemmän, muistin ja muiden resurssien yleinen kulutus on pienempi.
+> [!div class="checklist"]
+> * **Päivitykset sujuvat nopeammin**: vain muutetut tiedot päivitetään. Voit esimerkiksi päivittää vain viimeiset viisi päivää 10 vuoden tietojoukosta.
+> * **Päivitykset ovat luotettavampia**: sinun ei tarvitse enää säilyttää pitkäkestoisia yhteyksiä lyhytkestoisiin lähdejärjestelmiin.
+> * **Resurssien kulutus on vähäisempää**: kun päivitettäviä tietoja on vähemmän, muistin ja muiden resurssien yleinen kulutus on pienempi.
 
 ## <a name="configure-incremental-refresh"></a>Lisäävän päivityksen määrittäminen
 
@@ -51,9 +50,13 @@ Kun parametrit on määritetty, voit käyttää suodatinta valitsemalla **Mukaut
 
 ![Mukautettu suodatin](media/service-premium-incremental-refresh/custom-filter.png)
 
-Varmista, että rivit suodatetaan, kun sarakkeen arvo *on suurempi tai yhtä suuri kuin* **RangeStart** ja *pienempi kuin* **RangeEnd**.
+Varmista, että rivit suodatetaan, kun sarakkeen arvo *on suurempi tai yhtä suuri kuin* **RangeStart** ja *pienempi kuin* **RangeEnd**. Muilla suodatinyhdistelmillä rivit saatetaan laskea kahdesti.
 
 ![Rivien suodattaminen](media/service-premium-incremental-refresh/filter-rows.png)
+
+> [!IMPORTANT]
+> Varmista, että kyselyissä on yhtäsuuruusmerkki (=) joko **RangeStart**- tai **RangeEnd**-kohdassa, mutta ei niissä molemmissa. Jos kummassakin parametrissa on yhtäsuuruusmerkki (=), rivi voi täyttää kahden osion ehdot, mikä voi johtaa mallin tietojen kaksoiskappaleisiin. Esimerkki:  
+> \#"Filtered Rows" = Table.SelectRows(dbo_Fact, kumpikin [OrderDate] **>= RangeStart** ja [OrderDate] **<= RangeEnd**) saattaa aiheuttaa tietojen kaksoiskappaleita.
 
 > [!TIP]
 > Vaikka parametrien tietotyypin on oltava päivämäärä/aika, se voidaan muuntaa vastaamaan tietolähteen vaatimuksia. Esimerkiksi seuraava Power Query -funktio muuntaa päivämäärän/ajan arvon muistuttamaan tietovarastoissa yleisen muodon *vvvvkkpp* kokonaisluvun korvaavaa avainta. Funktio voidaan kutsua suodattimen vaiheen mukaan.
@@ -152,7 +155,7 @@ Voit nyt päivittää mallin. Ensimmäinen päivitys saattaa kestää kauemmin h
 
 [Vianmäärityksen päivitys](https://docs.microsoft.com/power-bi/refresh-troubleshooting-refresh-scenarios) -artikkelissa kerrotaan, että Power BI -palvelussa päivitystoiminnot voidaan aikakatkaista. Tietolähteen oletusaikakatkaisu voi myös rajoittaa kyselyjä. Useimmat suhteelliset lähteet sallivat aikakatkaisujen ohittamisen M-lausekkeessa. Esimerkiksi alla olevassa lausekkeessa sen kestoksi määritetään kaksi tuntia [SQL Serverin tietojen käytön funktion](https://msdn.microsoft.com/query-bi/m/sql-database) avulla. Kukin käytäntöalueiden määrittämä jakso lähettää kyselyn, joka noudattaa komennon aikakatkaisua.
 
-```
+```powerquery-m
 let
     Source = Sql.Database("myserver.database.windows.net", "AdventureWorks", [CommandTimeout=#duration(0, 2, 0, 0)]),
     dbo_Fact = Source{[Schema="dbo",Item="FactInternetSales"]}[Data],
@@ -164,3 +167,4 @@ in
 ## <a name="limitations"></a>Rajoitukset
 
 Tällä hetkellä [yhdistelmämallien](desktop-composite-models.md) asteittaista päivittämistä tuetaan vain SQL Server-, Azure SQL -tietokanta-, SQL Data Warehouse-, Oracle- ja Teradata-tietolähteillä.
+

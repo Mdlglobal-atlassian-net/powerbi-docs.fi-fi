@@ -10,12 +10,12 @@ ms.topic: reference
 ms.date: 04/10/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 1b4e134ef6f8da43a1856c8a5458c8c09b2c42b5
-ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
+ms.openlocfilehash: 7917edc17bd93d96c22641b14c4c70bfe3222e10
+ms.sourcegitcommit: ba95d4979f1869f49a7d266c591f95e2810fdb29
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68522167"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "69621264"
 ---
 # <a name="expression-based-titles-in-power-bi-desktop"></a>Lausekepohjaiset otsikot Power BI Desktopissa
 
@@ -57,7 +57,7 @@ Kun olet luonut DAX-lausekkeen malliisi luomassasi kentässä, sinun on otettava
 
 Jos haluat valita kentän ja ottaa sen käyttöön, siirry **Visualisoinnit**-ruutuun. Näytä visualisoinnin otsikon asetukset valitsemalla **Muoto**-alueella **Otsikko**. 
 
-Kun napsautat hiiren kakkospainikkeella **Otsikkoteksti**, esiin tulee pikavalikko, jossa voit valita ***fx*Ehdollinen muotoilu**. Kun valitset kyseisen valikkovaihtoehdon, näkyviin tulee **Otsikkoteksti**-valintaikkuna. 
+Kun napsautat hiiren kakkospainikkeella **Otsikkoteksti**, esiin tulee pikavalikko, jossa voit valita **<em>fx</em>Ehdollinen muotoilu**. Kun valitset kyseisen valikkovaihtoehdon, näkyviin tulee **Otsikkoteksti**-valintaikkuna. 
 
 ![Näyttökuva Otsikkoteksti-valintaikkunasta](media/desktop-conditional-formatting-visual-titles/expression-based-title-02b.png)
 

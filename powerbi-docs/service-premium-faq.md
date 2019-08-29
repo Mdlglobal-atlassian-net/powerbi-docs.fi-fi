@@ -8,14 +8,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 02/05/2019
+ms.date: 08/19/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: 92b515cfa9c4d3ca796d48ac90415cc0d1d5d5a9
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 747ff7788ce30f5d4f61c48cc70a737bc74cd612
+ms.sourcegitcommit: 4a3afe761d2f4a5bd897fafb36b53961739e8466
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65565377"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69654278"
 ---
 # <a name="power-bi-premium-faq"></a>Power BI Premiumin usein kysytyt kysymykset
 
@@ -76,9 +76,9 @@ Power BI Premium on saatavilla Power BI Pron lisäosana. Office 365 E5 sisältä
 
 **Mikä on Power BI -raporttipalvelin? Tarkoittaako tämä, että Power BI on käytettävissä paikallisesti?**
 
-Power BI -raporttipalvelin on paikallinen palvelin, joka mahdollistaa vuorovaikutteisten Power BI -raporttien ja sivutettujen raporttien käyttöönoton ja jakamisen täysin organisaation palomuurin puitteissa. Power BI -raporttipalvelin on käytettävissä Power BI Premiumin kautta tai etuna asiakkaille, joilla on SQL Server Enterprise Edition, johon kuuluu Software Assurance. Kysy lisätietoja Microsoftin edustajaltasi.
+Power BI -raporttipalvelin on paikallinen palvelin, joka mahdollistaa vuorovaikutteisten Power BI -raporttien ja sivutettujen raporttien käyttöönoton ja jakamisen täysin organisaation palomuurin puitteissa. Power BI -raporttipalvelin on käytettävissä Power BI Premiumin kautta tai etuna asiakkaille, joilla on SQL Server Enterprise Edition, johon kuuluu Software Assurance. Lisätietoja käyttöoikeuksista on kohdassa [Power BI -raporttipalvelimen käyttöoikeus](report-server/get-started.md#licensing-power-bi-report-server). Kysy lisätietoja Microsoftin edustajaltasi.
 
-Power BI Premiumin avulla. sama määrä organisaation pilvipalveluun valmistelemia näennäisytimiä voidaan ottaa käyttöön myös paikallisesti Power BI -raporttipalvelimen kautta. Kapasiteettia ei tarvitse jakaa. Organisaatiot voivat valita Power BI:n pilvipalveluversion tai säilyttää raportit paikallisesti Power BI -raporttipalvelimella ja siirtää tiedot pilvipalveluun omassa tahdissaan.
+Power BI Premiumin avulla sama määrä organisaation pilvipalveluun valmistelemia näennäisytimiä voidaan ottaa käyttöön myös paikallisesti Power BI -raporttipalvelimen kautta. Kapasiteettia ei tarvitse jakaa. Organisaatiot voivat valita Power BI:n pilvipalveluversion tai säilyttää raportit paikallisesti Power BI -raporttipalvelimella ja siirtää tiedot pilvipalveluun omassa tahdissaan.
 
 Lisätietoja on artikkelissa [Power BI -raporttipalvelimen käytön aloittaminen](report-server/get-started.md).
 

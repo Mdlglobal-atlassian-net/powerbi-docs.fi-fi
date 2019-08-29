@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/28/2019
 ms.author: nikhilga
 LocalizationGroup: Get started
-ms.openlocfilehash: 06ba5835a568b7158a204ea6676e92844d40414d
-ms.sourcegitcommit: 8bf2419b7cb4bf95fc975d07a329b78db5b19f81
-ms.translationtype: MT
+ms.openlocfilehash: 7d45b63d3cd97185ce9be9e0592565a491cf195f
+ms.sourcegitcommit: 4a3afe761d2f4a5bd897fafb36b53961739e8466
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66375275"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69655046"
 ---
 # <a name="whats-new-in-the-power-bi-service"></a>Power BI -palvelun uudet toiminnot ja ominaisuudet
 Tarkista tältä sivulta **Power BI -palvelun** tunnetut ongelmat ja hiljattain julkaistut ominaisuudet. Lisätietoja aiheeseen liittyvistä uusista ominaisuuksista:
@@ -30,32 +30,32 @@ Saat lisätietoja uusista toiminnoista ja ominaisuuksista myös YouTube-kanavist
 * [Microsoft Power BI (YouTube)](https://www.youtube.com/channel/UCy--PYvwBwAeuYaR8JLmrfg)
 * [Kaveri kuutiossa (YouTube)](https://www.youtube.com/channel/UCFp1vaKzpfvoGai0vE5VJ0w)
 
-## <a name="may-2019"></a>Toukokuuta 2019: lle
-* [Mukautettu Siirtyminen](service-create-distribute-apps.md) Power BI-sovelluksille.
-* Liitetiedostot tyypit (PPTX XLSX DOCX, CSV, XML) käytettävissä sähköpostin subcriptions sisällä sivutettuja raportteja.
+## <a name="may-2019"></a>Toukokuu 2019
+* [Mukautettu siirtyminen](service-create-distribute-apps.md) Power BI -sovelluksissa.
+* Muita liitetiedostotyyppejä (PPTX, XLSX, DOCX, CSV, XML) on saatavana sähköpostitilauksia varten sivutetuissa raporteissa.
 
 ## <a name="previous-months-2019"></a>Edelliset kuukaudet (2019)
-### <a name="april-2019"></a>Huhtikuun 2019: lle
-* Yleisesti käytettävissä Power BI [dataflows](service-dataflows-overview.md).
-* Yleinen käytettävyys työtiloja uuden käyttökokemuksen.
-* Uusi Power BI-alueiden Ranskassa ja Korea.
-* Päivitetty Q & A-käyttökokemus koontinäyttöjen.
-* Tuki Azure Analysis Services- [sivutetut raportit](paginated-reports-report-builder-power-bi.md).
-* Sivutetut raportit tueta Power BI-sovelluksissa.
-* [Sähköpostin tilaukset](https://powerbi.microsoft.com/en-us/blog/e-mail-subscriptions-for-paginated-reports-is-now-available/) PDF-liitteitä sivutettuja raportteja.
-* Power BI Premium yhteenveto ja kuormituksen mittareita tueta hallintaportaalissa
-* [Kyselyn tallentaminen välimuistiin](power-bi-query-caching.md) käytettävissä Power BI Premium.
-* Yleisesti käytettävissä [aloitus Power BI-](https://powerbi.microsoft.com/en-us/blog/announcing-power-bi-home-general-availability-ga-roadmap/).
+### <a name="april-2019"></a>Huhtikuu 2019
+* Power BI:n [tietovoiden](service-dataflows-overview.md) yleinen saatavuus.
+* Uuden työtilakokemuksen yleinen saatavuus.
+* Uudet Power BI -alueet Ranskassa ja Koreassa.
+* Päivitetty Q&A-kokemus koontinäyttöjä varten.
+* Azure Analysis Services -tuki [sivutetuissa raporteissa](paginated-reports-report-builder-power-bi.md).
+* Power BI -sovelluksissa tuetaan sivutettuja raportteja.
+* [Sähköpostitilaukset](https://powerbi.microsoft.com/en-us/blog/e-mail-subscriptions-for-paginated-reports-is-now-available/) ja PDF-liitteet sivutettuja raportteja varten.
+* Hallintaportaali tukee Power BI Premiumin yhteenvetoa ja kuormitusarvoja
+* [Kyselyn tallentaminen välimuistiin](power-bi-query-caching.md) saatavana Power BI Premiumissa.
+* [Power BI -aloitussivun](https://powerbi.microsoft.com/en-us/blog/announcing-power-bi-home-general-availability-ga-roadmap/) yleinen saatavuus.
 
 ### <a name="march-2019"></a>Maaliskuu 2019
 * Power BI Premiumin Multi-Geo tulee yleisesti saataville.
 * Azure B2B:n Power BI -sisällön tuen muokkaaminen ja hallinta.
-* Julkinen esikatselu on vain luku- [XMLA-päätepisteelle](https://powerbi.microsoft.com/en-us/blog/power-bi-open-platform-connectivity-with-xmla-endpoints-public-preview/).
+* Vain luku -tilassa olevien [XMLA-päätepisteiden](https://powerbi.microsoft.com/en-us/blog/power-bi-open-platform-connectivity-with-xmla-endpoints-public-preview/) julkinen esikatselu.
 
 ### <a name="february-2019"></a>Helmikuu 2019
 * Kuormitukset ja aktiivisten tietojoukkojen kokotiedot [kapasiteetin valvontasovelluksessa](https://powerbi.microsoft.com/blog/new-monitoring-capabilities-for-power-bi-premium-capacities/).
 * Power BI -raporttien vienti PDF-muotoon.
-* [Pyydettäessä sähköpostitilaukset](service-report-subscribe.md).
+* [Sähköpostitilaukset tarvittaessa](service-report-subscribe.md).
 * Joukkotoiminnot hallintaportaalissa.
 * Suodatettu vienti PPT- ja PDF-muotoon.
 * [Ohje- ja tukiasetukset](https://powerbi.microsoft.com/en-us/blog/tailoring-help-and-support-for-power-bi-users/) hallintaportaalissa.
@@ -87,8 +87,8 @@ Saat lisätietoja uusista toiminnoista ja ominaisuuksista myös YouTube-kanavist
 
 ### <a name="september-2018"></a>Syyskuu 2018
 * [Koontinäytön kommentointi](https://powerbi.microsoft.com/blog/announcing-dashboard-comments-in-power-bi/) Power BI -palvelussa.
-* Julkinen esikatselu on [Power BI aloitus- ja yleishaun](https://powerbi.microsoft.com/en-us/blog/introducing-power-bi-home-and-global-search/).
-* Mahdollisuus [valvonnan kyselyt](https://powerbi.microsoft.com/en-us/blog/query-metrics-available-in-power-bi-premium-capacity-metrics-app/) - [kapasiteetin valvonta sovelluksen](https://powerbi.microsoft.com/blog/new-monitoring-capabilities-for-power-bi-premium-capacities/).
+* [Power BI -aloitussivun ja yleisen haun](https://powerbi.microsoft.com/en-us/blog/introducing-power-bi-home-and-global-search/) julkinen esikatselu.
+* [Kyselyn seuranta](https://powerbi.microsoft.com/en-us/blog/query-metrics-available-in-power-bi-premium-capacity-metrics-app/) [kapasiteetin valvontasovelluksessa](https://powerbi.microsoft.com/blog/new-monitoring-capabilities-for-power-bi-premium-capacities/).
 
 ### <a name="august-2018"></a>Elokuu 2018
 * [Kapasiteetin valvontasovellus](https://powerbi.microsoft.com/blog/new-monitoring-capabilities-for-power-bi-premium-capacities/) Power BI Premiumissa.
@@ -257,7 +257,7 @@ Saat kaikki tiedot [Power BI -tiimin blogista](https://powerbi.microsoft.com/blo
 
 ***Koontinäytöt***
 
-* Suosikkikoontinäytöt: jotta pääset helposti eniten käyttämiisi koontinäyttöihin, voit nyt lisätä kyseiset koontinäytöt suosikiksi ja käyttää niitä kaikista työtiloistasi.
+* Suosikkikoontinäytöt: jotta pääset helposti eniten käyttämiisi koontinäyttöihin, voit nyt lisätä kyseiset koontinäytöt suosikeiksi ja käyttää niitä kaikista työtiloistasi.
 
 ***Analysoi Excelissä***
 
@@ -302,7 +302,7 @@ Saat kaikki tiedot [Power BI -tiimin blogista](https://powerbi.microsoft.com/blo
 ***Analysoi Excelissä***
 
 * [Analysoi Excelissä](service-analyze-in-excel.md) kaikkien käyttäjien saatavilla: mahdollisuus käyttää Power BI -tietomalleja Excelissä on laajennettu kaikille käyttäjille heille määritetystä käyttöoikeudesta riippumatta.
-* Parannettu usean käyttäjän tilin käyttökokemus: Jos sinulla on useampi kuin yksi Power BI -käyttäjätili, sisäänkirjautuminen on nyt helpompaa.
+* Parannettu usean käyttäjän tilin käyttökokemus: jos sinulla on useita Power BI -käyttäjätilejä, sisäänkirjautuminen on nyt helpompaa.
 
 Saat kaikki tiedot [Power BI -tiimin blogista](https://powerbi.microsoft.com/blog/power-bi-service-april-update-expressroute-for-power-bi/)
 
@@ -350,7 +350,7 @@ Tässä kuussa on tehty joitakin päivityksiä koontinäyttöihin, nopeisiin mer
 
 ***Quick Insights (Nopeat merkitykselliset tiedot)***
 
-* Trendi-ja KORRELAATIO nyt trendiviivat, jotta se on helpompi nähdä kuviot tiedoissa.
+* Merkityksellisillä Trendi- ja Korrelaatio-tiedoilla on nyt trendiviivat, joista on helpompi nähdä kuviot tiedoissa.
 
 ***Q&A***
 
@@ -502,7 +502,7 @@ Saat kaikki tiedot mukaan lukien videon, jossa esitellään monet näistä päiv
 * [Visualisoi VMob-tietoja Power BI:ssä](http://blogs.msdn.com/b/powerbi/archive/2015/11/25/visualize-your-vmob-data-in-power-bi.aspx)
 * [Power BI -integrointi Cortanan kanssa](http://blogs.msdn.com/b/powerbi/archive/2015/12/01/announcing-power-bi-integration-with-cortana-and-new-ways-to-quickly-find-insights-in-your-data.aspx)
 * [Power BI -yritysyhdyskäytävän esiversio](http://blogs.msdn.com/b/powerbi/archive/2015/12/02/announcing-preview-of-power-bi-gateway-for-enterprise-deployments.aspx)
-* Uuden Sisältöpaketin esittely: [hakuanalyysi Bingistä Power BI -koontinäytöissä](http://blogs.msdn.com/b/powerbi/archive/2015/12/02/search-analytics-from-bing-on-your-power-bi-dashboards.aspx)
+* Uuden sisältöpaketin esittely: [hakuanalyysi Bingistä Power BI -koontinäytöissä](http://blogs.msdn.com/b/powerbi/archive/2015/12/02/search-analytics-from-bing-on-your-power-bi-dashboards.aspx)
 * Uusia kehittäjille tarkoitettuja parannuksia: [kaksi uutta ohjelmointirajapintaa ja helpompi sovelluksen rekisteröinti](http://blogs.msdn.com/b/powerbi/archive/2015/12/02/power-bi-for-developers-reports-api-and-a-simple-app-registration-experience.aspx)
 
 **24. marraskuuta 2015**
@@ -513,7 +513,7 @@ Saat kaikki tiedot mukaan lukien videon, jossa esitellään monet näistä päiv
 * Parannettu paikallisten raporttien lataaminen
 * Jaa koontinäyttöjä suoraan toisen käyttäjän työtilaan
 * Parannettu Google Analytics -liittimen käyttökokemus
-* Power BI-tilin sulkeminen
+* Sulje Power BI -tilisi
 
 Saat kaikki tiedot [Power BI -blogista](http://blogs.msdn.com/b/powerbi/archive/2015/11/24/power-bi-weekly-service-update-1124.aspx)
 
@@ -623,10 +623,6 @@ Saat lisätietoja [blogista](http://blogs.msdn.com/b/powerbi/archive/2015/10/06/
 * Oletuksena näytettävä dynaaminen pohjan koko hahmontaa kaikki raportin kohteet parhaissa mahdollisissa mitoissa selainikkunan kokoon nähden. Jos haluat lukita kuvasuhteen tai sovittaa raporttisi eri tavalla, käytettävissäsi on nyt kolme vaihtoehtoa: Sovita sivulle, Sovita leveyteen ja Todellinen koko.
 * Myös tietojoukkojen ja raporttien enimmäismäärää on lisätty. Sinulla voi olla nyt enintään 200 tietojoukkoja ja 200 raporttia kullekin tietojoukolle Power BI -tililläsi.
 
-**25. elokuuta 2015**
-
-* Nyt voit valvoa, tutkia ja [visualisoida Adobe Analytics -tietojasi](http://blogs.msdn.com/b/powerbi/archive/2015/08/25/exploring-your-adobe-analytics-data-in-power-bi.aspx) Power BI:n avulla. Valmiin sisältöpaketin avulla voit muodostaa yhteyden merkityksellisiin tietoihisi ja löytää niitä tiedoistasi välittömästi. Saat lisätietoja [Power BI -ohjesivun Adobe Analytics -sisältöpaketista](service-connect-to-adobe-analytics.md).
-
 **18. elokuuta 2015**
 
 * Azure Mobile Engagement on sovellusanalytiikkapalvelu, jonka avulla kehittäjät voivat seurata sovelluksensa suorituskykyä ja parantaa siten sovelluksessa pysymistä ja sovelluksen käyttöä. Käyttämällä [Power BI:n Azure Mobile Engagement -sisältöpakettia](http://blogs.msdn.com/b/powerbi/archive/2015/08/17/monitor-and-analyze-your-azure-mobile-engagement-data-in-power-bi.aspx) voit muodostaa nopeasti yhteyden valmiiseen koontinäyttöön, raporttijoukkoon ja valittuun tietojoukkoon ja saada heti merkityksellisiä tietoja siitä, miten hyvin sovelluksesi toimii. Saat lisätietoja [Power BI -ohjesivun Azure Mobile Engagement -sisältöpaketista](service-connect-to-azure-mobile.md).
@@ -682,10 +678,6 @@ Saat lisätietoja [blogista](http://blogs.msdn.com/b/powerbi/archive/2015/10/06/
 
 * SweetIQ:n avulla voit helposti seurata paikallisia tietoja tarjoamalla sijainti- ja tarkastustietoja paikallisesta hakuekosysteemistä. Power BI:n avulla voit analysoida ja valvoa kyseisiä tietoja tarjoamalla SweetIQ-tiedoista luotua [valmista sisältöä](http://blogs.msdn.com/b/powerbi/archive/2015/06/16/analyze-and-monitor-your-sweetiq-data-with-power-bi.aspx). Saat lisätietoja käytön aloittamisesta [Power BI -ohjesivun](service-connect-to-sweetiq.md) SweetIQ-sisältöpaketista.
 
-**9. kesäkuuta 2015**
-
-* Power BI:n avulla voit valvoa ja tutkia kyseisiä tietoja [MailChimp-ohjelmointirajapintojen](http://blogs.msdn.com/b/powerbi/archive/2015/06/09/user-power-bi-to-monitor-and-visualize-your-mailchimp-data.aspx) avulla, jolloin saat valmista sisältöä analyyseihisi. MailChimp-skenaarioon valittujen koontinäytön, raporttien ja tietojoukon avulla voit helposti käyttää tietoja, kuten Kaikkien avausten parhaat kampanjat viikonpäivän mukaan. Saat lisätietoja käytön aloittamisesta Power BI:n [dokumentaation](service-connect-to-mailchimp.md) MailChimp-sisältöpaketista.
-
 **2. kesäkuuta 2015**
 
 * Nyt sovelluksia koskevien tärkeiden tilastotietojen seuraaminen on helppoa Power BI:n ja [appFigures-sisältöpaketin](http://blogs.msdn.com/b/powerbi/archive/2015/06/02/explore-and-analyze-your-appfigures-data-with-power-bi.aspx) avulla. Saat lisätietoja yhteyden muodostamisesta ja käytön aloittamisesta Power BI:n appFigures-sisältöpaketin [dokumentaatiosta](service-connect-to-appfigures.md).
@@ -697,7 +689,6 @@ Saat lisätietoja [blogista](http://blogs.msdn.com/b/powerbi/archive/2015/10/06/
 
 **13. toukokuuta 2015**
 
-* Power BI:n uusimman päivityksen myötä voit muodostaa yhteyden **SQL-tietokannan valvonnan** kirjaamiin tietoihin valmiiden raporttien ja mukautetun koontinäytön avulla. Tämän sisältöpaketin avulla on helppo etsiä epäilyttäviä tapahtumia, epätavallista toimintaa ja trendejä raportointiasi varten luodun tietojoukon perusteella. Saat lisätietoja [blogimerkinnästä](http://blogs.msdn.com/b/powerbi/archive/2015/05/14/monitor-your-azure-sql-database-auditing-activity-with-power-bi.aspx) ja [dokumentaatiosta](service-connect-to-azure-sql-database-auditing.md).
 * Voit muodostaa yhteyden suoraan **Azure SQL -tietokantaan** tallennettuihin tietoihin. Kyselyjä luodaan dynaamisesti ja lähetetään lähteeseen, jolloin voit luoda vuorovaikutteisia raportteja suoraan tietokannan kautta. Saat lisätietoja [blogimerkinnästä](http://blogs.msdn.com/b/powerbi/archive/2015/05/13/using-power-bi-to-visualize-and-explore-azure-sql-databases.aspx) ja [dokumentaatiosta](service-azure-sql-database-with-direct-connect.md).
 
 **7. toukokuuta 2015**
@@ -714,7 +705,7 @@ Saat lisätietoja [blogista](http://blogs.msdn.com/b/powerbi/archive/2015/10/06/
 
 **15. huhtikuuta 2015**
 
-* Voit nyt visualisoida ja tutkia **Google Analytics** -tietojasi uuden sisältöpaketin avulla. Google Analytics -sisältöpaketti sisältää koontinäytön, raportin ja tietojoukon, joiden avulla saat merkityksellisiä tietoja sivustosi käytöstä viimeisten 6 kuukauden aikana. Voit lukea [blogista](http://blogs.msdn.com/b/powerbi/archive/2015/04/15/visualize-and-explore-your-google-analytics-data-with-power-bi.aspx).
+* Voit nyt visualisoida ja tutkia **Google Analytics** -tietojasi uuden sisältöpaketin avulla. Google Analytics -sisältöpaketti sisältää koontinäytön, raportin ja tietojoukon, joiden avulla saat merkityksellisiä tietoja sivustosi käytöstä viimeisten 6 kuukauden aikana. Voit lukea [blogikirjoituksen](http://blogs.msdn.com/b/powerbi/archive/2015/04/15/visualize-and-explore-your-google-analytics-data-with-power-bi.aspx).
 * Voit nyt **kiinnittää kaikki kortit** lukuun ottamatta niitä, jotka sisältävät KPI-mittareita ja kuvia Q&A:sta ja raporteista
 * Voit nyt **käyttää kortteja Q&A:ssa** lisäämällä ilmaisun ”korttina” kyselyn loppuun
 
@@ -732,7 +723,7 @@ Saat lisätietoja [blogista](http://blogs.msdn.com/b/powerbi/archive/2015/10/06/
 
 **26. tammikuuta 2015**
 
-* Palvelun käytettävyyttä ja luotettavuutta on parannettu eri virheenkorjauksilla.
+* Palvelun käytettävyyttä ja luotettavuutta on parannettu eri ohjelmavirhekorjauksilla.
 
 ## <a name="2014"></a>2014
 **11. joulukuuta 2014**

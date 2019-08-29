@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 07/19/2019
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: 75e5a6387574c6cc4a9620955a3e7c15479830c2
-ms.sourcegitcommit: 012f05efc4e97aeb6178fb2fc820b73bcc1ce920
+ms.openlocfilehash: 76e053d34dcd7f1f199f4cbf9f02196e8efc6232
+ms.sourcegitcommit: ba95d4979f1869f49a7d266c591f95e2810fdb29
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68391279"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "69621324"
 ---
 # <a name="supplier-quality-analysis-sample-for-power-bi-take-a-tour"></a>Toimittajan laatuanalyysimalli Power BI:lle: aloita esittely
 
@@ -144,9 +144,9 @@ Parhaiten hallittu materiaali on materiaali, jossa on vähäisin käyttökatkoai
     Raaka-ainevikoja ilmeni paljon enemmän vuonna 2014 kuin vuonna 2013.  
 
     ![Q&A-kysymys: Näytä materiaalityypit, vuosi ja vikojen kokonaismäärä](media/sample-supplier-quality/supplier12.png)  
-6. Vaihda sitten kysymykseksi *näytä materiaalityypit, vuosi ja **käyttökatkojen kokonaisaika minuutteina***.  
+6. Vaihda sitten kysymykseksi _näytä materiaalityypit, vuosi ja **käyttökatkojen kokonaisaika minuutteina**_ .  
 
-   ![Q&A-kysymys: Näytä materiaalityypit, vuosi ja käyttökatkojen kokonaisaika minuutteina](media/sample-supplier-quality/supplier13.png)
+   ![Kysymysosion kysymys: Näytä materiaalityypit, vuosi ja käyttökatkojen kokonaisaika minuutteina](media/sample-supplier-quality/supplier13.png)
 
    Huomaa, että raaka-aineiden käyttökatkoja oli suurin piirtein saman verran vuosina 2013 ja 2014, vaikka raaka-vikoja oli paljon enemmän vuonna 2014. Vaikuttaa siltä, että raaka-aineiden lisäviat vuonna 2014 eivät paljoakaan lisänneet raaka-aineiden käyttökatkoja vuonna 2014.
 

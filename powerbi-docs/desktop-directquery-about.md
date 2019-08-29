@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/22/2019
+ms.date: 08/19/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 591a837bb085ba901316e672112b568923995718
-ms.sourcegitcommit: 0332efe8f83cb55a9b8ea011db7c99e9b4568118
+ms.openlocfilehash: 11de32b8119e8b6922dcc1a971750e4256812932
+ms.sourcegitcommit: 4a3afe761d2f4a5bd897fafb36b53961739e8466
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/27/2019
-ms.locfileid: "68590548"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69654764"
 ---
 # <a name="using-directquery-in-power-bi"></a>DirectQueryn käyttäminen Power BI:ssä
 Voit yhdistää kaikenlaisiin erilaisiin tietolähteisiin, kun käytät **Power BI Desktopia** tai **Power BI -palvelua**, ja muodostaa nämä tietoyhteydet eri tavoin. Voit *tuoda* tietoja Power BI:hin, mikä on yleisin tapa hakea tietoja, tai voit muodostaa yhteyden tietoihin suoraan niiden alkuperäisessä lähdesäilössä. Tätä tapaa kutsutaan nimellä **DirectQuery**. Tässä artikkelissa kuvataan **DirectQueryä** ja sen toimintoja:
@@ -140,11 +140,8 @@ Kun käytät **DirectQueryä**, voit edelleen hyödyntää monia näistä mallin
 * **Laskettujen sarakkeiden rajoitukset:** Lasketut sarakkeet voivat olla vain rivin sisäisiä. Tämä tarkoittaa sitä, että ne voivat viitata vain saman taulukon muiden sarakkeiden arvoihin ilman mitään koostefunktioita. Lisäksi sallitut DAX-skalaarifunktiot (esimerkiksi LEFT()) rajoitetaan vain niihin, jotka voidaan vain lähettää taustalla olevaan lähteeseen. Tämän johdosta ne siis vaihtelevat lähteen tukemien toimintojen mukaisesti. Funktioita, joita ei tueta, ei näytetä automaattisessa täydennyksessä, kun kirjoitat lasketun sarakkeen DAX-funktiota. Jos annat funktion, jota ei tueta, saat virheilmoituksen.
 * **Ei tukea pää- ja alatason DAX-funktioille:** Kun käytät DirectQuery-mallia, et voi käyttää DAX PATH() -perheen funktioita, jotka yleensä käsittelevät pää- ja alatasorakenteet (esimerkiksi tilikaavio tai työntekijähierarkia).
 * **Laskettuja taulukoita ei tueta:** laskettua taulukkoa ei voi määrittää DAX-lausekkeella DirectQuery-tilassa.
-* **Suhteiden suodatus on rajoitettu yhteen suuntaan:** Kun käytät DirectQueryä, et voi määrittää ristisuodatussuunnaksi molempia. Alla olevassa esimerkissä et voi luoda visualisointia, joka näyttää jokaisen asiakkaan sukupuolen (Customer[Gender]) ja kunkin asiakkaan ostamien tuotteiden (Product[Category]) määrän. Tällaisen kaksisuuntaisen suodatuksen käyttöä [käsitellään tässä raportissa](http://download.microsoft.com/download/2/7/8/2782DF95-3E0D-40CD-BFC8-749A2882E109/Bidirectional%20cross-filtering%20in%20Analysis%20Services%202016%20and%20Power%20BI.docx), joka sisältää esimerkkejä SQL Server Analysis Servicesin käytöstä, mutta pääperiaatteet koskevat myös Power BI:tä.
-  
-  ![](media/desktop-directquery-about/directquery-about_01.png)
-  
-  Tämäkin rajoitus johtuu suorituskykysyistä. Erityisen tärkeää tämä on silloin, kun määrität rivitason suojauksen osana raporttia, sillä yleinen tapa on käyttää monesta–moneen-suhteita käyttäjien ja niiden kohteiden välillä, joiden käyttöön heillä on oikeudet, ja kaksisuuntaista suodatusta ei ole tarpeen käyttää tämän toteuttamiseksi. DirectQuery-mallien kaksisuuntaista suodatusta tulisi kuitenkin käyttää harkiten ja suorituskyky erityisen tarkasti huomioiden.  
+* **Yhteyden suodatus:** Kaksisuuntaisen suodatuksen käyttöä [käsitellään tässä raportissa](http://download.microsoft.com/download/2/7/8/2782DF95-3E0D-40CD-BFC8-749A2882E109/Bidirectional%20cross-filtering%20in%20Analysis%20Services%202016%20and%20Power%20BI.docx), joka sisältää esimerkkejä SQL Server Analysis Servicesin käytöstä, mutta pääperiaatteet koskevat myös Power BI:tä.
+
 * **Ei klusterointia:** kun käytät DirectQueryä, et voi etsiä ryhmiä automaattisesti klusterointitoiminnon avulla.
 
 ### <a name="reporting-limitations"></a>Raportoinnin rajoitukset

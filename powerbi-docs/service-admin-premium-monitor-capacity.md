@@ -10,25 +10,25 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 05/31/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: 0ef74a776e7220477a36d652ce1a48ebbf60c267
-ms.sourcegitcommit: 850e7883e21190151684e32f4d957beecd08e959
+ms.openlocfilehash: b57f444f11c9592d80ffccf7a80be5fa9c7dcf3b
+ms.sourcegitcommit: c2197c3ad1d747b4ad490ab75771a0d32d0ae208
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/20/2019
-ms.locfileid: "68362733"
+ms.lasthandoff: 08/23/2019
+ms.locfileid: "70008129"
 ---
 # <a name="monitor-premium-capacities-with-the-app"></a>Premium-kapasiteettien valvonta sovelluksen avulla
 
 Kapasiteettien valvonta on tärkeää, jotta voit tehdä järkeviä päätöksiä Premium-kapasiteettien resurssien hyödyntämisen suhteen. Voit valvoa kapasiteetteja hallintaportaalissa tai **Power BI Premium -kapasiteetin mittausarvot** -sovelluksella. Tässä artikkelissa annetaan ohjeet Power BI Premium -kapasiteetin mittausarvot -sovelluksen käyttöön. Sovellus tarjoaa tarkimmat tiedot kapasiteettiesi toiminnasta ja suorituskyvystä. Jos haluat yleisempiä keskiarvotietoja seitsemän edellisen päivän ajalta, voit käyttää hallintaportaalia. Jos haluat lisätietoja valvonnasta portaalissa, lue ohjeartikkeli [Premium-kapasiteettien valvonta hallintaportaalissa](service-admin-premium-monitor-portal.md).
 
-Sovellusta päivitetään säännöllisesti uusin toiminnoin. Varmista, että käytät uusinta versiota. Jos sinulla on asennettuna sovelluksen vanhempi versio, sinun kannattaa poistaa se sovelluksista. Kun olet tehnyt tämän, tee päivitys painamalla CTRL+F5. 
+Sovellusta päivitetään säännöllisesti uusin toiminnoin. Varmista, että käytät uusinta versiota. Jos sinulla on asennettuna sovelluksen vanhempi versio, sinun kannattaa poistaa se sovelluksista. Kun olet tehnyt tämän, tee päivitys painamalla CTRL+F5.
 
 ## <a name="install-the-app"></a>Sovelluksen asentaminen
 
 Voit siirtyä suoraan [Power BI Premium -kapasiteetin mittausarvot -sovellukseen](https://app.powerbi.com/groups/me/getapps/services/capacitymetrics) tai asentaa sen muiden Power BI -sovellusten tapaan.
 
+1. Valitse Power BI:ssä **Sovellukset**.
 
-1. Valitse Power BI:ssä **Sovellukset**.   
     ![Sovelluksiin siirtyminen](media/service-admin-premium-monitor-capacity/apps.png)
 
 2. Valitse oikealla puolella **Hanki sovelluksia**.
@@ -245,7 +245,7 @@ Tietojoukot-sivulla on erilaisia *alueita*, joihin sisältyvät **Päivitykset**
 | **Raporttiosa** | **Mittausarvot** |
 | --- | --- |
 | Suorittimen kulutus |  Tämä on kulutus työmäärittäin prosenttiosuutena suorittimen kokonaiskapasiteetista. Tämä näytetään tunneittain seitsemältä edelliseltä päivältä. |
-| Muistin käyttö |  Tämä on muistin kulutus gigatavuina työmäärittäin (yhtenäiset viivat), työmäärärajoitukset näytetään myös (katkoviivat). Tämä näytetään tunneittain seitsemältä edelliseltä päivältä. |
+| Muistin käyttö |  Tämä on muistin enimmäiskulutus gigatavuina tunnin aikana työmäärittäin (yhtenäiset viivat), työmäärärajoitukset näytetään myös (katkoviivat). Tämä näytetään tunneittain seitsemältä edelliseltä päivältä. |
 |  |  |
 
 ### <a name="ids-and-info"></a>Tunnukset ja tiedot

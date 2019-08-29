@@ -9,14 +9,14 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 08/05/2019
 ms.author: v-pemyer
-ms.openlocfilehash: df8a7b2f8564c8862a5c2db3177df42640ce295d
-ms.sourcegitcommit: d12bc6df16be1f1993232898f52eb80d0c9fb04e
+ms.openlocfilehash: bb8c0582e08d8e1e05c78c30df0b59bd89aafbd0
+ms.sourcegitcommit: e62889690073626d92cc73ff5ae26c71011e012e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68996055"
+ms.lasthandoff: 08/23/2019
+ms.locfileid: "69985801"
 ---
-# <a name="understand-a-star-schema-and-the-importance-for-power-bi"></a>Tutustu tähtirakenteeseen ja sen merkitykseen Power BI:ssä
+# <a name="understand-star-schema-and-the-importance-for-power-bi"></a>Tutustu tähtirakenteeseen ja sen merkitykseen Power BI:ssä
 
 Tämä artikkeli kohdistuu Power BI Desktopin tietomallintajille. Artikkelissa kuvaillaan tähtirakenne ja sen merkitys, kun kehitetään suorituskykyyn ja käytettävyyteen optimoituja Power BI -tietomalleja.
 
@@ -66,7 +66,7 @@ Tähtirakenteeseen liittyy monia muita käsitteitä, joita voidaan käyttää Po
 
 Tähtirakenteessa **mittari** on faktataulukon sarake, johon on tallennettu yhteenvedossa käytettävät arvot.
 
-Power BI -mallissa **mittarin** määritelmä on samankaltainen, mutta silti erilainen. Se on [Data Analysis Expressions (DAX)](https://docs.microsoft.com/dax/data-analysis-expressions-dax-reference) -kielellä kirjoitettu kaava, joka toteuttaa yhteenvedon. Mittayksikkölausekkeet hyödyntävät usein DAX-koostefunktioita, kuten SUM, MIN, MAX, AVERAGE jne. Niiden avulla tuotetaan skalaariarvotulos, kyselyhetkellä (arvoja ei koskaan tallenneta malliin). Mittayksikkölauseke voi vaihdella yksinkertaisesta sarakekoosteesta kehittyneeseen kaavaan, joka ohittaa suodatinkontekstin ja/tai yhteyden välityksen. Lisätietoja on artikkelissa [DAX-kielen perusteet Power BI Desktopissa](https://docs.microsoft.com/power-bi/desktop-quickstart-learn-dax-basics). Lisätietolinkki
+Power BI -mallissa **mittarin** määritelmä on samankaltainen, mutta silti erilainen. Se on [Data Analysis Expressions (DAX)](https://docs.microsoft.com/dax/data-analysis-expressions-dax-reference) -kielellä kirjoitettu kaava, joka toteuttaa yhteenvedon. Mittayksikkölausekkeet hyödyntävät usein DAX-koostefunktioita, kuten SUM, MIN, MAX, AVERAGE jne. Niiden avulla tuotetaan skalaariarvotulos, kyselyhetkellä (arvoja ei koskaan tallenneta malliin). Mittayksikkölauseke voi vaihdella yksinkertaisesta sarakekoosteesta kehittyneeseen kaavaan, joka ohittaa suodatinkontekstin ja/tai yhteyden välityksen. Lisätietoja on artikkelissa [DAX-kielen perusteet Power BI Desktopissa](https://docs.microsoft.com/power-bi/desktop-quickstart-learn-dax-basics).
 
 On tärkeää ymmärtää, että Power BI -mallit tukevat toista menetelmää yhteenvedon saavuttamiseksi. Mikä tahansa sarake – ja tyypillisesti numerosarakkeet – voidaan tiivistää raportin visualisoinnin tai Q&A:n avulla. Tästä on hyötyä mallin kehittäjille, koska monissa esiintymissä ei tarvitse luoda mittareita. Esimerkiksi Adventure Works -jälleenmyyjämyynnin sarake **Myynnin summa** voidaan vetää yhteen monella tavalla (summa, määrä, keskiarvo, mediaani, minimi, maksimi jne.) ilman, että tarvitsee luoda mittari jokaiselle mahdolliselle koostamistyypille.
 

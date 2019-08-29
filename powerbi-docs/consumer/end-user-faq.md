@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 6/17/2019
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 0e63025c4e8a07e9cd22c82ca7e605042fa65be0
-ms.sourcegitcommit: 8c52b3256f9c1b8e344f22c1867e56e078c6a87c
+ms.openlocfilehash: 5efdb98e0722add361f3b333f773fc03c6ea50a9
+ms.sourcegitcommit: 4a3afe761d2f4a5bd897fafb36b53961739e8466
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67264305"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69654132"
 ---
 # <a name="frequently-asked-questions-about-power-bi"></a>Usein kysyttyjä kysymyksiä Power BI:stä
 
@@ -29,7 +29,7 @@ Power BI -palvelu on pilvipohjainen yritysanalyysipalvelu, jonka ansiosta kaikki
 
 ## <a name="whats-the-difference-between-power-bi-pro-and-power-bi-premium"></a>Mitä eroa on Power BI Prolla ja Power BI Premiumilla?
 
-Power BI Pro on yksittäinen käyttöoikeus, joka mahdollistaa pääsyn Power BI -palvelun kaikkiin sisältöihin ja ominaisuuksiin. Voit jopa jakaa sisältöä ja toimia yhteistyössä muiden Pro-käyttäjien kanssa. Vain Pro-käyttäjät voivat julkaista ja käyttää sisältöä sovelluksen työtiloista, jakaa koontinäyttöjä sekä tilata koontinäyttöjä ja raportteja.
+Power BI Pro on yksittäinen käyttöoikeus, joka mahdollistaa pääsyn Power BI -palvelun kaikkiin sisältöihin ja ominaisuuksiin. Voit jopa jakaa sisältöä ja toimia yhteistyössä muiden Pro-käyttäjien kanssa. Vain Pro-käyttäjät voivat julkaista sisältöä sovelluksen työtiloihin, jakaa koontinäyttöjä sekä tilata koontinäyttöjä ja raportteja.
 
 Power BI Premium tarjoaa varatun kapasiteetin, joka takaa yhtenäisemmän suorituskyvyn. Se tukee myös suurempia tietomääriä Power BI:ssä. Yksittäisten käyttäjien kohdalla Premium mahdollistaa myös Pro-käyttäjien luoman sisällön laaja-alaisen jakamisen ilman, että sisältöä katselevilla vastaanottajilla on oltava käyttäjäkohtainen käyttöoikeus.
 

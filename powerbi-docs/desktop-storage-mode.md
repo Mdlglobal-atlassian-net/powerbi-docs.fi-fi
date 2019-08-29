@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 02/26/2019
+ms.date: 08/19/2019
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: f84e2f95c8ae209828eb1c21f34253015e07aefa
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 67cd57a981f7c1fcab118652dc5424fa935ecd13
+ms.sourcegitcommit: 4a3afe761d2f4a5bd897fafb36b53961739e8466
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61363711"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69654748"
 ---
 # <a name="storage-mode-in-power-bi-desktop"></a>Tallennustilan tila Power BI Desktopissa
 
@@ -62,6 +62,10 @@ Tallennustilan tilalle on kolme arvoa:
 * **Kaksoistaulukot**: Kaksoistaulukot voivat toimia joko välimuistiin tallennettuina tai siihen tallentamattomina riippuen Power BI -tietojoukkoon lähetetyn kyselyn kontekstista. Joissakin tapauksissa kyselyt toteutetaan välimuistiin tallennetuista tiedoista. Muissa tapauksissa kyselyt toteutetaan suorittamalla pyydettäessä saatava kysely tietolähteeseen.
 
 Taulukon muuttaminen **tuontitilaan** on *peruuttamaton* toiminto. Taulukkoa ei voi muuttaa takaisin DirectQuery- tai kaksoistaulukoksi.
+
+> [!NOTE]
+> Voit käyttää *kaksoistallennustilan* tilaa Power BI Desktopissa ja Power BI -palvelussa.
+
 
 ## <a name="constraints-on-directquery-and-dual-tables"></a>DirectQuery- ja kaksoistaulukoiden rajoitukset
 
