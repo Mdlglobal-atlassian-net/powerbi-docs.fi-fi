@@ -939,8 +939,8 @@
           href: report-builder-tables-matrices-lists.md
         - name: Parametrit
           href: report-builder-parameters.md
-        - name: Lausekkeet
-          href: report-builder-expressions.md
+        - name: URL-parametrit sivutetuissa raporteissa
+          href: report-builder-url-parameters.md
         - name: Lauseke-esimerkit
           href: report-builder-expression-examples.md
         - name: Raportin sivutus
@@ -959,6 +959,8 @@
           href: paginated-reports-create-embedded-dataset.md
         - name: Parametrien luominen
           href: paginated-reports-parameters.md
+        - name: Raporttiparametrin välittäminen URL-osoitteessa
+          href: report-builder-url-pass-parameters.md
         - name: Sivutetun raportin julkaiseminen
           href: paginated-reports-save-to-power-bi-service.md
 - name: Power BI kehittäjille
