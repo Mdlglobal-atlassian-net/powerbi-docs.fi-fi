@@ -7,18 +7,20 @@ ms.reviewer: maggiesMSFT
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: conceptual
-ms.date: 10/16/2017
+ms.date: 08/29/2019
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 2a19cc832f7e03acfd224c6ab2409016ce8da770
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 07ba5c79245e4c87acee90c2c7c6a48df7a2d0e0
+ms.sourcegitcommit: b53a6f5575f5f8bc443ecdca9c72525ce123518f
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61179726"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70186110"
 ---
 # <a name="connect-to-appfigures-with-power-bi"></a>appFiguresien yhdistäminen Power BI:n avulla
 Sovelluksia koskevien tärkeiden tilastotietojen seuraaminen on helppoa Power BI:n ja appFigures-sisältöpaketin avulla. Power BI noutaa tiedot, esimerkiksi sovellusmyynnin, lataukset ja mainostilastot ja laatii sitten oletuskoontinäytön ja siihen liittyvät raportit kyseisten tietojen perusteella.
+
+[!INCLUDE [include-short-name](./includes/service-deprecate-content-packs.md)]
 
 Muodosta yhteys [appFigures-sisältöpakettiin](https://app.powerbi.com/getdata/services/appfigures) tai lue lisää [appFiguresin integroinnista](https://powerbi.microsoft.com/integrations/appfigures) Power BI:hin.
 

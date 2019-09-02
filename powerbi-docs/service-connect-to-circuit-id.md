@@ -7,18 +7,20 @@ ms.reviewer: maggiesMSFT
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: conceptual
-ms.date: 10/16/2017
+ms.date: 08/29/2019
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: c8c17fe5349486d9583b8f44ccee1af36e86c761
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 3c8ef3e522c9f20ff9602d29670ccaf28cd92048
+ms.sourcegitcommit: b53a6f5575f5f8bc443ecdca9c72525ce123518f
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61180959"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70185941"
 ---
 # <a name="connect-to-circuit-id-with-power-bi"></a>Yhteyden muodostaminen piiritunnukseen Power BI:n avulla
 Viestintätietojen analysointi piiritunnukselta on helppoa Power BI:n avulla. Power BI noutaa tiedot ja laatii sitten oletuskoontinäytön ja siihen liittyvät raportit kyseisten tietojen perusteella. Kun olet luonut yhteyden, voit tarkastella tietojasi ja mukauttaa koontinäyttöä tarpeidesi mukaan. Tiedot päivitetään automaattisesti joka päivä.
+
+[!INCLUDE [include-short-name](./includes/service-deprecate-content-packs.md)]
 
 Muodosta yhteys [piiritunnuksen sisältöpakettiin](https://app.powerbi.com/getdata/services/circuitid)  Power BI:lle.
 

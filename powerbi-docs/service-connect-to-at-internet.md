@@ -7,18 +7,20 @@ ms.reviewer: maggiesMSFT
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: conceptual
-ms.date: 10/16/2017
+ms.date: 08/29/2019
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 41b390190f8ce3c071f790edcdf86f0e3bd4a0c2
-ms.sourcegitcommit: 762857c8ca09ce222cc3f8b006fa1b65d11e4ace
+ms.openlocfilehash: c24a508652b147b6fc684039d2965f9935b624c0
+ms.sourcegitcommit: b53a6f5575f5f8bc443ecdca9c72525ce123518f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66721314"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70186042"
 ---
 # <a name="connect-to-at-internet-bridge-with-power-bi"></a>Yhteyden muodostaminen AT Internet Bridgeen Power BI:n avulla
 AT Internetin ja sen digitaalisen Analytics Suite -analyysialustan avulla voit poimia tiedoistasi välittömän arvon. Power BI:lle kehitetty AT Internet Bridge -sisältöpaketti sisältää tietoja, jotka koskevat sivuston vierailuja, lähteitä, lokalisointia ja laitteita.
+
+[!INCLUDE [include-short-name](./includes/service-deprecate-content-packs.md)]
 
 Yhteyden muodostaminen [AT Internet Bridge -sisältöpakettiin](https://app.powerbi.com/getdata/services/at-internet-bridge) Power BI:ssä.
 

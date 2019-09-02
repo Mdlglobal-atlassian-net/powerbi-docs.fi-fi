@@ -8,15 +8,15 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/08/2019
+ms.date: 08/29/2019
 ms.author: davidi
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 152b8f3bffa25a66d08af4806f9c7f1fe9bc90f7
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 4e9efa729b9dc4ac645bc8d3ff7df92cafc929e4
+ms.sourcegitcommit: a00fe5fb545c3df13b7cd13a701fd6a2b2521a17
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65514342"
+ms.lasthandoff: 08/31/2019
+ms.locfileid: "70200977"
 ---
 # <a name="power-bi-publisher-for-excel"></a>Power BI Publisher for Excel
 Microsoftin **Power BI Publisher for Excelin** avulla voit ottaa tilannevedoksia Excelin tärkeimmistä merkityksellisistä tiedoista, kuten pivot-taulukoista, kaavioista ja solualueista, ja kiinnittää niitä Power BI:n koontinäyttöihin.
@@ -32,7 +32,7 @@ Kun kiinnität elementin Excelistä, uusi ruutu lisätään Power BI:n uuteen ta
 ## <a name="download-and-install"></a>Lataaminen ja asentaminen
 Power BI Publisher for Excel on apuohjelma, jonka voi ladata ja asentaa Microsoft Excel 2007:n työpöytäversioon ja sitä uudempiin versioihin.
 
-[Power BI Publisher for Excelin lataaminen](http://go.microsoft.com/fwlink/?LinkId=715729)
+[Power BI Publisher for Excelin lataaminen](https://www.microsoft.com/download/details.aspx?id=50729)
 
 Kun olet asentanut Publisherin, näet Excelin valintanauhassa uuden **Power BI** -välilehden, jossa voit kirjautua sisään Power BI:hin ja ulos Power BI:stä, kiinnittää elementtejä koontinäyttöihin ja hallita jo kiinnitettyjä elementtejä.
 

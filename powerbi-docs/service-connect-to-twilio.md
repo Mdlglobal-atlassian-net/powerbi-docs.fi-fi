@@ -7,18 +7,20 @@ ms.reviewer: maggiesMSFT
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: conceptual
-ms.date: 10/16/2017
+ms.date: 08/29/2019
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 4537f2845d89361cf06bc93a6a9c435275d9464d
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 61099a24f4ba0630ddf982eadf867e24bdb097a2
+ms.sourcegitcommit: b53a6f5575f5f8bc443ecdca9c72525ce123518f
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61171150"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70185808"
 ---
 # <a name="connect-to-twilio-with-power-bi"></a>Yhteyden muodostaminen Twilioon Power BI:llä
 Microsoft Twilio -sisältöpaketin avulla Power BI:lle voit hakea tietoja Power BI:lle ja luoda valmiin [Twilio-koontinäytön](https://powerbi.microsoft.com/integrations/twilio) ja raportin, joka sisältää merkityksellisiä tietoja omista tiedoistasi. Voit myös luoda mukautettuja raportteja ja koontinäytön tietojoukolle, jonka Power BI Luo. Jotta näet aina uusimmat tiedot, tiedot päivitetään kerran päivässä.
+
+[!INCLUDE [include-short-name](./includes/service-deprecate-content-packs.md)]
 
 Muodosta yhteys [Twilio-sisältöpakettiin](https://app.powerbi.com/getdata/services/twilio) Power BI:lle.
 

@@ -7,18 +7,20 @@ ms.reviewer: maggiesMSFT
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: conceptual
-ms.date: 10/16/2017
+ms.date: 08/29/2019
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: e7db66dfb79cd0348967369d92e7b13c698d8f71
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 98be77e2cfe53e535dd322317246549a6b4324a4
+ms.sourcegitcommit: b53a6f5575f5f8bc443ecdca9c72525ce123518f
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61180789"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70185974"
 ---
 # <a name="connect-to-clickdimensions-with-power-bi"></a>Yhteyden muodostaminen ClickDimensionsiin Power BI:n avulla
 ClickDimensions-sisältöpaketti Power BI:lle antaa käyttäjien hyödyntää ClickDimensionsin markkinointidataa Power BI:ssa, jolloin johtotiimit saavat merkityksellistä tietoa myynti- ja markkinointiponnistelujen tehokkuudesta. Visualisoi ja analysoi sähköpostiviestintää, verkkokäyntejä ja lähetettyjä lomakkeita Power BI -koontinäyttöjen ja raporttien avulla.
+
+[!INCLUDE [include-short-name](./includes/service-deprecate-content-packs.md)]
 
 Muodosta yhteys [Power BI:n ClickDimensions-sisältöpakettiin.](https://app.powerbi.com/getdata/services/click-dimensions)
 

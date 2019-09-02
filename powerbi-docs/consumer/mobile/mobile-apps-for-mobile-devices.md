@@ -10,12 +10,12 @@ ms.topic: overview
 ms.date: 04/26/2018
 ms.author: mshenhav
 ms.custom: ''
-ms.openlocfilehash: 7f81dc1c33cf1c7cc48dfddecce81f43fd3146c4
-ms.sourcegitcommit: 4a3afe761d2f4a5bd897fafb36b53961739e8466
+ms.openlocfilehash: 40dd5a0ed03a7d6bd258de39bb9c29dcd7390cd9
+ms.sourcegitcommit: 2b340946ed5f1deedeace4071845e1720ea155c9
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/20/2019
-ms.locfileid: "69654377"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70064657"
 ---
 # <a name="what-are-the-power-bi-mobile-apps"></a>Mitä Power BI -mobiilisovellukset ovat?
 Power BI tarjoaa joukon mobiilisovelluksia iOS-, Android- ja Windows 10 -mobiililaitteisiin. Mobiilisovelluksissa muodostat yhteyden ja käytät pilvipalveluissa olevia tietoja ja paikallisia tietoja. 
@@ -23,6 +23,10 @@ Power BI tarjoaa joukon mobiilisovelluksia iOS-, Android- ja Windows 10 -mobiili
 ![Power BI mobiililaitteissa](./media/mobile-apps-for-mobile-devices/power-bi-mobile-apps-all-up.png)
 
 Voit luoda raportteja Power BI Desktopissa. Voit luoda raporttinäkymiä sekä tarkastella raporttinäkymiä ja raportteja Power BI -palvelussa ([https://powerbi.com](https://powerbi.com)). Voit tarkastella Power BI -raportteja [Power BI -raporttipalvelimella](../../report-server/get-started.md). Kaikki nämä raportit ja raporttinäkymät ovat käytettävissä Power BI -mobiilisovelluksissa, olivatpa ne sitten paikallisia tai pilvessä. Voit tarkastella ja käsitellä niitä mobiililaitteessasi, olipa käytössäsi sitten iOS-laite (iPad, iPhone, iPod Touch tai Apple Watch), Android-puhelin tai -tabletti tai Windows 10 -laite.
+
+### <a name="get-the-app-from-the-application-store"></a>Sovelluksen hankkiminen sovelluskaupasta 
+
+[![Siirry Power BI:hin App Storessa](./media/mobile-apps-for-mobile-devices/mobile-apps-app-store.png)](https://go.microsoft.com/fwlink/?LinkId=526218&clcid=0x409) [![Siirry Power BI:hin Google Playssa](./media/mobile-apps-for-mobile-devices/mobile-apps-google-play.png)](https://go.microsoft.com/fwlink/?LinkId=544867&clcid=0x409) [![Siirry Power BI:hin Windows Storessa](./media/mobile-apps-for-mobile-devices/mobile-apps-windows-store.png)](https://go.microsoft.com/fwlink/?LinkId=526478&clcid=0x409)
 
 ## <a name="mobile-apps-for-different-devices"></a>Mobiilisovellukset eri laitteille
 
@@ -34,11 +38,7 @@ Voit luoda raportteja Power BI Desktopissa. Voit luoda raporttinäkymiä sekä t
 | [![Android-tabletti](./media/mobile-apps-for-mobile-devices/android-tablet-logo-50-px.png)](mobile-android-app-get-started.md) |Tämä mobiilisovellus toimii useilla erilaisilla **Android-tableteilla** ja tarjoaa sinulle tarjoaa ajan tasalla olevan, kosketuskäyttöisen mobiiliyhteyden yritystietoihisi. Android-tabletissa Power BI -mobiilisovellus näyttää raporttinäkymät ja raportit tavalla, jolla ne muotoiltiin Power BI -palvelua varten. Voit myös [merkitä suosikkiraporttinäkymäsi ja raporttisi](mobile-apps-favorites.md), joten pääset käyttämään nopeasti niitä sekä suosituinta Power BI-raporttipalvelinta ja raportointipalveluiden suorituskykyilmaisimia ja raportteja. <br/>[Android-laitteen Power BI -mobiilisovelluksen ](mobile-android-app-get-started.md)käytön aloittaminen. |
 | [![Windows-laitteet](./media/mobile-apps-for-mobile-devices/win-10-logo-50-px.png)](../../desktop-getting-started.md) |Power BI -mobiilisovellus Windows 10:lle toimii kaikissa Windows 10-laitteissa, mukaan lukien Windows 10 -puhelimet. Power BI -mobiilisovellus Windows 10:lle tarjoaa joitakin erityisiä toimintoja muiden mobiilisovellusten toimintojen lisäksi. Voit esimerkiksi [kiinnittää Power BI -raporttinäkymän Windows 10:n aloitusnäyttöön](mobile-pin-dashboard-start-screen-windows-10-phone-app.md) Power BI -mobiilisovelluksesta. Lisäksi voit [suorittaa Power BI:n esitystilassa Surface Hubissa](mobile-windows-10-app-presentation-mode.md) ja Power BI-mobiilisovelluksessa Windows 10:lle. <br/>[Windows 10 -laitteille tarkoitetun Power BI -mobiilisovelluksen](mobile-windows-10-phone-app-get-started.md) käytön aloittaminen. ||| 
 
-### <a name="get-the-app-from-the-application-store"></a>Sovelluksen hankkiminen sovelluskaupasta 
-
-[![Siirry Power BI:hin App Storessa](./media/mobile-apps-for-mobile-devices/mobile-apps-app-store.png)](https://go.microsoft.com/fwlink/?LinkId=526218&clcid=0x409) [![Siirry Power BI:hin Google Playssa](./media/mobile-apps-for-mobile-devices/mobile-apps-google-play.png)](https://go.microsoft.com/fwlink/?LinkId=544867&clcid=0x409) [![Siirry Power BI:hin Windows Storessa](./media/mobile-apps-for-mobile-devices/mobile-apps-windows-store.png)](https://go.microsoft.com/fwlink/?LinkId=526478&clcid=0x409)
-
-## <a name="enterprise-support-for-the-power-bi-mobile-apps"></a>Power BI -mobiilisovelluksien Enterprise-tuki
+## <a name="enterprise-support-for-the-power-bi-mobile-apps"></a>Power BI-mobiilisovelluksien Enterprise-tuki
 Microsoft Intunen avulla organisaatiot voivat hallita laitteita ja sovelluksia, kuten Power BI -mobiilisovellukset Androidille ja iOS:lle.
 
 Microsoft Intunen avulla organisaatiot voivat ohjata tietoyksiköitä kuten pikakäytön kiinnittämisen edellyttämistä, sovelluksen tietojenkäytön valvontaa ja sovellustietojen salaamista myös silloin, kun sovellus ei ole käytössä.

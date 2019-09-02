@@ -7,18 +7,20 @@ ms.reviewer: maggiesMSFT
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: conceptual
-ms.date: 10/16/2017
+ms.date: 08/29/2019
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 73a469c1625d24c20deaa01237c10dd6459db65c
-ms.sourcegitcommit: 762857c8ca09ce222cc3f8b006fa1b65d11e4ace
+ms.openlocfilehash: 497f3e76275f957599e80eadfd92b9073fca2ebb
+ms.sourcegitcommit: b53a6f5575f5f8bc443ecdca9c72525ce123518f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66720518"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70185561"
 ---
 # <a name="connect-to-alpine-metrics-sales-predictions-with-power-bi"></a>Yhteyden muodostaminen Alpine Metrics Sales Predictions -sovellukseen Power BI:llä
 Alpine Metrics tarjoaa huippuluokan ennakoivan myyntiprosessin optimoinnin pilvipalvelussa ja pyydettäessä suurille ja pienille myyntiorganisaatioille. Alpine Metrics Sales Predictions -sisältöpaketti Power BI:lle sisältää arvoja, kuten mahdolliset ja ennustetut myynnit ja riskit, ja sen ansiosta saat entistä syvemmän näkemyksen liiketoimintasi tulevaisuudesta. 
+
+[!INCLUDE [include-short-name](./includes/service-deprecate-content-packs.md)]
 
 Muodosta yhteys [Alpine Metrics Sales Predictions -sisältöpakettiin](https://app.powerbi.com/getdata/services/alpine-metrics) Power BI:lle.
 

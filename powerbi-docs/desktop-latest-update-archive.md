@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 08/12/2019
+ms.date: 08/26/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: c2af7db67c637ca795bd501609d05d317d2a3e00
-ms.sourcegitcommit: a77977a43342db4399a4dffb862b96907d16de35
+ms.openlocfilehash: a7061597df08e82f3128b6fc85ed2841569922c4
+ms.sourcegitcommit: 2b340946ed5f1deedeace4071845e1720ea155c9
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/14/2019
-ms.locfileid: "69023452"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70064632"
 ---
 # <a name="previous-monthly-updates-to-power-bi-desktop"></a>Power BI Desktopin aiemmat kuukausipäivitykset
 
@@ -492,19 +492,6 @@ Seuraavassa videokanavassa esitellään jokainen näistä päivityksistä. Näet
 
 > [!NOTE]
 > Sinua saattavat myös kiinnostaa [Power BI -palvelun uudet ominaisuudet](service-whats-new.md). Tutustu myös [Power BI -mobiilisovellusten uutuuksiin](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
-
-
-Voit myös ladata Power BI Desktopin edellisiä versioita, jos organisaatiosi vaatii niin. Suosittelemme aina Power BI Desktopin uusimman version käyttämistä jonkin aiemman version sijasta. Kaikkia aiempia versioita koskevat seuraavat rajoitukset:
-
-* Power BI Desktopin aiempia versioita ei ylläpidetä – uusinta julkaisua tulee aina käyttää, jotta saa käyttöönsä uusimmat ominaisuudet ja päivitykset.
-* Power BI Desktopin aiemmilla versioilla ei ehkä voi avata tiedostoja, jotka on luotu tai tallennettu Power BI Desktopin uusimmilla versioilla. 
-* Jos saat varoituksen, kun lataat Power BI Desktopin uudemmassa versiossa tallennettua raporttia, ja tallennat raportin sitten aiemmassa versiossa, menetät kaikki uusiin ominaisuuksiin liittyvät tiedot.
-* Arkistoimme vain Power BI Desktopin englanninkieliset versiot.
-
-Valitse jompikumpi seuraavista linkeistä, jos haluat ladata aiemman version: 
-
-* [Power BI Desktop, helmikuun 2019 versio – 32-bittinen](http://download.microsoft.com/download/9/B/A/9BAEFFEF-1A68-4102-8CDF-5D28BFFE6A61/PBIDesktop-2019-02.msi)
-* [Power BI Desktop, helmikuun 2019 versio – 64-bittinen](http://download.microsoft.com/download/9/B/A/9BAEFFEF-1A68-4102-8CDF-5D28BFFE6A61/PBIDesktop-2019-02_x64.msi)
 
 
 ## <a name="january-2019-update"></a>Tammikuun 2019 päivitys
