@@ -8,19 +8,19 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/20/2019
+ms.date: 08/29/2019
 ms.author: maggies
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 92dd8d7221c9c60fa4ffcd3e3ceefeda319d8670
-ms.sourcegitcommit: 90ad0572a92f640684cdc32c9a6478d299de9dc0
+ms.openlocfilehash: 38e393a07defcf572d06f00c14ff8e4efa3081cc
+ms.sourcegitcommit: b53a6f5575f5f8bc443ecdca9c72525ce123518f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/10/2019
-ms.locfileid: "68940925"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70185724"
 ---
 # <a name="subscribe-yourself-and-others-to-reports-and-dashboards-in-the-power-bi-service"></a>Power BI -palvelun raporttien ja koontinäyttöjen tilaaminen itsellesi ja muille
 
-Voit tilata itsellesi ja kollegoillesi tärkeimmät raporttisivut, koontinäytöt ja sivutetut raportit. Tällä tavalla Power BI lähettää sinulle sähköpostitse niistä tilannevedoksen. Voit määrittää, miten usein haluat Power BI:n lähettävän sähköpostia: päivittäin, viikoittain tai tietojen päivittyessä (päivän ensimmäinen päivitys).  Jos tilaat päivittäin tai viikoittain, voit valita kellonajan, jolloin sähköpostit lähetetään.  Voit määrittää jopa 24 eri tilausta per päivä kullekin raporttisivulle ja koontinäytölle.
+Voit tilata itsellesi ja kollegoillesi tärkeimmät raporttisivut, koontinäytöt ja sivutetut raportit. Tällä tavalla Power BI lähettää sinulle sähköpostitse niistä tilannevedoksen. Voit määrittää, miten usein haluat Power BI:n lähettävän sähköpostia: päivittäin, viikoittain, tunneittain, kuukausittain tai tietojen päivittyessä (päivän ensimmäinen päivitys).  Jos tilaat päivittäin, viikoittain, tunneittain tai kuukausittain, voit valita kellonajan, jolloin sähköpostit lähetetään.  Voit määrittää jopa 24 eri tilausta per päivä kullekin raporttisivulle ja koontinäytölle.
 
 ![sähköpostitilannevedos koontinäytöstä](media/service-report-subscribe/power-bi-dashboard-email-new.jpg) 
 
@@ -54,9 +54,9 @@ Sivutettujen raporttien tilaaminen on hieman erilaista. Saat lisätietoja ohjear
 
 5. Anna sähköpostille **aihe** ja kirjoita sen **viesti**. 
 
-5. Valitse tilauksesi **tiheys**: **Päivittäin**, **Tunneittain**, **Viikoittain** tai **Tietojen päivityksen jälkeen (Päivittäin)** .  Jos haluat saada tilauksen sähköpostit vain tiettyinä päivinä, valitse **Tunneittain** tai **Viikoittain** ja valitse sitten, minä päivinä haluat saada sähköposteja.  Jos haluat saada tilauksen sähköpostit esimerkiksi vain arkipäivinä, valitse tiheydeksi **Viikoittain** ja poista sitten **lauantain** ja **sunnuntain** valintaruutujen valinnat.  
+5. Valitse tilauksesi **tiheys**: **Päivittäin**, **Tunneittain**, **Viikoittain**, **Kuukausittain** tai **Tietojen päivittämisen jälkeen (päivittäin)** .  Jos haluat saada tilauksen sähköpostit vain tiettyinä päivinä, valitse **Tunneittain** tai **Viikoittain** ja valitse sitten, minä päivinä haluat saada sähköposteja.  Jos haluat saada tilauksen sähköpostit esimerkiksi vain arkipäivinä, valitse tiheydeksi **Viikoittain** ja poista sitten **lauantain** ja **sunnuntain** valintaruutujen valinnat.  Jos valitset **Kuukausittain**, kirjoita ne kuukauden päivät, jolloin haluat saada tilauksen sähköpostit.  
 
-6. Voit valita sähköpostien lähetyskellonajan valitsemalla tiheydeksi **Päivittäin** tai **Viikoittain** ja määrittämällä sitten tilaukselle **ajoitetun ajan**.  Viestit voidaan lähettää tasatunnein tai 15, 30 tai 45 minuuttia yli tasatunnin.  Valitse AM tai PM (12 tunnin kellon mukaisesti). Voit määrittää myös aikavyöhykkeen.  Jos valitset **Tunneittain**, valitse **Ajoitettu aika**, jolloin haluat tilauksen alkavan, ja se tulee tunnin välein sen jälkeen.
+6. Voit valita sähköpostien lähetyskellonajan valitsemalla tiheydeksi **Päivittäin**, **Tunneittain, **Kuukausittain** tai **Viikoittain** ja määrittämällä sitten tilaukselle **ajoitetun ajan**.  Viestit voidaan lähettää tasatunnein tai 15, 30 tai 45 minuuttia yli tasatunnin.  Valitse AM tai PM (12 tunnin kellon mukaisesti). Voit määrittää myös aikavyöhykkeen.  Jos valitset **Tunneittain**, valitse **Ajoitettu aika**, jolloin haluat tilauksen alkavan, ja se suoritetaan tunnin välein sen jälkeen.
 
 7. Oletusarvoisesti tilauksesi alkamispäivämäärä on sen luontipäivämäärä. Voit halutessasi valita myös päättymispäivämäärän. Jos et määritä päättymispäivämäärää, se on oletusarvoisesti vuoden päässä alkamispäivämäärästä. Voit vaihtaa päivämääräksi minkä tahansa tulevaisuudessa olevan päivämäärän (aina vuoteen 9999 saakka) milloin tahansa ennen tilauksen päättymistä. Tilaus lopetetaan päättymispäivänä, jos et ota sitä uudelleen käyttöön. Saat ennen tilauksen päättymistä ilmoituksia, jossa kysytään, haluatko jatkaa tilausta.    
 
@@ -67,7 +67,7 @@ Sivutettujen raporttien tilaaminen on hieman erilaista. Saat lisätietoja ohjear
 7. Valitse **Tallenna ja sulje**. Tilauksen vastaanottajat saavat sähköpostin ja tilannevedoksen koontinäytöstä tai raporttisivusta määrittämäsi aikataulun mukaisesti. Voit luoda jopa 24 tilausta per raportti ja koontinäyttö. Voit määrittää kullekin tilaukselle omat vastaanottajat, kellonajat ja lähetystiheydet.  Kaikissa tilauksissa, joiden tiheydeksi määritetään **Tietojen päivittämisen jälkeen**, lähetetään sähköpostia vain raportin tai koontinäytön kyseisen päivän ensimmäisen ajoitetun päivityksen jälkeen.   
       
    > [!TIP]
-   > Haluatko lähettää sähköpostiviestin tilauksesta heti vai pyydettäessä milloin tahansa? Valitse **Suorita nyt** niille koontinäytön tai raportin tilauksille, jotka haluat lähettää. Näkyviin tulee ilmoitus, että sähköpostiviesti on matkalla kaikille kyseisen tilauksen käyttäjille.  Voit tehdä tämän niin usein kuin haluat. Toiminto ei vaikuta päivittäiseen 24 ajoitetun tilauksen rajoitukseen raporttia tai koontinäyttöä kohti. Tämä EI aloita pohjana olevan tietojoukon tietojen päivittämistä. 
+   > Haluatko lähettää sähköpostiviestin tilauksesta heti vai pyydettäessä milloin tahansa? Valitse **Suorita nyt** niille koontinäytön tai raportin tilauksille, jotka haluat lähettää. Näkyviin tulee ilmoitus, että sähköpostiviesti on matkalla kaikille kyseisen tilauksen käyttäjille.  Toiminto ei vaikuta päivittäiseen 24 ajoitetun tilauksen rajoitukseen raporttia tai koontinäyttöä kohti. Tämä EI aloita pohjana olevan tietojoukon tietojen päivittämistä. 
    > 
    > 
    
@@ -103,7 +103,7 @@ Tilaus päättyy, jos Pro-käyttöoikeus umpeutuu, omistaja poistaa koontinäyt�
 * Erityisesti koontinäyttötilausten osalta tiettyjä ruututyyppejä ei vielä tueta.  Sellaisia ovat esimerkiksi suoratoisto-, video- ja mukautetut verkkosisältöruudut.     
 * Jos jaat koontinäytön työtoverille vuokraajasi ulkopuolella, et voi luoda myös tilausta kyseiselle työtoverille. Jos olet aaron@xyz.com, voit jakaa kohteen anyone@ABC.com kanssa, mutta et voi vielä tilata kohdetta anyone@ABC.com eivätkä he voi tilata jaettua sisältöä.      
 * Power BI keskeyttää automaattisesti sellaisten tietojoukkojen päivittämisen, joihin liittyvissä koontinäytöissä tai raporteissa ei ole käyty yli kahteen kuukauteen.  Jos lisäät koontinäytön tai raportin tilauksen, päivitystä kuitenkaan ei lopeteta, vaikka kohteessa ei käytäisikään.    
-* Jos et saa tilaamiasi sähköpostiviestejä, varmista, että täydellinen käyttäjätunnuksesi (UPN) kykenee vastaanottamaan sähköposteja. [Power BI ‑tiimi yrittää parhaillaan höllentää vaatimusta](https://community.powerbi.com/t5/Issues/No-Mail-from-Cloud-Service/idc-p/205918#M10163), joten pysy kuulolla. 
+* Jos et saa tilaamiasi sähköpostiviestejä, varmista, että täydellinen käyttäjätunnuksesi (UPN) kykenee vastaanottamaan sähköposteja. 
 * Jos raporttinäkymäsi tai raporttisi on Premium-kapasiteetissa, voit käyttää ryhmän sähköpostialiaksia tilauksiin sen sijaan, että tilaisit työtoverien sähköpostiosoitteet yksitellen. Aliakset perustuvat nykyiseen Active Directoryyn. 
 
 ## <a name="next-steps"></a>Seuraavat vaiheet

@@ -9,12 +9,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 04/08/2019
 ms.author: mshenhav
-ms.openlocfilehash: a7e26fd96066ce35e7d61443a8d7c32c64011d5e
-ms.sourcegitcommit: 805d52e57a935ac4ce9413d4bc5b31423d33c5b1
+ms.openlocfilehash: 5b0921689a923b5c787a5e4208fe35a863372878
+ms.sourcegitcommit: 9eae2a52af6926cda4d6b03de4d50d7fa8b2f216
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68665424"
+ms.lasthandoff: 08/26/2019
+ms.locfileid: "70030177"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Power BI -mobiilisovellusten uudet ominaisuudet
 Lisätietoja aiheeseen liittyvistä uusista ominaisuuksista:
@@ -22,6 +22,12 @@ Lisätietoja aiheeseen liittyvistä uusista ominaisuuksista:
 * [Power BI -tiimin mobiilisovelluksia käsittelevä blogi](https://powerbi.microsoft.com/blog/tag/mobile/)
 * [Power BI Desktopin uudet ominaisuudet](../../desktop-latest-update.md)  
 * [Power BI -palvelun uudet ominaisuudet](../../service-whats-new.md)  
+
+## <a name="august-2019"></a>Elokuu 2019
+
+### <a name="secured-access-with-azure-active-directory-ad-application-proxy"></a>Azure Active Directory (AD) -sovellusvälityspalvelimen suojattu käyttö
+
+Olemme yhteistyössä Azure Active Directory -tiimin kanssa integroineet Power BI -mobiilisovelluksia Azure Active Directory (AAD) -sovellusvälityspalvelimeen. Tämän ansiosta voit muodostaa Power BI -mobiilisovelluksesta yhteyden yrityksen sisältä isännöitävään raporttipalvelimeen ilman monimutkaisia paikallisia määrityksiä. Lue lisää artikkelista [Power BI -mobiilisovellusten ja Azure AD -sovellusvälityspalvelimen integrointi](https://powerbi.microsoft.com/blog/access-on-prem-report-server-from-your-power-bi-mobile-app-with-azure-active-directory-application-proxy/). Lue, [miten Azure AD -sovellusvälityspalvelin ja Power BI määritetään](https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/application-proxy-integrate-with-power-bi).
 
 ## <a name="july-2019"></a>Heinäkuu 2019
 

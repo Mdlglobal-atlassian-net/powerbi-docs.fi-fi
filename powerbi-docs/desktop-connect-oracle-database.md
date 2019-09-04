@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 02/22/2019
+ms.date: 08/29/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: b28c4ea9b4cacc77a7f98af5bfc006670f40af94
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 3dce16287c9cdcb7882e332e338137f7598b4010
+ms.sourcegitcommit: a00fe5fb545c3df13b7cd13a701fd6a2b2521a17
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61314960"
+ms.lasthandoff: 08/31/2019
+ms.locfileid: "70200899"
 ---
 # <a name="connect-to-an-oracle-database"></a>Oracle-tietokantaan yhdistäminen
 Yhteyden muodostaminen Oracle-tietokantaan **Power BI Desktopilla** edellyttää, että tietokoneessa on asennettuna Power BI Desktop ja oikea Oracle-asiakasohjelmisto. Oracle-asiakasohjelmiston versio (**32-bittinen** vai **64-bittinen**) määräytyy tietokoneeseen asennetun Power BI Desktop -version mukaan.
@@ -64,3 +64,5 @@ Jos olet ladannut Power BI Desktopin Microsoft Storesta, et ehkä pysty muodosta
 * Lataa Power BI Desktop kohteesta https://powerbi.microsoft.com/desktop.
 
 * Jos haluat käyttää Microsoft Store -versiota, kopioi paikallisessa tietokoneessa oraons.dll kohteesta _12.X.X\client_X_ kohteeseen _12.X.X\client_X\bin_. X vastaa versio- ja hakemistonumeroita.
+
+Jos näet Power BI Gatewayssä virhesanoman *Objektiviittausta ei ole määritetty*, kun muodostat yhteyttä Oracle-tietokantaan, saatat pystyä ratkaisemaan ongelman noudattamalla [Tietolähteen hallinta – Oracle](service-gateway-onprem-manage-oracle.md) -artikkelin ohjeita.

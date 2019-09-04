@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 08/19/2019
+ms.date: 08/29/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: d1739d97b0741c67e29ed7ab9a35a70bf4fdc484
-ms.sourcegitcommit: 4a3afe761d2f4a5bd897fafb36b53961739e8466
+ms.openlocfilehash: 2049d996c9f6130718e203a8f6d27a2a7fac911f
+ms.sourcegitcommit: a00fe5fb545c3df13b7cd13a701fd6a2b2521a17
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/20/2019
-ms.locfileid: "69654819"
+ms.lasthandoff: 08/31/2019
+ms.locfileid: "70201019"
 ---
 # <a name="getting-started-with-power-bi-desktop"></a>Power BI Desktopin käytön aloittaminen
 Tervetuloa **Power BI Desktopin aloitusoppaaseen**. Tässä lyhyessä esittelyssä kerrotaan, miten Power BI Desktop toimii ja mitä sillä voi tehdä, ja autetaan sinua rakentamaan tehokkaita tietomalleja ja upeita raportteja, jotka vahvistavat liiketoimintatietojasi. 
@@ -105,6 +105,9 @@ Kun valitsemme **Muokkaa**, kyselyeditori käynnistyy ja tyypillinen taulukkonä
  ![](media/desktop-getting-started/designer_gsg_editquery.png)
 
 Lisätietoa tietoihin yhdistämisestä on ohjeartikkelissa [Tietoihin yhdistäminen Power BI Desktopissa](desktop-connect-to-data.md).
+
+> [!NOTE]
+> Tässä artikkelissa mainitut taulukkotiedot saattavat muuttua ajan myötä. Näin ollen suoritettavat toimenpiteet saattavat erota seuraavaksi mainittavista. Sinun on siis oltava luova toimenpiteiden ja tulosten suhteen, mutta sehän vain tekee oppimisesta hauskempaa. 
 
 Seuraavassa osassa muokkaamme tietoja tarpeittemme mukaan. Yhdistettyjen tietojen muokkaamista kutsutaan tietojen *muotoilemiseksi*.
 

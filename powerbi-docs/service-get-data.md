@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/29/2019
+ms.date: 08/29/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: d6d6ca0b9a1a2ec312a9168aad7a7cc93981e396
-ms.sourcegitcommit: 206806d8ddb6bdfc322c1a46fb34a1b0678acba2
+ms.openlocfilehash: 21a7bf05330373febe1e9f121f07df6de0779c69
+ms.sourcegitcommit: a00fe5fb545c3df13b7cd13a701fd6a2b2521a17
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66816737"
+ms.lasthandoff: 08/31/2019
+ms.locfileid: "70200961"
 ---
 # <a name="data-sources-for-the-power-bi-service"></a>Power BI -palvelun tietolähteet
 Tiedot ovat Power BI:n ydin. Oletetaan, että tutkit tietoja. Voit tutkia luomalla kaavioita ja raporttinäkymiä tai kysymällä tietoja **Q&A:n** avulla. Näkemäsi visualisoinnit ja vastaukset saavat pohjana olevat tiedot tietojoukosta. Mutta mistä tietojoukko on peräisin? Tietojoukko on peräisin tietolähteestä.
@@ -46,7 +46,7 @@ Kun olet valinnut **Nouda tiedot**, voit valita haluamasi tiedot
 ### <a name="files"></a>Tiedostot
 ![](media/service-get-data/pbi_getdata_files.png)
 
-**Excel** ( *.xlsx*, *.xlsm*) – Excel on ainutlaatuinen. Excel-työkirja voi sisältää erilaisia tietotyyppejä. Se voi sisältää esimerkiksi tietoja, jotka olet kirjannut laskentataulukkoon itse, tai sellaisia, joista olet tehnyt kyselyitä ja jotka olet ladannut ulkoisista tietolähteistä Power Queryn avulla. Power Query on käytettävissä Excel 2016:n ja Power Pivotin **Get & Transform** -toiminnon kautta. Voit tuoda tietoja laskentataulukoiden taulukoista tai tietomallista. Katso lisätietoja kohdasta [Tietojen noutaminen tiedostoista Power BI:hin](service-get-data-from-files.md).
+**Excel** ( *.xlsx*, *.xlsm*) – Excel-työkirja voi sisältää erilaisia tietotyyppejä. Se voi sisältää esimerkiksi tietoja, jotka olet kirjannut laskentataulukkoon itse, tai sellaisia, joista olet tehnyt kyselyitä ja jotka olet ladannut ulkoisista tietolähteistä Power Queryn avulla. Power Query on käytettävissä Excel 2016:n ja Power Pivotin **Get & Transform** -toiminnon kautta. Voit tuoda tietoja laskentataulukoiden taulukoista tai tietomallista. Katso lisätietoja kohdasta [Tietojen noutaminen tiedostoista Power BI:hin](service-get-data-from-files.md).
 
 **Power BI Desktop** ( *.pbix*) – Voit käyttää Power BI Desktopia tietojen kyselyyn ja lataamiseen ulkoisista tietolähteistä sekä raporttien luomiseen. Voit myös laajentaa tietomallia mittareilla ja suhteilla tai tuoda Power BI Desktop -tiedoston Power BI -sivustoosi. Power BI Desktop sopii parhaiten kokeneille käyttäjille. Tällaiset käyttäjät ovat usein hyvin perillä tietolähteistään. Tavallisesti he myös ymmärtävät tietojen kyselyn, muunnoksen ja mallinnuksen käsitteet. Lisätietoja on artikkelissa [Tietoihin yhdistäminen Power BI Desktopissa](desktop-connect-to-data.md).
 
@@ -102,9 +102,9 @@ Jos tallennat tiedostosi OneDrive for Businessiin tai SharePoint-työryhmäsivus
 
 Palveluista peräisin olevat sisältöpaketit päivittyvät automaattisesti. Useimmissa tapauksissa ne päivitetään kerran päivässä. Voit päivittää manuaalisesti, mutta riippuu palveluntarjoajasta, näetkö päivitettyjä tietoja vai et. Organisaation käyttäjien omistamien sisältöpakettien päivittyminen riippuu käytettävistä tietolähteistä. Ne myös riippuvat siitä, miten sisältöpaketin luonut henkilö on määrittänyt päivityksen.
 
-Azure SQL -tietokanta, Azure SQL -tietovarasto ja Spark on Azure HDInsight erottuvat siten, että ne ovat pilvipalvelussa sijaitsevia tietolähteitä. Koska Power BI -palvelu on myös pilvipalvelu, Power BI voi muodostaa kyseisiin tietolähteisiin reaaliaikaisen yhteyden **DirectQuery**-toimintoa käyttäen. Power BI:ssä näkemäsi tiedot on aina synkronoitu, joten ajoitettua päivitystä ei tarvitse määrittää.
+Azure SQL -tietokanta, Azure SQL -tietovarasto ja Azure HDInsightin Spark ovat pilvipalvelussa sijaitsevia tietolähteitä. Koska Power BI -palvelu on myös pilvipalvelu, Power BI voi muodostaa kyseisiin tietolähteisiin reaaliaikaisen yhteyden **DirectQuery**-toimintoa käyttäen. Power BI:ssä näkemäsi tiedot on aina synkronoitu, joten ajoitettua päivitystä ei tarvitse määrittää.
 
-SQL Server Analysis Services on ainutlaatuinen. Kun muodostat siihen yhteyden Power BI:stä, yhteys on reaaliaikainen, aivan kuin yhteys Azure-pilvitietokantaan. Ero on siinä, että tietokanta sijaitsee organisaatiosi palvelimessa. Tällainen yhteys edellyttää Power BI -yhdyskäytävää, joka on IT-osaston määrittämä.
+Kun muodostat Power BI:stä yhteyden SQL Server Analysis Servicesiin, yhteys on reaaliaikainen, aivan kuin yhteys Azure-pilvitietokantaan. Ero on siinä, että tietokanta sijaitsee organisaatiosi palvelimessa. Tällainen yhteys edellyttää Power BI -yhdyskäytävää, joka on IT-osaston määrittämä.
 
 Tietojen päivittäminen on todella tärkeä osa Power BI:tä, eikä sitä voi käsitellä kokonaan tässä. Jos haluat saada tarkempaa tietoa, tutustu artikkeliin [Tietojen päivittäminen Power BI:ssä](refresh-data.md).
 

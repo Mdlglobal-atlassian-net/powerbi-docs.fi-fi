@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/15/2019
+ms.date: 08/29/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 8000397e5d8f26847349c35b541aa82c5907292e
-ms.sourcegitcommit: ba95d4979f1869f49a7d266c591f95e2810fdb29
+ms.openlocfilehash: 1e4d589702bb471a2abc6af9448a6846825adbfe
+ms.sourcegitcommit: c0f4d00d483121556a1646b413bab75b9f309ae9
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "69621247"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70160358"
 ---
 # <a name="connect-azure-data-lake-storage-gen2-for-dataflow-storage-preview"></a>Yhdistä Azure Data Lake Storage Gen2 tietovuon tallennukseen (esikatselu)
 
@@ -115,19 +115,19 @@ Etsi vuokraajan sovelluksia seuraavasti:
 
     ![Etsi Power-sovelluksia](media/service-dataflows-connect-azure-data-lake-storage-gen2/dataflows-connect-adlsg2_07.jpg)
 
-5. Valitse ja kopioi Power BI -palvelun ja Power Query Onlinen molemmat objektitunnukset hakutuloksistasi. Valmistaudu liittämään nämä arvot myöhemmissä vaiheissa.
+5. Valitse ja kopioi Power BI Premium -palvelun ja Power Query Onlinen molemmat objektitunnukset hakutuloksistasi. Valmistaudu liittämään nämä arvot myöhemmissä vaiheissa.
 
-7. Siirry sitten **Azure Storage Explorerin** avulla *powerbi*-tiedostojärjestelmään, jonka loit edellisessä osiossa. Noudata [Käyttöoikeuksien hallinta](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-how-to-set-permissions-storage-explorer#managing-access) -osion ohjeita, jotka löytyvät artikkelista [Tiedostojen ja hakemistotason käyttöoikeuksien määrittäminen Azure Storage Explorerin avulla](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-how-to-set-permissions-storage-explorer).
+6. Siirry sitten **Azure Storage Explorerin** avulla *powerbi*-tiedostojärjestelmään, jonka loit edellisessä osiossa. Noudata [Käyttöoikeuksien hallinta](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-how-to-set-permissions-storage-explorer#managing-access) -osion ohjeita, jotka löytyvät artikkelista [Tiedostojen ja hakemistotason käyttöoikeuksien määrittäminen Azure Storage Explorerin avulla](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-how-to-set-permissions-storage-explorer).
 
-8. Määritä vaiheessa 5 noudetulle kummallekin Power BI -objektitunnukselle **Luku**-, **Kirjoitus**- ja **Suoritus**-käyttöoikeus ja oletusarvoiset käyttöoikeusluettelot *powerbi*-tiedostojärjestelmään.
+7. Määritä vaiheessa 5 noudetulle kummallekin Power BI Premium -objektitunnukselle **Luku**-, **Kirjoitus**- ja **Suoritus**-käyttöoikeus ja oletusarvoiset käyttöoikeusluettelot *powerbi*-tiedostojärjestelmään.
 
    ![määritä kummallekin kaikki kolme käyttöoikeutta](media/service-dataflows-connect-azure-data-lake-storage-gen2/dataflows-connect-adlsg2_07a.jpg)
 
-9. Määritä vaiheessa 4 noudetulle Power Query Online -objektitunnukselle **Kirjoitus**- ja **Suoritus**-käyttöoikeus ja oletusarvoiset käyttöoikeusluettelot *powerbi*-tiedostojärjestelmään.
+8. Määritä vaiheessa 4 noudetulle Power Query Online -objektitunnukselle **Kirjoitus**- ja **Suoritus**-käyttöoikeus ja oletusarvoiset käyttöoikeusluettelot *powerbi*-tiedostojärjestelmään.
 
    ![määritä seuraavaksi Kirjoitus- ja Suoritus-käyttöoikeus](media/service-dataflows-connect-azure-data-lake-storage-gen2/dataflows-connect-adlsg2_07b.jpg)
 
-10. Määritä lisäksi myös **Muut**-vaihtoehdolle **Suoritus**-käyttöoikeus ja oletusarvoiset käyttöoikeusluettelot.
+9. Määritä lisäksi myös **Muut**-vaihtoehdolle **Suoritus**-käyttöoikeus ja oletusarvoiset käyttöoikeusluettelot.
 
     ![määritä lopuksi Muut-vaihtoehdolle Suoritus-käyttöoikeus](media/service-dataflows-connect-azure-data-lake-storage-gen2/dataflows-connect-adlsg2_07c.jpg)
 

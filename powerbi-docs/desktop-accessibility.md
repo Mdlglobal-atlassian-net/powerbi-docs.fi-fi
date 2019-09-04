@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 06/17/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: d67ca5a4c8014dc295f3ffc458eca3dc5496282a
-ms.sourcegitcommit: 9d13ef7a257b5006fca5f92acf5b611f5cd143a2
+ms.openlocfilehash: 14e57f5b19fe4dccea9aa47d21c959eaf93a45ae
+ms.sourcegitcommit: b53a6f5575f5f8bc443ecdca9c72525ce123518f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "68307287"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70185705"
 ---
 # <a name="accessibility-in-power-bi-desktop-reports"></a>Power BI Desktop -raporttien helppokäyttöisyys
 Power BI:ssa on ominaisuuksia, joiden avulla toimintarajoitteisten henkilöiden on helppo käyttää ja käsitellä Power BI -raportteja. Näitä ominaisuuksia ovat esimerkiksi mahdollisuus käyttää raporttia näppäimistön tai näytönlukuohjelman avulla, kohdistaminen sivun eri objekteihin sarkaimella sekä ymmärtäväinen merkkien käyttö visualisoinneissa.
@@ -75,6 +75,9 @@ Seuraavien vihjeiden avulla voit luoda entistä helppokäyttöisempiä **Power B
 * Tarjoa vaihtoehtoinen teksti jokaisesta raportin objektista. Näin varmistat, että raporttisi käyttäjät ymmärtävät, mitä yrität kertoa visualisoinnin avulla. Siitä on hyötyä, vaikka he eivät näe visualisointia, kuvaa, muotoa tai tekstiruutua. Voit antaa vaihtoehtoisen tekstin mistä tahansa **Power BI Desktop** -raportin objektista valitsemalla objektin (esimerkiksi visualisoinnin tai muodon) ja valitsemalla sitten **Visualisoinnit**-ruudusta **Muoto**-osion. Laajenna sitten **Yleiset**-kohta, siirry sivun alareunaan ja täytä **Vaihtoehtoinen teksti** -tekstiruutu.
   
   ![Voit lisätä raportin minkä tahansa objektin vaihtoehtoisen tekstin kohdasta Visualisoinnit > Muoto > Yleinen > Vaihtoehtoinen teksti -ruutu](media/desktop-accessibility/accessibility-02.png)
+  
+  Vaihtoehtoista tekstiä voidaan muuttaa dynaamisesti lausekkeen avulla esimerkiksi käyttämällä visualisointiin käytettyjä suodattimia. Lauseke määritetään samalla tavalla kuin visualisoinnin otsikko. [Visualisoinnin otsikon ehdollinen muotoilu](desktop-conditional-format-visual-titles.md)
+  
 * Varmista, että raportin tekstin ja taustavärien välinen kontrasti on riittävä. Useiden käytettävissä olevien työkalujen, kuten [värikontrastianalysaattorin](https://developer.paciellogroup.com/resources/contrastanalyser/), avulla voit tarkastella raporttisi värejä. 
 * Käytä tekstin kokoa ja fontteja, jotka ovat helppoja lukea. Pieni teksti ja vaikeaselkoiset fontit heikentävät helppokäyttöisyyttä.
 * Sisällytä kaikkiin visualisointeihin otsikko, akselinimet ja arvopisteiden nimet.

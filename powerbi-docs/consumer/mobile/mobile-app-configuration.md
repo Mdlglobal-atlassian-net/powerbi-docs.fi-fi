@@ -1,7 +1,7 @@
 ---
 title: Power BI:n iOS-sovelluksen määritykset
 description: Power BI:n iOS-sovelluksen toiminnan mukauttaminen MDM-työkalun avulla
-author: mshenhav
+author: paulinbar
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
@@ -9,12 +9,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 06/07/2019
 ms.author: mshenhav
-ms.openlocfilehash: a0883927f3a0a09bbe4d1ed618b7d5f708807464
-ms.sourcegitcommit: 206806d8ddb6bdfc322c1a46fb34a1b0678acba2
+ms.openlocfilehash: bc9c6dd8cd892ab0304cc5a99a3bb780486f32f0
+ms.sourcegitcommit: c0f4d00d483121556a1646b413bab75b9f309ae9
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66817003"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70160147"
 ---
 # <a name="remotely-configure-power-bi-ios-app-using-mobile-device-management-mdm-tool"></a>Power BI:n iOS-sovelluksen etämääritys mobiililaitteiden hallintatyökalun (MDM) avulla
 

@@ -1,5 +1,5 @@
 ---
-title: PDF-tiedostona Power BI Desktop muodostaa
+title: PDF-tiedostoon yhdistäminen Power BI Desktopissa
 description: PDF-tiedostojen tietoihin yhdistäminen ja tietojen käyttäminen helposti Power BI Desktopissa
 author: davidiseminger
 manager: kfile
@@ -10,30 +10,30 @@ ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 0c63a62edfce62a5cee13bef3c68014027313e8b
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 77a036cd1852c237c827dca07363492c94d8a272
+ms.sourcegitcommit: c0f4d00d483121556a1646b413bab75b9f309ae9
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65514027"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70160304"
 ---
-# <a name="connect-to-a-pdf-file-in-power-bi-desktop"></a>PDF-tiedostona Power BI Desktop muodostaa
+# <a name="connect-to-a-pdf-file-in-power-bi-desktop"></a>PDF-tiedostoon yhdistäminen Power BI Desktopissa
 Power BI Desktopissa voi muodostaa yhteyden **PDF-tiedostoon** ja käyttää sen sisältämiä tietoja samaan tapaan kuin muita tietolähteitä käytetään Power BI Desktopissa.
 
-![PDF-tiedostojen tietoihin yhdistäminen](media/desktop-connect-pdf/connect-pdf_04.png)
+![PDF-tiedostojen tietoihin yhdistäminen](media/desktop-connect-pdf/connect-pdf-04.png)
 
 Seuraavissa osioissa kuvataan, miten voit muodostaa yhteyden **PDF-tiedostoon**, valita tiedot ja tuoda ne **Power BI Desktopiin**.
 
 Suosittelemme aina päivittämään **Power BI Desktopin** uusimpaan versioon, jonka saat [Hae Power BI Desktop](desktop-get-the-desktop.md) -linkistä. 
 
 ## <a name="connect-to-a-pdf-file"></a>PDF-tiedostoon yhdistäminen
-Jos haluat muodostaa yhteyden **PDF**-tiedostoon, valitse Power BI Desktopissa **Aloitus**-valintanauhasta **Nouda tiedot**. Valitse vasemmalla näkyvistä luokista **Tiedosto**, jolloin näkyviin tulee **PDF (beeta)** .
+Jos haluat muodostaa yhteyden **PDF**-tiedostoon, valitse Power BI Desktopissa **Aloitus**-valintanauhasta **Nouda tiedot**. Valitse vasemmalla näkyvistä luokista **Tiedosto**, jolloin näkyviin tulee **PDF**.
 
-![Valitse PDF Nouda tiedot -kohdassa](media/desktop-connect-pdf/connect-pdf_01.png)
+![Valitse PDF Nouda tiedot -kohdassa](media/desktop-connect-pdf/connect-pdf-01.png)
 
 Sinua pyydetään antamaan käytettävän PDF-tiedoston sijainti. Kun olet antanut tiedoston sijainnin ja PDF-tiedosto ladataan, näyttöön avautuu **Siirtymistoiminto**-ikkuna, jossa näet tiedostossa käytettävissä olevat tiedot. Voit valita ikkunasta yhden tai useita elementtejä tuotavaksi **Power BI Desktopiin**.
 
-![PDF-tiedostojen tietoihin yhdistäminen](media/desktop-connect-pdf/connect-pdf_04.png)
+![PDF-tiedostojen tietoihin yhdistäminen](media/desktop-connect-pdf/connect-pdf-04.png)
 
 Kun valitset PDF-tiedostosta löydettyjen elementtien vieressä olevan valintaruudun, ne näkyvät oikeanpuoleisessa ruudussa. Kun olet valmis tuomaan, tuo tiedot **Power BI Desktopiin** napsauttamalla **Lataa** -painiketta.
 

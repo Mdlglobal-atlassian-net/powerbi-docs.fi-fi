@@ -8,15 +8,15 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/08/2019
+ms.date: 08/29/2019
 ms.author: davidi
 LocalizationGroup: Reports
-ms.openlocfilehash: 7ccbfee788bbada580c02544a4af4b1b25c1a169
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 6f4beb98c195c5af9967f988015959806d485696
+ms.sourcegitcommit: c0f4d00d483121556a1646b413bab75b9f309ae9
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65514209"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70159984"
 ---
 # <a name="analyze-in-excel"></a>Analysoi Excelissä
 Joskus saatat haluta tarkastella ja käsitellä Power BI:ssä olevaa tietojoukkoa Excelillä. **Analysoi Excelissä** -toiminnon avulla voit tehdä niin ja käyttää pivot-taulukko-, kaavio- ja osittajaominaisuuksia Excelissä Power BI:ssä olevan tietojoukon perusteella.
@@ -28,7 +28,8 @@ Joskus saatat haluta tarkastella ja käsitellä Power BI:ssä olevaa tietojoukko
 * Excelin pivot-taulukot eivät tue numeeristen kenttien koostamista vetämällä ja pudottamalla. Power BI -tietojoukossasi *on oltava ennalta määritetyt mittarit*.
 * Joissakin organisaatioissa voi olla ryhmäkäytäntösääntöjä, jotka estävät vaadittujen **Analysoi Excelissä** -päivitysten asentamisen Exceliin. Jos et pysty asentamaan päivityksiä, ota yhteyttä järjestelmänvalvojaan.
 * **Analysoi Excelissä** -toiminto edellyttää, että tietojoukko on Power BI Premiumissa tai että käyttäjällä on Power BI Pro -käyttöoikeus. Saat lisätietoja toimintojen eroista käyttöoikeuksien välillä artikkelista [Power BI:n ominaisuudet käyttöoikeustyypin mukaan](service-features-license-type.md). 
-* Käyttäjät voivat muodostaa yhteyden tietojoukkoja analysoi Excelissä-toiminnon kautta, jos ne on luku-oikeudet pohjana olevaan tietojoukkoon.  Käyttäjällä voi olla tämä usealla eri tavalla. Hän voi esimerkiksi olla tietojoukon sisältävän työtilan jäsen, hänelle on voitu jakaa tietojoukkoa käyttävä raportti tai koontinäyttö tai hänellä voi olla tietojoukon sisältävän sovelluksen käyttöoikeus.
+* Käyttäjät voivat muodostaa yhteyden tietojoukkoihin Analysoi Excelissä -toiminnon kautta, jos heillä on pohjana olevan tietojoukon lukuoikeus.  Käyttäjällä voi olla tämä usealla eri tavalla. Hän voi esimerkiksi olla tietojoukon sisältävän työtilan jäsen, hänelle on voitu jakaa tietojoukkoa käyttävä raportti tai koontinäyttö tai hänellä voi olla tietojoukon sisältävän sovelluksen käyttöoikeus.
+* **Analysoi Excelissä** on Power BI -palvelun toiminto. Se ei ole käytettävissä Power BI -raporttipalvelimella tai Power BI Embeddedissä. 
 
 ## <a name="how-does-it-work"></a>Toimintaperiaate
 Kun valitset **Analysoi Excelissä** kolmen pisteen valikosta (...), joka liittyy tietojoukkoon tai raporttiin **Power BI:ssä**, Power BI luo .ODC-tiedoston ja lataa sen selaimesta tietokoneeseesi.

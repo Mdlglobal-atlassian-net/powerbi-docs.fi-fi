@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/07/2019
+ms.date: 08/29/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: cccbfb6bbe43e70ebcea94322923f7600d58aca8
-ms.sourcegitcommit: 0332efe8f83cb55a9b8ea011db7c99e9b4568118
+ms.openlocfilehash: 5477d7772681f0dd5ac4426335521f6ab1a7844e
+ms.sourcegitcommit: c0f4d00d483121556a1646b413bab75b9f309ae9
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/27/2019
-ms.locfileid: "68590499"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70160339"
 ---
 # <a name="connect-to-datasets-in-the-power-bi-service-from-power-bi-desktop"></a>Tietojoukkoihin yhdistäminen Power BI -palvelussa Power BI Desktopista
 Voit muodostaa reaaliaikaisen yhteyden jaettuun tietojoukkoon Power BI -palvelussa ja luoda useita erilaisia raportteja samasta tietojoukkoryhmästä. Tämä tarkoittaa sitä, että voit luoda täydellisen tietomallin Power BI Desktopissa ja julkaista sen Power BI -palvelussa. Sen jälkeen sinä ja muut käyttäjät voitte luoda useita erilaisia raportteja (erillisiin .pbix-tiedostoihin) samasta, yleisestä tietomallista, ja tallentaa ne eri työtiloihin. Tätä ominaisuutta kutsutaan **Power BI -palvelun reaaliaikaiseksi yhteydeksi**.
@@ -108,4 +108,5 @@ Voit nyt itse (ja muut voivat) luoda ja jakaa mukautettuja raportteja, kaikki sa
 * Sisältöpakettien tapauksessa sinun on ensin luotava sisältöpaketin kopio ennen kuin käytät sitä .pbix raportin ja tietojoukon jakamiseen **Power BI -palveluun**.
 * Kun sisältöpaketit on kopioitu *Oman organisaatio* -kohdasta, et voi korvata palvelussa luotua raporttia ja/tai raporttia, joka on luotu osana sisältöpaketin luomista reaaliaikaisen yhteyden avulla. Jos näin yritetään tehdä, näyttöön tulee varoitus, joka kehottaa sinua nimeämään tiedoston uudelleen ja julkaisemaan sen. Tässä tilanteessa voit vain korvata reaaliaikaisen yhteyden avulla julkaistut raportit.
 * Jos poistat jaetun tietojoukon **Power BI -palvelussa**, et voi enää käyttää kyseistä tietojoukkoa **Power BI Desktopista**.
+* Raportit, jotka jakavat tietojoukon Power BI -palvelussa, eivät tue automaattisia käyttöönottoja Power BI REST -ohjelmointirajapinnan avulla.
 

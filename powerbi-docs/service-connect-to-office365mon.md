@@ -1,29 +1,29 @@
 ---
 title: Yhteyden muodostaminen Office365Moniin Power BI:n avulla
 description: Office365Mon Power BI:lle
-author: SarinaJoan
+author: teddybercovitz
 manager: kfile
 ms.reviewer: maggiesMSFT
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: conceptual
-ms.date: 10/16/2017
-ms.author: sarinas
+ms.date: 8/29/2019
+ms.author: tebercov
 LocalizationGroup: Connect to services
-ms.openlocfilehash: cce886edbed00075efaa43bae9c8a712929e8b9a
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 364220d5d900004252e51184fc9cbd7e03b45b2d
+ms.sourcegitcommit: c0f4d00d483121556a1646b413bab75b9f309ae9
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61170167"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70159899"
 ---
 # <a name="connect-to-office365mon-with-power-bi"></a>Yhteyden muodostaminen Office365Moniin Power BI:n avulla
-Office 365:n käyttökatkosten ja kunnon suorituskyvyn tietojen analysoiminen on helppoa Power BI:n ja Office365Mon-sisältöpaketin avulla. Power BI noutaa tiedot myös käyttökatkoksista ja kunnosta ja luo niiden pohjalta valmiin koontinäytön ja raportit.
+Office 365:n käyttökatkosten ja kunnon suorituskyvyn tietojen analysoiminen on helppoa Power BI:n ja Office365Mon-mallisovelluksen avulla. Power BI noutaa tiedot myös käyttökatkoksista ja kunnosta ja luo niiden pohjalta valmiin koontinäytön ja raportit.
 
-Muodosta yhteys [Office365Mon-sisältöpakettiin](https://app.powerbi.com/groups/me/getdata/services/office365mon) Power BI:lle.
+Muodosta yhteys [Office365Mon-mallisovellukseen](https://app.powerbi.com/groups/me/getdata/services/office365mon) Power BI:lle.
 
 >[!NOTE]
->Office365Mon-järjestelmänvalvojatiliä tarvitaan yhteyden muodostamiseen Power BI-sisältöpakettiin ja lataamiseen.
+>Office365Mon-järjestelmänvalvojatiliä tarvitaan yhteyden muodostamiseen Power BI -mallisovellukseen ja sen lataamiseen.
 
 ## <a name="how-to-connect"></a>Yhteyden muodostaminen
 1. Valitse vasemman siirtymisruudun alareunassa **Nouda tiedot**.

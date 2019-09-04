@@ -7,18 +7,21 @@ ms.reviewer: maggiesMSFT
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: conceptual
-ms.date: 10/16/2017
+ms.date: 08/29/2019
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 4131758dad29b28de56e3ac450bed22d64c25e46
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 66dcbd76d76de04675204674626c2942aef515fa
+ms.sourcegitcommit: a00fe5fb545c3df13b7cd13a701fd6a2b2521a17
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61172752"
+ms.lasthandoff: 08/31/2019
+ms.locfileid: "70200991"
 ---
 # <a name="connect-to-marketo-with-power-bi"></a>Yhteyden muodostaminen Marketoon Power BI:llä
 Power BI -sisältöpaketti Marketolle mahdollistaa merkityksellisten tietojen saamisen Marketo-tilistäsi liideihin ja niiden toimintaan liittyvillä tiedoilla. Tämän yhteyden luominen noutaa tietosi ja tarjoaa automaattisesti koontinäytön ja asiaankuuluvat raportit kyseisten tietojen perusteella.
+
+>[!IMPORTANT]
+>Poistamme tämän sisältöpaketin käytöstä 4. syyskuuta 2019. Jos olet asentanut tämän sisältöpaketin tätä ennen, se toimii edelleen, mutta et voi asentaa uutta tämän päivämäärän jälkeen. Mallisovellukset korvaavat palvelun sisältöpaketit.
 
 Muodosta yhteys [Marketo-sisältöpakettiin](https://app.powerbi.com/getdata/services/marketo) Power BI:lle.
 

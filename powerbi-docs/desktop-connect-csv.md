@@ -8,15 +8,15 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/08/2019
+ms.date: 08/29/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: f1e02197f36da66a64fac95209fe8fabaa67b6c0
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 8eecbfdaa948163ab6d0623a70f237d479fcdb88
+ms.sourcegitcommit: a00fe5fb545c3df13b7cd13a701fd6a2b2521a17
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65514168"
+ms.lasthandoff: 08/31/2019
+ms.locfileid: "70200937"
 ---
 # <a name="connect-to-csv-files-in-power-bi-desktop"></a>CSV-tiedostoihin yhdistäminen Power BI Desktopissa
 Yhteyden muodostaminen pilkuin erotettujen arvojen (*CSV*) tiedostoon Power BI Desktopissa tapahtuu pitkälti samoin kuin yhteyden muodostaminen Excel-työkirjaan. Kumpikin on helppoa. Tässä artikkelissa kerrotaan vaiheittain, miten voit muodostaa yhteyden mihin tahansa CSV-tiedostoon, johon sinulla on käyttöoikeus.
@@ -44,6 +44,10 @@ Kun lataat tiedot Power BI Desktopiin, näet taulukon ja sen sarakkeet (joka esi
 Muuta ei tarvita – CSV-tiedoston tiedot ovat nyt Power BI Desktopissa.
 
 Voit nyt käyttää Power BI Desktopia visualisointien tai raporttien luomiseen tai vuorovaikutukseen muiden tietojen kanssa, joihin ehkä haluat olla yhteydessä ja joita tuot, kuten Excel-työkirjat, tietokannat tai muut tietolähteet.
+
+> [!IMPORTANT]
+> Kun tuot CSV-tiedoston, Power BI Desktop luo *sarakkeet=x* (jossa *x* on CSV-tiedoston sarakkeiden määrä alkuperäisen tuonnin aikana) vaiheena Power Query -editorissa. Jos myöhemmin lisäät sarakkeita ja tietolähde on määritetty päivitettäväksi, alkuperäisen *x*-sarakemäärän ylittäviä sarakkeita ei päivitetä. 
+
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 Power BI Desktopin avulla voit muodostaa yhteyden hyvin monenlaisiin tietoihin. Lisätietoja näistä tietolähteistä saat seuraavista resursseista:
