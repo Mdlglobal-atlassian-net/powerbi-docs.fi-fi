@@ -1358,7 +1358,7 @@
     - name: Resurssit
       items:
         - name: Yhdyskäytävän kuukausittaiset päivitykset
-          href: 'https://review.docs.microsoft.com/data-integration/gateway/service-gateway-monthly-updates?branch=master'
+          href: /data-integration/gateway/service-gateway-monthly-updates
 - name: Hallinta
   items:
     - name: Yleiskatsaus
