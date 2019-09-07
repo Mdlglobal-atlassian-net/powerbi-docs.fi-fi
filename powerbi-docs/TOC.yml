@@ -403,6 +403,8 @@
       items:
         - name: Mikä Power BI on?
           href: power-bi-overview.md
+        - name: Mikä Power BI -palvelu on?
+          href: power-bi-service-overview.md
         - name: Power BI Desktopin ja palvelun vertailu
           href: service-service-vs-desktop.md
     - name: Opetusohjelmat
