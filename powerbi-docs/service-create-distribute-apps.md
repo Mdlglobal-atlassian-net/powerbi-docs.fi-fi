@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 08/15/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: ed3a65e25694c23e1852a554742e0f8a6e6ff668
-ms.sourcegitcommit: 4d5166944fcc6fe4666cab055ae75e7a0a77866d
+ms.openlocfilehash: 5d0ace5c2986b30436838d33037ae3019bd8bdce
+ms.sourcegitcommit: 9665997274301b228f45aa7250ba557e90164a4d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69530590"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70751570"
 ---
 # <a name="publish-an-app-in-power-bi"></a>Julkaise sovellus Power BI:ssä
 
@@ -127,7 +127,7 @@ Tässä yleisiä asioita, jotka tulisi pitää mielessä uutta siirtymisen muodo
 Kun lisäät linkkejä sovelluksen siirtymisruutuun ja valitset Sisältöalue-asetuksen:
 * Varmista, että linkki voidaan upottaa. Jotkin palvelut estävät sisältöjensä upottamisen kolmansien osapuolten sivustoihin, kuten Power BI:hin.
 * Power BI -palvelun sisällön kuten raporttien tai koontinäyttöjen upottamista muihin työtiloihin ei tueta. 
-* Upota Power BI -raporttipalvelimen sisältö sen alkuperäisen upotus-URL-osoitteen kautta paikallisesta käyttöönotosta. Hanki URL-osoite seuraamalla artikkelissa [Power BI -raporttipalvelimen URL:n luominen](https://docs.microsoft.com/power-bi/report-server/quickstart-embed#creating-the-power-bi-report-server-report-url) kerrottuja vaiheita. Huomaa, että normaalit todentamissäännöt ovat voimassa, joten sisällön tarkasteleminen vaatii VPN-yhteyden paikalliseen palvelimeen. 
+* Upota Power BI -raporttipalvelimen sisältö sen alkuperäisen upotus-URL-osoitteen kautta paikallisesta käyttöönotosta. Hanki URL-osoite seuraamalla artikkelissa [Power BI -raporttipalvelimen URL:n luominen](https://docs.microsoft.com/power-bi/report-server/quickstart-embed#create-the-power-bi-report-url) kerrottuja vaiheita. Huomaa, että normaalit todentamissäännöt ovat voimassa, joten sisällön tarkasteleminen vaatii VPN-yhteyden paikalliseen palvelimeen. 
 * Upotetun sisällön yläosassa näytetään suojausvaroitus, joka ilmaisee, ettei sisältö ole Power BI:ssä.
 
 

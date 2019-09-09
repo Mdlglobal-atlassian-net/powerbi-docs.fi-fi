@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/29/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 848019a020e4a91e80caf342acb15c0d9b7e3121
-ms.sourcegitcommit: c0f4d00d483121556a1646b413bab75b9f309ae9
+ms.openlocfilehash: b089c3e51ce80fdb776455519f2569ee8fa24572
+ms.sourcegitcommit: 9665997274301b228f45aa7250ba557e90164a4d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/29/2019
-ms.locfileid: "70160229"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70751641"
 ---
 # <a name="connect-to-ssas-multidimensional-models-in-power-bi-desktop"></a>Yhteyden muodostaminen SSAS-monidimensiomalleihin Power BI Desktopissa
 Power BI Desktopin kautta on mahdollista käyttää **SSAS-monidimensiomalleja**, jotka tunnetaan myös lyhenteellä **SSAS MD**.
@@ -87,7 +87,7 @@ Monidimensiomallit tukevat dimensio- ja solutason suojausta *roolien* kautta. Ku
 ## <a name="supported-features-of-ssas-md-in-power-bi-desktop"></a>Power BI Desktopin tukemat SSAS MD:n ominaisuudet
 Power BI Desktop tukee seuraavia SSAS MD:n ominaisuuksia:
 
-* Tämä **SSAS MD** ‑julkaisu tulee seuraavien elementtien käyttöä ([lisätietoja](https://msdn.microsoft.com/library/jj969574.aspx) ominaisuuksista):
+* Tämä **SSAS MD** ‑julkaisu tulee seuraavien elementtien käyttöä ([lisätietoja](https://docs.microsoft.com/sql/analysis-services/multidimensional-models/understanding-power-view-for-multidimensional-models?view=sql-server-2014) ominaisuuksista):
   * Näyttökansiot
   * Suorituskykyilmaisimien trendit
   * Oletusjäsenet

@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 04/09/2019
 ms.custom: seodec18
 LocalizationGroup: Premium
-ms.openlocfilehash: 9f5357056c27d6461ad7f7d7fba1daa27a508868
-ms.sourcegitcommit: 012f05efc4e97aeb6178fb2fc820b73bcc1ce920
+ms.openlocfilehash: 1fb775bd203fc1e0f6342a0d5cd4d9e382b8342a
+ms.sourcegitcommit: 9665997274301b228f45aa7250ba557e90164a4d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68391155"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70750934"
 ---
 # <a name="optimizing-premium-capacities"></a>Premium-kapasiteettien optimointi
 
@@ -257,7 +257,7 @@ On tärkeää, että testit ovat toistettavissa. Testit tulee suorittaa useita k
 
 Jos olet jo määrittänyt kapasiteetin ja raportit, joille haluat tehdä testin, voit luoda kuormitustestin nopeasti [PowerShellin kuormituksen luontityökalun](https://aka.ms/PowerBILoadTestingTool) avulla. Työkalun avulla voit arvioida, kuinka monta kunkin raportin esiintymää kapasiteettisi pystyy suorittamaan tunnissa. Työkalun avulla voit lisäksi arvioida kapasiteettisi kyvyn yksittäisen raportin hahmontamiseen tai useiden eri raporttien hahmontamiseen rinnakkain. Lisätietoja on videossa [Microsoft Power BI: Premium-kapasiteetti](https://www.youtube.com/watch?time_continue=1860&v=C6vk6wk9dcw).
 
-Voit luoda monimutkaisemman testin kehittämällä kuormituksen testaussovelluksen, joka simuloi realistista kuormitusta. Lisätietoja on verkkoseminaarissa [Power BI -sovellusten kuormituksen testaus Visual Studion kuormitustestillä](https://blogs.msdn.microsoft.com/charles_sterling/2018/04/04/webinar-load-testing-power-bi-applications-with-visual-studio-load-test/).
+Voit luoda monimutkaisemman testin kehittämällä kuormituksen testaussovelluksen, joka simuloi realistista kuormitusta. Lisätietoja on verkkoseminaarissa [Power BI -sovellusten kuormituksen testaus Visual Studion kuormitustestillä](https://powerbi.microsoft.com/en-us/blog/week-4-11-webinars-load-testing-power-bi-applications-with-visual-studio-load-test-and-getting-started-with-cds-for-apps-based-model-driven-apps/).
 
 ## <a name="acknowledgements"></a>Kiitokset
 

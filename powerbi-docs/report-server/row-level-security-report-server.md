@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 01/22/2019
-ms.openlocfilehash: b4a5d11697cff2cae8d137916636907967a7c276
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: f43538b658c1d46984026fd936378a37d33c2e1d
+ms.sourcegitcommit: 9665997274301b228f45aa7250ba557e90164a4d
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "64769807"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70751551"
 ---
 # <a name="row-level-security-rls-in-power-bi-report-server"></a>Rivitason suojaus (RLS) Power BI -raporttipalvelimessa
 
@@ -32,7 +32,7 @@ Oletuksena rivitason suojauksen suodatuksessa käytetään yksisuuntaisia suodat
 
     ![Suojaussuodattimen käyttäminen](media/row-level-security-report-server/rls-apply-security-filter.png)
 
-Valitse tämä ruutu, jos otat käyttöön käyttäjänimeen tai kirjautumistunnukseen perustuvan [dynaamisen rivitason suojauksen](https://docs.microsoft.com/sql/analysis-services/supplemental-lesson-implement-dynamic-security-by-using-row-filters). 
+Valitse tämä ruutu, jos otat käyttöön käyttäjänimeen tai kirjautumistunnukseen perustuvan [dynaamisen rivitason suojauksen](https://docs.microsoft.com/analysis-services/tutorial-tabular-1200/supplemental-lesson-implement-dynamic-security-by-using-row-filters). 
 
 Lisätietoja on artikkelissa [Kaksisuuntainen ristiinsuodatus käyttämällä DirectQueryä Power BI Desktopissa](../desktop-bidirectional-filtering.md) ja teknisessä raportissa [Taulukkomuotoisen liiketoimintatietojen semanttisen mallin suojaaminen](http://download.microsoft.com/download/D/2/0/D20E1C5F-72EA-4505-9F26-FEF9550EFD44/Securing%20the%20Tabular%20BI%20Semantic%20Model.docx).
 

@@ -11,12 +11,12 @@ ms.topic: tutorial
 ms.date: 05/28/2019
 ms.author: selvar
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 6bfcb218f92c2b6e8a3349261e15e6b71b9512b2
-ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
+ms.openlocfilehash: bbd40173bd10abf312ff382a9452f7636234bc95
+ms.sourcegitcommit: 9665997274301b228f45aa7250ba557e90164a4d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68523228"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70751684"
 ---
 # <a name="dynamic-row-level-security-with-analysis-services-tabular-model"></a>Dynaaminen rivitason suojaus Analysis Servicen taulukkomallissa
 
@@ -35,7 +35,7 @@ Tämä opetusohjelma edellyttää [**AdventureworksDW2012**-tietokantaa](https:/
 
 ## <a name="task-1-create-the-user-security-table-and-define-data-relationship"></a>Tehtävä 1: Käyttäjän tietoturvataulukon luominen ja tietojen yhteyden määrittäminen
 
-Lukuiset artikkelit opastavat rivitason dynaamisen suojauksen määrittämisessä **taulukkomuotoiseen SQL Server Analysis Services (SSAS)** -malliin. Tässä esimerkissä käytämme [Dynaamisen suojauksen toteuttaminen rivisuodattimien avulla](https://msdn.microsoft.com/library/hh479759.aspx) -artikkelin ohjeita. 
+Lukuiset artikkelit opastavat rivitason dynaamisen suojauksen määrittämisessä **taulukkomuotoiseen SQL Server Analysis Services (SSAS)** -malliin. Tässä esimerkissä käytämme [Dynaamisen suojauksen toteuttaminen rivisuodattimien avulla](https://docs.microsoft.com/analysis-services/tutorial-tabular-1200/supplemental-lesson-implement-dynamic-security-by-using-row-filters) -artikkelin ohjeita. 
 
 Nämä ohjeet edellyttävät **AdventureworksDW2012**-relaatiotietokannan käyttöä.
 
