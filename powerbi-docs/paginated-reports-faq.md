@@ -8,13 +8,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: overview
-ms.date: 07/15/2019
-ms.openlocfilehash: 2e59499b93f4d1b4879cdec5b807f863a80718aa
-ms.sourcegitcommit: 805d52e57a935ac4ce9413d4bc5b31423d33c5b1
+ms.date: 09/04/2019
+ms.openlocfilehash: 2be953c31ba3090e83e58f8e5626bb83e249556e
+ms.sourcegitcommit: 09ee1b4697aad84d8f4c9421015d7e4dbd3cf25f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68665358"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "70302706"
 ---
 # <a name="paginated-reports-in-power-bi-faq"></a>Sivutetut raportit Power BI:ssä: Usein kysytyt kysymykset 
 
@@ -26,11 +26,11 @@ Tässä artikkelissa vastataan useisiin yleisiin kysymyksiin, joita käyttäjill
 
 ### <a name="what-size-premium-capacity-do-i-need-for-paginated-reports"></a>Minkä kokoista Premium-kapasiteettia tarvitsen sivutettuja raportteja varten?
 
-Sivutettujen raporttien kuormitus on käytettävissä P1– P3-varastointiyksiköissä.  Voit myös käyttää sitä upotettuja skenaarioita varten A4–A6-varastointiyksiköiden kanssa.
+Sivutettujen raporttien kuormitus on käytettävissä P1– P3-varastointiyksiköissä.  Voit myös käyttää sitä A4–A6-varastointiyksikköjen kanssa testi-/kehitysskenaarioita varten.
 
 ### <a name="what-is-the-maximum-memory-threshold-i-can-put-for-paginated-reports-in-my-capacity"></a>Mikä on muistin enimmäisraja, jota voin soveltaa sivutettuihin raportteihin kapasiteetissa?
 
-Voit käyttää jopa 100 % muistia tätä kuormitusta varten kesäkuun 2019 loppuun mennessä. 
+Voit käyttää jopa 100 % muistia tätä kuormitusta varten.
 
 ### <a name="how-does-user-access-work-for-paginated-reports"></a>Miten käyttöoikeudet toimivat sivutettujen raporttien kanssa?
 
@@ -152,7 +152,7 @@ Voit viedä raportin Microsoft Exceliin, Microsoft Wordiin, Microsoft PowerPoint
 
 Kyllä, tulostus on käytettävissä sivutetuille raporteille, minkä lisäksi tulostuksen esikatselua on parannettu. 
 
-### <a name="are-e-mail-subscriptions-available-yet-for-paginated-reports"></a>Ovatko sähköpostitilaukset jo käytettävissä sivutetuille raporteille?
+### <a name="are-e-mail-subscriptions-available-for-paginated-reports"></a>Ovatko sähköpostitilaukset käytettävissä sivutetuille raporteille?
 
 Kyllä, sähköpostitilauksia tuetaan täysin sivutetuille raporteille, ja ne sisältävät kuuden erilaisen tiedostomuodon ja parametriarvon tuen.
 
@@ -166,7 +166,7 @@ SaaS-upotusta tuetaan jo. PaaS-upotusta ei tueta tällä hetkellä.
 
 ### <a name="can-i-drill-through-from-a-power-bi-report-to-a-paginated-report"></a>Voinko porautua Power BI -raportista sivutettuun raporttiin?
 
-Et vielä, mutta tarkoituksenamme on ehdottomasti tukea tätä skenaariota.
+Kyllä, tämä voidaan tehdä käyttämällä URL-parametreja sivutettujen raporttien kanssa.
 
 ### <a name="can-i-share-my-paginated-report-content-through-a-power-bi-app"></a>Voinko jakaa oman sivutetun raportin sisältöni Power BI -sovelluksen kautta?
 
