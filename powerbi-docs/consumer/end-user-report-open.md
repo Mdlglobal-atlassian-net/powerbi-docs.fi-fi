@@ -4,20 +4,19 @@ description: Tässä aiheessa näytetään Power BI -kuluttajille ja -loppukäyt
 author: mihart
 manager: kvivek
 ms.reviewer: ''
-ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 8/28/2018
+ms.date: 08/28/2018
 ms.author: mihart
-ms.openlocfilehash: 0896d397c7cc78ce36109cf1c975b34d081169a1
-ms.sourcegitcommit: b53a6f5575f5f8bc443ecdca9c72525ce123518f
+ms.openlocfilehash: e02d7bfa295b3bd18b0b6b9c64c688ed668c8389
+ms.sourcegitcommit: c799941c8169cd5b6b6d63f609db66ab2af93891
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70184740"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70391729"
 ---
-# <a name="view-a-report-in-power-bi-service-for-consumers"></a>Näytä raportti Power BI -palvelussa *kuluttajille*
+# <a name="view-a-report-in-the-power-bi-service-for-consumers"></a>Raportin näyttäminen Power BI -palvelussa *kuluttajille*
 Raportti sisältää yhden tai useampia visualisointisivuja. Power BI:n *suunnittelijat* luovat raportit ja [jakavat *ne kuluttajille* suoraan](end-user-shared-with-me.md) tai [sovelluksen](end-user-apps.md) osana. 
 
 Raportin voi avata monella eri tavalla ja näytämme nyt niistä kaksi, avaamisen aloitussivulta ja avaamisen koontinäytöstä. 
@@ -31,7 +30,7 @@ Avataan raportti, joka on jaettu suoraan sinulle, ja avataan sen jälkeen raport
    ![Aloitussivu](./media/end-user-report-open/power-bi-home-canvas.png)
 
 ### <a name="open-a-report-that-has-been-shared-with-you"></a>Sinulle jaetun raportin avaaminen
-Power BI:n *suunnittelijat* voivat jakaa raportin suoraan kanssasi. Näin jaettu sisältö näkyy **Jaettu kanssani** -säilössä siirtymispalkissa ja aloitussivun **Jaettu kanssani** -osassa.
+Power BI -*suunnittelijat* voivat jakaa yksittäisen raportin suoraan sinulle sähköpostiviestissä olevan linkin kautta tai lisäämällä sen Power BI:n aloitussivulle. Näin jaettu sisältö näkyy **Jaettu kanssani** -säilössä siirtymispalkissa ja aloitussivun **Jaettu kanssani** -osassa.
 
 1. Avaa Power BI -palvelu (app.powerbi.com).
 
@@ -45,13 +44,13 @@ Power BI:n *suunnittelijat* voivat jakaa raportin suoraan kanssasi. Näin jaettu
 
 4. Avaa raportti valitsemalla *raporttikortti*.
 
-   ![raporttisivu](./media/end-user-report-open/power-bi-report-open.png)
+   ![raporttisivu](./media/end-user-report-open/power-bi-open.png)
 
 5. Huomioi vasemmalla puolella olevat välilehdet.  Kukin välilehti edustaa yhtä raportti*sivua*. *Kasvumahdollisuus*-sivu on nyt avoinna. Avaa sen sijaan raporttisivu valitsemalla *Luokka vuoden alusta* -välilehti. 
 
    ![raporttisivun välilehdet](./media/end-user-report-open/power-bi-ytd.png)
 
-6. Nyt näet koko raporttisivun. Jos haluat muuttaa sivun näyttöä (zoomausta), valitse avattava Näytä-valikko oikeasta yläkulmasta ( **>** ) ja valitse **Todellinen koko**.
+6. Nyt näet koko raporttisivun. Jos haluat muuttaa sivun näyttöä (zoomausta), valitse avattava Näytä-valikko oikeasta yläkulmasta ja valitse **Todellinen koko**.
 
    ![muuta zoomaus](./media/end-user-report-open/power-bi-fit-new.png)
 
@@ -66,7 +65,7 @@ Jos olet saanut sovelluksia työtovereilta tai AppSourcesta, kyseiset sovellukse
 
    ![Aloitussivu](./media/end-user-report-open/power-bi-my-apps.png)
 
-8. Avaa sovellus valitsemalla se. Sovelluksen *suunnitteluohjelman* asetusten mukaan sovellus avaa joko koontinäytön, raportin tai sovelluksen sisältöluettelon. Jos sovellus:
+8. Avaa sovellus valitsemalla se. Sovelluksen *suunnitteluohjelman* asetusten mukaan sovellus avaa joko koontinäytön tai raportin. Jos sovellus:
     - avaa raportin, olet valmis.
     - avaa koontinäytön, katso alla oleva kohta ***Raportin avaaminen koontinäytöstä***.
 
@@ -95,5 +94,5 @@ Kun pääset sinuiksi Power BI -palvelun kanssa, löydät itsellesi sopivimmat t
 - ja muilla tavoilla
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
-[Raportteja voi käsitellä monella eri tavalla](end-user-reading-view.md).  Aloita tutustuminen valitsemalla jokainen välilehti raporttipohjan sivulta.
+[Koontinäytön avaaminen ja tarkasteleminen](end-user-dashboard-open.md)
 

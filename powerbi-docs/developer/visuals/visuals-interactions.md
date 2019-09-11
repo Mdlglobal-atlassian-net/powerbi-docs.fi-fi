@@ -1,6 +1,6 @@
 ---
-title: Visualisointitoimet
-description: Miten tarkistaa, että Power BI:n visualisointi sallii visualisointitoimet
+title: Visuaaliset vuorovaikutukset Power BI:n visualisoinneissa
+description: Tässä artikkelissa kerrotaan, miten voit tarkistaa, sallitaanko Power BI:n visualisoinneille visuaalisia vuorovaikutuksia.
 author: shaym83
 ms.author: shaym
 manager: rkarlin
@@ -9,26 +9,25 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: 739e59c6da3c1e464e0462a928bc4f33ea0d01f8
-ms.sourcegitcommit: 473d031c2ca1da8935f957d9faea642e3aef9839
+ms.openlocfilehash: f2fb2d451deb63b5e9c08472654e28d0e1a469db
+ms.sourcegitcommit: b602cdffa80653bc24123726d1d7f1afbd93d77c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68424489"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70236603"
 ---
-# <a name="visuals-interactions"></a>Visualisointitoimet
+# <a name="visual-interactions-in-power-bi-visuals"></a>Visuaaliset vuorovaikutukset Power BI:n visualisoinneissa
 
-Visualisoinnit voivat tehdä allowInteractions-lipun arvolle kyselyn, joka ilmaisee, tulisiko visualisoinnin sallia visualisointitoimet.
-Visualisoinnit ovat esimerkiksi vuorovaikutteisia raportin tarkastelun tai muokkaamisen aikana mutta eivät silloin, kun niitä tarkastellaan koontinäytössä.
-Vuorovaikutteisia visualisointitoimia ovat muun muassa napsautus, panorointi, zoomaus ja valinta.
-Huomaa, että työkaluvihjeet tulee ottaa käyttöön kaikissa tilanteissa lipusta riippumatta.
+Visualisoinnit voivat tehdä `allowInteractions`-merkinnän arvolle kyselyn, joka ilmaisee, tulisiko visualisoinnin sallia visualisointitoimet. Visualisoinnit ovat esimerkiksi vuorovaikutteisia raportin tarkastelun tai muokkaamisen aikana, mutta eivät silloin, kun niitä tarkastellaan koontinäytössä. Vuorovaikutteisia visualisointitoimia ovat esimerkiksi *napsautus*, *panorointi*, *zoomaus* ja *valinta*. 
 
-AllowInteractions-lippu välitetään totuusarvona visualisoinnin valmistelun aikana IVisualHost-käyttöliittymän jäsenenä.
+> [!NOTE]
+> Ota työkaluvihjeet käyttöön kaikissa skenaarioissa riippumatta siitä, mikä merkintä on olemassa.
 
-Missä tahansa Power BI -skenaariossa, joka edellyttää, että visualisoinnit eivät ole vuorovaikutteisia (esimerkiksi koontinäytön ruutu), allowInteractions-lipun on arvo on epätosi (false).
-Muussa tapauksessa (esimerkiksi raportissa) allowInteractions-lipun arvoksi määritetään tosi (true).
+`allowInteractions`-merkintä välitetään totuusarvona visualisoinnin valmistelun aikana IVisualHost-käyttöliittymän jäsenenä.
 
-Jos haluat lisätietoja, tutustu [SampleBarChart-visualisointisäilöön](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/59a47935d8f5272ce145fe804193599ddb7e2001)
+Missä tahansa Power BI -skenaariossa, joka edellyttää, että visualisoinnit eivät ole vuorovaikutteisia (esimerkiksi koontinäytön ruutu), `allowInteractions`-merkinnän arvo on epätosi (`false`). Muutoin (esimerkiksi raportissa), `allowInteractions`-merkinnän arvona on `true`.
+
+Jos haluat lisätietoja, tutustu [SampleBarChart-visualisointisäilöön](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/59a47935d8f5272ce145fe804193599ddb7e2001).
 
 ```typescript
    ...

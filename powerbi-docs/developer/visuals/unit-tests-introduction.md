@@ -1,6 +1,6 @@
 ---
-title: Yksikkötestin esittely
-description: Yksikkötestien kirjoittaminen Power BI:n visualisointien projektille
+title: Power BI:n visualisointiprojektien yksikkötestien esittely
+description: Tässä artikkelissa kerrotaan, miten voit kirjoittaa yksikkötestejä Power BI:n visualisointiprojekteille
 author: zBritva
 ms.author: v-ilgali
 manager: rkarlin
@@ -9,31 +9,29 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: tutorial
 ms.date: 06/18/2019
-ms.openlocfilehash: 4b16eaad9b541bf6e5d8df49ffda99d9bbd5bbf2
-ms.sourcegitcommit: 473d031c2ca1da8935f957d9faea642e3aef9839
+ms.openlocfilehash: f0040ef53fbbce8c7133e5f645bcbddb0bbfadea
+ms.sourcegitcommit: b602cdffa80653bc24123726d1d7f1afbd93d77c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68424535"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70236731"
 ---
-# <a name="tutorial-add-unit-tests-for-power-bi-visual-projects"></a>Opetusohjelma: yksikkötestien lisääminen Power BI:n visualisointien projekteille
+# <a name="tutorial-add-unit-tests-for-power-bi-visual-projects"></a>Opetusohjelma: Yksikkötestien lisääminen Power BI:n visualisointien projekteille
 
-Tässä opetusohjelmassa kerrotaan yksikkötestien kirjoittamisen perusteista Power BI:n visualisoinneille.
+Tässä artikkelissa kerrotaan Power BI:n visualisointien yksikkötestien kirjoittamisen perusteista, kuten seuraavista:
 
-Tässä opetusohjelmassa kerromme,
-
-* miten käytetään testisuoritinta karma.js ja testauskehystä jasmine.js
-* miten käytetään powerbi-visuals-utils-testutils-pakettia
-* miten erilaiset harjoitustestit auttavat yksinkertaistamaan yksikköjen testausta Power BI:n visualisoinneille.
+* Määritä Karma JavaScript -testisuorittimen testausympäristö, Jasmine.
+* Käytä powerbi-visuals-utils-testutils-pakettia.
+* Käytä harjoitustestejä Power BI:n visualisointien yksikkötestauksen helpottamiseen.
 
 ## <a name="prerequisites"></a>Edellytykset
 
-* Power BI:n visualisointien projekti käytössä
-* määritetty Node.JS-ympäristö
+* Asennettu Power BI:n visualisointiprojekti
+* Määritetty Node.js-ympäristö
 
-## <a name="install-and-configure-karmajs-and-jasmine"></a>Asenna ja määritä karma.js ja jasmine
+## <a name="install-and-configure-the-karma-javascript-test-runner-and-jasmine"></a>Karma JavaScript -testisuorittimen ja Jasminen asentaminen ja määrittäminen
 
-Lisää tarvittavat kirjastot package.json-kohteeseen `devDependencies`-osiossa:
+Lisää tarvittavat kirjastot *package.json*-tiedoston `devDependencies`-osaan:
 
 ```json
 "@babel/polyfill": "^7.2.5",
@@ -67,19 +65,19 @@ Lisää tarvittavat kirjastot package.json-kohteeseen `devDependencies`-osiossa:
 "webpack": "4.26.0"
 ```
 
-Saat lisätietoja paketista alla olevasta kuvauksesta.
+Lisätietoja paketista on sen kuvauksessa.
 
-Tallenna `package.json` ja suorita komentorivillä `package.json`-kohteen sijainnissa:
+Tallenna *package.json*-tiedosto ja suorita `package.json`-sijainnissa seuraava komento:
 
 ```cmd
 npm install
 ```
 
-Paketin hallinta asentaa kaikki uudet paketit, jotka on lisätty kohteeseen `package.json`
+Paketinhallinta asentaa kaikki uudet paketit, jotka on lisätty *package.json*-tiedostoon.
 
-Yksikkötestien suorittamista varten on määritettävä testisuoritin ja `webpack`-määritys. Määrityksen malli löytyy täältä
+Jos haluat suorittaa yksikkötestejä, määritä testisuoritin ja `webpack`-määritys.
 
-`test.webpack.config.js`-malli:
+Seuraava koodi on malli *test.webpack.config.js*-tiedostosta:
 
 ```typescript
 const path = require('path');
@@ -147,7 +145,7 @@ module.exports = {
 };
 ```
 
-`karma.conf.ts`-malli
+Seuraava koodi on malli *Karma.conf.ts*-tiedostosta:
 
 ```typescript
 "use strict";
@@ -252,31 +250,29 @@ module.exports = (config: Config) => {
 
 Voit muokata tätä määritystä tarvittaessa.
 
-Kohteen `karma.conf.js` asetuksia:
+Koodi *karma.conf.js*-tiedostossa sisältää seuraavan muuttujan:
 
-* `recursivePathToTests`-muuttuja etsii testien koodin paikan.
+* `recursivePathToTests`: Paikantaa testikoodin
 
-* `srcRecursivePath`-muuttuja etsii JS-tulostekoodin kääntämisen jälkeen.
+* `srcRecursivePath`: Paikantaa JavaScript-tuloskoodin kääntämisen jälkeen
 
-* `srcCssRecursivePath`-muuttuja etsii CSS-tulosteen sen jälkeen, kun se on kääntänyt vähemmän tiedostoa tyyleillä.
+* `srcCssRecursivePath`: Etsii CSS-tulosteen sen jälkeen, kun se on kääntänyt vähemmän tiedostoa tyyleillä
 
-* `srcOriginalRecursivePath`-muuttuja etsii visualisoinnin lähdekoodin.
+* `srcOriginalRecursivePath`: Etsii visualisoinnin lähdekoodin
 
-* `coverageFolder`-muuttuja määrittää paikan, johon kattavuusraportti luodaan.
+* `coverageFolder`: Määrittää, minne kattavuusraportti luodaan
 
-Määrityksen ominaisuuksia:
+Määritystiedosto sisältää seuraavat ominaisuudet:
 
-* `singleRun: true` – testaa suorituksen CI-järjestelmässä. Se riittää yhden kerran.
-Voit muuttaa arvoon `false` testien virheenkorjausta varten. Karma pitää selaimen käynnissä, ja sen avulla voit käyttää konsolia virheenkorjausta varten.
+* `singleRun: true`: Testit suoritetaan jatkuvan integraation (CI) järjestelmässä, tai ne voidaan suorittaa kerran. Voit muuttaa asetukseksi *false* (epätosi), jos haluat käyttää testien vianmääritystä. Karma pitää selaimen toiminnassa, jotta voit käyttää konsolia virheenkorjaukseen.
 
-* `files: [...]` – tässä matriisissa voit valita tiedostoja, jotka ladataan selaimeen.
-Yleensä ne ovat lähdetiedostoja, testitapauksia, kirjastoja (jasmine, testin apuohjelmat). Voit halutessasi lisätä luetteloon myös muita tiedostoja.
+* `files: [...]`: Tässä matriisissa voit määrittää selaimeen ladattavat tiedostot. Yleensä ne ovat lähdetiedostoja, testitapauksia tai kirjastoja (Jasmine, testiapuohjelmat). Voit lisätä tiedostoja luetteloon tarpeen mukaan.
 
-* `preprocessors` – tässä määritysosassa voit määrittää toimintoja, jotka suoritetaan ennen yksikkötestien suorittamista. Niitä voivat olla esimerkiksi typescriptin esikääntäminen JS-muotoon, lähdekarttatiedostojen valmisteleminen ja koodikattavuusraportin luominen. Voit poistaa kohdan `coverage` käytöstä testien virheenkorjausta varten. Kattavuus luo lisäkoodin testikattavuuden tarkistuskoodille, ja se vaikeuttaa virheenkorjaustestejä.
+* `preprocessors`: Tässä osassa määrität toiminnot, jotka suoritetaan ennen yksikkötestien suorittamista. Niitä voivat olla esimerkiksi typescriptin esikääntäminen JavaScript-muotoon, lähdekarttatiedostojen valmisteleminen ja koodikattavuusraportin luominen. Voit poistaa käytöstä kohteen `coverage`, kun teet vianmäärityksen testeillesi. Kattavuus luo lisäkoodin testikattavuuden tarkistuskoodille, mikä vaikeuttaa virheenkorjaustestejä.
 
-**Kaikkien määritysten kuvauksen löytyvät karma.js-[dokumentaatiosta](https://karma-runner.github.io/1.0/config/configuration-file.html)**
+Jos haluat lukea kuvaukset kaikista Karma-määrityksistä, siirry [Karma-määritystiedostosivulle](https://karma-runner.github.io/1.0/config/configuration-file.html).
 
-Voit helpottaa käyttöä lisäämällä testikomennon kohteeseen `scripts`:
+Voit halutessasi lisätä testikomennon `scripts`-kohteeseen:
 
 ```json
 {
@@ -292,15 +288,15 @@ Voit helpottaa käyttöä lisäämällä testikomennon kohteeseen `scripts`:
 }
 ```
 
-Olet siis valmis aloittamaan yksikkötestien kirjoittamisen.
+Olet nyt valmis aloittamaan yksikkötestien kirjoittamisen.
 
-## <a name="simple-unit-test-for-check-dom-element-of-the-visual"></a>Yksinkertainen yksikkötesti visualisoinnin DOM-elementin tarkistamiseen
+## <a name="check-the-dom-element-of-the-visual"></a>Visualisoinnin DOM-osan tarkistaminen
 
-Visualisoinnin testaamista varten on luotava visualisoinnin esiintymä.
+Visualisoinnin testaamista varten luo ensin visualisoinnin esiintymä.
 
-### <a name="creating-visual-instance-builder"></a>Visualisoinnin esiintymän muodostimen luominen
+### <a name="create-a-visual-instance-builder"></a>Visualisoinnin esiintymän muodostimen luominen
 
-Lisää `visualBuilder.ts`-tiedosto `test`-kansioon käyttäen seuraavaa koodia:
+Lisää *visualBuilder.ts*-tiedoston *testi*kansioon käyttämällä seuraavaa koodia:
 
 ```typescript
 import {
@@ -329,13 +325,13 @@ export class BarChartBuilder extends VisualBuilderBase<VisualClass> {
 }
 ```
 
-Visualisoinnin esiintymän luonnissa on käytettävissä `build`-menetelmä. `mainElement` on hakumenetelmä, joka palauttaa DOM-pääelementin esiintymän visualisointiin. Getter-elementti on valinnainen, mutta se tekee yksikkötestin kirjoittamisesta helpompaa.
+Visualisoinnin esiintymän luonnissa on käytettävissä `build`-menetelmä. `mainElement` on hakumenetelmä, joka palauttaa DOM (Document Object Model) -pääelementin esiintymän visualisointiin. Getter-elementti on valinnainen, mutta se tekee yksikkötestin kirjoittamisesta helpompaa.
 
-Käytössämme on siis visualisoinnin esiintymän muodostin. Kirjoitetaanpa sitten testitapaus. Testitapauksen avulla tarkistetaan luodut SVG-elementit, kun visualisointi näytetään.
+Sinulla on nyt koontiversio visualisointisi esiintymästä. Kirjoitetaanpa sitten testitapaus. Testitapaus tarkistaa SVG-elementit, jotka luodaan, kun visualisointi näytetään.
 
-### <a name="creating-typescript-file-to-write-test-cases"></a>Typescript-tiedoston luominen testitapausten kirjoittamista varten
+### <a name="create-a-typescript-file-to-write-test-cases"></a>Typescript-tiedoston luominen testitapausten kirjoittamista varten
 
-Lisää testitapauksia varten `visualTest.ts`-tiedosto käyttäen seuraavia koodeja:
+Lisää testitapauksia varten *visualTest.ts*-tiedosto käyttämällä seuraavaa koodia:
 
 ```typescript
 import powerbi from "powerbi-visuals-api";
@@ -362,40 +358,36 @@ describe("BarChart", () => {
 });
 ```
 
-Useita menetelmiä kutsutaan.
+Useita menetelmiä kutsutaan:
 
-* [`describe`](https://jasmine.github.io/api/2.6/global.html#describe)-menetelmä kuvaa testitapausta. Jasmine-kehyksen yhteydessä kutsutaan usein ominaisuuspaketiksi tai -ryhmäksi.
+* [`describe`](https://jasmine.github.io/api/2.6/global.html#describe): Kuvailee testitapauksen. Jasmine-ympäristön yhteydessä se kuvailee usein ohjelmistopaketin tai ominaisuusryhmän.
 
-* `beforeEach`-menetelmä kutsutaan ennen kutakin `it`-menetelmän kutsua, joka on määritetty [`describe`](https://jasmine.github.io/api/2.6/global.html#beforeEach)-menetelmässä.
+* `beforeEach`: Sitä kutsutaan aina, ennen kuin kutsutaan `it`-menetelmää, joka on määritetty [ `describe`](https://jasmine.github.io/api/2.6/global.html#beforeEach)-menetelmässä.
 
-* `it` määrittää yksittäisen ominaisuuden. [`it`](https://jasmine.github.io/api/2.6/global.html#it)-menetelmän tulee sisältää vähintään yksi `expectations`.
+* [`it`](https://jasmine.github.io/api/2.6/global.html#it): Määrittää yhden ominaisuuden. `it`-menetelmän tulee sisältää vähintään yksi `expectations`.
 
-* [`expect`](https://jasmine.github.io/api/2.6/global.html#expect) – menetelmä luo odotukset ominaisuudelle. Menetelmä onnistuu, jos kaikki odotukset läpäisevät ilman virheitä.
+* [`expect`](https://jasmine.github.io/api/2.6/global.html#expect): Luo odotuksen ominaisuudelle. Menetelmä onnistuu, jos kaikki odotukset läpäisevät ilman virheitä.
 
-* `toBeInDOM` – se on yksi matcher-menetelmistä. Tietoja on olemassa -matchereista on jasmine-kehyksen [dokumentaatiossa](https://jasmine.github.io/api/2.6/matchers.html).
+* `toBeInDOM`: Yksi *matcher*-menetelmistä. Lisätietoja matchereista on sivulla [Jasmine Namespace: matchers](https://jasmine.github.io/api/2.6/matchers.html).
 
-**Lue lisää jasmine-kehyksestä virallisesta [dokumentaatiosta](https://jasmine.github.io/).**
-
-Sen jälkeen voit suorittaa yksikkötestin kirjoittamalla komennon komentorivityökaluun.
-
-Tämä testi tarkistaa, että visualisointien SVG-pääelementti luodaan.
+Lisätietoja Jasminesta on [Jasmine-ympäristön dokumentaatiosivulla](https://jasmine.github.io/).
 
 ### <a name="launch-unit-tests"></a>Yksikkötestien käynnistys
 
-Voit suorittaa yksikkötestin kirjoittamalla tämän komennon komentorivityökaluun.
+Tämä testi tarkistaa, että visualisointien SVG-pääelementti luodaan. Voit suorittaa yksikkötestin kirjoittamalla seuraavan komennon komentorivityökaluun:
 
 ```cmd
 npm run test
 ```
 
-`karma.js` käynnistää Chrome-selaimen ja suorittaa testitapauksen.
+`karma.js` suorittaa testitapauksen Chrome-selaimessa.
 
-![KarmaJS käynnistettynä Chromessa](./media/karmajs-chrome.png)
+![Karma JavaScript avattuna Chromeen](./media/karmajs-chrome.png)
 
 > [!NOTE]
 > Google Chrome on asennettava paikallisesti.
 
-Komentoriviltä saat seuraavan tulosteen:
+Komentorivi-ikkunasta saat seuraavan tulosteen:
 
 ```cmd
 > karma start
@@ -418,7 +410,7 @@ Lines        : 20.85% ( 44/211 )
 
 ### <a name="how-to-add-static-data-for-unit-tests"></a>Staattisten tietojen lisääminen yksikkötesteihin
 
-Luo `visualData.ts`-tiedosto `test`-kansioon. Seuraavilla koodeilla:
+Luo *visualData.ts*-tiedosto *testi*kansioon käyttämällä seuraavaa koodia:
 
 ```typescript
 import powerbi from "powerbi-visuals-api";
@@ -462,13 +454,13 @@ export class SampleBarChartDataBuilder extends TestDataViewBuilder {
 
 Kun sijoitat tietoja tietokenttäsäilöihin, Power BI tuottaa tietoihin perustuvan luokittaisen `dataview`-objektin.
 
-![Arkistoidut säilöt](./media/fields-buckets.png)
+![Tietokenttäsäilöt](./media/fields-buckets.png)
 
-Yksikkötesteissä sinulla ei ole Power BI:n keskeisiä funktioita sen toistamiseksi. Sinun on kuitenkin yhdistettävä staattiset tietosi luokittaiseksi `dataview`-kohteeksi. `TestDataViewBuilder`-luokka auttaa siinä.
+Yksikkötesteissä sinulla ei ole Power BI:n keskeisiä funktioita tietojen toistamiseksi. Sinun on kuitenkin yhdistettävä staattiset tietosi luokittaiseksi `dataview`-kohteeksi. Voit helpottaa sen yhdistämistä `TestDataViewBuilder`-luokan avulla.
 
-[Lue lisätietoja DataViewMappings-määrityksistä](https://github.com/Microsoft/PowerBI-visuals/blob/master/Capabilities/DataViewMappings.md)
+Lisätietoja tietonäkymän yhdistämismäärityksestä on artikkelissa [Tietonäkymän yhdistämismääritykset](https://github.com/Microsoft/PowerBI-visuals/blob/master/Capabilities/DataViewMappings.md).
 
-`getDataView`-menetelmässä kutsut `createCategoricalDataViewBuilder`-menetelmän tietojesi kanssa.
+`getDataView`-menetelmässä kutsut `createCategoricalDataViewBuilder`-menetelmää tietojesi kanssa.
 
 `sampleBarChart`-visualisoinnin [capabilities.json](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/blob/master/capabilities.json#L2)-tiedostossa käytettävissä on dataRoles- ja dataViewMapping-objektit:
 
@@ -549,13 +541,13 @@ Jotta voit luoda saman yhdistämismäärityksen, sinun on määritettävä seura
 ], columnNames)
 ```
 
-Jossa `this.valuesCategory` luokkamatriisi.
+Jossa `this.valuesCategory` on luokkamatriisi:
 
 ```ts
 public valuesCategory: string[] = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
 ```
 
-Ja `this.valuesMeasure` mittamatriisi kullekin luokalle. Esimerkki:
+`this.valuesMeasure` on mittamatriisi jokaiselle luokalle:
 
 ```ts
 public valuesMeasure: number[] = [742731.43, 162066.43, 283085.78, 300263.49, 376074.57, 814724.34, 570921.34];
@@ -563,7 +555,7 @@ public valuesMeasure: number[] = [742731.43, 162066.43, 283085.78, 300263.49, 37
 
 Nyt voit käyttää `SampleBarChartDataBuilder`-luokkaa yksikkötestissäsi.
 
-`ValueType`-luokka määritetty `powerbi-visuals-utils-testutils`-paketissa. Ja `createCategoricalDataViewBuilder`-menetelmä edellyttää `lodash`-kirjastoa.
+`ValueType`-luokka määritetään powerbi-visuals-utils-testutils-paketissa. `createCategoricalDataViewBuilder`-menetelmä edellyttää `lodash`-kirjastoa.
 
 Lisää nämä paketit riippuvuuksiin.
 
@@ -582,7 +574,7 @@ npm install
 
 asentaaksesi `lodash-es`-kirjaston.
 
-Nyt voit suorittaa yksikkötestin uudelleen. Sinun pitää saada tämä tuloste
+Nyt voit suorittaa yksikkötestin uudelleen. Sinun pitää saada seuraava tuloste:
 
 ```cmd
 > karma start
@@ -603,27 +595,25 @@ Lines        : 52.83% ( 112/212 )
 ================================================================================
 ```
 
-Lisäksi sinun on nähtävä käynnistetty Chrome-selain visualisointisi kanssa.
+Visualisointisi avautuu Chrome-selaimessa seuraavasti:
 
 ![UT-käynnistykset Chromessa](./media/karmajs-chrome-ut-runned.png)
 
-Huomio kattavuuden yhteenveto on lisääntynyt. Avaa `coverage\index.html` saadaksesi lisätietoja nykyisestä koodin kattavuudesta
+Yhteenveto osoittaa, että kattavuus on kasvanut. Jos haluat lisätietoja nykyisen koodin kattavuudesta, avaa `coverage\index.html`.
 
 ![UT-kattavuuden indeksi](./media/code-coverage-index.png)
 
-Tai `src`-kansion vaikutusalueella
+Voit myös tarkastella `src`-kansion kattavuutta:
 
 ![Src-kansion kattavuus](./media/code-coverage-src-folder.png)
 
-Voit tarkastella lähdekoodia tiedoston vaikutusalueella. `Coverage`-apuohjelmat merkitsevät rivin taustan punaiseksi, jos koodia ei suoritettu yksikkötestien suorittamisen aikana.
+Voit tarkastella lähdekoodia tiedoston vaikutusalueella. `Coverage`-apuohjelmat korostaisivat rivin punaisella, jos tiettyä koodia ei suoriteta yksikkötestien aikana.
 
-![Visual.ts-tiedoston koodin kattavuus](./media/code-coverage-visual-src.png)
+![Visual. ts-tiedoston koodin kattavuus](./media/code-coverage-visual-src.png)
 
 > [!IMPORTANT]
-> Koodin kattavuus ei kuitenkaan tarkoita, että käytettävissäsi on hyvä toimintojen kattavuus visualisoinnissa. Yksi yksinkertainen yksikkötesti kattoi yli 96 prosenttia kohteessa `src\visual.ts`.
+> Koodin kattavuus ei tarkoita, että käytettävissäsi olisi hyvä toimintojen kattavuus visualisoinnissa. Yksi yksinkertainen yksikkötesti kattoi yli 96 prosenttia kohteessa `src\visual.ts`.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
-Kun visualisointi on valmis, voit lähettää visualisoinnin julkaisuun.
-
-[Lue lisää visualisointien julkaisemisesta Appsourceen](../office-store.md)
+Kun visualisointi on valmis, voit lähettää sen julkaistavaksi. Lisätietoja tästä on artikkelissa [Mukautettujen visualisointien julkaiseminen AppSourceen](../office-store.md).

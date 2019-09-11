@@ -1,6 +1,6 @@
 ---
-title: URL:n käynnistäminen
-description: Power BI:n visualisoinnit voivat avata URL-osoitteen uudessa välilehdessä
+title: URL-käynnistysosoitteen luominen
+description: Tässä artikkelissa kuvataan, miten voit avata URL-osoitteen uudessa väli lehdessä Power BI:n visualisointien avulla.
 author: Guy-Moses
 ms.author: guymos
 manager: rkarlin
@@ -9,16 +9,16 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: 1a7002c3b45f341c0cbc0db683bc4f8a113e21f9
-ms.sourcegitcommit: 473d031c2ca1da8935f957d9faea642e3aef9839
+ms.openlocfilehash: 3ef6be9383b606ce865b4bcd3ccda397e471301b
+ms.sourcegitcommit: b602cdffa80653bc24123726d1d7f1afbd93d77c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68424857"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70236668"
 ---
-# <a name="launch-url"></a>URL:n käynnistäminen
+# <a name="create-a-launch-url"></a>URL-käynnistysosoitteen luominen
 
-URL:n käynnistäminen sallii uuden selainvälilehden (tai ikkunan) avaamisen siirtämällä todellisen työn Power BI:hin.
+Luomalla URL-käynnistysosoitteen voit avata uuden selainvälilehden (tai ikkunan) siirtämällä todellisen työn Power BI:hin.
 
 ## <a name="sample"></a>Malli
 
@@ -36,18 +36,21 @@ this.host.launchUrl('http://some.link.net');
 
 ## <a name="restrictions"></a>Rajoitukset
 
-* Käytä vain absoluuttisia polkuja, älä suhteellisia. `http://some.link.net/subfolder/page.html` sopii hyvin, polkua `/page.html` ei avata.
-* Vain `http`- ja `https`-protokollia tuetaan tällä hetkellä. Vältä protokollia `ftp`, `mailto` ja niin edelleen.
+* Käytä vain absoluuttisia polkuja, älä suhteellisia. Käytä esimerkiksi absoluuttista polkua, kuten `http://some.link.net/subfolder/page.html`. Suhteellista polkua `/page.html`ei avata.
+
+* Tällä hetkellä vain *HTTP*- ja *HTTPS*-protokollat ovat tuettuja. Vältä esimerkiksi protokollia *FTP* ja *mailto*.
 
 ## <a name="best-practices"></a>Parhaat käytännöt
 
-1. Useimmissa tapauksissa linkki on parasta avata vain silloin, kun käyttäjä nimenomaan niin haluaa. Varmista, että käyttäjän on helppo ymmärtää, että linkin tai painikkeen napsauttaminen aiheuttaa uuden välilehden avaamisen. `launchUrl()`-kutsun käynnistäminen ilman käyttäjän toimia tai muun toiminnon sivuvaikutuksena voi olla käyttäjälle hämmentävää tai turhauttavaa.
-2. Jos linkki ei ole ratkaiseva visualisoinnin moitteettoman toiminnan kannalta, on suositeltavaa antaa raportin tekijälle tapa poistaa linkki käytöstä ja piilottaa se. Tämä on erityisen tärkeää Power BI:n erityiskäyttötavoissa, kuten raportin upottamisessa kolmannen osapuolen sovellukseen tai raportin julkaisemisessa verkossa.
-3. Vältä käynnistämästä `launchUrl()`-kutsua silmukan sisältä, visualisoinnin `update`-toiminnosta tai mistä tahansa muusta usein toistuvasta koodista.
+* Useimmiten linkki on parasta avata vain silloin, kun käyttäjä nimenomaan niin haluaa. Varmista, että käyttäjän on helppo ymmärtää, että linkin tai painikkeen napsauttaminen aiheuttaa uuden välilehden avaamisen. `launchUrl()`-kutsun käynnistäminen ilman käyttäjän toimia tai muun toiminnon sivuvaikutuksena voi olla käyttäjälle hämmentävää tai turhauttavaa.
 
-## <a name="step-by-step-example"></a>Esimerkki askel askeleelta
+* Jos linkki ei ole välttämätön visualisoinnin moitteettoman toiminnan kannalta, on suositeltavaa antaa raportin tekijälle tapa poistaa linkki käytöstä ja piilottaa se. Tämä suositus on erityisen tärkeä Power BI:n erityiskäyttötavoissa, kuten raportin upottamisessa kolmannen osapuolen sovellukseen tai raportin julkaisemisessa verkossa.
 
-### <a name="adding-a-link-launching-element"></a>Linkin käynnistävän elementin lisääminen
+* Vältä käynnistämästä `launchUrl()`-kutsua silmukan sisältä, visualisoinnin `update`-toiminnosta tai mistä tahansa muusta usein toistuvasta koodista.
+
+## <a name="a-step-by-step-example"></a>Vaiheittainen esimerkki
+
+### <a name="add-a-link-launching-element"></a>Linkin käynnistävän elementin lisääminen
 
 Seuraavat rivit lisättiin visualisoinnin `constructor`-toimintoon:
 
@@ -71,7 +74,7 @@ private createHelpLinkElement(): Element {
 };
 ```
 
-Lopuksi visual.less-tiedoston merkintä määrittää linkkielementin tyylin:
+Lopuksi *visual.less*-tiedoston merkintä määrittää linkkielementin tyylin:
 
 ```less
 .helpLink {
@@ -103,10 +106,11 @@ Lopuksi visual.less-tiedoston merkintä määrittää linkkielementin tyylin:
 }
 ```
 
-### <a name="adding-a-toggling-mechanism"></a>Vaihtomekanismin lisääminen
+### <a name="add-a-toggling-mechanism"></a>Vaihtomekanismin lisääminen
 
-Tämä edellyttää staattisen objektin lisäämistä (katso [opetus ohjelma staattisista objekteista](https://microsoft.github.io/PowerBI-visuals/docs/concepts/objects-and-properties)), jotta raportin tekijä voi näyttää tai piilottaa linkkielementin (elementti on oletusarvoisesti piilotettu).
-Staattinen `showHelpLink`-totuusarvo-objekti lisättiin `capabilities.json`-objektimerkintään:
+Jos haluat lisätä vaihtomekanismin, sinun on lisättävä staattinen objekti, jotta raportin tekijä voi vaihdella linkkielementin näkyvyyttä. (Oletusasetus on *Piilotettu*.) Lisätietoja on [staattisen objektin opetusohjelmassa](https://microsoft.github.io/PowerBI-visuals/docs/concepts/objects-and-properties).
+
+Staattinen totuusarvo-objekti `showHelpLink` lisättiin *capabilities.json*-tiedoston objektimerkintään seuraavassa koodissa esitetyllä tavalla:
 
 ```typescript
 "objects": {
@@ -136,4 +140,4 @@ if (settings.generalView.showHelpLink) {
 }
 ```
 
-Elementin näyttämistä hallitseva `hidden`-luokka on määritetty visual.less-tiedostossa.
+Elementin näyttämistä hallitseva *hidden*-luokka on määritetty *visual.less*-tiedostossa.

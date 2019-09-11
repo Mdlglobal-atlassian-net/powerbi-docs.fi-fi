@@ -7,37 +7,75 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/18/2018
+ms.date: 08/16/2019
 ms.author: otarb
 LocalizationGroup: Connect to data
-ms.openlocfilehash: fcfbf4fb7be34739364fba176b28ea42934d5562
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 25970d09feac02a0b45e83ab1b348e800efc022d
+ms.sourcegitcommit: 09ee1b4697aad84d8f4c9421015d7e4dbd3cf25f
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61283895"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "70302940"
 ---
-# <a name="run-python-scripts-in-power-bi-desktop"></a>Suorita Python-komentosarjoja Power BI Desktopissa
+# <a name="run-python-scripts-in-power-bi-desktop"></a>Python-komentosarjojen suorittaminen Power BI Desktopissa
+
 Voit suorittaa Python-komentosarjoja suoraan **Power BI Desktopissa** ja tuoda tietojoukot Power BI Desktopin tietomallin.
 
 ## <a name="install-python"></a>Pythonin asentaminen
-Jos haluat suorittaa Python-komentosarjoja Power BI Desktopissa, sinun on asennettava **Python** paikalliseen tietokoneeseen. Voit ladata ja asentaa **Pythonin** maksutta useista sijainneista, mukaan lukien [Pythonin viralliselta lataussivulta](https://www.python.org/) ja [Anacondasta](https://anaconda.org/anaconda/python/). Nykyinen Python-komentosarjan versio Power BI Desktopissa tukee Unicode-merkkejä sekä välilyöntejä (tyhjiä merkkejä) asennuspolulla.
 
-### <a name="install-required-python-packages"></a>Asenna tarvittavat Python-paketit
-Power BI:n Python-integrointi edellyttää kahden Python-paketin (Pandas ja Matplotlib) asentamista.  Asenna seuraavat kaksi pakettia pip-komentorivityökalun avulla,
+Jos haluat suorittaa Python-komentosarjoja Power BI Desktopissa, sinun on asennettava **Python** paikalliseen tietokoneeseen. Voit ladata **Pythonin** [viralliselta Python-lataussivulta](https://www.python.org/). Nykyinen Python-komentosarjaversio tukee Unicode-merkkejä ja välilyöntejä asennuspolussa.
 
-```
+### <a name="install-required-python-packages"></a>Tarvittavien Python-pakettien asentaminen
+
+Power BI:n Python-integrointi edellyttää kahden Python-paketin asentamista:
+
+- [Pandas](https://pandas.pydata.org/) – Ohjelmistokirjasto tietojen käsittelyä ja analysointia varten. Se tarjoaa tietorakenteita ja toimintoja numeeristen taulukoiden ja aikasarjojen muokkaamiseen. Tuotujen tietojen on oltava [pandas-tietokehyksessä](https://www.tutorialspoint.com/python_pandas/python_pandas_dataframe.htm). Tietokehys on kaksiulotteinen tietorakenne. Tiedot esimerkiksi tasataan taulukkomuotoisesti riveihin ja sarakkeisiin.
+- [Matplotlib](https://matplotlib.org/) – Pythonin piirtokirjasto ja sen numeerinen matematiikkalaajennus [NumPy](https://www.numpy.org/). Se tarjoaa oliopohjaisen ohjelmointirajapinnan kaavioiden upottamiseen sovelluksiin yleiskäyttöisten GUI-työkalupakettien avulla (kutenTkinter, wxPython, Qt ja GTK+).
+
+1. Asenna kaksi pakettia konsolissa tai liittymässä käyttämällä [pip](https://pip.pypa.io/en/stable/)-komentorivityökalua. PIP-työkalu sisältyy uusimpiin Python-versioihin.
+
+```CMD
 pip install pandas
 pip install matplotlib
 ```
 
+## <a name="enable-python-scripting"></a>Python-komentosarjojen ottaminen käyttöön
+
+Ota Python-komentosarjat käyttöön seuraavasti:
+
+1. Valitse Power BI Desktopissa **Tiedosto** > **Asetukset ja vaihtoehdot** > **Asetukset** > **Python-komentosarjat**. Python-komentosarjan asetukset -sivu tulee näkyviin.
+
+   ![](media/desktop-python-scripts/python-scripts-7.png)
+
+1. Määritä tarvittaessa paikallinen Python-asennuspolku **Havaitut Python-kotihakemistot:** -tekstiruutuun. 
+
+   Edellä olevassa kuvassa Python-asennuksen paikallinen polku on **C:\Python**. Varmista, että polku vastaa paikallista Python-asennusta, jota haluat Power BI Desktopin käyttävän.
+
+1. Valitse **OK**.
+
+Kun olet määrittänyt Python-asennuksesi, olet valmis aloittamaan Python-komentosarjojen suorittamisen Power BI Desktopissa.
+
 ## <a name="run-python-scripts"></a>Suorita Python-komentosarjoja
-Power BI Desktopin ensimmäisinä vaiheina voit suorittaa Python-komentosarjoja ja luoda tietomallin, josta voit luoda raportteja ja jakaa niitä Power BI -palvelussa.
+
+Voit suorittaa Python-komentosarjat ja luoda tietomallin helposti muutamassa vaiheessa. Tästä mallista voit luoda raportteja ja jakaa niitä Power BI -palvelussa.
 
 ### <a name="prepare-a-python-script"></a>Valmistele Python-komentosarja
-Python-komentosarjan suorittamiseksi Power BI Desktopissa on luotava komentosarja paikalliseen Python-kehitysympäristöön ja varmistettava, että se suoritetaan onnistuneesti.
+Luo ensin komentosarja paikallisessa Python-kehitysympäristössä ja varmista, että se suoritetaan onnistuneesti. Tässä on esimerkiksi yksinkertainen Python-komentosarja, joka tuo pandoja ja käyttää tietokehystä:
 
-Jos haluat suorittaa komentosarjan Power BI Desktopissa, varmista, että komentosarjan suorittaminen onnistuu uudessa ja muokkaamattomassa työtilassa. Tämä tarkoittaa, että kaikki paketit ja niiden riippuvuudet on ladattava ja suoritettava eksplisiittisesti.
+```python
+import pandas as pd
+data = [['Alex',10],['Bob',12],['Clarke',13]]
+df = pd.DataFrame(data,columns=['Name','Age'],dtype=float)
+print (df)
+```
+Kun se suoritetaan, sen tuloste on seuraava:
+
+```python
+     Name   Age
+0    Alex  10.0
+1     Bob  12.0
+2  Clarke  13.0
+```
 
 Kun valmistellaan ja suoritetaan Python-komentosarjaa Power BI Desktopissa, myös muutamia rajoituksia on otettava huomioon:
 
@@ -45,28 +83,38 @@ Kun valmistellaan ja suoritetaan Python-komentosarjaa Power BI Desktopissa, myö
 * Kaikki Python-komentosarjat, joita suoritetaan yli 30 minuuttia, aikakatkaistaan
 * Python-komentosarjan interaktiiviset kutsut kuten odottaminen käyttäjän syötettä pysäyttää komentosarjan suorittamisen
 * Työhakemistoa määritettäessä Python-komentosarjan sisällä *pitää* koko polku määrittää työhakemistoon suhteellisen polun sijaan
-* Sisäkkäisiä taulukoita (taulukko taulukoista) ei tueta tällä hetkellä 
+* Sisäkkäisiä taulukoita ei tueta tällä hetkellä 
 
 ### <a name="run-your-python-script-and-import-data"></a>Python-komentosarjan suorittaminen ja tietojen tuonti
-1. Power BI Desktopissa Python-komentosarjan dataliitin löytyy kohdasta **Nouda tiedot**. Voit suorittaa Python-komentosarjan valitsemalla **Nouda tiedot &gt; Lisää...** , ja valitsemalla sitten **Muu &gt; Python-komentosarja** seuraavassa kuvassa esitetyllä tavalla:
+
+Voit suorittaa Python-komentosarjasi Power BI Desktopissa seuraavasti:
+
+1. Valitse Aloitus-valintanauhasta **Nouda tiedot** > **Lisää...** .
    
+1. Valitse **Muu** > **Python-komentosarja** seuraavassa kuvassa esitetyllä tavalla:
+
    ![](media/desktop-python-scripts/python-scripts-1.png)
-2. Jos Python on asennettu paikalliseen tietokoneeseen, uusin asennettu versio valitaan Python-moduuliksi. Kopioi komentosarja ikkunaan ja valitse **OK**.
    
-   ![](media/desktop-python-scripts/python-scripts-2.png)
-3. Jos Pythonia ei ole asennettu, sitä ei tunnistetta tai jos paikallisessa tietokoneessasi on useita asennuksia, näkyviin tulee varoitus.
-   
-   ![](media/desktop-python-scripts/python-scripts-3.png)
-   
-   Python-asennusasetukset sijaitsevat keskitetysti Python-komentosarjat-osassa Asetukset-valintaikkunassa. Määritä Python-asennuksen asetukset valitsemalla **Tiedosto > Asetukset ja vaihtoehdot** ja valitse sitten **Asetukset > Python-komentosarja**. Jos käytettävissä on useita Python-asennuskertoja, esiin tulee pudotusvalikko, josta voit valita, mitä asennusta käyttää. Voit myös valita **Muu** ja antaa mukautetun polun.
-   
-   ![](media/desktop-python-scripts/python-scripts-4.png)
-4. Valitse **OK** Python-komentosarjan suorittamiseen. Kun komentosarjan suorittaminen onnistuu, voit sitten valita saatavat tiedot kehykset, voit lisätä Power BI-malliin.
+1. Valitse **Muodosta yhteys**. Paikalliseen tietokoneeseen asennettu uusin Python-versio valitaan Python-moduuliksi. Kopioi komentosarjasi näyttöön tulevaan Python-komentosarja-valintaikkunaan. Tähän kirjoitetaan aiemmin näytetty yksinkertainen Python-komentosarja.
+
+   ![](media/desktop-python-scripts/python-scripts-6.png)
+
+1. Valitse **OK**. Jos komentosarjan suorittaminen onnistuu, näyttöön tulee Siirtymistoiminto-valinta ikkuna ja voit ladata tiedot ja käyttää niitä. Valitse esimerkissä **df**-valintaruutu kuvan mukaisesti ja valitse sitten**Lataa**.
+
+   ![](media/desktop-python-scripts/python-scripts-5.png) 
+
+### <a name="troubleshooting"></a>Vianmääritys
+
+Jos Pythonia ei ole asennettu tai tunnistettu, näyttöön tulee varoitus. Näyttöön tulee varoitus myös, jos sinulla on useita paikallisia koneasennuksia. Lue uudelleen kohdat Pythonin asentaminen ja Python-komentosarjojen ottaminen käyttöön.
+
+![](media/desktop-python-scripts/python-scripts-3.png)
 
 ### <a name="refresh"></a>Päivitä
-Voit päivittää Power BI Desktopin Python-komentosarjan. Kun päivität Python-komentosarjaa, Power BI Desktop suorittaa Python-komentosarjan uudelleen Power BI Desktop -ympäristössä.
+
+Voit päivittää Power BI Desktopin Python-komentosarjan. Kun haluat päivittää, siirry **Aloitus**-valintanauhaan ja valitse **Päivitä**. Kun päivität Python-komentosarjan, Power BI Desktop suorittaa Python-komentosarjan uudelleen.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
+
 Tutustu seuraaviin lisätietoihin, jotka koskevat Pythonia Power BI:ssä.
 
 * [Python-visualisointien luominen Power BI Desktopissa](desktop-python-visuals.md)

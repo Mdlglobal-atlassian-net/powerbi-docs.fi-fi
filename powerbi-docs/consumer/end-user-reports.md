@@ -1,30 +1,29 @@
 ---
-title: Raportin tarkasteleminen Power BI:ssä
-description: Raportit Power BI:ssä
+title: Raportit Power BI -palvelussa
+description: Raportit Power BI -palvelussa, kuluttajille
 author: mihart
 manager: kvivek
 ms.reviewer: ''
-ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 06/24/2019
+ms.date: 08/24/2019
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 9a844ff813435328df63240aa46aff3430117f6e
-ms.sourcegitcommit: e67bacbfc5638ee97e3d2e0e7f5bd2d9aac78f9c
+ms.openlocfilehash: c13398ff08722c54a9f0c373a1c103e4d684c9bb
+ms.sourcegitcommit: c799941c8169cd5b6b6d63f609db66ab2af93891
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67532160"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70391390"
 ---
 # <a name="reports-in-power-bi"></a>Raportit Power BI:ssä
 
 Power BI -raportti on usean perspektiivin tietojoukkonäkymä, jonka visualisoinnit edustavat eri havaintoja ja merkityksellisiä tietoja tietojoukosta.  Raportilla voi olla yksittäinen visualisointi tai sivuja, jotka ovat täynnä visualisointeja. Saatat olla raporttien *suunnittelija*, mutta tämä riippuu työroolistasi. Saatat myös olla raporttien *kuluttaja* eli käyttäjä.
 
-![Näyttökuvassa on raporttisivu.](./media/end-user-reports/power-bi-report.png)
+![Näyttökuvassa on raporttisivu.](./media/end-user-reports/power-bi-reports.png)
 
-Tässä raportissa on neljä sivua (tai välilehteä). Tarkastelet tällä hetkellä **Asenne**-sivua. Tällä sivulla on viisi erilaista visualisointia ja sivun otsikko.
+Tässä raportissa on kuusi sivua (tai välilehteä). Tarkastelet tällä hetkellä **Asenne**-sivua. Tällä sivulla on viisi erilaista visualisointia ja sivun otsikko. *Suodattimet*-ruudussa näkyy yksi suodatin, jota käytetään kaikkiin raporttisivuihin. Jos haluat kutistaa Suodattimet-ruudun, valitse nuoli ( **>** ).
 
 Jos olet uusi Power BI:n käyttäjä, saat hyvän pohjan sen käyttöön lukemalla [Peruskäsitteet Power BI -palvelun kuluttajille](end-user-basic-concepts.md) -ohjeartikkelin. Raportteja voi lukea, jakaa ja merkitä mobiililaitteilla. Saat lisätietoja ohjeartikkelista [Raporttien tutkiminen Power BI -mobiilisovelluksissa](mobile/mobile-reports-in-the-mobile-apps.md).
 
@@ -42,6 +41,8 @@ Kun käytät sisältöä suodattamalla, osittamalla, tilaamalla ja viemällä, e
 ### <a name="save-your-changes-or-revert-to-the-default-settings"></a>Muutosten tallentaminen tai oletusasetusten palauttaminen
 
 Tämä ei kuitenkaan tarkoita sitä, ettetkö voi tallentaa muutoksiasi. Se on tietysti mahdollista, mutta nämä muutokset kuitenkin koskevat vain sinun näkymääsi sisällöstä. Jos haluat palata raportin alkuperäiseen oletusnäkymään, valitse **Palauta oletukset**.
+
+![Näyttökuva Palauta oletusasetukseen -kuvakkeesta.](./media/end-user-reports/power-bi-reset.png)
 
 ## <a name="dashboards-versus-reports"></a>Koontinäytöt vs. raportit
 
@@ -76,6 +77,5 @@ Tai voit olla *kuluttaja*, joka saa raportteja muilta. Haluat oppia ymmärtämä
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
-[Mikä on Power BI?](../power-bi-overview.md)
-
-[Peruskäsitteet Power BI -palvelun kuluttajille](end-user-basic-concepts.md)
+[Raportin avaaminen ja tarkasteleminen](end-user-report-open.md)    
+[Raporttinäkymät Power BI -palvelussa](end-user-dashboards.md)

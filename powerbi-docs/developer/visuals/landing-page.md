@@ -1,6 +1,6 @@
 ---
-title: Aloitussivu
-description: Aloitussivun lisääminen Power BI:n visualisointeihin
+title: Aloitussivun lisääminen Power BI:n visualisointeihin
+description: Tässä artikkelissa kuvataan aloitussivun lisääminen Power BI:n visualisointeihin.
 author: sranins
 ms.author: rasala
 manager: rkarlin
@@ -9,16 +9,16 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: 44cc9314b31803c97d3203d4aab846685d8f88fa
-ms.sourcegitcommit: 473d031c2ca1da8935f957d9faea642e3aef9839
+ms.openlocfilehash: d15c52134fe3c8638625e50a1374867a4abed3c1
+ms.sourcegitcommit: b602cdffa80653bc24123726d1d7f1afbd93d77c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68424880"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70236697"
 ---
-# <a name="landing-page"></a>Aloitussivu
+# <a name="add-a-landing-page-to-your-power-bi-visuals"></a>Aloitussivun lisääminen Power BI:n visualisointeihin
 
-Ohjelmointirajapinta 2.3.0:n avulla voit lisätä visualisointiin aloitussivun: lisää `supportsLandingPage` ominaisuuksiin ja määritä sen arvoksi Tosi, jolloin visualisointi alustetaan ja päivitetään jo ennen tietojen lisäämistä siihen (eli siinä ei enää ole vesileimaa). Näin voit suunnitella oman aloitussivun, joka näytetään visualisoinnissa, kunhan siinä ei ole tietoja.
+Ohjelmointirajapinnan versiossa 2.3.0 voit lisätä aloitussivun Power BI:n visualisointeihin. Kun haluat tehdä sen, lisää ominaisuuksiin `supportsLandingPage` ja määritä sen arvoksi tosi (true). Tämä toiminto alustaa visualisoinnin ja päivittää sen, ennen kuin lisäät siihen tietoja. Koska visualisointi ei enää näytä vesileimaa, voit näyttää visualisoinnissa itse suunnittelemasi aloitussivun, kunhan sillä ei ole tietoja.
 
 ```typescript
 export class BarChart implements IVisual {
@@ -57,6 +57,6 @@ export class BarChart implements IVisual {
     }
 ```
 
-Malli
+Seuraavassa kuvassa näkyy esimerkki aloitussivusta:
 
 ![näyttökuva aloitussivusta](./media/landing-page.png)

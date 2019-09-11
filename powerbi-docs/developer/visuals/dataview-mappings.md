@@ -1,6 +1,6 @@
 ---
-title: Tietonäkymän yhdistämismääritykset
-description: Miten Power BI muuntaa tiedot ennen visualisointeihin välittämistä
+title: Power BI -visualisointien tietonäkymän yhdistämismääritykset
+description: Tässä artikkelissa kerrotaan, miten Power BI muuntaa tiedot ennen niiden välittämistä visualisointeihin.
 author: asander
 ms.author: asander
 manager: rkarlin
@@ -9,19 +9,18 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: ff70b2f12921694617a736164484df1326471eea
-ms.sourcegitcommit: 473d031c2ca1da8935f957d9faea642e3aef9839
+ms.openlocfilehash: 07989183688045f34d78e71cdaad5045d080f436
+ms.sourcegitcommit: b602cdffa80653bc24123726d1d7f1afbd93d77c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68425179"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70237231"
 ---
-# <a name="data-view-mappings-in-power-bi-visuals"></a>Tietonäkymän yhdistämismääritykset Power BI -visualisoinneissa
+# <a name="understand-data-view-mapping-in-power-bi-visuals"></a>Power BI -visualisointien tietonäkymän yhdistämismääritykset
 
-`dataViewMappings` kuvaa, miten tietoroolit liittyvät toisiinsa, antaa sinun määrittää niille ehdollisia vaatimuksia.
-Kullekin `dataMappings`-määritykselle on osio.
+Tässä artikkelissa kuvataan, miten tietonäkymän yhdistämismääritykset liittyvät toisiinsa ja antavat sinun määrittää niille ehdollisia vaatimuksia. Artikkelissa kuvataan myös jokainen `dataMappings`-tyyppi.
 
-Jokainen kelvollinen yhdistäminen tuottaa `DataView`-näkymän, mutta tällä hetkellä tuemme vain yhden kyselyn suorittamista visualisointia kohden, joten useimmissa tilanteissa saat vain yhden `DataView`-näkymän. Voit kuitenkin antaa useita tietojen yhdistämismäärityksiä eri ehdoilla, mikä mahdollistaa seuraavan:
+Jokainen kelvollinen yhdistäminen tuottaa tietonäkymän, mutta tuemme tällä hetkellä vain yhden kyselyn suorittamista visualisointia kohden. Saat tavallisesti vain yhden tietonäkymän. Voit kuitenkin antaa useita tietojen yhdistämismäärityksiä tietyillä ehdoilla, mikä mahdollistaa seuraavan:
 
 ```json
 "dataViewMappings": [
@@ -35,10 +34,10 @@ Jokainen kelvollinen yhdistäminen tuottaa `DataView`-näkymän, mutta tällä h
 ]
 ```
 
-> [!NOTE]
-> On tärkeää huomata, että Power BI luo DataView’n yhdistämismäärityksen, jos ja vain jos kelvollinen yhdistämismääritys on täytetty kohteessa `dataViewMappings`.
+Power BI luo tietonäkymän yhdistämismäärityksen, jos ja vain jos kelvollinen yhdistämismääritys on täytetty kohteessa `dataViewMappings`.
 
-Toisin sanoen, jos `categorical` on määritetty kohteessa `dataViewMappings`, mutta muut yhdistämismääritykset, kuten `table`, `single` jne., eivät ole, kuten seuraavassa esimerkissä:
+Toisin sanoen `categorical` voidaan määrittää `dataViewMappings`-yhdistämismäärityksessä, mutta muissa määrityksissä, kuten `table` tai `single`, ei ehkä voida. Esimerkki:
+
 ```json
 "dataViewMappings": [
     {
@@ -47,7 +46,8 @@ Toisin sanoen, jos `categorical` on määritetty kohteessa `dataViewMappings`, m
 ]
 ```
 
-Power BI:n tuotos on `DataView`, jolla on yksi `categorical`-yhdistämismääritys (`table` ja muut yhdistämismääritykset ovat `undefined`):
+Power BI tuottaa tietonäkymän, jossa on yksittäinen `categorical`-yhdistäminen, ja `table` sekä muut yhdistämiset ovat määrittämättömiä:
+
 ```javascript
 {
     "categorical": {
@@ -60,16 +60,16 @@ Power BI:n tuotos on `DataView`, jolla on yksi `categorical`-yhdistämismäärit
 
 ## <a name="conditions"></a>Ehdot
 
-Kuvailee tietyn tietojen yhdistämismäärityksen ehdot. Voit antaa useita ehtojoukkoja, ja jos tiedot vastaavat jotakin kuvatuista ehtojoukoista, visualisointi hyväksyy tiedot kelvollisiksi.
+Tässä osassa kuvataan tietyn tietojen yhdistämismäärityksen ehdot. Voit antaa useita ehtojoukkoja, ja jos tiedot vastaavat jotakin kuvatuista ehtojoukoista, visualisointi hyväksyy tiedot kelvollisiksi.
 
-Tällä hetkellä kullekin kentälle voidaan määrittää vähimmäis-ja enimmäisarvo. Se edustaa niiden kenttien määrää, jotka voidaan sitoa kyseiseen tietorooliin. 
+Tällä hetkellä kullekin kentälle voidaan määrittää vähimmäis-ja enimmäisarvo. Arvo edustaa niiden kenttien määrää, jotka voidaan sitoa kyseiseen tietorooliin. 
 
 > [!NOTE]
 > Jos tietorooli jätetään pois ehdosta, sillä voi olla mikä tahansa määrä kenttiä.
 
 ### <a name="example-1"></a>Esimerkki: 1
 
-Voit vetää useita kenttiä kuhunkin tietorooliin. Tässä esimerkissä rajoitamme luokan yhteen tietokenttään ja mittarin kahteen tietokenttään.
+Voit vetää useita kenttiä kuhunkin tietorooliin. Tässä esimerkissä rajoitetaan luokka yhteen tietokenttään ja mittari kahteen tietokenttään.
 
 ```json
 "conditions": [
@@ -79,7 +79,9 @@ Voit vetää useita kenttiä kuhunkin tietorooliin. Tässä esimerkissä rajoita
 
 ### <a name="example-2"></a>Esimerkki 2
 
-Tässä esimerkissä vaaditaan yksi kahdesta ehdosta. Joko täsmälleen yksi luokkatietokenttä ja täsmälleen kaksi mittaria tai täsmälleen kaksi luokkaa ja täsmälleen yksi mittari.
+Tässä esimerkissä vaaditaan jompikumpi kahdesta ehdosta:
+* Täsmälleen yksi luokkatietokenttä ja täsmälleen kaksi mittaria
+* Tarkalleen kaksi luokkaa ja täsmälleen yksi mittari.
 
 ```json
 "conditions": [
@@ -90,9 +92,9 @@ Tässä esimerkissä vaaditaan yksi kahdesta ehdosta. Joko täsmälleen yksi luo
 
 ## <a name="single-data-mapping"></a>Yksittäistietojen yhdistäminen
 
-Yksittäistietojen yhdistäminen on yksinkertaisin tietojen yhdistämisen muoto. Se hyväksyy yksittäisen mittarikentän ja antaa tulokseksi kokonaismäärän. Jos kenttä on numeerinen, saat tulokseksi summan. Muussa tapauksessa saat yksilöllisten arvojen määrän.
+Yksittäistietojen yhdistäminen on yksinkertaisin tietojen yhdistämisen muoto. Se hyväksyy yksittäisen mittarikentän ja antaa tulokseksi kokonaismäärän. Jos kenttä on numeerinen, saat tulokseksi summan. Muutoin saat yksilöllisten arvojen määrän.
 
-Jos haluat käyttää yksittäistietojen yhdistämistä, sinun on määritettävä sen tietoroolin nimi, jonka haluat yhdistää. Tämä yhdistäminen toimii vain yksittäisen mittarikentän kanssa. Jos toinen kenttä on määritetty, tietonäkymää ei muodosteta. Siksi kannattaa sisällyttää myös ehto, joka rajoittaa tiedot yhteen kenttään.
+Jos haluat käyttää yksittäistietojen yhdistämistä, sinun on määritettävä sen tietoroolin nimi, jonka haluat yhdistää. Tämä yhdistäminen toimii vain yksittäisen mittarikentän kanssa. Jos toinen kenttä on määritetty, tietonäkymää ei muodosteta. Siksi on myös hyvä käytäntö sisällyttää ehto, joka rajoittaa tiedot yhteen kenttään.
 
 > [!NOTE]
 > Tätä tietojen yhdistämistä ei voi käyttää yhdessä minkään muun tietojen yhdistämisen kanssa. Se on tarkoitettu muuttamaan tiedot yhdeksi numeeriseksi arvoksi.
@@ -110,7 +112,7 @@ Jos haluat käyttää yksittäistietojen yhdistämistä, sinun on määritettäv
 }  
 ```
 
-Tuloksena saatava tietonäkymä sisältää yhä muita tyyppejä (table, categorical ja niin edelleen), mutta jokainen yhdistämismääritys sisältää vain single-arvon. Paras käytäntö on käyttää single-arvoa.
+Tuloksena saatava tietonäkymä sisältää yhä muita tyyppejä (esimerkiksi taulukko ja luokittainen), mutta jokainen yhdistämismääritys sisältää vain yksittäisen arvon. Paras käytäntö on käyttää yksittäistä arvoa.
 
 ```JSON
 {
@@ -135,7 +137,7 @@ Luokittaisen tietojen yhdistämisen avulla saadaan yksi tai kaksi riippumatonta 
 
 ### <a name="example-4"></a>Esimerkki 4
 
-Tässä on edellisen DataRoles-esimerkkimme määritys.
+Tässä on edellisen tietorooliesimerkin määritys:
 
 ```json
 "dataRole":[
@@ -152,7 +154,7 @@ Tässä on edellisen DataRoles-esimerkkimme määritys.
 ]
 ```
 
-Seuraavaksi yhdistäminen:
+Tämä on yhdistämismääritys:
 
 ```json
 "dataViewMappings": {
@@ -171,12 +173,12 @@ Seuraavaksi yhdistäminen:
 
 Esimerkki on yksinkertainen. Selkeällä englannilla siinä lukee ”Map my `category` DataRole so that for every field I drag into `category`, its data is mapped to `categorical.categories`. Also map my `measure` DataRole to `categorical.values`” (Yhdistä category-DataRole niin, että jokainen kenttä, jonka vedän kohteeseen category, yhdistyy kohteeseen categorical values Yhdistä myös measure-DataRole kohteeseen categorical.values).
 
-* **for...in** – Sisällytä kaikki tämän tietoroolin kohteet tietokyselyyn.
-* **bind... to** – Tuottaa saman tuloksen kuin for...in, mutta odottaa, että DataRolella on ehto, joka rajoittaa sen yksittäiseen kenttään.
+* **for...in**: Sisällytä kaikki tämän tietoroolin kohteet tietokyselyyn.
+* **bind...to**: Tuottaa saman tuloksen kuin *for...in*, mutta odottaa, että tietojen roolilla on ehto, joka rajoittaa sen yksittäiseen kenttään.
 
 ### <a name="example-5"></a>Esimerkki 5
 
-Tässä esimerkissä käytämme kahta ensimmäistä DataRolea edellisestä esimerkistä ja lisäksi määritämme nimet `grouping` ja `measure2`.
+Tässä esimerkissä käytämme kahta ensimmäistä tietojen roolia edellisestä esimerkistä ja lisäksi määritämme nimet `grouping` ja `measure2`.
 
 ```json
 "dataRole":[
@@ -203,7 +205,7 @@ Tässä esimerkissä käytämme kahta ensimmäistä DataRolea edellisestä esime
 ]
 ```
 
-Seuraavaksi yhdistämismääritys:
+Tämä on yhdistämismääritys:
 
 ```json
 "dataViewMappings":{
@@ -224,11 +226,11 @@ Seuraavaksi yhdistämismääritys:
 }
 ```
 
-Tässä ero on siinä, miten categorical.values-yhdistämismääritys tehdään. Sanomme "Tee yhdistämismääritys tietorooleille `measure` ja `measure2`, niin että ne ryhmitellään tietoroolin `grouping` mukaan."
+Tässä ero on siinä, miten categorical.values-yhdistämismääritys tehdään. Sanomme ”Map my `measure` and `measure2` data roles to be grouped by the data role `grouping`.” (”Tee yhdistämismääritys tietorooleille measure ja measure2, niin että ne ryhmitellään tietoroolin grouping mukaan.)
 
 ### <a name="example-6"></a>Esimerkki 6
 
-Tässä on dataRoles.
+Nämä ovat tietojen roolit:
 
 ```json
 "dataRoles": [
@@ -250,7 +252,7 @@ Tässä on dataRoles.
 ]
 ```
 
-Tässä on dataViewMapping.
+Nämä ovat tietonäkymän yhdistämismääritykset:
 
 ```json
 "dataViewMappings": [
@@ -277,7 +279,7 @@ Tässä on dataViewMapping.
 ]
 ```
 
-Luokittainen `dataview` voidaan visualisoida näin.
+Luokittainen tietonäkymä voidaan visualisoida näin:
 
 | Luokittainen |  |  | | | |
 |-----|-----|------|------|------|------|
@@ -288,7 +290,7 @@ Luokittainen `dataview` voidaan visualisoida näin.
 | Meksiko | | 300 | x | x | x |
 | Iso-Britannia | | x | x | 75 | x |
 
-Power BI luo sen sinulle luokittaisena tietonäkymänä. Se on luokkien joukko.
+Power BI tuottaa sen luokittaisena tietonäkymänä. Se on luokkien joukko.
 
 ```JSON
 {
@@ -310,7 +312,7 @@ Power BI luo sen sinulle luokittaisena tietonäkymänä. Se on luokkien joukko.
 }
 ```
 
-Jokainen luokka yhdistyy myös joukkoon arvoja. Jokainen näistä arvoista ryhmitellään sarjan, eli vuosien, mukaan.
+Jokainen luokka yhdistyy myös joukkoon arvoja. Jokainen näistä arvoista ryhmitellään vuosina ilmaistavan sarjan mukaan.
 
 Esimerkiksi Kanadan myynti vuonna 2013 on tyhjäarvo, Kanadan myynti 2014 on 50.
 
@@ -393,7 +395,7 @@ Annetuilla ominaisuuksilla:
 ]
 ```
 
-Taulukko `dataview` voidaan visualisoida näin.  
+Voit visualisoida taulukkotietonäkymän seuraavasti:  
 
 | Maa| Vuosi | Myynti |
 |-----|-----|------|
@@ -405,7 +407,7 @@ Taulukko `dataview` voidaan visualisoida näin.
 | Iso-Britannia | 2014 | 150 |
 | Yhdysvallat | 2015 | 75 |
 
-Power BI luo sen sinulle taulukon tietonäkymänä. Älä oleta, että se on tietyssä järjestyksessä.
+Power BI näyttää tietosi taulukkotietonäkymänä. Sinun ei pidä olettaa, että tiedot on järjestetty.
 
 ```JSON
 {
@@ -452,13 +454,13 @@ Power BI luo sen sinulle taulukon tietonäkymänä. Älä oleta, että se on tie
 }
 ```
 
-Tiedot voidaan koota valitsemalla haluttu kenttä ja napsauttamalla summaa.  
+Voit koostaa tiedot valitsemalla haluamasi kentän ja valitsemalla sitten summan.  
 
 ![Tietojen koostaminen](./media/data-aggregation.png)
 
 ## <a name="matrix-data-mapping"></a>Matriisitietojen yhdistäminen
 
-Matriisitietojen yhdistäminen on samantapaista kuin taulukkotietojen yhdistäminen, mutta rivit esitetään hierarkkisesti. Yksi `dataRole`-arvoista voidaan käyttää sarakeotsikon arvona.
+Matriisitietojen yhdistäminen on samantapaista kuin taulukkotietojen yhdistäminen, mutta rivit esitetään hierarkkisesti. Mitä tahansa tietorooliarvoista voidaan käyttää sarakeotsikon arvona.
 
 ```json
 {
@@ -510,11 +512,11 @@ Matriisitietojen yhdistäminen on samantapaista kuin taulukkotietojen yhdistämi
 }
 ```
 
-Power BI luo hierarkkisen tietorakenteen. Puun pääkansio sisältää tiedot ensimmäisestä `Category`-tietoroolin sarakkeesta ja lapset ovat tietoroolin toisesta sarakkeesta.
+Power BI luo hierarkkisen tietorakenteen. Puun juuri sisältää **Päätaso**-sarakkeen tiedot `Category`-tietoroolista ja alatason tiedot tietoroolitaulukon **Alataso**-sarakkeesta.
 
 Tietojoukko:
 
-| Vanhemmat | Lapset | Lapsenlapset | Sarakkeet | Arvot |
+| Vanhemmat | Lapset | Alatason alataso | Sarakkeet | Arvot |
 |-----|-----|------|-------|-------|
 | Vanhempi1 | Lapsi1 | Lapsenlapsi1 | Sar1 | 5 |
 | Vanhempi1 | Lapsi1 | Lapsenlapsi1 | Sar2 | 6 |
@@ -533,11 +535,11 @@ Tietojoukko:
 | Vanhempi2 | Lapsi3 | Lapsenlapsi8 | Sar1 | 10 |
 | Vanhempi2 | Lapsi3 | Lapsenlapsi8 | Sar2 | 13 |
 
-Power BI:n ydinmatriisivisualisointi hahmontaa sen kuin taulukon.
+Power BI:n ydinmatriisivisualisointi hahmontaa tiedot taulukon tapaan.
 
 ![Matriisivisualisointi](./media/matrix-visual-smaple.png)
 
-Visualisointi saa tietorakenteen alla kuvatulla tavalla (vain kaksi ensimmäistä riviä esitetään):
+Visualisointi saa tietorakenteensa seuraavassa koodissa kuvatulla tavalla (vain kaksi ensimmäistä taulukon riviä näkyvät tässä):
 
 ```json
 {
@@ -612,11 +614,11 @@ Visualisointi saa tietorakenteen alla kuvatulla tavalla (vain kaksi ensimmäist�
 }
 ```
 
-## <a name="data-reduction-algorithm"></a>Tietojen vähentämisen algoritmi
+## <a name="data-reduction-algorithm"></a>Tietojenvähennysalgoritmi
 
-`DataReductionAlgorithm` voidaan ottaa käyttöön, jos haluat hallita DataView-kohteessa vastaanotetun tiedon määrää.
+Voit määrittää tietonäkymään vastaanotettavien tietojen määrän käyttämällä tietojenvähennysalgoritmia.
 
-Oletusarvon mukaan kaikissa mukautetuissa visualisoinneissa on käytössä top-DataReductionAlgorithm, jonka count-arvo on 1000 dataPoints. Se vastaa seuraavien ominaisuuksien määrittämistä kohteessa capabilities.json:
+Oletusarvon mukaan kaikissa mukautetuissa visualisoinneissa on käytössä tietojenvähennysalgoritmi, jonka *määrä*-arvo on 1000 arvopistettä. Se vastaa seuraavien ominaisuuksien määrittämistä tiedostossa *capabilities.json*:
 
 ```json
 "dataReductionAlgorithm": {
@@ -626,23 +628,23 @@ Oletusarvon mukaan kaikissa mukautetuissa visualisoinneissa on käytössä top-D
 }
 ```
 
-Voit muokata count-arvoa mihin tahansa kokonaislukuarvoon, joka on enintään 30 000. R-pohjaiset mukautetut visualisoinnit voivat tukea enintään 150 000 riviä.
+Voit muokata *määrä*-arvoa mihin tahansa kokonaislukuarvoon, joka on enintään 30000. R-pohjaiset mukautetut visualisoinnit voivat tukea enintään 150 000 riviä.
 
 ## <a name="data-reduction-algorithm-types"></a>Tietojen vähentämisen algoritmityypit
 
-Käytössä on neljä erilaista `DataReductionAlgorithm`-asetusta:
+Tietojenvähennysalgoritmin asetuksia on neljää tyyppiä:
 
-* `top` – jos haluat rajoittaa tiedot arvoihin, jotka on otettu tietojoukon yläosasta. Tietojoukosta otetaan ylimmät ensimmäiset count-arvot.
-* `bottom` – jos haluat rajoittaa tiedot arvoihin, jotka on otettu tietojoukon alaosasta. Tietojoukosta otetaan viimeiset count-arvot.
-* `sample` -pienentää tietojoukkoa yksinkertaisella otanta-algoritmilla, joka on rajoitettu kohteiden count-luvun mukaan. Se tarkoittaa, että ensimmäiset ja viimeiset kohteet sisällytetään samoin kuin count-luvun suuruinen määrä kohteita, jotka esiintymisväli on tasainen.
-Jos sinulla on esimerkiksi tietojoukko [0, 1, 2,... 100] ja `count: 9`, saat seuraavat arvot [0, 10, 20... 100]
-* `window` - lataa kerrallaan yhden tietosarjan ”ikkunan”, joka sisältää count-elementtejä. Tällä hetkellä `top` ja `window` vastaavat toisiaan. Ikkunointiasetuksen täyteen tukeen tähtäävä työ on kesken.
+* `top`: Jos haluat rajoittaa tiedot arvoihin, jotka on otettu tietojoukon yläosasta. Tietojoukosta otetaan ylimmät ensimmäiset *määrä*-arvot.
+* `bottom`: Jos haluat rajoittaa tiedot arvoihin, jotka on otettu tietojoukon alaosasta. Viimeiset määrä-arvot otetaan tietojoukosta.
+* `sample`: Pienentää tietojoukkoa yksinkertaisella otanta-algoritmilla, joka on rajoitettu kohteiden *määrä*-arvon mukaan. Se tarkoittaa, että ensimmäiset ja viimeiset kohteet sisällytetään samoin kuin *määrä*-arvon suuruinen määrä kohteita, jotka esiintymisväli on tasainen.
+Jos sinulla on esimerkiksi tietojoukko [0, 1, 2... 100] ja *määrä* 9, saat arvot [0, 10, 20... 100].
+* `window`: Lataa kerrallaan yhden arvopisteiden *ikkunan*, joka sisältää *määrä*-elementtejä. Tällä hetkellä `top` ja `window` vastaavat toisiaan. Pyrimme tukemaan ikkunointiasetusta täydellisesti.
 
 ## <a name="data-reduction-algorithm-usage"></a>Tietojen vähentämisen algoritmin käyttö
 
-`DataReductionAlgorithm` voidaan käyttää luokittaisessa, taulukko-tai matriisi-`dataview`-yhdistämismäärityksessä.
+Tietojenvähennysalgoritmia voidaan käyttää yhdistämiseen tietojen luokittaisessa näkymässä tai taulukko- tai matriisinäkymässä.
 
-Sille voidaan määrittää `categories` ja/tai `values`-ryhmäosalle luokittaista tietojen yhdistämistä varten.
+Voit määrittää algoritmin kohdassa `categories` ja/tai `values`-kohdan group-alakohdassa luokittaista tietojen yhdistämistä varten.
 
 ### <a name="example-8"></a>Esimerkki 8
 
@@ -677,7 +679,7 @@ Sille voidaan määrittää `categories` ja/tai `values`-ryhmäosalle luokittais
 }
 ```
 
-Tietojen vähentämisen algoritmia voidaan käyttää taulukon `dataview`-yhdistämismäärityksen `rows`-osassa.
+Voit käyttää tietojenvähennysalgoritmia tietonäkymän yhdistämistaulukon `rows`-osassa.
 
 ### <a name="example-9"></a>Esimerkki 9
 
@@ -700,4 +702,4 @@ Tietojen vähentämisen algoritmia voidaan käyttää taulukon `dataview`-yhdist
 ]
 ```
 
-Tietojen vähentämisen algoritmia voidaan käyttää `matrix` `dataview`-yhdistämismäärityksen `rows` ja/tai `columns`-osassa.
+Voit käyttää tietojenvähennysalgoritmia tietonäkymän yhdistämismatriisin `rows`- ja `columns`-osassa.

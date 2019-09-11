@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: reference
-ms.date: 04/10/2019
+ms.date: 09/05/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 00ff6a901ef4056e15ccc0087f0783826b1a64b2
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: ccde7f01968a9fdcdd74903819b7083a552479b0
+ms.sourcegitcommit: c799941c8169cd5b6b6d63f609db66ab2af93891
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61308981"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70391779"
 ---
 # <a name="data-types-in-power-bi-desktop"></a>Tietotyypit Power BI Desktopissa
 Tässä artikkelissa kuvataan tietotyypit, joita Power BI Desktop ja Data Analysis Expressions (DAX) tukevat. 
@@ -44,7 +44,7 @@ Power BI Desktop tukee kolmea lukutyyppiä:
 
 **Kiinteällä desimaaliluvulla** – on kiinteä sijainti desimaalierottimelle. Desimaalierottimen oikealla puolella on aina neljä numeroa, ja luvussa voi olla 19 merkitsevää numeroa.  Suurin arvo, jota se voi edustaa, on 922 337 203 685 477,5807 (positiivinen tai negatiivinen).  Kiinteä desimaalilukutyyppi on hyödyllinen tilanteissa, joissa pyöristäminen saattaa aiheuttaa virheitä.  Kun käsittelet useita lukuja, jotka sisältävät pieniä murtolukuarvoja, ne voivat joskus kumuloitua ja tehdä luvusta lievästi epätäsmällisen.  Koska desimaalierottimen oikealla puolella olevat arvot katkaistaan neljännen numeron jälkeen, kiinteän desimaalilukutyypin avulla voit välttää tällaiset virheet.   Jos SQL Server on sinulle tuttu, tämä tietotyyppi vastaa SQL Serverin desimaali-tietotyyppiä (19,4) tai Power Pivotin valuutta-tietotyyppiä. 
 
-**Kokonaisluku** – edustaa 64-bittistä (kahdeksantavuista) kokonaislukuarvoa. Koska kyseessä on kokonaisluku, sillä ei ole numeroita desimaalierottimen oikealla puolella. Siinä voi olla 19 numeroa, ja ne voivat olla positiivisia tai negatiivisia kokonaislukuja väliltä –9 223 372 036 854 775 808 (–2^63) ja 9 223 372 036 854 775 807 (2^63– 1).  Se voi edustaa eri numeeristen tietotyyppien suurinta mahdollista lukua.  Kuten kiinteän desimaalilukutyypin kohdalla, myös kokonaislukutyypistä voi olla hyötyä tilanteissa, joissa sinun tulee kontrolloida pyöristystä. 
+**Kokonaisluku** – edustaa 64-bittistä (kahdeksantavuista) kokonaislukuarvoa. Koska kyseessä on kokonaisluku, sillä ei ole numeroita desimaalierottimen oikealla puolella. Siinä voi olla 19 numeroa, ja ne voivat olla positiivisia tai negatiivisia kokonaislukuja väliltä –9 223 372 036 854 775 807 (–2^63+1) ja 9 223 372 036 854 775 806 (2^63–2). Se voi edustaa eri numeeristen tietotyyppien suurinta mahdollista lukua.  Kuten kiinteän desimaalilukutyypin kohdalla, myös kokonaislukutyypistä voi olla hyötyä tilanteissa, joissa sinun tulee kontrolloida pyöristystä. 
 
 > [!NOTE]
 >  Power BI Desktop -tietomalli tukee 64-bittisi kokonaislukuarvoja, mutta suurin numero, jonka visualisoinnit voit turvallisesti ilmaista, on JavaScript rajoitusten vuoksi 9,007,199,254,740,991 (2 ^ 53 - 1). Jos käsittelet tietomallissasi tätä suurempia numeroita, voit pienentää kokoa laskutoimituksien avulla, ennen niiden lisäämistä visualisointiin 

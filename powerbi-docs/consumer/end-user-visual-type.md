@@ -1,32 +1,32 @@
 ---
-title: Visualisointityypit Power BI-käyttäjille
-description: Visualisointityypit Power BI-palvelussa
+title: Visualisointityypit kuluttajille Power BI:ssä
+description: Visualisointityypit Power BI -palvelussa
 author: mihart
 manager: kvivek
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 05/14/2019
+ms.date: 08/21/2019
 ms.author: mihart
 LocalizationGroup: Consumer
-ms.openlocfilehash: acee7e78a19986a0f83e13836ba6d77f7c35fdce
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 875e154dbac063c0e4b9d5dc4208387e6d529a93
+ms.sourcegitcommit: 09ee1b4697aad84d8f4c9421015d7e4dbd3cf25f
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65711552"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "70302539"
 ---
-# <a name="visual-types-in-power-bi"></a>Visualisointityypit Power BI-
-Löydät visualisointeja raportteihin, koontinäyttöihin, sovelluksia ja Q & A. Jotkin näistä visualisointityyppejä on pakattu kanssa Power BI-ja osa on *mukautettujen visualisointien*. Mukautetut visualisoinnit luodaan Power BI:n ulkopuolella siten, että *raporttien suunnittelijat* voivat lisätä niitä Power BI:n raportteihin, koontinäyttöihin ja sovelluksiin. 
+# <a name="visual-types-in-power-bi"></a>Visualisointityypit Power BI:ssä
+Visualisointeja on raporteissa, koontinäytöissä, sovelluksissa ja Q&A:ssa. Jotkin näistä visualisointityypeistä ovat Power BI:hin sisältyviä visualisointeja ja jotkin *mukautettuja visualisointeja*. Mukautetut visualisoinnit luodaan Power BI:n ulkopuolella siten, että *raporttien suunnittelijat* voivat lisätä niitä Power BI:n raportteihin ja koontinäyttöihin. 
 
-Tässä artikkelissa on yleiskatsaus visualisointeja, jotka on paketoitu Power BI.  Nämä ovat visualisoinnit, joita tarvitaan eniten. 
+Tämä artikkeli on yleiskatsaus Power BI -palveluun sisältyvistä visualisoinneista.  Ne ovat visualisointeja, joita näet useimmin. Lisätietoja näistä visualisoinneista on [Power BI:n raporttien*visualisointityyppien* suunnitteluohjeissa](../visuals/power-bi-visualization-types-for-reports-and-q-and-a.md)
 
 > [!NOTE]
 > Jos haluat lisätietoja mukautetuista visualisoinneista, hae niitä [Microsoft AppSourcen](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals) **Power BI -visualisointien osiossa**. Näet kustakin visualisoinnista kuvauksen, sen tekijän tiedot ja joko näyttökuvia tai videon. 
 
-## <a name="list-of-visuals-available-in-power-bi"></a>Luettelo visualisoinneista, jotka ovat käytettävissä Power BI
-Kaikki nämä visualisoinnit löytyvät Power BI-sovelluksia, koontinäyttöjä ja raportteja, ja [määritetty Q & A](end-user-q-and-a.md). Lue, miten voit käyttää visualisointeja, on artikkelissa [visualisoinnit raporttien, koontinäyttöjen ja sovellusten käsittely](end-user-visualizations.md)
+## <a name="list-of-visuals-available-in-power-bi"></a>Power BI:ssä käytettävissä olevien visualisointityyppien luettelo
+Kaikki nämä visualisoinnit löytyvät Power BI:n koontinäytöistä ja raporteista ja tietyistä [Q&A-osioista](end-user-q-and-a.md). Jos haluat ohjeita visualisointien käyttöön, lue ohjeartikkeli [Visualisointien käyttö raporteissa, koontinäytöissä ja sovelluksissa](end-user-visualizations.md)
 
 ### <a name="area-charts-basic-layered-and-stacked"></a>Aluekaaviot: Perus (kerrostettu) ja pinottu
 ![aluekaavio](media/end-user-visual-type/basic-area-map-small.png)
@@ -59,7 +59,7 @@ Yhdistelmäkaavio yhdistää pylväskaavion ja viivakaavion. Näiden kahden kaav
 Yhdistelmäkaavio on hyvä vaihtoehto, kun:
 - sinulla on viivakaavio ja pylväskaavio, joilla on sama X-akseli
 - haluat vertailla useita mittareita eri arvoalueilla
-- haluat havainnollistaa kahden mitan välistä korrelaatiota yhdessä visualisoinnissa
+- haluat havainnollistaa kahden mittarin välistä korrelaatiota yhdessä visualisoinnissa
 - haluat tarkistaa, täyttääkö mittari toisen mittarin määrittämän tavoitteen
 - haluat säästää tilaa piirtoalustalla.
 
@@ -76,14 +76,6 @@ Suppilokaaviot auttavat visualisoimaan prosessia, jossa on vaiheita ja tietoyksi
 Esimerkiksi myynnistä voi tehdä suppilokaavion, jossa seurataan asiakkuuksien eri vaiheita: liidi > hyväksytty liidi > prospekti > sopimus > myynti. Suppilon muoto välittää yhdellä silmäyksellä tarkastelemasi prosessin kunnon.
 Suppilon kukin vaihe edustaa prosenttiosuutta kokonaismäärästä. Siten useimmissa tapauksissa suppilokaaviosta tulee suppilon muotoinen – ensimmäinen vaihe on kaikkein suurin ja kukin seuraava vaihe on pienempi kuin sitä edeltänyt vaihe. Myös päärynänmuotoisista suppilokaavioista on hyötyä: sen avulla voi tunnistaa ongelman prosessissa. Tyypillisesti kuitenkin ensimmäinen vaihe, ”sisäänotto”, on kaikkein suurin.
 
-Suppilokaavio on hyvä vaihtoehto:
-- kun tiedot seuraavat toinen toistaan ja etenevät vähintään 4 vaiheen kautta.
-- kun on odotettavissa, että ”kohteiden” määrä ensimmäisessä vaiheessa on suurempi kuin viimeisessä vaiheessa.
-- kun haluat laskea (tuoton/myyntien/sopimuksien jne.) mahdollisuuksia vaihekohtaisesti.
-- kun haluat laskea ja seurata konversio- ja asiakaspoistuma-astetta.
-- kun haluat paljastaa lineaarisen prosessin pullonkauloja.
-- kun haluat seurata ostoskorin työnkulkua.
-- kun haluat seurata napsautusvaiheiden kautta etenevien mainos- tai markkinointikampanjoiden etenemistä ja onnistumista.
 
 ### <a name="gauge-charts"></a>Mittarikaaviot
 ![mittarikaavio](media/end-user-visual-type/gauge-m.png)
@@ -127,7 +119,7 @@ Peruskarttaa käytetään sekä luokiteltuun että kvantitatiiviseen tietoon, jo
 ### <a name="maps-arcgis-maps"></a>Kartat: ArcGIS-kartat
 ![ArcGis-kartta](media/end-user-visual-type/power-bi-esri-map-theme2.png)
 
-ArcGIS-kartat ja Power BI yhdessä tekevät kartoista muutakin kuin vain esitettäviä pisteitä. Valittavissasi on pohjakarttoja, sijaintityyppejä, teemoja, symbolityylit ja viittauskerroksia Luo upeita, informatiivisia informatiivisia kartan visualisointeja. Määräävien tietokerrosten (kuten laskentatietojen) sijaintikohtaista analyysiä yhdistelmän karttoihin mahdollistaa visualisoinnin tietojen.
+ArcGIS-kartat ja Power BI yhdessä tekevät kartoista muutakin kuin vain esitettäviä pisteitä. Valittavissasi on pohjakarttoja, sijaintityyppejä, teemoja, symbolityylejä ja viittauskerroksia, joiden avulla voit luoda upeita, informatiivisia karttavisualisointeja. Määräävien tietokerrosten (kuten laskentatietojen) yhdistäminen sijaintikohtaista analyysiä sisältäviin karttoihin mahdollistaa visualisoinnin tietojen ymmärtämisen syvemmin.
 
 ### <a name="maps-filled-maps-choropleth"></a>Kartat: Täytetyt kartat (Choropleth)
 ![täytetty kartta](media/end-user-visual-type/pbi-nancy-viz-filledmap.png)
@@ -137,9 +129,9 @@ Täytetyssä kartassa käytetään sävytystä tai kuvioita esittämään, miten
 ### <a name="maps-shape-maps"></a>Kartat: Muotokartat
 ![muotokartta](media/end-user-visual-type/power-bi-shape-map2.png)
 
-Muotokartalla verrataan alueita kartalla värien avulla. Muotokartta ei voi näyttää arvopisteiden tarkkoja maantieteellisiä sijainteja kartalla (toisin kuin karttavisualisoinnit). Sen sijaan sen päätarkoituksena on näyttää alueiden suhteellisia vertailuja kartalla eri värien avulla.
+Muotokartalla verrataan alueita kartalla värien avulla. Muotokartta ei voi näyttää arvopisteiden tarkkoja maantieteellisiä sijainteja kartalla. Sen sijaan sen päätarkoituksena on näyttää alueiden suhteellisia vertailuja kartalla eri värien avulla.
 
-### <a name="matrix"></a>Matrix
+### <a name="matrix"></a>Matriisi
 ![matriisi](media/end-user-visual-type/matrix.png)
 
 Matriisivisualisointi on eräänlainen taulukkovisualisointi (sillä on oma kohtansa alla), joka tukee vaiheittaista asettelua. Raporttien suunnittelijat lisäävät usein matriiseja raportteihin ja koontinäyttöihin, jotta käyttäjät voivat valita yhden elementin tai useita elementtejä (rivejä, sarakkeita tai soluja) matriisista ristiinkorostaakseen muita visualisointeja raporttisivulla.  
@@ -163,12 +155,16 @@ Pistekaaviossa on aina kaksi arvoakselia, jotka näyttävät yhden numeerisen ti
 
 Kuplakaaviossa arvopisteet korvataan kuplilla ja kuplan koko kuvastaa tietojen muuta dimensiota.
 
-Pistetulostuskaavio muistuttaa kuplakaaviota ja hajontaa kuvaavaa pistekaaviota sillä erotuksella, että X-akselille voi tulostaa numeerisia tai luokittaisia tietoja.
+
+
+Pistetulostuskaavio muistuttaa kuplakaaviota ja hajontaa kuvaavaa pistekaaviota sillä erotuksella, että X-akselille voi tulostaa numeerisia tai luokittaisia tietoja. Tässä esimerkissä käytetään neliöitä ympyröiden sijaan ja piirretään myynti X-akselille.
+
+![pistetulostuskaavio](media/end-user-visual-type/power-bi-dot-plot-squares.png)
 
 ### <a name="scatter-high-density"></a>Suuren tiheyden pistekaavio
 ![suuren tiheyden pistekaavio](media/end-user-visual-type/density-scatter.png)
 
-Näytteitä suuren tiheyden tiedoista otetaan näytteitä luoda visualisointeja kohtuullisen nopeasti, joiden vuorovaikutteisuus säilyy. Suuren tiheyden tiedoissa käytetään algoritmia, joka poistaa päällekkäiset pisteet ja varmistaa, että kaikki tietojoukon pisteet näytetään visualisoinnissa. Se ei näytä vain näytettä tiedoista.  
+Suuren tiheyden tiedoista otetaan näytteitä siksi, että näin voidaan kohtuullisen nopeasti luoda visualisointeja, joiden vuorovaikutteisuus säilyy. Suuren tiheyden tiedoissa käytetään algoritmia, joka poistaa päällekkäiset pisteet ja varmistaa, että kaikki tietojoukon pisteet näytetään visualisoinnissa. Se ei näytä vain näytettä tiedoista.  
 
 Tämä tarjoaa parhaan vasteajan ja esityksen ja taltioi selkeästi tärkeimmät pisteet koko tietojoukosta.
 
@@ -226,8 +222,8 @@ Vesiputouskaavio on hyvä vaihtoehto:
 - jos haluat havainnollistaa yrityksen alku- ja lopetushenkilöstömäärän vuoden aikana
 - jos haluat visualisoida, kuinka paljon rahaa ansaitset ja käytät joka kuukausi sekä tilin juoksevan saldon.
 
-## <a name="qna"></a>Kerro Q & A käyttää minkä visualisoinnin
-Kirjoitettaessa kyselyjä luonnollisella kielellä Power BI Q & A: määrittää visualisoinnin tyyppiä kyselyssä.  Esimerkki:
+## <a name="qna"></a>Kerro Q&A:lle, minkä visualisoinnin haluat
+Kun kirjoitat Power BI Q&A:lla kyselyjä luonnollisella kielellä, voit määrittää visualisointityypin kyselyssäsi.  Esimerkki:
 
 
 ”***myynti osavaltioittain puukarttana***”
@@ -235,5 +231,5 @@ Kirjoitettaessa kyselyjä luonnollisella kielellä Power BI Q & A: määrittää
 ![q&a-istunto](media/end-user-visual-type/qa-treemap.png)
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
-[Visualisointien raporttien, koontinäyttöjen ja sovellukset](end-user-visualizations.md)    
+[Visualisointien käyttö raporteissa, koontinäytöissä ja sovelluksissa](end-user-visualizations.md)    
 [Oikealla oleva visuaalinen viite osoitteesta sqlbi.com](http://www.sqlbi.com/wp-content/uploads/videotrainings/dashboarddesign/visuals-reference-may2017-A3.pdf)

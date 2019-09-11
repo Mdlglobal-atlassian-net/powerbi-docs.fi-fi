@@ -1,6 +1,6 @@
 ---
-title: Osittajien synkronoinnin käyttöönotto
-description: Synkronoi osittajat -toiminnon lisääminen Power BI:n visualisointeihin
+title: Synkronoi osittajat -toiminnon ottaminen käyttöön Power BI:n visualisoinneissa
+description: Tässä artikkelissa kuvataan Synkronoi osittajat -toiminnon lisääminen Power BI:n visualisointeihin.
 author: EugeneElkin
 ms.author: v-evelk
 manager: rkarlin
@@ -9,18 +9,18 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: 9966475e8bcaccad2090451b47ef09ef0a9af125
-ms.sourcegitcommit: 473d031c2ca1da8935f957d9faea642e3aef9839
+ms.openlocfilehash: 4d7b73a5d06f34fd197464d4444d0e19d6c1c026
+ms.sourcegitcommit: b602cdffa80653bc24123726d1d7f1afbd93d77c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68425018"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70237198"
 ---
-# <a name="sync-slicers"></a>Synkronoi osittajat
+# <a name="sync-slicers-in-power-bi-visuals"></a>Synkronoi osittajat -toiminto Power BI:n visualisoinneissa
 
-Tukeakseen [osittajien synkronointia](https://docs.microsoft.com/power-bi/desktop-slicers) mukautetun osittajan visualisoinnin on käytettävä ohjelmointirajapintaa 1.13 tai uudempaa.
+[Synkronoi osittajat](https://docs.microsoft.com/power-bi/desktop-slicers) -toiminnon tuki edellyttää, että mukautettu osittaja käyttää ohjelmointirajapinnan versiota 1,13 tai uudempaa versiota.
 
-Käytössä pitää olla myös asetus `capabilities.json` (katso alla oleva malli).
+Lisäksi sinun on otettava asetus käyttöön *capabilities.json*-tiedostossa seuraavassa koodissa esitetyllä tavalla:
 
 ```json
 {
@@ -34,11 +34,11 @@ Käytössä pitää olla myös asetus `capabilities.json` (katso alla oleva mall
 }
 ```
 
-Kun olet tehnyt muutoksia kohtaan `capabilities.json`, näet Synkronoi osittajat -asetuspaneelin, kun napsautat mukautettua osittajan visualisointia.
+Kun olet ladannut *capabilities.json*-tiedoston, voit tarkastella **Synkronoi osittajat** -asetusruutua, kun valitset mukautetun osittajan visualisoinnin.
 
 > [!NOTE]
-> Jos osittajassa on useampi kuin yksi kenttä (luokka tai mittari), ominaisuus poistetaan käytöstä, koska osittajien synkronointi ei tue useita kenttiä.
+> Synkronoi osittajat -toiminto tukee enintään yhtä kenttää. Jos osittajassasi on vähintään kaksi kenttää (**Luokka** tai **Mittari**), toiminto on poissa käytöstä.
 
-![Synkronoi osittajat -paneeli](./media/sync-slicers-panel.png)
+![Synkronoi osittajat -ruutu](./media/sync-slicers-panel.png)
 
-Paneelissa näkyy, että osittajan näkyvyys ja suodatus voidaan ottaa käyttöön useille raporttisivuille.
+**Synkronoi osittajat** -ruudussa näkyy, että osittajan näkyvyys ja suodatus voidaan ottaa käyttöön useille raporttisivuille.

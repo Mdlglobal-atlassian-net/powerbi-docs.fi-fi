@@ -1,6 +1,6 @@
 ---
-title: Tapahtumien hahmontaminen
-description: Power BI:n visualisoinnit voivat ilmoittaa Power BI:lle, että ne ovat valmiita vientiin Power Pointiin/PDF-tiedostoon
+title: Tapahtumien hahmontaminen Power BI:n visualisoinneissa
+description: Power BI:n visualisoinnit voivat ilmoittaa Power BI:lle, että ne ovat valmiita vientiin Power Point- tai PDF-tiedostoon.
 author: Yarovinsky
 ms.author: alexyar
 manager: rkarlin
@@ -9,22 +9,22 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: 46166b3503a770e033b98474fcf9240235296cc2
-ms.sourcegitcommit: 473d031c2ca1da8935f957d9faea642e3aef9839
+ms.openlocfilehash: b481ce94e5025045466a05d71e30a00f02be7ead
+ms.sourcegitcommit: b602cdffa80653bc24123726d1d7f1afbd93d77c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68425087"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70237156"
 ---
-# <a name="event-service"></a>Tapahtumapalvelu
+# <a name="render-events-in-power-bi-visuals"></a>Tapahtumien hahmontaminen Power BI:n visualisoinneissa
 
-Uusi ohjelmointirajapinta koostuu kolmesta menetelmästä (aloitettu, valmis tai epäonnistunut), joita tulee kutsua hahmontamisen aikana.
+Uusi ohjelmointirajapinta koostuu kolmesta menetelmästä (`started`, `finished` tai `failed`), joita tulee kutsua hahmontamisen aikana.
 
-Kun hahmontaminen aloitetaan, mukautettu visualisoinnin koodi kutsuu renderingStarted-menetelmää sen ilmaisemiseksi, että hahmontamisprosessi on alkanut.
+Kun hahmontaminen aloitetaan, Power BI:n visualisoinnin koodi kutsuu `renderingStarted`-menetelmää sen ilmaisemiseksi, että hahmontamisprosessi on alkanut.
 
-Jos hahmontaminen on suoritettu onnistuneesti, mukautettu visualisoinnin koodi kutsuu välittömästi `renderingFinished`-menetelmää ilmoittaen kuuntelutoiminnoille (**ensisijaisesti Vie PDF-muotoon ja Vie PowerPointiin**), että visualisoinnin kuva on valmis.
+Jos hahmontaminen on suoritettu onnistuneesti, Power BI:n visualisoinnin koodi kutsuu heti `renderingFinished`-menetelmää ilmoittaen kuuntelutoiminnoille (ensisijaisesti *Vie PDF-muotoon* ja *Vie PowerPointiin*), että visualisoinnin kuva on valmis vientiin.
 
-Hahmontamisprosessin aikana saattoi ilmetä ongelma, joka estää mukautetun visualisoinnin suorittamisen onnistuneesti. Silloin mukautetun visualisoinnin koodin tulee kutsua `renderingFailed`-menetelmä ilmoittaen kuuntelutoiminnolle, että hahmontamisprosessi ei ole valmis. Tämä menetelmä tarjoaa myös valinnaisen merkkijonon virheen syylle.
+Jos prosessin aikana ilmenee ongelma, Power BI:n visualisointia ei voida hahmontaa onnistuneesti. Silloin Power BI:n visualisoinnin koodin tulee kutsua `renderingFailed`-menetelmää ilmoittaen kuuntelutoiminnoille, että hahmontamisprosessi ei ole valmis. Tämä menetelmä tarjoaa myös valinnaisen merkkijonon virheen syyn ilmoittamista varten.
 
 ## <a name="usage"></a>Käyttö
 
@@ -38,31 +38,31 @@ export interface IVisualHost extends extensibility.IVisualHost {
  */
 export interface IVisualEventService {
     /**
-     * Should be called just before the actual rendering was started. 
-     * Usually at the very start of the update method.
+     * Should be called just before the actual rendering starts, 
+     * usually at the start of the update method
      *
-     * @param options - the visual update options received as update parameter
+     * @param options - the visual update options received as an update parameter
      */
     renderingStarted(options: VisualUpdateOptions): void;
 
     /**
-     * Shoudl be called immediately after finishing successfull rendering.
+     * Should be called immediately after rendering finishes successfully
      * 
-     * @param options - the visual update options received as update parameter
+     * @param options - the visual update options received as an update parameter
      */
     renderingFinished(options: VisualUpdateOptions): void;
 
     /**
-     * Called when rendering failed with optional reason string
+     * Called when rendering fails, with an optional reason string
      * 
-     * @param options - the visual update options received as update parameter
-     * @param reason - the option failure reason string
+     * @param options - the visual update options received as an update parameter
+     * @param reason - the optional failure reason string
      */
     renderingFailed(options: VisualUpdateOptions, reason?: string): void;
 }
 ```
 
-### <a name="simple-sample-the-visual-hasnt-any-animations-on-rendering"></a>Yksinkertainen malli. Visualisoinnissa ei ole animaatioita hahmontamisen yhteydessä
+### <a name="sample-the-visual-displays-no-animations"></a>Malli: Visualisointi ei näytä animaatioita
 
 ```typescript
     export class Visual implements IVisual {
@@ -83,7 +83,7 @@ export interface IVisualEventService {
         }
 ```
 
-### <a name="sample-the-visual-with-animation"></a>Malli. Animaation sisältävä visualisointi
+### <a name="sample-the-visual-displays-animations"></a>Malli: Visualisointi näyttää animaatioita
 
 Jos visualisoinnissa on animaatioita tai asynkronisia funktioita hahmontamista varten, `renderingFinished`-menetelmä tulee kutsua animaation jälkeen tai asynkronisen funktion sisällä.
 
@@ -104,7 +104,7 @@ Jos visualisoinnissa on animaatioita tai asynkronisia funktioita hahmontamista v
         public update(options: VisualUpdateOptions) {
             this.events.renderingStarted(options);
             ...
-            // read more https://github.com/d3/d3-transition/blob/master/README.md#transition_end
+            // Learn more at https://github.com/d3/d3-transition/blob/master/README.md#transition_end
             d3.select(this.element).transition().duration(100).style("opacity","0").end().then(() => {
                 // renderingFinished called after transition end
                 this.events.renderingFinished(options);
@@ -114,4 +114,4 @@ Jos visualisoinnissa on animaatioita tai asynkronisia funktioita hahmontamista v
 
 ## <a name="rendering-events-for-visual-certification"></a>Tapahtumien hahmontaminen visuaalista sertifiointia varten
 
-Visualisointitapahtumien hahmontamisen tuki on yksi visualisointien sertifioinnin edellytyksistä. Lue lisätietoja [sertifioinnin edellytyksistä](https://docs.microsoft.com/power-bi/power-bi-custom-visuals-certified?#certification-requirements)
+Yksi visualisointien sertifioinnin edellytyksistä on visualisointitapahtumien hahmontamisen tuki. Lisätietoja on artikkelissa [Sertifioinnin edellytykset](https://docs.microsoft.com/power-bi/power-bi-custom-visuals-certified?#certification-requirements).

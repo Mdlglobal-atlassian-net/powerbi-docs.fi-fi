@@ -1,6 +1,6 @@
 ---
-title: Lajittele
-description: Power BI:n visualisoinnin oletusarvoiset lajittelutoiminnot.
+title: Power BI -visualisointien lajitteluasetukset
+description: Tässä artikkelissa käsitellään Power BI:n visualisointien lajittelutoiminnon oletusasetuksia.
 author: zBritva
 ms.author: v-ilgali
 manager: rkarlin
@@ -9,22 +9,22 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: f3d913e2bce34850dfae4c9486b2e43c78521a58
-ms.sourcegitcommit: 473d031c2ca1da8935f957d9faea642e3aef9839
+ms.openlocfilehash: cecec80dc9fe8570535cbd1e0c1e7114363472d8
+ms.sourcegitcommit: b602cdffa80653bc24123726d1d7f1afbd93d77c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68424512"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70236669"
 ---
-# <a name="sorting-options"></a>Lajitteluasetukset
+# <a name="sorting-options-for-power-bi-visuals"></a>Power BI -visualisointien lajitteluasetukset
 
-`Sorting` määrittää visualisoinnin oletusarvoiset lajitteluntoiminnot.
-Ominaisuus edellyttää jonkin alla kuvatuista parametreista:
+Tässä artikkelissa kuvataan, miten*lajittelu*asetukset määrittävät Power BI:n visualisointien lajittelun toiminnan. 
+
+Lajittelutoiminto edellyttää jotakin seuraavista parametreista.
 
 ## <a name="default-sorting"></a>Oletuslajittelu
 
-`default`-asetus on yksinkertaisin muoto. Sen avulla voidaan lajitella DataMappings-osassa esitettyjä tietoja.
-Tämä vaihtoehdon myötä käyttäjällä on mahdollisuus lajitella DataMappings ja määrittää lajittelusuunta.
+`default`-asetus on yksinkertaisin muoto. Sen avulla voidaan lajitella DataMappings-osassa esitettyjä tietoja. Tämän vaihtoehdon avulla käyttäjä voi lajitella tietojen yhdistämiset ja määrittää lajittelusuunnan.
 
 ```json
     "sorting": {
@@ -36,15 +36,12 @@ Tämä vaihtoehdon myötä käyttäjällä on mahdollisuus lajitella DataMapping
 
 ## <a name="implicit-sorting"></a>Implisiittinen lajittelu
 
-`implicit` on lajittelua matriisiparametrilla `clauses`, joka kuvailee kunkin tietoroolin lajittelun.
-`implicit` tarkoittaa, että visualisoinnin käyttäjä ei voi muuttaa lajittelujärjestystä.
-Power BI ei näytä lajitteluasetuksia visualisoinnin valikossa. Power BI kuitenkin lajittelee tiedot määritettyjen asetusten mukaan.
+Implisiittinen lajittelu on lajittelua matriisiparametrilla `clauses`, joka kuvailee jokaisen tietoroolin lajittelun. `implicit` tarkoittaa, että visualisoinnin käyttäjä ei voi muuttaa lajittelujärjestystä. Power BI ei näytä lajitteluasetuksia visualisoinnin valikossa. Power BI kuitenkin lajittelee tiedot määritettyjen asetusten mukaan.
 
 `clauses`-parametrit voivat sisältää useita objekteja, joilla on kaksi parametria:
 
-- `role`-parametrilla lajittelulle määritetään `DataMapping`.
-
-- `direction`-parametrilla lajittelulle määritetään suunta (1 = nouseva, 2 = laskeva).
+- `role`: lajittelulle määritetään `DataMapping`
+- `direction`: lajittelulle määritetään suunta (1 = nouseva, 2 = laskeva)
 
 ```json
     "sorting": {
@@ -65,4 +62,4 @@ Power BI ei näytä lajitteluasetuksia visualisoinnin valikossa. Power BI kuiten
 
 ## <a name="custom-sorting"></a>Mukautettu lajittelu
 
-`custom` tarkoittaa, että kehittäjä hallitsee lajittelua visualisoinnin koodin kautta.
+Mukautettu lajittelu tarkoittaa sitä, että kehittäjä hallitsee lajittelua visualisoinnin koodissa.

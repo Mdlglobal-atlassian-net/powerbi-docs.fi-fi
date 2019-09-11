@@ -1,7 +1,7 @@
 ---
 title: Power BI:n QR-koodin lukeminen mobiililaitteella
 description: Power BI:n QR-koodien avulla voit yhdistää mitä tahansa todellisesta maailmasta suoraan siihen liittyviin BI-tietoihin iPhone- ja Android-laitteissa toimivissa Power BI ‑mobiilisovelluksissa.
-author: mshenhav
+author: KesemSharabi
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
@@ -9,12 +9,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 03/13/2018
 ms.author: mshenhav
-ms.openlocfilehash: 8b994dfd44a999b877a906571027f5fcb55d9924
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 69c0e5279389c186471aa0a6068d88917cf6fc65
+ms.sourcegitcommit: b602cdffa80653bc24123726d1d7f1afbd93d77c
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "60972853"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70236759"
 ---
 # <a name="scan-a-power-bi-qr-code-from-your-mobile-device"></a>Power BI:n QR-koodin lukeminen mobiililaitteella
 Koskee seuraavia:
@@ -35,7 +35,7 @@ Jos työtoverisi ei ole jakanut koontinäyttöä tai raporttia sinulle, voit pyy
 > Voit myös [lukea raportin QR-koodin Power BI ja tehostettu todellisuus -sovelluksessa](mobile-mixed-reality-app.md#scan-a-report-qr-code-in-holographic-view).
 
 ## <a name="scan-a-power-bi-qr-code-on-your-iphone-with-the-power-bi-scanner"></a>Power BI:n QR-koodin lukeminen iPhonella Power BI ‑viivakoodinlukijan avulla
-1. Avaa Power BI ‑mobiilisovelluksen vasemmasta yläkulmasta yleinen siirtymisvalikko ![](media/mobile-apps-qr-code/power-bi-iphone-global-nav-button.png). 
+1. Avaa Power BI -mobiilisovelluksen vasemmasta yläkulmasta yleinen siirtymisvalikko ![](media/mobile-apps-qr-code/power-bi-iphone-global-nav-button.png). 
 2. Vieritä alaspäin kohtaan **skanneri** ja valitse se. 
    
     ![](media/mobile-apps-qr-code/power-bi-iphone-scanner-menu.png)

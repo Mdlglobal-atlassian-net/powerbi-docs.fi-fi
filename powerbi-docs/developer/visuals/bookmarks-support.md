@@ -1,5 +1,5 @@
 ---
-title: Kirjanmerkit
+title: Kirjanmerkkien tuen lisääminen Power BI -visualisoinneille
 description: Kirjanmerkkien välillä siirtyminen Power BI -visualisoinnissa
 author: zBritva
 ms.author: v-ilgali
@@ -9,57 +9,54 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: 90e3fc73cd49a5c84a5c2acc68a8cf5e0e4aa42b
-ms.sourcegitcommit: 473d031c2ca1da8935f957d9faea642e3aef9839
+ms.openlocfilehash: c7fb8fa6fcf8c07f0d8f466892fff8d03a492a79
+ms.sourcegitcommit: b602cdffa80653bc24123726d1d7f1afbd93d77c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68425501"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70237287"
 ---
-# <a name="add-bookmarks-support-for-power-bi-visuals"></a>Kirjanmerkkien tuen lisääminen Power BI -visualisoinneille
+# <a name="add-bookmark-support-for-power-bi-visuals"></a>Kirjanmerkkien tuen lisääminen Power BI -visualisoinneille
 
 Power BI -raportin kirjanmerkit mahdollistavat raporttisivun määritetyn näkymän tallentamisen, valintatilan ja visualisoinnin suodatustilan. Kirjanmerkin tukeminen ja muutoksiin reagoiminen vaatii mukautetulta visualisoinnilta kuitenkin lisätoimia.
 
-Lue lisää kirjanmerkeistä [dokumentaatiosta](https://docs.microsoft.com/power-bi/desktop-bookmarks)
+Lisätietoja kirjanmerkeistä on artikkelissa [Merkityksellisten tietojen jakaminen ja tarinoiden luominen Power BI:ssä kirjanmerkkien avulla](https://docs.microsoft.com/power-bi/desktop-bookmarks).
 
 ## <a name="report-bookmarks-support-in-your-visual"></a>Raportin kirjanmerkkien tuki visualisoinnissa
 
 Jos visualisointisi on vuorovaikutuksessa muiden visualisointien kanssa, valitsee arvopisteitä tai suodattaa muita visualisointeja, sinun on palautettava tila ominaisuuksista.
 
-## <a name="how-to-add-report-bookmarks-support"></a>Raportin kirjanmerkkien tuen lisääminen
+## <a name="add-report-bookmarks-support"></a>Raportin kirjanmerkkien tuen lisääminen
 
-1. Asenna (tai päivitä) vaadittu apuohjelma: `powerbi-visuals-utils-interactivityutils`(https://github.com/Microsoft/PowerBI-visuals-utils-interactivityutils/) versio 3.0.0 tai uudempi). Se sisältää lisäluokkia, joita voi käsitellä tilanvalitsimen tai suodattimen avulla. Se vaaditaan suodatinvisualisointeihin ja mihin tahansa visualisointiin, jossa on käytössä `InteractivityService`.
+1. Asenna (tai päivitä) tarvittava apuohjelma [powerbi-visuals-utils-interactivityutils](https://github.com/Microsoft/PowerBI-visuals-utils-interactivityutils/), versio 3.0.0 tai uudempi versio. Se sisältää lisäluokkia, joita voi käsitellä tilanvalitsimen tai suodattimen avulla. Se vaaditaan suodatinvisualisointeihin ja mihin tahansa visualisointiin, jossa on käytössä `InteractivityService`.
 
-2. Päivitä visualisoinnin ohjelmointirajapinta versioon 1.11.0, niin voit käyttää kohdetta `registerOnSelectCallback` esiintymässä `SelectionManager`. Se vaaditaan visualisoinneille, joissa ei ole suodattimia ja joissa on käytössä pelkkä `SelectionManager` eikä `InteractivityService`.
+2. Päivitä visualisointien ohjelmointirajapinta versioon 1.11.0, jotta voit käyttää kohdetta `registerOnSelectCallback` `SelectionManager`-esiintymässä. Se vaaditaan visualisoinneille, joissa ei ole suodattimia ja joissa on käytössä pelkkä `SelectionManager` eikä `InteractivityService`.
 
-### <a name="how-custom-visuals-interact-with-power-bi-in-the-report-bookmarks-scenario"></a>Miten mukautetut visualisoinnit toimivat Power BI:n kanssa raportin kirjanmerkit-skenaariossa
+### <a name="how-custom-visuals-interact-with-power-bi-in-report-bookmarks"></a>Mukautettujen visualisointien vuorovaikutus Power BI:n kanssa raportin kirjanmerkeissä
 
-Katsotaan seuraavaa esimerkkiä: Käyttäjä luo useita kirjanmerkkejä raporttisivulla, niin että jokaisessa kirjanmerkissä on eri valintatila.
+Ajatellaanpa seuraavaa skenaariota: haluat luoda raporttisivulle useita kirjanmerkkejä, joista jokaisessa on eri valintatila.
 
-Ensin käyttäjä valitsee visualisoinnissasi arvopisteen. Visualisointi on vuorovaikutuksessa Power BI:n ja muiden visualisointien kanssa välittämällä valinnat isännälle. Tämän jälkeen käyttäjä valitsee vaihtoehdon Lisää kohdassa `Bookmark panel` ja Power BI tallentaa uuden kirjanmerkin senhetkiset valinnat.
+Ensin valitset visualisoinnissasi arvopisteen. Visualisointi on vuorovaikutuksessa Power BI:n ja muiden visualisointien kanssa välittämällä valinnat isännälle. Tämän jälkeen valitset **Lisää**-vaihtoehdon **Kirjanmerkki**-ruudussa, jolloin Power BI tallentaa senhetkiset valinnat uutta kirjanmerkkiä varten.
 
-Tämä toistuu useasti, kun käyttäjä muuttaa valintaa ja lisää uusia kirjanmerkkejä.
-Luotuaan kirjanmerkit käyttäjä voi vaihtaa niiden välillä.
+Tämä toistuu useasti, kun muutat valintaa ja lisäät uusia kirjanmerkkejä. Kun olet luonut kirjanmerkit, voit siirtyä kirjanmerkistä toiseen.
 
-Kun käyttäjät valitsevat kirjanmerkin, Power BI palauttaa tallennetun suodattimen tai valintatilan ja välittää ne visualisointeihin. Muut visualisoinnit korostetaan tai suodatetaan kirjanmerkkiin tallennetun tilan mukaan. Power BI -isäntä vastuussa toiminnoista. Visualisointisi on vastuussa siitä, että uusi valintatila ilmenee oikein (esimerkiksi hahmonnettujen arvopisteiden värin muuttuminen).
+Kun valitset kirjanmerkin, Power BI palauttaa tallennetun suodattimen tai valintatilan ja välittää ne visualisointeihin. Muut visualisoinnit korostetaan tai suodatetaan kirjanmerkkiin tallennetun tilan mukaan. Power BI -isäntä vastaa toiminnoista. Visualisointisi on vastuussa siitä, että uusi valintatila ilmenee oikein (esimerkiksi hahmonnettujen arvopisteiden värin muuttuminen).
 
 Uusi valintatila välitetään visualisoinnille `update`-menetelmän avulla. `options`-argumentti sisältää erikoisominaisuuden: `options.jsonFilters`. Se on JSONFilter, ominaisuus, jossa voi olla `Advanced Filter` ja `Tuple Filter`.
 
-Visualisoinnin pitäisi palauttaa suodatinarvot näyttämään vastaavaa visualisoinnin tilaa valitulle kirjanmerkille.
+Visualisoinnin pitäisi palauttaa suodatinarvot näyttämään vastaavaa visualisoinnin tilaa valitulle kirjanmerkille. Jos visualisointi käyttää vain valintoja, voit käyttää myös vastakutsufunktiota, joka on rekisteröity ISelectionManagerin `registerOnSelectCallback`-menetelmäksi.
 
-Voit käyttää myös vastakutsufunktiota. Kutsu ISelectionManagerin rekisteröityä `registerOnSelectCallback`-menetelmää, jos visualisointi käyttää vain valintoja.
+### <a name="visuals-with-selection"></a>Valinnan sisältävät visualisoinnit
 
-### <a name="visuals-with-selections"></a>Valintoja sisältävät visualisoinnit
+Jos visualisointi on vuoro vaikutuksessa muiden visualisointien kanssa [Valinta](https://github.com/Microsoft/PowerBI-visuals/blob/master/Tutorial/Selection.md)-toiminnon kautta, voit lisätä kirjanmerkkejä kahdella tavalla:
 
-Jos visualisointisi ovat vuorovaikutuksessa muiden visualisointien kanssa käyttämällä [valintoja](https://github.com/Microsoft/PowerBI-visuals/blob/master/Tutorial/Selection.md), voit lisätä kirjanmerkkejä kahdella tavalla.
+* Jos visualisointi ei ole jo käyttänyt [InteractivityService](https://github.com/Microsoft/powerbi-visuals-utils-interactivityutils/blob/master/docs/api/interactivityService.md)-palvelua, voit käyttää `FilterManager.restoreSelectionIds`-menetelmää.
 
-* Voit käyttää `FilterManager.restoreSelectionIds`-menetelmää, jos visualisoinnin **käytössä ei aiemmin ollut [`InteractivityService`](https://github.com/Microsoft/powerbi-visuals-utils-interactivityutils/blob/master/docs/api/interactivityService.md)** .
+* Jos visualisointi käyttää jo [InteractivityService](https://github.com/Microsoft/powerbi-visuals-utils-interactivityutils/blob/master/docs/api/interactivityService.md)-palvelua jo valintojen hallintaan, käytä `applySelectionFromFilter`-menetelmää `InteractivityService`-esiintymällä.
 
-* Jos visualisoinnissa on käytössä **[`InteractivityService`](https://github.com/Microsoft/powerbi-visuals-utils-interactivityutils/blob/master/docs/api/interactivityService.md)** valintojen hallintaan, käytä `applySelectionFromFilter`-menetelmää esiintymässä `InteractivityService`.
+#### <a name="use-iselectionmanagerregisteronselectcallback"></a>Kohteen ISelectionManager.registerOnSelectCallback käyttäminen
 
-#### <a name="using-iselectionmanagerregisteronselectcallback"></a>Käytössä `ISelectionManager.registerOnSelectCallback`
-
-Kun käyttäjä napsauttaa kirjanmerkkejä, Power BI kutsuu vastaavat valinnat sisältävän visualisoinnin `callback`-menetelmän. 
+Kun valitset kirjanmerkin, Power BI kutsuu vastaavat valinnat sisältävän visualisoinnin `callback`-menetelmän. 
 
 ```typescript
 this.selectionManager.registerOnSelectCallback(
@@ -69,7 +66,7 @@ this.selectionManager.registerOnSelectCallback(
 );
 ```
 
-Oletetaan, että sinulla on visualisoinnissasi [`'visualTransform'`](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/blob/master/src/barChart.ts#L74)-menetelmällä luotu arvopiste.
+Oletetaan, että visualisoinnissasi on arvopiste, joka on luotu [visualistransform](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/blob/master/src/barChart.ts#L74)-menetelmällä.
 
 Ja `datapoints` näyttää tältä:
 
@@ -84,7 +81,7 @@ visualDataPoints.push({
 });
 ```
 
-Joten sinulla on arvopisteinäsi `visualDataPoints` ja `ids`-matriisi on välitetty `callback`-funktioon.
+Nyt sinulla on arvopisteinäsi `visualDataPoints`, ja `ids`-matriisi on välitetty `callback`-funktioon.
 
 Tässä vaiheessa visualisoinnin pitäisi verrata `ISelectionId[]`-matriisia ja `visualDataPoints`-matriisisi valintoja sekä merkitä vastaavat arvopisteet valituiksi.
 
@@ -104,17 +101,19 @@ this.selectionManager.registerOnSelectCallback(
 
 Arvopisteiden päivittämisen jälkeen ne kuvastavat `filter`-objektiin tallennettua nykyistä valintatilaa. Kun arvopisteet hahmonnetaan, mukautetun visualisoinnin valintatila vastaa kirjanmerkin tilaa.
 
-### <a name="using-interactivityservice-for-control-selections-in-the-visual"></a>`InteractivityService`-apuohjelman käyttö valintojen hallintaan visualisoinnissa
+### <a name="use-interactivityservice-for-control-selections-in-the-visual"></a>InteractivityService-palvelun käyttäminen valintojen hallintaan visualisoinnissa
 
 Jos visualisointisi käytössä on `InteractivityService`, et tarvitse lisätoimintoja visualisoinnin kirjanmerkkien tukemiseksi.
 
-Apuohjelma käsittelee visualisoinnin valintatilan, kun käyttäjä valitsee kirjanmerkkejä.
+Kun valitset kirjanmerkit, apuohjelma käsittelee visualisoinnin valintatilan.
 
-### <a name="visuals-with-filter"></a>Suodattimen sisältämät visualisoinnit
+### <a name="visuals-with-a-filter"></a>Suodattimen sisältämät visualisoinnit
 
-Oletetaan, että visualisointi luo tietojen suodattimen päivämääräalueen mukaan. Alueen alussa on siis `startDate` ja lopussa `endDate`.
-Visualisointi luo lisäsuodatuksen ja kutsuu isäntämenetelmää `applyJsonFilter` tietojen suodattamiseksi asiaankuuluvan ehdon mukaan.
-`target` on suodatustaulukko.
+Oletetaan, että visualisointi luo tietojen suodattimen päivämääräalueen mukaan. Sinulla on `startDate` ja `endDate` alueen alkamis-ja päättymispäivämäärinä.
+
+Visualisointi luo lisäsuodattimen ja kutsuu isäntämenetelmää `applyJsonFilter` tietojen suodattamiseksi asiaankuuluvan ehdon mukaan.
+
+Kohde on suodattamiseen käytettävä taulukko.
 
 ```typescript
 import { AdvancedFilter } from "powerbi-models";
@@ -145,7 +144,7 @@ this.host.applyJsonFilter(
 );
 ```
 
-Aina, kun käyttäjä napsauttaa kirjan merkkiä, mukautettu visualisointi saa `update`-kutsun.
+Aina, kun valitse kirjanmerkin, mukautettu visualisointi saa `update`-kutsun.
 
 Mukautetun visualisoinnin pitäisi tarkistaa objektin suodatin:
 
@@ -176,21 +175,21 @@ if (jsonFilters
 }
 ```
 
-Sen jälkeen visualisoinnin pitäisi muuttaa sisäistä tilaansa – arvopisteitä ja visualisoinnin objekteja (viivoja, suorakulmioita jne.) – vastaamaan voimassa olevia ehtoja.
+Sen jälkeen visualisoinnin tulee muuttaa sisäinen tilansa nykyisten ehtojen mukaiseksi. Sisäinen tila sisältää arvopisteet ja visualisointiobjektit (kuten viivat ja suorakulmiot).
 
 > [!IMPORTANT]
-> Raportin kirjanmerkit -skenaariossa visualisoinnin ei pitäisi kutsua kohdetta `applyJsonFilter` muiden visualisointien suodattamiseen – Power BI on jo suodattanut ne.
+> Raportin kirjanmerkit -skenaariossa visualisoinnin ei pitäisi kutsua kohdetta `applyJsonFilter` muiden visualisointien suodattamiseen. Power BI on jo suodattanut ne.
 
-Aikajanan osittajan visualisointi muuttaa alueen valitsimen vastaamaan tietoalueita.
+Aikajanan osittajan visualisointi muuttaa alueen valitsimen tietoalueita vastaavaksi.
 
 Jos haluat lisätietoja, tutustu [aikajanan osittajan säilöön.](https://github.com/Microsoft/powerbi-visuals-timeline/commit/606f1152f59f82b5b5a367ff3b117372d129e597?diff=unified#diff-b6ef9a9ac3a3225f8bd0de84bee0a0df)
 
-### <a name="filter-state-to-save-visual-properties-in-bookmarks"></a>Suodatustila kirjanmerkkien visuaalisten ominaisuuksien tallentamista varten
+### <a name="filter-the-state-to-save-visual-properties-in-bookmarks"></a>Kirjanmerkkien visuaalisten ominaisuuksien tallentaminen tilan suodattamisen avulla
 
 `filterState`-ominaisuus tekee suodatuksen osasta ominaisuuden. Visualisointi voi tallentaa kirjanmerkkeihin eri arvoja.
 
-Jos ominaisuuden arvo halutaan tallentaa suodatustilana, objektin ominaisuudeksi on merkittävä `"filterState": true` kohteessa `capabilities.json`.
+Jos haluat tallentaa ominaisuuden arvon suodatintilaksi, merkitse objektin ominaisuuden asetukseksi `"filterState": true` tiedostossa *capabilities.json*.
 
-Esimerkki: `Timeline Slicer` tallentaa `Granularity`-ominaisuusarvot suodattimeen. Sen avulla nykyistä askelväliä voi muuttaa käyttäjän muuttaessa kirjanmerkkejä.
+Esimerkiksi Aikajanan osittaja tallentaa `Granularity`-ominaisuuden arvot suodattimeen. Sen avulla nykyinen askelväli muuttuu, kun vaihdat kirjanmerkkejä.
 
-Jos haluat lisätietoja, tutustu [aikajanan osittajan säilöön](https://github.com/microsoft/powerbi-visuals-timeline/commit/8b7d82dd23cd2bd71817f1bc5d1e1732347a185e#diff-290828b604cfa62f1cb310f2e90c52fdR334);
+Jos haluat lisätietoja, tutustu [aikajanan osittajan säilöön.](https://github.com/microsoft/powerbi-visuals-timeline/commit/8b7d82dd23cd2bd71817f1bc5d1e1732347a185e#diff-290828b604cfa62f1cb310f2e90c52fdR334)

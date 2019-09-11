@@ -1,6 +1,6 @@
 ---
-title: Visualisointien työkaluvihjeet
-description: Power BI:n visualisoinnit voivat näyttää työkaluvihjeitä
+title: Power BI:n visualisointien työkaluvihjeet
+description: Tässä artikkelissa kerrotaan, miten voit näyttää työkaluvihjeet Power BI:n visualisoinneissa.
 author: AviSander
 ms.author: asander
 manager: rkarlin
@@ -9,32 +9,32 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: 286c5eef2c341ad77c351008b321992597bef292
-ms.sourcegitcommit: 473d031c2ca1da8935f957d9faea642e3aef9839
+ms.openlocfilehash: 5ad14c632955c42607206dd09a16a8fdb3670e92
+ms.sourcegitcommit: b602cdffa80653bc24123726d1d7f1afbd93d77c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68425639"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70237379"
 ---
-# <a name="power-bi-visuals-tooltips"></a>Power BI:n visualisointien työkaluvihjeet
+# <a name="tooltips-in-power-bi-visuals"></a>Power BI:n visualisointien työkaluvihjeet
 
 Visualisoinnit voivat nyt hyödyntää Power BI:n työkaluvihjetukea. Power BI:n työkaluvihjeet käsittelevät seuraavia toimia:
 
-Näytä työkaluvihje.
-Piilota työkaluvihje.
-Siirrä työkaluvihje.
+* Näytä työkaluvihje.
+* Piilota työkaluvihje.
+* Siirrä työkaluvihje.
 
-Työkaluvihjeet voivat näyttää tekstimuotoisen elementin, jolla on otsikko, tietyn värinen arvo ja peittävyys määritettyjen koordinaattien rajoissa. Nämä tiedot annetaan ohjelmointirajapinnalle. Power BI -isäntä tekee sen samalla tavalla kuin työkaluvihjeiden hahmontamisen alkuperäisille visualisoinneille.
+Työkaluvihjeet voivat näyttää tekstimuotoisen elementin, jolla on otsikko, tietyn värinen arvo ja peittävyys määritettyjen koordinaattien rajoissa. Nämä tiedot toimitetaan ohjelmointirajapinnalle, ja Power BI -isäntä tekee sen samalla tavalla kuin työkaluvihjeiden hahmontamisen alkuperäisille visualisoinneille.
 
-Esimerkiksi palkkikaaviomallin työkaluvihjeet.
+Seuraavassa kuvassa näkyy työkaluvihje mallipalkkikaaviossa:
 
 ![Palkkikaaviomallin työkaluvihjeet](./media/tooltips-in-samplebarchart.png)
 
-Yllä oleva työkaluvihje havainnollistaa yksittäistä palkkiluokkaa ja arvoa. Se voidaan laajentaa näyttämään useita arvoja yksittäisessä työkaluvihjeessä.
+Edellä oleva työkaluvihjeen kuva havainnollistaa yksittäistä palkkiluokkaa ja arvoa. Voit laajentaa yksittäisen työkaluvihjeen näyttämään useita arvoja.
 
-## <a name="handling-tooltips"></a>Työkaluvihjeiden käsittely
+## <a name="manage-tooltips"></a>Työkaluvihjeiden hallinta
 
-Käyttöliittymä, jonka kautta voit hallita työkaluvihjeitä, on ITooltipService. Tällä käyttöliittymällä ilmoitetaan isännälle, että työkaluvihje täytyy näyttää, poistaa tai siirtää.
+Käyttöliittymä, jonka kautta voit hallita työkaluvihjeitä, on ITooltipService. Sen avulla ilmoitetaan isännälle, että työkaluvihje täytyy näyttää, poistaa tai siirtää.
 
 ```typescript
     interface ITooltipService {
@@ -45,21 +45,23 @@ Käyttöliittymä, jonka kautta voit hallita työkaluvihjeitä, on ITooltipServi
     }
 ```
 
-Visualisoinnin on kuunneltava hiiren tapahtumia visualisoinnissa ja tarvittaessa kutsuttava `Tooltip****Options`-objekteissa täytetyt asianmukaisen sisällön sisältävät `show()`-, `move()`- ja `hide()`-delegaatit.
+Visualisoinnin on kuunneltava hiiren tapahtumia visualisoinnissa ja tarvittaessa kutsuttava `Tooltip****Options`-objekteissa täytetyt asianmukaisen sisällön sisältävät `show()`-, `move()`- ja `hide()`-edustajat.
 `TooltipShowOptions` ja `TooltipHideOptions` puolestaan määrittävät, mitä näytetään ja miten näissä tapahtumissa käyttäydytään.
-Koska näiden menetelmien kutsuminen edellyttäisi käyttäjätapahtumia, kuten hiiren liikkeitä tai kosketustapahtumia, kannattaa tapahtumille luoda kuuntelutoimintoja, jotka puolestaan kutsuvat `TooltipService`-jäseniä.
+
+Koska näiden menetelmien kutsuminen edellyttää käyttäjätapahtumia, kuten hiiren liikkeitä tai kosketustapahtumia, kannattaa tapahtumille luoda kuuntelutoimintoja, jotka puolestaan kutsuvat `TooltipService`-jäseniä.
 Mallimme koostuu luokkaan nimeltä `TooltipServiceWrapper`.
 
-### <a name="tooltipservicewrapper-class"></a>TooltipServiceWrapper-luokka
+### <a name="the-tooltipservicewrapper-class"></a>TooltipServiceWrapper-luokka
 
-Tämän luokan perusajatuksena on säilyttää kohteen `TooltipService` esiintymä, kuunnella D3-hiiritapahtumia merkityksellisissä elementeissä ja kutsua sitten `show()` ja `hide()` tarvittaessa.
-Luokka sisältää ja hallitsee näiden tapahtumien mitä tahansa asiaankuuluvaa tilaa ja logiikkaa, jotka useimmiten on tarkoitettu toimimaan yhdessä pohjana olevan D3-koodin kanssa. D3-liitäntöjä ja -muuntoa ei voida käsitellä tässä asiakirjassa.
+Tämän luokan perusajatuksena on säilyttää kohteen `TooltipService` esiintymä, kuunnella D3-hiiritapahtumia merkityksellisissä elementeissä ja kutsua sitten elementtejä `show()` ja `hide()` tarvittaessa.
 
-Koko mallikoodi on [SampleBarChart-visualisointisäilössä](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/981b021612d7b333adffe9f723ab27783c76fb14)
+Luokka sisältää ja hallitsee näiden tapahtumien mitä tahansa asiaankuuluvaa tilaa ja logiikkaa, jotka useimmiten on tarkoitettu toimimaan yhdessä pohjana olevan D3-koodin kanssa. D3-liitäntöjä ja -muuntoa ei voida käsitellä tässä artikkelissa.
 
-### <a name="creating-tooltipservicewrapper"></a>TooltipServiceWrapperin luominen
+Koko mallikoodi on [SampleBarChart-visualisointisäilössä](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/981b021612d7b333adffe9f723ab27783c76fb14).
 
-Barchart-konstruktorilla on nyt `tooltipServiceWrapper`-jäsen, joka on muodostettu konstruktorilla, jolla on `tooltipService`-isäntäesiintymä.
+### <a name="create-tooltipservicewrapper"></a>TooltipServiceWrapper-kohteen luominen
+
+Palkkikaaviokonstruktorilla on nyt `TooltipServiceWrapper`-jäsen, joka on muodostettu konstruktorilla, jolla on `tooltipService`-isäntäesiintymä.
 
 ```typescript
         private tooltipServiceWrapper: ITooltipServiceWrapper;
@@ -89,7 +91,7 @@ Barchart-konstruktorilla on nyt `tooltipServiceWrapper`-jäsen, joka on muodoste
 
 Tämän luokan ainoa aloituskohta tapahtuman kuuntelijoiden rekisteröimiseen on `addTooltip`-menetelmä.
 
-### <a name="addtooltip-method"></a>addTooltip-menetelmä
+### <a name="the-addtooltip-method"></a>AddTooltip-menetelmä
 
 ```typescript
         public addTooltip<T>(
@@ -106,20 +108,19 @@ Tämän luokan ainoa aloituskohta tapahtuman kuuntelijoiden rekisteröimiseen on
         }
 ```
 
-* **selection: d3.Selection<Element>**
-* D3-elementit, joissa työkaluvihjeet käsitellään
-* **getTooltipInfoDelegate: (args: TooltipEventArgs<T>) => VisualTooltipDataItem[]**
-* Edustaja työkaluvihjeen sisällön täyttämiseen (mitä näytetään) kontekstin mukaan
-* **getDataPointIdentity: (args: TooltipEventArgs<T>) => ISelectionId**
-* Edustaja, joka hakee arvopistetunnuksen – ei käytetä tässä mallissa 
-* **reloadTooltipDataOnMouseMove?: boolean**
-* Totuusarvo, joka ilmaisee, päivitetäänkö työkaluvihjeen tiedot mouseMove-tapahtuman aikana – ei käytössä tässä mallissa
+* **selection: d3.Selection<Element>** : D3-elementit, joissa työkaluvihjeet käsitellään.
 
-kuten näet, `addTooltip` poistuu ilman toimia, jos `tooltipService` on poistettu käytöstä tai jos todellista valintaa ei ole.
+* **getTooltipInfoDelegate: (args: TooltipEventArgs<T>) => VisualTooltipDataItem[]** : Edustaja työkaluvihjeen sisällön täyttämiseen (mitä näytetään) kontekstin mukaan.
 
-### <a name="call-of-show-method-to-display-a-tooltip"></a>Show-menetelmän kutsuminen työkaluvihjeen näyttämiseksi
+* **getDataPointIdentity: (args: TooltipEventArgs<T>) => ISelectionId**: Edustaja, joka hakee arvopistetunnuksen (ei käytetä tässä mallissa). 
 
-`addTooltip` kuuntelee seuraavaksi `mouseover`-D3-tapahtumaa.
+* **reloadTooltipDataOnMouseMove? boolean**: Totuusarvo, joka ilmaisee, päivitetäänkö työkaluvihjeen tiedot MouseMove-tapahtuman aikana (ei käytössä tässä mallissa).
+
+Kuten näet, `addTooltip` poistuu ilman toimia, jos `tooltipService` on poistettu käytöstä tai jos todellista valintaa ei ole.
+
+### <a name="call-the-show-method-to-display-a-tooltip"></a>Show-menetelmän kutsuminen työkaluvihjeen näyttämiseksi
+
+`addTooltip`-menetelmä kuuntelee D3-`mouseover`-tapahtumaa seuraavassa koodissa esitetyllä tavalla:
 
 ```typescript
         ...
@@ -148,22 +149,21 @@ kuten näet, `addTooltip` poistuu ilman toimia, jos `tooltipService` on poistett
         });
 ```
 
-* **makeTooltipEventArgs**
-* Purkaa kontekstin D3:n valituista elementeistä kohteeseen tooltipEventArgs. Laskee myös koordinaatit.
-* **getTooltipInfoDelegate**
-* Luo työkaluvihjeen sisällön kohteesta tooltipEventArgs. Vastakutsu BarChart-luokkaan, koska se on visualisoinnin logiikka. Todellinen työkaluvihjeessä näytettävä tekstisisältö.
-* **getDataPointIdentity**
-* Ei käytössä tässä mallissa
-* **this.visualHostTooltipService.show**
-* Työkaluvihjeen näyttämiseen käytettävä kutsu  
+* **makeTooltipEventArgs**: Purkaa kontekstin D3:n valituista elementeistä kohteeseen tooltipEventArgs. Laskee myös koordinaatit.
+
+* **getTooltipInfoDelegate**: Luo työkaluvihjeen sisällön kohteesta tooltipEventArgs. Vastakutsu BarChart-luokkaan, koska se on visualisoinnin logiikka. Todellinen työkaluvihjeessä näytettävä tekstisisältö.
+
+* **getDataPointIdentity**: Ei käytetä tässä mallissa.
+
+* **this.visualHostTooltipService.show**: Työkaluvihjeen näyttämiseen käytettävä kutsu.  
 
 Lisäkäsittelyä on `mouseout`- ja `mousemove`-tapahtumien mallissa.
 
 Jos haluat lisätietoja, tutustu [SampleBarChart-visualisointisäilöön](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/981b021612d7b333adffe9f723ab27783c76fb14).
 
-### <a name="populating-the-tooltip-content-by-gettooltipdata-method"></a>Työkaluvihjeen sisällön täyttäminen getTooltipData-menetelmällä
+### <a name="populate-the-tooltip-content-by-the-gettooltipdata-method"></a>Työkaluvihjeen sisällön täyttäminen getTooltipData-menetelmällä
 
-Kohteeseen `BarChart` lisättiin jäsen `getTooltipData`, joka yksinkertaisesti purkaa arvopisteen luokan, arvon ja värin VisualTooltipDataItem[]-elementtiin.
+BarChart-kohteeseen lisättiin jäsen `getTooltipData`, joka yksinkertaisesti purkaa arvopisteen `category`-, `value`- ja `color`-ominaisuudet VisualTooltipDataItem[]-elementtiin.
 
 ```typescript
         private static getTooltipData(value: any): VisualTooltipDataItem[] {
@@ -176,11 +176,11 @@ Kohteeseen `BarChart` lisättiin jäsen `getTooltipData`, joka yksinkertaisesti 
         }
 ```
 
-Yllä olevassa toteutuksessa jäsen `header` on vakio, mutta sitä voidaan käyttää monimutkaisempiin toteutuksiin, jotka edellyttävät dynaamisia arvoja. Voit täyttää kohteen `VisualTooltipDataItem[]` käyttäen useampaa kuin yhtä elementtiä, jolloin työkaluvihjeeseen lisätään useita rivejä. Se voi olla hyödyllistä visualisoinneissa, kuten pinotussa palkkikaaviossa, jossa työkaluvihje voi näyttää tietoja useammasta kuin yhdestä arvopisteestä.
+Edellisessä toteutuksessa jäsen `header` on vakio, mutta voit käyttää sitä monimutkaisempiin toteutuksiin, jotka edellyttävät dynaamisia arvoja. Voit täyttää kohteen `VisualTooltipDataItem[]` käyttäen useampaa kuin yhtä elementtiä, jolloin työkaluvihjeeseen lisätään useita rivejä. Se voi olla hyödyllistä visualisoinneissa, kuten pinotussa palkkikaaviossa, jossa työkaluvihje voi näyttää tietoja useammasta kuin yhdestä arvopisteestä.
 
-### <a name="calling-addtooltip-method"></a>AddTooltip-menetelmän kutsuminen
+### <a name="call-the-addtooltip-method"></a>AddTooltip-menetelmän kutsuminen
 
-Viimeinen vaihe on kutsua `addTooltip`, kun todelliset tiedot saattavat muuttua. Tämä kutsu tapahtuu `BarChart.update()`-menetelmässä. Kutsu tehdään kaikkien bar-elementtien valinnan valvomiseksi. Vain `BarChart.getTooltipData()` ohitetaan, kuten edellä mainittiin.
+Viimeinen vaihe on kutsua `addTooltip`-menetelmää, kun todelliset tiedot saattavat muuttua. Tämä kutsu tapahtuu `BarChart.update()`-menetelmässä. Kutsu tehdään kaikkien bar-elementtien valinnan valvomiseksi. Vain `BarChart.getTooltipData()` ohitetaan, kuten edellä mainittiin.
 
 ```typescript
         this.tooltipServiceWrapper.addTooltip(this.barContainer.selectAll('.bar'),
@@ -188,9 +188,9 @@ Viimeinen vaihe on kutsua `addTooltip`, kun todelliset tiedot saattavat muuttua.
             (tooltipEvent: TooltipEventArgs<number>) => null);
 ```
 
-## <a name="adding-report-page-tooltips"></a>Raporttisivun työkaluvihjeiden lisääminen
+## <a name="add-report-page-tooltips"></a>Raporttisivun työkaluvihjeiden lisääminen
 
-Jos haluat lisätä raporttisivun työkaluvihjeiden tuen, suurin osa muutoksista on tiedostossa capabilities.json.
+Jos haluat lisätä raporttisivun työkaluvihjeiden tuen, löydät suurimman osan muutoksista tiedostosta *capabilities.json*.
 
 Mallin rakenne on
 
@@ -208,19 +208,21 @@ Mallin rakenne on
 }
 ```
 
-Raporttisivun työkaluvihjeiden määritykset voidaan tehdä Muotoilu-ruudussa.
+Voit määrittää raporttisivun työkaluvihjeet **Muotoilu**-ruudussa.
 
 ![Raporttisivun työkaluvihje](media/report-page-tooltip.png)
 
-`supportedTypes` on visualisoinnin tukema työkaluvihjeiden määritys, joka heijastuu kenttään. `default` määrittää, tuetaanko tietokentän kautta tapahtuvaa ”automaattisten” työkaluvihjeiden sidontaa. canvas määrittää, tuetaanko raporttisivun työkaluvihjeitä.
+* `supportedTypes`: Visualisoinnin tukema työkaluvihjeiden määritys, joka näkyy kenttäsäilössä. 
+   * `default`: Määrittää, tuetaanko tietokentän kautta tapahtuvaa ”automaattisten” työkaluvihjeiden sidontaa. 
+   * `canvas`: Määrittää, tuetaanko raporttisivun työkaluvihjeitä.
 
-`roles` valinnainen. Määritettynä ohjaa, mitkä tietoroolit sidotaan valittuun työkaluvihjeasetukseen kentissä.
+* `roles`: (Valinnainen) Määritettynä ohjaa, mitkä tietoroolit sidotaan valittuun työkaluvihjeasetukseen kenttäsäilössä.
 
-Jos haluat lisätietoja, tutustu raporttisivun työkaluvihjeiden käyttöohjeisiin [Raporttisivun työkaluvihjeet](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2018-feature-summary/#tooltips)
+Lisätietoja on artikkelissa [Raporttisivun työkaluvihjeiden käyttöohjeet](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2018-feature-summary/#tooltips).
 
-Suorittaessaan kutsut `ITooltipService.Show(options: TooltipShowOptions)` tai `ITooltipService.Move(options: TooltipMoveOptions)` Power BI -isäntä käyttää selectionId:tä (yllä olevan `options`-argumentin `identities`-ominaisuus) raporttisivun työkaluvihjeen näyttämiseksi. SelectionId-tunnuksen tulisi edustaa työkaluvihjeen noutamia valittuja tietoja (luokka, sarja ja niin edelleen) siinä kohteessa, jonka päälle veit hiiren osoittimen.
+Power BI näyttää raporttisivun työkaluvihjeen `ITooltipService.Show(options: TooltipShowOptions)`- tai `ITooltipService.Move(options: TooltipMoveOptions)`-kutsun jälkeen käyttämällä selectionId-ominaisuutta (edeltävän `options`-argumentin `identities`-ominaisuus). SelectionId-tunnuksen tulisi edustaa työkaluvihjeen noutamia valittuja tietoja (luokka, sarja ja niin edelleen) siinä kohteessa, jonka päälle veit hiiren osoittimen.
 
-Esimerkki selectionId-kohteen lähettämisestä työkaluvihjeen näyttökutsuihin:
+Seuraavassa koodissa on esimerkki selectionId-kohteen lähettämisestä työkaluvihjeen näyttökutsuihin:
 
 ```typescript
     this.tooltipServiceWrapper.addTooltip(this.barContainer.selectAll('.bar'),

@@ -1,6 +1,6 @@
 ---
-title: Lisätietojen noutaminen
-description: Suurten tietojoukkojen segmentoidun noudon ottaminen käyttöön Power BI:n visualisoinneille
+title: Nouda enemmän tietoja Power BI:stä
+description: Tässä artikkelissa kuvataan suurten tietojoukkojen segmentoidun noudon ottaminen käyttöön Power BI:n visualisoinneille.
 author: AviSander
 ms.author: asander
 manager: rkarlin
@@ -9,23 +9,22 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: bc8ff673927fd66bf44164e4e9950c279b98c6c1
-ms.sourcegitcommit: 473d031c2ca1da8935f957d9faea642e3aef9839
+ms.openlocfilehash: 7e5ecc0e317a21d10e76e9413926822ac4d6760b
+ms.sourcegitcommit: b602cdffa80653bc24123726d1d7f1afbd93d77c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68425064"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70237150"
 ---
 # <a name="fetch-more-data-from-power-bi"></a>Nouda enemmän tietoja Power BI:stä
 
-Tietojen lisääminen ohjelmointirajapintaan on ylittänyt 30 000 arvopisteen kiinteän rajan. Se tuo tiedot lohkoina. Lohkon koko on määritettävissä suorituskyvyn parantamiseksi käyttötapauksen mukaan.  
+Tässä artikkelissa kerrotaan, miten voit ladata lisää tietoja, jos haluat ohittaa arvopisteen kiinteän 30 kt:n rajan. Tämä menetelmä antaa tiedot lohkoina. Voit parantaa suorituskykyä määrittämällä lohkon koon käyttötapauksesi mukaiseksi.  
 
-## <a name="enable-segmented-fetch-of-large-datasets"></a>Suurten tietojoukkojen segmentoidun noudon ottaminen käyttöön
+## <a name="enable-a-segmented-fetch-of-large-datasets"></a>Suurten tietojoukkojen segmentoidun noudon ottaminen käyttöön
 
-Määritä `dataview`-segmenttitilassa dataReductionAlgorithm-ikkuna visualisoinnin `capabilities.json`-tiedostossa vaaditulle dataViewMapping-määritykselle.
-`count` määrittää ikkunan koon, joka rajoittaa `dataview`-kohteeseen liitettyjen uusien tietorivien määrää kussakin päivityksessä.
+`dataview`-segmenttitilaksi määritetään dataReductionAlgorithm-kohteen ikkunan koko visualisoinnin *capabilities.json* -tiedostoon vaadittua dataViewMapping-määritystä varten. `count` määrittää ikkunan koon, joka rajoittaa `dataview`-kohteeseen liitettävien uusien tietorivien määrää jokaisessa päivityksessä.
 
-Lisätään capabilities.json-tiedostoon
+Lisää seuraava koodi *capabilities.json*-tiedostoon:
 
 ```typescript
 "dataViewMappings": [
@@ -47,9 +46,9 @@ Lisätään capabilities.json-tiedostoon
 
 Uudet segmentit lisätään olemassa olevaan `dataview`-kohteeseen ja annetaan visualisoinnille `update`-kutsuna.
 
-## <a name="usage-in-the-custom-visual"></a>Käyttö mukautetussa visualisoinnissa
+## <a name="usage-in-the-power-bi-visual"></a>Käyttö Power BI:n visualisoinnissa
 
-Merkintätietojen olemassaolo voidaan määrittää tarkistamalla, onko `dataView.metadata.segment` olemassa:
+Voit määrittää, onko tietoja olemassa, tarkistamalla, onko `dataView.metadata.segment` olemassa:
 
 ```typescript
     public update(options: VisualUpdateOptions) {
@@ -59,11 +58,9 @@ Merkintätietojen olemassaolo voidaan määrittää tarkistamalla, onko `dataVie
     }
 ```
 
-On myös mahdollista tarkistaa, onko kyseessä ensimmäinen vai myöhempi päivitys, tarkistamalla `options.operationKind`.
+Voit myös tarkistaa, onko kyseessä ensimmäinen päivitys vai myöhempi päivitys, tarkistamalla kohteen `options.operationKind`. Seuraavassa koodissa `VisualDataChangeOperationKind.Create` viittaa seuraavassa koodissa ensimmäiseen segmenttiin ja `VisualDataChangeOperationKind.Append` seuraaviin segmentteihin.
 
-`VisualDataChangeOperationKind.Create` tarkoittaa ensimmäistä segmenttiä ja `VisualDataChangeOperationKind.Append` tarkoittaa seuraavia segmenttejä.
-
-Esimerkki toteutuksesta on alla olevassa koodikatkelmassa:
+Malli toteutuksesta on seuraavassa koodikatkelmassa:
 
 ```typescript
 // CV update implementation
@@ -73,7 +70,7 @@ public update(options: VisualUpdateOptions) {
 
     }
 
-    // on second or subesquent segments:
+    // on second or subsequent segments:
     if (options.operationKind == VisualDataChangeOperationKind.Append) {
 
     }
@@ -82,24 +79,24 @@ public update(options: VisualUpdateOptions) {
 }
 ```
 
-`fetchMoreData`-menetelmä voidaan käynnistää myös käyttöliittymän tapahtumakäsittelijästä
+Voit myös käynnistää `fetchMoreData`-menetelmän käyttöliittymän tapahtumakäsittelijästä seuraavassa esitetyllä tavalla:
 
 ```typescript
 btn_click(){
 {
-    // check if more data is expected for the current dataview
+    // check if more data is expected for the current data view
     if (dataView.metadata.segment) {
-        //request for more data if available, as resopnce Power BI will call update method
+        //request for more data if available; as a response, Power BI will call update method
         let request_accepted: bool = this.host.fetchMoreData();
         // handle rejection
         if (!request_accepted) {
-            // for example when the 100 MB limit has been reached
+            // for example, when the 100 MB limit has been reached
         }
     }
 }
 ```
 
-Power BI kutsuu visualisoinnin `update`-menetelmän uudella tietosegmentillä vastauksena `this.host.fetchMoreData`-menetelmän kutsuun.
+Vastauksena `this.host.fetchMoreData`-menetelmän kutsumiseen Power BI kutsuu visualisoinnin `update`-menetelmää uuden segmentin tiedoilla.
 
 > [!NOTE]
-> Noudettavien tietojen kokonaismäärän rajoituksena Power BI:ssä on tällä hetkellä **100 Mt** asiakkaan muistirajoitteiden välttämiseksi. Huomaat tämän rajan saavuttamisen, kun fetchMoreData() palauttaa arvon 'epätosi'.*
+> Asiakkaan muistirajoitteiden välttämiseksi noudettavien tietojen kokonaismäärän rajoituksena Power BI:ssä on tällä hetkellä 100 Mt. Huomaat, että enimmäismäärä on saavutettu, kun fetchMoreData () palauttaa arvon `false`.

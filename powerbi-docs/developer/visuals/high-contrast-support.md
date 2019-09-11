@@ -1,6 +1,6 @@
 ---
-title: Suuren kontrastin tilan tuki
-description: Suuren kontrastin tilan tuen lisääminen Power BI -visualisointeihin
+title: Suuren kontrastin tila Power BI:n visualisoinneissa
+description: Tässä artikkelissa kuvataan suuren kontrastin tilan tuen lisääminen Power BI:n visualisointeihin.
 author: sranins
 ms.author: rasala
 manager: rkarlin
@@ -9,28 +9,20 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: cb77ea012fdfdbd5be62c58c6f9b94a0355db1a9
-ms.sourcegitcommit: 473d031c2ca1da8935f957d9faea642e3aef9839
+ms.openlocfilehash: f7f1a2277b3cdf38554039136010ab60c8f09bae
+ms.sourcegitcommit: b602cdffa80653bc24123726d1d7f1afbd93d77c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68424926"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70237195"
 ---
-# <a name="high-contrast-mode-support"></a>Suuren kontrastin tilan tuki
+# <a name="high-contrast-mode-support-in-power-bi-visuals"></a>Suuren kontrastin tila Power BI:n visualisoinneissa
 
-Windowsin *suuren kontrastin* asetus helpottaa tekstin ja sovellusten näkemistä käyttämällä selkeämpiä värejä.
-Lue lisää [suuren kontrastin tuesta Power BI:ssä](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2018-feature-summary/#highContrast).
+Windowsin *suuren kontrastin* asetus helpottaa tekstin ja sovellusten näkemistä käyttämällä selkeämpiä värejä. Tässä artikkelissa kuvataan suuren kontrastin tilan tuen lisääminen Power BI:n visualisointeihin. Lisätietoja on artikkelissa [suuren kontrastin tuki Power BI:ssä](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2018-feature-summary/#highContrast).
 
-Suuren kontrastin tuen lisääminen visualisointiin edellyttää seuraavaa:
+Jos haluat tarkastella suuren kontrastin tuen toteutusta, siirry [PowerBI-visuals-sampleBarChart-visualisoinnin säilöön](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/61011c82b66ca0d3321868f1d089c65101ca42e6).
 
-1. Alustuksen yhteydessä: Tunnista, onko Power BI suuren kontrastin tilassa ja jos on, hae nykyiset suuren kontrastin värit.
-2. Jokaisen päivityksen yhteydessä: Muuta visualisoinnin hahmontamista siten, että se on helpommin näkyvissä.
-
-PowerBI-visuals-sampleBarChart-visualisoinnissa on käytössä suuren kontrastin tuki.
-
-Jos haluat lisätietoja, tutustu [PowerBI-visuals-sampleBarChart-visualisoinnin säilöön](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/61011c82b66ca0d3321868f1d089c65101ca42e6)
-
-## <a name="on-init"></a>Alustuksen yhteydessä
+## <a name="on-initialization"></a>Valmistelusta
 
 `options.host`-objektin ColorPalette-jäsenellä on useita ominaisuuksia suuren kontrastin tilassa. Näiden ominaisuuksien avulla voit määrittää, onko suuren kontrastin tila aktiivinen, ja jos on, mitä värejä käytetään.
 
@@ -40,7 +32,7 @@ Jos `host.colorPalette.isHighContrast`-objektin arvona on `true`, suuren kontras
 
 ### <a name="get-high-contrast-colors"></a>Hanki suuren kontrastin värejä
 
-Suuren kontrastin tilassa visualisoinnin tulee rajoittua seuraaviin väreihin:
+Suuren kontrastin tilassa visualisoinnin tulee rajoittua seuraaviin asetuksiin:
 
 * **Edustan** värillä piirretään viivoja, kuvakkeita, tekstiä, ääriviivoja tai täytetään muotoja.
 * **Taustan** väriä käytetään taustassa ja korostettujen muotojen täyttövärinä.
@@ -50,7 +42,7 @@ Suuren kontrastin tilassa visualisoinnin tulee rajoittua seuraaviin väreihin:
 > [!NOTE]
 > Jos toissijaista väriä tarvitaan, edustan väriä voidaan käyttää pienellä peittävyydellä (Power BI:n alkuperäisissä visualisoinneissa peittävyys on 40 %). Käytä tätä säästeliäästi, jotta visualisoinnin tiedot on helppo nähdä.
 
-Voit tallentaa nämä arvot alustuksen aikana:
+Voit valmistelun aikana tallentaa seuraavat arvot:
 
 ```typescript
 private isHighContrast: boolean;
@@ -80,22 +72,22 @@ Voit myös tallentaa `host`-objektin alustuksen aikana ja käyttää asianmukais
 
 Suuren kontrastin tuen tarkat toteutukset vaihtelevat visualisoinnista toiseen ja riippuvat graafisen suunnittelun yksityiskohdista. Suuren kontrastin tila vaatii yleensä oletusmallista hieman poikkeavan mallin, jotta tärkeät tiedot on helppo erottaa rajoitetuilla väreillä.
 
-Seuraavassa on joitakin ohjeita, ja sen jälkeen Power BI:n alkuperäisiä visualisointeja:
+Power BI:n alkuperäiset visualisoinnit noudattavat näitä ohjeita:
 
 * Kaikissa arvopisteissä käytetään samaa väriä (edusta).
-* Kaikissa teksteissä, akseleissa, nuolissa, viivoissa jne. käytetään edustan väriä.
+* Esimerkiksi kaikki tekstit, akselit, nuolet ja viivat käyttävät edustaväriä.
 * Paksut muodot piirretään ääriviivoina, ja niissä on paksut viivat (vähintään kaksi kuvapistettä) ja taustavärin täyttö.
 * Tarvittaessa arvopisteet erotetaan toisistaan erilaisilla merkintämuodoilla ja tietoviivat erilaisilla viivoilla.
 * Kun tietoelementti korostetaan, kaikkien muiden elementtien peittävyydeksi tulee 40 %.
 * Osittajien kohdalla aktiiviset suodatuselementit käyttävät edustavalittua väriä.
 
-Esimerkkipalkkikaaviossa kaikki palkit on piirretty käyttäen kahden kuvapisteen paksuista edustan ääriviivaa ja taustan täyttöä. Vertaa sen ulkoasua, kun käytössä ovat oletusvärit sekä muutama suuren kontrastin teema:
+Seuraavassa esimerkkipalkkikaaviossa kaikki palkit on piirretty käyttäen kahden kuvapisteen paksuista edustan ääriviivaa ja taustan täyttöä. Vertaa sen ulkoasua, kun käytössä ovat oletusvärit sekä muutama suuren kontrastin teema:
 
 ![Esimerkkipalkkikaavio vakioväreillä](./media/hc-samplebarchart-standard.png)
 ![Esimerkkipalkkikaavio *Tumma 2* -väriteemalla](./media/hc-samplebarchart-dark2.png)
 ![Esimerkkipalkkikaavio *Valkoinen*-väriteemalla](./media/hc-samplebarchart-white.png)
 
-Seuraavassa on yksi `visualTransform`-funktion kohta, jota muutettiin tukemaan suurta kontrastia, se kutsutaan hahmontamisen osana kun `update` tehdään:
+Seuraavassa osassa näkyy yksi kohta `visualTransform`-toiminnossa, joka on muutettu tukemaan suurta kontrastia. Sitä kutsutaan osana hahmonnusta päivityksen aikana.
 
 ### <a name="before"></a>Ennen
 

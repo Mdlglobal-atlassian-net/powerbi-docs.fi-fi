@@ -1,6 +1,6 @@
 ---
-title: Objekti ja ominaisuudet
-description: Power BI:n visualisoinnin mukautettavat ominaisuudet
+title: Power BI:n visualisointien objektit ja ominaisuudet
+description: Tässä artikkelissa kuvataan Power BI:n visualisoinnin mukautettavat ominaisuudet.
 author: MrMeison
 ms.author: rasala
 manager: rkarlin
@@ -9,20 +9,18 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: c22a1cfb281c9902d490e2320b85c2f6bbb63468
-ms.sourcegitcommit: 473d031c2ca1da8935f957d9faea642e3aef9839
+ms.openlocfilehash: e15d80af35ff7c56879dab4380d4ae0c9fdd0e8a
+ms.sourcegitcommit: b602cdffa80653bc24123726d1d7f1afbd93d77c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68424604"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70236634"
 ---
-# <a name="object-and-properties"></a>Objekti ja ominaisuudet
+# <a name="objects-and-properties-of-power-bi-visuals"></a>Power BI:n visualisointien objektit ja ominaisuudet
 
-Objektit kuvailevat visualisointiin liittyviä mukautettavia ominaisuuksia.
-Kullakin objektilla voi olla useita ominaisuuksia, ja kuhunkin ominaisuuteen liittyy tyyppi.
-Tyypit viittaavat siihen, mikä ominaisuus on. Alla on lisätietoja tyypeistä.
+Objektit kuvailevat visualisointiin liittyviä mukautettavia ominaisuuksia. Objektilla voi olla useita ominaisuuksia, ja jokaiseen ominaisuuteen liittyy tyyppi, joka kuvaa, mikä ominaisuus on. Tässä artikkelissa on tietoja objekteista ja ominaisuustyypeistä.
 
-`myCustomObject` on sisäinen nimi, jota käytetään viittaamaan objektiin `dataView`- ja `enumerateObjectInstances`-kohteen sisällä
+`myCustomObject` on sisäinen nimi, jota käytetään viittaamaan objektiin `dataView`- ja `enumerateObjectInstances`-kohteen sisällä.
 
 ```json
 "objects": {
@@ -66,12 +64,13 @@ Esimerkki:
 
 ### <a name="property-types"></a>Ominaisuustyypit
 
-Ominaisuustyyppejä on kahdentyyppisiä: `ValueTypeDescriptor` ja `StructuralTypeDescriptor`.
+Ominaisuustyyppejä on kaksi: `ValueTypeDescriptor` ja `StructuralTypeDescriptor`.
 
 #### <a name="value-type-descriptor"></a>Arvotyyppikuvaaja
 
-`ValueTypeDescriptor`-kuvaajat ovat enimmäkseen primitiivityyppiä, ja niitä käytetään yleensä staattisena objektina.
-Seuraavassa on joitakin yleisiä `ValueTypeDescriptor`-kuvaajia
+`ValueTypeDescriptor`-tyypit ovat enimmäkseen primitiivisiä, ja niitä käytetään yleensä staattisena objektina.
+
+Seuraavassa on joitakin yleisiä `ValueTypeDescriptor`-elementtejä:
 
 ```typescript
 export interface ValueTypeDescriptor {
@@ -84,8 +83,8 @@ export interface ValueTypeDescriptor {
 
 #### <a name="structural-type-descriptor"></a>Rakennetyyppikuvaaja
 
-`StructuralTypeDescriptor`-kuvaajia käytetään useimmiten tietoihin sidottuihin objekteihin.
-Täyttö on yleisin `StructuralTypeDescriptor`
+`StructuralTypeDescriptor`-tyyppejä käytetään useimmiten tietoihin sidottuihin objekteihin.
+Yleisin `StructuralTypeDescriptor` tyyppi on *fill*.
 
 ```typescript
 export interface StructuralTypeDescriptor {
@@ -95,8 +94,9 @@ export interface StructuralTypeDescriptor {
 
 ## <a name="gradient-property"></a>Liukuväriominaisuus
 
-Liukuväriominaisuus on ominaisuus, jota ei voi määrittää vakio-ominaisuudeksi. Sen sijaan sinun on asetettava sääntö värinvalitsinominaisuuden (täyttötyyppi) korvaamista varten.
-Katso alla olevaa esimerkkiä:
+Liukuväriominaisuus on ominaisuus, jota ei voi määrittää vakio-ominaisuudeksi. Sen sijaan sinun on asetettava sääntö värinvalitsinominaisuuden (*täyttö*tyyppi) korvaamista varten.
+
+Seuraavassa koodissa näkyy esimerkki:
 
 ```json
 "properties": {
@@ -137,13 +137,13 @@ Katso alla olevaa esimerkkiä:
 }
 ```
 
-Kiinnitä huomiota `"fill"`-ja `"fillRule"`-ominaisuuksiin. Ensimmäinen on värinvalitsin, toinen on liukuvärin korvaussääntö, joka korvaa Fill-ominaisuuden `visually`, kun säännön ehdot täyttyvät.
+Kiinnitä huomiota *fill*- ja *fillRule*-ominaisuuksiin. Ensimmäinen on värinvalitsin, toinen on liukuvärin korvaussääntö, joka korvaa *fill-ominaisuuden*, `visually`, kun säännön ehdot täyttyvät.
 
-Tämä yhteys Fill-ominaisuuden ja korvaussäännön välillä on määritetty `"fillRule"`-ominaisuuden `"rule"`->`"output"`-osassa.
+Tämä yhteys *fill*-ominaisuuden ja korvaussäännön välillä on määritetty *fillRule*-ominaisuuden `"rule"`>`"output"`-osassa.
 
-`"Rule"`->`"InputRole"` määrittää, mikä tietorooli käynnistää säännön (ehto). Tässä esimerkissä sääntö otetaan käyttöön `"fill"`-ominaisuudelle, jos tietorooli `"Gradient"` sisältää tietoja.
+`"Rule"`>`"InputRole"`-ominaisuus määrittää, mikä tietorooli käynnistää säännön (ehto). Tässä esimerkissä sääntö otetaan käyttöön `"fill"`-ominaisuudelle, jos tietorooli `"Gradient"` sisältää tietoja.
 
-Alla näkyy esimerkki tietoroolista, joka käynnistää täyttösäännön (`the last item`).
+Seuraavassa koodissa esimerkki tietoroolista, joka käynnistää täyttösäännön (`the last item`):
 
 ```json
 {
@@ -170,7 +170,7 @@ Alla näkyy esimerkki tietoroolista, joka käynnistää täyttösäännön (`the
 }
 ```
 
-## <a name="enumerateobjectinstances-method"></a>`enumerateObjectInstances`-menetelmä
+## <a name="the-enumerateobjectinstances-method"></a>EnumerateObjectInstances-menetelmä
 
 Jotta voit käyttää objekteja tehokkaasti, tarvitset mukautettuun visualisointiisi funktion nimeltä `enumerateObjectInstances`. Tämä funktio täyttää ominaisuusruudun objekteilla, ja se myös määrää, minne objektit sidotaan dataView-kohteessa.  
 
@@ -197,15 +197,15 @@ public enumerateObjectInstances(options: EnumerateVisualObjectInstancesOptions):
 
 ### <a name="properties"></a>Ominaisuudet
 
-Funktion `enumerateObjectInstances` ominaisuudet vastaavat toiminnoille määrittämiäsi ominaisuuksia. Katso sivun alalaidan esimerkki.
+Funktion `enumerateObjectInstances` ominaisuudet vastaavat toiminnoille määrittämiäsi ominaisuuksia. Tämän artikkelin lopussa on esimerkki.
 
 ### <a name="objects-selector"></a>Objektien valitsin
 
-Funktion `enumerateObjectInstances` valitsin määrittää, mihin kukin objekti sidotaan dataView-kohteessa. Eri vaihtoehtoja on neljä.
+Funktion `enumerateObjectInstances` valitsin määrittää, mihin jokainen objekti sidotaan dataView-kohteessa. Eri vaihtoehtoja on neljä.
 
 #### <a name="static"></a>staattinen
 
-Tämä objekti sidotaan metatietoihin `dataviews[index].metadata.objects`
+Tämä objekti on sidottu metatietoihin `dataviews[index].metadata.objects`, kuten tässä on esitetty.
 
 ```typescript
 selector: null
@@ -223,7 +223,7 @@ selector: {
 
 #### <a name="selector"></a>valitsin
 
-Tämä objekti on sidottu siihen elementtiin, jolle on luotu `selectionID`. Tässä esimerkissä oletamme, että olemme luoneet `selectionID`-tunnukset joillekin dataPoints-kohteille ja käymme niitä läpi.
+Tämä objekti on sidottu siihen elementtiin, jolle on luotu `selectionID`. Tässä esimerkissä oletetaan, että joillekin dataPoints-kohteille on luotu `selectionID`-tunnukset, ja niitä käydään läpi.
 
 ```typescript
 for (let dataPoint in dataPoints) {
@@ -234,7 +234,7 @@ for (let dataPoint in dataPoints) {
 
 #### <a name="scope-identity"></a>Alueen identiteetti
 
-Tämä objekti sidotaan tiettyihin arvoihin ryhmien leikkauskohdassa. Jos minulla on esimerkiksi luokat `["Jan", "Feb", "March", ...]` ja sarja `["Small", "Medium", "Large"]`, voin haluta objektin arvojen `Feb` ja `Large` leikkauskohtaan. Saan sen ottamalla molempien sarakkeista kohteen `DataViewScopeIdentity`, työntämällä ne muuttujaan `identities` ja käyttämällä tätä syntaksia valitsimen kanssa.
+Tämä objekti sidotaan tiettyihin arvoihin ryhmien leikkauskohdassa. Jos sinulla on esimerkiksi luokat `["Jan", "Feb", "March", ...]` ja sarja `["Small", "Medium", "Large"]`, voit halutessasi sijoittaa objektin ehtoja `Feb` ja `Large` vastaavien arvojen leikkauskohtaan. Saat sen ottamalla molempien sarakkeista kohteen `DataViewScopeIdentity`, työntämällä ne muuttujaan `identities` ja käyttämällä tätä syntaksia valitsimen kanssa.
 
 ```typescript
 selector: {
@@ -244,7 +244,7 @@ selector: {
 
 ##### <a name="example"></a>Esimerkki
 
-Tässä esimerkissä näytämme, miltä yksi objectEnumeration näyttää, kun kyseessä on customColor-objekti, jossa on yksi ominaisuus `fill`. Haluamme, että tämä objekti sidotaan staattisesti kohteeseen `dataViews[index].metadata.objects`
+Tässä esimerkissä näkyy, miltä yksi objectEnumeration näyttää, kun kyseessä on customColor-objekti, jossa on yksi ominaisuus *täyttö*. Haluamme, että tämä objekti sidotaan staattisesti kohteeseen `dataViews[index].metadata.objects` seuraavasti:
 
 ```typescript
 objectEnumeration.push({

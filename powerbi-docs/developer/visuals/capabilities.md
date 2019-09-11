@@ -1,6 +1,6 @@
 ---
-title: Ominaisuudet
-description: Power BI:n visualisointien toiminnot ja ominaisuudet
+title: Power BI:n visualisointien toiminnot ja ominaisuudet
+description: Tässä artikkelissa kuvataan Power BI:n visualisointien toiminnot ja ominaisuudet.
 author: asander
 ms.author: asander
 manager: rkarlin
@@ -9,18 +9,18 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: f6bb4293a44f98f2f8098fb197c7b406b618d211
-ms.sourcegitcommit: 473d031c2ca1da8935f957d9faea642e3aef9839
+ms.openlocfilehash: 5c32a1679f09e05d134da7f27ffa0cee90d75fab
+ms.sourcegitcommit: b602cdffa80653bc24123726d1d7f1afbd93d77c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68425455"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70237303"
 ---
-# <a name="power-bi-visual-capabilities"></a>Power BI:n visualisoinnin toiminnot
+# <a name="capabilities-and-properties-of-power-bi-visuals"></a>Power BI:n visualisointien toiminnot ja ominaisuudet 
 
-Toiminnot antavat tietoja visualisoinnistasi isännälle. Kaikki toimintomallin ominaisuudet ovat `optional`
+Toimintojen avulla voit antaa tietoja visualisoinnistasi isännälle. Kaikkien toimintomallin ominaisuuksien määrite on `optional`.
 
-Visualisoinnin toimintojen juuriobjektit ovat `dataRoles`, `dataViewMappings` ja niin edelleen.
+Visualisoinnin toimintojen juuriobjekteja ovat esimerkiksi `dataRoles` ja `dataViewMappings`.
 
 ```json
 {
@@ -34,29 +34,29 @@ Visualisoinnin toimintojen juuriobjektit ovat `dataRoles`, `dataViewMappings` ja
 
 ```
 
-## <a name="define-the-data-fields-your-visual-expects---dataroles"></a>Määritä visualisoinnin odottamat tietokentät – `dataRoles`
+## <a name="define-the-data-fields-that-your-visual-expects-dataroles"></a>Visualisoinnin odottamien tietokenttien määrittäminen: dataRoles
 
-Tietoihin sidottavien kenttien määrittämiseen käytössä on `dataRoles`, jossa on `DataViewRole`-objektimatriisi, joka määrittää kaikki tarvittavat ominaisuudet.
+Tietoihin sidottavien kenttien määrittämisessä käytetään kohdetta `dataRoles`. `dataRoles` ottaa käyttöön `DataViewRole`-objektien matriisin, joka määrittää kaikki vaaditut ominaisuudet.
 
 ### <a name="properties"></a>Ominaisuudet
 
-* **name** – tämän tietokentän sisäinen nimi (oltava yksilöivä)
-* **kind** – kentän tyyppi:
-    * `Grouping` -Mittarikenttien ryhmittelyssä käytettävät erilliset arvot
-    * `Measure` – Numeeriset tietoarvot
-    * `GroupingOrMeasure` – Voidaan käyttää joko ryhmittelynä tai mittarina
-* **displayName** – nimi, joka näytetään käyttäjälle ominaisuudet-ruudussa
-* **description** – kentän lyhyt kuvaus (valinnainen)
-* **requiredTypes** – tämän tietoroolin vaadittu tietotyyppi. Kaikki arvot, jotka eivät täsmää, määritetään null-arvoisiksi (valinnainen)
-* **preferredTypes** – tämän tietoroolin ensisijainen tietotyyppi (valinnainen)
+* **name**: Tämän tietokentän sisäinen nimi (oltava yksilöivä).
+* **kind**: Kentän tyyppi:
+    * `Grouping`: Erillisiä arvoja, joita käytetään mittarikenttien ryhmittelemiseen.
+    * `Measure`: Numeerisia tietoarvoja.
+    * `GroupingOrMeasure`: Arvoja, joita voidaan käyttää joko ryhmittelynä tai mittarina.
+* **displayName**: Nimi, joka näytetään käyttäjälle **Ominaisuudet**-ruudussa.
+* **description**: Kentän lyhyt kuvaus (valinnainen).
+* **requiredTypes**: Tämän tietoroolin vaadittu tietotyyppi. Arvot, jotka eivät täsmää, saavat tyhjäarvon (valinnainen).
+* **preferredTypes**: Tämän tietoroolin ensisijainen tietotyyppi (valinnainen).
 
-### <a name="valid-data-types-in-requiredtypes-and-preferredtypes"></a>Kelvolliset tietotyypit kohteissa "requiredTypes" ja "preferredTypes"
+### <a name="valid-data-types-in-requiredtypes-and-preferredtypes"></a>Kelvolliset tietotyypit kohteissa requiredTypes ja preferredTypes
 
-* **bool** – totuusarvo
-* **integer** – kokonaislukuarvo
-* **numeric** – numeerinen arvo
-* **text** – tekstiarvo
-* **geography** – maantieteelliset tiedot
+* **bool**: Totuusarvo
+* **integer**: Kokonaislukuarvo
+* **numeric**: Numeerinen arvo
+* **text**: Tekstiarvo
+* **geography**: Maantieteellinen tieto
 
 ### <a name="example"></a>Esimerkki
 
@@ -157,15 +157,15 @@ Tietoihin sidottavien kenttien määrittämiseen käytössä on `dataRoles`, jos
 ]
 ```
 
-Yllä olevat tietoroolit luovat seuraavat kentät
+Edellä olevat tietoroolit loisivat kentät, jotka näkyvät seuraavassa kuvassa:
 
-![Tietorooli näkyvissä](./media/data-role-display.png)
+![Tietoroolikentät](./media/data-role-display.png)
 
-## <a name="define-how-you-want-the-data-mapped---dataviewmappings"></a>Määritä, miten haluat yhdistää tiedot – `dataViewMappings`
+## <a name="define-how-you-want-the-data-mapped-dataviewmappings"></a>Määritä, miten haluat yhdistää tiedot: dataViewMapping
 
-DataViewMapping kuvaa, miten tietoroolit liittyvät toisiinsa, antaa sinun määrittää niille ehdollisia vaatimuksia.
+DataViewMapping-ominaisuus kuvaa, miten tietoroolit liittyvät toisiinsa ja antaa sinun määrittää niille ehdollisia vaatimuksia.
 
-Useimmat visualisoinnit tarjoavat yhden yhdistämismäärityksen, mutta voit tehdä useita dataViewMapping-määrityksiä. Jokainen kelvollinen yhdistämismääritys tuottaa DataView’n. 
+Useimmat visualisoinnit tarjoavat yhden yhdistämismäärityksen, mutta voit tehdä useita dataViewMapping-määrityksiä. Jokainen kelvollinen yhdistäminen tuottaa tietonäkymän. 
 
 ```json
 "dataViewMappings": [
@@ -179,13 +179,11 @@ Useimmat visualisoinnit tarjoavat yhden yhdistämismäärityksen, mutta voit teh
 ]
 ```
 
-[Lue lisätietoja DataViewMappings-määrityksistä](dataview-mappings.md)
+Lisätietoja on artikkelissa [Power BI -visualisointien tietonäkymän yhdistämismääritykset](dataview-mappings.md).
 
-## <a name="define-property-pane-options---objects"></a>Määritä ominaisuusruudun asetukset – `objects`
+## <a name="define-property-pane-options-objects"></a>Ominaisuusruudun asetusten määrittäminen: objektit
 
-Objektit kuvailevat visualisointiin liittyviä mukautettavia ominaisuuksia.
-Kullakin objektilla voi olla useita ominaisuuksia, ja kuhunkin ominaisuuteen liittyy tyyppi.
-Tyypit viittaavat siihen, mikä ominaisuus on. Alla on lisätietoja tyypeistä.
+Objektit kuvailevat visualisointiin liittyviä mukautettavia ominaisuuksia. Jokaisella objektilla voi olla useita ominaisuuksia, ja jokaiseen ominaisuuteen liittyy tyyppi. Tyypit viittaavat siihen, mikä ominaisuus on. 
 
 ```json
 "objects": {
@@ -196,24 +194,22 @@ Tyypit viittaavat siihen, mikä ominaisuus on. Alla on lisätietoja tyypeistä.
 }
 ```
 
-[Lue lisätietoja objekteista](objects-properties.md)
+Lisätietoja on artikkelissa [Power BI:n visualisointien objektit ja ominaisuudet](objects-properties.md).
 
-## <a name="handle-partial-highlighting---supportshighlight"></a>Käsittele osittainen korostus – `supportsHighlight`
+## <a name="handle-partial-highlighting-supportshighlight"></a>Osittaisen korostusten käsitteleminen: supportsHighlight
 
-Oletusarvon mukaan tämä arvo on epätosi (false), mikä tarkoittaa, että "Values" suodatetaan automaattisesti, kun sivulla valitaan jotain, mikä puolestaan päivittää visualisoinnin näyttämään vain valitun arvon. Jos haluat näyttää täydelliset tiedot mutta korostaa vain valitut kohteet, sinun on asetettava `supportsHighlight`-arvoksi tosi (true) tiedostossa capabilities.json.
+Oletusarvoisesti tämän arvon määrityksenä on `false`, mikä tarkoittaa, että arvot suodatetaan automaattisesti, kun sivulla valitaan jotakin. Tämä automaattinen suodatus puolestaan päivittää visualisoinnin näyttämään vain valitun arvon. Jos haluat näyttää täydelliset tiedot, mutta korostaa vain valitut kohteet, sinun on asetettava `supportsHighlight`-arvoksi `true` tiedostossa *capabilities.json*.
 
-[Lue lisätietoja korostuksen käyttämisestä](highlight.md)
+Lisätietoja on artikkelissa [Arvopisteiden korostaminen Power BI:n visualisoinneissa](highlight.md).
 
-## <a name="handle-advanced-edit-mode---advancededitmodesupport"></a>Muokkaustilan lisäasetukset – `advancedEditModeSupport`
+## <a name="handle-advanced-edit-mode-advancededitmodesupport"></a>Kehittyneen muokkaustilan käsitteleminen: advancedEditModeSupport
 
-Visualisointi voi ilmaista tukensa muokkaustilan lisäasetuksia kohtaan.
-Visualisointi ei oletusarvoisesti tue muokkaustilan lisäasetuksia, ellei tiedostossa capabilities.json ole toisin mainittu.
+Visualisointi voi ilmaista tukensa muokkaustilan lisäasetuksia kohtaan. Visualisointi ei oletusarvoisesti tue muokkaustilan lisäasetuksia, ellei tiedostossa *capabilities.json* ole toisin mainittu.
 
-[Lue lisätietoja kohteesta advancedEditModeSupport](advanced-edit-mode.md)
+Lisätietoja on artikkelissa [Kehittynyt muokkaustila Power BI:n visualisoinneissa](advanced-edit-mode.md).
 
-## <a name="data-sorting-options-for-visual---sorting"></a>Visualisoinnin tietojen lajittelun asetukset – `sorting`
+## <a name="data-sorting-options-for-visual-sorting"></a>Visualisoinnin tietojen lajittelun asetukset: lajittelu
 
-Visualisointi voi määrittää lajittelukäyttäytymisensä toimintojensa avulla.
-Visualisointi ei oletusarvoisesti tue lajittelujärjestyksen muokkaamista, ellei tiedostossa capabilities.json ole toisin mainittu.
+Visualisointi voi määrittää lajittelukäyttäytymisensä toimintojensa avulla. Visualisointi ei oletusarvoisesti tue lajittelujärjestyksen muokkaamista, ellei tiedostossa *capabilities.json* ole toisin mainittu.
 
-[Lisätietoja lajittelusta](sort-options.md)
+Lisätietoja on artikkelissa [Lajitteluasetukset Power BI:n visualisoinneissa](sort-options.md).

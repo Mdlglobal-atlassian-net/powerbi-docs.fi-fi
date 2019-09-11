@@ -1,6 +1,6 @@
 ---
-title: Muokkaustilan lisäasetukset
-description: Power BI:n visualisoinnit, joissa on edistyneet käyttöliittymän ohjaustoiminnot
+title: Power BI:n visualisointien kehittynyt muokkaustila
+description: Tässä artikkelissa kerrotaan, miten voit määrittää käyttöliittymän ohjausobjektit Power BI:n visualisoinneissa.
 author: shaym83
 ms.author: shaym
 manager: rkarlin
@@ -9,51 +9,46 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: 625105aed773bce5cf70932f092faf60ea001c2c
-ms.sourcegitcommit: 473d031c2ca1da8935f957d9faea642e3aef9839
+ms.openlocfilehash: 54cd9d106132979e5ace71a2617a9e2520363176
+ms.sourcegitcommit: b602cdffa80653bc24123726d1d7f1afbd93d77c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68425547"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70237350"
 ---
-# <a name="advanced-edit-mode"></a>Muokkaustilan lisäasetukset
+# <a name="advanced-edit-mode-in-power-bi-visuals"></a>Power BI:n visualisointien kehittynyt muokkaustila
 
-Edistyneitä käyttöliittymän ohjaustoimintoja edellyttävät visualisoinnit voivat määrittää muokkaustilan lisäasetusten tuen.
-Jos se on tuettu, raportin muokkaustilassa visualisoinnin valikkoon ilmestyy `Edit`-painike.
-Kun `Edit`-painiketta napsautetaan, EditModen asetukseksi tulee `Advanced`.
-Visualisointi voi käyttää EditMode-lippua määrittääkseen, tuleeko nämä käyttöliittymän ohjausobjektit näyttää.
+Jos tarvitset kehittyneitä käyttöliittymän ohjausobjekteja Power BI:n visualisoinnissa, voit hyödyntää kehittynyttä muokkaustilaa. Kun olet raportin muokkaustilassa, valitse **Muokkaa**-painike ja määritä muokkaus tilaksi **Kehittynyt**. Visualisointi voi käyttää `EditMode`-merkintää määrittääkseen, tuleeko sen näyttää tämä käyttöliittymän ohjausobjekti.
 
-Visualisointi ei oletusarvoisesti tue muokkaustilan lisäasetuksia.
-Jos vaaditaan erilaista käyttäytymistä, se on määritettävä eksplisiittisesti visualisoinnin tiedostossa `capabilities.json` asettamalla ominaisuus `advancedEditModeSupport`.
+Visualisointi ei oletusarvoisesti tue muokkaustilan lisäasetuksia. Jos vaaditaan erilaista käyttäytymistä, se on määritettävä eksplisiittisesti visualisoinnin tiedostossa *capabilities.json* asettamalla ominaisuus `advancedEditModeSupport`.
 
 Mahdolliset arvot ovat:
 
-- 0 - NotSupported
+- `0` – NotSupported
 
-- 1 - SupportedNoAction
+- `1` – SupportedNoAction
 
-- 2 - SupportedInFocus
+- `2` – SupportedInFocus
 
-## <a name="entering-advanced-edit-mode"></a>Siirtyminen muokkaustilan lisäasetuksiin
+## <a name="enter-advanced-edit-mode"></a>Siirtyminen kehittyneeseen muokkaustilaan
 
-`Edit`-painike on näkyvissä, jos:
+Näkyvissä on **Muokkaa**-painike, jos:
 
- 1– `advancedEditModeSupport`-ominaisuus tiedostossa capabilities.json on joko `SupportedNoAction` tai `SupportedInFocus`.
+* `advancedEditModeSupport`-ominaisuuden asetukseksi tiedostossa *capabilities.json* on määritetty `SupportedNoAction` tai `SupportedInFocus`.
 
- 2– visualisointia tarkastellaan raportin muokkaustilassa.
+* Visualisointia tarkastellaan raportin muokkaustilassa.
 
-Jos `advancedEditModeSupport`-ominaisuus puuttuu tiedostosta capabilities.json tai jos sen asetuksena on `NotSupported`, Muokkaa-painike poistuu näkyvistä.
+Jos `advancedEditModeSupport`-ominaisuus puuttuu tiedostosta *capabilities.json* tai jos sen asetuksena on `NotSupported`, **Muokkaa**-painike ei ole näkyvissä.
 
 ![Siirry muokkaustilaan](./media/edit-mode.png)
 
-Kun käyttäjä napsauttaa kohtaa `Edit`, visualisointi saa update()-kutsun, jossa EditModen asetuksena on `Advanced`.
-Seuraavat toiminnot toteutuvat ominaisuuksiin määritetyn arvon mukaan:
+Kun valitset **Muokkaa**, visualisointi saa update()-kutsun, jossa EditMode-asetuksena on `Advanced`. Sen mukaan, mikä arvo on määritetty *capabilities.json*-tiedostossa, seuraavat toiminnot toteutetaan:
 
-* `SupportedNoAction` – Ei isännän lisätoimia.
-* `SupportedInFocus` – Isäntä avaa visualisoinnin kohdistustilaan.
+* `SupportedNoAction`: Isäntä ei vaadi lisätoimia.
+* `SupportedInFocus`: Isäntä avaa visualisoinnin kohdistustilaan.
 
-## <a name="exiting-advanced-edit-mode"></a>Poistuminen kehittyneestä muokkaustilasta
+## <a name="exit-advanced-edit-mode"></a>Poistuminen kehittyneestä muokkaustilasta
 
-`Back to report`-painike on näkyvissä, jos:
+**Takaisin raporttiin** -painike on näkyvissä, jos:
 
-1 – `advancedEditModeSupport`-ominaisuus kohteessa capabilities.json on `SupportedInFocus`.
+* `advancedEditModeSupport`-ominaisuuden asetukseksi tiedostossa *capabilities.json* on määritetty `SupportedInFocus`.

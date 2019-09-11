@@ -7,111 +7,164 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/18/2018
+ms.date: 08/20/2018
 ms.author: otarb
 LocalizationGroup: Create reports
-ms.openlocfilehash: 7390f029144e5cb37830921071ad5c2c678b2d4d
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: b41a50ae7c4aaf8f70c9d7745ea4767b7644a62f
+ms.sourcegitcommit: 09ee1b4697aad84d8f4c9421015d7e4dbd3cf25f
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61285572"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "70303025"
 ---
 # <a name="create-power-bi-visuals-using-python"></a>Power BI -visualisointien luominen Pythonin avulla
 **Power BI Desktopin** kanssa voit käyttää **Pythonia** tietojen visualisoimiseen.
 
-## <a name="install-python"></a>Pythonin asentaminen
-**Power BI Desktop** ei sisällä, ota käyttöön tai asenna **Python**-moduulia. Jos haluat suorittaa Python-komentosarjoja **Power BI Desktopissa**, sinun on asennettava **Python** erikseen paikallisessa tietokoneessa. Voit ladata ja asentaa **Pythonin** maksutta useista sijainneista, mukaan lukien [Pythonin viralliselta lataussivulta](https://www.python.org/) ja [Anacondasta](https://anaconda.org/anaconda/python/). Nykyinen Python-komentosarjan versio Power BI Desktopissa tukee Unicode-merkkejä sekä välilyöntejä (tyhjiä merkkejä) asennuspolulla.
+## <a name="prerequisites"></a>Edellytykset
 
-## <a name="enable-python-visuals"></a>Ota Python-visualisoinnit käyttöön
-Ota Python-visualisoinnit käyttöön valitsemalla **Tiedosto > Asetukset ja vaihtoehdot > Asetukset** ja näkyviin tulevalla **Asetukset**-sivulla varmista, että paikallinen Python-asennus on määritetty **Python-komentosarjat**-osassa **Asetukset**-ikkunassa seuraavassa kuvassa esitetyllä tavalla. Seuraavassa kuvassa Pythonin paikallinen asennuspolku on **C:\Python27**, ja kyseinen polku on nimenomaisesti määritetty tekstiruudussa. Varmista, että polku näkyy oikein ja kuvastaa paikallista Python-asennusta, jota haluat **Power BI Desktopin** käyttävän.
-   
-   ![](media/desktop-python-visuals/python-visuals-1.png)
+Käy läpi [Python-komentosarjojen suorittaminen Power BI Desktopissa](desktop-python-scripts.md) -opetusohjelma käyttämällä seuraavaa Python-komentosarjaa:
 
-Kun olet määrittänyt Python-asennukset, olet valmis aloittamaan Python-visualisointien luomisen.
+```python
+import pandas as pd 
+df = pd.DataFrame({ 
+    'Fname':['Harry','Sally','Paul','Abe','June','Mike','Tom'], 
+    'Age':[21,34,42,18,24,80,22], 
+    'Weight': [180, 130, 200, 140, 176, 142, 210], 
+    'Gender':['M','F','M','M','F','M','M'], 
+    'State':['Washington','Oregon','California','Washington','Nevada','Texas','Nevada'],
+    'Children':[4,1,2,3,0,2,0],
+    'Pets':[3,2,2,5,0,1,5] 
+}) 
+print (df) 
+```
+[Python-komentosarjojen suorittaminen Power BI Desktopissa](desktop-python-scripts.md) -artikkelissa kuvataan, miten voit asentaa Pythonin paikalliseen tietokoneeseesi ja ottaa sen käyttöön Python-komentosarjoja varten **Power BI Desktopissa**. Tässä opetusohjelmassa käytetään edellä olevan komentosarjan tietoja Python-visualisointien luomisen esittelyssä.
 
 ## <a name="create-python-visuals-in-power-bi-desktop"></a>Python-visualisointien luominen Power BI Desktopissa
-1. Valitse **Python-visualisointi**-kuvake **Visualisointi**-ruudussa seuraavassa kuvassa esitetyllä tavalla, jos haluat lisätä Python-visualisoinnin.
+1. Valitse **Python-visualisointi**-kuvake **Visualisointi**-ruudussa.
    
    ![](media/desktop-python-visuals/python-visuals-2.png)
 
-   Kun haluat lisätä raporttiin Python-visualisoinnin, **Power BI Desktop** toimii seuraavasti:
-   
-   - Python-visualisoinnin kuvan paikkamerkki tulee näkyviin raportin piirtoalustalle.
-   
-   - **Python-komentosarjaeditori** näkyy keskimmäisen ruudun alareunassa.
-   
-   ![](media/desktop-python-visuals/python-visuals-3.png)
+1.  Valitse näkyviin tulevassa **Ota käyttöön komentosarjavisualisoinnit** -valinta ikkunassa **Ota käyttöön**. 
 
-2. Lisää seuraavaksi kentät, joita haluat käyttää Python-komentosarjassa, **Arvot**-osioon **Kentät**-kohdassa samalla tavalla kuin muunkin **Power BI Desktop** -visualisoinnin. 
-    
-    Vain kentät, jotka on lisätty **Kentät**-kohtaan, ovat käytettävissä Python-komentosarjaasi varten. Voit lisätä uusia kenttiä tai poistaa tarpeettomia kenttiä **Kentät**-kohdasta käsitellessäsi Python-komentosarjaasi **Power BI Desktopin Python-komentosarjaeditorissa**. **Power BI Desktop** havaitsee automaattisesti, mitkä kentät on lisätty tai poistettu.
+    Kun haluat lisätä raporttiin Python-visualisoinnin, **Power BI Desktop** toimii seuraavasti:
+   
+     - Python-visualisoinnin kuvan paikkamerkki tulee näkyviin raportin piirtoalustalle.
+   
+     - **Python-komentosarjaeditori** näkyy keskimmäisen ruudun alareunassa.
+   
+    ![](media/desktop-python-visuals/python-visuals-3.png)
+
+1. Vedä seuraavaksi **Ikä**-, **Lapset**-, **Etunimi**-, **Sukupuoli**-, **Lemmikit**-, **Osavaltio**- ja **Paino**-kentät **Arvot**-osaan, jossa on teksti **Lisää tietokentät tähän**. 
+
+    ![](media/desktop-python-visuals/python-visuals-15.png)
+
+   Python-komentosarjasi voi käyttää vain **Arvot**-osaan lisättyjä kenttiä. Voit lisätä tai poistaa kenttiä **Arvot**-osassa, kun käsittelet Python-komentosarjaa. **Power BI Desktop** tunnistaa kenttien muutokset automaattisesti.
    
    > [!NOTE]
    > Python-visualisointien koostamisen oletustyyppi on *Älä tee yhteenvetoa*.
    > 
    > 
    
-3. Nyt voit luoda piirron valitsemiesi tietojen perusteella. 
+1. Nyt voit luoda piirron valitsemiesi tietojen perusteella. 
 
-    Kun valitset kenttiä, **Python-komentosarjaeditori** luo tukevan Python-komentosarjan sidontakoodin harmaassa osassa editoriruudun yläosassa tekemiesi valintojen perusteella. Kun valitset tai poistat lisäkenttiä, tukikoodi Python-komentosarjaeditorissa luodaan tai poistetaan vastaavasti automaattisesti.
-   
-   Seuraavassa kuvassa olevassa esimerkissä valittiin kolme kenttää: hp, hammaspyörä ja drat. Näiden valintojen tuloksena Python-komentosarjaeditori loi seuraavan sidontakoodin:
-   
-   * Datakehys nimeltään**tietojoukko** luotiin
-     * Kyseinen datakehys koostuu käyttäjän valitsemista kentistä
-   * Koostamisen oletustyyppi on *Älä tee yhteenvetoa*
-   * Samoin kuin taulukon visualisoinnit, kentät on ryhmitelty ja rivien kaksoiskappaleet näkyvät vain kerran
-   
-   ![](media/desktop-python-visuals/python-visuals-4.png)
-   
-   > [!TIP]
-   > Joissakin tapauksissa et ehkä halua automaattista ryhmittelyä tai haluat ehkä kaikkien rivien näkyvän, mukaan lukien kaksoisarvot. Tässä tapauksessa voit lisätä tietojoukkoosi indeksikentän, jonka takia kaikkia rivejä pidetään yksilöllisinä ja joka estää ryhmittelyn.
-   > 
-   > 
-   
-   Luotu tietokehys on nimeltään **tietojoukko**, ja voit käyttää valittuja sarakkeita niiden nimillä. Esimerkiksi hammaspyöräkenttää voi käyttää kirjoittamalla *tietojoukko[”hammaspyörä”]* Python-komentosarjaan.
+    Kun valitset tai poistat kenttiä, tukikoodi Python-komentosarjaeditorissa luodaan tai poistetaan automaattisesti. 
+    
+    Näiden valintojesi tuloksena Python-komentosarjaeditori luo seuraavan sidontakoodin.
 
-4. Valitsemasi kentät luovat tietokehyksen automaattisesti, joten olet valmis kirjoittamaan Python-komentosarjan, joka johtaa piirron luomiseen Python-oletuslaitteeseen. Kun komentosarja on valmis, valitse **Suorita** **Python-komentosarjaeditorin** otsikkorivillä (**Suorita** on otsikkorivin oikealla puolella).
+    * Editori on luonut **tietojoukon** tietokehyksen, jossa ovat lisäämäsi kentät. 
+    * Koostamisen oletustyyppi on *Älä tee yhteenvetoa*.
+    * Samoin kuin taulukon visualisoinnit, kentät on ryhmitelty ja rivien kaksoiskappaleet näkyvät vain kerran.
+
+        ![](media/desktop-python-visuals/python-visuals-10.png)
    
-    Kun **Suorita** on valittuna, **Power BI Desktop** tunnistaa piirron ja esittää sen piirtoalustalla. Koska prosessi suoritetaan paikallisessa Python-asennuksessa, varmista, että tarvittavat paketit asennetaan.
+     > [!TIP] 
+     > Joissakin tapauksissa et ehkä halua automaattista ryhmittelyä tai haluat ehkä kaikkien rivien näkyvän, mukaan lukien kaksoisarvot. Tällöin voit lisätä tietojoukkoosi indeksikentän, jonka takia kaikkia rivejä pidetään yksilöllisinä ja joka estää ryhmittelyn.
    
-   **Power BI Desktop** piirtää visualisoinnin uudelleen, kun jokin seuraavista tapahtumista tapahtuu:
+   Voit käyttää tietojoukon sarakkeita niiden nimillä. Voit esimerkiksi koodata Python-komentosarjaan [”Ikä”]-tietojoukon, jotta voit käyttää ikäkenttää.
+
+1. Valitsemasi kentät luovat tietokehyksen automaattisesti, joten olet valmis kirjoittamaan Python-komentosarjan, joka johtaa piirron luomiseen Python-oletuslaitteeseen. Kun komentosarja on valmis, valitse **Python-komentosarjaeditorin** otsikkoriviltä **Suorita**.
+
+   **Power BI Desktop** piirtää visualisoinnin uudelleen, jos jokin seuraavista tapahtumista tapahtuu:
    
    * Kun valitset **Suorita** **Python-komentosarjaeditorin** otsikkoriviltä
    * Aina kun tietoja muutetaan päivittämisen, suodattamisen tai korostamisen vuoksi
+   
+   Kun suoritat Python-komentosarjan, jonka tuloksena on virhe, Python-visualisointia ei piirretä ja pohjan virhesanoma tulee näkyviin. Saat virhetiedot näkyviin valitsemalla sanomassa **Näytä tiedot**.
 
-    Seuraavassa kuvassa on esimerkki korrelaation piirtokoodista, ja siinä piirretään korrelaatiot erityyppisten autojen määritteiden välillä.
+   Saat visualisointeja suurempaan näkymään pienentämällä **Python-komentosarjaeditorin**.
 
-    ![](media/desktop-python-visuals/python-visuals-5.png)
+Luodaanpa nyt joitakin visualisointeja.
 
-5. Saat visualisointeja suurempaan näkymään pienentämällä **Python-komentosarjaeditorin**. Ja tietysti muiden visualisointien tapaan **Power BI Desktopissa** voit ristisuodattaa korrelaation piirron valitsemalla vain urheiluautot rengasvisualisoinnissa (pyöreä visualisointi oikealla yllä olevan esimerkin kuvassa).
+## <a name="create-a-scatter-plot"></a>Pistekaavion luominen
 
-    ![](media/desktop-python-visuals/python-visuals-6.png)
+Luodaan nyt pistekaavio, jotta nähdään, onko iän ja painon välillä korrelaatiota. 
 
-6. Voit myös muokata Python-komentosarjaa visualisoinnin mukauttamiseksi ja hyödyntää Pythonin tehoa lisäämällä parametreja piirtokomentoon.
+1. Kirjoita **Liitä tai kirjoita komentosarjakoodisi tähän** -kohtaan tämä koodi:
 
-    Alkuperäinen piirtokomento oli seuraavanlainen:
+   ```python
+   import matplotlib.pyplot as plt 
+   dataset.plot(kind='scatter', x='Age', y='Weight', color='red')
+   plt.show() 
+   ```  
+   Python-komentosarjaeditorin ruudun pitäisi nyt näyttää tältä:
 
-    plt.matshow(dataset.corr('pearson'))
+   ![](media/desktop-python-visuals/python-visuals-11.png)
 
-    Joidenkin Python-komentosarjan muutosten jälkeen komento on nyt seuraava:
+   **Matplotlib**-kirjasto tuodaan kaavioon, ja visualisoinnit luodaan.
 
-    plt.matshow(dataset.corr('kendall'))
+1. Kun valitset **Suorita**-komentosarjapainikkeen, seuraava pistekaavio luodaan Python-visualisoinnin paikkamerkkiin.
 
-    Tuloksena Python-visualisointi piirtää nyt käyttäen Kendall Tau -korrelaatiokerrointa seuraavassa kuvassa esitetyllä tavalla.
+   ![](media/desktop-python-visuals/python-visuals-12.png)
 
-    ![](media/desktop-python-visuals/python-visuals-7.png)
+## <a name="create-a-line-plot-with-multiple-columns"></a>Useita sarakkeita sisältävän viivakaavion luominen
 
-    Suoritettaessa Python-komentosarjaa, jonka tuloksena on virhe, Python-visualisointia ei piirretä ja virhesanoma tulee näkyviin piirtoalustalle. Lisätietoja virheestä saat valitsemalla **Näytä tiedot** Python-visualisoinnin virheestä piirtoalustalla.
+ Luodaanpa jokaiselle henkilölle viivakaavio, jossa näkyy heidän lastensa ja lemmikkinsä määrä. Poista koodi kohdasta **Liitä tai kirjoita komentosarjakoodisi tähän** ja kirjota tämä Python-koodi:
 
-    ![](media/desktop-python-visuals/python-visuals-8.png)
+ ```python
+ import matplotlib.pyplot as plt 
+ax = plt.gca() 
+dataset.plot(kind='line',x='Fname',y='Children',ax=ax) 
+dataset.plot(kind='line',x='Fname',y='Pets', color='red', ax=ax) 
+plt.show() 
+```
+Kun valitset **Suorita**-komentosarjapainikkeen, luodaan seuraava monisarakkeinen viivakaavio.
 
-    > **Python-komentosarjojen suojaus:** Python-visualisoinnit luodaan Python-komentosarjoista, joiden koodi voi sisältää suojaus- tai tietosuojariskejä. Kun yrität tarkastella tai käsitellä Python-visualisointia ensimmäistä kertaa, käyttäjälle esitetään suojauksen varoitussanoma. Ota Python-visualisoinnit käyttöön vain, jos luotat tekijään ja lähteeseen, tai sen jälkeen, kun olet tarkastanut Python-komentosarjan ja tutustunut siihen.
-    > 
-    > 
+![](media/desktop-python-visuals/python-visuals-13.png) 
+
+## <a name="create-a-bar-plot"></a>Palkkikaavion luominen
+
+Luodaan nyt palkkikaavio kunkin henkilön iästä. Poista koodi kohdasta **Liitä tai kirjoita komentosarjakoodisi tähän** ja kirjota tämä Python-koodi:
+
+```python
+import matplotlib.pyplot as plt 
+dataset.plot(kind='bar',x='Fname',y='Age') 
+plt.show() 
+```
+
+Kun valitset **Suorita**-komentosarjapainikkeen, luodaan seuraava palkkikaavio:
+
+![](media/desktop-python-visuals/python-visuals-14.png) 
+
+## <a name="security"></a>Suojaus
+
+> [!IMPORTANT] 
+  > **Python-komentosarjojen suojaus:** Python-visualisoinnit luodaan Python-komentosarjoista, joiden koodi voi sisältää suojaus- tai tietosuojariskejä. Kun yrität tarkastella tai käsitellä Python-visualisointia ensimmäistä kertaa, käyttäjälle esitetään suojauksen varoitussanoma. Ota Python-visualisoinnit käyttöön vain, jos luotat tekijään ja lähteeseen, tai sen jälkeen, kun olet tarkastanut Python-komentosarjan ja tutustunut siihen. 
+  >  
+
+## <a name="more-information-about-plotting-with-matprolib-pandas-and-python"></a>Lisätietoja piirtämisestä Matprolibin, Pandasin ja Pythonin avulla
+
+Tämä opetusohjelma on suunniteltu helpottamaan visualisointien luomisen aloittamista Pythonin avulla **Power BI Desktopissa**. Se sisältää perustiedot monista toiminnoista ja ominaisuuksista, jotka liittyvät visualisointien luomiseen Python-, Pandas- ja Matprolib-kirjastojen. Olemassa on paljon lisätietoja, ja tässä on muutamia linkkejä, joiden avulla pääset alkuun.
+
+* Dokumentaatio [Matplotlib](https://matplotlib.org/)-sivustossa. 
+* [Matplotlib Tutorial : A Basic Guide to Use Matplotlib with Python](https://www.datasciencelearner.com/matplotlib-tutorial-complete-guide-to-use-matplotlib-with-python/) 
+* [Matplotlib Tutorial – Python Matplotlib Library with Examples](https://www.edureka.co/blog/python-matplotlib-tutorial/) 
+* [Pandas API Reference](http://pandas.pydata.org/pandas-docs/stable/reference/index.html) 
+* [Python visualizations in Power BI Service](https://powerbi.microsoft.com/blog/python-visualizations-in-power-bi-service/) 
+* [Using Python Visuals in Power BI ](https://www.absentdata.com/how-to-user-python-and-power-bi/)
+
 
 ## <a name="known-limitations"></a>Tunnetut rajoitukset
+
 Python-visualisoinneilla **Power BI Desktopissa** on joitakin rajoituksia:
 
 * Tietojen kokorajoitukset – Python-visualisointien piirtämiseen käyttämä tietomäärä on rajoitettu 150 000 riviin. Jos valittuna on yli 150 000 riviä, vain 150 000 ylintä riviä käytetään ja kuvassa näkyy sanoma.
@@ -122,6 +175,7 @@ Python-visualisoinneilla **Power BI Desktopissa** on joitakin rajoituksia:
 * Vain piirrot, jotka on piirretty Pythonin oletusarvoiseen näyttölaitteeseen, näkyvät oikein piirtoalustalla. Vältä nimenomaisesti eri Python-näyttölaitteen käyttämistä.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
+
 Tutustu seuraaviin lisätietoihin, jotka koskevat Pythonia Power BI:ssä.
 
 * [Python-komentosarjojen suorittaminen Power BI Desktopissa](desktop-python-scripts.md)

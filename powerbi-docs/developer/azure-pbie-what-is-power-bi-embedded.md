@@ -1,9 +1,9 @@
 ---
 title: Mikä on Azure Power BI Embedded ja upotettu analysointi | Microsoft Docs
 description: Power BI Embedded on upotetun analysoinnin työkalu. Sen tarkoituksena on yksinkertaistaa sitä, miten riippumattomat ohjelmistotoimittajat ja -kehittäjät käyttävät Power BI -ominaisuuksia auttamalla heitä lisäämään sovelluksiin nopeasti upeita visualisointeja, raportteja ja koontinäyttöjä. Lue, miten käyttää upotetun analysoinnin ohjelmistoa, upotetun analysoinnin työkaluja tai upotetun liiketoimintatiedon hallinnan työkaluja Power BI Embeddin avulla.
-author: rkarlin
-ms.author: rkarlin
-manager: kfile
+author: KesemSharabi
+ms.author: kesharab
+manager: rkarlin
 ms.reviewer: nishalit
 ms.service: power-bi-embedded
 ms.subservice: ''
@@ -11,16 +11,16 @@ ms.devlang: csharp, javascript
 ms.topic: overview
 ms.custom: seodec18
 ms.date: 12/10/2018
-ms.openlocfilehash: 6e91b2e958a738961255f9ad9b6b0514fed759bb
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: c74bd97a3323f28ba6d66fad03307f28c1b0c270
+ms.sourcegitcommit: c799941c8169cd5b6b6d63f609db66ab2af93891
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61385013"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70391484"
 ---
 # <a name="what-is-power-bi-embedded-in-azure"></a>Mikä on Power BI Embedded Azuressa?
 
-Power BI Embeddedin tarkoituksena on yksinkertaistaa sitä, miten riippumattomat ohjelmistotoimittajat ja -kehittäjät käyttävät Power BI -ominaisuuksia upotetun analysoinnin avulla. Power BI Embedded yksinkertaistaa Power BI -ominaisuuksia auttamalla sinua lisäämään upeita visualisointeja, raportteja ja koontinäyttöjä sovelluksiisi nopeasti. Microsoft Azureen luotujen sovellusten tavoin käytössä on palveluita, kuten koneoppiminen ja IoT. Riippumattomat ohjelmistotoimittajat mahdollistavat asiakkaiden nopeiden ja tietoon perustuvien päätösten tekemisen kontekstissa, sillä tietojen välillä siirtyminen on sovelluksissa helppoa.
+Power BI Embeddedin tarkoituksena on yksinkertaistaa sitä, miten riippumattomat ohjelmistotoimittajat ja -kehittäjät käyttävät Power BI -ominaisuuksia upotetun analysoinnin avulla. Power BI Embedded yksinkertaistaa Power BI -ominaisuuksia auttamalla sinua lisäämään upeita visualisointeja, raportteja ja koontinäyttöjä sovelluksiisi nopeasti. Microsoft Azureen luotujen sovellusten tapaan käytössä on palveluja, kuten koneoppiminen ja IoT. Riippumattomat ohjelmistotoimittajat mahdollistavat asiakkaiden nopeiden ja tietoon perustuvien päätösten tekemisen kontekstissa, sillä tietojen välillä siirtyminen on sovelluksissa helppoa.
 
 > [!VIDEO https://www.youtube.com/embed/iEHfUuoZseo]
 
