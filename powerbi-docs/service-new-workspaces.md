@@ -7,15 +7,15 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 08/15/2019
+ms.date: 09/05/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: e25a004098c5bfe5cf607f5ee4b26dfda09d792d
-ms.sourcegitcommit: 4d5166944fcc6fe4666cab055ae75e7a0a77866d
+ms.openlocfilehash: 9add7ce3c5caf675fde15fd15eea03d9d9b49d9b
+ms.sourcegitcommit: 9665997274301b228f45aa7250ba557e90164a4d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69530489"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70750895"
 ---
 # <a name="organize-work-in-the-new-workspaces-in-power-bi"></a>Työn järjestäminen uusiin työtiloihin Power BI:ssä
 
@@ -61,7 +61,7 @@ Roolien avulla voit hallita, kuka voi tehdä mitäkin työtilassa, joten ryhmät
 
 Kun määrität rooleja käyttäjäryhmälle, ryhmän käyttäjät voivat käyttää sisältöä. Jos asetat sisäkkäin käyttäjäryhmiä, kaikilla ryhmien käyttäjillä on käyttöoikeus.
 
-Tässä ovat ominaisuudet neljästä roolista: järjestelmänvalvojat, jäsenet, osallistujat ja katselijat.
+Tässä ovat ominaisuudet neljästä roolista: järjestelmänvalvojat, jäsenet, osallistujat ja katselijat. Kaikki nämä ominaisuudet viimeistä lukuun ottamatta edellyttävät Power BI Pro -käyttöoikeutta.
 
 |Ominaisuus   | Järjestelmänvalvoja  | Jäsen  | Osallistuja  | Katselija |
 |---|---|---|---|---|
@@ -73,9 +73,9 @@ Tässä ovat ominaisuudet neljästä roolista: järjestelmänvalvojat, jäsenet,
 | Sallia muille kohteiden jakaminen uudelleen. |  X | X  |   |   |
 | Luoda, muokata ja poistaa työtilan sisältöä.  |  X | X  | X  |   |
 | Julkaista raportteja työtilaan ja poistaa sisältöä.  |  X | X  | X  |   |
-| Tarkastella kohdetta. |  X | X  | X  | X  |
 | Luo raportti toisessa työtilassa tämän työtilan tietojoukon perusteella. |  X | X  | X  | X <sup>1</sup>  |
 | Kopioi raportti. | X | X | X | X <sup>1</sup> |
+| Tarkastele ja käytä kohdetta. |  X | X  | X  | X  |
 
 **1** Power BI Pro -käyttöoikeus ja [tietojoukkojen muodostamisoikeudet](service-datasets-build-permissions.md#build-permissions-for-shared-datasets) tarvitaan. 
  
