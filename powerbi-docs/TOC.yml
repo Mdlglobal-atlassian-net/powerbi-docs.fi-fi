@@ -283,6 +283,8 @@
               href: service-add-hyperlink-to-text-box.md
             - name: Taulukoiden hyperlinkit
               href: power-bi-hyperlinks-in-tables.md
+            - name: Mukautetut muotoilumerkkijonot
+              href: desktop-custom-format-strings.md
             - name: Taulukon ehdollinen muotoilu
               href: desktop-conditional-table-formatting.md
             - name: Ehtolausekepohjainen otsikkomuotoilu
@@ -669,12 +671,14 @@
               href: service-dataflows-computed-entities-premium.md
             - name: Yhteyden muodostaminen tietovoita sisältäviin tietolähteisiin
               href: service-dataflows-data-sources.md
-            - name: Tietovoiden käyttö paikallisiin tietolähteisiin
+            - name: Tietovoiden käyttäminen paikallisiin tietolähteisiin
               href: service-dataflows-on-premises-gateways.md
             - name: Entiteettien linkittäminen tietovoiden välillä
               href: service-dataflows-linked-entities.md
-            - name: Lisäävän päivityksen käyttö tietovoiden kanssa
+            - name: Lisäävän päivityksen käyttäminen tietovoiden kanssa
               href: service-dataflows-incremental-refresh.md
+            - name: Tietovoiden parhaat käytännöt
+              href: service-dataflows-best-practices.md
             - name: Kehittäjien tietovuoresurssit
               href: service-dataflows-developer-resources.md
             - name: Yhdistäminen tietovoihin Power BI Desktopissa
@@ -715,6 +719,8 @@
               href: service-template-apps-install-distribute.md
             - name: 'Power BI -mallisovelluksen päivittäminen, poistaminen ja purkaminen'
               href: service-template-update-delete-extract.md
+            - name: Mallisovellusten esimerkit
+              href: service-template-apps-samples.md
         - name: Vianmääritys
           items:
             - name: Unohditko Power BI -salasanasi?
