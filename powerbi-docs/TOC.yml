@@ -283,6 +283,8 @@
               href: service-add-hyperlink-to-text-box.md
             - name: Taulukoiden hyperlinkit
               href: power-bi-hyperlinks-in-tables.md
+            - name: Näytä kuvat taulukoissa
+              href: power-bi-images-tables.md
             - name: Mukautetut muotoilumerkkijonot
               href: desktop-custom-format-strings.md
             - name: Taulukon ehdollinen muotoilu
@@ -569,8 +571,6 @@
               href: service-create-dashboard-mobile-phone-view.md
             - name: Ruudun QR-koodin luominen
               href: service-create-qr-code-for-tile.md
-            - name: Kuvan lisääminen koontinäyttöön
-              href: service-dashboard-add-image.md
             - name: Koontinäytön tietojen luokittelu
               href: service-data-classification.md
             - name: Raporttinäkymän teemat
@@ -677,8 +677,6 @@
               href: service-dataflows-linked-entities.md
             - name: Lisäävän päivityksen käyttäminen tietovoiden kanssa
               href: service-dataflows-incremental-refresh.md
-            - name: Tietovoiden parhaat käytännöt
-              href: service-dataflows-best-practices.md
             - name: Kehittäjien tietovuoresurssit
               href: service-dataflows-developer-resources.md
             - name: Yhdistäminen tietovoihin Power BI Desktopissa
@@ -1432,6 +1430,8 @@
           href: service-admin-power-bi-security.md
 - name: Opas
   items:
+    - name: Tietovoiden parhaat käytännöt
+      href: service-dataflows-best-practices.md
     - name: Mikä on tähtirakenne?
       href: guidance/star-schema.md
     - name: Tietomallin koon pienentäminen

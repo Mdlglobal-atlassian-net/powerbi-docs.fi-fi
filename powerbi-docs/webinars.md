@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 06/01/2019
 ms.author: v-tatero
-ms.openlocfilehash: 5a5dca5c3fb4b3b375d3fbb603703e8aaaf91c6c
-ms.sourcegitcommit: a77977a43342db4399a4dffb862b96907d16de35
+ms.openlocfilehash: e02d50a7990eb90405d6a864fe294fee8e946e10
+ms.sourcegitcommit: ba085b248c54e8fb1fd8eb2bb23a814e3fdd7ff6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/14/2019
-ms.locfileid: "69023427"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70936253"
 ---
 # <a name="power-bi-webinars"></a>Power BI -verkkoseminaarit
 
@@ -22,9 +22,7 @@ Rekisteröidy tuleviin reaaliaikaisiin verkkoseminaareihin tai katso nauhoitettu
 
 ## <a name="upcoming-webinars"></a>Tulevat verkkoseminaarit
 
-**Power BI:n käyttäminen Dynamics 365 for Finance and Operationsin kanssa**
-<br>Tekijä: Kevin Horlock
-<br>[Rekisteröidy ja katso syyskuun 11. päivä](https://info.microsoft.com/ww-landing-Using-Power-BI-with-Dynamics-365-Finance-and-Operations.html?LCID=EN-US)
+Mitään verkkoseminaaria ei ole vielä ajoitettu. Palaa pian takaisin tarkistamaan muut tulevat tapahtumat.
 
 >[Tulevia Power BI -yhteisön verkkoseminaareja](https://powerbi.microsoft.com/blog/tag/community-webinars/?Is=Website)
 
@@ -51,6 +49,10 @@ Aloita näistä suosituista verkkoseminaareista
 **Kehitä tietomallitaitojasi Power BI:n avulla**
 <br>tekijä: Kasper de Jonge
 <br>[Rekisteröidy ja katso nyt](https://info.microsoft.com/Strengthen-Your-Data-Modeling-Skills-with-PowerBI-Registration.html?Is=Website)
+
+**Power BI:n käyttäminen Dynamics 365 for Finance and Operationsin kanssa**
+<br>Tekijä: Kevin Horlock
+<br>[Rekisteröidy ja katso nyt](https://info.microsoft.com/ww-landing-Using-Power-BI-with-Dynamics-365-Finance-and-Operations.html?LCID=EN-US)
 
 **Microsoft toimii Power BI:n voimalla – näin helpotat taloutesi suunnittelua ja analysointia**
 <br>Cory Hrncirik ja Miguel Martinez

@@ -11,12 +11,12 @@ ms.reviewer: ''
 ms.custom: ''
 ms.date: 06/13/2019
 LocalizationGroup: Data from databases
-ms.openlocfilehash: 2363b9da3ac46ce9fd49f19a00950a4a3cf23502
-ms.sourcegitcommit: 30ee81f8c54fd7e4d47d7e3ffcf0e6c3bb68f6c2
+ms.openlocfilehash: 96bf1a8d95f26014be09a32c1e83fb2af90f9fc0
+ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/29/2019
-ms.locfileid: "67468130"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "70987004"
 ---
 # <a name="azure-sql-database-with-directquery"></a>Azure SQL -tietokanta ja DirectQuery
 
@@ -27,7 +27,7 @@ DirectQueryn avulla kyselyt lähetetään takaisin Microsoft Azuren SQL-tietokan
 **Huomautukset:**
 
 * Määritä palvelimen täydellinen nimi yhteyttä muodostettaessa (katso lisätietoja alla).
-* Varmista, että tietokannan palomuurisäännöt on määritetty [sallimaan Azure-palveluiden käyttö](https://msdn.microsoft.com/library/azure/ee621782.aspx).
+* Varmista, että tietokannan palomuurisäännöt on määritetty [sallimaan Azure-palveluiden käyttö](https://docs.microsoft.com/azure/sql-database/sql-database-networkaccess-overview#allow-azure-services).
 * Jokainen toiminto, kuten sarakkeen valitseminen tai suodattimen lisääminen, lähettää kyselyn takaisin tietokantaan.
 * Ruudut päivitetään tunnin välein (päivitystä ei tarvitse ajoittaa). Voit muokata päivitysväliä lisäasetuksissa, kun muodostat yhteyden.
 * Q&A ei ole käytettävissä DirectQuery-tietojoukoissa.

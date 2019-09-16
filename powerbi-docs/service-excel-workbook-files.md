@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/08/2019
+ms.date: 09/06/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 54108b8d4fd02730cb1aa027d2fefbad2bbfd9fb
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: a98ccf3477a6e8e996efb0b8cb1ccf2c6728c594
+ms.sourcegitcommit: 226b47f64e6749061cd54bf8d4436f7deaed7691
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65513117"
+ms.lasthandoff: 09/09/2019
+ms.locfileid: "70840955"
 ---
 # <a name="get-data-from-excel-workbook-files"></a>Tietojen noutaminen Excel-työkirjatiedostoista
 ![](media/service-excel-workbook-files/excel_icon.png)
@@ -77,8 +77,6 @@ Excel 2016:ssa voit valita myös Julkaise > Vie. Se on suunnilleen sama asia. Lu
 Kun valitset **Yhdistä**, työkirjasi näkyy Power BI:ssä aivan samalla tavalla kuin se näkyisi Excel Onlinessa. Mutta toisin kuin Excel Onlinessa, käytettävissäsi on käteviä ominaisuuksia, joilla voit kiinnittää laskentataulukoiden elementtejä suoraan raporttinäkymiin.
 
 Työkirjaa ei voi muokata Power BI:ssä. Jos muutoksia on tehtävä, voit valita Muokkaa-vaihtoehdon ja sitten työkirjan muokkaamisen joko Excel Onlinessa tai tietokoneesi Excelissä. Tekemäsi muutokset tallennetaan työkirjaan OneDrivessa.
-
-Kun valitaan tämä tapa, Power BI luo vastaavan tietojoukon yhdistettyyn työkirjaan. Voit tarvittaessa käyttää kyseistä tietojoukkoa Power BI ‑raportin luomiseen. Työkirja näkyy myös Power BI -työtilan siirtymisruudussa Raportit-kohdassa. Yhdistetyissä työkirjoissa on erityinen Excel-kuvake.
 
 Valitse tämä vaihtoehto, jos sinulla on vain tietoja laskentataulukoissa tai tietojoukkoja, pivot-taulukoita ja kaavioita, jotka haluat kiinnittää raporttinäkymiin.
 
