@@ -11,10 +11,10 @@ ms.date: 08/29/2019
 ms.author: mihart
 LocalizationGroup: Share your work
 ms.openlocfilehash: fde61f2411fb04897cc23f24639dc373a98e6edd
-ms.sourcegitcommit: b53a6f5575f5f8bc443ecdca9c72525ce123518f
+ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/30/2019
+ms.lasthandoff: 09/16/2019
 ms.locfileid: "70185116"
 ---
 # <a name="install-and-use-apps-with-dashboards-and-reports-in-power-bi"></a>Koontinäyttöjä ja raportteja hyödyntävien sovellusten asentaminen ja käyttäminen Power BI:ssä
@@ -83,11 +83,11 @@ Tässä esimerkissä avataan jokin Microsoft-mallisovelluksista. AppSourcesta l�
 
 6. Valitse, haluatko tutustua uuteen sovellukseen tai mukauttaa ja jakaa sen. Valitsimme Microsoft-mallisovelluksen, joten aloitetaan tutustumalla siihen. 
 
-    ![Tarkastele käyttäen esimerkkitietoja](./media/end-user-apps/power-bi-explore.png)
+    ![Tutustu esimerkkitietojen avulla](./media/end-user-apps/power-bi-explore.png)
 
 7.  Uusi sovelluksesi avautuu koontinäytössä. Sovelluksen *suunnittelija* olisi vaihtoehtoisesti voinut määrittää sovelluksen avautumaan raportissa.  
 
-    ![Tarkastele käyttäen esimerkkitietoja](./media/end-user-apps/power-bi-new-app.png)
+    ![Tutustu esimerkkitietojen avulla](./media/end-user-apps/power-bi-new-app.png)
 
 
 

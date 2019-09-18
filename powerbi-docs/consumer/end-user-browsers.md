@@ -4,19 +4,18 @@ description: Katso luettelo Power BI:tä tukevista selaimista
 author: mihart
 manager: kvivek
 ms.reviewer: ''
-ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 05/11/2019
+ms.date: 09/11/2019
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 1b47e51ece196d6667363d91f43589c398828ff9
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: f713ab679f49ca2e3226f9a6c2a7bf9f2588fede
+ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65608294"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71073190"
 ---
 # <a name="supported-browsers-for-power-bi"></a>Power BI:n tuetut selaimet
 Power BI:tä voi käyttää seuraavissa selaimissa:
@@ -30,6 +29,7 @@ Power BI:tä voi käyttää seuraavissa selaimissa:
 Näitä selaimia tuetaan kaikissa ympäristöissä, joissa ne ovat saatavilla.
 
 ### <a name="next-steps"></a>Seuraavat vaiheet
+* [Mikä on Power BI?](../power-bi-overview.md)
 * Voit esittää kysymyksiä [Power BI -yhteisössä](http://community.powerbi.com/)
 * Eikö ongelma ratkennut? Käy [Power BI -tukisivulla](https://powerbi.microsoft.com/support/)
 
