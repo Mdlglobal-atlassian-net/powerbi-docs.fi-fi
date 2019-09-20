@@ -269,6 +269,8 @@
               href: desktop-inline-hierarchy-labels.md
             - name: Numeerisen alueen osittajan käyttö
               href: desktop-slicer-numeric-range.md
+            - name: Suhteellisen päivämääräosittajan käyttö
+              href: desktop-slicer-filter-date-range.md
             - name: Kooltaan muokattavan osittajan luominen
               href: power-bi-slicer-filter-responsive.md
             - name: Omien vastauskorttien luominen Cortanaan
