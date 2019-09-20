@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 07/26/2019
+ms.date: 09/09/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 531cb34379c984a26e983db7acfc9b4deebf68b9
-ms.sourcegitcommit: 0332efe8f83cb55a9b8ea011db7c99e9b4568118
+ms.openlocfilehash: d491ca460d8393e9da308c826e69aad454d0e766
+ms.sourcegitcommit: 226b47f64e6749061cd54bf8d4436f7deaed7691
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/27/2019
-ms.locfileid: "68590452"
+ms.lasthandoff: 09/09/2019
+ms.locfileid: "70841619"
 ---
 # <a name="power-bi-for-us-government-customers"></a>Power BI Yhdysvaltain valtionhallinnon asiakkaille
 **Power BI-palvelulla** on versio, joka on saatavilla Yhdysvaltain valtionhallinnon asiakkaille osana **Office 365 US Government Community** -tilauksia. Tässä artikkelissa kuvattu **Power BI -palvelun** versio on suunniteltu erityisesti Yhdysvaltain valtionhallinnon asiakkaille ja on erillinen ja erilainen kuin **Power BI -palvelun** kaupallinen versio.
@@ -48,7 +48,7 @@ Azure jaetaan useiden pilvien kesken. Vuokraajat voivat oletusarvoisesti avata p
 * USGov Texas
 * USGov Arizona
 
-Julkisessa pilvipalvelussa IP-tilat ovat käytettävissä. Jos kyseessä on valtionhallinnon pilvipalvelu, katso uusimmat tiedot ladattavasta [Azuren palveluasiakirjasta valtionhallinnolle](https://www.microsoft.com/download/details.aspx?id=57063).
+Julkisessa pilvipalvelussa IP-tilat ovat käytettävissä. Jos kyseessä on valtionhallinnon pilvipalvelu, katso uusimmat tiedot ladattavasta [Azuren Governmentin palveluasiakirjasta](https://www.microsoft.com/download/details.aspx?id=57063).
 
 ## <a name="limitations-of-power-bi-us-government"></a>Power BI US Governmentin rajoitukset
 Jotkin ominaisuudet, jotka ovat saatavilla **Power BI -palvelun** kaupallisessa versiossa, *eivät* ole saatavilla **Power BI -palvelussa** Yhdysvaltain valtionhallinnon asiakkaille. Power BI -tiimi pyrkii aktiivisesti saamaan nämä ominaisuudet Yhdysvaltain valtionhallinnon asiakkaille ja päivittää tämän artikkelin tiedot, kun nämä ominaisuudet tulevat saataville.
@@ -85,13 +85,13 @@ Seuraavat kysymykset (ja vastaukset) on toimitettu auttamaan sinua saamaan tarvi
 
 **Vastaus**: Rekisteröityminen (eli *perehdytys*) saattaa vaihdella nykyisen käyttöoikeuden ja tilauksen mukaan. Lisätietoja on artikkelissa [Rekisteröidy Yhdysvaltain valtionhallinnon Power BI:hin](service-govus-signup.md).
 
-**Kysymys:** Eroaako Yhdysvaltain valtionhallinnon käytössä olevan **Power BI:n** yhdistämisen URL-osoite kaupallisen **Power BI**:n URL-osoitteesta?
+**Kysymys:** Eroaako Yhdysvaltain valtionhallinnon käytössä olevan **Power BI:n** yhdistämisen URL-osoite kaupallisen **Power BI**:n URL-osoitteesta? Onko Government Community Cloud High (GCC High) -asiakkaille eri URL-osoite?
 
 **Vastaus**: Kyllä, URL-osoitteet ovat erilaiset. Seuraavassa taulukossa on kukin URL-osoite:
 
-| Kaupallisen version URL-osoite | Yhdysvaltain valtionhallinnon version URL-osoite |
-| --- | --- |
-| https://app.powerbi.com/ |[https://app.powerbigov.us](https://app.powerbigov.us) |
+| Kaupallisen version URL-osoite | Yhdysvaltain valtionhallinnon version URL-osoite | Yhdysvaltain julkisen hallinnon GCC High -URL-osoite |
+| --- | --- | --- |
+| https://app.powerbi.com/ |[https://app.powerbigov.us](https://app.powerbigov.us) | [https://app.high.powerbigov.us](https://app.high.powerbigov.us) |
 
 **Kysymys:** Tilini on valmisteltu useammassa kuin yhdessä kansallisessa pilvipalvelussa. Miten voin valita yhdistettävän pilvipalvelun käyttäessäni **Power BI Desktopia**?
 

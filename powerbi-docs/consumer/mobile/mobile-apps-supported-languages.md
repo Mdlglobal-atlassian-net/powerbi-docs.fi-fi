@@ -9,15 +9,15 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 01/16/2018
 ms.author: mshenhav
-ms.openlocfilehash: 8a6ee2e16b5c5190c969c6017101257f331775f9
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 97fa91dda195d6976d92b027a0f96fca8e2ccea1
+ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61269375"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "70841411"
 ---
 # <a name="supported-languages-in-the-power-bi-mobile-apps"></a>Power BI -mobiilisovelluksissa tuetut kielet
-Power Bi-mobiilisovelluksissa on tällä hetkellä seuraavien kielten tuki:
+Power BI ‑mobiilisovelluksissa on tällä hetkellä seuraavien kielten tuki:
 
 * arabia (vain iOS)
 * katalaani – català
@@ -61,5 +61,5 @@ Power Bi-mobiilisovelluksissa on tällä hetkellä seuraavien kielten tuki:
 ## <a name="next-steps"></a>Seuraavat vaiheet
 * [Power BI:n tuetut kielet ja maat tai alueet](../../supported-languages-countries-regions.md)
 * Onko sinulla kysymyksiä? Voit esittää kysymyksiä [Power BI -yhteisössä](http://community.powerbi.com/).
-* Eikö ongelma ratkennut? Käy [Power BI -tukisivulla](https://powerbi.microsoft.com/support/).
+* Eikö ongelma ratkennut? Vieraile [Power BI -tukisivulla](https://powerbi.microsoft.com/support/).
 

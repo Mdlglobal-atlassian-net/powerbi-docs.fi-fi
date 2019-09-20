@@ -1,6 +1,6 @@
 ---
-title: Raportin suodattaminen ja jakaminen työtovereiden - Power BI
-description: Opi, miten voit suodattaa Power BI -raportin ja jakaa sen työtovereiden kanssa organisaatiossa.
+title: Kaksi tapaa jakaa suodatettu Power BI -raportti
+description: Katso, miten voit suodattaa Power BI -raportin ja jakaa sen organisaatiosi työtovereiden kanssa.
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: lukaszp
@@ -8,62 +8,72 @@ featuredvideoid: 0tUwn8DHo3s
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/24/2019
+ms.date: 09/06/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 5f3808884e63521ec1dd775d876f1cf707bbe56b
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: c5bc8b32ae61870b794875c1d1720cd07dcf97f8
+ms.sourcegitcommit: 6a44cb5b0328b60ebe7710378287f1e20bc55a25
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "64770691"
+ms.lasthandoff: 09/10/2019
+ms.locfileid: "70877702"
 ---
-# <a name="filter-a-power-bi-report-and-share-it-with-coworkers"></a>Power BI-raportin suodattaminen ja jakaminen työtovereiden kanssa
-*Jakaminen* on kätevä keino myöntää parille henkilölle käyttöoikeus luomiisi koontinäyttöihin ja raportteihin. Mitä tapahtuu, jos haluat jakaa raportista suodatetun version? Haluat kenties jakaa raportin, joka näyttää vain tietyn kaupungin, myyjän tai vuoden tiedot. Yritä raportin suodattaminen ja jakaminen tai luomalla mukautetun URL-Osoitteen. Raportti suodatetaan, kun vastaanottajat avaavat sen ensimmäisen kerran. He voivat poistaa suodattimen muokkaamalla URL-osoitetta. 
+# <a name="two-ways-to-share-a-filtered-power-bi-report"></a>Kaksi tapaa jakaa suodatettu Power BI -raportti
+*Jakaminen* on kätevä keino myöntää parille henkilölle käyttöoikeus luomiisi koontinäyttöihin ja raportteihin. Mitä tapahtuu, jos haluat jakaa raportista suodatetun version? Haluat kenties jakaa raportin, joka näyttää vain tietyn kaupungin, myyjän tai vuoden tiedot. Kokeile raportin suodattamista ja jakamista tai mukautetun URL-osoitteen luomista. Raportti suodatetaan, kun vastaanottajat avaavat sen ensimmäisen kerran. He voivat poistaa suodattimen muokkaamalla URL-osoitetta. 
 
-Power BI tarjoaa myös [useita muita tapoja tehdä yhteistyötä ja jakaa raportteja](service-how-to-collaborate-distribute-dashboards-reports.md). Jakamisessa sinulla ja vastaanottajillasi on oltava myös [Power BI Pro -käyttöoikeudet](service-features-license-type.md) tai sisällön on oltava [Premium-kapasiteetissa](service-premium-what-is.md). 
+![Raportti suodatettu](media/service-share-reports/power-bi-share-filter-pane-report.png)
 
-## <a name="two-ways-to-filter-a-report"></a>Voit suodattaa raportin kahdella tavalla
+Power BI sisältää myös [muita tapoja tehdä yhteistyötä ja jakaa raportteja](service-how-to-collaborate-distribute-dashboards-reports.md). Jakamisessa sinulla ja vastaanottajillasi on oltava myös [Power BI Pro -käyttöoikeudet](service-features-license-type.md) tai sisällön on oltava [Premium-kapasiteetissa](service-premium-what-is.md). 
 
-### <a name="set-a-filter"></a>Määritä suodatin
+## <a name="two-ways-to-filter-a-report"></a>Kaksi tapaa suodattaa raportti
 
-Avaa raportti [muokkausnäkymässä](consumer/end-user-reading-view.md), käytä suodatinta ja tallenna raportti.
-   
-Tässä esimerkissä suodatamme [Jälleenmyyntianalyysimallin](sample-tutorial-connect-to-the-samples.md), jotta siinä näkyvät vain arvot, joissa **Alue** on yhtä kuin **NC**.
-   
-![Raportin suodatusruutu](media/service-share-reports/power-bi-filter-report2.png)
+Molemmissa suodatustavoissa käytetään Markkinointi ja myynti ‑mallisovellusta. Haluatko kokeilla sitä? Voit myös asentaa [Markkinointi ja myynti ‑mallisovelluksen](https://appsource.microsoft.com/product/power-bi/microsoft-retail-analysis-sample.salesandmarketingsample?tab=Overview).
 
-### <a name="create-a-filter-in-the-url"></a>Luo suodatin URL-osoite
+### <a name="set-a-filter"></a>Suodattimen asettaminen
+
+Voit käyttää suodatinta avaamalla raportin [Muokkausnäkymässä](consumer/end-user-reading-view.md).
+
+Tässä esimerkissä suodatamme Markkinointi ja myynti ‑mallisovelluksen vuodenalusta-luokkasivun niin, että siinä näytetään vain ne arvot, joissa **Alue** on **Keski**. 
+ 
+![Raportin suodatusruutu](media/service-share-reports/power-bi-share-report-filter.png)
+
+Tallenna raportti.
+
+### <a name="create-a-filter-in-the-url"></a>Suodattimen luominen URL-osoitteessa
+
+Kun lisäät suodattimen raporttisivun URL-osoitteen loppuun, raportti toimii hieman eri tavalla. Suodatettu sivu näyttää samalta. Power BI kuitenkin lisää suodattimen koko raporttiin ja poistaa muut arvot suodatinruudusta.  
 
 Lisää seuraava teksti raporttisivun URL-osoitteen loppuun:
    
-?filter=*tablename*/*fieldname* eq *arvo*
+    ?filter=*tablename*/*fieldname* eq *value*
    
-Kentän on oltava tyyppi, datetime tai merkkijono. *Tablename*- tai *Fieldname*-arvot eivät voi sisältää välilyöntejä.
+Kentän tyypin on oltava numero, päivämäärä ja aika tai merkkijono. *Tablename*- tai *Fieldname*-arvot eivät voi sisältää välilyöntejä.
    
-Tässä esimerkissä taulukon nimi on **Kauppa**, kentän nimi on **Alue** ja suodatettava arvo on **NC**:
+Tässä esimerkissä taulukon nimi on **Alue**, kentän nimi on **Alue** ja suodatettava arvo on **Keski**:
    
-?filter=Store/Territory eq 'NC'
-   
-![Suodatetun raportin URL-osoite](media/service-share-reports/power-bi-filter-url3.png)
-   
-Selain lisää erikoismerkit, jotka vastaavat kauttaviivoja, välilyöntejä ja heittomerkkejä, joten tulos on seuraava:
-   
-app.powerbi.com/groups/me/reports/010ae9ad-a9ab-4904-a7a1-xxxxxxxxxxxx/ReportSection2?filter=Store%252FTerritory%20eq%20%27NC%27
+    ?filter=Geo/Region eq 'Central'
 
-Artikkelissa [suodattaa raportin URL-osoitteen kyselymerkkijonoparametrien avulla](service-url-filters.md) paljon lisätietoja.
+Selain lisää erikoismerkit, jotka vastaavat kauttaviivoja, välilyöntejä ja heittomerkkejä, joten tulos on seuraavankaltainen:
+   
+    app.powerbi.com/groups/xxxx/reports/xxxx/ReportSection4d00c3887644123e310e?filter=Geo~2FRegion%20eq%20'Central'
+
+![Raportti, jossa on URL-suodatin](media/service-share-reports/power-bi-share-report-filter-url.png)
+
+Tallenna raportti.
+
+Katso lisätiedot artikkelista [Raportin suodattaminen URL-osoitteen kyselymerkkijonoparametrien avulla](service-url-filters.md).
 
 ## <a name="share-the-filtered-report"></a>Suodatetun raportin jakaminen
 
-1. Kun olet [jakaa raportin](service-share-dashboards.md)Poista **Lähetä sähköposti-ilmoitus vastaanottajille** valintaruutu.
+1. Kun [jaat raportin](service-share-dashboards.md), tyhjennä **Lähetä sähköposti-ilmoitus vastaanottajille** ‑valintaruutu.
 
     ![Jaa raportti -valintaikkuna](media/service-share-reports/power-bi-share-report-dialog.png)
 
 4. Lähetä aiemmin luomasi suodattimen sisältävä linkki.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
-* Haluatko antaa palautetta? Anna ehdotuksia siirtymällä [Power BI -yhteisön sivustolle](https://community.powerbi.com/).
-* [Miten voin työstää koontinäyttöjä ja raportteja yhdessä muiden kanssa sekä jakaa niitä?](service-how-to-collaborate-distribute-dashboards-reports.md)
-* [Jaa koontinäyttö](service-share-dashboards.md)
+* [Töiden jakamistavat Power BI:ssä](service-how-to-collaborate-distribute-dashboards-reports.md)
+* [Koontinäytön jakaminen](service-share-dashboards.md)
 * Onko sinulla muuta kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/).
+* Haluatko antaa palautetta? Anna ehdotuksia siirtymällä [Power BI -yhteisön sivustolle](https://community.powerbi.com/).
 

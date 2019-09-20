@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/08/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 278d631e755c4d484db0788b6c58fca9cfce4616
-ms.sourcegitcommit: 0e50ebfa8762e19286566432870ef16d242ac78f
+ms.openlocfilehash: 218124542570d313c3d5893a6f1d69c75594f33c
+ms.sourcegitcommit: db4fc5da8e65e0a3dc35582d7142a64ad3405de7
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68961888"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70903790"
 ---
 # <a name="manage-your-app-workspace-in-power-bi-and-office-365"></a>Sovellustyötilan hallinta Power BI:ssä ja Office 365:ssä
 
@@ -72,7 +72,7 @@ Voit myös muokata sovellustyötilan ominaisuuksia suoraan Outlook for Office 36
 
 ### <a name="add-an-image-and-set-other-workspace-properties"></a>Kuvan lisääminen ja työtilan muiden ominaisuuksien määrittäminen
 
-Kun jakelet sovellustasi sovellustyötilasta, tässä lisäämäsi kuva näkyy sovelluksen kuvana. Lisätietoja on **Uusien työtilojen luominen** -artikkelin osiossa [Kuvan lisääminen Office 365:n sovellustyötilaan (valinnainen)](service-create-workspaces.md#add-an-image-to-your-office-365-app-workspace-optional).
+Kun jakelet sovellustasi sovellustyötilasta, tässä lisäämäsi kuva näkyy sovelluksen kuvana. Lisätietoja on **Uusien työtilojen luominen** -artikkelin osiossa [Kuvan lisääminen Office 365:n uusiin työtiloihin](service-create-workspaces.md#add-an-image-to-your-office-365-workspace-optional).
 
 1. Siirry sovellustyötilasi Outlook for Office 365 -näkymässä **Tietoja**-välilehdelle ja valitse **Muokkaa**.
 

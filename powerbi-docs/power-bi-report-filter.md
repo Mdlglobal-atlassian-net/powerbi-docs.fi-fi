@@ -7,23 +7,23 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 08/19/2019
+ms.date: 09/06/2019
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: 73db8f9741685549042dbaf1172e57a55a26ab36
-ms.sourcegitcommit: 4a3afe761d2f4a5bd897fafb36b53961739e8466
+ms.openlocfilehash: e5e67863888e5bd6d611ded7a58254fe693f4bb6
+ms.sourcegitcommit: 226b47f64e6749061cd54bf8d4436f7deaed7691
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/20/2019
-ms.locfileid: "69654485"
+ms.lasthandoff: 09/09/2019
+ms.locfileid: "70841277"
 ---
 # <a name="the-new-filter-experience-in-power-bi-reports"></a>Uusi suodatuskokemus Power BI -raporteissa
 
 Power BI:n suodattimilla on uusia toimintoja ja uusi rakenne. Kun valitset uuden suodatuskokemuksen, voit muotoilla Suodattimet-ruutua siten, että se näyttää samalta kuin muu raportti. Voit lukita ja jopa piilottaa suodattimia. Kun suunnittelet raporttia, et enää näe vanhaa Suodattimet-ruutua lainkaan Visualisoinnit-ruudussa. Voit tehdä kaikenlaiset suodattimen muokkaukset ja muotoilut yhdessä Suodattimet-ruudussa. 
 
-![Uusi suodatuskokemus](media/power-bi-report-filter/power-bi-filter-reading.png)
+![Uusi suodatuskokemus](media/power-bi-report-filter/power-bi-filter-new-look.png)
 
-Raportin suunnittelijana voit tehdä seuraavia asioita uudessa Suodattimet-ruudussa:
+Raportin suunnittelijana voit tehdä mm. seuraavia asioita uudessa Suodattimet-ruudussa:
 
 - Lisätä ja poistaa suodatettavia kenttiä. 
 - Muuttaa suodattimen tilaa.
@@ -207,7 +207,7 @@ Voit nyt muuttaa suodatinruudun oletusasetuksia teematiedoston avulla. Tässä o
 
 ## <a name="sort-the-filter-pane"></a>Lajittele suodatinruutu
 
-Mukautettu lajittelutoiminto on osa uutta suodatinruutukokemusta. Raportin luojat voivat vetää ja pudottaa suodattimet niiden järjestämiseksi uudelleen haluttuun järjestykseen.
+Mukautettu lajittelutoiminto on osa uutta suodatinruutukokemusta. Raportin luojat voivat järjestellä suodattimia vetämällä ja pudottamalla.
 
 ![Järjestä uudelleen suodattimen lajittelujärjestys](media/power-bi-report-filter/power-bi-filter-sort.gif)
 

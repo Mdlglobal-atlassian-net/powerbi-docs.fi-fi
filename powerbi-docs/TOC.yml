@@ -1347,13 +1347,21 @@
               href: service-gateway-mashup-on-premises-cloud.md
         - name: Kertakirjautumisen (SSO) käyttöönotto
           items:
-            - name: Kertakirjautuminen (SSO) – yleiskatsaus
+            - name: SSO-kirjautumisen yleiskatsaus
               href: service-gateway-sso-overview.md
-            - name: Kertakirjautuminen (SSO) – Kerberos
-              href: service-gateway-sso-kerberos.md
-            - name: Kertakirjautuminen (SSO) - Kerberos - resurssipohjainen
-              href: service-gateway-sso-kerberos-resource.md
-            - name: Kertakirjautuminen (SSO) – SAML
+            - name: Kerberos-pohjainen SSO-kirjautuminen
+              items:
+                - name: Kerberos-pohjaisen SSO-kirjautumisen määrittäminen
+                  href: service-gateway-sso-kerberos.md
+                - name: Tietolähdekohtainen määritys
+                  items:
+                    - name: SAP HANA
+                      href: service-gateway-sso-kerberos-sap-hana.md
+                    - name: SAP BW – sapcrypto.dll (Common Crypto Library)
+                      href: service-gateway-sso-kerberos-sap-bw-commoncryptolib.md
+                    - name: SAP BW – gx64krb5.dll ja gsskrb5.dll
+                      href: service-gateway-sso-kerberos-sap-bw-gx64krb.md
+            - name: SAML-pohjainen SSO-kirjautuminen
               href: service-gateway-sso-saml.md
         - name: Yhdyskäytävän vianmääritys
           href: service-gateway-onprem-tshoot.md

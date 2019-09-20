@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/16/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 6d0c4a2dba1dee1c8c40da8fd3371767915729da
-ms.sourcegitcommit: d9755602235ba03594c348571b9102c9bf88d732
+ms.openlocfilehash: c32f4b0a03ba751d5b8cbd6e98633275ece9222b
+ms.sourcegitcommit: 6a44cb5b0328b60ebe7710378287f1e20bc55a25
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69490316"
+ms.lasthandoff: 09/10/2019
+ms.locfileid: "70877798"
 ---
 # <a name="administering-power-bi---frequently-asked-questions-faq"></a>Power BI:n hallinnointi - usein kysytyt kysymykset (UKK)
 
@@ -119,9 +119,9 @@ Get-MsolCompanyInformation | fl allow*
 
 ### <a name="how-can-i-prevent-my-existing-users-from-starting-to-use-power-bi"></a>Miten voin estää olemassa olevilta käyttäjiltä Power BI:n käytön aloittamisen?
 
-Tätä ohjaava Azure AD -asetus on **AllowAdHocSubscriptions**. Useimmissa vuokraajissa tämä asetus on true (tosi), mikä tarkoittaa, että se on käytössä. Jos hankit Power BI:n kumppanin kautta, asetuksena saattaa olla false (epätosi), mikä tarkoittaa, että se on poistettu käytöstä.
+Tätä ohjaava Azure AD -asetus on **AllowAdHocSubscriptions**. Useimmissa vuokraajissa tämä asetus on *true* (tosi), mikä tarkoittaa, että se on käytössä. Jos hankit Power BI:n kumppanin kautta, asetuksena saattaa olla *false* (epätosi), mikä tarkoittaa, että se on poistettu käytöstä.
 
-Seuraavan PowerShell-komentosarjan avulla voit poistaa ad-hoc-tilaukset käytöstä. ([Lue lisätietoja PowerShellistä][1].)
+Seuraavan PowerShell-komentosarjan avulla voit poistaa ad-hoc-tilaukset käytöstä.([Lisätietoja PowerShellista][1].)
 
 1. Kirjaudu Azure Active Directoryyn käyttämällä Office 365 -tunnistetietojasi. PowerShell-komentosarjan ensimmäinen rivi kehottaa antamaan tunnistetiedot. Toinen rivi muodostaa yhteyden Azure Active Directoryyn.
 
@@ -145,7 +145,7 @@ Seuraavan PowerShell-komentosarjan avulla voit poistaa ad-hoc-tilaukset käytös
     ```
 
 > [!NOTE]
-> Käytä **AllowAdHocSubscriptions**-lippua useiden käyttäjäominaisuuksien ohjaamiseen organisaatiossa. Sillä ohjataan muun muassa käyttäjien mahdollisuutta rekisteröityä Azure Rights Management -palveluun. Tämän lipun muuttaminen vaikuttaa kaikkiin näihin ominaisuuksiin.
+> Käytä **AllowAdHocSubscriptions**-lippua useiden käyttäjäominaisuuksien ohjaamiseen organisaatiossa. Sillä ohjataan muun muassa käyttäjien mahdollisuutta rekisteröityä Azure Rights Management -palveluun. Tämän lipun muuttaminen vaikuttaa kaikkiin näihin ominaisuuksiin. Kun asetus on *false* (epätosi), käyttäjät voivat edelleen rekisteröityä Pro-kokeiluversioon.
 
 ### <a name="how-can-i-allow-my-existing-users-to-sign-up-for-power-bi"></a>Miten voin sallia olemassa oleville käyttäjille Power BI:hin rekisteröitymisen?
 

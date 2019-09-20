@@ -9,23 +9,25 @@ ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 07/03/2019
-ms.openlocfilehash: 7067d4c7fdc3fc328db417e5d6733569ecc7be01
-ms.sourcegitcommit: b439ded53bfbbb58be27ecedf93d618f5158df33
+ms.openlocfilehash: 59c376afd384812473d3175df992c628ae5049ca
+ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/04/2019
-ms.locfileid: "67567787"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "70903646"
 ---
 # <a name="using-oauth-to-connect-to-power-bi-report-server-and-ssrs"></a>Yhdistäminen Power BI -raporttipalvelimeen ja SSRS-palvelimeen OAuthia käyttämällä
 
-Opi määrittämään ympäristö tukemaan OAuth-todennusta Power BI -mobiilisovelluksella ja muodostamaan yhteys Power BI -raporttipalvelimeen sekä SQL Server Reporting Services 2016:een tai uudempaan versioon.
+Voit käyttää OAuthia muodostaessasi yhteyden Power BI-raporttipalvelimeen ja Reporting Servicesiin, tarkastellaksesi mobiiliraporttejasi tai suorituskykyilmaisimia. Opi määrittämään ympäristö tukemaan OAuth-todennusta Power BI -mobiilisovelluksella ja muodostamaan yhteys Power BI -raporttipalvelimeen sekä SQL Server Reporting Services 2016:een tai uudempaan versioon.
 
-![Yhdistä palvelimeen](media/mobile-oauth-ssrs/powerbi-mobile-oauth.png)
+Katso, miten Adam muodostaa yhteyden Power BI ‑mobiilisovelluksesta SSRS:ään OAuthin avulla:
 
-Voit käyttää OAuthia muodostaessasi yhteyden Power BI-raporttipalvelimeen ja Reporting Servicesiin, tarkastellaksesi mobiiliraporttejasi tai suorituskykyilmaisimia. Windows Server 2016 sisältää joitain Web Application Proxy (WAP) -roolin parannuksia, jotka sallivat tällaisen todennuksen.
 
-   > [!NOTE]
-   > Power BI -raporttipalvelimella isännöityjen Power BI -raporttien tarkastelemista WAP-todentamisen kautta tuetaan nyt iOS- ja Android-sovelluksissa.
+<iframe width="560" height="350" src="https://www.youtube.com/embed/okzPAI2uUek" frameborder="0" allowfullscreen></iframe>
+
+
+> [!NOTE]
+> Power BI -raporttipalvelimella isännöityjen Power BI -raporttien tarkastelemista WAP-todentamisen kautta tuetaan nyt iOS- ja Android-sovelluksissa.
 
 ## <a name="requirements"></a>Vaatimukset
 
@@ -33,19 +35,19 @@ Web Application Proxy (WAP) -palvelimia ja Active Directory -liittoutumispalvelu
 
 ## <a name="domain-name-services-dns-configuration"></a>Nimipalvelujärjestelmien (DNS) määritys
 
-Sinun täytyy määrittää, mihin julkiseen URL-osoitteeseen Power BI -mobiilisovellus muodostaa yhteyden. Se saattaa näyttää esimerkiksi seuraavan kaltaiselta.
+Julkinen URL-osoite, johon Power BI ‑mobiilisovellus muodostaa yhteyden. Se saattaa näyttää esimerkiksi seuraavan kaltaiselta.
 
 ```https
 https://reports.contoso.com
 ```
 
-Sinun täytyy ohjata **raporttien** DNS-tietueesi Web Application Proxy (WAP) -palvelimen julkiseen IP-osoitteeseen. Sinun täytyy myös määrittää julkinen DNS-tietue ADFS-palvelimelle. Olet esimerkiksi ehkä määrittänyt ADFS-palvelimen käyttäen seuraavaa URL-osoitetta.
+**Raporttien** DNS-tietueesi Web Application Proxy (WAP) ‑palvelimen julkiseen IP-osoitteeseen. Sinun täytyy määrittää myös julkinen DNS-tietue ADFS-palvelimelle. Olet esimerkiksi ehkä määrittänyt ADFS-palvelimen käyttäen seuraavaa URL-osoitetta.
 
 ```https
 https://fs.contoso.com
 ```
 
-Sinun täytyy ohjata **fs**:n DNS-tietue Web Application Proxy (WAP) -palvelimen julkiseen IP-osoitteeseen, koska se julkaistaan osana WAP-sovellusta.
+**Fs**:n DNS-tietue Web Application Proxy (WAP) -palvelimen julkiseen IP-osoitteeseen muodossa, jossa se julkaistaan osana WAP-sovellusta.
 
 ## <a name="certificates"></a>Varmenteet
 
@@ -57,7 +59,7 @@ Reporting Servicesin puolella ei ole paljon määritettävää. On ainoastaan ta
 
 ### <a name="service-principal-name-spn"></a>Palvelun päänimi (SPN)
 
-SPN eli palvelun päänimi on Kerberos-todennusta käyttävän palvelun yksilöivä tunniste. Sinun täytyy varmistaa, että raporttipalvelimellasi on asianmukainen HTTP-palvelun SPN.
+SPN eli palvelun päänimi on Kerberos-todennusta käyttävän palvelun yksilöivä tunniste. Sinun täytyy varmistaa, että raporttipalvelimellasi on asianmukainen HTTP-palvelun päänimi.
 
 Lisätietoja asianmukaisen palvelun päänimen (SPN) määrittämisestä raporttipalvelimelle on ohjeaiheessa [Palvelun päänimen (SPN) rekisteröiminen raporttipalvelimelle](https://msdn.microsoft.com/library/cc281382.aspx).
 
@@ -77,15 +79,15 @@ Lisätietoja on artikkeleissa [Reporting Services -määritystiedoston muokkaami
 
 ## <a name="active-directory-federation-services-adfs-configuration"></a>Active Directory -liittoutumispalvelujen (ADFS) määritys
 
-Sinun on määritettävä ADFS-palvelut Windows 2016 -palvelimeen käyttöympäristössäsi. Voit tehdä sen Palvelinten hallinnassa valitsemalla Hallinta-kohdassa Lisää rooleja ja ominaisuuksia -vaihtoehdon. Lisätietoja on artikkelissa [Active Directory -liittoutumispalvelut](https://technet.microsoft.com/windows-server-docs/identity/active-directory-federation-services).
+Sinun on määritettävä ADFS-järjestelmä Windows 2016 -palvelimeen käyttöympäristössäsi. Voit tehdä sen Palvelinten hallinnassa valitsemalla Hallinta-kohdassa Lisää rooleja ja ominaisuuksia -vaihtoehdon. Lisätietoja on artikkelissa [Active Directory -liittoutumispalvelut](https://technet.microsoft.com/windows-server-docs/identity/active-directory-federation-services).
 
 ### <a name="create-an-application-group"></a>Sovellusryhmän luominen
 
-Sinun kannattaa luoda AD FS -hallintanäytössä Reporting Servicesille sovellusryhmä, joka sisältää tietoja Power BI -mobiilisovelluksille.
+Sinun kannattaa luoda AD FS -hallintanäytössä Reporting Servicesille sovellusryhmä, joka sisältää tietoja Power BI ‑mobiilisovelluksille.
 
 Voit luoda sovellusryhmän noudattamalla seuraavia ohjeita.
 
-1. Napsauta AD FS -hallintasovelluksessa hiiren kakkospainikkeella **Sovellusryhmät**-kohtaa ja valitse **Lisää sovellusryhmä...**
+1. Napsauta AD FS -hallintasovelluksessa hiiren kakkospainikkeella **Sovellusryhmät**-kohtaa ja valitse **Lisää sovellusryhmä…**
 
    ![Lisää ADFS-sovellus](media/mobile-oauth-ssrs/adfs-add-application-group.png)
 
@@ -107,7 +109,7 @@ Voit luoda sovellusryhmän noudattamalla seuraavia ohjeita.
    mspbi-adal://com.microsoft.powerbimobile  
    mspbi-adalms://com.microsoft.powerbimobilems
 
-   **Android-sovelluksille on tarpeen lisätä vain seuraava:**  
+   **Android-sovellusten tapauksessa on suoritettava vain seuraavat vaiheet:**  
    urn:ietf:wg:oauth:2.0:oob
 
    ![ADFS-sovellusryhmän ohjattu toiminto 02](media/mobile-oauth-ssrs/adfs-application-group-wizard2.png)
@@ -141,7 +143,7 @@ Kun olet valmis, sinun pitäisi nähdä sovellusryhmäsi ominaisuudet seuraavan 
 
 ## <a name="web-application-proxy-wap-configuration"></a>Web Application Proxy (WAP) -määritys
 
-Sinun kannattaa ottaa Web Application Proxy -Windows-rooli käyttöön ympäristösi palvelimessa. Tämä täytyy tehdä Windows 2016 -palvelimessa. Lisätietoja on artikkeleissa [Web Application Proxy Windows Server 2016:ssa](https://technet.microsoft.com/windows-server-docs/identity/web-application-proxy/web-application-proxy-windows-server) ja [Sovellusten julkaiseminen käyttäen AD FS -esitodennusta](https://technet.microsoft.com/windows-server-docs/identity/web-application-proxy/publishing-applications-using-ad-fs-preauthentication#a-namebkmk14apublish-an-application-that-uses-oauth2-such-as-a-windows-store-app).
+Sinun kannattaa ottaa Web Application Proxy (Rooli) -Windows-rooli käyttöön ympäristösi palvelimessa. Tämä täytyy tehdä Windows 2016 -palvelimessa. Lisätietoja on artikkeleissa [Web Application Proxy Windows Server 2016:ssa](https://technet.microsoft.com/windows-server-docs/identity/web-application-proxy/web-application-proxy-windows-server) ja [Sovellusten julkaiseminen käyttäen AD FS -esitodennusta](https://technet.microsoft.com/windows-server-docs/identity/web-application-proxy/publishing-applications-using-ad-fs-preauthentication#a-namebkmk14apublish-an-application-that-uses-oauth2-such-as-a-windows-store-app).
 
 ### <a name="constrained-delegation-configuration"></a>Rajoitetun delegoinnin määritys
 
@@ -155,7 +157,7 @@ Rajoitettu delegointi kannattaa määrittää seuraavasti.
 
 2. Etsi WAP-palvelimesi konetili. Tili sijaitsee oletuksena tietokoneiden säilössä.
 
-3. Napsauta WAP-palvelinta hiiren kakkospainikkeella ja valitse **Ominaisuudet**.
+3. Napsauta WAP-palvelinta hiiren kakkospainikkeella ja siirry **Ominaisuudet**-kohtaan.
 
 4. Valitse **Delegointi**-välilehti.
 
@@ -171,7 +173,7 @@ Rajoitettu delegointi kannattaa määrittää seuraavasti.
 
 7. Valitse **Käyttäjät tai tietokoneet...**
 
-8. Anna palvelutili, jota käytät Reporting Servicesin kanssa. Kyseessä on se tili, johon lisäsit SPN:n Reporting Services -määrityksen aikana.
+8. Anna palvelutili, jota käytät Reporting Servicesin kanssa. Kyseessä on se tili, johon lisäsit palvelun päänimen Reporting Services ‑määrityksen aikana.
 
 9. Valitse SPN-nimi Reporting Servicesille ja valitse sitten **OK**.
 
@@ -197,13 +199,13 @@ Add-WebApplicationProxyApplication -Name "Contoso Reports" -ExternalPreauthentic
 | Parametri | Kommentit |
 | --- | --- |
 | **ADFSRelyingPartyName** |Tämä on sen verkon ohjelmointirajapinnan nimi, jonka loit sovellusryhmän osana ADFS-määrityksissä. |
-| **ExternalCertificateThumbprint** |Tämä on varmenne ulkoisia käyttäjiä varten. On tärkeää, että tämä varmenne on voimassa mobiililaitteissa ja on peräisin luotetulta varmenteiden myöntäjältä. |
-| **BackendServerUrl** |Tämä on raporttipalvelimen URL-osoite WAP-palvelimesta. Jos WAP-palvelin on DMZ-alueella, sinun on ehkä käytettävä täydellistä toimialuenimeä. Varmista, että pääset tähän URL-osoitteeseen verkkoselaimesta WAP-palvelimessa. |
-| **BackendServerAuthenticationSPN** |Tämä on SPN, jonka loit osana Reporting Services -määritystä. |
+| **ExternalCertificateThumbprint** |Tämä varmenne on ulkoisia käyttäjiä varten. On tärkeää, että tämä varmenne on voimassa mobiililaitteissa ja että se on peräisin luotetulta varmenteiden myöntäjältä. |
+| **BackendServerUrl** |Raporttipalvelimen URL-osoite WAP-palvelimesta. Jos WAP-palvelin on DMZ-alueella, sinun on ehkä käytettävä täydellistä toimialuenimeä. Varmista, että pääset tähän URL-osoitteeseen verkkoselaimesta WAP-palvelimessa. |
+| **BackendServerAuthenticationSPN** |Tämä on se palvelun päänimi, jonka loit osana Reporting Services -määritystä. |
 
 ### <a name="setting-integrated-authentication-for-the-wap-application"></a>Integroidun todennuksen asettaminen WAP-sovellukselle
 
-Kun olet lisännyt WAP-sovelluksen, sinun on määritettävä BackendServerAuthenticationMode käyttämään IntegratedWindowsAuthentication -todennusta. Tämän määrittämistä varten tarvitset tunnuksen WAP-sovelluksesta.
+Kun olet lisännyt WAP-sovelluksen, sinun on määritettävä BackendServerAuthenticationMode käyttämään IntegratedWindowsAuthentication ‑todennusta. Tämän määrittämistä varten tarvitset tunnuksen WAP-sovelluksesta.
 
 ```powershell
 Get-WebApplicationProxyApplication “Contoso Reports” | fl
@@ -221,17 +223,17 @@ Set-WebApplicationProxyApplication -id 30198C7F-DDE4-0D82-E654-D369A47B1EE5 -Bac
 
 ## <a name="connecting-with-the-power-bi-mobile-app"></a>Yhteyden muodostaminen Power BI -mobiilisovelluksen avulla
 
-Power BI -mobiilisovelluksen sisältä kannattaa muodostaa yhteys Reporting Services -esiintymään. Tätä varten sinun on annettava **ulkoisen URL-osoite** WAP-sovellustasi varten.
+Power BI ‑mobiilisovelluksesta kannattaa muodostaa yhteys Reporting Services ‑esiintymään. Tätä varten sinun on annettava **ulkoisen URL-osoite** WAP-sovellustasi varten.
 
 ![Kirjoita palvelimen osoite](media/mobile-oauth-ssrs/powerbi-mobile-app1.png)
 
 Kun valitset **Yhdistä**, sinut ohjataan ADFS-kirjautumissivulle. Anna toimialueesi kirjautumistiedot.
 
-![Kirjaudu sisään ADFS:ään](media/mobile-oauth-ssrs/powerbi-mobile-app2.png)
+![Kirjautuminen ADFS:ään](media/mobile-oauth-ssrs/powerbi-mobile-app2.png)
 
-Kun olet valinnut **Kirjaudu sisään**, näkyviin tulee elementtejä Reporting Services -palvelimestasi.
+Kun olet valinnut **Kirjaudu sisään**, näkyviin tulee elementtejä Reporting Services ‑palvelimestasi.
 
-## <a name="multi-factor-authentication"></a>Monimenetelmäisen todentaminen
+## <a name="multi-factor-authentication"></a>Monimenetelmäinen todentaminen
 
 Voit ottaa käyttöön monimenetelmäisen todentamisen lisäsuojauksen ottamiseksi käyttöön ympäristössäsi. Lisätietoja on artikkelissa [AD FS 2016:n ja Azure MFA:n määrittäminen](https://technet.microsoft.com/windows-server-docs/identity/ad-fs/operations/configure-ad-fs-2016-and-azure-mfa).
 
@@ -241,7 +243,7 @@ Voit ottaa käyttöön monimenetelmäisen todentamisen lisäsuojauksen ottamisek
 
 ![”SSRS-palvelimeen kirjautuminen epäonnistui” -virheviesti](media/mobile-oauth-ssrs/powerbi-mobile-error.png)
 
-Voit määrittää [Fiddlerin](http://www.telerik.com/fiddler) toimimaan mobiililaitteiden välityspalvelimena nähdäksesi, kuinka pitkälle pyyntö etenee. Jotta voisit ottaa käyttöön Fiddler-välityspalvelimen puhelimelle, sinun on otettava käyttöön [CertMaker for iOS and Android](http://www.telerik.com/fiddler/add-ons) -lisäosa tietokoneessa, jossa Fiddler toimii. Tämä on Fiddler-lisäosa Telerikiltä.
+Voit määrittää [Fiddlerin](http://www.telerik.com/fiddler) toimimaan mobiililaitteiden välityspalvelimena nähdäksesi, kuinka pitkälle pyyntö etenee. Jotta voisit ottaa käyttöön Fiddler-välityspalvelimen puhelimelle, sinun on määritettävä [CertMaker for iOS and Android](http://www.telerik.com/fiddler/add-ons) ‑lisäosa tietokoneessa, jossa Fiddler toimii. Fiddler-lisäosa on Telerikiltä.
 
 Jos sisäänkirjautuminen toimii Fiddleria käytettäessä, kyseessä voi olla WAP-sovellukseen tai ADFS-palvelimeen liittyvä varmenneongelma. Voit käyttää [Microsoft Message Analyzer](https://www.microsoft.com/download/details.aspx?id=44226) -työkalua tai vastaavaa työkalua sen varmistamiseen, että varmenteet ovat kelvollisia.
 

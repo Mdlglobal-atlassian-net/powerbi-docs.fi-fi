@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 08/15/2019
+ms.date: 09/10/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 8b92bd2917165cd6dc89e0c9f9a94e83d69f1c2a
-ms.sourcegitcommit: f6ac9e25760561f49d4257a6335ca0f54ad2d22e
+ms.openlocfilehash: e7a96186fe68ed0d70de7a502e81da4f24f4d802
+ms.sourcegitcommit: db4fc5da8e65e0a3dc35582d7142a64ad3405de7
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69560858"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70903604"
 ---
 # <a name="get-power-bi-desktop"></a>Power BI Desktopin hankkiminen
 **Power BI Desktopilla** voit luoda tarkempia kyselyjä, malleja ja raportteja, jotka visualisoivat tietoja. **Power BI Desktopilla** voit luoda tietomalleja ja raportteja sekä jakaa töitäsi julkaisemalla niitä Power BI -palvelussa.  **Power BI Desktop** on ladattavissa maksutta.
@@ -40,9 +40,9 @@ Voit ladata Power BI Desktopin uusimman version myös seuraavalta lataussivulta:
 
 Riippumatta siitä, kummalla tavalla lataat, sinua kehotetaan suorittamaan asennustiedosto, kun **Power BI Desktop** on ladattu tietokoneeseesi.
 
-![Suorita Power BI Desktop -asennustiedosto](media/desktop-get-the-desktop/getpbid_3.png)
+![Suorita Power BI Desktop -asennustiedosto](media/desktop-get-the-desktop/download-desktop-exe.png)
 
-Heinäkuun 2019 versiosta alkaen **Power BI Desktop** toimitetaan yksittäisenä .exe-asennuspakettina, joka sisältää kaikki tuetut kielet. 32- ja 64-bittisille versioille on erilliset .exe-tiedostot. Syyskuun 2019 version jälkeen .msi-pakettien jakelu lopetetaan, minkä jälkeen sinun on asennettava .exe-tiedosto. Tämä lähestymistapa tekee jakelusta, päivityksistä ja asennuksesta (erityisesti järjestelmänvalvojille) paljon helpompaa ja kätevämpää. Voit myös mukauttaa asennusprosessia käyttämällä komentoriviparametreja, jotka on kuvattu jäljempänä tämän artikkelin kohdassa [komentorivivalintojen käyttö asennuksen aikana](#using-command-line-options-during-installation).
+Heinäkuun 2019 versiosta alkaen **Power BI Desktop** toimitetaan yksittäisenä .exe-asennuspakettina, joka sisältää kaikki tuetut kielet. 32- ja 64-bittisille versioille on erilliset .exe-tiedostot. .msi-pakettien julkaisu lopetettiin syyskuun 2019 versiosta alkaen. Sen jälkeen asennus on edellyttänyt exe-tiedostoa. Tämä lähestymistapa tekee jakelusta, päivityksistä ja asennuksesta (erityisesti järjestelmänvalvojille) paljon helpompaa ja kätevämpää. Voit myös mukauttaa asennusprosessia käyttämällä komentoriviparametreja, jotka on kuvattu jäljempänä tämän artikkelin kohdassa [komentorivivalintojen käyttö asennuksen aikana](#using-command-line-options-during-installation).
 
 Kun käynnistät asennuspaketin, **Power BI Desktop** asennetaan sovelluksena, jonka voit suorittaa työpöydältäsi.
 
@@ -105,6 +105,27 @@ Alla on lueteltu **Power BI Desktopin** käytön vähimmäisvaatimukset:
 
 Tavoitteena on, että Power BI Desktopin käyttökokemuksesi on aina hyvä. Saatat joskus kohdata ongelman Power BI Desktopissa, joten tässä osiossa on ratkaisuja tai ehdotuksia mahdollisten ongelmien selvittämiseksi. 
 
+### <a name="installing-power-bi-desktop-on-remote-machines"></a>Power BI Desktopin asentaminen etätietokoneisiin
+
+Jos otat Power BI Desktopin käyttöön käyttäjillesi työkalulla, joka edellyttää Windows-asennustiedostoa (.msi-tiedosto), voit purkaa .msi-tiedoston Power BI Desktopin .exe-asennustiedostosta. Voit tehdä tämän kolmansien osapuolten työkaluilla, kuten WiX Toolsetilla.
+
+> [!NOTE]
+> WiX Toolset on kolmannen osapuolen työkalu, minkä vuoksi vaihtoehdot voivat muuttua ilman erillistä ilmoitusta. Tarkista työkalun ohjeista ajantasaiset tiedot ja pyydä tarvittaessa apua työkalun käyttäjien postituslistalta.
+
+* Lataa ja asenna WiX Toolsetin uusin versio WiX-verkkosivustolta (https://wixtoolset.org/ ) tietokoneella, johon latasit Power BI Desktopin asennusohjelman.
+* Avaa komentorivi-ikkunat järjestelmänvalvojana ja siirry kansioon, johon asensit WiX Toolset -työkalun.
+* Suorita seuraava komento: 
+    
+    ```Dark.exe <path to Power BI Desktop installer> -x <output folder>```
+
+    Suorita esimerkiksi:
+
+    ``` Dark.exe C:\PBIDesktop_x64.exe -x C:\output```
+
+* Tuloskansiossa on kansio nimeltä *AttachedContainer*, joka sisältää .msi-tiedostot.
+
+
+
 
 ### <a name="using-command-line-options-during-installation"></a>Komentorivivalintojen käyttö asennuksen aikana 
 
@@ -122,6 +143,25 @@ Kun asennat Power BI Desktopin, voit määrittää ominaisuuksia ja asetuksia ko
 |-uninstall     |Power BI Desktopin asennuksen poistaminen         |
 |-repair     |korjaa asennus (tai asenna, jos sovellus ei ole tällä hetkellä asennettuna)         |
 |-package, -update     |asenna Power BI Desktop (oletus, kunhan vaihtoehtoa -uninstall tai -repair ei ole määritetty)         |
+
+Voit myös käyttää seuraavia **syntaksiparametreja**, jotka on määritetty "PROPERTY=VALUE"-syntaksilla:
+
+
+|Parametri  |Merkitys  |
+|---------|---------|
+|ACCEPT_EULA     |Käyttöoikeussopimuksen automaattinen hyväksyminen edellyttää arvoa 1         |
+|ENABLECXP     |Arvo 1 rekisteröi asiakkaan käyttömukavuusohjelman, joka tallentaa telemetriatiedot tuotteen käytöstä         |
+|INSTALLDESKTOPSHORTCUT     |Arvo 1 lisää pikakuvakkeen työpöydälle         |
+|INSTALLLOCATION     |Tiedostopolku, johon haluat asentaa         |
+|LANGUAGE     |Kieliasetuksen koodi, esimerkiksi en-US, de-DE, pr-BR, joka pakottaa käyttöön sovelluksen oletuskielen. Jos kieltä ei ole määritetty, Power BI Desktop näytetään Windows-käyttöjärjestelmän kielellä. Käyttäjä voi muuttaa tätä Asetukset-valintaikkunasta.         |
+|REG_SHOWLEADGENDIALOG     |Arvo 0 poistaa käytöstä valintaikkunan, joka näytetään ennen kuin olet kirjautunut Power BI Desktopiin         |
+
+
+
+
+Voit esimerkiksi suorittaa sen seuraavalla syntaksilla, jolloin voit suorittaa asennuksen saksan kielellä: 
+
+```“-quiet LANG=de-DE ACCEPT_EULA=1”```
 
 
 ### <a name="issues-when-using-previous-releases-of-power-bi-desktop"></a>Ongelmia Power BI Desktopin aiempia versioita käytettäessä

@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 08/28/2018
+ms.date: 09/04/2018
 ms.author: mihart
-ms.openlocfilehash: e02d7bfa295b3bd18b0b6b9c64c688ed668c8389
-ms.sourcegitcommit: c799941c8169cd5b6b6d63f609db66ab2af93891
+ms.openlocfilehash: 2a4c9044f661d9d5b822ba366c3a88c572136b35
+ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70391729"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "70903807"
 ---
 # <a name="view-a-report-in-the-power-bi-service-for-consumers"></a>Raportin näyttäminen Power BI -palvelussa *kuluttajille*
 Raportti sisältää yhden tai useampia visualisointisivuja. Power BI:n *suunnittelijat* luovat raportit ja [jakavat *ne kuluttajille* suoraan](end-user-shared-with-me.md) tai [sovelluksen](end-user-apps.md) osana. 
@@ -30,7 +30,7 @@ Avataan raportti, joka on jaettu suoraan sinulle, ja avataan sen jälkeen raport
    ![Aloitussivu](./media/end-user-report-open/power-bi-home-canvas.png)
 
 ### <a name="open-a-report-that-has-been-shared-with-you"></a>Sinulle jaetun raportin avaaminen
-Power BI -*suunnittelijat* voivat jakaa yksittäisen raportin suoraan sinulle sähköpostiviestissä olevan linkin kautta tai lisäämällä sen Power BI:n aloitussivulle. Näin jaettu sisältö näkyy **Jaettu kanssani** -säilössä siirtymispalkissa ja aloitussivun **Jaettu kanssani** -osassa.
+Power BI *‑suunnittelijat* voivat jakaa yksittäisen raportin suoraan sinulle sähköpostiviestissä olevan linkin kautta tai lisäämällä sen automaattisesti. Näin jaettu sisältö näkyy **Jaettu kanssani** -säilössä siirtymispalkissa ja aloitussivun **Jaettu kanssani** -osassa.
 
 1. Avaa Power BI -palvelu (app.powerbi.com).
 
@@ -50,6 +50,12 @@ Power BI -*suunnittelijat* voivat jakaa yksittäisen raportin suoraan sinulle s�
 
    ![raporttisivun välilehdet](./media/end-user-report-open/power-bi-ytd.png)
 
+6. Huomaa oikeassa reunassa oleva **Suodattimet**-ruutu. Siinä näytetään tällä raporttisivulla tai koko raportissa käytetyt suodattimet.
+
+7. Kun viet osoittimen raportin visualisoinnin päälle, näkyviin tulee useita kuvakkeita ja kolme pistettä (...). Jos haluat tarkastella tiettyyn visualisointiin käytettyä suodatinta, valitse suodatinkuvake. Tässä esimerkissä olemme valinneet viivakaavion *Yksiköiden kokonaismäärä jatkuvan jakson ja alueen mukaan* suodatinkuvakkeen.
+
+   ![raporttisivun välilehdet](./media/end-user-report-open/power-bi-visual-filters.png)
+
 6. Nyt näet koko raporttisivun. Jos haluat muuttaa sivun näyttöä (zoomausta), valitse avattava Näytä-valikko oikeasta yläkulmasta ja valitse **Todellinen koko**.
 
    ![muuta zoomaus](./media/end-user-report-open/power-bi-fit-new.png)
@@ -59,21 +65,26 @@ Power BI -*suunnittelijat* voivat jakaa yksittäisen raportin suoraan sinulle s�
 ### <a name="open-a-report-that-is-part-of-an-app"></a>Sovelluksen osana jaetun raportin avaaminen
 Jos olet saanut sovelluksia työtovereilta tai AppSourcesta, kyseiset sovellukset ovat käytettävissä aloitussivulla ja **Sovellukset**-säilössä siirtymispalkissa. [Sovellus](end-user-apps.md) on koontinäyttöjen ja raporttien nippu.
 
+### <a name="prerequisites"></a>Edellytykset
+Lataa Myynti ja markkinointi ‑sovellus, jotta voit seurata ohjeita.
+1. Siirry selaimessa osoitteeseen appsource.microsoft.com.
+1. Hae "Myynti ja markkinointi" ja valitse **Microsoft-näyte - Myynti ja markkinointi**.
+1. Asenna sovellus sovellussäilöön valitsemalla **Hanki se nyt** > **Jatka** > **Asenna**. 
+
+Voit avata sovelluksen sovellussäilöstä tai etusivulta.
 1. Palaa takaisin aloitussivulle valitsemalla **Aloitussivu** siirtymispalkista.
 
 7. Vieritä alaspäin, kunnes näet **Omat sovellukset** -kohdan.
 
-   ![Aloitussivu](./media/end-user-report-open/power-bi-my-apps.png)
+   ![Aloitussivu](./media/end-user-report-open/power-bi-app.png)
 
-8. Avaa sovellus valitsemalla se. Sovelluksen *suunnitteluohjelman* asetusten mukaan sovellus avaa joko koontinäytön tai raportin. Jos sovellus:
-    - avaa raportin, olet valmis.
-    - avaa koontinäytön, katso alla oleva kohta ***Raportin avaaminen koontinäytöstä***.
+8. Valitse Myynti ja markkinointi ‑sovellus ja avaa se. Sovelluksen *suunnitteluohjelman* asetusten mukaan sovellus avaa joko koontinäytön tai raportin. Tämä sovellus avautuu koontinäyttöön.  
 
 
 ## <a name="open-a-report-from-a-dashboard"></a>Raportin avaaminen koontinäytöstä
 Raportit voidaan avata koontinäytöstä. Useimmat koontinäyttö[ruudut](end-user-tiles.md) on *kiinnitetty* raporteista. Ruudun valitseminen avaa raportin, jota on käytetty ruudun luomiseen. 
 
-1. Valitse koontinäytöstä ruutu. Tässä esimerkissä olemme valinneet Yksiköitä yhteensä vuoden alusta -pylväskaavioruudun.
+1. Valitse raporttinäkymästä ruutu. Tässä esimerkissä olemme valinneet Yksiköitä yhteensä vuoden alusta -pylväskaavioruudun.
 
     ![koontinäyttö, jossa on ruutu valittuna](./media/end-user-report-open/power-bi-dashboard.png)
 
@@ -94,5 +105,6 @@ Kun pääset sinuiksi Power BI -palvelun kanssa, löydät itsellesi sopivimmat t
 - ja muilla tavoilla
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
-[Koontinäytön avaaminen ja tarkasteleminen](end-user-dashboard-open.md)
+[Raporttinäkymän avaaminen ja tarkasteleminen](end-user-dashboard-open.md)    
+[Raporttisuodattimet](end-user-report-filter.md)
 

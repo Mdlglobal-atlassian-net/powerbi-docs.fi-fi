@@ -2,23 +2,23 @@
 title: Yrityksen SSL-varmenteeseen ei luoteta -ongelman korjaaminen
 description: Kun kirjaudut sisään Power BI:n Android-sovellukseen, saatat nähdä viestin siitä, ettei todentaminen onnistunut, koska yrityksen SSL-varmenne ei ole luotettava
 .": ''
-author: mshenhav
-manager: kfile
+author: paulinbar
+manager: rkarlin
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 05/18/2018
+ms.date: 08/28/2019
 ms.author: mshenhav
-ms.openlocfilehash: de103412e21e0d26d20058e2d4e1fb9a8a5449bf
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 19bcdf08d4eacff5e080bf1a2f987ea848e4bfb9
+ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61341342"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "70840910"
 ---
 # <a name="fixing-corporate-ssl-certificate-is-untrusted---power-bi"></a>Yrityksen SSL-varmenne ei ole luotettava – Power BI -ongelman korjaaminen
-Kun kirjaudut sisään Microsoft Power BI:n Android-mobiilisovellukseen, saatat nähdä viestin siitä, ettei todentaminen onnistunut, koska laite ei luota yrityksen SSL-varmenteeseen. Viestissä kehotetaan ottamaan yhteyttä yrityksesi IT-järjestelmänvalvojaan. 
+Kun kirjaudut sisään Microsoft Power BI:n Android-mobiilisovellukseen, saatat nähdä viestin siitä, ettei todentaminen onnistunut, koska laite ei luota yrityksen SSL-varmenteeseen. Ota yhteys yrityksesi IT-järjestelmänvalvojaan. 
 
 Tarvittavat toimenpiteet riippuvat Android-laitteen käyttöjärjestelmästä, mutta on olemassa muutamia muita ongelmia, jotka saattavat aiheuttaa kyseisen virheen.
 
@@ -26,7 +26,7 @@ Tarvittavat toimenpiteet riippuvat Android-laitteen käyttöjärjestelmästä, m
 Hae **Chrome**-nimiselle sovellukselle päivitys ja asenna se.
 
 ## <a name="on-android-6-and-earlier"></a>Android 6 tai vanhempi versio
-Laitteesi tarvitsee ehkä System Webview ‑päivityksen. Sovellus saattaa olla valmiiksi asennettuna laitteeseesi, jolloin sinun ei ehkä tarvitse kuin valita **Update** (Päivitä).
+Laitteesi tarvitsee ehkä System Webview’n päivitetyn version. Sovellus saattaa olla valmiiksi asennettuna laitteeseesi, jolloin sinun ei ehkä tarvitse kuin valita **Update** (Päivitä).
 
 Jos laitteeseen ei ole asennettu System Webview ‑sovellusta:
 

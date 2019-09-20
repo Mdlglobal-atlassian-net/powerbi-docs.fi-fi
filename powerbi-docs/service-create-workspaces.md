@@ -7,15 +7,15 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 08/12/2019
+ms.date: 09/10/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 0bb8d796af5139cd89f4bdfa0a8da10603acb2ed
-ms.sourcegitcommit: 4d5166944fcc6fe4666cab055ae75e7a0a77866d
+ms.openlocfilehash: 5385512e534d866a2474fd4e3def10f45d52a1a0
+ms.sourcegitcommit: db4fc5da8e65e0a3dc35582d7142a64ad3405de7
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69530574"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70903968"
 ---
 # <a name="create-classic-workspaces-in-power-bi"></a>Perinteisten työtilojen luominen Power BI:ssä
 
@@ -23,53 +23,49 @@ Voit luoda Power BI:ssä *työtiloja*. Ne ovat paikkoja, joissa voit yhteistyös
 
 **Tiesitkö?** Power BI tarjoaa uuden työtilakokemuksen, jota käytetään nyt oletuksena. Katso lisätietoja uusista työtiloista artikkelista [Työn järjestäminen uusissa työtiloissa](service-new-workspaces.md). 
 
-Kun luot perinteisen työtilan, luot taustalla toimivan, työtilaan liitetyn Office 365 -ryhmän. Työtilaa hallitaan Office 365:ssä. Voit lisätä työtovereita näihin työtiloihin jäseninä tai järjestelmänvalvojina. Työtilassa kaikki voivat tehdä yhteistyötä koontinäyttöjen, raporttien tai muiden artikkeleiden parissa, jotka haluat julkaista laajemmalle lukijakunnalle. Jokainen sovellustyötilaan lisätty jäsen tarvitsee Power BI Pro -käyttöoikeuden. 
+Kun luot perinteisen työtilan, luot taustalla toimivan, työtilaan liitetyn Office 365 -ryhmän. Työtilaa hallitaan Office 365:ssä. Voit lisätä työtovereita näihin työtiloihin jäseninä tai järjestelmänvalvojina. Työtilassa kaikki voivat tehdä yhteistyötä koontinäyttöjen, raporttien tai muiden artikkeleiden parissa, jotka haluat julkaista laajemmalle lukijakunnalle. Jokainen työtilaan lisätty jäsen tarvitsee Power BI Pro -käyttöoikeuden. 
 
-## <a name="video-apps-and-app-workspaces"></a>Video: Sovellukset ja sovelluksen työtilat
+## <a name="video-apps-and-workspaces"></a>Video: Sovellukset ja työtilat
 <iframe width="640" height="360" src="https://www.youtube.com/embed/Ey5pyrr7Lk8?showinfo=0" frameborder="0" allowfullscreen></iframe>
 
-## <a name="create-a-classic-app-workspace-based-on-an-office-365-group"></a>Office 365 -ryhmään perustuvan perinteisen sovellustyötilan luominen
+## <a name="create-a-classic-workspace-based-on-an-office-365-group"></a>Office 365 -ryhmään perustuvan perinteisen työtilan luominen
 
-Kun luot sovellustyötilan, se perustuu Office 365 -ryhmään.
+Kun luot työtilan, se perustuu Office 365 -ryhmään.
 
 [!INCLUDE [powerbi-service-create-app-workspace](./includes/powerbi-service-create-app-workspace.md)]
 
 Kun luot sen, saatat joutua odottamaan noin tunnin verran, että työtila välittää sen Office 365:een. 
 
-### <a name="add-an-image-to-your-office-365-app-workspace-optional"></a>Kuvan lisääminen Office 365:n sovellustyötilaan (valinnainen)
+### <a name="add-an-image-to-your-office-365-workspace-optional"></a>Kuvan lisääminen Office 365:n työtilaan (valinnainen)
 Oletusarvoisesti Power BI luo sovelluksellesi pienen värillisen ympyrän, jossa näkyy sovelluksen nimikirjaimet. Saatat kuitenkin haluta mukauttaa sitä käyttämällä jotain kuvaa. Kuvan lisäämiseksi tarvitset Exchange Online -käyttöoikeuden.
 
 1. Valitse **Työtilat**, valitse työtilan nimen vierestä kolme pistettä (...), ja valitse sitten **Jäsenet**. 
    
-     ![Työtilan jäsenten valitseminen](media/service-create-distribute-apps/power-bi-apps-workspace-members.png)
+     ![Työtilan jäsenten valitseminen](media/service-create-workspaces/power-bi-workspace-old-members.png)
    
     Työtilan Office 365 Outlook -tili aukeaa uuteen selainikkunaan.
-2. Kun pidät hiiren osoitinta vasemman yläkulman värillisen ympyrän päällä, se muuttuu kynäkuvakkeeksi. Valitse se.
+2. Valitse **Muokkaa**-kynä.
    
-     ![Office 365:n kynäkuvake](media/service-create-distribute-apps/power-bi-apps-workspace-edit-image.png)
-3. Valitse kynäkuvake uudelleen, ja etsi kuva, jota haluat käyttää.
+     ![Office 365:n kynäkuvake](media/service-create-workspaces/power-bi-workspace-old-edit-group.png)
+3. Valitse kameran kuva ja etsi kuva, jota haluat käyttää.
    
-     ![Valitse kynä uudelleen](media/service-create-distribute-apps/power-bi-apps-workspace-edit-group.png)
+     ![Valitse kameran kuva](media/service-create-workspaces/power-bi-workspace-old-camera.png)
 
      Kuvat voivat olla .png-, .jpg- tai .bmp-tiedostoja. Tiedostokoko voi olla suuri, enintään 3 megatavua. 
 
-4. Valitse **Tallenna**.
-   
-     ![Valitse Tallenna](media/service-create-distribute-apps/power-bi-apps-workspace-save-image.png)
+4. Valitse ensin **OK** ja sitten **Tallenna**.
    
     Kuvan korvaa värillisen ympyrän Office 365:n Outlook-ikkunassa. 
    
-     ![Mukautettu kuva](media/service-create-distribute-apps/power-bi-apps-workspace-image-in-office-365.png)
+     ![Mukautettu kuva](media/service-create-workspaces/power-bi-workspace-old-new-image.png)
    
     Muutaman minuutin kuluttua se näkyy myös sovelluksessa Power BI:ssä.
-   
-     ![Mukautettu kuva](media/service-create-distribute-apps/power-bi-apps-image.png)
 
-## <a name="add-content-to-your-app-workspace"></a>Sisällön lisääminen sovellustyötilaan
+## <a name="add-content-to-your-workspace"></a>Sisällön lisääminen työtilaan
 
-Kun olet luonut sovellustyötilan, on aika lisätä siihen sisältöä. Lisääminen toimii samaan tapaan kuin sisällön lisääminen Omaan työtilaan, paitsi että myös työtilan muut ihmiset pystyvät näkemään sen ja työstämään sitä. Suurin ero on, että kun saat sen valmiiksi, voit julkaista sisällön sovelluksena. Kun sisältöä tarkastellaan sovellustyötilan sisältöluettelossa, sovellustyötilan nimenä näkyy omistajan nimi.
+Kun olet luonut työtilan, on aika lisätä siihen sisältöä. Lisääminen toimii samaan tapaan kuin sisällön lisääminen Omaan työtilaan, paitsi että myös työtilan muut ihmiset pystyvät näkemään sen ja työstämään sitä. Suurin ero on, että kun saat sen valmiiksi, voit julkaista sisällön sovelluksena. Kun sisältöä tarkastellaan työtilan sisältöluettelossa, työtilan nimenä näkyy omistajan nimi.
 
-### <a name="connect-to-third-party-services-in-app-workspaces"></a>Yhteyden muodostaminen kolmannen osapuolen palveluihin sovellustyötiloissa
+### <a name="connect-to-third-party-services-in-workspaces"></a>Yhteyden muodostaminen kolmannen osapuolen palveluihin työtiloissa
 
 Sovellukset toimitetaan kaikille kolmannen osapuolen palveluille, joita Power BI tukee. Sen ansiosta saat helposti tiedot käyttämistäsi palveluista, kuten Microsoft Dynamics CRM:stä, Salesforcesta tai Google Analyticsista. Voit julkaista organisaation sovellukset, jotta käyttäjät pääsevät käyttämään tarvitsemiansa tietoja.
 
@@ -96,7 +92,7 @@ Sovellukset ovat organisaation sisältöpakettien seuraava kehitysaste. Jos sinu
 * Ajan mittaan aiomme lakkauttaa organisaation sisältöpaketit, joten suosittelemme, että luot tästä lähtien sovelluksia.  
 * Uuden työtilan kokemuksen esikatselun myötä siirrymme kohti organisaation sisältöpakettien poistamista käytöstä. Ei voi käyttää tai luoda niitä esiversion työtiloissa.
 
-Voit verrata näitä kahta tutustumalla artikkeliin [Miten uudet sovellustyötilat eroavat nykyisistä sovellustyötiloista?](service-new-workspaces.md#how-the-new-workspaces-are-different). 
+Voit verrata näitä kahta tutustumalla artikkeliin [Miten uudet työtilat eroavat nykyisistä työtiloista](service-new-workspaces.md#how-the-new-workspaces-are-different). 
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 * [Asenna ja käytä sovelluksia Power BI:ssä](service-create-distribute-apps.md)

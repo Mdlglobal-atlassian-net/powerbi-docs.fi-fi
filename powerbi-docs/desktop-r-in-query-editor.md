@@ -8,15 +8,15 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 08/14/2019
+ms.date: 09/06/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: e2a970ecbf7b341d4feaba4e90a862841ba8bb17
-ms.sourcegitcommit: f6ac9e25760561f49d4257a6335ca0f54ad2d22e
+ms.openlocfilehash: b64b4b736291ce1c3bde02010b7e583a0c3dc406
+ms.sourcegitcommit: 226b47f64e6749061cd54bf8d4436f7deaed7691
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69560911"
+ms.lasthandoff: 09/09/2019
+ms.locfileid: "70841518"
 ---
 # <a name="use-r-in-query-editor"></a>R:n käyttö kyselyeditorissa
 
@@ -84,6 +84,9 @@ Havainnollistamme **R:n** käyttöä **kyselyeditorissa** käyttämällä esimer
        output <- dataset
        output$completedValues <- completedData$"SMI missing values"
     ```
+
+    > [!NOTE]
+    > Saat joutua korvaamaan muuttujan nimeltä *tuloste*, jotta voit luoda oikein uuden tietojoukon, johon suodattimia käytetään.
 
 7. Kun olet valinnut **OK**, **kyselyeditori** näyttää tietoturvaa koskevan varoituksen.
 

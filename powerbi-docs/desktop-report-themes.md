@@ -7,42 +7,53 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 08/12/2019
+ms.date: 09/10/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 0c098baa42e4fdc45b23519856eed824dbab5cad
-ms.sourcegitcommit: a77977a43342db4399a4dffb862b96907d16de35
+ms.openlocfilehash: 37304f9d23c514c7223b3eca481bf3b7b2258ac4
+ms.sourcegitcommit: db4fc5da8e65e0a3dc35582d7142a64ad3405de7
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/14/2019
-ms.locfileid: "69023377"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70904418"
 ---
 # <a name="use-report-themes-in-power-bi-desktop"></a>Raporttiteemojen käyttäminen Power BI Desktopissa
-**Raporttiteemojen** avulla voit käyttää väriteemaa koko raportissa. Tällä tavalla voit käyttää esimerkiksi yrityksen omaa väriteemaa, kausivärejä, kuvakejoukkoja tai muita väriteemoja. Kun otat käyttöön **raporttiteeman**, kaikissa raporttisi visualisoinneissa käytetään valitun teeman värejä. Muutamia poikkeuksia on, ja ne kuvataan jäljempänä tässä artikkelissa.
+**Raporttiteemojen** avulla voit soveltaa rakennemuutoksia koko raporttiin, esimerkiksi käyttää yrityksen värejä, muuttaa kuvakejoukkoja tai ottaa käyttöön visualisointien uuden oletusarvoisen muotoilun. Kun otat käyttöön **raporttiteeman**, kaikissa raporttisi visualisoinneissa ja muotoiluissa käytetään valitun teeman värejä. Muutamia poikkeuksia on, ja ne kuvataan jäljempänä tässä artikkelissa.
 
-![Raporttiteemat](media/desktop-report-themes/report-themes_1.png)
+![Raporttiteemat](media/desktop-report-themes/report-themes-1a.png)
 
-Kun otat käyttöön **raporttiteeman**, tarvitset perusrakennetta käyttävän JSON-tiedoston. Voit tuoda tämän JSON-tiedoston Power BI Desktopiin ja ottaa sen käyttöön raportissasi. JSON-tiedoston rakenteen määrittäminen ja sen tuominen on nopeaa ja helppoa (edellyttää vain muutaman painikkeen napsauttamista).
+Kun otat käyttöön mukautetun **raporttiteeman**, tarvitset perusrakennetta käyttävän JSON-tiedoston. Voit tuoda tämän JSON-tiedoston Power BI Desktopiin ja ottaa sen käyttöön raportissasi.
 
-Voit myös mukauttaa ja yhdenmukaistaa lähes kaikki elementit. Voit mukauttaa käyttämällä JSON-tiedostoa, jota voit säätää manuaalisesti **Muotoilu**-ruudussa. Tavoitteena on antaa käyttäjille täydet mahdollisuudet hallita omien raporttiensa ulkoasua yksityiskohtaisesti.
+Voit myös mukauttaa ja yhdenmukaistaa lähes kaikki **Muotoilu**-ruudussa olevat elementit teeman JSON-tiedoston kautta. Tavoitteena on antaa käyttäjille täydet mahdollisuudet hallita omien raporttiensa ulkoasua yksityiskohtaisesti.
 
 ## <a name="how-report-themes-work"></a>Raporttiteemojen toiminta
 Jos haluat käyttää raporttiteemaa Power BI Desktop -raportissa, valitse jokin käytettävissä olevista valmiista raporttiteemoista tai tuo mukautettu teema.
 
 | Valmis raporttiteema | Oletusvärien järjestys    |
 |------ |---------- |
-| Oletus   | ![#01B8AA](https://placehold.it/20/01B8AA/000000?text=+) ![#374649](https://placehold.it/20/374649/000000?text=+) ![#FD625E](https://placehold.it/20/FD625E/000000?text=+) ![#F2C80F](https://placehold.it/20/F2C80F/000000?text=+) ![#5F6B6D](https://placehold.it/20/5F6B6D/000000?text=+) ![#8AD4EB](https://placehold.it/20/8AD4EB/000000?text=+) ![#FE9666](https://placehold.it/20/FE9666/000000?text=+) ![#A66999](https://placehold.it/20/A66999/000000?text=+)|
-| Kaupungin puisto     | ![#73B761](https://placehold.it/20/73B761/000000?text=+) ![#4A588A](https://placehold.it/20/4A588A/000000?text=+) ![#ECC846](https://placehold.it/20/ECC846/000000?text=+) ![#CD4C46](https://placehold.it/20/CD4C46/000000?text=+) ![#71AFE2](https://placehold.it/20/71AFE2/000000?text=+) ![#8D6FD1](https://placehold.it/20/8D6FD1/000000?text=+) ![#EE9E64](https://placehold.it/20/EE9E64/000000?text=+) ![#95DABB](https://placehold.it/20/95DABB/000000?text=+)|
-| Luokkahuone     | ![#4A8DDC](https://placehold.it/20/4A8DDC/000000?text=+) ![#4C5D8A](https://placehold.it/20/4C5D8A/000000?text=+) ![#F3C911](https://placehold.it/20/F3C911/000000?text=+) ![#DC5B57](https://placehold.it/20/DC5B57/000000?text=+) ![#33AE81](https://placehold.it/20/33AE81/000000?text=+) ![#95C8F0](https://placehold.it/20/95C8F0/000000?text=+) ![#DD915F](https://placehold.it/20/DD915F/000000?text=+) ![#9A64A0](https://placehold.it/20/9A64A0/000000?text=+)|
-| Turvallinen värisokeille   | ![#074650](https://placehold.it/20/074650/000000?text=+) ![#009292](https://placehold.it/20/009292/000000?text=+) ![#FE6DB6](https://placehold.it/20/FE6DB6/000000?text=+) ![#FEB5DA](https://placehold.it/20/FEB5DA/000000?text=+) ![#480091](https://placehold.it/20/480091/000000?text=+) ![#B66DFF](https://placehold.it/20/B66DFF/000000?text=+) ![#B5DAFE](https://placehold.it/20/B5DAFE/000000?text=+) ![#6DB6FF](https://placehold.it/20/6DB6FF/000000?text=+)|
-| Sähköinen  | ![#118DFF](https://placehold.it/20/118DFF/000000?text=+) ![#750985](https://placehold.it/20/750985/000000?text=+) ![#C83D95](https://placehold.it/20/C83D95/000000?text=+) ![#FF985E](https://placehold.it/20/FF985E/000000?text=+) ![#1DD5EE](https://placehold.it/20/1DD5EE/000000?text=+) ![#42F7C0](https://placehold.it/20/42F7C0/000000?text=+) ![#3049AD](https://placehold.it/20/3049AD/000000?text=+) ![#F64F5C](https://placehold.it/20/F64F5C/000000?text=+)|
-| Suuri kontrasti     | ![#107C10](https://placehold.it/20/107C10/000000?text=+) ![#002050](https://placehold.it/20/002050/000000?text=+) ![#A80000](https://placehold.it/20/A80000/000000?text=+) ![#5C2D91](https://placehold.it/20/5C2D91/000000?text=+) ![#004B50](https://placehold.it/20/004B50/000000?text=+) ![#0078D7](https://placehold.it/20/0078D7/000000?text=+) ![#D83B01](https://placehold.it/20/D83B01/000000?text=+) ![#B4009E](https://placehold.it/20/B4009E/000000?text=+)|
-| Auringonlasku    | ![#B6B0FF](https://placehold.it/20/B6B0FF/000000?text=+) ![#3049AD](https://placehold.it/20/3049AD/000000?text=+) ![#FF994E](https://placehold.it/20/FF994E/000000?text=+) ![#C83D95](https://placehold.it/20/C83D95/000000?text=+) ![#FFBBED](https://placehold.it/20/FFBBED/000000?text=+) ![#42F9F9](https://placehold.it/20/42F9F9/000000?text=+) ![#00B2D9](https://placehold.it/20/00B2D9/000000?text=+) ![#FFD86C](https://placehold.it/20/FFD86C/000000?text=+)|
-| Hämy  | ![#F17925](https://placehold.it/20/F17925/000000?text=+) ![#004753](https://placehold.it/20/004753/000000?text=+) ![#CCAA14](https://placehold.it/20/CCAA14/000000?text=+) ![#4B4C4E](https://placehold.it/20/4B4C4E/000000?text=+) ![#D82C20](https://placehold.it/20/D82C20/000000?text=+) ![#A3D0D4](https://placehold.it/20/A3D0D4/000000?text=+) ![#536F18](https://placehold.it/20/536F18/000000?text=+) ![#46ABB0](https://placehold.it/20/46ABB0/000000?text=+)|
+| Oletus   | ![oletus](media/desktop-report-themes/report-themes-color-scheme-default.png)|
+| Highrise  | ![highrise](media/desktop-report-themes/report-themes-color-scheme-highrise.png)|
+| Johtaja     | ![johtaja](media/desktop-report-themes/report-themes-color-scheme-executive.png)|
+| Rajaseutu  | ![rajaseutu](media/desktop-report-themes/report-themes-color-scheme-frontier.png)|
+| Innovatiivinen    | ![innovatiivinen](media/desktop-report-themes/report-themes-color-scheme-innovative.png)|
+| Kukoistus     | ![kukoistus](media/desktop-report-themes/report-themes-color-scheme-bloom.png)|
+| Vuorovesi | ![vuorovesi](media/desktop-report-themes/report-themes-color-scheme-tidal.png)|
+| Lämpötila   | ![lämpötila](media/desktop-report-themes/report-themes-color-scheme-temperature.png)|
+| Aurinko | ![aurinko](media/desktop-report-themes/report-themes-color-scheme-solar.png)|
+| Poikkeava     | ![poikkeava](media/desktop-report-themes/report-themes-color-scheme-divergent.png)|
+| Myrsky     | ![myrsky](media/desktop-report-themes/report-themes-color-scheme-storm.png)|
+| Perinteinen   | ![perinteinen](media/desktop-report-themes/report-themes-color-scheme-classic.png)|
+| Kaupungin puisto     | ![kaupungin puisto](media/desktop-report-themes/report-themes-color-scheme-city-park.png)|
+| Luokkahuone     | ![luokkahuone](media/desktop-report-themes/report-themes-color-scheme-classroom.png)|
+| Turvallinen värisokeille   | ![turvallinen värisokeille](media/desktop-report-themes/report-themes-color-scheme-colorblind-safe.png)|
+| Sähköinen  | ![sähköinen](media/desktop-report-themes/report-themes-color-scheme-electric.png)|
+| Suuri kontrasti     | ![suuri kontrasti](media/desktop-report-themes/report-themes-color-scheme-high-contrast.png)|
+| Auringonlasku    | ![auringonlasku](media/desktop-report-themes/report-themes-color-scheme-sunset.png)|
+| Hämy  | ![hämy](media/desktop-report-themes/report-themes-color-scheme-twilight.png)|
 
 Jos haluat valita käytettävissä olevista valmiista raporttiteemoista, napsauta **Aloitus**-valintanauhan **Vaihda teemaa** -painiketta ja valitse sitten jokin teemoista avattavasta valikosta.
 
-![Valitse raporttiteema](media/desktop-report-themes/report-themes_2a.png)
+![Valitse raporttiteema](media/desktop-report-themes/report-themes-2a.png)
 
 Raporttiteema otetaan käyttöön raportissa, ja raportti on valmis.
 
@@ -50,7 +61,7 @@ Raporttiteema otetaan käyttöön raportissa, ja raportti on valmis.
 
 Jos haluat tuoda mukautetun raporttiteeman, napsauta **Aloitus**-valintanauhan **Vaihda teemaa** -painiketta. Valitse **Tuo teema** avattavasta valikosta.
 
-![Tuo teema](media/desktop-report-themes/report-themes_3.png)
+![Tuo teema](media/desktop-report-themes/report-themes-3a.png)
 
 Näyttöön avautuu ikkuna, jossa voit selata JSON-teematiedoston sijaintiin. Power BI Desktop etsii JSON-tiedostoja, koska se on Power BI -raporttiteemojen tiedostotyyppi. Seuraavassa kuvassa saatavilla on muutamia juhlapyhäteematiedostoja. Valitaan juhlapyhäteema maaliskuulle.
 
@@ -60,7 +71,7 @@ Kun teematiedosto on ladattu, Power BI Desktop ilmoittaa asiasta sinulle.
 
 ![Teeman tuominen onnistui](media/desktop-report-themes/report-themes_5.png)
 
-Nyt kun olemme tuoneet teematiedoston, voimme tutustua JSON-tiedoston yksinkertaiseen ja helppoon rakenteeseen.
+Nyt kun olemme tuoneet teematiedoston, voimme tutustua JSON-tiedoston rakenteeseen.
 
 ## <a name="structure-of-a-report-theme-json-file"></a>Raporttiteeman JSON-tiedoston rakenne
  Edellisessä osiossa valittu JSON-perustiedosto (*St Patricks Day.json* -tiedosto) näyttää editorissa avattuna seuraavalta:
@@ -73,17 +84,7 @@ JSON-tiedosto sisältää seuraavat pakolliset rivit:
 
 * **dataColors**: luettelo Power BI Desktopin visualisointien tietojen heksadesimaalivärikoodeista. Luettelo voi sisältää haluamasi määrän värejä.
 
-* **background**, **foreground** ja **tableAccent**: värit, joita käytetään eri visualisointityypeissä. 
-  - **foreground**-väriä käytetään tekstikenttien tekstissä, KPI-tavoitetekstissä, monirivisen kortin tekstissä, kortin arvon tekstissä, mittarin kuvaselitteen tekstissä, pystysuoran osittajaelementin tekstissä ja **taulukon** ja **matriisin** summan ja arvon tekstissä. 
-  - **background**-väriä käytetään painikkeen täytössä ja yhdistelmäkaavion otsikon taustassa. Näiden värien käyttö määräytyy käytetyn visualisointityylin mukaisesti. 
-  - **Taulukon** ja **matriisin** visualisoinnit käyttävät oletusarvoisesti näitä tyylejä.
-
-Jos haluat ottaa tyylin käyttöön **taulukon** tai **matriisin** visualisoinnissa, toimi seuraavasti: 
-1. Valitse visualisointi. 
-2. Valitse **Visualisoinnit**-ruudussa **Muotoilu**-osa.
-3. Laajenna **Matriisityyli** ja valitse tyyli avattavasta **Tyyli**-luettelosta.
-
-![Avattava Tyyli-luettelo](media/desktop-report-themes/report-themes_7.png)
+* **background**, **foreground** ja **tableAccent**: Useita väriluokkia. Käsittelemme väriluokkien tietoja myöhemmin tässä artikkelissa, mutta huomioi nyt, että väriluokkien avulla voit valita raporttiisi useita värejä kerralla.
 
 Tässä on *St. Patricks Day.json* -tiedoston teksti, jota käyttämällä voit luoda oman JSON-tiedostosi:
 
@@ -97,7 +98,7 @@ Tässä on *St. Patricks Day.json* -tiedoston teksti, jota käyttämällä voit 
     }
 ```
 
-Voit täältä syöttää oman väriheksadesimaalikoodisi valittuja värejä varten.
+Jos haluat ainoastaan säätää raportin perusvärejä, saat tuontivalmiin, henkilökohtaisen JSON-tiedoston yksinkertaisesti muuttamalla tämän tiedoston nimen ja heksakoodeja.
 
 JSON-tiedostossa määrität vain muotoilun, jota haluat muokata, joten kaikessa, mitä *ei* ole määritetty JSON-tiedostossa, käytetään Power BI:n oletusasetuksia.
 
@@ -116,10 +117,12 @@ Kun julkaiset raportin **Power BI -palveluun**, raporttiteeman värit pysyvät s
 
 Näetkö kaiken tämän vihreän? Tämä johtuu siitä, että nämä värit sisältyvät tuotuun **raporttiteemaan**, jonka otettiin käyttöön.
 
-### <a name="situations-when-report-theme-colors-wont-stick-to-your-reports"></a>Tilanteet, joissa raporttiteeman värit eivät pysy raporteissasi
-Oletetaan, että otat käyttöön mukautetun värijoukon (tai yksittäisen värin) visualisoinnin tietyssä arvopisteessä. Kun otat raporttiteeman käyttöön, se *ei* ohita tätä mukautettua arvopisteen väriä.
+Värivalikoiman värit ovat myös suhteessa nykyiseen teemaan. Jos esimerkiksi valitset arvopisteen ylimmän rivin kolmannen värin ja siirryt myöhemmin eri teemaan, kyseisen arvopisteen väri päivittyy automaattisesti uuden teeman ylimmän rivin kolmanteen väriin, aivan kuten muuttaessasi teemoja Microsoft Officessa.
 
-Saatat myös haluta määrittää arvopisteen värin manuaalisesti käyttämällä Teeman värit -osiota. Värejä *ei* päivitetä, kun otat käyttöön uuden raporttiteeman. Jos haluat palauttaa oletusvärit (jotta ne päivittyvät, kun otat käyttöön uuden raporttiteeman), valitse **Teeman värit** -valikoimasta **Palauta oletusasetukseen**.
+### <a name="situations-when-report-theme-colors-wont-stick-to-your-reports"></a>Tilanteet, joissa raporttiteeman värit eivät pysy raporteissasi
+Oletetaan, että otat käyttöön mukautetun värijoukon (tai yksittäisen värin) visualisoinnin tietyssä arvopisteessä värinvalitsimen Mukautettu väri -vaihtoehdon avulla. Kun otat raporttiteeman käyttöön, se *ei* ohita tätä mukautettua arvopisteen väriä.
+
+Saatat myös haluta määrittää arvopisteen värin manuaalisesti käyttämällä Teeman värit -osiota. Värejä *ei* päivitetä, kun otat käyttöön uuden raporttiteeman. Jos haluat palauttaa oletusvärit (jotta ne päivittyvät, kun otat käyttöön uuden raporttiteeman), valitse värinvalitsimen **Teeman värit** -valikoimasta **Palauta oletusasetukseen** tai valitse väri.
 
 ![Palauta oletusasetukset](media/desktop-report-themes/report-themes_9.png)
 
@@ -166,13 +169,139 @@ Alla on muutama muu raporttiteema, joiden avulla pääset alkuun:
 * [High contrast.](https://community.powerbi.com/t5/Themes-Gallery/Color-Blind-Friendly/m-p/140597)
 
 ## <a name="report-theme-json-file-format"></a>Raporttiteeman JSON-tiedoston muotoilu
-JSON-perustiedostossa on viisi pakollista riviä:
+Teeman JSON-tiedostossa on yksinkertaisimmillaan vain yksi pakollinen rivi: **nimi**. 
 
-* **name**: teeman nimi ja ainoa pakollinen kenttä.
-* **dataColors**: luettelo Power BI Desktopin visualisointien tietojen heksadesimaalivärikoodeista. Luettelo voi sisältää haluamasi määrän värejä.
-* **background**, **foreground** ja **tableAccent**: värit, joita käytetään eri visualisointityypeissä. **Foregroundia** käytetään tekstikenttien tekstissä, KPI-tavoitetekstissä, monirivisen kortin tekstissä, kortin arvon tekstissä, mittarin kuvaselitteen tekstissä, pystysuoran osittajaelementin tekstissä ja **taulukon** ja **matriisin** summan ja arvon tekstissä. **background**-väriä käytetään painikkeen täytössä ja yhdistelmäkaavion otsikon taustassa. Näiden värien käyttö määräytyy käytetyn visualisointityylin mukaisesti. **Taulukko**- ja **matriisivisualisoinnit** käyttävät oletusarvoisesti näitä tyylejä.
+```json
+    {
+        "name": "Custom Theme",
+    }
+```
 
-Jos haluat luoda yksityiskohtaisemman JSON-tiedoston, jolla voit määrittää muotoilua tarkemmin, sinun täytyy lisätä JSON-tiedostoon **visualStyles**-osio. Asetat muotoilun tarkemmat määritelmät **visualStyles**-osion sisään. **visualStyles**-osio näyttää seuraavanlaiselta:
+Muut rivit kuin *nimi* ovat valinnaisia, mikä tarkoittaa sitä, että voit lisätä halutessasi lisätä vain sellaisia ominaisuuksia, jotka haluat erityisesti muotoilla teematiedostoon, ja käyttää Power BI:n oletusarvoja muualla. 
+
+Nimi-kohdassa voit lisätä joitain perustietojen väriin liittyviä ominaisuuksia. 
+
+
+* **dataColors**: luettelo Power BI Desktopin visualisointien tietojen heksadesimaalivärikoodeista. Luettelo voi sisältää haluamasi määrän värejä. Kun tämän luettelon kaikkia värejä on käytetty, jos visualisointiin tarvitaan vielä lisää värejä, se alkaa käyttää Power BI:n oletusarvoista värivalikoimaa. 
+* **hyvä, neutraali, huono**: Nämä määrittävät vesiputouskaaviossa ja suorituskykyilmaisimen visualisoinnissa käytetyt värit.
+* **suurin, keski, pienin, tyhjäarvo**: Nämä värit määrittävät eri liukuvärit ehdollisen muotoilun valintaikkunassa.  
+
+Nämä värit määrittävä perusteema näyttäisi seuraavalta:
+
+```json
+    {
+        "name": "Custom Theme",
+          "dataColors": [
+                "#118DFF",
+                "#12239E", 
+                "#E66C37", 
+                "#6B007B", 
+                "#E044A7",
+                "#744EC2", 
+                "#D9B300", 
+                "#D64550",
+                "#197278", 
+                "#1AAB40"
+    ],
+        "good": "#1AAB40",
+        "neutral": "#D9B300",
+        "bad": "#D64554",
+        "maximum": "#118DFF",
+        "center": "#D9B300",
+        "minimum": "#DEEFFF",
+        "null": "#FF7F48"
+    }
+```
+
+Seuraavaksi voit lisätä eri väriluokkia. Väriluokkien avulla voit määrittää koko raporttiisi useita värejä yhdelle riville ryhmittelemällä samanlaisten visualisointien ominaisuudet, joilla on yhdessä yleensä sama väri. 
+
+Seuraavassa taulukossa ovat kuusi väriluokkaa, jotka voit muotoilla.
+
+
+|Väriluokka  |Mitä väriluokka muotoilee  |
+|---------|---------|
+|edusta | Otsikoiden taustaväri (arvopisteiden ulkopuolella) <br> Trendiviivan väri <br>  Tekstiruudun oletusväri <br> Taulukoiden ja matriisien arvojen sekä summien fonttien värit Tietopalkkien akselien väri <br> Korttien arvopisteiden otsikot <br> Mittarien kuvaselitearvojen väri <br> Suorituskykyilmaisimien tavoitteen väri <br>  Suorituskykyilmaisimien tekstin väri <br> Osittajien kohteen väri (kohdistustilassa)  <br> Osittajien avattavan kohteen fontin väri <br> Osittajien lukusyötteen fontin väri <br> Osittajien ylätunnisteen fontin väri <br> Pistekaavioiden suhdeviivan väri <br> Viivakaavion ennusteviivan väri <br> Kartan johtoviivan väri <br> Suodatinruudun ja kortin tekstien väri|
+|foregroundNeutralSecondary |Otsikoiden värit  <br> Selitteiden otsikoiden väri <br> Akselien otsikoiden väri <br> Taulukoiden ja matriisien otsikoiden fontin väri <br> Mittarin kohteen ja kohteiden johtoviivan väri <br>  Suorituskykyilmaisimen trendiakselin väri <br> Osittajien liukusäätimen väri <br> Osittajien kohteiden fontin väri <br> Osittajien ääriviivan väri <br> Viivakaavion väri hiirellä osoitettaessa <br> Monirivisten korttien otsikon väri <br> Valintanauhavetojen väri <br> Muotokarttojen reunan väri <br> Painiketekstien fontin väri <br> Painikekuvakkeiden viivan väri <br> Painikekuvakkeiden ääriviivan väri |
+| foregroundNeutralTertiary | selitteen himmennetty väri <br> Korttiluokan otsikon väri <br> Monirivisten korttien luokkien otsikoiden väri <br> Monirivisten korttien palkin väri <br> Vuokaavion konversioasteen vetojen väri 
+| backgroundLight | Akselien ruudukoiden väri <br> Taulukoiden ja matriisien ruudukoiden väri <br> Osittajien otsikoiden taustaväri (kohdistustilassa)  <br> Monirivisten korttien ääriviivan väri  <br> Muotojen täyttöväri <br> Taustavärien kaaren taustaväri <br> Sovelletun suodatinkortin taustaväri <br> |
+backgroundNeutral | Taulukoiden ja matriisien ruudukoiden ääriviivan väri <br> Muotokarttojen oletusväri <br> Nauhakaavion täyttöväri (kun sarjojen vastaavuusvaihtoehto on pois käytöstä) |
+tausta | Otsikoiden taustaväri (arvopisteiden sisäpuolella) <br> Osittajien avattavien kohteiden taustaväri  <br> Rengaskaavioiden vetojen väri <br> Puukarttojen vetojen väri <br> Yhdistelmäkaavioiden taustaväri <br> Painikkeiden täyttöväri <br> Suodatinruudun ja käytettävissä olevan suodatinkortin taustaväri |
+tableAccent | Ohittaa taulukoiden ja matriisien ruudukon ääriviivan värin, kun käytössä |
+
+
+Tässä on esimerkkiteema, joka määrittää väriluokat:
+
+```json
+    {
+        "name": "Custom Theme",
+        "foreground": "#252423",
+          "foregroundNeutralSecondary": "#605E5C",
+          "foregroundNeutralTertiary": "#B3B0AD",
+        "background": "#FFFFFF",
+          "backgroundLight": "#F3F2F1",
+          "backgroundNeutral": "#C8C6C4",
+        "tableAccent": "#118DFF"
+    }
+```
+
+Seuraavaksi voit lisätä JSON-tiedostoon tekstiluokkia. Ne muistuttavat väriluokkia, mutta niiden avulla voit päivittää raportin tekstiryhmien fontin koon, värin ja perheen. Tekstiluokkia on 12, mutta riittää, että määrität vain neljä luokkaa, joita kutsutaan *ensisijaisiksi luokiksi*. Niiden avulla voit muuttaa kaikkia raportin tekstimuotoiluja. Muut tekstiluokat, joita kutsutaan *toissijaisiksi luokiksi*, perivät tai johtavat ominaisuutensa ensisijaisista luokistaan. Usein toissijainen luokka johtaa ensisijaisesta luokasta vaaleamman tekstin sävyn tai suhteellisesti suuremman tai pienemmän tekstin koon. 
+
+Katso esimerkiksi *otsikkoluokkaa*. Otsikkoluokan oletusmuotoilu on Segoe UI, #252423 (tummanharmaa väri) ja 12 pisteen fonttikoko, ja tätä luokkaa käytetään taulukon ja matriisin arvojen muotoiluun. Yleensä taulukon tai matriisin kokonaissummissa on samanlainen muotoilu, mutta ne on tummennettu, jotta ne erottuvat paremmin. Siksi niissä käytetään lihavoitua otsikkoluokkaa. Sinun ei kuitenkaan tarvitse koskaan määrittää sitä itse teeman JSON-tiedostossa. Power BI päättelee sen automaattisesti puolestasi. Jos myöhemmin päätät, että haluat otsikkojen fonttikoon olevan 14 pistettä ja määrität sen teemassasi, sinun ei tarvitse päivittää lihavoitua otsikkoluokkaa, koska se perii kaikki tekstimuotoilut otsikkoluokasta ja lihavoi fonttiperheen sen lisäksi. 
+
+Taulukkoluettelo sisältää seuraavat:
+* Neljä ensisijaista tekstiluokkaa, mitä ne muotoilevat ja niiden oletusasetukset
+* Toissijaiset luokat, mitä ne muotoilevat ja niiden oletusasetuksen, joka on yksilöllinen ensisijaiseen luokkaan nähden
+
+
+|Ensisijainen luokka  |Toissijaiset luokat  |Luokan nimi JSON-tiedostossa  |Asetukset  |Liittyvät visualisointien objektit  |
+|---------|---------|---------|---------|---------|
+| Kuvateksti   | –   | kuvateksti | DIN <br> #252423 <br> 45pt |Korttien arvopisteiden otsikot <br> Suorituskykyilmaisin|
+|Ylätunniste|–|ylätunniste|Segoe UI Semibold <br> #252423 <br> 12pt |Tärkeimpien vaikuttajien otsikot |
+| Otsikko || otsikko    |DIN <br> #252423 <br> 12pt |Luokka-akselin otsikko <br> Arvoakselin otsikko <br> Monirivisten korttien otsikko * <br> Osittajan otsikko|
+|-| Suuri otsikko | largeTitle    |14pt   |Visualisointien otsikko |
+|Selite ||selite |Segoe UI<br>#252423<br>10pt |Taulukko- ja matriisisarakkeen otsikot <br> Matriisirivin otsikot<br>Taulukon ja matriisin ruudukko<br>Taulukon ja matriisin arvot |
+|-|Puolilihavoitu |semiboldLabel| Segoe UI Semibold   | Avainvaikuttajien profiiliteksti
+|-|Suuri    |largeLabel |12pt   | Monirivisen kortin arvopisteiden otsikot |
+|-|Pieni    |smallLabel |9pt    |Viiteviivan otsikot * <br>Osittajan päivämääräalueiden otsikot<br> Osittajien lukusyötteen tekstityyli<br>Osittajien hakukenttä<br>Avainvaikuttajien vaikuttajateksti|
+|-|Vaalea    |lightLabel |#605E5C    |Selitteen teksti<br>Painikkeen teksti<br>Luokka-akselin otsikko<br>Vuokaavion arvopisteiden otsikot<br>Vuokaavion konversioasteiden otsikot<br>Mittarin kohde<br>Pistekaavion luokan arvo<br>Osittajan kohteet|
+|-|Lihavointi |boldLabel  |Segoe UI Bold  |Matriisin välisummat<br>Matriisin loppusummat<br>Taulukon summat |
+|-|Suuri ja vaalea  |largeLightLabel    |#605E5C<br>12pt    |Korttiluokkien otsikot<br>Mittarien otsikot<br>Monirivisten korttien luokkien otsikot |
+|-|Pieni ja vaalea  |smallLightLabel    |#605E5C<br>9pt |Arvopisteiden otsikot<br>Arvoakselien otsikot|
+
+
+Sinun ei tarvitse määrittää toissijaisia luokkia teematiedostossa, koska ne perivät ensisijaisesta luokasta. Jos et pidä periytymissäännöistä (jos esimerkiksi et halua, että kokonaissummat ovat taulukon arvojen lihavoituja versioita), voit muotoilla toissijaisia luokkia suoraan teematiedostossa aivan kuin ensisijaisiakin luokkia.
+
+Tässä on esimerkkiteema, joka määrittää vain ensisijaiset tekstiryhmät: 
+
+```json
+    {
+            "name": "Custom Theme",
+          "textClasses": {
+                "callout": {
+                    "fontSize": 45,
+                    "fontFace": "wf_standard-font",
+                    "color": "#252423"
+                },
+                "title": {
+                    "fontSize": 12,
+                    "fontFace": "wf_standard-font",
+                    "color": "#252423"
+                },
+                "header": {
+                    "fontSize": 12,
+                    "fontFace": "Segoe UI Semibold",
+                    "color": "#252423"
+                },
+                "label": {
+                    "fontSize": 10,
+                    "fontFace": "Segoe UI",
+                    "color": "#252423"
+                }
+        }    
+    }
+```
+
+Lopuksi: jos haluat luoda yksityiskohtaisemman JSON-tiedoston, jolla voit määrittää kaikkien visualisointien muotoilun tarkemmin, voit lisätä JSON-tiedostoon **visualStyles**-osion. Asetat muotoilun tarkemmat määritelmät **visualStyles**-osion sisään. **visualStyles**-osio näyttää seuraavanlaiselta:
 
     visualStyles: {
         visualName: {
@@ -184,7 +313,52 @@ Jos haluat luoda yksityiskohtaisemman JSON-tiedoston, jolla voit määrittää m
         }
     }
 
-Käytä **visualName**- ja **cardName**-osioissa tiettyä visualisointia ja kortin nimeä. Käytä tähteä (\*), jos haluat, että asetus koskee kaikkia visualisointeja tai kortteja, joissa on tietyn visualisoinnin ominaisuus. Voit käyttää tähteä (\*) myös, kun haluat käyttää asetusta yleisesti raportissasi, esimerkiksi määrittää visualisointien fonttikoon tai -perheen.
+Käytä **visualName**- ja **cardName**-osioissa tiettyä visualisointia ja kortin nimeä. Tällä hetkellä **styleName** on aina tähtimerkki (*), mutta tulevissa julkaisuissa voit luoda visualisoinneille eri tyylejä ja nimetä niitä (kuin taulukkojen ja matriisien tyylejä). **propertyName** on määritetyn muotoiluasetuksen nimi ja **propertyValue** paikka, johon kirjoitat, mitä haluat kyseisen muotoiluasetuksen olevan.  
+
+**visualName**- ja **cardName**-kohdissa voit käyttää tähteä (\*) tietyn visualisoinnin tai kortin nimen sijasta, jos haluat, että asetus koskee kaikkia visualisointeja tai kortteja, joissa on tietty ominaisuus. Jos käytät tähteä (\*) sekä visualisoinnin että kortin nimessä, käytännössä asetusta sovelletaan raportissa yleisesti. Esimerkiksi fonttikoko tai tietty kirjasinperhe valitaan kaikille visualisoinneille.
+
+Tässä on esimerkki, jossa asetetaan joitain ominaisuuksia visualisointien tyylien avulla. 
+
+```json
+{  
+   "name":"Custom Theme",
+   "visualStyles":{  
+      "*":{  
+         "*":{  
+            "*":[{  
+                  "wordWrap":true
+            }],
+            "categoryAxis":[{
+                  "gridlineStyle":"dotted"
+            }],
+            "filterCard":[{  
+                  "$id":"Applied",
+                  "foregroundColor":{"solid":{"color":"#252423"}}
+               },
+               {  
+                  "$id":"Available",
+                  "border":true
+            }]
+         }
+      },
+      "scatterChart":{  
+         "*":{  
+            "bubbles":[{  
+                  "bubbleSize":-10
+            }]
+         }
+      }
+   }
+}
+```
+
+Tässä esimerkissä näkyvät seuraavat:
+
+* Automaattisen rivityksen ottaminen käyttöön kaikkialla
+* Ruudukon tyylin määrittäminen pisteviivaksi kaikille luokka-akselin visualisoinneille
+* Joidenkin muotoilujen määrittäminen käytettävissä oleville ja sovelletuille suodatinkorteille (huomaa muotoilu, jossa "$id"-arvoa käytetään määrittämään suodatinkorttien eri versiot)
+* Pistekaavioiden kuplan koon määrittäminen arvoon -10.
+
 
 > [!NOTE]
 > Sinun tarvitsee määrittää vain ne muotoiluasetukset, joita haluat muokata. Kaikki muotoiluelementit, jotka eivät ole mukana JSON-tiedostossa, ovat oletusarvojen ja -asetusten mukaisia.
@@ -193,12 +367,6 @@ Käytä **visualName**- ja **cardName**-osioissa tiettyä visualisointia ja kort
 
 ### <a name="json-file-element-definitions"></a>JSON-tiedostoelementtien määritelmät
 Tämän osion taulukoissa määritetään visualisointien nimet (*visualName*), korttien nimet (*cardName*) ja luetteloinnit, joita tarvitaan JSON-tiedoston luomiseen.
-
-Kun käytät *dateTime*-arvoa, päivämäärän täytyy olla ISO-päivämäärä puolilainausmerkeissä siten, että datetime on alussa. Tässä on esimerkki:
-
-    “datetime’2011-10-05T14:48:00.000Z’”
-
-Totuusarvo on joko *true* tai *false*. Merkkijonojen täytyy olla lainausmerkeissä, kuten seuraavassa esimerkissä: "tämä on merkkijono".
 
 | **visualName** |
 | --- |
@@ -291,7 +459,20 @@ Seuraavassa taulukossa määritetään *cardName*-arvot. Jokaisen solun ensimmä
 | zoom: Zoomaa |
 
 ### <a name="properties-within-each-card"></a>Kunkin kortin ominaisuudet
-Seuraavassa osiossa määritetään kunkin kortin ominaisuudet:
+Seuraavassa osiossa määritetään kunkin kortin ominaisuudet. Kortin nimen perässä on kunkin ominaisuuden nimi. Näet kunkin ominaisuuden nimen kohdalta, näytetäänkö muotoilu-ruutu, kuvauksen muotoiluasetuksen tarkoituksesta ja muotoiluasetuksen tyypin. Tämän lähestymistavan ansiosta tiedät, millaisia arvoja voit käyttää teematiedostossasi. 
+
+Kun käytät **dateTime**-arvoa, päivämäärän täytyy olla ISO-päivämäärä puolilainausmerkeissä siten, että datetime on alussa. Tässä on esimerkki:
+
+    “datetime’2011-10-05T14:48:00.000Z’”
+
+Totuusarvo on joko true tai false (tosi tai epätosi). Merkkijonojen täytyy olla lainausmerkeissä, kuten seuraavassa esimerkissä: "tämä on merkkijono". Luvut ovat vain itse arvoja (eivät lainausmerkeissä).
+
+Värien tulee olla seuraavassa muodossa, jossa mukautettu heksadesimaalikoodisi korvaa esimerkin ”FFFFFF”-kohdan.  
+
+    { "solid": { "color": "#FFFFFF" } }
+
+Luettelointia käytetään yleisimmin avattavien valikoiden muotoiluasetuksissa, ja se tarkoittaa sitä, että se voidaan määrittää mihin tahansa ruudussa näkyvistä vaihtoehdoista. Se voi olla esimerkiksi "RightCenter", jos haluat sen olevan selitteen paikalla, tai "Tietoarvo, prosenttiosuus", jos haluat käyttää sitä piirakkakaavion tietojen otsikkona. Luettelointiasetukset on näytetty alla ominaisuusluettelossa.
+
 
 ```json
       "general":

@@ -1,20 +1,20 @@
 ---
 title: 'DAX: JAKO-funktion ja jako-operaattorin (/) vertailu'
 description: Lue ohjeet DAX DIVIDE -jakofunktion käyttöön.
-author: guyinacube
+author: peter-myers
 manager: asaxton
 ms.reviewer: asaxton
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 08/05/2019
+ms.date: 09/09/2019
 ms.author: v-pemyer
-ms.openlocfilehash: d22491ee314ebcebd4479c4e57dbfdf7a6a1ffdb
-ms.sourcegitcommit: c2197c3ad1d747b4ad490ab75771a0d32d0ae208
+ms.openlocfilehash: 7516aaedb886e7b9e0f57ed76f0a7c5e40efbd6d
+ms.sourcegitcommit: 6a44cb5b0328b60ebe7710378287f1e20bc55a25
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/23/2019
-ms.locfileid: "70010433"
+ms.lasthandoff: 09/10/2019
+ms.locfileid: "70877846"
 ---
 # <a name="dax-divide-function-vs-divide-operator-"></a>DAX: JAKO-funktion ja jako-operaattorin (/) vertailu
 
@@ -34,15 +34,15 @@ DIVIDE(<numerator>, <denominator> [,<alternateresult>])
 
 DIVIDE-jakofunktio on rakennettu siten, että se käsittelee automaattisesti tilanteet, joissa jakajana on nolla. Jos vaihtoehtoista tulosta ei välitetä ja nimittäjä on nolla tai tyhjä, funktio palauttaa tyhjän arvon. Jos vaihtoehtoinen tulos välitetään, se palautetaan tyhjän sijaan.
 
-DIVIDE-jakofunktio on kätevä, koska siinä nimittäjäarvoa ei tarvitse testata ennen käyttöä. Funktio on lisäksi optimoitu paremmin nimittäjäarvon testaamiseen kuin [IF](/dax/if-function-dax)-funktio. DIVIDE-funktion käyttäminen tuottaa myös tarkemman ja siistimmän lausekkeen.
+DIVIDE-jakofunktio on kätevä, koska siinä nimittäjäarvoa ei tarvitse testata ennen käyttöä. Funktio on lisäksi optimoitu paremmin nimittäjäarvon testaamiseen kuin [IF](/dax/if-function-dax)-funktio. Suorituskyky paranee merkittävästi, koska nollalla jakamisen tarkistaminen on vaativaa. DIVIDE-funktion käyttäminen tuottaa myös tarkemman ja siistimmän lausekkeen.
 
 ## <a name="example"></a>Esimerkki
 
-Seuraava mittarilauseke tuottaa turvallisen jaon, mutta siihen liittyy kolmen DAX-funktion käyttäminen.
+Seuraava mittarilauseke tuottaa turvallisen jaon, mutta siihen liittyy neljän DAX-funktion käyttäminen.
 
 ```dax
 
-=IF(ISBLANK([Sales]) || [Sales] = 0, BLANK(), [Profit] / [Sales])
+=IF(OR(ISBLANK([Sales]), [Sales] == 0), BLANK(), [Profit] / [Sales])
 
 ```
 

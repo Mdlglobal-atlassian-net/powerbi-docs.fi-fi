@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 04/23/2019
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 003d179902ad3eeb5dc6dea841936a217a292d0c
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: c5a3b2b3e74d636f8d9af75e4c84b7fd61bd2139
+ms.sourcegitcommit: 6a44cb5b0328b60ebe7710378287f1e20bc55a25
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65099809"
+ms.lasthandoff: 09/10/2019
+ms.locfileid: "70877885"
 ---
 # <a name="power-bi-licensing-in-your-organization"></a>Power BI -käyttöoikeudet organisaatiossasi
 
@@ -31,11 +31,11 @@ Järjestelmänvalvojana voit ostaa ja määrittää Power BI Pro -käyttöoikeuk
 
 Voit ostaa Power BI Pro -käyttöoikeudet Microsoft Office 365:n tai sertifioidun Microsoft-kumppanin kautta. Kun olet ostanut käyttöoikeudet, voit määrittää ne yksittäisille käyttäjille. Jos haluat lisätietoja, katso kohta [Power BI Pro -käyttöoikeuksien hankinta ja määritys](service-admin-purchasing-power-bi-pro.md).
 
-### <a name="power-bi-pro-license-expiration"></a>Power BI Pro-käyttöoikeuden vanhentuminen
+### <a name="power-bi-pro-license-expiration"></a>Power BI Pro -käyttöoikeuden vanhentuminen
 
 Power BI Pro -käyttöoikeuden päätyttyä alkaa lisäaika. Jos kyseessä on volyymikäyttöoikeushankinta, lisäaika on 90 päivää. Jos kyseessä on suoraan hankittu käyttöoikeus, lisäaika on 30 päivää.
 
-Power BI Pro -tilauksen elinkaari on sama kuin Office 365:llä. Jos haluat lisätietoja, katso [mitä tapahtuu ja käyttö, kun Oma Office 365 for business-tilaus päättyy?](https://support.office.com/article/What-happens-to-my-data-and-access-when-my-Office-365-for-business-subscription-ends-4436582f-211a-45ec-b72e-33647f97d8a3).
+Power BI Pro -tilauksen elinkaari on sama kuin Office 365:llä. Lisätietoja on artikkelissa [Mitä tiedoilleni ja käyttöoikeudelleni tapahtuu, kun Office 365 for Business -tilaus päättyy?](https://support.office.com/article/What-happens-to-my-data-and-access-when-my-Office-365-for-business-subscription-ends-4436582f-211a-45ec-b72e-33647f97d8a3).
 
 ### <a name="power-bi-pro-trial-for-individuals"></a>Power BI Pron kokeiluversio yksittäisille käyttäjille
 
@@ -125,7 +125,7 @@ Jos rajoittamaton Power BI (ilmainen) -käyttöoikeuslohko ei ole käytettäviss
 
 Voit järjestelmänvalvojana joko ottaa käyttöön yksittäisten käyttäjien rekisteröitymisen tai poistaa sen käytöstä Azure Active Directoryn (AAD) kautta. Tässä artikkelin osassa kerrotaan, miten voit hallita rekisteröitymisiä PowerShell-komennoilla. Katso lisätietoja Azure PowerShellistä kohdasta [Azure PowerShellin yleiskatsaus](/powershell/azure/overview).
 
-Rekisteröitymistä ohjaava AAD-asetus on **AllowAdHocSubscriptions**. Useimmissa vuokraajissa tämä asetus on *true* (tosi), mikä tarkoittaa, että se on käytössä. Jos hankit Power BI:n kumppanin kautta, asetuksena saattaa olla *false* (epätosi), mikä tarkoittaa, että se on poistettu käytöstä. Jos muutat asetusta arvosta *true* arvoon *false*, organisaatiosi uusien käyttäjien rekisteröityminen erikseen on estetty. Käyttäjät, jotka rekisteröityivät Power BI:hin ennen asetuksen muutosta, säilyttävät käyttöoikeutensa.
+Rekisteröitymistä ohjaava Azure AD -asetus on **AllowAdHocSubscriptions**. Useimmissa vuokraajissa tämä asetus on *true* (tosi), mikä tarkoittaa, että se on käytössä. Jos hankit Power BI:n kumppanin kautta, asetuksena saattaa olla *false* (epätosi), mikä tarkoittaa, että se on poistettu käytöstä. Jos muutat asetusta arvosta *true* arvoon *false*, organisaatiosi uusien käyttäjien rekisteröityminen erikseen on estetty. Käyttäjät, jotka rekisteröityivät Power BI:hin ennen asetuksen muutosta, säilyttävät käyttöoikeutensa. Huomaa, että kun asetus on *false* (epätosi), käyttäjät voivat edelleen rekisteröityä Pro-kokeiluversioon.
 
 1. Kirjaudu Azure Active Directoryyn käyttämällä Office 365 -tunnistetietojasi. PowerShell-komentosarjan ensimmäinen rivi kehottaa antamaan tunnistetiedot. Toinen rivi muodostaa yhteyden Azure Active Directoryyn.
 
@@ -136,7 +136,7 @@ Rekisteröitymistä ohjaava AAD-asetus on **AllowAdHocSubscriptions**. Useimmiss
 
    ![Sisäänkirjautuminen Azure Active Directoryyn](media/service-admin-licensing-organization/azure-ad-sign-in.png)
 
-1. Kun olet kirjautunut sisään, suorita seuraava komento, jotta näet, mikä asetus vuokraajalla on tällä hetkellä määritettynä. (Huomaa, että 'fl ”alla kirjain” l ”, ei numero 1.)
+1. Kun olet kirjautunut sisään, suorita seuraava komento, jotta näet, mikä asetus vuokraajalla on tällä hetkellä määritettynä. (Huomioi, että alla ”fl” sisältää l-kirjaimen, ei numeroa 1.)
 
     ```powershell
      Get-MsolCompanyInformation | fl AllowAdHocSubscriptions 

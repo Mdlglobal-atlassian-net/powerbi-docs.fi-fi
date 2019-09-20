@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 08/19/2019
+ms.date: 09/06/2019
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 67cd57a981f7c1fcab118652dc5424fa935ecd13
-ms.sourcegitcommit: 4a3afe761d2f4a5bd897fafb36b53961739e8466
+ms.openlocfilehash: e77e61d00ac555c907a6d87ab0ffdeb8e21a5bd8
+ms.sourcegitcommit: 226b47f64e6749061cd54bf8d4436f7deaed7691
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/20/2019
-ms.locfileid: "69654748"
+ms.lasthandoff: 09/09/2019
+ms.locfileid: "70841298"
 ---
 # <a name="storage-mode-in-power-bi-desktop"></a>Tallennustilan tila Power BI Desktopissa
 
@@ -42,6 +42,9 @@ Power BI Desktopin Tallennustilan tila -asetus on yksi kolmesta toisiinsa liitty
 * **Monta-moneen-yhteys**: *Yhdistelmämallien* avulla voit määrittää taulukoiden välille *monta-moneen-yhteyksiä*. *Moni-moneen-yhteydet* poistavat vaatimuksen siitä, että taulukoiden arvojen pitäisi olla yksilöllisiä. Se myös poistaa edelliset ratkaisut, kuten uusien taulukoiden lisäämisen vain yhteyksien muodostamiseksi. Jos haluat lisätietoja, katso [Moni-moneen-yhteydet Power BI Desktopissa](desktop-many-to-many-relationships.md).
 
 * **Tallennustilan tila**: Voit nyt määrittää, mitkä visualisoinnit edellyttävät kyselyä taustatietolähteisiin. Visualisoinnit, jotka eivät edellytä kyselyä, tuodaan, vaikka ne perustuisivat DirectQueryyn. Tämä ominaisuus parantaa suorituskykyä ja vähentää taustakuormitusta. Aiemmin jopa osittajien kaltaiset yksinkertaiset visualisoinnit käynnistivät kyselyjä taustalähteisiin. Tallennustilan tila kuvataan edempänä tässä artikkelissa.
+
+> [!NOTE]
+> Voit tarkastella nykyistä tallennustilaa valitsemalla **Malli**-näkymän, valitsemalla haluamasi taulukon ja valitsemalla sitten **Ominaisuudet**-ruudun **Lisäasetukset**-osasta **Tallennustilan tila** ‑arvon.
 
 ## <a name="use-the-storage-mode-property"></a>Tallennustilan tila -ominaisuuden käyttäminen
 

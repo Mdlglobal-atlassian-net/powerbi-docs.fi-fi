@@ -7,23 +7,27 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 08/24/2019
+ms.date: 09/05/2019
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: c13398ff08722c54a9f0c373a1c103e4d684c9bb
-ms.sourcegitcommit: c799941c8169cd5b6b6d63f609db66ab2af93891
+ms.openlocfilehash: 21a77d585707b19cd8a3d06ad44471fac45d7178
+ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70391390"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "70903718"
 ---
 # <a name="reports-in-power-bi"></a>Raportit Power BI:ssä
 
-Power BI -raportti on usean perspektiivin tietojoukkonäkymä, jonka visualisoinnit edustavat eri havaintoja ja merkityksellisiä tietoja tietojoukosta.  Raportilla voi olla yksittäinen visualisointi tai sivuja, jotka ovat täynnä visualisointeja. Saatat olla raporttien *suunnittelija*, mutta tämä riippuu työroolistasi. Saatat myös olla raporttien *kuluttaja* eli käyttäjä.
+Power BI -raportti on usean perspektiivin tietojoukkonäkymä, jonka visualisoinnit edustavat eri havaintoja ja merkityksellisiä tietoja tietojoukosta.  Raportilla voi olla yksittäinen visualisointi tai sivuja, jotka ovat täynnä visualisointeja. Saatat olla raporttien *suunnittelija*, mutta tämä riippuu työroolistasi. Saatat myös olla raporttien *kuluttaja* eli käyttäjä. Tämä artikkeli on tarkoitettu *kuluttajille*.
 
-![Näyttökuvassa on raporttisivu.](./media/end-user-reports/power-bi-reports.png)
+![Näyttökuvassa on raporttisivu.](./media/end-user-reports/power-bi-report.png)
 
-Tässä raportissa on kuusi sivua (tai välilehteä). Tarkastelet tällä hetkellä **Asenne**-sivua. Tällä sivulla on viisi erilaista visualisointia ja sivun otsikko. *Suodattimet*-ruudussa näkyy yksi suodatin, jota käytetään kaikkiin raporttisivuihin. Jos haluat kutistaa Suodattimet-ruudun, valitse nuoli ( **>** ).
+A. Tässä raportissa on kuusi sivua (tai välilehteä). Tarkastelet tällä hetkellä **Asenne**-sivua.    
+B. Tällä sivulla on viisi erilaista visualisointia ja sivun otsikko.    
+C. *Suodattimet*-ruudussa näkyy yksi suodatin, jota käytetään kaikkiin raporttisivuihin. Jos haluat kutistaa Suodattimet-ruudun, valitse nuoli ( **>** ).    
+D. Power BI -palkki näyttää raportin nimen ja viimeisimmän päivityksen päivämäärän. Valitse nuoli avataksesi valikon, jossa näkyy myös raportin omistajan nimi.    
+E. Toimintopalkki sisältää toiminnot, jotka voit suorittaa kyseiselle raportille.  Voit esimerkiksi lisätä kommentin, tarkastella kirjanmerkkiä tai viedä tietoja raportista.  Valitse kolme pistettä (...) avataksesi luettelon raportin lisätoiminnoista.    
 
 Jos olet uusi Power BI:n käyttäjä, saat hyvän pohjan sen käyttöön lukemalla [Peruskäsitteet Power BI -palvelun kuluttajille](end-user-basic-concepts.md) -ohjeartikkelin. Raportteja voi lukea, jakaa ja merkitä mobiililaitteilla. Saat lisätietoja ohjeartikkelista [Raporttien tutkiminen Power BI -mobiilisovelluksissa](mobile/mobile-reports-in-the-mobile-apps.md).
 
@@ -68,9 +72,9 @@ Roolistasi riippuen saatat olla *suunnittelija*, joka luo raportteja omaan käyt
 Tai voit olla *kuluttaja*, joka saa raportteja muilta. Haluat oppia ymmärtämään ja käyttämään raportteja. Jos olet raporttien *kuluttaja*, nämä linkit ovat sinulle:
 
 * Aloita [Power BI -palvelun esittelyllä](end-user-basic-concepts.md) niin tiedät, mistä raportit ja raporttityökalut löytyvät.
-* Opi [avaamaan raportti](end-user-report-open.md) ja tutustu kaikkeen [lukunäkymässä](end-user-reading-view.md) käytettävissä olevaan vuorovaikutukseen.
+* Katso, miten voit [avata raportin](end-user-report-open.md), ja tutustu kaikkiin [kuluttajien saatavilla oleviin toimintoihin](end-user-reading-view.md).
 * Tutustu raportteihin paremmin tutustumalla johonkin [malleistamme](../sample-tutorial-connect-to-the-samples.md).  
-* Katso, mitä tietojoukkoa raportissa käytetään ja missä koontinäytöissä on raportista kiinnitettyjä ruutuja, [tarkastelemalla asiaan liittyvää sisältöä Power BI -palvelussa](end-user-related.md).
+* Katso, mitä tietojoukkoa raportissa käytetään ja missä raporttinäkymissä on raportin sisältämiä visualisointeja (*kiinnityksiä*), [tarkastelemalla asiaan liittyvää sisältöä Power BI -palvelussa](end-user-related.md).
 
 > [!TIP]
 > Jos et löytänyt etsimääsi täältä, selaa kaikkia *raportteihin* liittyviä ohjeartikkeleita vasemmalla olevan sisällysluettelon avulla.

@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: reference
-ms.date: 05/08/2019
+ms.date: 09/09/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 4c522a9e6c40f4164ee82675c40c3110b174d017
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: d3405a434c8b3add7bb39f20d5aa65e066e4b73d
+ms.sourcegitcommit: 226b47f64e6749061cd54bf8d4436f7deaed7691
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65513928"
+ms.lasthandoff: 09/09/2019
+ms.locfileid: "70841331"
 ---
 # <a name="power-bi-desktop-privacy-levels"></a>Power BI Desktopin yksityisyystasot
 **Power BI Desktopissa** yksityisyystasoilla määritetään eristystaso, jolla yksi tietolähde eristetään muista tietolähteistä. Rajoittava eristystaso estää tietojen vaihtamisen tietolähteiden välillä, mutta se voi myös rajoittaa toimintaa ja vaikuttaa suorituskykyyn.
@@ -52,7 +52,7 @@ Määritä tietolähteen yksityisyystaso valitsemalla tietolähde ja sitten **Mu
 | **Yhdistä tiedot kunkin lähteen Yksityisyystaso-asetustesi mukaan** (oletusasetus, käytössä) |Yksityisyystason asetuksilla määritetään tietolähteiden välinen eristystaso tietoja yhdisteltäessä. |
 | **Ohita yksityisyystasot ja mahdollisesti paranna suorituskykyä** (poissa käytöstä) |Yksityisyystasoja ei huomioida tietoja yhdisteltäessä. Tietojen toimivuus ja suorituskyky voivat kuitenkin parantua. |
 
-> **Suojaushuomautus:** Jos otat **Yksityisyystasot**-asetuksen käyttöön valitsemalla **Ohita yksityisyystasot ja mahdollisesti paranna suorituskykyä** -asetuksen **Yksityisyystasot**-valintaikkunassa, arkaluontoisia tai luottamuksellisia tietoja voi mahdollisesti näkyä valtuuttamattomille henkilöille. Älä ota **Yksityisyystasot**-asetusta käyttöön, ellet ole varma, että tietolähde ei sisällä arkaluonteisia tai luottamuksellisia tietoja.
+> **Suojaushuomautus:** Jos valitset **Ohita yksityisyystasot ja mahdollisesti paranna suorituskykyä** -asetuksen **Yksityisyystasot**-valintaikkunassa, arkaluontoisia tai luottamuksellisia tietoja voi mahdollisesti näkyä valtuuttamattomille henkilöille. Älä *poista asetusta käytöstä*, ellet ole varma, että tietolähde ei sisällä arkaluonteisia tai luottamuksellisia tietoja.
 > 
 > 
 

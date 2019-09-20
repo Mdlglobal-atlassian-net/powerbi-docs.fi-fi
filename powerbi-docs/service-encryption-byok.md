@@ -10,12 +10,12 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 06/18/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: 1e836dd9fe4be1c0267a0ba4008c2455cf59e2e2
-ms.sourcegitcommit: 805d52e57a935ac4ce9413d4bc5b31423d33c5b1
+ms.openlocfilehash: 39c6dc8a60be67f8f9e99e01ae1c7249166c5ddb
+ms.sourcegitcommit: 6a44cb5b0328b60ebe7710378287f1e20bc55a25
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68665396"
+ms.lasthandoff: 09/10/2019
+ms.locfileid: "70877738"
 ---
 # <a name="bring-your-own-encryption-keys-for-power-bi-preview"></a>Omien salausavainten tuominen Power BI:hin (esikatselu)
 
@@ -66,7 +66,7 @@ Tämän osion ohjeissa oletetaan, että sinulla on perustiedot Azure Key Vaultin
 1. Valitse ensin **OK** ja sitten **Tallenna**.
 
 > [!NOTE]
-> Jos haluat kumota Power BI -käyttöoikeuden tietoihisi futurem-palvelussa, poista tämän palvelun päänimen käyttöoikeudet Azure Key Vaultissa.
+> Jos haluat kumota Power BI -käyttöoikeuden tietoihisi jatkossa, poista tämän palvelun päänimen käyttöoikeudet Azure Key Vaultissa.
 
 ### <a name="create-an-rsa-key"></a>RSA-avaimen luominen
 
@@ -123,11 +123,31 @@ Cmdlet-komento hyväksyy kaksi kytkinparametria, jotka vaikuttavat nykyisten ja 
 > [!IMPORTANT]
 > Jos määrität arvon parametrille `-Default`, kaikki vuokraajallesi jatkossa luodut kapasiteetit salataan määrittämäsi avaimen (tai päivitetyn oletusavaimen) avulla. Et voi perua oletustoimintoa, joten et voi jatkossa luoda Premium-kapasiteettia vuokraajaasi, jossa ei käytetä BYOK:ta.
 
-Kun otat BYOK:n käyttöön vuokraajassasi, määritä yhden tai useamman Power BI -kapasiteetin salausavain parametrilla [`Set-PowerBICapacityEncryptionKey`](/powershell/module/microsoftpowerbimgmt.admin/set-powerbicapacityencryptionkey):
+Kun otat BYOK:n käyttöön vuokraajassasi, määritä yhden tai useamman Power BI -kapasiteetin salausavain:
 
-```powershell
-Set-PowerBICapacityEncryptionKey-CapacityId 08d57fce-9e79-49ac-afac-d61765f97f6f -KeyName 'Contoso Sales'
-```
+1. Parametrilla [`Get-PowerBICapacity`](/powershell/module/microsoftpowerbimgmt.capacities/get-powerbicapacity) voit noutaa kapasiteetin tunnuksen, jota tarvitaan seuraavassa vaiheessa.
+
+    ```powershell
+    Get-PowerBICapacity -Scope Individual
+    ```
+
+    Cmdlet-komento palauttaa seuraavankaltaiset tulokset:
+
+    ```
+    Id              : xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
+    DisplayName     : Test Capacity
+    Admins          : adam@sometestdomain.com
+    Sku             : P1
+    State           : Active
+    UserAccessRight : Admin
+    Region          : North Central US
+    ```
+
+1. Parametrilla [`Set-PowerBICapacityEncryptionKey`](/powershell/module/microsoftpowerbimgmt.admin/set-powerbicapacityencryptionkey) voit asettaa salausavaimen:
+
+    ```powershell
+    Set-PowerBICapacityEncryptionKey-CapacityId xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx -KeyName 'Contoso Sales'
+    ```
 
 Voit määrittää, miten BYOK:ta käytetään vuokraajassa. Jos haluat esimerkiksi salata yksittäisen kapasiteetin, kutsu `Add-PowerBIEncryptionKey` ja sulje `-Activate` tai `-Default` kutsun ulkopuolelle. Kutsu sitten `Set-PowerBICapacityEncryptionKey` siinä kapasiteetissa, jossa haluat ottaa BYOK:n käyttöön.
 

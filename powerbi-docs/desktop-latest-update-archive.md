@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 08/26/2019
+ms.date: 09/10/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: a7061597df08e82f3128b6fc85ed2841569922c4
-ms.sourcegitcommit: 2b340946ed5f1deedeace4071845e1720ea155c9
+ms.openlocfilehash: b61d0e3515b4efb08cb08a49d9bb339a1fbbb5a3
+ms.sourcegitcommit: db4fc5da8e65e0a3dc35582d7142a64ad3405de7
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "70064632"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70903700"
 ---
 # <a name="previous-monthly-updates-to-power-bi-desktop"></a>Power BI Desktopin aiemmat kuukausipäivitykset
 
@@ -33,6 +33,75 @@ Kunkin päivityksen vieressä olevat linkit tarkoittavat seuraavaa:
 Voit myös katsoa **Uusimmat päivitykset** -videon, joka on aivan tämän artikkelin alussa. Napsauta päivitysluettelon alla olevan videokuvan **toistokuvaketta**.
 
 Seuraavat osiot käsittelevät **Power BI Desktopin** aiempien kuukausien päivityksiä.
+
+## <a name="august-2019-update-2715523641"></a>Elokuun 2019 päivitys (2.71.5523.641)
+
+Elokuun päivityksemme loistivat upeina raporteissa, jotka voit luoda Power BI Desktopissa. 
+
+Voit nyt [ladata uusimman Power BI Desktop](https://powerbi.microsoft.com/desktop) -version, joka toimitetaan nyt kaikki tuetut kielet sisältävänä yksittäisenä .exe-tiedostona. Jos käytössäsi on Windows 10, voit hankkia **Power BI Desktopin** Microsoft Storesta. **Power BI Desktopin** kuukausittaiset versiot ovat samat, vaikka versioiden numerointi saattaa poiketa. Lisätietoja on [tässä artikkelissa](desktop-get-the-desktop.md). 
+
+Kunkin päivityksen vieressä olevat linkit tarkoittavat seuraavaa:
+
+* **[video]** -leikkeet toistetaan uudessa selainvälilehdessä uuden ominaisuuden kuvailun yhteydessä.
+* Tietyistä ominaisuuksista on tarjolla oma **[artikkeli]** , joka sisältää lisätietoja.
+* Useimmat ominaisuudet on selitetty kuukausittaisen päivityksen **[blogi]** -kirjoituksessa.
+* Jotkin ominaisuudet puolestaan ovat itsestään selviä eivätkä tarvitse artikkelia tai videota tuekseen.
+
+Voit myös katsoa **Uusimmat päivitykset** -videon, joka on aivan tämän artikkelin alussa. Napsauta päivitysluettelon alla olevan videokuvan **toistokuvaketta**.
+
+Seuraavat päivitykset olivat uutta **Power BI Desktopissa** tässä kuussa:
+
+### <a name="reporting"></a>Raportointi
+* Visualisointien ryhmittely [[video]](https://youtu.be/sf4n7VXoQHY?t=10)  [[artikkeli]](desktop-grouping-visuals.md)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2019-feature-summary/#grouping) 
+* Suodatusruudun siirto  [[video]](https://youtu.be/sf4n7VXoQHY?t=360)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2019-feature-summary/#filterPane)
+* Kuvaketyylin valitsin kuvakkeiden ehdollista muotoilua varten [[video]](https://youtu.be/sf4n7VXoQHY?t=509)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2019-feature-summary/#iconStyles)
+* Ehdollisen muotoilun varoitukset [[video]](https://youtu.be/sf4n7VXoQHY?t=621)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2019-feature-summary/#conditionalFormatting)
+
+
+### <a name="analytics"></a>Analytiikka
+* Tärkeimpien vaikuttajien visualisointien parannuksia, yleinen saatavuus [[video]](https://youtu.be/sf4n7VXoQHY?t=801)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2019-feature-summary/#keyInfluencers) 
+
+
+### <a name="visuals"></a>Visualisoinnit
+* Uusia mukautettuja visualisointeja ja päivityksiä [[video]](https://youtu.be/sf4n7VXoQHY?t=956)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2019-feature-summary/#xviz) 
+
+
+### <a name="data-connectivity"></a>Tietoyhteydet
+* SAP HANA HDI -säilöjen tuki [[video]](https://youtu.be/sf4n7VXoQHY?t=1502)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2019-feature-summary/#HDIcontainers) 
+* SAP-muuttujien muokkaus Power BI -palvelussa (esikatselu)  [[video]](https://youtu.be/sf4n7VXoQHY?t=1522)   [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2019-feature-summary/#SAPvariables)
+* PostgreSQL DirectQuery [[video]](https://youtu.be/sf4n7VXoQHY?t=1662)   [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2019-feature-summary/#postgresql) 
+* MarkLogic-yhdistin nyt yleisesti saatavilla  [[video]](https://youtu.be/sf4n7VXoQHY?t=1678)   [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2019-feature-summary/#marklogic) 
+* Uusi Power Platform -luokka Nouda tiedot -toiminnossa  [[video]](https://youtu.be/sf4n7VXoQHY?t=1688)   [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2019-feature-summary/#powerPlatform) 
+
+### <a name="template-apps"></a>Mallisovellukset
+* Facebook-sivut – perusanalytiikka [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2019-feature-summary/#facebook) 
+
+
+> [!NOTE]
+> Voit myös [tutustua kaikkiin Power BI Desktopille saatavilla oleviin tietolähteisiin](desktop-data-sources.md). Luettelo kasvaa jatkuvasti, joten se kannattaa tarkistaa usein.
+
+Haluatko lisätietoja näistä päivityksistä? Tutustu [blogikirjoitukseen](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2019-feature-summary/), josta saat tarkempia tietoja kustakin uudesta ominaisuudesta (tämä on sama blogikirjoitus, johon viitataan yllä olevassa luettelossa).
+
+
+Seuraavassa videossa esitellään jokainen näistä päivityksistä. Näet videon myös blogikirjoituksen kautta.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/sf4n7VXoQHY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+> [!NOTE]
+> Sinua saattavat myös kiinnostaa [Power BI -palvelun uudet ominaisuudet](service-whats-new.md). Tutustu myös [Power BI -mobiilisovellusten uutuuksiin](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
+
+Voit myös ladata Power BI Desktopin edellisiä versioita, jos organisaatiosi vaatii niin. Suosittelemme aina Power BI Desktopin uusimman version käyttämistä jonkin aiemman version sijasta. Kaikkia aiempia versioita koskevat seuraavat rajoitukset:
+
+* Power BI Desktopin aiempia versioita ei ylläpidetä – uusinta julkaisua tulee aina käyttää, jotta saa käyttöönsä uusimmat ominaisuudet ja päivitykset.
+* Power BI Desktopin aiemmilla versioilla ei ehkä voi avata tiedostoja, jotka on luotu tai tallennettu Power BI Desktopin uusimmilla versioilla. 
+* Jos saat varoituksen, kun lataat Power BI Desktopin uudemmassa versiossa tallennettua raporttia, ja tallennat raportin sitten aiemmassa versiossa, menetät kaikki uusiin ominaisuuksiin liittyvät tiedot.
+* Arkistoimme vain Power BI Desktopin englanninkieliset versiot.
+
+Valitse jompikumpi seuraavista linkeistä, jos haluat ladata aiemman version: 
+
+* [Power BI Desktop, elokuun 2019 versio – 32-bittinen](http://download.microsoft.com/download/9/B/A/9BAEFFEF-1A68-4102-8CDF-5D28BFFE6A61/PBIDesktop-2019-08.msi)
+* [Power BI Desktop, elokuun 2019 versio – 64-bittinen](http://download.microsoft.com/download/9/B/A/9BAEFFEF-1A68-4102-8CDF-5D28BFFE6A61/PBIDesktop-2019-08_x64.msi)
+
 
 ## <a name="july-2019-update-2715523641"></a>Heinäkuun 2019 päivitys (2.71.5523.641)
 

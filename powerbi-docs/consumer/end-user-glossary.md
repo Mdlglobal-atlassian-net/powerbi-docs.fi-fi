@@ -7,14 +7,14 @@ author: mihart
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 05/14/2019
+ms.date: 09/04/2019
 ms.author: mihart
-ms.openlocfilehash: 6a66d134a3399fed3ee03eddd7059265b5cf7c13
-ms.sourcegitcommit: 81ba3572531cbe95ea0b887b94e91f94050f3129
+ms.openlocfilehash: b9622a08506c6f5ade900296d91b449c64dc374c
+ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66751017"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "70903667"
 ---
 # <a name="glossary-for-power-bi-service"></a>Power BI -palvelun sanasto
 Power BI -palvelussa saattaa olla ennestään tuntematonta tai sekavalta vaikuttavaa terminologiaa. Sanasto on hyvä paikka termien hakuun, joten se on hyvä lisätä suosikkeihin. Toinen hyvä resurssi lisätietojen saamiseen Power BI -palvelun muodostavista rakenneosista ovat [peruskäsitteet](end-user-basic-concepts.md). Peruskäsitteet tarjoavat korkean tason yleiskatsauksen Power BI:n *osiin* ja niiden yhteyksiin.
@@ -60,14 +60,19 @@ Tämä sanasto on yhteisön luoma.  Etkö näe etsimääsi sanaa? Pyydä meitä 
 
 **calculation (laskenta)** Kohteen koon tai määrä matemaattinen määrittäminen.
 
+**kortti** (visualisointityyppi) [Visualisointityyppi](end-user-visual-type.md) Power BI:ssä.
+
+**kortti** (Power BI -aloitussivu) Power BI -aloitussivu näyttää suorakulmaisia ja neliönmuotoisia kuvia, jotka vastaavat raporttinäkymiä, raportteja, sovelluksia ja muuta sisältöä. Näitä kuvia kutsutaan *korteiksi*.
+
 **certified custom visual (Sertifioitu mukautettu visualisointi)** Mukautettu Power BI -visualisointi, joka on täyttänyt vaatimukset ja läpäissyt tiukat tietoturvatestit.
 
 **classification (luokitus)** Kutsutaan myös tietojen luokitukseksi. Power BI -järjestelmänvalvojat voivat ottaa tämän asetuksen käyttöön nostaakseen tietoisuutta koontinäytön edellyttämästä suojaustasosta. Organisaatio voi mukauttaa luokitustyyppejä.
 
 **connect live (yhdistä reaaliajassa)** Tapa muodostaa yhteys SQL Server Analysis Services -tietomalleihin. Kutsutaan myös live-yhteydeksi.
 
-**content (sisältö)**
+**säilö** Siirtymispalkin alueita kutsutaan *säilöiksi*. Siirtymispalkissa on seuraavat säilöt: Suosikit, Viimeksi käytetyt, Sovellukset, Jaettu kanssani ja Aloitus. 
 
+**sisältö** Power BI -palvelun sisältö koostuu yleensä raporttinäkymistä, raporteista ja sovelluksista. Se voi sisältää myös työkirjoja ja tietojoukkoja.
 
 **content list (sisältöluettelo)** Sovelluksen sisällön indeksi.
 
@@ -109,7 +114,8 @@ Tämä sanasto on yhteisön luoma.  Etkö näe etsimääsi sanaa? Pyydä meitä 
 
 **Editing View (muokkausnäkymä)** Tila, jossa raportin *suunnittelijat* voivat tutkia, suunnitella, luoda ja jakaa raportin.
 
-**ellipsis (kolme pistettä)** ...
+**ellipsis (kolme pistettä)** ...    
+Kolmen pisteen valinta avaa lisää valikkovaihtoehtoja.
 
 **embed code (upotuskoodi)** Yleinen vakio Internetissä. Power BI:ssä asiakas voi luoda upotuskoodin ja kopioida sen sijoittaakseen sisältöä, kuten raportin visualisoinnin, verkkosivustoon tai blogiin.
 
@@ -158,7 +164,8 @@ Power BI -ympäristö (vuokraaja) -termiä voidaan käyttää dokumentaatiossa, 
 
 ## <a name="l"></a>L
 
-**left navigation (left nav) (vasen siirtymisruutu)** Power BI -palvelun vasemmassa reunassa olevat ohjausobjektit.
+**vasen siirtymisruutu (vasen siirtymisruutu)** Tämä on korvattu **siirtymispalkilla**, mutta se saattaa vielä esiintyä joissakin ohjeissa.    
+Power BI -palvelun vasemmassa reunassa olevat ohjausobjektit.
 
 Vasemmanpuoleinen tai vasen siirtymisruutu.
 
@@ -176,7 +183,12 @@ Vasemmanpuoleinen tai vasen siirtymisruutu.
 
 **native (alkuperäinen)** Tulee tuotteen mukana. Esimerkiksi Power BI sisältää joukon *alkuperäisiä* visualisointityyppejä. Voit myös tuoda muita tyyppejä, kuten mukautettuja visualisointeja.
 
-**navigation pane (siirtymisruutu)** Katso **Vasen siirtymisruutu**
+**siirtymispalkki** tai **siirtymäpalkki** Power BI -palvelun vasemmassa reunassa olevat ohjausobjektit.
+
+Esimerkki: siirtymispalkki
+Seuraavat maininnat ja ahtaat tilat: siirtymispalkki
+
+**siirtymisruutu** Katso **siirtymispalkki**
 
 **notification (ilmoitus)** Viestit, joita Power BI -ilmoituskeskus lähettää ja joita siihen lähetetään.  
 

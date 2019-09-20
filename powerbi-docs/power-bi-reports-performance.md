@@ -1,8 +1,8 @@
 ---
 title: Power BI:n suorituskykyä parantavat parhaat käytännöt
 description: Tässä artikkelissa annetaan ohjeita nopeiden ja luotettavien raporttien luomiseen Power BI:ssä
-author: MarkMcGeeAtAquent
-ms.author: kfile
+author: Bhavik-MSFT
+ms.author: bhmerc
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
@@ -10,16 +10,20 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 07/30/2018
 LocalizationGroup: Reports
-ms.openlocfilehash: bddd653b5ac8b49a38a69ae79baf2f96824444ed
-ms.sourcegitcommit: 805d52e57a935ac4ce9413d4bc5b31423d33c5b1
+ms.openlocfilehash: 736c1ee1b1998ec7f991167352313a05061b3f3c
+ms.sourcegitcommit: 226b47f64e6749061cd54bf8d4436f7deaed7691
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68665331"
+ms.lasthandoff: 09/09/2019
+ms.locfileid: "70841493"
 ---
 # <a name="power-bi-performance-best-practices"></a>Power BI:n suorituskykyä parantavat parhaat käytännöt
 
 Tässä artikkelissa annetaan ohjeita nopeiden ja luotettavien raporttien luomiseen Power BI:ssä.  
+
+## <a name="choose-an-appropriate-storage-mode-import-directquery"></a>Valitse sopiva tallennustilan tila: Tuo, DirectQuery
+
+Useimmissa tapauksissa Tuo-tila on paras vaihtoehto, sillä se tarjoaa suurimman nopeuden hyödyntämällä paikallisessa välimuistissa olevia muistinsisäisiä tietoja, jotka on pakattu sarakemuotoon. Tuo-tila tukee myös täydellisiä DAX-toimintoja. Harkitse DirectQueryn (ja yhdistelmämallien) käyttöä, kun lähdetietojen määrä on liian suuri Power BI ‑kapasiteetille. DirectQuerysta on hyötyä myös silloin, kun sinun on noudettava uusimmat tiedot lähteestä aina raportin lataamisen yhteydessä. Jos sinulla ei ole tällaista tarvetta ja jos käyttäjien tarvitsevat tietoja, joita päivitetään muutaman kerran päivässä tai harvemmin (esim. yrityksen tietovarastosta), Tuo-tilan käyttö on erittäin suositeltavaa. DirectQuery-tilassa käyttäjät saattavat yrittää päivittää raportin tietämättään, että he noutavat lähteestä täsmälleen samat tiedot.      
 
 ## <a name="use-filters-to-limit-report-visuals-to-display-only-whats-needed"></a>Vähennä raportin visualisointeja suodattimilla niin, että siinä näkyvät vain tarpeelliset 
 
@@ -57,7 +61,7 @@ Ottaessasi käyttöön DirectQueryyn ja Live-yhteyteen pohjautuvia Power BI -rap
 ## <a name="directquery-best-practices"></a>DirectQueryn parhaat käytännöt
 
 Seuraavassa osiossa kuvataan yleisiä parhaita käytäntöjä yhdistämiseen DirectQueryn kautta.
-  
+
 ### <a name="db-design-guidance"></a>Ohjeita tietokannan suunnitteluun
 
 - Työnnä laskettuja sarakkeita ja mittareita lähteeseen, mikäli mahdollista. Mitä lähempänä ne ovat lähdettä, sitä suurempi todennäköisyys suorituskyvyn parantumiseen.

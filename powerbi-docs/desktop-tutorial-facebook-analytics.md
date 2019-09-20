@@ -7,19 +7,23 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: tutorial
-ms.date: 05/08/2019
+ms.date: 09/06/2019
 ms.author: davidi
 LocalizationGroup: Learn more
-ms.openlocfilehash: f945c46d96bea4e0326c99f7fcb881f495ba560f
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 73f5d629806826eed0da51f5b7158d884d1c8725
+ms.sourcegitcommit: 226b47f64e6749061cd54bf8d4436f7deaed7691
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65513685"
+ms.lasthandoff: 09/09/2019
+ms.locfileid: "70841407"
 ---
 # <a name="tutorial-facebook-analytics-using-power-bi-desktop"></a>Opetusohjelma: Facebook-analytiikka Power BI Desktopin avulla
 
 Tässä opetusohjelmassa opit tuomaan tietoja Facebookista ja käyttämään niitä Power BI Desktopissa. Muodostat yhteyden Power BI:n Facebook-sivulle, tuot sieltä tietoja, teet muunnoksia tuotuihin tietoihin ja käytät tietoja raportin visualisoinneissa.
+
+> [!WARNING]
+> Facebook-sovelluksen käyttöoikeuksienrajoitusten vuoksi tässä artikkelissa kuvatut kytkentätoiminnot eivät tällä hetkellä toimi oikein. Teemme yhteistyötä Facebookin kanssa, jotta voimme palauttaa tämän toiminnon käyttöön mahdollisimman pian.
+
 
 ## <a name="connect-to-a-facebook-page"></a>Yhteyden muodostaminen Facebook-sivulle
 

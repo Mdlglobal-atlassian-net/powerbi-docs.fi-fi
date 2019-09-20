@@ -5,19 +5,19 @@ services: powerbi
 author: maggiesMSFT
 ms.service: powerbi
 ms.topic: include
-ms.date: 04/04/2019
+ms.date: 09/10/2019
 ms.author: maggies
 ms.custom: include file
-ms.openlocfilehash: bbd1f47b2d798e662f84f009b3260a11d39cb23d
-ms.sourcegitcommit: e67bacbfc5638ee97e3d2e0e7f5bd2d9aac78f9c
+ms.openlocfilehash: 1e64237490e45cfcf9a9a0102f3e03ecab138ce2
+ms.sourcegitcommit: db4fc5da8e65e0a3dc35582d7142a64ad3405de7
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67534623"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70903861"
 ---
-1. Aloita luomalla työtila. Valitse **Työtilat** > **Luo sovelluksen työtila**. 
+1. Aloita luomalla työtila. Valitse **Työtilat** > **Luo työtila**. 
    
-     ![Luo sovellustyötila](media/powerbi-service-create-app-workspace/power-bi-create-app-workspace.png)
+     ![Työtilan luominen](media/powerbi-service-create-app-workspace/power-bi-workspace-create.png)
    
     Tänne voit sijoittaa sisältöä, jota sinä ja työtoverisi voitte työstää yhdessä.
 
@@ -41,7 +41,7 @@ ms.locfileid: "67534623"
    
      ![Määritä muokkaus tai vain tarkastelu](media/powerbi-service-create-app-workspace/power-bi-apps-create-workspace-members-edit.png)
    
-     Lisää ihmisiä sovelluksen työtilaan vain, jotta he voisivat muokata sisältöä. Jos he vain tarkastelisivat sisältöä, älä lisää heitä työtilaan. Voit sisällyttää heidät sitten, kun julkaiset sovelluksen.
+     Lisää ihmisiä työtilaan vain, jotta he voisivat muokata sisältöä. Jos he vain tarkastelisivat sisältöä, älä lisää heitä työtilaan. Voit sisällyttää heidät sitten, kun julkaiset sovelluksen.
 
 5. Lisää niiden ihmisten sähköpostiosoitteet, joille haluat antaa työtilan käyttöoikeudet, ja valitse **Lisää**. Et voi lisätä ryhmien aliaksia, vain yksittäisiä ihmisiä.
 
@@ -55,5 +55,5 @@ ms.locfileid: "67534623"
 
 Power BI luo työtilan ja avaa sen. Työtila ilmestyy luetteloon työtiloista, joiden jäsen olet. Järjestelmänvalvojana voit valita kolme pistettä (...) ja palata takaisin tekemään työtilaan muutoksia, lisäämään uusia jäseniä ja muuttamaan jäsenten käyttöoikeuksia.
 
-![Muokkaa työtilaa](media/powerbi-service-create-app-workspace/power-bi-apps-edit-workspace-ellipsis.png)
+![Muokkaa työtilaa](media/powerbi-service-create-app-workspace/power-bi-workspace-old-settings.png)
 

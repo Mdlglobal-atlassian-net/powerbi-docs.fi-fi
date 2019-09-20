@@ -9,12 +9,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 04/08/2019
 ms.author: mshenhav
-ms.openlocfilehash: 5b0921689a923b5c787a5e4208fe35a863372878
-ms.sourcegitcommit: 9eae2a52af6926cda4d6b03de4d50d7fa8b2f216
+ms.openlocfilehash: 5697fd79551d238f095696dcc940afb8ea330d11
+ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/26/2019
-ms.locfileid: "70030177"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "70841381"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Power BI -mobiilisovellusten uudet ominaisuudet
 Lisätietoja aiheeseen liittyvistä uusista ominaisuuksista:
@@ -25,7 +25,15 @@ Lisätietoja aiheeseen liittyvistä uusista ominaisuuksista:
 
 ## <a name="august-2019"></a>Elokuu 2019
 
-### <a name="secured-access-with-azure-active-directory-ad-application-proxy"></a>Azure Active Directory (AD) -sovellusvälityspalvelimen suojattu käyttö
+### <a name="introducting-power-bi-mobile-new-look-preview-ios-and-android"></a>Power BI -mobiilisovelluksen uusi ulkoasu (esikatselu) (iOS ja Android)
+
+Olemme päivittäneet sovelluksen ulkoasua, kehittäneet uusia ominaisuuksia, lisänneet usein käytettyä sisältöä tarjoavan aloitussivun sekä uusia siirtymispalkkeja, joiden avulla voit helposti siirtyä paikasta toiseen sovelluksen kautta. Uudet ja päivitetyt ominaisuudet mahdollistavat tarvitsemasi sisällön nopean löytämisen silloin kun niitä eniten tarvitset.
+Koska uusi ulkoasu on esikatselussa, sinun on otettava se erikseen käyttöön.
+Lue lisää [Power BI -mobiilisovelluksen uudesta ulkoasusta](https://powerbi.microsoft.com/blog/introducing-power-bi-mobile-apps-new-look-preview/).
+
+![Power BI -mobiilisovelluksen uusi ulkoasu](./media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-new-look2.gif)
+
+### <a name="secured-access-with-azure-active-directory-ad-application-proxy-ios-and-android"></a>Azure Active Directory (AD) -sovellusvälityspalvelimen suojattu käyttö (iOS ja Android)
 
 Olemme yhteistyössä Azure Active Directory -tiimin kanssa integroineet Power BI -mobiilisovelluksia Azure Active Directory (AAD) -sovellusvälityspalvelimeen. Tämän ansiosta voit muodostaa Power BI -mobiilisovelluksesta yhteyden yrityksen sisältä isännöitävään raporttipalvelimeen ilman monimutkaisia paikallisia määrityksiä. Lue lisää artikkelista [Power BI -mobiilisovellusten ja Azure AD -sovellusvälityspalvelimen integrointi](https://powerbi.microsoft.com/blog/access-on-prem-report-server-from-your-power-bi-mobile-app-with-azure-active-directory-application-proxy/). Lue, [miten Azure AD -sovellusvälityspalvelin ja Power BI määritetään](https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/application-proxy-integrate-with-power-bi).
 
@@ -36,7 +44,7 @@ Olemme yhteistyössä Azure Active Directory -tiimin kanssa integroineet Power B
 Raporttisivun työkaluvihjeitä tuetaan, kun raporttia tarkastellaan mobiilisovelluksen avulla. Pidä painettuna visualisointia, johon on liitetty raportin työkaluvihje, ja vihje tulee näkyviin.  
 
 ![Raportin pohjan työkaluvihje](./media/mobile-whats-new-in-the-mobile-apps/report-canvas-tooltip.png)
-
+ 
 > [!NOTE]
 > Raportin työkaluvihjeitä tuetaan laitteissa, joiden kuvapistekoko on vähintään 640 ja näyttöikkuna 320. Pienemmissä laitteissa käytetään oletusarvoisia työkaluvihjeitä.
 
