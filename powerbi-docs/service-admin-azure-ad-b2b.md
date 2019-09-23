@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 04/25/2019
+ms.date: 09/09/2019
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: cf384d8c346ddc3292699189bfe59f124e283f32
-ms.sourcegitcommit: 3e72c6d564d930304886d51cdf12b8fc166aa33c
+ms.openlocfilehash: 8b7327a7b32aacd222efc422263187f29285bd73
+ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "67596488"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71075763"
 ---
 # <a name="distribute-power-bi-content-to-external-guest-users-with-azure-ad-b2b"></a>Power BI -sisällön jakaminen ulkoisille vieraskäyttäjille Azure AD B2B:n avulla
 
@@ -103,7 +103,7 @@ Kun käytät [Salli ulkoisten vieraskäyttäjien muokata ja hallita sisältöä 
  
 Auta näitä käyttäjiä kirjautumaan Power BI:hin antamalla heille vuokraajan URL-osoite. Etsi vuokraajan URL-osoite seuraavien vaiheiden mukaisesti.
 
-1. Valitse Power BI -palvelun yläreunan valikosta ohje (**?**) ja sitten **Tietoja Power BI:stä**.
+1. Valitse Power BI -palvelun yläreunan valikosta ohje ( **?** ) ja sitten **Tietoja Power BI:stä**.
 
 2. Katso arvo kohdan **Vuokraajan URL-osoite** vierestä. Arvo on vuokraajan URL-osoite, jonka voit jakaa vieraskäyttäjille.
 
