@@ -3,20 +3,19 @@ title: Power BI -raporttinäkymän tarkasteleminen
 description: Raporttinäkymät ovat Power BI -palvelun keskeinen ominaisuus. Lue lisätietoja raporttinäkymän avaamisesta ja tarkastelemisesta.
 author: mihart
 manager: kvivek
-ms.custom: seodec18
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 05/12/2019
+ms.date: 09/18/2019
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: cd0b680265d526ecf7adbf4db8c54b77535eadf8
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: b8d604b8872bae14bc2ffeeb16b56b1b3a98e056
+ms.sourcegitcommit: 200291eac5769549ba5c47ef3951e2f3d094426e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "65608449"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71141366"
 ---
 # <a name="view-a-dashboard"></a>Tarkastele koontinäyttöä
 Power BI:n *kuluttajat* käyttävät paljon aikaa koontinäyttöjen tarkasteluun. Koontinäytöt korostavat tiettyjä tietoja pohjana olevista raporteista ja tietojoukoista. Power BI:n kuluttajat käyttävät näitä tietoja esimerkiksi seurantaan, valvontaan, kysymyksiin vastaamiseen ja testaamiseen, jotta he voivat tehdä tietopohjaisia liiketoimintapäätöksiä.
@@ -39,7 +38,7 @@ Koontinäytön jakamiseen ja jaetun koontinäytön tarkasteluun vaaditaan Power 
 
 Voit etsiä koontinäyttöjä kaikista vasemman siirtymispalkin säilöistä. 
 
-![koontinäytön kuvake](media/end-user-dashboard-open/opendash.gif)
+![koontinäytön kuvake](media/end-user-dashboard-open/power-bi-open-dashboards.gif)
 
 - **Aloitus** 
 - **Suosikit** – jos olet [lisännyt koontinäytön suosikkeihin](end-user-favorite.md)

@@ -1,6 +1,6 @@
 ---
 title: Tietojen vieminen Power BI -visualisoinnista
-description: Tietojen vieminen raportin visualisoinnin ja koontinäytön visualisoinnista ja tarkasteleminen Excelissä.
+description: Vie tiedot raportin visualisoinnista sekä raporttinäkymän visualisoinnista ja avaa ne Excelissä.
 author: mihart
 manager: kvivek
 ms.reviewer: ''
@@ -8,73 +8,76 @@ featuredvideoid: jtlLGRKBvXY
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 4/9/2019
+ms.date: 09/11/2019
 ms.author: mihart
 LocalizationGroup: Consumers
-ms.openlocfilehash: d4384db8e05a69b138e76377e7c7b845867fa881
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 3ab3b7a96fb629b303263b1ccf5c2f31603300b4
+ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61063726"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71073143"
 ---
-# <a name="export-data-from-visual"></a>Tietojen vieminen visualisoinnin
-Jos haluat nähdä tiedot visualisoinnin luomiseen käytetään [tiedot näkyvät Power BI](end-user-show-data.md) tai viedä tiedot Exceliin. Voit viedä tietoja edellyttää tyyppi tai käyttöoikeutta ja sisällön muokkausoikeudet. Jos et voi viedä, ota yhteyttä Power BI-järjestelmänvalvojaan. 
+# <a name="export-data-from-a-visual"></a>Tietojen vieminen visualisoinnista
+Jos haluat nähdä visualisoinnin luomiseen käytetyt tiedot, [voit näyttää kyseiset tiedot Power BI:ssä](end-user-show-data.md) tai viedä ne tiedot Exceliin. Tietojen vienti edellyttää sopivaa käyttöoikeutta sekä sisällön muokkausoikeuksia. Jos vieminen ei onnistu, ota yhteys Power BI -järjestelmänvalvojaasi. 
 
-## <a name="from-a-visual-on-a-power-bi-dashboard"></a>Power BI-koontinäytön visualisoinnista
+## <a name="from-a-visual-on-a-power-bi-dashboard"></a>Power BI -raporttinäkymän visualisoinnista
 
-1. Aloita Power BI-koontinäytön. Tätä käytetään koontinäytön ***markkinointi- ja mallin*** sovelluksen. Voit myös [ladata sovelluksen Appsource.comiin](https://appsource.microsoft.com/en-us/product/power-bi/microsoft-retail-analysis-sample.salesandmarketingsample-preview?flightCodes=e2b06c7a-a438-4d99-9eb6-4324ce87f282).
+1. Aloita Power BI -raporttinäkymästä. Käytämme ***Markkinointi ja myynti*** -mallisovelluksen raporttinäkymää. Voit [ladata kyseisen sovelluksen osoitteesta AppSource.com](https://appsource.microsoft.com/en-us/product/power-bi/microsoft-retail-analysis-sample.salesandmarketingsample-preview?flightCodes=e2b06c7a-a438-4d99-9eb6-4324ce87f282).
 
-    ![](media/end-user-export/power-bi-dashboard.png)
+    ![Sovelluksen raporttinäkymä](media/end-user-export/power-bi-dashboards.png)
 
-2. Osoittamalla visualisointia näyttämään kolme pistettä (...) ja valitse toiminto-valikko.
+2. Kun viet osoittimen visualisoinnin päälle, näet kolme pistettä (...) sekä napsauttamalla avattavan toimintovalikon.
 
-    ![](media/end-user-export/power-bi-dashboard-export-visual.png)
+    ![Valikko, joka avautuu valitessa kolme pistettä](media/end-user-export/power-bi-action-menu.png)
 
-3. Valitse **vieminen Exceliin**.
+3. Valitse **Vie Exceliin**.
 
-4. Seuraavaksi tapahtuva asia riippuu, mitä selainta käytät. Sinua saatetaan kehottaa tallentamaan tiedoston tai voit viety tiedosto selaimen alareunassa linkki. 
+4. Selaimestasi riippuu, mitä seuraavaksi tapahtuu. Sinua saatetaan kehottaa tallentamaan tiedosto tai selaimen alareunassa voidaan näyttää linkki vietyyn tiedostoon. 
 
-    ![](media/end-user-export/power-bi-export-browser.png)
+    ![Chrome-selain, jossa näkyy linkki vietyyn tiedostoon](media/end-user-export/power-bi-dashboard-exports.png)
 
 5. Avaa tiedosto Excelissä.  
 
-    ![](media/end-user-export/power-bi-excel.png)
+    ![Yksiköiden kokonaismäärän varianssi Excelissä](media/end-user-export/power-bi-excel.png)
 
 
 ## <a name="from-a-visual-in-a-report"></a>Raportin visualisoinnista
-Voit viedä tietoja raportin visualisoinnista .csv-tai .xlsx (Excel) muoto. 
+Voit viedä tietoja raportin visualisoinnista .csv- ja .xlsx (Excel) -muodossa. 
 
-1. Valitse koontinäytön ruutua pohjana olevan raportin avaamiseksi.  Tässä esimerkissä valitsemme saman visualisoinnin kuin edellä, *yhteensä yksiköt vuoden alusta varianssiprosenteilla*. 
+1. Valitse jokin raporttinäkymän ruutu, jolloin sen pohjana oleva raportti avautuu.  Tässä esimerkissä valitaan sama visualisointi kuin yllä (*Yksiköiden kokonaismäärän varianssiprosentti vuoden alusta)* . 
 
-    ![](media/end-user-export/power-bi-export-report.png)
+    ![Korostettu raporttinäkymän ruutu](media/end-user-export/power-bi-export-reports.png)
 
-    Koska tämä ruutu on luotu *myynti- ja Markkinointimalli* raportin, joka on raportti, joka avautuu. Ja näyttöön avautuu sivu, joka sisältää valitun ruudun visualisointi. 
+    Koska tämä ruutu luotiin *Myynti ja markkinointi* -malliraportista, kyseinen raportti avautuu. Raportti avautuu sivulle, joka sisältää valitun ruudun visualisoinnin. 
 
-2. Valitse ruutu raportissa. Huomaa **suodattimet** ruudun oikealla puolella. Tämä visualisointi on suodatinta. Lisätietoja suodattimet, katso [käyttää suodattimia raportin](end-user-report-filter.md).
+2. Valitse ruutu raportista. Laajenna oikealla oleva **Suodattimet**-ruutu. Tässä visualisoinnissa on käytetty suodattimia. Lisätietoja suodattimista on artikkelissa [Suodattimien käyttäminen raportissa](end-user-report-filter.md).
 
-    ![](media/end-user-export/power-bi-export-filters.png)
+    ![Suodattimet-ruutu valittuna](media/end-user-export/power-bi-export-filter.png)
 
 
 3. Valitse visualisoinnin oikean yläkulman kolme pistettä. Valitse **Vie tiedot**.
 
-    ![](media/end-user-export/power-bi-export-report2.png)
+    ![Avattavasta valikosta valittujen tietojen vieminen](media/end-user-export/power-bi-export-report.png)
 
-4. Näet viedä Summarized tietoja tai pohjana olevan eri. Jos käytät *myynti- ja markkinointimalli* sovelluksen **pohjana olevat tiedot** poistetaan käytöstä. Mutta voit kohdata raportteja, joissa molemmat vaihtoehdot ovat käytössä. Tässä on selitetty ero.
+4. Voit viedä Yhteenvedetyt tiedot tai Pohjana olevat tiedot. Jos käytät *Myynti ja markkinointi* -mallisovellusta, **Pohjana olevat tiedot** -vaihtoehto ei ole käytössä. Saatat kuitenkin kohdata raportteja, joissa molemmat vaihtoehdot ovat käytettävissä. Niiden erot ovat seuraavat.
 
-    **Yhteenvedetyt tiedot**: Valitse tämä vaihtoehto, jos haluat viedä tiedot-kohdassa visualisoinnissa.  Tämäntyyppistä vienti näyttää vain visualisoinnin luomiseen käytettyjen tietojen. Jos visualisointi on suodattimia, myös voit viedä tiedot suodatetaan. Esimerkiksi tämän visualisoinnin, vienti sisältää vain 2014 tiedot ja keskialueella, ja vain tiedot neljä valmistajat: Vanarsdelin, Natura, Aliqui ja Prirum.
+    **Yhteenvedetyt tiedot**: valitse tämä vaihtoehto, jos haluat viedä tietoja siitä, mitä näet visualisoinnissa.  Tällainen vientityyppi näyttää vain visualisoinnin luomiseen käytetyt tiedot. Jos visualisoinnissa on käytössä suodattimia, myös vietävät tiedot suodatetaan. Esimerkiksi tässä visualisoinnissa vienti sisältää vain sellaisia tietoja, jotka koskevat vuotta 2014, Keski-aluetta ja neljää valmistajaa: VanArsdel, Natura, Aliqui ja Pirum.
   
 
-    **Pohjana olevat tiedot**: Valitse tämä vaihtoehto, jos haluat viedä tiedot näkyvät tiedot visualisoinnin **sekä** pohjana olevan tietojoukon muita tietoja.  Tämä saattaa sisältää tietoja, jotka on sisälsi tietojoukon, mutta sitä ei käytetä visualisoinnissa. 
+    **Pohjana olevat tiedot**: Valitse tämä vaihtoehto, jos haluat viedä visualisoinnissa näytetyt tiedot **sekä** lisätietoja pohjana olevasta tietojoukosta.  Ne voivat sisältää tietoja, jotka sisältyvät tietojoukkoon, mutta joita ei käytetä visualisoinnissa. 
 
-    ![](media/end-user-export/power-bi-export-report3.png)
+    ![Valikko, josta valitset pohjana olevat tiedot tai yhteenvedetyt tiedot](media/end-user-export/power-bi-export-option.png)
 
-5. Seuraavaksi tapahtuva asia riippuu, mitä selainta käytät. Sinua saatetaan kehottaa tallentamaan tiedoston tai voit viety tiedosto selaimen alareunassa linkki. 
+5. Selaimestasi riippuu, mitä seuraavaksi tapahtuu. Sinua saatetaan kehottaa tallentamaan tiedosto tai selaimen alareunassa voidaan näyttää linkki vietyyn tiedostoon. 
 
-    ![](media/end-user-export/power-bi-export-edge.png)
+    ![Viety tiedosto näytettynä Microsoft Edge -selaimessa](media/end-user-export/power-bi-export-edge-browser.png)
 
 
-7. Avaa tiedosto Excelissä. Vertaa viedä Microsoft samaan visualisointiin koontinäytössä vietyjä tietoja tietojen määrää. Ero on, että tämän viennin sisältää **pohjana olevat tiedot**. 
+6. Avaa tiedosto Excelissä. Vertaa samasta visualisoinnista vietyjen tietoihin määrää raporttinäkymän samasta visualisoinnista vietyihin tietoihin. Ero on, että tämä vienti sisältää **pohjana olevia tietoja**. 
 
-    ![](media/end-user-export/power-bi-underlying.png)
+    ![Excel-malli](media/end-user-export/power-bi-underlying.png)
 
+## <a name="next-steps"></a>Seuraavat vaiheet
+
+[Visualisoinnin lähdetietojen näyttäminen](end-user-show-data.md)

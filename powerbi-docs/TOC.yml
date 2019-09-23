@@ -903,6 +903,8 @@
       items:
         - name: Osta Power BI Premium
           href: service-admin-premium-purchase.md
+        - name: Kapasiteettien määrittäminen ja hallinta
+          href: service-admin-premium-manage.md
         - name: Kuormitusten määrittäminen
           href: service-admin-premium-workloads.md
         - name: Kapasiteettien valvonta sovelluksen avulla

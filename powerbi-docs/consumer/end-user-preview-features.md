@@ -5,19 +5,18 @@ author: mihart
 manager: kvivek
 ms.reviewer: ''
 featuredvideoid: ''
-ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 05/13/2019
+ms.date: 09/18/2019
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: ea81f7c264e4329ae29bb71e0fa8b038604504a1
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: b2d658daade3ab1aa2a1c09dc33c0e7d48636910
+ms.sourcegitcommit: 200291eac5769549ba5c47ef3951e2f3d094426e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "65608398"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71141496"
 ---
 # <a name="opt-in-for-power-bi-service-preview-features"></a>Power BI -palvelun esikatselutoimintojen käyttäminen
 ## <a name="what-are-preview-features"></a>Mitä ovat *esikatseluominaisuudet*?
@@ -30,7 +29,7 @@ Kun teemme parannuksia Power B -palveluun, julkaisemme joitakin uusia toimintoja
    ![Asetukset-valikko](./media/end-user-preview-features/power-bi-settings.png).
 2. Valitse **Yleiset** välilehti. Jos esikatseluominaisuudet ovat olemassa, näet joko **Esikatseluominaisuudet**-valinnan tai esikatseluominaisuudet vasemmanpuoleisessa luettelossa.  Tässä esimerkissä on käytössä ArcGIS Maps -esikatseluettelo. 
    
-   ![Yleinen-välilehti](./media/end-user-preview-features/power-bi-preview-arcgis.png)
+   ![Yleinen-välilehti](./media/end-user-preview-features/power-bi-preview-esri.png)
 3. Valitse **Päällä**-valintanappi tai merkitse valintaruutu, jotta voit kokeilla uutta. Valitse **Käytä**.
 4. Poista esikatselutoiminnot käytöstä edellä kuvattujen vaiheiden 1-3 mukaan ja valitse vaiheessa 3 **Pois käytöstä**, tai poista valintamerkki ja valitse **Käytä**.
 
