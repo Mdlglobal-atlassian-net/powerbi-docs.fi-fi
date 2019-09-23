@@ -5,19 +5,18 @@ author: mihart
 manager: kvivek
 ms.reviewer: ''
 featuredvideoid: ''
-ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 05/13/2019
+ms.date: 09/18/2019
 ms.author: mihart
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 02aed3d69ee5d6ce344138a57853bd0b2a06036b
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: 4e211677026d66b89631063cf07e38ce1e46ee10
+ms.sourcegitcommit: 7a0ce2eec5bc7ac8ef94fa94434ee12a9a07705b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "65608568"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71100183"
 ---
 # <a name="printing-from-the-power-bi-service"></a>Power BI -palvelusta tulostaminen
 Power BI -palvelusta voit tulostaa koko koontinäytön, koontinäytön yksittäisen ruudun, raporttisivun tai raportin visualisoinnin. Raportteja voi tulostaa vain yhden sivun kerrallaan – et voi tulostaa koko raportin kerralla.
@@ -34,7 +33,7 @@ Power BI -palvelusta voit tulostaa koko koontinäytön, koontinäytön yksittäi
    
 
    
-    ![Tulostuksen valintaikkuna](./media/end-user-print/pbi_print_dash_new2.png)
+    ![Tulostuksen valintaikkuna](./media/end-user-print/power-bi-print-dash.png)
 
 ## <a name="print-a-dashboard-tile"></a>Koontinäytön yksittäisen ruudun tulostaminen
 1. Avaa koontinäyttö [koko näytön tilaan](end-user-focus.md) valitsemalla yläreunan valikkopalkista koko näytön kuvake ![koko näytön kuvake](./media/end-user-print/power-bi-full-screen-icon.png).
