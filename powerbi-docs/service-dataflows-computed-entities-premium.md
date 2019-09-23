@@ -12,7 +12,7 @@ ms.author: davidi
 LocalizationGroup: Data from files
 ms.openlocfilehash: ccd8569650bd4f3da1a05c0999ad510029e5ab49
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: fi-FI
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "61137906"
@@ -85,8 +85,8 @@ Tässä artikkelissa käsiteltiin laskettuja entiteettejä ja tietovoita, jotka 
 
 * [Omatoiminen tietojen valmistelu tietovoiden avulla](service-dataflows-overview.md)
 * [Tietovoiden luominen ja käyttäminen Power BI:ssä](service-dataflows-create-use.md)
-* [Dataflows käyttö paikallisiin tietolähteisiin](service-dataflows-on-premises-gateways.md)
-* [Power BI dataflows Kehittäjien resurssit](service-dataflows-developer-resources.md)
+* [Tietovoiden käyttö paikallisiin tietolähteisiin](service-dataflows-on-premises-gateways.md)
+* [Kehittäjien resurssit Power BI -tietovoille](service-dataflows-developer-resources.md)
 * [Määritä työtilan tietovuoasetukset (esikatselu)](service-dataflows-configure-workspace-storage-settings.md)
 * [Lisää CDM-kansio Power BI:hin tietovuona (esikatselu)](service-dataflows-add-cdm-folder.md)
 * [Yhdistä Azure Data Lake Storage Gen2 tietovuotallennusta varten (esikatselu)](service-dataflows-connect-azure-data-lake-storage-gen2.md)

@@ -10,107 +10,107 @@ ms.topic: conceptual
 ms.date: 04/24/2019
 ms.author: mshenhav
 ms.openlocfilehash: 4e09b10e38b018f8e5572343b343a243ace3bf81
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
+ms.lasthandoff: 09/16/2019
 ms.locfileid: "64906525"
 ---
 # <a name="create-a-link-to-a-specific-location-in-the-power-bi-mobile-apps"></a>Linkin luominen tiettyyn sijaintiin Power BI ‑mobiilisovelluksissa
-Linkkien avulla voit käyttää suoraan Power BI-osat: Raportin, koontinäytön ja ruudun.
+Linkkien avulla voit käyttää suoraan tiettyjä kohteita Power BI:ssä: raporttia, koontinäyttöä ja ruutua.
 
-On pääasiassa kahta linkkien käyttäminen Power BI Mobile: 
+Power BI-mobiilisovelluksen linkkien käyttämiseen on pääasiassa kaksi skenaariota: 
 
-* Avaa Power BI- **sovelluksen ulkopuolella**, ja askelvälit tekevät tietty sisältö (raportin tai koontinäytön tai sovelluksen). Tämä on tavallisesti integrointiskenaario, kun haluat avata Power BI Mobile muiden sovelluksen. 
-* Jos haluat **siirtyä** Power BI sisällä. Tämä on yleensä, kun haluat luoda mukautettu siirtyminen Power BI.
+* Voit avata Power BI:n **sovelluksen ulkopuolelta**, ja sinut ohjataan tiettyyn sisältöön (raporttiin, koontinäyttöön tai sovellukseen). Tämä on se integraatioskenaario, jota tavallisesti sovelletaan, kun haluat avata Power BI -mobiilisovelluksen toisesta sovelluksesta. 
+* **Siirtyminen** Power BI:n sisällä. Tätä käytetään yleensä silloin, kun haluat luoda mukautetun siirtymisen Power BI:n sisällä.
 
 
-## <a name="use-links-from-outside-of-power-bi"></a>Käytä ulkopuolella Power BI-linkit
-Kun käytät linkin Power BI-sovelluksen ulkopuolella, haluat varmistaa, että se avautuu sovelluksen, ja jos sovellus ei ole asennettu laitteen ja tarjota käyttäjän asentaa sitä. Olemme luoneet erityiset muotoa voidaan tukea, jota. Tätä muotoa varmistetaan, että laitteen avulla avata linkin sovellukseen, että jos sovellus ei ole asennettu laitteeseen, se tarjoaa käyttäjän Siirry kauppaan, jotta saat sen.
+## <a name="use-links-from-outside-of-power-bi"></a>Power BI:n ulkopuolisten linkkien käyttäminen
+Kun käytät Power BI:n ulkopuolista linkkiä, haluat varmistaa, että se voidaan avata sovelluksen ulkopuolelta, ja jos sovellusta ei ole laitteella asennettuna, tarjoudut asentamaan sen käyttäjälle. Olemme luoneet erityisen linkkimuodon juuri tämän tukemiseksi. Tämä linkkimuoto varmistaa, että laite käyttää sovellusta linkin avaamiseen, ja jos sovellusta ei ole asennettu laitteelle, se tarjoaa käyttäjälle mahdollisuuden hakea se myymälästä.
 
-Linkki tulee alkaa merkkijonolla seuraavat  
+Linkin tulee alkaa seuraavasti  
 ```html
 https://app.powerbi.com/Redirect?[**QUERYPARAMS**]
 ```
 
 > [!IMPORTANT]
-> Jos sisällön isännöidään erityinen datacenter, kuten Goverment, kiina ja niin edelleen. Linkki tulee alkaa merkkijonolla Power BI-osoitteen, kuten `app.powerbigov.us` tai `app.powerbi.cn`.   
+> Jos sisältöäsi isännöi erityinen tietokeskus, kuten valtiovalta, Kiina ym. Linkin pitäisi alkaa oikealla Power BI -osoitteella, kuten `app.powerbigov.us` tai `app.powerbi.cn`.   
 >
 
 
-**KYSELYN parametrit** ovat:
-* **toiminto** (pakollinen) = OpenApp / OpenDashboard / OpenTile / AvaaRaportti
-* **appId** =, jos haluat avata raportin tai koontinäytön, jotka ovat osa sovellus 
-* **groupObjectId** =, jos haluat avata raportin tai koontinäytön, jotka ovat osa työtilan (mutta ei oma työtila)
-* **dashboardObjectId** = koontinäytön Objektitunnus (Jos toiminto on OpenDashboard tai OpenTile)
-* **reportObjectId** = raportin Objektitunnus (Jos toiminto on AvaaRaportti)
-* **tileObjectId** = ruudun Objektitunnus (Jos toiminto on OpenTile)
-* **reportPage** =, jos haluat avata tietyn raporttiosan (Jos toiminto on AvaaRaportti)
-* **ctId** = kohde Organisaatiotunnus (B2B-skenaario kannalta. Tämä voidaan jättää pois Jos käyttäjän organisaatiolla kuuluu kohteen).
+**KYSELYPARAMETRIT** ovat:
+* **toiminto** (pakollinen) = OpenApp/OpenDashboard/OpenTile/OpenReport
+* **appId** = jos haluat avata raportin tai koontinäytön, joka on osa sovellusta 
+* **groupObjectId** = jos haluat avata raportin tai koontinäytön, joka on osa työtilaa (muttei omaa työtilaa)
+* **dashboardObjectId** = koontinäytön objektin tunnus (jos toiminto on OpenDashboard tai OpenTile)
+* **reportObjectId** = raportin objektin tunnus (jos toiminto on OpenReport)
+* **tileObjectId** = ruudun objektin tunnus (jos toiminto on OpenTile)
+* **reportPage** = jos haluat avata tietyn raporttiosion (jos toiminto on OpenReport)
+* **ctid** = kohteen organisaation tunnus (oleellinen yritystenvälisen yhteistyön skenaariossa. Tämä voidaan jättää pois, jos kohde kuuluu käyttäjän organisaatiolle).
 
 **Esimerkkejä:**
 
-* Avaa Sovelluslinkki 
+* Sovelluslinkin avaaminen 
   ```html
   https://app.powerbi.com/Redirect?action=OpenApp&appId=appidguid&ctid=organizationid
   ```
 
-* Avaa koontinäyttö, joka on osa sovellus 
+* Sovelluksen osana jaetun koontinäytön avaaminen 
   ```html
   https://app.powerbi.com/Redirect?action=OpenDashboard&appId=**appidguid**&dashboardObjectId=**dashboardidguid**&ctid=**organizationid**
   ```
 
-* Avaa raportti, joka on osa työtila
+* Työtilan osana jaetun raportin avaaminen
   ```html
   https://app.powerbi.com/Redirect?Action=OpenReport&reportObjectId=**reportidguid**&groupObjectId=**groupidguid**&reportPage=**ReportSectionName**
   ```
 
-### <a name="how-to-get-the-right-link-format"></a>Oikea muotoa hankkiminen
+### <a name="how-to-get-the-right-link-format"></a>Oikean linkkimuodon saaminen
 
-#### <a name="links-of-apps-and-items-in-app"></a>Sovellukset ja sovelluksen kohteiden linkit
+#### <a name="links-of-apps-and-items-in-app"></a>Sovellusten ja kohteiden linkit sovelluksessa
 
-- **Sovellusten ja -raportteja ja koontinäyttö, jotka ovat osa sovelluksen**, on helpoin tapa saada linkki on sovelluksen työtilasta ja valitse ”Päivitä sovellus”. Tämä avaa ”Julkaise sovellus”-kokemus ja ratkaisutiedosto Access-välilehti **linkit** osiossa. Laajennetaan, että osion ja tulee luettelo sovellus ja kaikki sen sisältö, joka linkittää voidaan käyttää suoraan.
+**Sovelluksissa ja raporteissa sekä koontinäytöissä, jotka ovat osa sovellusta**, helpoin tapa saada linkki on siirtyä sovelluksen työtilaan ja valita ”Päivitä sovellus”. Tämä avaa ”Julkaise sovellus” -käyttökokemuksen, ja Käyttöoikeus-välilehdestä löydät **Linkit**-osion. Kun laajennat osion, näet luettelon sovelluksen kaikista sisältölinkeistä, joista sisältöä pääsee käyttämään suoraan.
 
-![Power BI julkaista sovelluksen linkkejä ](./media/mobile-apps-links/mobile-link-copy-app-links.png)
+![Power BI:n julkaisusovelluslinkit ](./media/mobile-apps-links/mobile-link-copy-app-links.png)
 
-#### <a name="links-of-items-not-in-app"></a>Linkit kohteiden ei sovelluksessa 
+#### <a name="links-of-items-not-in-app"></a>Linkit kohteisiin sovelluksen ulkopuolella 
 
-Raportteja ja koontinäyttöjä, jotka eivät ole osa sovelluksen tarvitset tunnukset poimia kohteen URL-osoite.
+Raporteissa ja koontinäytöissä, jotka eivät ole osa sovellusta, sinun on purettava tunnukset kohteen URL-osoitteesta.
 
-Esimerkiksi löytää 36-merkkisen **koontinäytön** objektitunnus, siirry tiettyyn koontinäyttöön Power BI-palvelussa 
+Löydät esimerkiksi **koontinäytön** 36-merkkisen objektitunnuksen siirtymällä kyseiseen koontinäyttöön Power BI -palvelussa 
 
 ```html
 https://app.powerbi.com/groups/me/dashboards/**dashboard guid comes here**?ctid=**organization id comes here**`
 ```
 
-Etsi 36-merkkisen **raportin** objektitunnus, siirry tietyn raportin Power BI-palvelussa.
-Tässä on esimerkki raportin ”oman työtilan”
+Löydät **raportin** 36-merkkisen objektitunnuksen siirtymällä Power BI -palvelussa haluamaasi raporttiin.
+Tämä on esimerkki ”Oman työtilan” raportista
 
 ```html
 https://app.powerbi.com/groups/me/reports/**report guid comes here**/ReportSection3?ctid=**organization id comes here**`
 ```
-Yllä oleva URL-osoite sisältää myös tietyn raporttisivun **”ReportSection3”** .
+Yllä oleva URL sisältää myös erityisen raporttisivun **”ReportSection3”** .
 
-Tässä on esimerkki raportin työtilasta (ei oma työtila)
+Tämä on esimerkki työtilasta (ei Omasta työtilasta) saadusta raportista
 
 ```html
 https://app.powerbi.com/groups/**groupid comes here**/reports/**reportid comes here**/ReportSection1?ctid=**organizationid comes here**
 ```
 
-## <a name="use-links-inside-power-bi"></a>Linkkien sisällä Power BI
+## <a name="use-links-inside-power-bi"></a>Linkkien käyttö Power BI:n sisällä
 
-Power BI sisällä linkit toimivat mobiilisovelluksissa tarkalleen kuten Power BI-palvelussa.
+Power BI:n sisäiset linkit toimivat mobiilisovelluksissa täsmälleen samalla tavalla kuin Power BI -palvelussa.
 
-Jos haluat Lisää linkin raporttiin, joka viittaa toisen Power BI-kohteen, voit kopioida vain kyseisen kohteen URL-Osoitteen selaimen osoiteriviltä. Lue lisää [hyperlinkin lisääminen tekstiruutuun raportissa](https://docs.microsoft.com/power-bi/service-add-hyperlink-to-text-box).
+Jos haluat lisätä raporttiin linkin, joka osoittaa toiseen Power BI -kohteeseen, sinun tarvitsee vain kopioida kyseisen kohteen URL-osoite selaimen osoiteriviltä. Lisätietoja [hyperlinkin lisäämisestä tekstiruutuun raportissa](https://docs.microsoft.com/power-bi/service-add-hyperlink-to-text-box).
 
-## <a name="use-report-url-with-filter"></a>Käytä raportin URL-osoite, suodatin
-Sama kuin Power BI-palvelussa, Power BI Mobile-sovellusten tukevat myös raportin URL-osoite, joka sisältää filter-kysely-parametri. Voit avata raportin Power BI-mobiilisovellus ja suodattaa se tiettyyn tilaan. Esimerkiksi tämän URL-Osoitteen Avaa myynti-raportin ja suodattaa alueen mukaan
+## <a name="use-report-url-with-filter"></a>Raportin URL:n käyttö suodattimen kanssa
+Sama kuin Power BI -palvelussa, mutta Power BI -mobiilisovellukset tukevat myös suodatinkyselyparametrin sisältävää raportin URL-osoitetta. Voit avata raportin Power BI -mobiilisovelluksessa ja suodattaa sen tiettyyn tilaan. Tämä URL-osoite esimerkiksi avaa myyntiraportin ja suodattaa sen alueen mukaan
 
 ```html
 https://app.powerbi.com/groups/me/reports/**report guid comes here**/ReportSection3?ctid=**organization id comes here**&filter=Store/Territory eq 'NC'
 ```
 
-Lue lisää [luoda kyselyn param suodattaa raporttien](https://docs.microsoft.com/power-bi/service-url-filters).
+Lue lisää siitä, [miten voit luoda kyselyparametrin raporttien suodattamiseksi](https://docs.microsoft.com/power-bi/service-url-filters).
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 Palaute auttaa meitä päättämään, mitä toimintoja otamme käyttöön tulevaisuudessa, joten muista äänestää muita ominaisuuksia, jotka haluaisit nähdä Power BI ‑mobiilisovelluksissa. 

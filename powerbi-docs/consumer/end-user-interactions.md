@@ -12,10 +12,10 @@ ms.date: 05/29/2019
 ms.author: mihart
 LocalizationGroup: Reports
 ms.openlocfilehash: 7148a52d7c7475fbe685f83b1e1cc325521460db
-ms.sourcegitcommit: d88cc6a87d4ba82ad2c4d496a3634f927e4ac529
-ms.translationtype: MT
+ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/30/2019
+ms.lasthandoff: 09/16/2019
 ms.locfileid: "66413152"
 ---
 # <a name="how-visuals-cross-filter-each-other-in-a-power-bi-report"></a>Visualisointien ristiinsuodatus keskenään Power BI -raportissa
@@ -23,11 +23,11 @@ Yksi Power BI:n mahtavista ominaisuuksista on se, että kaikki raporttisivun vis
 
 ![video visualisointien käsittelystä](media/end-user-interactions/interactions.gif)
 
-Oletusarvon mukaan, valitsemalla tietopisteen yhdessä visualisoinnissa, raporttisivun ristisuodattaa ristiinkorostaa ja porautua sivun muita visualisointeja. 
+Jos valitset arvopisteen yhdessä raporttisivun visualisoinnissa, ristiinsuodatat ja ristiinkorostat oletusarvoisesti sivun muita visualisointeja ja poraudut niihin. 
 
-Tämä on hyvä tunnistaa, miten yksi arvo tietojen osallistuu toiseen. Esimerkiksi valitsemalla Kohtuus-segmentissä rengaskaavion, korostaa kyseisen segmentistä edistää yksiköiden mukaan kuukauden kaavion sarakkeiden, ja se on suodatettu oikealla viivakaavio.
+Tämä voi olla hyödyllinen tapa selvittää, miten yksi arvo tiedoissasi vaikuttaa toiseen. Voit esimerkiksi valita rengaskaavion valvontaosion, jolloin korostat tämän osion vaikutusta jokaiseen sarakkeeseen kuukausittaisten yksiköiden kokonaismäärän kaaviossa, oikeanpuoleinen viivakaavio suodatettuna.
 
-![Kuva visualisointien käyttäminen](media/end-user-interactions/power-bi-interactions.png)
+![kuva visualisointien vuorovaikutuksesta](media/end-user-interactions/power-bi-interactions.png)
 
 Katso [Tietoja suodattamisesta ja korostamisesta](../power-bi-reports-filters-and-highlighting.md). 
 
@@ -37,8 +37,8 @@ Raporttien *suunnitteluohjelma* määrittää sen, miten sivun visualisoinnit va
 > Termejä *ristiinsuodatus* ja *ristiinkorostus* käytetään tässä kuvatun toiminnan erottamiseksi siitä, mitä tapahtuu, kun käytät visualisointien suodattamiseen ja korostamiseen **Suodattimet**-ruutua.  
 
 ## <a name="considerations-and-troubleshooting"></a>Huomioon otettavat seikat ja vianmääritys
-- Jos raportissa on visualisointi, joka tukee [porautumista](../power-bi-visualization-drill-down.md), oletusarvoisesti yksi visualisointi porautuminen ei vaikuta muihin raporttisivun visualisointeihin.     
-- Jos käytät visualA visualB käyttämiseksi, visuaalisen tason suodattimet visualA otetaan visualB.
+- Jos raportissasi on visualisointi, joka tukee [porautumista](../power-bi-visualization-drill-down.md), yhteen visualisointiin porautuminen ei oletusarvoisesti vaikuta muihin raporttisivun visualisointeihin.     
+- Jos käytät visualisointi A:ta vuorovaikutukseen visualisointi B:n kanssa, visualisointi A:n visualisointitason suodattimia käytetään visualisointi B:ssä.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 [Raporttisuodattimien käyttäminen](../power-bi-how-to-report-filter.md)

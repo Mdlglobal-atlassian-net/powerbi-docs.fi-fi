@@ -10,10 +10,10 @@ ms.topic: conceptual
 ms.date: 12/10/2018
 ms.author: mshenhav
 ms.openlocfilehash: ac9072c69edfd245454e92855dcefa461e80cc23
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
+ms.lasthandoff: 09/16/2019
 ms.locfileid: "61338147"
 ---
 # <a name="view-reports-and-dashboards-in-presentation-mode-on-surface-hub-and-windows-10-devices"></a>Raporttien ja koontinäyttöjen esittäminen esitystilassa Surface Hubilla ja Windows 10 -laitteilla
@@ -43,7 +43,7 @@ Työkaluriviltä voit suorittaa seuraavat toimet:
 1. Napauttamalla Takaisin-kuvaketta ![takaisin-kuvake](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-back-icon.png) voit palata edelliselle sivulle. Pitämällä kuvaketta painettuna saat esiin navigointipolkuikkunat, jotta voit siirtyä raportin tai koontinäytön sisältävään kansioon.
 2. Muste-kuvakkeella ![muste-kuvake](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-ink-icon.png) voit valita värin, kun käytät Surface-kynää piirtämiseen ja merkintöjen tekemiseen raporttisivulle. 
 3. Sivut-kuvakkeella ![sivutus-kuvake](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-pages-icon.png) voit korvata esitteillä olevan raporttisivun.
-4. Toista-kuvaketta  ![Toista-kuvaketta](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-play-icon.png) piilottaa puoleista toimintopalkkia ja aloittaa diaesityksen, jossa sovellus automaattisesti Kierrä raporttisivujen välillä. 
+4. Toistokuvake  ![Toistokuvake](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-play-icon.png) piilottaa toimintopalkin ja aloittaa diaesityksen, jossa sovellus kiertää automaattisesti raporttisivusta toiseen. 
 5. Napsauta Haku-kuvaketta ![Haku-kuvake](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-search-icon.png) muiden Power BI:ssä olevien artefaktien etsimistä varten.
 6. Poistu esitystilasta napsauttamalla kuvaketta, jossa on kaksi sisäänpäin osoittavaa nuolta, ![Poistu koko näytön tilasta](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-exit-full-screen-icon.png) työkalurivillä.
 

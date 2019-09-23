@@ -10,22 +10,19 @@ ms.topic: conceptual
 ms.date: 12/06/2018
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 82c8bbb5361730b306cacd14dc9598ca12035027
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 81dfc6961ff0c00b609f98e50da3532a230cf26d
+ms.sourcegitcommit: 244d110b28d4978f360cbece3a7c896e1a645258
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54276464"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61136137"
 ---
-# <a name="using-dataflows-with-on-premises-data-sources-preview"></a>Tietovoiden käyttö paikallisiin tietolähteisiin (esikatselu)
+# <a name="using-dataflows-with-on-premises-data-sources"></a>Tietovoiden käyttö paikallisiin tietolähteisiin
 
 Voit **tietovoiden** avulla luoda tietokokoelmia erilaisista lähteistä, puhdistaa tietoja, muuntaa tietoja ja ladata sitten tiedot Power BI -säilöön. Kun luot tietovuossa, haluat ehkä käyttää paikallisia tietolähteitä. Tässä artikkelissa selvitetään tietovoiden luomiseen liittyvää vaatimusta ja sitä, miten **yritysyhdyskäytävä** on määritettävä näiden yhteyksien käyttöönottamiseksi.
 
 ![Tietovuot ja yhdyskäytävät](media/service-dataflows-onpremises-gateways/onpremises-gateways_01.png)
 
-> [!NOTE]
-> Tietovuotoiminto on esikatselutilassa, ja sitä voidaan muuttaa ja päivittää ennen kuin se on yleisesti saatavilla.
- 
 ## <a name="configuring-an-enterprise-gateway-for-use-with-dataflows"></a>Yritysyhdyskäytävän määrittäminen tietovuokäyttöä varten
 
 Jotta paikallisia tietolähteitä voidaan käyttää tietovuossa, tietovuon luoneen käyttäjän on asennettava ja määritettävä **yritysyhdyskäytävä**. Tietovuon luoneen käyttäjän on myös oltava yritysyhdyskäytävän järjestelmänvalvoja, jotta hän voi käyttää tätä yhdyskäytävää tietovuota varten.
@@ -80,8 +77,8 @@ Tässä artikkelissa on lisätietoja paikallisen tietolähteen käyttämisestä 
 
 * [Omatoiminen tietojen valmisteleminen tietovoiden avulla](service-dataflows-overview.md)
 * [Tietovoiden luominen ja käyttäminen Power BI:ssä](service-dataflows-create-use.md)
-* [Laskettujen entiteettien käyttäminen Power BI Premiumissa (esikatselu)](service-dataflows-computed-entities-premium.md)
-* [Kehittäjien resurssit Power BI -tietovoille (esikatselu)](service-dataflows-developer-resources.md)
+* [Laskettujen entiteettien käyttäminen Power BI Premiumissa](service-dataflows-computed-entities-premium.md)
+* [Kehittäjien resurssit Power BI -tietovoille](service-dataflows-developer-resources.md)
 
 Lisätietoja Power Querysta ja ajoitetusta päivityksestä on seuraavissa artikkeleissa:
 * [Kyselyn yleiskatsaus Power BI Desktopissa](desktop-query-overview.md)

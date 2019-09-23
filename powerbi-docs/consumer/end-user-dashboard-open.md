@@ -12,14 +12,14 @@ ms.date: 05/12/2019
 ms.author: mihart
 LocalizationGroup: Dashboards
 ms.openlocfilehash: cd0b680265d526ecf7adbf4db8c54b77535eadf8
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
+ms.lasthandoff: 09/16/2019
 ms.locfileid: "65608449"
 ---
 # <a name="view-a-dashboard"></a>Tarkastele koontinäyttöä
-Power BI *kuluttajien* kulutus on paljon aikaa tarkastella koontinäyttöjä. Koontinäytöt korostavat tiettyjä tietoja pohjana olevista raporteista ja tietojoukoista. Power BI:n kuluttajat käyttävät näitä tietoja esimerkiksi seurantaan, valvontaan, kysymyksiin vastaamiseen ja testaamiseen, jotta he voivat tehdä tietopohjaisia liiketoimintapäätöksiä.
+Power BI:n *kuluttajat* käyttävät paljon aikaa koontinäyttöjen tarkasteluun. Koontinäytöt korostavat tiettyjä tietoja pohjana olevista raporteista ja tietojoukoista. Power BI:n kuluttajat käyttävät näitä tietoja esimerkiksi seurantaan, valvontaan, kysymyksiin vastaamiseen ja testaamiseen, jotta he voivat tehdä tietopohjaisia liiketoimintapäätöksiä.
 
 ![koontinäyttö](media/end-user-dashboard-open/power-bi-new-dash-new.png)
 
@@ -32,7 +32,7 @@ Koontinäytön jakamiseen ja jaetun koontinäytön tarkasteluun vaaditaan Power 
 
 |              |         |
 |------------|--------------------------------|
-|![koontinäytön kuvake](media/end-user-dashboard-open/power-bi-dashboard-icon.png)      |Raporttinäkymät avataan useista sijainneista Power BI-palvelussa. <br> Etsi tämä koontinäytön kuvake. Kun olet löytänyt <br>koontinäytön, sen avaaminen on helppoa - sinun tarvitsee vain valita se, niin koontinäyttö <br>täyttää Power BI -pohjan. |
+|![koontinäytön kuvake](media/end-user-dashboard-open/power-bi-dashboard-icon.png)      |Koontinäytöt voidaan avata useista Power BI -palvelun sijainneista. <br> Etsi tämä koontinäytön kuvake. Kun olet löytänyt <br>koontinäytön, sen avaaminen on helppoa - sinun tarvitsee vain valita se, niin koontinäyttö <br>täyttää Power BI -pohjan. |
 |                    |          |
 
 
@@ -41,7 +41,7 @@ Voit etsiä koontinäyttöjä kaikista vasemman siirtymispalkin säilöistä.
 
 ![koontinäytön kuvake](media/end-user-dashboard-open/opendash.gif)
 
-- **Home** 
+- **Aloitus** 
 - **Suosikit** – jos olet [lisännyt koontinäytön suosikkeihin](end-user-favorite.md)
 - **Viimeisimmät** – jos olet käyttänyt koontinäyttöä lähiaikoina
 - **Sovellukset** – useimmat sovellukset sisältävät sekä koontinäyttöjä että raportteja

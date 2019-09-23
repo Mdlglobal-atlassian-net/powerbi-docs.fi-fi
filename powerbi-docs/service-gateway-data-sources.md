@@ -11,12 +11,12 @@ ms.date: 07/15/2019
 ms.author: mblythe
 ms.custom: seodec18
 LocalizationGroup: Gateways
-ms.openlocfilehash: c46a5c419c242ae25ecca74428362ec27f234afd
-ms.sourcegitcommit: 73228d0a9038b8369369c059ad06168d2c5ff062
+ms.openlocfilehash: 254c0033dfc64b3a0f44bcda2289fedccf2e9eda
+ms.sourcegitcommit: 4222ebad1a3a32d8040f6a615a0b7f173d7869d0
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "68730214"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71164530"
 ---
 # <a name="manage-data-sources"></a>Tietolähteiden hallinta
 
@@ -123,9 +123,9 @@ Paikallinen tietoyhdyskäytävä tukee seuraavia Power BI:n tietolähteitä. Pai
 | **Tietolähde** | **Reaaliaikainen yhteys / DirectQuery** | **Manuaalinen tai ajoitettu päivitys (käyttäjän määrittämä)** |
 | --- | --- | --- |
 | Amazon Redshift |Kyllä |Kyllä |
+| Analysis Services |Kyllä |Kyllä |
 | AtScale-kuutiot |Kyllä |Kyllä |
 | Azure Active Directory |Ei |Kyllä |
-| Azure Analysis Services |Kyllä |Kyllä |
 | Azure-blob-objektitallennus |Ei |Kyllä |
 | Azure DevOps Server |Ei |Kyllä |
 | Azure-taulukkotallennus |Ei |Kyllä |

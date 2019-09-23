@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/08/2019
+ms.date: 09/19/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 153a77cdc7d4749ac450378723d04c82ef938de6
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: c76dfc45437fdc2406c89e41a4a076d9ef4e7a44
+ms.sourcegitcommit: 200291eac5769549ba5c47ef3951e2f3d094426e
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65514617"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71142199"
 ---
 # <a name="report-view-in-power-bi-desktop"></a>Raporttinäkymä Power BI Desktopissa
 Jos olet työskennellyt Power BI:lla tiedät, miten helppoa on luoda raportteja, jotka sisältävät dynaamisia perspektiivejä ja merkityksellisiä tietoja tietoihisi. Power BI on sisältää myös kehittyneempiä ominaisuuksia Power BI Desktopissa. Power BI Desktopin avulla voit luoda kehittyneitä kyselyitä, koota tietoja useista lähteistä, luoda taulukoiden välisiä yhteyksiä ja paljon muuta.
@@ -61,9 +61,11 @@ Voit helposti ottaa visualisoinnin yhdestä Power BI Desktop -raportista ja liit
 
 Visualisointien kopiointi- ja liittämismahdollisuudesta on hyötyä henkilöille, jotka luovat ja päivittävät useita raportteja usein. Tiedostojen välillä kopioitaessa asetukset ja muotoilu, jotka on nimenomaan määritetty muotoiluruudussa, kopioituvat eteenpäin, kun taas teemaan tai oletusasetuksiin pohjautuvat visuaaliset elementit päivitetään automaattisesti vastaamaan kohderaportin teemaa. Kun siis saat muotoiltua visualisoinnin juuri haluamallasi tavalla, voit kopioida ja liittää kyseisen visualisoinnin uusiin raportteihin ja näin säilyttää muotoilun eteen tehdyn työn.
 
-![Virhe visualisoinnin kopioinnissa tai liittämisessä – ei tietokenttä](media/desktop-report-view/report-view_05.png)
+Jos mallin kentät ovat erilaisia, visualisoinnissa tulee näkyviin virhe sekä varoitus siitä, mitä kenttiä ei ole olemassa. Virhe on samanlainen kuin silloin, kun poistat kentän mallista, jota visualisointi käyttää. 
 
-Jos mallin kentät ovat erilaisia, visualisoinnissa tulee näkyviin virhe sekä varoitus siitä, mitä kenttiä ei ole olemassa. Virhe on samanlainen kuin silloin, kun poistat kentän mallista, jota visualisointi käyttää. Virheen korjaamiseksi korvaa rikkinäiset kentät haluamillasi kentillä raportissa olevasta mallista, johon liitit visualisoinnin. Jos käytät mukautettua visualisointia, sinun on tuotava myös kyseinen mukautettu visualisointi kohderaporttiin.
+![Virhe visualisoinnin kopioinnissa tai liittämisessä – ei tietokenttä](media/desktop-report-view/report-view_07.png)
+
+Virheen korjaamiseksi korvaa rikkinäiset kentät haluamillasi kentillä raportissa olevasta mallista, johon liitit visualisoinnin. Jos käytät mukautettua visualisointia, sinun on tuotava myös kyseinen mukautettu visualisointi kohderaporttiin.
 
 
 

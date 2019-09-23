@@ -9,15 +9,15 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 04/30/2019
+ms.date: 09/16/2019
 ms.author: mihart
 LocalizationGroup: Consumer
-ms.openlocfilehash: 2796b29ee553ece77846f5edc8af4b2523fd48c6
-ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
+ms.openlocfilehash: d09ada0d3309a9cb2b93a8cd4fa3d6740e69ba77
+ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68522785"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71073545"
 ---
 # <a name="add-comments-to-a-dashboard-or-report"></a>Kommenttien lisääminen koontinäyttöön tai raporttiin
 Lisää henkilökohtainen kommentti tai aloita keskustelu koontinäytöstä tai raportista työtovereidesi kanssa. **Kommentti**-ominaisuus on vain yksi tapa, jolla *kuluttaja* voi tehdä yhteistyötä muiden kanssa. 
@@ -25,16 +25,18 @@ Lisää henkilökohtainen kommentti tai aloita keskustelu koontinäytöstä tai 
 ![kommentit video](media/end-user-comment/comment.gif)
 
 ## <a name="how-to-use-the-comments-feature"></a>Kommentti-toiminnon käyttäminen
-Kommentteja voi lisätä koko koontinäyttöön, koontinäytön yksittäisiin visualisointeihin, raporttisivulle ja raporttisivun yksittäisiin visualisointeihin. Voit lisätä yleisen kommentin tai tietyille työtovereille tarkoitetun kommentin.  
+Voit lisätä kommentteja koko koontinäyttöön, koontinäytön yksittäisiin visualisointeihin, raporttisivulle, sivutettuun raporttiin ja raporttisivun yksittäisiin visualisointeihin. Voit lisätä yleisen kommentin tai tietyille työtovereille tarkoitetun kommentin.  
 
 Kun lisäät kommentin raporttiin, Power BI tallentaa nykyiset suodatin- ja osittaja-arvot. Tämä tarkoittaa sitä, että kun valitset kommentin tai vastaat siihen, raporttisivu tai raportin visualisointi voi muuttua näyttämään suodatus- ja osittajavalinnat, jotka olivat aktiivisia, kun kommentti lisättiin ensimmäistä kertaa.  
 
 ![video raportista, jossa on suodattimet](media/end-user-comment/comment-reports-with-filters/comment-reports-with-filters.gif)
 
-Miksi tämä on tärkeää? Oletetaan, että työtoveri on käyttänyt suodatinta, joka paljasti mielenkiintoisen merkityksellisen tiedon, jonka hän haluaa jakaa työryhmän kanssa. Jos tätä suodatinta ei ole valittu, kommentissa ei ehkä ole järkeä. 
+Miksi tämä on tärkeää? Oletetaan, että työtoveri on käyttänyt suodatinta, joka paljasti mielenkiintoisen merkityksellisen tiedon, jonka hän haluaa jakaa työryhmän kanssa. Jos tätä suodatinta ei ole valittu, kommentissa ei ehkä ole järkeä.
+
+Jos käytät sivutettua raporttia, voit lisätä vain raporttiasi koskevan yleisen kommentin.  Reportin yksittäisiä visualisointeja koskeville kommenteille ei ole saatavissa tukea.
 
 ### <a name="add-a-general-comment-to-a-dashboard-or-report"></a>Yleisen kommentin lisääminen koontinäyttöön tai raporttiin
-Prosessit kommenttien lisäämiseksi koontinäyttöön tai raporttiin muistuttavat toisiaan. Tässä esimerkissä käytetään koontinäyttöä. 
+Prosessit kommenttien lisäämiseksi koontinäyttöön tai raporttiin muistuttavat toisiaan.  Tässä esimerkissä käytetään koontinäyttöä. 
 
 1. Avaa Power BI -koontinäyttö tai raportti ja valitse **Kommentit**-kuvake. Kommentit-valintaikkuna avautuu.
 

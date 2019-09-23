@@ -13,10 +13,10 @@ ms.date: 12/06/2018
 ms.author: mihart
 LocalizationGroup: Common tasks
 ms.openlocfilehash: 4bb69c8ead92bf69671107fdd5bfa0eef0ae5c0d
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
+ms.lasthandoff: 09/16/2019
 ms.locfileid: "61054864"
 ---
 # <a name="recent-content-in-power-bi-service"></a>**Viimeisimmät**-sisältö Power BI -palvelussa
@@ -37,7 +37,7 @@ Jos sinulla on enemmän kuin viisi hiljattain käytyä kohdetta, valitse **Näyt
 
 ![näytä kaikki viimeisin sisältö](./media/end-user-recent/power-bi-recent-list.png)
 
-Täältä voit käsitellä sisältöä samalla tavalla kuin käyttöön yksittäisten [ **koontinäyttöjä**](end-user-dashboards.md), [ **raporttien**](end-user-reports.md), ja  **Työkirjat** välilehdillä ja sovelluksissa <!--[**Apps**](end-user-apps.md)--> näyttö.
+Täältä voit käsitellä sisältöä samalla tavalla kuin yksittäisissä [**koontinäytöissä**](end-user-dashboards.md), [**raporteissa**](end-user-reports.md) ja **Työkirjat**-valilehdillä sekä Sovellukset- <!--[**Apps**](end-user-apps.md)--> näytöllä.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 <!--[Power BI service Apps](end-user-apps.md)-->

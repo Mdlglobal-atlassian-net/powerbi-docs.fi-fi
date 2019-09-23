@@ -12,7 +12,7 @@ ms.author: mihart
 LocalizationGroup: Visualizations
 ms.openlocfilehash: 6b5f2fa44a45cca06f90474d8c76fd6f06cae3ce
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: fi-FI
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "61276402"
@@ -116,7 +116,7 @@ Kartassa voi olla määritysten mukaan:
 - Selite, leveysaste, pituusaste, koko: Ylimmät 233 selitettä, ylimmät 15 leveys- ja pituusastetta (tässä voidaan käyttää tilastotietoja tai dynaamisia rajoituksia)
 - Sijainti, selite, pituusaste ja leveysaste koosteina (+/-koko): Ylimmät 233 sijaintia, ylimmät 15 selitettä (tässä voidaan käyttää tilastotietoja tai dynaamisia rajoituksia)
 
-### <a name="matrix"></a>Matrix
+### <a name="matrix"></a>Matriisi
 - Rivit: Virtualisointi käyttämällä 500 rivin ikkunaa yhdellä kertaa
 - Sarakkeet: Ylimmät 100 ryhmittelysaraketta 
 - Arvot: useita arvoja ei oteta huomioon tietojen vähentämisessä

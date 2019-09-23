@@ -13,36 +13,36 @@ ms.date: 05/28/2019
 ms.author: mihart
 LocalizationGroup: Common tasks
 ms.openlocfilehash: c6da58ff5902a95c0e032cd4ed30a6ef0cae1e55
-ms.sourcegitcommit: 8bf2419b7cb4bf95fc975d07a329b78db5b19f81
-ms.translationtype: MT
+ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
+ms.lasthandoff: 09/16/2019
 ms.locfileid: "66374988"
 ---
 # <a name="favorite-dashboards-reports-and-apps-in-power-bi-service"></a>Power BI -palvelun suosikkikoontinäytöt, -raportit ja -sovellukset
-Kun lisäät sisällön *suosikki*, pystyt käyttämään sen nopeasti **Suosikit** sisältöluettelosta ja **aloitus Power BI-**  >   **Suosikit ja usein käytetyt**.  Suosikit ovat yleensä sisältöä useimmin ja Keltainen tähti, on merkitty.
+Kun lisäät tietyn sisällön *suosikkeihin*,  pääset nopeasti käyttämään sitä **Suosikit**-sisältöluettelosta sekä **Power BI -aloitussivun** > **Suosikeista ja usein käytetyistä**.  Suosikit ovat tyypillisesti sisältöä, jota käytät useimmiten, ja ne tunnistetaan keltaisesta tähdestä.
 
    ![Suosikki-kuvake](./media/end-user-favorite/power-bi-favorite-nav.png)
 
    ![Suosikki-kuvake](./media/end-user-favorite/power-bi-home.png)
 
-Voit myös valita yhden koontinäytön [suositelluksi koontinäytöksi](end-user-featured.md) Power BI-palvelussa.
+Voit myös valita yhden koontinäytön Power BI -palvelun [suositelluksi koontinäytöksi](end-user-featured.md).
 
 ## <a name="add-a-dashboard-or-report-as-a-favorite"></a>Koontinäytön tai raportin lisääminen *suosikkeihin*
 
 1. Avaa koontinäyttö tai raportti, jota käytät usein. Myös jaettu sisältö voi olla *suosikki*.
 
-2. Valitse Power BI-palvelun upper valintanauhasta **suosikki** tai tähden ![tähtikuvake](./media/end-user-favorite/power-bi-favorite-icon.png) kuvake.
+2. Valitse Power BI -palvelun ylänauhasta **Suosikki** tai tähden kuvake ![tähtikuvake](./media/end-user-favorite/power-bi-favorite-icon.png).
    
    ![Suosikki-kuvake](./media/end-user-favorite/powerbi-dashboard-favorite.png)
    
-   Voit myös suosikki koontinäytön tai raportin missä tahansa näet tähtikuvake, kuten Home, viimeisimmät, sovelluksia ja jaettu kanssani. 
+   Voit myös merkitä suosikiksi koontinäytön tai raportin mistä tahansa, missä näet tähtikuvakkeen, kuten aloitussivulta, viimeisimmistä, sovelluksista tai kanssasi jaetuista. 
    
    ![Koontinäyttö-välilehti, jossa on keltainen tähti](./media/end-user-favorite/power-bi-recent.png)
 
 ## <a name="add-an-app-as-a-favorite"></a>Sovelluksen lisääminen *suosikkeihin*
 
-1. Valitse siirtymisruudussa **sovelluksia**.
+1. Valitse siirtymisruudusta **Sovellukset**.
 
    ![koontinäyttö](./media/end-user-favorite/power-bi-favorite-apps.png)
 
@@ -51,10 +51,10 @@ Voit myös valita yhden koontinäytön [suositelluksi koontinäytöksi](end-user
    ![hiiren osoittimen pitäminen sovelluksen päällä](./media/end-user-favorite/power-bi-favorite-app.png)
 
 ## <a name="working-with-favorites"></a>*Suosikkien* käsitteleminen
-1. Voit käyttää suosikkeja, valitse oikealla **Suosikit**.  Täältä voit avata suosikin valitsemalla sen. Luettelossa on vain viisi suosikkia (aakkosjärjestyksessä). Jos sinulla on enemmän kuin viisi, valitse **kaikki** Avaa Suosikit sisällön luettelo (Katso alla #2). 
+1. Kun haluat käyttää suosikkeja, valitse pikaikkunanuoli **Suosikit**-kohdan oikealla puolella.  Täältä voit avata suosikin valitsemalla sen. Luettelossa on vain viisi suosikkia (aakkosjärjestyksessä). Jos suosikkeja on enemmän kuin viisi,avaa suosikit-sisältöluettelo valitsemalla **Näytä kaikki** (katso alla kohta 2). 
    
    ![Suosikit-pikaikkuna](./media/end-user-favorite/power-bi-favorite-flyout.png)
-2. Jos haluat nähdä **kaikki** sisältöön, jota olet lisännyt Suosikit siirtymisruudussa, valitse **Suosikit** tai Suosikit ![tähtikuvake](./media/end-user-favorite/power-bi-favorites-icon.png) kuvake.  
+2. Jos haluat nähdä **kaiken** suosikeiksi lisätyn sisällön, valitse siirtymisruudussa **Suosikit** tai Suosikit ![tähtikuvake](./media/end-user-favorite/power-bi-favorites-icon.png) -kuvake.  
    
     ![suosikki-ikkuna](./media/end-user-favorite/power-bi-favorites-screen.png)
    
@@ -73,7 +73,7 @@ Etkö enää käytä raporttia yhtä usein kuin aiemmin?  Voit poistaa sen suosi
 > 
 > 
 ## <a name="limitations-and-considerations"></a>Rajoitukset ja huomioitavat asiat
-Tällä hetkellä voit sovelluksen lisääminen suosikkeihin ja tämän automaattisesti Suosikit kaikki raportit ja koontinäytöt sovelluksen. Ei ole mahdollista yksittäisten suosikkisovellus raportteihin tai koontinäyttöihin. 
+Nykyisin voit valita suosikiksi sovelluksen, jolloin kaikki tämän sovelluksen raportit ja koontinäytöt määritetään suosikeiksi. Yksittäisiä sovellusraportteja tai koontinäyttöjä ei voi määritellä suosikeiksi. 
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 [Power BI:n peruskäsitteet](end-user-basic-concepts.md)

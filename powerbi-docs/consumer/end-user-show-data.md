@@ -1,5 +1,5 @@
 ---
-title: Visualisoinnin luomiseen käytettyjen tietojen näyttäminen
+title: Näytä tiedot, joita käytettiin visualisoinnin luomiseen
 description: Tässä asiakirjassa kerrotaan, miten Power BI kuluttajat voivat ”nähdä” visualisoinnin luomiseen käytetyt tiedot.
 author: mihart
 manager: kvivek
@@ -12,18 +12,18 @@ ms.date: 05/12/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
 ms.openlocfilehash: 5b36ded0863685726f9af3104b43c507b9a3c4d0
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
+ms.lasthandoff: 09/16/2019
 ms.locfileid: "65608023"
 ---
-# <a name="show-the-data-that-was-used-to-create-the-visual"></a>Visualisoinnin luomiseen käytettyjen tietojen näyttäminen
+# <a name="show-the-data-that-was-used-to-create-the-visual"></a>Näytä tiedot, joita käytettiin visualisoinnin luomiseen
 
-Power BI-visualisointi rakentuu tietoja pohjana olevista tietojoukoista. Jos olet kiinnostunut taustatoiminnoista, Power BI:n avulla voit *tarkastella* visualisoinnin luomiseen käytettyjä tietoja. Kun valitset **Näytä tiedot**, Power BI näyttää tiedot alla (tai vieressä) visualisoinnin.
+Power BI -visualisointi rakentuu pohjana olevien tietojoukkojen tiedoista. Jos olet kiinnostunut taustatoiminnoista, Power BI:n avulla voit *tarkastella* visualisoinnin luomiseen käytettyjä tietoja. Kun valitset **Näytä tiedot**, Power BI näyttää tiedot visualisoinnin alla (tai vieressä).
 
 
-1. Power BI-palvelussa [avata raportin](end-user-report-open.md) ja valitse visualisointi.  
+1. [Avaa raportti](end-user-report-open.md) Power BI -palvelussa ja valitse visualisointi.  
 2. Jos haluat tuoda visualisoinnin taustalla olevat tiedot näkyviin, valitse kolme pistettä (...) ja valitse **Näytä tiedot**.
    
    ![valitse Näytä tiedot](./media/end-user-show-data/power-bi-explore-show-data-newer.png)
@@ -36,5 +36,5 @@ Power BI-visualisointi rakentuu tietoja pohjana olevista tietojoukoista. Jos ole
    ![visualisointi ja tietojen vaakasuuntainen näyttö](./media/end-user-show-data/power-bi-show-data-rotate.png)
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
-[Power BI-raporttien visualisoinnit](../visuals/power-bi-report-visualizations.md)    
+[Visualisoinnit Power BI -raporteissa](../visuals/power-bi-report-visualizations.md)    
 [Power BI -raportit](end-user-reports.md)    
