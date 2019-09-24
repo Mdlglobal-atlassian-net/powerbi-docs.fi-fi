@@ -21,7 +21,7 @@ ms.locfileid: "68391474"
 #  <a name="connect-to-the-samples-in-the-power-bi-service"></a>Yhteyden muodostaminen malleihin Power BI -palvelussa
 
 Tässä opetusohjelmassa opit 
-- tuomaan mallisisältöpaketin, lisäämään sen Power BI -palveluun ja avaamaan sen sisällön. *Sisältöpaketti* on mallityyppi, jossa tietojoukko on niputettu yhteen koontinäytön ja raportin kanssa. 
+- tuomaan mallisisältöpaketin, lisäämään sen Power BI -palveluun ja avaamaan paketin sisällön. *Sisältöpaketti* on mallityyppi, jossa tietojoukko on niputettu yhteen koontinäytön ja raportin kanssa. 
 - avaamaan .pbix-mallitiedoston Power BI Desktop -versiossa.
 
 Jos haluat lisää taustatietoja, tutustu kohtaan [Mallitietojoukkoja Power BI:lle](sample-datasets.md). Artikkelin avulla opit kaiken malleista, kuten niiden hakemisesta, tallentamisesta ja käyttämisestä, ja voit tutustua joihinkin mallien kertomiin tarinoihin. 
@@ -65,7 +65,7 @@ Kun valitset sisältöpaketeissa **Yhdistä**, Power BI hakee kopion sisältöpa
    ![Jälleenmyyntianalyysimallin tietojoukon merkintä](media/sample-tutorial-connect-to-the-samples/power-bi-new-dataset.png)
 
 ## <a name="explore-your-new-content"></a>Tutustu uuteen sisältöösi
-Tutustu nyt itsenäisesti koontinäyttöön, tietojoukkoon ja raporttiin. Omiin koontinäyttöihin, raportteihin ja tietojoukkoihin on monta tapaa siirtyä. Yksi näistä tavoista on kuvattu jäljempänä.  
+Tutustu nyt itsenäisesti koontinäyttöön, tietojoukkoon ja raporttiin. Omiin koontinäyttöihin, raportteihin ja tietojoukkoihin voi siirtyä monella tavalla. Yksi näistä tavoista on kuvattu jäljempänä.  
 
 1. Siirry takaisin **Koontinäytöt**-välilehteen ja valitse ja avaa **Jälleenmyyntianalyysimalli**-koontinäyttö.       
 
@@ -83,7 +83,7 @@ Tutustu nyt itsenäisesti koontinäyttöön, tietojoukkoon ja raporttiin. Omiin 
    > Jos ruutu luotiin käyttämällä [Power BI Q&A:n](power-bi-tutorial-q-and-a.md) avulla, Q&A-sivu avautuu sen sijaan. Jos ruutu on [kiinnitetty Excelistä](service-dashboard-pin-tile-from-excel.md), Excel Online avautuu Power BI:n sisällä.
    > 
    > 
-1. Jaettaessa sisältöpaketti työkaverin kanssa halutaan yleensä jakaa vain merkitykselliset tiedot eikä antaa suoraa pääsyä tietoihin. **Tietojoukot**-välilehdessä on useita vaihtoehtoja tietojoukkoon tutustumiseen. Et kuitenkaan voi tarkastella tietojesi rivejä ja sarakkeita, kuten voit Power BI Desktopissa tai Excelissä. 
+1. Jaettaessa sisältöpaketti työkaverin kanssa halutaan yleensä jakaa vain merkitykselliset tiedot eikä antaa suoraa pääsyä tietoihin. **Tietojoukot**-välilehdessä on useita vaihtoehtoja tietojoukkoon tutustumiseen. Et kuitenkaan voi tarkastella tietojesi rivejä ja sarakkeita, kuten voit tehdä Power BI Desktopissa tai Excelissä. 
    
    ![Jälleenmyyntianalyysimallin tietojoukon merkintä](media/sample-tutorial-connect-to-the-samples/power-bi-new-dataset.png)
    

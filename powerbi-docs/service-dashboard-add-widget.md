@@ -132,7 +132,7 @@ PubNub-apuohjelman avulla voit lisätä suoratoistettavia tietoja, kuten Twitter
 6. Valitse **Muodosta yhteys**.
     Olet määrittänyt virtautettavan tietojoukon.
 7. Siirry takaisin koontinäyttöön ja valitse jälleen **Lisää ruutu** > **Mukautettu tietojen virtauttaminen** > **Seuraava**.
-8. Valitse luomasi sensorin tietojoukko > **Seuraava**.
+8. Valitse luomiesi anturitietojen tietojoukko > **Seuraava**.
 9. Valitse haluamasi visualisointityyppi. Usein viivakaavio toimii hyvin näissä tiedoissa.
 10. Valitse **Akseli**, **Selite** ja **Arvot**.
 11. Päätä minkä aikamäärän haluat näyttää, joko sekunteina, minuutteina tai tunteina.
@@ -159,7 +159,7 @@ PubNub-apuohjelman avulla voit lisätä suoratoistettavia tietoja, kuten Twitter
 
 7. Siirry takaisin koontinäyttöön ja valitse jälleen **Lisää ruutu** > **Mukautettu tietojen virtauttaminen** > **Seuraava**.
 
-8. Valitse luomasi sensorin tietojoukko > **Seuraava**.
+8. Valitse luomiesi anturitietojen tietojoukko > **Seuraava**.
 
 9. Valitse haluamasi visualisointityyppi. Usein viivakaavio toimii hyvin näissä tiedoissa.
 
@@ -174,7 +174,7 @@ PubNub-apuohjelman avulla voit lisätä suoratoistettavia tietoja, kuten Twitter
 14. Kiinnitä se koontinäyttöösi.
 
 ## <a name="add-web-content"></a>Verkkosisällön lisääminen
-Voit liittää tai kirjoittaa minkä tahansa HTML-sisällön ruutuna raporttiin tai koontinäyttöön. Anna upotuskoodi käsin tai kopioi ja liitä se haluamastasi sivustosta, esimerkiksi Twitteristä, YouTubesta tai embed.ly-sivustosta, ja niin edelleen.
+Voit liittää tai kirjoittaa minkä tahansa HTML-sisällön ruutuna raporttiin tai koontinäyttöön. Anna upotuskoodi käsin tai kopioi ja liitä se haluamastasi sivustosta, kuten Twitteristä, YouTubesta tai embed.ly-sivustosta.
 
 1. Valitse **Lisää ruutu** -ikkunassa **Verkkosisältö** >  **Seuraava**.
 
@@ -232,7 +232,7 @@ Voit liittää tai kirjoittaa minkä tahansa HTML-sisällön ruutuna raporttiin 
 ## <a name="edit-a-tile"></a>Ruudun muokkaaminen
 Jos haluat tehdä muutoksia aiemmin luotuun ruutuun:
 
-1. Vie hiiren osoitin ruudun oikeaan yläkulmaan ja valitse kolme pistettä (..).
+1. Vie hiiren osoitin ruudun oikeaan yläkulmaan ja valitse kolme pistettä (...).
    
     ![valitse ruudun kolme pistettä](media/service-dashboard-add-widget/pbi_ellipses.png)
 2. Valitse **Muokkaa tietoja**, jos haluat näyttää **Ruudun tiedot** -ikkunan ja tehdä muutoksia.
