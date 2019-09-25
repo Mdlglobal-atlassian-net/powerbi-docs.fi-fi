@@ -1,16 +1,18 @@
-- name: Aloittaminen
-  href: 'gettingstarted.yml#step-0'
-- name: Tietojen hankkiminen
-  href: 'gettingdata.yml#step-0'
-- name: Mallintaminen
-  href: 'modeling.yml#step-0'
-- name: Visualisoinnit
-  href: 'visualizations.yml#step-0'
+- name: 'Power BI:hin tutustuminen (kuluttaja)'
+  href: 'https://docs.microsoft.com/learn/modules/explore-power-bi-service'
+- name: 'Tietojen analysoiminen Power BI:ssä (kuluttaja)'
+  href: 'https://docs.microsoft.com/learn/modules/analyze-data-power-bi'
+- name: 'Luomisen aloittaminen Power BI:ssä'
+  href: 'https://docs.microsoft.com/learn/modules/get-started-with-power-bi'
+- name: Nouda tiedot
+  href: 'https://docs.microsoft.com/learn/modules/get-data-power-bi'
+- name: Mallitiedot
+  href: 'https://docs.microsoft.com/learn/modules/model-data-power-bi'
+- name: Visualisointien käyttö
+  href: 'https://docs.microsoft.com/learn/modules/visuals-in-power-bi'
 - name: Tietojen tutkiminen
-  href: 'exploringdata.yml#step-0'
-- name: Power BI ja Excel
-  href: 'powerbiandexcel.yml#step-0'
+  href: 'https://docs.microsoft.com/learn/modules/explore-data-power-bi'
 - name: Julkaiseminen ja jakaminen
-  href: 'publishingandsharing.yml#step-0'
+  href: 'https://docs.microsoft.com/learn/modules/publish-share-power-bi'
 - name: Johdanto DAXiin
-  href: 'introductiontodax.yml#step-0'
+  href: introductiontodax.yml?tutorial-step=1
