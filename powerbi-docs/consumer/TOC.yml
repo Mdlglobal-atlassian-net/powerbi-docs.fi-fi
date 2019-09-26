@@ -92,6 +92,8 @@
               href: end-user-insights.md
             - name: Ota esikatselutoiminnot käyttöön
               href: end-user-preview-features.md
+            - name: Power BI -palvelun ilmoitusten vastaanottaminen
+              href: end-user-notification-center.md
         - name: Nouda tiedot
           items:
             - name: 'Sovellukset Power BI:ssä'
