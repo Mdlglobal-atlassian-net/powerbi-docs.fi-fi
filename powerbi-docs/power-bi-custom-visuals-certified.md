@@ -12,14 +12,14 @@ ms.subservice: powerbi-custom-visuals
 ms.date: 05/9/2019
 ms.openlocfilehash: 8c806f0de021c3857039649876864f47e1fffdb2
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: fi-FI
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "65454548"
 ---
 # <a name="certified-custom-visuals"></a>Sertifioidut mukautetut visualisoinnit
 
-## <a name="what-are-certified-custom-visuals"></a>Mitä ovat **_sertifioidut_** mukautetut visualisoinnit?
+## <a name="what-are-_certified_-custom-visuals"></a>Mitä ovat **_sertifioidut_** mukautetut visualisoinnit?
 
 Sertifioidut mukautetut visualisoinnit ovat **Marketplacen** visualisointeja, jotka täyttävät tietyt **Power BI -tiimin** testaamat ja hyväksymät **koodivaatimukset**. Kun mukautettu visualisointi on sertifioitu, se tarjoaa lisää ominaisuuksia. Voit esimerkiksi [viedä sisältöä PowerPointiin](consumer/end-user-powerpoint.md) ja näyttää visualisoinnin [raporttisivujen tilaamisen](consumer/end-user-subscribe.md) yhteydessä lähetettävissä sähköposteissa.
 
@@ -44,34 +44,34 @@ Microsoft saattaa poistaa visualisoinnin [sertifioitujen luettelosta](#list-of-c
 Mukautetun visualisoinnin [sertifiointi](#certified-custom-visuals) edellyttää, että se täyttää seuraavat vaatimukset:  
 
 * Microsoft AppSourcen hyväksyntä. Mukautetun visualisoinnin on oltava [Marketplacessa](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals).
-* Mukautettu visualisointi on kirjoitettu versioitua **API v2.5 ei** tai uudempi versio.
-* Koodisäilö on luettavissa Power BI-tiimi (-esiintymän lähdekoodi (JavaScript tai TypeScript) ihmisten luettavassa muodossa on käytettävissä, Githubin kautta).
+* Mukautettu visualisointi on kirjoitettu **Versioned-ohjelmointirajapinnan versiolla 2.5** tai uudemmalla versiolla.
+* Power BI -tiimi voi tarkastella koodisäilöä (esimerkiksi lähdekoodia (JavaScript tai TypeScript) ihmisen luettavissa olevassa muodossa GitHubin kautta).
 
     >[!Note]
     > Sinun ei tarvitse jakaa koodia Githubissa julkisesti.
-* Koodin säilön vaatimuksia:
-   * On oltava pakollinen vähimmäismäärän tiedostoja:
+* Koodisäilön vaatimukset:
+   * Pitää sisältää seuraavat tiedostot:
       * .gitignore
       * capabilities.json
       * pbiviz.json
       * package.json
       * package-lock.json
       * tsconfig.json
-   * Ei saa sisältää node_modules kansioon (lisätä node_modules .gitingore-tiedosto)
-   * **npm asentaa** komento ei saa palauttaa virheitä.
-   * **npm valvonnan** komento ei saa palauttaa kaikki varoitukset suuren tai Valvo tason kanssa.
-   * **pbiviz-paketti** komento ei saa palauttaa virheitä.
-   * On sisällettävä [TSlint Microsoftin](https://www.npmjs.com/package/tslint-microsoft-contrib) ohitetun kokoonpanoa ei ole, ja tämä komento ei saa palauttaa lint virheet.
-   * Mukautetun visualisoinnin käännetty paketti on vastattava lähetetty paketti (md5-hajautusarvo sekä tiedostojen on oltava sama kuin).
-* Lähde-koodia koskevat vaatimukset:
-   * Visualisointi on tuettava [hahmontaminen tapahtumat API](https://microsoft.github.io/PowerBI-visuals/docs/how-to-guide/rendering-events/).
-   * Varmista, että satunnaista/dynamic-koodia suoritetaan (ei kelpaa: eval() muita kuin turvallisia käyttää settimeout() requestAnimationFrame() setinterval (joitakin funktio käyttäjän toimia), käynnissä käyttäjän syöte tai tietoja).
-   * Varmista, että DOM toiminnat turvallisesti (ei kelpaa: innerHTML D3.html (< joitakin käyttäjätietoja tai syötteen >), käytä sanitization käyttäjän syöte tai tietoja ennen kuin lisäät objektimallissa.
-   * Varmista, että ei ole javascript-virheitä ja poikkeuksia syötetietojen epätäydellisille selaimen-konsolissa. Visualisoinnin saatat käyttää käyttämällä eri odottamattomia tietoja, jotta visualisointi on ei saa uudelleenmääritystä. Voit käyttää [tässä malliraportissa](https://github.com/Microsoft/PowerBI-visuals/raw/gh-pages/assets/reports/large_data.pbix) test tietojoukkona.
+   * Ei saa sisältää node_modules-kansiota (lisää node_modules .gitingere-tiedostoon)
+   * **npm install** -komento ei saa palauttaa mitään virheitä.
+   * **npm audit** -komento ei saa palauttaa varoituksia, joilla on korkea tai kohtalainen taso.
+   * **pbiviz package** -komento ei saa palauttaa mitään virheitä.
+   * Pitää sisältää [TSlint Microsoftilta](https://www.npmjs.com/package/tslint-microsoft-contrib) ilman ohitettua määritystä, eikä tämä komento saa palauttaa mitään lint-virheitä.
+   * Mukautetun visualisoinnin kootun paketin on vastattava lähetettyä pakettia (molempien tiedostojen md5-hajautusarvon on oltava sama).
+* Lähdekoodi vaatimukset:
+   * Visualisoinnin on tuettava [Tapahtumien hahmontaminen -ohjelmointirajapintaa](https://microsoft.github.io/PowerBI-visuals/docs/how-to-guide/rendering-events/).
+   * Varmista, että mitään satunnaisia/dynaamisia koodeja ei suoriteta (huono: eval(), epäluotettava käyttö settimeout(), requestAnimationFrame(), setinterval(jokin toiminto käyttäjän syötteellä), käyttäjän syötteen/tietojen suorittaminen).
+   * Varmista, että DOM-objektia manipuloidaan luotettavasti (huono: innerHTML, D3.html(<jokin käyttäjän/tietojen syöte>), käytä sanitaatiota käyttäjän syötteessä/tiedoissa, ennen kuin lisäät sen DOM-objektiin.
+   * Varmista, että selainkonsolissa ei ole JavaScript-virheitä/-poikkeuksia syötetiedoille. Käyttäjät saattavat käyttää visualisointiasi odottamattomien tietojen eri alueella, joten visualisointi ei saa epäonnistua. Voit käyttää [tätä malliraporttia](https://github.com/Microsoft/PowerBI-visuals/raw/gh-pages/assets/reports/large_data.pbix) testitietojoukkona.
 
-* Jos capabilities.json mitään ominaisuuksia on muutettu, varmista, että ne tietävät käyttäjän raportteja.
+* Jos capabilities.json-tiedoston ominaisuuksia muutetaan, varmista, että ne eivät riko olemassa olevan käyttäjän raportteja.
 
-* Varmista, että visualisoinnin noudattaa [ohjeet Power BI-visualisointien](https://docs.microsoft.com/en-us/power-bi/developer/guidelines-powerbi-visuals#guidelines-for-power-bi-visuals-with-additional-purchases). **Ei ole vesileimoja sallitaan**.
+* Varmista, että visualisointi noudattaa [Power BI:n visualisointien ohjeita](https://docs.microsoft.com/en-us/power-bi/developer/guidelines-powerbi-visuals#guidelines-for-power-bi-visuals-with-additional-purchases). **Vesileimoja ei sallita**.
 
 * Visualisointi käyttää vain julkisia, tarkasteltavissa olevia OSS-komponentteja (Julkiset JS-kirjastot tai TypeScript. Lähdekoodi on tarkistettavissa eikä sisällä tunnettuja haavoittuvaisuuksia). Kaupallisia komponentteja käyttäviä mukautettuja visualisointeja ei voi vahvistaa.
 

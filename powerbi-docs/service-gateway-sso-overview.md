@@ -10,16 +10,16 @@ ms.subservice: powerbi-gateways
 ms.topic: conceptual
 ms.date: 07/15/2019
 LocalizationGroup: Gateways
-ms.openlocfilehash: 6f270c28f643736f07c09ceb3e544e473f831ad9
-ms.sourcegitcommit: 277fadf523e2555004f074ec36054bbddec407f8
+ms.openlocfilehash: 4991117cfa8b34d9adbbd2dc29082d1e75b6852d
+ms.sourcegitcommit: 7a0ce2eec5bc7ac8ef94fa94434ee12a9a07705b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68271863"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71100396"
 ---
 # <a name="overview-of-single-sign-on-sso-for-gateways-in-power-bi"></a>Yleiskatsaus kertakirjautumisen (SSO) käyttämiseen Power BI -yhdyskäytävissä
 
-Saumaton kertakirjautuminen mahdollistaa Power BI -raporttien ja -koontinäyttöjen päivittämisen paikallisista tiedoista, ja voit ottaa sen käyttöön määrittämällä paikallisen tietoyhdyskäytävän joko rajoitetun Kerberos-delegoinnin tai Security Assertion Markup Languagen (SAML) avulla. Paikallinen tietoyhdyskäytävä helpottaa kertakirjautumista DirectQueryllä, jota se käyttää yhteyden muodostamiseen paikallisiin tietolähteisiin.
+Saumaton kertakirjautuminen mahdollistaa Power BI -raporttien ja -koontinäyttöjen päivittämisen reaaliaikaisesti paikallisista tiedoista, ja voit ottaa sen käyttöön määrittämällä paikallisen tietoyhdyskäytävän joko rajoitetun Kerberos-delegoinnin tai Security Assertion Markup Languagen (SAML) avulla. Paikallinen tietoyhdyskäytävä tukee kertakirjautumista DirectQueryllä, jota se käyttää yhteyden muodostamiseen paikallisiin tietolähteisiin.
 
 Tällä hetkellä tuemme seuraavia tietolähteitä:
 
@@ -52,8 +52,7 @@ Seuraavassa on lisätietoja näistä vaiheista:
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
-Nyt kun tiedät kertakirjautumisen perusteet, voit lukea lisätietoja Kerberoksesta ja SAML:sta:
+Nyt kun tiedät kertakirjautumisen perusteet yhdyskäytävän kautta, voit lukea lisätietoja Kerberoksesta ja SAML:sta:
 
 * [Kertakirjautuminen (SSO) - Kerberos](service-gateway-sso-kerberos.md)
-* [Kertakirjautuminen (SSO) – Kerberos – resurssipohjainen](service-gateway-sso-kerberos-resource.md)
 * [Kertakirjautuminen (SSO) - SAML](service-gateway-sso-saml.md)

@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: overview
-ms.date: 05/08/2019
+ms.date: 09/19/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 711e0252cddcc78437e03a82d91c67441cfc3a55
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 575d66ad6bb10a4e7faa90f5f658e86115402400
+ms.sourcegitcommit: 200291eac5769549ba5c47ef3951e2f3d094426e
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65513506"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71141961"
 ---
 # <a name="what-is-power-bi-desktop"></a>Mikä on Power BI Desktop?
 
@@ -32,6 +32,16 @@ ms.locfileid: "65513506"
 * Raporttien jakaminen muiden kanssa **Power BI -palvelun** avulla
 
 Tällaisista tehtävistä vastaavina henkilöinä pidetään useimmiten *tietoanalyytikkoja* (joita kutsutaan joskus vain *analyytikoiksi*) ja liiketoimintatiedon asiantuntijoita (joita kutsutaan usein *raportin laatijoiksi*). Kuitenkin monet, jotka eivät pidä itseään analyytikkoina tai raportin laatijoina, laativat vakuuttavia raportteja tai noutavat tietoja eri lähteistä ja luovat työtovereille ja organisaatioille jaettavia tietomalleja **Power BI Desktopin** avulla.
+
+Power BI Desktopissa on kolme näkymää, jotka näkyvät piirtoalustan vasemmassa reunassa. Näkymät, jotka näkyvät niiden näkymisjärjestyksessä, ovat seuraavat:
+* **Raporttinäkymä** – tässä näkymässä voit luoda raportteja ja visualisointeja, ja siinä myös vietät suurimman osan luontiajastasi.
+* **Tietonäkymä** – tässä näkymässä voit tarkastella raporttiisi liittyvässä tietomallissa käytettäviä taulukoita, mittareita ja muita tietoja sekä muuntaa tiedot parhaalla tavalla raportin mallissa.
+* **Mallinäkymä** – tässä näkymässä voit tarkastella ja hallita tietomallisi taulukoiden välisiä suhteita.
+
+Seuraavassa kuvassa näkyvät nämä kolme näkymää piirtoalustan vasemmassa reunassa:
+
+![eri näkymät](media/desktop-what-is-desktop/what-is-desktop-07.png)
+
 
 **Power BI Desktopilla** voit luoda monitasoisia ja visuaalisesti monipuolisia raportteja. Voit yhdistää tietoja useista lähteistä yhdeksi kattavaksi raportiksi, jonka voit jakaa muiden organisaatiosi jäsenten kanssa. 
 

@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 09/10/2019
+ms.date: 09/18/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: e735d45a7a49c4a0365e35d5bb95957c6145f934
-ms.sourcegitcommit: db4fc5da8e65e0a3dc35582d7142a64ad3405de7
+ms.openlocfilehash: 6424180dde3dac0d6d2b66c8a9303810b6aa0dc6
+ms.sourcegitcommit: 7a0ce2eec5bc7ac8ef94fa94434ee12a9a07705b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70903766"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71100093"
 ---
 # <a name="use-cross-report-drillthrough-in-power-bi-desktop"></a>Raporttien välillä porautumisen käyttäminen Power BI Desktopissa
 
@@ -32,7 +32,7 @@ Seuraavat määritelmät on tärkeä tietää, ennen kuin alat määrittää ja 
 
 
 > [!NOTE]
-> *Omassa työtilassa* olevat yksilöllisesti jaettuja raportteja, joissa on *[Jaettu kanssani](service-share-dashboards.md#share-a-dashboard-or-report)* ‑merkintä, voidaan käyttää vain siinä työtilassa, josta ne oli alun perin jaettu. 
+> Power BI Desktopin raporttien välisen porautumisominaisuuden avulla voit siirtyä kontekstuaalisesti raportista toiseen. Tämä edellyttää, että raportit ovat samassa työtilassa tai sovelluksessa Power BI ‑palvelussa. Tämä ei ole käytettävissä, kun käytät yksittäisiä jaettuja raportteja *omassa työtilassa* ([Jaettu kanssani -raportit](service-share-dashboards.md#share-a-dashboard-or-report)). Sen sijaan sinun on käytettävä raporttia työtilassa, josta se on alun perin jaettu.
 
 
 ## <a name="enable-cross-report-drillthrough"></a>Raporttien välillä porautumisen käyttöönotto

@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 08/29/2019
 ms.author: maggies
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 38e393a07defcf572d06f00c14ff8e4efa3081cc
-ms.sourcegitcommit: b53a6f5575f5f8bc443ecdca9c72525ce123518f
+ms.openlocfilehash: 2c08736e23568675af87e7de63092fff3a6a86c5
+ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70185724"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71073432"
 ---
 # <a name="subscribe-yourself-and-others-to-reports-and-dashboards-in-the-power-bi-service"></a>Power BI -palvelun raporttien ja koontinäyttöjen tilaaminen itsellesi ja muille
 
@@ -56,7 +56,7 @@ Sivutettujen raporttien tilaaminen on hieman erilaista. Saat lisätietoja ohjear
 
 5. Valitse tilauksesi **tiheys**: **Päivittäin**, **Tunneittain**, **Viikoittain**, **Kuukausittain** tai **Tietojen päivittämisen jälkeen (päivittäin)** .  Jos haluat saada tilauksen sähköpostit vain tiettyinä päivinä, valitse **Tunneittain** tai **Viikoittain** ja valitse sitten, minä päivinä haluat saada sähköposteja.  Jos haluat saada tilauksen sähköpostit esimerkiksi vain arkipäivinä, valitse tiheydeksi **Viikoittain** ja poista sitten **lauantain** ja **sunnuntain** valintaruutujen valinnat.  Jos valitset **Kuukausittain**, kirjoita ne kuukauden päivät, jolloin haluat saada tilauksen sähköpostit.  
 
-6. Voit valita sähköpostien lähetyskellonajan valitsemalla tiheydeksi **Päivittäin**, **Tunneittain, **Kuukausittain** tai **Viikoittain** ja määrittämällä sitten tilaukselle **ajoitetun ajan**.  Viestit voidaan lähettää tasatunnein tai 15, 30 tai 45 minuuttia yli tasatunnin.  Valitse AM tai PM (12 tunnin kellon mukaisesti). Voit määrittää myös aikavyöhykkeen.  Jos valitset **Tunneittain**, valitse **Ajoitettu aika**, jolloin haluat tilauksen alkavan, ja se suoritetaan tunnin välein sen jälkeen.
+6. Voit valita sähköpostien lähetyskellonajan valitsemalla tiheydeksi **Päivittäin**, **Tunneittain**, **Kuukausittain** tai **Viikoittain** ja määrittämällä sitten tilaukselle **ajoitetun ajan**.  Viestit voidaan lähettää tasatunnein tai 15, 30 tai 45 minuuttia yli tasatunnin.  Valitse AM tai PM (12 tunnin kellon mukaisesti). Voit määrittää myös aikavyöhykkeen.  Jos valitset **Tunneittain**, valitse **Ajoitettu aika**, jolloin haluat tilauksen alkavan, ja se suoritetaan tunnin välein sen jälkeen.
 
 7. Oletusarvoisesti tilauksesi alkamispäivämäärä on sen luontipäivämäärä. Voit halutessasi valita myös päättymispäivämäärän. Jos et määritä päättymispäivämäärää, se on oletusarvoisesti vuoden päässä alkamispäivämäärästä. Voit vaihtaa päivämääräksi minkä tahansa tulevaisuudessa olevan päivämäärän (aina vuoteen 9999 saakka) milloin tahansa ennen tilauksen päättymistä. Tilaus lopetetaan päättymispäivänä, jos et ota sitä uudelleen käyttöön. Saat ennen tilauksen päättymistä ilmoituksia, jossa kysytään, haluatko jatkaa tilausta.    
 

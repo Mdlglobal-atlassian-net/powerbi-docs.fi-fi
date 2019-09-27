@@ -9,16 +9,16 @@ author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: cfinlan
 ms.date: 08/29/2019
-ms.openlocfilehash: add2f82594d83d1e1f177bfad5045c2e0a34ba84
-ms.sourcegitcommit: b53a6f5575f5f8bc443ecdca9c72525ce123518f
+ms.openlocfilehash: f7f1b777e7c4e54dbdcfb1757fe4df274624a580
+ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70189365"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71075993"
 ---
 # <a name="pass-a-report-parameter-in-a-url-for-a-paginated-report-in-power-bi"></a>Raporttiparametrin välittäminen URL-osoitteessa Power BI:n sivutetuissa raporteissa 
 
-Raporttiparametrit voi välittää raporttiin sisällyttämällä ne sivutetun raportin URL-osoitteeseen. Kaikilla kyselyparametreilla voi olla vastaavat raporttiparametrit. Näin ollen kyselyparametri välitetään raporttiin välittämällä vastaava raporttiparametri. Sinun on lisättävä parametrin nimeen `rp:` -etuliite, jotta Power BI tunnistaa sen URL-osoitteessa. 
+Raporttiparametrit voi välittää raporttiin sisällyttämällä ne sivutetun raportin URL-osoitteeseen. Kaikilla kyselyparametreilla voi olla vastaavat raporttiparametrit. Näin ollen kyselyparametri välitetään raporttiin välittämällä vastaava raporttiparametri. Sinun on lisättävä parametrin nimeen`rp:` -etuliite, jotta Power BI tunnistaa sen URL-osoitteessa. 
 
 Raporttiparametrien kirjainkoko on merkitsevä, ja niissä käytetään seuraavia erikoismerkkejä: 
 
@@ -63,7 +63,7 @@ rp:SalesOrderNumber:isnull=true
 Jos haluat välittää totuusarvon, määritä epätosi-arvoksi 0 ja tosi-arvoksi 1. Jos haluat välittää liukulukuarvon, lisää palvelimen aluekohtaisten asetusten desimaalierotin.
 
 > [!NOTE]
-> Jos raporttisi sisältää raporttiparametrin, jolla on oletusarvo, ja  **Kehote** -ominaisuuden arvo on  **epätosi** (eli **Kehote käyttäjälle** -ominaisuutta ei ole valittu Report Managerissa), et voi välittää kyseisen raporttiparametrin arvoa URL-osoitteeseen. Tämän ansiosta järjestelmänvalvojat voivat estää loppukäyttäjiä lisäämästä tai muokkaamasta tiettyjen raporttiparametrien arvoja.
+> Jos raporttisi sisältää raporttiparametrin, jolla on oletusarvo, ja **Kehote**-ominaisuuden arvo on **epätosi** (eli **Kehote käyttäjälle** -ominaisuutta ei ole valittu Report Managerissa), et voi välittää kyseisen raporttiparametrin arvoa URL-osoitteeseen. Tämän ansiosta järjestelmänvalvojat voivat estää loppukäyttäjiä lisäämästä tai muokkaamasta tiettyjen raporttiparametrien arvoja.
 
 ## <a name="additional-examples"></a>Muita esimerkkejä 
 

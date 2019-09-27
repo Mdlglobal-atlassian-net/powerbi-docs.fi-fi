@@ -11,7 +11,7 @@ ms.date: 05/06/2019
 ms.author: maggies
 ms.openlocfilehash: d30a396eeb4d461d7c36cecf9759306236810cab
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: fi-FI
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "65240019"
@@ -37,7 +37,7 @@ Tämä opetusohjelma edellyttää, että sinulla on Azure-tilaus. Jos sinulla ei
 
 Power BI -tiimi on onneksi luonut näennäiskoneen, johon Power BI -raporttipalvelin on jo asennettu.
 
-1. Valitse Power BI-raporttipalvelimen Azure Marketplacessa. Tämä linkki avautuu se suoraan: [Power BI-raporttipalvelimen](https://azuremarketplace.microsoft.com/marketplace/apps/reportingservices.technical-preview?tab=Overview).  
+1. Valitse Power BI -raporttipalvelin Azure Marketplacessa. Tämä linkki avaa sen suoraan: [Power BI -raporttipalvelin](https://azuremarketplace.microsoft.com/marketplace/apps/reportingservices.technical-preview?tab=Overview).  
 
 2. Valitse **Hanki se nyt**.
 3. Hyväksy tarjoajan käyttöehdot ja tietosuojakäytäntö valitsemalla **Jatka**.
@@ -46,13 +46,13 @@ Power BI -tiimi on onneksi luonut näennäiskoneen, johon Power BI -raporttipalv
 
     ![Power BI -raporttipalvelimen näennäiskoneen luominen](media/tutorial-explore-report-server-web-portal/power-bi-report-server-create.png)
 
-5. - **Vaihe 1 perusteet**,- **Näennäiskoneen nimi**, kutsua sen **reportservervm**.
+5. Kirjoita **Vaihe 1 Perusteet** -kohdassa **Näennäiskoneen nimi** -kentän arvoksi **reportservervm**.
 
-    Power BI-raportin Server VM-nimi ei voi sisältää yhdysmerkkejä.
+    Power BI -raporttipalvelimen näennäiskoneen nimi ei voi sisältää yhdysviivoja.
 
 5. Luo käyttäjänimi ja salasana.
 
-6. - **Resurssiryhmä**, valitse **Luo uusi**, ja kutsua sen **reportserverresourcegroup** > **OK**.
+6. Valitse **Resurssiryhmä**-kohdassa **Luo uusi** ja anna sen nimeksi **reportserverresourcegroup** > **OK**.
 
     Jos seuraat opetusohjelmaa useamman kuin yhden kerran, sinun on annettava resurssiryhmälle eri nimi ensimmäisen kerran jälkeen. Et voi käyttää resurssiryhmän nimeä kahdesti samassa tilauksessa. 
 
@@ -60,15 +60,15 @@ Power BI -tiimi on onneksi luonut näennäiskoneen, johon Power BI -raporttipalv
 
 7. Säilytä muut oletusarvot > **OK**.
 
-8. - **Vaihe 2 asetukset**, Säilytä oletusarvot > **OK**.
+8. Säilytä **Vaihe 2 Asetukset** -kohdan oletusasetukset > **OK**.
  
-    **SQL-tallennustili** ja **diagnostiikka tallennustili** myös arvojen on oltava yksilöllisiä. Jos seuraat opetusohjelmaa useammin kuin kerran, sinun tarvitse antaa heille eri nimet.
+    **SQL-tallennustilin** ja **diagnostiikan tallennustilin** arvojen on myös oltava yksilöllisiä. Jos seuraat opetusohjelmaa useamman kuin yhden kerran, sinun on annettava niille eri nimi.
 
-9. - **Vaihe 3 yhteenveto**, Tarkista valinnat > **OK**.
+9. Tarkista valintasi **Vaihe 3 Yhteenveto** -kohdassa > **OK**.
 
-10. - **Vaiheessa 4 ostaa**, tarkista käyttöehdot ja tietosuojakäytäntö > **Luo**.
+10. Tarkista **Vaihe 4 Osta** -kohdassa käyttöehdot ja tietosuojakäytäntö > **Luo**.
 
-    **Power BI-raporttipalvelimen käyttöönottoa lähetetään** voi kestää useita minuutteja.
+    **Käyttöönottoa lähetetään Power BI -raporttipalvelimeen** -käsittely saattaa kestää muutamia minuutteja.
 
 ## <a name="connect-to-your-virtual-machine"></a>Muodosta yhteys näennäiskoneeseen
 
@@ -84,13 +84,13 @@ Power BI -tiimi on onneksi luonut näennäiskoneen, johon Power BI -raporttipalv
 
     ![Yhdistä näennäiskoneeseen](media/tutorial-explore-report-server-web-portal/power-bi-report-server-connect-to-virtual-machine.png)
 
-5. - **Näennäiskoneen yhdistäminen** ruudussa Säilytä oletusarvot ja valitse **Lataa RDP-tiedosto**.
+5. Säilytä oletusarvot **Yhdistä näennäiskoneeseen** -ruudussa ja valitse **Lataa RDP-tiedosto**.
 
-1. Tässä **Etätyöpöytäyhteys** valintaikkunasta **Yhdistä**.
+1. Valitse **Etätyöpöytäyhteys**-valintaikkunasta **Yhdistä**.
 
 6. Anna näennäiskonetta varten luomasi käyttäjänimi ja salasana > **OK**.
 
-7. Seuraavassa valintaikkunassa lukee **etätietokoneeseen käyttäjätietoja ei voitu tunnistaa**. Valitse **Kyllä**.
+7. Seuraavassa valintaikkunassa ilmoitetaan, että **etätietokonetta ei tunnisteta**. Valitse **Kyllä**.
 
    Uusi näennäiskone avautuu.
 
@@ -104,7 +104,7 @@ Kun näennäiskone avautuu, näet työpöydällä seuraavat kohteet.
 |---------|---------|
 |![Numero 1](media/tutorial-explore-report-server-web-portal/number-1.png) | Power BI -malliraportit (.PBIX) |
 |![Numero 2](media/tutorial-explore-report-server-web-portal/number-2.png) | Linkki Power BI -raporttipalvelimen ohjeisiin |
-|![Numero 3](media/tutorial-explore-report-server-web-portal/number-3.png) | Käynnistää Power BI Desktop-Power BI-Raporttipalvelimelle (tammikuu 2019: lle) |
+|![Numero 3](media/tutorial-explore-report-server-web-portal/number-3.png) | Käynnistää Power BI -raporttipalvelimelle optimoidun Power BI Desktopin (tammikuu 2019) |
 |![Numero 4](media/tutorial-explore-report-server-web-portal/number-4.png) | Avaa Power BI -raporttipalvelimen verkkoportaalin selaimessa |
 |![Numero 5](media/tutorial-explore-report-server-web-portal/number-5.png) | Käynnistää SQL Server Data Tools -työkalun sivutettujen (. RDL) raporttien luomista varten |
 
@@ -163,7 +163,7 @@ Verkkoportaalin kautta voit käynnistää Power BI Desktopin ja tarkastella ja k
 
 1. Valitse **Salli**, jotta verkkosivusto voidaan avata tietokoneelle asennetulla ohjelmalla. 
 
-     Raportti avataan Power BI Desktopissa. Huomaa yläpalkissa ”Power BI Desktop (tammikuu 2019)” nimi. Kyseessä on Power BI -raporttipalvelimelle optimoitu versio.
+     Raportti avataan Power BI Desktopissa. Huomaa yläpalkissa oleva nimi ”Power BI Desktop (tammikuu 2019)”. Kyseessä on Power BI -raporttipalvelimelle optimoitu versio.
 
     Käytä näennäiskoneelle asennettua Power BI Desktop -versiota. Et voi siirtyä toimialueiden välillä ladataksesi raportin palvelimelle.
 

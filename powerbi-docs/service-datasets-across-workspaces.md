@@ -7,15 +7,15 @@ ms.reviewer: chbraun
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 08/15/2019
+ms.date: 09/16/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 258dd735c5ba97122d9e93f888e65cf2030f01eb
-ms.sourcegitcommit: 4d5166944fcc6fe4666cab055ae75e7a0a77866d
+ms.openlocfilehash: ace40fed472dc516cce5a761544cc5365566f3cd
+ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69530470"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71074115"
 ---
 # <a name="intro-to-datasets-across-workspaces-preview"></a>Johdanto tietojoukkojen käyttöön eri työtiloissa (esikatselu)
 
@@ -55,6 +55,7 @@ Jos luot tietojoukkoja, voit luoda niitä myös muiden käyttöön. Voit helpott
 Jaettuihin tietojoukkoihin perustuvien toimintojen ja ominaisuuksien käyttöoikeudet perustuvat niiden nykyisiin käyttötarkoituksiin. Esimerkki:
 
 - Yleensä tietojoukkojen etsiminen ja niihin yhdistäminen on mahdollista kaikille. Käyttäjät, joilla ei ole Pro-käyttöoikeutta, voivat kuitenkin muodostaa yhteyksiä vain tietojoukkoihin, jotka ovat heidän omassa työtilassaan.
+- Käyttäjät, joilla ei ole Pro-käyttöoikeutta, voivat käyttää vain jaettuun tietojoukkoon perustuvia raportteja ja koontinäyttöjä, jos molempia työtiloja (joista toinen sisältää sisällön ja toinen tietojoukon) isännöidään Premium-ominaisuudessa.
 - Power BI Desktopin käyttäjät, joilla ei ole Pro-käyttöoikeutta, voivat vain tarkastella tietojoukkoja omissa työtiloissaan.
 - Raporttien kopioimiseen työtilojen välillä tarvitaan Pro-käyttöoikeus.
 - Raporttien kopiointi sovelluksesta edellyttää Pro-käyttöoikeutta (kuten organisaation sisältöpaketit).
@@ -66,7 +67,7 @@ Jaettuihin tietojoukkoihin perustuvien toimintojen ja ominaisuuksien käyttöoik
 - Oletetaan, että luot työtilassa A raportin, joka perustuu työtilan B tietojoukkoon. Kun luot työtilassa A sovelluksen, voit sisällyttää kyseisen raportin vain työtilan A sovellukseen, jos olet myös työtilan B jäsen.
 - Perinteisessä työtilassa tietojoukkojen etsintätoiminnossa näytetään vain nykyisen työtilan tietojoukot.
 - Jos haluat lisätä sovellukseesi jaettuun tietojoukkoon perustuvan raportin, sinun täytyy olla jäsen tietojoukon työtilassa. Tämä on tunnettu ongelma.
-- Julkaise verkkoon -toiminto ei toimi jaettuun tietojoukkoon perustuvassa raportissa. Tämä on tarkoituksellista.
+- Julkaise verkkoon -toiminto ei tarkoituksella toimi jaettuun tietojoukkoon perustuvassa raportissa.
 - Jos kaksi ihmistä on jäsen työtilassa, joka käyttää jaettua työtilaa, ei ole mahdollista, että vain toinen heistä näkee liittyvän tietojoukon työtilassa. Vain käyttäjät, joilla on vähintään lukuoikeudet tietojoukkoon, näkevät jaetun tietojoukon. 
 
 ## <a name="next-steps"></a>Seuraavat vaiheet

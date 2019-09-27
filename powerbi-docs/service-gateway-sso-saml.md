@@ -8,16 +8,16 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: conceptual
-ms.date: 07/15/2019
+ms.date: 09/16/2019
 LocalizationGroup: Gateways
-ms.openlocfilehash: a240d84b20f63542c33bb7cbbb9a9c97af7db2f7
-ms.sourcegitcommit: d74aca333595beaede0d71ba13a88945ef540e44
+ms.openlocfilehash: 75641468b52d4174779b9ddd03ed7aab27b6c5d0
+ms.sourcegitcommit: 7a0ce2eec5bc7ac8ef94fa94434ee12a9a07705b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/03/2019
-ms.locfileid: "68757687"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71100403"
 ---
-# <a name="use-security-assertion-markup-language-saml-for-single-sign-on-sso-from-power-bi-to-on-premises-data-sources"></a>Security Assertion Markup Languagen (SAML) käyttäminen kertakirjautumista (SSO) varten Power BI:stä paikallisiin tietolähteisiin
+# <a name="use-security-assertion-markup-language-saml-for-sso-from-power-bi-to-on-premises-data-sources"></a>Security Assertion Markup Languagen (SAML) käyttäminen kertakirjautumista (SSO) varten Power BI:stä paikallisiin tietolähteisiin
 
 Käytä [Security Assertion Markup Languagea (SAML)](https://www.onelogin.com/pages/saml) ottaaksesi saumattoman kertakirjautumisen käyttöön. Kun otat kertakirjautumisen käyttöön, Power BI -raportit ja -koontinäytöt voivat helposti päivittää tiedot, jotka ovat peräisin paikallisista lähteistä.
 
@@ -27,7 +27,7 @@ Tuemme tällä hetkellä SAP HANA:a SAML:n kanssa. Lisätietoja kertakirjautumis
 
 Tuemme muita tietolähteitä [Kerberoksen](service-gateway-sso-kerberos.md) avulla.
 
-Huomaa, että HANA:n käytössä on **erittäin** suositeltavaa, että salaus otetaan käyttöön ennen SAML SSO -yhteyden muodostamista (eli HANA-palvelin tulisi määrittää hyväksymään salattuja yhteyksiä ja myös yhdyskäytävä tulisi määrittää käyttämään salausta HANA-palvelimen kanssa kommunikoitaessa). HANA ODBC -ohjain **ei** oletuksena voi salata SAML-vahvistuksia, ja ilman salausta allekirjoitetut SAML-vahvistukset lähetetään yhdyskäytävästä HANA-palvelimeen ”näkyvillä”, jolloin kolmas osapuoli voi pysäyttää ne ja käyttää niitä uudelleen.
+Huomaa, että HANA:n käytössä on **erittäin** suositeltavaa, että salaus otetaan käyttöön ennen SAML SSO -yhteyden muodostamista (eli HANA-palvelin tulisi määrittää hyväksymään salattuja yhteyksiä ja myös yhdyskäytävä tulisi määrittää käyttämään salausta HANA-palvelimen kanssa kommunikoitaessa). HANA ODBC -ohjain **ei** oletuksena voi salata SAML-vahvistuksia, ja ilman salausta allekirjoitetut SAML-vahvistukset lähetetään yhdyskäytävästä HANA-palvelimeen ”näkyvillä”, jolloin kolmas osapuoli voi pysäyttää ne ja käyttää niitä uudelleen. Lisätietoja salauksen ottamisesta käyttöön HANAlle OpenSSL-kirjaston avulla on kohdassa [Ota SAP HANAn salaus käyttöön](/power-bi/desktop-sap-hana-encryption).
 
 ## <a name="configuring-the-gateway-and-data-source"></a>Yhdyskäytävän ja tietolähteen määrittäminen
 
@@ -35,16 +35,17 @@ Jotta voit käyttää SAML:ää, on muodostettava luottamussuhde HANA-palvelimen
 
 Huomaa myös, että vaikka tässä oppaassa käytetään OpenSSL:ää HANA-palvelimen salauspalveluna, SAP suosittelee käyttämään OpenSSL:n asemesta SAP-salauskirjastoa (tunnetaan myös nimillä CommonCryptoLib tai sapcrypto) luottamussuhteen muodostamisen vaiheisiin. Katso lisätietoja virallisesta SAP-dokumentaatiosta.
 
-Seuraavissa vaiheissa kuvataan, miten voit muodostaa luottamussuhteen HANA-palvelimen ja yhdyskäytävän IdP:n välillä allekirjoittamalla yhdyskäytävän IdP:n X509-varmenteen HANA-palvelimen luottamalla varmenteen päämyöntäjällä.
+Seuraavissa vaiheissa kuvataan, miten voit muodostaa luottamussuhteen HANA-palvelimen ja yhdyskäytävän IdP:n välillä allekirjoittamalla yhdyskäytävän IdP:n X509-varmenteen HANA-palvelimen luottamalla varmenteen päämyöntäjällä. Luot tämän päämyöntäjän.
 
 1. Luo päämyöntäjän X509-varmenne ja yksityinen avain. Voit esimerkiksi luoda päämyöntäjän X509-varmenteen ja yksityisen avaimen .pem-muodossa näin:
 
    ```
    openssl req -new -x509 -newkey rsa:2048 -days 3650 -sha256 -keyout CA_Key.pem -out CA_Cert.pem -extensions v3_ca
    ```
-  Varmista, että päämyöntäjän varmenne on suojattu oikein – kolmannet osapuolet voivat päästä HANA-palvelimeen luvattomasti, jos varmenne päätyy vääriin käsiin. 
 
-  Lisää varmenne (esimerkiksi CA_Cert.pem) HANA-palvelimen luottamussäilöön niin, että HANA-palvelin luottaa mihin tahansa juuri luomasi päämyöntäjän allekirjoittamaan varmenteeseen. HANA-palvelimen luottamussäilön sijainti löytyy tarkastelemalla **ssltruststore**-määrityksiä. Jos olet noudattanut SAP-dokumentaatiota OpenSSL:n määrittämisessä, HANA-palvelin saattaa jo luottaa päämyöntäjään, jota voit käyttää uudelleen. Katso lisätietoja [OpenSSL:n määrittämisestä SAP HANA Studion SAP HANA -palvelimeen](https://archive.sap.com/documents/docs/DOC-39571). Jos sinulla on useita HANA-palvelimia, joille haluat ottaa SAML SSO:n käyttöön, varmista, että kaikki palvelimet luottavat tähän päämyöntäjään.
+    Varmista, että päämyöntäjän varmenne on suojattu oikein – kolmannet osapuolet voivat päästä HANA-palvelimeen luvattomasti, jos varmenne päätyy vääriin käsiin. 
+
+    Lisää varmenne (esimerkiksi CA_Cert.pem) HANA-palvelimen luottamussäilöön niin, että HANA-palvelin luottaa mihin tahansa juuri luomasi päämyöntäjän allekirjoittamaan varmenteeseen. HANA-palvelimen luottamussäilön sijainti löytyy tarkastelemalla **ssltruststore**-määrityksiä. Jos olet noudattanut SAP-dokumentaatiota OpenSSL:n määrittämisessä, HANA-palvelin saattaa jo luottaa päämyöntäjään, jota voit käyttää uudelleen. Katso lisätietoja [OpenSSL:n määrittämisestä SAP HANA Studion SAP HANA -palvelimeen](https://archive.sap.com/documents/docs/DOC-39571). Jos sinulla on useita HANA-palvelimia, joille haluat ottaa SAML SSO:n käyttöön, varmista, että kaikki palvelimet luottavat tähän päämyöntäjään.
 
 1. Luo yhdyskäytävän IdP:n X509-varmenne. Jos haluat esimerkiksi luoda varmenteen allekirjoituspyynnön (IdP_Req.pem) ja yksityisen avaimen (IdP_Key.pem), jotka ovat voimassa vuoden, suorita seuraava komento:
 
@@ -131,17 +132,18 @@ Lopuksi seuraa näitä ohjeita lisätäksesi varmenteen allekirjoituksen yhdysk�
     ```powershell
     Get-ChildItem -path cert:\LocalMachine\My
     ```
+
 1. Kopioi luomasi varmenteen allekirjoitus.
 
 1. Siirry yhdyskäytävän hakemistoon, joka on oletusarvoisesti C:\Program Files\On-premises data gateway.
 
-1. Avaa tiedosto PowerBI.DataMovement.Pipeline.GatewayCore.dll.config ja etsi osio nimeltä \*SapHanaSAMLCertThumbprint\*. Liitä kopioimasi allekirjoitus.
+1. Avaa tiedosto PowerBI.DataMovement.Pipeline.GatewayCore.dll.config ja etsi osio nimeltä *SapHanaSAMLCertThumbprint*. Liitä kopioimasi allekirjoitus.
 
 1. Käynnistä yhdyskäytäväpalvelu uudelleen.
 
 ## <a name="running-a-power-bi-report"></a>Power BI -raportin suorittaminen
 
-Nyt voit käyttää Power BI:n **yhdyskäytävän hallintasivua** tietolähteen määrittämiseen. Ota sen **Lisäasetukset**-kohdassa kertakirjautuminen käyttöön. Sitten voit julkaista kyseiseen tietolähteeseen liittyvät raportit ja tietojoukot.
+Nyt voit käyttää Power BI:n **yhdyskäytävän hallintasivua** SAP HANA -tietolähteen määrittämiseen. Ota sen **Lisäasetukset**-kohdassa kertakirjautuminen käyttöön. Sitten voit julkaista kyseiseen tietolähteeseen liittyvät raportit ja tietojoukot.
 
 ![Lisäasetukset](media/service-gateway-sso-saml/advanced-settings.png)
 

@@ -13,7 +13,7 @@ ms.date: 08/10/2017
 LocalizationGroup: Data from databases
 ms.openlocfilehash: 51efec6c78dbb29b9c3dc760284c7bb3c8711bdc
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: fi-FI
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "64769920"
@@ -31,15 +31,15 @@ Power BI:ssä on käytössä kaksi tapaa muodostaa reaaliaikainen yhteys SQL Ser
 
 1. Valitse **Oma työtila** -osassa **Nouda tiedot**. Voit myös vaihtaa ryhmän työtilaan, jos sellainen on käytettävissä.
 
-   ![Yhteyden muodostaminen Nouda tiedot-painike](media/sql-server-analysis-services-tabular-data/connecttoas_getdatabutton.png)
+   ![Muodosta yhteys Nouda tiedot -painikkeeseen](media/sql-server-analysis-services-tabular-data/connecttoas_getdatabutton.png)
 
 2. Valitse **Tietokannat ja muut**.
 
-   ![Yhteyden muodostaminen Nouda tiedot 1](media/sql-server-analysis-services-tabular-data/connecttoas_getdata_1.png)
+   ![Muodosta yhteys Nouda tiedot 1:een](media/sql-server-analysis-services-tabular-data/connecttoas_getdata_1.png)
 
 3. Valitse **SQL Server Analysis Services**  >  **Yhdistä**.
 
-   ![Yhteyden muodostaminen Nouda tiedot 2](media/sql-server-analysis-services-tabular-data/connecttoas_getdata_2.png)
+   ![Muodosta yhteys Nouda tiedot 2:een](media/sql-server-analysis-services-tabular-data/connecttoas_getdata_2.png)
 
 4. Valitse palvelin. Jos et näe palvelinten luetteloa, yhdyskäytävää ja tietolähdettä ei ole määritetty tai tiliäsi ei ole listattu tietolähteen **Käyttäjät**-välilehdellä yhdyskäytävässä. Tarkista asia järjestelmänvalvojalta.
 
@@ -47,7 +47,7 @@ Power BI:ssä on käytössä kaksi tapaa muodostaa reaaliaikainen yhteys SQL Ser
 
 Yhteyden muodostamisen jälkeen malli näkyy Power BI -sivustosi kohdassa **Oma työtila -> Tietojoukot**. Jos vaihdoit ryhmän työtilaan, tietojoukko näkyy silloin ryhmässä.
 
-![Yhteyden muodostaminen tietojoukkoon](media/sql-server-analysis-services-tabular-data/connecttoas_dataset_5.png)
+![Yhdistä tietojoukkoon](media/sql-server-analysis-services-tabular-data/connecttoas_dataset_5.png)
 
 ## <a name="dashboard-tiles"></a>Koontinäytön ruudut
 

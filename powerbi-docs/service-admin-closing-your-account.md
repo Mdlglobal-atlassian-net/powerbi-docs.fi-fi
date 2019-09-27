@@ -1,5 +1,5 @@
 ---
-title: Power BI-tilin sulkeminen
+title: Sulje Power BI -tilisi
 description: Jos et halua enää käyttää Power BI:tä, voit pyytää Power BI -tilisi sulkemista.
 author: mgblythe
 manager: kfile
@@ -7,19 +7,19 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 04/26/2019
+ms.date: 09/09/2019
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: a285c6188e8b9298702645e28ad686e33147c3a9
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 227b4e837e75959dc838556ab0215db32131ec07
+ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65101066"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71075648"
 ---
-# <a name="close-your-power-bi-account"></a>Power BI-tilin sulkeminen
+# <a name="close-your-power-bi-account"></a>Sulje Power BI -tilisi
 
-Jos et halua enää käyttää Power BI:tä, voit pyytää Power BI -tilisi sulkemista.  Kun suljet tilisi, et voi kirjautua sisään Power BI. Kun se-tietojen säilytyskäytännön-osavaltioihin Power BI käyttöehdot, Power BI poistaa myös, asiakkaan tietoja palvelimeen tai luoda. Se ei tallenneta.
+Jos et halua enää käyttää Power BI:tä, voit pyytää Power BI -tilisi sulkemista.  Kun olet sulkenut tilisi, et voi kirj utua sisään Power BI:hin. Lisäksi kaikki Power BI:hin lataamasi tai siellä luomasi asiakastiedot poistetaan Power BI:n palveluehdoissa kuvatun tietojen säilytyskäytännön mukaisesti. Niitä ei säilytetä.
 
 ## <a name="individual-power-bi-users"></a>Yksittäiset Power BI ‑käyttäjät
 
@@ -27,23 +27,23 @@ Jos olet rekisteröitynyt Power BI:hin yksityishenkilönä, voit sulkea tilisi *
 
 1. Valitse Power BI:ssä oikeasta yläkulmasta hammasrataskuvake ja valitse sitten **Asetukset**.
 
-    ![Näyttökuva oikeasta yläkulmasta hammaspyöräkuvake ja asetukset-toiminto käyttöliittymän.](media/service-admin-closing-your-account/close-account-settings.png)
+    ![Näyttökuva käyttöliittymän oikeasta yläkulmasta, jossa on hammasrataskuvake ja Asetukset-vaihtoehto valittuna.](media/service-admin-closing-your-account/close-account-settings.png)
 
 1. Valitse **Yleiset**-välilehdellä **Sulje tili**.
 
-    ![Sulje tili-asetuksen asetukset-sivun vasemmassa yläkulmassa näyttökuva kutsutaan.](media/service-admin-closing-your-account/close-account-settings-2.png)
+    ![Näyttökuva Asetukset-sivun vasemmasta yläkulmasta Sulje tili -vaihtoehto valittuna.](media/service-admin-closing-your-account/close-account-settings-2.png)
 
 1. Valitse tilin sulkemisen syy (1). Voit myös antaa lisätietoja (2). Valitse **Sulje tili**.
 
-    ![Sulje tili-valintaikkuna, sulje tili-asetuksen näyttökuva kutsutaan.](media/service-admin-closing-your-account/close-account-settings-3.png)
+    ![Näyttökuva Sulje tili -valintaikkunasta Sulje tili -vaihtoehto valittuna.](media/service-admin-closing-your-account/close-account-settings-3.png)
 
 1. Vahvista, että haluat sulkea tilisi.
 
-    ![Sulje tili vahvistusikkuna Kyllä-vaihtoehto näyttökuva kutsutaan.](media/service-admin-closing-your-account/close-account-settings-4.png)
+    ![Näyttökuva Sulje tilin vahvistus -valintaikkunasta Kyllä-vaihtoehto valittuna.](media/service-admin-closing-your-account/close-account-settings-4.png)
 
-    Sinun pitäisi nähdä vahvistus siitä, että Power BI suljettu tili. Voit avata tilisi uudelleen täällä tarvittaessa.
+    Näkyviin tulee vahvistus siitä, että Power BI on sulkenut tilisi. Voit avata tilisi uudelleen täällä tarvittaessa.
 
-    ![Näyttökuva tilisi on suljettu valintaikkunassa.](media/service-admin-closing-your-account/close-account-settings-5.png)
+    ![Näyttökuva Tilisi on suljettu -valintaikkunasta.](media/service-admin-closing-your-account/close-account-settings-5.png)
 
 ## <a name="managed-tenant-users"></a>Hallitun vuokraajan käyttäjät
 

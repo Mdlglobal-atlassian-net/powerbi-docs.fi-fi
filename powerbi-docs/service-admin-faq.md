@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 11/16/2018
+ms.date: 09/09/2019
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: c32f4b0a03ba751d5b8cbd6e98633275ece9222b
-ms.sourcegitcommit: 6a44cb5b0328b60ebe7710378287f1e20bc55a25
+ms.openlocfilehash: 4ec7a67b861a747f9f8f654ab9fb3fa5c2951af3
+ms.sourcegitcommit: a6602d84c86d3959731a8d0ba39a522914f13d1a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/10/2019
-ms.locfileid: "70877798"
+ms.lasthandoff: 09/21/2019
+ms.locfileid: "71175197"
 ---
 # <a name="administering-power-bi---frequently-asked-questions-faq"></a>Power BI:n hallinnointi - usein kysytyt kysymykset (UKK)
 
@@ -38,6 +38,7 @@ Tämä artikkeli vastaa Power BI -hallinnoinnista usein kysyttyihin kysymyksiin.
 
 * [Miten tämä muuttaa tapaa, jolla hallinnoin tällä hetkellä organisaationi käyttäjien käyttäjätietoja?](#how-will-this-change-the-way-i-manage-identities-for-users-in-my-organization-today)
 * [Miten Power BI:tä hallitaan?](#how-do-we-manage-power-bi)
+* [Millä tavalla voin hallinnoida vuokraajaa, jonka Microsoft on luonut käyttäjiäni varten?](#what-is-the-process-to-manage-a-tenant-created-by-microsoft-for-my-users)
 * [Jos minulla on useita toimialueita, voinko hallinnoida Office 365 -vuokraajaa, johon käyttäjiä lisätään?](#if-i-have-multiple-domains-can-i-control-the-office-365-tenant-that-users-get-added-to)
 * [Miten voin poistaa Power BI:n käyttäjiltä, jotka ovat jo rekisteröityneet?](#how-do-i-remove-power-bi-for-users-that-already-signed-up)
 * [Mistä tiedän, milloin uudet käyttäjät ovat liittyneet vuokraajaani?](#how-do-i-know-when-new-users-have-joined-my-tenant)
@@ -172,6 +173,14 @@ Organisaation käyttäjiin saattaa liittyä kolme tilannetta:
 Power BI sisältää hallintaportaalin, jossa on käyttötilastoja, linkki Microsoft 365 -hallintakeskukseen käyttäjien ja ryhmien hallintaa varten ja mahdollisuus hallita koko vuokraajaa koskevia asetuksia.
 
 Jotta voit käyttää Power BI -hallintaportaalia, tililläsi täytyy olla **yleisen järjestelmänvalvojan** oikeudet Office 365:ssä tai Azure Active Directoryssa tai jonkun on määritettävä käyttäjätilillesi Power BI -palvelun järjestelmänvalvojan rooli. Lisätietoja on artikkeleissa [Power BI -järjestelmänvalvojaroolin kuvaus](service-admin-role.md) ja [Power BI -hallintaportaali](service-admin-portal.md).
+
+### <a name="what-is-the-process-to-manage-a-tenant-created-by-microsoft-for-my-users"></a>Millä tavalla voin hallinnoida vuokraajaa, jonka Microsoft on luonut käyttäjiäni varten?
+
+Kun omatoiminen käyttäjä rekisteröityy Azure AD:tä käyttävään pilvipalveluun, palvelu lisää hänet hallitsemattomaan Azure AD -hakemistoon sähköpostin toimialueen perusteella. Voit vaatia jonkun toisen luoman vuokraajan käyttöösi ja hallita sitä suorittamalla *järjestelmänvalvojan haltuunottoprosessin*. Jos haluat lisätietoja, katso [Ota haltuun hallitsematon hakemisto järjestelmänvalvojana Azure Active Directoryssa](/azure/active-directory/users-groups-roles/domains-admin-takeover). Suoritettavan haltuunoton tyyppi määräytyy sen mukaan, liittyykö toimialueeseen aiemmin luotu hallittu vuokraaja:
+
+* Power BI tukee sisäistä järjestelmänvalvojan haltuunottoprosessia. Kun suoritat hallitsemattoman Azure-hakemiston _sisäisen_ järjestelmänvalvojan haltuunottoprosessin, sinut lisätään hallitsemattoman hakemiston yleiseksi järjestelmänvalvojaksi. Mitään käyttäjiä, toimialueita tai palvelusuunnitelmia ei siirretä mihinkään muuhun hallitsemaasi hakemistoon.
+
+* Power BI ei enää tue ulkoista järjestelmänvalvojan haltuunottoprosessia. Kun suoritat hallitsemattoman Azure-hakemiston _sisäisen_ järjestelmänvalvojan haltuunottoprosessin, lisäät hallitsemattoman hakemiston DNS-toimialueen nimen hallittuun Azure-hakemistoosi. Kun lisäät toimialueen nimen, käyttäjien yhdistäminen resursseihin luodaan hallitussa Azure-hakemistossasi, jotta käyttäjät voivat jatkaa palvelujen käyttöä keskeytyksettä.
 
 ### <a name="if-i-have-multiple-domains-can-i-control-the-office-365-tenant-that-users-get-added-to"></a>Jos minulla on useita toimialueita, voinko hallinnoida Office 365 -vuokraajaa, johon käyttäjiä lisätään?
 

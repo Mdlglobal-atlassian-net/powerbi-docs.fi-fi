@@ -9,18 +9,18 @@ ms.author: mblythe
 manager: kfile
 ms.reviewer: ''
 ms.cunstom: ''
-ms.date: 08/10/2017
+ms.date: 09/16/2019
 LocalizationGroup: Get started
-ms.openlocfilehash: 11afe27ffbca295eec67fd07731cc646bcca56dc
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 3de0b5473c6d00013bdf109f262dc0577c3bf290
+ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "64769691"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71073530"
 ---
 # <a name="get-started-with-third-party-apps"></a>Kolmannen osapuolen sovellusten käytön aloittaminen
 
-Power BI:llä voit käyttää sovellusta, jonka on rakentanut yritys tai yksittäinen henkilö Microsoftin ulkopuolelta. Voit esimerkiksi käyttää kolmannen osapuolen sovelluksen joka integroituu Power BI-ruutuihin työhösi mukautettuja WWW-sovellus. Kun kolmannen osapuolen sovelluksen, sinua pyydetään antamaan sovelluksen tietyt käyttöoikeudet Power BI-tilisi ja resursseja. On tärkeää myöntää lupa vain sovelluksille, jotka tunnet ja joihin luotat. 4Sovelluksen käyttöoikeudet voidaan peruuttaa milloin tahansa. Katso [Kolmannen osapuolen sovelluksen käyttöoikeuksien kumoaminen](#revoke).
+Power BI:llä voit käyttää sovellusta, jonka on rakentanut yritys tai yksittäinen henkilö Microsoftin ulkopuolelta. Voit esimerkiksi käyttää kolmannen osapuolen sovellusta, joka integroituu Power BI-ruutuihin räätälöidyssä verkkosovelluksessa. Kun käytät kolmannen osapuolen sovellusta, sinua pyydetään myöntämään kyseiselle sovellukselle tiettyjä käyttöoikeuksia Power BI-tilillesi ja resursseihisi. On tärkeää myöntää lupa vain sovelluksille, jotka tunnet ja joihin luotat. 4Sovelluksen käyttöoikeudet voidaan peruuttaa milloin tahansa. Katso [Kolmannen osapuolen sovelluksen käyttöoikeuksien kumoaminen](#revoke).
 
 Seuraavassa on erilaisia käyttöoikeuksia, joita sovellus saattaa pyytää.
 
@@ -49,13 +49,13 @@ Seuraavassa on erilaisia käyttöoikeuksia, joita sovellus saattaa pyytää.
 
 ## <a name="revoke-third-party-app-permissions"></a>Kolmannen osapuolen sovelluksen käyttöoikeuksien kumoaminen
 
-Kolmannen osapuolen sovelluksen oikeudet Kumotaan siirtymällä Office 365: n omat sovellukset-sivulle.
+Kolmannen osapuolen sovelluksen oikeudet kumotaan siirtymällä Office 365:n Omat sovellukset -sivulle.
 
-Valitse **Office 365: n omat sovellukset** sivuston, voit kumota kolmannen osapuolen käyttöoikeuksia seuraavasti:
+Valitse **Office 365:n Omat sovellukset**. Voit kumota kolmannen osapuolen käyttöoikeuksia seuraavasti:
 
 1. Siirry [Office 365:n Omat sovellukset -sivulle](https://portal.office.com/myapps).
 
-2. Valitse **Omat sovellukset** ja Etsi kolmannen osapuolen sovellus.
+2. Valitse **Omat sovellukset** ja etsi kolmannen osapuolen sovellus.
 
 3. Valitse sovellusruudun päällä **(...)**  -painike ja napsauta **Poista**.
 

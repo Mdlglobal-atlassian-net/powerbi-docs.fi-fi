@@ -1,28 +1,33 @@
 ---
 title: Power BI:n sivutetun raportin muodostin
 description: Power BI:n sivutetun raportin muodostin on erillinen työkalu sivutettujen raporttien luomiseen.
-ms.date: 06/06/2019
+ms.date: 09/16/2019
 ms.service: powerbi
 ms.subservice: report-builder
+featuredvideoid: 78TZeiEhveY
 ms.topic: conceptual
 ms.assetid: 55bf4f9c-d037-412f-ae57-3fc39ce32fa5
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: 7ae945be1941fea4303b5cc74f9a2a4f104e8754
-ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.openlocfilehash: 6d13871ec3ba8a7550a556a8923893a6b7d676ae
+ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "66840483"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71076075"
 ---
 # <a name="power-bi-paginated-report-builder"></a>Power BI:n sivutetun raportin muodostin
 
  Power BI:n sivutetun raportin muodostin on erillinen työkalu sivutettujen raporttien luomiseen.  Kun suunnittelet sivutetun raportin, luot raportille määrityksen, joka määrää, mitä tietoja haetaan, mistä ne haetaan ja miten ne näytetään. Kun raportti suoritetaan, raportin käsittely käyttää määrittämääsi raportin määritystä, noutaa tiedot ja yhdistää ne raportin asetteluun raportin luomiseksi. Voit esikatsella raporttia raportin muodostimessa. Julkaise raportti sitten Power BI -palveluun.
 
+Opetteletko uusia asioita mieluummin videoista? Tutustu YouTubessa Power BI:n sivutetuista raporteista kertovaan videosarjaan, jonka tekijänä on Power BI:n ohjelmajohtaja Chris Finlan.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/78TZeiEhveY?list=PLx7LcKtN_gq-JVzM6L8xNNxX7kts-KflJ" frameborder="0" allowfullscreen></iframe>
+
+Seuraavassa sivutetussa raportissa on matriisi, joka sisältää rivi- ja sarakeryhmiä, sparkline-kaavioita, ilmaisimia ja yläkulman solussa olevan ympyräkaavion muotoisen yhteenvedon. Ympyräkaavion ohessa on kartta, joka sisältää kaksi värein ja ympyrän koolla esitettyä maantieteellisiä tietojoukkoa.  
+
 ![Sivutettu raportti Power BI -palvelussa](media/report-builder-power-bi/report-builder-get-started-paginated-report.png)
 
- Tässä sivutetussa raportissa on matriisi, joka sisältää rivi- ja sarakeryhmiä, sparkline-kaavioita, ilmaisimia ja yläkulman solussa olevan ympyräkaavion muotoisen yhteenvedon. Ympyräkaavion ohessa on kartta, joka sisältää kaksi värein ja ympyrän koolla esitettyä maantieteellisiä tietojoukkoa.  
-  
 ##  <a name="JumpStartReptCreation"></a> Raportin nopea luominen  
  
 -   **Aloita taulukon, matriisin tai kaavion ohjatusta toiminnosta**. Luo tietojoukkoyhteys, luo tietojoukkokysely vetämällä ja pudottamalla kenttiä, valita asettelu sekä tyyli ja mukauta raporttiasi.  
@@ -35,7 +40,7 @@ ms.locfileid: "66840483"
   
 -   **Raportti useista eri tietolähteistä.** Voit luoda raportteja, joissa käytetään relaatio- tai moniulotteisia SQL Server- ja Analysis Services-, Oracle-, Power BI- tai muiden tietokantojen tietoja.  
   
--   **Aiemmin luotujen raporttien muokkaaminen** Raportin muodostimen avulla voit mukauttaa ja päivittää SQL Server Data Tools (SSDT) -työkalujen raportin muodostimella luotuja raportteja.  
+-   **Aiemmin luotujen raporttien muokkaaminen** Raportin muodostimen avulla voit mukauttaa ja päivittää SQL Server Data Tools (SSDT) -työkalujen raporttien suunnitteluohjelmalla luotuja raportteja.  
   
 -   **Tietojen muokkaaminen** Suodata, ryhmittele ja lajittele tietoja tai lisää kaavoita tai lausekkeita.  
 
@@ -52,6 +57,9 @@ ms.locfileid: "66840483"
 -   **Valitse esitysmuoto** kun avaat raportin tai sen jälkeen. Voit valita verkko- tai sivupohjaisen tai työpöytäsovellusmuodon. Käytettävissä olevat tiedostomuodot ovat MHTML, PDF, XML, CSV, Word ja Excel.  
   
 -   **Tilausten määrittäminen** Kun olet julkaissut raportin Power BI -palveluun, voit määrittää raportin suoritettavaksi ja sähköpostitilauksen lähetettäväksi haluamaasi kellonaikaan.  
+
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
 - [Mitä ovat sivutetut raportit Power BI Premiumissa?](paginated-reports-report-builder-power-bi.md)
+
+- Katso YouTubessa [Power BI:n sivutetuista raporteista kertova videosarja](https://www.youtube.com/watch?v=78TZeiEhveY&list=PLx7LcKtN_gq-JVzM6L8xNNxX7kts-KflJ), jonka tekijänä on Power BI:n ohjelmajohtaja Chris Finlan.

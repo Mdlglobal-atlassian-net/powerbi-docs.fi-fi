@@ -1,5 +1,5 @@
 ---
-title: Matkapuhelimet – Power BI-koontinäytön
+title: Koontinäytön optimointi matkapuhelimille – Power BI
 description: Lue, miten Power BI -palvelussa luodaan erityisesti matkapuhelimille tarkoitettu mukautettu koontinäyttö.
 author: maggiesMSFT
 manager: kfile
@@ -12,15 +12,15 @@ ms.author: maggies
 LocalizationGroup: Dashboards
 ms.openlocfilehash: f2b8c2c4be343dc135fe1b133bfcb956c1549de4
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: fi-FI
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "61158201"
 ---
-# <a name="optimize-a-dashboard-for-mobile-phones---power-bi"></a>Matkapuhelimet – Power BI-koontinäytön 
-Kun tarkastelet koontinäyttöjä pystysuuntaisen puhelimessa, voit huomata, että koontinäyttöruudut ovat aseteltu yksi toisensa jälkeen saman kokoisia. Power BI-palvelussa voit luoda mukautetun koontinäytön, erityisesti puhelinten pystysuuntaisen näkymän. Vaikka luot puhelinnäkymän, kun käännät puhelimen sivuttain, näet koontinäytön, se on asettelun palvelun mukaan.
+# <a name="optimize-a-dashboard-for-mobile-phones---power-bi"></a>Koontinäytön optimointi matkapuhelimille – Power BI 
+Kun tarkastelet koontinäyttöjä pystytilassa puhelimessa, voit huomata, että koontinäytön ruudut ovat saman kokoisia ja aseteltu yksi toisensa jälkeen. Power BI -palvelussa voit luoda ennen kaikkea puhelimen pystytilalle tarkoitetun mukautetun näkymän koontinäytöstä. Myös luodessasi puhelinnäkymän, kun käännät puhelimen sivuttain, näet koontinäytön palvelussa näkyvällä tavalla.
 
-Etsitkö lisätietoja koontinäyttöjen tarkasteleminen mobiililaitteessa Kokeile tätä Pikaopasta [raporttinäkymien ja raporttien tarkastelu Power BI-mobiilisovelluksissa](consumer/mobile/mobile-apps-quickstart-view-dashboard-report.md) sen sijaan.
+Etsitkö tietoja koontinäyttöjen tarkastelemisesta mobiililaitteessa? Kokeile sen sijaan pikaopasta [Raporttinäkymien ja raporttien tarkastelu Power BI -mobiilisovelluksissa](consumer/mobile/mobile-apps-quickstart-view-dashboard-report.md).
 
 > [!NOTE]
 > Muokatessasi puhelinnäkymää kaikki koontinäyttöä puhelimella tarkastelevat voivat nähdä reaaliaikaisesti tekemäsi muutokset. Esimerkiksi, jos poistat kaikkien koontinäytön puhelinnäkymän ruutujen kiinnityksen, puhelimen koontinäytössä ei enää ole ruutuja. 

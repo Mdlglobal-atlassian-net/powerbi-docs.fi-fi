@@ -12,16 +12,16 @@ ms.author: davidi
 LocalizationGroup: Create reports
 ms.openlocfilehash: 948ead2cfa551d6342f9bab87b281d9b6d1e15bc
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: fi-FI
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "65514087"
 ---
 # <a name="multi-select-data-elements-in-visuals-using-power-bi-desktop"></a>Tietoelementtien monivalinta visualisoinneissa Power BI Desktopia käyttämällä
 
-Power BI Desktop voit korostaa annetun visualisoinnin arvopistettä napsauttamalla arvopistettä visualisoinnissa. Esimerkiksi jos sinulla on tärkeä palkin tai kaavion osa ja haluat muiden visualisointien raportin sivulla korostavan tietoja valintasi perusteella, voit napsauttaa yhden visualisoinnin tietoelementtiä, jolloin tulokset näkyvät myös sivun muissa visualisoinneissa. Tämä on perustason tai yksittäisen valinnan korostusta. Seuraavassa kuvassa näkyy perustason korostus. 
+Power BI Desktopissa voit korostaa annetun visualisoinnin arvopistettä napsauttamalla arvopistettä visualisoinnissa. Esimerkiksi jos sinulla on tärkeä palkin tai kaavion osa ja haluat muiden visualisointien raportin sivulla korostavan tietoja valintasi perusteella, voit napsauttaa yhden visualisoinnin tietoelementtiä, jolloin tulokset näkyvät myös sivun muissa visualisoinneissa. Tämä on perustason tai yksittäisen valinnan korostusta. Seuraavassa kuvassa näkyy perustason korostus. 
 
-![Yhden arvopisteen valittuna](media/desktop-multi-select/multi-select_01.png)
+![Yksittäinen arvopiste valittuna](media/desktop-multi-select/multi-select_01.png)
 
 Monivalinnassa voit nyt valita useamman kuin yhden arvopisteen **Power BI Desktop** -raportin sivulla ja korostaa tulokset sivun visualisoinneissa. Tämä vastaa **Ja**-lauseketta tai toimintoa, kuten ”korosta Idahon **ja** Virginian tulokset”. Voit valita useita arvopisteitä visualisoinneissa vain  **painamalla Ctrl-näppäintä ja napsauttamalla** arvopisteitä. Alla olevassa kuvassa on näkyvissä **useita arvopisteitä** valittuna (monivalinta).
 

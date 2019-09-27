@@ -1,6 +1,6 @@
 ---
-title: Microsoft Power BI Premium-Kapasiteettien hallinta
-description: Tässä artikkelissa kuvataan Power BI Premium-kapasiteetteja hallintatehtäviä.
+title: Microsoft Power BI Premium -kapasiteettien hallinta
+description: Kuvailee Power BI Premium -kapasiteettien hallintatehtäviä.
 author: mgblythe
 ms.author: mblythe
 manager: kfile
@@ -11,155 +11,154 @@ ms.topic: conceptual
 ms.date: 04/10/2019
 ms.custom: seodec18
 LocalizationGroup: Premium
-ms.openlocfilehash: e4bb907e12d3c0b07408f069d9b238599756e8e0
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 1e8218e19ca3949a96a9c701e4a18f9fb088e2a1
+ms.sourcegitcommit: a6602d84c86d3959731a8d0ba39a522914f13d1a
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65565240"
+ms.lasthandoff: 09/21/2019
+ms.locfileid: "71175217"
 ---
-# <a name="managing-premium-capacities"></a>Premium-Kapasiteettien hallinta
+# <a name="managing-premium-capacities"></a>Premium-kapasiteettien hallinta
 
-Power BI Premium hallintaan sisältyy luomista, hallintaan ja valvontaan Premium-kapasiteetteja.
+Power BI Premiumin hallinta edellyttää Premium-kapasiteettien luontia, hallintaa ja seurantaa. Tässä artikkelissa on yleiskatsaus kapasiteetteihin. Vaiheittaiset ohjeet ovat kohdassa [Kapasiteettien määrittäminen ja hallinta](service-admin-premium-manage.md).
 
-## <a name="creating-and-managing-capacities"></a>Luomisesta ja hallitsemisesta kapasiteetit
+## <a name="creating-and-managing-capacities"></a>Kapasiteettien luominen ja hallinta
 
-**Kapasiteettiasetukset** Power BI-hallintaportaalin sivulla näkyy määrän v-ydintä ostettu ja Premium-kapasiteetteja. Office 365: n Yleiset Järjestelmänvalvojat tai Power BI-palvelun järjestelmänvalvojat avulla voit luoda Premium-kapasiteetteja käytettävissä olevat v-ytimet ja muokata aiemmin Premium-kapasiteetteja sivulla.
+Power BI:n hallintaportaalin **Kapasiteettiasetukset**-sivulla näytetään ostettujen näennäisytimien ja saatavana olevien Premium-kapasiteettien määrä. Tällä sivulla Office 365:n yleiset järjestelmänvalvojat tai Power BI -palvelun järjestelmänvalvojat voivat luoda Premium-kapasiteetteja käytettävissä olevista näennäisytimistä tai muokata olemassa olevia Premium-kapasiteetteja.
 
-Kun luot Premium-kapasiteettiin, järjestelmänvalvojat vaaditaan määrittämään:
+Premium-kapasiteetteja luodessaan järjestelmänvalvojien on määritettävä seuraavat asiat:
 
-- Kapasiteetin nimi (yksilöiviä vuokraajassa).
-- Kapasiteetin admin(s).
-- Kapasiteetin koko.
-- Tietojen tallennusta Saksassa vaatimukset alue.
+- kapasiteetin nimi (yksilöllinen nimi vuokraajassa)
+- kapasiteetin järjestelmänvalvojat
+- kapasiteetin koko
+- tietojen sijainnin alue
 
-Vähintään yksi kapasiteetin järjestelmänvalvojan on määritettävä. Kapasiteetin järjestelmänvalvojat määrittää käyttäjät voivat:
+Vähintään yksi kapasiteetin järjestelmänvalvoja täytyy määrittää. Kapasiteetin järjestelmänvalvojiksi määritetyt käyttäjät voivat
 
-- Määritä työtilat kapasiteettiin.
-- Hallitse käyttöoikeuksia, voit lisätä muita kapasiteetin Järjestelmänvalvojat tai käyttäjät, joilla on määrityskäyttöoikeudet (jotta ne voivat määrittää työtiloja kapasiteettiin).
-- Hallintaan, määrittämään muistinkäyttö sivutetut raportit ja dataflows kuormituksille.
-- Käynnistä kapasiteetin, kaikki toiminnot vaihtaa järjestelmän ylikuormitusta vuoksi.
+- määrittää kapasiteetille työtiloja
+- hallita käyttöoikeuksia lisätäkseen kapasiteetin järjestelmänvalvojia tai käyttäjiä, joilla on määrityskäyttöoikeudet (jotta he voivat määrittää kapasiteetille työtiloja)
+- hallita kuormituksia määrittääkseen suurimman muistin käytön sivutetuille raporteille ja tietovuon kuormituksille
+- käynnistää kapasiteetin uudelleen nollatakseen kaikki toiminnot järjestelmän ylikuormituksen vuoksi.
 
-Kapasiteetin järjestelmänvalvojat voi käyttää työtilan sisältöä, ellet ole erikseen määritetty työtilan käyttöoikeudet. He myös ei ole käyttöoikeuksia Power BI-järjestelmänvalvojien kaikkiin alueisiin (paitsi eksplisiittisesti varattu) kuten käyttötilastoihin, Valvontalokeihin tai vuokraaja-asetukset. Ennen kaikkea kapasiteetin järjestelmänvalvojilla ei ole oikeuksia luoda uusien kapasiteettien tai Skaalaa aiemmin kapasiteettien. Järjestelmänvalvojat määritetään kohden kapasiteetin säännöllisesti, varmistaa, että he voivat vain tarkastella ja hallita kapasiteetit, joihin ne on varattu.
+Kapasiteetin järjestelmänvalvojat eivät voi käyttää työtilan sisältöä, ellei sitä ole nimenomaisesti määritetty työtilan käyttöoikeuksissa. Heillä ei myöskään ole käyttöoikeuksia kaikkiin Power BI -järjestelmänvalvojien alueisiin (ellei sitä ole nimenomaisesti määritetty), kuten käyttötilastoihin, valvontalokeihin tai vuokraajan asetuksiin. On tärkeää huomata, että kapasiteettien järjestelmänvalvojilla ei ole oikeutta uusien kapasiteettien luomiseen tai olemassa olevien kapasiteettien skaalaamiseen. Järjestelmänvalvojat määritetään kapasiteetin mukaan, jolloin he voivat vain tarkastella ja hallita kapasiteetteja, joihin he ovat määritettyjä.
 
-Kapasiteetin koko valitaan on käytettävissä SKU vaihtoehtojen luettelo, joka on rajoitettu käytettävissä olevat v-ytimet varannossa määrän mukaan. On mahdollista luoda useita kapasiteettien varannosta, joka saattaa vakioentiteeteille yhdestä tai Lisää ostanut Varastointiyksiköt. Esimerkiksi P3-Varastointiyksikkö (32 v-ydintä) avulla voi luoda kolmen kapasiteettien: yksi P2 (16 v-ydintä) ja kaksi P1 (2 x 8 v-ydintä). Parannettu suorituskyvyn ja mittakaavan voidaan saavuttaa luomalla pienempi suuriin kapasiteettien kuvatulla tavalla [optimointi Premium-kapasiteetteja](service-premium-capacity-optimize.md) artikkelissa. Seuraavassa kuvassa on esimerkki-asennusohjelma kuvitteellisia Contoso organisaation viisi Premium-kapasiteetteja muodostuu (3 x P1 ja 2 x P3) sisältävän kunkin sovelluksen työtilat ja useita työtiloja jaettuun kapasiteettiin.
+Kapasiteetin koko valitaan käytettävissä olevasta varastointiyksikköasetusten luettelosta, ja sitä rajoittaa käytettävissä olevien näennäisytimien määrä varannossa. Varannosta on mahdollista luoda useita kapasiteetteja joko yhdestä tai useammasta ostetusta varastointiyksiköstä. Esimerkiksi P3-varastointiyksikköä (32 näennäisydintä) voidaan käyttää kolmen kapasiteetin luomiseen: yksi P2 (16 näennäisydintä) ja kaksi P1:tä (2 x 8 näennäisydintä). Parannettu suorituskyky ja skaalaus voidaan saavuttaa luomalla pienempiä kapasiteetteja [Premium-kapasiteettien optimointi](service-premium-capacity-optimize.md) -artikkelissa kuvatulla tavalla. Seuraavassa kuvassa on mallimääritys kuvitteelliselle Contoso-organisaatiolle. Se sisältää viisi Premium-kapasiteettia (3 x P1 ja 2 x P3), joissa jokaisessa on sovellustyötila, sekä useita työtiloja jaetussa kapasiteetissa.
 
-![Esimerkki-asetukset-kuvitteellisia Contoso-organisaatio](media/service-premium-capacity-manage/contoso-organization-example.png)
+![Mallimääritys kuvitteelliselle Contoso-organisaatiolle](media/service-premium-capacity-manage/contoso-organization-example.png)
 
-Premium-kapasiteettiin määrittää, että alue kuin Power BI-vuokraaja, kutsutaan useiden geo kotialueella. Useiden geo avulla voit hallita järjestelmänvalvojan mitä palvelinkeskuksiin sisällä määritettyä Power BI-sisältösi sijaitsee maantieteellisellä alueella. Useiden geo-käyttöönoton perusteet on yleensä yrityksen tai valtionhallinnon yhteensopivuuden sijaan suorituskyvyn ja mittakaavan. Raportin ja koontinäytön lataamisen liittyy yhä metatietojen kotialue pyyntöjä. Lisätietoja on artikkelissa [useiden Geo tuki Power BI Premium](service-admin-premium-multi-geo.md).
+Premium-kapasiteetti voidaan määrittää jollekin muulle alueelle kuin Power BI -vuokraajan kotialueelle. Tätä kutsutaan multi-geoksi. Multi-geon avulla järjestelmänvalvoja voi hallita, missä palvelinkeskuksissa Power BI -sisältösi sijaitsee määritettyjen maantieteellisten alueiden sisällä. Multi-geon käyttöönotto liittyy yleensä yrityksen tai julkishallinnon vaatimustenmukaisuusehtoihin, eivät niinkään suorituskykyyn tai skaalaukseen. Raporttien ja raporttinäkymien lataamiseen liittyy edelleen metatietopyyntöjä kotialueelle. Lue lisätietoja artikkelista [Multi-Geo-tuki Power BI Premiumille](service-admin-premium-multi-geo.md).
 
-Power BI-palvelun Järjestelmänvalvojat ja Office 365: n Yleiset järjestelmänvalvojat voivat muokata Premium-kapasiteetteja. Tarkemmin sanottuna he voivat:
+Power BI -palvelun järjestelmänvalvojat ja Officen 365:n yleiset järjestelmänvalvojat voivat muokata Premium-kapasiteetteja. He voivat erityisesti
 
-- Muuta kapasiteetin kokoa, Skaalaa suuremmaksi tai asteikon alaspäin resursseja.
-- Lisää tai poista kapasiteetin järjestelmänvalvojia.
-- Lisää tai poista käyttäjät, joilla on määrityskäyttöoikeudet.
-- Lisää tai poista muita kuormituksille.
-- Muuta alueilla.
+- muuttaa kapasiteetin kokoa resurssien suurentamiseksi tai pienentämiseksi
+- lisätä tai poistaa kapasiteetin järjestelmänvalvojia
+- lisätä tai poistaa käyttäjiä, joilla on määrityskäyttöoikeudet
+- lisätä tai poistaa lisäkuormituksia
+- vaihtaa aluetta.
 
-Määrittämisen käyttöoikeudet vaaditaan työtila tietyn Premium-kapasiteettiin. Käyttöoikeuksia voidaan myöntää koko organisaatiolle, tietyille käyttäjille tai ryhmille.
+Määrityskäyttöoikeudet vaaditaan työtilan määrittämiseen tietylle Premium-kapasiteetille. Käyttöoikeudet voidaan myöntää koko organisaatiolle, tietyille käyttäjille tai ryhmille.
 
-Oletusarvon mukaan Premium-kapasiteetteja tue kuormituksia liittyvät suoritettaessa Power BI-kyselyjä. Premium-kapasiteetteja tukevat myös muita kuormituksia: **AI (kognitiiviset palvelut)** , **sivutetut raportit**, ja **Dataflows**. Jokainen kuormitus edellyttää määrittäminen muistin enimmäismäärän (yhteensä muistia prosenttilukuna), jonka avulla voidaan kuormituksen mukaan. On tärkeää ymmärtää, että päivitykset siirtomäärän ja active malleja, joita voidaan isännöidä määrä voi vaikuttaa kasvattamista enimmäismuisti estetään. 
+Oletusarvoisesti Premium-kapasiteetit tukevat Power BI -kyselyjen suorittamiseen liittyviä kuormituksia. Premium-kapasiteetit tukevat myös muita kuormituksia, joita ovat **Tekoäly (kognitiiviset palvelut)** , **Sivutetut raportit** ja **Tietovuot**. Jokainen kuormitus edellyttää enimmäismuistin (prosenttiosuutena kaikesta käytettävissä olevasta muistista) määrittämistä, jota kuormitus voi käyttää. On tärkeää ymmärtää, että muistin enimmäisvarausten lisääminen voi vaikuttaa isännöitävien aktiivisten mallien määrään ja päivitysten siirtomäärään. 
 
-Muistin kohdistetaan dynaamisesti dataflows, mutta kohdistetaan staattisesti sivutettuja raportteja. Lisämuistin staattisesti muistin enimmäismäärän johtuu sivutetut raportit toimivat kapasiteetin suojatun contained välilyönti. Huolehdittava Kun asetus Sivutettujen raporttien muistin, kun muistia lataamiseen malleja. Lisätietoja on artikkelissa [muistin oletusasetukset](service-admin-premium-workloads.md#default-memory-settings).
+Muisti kohdistetaan tietovoille dynaamisesti mutta sivutetuille raporteille staattisesti. Syy enimmäismuistin staattiseen varaamiseen on se, että sivutetut raportit suoritetaan kapasiteetin suojatussa rajoitetussa tilassa. Sivutettujen raporttien muisti on määritettävä varoen, sillä se vähentää käytettävissä olevaa muistia mallien lataamista varten. Jos haluat lisätietoja, katso kohta [Oletusmuistiasetukset](service-admin-premium-workloads.md#default-memory-settings).
 
-Premium-kapasiteettiin poistaminen on mahdollista ja ei johtaa sen työtilat ja sisällön poistaminen. Sen sijaan siirtää määritetyt työtilat jaettuun kapasiteettiin. Luotaessa Premium-kapasiteettiin eri alueella, työtilan siirretään jaettuun kapasiteettiin poikkeavalla alueella.
+Premium-kapasiteetin poistaminen on mahdollista, eikä se aiheuta sen työtilojen ja sisällön poistamista. Sen sijaan se siirtää kaikki määritetyt työtilat jaettuun kapasiteettiin. Jos Premium-kapasiteetti luotiin eri alueella, työtila siirretään kotialueen jaettuun kapasiteettiin.
 
-### <a name="assigning-workspaces-to-capacities"></a>Työtilojen määrittäminen kapasiteetit
+### <a name="assigning-workspaces-to-capacities"></a>Työtilojen määrittäminen kapasiteeteille
 
-Työtilat voidaan määrittää Premium-kapasiteettiin Power BI-hallintaportaalissa tai sovelluksen työtilassa **työtilan** ruudussa.
+Premium-kapasiteetille voidaan määrittää työtiloja Power BI -hallintaportaalissa tai, sovelluksen työtilan kohdalla, **Työtila**-ruudussa.
 
-Kapasiteetin järjestelmänvalvojat sekä Office 365: n Yleiset Järjestelmänvalvojat tai Power BI-palvelun järjestelmänvalvojat voivat joukkomäärittää työtiloja Power BI-hallintaportaalissa. Määritetty Bulk käyttää:
+Kapasiteetin järjestelmänvalvojat, Office 365:n yleiset järjestelmänvalvojat sekä Power BI -palvelun järjestelmänvalvojat voivat joukkomäärittää työtiloja Power BI -hallintaportaalissa. Joukkomääritys voi koskea seuraavia kohteita:
 
-- **Työtilat käyttäjien mukaan** – kaikki kyseisten käyttäjien, mukaan lukien Omat työtilat omistamat työtilat määritetään Premium-kapasiteettiin. Tämä sisältää työtilat uudelleenmääritys, kun ne on jo määritetty eri Premium-kapasiteettiin. Lisäksi käyttäjät määritetään myös työtilan määrittämisen käyttöoikeudet.
+- **Työtilat käyttäjien mukaan** – Kaikki näiden käyttäjien omistamat työtilat, mukaan lukien henkilökohtaiset työtilat, on määritetty Premium-kapasiteettiin. Tähän sisältyy työtilojen uudelleenvaraaminen, kun ne on jo määritetty eri Premium-kapasiteettiin. Lisäksi käyttäjille myönnetään myös työtilan määrityskäyttöoikeudet.
 
 - **Määritetyt työtilat**
-- **Koko organisaation työtilat** – kaikki työtilat, mukaan lukien Omat työtilat määritetään Premium-kapasiteettiin. Kaikki nykyiset ja tulevat käyttäjät määritetään työtilan määrittämisen käyttöoikeudet. Tämä lähestymistapa ei suositella. Lisää lähestymistapaan suositellaan.
+- **Koko organisaation työtilat** – Kaikki työtilat, mukaan lukien henkilökohtaiset työtilat, on määritetty Premium-kapasiteettiin. Kaikille nykyisille ja tuleville käyttäjille myönnetään työtilan määrityskäyttöoikeudet. Tätä menetelmää ei suositella. Kohdennetumpi menetelmä on suositellumpi tapa.
 
-Työtila voidaan lisätä Premium-kapasiteetin avulla **työtilan** tarjoten käyttäjä on sekä työtilan järjestelmänvalvoja ja on määrittämisen käyttöoikeudet.
+Työtila voidaan lisätä Premium-kapasiteettiin käyttämällä **Työtila**-ruutua, jos käyttäjä on sekä työtilan järjestelmänvalvoja että hänellä on määrityskäyttöoikeudet.
 
-![Työtila Premium-kapasiteettiin työtila-ruudussa avulla](media/service-premium-capacity-manage/assign-workspace-capacity.png)
+![Työtilan määrittäminen Premium-kapasiteettiin Työtila-ruudun avulla](media/service-premium-capacity-manage/assign-workspace-capacity.png)
 
-Työtilan järjestelmänvalvojat voivat poistaa työtilan-kapasiteetti (Voit jaettuun kapasiteettiin) edellyttämättä määrittämisen käyttöoikeus. Työtilan työtilat poistamista varattua kapasiteettia tehokkaasti uudelleensijoittaa jaettuun kapasiteettiin. Huomaa, että poistaminen työtilan Premium-kapasiteettiin voi olla negatiivisia vaikutuksia tuloksena, esimerkiksi jaettua sisältöä muodostumassa ole käytettävissä Power BI ilmainen käyttöoikeus käyttäjät tai ajoitetun päivityksen peruuttamisesta, kun ne ylittävät tueta korvauksia jaettu kapasiteettien käytössä.
+Työtilan järjestelmänvalvojat voivat poistaa työtilan kapasiteetista (jaettuun kapasiteettiin) ilman määrityskäyttöoikeuksia. Työtilojen poistaminen varatuista kapasiteeteista siirtää työtilan käytännössä jaettuun kapasiteettiin. Ota huomioon, että työtilan poistamisella Premium-kapasiteetista voi olla kielteisiä seurauksia: esimerkiksi jaettu sisältö ei ehkä ole enää käytettävissä ilmaisen Power BI:n lisensoiduille käyttäjille tai ajoitettu päivitys keskeytyy, kun jaettujen kapasiteettien tukemat määrät ylittyvät.
 
-Power BI-palvelussa määritetty Premium-kapasiteettiin työtila tunnistetaan helposti avulla vinoneliökuvakkeen, adorns työtilan nimi.
+Power BI -palvelussa Premium-kapasiteettiin määritetyn työtilan tunnistaa helposti sen työtilan nimeä koristavasta vinoneliökuvakkeesta.
 
-![Tunnistetaan määritetty Premium-kapasiteettiin työtila](media/service-premium-capacity-manage/premium-diamond-icon.png)
+![Premium-kapasiteettiin määritetyn työtilan tunnistaminen](media/service-premium-capacity-manage/premium-diamond-icon.png)
 
-## <a name="monitoring-capacities"></a>Valvonnan kapasiteetit
+## <a name="monitoring-capacities"></a>Kapasiteettien valvonta
 
-Premium-kapasiteetteja valvonta tarjoaa Järjestelmänvalvojat, joilla on käsitys siitä, miten kapasiteetit toimivat. Kapasiteettien voidaan valvoa käyttämällä Power BI-hallintaportaalissa tai **Power BI Premium-kapasiteetin Mittaustietoihin** (Power BI)-sovellus.
+Premium-kapasiteettien valvonta antaa järjestelmänvalvojille käsityksen siitä, miten kapasiteetit toimivat. Kapasiteetteja voidaan valvoa Power BI -hallintaportaalissa tai **Power BI Premium -kapasiteetin mittausarvot** (Power BI) -sovelluksella.
 
 ### <a name="power-bi-admin-portal"></a>Power BI -hallintaportaali
 
-Hallintaportaalissa kunkin kapasiteetin **kunnon** välilehdessä on yhteenveto mittareita kapasiteetti ja jokainen käytössä kuormitus. Mittarit näyttävät keskiarvo viimeisten seitsemän päivän aikana.  
+Hallintaportaalissa kullekin kapasiteetille on **Kunto**-välilehti, joka sisältää yhteenvedon kapasiteetin mittareista ja kunkin käytössä olevan kuormituksen. Mittarit näyttävät keskiarvon viimeisten seitsemän päivän ajalta.  
 
-Kapasiteetin tasolla tietoraportti on koottu kaikki käytössä kuormitusten. seuraavat arvot on annettu:
+Kapasiteettitasolla mittarit ovat kumulatiivisia kaikissa käytössä olevissa kuormituksissa. Käytettävissä ovat seuraavat mittarit:
 
-- **Suorittimen KÄYTTÖASTE** -tarjoaa keskimääräinen yhteensä käytettävissä suorittimen prosenttiosuutena suorittimen käytöstä kapasiteetti.  
-- **MUISTINKÄYTTÖ** -tarjoaa keskimääräinen muistinkäyttö (gt) kuin kapasiteetin muistia yhteensä. 
+- **SUORITTIMEN KÄYTTÖ** – antaa keskimääräisen suorittimen käytön prosentteina käytettävissä olevasta suorittimen kokonaismäärästä kapasiteetille.  
+- **MUISTIN KÄYTTÖ** – antaa keskimääräisen muistin käytön (gigatavuina) käytettävissä olevana muistin kokonaismääränä kapasiteetille. 
 
-Kunkin käytössä kuormituksen suoritinkäytön ja muistinkäyttö on annettu, sekä kuormituksen tietyt mittarit määrä. Esimerkiksi tietovirrassa, kuormituksen **kokonaismäärä** näkyy yhteensä kunkin tietovirrassa päivitykset ja **keskimääräinen kesto** näyttää tietovirrassa päivityksen keskimääräinen kesto.
+Kunkin käytössä olevan kuormituksen osalta annetaan suorittimen käyttö ja muistin käyttö sekä useita kuormituskohtaisia mittareita. Esimerkiksi Tietovuo-kuormituksessa **Kokonaismäärä**-kohdassa näytetään kunkin tietovuon päivitysten kokonaismäärä, ja **Keskimääräinen kesto** ilmaisee tietovuon päivityksen keskimääräisen keston.
 
-![Kapasiteetin kunnon välilehti-portaalissa](media/service-premium-capacity-manage/admin-portal-health-dataflows.png)
+![Kapasiteetin kunto -välilehti portaalissa](media/service-premium-capacity-manage/admin-portal-health-dataflows.png)
 
-Saat lisätietoja jokainen kuormitus käytettävissä luomiensa [valvoa kapasiteetin hallintaportaalissa](service-admin-premium-monitor-portal.md).
+Lisätietoja kunkin kuormituksen kaikista käytettävissä olevista mittareista on kohdassa [Kapasiteettien valvonta hallintaportaalissa](service-admin-premium-monitor-portal.md).
 
-Power BI-hallintaportaalissa valvontaan on suunniteltu antamaan avaimen kapasiteetin mittaustietoihin nopeasti yhteenveto. Yksityiskohtaisempia valvonta, on suositeltavaa **Power BI Premium-kapasiteetin Mittaustietoihin** sovelluksen.
+Power BI -hallintaportaalin valvontatoiminnot on suunniteltu tarjoamaan nopean yhteenvedon kapasiteetin tärkeimmistä mittareista. Tarkempaa seurantaa varten on suositeltavaa käyttää **Power BI Premium -kapasiteettiarvot** -sovellusta.
 
-### <a name="power-bi-premium-capacity-metrics-app"></a>Power BI Premium-kapasiteetin mittareita sovellus
+### <a name="power-bi-premium-capacity-metrics-app"></a>Power BI Premium -kapasiteettiarvot -sovellus
 
-[Power BI Premium-kapasiteetin Mittaustietoihin sovelluksen](https://appsource.microsoft.com/product/power-bi/pbi_pcmm.pbi-premiumcapacitymonitoring?tab=Overview) Power BI-sovellus on käytettävissä kapasiteetin Järjestelmänvalvojat ja kuten Power BI-sovellus on asennettu. Se sisältää koontinäytön ja raportin.
+[Power BI Premium -kapasiteettiarvot](https://appsource.microsoft.com/product/power-bi/pbi_pcmm.pbi-premiumcapacitymonitoring?tab=Overview) -sovellus on kapasiteetin järjestelmänvalvojien käytettävissä oleva Power BI -sovellus, ja se asennetaan samalla tavalla kuin muutkin Power BI -sovellukset. Se sisältää koontinäytön ja raportin.
 
-![Power BI Premium-kapasiteetin mittareita sovellus](media/service-premium-capacity-manage/capacity-metrics-app.png)
+![Power BI Premium -kapasiteettiarvot -sovellus](media/service-premium-capacity-manage/capacity-metrics-app.png)
 
-Sovellus avautuu, kun koontinäyttöä ladataan esittää useita ruutuja ilmoittaminen koostettu näkymä kautta kapasiteetteihin käyttäjä on kapasiteetin järjestelmänvalvoja. Raporttinäkymän asettelu sisältää viisi osaa:
+Kun sovellus avautuu, koontinäyttö ladataan, ja siinä näkyy useita ruutuja, joissa näkyy koottu näkymä kaikista niistä kapasiteeteista, joiden kapasiteetin järjestelmänvalvoja käyttäjä on. Koontinäytön asettelu sisältää viisi pääosaa:
 
-- **Yleiskatsaus** -sovelluksen versio, kapasiteettien ja työtilat
-- **Järjestelmäyhteenveto** -muistin ja suorittimen mittarit
-- **Tietojoukon yhteenveto** – luku tietojoukkoja, DQ/LC, päivitys ja kyselyn mittarit
-- **Tietovirrassa yhteenveto** – luku dataflows ja tietojoukon mittarit
-- **Sivutettu raportti yhteenveto** – Päivitä ja tarkastella mittareita
+- **Yleiskatsaus** – sovelluksen versio, kapasiteettien ja työtilojen määrä
+- **Järjestelmän yhteenveto** – muistin ja suorittimen mittarit
+- **Tietojoukon yhteenveto** – tietojoukkojen määrä, DQ/LC, päivitys ja kyselyjen mittarit
+- **Tietovuon yhteenveto** – tietovoiden määrä ja tietojoukon mittarit
+- **Sivutetun raportin yhteenveto** – päivitysten ja näkymien mittarit
 
-Pohjana olevaan raporttiin, josta koontinäyttöruudut on kiinnitetty, voidaan käyttää napsauttamalla mitä tahansa koontinäytön ruudulle. Se antaa lisätietoja yleiskuvan koontinäytön osioissa ja tukee vuorovaikutteinen suodatusta. 
+Pohjana olevaa raporttia, josta koontinäytön ruudut on kiinnitetty, voidaan käyttää napsauttamalla mitä tahansa koontinäytön ruutua. Se tarjoaa yksityiskohtaisen perspektiivin kustakin koontinäytön osasta ja tukee vuorovaikutteista suodatusta. 
 
-Suodatus voidaan saavuttaa asettamalla osittajat päivämääräalue, kapasiteetti, työtilan ja kuormituksen (raportin, tietojoukon tietovirrassa) ja valitsemalla raportin sisältämiä elementtejä raporttisivu cross visualisoinnit suodatetaan. Ristisuodatuksen on tehokas tekniikkaa, voit rajata ajanjaksoihin kapasiteetit, työtilat, tietojoukot, jne. voi olla paljon hyötyä, kun root syy analyysiä
+Suodatus voidaan tehdä määrittämällä osittajia päivämääräalueen, kapasiteetin, työtilan ja kuormituksen mukaan (raportti, tietojoukko, tietovuo) ja valitsemalla raportin visualisoinneista elementtejä raporttisivun ristiinsuodatusta varten. Ristiinsuodatus on tehokas tekniikka, jonka avulla tiedot voidaan rajata tiettyihin ajanjaksoihin, kapasiteetteihin, työtiloihin, tietojoukkoihin jne., ja se voi olla erittäin hyödyllinen pääsyyanalyysin suorittamisessa.
 
-Katso lisätietoja koontinäytön ja raportin mittareita sovelluksessa [valvonnan Premium-kapasiteetteja sovelluksessa](service-admin-premium-monitor-capacity.md).
+Lisätietoja koontinäytön ja raportin mittareista sovelluksessa on kohdassa [Premium-kapasiteettien valvonta sovelluksen avulla](service-admin-premium-monitor-capacity.md).
 
-### <a name="interpreting-metrics"></a>Tulkitseminen mittarit
+### <a name="interpreting-metrics"></a>Mittareiden tulkinta
 
-Resurssin käyttö ja kuormituksen toimintaa alkuperäiset käsitys muodostaa olisi seurattava mittareita. Jos kapasiteetin hidas, on tärkeää ymmärtää, mitä mittareita, jotta voit valvoa ja päätelmien voit tehdä.
+Mittareita tulee valvoa perusymmärryksen saamiseksi resurssien käytöstä ja kuormituksesta. Jos kapasiteetista tulee hidas, on tärkeää ymmärtää, mitä mittareita pitää valvoa ja mitä päätelmiä niistä voi tehdä.
 
-Ihannetapauksessa kyselyt suoritetaan tarjoavat reagoiva kokemuksia raporttikäyttäjät tai uudempi kyselyn siirtomäärän ottaminen käyttöön sekunnin kuluessa. Se on yleensä vähemmän huolta – mukaan lukien päivitykset - taustan prosessit kestää kauemmin kertaa suorittamiseen.
+Ihannetapauksessa kyselyiden pitäisi valmistua sekunnissa, jotta ne voivat tarjota reagoivia kokemuksia raportin käyttäjille ja mahdollistaa kyselyjen suuremman siirtomäärän. Taustaprosessien, kuten päivitysten, valmistumisen hidastuminen ei ole yleensä yhtä huolestuttavaa.
 
-Yleensä hidas raportit voivat olla osoitus ylikulutusta lämmitys kapasiteetti. Kun raporttien lataaminen epäonnistuu, tämä on perusteettomasti lämmitettävä kapasiteetin osoittaa. Kummassakin tapauksessa sen voitu johtuvat monien tekijöiden mukaan:
+Yleensä hitaat raportit saattavat olla merkki ylikuumenevasta kapasiteetista. Kun raporttien lataaminen epäonnistuu, se on merkki ylikuumenneesta kapasiteetista. Kummassakin tilanteessa pääsyynä voi olla useita tekijöitä, kuten seuraavat tekijät:
 
-- **Epäonnistuneiden kyselyiden** ilmaista erottuu muisti on vähissä, ja että mallia ei voitu ladata muistiin. Power BI-palvelu yrittää ladata mallin 30 sekuntia ennen epäonnistumista.
+- **Epäonnistuneet kyselyt** ovat varmasti merkki muistiin kohdistuvasta paineesta ja siitä, että mallia voitu ladata muistiin. Power BI -palvelu yrittää ladata mallin 30 sekunnin ajan ennen epäonnistumista.
 
-- **Liiallisen kyselyn Odota kertaa** voi aiheutua useista syistä:
-  - Täytyy ensin Power BI-palvelun evict mallit ja lataa sitten to-be-kysely-malli (peruuttaminen että uudempi tietojoukon häätäminen hinnaston mukaisesti yksin eivät ole kapasiteetin ruuhkautuminen osoittaa pitkä kyselyn Odota kertaa, jotka osoittavat muistin tietojen poistaminen ei liity).
-  - Mallin lataaminen aikakatkaistaan (erityisesti suurten mallin lataaminen muistiin Odota).
-  - Pitkäkestoinen kyselyitä.
-  - Liian monta LC\DQ yhteyttä (kapasiteetin ylitysten).
+- **Liian pitkät kyselyiden odotusajat** voivat johtua useista syistä:
+  - Power BI -palvelun on ensin häädettävä malli(t) ja sitten ladattava malli, jossa kysely suoritetaan (muista, että kasvaneet tietojoukkojen häätömäärät eivät yksinään viittaa kapasiteetin stressiin, ellei siihen liity myös pitkiä kyselyiden odotusaikoja, jotka ovat merkkinä muistin tietojen poistamisesta).
+  - Mallin latausajat (erityisesti odotusaika suuren mallin lataamisessa muistiin).
+  - Pitkäkestoiset kyselyt.
+  - Liian monta LC\DQ-yhteyttä (kapasiteettirajoitukset ylittyvät).
   - Suorittimen kylläisyys.
-  - Monimutkainen raportti-suunnitteluista ja visualisointien liikaa sivulla (peruuttaminen, että jokainen visualisointi on kysely).
+  - Monitasoiset raporttimallit, joissa on liian paljon visualisointeja yhdellä sivulla (muista, että jokainen visualisointi on kysely).
 
-- **Pitkän kyselyn keston** voivat ilmaista, että mallin rakenteet ovat ei ole optimoitu, erityisesti silloin, kun useita tietojoukkoja ovat aktiivisia kapasiteettia ja vain yksi tietojoukko on tekemiseen kyselyn keston. Tämä ilmaisee, että kapasiteetti on riittävän niille ja kysymys-tietojoukko on optimaalisen tai vain hidas. Pitkään suoritettavat kyselyt voivat olla ongelmallinen, kuin ne estä pääsy resursseihin muut prosessit.
-- **Päivitä pitkä Odota kertaa** ilmaista vuoksi useita active mallien muistia ei ole tarpeeksi muistia tai että ongelmallinen päivityksen estää muita päivittää (yli parallel päivityksen rajoitukset).
+- **Pitkät kyselyjen kestot** voivat olla merkkinä siitä, että malleja ei ole optimoitu, erityisesti silloin, kun kapasiteetissa on aktiivisena useita tietojoukkoja ja vain yksi tietojoukko tuottaa pitkiä kyselyjen kestoja. Tämä viittaa siihen, että kapasiteetilla on riittävät resurssit ja että kyseessä oleva tietojoukko ei ole paras mahdollinen tai että se on vain hidas. Pitkäkestoiset kyselyt voivat olla ongelmallisia, koska ne voivat estää muiden prosessien tarvitsemien resurssien käyttämisen.
+- **Pitkät päivityksen odotusajat** ovat merkkinä siitä, että muisti ei riitä useiden aktiivisten mallien muistin käytön vuoksi, tai että ongelmallinen päivitys estää muita päivityksiä (ylittäen rinnakkaiset päivitysrajat).
 
-Tarkempi kuvaus käyttäminen mittarit käsitellään [optimointi Premium-kapasiteetteja](service-premium-capacity-optimize.md) artikkelissa.
+Tarkempia tietoja mittareiden käyttämisestä on [Premium-kapasiteettien optimointi](service-premium-capacity-optimize.md) -artikkelissa.
 
-## <a name="acknowledgements"></a>Kuittaussanomien
+## <a name="acknowledgements"></a>Kiitokset
 
-Tämä artikkeli koskee Peter Myers, tietojen Platform MVP ja riippumattoman BI asiantuntijan kanssa [Bitwise ratkaisuja](https://www.bitwisesolutions.com.au/).
+Tämän artikkelin on kirjoittanut Peter Myers, joka on Data Platform MVP ja itsenäinen BI-asiantuntija, yhdessä [Bitwise Solutionsin](https://www.bitwisesolutions.com.au/) kanssa.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
 > [!div class="nextstepaction"]
-> [Premium-kapasiteetteja optimointi](service-premium-capacity-optimize.md)   
+> [Premium-kapasiteettien optimointi](service-premium-capacity-optimize.md)   
 > [!div class="nextstepaction"]
-> [Määritä kuormituksia Premium-kapasiteetissa](service-admin-premium-workloads.md)   
+> [Premium-kapasiteettien kuormitusten määrittäminen](service-admin-premium-workloads.md)   
 
 Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
 
-||||||

@@ -8,15 +8,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 07/25/2019
+ms.date: 09/20/2019
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: 260860ba1ac875b097b12a1ac32ef09e983fe08d
-ms.sourcegitcommit: 4a3afe761d2f4a5bd897fafb36b53961739e8466
+ms.openlocfilehash: 5551247307e750624006de71a3c8652376b73fcf
+ms.sourcegitcommit: a6602d84c86d3959731a8d0ba39a522914f13d1a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/20/2019
-ms.locfileid: "69655146"
+ms.lasthandoff: 09/21/2019
+ms.locfileid: "71175253"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>Power BI:n hallinta hallintaportaalissa
 
@@ -47,6 +47,7 @@ Portaalissa on yhdeksän välilehteä. Tässä artikkelissa kerrotaan lisätieto
 * [Organisaation visualisoinnit.](#organizational-visuals)
 * [Tietovuon tallennustila (esikatselu)](#dataflowStorage)
 * [Työtilat](#workspaces)
+* [Mukautus](#custom-branding)
 
 ## <a name="usage-metrics"></a>Käyttömittarit
 
@@ -522,7 +523,22 @@ Järjestelmänvalvojana voit tarkastella vuokraajassa olevia työtiloja. Voit la
 
 ![Työtilojen luettelo](media/service-admin-portal/workspaces-list.png)
 
+## <a name="custom-branding"></a>Mukautus
 
+Järjestelmänvalvojana voit mukauttaa Power BI:n ulkoasua koko organisaatiolle. Tällä hetkellä on kolme päävaihtoehtoa:
+
+![Mukautusvaihtoehdot](media/service-admin-portal/power-bi-custom-branding.png)
+
+* **Lataa logo**: Saat parhaat tulokset lataamalla logon, joka on tallennettu muodossa .png, joka on kooltaan enintään 10 Kt ja joka on vähintään 200 x 30 kuvapistettä.
+
+* **Lataa kansikuva**: Saat parhaat tulokset lataamalla kansikuvan, joka on tallennettu muodossa .jpg tai .png, joka on kooltaan enintään 1 Mt ja joka on vähintään 1 920 x 160 kuvapistettä.
+
+* **Valitse teeman väri**: Voit valita teeman heksakoodin tai RGB-arvon perusteella, tai voit valita sen annetusta värivalikoimasta.
+
+
+Katso lisätietoja artikkelista [Organisaation mukautus](http://aka.ms/orgBranding).
+
+![Työtilojen luettelo](media/service-admin-portal/workspaces-list.png)
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
 [Power BI:n hallinta organisaatiossa](service-admin-administering-power-bi-in-your-organization.md)  

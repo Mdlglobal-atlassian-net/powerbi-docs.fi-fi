@@ -5,21 +5,20 @@ author: mihart
 manager: kvivek
 ms.reviewer: ''
 featuredvideoid: G26dr2PsEpk
-ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 05/14/2019
+ms.date: 09/14/2019
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 7222f13d5ee4f25d7d55655bb5a7e5f2f28c77d4
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: 5251bf34d7467c2727cdac83c6f6f9faf59aa888
+ms.sourcegitcommit: 200291eac5769549ba5c47ef3951e2f3d094426e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "65608624"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71141338"
 ---
-# <a name="featured-dashboards-in-power-bi-service"></a>Power BI -palvelun Suositellut koontinäytöt
+# <a name="featured-dashboards-in-the-power-bi-service"></a>Power BI -palvelun suositellut koontinäytöt
 ## <a name="create-a-featured-dashboard"></a>Suositellun koontinäytön luominen
 Monilla meillä on tietty koontinäyttö, jolla käymme useammin kuin muilla.  Se saattaa olla koontinäyttö, jota käytetään yrityksen pyörittämiseen tai vaikkapa koontinäyttö, joka sisältää ruutukoosteen monista eri koontinäytöistä ja raporteista.
 
@@ -52,7 +51,7 @@ Jos muutat mielesi myöhemmin, voit tietenkin määrittää uuden koontinäytön
 1. Noudata ohjeita vaiheista 1 ja 2 yllä.
    
     ![Vaihda suositeltua koontinäyttöä -ikkuna](./media/end-user-featured/power-bi-change-feature.png)
-2. Valitse **Aseta suositelluksi**. Koontinäytön poistaminen suositelluista ei poista sitä työtilastasi.  
+2. Valitse **Aseta suositelluksi**. Koontinäytön poistaminen suositelluista ei poista sitä Power BI:stä.  
    
     ![onnistumisilmoitus](./media/end-user-featured/power-bi-unfeature-new.png)
 

@@ -12,7 +12,7 @@ ms.author: davidi
 LocalizationGroup: Connect to data
 ms.openlocfilehash: 9d7c5415d084ea7ca9b6a6dd4da3e84662fc6349
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: fi-FI
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "61303801"
@@ -20,17 +20,17 @@ ms.locfileid: "61303801"
 # <a name="directquery-and-sap-hana"></a>DirectQuery ja SAP HANA
 Voit muodostaa yhteyden **SAP HANA** -tietolähteisiin suoraan **DirectQueryn** avulla. Voit muodostaa yhteyden SAP HANA -tietolähteisiin kahdella tavalla:
 
-* **Käsittele SAP HANAa monidimensioisena lähteenä (oletus):**  Tässä tapauksessa Power BI toimii samankaltaisesti kuin muihin monidimensioisiin tietolähteisiin yhdistettäessä (esimerkiksi SAP Business Warehouse tai Analysis Services). Kun muodostat yhteyden SAP HANA-asetuksen, yksittäisen Analyyttisten tai Näytä valittuun ja kaikki mittayksiköt, hierarkiat ja määritteet ovat käytettävissä kenttäluettelossa. Kun visualisointeja luodaan, koostetiedot haetaan aina SAP HANA -tietolähteestä. Tämä on suositeltu tapa. Se on myös oletustapa uusille DirectQuery-raporteille, jotka käyttävät SAP HANA -tietolähteitä.
+* **Käsittele SAP HANAa monidimensioisena lähteenä (oletus):**  Tässä tapauksessa Power BI toimii samankaltaisesti kuin muihin monidimensioisiin tietolähteisiin yhdistettäessä (esimerkiksi SAP Business Warehouse tai Analysis Services). Kun muodostat yhteyden SAP HANA -tietolähteeseen tällä asetuksella, valittuna on yksi analyysi- tai laskentanäkymä ja kaikki sen mittarit, hierarkiat ja määritteet ovat käytettävissä kenttäluettelossa. Kun visualisointeja luodaan, koostetiedot haetaan aina SAP HANA -tietolähteestä. Tämä on suositeltu tapa. Se on myös oletustapa uusille DirectQuery-raporteille, jotka käyttävät SAP HANA -tietolähteitä.
 
-* **Käsittele SAP HANAa suhteellisena lähteenä:** Tässä tapauksessa Power BI käsittelee SAP HANA -tietolähdettä suhteellisena lähteenä. Tämä on joustavampi. Sinun täytyy olla tarkkana tämän lähestymistavan mittayksiköt koostetaan odotetusti ja jotta suorituskykyongelmat voidaan välttää.
+* **Käsittele SAP HANAa suhteellisena lähteenä:** Tässä tapauksessa Power BI käsittelee SAP HANA -tietolähdettä suhteellisena lähteenä. Tämä on joustavampi tapa. Tällä tavalla täytyy kuitenkin olla tarkkana, jotta mittarit koostetaan odotetusti ja jotta suorituskykyongelmat voidaan välttää.
 
-Yhteyden lähestymistavan määritetään yleisellä työkaluasetuksella, joka on määritetty valitsemalla **tiedosto > Asetukset ja vaihtoehdot** ja sitten **asetukset > DirectQuery**, valitse sitten haluamasi vaihtoehto  **Käsittele SAP HANA-tietolähdettä suhteellisena lähteenä**, seuraavassa kuvassa esitetyllä tavalla. 
+Yhdistämistapa määritetään yleisellä työkaluasetuksella, jonka voit määrittää valitsemalla **Tiedosto > Asetukset ja vaihtoehdot** > **Asetukset > DirectQuery** > **Käsittele SAP HANAa suhteellisena lähteenä**, kuten seuraavassa kuvassa näytetään. 
 
 ![](media/desktop-directquery-sap-hana/directquery-sap-hana_01a.png)
 
-Asetus SAP HANAn käsittelemiseksi suhteellisena lähteenä määrittää tavan, jolla kaikki *uudet* DirectQuerya käyttävät raportit muodostavat yhteyden SAP HANA -tietolähteisiin. Sillä ei ole vaikutusta mihinkään nykyisen raportin olemassa oleviin SAP HANA -yhteyksiin tai mihinkään yhteyksiin missään muissa avatuissa raporteissa. Jos asetusta ei ole tällä hetkellä valittu ja lisäät sitten uuden yhteyden SAP HANA -tietolähteeseen **Nouda tiedot** -toiminnolla, yhteys muodostetaan siten, että SAP HANA -tietolähdettä käsitellään monidimensioisena lähteenä. Kuitenkin jos eri raportin, joka muodostaa myös yhteyden SAP HANA ja raportin jatkossakin sen asetuksen mukaisesti, joka oli toimivat *, kun se on luotu*, mikä tarkoittaa, että muodostat yhteyden SAP HANA-raportteja, jotka olivat luotu ennen sen helmikuun 2018, käsittelevät jatkossakin SAP HANA-tietolähdettä suhteellisena lähteenä. 
+Asetus SAP HANAn käsittelemiseksi suhteellisena lähteenä määrittää tavan, jolla kaikki *uudet* DirectQuerya käyttävät raportit muodostavat yhteyden SAP HANA -tietolähteisiin. Sillä ei ole vaikutusta mihinkään nykyisen raportin olemassa oleviin SAP HANA -yhteyksiin tai mihinkään yhteyksiin missään muissa avatuissa raporteissa. Jos asetusta ei ole tällä hetkellä valittu ja lisäät sitten uuden yhteyden SAP HANA -tietolähteeseen **Nouda tiedot** -toiminnolla, yhteys muodostetaan siten, että SAP HANA -tietolähdettä käsitellään monidimensioisena lähteenä. Jos taas avaat eri raportin, joka muodostaa myös yhteyden SAP HANA -tietolähteeseen, tämä raportti toimii jatkossakin sen asetuksen mukaisesti, joka oli valittuna *raportin luontihetkellä*. Tämä tarkoittaa sitä, että kaikki SAP HANA -tietolähteisiin yhteyden muodostavat raportit, jotka on luotu ennen helmikuuta 2018, käsittelevät jatkossakin SAP HANA -tietolähteitä suhteellisina lähteinä. 
 
-Nämä kaksi tapaa toimivat eri tavalla, ja se ei ole mahdollista vaihtaa olemassa olevan raportin yksi tapa toiseen. 
+Nämä kaksi tapaa toimivat eri tavalla, joten olemassa olevan raportin tapaa ei voi vaihtaa toiseksi. 
 
 Tutustumme nyt molempiin näistä tavoista.
 
@@ -38,9 +38,9 @@ Tutustumme nyt molempiin näistä tavoista.
 
 Kaikki uudet SAP HANA -tietolähteisiin tällä tavalla muodostetut yhteydet käsittelevät SAP HANA -tietolähteitä oletusarvoisesti monidimensioisina tietolähteinä. Jos haluat käsitellä SAP HANA -tietolähdettä suhteellisena lähteenä, sinun täytyy valita **Tiedosto > Asetukset ja vaihtoehdot > Asetukset** > **Direct Query ja valita sitten Käsittele SAP HANAa suhteellisena lähteenä -valintaruutu**. Kun tämä toiminto on **esikatseluvaiheessa**, monidimensioisella tavalla luotuja raportteja *ei voi* julkaista Power BI -palveluun. Jos niitä julkaistaan, tämä aiheuttaa virheitä, kun raportti avataan Power BI -palvelussa.  
 
-Kun muodostat yhteyden SAP HANA monidimensioisena tietolähteenä, ota huomioon seuraavat asiat:
+Kun muodostat yhteyden SAP HANA -tietolähteeseen monidimensioisena tietolähteenä, huomioi seuraavat seikat:
 
-* **Nouda tiedot -siirtymistoiminnossa** voi valita vain yhden SAP HANA -näkymän. Yksittäisten mittarien tai määritteiden valitseminen ei ole mahdollista. Yhdistämisen yhteydessä ei määritetä kyselyä, mikä eroaa tietojen tuomisesta tai DirectQueryn käytöstä, kun SAP HANA -tietolähdettä käsitellään suhteellisena lähteenä. Tämä tarkoittaa myös sitä, että se ei voi käyttää suoraan SAP HANA SQL-kyselyn, kun valitset tämän yhdistämistavan.
+* **Nouda tiedot -siirtymistoiminnossa** voi valita vain yhden SAP HANA -näkymän. Yksittäisten mittarien tai määritteiden valitseminen ei ole mahdollista. Yhdistämisen yhteydessä ei määritetä kyselyä, mikä eroaa tietojen tuomisesta tai DirectQueryn käytöstä, kun SAP HANA -tietolähdettä käsitellään suhteellisena lähteenä. Tämä tarkoittaa myös sitä, että et voi käyttää suoraan SAP HANA SQL -kyselyä, kun valitset tämän yhdistämistavan.
 
 * Kaikki valitun näkymän mittarit, hierarkiat ja määritteet näytetään kenttäluettelossa. 
 
@@ -54,13 +54,13 @@ SAP HANA -tietolähteen käsitteleminen monidimensioisena tietolähteenä ei ole
 
 * Mikä tahansa määrite, joka sisältyy vähintään yhteen hierarkiaan, piilotetaan oletusarvoisesti. Saat ne kuitenkin tarvittaessa näkyviin valitsemalla kenttäluettelon pikavalikosta **Näytä piilotetut**. Samassa pikavalikossa voit myös tarvittaessa määrittää ne näkyviksi.
 
-* SAP HANAssa määrite voidaan määrittää käyttämään toista määritettä selitteenä. Esimerkiksi **tuotteen** (jonka arvot ovat 1,2,3, ja niin edelleen) voi käyttää **ProductName** (jonka arvot ovat Bike, Shirt, Gloves ja niin edelleen) selitteenä. Tässä tapauksessa kenttäluettelossa näytetään yksittäinen **Product**-kenttä, jonka arvoja ovat selitteet Bike, Shirt, Gloves ja niin edelleen, mutta ne lajitellaan ja niiden yksilöllisyys määritetään avainarvoilla 1,2,3. Myös piilotettu **Product.Key**-sarake luodaan, jotta taustalla olevia avainarvoja voidaan käyttää tarvittaessa. 
+* SAP HANAssa määrite voidaan määrittää käyttämään toista määritettä selitteenä. Esimerkiksi **Product**-määrite (jonka arvot ovat 1,2,3, ja niin edelleen) voi käyttää selitteenä **ProductName**-määritettä (jonka arvot ovat Bike,Shirt,Gloves ja niin edelleen). Tässä tapauksessa kenttäluettelossa näytetään yksittäinen **Product**-kenttä, jonka arvoja ovat selitteet Bike, Shirt, Gloves ja niin edelleen, mutta ne lajitellaan ja niiden yksilöllisyys määritetään avainarvoilla 1,2,3. Myös piilotettu **Product.Key**-sarake luodaan, jotta taustalla olevia avainarvoja voidaan käyttää tarvittaessa. 
 
-Mitkä tahansa taustalla olevassa SAP HANA -näkymässä määritetyt muuttujat näytetään yhdistämishetkellä, jolloin tarvittavat arvot voidaan antaa. Näitä arvoja voi muuttaa myöhemmin valitsemalla **muokkaa kyselyitä** valintanauhassa ja sitten **parametrien hallinta** näytetään avattavasta valikosta. 
+Mitkä tahansa taustalla olevassa SAP HANA -näkymässä määritetyt muuttujat näytetään yhdistämishetkellä, jolloin tarvittavat arvot voidaan antaa. Näitä arvoja voi myöhemmin muokata valitsemalla valintanauhasta **Muokkaa kyselyitä** ja valitsemalla sitten näyttöön avautuvasta avattavasta valikosta **Parametrien hallinta**. 
 
 Sallitut mallinnustoiminnot ovat rajoitetumpia kuin yleensä DirectQuerya käytettävissä, koska järjestelmän täytyy varmistaa, että oikeat koostetiedot voidaan aina hankkia SAP HANA -tietolähteestä. Voit kuitenkin silti tehdä monia lisäyksiä ja muutoksia, voit esimerkiksi määrittää mittareita, piilottaa kenttiä ja nimetä niitä uudelleen sekä määrittää näyttömuotoja. Kaikki tällaiset muutokset säilytetään päivitettäessä. Lisäksi kaikki SAP HANA -näkymään tehdyt muutokset, jotka eivät ole ristiriidassa, otetaan käyttöön. 
 
-### <a name="additional-modeling-restrictions"></a>Mallinnuksen Lisärajoitukset
+### <a name="additional-modeling-restrictions"></a>Mallinnuksen lisärajoitukset
 
 Kun muodostat yhteyden SAP HANA -tietolähteeseen DirectQuerylla (siten, että tietolähdettä käsitellään monidimensioisena tietolähteenä), ensisijaiset mallinnuksen lisärajoitukset ovat seuraavat: 
 
@@ -71,7 +71,7 @@ Kun muodostat yhteyden SAP HANA -tietolähteeseen DirectQuerylla (siten, että t
 * **Sarakkeiden ja mittarien tiedot ovat kiinteät:** Kenttäluettelossa näkyvä sarakkeiden ja mittarien luettelo on kiinteä taustalla olevan lähteen mukaisesti, joten sitä ei voi muokata. Et voi esimerkiksi poistaa saraketta tai vaihtaa sen tietotyyppiä (voit kuitenkin vaihtaa sen nimeä).
 * **Muut DAX-rajoitukset:** Mittarimääritelmissä käytettävälle DAX:lle on lisärajoituksia lähteen rajoitusten johdosta. Et esimerkiksi voi käyttää koostefunktiota taulukossa.
 
-### <a name="additional-visualization-restrictions"></a>Visualisointien Lisärajoitukset
+### <a name="additional-visualization-restrictions"></a>Visualisointien lisärajoitukset
 
 Visualisoinneilla on rajoituksia, kun muodostat yhteyden SAP HANA -tietolähteeseen DirectQuerylla (siten, että tietolähdettä käsitellään monidimensioisena tietolähteenä): 
 * **Ei sarakkeiden koostamista:** Et voi vaihtaa visualisoinnin sarakkeen koostamista. Sen asetus on aina *Älä tee yhteenvetoa*.
@@ -90,7 +90,7 @@ Sinun kannattaa aloittaa selventämällä suhteellisen lähteen (esimerkiksi SQL
 Jos tiedot tuotaisiin Power BI:hin (DirectQueryn käytön sijasta), tulos olisi seuraava:
 
 * Tiedot tuodaan sillä koostamistasolla, jonka **kyselyeditorilla** luotu kysely määrittää. Se voi olla esimerkiksi keskimääräinen hinta tuotteen mukaan. Tämän tuloksena saadaan taulukko, jossa on kaksi saraketta: *ProductID* ja *AveragePrice*. Niitä voi käyttää visualisoinneissa.
-* Visualisoinnissa mikä tahansa koostaminen tämän jälkeen (esimerkiksi *Summa*, *Keskiarvo* tai *Vähimmäisarvo*) suoritetaan näille tuoduille tiedoille. Jos esimerkiksi sisällytät *AveragePrice*-sarakkeen visualisointiin, järjestelmä käyttää oletusarvoisesti *Summa*-koostetta, jolloin se palauttaa *AveragePrice*-sarakkeen summan kullekin *ProductID:lle*. Tässä esimerkissä tulos olisi 13,67. Sama koskee kaikkia muita visualisoinnissa käytettäviä koostefunktioita (esimerkiksi *Vähimmäisarvo*, *Keskiarvo* ja niin edelleen). Esimerkiksi *keskimääräinen* - *AveragePrice* palauttaa keskiarvon arvoille 6,66, 4 ja 3, joka vastaa tehtävässä täten arvon 4,56, ja ei keskiarvoa *hinta* kuusi tietueille pohjana olevan taulukko, joka on 5.17.
+* Visualisoinnissa mikä tahansa koostaminen tämän jälkeen (esimerkiksi *Summa*, *Keskiarvo* tai *Vähimmäisarvo*) suoritetaan näille tuoduille tiedoille. Jos esimerkiksi sisällytät *AveragePrice*-sarakkeen visualisointiin, järjestelmä käyttää oletusarvoisesti *Summa*-koostetta, jolloin se palauttaa *AveragePrice*-sarakkeen summan kullekin *ProductID:lle*. Tässä esimerkissä tulos olisi 13,67. Sama koskee kaikkia muita visualisoinnissa käytettäviä koostefunktioita (esimerkiksi *Vähimmäisarvo*, *Keskiarvo* ja niin edelleen). Esimerkiksi *AveragePrice*-sarakkeen *Keskiarvo*-funktio antaa keskiarvon arvoille 6,66, 4 ja 3 (tämän tulos on 4,56), ei keskiarvoa *Price*-sarakkeen kuudelle taustalla olevalle tietueelle (joiden keskiarvo on 5,17).
   
 Jos **DirectQuerya** käytetään (saman suhteellisen lähteen avulla) tuomisen asemesta, sama semantiikka on voimassa ja tulos on täysin sama:  
 
@@ -103,15 +103,15 @@ SAP HANAn luonteesta johtuen alkuperäisellä **Nouda tiedot** -toiminnolla mä�
 
 Yllä olevaa SQL Server -esimerkkiä vastaavassa tilanteessa SAP HANA -näkymä sisältää sarakkeet *ID*, *ProductID*, *DepotID* ja mittarin *AveragePrice*, jotka on määritetty näkymässä *Average of Price* -funktiolla.  
     
-Jos **Nouda tiedot** kokemuksen yksinkertaisempaa on **ProductID** ja **AveragePrice** mittayksikkö, kysely määrittää näkymälle, joka pyytää koostefunktiot (aiemmassa esimerkissä yksinkertaisuuden pseudo-SQL: ää käytetään, joka ei vastaa SAP HANA SQL: n tarkkaa syntaksia). Tämän jälkeen kaikki muut visualisoinnissa määritetyt koosteet siis koostavat edelleen tämän kyselyn tuloksia. Kuten aiemmin SQL Serverin kohdassa kerrottiin, tämä koskee sekä tuomista että DirectQuerya. DirectQuery tapauksessa kyselyn **Nouda tiedot** tai **Kyselyeditorin** käytetään alivalinnassa yksittäisessä kyselyssä, joka lähetetään SAP HANA ja ei todellisuudessa tapaus, joka kaikki tiedot lueta sisään edellisen Jos haluat jatkokoostamista.  
+Jos **Nouda tiedot** -toiminnossa valitaan mittarit **ProductID** ja **AveragePrice**, tämä määrittää kyselyn tälle näkymälle siten, että näitä koostetietoja pyydetään (aiemmassa esimerkissä käytetään yksinkertaisempaa pseudo-SQL:ää, joka ei vastaa SAP HANA SQL:n tarkkaa syntaksia). Tämän jälkeen kaikki muut visualisoinnissa määritetyt koosteet siis koostavat edelleen tämän kyselyn tuloksia. Kuten aiemmin SQL Serverin kohdassa kerrottiin, tämä koskee sekä tuomista että DirectQuerya. DirectQuerya käytettäessä **Nouda tiedot** -toiminnon tai **kyselyeditorin** kyselyä käytetään alivalinnassa yksittäisessä kyselyssä, joka lähetetään SAP HANAan, joten kaikkia tietoja ei siis todellisuudessa lueta sisään ennen jatkokoostamista.  
 
 Kaikkien edellä mainittujen seikkojen ja toimintojen johdosta sinun täytyy huomioida seuraavat tärkeät seikat, kun käytät DirectQuerya SAP HANAn kanssa:  
 
 * Visualisoinneissa suoritettujen lisäkoostamisten kanssa täytyy olla tarkkana aina, kun SAP HANAn mittari ei ole lisäävä (jos se ei siis ole yksinkertainen *Summa*-, *Vähimmäisarvo*- tai *Enimmäisarvo*-funktio).
 
-* **Nouda tiedot** -toiminnossa ja **kyselyeditorissa** tulee sisällyttää mukaan vain ne sarakkeet, joita tarvitaan tarvittavien tietojen noutamiseen, koska tulos on kysely ja koska tämän kyselyn täytyy olla sellainen kysely, jonka voi lähettää SAP HANAan. Esimerkiksi jos kymmeniä sarakkeet on valittu, että ne saatetaan tarvita myöhemmät visualisoinneissa ajatusjohtajuutta kanssa sitten jopa directquerylle yksinkertaisen visualisoinnin tarkoittaa alivalinta käyttää koostefunktiota kysely sisältää sarakkeita, joilla on yleensä nämä kymmeniä heikko.
+* **Nouda tiedot** -toiminnossa ja **kyselyeditorissa** tulee sisällyttää mukaan vain ne sarakkeet, joita tarvitaan tarvittavien tietojen noutamiseen, koska tulos on kysely ja koska tämän kyselyn täytyy olla sellainen kysely, jonka voi lähettää SAP HANAan. Jos valitset esimerkiksi kymmeniä sarakkeita, koska ajattelet, että tarvitset niitä ehkä myöhemmissä visualisoinneissa, tässä tapauksessa DirectQueryssa yksinkertainenkin visualisointi tarkoittaa sitä, että alivalinnassa käytetty koostekysely sisältää nämä kymmenet sarakkeet. Yleensä tämä tarkoittaa heikkoa tehokkuutta kyselylle.
   
-Tarkastellaan esimerkkiä. Seuraavassa esimerkissä valitaan viisi saraketta (**CalendarQuarter**, **Color**, **LastName**, **ProductLine**, **SalesOrderNumber**) **Nouda tiedot** -valintaikkunassa sekä mittari *OrderQuantity*. Tämä merkitsee sitä, että kun luot myöhemmin yksinkertaisen visualisoinnin, joka sisältää Min OrderQuantity -määrän, saat tulokseksi seuraavan SQL-kyselyn SAP HANAan. Harmaana näkyvä osio on alivalinta, joka sisältää kyselyn **Nouda tiedot** -toiminnosta  /  **kyselyeditorista**. Jos tämä alivalinta antaa suuren kardinaliteettituloksen, SAP HANA tuloksena suorituskyvyn todennäköisesti hitaasti.  
+Tarkastellaan esimerkkiä. Seuraavassa esimerkissä valitaan viisi saraketta (**CalendarQuarter**, **Color**, **LastName**, **ProductLine**, **SalesOrderNumber**) **Nouda tiedot** -valintaikkunassa sekä mittari *OrderQuantity*. Tämä merkitsee sitä, että kun luot myöhemmin yksinkertaisen visualisoinnin, joka sisältää Min OrderQuantity -määrän, saat tulokseksi seuraavan SQL-kyselyn SAP HANAan. Harmaana näkyvä osio on alivalinta, joka sisältää kyselyn **Nouda tiedot** -toiminnosta  /  **kyselyeditorista**. Jos tämä alivalinta tuottaa suuren kardinaliteettituloksen, SAP HANA antaa tuloksia todennäköisesti hitaasti.  
 
 ![](media/desktop-directquery-sap-hana/directquery-sap-hana_03.png)
 
@@ -130,7 +130,7 @@ Seuraavassa taulukossa luetellaan kaikki SAP HANAn toiminnot ja ominaisuudet, jo
 Tämä johtuu siitä, että Power BI käyttää SAP HANAa SQL-liittymän kautta (eikä pää- ja alatasohierarkioita voi käyttää täysin SQL:n avulla).
 * **Muut hierarkian metatiedot**: Hierarkioiden perusrakenne näytetään Power BI:ssä, mutta joillain hierarkian metatiedoilla (esimerkiksi epäjatkuvien hierarkioiden toiminnan ohjaamisella) ei ole vaikutusta.
 Tämäkin johtuu SQL-liittymän rajoituksista.
-* **SSL-yhteys** : voi muodostaa tuominen ja moniulotteinen SSL: N kanssa, ostavat voi muodostaa yhteyttä SAP HANA-esiintymiin määritetty käyttämään SSL suhteellisena liittimelle.
+* **SSL:ää käyttävä yhteys**: voit muodostaa yhteyden käyttämällä tuontia ja moniulotteisuutta SSL:n avulla, mutta et voi muodostaa yhteyttä SAP HANA -esiintymiin, jotka on määritetty käyttämään SSL:ää.
 * **Määritenäkymien tuki**: Power BI voi muodostaa yhteyden analyysi- ja laskentanäkymiin, mutta ei suoraan määritenäkymiin.
 * **Luettelo-objektien tuki**: Power BI ei voi muodostaa yhteyttä luettelo-objekteihin.
 * **Muutokset muuttujiin julkaisemisen jälkeen**: et voi muuttaa minkään SAP HANA -muuttujien arvoja suoraan Power BI -palvelussa sen jälkeen, kun raportti on julkaistu. 

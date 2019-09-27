@@ -13,7 +13,7 @@ ms.author: davidi
 LocalizationGroup: Create reports
 ms.openlocfilehash: 99ad06b84b01ce94b3433952cdd031a81c336e04
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: fi-FI
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "65454137"
@@ -48,7 +48,7 @@ Selvitä merkityksellisten tietojen avulla, missä kohtaa kaavioiden jakaumat er
 
 Valitun suodattimen käyttämät arvot näytetään käyttämällä normaalia oletusväriä. Kokonaisarvot näytetään alkuperäisen aloitusvisualisoinnin mukaisesti harmaana vertailun helpottamiseksi. Voit sisällyttää kaavioon enintään kolme eri suodatinta (tässä esimerkissä *Touring Bikes*, *Mountain Bikes* ja *Road Bikes*) ja valita eri suodattimia napsauttamalla niitä (tai valita useita pitämällä Ctrl-näppäintä pohjassa).
 
-Yksinkertaisten lisämittarien, kuten tässä esimerkissä *Kokonaismyyntilukujen* vertailu perustuu absoluuttisten arvojen sijasta suhteellisiin arvoihin. Siksi Touring Bikes myynti on pienempi kuin kaikki luokat yleistä myynti, visualisointi käyttää oletusarvoisesti kahden akselin sallimaan myynti kaikissa eri maissa, ja kaikki luokat bikes Touring Bikes osuus välistä vertailua.  Visualisoinnin piilottaminen ja näyttäminen mahdollistavat näiden kahden arvon näkymisen samalla akselilla, jolloin absoluuttiset arvot ovat helposti vertailtavissa (kuten seuraavassa kuvassa).    
+Yksinkertaisten lisämittarien, kuten tässä esimerkissä *Kokonaismyyntilukujen* vertailu perustuu absoluuttisten arvojen sijasta suhteellisiin arvoihin. Tästä johtuen, vaikka Touring Bikesien myynti on vähäisempää kuin kaikkien luokkien yhteismyyntiarvo, visualisointi käyttää oletusarvoisesti kaksoisakselia, jotta eri maiden Touring Bikesien myyntiosuuksien vertailu kaikkien muiden pyöräkategorioiden kanssa olisi mahdollista.  Visualisoinnin piilottaminen ja näyttäminen mahdollistavat näiden kahden arvon näkymisen samalla akselilla, jolloin absoluuttiset arvot ovat helposti vertailtavissa (kuten seuraavassa kuvassa).    
 
 ![Merkityksellisissä tiedoissa käytettävät visualisoinnit](media/desktop-insights-find-where-different/find-where-different_04.png)
 
@@ -63,7 +63,7 @@ Voit käyttää merkityksellistä tietoa raportin ollessa luku- tai muokkaustila
 ## <a name="details-of-the-returned-results"></a>Palautettujen tulosten tiedot
 Algoritmin toimintaa voidaan ajatella niin, että otetaan mallin kaikki muut sarakkeet ja näiden sarakkeiden kaikki arvot otetaan käyttöön alkuperäisen visualisoinnin suodattimina, ja katsomalla sitten mitkä kyseisistä suodatinarvoista tuottavat eniten alkuperäisarvosta *poikkeavia* tuloksia.
 
-Mitä todennäköisesti ihmetellä *eri* tarkoittaa. Oletetaan esimerkiksi, että USA:n ja Kanadan välinen kokonaismyyntijakauma olisi seuraavanlainen:
+Mietit varmaankin, mitä *poikkeavalla* tarkoitetaan. Oletetaan esimerkiksi, että USA:n ja Kanadan välinen kokonaismyyntijakauma olisi seuraavanlainen:
 
 |Maa  |Myynti ($M)|
 |---------|----------|
@@ -97,7 +97,7 @@ Mittarien luonteesta johtuen arvoja *pidetään* merkittävästi poikkeavina. Ei
 
 Näytettävistä visualisoinneista on tarkoitus näkyä selvästi kokonaisjakaumissa havaitut erot (alkuperäisen visualisoinnin mukaisesti) ja arvot tiettyä suodatinta käyttämällä.  
 
-Lisättävien mittarien, kuten edellisessä esimerkissä *myynnin* ollessa kyseessä, käytetään pylväs- ja viivakaavioita, joissa asianmukaisesti skaalattu kaksoisakseli tekee suhteellisten arvojen vertailusta helppoa. Sarakkeissa näkyvät suodattimen mukaiset arvot ja rivillä kokonaisarvo (normaalisti sarakeakseli vasemmalla ja riviakseli oikealla). Rivin näytetään *porrastetun* tyyli, katkoviiva, täytetty harmaa. Edellinen esimerkiksi jos sarake akselin enimmäisarvo on 4, ja rivin akselin enimmäisarvo on 20, sitten se tarjoaisi helppoa suhteellisen arvojen välillä USA ja Kanada suodatetun ja yleistä arvojen vertailu. 
+Lisättävien mittarien, kuten edellisessä esimerkissä *myynnin* ollessa kyseessä, käytetään pylväs- ja viivakaavioita, joissa asianmukaisesti skaalattu kaksoisakseli tekee suhteellisten arvojen vertailusta helppoa. Sarakkeissa näkyvät suodattimen mukaiset arvot ja rivillä kokonaisarvo (normaalisti sarakeakseli vasemmalla ja riviakseli oikealla). Rivi näytetään *porrastetulla* tyylillä, jossa on katkoviiva ja harmaa täyttö. Edelliseen esimerkkiin viitaten, jos sarakeakselin enimmäisarvo on 4 ja riviakselin enimmäisarvo on 20, tekee se USA:n ja Kanada suodatettujen kokonaisarvojen suhteellisten arvojen vertailun helpoksi. 
 
 Samalla tavalla ei-lisättäville mittareille, kuten edellisen esimerkin *katteelle* käytetään pylväs- ja viivakaaviota, jossa yksittäisen akselin absoluuttiset arvot ovat helposti vertailtavissa. Viiva (harmaalla täytetty) näyttää taas kokonaisarvon. Vertailtiinpa sitten todellisia tai suhteellisia arvoja, jakaumien eroavaisuuden määrittäminen ei ole yksinkertaisesti vain arvojen eroavaisuuksien laskemista. Esimerkki:
 
@@ -107,7 +107,7 @@ Samalla tavalla ei-lisättäville mittareille, kuten edellisen esimerkin *kattee
 
 * Merkittävimpien tulosten valintaan käytetään monenlaista heuristiikkaa, ja valinnassa otetaan huomioon esimerkiksi tietojen väliset muut suhteet.
      
-Eri sarakkeiden ja kyseisten sarakkeiden arvojen tarkastelun jälkeen valitaan suurimmat eroavaisuudet omaava arvojoukko. Ymmärtämisen helpottamiseksi, nämä ryhmitellään sarakkeisiin, joista ensimmäiseen listataan suurimmat eroavaisuudet omaavat arvot. Enintään kolme arvoa näytetään saraketta kohti, mutta pienempi ehkä voi näyttää, jos vähintään kolme arvoja, jotka on suuri vaikutus tai jos joitakin arvoja ovat paljon impactful kuin muut. 
+Eri sarakkeiden ja kyseisten sarakkeiden arvojen tarkastelun jälkeen valitaan suurimmat eroavaisuudet omaava arvojoukko. Ymmärtämisen helpottamiseksi, nämä ryhmitellään sarakkeisiin, joista ensimmäiseen listataan suurimmat eroavaisuudet omaavat arvot. Saraketta kohti näytetään enintään kolme arvoa, paitsi jos arvojen joukossa on vähemmän kuin kolme suuren eroavaisuuden omaavaa arvoa, tai jotkin arvoista ovat paljon merkittävämpiä kuin toiset. 
 
 Kaikkia mallin sarakkeita ei välttämättä ehditä tarkastella käytettävissä olevassa ajassa, joten ei voida taata, että merkittävimmät sarakkeet ja arvot näytettäisiin. Eri heuristiikkoja käytetään kuitenkin varmistamaan, että todennäköisimmät sarakkeet tarkastetaan ensin. Oletetaan esimerkiksi, että sen jälkeen kun kaikki sarakkeet on tarkistettu, määritetään, että seura jakauman kannalta suurin merkittävyys, suurimmasta pienimpään:
 

@@ -12,12 +12,12 @@ ms.author: davidi
 LocalizationGroup: Data from files
 ms.openlocfilehash: 55571cda4558b5dd9ba28f757f6e11ad4b45f939
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: fi-FI
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "61136355"
 ---
-# <a name="self-service-data-prep-in-power-bi"></a>Omatoiminen tietojen valmistautuminen Power BI
+# <a name="self-service-data-prep-in-power-bi"></a>Omatoiminen tietojen valmisteleminen Power BI:ssä
 
 Tietojen määrä kasvaa jatkuvasti, ja on yhä haasteellisempaa saattaa tiedot käyttökelpoiseen, käsiteltävään muotoon. Tietojen halutaan olevan valmiita analysoitaviksi ja visualisointeihin, raportteihin ja koontinäyttöihin lisättäviksi, joten tietomäärät voidaan muuntaa nopeasti merkityksellisiksi tiedoiksi. Power BI:n massadatan **omatoimisen tietojen valmistelun** avulla muutat datan Power BI:n merkityksellisiksi tiedoiksi muutamalla napsautuksella.
 
@@ -108,10 +108,10 @@ Tallentamalla yritystietoja standardoidussa **Common Data Model** -muodossa BI-a
 Tässä artikkelissa annettiin yleiskatsaus massadatan omatoimisesta tietojen valmistelusta Power BI:ssä ja esitettiin useita tapoja sen käyttämiseen. Seuraavissa artikkeleissa perehdytään tarkemmin tietovoiden yleisiin käyttöskenaarioihin. 
 
 * [Tietovoiden luominen ja käyttäminen Power BI:ssä](service-dataflows-create-use.md)
-* [Laskettuja entiteettejä käyttämällä Power BI Premium](service-dataflows-computed-entities-premium.md)
-* [Dataflows käyttö paikallisiin tietolähteisiin](service-dataflows-on-premises-gateways.md)
-* [Power BI dataflows Kehittäjien resurssit](service-dataflows-developer-resources.md)
-* [Dataflows ja Azure Data Lake-integrointi](service-dataflows-azure-data-lake-integration.md)
+* [Laskettujen entiteettien käyttäminen Power BI Premiumissa](service-dataflows-computed-entities-premium.md)
+* [Tietovoiden käyttö paikallisiin tietolähteisiin](service-dataflows-on-premises-gateways.md)
+* [Kehittäjien resurssit Power BI -tietovoille](service-dataflows-developer-resources.md)
+* [Tietovuot ja Azure Data Lake -integrointi](service-dataflows-azure-data-lake-integration.md)
 
 Lisätietoja Power Querysta ja ajoitetusta päivityksestä on seuraavissa artikkeleissa:
 * [Kyselyn yleiskatsaus Power BI Desktopissa](desktop-query-overview.md)

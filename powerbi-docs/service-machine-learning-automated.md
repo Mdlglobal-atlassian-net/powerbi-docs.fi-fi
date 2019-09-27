@@ -1,6 +1,6 @@
 ---
 title: Automaattianalyysipalvelut Power BI:ssä (esikatselu)
-description: Opi käyttämään Power BI automatisoituja Automaattianalyysipalvelujen (AutoML)
+description: Opettele käyttämään automaattianalyysipalveluita Power BI:ssä
 author: davidiseminger
 manager: kfile
 ms.reviewer: ''
@@ -12,271 +12,271 @@ ms.author: davidi
 LocalizationGroup: conceptual
 ms.openlocfilehash: 894e92687a6283ce71b253bd4dc635aca0c4673f
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: fi-FI
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "61236452"
 ---
 # <a name="automated-machine-learning-in-power-bi-preview"></a>Automaattianalyysipalvelut Power BI:ssä (esikatselu)
 
-Automaattinen koneoppimisen (AutoML)-dataflows avulla liiketoiminta-analyytikkojen kouluttamaan, Vahvista ja Koneoppiminen malleja suoraan Power BI-kutsu. Se sisältää yksinkertainen kokemus uusi ML-malli, jossa analyytikot avulla voit määrittää syötteen tiedot harjoitetaan mallin niiden dataflows luomiseen. Palvelun automaattisesti poimii tärkeimpiin ominaisuuksiin, asianmukainen algoritmi valitsee säätää ja vahvistaa ML-malli. Sen jälkeen, kun malli on harjoitettu, Power BI luo automaattisesti raportin, joka sisältää tulokset vahvistuksen, jossa kerrotaan suorituskykyä ja analyytikot tulokset. Mallin voi käynnistää sitten kaikkien uusien tai päivitettyjen tietojen sisällä tietovirrassa.
+Tietovoiden automaattianalyysipalveluiden avulla yritysanalyytikot voivat harjoittaa, vahvistaa ja käynnistää koneoppimismalleja suoraan Power BI:ssä. Se sisältää yksinkertaisen kokemuksen uuden koneoppimismallin luomiseen – siinä analyytikot voivat tietovoita käyttämällä määrittää syötetiedot mallin harjoittamista varten. Palvelu poimii automaattisesti tärkeimmät ominaisuudet, valitsee sopivan algoritmin ja virittää ja vahvistaa koneoppimismallin. Kun mallia on harjoitettu, Power BI luo automaattisesti raportin, joka sisältää vahvistuksen tulokset selittäen suorituskyvyn ja tulokset analyytikoille. Malli voidaan sitten käynnistää kaikista uusista tai päivitetyistä tiedoista tietovuossa.
 
-![Tietokoneen learning-näyttö](media/service-machine-learning-automated/automated-machine-learning-power-bi-01.png)
+![Koneoppimisnäyttö](media/service-machine-learning-automated/automated-machine-learning-power-bi-01.png)
 
-Automaattinen automaattianalyysipalvelujen on käytettävissä, joita isännöidään vain Power BI Premium ja upotettujen kapasiteettien dataflows. Tämä esikatselu AutoML avulla voit kouluttamaan tietokoneen learning-mallien Binary ennusteen luokitus ja Regression malleille.
+Automaattianalyysipalvelut on käytettävissä vain Power BI Premiumissa ja upotetuissa kapasiteeteissa isännöidyissä tietovoissa. Tässä esikatselussa automaattianalyysipalvelut mahdollistaa koneoppimismallien harjoittamisen binaariennuste-, luokitus- ja regressiomalleja varten.
 
-## <a name="working-with-automl"></a>AutoML käsitteleminen
+## <a name="working-with-automl"></a>Automaattianalyysipalveluiden käyttö
 
-[Power BI dataflows](service-dataflows-overview.md) tarjouksen omatoimista tietojen prep suuri tiedoille. AutoML avulla voit hyödyntää tiedot-valmistelutyökalun vaivaa luomiseen tietokoneen oppimisen malleja suoraan Power BI sisällä.
+[Power BI -tietovuot](service-dataflows-overview.md) tarjoavat omatoimisen tietojen valmistelemisen massadataa varten. Automaattianalyysipalveluiden avulla voit hyödyntää tietojen valmistelua koneoppimismallien rakentamiseen suoraan Power BI:ssä.
 
-Power BI AutoML avulla tietoanalyytikot dataflows avulla voit rakentaa tietokoneen learning-tietomalleja yksinkertaistettu käytettävyyttä, vain Power BI-osaamistasi. Power BI automaattinen takana ML mallit luomisen datatiede useimmat guardrails Varmista, että tuotti malli on hyvä laadun ja näkyvyyden ja toimittaa koko merkityksellisiä tietoja ML mallin luomiseen käytetyn kanssa.
+Power BI:n automaattianalyysipalveluiden avulla tietoanalyytikot voivat käyttää tietovoita koneoppimismallien luomiseen yksinkertaistetulla kokemuksella käyttäen vain Power BI -taitoja. Koneoppimismallien luomisen taustalla olevasta tietotieteestä suurin osa on automatisoitu Power BI:n avulla, ja suojakaiteiden avulla varmistetaan, että tuloksena oleva malli on laadukas. Lisäksi näkyvyyden ansiosta saat täyden kuvan koneoppimismallisi luomiseen käytetystä prosessista.
 
-AutoML tukee luonnin **Binary ennusteen**, **luokitus**, ja **Regression** dataflows malleja. Nämä ovat valvotussa tietokoneen oppimisen malleja, mikä tarkoittaa sitä, että ne Lue viimeisten huomautuksia ennusteen muut havainnot tulokset tunnetut tulokset. Syötteen tietojoukon harjoitetaan AutoML mallia on joukko tietueita, jotka **otsikko** tunnetut tulokset kanssa.
+Automaattianalyysipalvelut tukee tietovoiden **binaariennuste**-, **luokitus**- ja **regressio**mallien luomista. Nämä ovat valvottavien koneoppimismallien tyyppejä, mikä tarkoittaa sitä, että ne oppivat aiempien havaintojen tunnetuista tuloksista muiden havaintojen tulosten ennustamiseksi. Automaattianalyysipalvelumallin harjoittamiseen käytettävä syötteiden tietojoukko on joukko tietueita, jotka **on merkitty** tunnetuilla tuloksilla.
 
-AutoML Power BI integroituu [automatisoituja ML](https://docs.microsoft.com/azure/machine-learning/service/concept-automated-ml) - [Azuren Automaattianalyysipalvelujen service](https://docs.microsoft.com/azure/machine-learning/service/overview-what-is-azure-ml) ML-mallien luomiseen. Et tarvitse kuitenkin AutoML käyttäminen Power BI Azure-tilausta. Koulutus-ja isännöinti ML mallit hallitsee kokonaan Power BI-palvelussa.
+Power BI:n automaattianalyysipalvelut integroi [automatisoidun koneoppimisen](https://docs.microsoft.com/azure/machine-learning/service/concept-automated-ml) [Azuren automaattianalyysipalvelusta](https://docs.microsoft.com/azure/machine-learning/service/overview-what-is-azure-ml) koneoppimismallien luomista varten. Voit kuitenkin käyttää automaattianalyysipalveluita Power BI:ssä ilman Azure-tilausta. Power BI -palvelu hallitsee täysin koneoppimismallien harjoittamista ja isännöintiä.
 
-ML-malli on harjoitettu, kun AutoML luodaan automaattisesti Power BI-raportin, jossa kerrotaan ML-malliin todennäköisesti suorituskyvyn. AutoML korostaa explainability, korostamalla avaimen influencers antamiesi, jotka vaikuttavat mallin palauttama predictions kesken. Raportti sisältää myös mittareita mallin ML mallin tyypin mukaan.
+Kun koneoppimismallia on harjoitettu, automaattianalyysipalvelut luo automaattisesti Power BI -raportin, jossa selitetään koneoppimismallisi todennäköinen suorituskyky. Automaattianalyysipalvelut korostaa selitettävyyttä korostamalla syötteesi tärkeimmät vaikuttajat, jotka vaikuttavat mallisi palauttamiin ennusteisiin. Raportti sisältää myös mallin keskeiset arvot koneoppimismallin tyypistä riippuen.
 
-Luodun raportin muilla sivuilla Näytä yhteenvedossa mallin ja koulutus-tiedot. Tilastoanalyysit yhteenveto on merkitystä käyttäjille, jotka haluaisit nähdä Vakiotiedot tieteelliset mittayksiköt mallin suorituskyvyn. Koulutus-tiedot yhteenvedon, jotka liittyvät mallinnus-parametrien kanssa mallin luomiseen suorittamisessa oli iterointia. Se myös kuvataan miten ML-mallin luomiseen käytetyn Jokainen syöte.
+Muut luodun raportin sivut näyttävät mallin tilastollisen yhteenvedon ja harjoittamisen tiedot. Tilastollinen yhteenveto kiinnostaa käyttäjiä, jotka haluavat tarkastella mallin suorituskyvyn tietotieteen vakiomittareita. Harjoitustiedoissa on yhteenveto kaikista niistä iteroinneista, jotka suoritettiin mallin luomiseksi, niihin liittyvillä mallinnusparametreilla. Siinä kuvataan myös, miten kutakin syötettä käytettiin koneoppimismallin luomisessa.
 
-Voit sitten käyttää ML mallin pisteiden tietojen. Kun tietovirrassa päivitetään, Koneoppiminen mallin predictions otetaan automaattisesti käyttöön tietoihisi. Power BI sisältää myös kunkin tietyn ennusteen pistemäärä, joka tuottaa ML-mallin yksilölliset selitys.
+Voit sitten käyttää koneoppimismalliasi tiedoissasi pisteyttämistä varten. Kun tietovuo päivitetään, koneoppismallin ennusteet otetaan automaattisesti käyttöön tiedoissasi. Power BI sisältää myös yksilöllisen selvityksen kunkin tietyn ennustustuloksen osalta, jonka koneoppimismalli tuottaa.
 
-## <a name="creating-a-machine-learning-model"></a>Tietokoneen learning-mallin luominen
+## <a name="creating-a-machine-learning-model"></a>Koneoppimismallin luominen
 
-Tässä osassa kuvataan AutoML-oppimisen mallin luomiseen. 
+Tässä osiossa kuvataan, miten voit luoda automaattianalyysipalveluiden koneoppimismallin. 
 
-### <a name="data-prep-for-creating-an-ml-model"></a>Tietojen Valmistaudu ML-mallin luominen
+### <a name="data-prep-for-creating-an-ml-model"></a>Tietojen valmistelu koneoppimismallin luontia varten
 
-Tietokoneen oppimisen mallin luominen Power BI-, sinun on ensin luotava tietovirrassa tietojen aiempien tulos tiedot, jota käytetään harjoitetaan ML-mallia. Määrittämisestä-tietovirrassa lisätietoja [Omatoiminen tietojen valmistautuminen Power BI](service-dataflows-overview.md).
+Koneoppimismallin luomiseksi Power BI:ssä sinun on ensin luotava tiedoille tietovuo historiallisilla tulostiedoilla, joita käytetään koneoppimismallin harjoittamiseen. Lisätietoja tietovuon määrittämisestä on kohdassa [Omatoiminen tietojen valmistelu Power BI:ssä](service-dataflows-overview.md).
 
-Nykyinen versio Power BI käyttää vain yksittäisen entiteetin tiedot ML mallia kouluttamaan. Joten jos historialliset tiedot koostuu useita entiteettejä, manuaalisesti Liitä tiedot yhteen tietovirrassa entiteettiin. Tulee myös lisätä minkä tahansa liiketoiminnan mittareita, jotka voi olla tulos ennusteen yrität strong predictors laskettuja sarakkeita.
+Nykyisessä versiossa Power BI käyttää vain yhden entiteetin tietoja koneoppimismallin harjoittamisessa. Jos siis historialliset tietosi koostuvat useista entiteeteistä, sinun on liitettävä tiedot manuaalisesti yksittäiseksi tietovuoentiteetiksi. Sinun tulee myös lisätä laskettuja sarakkeita sellaisiin liiketoimintamittareihin, jotka saattavat olla vahvoja ennustajia sen tuloksen kannalta, jota yrität ennustaa.
 
-AutoML on tiettyjä tietoja koskevat harjoitetaan koneoppimisen mallin. Nämä vaatimukset on kuvattu seuraavissa osioissa, asianmukainen malli-tyyppien perusteella.
+Automaattianalyysipalveluilla on tiettyjä tietovaatimuksia, jotka koskevat koneoppimismallin harjoittamista. Nämä vaatimukset on kuvattu alla olevissa osissa kunkin mallityypin perusteella.
 
-### <a name="configuring-the-ml-model-inputs"></a>ML mallin syötteitä määrittäminen
+### <a name="configuring-the-ml-model-inputs"></a>Koneoppimismallin syötteiden määrittäminen
 
-Luo AutoML-malli, valitse ML-kuvaketta **toiminnot** sarakkeen tietovirrassa entiteetin historialliset tiedot ja valitse **Lisää tietokoneen learning-malli**.
+Jos haluat luoda automaattianalyysipalvelumallin, valitse koneoppimisen kuvake historiallisen tiedot sisältävän tietovuoentiteetin **Toiminnot**-sarakkeesta ja valitse **Lisää koneoppimismalli**.
 
-![Lisää tietokoneen learning-malli](media/service-machine-learning-automated/automated-machine-learning-power-bi-02.png)
+![Lisää koneoppimismalli](media/service-machine-learning-automated/automated-machine-learning-power-bi-02.png)
 
-Yksinkertaistettu kokemus käynnistetään muodostuu ohjatun toiminnon, joka opastaa ML-mallin luomista. Ohjattu sisältää yksinkertainen seuraavasti.
+Tämän jälkeen käynnistyy yksinkertaistettu käyttökokemus, joka sisältää koneoppimismallin luomisprosessissa opastavan ohjatun toiminnon. Ohjatussa toiminnossa on seuraavat yksinkertaiset vaiheet.
 
-1. Valitse entiteetti, jolla aiempien tulos tiedot ja haluamasi kenttä, jonka ennusteen
-2. Valitse mallityyppi, jotka haluat nähdä ennusteen tyypin perusteella
-3. Valitse haluamasi malli käyttää ennakoivan signaalit syötteet
-4. Mallin nimi ja Tallenna määrityksesi
+1. Valitse historialliset tulostiedot sisältävä entiteetti sekä kenttä, jolle haluat saada ennusteen.
+2. Valitse mallityyppi sen ennustustyypin perusteella, jonka haluat näyttää.
+3. Valitse syötteet, joita haluat mallin käyttävän ennustavina signaaleina.
+4. Nimeä mallisi ja tallenna määritykset.
 
-Aiempien tulos-kenttä sisältää nimen määritteelle koulutus ML mallin, seuraavassa kuvassa.
+Historiallisen tuloksen kenttä tunnistaa koneoppimismallin harjoittamisessa käytettävän otsikon määritteen seuraavassa kuvassa esitetyllä tavalla.
 
-![Valitse tiedot aiempien tulos](media/service-machine-learning-automated/automated-machine-learning-power-bi-03.png)
+![Valitse historialliset tulostiedot](media/service-machine-learning-automated/automated-machine-learning-power-bi-03.png)
 
-Kun määrität aiempien tulos-kenttä, AutoML analysoi ML malleilla, jotka voivat koulutettava tiedot analysoimalla nimitiedot ja ehdottaa todennäköisesti ML mallityyppi, joka voi harjoitettu. 
+Kun määrität historiallisen tuloksen kentän, automaattianalyysipalvelut analysoi otsikon tiedot tunnistaakseen niiden koneoppimismallien tyypit, joita voidaan harjoittaa kyseisiä tietoja varten, ja ehdottaa todennäköisimmän koneoppimismallin tyypin harjoittamista varten. 
 
 > [!NOTE]
-> Mallin joitain tietotyyppejä ei välttämättä tueta tietoja, jotka olet valinnut.
+> Joitakin mallityyppejä ei välttämättä tueta valitsemiasi tietoja varten.
 
-AutoML analysoi myös kaikki valitun entiteetin ehdottaa syötteitä, joka voi käyttää harjoitetaan ML-mallin kentät. Tämä prosessi on arvioitu ja perustuu tilastoanalyysi, joten Tarkista käyttää syötteitä. Syötteitä, jotka ovat riippuvaisia aiempien tulos kenttää (tai nimikenttä) ei voi käyttää harjoitetaan ML-mallia, koska ne vaikuta suorituskykyyn.
+Automaattianalyysipalvelut analysoi myös kaikki valitun entiteetin kentät ja ehdottavat syötteitä, joita voidaan käyttää koneoppimismallin harjoittamiseen. Tämä prosessi on likimääräinen, ja se perustuu tilastolliseen analyysiin, joten tarkista käytetyt syötteet. Syötteitä, jotka ovat riippuvaisia historiallisen tuloksen kentästä (tai otsikkokentästä), ei tule käyttää koneoppimismallin harjoittamisessa, koska ne vaikuttavat sen suorituskykyyn.
 
 ![Mukauta syötekenttiä](media/service-machine-learning-automated/automated-machine-learning-power-bi-04.png)
 
-Viimeisessä vaiheessa voit nimetä mallin ja tallentaa sen asetuksia.
+Viimeisessä vaiheessa voit nimetä mallin ja tallentaa sen asetukset.
 
-Sinua kehotetaan Päivitä tietovirrassa, joka alkaa ML mallin koulutusprosessin tässä vaiheessa.
+Tässä vaiheessa sinua kehotetaan päivittämään tietovuo, mikä aloittaa koneoppimismallin harjoittamisprosessin.
 
-### <a name="ml-model-training"></a>ML mallin Harjoitus
+### <a name="ml-model-training"></a>Koneoppimismallin harjoittaminen
 
-Koulutus AutoML mallien on osa päivityksen tietovirrassa. AutoML valmistelee ensin tiedot-koulutus.
+Automaattianalyysipalvelumallien harjoittaminen on osa tietovuon päivitystä. Automaattianalyysipalvelut valmistelee ensin tietosi harjoittamista varten.
 
-AutoML jakaa historiatietojen annat koulutuksen ja testaus tietojoukkoja. Test-tietojoukko on pidätyksen, jota käytetään mallin suorituskyvyn jälkeen koulutus vahvistetaan. Nämä ovat hyödyntäneet kuin **koulutusta ja testaus** entiteettejä tietovirrassa. AutoML käyttää ristiintarkistuksen mallin vahvistusta varten.
+Automaattianalyysipalvelut jakaa antamasi historialliset tiedot harjoittamisen ja testauksen tietojoukkoihin. Testitietojoukko on pidätysjoukko, jota käytetään mallin suorituskyvyn vahvistamiseen harjoittamisen jälkeen. Nämä toteutuvat **harjoittamis- ja testaus**entiteetteinä tietovuossa. Automaattianalyysipalvelut käyttää ristiintarkistusta mallin vahvistuksessa.
 
-Seuraavaksi syötteen kunkin kentän analysoidaan ja huomioon ottaminen käytetään, joka korvaa korvaava arvot puuttuvat arvot. Muutamalla eri huomioon ottaminen strategioiden käytetään AutoML. Pakollinen näytteenotto ja normalisoiminen käytetään sitten tietojasi.
+Seuraavaksi kunkin syötekentän tiedot analysoidaan ja imputointi otetaan käyttöön, mikä korvaa puuttuvat arvot muilla arvoilla. Automaattianalyysipalvelut käyttää paria erilaista imputointistrategiaa. Sitten tarvittavat näytteenotot ja normalisointi otetaan käyttöön tiedoissa.
 
-AutoML koskee useita muunnokset ovat kukin valittu syötteen kenttä tietotyypiksi ja sen tilastoanalyysit ominaisuuksien perusteella. AutoML käyttää näitä muunnoksia käytettäväksi harjoitetaan ML mallin ominaisuuksia.
+Automaattianalyysipalvelut käyttää useita muunnoksia kuhunkin valittuun syötekenttään sen tietotyypin ja tilastollisten ominaisuuksien perusteella. Näiden muunnosten avulla automaattianalyysipalvelut poimii ominaisuuksia koneoppimismallisi harjoittamista varten.
 
-Koulutusprosessin AutoML malleille koostuu enintään 50 iterointien eri mallinnus algoritmit ja löytää mallin, jonka parhaan suorituskyvyn hyperparameter asetukset. Kaikkien näiden mallien lisäksi arvioidaan vahvistus pidätyksen test tietojoukon kanssa. Koulutus tässä vaiheessa AutoML Luo useita jaksojen koulutus-ja vahvistuksen nämä iterointia. Arvioidaan mallit suorituskykyä voi kestää ajan, missä tahansa kaksi tuntia tietojoukko ja varattua kapasiteettia käytettävissä olevien koosta riippuen useita minuutteja.
+Automaattianalyysipalvelumallien harjoittamisprosessi koostuu enintään 50 iteroinnista eri mallinnusalgoritmeilla ja hyperparametriasetuksilla suorituskykyisimmän mallin löytämiseksi. Kunkin mallin suorituskyky arvioidaan vahvistuksella pidätystestin tietojoukon kanssa. Tämän harjoitusvaiheen aikana automaattianalyysipalvelut luovat useita jaksoja näiden iteraatioiden harjoittamiselle ja vahvistukselle. Mallien suorituskyvyn arviointiprosessi voi kestää jonkin aikaa muutamasta minuutista muutamaan tuntiin tietojoukon koon ja käytettävissä olevien varattujen kapasiteettiresurssien mukaan.
 
-Joissakin tapauksissa luodaan lopullisen mallin saa käyttää ensemble oppimiseen, jossa käytetään useiden mallien toimittaa paremmin ennakoivan suorituskyvyn.
+Joissakin tapauksissa lopullinen luotu malli voi käyttää yhdistelmäoppimista, jossa useita malleja käytetään paremman ennakoivan suorituskyvyn saamiseksi.
 
-### <a name="automl-model-explainability"></a>AutoML mallin explainability
+### <a name="automl-model-explainability"></a>Automaattianalyysipalvelumallin selitettävyys
 
-Sen jälkeen, kun malli ole harjoitettu, AutoML analysoi syötteen ominaisuuksia ja mallin tulos välisen suhteen. Sopimuksen merkityksellisiin moninkertaisesti ja mallin tulos pidätyksen test tietojoukon kullekin syötteen ominaisuudelle muutos suuntaa. Tätä kutsutaan *toiminto tärkeä*.
+Mallin harjoittamisen jälkeen automaattianalyysipalvelut analysoi syöteominaisuuksien ja mallitulosteen välistä suhdetta. Se arvioi pidätystestin tietojoukon mallitulosteen suuruuden ja muutoksen suunnan kullekin syöteominaisuudelle. Tätä kutsutaan *ominaisuuden tärkeydeksi*.
 
-![Ominaisuus tärkeys](media/service-machine-learning-automated/automated-machine-learning-power-bi-05.png)
+![Ominaisuuden tärkeys](media/service-machine-learning-automated/automated-machine-learning-power-bi-05.png)
 
-### <a name="automl-model-report"></a>AutoML raportti
+### <a name="automl-model-report"></a>Automaattianalyysipalvelumallin raportti
 
-AutoML Luo Power BI-raportin, joka tekee yhteenvedon suorituskyvyn mallin vahvistuksen ja Yleinen ominaisuus tärkeyden aikana. Raportti sisältää yhteenvedon käyttöön ML-mallin pidätyksen testitiedot ja predictions tunnetut tulos arvoilla vertaillaan tuloksista.
+Automaattianalyysipalvelut luo Power BI -raportin, jossa on yhteenveto mallin suorituskyvystä vahvistuksen aikana sekä ominaisuuden yleinen tärkeys. Raportissa on yhteenveto tuloksista, jotka koskevat koneoppimismallin käyttämistä pidätystestin tiedoissa ja ennustusten vertaamista tunnettuihin tulosarvoihin.
 
-Voit tarkastella mallia raportin Ymmärtääksesi sen suorituskyvyn. Voit myös varmistaa, että mallin avaimen influencers Tasaa business-merkityksellisiä tietoja tunnetuista tulokset.
+Voit tutustua malliraporttiin, jotta ymmärrät sen suorituskyvyn. Voit myös vahvistaa, että mallin tärkeimmät vaikuttajat ovat yhdenmukaisia tunnettuja tuloksia koskevien liiketoimintatietojen kanssa.
 
-Kaavioiden ja mittayksiköitä käytetään kuvaamaan sitä, mallin suorituskyvyn raportin riippuu mallin. Seuraavissa osissa kuvataan nämä suorituskyvyn kaavioita ja mittayksiköt.
+Raportin mallin suorituskyvyn kuvaamisessa käytetyt kaaviot ja mittarit riippuvat mallin tyypistä. Nämä suorituskykykaaviot ja -mittarit kuvataan seuraavissa osissa.
 
-Raportin muita sivuja kuvaus tilastoanalyysit mittayksiköt tietoja mallin tietojenkäsittelytieteen näkökulmasta. Esimerkiksi **Binary ennusteen** raportti sisältää voitto kaavion ja OHJETIEDOSTO käyrän mallille.
+Raportin lisäsivuilla saatetaan kuvailla tilastollisia mittareita mallista tietotieteen näkökulmasta. Esimerkiksi **Binaarinen ennuste** -raportti sisältää mallin voittokaavion ja ROC-käyrän.
 
-Raportit sisältävät myös **koulutus tiedot** sivun, joka sisältää kuvaus ja miten mallin oli harjoitettu kuvaavat mallin suorituskyvyn päälle iterointien on kaavio suoritetaan.
+Raporteissa on myös **Harjoitustiedot**-sivu, joka sisältää kuvauksen mallin harjoittamisesta sekä kaavion, jossa kuvataan mallin suorituskyky kunkin iteraation suorittamisen aikana.
 
 ![Harjoitustiedot](media/service-machine-learning-automated/automated-machine-learning-power-bi-06.png)
 
-Tällä sivulla toinen osassa kuvataan, miten huomioon ottaminen menetelmää käyttää täyttämiseen syöttökenttiä, puuttuvat arvot myös ja miten syötteen kunkin kentän muunnettiin poimia mallin käytetyt ominaisuudet. Se sisältää myös lopullisen malli käyttää parametreja.
+Tämän sivun toisessa osiossa kerrotaan, miten imputointimenetelmää käytettiin syötekenttien puuttuvien arvojen täyttämiseen sekä miten kukin syötekenttä muunnettiin poimimaan mallissa käytetyt ominaisuudet. Se sisältää myös lopullisen mallin käyttämät parametrit.
 
-![Lisätietoja mallin](media/service-machine-learning-automated/automated-machine-learning-power-bi-07.png)
+![Lisätietoja mallista](media/service-machine-learning-automated/automated-machine-learning-power-bi-07.png)
 
-Jos tuotti malli käyttää ensemble kursseja, myös **koulutus tiedot** sivulla on myös osa, joka kuvaa kunkin tuotteen mallissa ensemble sekä sen parametreja leveys.
+Jos tuotettu malli käyttää yhdistelmäoppimista, niin **Harjoitustiedot**-sivulla on myös osio, joka kuvaa kunkin perustana olevan mallin painotusta yhdistelmässä sekä sen parametreja.
 
-![Painoarvo ensemble](media/service-machine-learning-automated/automated-machine-learning-power-bi-08.png)
+![Yhdistelmän painotus](media/service-machine-learning-automated/automated-machine-learning-power-bi-08.png)
 
-## <a name="applying-the-automl-model"></a>AutoML malli on otettu käyttöön
+## <a name="applying-the-automl-model"></a>Automaattianalyysipalvelumallin käyttäminen
 
-Jos olet tyytyväinen suorituskyvyn ML-mallin, joka on luotu, voit käyttää sitä uusien tai päivitettyjen tietojen, kun-tietovirrassa päivitetään. Voit tehdä tämän mallin raportista, valitsemalla **Käytä** painiketta oikeassa yläkulmassa.
+Jos olet tyytyväinen luodun koneoppimismallin suorituskykyyn, voit ottaa sen käyttöön uusissa tai päivitetyissä tiedoissa, kun tietovuo päivitetään. Voit tehdä tämän malliraportista valitsemalla **Käytä**-painikkeen oikeassa yläkulmassa.
 
-ML-mallin käyttöön sarakkeita, jotka lisätään tähän entiteettiin mallin output-entiteetti, johon se on otettava käyttöön ja etuliitteen nimi on määritettävä. Sarakkeiden nimien oletusarvoinen etuliite on mallinimi. *Käytä* funktio saa lisäparametrit mallin tyyppiin.
+Jos haluat käyttää koneoppimismallia, sinun täytyy määrittää sen entiteetin nimi, jossa se pitää ottaa käyttöön, sekä etuliite niille sarakkeille, jotka lisätään tähän entiteettiin mallitulostetta varten. Sarakkeiden nimien oletusetuliite on mallin nimi. *Käytä*-funktio voi sisältää mallityypille määritettyjä lisäparametreja.
 
-ML-malli on otettu käyttöön Luo uuden entiteetin tietovirrassa jälkiliite **rikastettua < mallin_nimi >** . Esimerkiksi jos käytät _PurchaseIntent_ -malliin _OnlineShoppers_ entiteetin tulos luodaan automaattisesti **OnlineShoppers rikastettua PurchaseIntent**.
+Koneoppimismallin käyttäminen luo uuden tietovuoentiteetin, jonka jälkiliite on **täydennetty <mallin_nimi>** . Jos esimerkiksi käytät _Ostoaie_-mallia _OnlineOstajat_-entiteetissä, tuloste luo kohteen **OnlineOstajat täydennetty Ostoaie**.
 
-Tällä hetkellä output-entiteetti ei voi käyttää esikatselu ML mallin tulokset Power Query-editorissa. Näytettävät sarakkeet näyttävät aina null tuloksena. Voit tarkastella tuloksia sekunnin tuloksena entiteetti, jolla jälkiliite **rikastettua < mallin_nimi > esikatselu** luodaan, kun malli on käytössä.
+Tällä hetkellä tuloste-entiteettiä ei voi käyttää koneoppimismallin tulosten esikatseluun Power Query -editorissa. Tulostesarakkeiden tuloksena näkyy aina tyhjäarvo. Jos haluat tarkastella tuloksia, toinen tuloste-entiteetti jälkiliitteellä **täydennetty <mallin_nimi> Esikatselu** luodaan, kun mallia käytetään.
 
-Sinun on päivitettävä tietovirrassa Esikatsele tuloksia Kyselyeditorissa.
+Sinun on päivitettävä tietovuo, jotta voit esikatsella tuloksia kyselyeditorissa.
 
 ![Kyselyeditori](media/service-machine-learning-automated/automated-machine-learning-power-bi-09.png)
 
-Kun otat käyttöön mallin, AutoML aina pitää yhteyttä predictions ajan tasalla kun tietovirrassa päivitetään.
+Kun otat mallin käyttöön, automaattianalyysipalvelut pitää ennusteet aina ajan tasalla, kun tietovuo päivitetään.
 
-AutoML sisältää myös yksilölliset selitys kullekin riville, se pisteyttää output-entiteetissä.
+Automaattianalyysipalvelut sisältää myös yksilöllisen selityksen kullekin tuloste-entiteetissä pisteytetylle riville.
 
-Käyttämään merkityksellisiä tietoja ja Koneoppiminen mallista predictions Power BI-raportin, voit muodostaa yhteyden output-entiteettiin käyttämällä Power BI Desktop **dataflows** connector.
+Jos haluat käyttää koneoppimismallin merkityksellisiä tietoja ja ennusteita Power BI -raportissa, voit muodostaa yhteyden tuloste-entiteettiin Power BI Desktopista käyttämällä **tietovuo**liitintä.
 
-## <a name="binary-prediction-models"></a>Binary ennusteen mallit
+## <a name="binary-prediction-models"></a>Binaariennustemallit
 
-Binary ennusteen malleja, Lisää virallisesti kutsutaan **binaariluokitus mallien**, käytetään luokitella tietojoukon kahteen ryhmään. Niitä käytetään ennusteen tapahtumia, jotka voivat binary tulos, kuten onko myyntimahdollisuuden muuntaa, onko tili churn, onko laskun kiinnitetään aikaan. onko tapahtuman toimet ja niin edelleen.
+Binaariennustemalleja, jotka tunnetaan paremmin **binaariluokitusmalleina**, käytetään tietojoukon luokittelemisessa kahteen ryhmään. Niitä käytetään ennakoimaan tapahtumia, joilla voi olla binaarinen tulos, kuten onko myyntimahdollisuus muunnettavissa, vaihtuuko asiakas, maksetaanko lasku ajallaan, onko tapahtuma vilpillinen, ja niin edelleen.
 
-Koska tulos on binary, Power BI odottaa oltava totuusarvo, jolla on merkitty tunnettuja tulokset binary ennusteen mallin nimen **true** tai **false**. Esimerkiksi myyntimahdollisuuden muuntaminen mallissa, mahdollisuudet, jotka ovat voittaneet merkitty true, ne, jotka on menetetty merkitty false ja avoimet mahdollisuudet merkitty null.
+Koska tulos on binaraarinen, Power BI odottaa, että binaariennustemallin otsikkona on totuusarvo, jonka tunnetut tulokset on otsikoitu **tosi** tai **epätosi**. Esimerkiksi myyntimahdollisuuden muuntamismallissa voitettujen myyntimahdollisuuksien otsikkona on tosi, hävittyjen otsikkona on epätosi ja avoimien myyntimahdollisuuksien otsikkona on tyhjäarvo.
 
-Binary ennusteen mallin tulos on probability-arvo, joka tunnistaa, että tulos on true selite-arvoa vastaavan saavutetaan todennäköisyyttä.
+Binaariennustemallin tuloste on todennäköisyyden pistemäärä, joka määrittää todennäköisyyden sille, että otsikon arvoa vastaava tulos toteutuu.
 
-### <a name="training-a-binary-prediction-model"></a>Harjoitetaan Binary ennusteen mallia
+### <a name="training-a-binary-prediction-model"></a>Binaariennustemallin harjoittaminen
 
-Binary ennusteen mallin luominen koulutus tiedot sisältävä syötteen entiteetin on oltava Boolean-kenttä tunnistamiseen viimeisten tunnetut tulokset aiempien tulos-kentäksi.
+Jotta voit luoda binaariennustemallin, harjoitustiedot sisältävällä syöte-entiteetillä on oltava totuusarvokenttä historiallisen tuloksen kenttänä aiempien tunnettujen tulosten tunnistamiseksi.
 
-Edellytyksiä:
+Edellytykset:
 
-* Boolean-kenttä on käytettävä aiempien tulos-kenttä
-* Vähintään 50 riviä historiatietojen vaaditaan jokaisesta tulokset
+* Totuusarvokenttää on käytettävä historiallisen tuloksen kenttänä.
+* Kullekin tulosluokalle vaaditaan vähintään 50 riviä historiallista tietoa.
 
-Yleensä, jos viimeisten tulokset tunnistetaan eri tietotyypiksi kentät, voit lisätä nämä käyttämällä Power Query totuusarvoksi muunnettava lasketun sarakkeen.
+Yleisesti jos aiemmat tulokset tunnistetaan eri tietotyyppiä olevien kenttien avulla, voit lisätä lasketun sarakkeen ja muuntaa ne totuusarvoksi käyttämällä Power Querya.
 
-Prosessin luonti-Binary ennustemalli noudattaa samaa vaiheet kuin muut AutoML malleja, osassa **määrittäminen ML mallin syötteitä** yläpuolella.
+Binaariennustemallin luontiprosessi noudattaa samoja vaiheita kuin muutkin automaattianalyysipalvelumallit. Vaiheet on kuvattu yllä olevassa osassa **Koneoppimismallin syötteiden määrittäminen**.
 
-### <a name="binary-prediction-model-report"></a>Binary ennusteen raportti
+### <a name="binary-prediction-model-report"></a>Binaariennustemallin raportti
 
-Binary ennustemalli tuottaa lähtökohdaksi, että tietueen saavuttaa arvoksi True totuusarvo otsikon-arvon määrittämät tulos todennäköisyys. Raportti sisältää todennäköisyys raja-arvo, joka vaikuttaa pisteet ylä- ja todennäköisyys raja-arvon tulkinnassa osittajan.
+Binaariennustemalli tuottaa tulosteena todennäköisyyden sille, että tietue saavuttaa tuloksen, jonka totuusarvo-otsikko on määrittänyt arvolla Tosi. Raportti sisältää todennäköisyyden raja-arvolle osittajan, joka vaikuttaa siihen, miten todennäköisyyden raja-arvon ylä- ja alapuolella olevat pistemäärät tulkitaan.
 
-Raportin kuvaa mallin sekä suorituskykyä *True positiivisten*, *tunnistettujen*, *True negatiiviset* ja *suorittaa*. TRUE positiivisten ja True negatiiviset ovat oikein ennustettu tulokset tulos tietojen kaksi luokkia. Tunnistettujen ovat tulokset, jotka oli todellinen totuusarvo nimen arvon False, mutta on ennustaa tosi. Vastaavasti suorittaa ovat tuloksia missä todellinen totuusarvo otsikon arvo on tosi (TRUE), mutta on ennustaa arvoa EPÄTOSI.
+Raportissa kuvataan mallin suorituskyky arvoilla *True-positiiviset*, *False-positiiviset*, *True-negatiiviset* ja *False-negatiiviset*. True-positiiviset ja True-negatiiviset ovat oikein ennustettuja tuloksia kahdelle luokalle tulostiedoissa. False-positiiviset ovat tuloksia, joiden todellinen totuusarvo oli Epätosi, mutta joiden arvon ennustettiin olevan Tosi. False-negatiiviset taas ovat tuloksia, joiden todellinen totuusarvo oli Tosi, mutta joiden arvon ennustettiin olevan Epätosi.
 
-Mittaa, kuten tarkkuus- ja peruuttaminen, kuvaavat todennäköisyys raja-arvon vaikutus-ennustettu tulokset. Voit valita raja-arvo, joka kertyy Tasapainotettu haavoittuvan tarkkuus – peruuttaminen osittajasta todennäköisyys raja-arvo.
+Mittarit, kuten Tarkkuus ja Saanti, kuvaavat todennäköisyyden raja-arvon vaikutusta ennustettuihin tuloksiin. Todennäköisyyden raja-arvon osittajan avulla voit valita raja-arvon, joka saavuttaa tasapainoisen kompromissin tarkkuuden ja saannin välillä.
 
-![Tarkkuus-esikatselu](media/service-machine-learning-automated/automated-machine-learning-power-bi-10.png)
+![Tarkkuuden esikatselu](media/service-machine-learning-automated/automated-machine-learning-power-bi-10.png)
 
-**Tarkkuutta raportin** mallin raportin sivu sisältää *kertyneet voitot* kaavion ja OHJETIEDOSTO käyrä mallille. Nämä ovat tilastoanalyysit mittayksiköt mallin suorituskyvystä. Raportit sisältävät näytetään kaaviot kuvaukset.
+Malliraportin **Tarkkuusraportti**-sivu sisältää *Kertyneet voitot* -kaavion ja ROC-käyrän mallille. Nämä ovat mallin suorituskykyyn liittyviä tilastollisia mittareita. Raportit sisältävät kuvauksen näytetyistä kaavioista.
 
-![Raportin näytön tarkkuus](media/service-machine-learning-automated/automated-machine-learning-power-bi-11.png)
+![Tarkkuusraportti-näyttö](media/service-machine-learning-automated/automated-machine-learning-power-bi-11.png)
 
-### <a name="applying-a-binary-prediction-model"></a>Binary ennusteen malli on otettu käyttöön
+### <a name="applying-a-binary-prediction-model"></a>Binaariennustemallin käyttäminen
 
-Käytä Binary ennustemalli on määritettävä entiteetti, johon haluat käyttää ML mallista predictions tiedoilla. Muut parametrit ovat output-sarakkeen nimen etuliite ja todennäköisyys kynnysarvon luokittelusta ennustettu tulos.
+Jos haluat käyttää binaariennustemallia, sinun on määritettävä entiteetti ja tiedot, joissa haluat käyttää koneoppimismallin ennusteita. Muita parametreja ovat tulostesarakkeen nimen etuliite ja todennäköisyyden raja-arvo ennustetun tuloksen luokittelemiseksi.
 
-![Ennusteen syötteet](media/service-machine-learning-automated/automated-machine-learning-power-bi-12.png)
+![Ennustesyötteet](media/service-machine-learning-automated/automated-machine-learning-power-bi-12.png)
 
-Kun käytetään Binary ennusteen-mallin, se Lisää kolme sarakkeiden rikastetun output-entiteettiin. Nämä ovat **PredictionScore**, **PredictionOutcome** ja **PredictionExplanation**. Entiteetin sarakkeiden nimet on määritetty malli on käytetty etuliite.
+Kun binaariennustemallia käytetään, se lisää kolme tulostesaraketta täydennettyyn tuloste-entiteettiin. Ne ovat **EnnusteenPisteet**, **EnnusteenTulos** ja **EnnusteenSelitys**. Entiteetin sarakkeiden nimien etuliite on määritetty, kun mallia käytetään.
 
-**PredictionOutcome** sarake sisältää ennustettu tulos nimen. Tietueet, joissa on suurempi kuin raja-arvon kokonaismuutos on ennustaa kuin todennäköistä tulos, ja ne alla ovat kuin todennäköisesti saavuta tulos ennusteen.
+**EnnusteenTulos**-sarake sisältää ennustetun tuloksen otsikon. Tietueiden, joiden todennäköisyydet ylittävät raja-arvon, ennustetaan todennäköisesti saavuttavan tuloksen, kun taas raja-arvon alle jäävillä tietueilla se on epätodennäköistä.
 
-**PredictionExplanation** sarake sisältää selitys kanssa, joka oli syötteen ominaisuuksia tietyn vaikutus **PredictionScore**. Tämä on muotoiltu JSON-kokoelma painoarvoja ennusteen syötteen ominaisuuksia.
+**EnnusteenSelitys**-sarake sisältää selityksen ja määrittää tietyn vaikutteen, joka syöteominaisuuksilla oli **EnnusteenPisteet**-kohdassa. Tämä on JSON-muotoiltu kokoelma, joka sisältää ennusteen syöteominaisuuksien painotukset.
 
-## <a name="classification-models"></a>Luokitus-mallit
+## <a name="classification-models"></a>Luokitusmallit
 
-Luokitus-malleja käytetään luokittelemaan tietojoukon useita ryhmiä tai luokkia.  Niitä käytetään ennusteen tapahtumia, jotka voi olla yksi tai useita mahdollista Tulosta, kuten onko asiakas todennäköisesti erittäin suuri, suuri, Normaali tai pieni elinkaaren arvo; onko riski on oletusarvo on suuri, keskitaso, pieni tai erittäin pieni ja niin edelleen.
+Luokitusmallien avulla tietojoukot luokitellaan useisiin ryhmiin tai luokkiin.  Niitä käytetään ennakoimaan tapahtumia, joilla voi olla jokin useista mahdollisista tuloksista, kuten onko asiakkaan elinkaariarvo todennäköisesti erittäin suuri, suuri, normaali vai pieni, tai onko oletusarvon riski suuri, kohtalainen, pieni vai erittäin pieni, ja niin edelleen.
 
-Luokitus-mallin tulos on probability-arvo, joka tunnistaa, että tietueen saavuttaa tietyn luokan ehdot todennäköisyyttä.
+Luokitusmallin tuloste on todennäköisyyden pistemäärä, joka tunnistaa todennäköisyyden sille, että tietue saavuttaa tietyn luokan ehdot.
 
-### <a name="training-a-classification-model"></a>Harjoitetaan luokitus-mallia
+### <a name="training-a-classification-model"></a>Luokitusmallin harjoittaminen
 
-Koulutus luokitus-mallin tiedot sisältävä syötteen entiteetillä on oltava merkkijono tai numeerisen kentän aiempien tulos-kentäksi, joka tunnistaa viimeisten tunnetut tulokset.
+Luokitusmallin harjoitustiedot sisältävällä syöte-entiteetillä on oltava merkkijono- tai numeerinen kenttä historiallisen tuloksen kenttänä, joka tunnistaa aiemmat tunnetut tulokset.
 
-Edellytyksiä:
+Edellytykset:
 
-* Vähintään 50 riviä historiatietojen vaaditaan jokaisesta tulokset
+* Kullekin tulosluokalle vaaditaan vähintään 50 riviä historiallista tietoa.
 
-Prosessin luonti-luokitus-mallin noudattaa samaa vaiheet kuin muut AutoML malleja, osassa **määrittäminen ML mallin syötteitä** yläpuolella.
+Luokitusmallin luontiprosessi noudattaa samoja vaiheita kuin muutkin automaattianalyysipalvelumallit. Vaiheet on kuvattu yllä olevassa osassa **Koneoppimismallin syötteiden määrittäminen**.
 
-### <a name="classification-model-report"></a>Mallin raportti
+### <a name="classification-model-report"></a>Luokitusmallin raportti
 
-Mallin raportin tuotetaan soveltamalla ML-mallin pidätyksen luokitus Testaa tietoja ja vertaamalla ennustettu luokka tietueen todellinen tunnetut luokka.
+Luokitusmallin raportti luodaan käyttämällä koneoppimismallia pidätystestin tietoihin ja vertaamalla tietueen ennustettua luokkaa todelliseen tunnettuun luokkaan.
 
-Mallin raportti sisältää kaavio, joka sisältää oikein ja virheellisesti luokitellun tietueet tunnetut jokaisesta jakautuminen.
+Malliraportti sisältää kaavion, joka sisältää kunkin tunnetun luokan oikein ja virheellisesti luokiteltujen tietueiden erittelyn.
 
-![Raportti](media/service-machine-learning-automated/automated-machine-learning-power-bi-13.png)
+![Malliraportti](media/service-machine-learning-automated/automated-machine-learning-power-bi-13.png)
 
-Luokka-kohtaiset siirtyminen avulla analyysi miten tunnetut luokalle predictions jaetaan. Tämä sisältää luokat, jossa tietueet, joiden havaittu luokan todennäköisesti voi luokitelluista.
+Siirtyminen pidemmälle luokan alirakenteisiin mahdollistaa analyysin siitä, miten tunnetun luokan ennusteet on jaettu. Tämä sisältää muut luokat, joihin kyseisen tunnetun luokan tietueet todennäköisesti luokitellaan virheellisesti.
 
 ![Analyysiraportti](media/service-machine-learning-automated/automated-machine-learning-power-bi-14.png)
 
-Mallin selitys raportin sisältää myös yläreunan predictors kullekin luokalle.
+Raportin malliselitys sisältää myös kunkin luokan tärkeimmät ennusteet.
 
-Luokitus mallin raportti sisältää myös muiden sivujen koulutus tiedot sivulle, osiossa kuvatulla **AutoML mallin raportin** tämän artikkelin aiemmassa osassa.
+Luokitusmallin raportti sisältää myös Harjoitustiedot-sivun, joka on samanlainen kuin muiden mallityyppien sivut, jotka on kuvattu tämän artikkelin aiemmassa kohdassa **Automaattianalyysipalvelumallin raportti**.
 
-### <a name="applying-a-classification-model"></a>Luokitus-malli on otettu käyttöön
+### <a name="applying-a-classification-model"></a>Luokitusmallin käyttäminen
 
-Entiteetti on määritettävä syötetietojen ja output-sarakkeen nimen etuliite, luokitus ML-mallin käyttöön.
+Jos haluat käyttää koneoppimisen luokitusmallia, sinun on määritettävä entiteetti syötetiedoilla ja tulostesarakkeen nimen etuliitteellä.
 
-Kun käytetään luokitus-mallin, se Lisää kolme Näytä sarakkeet rikastetun output-entiteettiin. Nämä ovat **PredictionScore**, **PredictionClass** ja **PredictionExplanation**. Entiteetin sarakkeiden nimet on määritetty malli on käytetty etuliite.
+Kun luokitusmallia käytetään, se lisää kolme tulostesaraketta täydennettyyn tuloste-entiteettiin. Ne ovat **EnnusteenPisteet**, **EnnusteenLuokka** ja **EnnusteenSelitys**. Entiteetin sarakkeiden nimien etuliite on määritetty, kun mallia käytetään.
 
-**PredictionClass** sarake sisältää tietueen todennäköisesti ennustettu luokka. **PredictionScore** sarake sisältää todennäköisyys pisteet mahdollista jokaisesta tietueen luettelo.
+**EnnusteenLuokka**-sarake sisältää tietueen todennäköisimmän luokan. **EnnusteenPisteet**-sarake sisältää todennäköisyyspisteiden luettelon kunkin mahdollisen luokan tietueelle.
 
-**PredictionExplanation** sarake sisältää selitys kanssa, joka oli syötteen ominaisuuksia tietyn vaikutus **PredictionScore**. Tämä on muotoiltu JSON-kokoelma painoarvoja ennusteen syötteen ominaisuuksia.
+**EnnusteenSelitys**-sarake sisältää selityksen ja määrittää tietyn vaikutteen, joka syöteominaisuuksilla oli **EnnusteenPisteet**-kohdassa. Tämä on JSON-muotoiltu kokoelma, joka sisältää ennusteen syöteominaisuuksien painotukset.
 
-## <a name="regression-models"></a>Regressio mallit
+## <a name="regression-models"></a>Regressiomallit
 
-Regressio mallit ovat käyttää arvon, kuten todennäköisesti toteutunut myynti kaupan, elinkaaren arvo tilin, saatavien laskun, jotka saattavat olla tarkkana, päivämäärä, jolloin laskun saattaa maksaa määrä tuotto , ja niin edelleen.
+Regressiomalleja käytetään ennakoimaan arvoa, kuten myyntisopimuksesta todennäköisesti saatavaa voittoa, asiakkaan elinkaariarvoa, saatavan laskun todennäköisesti maksettavaa summaa, päivämäärää, jolloin lasku mahdollisesti maksetaan, ja niin edelleen.
 
-Regression-mallin tulos on ennustetun arvon.
+Regressiomallin tuloste on ennustettu arvo.
 
-### <a name="training-a-regression-model"></a>Harjoitetaan regressiomallia
+### <a name="training-a-regression-model"></a>Regressiomallin harjoittaminen
 
-Koulutus tiedot Regression mallin sisältävän syötteen entiteetillä on oltava numeerinen kenttä aiempien tulos-kentäksi, joka tunnistaa tunnetut tulos aiempiin arvoihin.
+Regressiomallin harjoitustiedot sisältävällä syöte-entiteetillä on oltava numeerinen kenttä historiallisen tuloksen kenttänä, joka tunnistaa aiempien tunnettujen tulosten arvot.
 
-Edellytyksiä:
+Edellytykset:
 
-* Vähintään 100 riviä historiatietojen vaaditaan Regression mallille
+* Regressiomallille vaaditaan vähintään 100 riviä historiallista tietoa.
 
-Prosessin luonti-Regression-mallin noudattaa samaa vaiheet kuin muut AutoML malleja, osassa **määrittäminen ML mallin syötteitä** yläpuolella.
+Regressiomallin luontiprosessi noudattaa samoja vaiheita kuin muutkin automaattianalyysipalvelumallit. Vaiheet on kuvattu yllä olevassa osassa **Koneoppimismallin syötteiden määrittäminen**.
 
-### <a name="regression-model-report"></a>Regressio raportti
+### <a name="regression-model-report"></a>Regressiomallin raportti
 
-Muut AutoML mallin raportit, kuten Regression-raportti perustuu mallin kohdistaminen pidätyksen testitiedot tuloksista.
+Muiden automaattianalyysipalvelumallien tavoin regressioraportti perustuu tuloksiin, jotka koskevat mallin käyttämistä pidätystestin tiedoissa.
 
-Mallin raportti sisältää kaavio, jossa verrataan ennustettuja arvoja arvolla. Tässä kaaviossa alas etäisyyden ilmaisee ennusteen virhe.
+Malliraportti sisältää kaavion, joka vertaa ennustettuja arvoja todelliseen arvoon. Tässä kaaviossa etäisyys lävistäjästä ilmaisee ennusteessa olevan virheen.
 
-Jättämän virhe kaavio näyttää eri arvot keskimääräinen virhe prosenttiosuus jakautuminen pidätyksen test tietojoukossa. Vaaka-akselin edustaa todellinen arvo ryhmän keskiarvo näytetään taajuus tai arvojen määrän, jotka kuplan koon. Pystyakselin on keskimääräinen jättämän virhe.
+Jäännösvirhekaaviossa näytetään keskimääräisen virheen prosenttiosuuden jakautuminen eri arvoille pidätystestin tietojoukossa. Vaaka-akseli edustaa ryhmän todellisen arvon keskiarvoa siten, että kuplan koko näyttää joukon arvojen tiheyden tai määrän. Pystyakseli on keskimääräinen jäännösvirhe.
 
-![Jättämän virhe kaavio](media/service-machine-learning-automated/automated-machine-learning-power-bi-15.png)
+![Jäännösvirhekaavio](media/service-machine-learning-automated/automated-machine-learning-power-bi-15.png)
 
-Regressio mallin raportti sisältää myös koulutus tietosivu mallin muuntyyppisten raporttien tapaan, osiossa kuvatulla **AutoML mallin raportin** yläpuolella.
+Regressiomallin raportti sisältää myös Harjoitustiedot-sivun, joka on muiden mallityyppien raporttien kaltainen, ja ne on kuvattu aiemmassa kohdassa **Automaattianalyysipalvelumallin raportti**.
 
-### <a name="applying-a-regression-model"></a>Regressio malli on otettu käyttöön
+### <a name="applying-a-regression-model"></a>Regressiomallin käyttäminen
 
-Entiteetti on määritettävä syötetietojen ja output-sarakkeen nimen etuliite, Regression ML-mallin käyttöön.
+Jos haluat käyttää koneoppimisen regressiomallia, sinun on määritettävä entiteetti syötetiedoilla ja tulostesarakkeen nimen etuliitteellä.
 
-![Käytä regression](media/service-machine-learning-automated/automated-machine-learning-power-bi-16.png)
+![Käytä regressiota](media/service-machine-learning-automated/automated-machine-learning-power-bi-16.png)
 
-Kun käytetään Regression-mallin, se lisää kaksi sarakkeiden rikastetun output-entiteettiin. Nämä ovat **PredictionValue**, ja **PredictionExplanation**. Entiteetin sarakkeiden nimet on määritetty malli on käytetty etuliite.
+Kun regressiomallia käytetään, se lisää kaksi tulostesaraketta täydennettyyn tuloste-entiteettiin. Ne ovat **EnnusteenArvo** ja **EnnusteenSelitys**. Entiteetin sarakkeiden nimien etuliite on määritetty, kun mallia käytetään.
 
-**PredictionValue** sarake sisältää tietueen syötteen kenttien mukaan ennustetun arvon. **PredictionExplanation** sarake sisältää selitys kanssa, joka oli syötteen ominaisuuksia tietyn vaikutus **PredictionValue**. Tämä on muotoiltu JSON-kokoelma painoarvoja syötteen ominaisuuksia.
+**EnnusteenArvo**-sarake sisältää syötekenttiin perustuvan tietueen ennustetun arvon. **EnnusteenSelitys**-sarake sisältää selityksen ja määrittää tietyn vaikutteen, joka syöteominaisuuksilla oli **EnnusteenArvo**-kohdassa. Tämä on JSON-muotoiltu kokoelma, joka sisältää syöteominaisuuksien painotukset.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
-Tässä artikkelissa antaa yhteenvedon automatisoituja koneoppimisen Dataflows Power BI-palvelussa. Seuraavissa artikkeleissa voi myös olla hyötyä.
+Tässä artikkelissa annettiin yleiskuva tietovoiden automaattianalyysipalveluista Power BI -palvelussa. Myös seuraavista artikkeleista voi olla apua.
 
-* [Opetusohjelma: Luo Automaattianalyysipalvelujen malli Power BI (esikatselu)](service-tutorial-build-machine-learning-model.md)
+* [Opetusohjelma: Koneoppimismallin luominen Power BI:ssä (esikatselu)](service-tutorial-build-machine-learning-model.md)
 * [Opetusohjelma: Kognitiivisten palvelujen käyttö Power BI:ssä](service-tutorial-use-cognitive-services.md)
 * [Opetusohjelma: Automaattianalyysistudion mallin käynnistys Power BI:ssä (esikatselu)](service-tutorial-invoke-machine-learning-model.md)
 * [Kognitiiviset palvelut Power BI:ssä (esikatselu)](service-cognitive-services.md)
@@ -284,9 +284,9 @@ Tässä artikkelissa antaa yhteenvedon automatisoituja koneoppimisen Dataflows P
 
 Lisätietoja tietovoista on seuraavissa artikkeleissa:
 * [Tietovoiden luominen ja käyttäminen Power BI:ssä](service-dataflows-create-use.md)
-* [Laskettuja entiteettejä käyttämällä Power BI Premium](service-dataflows-computed-entities-premium.md)
-* [Dataflows käyttö paikallisiin tietolähteisiin](service-dataflows-on-premises-gateways.md)
-* [Power BI dataflows Kehittäjien resurssit](service-dataflows-developer-resources.md)
+* [Laskettujen entiteettien käyttäminen Power BI Premiumissa](service-dataflows-computed-entities-premium.md)
+* [Tietovoiden käyttö paikallisiin tietolähteisiin](service-dataflows-on-premises-gateways.md)
+* [Kehittäjien resurssit Power BI -tietovoille](service-dataflows-developer-resources.md)
 * [Tietovuot ja Azure Data Lake -integrointi (esikatselu)](service-dataflows-azure-data-lake-integration.md)
 
 

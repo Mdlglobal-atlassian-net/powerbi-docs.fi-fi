@@ -12,7 +12,7 @@ ms.author: davidi
 LocalizationGroup: Create reports
 ms.openlocfilehash: d5259ba22287a8a2ade3107e4320c39713dcb45e
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: fi-FI
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "65239755"
@@ -22,10 +22,10 @@ Työkaluvihjeet ovat tyylikäs tapa tarjota tilannekohtaista lisätietoa ja yksi
 
 ![Oletusarvoinen työkaluvihje](media/desktop-custom-tooltips/custom-tooltips-1.png)
 
-Uudessa visualisoinnissa työkaluvihje esittää oletusarvoisesti arvopisteen arvon ja luokan. On useita tapauksia, kun työkaluvihjeen tietojen mukauttamisesta on hyötyä, ja määrittää muita tilannekohtaista lisätietoa visualisointia tarkasteleville käyttäjille. Mukautettujen työkaluvihjeiden avulla voit määrittää lisää arvopisteitä, jotka näkyvät osana työkaluvihjettä.
+Uudessa visualisoinnissa työkaluvihje esittää oletusarvoisesti arvopisteen arvon ja luokan. Työkaluvihjeen tietojen mukauttamisesta voi olla hyötyä monenlaisissa tilanteissa, kun työkaluvihjeen avulla voidaan esittää tilannekohtaista lisätietoa visualisointia tarkasteleville käyttäjille. Mukautettujen työkaluvihjeiden avulla voit määrittää lisää arvopisteitä, jotka näkyvät osana työkaluvihjettä.
 
 ## <a name="how-to-customize-tooltips"></a>Ohjeet työkaluvihjeiden mukauttamiseen
-Luoda mukautettu työkaluvihje **kentät** hyvin- **visualisoinnit** ruudussa vetämällä kenttä **työkaluvihjeet** säilöön, seuraavassa kuvassa. Kuvasta näkyy, että **Työkaluvihjeet**-säilöön on lisätty kaksi kenttää.
+Jos haluat luoda mukautetun työkaluvihjeen, siirry **Visualisoinnit**-paneelista kohtaan **Kentät** ja vedä haluamasi kenttä **Työkaluvihjeet**-säilöön kuvan osoittamalla tavalla. Kuvasta näkyy, että **Työkaluvihjeet**-säilöön on lisätty kaksi kenttää.
 
 ![Työkaluvihjekenttien lisääminen](media/desktop-custom-tooltips/custom-tooltips-2.png)
 
@@ -38,5 +38,5 @@ Voit mukauttaa työkaluvihjettä lisää valitsemalla koostefunktion tai *pikala
 
 ![Työkaluvihje ja pikalaskin](media/desktop-custom-tooltips/custom-tooltips-4.png)
 
-Voit mukauttaa monin **työkaluvihjeet**, käyttämällä mitä tahansa, tietojoukossa olevaa kenttää esittämään nopeasti merkityksellisiä tietoja käyttäjille, jotka tarkastelevat koontinäyttöjä tai raportteja.
+**Työkaluvihjeitä** voi mukauttaa monin tavoin esittämään nopeasti merkityksellisiä tietoja käyttäjille, jotka tarkastelevat koontinäyttöjä tai raportteja, käyttämällä mitä tahansa tietojoukossa olevaa kenttää.
 

@@ -11,18 +11,18 @@ ms.topic: conceptual
 ms.date: 6/4/2019
 ms.author: gepopell
 LocalizationGroup: Reports
-ms.openlocfilehash: e30a79796fd4d5538406a85a3297a23b2c09a61a
-ms.sourcegitcommit: 81ba3572531cbe95ea0b887b94e91f94050f3129
+ms.openlocfilehash: d21199d8960df4db5027115704533bd3d5d8097c
+ms.sourcegitcommit: 200291eac5769549ba5c47ef3951e2f3d094426e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66751405"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71142251"
 ---
 # <a name="troubleshooting-nested-values-returned-as-text-in-power-bi-service"></a>Tekstinä palautettujen sisäkkäisten arvojen vianmääritys Power BI -palvelussa
 
 ## <a name="cause"></a>Syy
 
-Aiemmin oli tapauksia, joissa Power BI -raportit päivittyivät normaalisti Desktopissa, mutta eivät Power BI -palvelussa. Tapauksiin liittyi “Arvon "[Taulukko]" muuntaminen taulukkotyyppiseksi” -virhesanomia ja sen kaltaisia sanomia. Eräs virheen aiheuttajista oli se, että kun tietosuojan palomuuri (linkki tähän?) puskuroi tietolähdettä, sisäkkäiset ei-skalaariarvot (kuten taulukot, tietueet, luettelot ja funktiot) muunnetaan automaattisesti tekstiarvoiksi (kuten “[Taulukko]” tai “[tietue]”).
+Aiemmin oli tapauksia, joissa Power BI -raportit päivittyivät normaalisti Desktopissa, mutta eivät Power BI -palvelussa. Tapauksiin liittyi “Arvon "[Taulukko]" muuntaminen taulukkotyyppiseksi” -virhesanomia ja sen kaltaisia sanomia. Eräs virheen aiheuttajista oli se, että kun tietosuojan palomuuri puskuroi tietolähdettä, sisäkkäiset ei-skalaariarvot (kuten taulukot, tietueet, luettelot ja funktiot) muunnetaan automaattisesti tekstiarvoiksi (kuten “[Taulukko]” tai “[tietue]”).
 
 Nyt kun Power BI -palvelu tukee yksityisyystasojen asetusta (ja palomuurin poistamista kokonaan käytöstä), tällaiset virheet voidaan välttää [määrittämällä tietolähteiden tietosuoja-asetukset](https://powerbi.microsoft.com/en-us/blog/privacy-levels-for-cloud-data-sources/) Power BI -palvelussa ei-yksityisiksi.
 

@@ -1,7 +1,7 @@
 ---
 ms.openlocfilehash: 48e553ebd81632cb0baa9a2c9c6a761860c3c9c6
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: fi-FI
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "61255710"
@@ -31,7 +31,7 @@ Päivämäärähierarkiasta voi palata takaisin yksittäisiin päivämääriin n
 ![](media/2-6a-explore-time-based-data/2-6a_5.png)
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
-**Onnittelut!** Olet nyt suorittanut tämän osion Power BI:n **Ohjattu oppiminen** -kurssista. Nyt kun hallitset *mallinnus* tietoja, olet valmis hauska Lue seuraavassa osiossa hauskuuteen: **Visualisointien**.
+**Onnittelut!** Olet nyt suorittanut tämän osion Power BI:n **Ohjattu oppiminen** -kurssista. Nyt kun hallitset tietojen *mallinnuksen*, voit siirtyä seuraavassa osiossa odottavaan hauskuuteen: **visualisointeihin**.
 
 Kuten aiemmin mainittiin, tällä kurssilla kehität osaamistasi Power BI:n tavallisen työnkulun mukaisesti:
 

@@ -10,12 +10,12 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 03/12/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: bc55d290e10832034ed96d7092c5baa4b7cc20d1
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: a6e37885c5e15dbaaa28fc5cb693089fda747c9e
+ms.sourcegitcommit: a6602d84c86d3959731a8d0ba39a522914f13d1a
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65565297"
+ms.lasthandoff: 09/21/2019
+ms.locfileid: "71175232"
 ---
 # <a name="how-to-purchase-power-bi-premium"></a>Ohjeet Power BI Premiumin ostamiseen
 
@@ -101,9 +101,10 @@ Jos peruutat Premium-tilauksesi tai kapasiteetin käyttöoikeutesi umpeutuu, voi
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
-[Power BI -hinnoittelusivu](https://powerbi.microsoft.com/pricing/)   
-[Power BI Premium -laskin](https://powerbi.microsoft.com/calculator/)   
-[Power BI Premiumin usein kysytyt kysymykset](service-premium-faq.md)   
+[Kapasiteettien määrittäminen ja hallinta Power BI Premiumissa](service-admin-premium-manage.md)\
+[Power BI -hinnoittelusivu](https://powerbi.microsoft.com/pricing/)\
+[Power BI Premium -laskin](https://powerbi.microsoft.com/calculator/)\
+[Power BI Premiumin usein kysytyt kysymykset](service-premium-faq.md)\
 [Power BI:n yrityskäyttöönoton suunnittelemisen tekninen raportti](https://aka.ms/pbienterprisedeploy)
 
 Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)

@@ -7,23 +7,23 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/02/2019
+ms.date: 09/20/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 81449d7a07bec3c142930573154ecd13a0ceff49
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: d2ba4809ce5c6664350ec81b57b6fc717a13879f
+ms.sourcegitcommit: 4222ebad1a3a32d8040f6a615a0b7f173d7869d0
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61141104"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71164560"
 ---
-# <a name="connect-to-data-sources-for-power-bi-dataflows"></a>Yhteyden muodostaminen tietolähteisiin Power BI dataflows varten
+# <a name="connect-to-data-sources-for-power-bi-dataflows"></a>Yhteyden muodostaminen Power BI -tietovoiden tietolähteisiin
 
 Voit Power BI -tietovoiden avulla muodostaa yhteyden moniin eri tietolähteisiin uusien tietovoiden luomiseksi tai uusien entiteettien lisäämiseksi olemassa olevaan tietovuohon.
 
 Tässä artikkelissa on luettelo monista saatavilla olevista tietolähteistä tietovoiden luomiseksi tai lisäämiseksi. Siinä kuvataan myös sitä, miten näitä tietovoita voidaan luoda näiden tietolähteiden avulla.
 
-Katso, miten voit luoda ja käyttää dataflows yhteenveto [luomisesta ja käyttämisestä dataflows Power BI](service-dataflows-create-use.md).
+Artikkelissa [Tietovoiden luominen ja käyttäminen Power BI:ssä](service-dataflows-create-use.md) on yleiskatsaus tietovoiden luomiseen ja käyttämiseen.
 
 ## <a name="create-a-dataflow-from-a-data-source"></a>Tietovuon luominen tietolähteestä
 
@@ -87,7 +87,7 @@ Tietovoiden tietolähteet on järjestetty seuraaviin luokkiin, jotka ilmestyvät
 * Azuren blob-objektit
 * Azure Data Explorer
 * Azure SQL Data Warehouse
-* Azure SQL -tietokanta
+* Azuren SQL-tietokanta
 * Azuren taulukot
 
 **Online-palvelut** sisältää seuraavat saatavilla olevat tietovoiden tietoyhteydet:
@@ -156,7 +156,6 @@ Komentosarja muodostaa sitten yhteyden tietolähteeseen, jonka määritit.
 
 Seuraavassa luettelossa näytetään, mitä liittimiä voit käyttää tällä hetkellä M-kyselyn kopioimiseen ja liittämiseen tyhjään kyselyyn:
 
-* SAP Business Warehouse 
 * Azure Analysis Services
 * Adobe Analytics
 * ODBC
@@ -176,11 +175,11 @@ Tässä kaikki, joka sinun tarvitsee tietää yhteyden muodostamiseksi tietoläh
 
 Tässä artikkelissa näytettiin, mitkä tietolähteet voit yhdistää tietovoihin. Seuraavissa artikkeleissa perehdytään tarkemmin tietovoiden yleisiin käyttöskenaarioihin. 
 
-* [Omatoiminen tietojen valmistautuminen Power BI](service-dataflows-overview.md)
+* [Omatoiminen tietojen valmisteleminen Power BI:ssä](service-dataflows-overview.md)
 * [Tietovoiden luominen ja käyttäminen Power BI:ssä](service-dataflows-create-use.md)
-* [Laskettuja entiteettejä käyttämällä Power BI Premium](service-dataflows-computed-entities-premium.md)
-* [Dataflows käyttö paikallisiin tietolähteisiin](service-dataflows-on-premises-gateways.md)
-* [Power BI dataflows Kehittäjien resurssit](service-dataflows-developer-resources.md)
+* [Laskettujen entiteettien käyttäminen Power BI Premiumissa](service-dataflows-computed-entities-premium.md)
+* [Tietovoiden käyttö paikallisiin tietolähteisiin](service-dataflows-on-premises-gateways.md)
+* [Kehittäjien resurssit Power BI -tietovoille](service-dataflows-developer-resources.md)
 * [Tietovuot ja Azure Data Lake -integrointi (esikatselu)](service-dataflows-azure-data-lake-integration.md)
 
 Lisätietoja Power Querysta ja ajoitetusta päivityksestä on seuraavissa artikkeleissa:

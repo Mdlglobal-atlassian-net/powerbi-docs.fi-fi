@@ -11,16 +11,16 @@ ms.author: maggies
 LocalizationGroup: Share your work
 ms.openlocfilehash: 52b7748b6b634caf87de01ddc965576339a04b8b
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: fi-FI
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "61174994"
 ---
 # <a name="connect-to-files-stored-in-onedrive-for-your-power-bi-app-workspace"></a>Yhteyden muodostaminen Power BI-sovellustyötilasta OneDriveen tallennettuihin tiedostoihin
-[Luotuasi Power BI:hin sovellustyötilan](service-create-distribute-apps.md) voit tallentaa Excel-, CSV- ja Power BI Desktop ‑tiedostosi OneDrive for Business ‑palveluun ja käyttää niitä sieltä Power BI ‑sovellustyötilassa. Voit jatkaa päivitetään tiedostoja onedriveen. Kyseiset päivitykset automaattisesti myös Power BI-raportteja ja koontinäyttöjä, jotka perustuvat tiedostoja. 
+[Luotuasi Power BI:hin sovellustyötilan](service-create-distribute-apps.md) voit tallentaa Excel-, CSV- ja Power BI Desktop ‑tiedostosi OneDrive for Business ‑palveluun ja käyttää niitä sieltä Power BI ‑sovellustyötilassa. Voit jatkaa OneDriveen tallentamiesi tiedostojen päivittämistä. Päivitykset tulevat automaattisesti esiin myös kyseisiin tiedostoihin perustuvissa Power BI ‑raporteissa ja koontinäytöissä. 
 
 > [!NOTE]
-> Työtilan uuden kokemuksen muuttuu Power BI-työtilat ja Office 365-ryhmille välisen suhteen. Office 365-ryhmän ei luo automaattisesti aina, kun luot uuden työtilakokemuksen. Lue [uusi työtilojen luominen](service-create-the-new-workspaces.md)
+> Uusi työtilakokemus muuttaa Power BI -työtilojen ja Office 365:n ryhmien välistä suhdetta. Et luo automaattisesti Office 365 -ryhmää aina, kun luot uuden työtilan. Lue tietoja [uusien työtilojen luomisesta](service-create-the-new-workspaces.md)
 
 Tiedostojen lisääminen sovellustyötilaan on kaksivaiheinen prosessi: 
 
@@ -31,7 +31,7 @@ Tiedostojen lisääminen sovellustyötilaan on kaksivaiheinen prosessi:
 > Sovellustyötilat ovat käytettävissä vain [Power BI Pro:ssa](service-features-license-type.md).
 > 
 
-## <a name="1-upload-files-to-the-onedrive-for-business-for-your-app-workspace"></a>1. Tiedostojen lataaminen sovellustyötilasi OneDrive for Business ‑tallennustilaan
+## <a name="1-upload-files-to-the-onedrive-for-business-for-your-app-workspace"></a>1\. Tiedostojen lataaminen sovellustyötilasi OneDrive for Business ‑tallennustilaan
 1. Valitse Power BI -palvelussa kohdan Työtilat vieressä oleva nuoli > valitse työtilasi nimen vierestä kolme pistettä ( **…** ). 
    
    ![](media/service-connect-to-files-in-app-workspace-onedrive-for-business/power-bi-app-ellipsis.png)
@@ -45,10 +45,10 @@ Tiedostojen lisääminen sovellustyötilaan on kaksivaiheinen prosessi:
    
    ![](media/service-connect-to-files-in-app-workspace-onedrive-for-business/pbi_grpfilesonedrive.png)
 
-## <a name="2-import-excel-files-as-datasets-or-as-excel-online-workbooks"></a>2. Excel-tiedostojen tuonti tietojoukkoina tai Excel Online ‑työkirjoina
+## <a name="2-import-excel-files-as-datasets-or-as-excel-online-workbooks"></a>2\. Excel-tiedostojen tuonti tietojoukkoina tai Excel Online ‑työkirjoina
 Nyt kun tiedostosi ovat sovellustyötilasi OneDrive for Business ‑tallennustilassa, voit valita kahdesta vaihtoehdosta, miten haluat jatkaa. Vaihtoehdot ovat: 
 
-* [Tuo Excel-työkirjan tietojoukkona](service-get-data-from-files.md). Luoda raportteja ja koontinäyttöjä, voit tarkastella verkkoselaimessa ja mobiililaitteilla tietojen avulla.
+* [Tuo Excel-työkirjan tiedot tietojoukkona](service-get-data-from-files.md). Voit sitten käyttää tietoja sellaisten raporttien ja koontinäyttöjen luomiseen, joita voi tarkastella verkkoselaimessa ja mobiililaitteilla.
 * Tai voit [muodostaa Power BI:ssä yhteyden koko Excel-työkirjaan](service-excel-workbook-files.md), jolloin se näytetään tismalleen samanlaisena kuin se näkyisi Excel Onlinessa.
 
 ### <a name="import-or-connect-to-the-files-in-your-app-workspace"></a>Tiedostojen tuonti sovellustyötilaan tai yhteyden muodostaminen tiedostoihin
@@ -64,7 +64,7 @@ Nyt kun tiedostosi ovat sovellustyötilasi OneDrive for Business ‑tallennustil
     ![](media/service-connect-to-files-in-app-workspace-onedrive-for-business/pbi_grp_one_drive_shrpt.png)
 5. Valitse haluamasi tiedosto > **Yhdistä**.
    
-    Päätät tässä vaiheessa, [tuoda tiedot Excel-työkirjan](service-get-data-from-files.md), tai [muodostaa yhteyden Excel-työkirjoihin kokonaisuudessaan](service-excel-workbook-files.md).
+    Tässä vaiheessa sinun on päätettävä, haluatko [tuoda tiedot Excel-työkirjasta](service-get-data-from-files.md) vai [muodostaa yhteyden Excel-työkirjoihin kokonaisuudessaan](service-excel-workbook-files.md).
 6. Valitse joko **Tuo** tai **Yhdistä**.
    
     ![](media/service-connect-to-files-in-app-workspace-onedrive-for-business/pbi_importexceldataorwholecrop.png)

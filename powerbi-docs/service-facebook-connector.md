@@ -12,7 +12,7 @@ ms.author: davidi
 LocalizationGroup: Connect to data
 ms.openlocfilehash: 6b02717c49a1207dfec39ebb1529e7e9b222fa62
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: fi-FI
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "65512872"
@@ -22,9 +22,9 @@ ms.locfileid: "65512872"
 
 Voit katsella [opetusohjelman Power BI Desktopin Facebook-yhdistimestä](desktop-tutorial-facebook-analytics.md).
 
-Facebook poisti Graph-Ohjelmointirajapinnan version 1.0 käytöstä vanhentui huhtikuuta 2015 30. Power BI käyttää Graph-ohjelmointirajapintaa Facebook-yhdistimen taustalla, jotta voit muodostaa yhteyden tietoihisi ja analysoida niitä.
+Facebook poisti Graph-ohjelmointirajapinnan version 1.0 käytöstä 30.4.2015. Power BI käyttää Graph-ohjelmointirajapintaa Facebook-yhdistimen taustalla, jotta voit muodostaa yhteyden tietoihisi ja analysoida niitä.
 
-Kyselyt, jotka on luotu ennen 30 huhtikuun 2015 voi enää toimi tai palauta vähemmän tietoja. Huhtikuuta 30 2015 jälkeen Power BI käyttää versiota 2.8 kaikissa Facebook-Ohjelmointirajapinnan kutsuissa. Jos kyselysi on luotu ennen 30.4.2015 ja et ole käyttänyt sitä sen jälkeen, sinun on todennäköisesti tehtävä todennus uudelleen, jotta voit hyväksyä pyytämämme uudet käyttöoikeudet.
+Kyselyt, jotka on luotu ennen 30.4.2015, eivät välttämättä enää toimi tai saattavat palauttaa vähemmän tietoja. 30.4.2015 jälkeen Power BI käyttää versiota 2.8 kaikissa Facebook-ohjelmointirajapinnan kutsuissa. Jos kyselysi on luotu ennen 30.4.2015 ja et ole käyttänyt sitä sen jälkeen, sinun on todennäköisesti tehtävä todennus uudelleen, jotta voit hyväksyä pyytämämme uudet käyttöoikeudet.
 
 Vaikka pyrimmekin julkaisemaan päivityksiä tehtyjen muutosten mukaan, ohjelmointirajapinta saattaa muuttua tavalla, joka vaikuttaa luotujen kyselyjen tuloksiin. Tiettyjä kyselyjä ei ehkä enää tueta joissain tapauksissa. Tämän riippuvuuden vuoksi emme voi taata tekemiesi kyselyjen tuloksia tätä yhdistintä käytettäessä.
 

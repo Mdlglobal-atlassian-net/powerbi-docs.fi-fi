@@ -1,7 +1,7 @@
 ---
 ms.openlocfilehash: 78e5ba4edc84e7dabef17d608c938adc4693145d
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: fi-FI
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "61396809"
@@ -14,7 +14,7 @@ Vesiputous- ja suppilokaaviot ovat kaksi kiinnostavimmista (ja ehkä epätavanom
 
 ![](media/3-8-create-waterfall-funnel-charts/3-8_2.png)
 
-Vesiputouskaavioissa vain kaksi ryhmävaihtoehtoa: *Luokan* ja *Y-akselin*. Vedä aikaan perustuva kenttä, kuten *vuosi*, *Luokka*-ryhmään ja seurattava arvo *Y-akseli*-ryhmään. Ajanjaksot, joina arvo nousi, näytetään oletuksena vihreinä, ja ajanjaksot, joina arvo laski, näytetään punaisina.
+Vesiputouskaavioissa on vain kaksi ryhmävaihtoehtoa: *Luokka* ja *Y-akseli*. Vedä aikaan perustuva kenttä, kuten *vuosi*, *Luokka*-ryhmään ja seurattava arvo *Y-akseli*-ryhmään. Ajanjaksot, joina arvo nousi, näytetään oletuksena vihreinä, ja ajanjaksot, joina arvo laski, näytetään punaisina.
 
 **Suppilokaavioita** käytetään yleensä näyttämään muutokset tietyssä prosessissa, kuten myyntiputkessa tai verkkosivustolla pysymisessä.
 

@@ -1,5 +1,5 @@
 ---
-title: Optimoi mobiilisovelluksissa – Power BI-raportit
+title: Mobiilisovellusten raporttien optimointi – Power BI
 description: Lue, miten voit optimoida raporttisivuja Power BI -mobiilisovelluksille luomalla raportista erityisesti puhelimiin ja tabletteihin soveltuvan pystysuuntaisen version.
 author: maggiesMSFT
 manager: kfile
@@ -12,19 +12,19 @@ ms.author: maggies
 LocalizationGroup: Create reports
 ms.openlocfilehash: f55d1e518c3c710503bb56539667bb652f287aa7
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: fi-FI
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "61310691"
 ---
-# <a name="optimize-reports-for-the-power-bi-mobile-apps"></a>Optimoi raportteja Power BI-mobiilisovelluksissa
-Voit parantaa käyttökokemusta raporttien tarkastelusta mobiilisovelluksissa luomalla pysty asettelu. Power BI Desktop ja Power BI-palvelussa järjestää ja mahdollisen käyttökokemuksen tuottamiseksi pystysuuntaisen raportin visualisointien kokoa.  
+# <a name="optimize-reports-for-the-power-bi-mobile-apps"></a>Power BI -mobiilisovellusten raporttien optimointi
+Voit parantaa raporttiesi tarkastelua mobiilisovelluksissa luomalla pystysuuntaisen asettelun. Power BI Desktopissa ja Power BI -palvelussa voit järjestellä raporttien visualisointeja uudelleen ja muuttaa niiden kokoa saadaksesi parhaan mahdollisen käyttökokemuksen pystysuuntaisessa tilassa.  
 
-Etsitkö lisätietoja raporttien tarkastelusta mobiililaitteessa sen sijaan? Kokeile tätä Pikaopasta [raporttinäkymien ja raporttien tarkastelu Power BI-mobiilisovelluksissa](consumer/mobile/mobile-apps-quickstart-view-dashboard-report.md).
+Etsitkö sen sijaan tietoja raporttien tarkastelemisesta mobiililaitteessa? Kokeile pikaopasta [Raporttinäkymien ja raporttien tarkastelu Power BI -mobiilisovelluksissa](consumer/mobile/mobile-apps-quickstart-view-dashboard-report.md).
 
 ![Optimoitu raportti puhelimessa](media/desktop-create-phone-report/desktop-create-phone-report-1.png)
 
-Lisäksi voit luoda [ *reagoiva* visualisointien](#optimize-a-visual-for-any-size) ja [reagoivat osittajat](#enhance-slicers-to-work-well-in-phone-reports) , muuttaa kokoa hyvin missä tahansa. Jos lisäät raporttiin suodattimia, ne näkyvät automaattisesti optimoidun raportin.
+Lisäksi voit luoda [ *reagoivia* visualisointeja](#optimize-a-visual-for-any-size) ja [reagoivia osittajia](#enhance-slicers-to-work-well-in-phone-reports), joiden koko muuttuu kätevästi millä laitteella tahansa. Jos lisäät raporttiin suodattimia, ne näkyvät automaattisesti optimoidussa raportissa.
 
 ## <a name="lay-out-a-portrait-version-of-a-report-page"></a>Raporttisivun pystysuuntaisen version asettelu
 
@@ -44,7 +44,7 @@ Kun olet luonut raportin, voit optimoida sen puhelin- ja tablettikäyttöä vart
    
     ![Visualisointien vetäminen ja pudottaminen](media/desktop-create-phone-report/desktop-create-phone-report-4.gif)
    
-    Voit lisätä puhelimen raporttisivulle joko osan pääraporttisivun visualisoinneista tai ne kaikki. Voit kuitenkin lisätä kunkin visualisoinnin vain kerran. Sinun ei tarvitse sisällyttää kaikki visualisoinnit.
+    Voit lisätä puhelimen raporttisivulle joko osan pääraporttisivun visualisoinneista tai ne kaikki. Voit kuitenkin lisätä kunkin visualisoinnin vain kerran. Kaikkia visualisointeja ei tarvitse sisällyttää.
 
 4. Voit muuttaa visualisointien kokoa ruudukossa samalla tavalla kuin ruutujen kokoa muutetaan koontinäytöissä tai mobiililaitteiden koontinäytöissä.
    

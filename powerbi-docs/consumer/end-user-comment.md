@@ -5,19 +5,18 @@ author: mihart
 manager: kvivek
 ms.reviewer: ''
 featuredvideoid: ''
-ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 09/16/2019
+ms.date: 09/18/2019
 ms.author: mihart
 LocalizationGroup: Consumer
-ms.openlocfilehash: d09ada0d3309a9cb2b93a8cd4fa3d6740e69ba77
-ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
+ms.openlocfilehash: f9979a852028e929b626e76534fef073feca3fd8
+ms.sourcegitcommit: 7a0ce2eec5bc7ac8ef94fa94434ee12a9a07705b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71073545"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71100623"
 ---
 # <a name="add-comments-to-a-dashboard-or-report"></a>Kommenttien lisääminen koontinäyttöön tai raporttiin
 Lisää henkilökohtainen kommentti tai aloita keskustelu koontinäytöstä tai raportista työtovereidesi kanssa. **Kommentti**-ominaisuus on vain yksi tapa, jolla *kuluttaja* voi tehdä yhteistyötä muiden kanssa. 
@@ -29,7 +28,7 @@ Voit lisätä kommentteja koko koontinäyttöön, koontinäytön yksittäisiin v
 
 Kun lisäät kommentin raporttiin, Power BI tallentaa nykyiset suodatin- ja osittaja-arvot. Tämä tarkoittaa sitä, että kun valitset kommentin tai vastaat siihen, raporttisivu tai raportin visualisointi voi muuttua näyttämään suodatus- ja osittajavalinnat, jotka olivat aktiivisia, kun kommentti lisättiin ensimmäistä kertaa.  
 
-![video raportista, jossa on suodattimet](media/end-user-comment/comment-reports-with-filters/comment-reports-with-filters.gif)
+![video raportista, jossa on suodattimet](media/end-user-comment/power-bi-comment.gif)
 
 Miksi tämä on tärkeää? Oletetaan, että työtoveri on käyttänyt suodatinta, joka paljasti mielenkiintoisen merkityksellisen tiedon, jonka hän haluaa jakaa työryhmän kanssa. Jos tätä suodatinta ei ole valittu, kommentissa ei ehkä ole järkeä.
 
@@ -40,49 +39,50 @@ Prosessit kommenttien lisäämiseksi koontinäyttöön tai raporttiin muistuttav
 
 1. Avaa Power BI -koontinäyttö tai raportti ja valitse **Kommentit**-kuvake. Kommentit-valintaikkuna avautuu.
 
-    ![kommentit-kuvake](media/end-user-comment/power-bi-comment-icon.png)
+    ![kommentit-kuvake](media/end-user-comment/power-bi-comment-menu.png)
 
     Tässä näemme, että koontinäytön tekijä on jo lisännyt yleisen kommentin.  Kuka tahansa koontinäytön käyttöoikeudet omaava voi nähdä tämän kommentin.
 
-    ![kommentit-kuvake](media/end-user-comment/power-bi-dash-comment.png)
+    ![kommentit-kuvake](media/end-user-comment/power-bi-first-comments.png)
 
 2. Jos haluat vastata, valitse **Vastaa**, kirjoita vastauksesi ja valitse **Julkaise**.  
 
     ![Vastaa kommenttiin -kuvake](media/end-user-comment/power-bi-comment-reply.png)
 
-    Power BI ohjaa vastauksesi oletusarvoisesti sille työtoverillesi, joka on aloittanut kommenttiketjun eli tässä tapauksessa Aaron F:lle. 
+    Power BI ohjaa vastauksesi oletusarvoisesti sille työtoverillesi, joka on aloittanut kommenttiketjun eli tässä tapauksessa Aaronille. 
 
-    ![Kommentti ja vastaus](media/end-user-comment/power-bi-response.png)
+    ![Kommentti ja vastaus](media/end-user-comment/power-bi-respond.png)
 
  3. Jos haluat lisätä kommentin, joka ei kuulu olemassa olevaan ketjuun, kirjoita kommenttisi ylempään tekstikenttään.
 
-    ![Vastaa kommenttiin -kuvake](media/end-user-comment/power-bi-new-comment.png)
+    ![Vastaa kommenttiin -kuvake](media/end-user-comment/power-bi-new-comments.png)
 
     Tämän koontinäytön kommentit näyttävät nyt tältä.
 
-    ![Kommentit keskustelut](media/end-user-comment/power-bi-comment-conversation.png)
+    ![Kommentit keskustelut](media/end-user-comment/power-bi-conversation.png)
 
 ### <a name="add-a-comment-to-a-specific-dashboard-or-report-visual"></a>Kommentin lisääminen koontinäytön tai raportin tiettyyn visualisointiin
 Sen lisäksi, että voit lisätä kommentteja koko koontinäyttöön tai koko raporttisivulle, voit lisätä kommentteja koontinäytön yksittäisiin ruutuihin ja raportin yksittäisiin visualisointeihin. Prosessit ovat samankaltaisia, ja tässä esimerkissä käytetään raporttia.
 
 1. Osoita visualisointia ja napsauta kolmea pistettä (...).    
-2. Valitse avattavasta valikosta **Lisää kommentti**.
+2. Valitse avattavasta valikosta **Avaa kommentit**.
 
-    ![Lisää kommentti on ensimmäinen vaihtoehto](media/end-user-comment/power-bi-comment-report.png)  
+    ![Lisää kommentti on ensimmäinen vaihtoehto](media/end-user-comment/power-bi-report-comment.png)  
 
 3.  **Kommentit**-valintaikkuna avautuu, ja muut sivulla olevat visualisoinnit näkyvät harmaana. Tässä visualisoinnissa ei ole vielä kommentteja. 
 
-    ![Kommentin lisääminen itselle](media/end-user-comment/power-bi-comment-bar.png)  
+    ![Kommentin lisääminen itselle](media/end-user-comment/power-bi-comment-column.png)  
 
 4. Kirjoita kommenttisi ja valitse **Julkaise**.
 
-    ![Kommentin lisääminen itselle](media/end-user-comment/power-bi-comment-june.png)  
+    ![Kommentin lisääminen itselle](media/end-user-comment/power-bi-comment-logistics.png)  
 
     - Kun valitset raporttisivulla visualisoinnille tehdyn kommentin, visualisointi korostetaan (ks. yllä).
 
     - Koontinäytössä kaaviokuvake ![kommentti ja kaaviokuvake](media/end-user-comment/power-bi-comment-chart-icon.png) ilmaisee, että kommentti liittyy tiettyyn visualisointiin. Koko koontinäyttöä koskevat kommentit eivät sisällä erityistä kuvaketta. Kaaviokuvakkeen valitseminen korostaa siihen liittyvän visualisoinnin koontinäytössä.
+    
 
-        ![kyseinen visualisointi korostettu](media/end-user-comment/power-bi-comment-highlight2.png)
+    ![kyseinen visualisointi korostettu](media/end-user-comment/power-bi-highlight.png)
 
 5. Palaa koontinäyttöön tai raporttiin valitsemalla **Sulje**.
 

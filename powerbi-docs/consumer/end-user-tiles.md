@@ -4,24 +4,23 @@ description: Kaikki koontinäyttöruuduista Power BI:ssä kuluttajille. Tämä s
 author: mihart
 manager: kvivek
 ms.reviewer: ''
-ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 12/05/2018
+ms.date: 09/18/2019
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 3a341dda238996db4953fa7c68d7053034ca40b8
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: 7e6d10a7a06c94c6bc00b06d38194dde461720be
+ms.sourcegitcommit: 200291eac5769549ba5c47ef3951e2f3d094426e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "61050136"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71142103"
 ---
 # <a name="dashboard-tiles-in-power-bi"></a>Koontinäyttöruudut Power BI:ssä
-Ruutu on tietojen tilannevedos, jonka *suunnittelija* on kiinnittänyt koontinäyttöön. Ruutu voidaan luoda raportista, tietojoukosta, koontinäytöstä, Q&A-kyselyruudusta, Excelistä, SQL Server Reporting Servicesistä (SSRS) ja niin edelleen.  Tämä näyttökuva esittää useita eri ruutuja, jotka on kiinnitetty koontinäyttöön.
+Ruutu on tietojen tilannevedos, jonka *suunnittelija* on kiinnittänyt koontinäyttöön. *Suunnittelijat* voivat luoda ruutuja raportista, tietojoukosta, koontinäytöstä, Q&A-kyselyruudusta, Excelistä, SQL Server Reporting Servicesistä (SSRS) ja niin edelleen.  Tämä näyttökuva esittää useita eri ruutuja, jotka on kiinnitetty koontinäyttöön.
 
-![Power BI -koontinäyttö](./media/end-user-tiles/power-bi-dashboard.png)
+![Power BI -koontinäyttö](./media/end-user-tiles/power-bi-dash.png)
 
 
 Raporteista kiinnitettyjen ruutujen lisäksi *suunnittelijat* voivat lisätä yksittäisiä ruutuja suoraan koontinäyttöön käyttämällä **Lisää ruutu** -komentoa. Yksittäisiä ruutuja ovat tekstiruudut, kuvat, videot, suoratoistotiedot ja verkkosisältö.
@@ -38,15 +37,15 @@ Tarvitsetko apua Power BI:n rakenneosien kanssa?  Katso [Power BI - peruskäsitt
 
     - Q&A:n avulla luotu ruutu
    
-        ![kolme pistettä -kuvake](./media/end-user-tiles/power-bi-menu1.png)
+        ![kolme pistettä -kuvake](./media/end-user-tiles/power-bi-options-1.png)
 
     - työkirjasta luotu ruutu
    
-        ![kolme pistettä -kuvake](./media/end-user-tiles/power-bi-menu2.png)
+        ![kolme pistettä -kuvake](./media/end-user-tiles/power-bi-options-2.png)
 
     - raportista luotu ruutu
    
-        ![kolme pistettä -kuvake](./media/end-user-tiles/power-bi-menu3.png)
+        ![kolme pistettä -kuvake](./media/end-user-tiles/power-bi-options-3.png)
    
     Täältä voit:
    
@@ -56,9 +55,12 @@ Tarvitsetko apua Power BI:n rakenneosien kanssa?  Katso [Power BI - peruskäsitt
    
 
    * [avata työkirjan, jolla tämä ruutu on luotu ](end-user-reports.md) ![laskentataulukkokuvake](./media/end-user-tiles/power-bi-open-worksheet.png)  
-    * [tarkastella ruutua tarkastelutilassa ](end-user-focus.md)![kohdistuskuvake](./media/end-user-tiles/fullscreen-icon.jpg)  
-     * [suorittaa merkityksellisiä tietoja ](end-user-insights.md) ![merkityksellisiä tietoja -kuvake](./media/end-user-tiles/power-bi-insights.png)
-    * [lisätä kommentin ja aloittaa keskustelun](end-user-comment.md)  ![kommenttikuvake](./media/end-user-tiles/comment-icons.png)
+   * [tarkastella ruutua tarkastelutilassa ](end-user-focus.md)![kohdistuskuvake](./media/end-user-tiles/fullscreen-icon.jpg)  
+   * [tarkastella merkityksellisiä tietoja ](end-user-insights.md) ![merkityksellisiä tietoja -kuvake](./media/end-user-tiles/power-bi-insights.png)
+   * [lisätä kommentin ja aloittaa keskustelun](end-user-comment.md)  ![kommenttikuvake](./media/end-user-tiles/comment-icons.png)
+   * [hallita koontinäytön ruudun ilmoituksia](end-user-alerts.md)  ![ilmoituskuvake](./media/end-user-tiles/power-bi-alert-icon.png)
+   * [avata tiedot Excelissä](end-user-export.md)  ![vientikuvake](./media/end-user-tiles/power-bi-export-icon.png)
+
 
 3. Jos haluat sulkea toimintovalikon, valitse kankaan tyhjä alue.
 

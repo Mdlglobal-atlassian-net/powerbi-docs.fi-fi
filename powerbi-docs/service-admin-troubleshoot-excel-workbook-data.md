@@ -13,7 +13,7 @@ ms.custom: seodec18
 LocalizationGroup: Troubleshooting
 ms.openlocfilehash: 6fb02e6cbaca30859aa00f58ae07c9a3fd7f6fe0
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: fi-FI
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "65101393"
@@ -25,7 +25,7 @@ ms.locfileid: "65101393"
 
 Kun tuot Excel-työkirjan Power BI:hin, saatat nähdä seuraavan virheilmoituksen:
 
-*Virhe: Taulukoksi muotoiltuja tietoja ei löytynyt. Jos haluat tuoda Excelistä Power BI-palveluun, Muotoile tiedot taulukoksi. Valitse kaikki taulukkoon haluamasi ja painamalla Ctrl + T tiedot.*
+*Virhe: Taulukoksi muotoiltuja tietoja ei löytynyt. Jos haluat tuoda Excelistä Power BI -palveluun, sinun on muotoiltava tiedot taulukkona. Valitse taulukossa kaikki haluamasi tiedot ja paina Ctrl+T-näppäinyhdistelmää.*
 
 ![Tietoja ei löydy työkirjasta](media/service-admin-troubleshoot-excel-workbook-data/power-bi-we-couldnt-find-any-data.png)
 

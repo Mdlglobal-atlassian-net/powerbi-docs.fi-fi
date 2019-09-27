@@ -1,6 +1,6 @@
 ---
-title: 'Opetusohjelma: Luo Automaattianalyysipalvelujen malli Power BI (esikatselu)'
-description: Tässä opetusohjelmassa luot Power BI-Koneoppimisen malli.
+title: 'Opetusohjelma: Koneoppimismallin luominen Power BI:ssä (esikatselu)'
+description: Tässä opetusohjelmassa luodaan koneoppimismalli Power BI:ssä.
 author: davidiseminger
 manager: kfile
 ms.reviewer: ''
@@ -13,187 +13,187 @@ ms.author: davidi
 LocalizationGroup: Connect to services
 ms.openlocfilehash: 611d6f6c923e6cb68af94840c4266a0b6dee7651
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: fi-FI
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "61406748"
 ---
-# <a name="tutorial-build-a-machine-learning-model-in-power-bi-preview"></a>Opetusohjelma: Luo Automaattianalyysipalvelujen malli Power BI (esikatselu)
+# <a name="tutorial-build-a-machine-learning-model-in-power-bi-preview"></a>Opetusohjelma: Koneoppimismallin luominen Power BI:ssä (esikatselu)
 
-Käytä tämän opetusohjelman artikkelin **automatisoituja Automaattianalyysipalvelujen** luoda ja ottaa käyttöön Power BI binary ennusteen malli. Opetusohjelman sisältää ohjeita luomiseen Power BI-tietovirrassa ja käyttämällä entiteetit määritetty kouluttamaan ja koneoppimisen malli suoraan Power BI tarkistaa tietovirrassa. Sitten Käytämme mallin pisteiden predictions luomiseen.
+Tässä opetusartikkelissa käytetään **automaattianalyysipalveluita** binaariennustemallin luomiseen ja käyttämiseen Power BI:ssä. Opetusohjelma sisältää ohjeita siitä, miten voit luoda Power BI -tietovuon sekä tietovuossa määritettyjä entiteettejä käyttämällä harjoittaa ja vahvistaa koneoppimismallia suoraan Power BI:ssä. Käytämme sitten tätä mallia pisteytystä varten ennusteiden luomiseen.
 
-Ensin sinun täytyy luoda Binary ennusteen koneoppimisen mallin optimoimiseen Osta tarkoitus online shoppers niiden online-istunnon määritteitä joukon perusteella. Tässä harjoituksessa käytetään benchmark tietokoneen oppimisen tietojoukon. Kun malli on harjoitettu, Power BI luo automaattisesti vahvistus-raportin, joka selittää mallin tulokset. Voit tarkistaa vahvistusraportti ja malli käyttöön tietojen pisteiden.
+Ensin luodaan binaarisen ennusteen koneoppimismalli online-ostajien ostoaikeen ennustamiseen heidän online-istunnon määritejoukkonsa perusteella. Tässä harjoituksessa käytetään koneoppimisen tietojoukon vertailuarvoa. Mallin harjoittamisen jälkeen Power BI luo automaattisesti vahvistusraportin, jossa kerrotaan mallin tulokset. Voit sitten tarkistaa vahvistusraportin ja ottaa mallin käyttöön tiedoissasi pisteytystä varten.
 
-Tässä opetusohjelmassa sisältää seuraavat vaiheet:
+Tämä opetusohjelma koostuu seuraavista vaiheista:
 
 > [!div class="checklist"]
-> * Luo tietovirrassa syötteen tiedoilla
-> * Luo ja kouluttamaan tietokoneen learning-malli
-> * Tarkista mallin vahvistus-raportti
-> * Käytä mallia tietovirrassa entiteettiin
-> * Pisteytetyt tulos mallin käyttäminen Power BI-raporttiin
+> * Tietovuon luominen syötetietojen avulla
+> * Koneoppimismallin luominen ja harjoittaminen
+> * Mallin vahvistusraportin tarkasteleminen
+> * Mallin käyttäminen tietovuoentiteetissä
+> * Mallin pisteytetyn tulosteen käyttäminen Power BI -raportissa
 
-## <a name="create-a-dataflow-with-the-input-data"></a>Luo tietovirrassa syötteen tiedoilla
+## <a name="create-a-dataflow-with-the-input-data"></a>Tietovuon luominen syötetietojen avulla
 
-Tässä opetusohjelmassa ensimmäinen osa on luoda tietovirrassa syötteen tiedoilla. Että prosessi kestää muutaman vaiheen mukaisesti seuraavissa osioissa kuvataan, alkaen tietojen hankkiminen.
+Tämän opetusohjelman ensimmäinen osa on luoda tietovuo syötetietojen avulla. Prosessissa on muutamia eri vaiheita, kuten seuraavissa osioissa kuvataan, ja ensimmäisenä vaiheena on tietojen hankkiminen.
 
 ### <a name="get-data"></a>Nouda tiedot
 
-Ensimmäinen vaihe tietovirrassa luominen on on valmis tietolähteisiin. Tässä tapauksessa Käytämme automaattianalyysipalvelujen tietojoukon online istuntoja, joista osa culminated oston joukosta. Tietojoukko sisältää joukon tietoja istuntoja, jota Käytämme-koulutus malliin määritteet.
+Tietovuon luomisen ensimmäinen vaihe on tietolähteiden valmistelu. Tässä tapauksessa käytämme koneoppimisen tietojoukkoa online-istuntojen joukosta, joista osa päättyi ostoon. Tietojoukko sisältää joukon määritteitä näistä istunnoista, ja käytämme niitä mallimme harjoittamiseen.
 
-Voit ladata tietojoukon Yksilöllisyyden Irvine-sivustossa.  Tarjoamme myös tämä saatavilla siihen opetusohjelmassa seuraavasta linkistä: [online_shoppers_intention.csv](https://raw.githubusercontent.com/santoshc1/PowerBI-AI-samples/master/Tutorial_AutomatedML/online_shoppers_intention.csv).
+Voit ladata tietojoukon UC Irvine -verkkosivustosta.  Tämä on käytettävissä myös tässä opetusohjelmassa seuraavasta linkistä: [online_shoppers_intention.csv](https://raw.githubusercontent.com/santoshc1/PowerBI-AI-samples/master/Tutorial_AutomatedML/online_shoppers_intention.csv).
 
 ### <a name="create-the-entities"></a>Luo entiteetit
 
 Jotta voit luoda entiteetit tietovirrassa, kirjaudu sisään Power BI -palveluun ja siirry varatun kapasiteettisi työtilaan, jossa AI-esikatselu on käytössä.
 
-Jos sinulla ei vielä ole työtilan, voit luoda sellaisen valitsemalla **työtilat** Power BI-palveluun ja valitse vasemman siirtymisruudun-valikossa **Luo sovelluksen työtila** paneelin alareunasta, tulee näkyviin. Anna työtilan tiedot oikealla paneeli avautuu. Anna työtilan nimi ja valitse **lisäasetukset**. Vahvista, joilla työtilan varattua kapasiteettia käyttämällä valintanappi ja joka on määritetty varattua kapasiteettia esiintymään, joka on otettu käyttöön AI esikatselu. Valitse **Tallenna**.
+Jos sinulla ei vielä ole työtilaa, voit luoda sellaisen valitsemalla Power BI -palvelun vasemmanpuoleisesta siirtymisvalikosta **Työtilat** ja valitsemalla sitten alareunan paneelista **Luo sovelluksen työtila**. Tämä avaa oikeaan reunaan ruudun, jossa voit antaa työtilan tiedot. Kirjoita työtilan nimi ja valitse **Lisäasetukset**. Varmista, että työtila käyttää varattua kapasiteettia valintanapin avulla ja että se on määritetty varattuun kapasiteettiesiintymään, jossa on käytössä tekoälyn esikatselu. Valitse **Tallenna**.
 
 ![Luo työtila](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-01.png)
 
-Kun työtila on luotu, voit valita **Ohita** alaosassa oikeassa aloitusnäytössä seuraavassa kuvassa esitetyllä tavalla.
+Kun työtila on luotu, voit valita aloitusnäytön oikeassa alanurkassa **Ohita** seuraavan kuvan mukaisesti.
 
 ![Ohita, jos sinulla on työtila](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-02.png)
 
-Valitse **Dataflows (esikatselu)** välilehti. Valitse **Luo** yläreunassa oikealla työtilan ja valitse sitten **tietovirrassa**.
+Valitse **Tietovuot (esikatselu)** -välilehti. Valitse työtilan oikeassa ylänurkassa oleva **Luo**-painike ja valitse sitten **Tietovuo**.
 
-![Luo tietovirrassa](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-03.png)
+![Luo tietovuo](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-03.png)
 
-Valitse **Lisää uudet entiteetit**. Tämä käynnistää **Power Query** editorin selaimessa.
+Valitse **Lisää uudet entiteetit**. Tämä käynnistää **Power Query** -editorin selaimessa.
 
 ![Lisää uudet entiteetit](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-04.png)
 
-Valitse **teksti/CSV-tiedoston** tietolähteenä, näkyvät seuraavassa kuvassa.
+Valitse tietolähteeksi **teksti- tai CSV-tiedosto** seuraavan kuvan mukaisesti.
 
-![Valittu teksti/CSF-tiedosto](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-05.png)
+![Teksti- tai CSV-tiedosto valittuna](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-05.png)
 
-- **Yhdistäminen tietolähteen** , joka tulee näkyviin seuraava, Liitä seuraavaa linkkiä *online_shoppers_intention.csv* into **tiedostopolku tai URL-osoite** ruutua ja valitse sitten  **Seuraava**.
+Liitä seuraavaksi näyttöön tulevassa **Muodosta yhteys tietolähteeseen** -kohdassa seuraava linkki *online_shoppers_intention.csv*-tiedostoon **Tiedostopolku tai URL-osoite** -ruutuun ja valitse sitten **Seuraava**.
 
 `https://raw.githubusercontent.com/santoshc1/PowerBI-AI-samples/master/Tutorial_AutomatedML/online_shoppers_intention.csv`
 
 ![Tiedostopolku](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-06.png)
 
-Power Query-editorin näyttää esikatselun tiedot CSV-tiedostosta. Valitse **muuntaa taulukon** komento valintanauhasta ja valitse sitten **Käytä ensimmäistä riviä otsikkoina** avautuvasta valikosta. Tämä lisää _korottaa otsikot_ kyselyn vaihetta **käytössä olevat vaiheet** osan näytön oikeassa reunassa. Voit nimetä uudelleen kyselyn mukavampi nimen arvo muuttamalla **nimi** box löytyvät oikeanpuoleisessa ruudussa. Voit esimerkiksi muuttaa kyselyn nimi _Online käyttäjä_.
+Power Query -editori näyttää CSV-tiedostossa olevien tietojen esikatselun. Valitse komentopalkista **Muunna taulukko** ja valitse sitten avautuvasta valikosta **Käytä ensimmäistä riviä otsikkoina**. Tämä lisää _Ylennetyt otsikot_ -kyselyvaiheen näytön oikeassa reunassa olevaan **Käytössä olevat vaiheet** -osioon. Voit nimetä kyselyn uudelleen muuttamalla oikealla olevan **Nimi**-ruudun arvoa. Voit esimerkiksi muuttaa kyselyn nimeksi _Online-vierailija_.
 
-![Muuta kutsumanimi](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-07.png)
+![Muuta nimeä](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-07.png)
 
-Jotkin tämän tietojoukon määrite tietotyypit ovat _numeerinen_ tai _totuusarvo_, vaikka nämä merkkijonot, voidaan tulkita **Power Query**. Valitse yläreunan kutakin sarakeotsikkoa, voit muuttaa seuraaviin sarakkeet määrite tyyppi-kuvake:
+Jotkin tämän tietojoukon määritetietotyypeistä ovat _lukuja_ tai _totuusarvoja_, mutta **Power Query** voi tulkita ne merkkijonoiksi. Valitse määritetyyppi-kuvake kunkin sarakeotsikon yläosasta, jos haluat muuttaa alla lueteltuja sarakkeita seuraavanlaisiksi:
 
 * **Desimaaliluku:** Administrative_Duration; Informational_Duration; ProductRelated_Duration; BounceRates; ExitRates; PageValues; SpecialDay
-* **Tosi/epätosi:** Viikonlopun; Tuotto
+* **Tosi/epätosi:** Viikonloppu; Tuotto
 
 ![Vaihda tietotyyppiä](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-08.png)
 
-**Binary ennusteen** meidän kouluttamaan vaatii Boolean-kenttä selitteenä tunnistetaan viimeisten havainnot-tulokset. Tämän tietojoukon _tuotto_ määrite ilmaisee, osto, ja tämä määrite on jo käytettävissä totuusarvoksi. Siis meidän ei tarvitse lisätä lasketun sarakkeen nimen. Muihin tietojoukkoihin saatat joutua aiemmin otsikon määritteet Muunna Boolean-sarakkeeseen.
+Harjoitettava **binaariennustemalli** edellyttää Totuusarvo-kenttää otsikkona, jossa kerrotaan aiempien havaintojen tulokset. Tässä tietojoukossa _Tuotto_-määrite ilmaisee ostoa, ja tämä määrite on jo saatavana totuusarvona. Otsikolle ei siis tarvitse lisätä laskettua saraketta. Muissa tietojoukoissa on ehkä muunnettava aiemmin luodut otsikkomääritteet Totuusarvo-sarakkeeksi.
 
-Valitse **valmis** Sulje Power Query-editori-painiketta. Tämä näyttää entiteettien luettelo, jossa _Online käyttäjät_ Olemme lisänneet tiedot. Valitse **Tallenna** oikeasta yläkulmasta Anna tietovirrassa nimi ja valitse sitten **Tallenna** valintaikkunan seuraavassa kuvassa esitetyllä tavalla.
+Sulje Power Query -editori valitsemalla **Valmis**. Tämä näyttää entiteettiluettelon lisätyillä _Online-vierailijoiden_ tiedoilla. Valitse oikeassa yläkulmassa **Tallenna**, anna tietovuolle nimi ja valitse sitten valintaikkunassa **Tallenna** seuraavan kuvan mukaisesti.
 
-![Tallenna tietovirrassa](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-09.png)
+![Tallenna tietovuo](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-09.png)
 
 ### <a name="refresh-the-dataflow"></a>Tietovuon päivittäminen
 
-Tallentamista tietovirrassa tulokset näytetään ilmoituksen, jossa ilmoitetaan, että-tietovirrassa on tallennettu. Valitse **Päivitä nyt** -käyttöä tietolähteen tietoja tietovirrassa.
+Tietovuon tallentamisen jälkeen näyttöön tulee ilmoitus, jossa kerrotaan, että tietovuo on tallennettu. Valitse **Päivitä nyt**, niin lähteen tietoja käytetään tietovuossa.
 
 ![Päivitä nyt](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-10.png)
 
 Valitse oikeasta yläkulmasta **Sulje** ja odota, kunnes tietovuon päivitys on valmis.
 
-Voit päivittää sovelluksesi tietovirrassa käyttämällä **toiminnot** komentoja. Tietovirrassa on aikaleima, kun päivitys on suoritettu.
+Voit päivittää tietovuon myös käyttämällä **Toiminnot**-komentoja. Tietovuossa näkyy aikaleima päivityksen valmistumisesta.
 
-![Päivitä aikaleima](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-11.png)
+![Päivityksen aikaleima](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-11.png)
 
-## <a name="create-and-train-a-machine-learning-model"></a>Luo ja kouluttamaan tietokoneen learning-malli
+## <a name="create-and-train-a-machine-learning-model"></a>Koneoppimismallin luominen ja harjoittaminen
 
-Kun päivitys on valmis, valitse tietovirrassa. Lisää tietokoneen oppimisen malli, valitse **koskevat ML mallin** painiketta **toiminnot** luettelo perusentiteetin, joka sisältää koulutus tiedot ja selitteen tiedot ja valitse sitten **Lisää tietokoneen oppimisen mallin**.
+Valitse tietovuo, kun päivitys on valmis. Jos haluat lisätä koneoppimismallin, valitse **Käytä koneoppimismallia** -painike **Toiminnot**-luettelossa sen perusentiteetin kohdalla, joka sisältää harjoitus- ja otsikkotiedot, ja valitse sitten **Lisää koneoppimismalli**.
 
 ![Lisää koneoppimismalli](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-12.png)
 
-Ensimmäinen vaihe luomiseen varatun oppimisen malliin on tunnistaa historialliset tiedot, mukaan lukien, jonka haluat ennusteen nimikenttä. Mallin luonut oppimisen näistä tiedoista.
+Ensimmäinen vaihe koneoppimismallin luomisessa on tunnistaa ne historialliset tiedot, mukaan lukien otsikkokenttä, jonka haluat ennustaa. Malli luodaan näistä tiedoista oppimalla.
 
-Tietojoukko, jota Käytämme, tämä on **tuotto** kenttä. Valitse **tuotto** 'aiempien tulos kentän' arvo ja valitse sitten **seuraava**.
+Käytetyn tietokentän kohdalla kyseessä on **Tuotto**-kenttä. Valitse **Tuotto** Historiallisen tuloksen kenttä -arvoksi ja valitse sitten **Seuraava**.
 
 ![Valitse historialliset tiedot](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-13.png)
 
-Seuraava meidän täytyy valita koneoppimisen ja voit myös luoda tyyppiä. Power BI analysoi, jotka on määrittänyt liiketoimintatarpeen aiempien tulos kentän arvot ja ehdottaa tietokoneen oppimisen malleilla, jotka voidaan luoda optimoimiseen kentän tyypit.
+Seuraavaksi on valittava luotavan koneoppimismallin tyyppi. Power BI analysoi määrittämäsi historiallisen tuloksen kentän arvoja ja ehdottaa tämän kentän ennakoimiseksi luotavien koneoppimismallien tyyppejä.
 
-Tässä tapauksessa, koska olemme olet korrelaatio binary tulos, onko käyttäjä tekee oston, tai ei, valitse **Binary ennusteen** mallityyppi ja valitse sitten Seuraava.
+Tässä tapauksessa, koska ennakoimme binaarista tulosta siitä, tekeekö käyttäjä oston vai ei, valitse mallityypin kohdalla **Binaarinen ennuste** ja valitse sitten Seuraava.
 
-![Binary ennusteen valittuna](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-14.png)
+![Binaarinen ennuste valittuna](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-14.png)
 
-Seuraavaksi Power BI ei alustava tarkistuksen tietojen ja ehdottaa, malli käyttää syötteitä. Voit halutessasi voit mukauttaa mallia käytetään syöttökenttiä. Valitse entiteetin nimen viereinen valintaruutu valitun tietojoukon, voit valita kaikki kentät. Valitse **seuraava** hyväksymään syötteitä.
+Seuraavaksi Power BI tarkistaa tiedot alustavasti ja ehdottaa syötteitä, joita malli voi käyttää. Voit halutessasi mukauttaa mallissa käytettyjä syötekenttiä. Voit valita kootussa tietojoukossa kaikki kentät valitsemalla entiteetin nimen vieressä olevan valintaruudun. Hyväksy syötteet valitsemalla **Seuraava**.
 
-![Seuraava valintaruutu](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-15.png)
+![Valitse Seuraava-valintaruutu](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-15.png)
 
-Lopuksi voimme on annettava malliin nimi sekä tulokset, jota käytetään automaattisesti luotu raportissa, joka tekee yhteenvedon mallin tarkistuksen tulokset kutsumanimi otsikot. Seuraava Meillä on mallin nimi _Osta tarkoitus ennusteen_, ja kuin true ja false-otsikot _Osta_ ja _ei osta_. Valitse **Tallenna**.
+Viimeisessä vaiheessa mallille on annettava nimi sekä otsikot niille tuloksille, joita käytetään automaattisesti luodussa raportissa, joka tekee yhteenvedon mallin vahvistuksen tuloksista. Seuraavaksi meidän on nimettävä mallin _Ostoaikeen ennuste_ sekä annettava tosi- ja epätosi-otsikoille nimet _Osto_- ja _Ei ostoa_. Valitse **Tallenna**.
 
 ![Tallenna malli](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-16.png)
 
-Tietokoneen oppimisen malliin on nyt valmis koulutusta. Valitse **Päivitä nyt** Aloita koulutus mallia.
+Koneoppimismallimme on nyt valmiina harjoittamiseen. Aloita mallin harjoittaminen valitsemalla **Päivitä nyt**.
 
 ![Päivitä nyt](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-17.png)
 
-Koulutusprosessi alkaa näytteenotto ja normalisoidaan historialliset tiedot ja jakaa tietojoukkosi kaksi uusia entiteettejä *tarkoitus ennusteen koulutus ostotietoja* ja *Osta tarkoitus ennusteen testaaminen Tietojen*.
+Harjoitusprosessi aloitetaan ottamalla näytteitä historiallisista tiedoista ja normalisoimalla ne ja sitten jakamalla tietojoukkosi kahdeksi uudeksi entiteeteiksi: *Ostoaikeen ennusteen harjoitustiedot* ja *Ostoaikeen ennusteen testitiedot*.
 
-Tietojoukon koosta riippuen koulutusprosessi voi kestää muutaman minuutin kuluttua kaksi tuntia. Tässä vaiheessa voit nähdä mallia **ihmis oppiminen mallien** välilehdessä tietovirrassa. _Valmis_ tila ilmaisee, että malli on asetettu jonoon koulutusta tai koulutus on.
+Tietojoukon koosta riippuen harjoitusprosessi voi kestää muutamasta minuutista muutamaan tuntiin. Tässä vaiheessa näet mallin tietovuon **Koneoppimismallit**-välilehdellä. _Valmis_-tila ilmaisee, että malli on asetettu jonoon harjoittamista varten tai että sitä harjoitetaan parhaillaan.
 
-![Valmis-koulutus](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-18.png)
+![Valmiina harjoittamiseen](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-18.png)
 
-Kun malli on koulutusta, et pysty voit tarkastella tai muokata tietovirrassa. Voit vahvistaa, että malli on harjoitettu ja vahvistaa tietovirrassa tilan kautta. Tämä näkyy tietojen päivitys on meneillään **Dataflows** työtilan välilehteen.
+Kun mallia harjoitetaan, et voi tarkastella tai muokata tietovuota. Voit vahvistaa mallin harjoittamisen ja vahvistamisen tietovuon tilan kautta. Tämä näkyy tietojen päivittämisenä työtilan **Tietovuot**-välilehdessä.
 
-![Prosessin](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-19.png)
+![Käsittelyssä](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-19.png)
 
-Kun mallin Harjoitus on valmis, tietovirrassa näyttää päivitetyn päivitysajankohta. Voit vahvistaa, että mallin harjoitettu, siirtymällä **ihmis oppiminen mallien** välilehden tietovirrassa. Mallin, jonka loit pitäisi näkyä tilan **Trained** ja **viimeisen koulutettua** aika nyt voi päivittää.
+Kun mallin harjoittaminen on valmis, tietovuossa näkyy päivitetty päivitysaika. Voit vahvistaa mallin harjoittamisen valmistumisen siirtymällä tietovuon **Koneoppimismallit**-välilehteen. Luomasi mallin tilana pitäisi näkyä **Harjoitettu**, ja **Harjoitettu viimeksi** -ajan pitäisi nyt olla päivitetty.
 
-![Edellinen harjoittaminen](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-20.png)
+![Harjoitettu viimeksi](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-20.png)
 
-## <a name="review-the-model-validation-report"></a>Tarkista mallin vahvistus-raportti
+## <a name="review-the-model-validation-report"></a>Mallin vahvistusraportin tarkasteleminen
 
-Tarkastella mallia vahvistus-raportin **tietokoneen oppimisen malleja, s** käyttäjähakemistoon **suorituskyvyn raportin tarkasteleminen ja ota käyttöön mallin** painiketta **toiminnot** sarakkeen mallin . Tämän raportin kuvataan, miten tietokoneen oppimisen mallin todennäköisesti suorittamiseen.
+Jos haluat tarkastella mallin vahvistusraporttia, valitse **Koneoppimismallit**-kohdassa **Tarkastele suorituskykyraporttia ja käytä mallia** -painike mallin **Toiminnot**-sarakkeessa. Tässä raportissa kuvataan, miten koneoppimismalli todennäköisesti suoriutuu.
 
-- **Mallin suorituskyvyn** raportin, valitse sivun **avain Influencers** tarkastella yläreunan predictors mallin. Voit valita jonkin nähdäksesi, miten tulos jakauman liittyvät kyseisen predictor predictors.
+Valitse raportin **Mallinsuoritus kyky** -sivulla **Tärkeimmät vaikuttajat**, jotta voit tarkastella mallisi tärkeimpiä ennusteita. Voit valita jonkin ennusteen, jotta näet kyseiseen ennusteeseen liittyvän tulosten jakautumisen.
 
 ![Mallin suorituskyky](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-21.png)
 
-Voit määrittää **todennäköisyys raja-arvon** osittajan mallin suorituskyvyn sivulla tutkia sen vaikutus tarkkuus- ja peruuttaminen mallille.
+Mallin suorituskyky -sivulla olevan **Todennäköisyyden raja-arvo** -osittajan avulla voit tarkastella sen vaikutusta mallin Tarkkuus- ja Saanti-mittareihin.
 
 ![Todennäköisyyden raja-arvo](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-22.png)
 
-Raportin muilla sivuilla kuvataan tilastoanalyysit suoritusmittaukset mallille.
+Raportin muut sivut kuvailevat mallin tilastollisia suorituskykymittareita.
 
-Raportti sisältää myös koulutus tietosivu, joka kuvaa eri iterointia, joka on suoritettu, miten ominaisuudet olivat poiminut syötteitä ja käyttää lopullisen mallin hyperparameters.
+Raportti sisältää myös Harjoitustiedot-sivun, jossa kuvataan erilaisia suoritettuja toistoja, miten ominaisuudet poimittiin syötteistä ja käytetyn lopullisen mallin hyperparametreja.
 
-## <a name="apply-the-model-to-a-dataflow-entity"></a>Käytä mallia tietovirrassa entiteettiin
+## <a name="apply-the-model-to-a-dataflow-entity"></a>Mallin käyttäminen tietovuoentiteetissä
 
-Valitse **Käytä mallin** käynnistämiseen tätä mallia, kun tietovirrassa päivitetään raportin yläreunassa. - **Käytä** valintaikkunan, voit määrittää kohde-entiteetti, jonka lähdetietoja, joihin mallia käytetään.
+Valitse **Käytä mallia** -painike raportin yläosasta, jos haluat käynnistää tämän mallin, kun tietovuo päivitetään. **Käytä**-valintaikkunassa voit määrittää kohde-entiteetin, jonka lähdetietoja malli käyttää.
 
 ![Käytä mallia](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-23.png)
 
-Pyydettäessä on **Päivitä** esikatselu mallin tulokset tietovirrassa.
+**Päivitä** pyydettäessä tietovuo, jotta voit esikatsella mallin tuloksia.
 
-Malli on otettu käyttöön luodaan uusi entiteetti jälkiliite **rikastettua < mallin_nimi >** entiteetin, joihin sovelletaan mallin liitetään. Tässä tapauksessa on otettu käyttöön mallin **OnlineShoppers** entiteettiin Luo **OnlineShoppers rikastettua Osta tarkoitus ennusteen**, joka sisältää ennustettu tulos mallista.
+Mallin käyttäminen luo uuden entiteetin, jonka jälkiliite **täydennetty <mallin_nimi>** on liitettynä entiteettiin, jossa malli otettiin käyttöön. Tässä tapauksessa mallin ottaminen käyttöön **OnlineOstajat**-entiteetissä luo kohteen **OnlineOstajat täydennetty Ostoaikeen ennuste**, joka sisältää ennustetun tuloksen mallista.
 
-Binary ennusteen malli on otettu käyttöön lisää kolme saraketta, joiden ennustettu tulos ja yläreunan tietueen tiettyjen influencers, ennusteen todennäköisyys pistemäärä, jokainen etuliitteeksi määritetyn sarakkeen nimen.
+Binaariennustemallin käyttäminen lisää ennusteeseen kolme saraketta, jotka sisältävät ennustetun tuloksen, todennäköisyyden pistemäärän ja parhaat tietuekohtaiset vaikuttajat ja joista jokaisen etuliitteenä on määritetty sarakkeen nimi.
 
-![Kolmen sarakkeen tuloksesta](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-24.png)
+![Kolme tulossaraketta](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-24.png)
 
-Tunnemme ongelman vuoksi pisteytetyt tulostesarakkeet rikastetun entiteetissä ovat vain Power BI Desktop voi käyttää. Voit esikatsella nämä palvelussa, sinun on käytettävä erityinen esikatselu-entiteetti.
+Tunnetun ongelman vuoksi täydennetyn entiteetin pisteytetyt tulostesarakkeet ovat käytettävissä vain Power BI Desktopista. Jos haluat esikatsella näitä palvelussa, sinun on käytettävä erityistä esikatseluentiteettiä.
 
-Kun tietovirrassa päivitys on valmis, voit valita **OnlineShoppers rikastettua Osta tarkoitus ennusteen esikatselu** entiteetin tulokset.
+Kun tietovuon päivitys on valmis, voit tarkastella tuloksia valitsemalla **OnlineOstajat täydennetty Ostoaikeen ennuste – esikatselu** -entiteetin.
 
-![Näytä tulokset](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-25.png)
+![Tarkastele tuloksia](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-25.png)
 
-## <a name="using-the-scored-output-from-the-model-in-a-power-bi-report"></a>Pisteytetyt tulos mallin käyttäminen Power BI-raporttiin
+## <a name="using-the-scored-output-from-the-model-in-a-power-bi-report"></a>Mallin pisteytetyn tulosteen käyttäminen Power BI -raportissa
 
-Pisteytetyt tulos-koneoppimisen mallin käyttöön voit muodostaa yhteyttä tietovirrassa Power BI Desktopista, Dataflows-yhdistimen käyttäminen. **OnlineShoppers rikastettua Osta tarkoitus ennusteen** entiteetin nyt voidaan sisällyttää predictions mallin Power BI-raporteissa.
+Jos haluat käyttää koneoppimismallin pisteytettyä tulosta, voit muodostaa yhteyden tietovuohon Power BI Desktopista käyttämällä tietovoiden liitintä. **OnlineOstajat täydennetty Ostoaikeen ennuste** -entiteettiä voidaan nyt käyttää mallin ennustusten sisällyttämiseen Power BI -raportteihin.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
-Tässä opetusohjelmassa luodaan ja otetaan binary ennusteen malli Power BI-seuraavasti:
+Tässä opetusohjelmassa loit ja käytit binaariennustemallia Power BI:ssä seuraavien vaiheiden avulla:
 
-* Luo tietovirrassa syötteen tiedoilla
-* Luo ja kouluttamaan tietokoneen learning-malli
-* Tarkista mallin vahvistus-raportti
-* Käytä mallia tietovirrassa entiteettiin
-* Pisteytetyt tulos mallin käyttäminen Power BI-raporttiin
+* Tietovuon luominen syötetietojen avulla
+* Koneoppimismallin luominen ja harjoittaminen
+* Mallin vahvistusraportin tarkasteleminen
+* Mallin käyttäminen tietovuoentiteetissä
+* Mallin pisteytetyn tulosteen käyttäminen Power BI -raportissa
 
-Katso lisätietoja Power BI-Koneoppimisen automation [Automaattianalyysipalvelujen automatisoituja Power BI (esikatselu)](service-machine-learning-automated.md).
+Katso lisätietoja automaattianalyysipalveluista Power BI:ssä artikkelista [Automaattianalyysipalvelut Power BI:ssä (esikatselu)](service-machine-learning-automated.md).

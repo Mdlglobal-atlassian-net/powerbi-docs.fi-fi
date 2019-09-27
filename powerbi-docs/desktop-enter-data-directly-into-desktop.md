@@ -8,20 +8,20 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/08/2019
+ms.date: 09/19/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 1f50fa577cace62adadd0dfc29216445c6c8f269
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 10586d0fa685bb947b27a5c243117596517bdb52
+ms.sourcegitcommit: 200291eac5769549ba5c47ef3951e2f3d094426e
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65454341"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71142241"
 ---
 # <a name="enter-data-directly-into-power-bi-desktop"></a>Tietojen antaminen suoraan Power BI Desktopiin
 Power BI Desktopin avulla voit antaa tiedot suoraan ja käyttää kyseisiä tietoja raportteihin ja visualisointeihin. Voit esimerkiksi kopioida osan työkirjasta tai web-sivusta ja sitten liittää sen Power BI Desktopiin.
 
-Voit antaa tietoja suoraan valitsemalla **Anna tiedot** **Koti**-valintanauhasta.
+Jos haluat syöttää tietoja suoraan Power BI Desktopiin uuden taulukon muodossa, valitse **Anna tiedot** **Aloitus**-valintanauhasta.
 
 ![](media/desktop-enter-data-directly-into-desktop/enter-data-directly_1.png)
 
