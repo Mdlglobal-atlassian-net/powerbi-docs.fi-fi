@@ -9,12 +9,12 @@ ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 05/17/2018
 ms.author: maggies
-ms.openlocfilehash: fe8ad0b951fedb17a97007e48808d2bfd7467e88
-ms.sourcegitcommit: 6c2c7a090b0826e3cfc3a897566e802857bbacc8
+ms.openlocfilehash: edda72ab1c9c9901bf71b360d3773b5e8da0a095
+ms.sourcegitcommit: bbd9b38f30a4ca5cb8072496c9cacb635b03aa88
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "68808225"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71401829"
 ---
 # <a name="power-bi-report-data-sources-in-power-bi-report-server"></a>Power BI -raporttien tietolähteet Power BI -raporttipalvelimessa
 Power BI -raportit voivat muodostaa yhteyden useisiin tietolähteisiin. Käytettävissä on eri tietolähteitä riippuen siitä, miten tietoja käytetään. Tiedot voidaan tuoda tai tiedoille voidaan tehdä kyselyitä suoraan DirectQuerylla tai reaaliaikaisella SQL Server Analysis Services -yhteydellä.
@@ -71,7 +71,7 @@ Muutkin tietolähteet saattavat toimia, vaikka ne eivät olekaan tuettujen luett
 | SharePoint Online -luettelo |Kyllä |Ei |Ei |
 | Snowflake |Kyllä |Ei |Ei |
 | Sybase-tietokanta |Kyllä |Kyllä |Ei |
-| Teradata-tietokanta |Kyllä |Kyllä |Kyllä |
+| Teradata |Kyllä |Kyllä |Kyllä |
 | Teksti- tai CSV-tiedosto |Kyllä |Kyllä |Ei |
 | Verkko |Kyllä |Kyllä |Ei |
 | XML |Kyllä |Kyllä |Ei |

@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 06/26/2019
 ms.author: tebercov
-ms.openlocfilehash: 5e34601c3ebacb3cfd8a4a5ddeb282756d0f700b
-ms.sourcegitcommit: 1789815c87e306b1427a5838655d30d3b9ba1d29
+ms.openlocfilehash: fae3af81540e22b961fcb1d2a79de425fdc1cd8c
+ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67791817"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71194797"
 ---
 # <a name="tips-for-authoring-template-apps-in-power-bi"></a>Vihjeitä mallisovellusten kehittämiseen Power BI:ssä
 
@@ -126,7 +126,6 @@ Mallisovellukset voidaan julkaista AppSourcessa. Noudata seuraavia ohjeita ennen
 
 * Varmista, että luot mallisovelluksen käyttämällä mielenkiintoisia mallitietoja, jotka auttavat asentajaa ymmärtämään sovelluksen toimintoja (tyhjää raporttia ja koontinäyttöä ei hyväksytä).
 Mallisovellukset tukevat mallitietoja vain sovelluksissa, joten varmista, että tarkistat staattisen sovelluksen valintaruudun. [Lue lisää](https://docs.microsoft.com/power-bi/service-template-apps-create#create-the-test-template-app)
-* Yleensä vain sovellus, jossa on hyödyllisiä ominaisuuksia, voidaan hyväksyä yleisesti käytettäväksi AppSourcessa. Vain mallitietosisältöä sisältävällä sovelluksella on oltava joko ohjaava tai tilastoanalyyttinen arvo.
 * Ohjeista validointitiimiä ja kerro, mitä tunnistetietoja ja parametreja vaaditaan tietoihin yhdistämiseen.
 * Sovelluksen on sisällettävä sovelluskuvake Power BI:ssä ja CPP-tarjouksessa. [Lue lisää](https://docs.microsoft.com/power-bi/service-template-apps-create#create-the-test-template-app)
 * Määritetty aloitussivu. [Lue lisää](https://docs.microsoft.com/power-bi/service-template-apps-create#create-the-test-template-app)
@@ -135,6 +134,7 @@ Mallisovellukset tukevat mallitietoja vain sovelluksissa, joten varmista, että 
 * Asenna sovellus sovelluslinkin avulla ennen sen lähettämistä, ja varmista, että voit yhdistää tietojoukon ja sovelluskokemuksen suunnitelmien mukaan.
 * Varmista ennen bpix-tiedoston lataamista mallisovelluksen työtilaan, ettet lataa mitään tarpeettomia yhteyksiä.
 * Noudata Power BI:n [parhaita suunnittelukäytäntöjä raporteille ja visualisoinneille](https://docs.microsoft.com/power-bi/visuals/power-bi-visualization-best-practices), jotta vaikutat optimaalisesti käyttäjiisi ja saat hyväksynnän jakelulle.
+<!--- * In general, only application with valuable functionality can be approved for general use on AppSource. Application with sample data content only must have either a guidance or statistical value.) -->
 
 ## <a name="known-limitations"></a>Tunnetut rajoitukset
 
