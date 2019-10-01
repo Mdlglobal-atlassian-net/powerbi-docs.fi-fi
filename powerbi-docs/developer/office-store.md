@@ -1,22 +1,22 @@
 ---
-title: Omien visualisointien julkaiseminen AppSourcessa
+title: Power BI -visualisointien julkaiseminen AppSourceen
 description: Lue ohjeet siihen, miten voit julkaista omia visualisointejasi AppSourcessa muiden käyttöön.
-author: sranins
-ms.author: rasala
-manager: kfile
+author: KesemSharabi
+ms.author: kesharab
+manager: rkarlin
 ms.reviewer: maghan
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 3/27/2019
-ms.openlocfilehash: cb21d3baf9523a90b0446b44704587b5af73904f
-ms.sourcegitcommit: bc688fab9288ab68eaa9f54b9b59cacfdf47aa2e
+ms.openlocfilehash: 3cbc2c6fcb70d6298c9d2ade3e3f2cd10cd8a834
+ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68623790"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71194509"
 ---
-# <a name="publish-custom-visuals-to-appsource"></a>Omien visualisointien julkaiseminen AppSourcessa
+# <a name="publish-power-bi-visuals-to-appsource"></a>Power BI -visualisointien julkaiseminen AppSourceen
 
 Lue ohjeet siihen, miten voit julkaista omia visualisointejasi AppSourcessa muiden käyttöön.
 
@@ -40,13 +40,13 @@ Kun olet lukenut [Power BI:n visualisointien ohjeet](guidelines-powerbi-visuals.
 | Näyttökuvat |Kyllä |Sinun täytyy antaa ainakin yksi näyttökuva. Se voi olla .png-, .jpg-, .jpeg- tai .gif-muodossa. Sen on oltava tarkalleen 1 366 × 768 kuvapistettä (leveys × korkeus). Suurin sallittu tiedostokoko on 1 024 kt. *Käyttäjämäärien kasvattamiseksi suosittelemme, että lisäät näyttökuviin tekstikuplia, jotka tuovat esiin tärkeimpien toimintojen etuja.* |
 | Tuen latauslinkki |Kyllä |Tarjoa URL-osoite, josta asiakkaat voivat hankkia tukea, jos heillä on ongelmia visualisointisi käytössä. Tämä linkki on lisätty osana SellerDashboard-luetteloasi, ja käyttäjät näkevät sen käyttäessään visualisointiluetteloasi AppSourcessa. URL-osoitteen täytyy olla https:// - tai http:// -muodossa. |
 | Tietosuoja-asiakirjan linkki |Kyllä |Tarjoa visualisointiasi käyttäville asiakkaille linkki tietosuojakäytäntöösi. Tämä linkki on lisätty osana SellerDashboard-luetteloasi, ja käyttäjät näkevät sen käyttäessään visualisointiluetteloasi AppSourcessa. Linkin täytyy olla https:// - tai http:// -muodossa. |
-| Käyttöoikeussopimus (EULA) |Kyllä |Sinun täytyy ladata palveluun käyttöoikeussopimus. Se voi olla oma käyttöoikeussopimuksesi tai Office-kaupan oletuskäyttöoikeussopimus Power BI:n mukautetuille visualisoinneille. Jos haluat käyttää oletuskäyttöoikeussopimusta, liitä seuraava URL-osoite myyjän koontinäytön ”Käyttöoikeussopimus”-tiedoston latauksen valintaikkunaan: [https://visuals.azureedge.net/app-store/Power BI - Default Custom Visual EULA.pdf](https://visuals.azureedge.net/app-store/Power%20BI%20-%20Default%20Custom%20Visual%20EULA.pdf). |
+| Käyttöoikeussopimus (EULA) |Kyllä |Sinun täytyy ladata palveluun käyttöoikeussopimus. Se voi olla oma käyttöoikeussopimuksesi tai Office-kaupan oletuskäyttöoikeussopimus Power BI -visualisoinneille. Jos haluat käyttää oletuskäyttöoikeussopimusta, liitä seuraava URL-osoite myyjän koontinäytön ”Käyttöoikeussopimus”-tiedoston latauksen valintaikkunaan: [https://visuals.azureedge.net/app-store/Power BI - Default Custom Visual EULA.pdf](https://visuals.azureedge.net/app-store/Power%20BI%20-%20Default%20Custom%20Visual%20EULA.pdf). |
 | Videolinkki |Ei |Voit kasvattaa kiinnostusta visualisointiasi kohtaan antamalla linkin sen esittelyvideoon. URL-osoitteen täytyy olla https:// - tai http:// -muodossa. |
 | GitHub-säilö |Ei |Suosittelemme, että annat kelvollisen ja julkisen linkin [GitHub](https://www.github.com)-säilöön, joka sisältää visualisointisi lähteet ja esimerkkitiedot, jotta muut kehittäjät voivat antaa palautetta ja ehdottaa parannuksia koodiisi. |
 
 ## <a name="submitting-to-power-bi"></a>Power BI:hin lähettäminen
 
-Lähettäminen aloitetaan lähettämällä sähköpostia Power BI:n mukautettujen visualisointien julkaisutiimille. Voit lähettää sähköpostin osoitteeseen [pbivizsubmit@microsoft.com](mailto:pbivizsubmit@microsoft.com).
+Lähettäminen aloitetaan lähettämällä sähköpostiviesti Power BI -visualisointien julkaisutiimille. Voit lähettää sähköpostin osoitteeseen [pbivizsubmit@microsoft.com](mailto:pbivizsubmit@microsoft.com).
 
 > [!IMPORTANT]
 > Sinun täytyy täyttää seuraavat pbiviz.json-tiedoston kentät ennen .pbiviz-paketin luomista: description, supportUrl, author, name ja email.
@@ -89,7 +89,7 @@ Voit lähettää visualisoinnin alla olevien ohjeiden mukaisesti.
    * *Lähetyksen otsikko:* Lähetyksesi nimi Developer Centerissä.
    * *Versio:* Versionumero määritetään automaattisesti apuohjelmasi sovelluspaketin perusteella.
    * *Julkaisupäivämäärä (UTC):* Valitse päivämäärä, jolloin sovelluksesi julkaistaan kaupassa. Jos valitset tulevaisuudessa olevan päivämäärän, sovelluksesi on saatavilla kaupasta vasta valittuna päivänä.
-   * *Luokka:* Ensimmäiseksi luokaksi määritetään ”Tietojen visualisointi ja liiketoimintatiedot”. Tämä merkintä lisätään kaikille Power BI:n mukautetuille visualisoinneille. Voit määrittää kaksi muutakin luokkaa, joiden avulla käyttäjät voivat helposti etsiä visualisointiasi.
+   * *Luokka:* Ensimmäiseksi luokaksi määritetään ”Tietojen visualisointi ja liiketoimintatiedot”. Tämä merkintä lisätään kaikille Power BI -visualisoinneille. Voit määrittää kaksi muutakin luokkaa, joiden avulla käyttäjät voivat helposti etsiä visualisointiasi.
    * *Testaushuomautukset:* voit halutessasi antaa tässä ohjeita Microsoftin testaajille.
    * *Sovelluksesi kutsuu, tukee, sisältää tai käyttää salausta*: jätä tämä kohta valitsematta.
    * *Tarjoa tämä apuohjelma käytettäväksi iPadin Office-apuohjelmaluettelossa*: jätä tämä kohta valitsematta.
@@ -104,7 +104,7 @@ Voit lähettää visualisoinnin alla olevien ohjeiden mukaisesti.
    * Videolinkki
    * Käyttöoikeussopimus (EULA)
 
-       Sinun täytyy ladata palveluun käyttöoikeussopimus. Se voi olla oma käyttöoikeussopimuksesi tai Office-kaupan oletuskäyttöoikeussopimus Power BI:n mukautetuille visualisoinneille. Jos haluat käyttää oletuskäyttöoikeussopimusta, liitä seuraava URL-osoite myyjän koontinäytön ”Käyttöoikeussopimus”-tiedoston latauksen valintaikkunaan: [https://visuals.azureedge.net/app-store/Power BI - Default Custom Visual EULA.pdf](https://visuals.azureedge.net/app-store/Power%20BI%20-%20Default%20Custom%20Visual%20EULA.pdf).
+       Sinun täytyy ladata palveluun käyttöoikeussopimus. Se voi olla oma käyttöoikeussopimuksesi tai Office-kaupan oletuskäyttöoikeussopimus Power BI -visualisoinneille. Jos haluat käyttää oletuskäyttöoikeussopimusta, liitä seuraava URL-osoite myyjän koontinäytön ”Käyttöoikeussopimus”-tiedoston latauksen valintaikkunaan: [https://visuals.azureedge.net/app-store/Power BI - Default Custom Visual EULA.pdf](https://visuals.azureedge.net/app-store/Power%20BI%20-%20Default%20Custom%20Visual%20EULA.pdf).
 
 8. Jatka **Tiedot**-sivulle valitsemalla **Seuraava**.
 

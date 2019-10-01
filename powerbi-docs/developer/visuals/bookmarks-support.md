@@ -1,24 +1,24 @@
 ---
 title: Kirjanmerkkien tuen lisääminen Power BI -visualisoinneille
 description: Kirjanmerkkien välillä siirtyminen Power BI -visualisoinnissa
-author: zBritva
-ms.author: v-ilgali
+author: KesemSharabi
+ms.author: kesharab
 manager: rkarlin
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: c7fb8fa6fcf8c07f0d8f466892fff8d03a492a79
-ms.sourcegitcommit: b602cdffa80653bc24123726d1d7f1afbd93d77c
+ms.openlocfilehash: c19b67a59d0ecb4cbfbcf5ad8dd18886f440e164
+ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70237287"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71194451"
 ---
 # <a name="add-bookmark-support-for-power-bi-visuals"></a>Kirjanmerkkien tuen lisääminen Power BI -visualisoinneille
 
-Power BI -raportin kirjanmerkit mahdollistavat raporttisivun määritetyn näkymän tallentamisen, valintatilan ja visualisoinnin suodatustilan. Kirjanmerkin tukeminen ja muutoksiin reagoiminen vaatii mukautetulta visualisoinnilta kuitenkin lisätoimia.
+Power BI -raportin kirjanmerkit mahdollistavat raporttisivun määritetyn näkymän tallentamisen, valintatilan ja visualisoinnin suodatustilan. Kirjanmerkin tukeminen ja muutoksiin reagoiminen vaatii Power BI -visualisoinnilta kuitenkin lisätoimia.
 
 Lisätietoja kirjanmerkeistä on artikkelissa [Merkityksellisten tietojen jakaminen ja tarinoiden luominen Power BI:ssä kirjanmerkkien avulla](https://docs.microsoft.com/power-bi/desktop-bookmarks).
 
@@ -32,7 +32,7 @@ Jos visualisointisi on vuorovaikutuksessa muiden visualisointien kanssa, valitse
 
 2. Päivitä visualisointien ohjelmointirajapinta versioon 1.11.0, jotta voit käyttää kohdetta `registerOnSelectCallback` `SelectionManager`-esiintymässä. Se vaaditaan visualisoinneille, joissa ei ole suodattimia ja joissa on käytössä pelkkä `SelectionManager` eikä `InteractivityService`.
 
-### <a name="how-custom-visuals-interact-with-power-bi-in-report-bookmarks"></a>Mukautettujen visualisointien vuorovaikutus Power BI:n kanssa raportin kirjanmerkeissä
+### <a name="how-power-bi-visuals-interact-with-power-bi-in-report-bookmarks"></a>Power BI -visualisointien vuorovaikutus Power BI:n kanssa raportin kirjanmerkeissä
 
 Ajatellaanpa seuraavaa skenaariota: haluat luoda raporttisivulle useita kirjanmerkkejä, joista jokaisessa on eri valintatila.
 

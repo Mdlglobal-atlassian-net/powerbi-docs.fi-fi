@@ -1,20 +1,20 @@
 ---
 title: Power BI -visualisointien tietonäkymän yhdistämismääritykset
 description: Tässä artikkelissa kerrotaan, miten Power BI muuntaa tiedot ennen niiden välittämistä visualisointeihin.
-author: asander
-ms.author: asander
+author: KesemSharabi
+ms.author: kesharab
 manager: rkarlin
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: 07989183688045f34d78e71cdaad5045d080f436
-ms.sourcegitcommit: b602cdffa80653bc24123726d1d7f1afbd93d77c
+ms.openlocfilehash: 77d5d6423c8246712d12dcc041d32ae73f68b72e
+ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70237231"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71193545"
 ---
 # <a name="understand-data-view-mapping-in-power-bi-visuals"></a>Power BI -visualisointien tietonäkymän yhdistämismääritykset
 
@@ -618,7 +618,7 @@ Visualisointi saa tietorakenteensa seuraavassa koodissa kuvatulla tavalla (vain 
 
 Voit määrittää tietonäkymään vastaanotettavien tietojen määrän käyttämällä tietojenvähennysalgoritmia.
 
-Oletusarvon mukaan kaikissa mukautetuissa visualisoinneissa on käytössä tietojenvähennysalgoritmi, jonka *määrä*-arvo on 1000 arvopistettä. Se vastaa seuraavien ominaisuuksien määrittämistä tiedostossa *capabilities.json*:
+Oletusarvon mukaan kaikissa Power BI -visualisoinneissa on käytössä tietojenvähennysalgoritmi, jonka *määrä*-arvo on 1000 arvopistettä. Se vastaa seuraavien ominaisuuksien määrittämistä tiedostossa *capabilities.json*:
 
 ```json
 "dataReductionAlgorithm": {
@@ -628,7 +628,7 @@ Oletusarvon mukaan kaikissa mukautetuissa visualisoinneissa on käytössä tieto
 }
 ```
 
-Voit muokata *määrä*-arvoa mihin tahansa kokonaislukuarvoon, joka on enintään 30000. R-pohjaiset mukautetut visualisoinnit voivat tukea enintään 150 000 riviä.
+Voit muokata *määrä*-arvoa mihin tahansa kokonaislukuarvoon, joka on enintään 30000. R-pohjaiset Power BI -visualisoinnit voivat tukea enintään 150 000 riviä.
 
 ## <a name="data-reduction-algorithm-types"></a>Tietojen vähentämisen algoritmityypit
 

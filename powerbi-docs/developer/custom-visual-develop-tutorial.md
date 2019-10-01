@@ -1,26 +1,26 @@
 ---
 title: Power BI -visualisoinnin kehittäminen
 description: Opetusohjelma Power BI:n mukautetun visualisoinnin kehittämisestä
-author: sranins
-ms.author: rasala
-manager: kfile
+author: KesemSharabi
+ms.author: kesharab
+manager: rkarlin
 ms.reviewer: maghan
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: tutorial
 ms.date: 03/15/2019
-ms.openlocfilehash: 2dc1d0a316319867513dc9f25a195c3f2d1140b9
-ms.sourcegitcommit: 473d031c2ca1da8935f957d9faea642e3aef9839
+ms.openlocfilehash: 5d9ed20435069fa31707d9532141558351ec63ba
+ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68415420"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71194484"
 ---
 # <a name="tutorial-developing-a-power-bi-visual"></a>Opetusohjelma: Power BI -visualisoinnin kehittäminen
 
-Annamme kehittäjille keinot mukautettujen visualisointien vaivattomaan lisäämiseen Power BI:hin raporttinäkymissä ja raporteissa käytettäviksi. Alkuun pääsemisen helpottamiseksi olemme julkaisseet GitHubissa koodin kaikille visualisoinneille.
+Annamme kehittäjille keinot Power BI -visualisointien vaivattomaan lisäämiseen Power BI:hin raporttinäkymissä ja raporteissa käytettäviksi. Alkuun pääsemisen helpottamiseksi olemme julkaisseet GitHubissa koodin kaikille visualisoinneille.
 
-Visualisointikehyksen lisäksi tarjoamme käyttöön testiohjelmiston ja työkalut, joiden avulla yhteisö voi kehittää korkealaatuisia mukautettuja visualisointeja Power BI:hin.
+Visualisointikehyksen lisäksi tarjoamme käyttöön testiohjelmiston ja työkalut, joiden avulla yhteisö voi kehittää laadukkaita Power BI -visualisointeja Power BI:hin.
 
 Tässä opetusohjelmassa näytetään, miten voit kehittää mukautetun Power BI -visualisoinnin nimeltä Circle Card. Sen avulla voi näyttää muotoillun mittariarvon ympyrän sisällä. Circle Card -visualisointi tukee täytevärin ja ääriviivan paksuuden mukauttamista.
 

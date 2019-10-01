@@ -1,22 +1,22 @@
 ---
 title: Muotoiluasetusten lisääminen Power BI:n mukautettuun visualisointiin
 description: Opetusohjelma Power BI:n mukautetun visualisoinnin muotoiluasetusten kehittämisestä
-author: sranins
-ms.author: rasala
-manager: kfile
+author: KesemSharabi
+ms.author: kesharab
+manager: rkarlin
 ms.reviewer: maghan
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: tutorial
 ms.date: 11/21/2018
-ms.openlocfilehash: 56134143a752a094c339248c3eeeab57116d3501
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 5fa14e3aa8a303206d52359d04db05850e096d81
+ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61379812"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71194593"
 ---
-# <a name="tutorial-adding-formatting-options-to-a-power-bi-custom-visual"></a>Opetusohjelma: Muotoiluasetusten lisääminen Power BI:n mukautettuun visualisointiin
+# <a name="tutorial-adding-formatting-options-to-a-power-bi-visual"></a>Opetusohjelma: Muotoiluasetusten lisääminen Power BI -visualisointiin
 
 Tässä opetusohjelmassa opetellaan lisäämään visualisointiin yleisiä ominaisuuksia.
 
@@ -263,4 +263,4 @@ Katso vihjeitä mukautetun visualisoinnin virheenkorjauksesta [virheenkorjauksen
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
-Voit antaa luomasi visualisoinnin muiden käyttöön lähettämällä sen **AppSourceen**. Katso lisätietoja tästä prosessista artikkelista [Mukautettujen visualisointien julkaiseminen AppSourceen](office-store.md).
+Voit antaa luomasi visualisoinnin muiden käyttöön lähettämällä sen **AppSourceen**. Lisätietoja tästä prosessista on artikkelissa [Power BI -visualisointien julkaiseminen AppSourceen](office-store.md).

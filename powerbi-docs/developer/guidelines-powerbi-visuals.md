@@ -1,20 +1,20 @@
 ---
 title: Ohjeet Power BI -visualisointeihin
 description: Lue ohjeet siihen, miten voit julkaista omia visualisointejasi AppSourcessa muiden löydettäviksi ja käytettäviksi maksua vastaan.
-author: sranins
-ms.author: rasala
-manager: kfile
+author: KesemSharabi
+ms.author: kesharab
+manager: rkarlin
 ms.reviewer: maghan
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 07/16/2019
-ms.openlocfilehash: 6a2fce59171ec36241cd5de03d41f6a27f54c664
-ms.sourcegitcommit: 390dc3716d5c83385bedde63dd152431a77020e2
+ms.openlocfilehash: 71752a635c69e6712befbb00e942189fa4dacc36
+ms.sourcegitcommit: e2c5d4561455c3a4806ace85defbc72e4d7573b4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68380221"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71327719"
 ---
 # <a name="guidelines-for-power-bi-visuals"></a>Power BI -visualisointien ohjeet
 Varmista ennen kuin [julkaiset](https://docs.microsoft.com/power-bi/developer/office-store) visualisoinnin AppSourcessa muiden käytettäväksi, että noudatat ohjeita, jotta käyttäjäsi saavat erinomaisen käyttökokemuksen. 
@@ -25,11 +25,14 @@ Kaikissa Power BI:n visualisoinneissa tulee ottaa pikavalikko käyttöön, jotta
 
 
 ## <a name="logo-guidelines"></a>Logo-ohjeet
+> [!NOTE]
+> Tämän artikkelin sanalogo viittaa mihin tahansa kaupallisen yrityksen logoon alla olevissa kuvissa esitetyllä tavalla. 
 
-Tässä osiossa annetaan ohjeet visualisoinnin logojen ja logotyyppien lisäämiseen. Logot eivät ole pakollisia. Jos ne lisätään, niiden on noudatettava seuraavia ohjeita. 
+Tässä osiossa annetaan ohjeet Power BI -visualisointien logojen lisäämiseen. Logot eivät ole pakollisia. Jos ne lisätään, niiden on noudatettava seuraavia ohjeita. 
 
 > [!IMPORTANT]
 > Logot sallitaan *ainoastaan muokkaustilassa*. Logoja *ei voi* näyttää tarkastelutilassa.
+
 
 ![Määritelmät](media/guidelines-powerbi-visuals/definitions.png)
 
@@ -44,11 +47,13 @@ Tässä osiossa annetaan ohjeet visualisoinnin logojen ja logotyyppien lisäämi
 ![Muokkaustila](media/guidelines-powerbi-visuals/logos-in-edit-mode.png)
 
 
+Mahdollisten tietokuvakkeiden tulisi lukutilassa vastata väriltään, kooltaan ja sijainniltaan yllä olevia logoja.
+
 ## <a name="guidelines-for-power-bi-visuals-with-additional-purchases"></a>Ohjeet Power BI -visualisointeihin, jotka sisältävät lisäostoja
 
 Viime aikoihin asti Marketplace (AppSource) hyväksyi ainoastaan maksuttomia Power BI -visualisointeja. Tämä käytäntö on muuttunut (joulukuussa 2018), joten voit nyt lähettää AppSourceen myös visualisointeja, joissa on ”lisäosto saattaa olla tarpeen” -hintalappu. 
 
-”Lisäosto saattaa olla tarpeen” -visualisoinnit ovat samankaltaisia kuin Office-kaupan apuohjelmien sovelluskohtaiset ostokset. Kehittäjät voivat lähettää visualisointeja myös sertifioitaviksi sen jälkeen, kun AppSource-tiimi on hyväksynyt ne, ja varmistettuaan, että visualisoinnit täyttävät sertifiointivaatimukset. Lisätietoja löytyy aiheesta [Sertifioidut mukautetut visualisoinnit](../power-bi-custom-visuals-certified.md).
+”Lisäosto saattaa olla tarpeen” -visualisoinnit ovat samankaltaisia kuin Office-kaupan apuohjelmien sovelluskohtaiset ostokset. Kehittäjät voivat lähettää visualisointeja myös sertifioitaviksi sen jälkeen, kun AppSource-tiimi on hyväksynyt ne, ja varmistettuaan, että visualisoinnit täyttävät sertifiointivaatimukset. Lisätietoja on artikkelissa [Sertifioidut Power BI -visualisoinnit](../power-bi-custom-visuals-certified.md).
 
 > [!NOTE]
 > Visualisoinnin sertifiointi edellyttää, ettei siinä käytetä ulkoisia palveluita tai resursseja.

@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 12/12/2018
-ms.openlocfilehash: 24854cd459996c766507b50dc6af41d995ba7204
-ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
+ms.openlocfilehash: 93c26d64193346b9b2db52bb2d0a0bbe32a4e97b
+ms.sourcegitcommit: 57e45f291714ac99390996a163436fa1f76db427
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71073045"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "71305704"
 ---
 # <a name="power-bi-embedded-performance-best-practices"></a>Power BI Embeddedin suorituskykyä parantavat parhaat käytännöt
 
@@ -64,21 +64,23 @@ Power BI Premiumi -kapasiteettia tai Power BI Embedded -kapasiteettia käyttäv�
 
 ## <a name="preload"></a>Esilataus
 
-Käytä JavaScript-ohjelmointirajapinnan **esilatausta** suorituskyvyn parantamiseksi loppukäyttäjän kannalta. `powerbi.preload()` lataa Javascriptin, CSS-tiedostot ja muut artefaktit, joita käytetään myöhemmin raporttiin upottamisessa.
+Voit parantaa suoritustehoa loppukäyttäjällä käyttämällä `powerbi.preload()`-menetelmää. `powerbi.preload()`-menetelmä lataa Javascriptin, CSS-tiedostot ja muut artefaktit, joita käytetään myöhemmin raporttiin upottamisessa.
 
-Kutsu **esilataus**, jos et ole upottamassa raporttia heti. Jos esimerkiksi upotat raportin painiketta napsauttamalla, **esilataus** kannattaa kutsua, kun edellinen sivu latautuu. Kun sovelluksen käyttäjä sitten napsauttaa painiketta, hahmontaminen on nopeampaa.
-
-> [!NOTE]
-> Esilatauksen käyttämistä ei suositella, jos raporttia ollaan upottamassa. Sen sijaan voit valmistella iframe-kehyksen upottamista varten käyttämällä käynnistystoimintoa.
+Kutsu `powerbi.preload()`, jos et ole upottamassa raporttia heti. Jos esimerkiksi upotettua Power BI -sisältöä ei näy aloitussivulla, lataa ja tallenna välimuistiin sisällön upottamiseen käytettävät artefaktit `powerbi.preload()`-menetelmän avulla.
 
 ## <a name="bootstrapping-the-iframe"></a>iframe-kehyksen käynnistäminen
 
 > [!NOTE]
-> [Power BI -asiakkaan SDK](https://github.com/Microsoft/PowerBI-JavaScript) versio 2.9 (beeta) vaaditaan iframe-kehyksen käynnistämiseen. 
->
-> `powerbi.bootstrap(element, config)`-kohteen avulla voidaan valmistella iframe upottamista varten. Tämän ominaisuuden pääasiallinen käyttötarkoitus on rinnakkaiskytkeä iframe-käynnistys ja upottamiseen käytettävät taustakutsut (esimerkiksi [Hae raportit](/rest/api/power-bi/reports/getreportsingroup) -kutsu).
+> [Power BI -asiakkaan SDK](https://github.com/Microsoft/PowerBI-JavaScript) versio 2.9 vaaditaan iframe-kehyksen käynnistämiseen.
 
-[Lue lisätietoja iframe-käynnistyksestä](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Bootstrap---For-Better-Performance).
+`powerbi.bootstrap(element, config)`-menetelmän avulla voit aloittaa upottamisen, ennen kuin kaikki vaaditut parametrit ovat käytettävissä. Käynnistyksen ohjelmointirajapinta valmistelee ja alustaa iframe-kehyksen.
+Kun käytät käynnistyksen ohjelmointirajapintaa, sinun on silti kutsuttava saman HTML-elementin `powerbi.embed(element, config)`-menetelmää.
+
+Yksi tämän ominaisuuden käyttötapa on esimerkiksi iframe-kehyksen käynnistyksen ja upottamisen taustakutsujen suorittaminen rinnakkain.
+> [!TIP]
+> Käytä käynnistyksen ohjelmointirajapintaa, kun iframe-kehys voidaan luoda ennen sen näkymistä käyttäjälle.
+
+[Lue lisätietoja iframe-käynnistyksestä](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Bootstrap-For-Better-Performance).
 
 ## <a name="measure-performance"></a>Mittaa suorituskykyä
 
