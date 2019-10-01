@@ -1442,11 +1442,13 @@
           href: service-admin-power-bi-security.md
 - name: Opas
   items:
-    - name: Tietovoiden parhaat käytännöt
-      href: service-dataflows-best-practices.md
+    - name: Yleiskatsaus
+      href: guidance/overview.md
     - name: Mikä on tähtirakenne?
       href: guidance/star-schema.md
     - name: Tietomallin koon pienentäminen
       href: guidance/import-modeling-data-reduction.md
     - name: JAKO-funktion ja jako-operaattorin (/) vertailu
       href: guidance/dax-divide-function-operator.md
+    - name: Tietovoiden parhaat käytännöt
+      href: service-dataflows-best-practices.md
