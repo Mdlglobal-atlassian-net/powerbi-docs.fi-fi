@@ -697,6 +697,8 @@
               href: service-cognitive-services.md
             - name: 'Automaattianalyysipalvelut Power BI:ssä (esikatselu)'
               href: service-machine-learning-automated.md
+        - name: Tietojen historiatiedot
+          href: service-data-lineage.md
         - name: 'Sivutetut raportit Power BI:ssä'
           items:
             - name: Tarkastele sivutettua raporttia
@@ -867,6 +869,8 @@
       items:
         - name: Tuetut kielet ja maat tai alueet
           href: supported-languages-countries-regions.md
+        - name: Tuetut selaimet
+          href: power-bi-browsers.md
     - name: Resurssit
       items:
         - name: Raportit
