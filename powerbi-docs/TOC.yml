@@ -873,16 +873,6 @@
           href: power-bi-browsers.md
     - name: Resurssit
       items:
-        - name: Raportit
-          items:
-            - name: Raporttien yleiskatsaus
-              href: whitepapers.md
-            - name: 'Power BI:n suojausraportti'
-              href: whitepaper-powerbi-security.md
-            - name: 'Power BI:n premium-käyttöönotto'
-              href: whitepaper-powerbi-premium-deployment.md
-            - name: 'Power BI -sisällön jakaminen ulkoisille käyttäjille Azure Active Directory B2B:n avulla'
-              href: whitepaper-azure-b2b-power-bi.md
         - name: Videot
           href: videos.md
         - name: Verkkoseminaarit
@@ -1456,3 +1446,13 @@
       href: guidance/dax-divide-function-operator.md
     - name: Tietovoiden parhaat käytännöt
       href: service-dataflows-best-practices.md
+    - name: Raportit
+      items:
+        - name: Raporttien yleiskatsaus
+          href: whitepapers.md
+        - name: 'Power BI:n suojausraportti'
+          href: whitepaper-powerbi-security.md
+        - name: 'Power BI:n premium-käyttöönotto'
+          href: whitepaper-powerbi-premium-deployment.md
+        - name: 'Power BI -sisällön jakaminen ulkoisille käyttäjille Azure Active Directory B2B:n avulla'
+          href: whitepaper-azure-b2b-power-bi.md
