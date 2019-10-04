@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/19/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 11de32b8119e8b6922dcc1a971750e4256812932
-ms.sourcegitcommit: 4a3afe761d2f4a5bd897fafb36b53961739e8466
+ms.openlocfilehash: d303e20e524ad7ac67882812b6e4f5a1d9b06c33
+ms.sourcegitcommit: 57e45f291714ac99390996a163436fa1f76db427
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/20/2019
-ms.locfileid: "69654764"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "71305794"
 ---
 # <a name="using-directquery-in-power-bi"></a>DirectQueryn käyttäminen Power BI:ssä
 Voit yhdistää kaikenlaisiin erilaisiin tietolähteisiin, kun käytät **Power BI Desktopia** tai **Power BI -palvelua**, ja muodostaa nämä tietoyhteydet eri tavoin. Voit *tuoda* tietoja Power BI:hin, mikä on yleisin tapa hakea tietoja, tai voit muodostaa yhteyden tietoihin suoraan niiden alkuperäisessä lähdesäilössä. Tätä tapaa kutsutaan nimellä **DirectQuery**. Tässä artikkelissa kuvataan **DirectQueryä** ja sen toimintoja:
@@ -137,6 +137,7 @@ Tässä kontekstissa *mallinnus* tarkoittaa raakatietojen tarkentamista ja täyd
 Kun käytät **DirectQueryä**, voit edelleen hyödyntää monia näistä mallinnustoiminnoista. Periaate on edelleen se, että voit jalostaa raakatietoja jatkokäytön parantamiseksi. Jotkin mallinnustoiminnot eivät kuitenkaan ole käytettävissä tai niitä on rajoitettu, kun käytät DirectQueryä. Rajoituksien tarkoituksena on yleensä suorituskykyongelmien välttäminen. Kaikille DirectQuery-lähteille yhteiset rajoitukset on lueteltu seuraavassa luettelossa. Yksittäisillä lähteillä voi olla muitakin rajoituksia. Ne kuvataan tarkemmin tämän artikkelin loppupäässä kohdassa *Tietolähdekohtaiset tiedot*.
 
 * **Ei sisäistä päivämäärähierarkiaa:** Kun tuot tiedot, jokaisella päivämääräsarakkeella ja päivämäärän ja kellonajan sarakkeella on oletusarvoisesti käytettävissä sisäinen hierarkia. Jos tuot esimerkiksi myyntitilaustaulukon, jossa on tilauspäivämäärän sarake, ja käytät tilauspäivämäärää visualisoinnissa, voit valita soveltuvan käytettävän tason (vuosi, kuukausi tai päivä). Tämä sisäinen päivämäärähierarkia ei ole käytettävissä DirectQuery-tilaa käytettäessä. Ota kuitenkin huomioon se, että jos taustalla olevassa lähteessä on käytettävissä päivämäärätaulukko (kuten monissa tietovarastoissa on), DAX-aikatietofunktioita voi käyttää normaalisti.
+* **Päivä määrän/ajan tuki vain sekunnin tarkkuudella:** Kun käytät tietojoukossasi aikasarakkeita, Power BI lähettää kyselyt pohjana olevaan lähteeseen vain sekuntien tarkkuudella. Kyselyjä ei lähetetä DirectQuery-lähteeseen millisekuntien tarkkuudella, joten sinun on poistettava kyseinen osa ajoista lähdesarakkeissasi.
 * **Laskettujen sarakkeiden rajoitukset:** Lasketut sarakkeet voivat olla vain rivin sisäisiä. Tämä tarkoittaa sitä, että ne voivat viitata vain saman taulukon muiden sarakkeiden arvoihin ilman mitään koostefunktioita. Lisäksi sallitut DAX-skalaarifunktiot (esimerkiksi LEFT()) rajoitetaan vain niihin, jotka voidaan vain lähettää taustalla olevaan lähteeseen. Tämän johdosta ne siis vaihtelevat lähteen tukemien toimintojen mukaisesti. Funktioita, joita ei tueta, ei näytetä automaattisessa täydennyksessä, kun kirjoitat lasketun sarakkeen DAX-funktiota. Jos annat funktion, jota ei tueta, saat virheilmoituksen.
 * **Ei tukea pää- ja alatason DAX-funktioille:** Kun käytät DirectQuery-mallia, et voi käyttää DAX PATH() -perheen funktioita, jotka yleensä käsittelevät pää- ja alatasorakenteet (esimerkiksi tilikaavio tai työntekijähierarkia).
 * **Laskettuja taulukoita ei tueta:** laskettua taulukkoa ei voi määrittää DAX-lausekkeella DirectQuery-tilassa.

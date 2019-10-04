@@ -7,37 +7,30 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/07/2019
+ms.date: 09/26/2019
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: f43bb105f7e17ce453e96c6eff875349efd45cb2
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 8a5b4c7cb484b296ccab395e18eb2b0089ffd5c7
+ms.sourcegitcommit: e2c5d4561455c3a4806ace85defbc72e4d7573b4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65239621"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71327811"
 ---
 # <a name="combine-files-binaries-in-power-bi-desktop"></a>Power BI Desktopin tiedostojen (binaaritiedostot) yhdistäminen
-Yksi tehokas tapa tietojen tuomiseksi **Power BI Desktopiin** on yhdistää useita tiedostoja, joilla on sama rakenne ja yhdistää ne yhdeksi loogiseksi taulukoksi. Marraskuun 2016 julkaisussa **Power BI Desktop** (ja sen myöhemmissä versioissa) tämä kätevä ja suosittu lähestymistapa on entistä kätevämpi ja kattavampi, kuten tässä artikkelissa kerrotaan.
+Yksi tehokas tapa tietojen tuomiseksi **Power BI Desktopiin** on yhdistää useita tiedostoja, joilla on sama rakenne ja yhdistää ne yhdeksi loogiseksi taulukoksi. Tämä kätevä ja suosittu lähestymistapa on entistä kätevämpi ja kattavampi, kuten tässä artikkelissa kerrotaan.
 
 Aloita tiedostojen yhdistäminen samaan kansioon valitsemalla **Nouda tiedot > Tiedosto > Kansio**.
 
 ![](media/desktop-combine-binaries/combine-binaries_1.png)
 
-## <a name="previous-combine-files-binaries-behavior"></a>Edellisten yhdistettyjen tiedostojen (binaaritiedostot) toiminta
-Marraskuuta 2016 edeltäneissä **Power BI Desktop** -versioissa tätä toimintoa kutsuttiin nimellä **Yhdistä binaarit**, ja sen avulla pystyit yhdistämään tietyt tiedostotyypit **Yhdistä binaarit** -muunnokseen, mutta rajoituksia oli:
 
-* Muunnoksia ei pidetty yksittäisenä tiedostona ennen kuin tiedostot oli yhdistetty yhdeksi taulukoksi. Niinpä usein piti yhdistää tiedostoja, sitten suodattaa pois *otsikkoarvot* suodattamalla rivit osana muokkausprosessia.
-* **Yhdistä binaarit** -muunnos toimi vain *teksti-* tai *CSV*-tiedostojen kohdalla, mutta ei muissa tuetuissa tiedostomuodoissa kuten Excel-työkirjat, JSON-tiedostot yms.
-
-Asiakkaat pyytää entistä helppokäyttöisemmän toiminnan kannalta **Yhdistä binaarit** toiminto, jotta muunnos oli parannetun ja nimetä uudelleen **yhdistää tiedostoja**.
-
-## <a name="current-combine-files-behavior"></a>Nykyisten yhdistettyjen tiedostojen toiminta
-**Power BI Desktop** käsittelee nyt **yhdistelmätiedostoja (binaaritiedostoja)** entistä tehokkaammin. Aloita valitsemalla **yhdistä tiedostot** joko **Koti**-valintanauhan välilehdeltä **Kyselyeditorissa** tai itse sarakkeesta.
+## <a name="combine-files-behavior"></a>Yhdistettyjen tiedostojen toiminta
+Voit **yhdistää tiedostoja (binaaritiedostoja)** valitsemalla **yhdistä tiedostot** joko **Aloitus**-valintanauhan välilehdestä **Kyselyeditorissa** tai itse sarakkeesta.
 
 ![](media/desktop-combine-binaries/combine-binaries_2a.png)
 
-**Yhdistä tiedostot** toimii nyt seuraavasti:
+**Yhdistä tiedostot** toimii seuraavasti:
 
 * **Yhdistä tiedostot** -toiminto analysoi kunkin syötetiedoston ja määrittää oikean tiedostomuodon, kuten *teksti* tai *Excel-työkirja* tai *JSON*-tiedosto.
 * Muunnos antaa valita tietyn objektin ensimmäisestä tiedostosta, esimerkiksi *Excel-työkirjan*, poimittavaksi.
@@ -51,7 +44,11 @@ Asiakkaat pyytää entistä helppokäyttöisemmän toiminnan kannalta **Yhdistä
     
     ![](media/desktop-combine-binaries/combine-binaries_4.png)
 
-Uuden **Yhdistä tiedostot** -toiminnan avulla voit helposti yhdistää kaikki tiedostot kansion sisällä, kunhan niillä on sama tiedostotyyppi ja rakenne (esimerkiksi sama määrä sarakkeita).
+> [!NOTE]
+> Excel-työkirjan valitun alueen koko vaikuttaa yhdistettävien binaaritiedostojen toimintaa. Voit esimerkiksi valita yhdistettäväksi tietyn laskentataulukon tai valita päätason, jos haluat yhdistää koko tiedoston. Kansion valitseminen yhdistää kansiossa olevat tiedostot. 
+
+
+**Yhdistä tiedostot** -toiminnan avulla voit helposti yhdistää kaikki tiedostot kansion sisällä, kunhan niillä on sama tiedostotyyppi ja rakenne (esimerkiksi sama määrä sarakkeita).
 
 Lisäksi voit helposti käyttää lisämuunnos- tai poimintavaiheita muokkaamalla automaattisesti luotua *esimerkkikyselyä*, eikä sinun tarvitse huolehtia uusien *funktiokyselyn* vaiheiden muokkaamisesta tai luomisesta. Tehdyt muutokset *esimerkkikyselyyn* luodaan automaattisesti linkitetyssä *funktiokyselyssä*.
 

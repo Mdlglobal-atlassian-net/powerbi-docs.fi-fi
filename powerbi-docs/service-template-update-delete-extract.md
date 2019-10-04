@@ -7,25 +7,33 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 06/10/2019
+ms.date: 09/23/2019
 ms.author: tebercov
-ms.openlocfilehash: 273734493c761739f9780e6a7fe6e781900723f9
-ms.sourcegitcommit: 7d52401f50944feaaa112c84113ee47f606dbf68
+ms.openlocfilehash: 2cf655c25bb58ec001bac52b55aea74f887f08d9
+ms.sourcegitcommit: 3885ae11e695f875a82c212ca157e401db8337c4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67125874"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71207637"
 ---
 # <a name="update-delete-and-extract-template-app"></a>Mallisovelluksen päivittäminen, poistaminen ja purkaminen
 
 Kun sovelluksesi on nyt tuotantoympäristössä, voit aloittaa alusta testausvaiheessa häiritsemättä tuotantoympäristössä olevaa sovellusta.
 ## <a name="update-your-app"></a>Päivitä sovelluksesi
 
+Jos olet tehnyt muutoksia Power BI Desktopissa, aloita vaiheesta (1). Jos et ole tehnyt muutoksia Power BI Desktopissa, aloita vaiheesta (4).
+
+1. Lataa päivitetty tietojoukko palvelimeen ja korvaa olemassa oleva tietojoukko. **Varmista, että käytät täsmälleen samaa tietojoukon nimeä**. Jos käytät eri nimeä, sovellusta päivittäville käyttäjille luodaan uusi tietojoukko.
+![tietojoukon korvaaminen](media/service-template-apps-update-extract-delete/power-bi-template-app-upload-dataset.png)
+1. Tuo pbix-tiedosto tietokoneestasi.
+![tietojoukon korvaaminen](media/service-template-apps-update-extract-delete/power-bi-template-app-upload-dataset2.png)
+1. Vahvista korvaaminen.
+![tietojoukon korvaaminen](media/service-template-apps-update-extract-delete/power-bi-template-app-upload-dataset3.png)
 
 1. Valitse **Julkaisun hallinta** -ruudussa **Luo sovellus**.
-2. Suorita sovelluksen luontiprosessi uudelleen.
-3. Kun olet määrittänyt **tuotemerkkiohjeet**, **sisällön**, **hallinnan** ja **käyttöoikeudet**, voit uudelleen valita **Luo sovellus** -vaihtoehdon.
-4. Valitse **Sulje** ja palaa **Julkaisun hallintaan**.
+1. Suorita sovelluksen luontiprosessi uudelleen.
+1. Kun olet määrittänyt **tuotemerkkiohjeet**, **sisällön**, **hallinnan** ja **käyttöoikeudet**, valitse **Luo sovellus** -vaihtoehto uudelleen.
+1. Valitse **Sulje** ja palaa **Julkaisun hallintaan**.
 
    Näkyvillä on nyt kaksi versiota: tuotantoympäristössä oleva versio sekä testausvaiheessa oleva uusi versio.
 
@@ -33,10 +41,18 @@ Kun sovelluksesi on nyt tuotantoympäristössä, voit aloittaa alusta testausvai
 
 5. Kun olet valmis korottamaan sovelluksesi esituotantoon niin, että sen testausta voidaan jatkaa oman vuokraajasi ulkopuolella, palaa Julkaisun hallinta -ruutuun ja valitse **Testaus**-kohdan vierestä **Korota sovellus**.
 6. Linkkisi on nyt aktiivinen. Lähetä se uudelleen pilvikumppaniportaaliin (CPP) [Power BI -sovellustarjouksen päivitys](https://docs.microsoft.com/azure/marketplace/cloud-partner-portal/power-bi/cpp-update-existing-offer) -kohdan ohjeiden mukaisesti.
-7. Tarjous on **julkaistava** CPP:ssä ja vahvistettava uudelleen.
+7. Tarjous on **julkaistava** uudelleen pilvikumppaniportaalissa ja myös vahvistettava uudelleen.
 
->[!NOTE]
->Korota sovellus tuotantovaiheeseen vasta, kun pilvikumppaniportaali on hyväksynyt sovelluksen ja olet julkaissut sen.
+   >[!NOTE]
+   >Korota sovellus tuotantovaiheeseen vasta, kun pilvikumppaniportaali on hyväksynyt sovelluksen ja olet julkaissut sen.
+
+### <a name="update-behavior"></a>Päivityksen toiminta
+
+1. Sovelluksen päivittäminen sallii mallisovelluksen asennusohjelman [päivittää malli sovelluksen](service-template-apps-install-distribute.md#update-a-template-app) jo asennetussa työtilassa ilman yhteyden määrityksen menettämistä.
+1. Tutustu asennusohjelman [korvaamisen toimintaan](service-template-apps-install-distribute.md#overwrite-behavior), jos haluat tietää, miten tietojoukon muutokset vaikuttavat asennettuun mallisovellukseen.
+1. Kun päivität (korvaat) mallisovelluksen, se palautuu ensin mallitietoihin ja yhdistyy automaattisesti uudelleen käyttäjän määrityksiin (parametrit ja todentaminen). Raportit, koontinäytöt ja organisaation sovellus esittelevät mallitietopalkin, kunnes päivitys on valmis.
+1. Jos olet lisännyt uuden kyselyparametrin päivitettyyn tietojoukkoon, joka edellyttää käyttäjien syötteitä, sinun on valittava *pakollinen* valintaruutu. Tämä tuo asentajan näkyviin yhteysmerkkijonon sovelluksen päivittämisen jälkeen.
+ ![pakolliset parametrit](media/service-template-apps-update-extract-delete/power-bi-template-app-upload-dataset4.png)
 
 ## <a name="extract-workspace"></a>Työtilan purkaminen
 Purkutoiminnon ansiosta on nyt entistäkin helpompi palata takaisin mallisovelluksen edelliseen versioon. Erityinen sovellusversio puretaan erilaisista julkaisun vaiheista uuteen työtilaan seuraavasti:

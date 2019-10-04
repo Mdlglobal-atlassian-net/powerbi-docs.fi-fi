@@ -8,13 +8,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 05/22/2019
-ms.openlocfilehash: 54713c9c978554521d68aeb7b4c25d681ddb3d69
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.date: 09/26/2019
+ms.openlocfilehash: bbd9a3884b3b6b0cd235471b0746f605e3872aff
+ms.sourcegitcommit: e2c5d4561455c3a4806ace85defbc72e4d7573b4
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66187422"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71325740"
 ---
 # <a name="install-power-bi-desktop-optimized-for-power-bi-report-server"></a>Asenna Power BI -raporttipalvelimelle optimoitu Power BI Desktop
 
@@ -30,26 +30,25 @@ Helpoin tapa varmistaa, että sinulla on Power BI -raporttipalvelimelle optimoid
 
     ![Lataa Power BI Desktop verkkoportaalista](media/install-powerbi-desktop/report-server-download-web-portal.png)
 
-    Myös siirtyä suoraan kohtaan [Microsoft Power BI Desktop](https://www.microsoft.com/download/details.aspx?id=56723) (optimoitu Power BI-Raporttipalvelimelle - toukokuun 2019) Microsoft Download Centerissä.
+    Voit myös siirtyä [Power BI -raporttipalvelin](https://powerbi.microsoft.com/report-server/) -aloitussivulle ja valita **Lataamisen lisäasetukset**.
 
 2. Valitse Download Center -sivulla **Lataa**.
 
 3. Tietokoneestasi riippuen valitse: 
 
     - **PBIDesktopRS.msi** (32-bittinen versio) tai
-
     - **PBIDesktopRS_x64.msi** (64-bittinen versio).
 
-1. Kun olet ladannut asennusohjelman, suorita ohjattu asennus Power BI Desktop (toukokuun 2019).
+1. Kun olet ladannut asennusohjelman, suorita Power BI Desktopin (syyskuu 2019) ohjattu asennus.
 
-2. Asennuksen lopussa Valitse **Käynnistä Power BI Desktop**.
+2. Asennuksen lopussa valitse **Käynnistä Power BI Desktop**.
 
     Se käynnistyy automaattisesti ja on valmiina käyttöön.
 
 ## <a name="verify-youre-using-the-correct-version"></a>Varmista, että käytät oikeaa versiota
-Oikean Power BI Desktop -version varmistaminen on helppoa: vilkaise Power BI Desktopin käynnistysruutua tai otsikkoriviä. Otsikkorivi ilmaisee version julkaisukuukauden ja -vuoden. Myös Power BI -logon värit ovat päinvastaiset: keltaista mustalla taustalla eikä päinvastoin.
+Oikean Power BI Desktop -version varmistaminen on helppoa: vilkaise Power BI Desktopin käynnistysruutua tai otsikkoriviä. Tiedät, että sinulla on oikea versio, koska **Power BI Desktop (syyskuu 2019)** lukee otsikkorivillä. Myös Power BI -logon värit ovat päinvastaiset: keltaista mustalla taustalla eikä päinvastoin.
 
-![Power BI -raporttipalvelimelle optimoidun Power BI Desktopin otsikkorivi](media/install-powerbi-desktop/power-bi-report-server-desktop-may-2019.png)
+![Power BI Desktop syyskuu 2019](media/install-powerbi-desktop/power-bi-report-server-desktop-sept-2019.png)
 
 Power BI -palvelun Power BI Desktop -versiossa ei ole kuukautta ja vuotta otsikkorivillä.
 
@@ -60,7 +59,7 @@ Jos sinulla on Power BI Desktop ja asennat sitten Power BI -raporttipalvelimelle
 
 Voit myös aina ensin avata sen Power BI Desktopin version, jota haluat käyttää. Ja avata sitten tiedoston Power BI Desktopista.
 
-Power BI-raportin Power BI-raporttipalvelimessa muokkaaminen tai uuden Power BI-raportin luominen verkkoportaalista Avaa aina Power BI Desktop oikeaa versiota.
+Power BI -raportin muokkaaminen Power BI -raporttipalvelimesta tai uuden Power BI -raportin luominen verkkoportaalista avaa aina Power BI Desktopin oikean version.
 
 ## <a name="considerations-and-limitations"></a>Huomioitavat asiat ja rajoitukset
 
@@ -68,7 +67,7 @@ Power BI -raporttipalvelimen Power BI -raportit Power BI -palvelussa (http://app
 
 ### <a name="in-a-browser"></a>Selaimessa
 
-Power BI-raporttipalvelimen raportit tukevat lähes kaikkia visualisointeja, kuten mukautettuja visualisointeja. Power BI -raporttipalvelimen raportit eivät tue seuraavia:
+Power BI -raporttipalvelimen raportit tukevat lähes kaikkia visualisointeja, mukautetut visualisoinnit mukaan lukien. Power BI -raporttipalvelimen raportit eivät tue seuraavia:
 
 * R-visualisoinnit
 * ArcGIS-kartat
@@ -89,13 +88,13 @@ Power BI -raporttipalvelimen raportit eivät tue näitä ominaisuuksia Power BI 
 * ArcGIS-kartat
 * Mukautetut visualisoinnit
 * Navigointipolut
-* Maantieteellinen suodatus tai palkki-koodit
+* Maantieteellinen suodatus tai viivakoodit
 
 ## <a name="power-bi-desktop-for-earlier-versions-of-power-bi-report-server"></a>Power BI Desktop Power BI -raporttipalvelimen aiempiin versioihin
 
-Jos raporttipalvelimesi on aiempi versio, tarvitset vastaavan version Power BI Desktopista. Tässä on linkki Lataa aiemman version.
+Jos raporttipalvelimesi on aiempi versio, tarvitset vastaavan version Power BI Desktopista. Tässä on linkki edellisen version lataamiseen.
 
-- Microsoft Power BI Desktop ([optimoitu Power BI-raporttipalvelimen - tammikuu 2019](https://go.microsoft.com/fwlink/?linkid=2055039))
+- Microsoft Power BI Desktop ([optimoitu Power BI -raporttipalvelimelle – tammikuu 2019](https://go.microsoft.com/fwlink/?linkid=2055039))
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 

@@ -4,25 +4,26 @@ description: Tässä asiakirjassa kerrotaan, miten Power BI kuluttajat voivat �
 author: mihart
 manager: kvivek
 ms.reviewer: ''
-ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 05/12/2019
+ms.date: 09/12/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 5b36ded0863685726f9af3104b43c507b9a3c4d0
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: d35cdc6e2c6d2c2632fe8a9776ddc366436cff94
+ms.sourcegitcommit: 02042995df12cc4e4b97eb8a369e62364eb5af36
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "65608023"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71251516"
 ---
-# <a name="show-the-data-that-was-used-to-create-the-visual"></a>Näytä tiedot, joita käytettiin visualisoinnin luomiseen
+# <a name="show-data-with-power-bi-reports"></a>Tietojen näyttäminen Power BI -raporteissa
 
-Power BI -visualisointi rakentuu pohjana olevien tietojoukkojen tiedoista. Jos olet kiinnostunut taustatoiminnoista, Power BI:n avulla voit *tarkastella* visualisoinnin luomiseen käytettyjä tietoja. Kun valitset **Näytä tiedot**, Power BI näyttää tiedot visualisoinnin alla (tai vieressä).
+Power BI -visualisointi rakentuu pohjana olevien tietojoukkojen tiedoista. Jos olet kiinnostunut taustatoiminnoista, Power BI -palvelun avulla voit *tarkastella* raportin visualisoinnin luomiseen käytettyjä tietoja. Kun valitset **Näytä tiedot**, Power BI näyttää tiedot visualisoinnin alla (tai vieressä).
 
+Jos haluat tarkastella pohjana olevia tietoja koontinäytössä, käytä [Vie Exceliin](end-user-export.md) -toimintoa
 
+## <a name="show-the-data-being-used-to-create-a-report-visual"></a>Raportin visualisoinnin luonnissa käytettävien tietojen näyttäminen
 1. [Avaa raportti](end-user-report-open.md) Power BI -palvelussa ja valitse visualisointi.  
 2. Jos haluat tuoda visualisoinnin taustalla olevat tiedot näkyviin, valitse kolme pistettä (...) ja valitse **Näytä tiedot**.
    

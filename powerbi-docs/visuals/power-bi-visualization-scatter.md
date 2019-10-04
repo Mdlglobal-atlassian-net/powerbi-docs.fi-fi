@@ -1,6 +1,6 @@
 ---
-title: Piste-, kupla- ja pistetulostuskaaviot Power BI:ssä
-description: Piste-, pistetulostus- ja kuplakaaviot Power BI:ssä
+title: Piste- ja kuplakaaviot Power BI:ssä
+description: Pistekaaviot ja kuplakaaviot Power BI:ssä
 author: mihart
 manager: kvivek
 ms.reviewer: ''
@@ -11,19 +11,24 @@ ms.topic: conceptual
 ms.date: 06/24/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 8222194359077cb0d88286a33d1c9b2a05f6bd80
-ms.sourcegitcommit: 1c96b65a03ec0a0612e851dd58c363f4d56bca38
+ms.openlocfilehash: d776425d4c19070c00658cbd588c5421d22a0057
+ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "67390934"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71192861"
 ---
-# <a name="scatter-charts-bubble-charts-and-dot-plot-charts-in-power-bi"></a>Piste-, kupla- ja pistetulostuskaaviot Power BI:ssä
+# <a name="scatter-charts-bubble-charts-and-dot-plot-charts-in-power-bi"></a>Pistekaaviot ja kuplakaaviot Power BI:ssä
+
+[!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
 Pistekaaviossa on aina kaksi arvoakselia, jotka näyttävät yhden numeerisen tietosarjan vaakasuuntaisella akselilla ja toisen numeerisen arvosarjan pystysuuntaisella akselilla. Kaaviossa näytetään arvopisteet numeerisen arvon X ja Y leikkauskohdassa yhdistämällä nämä kaksi arvoa yhdeksi arvopisteeksi. Power BI voi jakaa nämä arvopisteet tasaisesti tai epätasaisesti vaakasuuntaiselle akselille kaavion edustamien tietojen mukaan.
 
 Katso tästä videosta, miten Will luo pistekaavion, ja noudata sitten seuraavia ohjeita luodaksesi sellaisen itse.
-
+   > [!NOTE]
+   > Tässä videossa käytetään Power BI Desktopin vanhempaa versiota.
+   > 
+   > 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/PVcfPoVE3Ys?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
 
 Voit määrittää arvopisteiden määrän. Niiden enimmäismäärä on 10 000.  
@@ -65,7 +70,7 @@ Pistekaavioiden lisäksi hyvä vaihtoehto ovat kuplakaaviot:
 
 ### <a name="dot-plot-charts"></a>Pistetulostuskaaviot
 
-Pistetulostuskaavio muistuttaa kuplakaaviota ja pistekaaviota, mutta X-akselille voi tulostaa myös numeerisia tai luokittaisia tietoja.
+Pistetulostuskaavio muistuttaa kuplakaaviota ja pistekaaviota, mutta niiden sijaan sitä käytetään luokittaisten tietojen tulostamiseen X-akselille.
 
 ![Näyttökuva pistetulostuskaaviosta.](media/power-bi-visualization-scatter/power-bi-dot-plot.png)
 
@@ -73,17 +78,20 @@ Se on mainio valinta, jos haluat sisällyttää X-akselille luokittaista tietoa.
 
 ## <a name="prerequisites"></a>Edellytykset
 
-* Power BI -palvelu
+Tässä opetusohjelmassa käytetään [Jälleenmyyntianalyysimallin PBIX-tiedostoa](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix).
 
-* Jälleenmyyntianalyysimallin raportti
+1. Valitse valikkorivin vasemmasta yläosasta **Tiedosto** > **Avaa**
+   
+2. **Jälleenmyyntianalyysimalli PBIX-tiedoston löytäminen**
+
+1. Avaa **Jälleenmyyntianalyysimallin PBIX-tiedosto** raporttinäkymässä ![Näyttökuva raporttinäkymän kuvakkeesta.](media/power-bi-visualization-kpi/power-bi-report-view.png).
+
+1. Valitse ![Näyttökuva keltaisesta välilehdestä.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) uuden sivun lisäämiseksi.
+
 
 ## <a name="create-a-scatter-chart"></a>Pistekaavion luominen
 
-Seuraa mukana kirjautumalla sisään [Power BI -palveluun](https://app.powerbi.com) ja avaamalla [Jälleenmyyntianalyysimalli](../sample-datasets.md)-raportti [Muokkaa raporttia](../service-interact-with-a-report-in-editing-view.md) -näkymässä.
-
-1. Valitse ![Näyttökuva keltaisesta Plus-kuvakkeesta.](media/power-bi-visualization-scatter/power-bi-yellow-plus-icon.png) tyhjän raporttisivun luomiseksi.
-
-1. Valitse **Kentät**-ruudusta seuraavat kentät:
+1. Aloita tyhjältä raporttisivulta ja valitse **Kentät**-ruudusta seuraavat kentät:
 
     * **Myynti** > **Myynti/neliöjalka**
 
@@ -113,11 +121,11 @@ Nyt lisätään kolmas dimensio.
 
 1. Pidä hiiren osoitinta kuplan päällä. Kuplan koko kuvastaa arvoa **Tämän vuoden myynti**.
 
-    ![työkaluvihjeiden näyttö](media/power-bi-visualization-scatter/pbi_scatter_chart_hover.png)
+    ![työkaluvihjeiden näyttö](media/power-bi-visualization-scatter/pbi-scatter-chart-hover.png)
 
 1. Voit määrittää kuplakaaviossa näkyvien arvopisteiden määrän laajentamalla **Visualisoinnit**-ruudun **Muotoilu**-osiossa olevaa **Yleistä**-kohtaa ja säätämällä **Tietojen määrä**-kohtaa.
 
-    ![Näyttökuva Visualisoinnit-ruudusta, jossa on korostettu Muotoile-kuvake, yleinen avattava valikko ja Tietomäärä-vaihtoehto.](media/power-bi-visualization-scatter/pbi_scatter_data_volume.png)
+    ![Näyttökuva Visualisoinnit-ruudusta, jossa on korostettu Muotoile-kuvake, yleinen avattava valikko ja Tietomäärä-vaihtoehto.](media/power-bi-visualization-scatter/pbi-scatter-data-volume.png)
 
     Voit määrittää tietojen enimmäismääräksi minkä tahansa luvun, joka on enintään 10 000. Suurten lukujen yhteydessä on suositeltavaa testata toiminta ensin hyvän suorituskyvyn varmistamiseksi.
 
@@ -128,7 +136,7 @@ Nyt lisätään kolmas dimensio.
 
     Jos haluat [parantaa helppokäyttöisyyttä](../desktop-accessibility.md), harkitse merkin muotojen lisäämistä kullekin riville. Jos haluat valita merkin muodon, laajenna **Muodot**-kohtaa, valitse **Merkin muoto** ja valitse muoto.
 
-    ![Näyttökuva avattavasta Muodot-valikosta, jossa on korostettu Merkin muoto -vaihtoehdot.](media/power-bi-visualization-scatter/pbi_scatter_marker.png)
+    ![Näyttökuva avattavasta Muodot-valikosta, jossa on korostettu Merkin muoto -vaihtoehdot.](media/power-bi-visualization-scatter/pbi-scatter-marker.png)
 
     Voit muuttaa merkin muodon vinoneliöksi, kolmioksi tai neliöksi. Erilaisten merkin muotojen käyttö kullekin riville helpottaa raporttien käyttäjiä erottamaan rivit (tai alueet) toisistaan.
 
@@ -146,15 +154,15 @@ Poista **X-akselin** ruudusta **Myynti/neliöjalka** ja korvaa se kentällä **A
 
 Onko pistekaaviossasi vain yksi arvopiste, joka koostaa kaikki arvot X- ja Y-akseleille?  Vai yhdistääkö kaavio kaikki arvot yhdelle vaaka- tai pystysuuntaiselle riville?
 
-![Näyttökuva pistekaaviosta, jossa on yksi arvopiste.](media/power-bi-visualization-scatter/pbi_scatter_tshoot1.png)
+![Näyttökuva pistekaaviosta, jossa on yksi arvopiste.](media/power-bi-visualization-scatter/pbi-scatter-tshoot1.png)
 
 Lisää kenttä **Tiedot**-säilöön ja kerro näin Power BI:lle, miten arvot ryhmitetään. Kentän on oltava yksilöllinen jokaiselle arvopisteelle, jonka haluat piirtää. Esimerkiksi yksinkertainen rivin numero tai tunnuskenttä.
 
-![Näyttökuva pistekaaviosta, jossa RowNum on lisätty Tiedot-säilöön.](media/power-bi-visualization-scatter/pbi_scatter_tshoot.png)
+![Näyttökuva pistekaaviosta, jossa RowNum on lisätty Tiedot-säilöön.](media/power-bi-visualization-scatter/pbi-scatter-tshoot.png)
 
 Tai jos tiedoissasi ei ole näitä, luo kenttä, joka liittää X- ja Y-arvot yhteen niin, että ne yksilöivät pisteen:
 
-![Näyttökuva pistekaaviosta, jossa TempTime on lisätty Tiedot-säilöön.](media/power-bi-visualization-scatter/pbi_scatter_tshoot2.png)
+![Näyttökuva pistekaaviosta, jossa TempTime on lisätty Tiedot-säilöön.](media/power-bi-visualization-scatter/pbi-scatter-tshoot2.png)
 
 Jos haluat luoda uuden kentän, [käytä Power BI Desktopin kyselyeditoria lisätäksesi indeksisarakkeen](../desktop-add-custom-column.md) tietojoukkoosi. Lisää sitten tämä sarake visualisointisi **Tiedot**-säilöön.
 

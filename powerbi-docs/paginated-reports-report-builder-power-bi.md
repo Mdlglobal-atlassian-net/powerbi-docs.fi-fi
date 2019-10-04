@@ -8,13 +8,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: overview
-ms.date: 06/06/2019
-ms.openlocfilehash: 9e4d5285b48739e9f16fbe503736c20cb5524e5d
-ms.sourcegitcommit: e62889690073626d92cc73ff5ae26c71011e012e
+ms.date: 09/24/2019
+ms.openlocfilehash: ca090f7251349c9ed4768b49f1372c14e68f0068
+ms.sourcegitcommit: 57e45f291714ac99390996a163436fa1f76db427
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/23/2019
-ms.locfileid: "69985710"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "71305694"
 ---
 # <a name="what-are-paginated-reports-in-power-bi-premium"></a>Mitä ovat sivutetut raportit Power BI Premiumissa?
 
@@ -36,14 +36,13 @@ Sivutetuilla raporteilla on oma suunnittelutyökalu, Power BI:n raportin muodost
 
 Yksittäisellä sivutetulla raportilla voi olla useita eri tietolähteitä. Sen pohjana ei ole tietomallia, toisin kuin Power BI -raporteissa. Power BI -palvelun sivutettujen raporttien ensimmäisen julkaisun yhteydessä luot upotettuja tietolähteitä ja tietojoukkoja itse raporttiin. Tällä hetkellä et voi käyttää jaettuja tietolähteitä tai jaettuja tietojoukkoja. Voit luoda raportteja raportin muodostimessa paikallisella tietokoneellasi. Jos raportti on yhdistetty paikallisiin tietoihin, sinun on luotava yhdyskäytävä ja ohjattava tietoyhteys uudelleen sen jälkeen, kun olet ladannut raportin Power BI -palveluun. Tällä hetkellä voit muodostaa yhteyden seuraaviin tietolähteisiin:
 
-- Azuren SQL-tietokanta ja tietovarasto
+- Azuren SQL-tietokanta ja tietovarasto (Basicin ja oAuthin kautta)
 - Azure Analysis Services (kertakirjautumisen kautta)
 - SQL Server yhdyskäytävän kautta
 - SQL Server Analysis Services yhdyskäytävän kautta
-- Power BI Premium -tietojoukot
+- Power BI -tietojoukot
 - Oracle
 - Teradata
-- Muut lähteet sitä mukaa kuin niitä lisätään
 
 ## <a name="design-your-report"></a>Raportin suunnitteleminen  
 
@@ -79,10 +78,10 @@ Katso lisätiedot ohjeartikkelista [Power BI -palvelun sivutettujen raporttien t
 Tässä on joitakin muita ominaisuuksia, joita ei tueta ensimmäisessä julkaisussa:
 
 - raporttisivujen tai visualisointien kiinnittäminen Power BI -raporttinäkymiin Voit edelleen kiinnittää visualisointeja Power BI -koontinäyttöön paikallisesta sivutetusta raportista Power BI -raporttipalvelimessa tai Reporting Services -raporttipalvelimessa. Katso lisätietoja artikkelista [Reporting Services -kohteiden kiinnittäminen Power BI -koontinäyttöihin](https://docs.microsoft.com/sql/reporting-services/pin-reporting-services-items-to-power-bi-dashboards).
-- vuorovaikutteiset ominaisuudet, kuten asiakirjan rakenneruudut ja painikkeiden näyttäminen/piilottaminen
-- aliraportit ja porautumisraportit
+- Tiedostokartat.
+- aliraportit ja porautumisraportit  Voit kuitenkin harkita URL-parametrien käyttämistä sivutetuissa raporteissa porautumisskenaarioiden saavuttamiseen.
 - jaetut tietolähteet ja jaetut tietojoukot
-- visualisoinnit Power BI -raporteista
+
  
 ## <a name="next-steps"></a>Seuraavat vaiheet
 

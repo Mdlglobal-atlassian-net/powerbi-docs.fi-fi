@@ -5,48 +5,55 @@ author: mihart
 manager: kvivek
 ms.reviewer: ''
 featuredvideoid: G26dr2PsEpk
-ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 12/06/2018
+ms.date: 09/25/2019
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 4a4cbc152784d7536a5aa179769cf753645c932b
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: d50ed2c06c81514fa6fb129ca3691ec56b8116b9
+ms.sourcegitcommit: 02042995df12cc4e4b97eb8a369e62364eb5af36
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "61048719"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71256226"
 ---
 # <a name="display-the-dashboards-and-reports-that-have-been-shared-with-me"></a>Minulle jaettujen koontinäyttöjen ja raporttien tarkastelu
-## <a name="shared-with-me"></a>Jaettu kanssani
+
 
 Kun työtoveri jakaa sinulle sisältöä **Jaa**-painiketta käyttämällä, se näkyy **Jaettu kanssani** -säilössä. Koontinäyttö tai raportti on käytettävissä vain **Jaettu kanssani** -luettelosta, ei **Sovellukset**-näkymän kautta.
 
-![Jaa-kuvake](./media/end-user-shared-with-me/power-bi-share-dash.png)
+![Jaa-kuvake](./media/end-user-shared-with-me/power-bi-share-dashboard.png)
 
 Katso videolta, kun Amanda kertoo lisää **Jaettu kanssani** ‑sisältöluettelosta ja näyttää, miten luettelosta siirrytään sisältöihin toiseen ja miten luetteloa voi suodattaa. Kokeile sitten itse noudattamalla videon alapuolella olevia vaiheittaisia ohjeita. Tarvitset Power BI Pro ‑käyttöoikeuden voidaksesi tarkastella sinulle jaettuja koontinäyttöjä. Lisätietoja on artikkelissa [Mikä on Power BI Premium?](../service-premium-what-is.md)
+    
+
+> [!NOTE]
+> Tässä videossa käytetään Power BI -palvelun vanhempaa versiota.
+    
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/G26dr2PsEpk" frameborder="0" allowfullscreen></iframe>
 
-Koontinäyttöjen ja raporttien kanssa voi toimia eri tavoilla sen mukaan, millaiset käyttöoikeudet niiden suunnittelija on myöntänyt sinulle. Tällaisia toimintoja ovat esimerkiksi kopioiden tekeminen koontinäytöstä, raportin avaaminen [lukunäkymässä](end-user-reading-view.md) ja sisältöjen jakaminen edelleen muille työtovereille.
+## <a name="interact-with-shared-content"></a>Jaetun sisällön käsitteleminen
 
-![Jaettu kanssani -säilö](./media/end-user-shared-with-me/power-bi-container.png)
+Jaettujen koontinäyttöjen ja raporttien kanssa voi toimia eri tavoilla sen mukaan, millaiset käyttöoikeudet niiden *suunnittelija* on myöntänyt sinulle. Tällaisia toimintoja ovat esimerkiksi kopioiden tekeminen koontinäytöstä, raportin avaaminen [lukunäkymässä](end-user-reading-view.md) ja sisältöjen jakaminen edelleen muille työtovereille.
 
-## <a name="actions-available-from-the-shared-with-me-container"></a>**Jaettu kanssani** -säilön käytettävissä olevat toiminnot
-* Voit [lisätä koontinäytön tai raportin suosikkeihin](end-user-favorite.md) tähtikuvakkeella.
-* Koontinäytön tai raportin poistaminen  ![roskakorikuvake](./media/end-user-shared-with-me/power-bi-delete-icon.png)
-* Voit jakaa joitakin koontinäyttöjä ja raportteja edelleen muille  ![jakamiskuvake](./media/end-user-shared-with-me/power-bi-share-icon-new.png)
-* Lisäksi, jos luetteloista tulee pitkiä, voit [etsiä tarvitsemasi käyttämällä hakukenttää ja lajittelua](end-user-search-sort.md).
+![Jaettu kanssani -säilö](./media/end-user-shared-with-me/power-bi-shared.png)
+
+### <a name="actions-available-from-the-shared-with-me-container"></a>**Jaettu kanssani** -säilön käytettävissä olevat toiminnot
+Käytettävissä olevat toiminnot määräytyvät sisällön *suunnittelijan* määrittämien asetusten mukaan. Vaihtoehtojasi voivat olla seuraavat:
+* Valitsemalla tähtikuvakkeen voit [lisätä koontinäytön tai raportin suosikkeihin](end-user-favorite.md) ![tähtikuvake](./media/end-user-shared-with-me/power-bi-star-icon.png).
+* Koontinäytön tai raportin poistaminen  ![roskakorikuvake](./media/end-user-shared-with-me/power-bi-delete-icon.png).
+* Voit jakaa joitakin koontinäyttöjä ja raportteja edelleen muille  ![jakamiskuvake](./media/end-user-shared-with-me/power-bi-share-icon-new.png).
+* [Avaa raportti Exceliin](end-user-export.md) ![vie Exceliin-kuvake](./media/end-user-shared-with-me/power-bi-excel.png) 
+* [Näytä merkitykselliset tiedot](end-user-insights.md), jotka Power BI löytää tiedoista ![merkitykselliset tiedot -kuvake](./media/end-user-shared-with-me/power-bi-insights.png).
   
   > [!NOTE]
-  > Jos haluat tietoa EGRC-luokituksista, valitse luokituspainike tai katso artikkeli [Koontinäytön tietojen luokittelu](../service-data-classification.md).
+  > Jos haluat tietoa EGRC-luokituksista, valitse **Luokitus**-painike tai lue artikkeli [Koontinäytön tietojen luokittelu](../service-data-classification.md).
   > 
-  > 
-* Voit avata koontinäytön ja tutkia sitä valitsemalla koontinäytön nimen. Kun olet avannut jaetun koontinäytön, voit esittää Q&A-toiminnon avulla kysymyksiä koontinäytön perustana olevista tiedoista, tai jos haluat avata raportin ja tehdä sille toimintoja lukunäkymässä, valitse haluamasi ruutu.
 
-## <a name="filter-shared-dashboards-by-owner"></a>Jaettujen koontinäyttöjen suodattaminen omistajan mukaan
-**Jaettu kanssani** ‑näkymän sisällön voi suodattaa sisällön omistajan mukaan. Jos valitsen esimerkiksi omistajaksi **Amandan**, näkyville jää vain koontinäyttö, jonka Amanda on jakanut minulle.
 
-![omistajan mukaan suodatettu koontinäyttö](./media/end-user-shared-with-me/power-bi-owner-new.png)
+## <a name="search-and-sort-shared-dashboards"></a>Jaettujen koontinäyttöjen hakeminen ja lajitteleminen
+Jos sisältöluettelosi on pitkä, sinulla on useita vaihtoehtoja tarvitsemasi kohteen hakemiseen. Voit käyttää hakukenttää, lajitella päivämäärän mukaan tai valita vaihtoehdon **Omistaja**-sarakkeesta.    
+
+![koontinäytön omistaja ja haku](./media/end-user-shared-with-me/power-bi-sort.png)

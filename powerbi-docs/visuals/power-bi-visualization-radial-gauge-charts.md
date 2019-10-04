@@ -11,23 +11,28 @@ ms.topic: conceptual
 ms.date: 06/24/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 8b0db9aebe72d54aa464ec012e614ae0ec5bc723
-ms.sourcegitcommit: 1c96b65a03ec0a0612e851dd58c363f4d56bca38
+ms.openlocfilehash: 020d7edcf6bc499623df93a9def30285a37cffc6
+ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "67390475"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71194283"
 ---
 # <a name="radial-gauge-charts-in-power-bi"></a>Viisarimittarikaaviot Power BI:ssä
 
+[!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
+
 Viisarimittarikaaviossa on pyöreä kaari, ja siinä on yksi arvo, joka mittaa edistymistä kohti tavoitetta tai suorituskyvyn mittaria. Rivi (tai *neula*) edustaa tavoitetta tai tavoitearvoa. Varjostus edustaa edistymistä tätä tavoitetta kohti. Kaaren sisällä oleva arvo tarkoittaa edistymisen arvoa. Power BI jakaa kaikki mahdolliset arvot tasaisesti kaarta pitkin minimistä (äärimmäisenä vasemmalla oleva arvo) maksimiin (äärimmäisenä oikealla oleva arvo).
 
-![Näyttökuva viisarimittarista.](media/power-bi-visualization-radial-gauge-charts/gauge_m.png)
+![Näyttökuva viisarimittarista.](media/power-bi-visualization-radial-gauge-charts/gauge-m.png)
 
 Tässä esimerkissä olet automyyjä, joka seuraa myyntitiimin keskimääräistä myyntiä kuukaudessa. Neula edustaa 140 auton myyntitavoitetta. Pienin mahdollinen keskimääräinen myynti on 0, ja maksimi on 200.  Sininen varjostus näyttää, että tiimin myyntivauhti on tässä kuussa noin 120 kappaletta. Onneksi tiimillä on vielä toinen viikko aikaa tavoitteen saavuttamiseen.
 
 Will näyttää sivulle, miten voit luoda yksittäisten arvojen visualisoinnit: mittarit, kortit ja suorituskyvyn mittarit.
-
+   > [!NOTE]
+   > Tässä videossa käytetään Power BI Desktopin vanhempaa versiota.
+   > 
+   > 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/xmja6EpqaO0?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
 
 ## <a name="when-to-use-a-radial-gauge"></a>Milloin käyttää viisarimittaria?
@@ -44,43 +49,39 @@ Viisarimittarit ovat hyvä vaihtoehto, kun:
 
 ## <a name="prerequisites"></a>Edellytykset
 
-* Power BI -palvelu tai Power BI Desktop
+Tässä opetusohjelmassa käytetään [Excelin Talousmalli-tiedostoa](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix).
 
-* Talousmalli-Excel-työkirja: [lataa malli suoraan](http://go.microsoft.com/fwlink/?LinkID=521962).
+1. Valitse valikkorivin vasemmasta yläosasta **Nouda tiedot** > **Excel**
+   
+2. **Excelin Talousmalli-tiedoston** löytäminen
+
+1. Avaa **Excelin Talousmalli-tiedosto** raporttinäkymässä ![Näyttökuva raporttinäkymän kuvakkeesta.](media/power-bi-visualization-kpi/power-bi-report-view.png).
+
+1. Valitse **Talous** ja **Taul1**
+
+1. Valitse **Lataa**
+
+1. Valitse ![Näyttökuva keltaisesta välilehdestä.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) uuden sivun lisäämiseksi.
+
+
 
 ## <a name="create-a-basic-radial-gauge"></a>Luo viisarimittarin perusmalli
 
-Näissä ohjeissa käytetään Power BI -palvelua. Jatka kirjautumalla Power BI -palveluun ja avaa Excel Talousmalli -tiedosto.
+### <a name="step-1-create-a-gauge-to-track-gross-sales"></a>Vaihe 1: Luo mittari bruttomyynnin seuraamiseen
 
-### <a name="step-1-open-the-financial-sample-excel-file"></a>Vaihe 1: Avaa Excelin Talousmalli-tiedosto
-
-1. Lataa [Excelin Talousmalli-tiedosto](../sample-financial-download.md), jos et ole vielä tehnyt sitä. Muista, mihin tallensit sen.
-
-1. Valitse Power BI -palvelusta **Nouda tiedot** > **Tiedostot**.
-
-1. Valitse **paikallinen tiedosto** ja siirry mallitiedoston sijaintiin.
-
-1. Valitse **Tuo**. Power BI lisää talousmallin työtilaasi tietojoukkona.
-
-1. Valitse **Tietojoukot**-sisältöluettelosta **Luo raportti** -kuvake **talousmallille**.
-
-    ![Näyttökuva Tietojoukot-luettelosta, jossa nuoli osoittaa talousmallin Luo raportti -kuvakkeeseen.](media/power-bi-visualization-radial-gauge-charts/power-bi-dataset.png)
-
-### <a name="step-2-create-a-gauge-to-track-gross-sales"></a>Vaihe 2: Luo mittari bruttomyynnin seuraamiseen
-
-Viimeisessä osiossa, kun olet valinnut **Luo raportti** -kuvakkeen, Power BI luo tyhjän raportin muokkausnäkymään.
+1. Aloita tyhjältä raporttisivulta
 
 1. Valitse **Kentät**-ruudusta **Bruttomyynti**.
 
-   ![](media/power-bi-visualization-radial-gauge-charts/grosssalesvalue_new.png)
+   ![](media/power-bi-visualization-radial-gauge-charts/grosssalesvalue-new.png)
 
 1. Muuta koostaminen arvoon **Keskimääräinen**.
 
-   ![Näyttökuva Kentät-ruudusta, jossa on korostettu bruttomyynti ja keskimäärän kooste.](media/power-bi-visualization-radial-gauge-charts/changetoaverage_new.png)
+   ![Näyttökuva Kentät-ruudusta, jossa on korostettu bruttomyynti ja keskimäärän kooste.](media/power-bi-visualization-radial-gauge-charts/changetoaverage-new.png)
 
-1. Valitse mittarikuvake ![Näyttökuva mittarikuvakkeesta.](media/power-bi-visualization-radial-gauge-charts/gaugeicon_new.png) pylväskaavion muuntamiseksi mittarikaavioksi.
+1. Valitse mittarikuvake ![Näyttökuva mittarikuvakkeesta.](media/power-bi-visualization-radial-gauge-charts/gaugeicon-new.png) pylväskaavion muuntamiseksi mittarikaavioksi.
 
-    ![Näyttökuva mittarikaaviosta.](media/power-bi-visualization-radial-gauge-charts/gauge_no_target.png)
+    ![Näyttökuva mittarikaaviosta.](media/power-bi-visualization-radial-gauge-charts/gauge-no-target.png)
 
     Sen mukaan, milloin lataat **Talousmalli**-tiedoston, saatat nähdä lukuja, jotka eivät täsmää näiden lukujen kanssa.
 
@@ -95,7 +96,7 @@ Viimeisessä osiossa, kun olet valinnut **Luo raportti** -kuvakkeen, Power BI lu
 
    Power BI Lisää neulan edustamaan Microsoftin tavoitearvoa **$145. 48K**.
 
-   ![Näyttökuva mittarikaaviosta, johon on lisätty myytyjen tuotteiden kustannusten keskiarvo.](media/power-bi-visualization-radial-gauge-charts/gaugeinprogress_new.png)
+   ![Näyttökuva mittarikaaviosta, johon on lisätty myytyjen tuotteiden kustannusten keskiarvo.](media/power-bi-visualization-radial-gauge-charts/gaugeinprogress-new.png)
 
     Huomaa, että olemme ylittäneet tavoitteemme.
 
@@ -110,7 +111,7 @@ Vaiheessa 2 Power BI asetti **Arvo**-kentän avulla automaattisesti minimi- ja m
 
 1. Muuta koostaminen arvoon **Maksimi**.
 
-   ![Näyttökuva Kentät-ruudusta, jossa on korostettu bruttomyynti ja maksimikooste.](media/power-bi-visualization-radial-gauge-charts/setmaximum_new.png)
+   ![Näyttökuva Kentät-ruudusta, jossa on korostettu bruttomyynti ja maksimikooste.](media/power-bi-visualization-radial-gauge-charts/setmaximum-new.png)
 
    Mittarin piirretään uudelleen uudella loppuarvolla 1,21 miljoonaa bruttomyyntinä.
 
@@ -119,8 +120,6 @@ Vaiheessa 2 Power BI asetti **Arvo**-kentän avulla automaattisesti minimi- ja m
 ### <a name="step-5-save-your-report"></a>Vaihe 5: Tallenna raporttisi
 
 1. [Tallenna raportti](../service-report-save.md).
-
-1. [Mittarikaavion lisääminen koontinäytön ruutuna](../service-dashboard-pin-tile-from-report.md). 
 
 ## <a name="use-manual-format-options-to-set-minimum-maximum-and-target-values"></a>Käytä manuaalisia muotoiluvaihtoehtoja minimi-, maksimi- ja tavoitearvojen asettamiseen
 
@@ -136,7 +135,7 @@ Vaiheessa 2 Power BI asetti **Arvo**-kentän avulla automaattisesti minimi- ja m
 
 1. Tyhjennä **Myytyjen tuotteiden kustannukset** -vaihtoehto **Kentät**-ruudusta tavoitearvon poistamiseksi.
 
-    ![Näyttökuva tyhjennetystä Myytyjen tuotteiden kustannukset -vaihtoehdosta.](media/power-bi-visualization-radial-gauge-charts/pbi_remove_target.png)
+    ![Näyttökuva tyhjennetystä Myytyjen tuotteiden kustannukset -vaihtoehdosta.](media/power-bi-visualization-radial-gauge-charts/pbi-remove-target.png)
 
 1. Kun **Tavoite**-kenttä näkyy kohdassa **Mittarin akseli**, syötä arvo.
 

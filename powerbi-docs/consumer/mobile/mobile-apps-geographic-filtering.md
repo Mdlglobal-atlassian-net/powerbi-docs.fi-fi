@@ -6,26 +6,26 @@ manager: kfile
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 02/09/2018
+ms.date: 09/25/2019
 ms.author: mshenhav
-ms.openlocfilehash: 828dcb4aeb8b7c5e69292685470f112a2d85cb71
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: 9a4950a1d52451764c3c62413bf4ecbd036f06c8
+ms.sourcegitcommit: 57e45f291714ac99390996a163436fa1f76db427
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "61349490"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "71305785"
 ---
 # <a name="filter-a-report-by-geographic-location-in-the-power-bi-mobile-apps"></a>Raportin suodattaminen maantieteellisen sijainnin mukaan Power BI ‑mobiilisovelluksessa
 Koskee seuraavia:
 
-| ![iPhone](./media/mobile-apps-geographic-filtering/iphone-logo-50-px.png) | ![iPad](./media/mobile-apps-geographic-filtering/ipad-logo-50-px.png) | ![Android-puhelin](./media/mobile-apps-geographic-filtering/android-phone-logo-50-px.png) | ![Android-tabletti](./media/mobile-apps-geographic-filtering/android-tablet-logo-50-px.png) | ![Android-tabletti](./media/mobile-apps-geographic-filtering/win-10-logo-50-px.png) |
-|:--- |:--- |:--- |:--- |:--- |
-| iPhonet |iPadit |Android-puhelimet |Android-tabletit |Windows 10 ‑puhelimet |
+| ![iPhone](./media/mobile-apps-geographic-filtering/iphone-logo-50-px.png) | ![iPad](./media/mobile-apps-geographic-filtering/ipad-logo-50-px.png) | ![Android-puhelin](./media/mobile-apps-geographic-filtering/android-phone-logo-50-px.png) | ![Android-tabletti](./media/mobile-apps-geographic-filtering/win-10-logo-50-px.png) |
+|:--- |:--- |:--- |:--- |
+| iPhonet |iPadit |Android-puhelimet |Windows 10 ‑puhelimet |
 
 Kun tarkastelet Power BI ‑raporttia mobiililaitteelta, näetkö oikeassa yläkulmassa pienen nuppineulakuvakkeen? Jos näet, voit suodattaa raportin oman maantieteellisen sijaintisi mukaan.
 
 > [!NOTE]
-> Voit suodattaa sijainnin mukaan ainoastaan, jos raportin maantieteelliset nimet ovat englanniksi &#150; esimerkiksi ”New York City” tai ”Germany”. Windows 10 ‑tabletit ja ‑tietokoneet eivät tue maantieteellistä suodatusta, mutta Windows 10 ‑puhelimet tukevat.
+> Voit suodattaa sijainnin mukaan ainoastaan, jos raportin maantieteelliset nimet ovat englanniksi; esimerkiksi ”New York City” tai ”Germany”. Windows 10 ‑tabletit ja ‑tietokoneet eivät tue maantieteellistä suodatusta, mutta Windows 10 ‑puhelimet tukevat.
 > 
 > 
 
@@ -37,13 +37,13 @@ Kun tarkastelet Power BI ‑raporttia mobiililaitteelta, näetkö oikeassa yläk
     ![Nuppineulasuodatin](./media/mobile-apps-geographic-filtering/power-bi-mobile-geo-map-set-filter.png)
 
 ## <a name="why-dont-i-see-location-tags-on-a-report"></a>Miksi en näe raportissa sijaintitunnisteita?
-Jotta näkisit sijaintitunnisteet, kaikkien kolmen ehdon on täytyttävä: 
+Jotta näkisit sijaintitunnisteet, kaikkien alla mainitun kolmen ehdon on täytyttävä. 
 
-* Power BI Desktopissa raportin luonut henkilö [on luokitellut maantieteellisiä tietoja](../../desktop-mobile-geofiltering.md), kuten kaupunki, osavaltio tai maa/alue, vähintään yhteen sarakkeeseen.
+* Power BI Desktopissa raportin luoneen henkilön [on pitänyt luokitella maantieteellisiä tietoja](../../desktop-mobile-geofiltering.md), kuten kaupunki, osavaltio tai maa/alue, vähintään yhteen sarakkeeseen.
 * Olet sellaisessa paikassa, josta on tietoja kyseisessä sarakkeessa.
 * Käytät jotakin seuraavista mobiililaitteista:
   * iOS (iPad, iPhone, iPod)
-  * Android-puhelin tai ‑tabletti
+  * Android-puhelin.
   * Windows 10 ‑puhelin (muut Windows 10 ‑laitteet, kuten pöytäkoneet ja tabletit, eivät tue maantieteellistä suodatusta).
 
 Lue lisää [maantieteellisen suodatuksen määrittämisestä](../../desktop-mobile-geofiltering.md) Power BI Desktopissa.

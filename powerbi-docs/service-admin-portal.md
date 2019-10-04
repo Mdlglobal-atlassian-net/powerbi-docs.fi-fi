@@ -8,15 +8,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 09/20/2019
+ms.date: 09/25/2019
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: 5551247307e750624006de71a3c8652376b73fcf
-ms.sourcegitcommit: a6602d84c86d3959731a8d0ba39a522914f13d1a
+ms.openlocfilehash: f472ee821d0ccf3bbe8e47697f934b91668cd16d
+ms.sourcegitcommit: 57e45f291714ac99390996a163436fa1f76db427
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/21/2019
-ms.locfileid: "71175253"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "71305886"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>Power BI:n hallinta hallintaportaalissa
 
@@ -522,6 +522,15 @@ Oletusarvon mukaan Power BI:ssä käytetyt tiedot tallennetaan Power BI:n tarjoa
 Järjestelmänvalvojana voit tarkastella vuokraajassa olevia työtiloja. Voit lajitella ja suodattaa työtilojen luetteloja ja näyttää kunkin työtilan tiedot. Taulukon sarakkeet vastaavat [Power BI -järjestelmänvalvojan REST-ohjelmointirajapinnan](/rest/api/power-bi/admin) palauttamia ominaisuuksia työtiloille. Henkilökohtaiset työtilat ovat tyyppiä **PersonalGroup**, perinteiset työtilat tyyppiä **Group** ja uuden työtilakokemuksen työtilat tyyppiä **Workspace**. Katso lisätietoja artikkelista [Uusien työtilojen luominen Power BI:ssä](service-create-the-new-workspaces.md).
 
 ![Työtilojen luettelo](media/service-admin-portal/workspaces-list.png)
+
+**Työtilat**-välilehdessä näkyy jokaisen työtilan *tila*. Seuraavassa taulukossa on lisätietoja näiden tilojen merkityksestä.
+
+|Osavaltio  |Kuvaus  |
+|---------|---------|
+| Aktiivinen | Normaali työtila. Tämä ei kerro mitään käytöstä tai sisällöstä, vaan vain sen, että työtila itsessään on ”normaali”. |
+| Yhteydetön | Työtila, jolla ei ole järjestelmänvalvojakäyttäjää. |
+| Poistettu | Poistettu työtila. Metatietoja säilytetään riittävästi, jotta työtila voidaan palauttaa tarvittaessa. |
+| Poistetaan | Työtila, jota ollaan poistamassa, mutta jota ei vielä ole poistettu. Käyttäjät voivat poistaa omat työtilansa, jolloin ne siirtyvät Poistetaan- tai Poistettu-tilaan. |
 
 ## <a name="custom-branding"></a>Mukautus
 

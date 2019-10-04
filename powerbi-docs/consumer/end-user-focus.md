@@ -4,20 +4,19 @@ description: Dokumentaatio Power BI -koontinäytön, koontinäytön ruudun, rapo
 author: mihart
 manager: kvivek
 ms.reviewer: ''
-ms.custom: seodec18
 featuredvideoid: dtdLul6otYE
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 12/06/2018
+ms.date: 09/23/2019
 ms.author: mihart
 LocalizationGroup: Common tasks
-ms.openlocfilehash: abc9671338e916671f243093bad455ed0cb4ef7e
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: a52fdbefabf84df22c89b0e933d56352fedf5da1
+ms.sourcegitcommit: e2c5d4561455c3a4806ace85defbc72e4d7573b4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "61061843"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71327791"
 ---
 # <a name="display-content-in-more-detail-focus-mode-and-full-screen-mode"></a>Näytä sisältö yksityiskohtaisemmin: tarkastelutila ja koko näytön tila
 
@@ -27,14 +26,15 @@ Tarkastelutila ja koko näytön tila ovat kaksi eri tapaa nähdä visualisoinnit
 
 |Sisältö    | Tarkastelutila  |Koko näytön tila  |
 |---------|---------|----------------------|
-|Koontinäyttö     |   Ei ole mahdollista     | kyllä |
+|Raporttinäkymä     |   Ei ole mahdollista     | kyllä |
 |Raporttisivu   | Ei ole mahdollista  | kyllä|
 |Raportin visualisointi | kyllä    | kyllä |
 |Koontinäytön ruutu | kyllä    | kyllä |
 |Windows 10 Mobile | Ei ole mahdollista | Kyllä |
 
 ## <a name="what-is-full-screen-mode"></a>Mikä on koko näytön tila?
-![koontinäytön koko näytön tila ennen ja jälkeen](media/end-user-focus/power-bi-full-screen-comparison.png)
+
+![koontinäytön koko näytön tila ennen ja jälkeen](media/end-user-focus/power-bi-dashboards-focus.png)
 
 Näytä Power BI -palvelun sisältö (koontinäytöt, raporttisivut, ruudut ja visualisoinnit) ilman valikoiden ja siirtymispalkkien aiheuttamia häiriöitä.  Saat sisältösi aidon, koko näytön näkymän yhdellä silmäyksellä keskeytyksettä. Tätä kutsutaan joskus myös TV-tilaksi.   
 
@@ -49,20 +49,22 @@ Koko näytön tilan käyttötapoja:
 * tarkasteleminen lukitussa tilassa – voit koskettaa näyttöä tai viedä hiiren ruutujen päälle ilman että taustalla oleva raportti tai koontinäyttö avautuu
 
 ## <a name="what-is-focus-mode"></a>Mikä on tarkastelutila?
+
 ***Kohdistus***tilassa voit laajentaa (avata ponnahdusikkunassa) visualisoinnin tai ruudun ja tarkastella sitä lähemmin.  Sinulla saattaa olla koontinäyttö tai raportti, joka on ahdettu hieman liian täyteen, ja haluat lähentää vain yhteen visualisointiin.  Tarkastelutilaa kannattaa käyttää juuri tähän.  
 
-![koontinäytön koko näytön tila ennen ja jälkeen](media/end-user-focus/power-bi-focus-compare.png)
+![koontinäytön koko näytön tila ennen ja jälkeen](media/end-user-focus/power-bi-compare-dash.png)
 
 Tarkastelutilassa Power BI *-kuluttaja* voi käsitellä tätä visualisointia luotaessa käytettyjä suodattimia.  Power BI -palvelussa voit käyttää koontinäytön ruudun tai raportin visualisoinnin tarkastelutilaa.
 
 ## <a name="working-in-full-screen-mode"></a>Työskentely koko näytön tilassa
+
 Jos haluat avata koontinäytön tai raporttisivun koko näytön tilassa, valitse koko näyttö -kuvake ![koko näyttö -kuvake](media/end-user-focus/power-bi-full-screen-icon.png) yläreunan siirtymispalkista. Kun olet koko näytön tilassa, saat pikavalikon näkyviin liikuttamalla hiirtä tai kohdistinta. Koko näytön tila on käytettävissä monissa erilaisissa sisällöissä, joten pikavalikkojen vaihtoehdot eroavat hieman toisistaan, mutta ovat melko itsestään selviä.  Näet määrityksen, kun pidät hiiren osoitinta kuvakkeen päällä.
 
 Koontinäyttöjen valikko    
-![Koontinäyttöjen valikko](media/end-user-focus/power-bi-full-screen-menu-dashboard.png)    
+![Koontinäyttöjen valikko](media/end-user-focus/power-bi-full-screen-dash.png)    
 
 Raporttisivujen valikko    
-![Raporttien valikko](media/end-user-focus/power-bi-report-menu.png)    
+![Raporttien valikko](media/end-user-focus/power-bi-report-full-screen.png)    
 
   * ![Takaisin-kuvake](media/end-user-focus/power-bi-back-icon.png)    
   Palaa edelliselle sivulle selaimessa **Takaisin**-painikkeella. Jos edellinen sivu oli Power BI -sivu, sekin näkyy koko näytön tilassa.  Koko näytön tila pysyy käytössä, kunnes poistut siitä.
@@ -70,7 +72,7 @@ Raporttisivujen valikko
   * ![Tulosta-kuvake](media/end-user-focus/power-bi-print-icon.png)    
   Tämän painikkeen avulla voit tulostaa koontinäytön tai raporttisivun koko näytön tilassa.
 
-  * ![Sovita näyttöön -kuvake](media/end-user-focus/power-bi-fit-to-width.png)    
+  * ![Sovita näyttöön -kuvake](media/end-user-focus/power-bi-fit-to-screen-icon.png)    
     Käytä **Sovita näyttöön** -painiketta, kun haluat näyttää koontinäytön suurimmassa mahdollisessa koossa ilman vierityspalkkeja.  
 
     ![Sovita näyttöön](media/end-user-focus/power-bi-fit-screen.png)
@@ -82,57 +84,59 @@ Raporttisivujen valikko
 
   * ![Raportissa siirtyminen -kuvake](media/end-user-focus/power-bi-report-nav2.png)       
     Voit siirtyä raportin sivulta toiselle koko näytön raporteissa näiden nuolten avulla.    
-  * Jos haluat poistua koko näytön tilasta, valitse **Poistu koko näytön tilasta** -kuvake.
+  * ![poistu koko näytön tilasta -kuvake](media/end-user-focus/exit-fullscreen-new.png)     
+  Jos haluat poistua koko näytön tilasta, valitse **Poistu koko näytön tilasta** -kuvake.
 
-      ![poistu koko näytön tilasta -kuvake](media/end-user-focus/exit-fullscreen-new.png)
+      
 
 ## <a name="working-in-focus-mode"></a>Työskentely tarkastelutilassa
+
 Tarkastelutilan voi avata kahdella eri tavalla, toinen on tarkoitettu koontinäytön ruuduille ja toinen raportin visualisoinneille.
 
 ### <a name="focus-mode-in-dashboards"></a>Koontinäyttöjen tarkastelutila
+
 1. Avaa koontinäyttö Power BI -palvelussa.
 
 2. Pidä hiiren osoitinta koontinäytön ruudun tai raportin visualisoinnin päällä, valitse kolme pistettä (...) ja valitse sitten **Avaa tarkastelutilassa**.
 
-    ![ruudun kolme pistettä -valikko](media/end-user-focus/power-bi-dashboard-focus-mode.png).
+    ![ruudun kolme pistettä -valikko](media/end-user-focus/power-bi-dashboard-focus.png).
 
-2. Ruutu aukeaa ja täyttää koko raportin.
+2. Ruutu aukeaa ja täyttää koko raportin. Huomaa, että käytettävissäsi on edelleen **Suodattimet**-ruutu, jonka avulla voit käsitellä visualisointia. **Suodatin**-ruutu voidaan kutistaa. 
 
-   ![ruutu täyttää raportin](media/end-user-focus/power-bi-tile-focus.png)
-
-3. Laajenna Suodattimet-ruutu nähdäksesi kaikki tähän visualisaatioon käytetyt suodattimet.
-
-   ![tarkastelutila Suodattimet-ruudulla](media/end-user-focus/power-bi-focus-filters.png)
+   ![ruutu täyttää raportin](media/end-user-focus/power-bi-focus-filter.png)
 
 4. Tutki tarkemmin [muokkaamalla suodattimia](end-user-report-filter.md) ja etsimällä tiedoistasi kiinnostavia havaintoja.  
 
 5. Poistu tarkastelutilasta ja palaa koontinäyttöön valitsemalla **Poistu tarkastelutilasta** (visualisoinnin vasemmassa yläkulmassa).
 
-    ![poistu tarkastelutilasta](media/end-user-focus/power-bi-tile-exit-focus.png)    
+    ![poistu tarkastelutilasta](media/end-user-focus/power-bi-exit.png)    
 
 
-## <a name="focus-mode-for-report-visualizations"></a>Tarkastelutila raportin visualisointeja varten
-1. Avaa raportti Power BI -palvelussa.  Käytämme tässä esimerkissä jälleenmyyntianalyysimallia.
+## <a name="focus-mode-for-report-visuals"></a>Tarkastelutila raportin visualisointeja varten
 
-1. Kun raportti on avattu, valitse **Alueen kuukausimyynti -välilehti**.
+1. Avaa raportti Power BI -palvelussa.  Tämän esimerkin esittelyssä käytetään myynti- ja markkinointimallia.
 
-2. Pidä hiiren osoitinta vasemmassa alakulmassa olevan aluekaavion päällä ja valitse **tarkastelutila**-kuvake ![tarkastelutila-kuvake](media/end-user-focus/pbi_popout.jpg).  
+1. Kun raportti on avautunut, valitse **VA-luokka**-väli lehti.
 
-   ![kohdistustilakuvake näkyy ruudulla](media/end-user-focus/power-bi-hover-focus.png)
+2. Pidä hiiren osoitinta vasemmassa yläkulmassa olevan puukartan päällä ja valitse **tarkastelutila**-kuvake ![tarkastelutila-kuvake](media/end-user-focus/pbi_popout.jpg).  
+
+   ![kohdistustilakuvake näkyy ruudulla](media/end-user-focus/power-bi-hover-focus-icon.png)
 2. Visualisointi aukeaa ja täyttää koko raportin.
 
-   ![visualisointi tarkastelutilassa](media/end-user-focus/power-bi-display-focus-newer2.png)
-3. Halutessasi voit laajentaa Suodattimet-ruutua käsitelläksesi tähän visualisointiin käytettyjä suodattimia. Perehdy tietoihin ja etsi uusia merkityksellisiä tietoja sekä vastauksia kysymyksiin. *Kuluttajana* et voi lisätä uusia suodattimia, muuttaa visualisoinneissa käytettäviä kenttiä tai luoda uusia visualisointeja.  Kaikki olemassa oleviin suodattimiin tekemäsi muutokset kuitenkin tallennetaan, kun poistut Power BI:stä. Jos et halua, että Power BI muistaa tekemäsi muutokset, valitse **Palauta oletukset**. ![Palauta oletukset -painike](media/end-user-focus/power-bi-resets.png)  
+   ![visualisointi tarkastelutilassa](media/end-user-focus/power-bi-display-focus-new.png)
 
-   ![tarkastelutila Suodattimet-näytöllä](media/end-user-focus/power-bi-display-focus-filters3.png)
+3. Halutessasi voit käsitellä tähän visualisointiin käytettyjä suodattimia **Suodattimet**-ruudun avulla. Perehdy tietoihin ja etsi uusia merkityksellisiä tietoja sekä vastauksia kysymyksiin. *Kuluttajana* et voi lisätä uusia suodattimia, muuttaa visualisoinneissa käytettäviä kenttiä etkä luoda uusia visualisointeja.  Kaikki olemassa oleviin suodattimiin tekemäsi muutokset kuitenkin tallennetaan, kun poistut Power BI:stä. Jos et halua, että Power BI muistaa tekemäsi muutokset, valitse **Palauta oletukset**. ![Palauta oletukset -painike](media/end-user-focus/power-bi-resets.png)  
+
 
 5. Poistu tarkastelutilasta ja palaa raporttiin valitsemalla **Takaisin raporttiin** (visualisoinnin vasemmassa yläkulmassa).
 
-    ![poistu tarkastelutilasta](media/end-user-focus/power-bi-exit-focus-report.png)  
+    ![poistu tarkastelutilasta](media/end-user-focus/power-bi-back-to-report.png)  
 
 ## <a name="considerations-and-troubleshooting"></a>Huomioon otettavat seikat ja vianmääritys
+
 * Kun käytät tarkastelutilaa raportin visualisoinnissa, voit tarkastella ja käsitellä kaikkia suodattimia: visuaalisen tason, sivutason, porautumisen ja raporttitason suodattimia.    
 * Kun käytät tarkastelutilaa koontinäytön visualisoinnissa, voit tarkastella ja käsitellä vain visuaalisen tason suodatinta.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
+
 [Tarkastele raporttien asetuksia](end-user-report-view.md)

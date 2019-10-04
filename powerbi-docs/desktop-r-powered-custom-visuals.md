@@ -1,37 +1,37 @@
 ---
-title: R:ää hyödyntävien mukautettujen visualisointien käyttö Power BI:ssä
-description: R:ää hyödyntävien mukautettujen visualisointien käyttö Power BI:ssä
-author: sranins
-ms.author: rasala
-manager: kfile
+title: R:ää hyödyntävien Power BI -visualisointien käyttö Power BI:ssä
+description: R:ää hyödyntävien Power BI -visualisointien käyttö Power BI:ssä
+author: KesemSharabi
+ms.author: kesharab
+manager: rkarlin
 ms.reviewer: maghan
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 07/27/2018
 LocalizationGroup: Create reports
-ms.openlocfilehash: d79164ea5b66fe003f913742436a817d76d798e0
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: b5f8677b3207122831e3d2cae6c07aa5bbcb9983
+ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61278541"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71194605"
 ---
-# <a name="use-r-powered-custom-visuals-in-power-bi"></a>R:ää hyödyntävien mukautettujen visualisointien käyttö Power BI:ssä
+# <a name="use-r-powered-power-bi-visuals-in-power-bi"></a>R:ää hyödyntävien Power BI -visualisointien käyttö Power BI:ssä
 
-**Power BI Desktopissa** ja **Power BI -palvelussa** voit käyttää R:ää hyödyntäviä mukautettuja visualisointeja ilman etukäteistietoa R:stä ja ilman R-komentosarjoja. Tämä mahdollistaa R-visualisointien ja R-komentosarjojen analyyttisen ja visuaalisen tehon ottamisen käyttöön ilman, että sinun pitää opetella R:n käyttöä tai ohjelmoida itse.
+**Power BI Desktopissa** ja **Power BI -palvelussa** voit käyttää R:ää hyödyntäviä Power BI -visualisointeja ilman etukäteistietoa R:stä ja ilman R-komentosarjoja. Tämä mahdollistaa R-visualisointien ja R-komentosarjojen analyyttisen ja visuaalisen tehon ottamisen käyttöön ilman, että sinun pitää opetella R:n käyttöä tai ohjelmoida itse.
 
-Jos haluat käyttää R:ää hyödyntäviä mukautettuja visualisointeja, valitse ja lataa ensin mukautettu R-visualisointi, jota haluat käyttää, Power BI:n **mukautettujen visualisointien** [**AppSource**](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals&page=1)-valikoimasta.
+Jos haluat käyttää R:ää hyödyntäviä Power BI -visualisointeja, valitse ja lataa ensin mukautettu R-visualisointi, jota haluat käyttää, Power BI:n **Power BI -visualisointien** [**AppSource**](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals&page=1)-valikoimasta.
 
 ![R-visualisointi 1a](media/desktop-r-powered-custom-visuals/powerbi-r-powered-custom-viz_1a.png)
 
 Seuraavissa osissa kuvataan, miten voit valita, ladata ja käyttää R:ää hyödyntäviä visualisointeja **Power BI Desktopissa**.
 
-## <a name="use-r-custom-visuals"></a>Mukautettujen R-visualisointien käyttäminen
+## <a name="use-r-power-bi-visuals"></a>Power BI:n R-visualisointien käyttäminen
 
-Jos haluat käyttää R:ää hyödyntäviä mukautettuja visualisointeja, lataa jokainen visualisointi **mukautettujen visualisointien** kirjastosta, minkä jälkeen voit käyttää visualisointia kuten mitä tahansa muuta visualisointityyppiä **Power BI Desktopissa**. Saat mukautettuja visualisointeja kahdella tavalla: voit ladata ne verkosta **AppSource**-sivustosta tai voit selata ja hankkia ne sisäisesti **Power BI Desktopista**. 
+Jos haluat käyttää R:ää hyödyntäviä Power BI -visualisointeja, lataa jokainen visualisointi **Power BI -visualisointien** kirjastosta, minkä jälkeen voit käyttää visualisointia kuten mitä tahansa muuta visualisointityyppiä **Power BI Desktopissa**. Saat Power BI -visualisointeja kahdella tavalla: voit ladata ne verkosta **AppSource**-sivustosta tai voit selata ja hankkia ne sisäisesti **Power BI Desktopista**. 
 
-### <a name="get-custom-visuals-from-appsource"></a>Mukautettujen visualisointien hankkiminen AppSourcesta
+### <a name="get-power-bi-visuals-from-appsource"></a>Power BI -visualisointien hankkiminen AppSourcesta
 
 Alla on ohjeet visualisointien selaamiseen ja valitsemiseen verkossa **AppSource**-sivustossa:
 
@@ -50,7 +50,7 @@ Alla on ohjeet visualisointien selaamiseen ja valitsemiseen verkossa **AppSource
 
    ![R-visualisointi 3a](media/desktop-r-powered-custom-visuals/powerbi-r-powered-custom-viz_3a.png)
 
-   Sinun ei tarvitse asentaa R:ää käyttääksesi R:ää hyödyntäviä mukautettuja visualisointeja **Power BI -palvelussa**. Kuitenkin jos haluat käyttää R:ää hyödyntäviä mukautettuja visualisointeja **Power BI Desktopissa**, R *pitää* asentaa paikalliseen koneeseen. Voit ladata R:n seuraavista sijainneista:
+   Sinun ei tarvitse asentaa R:ää käyttääksesi R:ää hyödyntäviä Power BI -visualisointeja **Power BI -palvelussa**. Kuitenkin jos haluat käyttää R:ää hyödyntäviä Power BI -visualisointeja **Power BI Desktopissa**, R *pitää* asentaa paikalliseen koneeseen. Voit ladata R:n seuraavista sijainneista:
 
    * [CRAN](https://cran.r-project.org/)
    * [MRO](https://mran.microsoft.com/)
@@ -79,25 +79,25 @@ Alla on ohjeet visualisointien selaamiseen ja valitsemiseen verkossa **AppSource
 
     Tarkista kirjasto usein, koska uusia visualisointeja lisätään jatkuvasti.
 
-### <a name="get-custom-visuals-from-within-power-bi-desktop"></a>Mukautettujen visualisointien hankkiminen **Power BI Desktopista**
+### <a name="get-power-bi-visuals-from-within-power-bi-desktop"></a>Power BI -visualisointien hankkiminen **Power BI Desktopista**
 
-1. Voit myös hankkia mukautettuja visualisointeja **Power BI Desktopista**. Napsauta **Power BI Desktopissa** hiiren kakkospainikkeella kolmea pistettä (...) **Visualisoinnit**-ruudussa ja valitse **Tuo marketplacesta**.
+1. Voit myös hankkia Power BI -visualisointeja **Power BI Desktopista**. Napsauta **Power BI Desktopissa** hiiren kakkospainikkeella kolmea pistettä (...) **Visualisoinnit**-ruudussa ja valitse **Tuo marketplacesta**.
 
    ![R-visualisointi 4a](media/desktop-r-powered-custom-visuals/powerbi-r-powered-custom-viz_4a.png)
 
-2. Kun teet niin, näkyviin tulee **Power BI -visualisoinnit** -valintaikkuna, jossa voit selata käytettävissä olevia mukautettuja visualisointeja ja valita haluamasi. Voit etsiä nimen mukaan, valita luokan tai vain selata käytettävissä olevia visualisointeja. Kun olet valmis, valitsemalla **Lisää** voit lisätä mukautetun visualisoinnin **Power BI Desktopiin**.
+2. Kun teet niin, näkyviin tulee **Power BI -visualisoinnit** -valintaikkuna, jossa voit selata käytettävissä olevia Power BI -visualisointeja ja valita haluamasi. Voit etsiä nimen mukaan, valita luokan tai vain selata käytettävissä olevia visualisointeja. Kun olet valmis, valitsemalla **Lisää** voit lisätä mukautetun visualisoinnin **Power BI Desktopiin**.
 
    ![R-visualisointi 12](media/desktop-r-powered-custom-visuals/powerbi-r-powered-custom-viz_12.png)
 
-## <a name="contribute-r-powered-custom-visuals"></a>Osallistuminen R:ää hyödyntäviin mukautettuihin visualisointeihin
+## <a name="contribute-r-powered-power-bi-visuals"></a>Osallistuminen R:ää hyödyntäviin Power BI -visualisointeihin
 
-Jos luot omia R-visualisointejasi raporttejasi varten, voit jakaa ne kaikille käyttäjille lisäämällä mukautetun visualisointisi **mukautettujen visualisointien valikoimaan**. Voit osallistua GitHubin kautta, ja prosessi on jäsennelty seuraavassa sijainnissa:
+Jos luot omia R-visualisointejasi raporttejasi varten, voit jakaa ne kaikille käyttäjille lisäämällä mukautetun visualisointisi **Power BI -visualisointien valikoimaan**. Voit osallistua GitHubin kautta, ja prosessi on jäsennelty seuraavassa sijainnissa:
 
-* [Osallistuminen R:ää hyödyntävien mukautettujen visualisointien valikoimaan](https://github.com/Microsoft/PowerBI-visuals#building-r-powered-custom-visual-corrplot)
+* [Osallistuminen R:ää hyödyntävien Power BI -visualisointien valikoimaan](https://github.com/Microsoft/PowerBI-visuals#building-r-powered-custom-visual-corrplot)
 
-## <a name="troubleshoot-r-powered-custom-visuals"></a>R:ää hyödyntävien mukautettujen visualisointien vianmääritys
+## <a name="troubleshoot-r-powered-power-bi-visuals"></a>R:ää hyödyntävien Power BI -visualisointien vianmääritys
 
-R:ää hyödyntävillä mukautetuilla visualisoinneilla on tiettyjä riippuvuussuhteita, jotka on täytettävä, jotta visualisoinnit toimivat oikein. Kun R:ää hyödyntävien mukautettujen visualisointien suorittaminen tai lataaminen ei onnistu kunnolla, ongelma on yleensä jokin seuraavista:
+R:ää hyödyntävillä Power BI -visualisoinneilla on tiettyjä riippuvuussuhteita, jotka on täytettävä, jotta visualisoinnit toimivat oikein. Kun R:ää hyödyntävien Power BI -visualisointien suorittaminen tai lataaminen ei onnistu kunnolla, ongelma on yleensä jokin seuraavista:
 
 * R-moduuli puuttuu.
 * Virhe R-komentosarjassa, johon visualisointi perustuu.
@@ -150,7 +150,7 @@ Power BI -tiimi työskentelee aktiivisesti ratkaistakseen nämä ongelmat ennen 
 
 Tutustu seuraaviin lisätietoihin, jotka koskevat R:ää Power BI:ssä.
 
-* [Power BI:n mukautettujen visualisointien valikoima](https://app.powerbi.com/visuals/)
+* [Power BI:n Power BI -visualisointien valikoima](https://app.powerbi.com/visuals/)
 * [R-komentosarjojen suorittaminen Power BI Desktopissa](desktop-r-scripts.md)
 * [R-visualisointien luominen Power BI Desktopissa](desktop-r-visuals.md)
 * [Ulkoisen R IDE:n käyttö Power BI:n kanssa](desktop-r-ide.md)

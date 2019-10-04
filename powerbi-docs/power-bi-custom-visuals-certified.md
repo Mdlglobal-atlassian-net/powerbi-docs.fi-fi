@@ -1,47 +1,47 @@
 ---
-title: Power BI:n sertifioidut mukautetut visualisoinnit
-description: Mukautetun visualisoinnin sertifioinnin edellytykset ja lähettämisprosessi. Lisäksi luettelo jo sertifioiduista mukautetuista visualisoinneista.
-author: sranins
-ms.author: rasala
-manager: kfile
+title: Sertifioidut Power BI:n Power BI -visualisoinnit
+description: Mukautetun visualisoinnin sertifioinnin edellytykset ja lähettämisprosessi. Lisäksi luettelo jo sertifioiduista Power BI -visualisoinneista.
+author: KesemSharabi
+ms.author: kesharab
+manager: rkarlin
 ms.reviewer: maghan
 featuredvideoid: ''
 ms.service: powerbi
 ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
 ms.date: 05/9/2019
-ms.openlocfilehash: 8c806f0de021c3857039649876864f47e1fffdb2
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: d806a0ed35a6e8270a154708279faacefeb6e510
+ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65454548"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71195704"
 ---
-# <a name="certified-custom-visuals"></a>Sertifioidut mukautetut visualisoinnit
+# <a name="get-a-power-bi-visual-certified"></a>Sertifioinnin hankkiminen Power BI -visualisoinnille
 
-## <a name="what-are-_certified_-custom-visuals"></a>Mitä ovat **_sertifioidut_** mukautetut visualisoinnit?
+## <a name="what-are-_certified_-power-bi-visuals"></a>Mitä **_sertifioidut_** Power BI -visualisoinnit ovat?
 
-Sertifioidut mukautetut visualisoinnit ovat **Marketplacen** visualisointeja, jotka täyttävät tietyt **Power BI -tiimin** testaamat ja hyväksymät **koodivaatimukset**. Kun mukautettu visualisointi on sertifioitu, se tarjoaa lisää ominaisuuksia. Voit esimerkiksi [viedä sisältöä PowerPointiin](consumer/end-user-powerpoint.md) ja näyttää visualisoinnin [raporttisivujen tilaamisen](consumer/end-user-subscribe.md) yhteydessä lähetettävissä sähköposteissa.
+Sertifioidut Power BI -visualisoinnit ovat **Marketplacen** visualisointeja, jotka täyttävät tietyt **Power BI -tiimin** testaamat ja hyväksymät **koodivaatimukset**. Kun mukautettu visualisointi on sertifioitu, se tarjoaa lisää ominaisuuksia. Voit esimerkiksi [viedä sisältöä PowerPointiin](consumer/end-user-powerpoint.md) ja näyttää visualisoinnin [raporttisivujen tilaamisen](consumer/end-user-subscribe.md) yhteydessä lähetettävissä sähköposteissa.
 
-**Sertifioituja mukautettuja visualisointeja** käytetään kuten [muitakin mukautettuja visualisointeja](power-bi-custom-visuals.md). Sertifioituja mukautettuja visualisointeja voidaan lisätä **Power BI -palveluun** ja **Power BI Desktop -raporttiin**, ja niitä voidaan tarkastella **Power BI:n mobiiliversiossa** ja **Power BI Embeddedissä**.
+**Sertifioituja Power BI -visualisointeja** käytetään samoin kun [tavallisia Power BI -visualisointeja](power-bi-custom-visuals.md). Sertifioituja Power BI -visualisointeja voidaan lisätä **Power BI -palveluun** ja **Power BI Desktop -raporttiin**, ja niitä voidaan tarkastella **Power BI:n mobiiliversiossa** ja **Power BI Embeddedissä**.
 
-Suoritettavat testit on suunniteltu varmistamaan, ettei visualisointi käytä ulkoisia palveluita tai resursseja. **Microsoft** *ei* ole kolmannen osapuolen mukautettujen visualisointien tekijä, ja se kehottaa asiakkaita ottamaan yhteyttä suoraan tekijään visualisoinnin toiminnan varmistamiseksi.
+Suoritettavat testit on suunniteltu varmistamaan, ettei visualisointi käytä ulkoisia palveluita tai resursseja. **Microsoft** *ei* ole kolmannen osapuolen Power BI -visualisointien tekijä, ja se kehottaa asiakkaita ottamaan yhteyttä suoraan tekijään visualisoinnin toiminnan varmistamiseksi.
 
 Sertifiointiprosessi on vapaaehtoinen, ja kehittäjät voivat itse päättää, haluavatko he sertifioida Marketplacessa olevan visualisointinsa.  
 
-**Sertifioimattomat mukautetut visualisoinnit** eivät välttämättä ole vaarallisia. Jotkin visualisoinnit eivät ole sertifioituja, koska ne eivät täytä yhtä tai useampaa [sertifiointivaatimusta](https://docs.microsoft.com/power-bi/power-bi-custom-visuals-certified?#certification-requirements). Tällaisia ovat esimerkiksi karttavisualisoinnit, jotka muodostavat yhteyden ulkoisiin palveluihin, tai visualisoinnit, jotka hyödyntävät kaupallisia kirjastoja.
+**Sertifioimattomat Power BI -visualisoinnit** eivät välttämättä ole turvallisia käyttää. Jotkin visualisoinnit eivät ole sertifioituja, koska ne eivät täytä yhtä tai useampaa [sertifiointivaatimusta](https://docs.microsoft.com/power-bi/power-bi-custom-visuals-certified?#certification-requirements). Tällaisia ovat esimerkiksi karttavisualisoinnit, jotka muodostavat yhteyden ulkoisiin palveluihin, tai visualisoinnit, jotka hyödyntävät kaupallisia kirjastoja.
 
 Oletko web-kehittäjä ja halukas luomaan omia visualisointeja ja lisäämään niitä  **[Microsoft AppSourceen](https://appsource.microsoft.com)** ? Katso ohjeet kohdasta  **[Power BI:n mukautetun visualisoinnin kehittäminen](developer/custom-visual-develop-tutorial.md)** .
 
-## <a name="removal-of-power-bi-certified-custom-visuals"></a>Sertifioitujen mukautettujen Power BI ‑visualisointien poistaminen
+## <a name="removal-of-power-bi-certified-power-bi-visuals"></a>Sertifioitujen Power BI -visualisointien poistaminen
 
-Microsoft saattaa poistaa visualisoinnin [sertifioitujen luettelosta](#list-of-custom-visuals-that-have-been-certified) oman harkintansa mukaan.
+Microsoft saattaa poistaa visualisoinnin [sertifioitujen luettelosta](#list-of-power-bi-visuals-that-have-been-certified) oman harkintansa mukaan.
 
 ## <a name="getting-a-custom-visualcertified"></a>Mukautetun visualisoinnin sertifioinnin hankkiminen
 
 ### <a name="certification-requirements"></a>Sertifioinnin edellytykset
 
-Mukautetun visualisoinnin [sertifiointi](#certified-custom-visuals) edellyttää, että se täyttää seuraavat vaatimukset:  
+Mukautetun visualisoinnin [sertifiointi](#get-a-power-bi-visual-certified) edellyttää, että se täyttää seuraavat vaatimukset:  
 
 * Microsoft AppSourcen hyväksyntä. Mukautetun visualisoinnin on oltava [Marketplacessa](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals).
 * Mukautettu visualisointi on kirjoitettu **Versioned-ohjelmointirajapinnan versiolla 2.5** tai uudemmalla versiolla.
@@ -84,15 +84,15 @@ Mukautetun visualisoinnin [sertifiointi](#certified-custom-visuals) edellyttää
 
 Jos haluat lähettää mukautetun visualisoinnin sertifiointia varten, toimi seuraavasti:
 
-1. Lähetä sähköpostia Power BI:n mukautettujen visualisointien tukitiimille (pbicvsupport@microsoft.com). Sisällytä viestiin seuraavat tiedot:
+1. Lähetä sähköpostia Power BI:n Power BI -visualisointien tukitiimille (pbicvsupport@microsoft.com). Sisällytä viestiin seuraavat tiedot:
     * Otsikko: Visualisoinnin sertifiointipyyntö
     * Linkki GitHub-säilöön, joka isännöi ihmisen luettavaa lähdekoodia
     * [Vaatimuksien noudattaminen](#certification-requirements)
     * Kooditarkastuksen läpäiseminen
 
-2. Microsoftin Mukautettujen visualisointien tiimi ilmoittaa, kun mukautettu visualisointi on joko sertifioitu ja lisätty [sertifioitujen luetteloon](#list-of-custom-visuals-that-have-been-certified) tai hylätty, jolloin mukana toimitetaan raportti korjattavista ongelmista. On kehittäjän vastuulla pitää yllä avointa viestiyhteyttä Microsoftin kanssa ja päivittää tarvittaessa omat sertifioidut visualisointinsa.
+2. Microsoftin Power BI -visualisointien tiimi ilmoittaa, kun mukautettu visualisointi on joko sertifioitu ja lisätty [sertifioitujen luetteloon](#list-of-power-bi-visuals-that-have-been-certified) tai hylätty, jolloin mukana toimitetaan raportti korjattavista ongelmista. On kehittäjän vastuulla pitää yllä avointa viestiyhteyttä Microsoftin kanssa ja päivittää tarvittaessa omat sertifioidut visualisointinsa.
 
-## <a name="list-of-custom-visuals-that-have-been-certified"></a>Luettelo mukautetuista visualisoinneista, jotka on sertifioitu
+## <a name="list-of-power-bi-visuals-that-have-been-certified"></a>Luettelo Power BI -visualisoinneista, jotka on sertifioitu
 
 | Linkki AppSourceen | Linkki videoon |
 | --- | --- |
@@ -192,7 +192,7 @@ Jos haluat lähettää mukautetun visualisoinnin sertifiointia varten, toimi seu
 
 ## <a name="faq"></a>Usein kysytyt kysymykset
 
-Saat lisätietoja visualisoinneista [sertifioitujen visualisointien usein kysytyistä kysymyksistä](power-bi-custom-visuals-faq.md#certified-custom-visuals).
+Saat lisätietoja visualisoinneista [sertifioitujen visualisointien usein kysytyistä kysymyksistä](#get-a-power-bi-visual-certified).
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
@@ -200,6 +200,6 @@ Saat lisätietoja visualisoinneista [sertifioitujen visualisointien usein kysyty
 * [Microsoftin mukautettujen visualisointien soittoluettelo YouTubessa](https://www.youtube.com/playlist?list=PL1N57mwBHtN1vIjfvuBIzZllrmKo-Vz6x)  
 * [Visualisoinnit Power BI:ssä](visuals/power-bi-report-visualizations.md)  
 * [Mukautetut visualisoinnit Power BI:ssä](power-bi-custom-visuals.md)  
-* [Mukautettujen visualisointien julkaiseminen Microsoft AppSourcessa](developer/office-store.md)  
+* [Power BI -visualisointien julkaiseminen Microsoft AppSourcessa](developer/office-store.md)  
 
 Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)

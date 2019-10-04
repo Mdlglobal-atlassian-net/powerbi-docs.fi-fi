@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 240045c05a35a6583b537b785c6639a39c6aa9d4
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 6e48713315b23cf322b635f1650374251b639e4f
+ms.sourcegitcommit: bbd9b38f30a4ca5cb8072496c9cacb635b03aa88
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61193830"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71409358"
 ---
 ## <a name="define-roles-and-rules-in-power-bi-desktop"></a>Roolien ja sääntöjen määrittäminen Power BI Desktopissa
 Power BI Desktopissa voit määrittää rooleja ja sääntöjä. Kun julkaiset Power BI:ssä, myös roolimääritykset julkaistaan.
@@ -35,8 +35,14 @@ Voit määrittää käyttöoikeusroolit seuraavien ohjeiden mukaisesti.
    
    ![](./media/rls-desktop-define-roles/powerbi-desktop-security-create-rule.png)
 8. Kun olet luonut DAX-lausekkeen, voit vahvistaa sen valitsemalla lausekeruudun yläpuolelta valintamerkkikuvakkeen.
-   
+      
    ![](./media/rls-desktop-define-roles/powerbi-desktop-security-validate-dax.png)
+   
+   > [!NOTE]
+   > Tässä lausekeruudussa voit erotella DAX-funktioiden argumentit pilkuilla, vaikka käyttäisit aluekohtaisia asetuksia, joissa yleensä käytetään puolipisteitä erottimina (esimerkiksi Ranska tai Saksa). 
+   >
+   >
+   
 9. Valitse **Tallenna**.
 
 Käyttäjille ei voi määrittää roolia Power BI Desktopissa. Voit määrittää ne Power BI -palvelussa. Voit ottaa käyttöön Power BI Desktopin dynaamiset suojausominaisuudet hyödyntämällä *username()* - tai *userprincipalname()* -DAX-funktioita, kun oikeat suhteet on määritetty. 

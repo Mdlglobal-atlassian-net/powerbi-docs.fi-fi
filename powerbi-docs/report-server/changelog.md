@@ -9,18 +9,43 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 03/31/2018
-ms.openlocfilehash: 0aa1d964485297c5e0dae3f4a309cc0dd15b92b2
-ms.sourcegitcommit: 90ad0572a92f640684cdc32c9a6478d299de9dc0
+ms.openlocfilehash: 71c2135092b0b9bb2b02f4559d40c0b10814a51f
+ms.sourcegitcommit: e2c5d4561455c3a4806ace85defbc72e4d7573b4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/10/2019
-ms.locfileid: "68940910"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71325718"
 ---
 # <a name="changelog-for-power-bi-report-server"></a>Power BI -raporttipalvelimen muutosloki
 
 Power BI -raporttipalvelimen muutoslokissa on listattu jokaisen koontiversion uudet ominaisuudet ja ohjelmavirhekorjaukset.
 
 Lisätietoja uusista ominaisuuksista on artikkelissa [Power BI -raporttipalvelinten uudet ominaisuudet](whats-new.md). 
+
+## <a name="september-2019"></a>Syyskuu 2019
+
+- **Power BI -raporttipalvelin**          
+    - *Versio 1.6.7206.38019 (koontiversio 15.0.1102.597), julkaistu: 26. syyskuuta 2019*
+        - Suojauspäivitykset
+        - Ohjelmavirhekorjauksia
+           - Sivutetut raportit
+             - Korjaus helppokäyttötoimintojen ongelmiin, jotka ilmenivät IE:n ja Edgen käytön aikana.
+             - Korjaus SAP HANA -ongelmiin, jotka ilmenivät yhteyden testaamisen aikana.
+             - Korjaus ongelmiin, jotka ilmenivät sähköpostiosoitteiden luettelon antamisen aikana.
+             - Korjaus DirectQuery-tieto lähdettä ja integroitua todentamista käyttäviin Power BI -raportteihin.
+             - Korjaus sivutettujen raporttien hahmontamiseen suodatinparametreilla, kun tilannevedos on käytössä.
+             - Korjaus tallennettujen toimintosarjojen kaksinkertaiseen suorittamiseen raportin suorittamisen aikana.
+             - Korjaus ongelmaan, jossa oletuspalvelutilille myönnettiin SQL Server -kirjautumisoikeudet, kun mukautettu palvelutili oli määritetty käynnistämään Power BI -raporttipalvelin.
+             - Korjaus mallien käytön ongelmaan, joka ilmeni päivityksen aikana Japanin aikavyöhykkeellä.
+             - Korjaus vanhentuneisiin malleihin liittyvään ongelmaan, joka ilmeni ladattaessa raportin uusi versio palvelimeen päivityksen aikana.
+             - Korjaus parametriarvoihin, jotka sisältävät &-merkin.
+         - Ohjelmoitavuus
+             - Päivitetty WWW-ohjelmointirajapinta: /PowerBIReports({Id})/DataSources (PATCH) yhteysmerkkijonon päivitysten mahdollistamista varten.
+         
+- **Power BI Desktop (optimoitu Power BI -raporttipalvelimelle)**
+    - *Versio: 2.73.5586.821 (syyskuu 2019), julkaistu: 26. syyskuuta 2019* (uusi koontiversio ja uusi versio)
+    - Sisältää Power BI -raporttipalvelinyhteyden edellyttämiä muutoksia (syyskuu 2019)
+
 
 ## <a name="may-2019"></a>Toukokuu 2019
 

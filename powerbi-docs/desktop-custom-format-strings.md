@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 09/11/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 02a81aa47fb7945b2fd76d03a6bdde7712304bdc
-ms.sourcegitcommit: 7eb74b060de080152c190ac7eb6b64767f8d6626
+ms.openlocfilehash: fffb0479865439759167635efcae1799452c4c6f
+ms.sourcegitcommit: 57e45f291714ac99390996a163436fa1f76db427
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70919544"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "71305729"
 ---
 # <a name="use-custom-format-strings-in-power-bi-desktop"></a>Mukautettujen muotoilumerkkijonojen käyttö Power BI Desktopissa
 
@@ -148,13 +148,14 @@ Seuraavassa taulukossa on yksilöity merkit, joiden avulla voit luoda **käyttä
 | ( **E- E+ e- e+** ) | Tieteellinen muoto. Jos muotoilulauseke sisältää vähintään yhden numeron paikkamerkin ( **0** tai **#** ) E-, E+-, e- tai e+-merkin oikealla puolella, luku näytetään tieteellisessä muodossa, ja E tai e lisätään luvun ja sen eksponentin väliin. Oikealla olevien numeroiden paikkamerkkien määrä määrittää eksponentissa olevien numeroiden määrän. Aseta miinusmerkki negatiivisten eksponenttien viereen E-:n tai e-:n avulla. Aseta miinusmerkki negatiivisten eksponenttien ja plusmerkki positiivisten eksponenttien viereen E+:n tai e+:n avulla. |
 | **- + $**  ( ) | Näytä literaalimerkki. Jos haluat näyttää muun kuin jonkin luettelossa olevan merkin, kirjoita sen eteen kenoviiva (\) tai kirjoita se kaksinkertaisiin lainausmerkkeihin (&quot; &quot;). |
 | ( * *\** ) | Näytä seuraava merkki muotoilumerkkijonossa. Jos haluat näyttää merkin, jolla on erityinen merkitys literaalimerkkinä, kirjoita sen eteen kenoviiva (\). Kenoviivaa itseään ei näytetä. Kenoviivan käyttäminen vastaa merkin lisäämistä kaksinkertaisiin lainausmerkkeihin. Jos haluat kenoviivan näkyvän, käytä kahta kenoviivaa (\\). Literaalimerkkeinä ei voida näyttää esimerkiksi päivämäärän ja kellonajan muotoilumerkkejä (a, c, d, h, m, n, p, q, s, t, w, y, / ja :), numeromuotoilumerkkejä (#, 0, %, E, e, pilkku ja piste) sekä merkkijonomuotoilun merkkejä (@, &amp;, \&lt;, \&gt; ja !). |
-| (&quot;ABC&quot;) | Näytä merkkijono kaksinkertaisten lainausmerkkien sisällä (&quot; &quot;). Jos haluat sisällyttää **muotoilu**-kohdassa olevan merkkijonon, sinun on sisällytettävä teksti **Chr(34)** :n avulla (34 on lainausmerkin (&quot;) koodi). |
+| (&quot;ABC&quot;) | Näytä merkkijono kaksinkertaisten lainausmerkkien sisällä (&quot; &quot;). |
 
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 Voit olla kiinnostunut myös seuraavista artikkeleista:
 
 * [VBA-muotoilumerkkijonot](https://docs.microsoft.com/office/vba/language/reference/user-interface-help/format-function-visual-basic-for-applications#example)
+* [Mittarit Power BI Desktopissa](desktop-measures.md)
+* [Tietotyypit Power BI Desktopissa](desktop-data-types.md)
 * [Ehdollinen muotoilu taulukoissa](desktop-conditional-table-formatting.md)
-* [Lausekepohjaiset otsikot Power BI Desktopissa](desktop-conditional-format-visual-titles.md)
 

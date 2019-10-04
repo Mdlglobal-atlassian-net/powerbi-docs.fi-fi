@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 05/22/2019
+ms.date: 09/26/2019
 ms.author: maggies
-ms.openlocfilehash: 2401064f1f7f3be63c23d72e79987784e1ec7049
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: ec1aab13955a4c34861a3f0d8dd39b6c77607696
+ms.sourcegitcommit: e2c5d4561455c3a4806ace85defbc72e4d7573b4
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66187532"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71325653"
 ---
 # <a name="create-a-power-bi-report-for-power-bi-report-server"></a>Power BI -raportin luominen Power BI -raporttipalvelimeen
 Voit tallentaa ja hallita Power BI -raportteja Power BI -raporttipalvelimen verkkoportaalissa paikallisesti samalla tavalla kuin voit tallentaa Power BI -raportteja pilveen Power BI -palvelussa (https://powerbi.com). Luo ja muokkaa raportteja Power BI Desktopissa ja julkaise ne verkkoportaalissa. Raportin lukijat organisaatiossasi voivat tarkastella niitä selaimessa tai Power BI -mobiilisovelluksessa mobiililaitteillaan.
@@ -31,7 +31,7 @@ Jos olet jo luonut Power BI -raportteja Power BI Desktopissa, olet melkein valmi
 
     ![Lataa Power BI Desktop verkkoportaalista](media/quickstart-create-powerbi-report/report-server-download-web-portal.png)
 
-    Myös siirtyä suoraan kohtaan [Microsoft Power BI Desktop](https://www.microsoft.com/download/details.aspx?id=56723) (optimoitu Power BI-Raporttipalvelimelle - toukokuun 2019) Microsoft Download Centerissä.
+    Voit myös siirtyä [Power BI -raporttipalvelin](https://powerbi.microsoft.com/report-server/) -aloitussivulle ja valita **Lataamisen lisäasetukset**.
 
 2. Valitse Download Center -sivulla **Lataa**.
 
@@ -41,13 +41,13 @@ Jos olet jo luonut Power BI -raportteja Power BI Desktopissa, olet melkein valmi
 
     - **PBIDesktopRS_x64.msi** (64-bittinen versio).
 
-4. Kun olet ladannut asennusohjelman, suorita ohjattu asennus Power BI Desktop (toukokuun 2019).
+4. Kun olet ladannut asennusohjelman, suorita Power BI Desktopin (syyskuu 2019) ohjattu asennus.
 
 2. Asennuksen lopussa valitse **Käynnistä Power BI Desktop nyt**.
    
-    Se käynnistyy automaattisesti ja on valmiina käyttöön. Voit tarkistaa, sinulla on oikea versio, koska ”Power BI Desktop (toukokuun 2019)” on otsikkorivillä.
+    Se käynnistyy automaattisesti ja on valmiina käyttöön. Tiedät, että sinulla on oikea versio, koska **Power BI Desktop (syyskuu 2019)** lukee otsikkorivillä.
 
-    ![Power BI Desktop saattaa 2019 versio](media/quickstart-create-powerbi-report/power-bi-report-server-desktop-may-2019.png)
+    ![Power BI Desktop syyskuu 2019](media/quickstart-create-powerbi-report/power-bi-report-server-desktop-sept-2019.png)
 
 3. Jos et ole tottunut käyttämään Power BI Desktopia, harkitse aloitusnäytön videoiden katselemista.
    
@@ -61,7 +61,7 @@ Voit yhdistää useita eri tietolähteitä. Lue lisätietoja [yhdistämisestä t
     Valitse **Aloitus**-välilehdeltä **Nouda tiedot**.
 2. Valitse tietolähde, tässä esimerkissä **Analysis Services**.
    
-    ![Valitse tietolähde](media/quickstart-create-powerbi-report/report-server-get-data-ssas.png)
+    ![Valitse tietolähde](media/quickstart-create-powerbi-report/power-bi-report-server-get-data-ssas.png)
 3. Täytä **Palvelin** ja valinnaisesti **Tietokanta**. Varmista, että **Connect live** on valittuna > **OK**.
    
     ![Palvelimen nimi](media/quickstart-create-powerbi-report/report-server-ssas-server-name.png)

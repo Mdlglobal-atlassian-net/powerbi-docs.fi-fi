@@ -11,14 +11,17 @@ ms.topic: conceptual
 ms.date: 02/10/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 74c4468cbb764d8bd7720845939b3b7fbdf66b06
-ms.sourcegitcommit: 90aa7ea5fcc7cf0fd7f6c3c1efeff5f27e8ef0dd
+ms.openlocfilehash: e001d35761eb7918aab2c427c3400df526e4dbc0
+ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "67299458"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71192236"
 ---
-# <a name="arcgis-maps-in-power-bi-service-and-power-bi-desktop-by-esri"></a>Esri ArcGIS -kartat Power BI -palvelussa ja Power BI Desktopissa
+# <a name="arcgis-maps-in-power-bi-desktop-by-esri"></a>Esri ArcGIS -kartat Power BI Desktopissa
+
+[!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
+
 Tämä opetusohjelma on kirjoitettu ArcGIS-karttaa luovan henkilön näkökulmasta. Kun tekijä jakaa ArcGIS-kartan työtoverille, kyseinen työtoveri voi tarkastella ja käsitellä karttaa mutta ei tallentaa muutoksia. Lisätietoja ArcGIS-kartan tarkastelemisesta on ohjeartikkelissa [ArcGIS-karttojen käsittely](power-bi-visualizations-arcgis.md).
 
 ArcGIS-kartat ja Power BI yhdessä tekevät kartoista muutakin kuin vain esitettäviä pisteitä. Valitse pohjakarttoja, sijaintityyppejä, teemoja, symbolityylejä ja viittauskerroksia, joiden avulla voit luoda upeita, informatiivisia karttavisualisointeja. Määräävien tietokerrosten yhdistäminen tila-analyysiä sisältävien karttojen kanssa mahdollista visualisaation tietojen entistä tarkemman ymmärtämisen.
@@ -31,7 +34,7 @@ ArcGIS-kartat ja Power BI yhdessä tekevät kartoista muutakin kuin vain esitett
 
 Alla olevassa esimerkissä tummanharmaa pohja kuvastaa alueellista myyntiä lämpökarttana, jota verrataan demografisen kerroksen sisältämiin vuoden 2016 mediaanituloihin. ArcGIS-karttojen monipuolisten kartoitusominaisuuksien, demografisten tietojen ja karttavisualisointien ansiosta voit kertoa tarinasi parhaalla mahdollisella tavalla.
 
-![](media/power-bi-visualization-arcgis/power-bi-intro-arcgis.png)
+![arcgis-esittelykuva](media/power-bi-visualization-arcgis/power-bi-intro-arcgis.png)
 
 > [!TIP]
 > Katso esimerkkejä ja lue käyttäjien kokemuksia [Esrin Power BI -sivulta](https://www.esri.com/powerbi). Katso myös Esrin ohjeartikkeli [ArcGIS Maps for Power BI:n käytön aloitus](https://doc.arcgis.com/en/maps-for-powerbi/get-started/about-maps-for-power-bi.htm).
@@ -49,30 +52,35 @@ ArcGIS Maps for Power BI on Esrin tekemä (www.esri.com). ArcGIS Maps for Power 
 
 <br/>
 
-## <a name="enable-arcgis-map"></a>ArcGIS-karttojen ottaminen käyttöön
-ArcGIS-karttoja voi tällä hetkellä käyttää Power BI -palvelussa, Power BI Desktopissa ja Power BI -mobiilisovelluksessa. Tämän artikkelin ohjeet koskevat Power BI -palvelua ja Desktopia.
 
-### <a name="enable-the-arcgis-map-in-power-bi-service-apppowerbicom"></a>ArcGIS-karttojen ottaminen käyttöön ***Power BI -palvelussa (app.powerbi.com)***
-Tässä opetusohjelmassa käytetään [Jälleenmyyntianalyysimallia](../sample-retail-analysis.md). **ArcGIS Maps for Power BI:n** käyttöönotto:
+### <a name="enable-the-arcgis-map-in-power-bi-desktop-apppowerbicom"></a>ArcGIS-karttojen ottaminen käyttöön ***Power BI -palvelussa (app.powerbi.com)***
+Tässä opetusohjelmassa käytetään [Jälleenmyyntianalyysimallin .PBIX-tiedostoa](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix
+). **ArcGIS Maps for Power BI:n** käyttöönotto:
 
-1. Valitse valikkorivin oikeasta yläkulmasta hammaspyöräkuvake ja avaa **Asetukset**
+1. Valitse valikkorivin vasemmasta yläosasta **Tiedosto** \> **Avaa**
    
-    ![](media/power-bi-visualization-arcgis/power-bi-settings.png)
-2. Valitse **ArcGIS Maps for Power BI** -valintaruutu. Valinta edellyttää Power BI:n uudelleenkäynnistystä.
+2. Etsi paikalliseen tietokoneeseesi tallennettu **Jälleenmyyntianalyysimallin PBIX-tiedosto**.
+
+1. Avaa **Jälleenmyyntianalyysimalli** raporttinäkymässä ![Näyttökuva raporttinäkymän kuvakkeesta.](media/power-bi-visualization-kpi/power-bi-report-view.png).
+
+1. Valitse ![Näyttökuva keltaisesta välilehdestä.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) uuden sivun lisäämiseksi.
+
    
-    ![](media/power-bi-visualization-arcgis/power-bi-use-arcgis-new.png)
-3. Avaa raportti [muokkausnäkymässä](../consumer/end-user-reading-view.md) ja valitse ArcGIS Maps for Power BI -kuvake Visualisoinnit-ruudussa.
+3. Valitse ArcGIS Maps for Power BI -kuvake Visualisoinnit-ruudussa.
    
-    ![](media/power-bi-visualization-arcgis/power-bi-viz-pane2.png)
+    ![arcgis-karttojen visualisointiruutu](media/power-bi-visualization-arcgis/power-bi-viz-pane.png)
 4. Power BI lisää tyhjän ArcGIS -karttamallin raportin pohjaan.
    
-   ![](media/power-bi-visualization-arcgis/power-bi-esri-placeholder2new.png)
+   ![arcgis-visualisoinnin paikkamerkki](media/power-bi-visualization-arcgis/power-bi-esri-placeholder2new.png)
 
 <br/>
 
 ## <a name="create-an-arcgis-map-visual"></a>ArcGIS-karttavisualisoinnin luominen
-Katso, miten Will luo muutamia erilaisia ArcGIS-karttavisualisointeja ja kokeile sitä itse alla olevien ohjeiden mukaisesti. Käytä pohjana [Jälleenmyyntianalyysimallia](../sample-datasets.md).
-
+Katso, miten Will luo muutamia erilaisia ArcGIS-karttavisualisointeja, ja kokeile itse alla olevien ohjeiden mukaisesti. Käytä pohjana [Jälleenmyyntianalyysimallin .PBIX-tiedostoa](../sample-datasets.md).
+   > [!NOTE]
+   > Tässä videossa käytetään Power BI Desktopin vanhempaa versiota.
+   > 
+   > 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/EKVvOZmxg9s" frameborder="0" allowfullscreen></iframe>
 
 1. Vedä **Kentät**-ruudussa tietokenttä **Sijainti-** tai **Leveysaste-** ja/tai **Pituusaste**-säilöön. Tässä esimerkissä arvoina käytetään **Kaupunki > Kauppa**.
@@ -82,28 +90,28 @@ Katso, miten Will luo muutamia erilaisia ArcGIS-karttavisualisointeja ja kokeile
    > 
    > 
    
-    ![](media/power-bi-visualization-arcgis/power-bi-fields-pane3new.png)
-2. Muunna visualisointi ArcGIS-kartaksi valitsemalla malli Visualisoinnit-ruudusta ![](media/power-bi-visualization-arcgis/power-bi-arcgis-template.png).
+    ![arcgisin Kentät-ruutu](media/power-bi-visualization-arcgis/power-bi-fields-pane3new.png)
+
 3. Vedä **Kentät**-ruudussa mittari **Koko**-säilöön, jos haluat säätää tietojen näyttötapaa. Tässä esimerkissä arvoina käytetään **Myynti > Viime vuoden myynti**.
    
-    ![](media/power-bi-visualization-arcgis/power-bi-esri-point-map-size2new.png)
+    ![esri pistekartta visualisointi](media/power-bi-visualization-arcgis/power-bi-esri-point-map-size2new.png)
 
 ## <a name="settings-and-formatting-for-arcgis-maps"></a>ArcGIS-karttojen asetukset ja muotoilu
 **ArcGIS Maps for Power BI** -muotoiluominaisuuksien käyttö:
 
 1. Voit käyttää lisätoimintoja valitsemalla kolme pistettä visualisoinnin oikeasta yläkulmasta ja valitsemalla sitten **Muokkaa**.
    
-   ![](media/power-bi-visualization-arcgis/power-bi-edit2.png)
+   ![arcgis muokkausruutu](media/power-bi-visualization-arcgis/power-bi-edit2.png)
    
    Käytettävissä olevat ominaisuudet näytetään visualisoinnin yläreunassa. Kunkin toiminnon valitseminen avaa tehtäväruudun, jossa on yksityiskohtaisia asetuksia.<br/>
    
-   ![](media/power-bi-visualization-arcgis/power-bi-esri-features-new.png)
+   ![esri ominaisuusruutu](media/power-bi-visualization-arcgis/power-bi-esri-features-new.png)
    
    > [!NOTE]
    > Katso lisätietoja asetuksista ja ominaisuuksista alla olevasta **Yksityiskohtaiset ohjeet** -kohdasta.
    > 
    > 
-2. Jos haluat palata raporttiin, valitse **Takaisin raporttiin** raportin pohjan vasemmasta yläkulmasta.
+
 
 <br/>
 
@@ -116,22 +124,22 @@ Tarjolla on neljä pohjakarttaa: tummanharmaa pohja, vaaleanharmaa pohja, OpenSt
 
 Voit käyttää pohjakarttaa valitsemalla sen tehtäväruudusta.
 
-![](media/power-bi-visualization-arcgis/power-bi-esri-base-maps-new.png)
+![esri peruskartat visualisointi](media/power-bi-visualization-arcgis/power-bi-esri-base-maps-new.png)
 
 ### <a name="location-type"></a>Sijainnin tyyppi
 ArgGIS Maps for Power BI havaitsee automaattisesti parhaan tavan näyttää tiedot kartalla. Se valitsee joko pisteet tai rajat. Sijainnin tyypin asetusten avulla voit hienosäätää näitä valintoja.
 
-![](media/power-bi-visualization-arcgis/power-bi-esri-location-types-new.png)
+![esri sijaintityypit esimerkki](media/power-bi-visualization-arcgis/power-bi-esri-location-types-new.png)
 
 **Rajat** toimii vain, jos tietosi sisältävät maantieteellisiä vakioarvoja. Esri päättelee automaattisesti kartalla näytettävän muodon. Maantieteellisiä vakioarvoja ovat mm. maa, maakunta ja postinumero. Kuten sijaintitietoja lisättäessä, Power BI ei välttämättä tunnista, että kentän on oletusarvoisesti oltava raja tai se ei ehkä tunne tietojasi vastaavia rajoja.  
 
 ### <a name="map-theme"></a>Kartan teema
-Voit valita neljästä kartan teemasta. Vain sijainti- ja koko-teemat valitaan automaattisesti sijaintiin sitomiesi kenttien perusteella. Teemat lisätään Power BI:n Kentät-ruudussa olevaan **Koko**-säilöön. Käytössä on tällä hetkellä **Koko**-teema, joten vaihdetaan se **Lämpökartaksi**.  
+Voit valita neljästä kartan teemasta. Vain sijainti- ja koko-teemat valitaan automaattisesti sijaintiin sitomiesi kenttien perusteella. Teemat lisätään Power BI:n Kentät-ruudussa olevaan **Koko**-säilöön. Tällä hetkellä käytössä on **Koko**, joten siirrytään **Lämpökartta**-vaihtoehtoon. Muista vain poistaa **Lämpökartta** käytöstä ennen seuraavaan vaiheeseen siirtymistä.  
 
-![](media/power-bi-visualization-arcgis/power-bi-esri-map-theme-new.png)
+![esri karttateema esimerkki](media/power-bi-visualization-arcgis/power-bi-esri-map-theme-new.png)
 
 <table>
-<tr><th>Teema</th><th>Kuvaus</th>
+<tr><th>teema</th><th>Kuvaus</th>
 <tr>
 <td>Vain sijainti</td>
 <td>Piirtää arvopisteet tai täytetyt rajat kartalle Sijainnin tyyppi -asetusten perusteella.</td>
@@ -152,9 +160,9 @@ Voit valita neljästä kartan teemasta. Vain sijainti- ja koko-teemat valitaan a
 
 
 ### <a name="symbol-style"></a>Symbolityyli
-Symbolityylien avulla voit hienosäätää tietojen esitystapaa kartalla. Symbolityylit ovat tilannekohtaisia. Ne vaihtelevat valitun Sijainnin tyypin ja Kartan teeman mukaan. Alla olevassa esimerkissä näytetään **Koko**-sijainnin tyyppi ja sen läpinäkyvyyteen, tyyliin ja kokoon tehdyt muutokset.
+Symbolityylien avulla voit hienosäätää tietojen esitystapaa kartalla. Symbolityylit ovat tilannekohtaisia. Ne vaihtelevat valitun Sijainnin tyypin ja Kartan teeman mukaan. Alla olevassa esimerkissä näkyy Kartan tyyppi -asetuksena **Koko** ja useita läpinäkyvyyteen, tyyliin ja kokoon tehtyjä säätöjä. 
 
-![](media/power-bi-visualization-arcgis/power-bi-esri-symbol-style-new.png)
+![esri symbolityyli esimerkki](media/power-bi-visualization-arcgis/power-bi-esri-symbol-style-new.png)
 
 ### <a name="pins"></a>Nastat
 Voit kiinnittää huomion karttapisteisiin lisäämällä nastoja.  
@@ -162,21 +170,21 @@ Voit kiinnittää huomion karttapisteisiin lisäämällä nastoja.
 1. Valitse **Nastat**-välilehti.
 2. Kirjoita avainsanoja (esim. paikka, kiinnostava kohde) hakuruutuun ja tee valinta avattavasta valikosta. Kartalle ilmestyy symboli, johon näkymä lähennetään automaattisesti. Hakutulokset tallennetaan Nastat-ruudun sijaintikortteihin. Voit tallentaa enintään 10 sijaintikorttia.
    
-   ![](media/power-bi-visualization-arcgis/power-bi-pin-arcgis-newer.png)
+   ![arcgis karttanasta esimerkki](media/power-bi-visualization-arcgis/power-bi-pin-arcgis-newer.png)
 3. Power BI lisää nastan kyseiseen sijaintiin. Voit muuttaa nastan väriä.
    
-   ![](media/power-bi-visualization-arcgis/power-bi-pin-color-new.png)
+   ![nastaväri esimerkki](media/power-bi-visualization-arcgis/power-bi-pin-color-new.png)
 4. Lisää ja poista nastoja.
    
-   ![](media/power-bi-visualization-arcgis/power-bi-pin3.png)
+   ![nastan lisäys ja poistaminen esimerkki](media/power-bi-visualization-arcgis/power-bi-pin3.png)
 
 ### <a name="drive-time"></a>Ajoaika
 Ajoaika-ruudulla voit valita sijainnin ja määrittää sitten, mitkä kartan kohteet ovat tietyllä säteellä tai tietyn ajoajan päässä.  
-    ![](media/power-bi-visualization-arcgis/power-bi-esri-drive-time.png)
+    ![ajoaika esimerkki](media/power-bi-visualization-arcgis/power-bi-esri-drive-time.png)
 
 1. Valitse **Ajoaika**-välilehti ja valitse yksittäisten tai useiden kohteiden valintatyökalu. Valitse Washington D.C.:n nasta yksittäisellä valinnalla.
 
-   ![](media/power-bi-visualization-arcgis/power-bi-esri-single-select.png)
+   ![yhden nastan valinta esimerkki](media/power-bi-visualization-arcgis/power-bi-esri-single-select.png)
    
    > [!TIP]
    > Sijainti on helpompi valita, jos lähennät karttanäkymää (+ -kuvake).
@@ -184,10 +192,11 @@ Ajoaika-ruudulla voit valita sijainnin ja määrittää sitten, mitkä kartan ko
    > 
 2. Kuvitellaan, että lennät Washington D.C.:hen muutamaksi päiväksi ja haluat selvittää, mitkä myymälät ovat kohtuullisen ajoajan päässä. Valitse hakualueeksi **Säde**, etäisyydeksi **50** mailia ja valitse OK.    
    
-    ![](media/power-bi-visualization-arcgis/power-bi-esri-drive-time-radius.png)
+    ![ajoaika säde](media/power-bi-visualization-arcgis/power-bi-esri-drive-time-radius.png)
+
 3. Säde näkyy violettina. Voita valita minkä tahansa sijainnin ja tarkastella sen tietoja. Vaihtoehtoisesti voit muotoilla sädettä muuttamalla sen väriä ja ääriviivoja.
    
-    ![](media/power-bi-visualization-arcgis/power-bi-esri-drive-time.png)
+    ![säteen muoto, väri ja ääriviiva esimerkki](media/power-bi-visualization-arcgis/power-bi-esri-drive-time.png)
 
 ### <a name="reference-layer"></a>Viittauskerros
 #### <a name="reference-layer---demographics"></a>Viittauskerros - Demografiset tiedot
@@ -196,10 +205,10 @@ ArcGIS Maps for Power BI sisältää erilaisia demografisia kerroksia, jotka aut
 1. Valitse **Viittauskerros**-välilehti ja valitse **Demografiset tiedot**.
 2. Luettelossa kunkin kerroksen vieressä on valintaruutu. Valitse valintaruutu lisätäksesi kyseisen kerroksen kartalle.  Tässä esimerkissä olemme lisänneet kotitalouksien keskimääräiset tulot.<br/>
    
-    ![](media/power-bi-visualization-arcgis/power-bi-esri-reference-layer-demographic.png)
+    ![viittauskerros demografiset tiedot esimerkki](media/power-bi-visualization-arcgis/power-bi-esri-reference-layer-demographic.png)
 3. Jokainen kerros on vuorovaikutteinen. Samoin kuin voit katsoa kuplan tiedot osoittamalla sitä hiirellä, voit tarkastella varjostetun kartta-alueen tietoja napsauttamalla.<br/>
    
-    ![](media/power-bi-visualization-arcgis/power-bi-esri-reference-layer-details.png)
+    ![viittauskerros tiedot esimerkki](media/power-bi-visualization-arcgis/power-bi-esri-reference-layer-details.png)
 
 #### <a name="reference-layer---arcgis"></a>Viittauskerros - ArcGIS
 ArcGIS Online tarjoaa organisaatioille mahdollisuuden julkaista julkisia verkkokarttoja. Esri tarjoaa myös valvotut verkkokartat Living Atlas -järjestelmän kautta. ArcGIS-välilehdessä voit tehdä hakuja kaikista julkisista verkkokartoista ja Living Atlas -kartoista ja lisätä niitä kartan viittauskerroksiksi.
@@ -207,23 +216,29 @@ ArcGIS Online tarjoaa organisaatioille mahdollisuuden julkaista julkisia verkkok
 1. Valitse **Viittauskerros**-välilehti ja sitten **ArcGIS**.
 2. Kirjoita hakusanat ja valitse sitten karttakerros. Tässä esimerkissä on käytetty USA:n edustajainhuoneen vaalipiirejä.
    
-    ![](media/power-bi-visualization-arcgis/power-bi-esri-demographics-esri2-new.png)
+    ![esri demografiset tiedot esimerkki](media/power-bi-visualization-arcgis/power-bi-reference-details.png)
 3. Saat tiedot valitsemalla varjostetun alueen, jolloin voit avata *Valitse viittauskerroksesta*: Valitse viittauskerroksesta rajat tai objektit viittauskerroksen valintatyökalun avulla.
 
 <br/>
 
 ## <a name="selecting-data-points"></a>Arvopisteiden valinta
-ArcGIS Maps for Power BI:ssä on kolme valintatilaa.
+ArcGIS Maps for Power BI tarjoaa viisi valintatilaa, joiden avulla voit valita tiedot tarkasti ja nopeasti.
 
-Voit muuttaa valintatilaa valitsimella:
+Voit vaihtaa valintatilaa pitämällä kohdistinta alla olevassa kuvassa näkyvän yksittäinen valinta -työkalun kuvakkeen päällä. Tämä laajentaa myös piilotetun palkin lisätyökalut näkyviin:
 
-![](media/power-bi-visualization-arcgis/power-bi-esri-selection-tools2.png)
+![esri valintatyökalu](media/power-bi-visualization-arcgis/power-bi-esri-selection-tools2.png)
 
-![](media/power-bi-visualization-arcgis/power-bi-esri-selection-single2.png) Valitse yksittäisiä arvopisteitä.
+Jokaisella työkalulla on yksilöivä rooli, jonka avulla voit valita tiedot: 
 
-![](media/power-bi-visualization-arcgis/power-bi-esri-selection-marquee2.png) Piirrä suorakulmio kartalle ja valitse siihen sisältyvät arvopisteet.
+![esri valinta yksittäinen](media/power-bi-visualization-arcgis/power-bi-esri-selection-single2.png) Valitse yksittäisiä arvopisteitä.
 
-![](media/power-bi-visualization-arcgis/power-bi-esri-selection-reference-layer2.png) Sallii viittauskerrosten sisältämien rajojen tai monikulmioiden käyttö arvopisteiden valintaan.
+![esri valintakehys](media/power-bi-visualization-arcgis/power-bi-esri-selection-marquee2.png) Piirrä suorakulmio kartalle ja valitse siihen sisältyvät arvopisteet.
+
+![esri valinta viittauskerros](media/power-bi-visualization-arcgis/power-bi-esri-selection-reference-layer2.png) Voit käyttää rajauksia tai monikulmioita viittauskerroksissa ja valita siten sisäpuolelle jäävät arvopisteet.
+
+![esri valinta puskurikerros](media/power-bi-visualization-arcgis/power-bi-esri-selection-reference-buffer.png) Voit valita tietoja puskurikerroksen avulla.
+
+![esri valinta samanlainen valinta](media/power-bi-visualization-arcgis/power-bi-esri-selection-reference-similar.png) Voit valita keskenään samanlaiset arvopisteet.
 
 > [!NOTE]
 > Voit valita enintään 250 arvopistettä kerrallaan.
@@ -242,21 +257,20 @@ Jos sinulla parannusehdotus, lähetä se [Power BI -idealuetteloon](https://idea
 <br/>
 
 ## <a name="managing-use-of-arcgis-maps-for-power-bi-within-your-organization"></a>ArcGIS Maps for Power BI:n käytön hallinta organisaatiossa
-Power BI antaa käyttäjien, vuokraajien järjestelmänvalvojien ja IT-järjestelmänvalvojien valita, käytetäänkö ArcGIS Maps for Power BI:tä.
+Power BI antaa käyttäjien, vuokraajien järjestelmänvalvojien ja IT-järjestelmänvalvojien valita, käytetäänkö ArcGIS Maps for Power BI:tä. Seuraavassa on tietoja siitä, mitä vaiheita jokainen rooli voi käyttää ArcGis Mapsin käytön hallintaan. 
 
-Power BI Desktopin **Käyttäjäasetuksista** käyttäjät voivat lopettaa ArcGIS Maps for Power BI:n käytön poistamalla sen käytöstä **Asetusten** suojaus-välilehdeltä. Kun ArcGIS Maps on poistettu käytöstä, sitä ei ladata oletusarvoisesti.
+### <a name="user-options"></a>Käyttäjän asetukset
+Power BI Desktopissa käyttäjät voivat lopettaa ArcGIS Maps for Power BI:n käytön poistamalla sen käytöstä suojausvälilehdessä valitsemalla **Tiedosto** > **Asetukset ja vaihtoehdot** ja valitsemalla sitten **Vaihtoehdot** > **Suojaus**. Kun ArcGIS Maps on poistettu käytöstä, sitä ei ladata oletusarvoisesti.
 
-![](media/power-bi-visualization-arcgis/power-bi-desktop-security-dialog2.png)
+![työpöytä suojausvalintaikkuna esimerkki](media/power-bi-visualization-arcgis/power-bi-desktop-security-dialog2.png)
 
-Power BI -palvelun käyttäjät voivat poistaa ArcGIS Maps for Power BI:n käytöstä käyttäjäasetusten Power BI -välilehdeltä. Kun ArcGIS Maps on poistettu käytöstä, sitä ei ladata oletusarvoisesti.
+### <a name="tenant-admin-options"></a>Vuokraajan järjestelmänvalvojan asetukset
+PowerBI.comissa vuokraajan järjestelmänvalvojat voivat estää kaikkia vuokraajan käyttäjiä käyttämästä ArcGIS Maps for Power BI:tä poistamalla asetuksen käytöstä valitsemalla **Asetukset** > **Hallintaportaali** > **Vuokraaja-asetukset**. Tällaisissa tapauksessa Power BI:n Visualisoinnit-ruudussa ei enää näytetä ArcGIS Maps for Power BI -kuvaketta.
 
-![](media/power-bi-visualization-arcgis/power-bi-use-arcgis-new.png)
+![arcgis hallinta portaali esimerkki](media/power-bi-visualization-arcgis/power-bi-arcgis-admin-portal2.png)
 
-Vuokraajan järjestelmänvalvojat voivat estää kaikkia vuokraajan käyttäjiä käyttämästä ArcGIS Maps for Power BI:tä **Vuokraajan järjestelmänvalvojan asetuksista** PowerBI.comissa. Tällaisissa tapauksessa Power BI:n Visualisoinnit-ruudussa ei enää näytetä ArcGIS Maps for Power BI -kuvaketta.
-
-![](media/power-bi-visualization-arcgis/power-bi-arcgis-admin-portal2.png)
-
-Power BI Desktopin **IT-järjestelmänvalvojan asetukset** tukevat ArcGIS Maps for Power BI:n poistamista käytöstä kaikilla organisaation tietokoneilla **ryhmäkäytäntöjen** avulla.
+### <a name="it-administrator-options"></a>IT-järjestelmänvalvojan asetukset
+Power BI Desktop tukee **ryhmäkäytännön** käyttämistä ArcGIS Maps for Power BI:n poistamiseen käytöstä kaikissa organisaation tietokoneissa.
 
 <table>
 <tr><th>Määrite</th><th>Arvo</th>

@@ -11,18 +11,20 @@ ms.topic: conceptual
 ms.date: 06/24/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 857db3240385e9bf1b4e0416cc1200d1a029d73e
-ms.sourcegitcommit: cc4b18d55b2dca8fdb1bef00f53a0a808c41432a
+ms.openlocfilehash: 65410dc15600307ba11a2c48db1689be5a458383
+ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68867203"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71193180"
 ---
 # <a name="tables-in-power-bi-reports-and-dashboards"></a>Taulukot Power BI -raporteissa ja raporttinäkymissä
 
+[!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
+
 Taulukko on ruudukko, joka sisältää tietoja järjestettynä loogiseen sarjaan rivejä ja sarakkeita. Se voi sisältää myös otsikkoja ja summarivin. Taulukot toimivat hyvin kvantitatiivisessa vertailussa, jossa tarkastellaan yhden luokan monia arvoja. Esimerkiksi tässä taulukossa näytetään **luokan** viisi eri mittaria.
 
-![Näyttökuva taulukosta, jossa näytetään luokan viisi eri mittaria.](media/power-bi-visualization-tables/table.png)
+![Näyttökuva taulukosta, jossa näytetään luokan viisi eri mittaria.](media/power-bi-visualization-tables/power-bi-table-grid3.png)
 
 Voit luoda taulukoita raporteissa ja ristiinkorostaa taulukon elementtejä muiden samalla raporttisivulla olevien visualisointien kanssa. Voit valita rivejä, sarakkeita ja jopa yksittäisiä soluja ristiinkorostettavaksi. Voit myös kopioida ja liittää yksittäisten ja useiden solujen valintoja muihin sovelluksiin.
 
@@ -36,25 +38,23 @@ Taulukko on hyvä vaihtoehto:
 
 * numeeristen tietojen luokiteltuun esittämiseen.
 
-## <a name="prerequisites"></a>Edellytykset
+## <a name="prerequisite"></a>Edellytys
 
-* Power BI -palvelu tai Power BI Desktop
+Tässä opetusohjelmassa käytetään [Jälleenmyyntianalyysimallin PBIX-tiedostoa](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix).
 
-* Jälleenmyyntianalyysimallin raportti
+1. Valitse valikkorivin vasemmasta yläosasta **Tiedosto** > **Avaa**
+   
+2. **Jälleenmyyntianalyysimalli PBIX-tiedoston löytäminen**
 
-## <a name="get-the-retail-analysis-sample-report"></a>Jälleenmyyntianalyysimallin raportin hankkiminen
+1. Avaa **Jälleenmyyntianalyysimallin PBIX-tiedosto** raporttinäkymässä ![Näyttökuva raporttinäkymän kuvakkeesta.](media/power-bi-visualization-kpi/power-bi-report-view.png).
 
-Näissä ohjeissa käytetään jälleenmyyntianalyysimallia. Visualisoinnin luominen edellyttää tietojoukon ja raportin muokkausoikeuksia. Kaikeksi onneksi Power BI -mallit ovat kaikki muokattavissa. Jos joku jakaa raportin kanssasi, et voi luoda visualisointeja raporteissa. Voit seurata mukana hankkimalla [jälleenmyyntianalyysimallin raportin](../sample-datasets.md).
+1. Valitse ![Näyttökuva keltaisesta välilehdestä.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) uuden sivun lisäämiseksi.
 
-Kun olet hankkinut **jälleenmyyntianalyysimallin** tietojoukon, voit aloittaa.
 
 ## <a name="create-a-table"></a>Luo taulukko
 
 Luot artikkelin alussa kuvatun taulukon, jossa esitetään myyntiarvot nimikeluokan mukaisesti.
 
-1. Valitse **Oma työtila** -kohdasta **Tietojoukot** > **Luo raportti**.
-
-    ![Näyttökuva tietojoukoista > Luo raportti.](media/power-bi-visualization-tables/power-bi-create-a-report.png)
 
 1. Valitse **Kentät**-ruudusta **Nimike** > **luokka**.
 
@@ -66,11 +66,10 @@ Luot artikkelin alussa kuvatun taulukon, jossa esitetään myyntiarvot nimikeluo
 
 1. Valitse sitten **Myynti > Tämän vuoden myynti** ja valitse kaikki kolme vaihtoehtoa: **Arvo**, **Tavoite** ja **Tila**.
 
-1. Etsi **Visualisoinnit**-ruudusta **Arvot**, ja vedä ja pudota niitä, kunnes kaavion sarakkeiden järjestys vastaa tämän sivun ensimmäistä kuvaa. **Arvot**-säilö näyttää tältä.
+1. Etsi **Visualisoinnit**-ruudusta **Arvot** ja valitse arvoja, kunnes kaavion sarakkeiden järjestys vastaa tämän sivun ensimmäistä kuvaa. Vedä arvot säilöön tarvittaessa. **Arvot**-säilö näyttää tältä.
 
     ![Arvot](media/power-bi-visualization-tables/power-bi-table2.png)
 
-1. Kiinnitä taulukko koontinäytölle valitsemalla Kiinnitä-kuvake. ![nasta](media/power-bi-visualization-tables/pbi_pintile.png) visualisoinnin oikeassa yläkulmassa.
 
 ## <a name="format-the-table"></a>Taulukon muotoileminen
 
@@ -170,10 +169,6 @@ Kopioi useampi kuin yksi solu seuraavasti:
 1. Valitse **Kopioi** > **Kopioi valinta**.
 
     ![Kopiointivalinnat](media/power-bi-visualization-tables/power-bi-copy-selection.png)
-
-    Kopio sisältää sarakkeiden ja rivien otsikot.
-
-    ![Liitä Exceliin](media/power-bi-visualization-tables/power-bi-paste-selection.png)
 
 ## <a name="adjust-the-column-width-of-a-table"></a>Taulukon sarakeleveyden muuttaminen
 

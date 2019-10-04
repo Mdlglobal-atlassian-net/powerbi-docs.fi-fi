@@ -3,20 +3,18 @@ title: Katsaus kirjanmerkkeihin Power BI -palveluraporteissa
 description: Yleiskatsaus aiheeseen Power BI:n Q&A-kyselyt luonnollisella kielellä.
 author: mihart
 manager: kvivek
-ms.reviewer: ''
-ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 05/10/2019
+ms.date: 09/22/2019
 ms.author: mihart
 LocalizationGroup: Create reports
-ms.openlocfilehash: 55fafb00135908dc4f82151b96ed04d2cf2568da
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: 0b4da978687afbafcc7f0d48b6df220b240a507f
+ms.sourcegitcommit: 3885ae11e695f875a82c212ca157e401db8337c4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "65608312"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71207622"
 ---
 # <a name="what-are-bookmarks"></a>Mitä ovat kirjanmerkit?
 Kirjanmerkit vangitsevat voimassaolevan määritetyn näkymän raporttisivusta, suodattimet, osittajat ja visualisointien tilan. Kun valitset kirjanmerkin, Power BI vie sinut takaisin kyseiseen näkymään. Kirjanmerkkejä on kahdenlaisia – itse luomiasi ja raportin *suunnittelijoiden*luomia.
@@ -26,15 +24,15 @@ Kirjanmerkeille on monia käyttötarkoituksia. Ajatellaanpa, että löydät kiin
 
 Voit myös luoda kokoelman kirjanmerkkejä ja järjestää ne haluamaasi järjestykseen. Siten voit myöhemmin käydä läpi jokaisen kirjanmerkin osana esitystä ja korostaa merkityksellisiä tietoja, jotka kertovat tarinan.  
 
-![Näytä Kirjanmerkit-ruutu valitsemalla se valintanauhasta.](media/end-user-bookmarks/power-bi-bookmarks-pane.png)
+![Näytä Kirjanmerkit-ruutu valitsemalla se valintanauhasta.](media/end-user-bookmarks/power-bi-select-bookmark.png)
 
-## <a name="using-bookmarks"></a>Kirjanmerkkien käyttäminen
-Jos haluat avata Kirjanmerkit-ruudun, valitse **Kirjanmerkit** valikkoriviltä. Jos haluat siirtyä takaisin raportin alun perin julkaistuun näkymään, valitse **Palauta oletukset**.
+## <a name="open-bookmarks"></a>Avaa kirjanmerkit
+Kun haluat avata Kirjanmerkit-ruudun, valitse valikkoriviltä **Kirjanmerkit** > **Näytä lisää kirjanmerkkejä**. Jos haluat siirtyä takaisin raportin alun perin julkaistuun näkymään, valitse **Palauta oletukset**.
 
 ### <a name="report-bookmarks"></a>Raportin kirjanmerkit
-Jos raportin *suunnittelija* on sisällyttänyt raporttiin kirjanmerkkejä, löydät ne otsikon **Raportin kirjanmerkit** alta. 
+Jos raportin *suunnittelija* on sisällyttänyt raporttiin kirjanmerkkejä, löydät ne otsikon **Raportin kirjanmerkit** alta. Tällä raporttisivulla on kaksi kirjanmerkkiä, B1 ja B2. 
 
-![Näytä Raportin kirjanmerkit.](media/end-user-bookmarks/power-bi-report-bookmark.png)
+![Näytä Raportin kirjanmerkit.](media/end-user-bookmarks/power-bi-report.png)
 
 Valitse kirjanmerkki muutettavaksi siihen raporttinäkymään. 
 
@@ -55,13 +53,13 @@ Kun luot kirjanmerkin, seuraavat elementit tallennetaan sen mukana:
 
 Määritä raporttisivu sellaiseksi kuin haluat sen näkyvän kirjanmerkissä. Kun raporttisivu ja visualisoinnit ovat sellaisessa järjestyksessä kuin haluat, lisää kirjanmerkki valitsemalla **Kirjanmerkit**-ruudusta **Lisää**. Tässä esimerkissä olemme lisänneet joitakin alue- ja päivämääräsuodattimia. 
 
-![Lisää Omat kirjanmerkit.](media/end-user-bookmarks/power-bi-add-personal.png)
+![Lisää Omat kirjanmerkit.](media/end-user-bookmarks/power-bi-bookmark-personal.png)
 
-**Power BI** luo kirjanmerkin ja antaa sille yleisen nimen tai itse syöttämäsi nimen. Kirjanmerkin voi *nimetä uudelleen*, *poistaa* tai *päivittää* valitsemalla sen nimen vieressä olevan ellipsikuvakkeen. Valitse sitten haluamasi toiminto avautuvasta valikosta.
+**Power BI** luo henkilökohtaisen kirjanmerkin ja antaa sille yleisen nimen tai itse syöttämäsi nimen. Kirjanmerkin voi *nimetä uudelleen*, *poistaa* tai *päivittää* valitsemalla sen nimen vieressä olevat kolme pistettä. Valitse sitten haluamasi toiminto avautuvasta valikosta.
 
 Kun olet lisännyt kirjanmerkin, saat sen näkyviin valitsemalla sen **Kirjanmerkit**-ruudusta. 
 
-![Lisää Omat kirjanmerkit.](media/end-user-bookmarks/power-bi-personal-bookmark.png)
+![Lisää Omat kirjanmerkit.](media/end-user-bookmarks/power-bi-bookmark-west.png)
 
 
 <!--
@@ -81,11 +79,11 @@ Jos haluat näyttää tai tarkastella kirjanmerkkejä oikeassa järjestyksessä,
 
 **Näytä**-tilassa on tiettyjä merkille pantavia ominaisuuksia:
 
-1. Kirjanmerkin nimi näkyy kankaan alareunan otsikkorivillä.
-2. Kirjanmerkin otsikkorivillä on nuolia, joilla siirtyä seuraavaan tai edelliseen kirjanmerkkiin.
-3. Voit poistua **Näytä**-tilasta valitsemalla **Kirjanmerkit**-ruudusta **Lopeta** tai **X**-kuvake kirjanmerkin otsikkoriviltä. 
+- Kirjanmerkin nimi näkyy kankaan alareunan otsikkorivillä.
+- Kirjanmerkin otsikkorivillä on nuolia, joilla siirtyä seuraavaan tai edelliseen kirjanmerkkiin.
+- Voit poistua **Näytä**-tilasta valitsemalla **Kirjanmerkit**-ruudusta **Lopeta** tai **X**-kuvake kirjanmerkin otsikkoriviltä.
 
-![Kirjanmerkkien diaesitys](media/end-user-bookmarks/power-bi-bookmark-slideshow.png)
+![Kirjanmerkkien diaesitys](media/end-user-bookmarks/power-bi-slideshow.png)
 
 Kun olet **Näytä**-tilassa, voit sulkea **Kirjanmerkit**-ruudun napsauttamalla X-kuvaketta, niin saat enemmän tilaa esitykselle. **Näytä**-tilassa kaikki visualisoinnit ovat vuorovaikutteisia ja käytettävissä ristiinkorostukseen samalla tavalla kuin muutoinkin niitä käsiteltäessä. 
 
@@ -154,7 +152,6 @@ Tähän versioon **kirjanmerkkitoiminnosta** liittyy tiettyjä rajoituksia ja hu
 
 * Useimmat mukautetut visualisoinnit toimivat yleensä hyvin kirjanmerkeissä. Jos kohtaat ongelmia kirjanmerkkien ja mukautetun visualisoinnin kanssa, ota yhteyttä kyseisen visualisoinnin tekijään ja pyydä häntä lisäämään kirjanmerkkituen visualisointiin. 
 * Jos lisäät visualisoinnin raporttisivulle kirjanmerkin luomisen jälkeen, visualisointi näkyy oletustilassaan. Tämä tarkoittaa myös sitä, että jos lisäät osittajan sivulle, jolle on aiemmin luotu kirjanmerkkejä, osittaja toimii oletustilassaan.
-* Visualisointien siirtely kirjanmerkin luomisen jälkeen näkyy kirjanmerkissä. 
 * Yleisesti ottaen kirjanmerkkisi eivät muutu, jos raportin *suunnittelija* päivittää tai julkaisee uudestaan raportin. Jos suunnittelija kuitenkin tekee suuria muutoksia raporttiin, esimerkiksi poistaa jonkin kirjanmerkin käyttämät kentät, saat virheilmoituksen seuraavan kerran kun yrität avata kirjanmerkkiä. 
 
 <!--

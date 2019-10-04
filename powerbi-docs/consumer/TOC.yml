@@ -102,6 +102,8 @@
               href: end-user-app-view.md
             - name: Palveluihin yhdistäminen
               href: end-user-connect-to-services.md
+            - name: Hanki mallisovellus AppSourcesta
+              href: end-user-app-marketing.md
         - name: Kysymysten kysyminen tiedoistasi
           items:
             - name: 'Q&A Power BI:ssä'

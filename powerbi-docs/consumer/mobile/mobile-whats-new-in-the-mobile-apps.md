@@ -9,12 +9,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 04/08/2019
 ms.author: mshenhav
-ms.openlocfilehash: e74bdacc1b8ee40ec6628337e9e78528e8fdee29
-ms.sourcegitcommit: 4222ebad1a3a32d8040f6a615a0b7f173d7869d0
+ms.openlocfilehash: fe8f21bbbd0886b8ff4046f744884e53f8822912
+ms.sourcegitcommit: e2c5d4561455c3a4806ace85defbc72e4d7573b4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "71164516"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71327749"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Power BI -mobiilisovellusten uudet ominaisuudet
 Lisätietoja aiheeseen liittyvistä uusista ominaisuuksista:
@@ -22,6 +22,13 @@ Lisätietoja aiheeseen liittyvistä uusista ominaisuuksista:
 * [Power BI -tiimin mobiilisovelluksia käsittelevä blogi](https://powerbi.microsoft.com/blog/tag/mobile/)
 * [Power BI Desktopin uudet ominaisuudet](../../desktop-latest-update.md)  
 * [Power BI -palvelun uudet ominaisuudet](../../service-whats-new.md)  
+
+## <a name="september-2019"></a>Syyskuu 2019
+
+### <a name="support-for-custom-app-navigation-ios-and-android"></a>Mukautetun sovelluksen siirtymisen tuki (iOS ja Android)
+
+Olemme lisänneet tuen mukautetun sovelluksen siirtymiselle. Kun nyt avaat sovelluksen Power BI -mobiilisovelluksessa, sovelluksen tekijän rakentama mukautettu siirtymiskokemus on käytettävissä. Sovelluksen siirtyminen voidaan järjestää sisällön mukaan, ja se voi sisältää uusia kohteita, kuten linkkejä ja tiivistettäviä osia.
+Lue lisää [mukautetusta siirtymisestä](https://powerbi.microsoft.com/en-us/blog/designing-custom-navigation-for-power-bi-apps-is-now-available/).
 
 ## <a name="august-2019"></a>Elokuu 2019
 

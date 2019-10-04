@@ -7,21 +7,21 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 09/06/2019
+ms.date: 09/26/2019
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: e77e61d00ac555c907a6d87ab0ffdeb8e21a5bd8
-ms.sourcegitcommit: 226b47f64e6749061cd54bf8d4436f7deaed7691
+ms.openlocfilehash: bf69b2e4c25597eba980137e5ef8b2feb2f4d103
+ms.sourcegitcommit: e2c5d4561455c3a4806ace85defbc72e4d7573b4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/09/2019
-ms.locfileid: "70841298"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71327709"
 ---
 # <a name="storage-mode-in-power-bi-desktop"></a>Tallennustilan tila Power BI Desktopissa
 
 Microsoft Power BI Desktopissa voit määrittää taulukoiden *tallennustilan tilan*. *Tallennustilan tilan* avulla voit määrittää, tallentaako Power BI Desktop taulukkotietoja välimuistiin raportteja varten. 
 
-![Tallennustilan tila Power BI Desktopissa](media/desktop-storage-mode/storage-mode_01.png)
+![Tallennustilan tila Power BI Desktopissa](media/desktop-storage-mode/storage-mode-01.png)
 
 Tallennustilan tilan määrittäminen tarjoaa monia etuja. Voit määrittää mallissasi kunkin taulukon tallennustilan tilan erikseen. Tämä toiminto ottaa käyttöön yhden tietojoukon, joka tarjoaa seuraavat edut:
 
@@ -48,13 +48,10 @@ Power BI Desktopin Tallennustilan tila -asetus on yksi kolmesta toisiinsa liitty
 
 ## <a name="use-the-storage-mode-property"></a>Tallennustilan tila -ominaisuuden käyttäminen
 
-Tallennustilan tila on ominaisuus, jonka voit määrittää mallisi kullekin taulukolle. Voit määrittää tallennustilan tilan napsauttamalla **Kentät**-ruudussa hiiren kakkospainikkeella taulukkoa, jonka ominaisuuksia haluat määrittää, ja valitsemalla sitten **Ominaisuudet**.
+Tallennustilan tila on ominaisuus, jonka voit määrittää mallisi kullekin taulukolle. Kun haluat määrittää tallennuksen tilan tai tarkastella sen nykyistä asetusta, valitse **Malli**-näkymä, valitse taulukko, jonka ominaisuuksia haluat tarkastella tai asettaa, valitse **Ominaisuudet**-ruutu, laajenna **Lisäasetukset**-osa ja laajenna avattava **Tallennuksen tila** -valikko.
 
-![Ominaisuudet-komento pikavalikossa](media/desktop-storage-mode/storage-mode_02.png)
+![Ominaisuudet-komento pikavalikossa](media/desktop-storage-mode/storage-mode-02.png)
 
-Nykyinen ominaisuus näkyy **Kentän ominaisuudet** -ruudun avattavassa **Tallennustilan tila** -luettelossa. Siellä voit tarkastella nykyistä tallennustilan tilaa tai muokata sitä.
-
-![Taulukon tallennustilan tilan määrittäminen](media/desktop-storage-mode/storage-mode_03.png)
 
 Tallennustilan tilalle on kolme arvoa:
 
@@ -77,11 +74,11 @@ Kaksoistaulukkoja koskevat samat toiminnalliset rajoitukset kuin DirectQuery-tau
 ## <a name="propagation-of-dual"></a>Välitys- tai kaksoistaulukko
 Tutustu seuraavaan yksinkertaiseen malliin, jossa kaikki taulukot ovat yhdestä tuontia ja DirectQuerya tukevasta lähteestä.
 
-![Esimerkki tallennustilan tilan yhteysnäkymästä](media/desktop-storage-mode/storage-mode_04.png)
+![Esimerkki tallennustilan tilan yhteysnäkymästä](media/desktop-storage-mode/storage-mode-04.png)
 
 Oletetaan, että kaikki taulukot tässä mallissa ovat DirectQuery-taulukoita. Jos vaihdamme *Kyselyvastaus*-taulukon **tallennustilan tilaksi** Tuonti, näyttöön tulee seuraava varoitusikkuna:
 
-![Tallennustilan tilan varoitusikkuna](media/desktop-storage-mode/storage-mode_05.png)
+![Tallennustilan tilan varoitusikkuna](media/desktop-storage-mode/storage-mode-05.png)
 
 Dimensiotaulukot (*Asiakas*, *Maantiede* ja *Päivämäärä*) voidaan määrittää arvoon **Kaksoistaulukko** tietojoukon heikkojen suhteiden määrän pienentämiseksi sekä suorituskyvyn parantamiseksi. Heikot suhteet sisältävät yleensä vähintään yhden DirectQuery-taulukon, jossa liittymislogiikkaa ei voida työntää lähdejärjestelmiin. **Kaksoistaulukot** voivat toimia joko DirectQuery- tai Tuonti-taulukkona, mikä auttaa välttämään tämän.
 
@@ -123,15 +120,15 @@ Kyselyt, jotka viittaavat **kaksoistilassa** oleviin taulukoihin, palauttavat ti
 
 Edellisessä esimerkissä seuraava kysely viittaa vain sarakkeeseen *Päivämäärä*-taulukossa, joka on **kaksoistilassa**. Tämän vuoksi kyselyn tulisi kohdistua välimuistiin.
 
-![Tallennustilan diagnostiikan komentosarja](media/desktop-storage-mode/storage-mode_06.png)
+![Tallennustilan diagnostiikan komentosarja](media/desktop-storage-mode/storage-mode-06.png)
 
 Seuraava kysely viittaa vain sarakkeeseen *Myynti*-taulukossa, joka on **DirectQuery**-tilassa. Tämän vuoksi sen *ei* tulisi kohdistua välimuistiin.
 
-![Tallennustilan diagnostiikan komentosarja](media/desktop-storage-mode/storage-mode_07.png)
+![Tallennustilan diagnostiikan komentosarja](media/desktop-storage-mode/storage-mode-07.png)
 
 Seuraava kysely on mielenkiintoinen, koska se yhdistää molemmat sarakkeet. Tämä kysely ei kohdistu välimuistiin. Sen voisi olettaa noutavan *Kalenterivuosi*-arvoja välimuistista ja *Myyntisumma*-arvoja lähteestä sekä yhdistävän nämä tulokset. Tämä olisi kuitenkin vähemmän tehokasta kuin SUM/GROUP BY -toiminnon lähettäminen lähdejärjestelmään. Jos toiminto lähetetään lähteeseen, palautettavien rivien määrä on todennäköisesti paljon pienempi. 
 
-![Tallennustilan diagnostiikan komentosarja](media/desktop-storage-mode/storage-mode_08.png)
+![Tallennustilan diagnostiikan komentosarja](media/desktop-storage-mode/storage-mode-08.png)
 
 > [!NOTE]
 > Tämä toiminta poikkeaa [Power BI Desktopin moni-moneen-yhteyksistä](desktop-many-to-many-relationships.md), kun välimuistiin tallennettuja ja tallentamattomia taulukoita yhdistellään.
@@ -145,7 +142,7 @@ Tallennustilan *kaksoistilassa* on kyse suorituskyvyn optimoinnista. Sitä tulis
 ## <a name="data-view"></a>Tietonäkymä
 Jos tietojoukon vähintään yhden taulukon tallennustila on määritetty joko **tuonti**- tai **kaksoistilaan**, näet **Tietonäkymä**-välilehden.
 
-![Tietonäkymä Power BI Desktopissa](media/desktop-storage-mode/storage-mode_09.png)
+![Tietonäkymä Power BI Desktopissa](media/desktop-storage-mode/storage-mode-03.png)
 
 **Tietonäkymässä** valitut **kaksois**- ja **tuontitaulukot** näyttävät välimuistiin tallennettuja tietoja. DirectQuery-taulukot eivät näytä tietoja, ja näkyviin tulee ilmoitus, jonka mukaan DirectQuery-taulukoita ei voi näyttää.
 

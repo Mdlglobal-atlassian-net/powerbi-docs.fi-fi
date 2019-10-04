@@ -8,17 +8,17 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 05/22/2019
-ms.openlocfilehash: 364795a25aaffb92afc4a7148c9bf6b3f88d2ac8
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.date: 09/26/2019
+ms.openlocfilehash: 26dde078ce0b237779660c44b2843a645e4d1a47
+ms.sourcegitcommit: e2c5d4561455c3a4806ace85defbc72e4d7573b4
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66187310"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71325559"
 ---
 # <a name="whats-new-in-power-bi-report-server"></a>Power BI -raporttipalvelinten uudet ominaisuudet
 
-Lue lisätietoja uusista Power BI-raporttipalvelimen ja Power BI-Raporttipalvelimelle optimoitu Power BI Desktop. Tämä artikkeli käsittelee tärkeimpiä ominaisuuksia, ja sitä päivitetään uusien julkaisujen myötä.
+Tutustu Power BI -raporttipalvelimen ja Power BI -raporttipalvelimeen optimoidun Power BI Desktopin uusiin ominaisuuksiin. Tämä artikkeli käsittelee tärkeimpiä ominaisuuksia, ja sitä päivitetään jokaisen uuden julkaisun myötä.
 
 Lisätietoja Power BI:hin liittyvistä uusista ominaisuuksista:
 
@@ -26,56 +26,111 @@ Lisätietoja Power BI:hin liittyvistä uusista ominaisuuksista:
 * [Power BI Desktopin uudet ominaisuudet](../desktop-latest-update.md)
 * [Power BI -mobiilisovellusten uudet ominaisuudet](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)
 
-## <a name="may-2019-power-bi-desktop-for-power-bi-report-server"></a>Toukokuuta 2019: Power BI Desktop Power BI-raporttipalvelimeen
+## <a name="september-2019"></a>Syyskuu 2019
 
-Katso [Power BI-raporttipalvelimen toukokuun 2019](https://powerbi.microsoft.com/blog/power-bi-report-server-update-may-2019/) blogikirjoitus, johon Lisätietoja uusista ominaisuuksista.
+[Power BI -raporttipalvelimen syyskuun 2019](https://powerbi.microsoft.com/blog/power-bi-report-server-september-2019-feature-summary/) blogikirjoituksessa on lisätietoja kaikista uusista ominaisuuksista.
 
-Seuraavassa on joitakin julkaisemisen kohokohdat:
+Power BI -raporttipalvelimen syyskuun 2019 päivityksessä on paljon Power BI -raporttiominaisuuksia. Seuraavassa on joitakin kohokohtia:
 
-### <a name="performance-analyzer"></a>Suorituskyvyn analysointi 
+- **Visuaalisen tason suodattimet osittajille** Voit lisätä osittajiin visuaalisen tason suodattimen. Se toimii samalla tavalla kuin minkä tahansa muun visuaalisen tason suodatin, eli suodattaa vain itse osittajan, ei muita visualisointeja. Tämä suodatin on hyödyllinen tyhjien kohteiden suodattamisessa pois tai mittaussuodattimien käytössä.
+- **Taulukoiden ja matriisien kuvakejoukot** KPI-kuvakkeiden avulla voit määrittää säännöt, jotka koskevat taulukon ja matriisin eri kuvakesarjojen näyttämistä samaan tapaan kuin Excelin kuvakejoukoissa.
+- **Visualisointien ryhmittely** Nyt voit ryhmitellä visualisoinnit, muodot, tekstiruudut, kuvat ja painikkeet yhteen raporttisivulla samalla tavalla kuin PowerPointissa. Kun ryhmität objekteja yhteen, voit siirtää niitä kaikkia ja muuttaa niiden kaikkien kokoa samanaikaisesti. Ryhmittely helpottaa työskentelyä sellaisissa raporteissa, joissa on useita objekteja kerroksittain jokaisella sivulla.
+- **Uudet oletusteemat** Raporteissa käytettävissä olevat teemat on päivitetty ja uusien raporttien oletusteema vaihdettu, jotta ne ovat yhdenmukaisia uusien teemojen JSON-asetusten kanssa. Uusi oletusteema vastaa entistä paremmin Microsoftin suunnittelukieltä ja visualisointien parhaita suunnittelukäytäntöjä. 
+- **Päivitetty ruuturakenne** Käyttöliittymä on päivitetty suurelta osin. Kaikkien ruutujen, alatunnisteen ja näkymävalitsimen värit on päivitetty vaaleammiksi, välistykset on päivitetty ja uuden kuvakkeet on otettu käyttöön. Uusi rakenne on koko käyttöliittymän päivittämisen ensimmäinen vaihe.
 
-Jos raportti suoritetaan odotettua hitaammin, kokeile Power BI Desktop suorituskyvyn-analysoiminen. Kun se käynnistetään, se luo lokitiedoston tietoja kestää raportin jokainen toiminto. Lue lisää [suorituskyvyn analysoiminen](../desktop-performance-analyzer.md).
-
-### <a name="new-modeling-view"></a>Mallinnus uusi näkymä
-
-Uusi Power BI Desktop-mallinnus-näkymä voit tarkastella ja käsitellä monimuotoisiin tietojoukkoihin, jotka sisältävät useita taulukoita. Kohokohdat sisältävät useita kaavion asetteluja ja joukkomäärittää sarakkeet, mittayksiköt ja taulukoiden muokkaamista. Lue lisää [mallinnus näkymän](../desktop-modeling-view.md).
-
-### <a name="accessible-visual-interaction"></a>Käytettävissä visuaalinen vuorovaikutus
-
-Voit nyt käyttää arvopisteitä monia valmiita visualisointeja näppäimistöllä. Lue lisää [Power BI-raporttien helppokäyttöisyys](../desktop-accessibility.md).
-
-### <a name="conditional-formatting-titles-and-web-url-actions"></a>Ehdollinen muotoilu otsikot ja web URL-osoite toiminnot
-
-Power BI-raportit ovat vuorovaikutteisia. Järkevää, että otsikot raportissa on dynaaminen vastaamaan raportin nykyisen tilan. Saman lausekkeen sidotut muotoilun avulla voit tehdä painikkeita, muotojen ja kuvien URL-osoitteet dynaamisen. Lue lisää [lausekepohjaisia otsikot](../desktop-conditional-format-visual-titles.md).
-
-### <a name="cross-highlight-by-axis-labels"></a>Ristiinkorostaa akselinimet mukaan
-
-Valitse luokka akselinimet haluaa ristiinkorostaa sivun muita elementtejä visualisoinnin vain valitaan arvopisteet visualisointiin. Lue lisää [ristiinkorostus](../power-bi-reports-filters-and-highlighting.md#ad-hoc-highlighting).
-
-### <a name="all-the-new-features"></a>Kaikki uudet ominaisuudet
-
-Tässä on luettelo uusia ominaisuuksia:
+Seuraavassa on täydellinen ominaisuusluettelo. 
 
 ### <a name="reporting"></a>Raportointi
 
-- Ristiinkorostaa yksittäisen kohtaa viiva 
-- Automaattinen rivitys otsikot 
-- Päivitä suodattavat ¬ oletusarvon visuaalinen vuorovaikutus
-- Visuaalisten reunusten pyöristettyjä 
-- Valitse yksittäinen osittaja  
-- Bing maps lämmön kartta-tuki  
-- Ristiinkorostaa akselinimet mukaan  
-- Työkaluvihje oletusmuotoilu  
-- Staattisen web URL-osoite, joka on tuki painikkeita, muotoja ja kuvia  
+- Päivitetty ruutujen rakenne
+- Sektorien visuaalisen tason suodattimet
+- Suorituskyvyn analysointiruudun järjestely
+- Visuaalisen otsikon työkaluvihjeet
+- Taulukkojen ja matriisien selitteiden täydellinen mukauttaminen
+- Hierarkianosittajan synkronoinnin tuki
+- Yhdenmukaiset kirjasinkoot visualisoinneissa
+- Kuvakejoukot taulukoille ja matriiseille
+- Prosenttituki ehdolliselle muotoilulle sääntöjen avulla
+- Uusi suodatusruutu nyt yleisesti saatavilla
+- Tietojen värien tuki käytettäessä PlayAxis-akselia pistekaavioissa
+- Suorituskyvyn parannuksia käytettäessä suhteellista päivämäärää ja avattavia osittajia
+- Visualisointien ryhmittely
+- Teemojen väri- ja tekstiluokat
+- Uudet oletusteemat
+
+### <a name="analytics"></a>Analytiikka
+
+- Mukautetut muotoilumerkkijonot
+- Muotoiluasetusten ehdollisen muotoilun päivityksiä
+
+    - Visualisointien tausta ja otsikkovärit
+    - Korttien värit
+    - Mittarin täyttö ja värit
+    - Vaihtoehtoinen teksti
+    - Reunan väri
+
+- Ehdollisen muotoilun varoitukset
+- Parannuksia läpiporautumisen hakutuloksiin
+- Uudet DAX-lausekkeet: REMOVEFILTERS ja CONVERT
+- Uusi DAX-vertailuoperaattori: ==
+
+### <a name="data-preparation"></a>Tietojen valmistelu
+
+- M Intellisense -integroinnin parannuksia
+- Uusi muunnos: Jaa sarake osiin sijaintien mukaan
+- Kopioiminen leikepöydälle tietojen profiloinnista
+
+
+## <a name="may-2019-power-bi-desktop-for-power-bi-report-server"></a>Toukokuu 2019: Power BI Desktop Power BI -raporttipalvelimelle
+
+[Power BI -raporttipalvelimen toukokuun 2019](https://powerbi.microsoft.com/blog/power-bi-report-server-update-may-2019/) blogikirjoituksessa on lisätietoja kaikista uusista ominaisuuksista.
+
+Seuraavassa on joitakin version kohokohtia:
+
+### <a name="performance-analyzer"></a>Suorituskyvyn analysointi 
+
+Jos raporttisi toimii oletettua hitaammin, kokeile Power BI Desktopin suorituskyvyn analysointia. Kun käynnistät sen, se luo loki tiedoston, joka sisältää tiedot kaikista raportissa käyttämistäsi toiminnoista. Lue lisätietoja [suorituskyvyn analysoinnista](../desktop-performance-analyzer.md).
+
+### <a name="new-modeling-view"></a>Uusi mallinnusnäkymä
+
+Power BI Desktopin uuden Mallintamisnäkymän avulla voit tarkastella ja käsitellä monimuotoisia tietojoukkoja, jotka sisältävät useita taulukoita. Kohokohtia ovat useita kaavioita sisältävät asettelut ja sarakkeiden, mittarien ja taulukoiden joukkomuokkaus. Lue lisätietoja [mallinnusnäkymästä](../desktop-modeling-view.md).
+
+### <a name="accessible-visual-interaction"></a>Helppokäyttöinen visuaalinen vuorovaikutus
+
+Voit nyt käyttää arvopisteitä monissa valmiissa visualisoinneissa näppäimistöllä siirtymisen avulla. Lue lisätietoja [Power BI -raporttien helppokäyttöisyydestä](../desktop-accessibility.md).
+
+### <a name="conditional-formatting-titles-and-web-url-actions"></a>Otsikoiden ehdollinen muotoilu ja verkko-URL-toiminnot
+
+Power BI -raportit ovat vuorovaikutteisia. On järkevää, että raportin otsikot ovat dynaamisia, jotta ne vastaavat raportin kulloistakin tilaa. Voit määrittää painikkeiden, muotojen ja kuvien URL-osoitteet dynaamisiksi saman lausekkeeseen sidotun muotoilun avulla. Lue lisätietoja [lausekepohjaisista otsikoista](../desktop-conditional-format-visual-titles.md).
+
+### <a name="cross-highlight-by-axis-labels"></a>Ristiinkorostus akseleiden nimien mukaan
+
+Jos haluat ristiinkorostaa sivun muita elementtejä, voit valita visualisoinnin akselin luokkaotsikoita samalla tavalla kuin visualisoinnin arvopisteitä. Lue lisätietoja [ristiinkorostamisesta](../power-bi-reports-filters-and-highlighting.md#ad-hoc-highlighting).
+
+### <a name="all-the-new-features"></a>Kaikki uudet ominaisuudet
+
+Seuraavassa on luettelo kaikista uusista ominaisuuksista:
+
+### <a name="reporting"></a>Raportointi
+
+- Ristiinkorostus yhdessä pisteessä viivakaavioissa 
+- Automaattinen rivitys otsikoissa 
+- Oletusarvoisen visuaalisen vuorovaikutuksen päivitys ristiinsuodatusta varten
+- Visuaalisten reunusten pyöristetyt kulmat 
+- Yksittäinen valinta -osittaja  
+- Lämpökartta-tuki Bing-kartoille  
+- Ristiinkorostus akseleiden nimien mukaan  
+- Työkaluvihjeen oletusmuotoilu  
+- Staattisten URL-verkko-osoitteiden tuki painikkeille, muodoille ja kuville  
 - Sivun tasausasetukset   
-- Valinta-ruudun parannuksia  
-- Käytettävissä visuaalinen vuorovaikutus  
-- Ehdollinen muotoilu visualisoinnin otsikot  
-- Ehdollinen muotoilu web URL-osoite toimintoja painikkeiden, muotoja ja kuvia
-- Suorituskyvyn analyzer ruutu
-- Taulukkojen ja matriisien näppäimistöllä
-- Rivin tietojen selitteen sijainti hallinta
-- Suorituskykyilmaisimen visuaaliset ilmaisimen tekstiohjausobjekti
+- Valintaruudun parannuksia  
+- Helppokäyttöinen visuaalinen vuorovaikutus  
+- Visualisoinnin otsikon ehdollinen muotoilu  
+- Painikkeiden, muotojen ja kuvien URL-osoitetoimintojen ehdollinen muotoilu
+- Suorituskyvyn analysointiruutu
+- Näppäimistöllä siirtyminen taulukoissa ja matriiseissa
+- Rivitietojen selitteen sijainnin ohjausobjektin
+- Suorituskykyilmaisimen visuaalisen ilmaisimen tekstikoon ohjausobjekti
 
 ### <a name="analytics"></a>Analytiikka
 
@@ -83,20 +138,20 @@ Tässä on luettelo uusia ominaisuuksia:
 
 ### <a name="modeling"></a>Mallintaminen
 
-- Mallinnus uusi näkymä on nyt yleisesti saatavilla
+- Uusi mallinnusnäkymä nyt yleisesti saatavilla
 - Uusia DAX-funktioita
-- Päivitä ALLSELECTED DAX-funktio
-- Poista automaattinen-päivämäärätaulukot uusien raporttien käytöstä
+- Päivitä ALLSELECTED DAX -funktioon
+- Poista käytöstä automaattiset päivämäärätaulukot uusissa raporteissa
 
-## <a name="may-2019-power-bi-report-server"></a>Toukokuuta 2019: Power BI -raporttipalvelin
+## <a name="may-2019-power-bi-report-server"></a>Toukokuu 2019: Power BI -raporttipalvelin
 
-### <a name="support-for-trusted-visuals"></a>Luotettu visualisointien tuki
+### <a name="support-for-trusted-visuals"></a>Luotettujen visualisointien tuki
 
-Olemme lisänneet tuen luotettu visualisointien Power BI-raporttipalvelimeen. Tällä hetkellä tuemme Mapbox ja PowerOn. ESRI Visio ja Powerappsin ei tueta tässä versiossa.)
+Power BI -raporttipalvelimeen on lisätty luotettujen visualisointien tuki. Tällä hetkellä tuemme Mapboxia ja PowerOn-visualisointeja. ESRI, Visio ja PowerApps eivät ole tuettuja tässä versiossa.)
 
-### <a name="improved-security-features"></a>Parannettu suojauksen ominaisuudet
+### <a name="improved-security-features"></a>Parannetut suojausominaisuudet
 
-**RestrictedResourceMimeTypeForUpload**, mitkä järjestelmänvalvojat voivat käyttää määrittämään kielletyn mime-tyypit, kuten teksti ja html pilkuin eroteltu luettelo.
+**RestrictedResourceMimeTypeForUpload**, jonka avulla järjestelmänvalvojat voivat määrittää pilkuin erotellun luettelon kielletyistä mime-tyypeistä, kuten text/html.
 
 ## <a name="january-2019"></a>Tammikuu 2019
 

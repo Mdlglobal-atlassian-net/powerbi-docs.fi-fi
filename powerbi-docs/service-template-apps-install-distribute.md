@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 06/10/2019
+ms.date: 09/14/2019
 ms.author: tebercov
-ms.openlocfilehash: 158345c44f8801a98e19dcd9b4c7dde14aa6126b
-ms.sourcegitcommit: 8c52b3256f9c1b8e344f22c1867e56e078c6a87c
+ms.openlocfilehash: 660fd7c623e8a195f937a3a2b468f758986411e1
+ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67264517"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71195278"
 ---
 # <a name="install-and-distribute-template-apps-in-your-organization---power-bi"></a>Mallisovellusten asentaminen ja jakaminen organisaatiossa - Power BI
 
@@ -82,7 +82,7 @@ Valitse selaimessa tämä linkki, niin AppSource avautuu ja Power BI -sovellukse
    >[!NOTE]
    >Jotta voit asentaa mallisovelluksia, joita ei ole AppSourcessa, sinun on pyydettävä käyttöoikeudet järjestelmänvalvojaltasi. Lisätietoja on Power BI:n [hallintaportaalin kohdassa Mallisovelluksen asetukset](service-admin-portal.md#template-apps-settings).
 
-## <a name="update-and-distribute-the-app"></a>Sovelluksen päivittäminen ja jakaminen
+## <a name="customize-and-publish-the-app"></a>Sovelluksen mukauttaminen ja julkaiseminen
 
 Kun olet päivittänyt sovelluksen organisaatiotasi varten, voit julkaista sen. Vaiheet ovat samat kuin mitä tahansa sovellusta julkaistaessa.
 
@@ -94,7 +94,7 @@ Kun olet päivittänyt sovelluksen organisaatiotasi varten, voit julkaista sen. 
 
    ![Määritä sovelluksen kuvaus ja väri](media/service-template-apps-install-distribute/power-bi-install-app-details.png)
 
-3. **Sisältö**-kohdassa voit valita aloitussivuksi joko koontinäytön tai raportin.
+3. **Siirtyminen**-kohdassa voit käyttää voit käyttää sovelluksessa uutta siirtymisen muodostinta tai valita aloitussivua varten koontinäytön tai raportin. Lisätietoja on kohdassa [Suunnittele siirtymistoiminnot](service-create-distribute-apps.md#design-the-navigation-experience).
 
    ![Määritä sovelluksen aloitussivu](media/service-template-apps-install-distribute/power-bi-install-app-content.png)
 
@@ -106,14 +106,31 @@ Kun olet päivittänyt sovelluksen organisaatiotasi varten, voit julkaista sen. 
 
 6. Kun sovellus on julkaistu, voit kopioida linkin ja jakaa sen käyttäjille, joille olet antanut käyttöoikeudet. Jos olet jakanut linkin käyttäjille, hekin näkevät sovelluksen AppSourcen **Oma organisaatio** -välilehdellä.
 
-## <a name="next-steps"></a>Seuraavat vaiheet 
+## <a name="update-a-template-app"></a>Mallisovelluksen päivittäminen
+
+Mallisovellusten tekijät voivat julkaista mallisovellustensa uudet versiot AppSourcen tai suoran linkin kautta. Kun he tekevät tämän, voit päivittää mallisovelluksen, kun asennat sovelluksen saman tai uuden version uudelleen.
+
+  >[!NOTE]
+  >Uuden version asentaminen korvaa raportteihin ja koontinäyttöihin tekemäsi muutokset. Jos haluat säilyttää päivitetyt raporttisi ja koontinäyttösi, voit tallentaa ne eri nimellä tai eri sijaintiin ennen asentamista.
+
+- **Korvaa olemassa oleva versio:** Korvaa olemassa olevan työtilan mallisovelluksen päivitetyllä versiolla.
+
+   ![Mallisovelluksen päivittäminen](media/service-template-apps-install-distribute/power-bi-update-app-overwrite.png)
+
+- **Asenna uuteen työtilaan:** Asentaa työtilan ja sovelluksen uuden version, joka on määritettävä uudelleen
+
+### <a name="overwrite-behavior"></a>Korvaamisen toiminta
+
+* Korvaaminen päivittää raportit, koontinäytöt ja *työtilassa* olevan tietojoukon, ei sovellusta. Korvaaminen ei muuta sovelluksen siirtymistä, asennusta ja käyttöoikeutta.
+* Kun olet päivittänyt työtilan, sinun on *päivitettävä sovellus*, jotta muutokset otetaan käyttöön työtilasta organisaation sovellukseen.
+* Korvaaminen säilyttää määritetyt parametrit ja todentamisen. Päivityksen jälkeen automaattinen tietojoukon päivitys alkaa. Sinä aikana organisaation sovellus, raportit ja koontinäytöt esittävät *mallitietojen* käyttökokemuksen.
+  ![Mallitiedot](media/service-template-apps-install-distribute/power-bi-sample-data.png)
+* Korvaaminen esittää aina mallitiedot, kunnes päivitys on valmis. Jos malli sovelluksen tekijä on tehnyt muutoksia tietojoukkoon tai parametreihin, työtilan ja sovelluksen käyttäjät voivat edelleen tarkastella *mallitietojen* käyttökokemusta.
+* Korvaaminen ei koskaan poista *uusia* raportteja eikä koontinäyttöjä, jotka olet lisännyt työtilaan. Se korvaa alkuperäiset raportit ja koontinäytöt ja alkuperäisen tekijän tekemät muutokset.
+
+>[!IMPORTANT]
+>Muista [päivittää sovellus](#customize-and-publish-the-app) korvaamisen jälkeen, jotta muutokset tulevat voimaan organisaation sovelluksen käyttäjien raporteissa ja koontinäytössä.
+
+## <a name="next-steps"></a>Seuraavat vaiheet
 
 [Työtilojen luominen työtovereiden kanssa Power BI:ssä](service-create-workspaces.md)
-
-
-
-
-
-￼ 
-
- 

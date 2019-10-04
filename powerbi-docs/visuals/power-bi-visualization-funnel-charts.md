@@ -11,14 +11,17 @@ ms.topic: conceptual
 ms.date: 06/12/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: b12b2035d7686667535dfdddba42b4b8ca014d96
-ms.sourcegitcommit: 4ae1257c5d7b33aa2fafd91caf8b353a985c6771
+ms.openlocfilehash: ac9ffa4d1186a8ca6d4e2d55da4311bbce55903e
+ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "67161110"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71194723"
 ---
 # <a name="funnel-charts"></a>Suppilokaavio
+
+[!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
+
 Suppilokaavion avulla voit visualisoida lineaarisen prosessin, jossa on peräkkäisiä, toisiinsa liittyviä vaiheita. Esimerkiksi myynnistä voi tehdä suppilokaavion, jossa seurataan asiakkuuksien eri vaiheita: liidi \> hyväksytty liidi \> prospekti \> sopimus \> suljettu.  Suppilon muoto välittää yhdellä silmäyksellä tarkastelemasi prosessin kunnon.
 
 Suppilon kukin vaihe edustaa prosenttiosuutta kokonaismäärästä. Siten useimmissa tapauksissa suppilokaaviosta tulee suppilon muotoinen – ensimmäinen vaihe on kaikkein suurin ja kukin seuraava vaihe on pienempi kuin sitä edeltänyt vaihe.  Myös päärynänmuotoisista suppilokaavioista on hyötyä: sen avulla voi tunnistaa ongelman prosessissa.  Tyypillisesti kuitenkin ensimmäinen vaihe, ”sisäänotto”, on kaikkein suurin.
@@ -39,11 +42,27 @@ Suppilokaavio on hyvä vaihtoehto:
 ## <a name="working-with-funnel-charts"></a>Suppilokaavioiden avulla työskenteleminen
 Suppilokaavioissa on seuraavia ominaisuuksia:
 
-* Suppilokaavioita voi kiinnittää raporttisivulle raporteista ja Q&A:sta.
 * Suppilokaavioita voi lajitella.
 * Suppilokaaviot tukevat kerrannaisia.
 * Suppilokaavioihin voi tehdä samalla raporttisivulla olevien muiden visualisointien mukaan korostuksia ja ristiinsuodatuksia.
 * Suppilokaavioiden avulla voidaan tehdä korostuksia ja ristiinsuodatuksia muihin samalla raporttisivulla oleviin visualisointeihin.
+   > [!NOTE]
+   > Seuraavassa videossa luodaan suppilokaavio käyttämällä myynti- ja markkinointiaiheista otosta. Kokeile sitten samaa itse Mahdollisuusanalyysimallin PBIX-tiedoston avulla noudattamalla videon alapuolella olevia ohjeita
+   > 
+   > 
+## <a name="prerequisite"></a>Edellytys
+
+Tässä opetusohjelmassa käytetään [Mahdollisuusanalyysimallin PBIX-tiedostoa](http://download.microsoft.com/download/9/1/5/915ABCFA-7125-4D85-A7BD-05645BD95BD8/Opportunity%20Analysis%20Sample%20PBIX.pbix
+).
+
+1. Valitse valikkorivin vasemmasta yläosasta **Tiedosto** > **Avaa**
+   
+2. **Mahdollisuusanalyysimallin PBIX-tiedoston löytäminen**
+
+1. Avaa **Mahdollisuusanalyysimallin PBIX-tiedosto** raporttinäkymässä ![Näyttökuva raporttinäkymän kuvakkeesta.](media/power-bi-visualization-kpi/power-bi-report-view.png).
+
+1. Valitse ![Näyttökuva keltaisesta välilehdestä.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) uuden sivun lisäämiseksi.
+
 
 ## <a name="create-a-basic-funnel-chart"></a>Perusluontoisen suppilokaavion luonti
 Seuraavassa videossa luodaan suppilokaavio käyttämällä myynti- ja markkinointiaiheista otosta.
@@ -53,13 +72,13 @@ Seuraavassa videossa luodaan suppilokaavio käyttämällä myynti- ja markkinoin
 
 Nyt voit luoda oman suppilokaavion, joka esittää mahdollisuuksien määrän kussakin myyntivaiheessa.
 
-Näissä ohjeissa käytetään mahdollisuusanalyysimallia. Seuraa mukana [lataamalla malli](../sample-datasets.md) Power BI -palvelulle (app.powerbi.com) tai Power BI Desktopille.   
-
-1. Aloita tyhjältä raporttisivulta ja valitse kenttä **Myyntivaihe** \> **Myyntivaihe**. Jos käytät Power BI ‑palvelua, varmista, että avaat raportin [muokkausnäkymässä](../service-interact-with-a-report-in-editing-view.md).
+1. Aloita tyhjältä raporttisivulta ja valitse kenttä **Myyntivaihe** \> **Myyntivaihe**.
    
-    ![valitse Myyntivaihe](media/power-bi-visualization-funnel-charts/funnelselectfield_new.png)
-2. [Muuta kaavio](power-bi-report-change-visualization-type.md) suppilokaavioksi. Huomaa, että **Myyntivaihe** näkyy kohdassa **Ryhmä**. 
-3. Valitse **Kentät**-paneelista **Fakta** \> **Mahdollisuuksien määrä**.
+    ![valitse Myyntivaihe](media/power-bi-visualization-funnel-charts/funnelselectfield-new.png)
+
+1. Valitse suppilokuvake ![suppilokaaviokuvake](media/power-bi-visualization-funnel-charts/power-bi-funnel-icon.png) pylväskaavion muuntamiseksi suppilokaavioksi.
+
+2. Valitse **Kentät**-paneelista **Fakta** \> **Mahdollisuuksien määrä**.
    
     ![luo suppilokaavio](media/power-bi-visualization-funnel-charts/power-bi-funnel-2.png)
 4. Kun viet hiiren osoittimen haluamasi palkin kohdalle, esiin tulee monenlaista tietoa.
@@ -67,10 +86,10 @@ Näissä ohjeissa käytetään mahdollisuusanalyysimallia. Seuraa mukana [lataam
    * Vaiheen nimi
    * Kyseisessä vaiheessa sillä hetkellä olevien mahdollisuuksien määrä
    * Yleinen konversioaste (% liideistä) 
-   * Vaiheesta seuraavaan etenevien aste (eli poistuma-aste), joka on % edellisestä vaiheesta (tässä tapauksessa ehdotusvaiheen suhde ratkaisuvaiheeseen)
+   * Vaiheesta seuraavaan etenevien aste (kutsutaan myös poistuma-asteeksi), joka on prosenttiarvo edellisestä vaiheesta (tässä tapauksessa ehdotusvaiheen suhde ratkaisuvaiheeseen)
      
-     ![Ehdotuspalkin tiedot](media/power-bi-visualization-funnel-charts/funnelhover_new.png)
-5. [Lisää suppilo raporttisivulle koontinäyttöruutuna](../service-dashboard-tiles.md). 
+     ![Ehdotuspalkin tiedot](media/power-bi-visualization-funnel-charts/funnelhover-new.png)
+
 6. [Tallenna raportti](../service-report-save.md).
 
 ## <a name="highlighting-and-cross-filtering"></a>Korostaminen ja ristiinsuodatus
@@ -82,15 +101,6 @@ Yksittäisen palkin korostaminen suppilossa ristiinsuodattaa muut raporttisivull
    
    ![visuaalisia vuorovaikutuksia esittävä lyhyt video](media/power-bi-visualization-funnel-charts/funnelchartnoowl.gif)
 2. Jos haluat määrittää asetukset siitä, miten visualisoinnit ristiinkorostavat ja -suodattavat toisiaan, katso [visualisointien vuorovaikutukset Power BI:ssä](../service-reports-visual-interactions.md)
-
-## <a name="create-a-funnel-chart-using-qa"></a>Suppilokaavion luonti Q&A:lla
-Avaa mahdollisuusanalyysimallin koontinäyttö tai haluamasi muu koontinäyttö, johon on kiinnitetty vähintään yksi visualisointi mahdollisuusanalyysimallin tietojoukosta.  Kun kirjoitat Q&A:ssa kysymyksen, Power BI hakee vastauksia kaikista valittuun koontinäyttöön liitetyistä tietojoukoista (eli tietojoukoista, joista on kiinnitetty ruutuja kyseiseen koontinäyttöön). Lisätietoja on artikkelissa [Power BI:n peruskäsitteet](../service-basic-concepts.md).
-
-1. Ala kirjoittaa kysymystäsi mahdollisuusanalyysimallin koontinäytön Q&A-kysymyskenttään.
-   
-   ![kysymysruutu ja suppilo](media/power-bi-visualization-funnel-charts/power-bi-qna.png)
-   
-2. Muista lisätä teksti ”suppilona” (”as funnel”), jotta Power BI tietää, minkä visualisointityypin haluat.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 

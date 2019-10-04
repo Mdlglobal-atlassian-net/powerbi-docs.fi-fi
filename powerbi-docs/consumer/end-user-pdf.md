@@ -11,32 +11,32 @@ ms.topic: conceptual
 ms.date: 09/14/2019
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: 66ac187d002c1606f96694bb45a5d44ba2ad2279
-ms.sourcegitcommit: 200291eac5769549ba5c47ef3951e2f3d094426e
+ms.openlocfilehash: 0ad10789977fdb0d5d4cf5b9a4229cd6a8e2b34b
+ms.sourcegitcommit: 02042995df12cc4e4b97eb8a369e62364eb5af36
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71141294"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71256261"
 ---
 # <a name="export-reports-from-power-bi-to-pdf"></a>Raporttien vieminen Power BI:stä PDF-muotoon
-Power BI:llä voit julkaista raportin PDF-muodossa ja luoda helposti Power BI -raporttiisi perustuvan PDF-tiedoston. Kun **viet PDF-muotoon**, jokaisesta Power BI -raportin sivusta tulee yksittäinen sivu PDF-tiedostossa.
+Power BI:llä voit julkaista raportin PDF-muodossa ja luoda helposti Power BI -raporttiisi perustuvan PDF-tiedoston. Kun viet PDF-muotoon, jokaisesta Power BI -raportin sivusta tulee yksittäinen sivu PDF-tiedostossa.
 
-## <a name="how-to-export-your-power-bi-report-to-pdf"></a>Ohjeet Power BI -raportin viemiseksi PDF-muotoon
-Valitse Power BI -palvelussa raportti, joka näytetään kankaalla. Voit myös valita raportin aloitussivulta, sovelluksista tai vasemman siirtymisruudun mistä tahansa muusta säilöstä.
+## <a name="export-your-power-bi-report-to-pdf"></a>Power BI -raportin vieminen PDF-muotoon
+Valitse Power BI -palvelussa raportti, joka näytetään kankaalla. Voit myös valita raportin **Aloitus**-sivulta, **sovelluksista** tai vasemman siirtymisruudun mistä tahansa muusta säilöstä.
 
 1. Valitse valikkopalkista **Vie** > **PDF**.
 
-    ![Vie-kohdan valitseminen valikkopalkista, nuoli osoittamassa Vie PDF-muotoon -kohtaa](media/end-user-pdf/power-bi-export.png)
+    ![Valitse Vie valikkoriviltä](media/end-user-pdf/power-bi-export.png)
 
-    Näkyviin tulee ponnahdusikkuna, jossa on vaihtoehtoina **Nykyiset arvot** ja **Oletusarvot**.  **Nykyiset arvot** vie raportin nykyisessä tilassa, johon sisältyvät ne aktiiviset muutokset, joita olet tehnyt osittajan ja suodattimen arvoihin.  Useimmat käyttäjät valitsevat tämän vaihtoehdon.  Vaihtoehtoisesti voit valita **Oletusarvot**-vaihtoehdon, joka vie raportin sen alkuperäisessä tilassa (jossa *suunnittelija* on jakanut sen) eikä sisällä mitään alkuperäiseen tilaan tekemiäsi muutoksia.
+    Näkyviin tulee ponnahdusikkuna, jossa on vaihtoehtoina **Nykyiset arvot** ja **Oletusarvot**. **Nykyiset arvot** vie raportin nykyisessä tilassa, johon sisältyvät ne aktiiviset muutokset, joita olet tehnyt osittajan ja suodattimen arvoihin. Useimmat käyttäjät valitsevat tämän vaihtoehdon. Vaihtoehtoisesti voit valita **Oletusarvot**-vaihtoehdon, joka vie raportin sen alkuperäisessä tilassa (jossa *suunnittelija* on jakanut sen) eikä sisällä mitään alkuperäiseen tilaan tekemiäsi muutoksia.
     
-    Ponnahdusikkunassa on myös valintaruutu, jossa voit valita, viedäänkö raportin piilotetut välilehdet.  Valitse tämä valintaruutu, jos haluat viedä vain sellaiset raportin välilehdet, joita voit tarkastella selaimessasi.  Jos haluat viedä myös kaikki piilotetut välilehdet, voit jättää tämän valintaruudun valitsematta.  Jos valintaruutu näkyy harmaana, raportissa ei ole piilotettuja välilehtiä.  Kun olet tehnyt valintasi, jatka napsauttamalla Vie-painiketta.
+    Ponnahdusikkunassa on myös valintaruutu, jossa voit valita, viedäänkö raportin piilotetut välilehdet. Valitse tämä valintaruutu, jos haluat viedä vain sellaiset raportin välilehdet, joita voit tarkastella selaimessasi. Jos haluat viedä myös kaikki piilotetut välilehdet, voit jättää tämän valintaruudun tyhjäksi. Jos valintaruutu näkyy harmaana, raportissa ei ole piilotettuja välilehtiä. Kun olet tehnyt valintasi, jatka valitsemalla **Vie**.
     
-    Oikeassa yläkulmassa näytetään edistymispalkki. Vieminen voi kestää muutamia minuutteja, minkä aikana voit jatkaa Power BI:n käyttöä.
+    Oikeassa yläkulmassa näytetään edistymispalkki. Vieminen voi kestää joitakin minuutteja. Voi jatkaa Power BI:ssä työskentelemistä raportin viemisen aikana.
 
     ![Viennin edistymisilmoitus](media/end-user-pdf/power-bi-export-progress.png)
 
-    Kun vieminen on valmis, ilmoituspalkissa kerrotaan, että Power BI -palvelu on suorittanut viennin.
+    Kun Power BI -palvelu on suorittanut viennin, ilmoituspalkissa näkyy ilmoitus siitä.
 
 2. Tiedostosi on käytettävissä sijainnissa, jossa selain näyttää ladatut tiedostot. Seuraavassa kuvassa se näkyy selainikkunan alareunan lataukset-palkissa.
 
@@ -46,29 +46,19 @@ Siinä kaikki. Voit ladata tiedoston ja avata sen millä tahansa PDF-lukuohjelma
 
 
 ## <a name="limitations-and-considerations"></a>Rajoitukset ja huomioitavat asiat
-Huomioi seuraavat seikat ja rajoitukset, kun käytät **Vie PDF-muotoon** -toimintoa.
+Ota huomioon seuraavat seikat ja rajoitukset, kun käytät **Vie PDF-muotoon** -toimintoa.
 
-* **R-visualisointeja** ei tällä hetkellä tueta. Nämä visualisoinnit ovat tyhjiä PDF-tiedostossa. Niiden tilalla näytetään virheilmoitus.  
-
-* **Sertifioituja** **mukautettuja visualisointeja** tuetaan. Saat lisätietoja sertifioiduista mukautetuista visualisoinneista, mukaan lukien sertifioinnin hakemisesta visualisoinnille, artikkelista [Mukautetun visualisoinnin sertifiointi](../power-bi-custom-visuals-certified.md). Mukautettuja visualisointeja, joita ei ole sertifioitu, ei tueta. Niiden tilalla näytetään virheilmoitus PDF-tiedostossa.   
-
+* R-visualisointeja ei tällä hetkellä tueta. Nämä visualisoinnit ovat tyhjiä PDF-tiedostossa. Niiden tilalla näytetään virheilmoitus. 
+* Sertifioituja mukautettuja visualisointeja tuetaan. Saat lisätietoja sertifioiduista mukautetuista visualisoinneista, mukaan lukien sertifioinnin hakemisesta visualisoinnille, artikkelista [Mukautetun visualisoinnin sertifiointi](../power-bi-custom-visuals-certified.md). Mukautettuja visualisointeja, joita ei ole sertifioitu, ei tueta. Niiden tilalla näytetään virheilmoitus PDF-tiedostossa. 
 * Yli 30 raporttisivua sisältäviä raportteja ei tällä hetkellä voi viedä.
-
-* Raportin vieminen PDF-muotoon saattaa kestää muutamia minuutteja. Kestoon vaikuttavat mm. raportin rakenne ja Power BI -palvelun senhetkinen kuormitus.
-
+* Raportin vieminen PDF-muotoon saattaa kestää muutamia minuutteja. Kestoon vaikuttavat esimerkiksi raportin rakenne ja Power BI -palvelun kulloinenkin kuormitus.
 * Jos **Vie PDF-muotoon** -valikkovaihtoehtoa ei ole käytettävissä Power BI -palvelussa, syy on todennäköisesti se, että vuokraajan järjestelmänvalvoja on poistanut toiminnon käytöstä. Saat lisätietoja ottamalla yhteyttä vuokraajan järjestelmänvalvojaan.
-
-* Taustakuvat rajataan kaavion raja-alueen mukaiseksi. Suosittelemme, että poistat taustakuvat ennen PDF-muotoon viemistä.
-
+* Taustakuvat rajataan kaavion raja-alueen mukaiseksi. Suosittelemme poistamaan taustakuvat ennen PDF-muotoon viemistä.
 * PDF-muotoon ei voi julkaista raportteja, jotka ovat vuokraajan Power BI -toimialueen ulkopuolisen käyttäjän omistamia (esimerkiksi organisaation ulkopuolisen henkilön omistama raportti, joka on jaettu kanssasi).
-
-* Jos jaat koontinäytön organisaatiosi ulkopuoliselle henkilölle (joka ei ole Power BI -vuokraajasi toimialueella), kyseinen henkilö ei voi viedä jaettuun koontinäyttöön liittyviä raportteja PDF-muotoon. Jos olet esimerkiksi aaron@contoso.com, voit jakaa sisältöä käyttäjän cassie@cohowinery.com kanssa. cassie@cohowinery.com ei kuitenkaan voi viedä siihen liittyviä raportteja PDF-muotoon.
-
-* Kun PDF-muotoon viedään raportteja, jotka sisältävät taustakuvan, kuva saattaa vääristyä viennissä, jos Sivun tausta -asetuksena käytetään ”Normaali”- tai ”Täyttö”-vaihtoehtoa.  Parhaan tuloksen varmistamiseksi on suositeltavaa käyttää ”Sovita”-asetusta, jolloin vältetään vietyyn tiedostoon liittyvät ongelmat.
-
-* Power BI -palvelu käyttää PDF-viennin kielenä Power BI:n kieliasetuksen kieltä. Jos tarkistaa kieliasetuksesi tai muuttaa sitä, valitse hammasrataskuvake > **Asetukset** > **Yleiset** > **Kieli**.
-
-* URL-suodattimia ei oteta tällä hetkellä huomioon, kun valitset viennin kohdalla ”Nykyiset arvot”.
+* Jos jaat raporttinäkymän organisaatiosi ulkopuoliselle henkilölle (joka ei ole Power BI -vuokraajasi toimialueella), kyseinen henkilö ei voi viedä jaettuun raporttinäkymään liittyviä raportteja PDF-muotoon. Jos olet esimerkiksi aaron@contoso.com, voit jakaa sisältöä käyttäjän cassie@cohowinery.com kanssa. Käyttäjä cassie@cohowinery.com ei kuitenkaan voi viedä siihen liittyviä raportteja PDF-muotoon.
+* Kun PDF-muotoon viedään taustakuvan sisältäviä raportteja, kuva saattaa vääristyä viennissä, jos **Normaali**- tai **Täyttö**-vaihtoehtoa käytetään **Sivun tausta** -asetuksena. Käytä parhaan tuloksen varmistamiseksi **Sovita**-asetusta, jolloin vältetään vietyyn tiedostoon liittyvät ongelmat.
+* Power BI -palvelu käyttää PDF-viennin kielenä Power BI:n kieliasetuksen kieltä. Jos haluat tarkistaa kieliasetuksesi tai muuttaa sitä, valitse hammasrataskuvake ![Hammasrataskuvake](media/end-user-powerpoint/power-bi-settings-icon.png) > **Asetukset** > **Yleiset** > **Kieli**.
+* URL-suodattimia ei oteta tällä hetkellä huomioon, kun valitset viennin kohdalla **Nykyiset arvot**.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 [Raportin tulostaminen](end-user-print.md)

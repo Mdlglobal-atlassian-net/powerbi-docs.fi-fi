@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 08/15/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 5d0ace5c2986b30436838d33037ae3019bd8bdce
-ms.sourcegitcommit: 9665997274301b228f45aa7250ba557e90164a4d
+ms.openlocfilehash: f54906643bba8c631c8d8052309ad3ff512ad3fa
+ms.sourcegitcommit: 57e45f291714ac99390996a163436fa1f76db427
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70751570"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "71305756"
 ---
 # <a name="publish-an-app-in-power-bi"></a>Julkaise sovellus Power BI:ssä
 
@@ -190,6 +190,13 @@ Tämä toiminto poistaa sovelluksen asennuksen kaikilta, joille se on julkaistu 
 Kun sovelluksen kuluttajat avaavat sovelluksesi, he näkevät luomasi siirtymisruudun Power BI:n vasemmassa reunassa olevan tavallisen siirtymisruudun sijaan. Sovelluksen siirtymäruutu luetteloi määrittämiesi osien raportit ja koontinäytöt. Siinä luetellaan myös jokaisen raportin yksittäiset sivut pelkän raportin nimen sijaan.
 
 ![Sovellus, jossa voi siirtyä](media/service-create-distribute-apps/power-bi-new-apps-navigation.png)
+
+## <a name="considerations-and-limitations"></a>Huomioitavat asiat ja rajoitukset
+Sovellusten julkaisemisessa muistettavat asiat:
+
+* Sovelluksen käyttöoikeusluettelossa voi olla enintään 100 käyttäjää tai ryhmää. Voit silti antaa yli 100 käyttäjälle sovelluksen käyttöoikeuden. Voit tehdä tämän käyttämällä vähintään kahta käyttäjäryhmää, jotka sisältävät kaikki halutut käyttäjät.
+* Työtilan uusi käyttökokemus on, että jos sovelluksen käyttöoikeusluetteloon lisätyllä käyttäjällä on jo sovelluksen käyttöoikeus työtilan kautta, häntä näy sovelluksen käyttöoikeusluettelossa.  
+
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 * [Luo työtila](service-create-workspaces.md)

@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 0592cb7ef076f8094aca565d955cc238b2181068
-ms.sourcegitcommit: f6ac9e25760561f49d4257a6335ca0f54ad2d22e
+ms.openlocfilehash: cd0696b44e285119193059304c89cfa04c755771
+ms.sourcegitcommit: bbd9b38f30a4ca5cb8072496c9cacb635b03aa88
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69560963"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71409359"
 ---
 ## <a name="faq"></a>Usein kysytyt kysymykset
 **Kysymys:** Entä jos olen aiemmin luonut rooleja ja sääntöjä tietojoukolle Power BI -palvelussa? Toimivatko ne edelleen, jos en tee mitään?  
@@ -19,3 +19,5 @@ ms.locfileid: "69560963"
 **Kysymys:** Salliiko rivitason suojaus tarkkojen tietojen piilottamisen ja samalla visualisoinneissa olevien yhteenvetotietojen käytön?  
 **Vastaus**: Ei, voit suojata yksittäisiä tietorivejä, mutta käyttäjät voivat aina nähdä tarkat tiedot tai yhteenvetotiedot.
 
+**Kysymys:** Tietolähteeseeni on jo määritetty käyttöoikeusrooleja (esimerkiksi SQL -rooleja tai SAP BW -rooleja). Mikä niiden ja RLS:n suhde on?  
+**Vastaus**: Vastaus riippuu siitä, tuotko tietoja, vai käytätkö DirectQuerya. Jos tuot tietoja Power BI -tietojoukkoosi, tietolähteesi käyttöoikeusrooleja ei käytetä. Määritä tällöin RLS, jos haluat pakottaa suojaussäännöt käyttäjille, jotka muodostavat yhteyden Power BI:ssä. Jos käytät DirectQuerya, käytetään tietolähteesi käyttöoikeusrooleja. Kun käyttäjä avaa raportin, Power BI lähettää pohjana olevaan tietolähteeseen kyselyn, joka soveltaa tietoihin käyttöoikeussääntöjä käyttäjän tunnistetietojen perusteella.

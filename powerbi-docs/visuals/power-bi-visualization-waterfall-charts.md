@@ -11,18 +11,25 @@ ms.topic: conceptual
 ms.date: 06/24/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: c9ad87d851f52db6cd2720c9e3bd5d4bb7b189a7
-ms.sourcegitcommit: 58c649ec5fd2447a0f9ca4c4d45a0e9fff2f1b6a
+ms.openlocfilehash: 3ab200194d89eb15892dc4f452079eb56df8a608
+ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "67409129"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71191489"
 ---
 # <a name="waterfall-charts-in-power-bi"></a>Vesiputouskaaviot Power BI:ssä
+
+[!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
 Vesiputouskaaviot näyttävät juoksevan kokonaissumman, kun Power BI lisää ja vähentää arvoja. Ne ovat hyödyllisiä sen ymmärtämiseksi, miten positiivisten ja negatiivisten muutosten sarja vaikuttaa alkuarvoon (kuten nettotuloon).
 
 Sarakkeet ovat värikoodattuja, joten huomaat nopeasti nousut ja laskut. Alkuarvon ja lopullisen arvon sarakkeet usein [alkavat vaaka-akselilla](https://support.office.com/article/Create-a-waterfall-chart-in-Office-2016-for-Windows-8de1ece4-ff21-4d37-acd7-546f5527f185#BKMK_Float "alkavat vaaka-akselilla"), kun taas keskitason arvot ovat irrallisia sarakkeita. Tämän tyylin vuoksi vesiputouskaavioita kutsutaan myös siltakaavioiksi.
+
+   > [!NOTE]
+   > Tässä videossa käytetään Power BI Desktopin vanhempaa versiota.
+   > 
+   > 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/qKRZPBnaUXM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
@@ -40,35 +47,30 @@ Vesiputouskaavio on hyvä vaihtoehto:
 
 * jos haluat visualisoida, kuinka paljon rahaa ansaitset ja käytät joka kuukausi sekä tilin juoksevan saldon.
 
-## <a name="prerequisites"></a>Edellytykset
+## <a name="prerequisite"></a>Edellytys
 
-* Power BI -palvelu tai Power BI Desktop
+Tässä opetusohjelmassa käytetään [Jälleenmyyntianalyysimallin PBIX-tiedostoa](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix).
 
-* Jälleenmyyntianalyysimallin raportti
+1. Valitse valikkorivin vasemmasta yläosasta **Tiedosto** > **Avaa**
+   
+2. **Jälleenmyyntianalyysimallin PBIX-tiedoston löytäminen**
 
-## <a name="get-the-retail-analysis-sample-report"></a>Jälleenmyyntianalyysimallin raportin hankkiminen
+1. Avaa **Jälleenmyyntianalyysimallin PBIX-tiedosto** raporttinäkymässä ![Näyttökuva raporttinäkymän kuvakkeesta.](media/power-bi-visualization-kpi/power-bi-report-view.png).
 
-Näissä ohjeissa käytetään jälleenmyyntianalyysimallia. Visualisoinnin luominen edellyttää tietojoukon ja raportin muokkausoikeuksia. Kaikeksi onneksi Power BI -mallit ovat kaikki muokattavissa. Jos joku jakaa raportin kanssasi, et voi luoda visualisointeja raporteissa. Voit seurata mukana hankkimalla [jälleenmyyntianalyysimallin raportin](../sample-datasets.md).
+1. Valitse ![Näyttökuva keltaisesta välilehdestä.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) uuden sivun lisäämiseksi.
 
-Kun olet hankkinut **jälleenmyyntianalyysimallin** tietojoukon, voit aloittaa.
 
 ## <a name="create-a-waterfall-chart"></a>Vesiputouskaavion luominen
 
 Luot vesiputouskaavion, joka näyttää myynnin vaihtelun (arvioitu myynti vs. todellinen myynti) kuukauden mukaan.
 
-1. Valitse **Oma työtila** -kohdasta **Tietojoukot** > **Luo raportti**.
-
-    ![Näyttökuva tietojoukoista > Luo raportti.](media/power-bi-visualization-waterfall-charts/power-bi-create-a-report.png)
-
 1. Valitse **Kentät**-ruudussa **Myynti**  > **Myyntivariaatio yhteensä**.
 
-   ![Näyttökuva, jossa Myynti > Myyntivariaation yhteensä on valittuna, ja tulokseksi saatu visualisointi.](media/power-bi-visualization-waterfall-charts/power-bi-first-value.png)
+   ![Näyttökuva, jossa Myynti > Myynnin ero yhteensä on valittuna, ja tulokseksi saatu visualisointi.](media/power-bi-visualization-waterfall-charts/power-bi-first-value.png)
 
-1. Valitse Vesiputous-kuvake ![Näyttökuva Vesiputous-kuvakkeesta](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-icon.png) kaavion muuntamiseksi puukartaksi.
+1. Valitse Vesiputous-kuvake ![Näyttökuva Vesiputous-kuvakkeesta](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-icon.png)
 
-    Jos **Myyntivariaatio yhteensä** ei ole **Y-akselin** alueella, vedä se sinne.
-
-    ![Visualisointimallit](media/power-bi-visualization-waterfall-charts/convertwaterfall.png)
+    ![Visualisointimallit](media/power-bi-visualization-waterfall-charts/convert-waterfall.png)
 
 1. Valitse **Aika** > **FiscalMonth** sen lisäämiseksi **Luokka**-säilöön.
 
@@ -76,19 +78,25 @@ Luot vesiputouskaavion, joka näyttää myynnin vaihtelun (arvioitu myynti vs. t
 
 1. Varmista, että Power BI lajitteli vesiputouskaavion aikajärjestyksessä. Valitse kaavion oikeassa yläkulmassa olevat kolme pistettä (...).
 
-    Tarkista, että keltainen ilmaisin on **Lajittele nousevaan järjestykseen**- ja **FiscalMonth**-vaihtoehtojen vieressä vasemmalla
+    Tässä esimerkissä valitaan vaihtoehto **Lajittele nousevaan järjestykseen**
 
-    ![Valitse Lajitteluperuste > FiscalMonth](media/power-bi-visualization-waterfall-charts/power-bi-sort-by.png)
+    Tarkista, että keltainen ilmaisin on **Lajittele nousevaan järjestykseen** -vaihtoehdon vieressä vasemmalla. Tämä ilmaisee, että valitsemasi asetus on käytössä.
+
+    ![Valitse Lajitteluperuste > Lajittele nousevaan järjestykseen](media/power-bi-visualization-waterfall-charts/power-bi-sort-by.png)
+
+    Seuraavaksi valitaan **Lajitteluperuste** ja valitse **FiscalMonth**. Kuten edellisessä vaiheessa, valintasi vieressä näkyvä keltainen ilmaisin osoittaa, kun valinta-asetuksesi on käytössä.
+
+    ![Valitse Lajitteluperuste > FiscalMonth](media/power-bi-visualization-waterfall-charts/power-bi-sort-by-fiscal-month.png)
 
     Voit myös tarkastella X-akselin arvoja ja näet, että ne ovat järjestyksessä **tammikuusta** **elokuuhun**.
 
     Tarkastele hieman enemmän nähdäksesi, mikä aiheuttaa eniten muutoksia kuukausittain.
 
-1. Vedä **Myymälä** > **Alue** ja **Erittely**-säilöön.
+1.  Valitse **Myymälä** > **Alue**, jolloin**Alue** lisätään **Erittely**-säilöön.
 
     ![Näyttää Myymälän Erittely-säilössä](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-breakdown.png)
 
-    Oletusarvon mukaan Power BI lisää viisi suurinta osallistujaa nousuun tai laskuun kuukauden mukaan.
+    Oletusarvon mukaan Power BI lisää viisi suurinta osallistujaa nousuun tai laskuun kuukauden mukaan. Alla olevassa kuvassa visualisointiruutu näkyy laajennettuna lisätietojen näyttämistä varten. 
 
     ![Näyttää Myymälän Erittely-säilössä](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-breakdown-initial.png)
 
@@ -101,20 +109,6 @@ Luot vesiputouskaavion, joka näyttää myynnin vaihtelun (arvioitu myynti vs. t
     Lyhyestä katsauksesta käy ilmi, että Ohion ja Pennsylvanian alueet ovat vesiputouskaavion suurimmat osallistujat sekä negatiivisessa että positiivisessa liikkeessä.
 
     ![vesiputouskaavio](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-axis.png)
-
-    Tämä on mielenkiintoinen havainto. Onko Ohion ja Pennsylvanian vaikutus niin merkittävä, koska myynti näillä kahdella alueella on paljon muita alueita suurempaa? Voit tarkistaa asian.
-
-1. Luo kartta, jossa myynti näytetään alueen mukaan tänä vuonna ja viime vuonna.
-
-    ![kartta lähennettynä Pennsylvaniaan ja Ohioon](media/power-bi-visualization-waterfall-charts/power-bi-map.png)
-
-    Kartta tukee teoriaasi. Se näyttää, että näillä kahdella alueella oli suurin myyntiarvo viime vuonna (kuplan koko) ja tänä vuonna (kuplan varjostus).
-
-## <a name="highlighting-and-cross-filtering"></a>Korostaminen ja ristiinsuodatus
-
-Lisätietoja **Suodattimet**-ruudun käytöstä on artikkelissa [Lisää suodatin raporttiin muokkausnäkymässä](../power-bi-report-add-filter.md).
-
-Sarakkeen korostaminen vesiputouskaaviossa ristiinsuodattaa muut raporttisivulla olevat visualisoinnit ja päinvastoin. **Summa**sarake ei kuitenkaan käynnistä korostusta tai vastaa ristiinsuodatukseen.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
