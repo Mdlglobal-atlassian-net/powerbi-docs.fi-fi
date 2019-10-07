@@ -3,7 +3,7 @@ title: Tietojen vieminen Power BI -visualisoinnista
 description: Vie tiedot raportin visualisoinnista sekä raporttinäkymän visualisoinnista ja avaa ne Excelissä.
 author: mihart
 manager: kvivek
-ms.reviewer: ''
+ms.reviewer: cmfinlan
 featuredvideoid: jtlLGRKBvXY
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 09/11/2019
 ms.author: mihart
 LocalizationGroup: Consumers
-ms.openlocfilehash: 3ab3b7a96fb629b303263b1ccf5c2f31603300b4
-ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
+ms.openlocfilehash: 6aec9f569f657c58eb1dc0b807bbceefc62ab01a
+ms.sourcegitcommit: b7a9862b6da940ddebe61bc945a353f91cd0e4bd
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71073143"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71943860"
 ---
 # <a name="export-data-from-a-visual"></a>Tietojen vieminen visualisoinnista
 Jos haluat nähdä visualisoinnin luomiseen käytetyt tiedot, [voit näyttää kyseiset tiedot Power BI:ssä](end-user-show-data.md) tai viedä ne tiedot Exceliin. Tietojen vienti edellyttää sopivaa käyttöoikeutta sekä sisällön muokkausoikeuksia. Jos vieminen ei onnistu, ota yhteys Power BI -järjestelmänvalvojaasi. 

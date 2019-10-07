@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 28b77cfeda1f84f3643216dba45bef40bd6441ff
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: ca9233f6373f8732f0996a09d7fe83ea18431f88
+ms.sourcegitcommit: d04b9e1426b8544ce16ef25864269cc43c2d9f7b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65513231"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "71715315"
 ---
 # <a name="enroll-your-us-government-organization-in-the-power-bi-service"></a>Rekisteröi Yhdysvaltain valtionhallinnon organisaatio Power BI -palveluun
 **Power BI-palvelulla** on versio, joka on saatavilla Yhdysvaltain valtionhallinnon asiakkaille osana **Office 365 US Government Community** -tilauksia. Tässä artikkelissa kuvattu **Power BI -palvelun** versio on suunniteltu Yhdysvaltain valtionhallinnon asiakkaille ja on erillinen ja erilainen kuin **Power BI -palvelun** kaupallinen versio.
@@ -123,7 +123,7 @@ Tunnistaakseen vuokraajassa olevat käyttäjät, joilla on käytössään Power 
 Voit tehdä Power BI:llä kaikenlaista. Saat lisätietoja ja kursseja, mukaan lukien artikkelin, jossa näytetään, miten voit rekisteröityä palveluun, tutustumalla seuraaviin resursseihin:
 
 * [Power BI Yhdysvaltain valtionhallinnolle – Yleiskuvaus](service-govus-overview.md)
-* [Power BI:n ohjattu oppiminen](guided-learning/gettingstarted.yml?tutorial-step=1)
+* [Power BI:n ohjattu oppiminen](guided-learning/index.md)
 * [Power BI -palvelun käytön aloittaminen](service-get-started.md)
 * [Mikä on Power BI Desktop?](desktop-what-is-desktop.md)
 

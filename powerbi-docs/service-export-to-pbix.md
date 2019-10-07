@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/12/2019
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: 61fc821e63889951aefd0ef815f885ffa8a880cf
-ms.sourcegitcommit: d12bc6df16be1f1993232898f52eb80d0c9fb04e
+ms.openlocfilehash: 2c17378c14ef084ad6632e52df2a801832b311d9
+ms.sourcegitcommit: d04b9e1426b8544ce16ef25864269cc43c2d9f7b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68994812"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "71715194"
 ---
 # <a name="download-a-report-from-the-power-bi-service-to-power-bi-desktop-preview"></a>Raportin lataaminen Power BI -palvelusta Power BI Desktopiin (esikatselu)
 Voit julkaista Power BI Desktopissa raportin ( *.pbix*-tiedoston) paikallisesta tietokoneesta Power BI -palveluun. Power BI -raportit voivat myös siirtyä toiseen suuntaan: Voit ladata raportin Power BI -palvelusta Power BI Desktop -tiedostoon. Power BI -raportin tiedostotunniste on kummassakin tapauksessa .pbix.
@@ -26,7 +26,7 @@ Tähän liittyy tiettyjä rajoituksia ja huomioitavia asioita, joita käsitellä
 
 ## <a name="download-the-report-as-a-pbix-file"></a>Lataa raportti .pbix-tiedostona
 
-Voit ladata vain raportteja, jotka on [luotu Power BI Desktopissa](guided-learning/publishingandsharing.yml?tutorial-step=2) 23.11.2016 jälkeen ja päivitetty sen jälkeen. Jos raportti on luotu tätä ennen, **Lataa raportti** -valikkovaihtoehto Power BI -palvelussa näkyy harmaana.
+Voit ladata vain raportteja, jotka on [luotu Power BI Desktopissa](/learn/modules/publish-share-power-bi/2-publish-reports) 23.11.2016 jälkeen ja päivitetty sen jälkeen. Jos raportti on luotu tätä ennen, **Lataa raportti** -valikkovaihtoehto Power BI -palvelussa näkyy harmaana.
 
 Lataa .pbix-tiedosto toimimalla seuraavasti:
 

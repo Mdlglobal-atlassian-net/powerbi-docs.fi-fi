@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 08/30/2019
 ms.author: maggies
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 58cb009e29c05ce318c5931fb418617e1ef63f4f
-ms.sourcegitcommit: ba085b248c54e8fb1fd8eb2bb23a814e3fdd7ff6
+ms.openlocfilehash: b158e968d0fd35859cfd293177a7273e8311d5b2
+ms.sourcegitcommit: d04b9e1426b8544ce16ef25864269cc43c2d9f7b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70937054"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "71715309"
 ---
 # <a name="add-hyperlinks-urls-to-a-table"></a>Hyperlinkkien (URL-osoitteiden) lisääminen taulukkoon
 Tässä aiheessa kerrotaan, miten voit lisätä hyperlinkkejä (URL-osoitteita) taulukkoon. Power BI Desktopin avulla voit lisätä hyperlinkkejä (URL-osoitteita) taulukkoihin ja matriiseihin. Lisää kyseiset hyperlinkit sitten raporttisi taulukoihin tai matriiseihin joko Power BI Desktopilla tai Power BI -palvelulla. 
@@ -57,7 +57,7 @@ Hyperlinkin lisäämisen menettely riippuu siitä, oletko tuonut tiedot vai yhdi
 
     ![Ota käyttöön URL-kuvake](media/power-bi-hyperlinks-in-tables/power-bi-url-icon-on.png)
 
-1. (Valinnainen) [Julkaise raportti Power BI Desktopista Power BI -palveluun](guided-learning/publishingandsharing.yml?tutorial-step=2) ja avaa raportti Power BI -palvelussa. Hyperlinkit toimivat myös siellä.
+1. (Valinnainen) [Julkaise raportti Power BI Desktopista Power BI -palveluun](/learn/modules/publish-share-power-bi/2-publish-reports) ja avaa raportti Power BI -palvelussa. Hyperlinkit toimivat myös siellä.
 
 ### <a name="for-data-connected-with-directquery"></a>DirectQueryyn yhdistetyt tiedot
 Et voi luoda uutta saraketta DirectQuery-tilassa.  Jos tiedoissasi kuitenkin on jo URL-osoitteita, voit muuttaa ne hyperlinkeiksi.
@@ -65,7 +65,7 @@ Et voi luoda uutta saraketta DirectQuery-tilassa.  Jos tiedoissasi kuitenkin on 
 1. Luo Raporttinäkymässä taulukko käyttämällä URL-osoitteita sisältävää kenttää.
 2. Valitse sarake Tiedot-näkymässä ja sitten **Mallinnus**-välilehdeltä avattava **Tietoluokka**-valikko.
 3. Valitse **URL-verkko-osoite**. Hyperlinkit näkyvät sinisinä ja alleviivattuina.
-4. (Valinnainen) [Julkaise raportti Power BI Desktopista Power BI -palveluun](guided-learning/publishingandsharing.yml?tutorial-step=2) ja avaa raportti Power BI -palvelussa. Hyperlinkit toimivat myös siellä.
+4. (Valinnainen) [Julkaise raportti Power BI Desktopista Power BI -palveluun](/learn/modules/publish-share-power-bi/2-publish-reports) ja avaa raportti Power BI -palvelussa. Hyperlinkit toimivat myös siellä.
 
 ## <a name="create-a-table-or-matrix-hyperlink-in-excel-power-pivot"></a>Hyperlinkin luominen taulukkoon tai matriisiin Excel Power Pivotilla
 Toinen tapa lisätä hyperlinkkejä Power BI -taulukoihin ja -matriiseihin on luoda hyperlinkit tietojoukkoon ennen kyseisen tietojoukon tuomista Power BI:hin tai siihen liittämistä Power BI:ssä. Tässä esimerkissä käytetään Excel-työkirjaa.

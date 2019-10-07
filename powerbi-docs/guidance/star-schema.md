@@ -9,12 +9,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 09/09/2019
 ms.author: v-pemyer
-ms.openlocfilehash: f44c83613f874aec84a389ac5034ebde193467c2
-ms.sourcegitcommit: 226b47f64e6749061cd54bf8d4436f7deaed7691
+ms.openlocfilehash: 4af7a6305ace9113e912f0ad1527064c505f0ca8
+ms.sourcegitcommit: d04b9e1426b8544ce16ef25864269cc43c2d9f7b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/09/2019
-ms.locfileid: "70840618"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "71715504"
 ---
 # <a name="understand-star-schema-and-the-importance-for-power-bi"></a>Tutustu tähtirakenteeseen ja sen merkitykseen Power BI:ssä
 
@@ -205,6 +205,6 @@ Tämä monta-moneen-rakennemenetelmä on hyvin dokumentoitu, ja se voidaan saavu
 Lisätietoja tähtirakenteesta ja Power BI:n mallin rakenteesta on seuraavissa artikkeleissa:
 
 - [Dimensiomallinnuksen Wikipedia-artikkeli](https://go.microsoft.com/fwlink/p/?linkid=246459)
-- [Yhteyksien luominen ja hallinta Power BI Desktopissa](https://docs.microsoft.com/power-bi/desktop-create-and-manage-relationships)
-- [Moni-moneen-kardinaliteetin sisältävät suhteet Power BI Desktopissa](https://docs.microsoft.com/power-bi/desktop-many-to-many-relationships)
-- [Mallintamisen ohjattu oppimiskokemus](https://docs.microsoft.com/power-bi/guided-learning/modeling)
+- [Yhteyksien luominen ja hallinta Power BI Desktopissa](../desktop-create-and-manage-relationships.md)
+- [Moni-moneen-kardinaliteetin sisältävät suhteet Power BI Desktopissa](../desktop-many-to-many-relationships.md)
+- [Mallintamisen ohjattu oppimiskokemus](/learn/modules/model-data-power-bi/)

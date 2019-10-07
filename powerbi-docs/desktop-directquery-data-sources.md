@@ -10,12 +10,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 09/04/2019
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 59c55d2e9322b0b7d76a35f4eec0863efe4959e0
-ms.sourcegitcommit: 09ee1b4697aad84d8f4c9421015d7e4dbd3cf25f
+ms.openlocfilehash: 75b7a606e588ca7f6d1393c5b6e0dd9041f6d63e
+ms.sourcegitcommit: b7a9862b6da940ddebe61bc945a353f91cd0e4bd
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "70302650"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71945211"
 ---
 # <a name="data-sources-supported-by-directquery-in-power-bi"></a>{0}DirectQueryn tukemat tietolähteet Power BI:ssä
 
@@ -45,7 +45,7 @@ Seuraavat tietolähteet tukevat DirectQueryä Power BI:ssä:
 * Snowflake
 * Spark (versio 0.9 ja tätä uudemmat)
 * SQL Server
-* Teradata-tietokanta
+* Teradata
 * Vertica
 
 Tietolähteet, joiden nimien perässä on **(beeta)** tai **(esikatselu)** , voivat muuttua, eikä niiden tuotantokäyttöä tueta. Niitä ei myöskään välttämättä tueta raportin julkaisemisen jälkeen **Power BI -palveluun**, mikä tarkoittaa sitä, että julkaistun raportin avaaminen tai tietojoukon tutkiminen voi aiheuttaa virheen.
@@ -63,7 +63,7 @@ Seuraavassa taulukossa on määritetty, onko **Paikallinen tietoyhdyskäytävä*
 | --- | --- |
 | Amazon Redshift |Ei |
 | Azure HDInsight Spark (beeta) |Ei |
-| Azure SQL -tietokanta |Ei |
+| Azuren SQL-tietokanta |Ei |
 | Azure SQL Data Warehouse |Ei |
 | Google BigQuery |Ei |
 | IBM Netezza |Kyllä |
@@ -82,7 +82,7 @@ Seuraavassa taulukossa on määritetty, onko **Paikallinen tietoyhdyskäytävä*
 | Spark (beeta), versio 0.9 tai uudempi versio |Kyllä |
 | SQL Server |Kyllä |
 | Sybase |Kyllä |
-| Teradata-tietokanta |Kyllä |
+| Teradata |Kyllä |
 | Vertica |Kyllä |
 
 
@@ -92,7 +92,7 @@ Kun kertakirjautumisasetus on käytössä ja käyttäjät käyttävät raporttej
 
 Kertakirjautumisen asetus tulee voimaan kaikissa tietojoukoissa, jotka käyttävät tätä tietolähdettä. Se ei vaikuta tuontitilanteissa käytettyihin todentamismenetelmiin. Seuraavat tietolähteet tukevat DirectQueryn kertakirjautumisyhteyksiä:
 
-- Azure SQL -tietokanta
+- Azuren SQL-tietokanta
 - Azure SQL Data Warehouse
 - Impala
 - SAP HANA
