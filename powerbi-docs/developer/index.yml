@@ -1,0 +1,93 @@
+### YamlMime:Landing
+title: Kehittäjien Power BI -dokumentaatio
+summary: Power BI -dokumentaatio tarjoaa asiantuntijatietoja ja ratkaisuja tarpeisiisi vastaamiseksi riippumatta siitä, miten käytät Power BI:tä.
+metadata:
+  title: Power BI kehittäjille
+  description: Power BI -dokumentaatio tarjoaa asiantuntijatietoja ja ratkaisuja tarpeisiisi vastaamiseksi riippumatta siitä, miten käytät Power BI:tä.
+  services: powerbi
+  ms.service: powerbi
+  ms.subservice: powerbi-developer
+  ms.topic: landing-page
+  ms.collection: collection
+  author: maggiesMSFT
+  ms.author: maggies
+  ms.date: 10/02/2019
+  ms.openlocfilehash: 11e9bc6d2e848fcc1b827f52985c573cba382415
+  ms.sourcegitcommit: b7a9862b6da940ddebe61bc945a353f91cd0e4bd
+  ms.translationtype: HT
+  ms.contentlocale: fi-FI
+  ms.lasthandoff: 10/04/2019
+  ms.locfileid: "71951021"
+landingContent:
+- title: Tietoja Power BI:stä kehittäjille
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Mitä kehittäjät voivat tehdä Power BI:llä?
+      url: what-can-you-do.md
+    - text: Visualisoinnit Power BI:ssä
+      url: ../power-bi-custom-visuals.md
+    - text: Mitä on upottaminen Power BI:n avulla
+      url: embedding.md
+    - text: Mikä on Power BI -ohjelmointirajapinta
+      url: overview-of-power-bi-rest-api.md
+  - linkListType: reference
+    links:
+    - text: Power BI -kehittäjäkeskus
+      url: https://powerbi.microsoft.com/developers/
+    - text: Power BI:n kehittäjämallit
+      url: https://github.com/Microsoft/PowerBI-Developer-Samples
+    - text: Power BI JavaScript wiki
+      url: https://github.com/Microsoft/powerbi-javascript/wiki
+    - text: Power BI REST-ohjelmointirajapinnat
+      url: https://docs.microsoft.com/rest/api/power-bi/
+    - text: Azure Resource Manager REST -ohjelmointirajapinnat
+      url: https://docs.microsoft.com/rest/api/power-bi-embedded/
+- title: Power BI:n visualisoinnit
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: Power BI -visualisoinnin kehittäminen
+      url: custom-visual-develop-tutorial.md
+  - linkListType: concept
+    links:
+    - text: Power BI:n visualisointien usein kysytyt kysymykset
+      url: ../power-bi-custom-visuals-faq.md
+    - text: Power BI -visualisointien ohjeet
+      url: guidelines-powerbi-visuals.md
+    - text: Visualisointien kehittynyt muokkaustila
+      url: /advanced-edit-mode.md
+  - linkListType: how-to-guide
+    links:
+    - text: Visualisoinnin sertifioinnin hankkiminen
+      url: ../power-bi-custom-visuals-certified.md
+    - text: Omien visualisointien julkaiseminen AppSourcessa
+      url: office-store.md
+- title: Upotettu analytiikka
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: Upota asiakkaille tarkoitettua sisältöä
+      url: embed-sample-for-customers.md
+    - text: Organisaatiollesi tarkoitetun sisällön upottaminen
+      url: embed-sample-for-your-organization.md
+  - linkListType: concept
+    links:
+    - text: Rivitason suojaus
+      url: embedded-row-level-security.md
+    - text: Usean vuokrauksen hallinta
+      url: embed-multi-tenancy.md
+    - text: Upotetut usein kysytyt kysymykset
+      url: embedded-faq.md
+    - text: Power BI -käyttöoikeudet
+      url: power-bi-permissions.md
+  - linkListType: how-to-guide
+    links:
+    - text: Upottaminen sovelluksista
+      url: embed-from-apps.md
+    - text: Azure Active Directory -vuokraajan luominen
+      url: create-an-azure-active-directory-tenant.md
+    - text: Azure AD -käyttöoikeustietueen hankkiminen
+      url: get-azuread-access-token.md
+    - text: Q&A Power BI Embeddedissä
+      url: qanda.md

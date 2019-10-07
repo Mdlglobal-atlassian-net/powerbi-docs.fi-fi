@@ -11,14 +11,16 @@ ms.topic: conceptual
 ms.date: 06/24/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 4c28071917dbe5669e6e35bd416236ef7047eb24
-ms.sourcegitcommit: 58c649ec5fd2447a0f9ca4c4d45a0e9fff2f1b6a
+ms.openlocfilehash: 1de5869bc5b422dc98a13316022f653f62675829
+ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "67408824"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71192658"
 ---
 # <a name="treemaps-in-power-bi"></a>Puukartat Power BI:ssä
+
+[!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
 Puukartoissa hierarkkiset tiedot näytetään sisäkkäisten suorakulmioiden joukkona. Hierarkian kukin taso on edustettuna värillisenä suorakulmiona (haara), joka sisältää muita pienempiä suorakulmioita (lehtiä). Power BI määrittää kunkin suorakulmion sisällä olevan koon mitatun arvon mukaan. Suorakulmiot järjestetään koon mukaan vasemmasta yläkulmasta (suurin) oikeaan alakulmaan (pienin).
 
@@ -40,6 +42,11 @@ Voin myös verrata myytyjen tuotteiden määrää kaikkien muiden vaateluokkien 
 
 Haluatko ensin seurata, kun joku luo puukartan? Siirry videossa kohtaan 2:10, niin näet, kun Amanda luo puukartan.
 
+   > [!NOTE]
+   > Tässä videossa käytetään Power BI Desktopin vanhempaa versiota.
+   > 
+   > 
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/IkJda4O7oGs" frameborder="0" allowfullscreen></iframe>
 
 ## <a name="when-to-use-a-treemap"></a>Milloin puukarttaa kannattaa käyttää?
@@ -58,15 +65,18 @@ Puukartat ovat hyvä vaihtoehto seuraaville:
 
 * kun halutaan kuvioiden, poikkeavien arvojen, tärkeimpien tekijöiden ja poikkeusten erottuvan selvästi.
 
-## <a name="prerequisites"></a>Edellytykset
+## <a name="prerequisite"></a>Edellytys
 
-* Power BI -palvelu tai Power BI Desktop
+Tässä opetusohjelmassa käytetään [Jälleenmyyntianalyysimallin PBIX-tiedostoa](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix).
 
-* Jälleenmyyntianalyysimallin raportti
+1. Valitse valikkorivin vasemmasta yläosasta **Tiedosto** > **Avaa**
+   
+2. **Jälleenmyyntianalyysimalli PBIX-tiedoston löytäminen**
 
-## <a name="get-the-retail-analysis-sample-report"></a>Jälleenmyyntianalyysimallin raportin hankkiminen
+1. Avaa **Jälleenmyyntianalyysimallin PBIX-tiedosto** raporttinäkymässä ![Näyttökuva raporttinäkymän kuvakkeesta.](media/power-bi-visualization-kpi/power-bi-report-view.png).
 
-Näissä ohjeissa käytetään jälleenmyyntianalyysimallia. Visualisoinnin luominen edellyttää tietojoukon ja raportin muokkausoikeuksia. Kaikeksi onneksi Power BI -mallit ovat kaikki muokattavissa. Jos joku jakaa raportin kanssasi, et voi luoda visualisointeja raporteissa. Voit seurata mukana hankkimalla [jälleenmyyntianalyysimallin raportin](../sample-datasets.md).
+1. Valitse ![Näyttökuva keltaisesta välilehdestä.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) uuden sivun lisäämiseksi.
+
 
 Kun olet hankkinut **jälleenmyyntianalyysimallin** tietojoukon, voit aloittaa.
 
@@ -74,25 +84,22 @@ Kun olet hankkinut **jälleenmyyntianalyysimallin** tietojoukon, voit aloittaa.
 
 Luot raportin ja lisäät perustason puukartan.
 
-1. Valitse **Oma työtila** -kohdasta **Tietojoukot** > **Luo raportti**.
-
-    ![Näyttökuva tietojoukoista > Luo raportti.](media/power-bi-visualization-treemaps/power-bi-create-a-report.png)
 
 1. Valitse **Kentät**-ruudusta **Myynti** > **Viime vuoden myynti** -mittari
 
-   ![Näyttökuva, jossa on valittuna Myynti > Viime vuoden myynti, ja tuloksena saatu visualisointi.](media/power-bi-visualization-treemaps/treemapfirstvalue_new.png)
+   ![Näyttökuva, jossa on valittuna Myynti > Viime vuoden myynti, ja tuloksena saatu visualisointi.](media/power-bi-visualization-treemaps/treemapfirstvalue-new.png)
 
 1. Valitse puukartan kuvake ![Näyttökuva puukartan kuvakkeesta](media/power-bi-visualization-treemaps/power-bi-treemap-icon.png) kaavion muuntamiseksi puukartaksi.
 
-   ![Näyttökuva puukartasta ilman määritystä.](media/power-bi-visualization-treemaps/treemapconvertto_new.png)
+   ![Näyttökuva puukartasta ilman määritystä.](media/power-bi-visualization-treemaps/treemapconvertto-new.png)
 
-1. Vedä **Kohde** > **Luokka** **Ryhmä**-kohtaan.
+1. Valitse **Kohde** > **Luokka**, jolloin **Luokka** lisätään **Ryhmä**-säilöön.
 
     Power BI luo puukartan, jossa suorakulmioiden koko kuvastaa kokonaismyyntiä ja väri edustaa luokkaa. Olet periaatteessa luonut hierarkian, joka kuvaa visuaalisesti kokonaismyynnin suhteellista kokoa luokittain. **Miehet**-luokassa myynti on suurinta ja **Sukkatuotteet**-luokassa se on alhaisinta.
 
     ![Näyttökuva määritetystä puukartasta.](media/power-bi-visualization-treemaps/power-bi-complete.png)
 
-1. Vedä **Kauppa** > **Ketju** **Tiedot**-kohtaan puukartan viimeistelemiseksi. Nyt voit verrata viime vuoden myyntiä luokan ja ketjun mukaan.
+1. Valitse **Kauppa** > **Ketju**, jolloin **Ketju** lisätään **Tiedot**-säilöön. Nyt voit verrata viime vuoden myyntiä luokan ja ketjun mukaan.
 
    ![Näyttökuva puukartasta, jossa Myymälä > Ketju on lisätty Tietoihin.](media/power-bi-visualization-treemaps/power-bi-details.png)
 
@@ -103,19 +110,14 @@ Luot raportin ja lisäät perustason puukartan.
 
     Jos esimerkiksi viet hiiren **Fashions Direct** -kohtaan **090-Home** -suorakulmiossa, näet Fashion Directin Koti-luokkaa vastaavan työkaluvihjeen.
 
-   ![Näyttökuva esiin tulevasta Koti-työkaluvihjeestä.](media/power-bi-visualization-treemaps/treemaphoverdetail_new.png)
+   ![Näyttökuva esiin tulevasta Koti-työkaluvihjeestä.](media/power-bi-visualization-treemaps/treemaphoverdetail-new.png)
 
-1. Lisää puukartta [koontinäytön ruutuna (kiinnitä visualisointi)](../service-dashboard-tiles.md).
-
-1. Tallenna [raportti](../service-report-save.md).
 
 ## <a name="highlighting-and-cross-filtering"></a>Korostaminen ja ristiinsuodatus
 
-Lisätietoja **Suodattimet**-ruudun käyttämisestä saat artikkelista [Lisää suodatin raporttiin](../power-bi-report-add-filter.md).
+**Luokka**- tai **Tiedot**-kohdan korostaminen puukartassa ristiinkorostaa ja ristiinsuodattaa muut raporttisivulla olevat visualisoinnit. Jotta voit seurata mukana, lisää tälle raporttisivulle visualisointeja tai kopioi puukartta tämän raportin jollekin muulle sivulle. Alla oleva puukartan kuva kopioitiin **Yleiskatsaus**-sivulle. 
 
-**Luokan** tai **Tietojen** korostaminen puukartassa ristiinkorostaa ja ristiinsuodattaa muut raporttisivulla olevat visualisoinnit ja päinvastoin. Jotta voit seurata mukana, lisää tälle raporttisivulle visualisointeja tai kopioi puukartta tämän raportin jollekin muulle sivulle.
-
-1. Valitse puukartasta **Luokka** tai **Ketju** **Luokan** sisältä. Se ristiinkorostaa muut sivulla olevat visualisoinnit. Valitsemalla esimerkiksi **050-Kengät**, näet, että edellisen vuoden kenkämyynti oli **3 640 471 dollaria**, josta **2 174 185 dollaria** tuli **Fashions Directistä**.
+1. Valitse puukartasta **Luokka** tai **Ketju** **Luokan** sisältä. Se ristiinkorostaa muut sivulla olevat visualisoinnit. Valitsemalla esimerkiksi **050-Kengät**, näet, että edellisen vuoden kenkämyynti oli **16 352 432 dollaria**, josta **2 174 185 dollaria** tuli **Fashions Directistä**.
 
    ![Näyttökuva Myymälöiden myynnin yleiskatsaus -raportista, jossa näytetään ristiinkorostus.](media/power-bi-visualization-treemaps/treemaphiliting.png)
 

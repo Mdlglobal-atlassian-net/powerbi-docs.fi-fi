@@ -1,0 +1,240 @@
+- name: Power BI kehittäjille
+  items:
+    - name: Yleiskatsaus
+      expanded: true
+      items:
+        - name: 'Mitä kehittäjät voivat tehdä Power BI:llä?'
+          href: what-can-you-do.md
+    - name: 'Power BI:n visualisoinnit'
+      expanded: true
+      items:
+        - name: Yleiskatsaus
+          items:
+            - name: 'Visualisoinnit Power BI:ssä'
+              href: ../power-bi-custom-visuals.md
+        - name: Opetusohjelmat
+          items:
+            - name: Power BI -visualisoinnin kehittäminen
+              href: custom-visual-develop-tutorial.md
+            - name: Muotoiluasetusten lisääminen
+              href: custom-visual-develop-tutorial-format-options.md
+            - name: Yksikkötestausten lisääminen visualisointiprojektiin
+              href: visuals/unit-tests-introduction.md
+        - name: Käsitteet
+          items:
+            - name: 'Organisaatioiden visualisoinnit Power BI:ssä'
+              href: ../power-bi-custom-visuals-organization.md
+            - name: Power BI -visualisointien ohjeet
+              href: guidelines-powerbi-visuals.md
+            - name: Visualisointien UKK
+              href: ../power-bi-custom-visuals-faq.md
+            - name: Ominaisuuksien käyttö
+              href: visuals/capabilities.md
+            - name: Tietonäkymän yhdistämismääritykset
+              href: visuals/dataview-mappings.md
+            - name: Objektit ja ominaisuudet
+              href: visuals/objects-properties.md
+            - name: Muokkaustilan lisäasetukset
+              href: visuals/advanced-edit-mode.md
+        - name: Ohjeet
+          items:
+            - name: Visualisoinnin sertifioinnin hankkiminen
+              href: ../power-bi-custom-visuals-certified.md
+            - name: Omien visualisointien julkaiseminen AppSourcessa
+              href: office-store.md
+            - name: 'R:ää hyödyntävien mukautettujen visualisointien käyttö Power BI:ssä'
+              href: ../desktop-r-powered-custom-visuals.md
+            - name: Visualisointitoimet
+              href: visuals/visuals-interactions.md
+            - name: Visualisointien työkaluvihjeiden lisääminen
+              href: visuals/add-tooltips.md
+            - name: Analytiikkaruudun lisääminen
+              href: visuals/analytics-pane.md
+            - name: Visualisointien suodattaminen
+              href: visuals/filter-api.md
+            - name: Lisätietojen noutaminen
+              href: visuals/fetch-more-data.md
+            - name: Kirjanmerkkituen lisääminen
+              href: visuals/bookmarks-support.md
+            - name: Tietojen korostaminen visualisoinneissa
+              href: visuals/highlight.md
+            - name: Suuren kontrastin tilan tuen lisääminen
+              href: visuals/high-contrast-support.md
+            - name: Osittajien synkronoinnin käyttöönotto
+              href: visuals/enable-sync-slicers.md
+            - name: Power BI -visualisointien vianmääritys
+              href: ../power-bi-custom-visuals-troubleshoot.md
+        - name: Viittaus
+          items:
+            - name: Aloitussivu
+              href: visuals/landing-page.md
+            - name: 'URL:n käynnistäminen'
+              href: visuals/launch-url.md
+            - name: Tapahtumien hahmontaminen
+              href: visuals/event-service.md
+            - name: Lajittelu
+              href: visuals/sort-options.md
+        - name: Resurssit
+          items:
+            - name: Kehityskeskus
+              href: 'https://powerbi.microsoft.com/developers/'
+            - name: Mallit
+              href: 'https://microsoft.github.io/PowerBI-visuals/samples/'
+            - name: Mukautettujen visualisointien Git Repo
+              href: 'https://go.microsoft.com/fwlink/?linkid=848277'
+            - name: SSL-varmenteen luominen
+              href: visuals/create-ssl-certificate.md
+    - name: Upotettu analytiikka
+      expanded: true
+      items:
+        - name: Yleiskatsaus
+          items:
+            - name: 'Mitä on upottaminen Power BI:n avulla'
+              href: embedding.md
+            - name: Mikä on Power BI Embedded Azuressa
+              href: azure-pbie-what-is-power-bi-embedded.md
+        - name: Opetusohjelmat
+          items:
+            - name: Upota asiakkaille tarkoitettua sisältöä
+              href: embed-sample-for-customers.md
+            - name: Organisaatiollesi tarkoitetun sisällön upottaminen
+              href: embed-sample-for-your-organization.md
+            - name: Kansallisille pilvipalveluille tarkoitetun sisällön upottaminen
+              href: embed-sample-for-customers-national-clouds.md
+        - name: Käsitteet
+          items:
+            - name: Suorituskykyä parantavat parhaat käytännöt
+              href: embedded-performance-best-practices.md
+            - name: Palvelun päänimi
+              href: embed-service-principal.md
+            - name: Rivitason suojaus
+              href: embedded-row-level-security.md
+            - name: Useiden vuokralaisten hallinta
+              href: embed-multi-tenancy.md
+            - name: Power BI Embedded -palvelun diagnostiikan kirjaus Azuressa
+              href: azure-pbie-diag-logs.md
+            - name: Upottamisen usein kysytyt kysymykset
+              href: embedded-faq.md
+            - name: Power BI -käyttöoikeudet
+              href: power-bi-permissions.md
+        - name: Ohjeet
+          items:
+            - name: Upottaminen sovelluksesta
+              href: embed-from-apps.md
+            - name: Sovellusten automaattinen asentaminen
+              href: embed-auto-install-app.md
+            - name: Azure Active Directory -vuokraajan luominen
+              href: create-an-azure-active-directory-tenant.md
+            - name: Sovelluksen rekisteröinti
+              href: register-app.md
+            - name: Azure AD -käyttöoikeustietueen hankkiminen
+              href: get-azuread-access-token.md
+            - name: 'Q&A:n upottaminen'
+              href: qanda.md
+            - name: Upotetun sovelluksen vianmääritys
+              href: embedded-troubleshoot.md
+            - name: Kapasiteettien hallinta Azuressa
+              items:
+                - name: Luo kapasiteettia Azuressa
+                  href: azure-pbie-create-capacity.md
+                - name: Luo kapasiteettia Multi-Geon avulla Azuressa
+                  href: embedded-multi-geo.md
+                - name: Skaalaa kapasiteettia Azuressa
+                  href: azure-pbie-scale-capacity.md
+                - name: Keskeytä ja käynnistä kapasiteettia Azuressa
+                  href: azure-pbie-pause-start.md
+            - name: Siirtyminen työtilakokoelmista
+              items:
+                - name: Siirtyminen Power BI -työtilakokoelmista
+                  href: migrate-from-powerbi-embedded.md
+                - name: Siirtotyökalu
+                  href: migrate-tool.md
+                - name: Siirtokoodikatkelmat
+                  href: migrate-code-snippets.md
+        - name: Viittaus
+          items:
+            - name: Ohjelmointirajapinnat
+              items:
+                - name: Azure resurssienhallinta REST-ohjelmointirajapinnat
+                  href: 'https://docs.microsoft.com/rest/api/power-bi-embedded/'
+                - name: Power BI REST-ohjelmointirajapinnat
+                  href: 'https://msdn.microsoft.com/library/mt147898.aspx'
+                - name: 'Power BI:n REST-ohjelmointirajapinnan viite'
+                  href: rest-api-reference.md
+            - name: '.NET SDK: lataaminen'
+              href: 'https://go.microsoft.com/fwlink/?linkid=848274'
+            - name: Omien asetteluiden upottaminen sovellukseen
+              href: embedded-custom-layout.md
+        - name: Resurssit
+          items:
+            - name: Kehityskeskus
+              href: 'https://powerbi.microsoft.com/en-us/developers/'
+            - name: Upottamisen määritystyökalu
+              href: 'https://aka.ms/embedsetup'
+            - name: JavaScript Playground -malli
+              href: 'https://go.microsoft.com/fwlink/?linkid=848279'
+            - name: Power BI JavaScript wiki
+              href: 'https://github.com/Microsoft/powerbi-javascript/wiki'
+            - name: JavaScript Git Repo
+              href: 'https://go.microsoft.com/fwlink/?linkid=848276'
+            - name: 'Power BI C# Git Repo'
+              href: 'https://go.microsoft.com/fwlink/?linkid=848273'
+            - name: Mallit
+              href: 'https://go.microsoft.com/fwlink/?linkid=851293'
+            - name: Power BI -yhteisö
+              href: 'https://go.microsoft.com/fwlink/?linkid=848280'
+            - name: Stack Overflow
+              href: 'https://go.microsoft.com/fwlink/?linkid=848281'
+    - name: Automaatio
+      expanded: true
+      items:
+        - name: Yleiskatsaus
+          items:
+            - name: 'Mitä voin tehdä Power BI:n ohjelmointirajapinnalla?'
+              href: overview-of-power-bi-rest-api.md
+        - name: Opetusohjelmat
+          items:
+            - name: Tietojen työntäminen tietojoukkoon
+              href: walkthrough-push-data.md
+            - name: Todennustunnuksen hankkiminen
+              href: walkthrough-push-data-get-token.md
+            - name: Tietojoukon luominen
+              href: walkthrough-push-data-create-dataset.md
+            - name: Tietojoukon hakeminen rivien lisäämiseksi
+              href: walkthrough-push-data-get-datasets.md
+            - name: Rivien lisääminen taulukkoon
+              href: walkthrough-push-data-add-rows.md
+        - name: Käsitteet
+          items:
+            - name: Automaattinen reaaliaikaisten tietojen säilytyskäytäntö
+              href: api-automatic-retention-policy-for-real-time-data.md
+            - name: Tietojen lähettäminen
+              items:
+                - name: Power BI REST -ohjelmointirajapinnan rajoitukset
+                  href: api-rest-api-limitations.md
+                - name: Tietojoukon ominaisuudet
+                  href: api-dataset-properties.md
+                - name: Tietomallin versiointi
+                  href: api-data-model-versioning.md
+        - name: Ohjeet
+          items:
+            - name: Tunnistetietojen määrittäminen
+              href: configure-credentials.md
+            - name: Tunnistetietojen salaaminen
+              href: encrypt-credentials.md
+        - name: Viittaus
+          items:
+            - name: REST-ohjelmointirajapinnat
+              href: 'https://docs.microsoft.com/rest/api/power-bi'
+            - name: 'Power BI:n REST-ohjelmointirajapinnan viite'
+              href: rest-api-reference.md
+            - name: Kattava koodiluettelo
+              href: walkthrough-push-data-complete-code.md
+        - name: Resurssit
+          items:
+            - name: Kehityskeskus
+              href: 'https://powerbi.microsoft.com/en-us/developers/'
+            - name: 'Power BI C# Git Repo'
+              href: 'https://go.microsoft.com/fwlink/?linkid=848273'
+            - name: '.NET SDK: lataaminen'
+              href: 'https://go.microsoft.com/fwlink/?linkid=848274'
