@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 02/10/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: e001d35761eb7918aab2c427c3400df526e4dbc0
-ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
+ms.openlocfilehash: 87a8333c89f2682640649e757984c6b02e10c3a8
+ms.sourcegitcommit: 0687908938e4c3b68401fd511ec1c28fb54ddeb3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71192236"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "71691278"
 ---
 # <a name="arcgis-maps-in-power-bi-desktop-by-esri"></a>Esri ArcGIS -kartat Power BI Desktopissa
 
@@ -331,8 +331,10 @@ ArcGIS Maps for Power BI on Esrin tekemä (www.esri.com). ArcGIS Maps for Power 
 
 Kun käyttäjä tilaa Plus-version Esrin ArcGIS Maps for Power BI:n kautta tarjoaman tilauksen kautta, käyttäjän ja Esrin välillä on suora suhde. Power BI ei lähetä käyttäjän henkilökohtaisia tietoja Esrille. Käyttäjä kirjautuu Esrin tarjoamaan AAD-sovellukseen omalla AAD-tunnuksellaan ja ilmaisee luottavansa siihen. Tällöin käyttäjä jakaa henkilökohtaiset tietonsa suoraan Esrille. Kun käyttäjä lisää Plus-sisältöä ArcGIS Maps for Power BI -visualisointiin, kyseistä sisältöä tarkastelevilla ja muokkaavilla muilla Power BI -käyttäjillä on myös oltava Plus-tilaus. 
 
-Jos sinulla on kysyttävää Esrin ArcGIS Maps for Power BI:n teknisestä toiminnasta, ota yhteyttä Esrin tukisivun kautta.
+Jos sinulla on kysyttävää Esrin ArcGIS Maps for Power BI:n teknisestä toiminnasta, ota yhteyttä Esriin tukisivun kautta.
 
+**Mitä tietoja Esrille lähetetään?**
+Lisätietoja Esrille lähetettävistä tiedoista on Esrin [dokumentaatiossa](https://doc.arcgis.com/en/maps-for-powerbi/get-started/data-transfer.htm).
 
 **Onko ArcGIS Maps for Power BI:n käyttö maksullista?**
 

@@ -11,19 +11,24 @@ ms.topic: tutorial
 ms.date: 06/24/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 8fa39c7cc57e24f0c19e1a484c0e925bfeec94f7
-ms.sourcegitcommit: 1c96b65a03ec0a0612e851dd58c363f4d56bca38
+ms.openlocfilehash: 508da47272313d9781fdd66c2ca367dcf9e433e5
+ms.sourcegitcommit: d04b9e1426b8544ce16ef25864269cc43c2d9f7b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "67389653"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "71715239"
 ---
 # <a name="key-performance-indicator-kpi-visuals"></a>Suorituskykyilmaisimen (KPI) visualisoinnit
+
+[!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
 Suorituskykyilmaisin (KPI) on visuaalinen vihje, joka kertoo edistymisen määrän kohti mitattavissa olevaa tavoitetta. Lisätietoja suorituskykyilmaisimista on artikkelissa [Suorituskykyilmaisimet (KPI) PowerPivotissa](/previous-versions/sql/sql-server-2012/hh272050(v=sql.110)).
 
 Will näyttää sivulle, miten voit luoda yksittäisten arvojen visualisoinnit: mittarit, kortit ja suorituskyvyn mittarit.
-
+   > [!NOTE]
+   > Tässä videossa käytetään Power BI Desktopin vanhempaa versiota.
+   > 
+   > 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/xmja6EpqaO0?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
 
 ## <a name="when-to-use-a-kpi"></a>Milloin suorituskykyilmaisinta kannattaa käyttää?
@@ -42,19 +47,19 @@ KPI-tietojoukon pitää sisältää suorituskykyilmaisimen tavoitearvoja. Jos ti
 
 ## <a name="prerequisites"></a>Edellytykset
 
-Jos et ole rekisteröitynyt Power BI:hin, [rekisteröidy ilmaiseen kokeiluversioon](https://app.powerbi.com/signupredirect?pbi_source=web) ennen aloittamista.
+Tässä opetusohjelmassa käytetään [Jälleenmyyntianalyysimallin PBIX-tiedostoa](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix).
 
-* [Power BI Desktop](https://powerbi.microsoft.com/get-started/) – se on ilmainen!
+1. Valitse valikkorivin vasemmasta yläosasta **Tiedosto** > **Avaa**
+   
+2. **Jälleenmyyntianalyysimallin PBIX-tiedoston löytäminen**
 
-* [Jälleenmyyntianalyysimallin PBIX-tiedosto](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix)
+1. Avaa **Jälleenmyyntianalyysimallin PBIX-tiedosto** raporttinäkymässä ![Näyttökuva raporttinäkymän kuvakkeesta.](media/power-bi-visualization-kpi/power-bi-report-view.png).
+
+1. Valitse ![Näyttökuva keltaisesta välilehdestä.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) uuden sivun lisäämiseksi.
 
 ## <a name="how-to-create-a-kpi"></a>Suorituskykyilmaisimen luominen
 
-Jos haluat seurata mukana, avaa [jälleenmyyntianalyysin .PBIX-tiedosto](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix) Power BI Desktopissa. Luomme suorituskykyilmaisimen, joka mittaa edistymistä kohti myyntitavoitetta.
-
-1. Avaa **Jälleenmyyntianalyysimalli** raporttinäkymässä ![Näyttökuva raporttinäkymän kuvakkeesta.](media/power-bi-visualization-kpi/power-bi-report-view.png).
-
-1. Valitse ![Näyttökuva keltaisesta välilehdestä.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) uuden sivun lisäämiseksi.
+Tässä esimerkissä luomme suorituskykyilmaisimen, joka mittaa edistymistä kohti myyntitavoitetta.
 
 1. Valitse **Kentät**-ruudussa **Myynti > Yksikköjen kokonaismäärä tänä vuonna**.  Tämä arvo on ilmaisin.
 
@@ -79,7 +84,7 @@ Jos haluat seurata mukana, avaa [jälleenmyyntianalyysin .PBIX-tiedosto](http://
 
     ![Näyttökuva valmiista suorituskykyilmaisimen visualisoinnista ja Kentät-ruudusta, jossa on esitetty arvot.](media/power-bi-visualization-kpi/power-bi-kpi-done.png)
 
-1. Vaihtoehtoisesti voit muotoilla suorituskykyilmaisimen avaamalla muotoiluruudun valitsemalla maalirullakuvakkeen.
+1. Vaihtoehtoisesti voit muotoilla suorituskykyilmaisimen avaamalla muotoiluruudun valitsemalla maalitelakuvakkeen.
 
     * **Ilmaisin** – ohjaa ilmaisimen näyttöyksiköitä ja desimaaleja.
 

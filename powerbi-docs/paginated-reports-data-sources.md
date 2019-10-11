@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 07/19/2019
-ms.openlocfilehash: f055cd27f25af399b63336e66aaad526ed740de2
-ms.sourcegitcommit: 8aa90f662afb7492ffcfc11ef142cdb0ccecc9aa
+ms.openlocfilehash: f0cc7563fc59a6c1ceeceefcf4b65b0cc1a3aa80
+ms.sourcegitcommit: 9bf3cdcf5d8b8dd12aa1339b8910fcbc40f4cbe4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68462326"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "71968661"
 ---
 # <a name="supported-data-sources-for-power-bi-paginated-reports"></a>Power BI:n sivutetuissa raporteissa tuetut tietolähteet
 
@@ -26,7 +26,8 @@ Sivutetut raportit tukevat suoraan seuraavia tietolähteitä:
 
 | Tietolähde | Todentaminen | Huomautukset |
 | --- | --- | --- |
-| Azure SQL -tietokanta <br>Azure SQL Data Warehouse | Perus, kertakirjautuminen (SSO), OAuth2 |   |
+| Azuren SQL-tietokanta <br>Azure SQL Data Warehouse | Perus, kertakirjautuminen (SSO), OAuth2 |   |
+| Azure SQL:n hallittu esiintymä | Perus | julkisen päätepisteen kautta käyttämällä Microsoft Azuren SQL-tietokantalaajennusta  |
 | Azure Analysis Services | SSO, OAuth2 |   |
 | Power BI -tietojoukko | SSO | Power BI:n Premium- ja muut kuin Premium-tietojoukot |
 | Power BI:n Premium-tietojoukko (XMLA) | SSO |   |

@@ -502,6 +502,8 @@
             - name: Tietojoukkojen käyttö kaikissa työtiloissa
               href: service-datasets-across-workspaces.md
             - name: Tietojoukkojen jakaminen (esiversio)
+              href: service-datasets-share.md
+            - name: Jaettujen tietojoukkojen muodostamisoikeus
               href: service-datasets-build-permissions.md
             - name: Tietojoukkoihin perustuvien raporttien luominen
               href: service-datasets-discover-across-workspaces.md
@@ -757,6 +759,8 @@
           items:
             - name: 'Sisällön uudelleennimeäminen Power BI:llä'
               href: service-rename.md
+            - name: Kohteen yhteystietojen asettaminen
+              href: service-item-contact.md
             - name: Rekisteröi Yhdysvaltain julkishallinnon organisaatio
               href: service-govus-signup.md
             - name: 'Poista melkein mitä tahansa Power BI:ssä'
@@ -773,8 +777,6 @@
                   href: service-connect-to-appfigures.md
                 - name: Application Insights
                   href: service-connect-to-application-insights.md
-                - name: AT Internet Bridge
-                  href: service-connect-to-at-internet.md
                 - name: Azure-valvontalokit
                   href: service-connect-to-azure-audit-logs.md
                 - name: Azure Mobile Engagement
@@ -799,8 +801,6 @@
                   href: service-connect-to-lithium.md
                 - name: Mandrill
                   href: service-connect-to-mandrill.md
-                - name: Marketo
-                  href: service-connect-to-marketo.md
                 - name: Microsoft Dynamics AX
                   href: service-connect-to-microsoft-dynamics-ax.md
                 - name: Microsoft Dynamics CRM
@@ -809,14 +809,10 @@
                   href: service-connect-to-microsoft-dynamics-nav.md
                 - name: Office365Mon
                   href: service-connect-to-office365mon.md
-                - name: Planview Enterprise
-                  href: service-connect-to-planview.md
                 - name: Prevedere
                   href: service-connect-to-prevedere.md
                 - name: Project Online
                   href: service-connect-to-project-online.md
-                - name: Projectplace
-                  href: service-connect-to-projectplace.md
                 - name: QuickBooks Online
                   href: service-connect-to-quickbooks-online.md
                 - name: Salesforce
@@ -843,8 +839,6 @@
                   href: service-connect-to-uservoice.md
                 - name: VMob
                   href: service-connect-to-vmob.md
-                - name: Webtrends
-                  href: service-connect-to-webtrends.md
                 - name: Windows Dev Center
                   href: service-connect-to-windows-dev-center.md
                 - name: Xero
@@ -967,136 +961,6 @@
           href: report-builder-url-pass-parameters.md
         - name: Sivutetun raportin julkaiseminen
           href: paginated-reports-save-to-power-bi-service.md
-    - name: Mukautetut visualisoinnit
-      items:
-        - name: Yleiskatsaus
-          items:
-            - name: 'Visualisoinnit Power BI:ssä'
-              href: power-bi-custom-visuals.md
-        - name: Opetusohjelmat
-          items:
-            - name: Power BI -visualisoinnin kehittäminen
-              href: developer/custom-visual-develop-tutorial.md
-            - name: Muotoiluasetusten lisääminen
-              href: developer/custom-visual-develop-tutorial-format-options.md
-            - name: Yksikkötestausten lisääminen visualisointiprojektiin
-              href: developer/visuals/unit-tests-introduction.md
-        - name: Käsitteet
-          items:
-            - name: 'Organisaatioiden visualisoinnit Power BI:ssä'
-              href: power-bi-custom-visuals-organization.md
-            - name: Power BI -visualisointien ohjeet
-              href: developer/guidelines-powerbi-visuals.md
-            - name: Visualisointien UKK
-              href: power-bi-custom-visuals-faq.md
-            - name: Ominaisuuksien käyttö
-              href: developer/visuals/capabilities.md
-            - name: Tietonäkymän yhdistämismääritykset
-              href: developer/visuals/dataview-mappings.md
-            - name: Objektit ja ominaisuudet
-              href: developer/visuals/objects-properties.md
-            - name: Muokkaustilan lisäasetukset
-              href: developer/visuals/advanced-edit-mode.md
-        - name: Ohjeet
-          items:
-            - name: Visualisoinnin sertifioinnin hankkiminen
-              href: power-bi-custom-visuals-certified.md
-            - name: Omien visualisointien julkaiseminen AppSourcessa
-              href: developer/office-store.md
-            - name: 'R:ää hyödyntävien mukautettujen visualisointien käyttö Power BI:ssä'
-              href: desktop-r-powered-custom-visuals.md
-            - name: Visualisointitoimet
-              href: developer/visuals/visuals-interactions.md
-            - name: Visualisointien työkaluvihjeiden lisääminen
-              href: developer/visuals/add-tooltips.md
-            - name: Analytiikkaruudun lisääminen
-              href: developer/visuals/analytics-pane.md
-            - name: Visualisointien suodattaminen
-              href: developer/visuals/filter-api.md
-            - name: Lisätietojen noutaminen
-              href: developer/visuals/fetch-more-data.md
-            - name: Kirjanmerkkituen lisääminen
-              href: developer/visuals/bookmarks-support.md
-            - name: Tietojen korostaminen visualisoinneissa
-              href: developer/visuals/highlight.md
-            - name: Suuren kontrastin tilan tuen lisääminen
-              href: developer/visuals/high-contrast-support.md
-            - name: Osittajien synkronoinnin käyttöönotto
-              href: developer/visuals/enable-sync-slicers.md
-            - name: Power BI -visualisointien vianmääritys
-              href: power-bi-custom-visuals-troubleshoot.md
-        - name: Viittaus
-          items:
-            - name: Aloitussivu
-              href: developer/visuals/landing-page.md
-            - name: 'URL:n käynnistäminen'
-              href: developer/visuals/launch-url.md
-            - name: Tapahtumien hahmontaminen
-              href: developer/visuals/event-service.md
-            - name: Lajittelu
-              href: developer/visuals/sort-options.md
-        - name: Resurssit
-          items:
-            - name: Kehityskeskus
-              href: 'https://powerbi.microsoft.com/developers/'
-            - name: Mallit
-              href: 'https://microsoft.github.io/PowerBI-visuals/samples/'
-            - name: Mukautettujen visualisointien Git Repo
-              href: 'https://go.microsoft.com/fwlink/?linkid=848277'
-            - name: SSL-varmenteen luominen
-              href: developer/visuals/create-ssl-certificate.md
-    - name: Automaatio
-      items:
-        - name: Yleiskatsaus
-          items:
-            - name: 'Mitä voin tehdä Power BI:n ohjelmointirajapinnalla?'
-              href: developer/overview-of-power-bi-rest-api.md
-        - name: Opetusohjelmat
-          items:
-            - name: Tietojen työntäminen tietojoukkoon
-              href: developer/walkthrough-push-data.md
-            - name: Todennustunnuksen hankkiminen
-              href: developer/walkthrough-push-data-get-token.md
-            - name: Tietojoukon luominen
-              href: developer/walkthrough-push-data-create-dataset.md
-            - name: Tietojoukon hakeminen rivien lisäämiseksi
-              href: developer/walkthrough-push-data-get-datasets.md
-            - name: Rivien lisääminen taulukkoon
-              href: developer/walkthrough-push-data-add-rows.md
-        - name: Käsitteet
-          items:
-            - name: Automaattinen reaaliaikaisten tietojen säilytyskäytäntö
-              href: developer/api-automatic-retention-policy-for-real-time-data.md
-            - name: Tietojen lähettäminen
-              items:
-                - name: Power BI REST -ohjelmointirajapinnan rajoitukset
-                  href: developer/api-rest-api-limitations.md
-                - name: Tietojoukon ominaisuudet
-                  href: developer/api-dataset-properties.md
-                - name: Tietomallin versiointi
-                  href: developer/api-data-model-versioning.md
-        - name: Ohjeet
-          items:
-            - name: Tunnistetietojen määrittäminen
-              href: developer/configure-credentials.md
-            - name: Tunnistetietojen salaaminen
-              href: developer/encrypt-credentials.md
-        - name: Viittaus
-          items:
-            - name: REST-ohjelmointirajapinnat
-              href: 'https://docs.microsoft.com/rest/api/power-bi'
-            - name: 'Power BI:n REST-ohjelmointirajapinnan viite'
-              href: developer/rest-api-reference.md
-            - name: Kattava koodiluettelo
-              href: developer/walkthrough-push-data-complete-code.md
-        - name: Resurssit
-          items:
-            - name: Kehityskeskus
-              href: 'https://powerbi.microsoft.com/en-us/developers/'
-            - name: 'Power BI C# Git Repo'
-              href: 'https://go.microsoft.com/fwlink/?linkid=848273'
-            - name: '.NET SDK: lataaminen'
-              href: 'https://go.microsoft.com/fwlink/?linkid=848274'
 - name: Power BI -raporttipalvelin
   items:
     - name: Yleiskatsaus
@@ -1267,69 +1131,6 @@
       items:
         - name: Yhdyskäytävän kuukausittaiset päivitykset
           href: /data-integration/gateway/service-gateway-monthly-updates
-- name: Hallinta
-  items:
-    - name: Yleiskatsaus
-      items:
-        - name: 'Mitä on Power BI:n hallinta?'
-          href: service-admin-administering-power-bi-in-your-organization.md
-    - name: Käsitteet
-      items:
-        - name: 'Hallintarooli Office 365:ssä'
-          href: service-admin-role.md
-        - name: Usein kysytyt kysymykset
-          href: service-admin-faq.md
-        - name: Korkean käytettävyyden ja vikasietoisuuden usein kysytyt kysymykset
-          href: service-admin-failover.md
-    - name: Ohjeet
-      items:
-        - name: Käyttöoikeudet ja rekisteröityminen
-          items:
-            - name: Käyttöoikeudet organisaatiollesi
-              href: service-admin-licensing-organization.md
-            - name: Osta Power BI Pro
-              href: service-admin-purchasing-power-bi-pro.md
-            - name: Rekisteröidy Office 365 -kokeiluversion käyttäjäksi
-              href: service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md
-            - name: Lisää Power BI Office 365 -kumppanin kanssa
-              href: service-admin-syndication-partner.md
-        - name: Hallintaportaalin käyttö
-          href: service-admin-portal.md
-        - name: Missä vuokraajani sijaitsee?
-          href: service-admin-where-is-my-tenant-located.md
-        - name: Kirjautuneiden käyttäjien etsiminen
-          href: service-admin-access-usage.md
-        - name: 'Power BI:n auditointi'
-          href: service-admin-auditing.md
-        - name: Seuraa palvelun kuntoa
-          href: service-admin-health.md
-        - name: Power BI -tilin sulkeminen
-          href: service-admin-closing-your-account.md
-        - name: Power BI ja ExpressRoute
-          href: service-admin-power-bi-expressroute.md
-        - name: 'Azure AD B2B:n käyttö'
-          href: service-admin-azure-ad-b2b.md
-        - name: 'Rivitason suojaus Power BI:ssä'
-          href: service-admin-rls.md
-        - name: 'Power BI:n arkistoitu työtila'
-          href: service-admin-power-bi-archived-workspace.md
-        - name: Mobiilisovellusten määrittäminen Intunella
-          href: service-admin-mobile-intune.md
-    - name: Viittaus
-      items:
-        - name: 'PowerShell, REST-ohjelmointirajapinnat ja .NET SDK'
-          href: service-admin-reference.md
-        - name: 'Power BI:n cmdlet-komennot PowerShellille'
-          href: 'https://docs.microsoft.com/powershell/power-bi/'
-          maintainContext: true
-        - name: Palvelun URL-osoiteviittaus
-          href: power-bi-whitelist-urls.md
-    - name: Resurssit
-      items:
-        - name: 'Power BI:n hallinta- ja käyttöönottotavat'
-          href: service-admin-governance.md
-        - name: 'Power BI:n suojaus'
-          href: service-admin-power-bi-security.md
 - name: Opas
   items:
     - name: Yleiskatsaus
@@ -1340,6 +1141,8 @@
       href: guidance/import-modeling-data-reduction.md
     - name: JAKO-funktion ja jako-operaattorin (/) vertailu
       href: guidance/dax-divide-function-operator.md
+    - name: Virhefunktioiden asianmukainen käyttö
+      href: guidance/dax-error-functions.md
     - name: Tietovoiden parhaat käytännöt
       href: service-dataflows-best-practices.md
     - name: Raportit

@@ -1,0 +1,61 @@
+### YamlMime:Landing
+title: Power BI järjestelmänvalvojille
+summary: Power BI -dokumentaatio tarjoaa asiantuntijatietoja ja ratkaisuja tarpeisiisi vastaamiseksi riippumatta siitä, miten käytät Power BI:tä.
+metadata:
+  title: Power BI järjestelmänvalvojille
+  description: Power BI -dokumentaatio tarjoaa asiantuntijatietoja ja ratkaisuja tarpeisiisi vastaamiseksi riippumatta siitä, miten käytät Power BI:tä.
+  services: powerbi
+  ms.service: powerbi
+  ms.subservice: powerbi-service
+  ms.topic: landing-page
+  ms.collection: collection
+  author: maggiesMSFT
+  ms.author: maggies
+  ms.date: 10/04/2019
+  ms.openlocfilehash: 8209cc755b33887c533e9f90b9b1cd7a5021490e
+  ms.sourcegitcommit: d02de4ca33d865aee3e3e764b98f221950cb0a10
+  ms.translationtype: HT
+  ms.contentlocale: fi-FI
+  ms.lasthandoff: 10/10/2019
+  ms.locfileid: "72245646"
+landingContent:
+- title: Tietoja Power BI:stä järjestelmänvalvojille
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Mitä on Power BI:n hallinta?
+      url: ../service-admin-administering-power-bi-in-your-organization.md
+  - linkListType: concept
+    links:
+    - text: Hallintarooli Office 365:ssä
+      url: ../service-admin-role.md
+- title: Aloittaminen
+  linkLists:
+  - linkListType: concept
+    links:
+    - text: Käyttöoikeudet organisaatiollesi
+      url: ../service-admin-licensing-organization.md
+    - text: Hallintaportaalin käyttö
+      url: ../service-admin-portal.md
+  - linkListType: how-to-guide
+    links:
+    - text: Osta Power BI Pro
+      url: ../service-admin-purchasing-power-bi-pro.md
+    - text: Rekisteröidy Office 365 -kokeiluversion käyttäjäksi
+      url: ../service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md
+    - text: Lisää Power BI Office 365 -kumppanin kanssa
+      url: ../service-admin-syndication-partner.md
+- title: Vuokraajat
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Missä vuokraajani sijaitsee?
+      url: ../service-admin-where-is-my-tenant-located.md
+    - text: Kirjautuneiden käyttäjien etsiminen
+      url: ../service-admin-access-usage.md
+    - text: Power BI:n auditointi
+      url: ../service-admin-auditing.md
+    - text: Seuraa palvelun kuntoa
+      url: ../service-admin-health.md
+    - text: Power BI -tilin sulkeminen
+      url: ../service-admin-closing-your-account.md

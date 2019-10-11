@@ -8,17 +8,17 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 09/26/2019
-ms.openlocfilehash: bbd9a3884b3b6b0cd235471b0746f605e3872aff
-ms.sourcegitcommit: e2c5d4561455c3a4806ace85defbc72e4d7573b4
+ms.date: 10/03/2019
+ms.openlocfilehash: a97c8125af46eae193f6c592d0b3c1153ae9b50c
+ms.sourcegitcommit: 9bf3cdcf5d8b8dd12aa1339b8910fcbc40f4cbe4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "71325740"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "71968636"
 ---
 # <a name="install-power-bi-desktop-optimized-for-power-bi-report-server"></a>Asenna Power BI -raporttipalvelimelle optimoitu Power BI Desktop
 
-Jotta voit luoda Power BI -raportteja Power BI -raporttipalvelimelle, sinun on ladattava ja asennettava Power BI -raporttipalvelimelle optimoitu Power BI Desktop. Tämä versio on erilainen kuin Power BI -palvelun kanssa käytettävä Power BI Desktop. Power BI Desktopin versio Power BI -palvelulle sisältää esimerkiksi esiversio-ominaisuuksia, joita Power BI -raporttipalvelinversiossa ei ole ennen niiden julkaisua. Käyttämällä tätä versiota varmistetaan, että raporttipalvelin voi käsitellä raporttien ja mallin tunnettua versiota. 
+Jotta voit luoda Power BI -raportteja Power BI -raporttipalvelimelle, sinun on ladattava ja asennettava Power BI -raporttipalvelimelle optimoitu Power BI Desktop -versio. Tämä versio on erilainen kuin Power BI -palvelun kanssa käytettävä Power BI Desktop. Power BI Desktopin versio Power BI -palvelulle sisältää esimerkiksi esiversio-ominaisuuksia, joita Power BI -raporttipalvelinversiossa ei ole ennen niiden yleistä julkaisua. Käyttämällä tätä versiota varmistetaan, että raporttipalvelin voi käsitellä raporttien ja mallin tunnettua versiota. 
 
 Onneksi voit asentaa Power BI Desktopin ja Power BI -raporttipalvelimelle optimoidun Power BI Desktopin rinnakkain samalle tietokoneelle.
 
@@ -32,7 +32,7 @@ Helpoin tapa varmistaa, että sinulla on Power BI -raporttipalvelimelle optimoid
 
     Voit myös siirtyä [Power BI -raporttipalvelin](https://powerbi.microsoft.com/report-server/) -aloitussivulle ja valita **Lataamisen lisäasetukset**.
 
-2. Valitse Download Center -sivulla **Lataa**.
+2. Valitse Download Center -sivulla ensin kieli ja sitten **Lataa**.
 
 3. Tietokoneestasi riippuen valitse: 
 
@@ -65,7 +65,11 @@ Power BI -raportin muokkaaminen Power BI -raporttipalvelimesta tai uuden Power B
 
 Power BI -raporttipalvelimen Power BI -raportit Power BI -palvelussa (http://app.powerbi.com), ja Power BI -mobiilisovelluksissa toimivat lähes täsmälleen samoin, mutta jotkut ominaisuudet ovat erilaisia.
 
-### <a name="in-a-browser"></a>Selaimessa
+### <a name="selecting-a-language"></a>Kielen valitseminen
+
+Jos Power BI Desktop on optimoitu Power BI -raporttipalvelimelle, voit valita kielen sovellusta asentaessasi. Et voi vaihtaa kieltä sen jälkeen, mutta voit asentaa version toisella kielellä.
+
+### <a name="report-visuals-in-a-browser"></a>Raportin visualisoinnit selaimessa
 
 Power BI -raporttipalvelimen raportit tukevat lähes kaikkia visualisointeja, mukautetut visualisoinnit mukaan lukien. Power BI -raporttipalvelimen raportit eivät tue seuraavia:
 
@@ -74,7 +78,7 @@ Power BI -raporttipalvelimen raportit tukevat lähes kaikkia visualisointeja, mu
 * Navigointipolut
 * Power BI Desktopin esikatselutoiminnot
 
-### <a name="in-the-power-bi-mobile-apps"></a>Power BI -mobiilisovelluksissa
+### <a name="reports-in-the-power-bi-mobile-apps"></a>Raportit Power BI -mobiilisovelluksissa
 
 Power BI -raporttipalvelimen raportit tukevat [Power BI -mobiilisovellusten](../consumer/mobile/mobile-apps-for-mobile-devices.md) kaikkia tavallisia toimintoja, mukaan luettuina seuraavat:
 

@@ -3,20 +3,19 @@ title: Usein kysyttyjä loppukäyttäjää koskevia kysymyksiä Power BI:stä
 description: Selaa usein kysyttyjä kysymyksiä ja vastauksia Power BI -palvelusta ja Power BI -mobiilisovelluksista.
 author: mihart
 manager: kvivek
-ms.custom: seodec18
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 6/17/2019
+ms.date: 10/03/2019
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 5efdb98e0722add361f3b333f773fc03c6ea50a9
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: bf3e7b790788c8ce21b222a083a853b06185acc0
+ms.sourcegitcommit: b7a9862b6da940ddebe61bc945a353f91cd0e4bd
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "69654132"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71943336"
 ---
 # <a name="frequently-asked-questions-about-power-bi"></a>Usein kysyttyjä kysymyksiä Power BI:stä
 
@@ -33,27 +32,17 @@ Power BI Pro on yksittäinen käyttöoikeus, joka mahdollistaa pääsyn Power BI
 
 Power BI Premium tarjoaa varatun kapasiteetin, joka takaa yhtenäisemmän suorituskyvyn. Se tukee myös suurempia tietomääriä Power BI:ssä. Yksittäisten käyttäjien kohdalla Premium mahdollistaa myös Pro-käyttäjien luoman sisällön laaja-alaisen jakamisen ilman, että sisältöä katselevilla vastaanottajilla on oltava käyttäjäkohtainen käyttöoikeus.
 
-## <a name="what-happens-if-my-power-bi-pro-license-expires"></a>Mitä tapahtuu, jos Power BI Pro -käyttöoikeus päättyy?
-
-Power BI Pro -käyttöoikeuden päätyttyä alkaa lisäaika. Jos kyseessä on volyymikäyttöoikeushankinta, lisäaika on 90 päivää. Jos kyseessä on suoraan hankittu käyttöoikeus, lisäaika on 30 päivää.
-
-Power BI Pro -tilauksen elinkaari on sama kuin Office 365:llä. Lisätietoja on artikkelissa [Mitä tiedoilleni ja käyttöoikeudelleni tapahtuu, kun Office 365 for Business -tilaus päättyy?](https://support.office.com/article/What-happens-to-my-data-and-access-when-my-Office-365-for-business-subscription-ends-4436582f-211a-45ec-b72e-33647f97d8a3)
-
 ## <a name="what-if-i-have-questions-about-power-bi-premium"></a>Entä jos minulla on kysyttävää Power BI Premiumista?
 
 Jos sinulla on Power BI Premiumiin liittyviä kysymyksiä, tutustu [Power BI Premiumin usein kysyttyihin kysymyksiin](../service-premium-faq.md).
 
-## <a name="how-do-i-find-out-who-in-my-organization-has-a-power-bi-account"></a>Kuinka saan selville, keillä organisaationi jäsenillä on Power BI -tili?
-
-Microsoft Azure Active Directoryn integroidut sovellukset -raportti Power BI:lle sisältää tiedon organisaatiosi aktiivisista käyttäjistä. Azure AD -raportista ei käy ilmi, minkätyyppinen käyttöoikeus kullakin käyttäjällä on. Se ilmoittaa vain, ketkä käyttäjät ovat kirjautuneet Power BI:hin ja milloin he kirjautuivat sisään. Katso lisätietoja artikkelista [Kirjautuneiden Power BI -käyttäjien etsiminen](../service-admin-access-usage.md).
-
 ## <a name="what-is-power-bi-desktop"></a>Mikä on Power BI Desktop?
 
-Power BI Desktop on maksuton sovellus, jonka voit asentaa saman tien omalle tietokoneellesi. Power BI Desktop kuuluu yhteen Power BI -palvelun kanssa.  Tietotutkijat, järjestelmänvalvojat ja kehittäjät luovat raportteja Power BI Desktopin avulla ja tuovat ne kaltaistesi Power BI -palvelun käyttäjien saataville. Lue lisää siitä, [mikä on Power BI Desktop](../desktop-what-is-desktop.md).
+Power BI Desktop on maksuton sovellus, jonka voit asentaa saman tien omalle tietokoneellesi. Power BI Desktop kuuluu yhteen Power BI -palvelun kanssa.  Tietotutkijat, järjestelmänvalvojat ja kehittäjät luovat raportteja Power BI Desktopin avulla ja tuovat ne kaltaistesi Power BI -palvelun *kuluttajien* saataville. Lue lisää siitä, [mikä on Power BI Desktop](../desktop-what-is-desktop.md).
 
 ## <a name="what-do-i-need-to-use-the-power-bi-service"></a>Mitä tarvitsen Power BI -palvelun käyttämiseksi?
 
-Selain ja työsähköpostiosoite riittävät. Voit rekisteröityä *.gov*- ja *.mil*-sähköpostiosoitteilla. Katso lisätietoja artikkelista [Rekisteröi Yhdysvaltain valtionhallinnon organisaatio Power BI -palveluun](../service-govus-signup.md).
+Selain ja työsähköpostiosoite riittävät. Voit myös rekisteröityä *.gov*- ja *.mil*-sähköpostiosoitteilla. Katso lisätietoja artikkelista [Rekisteröi Yhdysvaltain valtionhallinnon organisaatio Power BI -palveluun](../service-govus-signup.md).
 
 ## <a name="why-do-i-have-to-sign-up-with-my-work-email"></a>Miksi rekisteröitymiseen on käytettävä työsähköpostia?
 
@@ -88,7 +77,7 @@ Seuraavat resurssit ovat käytettävissäsi alkuun pääsemiseksi:
 * [Power BI -blogi](http://blogs.msdn.com/b/powerbi/)
 * [Verkkoseminaarit](../webinars.md)
 * [YouTube-kanavamme](https://www.youtube.com/user/mspowerbi) aloitusohjevideot
-* [Aloita Power BI:n käyttäminen](../service-get-started.md) -artikkeli
+* [Aloita Power BI:n käyttäminen *kuluttajana*](power-bi-consumer-landing.md) -artikkeli
 * [Liity yhteisöön](https://community.powerbi.com/) ja esitä kysymyksiä
 * Katso lisää ehdotuksia artikkelista [10 vinkkiä ohjeiden hankkimiseen](../service-tips-for-finding-help.md).
 
@@ -126,6 +115,7 @@ Kuten monissa muissakin Microsoft-palveluissa ja -ohjelmistoissa, myös Power BI
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
-* [Mikä on Power BI?](../power-bi-overview.md)
+* [Mikä Power BI:n kuluttajaversio on?](end-user-consumer.md)
+* [Miten kuluttaja käyttää Power BI:tä?](end-user-reading-view.md)
 * Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)
 * Eikö ongelma ratkennut? Vieraile [Power BI -tukisivulla](https://powerbi.microsoft.com/support/)

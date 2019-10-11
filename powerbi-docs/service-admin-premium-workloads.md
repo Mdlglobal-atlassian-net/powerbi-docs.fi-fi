@@ -10,12 +10,12 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 08/21/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: 2d2eb51c5aad44572f1b427248fd85ef19a6306f
-ms.sourcegitcommit: e62889690073626d92cc73ff5ae26c71011e012e
+ms.openlocfilehash: a05924fc093c1514f51c3fabac3162433e2188f7
+ms.sourcegitcommit: 9bf3cdcf5d8b8dd12aa1339b8910fcbc40f4cbe4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/23/2019
-ms.locfileid: "69985701"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "71968912"
 ---
 # <a name="configure-workloads-in-a-premium-capacity"></a>Premium-kapasiteettien kuormitusten määrittäminen
 
@@ -59,18 +59,59 @@ Tekoälykuormituksen avulla voit käyttää kognitiivisia palveluita ja automaat
 
 ### <a name="datasets"></a>Tietojoukot
 
-Tietojoukkojen kuormitus on oletuksena käytössä, eikä sitä voi poistaa käytöstä. Voit hallita kuormituksen toimintaa seuraavien asetusten avulla.
+Tietojoukkojen kuormitus on oletuksena käytössä, eikä sitä voi poistaa käytöstä. Voit hallita kuormituksen toimintaa seuraavien asetusten avulla. Taulukon alla on lisää käyttötietoja joidenkin asetusten osalta.
 
 | Asetuksen nimi | Kuvaus |
 |---------------------------------|----------------------------------------|
 | **Muistin enimmäismäärä (%)** | Tietojoukkojen käytettävissä olevan muistin enimmäismäärä prosentteina kapasiteetissa. |
 | **XMLA:n päätepiste** | Tämä määrittää, että asiakassovelluksista tulevissa yhteyksissä noudatetaan työtilan ja sovelluksen tasoilla määritettyä suojausryhmän jäsenyyttä. Lisätietoja on artikkelissa [Tietojoukkoihin yhdistäminen asiakassovelluksilla ja -työkaluilla](service-premium-connect-tools.md). |
-| **Välirivien enimmäismäärä** | DirectQueryn palauttamien välirivien enimmäismäärä. Oletusarvo on 1000000 ja sallittu alue on 100000–2147483647. Tämän asetuksen avulla voi hallita resurssi-intensiivisten tai huonosti suunniteltujen raporttien vaikutusta. |
-| **Offline-tietojoukon enimmäiskoko (Gt)** | Muistissa olevan offline-tietojoukon enimmäiskoko. Tämä on pakattu koko levyllä. Oletusarvon asettaa SKU ja sallittu alue on 0,1–10 Gt. Tämän asetuksen avulla voi estää raportin tekijöiltä kapasiteettiin kielteisesti vaikuttavan suuren tietojoukon julkaisemisen. |
-| **Tulosrivien enimmäismäärä** | DAX-kyselyssä palautettavien rivien enimmäismäärä. Oletusarvo on -1 (ei rajaa) ja sallittu alue on 100000–2147483647. Tämän asetuksen avulla voi hallita resurssi-intensiivisten tai huonosti suunniteltujen raporttien vaikutusta. |
-| **Kysely muistiraja (%)** | Kyselyn tai DAX-mittarin tilapäisiin kyselyihin käytettävissä olevan muistin enimmäismäärä prosentteina. Tämän asetuksen avulla voi hallita resurssi-intensiivisten tai huonosti suunniteltujen raporttien vaikutusta. |
-| **Kyselyn aikakatkaisu (sekuntia)** | Kyselyn aikakatkaisuajan suurin mahdollinen aika. Oletusarvo on 3600 sekuntia (1 tunti). Arvo 0 määrittää, että kyselyissä ei ole aikakatkaisua. Tämän asetuksen avulla voi hallita paremmin pitkäkestoisia kyselyitä. |
+| **Välirivien enimmäismäärä** | DirectQueryn palauttamien välirivien enimmäismäärä. Oletusarvo on 1000000 ja sallittu alue on 100000–2147483647. |
+| **Offline-tietojoukon enimmäiskoko (Gt)** | Muistissa olevan offline-tietojoukon enimmäiskoko. Tämä on pakattu koko levyllä. Oletusarvon asettaa SKU ja sallittu alue on 0,1–10 Gt. |
+| **Tulosrivien enimmäismäärä** | DAX-kyselyssä palautettavien rivien enimmäismäärä. Oletusarvo on -1 (ei rajaa) ja sallittu alue on 100000–2147483647. |
+| **Kysely muistiraja (%)** | Kyselyn tai DAX-mittarin tilapäisiin kyselyihin käytettävissä olevan muistin enimmäismäärä prosentteina. |
+| **Kyselyn aikakatkaisu (sekuntia)** | Kyselyn aikakatkaisuajan suurin mahdollinen aika. Oletusarvo on 3600 sekuntia (1 tunti). Arvo 0 määrittää, että kyselyissä ei ole aikakatkaisua. |
 |  |  |  |
+
+#### <a name="max-intermediate-row-set-count"></a>Välirivien enimmäismäärä
+
+Tämän asetuksen avulla voi hallita resurssi-intensiivisten tai huonosti suunniteltujen raporttien vaikutusta. Kun DirectQuery-tietojoukon kysely tuottaa paljon tuloksia lähdetietokannasta, se voi aiheuttaa piikin muistin käytössä ja tietojenkäsittelykustannuksissa. Tämä tilanne voi johtaa siihen, että muille käyttäjille ja raporteille resursseja on vain vähän. Tämän asetuksen avulla kapasiteetin järjestelmänvalvoja voi määrittää, kuinka monta riviä yksilöllinen kysely voi noutaa tietolähteestä.
+
+Jos kapasiteetti sen sijaan tukee oletuksena yli miljoonaa riviä ja tietojoukko on suuri, suurenna tätä asetusta, jotta lisää rivejä voidaan noutaa.
+
+Ota huomioon, että tämä asetus vaikuttaa vain DirectQuery-kyselyihin, kun taas [Tulosrivien enimmäismäärä](#max-result-row-set-count) vaikuttaa DAX-kyselyihin.
+
+#### <a name="max-offline-dataset-size"></a>Offline-tietojoukon enimmäiskoko
+
+Tämän asetuksen avulla voi estää raportin tekijöiltä kapasiteettiin kielteisesti vaikuttavan suuren tietojoukon julkaisemisen. Huomaa, että Power BI ei pysty määrittämään todellista muistissa olevaa kokoa ennen kuin tietojoukko on ladattu muistiin. On mahdollista, että tietojoukko, jolla on pienempi offline-koko, voi sisältää suuremman muistijalanjäljen kuin tietojoukko, jolla on suurempi offline-koko.
+
+Jos sinulla on aiemmin luotu tietojoukko, joka on suurempi kuin tälle asetukselle määrittämäsi koko, tietojoukon lataaminen epäonnistuu, kun käyttäjä yrittää käyttää sitä.
+
+#### <a name="max-result-row-set-count"></a>Tulosrivien enimmäismäärä
+
+Tämän asetuksen avulla voi hallita resurssi-intensiivisten tai huonosti suunniteltujen raporttien vaikutusta. Jos tämä raja saavutetaan DAX-kyselyssä, raportin käyttäjä näkee seuraavan virheen. Käyttäjän on kopioitava virheen tiedot ja otettava yhteyttä järjestelmänvalvojaan.
+
+![Tietoja ei voitu ladata tälle visualisoinnille](media/service-admin-premium-workloads/could-not-load-data.png)
+
+Ota huomioon, että tämä asetus vaikuttaa vain DAX-kyselyihin, kun taas [Välirivien enimmäismäärä](#max-intermediate-row-set-count) vaikuttaa DirectQuery-kyselyihin.
+
+#### <a name="query-memory-limit"></a>Kysely muistiraja
+
+Tämän asetuksen avulla voi hallita resurssi-intensiivisten tai huonosti suunniteltujen raporttien vaikutusta. Jotkin kyselyt ja laskutoimitukset voivat aiheuttaa välituloksia, jotka käyttävät paljon muistia kapasiteetissa. Tämä tilanne voi aiheuttaa sen, että muut kyselyt suoritetaan hyvin hitaasti. Tällöin muut tietojoukot poistetaan kapasiteetista ja tuloksena syntyy muistivirheitä kapasiteetin muille käyttäjille.
+
+Tämä asetus koskee tietojen päivittämistä ja raportin hahmonnusta. Tietojen päivittäminen suorittaa sekä tietojen päivittämisen tietolähteestä että kyselyn päivityksestä, ellei kyselyn päivitystä ole poistettu käytöstä. Jos kyselyn päivitystä ei ole poistettu käytöstä, tätä muistirajaa sovelletaan myös näihin kyselyihin. Epäonnistuneen kyselyn takia ajoitetun päivityksen tila ilmoitetaan epäonnistuneeksi, vaikka tietojen päivittäminen onnistui.
+
+#### <a name="query-timeout"></a>Kyselyn aikakatkaisu
+
+Tämän asetuksen avulla voit hallita entistä paremmin pitkäkestoisten kyselyiden suorittamista, minkä seurauksena raportit voivat latautua käyttäjille hitaasti. Tämä asetus koskee tietojen päivittämistä ja raportin hahmonnusta. Tietojen päivittäminen suorittaa sekä tietojen päivittämisen tietolähteestä että kyselyn päivityksestä, ellei kyselyn päivitystä ole poistettu käytöstä. Jos kyselyn päivitystä ei ole poistettu käytöstä, tätä aikakatkaisurajaa sovelletaan myös näihin kyselyihin.
+
+Tämä asetus koskee yksittäistä kyselyä, eikä sen ajan pituutta, joka kuluu kaikkien tietojoukon tai raportin päivittämiseen liittyvien kyselyiden suorittamiseen. Katso seuraavaa esimerkkiä:
+
+- **Kyselyn aikakatkaisu** -asetus on 1200 (20 minuuttia).
+- Suoritettavana on viisi kyselyä, joista jokaisen suoritusaika on 15 minuuttia.
+
+Kaikkien kyselyiden yhteenlaskettu aika on 75 minuuttia, mutta asetusraja ei täyty, koska jokaisen yksittäisen kyselyn suoritusaika on alle 20 minuuttia.
+
+Huomaa, että Power BI -raportit ohittavat tämän oletusarvon niin, että kapasiteetin kunkin kyselyn aikakatkaisu on huomattavasti lyhyempi. Kunkin kyselyn aikakatkaisu on yleensä noin kolme minuuttia.
 
 ### <a name="dataflows"></a>Tietovuot
 

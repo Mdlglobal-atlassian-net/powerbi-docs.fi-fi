@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/22/2019
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: 4584ad0f8c083a765b1a1a9943496b40a3ed4bdf
-ms.sourcegitcommit: dc0258bb4f647ff646c6fff2aaffa29b413aa2df
+ms.openlocfilehash: cfae856cf80027a92fb7d19c27b990aa659d992d
+ms.sourcegitcommit: 9bf3cdcf5d8b8dd12aa1339b8910fcbc40f4cbe4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68342169"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "71968738"
 ---
 # <a name="filters-and-highlighting-in-power-bi-reports"></a>Suodattimet ja korostaminen Power BI -raporteissa
  Tässä artikkelissa esitellään suodattaminen ja korostaminen Power BI -palvelussa. Käyttökokemus on lähes sama kuin Power BI Desktopissa. *Suodattimet* poistavat kaikki muut tiedot paitsi ne, joihin haluat keskittyä. *Korostus* ei ole suodattamista. Se ei poista tietoja, vaan korostaa näkyvien tietojen alijoukon; korostamattomat tiedot pysyvät näkyvissä, mutta himmeinä.
@@ -28,7 +28,7 @@ Raportteja voidaan suodattaa ja korostaa monin eri tavoin Power BI:ssä. Kaikkie
 * Yksityiskohtainen esittely [suodattimien ja korostusten ohjaimista, jotka ovat käytettävissä muokkausnäkymässä](power-bi-report-add-filter.md) Power BI Desktopissa ja Power BI -palvelussa. Artikkelissa perehdytään suodattimien tyyppeihin, kuten päivämäärään ja aikaan, lukuihin ja tekstiin. Se kattaa myös erot perus- ja lisäasetusten välillä.
 * Kun olet oppinut, miten suodattimet ja korostus toimivat oletusarvoisesti, voit lukea siitä, [miten sivulla olevat visualisoinnit suodattavat ja korostavat toisiaan](service-reports-visual-interactions.md)
 
-**Tiesitkö?** Power BI:ssä on uusi suodatuskokemus, joka on tällä hetkellä esikatseluvaiheessa. Lue lisää [uudesta suodatuskokemuksesta Power BI -raporteissa](power-bi-report-filter.md).
+**Tiesitkö?** Power BI:ssä on uusi suodatuskokemus. Lue lisää [uudesta suodatuskokemuksesta Power BI -raporteissa](power-bi-report-filter.md).
 
 ![Uusi suodatuskokemus](media/power-bi-reports-filters-and-highlighting/power-bi-filter-reading.png)
 

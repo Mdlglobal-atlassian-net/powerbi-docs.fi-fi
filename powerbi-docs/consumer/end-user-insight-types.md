@@ -4,23 +4,25 @@ description: Nopeat merkitykselliset tiedot ja Näytä merkitykselliset tiedot P
 author: mihart
 manager: kvivek
 ms.reviewer: ''
-ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 9/23/2019
+ms.date: 10/2/2019
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 991dd7bb94e79a21c8e4ec877093b81d2ed9b285
-ms.sourcegitcommit: e2c5d4561455c3a4806ace85defbc72e4d7573b4
+ms.openlocfilehash: 507d49ba6cdb894667bf66f8f35c5c325b9ff25e
+ms.sourcegitcommit: b7a9862b6da940ddebe61bc945a353f91cd0e4bd
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "71327770"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71943913"
 ---
 # <a name="types-of-insights-supported-by-power-bi"></a>Power BI:n tukemat merkityksellisten tietojen tyypit
+
+Power BI -palvelu voi automaattisesti etsiä merkityksellisiä tietoja koontinäytöistä tai raporteista.
+
 ## <a name="how-does-insights-work"></a>Merkityksellisten tietojen toiminta
-Power BI hakee nopeasti tietojoukosta erilaisia alijoukkoja ja hyödyntää kehittyneitä algoritmeja, joiden avulla se pyrkii tunnistamaan mahdollisesti merkityksellisiä tietoja. Power BI tarkistaa niin suuren osan tietojoukosta kuin mahdollista määritetyn ajan sisällä.
+Power BI tekee nopeasti hakuja tietojoukkojesi eri alijoukoista. Haun aikana Power BI käyttää joukkoa kehittyneitä algoritmeja, jotka löytävät mahdollisesti kiinnostavia merkityksellisiä tietoja. Power BI tarkistaa niin suuren osan tietojoukosta kuin mahdollista määritetyn ajan sisällä.
 
 Voit verrata merkityksellisiä tietoja tietojoukkoon tai koontinäytön ruutuun.   
 
@@ -75,7 +77,5 @@ Tunnistaa aikasarjan tiedoissa erityiset päivämäärät tai ajat, joiden arvot
 ## <a name="next-steps"></a>Seuraavat vaiheet
 [Power BI:n merkitykselliset tiedot](end-user-insights.md)
 
-Jos omistat tietojoukon, [optimoi se merkityksellisiä tietoja varten](../service-insights-optimize.md)
-
-Onko sinulla muuta kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
+Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
 

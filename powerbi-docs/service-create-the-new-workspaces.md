@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 09/10/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: a2de6d79971e59879e65d2e3cf652caf156d80cf
-ms.sourcegitcommit: db4fc5da8e65e0a3dc35582d7142a64ad3405de7
+ms.openlocfilehash: 5c50ec38da65573e085d9e27b0e31524256ac009
+ms.sourcegitcommit: d04b9e1426b8544ce16ef25864269cc43c2d9f7b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70904150"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "71715540"
 ---
 # <a name="create-the-new-workspaces-in-power-bi"></a>Uusien työtilojen luominen Power BI:ssä
 
@@ -28,7 +28,7 @@ Seuraavat asiat ovat muuttuneet. Uusissa työtiloissa voit:
 - Tarkempien työtilaroolien käyttäminen oikeuksien määrittämiseksi työtilassa entistä joustavammin.
 
 > [!NOTE]
-> Jos haluat pakottaa rivitason suojauksen (RLS) käyttöön työtilan sisältöä selaaville Power BI Pro -käyttäjille, jatka [perinteisten työtilojen](service-create-workspaces.md) käyttämistä. Valitse **Jäsenet voivat vain tarkastella Power BI -sisältöä** -vaihtoehto. Vaihtoehtoisesti voit julkaista Power BI -sovelluksen näille käyttäjille tai käyttää jakamista sisällön jakelemiseksi. Tuleva Katselija-rooli mahdollistaa tämän skenaarion jatkossa uutta työtilakokemusta tulevissa työtiloissa.
+> Jos haluat pakottaa rivitason suojauksen (RLS) käyttöön työtilan sisältöä selaaville Power BI Pro -käyttäjille, määritä käyttäjille Katselija-rooli.
 
 Katso lisätietoja artikkelista [Uudet työtilat](service-new-workspaces.md).
 
@@ -42,7 +42,7 @@ Katso lisätietoja artikkelista [Uudet työtilat](service-new-workspaces.md).
    
      ![Uusi työtilakokemus](media/service-create-the-new-workspaces/power-bi-new-workspace.png)
      
-     Jos valitset **Palaa perinteiseen**, luot Office 365 -ryhmään perustuvan työtilan. Käytä tätä vaihtoehtoa, jos haluat pakottaa rivitason suojauksen (RLS) käyttöön työtilan jäsenille **Jäsenet voivat vain tarkastella Power BI -sisältöä** -asetuksen avulla.
+     Jos valitset **Palaa perinteiseen**, luot [Office 365 -ryhmään perustuvan työtilan](service-create-workspaces.md). 
 
 2. Anna työtilalle nimi. Jos nimi ei ole käytettävissä, muokkaa nimi yksilölliseksi.
    

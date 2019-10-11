@@ -10,18 +10,18 @@ ms.topic: conceptual
 ms.date: 07/29/2019
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: 431c1738a5d2e975fd96a8209ca8245cd4414d40
-ms.sourcegitcommit: 73228d0a9038b8369369c059ad06168d2c5ff062
+ms.openlocfilehash: d5ada41ef4941f14118b777e37e731337a5282d0
+ms.sourcegitcommit: d04b9e1426b8544ce16ef25864269cc43c2d9f7b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "68730177"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "71715389"
 ---
 # <a name="measures-in-power-bi-desktop"></a>Mittarit Power BI Desktopissa
 
 **Power BI Desktopin** avulla tiedoistasi voi saada paremman käsityksen muutamalla napsautuksella. Joskus nämä tiedot eivät kuitenkaan sisällä kaikkea sitä, mitä tarvitaan, jotta kaikkein tärkeimpiin kysymyksiin saataisiin vastauksia. Mittarit voivat auttaa tämän saavuttamisessa.
 
-Mittareita käytetään joissakin yleisimmissä tietoanalyyseissa, Yksinkertaiset yhteenvedot, kuten summat, keskiarvot, pienimmät ja suurimmat arvot ja määrät, voidaan määrittää Kentät-ruudussa [Yhteenveto ja luokka](https://docs.microsoft.com/power-bi/guided-learning/visualizations?tutorial-step=16) -videossa kuvatulla tavalla. Voit luoda kehittyneempiä laskutoimituksia itse DAX-kaavan avulla. Mittarien lasketut tulokset muuttuvat aina sen mukaan, miten raporttia käsitellään, mahdollistaen nopean ja dynaamisen tietojen tarkastelun. Menetelmien kuvailu on alla.
+Mittareita käytetään joissakin yleisimmissä tietoanalyyseissa, Yksinkertaiset yhteenvedot, kuten summat, keskiarvot, pienimmät ja suurimmat arvot ja määrät, voidaan määrittää Kentät-ruudussa. Mittarien lasketut tulokset muuttuvat aina sen mukaan, miten raporttia käsitellään, mahdollistaen nopean ja dynaamisen tietojen tarkastelun. Menetelmien kuvailu on alla. Lisätietoja on kohdassa [Laskettujen mittarien luominen](/learn/modules/model-data-power-bi/4b-create-calculated-measures).
 
 ## <a name="understanding-measures"></a>Mittarien ymmärtäminen
 

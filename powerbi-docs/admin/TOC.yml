@@ -1,0 +1,65 @@
+- name: 'Power BI:n hallinta'
+  items:
+    - name: Yleiskatsaus
+      expanded: true
+      items:
+        - name: 'Mitä on Power BI:n hallinta?'
+          href: ../service-admin-administering-power-bi-in-your-organization.md
+    - name: Käsitteet
+      expanded: true
+      items:
+        - name: 'Hallintarooli Office 365:ssä'
+          href: ../service-admin-role.md
+        - name: Usein kysytyt kysymykset
+          href: ../service-admin-faq.md
+        - name: Korkean käytettävyyden ja vikasietoisuuden usein kysytyt kysymykset
+          href: ../service-admin-failover.md
+    - name: Ohjeet
+      items:
+        - name: Käyttöoikeudet ja rekisteröityminen
+          items:
+            - name: Käyttöoikeudet organisaatiollesi
+              href: ../service-admin-licensing-organization.md
+            - name: Osta Power BI Pro
+              href: ../service-admin-purchasing-power-bi-pro.md
+            - name: Rekisteröidy Office 365 -kokeiluversion käyttäjäksi
+              href: ../service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md
+            - name: Lisää Power BI Office 365 -kumppanin kanssa
+              href: ../service-admin-syndication-partner.md
+        - name: Hallintaportaalin käyttö
+          href: ../service-admin-portal.md
+        - name: Missä vuokraajani sijaitsee?
+          href: ../service-admin-where-is-my-tenant-located.md
+        - name: Kirjautuneiden käyttäjien etsiminen
+          href: ../service-admin-access-usage.md
+        - name: 'Power BI:n auditointi'
+          href: ../service-admin-auditing.md
+        - name: Seuraa palvelun kuntoa
+          href: ../service-admin-health.md
+        - name: Power BI -tilin sulkeminen
+          href: ../service-admin-closing-your-account.md
+        - name: Power BI ja ExpressRoute
+          href: ../service-admin-power-bi-expressroute.md
+        - name: 'Azure AD B2B:n käyttö'
+          href: ../service-admin-azure-ad-b2b.md
+        - name: 'Rivitason suojaus Power BI:ssä'
+          href: ../service-admin-rls.md
+        - name: 'Power BI:n arkistoitu työtila'
+          href: ../service-admin-power-bi-archived-workspace.md
+        - name: Mobiilisovellusten määrittäminen Intunella
+          href: ../service-admin-mobile-intune.md
+    - name: Viittaus
+      items:
+        - name: 'PowerShell, REST-ohjelmointirajapinnat ja .NET SDK'
+          href: ../service-admin-reference.md
+        - name: 'Power BI:n cmdlet-komennot PowerShellille'
+          href: 'https://docs.microsoft.com/powershell/power-bi/'
+          maintainContext: true
+        - name: Palvelun URL-osoiteviittaus
+          href: ../power-bi-whitelist-urls.md
+    - name: Resurssit
+      items:
+        - name: 'Power BI:n hallinta- ja käyttöönottotavat'
+          href: ../service-admin-governance.md
+        - name: 'Power BI:n suojaus'
+          href: ../service-admin-power-bi-security.md

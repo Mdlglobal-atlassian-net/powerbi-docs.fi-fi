@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 09/05/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 9add7ce3c5caf675fde15fd15eea03d9d9b49d9b
-ms.sourcegitcommit: 9665997274301b228f45aa7250ba557e90164a4d
+ms.openlocfilehash: 32d43ca4b9681495e22db023604afeac31d15e7e
+ms.sourcegitcommit: d04b9e1426b8544ce16ef25864269cc43c2d9f7b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70750895"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "71715206"
 ---
 # <a name="organize-work-in-the-new-workspaces-in-power-bi"></a>Työn järjestäminen uusiin työtiloihin Power BI:ssä
 
@@ -24,7 +24,7 @@ ms.locfileid: "70750895"
 Uusi työtilakokemus on yleisesti käytettävissä (GA), ja se on nyt oletustyötila. Voit kuitenkin edelleen luoda ja käyttää Office 365 -ryhmiin perustuvia [perinteisiä työtiloja](service-create-workspaces.md). 
 
 > [!NOTE]
-> Jotta voit ottaa käyttöön rivitason suojauksen (RLS) käyttäjille, jotka selaavat sisältöä työtilassa, käytä Katselija-roolia. Jos Katselija-rooli ei ole vielä käytettävissä vuokraajassasi, voit edelleen käyttää [perinteisiä työtiloja](service-create-workspaces.md) ja valita **Jäsenet voivat tarkastella vain Power BI -sisältöä** -vaihtoehdon. Vaihtoehtoisesti voit julkaista Power BI -sovelluksen näille käyttäjille tai käyttää jakamista sisällön jakelemiseksi.
+> Jotta voit ottaa käyttöön rivitason suojauksen (RLS) käyttäjille, jotka selaavat sisältöä työtilassa, käytä Katselija-roolia. Jos haluat ottaa RLS:n käyttöön antamatta työtilan käyttöoikeutta, julkaise Power BI -sovellus kyseisille käyttäjille tai jakele sisältö jakamisen avulla.
 
 Uusien työtilojen avulla voit:
 
@@ -73,11 +73,14 @@ Tässä ovat ominaisuudet neljästä roolista: järjestelmänvalvojat, jäsenet,
 | Sallia muille kohteiden jakaminen uudelleen. |  X | X  |   |   |
 | Luoda, muokata ja poistaa työtilan sisältöä.  |  X | X  | X  |   |
 | Julkaista raportteja työtilaan ja poistaa sisältöä.  |  X | X  | X  |   |
-| Luo raportti toisessa työtilassa tämän työtilan tietojoukon perusteella. |  X | X  | X  | X <sup>1</sup>  |
-| Kopioi raportti. | X | X | X | X <sup>1</sup> |
+| Luo raportti toisessa työtilassa tämän työtilan tietojoukon perusteella. |  X | X  | X  |   |
+| Kopioi raportti. | X | X | X |  |
 | Tarkastele ja käytä kohdetta. |  X | X  | X  | X  |
 
-**1** Power BI Pro -käyttöoikeus ja [tietojoukkojen muodostamisoikeudet](service-datasets-build-permissions.md#build-permissions-for-shared-datasets) tarvitaan. 
+> [!NOTE]
+>Raportin kopioiminen ja raportin luominen toisessa työtilassa tämän työtilan tietojoukon perusteella edellyttää, että käyttäjät täyttävät seuraavat lisäehdot:
+>- Power BI Pro -käyttöoikeus tarvitaan. 
+>- Käyttäjillä on oltava tietojoukon muodostamisen käyttöoikeus. Tämän työtilan tietojoukoissa käyttäjillä, joilla on järjestelmänvalvojan, jäsenen tai osallistujaroolin, on muodostamisen käyttöoikeus työtilaroolin kautta.
  
 ## <a name="licensing"></a>Käyttöoikeudet
 Jokainen jäsen, jonka lisäät työtilaan jaetussa kapasiteetissa, tarvitsee Power BI Pro -käyttöoikeuden. Työtilassa nämä käyttäjät voivat tehdä yhteistyötä niiden koontinäyttöjen ja raporttien parissa, jotka aiot julkaista laajemmalle lukijakunnalle tai jopa koko organisaatiolle. 
