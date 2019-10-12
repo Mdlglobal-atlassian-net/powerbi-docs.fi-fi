@@ -11,12 +11,12 @@ ms.topic: tutorial
 ms.date: 06/24/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 508da47272313d9781fdd66c2ca367dcf9e433e5
-ms.sourcegitcommit: d04b9e1426b8544ce16ef25864269cc43c2d9f7b
+ms.openlocfilehash: 8ecec706c281b2a36c342ea852eebb4a8559a6fd
+ms.sourcegitcommit: d02de4ca33d865aee3e3e764b98f221950cb0a10
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "71715239"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "72239945"
 ---
 # <a name="key-performance-indicator-kpi-visuals"></a>Suorituskykyilmaisimen (KPI) visualisoinnit
 
@@ -50,12 +50,12 @@ KPI-tietojoukon pitää sisältää suorituskykyilmaisimen tavoitearvoja. Jos ti
 Tässä opetusohjelmassa käytetään [Jälleenmyyntianalyysimallin PBIX-tiedostoa](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix).
 
 1. Valitse valikkorivin vasemmasta yläosasta **Tiedosto** > **Avaa**
-   
-2. **Jälleenmyyntianalyysimallin PBIX-tiedoston löytäminen**
 
-1. Avaa **Jälleenmyyntianalyysimallin PBIX-tiedosto** raporttinäkymässä ![Näyttökuva raporttinäkymän kuvakkeesta.](media/power-bi-visualization-kpi/power-bi-report-view.png).
+1. **Jälleenmyyntianalyysimallin PBIX-tiedoston löytäminen**
 
-1. Valitse ![Näyttökuva keltaisesta välilehdestä.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) uuden sivun lisäämiseksi.
+1. Avaa **jälleenmyyntianalyysimallin PBIX-tiedosto** raporttinäkymässä. ![Näyttökuva raporttinäkymän kuvakkeesta.](media/power-bi-visualization-kpi/power-bi-report-view.png)
+
+1. Lisää uusi sivu valitsemalla **+** . ![Näyttökuva keltaisesta välilehdestä.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png)
 
 ## <a name="how-to-create-a-kpi"></a>Suorituskykyilmaisimen luominen
 
