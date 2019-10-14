@@ -7,12 +7,12 @@ ms.subservice: report-builder
 ms.topic: conceptual
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: 50f78709ce7ce302ce79df5eb383af25f55d539a
-ms.sourcegitcommit: 8aa90f662afb7492ffcfc11ef142cdb0ccecc9aa
+ms.openlocfilehash: 1a46c1fb8e9f31bd5199fccfaecb16cece144b5a
+ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68471579"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72021035"
 ---
 # <a name="use-shared-datasets-in-power-bi-report-builder"></a>Jaettujen tietojoukkojen käyttö Power BI:n raportin muodostimessa
 
@@ -20,14 +20,14 @@ Voit käyttää Power BI Desktopissa luomaasi tietojoukkoa tietolähteenä Power
 
 ![Power BI Desktopista raportin muodostimen sivutettuun raporttiin](media/report-builder-shared-datasets/power-bi-desktop-report-builder-arrow-26-pgs.png)
 
-Tietojoukon ei tarvitse olla Premium-kapasiteetin työtilassa, eikä sinun tarvitse olla kyseisen työtilan jäsen. Sinulla pitää olla vain tietojoukon [muodostamisen käyttöoikeus](service-datasets-build-permissions.md#build-permissions-for-shared-datasets). Jos haluat julkaista raportin, tarvitset Power BI Pro -käyttöoikeuden. Tarvitset työtilaan myös vähintään osallistujan roolin Premium-kapasiteetissa.
+Tietojoukon ei tarvitse olla Premium-kapasiteetin työtilassa, eikä sinun tarvitse olla kyseisen työtilan jäsen. Sinulla pitää olla vain tietojoukon [muodostamisen käyttöoikeus](service-datasets-build-permissions.md). Jos haluat julkaista raportin, tarvitset Power BI Pro -käyttöoikeuden. Tarvitset työtilaan myös vähintään osallistujan roolin Premium-kapasiteetissa.
 
 ## <a name="what-you-need"></a>Mitä tarvitset
 
 Seuraavassa on luettelo asioista, joita tarvitset ja joita et tarvitse jaetun tietojoukon käyttöön Power BI:n raportin muodostimessa.
 
 - Power BI:n raportin muodostin. [Power BI:n raportin muodostimen lataaminen ja asentaminen](https://go.microsoft.com/fwlink/?linkid=2086513).
-- Sinulla on oltava tietojoukon muodostamisen käyttöoikeus, jotta voit käyttää Power BI -tietojoukkoa. Lue [muodostamisen käyttöoikeudesta](service-datasets-build-permissions.md#build-permissions-for-shared-datasets).
+- Sinulla on oltava tietojoukon muodostamisen käyttöoikeus, jotta voit käyttää Power BI -tietojoukkoa. Lue [muodostamisen käyttöoikeudesta](service-datasets-build-permissions.md).
 - Jos haluat luoda sivutetun raportin raportin muodostimessa, et tarvitse Power BI Pro -käyttöoikeutta. 
 - Tarvitset Power BI Pro -käyttöoikeuden sivutetun raportin julkaisemiseen. Tarvitset työtilaan myös vähintään osallistujan roolin Premium-kapasiteetissa. 
 - Valinnainen: Jos haluat seurata tämän artikkelin ohjeita, lataa Power BI Desktopin [Jälleenmyyntianalyysimallin .pbix](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix)-tiedosto, avaa se Power BI Desktopissa ja lisää taulukko, jossa on paljon sarakkeita. Poista **Muotoilu**-ruudussa käytöstä **Yhteensä**. Julkaise se sitten työtilaan Power BI-palvelussa.

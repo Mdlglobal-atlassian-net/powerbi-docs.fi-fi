@@ -1,20 +1,20 @@
 ---
 title: Tietojen historiatiedot (esiversio)
 description: Moderneissa liiketoimintatietojen projekteissa tietovirran ymmärtäminen tietolähteestä kohteeseen on tärkeä haaste monille asiakkaille.
-author: maggiesMSFT
+author: paulinbar
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.topic: conceptual
 ms.date: 10/03/2019
-ms.author: maggies
+ms.author: painbar
 LocalizationGroup: ''
-ms.openlocfilehash: 87f0fe20a88077d58ee5d44c748d86264b2be536
-ms.sourcegitcommit: 9bf3cdcf5d8b8dd12aa1339b8910fcbc40f4cbe4
+ms.openlocfilehash: e91f1d5084957ee7266161b9a34f916e2902d1f4
+ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "71968841"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72019577"
 ---
 # <a name="data-lineage-preview"></a>Tietojen historiatiedot (esiversio)
 Moderneissa liiketoimintatietojen projekteissa tietovirran ymmärtäminen tietolähteestä kohteeseen voi olla haastavaa. Haaste on vieläkin suurempi, jos olet luonut edistyneitä analyysiprojekteja, jotka kattavat useita tietolähteitä, artefakteja ja riippuvuuksia.  Esimerkiksi kysymyksiin ”Mitä tapahtuu, jos muutan näitä tietoja?” tai ”Miksi tämä raportti ei ole ajan tasalla?” voi olla vaikea vastata. Niiden ymmärtäminen voi vaatia asiantuntijaryhmän tai syvällistä tutkintaa. Olemme suunnitelleet tietojen historiatietojen näkymän, jonka avulla näihin kysymyksiin voi vastata.

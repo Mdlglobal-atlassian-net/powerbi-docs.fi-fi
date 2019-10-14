@@ -10,12 +10,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 05/16/2019
 LocalizationGroup: Share your work
-ms.openlocfilehash: 86fc2f8d13cdcd006c01dfff0114c13cc78f5e65
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: 9824b3340da694c00784f34b0c6245cafbf69383
+ms.sourcegitcommit: d02de4ca33d865aee3e3e764b98f221950cb0a10
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "70987010"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "72239913"
 ---
 # <a name="publish-to-web-from-power-bi"></a>Power BI:n Julkaise verkkoon -toiminto
 
@@ -113,7 +113,7 @@ Kun olet luonut **Julkaise verkkoon** -upotuskoodin, voit hallita koodeja Power 
 
 ## <a name="updates-to-reports-and-data-refresh"></a>Raporttien päivittäminen ja tietojen uudelleenlataus
 
-Kun olet luonut oman **Julkaise verkkoon** -upotuskoodin ja jakanut sen, raporttiin päivitetään kaikki tekemäsi muutokset. Lisäksi upotuskoodilinkki on heti käytettävissä. Kuka tahansa linkin avaava näkee sisällön. Tämän ensimmäisen toiminnon jälkeen raporttien ja visualisointiesi päivitysten näkyminen käyttäjille saattaa kuitenkin kestää noin tunnin. Jos haluat, että päivitykset ovat heti saatavilla, voit poistaa upotuskoodin ja luoda uuden upotuskoodin. Saat lisätietoja tässä artikkelissa olevasta [**Miten se toimii**](#howitworks) -osiosta. 
+Kun olet luonut oman **Julkaise verkkoon** -upotuskoodin ja jakanut sen, raporttiin päivitetään kaikki tekemäsi muutokset. Lisäksi upotuskoodilinkki on heti käytettävissä. Kuka tahansa linkin avaava näkee sisällön. Tämän ensimmäisen toiminnon jälkeen raporttien ja visualisointiesi päivitysten näkyminen käyttäjille saattaa kuitenkin kestää noin tunnin. Saat lisätietoja tässä artikkelissa olevasta [**Miten se toimii**](#howitworks) -osiosta. 
 
 ## <a name="data-refresh"></a>Tietojen uudelleenlataus
 
