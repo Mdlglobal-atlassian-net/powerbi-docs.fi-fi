@@ -10,16 +10,16 @@ ms.topic: conceptual
 ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: cbca162348092d9d03bef03199c63113ec487165
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 86b7a5e93183c06d6cac1445cb1702edde5d4bc9
+ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61226272"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72020601"
 ---
 # <a name="manage-update-and-delete-organizational-content-packs"></a>Organisaation sisältöpakettien hallinta, päivitys ja poistaminen
 > [!NOTE]
-> Et voi luoda organisaation sisältöpaketteja tai asentaa niitä uuden työtilakokemuksen esiversiossa. Nyt on hyvä aika päivittää sisältöpaketit sovelluksiin, jos et ole vielä aloittanut päivittämistä. Lue [lisätietoja uudesta työtilakokemuksesta](service-create-the-new-workspaces.md).
+> Et voi luoda organisaation sisältöpaketteja tai asentaa niitä uudessa työtilakokemuksessa. Nyt on hyvä aika päivittää sisältöpaketit sovelluksiin, jos et ole vielä aloittanut päivittämistä. Lue [lisätietoja uudesta työtilakokemuksesta](service-create-the-new-workspaces.md).
 > 
 
 Voit pakata ja jakaa koontinäyttöjä, raportteja, Excel-työkirjoja ja tietojoukkoja työtovereillesi [organisaation sisältöpaketteina](service-organizational-content-pack-introduction.md). Työtoverisi voivat käyttää niitä sellaisinaan tai luoda niistä itselleen kopion.

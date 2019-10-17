@@ -10,14 +10,17 @@ ms.topic: conceptual
 ms.date: 06/24/2019
 ms.author: mihart
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 1d07c678b02f77689d24d067ca58a4e28ac70cb0
-ms.sourcegitcommit: bc688fab9288ab68eaa9f54b9b59cacfdf47aa2e
+ms.openlocfilehash: 6543263c0e6c3395479169e8b02034e4a9c78f7b
+ms.sourcegitcommit: 3b4de8785d17c9e00b041cff7bd4d39829316437
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68623927"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "72164016"
 ---
 # <a name="shape-maps-in-power-bi-desktop-preview"></a>Muotokartat Power BI Desktopissa (esikatselu)
+
+[!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
+
 Luo **Muotokartta**-visualisointi alueiden vertailemiseksi kartalla värejä käyttämällä. Toisin kuin **Kartta**-visualisoinnissa **Muotokartta** ei voi näyttää arvopisteiden tarkkoja maantieteellisiä sijainteja kartalla. Sen sijaan sen päätarkoituksena on näyttää alueiden suhteellisia vertailuja kartalla eri värejä käyttämällä.
 
 **Muotokartta**-visualisoinnit perustuvat ESRI/TopoJSON-karttoihin, jotka tarjoavat mielenkiintoisen mahdollisuuden käyttää mukautettuja karttoja eli omia karttoja, joita voit luoda. Tällaisia karttoja voivat olla esimerkiksi maantieteelliset kartat, istumapaikkakartat, pohjapiirrokset ja muut. **Muotokarttojen** tämä esikatseluversio ei kuitenkaan tarjoa mahdollisuutta mukautettujen karttojen käyttöön.
@@ -113,7 +116,7 @@ Kun testaat **muotokarttaa** tässä esikatseluversiossa, käytä **seuraavia al
 
 ### <a name="australia-states"></a>Australia: Osavaltiot
 
-| tunnus | lyhenne | ISO-koodi | nimi | postinumerotunnus |
+| ID | lyhenne | ISO-koodi | nimi | postinumerotunnus |
 | --- | --- | --- | --- | --- |
 | au-wa |WA |AU-WA |Western Australia |WA |
 | au-vic |Vic |AU-VIC |Victoria |VIC |
@@ -126,7 +129,7 @@ Kun testaat **muotokarttaa** tässä esikatseluversiossa, käytä **seuraavia al
 
 ### <a name="austria-states"></a>Itävalta: Osavaltiot
 
-| tunnus | ISO-koodi | nimi | englanninkielinen nimi | postinumerotunnus |
+| ID | ISO-koodi | nimi | englanninkielinen nimi | postinumerotunnus |
 | --- | --- | --- | --- | --- |
 | at-wi |AT-9 |Wien |Vienna |WI |
 | at-vo |AT-8 |Vorarlberg |Vorarlberg |VO |
@@ -140,7 +143,7 @@ Kun testaat **muotokarttaa** tässä esikatseluversiossa, käytä **seuraavia al
 
 ### <a name="brazil-states"></a>Brasilia: Osavaltiot
 
-| tunnus |
+| ID |
 | --- |
 | Tocantins |
 | Pernambuco |
@@ -176,7 +179,7 @@ Kun testaat **muotokarttaa** tässä esikatseluversiossa, käytä **seuraavia al
 
 ### <a name="canada-provinces"></a>Kanada: Provinssit
 
-| tunnus | ISO-koodi | nimi | postinumerotunnus |
+| ID | ISO-koodi | nimi | postinumerotunnus |
 | --- | --- | --- | --- |
 | ca-nu |CA-NU |Nunavut |NU |
 | ca-nt |CA-NT |Northwest Territories |NT |
@@ -194,7 +197,7 @@ Kun testaat **muotokarttaa** tässä esikatseluversiossa, käytä **seuraavia al
 
 ### <a name="france-regions"></a>Ranska: Alueet
 
-| tunnus | nimi | englanninkielinen nimi |
+| ID | nimi | englanninkielinen nimi |
 | --- | --- | --- |
 | Alsace |Alsace |Alsace |
 | Rhone-Alpes |Rhône-Alpes |Rhone-Alpes |
@@ -221,7 +224,7 @@ Kun testaat **muotokarttaa** tässä esikatseluversiossa, käytä **seuraavia al
 
 ### <a name="germany-states"></a>Saksa: Osavaltiot
 
-| tunnus | ISO-koodi | nimi | englanninkielinen nimi | postinumerotunnus |
+| ID | ISO-koodi | nimi | englanninkielinen nimi | postinumerotunnus |
 | --- | --- | --- | --- | --- |
 | de-be |DE-BE |Berlin |Berlin |BE |
 | de-th |DE-TH |Thüringen |Thuringia |TH |
@@ -242,7 +245,7 @@ Kun testaat **muotokarttaa** tässä esikatseluversiossa, käytä **seuraavia al
 
 ### <a name="ireland-counties"></a>Irlanti: Läänit
 
-| tunnus |
+| ID |
 | --- |
 | Wicklow |
 | Wexford |
@@ -273,7 +276,7 @@ Kun testaat **muotokarttaa** tässä esikatseluversiossa, käytä **seuraavia al
 
 ### <a name="italy-regions"></a>Italia: Alueet
 
-| tunnus | ISO-koodi | nimi | englanninkielinen nimi | postinumerotunnus |
+| ID | ISO-koodi | nimi | englanninkielinen nimi | postinumerotunnus |
 | --- | --- | --- | --- | --- |
 | it-vn |IT-34 |Veneto |Veneto |VN |
 | it-vd |IT-23 |Valle d'Aosta |Aosta Valley |VD |
@@ -298,7 +301,7 @@ Kun testaat **muotokarttaa** tässä esikatseluversiossa, käytä **seuraavia al
 
 ### <a name="mexico-states"></a>Meksiko: Osavaltiot
 
-| tunnus | lyhenne | ISO-koodi | nimi | englanninkielinen nimi | postinumerotunnus |
+| ID | lyhenne | ISO-koodi | nimi | englanninkielinen nimi | postinumerotunnus |
 | --- | --- | --- | --- | --- | --- |
 | mx-zac |Zac. |MX-ZAC |Zacatecas |Zacatecas |ZA |
 | mx-yuc |Yuc. |MX-YUC |Yucatán |Yucatan |YU |
@@ -335,7 +338,7 @@ Kun testaat **muotokarttaa** tässä esikatseluversiossa, käytä **seuraavia al
 
 ### <a name="netherlands-provinces"></a>Alankomaat: Provinssit
 
-| tunnus | ISO-koodi | nimi | englanninkielinen nimi |
+| ID | ISO-koodi | nimi | englanninkielinen nimi |
 | --- | --- | --- | --- |
 | nl-zh |NL-ZH |Zuid-Holland |South Holland |
 | nl-ze |NL-ZE |Zeeland |Zeeland |
@@ -352,7 +355,7 @@ Kun testaat **muotokarttaa** tässä esikatseluversiossa, käytä **seuraavia al
 
 ### <a name="uk-countries"></a>Yhdistynyt kuningaskunta: Maat
 
-| tunnus | ISO-koodi | nimi |
+| ID | ISO-koodi | nimi |
 | --- | --- | --- |
 | gb-wls |GB-WLS |Wales |
 | gb-sct |GB-SCT |Scotland |
@@ -361,7 +364,7 @@ Kun testaat **muotokarttaa** tässä esikatseluversiossa, käytä **seuraavia al
 
 ### <a name="usa-states"></a>Yhdysvallat: Osavaltiot
 
-| tunnus | nimi | postinumerotunnus |
+| ID | nimi | postinumerotunnus |
 | --- | --- | --- |
 | us-mi |Michigan |MI |
 | us-ak |Alaska |AK |

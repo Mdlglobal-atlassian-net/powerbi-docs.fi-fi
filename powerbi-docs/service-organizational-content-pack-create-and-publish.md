@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/06/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 8d48214cffcc17da9c105f7277b721c03946d5c2
-ms.sourcegitcommit: 0e50ebfa8762e19286566432870ef16d242ac78f
+ms.openlocfilehash: eb1940f7d5a4e809590b5b425b8005776040a5cc
+ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68961808"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72020660"
 ---
 # <a name="tutorial-create-and-publish-a-power-bi-organizational-content-pack"></a>Opetusohjelma: Organisaation sisältöpaketin luominen ja julkaiseminen Power BI:ssä
 
@@ -26,7 +26,7 @@ Sisältöpakettien luominen eroaa koontinäyttöjen jakamisesta tai niiden työs
 Organisaation sisältöpaketin luominen edellyttää [Power BI Pro -tiliä](https://powerbi.microsoft.com/pricing) sinulle ja työtovereillesi.
 
 > [!NOTE]
-> Et voi luoda tai asentaa organisaation sisältöpaketteja uuden työtilakokemuksen esiversiossa. Nyt on hyvä aika päivittää sisältöpaketit sovelluksiin, jos et ole vielä aloittanut päivittämistä. Lue [lisätietoja uudesta työtilakokemuksesta](service-create-the-new-workspaces.md).
+> Et voi luoda tai asentaa organisaation sisältöpaketteja uusissa työtilakokemuksissa. Nyt on hyvä aika päivittää sisältöpaketit sovelluksiin, jos et ole vielä aloittanut päivittämistä. Lue [lisätietoja uudesta työtilakokemuksesta](service-create-the-new-workspaces.md).
 
 ## <a name="create-and-publish-a-content-pack"></a>Sisältöpaketin luominen ja julkaiseminen
 

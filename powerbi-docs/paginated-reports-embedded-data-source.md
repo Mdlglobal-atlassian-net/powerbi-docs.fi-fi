@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 06/06/2019
-ms.openlocfilehash: 83e3ffbae43d25e89cf52077acaa731cdee9b502
-ms.sourcegitcommit: 277fadf523e2555004f074ec36054bbddec407f8
+ms.openlocfilehash: 4dda73794c888d89ad67f1af23bfb8c38eb43f61
+ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68270838"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72020790"
 ---
 # <a name="create-an-embedded-data-source-for-paginated-reports-in-the-power-bi-service"></a>Upotetun tietolähteen luominen sivutettuun raporttiin Power BI -palvelussa
 
@@ -76,21 +76,21 @@ Power BI-tietojoukkoihin yhdistyvät sivutetut raportit noudattavat Power BI:n j
 
 - .rdl samassa työtilassa kuin tietojoukko (sama omistaja): Tuetaan
 - .rdl eri työtilassa kuin tietojoukko (sama omistaja): Tuetaan
-- Jaettu .rdl: Jokaiselle raporttia tietojoukon tasolla tarkastelevalle käyttäjälle on määritettävä muodostamisoikeudet
-- Jaettu sovellus: Jokaiselle raporttia tietojoukon tasolla tarkastelevalle käyttäjälle on määritettävä muodostamisoikeudet
+- Jaettu .rdl: Jokaiselle raporttia tietojoukon tasolla tarkastelevalle käyttäjälle on määritettävä muodostamisoikeus
+- Jaettu sovellus: Jokaiselle raporttia tietojoukon tasolla tarkastelevalle käyttäjälle on määritettävä muodostamisoikeus
 - .rdl samassa työtilassa kuin tietojoukko (eri omistaja): Tuetaan
-- .rdl samassa työtilassa kuin tietojoukko (eri omistaja): Jokaiselle raporttia tietojoukon tasolla tarkastelevalle käyttäjälle on määritettävä muodostamisoikeudet
-- Roolitason suojaus: Jotta suojaus voidaan pakottaa, jokaiselle raporttia tietojoukon tasolla tarkastelevalle käyttäjälle on määritettävä muodostamisoikeudet.
+- .rdl samassa työtilassa kuin tietojoukko (eri omistaja): Jokaiselle raporttia tietojoukon tasolla tarkastelevalle käyttäjälle on määritettävä muodostamisoikeus
+- Roolitason suojaus: Jotta suojaus voidaan pakottaa, jokaiselle raporttia tietojoukon tasolla tarkastelevalle käyttäjälle on määritettävä muodostamisoikeus.
 
 ### <a name="new-experience-apps-and-app-workspaces"></a>Uuden käyttökokemuksen sovellukset ja sovelluksen työtilat
 
 - .rdl samassa työtilassa kuin tietojoukko: Tuetaan
 - .rdl eri työtilassa kuin tietojoukko (sama omistaja): Tuetaan
-- Jaettu .rdl: Jokaiselle raporttia tietojoukon tasolla tarkastelevalle käyttäjälle on määritettävä muodostamisoikeudet
-- Jaettu sovellus: Jokaiselle raporttia tietojoukon tasolla tarkastelevalle käyttäjälle on määritettävä muodostamisoikeudet
+- Jaettu .rdl: Jokaiselle raporttia tietojoukon tasolla tarkastelevalle käyttäjälle on määritettävä muodostamisoikeus
+- Jaettu sovellus: Jokaiselle raporttia tietojoukon tasolla tarkastelevalle käyttäjälle on määritettävä muodostamisoikeus
 - .rdl samassa työtilassa kuin tietojoukko (eri omistaja): - Tuetaan
-- .rdl eri työtilassa kuin tietojoukko (eri omistaja): Jokaiselle raporttia tietojoukon tasolla tarkastelevalle käyttäjälle on määritettävä muodostamisoikeudet
-- Roolitason suojaus: Jotta suojaus voidaan pakottaa, jokaiselle raporttia tietojoukon tasolla tarkastelevalle käyttäjälle on määritettävä muodostamisoikeudet
+- .rdl eri työtilassa kuin tietojoukko (eri omistaja): Jokaiselle raporttia tietojoukon tasolla tarkastelevalle käyttäjälle on määritettävä muodostamisoikeus
+- Roolitason suojaus: Jotta suojaus voidaan pakottaa, jokaiselle raporttia tietojoukon tasolla tarkastelevalle käyttäjälle on määritettävä muodostamisoikeus
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 

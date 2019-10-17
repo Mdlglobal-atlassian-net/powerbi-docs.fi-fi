@@ -11,14 +11,17 @@ ms.topic: tutorial
 ms.date: 05/14/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: f5eed81a5750bebb4df968a09cd1fcfd2aa069d1
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 9b6bab357a206184f07da96d3b516107628a851d
+ms.sourcegitcommit: 3b4de8785d17c9e00b041cff7bd4d39829316437
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65710812"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "72164425"
 ---
 # <a name="slicers-in-power-bi"></a>Osittajat Power BI:ssä
+
+[!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
+
 Haluat, että raportinlukijasi voivat tarkastella yleisiä myyntitilastoja, mutta myös korostaa yksittäisten aluepäälliköiden suorituskykyä ja eri aikavälejä. Voit luoda erillisiä raportteja tai vertailukaavioita tai osittajia. Osittaja on vaihtoehtoinen suodatustapa, jolla voit rajoittaa tietojoukon osaa, joka näkyy muissa raportin visualisoinneissa. 
 
 Tässä opetusohjelmassa käytetään maksutonta [jälleenmyyntianalyysimallia](../sample-retail-analysis.md), ja opit luomaan, muotoilemaan ja käyttämään luettelon ja päiväyksen alueosittajia. Pidä hauskaa opetellessasi uusia tapoja muotoilla ja käyttää osittajia. 
@@ -36,41 +39,40 @@ Osittajia kannattaa käyttää seuraavissa tilanteissa:
 Power BI -osittajia koskevat seuraavat rajoitukset:
 
 - Osittajat eivät tue syöttökenttiä.
-- Osittajia ei voi kiinnittää koontinäyttöön.
 - Osittajat eivät tue porautumista.
 - Osittajat eivät tue visuaalisen tason suodattimia.
 
 ## <a name="create-slicers"></a>Osittajien luominen
 
-Jos haluat luoda uuden osittajan, voit valita osittajan kuvakkeen ja valitse sitten suodattaa tiedot kenttä (tai vetämällä se **suodattimet** ruutuun **visualisoinnit** ruudussa), tai voit valita tai vetää datakentän ensin Luo visualisointi ja valita sitten osittajakuvakkeen visualisoinnin kääntämiseksi osittajaksi. Eri datatyypit luovat erilaisia osittajia eri tehosteilla ja asetuksilla. 
+**Luo uusi osittaja tietojen suodattamiseksi aluejohtajan mukaan**
 
-Kun ensimmäisen kerran muutat raporttia, **Palauta oletus** -painike syttyy. Tämä on muistutus siitä, että olet tehnyt muutoksen alkuperäisen raportin asetuksiin. Jos siirryt pois raportista, muutokset tallennetaan (jatkuvasti). Kun palaat raporttiin, sinun ei tarvitse osittaa raporttia uudelleen.  Jos kuitenkin haluat palauttaa raportin tekijän oletusasetuksiin, valitse **Palauta oletusasetukseen** -painike ylimmästä valikkopainikkeesta.
+Tässä opetusohjelmassa käytetään [Jälleenmyyntianalyysimallin PBIX-tiedostoa](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix).
 
-![Palauta oletusasetukseen -painike](media/power-bi-visualization-slicers/power-bi-reset-to-default.png)
+1. Valitse valikkorivin vasemmasta yläosasta **Tiedosto** > **Avaa**
+   
+2. **Jälleenmyyntianalyysimallin PBIX-tiedoston löytäminen**
 
-> [!NOTE]
-> Jos **Palauta oletusasetukseen** -painike on poissa käytöstä, se joko tarkoittaa, että raportin tekijä on poistanut käytöstä raportin ominaisuuden tai raportti sisältää mukautettua visualisointia. Osoittamalla osoittimella painiketta voit lukea työkaluvihjeen. 
+1. Avaa **Jälleenmyyntianalyysimallin PBIX-tiedosto** raporttinäkymässä ![Näyttökuva raporttinäkymän kuvakkeesta.](media/power-bi-visualization-kpi/power-bi-report-view.png).
 
-**Luo uusi osittaja tietojen suodattamiseksi Aluejohtajan mukaan**
+1. Valitse ![Näyttökuva keltaisesta välilehdestä.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) uuden sivun lisäämiseksi.
 
-1. Avaa Power BI Desktop-tai Power BI-palvelussa [Jälleenmyyntianalyysimalli](../sample-retail-analysis.md). (Valitse Power BI -palvelussa **Muokkaa raporttia**.)
-2. Yleiskatsaus-sivulla, kun mitään ei ole valittuna pohjalla, valitse **osittajan** kuvake ![osittajakuvake](media/power-bi-visualization-slicers/slicer-icon.png) - **visualisoinnit** ruudusta uuden osittajan luomiseksi. 
-3. Kun uusi osittaja on valittuna, valitse kentät-ruudussa Valitse **alueen** > **DM** osittajan lisäämiseksi. Uusi osittajan on luettelo, jossa on valintaruutu ennen nimeä. 
+2. Yleiskatsaus-sivulla, kun pohjassa ei ole mitään valittuna, valitse **Osittaja**-kuvake ![osittajakuvake](media/power-bi-visualization-slicers/slicer-icon.png) - **Visualisoinnit**-ruudusta uuden osittajan luomiseksi. 
+3. Kun uusi osittaja on valittuna, lisää osittaja valitsemalla Kentät-ruudussa **Alue** > **Aluejohtaja**. Uusi osittajan on luettelo, jossa on valintaruutu ennen nimeä. 
     
     ![uusi osittaja](media/power-bi-visualization-slicers/power-bi-new-slicer.png)
     
 4. Muuta osittajan kokoa ja vedä se ja muut alustan elementit tehdäksesi tilaa osittajalle. Huomaa, että osittajan nimikkeet leikataan, jos pienennät osittajan liian pieneksi. 
-5. Valitse nimet osittajasta ja huomaa sivulla olevien muiden visualisointien vaikutukset. Valitse nimet uudelleen ja poista niiden valinta. Pidä **Ctrl**-näppäintä alhaalla yhden kuin useamman nimen valitsemiseksi. Kaikkien nimien valinnalla on sama vaikutus kuin jos ei valittaisi mitään. \
+5. Valitse nimet osittajasta ja huomaa sivulla olevien muiden visualisointien vaikutukset. Valitse nimet uudelleen ja poista niiden valinta. Pidä **Ctrl**-näppäintä alhaalla yhden kuin useamman nimen valitsemiseksi. Kaikkien nimien valinnalla on sama vaikutus kuin jos ei valittaisi mitään. 
 
-6. Vaihtoehtoisesti valitsemalla maalitelakuvakkeen osittajan muotoiluun. Vaihtoehtoja on yksinkertaisesti liian monta kuvataan kaikki tähän – siis kokeilla ja osittajan luominen kyseisen toimii puolestasi. Seuraavissa esimerkeissä ensimmäinen osittaja on muunnettu avattavasta tilan säästämiseksi ja mahdollisuus ”Valitse kaikki-vaihtoehto on lisätty.  Toinen osittajan on alustettu väreillä fontteja, kokoja ja sallii vain yhden valinnan.
+6. Vaihtoehtoisesti voit muotoilla osittajaa valitsemalla maalirullakuvakkeen. Vaihtoehtoja on liikaa, jotta niitä voisi kaikkia kuvailla tässä, joten kokeile itse ja luo juuri itsellesi sopiva osittaja. Alla olevissa esimerkeissä ensimmäinen osittaja on vaakasuuntainen ja siinä on värilliset tausta tietoyksiköille. Toinen osittaja on pidetty pystysuuntaisena ja värien sijaan siinä on perinteisempi ulkoasu.
 
    ![uusi osittaja](media/power-bi-visualization-slicers/power-bi-filter-examples.png)
 >[!TIP]
->Osittajan luettelot on lajiteltu nousevaan järjestykseen aakkosnumeerisessa järjestyksessä oletuksena. Jos haluat palauttaa lajittelujärjestyksen laskevaksi, valitse osittajan oikeasta yläkulmasta kolmen pisteen symboli ( **...** ) ja valitse pudotusvalikosta **Lajittelu aluejohtajan mukaan**. 
+>Luettelon osittajan kohteet lajitellaan oletusarvoisesti nousevassa järjestyksessä. Jos haluat muuttaa lajittelujärjestyksen laskevaksi, valitse osittajan oikeasta yläkulmasta kolme pistettä ( **...** ) ja valitse **Lajittele laskevasti**.
 
 **Uuden osittajan luominen tietojen suodattamiseksi päivämääräalueen mukaan**
 
-1. Mitään ei ole valittuna pohjalla, jonka avattava **päivämäärä** kentät-ruudussa ja vedä **päivämäärä** - **arvot** ruudussa uuden visualisoinnin luomiseksi visualisoinnit-ruudussa.
+1. Kun piirtoalustalla ei ole valittuna mitään, avaa Kentät-ruudussa **Myymälä** ja vedä **OpenDate** Visualisoinnit-ruudun **Arvot**-kohtaan luodaksesi uuden visualisoinnin.
 2. Kun uusi visualisointi on valittuna, valitse **Osittaja**-kuvake visualisoinnin muuttamiseksi osittajaksi. Tämä osittaja on liukusäädin, johon on täytetty päivämääräalue.
     
     ![uuden alueen osittaja](media/power-bi-visualization-slicers/power-bi-date-slicer.png)
@@ -83,12 +85,16 @@ Kun ensimmäisen kerran muutat raporttia, **Palauta oletus** -painike syttyy. T�
     >Numeerinen ja päivämäärä/kellonaika-tietotyypit muodostavat alueen liukusäätimen osittajat oletusarvoisesti. Helmikuun 2018 Power BI -päivityksestä alkaen kokonaisluvun tietotyypin alueen liukusäätimet kohdistavat nyt kokonaislukuarvoihin desimaalien sijaan. 
 
 
-5. Muuta nyt kenttäarvo **päivämäärä** - **MonthIndex**.  Tämä tuottaa **välillä** alueen liukusäätimen osittajan tyypin oletuksena, mutta voit muuttaa sen muihin osittajan tyyppeihin ja valinta-asetukset. Voit muuttaa osittajan tyyppiä osittaja valittuna siirtämällä kohdistinta osittajan oikeaan yläkulmaan, pudottamalla esiin tulevan merkin ja valitsemalla toisen valinnoista, kuten **Luettelo** tai **Ennen**. Huomaa, miten osittajan ulkoasun ja valinnan vaihtoehdot muuttuvat. 
+5. Voit muuttaa osittajan tyyppiä osittaja valittuna siirtämällä kohdistinta osittajan oikeaan yläkulmaan, pudottamalla esiin tulevan merkin ja valitsemalla toisen valinnoista, kuten **Luettelo** tai **Ennen**. Huomaa, miten osittajan ulkoasun ja valinnan vaihtoehdot muuttuvat. 
  
     ![uuden alueen osittaja](media/power-bi-visualization-slicers/power-bi-between-slicer.png)
 
 
 Jos haluat lisätietoja alueen päivämäärä- ja numeroalueen liukusäätimien luomisesta, katso seuraava video ja lue [Numeerisen alueen osittajan käyttö Power BI Desktopissa](../desktop-slicer-numeric-range.md).
+   > [!NOTE]
+   > Tässä videossa käytetään Power BI Desktopin vanhempaa versiota.
+   > 
+   > 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/zIZPA0UrJyA" frameborder="0" allowfullscreen></iframe> 
 
 ## <a name="control-which-page-visuals-are-affected-by-slicers"></a>Määrittää, millä sivulla osittajat vaikuttavat visualisointeihin
@@ -96,9 +102,8 @@ Osittajat raporttisivuilla vaikuttavat oletusarvoisesti kaikkiin muihin sivulla 
 
 Voit estää joidenkin sivujen visualisointien vaikutukset käyttämällä **Visuaaliset vuorovaikutukset** -asetusta. **Yleiskatsaus**-sivulla ”Kokonaismyynnin variaatioprosentti tilikauden kuukauden ja aluejohtajan mukaan” -kaavio näyttää ne aluejohtajien yleiset vertailutiedot kuukausittain, jotka haluat pitää aina näkyvissä. Voit käyttää **Visualisointitoimet** estämään osittajan valintoja suodattamasta tässä kaaviossa. 
 
-1. Kun aluejohtajan osittaja on valittuna:
+1. Kun **Alueen kuukausimyynti** -sivulla on valittuna Aluejohtaja-osittaja:
     - Valitse Power BI Desktopissa **Visualisointityökalut**-kohdan **Muotoile**-valikosta **Muokkaa vuorovaikutuksia**.
-    - Avaa Power BI -palvelun valikkoriviltä **Visuaaliset vuorovaikutukset** ja ota käyttöön **Muokkaa vuorovaikutuksia**. 
    
    ![Suodatinasetukset](media/power-bi-visualization-slicers/filter-controls.png) näkyvät kaikkien muiden sivulla olevien visualisointien yläpuolella. Aluksi valitaan kaikki **Suodatin**-kuvakkeet.
    
@@ -110,17 +115,27 @@ Lisätietoja vuorovaikutusten muokkaamisesta on artikkelissa [Visuaaliset vuorov
 ## <a name="sync-and-use-slicers-on-other-pages"></a>Osittajien synkronoiminen ja käyttäminen muilla sivuilla
 Vuoden 2018 helmikuun Power BI -päivityksestä alkaen voit synkronoida osittajan ja käyttää sitä millä tahansa tai kaikilla raportin sivuilla. 
 
-Nykyisessä raportissa **Alueen kuukausimyynti** -sivulla on myös **Aluejohtaja**-osittaja, mutta se ei ole synkronoitu siihen, jonka loit **Yleiskatsaus**-sivulla (kahdella osittajalla voi olla eri valinnat). **Uudet myymälät** -sivulla on vain **Myymälän nimi** -osittaja. Voit synkronoida uuden **Aluejohtaja**-osittajan näille sivuille niin, että osittajan valinnat millä tahansa sivulla vaikuttavat kaikkien kolmen sivun visualisointeihin. 
+Nykyisessä raportissa **Alueen kuukausimyynti** -sivulla on myös **Aluejohtaja**-osittaja, mutta entä jos haluamme osittajan myös **Yleiskatsaus**-sivulle? **Uudet myymälät** -sivulla on myös osittaja, mutta sen tiedoissa on vain **Myymälän nimi**. **Synkronoi osittaja** -ruudussa **Aluejohtaja**-osittaja voidaan synkronoida näille sivuille, jolloin minkä tahansa sivun osittajavalinnat vaikuttavat kaikkien kolmen sivun visualisointeihin.
 
-1. Valitse Power BI Desktopin **Näytä**-valikosta **Synkronoi osittajat** ja ota käyttöön **Synkronoi osittajaruutu** Power BI -palvelussa. **Synkronoi osittajat** -ruutu avautuu. 
-2. Valitse **Yleiskatsaus** -sivulta **Aluejohtaja**-osittaja. Huomaa, että **Alueen kuukausimyynti** -sivu on jo valittuna **Näkyvissä**-sarakkeessa, koska sivulla on myös Aluejohtaja-osittaja, mutta sitä ei ole valittu **Synkronointi**-sarakkeeseen. 
+1. Valitse Power BI Desktopin **Näytä**-valikossa **Synkronoi osittajat**.
+
+    ![synkronoi osittajat](media/power-bi-visualization-slicers/power-bi-slicer-view-sync.png)
+
+1.  **Synkronoi osittajat** -ruutu tulee näkyviin **Suodattimet**- ja **Visualisoinnit**-ruutujen väliin.  
+
+    ![synkronoi osittajat](media/power-bi-visualization-slicers/power-bi-slicer-sync-pane.png)
+
+1. Valitse **Alueen kuukausimyynti** -sivulla **Aluejohtaja**-osittaja. 
     
     ![synkronoi osittajat](media/power-bi-visualization-slicers/9-sync-slicers.png)
     
-3. Valitse **Synkronointi**-sarakkeesta **Uudet myymälät** -sivu ja **Alueen kuukausimyynti** -sivu synkronoidaksesi **Yleiskatsaus**-osittajan kyseisille sivuille. 
+3. Valitse **Synkronoi**-sarakkeessa **Uudet myymälät** -sivu ja **Yleiskatsaus**-sivu synkronoidaksesi **Alueen kuukausimyynti** -osittajan näille sivuille. 
     
-3. Valitse **Näkyvissä**-sarakkeesta **Uudet myymälät** -sivu ja jätä **Alueen kuukausimyynti** -sivu valituksi. 
-4. Noudata osittajan synkronoinnin vaikutuksia ja tee se näkyväksi muille sivuille. **Alueen kuukausimyynti** -sivulla **Aluejohtaja**-osittaja näyttää nyt samat kuin **Yleiskatsaus**-sivulla. **Uudet myymälät** -sivulla valinnat **Aluejohtaja** -osittajassa vaikuttavat valintoihin, jotka ovat käytettävissä **Myymälän nimi** -osittajassa. 
+3. Valitse **Näkyvissä**-sarakkeessa **Uudet myymälät** -sivu ja **Yleiskatsaus**-sivu. **Synkronoi osittajat** -ruudun tulisi näyttää samalta kuin alla olevassa kuvassa:
+
+    ![synkronoi osittajat](media/power-bi-visualization-slicers/power-bi-sync-slicer-finished.png)
+
+1. Noudata osittajan synkronoinnin vaikutuksia ja tee se näkyväksi muille sivuille. **Alueen kuukausimyynti** -sivulla **Aluejohtaja**-osittaja näyttää nyt samat kuin **Yleiskatsaus**-sivulla. **Uudet myymälät** -sivulla valinnat **Aluejohtaja** -osittajassa vaikuttavat valintoihin, jotka ovat käytettävissä **Myymälän nimi** -osittajassa. 
     
     >[!TIP]
     >Vaikka osittaja näkyy alun perin synkronoidulla sivuilla saman kokoisena ja samassa sijainnissa kuin alkuperäisellä sivulla, voit siirtää, muuttaa kokoa ja muotoilla synkronoituja osittajia eri sivuilla itsenäisesti. 
@@ -131,7 +146,7 @@ Nykyisessä raportissa **Alueen kuukausimyynti** -sivulla on myös **Aluejohtaja
 ## <a name="format-slicers"></a>Osittajien muotoilu
 Eri muotoiluasetukset ovat käytettävissä osittajan tyypin mukaan. Käyttämällä **Vaaka**-suuntaa **Reagoiva**-asettelua ja **Nimi**-väriä, voit luoda painikkeita tai ruutuja standardiluettelonimikkeiden sijaan ja muuttaa osittajan kohteiden kokoa sopimaan eri näyttöjen ja asettelujen kokoon.  
 
-1. Kun olet valinnut **Aluejohtaja** -osittajan miltä tahansa sivulta, tuo muotoiluasetukset näkyviin valitsemalla **Visualisoinnit**-ruudusta **Muotoile**-kuvake![](media/power-bi-visualization-slicers/power-bi-paintroller.png). 
+1. Kun **Aluejohtaja**-osittaja on valittuna millä tahansa sivulla, valitse **Visualisoinnit**-ruudussa **Muotoile**-kuvake ![muotoile-kuvake](media/power-bi-visualization-slicers/power-bi-paintroller.png) nähdäksesi muotoiluasetukset. 
     
     ![muotoilu](media/power-bi-visualization-slicers/3-format.png)
     
@@ -163,10 +178,10 @@ Artikkelissa [Kooltaan muokattavan reagoivan osittajan luominen Power BI:ssä](.
     
 2. **Yksittäinen valinta** on oletusarvon mukaan **käytössä**. Voit valita yhden kohteen napsauttamalla tai napauttamalla kyseistä kohdetta ja useita kohteita painamalla **Ctrl**-painiketta samalla kun napsautat tai napautat valittavia kohteita. Kun siirrät **Yksittäinen valinta** -asetuksen valintakytkimen **Ei käytössä** -asentoon, voit valita useita kohteita painamatta **Ctrl**-painiketta pitkään. Voit poistaa kohteen valinnan napsauttamalla tai napauttamalla sitä uudelleen. 
 
-### <a name="header-options"></a>Otsikko-asetukset
+### <a name="title-options"></a>Otsikon asetukset
 **Otsikko** on oletusarvon mukaan **käytössä**. Otsikko sisältää tietokentän nimen ja näkyy osittajan yläreunassa. 
-1. Muotoile otsikon tekstiä valitsemalla **fontin väriksi** punainen, **tekstin kooksi** 14 pt ja **fonttiperheeksi** Arial Black. 
-2. Valitse **Alleviivattu**-kohdasta **Vain alhaalla**, jos haluat lisätä alleviivauksen **yleisissä** asetuksissa määrittämälläsi koolla ja värillä. 
+1. Muotoile otsikon tekstiä valitsemalla **fontin väriksi** punainen, **tekstin kooksi** 14 pt ja **tasaukseksi** keskellä ja **fonttiperheeksi** Arial Black. 
+
 
 ### <a name="item-options-list-slicers-only"></a>Kohteen asetukset (vain luettelon osittajat)
 1. Muotoile kohteen tekstiä ja taustaa valitsemalla **fontin väriksi** musta, **taustaksi** vaaleanpunainen, **tekstin kooksi** 10 pt ja **fonttiperheeksi** Arial. 
@@ -184,7 +199,6 @@ Artikkelissa [Kooltaan muokattavan reagoivan osittajan luominen Power BI:ssä](.
 
 ### <a name="other-formatting-options"></a>Muut muotoiluasetukset
 Muut muotoiluasetukset eivät ole oletusarvon mukaan käytössä. Kun **Käytössä**: 
-- **Nimi:** Lisää ja muotoilee osittajan yläreunassa olevan nimen (otsikon lisäksi ja siitä riippumatta). 
 - **Tausta:** Lisää taustavärin yleiseen osittajaan ja määrittää sen läpinäkyvyyden.
 - **Lukitse kuvasuhde:** Säilyttää osittajan muodon, jos sen kokoa muutetaan.
 - **Reunus:** Lisää yhden pikselin reunuksen osittajan ympärille ja määrittää sen värin. (Tämä osittajan reunus on eri kuin yleisissä ääriviiva-asetuksissa määritetty reunus, ja yleisissä ääriviiva-asetuksissa määritetty reunus ei vaikuta tähän reunukseen.) 

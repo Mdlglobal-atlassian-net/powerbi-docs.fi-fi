@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 09/10/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 5385512e534d866a2474fd4e3def10f45d52a1a0
-ms.sourcegitcommit: db4fc5da8e65e0a3dc35582d7142a64ad3405de7
+ms.openlocfilehash: 32b9adc92222e2122aff41d7ef7ef351c3158951
+ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70903968"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72020252"
 ---
 # <a name="create-classic-workspaces-in-power-bi"></a>Perinteisten työtilojen luominen Power BI:ssä
 
@@ -90,11 +90,11 @@ Sovellukset ovat organisaation sisältöpakettien seuraava kehitysaste. Jos sinu
 * Kun yrityskäyttäjät ovat asentaneet sisältöpaketin, se menettää ryhmäidentiteettinsä: se on vain luettelo koontinäyttöjä ja raportteja, jotka ovat sikin sokin muiden koontinäyttöjen ja raporttien keskellä. Sovellukset taas säilyttävätä ryhmityksensä ja identiteettinsä jopa asennuksen jälkeen. Tämän ryhmityksen ansiosta yrityskäyttäjien on helpompi siirtyä niihin myöhemminkin.
 * Voit luoda useita sisältöpaketteja mistä tahansa työtilasta, mutta sovelluksella on 1:1-suhde työtilansa kanssa. 
 * Ajan mittaan aiomme lakkauttaa organisaation sisältöpaketit, joten suosittelemme, että luot tästä lähtien sovelluksia.  
-* Uuden työtilan kokemuksen esikatselun myötä siirrymme kohti organisaation sisältöpakettien poistamista käytöstä. Ei voi käyttää tai luoda niitä esiversion työtiloissa.
+* Uuden työtilan kokemuksen myötä siirrymme kohti organisaation sisältöpakettien poistamista käytöstä. Ei voi käyttää tai luoda niitä uusissa työtiloissa.
 
 Voit verrata näitä kahta tutustumalla artikkeliin [Miten uudet työtilat eroavat nykyisistä työtiloista](service-new-workspaces.md#how-the-new-workspaces-are-different). 
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 * [Asenna ja käytä sovelluksia Power BI:ssä](service-create-distribute-apps.md)
-- [Uusien työtilojen luominen (esiversio)](service-create-the-new-workspaces.md)
+- [Uusien työtilojen luominen](service-create-the-new-workspaces.md)
 * Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)

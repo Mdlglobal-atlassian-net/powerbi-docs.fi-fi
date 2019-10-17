@@ -7,30 +7,27 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 07/17/2019
+ms.date: 09/19/2019
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 7ee083de9800b55c4f7d998a113c1a63df112b7b
-ms.sourcegitcommit: bc688fab9288ab68eaa9f54b9b59cacfdf47aa2e
+ms.openlocfilehash: 269b495a41f193c6a2ba02fa75f171c3b5789689
+ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68624029"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72019593"
 ---
 # <a name="introduction-to-dashboards-for-power-bi-designers"></a>Johdatus raporttinäkymiin Power BI -kehittäjille
 
 Power BI -*raporttinäkymä* on yksittäinen sivu, joka kertoo tarinan visualisointien kautta. Koska se on rajattu yhdelle sivulle, hyvin suunniteltu raporttinäkymä sisältää vain tarinan kohokohdat. Lukijat voivat tutustua yksityiskohtiin raporttinäkymään liittyvien raporttien kautta.
 
-![Koontinäyttö](media/service-dashboards/power-bi-dashboard2.png)
+![Raporttinäkymä](media/service-dashboards/power-bi-dashboard2.png)
 
 Raporttinäkymä on vain Power BI -palvelun ominaisuus. Raporttinäkymät eivät ole käytettävissä Power BI Desktopissa. Raporttinäkymiä ei voi luoda mobiililaitteilla, mutta niitä voi [tarkastella ja jakaa](mobile-apps-view-dashboard.md) niillä.
 
 ## <a name="dashboard-basics"></a>Raporttinäkymien perusteet 
 
 Raporttinäkymän visualisointeja kutsutaan *ruuduiksi*. Ruutuja *kiinnitetään* raporttinäkymiin raporteista. Jos olet uusi Power BI:n käyttäjä, saat hyvän pohjan sen käyttöön lukemalla [Power BI -palvelun peruskäsitteitä suunnittelijoille](service-basic-concepts.md) -ohjeartikkelin.
-
-> [!IMPORTANT]
-> Raporttinäkymien luomiseen tarvitaan [Power BI Pro](service-free-vs-pro.md) -käyttöoikeus.
 
 Raporttinäkymän visualisoinnit ovat peräisin raporteista, ja kukin raportti perustuu tietojoukkoon. Itse asiassa raporttinäkymää voidaan ajatella eteisenä, josta pääsee sen pohjana oleviin raportteihin ja tietojoukkoihin. Valitsemalla visualisoinnin pääset sen perustana olevaan raporttiin (ja tietojoukkoon).
 
@@ -40,6 +37,13 @@ Raporttinäkymän visualisoinnit ovat peräisin raporteista, ja kukin raportti p
 Raporttinäkymät tarjoavat erinomaisen tavan liiketoiminnan tarkkailuun ja tärkeimpien tietojesi näkemiseen yhdellä silmäyksellä. Koontinäytöillä olevat visualisoinnit saattavat olla peräisin yhdestä tai useammasta tietojoukosta sekä yhdestä tai useammasta pohjana olevasta raportista. Raporttinäkymä yhdistää paikalliset ja pilvipalvelussa olevat tiedot ja tarjoaa niistä yhdistetyn näkymän riippumatta siitä, missä tiedot todella sijaitsevat.
 
 Raporttinäkymä ei ole pelkkää koreilua. Se on erittäin vuorovaikutuskykyinen, ja sen ruudut päivittyvät sitä mukaa, kun pohjana olevat tiedot muuttuvat.
+
+## <a name="who-can-create-a-dashboard"></a>Kuka voi luoda koontinäytön?
+Koontinäytön luominen on *luoja*-toiminto ja edellyttää raportin muokkausoikeuksia. Muokkausoikeudet ovat raportin luojien käytettävissä ja niiden työtovereiden käytössä, joille luoja myöntää käyttöoikeudet. Esimerkiksi jos David luo raportin työtilaABC:ssä ja lisää sinut työtilan jäseneksi, niin sinulla ja Davidilla on muokkausoikeudet. Jos taas raportti on jaettu kanssasi suoraan tai osana [Power BI -sovellusta](service-create-distribute-apps.md), olet raportin *kuluttaja*. Et ehkä voi kiinnittää ruutuja koontinäyttöön. 
+
+> [!IMPORTANT]
+> Raporttinäkymien luomiseen työtilassa tarvitaan [Power BI Pro](service-free-vs-pro.md) -käyttöoikeus. Voit luoda koontinäyttöjä omassa työtilassa ilman Power BI Pro -käyttöoikeutta.
+
 
 ## <a name="dashboards-versus-reports"></a>Koontinäytöt vs. raportit
 [Raportit](service-reports.md) ja raporttinäkymät vaikuttavat samankaltaisilta, koska ne ovat molemmat eräänlaisia pohjia, jotka ovat täynnä visualisointeja. Niissä on kuitenkin merkittäviä eroja, kuten voit nähdä seuraavasta taulukosta.

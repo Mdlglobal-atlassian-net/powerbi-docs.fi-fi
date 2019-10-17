@@ -7,15 +7,15 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 09/05/2019
+ms.date: 09/30/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 32d43ca4b9681495e22db023604afeac31d15e7e
-ms.sourcegitcommit: d04b9e1426b8544ce16ef25864269cc43c2d9f7b
+ms.openlocfilehash: 15f0ce3910261ed2902603ab7fb3f07f8b695d4c
+ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "71715206"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72020696"
 ---
 # <a name="organize-work-in-the-new-workspaces-in-power-bi"></a>Työn järjestäminen uusiin työtiloihin Power BI:ssä
 
@@ -79,7 +79,7 @@ Tässä ovat ominaisuudet neljästä roolista: järjestelmänvalvojat, jäsenet,
 
 > [!NOTE]
 >Raportin kopioiminen ja raportin luominen toisessa työtilassa tämän työtilan tietojoukon perusteella edellyttää, että käyttäjät täyttävät seuraavat lisäehdot:
->- Power BI Pro -käyttöoikeus tarvitaan. 
+>- Power BI Pro -käyttöoikeus tarvitaan. Lisätietoja on seuraavassa osiossa [Käyttöoikeudet](#licensing).
 >- Käyttäjillä on oltava tietojoukon muodostamisen käyttöoikeus. Tämän työtilan tietojoukoissa käyttäjillä, joilla on järjestelmänvalvojan, jäsenen tai osallistujaroolin, on muodostamisen käyttöoikeus työtilaroolin kautta.
  
 ## <a name="licensing"></a>Käyttöoikeudet
@@ -141,7 +141,7 @@ Jotkin ominaisuudet toimivat uusissa työtiloissa eri tavalla kuin nykyisissä t
 - Jäsenet voivat tai eivät voi jakaa uudelleen: korvataan osallistujan roolilla
 - Vain luku -työtilat: Sen sijaan, että myöntäisit käyttäjille Vain luku -käyttöoikeuden työtilaan, myönnät käyttäjille Katselija-roolin, johon kuuluu samankaltainen Vain luku -käyttöoikeus työtilan sisältöön.
 - Käyttäjät, joilla ei ole Pro-käyttöoikeutta, voivat käyttää työtilaa, jos työtila on Power BI Premium -kapasiteetissa, vaikka heillä olisi vain Katselija-rooli.
-- Jotta käyttäjät, joilla on Katselija-rooli, voisivat viedä tietoja, varmista, että heillä on Koontiversio-oikeus työtilan tietojoukoille. Lue lisää [tietojoukkojen muodostamisoikeuksista](service-datasets-build-permissions.md#build-permissions-for-shared-datasets).
+- Jotta käyttäjät, joilla on Katselija-rooli, voisivat viedä tietoja, varmista, että heillä on Koontiversio-oikeus työtilan tietojoukoille. Lue lisää [tietojoukkojen muodostamisoikeuksista](service-datasets-build-permissions.md).
 - Ei **Poistu työtilasta** -painiketta.
 
 ## <a name="frequently-asked-questions"></a>Usein kysyttyjä kysymyksiä

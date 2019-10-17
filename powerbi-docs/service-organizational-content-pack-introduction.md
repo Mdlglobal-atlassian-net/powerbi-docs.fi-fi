@@ -10,16 +10,16 @@ ms.topic: conceptual
 ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: b9c308e0593ac207e323df5b78619f0279f95594
-ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
+ms.openlocfilehash: e54750d928918fd77c2bf93577cf1d3d0634ca97
+ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68523450"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72020607"
 ---
 # <a name="intro-to-organizational-content-packs-in-power-bi"></a>Power BI:n organisaation sisältöpakettien esittely
 > [!NOTE]
-> Et voi luoda organisaation sisältöpaketteja tai asentaa niitä uuden työtilakokemuksen esiversiossa. Nyt on hyvä aika päivittää sisältöpaketit sovelluksiin, jos et ole vielä aloittanut päivittämistä. Lue [lisätietoja uudesta työtilakokemuksesta](service-create-the-new-workspaces.md).
+> Et voi luoda organisaation sisältöpaketteja tai asentaa niitä uudessa työtilakokemuksessa. Nyt on hyvä aika päivittää sisältöpaketit sovelluksiin, jos et ole vielä aloittanut päivittämistä. Lue [lisätietoja uudesta työtilakokemuksesta](service-create-the-new-workspaces.md).
 > 
 
 Jaatko säännöllisesti raportteja sähköpostitse työryhmällesi? Kokeile seuraavaa: Pakkaa raporttinäkymät, raportit, Excel-työkirjat ja tietojoukot ja julkaise ne työryhmällesi *organisaation sisältöpakettina*. Työryhmäsi löytää sisältöpakettisi helposti – ne ovat kaikki saatavilla AppSourcessa. Koska ne ovat osa Power BI:tä, ne hyödyntävät kaikkia Power BI -ominaisuuksia, mukaan lukien vuorovaikutteinen tietojen tarkasteleminen, uudet visualisoinnit, Q&A, integrointi muihin tietolähteisiin ja tietojen päivittäminen.

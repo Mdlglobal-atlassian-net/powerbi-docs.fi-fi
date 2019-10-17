@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/29/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: f3c72de197203adcad1020bc244ff0bc215e10bd
-ms.sourcegitcommit: 4222ebad1a3a32d8040f6a615a0b7f173d7869d0
+ms.openlocfilehash: e213bad8e7267abe0b49d1f460717dd817e9832a
+ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "71164491"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72020488"
 ---
 # <a name="connect-to-datasets-in-the-power-bi-service-from-power-bi-desktop"></a>Tietojoukkoihin yhdistäminen Power BI -palvelussa Power BI Desktopista
 Voit muodostaa reaaliaikaisen yhteyden jaettuun tietojoukkoon Power BI -palvelussa ja luoda useita erilaisia raportteja samasta tietojoukkoryhmästä. Tämä tarkoittaa sitä, että voit luoda täydellisen tietomallin Power BI Desktopissa ja julkaista sen Power BI -palvelussa. Sen jälkeen sinä ja muut käyttäjät voitte luoda useita erilaisia raportteja (erillisiin .pbix-tiedostoihin) samasta, yleisestä tietomallista, ja tallentaa ne eri työtiloihin. Tätä ominaisuutta kutsutaan **Power BI -palvelun reaaliaikaiseksi yhteydeksi**.
@@ -35,7 +35,7 @@ Oletetaan, että tiimissäsi on Anna (liiketoiminta-analyytikko), joka on taitav
 Kaikki pitävät Annan raportista ja tietojoukosta, ja tässä ongelma juuri piilee – kaikki tiimin jäsenet yrittävät luoda *oman versionsa* tästä tietojoukosta ja jakavat sitten omat raporttinsa tiimin kanssa. Yhtäkkiä tiimin työtilassa voi olla lukuisia raportteja (eri tietojoukoista) **Power BI -palvelussa**. Mikä on niistä uusin? Olivatko tietojoukot samat vai vain suurin piirtein samat? Mitkä olivat niiden erot? **Power BI -palvelun reaaliaikaisen yhteyden** ansiosta tilanne saadaan hallintaan. Näemme seuraavassa osiossa, miten muut voivat käyttää Annan julkaisemaa tietojoukkoa omissa raporteissaan ja omissa työtiloissaan. Näin kaikki voivat luoda saman vankan, yhtenäisen ja julkaistun tietojoukon avulla omia yksilöllisiä raporttejaan.
 
 ### <a name="connect-to-a-power-bi-service-dataset-using-a-live-connection"></a>Yhteyden muodostaminen Power BI -palvelun tietojoukkoon reaaliaikaisen yhteyden avulla
-Anna luo raportin (ja sen perustana olevan tietojoukon) ja sitten julkaisee sen **Power BI -palvelussa**. Raportti näkyy nyt hänen tiiminsä työtilassa Power BI -palvelussa. Jos Anna tallentaa sen *uuteen käyttökokemuksen mukaiseen työtilaan*, hän voi määrittää muodostamisoikeudet niin, että kaikki hänen työtilaansa kuuluvat ja sen ulkopuoliset henkilöt voivat nähdä raportin ja käyttää sitä.
+Anna luo raportin (ja sen perustana olevan tietojoukon) ja sitten julkaisee sen **Power BI -palvelussa**. Raportti näkyy nyt hänen tiiminsä työtilassa Power BI -palvelussa. Jos Anna tallentaa sen *uuden käyttökokemuksen mukaiseen työtilaan*, hän voi määrittää muodostamisoikeudet niin, että kaikki hänen työtilaansa kuuluvat ja sen ulkopuoliset henkilöt voivat nähdä raportin ja käyttää sitä.
 
 Saat lisätietoja uudesta työtilojen käyttökokemuksesta [sovellustyötilat](service-new-workspaces.md)-kohdasta.
 
@@ -76,7 +76,7 @@ Kun prosessi on valmis, **Power BI Desktop** näyttää onnistumisen ja tarjoaa 
 
 Nyt kun raportti tietojoukkoineen on Power BI -palvelussa, voit myös *korottaa* sen korostaaksesi sen laatua ja luotettavuutta. Voit myös pyytää, että Power BI -vuokraajasi määräävässä asemassa oleva taho *sertifioi* sen. Tietojoukko, jolla on vähintään toinen näistä tuista, näkyy aina aiheen luettelossa tietojoukkoja hakiessa. Voit halutessasi lukea lisää [tietojoukkojen korottamisesta](service-datasets-promote.md). 
 
-Lopuksi määritetään raportin pohjana olevan tietojoukon *muodostamisoikeudet*. Muodostamisoikeudet määrittävät, ketkä voivat nähdä tietojoukon ja käyttää sitä. Voit määrittää oikeudet suoraan työtilassa tai jakaessasi sovellusta työtilan kautta. Katso [muodostamisoikeuksien](service-datasets-build-permissions.md#build-permissions-for-shared-datasets) lisätiedot.
+Lopuksi määritetään raportin pohjana olevan tietojoukon *muodostamisoikeudet*. Muodostamisoikeudet määrittävät, ketkä voivat nähdä tietojoukon ja käyttää sitä. Voit määrittää oikeudet suoraan työtilassa tai jakaessasi sovellusta työtilan kautta. Katso [muodostamisoikeuksien](service-datasets-build-permissions.md) lisätiedot.
 
 Katsotaanpa seuraavaksi, miten muut tiimin jäsenet, joilla on käyttöoikeus työtilaan, jossa raportti (ja tietojoukko) julkaistaan, voivat muodostaa yhteyden tietojoukkoon ja luoda omia raporttejaan.
 

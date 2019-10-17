@@ -10,17 +10,20 @@ ms.topic: conceptual
 ms.date: 06/25/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 2f50a6fc9fccc35333257caaf3efeb8185c8caff
-ms.sourcegitcommit: 1c96b65a03ec0a0612e851dd58c363f4d56bca38
+ms.openlocfilehash: 0015921990bb35a7ac5e6652b018ef16485e5b9c
+ms.sourcegitcommit: 3b4de8785d17c9e00b041cff7bd4d39829316437
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "67390381"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "72164577"
 ---
 # <a name="use-the-matrix-visual-in-power-bi"></a>Matriisivisualisoinnin käyttö Power BI:ssä
-**Matriisivisualisointi** muistuttaa **taulukkoa**.  Taulukko tukee kahta dimensiota ja tiedot ovat pelkistettyjä eli näet arvojen kaksoiskappaleet koostettujen arvojen sijasta. Matriisin ansiosta tiedot on helpompi näyttää mielekkäästi eri dimensioissa – se tukee porrastettua asettelua. Matriisi koostaa tiedot automaattisesti ja mahdollistaa porautumisen alaspäin. 
 
-Voit luoda matriisivisualisointeja **Power BI Desktop**- ja **Power BI -palvelun** raporteissa sekä korostaa matriisin sisältämiä elementtejä ristiin tämän raporttisivun muiden visualisointien kanssa. Voit esimerkiksi valita rivejä, sarakkeita ja jopa yksittäisiä soluja sekä ristiinkorostuksen. Voit myös kopioida yksittäisiä ja useita soluosioita sekä liittää niitä muihin sovelluksiin. 
+[!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
+
+Matriisivisualisointi muistuttaa taulukkoa.  Taulukko tukee kahta dimensiota ja tiedot ovat pelkistettyjä eli näet arvojen kaksoiskappaleet koostettujen arvojen sijasta. Matriisin ansiosta tiedot on helpompi näyttää mielekkäästi eri dimensioissa – se tukee porrastettua asettelua. Matriisi koostaa tiedot automaattisesti ja mahdollistaa porautumisen alaspäin. 
+
+Voit luoda matriisivisualisointeja **Power BI Desktop** -raporteissa sekä korostaa matriisin sisältämiä elementtejä ristiin tämän raporttisivun muiden visualisointien kanssa. Voit esimerkiksi valita rivejä, sarakkeita ja jopa yksittäisiä soluja sekä ristiinkorostuksen. Voit myös kopioida yksittäisiä ja useita soluosioita sekä liittää niitä muihin sovelluksiin. 
 
 ![ristiinkorostettu matriisi ja rengaskaavio](media/desktop-matrix-visual/matrix-visual_2a.png)
 
@@ -29,7 +32,7 @@ Matriiseilla on monia ominaisuuksia, jotka käydään läpi tämän artikkelin s
 
 ## <a name="understanding-how-power-bi-calculates-totals"></a>Miten Power BI laskee kokonaissummat
 
-Ennen kuin siirrymme **matriisivisualisoinnin** käytön ohjeisiin, on tärkeää ymmärtää, miten Power BI laskee kokonais- ja välisumma-arvot taulukoissa ja matriiseissa. Power Bi arvioi kokonais- ja välisummariveille mittaria pohjana olevien tietojen kaikista riveistä. Se ei koostu ainoastaan näkyvien tai näytettyjen rivien arvoista. Kokonaissummarivin arvo saattaa siis poiketa odotuksistasi.
+Ennen kuin siirrymme matriisivisualisoinnin käytön ohjeisiin, on tärkeää ymmärtää, miten Power BI laskee kokonais- ja välisumma-arvot taulukoissa ja matriiseissa. Power Bi arvioi kokonais- ja välisummariveille mittaria pohjana olevien tietojen kaikista riveistä. Se ei koostu ainoastaan näkyvien tai näytettyjen rivien arvoista. Kokonaissummarivin arvo saattaa siis poiketa odotuksistasi.
 
 Katso seuraavia matriisivisualisointeja. 
 
@@ -83,7 +86,7 @@ Näiden kuvakkeiden käyttämisen lisäksi voit valita minkä tahansa näistä r
 
 Huomaa, että valikossa on muutamia vaihtoehtoja, jotka tuottavat erilaisia tuloksia:
 
-Jos valitset **Poraudu alaspäin**, matriisi laajennetaan *kyseisen* rivin tasolla, *lukuun ottamatta* kaikkia muita riviotsikoita paitsi valittua riviotsikkoa. Seuraavassa kuvassa on valittu **Ehdotus** > **Poraudu alaspäin**. Huomaa, että muita ylimmän tason rivejä ei enää näytetä matriisissa. Tämä poraamistapa on hyödyllinen toiminto ja erityisen kätevä, kun käsittelemme **ristiinkorostusta**.
+Jos valitset **Poraudu alaspäin**, matriisi laajennetaan *kyseisen* rivin tasolla, *lukuun ottamatta* kaikkia muita riviotsikoita paitsi valittua riviotsikkoa. Seuraavassa kuvassa on valittu **Ehdotus** > **Poraudu alaspäin**. Huomaa, että muita ylimmän tason rivejä ei enää näytetä matriisissa. Tämä porautumistapa on hyödyllinen toiminto ja erityisen kätevä, kun käsittelemme ristiinkorostusta.
 
 ![matriisi, jossa on porattu alaspäin yksi taso](media/desktop-matrix-visual/power-bi-drill-down-matrix.png)
 
@@ -100,7 +103,7 @@ Voit myös käyttää **Laajenna**-valikkokohdetta hallitsemaan näyttöä tarke
 ![Matriisi, kun Laajenna-komentoa on sovellettu ehdotukseen](media/desktop-matrix-visual/power-bi-matrix-expand.png)
 
 ### <a name="drill-down-on-column-headers"></a>Sarakkeiden otsikoiden poraaminen
-Voit porata **sarakkeita** alaspäin samoin kuin rivejä. Seuraavassa kuvassa näet, että **Sarakkeet**-kentän säilössä on kaksi kenttää, jotka luovat hierarkian samalla tavalla kuin rivien kanssa aiemmin tässä artikkelissa. **Sarakkeet**-kentässä on *Alue* ja *Segmentti*. Heti, kun toinen kenttä on lisätty **Sarakkeet**-kenttään, visualisoinnissa näytetään uusi avattava valikko, jossa on nyt **Rivit**.
+Voit porata sarakkeita alaspäin samoin kuin rivejä. Seuraavassa kuvassa näet, että **Sarakkeet**-kentän säilössä on kaksi kenttää, jotka luovat hierarkian samalla tavalla kuin rivien kanssa aiemmin tässä artikkelissa. **Sarakkeet**-kentässä on *Alue* ja *Segmentti*. Heti, kun toinen kenttä on lisätty **Sarakkeet**-kenttään, visualisoinnissa näytetään uusi avattava valikko, jossa on nyt **Rivit**.
 
 ![Matriisi, kun toisen sarakkeen arvo on lisätty](media/desktop-matrix-visual/power-bi-matrix-row.png)
 
@@ -108,7 +111,7 @@ Jos haluat porautua alaspäin sarakkeisiin, valitse **Sarakkeet** kohta *Poraudu
 
 ![valikkoa porautumiselle alaspäin sarakkeisiin](media/desktop-matrix-visual/power-bi-matrix-column.png)
 
-Kun valitset **Poraudu alaspäin**, näkyviin tulee sarakehierarkian seuraava taso *Alue > Itä* -kohdalle, joka on tässä tapauksessa *Mahdollisuuden lukumäärä*. Näyttöön tulee muu alue, mutta se näkyy harmaana.
+Kun valitset **Poraudu alaspäin**, näkyviin tulee sarakehierarkian seuraava taso *Alue > Itä* -kohdalle, joka on tässä tapauksessa *Mahdollisuuden lukumäärä*. Toinen alue on piilotettu.
 
 ![matriisi, jossa saraketta on porattu alaspäin yksi taso](media/desktop-matrix-visual/power-bi-matrix-column-drill.png)
 
@@ -119,21 +122,21 @@ Valikon muut kohteet toimivat sarakkeilla samoin kuin riveillä (katso edellinen
 
 ## <a name="stepped-layout-with-matrix-visuals"></a>Porrastettu asettelu matriisivisualisoinneissa
 
-**Matriisivisualisointi** sisentää hierarkian alaluokat automaattisesti kunkin ylätason alle. Tätä kutsutaan **porrastetuksi asetteluksi**.
+Matriisivisualisointi sisentää hierarkian alaluokat automaattisesti kunkin ylätason alle. Tätä kutsutaan porrastetuksi asetteluksi.
 
-Alkuperäisessä matriisivisualisoinnin versiossa aliluokat näytettiin täysin eri sarakkeella, mikä vei visualisoinnista paljon tilaa. Seuraavassa kuvassa taulukko näytetään alkuperäisessä **matriisivisualisoinnissa**. Huomaa, että aliluokat ovat erillisessä sarakkeessa.
+Alkuperäisessä matriisivisualisoinnin versiossa aliluokat näytettiin täysin eri sarakkeella, mikä vei visualisoinnista paljon tilaa. Seuraavassa kuvassa taulukko näytetään alkuperäisessä matriisivisualisoinnissa. Huomaa, että aliluokat ovat erillisessä sarakkeessa.
 
 ![Näyttökuva vanhasta matriisivisualisoinnista, joka näyttää aliluokat erillisessä sarakkeessa.](media/desktop-matrix-visual/matrix-visual_14.png)
 
-Seuraavassa kuvassa näytetään **matriisivisualisointi** **porrastetulla asettelulla**. Huomaa, että *Tietokoneet*-luokan aliluokat (tietokoneiden oheislaitteet, pöytätietokoneet, kannettavat tietokoneet, näytöt ja niin edelleen) on hieman sisennetty, mikä tekee visualisoinnista siistin ja tiiviin.
+Seuraavassa kuvassa näytetään matriisivisualisointi porrastetulla asettelulla. Huomaa, että *Tietokoneet*-luokan aliluokat (tietokoneiden oheislaitteet, pöytätietokoneet, kannettavat tietokoneet, näytöt ja niin edelleen) on hieman sisennetty, mikä tekee visualisoinnista siistin ja tiiviin.
 
 ![nykyinen tapa, jolla matriisi muotoilee tietoja](media/desktop-matrix-visual/matrix-visual_13.png)
 
-Voit helposti säätää porrastetun asettelun asetuksia. Kun **matriisivisualisointi** on valittu, siirry **Muotoilu**-osioon (telakuvake) **Visualisoinnit**-ruudulla ja laajenna **Rivien otsikot**-osio. Asetuksia on kaksi: **porrastetun asettelun** kytkin (käytössä / pois käytöstä) ja **Porrastetun asettelun sisennys** (määrittää sisennyksen kuvapisteinä).
+Voit helposti säätää porrastetun asettelun asetuksia. Kun matriisivisualisointi on valittu, siirry **Muotoilu**-osioon (telakuvake) **Visualisoinnit**-ruudulla ja laajenna rivien otsikko-osio. Asetuksia on kaksi: porrastetun asettelun kytkin (käytössä / pois käytöstä) ja Porrastetun asettelun sisennys (määrittää sisennyksen kuvapisteinä).
 
 ![Riviotsikot-kortti, joka näyttää porrastetun asettelun ohjausobjektin](media/desktop-matrix-visual/power-bi-stepped-matrix.png)
 
-Jos poistat **Porrastetun asettelun** käytöstä, Power BI näyttää aliluokat toisessa sarakkeessa sen sijaan, että ne sisennettäisiin ylätason luokan alle.
+Jos poistat porrastetun asettelun käytöstä, Power BI näyttää aliluokat toisessa sarakkeessa sen sijaan, että ne sisennettäisiin ylätason luokan alle.
 
 ## <a name="subtotals-with-matrix-visuals"></a>Välisummat matriisivisualisoinneissa
 
@@ -141,7 +144,7 @@ Voit ottaa sekä rivien että sarakkeiden välisummat käyttöön ja poistaa ne 
 
 ![matriisi, joka näyttää kokonais- ja välisummat](media/desktop-matrix-visual/matrix-visual_20.png)
 
-Siirry **Muotoilu**-osioon **Visualisoinnit**-ruudulla, laajenna **Välisummat**-kortti ja aseta **Rivien välisummat** -liukusäädin**Pois käytöstä** -asentoon. Kun teet näin, välisummat eivät näy.
+Siirry Muotoilu-osioon Visualisoinnit-ruudulla, laajenna **Välisummat**-kortti ja aseta Rivien välisummat -liukusäädin **Pois käytöstä** -asentoon. Kun teet näin, välisummat eivät näy.
 
 ![matriisi, jossa välisummat on poistettu käytöstä](media/desktop-matrix-visual/matrix-visual_21.png)
 
@@ -149,16 +152,15 @@ Voit tehdä saman sarakkeiden välisummille.
 
 ## <a name="cross-highlighting-with-matrix-visuals"></a>Ristiinkorostus matriisivisualisoinneissa
 
-**Matriisivisualisoinneissa** matriisin elementtejä voidaan valita ristiinkorostuksen perustaksi. Valitse **Matriisi**-kohdassa sarake, ja Power BI korostaa sarakkeen, kuten muutkin raporttisivun visualisoinnit. Tämä ristiinkorostuksen tyyppi on muiden visualisointien ja arvopisteen valinnan yleinen ominaisuus, joka on nyt laajennettu **matriisivisualisointeihin**.
+Matriisivisualisoinneissa matriisin elementtejä voidaan valita ristiinkorostuksen perustaksi. Valitse matriisin sarake, ja Power BI korostaa sarakkeen, kuten muutkin raporttisivun visualisoinnit. Tämä ristiinkorostuksen tyyppi on muiden visualisointien ja arvopisteen valinnan yleinen ominaisuus, joka on nyt laajennettu matriisivisualisointeihin.
 
-Myös Ctrl + napsautus -valinta toimii ristiinkorostuksessa. Esimerkiksi seuraavassa kuvassa **matriisivisualisoinnista** valittiin kokoelma aliluokkia. Huomaa, miten visualisoinnin valitsemattomat nimikkeet näkyvät harmaina ja miten sivun muut visualisoinnit kuvastavat **matriisivisualisoinnissa** tehtyjä valintoja.
+Myös Ctrl + napsautus -valinta toimii ristiinkorostuksessa. Esimerkiksi seuraavassa kuvassa matriisivisualisoinnista valittiin kokoelma aliluokkia. Huomaa, miten visualisoinnin valitsemattomat nimikkeet näkyvät harmaina ja miten sivun muut visualisoinnit kuvastavat matriisivisualisoinnissa tehtyjä valintoja.
 
 ![Näyttökuva matriisivisualisoinnista ja kahdesta muusta visualisoinnista ristiinkorostuksen Ctrl + napsautus -toiminnon esittelemiseksi.](media/desktop-matrix-visual/matrix-visual_16.png)
 
 ## <a name="copying-values-from-power-bi-for-use-in-other-applications"></a>Arvojen kopiointi Power BI:stä muissa sovelluksissa käytettäviksi
 
 Matriisissa tai taulukossa saattaa olla sisältöä, jota haluat käyttää muissa sovelluksissa: Dynamics CRM:ssä, Excelissä ja muissa Power BI -raporteissa. Power BI:n avulla voit hiiren kakkospainikkeella kopioida solun tai valikoiman soluja leikepöydälle ja liittää ne sitten toiseen sovellukseen.
-
 
 
 * Kopioi yksittäisen solun arvo valitsemalla solu, napsauttamalla hiiren kakkospainiketta ja valitsemalla **Kopioi arvo**. Solun muotoilematon arvo on nyt leikepöydällä, josta voit liittää sen toiseen sovellukseen.
@@ -175,8 +177,16 @@ Matriisissa tai taulukossa saattaa olla sisältöä, jota haluat käyttää muis
 
     ![Näyttökuva Excel-riveistä ja -sarakkeista, joihin on liitetty arvot.](media/desktop-matrix-visual/power-bi-copy-selection.png)
 
+* Jos haluat tehdä kopion itse visualisoinnista ja sisällyttää vain valitsemasi solut, valitse vähintään yksi solu CTRL-näppäimen avulla, napsauta hiiren kakkospainiketta ja valitse **Kopioi visualisointi**
+
+    ![Kuvakaappaus, joka näyttää visualisoinnin kopiointitoiminnon](media/desktop-matrix-visual/power-bi-copy-visual.png)
+
+* Kopio on toinen matriisivisualisointi, mutta se sisältää vain kopioidut tiedot.
+
+    ![Kuvakaappaus, joka näyttää esimerkin visualisoinnin kopioinnista](media/desktop-matrix-visual/power-bi-copy-visual-example.png)
+
 ## <a name="shading-and-font-colors-with-matrix-visuals"></a>Sävytys ja fontin väri matriisivisualisoinneissa
-Matriisivisualisoinnin avulla voit käyttää **ehdollista muotoilua** (värit, sävytys ja tietopalkit) matriisin solujen taustavärinä, ja voit käyttää ehdollista muotoilua myös itse tekstiin ja arvoihin.
+Matriisivisualisoinnin avulla voit käyttää ehdollista muotoilua (värit, sävytys ja tietopalkit) matriisin solujen taustavärinä, ja voit käyttää ehdollista muotoilua myös itse tekstiin ja arvoihin.
 
 Voit käyttää ehdollista muotoilua valitsemalla matriisivisualisoinnin ja avaamalla **Muotoile**-ruudun. Voit vaihtoehtoisesti siirtyä **Ehdollinen muotoilu** -korttiin ja määrittää **taustavärin** **fontin värin** tai **tietopalkit** asettamalla liukusäätimen **Käytössä**-asentoon. Ottamalla käyttöön jonkin näistä vaihtoehdoista näet *Lisäasetukset*-linkin, jonka avulla voit mukauttaa värejä ja värin muotoilun arvoja.
   

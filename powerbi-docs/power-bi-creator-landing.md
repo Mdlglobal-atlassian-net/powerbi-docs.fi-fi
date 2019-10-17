@@ -1,25 +1,25 @@
 ---
 title: Power BI raporttien kehittäjille
-description: Muodostatko yhteyden tietoihin, suunnitteletko kyselyjä ja luotko raportteja ja koontinäyttöjä Power BI:ssä? Oletko omia sovelluksia luova kehittäjä tai Power BI:n järjestelmänvalvoja?
+description: Muodostatko yhteyden tietoihin, suunnitteletko kyselyjä ja luotko raportteja ja koontinäyttöjä Power BI:ssä? Oletko Power BI -järjestelmänvalvoja?
 author: maggiesMSFT
 manager: kfile
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: landing-page
-ms.date: 03/20/2019
+ms.date: 10/07/2019
 ms.author: maggies
 layout: LandingPage
 LocalizationGroup: Get started
-ms.openlocfilehash: 2ec8f0813807e2b92983398a74a02d46e6d4f280
-ms.sourcegitcommit: 277fadf523e2555004f074ec36054bbddec407f8
+ms.openlocfilehash: 4defed78228805a3f61447def82b3c3d406103d3
+ms.sourcegitcommit: d02de4ca33d865aee3e3e764b98f221950cb0a10
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68271780"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "72239883"
 ---
 # <a name="power-bi-for-report-designers"></a>Power BI raporttien suunnittelijoille
 
-Muodostatko yhteyden tietoihin, suunnitteletko kyselyjä ja luotko raportteja ja koontinäyttöjä Power BI:ssä? Oletko omia sovelluksia luova kehittäjä? Hallitsetko Power BI:tä? Näiden resurssien avulla pääset vauhtiin. Tervetuloa!
+Muodostatko yhteyden tietoihin, suunnitteletko kyselyjä ja luotko raportteja ja koontinäyttöjä Power BI:ssä? Hallitsetko Power BI:tä? Näiden resurssien avulla pääset vauhtiin. Tervetuloa!
 
 Oletko Power BI:n kuluttaja? Myös sinä olet tervetullut. Suosittelemme aloittamaan kohdasta [Power BI kuluttajille](consumer/power-bi-consumer-landing.md).
 
@@ -157,46 +157,6 @@ Oletko Power BI:n kuluttaja? Myös sinä olet tervetullut. Suosittelemme aloitta
                                           <p></p>
                                                 <a href="service-how-to-collaborate-distribute-dashboards-reports.md">Miten tehdään yhteistyötä ja jaetaan?</a><br/>
                                                 <a href="service-create-workspaces.md">Sovellustyötilat Power BI -palvelussa</a> 
-                                    </div> 
-                              </div> 
-                        </div> 
-                  </div> 
-            </li>
-            <li> 
-                  <div class="cardSize"> 
-                        <div class="cardPadding"> 
-                              <div class="card"> 
-                                    <div class="cardImageOuter">
-                                          <div class="cardImage">
-                                                <img alt="Develop for Power BI" src="media/power-bi-creator-landing/power-bi-designer-develop-power-bi.svg" data-linktype="relative-path">
-                                          </div>
-                                    </div>
-                                    <div class="cardText"> 
-                                          <h3>Kehitä Power BI:tä varten</h3> 
-                                          <p></p>
-                                                <a href="developer/embedding.md">Upottaminen Power BI:n avulla</a><br/> 
-                                                <a href="developer/custom-visual-develop-tutorial.md">Mukautettujen visualisointien kehittäminen</a><br/> 
-                                                <a href="https://docs.microsoft.com/rest/api/power-bi">Power BI:n REST-ohjelmointirajapinnat</a>
-                                    </div> 
-                              </div> 
-                        </div> 
-                  </div> 
-            </li>
-            <li> 
-                  <div class="cardSize"> 
-                        <div class="cardPadding"> 
-                              <div class="card"> 
-                                    <div class="cardImageOuter">
-                                          <div class="cardImage">
-                                                <img alt="Administer Power BI" src="media/power-bi-creator-landing/power-bi-designer-administer-power-bi.svg" data-linktype="relative-path">
-                                          </div>
-                                    </div>
-                                    <div class="cardText"> 
-                                          <h3>Power BI:n hallinta</h3> 
-                                          <p></p>
-                                                <a href="service-admin-administering-power-bi-in-your-organization.md">Mitä on Power BI:n hallinta?</a><br/> 
-                                                <a href="service-admin-purchasing-power-bi-pro.md">Power BI Pro- käyttöoikeuksien ostaminen</a><br/>
-                                                <a href="service-admin-reference.md">PowerShellin cmdlet-komennot, REST-ohjelmointirajapinnat ja .NET SDK:t</a>
                                     </div> 
                               </div> 
                         </div> 

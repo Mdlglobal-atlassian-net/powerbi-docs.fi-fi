@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 08/15/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: f54906643bba8c631c8d8052309ad3ff512ad3fa
-ms.sourcegitcommit: 57e45f291714ac99390996a163436fa1f76db427
+ms.openlocfilehash: 7aa9ec22eec07632a071b5ffaadfe06f221897d7
+ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "71305756"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72020233"
 ---
 # <a name="publish-an-app-in-power-bi"></a>Julkaise sovellus Power BI:ssä
 
@@ -30,7 +30,7 @@ Yrityskäyttäjät saavat sovelluksesi käyttöönsä eri tavoin:
 - Voit lähettää heille suoran linkin.
 - Voit asentaa sen automaattisesti työtovereittesi Power BI -tileille, jos Power BI -järjestelmänvalvojasi antaa sinulle luvan.
 
-Voit luoda sovelluksen, jossa on omat sisäänrakennetut siirtymiskomennot, jolloin käyttäjät voivat vaivattomasti löytää sisältösi. He eivät voi muokata sovelluksen sisältöä. He voivat käyttää sitä joko Power BI -palvelussa tai jossakin mobiilisovelluksista. He voivat suodattaa, korostaa ja lajitella tiedot itse. He saavat päivitykset automaattisesti, ja sinä voit määrittää, kuinka usein tiedot päivitetään. Voit myös antaa heille muodostamisoikeudet yhteyden muodostamiseksi pohjana oleviin tietojoukkoihin ja kopioiden luomiseksi raporteista sovelluksessa. Lue lisätietoja [muodostamisoikeudesta](service-datasets-build-permissions.md#build-permissions-for-shared-datasets).
+Voit luoda sovelluksen, jossa on omat sisäänrakennetut siirtymiskomennot, jolloin käyttäjät voivat vaivattomasti löytää sisältösi. He eivät voi muokata sovelluksen sisältöä. He voivat käyttää sitä joko Power BI -palvelussa tai jossakin mobiilisovelluksista. He voivat suodattaa, korostaa ja lajitella tiedot itse. He saavat päivitykset automaattisesti, ja sinä voit määrittää, kuinka usein tiedot päivitetään. Voit myös antaa heille muodostamisoikeuden yhteyden muodostamiseksi pohjana oleviin tietojoukkoihin ja kopioiden luomiseksi raporteista sovelluksessa. Lue lisätietoja [muodostamisoikeudesta](service-datasets-build-permissions.md).
 
 ## <a name="licenses-for-apps"></a>Sovellusten käyttöoikeudet
 Sovelluksen luomiseen tai päivittämiseen tarvitaan Power BI Pro -käyttöoikeus. Sovelluksen *kuluttajilla* on kaksi vaihtoehtoa.
@@ -166,7 +166,7 @@ Kun valitset asetuksen, joka antaa **käyttäjille oikeuden yhdistää sovelluks
 - Näitä tietojoukkoja voi hakea Power BI Desktopissa ja Power BI -palvelun tietojen noutotoiminnossa.
 - Raportteja ja koontinäyttöjä voi luoda näiden tietojoukkojen perusteella.
 
-Kun poistat tämän asetuksen valinnan, sovellukseen lisäämäsi uudet käyttäjät eivät enää saa muodostamisoikeuksia. Sovelluksen olemassa olevilla käyttäjillä pohjana olevien tietojoukkojen oikeudet eivät muutu. Voit poistaa muodostamisoikeudet manuaalisesti sovellusten käyttäjiltä, jotka eivät enää tarvitse niitä. Lue lisätietoja [muodostamisoikeudesta](service-datasets-build-permissions.md#build-permissions-for-shared-datasets).
+Kun poistat tämän asetuksen valinnan, sovellukseen lisäämäsi uudet käyttäjät eivät enää saa muodostamisoikeutta. Sovelluksen olemassa olevilla käyttäjillä pohjana olevien tietojoukkojen oikeudet eivät muutu. Voit poistaa muodostamisoikeuden manuaalisesti sovellusten käyttäjiltä, jotka eivät enää tarvitse niitä. Lue lisätietoja [muodostamisoikeudesta](service-datasets-build-permissions.md).
 
 ## <a name="allow-users-to-copy-reports"></a>Salli käyttäjien kopioida raportteja
 

@@ -7,21 +7,23 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 08/19/2019
+ms.date: 10/08/2019
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: 6c752b6083d2f3baecf7e1a9ce20f77e8c5a46d0
-ms.sourcegitcommit: 4a3afe761d2f4a5bd897fafb36b53961739e8466
+ms.openlocfilehash: 11f60ba14734f40849aec47a492f4bf80c4ef3b5
+ms.sourcegitcommit: d02de4ca33d865aee3e3e764b98f221950cb0a10
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/20/2019
-ms.locfileid: "69654936"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "72239948"
 ---
 # <a name="the-new-look-of-the-power-bi-service"></a>Power BI -palvelun uusi ulkoasu
 
-Power BI -palvelussa (app.powerbi.com) on uusi ulkoasu, jonka ansiosta raportteja on helpompi tarkastella ja käyttää. Uusi ulkoasu on yksinkertaisempi, moderni kokemus, joka perustuu muiden Microsoft-tuotteiden tuntemukseesi. Olemme painottaneet koko Power BI -palvelussa raportin sisältöä vaihtamalla vaaleampaan väriteemaan ja päivittämällä kuvakkeita. Seuraavassa on yleiskatsaus siitä, mitä uutta uudessa ulkoasussa on. Lisätietoja on numeroiduissa osioissa:
+Power BI -palvelussa (app.powerbi.com) on uusi ulkoasu, jonka ansiosta raportteja on helpompi tarkastella ja käyttää. Uusi ulkoasu on yksinkertaisempi ja se perustuu muiden Microsoft-tuotteiden tuntemukseesi. Olemme painottaneet koko Power BI -palvelussa raportin sisältöä vaihtamalla vaaleampaan väriteemaan ja päivittämällä kuvakkeita. Seuraavassa on yleiskatsaus siitä, mitä uutta uudessa ulkoasussa on. Lisätietoja on numeroiduissa osioissa:
 
 ![Yleiskatsaus uuden ulkoasun muutoksista](media/service-new-look/power-bi-new-look-changes.png)
+
+Etsitkö tiettyä toimintoa? Katso ["uusi ulkoasu": Minne toiminnot ovat kadonneet?](service-new-look-where-actions.md)
 
 ## <a name="quick-tour-of-the-changes"></a>Muutosten pikaesittely
 
@@ -70,7 +72,7 @@ Etsitkö **Tiedosto**-valikon toimintoja? Toiminnot, jotka olivat **Tiedosto**-v
 
 ## <a name="6-new-filter-experience"></a>6. Uusi suodatuskokemus
 
-Viimeaikaiset päivitykset, kuten käytössä olevien suodattimien tarkastelu ja uusi suodatinruutu, ovat oletusarvoisesti käytettävissä uudessa ulkoasussa. Vaikka raporttien suunnittelijat eivät olisikaan ottaneet uusia suodattimia käyttöön, uusi suodatinruutu on näkyvissä.
+Viimeaikaiset päivitykset, kuten käytössä olevien suodattimien tarkastelu ja uusi suodatinruutu, ovat oletusarvoisesti käytettävissä uudessa ulkoasussa. Vaikka raportin suunnittelija ei olisikaan ottanut uusia suodattimia käyttöön, uusi suodatinruutu on näkyvissä.
 
 ![Suodattimen oikaisu](media/service-new-look/power-bi-new-look-filters.png)
 

@@ -2,20 +2,20 @@
 title: Kyselyn tallentaminen välimuistiin Power BI Premiumissa
 description: Kyselyn tallentaminen välimuistiin Power BI Premiumissa
 author: KesemSharabi
-ms.author: maggies
+ms.author: kesharab
 manager: rkarlin
 ms.reviewer: bhmerc
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 07/16/2019
+ms.date: 10/04/2019
 LocalizationGroup: ''
-ms.openlocfilehash: 489069df43d2c09f6f5551987a61353e095aff7a
-ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
+ms.openlocfilehash: 6e68f515581d62b544f1c6b17144e73ea709a62d
+ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71076166"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72020523"
 ---
 # <a name="query-caching-in-power-bi-premiumembedded"></a>Kyselyn tallentaminen välimuistiin Power BI Premiumissa / Embeddedissa
 
@@ -26,13 +26,13 @@ Power BI Premiumia tai Power BI Embeddedia käyttävät organisaatiot voivat hy�
 
 Välimuistissa olevat kyselytulokset ovat käyttäjä- ja tietojoukkokontekstikohtaisia ja noudattavat aina suojaussääntöjä. Tällä hetkellä kyselyn tallentaminen välimuistiin koskee vain aloitussivua. Toisin sanoen kyselyt eivät tallennu välimuistiin, kun käsittelet raporttia. Kyselyn välimuistissa noudatetaan [henkilökohtaisia kirjanmerkkejä](consumer/end-user-bookmarks.md#personal-bookmarks) ja [pysyviä suodattimia](https://powerbi.microsoft.com/blog/announcing-persistent-filters-in-the-service/), joten mukautetun raportin avulla luodut kyselyt tallennetaan välimuistiin. [Koontinäyttöruudut](service-dashboard-tiles.md), jotka käyttävät samoja kyselyjä, hyötyvät myös kyselyn tallentamisesta välimuistiin. Etenkin suorituskyky hyötyy, kun tietojoukkoa käytetään usein eikä sitä tarvitse päivittää usein. Kyselyn tallentaminen välimuistiin voi myös pienentää Premium- tai Embedded-kapasiteetin kuormitusta vähentämällä kyselyjen kokonaismäärää.
 
-Voit hallita kyselyn tallentamista välimuistiin tietojoukon **Asetukset**-sivulla Power BI -palvelussa. Asetusvaihtoehtoja on kaksi:
+Voit hallita kyselyn tallentamista välimuistiin tietojoukon **Asetukset**-sivulla Power BI -palvelussa. Asetusvaihtoehtoja on kolme:
 
+- **Kapasiteetin oletusarvo**: Kyselyn tallentaminen välimuistiin pois käytöstä
 - **Ei käytössä**: Älä käytä kyselyn tallentamista välimuistiin tälle tietojoukolle.
-
 - **Käytössä**: Käytä kyselyn tallentamista välimuistiin tälle tietojoukolle.
 
-![Kyselyn tallentaminen välimuistiin -valintaikkuna](media/power-bi-query-caching/power-bi-query-caching.png)
+    ![Kyselyn tallentaminen välimuistiin -valintaikkuna](media/power-bi-query-caching/power-bi-query-3-options.png)
 
 ## <a name="considerations-and-limitations"></a>Huomioitavat asiat ja rajoitukset
 

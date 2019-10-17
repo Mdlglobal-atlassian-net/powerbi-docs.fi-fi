@@ -7,15 +7,15 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 09/10/2019
+ms.date: 10/02/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 5c50ec38da65573e085d9e27b0e31524256ac009
-ms.sourcegitcommit: d04b9e1426b8544ce16ef25864269cc43c2d9f7b
+ms.openlocfilehash: 7d53acc0dc8c669026665347de9593fa1df84c62
+ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "71715540"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72020113"
 ---
 # <a name="create-the-new-workspaces-in-power-bi"></a>Uusien työtilojen luominen Power BI:ssä
 
@@ -68,7 +68,7 @@ Katso lisätietoja artikkelista [Uudet työtilat](service-new-workspaces.md).
 
 ## <a name="workspace-contact-list"></a>Työtilan yhteystietoluettelo
 
-Uuden yhteystietoluettelon avulla voit määrittää käyttäjät, joille ilmoitetaan työtilassa esiintyneistä ongelmista. Oletusarvon mukaan ilmoitus annetaan kaikille käyttäjille tai ryhmille, jotka on määritetty työtilan järjestelmänvalvojiksi, mutta voit mukauttaa luetteloa. Yhteystietoluettelossa luetellut käyttäjät tai ryhmät näytetään käyttöliittymässä (UI), jotta käyttäjät saavat työtilaa koskevaa apua.
+Voit määrittää käyttäjät, joille ilmoitetaan työtilassa esiintyneistä ongelmista. Oletusarvon mukaan ilmoitus annetaan kaikille käyttäjille tai ryhmille, jotka on määritetty työtilan järjestelmänvalvojiksi, mutta voit mukauttaa luetteloa lisäämällä vastaanottajia *yhteystietoluetteloon*. Yhteystietoluettelossa olevat käyttäjät tai ryhmät näytetään käyttöliittymässä (UI), jotta käyttäjät saavat työtilaa koskevaa apua.
 
 1. Pääset uuteen **Yhteystietoluettelo**-asetukseen kahdella tavalla:
 
@@ -79,6 +79,9 @@ Uuden yhteystietoluettelon avulla voit määrittää käyttäjät, joille ilmoit
     ![Työtilan asetukset](media/service-create-the-new-workspaces/power-bi-workspace-new-settings.png)
 
 2. Hyväksy **Lisäasetukset** > **Yhteystietoluettelo**-kohdan oletusasetus (**Työtilan järjestelmänvalvojat**) tai lisää oma **tiettyjen käyttäjien tai ryhmien** luettelo. 
+
+    ![Työtilan yhteystiedot](media/service-create-the-new-workspaces/power-bi-workspace-contacts.png)
+
 3. Valitse **Tallenna**.
 
 ## <a name="workspace-onedrive"></a>Työtilan OneDrive
@@ -103,34 +106,15 @@ Power BI ei synkronoi niiden käyttäjien tai ryhmien käyttöoikeuksia, joille 
 
 ### <a name="access-the-workspace-onedrive-location"></a>Työtilan OneDrive-sijaintiin pääseminen
 
-Kun olet määrittänyt OneDrive-sijainnin, voit päästä siihen muutamista työtilan eri paikoista:
+Kun olet määrittänyt OneDrive-sijainnin, pääset siihen samalla tavalla kuin Power BI -palvelun muihin tietolähteisiin.
 
-- Valitse **Työtilat** > *työtilan nimi* > pistevalikko ( **...** ) > **Tiedostot**. 
+1. Valitse vasemman reunan siirtymisruudusta **Nouda tiedot**, ja valitse sitten **Tiedostot**-ruudussa **Nouda**.
 
-    ![Työtilan tiedostojen sijainti](media/service-new-workspaces/power-bi-new-workspace-files.png)
+    ![Nouda tiedot, nouda tiedostot](media/service-create-the-new-workspaces/power-bi-get-data-files.png)
 
-- Valitse pistevalikko ( **...** ) työtilan oikeasta yläkulmasta > **Tiedostot**.
-
-    ![Työtilan tiedostojen sijainti](media/service-create-the-new-workspaces/power-bi-new-workspace-files-ellipsis.png)
-    
-- **Nouda tiedot** > **Tiedostot**-käyttökokemuksen kautta. **OneDrive – Business** -kirjaus viittaa omaan OneDrive for Business -palveluusi. Toinen OneDrive on se, jonka lisäsit.
+1.  **OneDrive – Business** -kirjaus viittaa omaan OneDrive for Business -palveluusi. Toinen OneDrive on se, jonka lisäsit.
 
     ![Työtilan tiedostojen sijainti ̶ tietojen noutaminen](media/service-create-the-new-workspaces/power-bi-new-workspace-get-data-onedrive.png)
-
-## <a name="add-content-to-your-workspace"></a>Sisällön lisääminen työtilaan
-
-Kun olet luonut uuden käyttökokemuksen mukaisen työtilan, voit alkaa lisätä siihen sisältöä. Sisällön lisääminen toimii uusissa ja perinteisissä työtiloissa samalla tavalla. Lisää sisältöä työtilaasi Luo-painikkeen tai Nouda tiedot -toiminnon avulla.
-
-1. Voit lisätä tietoja uuden työtilasi **Tervetuloa**-näytön kautta. 
-
-    ![Uuden työtilan Tervetuloa-näyttö](media/service-create-the-new-workspaces/power-bi-workspace-get-data.png)
-
-1. Valitse esimerkiksi **Mallit** > **Asiakkaan tuottavuuden malli**.
-
-> [!NOTE]
-> Et voi lisätä organisaation sisältöpaketteja tai kolmansien osapuolten sisältöpaketteja uusiin työtiloihin. Sovellukset ovat käytettävissä useissa aiemmin käyttämissäsi kolmansien osapuolten sisältöpaketeissa. Käytä perinteisiä työtiloja, jos sinun on käytettävä sisältöpaketteja. Sisältöpaketit on poistettu käytöstä, joten on parempi käyttää sen sijaan sovelluksia.
-
-Kun sisältöä tarkastellaan työtilan sisältöluettelossa, työtilan nimenä näkyy omistajan nimi.
 
 ### <a name="connecting-to-third-party-services-in-new-workspaces"></a>Kolmannen osapuolen palveluihin yhdistäminen uusissa työtiloissa
 
@@ -142,9 +126,7 @@ Et voi luoda tai käyttää organisaation sisältöpaketteja uudenlaisissa työt
 
 1. Järjestelmänvalvojat näkevät työtilan sisältöluettelossa uuden toiminnon, **Käyttöoikeudet**.
 
-    ![Työtilojen sisältöluettelo](media/service-create-the-new-workspaces/power-bi-new-workspace-files-ellipsis.png)
-
-1. Valitse **Käyttö**.
+    ![Työtilojen sisältöluettelo](media/service-create-the-new-workspaces/power-bi-workspace-access-icon.png)
 
 1. Lisää käyttöoikeusryhmiä, jakeluluetteloita, Office 365 -ryhmiä tai henkilöitä näihin työtiloihin jäseninä, osallistujina tai järjestelmänvalvojina. Eri roolien tarkempi kuvaus on [Roolit uusissa työtiloissa](service-new-workspaces.md#roles-in-the-new-workspaces) -kohdassa.
 

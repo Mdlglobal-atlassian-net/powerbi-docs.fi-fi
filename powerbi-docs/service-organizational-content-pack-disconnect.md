@@ -10,17 +10,17 @@ ms.topic: conceptual
 ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 62bec222a3f948612db63c386e10c0afe9762bb4
-ms.sourcegitcommit: 762857c8ca09ce222cc3f8b006fa1b65d11e4ace
+ms.openlocfilehash: d83a57b2b1f8e2ca0887f2432f2de43647900b81
+ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66721414"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72020629"
 ---
 # <a name="remove-your-connection-to-a-power-bi-organizational-content-pack"></a>Organisaation sisältöpaketin yhteyden poistaminen Power BI:lle
 
 > [!NOTE]
-> Et voi luoda organisaation sisältöpaketteja tai asentaa niitä uuden työtilakokemuksen esiversiossa. Nyt on hyvä aika päivittää sisältöpaketit sovelluksiin, jos et ole vielä aloittanut päivittämistä. Lue [lisätietoja uudesta työtilakokemuksesta](service-create-the-new-workspaces.md).
+> Et voi luoda organisaation sisältöpaketteja tai asentaa niitä uudessa työtilakokemuksessa. Nyt on hyvä aika päivittää sisältöpaketit sovelluksiin, jos et ole vielä aloittanut päivittämistä. Lue [lisätietoja uudesta työtilakokemuksesta](service-create-the-new-workspaces.md).
 > 
 
 Työtoveri loi sisältöpaketin. Löysit sen AppSourcesta ja lisäsit sen Power BI -työtilaasi. Nyt et tarvitse sitä enää.  Miten voit poistaa sen?

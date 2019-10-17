@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/12/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: af0ffa5a879a2249c34ac73895103dfdf63e4d27
-ms.sourcegitcommit: 4d5166944fcc6fe4666cab055ae75e7a0a77866d
+ms.openlocfilehash: c60c3c29bbf87d7a5e18838dac0baa6157de6437
+ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69530600"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72020816"
 ---
 # <a name="copy-reports-from-other-workspaces-preview"></a>Raporttien kopioiminen muista työtiloista (esikatselu)
 
@@ -32,7 +32,7 @@ Kun löydät työtilasta tai sovelluksesta raportin, josta pidät, voit luoda si
 
     ![Tallenna kopio raportista](media/service-datasets-copy-reports/power-bi-dataset-save-report-copy.png)
 
-    Näet **Tallenna kopio** -kuvakkeen vain, jos raportti on uuden käyttöliittymän työtilassa ja sinulla on [muodostamiskäyttöoikeudet](service-datasets-build-permissions.md#build-permissions-for-shared-datasets). Vaikka sinulla olisi työtilan käyttöoikeus, sinulla täytyy silti olla tietojoukon muodostamisoikeudet.
+    Näet **Tallenna kopio** -kuvakkeen vain, jos raportti on uuden käyttöliittymän työtilassa ja sinulla on [muodostamisoikeus](service-datasets-build-permissions.md). Vaikka sinulla olisi työtilan käyttöoikeus, sinulla täytyy silti olla tietojoukon muodostamisoikeus.
 
 3. Anna **Tallenna kopio tästä raportista** -kohdassa raportille nimi. Valitse myös kohdetyötila.
 
