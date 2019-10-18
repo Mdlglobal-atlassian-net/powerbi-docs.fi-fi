@@ -177,8 +177,6 @@
               href: desktop-analysis-services-tabular-data.md
             - name: DirectQueryn käyttö Power BI Desktopissa
               href: desktop-use-directquery.md
-            - name: Oraclen ja Teradatan DirectQuery
-              href: desktop-directquery-for-oracle-teradata.md
             - name: DirectQuery ja SAP Business Warehouse (BW)
               href: desktop-directquery-sap-bw.md
             - name: DirectQuery ja SAP HANA
