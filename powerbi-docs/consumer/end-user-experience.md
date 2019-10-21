@@ -9,17 +9,19 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: quickstart
-ms.date: 12/06/2018
+ms.date: 10/18/2019
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: af7f2f0ca5407694b13f0b053ff347f883c8c983
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: 14c7f88e0bfb822a73a72958f556443260f6ed76
+ms.sourcegitcommit: f34acbf9fb1ab568fd89773aaf412a847f88dd34
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "68523034"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72589443"
 ---
 # <a name="quickstart---getting-around-in-power-bi-service"></a>Pikaopas - Power BI -palveluun tutustuminen
+
+[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
 Nyt kun tunnet Power BI:n perusasiat, tutustutaan **Power BI -palveluun**. Kuten aiemmin mainittiin, ryhmäsi jäsen saattaa käyttää kaiken aikansa **Power BI Desktopissa** tietojen koostamiseen ja raporttien luomiseen muille. Sinun aikasi vuorostaan saattaa kulua Power BI -palvelussa muiden luoman sisällön tarkasteluun ja käsittelemiseen (**kuluttamis**kokemus). Tässä pikaoppaassa tuot näytetietoja ja käytät kyseisiä tietoja tutustuessasi Power BI -palveluun. 
  

@@ -10,12 +10,12 @@ ms.service: powerbi
 ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
 ms.date: 05/9/2019
-ms.openlocfilehash: 2203e3a9abddb52902c09fdc98665ba013f604ee
-ms.sourcegitcommit: b7a9862b6da940ddebe61bc945a353f91cd0e4bd
+ms.openlocfilehash: 84afdf7072241533bf1e70d6a2a49d18c3da1d8f
+ms.sourcegitcommit: 549401b0e1fad15c3603fe7f14b9494141fbb100
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71946222"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72307836"
 ---
 # <a name="get-a-power-bi-visual-certified"></a>Sertifioinnin hankkiminen Power BI -visualisoinnille
 
@@ -31,7 +31,7 @@ Sertifiointiprosessi on vapaaehtoinen, ja kehittäjät voivat itse päättää, 
 
 **Sertifioimattomat Power BI -visualisoinnit** eivät välttämättä ole turvallisia käyttää. Jotkin visualisoinnit eivät ole sertifioituja, koska ne eivät täytä yhtä tai useampaa [sertifiointivaatimusta](https://docs.microsoft.com/power-bi/power-bi-custom-visuals-certified?#certification-requirements). Tällaisia ovat esimerkiksi karttavisualisoinnit, jotka muodostavat yhteyden ulkoisiin palveluihin, tai visualisoinnit, jotka hyödyntävät kaupallisia kirjastoja.
 
-Oletko web-kehittäjä ja halukas luomaan omia visualisointeja ja lisäämään niitä  **[Microsoft AppSourceen](https://appsource.microsoft.com)** ? Katso ohjeet kohdasta  **[Power BI:n mukautetun visualisoinnin kehittäminen](developer/custom-visual-develop-tutorial.md)** .
+Oletko web-kehittäjä ja halukas luomaan omia visualisointeja ja lisäämään niitä  **[Microsoft AppSourceen](https://appsource.microsoft.com)** ? Katso ohjeet kohdasta  **[Power BI:n mukautetun visualisoinnin kehittäminen](developer/visuals/custom-visual-develop-tutorial.md)** .
 
 ## <a name="removal-of-power-bi-certified-power-bi-visuals"></a>Sertifioitujen Power BI -visualisointien poistaminen
 
@@ -196,7 +196,7 @@ Saat lisätietoja visualisoinneista [sertifioitujen visualisointien usein kysyty
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
-* [Power BI:n mukautetun visualisoinnin kehittäminen](developer/custom-visual-develop-tutorial.md)
+* [Power BI:n mukautetun visualisoinnin kehittäminen](developer/visuals/custom-visual-develop-tutorial.md)
 * [Microsoftin mukautettujen visualisointien soittoluettelo YouTubessa](https://www.youtube.com/playlist?list=PL1N57mwBHtN1vIjfvuBIzZllrmKo-Vz6x)  
 * [Visualisoinnit Power BI:ssä](visuals/power-bi-report-visualizations.md)  
 * [Mukautetut visualisoinnit Power BI:ssä](power-bi-custom-visuals.md)  

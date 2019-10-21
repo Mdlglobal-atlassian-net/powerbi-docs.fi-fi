@@ -8,17 +8,20 @@ featuredvideoid: removed
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: tutorial
-ms.date: 08/26/2019
+ms.date: 10/18/2019
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 16639f6e9bf005d04c64fc3ae6a331338efdd5d4
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: 713f177bf81b587cc6b50a7a1d05a6b0668daa74
+ms.sourcegitcommit: f34acbf9fb1ab568fd89773aaf412a847f88dd34
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "70064379"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72589484"
 ---
 # <a name="tutorial-set-dashboard-alerts-on-power-bi-dashboards"></a>Opetusohjelma: Koontinäytön hälytysten määrittäminen Power BI -koontinäytöissä
+
+[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
+
 Aseta hälytyksiä ilmoittamaan sinulle, kun koontinäyttösi tiedot muuttuvat asettamiesi rajojen ylä- tai alapuolelle. Hälytykset toimivat mittareissa, suorituskykyilmaisimissa ja korteissa. Tämä ominaisuus on vielä kehitteillä, joten katso lisätietoja [alla olevasta Vihjeet ja vianmääritys -kohdasta](#tips-and-troubleshooting).
 
 ![ruutu, kortti, suorituskykyilmaisin](media/end-user-alerts/card-gauge-kpi.png)

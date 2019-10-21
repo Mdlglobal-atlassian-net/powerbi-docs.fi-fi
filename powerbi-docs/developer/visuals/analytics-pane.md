@@ -10,12 +10,12 @@ ms.service: powerbi
 ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
 ms.date: 06/18/2019
-ms.openlocfilehash: 67f9bc793b78d2019875b8165ea71fa712fd9d23
-ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
+ms.openlocfilehash: 0782ea63a9833c220e4d96886d79d42af643e111
+ms.sourcegitcommit: 549401b0e1fad15c3603fe7f14b9494141fbb100
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71193687"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72307607"
 ---
 # <a name="the-analytics-pane-in-power-bi-visuals"></a>Analytiikka-ruutu Power BI:n visualisoinneissa
 
@@ -26,7 +26,7 @@ Tässä artikkelissa käsitellään sitä, miten Power BI:n visualisoinnit voiva
 
 ## <a name="manage-the-analytics-pane"></a>Analytiikka-ruudun hallinta
 
-Samaan tapaan kuin ominaisuuksia hallitaan [**Muotoilu**-ruudussa](https://docs.microsoft.com/power-bi/developer/custom-visual-develop-tutorial-format-options), voit hallita **Analytiikka**-ruutua määrittämällä objektin visualisoinnin *capabilities.json*-tiedostossa. 
+Samaan tapaan kuin ominaisuuksia hallitaan [**Muotoilu**-ruudussa](https://docs.microsoft.com/power-bi/developer/visuals/custom-visual-develop-tutorial-format-options), voit hallita **Analytiikka**-ruutua määrittämällä objektin visualisoinnin *capabilities.json*-tiedostossa.
 
 Erot **Analytiikka**-ruudussa ovat seuraavat:
 

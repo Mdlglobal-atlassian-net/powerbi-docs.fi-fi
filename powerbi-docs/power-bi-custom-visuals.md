@@ -10,12 +10,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 05/15/2019
 LocalizationGroup: Visualizations
-ms.openlocfilehash: a782726e34bec4d6a5b8557c88178d469f7987b6
-ms.sourcegitcommit: b7a9862b6da940ddebe61bc945a353f91cd0e4bd
+ms.openlocfilehash: a8b1be9157fa34e9ed4c987628f0b67624b4c826
+ms.sourcegitcommit: 549401b0e1fad15c3603fe7f14b9494141fbb100
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71946189"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72307481"
 ---
 # <a name="visuals-in-power-bi"></a>Visualisoinnit Power BI:ssä
 
@@ -57,7 +57,7 @@ Mikä [AppSource](developer/office-store.md) on? Se on paikka, josta löydät so
 Power BI -sertifioidut visualisoinnit ovat Marketplacen visualisointeja, jotka ovat läpäisseet ylimääräisen tiukan laatutestauksen ja joita tuetaan erilaisissa käyttötilanteissa, esimerkiksi [sähköpostitilauksissa](service-report-subscribe.md) ja [PowerPointiin viennissä](service-publish-to-powerpoint.md).
 Jos haluat tarkastella luetteloa sertifioiduista Power BI -visualisoinneista tai lähettää oman, lue artikkeli [Sertifioidut Power BI -visualisoinnit](power-bi-custom-visuals-certified.md).
 
-Oletko Web-kehittäjä ja kiinnostunut omien visualisointien luomisesta ja niiden lisäämisestä AppSourceen? Katso artikkeli [Power BI:n mukautetun visualisoinnin kehittäminen](developer/custom-visual-develop-tutorial.md) ja lue lisää [Power BI -visualisointien julkaisemisesta AppSourcessa](developer/office-store.md).
+Oletko Web-kehittäjä ja kiinnostunut omien visualisointien luomisesta ja niiden lisäämisestä AppSourceen? Katso artikkeli [Power BI:n mukautetun visualisoinnin kehittäminen](developer/visuals/custom-visual-develop-tutorial.md) ja lue lisää [mukautettujen visualisointien julkaisemisesta AppSourcessa](developer/office-store.md).
 
 ### <a name="import-a-custom-visual-from-a-file"></a>Mukautetun visualisoinnin tuominen tiedostosta
 

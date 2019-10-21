@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 03/25/2019
-ms.openlocfilehash: fd49c69a14d3dac6b1a045f6aba407ec7aac0deb
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: cc180c2e9d5275172ad9da75c502ef53d9d7ee66
+ms.sourcegitcommit: 549401b0e1fad15c3603fe7f14b9494141fbb100
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61269412"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72307608"
 ---
 # <a name="what-can-developers-do-with-the-power-bi-api"></a>Mitä kehittäjät voivat tehdä Power BI -ohjelmointirajapinnalla?
 
@@ -57,7 +57,7 @@ Power BI ‑ohjelmointirajapinnan avulla voit [lähettää tietoja tietojoukkoon
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
 * [Tietojen työntäminen tietojoukkoon](walkthrough-push-data.md)
-* [Power BI:n mukautetun visualisoinnin kehittäminen](custom-visual-develop-tutorial.md)
+* [Power BI:n mukautetun visualisoinnin kehittäminen](visuals/custom-visual-develop-tutorial.md)
 * [Power BI:n REST-ohjelmointirajapinnan viite](rest-api-reference.md)
 * [Power BI:n REST-ohjelmointirajapinnat](https://docs.microsoft.com/rest/api/power-bi/)
 
