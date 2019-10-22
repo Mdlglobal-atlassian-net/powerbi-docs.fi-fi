@@ -353,6 +353,8 @@
               href: visuals/power-bi-visualization-kpi.md
             - name: Matriisivisualisointi
               href: visuals/desktop-matrix-visual.md
+            - name: Q&A-visualisointi
+              href: visuals/power-bi-visualization-q-and-a.md
             - name: 'Kehittyneen analytiikan ja kehittyneiden visualisointien luominen R-komentosarjoilla Power BI:ssä'
               href: visuals/service-r-visuals.md
             - name: 'Viisarimittarikaaviot Power BI:ssä'
@@ -375,6 +377,22 @@
               href: visuals/power-bi-visualization-waterfall-charts.md
             - name: Dynaamisten viiteviivojen luominen
               href: service-analytics-pane.md
+        - name: Luonnollinen kieli
+          items:
+            - name: 'Johdanto Q&A:han'
+              href: natural-language/q-and-a-intro.md
+            - name: Q&A-visualisointi
+              href: visuals/power-bi-visualization-q-and-a.md
+            - name: Johdanto Q&A-työkaluihin
+              href: natural-language/q-and-a-tooling-intro.md
+            - name: 'Q&A-työkalut, opeta Q&A:ta'
+              href: natural-language/q-and-a-tooling-teach-q-and-a.md
+            - name: 'Q&A-työkalut, edistynyt'
+              href: natural-language/q-and-a-tooling-advanced.md
+            - name: 'Q&A:n parhaat käytännöt'
+              href: natural-language/q-and-a-best-practices.md
+            - name: 'Q&A:n rajoitukset'
+              href: natural-language/q-and-a-limitations.md
         - name: Vianmääritys
           items:
             - name: Access-tietokantojen ja Excel-laskentataulukoiden tuomisen ongelmien korjaaminen Power BI Desktopissa ja Power Queryssa
