@@ -7,22 +7,22 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 09/10/2019
+ms.date: 10/14/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 646372dbba995a359b732e46a8689cb295565c1f
-ms.sourcegitcommit: db4fc5da8e65e0a3dc35582d7142a64ad3405de7
+ms.openlocfilehash: 0ccd89bfa868569f6547c67d3673d0afd664d6a7
+ms.sourcegitcommit: 549401b0e1fad15c3603fe7f14b9494141fbb100
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70903549"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72307700"
 ---
 # <a name="whats-new-in-the-latest-power-bi-desktop-update"></a>Mitä uutta viimeisin Power BI Desktop -päivitys sisältää? 
 
 
-## <a name="september-2019-update-2735586561"></a>Syyskuun 2019 päivitys (2.73.5586.561)
+## <a name="october-2019-update-2745619621"></a>Lokakuun 2019 päivitys (2.74.5619.621)
 
-Syyskuun päivityksemme ovat kuin jännittävä paluu kouluun – uusia asioita opittavaksi, päivityksiä kesän aikana ikävöidyille kavereille ja mahdollisuuksia soveltaa tietoja uusissa raporteissa. 
+Lokakuun päivityksemme tuovat mukanaan paljon hauskoja ja jännittäviä uudistuksia. 
 
 Voit nyt [ladata uusimman Power BI Desktop](https://powerbi.microsoft.com/desktop) -version, joka toimitetaan nyt kaikki tuetut kielet sisältävänä yksittäisenä .exe-tiedostona. Jos käytössäsi on Windows 10, voit hankkia **Power BI Desktopin** Microsoft Storesta. **Power BI Desktopin** kuukausittaiset versiot ovat samat, vaikka versioiden numerointi saattaa poiketa. Lisätietoja on [tässä artikkelissa](desktop-get-the-desktop.md). 
 
@@ -42,46 +42,57 @@ Voit myös katsoa **Uusimmat päivitykset** -videon, joka on aivan tämän artik
 Seuraavat päivitykset olivat uutta **Power BI Desktopissa** tässä kuussa:
 
 ### <a name="reporting"></a>Raportointi
-* Teemojen väri- ja tekstiluokat [[video]](https://youtu.be/neq0THnRJzo?t=11)  [[artikkeli]](desktop-report-themes.md)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2019-feature-summary/#themeJSON) 
-* Uudet oletusteemat [[video]](https://youtu.be/neq0THnRJzo?t=334)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2019-feature-summary/#newThemes)
-* Mukautetun visualisointiruudun parannuksia (esikatselu) [[video]](https://youtu.be/neq0THnRJzo?t=601)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2019-feature-summary/#vizPane)
+* Automaattinen sivun päivitys DirectQuerylle [[video]](https://youtu.be/A8A9baUQsXQ?t=12)  [[artikkeli]](desktop-automatic-page-refresh.md)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2019-feature-summary/#automaticPageRefresh) 
+
 
 
 ### <a name="analytics"></a>Analytiikka
-* Mukautetut muotoilumerkkijonot [[video]](https://youtu.be/neq0THnRJzo?t=731)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2019-feature-summary/#customFormatStrings) 
-* Lisää muotoiluasetusten ehdollisen muotoilun päivityksiä [[video]](https://youtu.be/neq0THnRJzo?t=813)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2019-feature-summary/#conditionalFormatting) 
-* Parannuksia läpiporautumisen hakutuloksiin [[video]](https://youtu.be/neq0THnRJzo?t=959)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2019-feature-summary/#drillThrough) 
-* Uudet DAX-lausekkeet: REMOVEFILTERS ja CONVERT [[video]](https://youtu.be/neq0THnRJzo?t=1048)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2019-feature-summary/#dax) 
+* Uusi Q&A-visualisointi [[video]](https://youtu.be/A8A9baUQsXQ?t=144)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2019-feature-summary/#qnaVisual) 
+* Parannettu Q&A-käyttöliittymä [[video]](https://youtu.be/A8A9baUQsXQ?t=144)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2019-feature-summary/#improvedExperience) 
+    * Parannetut avattavat ohjausobjektit
+    * Sininen ja punainen alleviivaus
+    * Parannetut visualisoinnin tulokset
+* Q&A:n luonnollisen kielen parannukset [[video]](https://youtu.be/A8A9baUQsXQ?t=322)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2019-feature-summary/#nlImprovements) 
+    * Integrointi Officen ja Bingin synonyymisanaston kanssa
+    * Tuki mittaritaulukoille ja parempi taulukoiden käsittely sekä selkeys
+* Q&A-työkalut (esiversio) [[video]](https://youtu.be/A8A9baUQsXQ?t=376)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2019-feature-summary/#qnaTooling) 
+    * Tarkastele kysymyksiä
+    * Opeta Q&A:ta
+    * Tarkista kaikki tehdyt muutokset
+* SSAS- ja Azure AS -tuki, mukaan lukien RLS [[video]](https://youtu.be/A8A9baUQsXQ?t=480)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2019-feature-summary/#supportAS) 
 
 
 ### <a name="visuals"></a>Visualisoinnit
-* PowerApps-visualisointi nyt yleisesti saatavilla [[video]](https://youtu.be/neq0THnRJzo?t=1063)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2019-feature-summary/#powerApps) 
-
+* PowerApps-visualisointi nyt oletusarvoisesti mukana [[video]](https://youtu.be/A8A9baUQsXQ?t=505)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2019-feature-summary/#powerApps) 
+* Uudet xViz-visualisoinnit [[video]](https://youtu.be/A8A9baUQsXQ?t=538)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2019-feature-summary/#xViz) 
 
 ### <a name="data-connectivity"></a>Tietoyhteydet
-* PostgreSQL-yhdistimen parannuksia [[video]](https://youtu.be/neq0THnRJzo?t=1112)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2019-feature-summary/#postgreSQL) 
+* Sagra Emigo -liitin yleisesti saatavilla  [[video]](https://youtu.be/A8A9baUQsXQ?t=778)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2019-feature-summary/#sagraEmigo) 
+* Azure Cost Management -liitin päivitetty [[video]](https://youtu.be/A8A9baUQsXQ?t=805)  [[artikkeli]](desktop-connect-azure-cost-management.md)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2019-feature-summary/#azureCostManagement) 
+* Uusi Workplace Analytics -liitin [[video]](https://youtu.be/A8A9baUQsXQ?t=830)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2019-feature-summary/#workplaceAnalytics) 
+
 
 ### <a name="data-preparation"></a>Tietojen valmistelu
-* Kopioiminen leikepöydälle datan profiloinnista [[video]](https://youtu.be/neq0THnRJzo?t=1146)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2019-feature-summary/#copyProfiling) 
+* Kyselydiagnostiikka [[video]](https://youtu.be/A8A9baUQsXQ?t=907)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2019-feature-summary/#queryDiagnostics) 
+* Tietoprofiloinnin parannukset [[video]](https://youtu.be/A8A9baUQsXQ?t=953)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2019-feature-summary/#dataProfiling) 
 
 
 ### <a name="template-apps"></a>Mallisovellukset
-* Google Analytics ‑raportti [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2019-feature-summary/#googleAnalytics) 
+* Project Web App   [[video]](https://youtu.be/A8A9baUQsXQ?t=850)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2019-feature-summary/#projectWebApp) 
 
 ### <a name="other"></a>Muut
-* Moniulotteisten mallien suorituskyvyn parannuksia [[video]](https://youtu.be/neq0THnRJzo?t=1208)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2019-feature-summary/#perfMultiDiminsional) 
-* DirectQuery-mallien hakujen suorituskyvyn parannuksia  [[video]](https://youtu.be/neq0THnRJzo?t=1272)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2019-feature-summary/#perfDirectQuery) https://youtu.be/neq0THnRJzo?t=1208
+* Uusi tiedostomuoto: .PBIDS  [[video]](https://youtu.be/A8A9baUQsXQ?t=2455) [[artikkeli]](desktop-data-sources.md#pbids-file-examples) [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2019-feature-summary/#pbids) 
+* Mallinnustoimintojen suorituskyvyn parannukset  [[video]](https://youtu.be/A8A9baUQsXQ?t=2583)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2019-feature-summary/#performance) 
 
 > [!NOTE]
 > Voit myös [tutustua kaikkiin Power BI Desktopille saatavilla oleviin tietolähteisiin](desktop-data-sources.md). Luettelo kasvaa jatkuvasti, joten se kannattaa tarkistaa usein.
 
-Haluatko lisätietoja näistä päivityksistä? Tutustu [blogikirjoitukseen](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2019-feature-summary/), josta saat tarkempia tietoja kustakin uudesta ominaisuudesta (tämä on sama blogikirjoitus, johon viitataan yllä olevassa luettelossa).
+Haluatko lisätietoja näistä päivityksistä? Tutustu [blogikirjoitukseen](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2019-feature-summary/), josta saat tarkempia tietoja kustakin uudesta ominaisuudesta (tämä on sama blogikirjoitus, johon viitataan yllä olevassa luettelossa).
 
 
 Seuraavassa videossa esitellään jokainen näistä päivityksistä. Näet videon myös blogikirjoituksen kautta.
 
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/neq0THnRJzo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/A8A9baUQsXQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 > [!NOTE]
 > Sinua saattavat myös kiinnostaa [Power BI -palvelun uudet ominaisuudet](service-whats-new.md). Tutustu myös [Power BI -mobiilisovellusten uutuuksiin](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).

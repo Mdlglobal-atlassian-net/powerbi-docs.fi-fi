@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/29/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 21a7bf05330373febe1e9f121f07df6de0779c69
-ms.sourcegitcommit: a00fe5fb545c3df13b7cd13a701fd6a2b2521a17
+ms.openlocfilehash: e6b0d7db9f82d8bc68f230858799f6afbcad1c82
+ms.sourcegitcommit: 83e1e162a037f352e542bd5c198a3c98f5db23c7
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/31/2019
-ms.locfileid: "70200961"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72511666"
 ---
 # <a name="data-sources-for-the-power-bi-service"></a>Power BI -palvelun tietolähteet
 Tiedot ovat Power BI:n ydin. Oletetaan, että tutkit tietoja. Voit tutkia luomalla kaavioita ja raporttinäkymiä tai kysymällä tietoja **Q&A:n** avulla. Näkemäsi visualisoinnit ja vastaukset saavat pohjana olevat tiedot tietojoukosta. Mutta mistä tietojoukko on peräisin? Tietojoukko on peräisin tietolähteestä.
@@ -61,7 +61,7 @@ Myös tiedostojen tallennuspaikalla on merkitystä. OneDrive for Business tarjoa
 
 **Pilvipalveluissa olevat tietokannat** – Power BI -palvelussa voit muodostaa reaaliaikaisen yhteyden seuraaviin:
 
-* Azure SQL -tietokanta
+* Azuren SQL-tietokanta
 * Azure SQL Data Warehouse
 * Azure HDInsightin Spark
 
@@ -111,7 +111,11 @@ Tietojen päivittäminen on todella tärkeä osa Power BI:tä, eikä sitä voi k
 ## <a name="considerations-and-limitations"></a>Huomioitavat asiat ja rajoitukset
 Seuraavat rajoitukset koskevat kaikkia Power BI -palvelussa käytettäviä tietolähteitä. On myös muita rajoituksia, jotka koskevat tiettyjä ominaisuuksia, mutta seuraava luettelo koskee Power BI -palvelua kokonaisuudessaan:
 
-* **Tietojoukon kokorajoitus** – Power BI -palvelun kunkin tietojoukon suurin sallittu koko on 1 Gt.
-* **Rivirajoitus** – Tietojoukon rivien enimmäismäärä on 2 miljardia (paitsi **DirectQuerya** käytettäessä). Kolme riveistä on varattu, joten käytettävissä on enintään 1 999 999 997 riviä. **DirectQuerya** käytettäessä rivien enimmäismäärä on 1 miljoona.
-* **Sarakerajoitus** – Tietojoukon sarakkeiden enimmäismäärä tietojoukon kaikissa tauluissa on 16 000 saraketta. Tämä koskee Power BI -palvelua ja Power BI Desktopissa käytettyjä tietojoukkoja. Power BI käyttää taulukkokohtaista sisäistä rivinumerosaraketta tietojoukon sisällä, mikä tarkoittaa, että sarakkeiden enimmäismäärä on 16 000 miinus yksi kutakin tietojoukossa käytettyä taulukkoa kohden.
+* **Tietojoukon kokorajoitus**: Power BI -palvelun jaettuihin kapasiteetteihin tallennettujen tietojoukkojen suurin sallittu koko on 1 Gt. Jos tarvitset suurempia tietojoukkoja, voit käyttää [Power BI Premiumia](service-premium-what-is.md).
+
+* **Sarakkeen arvojen rajoitus**: Kun tallennat Power BI -tietojoukon tietoja välimuistiin (tätä kutsutaan joskus tuontitilaksi), yhteen sarakkeeseen voi tallentaa enintään 1 999 999 997 erillistä arvoa.
+
+* **Rivirajoitus**: Kun käytät **DirectQueryä**, Power BI rajoittaa kyselyn tuloksia, jotka lähetetään tietolähteeseen. Jos tietolähteeseen lähetetty kysely palauttaa yli miljoona riviä, saat virheilmoituksen ja kysely epäonnistuu. Lähteen tiedot voivat silti sisältää yli miljoona riviä. Tämä rajoitus ei todennäköisesti tule vastaan, sillä useimmat raportit koostavat tiedot pienempiin tulosjoukkoihin.
+
+* **Sarakerajoitus** – Tietojoukon sarakkeiden enimmäismäärä tietojoukon kaikissa tauluissa on 16 000 saraketta. Tämä koskee Power BI -palvelua ja Power BI Desktopissa käytettyjä tietojoukkoja. Power BI seuraa tietojoukon sarakkeiden ja taulukoiden määrää tällä tavalla, mikä tarkoittaa, että sarakkeiden enimmäismäärä on 16 000 miinus yksi kutakin tietojoukossa käytettyä taulukkoa kohden.
 

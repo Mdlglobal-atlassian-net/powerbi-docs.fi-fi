@@ -10,14 +10,17 @@ ms.topic: tutorial
 ms.date: 05/22/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: a3e88d853f59a0e9a188d6d6796559ad2d9059a9
-ms.sourcegitcommit: d12bc6df16be1f1993232898f52eb80d0c9fb04e
+ms.openlocfilehash: 056457d5a90585fd30a0a85f95d28d1097c720b0
+ms.sourcegitcommit: e5cf19e16112c7dad1591c3b38d232267ffb3ae1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68995279"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72544079"
 ---
 # <a name="key-influencers-visualization"></a>Tärkeiden vaikuttajien visualisointi
+
+[!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
+
 Tärkeimpien vaikuttajien visualisoinnin avulla ymmärrät paremmin sinua kiinnostavaan arvoon vaikuttavia tekijöitä. Se analysoi tietosi, panee merkitsevät tekijät järjestykseen ja näyttää ne tärkeinä vaikuttajina. Oletetaan esimerkiksi, että haluat ymmärtää, millaiset asiat vaikuttavat henkilöstön vaihtuvuuteen. Yksi tekijä voi olla työsopimuksen pituus ja toinen vaikkapa työntekijän ikä. 
  
 ## <a name="when-to-use-key-influencers"></a>Milloin tärkeimpiä vaikuttajia kannattaa käyttää 
@@ -49,6 +52,10 @@ Tärkeimpien vaikuttajien visualisointi on hyvä valinta, kun haluat:
  
 Katso tästä videosta, miten voit luoda visualisoinnin tärkeimmistä vaikuttajista luokittaisen arvon avulla. Luo sitten visualisointi näiden vaiheiden avulla. 
 
+   > [!NOTE]
+   > Tässä videossa käytetään Power BI Desktopin vanhempaa versiota.
+   > 
+   > 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/fDb5zZ3xmxU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Tuotepäällikkö haluaa selvittää, mitkä tekijät saavat asiakkaat esittämään kielteisiä mielipiteitä pilvipalvelustasi. Jos haluat osallistua, avaa [asiakaspalautteen PBIX-tiedosto](https://github.com/Microsoft/powerbi-desktop-samples/blob/master/2019/customerfeedback.pbix) Power BI Desktopissa. Voit myös ladata [asiakaspalautteen Excel-tiedoston Power BI -palvelulle tai Power BI Desktopille](https://github.com/Microsoft/powerbi-desktop-samples/blob/master/2019/customerfeedback.xlsx). 

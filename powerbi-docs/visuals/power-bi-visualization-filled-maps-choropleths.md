@@ -11,14 +11,17 @@ ms.topic: conceptual
 ms.date: 06/19/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 0123d8123170cfa78b3d13a55ed2f367af0447ae
-ms.sourcegitcommit: 90aa7ea5fcc7cf0fd7f6c3c1efeff5f27e8ef0dd
+ms.openlocfilehash: 2befce7914fc295ff4a6124be10183d5ff20106d
+ms.sourcegitcommit: e5cf19e16112c7dad1591c3b38d232267ffb3ae1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "67299331"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72544435"
 ---
 # <a name="filled-maps-choropleths-in-power-bi"></a>Täytetyt kartat (koropleettikartat) Power BI:ssä
+
+[!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
+
 Täytetyssä kartassa käytetään sävytystä tai kuvioita esittämään, miten arvot vaihtelevat suhteellisesti maantieteellisellä alueella.  Suhteelliset erot hahmottuvat nopeasti, kun sävytys vaihtelee vaaleammasta (tarkoittaen harvinaisempaa/pienempää) tummempaan (yleisempi/enemmän).    
 
 ![Yhdysvaltain kartta](media/power-bi-visualization-filled-maps-choropleths/large-map.png)
@@ -44,27 +47,24 @@ Täytetyt kartat ovat hyvä vaihtoehto, kun:
 * kun haluat yleiskuvan jakaumasta maantieteellisten sijaintien suhteen.
 
 ### <a name="prerequisites"></a>Edellytykset
-- Power BI -palvelu tai Power BI Desktop
-- Myynti- ja markkinointimalli
+Tässä opetusohjelmassa käytetään [Jälleenmyyntianalyysimallin PBIX-tiedostoa](http://download.microsoft.com/download/9/7/6/9767913A-29DB-40CF-8944-9AC2BC940C53/Sales%20and%20Marketing%20Sample%20PBIX.pbix).
+1. Valitse valikkorivin vasemmasta yläosasta **Tiedosto** > **Avaa**
+   
+2. **Jälleenmyyntianalyysimallin PBIX-tiedoston löytäminen**
 
-Jos haluat tehdä samat toimet opetusohjelman mukana, opetusohjelmassa käytetään Power BI -palvelua, ei Power BI Desktopia.
+1. Avaa **Jälleenmyyntianalyysimallin PBIX-tiedosto** raporttinäkymässä ![Näyttökuva raporttinäkymän kuvakkeesta.](media/power-bi-visualization-kpi/power-bi-report-view.png).
+
+1. Valitse ![Näyttökuva keltaisesta välilehdestä.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) uuden sivun lisäämiseksi.
+
 
 ## <a name="create-a-basic-filled-map"></a>Perusluontoisen täytetyn kartan luominen
 Tällä videolla Kim luo peruskartan ja muuntaa sen täytetyksi kartaksi.
+   > [!NOTE]
+   > Tässä videossa käytetään Power BI Desktopin vanhempaa versiota.
+   > 
+   > 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ajTPGNpthcg" frameborder="0" allowfullscreen></iframe>
-
-### <a name="get-data-and-add-a-new-blank-page-to-the-report"></a>Nouda tiedot ja lisää uusi tyhjä sivu raporttiin
-1. Jos haluat luoda täytetyn kartan opetusohjelman mukana, [lataa itsellesi Myynti- ja markkinointimalli](../sample-datasets.md) kirjautumalla sisään Power BI:hin ja valitsemalla **Nouda tiedot \> Mallit \> Myynti ja markkinointi\> Yhdistä**. Voit myös ladata **Power BI:n myynti- ja markkinointisovelluksen** appsource.comista. 
-
-2. Avaa myynti- ja markkinointiraportti.
-
-   ![Myynti- ja markkinointiraportti avautuu](media/power-bi-visualization-filled-maps-choropleths/power-bi-report-canvas.png)
-3. Raportti avautuu Power BI:ssä. Avaa raportti [Muokkausnäkymässä](../service-interact-with-a-report-in-editing-view.md) valitsemalla **Muokkaa raporttia**.
-
-4. Lisää uusi sivu valitsemalla keltainen plus-kuvake raportin pohjan alareunasta.
-
-    ![Raportin välilehdet](media/power-bi-visualization-filled-maps-choropleths/power-bi-new-page.png)
 
 ### <a name="create-a-filled-map"></a>Täytetyn kartan luominen
 1. Valitse Kentät-ruudusta **Alue** \> **Osavaltio**.    
@@ -75,9 +75,9 @@ Tällä videolla Kim luo peruskartan ja muuntaa sen täytetyksi kartaksi.
    ![mallit, joissa on korostettu täytetyn kartan kuvake](media/power-bi-visualization-filled-maps-choropleths/img003.png)
 3. Voit suodattaa kartan näyttämään vain Yhdysvaltojen mannerosat.
 
-   a.  Etsi Visualisoinnit-ruudun alaosasta **Suodattimet**-alue.
+   a.  Etsi Visualisoinnit-ruudun vasemmalta puolelta **Suodattimet**-ruutu. Jos se on pienennettynä, suurenna se.
 
-   b.  Vie hiiren osoitin kohtaan **Osavaltio** ja napsauta laajennusnuolta.  
+   b.  Vie hiiren osoitin kohtaan **Osavaltio** ja valitse laajennusnuoli.  
    ![Visuaaliset tasosuodattimet, jotka näyttävät osavaltion (Kaikki)](media/power-bi-visualization-filled-maps-choropleths/img004.png)
 
    c.  Valitse valintaruutu **Kaikki**-kohdan vierestä ja poista valintamerkki vaihtoehdosta **AK**.
@@ -115,11 +115,11 @@ Yksittäisen sijainnin korostaminen täytetyssä kartassa ristiinsuodattaa muut 
 
     ![Asenne-välilehti valittuna](media/power-bi-visualization-filled-maps-choropleths/power-bi-sentiment-tab.png)
 
-4. Siirrä visualisointeja ja muuta niiden kokoa sivulla tilan lisäämiseksi, ja liitä sitten komennolla CTRL-V täytetty kartta edellisestä raportista.
+4. Siirrä visualisointeja ja muuta niiden kokoa sivulla tilan lisäämiseksi, ja liitä sitten komennolla CTRL-V täytetty kartta edellisestä raportista. (Näet seuraavat kuva.)
 
    ![Täytetty kartta lisätään Asenne-sivulle](media/power-bi-visualization-filled-maps-choropleths/power-bi-map.png)
 
-5. Valitse täytetystä kartasta jokin osavaltio.  Osavaltio korostuu myös muissa saman sivun visualisoinneissa. Jos valitset esimerkiksi **Texas**, näet, että Asenne on 74. Texas on keskialueella \#23.   
+5. Valitse täytetystä kartasta jokin osavaltio.  Tämä ristiinkorostaa ja -suodattaa muut sivulla olevat visualisoinnit. Jos valitset esimerkiksi **Texas**, näet, että Asenne on 75 ja että Texas on keskialueella 23.   
    ![Texas valittuna](media/power-bi-visualization-filled-maps-choropleths/power-bi-texas.png)
 2. Valitse arvopiste VanArsdel – Asenne kuukauden mukaan -viivakaaviosta. Toiminto suodattaa täytetyn kartan niin, että se näyttää asennearvot VanArsdelista eikä sen kilpailijasta.  
    ![uusi varjostus](media/power-bi-visualization-filled-maps-choropleths/power-bi-yes.png)

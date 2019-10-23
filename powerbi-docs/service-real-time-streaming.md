@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/08/2019
+ms.date: 10/14/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 034dc98b1e623bd0d509eb2d174cdc3e3b865067
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: f88d1e0458e6a1b3abe20c0b4dd889c037ede612
+ms.sourcegitcommit: 549401b0e1fad15c3603fe7f14b9494141fbb100
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65514316"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72307333"
 ---
 # <a name="real-time-streaming-in-power-bi"></a>Reaaliaikainen suoratoisto Power BI:ssä
 Power BI: reaaliaikaisen suoratoiston avulla voit suoratoistaa tietoja ja päivittää koontinäyttöjä reaaliajassa. Kaikki Power BI:ssä luotavat visualisoinnit tai koontinäytöt voidaan luoda myös näyttämään ja päivittämään reaaliaikaisia tietoja ja visualisointeja. Tietojen suoratoistoon käytettävät laitteet ja lähteet voivat olla tehtaiden tunnistimia, sosiaalisen median lähteitä, huoltokäyttötietoja ja mitä tahansa muita, joista voidaan kerätä ja lähettää ajan mukaan määräytyviä tietoja.
@@ -235,6 +235,13 @@ Tässä on tarkistusluettelo, jota voit käyttää vianmääritykseen:
 4. Meneekö Azure Stream Analytics -kysely nimenomaisesti Power BI -tulosteeseen? (INTO-avainsanan käyttö)
 5. Kulkeeko Azure Stream Analytics -työn kautta tietoa? Tietojoukko luodaan vain, jos tietoja siirretään.
 6. Tarkista Azure Stream Analytics -lokitiedoista, näkyykö siellä varoituksia tai virheilmoituksia.
+
+## <a name="automatic-page-refresh"></a>Automaattinen sivun päivitys
+
+Automaattinen sivun päivitys toimii raporttisivutasolla. Sen avulla raporttien tekijät voivat määrittää sivun visualisoinneille päivitysvälin, jota käytetään vain sivua käytettäessä. Automaattinen sivun päivitys on käytettävissä vain DirectQuery-tietolähteille. Pienin mahdollinen päivitysväli riippuu siitä, millaisessa työtilassa raportti julkaistaan, sekä Premium-työtilojen kapasiteettihallinta-asetuksista.
+
+Lue lisätietoja [automaattisen sivun päivityksen](desktop-automatic-page-refresh.md) ohjeartikkelista.
+
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 Tässä on joitakin linkkejä, joista voi olla hyötyä käsiteltäessä reaaliaikaista suoratoistoa Power BI:ssä:

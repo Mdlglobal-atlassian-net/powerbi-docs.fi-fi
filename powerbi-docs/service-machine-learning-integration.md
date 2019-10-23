@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/31/2019
 ms.author: davidi
 LocalizationGroup: conceptual
-ms.openlocfilehash: 10ee974b73372fb2243febdcb4431b5decebdf4b
-ms.sourcegitcommit: e48ef4c88e4a1a0b259bf899d85d520c4edd5751
+ms.openlocfilehash: 9593296b0e09340fe4f62fff7a2e7722912a4216
+ms.sourcegitcommit: e533c65607bbba0f620fddabd6b107e5933772c1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66823470"
+ms.lasthandoff: 10/11/2019
+ms.locfileid: "72259953"
 ---
 # <a name="azure-machine-learning-integration-in-power-bi"></a>Automaattianalyysipalveluiden integrointi Power BI:ssä
 
@@ -70,7 +70,7 @@ Datatieteilijät käyttävät ensisijaisesti Pythonia, kun he kehittävät (ja j
 
 Tämä skeematiedosto on sisällytettävä käyttöön otettuun automaattianalyysipalvelumallien verkkopalveluun. Jos haluat luoda verkkopalvelun rakenteen automaattisesti, sinun on lisättävä esimerkki syöteestä/tulosteesta käyttöönotetun mallin käynnistyskomentosarjaan. Lue dokumentaation Mallien käyttöönotto Azuren koneoppimispalvelulla alakohta (Valinnainen) Automaattinen Swagger-skeeman luominen. Linkki sisältää esimerkkikäynnistyskomentosarjan, jossa on lausekkeet skeeman luontia varten. 
 
-Tarkalleen ottaen käynnistyskomentosarjan *@input_schema* - ja *@output_schema* -funktiot viittaavat syöte- ja tulostemallien muotoihin *input_sample* ja *output_sample* -muuttujissa ja käyttävät näitä malleja luodakseen OpenAPI (Swagger) -määrityksen verkkopalvelulle käyttöönoton aikana.
+Tarkalleen ottaen käynnistyskomentosarjan *\@input_schema*- ja *output_schema\@* -funktiot viittaavat syöte- ja tulostemallien muotoihin *input_sample*- ja *output_sample*-muuttujissa ja käyttävät näitä malleja luodakseen OpenAPI (Swagger) -määrityksen verkkopalvelulle käyttöönoton aikana.
 
 Näitä ohjeita, jotka koskevat skeeman luontia käynnistyskomentosarjaa päivittämällä, tulee soveltaa malleihin, jotka on luotu käyttämällä Azuren automaattianalyysipalvelujen SDK:ta käyttäviä automaattianalyysipalvelujen kokeita.
 

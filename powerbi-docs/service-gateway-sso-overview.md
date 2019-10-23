@@ -10,12 +10,12 @@ ms.subservice: powerbi-gateways
 ms.topic: conceptual
 ms.date: 07/15/2019
 LocalizationGroup: Gateways
-ms.openlocfilehash: a99aad87763edce54996f0a485fde5498fb1df11
-ms.sourcegitcommit: 9bf3cdcf5d8b8dd12aa1339b8910fcbc40f4cbe4
+ms.openlocfilehash: b1379bb783b090362215eaf7c317bbea435d1eec
+ms.sourcegitcommit: e533c65607bbba0f620fddabd6b107e5933772c1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "71968607"
+ms.lasthandoff: 10/11/2019
+ms.locfileid: "72259916"
 ---
 # <a name="overview-of-single-sign-on-sso-for-gateways-in-power-bi"></a>Yleiskatsaus kertakirjautumisen (SSO) käyttämiseen Power BI -yhdyskäytävissä
 
@@ -25,7 +25,9 @@ Tällä hetkellä tuemme seuraavia tietolähteitä:
 
 * SQL Server ([Kerberos](service-gateway-sso-kerberos.md))
 * SAP HANA ([Kerberos](service-gateway-sso-kerberos.md) ja [SAML](service-gateway-sso-saml.md))
-* SAP BW ([Kerberos](service-gateway-sso-kerberos.md))
+* SAP BW -sovelluspalvelin ([Kerberos](service-gateway-sso-kerberos.md))
+* SAP BW -viestipalvelin ([Kerberos](service-gateway-sso-kerberos.md)) – julkinen esikatselu
+* Oracle ([Kerberos](service-gateway-sso-kerberos.md)) – julkinen esikatselu
 * Teradata ([Kerberos](service-gateway-sso-kerberos.md))
 * Spark ([Kerberos](service-gateway-sso-kerberos.md))
 * Impala ([Kerberos](service-gateway-sso-kerberos.md))

@@ -7,15 +7,15 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 06/12/2019
+ms.date: 10/14/2019
 ms.author: mblythe
 LocalizationGroup: Data refresh
-ms.openlocfilehash: 7492651d2b5be8a63c97594fce3f3399b1122cc3
-ms.sourcegitcommit: fe8a25a79f7c6fe794d1a30224741e5281e82357
+ms.openlocfilehash: f5fe835d2ec423b596460a81ccb2a406b306c3c5
+ms.sourcegitcommit: 549401b0e1fad15c3603fe7f14b9494141fbb100
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "68325023"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72307928"
 ---
 # <a name="data-refresh-in-power-bi"></a>Tietojen päivittäminen Power BI:ssä
 
@@ -309,6 +309,13 @@ Varoituskuvake ilmaisee tietojoukon senhetkiset ongelmat, mutta suosittelemme my
 > [!NOTE]
 > Linkin päivityshistoriaan on saatavana tietojoukon asetuksista. Voit myös noutaa päivityshistorian tiedot ohjelmallisesti [Power BI:n REST-ohjelmointirajapinnan](/rest/api/power-bi/datasets/getrefreshhistoryingroup) avulla. Mukautetun ratkaisun avulla voit valvoa useiden tietojoukkojen päivityshistoriaa keskitetysti.
 
+## <a name="automatic-page-refresh"></a>Automaattinen sivun päivitys
+
+Automaattinen sivun päivitys toimii raporttisivutasolla. Sen avulla raporttien tekijät voivat määrittää sivun visualisoinneille päivitysvälin, jota käytetään vain sivua käytettäessä. Automaattinen sivun päivitys on käytettävissä vain DirectQuery-tietolähteille. Pienin mahdollinen päivitysväli riippuu siitä, millaisessa työtilassa raportti julkaistaan, sekä Premium-työtilojen kapasiteettihallinta-asetuksista.
+
+Lue lisätietoja [automaattisen sivun päivityksen](desktop-automatic-page-refresh.md) ohjeartikkelista.
+
+
 ## <a name="best-practices"></a>Parhaat käytännöt
 
 Tarkistamalla tietojoukkojesi päivityshistorian säännöllisesti voit varmistaa, että raporteissa ja koontinäytöissä käytetään ajantasaisia tietoja. Tämä on parhaista käytännöistä tärkeimpiä. Jos havaitset ongelmia, korjaa ne pian ja ota tarvittaessa yhteys tietolähteiden omistajiin ja yhdyskäytävän järjestelmänvalvojiin.
@@ -324,6 +331,7 @@ Huomioi seuraavat suositukset, jotka koskevat tietojoukkojen luotettavan päivit
 - Yhdistä tietojoukot paikallisiin tietolähteisiin yrityksen luotettavan tietoyhdyskäytävän avulla. Jos huomaat yhdyskäytävään liittyviä päivityksen virheitä, kuten sellaisia, joiden mukaan yhdyskäytävä ei ole käytettävissä tai se on ylikuormittunut, ota yhteys yhdyskäytävän järjestelmänvalvojiin ja pyydä häntä lisäämään yhdyskäytäviä aiemmin luotuihin klustereihin tai ottamaan käyttöön uusia klustereita (skaalautuminen ylöspäin/vaakasuunnassa).
 - Käytä erillisiä tietoyhdyskäytäviä tietojoukkojen tuomiseen sekä tietojoukkojen DirectQuery-/LiveConnect-yhteyksiin niin, että ajoitetun päivityksen aikana tuodut tiedot eivät vaikuta DirectQuery-/LiveConnect-tietojoukkojen päällä olevien raporttien ja raporttinäkymien suorituskykyyn. Tällaiset tietojoukot lähettävät tietolähteelleen kyselyn käyttäjän jokaisen toimen yhteydessä.
 - Varmista, että Power BI voi lähettää päivityksen virheilmoituksia postilaatikkoosi. Roskapostisuodattimet saattaa estää sähköpostiviestejä tai siirtää ne eri kansioon jolloin et välttämättä huomaa niitä heti.
+
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 

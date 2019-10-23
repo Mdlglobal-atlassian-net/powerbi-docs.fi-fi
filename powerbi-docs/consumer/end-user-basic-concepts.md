@@ -9,19 +9,19 @@ ms.service: powerbi
 ms.custom: seodec18
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 06/17/2019
+ms.date: 10/16/2019
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 2e41a3f5b1d1bd945e1ab4566abed1589b20c148
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: 2b9fd3fc971d2cf73aabb2033d3a64565333bc67
+ms.sourcegitcommit: e5cf19e16112c7dad1591c3b38d232267ffb3ae1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "67264803"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72543752"
 ---
 # <a name="basic-concepts-for-the-power-bi-service-consumers"></a>Peruskäsitteet Power BI -palvelun kuluttajille
 
-Tässä artikkelissa oletetaan, että olet jo lukenut [Power BI:n yleiskatsauksen](../power-bi-overview.md) ja tunnistat olevasi Power BI -***kuluttaja***. Kuluttajat saavat Power BI -sisältöä, kuten koontinäyttöjä ja raportteja, työtovereiltaan. Kuluttajat käyttävät Power BI -palvelua, joka on Power BI:n sivustopohjainen versio.
+Tässä artikkelissa oletetaan, että olet jo lukenut [Power BI:n yleiskatsauksen](../power-bi-overview.md) ja tunnistat olevasi [Power BI ***-kuluttaja***](end-user-consumer.md). Kuluttajat saavat Power BI -sisältöä, kuten koontinäyttöjä ja raportteja, työtovereiltaan. Kuluttajat käyttävät Power BI -palvelua, joka on Power BI:n sivustopohjainen versio.
 
 Olet varmasti jo kuullut termin ”Power BI Desktop” tai pelkkä ”Desktop”. Se on *suunnittelijoiden*, jotka luovat ja jakavat koontinäyttöjä kanssasi, käyttämä erillinen työkalu. On tärkeää tietää, että saatavilla on myös muita Power BI -työkaluja. Niin kauan kuin olet kuluttaja, käytät vain Power BI-palvelua. Tämä artikkeli koskee vain Power BI -palvelua.
 
@@ -35,7 +35,7 @@ Useimmat Power BI -kuluttajat saavat Power BI -palvelun käyttöönsä, koska 1)
 
 Aloita avaamalla selain ja syötä **app.powerbi.com**. Kun avaat Power BI -palvelun ensimmäistä kertaa, näet jotain tämän kaltaista:
 
-![Näyttökuva Power BI -palvelun tervetuloruudusta.](media/end-user-basic-concepts/power-bi-open.png)
+![Näyttökuva Power BI -palvelun tervetuloruudusta.](media/end-user-basic-concepts/power-bi-home.png)
 
 Käyttäessäsi Power BI:tä voit mukauttaa, mitä näet, kun avaat sivuston. Voit esimerkiksi määrittää, että Power BI avaa ensiksi **aloitussivun** tai suosikkikoontinäyttösi. Älä huolestu, tässä artikkelissa opetetaan, miten voit mukauttaa kokemustasi.
 
@@ -87,9 +87,9 @@ Jokainen tietojoukko edustaa yhtä tietolähdettä. Lähde voi olla esimerkiksi 
 
 Kun suunnittelija jakaa sovelluksen kanssasi, näet, mitkä tietojoukot suunnittelija on sisällyttänyt sovellukseen.
 
-![Näyttökuva Power BI -käyttöliittymästä, jossa näytetään valitut sovellukset ja Tietojoukot-osioon osoittava nuoli piirtoalustalla.](media/end-user-basic-concepts/power-bi-dataset-list.png)
+![Näyttökuva Power BI -käyttöliittymästä, jossa näkyy Tietojoukot-osioon osoittava nuoli piirtoalustalla.](media/end-user-basic-concepts/power-bi-dataset-lists.png)
 
-Tietoa tietojoukosta...
+Yhtä tietojoukkoa...
 
 - raportin suunnittelija voi käyttää tietojoukkoa kerta toisensa jälkeen koontinäyttöjen ja raporttien luomiseksi
 
@@ -98,10 +98,6 @@ Tietoa tietojoukosta...
 - tämän yhden tietojoukon visualisointeja voi näyttää useissa eri koontinäytöissä
 
   ![Kuvassa näytetään tietojoukko, jolla on monta-yhteen-suhteita.](media/end-user-basic-concepts/drawing2.png)
-
-Lisäksi suunnittelijat voivat muiden työtilojen tietojoukkojen avulla voidaan luoda sisältöä (raportteja, koontinäyttöjä) omaan työtilaansa. Power BI näyttää nämä tietojoukot viittauksen sisältävän tietojoukon kuvakkeen avulla:
-
-![Näyttökuva tietojoukosta, jossa on linkin kuvake.](media/end-user-basic-concepts/power-bi-dataset-reference-icon.png)
 
 Siirrytään seuraavaan peruselementtiin – visualisointeihin.
 
@@ -131,11 +127,11 @@ _______________________________________________________
 
 Power BI -raportti sisältää yhden tai useamman sivun verran visualisointeja, kuvia ja tekstiä. Kaikki raportin visualisoinnit ovat peräisin yhdestä tietojoukosta. *Suunnittelijat* jakavat raportteja *kuluttajien* kanssa, jotka [käsittelevät raportteja *lukunäkymässä*](end-user-reading-view.md).
 
-![Näyttökuva raportista, jossa on välilehtiä.](media/end-user-basic-concepts/power-bi-report2.png)
+![Näyttökuva raportista, jossa on välilehtiä.](media/end-user-basic-concepts/power-bi-report.png)
 
 Yksi raportti...
 
-- voidaan liittää useisiin koontinäyttöihin (tästä yhdestä raportista kiinnitettyjä ruutuja voi olla useissa koontinäytöissä)
+- voi liittyä useisiin koontinäyttöihin (tästä yhdestä raportista kiinnitettyjä ruutuja voi olla useissa koontinäytöissä).
 
 - voidaan luoda käyttämällä vain yhden tietojoukon tietoja  
 
@@ -151,7 +147,7 @@ Koontinäyttö edustaa mukautettua näkymää pohjana olevan tietojoukon tai tie
 
   ![Näyttökuva mallikoontinäytöstä](media/end-user-basic-concepts/power-bi-dashboard.png)
 
-Ruutu on visualisoinnin hahmonnus, jonka *suunnittelija* *kiinnittää* esimerkiksi raportista koontinäyttöön. Jokainen kiinnitetty ruutu näyttää [visualisoinnin](end-user-visualizations.md), jonka Power BI on luonut tietojoukosta ja kiinnittänyt tähän koontinäyttöön. Ruutu voi myös sisältää kokonaisen raporttisivun, suoratoistotietoja tai videon. *Suunnittelijat* voivat lisätä ruutuja koontinäyttöihin monin tavoin. Niitä on liian monta, jotta voisimme käsitellä niitä kaikkia tässä yleiskatsauksen sisältävässä artikkelissa. Lisätietoja on artikkelissa [Koontinäyttöruudut Power BI:ssä](end-user-tiles.md).
+Ruutu on visualisoinnin hahmonnus, jonka *suunnittelija* *kiinnittää* esimerkiksi raportista koontinäyttöön. Jokainen kiinnitetty ruutu näyttää [visualisoinnin](end-user-visualizations.md), jonka suunnittelija on luonut tietojoukosta ja kiinnittänyt tähän koontinäyttöön. Ruutu voi myös sisältää kokonaisen raporttisivun, suoratoistotietoja tai videon. *Suunnittelijat* voivat lisätä ruutuja koontinäyttöihin monin tavoin. Niitä on liian monta, jotta voisimme käsitellä niitä kaikkia tässä yleiskatsauksen sisältävässä artikkelissa. Lisätietoja on artikkelissa [Koontinäyttöruudut Power BI:ssä](end-user-tiles.md).
 
 Kuluttajat eivät voi muokata koontinäyttöjä. Voit kuitenkin lisätä kommentteja, tarkastella liittyviä tietoja, asettaa koontinäytön suosikiksi, tilata koontinäytön ja paljon muuta.
 
@@ -183,7 +179,7 @@ _______________________________________________________
 
 Nämä koontinäyttöjen ja raporttien kokoelmat auttavat järjestämään toisiinsa liittyvää sisältöä yhteen pakettiin. Power BI -*suunnittelijat* luovat ja jakavat niitä yksilöille, ryhmille, kokonaisille organisaatioille tai suuremmalle yleisölle. Kuluttajana voit olla varma siitä, että sinä ja työtoverisi käsittelette samoja tietoja – yhtä luotettavaa versiota totuudesta.
 
-![Näyttökuva sovelluksista, jotka on valittu Power BI:n vasemmassa ruudussa.](media/end-user-basic-concepts/power-bi-app.png)
+![Näyttökuva sovelluksista, jotka on valittu Power BI:n vasemmassa ruudussa.](media/end-user-basic-concepts/power-bi-apps.png)
 
 Sovellukset on helppo löytää ja asentaa[Power BI -palvelussa](https://powerbi.com) ja mobiililaitteessa. Kun olet asentanut sovelluksen, sinun ei tarvitse muistaa monien erilaisten koontinäyttöjen nimiä. Ne löytyvät kaikki yhdestä sovelluksesta, selaimesta tai mobiililaitteesta.
 

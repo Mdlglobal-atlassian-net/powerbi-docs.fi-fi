@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 04/25/2019
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: ff962335b573c6dd2a03ae5ab4633c1042a77059
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 5a4c385b9c8e8a28de3b9a5e1dd84651f87ef000
+ms.sourcegitcommit: e5cf19e16112c7dad1591c3b38d232267ffb3ae1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "64770785"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72543029"
 ---
 # <a name="basic-concepts-for-designers-in-the-power-bi-service"></a>Power BI -palvelun peruskäsitteitä suunnittelijoille
 
@@ -33,10 +33,11 @@ Kun avaat Power BI -palvelun selaimessa, palvelun Aloitussivu avautuu. Saatat n�
 3. Power BI:n aloituspainike
 4. Kuvakepainikkeet, mukaan lukien asetukset, ohjeet ja palautteet
 5. Hakuruutu
-6. Ruudut suosituimmasta koontinäytöstä
-7. Suosituimmat ja yleisimmät koontinäytöt ja raportit
+6. Suosituimmat ja yleisimmät koontinäytöt, raportit ja työtilat
+7. Viimeisimmät koontinäytöt, raportit ja työtilat
+8. Omat työtilat
 
-Raporttiesi ja koontinäyttöjesi loppukäyttäjät aloittavat samasta näkymästä käyttäessään Power BI -palvelua selaimella.
+Raporttiesi ja koontinäyttöjesi käyttäjät aloittavat samasta näkymästä käyttäessään Power BI -palvelua selaimella (samoin kuin sinä itsekin).
 
 Tutustumme näihin ominaisuuksiin myöhemmin tarkemmin, mutta käydään ensin läpi muutamia Power BI:n peruskäsitteitä. Vaihtoehtoisesti voit katsoa tämän videon ensin.  Videolla Will kertoo peruskäsitteistä ja esittelee Power BI -palvelua.
 
@@ -195,8 +196,8 @@ Q&A-toiminto etsii vastausta koontinäyttöön yhdistetyistä tietojoukoista.  Y
 
 Kun alat kirjoittaa kysymystä, siirryt Q&A-sivulle. Kirjoittaessasi Q&A-toiminto auttaa oikean kysymyksen kysymisessä ja parhaan vastauksen löytämisessä. Se esimerkiksi ehdottaa kysymyksen uudelleenmuotoilua sekä tarjoaa automaattista täyttöä ja ehdotuksia. Kun olet saanut haluamasi visualisoinnin, kiinnitä se koontinäyttöön. Lisätietoja on artikkelissa [Power BI:n Q&A-toiminto](power-bi-q-and-a.md).
 
-### <a name="4-icon-buttons"></a>4. **Kuvakepainikkeet**
-Oikeassa yläkulmassa olevilla kuvakkeiden kautta voit säätää asetuksia, tarkastella ilmoituksia, ladata sisältöä, hankkia ohjeita ja antaa palautetta Power BI -tiimille. Kaksoisnuolella voit avata koontinäytön **koko näytön** tilassa.  
+### <a name="4-icons-in-the-black-header-bar"></a>4. **Kuvakkeita mustalla otsikkorivillä**
+Oikeassa yläkulmassa olevilla kuvakkeiden kautta voit säätää asetuksia, tarkastella ilmoituksia, ladata sisältöä, hankkia ohjeita, ottaa **uuden ulkoasun** käyttöön sekä poistaa sen käytöstä ja antaa palautetta Power BI -tiimille.  
 
 ![kuvakepainikkeet](media/service-basic-concepts/power-bi-icons.png)
 
@@ -217,8 +218,8 @@ Valitsemalla **Power BI**:n palaat takaisin Power BI:n aloitussivulle.
 
    ![Power BI palvelussa](media/service-basic-concepts/version-new.png)
 
-### <a name="8-labeled-icon-buttons"></a>8. **Nimetyt kuvakepainikkeet**
-Tämä näytön alue sisältää lisävaihtoehtoja vuorovaikutukseen sisällön eli tässä tapauksessa koontinäytön kanssa.  Nimettyjen kuvakkeiden lisäksi näet pistekuvakkeita napsauttamalla vaihtoehtoja koontinäytön monistamiseen, tulostamiseen, päivittämiseen ja muihin toimintoihin.
+### <a name="8-labeled-icons-in-the-gray-menu-bar"></a>8. **Nimetyt kuvakkeet harmaalla valikkorivillä**
+Tämä näytön alue sisältää lisävaihtoehtoja vuorovaikutukseen sisällön eli tässä tapauksessa koontinäytön kanssa.  Nimettyjen kuvakkeiden lisäksi näet myös **Lisää asetuksia (...)** -kohdan, jota napsauttamalla näet toiminnot koontinäytön monistamiseen, tulostamiseen ja päivittämiseen sekä muita toimintoja.
 
    ![Nimetyt kuvakepainikkeet](media/service-basic-concepts/power-bi-labeled-icons.png)
 

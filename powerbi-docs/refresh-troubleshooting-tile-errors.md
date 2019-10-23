@@ -7,16 +7,16 @@ ms.reviewer: kayu
 ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-service
-ms.topic: conceptual
+ms.topic: troubleshooting
 ms.date: 12/06/2018
 ms.author: mblythe
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: c1df7e6293db703922f37c3f28546bb296d1a46a
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: f6becb175b8779588ab8d203bb02256945c71ee6
+ms.sourcegitcommit: e5cf19e16112c7dad1591c3b38d232267ffb3ae1
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66050988"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72544273"
 ---
 # <a name="troubleshooting-tile-errors"></a>Ruutuvirheiden vianmääritys
 Seuraavassa on yleisiä virheitä, joita voit kohdata ruutujen kohdalla sekä niiden selitykset.
@@ -65,16 +65,16 @@ Kenttä on todennäköisesti poistettu tai nimetty uudelleen. Voit poistaa viall
 
 Tämä on tavallisesti tilapäinen ongelma. Jos yrität myöhemmin uudelleen ja näet tämän viestin edelleen, ota yhteyttä tukeen.
 
-**Ruutujen edelleen suodattamattomaan tietojen single-kirjautumisen yhteydessä (SSO) käyttöönoton jälkeen.**
+**Ruudut näyttävät edelleen suodattamattomia tietoja, kun kertakirjautuminen on otettu käyttöön.**
 
-Tämä voi tapahtua, jos pohjana oleva tietojoukko on määritetty käyttämään DirectQuery-tilassa tai Analysis Services-Live-yhteydellä paikallisen tietoyhdyskäytävän kautta. Tässä tapauksessa ruudut edelleen suodattamattomaan tietoja käyttöönoton SSO tietolähteen, kunnes seuraava ruudun päivitys on määräaika jälkeen. Ruudun seuraavan päivityksen yhteydessä Power BI käyttää SSO määritetty ja ruudut näyttävät tiedot suodatetaan käyttäjätietojen mukaan. 
+Näin voi käydä, jos taustalla oleva tietojoukko on määritetty käyttämään DirectQuery-tilaa tai reaaliaikaista yhteyttä Analysis Servicesiin paikallisen tietoyhdyskäytävän kautta. Tässä tapauksessa ruudut näyttävät edelleen suodattamattomia tietoja, kun kertakirjautuminen on otettu käyttöön. Niitä näytetään siihen saakka, kunnes ruutu päivitetään seuraavan kerran. Tämän jälkeen Power BI käyttää kertakirjautumista määritetyllä tavalla ja ruuduissa näytetään käyttäjätietojen perusteella suodatettuja tietoja. 
 
-Jos haluat nähdä suodatetut tiedot heti, voit pakottaa ruudun päivityksen valitsemalla koontinäytön oikeassa yläkulmassa kolme pistettä (...) ja valitsemalla **Päivitä koontinäyttöruudut**.
+Jos haluat nähdä suodatetut tiedot heti, voit pakottaa ruudun päivityksen valitsemalla kolmen pisteen valikon (...) raporttinäkymän oikeasta yläkulmasta ja valitsemalla **Päivitä raporttinäkymän ruudut**.
 
-Tietojoukon omistaja voit myös muuttaa ruudun päivitystiheyden ja määrittää sen 15 minuuttia nopeuttaa ruudun päivitys. Valitse Power BI-palvelun oikeasta yläkulmasta hammaspyöräkuvake ja valitse sitten **asetukset**. Käyttöön **asetukset** sivulla **tietojoukkoja** välilehti. Laajenna **ajoitettu välimuistin päivitys** ja muuta **päivitystaajuus**. Varmista, että voit palauttaa määritykset alkuperäisen päivitystiheyden sen jälkeen, kun Power BI tekee seuraavan ruudun päivitys.
+Tietojoukon omistajana voit myös muokata ruudun päivitysväliä. Jos haluat nopeuttaa ruudun päivitystä, määritä päivitysväliksi 15 minuuttia. Valitse rataskuvake Power BI -palvelun oikeassa yläkulmassa ja valitse sitten **Asetukset**. Valitse **Asetukset**-sivulla **Tietojoukot**-välilehti. Laajenna **Ajoitettu välimuistin päivitys** -kohta ja muokkaa **Päivitystaajuus**-kohdan arvoa. Varmista, että muokkaat määrityksiin takaisin alkuperäisen päivitysvälin, kun Power BI suorittaa seuraavan ruutupäivityksen.
 
 > [!NOTE]
-> **Ajoitettu välimuistin päivitys** osa on käytettävissä tietojoukoille DirectQuery tai LiveConnection tilassa vain. Tietojoukot tuontitilassa eivät edellytä erillisen ruudun päivityksen, koska ruudut päivitetään automaattisesti seuraavan ajoitetun tietojen päivittämisen aikana.
+> **Ajoitettu välimuistin päivitys** -osio on saatavilla tietojoukoille vain DirectQuery-tilassa tai reaaliaikaisen yhteyden tilassa. Tuontitilan tietojoukot eivät edellytä erillistä ruudun päivitystä, koska ruudut päivitetään automaattisesti seuraavan ajoitetun tietojen päivittämisen yhteydessä.
 
 ## <a name="contact-support"></a>Ota yhteyttä tukeen
 Jos sinulla on edelleen ongelma, [ota yhteyttä tukeen](https://support.powerbi.com) asian tutkimiseksi tarkemmin.

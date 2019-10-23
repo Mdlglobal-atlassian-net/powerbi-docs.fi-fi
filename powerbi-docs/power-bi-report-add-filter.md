@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/02/2019
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: da7652556bc11e47cf238dd969ae1b27e6387299
-ms.sourcegitcommit: 9bf3cdcf5d8b8dd12aa1339b8910fcbc40f4cbe4
+ms.openlocfilehash: be2304e655adadf20f5d33f46840c5a0cb82aa9f
+ms.sourcegitcommit: e5cf19e16112c7dad1591c3b38d232267ffb3ae1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "71968787"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72544946"
 ---
 # <a name="add-a-filter-to-a-report-in-power-bi"></a>Suodattimen lisääminen Power BI - raporttiin
 
@@ -51,11 +51,12 @@ Voit lisätä visualisointitason suodattimen tiettyyn visualisointiin kahdella e
 * Voit suodattaa kentän, joka on jo käytössä visualisoinnissa.
 * Vaihtoehtoisesti voit määrittää kentän, joka ei ole käytössä visualisoinnissa, ja lisätä kyseisen kentän suoraan **Visuaalisen tason suodattimet** -säilöön.
 
-Tässä menettelyssä käytetään jälleenmyyntianalyysimallia. Voi halutessasi ladata sen ja käyttää sitä apuna. Lataa [Jälleenmyyntianalyysimalli](sample-retail-analysis.md).
+
+Tässä menettelyssä käytetään jälleenmyyntianalyysimallia. Voi halutessasi ladata sen ja käyttää sitä apuna. Lataa [jälleenmyyntianalyysimallin](sample-retail-analysis.md#get-the-content-pack-for-this-sample) sisältöpaketti.
 
 ### <a name="filter-the-fields-in-the-visual"></a>Visualisoinnin kenttien suodattaminen
 
-1. Avaa raportti Muokkausnäkymässä valitsemalla **Muokkaa raporttia**.
+1. Avaa raporttisi Muokkausnäkymässä valitsemalla **Lisää asetuksia (...)**  > **Muokkaa raporttia**.
    
    ![Muokkaa raporttia -painike](media/power-bi-report-add-filter/power-bi-edit-view.png)
 
@@ -85,7 +86,7 @@ Tässä menettelyssä käytetään jälleenmyyntianalyysimallia. Voi halutessasi
 
 Nyt lisäämme visualisointiin uuden kentän visuaalisen tason suodattimena.
    
-1. Valitse Kentät-ruudusta kenttä, jonka haluat lisätä uutena visuaalisen tason suodattimena, ja vedä se **Visuaalisen tason suodattimet** -alueelle.  Tässä esimerkissä vedämme **Aluejohtaja**-kentän **Visuaalisen tason suodattimet** -säilöön, teemme haun **an** ja valitsemme löytyvät kolme johtajaa. 
+1. Valitse Kentät-ruudusta kenttä, jonka haluat lisätä uutena visuaalisen tason suodattimena, ja vedä se **Visuaalisen tason suodattimet** -alueelle.  Tässä esimerkissä vedämme **Aluejohtaja**-kentän **Visuaalisen tason suodattimet** -säilöön, teemme haun **an** ja valitsemme löytyvät kolme johtajaa.
      
     ![Lisää kenttä Suodattimet-ruutuun](media/power-bi-report-add-filter/power-bi-search-add-visual-filter.png)
 
@@ -105,7 +106,9 @@ Nyt lisäämme visualisointiin uuden kentän visuaalisen tason suodattimena.
 
 Voit myös lisätä sivutason suodattimen koko sivun suodattamiseksi.
 
-1. Avaa raportti Muokkausnäkymässä valitsemalla **Muokkaa raporttia**.
+1. Avaa jälleenmyyjäanalyysimalli Power BI -palvelussa ja siirry sitten **Alueen kuukausimyynti** -sivulle. 
+
+2. Avaa raportti Muokkausnäkymässä valitsemalla **...**  > **Muokkaa raporttia**.
    
    ![Muokkaa raporttia -painike](media/power-bi-report-add-filter/power-bi-edit-view.png)
 2. Avaa Visualisoinnit- ja Suodattimet-ruutu sekä Kentät-ruutu (jos ne eivät ole jo avoinna).
@@ -122,19 +125,21 @@ Voit myös lisätä sivutason suodattimen koko sivun suodattamiseksi.
 Power BI -palvelun ja Power BI Desktopin porautumisen avulla voit luoda *kohderaporttisivun*, jolla keskitytään tiettyyn entiteettiin, kuten toimittajaan, asiakkaaseen tai valmistajaan. Nyt käyttäjät voivat muilla raporttisivuilla napsauttaa hiiren kakkospainikkeella kyseisen entiteetin arvopistettä ja porautua tiettyyn entiteettiin keskittyvälle sivulle.
 
 ### <a name="create-a-drillthrough-filter"></a>Porautumissuodattimen luominen
-Seuraa mukana lataamalla [Asiakkaan tuottavuuden malli](sample-customer-profitability.md). Oletetaan, että haluat luoda sivun, jolla keskitytään Johtaja-liiketoiminta-alueisiin.
+Seuraa mukana lataamalla [Asiakkaan tuottavuuden malli](sample-customer-profitability.md#get-the-content-pack-for-this-sample). Oletetaan, että haluat luoda sivun, jolla keskitytään Johtaja-liiketoiminta-alueisiin.
 
-1. Avaa raportti Muokkausnäkymässä valitsemalla **Muokkaa raporttia**.
+1. Avaa jälleenmyyjäanalyysimalli Power BI -palvelussa ja siirry sitten **Alueen kuukausimyynti** -sivulle.
+
+2. Avaa raporttisi Muokkausnäkymässä valitsemalla **Lisää asetuksia (...)**  > **Muokkaa raporttia**.
    
    ![Muokkaa raporttia -painike](media/power-bi-report-add-filter/power-bi-edit-view.png)
 
 1. Lisää raporttiin uusi sivu ja anna sen nimeksi **Tiimijohtaja**. Tämä sivu on porautumisen *kohde*.
 2. Lisää visualisointeja, jotka seuraavat tiimijohtajien liiketoiminta-alueiden avaintietoja.    
-3. Lisää porautumissuodattimiin myös **Johtaja > Johtajan nimi**.    
+3. Vedä **Johto**-taulukosta **Johto** porautumissuodattimien ruutuun.    
    
     ![Lisää arvo porautumisen suodattimiin](media/power-bi-report-add-filter/power-bi-drillthrough-filter.png)
    
-    Huomaa, että Power BI lisää taaksepäin osoittavan nuolen raporttisivulle.  Valitsemalla taaksepäin osoittavan nuolen käyttäjät voivat palata *alkuperäiselle* raporttisivulle eli sivulle, jolla he valitsivat porautumisen. Taaksepäin osoittava nuoli toimii vain lukunäkymässä.
+    Huomaa, että Power BI lisää taaksepäin osoittavan nuolen raporttisivulle.  Valitsemalla taaksepäin osoittavan nuolen käyttäjät voivat palata *alkuperäiselle* raporttisivulle eli sivulle, jolla he valitsivat porautumisen. Valitse taaksepäin osoittava nuoli painamalla muokkausnäkymässä Ctrl-näppäintä pitkään
    
      ![Taaksepäin osoittava nuoli](media/power-bi-report-add-filter/power-bi-back-arrow.png)
 
@@ -145,7 +150,7 @@ Katsotaan, miten porautumissuodatin toimii.
 2. Oletetaan, että olet Antero Mäntylä ja haluat nähdä Tiimijohtaja-raporttisivun, joka on suodatettu näyttämään vain sinun tietosi.  Avaa Porautuminen-valikkovaihtoehto napsauttamalla hiiren kakkospainikkeella vasemman yläreunan alueen kaaviosta mitä tahansa vihreää arvopistettä.
    
     ![Aloita porautumistoiminto](media/power-bi-report-add-filter/power-bi-drillthrough.png)
-3. Poraudu **Tiimijohtaja**-raporttisivulle valitsemalla **Porautuminen > Tiimijohtaja**. Sivu suodatetaan näyttämään tietoja hiiren kakkospainikkeella napsauttamastasi arvopisteestä – tässä tapauksessa Antti Mäntylästä. Vain porautumissuodattimissa oleva kenttä välitetään porautumisraporttisivulle.  
+3. Poraudu **Tiimijohtaja**-raporttisivulle valitsemalla **Porautuminen > Tiimijohtaja**. Sivu suodatetaan näyttämään tietoja hiiren kakkospainikkeella napsauttamastasi arvopisteestä – tässä tapauksessa Antti Mäntylästä. Kaikki alkuperäisen sivun suodattimia käytetään porautumisraporttisivulla.  
    
     ![Valitse porautumistoiminto](media/power-bi-report-add-filter/power-bi-drillthrough-executive.png)
 

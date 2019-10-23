@@ -8,14 +8,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 08/21/2019
+ms.date: 10/14/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: a05924fc093c1514f51c3fabac3162433e2188f7
-ms.sourcegitcommit: 9bf3cdcf5d8b8dd12aa1339b8910fcbc40f4cbe4
+ms.openlocfilehash: 2b05ad31612d1960e131028d13552843834a98bd
+ms.sourcegitcommit: 549401b0e1fad15c3603fe7f14b9494141fbb100
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "71968912"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72307403"
 ---
 # <a name="configure-workloads-in-a-premium-capacity"></a>Premium-kapasiteettien kuormitusten määrittäminen
 
@@ -70,6 +70,8 @@ Tietojoukkojen kuormitus on oletuksena käytössä, eikä sitä voi poistaa käy
 | **Tulosrivien enimmäismäärä** | DAX-kyselyssä palautettavien rivien enimmäismäärä. Oletusarvo on -1 (ei rajaa) ja sallittu alue on 100000–2147483647. |
 | **Kysely muistiraja (%)** | Kyselyn tai DAX-mittarin tilapäisiin kyselyihin käytettävissä olevan muistin enimmäismäärä prosentteina. |
 | **Kyselyn aikakatkaisu (sekuntia)** | Kyselyn aikakatkaisuajan suurin mahdollinen aika. Oletusarvo on 3600 sekuntia (1 tunti). Arvo 0 määrittää, että kyselyissä ei ole aikakatkaisua. |
+| **Automaattinen sivun päivitys (esikatselu)** | Käytössä / ei käytössä -valitsimen avulla Premium-työtilat voivat käyttää raporteissa automaattista sivun päivitystä. |
+| **Pienin päivitysväli** | Jos automaattinen sivun päivitys on käytössä, sillä on tietty pienin päivitysväli. Se on oletusarvoisesti viisi minuuttia. Pienin sallittu arvo on yksi sekunti. |
 |  |  |  |
 
 #### <a name="max-intermediate-row-set-count"></a>Välirivien enimmäismäärä
@@ -112,6 +114,19 @@ Tämä asetus koskee yksittäistä kyselyä, eikä sen ajan pituutta, joka kuluu
 Kaikkien kyselyiden yhteenlaskettu aika on 75 minuuttia, mutta asetusraja ei täyty, koska jokaisen yksittäisen kyselyn suoritusaika on alle 20 minuuttia.
 
 Huomaa, että Power BI -raportit ohittavat tämän oletusarvon niin, että kapasiteetin kunkin kyselyn aikakatkaisu on huomattavasti lyhyempi. Kunkin kyselyn aikakatkaisu on yleensä noin kolme minuuttia.
+
+#### <a name="automatic-page-refresh-preview"></a>Automaattinen sivun päivitys (esikatselu)
+
+Kun automaattinen sivun päivitys on käytössä, Premium-kapasiteetin käyttäjien sivut päivitetään automaattisesti tietyin välein DirectQuery-lähteistä. Kapasiteetin järjestelmänvalvojana voit toimia seuraavasti:
+
+1.  Voit ottaa automaattisen sivun päivityksen käyttöön ja poistaa sen käytöstä.
+2.  Voit määrittää pienimmän päivitysvälin.
+
+Seuraavasta kuvasta näet automaattisen päivitysvälin asetuksen sijainnin:
+
+![automaattisen päivitysvälin järjestelmänvalvojan asetus](media/service-admin-premium-workloads/automatic-refresh-interval.png)
+
+Automaattisella sivun päivityksellä luodut kyselyt menevät suoraan tietolähteeseen, joten on tärkeää huomioida näiden lähteiden luotettavuus ja kuormitus, kun käytät automaattista sivun päivitystä organisaatiossasi. 
 
 ### <a name="dataflows"></a>Tietovuot
 
@@ -181,5 +196,6 @@ Kuormituksia voidaan ottaa käyttöön ja määrittää kapasiteetille käyttäm
 [Power BI Premium -kapasiteettien optimointi](service-premium-capacity-optimize.md)     
 [Omatoiminen tietovoita sisältävien tietojen valmisteleminen Power BI:ssä](service-dataflows-overview.md)   
 [Mitä ovat sivutetut raportit Power BI Premiumissa?](paginated-reports-report-builder-power-bi.md)   
+[Automaattinen sivun päivitys Power BI Desktopissa (esiversio)](desktop-automatic-page-refresh.md)
 
 Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)

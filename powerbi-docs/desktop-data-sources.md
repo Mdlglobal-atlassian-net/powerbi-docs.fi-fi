@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 09/19/2019
+ms.date: 10/14/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 417238550f68a1c244bab33b8343712f02242eae
-ms.sourcegitcommit: b7a9862b6da940ddebe61bc945a353f91cd0e4bd
+ms.openlocfilehash: 56583c796a8f6e32bed67629dee4fe3bea677bee
+ms.sourcegitcommit: 549401b0e1fad15c3603fe7f14b9494141fbb100
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71945274"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72307850"
 ---
 # <a name="data-sources-in-power-bi-desktop"></a>Power BI Desktopin tietolähteet
 Power BI Desktopin avulla voit yhdistää tietoja monista eri lähteistä. Täydellinen luettelo käytettävissä olevista tietolähteistä on tämän sivun alareunassa.
@@ -225,6 +225,201 @@ Kun URL-osoite tai resurssiyhteyden tiedot on annettu, valitse **OK**. Power BI 
 Voit joko ladata tiedot valitsemalla **Lataa**-painike **Siirtymistoiminto**-ruudun alareunassa tai muokata kyselyä ennen tietojen lataamista valitsemalla **Muokkaa**-painike.
 
 Tietolähteisiin yhdistäminen Power BI Desktopissa ei muuta vaadi! Yritä muodostaa yhteys tietoihin kasvavassa tietolähteiden valikoimassa ja tarkista päivitetyt tiedot – kasvatamme tätä luetteloa koko ajan.
+
+## <a name="using-pbids-files-to-get-data"></a>Tietojen hakeminen PBIDS-tiedostojen avulla
+
+PBIDS-tiedostot ovat Power BI Desktop -tiedostoja, joilla on tietty rakenne ja joilla on .PBIDS-tiedostotunniste merkkinä siitä, että ne ovat Power BI -tietolähdetiedostoja.
+
+Voit luoda .PBIDS-tiedoston tehostaaksesi **tietojen hakemista** organisaatiossasi raportteja luoville käyttäjille. On suositeltavaa, että järjestelmänvalvojat luovat nämä tiedostot yleisesti käytetyille yhteyksille. Tämä helpottaa PBIDS-tiedostojen käyttöä uusille raportin tekijöille. 
+
+Kun tekijä avaa .PBIDS-tiedoston, Power BI Desktop avautuu ja kysyy käyttäjältä tunnistetietoja, joilla todennetaan ja muodostetaan yhteys tiedostossa määritettyyn tietolähteeseen. Näyttöön avautuu siirtymisikkuna, jossa käyttäjän täytyy valita tietolähteestä taulukot, jotka ladataan malliin. Käyttäjien on ehkä myös valittava tietokanta, jos sitä ei ole määritetty PBIDS-tiedostossa. 
+
+Tämän jälkeen käyttäjä voi aloittaa visualisointien luomisen tai käydä uudelleen viimeisimpien lähteiden näkymässä lataamassa malliin uuden joukon taulukoita. 
+
+Tällä hetkellä .PBIDS-tiedostot tukevat vain yhtä tietolähdettä yhdessä tiedostossa. Jos määrität useita tietolähteitä, tämä aiheuttaa virheen. 
+
+Luodakseen .PBIDS-tiedoston järjestelmänvalvojan täytyy määrittää yhden yhteyden vaaditut annettavat tiedot sekä yhteystila. Se voi olla **DirectQuery**-tila tai **tuontitila**. Jos **tila** puuttuu tiedostosta tai on nolla-arvoinen, Power BI Desktopissa tiedoston avaavaa käyttäjää pyydetään valitsemaan joko DirectQuery-tila tai tuontitila. 
+
+### <a name="pbids-file-examples"></a>Esimerkkejä PBIDS-tiedostoista
+
+Tämä osio sisältää joitain esimerkkejä usein käytetyistä tietolähteistä. .PBIDS-tiedostotyyppi tukee vain tietoyhteyksiä, joita tuetaan myös Power BI Desktopissa, mutta tässä on kaksi poikkeusta: reaaliaikainen yhteys ja tyhjä kysely. 
+
+.PBIDS-tiedosto *ei* sisällä todennustietoja, taulukkotietoja tai rakennetietoja.  
+
+Alla on useita esimerkkejä .PBIDS-tiedostosta, mutta nämä ovat vain esimerkkejä, ei täydellinen luettelo. Jos käytät muita tietolähteitä, voit tarkistaa [Data Source Reference (DSR) -muodon protokolla- ja osoitetiedot](https://docs.microsoft.com/azure/data-catalog/data-catalog-dsr#data-source-reference-specification).
+
+Nämä esimerkit on tarkoitettu vain malliksi. Tämä ei ole kattava luettelo eikä tämä sisällä kaikkia DSR-muodon tuettuja liittimiä. Järjestelmänvalvojat ja organisaatiot voivat luoda näiden esimerkkien pohjalta omia tietolähteitään, joista he voivat luoda omia tietolähdetiedostoja sekä tukea niitä. 
+
+
+**Azure AS**
+```
+{ 
+    "version": "0.1", 
+    "connections": [ 
+    { 
+        "details": { 
+        "protocol": "analysis-services", 
+        "address": { 
+            "server": "server-here" 
+        }, 
+        } 
+    } 
+    ] 
+}
+```
+
+
+ 
+
+**Kansio**
+```
+{ 
+  "version": "0.1", 
+  "connections": [ 
+    { 
+      "details": { 
+        "protocol": "folder", 
+        "address": { 
+            "path": "folder-path-here" 
+        } 
+      } 
+    } 
+  ] 
+} 
+```
+
+**OData**
+```
+{ 
+  "version": "0.1", 
+  "connections": [ 
+    { 
+      "details": { 
+        "protocol": "odata", 
+        "address": { 
+            "url": "URL-here" 
+        } 
+      } 
+    } 
+  ] 
+} 
+```
+ 
+**SAP BW**
+```
+{ 
+  "version": "0.1", 
+  "connections": [ 
+    { 
+      "details": { 
+        "protocol": "sap-bw-olap", 
+        "address": { 
+          "server": "server-name-here", 
+          "systemNumber": "system-number-here", 
+          "clientId": "client-id-here" 
+        }, 
+      } 
+    } 
+  ] 
+} 
+```
+ 
+**SAP Hana**
+```
+{ 
+  "version": "0.1", 
+  "connections": [ 
+    { 
+      "details": { 
+        "protocol": "sap-hana-sql", 
+        "address": { 
+          "server": "server-name-here:port-here" 
+        }, 
+      } 
+    } 
+  ] 
+} 
+```
+
+**SharePoint-luettelo**
+
+URL-osoitteen täytyy osoittaa itse SharePoint-sivustoon, ei luetteloon sivustossa. Käyttäjät saavat käyttöönsä siirtymistoiminnon, jossa he voivat valita luetteloita sivustosta. Näistä luetteloista tulee taulukoita mallissa. 
+```
+{ 
+  "version": "0.1", 
+  "connections": [ 
+    { 
+      "details": { 
+        "protocol": "sharepoint-list", 
+        "address": { 
+          "url": "URL-here" 
+        }, 
+       } 
+    } 
+  ] 
+} 
+```
+ 
+ 
+**SQL Server**
+```
+{ 
+  “version”: “0.1”, 
+  “connections”: [ 
+    { 
+      “details”: { 
+        “protocol”: “tds”, 
+        “address”: { 
+          “server”: “server-name-here”, 
+          “database”: “db-name-here (optional)” 
+        } 
+      }, 
+      “options”: {}, 
+      “mode”: “DirectQuery” 
+    } 
+  ] 
+} 
+} 
+```
+ 
+
+**Tekstitiedosto**
+```
+{ 
+  "version": "0.1", 
+  "connections": [ 
+    { 
+      "details": { 
+        "protocol": "file", 
+        "address": { 
+            "path": "path-here" 
+        } 
+      } 
+    } 
+  ] 
+} 
+```
+ 
+
+**Verkko**
+```
+{ 
+  "version": "0.1", 
+  "connections": [ 
+    { 
+      "details": { 
+        "protocol": "http", 
+        "address": { 
+            "url": "URL-here" 
+        } 
+      } 
+    } 
+  ] 
+} 
+```
+ 
+
+
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 Voit tehdä kaikenlaista Power BI Desktopilla. Saat lisätietoja sen toiminnoista seuraavista resursseista:

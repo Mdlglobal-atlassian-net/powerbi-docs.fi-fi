@@ -10,12 +10,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 07/17/2019
 ms.author: maggies
-ms.openlocfilehash: 108882dd0f3b61d6cb19fd18290b44316231f3cb
-ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
+ms.openlocfilehash: 6d8a6a28d72ce6d0fa6123b15f9e692ed1cc4d44
+ms.sourcegitcommit: e5cf19e16112c7dad1591c3b38d232267ffb3ae1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72020312"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72543442"
 ---
 # <a name="create-a-power-bi-dashboard-from-a-report"></a>Power BI -koontinäytön luominen raportista
 Olet lukenut [Johdatus raporttinäkymiin Power BI:ssä](service-dashboards.md) ja haluat nyt luoda omasi. Koontinäyttö voidaan luoda monin eri tavoin. Voit esimerkiksi luoda uuden alusta alkaen, raportista, tietojoukosta tai kopioimalla aiemmin luotu koontinäyttö.  
@@ -28,7 +28,7 @@ Kun olet päässyt tämän artikkelin loppuun, sinulla on hyvä käsitys seuraav
 - Ruudun kiinnittäminen 
 - Koontinäytön ja raportin välillä siirtyminen 
  
-![Raporttinäkymä](media/service-dashboard-create/power-bi-completed-dashboard-small.png)
+![Koontinäyttö](media/service-dashboard-create/power-bi-completed-dashboard-small.png)
 
 > [!NOTE] 
 > Koontinäytöt ovat Power BI -palvelun ominaisuus, eivät Power BI Desktopin. Vaikka raporttinäkymiä ei luoda Power BI -mobiilisovelluksilla, niitä voi [tarkastella ja jakaa](consumer/mobile/mobile-apps-view-dashboard.md) niillä.
@@ -68,9 +68,9 @@ Näissä vaiheittaisissa ohjeissa tuomme yhden Power BI -mallitietojoukon ja kä
 ### <a name="open-the-report-and-pin-tiles-to-your-dashboard"></a>Avaa raportti ja kiinnitä koontinäyttöön ruutuja
 1. Valitse samassa työtilassa **Raportit**-välilehti ja avaa sitten raportti valitsemalla **Hankinta-analyysimalli**.
 
-    ![Raportit-välilehti](media/service-dashboard-create/power-bi-reports.png) Raportti avautuu lukunäkymässä. Huomaa, että sen alareunassa on kaksi välilehteä: **Alennusanalyysi** ja **Kulujen yleiskatsaus**. Kukin välilehti edustaa yhtä raportin sivua.
+    ![Raportit-välilehti](media/service-dashboard-create/power-bi-reports.png) Raportti avautuu lukunäkymässä. Huomaathan, että sen alareunassa on kaksi välilehteä: **Alennusanalyysi** ja **Kulujen yleiskatsaus**. Kukin välilehti edustaa yhtä raportin sivua.
 
-2. Avaa raportti Muokkausnäkymässä valitsemalla **Muokkaa raporttia**.
+2. Avaa raportti Muokkausnäkymässä valitsemalla **Lisää asetuksia (...)**  > **Muokkaa raporttia**.
 
     ![Raportti Lukunäkymässä](media/service-dashboard-create/power-bi-reading-view.png)
 3. Tuo käytettävissä olevat vaihtoehdot esiin pitämällä hiiren osoitinta visualisoinnin päällä. Voit lisätä visualisoinnin koontinäyttöön valitsemalla nastakuvakkeen ![Kiinnitä-kuvake](media/service-dashboard-create/power-bi-pin-icon.png).
@@ -107,7 +107,7 @@ Yhden visualisoinnin kerrallaan kiinnittämisen sijaan voit [kiinnittää koko r
 
 4. Kun näkyviin tulee onnistumisilmoitus, valitse **Siirry koontinäyttöön**. Siellä näkyvät raportista kiinnitetyt ruudut. Alla olevassa esimerkissä olemme kiinnittäneet kaksi ruutua raportin sivulta 1 ja yhden tapahtumaruudun, joka on raportin sivu 2.
 
-   ![Raporttinäkymä](media/service-dashboard-create/power-bi-dashboard.png)
+   ![Koontinäyttö](media/service-dashboard-create/power-bi-dashboard.png)
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 Onnittelut ensimmäisen koontinäytön luomisen johdosta! Nyt kun sinulla on koontinäyttö, voit tehdä sen parissa paljon muutakin. Seuraa jotakin alla olevista ehdotetuista artikkeleista tai aloita omatoiminen tutustuminen: 

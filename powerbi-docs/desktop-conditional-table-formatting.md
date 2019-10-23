@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 08/16/2019
+ms.date: 10/16/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 35f60c0e41a06c8f13931d158fe092184da8838d
-ms.sourcegitcommit: f6ac9e25760561f49d4257a6335ca0f54ad2d22e
+ms.openlocfilehash: bd14437b0833d4c24c37ebeca6524948465bdb1f
+ms.sourcegitcommit: e5cf19e16112c7dad1591c3b38d232267ffb3ae1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69561072"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72544005"
 ---
 # <a name="conditional-formatting-in-tables"></a>Ehdollinen muotoilu taulukoissa 
 Taulukoiden ehdollisen muotoilun avulla voit määrittää mukautettuja solujen värejä, jotka perustuvat solujen arvoihin tai muihin arvoihin tai kenttiin. Voit käyttää myös liukuvärejä. Voit myös näyttää solun arvot tietopalkeilla. 
@@ -140,6 +140,9 @@ Voit värittää visualisointisi käyttämällä arvoja, jotka on lueteltu CSS-v
 Sinun on huomioitava muutamia seikkoja, kun käsittelet ehdollista taulukkomuotoilua:
 
 * Ehdollista muotoilua käytetään vain **Matriisi**-visualisoinnin arvoissa, eikä se koske välisummia tai kokonaissummia. 
+* Ehdollista muotoilua ei käytetä **Summa**-rivillä
+* Mikä tahansa taulukko, joka ei näytä ryhmittelyä yhtenä rivinä, ei tue ehdollista muotoilua.
+* Jos käytät liukuvärimuotoa ja automaattisia enimmäis- ja vähimmäisarvoja tai sääntöpohjaista muotoilua prosenttisäännöillä, ehdollista muotoilua ei vi käyttää, kun tiedot sisältävät NaN-arvoja. NaN on akronyymi sanoista Not a Number eli suomeksi Ei numero. Niitä aiheuttavat yleensä nollalla jakamisen virheet. Voit välttää nämä virheet funktiolla [DIVIDE() DAX](https://docs.microsoft.com/dax/divide-function-dax).
 
 
 ## <a name="next-steps"></a>Seuraavat vaiheet

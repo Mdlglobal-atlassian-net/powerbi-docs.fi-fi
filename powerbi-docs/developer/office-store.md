@@ -9,18 +9,18 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 3/27/2019
-ms.openlocfilehash: 44534f2adbc4f1f39a0c65e11d646fd8fd67be71
-ms.sourcegitcommit: b7a9862b6da940ddebe61bc945a353f91cd0e4bd
+ms.openlocfilehash: 1841311e94ca593093fa3104b615328927365880
+ms.sourcegitcommit: 549401b0e1fad15c3603fe7f14b9494141fbb100
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71944809"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72307660"
 ---
 # <a name="publish-power-bi-visuals-to-appsource"></a>Power BI -visualisointien julkaiseminen AppSourceen
 
 Lue ohjeet siihen, miten voit julkaista omia visualisointejasi AppSourcessa muiden käyttöön.
 
-Kun olet luonut oman visualisoinnin, voit julkaista sen AppSourcessa, josta muutkin löytävät sen käyttöönsä. Sinun täytyy kuitenkin tehdä ennen julkaisua tietyt valmistelutoimet. Saat lisätietoja mukautettujen visualisointien luomisesta ohjeartikkelista [Power BI:n mukautetun visualisoinnin kehittäminen](custom-visual-develop-tutorial.md).
+Kun olet luonut oman visualisoinnin, voit julkaista sen AppSourcessa, josta muutkin löytävät sen käyttöönsä. Sinun täytyy kuitenkin tehdä ennen julkaisua tietyt valmistelutoimet. Saat lisätietoja mukautettujen visualisointien luomisesta ohjeartikkelista [Power BI:n mukautetun visualisoinnin kehittäminen](visuals/custom-visual-develop-tutorial.md).
 
    ![Office-kauppa](media/office-store/appsource-01.png)
 
@@ -147,7 +147,7 @@ Kun visualisointisi on luotu, voit hankkia sille sertifioinnin. Tämä tarkoitta
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
-[Power BI:n mukautetun visualisoinnin kehittäminen](custom-visual-develop-tutorial.md)  
+[Power BI:n mukautetun visualisoinnin kehittäminen](visuals/custom-visual-develop-tutorial.md)  
 [Visualisoinnit Power BI:ssä](../visuals/power-bi-report-visualizations.md)  
 [Mukautetut visualisoinnit Power BI:ssä](../power-bi-custom-visuals.md)  
 [Mukautetun visualisoinnin *sertifioinnin hankkiminen*](../power-bi-custom-visuals-certified.md)

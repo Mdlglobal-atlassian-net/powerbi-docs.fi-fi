@@ -8,15 +8,15 @@ ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 03/31/2018
-ms.openlocfilehash: 71c2135092b0b9bb2b02f4559d40c0b10814a51f
-ms.sourcegitcommit: e2c5d4561455c3a4806ace85defbc72e4d7573b4
+ms.date: 10/09/2019
+ms.openlocfilehash: a3f7e1676c864ff1f5dbf081dd2e7818f30caba6
+ms.sourcegitcommit: e533c65607bbba0f620fddabd6b107e5933772c1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "71325718"
+ms.lasthandoff: 10/11/2019
+ms.locfileid: "72259968"
 ---
-# <a name="changelog-for-power-bi-report-server"></a>Power BI -raporttipalvelimen muutosloki
+# <a name="change-log-for-power-bi-report-server"></a>Power BI -raporttipalvelimen muutosloki
 
 Power BI -raporttipalvelimen muutoslokissa on listattu jokaisen koontiversion uudet ominaisuudet ja ohjelmavirhekorjaukset.
 
@@ -24,12 +24,19 @@ Lisätietoja uusista ominaisuuksista on artikkelissa [Power BI -raporttipalvelin
 
 ## <a name="september-2019"></a>Syyskuu 2019
 
-- **Power BI -raporttipalvelin**          
+- **Power BI -raporttipalvelin**
+    - *Versio: 1.6.7221.30698 (koontiversio 15.0.1102.620), julkaistu: 9. lokakuuta 2019*
+        - Ohjelmavirhekorjauksia
+            - Olemme korjanneet mukautetun Tekstisuodatin-visualisoinnin tekstin.
+            - Olemme korjanneet avattavien osittajien toiminnan.
+            - Olemme korjanneet Strip PII:n telemetriasta.
+          - URL-osoitteissa ei enää erotella kirjainkokoa.
+             
     - *Versio 1.6.7206.38019 (koontiversio 15.0.1102.597), julkaistu: 26. syyskuuta 2019*
         - Suojauspäivitykset
         - Ohjelmavirhekorjauksia
            - Sivutetut raportit
-             - Korjaus helppokäyttötoimintojen ongelmiin, jotka ilmenivät IE:n ja Edgen käytön aikana.
+             - Olemme korjanneet helppokäyttötoimintojen ongelmat, jotka ilmenivät Internet Explorerin ja Microsoft Edgen käytön aikana.
              - Korjaus SAP HANA -ongelmiin, jotka ilmenivät yhteyden testaamisen aikana.
              - Korjaus ongelmiin, jotka ilmenivät sähköpostiosoitteiden luettelon antamisen aikana.
              - Korjaus DirectQuery-tieto lähdettä ja integroitua todentamista käyttäviin Power BI -raportteihin.
@@ -43,10 +50,17 @@ Lisätietoja uusista ominaisuuksista on artikkelissa [Power BI -raporttipalvelin
              - Päivitetty WWW-ohjelmointirajapinta: /PowerBIReports({Id})/DataSources (PATCH) yhteysmerkkijonon päivitysten mahdollistamista varten.
          
 - **Power BI Desktop (optimoitu Power BI -raporttipalvelimelle)**
+
+    - *Versio: 2.73.5586.1241 (syyskuu 2019), julkaistu: 9. lokakuuta 2019*
+        - Ohjelmavirhekorjauksia
+            - Olemme korjanneet mukautetun Tekstisuodatin-visualisoinnin tekstin.
+            - Olemme korjanneet avattavien osittajien toiminnan.
+            - Olemme korjanneet Strip PII:n telemetriasta.
+            
     - *Versio: 2.73.5586.821 (syyskuu 2019), julkaistu: 26. syyskuuta 2019* (uusi koontiversio ja uusi versio)
-    - Sisältää Power BI -raporttipalvelinyhteyden edellyttämiä muutoksia (syyskuu 2019)
+        - Sisältää Power BI -raporttipalvelinyhteyden edellyttämiä muutoksia (syyskuu 2019)
 
-
+    
 ## <a name="may-2019"></a>Toukokuu 2019
 
 - **Power BI -raporttipalvelin**          
