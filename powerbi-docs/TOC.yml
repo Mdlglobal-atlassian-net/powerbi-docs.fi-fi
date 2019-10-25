@@ -211,8 +211,6 @@
               href: desktop-calculated-tables.md
             - name: Mittarit Power BI Desktopissa
               href: desktop-measures.md
-            - name: Lingvistisen Q&A-rakenteen muokkaaminen
-              href: power-bi-q-and-a-linguistic-schema.md
             - name: Suorituskykyilmaisimien tuominen ja näyttäminen (esikatselu)
               href: desktop-import-and-display-kpis.md
         - name: Raporttien luominen
@@ -227,8 +225,6 @@
               href: desktop-tooltips.md
             - name: PDF-muotoon vieminen ja raporttien tulostaminen
               href: desktop-export-to-pdf.md
-            - name: Q&A Power BI Desktopissa
-              href: desktop-qna-in-reports.md
             - name: Analytiikkaruutu Power BI Desktopissa
               href: desktop-analytics-pane.md
             - name: Nousujen ja laskujen selittäminen merkityksellisten tietojen avulla
