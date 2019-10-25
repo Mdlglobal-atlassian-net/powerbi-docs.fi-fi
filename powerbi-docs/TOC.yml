@@ -443,7 +443,7 @@
           href: service-tutorial-use-cognitive-services.md
         - name: Automaattianalyysipalveluiden integrointi
           href: service-tutorial-invoke-machine-learning-model.md
-        - name: Koneoppimismallin luominen (esikatselu)
+        - name: Luo koneoppimismalli
           href: service-tutorial-build-machine-learning-model.md
         - name: Tietojen päivittäminen SQL Serveristä
           href: service-gateway-sql-tutorial.md
@@ -717,7 +717,7 @@
               href: service-machine-learning-integration.md
             - name: 'Kognitiivisten palveluiden käyttäminen Power BI:ssä'
               href: service-cognitive-services.md
-            - name: 'Automaattianalyysipalvelut Power BI:ssä (esikatselu)'
+            - name: 'Automaattianalyysipalvelut Power BI:ssä'
               href: service-machine-learning-automated.md
         - name: Tietojen historiatiedot
           href: service-data-lineage.md
@@ -1161,6 +1161,8 @@
       href: guidance/import-modeling-data-reduction.md
     - name: JAKO-funktion ja jako-operaattorin (/) vertailu
       href: guidance/dax-divide-function-operator.md
+    - name: Kyselyn lähteeseen delegoinnin tärkeys
+      href: guidance/power-query-folding.md
     - name: Virhefunktioiden asianmukainen käyttö
       href: guidance/dax-error-functions.md
     - name: Tietovoiden parhaat käytännöt
