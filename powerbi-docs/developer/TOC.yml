@@ -1,4 +1,5 @@
-- name: Power BI kehittäjille
+- name: Power BI -kehitysdokumentaatio
+  href: index.yml
   items:
     - name: Yleiskatsaus
       expanded: true

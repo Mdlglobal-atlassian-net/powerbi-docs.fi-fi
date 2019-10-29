@@ -1047,6 +1047,8 @@
               href: 'https://go.microsoft.com/fwlink/?linkid=849021'
             - name: Jaettujen tietojoukkojen käyttö OData-syötteinä
               href: report-server/access-dataset-odata.md
+            - name: Tietolähteen yhteysmerkkijonon muuttaminen PowerShellin avulla
+              href: report-server/connect-data-source-apis.md
             - name: Ajoitetun päivityksen määrittäminen
               href: report-server/configure-scheduled-refresh.md
             - name: Kommenttien lisääminen raporttiin
