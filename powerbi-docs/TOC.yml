@@ -424,11 +424,11 @@
     - name: Yleiskatsaus
       items:
         - name: Mikä Power BI on?
-          href: power-bi-overview.md
+          href: fundamentals/power-bi-overview.md
         - name: Mikä Power BI -palvelu on?
           href: power-bi-service-overview.md
         - name: Power BI Desktopin ja palvelun vertailu
-          href: service-service-vs-desktop.md
+          href: designer/service-service-vs-desktop.md
     - name: Opetusohjelmat
       items:
         - name: 'Power BI:n käytön aloittaminen'
