@@ -415,10 +415,20 @@
           href: desktop-latest-update-archive.md
         - name: Power BI Desktopin Send a Smile -tietosuojalausunto
           href: desktop-send-smile-privacy-statement.md
-        - name: Power BI -raporttien helppokäyttötoiminnot
-          href: desktop-accessibility.md
         - name: Power BI Desktopin kirjautumislomakkeen halinta
           href: desktop-admin-sign-in-form.md
+        - name: Helppokäyttötoiminnot
+          items:
+            - name: 'Power BI:n helppokäyttötoimintojen yleiskatsaus'
+              href: desktop-accessibility-overview.md
+            - name: Helppokäyttöisten Power BI -raporttien luominen
+              href: desktop-accessibility-creating-reports.md
+            - name: Power BI -raporttien käyttäminen helppokäyttötoimintojen työkalujen avulla
+              href: desktop-accessibility-consuming-tools.md
+            - name: Power BI -raporttien luominen helppokäyttötoimintojen työkalujen avulla
+              href: desktop-accessibility-creating-tools.md
+            - name: Power BI -raporttien helppokäyttötoimintojen pikanäppäimet
+              href: desktop-accessibility-keyboard-shortcuts.md
 - name: Power BI -palvelu
   items:
     - name: Yleiskatsaus
