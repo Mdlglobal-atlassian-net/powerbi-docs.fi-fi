@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/30/2019
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: bc562c1c75f72e0ada23580aa0698f6463c129bb
-ms.sourcegitcommit: 88e2a80b95b3e735689e75da7c35d84e24772e13
+ms.openlocfilehash: b351ba2151937b62002dc0cfca849cff58985581
+ms.sourcegitcommit: d441d350504f8c6d9e100d229757add6237f0bef
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "66814312"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73060806"
 ---
 # <a name="connect-to-salesforce-with-power-bi"></a>Yhteyden muodostaminen Salesforceen Power BI:n avulla
 Power BI:ssä voit muodostaa helposti yhteyden Salesforce.com-tiliisi. Tämän yhteyden avulla voit noutaa Salesforce-tietosi. Raporttinäkymät ja raportit tarjotaan automaattisesti.
@@ -91,7 +91,7 @@ Jos saat sanoman ”Yhteyden muodostaminen etäpalvelimeen ei onnistu”, kun yr
 
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
-[Mikä on Power BI?](power-bi-overview.md)
+[Mikä on Power BI?](fundamentals/power-bi-overview.md)
 
 [Power BI -palvelun tietolähteet](service-get-data.md)
 
