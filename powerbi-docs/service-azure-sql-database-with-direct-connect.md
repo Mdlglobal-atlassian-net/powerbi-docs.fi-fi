@@ -11,12 +11,12 @@ ms.reviewer: ''
 ms.custom: ''
 ms.date: 09/16/2019
 LocalizationGroup: Data from databases
-ms.openlocfilehash: a80c549ab3aa61e377b657ad426d240a6a485fdd
-ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
+ms.openlocfilehash: f2d175896876bd6ea6f76b58b0eda0e5100dcfe1
+ms.sourcegitcommit: d441d350504f8c6d9e100d229757add6237f0bef
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71074244"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73060911"
 ---
 # <a name="azure-sql-database-with-directquery"></a>Azure SQL -tietokanta ja DirectQuery
 
@@ -55,7 +55,7 @@ Voit etsiä täydellisen palvelimen nimen ja tietokannan nimen Azure-portaalista
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
 * [DirectQueryn käyttö Power BI Desktopissa](desktop-use-directquery.md)  
-* [Mikä on Power BI?](power-bi-overview.md)  
+* [Mikä on Power BI?](fundamentals/power-bi-overview.md)  
 * [Tietojen noutaminen Power BI:hin](service-get-data.md)  
 
 Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)

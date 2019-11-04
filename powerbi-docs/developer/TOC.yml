@@ -71,6 +71,8 @@
               href: visuals/landing-page.md
             - name: 'URL:n käynnistäminen'
               href: visuals/launch-url.md
+            - name: Paikallisen tallennustilan ohjelmointirajapinta
+              href: visuals/local-storage.md
             - name: Tapahtumien hahmontaminen
               href: visuals/event-service.md
             - name: Lajittelu

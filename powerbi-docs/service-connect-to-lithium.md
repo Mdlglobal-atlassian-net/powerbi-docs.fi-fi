@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/29/2019
 ms.author: tebercov
 LocalizationGroup: Connect to services
-ms.openlocfilehash: c2f6564c83c7234b626686a6fe4c76f65b354e58
-ms.sourcegitcommit: b53a6f5575f5f8bc443ecdca9c72525ce123518f
+ms.openlocfilehash: 9a02c642d0b5d766b22b3b8c3853da2d4d773cbd
+ms.sourcegitcommit: d441d350504f8c6d9e100d229757add6237f0bef
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70185523"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73060566"
 ---
 # <a name="connect-to-lithium-with-power-bi"></a>Lithiumiin yhdistäminen Power BI:n avulla
 
@@ -61,7 +61,7 @@ Yhdistä Power BI:n [Lithium-sisältöpakettiin](https://app.powerbi.com/getdata
 Lithium-sisältöpaketti edellyttää Lithium-yhteisön versiota 15.9 tai sitä uudempaa. Varmista asia Lithium-järjestelmänvalvojalta.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
-[Mikä on Power BI?](power-bi-overview.md)
+[Mikä on Power BI?](fundamentals/power-bi-overview.md)
 
 [Power BI -palvelun peruskäsitteitä suunnittelijoille](service-basic-concepts.md)
 

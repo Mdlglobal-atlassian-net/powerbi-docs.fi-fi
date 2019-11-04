@@ -10,12 +10,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
-ms.openlocfilehash: 9f6139376a713c85500a2e6bd430d5ee52f5b7ad
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 9068c522d2aedf95fc65e9bc4bece04531db478d
+ms.sourcegitcommit: d441d350504f8c6d9e100d229757add6237f0bef
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65514897"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73060325"
 ---
 # <a name="power-bi-videos"></a>Power BI -videot
 Meillä on YouTube-kanava Power BI:lle! Voit käydä [kanavallamme](https://www.youtube.com/user/mspowerbi/videos) ja, jos olet uusi Power BI:n käyttäjä, hyvä aloituspaikka on [Tietojen analysointi ja visualisointi Power BI -soittolistan avulla](https://www.youtube.com/playlist?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP).
@@ -47,7 +47,7 @@ Tutustu seuraavaan lähde- ja sisältökokoelmaan lisävideoiden löytämiseksi.
 * [Guy in a Cube -kanava](https://www.youtube.com/channel/UCFp1vaKzpfvoGai0vE5VJ0w) – tuoreita videoita Power BI -ominaisuuksista ja toiminnoista
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
-[Mikä on Power BI?](power-bi-overview.md)
+[Mikä on Power BI?](fundamentals/power-bi-overview.md)
 
 Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)
 

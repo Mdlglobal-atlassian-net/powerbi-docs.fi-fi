@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/29/2019
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: aa685ae9b51e1f5044dab883d8de871dcc7ed5da
-ms.sourcegitcommit: b7a9862b6da940ddebe61bc945a353f91cd0e4bd
+ms.openlocfilehash: a72a1ef01b12b83e555a547a00ffd0dda0c8a34f
+ms.sourcegitcommit: d441d350504f8c6d9e100d229757add6237f0bef
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71945844"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73060969"
 ---
 # <a name="connect-to-mandrill-with-power-bi"></a>Yhteyden muodostaminen Mandrilliin Power BI:llä
 Power BI -sisältöpaketti hakee tietoja Mandrill-tililtäsi ja luo koontinäytön, joukon raportteja ja tietojoukon, joiden avulla voit tarkastella tietojasi. Mandrillin analytiikan avulla saat nopeasti merkityksellisiä tietoja uutiskirjeestäsi tai markkinointikampanjastasi. Tiedot on määritetty päivittymään päivittäin, niin että seuraamasi tiedot ovat varmasti ajan tasalla.
@@ -49,7 +49,7 @@ Muodosta yhteys [Mandrill-sisältöpakettiin Power BI:lle.](http://app.powerbi.c
 * Tietojoukko on ajastettu päivittymään päivittäin, mutta voit muuttaa päivitysaikataulua tai kokeilla tietojoukon päivittämistä **Päivitä nyt** -toiminnolla haluamanasi ajankohtana
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
-[Mikä on Power BI?](power-bi-overview.md)
+[Mikä on Power BI?](fundamentals/power-bi-overview.md)
 
 [Power BI -palvelun peruskäsitteitä suunnittelijoille](service-basic-concepts.md)
 

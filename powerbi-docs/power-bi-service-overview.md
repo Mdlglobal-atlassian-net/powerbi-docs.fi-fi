@@ -10,12 +10,12 @@ ms.topic: overview
 ms.date: 09/05/2019
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: a4d8b094fe10b674d315b1982e1dc34148ba6d1d
-ms.sourcegitcommit: 9665997274301b228f45aa7250ba557e90164a4d
+ms.openlocfilehash: b8a01839da68a276ff136d7068dafac0ce82f102
+ms.sourcegitcommit: d441d350504f8c6d9e100d229757add6237f0bef
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70775736"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73060863"
 ---
 # <a name="what-is-the-power-bi-service"></a>Mikä Power BI -palvelu on?
 **Power BI** on kokoelma yhdessä toimivia ohjelmistopalveluja, sovelluksia ja liittimiä, joiden avulla voit luoda, jakaa ja hyödyntää merkityksellisiä liiketoimintatietoja mahdollisimman tehokkaasti sinun ja yrityksesi kannalta. Microsoft Power BI *-palvelu* (app.powerbi.com), jota joskus kutsutaan nimellä Power BI online, on Power BI:n SaaS (*Software as a Service*) -osa. Power BI -palvelun *koontinäytöt* auttavat sinua pitämään yrityksesi langat käsissäsi. Koontinäytöissä näytetään *ruutuja*, jotka valitsemalla voit avata *raportteja* tarkempaa tutustumista varten. Koontinäytöt ja raportit yhdistävät *tietojoukkoihin*, jotka keräävät kaikki tarvittavat tiedot samaan paikkaan. 
@@ -26,7 +26,7 @@ Tarvitsetko apua Power BI:n rakenneosien kanssa? Lue [Power BI -palvelun perusk�
 > <iframe width="560" height="315" src="https://www.youtube.com/embed/B2vd4MQrz4M" frameborder="0" allowfullscreen></iframe>
 > 
 
-Muut Power BI:n pääosat ovat Windowsin työpöytäsovellus **Power BI Desktop** ja Power BI **-mobiilisovellukset** Windows-, iOS- ja Android-laitteille. Sinä ja työtoverisi voitte käyttää näitä kolmea elementtiä – &mdash;Power BI Desktop, Power BI -palvelu ja mobiilisovellukset&mdash; – merkityksellisten liiketoimintatietojen luomiseen, jakamiseen ja hyödyntämiseen. Lue yleiskatsaus kohdasta [Mikä Power BI on](power-bi-overview.md).
+Muut Power BI:n pääosat ovat Windowsin työpöytäsovellus **Power BI Desktop** ja Power BI **-mobiilisovellukset** Windows-, iOS- ja Android-laitteille. Sinä ja työtoverisi voitte käyttää näitä kolmea elementtiä – &mdash;Power BI Desktop, Power BI -palvelu ja mobiilisovellukset&mdash; – merkityksellisten liiketoimintatietojen luomiseen, jakamiseen ja hyödyntämiseen. Lue yleiskatsaus kohdasta [Mikä Power BI on](fundamentals/power-bi-overview.md).
 
 ## <a name="creating-reports-in-the-service"></a>Raporttien luominen palvelussa
 Tyypillisessä Power BI -työnkulussa aloitat luomalla raportin Power BI Desktopissa, jonka jälkeen julkaiset sen Power BI -palveluun.  
