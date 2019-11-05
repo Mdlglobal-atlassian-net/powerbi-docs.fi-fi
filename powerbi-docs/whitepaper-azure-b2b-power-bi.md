@@ -10,18 +10,18 @@ ms.topic: conceptual
 ms.date: 03/07/2019
 ms.author: davidi
 LocalizationGroup: Conceptual
-ms.openlocfilehash: 7500b5b5ff7f3eabde730b527c16fb6fe2570b89
-ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
+ms.openlocfilehash: 0227072818b7c09463b47ba896c782ded1e7f248
+ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
 ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68523538"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73432408"
 ---
 # <a name="distribute-power-bi-content-to-external-guest-users-using-azure-active-directory-b2b"></a>Power BI -sisällön jakaminen ulkoisille vieraskäyttäjille Azure Active Directory B2B:n avulla
 
-**:** Tässä teknisessä raportissa kerrotaan, miten sisältöä jaetaan organisaation ulkopuolisille käyttäjille käyttäen Azure Active Directoryn yritysten välistä (Azure AD B2B) integrointia.
+**Yhteenveto:** Tämä on tekninen raportti, jossa esitellään, miten sisältöä jaetaan organisaation ulkopuolisille käyttäjille käyttämällä Azure Active Directory Business-to-Business (Azure AD B2B)-integrointia.
 
-**Kirjoittajat:** Lukasz Pawlowski, Kasper de Jonge
+**Kirjailijat:** Jukka, Jone
 
 **Tekniset tarkistajat:** Adam Wilson, Sheng Liu, Qian Liang, Sergei Gundorov, Jacob Grimm, Adam Saxton, Maya Shenhav, Nimrod Shalit, Elisabeth Olson
 
@@ -120,7 +120,7 @@ Kun kaikki Power BI:n käyttäjät ovat organisaation sisäisiä, ei ole tarvett
 
 Alla on usein vastaan tulevia organisaatiorakenteita, jotka soveltuvat hyvin Azure AD B2B:n tyyliseen organisaatioiden väliseen yhteistyöhön Power BI:ssä. Azure AD B2B sopii hyvin useimpiin tapauksiin, mutta joissakin tilanteissa kannattaa pohtia tämän raportin lopussa käsiteltyjä vaihtoehtoja.
 
-### <a name="case-1-direct-collaboration-between-organizations"></a>Tapaus 1: Suora yhteistyö organisaatioiden välillä
+### <a name="case-1-direct-collaboration-between-organizations"></a>Tapaus 1: organisaatioiden välinen suora yhteistyö
 
 Contoson suhde jäähdyttimen toimittajaan on esimerkki suorasta yhteistyöstä organisaatioiden välillä. Koska Contosolla ja sen toimittajalla on suhteellisen vähän käyttäjiä, jotka tarvitsevat käyttöoikeuden jäähdyttimien luotettavuustietoihin, Azure AD B2B:lle perustuva ulkoinen jakaminen on ihanteellinen ratkaisu. Se on helppokäyttöinen ja yksinkertainen hallita. Tämä on myös yleinen tapaus konsultointipalveluissa, joissa konsultti saattaa joutua luomaan sisältöä organisaatiolle.
 
@@ -129,7 +129,7 @@ Contoson suhde jäähdyttimen toimittajaan on esimerkki suorasta yhteistyöstä 
 
 Yleensä tällainen jakaminen tapahtuu käyttäen aluksi hyväksi ad hoc -jakamista nimikkeittäin. Ryhmien kasvaessa tai suhteiden syvetessä lähestymistavaksi muodostuu suunniteltu jakaminen nimikkeittäin, jolloin voidaan vähentää hallinnan kustannuksia. Lisäksi Power BI -sovellusten ad hoc- tai suunniteltu jakaminen, sisällön kommentointi ja tilaaminen organisaatioissa, mobiilisovelluksien sisällön käyttöoikeudet voivat muodostua tärkeiksi, samoin kuin Power BI -sisällön muokkaaminen ja hallinta organisaatioiden välillä. On tärkeä huomata, että jos molempien organisaatioiden käyttäjillä on Power BI Pro -lisenssit omissa organisaatioissaan, he voivat käyttää Pro-käyttöoikeuksia toistensa Power BI -ympäristöissä. Tällaisista käyttöoikeuksista on etua, sillä kutsuvan organisaation ei tarvitse maksaa ulkoisten käyttäjien Power BI Pro -käyttöoikeudesta. Tätä käsitellään tarkemmin myöhemmin tämän asiakirjan Käyttöoikeudet-osassa.
 
-### <a name="case-2-parent-and-its-subsidiaries-or-affiliates"></a>Tapaus 2: Pääorganisaatio ja sen tytäryhtiöt
+### <a name="case-2-parent-and-its-subsidiaries-or-affiliates"></a>Tapaus 2: pääkohde ja sen tytär yhtiöt tai kumppanit
 
 Joidenkin organisaatioiden rakenteet ovat tavallista monimutkaisempia. Tällaisiin organisaatioihin kuuluvat osittain tai kokonaan omistetut tytäryhtiöt, konserniyhtiöt tai hallitut palvelutoimittajasuhteet. Näillä organisaatioilla on pääorganisaatio, kuten holding-yhtiö, mutta tämän alla organisaatiot toimivat puoli-itsenäisesti, joskus erilaisia alueellisia vaatimuksia noudattaen. Tämä johtaa siihen, että jokaisella organisaatiolla on oma Azure AD -ympäristönsä ja erilliset Power BI -vuokraajat.
 
@@ -173,7 +173,7 @@ Toinen lähestymistapa hyödyntää [Azure SQL -tietokantaa](https://azure.micro
 
 Hienostuneemmatkin lähestymistavat on mahdollisia, mutta edellä esitettyjä käytetään eniten.
 
-### <a name="case-3-shared-environment-across-partners"></a>Tapaus 3: Jaettu ympäristö kaikille kumppaneille
+### <a name="case-3-shared-environment-across-partners"></a>Tapaus 3: jaettu ympäristö eri kumppaneille
 
 Contoso voi aloittaa kilpailijan kanssa kumppanuuden, jossa auto rakennetaan yhdessä jaetulla kokoonpanolinjalla mutta ajoneuvon jakelu suoritetaan eri automerkkien alla tai eri alueilla. Tämä edellyttää kattavaa yhteistyötä ja tiedon, älyn ja analytiikan yhteisomistajuutta organisaatioissa. Tämä rakenne on yleinen myös konsultointialalla, jossa konsulttitiimi saattaa tehdä projektiin perustuvan analyysin asiakkaalle.
 
@@ -195,18 +195,18 @@ Prosessi on seuraava:
 2. Tämä käyttäjä perustaa Power BI -vuokraajan ja kutsuu tarvitut käyttäjät Contososta ja kumppaniorganisaatiosta. Käyttäjä myös luo kaikki jaetut tietoresurssit, kuten Azure Analysis Servicesin. Contoson ja kumppanin käyttäjät voivat käyttää jaetun organisaation Power BI:tä vieraskäyttäjinä. Jos ulkoisilla käyttäjillä on lupa muokata ja hallita Power BI:n sisältöä, he voivat käyttää Power BI -aloitussivua ja työtiloja, ladata ja muokata sisältöä sekä jakaa raportteja. Yleensä kaikki jaetut resurssit tallennetaan jaettuun organisaatioon ja niitä käytetään jaetun organisaation kautta.
 3. Sen mukaan, mitä osapuolet ovat sopineet yhteistyöstä, kunkin organisaation on mahdollista kehittää omia omistusoikeudellisia tietojaan ja analyysejaan jaetun tietovaraston resurssien avulla. He voivat jakaa ne omille sisäisille käyttäjilleen omia sisäisiä Power BI -vuokraajiaan käyttämällä.
 
-### <a name="case-4-distribution-to-hundreds-or-thousands-of-external-partners"></a>Tapaus 4: Jakelu sadoille tai tuhansille ulkoisille kumppaneille
+### <a name="case-4-distribution-to-hundreds-or-thousands-of-external-partners"></a>Tapaus 4: jakelu sadoille tai tuhansille ulkoisille kumppaneille
 
 Contoso loi jäähdyttimen luotettavuusraportin yhdelle toimittajalle, mutta nyt Contoso haluaa luoda joukon standardoituja raportteja sadoille toimittajille. Näin Contoso varmistaa, että kaikilla toimittajilla on analyysit, joita ne tarvitsevat tehdäkseen parannuksia tai korjatakseen valmistusvikoja.
 
 ![Jakelu monille kumppaneille](media/whitepaper-azure-b2b-power-bi/whitepaper-azure-b2b-power-bi_10.png)
 
 
-Kun organisaation pitää jakaa standardoituja tietoja ja merkityksellisiä tietoja monille ulkoisille käyttäjille tai organisaatioille, se voi käyttää Power BI -sovellusskenaarion ad hoc- tai suunniteltua jakamista. Näin BI-portaalin luominen onnistuu nopeasti ja ilman suuria kehityskustannuksia. Tällaisen portaalin luominen Power BI:tä käyttämällä on kuvattu tapaustutkimuksessa BI-portaalin luominen Power BI:tä ja Azure AD B2B:tä käyttämällä – vaiheittaiset ohjeet, joka on luettavissa myöhemmin tässä asiakirjassa.
+Kun organisaation pitää jakaa standardoituja tietoja ja merkityksellisiä tietoja monille ulkoisille käyttäjille tai organisaatioille, se voi käyttää Power BI -sovellusskenaarion ad hoc- tai suunniteltua jakamista. Näin BI-portaalin luominen onnistuu nopeasti ja ilman suuria kehityskustannuksia. Prosessi, jolla tällainen portaali rakennetaan Power BI sovelluksella, käsitellään tapaus tutkimuksessa: BI-portaalin muodostaminen Power BI + Azure AD B2B-portaalin avulla – vaiheittaiset ohjeet myöhemmin tässä asia kirjassa.
 
 Tällaisessa tapauksessa organisaatio yrittää yleensä jakaa merkityksellistä tietoa kuluttajille, erityisesti yrittäessään käyttää Azure B2C:tä Power BI:n kanssa. Power BI ei oletusarvoisesti tue Azure B2C:tä. Jos mietit vaihtoehtoja, kannattaa harkita tämän asiakirjan myöhemmässä Yleisiä vaihtoehtoisia lähestymistapoja -osiossa esitettyä vaihtoehtoa 2.
 
-## <a name="case-study-building-a-bi-portal-using-power-bi--azure-ad-b2b--step-by-step-instructions"></a>Tapaustutkimus: BI-portaalin luominen Power BI:tä ja Azure AD B2B:tä käyttämällä – vaiheittaiset ohjeet
+## <a name="case-study-building-a-bi-portal-using-power-bi--azure-ad-b2b--step-by-step-instructions"></a>Tapaus tutkimus: BI-portaalin luominen Power BI + Azure AD B2B-portaalin avulla – vaiheittaiset ohjeet
 
 Power BI:n integrointi Azure AD B2B:hen antaa Contosolle saumattoman ja vaivattoman keinon tarjota vieraskäyttäjille suojattu käyttöoikeus sen BI-portaaliin. Määrityksessä on kolme vaihetta:
 
@@ -217,9 +217,9 @@ Power BI:n integrointi Azure AD B2B:hen antaa Contosolle saumattoman ja vaivatto
 
     Contoson ensimmäinen tehtävä on luoda BI-portaali Power BI:ssä. Contoson BI-portaali koostuu kokoelmasta varta vasten luotuja koontinäyttöjä ja raportteja, jotka tulevat monien sisäisten käyttäjien ja vieraskäyttäjien saataville. Suositeltu keino tehdä tämä Power BI:ssä on luoda Power BI -sovellus. Lue lisätietoja [Power BI:n sovelluksista](https://powerbi.microsoft.com/blog/distribute-to-large-audiences-with-power-bi-apps/).
 
-- Contoson BI-tiimi luo sovellustyötilan Power BI:ssä
+- Contoson BI-ryhmä luo työtilan Power BI
 
-    ![Sovellustyötila](media/whitepaper-azure-b2b-power-bi/whitepaper-azure-b2b-power-bi_12.png)
+    ![työtila](media/whitepaper-azure-b2b-power-bi/whitepaper-azure-b2b-power-bi_12.png)
     
 
 - Muut tekijät lisätään työtilaan
@@ -232,7 +232,7 @@ Power BI:n integrointi Azure AD B2B:hen antaa Contosolle saumattoman ja vaivatto
     ![Luo sisältö työtilassa](media/whitepaper-azure-b2b-power-bi/whitepaper-azure-b2b-power-bi_14.png)
 
 
-    Kun sisältö on luotu sovellustyötilassa, Contoso on valmis kutsumaan kumppaniorganisaatioista vieraskäyttäjiä käyttämään sisältöä.
+    Nyt kun sisältö luodaan työtilassa, contoso on valmis kutsu maan kumppani organisaatioiden vieras käyttäjiä käyttämään tätä sisältöä.
 
 2. Kutsu vieraskäyttäjiä
 
@@ -315,7 +315,7 @@ Power BI:n integrointi Azure AD B2B:hen antaa Contosolle saumattoman ja vaivatto
 
     Usein yksittäiset raportit ja koontinäytöt pitää upottaa aiemmin luotuun portaaliin. Näin voidaan tehdä käyttämällä monia esimerkissä esiteltyjä tekniikoita. Niissä tilanteissa voi kuitenkin olla helpompaa upottaa raportit tai koontinäytöt suoraan työtilasta. Ulkoisten käyttäjien kutsujen ja suojausoikeuksien määrittäminen edellyttää, että käyttäjät pysyvät samoina.
 
-## <a name="under-the-hood-how-is-lucy-from-supplier1-able-to-access-power-bi-content-from-contosos-tenant"></a>Kulissien takana: Miten Toimittaja1:n Lucy voi käyttää Power BI -sisältöä Contoson vuokraajassa?
+## <a name="under-the-hood-how-is-lucy-from-supplier1-able-to-access-power-bi-content-from-contosos-tenant"></a>Huppu: Miten Lucy from Supplier1 voi käyttää Contoson vuokra ajan Power BI sisältöä?
 
 Nyt kun olemme on nähneet, miten Contoso voi saumattomasti jakaa Power BI-sisältöä kumppaniorganisaation vieraskäyttäjille, katsotaan, mitä kulissien takana tapahtuu.
 
@@ -337,9 +337,9 @@ On tärkeää tunnistaa, että Azure AD-tiliä käytetään tai luodaan ulkoisen
 Contoso voi valita yhden kolmesta menetelmästä, kun se antaa Power BI -sisältönsä käyttöoikeuksia toimittajiensa ja kumppaniorganisaatioidensa vieraskäyttäjille.
 
 > [!NOTE]
-> _Azure AD B2B:n ilmainen taso riittää Power BI:n käyttöön Azure AD B2B:n kanssa. Jotkin kehittyneet Azure AD B2B -ominaisuudet, kuten dynaamiset ryhmät, edellyttävät lisää käyttöoikeuksia. Lue lisätietoja Azure AD B2B -dokumentaatiossa:_ [ _https://docs.microsoft.com/azure/active-directory/b2b/licensing-guidance_ ](https://docs.microsoft.com/azure/active-directory/b2b/licensing-guidance)
+> _Azure AD B2B's Free-taso riittää Power BI käyttämiseen Azure AD B2B-yhteyden avulla. Jotkin edistyneet Azure AD B2B-ominaisuudet, kuten dynaamiset ryhmät, edellyttävät lisä käyttö oikeuksia. Lisä tietoja on Azure AD B2B-dokumentaatiossa:_ [ _https://docs.microsoft.com/azure/active-directory/b2b/licensing-guidance_ ](https://docs.microsoft.com/azure/active-directory/b2b/licensing-guidance)
 
-### <a name="approach-1-contoso-uses-power-bi-premium"></a>Menetelmä 1: Contoso käyttää Power BI Premiumia
+### <a name="approach-1-contoso-uses-power-bi-premium"></a>Approach 1: contoso käyttää Power BI Premium
 
 Tässä menetelmässä Contoso ostaa Power BI Premium -kapasiteetin ja määrittää BI-portaalinsa sisällön tähän kapasiteettiin. Näin kumppaniorganisaatioiden vieraskäyttäjät voivat käyttää Contoson Power BI -sovellusta ilman Power BI -käyttöoikeutta.
 
@@ -350,22 +350,22 @@ Contoso voi hyödyntää sovelluksissaan myös muita Power BI Premium -toimintoj
 ![Muut ominaisuudet](media/whitepaper-azure-b2b-power-bi/whitepaper-azure-b2b-power-bi_24.png)
 
 
-### <a name="approach-2-contoso-assigns-power-bi-pro-licenses-to-guest-users"></a>Menetelmä 2: Contoso määrittää Power BI Pro -käyttöoikeudet vieraskäyttäjille
+### <a name="approach-2-contoso-assigns-power-bi-pro-licenses-to-guest-users"></a>Approach 2: contoso määrittää Power BI Pro käyttö oikeudet vieras käyttäjille
 
 Tässä lähestymistavassa Contoso määrittää pro-käyttöoikeudet kumppaniorganisaatioiden vieraskäyttäjille – tämä voidaan tehdä Contoson Microsoft 365 -hallintakeskuksessa. Näin kumppaniorganisaatioiden vieraskäyttäjät voivat käyttää Contoson Power BI -sovellusta ilman, että heidän täytyy ostaa käyttöoikeutta itse. Tämä voi tulla kyseeseen, kun jaetaan ulkoisille käyttäjille, joiden organisaatiot eivät ole vielä ottaneet Power BI:tä käyttöön.
 
 > [!NOTE]
-> _Contoson pro-käyttöoikeus koskee vieraskäyttäjiä vain, kun he käyttävät Contoso-vuokraajan sisältöä. Pro-käyttöoikeudet antavat käyttöoikeuden sisältöön, jota ei ole Power BI Premium -kapasiteetissa. Ulkoiset käyttäjät, joilla on pro-käyttöoikeus, voivat oletusarvoisesti saada vain kulutukseen oikeuttavan käyttökokemuksen. Tämä voidaan muuttaa käyttämällä myöhemmin tämän asiakirjan osiossa_  _Ulkoisten käyttäjien sisällönmuokkauksen ja -hallinnan käyttöönotto Power BI:ssä_  _kuvattua lähestymistapaa._
+> Contoson Pro-käyttö oikeus koskee vieras käyttäjiä vain silloin, kun he käyttävät sisältöä contoso-vuokraajaan. Pro-käyttöoikeudet antavat käyttöoikeuden sisältöön, jota ei ole Power BI Premium -kapasiteetissa. Ulkoiset käyttäjät, joilla on pro-käyttöoikeus, voivat oletusarvoisesti saada vain kulutukseen oikeuttavan käyttökokemuksen. Tätä voidaan muuttaa käyttämällä ulkoisia käyttäjiä, joiden avulla _voit muokata ja hallita sisältöä Power BI_ osassa myöhemmin tässä asia kirjassa kuvatulla tavalla.
 
 ![Käyttöoikeuksien tiedot](media/whitepaper-azure-b2b-power-bi/whitepaper-azure-b2b-power-bi_25.png)
 
 
-### <a name="approach-3-guest-users-bring-their-own-power-bi-pro-license"></a>Menetelmä 3: Vieraskäyttäjät tuovat Power BI Pro -käyttöoikeuden mukanaan
+### <a name="approach-3-guest-users-bring-their-own-power-bi-pro-license"></a>Lähestymis tapa 3: vieras käyttäjät voivat tuoda oman Power BI Pro käyttö oikeutensa
 
 Tässä menetelmässä Toimittaja1 määrittää Power BI Pro -käyttöoikeuden Lucylle. He voivat sitten käyttää Contoson Power BI-sovellusta tällä käyttö oikeudella. Koska Lucy voi käyttää omaa organisaationsa Pro-käyttö oikeutta, kun hän käyttää ulkoista Power BI-ympäristöä, tähän lähestymis tapaan viitataan toisinaan nimellä _Vie oma käyttö oikeutesi_ (byol). Jos molemmat organisaatiot käyttävät Power BI:tä, analytiikkaratkaisulle tarjoutuu hyödyllisiä käyttöoikeuksia ja samalla minimoidaan kulut, joita koituu käyttöoikeuksien määrittämisestä ulkopuolisille käyttäjille.
 
 > [!NOTE]
-> _Toimittaja1:n Lucylle antama pro-käyttöoikeus koskee mitä tahansa Power BI-vuokraajaa, jossa Lucy on vieraskäyttäjänä. Pro-käyttöoikeudet antavat käyttöoikeuden sisältöön, jota ei ole Power BI Premium -kapasiteetissa. Ulkoiset käyttäjät, joilla on pro-käyttöoikeus, voivat oletusarvoisesti saada vain kulutukseen oikeuttavan käyttökokemuksen. Tämä voidaan muuttaa käyttämällä myöhemmin tämän asiakirjan osiossa_  _Ulkoisten käyttäjien sisällönmuokkauksen ja -hallinnan käyttöönotto Power BI:ssä_  _kuvattua lähestymistapaa._
+> Käyttäjälle 1 myönnetty Pro-käyttö oikeus koskee kaikkia Power BI vuokraajia, joissa Lucy on vieras käyttäjä. Pro-käyttöoikeudet antavat käyttöoikeuden sisältöön, jota ei ole Power BI Premium -kapasiteetissa. Ulkoiset käyttäjät, joilla on pro-käyttöoikeus, voivat oletusarvoisesti saada vain kulutukseen oikeuttavan käyttökokemuksen. Tämä voidaan muuttaa käyttämällä ulkoisia käyttäjiä, joiden avulla _voit muokata ja hallita sisältöä Power BI_ osassa myöhemmin tässä asia kirjassa kuvatulla tavalla.
 
 ![Pro-käyttöoikeuden vaatimukset](media/whitepaper-azure-b2b-power-bi/whitepaper-azure-b2b-power-bi_26.png)
 
@@ -471,7 +471,7 @@ Tämä menetelmä on sopiva, jos Contosolla on vain muutama käyttäjä tai jos 
 Contoso voi antaa ulkoisten käyttäjien lisätä sisältöä organisaation sisällä aiemmin osiossa Power BI -sisällön muokkaus ja hallinta organisaatioiden välillä kuvatulla tavalla.
 
 > [!NOTE]
-> Jos haluat muokata ja hallita sisältöä organisaatiosi Power BI:ssä, käyttäjällä tulee olla Power BI Pro -käyttöoikeus muussa työtilassa kuin Oma työtila -osassa. Käyttäjät voivat saada pro-käyttöoikeudet _Käyttöoikeudet-osiossa kuvatulla tavalla._
+> Jos haluat muokata ja hallita sisältöä organisaatiosi Power BI:ssä, käyttäjällä tulee olla Power BI Pro -käyttöoikeus muussa työtilassa kuin Oma työtila -osassa. Käyttäjät voivat hankkia Pro-käyttö oikeuksia tämän asia kirjan _käyttö oikeus_ osiossa kuvatulla tavalla.
 
 Power BI -hallintaportaalin Vuokraaja-asetuksissa on **Salli ulkoisten vieraskäyttäjien muokata ja hallita sisältöä organisaatiossa** -asetus. Oletusarvon mukaan asetus on poistettu käytöstä, mikä tarkoittaa, että ulkoiset käyttäjät saavat oletusarvoisesti rajoitetun vain luku -kokemuksen. Asetus koskee käyttäjiä, joiden käyttäjätyypiksi on määritetty Vieras Azure AD:ssä. Seuraavassa taulukossa kuvataan, millaisia toimintoja käyttäjillä on käyttäjätyypistä ja asetusten määrityksestä riippuen.
 
@@ -505,7 +505,7 @@ Eräät käyttökokemukset eivät ole niiden käyttäjien saatavilla, joiden kä
 
 - Suorajulkaisu Power BI Desktopista Power BI -palveluun
 - Vieraskäyttäjät eivät voi käyttää Power BI Desktopia yhteyden muodostamiseksi Power BI -palvelussa sijaitseviin palvelutietojoukkoihin
-- Office 365 -ryhmiin sidotut perinteiset työtilat: Vieraskäyttäjät eivät voi luoda tällaisia työtiloja eivätkä hallita niitä järjestelmänvalvojina. He voivat olla jäseniä.
+- Perinteiset työtilat, jotka on sidottu Office 365-ryhmään: vieras käyttäjä ei voi luoda tai olla näiden työtilojen järjestelmänvalvojia. He voivat olla jäseniä.
 - Ad hoc -kutsujen lähettämistä ei tueta työtilojen käyttöoikeusluetteloilla
 - Power BI Publisher for Exceliä ei tueta vieraskäyttäjillä
 - Vieraskäyttäjät eivät voi asentaa Power BI Gatewaytä ja yhdistää sitä organisaatioosi
@@ -555,7 +555,7 @@ Contoso voi pakottaa ehdolliset käyttöoikeuskäytännöt vieraskäyttäjille, 
 
 Azure AD B2B:llä on helppoa jakaa tietoja ja raportteja organisaatioissa, mutta usein käytettyjä tapoja on monia muitakin ja joskus ne saattavat olla parempiakin.
 
-### <a name="alternative-option-1-create-duplicate-identities-for-partner-users"></a>Vaihtoehto 1: Luo kumppanikäyttäjille kaksoisidentiteettejä
+### <a name="alternative-option-1-create-duplicate-identities-for-partner-users"></a>Vaihtoehtoinen vaihto ehto 1: Luo päällekkäiset käyttäjä tiedot kumppani käyttäjille
 
 Tässä vaihtoehdossa Contoson piti luoda manuaalisesti kaksoisidentiteetti jokaiselle Contoso-vuokraajan kumppanikäyttäjälle seuraavassa kuvassa esitetyllä tavalla. Tämän jälkeen Contoso voi jakaa määritetyille identiteeteille asianmukaiset raportit, koontinäytöt ja sovellukset Power BI:ssä.
 
@@ -575,7 +575,7 @@ Miksi vaihtoehtoa ei kannata valita:
 - Kun käyttäjä poistuu organisaatiosta, hänellä on Contoson resurssien käyttöoikeudet niin kauan, kunnes Contoson järjestelmänvalvoja poistaa hänen tilinsä manuaalisesti
 - Contoso-järjestelmänvalvojien pitää hallita käyttäjätietoja, esimerkiksi luoda ne, palauttaa salasanat jne.
 
-### <a name="alternative-option-2-create-a-custom-power-bi-embedded-application-using-custom-authentication"></a>Vaihtoehto 2: Luo mukautettu Power BI Embedded -sovellus käyttämällä mukautettua todentamista
+### <a name="alternative-option-2-create-a-custom-power-bi-embedded-application-using-custom-authentication"></a>Vaihtoehtoinen vaihto ehto 2: mukautetun Power BI Embedded-sovelluksen luominen mukautetun todennuksen avulla
 
 Contoson toinen vaihtoehto on luoda oma mukautettu upotettu Power BI -sovellus, joka käyttää mukautettua todentamista (['Sovellus omistaa tiedot'](https://docs.microsoft.com/power-bi/developer/embed-sample-for-customers)). Vaikka monilla organisaatioilla ei ole aikaa tai resursseja luoda mukautettua sovellusta, jolla ne voisivat jakaa Power BI-sisältöä ulkoisille kumppaneilleen, joillekin organisaatioille tämä on paras tapa, ja ansaitsee siksi huomiota.
 
@@ -609,7 +609,7 @@ Miksi vaihtoehtoa ei kannata valita:
 
 ## <a name="faq"></a>Usein kysytyt kysymykset
 
-**Voiko Contoso lähettää kutsun, joka on lunastetaan automaattisesti niin, että käyttäjä on saman tien valmis aloittamaan? Vai pitääkö käyttäjän aina suorittaa lunastus URL-osoitetta napsauttamalla?**
+**Voiko contoso lähettää kutsun, joka lunastetaan automaattisesti, jotta käyttäjä on vain "valmis menemään"? Onko käyttäjän aina napsautettava lunastus-URL-osoitetta?**
 
 Käyttäjän on aina annettava suostumus napsauttamalla, ennen kuin hän voi käyttää sisältöä.
 
