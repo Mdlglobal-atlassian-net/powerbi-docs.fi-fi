@@ -102,6 +102,8 @@
               href: embed-sample-for-customers.md
             - name: Organisaatiollesi tarkoitetun sisällön upottaminen
               href: embed-sample-for-your-organization.md
+            - name: Sivutettujen raporttien upottaminen asiakkaille
+              href: embed-paginated-reports-customers.md
             - name: Kansallisille pilvipalveluille tarkoitetun sisällön upottaminen
               href: embed-sample-for-customers-national-clouds.md
         - name: Käsitteet
@@ -112,6 +114,8 @@
               href: embed-service-principal.md
             - name: Rivitason suojaus
               href: embedded-row-level-security.md
+            - name: Sivutettujen raporttien rivitason suojaus
+              href: paginated-reports-row-level-security.md
             - name: Useiden vuokralaisten hallinta
               href: embed-multi-tenancy.md
             - name: Power BI Embedded -palvelun diagnostiikan kirjaus Azuressa

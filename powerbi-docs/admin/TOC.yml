@@ -44,6 +44,14 @@
           href: ../service-admin-power-bi-expressroute.md
         - name: 'Azure AD B2B:n käyttö'
           href: ../service-admin-azure-ad-b2b.md
+        - name: Tietojen suojaus
+          items:
+            - name: Tietojen suojauksen yleiskatsaus
+              href: service-security-data-protection-overview.md
+            - name: Tietojen luottamuksellisuustunnisteen ottaminen käyttöön
+              href: service-security-enable-data-sensitivity-labels.md
+            - name: 'Microsoft Cloud App Securityn käyttäminen Power BI:n kanssa'
+              href: service-security-using-microsoft-cloud-app-security-controls.md
         - name: Rivitason suojaus
           href: ../service-admin-rls.md
         - name: Arkistoitu työtila
