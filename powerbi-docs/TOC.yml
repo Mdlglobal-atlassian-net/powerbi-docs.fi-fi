@@ -1109,6 +1109,8 @@
       items:
         - name: Kapasiteetin suunnittelun raportti
           href: report-server/capacity-planning.md
+        - name: PDF-hahmontamislaajennuksen vaatimustenmukaisuus
+          href: report-server/rendering-extension-support.md
 - name: Yhdyskäytävät
   items:
     - name: Yleiskatsaus
