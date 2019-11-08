@@ -3,19 +3,19 @@ title: Power BI:n suojausraportti
 description: Tekninen raportti, jossa käsitellään ja kuvataan Power BI:n tietoturva-arkkitehtuuria ja tietoturvan toteutusta
 author: davidiseminger
 ms.author: davidi
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 10/24/2019
 LocalizationGroup: Conceptual
-ms.openlocfilehash: 4cb2ae69044b156d5f8a4bd554f8386808fb6b9e
-ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
+ms.openlocfilehash: 8cbb1c4b25cacae5cb025f85790be6a1657b0482
+ms.sourcegitcommit: a5853ef44ed52e80eabee3757bb6887fa400b75b
 ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73430502"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73787758"
 ---
 # <a name="power-bi-security-whitepaper"></a>Power BI:n suojausraportti
 
@@ -34,13 +34,13 @@ ms.locfileid: "73430502"
 
 **Power BI** on Microsoftin online-ohjelmistopalvelu (_SaaS_ eli Software as a Service, ”ohjelmisto palveluna”), jonka avulla voit nopeasti ja helposti luoda omatoimisia liiketoimintatietojen koontinäyttöjä, raportteja, tietojoukkoja ja visualisointeja. Power BI:n avulla voit muodostaa yhteyden moniin eri tietolähteisiin, yhdistää ja muotoilla tietoja kyseisistä yhteyksistä sekä luoda sitten raportteja ja koontinäyttöjä, jotka voidaan jakaa muiden kanssa.
 
-Power BI-palveluun liittyvät [Microsoftin verkkopalvelujen ehdot](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=31) ja [Microsoftin yritystason tietosuojalausunto](http://www.microsoft.com/privacystatement/OnlineServices/Default.aspx). Tietojenkäsittelyn sijainti on Microsoftin verkkopalvelujen ehtojen kohdassa Tietojen siirrot ja sijaintipaikka. Yhteensopivuuden lisätietojen osalta [Microsoft Trust Center](https://www.microsoft.com/trustcenter) on ensisijainen resurssi Power BI:tä varten. Power BI -ryhmä tekee kovasti töitä saadakseen asiakkaidensa käyttöön uusimmat innovaatiot ja parhaan tuottavuuden. Power BI on tällä hetkellä [Office 365-yhteensopivuus kehyksen](http://go.microsoft.com/fwlink/p/?LinkID=618494)tasolla D.
+Power BI-palveluun liittyvät [Microsoftin verkkopalvelujen ehdot](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=31) ja [Microsoftin yritystason tietosuojalausunto](https://www.microsoft.com/privacystatement/OnlineServices/Default.aspx). Tietojenkäsittelyn sijainti on Microsoftin verkkopalvelujen ehtojen kohdassa Tietojen siirrot ja sijaintipaikka. Yhteensopivuuden lisätietojen osalta [Microsoft Trust Center](https://www.microsoft.com/trustcenter) on ensisijainen resurssi Power BI:tä varten. Power BI -ryhmä tekee kovasti töitä saadakseen asiakkaidensa käyttöön uusimmat innovaatiot ja parhaan tuottavuuden. Power BI on tällä hetkellä [Office 365-yhteensopivuus kehyksen](https://go.microsoft.com/fwlink/p/?LinkID=618494)tasolla D.
 
 Tässä artikkelissa kuvataan Power BI -suojausta kertomalla Power BI -arkkitehtuurista sekä selitetään, miten käyttäjät todennetaan Power BI -palvelussa ja miten tietoyhteydet muodostetaan. Lisäksi kuvataan, kuinka Power BI tallentaa ja siirtää tietoja palvelussa. Viimeisessä osiossa käsitellään tietoturvaan liittyviä kysymyksiä ja myös vastataan niihin.
 
 ## <a name="power-bi-architecture"></a>Power BI -arkkitehtuuri
 
-**Power BI** -palvelu perustuu **Azureen**, joka on Microsoftin [pilvitietojen käsittelyalusta](http://azure.microsoft.com/overview/what-is-azure/). Power BI on nykyään käytössä useissa tietokeskuksissa ympäri maailmaa – tarjolla on useita aktiivisia käyttöönottoja, joita kyseisten tietokeskusten alueella toimivat asiakkaat voivat hyödyntää, minkä lisäksi on yhtä monta passiivista käyttöönottoa, jotka toimivat kunkin aktiivisen käyttöönoton varmuuskopioina.
+**Power BI** -palvelu perustuu **Azureen**, joka on Microsoftin [pilvitietojen käsittelyalusta](https://azure.microsoft.com/overview/what-is-azure/). Power BI on nykyään käytössä useissa tietokeskuksissa ympäri maailmaa – tarjolla on useita aktiivisia käyttöönottoja, joita kyseisten tietokeskusten alueella toimivat asiakkaat voivat hyödyntää, minkä lisäksi on yhtä monta passiivista käyttöönottoa, jotka toimivat kunkin aktiivisen käyttöönoton varmuuskopioina.
 
 Kukin Power BI -käyttöönotto koostuu kahdesta klusterista – Web Front End (**WFE**) -klusterista ja **Back End** -klusterista. Nämä kaksi klusteria esitetään seuraavassa kuvassa, ja ne liittyvät artikkelin muissa osissa käsiteltyihin aiheisiin. 
 
@@ -117,8 +117,8 @@ Power BI on tarjolla tietyillä alueilla sen mukaan, missä Power BI -klustereit
 
 Seuraavissa linkeissä on lisätietoja Azure-tietokeskuksista.
 
-- [Azure-alueet](http://azure.microsoft.com/regions/) – tietoa Azuren maailmanlaajuisesta edustuksesta ja sijainneista
-- [Azure-palvelut alueittain](http://azure.microsoft.com/regions/#services) – Täydellinen luettelo kullakin alueella saatavilla olevista Microsoftin Azure-palveluista (sekä infrastruktuuripalvelut että käyttöympäristön palvelut).
+- [Azure-alueet](https://azure.microsoft.com/regions/) – tietoa Azuren maailmanlaajuisesta edustuksesta ja sijainneista
+- [Azure-palvelut alueittain](https://azure.microsoft.com/regions/#services) – Täydellinen luettelo kullakin alueella saatavilla olevista Microsoftin Azure-palveluista (sekä infrastruktuuripalvelut että käyttöympäristön palvelut).
 
 Tällä hetkellä Power BI-palvelu on käytettävissä tietyillä alueilla, joita palvelin keskukset tarjoavat [Microsoft Trust Centerissä](https://www.microsoft.com/TrustCenter/CloudServices/business-application-platform/data-location)kuvatulla tavalla. Seuraava linkki näyttää kartan Power BI -palvelinkeskuksista. Kun viet hiiren osoittimen alueen päällä, näet alueella sijaitsevat palvelinkeskukset:
 
@@ -126,7 +126,7 @@ Tällä hetkellä Power BI-palvelu on käytettävissä tietyillä alueilla, joit
 
 Microsoft tarjoaa palvelinkeskuksia myös maakohtaisesti. Lisätietoja Power BI-palvelun käytettävyydestä kansallisissa pilvipalveluissa on artikkelissa [Power BI:n kansalliset pilvipalvelut](https://powerbi.microsoft.com/clouds/).
 
-Lisätietoja siitä, mihin tietosi tallennetaan ja miten niitä käytetään, löydät [Microsoft Trust Centeristä](https://www.microsoft.com/TrustCenter/Transparency/default.aspx#_You_know_where). Sitoumukset levossa säilytettävien asiakastietojen sijainnista määritetään **Microsoftin verkkopalvelujen ehdoissa** kohdassa [Tietojenkäsittelyehdot](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=31).
+Lisätietoja siitä, mihin tietosi tallennetaan ja miten niitä käytetään, löydät [Microsoft Trust Centeristä](https://www.microsoft.com/TrustCenter/Transparency/default.aspx#_You_know_where). Sitoumukset levossa säilytettävien asiakastietojen sijainnista määritetään [Microsoftin verkkopalvelujen ehdoissa](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=31) kohdassa **Tietojenkäsittelyehdot**.
 
 ## <a name="user-authentication"></a>Käyttäjän todennus
 
@@ -224,7 +224,7 @@ Pilvipohjaisten tietolähteiden osalta Tietojen siirron rooli salaa salausavaime
         - Jos tietojoukko on määritetty päivitettäväksi, tunnistetiedot tallennetaan salattuina tietojen siirron Azuren SQL-tietokantaan. Salausavain tallennetaan koneeseen, joka suorittaa yhdyskäytävää asiakkaan infrastruktuurissa.
         - Jos tietojoukkoa ei ole määritetty päivitettäväksi, tietolähteisiin ei tallenneta tunnistetietoja.
 
-1. Tiedot
+1. Tietolähdeasetukset
 
     a. Analysis Services paikallisena ja DirectQuery – Mitään ei tallenneta Power BI -palveluun.
 
@@ -242,7 +242,7 @@ Power BI toteuttaa tietojen eheyden valvonnan seuraavilla tavoilla:
 
 * Azure Blob -säilössä levossa säilytettävien tietojen osalta Power BI käyttää asiakaspuolen salausta ja HTTPS:ää siirtääkseen tietoja säilöön, joka sisältää eheystarkistuksia tietojen noutamisen yhteydessä. Voit [lukea lisätietoja Azuren Blob -säilön tietoturvasta](https://azure.microsoft.com/documentation/articles/storage-security-guide/).
 
-#### <a name="reports"></a>Raportit
+#### <a name="reports"></a>raportit
 
 1. Metatiedot (raportin määritys)
 
@@ -301,7 +301,7 @@ Muut kuin pysyvät laitteet ovat laitteita, joiden muisti pysyy muuttumattomana 
     c. Lähetetyt tiedot – Ei mitään (ei käytettävissä).
 
     d. PML – Ei mitään (mitään ei tallenneta käsittelysolmuun tai eri tavalla kuin yllä olevassa osiossa **Levossa säilytettävät tiedot** on kuvattu).
-4. Tiedot
+4. Tietolähdeasetukset
 
     Jotkin tieto-artefaktit voidaan tallentaa tietokonesolmujen levylle rajoitetuksi ajaksi.
 
@@ -341,7 +341,7 @@ Power BI:n ja ExpressRouten avulla voit luoda yksityisen verkkoyhteyden omasta o
 
 ExpressRoute on Azure-palvelu, jonka avulla voit luoda yksityisen yhteyden Azure-tietokeskuksen (jossa Power BI sijaitsee) ja paikallisen infrastruktuurin välille tai luoda yksityisiä yhteyksiä Azure-palvelinkeskusten ja colocation-ympäristön välillä. Lisätietoja on artikkelissa [Power BI ja ExpressRoute](service-admin-power-bi-expressroute.md).
 
-## <a name="power-bi-mobile"></a>Power BI -mobiilisovellus
+## <a name="power-bi-mobile"></a>Power BI Mobile
 
 Power BI-mobiilisovellus on kokoelma sovelluksia, jotka on suunniteltu kolmelle ensisijaiselle mobiilialustalle: Android, iOS ja Windows Mobile. Power BI Mobile -sovellusten suojausta tulee harkita kahdesta näkökulmasta:
 
@@ -371,7 +371,7 @@ Power BI Mobilen välimuisti säilyy laitteessa joko kahden viikon ajan tai kunn
 
 Power BI Mobile -sovellukset eivät käsittele laitteen kansioita. 
 
-Kaikki kolme ympäristöä, joissa Power BI Mobile on käytettävissä, tukevat Microsoft Intune -ohjelmistopalvelua, joka mahdollistaa mobiililaitteiden ja sovellusten hallinnan. Kun Intune on otettu käyttöön ja määritetty, mobiililaitteen tiedot salataan eikä itse Power BI -sovellusta voi asentaa SD-kortille. Lue [lisätietoja Microsoft Intunesta](http://www.microsoft.com/cloud-platform/microsoft-intune).
+Kaikki kolme ympäristöä, joissa Power BI Mobile on käytettävissä, tukevat Microsoft Intune -ohjelmistopalvelua, joka mahdollistaa mobiililaitteiden ja sovellusten hallinnan. Kun Intune on otettu käyttöön ja määritetty, mobiililaitteen tiedot salataan eikä itse Power BI -sovellusta voi asentaa SD-kortille. Lue [lisätietoja Microsoft Intunesta](https://www.microsoft.com/cloud-platform/microsoft-intune).
 
 ## <a name="power-bi-security-questions-and-answers"></a>Power BI:n tietoturvaan liittyviä kysymyksiä ja vastauksia
 
@@ -447,17 +447,17 @@ Seuraavat kysymykset ovat yleisiä Power BI:n suojaukseen liittyviä kysymyksiä
 
 **Suorittaako Microsoft mukautettujen visualisointien suhteen minkäänlaista mukautetun visualisointikoodin arviointia suojauksen tai tietoturvan kannalta, ennen kuin kohteita julkaistaan Valikoimaan?**
 
-* Ei. On asiakkaan vastuulla tarkistaa mukautettu visualisointikoodi ja päättää, voiko siihen luottaa. Kaikkia mukautettuja visualisointikoodeja käytetään sandbox-ympäristössä, joten mukautetun visualisoinnin virheelliset koodit eivät vaikuta haitallisesti muuhun Power BI -palveluun.
+* Nro On asiakkaan vastuulla tarkistaa mukautettu visualisointikoodi ja päättää, voiko siihen luottaa. Kaikkia mukautettuja visualisointikoodeja käytetään sandbox-ympäristössä, joten mukautetun visualisoinnin virheelliset koodit eivät vaikuta haitallisesti muuhun Power BI -palveluun.
 
 **Lähettävätkö muut Power BI -visualisoinnit tietoja asiakkaan verkon ulkopuolelle?**
 
-* Kyllä. Bing Maps- ja ESRI-visualisoinnit siirtävät tietoja Power BI -palvelun ulkopuolelle kyseisiä palveluita käyttäville visualisoinneille. Voit katsoa lisätietoja ja tarkat kuvaukset Power BI:n ulkopuolelle suuntautuvasta vuokraajan liikenteestä artikkelista [ **Power BI ja ExpressRoute**](service-admin-power-bi-expressroute.md).
+* On. Bing Maps- ja ESRI-visualisoinnit siirtävät tietoja Power BI -palvelun ulkopuolelle kyseisiä palveluita käyttäville visualisoinneille. Voit katsoa lisätietoja ja tarkat kuvaukset Power BI:n ulkopuolelle suuntautuvasta vuokraajan liikenteestä artikkelista [ **Power BI ja ExpressRoute**](service-admin-power-bi-expressroute.md).
 
 **Onko Microsoft tehnyt malli sovelluksille tieto turva-tai tieto suoja-arvioinnin malli sovelluksesta ennen kohteiden julkaisemista valikoimaan?**
-* Ei. Sovelluksen julkaisija on vastuussa sisällöstä, kun asiakkaan vastuulla on tarkastella ja tarkistaa, luotatko malliin sovelluksen julkaisijaan. 
+* Nro Sovelluksen julkaisija on vastuussa sisällöstä, kun asiakkaan vastuulla on tarkastella ja tarkistaa, luotatko malliin sovelluksen julkaisijaan. 
 
 **Onko olemassa malli sovelluksia, jotka voivat lähettää tietoja asiakas verkon ulkopuolella?**
-* Kyllä. Asiakkaan vastuulla on tarkistaa julkaisijan tieto suoja käytäntö ja päättää, asennetaanko malli sovellus vuokraajaan. Lisäksi julkaisijan vastuulla on ilmoittaa sovelluksen toiminnasta ja toiminnoista.
+* On. Asiakkaan vastuulla on tarkistaa julkaisijan tieto suoja käytäntö ja päättää, asennetaanko malli sovellus vuokraajaan. Lisäksi julkaisijan vastuulla on ilmoittaa sovelluksen toiminnasta ja toiminnoista.
 
 **Entä tietojen suvereniteetti? Voimmeko valmistella vuokraajille tietyillä maantieteellisillä alueilla sijaitsevia tieto keskuksia, jotta tiedot eivät poistu maan rajojen ulkopuolelle?**
 
@@ -487,7 +487,7 @@ Lisää tietoja Power BI -palvelusta on seuraavissa resursseissa.
 - [Power BI Desktopin käytön aloittaminen](https://support.powerbi.com/knowledgebase/articles/471664)
 - [Power BI REST -ohjelmointirajapinnan yleiskatsaus](https://msdn.microsoft.com/library/dn877544.aspx)
 - [Power BI -ohjelmointirajapinnan viite](https://msdn.microsoft.com/library/mt147898.aspx)
-- [Paikallinen tietoyhdyskäytävä](service-gateway-onprem.md)
+- [On-premises data gateway (Paikallinen tietoyhdyskäytävä)](service-gateway-onprem.md)
 - [Power BI ja ExpressRoute](service-admin-power-bi-expressroute.md)
 - [Power BI:n kansalliset pilvipalvelut](https://powerbi.microsoft.com/clouds/)
 - [Power BI Premium](https://aka.ms/pbipremiumwhitepaper)

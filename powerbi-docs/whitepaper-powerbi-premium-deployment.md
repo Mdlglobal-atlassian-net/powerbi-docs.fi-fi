@@ -3,19 +3,19 @@ title: Power BI Premium kapasiteettien käyttöönotto ja hallinta
 description: Tutustu Power BI Premium mahdollisuuksiin sekä skaalautuvien ratkaisujen suunnitteluun, käyttöönottoon, valvontaan ja vian määritykseen.
 author: mgblythe
 ms.author: mblythe
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 03/06/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: eecbc43f26cebc12884ae6c5143a815f6e310ce5
-ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
+ms.openlocfilehash: f9269b52b1721cd7c6801cd0337911159c0b2494
+ms.sourcegitcommit: a5853ef44ed52e80eabee3757bb6887fa400b75b
 ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73432356"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73786334"
 ---
 # <a name="deploying-and-managing-power-bi-premium-capacities"></a>Power BI Premium kapasiteettien käyttöönotto ja hallinta
 
@@ -63,7 +63,7 @@ Seuraavat Power BI sisältö on tallennettu työtiloihin:
 - Tietovuot
 - Tietojoukot
 - Työkirjat
-- Raportit
+- raportit
 - Koontinäytöt
 
 #### <a name="dataflows"></a>Tietovuot
@@ -131,7 +131,7 @@ On tärkeää ymmärtää, että tämä sisältö tyyppi ei ole käytettävissä
 
 Lisä tietoja on [Excel-työkirja tiedostojen Nouda tiedot](service-excel-workbook-files.md) -tiedostossa.
 
-#### <a name="reports"></a>Raportit
+#### <a name="reports"></a>raportit
 
 Raportteja on kahdenlaisia: Power BI raportteja ja sivutettuja raportteja.
 
