@@ -3,23 +3,22 @@ title: Power BI Premium kapasiteettien käyttöönotto ja hallinta
 description: Tutustu Power BI Premium mahdollisuuksiin sekä skaalautuvien ratkaisujen suunnitteluun, käyttöönottoon, valvontaan ja vian määritykseen.
 author: mgblythe
 ms.author: mblythe
-manager: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 03/06/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: f9269b52b1721cd7c6801cd0337911159c0b2494
-ms.sourcegitcommit: a5853ef44ed52e80eabee3757bb6887fa400b75b
+ms.openlocfilehash: 3ccd4af0f00e132c8bc0bd29a9ff23f89b13a15f
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73786334"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73880599"
 ---
 # <a name="deploying-and-managing-power-bi-premium-capacities"></a>Power BI Premium kapasiteettien käyttöönotto ja hallinta
 
-**Yhteenveto:** Power BI Premium tarjoaa yhdenmukaisemman suoritus tehon, suurten tieto määrien tuen sekä yhtenäisen itsepalvelupalvelun ja Enterprise BI-ympäristön joustavuuden kaikille organisaatiossasi. Tämä tason 300 tekninen raportti on kirjoitettu erityisesti Power BI järjestelmänvalvojille sekä sisällöntekijöille ja julkaisijoille. Sen avulla he ymmärtävät Power BI Premium mahdollisuuksia ja selittävät, miten skaalautuvat ratkaisut suunnitellaan, otetaan käyttöön, seurataan ja tehdään.
+**Yhteenveto:** Power BI Premium tarjoaa yhdenmukaisemman suoritus tehon, suurten tieto määrien tuen sekä yhtenäisen itsepalvelupalvelun ja Enterprise BI-ympäristön joustavuuden kaikille organisaatiossasi. This level 300 technical whitepaper has been written specifically for Power BI administrators, and content authors and publishers. It aims to help them understand the potential of Power BI Premium, and to explain how to design, deploy, monitor and troubleshoot scalable solutions.
 
 **Tekijä:** [Peter Myers](https://www.linkedin.com/in/peterjsmyers) (tieto ympäristön MVP ja riippumaton bi-asiantuntija, jossa on bitwise-ratkaisuja)
 
@@ -814,33 +813,33 @@ Kun kapasiteetti kokee muisti painetta, sama visualisointi näyttää selvästi 
 
 Yleensä kapasiteetin keskimääräisen suorittimen käytön on pysyttävä alle 80 prosenttia. Tämän arvon ylittäminen tarkoittaa sitä, että kapasiteetti lähestyy suorittimen kylläisyyttä.
 
-SUORITTIMEN kylläisyyden vaikutukset ilmaistaan toiminnoina, jotka vievät kauemmin kuin niiden pitäisi, koska kapasiteetti suorittaa useita suoritin kontekstin valitsimia, koska se yrittää käsitellä kaikkia toimintoja. Premium-kapasiteetissa, jossa on paljon samanaikaisia kyselyitä, tämä ilmaistaan suurilla kyselyiden odotus ajalla. Korkeiden kyselyiden odotus aikojen seura uksena reagointi on tavallista hitaampaa. Power BI järjestelmänvalvoja voi helposti tunnistaa, milloin suoritin on kyllästetty, tarkastelemalla **tuntikohtaisten kyselyiden odotus ajan** visualisointia. Kyselyiden odotus ajan jaksottaiset huiput ilmaisevat mahdollisen suorittimen kylläisyyden.
+SUORITTIMEN kylläisyyden vaikutukset ilmaistaan toiminnoina, jotka vievät kauemmin kuin niiden pitäisi, koska kapasiteetti suorittaa useita suoritin kontekstin valitsimia, koska se yrittää käsitellä kaikkia toimintoja. In a Premium capacity with a high number of concurrent queries this is indicated by high query wait times. A consequence of high query wait times is slower responsiveness than usual. The Power BI administrator can easily identify when the CPU is saturated by viewing the **Hourly Query Wait Time Distributions** visual. Periodic peaks of query wait time counts indicate potential CPU saturation.
 
 ![Kyselyjen odotusaikamäärien kausihuiput ilmaisevat mahdollisen suorittimen kylläisyyden](media/whitepaper-premium-deployment/peak-query-wait-times.png)
 
-Samanlaista kaavaa voidaan toisinaan havaita tausta toiminnoissa, jos ne vaikuttavat suorittimen kyllästymiseen. Power BI järjestelmänvalvoja voi etsiä määritetyn tieto joukon ajoittain tapahtuvaa piikkiä, mikä voi ilmaista suorittimen kylläisyyttä ajan kuluessa (johtunee siitä, että muut meneillään olevat tieto joukko päivitykset ja/tai vuorovaikutteiset kyselyt) ovat käytössä. Tässä tapa uksessa sovelluksen **järjestelmä** näkymään viittaaminen ei välttämättä välttämättä paljasta, että suoritin on 100 prosenttia. **Järjestelmä** näkymä näyttää tunti keskiarvot, mutta suoritin voi kyllästyy useita minuutteja raskaita toimintoja, jotka näkyvät piikkarit odotus aikoina.
+A similar pattern can sometimes be detected in background operations if they contribute to CPU saturation. A Power BI administrator can look for a periodic spike in refresh times for a specific dataset, which can indicate CPU saturation at the time (probably due to other ongoing dataset refreshes and/or interactive queries). In this instance, referring to the **System** view in the app may not necessarily reveal that the CPU is at 100%. The **System** view displays hourly averages, but the CPU can become saturated for several minutes of heavy operations, which shows up as spikes in wait times.
 
-SUORITTIMEN kyllästymisen vaikutuksen näkemiseen on enemmän vivahteita. Kun odotettavien kyselyiden määrä on tärkeä, kyselyn odotus aika tapahtuu aina jossain määrin aiheuttamatta havaittavaa suoritus kyky heikkenee. Jotkin tieto joukot (joiden keskimääräinen kysely aika on pidempi, mikä osoittaa monimutkaisuutta tai kokoa) ovat alttiimpia suorittimen kyllästymisen vaikutuksille kuin toisissa. Jos haluat tunnistaa nämä tieto joukot helposti, Power BI järjestelmänvalvoja voi etsiä muutoksia palkkien väri koosteessa **tunnin odotus ajan jakauman** visualisoinnissa. Kun olet saanut Outlier-palkin, he voivat etsiä tieto joukkoja, joilla oli kysely odotus aikaa tuona aikana, ja tarkastella myös keskimääräisen kyselyn odotus aikaa verrattuna keskimääräiseen kyselyn kestoon. Kun nämä kaksi mittaus arvoa ovat yhtä laajoja ja tieto joukon kysely työmäärä on muu kuin triviaali, on todennäköistä, että tieto joukkoon vaikuttaa riittämätön suoritin.
+There are more nuances to seeing the effect of CPU saturation. While the number of queries that wait is important, query wait time will always happen to some extent without causing discernable performance degradation. Some datasets (with lengthier average query time, indicating complexity or size) are more prone to the effects of CPU saturation than others. To easily identify these datasets, the Power BI administrator can look for changes in the color composition of the bars in the **Hourly Wait Time Distribution** visual. After spotting an outlier bar, they can look for the datasets that had query waits during that time and also look at the average query wait time compared to average query duration. When these two metrics are of the same magnitude and the query workload for the dataset is non-trivial, it is likely that the dataset is impacted by insufficient CPU.
 
-Tämä vaikutus voi olla erityisen ilmeinen, kun useita käyttäjiä käyttää lyhyinä toistuvissa kyselyissä (esimerkiksi koulutus istunnossa) tieto joukkoa, mikä aiheuttaa suoritin kylläisyyttä kunkin purskeen aikana. Tässä tapa uksessa merkittävät kyselyn odotus ajat tässä tieto joukossa voivat olla kokeneita ja vaikuttaa myös muihin kapasiteetin tieto joukkoihin (äänekäs naapurin vaikutus).
+This effect can be especially apparent when a dataset is consumed in short bursts of high frequency queries by multiple users (i.e. in a training session), resulting in CPU saturation during each burst. In this case, significant query wait times on this dataset can be experienced as well as impacting on other datasets in the capacity (noisy neighbor effect).
 
-Joissakin tapa uksissa Power BI järjestelmänvalvojat voivat pyytää, että tieto joukon omistajat luovat vähemmän pysyvän kyselyn kuormituksen luomalla koonti näytön (joka tekee kyselyitä tietyin väli muistissa olevien taulu koita sisältävien tieto joukkojen päivityksillä) raportin sijaan. Tämä voi auttaa estämään piikkejä, kun koonti näyttö on ladattu. Tämä ratkaisu ei ehkä aina ole mahdollinen annetulle liiketoiminta vaatimudelle, mutta se voi olla tehokas tapa välttää suorittimen kylläisyyttä muuttamatta tieto joukkoa.
+In some cases, Power BI administrators can request that dataset owners create a less volatile query workload by creating a dashboard (which queries periodically with any dataset refresh for cached tiles) instead of a report. This can help prevent spikes when the dashboard is loaded. This solution may not always be possible for given business requirements, however it can be an effective way to avoid CPU saturation, without making changing to the dataset.
 
 ## <a name="conclusion"></a>Päätelmät
 
-Power BI Premium tarjoaa yhdenmukaisemman suoritus tehon, suurten tieto määrien tuen sekä yhtenäisen itsepalvelupalvelun ja Enterprise BI-ympäristön joustavuuden kaikille organisaatiossasi. Tämä tason 300 tekninen raportti on kirjoitettu erityisesti Power BI järjestelmänvalvojille sekä sisällöntekijöille ja julkaisijoille. Sen avulla he ymmärtävät Power BI Premium mahdollisuuksia ja selittävät, miten skaalautuvat ratkaisut suunnitellaan, otetaan käyttöön, seurataan ja tehdään.
+Power BI Premium provides more consistent performance, support for large data volumes, and the flexibility of a unified self-service and enterprise BI platform for everyone in your organization. This level 300 technical whitepaper has been written specifically for Power BI administrators, and content authors and publishers. It aims to help them understand the potential of Power BI Premium, and to explain how to design, deploy, monitor and troubleshoot scalable solutions.
 
-Jos haluat ottaa käyttöön ja hallita Power BI Premium kapasiteetteja, järjestelmänvalvojat ja mallin kehittäjät tarvitsevat erittäin hyvän käsityksen kapasiteettien toiminnasta, niiden Hallin nasta ja seuran nasta sekä siitä, miten malleja voi optimoida, jotta ne voivat reagoida asianmukaisesti suoritus kykyyn liittyvät ongelmat ja pullon kaulat niiden ilmetessä.
+To deploy and manage Power BI Premium capacities, administrators and model developers will require a very good understanding of how capacities function, how they can be managed and monitored, and how models can be optimized, in order to appropriately respond to performance issues and bottlenecks should they arise.
 
-## <a name="end-notes"></a>Lopeta muistiinpanot
+## <a name="end-notes"></a>End notes
 
-<a name="endnote-01"></a>\[1\] tässä teknisessä asia kirjassa käsitellään Power BI Premium, jota vain Power BI-pilvi palvelu tukee, joten Power BI-raporttipalvelin ei ole laajessa tilassa, lukuun ottamatta sitä, että Power BI-raporttipalvelin asentamisen vaatima käyttö oikeus sisältyy Jotkin Power BI Premium SKU.
+<a name="endnote-01"></a>\[1\] This technical paper is concerned with Power BI Premium which is only supported by the Power BI cloud service, and so Power BI Report Server is not in scope, except to state that the license required to install Power BI Report Server is included with some Power BI Premium SKUs.
 
-<a name="endnote-02"></a>\[2\] Power BI pilvi palveluna, kun sitä käytetään sisällön upottamiseen sovelluksen käyttäjien puolesta, on Platform-as-a-Service (PaaS). Tämän tyyppisen upottamisen voi saavuttaa erilaisilla kahdella tuotteella, joista yksi on Power BI Premium.
+<a name="endnote-02"></a>\[2\] Power BI as a cloud service when used to embed content on behalf of application users is Platform-as-a-Service (PaaS). This type of embedding can be achieved with different two products, one of which is Power BI Premium.
 
-<a name="endnote-03"></a>\[3\] työntö-, virtaus-ja hybridi tieto joukkoja ei tallenneta Premium-kapasiteetteihin, joten ne eivät ole vastike Premium-kapasiteettien käyttöönotosta, Hallin nasta ja valvonnasta.
+<a name="endnote-03"></a>\[3\] Push, streaming and hybrid datasets are not stored in Premium capacities, and are therefore not a consideration when deploying, managing and monitoring Premium capacities.
 
-<a name="endnote-04"></a>\[4\] Excel-työkirjoja Power BI sisältö tyyppinä ei tallenneta Premium-kapasiteetteihin, joten ne eivät ole vastike Premium-kapasiteettien käyttöönotosta, Hallin nasta tai valvonnasta.
+<a name="endnote-04"></a>\[4\] Excel workbooks as a Power BI content type are not stored in Premium capacities, and are therefore not a consideration when deploying, managing or monitoring Premium capacities.
 
 <a name="endnote-05"></a>\[5\] visualisoinnit voidaan määrittää ohittamaan osittajan väliset suhteet. Jos haluat lisä tietoja, katso [Power BI raportti asiakirjan visualisointi](service-reports-visual-interactions.md) toiminnot.
 
