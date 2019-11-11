@@ -113,6 +113,8 @@
           href: visuals/power-bi-visualization-customize-title-background-and-legend.md
         - name: 'Power BI:n Näytä kohteet, joilla ei ole tietoja -ominaisuus'
           href: desktop-show-items-no-data.md
+        - name: Automaattinen päivämäärä/aika Power BI Desktopissa
+          href: desktop-auto-date-time.md
         - name: Tietoihin yhdistäminen
           items:
             - name: Power BI Desktopin tietolähteet
