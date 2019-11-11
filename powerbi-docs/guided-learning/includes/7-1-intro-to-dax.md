@@ -1,17 +1,17 @@
 ---
-ms.openlocfilehash: 6366dbe4d7c58b49b4085d80aa690fd6c64fee59
-ms.sourcegitcommit: 226b47f64e6749061cd54bf8d4436f7deaed7691
+ms.openlocfilehash: 3966521d158c244487638be4117f98ea570e1f28
+ms.sourcegitcommit: a5853ef44ed52e80eabee3757bb6887fa400b75b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/09/2019
-ms.locfileid: "70847677"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73799806"
 ---
 Tervetuloa Power BI:n **ohjatun oppimisen** osioon, jossa kerromme sinulle perusasioita **DAX:stä**.
 
 **DAX** on lyhenne sanoista **Data Analysis Expressions**. Se on kaavakieli, jota käytetään Power BI:ssä (Power BI käyttää sitä myös taustalla). DAX on käytössä myös muissa Microsoftin palveluissa (esimerkiksi Power Pivotissa ja SSAS:n taulukkomuodossa), mutta näissä ohjatun oppimisen ohjeartikkeleissa keskitytään siihen, miten DAX:ää käytetään ja miten voit itse käyttää sitä Power BI:ssä.
 
 ## <a name="dax-and-this-guided-learning-video-series"></a>DAX ja tämä ohjatun oppimisen videosarja
-Tämän **ohjatun oppimisen** osion tarkoitus on opettaa sinulle DAX:n perusasiat. Käsittelemme esimerkiksi sitä, miten DAX:ään kannattaa suhtautua ja miten se toimii. Lisäksi saat lisätietoja sen hyödyllisimmistä toiminnoista tunnetulta DAX-asiantuntijalta [Alberto Ferrarilta](http://www.sqlbi.com/learning-dax) (jolla on runsaasti käytännön kokemusta niistä).
+Tämän **ohjatun oppimisen** osion tarkoitus on opettaa sinulle DAX:n perusasiat. Käsittelemme esimerkiksi sitä, miten DAX:ään kannattaa suhtautua ja miten se toimii. Lisäksi saat lisätietoja sen hyödyllisimmistä toiminnoista tunnetulta DAX-asiantuntijalta [Alberto Ferrarilta](https://www.sqlbi.com/learning-dax) (jolla on runsaasti käytännön kokemusta niistä).
 
 ![Alberto Ferrarin kuva](media/7-1-intro-to-dax/intro_dax_6_alberto_ferrari.png)
 
@@ -30,7 +30,7 @@ DAX käyttää operaattoreiden ylikuormitusta, minkä ansiosta voit yhdistellä 
 
 Power BI:ssä on yksi tietotyyppi, jota luultavasti käytät paljon: **Päivämäärä/aika**. **DateTime** tallennetaan liukulukuarvona sekä kokonaisluku- että desimaaliosien kanssa. DateTime-tietotyypin avulla voi laskea tarkasti mitä tahansa ajanjaksoja 1.3.1900 jälkeen.
 
-> Videon sisällön on luonut [Alberto Ferrari, SQLBI](http://www.sqlbi.com/learning-dax/?utm_source=powerbi&utm_medium=marketing&utm_campaign=after-summit).
+> Videon sisällön on luonut [Alberto Ferrari, SQLBI](https://www.sqlbi.com/learning-dax/?utm_source=powerbi&utm_medium=marketing&utm_campaign=after-summit).
 > 
 > 
 

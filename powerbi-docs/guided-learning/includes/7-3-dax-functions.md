@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 06ee6ad7ade46d811c6340d905150c6dd3810c55
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: c3b1b7288d0d277fc866ea47887335d10279c6cc
+ms.sourcegitcommit: a5853ef44ed52e80eabee3757bb6887fa400b75b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61273386"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73799807"
 ---
 DAX sisältää runsaan joukon funktioita, joilla voit jäsentää, muotoilla ja analysoida tietojasi. Nämä funktiot voidaan jakaa muutamaan luokkaan:
 
@@ -97,7 +97,7 @@ DAX sisältää seuraavat **päivämääräfunktiot**:
 
 Näillä funktioilla voit laskea ja hakea tietoja *päivämääräarvoista*, mutta ne eivät koske aikatieto, joissa käytetään päivämäärätaulukkoa.
 
-> Videon sisällön on luonut [Alberto Ferrari, SQLBI](http://www.sqlbi.com/learning-dax).
+> Videon sisällön on luonut [Alberto Ferrari, SQLBI](https://www.sqlbi.com/learning-dax).
 > 
 > 
 

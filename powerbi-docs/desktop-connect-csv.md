@@ -2,7 +2,6 @@
 title: CSV-tiedostoihin yhdistäminen Power BI Desktopissa
 description: CSV-tiedostoon yhdistäminen ja tietojen käyttäminen helposti Power BI Desktopissa
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.custom: seodec18
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/29/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 8eecbfdaa948163ab6d0623a70f237d479fcdb88
-ms.sourcegitcommit: a00fe5fb545c3df13b7cd13a701fd6a2b2521a17
+ms.openlocfilehash: c5d817af65529506a0ee515be5e287a629d6ad54
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/31/2019
-ms.locfileid: "70200937"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73878561"
 ---
 # <a name="connect-to-csv-files-in-power-bi-desktop"></a>CSV-tiedostoihin yhdistäminen Power BI Desktopissa
 Yhteyden muodostaminen pilkuin erotettujen arvojen (*CSV*) tiedostoon Power BI Desktopissa tapahtuu pitkälti samoin kuin yhteyden muodostaminen Excel-työkirjaan. Kumpikin on helppoa. Tässä artikkelissa kerrotaan vaiheittain, miten voit muodostaa yhteyden mihin tahansa CSV-tiedostoon, johon sinulla on käyttöoikeus.

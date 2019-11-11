@@ -9,12 +9,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 06/03/2019
 ms.author: michalfo
-ms.openlocfilehash: 3f1e02c880d737998afd7c84c4259e4de8582da9
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: befe57bd0c3441a44f4db745e3af73bd9afed933
+ms.sourcegitcommit: a5853ef44ed52e80eabee3757bb6887fa400b75b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "70391512"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73783553"
 ---
 # <a name="using-siri-shortcuts-in-power-bi-mobile-ios-app-preview"></a>Sirin-pikakuvakkeiden käyttö Power BI:n iOS-mobiilisovelluksessa (esikatselu)
 
@@ -66,7 +66,7 @@ Jos haluat poistaa pikakuvakkeen, siirry kyseiseen kohteeseen ja napauta toimint
 ## <a name="next-steps"></a>Seuraavat vaiheet
 Saat lisätietoja Power BI -mobiilisovelluksesta seuraavasti: 
 
-* Lataa [Power BI:n iPhone-mobiilisovellus](http://go.microsoft.com/fwlink/?LinkId=522062)
+* Lataa [Power BI:n iPhone-mobiilisovellus](https://go.microsoft.com/fwlink/?LinkId=522062)
 * Seuraa [@MSPowerBI Twitterissä](https://twitter.com/MSPowerBI)
-* Liity keskusteluun [Power BI -yhteisössä](http://community.powerbi.com/)
+* Liity keskusteluun [Power BI -yhteisössä](https://community.powerbi.com/)
 

@@ -2,7 +2,6 @@
 title: Dynaamisten viiteviivojen luominen visualisointeihin
 description: Dynaamisten viiteviivojen luominen visualisointeihin Power BI -palvelussa
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 11/14/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: ce99539e1804746970eae20dc9396f0f0536afea
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: ab8fb8daa46a21676925de16a068f2d2029954d2
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61184029"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73855926"
 ---
 # <a name="create-dynamic-reference-lines-for-visuals-in-the-power-bi-service"></a>Dynaamisten viiteviivojen luominen visualisointeihin Power BI -palvelussa
 
@@ -100,5 +99,5 @@ Lopuksi tulee huomioida, että **Analytiikka**-ruudusta valittavia dynaamisia vi
 ## <a name="next-steps"></a>Seuraavat vaiheet
 [Analytiikkaruutu Power BI Desktopissa](desktop-analytics-pane.md)
 
-Onko sinulla muuta kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
+Onko sinulla muuta kysyttävää? [Kokeile Power BI -yhteisöä](https://community.powerbi.com/)
 

@@ -2,7 +2,6 @@
 title: Koontinäytön optimointi matkapuhelimille – Power BI
 description: Lue, miten Power BI -palvelussa luodaan erityisesti matkapuhelimille tarkoitettu mukautettu koontinäyttö.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 04/18/2019
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: f2b8c2c4be343dc135fe1b133bfcb956c1549de4
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 75152d546bc2dc622210d5b9e5933ee44fbdc0b7
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61158201"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73872846"
 ---
 # <a name="optimize-a-dashboard-for-mobile-phones---power-bi"></a>Koontinäytön optimointi matkapuhelimille – Power BI 
 Kun tarkastelet koontinäyttöjä pystytilassa puhelimessa, voit huomata, että koontinäytön ruudut ovat saman kokoisia ja aseteltu yksi toisensa jälkeen. Power BI -palvelussa voit luoda ennen kaikkea puhelimen pystytilalle tarkoitetun mukautetun näkymän koontinäytöstä. Myös luodessasi puhelinnäkymän, kun käännät puhelimen sivuttain, näet koontinäytön palvelussa näkyvällä tavalla.
@@ -59,5 +58,5 @@ Etsitkö tietoja koontinäyttöjen tarkastelemisesta mobiililaitteessa? Kokeile 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 * [Power BI -puhelinsovelluksille optimoitujen raporttien luominen](desktop-create-phone-report.md)
 * [Mihin tahansa kokoon optimaalisten reagoivien visualisointien luominen](visuals/desktop-create-responsive-visuals.md)
-* Onko sinulla muuta kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)
+* Onko sinulla muuta kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
 

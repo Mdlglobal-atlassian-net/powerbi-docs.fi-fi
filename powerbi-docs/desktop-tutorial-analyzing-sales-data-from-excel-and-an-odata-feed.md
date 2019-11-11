@@ -2,7 +2,6 @@
 title: 'Opetusohjelma: Excelin ja OData-syötteen tietojen yhdistäminen Power BI Desktopissa'
 description: 'Opetusohjelma: Excelin ja OData-syötteen tietojen yhdistäminen'
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: tutorial
 ms.date: 05/31/2019
 ms.author: davidi
 LocalizationGroup: Learn more
-ms.openlocfilehash: f18dae9ecd0eff0b7f62a3152fc59c81f1292ba4
-ms.sourcegitcommit: c0f4d00d483121556a1646b413bab75b9f309ae9
+ms.openlocfilehash: 8d1b253d5e84bb15dea4612978ee970faccb7a1a
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/29/2019
-ms.locfileid: "70160397"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73866079"
 ---
 # <a name="tutorial-combine-sales-data-from-excel-and-an-odata-feed"></a>Opetusohjelma: Excelin ja OData-syötteen myyntitietojen yhdistäminen
 
@@ -35,7 +34,7 @@ Tuot kunkin tietojoukon ja teet niille muuntamis- ja koostamistoimintoja. Sen j�
 
 Tuo ensin tuotetiedot Excelin Products.xlsx-työkirjasta Power BI Desktopiin.
 
-1. [Lataa Products.xlsx-niminen Excel-työkirja](http://download.microsoft.com/download/1/4/E/14EDED28-6C58-4055-A65C-23B4DA81C4DE/Products.xlsx) ja tallenna se nimellä **Products.xlsx**.
+1. [Lataa Products.xlsx-niminen Excel-työkirja](https://download.microsoft.com/download/1/4/E/14EDED28-6C58-4055-A65C-23B4DA81C4DE/Products.xlsx) ja tallenna se nimellä **Products.xlsx**.
    
 2. Valitse avattavan valikon nuoli kohdassa **Nouda tiedot** **Aloitus**-välilehdellä ja valitse sitten **Excel**-vaihtoehto avattavasta **Yleisin**-valikosta. 
    
@@ -76,7 +75,7 @@ Tuo seuraavaksi tilaustiedot järjestelmästä mallin Northwind-myyntijärjestel
    
    ![Hanki OData](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/get_odata.png)
    
-2. Liitä **OData-syöte**-valintaikkunassa Northwind OData -syötteen URL-osoite, `http://services.odata.org/V3/Northwind/Northwind.svc/`. Valitse **OK**.
+2. Liitä **OData-syöte**-valintaikkunassa Northwind OData -syötteen URL-osoite, `https://services.odata.org/V3/Northwind/Northwind.svc/`. Valitse **OK**.
    
    ![OData-syötteen valintaikkuna](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/get_odata2.png)
    
@@ -271,7 +270,7 @@ Valitse **Quantity by ProductName**-kaaviosta tuote, niin kartan ja päivämää
 Valmis raportti yhdistää tiedot Excelin Products.xlsx-tiedostosta ja Northwind OData -syötteestä visualisointeihin, jotka auttavat analysoimaan eri maiden, aikavälien ja tuotteiden tilaustietoja. Kun raportti on valmis, voit [ladata sen Power BI -palveluun](desktop-upload-desktop-files.md) ja jakaa sen muiden Power BI -käyttäjien kanssa.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
-* [Lue muita Power BI Desktop -opetusohjelmia](http://go.microsoft.com/fwlink/?LinkID=521937)
-* [Katso Power BI Desktop -videoita](http://go.microsoft.com/fwlink/?LinkID=519322)
-* [Käy Power BI -keskustelupalstalla](http://go.microsoft.com/fwlink/?LinkID=519326)
-* [Lue Power BI -blogia](http://go.microsoft.com/fwlink/?LinkID=519327)
+* [Lue muita Power BI Desktop -opetusohjelmia](https://go.microsoft.com/fwlink/?LinkID=521937)
+* [Katso Power BI Desktop -videoita](https://go.microsoft.com/fwlink/?LinkID=519322)
+* [Käy Power BI -keskustelupalstalla](https://go.microsoft.com/fwlink/?LinkID=519326)
+* [Lue Power BI -blogia](https://go.microsoft.com/fwlink/?LinkID=519327)

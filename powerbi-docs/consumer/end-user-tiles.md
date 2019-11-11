@@ -2,7 +2,6 @@
 title: Koontinäyttöruudut Power BI -palvelussa kuluttajille
 description: Kaikki koontinäyttöruuduista Power BI:ssä kuluttajille. Tämä sisältää ruudut, jotka on luotu SQL Server Reporting Servicesistä (SSRS).
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/18/2019
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: ffacc95feef1557d5e6aaec2cca72821127d27d6
-ms.sourcegitcommit: 26123c6bb24c8174beb390f4e06fb938d31238ea
+ms.openlocfilehash: 92c473b5df6c21509ba32e41d88dd43c265fa3a0
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72716638"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73861426"
 ---
 # <a name="dashboard-tiles-in-power-bi"></a>Koontinäyttöruudut Power BI:ssä
 

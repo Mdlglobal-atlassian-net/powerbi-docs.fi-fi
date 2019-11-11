@@ -3,18 +3,17 @@ title: Laitteisto- ja ohjelmistovaatimukset Power BI-raporttipalvelimen asentami
 description: Tässä artikkelissa määritetään laitteiston ja ohjelmiston vähimmäisvaatimukset Power BI -raporttipalvelimen asentamista ja käyttämistä varten.
 author: maggiesMSFT
 ms.author: maggies
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 07/23/2019
-ms.openlocfilehash: fea28cd1c6541ae9255acd4be14cc85c2c2c5bed
-ms.sourcegitcommit: 473d031c2ca1da8935f957d9faea642e3aef9839
+ms.openlocfilehash: aeb47f7f2a6e2de7c8c5095561819367ab16a7e9
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68415360"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73873930"
 ---
 # <a name="hardware-and-software-requirements-for-installing-power-bi-report-server"></a>Laitteisto- ja ohjelmistovaatimukset Power BI-raporttipalvelimen asentamista varten
 
@@ -24,7 +23,7 @@ Tässä artikkelissa määritetään laitteiston ja ohjelmiston vähimmäisvaati
 
 | Komponentti | Vaatimus |
 | --- | --- |
-| .NET Framework |4.6<br><br>Voit asentaa .NET Frameworkin manuaalisesti kohdasta [Microsoft .NET Framework 4.6 (Web Installer) for Windows](http://support.microsoft.com/kb/3045560).<br/><br/> Lisätietoja, suosituksia ja ohjeita .NET Framework 4.6:lle saa kohdasta [.NET Framework-käyttöönotto-opas kehittäjille](http://msdn.microsoft.com/library/ee942965\(v=vs.110\).aspx).<br/><br/>Windows 8.1 ja Windows Server 2012 R2 edellyttävät [KB2919355:n](http://support.microsoft.com/kb/2919355) asentamista ennen kuin asennat .NET Framework 4.6:n. |
+| .NET Framework |4.6<br><br>Voit asentaa .NET Frameworkin manuaalisesti kohdasta [Microsoft .NET Framework 4.6 (Web Installer) for Windows](https://support.microsoft.com/kb/3045560).<br/><br/> Lisätietoja, suosituksia ja ohjeita .NET Framework 4.6:lle saa kohdasta [.NET Framework-käyttöönotto-opas kehittäjille](https://msdn.microsoft.com/library/ee942965\(v=vs.110\).aspx).<br/><br/>Windows 8.1 ja Windows Server 2012 R2 edellyttävät [KB2919355:n](https://support.microsoft.com/kb/2919355) asentamista ennen kuin asennat .NET Framework 4.6:n. |
 | Kiintolevy |Power BI -raporttipalvelin edellyttää vähintään 1 Gt käytettävissä olevaa kiintolevytilaa.<br><br>Lisätilaa tarvitaan tietokantapalvelimessa, joka isännöi raporttipalvelimen tietokantaa. |
 | Muisti |**Vähintään:** 1 GT<br/><br/> **Suositus:** Vähintään 4 Gt |
 | Suorittimen nopeus |**Vähintään:** x64-suoritin: 1,4 GHz<br/><br/> **Suositus:** 2,0 GHz tai nopeampi |
@@ -77,6 +76,6 @@ Voit käyttää reaaliaikaista yhteyttä taulukkomuotoisiin tai moniulotteisiin 
 [Järjestelmänvalvojan yleiskatsaus](admin-handbook-overview.md)  
 [Power BI -raporttipalvelimen asentaminen](install-report-server.md)  
 [Raportin muodostimen lataaminen](https://www.microsoft.com/download/details.aspx?id=53613)  
-[SQL Server Data Tools (SSDT) -työkalujen lataaminen](http://go.microsoft.com/fwlink/?LinkID=616714)
+[SQL Server Data Tools (SSDT) -työkalujen lataaminen](https://go.microsoft.com/fwlink/?LinkID=616714)
 
 Onko sinulla muuta kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)

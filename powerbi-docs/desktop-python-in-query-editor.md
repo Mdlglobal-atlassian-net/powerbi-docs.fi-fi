@@ -2,7 +2,6 @@
 title: Pythonin käyttö Power BI:n kyselyeditorissa
 description: Käytä Pythonia Power BI Desktopin kyselyeditorissa kehittyneeseen analyysiin
 author: otarb
-manager: rajatt
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 06/18/2018
 ms.author: otarb
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 28463c065c965b90beb32feabcd5de029311c612
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 371779df3aaf7cf08d96f61f49039a6383eeda9c
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61286543"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73878035"
 ---
 # <a name="using-python-in-query-editor"></a>Pythonin käyttö kyselyeditorissa
 Voit käyttää tilastoijien, tiedemiesten ja tietoanalysoijien käyttämää **Python**-ohjelmointikieltä Power BI Desktopin **kyselyeditorissa**. Tämän Pythonin **kyselyeditoriin** integroinnin avulla voit suorittaa tietojen puhdistamisen Pythonilla ja suorittaa kehittynyttä tietojen muotoilemista ja analyysia tietojoukoissa, kuten puuttuvien tietojen täydentämistä, ennusteita ja klusterointia. **Python** on tehokas kieli, ja sitä voidaan käyttää **kyselyeditorissa** valmistelemaan tietomallisi ja raporttien luomiseen.
@@ -24,7 +23,7 @@ Voit käyttää tilastoijien, tiedemiesten ja tietoanalysoijien käyttämää **
 Jos haluat käyttää **Pythonia** Power BI Desktopin **kyselyeditorissa**, sinun on asennettava **Python** paikallisessa tietokoneessa. Voit ladata ja asentaa **Pythonin** maksutta useista sijainneista, mukaan lukien [Pythonin viralliselta lataussivulta](https://www.python.org/) ja [Anacondasta](https://anaconda.org/anaconda/python/).
 
 ## <a name="using-python-in-query-editor"></a>Pythonin käyttö kyselyeditorissa
-Katso, miten **Pythonia** voi käyttää **kyselyeditorissa**, tutustumalla tähän pörssitietojoukon esimerkkiin, joka perustuu .CSV-tiedostoon, jonka voit [ladata täältä](http://download.microsoft.com/download/F/8/A/F8AA9DC9-8545-4AAE-9305-27AD1D01DC03/EuStockMarkets_NA.csv) ja jota voit seurata. Tämän esimerkin vaiheet ovat seuraavat:
+Katso, miten **Pythonia** voi käyttää **kyselyeditorissa**, tutustumalla tähän pörssitietojoukon esimerkkiin, joka perustuu .CSV-tiedostoon, jonka voit [ladata täältä](https://download.microsoft.com/download/F/8/A/F8AA9DC9-8545-4AAE-9305-27AD1D01DC03/EuStockMarkets_NA.csv) ja jota voit seurata. Tämän esimerkin vaiheet ovat seuraavat:
 
 1. Lataa ensin tiedot **Power BI Desktopiin**. Lataa tässä esimerkissä *EuStockMarkets_NA.csv*-tiedosto ja valitse **Power BI Desktopin** **Aloitus**-valintanauhasta **Nouda tiedot > CSV**.
    
@@ -77,7 +76,7 @@ Voimme nyt visualisoida, miten *pandas*-kirjastoa käyttävä Python-komentosarj
 Kun tämä visualisointi ja muut visualisoinnit, jotka haluat luoda **Power BI Desktopilla**, ovat valmiit, voit tallentaa **Power BI Desktop** -tiedoston (joka tallennetaan .pbix-tiedostona) ja käyttää sitten tietomallia ja sen osana olevia Python-komentosarjoja Power BI-palvelussa.
 
 > [!NOTE]
-> Haluatko nähdä valmiin .pbix-tiedoston, jossa nämä vaiheet on suoritettu? Voit ladata näissä esimerkeissä käytetyn valmiin **Power BI Desktop** -tiedoston [täältä](http://download.microsoft.com/download/A/B/C/ABCF5589-B88F-49D4-ADEB-4A623589FC09/Complete%20Values%20with%20Python%20in%20PQ.pbix).
+> Haluatko nähdä valmiin .pbix-tiedoston, jossa nämä vaiheet on suoritettu? Voit ladata näissä esimerkeissä käytetyn valmiin **Power BI Desktop** -tiedoston [täältä](https://download.microsoft.com/download/A/B/C/ABCF5589-B88F-49D4-ADEB-4A623589FC09/Complete%20Values%20with%20Python%20in%20PQ.pbix).
 
 Kun olet ladannut .pbix-tiedoston Power BI -palveluun, sinun on suoritettava muutama lisävaihe, jotta voit ottaa tietojen päivityksen käyttöön (palvelussa) ja sallia visualisointien päivittämisen palvelussa (tiedoilla on oltava Pythonin käyttöoikeus, jotta visualisoinnit voidaan päivittää). Lisävaiheet ovat seuraavat:
 

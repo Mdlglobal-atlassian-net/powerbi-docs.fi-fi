@@ -3,18 +3,17 @@ title: Viivakoodikentän merkitseminen mobiilisovelluksia varten Power BI Deskto
 description: Kun merkitset viivakoodikentän Power BI Desktopissa olevassa mallissa, voit suodattaa viivakoodien tiedot iPhonen Power BI -sovelluksessa automaattisesti.
 author: maggiesMSFT
 ms.author: maggies
-manager: kfile
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 01/16/2018
 LocalizationGroup: Model your data
-ms.openlocfilehash: 43d722e6667114ce5c3705270a0b55b541685108
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: d2b034d6e58f98169a5b1b260571001d5a929f28
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61293563"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73866599"
 ---
 # <a name="tag-barcodes-in-power-bi-desktop-for-the-mobile-apps"></a>Viivakoodien merkitseminen mobiilisovelluksia varten Power BI Desktopissa
 
@@ -48,5 +47,5 @@ Power BI tunnistaa seuraavat viivakoodit, jos merkitset ne Power BI -raportissa:
 * [Viivakoodin lukeminen iPhonen Power BI -sovelluksella](consumer/mobile/mobile-apps-scan-barcode-iphone.md)
 * [Viivakoodin lukuongelmat iPhonessa](consumer/mobile/mobile-apps-scan-barcode-iphone.md#issues-with-scanning-a-barcode)
 * [Tietojen luokittelu Power BI Desktopissa](desktop-data-categorization.md)  
-* Ilmenikö kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)
+* Ilmenikö kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
 

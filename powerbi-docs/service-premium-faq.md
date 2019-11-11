@@ -3,25 +3,24 @@ title: Power BI Premiumin usein kysytyt kysymykset
 description: Selaa Power BI Premium -tarjoomaa koskevien usein kysyttyjen kysymysten ja vastausten luetteloa.
 author: mgblythe
 ms.author: mblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 09/16/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: f7d23c291e77ebacd3ed19a14ed7ce2921da5673
-ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
+ms.openlocfilehash: 31335f01bd91355587634afbde9a10df5689226b
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71073320"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73881178"
 ---
 # <a name="power-bi-premium-faq"></a>Power BI Premiumin usein kysytyt kysymykset
 
 Tämä artikkeli vastaa usein kysyttyihin kysymyksiin, jotka liittyvät Power BI Premiumiin. Katso yleiskatsaus aiheesta kohdassa [Mikä on Power BI Premium?](service-premium-what-is.md).
 
-* Jos sinulla on muita kysymyksiä, [voit esittää niitä Power BI -yhteisössä](http://community.powerbi.com/).
+* Jos sinulla on muita kysymyksiä, [voit esittää niitä Power BI -yhteisössä](https://community.powerbi.com/).
 * Eikö ongelma ratkennut? Käy [Power BI -tukisivulla](https://powerbi.microsoft.com/support/).
 
 **Mikä on Power BI Premium?**  

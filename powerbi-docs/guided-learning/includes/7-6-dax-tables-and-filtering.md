@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 629c53358f757002f2b3dcda468641bbaaa2f4d4
-ms.sourcegitcommit: c0f4d00d483121556a1646b413bab75b9f309ae9
+ms.openlocfilehash: 5bc0d3bbfb2c2b67b56e6406646f6131a360b97d
+ms.sourcegitcommit: a5853ef44ed52e80eabee3757bb6887fa400b75b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/29/2019
-ms.locfileid: "70166702"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73799808"
 ---
 **DAX**- ja Excel-kaavakielien yksi merkittävimmistä eroista on se, että DAX mahdollistaa *kokonaisten taulukoiden* välittämisen lausekkeiden välillä (eli tätä ei ole rajoitettu yhteen arvoon). Tämän ansiosta DAX-lausekkeet tarjoavat mahdollisuuden suodattaa taulukoita ja käsitellä sitten suodatettuja arvojoukkoja.
 
@@ -42,7 +42,7 @@ Power BI ja DAX sisältävät esimerkiksi arvoja, joita ei ole indeksoitu kesken
 
 Voit myös luoda kokonaisia laskettuja taulukoita DAX-funktioilla. DAX:llä luodut lasketut taulukot edellyttävät **NAME**- ja **TABLE**-funktioita. Laskettuja taulukoita voi käyttää kuten kaikkia muitakin taulukoita (mukaan lukien suhteiden luominen).
 
-> Videon sisällön on luonut [Alberto Ferrari, SQLBI](http://www.sqlbi.com/learning-dax).
+> Videon sisällön on luonut [Alberto Ferrari, SQLBI](https://www.sqlbi.com/learning-dax).
 > 
 > 
 

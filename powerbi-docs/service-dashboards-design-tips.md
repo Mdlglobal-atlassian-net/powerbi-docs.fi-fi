@@ -2,7 +2,6 @@
 title: Vinkkejä laadukkaiden Power BI -koontinäyttöjen suunnitteluun
 description: Vinkkejä laadukkaiden Power BI -koontinäyttöjen suunnitteluun
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 08/14/2019
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 2083fa0d197010ca770422f11c7f1e4b83d0184b
-ms.sourcegitcommit: a77977a43342db4399a4dffb862b96907d16de35
+ms.openlocfilehash: 95170ec36c5b4da0314c858ae415c3bbcb2ab556
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/14/2019
-ms.locfileid: "69023762"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73877413"
 ---
 # <a name="tips-for-designing-a-great-power-bi-dashboard"></a>Vinkkejä laadukkaiden Power BI -koontinäyttöjen suunnitteluun
 Nyt kun olet luonut koontinäytön ja lisännyt siihen ruutuja, mieti, miten voisit parantaa sen toiminnallisuutta. Yleensä tämä tarkoittaa tärkeimpien tietojen korostamista ja koontinäytön selkeyttämistä.
@@ -24,8 +23,6 @@ Nyt kun olet luonut koontinäytön ja lisännyt siihen ruutuja, mieti, miten voi
 
 > [!TIP]
 > Pidätkö tästä koontinäytöstä? Voit ladata sen ja siihen liittyvät raportit AppSourcesta. Siirry kohtaan **Nouda tiedot** > **Palvelut**. Tee haku **Microsoft Sample – myynti ja markkinointi** > **Hanki se nyt**.
-
-Useimpia raporttien suunnittelukäytäntöjä voi soveltaa myös koontinäyttöihin. Lue lisätietoja teknisestä raportista [Raporttien ja visualisointien parhaat suunnittelukäytännöt](visuals/power-bi-visualization-best-practices.md).
 
 Seuraavassa on muutamia koontinäyttöjä koskevia vinkkejä.
 
@@ -85,4 +82,4 @@ Koontinäyttöjen rakenne liittyy läheisesti yleisiin hahmottamisen ja ryhmitte
 ## <a name="next-steps"></a>Seuraavat vaiheet
 [Koontinäytön luominen raportista](service-dashboard-create.md)  
 [Power BI -palvelun peruskäsitteitä suunnittelijoille](service-basic-concepts.md)  
-Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
+Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](https://community.powerbi.com/)

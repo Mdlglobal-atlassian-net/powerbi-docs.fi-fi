@@ -3,18 +3,17 @@ title: Power BI -raporttipalvelinten uudet ominaisuudet
 description: Lue Power BI -raporttipalvelimen uusista ominaisuuksista. Tämä koskee tärkeimpiä ominaisuuksia, ja tietoja päivitetään uusien julkaisujen myötä.
 author: maggiesMSFT
 ms.author: maggies
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 09/26/2019
-ms.openlocfilehash: 26dde078ce0b237779660c44b2843a645e4d1a47
-ms.sourcegitcommit: e2c5d4561455c3a4806ace85defbc72e4d7573b4
+ms.openlocfilehash: 526a971817c50599bf77ae085f3d5ff07294b25b
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "71325559"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73858753"
 ---
 # <a name="whats-new-in-power-bi-report-server"></a>Power BI -raporttipalvelinten uudet ominaisuudet
 

@@ -3,19 +3,18 @@ title: Multi-Geo-tuki Power BI Premiumille
 description: Ota selvää, miten voit ottaa sisällön tietokeskuksia käyttöön muilla alueilla kuin Power BI -vuokraajan kotialueella.
 author: mgblythe
 ms.author: mblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 02/05/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: f29ce1ce05db80378eee81293d92484fb4f58f45
-ms.sourcegitcommit: 805d52e57a935ac4ce9413d4bc5b31423d33c5b1
+ms.openlocfilehash: 129cef8a923b27582bd6424c8d025b93ecbe5532
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68665399"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73873456"
 ---
 # <a name="configure-multi-geo-support-for-power-bi-premium"></a>Power BI Premiumin Multi-Geo-tuen määrittäminen
 
@@ -102,4 +101,4 @@ Voit ottaa työtiloja ulos Multi-Geo-kapasiteetista jommallakummalla seuraavista
 - [Mikä on Power BI Premium?](service-premium-what-is.md)
 - [Multi-Geo Power BI Embedded -kapasiteeteille](developer/embedded-multi-geo.md)
 
-Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)
+Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)

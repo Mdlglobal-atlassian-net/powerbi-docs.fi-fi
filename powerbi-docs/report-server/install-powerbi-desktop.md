@@ -3,18 +3,17 @@ title: Asenna Power BI -raporttipalvelimelle optimoitu Power BI Desktop
 description: Opi asentamaan Power BI -raporttipalvelimelle optimoitu Power BI Desktop
 author: maggiesMSFT
 ms.author: maggies
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 10/03/2019
-ms.openlocfilehash: a97c8125af46eae193f6c592d0b3c1153ae9b50c
-ms.sourcegitcommit: 9bf3cdcf5d8b8dd12aa1339b8910fcbc40f4cbe4
+ms.openlocfilehash: 2a95f8afce2762b82e73741563a29fa22b433d36
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "71968636"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73874107"
 ---
 # <a name="install-power-bi-desktop-optimized-for-power-bi-report-server"></a>Asenna Power BI -raporttipalvelimelle optimoitu Power BI Desktop
 
@@ -55,7 +54,7 @@ Power BI -palvelun Power BI Desktop -versiossa ei ole kuukautta ja vuotta otsikk
 ## <a name="file-extension-association"></a>Tiedostotunnisteen kytkentä
 Jos asennat sekä Power BI Desktopin että Power BI -raporttipalvelimelle optimoidun Power BI Desktopin samalle koneelle, Power BI Desktopin uusimmassa asennuksessa on tiedostokytkentä .pbix-tiedostoille. Toisin sanoen kun kaksoisnapsautat .pbix-tiedostoa, se avataan viimeksi asennetussa Power BI Desktopissa.
 
-Jos sinulla on Power BI Desktop ja asennat sitten Power BI -raporttipalvelimelle optimoidun Power BI Desktopin, kaikki .pbix-tiedostot avataan oletuksena Power BI -raporttipalvelimelle optimoidussa Power BI Desktopissa. Jos haluat, että .pbix-tiedostot avataan oletusarvoisesti Power BI Desktopissa, asenna [Power BI Desktop uudelleen Microsoft Storesta](http://aka.ms/pbidesktopstore).
+Jos sinulla on Power BI Desktop ja asennat sitten Power BI -raporttipalvelimelle optimoidun Power BI Desktopin, kaikki .pbix-tiedostot avataan oletuksena Power BI -raporttipalvelimelle optimoidussa Power BI Desktopissa. Jos haluat, että .pbix-tiedostot avataan oletusarvoisesti Power BI Desktopissa, asenna [Power BI Desktop uudelleen Microsoft Storesta](https://aka.ms/pbidesktopstore).
 
 Voit myös aina ensin avata sen Power BI Desktopin version, jota haluat käyttää. Ja avata sitten tiedoston Power BI Desktopista.
 
@@ -63,7 +62,7 @@ Power BI -raportin muokkaaminen Power BI -raporttipalvelimesta tai uuden Power B
 
 ## <a name="considerations-and-limitations"></a>Huomioitavat asiat ja rajoitukset
 
-Power BI -raporttipalvelimen Power BI -raportit Power BI -palvelussa (http://app.powerbi.com), ja Power BI -mobiilisovelluksissa toimivat lähes täsmälleen samoin, mutta jotkut ominaisuudet ovat erilaisia.
+Power BI -raporttipalvelimen Power BI -raportit Power BI -palvelussa (https://app.powerbi.com), ja Power BI -mobiilisovelluksissa toimivat lähes täsmälleen samoin, mutta jotkut ominaisuudet ovat erilaisia.
 
 ### <a name="selecting-a-language"></a>Kielen valitseminen
 

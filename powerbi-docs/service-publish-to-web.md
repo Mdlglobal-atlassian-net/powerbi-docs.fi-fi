@@ -3,19 +3,18 @@ title: Power BI:n Julkaise verkkoon -toiminto
 description: Voit Power BI:n Julkaise verkkoon -toiminnon avulla helposti upottaa verkossa interaktiivisia Power BI -visualisointeja, kuten blogiposteja ja verkkosivustoja, sähköpostiviestien tai sosiaalisen median kautta kaikilla laitteilla.
 author: rkarlin
 ms.author: rkarlin
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 05/16/2019
 LocalizationGroup: Share your work
-ms.openlocfilehash: 9824b3340da694c00784f34b0c6245cafbf69383
-ms.sourcegitcommit: d02de4ca33d865aee3e3e764b98f221950cb0a10
+ms.openlocfilehash: 9f8da4a5f37eb1e652dd2125dd588febf49fb01b
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "72239913"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73871838"
 ---
 # <a name="publish-to-web-from-power-bi"></a>Power BI:n Julkaise verkkoon -toiminto
 
@@ -186,4 +185,4 @@ Välimuisti on pitkäkestoinen, joten jos päivität raportin määritelmää (e
 
 - [Raportin upottaminen turvalliseen portaaliin tai sivustoon](service-embed-secure.md)
 
-Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
+Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](https://community.powerbi.com/)

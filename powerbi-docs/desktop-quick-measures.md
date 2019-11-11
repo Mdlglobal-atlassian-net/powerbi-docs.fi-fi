@@ -2,7 +2,6 @@
 title: Pikamittareiden avulla voit suorittaa yleisiä ja tehokkaita laskutoimituksia
 description: Pikamittarit tarjoavat valmiita DAX-kaavoja, joilla yleiset laskutoimitukset onnistuvat nopeasti
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.custom: seodec18
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 4c37f3bb8f84c6ab40dceb3327f2b244559e9170
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 755ef6ab515244a2b7613ee7007caf3c3e6d1ed8
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65513977"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73877951"
 ---
 # <a name="use-quick-measures-to-easily-perform-common-and-powerful-calculations"></a>Pikamittareiden avulla voit suorittaa helposti yleisiä ja tehokkaita laskutoimituksia
 **Pikamittareiden** avulla voit suorittaa helposti sekä nopeasti yleisiä ja tehokkaita laskutoimituksia. **Pikamittari** suorittaa joukon DAX-komentoja taustalla (sinun ei tarvitse kirjoittaa DAX-kaavaa, se tehdään puolestasi) sen perusteella, mitä tietoja annat valintaikkunassa, ja näyttää sitten tulokset, joita voit käyttää raportissa. Parasta on se, että näet pikamittarin suorittaman DAX-kaavan, minkä ansiosta voit laajentaa ja parantaa omaa DAX-osaamistasi.

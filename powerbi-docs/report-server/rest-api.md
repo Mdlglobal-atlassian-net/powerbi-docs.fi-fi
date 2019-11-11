@@ -3,18 +3,17 @@ title: Power BI -raporttipalvelimen REST-ohjelmointirajapintojen käyttö ohjelm
 description: REST-ohjelmointirajapinta tarjoaa ohjelmallinen pääsyn Power BI -raporttipalvelimen hakemiston objekteihin.
 author: maggiesMSFT
 ms.author: maggies
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 05/25/2018
-ms.openlocfilehash: 8f35b7a3c19751b4537a49fa8cb30f4347f080ed
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 9b8e795c4a55f9efd6fd534d92d95b36c93cf2c0
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "64770753"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73874066"
 ---
 # <a name="develop-with-the-rest-apis-for-power-bi-report-server"></a>Power BI -raporttipalvelimen REST-ohjelmointirajapintojen käyttö ohjelmankehityksessä
 
@@ -41,7 +40,7 @@ REST-ohjelmointirajapinnan pyyntö/vastaus-pari voidaan jakaa viiteen osaan:
 * Valinnaiset HTTP-**pyyntöviestin tekstikentät**, jotka tukevat URI- ja HTTP-toimintoja. Esimerkiksi POST-toiminnot sisältävät MIME-koodattuja objekteja, jotka monimutkaisina parametreina ohitetaan. POST- tai PUT-toiminnoissa tulee tekstiosan MIME-koodaustyyppi määritellä myös `Content-type`pyyntöotsikossa. Jotkin palvelut edellyttävät, että käytät tiettyä MIME-tyyppiä, kuten `application/json`.
 * HTTP- **-vastausviestiotsikon** kentät:
   
-  * [HTTP-tilakoodi](http://www.w3.org/Protocols/HTTP/HTRESP.html), joka voi olla aina 2xx-onnistumiskoodeista 4xx- tai 5xx-virhekoodeihin. Vaihtoehtoisesti saatetaan palauttaa palvelun määrittämä tilakoodi, kuten esitetty rajapinnan dokumentaatiossa.
+  * [HTTP-tilakoodi](https://www.w3.org/Protocols/HTTP/HTRESP.html), joka voi olla aina 2xx-onnistumiskoodeista 4xx- tai 5xx-virhekoodeihin. Vaihtoehtoisesti saatetaan palauttaa palvelun määrittämä tilakoodi, kuten esitetty rajapinnan dokumentaatiossa.
   * Valinnaisia muita otsikkokenttiä sen mukaan, mitä tarvitaan tukemaan pyynnön vastausta, kuten `Content-type`vastausotsikko.
 * Valinnainen HTTP**vastausviestin tekstiosan** kentät:
   
@@ -53,7 +52,7 @@ Nykyaikainen REST-rajapinta vaatii nykyaikaisen rajapintadokumentaation. REST-ra
 
 ## <a name="testing-api-calls"></a>API-kutsujen testaaminen
 
-[Fiddler](http://www.telerik.com/fiddler) on työkalu, jolla voidaan testata HTTP-pyyntö/vastausviestejä. Fiddler on maksuton virheenkorjausvälityspalvelin verkossa, joka voi siepata REST-pyynnöt, mikä tekee HTTP-pyyntö/vastausviestien vianmäärityksestä helppoa.
+[Fiddler](https://www.telerik.com/fiddler) on työkalu, jolla voidaan testata HTTP-pyyntö/vastausviestejä. Fiddler on maksuton virheenkorjausvälityspalvelin verkossa, joka voi siepata REST-pyynnöt, mikä tekee HTTP-pyyntö/vastausviestien vianmäärityksestä helppoa.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 

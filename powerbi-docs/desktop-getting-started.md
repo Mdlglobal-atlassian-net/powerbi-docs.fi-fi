@@ -2,7 +2,6 @@
 title: Power BI Desktopin käytön aloittaminen
 description: Power BI Desktopin käytön aloittaminen
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,17 +9,17 @@ ms.topic: conceptual
 ms.date: 08/29/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 2049d996c9f6130718e203a8f6d27a2a7fac911f
-ms.sourcegitcommit: a00fe5fb545c3df13b7cd13a701fd6a2b2521a17
+ms.openlocfilehash: e533313e20c4e1f994c2ae3d1e552170aef2cbd2
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/31/2019
-ms.locfileid: "70201019"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73868007"
 ---
 # <a name="getting-started-with-power-bi-desktop"></a>Power BI Desktopin käytön aloittaminen
 Tervetuloa **Power BI Desktopin aloitusoppaaseen**. Tässä lyhyessä esittelyssä kerrotaan, miten Power BI Desktop toimii ja mitä sillä voi tehdä, ja autetaan sinua rakentamaan tehokkaita tietomalleja ja upeita raportteja, jotka vahvistavat liiketoimintatietojasi. 
 
-Katsotko mieluummin lukemisen sijaan? Voit myös [tutustua aloitusvideoomme](desktop-videos.md). Jos haluat seurata videota vastaavilla mallitiedoilla, voit [ladata tämän Excel-mallityökirjan](http://go.microsoft.com/fwlink/?LinkID=521962).
+Katsotko mieluummin lukemisen sijaan? Voit myös [tutustua aloitusvideoomme](desktop-videos.md). Jos haluat seurata videota vastaavilla mallitiedoilla, voit [ladata tämän Excel-mallityökirjan](https://go.microsoft.com/fwlink/?LinkID=521962).
 
 ![](media/desktop-getting-started/pbi_gettingstartedsplash_resized.png)
 
@@ -88,7 +87,7 @@ Kuvittele olevasi jäämässä eläkkeelle; haluat elää paikassa, jossa paista
 
 Joka tapauksessa seuraava verkkoresurssi sisältää kiinnostavaa tietoa näistä ja muista aiheista:
 
-[*http://www.bankrate.com/finance/retirement/best-places-retire-how-state-ranks.aspx*](http://www.bankrate.com/finance/retirement/best-places-retire-how-state-ranks.aspx)
+[*https://www.bankrate.com/finance/retirement/best-places-retire-how-state-ranks.aspx*](https://www.bankrate.com/finance/retirement/best-places-retire-how-state-ranks.aspx)
 
 Valitse **Nouda tiedot \> Verkko**  ja liitä osoite.
 
@@ -158,7 +157,7 @@ Nämä tiedot eri osavaltioista ovat mielenkiintoisia. Niistä on myös hyötyä
 
 Meillä on kuitenkin onnea, sillä eräs toinen julkinen tietolähde tekee juuri tämän, mutta sen tiedot vaativat suhteellisen paljon muotoilua, ennen kuin voimme yhdistää ne tähän eläköitymistaulukkoomme. Tässä on osavaltiolyhenteiden verkkoresurssi:
 
-<http://en.wikipedia.org/wiki/List_of_U.S._state_abbreviations>
+<https://en.wikipedia.org/wiki/List_of_U.S._state_abbreviations>
 
 Valitaan **kyselyeditorin** **Aloitus**-valintanauhasta **Nouda tiedot \> Verkko** ja kirjoitetaan osoite ja valitaan **OK**. Sen jälkeen **Siirtymistoiminnon** ikkuna näyttää verkkosivulta löydetyn sisällön.
 

@@ -2,7 +2,6 @@
 title: Tietojen hakeminen .CSV-tiedostosta
 description: Lue lisää siitä, miten voit noutaa tietoja .CSV-tiedostoista Power BI:hin
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,17 +9,17 @@ ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 1a150c2cb4eb819b78b2b08a492087eb98bf6363
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: a33c8a45f4f32efb0a47df82b8af23d42c281ae9
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65513318"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73855538"
 ---
 # <a name="get-data-from-comma-separated-value-csv-files"></a>Tietojen hakeminen .CSV-tiedostosta
 ![](media/service-comma-separated-value-files/csv_icon.png)
 
-Pilkuilla eroteltuja arvoja sisältävät tiedostot, eli .CSV-tiedostot, ovat yksinkertaisia tekstitiedostoja, joiden riveillä olevat arvot on eroteltu pilkulla. Tämän tyypin tiedostot voivat sisältää erittäin suuria tietomääriä melko pienessä tiedostokoossa, minkä ansiosta ne sopivat hyvin Power BI:n tietolähteeksi. Voit ladata .CSV-mallitiedoston [tästä](http://go.microsoft.com/fwlink/?LinkID=619356).
+Pilkuilla eroteltuja arvoja sisältävät tiedostot, eli .CSV-tiedostot, ovat yksinkertaisia tekstitiedostoja, joiden riveillä olevat arvot on eroteltu pilkulla. Tämän tyypin tiedostot voivat sisältää erittäin suuria tietomääriä melko pienessä tiedostokoossa, minkä ansiosta ne sopivat hyvin Power BI:n tietolähteeksi. Voit ladata .CSV-mallitiedoston [tästä](https://go.microsoft.com/fwlink/?LinkID=619356).
 
 Jos sinulla on .CSV-tiedosto, voit tuoda sen Power BI -sivustoosi tietojoukkona ja tutkia tietoja, luoda raporttinäkymiä ja jakaa tietoja muiden kanssa.
 

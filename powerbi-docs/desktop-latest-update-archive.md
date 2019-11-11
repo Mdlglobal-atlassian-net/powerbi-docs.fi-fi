@@ -2,7 +2,6 @@
 title: Power BI Desktopin aiemmat kuukausipäivitykset
 description: Ominaisuuspäivityksiä Power BI Desktopin aiemmista versioista
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/30/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 24ff0748a57df5b76d8a559781cf9326764450e3
-ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
+ms.openlocfilehash: e775d5c4cf0ad1c24765368681134f5d4e865ad3
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73429713"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73866963"
 ---
 # <a name="previous-monthly-updates-to-power-bi-desktop"></a>Power BI Desktopin aiemmat kuukausipäivitykset
 
@@ -176,8 +175,8 @@ Voit myös ladata Power BI Desktopin edellisiä versioita, jos organisaatiosi va
 
 Valitse jompikumpi seuraavista linkeistä, jos haluat ladata aiemman version: 
 
-* [Power BI Desktop, elokuun 2019 versio – 32-bittinen](http://download.microsoft.com/download/9/B/A/9BAEFFEF-1A68-4102-8CDF-5D28BFFE6A61/PBIDesktop-2019-08.msi)
-* [Power BI Desktop, elokuun 2019 versio – 64-bittinen](http://download.microsoft.com/download/9/B/A/9BAEFFEF-1A68-4102-8CDF-5D28BFFE6A61/PBIDesktop-2019-08_x64.msi)
+* [Power BI Desktop, elokuun 2019 versio – 32-bittinen](https://download.microsoft.com/download/9/B/A/9BAEFFEF-1A68-4102-8CDF-5D28BFFE6A61/PBIDesktop-2019-08.msi)
+* [Power BI Desktop, elokuun 2019 versio – 64-bittinen](https://download.microsoft.com/download/9/B/A/9BAEFFEF-1A68-4102-8CDF-5D28BFFE6A61/PBIDesktop-2019-08_x64.msi)
 
 
 ## <a name="july-2019-update-2715523641"></a>Heinäkuun 2019 päivitys (2.71.5523.641)
@@ -247,8 +246,8 @@ Voit myös ladata Power BI Desktopin edellisiä versioita, jos organisaatiosi va
 
 Valitse jompikumpi seuraavista linkeistä, jos haluat ladata aiemman version: 
 
-* [Power BI Desktop, heinäkuun 2019 versio – 32-bittinen](http://download.microsoft.com/download/9/B/A/9BAEFFEF-1A68-4102-8CDF-5D28BFFE6A61/PBIDesktop-2019-07.msi)
-* [Power BI Desktop, heinäkuun 2019 versio – 64-bittinen](http://download.microsoft.com/download/9/B/A/9BAEFFEF-1A68-4102-8CDF-5D28BFFE6A61/PBIDesktop-2019-07_x64.msi)
+* [Power BI Desktop, heinäkuun 2019 versio – 32-bittinen](https://download.microsoft.com/download/9/B/A/9BAEFFEF-1A68-4102-8CDF-5D28BFFE6A61/PBIDesktop-2019-07.msi)
+* [Power BI Desktop, heinäkuun 2019 versio – 64-bittinen](https://download.microsoft.com/download/9/B/A/9BAEFFEF-1A68-4102-8CDF-5D28BFFE6A61/PBIDesktop-2019-07_x64.msi)
 
 
 ## <a name="june-2019-update-2705494561"></a>Kesäkuun 2019 päivitys (2.70.5494.561)
@@ -330,8 +329,8 @@ Voit myös ladata Power BI Desktopin edellisiä versioita, jos organisaatiosi va
 
 Valitse jompikumpi seuraavista linkeistä, jos haluat ladata aiemman version: 
 
-* [Power BI Desktop, kesäkuun 2019 versio – 32-bittinen](http://download.microsoft.com/download/9/B/A/9BAEFFEF-1A68-4102-8CDF-5D28BFFE6A61/PBIDesktop-2019-06.msi)
-* [Power BI Desktop, kesäkuun 2019 versio – 64-bittinen](http://download.microsoft.com/download/9/B/A/9BAEFFEF-1A68-4102-8CDF-5D28BFFE6A61/PBIDesktop-2019-06_x64.msi)
+* [Power BI Desktop, kesäkuun 2019 versio – 32-bittinen](https://download.microsoft.com/download/9/B/A/9BAEFFEF-1A68-4102-8CDF-5D28BFFE6A61/PBIDesktop-2019-06.msi)
+* [Power BI Desktop, kesäkuun 2019 versio – 64-bittinen](https://download.microsoft.com/download/9/B/A/9BAEFFEF-1A68-4102-8CDF-5D28BFFE6A61/PBIDesktop-2019-06_x64.msi)
 
 
 ## <a name="may-2019-update-26954671251"></a>Toukokuun 2019 päivitys (2.69.5467.1251)
@@ -408,8 +407,8 @@ Voit myös ladata Power BI Desktopin edellisiä versioita, jos organisaatiosi va
 
 Valitse jompikumpi seuraavista linkeistä, jos haluat ladata aiemman version: 
 
-* [Power BI Desktop, toukokuun 2019 versio – 32-bittinen](http://download.microsoft.com/download/9/B/A/9BAEFFEF-1A68-4102-8CDF-5D28BFFE6A61/PBIDesktop-2019-05.msi)
-* [Power BI Desktop, toukokuun 2019 versio – 64-bittinen](http://download.microsoft.com/download/9/B/A/9BAEFFEF-1A68-4102-8CDF-5D28BFFE6A61/PBIDesktop-2019-05_x64.msi)
+* [Power BI Desktop, toukokuun 2019 versio – 32-bittinen](https://download.microsoft.com/download/9/B/A/9BAEFFEF-1A68-4102-8CDF-5D28BFFE6A61/PBIDesktop-2019-05.msi)
+* [Power BI Desktop, toukokuun 2019 versio – 64-bittinen](https://download.microsoft.com/download/9/B/A/9BAEFFEF-1A68-4102-8CDF-5D28BFFE6A61/PBIDesktop-2019-05_x64.msi)
 
 
 ## <a name="april-2019-update-2685432361"></a>Huhtikuun 2019 päivitys (2.68.5432.361)
@@ -490,12 +489,6 @@ Voit myös ladata Power BI Desktopin edellisiä versioita, jos organisaatiosi va
 * Power BI Desktopin aiemmilla versioilla ei ehkä voi avata tiedostoja, jotka on luotu tai tallennettu Power BI Desktopin uusimmilla versioilla. 
 * Jos saat varoituksen, kun lataat Power BI Desktopin uudemmassa versiossa tallennettua raporttia, ja tallennat raportin sitten aiemmassa versiossa, menetät kaikki uusiin ominaisuuksiin liittyvät tiedot.
 * Arkistoimme vain Power BI Desktopin englanninkieliset versiot.
-
-Valitse jompikumpi seuraavista linkeistä, jos haluat ladata aiemman version: 
-
-* [Power BI Desktop, huhtikuun 2019 versio – 32-bittinen](http://download.microsoft.com/download/9/B/A/9BAEFFEF-1A68-4102-8CDF-5D28BFFE6A61/PBIDesktop-2019-04.msi)
-* [Power BI Desktop, huhtikuun 2019 versio – 64-bittinen](http://download.microsoft.com/download/9/B/A/9BAEFFEF-1A68-4102-8CDF-5D28BFFE6A61/PBIDesktop-2019-04_x64.msi)
-
 
 ## <a name="march-2019-update-2675404581"></a>Maaliskuun 2019 päivitys (2.67.5404.581)
 
@@ -2414,7 +2407,7 @@ Uusi vuosi käynnistyi jälleen uudella valikoimalla parannuksia ja päivityksi�
 -   Parannuksia R-integrointiin Power BI Desktopissa
 
 
-Haluatko lisätietoja näistä päivityksistä? Tutustu [blogikirjoitukseen](http://blogs.msdn.com/b/powerbi/archive/2016/01/28/power-bi-updates-this-week-new-report-authoring-capabilities.aspx), josta saat tarkempia tietoja kustakin uudesta ominaisuudesta.
+Haluatko lisätietoja näistä päivityksistä? Tutustu [blogikirjoitukseen](https://blogs.msdn.com/b/powerbi/archive/2016/01/28/power-bi-updates-this-week-new-report-authoring-capabilities.aspx), josta saat tarkempia tietoja kustakin uudesta ominaisuudesta.
 
 Seuraavassa videossa esitellään jokainen näistä päivityksistä. Näet videon myös blogikirjoituksen kautta.
 
@@ -2470,7 +2463,7 @@ Joulukuun Power BI Desktop -päivitys tarjoaa lisää ominaisuuksia ja toimintoj
 -   CSV-yhdistin: mahdollisuus määrittää sarake-erotin Lähde-valintaikkunassa
 
 
-Haluatko lisätietoja näistä päivityksistä? Tutustu [blogikirjoitukseen](http://blogs.msdn.com/b/powerbi/archive/2015/12/16/more-power-bi-feature-updates-power-bi-desktop-december-update-and-new-power-bi-service-features.aspx), josta saat tarkempia tietoja kustakin uudesta ominaisuudesta.
+Haluatko lisätietoja näistä päivityksistä? Tutustu [blogikirjoitukseen](https://blogs.msdn.com/b/powerbi/archive/2015/12/16/more-power-bi-feature-updates-power-bi-desktop-december-update-and-new-power-bi-service-features.aspx), josta saat tarkempia tietoja kustakin uudesta ominaisuudesta.
 
 Seuraavassa videossa esitellään jokainen näistä päivityksistä. Näet videon myös blogikirjoituksen kautta.
 
@@ -2525,7 +2518,7 @@ Uusi kuukausi toi mukanaan uusia ominaisuuksia ja parannuksia Power BI Desktopii
 
 -   Uusi dokumentaatiosivusto, sisältää myös lokalisoitua sisältöä
 
-Haluatko lisätietoja näistä päivityksistä? Tutustu [blogikirjoitukseen](http://blogs.msdn.com/b/powerbi/archive/2015/11/20/announcing-the-power-bi-desktop-november-update.aspx), josta saat tarkempia tietoja kustakin uudesta ominaisuudesta.
+Haluatko lisätietoja näistä päivityksistä? Tutustu [blogikirjoitukseen](https://blogs.msdn.com/b/powerbi/archive/2015/11/20/announcing-the-power-bi-desktop-november-update.aspx), josta saat tarkempia tietoja kustakin uudesta ominaisuudesta.
 
 Seuraavassa videossa esitellään jokainen näistä päivityksistä. Näet videon myös blogikirjoituksen kautta.
 
@@ -2577,7 +2570,7 @@ Voit tutustua näihin päivityksiin myös katsomalla videon.
 <iframe width="500" height="281" src="https://www.youtube.com/embed/Jbocn1ZNkxM" frameborder="0" allowfullscreen></iframe>
 
 
-Saat lisätietoja [blogikirjoituksesta](http://blogs.msdn.com/b/powerbi/archive/2015/10/20/custom-visualizations-support-and-22-other-features-in-the-power-bi-desktop-october-update.aspx), jossa kukin päivitys kuvataan tarkemmin.
+Saat lisätietoja [blogikirjoituksesta](https://blogs.msdn.com/b/powerbi/archive/2015/10/20/custom-visualizations-support-and-22-other-features-in-the-power-bi-desktop-october-update.aspx), jossa kukin päivitys kuvataan tarkemmin.
 
 
 
@@ -2647,7 +2640,7 @@ Seuraavassa videossa käsitellään tarkemmin näitä ominaisuuksia.
 
 <iframe width="500" height="281" src="https://www.youtube.com/embed/Jm44dLXdarQ" frameborder="0" allowfullscreen></iframe>
 
-Saat lisätietoja tästä päivityksestä [blogikirjoituksesta](http://blogs.msdn.com/b/powerbi/archive/2015/09/23/44-new-features-in-the-power-bi-desktop-september-update.aspx), jossa kukin päivitys kuvataan tarkemmin.
+Saat lisätietoja tästä päivityksestä [blogikirjoituksesta](https://blogs.msdn.com/b/powerbi/archive/2015/09/23/44-new-features-in-the-power-bi-desktop-september-update.aspx), jossa kukin päivitys kuvataan tarkemmin.
 
 ## <a name="august-2015-update-2264128403"></a>Elokuun 2015 päivitys (2.26.4128.403)
 

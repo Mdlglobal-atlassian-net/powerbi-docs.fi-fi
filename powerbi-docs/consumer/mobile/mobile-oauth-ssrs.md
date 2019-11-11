@@ -3,18 +3,17 @@ title: Yhdistäminen Power BI -raporttipalvelimeen ja SSRS-palvelimeen OAuthia k
 description: Opi määrittämään ympäristö tukemaan OAuth-todennusta Power BI -mobiilisovelluksella ja muodostamaan yhteys SQL Server Reporting Services 2016:een tai uudempaan versioon.
 author: maggiesMSFT
 ms.author: maggies
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 07/03/2019
-ms.openlocfilehash: 59c376afd384812473d3175df992c628ae5049ca
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: 9ce761d09e2db4fbbc2e56d461f5272041edfbfe
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "70903646"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73870091"
 ---
 # <a name="using-oauth-to-connect-to-power-bi-report-server-and-ssrs"></a>Yhdistäminen Power BI -raporttipalvelimeen ja SSRS-palvelimeen OAuthia käyttämällä
 
@@ -193,7 +192,7 @@ Rajoitettu delegointi kannattaa määrittää seuraavasti.
 Voit julkaista sovelluksia myös raporttien käytön hallintakonsolin kautta, mutta tässä esimerkissä sovellus luodaan PowerShellin kautta. Tällä komennolla voit lisätä sovelluksen.
 
 ```powershell
-Add-WebApplicationProxyApplication -Name "Contoso Reports" -ExternalPreauthentication ADFS -ExternalUrl https://reports.contoso.com/ -ExternalCertificateThumbprint "0ff79c75a725e6f67e3e2db55bdb103efc9acb12" -BackendServerUrl http://ContosoSSRS/ -ADFSRelyingPartyName "Reporting Services - Web API" -BackendServerAuthenticationSPN "http/ContosoSSRS.contoso.com" -UseOAuthAuthentication
+Add-WebApplicationProxyApplication -Name "Contoso Reports" -ExternalPreauthentication ADFS -ExternalUrl https://reports.contoso.com/ -ExternalCertificateThumbprint "0ff79c75a725e6f67e3e2db55bdb103efc9acb12" -BackendServerUrl https://ContosoSSRS/ -ADFSRelyingPartyName "Reporting Services - Web API" -BackendServerAuthenticationSPN "http/ContosoSSRS.contoso.com" -UseOAuthAuthentication
 ```
 
 | Parametri | Kommentit |
@@ -243,7 +242,7 @@ Voit ottaa käyttöön monimenetelmäisen todentamisen lisäsuojauksen ottamisek
 
 ![”SSRS-palvelimeen kirjautuminen epäonnistui” -virheviesti](media/mobile-oauth-ssrs/powerbi-mobile-error.png)
 
-Voit määrittää [Fiddlerin](http://www.telerik.com/fiddler) toimimaan mobiililaitteiden välityspalvelimena nähdäksesi, kuinka pitkälle pyyntö etenee. Jotta voisit ottaa käyttöön Fiddler-välityspalvelimen puhelimelle, sinun on määritettävä [CertMaker for iOS and Android](http://www.telerik.com/fiddler/add-ons) ‑lisäosa tietokoneessa, jossa Fiddler toimii. Fiddler-lisäosa on Telerikiltä.
+Voit määrittää [Fiddlerin](https://www.telerik.com/fiddler) toimimaan mobiililaitteiden välityspalvelimena nähdäksesi, kuinka pitkälle pyyntö etenee. Jotta voisit ottaa käyttöön Fiddler-välityspalvelimen puhelimelle, sinun on määritettävä [CertMaker for iOS and Android](https://www.telerik.com/fiddler/add-ons) ‑lisäosa tietokoneessa, jossa Fiddler toimii. Fiddler-lisäosa on Telerikiltä.
 
 Jos sisäänkirjautuminen toimii Fiddleria käytettäessä, kyseessä voi olla WAP-sovellukseen tai ADFS-palvelimeen liittyvä varmenneongelma. Voit käyttää [Microsoft Message Analyzer](https://www.microsoft.com/download/details.aspx?id=44226) -työkalua tai vastaavaa työkalua sen varmistamiseen, että varmenteet ovat kelvollisia.
 
@@ -256,4 +255,4 @@ Jos sisäänkirjautuminen toimii Fiddleria käytettäessä, kyseessä voi olla W
 [Web Application Proxy Windows Server 2016:ssa](https://technet.microsoft.com/windows-server-docs/identity/web-application-proxy/web-application-proxy-windows-server)  
 [Sovellusten julkaiseminen käyttäen AD FS -esitodennusta](https://technet.microsoft.com/windows-server-docs/identity/web-application-proxy/publishing-applications-using-ad-fs-preauthentication#a-namebkmk14apublish-an-application-that-uses-oauth2-such-as-a-windows-store-app)  
 [AD FS 2016:n ja Azure MFA:n määrittäminen](https://technet.microsoft.com/windows-server-docs/identity/ad-fs/operations/configure-ad-fs-2016-and-azure-mfa)  
-Onko sinulla muuta kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
+Onko sinulla muuta kysyttävää? [Kokeile Power BI -yhteisöä](https://community.powerbi.com/)

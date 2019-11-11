@@ -3,19 +3,18 @@ title: Mukautettujen tietoliittimien käyttäminen paikallisen tietoyhdyskäytä
 description: Voit käyttää mukautettuja tietoliittimiä paikallisen tietoyhdyskäytävän kanssa.
 author: mgblythe
 ms.author: mblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: conceptual
 ms.date: 07/15/2019
 LocalizationGroup: Gateways
-ms.openlocfilehash: 3c0ef172115dba05deb02d724b663742a2e71c13
-ms.sourcegitcommit: 9665bdabce3bfc31f68dd8256b135bfd56f60589
+ms.openlocfilehash: c76c8fdb635db7724ffeb1a5140e9095c9b2eff5
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "68832535"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73881758"
 ---
 # <a name="use-custom-data-connectors-with-the-on-premises-data-gateway"></a>Mukautettujen tietoliittimien käyttäminen paikallisen tietoyhdyskäytävän kanssa
 
@@ -23,7 +22,7 @@ ms.locfileid: "68832535"
 
 Power BI:n tietoliittimien avulla voit muodostaa yhteyden sovelluksen, palvelun tai tietolähteen tietoihin ja käyttää niitä sieltä. Voit kehittää mukautettuja tietoliittimiä ja käyttää niitä Power BI Desktopissa.
 
-Löydät [tietoliittimen SDK GitHub -sivulta](http://aka.ms/dataconnectors) lisätietoja siitä, miten voit kehittää Power BI:n mukautettuja tietoliittimiä. Sivustossa on aloitustiedot ja esimerkkejä Power BI:tä ja Power Querya varten.
+Löydät [tietoliittimen SDK GitHub -sivulta](https://aka.ms/dataconnectors) lisätietoja siitä, miten voit kehittää Power BI:n mukautettuja tietoliittimiä. Sivustossa on aloitustiedot ja esimerkkejä Power BI:tä ja Power Querya varten.
 
 Kun olet luonut Power BI Desktopissa mukautettuja tietoliittimiä käyttäviä raportteja, voit paikallisen tietoyhdyskäytävän avulla päivittää nämä raportit Power BI -palvelusta.
 
@@ -58,4 +57,4 @@ Kun tämä vaihtoehto on käytössä, mukautetut liittimet ovat saatavilla tieto
 * [Paikallisen tietoyhdyskäytävän välityspalvelinasetusten määrittäminen](/data-integration/gateway/service-gateway-proxy)
 * [Kerberoksen käyttäminen kertakirjautumista (SSO) varten Power BI:stä paikallisiin tietolähteisiin](service-gateway-sso-kerberos.md)  
 
-Onko sinulla kysyttävää? Voit esittää kysymyksiä [Power BI -yhteisössä](http://community.powerbi.com/).
+Onko sinulla kysyttävää? Voit esittää kysymyksiä [Power BI -yhteisössä](https://community.powerbi.com/).

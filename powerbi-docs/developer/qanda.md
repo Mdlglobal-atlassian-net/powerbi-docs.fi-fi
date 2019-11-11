@@ -3,18 +3,17 @@ title: Q&A Power BI Embeddedissä
 description: Power BI Embedded tarjoaa keinon sisällyttää Q&A:n sovellukseen. Käyttäjäsi voivat siis esittää kysymyksiä luonnollisella kielellä.
 author: rkarlin
 ms.author: rkarlin
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 11/20/2017
-ms.openlocfilehash: afe53e7b24328612bd7858abe263e4365f1c891d
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: f02274a18624ce2e9bb14902c29fe05833f3fbde
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61268725"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73880413"
 ---
 # <a name="qa-in-power-bi-embedded"></a>Q&A Power BI Embeddedissä
 
@@ -36,8 +35,8 @@ var config= {
     accessToken: access token value,
     embedUrl:    https://app.powerbi.com/qnaEmbed (groupId to be appended as query parameter if required),
     datasetIds:  array of requested data set ids (at the moment we support only one dataset),
-    viewMode:    models.QnAMode.Interactive | models.QnAMode.ResultOnly,
-    question:    optional parameter for Explore mode (QnAMode.Interactive) and mandatory for Render Result mode (QnAMode.ResultOnly)
+    viewMode:    models.QnaMode.Interactive | models.QnaMode.ResultOnly,
+    question:    optional parameter for Explore mode (QnaMode.Interactive) and mandatory for Render Result mode (QnaMode.ResultOnly)
 };
 
 // Get a reference to the embedded QNA HTML element
@@ -103,4 +102,4 @@ Aloita Q&A-osa luomalla upotustunnus tietojoukosta. Lisätietoja on artikkelissa
 
 Jos haluat kokeilla Q&A:n upotusta, tutustu [JavaScript-upotuksen malliin](https://microsoft.github.io/PowerBI-JavaScript/demo/).
 
-Onko sinulla muuta kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)
+Onko sinulla muuta kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)

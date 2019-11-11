@@ -2,7 +2,6 @@
 title: Sidottujen hierarkiaselitteiden käyttö Power BI Desktopissa
 description: Sidottujen hierarkiaselitteiden käyttö Power BI Desktopissa
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 8762be72353aa779281d721ac8038b6e3dd16aa2
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: db86fee2303759d30b2ff64dc59b56314f220474
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65454243"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73867346"
 ---
 # <a name="use-inline-hierarchy-labels-in-power-bi-desktop"></a>Sidottujen hierarkiaselitteiden käyttö Power BI Desktopissa
 **Power BI Desktop** tukee **sidottuja hierarkiaselitteitä**, joka on ensimmäinen kahdesta ominaisuudesta, joiden tarkoituksena on parantaa hierarkkista porautumista. Toisen ominaisuus, joka on tällä hetkellä kehityksen alla, on mahdollisuus käyttää sisäkkäisiä hierarkiaselitteitä (pysy kuulolla, sillä päivityksiä tehdään usein).   

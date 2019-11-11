@@ -2,7 +2,6 @@
 title: DirectQueryn käyttäminen Power BI:ssä
 description: Lisätietoja DirectQueryn käyttämisestä Power BI:ssä
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 08/19/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: d303e20e524ad7ac67882812b6e4f5a1d9b06c33
-ms.sourcegitcommit: 57e45f291714ac99390996a163436fa1f76db427
+ms.openlocfilehash: 13ca0b53bb1aed2d4323afdc99a97f8b9cfa5567
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "71305794"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73868333"
 ---
 # <a name="using-directquery-in-power-bi"></a>DirectQueryn käyttäminen Power BI:ssä
 Voit yhdistää kaikenlaisiin erilaisiin tietolähteisiin, kun käytät **Power BI Desktopia** tai **Power BI -palvelua**, ja muodostaa nämä tietoyhteydet eri tavoin. Voit *tuoda* tietoja Power BI:hin, mikä on yleisin tapa hakea tietoja, tai voit muodostaa yhteyden tietoihin suoraan niiden alkuperäisessä lähdesäilössä. Tätä tapaa kutsutaan nimellä **DirectQuery**. Tässä artikkelissa kuvataan **DirectQueryä** ja sen toimintoja:
@@ -32,7 +31,7 @@ Lyhyesti sanottuna tuomista kannattaa käyttää DirectQueryn asemesta seuraavie
 
 PowerBI:n tarjoamat toiminnot molemmille yhteystavoille (sekä tuomiselle että DirectQuerylle) kehittyvät ajan myötä. Tämä tuo enemmän joustavuutta tuotujen tietojen käytölle, esimerkiksi siten, että tuotuja tietoja voi käyttää useammissa tapauksissa. Lisäksi tällä tavoin päästää eroon joistain DirectQueryn käytön varjopuolista. Parannuksista riippumatta taustalla olevan tietolähteen suorituskyky on aina merkittävä huomioitava seikka. Jos taustalla oleva tietolähde on hidas, DirectQueryn käyttö tämän tietolähteen kanssa ei ole järkevää.
 
-Tässä artikkelissa käsitellään DirectQueryn käyttöä Power BI:n kanssa, ei SQL Server Analysis Servicesin kanssa. DirectQueryä voi käyttää myös **SQL Server Analysis Servicesin** kanssa. Monet tässä artikkelissa käsitellyt aiheet koskevat myös sen käyttöä, vaikka tärkeitä eroja onkin olemassa. Jos haluat lisätietoja DirectQueryn käytöstä SQL Server Analysis Servicesin kanssa, lue [raportti, jossa käsitellään DirectQueryä SQL Server Analysis Services 2016:ssa](http://download.microsoft.com/download/F/6/F/F6FBC1FC-F956-49A1-80CD-2941C3B6E417/DirectQuery%20in%20Analysis%20Services%20-%20Whitepaper.pdf).  
+Tässä artikkelissa käsitellään DirectQueryn käyttöä Power BI:n kanssa, ei SQL Server Analysis Servicesin kanssa. DirectQueryä voi käyttää myös **SQL Server Analysis Servicesin** kanssa. Monet tässä artikkelissa käsitellyt aiheet koskevat myös sen käyttöä, vaikka tärkeitä eroja onkin olemassa. Jos haluat lisätietoja DirectQueryn käytöstä SQL Server Analysis Servicesin kanssa, lue [raportti, jossa käsitellään DirectQueryä SQL Server Analysis Services 2016:ssa](https://download.microsoft.com/download/F/6/F/F6FBC1FC-F956-49A1-80CD-2941C3B6E417/DirectQuery%20in%20Analysis%20Services%20-%20Whitepaper.pdf).  
 
 Tässä artikkelissa keskitytään DirectQueryn suositeltuun työnkulkuun, kun raportti luodaan **Power BI Desktopissa**, mutta käsittelemme myös yhdistämistä suoraan **Power BI -palvelussa**.
 
@@ -141,7 +140,7 @@ Kun käytät **DirectQueryä**, voit edelleen hyödyntää monia näistä mallin
 * **Laskettujen sarakkeiden rajoitukset:** Lasketut sarakkeet voivat olla vain rivin sisäisiä. Tämä tarkoittaa sitä, että ne voivat viitata vain saman taulukon muiden sarakkeiden arvoihin ilman mitään koostefunktioita. Lisäksi sallitut DAX-skalaarifunktiot (esimerkiksi LEFT()) rajoitetaan vain niihin, jotka voidaan vain lähettää taustalla olevaan lähteeseen. Tämän johdosta ne siis vaihtelevat lähteen tukemien toimintojen mukaisesti. Funktioita, joita ei tueta, ei näytetä automaattisessa täydennyksessä, kun kirjoitat lasketun sarakkeen DAX-funktiota. Jos annat funktion, jota ei tueta, saat virheilmoituksen.
 * **Ei tukea pää- ja alatason DAX-funktioille:** Kun käytät DirectQuery-mallia, et voi käyttää DAX PATH() -perheen funktioita, jotka yleensä käsittelevät pää- ja alatasorakenteet (esimerkiksi tilikaavio tai työntekijähierarkia).
 * **Laskettuja taulukoita ei tueta:** laskettua taulukkoa ei voi määrittää DAX-lausekkeella DirectQuery-tilassa.
-* **Yhteyden suodatus:** Kaksisuuntaisen suodatuksen käyttöä [käsitellään tässä raportissa](http://download.microsoft.com/download/2/7/8/2782DF95-3E0D-40CD-BFC8-749A2882E109/Bidirectional%20cross-filtering%20in%20Analysis%20Services%202016%20and%20Power%20BI.docx), joka sisältää esimerkkejä SQL Server Analysis Servicesin käytöstä, mutta pääperiaatteet koskevat myös Power BI:tä.
+* **Yhteyden suodatus:** Kaksisuuntaisen suodatuksen käyttöä [käsitellään tässä raportissa](https://download.microsoft.com/download/2/7/8/2782DF95-3E0D-40CD-BFC8-749A2882E109/Bidirectional%20cross-filtering%20in%20Analysis%20Services%202016%20and%20Power%20BI.docx), joka sisältää esimerkkejä SQL Server Analysis Servicesin käytöstä, mutta pääperiaatteet koskevat myös Power BI:tä.
 
 * **Ei klusterointia:** kun käytät DirectQueryä, et voi etsiä ryhmiä automaattisesti klusterointitoiminnon avulla.
 

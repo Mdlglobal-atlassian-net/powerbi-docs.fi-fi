@@ -2,18 +2,17 @@
 title: Raportin suodattaminen maantieteellisen sijainnin mukaan Power BI ‑mobiilisovelluksessa
 description: Lue lisää siitä, miten raportti voidaan suodattaa maantieteellisen sijainnin mukaan Microsoft Power BI ‑mobiilisovelluksissa, jos raportin omistaja on määrittänyt maantieteelliset tunnisteet.
 author: mshenhav
-manager: kfile
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 09/25/2019
 ms.author: mshenhav
-ms.openlocfilehash: 9a4950a1d52451764c3c62413bf4ecbd036f06c8
-ms.sourcegitcommit: 57e45f291714ac99390996a163436fa1f76db427
+ms.openlocfilehash: 1079b624ebab827b41f4da55095028796319fdcd
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "71305785"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73870646"
 ---
 # <a name="filter-a-report-by-geographic-location-in-the-power-bi-mobile-apps"></a>Raportin suodattaminen maantieteellisen sijainnin mukaan Power BI ‑mobiilisovelluksessa
 Koskee seuraavia:
@@ -51,5 +50,5 @@ Lue lisää [maantieteellisen suodatuksen määrittämisestä](../../desktop-mob
 ### <a name="next-steps"></a>Seuraavat vaiheet
 * [Power BI:n yhdistäminen reaalimaailman tietoihin](mobile-apps-data-in-real-world-context.md) mobiilisovellusten avulla
 * [Tietojen luokittelu Power BI Desktopissa](../../desktop-data-categorization.md) 
-* Ilmenikö kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)
+* Ilmenikö kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
 

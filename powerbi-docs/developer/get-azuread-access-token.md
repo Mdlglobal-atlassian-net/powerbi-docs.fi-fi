@@ -3,18 +3,17 @@ title: Käyttäjien todentaminen ja Azure AD -käyttöoikeustietueen hankkiminen
 description: Lue ohjeet siihen, miten voit rekisteröidä sovelluksen Azure Active Directoryssä Power BI -sisällön upottamiseksi.
 author: rkarlin
 ms.author: rkarlin
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 06/04/2019
-ms.openlocfilehash: f0e8a9931248860e11f783d04fead6172559afc1
-ms.sourcegitcommit: 88e2a80b95b3e735689e75da7c35d84e24772e13
+ms.openlocfilehash: 1655843d9e3175b9c428434fd533a601cc42d847
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "66814274"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73875754"
 ---
 # <a name="get-an-azure-ad-access-token-for-your-power-bi-application"></a>Azure AD -käyttöoikeustietueen hankkiminen Power BI -sovellukselle
 
@@ -50,7 +49,7 @@ var @params = new NameValueCollection
     {"resource", Properties.Settings.Default.PowerBiAPI},
 
     //After user authenticates, Azure AD will redirect back to the web app
-    {"redirect_uri", "http://localhost:13526/Redirect"}
+    {"redirect_uri", "https://localhost:13526/Redirect"}
 };
 ```
 
@@ -80,7 +79,7 @@ protected void signInButton_Click(object sender, EventArgs e)
         {"resource", Properties.Settings.Default.PowerBiAPI},
 
         //After user authenticates, Azure AD will redirect back to the web app
-        {"redirect_uri", "http://localhost:13526/Redirect"}
+        {"redirect_uri", "https://localhost:13526/Redirect"}
     };
 
     //Create sign-in query string
@@ -207,4 +206,4 @@ Virheilmoitus: "'AuthenticationContext' ei sisällä 'AcquireToken'-määritett�
 
 Nyt kun sinulla on käyttöoikeustietue, voit kutsua Power BI REST -ohjelmointirajapinnan upottamaan sisältöä. Katso lisätiedot kohdasta [Power BI -sisällön upottaminen](embed-sample-for-customers.md#embed-content-within-your-application).
 
-Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)
+Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)

@@ -2,7 +2,6 @@
 title: Mitä Power BI -mobiilisovellukset ovat?
 description: Power BI -mobiilisovellukset pitävät sinut yhteydessä tietoihisi paikallisesti tai pilvipalvelussa. Tarkastele Power BI -raporttinäkymiä ja -raportteja omalla mobiililaitteellasi.
 author: mshenhav
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
@@ -10,12 +9,12 @@ ms.topic: overview
 ms.date: 04/26/2018
 ms.author: mshenhav
 ms.custom: ''
-ms.openlocfilehash: 40dd5a0ed03a7d6bd258de39bb9c29dcd7390cd9
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: 05f0526698e0d5d74c4b317261be6753b9296ff0
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "70064657"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73879319"
 ---
 # <a name="what-are-the-power-bi-mobile-apps"></a>Mitä Power BI -mobiilisovellukset ovat?
 Power BI tarjoaa joukon mobiilisovelluksia iOS-, Android- ja Windows 10 -mobiililaitteisiin. Mobiilisovelluksissa muodostat yhteyden ja käytät pilvipalveluissa olevia tietoja ja paikallisia tietoja. 

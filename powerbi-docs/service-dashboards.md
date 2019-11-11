@@ -2,7 +2,6 @@
 title: Johdatus raporttinäkymiin Power BI -kehittäjille
 description: Koontinäyttö on yksi Power BI -palvelun tärkeistä ominaisuuksista. Raporttinäkymä on yksittäinen sivu, jossa kerrotaan tarina visualisointien kautta.
 author: maggieMSFT
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,18 +9,18 @@ ms.topic: conceptual
 ms.date: 09/19/2019
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 269b495a41f193c6a2ba02fa75f171c3b5789689
-ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
+ms.openlocfilehash: 41381a2f0ccc2c5db904d9ac94c7dad19edfa4e5
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72019593"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73872732"
 ---
 # <a name="introduction-to-dashboards-for-power-bi-designers"></a>Johdatus raporttinäkymiin Power BI -kehittäjille
 
 Power BI -*raporttinäkymä* on yksittäinen sivu, joka kertoo tarinan visualisointien kautta. Koska se on rajattu yhdelle sivulle, hyvin suunniteltu raporttinäkymä sisältää vain tarinan kohokohdat. Lukijat voivat tutustua yksityiskohtiin raporttinäkymään liittyvien raporttien kautta.
 
-![Raporttinäkymä](media/service-dashboards/power-bi-dashboard2.png)
+![Koontinäyttö](media/service-dashboards/power-bi-dashboard2.png)
 
 Raporttinäkymä on vain Power BI -palvelun ominaisuus. Raporttinäkymät eivät ole käytettävissä Power BI Desktopissa. Raporttinäkymiä ei voi luoda mobiililaitteilla, mutta niitä voi [tarkastella ja jakaa](mobile-apps-view-dashboard.md) niillä.
 

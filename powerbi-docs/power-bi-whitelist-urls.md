@@ -3,19 +3,18 @@ title: Power BI:n URL-osoitteet sallittujen luetteloon
 description: Tässä artikkelissa kuvataan päätepisteitä, joiden pitäisi olla Power BI -asiakkaiden tavoitettavissa.
 author: mgblythe
 ms.author: mblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 10/22/2018
 ms.custom: seodec18
-ms.openlocfilehash: 5b8cce3c62811509b5a2fa80bdde683c6278c7b2
-ms.sourcegitcommit: bc688fab9288ab68eaa9f54b9b59cacfdf47aa2e
+ms.openlocfilehash: 2771329aef1fe7258065c42269060dc1b9e50bd0
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68624169"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73860642"
 ---
 # <a name="power-bi-urls-for-whitelisting"></a>Power BI:n URL-osoitteet sallittujen luetteloon
 
@@ -38,7 +37,7 @@ Power BI riippuu Office 365:n todentamisen ja tunnistetietojen osioissa vaaditui
 
 | Rivi | Tarkoitus | Kohteet | Portit |
 | --- | --- | --- | --- |
-| 1 | **Pakollinen:** todentaminen ja tunnistetiedot | Tutustu Office 365 -ohjeeseen [Office Online ja yleiset URL-osoitteet](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office)  | – |
+| 1 | **Pakollinen:** todentaminen ja tunnistetiedot | Tutustu Office 365 -ohjeeseen [Office Online ja yleiset URL-osoitteet](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online)  | – |
 
 ## <a name="general-site-usage"></a>Yleinen sivuston käyttö
 
@@ -47,7 +46,7 @@ Power BI:n yleistä käyttöä varten sinun on voitava yhdistää taulukossa ja 
 | Rivi | Tarkoitus | Kohteet | Portit |
 | --- | --- | --- | --- |
 | 1 | **Pakollinen:** taustapalvelun ohjelmointirajapinnat | *.analysis.windows.net | TCP 443 |
-| 2 | **Pakollinen:** Office 365:n integrointi | Tutustu Office 365 -ohjeeseen [Office Online ja yleiset URL-osoitteet](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office) | – |
+| 2 | **Pakollinen:** Office 365:n integrointi | Tutustu Office 365 -ohjeeseen [Office Online ja yleiset URL-osoitteet](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online) | – |
 | 3 | **Pakollinen:** portaali | app.powerbi.com | TCP 443 |
 | 4 | **Pakollinen:** palvelutelemetria | dc.services.visualstudio.com | TCP 443 |
 | 5 | **Valinnainen:** tietoviestit | dynmsg.modpim.com | TCP 443 |
@@ -60,7 +59,7 @@ Jotta voit suorittaa järjestelmänvalvojan toimintoja Power BI:llä, sinun on v
 
 | Rivi | Tarkoitus | Kohteet | Portit |
 | --- | --- | --- | --- |
-| 1 | **Pakollinen:** käyttäjien hallintaan ja valvontalokien tarkasteluun | Tutustu Office 365 -ohjeeseen [Office Online ja yleiset URL-osoitteet](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office) | – |
+| 1 | **Pakollinen:** käyttäjien hallintaan ja valvontalokien tarkasteluun | Tutustu Office 365 -ohjeeseen [Office Online ja yleiset URL-osoitteet](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online) | – |
 | | | |
 
 ## <a name="getting-data"></a>Tietojen hankkiminen
@@ -82,7 +81,7 @@ Power BI riippuu tietyistä päätepisteistä, jotta se voi tukea koontinäyttö
 
 | Rivi | Tarkoitus | Kohteet | Portit |
 | --- | --- | --- | --- |
-| 1 | **Pakollinen:** Excelin integrointi | Tutustu Office 365 -ohjeeseen [Office Online ja yleiset URL-osoitteet](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office) | – |
+| 1 | **Pakollinen:** Excelin integrointi | Tutustu Office 365 -ohjeeseen [Office Online ja yleiset URL-osoitteet](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online) | – |
 | | | |
 
 ## <a name="custom-visuals"></a>Mukautetut visualisoinnit
@@ -94,7 +93,7 @@ Power BI riippuu tietyistä päätepisteistä mukautettujen visualisointien tark
 | 1 | **Pakollinen:** tuo mukautettu visualisointi Marketplace-liittymästä tai tiedostosta | *.azureedge.net <br> *.blob.core.windows.net <br> store.office.com | TCP 443 |
 | 2 | **Valinnainen:** Bing Maps | bing.com <br> platform.bing.com <br> *.virtualearth.net | TCP 443 |
 | 3 | **Valinnainen:** PowerApps | Katso [Pakolliset palvelut -osiota](https://docs.microsoft.com/powerapps/maker/canvas-apps/limits-and-config#required-services) PowerApps-järjestelmän vaatimukset -sivustosta | – |
-| 4 | **Valinnainen:** Visio | Tutustu Office 365 -ohjeisiin [Office Online ja yleiset URL-osoitteet](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office) ja [SharePoint Online ja OneDrive for Business](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#sharepoint-online-and-onedrive-for-business) | – |
+| 4 | **Valinnainen:** Visio | Tutustu Office 365 -ohjeisiin [Office Online ja yleiset URL-osoitteet](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online) ja [SharePoint Online ja OneDrive for Business](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#sharepoint-online-and-onedrive-for-business) | – |
 | | | |
 
 ## <a name="related-external-sites"></a>Aiheeseen liittyvät ulkoiset sivustot

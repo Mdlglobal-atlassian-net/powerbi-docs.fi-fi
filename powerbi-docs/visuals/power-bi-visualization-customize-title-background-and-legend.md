@@ -2,7 +2,6 @@
 title: Power BI -visualisointien muotoilun aloittaminen
 description: Visualisoinnin otsikon, taustan ja selitteen muokkaaminen
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 featuredvideoid: IkJda4O7oGs
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 06/24/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 6228ed70dd78ffca6cd3c8803518b2b27674576f
-ms.sourcegitcommit: 1c96b65a03ec0a0612e851dd58c363f4d56bca38
+ms.openlocfilehash: 011e2b6d3bf5cc998f7db76e96536d2ddab09888
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "67389746"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73880862"
 ---
 # <a name="customize-visualization-titles-legends-and-backgrounds"></a>Mukauta visualisoinnin otsikoita, selitteitä ja taustoja
 
@@ -41,7 +40,7 @@ noudata sitten alla olevia ohjeita ja kokeile samaa itse omilla tiedoillasi.
 Seuraa mukana kirjautumalla sisään [Power BI -palveluun](https://app.powerbi.com)ja avaamalla [Jälleenmyyntianalyysimalli](../sample-datasets.md)-raportti [Muokkaa raporttia](../service-interact-with-a-report-in-editing-view.md) -näkymässä.
 
 > [!NOTE]
-> Kun kiinnität visualisoinnin koontinäyttöön, siitä tulee koontinäyttö-ruutu. Voit myös mukauttaa itse ruutuja [uusien otsikoiden ja alaotsikoiden sekä hyperlinkkien avulla, ja muuttaa niiden kokoa](../service-dashboard-edit-tile.md).
+> Kun kiinnität visualisoinnin raporttinäkymään, siitä tulee raporttinäkymän ruutu. Voit myös mukauttaa itse ruutuja [uusien otsikoiden ja alaotsikoiden sekä hyperlinkkien avulla, ja muuttaa niiden kokoa](../service-dashboard-edit-tile.md).
 
 1. Siirry **Jälleenmyyntianalyysimalli**-raportin **Uudet myymälät** -sivulle.
 
@@ -141,9 +140,9 @@ Seuraavassa on luettelo visualisointi- ja mukautusvaihtoehdoista, jotka ovat kä
 | Palkki | kyllä | kyllä |kyllä |
 | Kortti | kyllä | kyllä |– |
 | Monirivinen kortti | kyllä | kyllä | – |
-| Pylväs | kyllä | kyllä | kyllä |
+| Sarake | kyllä | kyllä | kyllä |
 | Yhdistelmä | kyllä | kyllä | kyllä |
-| Rengas | kyllä | kyllä | kyllä |
+| Ympyrä | kyllä | kyllä | kyllä |
 | Täytetty kartta | kyllä | kyllä | kyllä |
 | Suppilo | kyllä | kyllä | – |
 | Mittari | kyllä | kyllä | – |
@@ -157,7 +156,7 @@ Seuraavassa on luettelo visualisointi- ja mukautusvaihtoehdoista, jotka ovat kä
 | Taulukko | kyllä | kyllä | – |
 | Tekstiruutu | ei | kyllä | – |
 | Puukartta | kyllä | kyllä | kyllä |
-| Vesiputous | kyllä | kyllä | kyllä |
+| Waterfall | kyllä | kyllä | kyllä |
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
@@ -167,4 +166,4 @@ Seuraavassa on luettelo visualisointi- ja mukautusvaihtoehdoista, jotka ovat kä
 
 - [Peruskäsitteet Power BI -palvelun kuluttajille](../consumer/end-user-basic-concepts.md)
 
-Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
+Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](https://community.powerbi.com/)

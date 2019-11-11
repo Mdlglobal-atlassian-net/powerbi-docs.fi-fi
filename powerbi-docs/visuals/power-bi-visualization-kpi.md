@@ -2,7 +2,6 @@
 title: Suorituskykyilmaisimen (KPI) visualisoinnit
 description: Suorituskykyilmaisimen (KPI) visualisoinnit Power BI:ssä
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 featuredvideoid: xmja6EpqaO0
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: tutorial
 ms.date: 06/24/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 8ecec706c281b2a36c342ea852eebb4a8559a6fd
-ms.sourcegitcommit: d02de4ca33d865aee3e3e764b98f221950cb0a10
+ms.openlocfilehash: 42a9f2c641a0cdac9b7a129ffc5ecc6f7fb8cf8d
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "72239945"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73870858"
 ---
 # <a name="key-performance-indicator-kpi-visuals"></a>Suorituskykyilmaisimen (KPI) visualisoinnit
 
@@ -47,7 +46,7 @@ KPI-tietojoukon pitää sisältää suorituskykyilmaisimen tavoitearvoja. Jos ti
 
 ## <a name="prerequisites"></a>Edellytykset
 
-Tässä opetusohjelmassa käytetään [Jälleenmyyntianalyysimallin PBIX-tiedostoa](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix).
+Tässä opetusohjelmassa käytetään [Jälleenmyyntianalyysimallin PBIX-tiedostoa](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix).
 
 1. Valitse valikkorivin vasemmasta yläosasta **Tiedosto** > **Avaa**
 
@@ -106,4 +105,4 @@ Jos suorituskykyilmaisimesi ei näytä samalta kuin yksi edellisistä, se johtuu
 
 * [Visualisointityypit Power BI:ssä](power-bi-visualization-types-for-reports-and-q-and-a.md)
 
-Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
+Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](https://community.powerbi.com/)

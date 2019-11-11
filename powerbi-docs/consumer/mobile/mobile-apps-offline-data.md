@@ -2,19 +2,18 @@
 title: Tietojen tarkastelu offline-tilassa Power BI -mobiilisovelluksissa
 description: 'Lue tietoja siitä, miksi tietoja kannattaa tarkastella Power BI -mobiilisovelluksessa mobiiliselaimen sijaan: voit tarkastella tietojasi myös silloin, kun et ole yhteydessä verkkoon.'
 author: mshenhav
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 06/27/2018
 ms.author: mshenhav
-ms.openlocfilehash: d0d9b10c24d3d9da60ecf1afde7347f53d20f224
-ms.sourcegitcommit: d441d350504f8c6d9e100d229757add6237f0bef
+ms.openlocfilehash: 09a4595b461f69cfa02b4cc0ca3c96b1eb917ef8
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73059428"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73870608"
 ---
 # <a name="view-your-data-offline-in-the-power-bi-mobile-apps"></a>Tietojen tarkastelu offline-tilassa Power BI -mobiilisovelluksissa
 Koskee seuraavia:
@@ -64,6 +63,6 @@ Palaute auttaa meitä päättämään, mitä toimintoja otamme käyttöön tulev
 
 * [Power BI -sovellukset mobiililaitteille](mobile-apps-for-mobile-devices.md)
 * Seuraa käyttäjää @MSPowerBI Twitterissä
-* Liity keskusteluun [Power BI -yhteisössä](http://community.powerbi.com/)
+* Liity keskusteluun [Power BI -yhteisössä](https://community.powerbi.com/)
 * [Mikä on Power BI?](../../fundamentals/power-bi-overview.md)
 

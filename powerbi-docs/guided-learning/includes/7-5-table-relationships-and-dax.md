@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: cd6ea6fd52f929e2cd254214cf0e8c96e858f6c2
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 679c3e8c3d94c93899e9dcfae1e57f4b678fb218
+ms.sourcegitcommit: a5853ef44ed52e80eabee3757bb6887fa400b75b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61273398"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73799805"
 ---
 Power BI:llä voit luoda suhteita useiden taulukoiden välille, mukaan lukien taulukot, jotka ovat peräisin täysin eri tietolähteistä. Näet minkä tahansa tietomallin tällaiset suhteet Power BI Desktopin **Suhteet**-näkymässä.
 
@@ -23,7 +23,7 @@ Esimerkiksi **RELATED**-funktio seuraa suhteita ja palauttaa sarakkeen arvon, ku
 
 Relaatiofunktioiden avulla voit luoda lausekkeita, jotka sisältävät arvoja useista taulukoista. DAX palauttaa tuloksen näillä funktioilla riippumatta suhdeketjun pituudesta.
 
-> Videon sisällön on luonut [Alberto Ferrari, SQLBI](http://www.sqlbi.com/learning-dax).
+> Videon sisällön on luonut [Alberto Ferrari, SQLBI](https://www.sqlbi.com/learning-dax).
 > 
 > 
 

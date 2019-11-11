@@ -2,7 +2,6 @@
 title: Tietolähteen hallinta – Oracle
 description: Paikallisen yhdyskäytävän ja kyseiseen yhdyskäytävään kuuluvien tietolähteiden hallinta.
 author: mgblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 07/15/2019
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: ac116cfb2e3f09ceab6c9f78dba33bc18e847784
-ms.sourcegitcommit: 9665bdabce3bfc31f68dd8256b135bfd56f60589
+ms.openlocfilehash: cb7856b0b5ac84684e8d0648b91e45805218cead
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "68832460"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73872475"
 ---
 # <a name="manage-your-data-source---oracle"></a>Tietolähteen hallinta – Oracle
 
@@ -29,11 +28,11 @@ Jotta voit yhdistää yhdyskäytävän Oracle-palvelimeen, Oracle Data Provider 
 
 32-bittiset Power BI Desktop -versiot: Lataa 32-bittinen Oracle-asiakasohjelma seuraavasta linkistä ja asenna se tietokoneeseen:
 
-* [32-bit Oracle Data Access Components (ODAC) with Oracle Developer Tools for Visual Studio (12.1.0.2.4)](http://www.oracle.com/technetwork/topics/dotnet/utilsoft-086879.html)
+* [32-bit Oracle Data Access Components (ODAC) with Oracle Developer Tools for Visual Studio (12.1.0.2.4)](https://www.oracle.com/technetwork/topics/dotnet/utilsoft-086879.html)
 
 64-bittiset Power BI Desktop -versiot tai paikallinen tietoyhdyskäytävä: lataa 64-bittinen Oracle-asiakasohjelma seuraavasta linkistä ja asenna se tietokoneeseen:
 
-* [64-bit ODAC 12.2c Release 1 (12.2.0.1.0) for Windows x64](http://www.oracle.com/technetwork/database/windows/downloads/index-090165.html)
+* [64-bit ODAC 12.2c Release 1 (12.2.0.1.0) for Windows x64](https://www.oracle.com/technetwork/database/windows/downloads/index-090165.html)
 
 Kun se on asennettu, sinun on määritettävä tnsnames.ora-tiedosto ja tarvittavat tiedot tietokantaan. Power BI Desktop ja yhdyskäytävä siirtyvät pois net_service_name -määrityksestä tnsnames.ora-tiedostossa. Jos net_service_name ei ole määritetty, et voi muodostaa yhteyttä. Tnsnames.ora-oletuspolku on `[Oracle Home Directory]\Network\Admin\tnsnames.ora`. Jos haluat lisätietoja siitä, miten voit määrittää tnsnames.ora-tiedostoja, katso [Oracle: Paikalliset nimeämistiedostot (tnsnames.ora)](https://docs.oracle.com/cd/B28359_01/network.111/b28317/tnsnames.htm).
 
@@ -132,5 +131,5 @@ Lisätietoja yhdyskäytävän vianmäärityksestä on kohdassa [Paikallisen tiet
 * [Yhdyskäytävien vianmääritys – Power BI](service-gateway-onprem-tshoot.md)
 * [Power BI Premium](service-premium.md)
 
-Onko sinulla kysyttävää? Voit esittää kysymyksiä [Power BI -yhteisössä](http://community.powerbi.com/).
+Onko sinulla kysyttävää? Voit esittää kysymyksiä [Power BI -yhteisössä](https://community.powerbi.com/).
 

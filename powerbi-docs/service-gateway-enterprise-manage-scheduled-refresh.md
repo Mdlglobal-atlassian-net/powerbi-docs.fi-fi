@@ -2,7 +2,6 @@
 title: Tietolähteen hallinta – tuonti ja ajoitettu päivitys
 description: Paikallisen tietoyhdyskäytävän ja kyseiseen yhdyskäytävään kuuluvien tietolähteiden hallinta. Tämä artikkeli käsittelee erityisesti tietolähteitä, joita voidaan käyttää tuonnissa ja ajoitetussa päivityksessä.
 author: mgblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 07/15/2019
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 3e223fba25386e91354130083f8bacc653b26cee
-ms.sourcegitcommit: d74aca333595beaede0d71ba13a88945ef540e44
+ms.openlocfilehash: 7512257a3abad33babe2a5b6b56f613c7bb1b50f
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/03/2019
-ms.locfileid: "68757649"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73881701"
 ---
 # <a name="manage-your-data-source---importscheduled-refresh"></a>Tietolähteen hallinta – tuonti ja ajoitettu päivitys
 
@@ -75,4 +74,4 @@ OAuth-todentamista ei tueta paikallisen tietoyhdyskäytävän kanssa käytettäv
 * [Paikallisen tietoyhdyskäytävän vianmääritys](/data-integration/gateway/service-gateway-tshoot)
 * [Yhdyskäytävien vianmääritys – Power BI](service-gateway-onprem-tshoot.md)
 
-Onko sinulla kysyttävää? Kokeile [Power BI -yhteisöä](http://community.powerbi.com/).
+Onko sinulla kysyttävää? Kokeile [Power BI -yhteisöä](https://community.powerbi.com/).

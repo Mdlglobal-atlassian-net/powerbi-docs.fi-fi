@@ -2,7 +2,6 @@
 title: Power BI Desktop -tiedostosta luodun tietojoukon päivittäminen – paikallinen
 description: Power BI Desktop -tiedostosta luodun tietojoukon päivittäminen – tiedosto paikallisessa asemassa
 author: mgblythe
-manager: kfile
 ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 06/04/2019
 ms.author: mblythe
 LocalizationGroup: Data refresh
-ms.openlocfilehash: 58727627656a3cb22ad7fce626d0c7e6ce746440
-ms.sourcegitcommit: 206806d8ddb6bdfc322c1a46fb34a1b0678acba2
+ms.openlocfilehash: b96163b433998ad92860ad6c234aac4126cf5486
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66816490"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73874374"
 ---
 # <a name="refresh-a-dataset-created-from-a-power-bi-desktop-file-on-a-local-drive"></a>Power BI Desktop -tiedostosta luodun tietojoukon päivittäminen – tiedosto paikallisessa asemassa
 
@@ -68,5 +67,5 @@ Joskus tietojen päivittäminen ei mene odotetulla tavalla. Yleensä tämä on y
 - [Paikallisen tietoyhdyskäytävän vianmääritys](service-gateway-onprem-tshoot.md)
 - [Power BI -yhdyskäytävän vianmääritys – Personal](service-admin-troubleshooting-power-bi-personal-gateway.md)
 
-Onko sinulla muuta kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)
+Onko sinulla muuta kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
 

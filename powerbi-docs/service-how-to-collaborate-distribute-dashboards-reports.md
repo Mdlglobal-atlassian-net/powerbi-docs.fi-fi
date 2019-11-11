@@ -3,19 +3,18 @@ title: Töiden jakamistavat Power BI:ssä
 description: Voit työstää raporttinäkymiä, raportteja, ruutuja ja sovelluksia yhdessä muiden kanssa ja jakaa niitä eri tavoilla Power BI:ssä. Kullakin tavalla on etunsa.
 author: maggiesMSFT
 ms.author: maggies
-manager: kfile
 ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 09/06/2019
 LocalizationGroup: Share your work
-ms.openlocfilehash: 31310900b91924e639ce10a13aef3da996598502
-ms.sourcegitcommit: 226b47f64e6749061cd54bf8d4436f7deaed7691
+ms.openlocfilehash: 7633f0771a87c01d53261d13135d831e95e80136
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/09/2019
-ms.locfileid: "70841654"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73881331"
 ---
 # <a name="ways-to-share-your-work-in-power-bi"></a>Töiden jakamistavat Power BI:ssä
 
@@ -135,4 +134,4 @@ Kummassakin tapauksessa Power BI tarkistaa käyttöoikeudet ja tietosuojan ennen
 
 Haluatko antaa palautetta? Anna ehdotuksia siirtymällä [Power BI -yhteisön sivustolle](https://community.powerbi.com/).
 
-Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
+Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](https://community.powerbi.com/)

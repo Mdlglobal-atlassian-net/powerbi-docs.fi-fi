@@ -2,19 +2,18 @@
 title: Power BI -raportin luominen Power BI -raporttipalvelimeen
 description: Ohjeet Power BI -raportin luomiseen Power BI -raporttipalvelimelle helposti ja nopeasti.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 09/26/2019
 ms.author: maggies
-ms.openlocfilehash: f3a52e14271827a043f05d6b170e79718306aa99
-ms.sourcegitcommit: d04b9e1426b8544ce16ef25864269cc43c2d9f7b
+ms.openlocfilehash: cfb83ae8b005744098261c6973a87fb929a864dd
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "71715264"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73858962"
 ---
 # <a name="create-a-power-bi-report-for-power-bi-report-server"></a>Power BI -raportin luominen Power BI -raporttipalvelimeen
 Voit tallentaa ja hallita Power BI -raportteja Power BI -raporttipalvelimen verkkoportaalissa paikallisesti samalla tavalla kuin voit tallentaa Power BI -raportteja pilveen Power BI -palvelussa (https://powerbi.com). Luo ja muokkaa raportteja Power BI Desktopissa ja julkaise ne verkkoportaalissa. Raportin lukijat organisaatiossasi voivat tarkastella niitä selaimessa tai Power BI -mobiilisovelluksessa mobiililaitteillaan.

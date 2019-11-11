@@ -2,7 +2,6 @@
 title: Power BI Desktopin Analysoi Excelissä -toiminnon vianmääritys
 description: Ratkaisuja yleisiin Analysoi Excelissä -ongelmiin
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: troubleshooting
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: a2116f2146072590c4cbcc7f41d941950d9692f0
-ms.sourcegitcommit: e5cf19e16112c7dad1591c3b38d232267ffb3ae1
+ms.openlocfilehash: 987078ae33af10e9c33b4d8a00f8e2e688be12a1
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72543975"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73865768"
 ---
 # <a name="troubleshooting-analyze-in-excel"></a>Analysoi Excelissä -toiminnon vianmääritys
 
@@ -24,7 +23,7 @@ Analysoi Excelissä -toiminto voi ajoittain antaa odottamattomia tuloksia tai to
 > [!NOTE]
 > Lisätietoja [Analysoi Excelissä](service-analyze-in-excel.md) -toiminnon käyttämisestä on eri sivulla.
 > 
-> Jos kohtaat skenaarion, joka aiheuttaa ongelmia, etkä löydä sitä luettelossa, voit pyytää apua [yhteisösivustolla](http://community.powerbi.com/) tai luoda [tukipalvelupyynnön](https://powerbi.microsoft.com/support/).
+> Jos kohtaat skenaarion, joka aiheuttaa ongelmia, etkä löydä sitä luettelossa, voit pyytää apua [yhteisösivustolla](https://community.powerbi.com/) tai luoda [tukipalvelupyynnön](https://powerbi.microsoft.com/support/).
 > 
 > 
 
@@ -40,7 +39,7 @@ Tässä artikkelissa on seuraavat osat:
 * Vetäminen ei onnistu Pivot-taulukon Arvot-alueelle (mittareita ei ole)
 
 ## <a name="update-excel-libraries-for-the-ole-db-provider"></a>Päivitä OLE DB -palvelun Excel-kirjastot
-Jos haluat käyttää **Analysoi Excelissä** -toimintoa, tietokoneessa on oltava asennettuna aktiivinen AS OLE DB -palvelu. Tämä [yhteisön julkaisu](http://community.powerbi.com/t5/Service/Analyze-in-Excel-Initialization-of-the-data-source-failed/m-p/30837#M8081) on hyvä tietolähde, jos haluat tarkistaa OLE DB -palvelun asennuksen tai ladata uusimman version.
+Jos haluat käyttää **Analysoi Excelissä** -toimintoa, tietokoneessa on oltava asennettuna aktiivinen AS OLE DB -palvelu. Tämä [yhteisön julkaisu](https://community.powerbi.com/t5/Service/Analyze-in-Excel-Initialization-of-the-data-source-failed/m-p/30837#M8081) on hyvä tietolähde, jos haluat tarkistaa OLE DB -palvelun asennuksen tai ladata uusimman version.
 
 Excel-kirjastojen on vastattava Windows-version bittitasoa. Jos sinulla on asennettuna 64-bittinen Windows, sinun on asennettava 64-bittinen OLE DB -palvelu.
 

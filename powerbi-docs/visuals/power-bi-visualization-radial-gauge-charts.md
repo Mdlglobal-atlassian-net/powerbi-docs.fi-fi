@@ -2,7 +2,6 @@
 title: Viisarimittarikaaviot Power BI:ssä
 description: Viisarimittarikaaviot Power BI:ssä
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 featuredvideoid: xmja6Epqa
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 06/24/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 020d7edcf6bc499623df93a9def30285a37cffc6
-ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
+ms.openlocfilehash: e783b4357d4db39e09aabbb1df39e1bb5c84532e
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71194283"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73880897"
 ---
 # <a name="radial-gauge-charts-in-power-bi"></a>Viisarimittarikaaviot Power BI:ssä
 
@@ -49,7 +48,7 @@ Viisarimittarit ovat hyvä vaihtoehto, kun:
 
 ## <a name="prerequisites"></a>Edellytykset
 
-Tässä opetusohjelmassa käytetään [Excelin Talousmalli-tiedostoa](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix).
+Tässä opetusohjelmassa käytetään [Excelin Talousmalli-tiedostoa](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix).
 
 1. Valitse valikkorivin vasemmasta yläosasta **Nouda tiedot** > **Excel**
    
@@ -153,4 +152,4 @@ Kun olet käynyt läpi nämä vaiheet, sinulla on mittarikaavio, joka näyttää
 
 * [Visualisointityypit Power BI:ssä](power-bi-visualization-types-for-reports-and-q-and-a.md)
 
-Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
+Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](https://community.powerbi.com/)

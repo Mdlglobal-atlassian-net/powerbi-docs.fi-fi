@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 5c2b254f20bd1eba97840a464a1b554cc4fe1238
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: f22c12ec0ad5bd413f3658704132143c878df1aa
+ms.sourcegitcommit: a5853ef44ed52e80eabee3757bb6887fa400b75b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61273374"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73799809"
 ---
 **Muuttujien** käyttö on erittäin tehokas osa DAX-lausekkeita.
 
@@ -18,7 +18,7 @@ Muuttujien tietotyyppi voi olla mikä tahansa, mukaan lukien kokonaiset taulukot
 
 Muista, että kun viittaat muuttujaan DAX-lausekkeessa, Power BI:n täytyy aina laskea sen arvo uudelleen määritelmäsi mukaisesti. Tästä syystä muuttujia ei kannata toistaa funktioissa.
 
-> Videon sisällön on luonut [Alberto Ferrari, SQLBI](http://www.sqlbi.com/learning-dax).
+> Videon sisällön on luonut [Alberto Ferrari, SQLBI](https://www.sqlbi.com/learning-dax).
 > 
 > 
 

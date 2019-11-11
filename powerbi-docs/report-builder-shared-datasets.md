@@ -7,12 +7,12 @@ ms.subservice: report-builder
 ms.topic: conceptual
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: 0cf85d2757dd77de854a6640f400c6dd9c70379a
-ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
+ms.openlocfilehash: c44f90bc29887a5431c893803cf4910e0e5093d3
+ms.sourcegitcommit: a5853ef44ed52e80eabee3757bb6887fa400b75b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73431517"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73791280"
 ---
 # <a name="use-shared-datasets-in-power-bi-report-builder"></a>Jaettujen tietojoukkojen käyttö Power BI:n raportin muodostimessa
 
@@ -30,7 +30,7 @@ Seuraavassa on luettelo asioista, joita tarvitset ja joita et tarvitse jaetun ti
 - Sinulla on oltava tietojoukon muodostamisen käyttöoikeus, jotta voit käyttää Power BI -tietojoukkoa. Lue [muodostamisen käyttöoikeudesta](service-datasets-build-permissions.md).
 - Jos haluat luoda sivutetun raportin raportin muodostimessa, et tarvitse Power BI Pro -käyttöoikeutta. 
 - Tarvitset Power BI Pro -käyttöoikeuden sivutetun raportin julkaisemiseen. Tarvitset työtilaan myös vähintään osallistujan roolin Premium-kapasiteetissa. 
-- Valinnainen: Jos haluat seurata tämän artikkelin ohjeita, lataa Power BI Desktopin [Jälleenmyyntianalyysimallin .pbix](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix)-tiedosto, avaa se Power BI Desktopissa ja lisää taulukko, jossa on paljon sarakkeita. Poista **Muotoilu**-ruudussa käytöstä **Yhteensä**. Julkaise se sitten työtilaan Power BI-palvelussa.
+- Valinnainen: Jos haluat seurata tämän artikkelin ohjeita, lataa Power BI Desktopin [Jälleenmyyntianalyysimallin .pbix](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix)-tiedosto, avaa se Power BI Desktopissa ja lisää taulukko, jossa on paljon sarakkeita. Poista **Muotoilu**-ruudussa käytöstä **Yhteensä**. Julkaise se sitten työtilaan Power BI-palvelussa.
 
     ![Yhteensä poissa käytöstä](media/report-builder-shared-datasets/power-bi-desktop-totals-off.png)
 

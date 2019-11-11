@@ -2,7 +2,6 @@
 title: Tietolähteen hallinta – SAP HANA
 description: Paikallisen yhdyskäytävän ja kyseiseen yhdyskäytävään kuuluvien tietolähteiden hallinta. Tämä artikkeli koskee SAP HANAa.
 author: mgblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 07/16/2019
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: b3e1ea53abeff39609515b0b615f9e000432e9c6
-ms.sourcegitcommit: 09ee1b4697aad84d8f4c9421015d7e4dbd3cf25f
+ms.openlocfilehash: 577f0b26052ecc5fbe5f4e5b4da624da2b6e06c4
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "70303169"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73881738"
 ---
 # <a name="manage-your-data-source---sap-hana"></a>Tietolähteen hallinta – SAP HANA
 
@@ -74,5 +73,5 @@ Jos sinut on lisätty yhdyskäytävän sisällä määritellyn tietolähteen **K
 * [Paikallisen tietoyhdyskäytävän vianmääritys](/data-integration/gateway/service-gateway-tshoot)
 * [Yhdyskäytävien vianmääritys – Power BI](service-gateway-onprem-tshoot.md) 
 
-Onko sinulla kysyttävää? Voit esittää kysymyksiä [Power BI -yhteisössä](http://community.powerbi.com/).
+Onko sinulla kysyttävää? Voit esittää kysymyksiä [Power BI -yhteisössä](https://community.powerbi.com/).
 

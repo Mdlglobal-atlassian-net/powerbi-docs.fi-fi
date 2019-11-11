@@ -2,7 +2,6 @@
 title: Tietojoukon jakaminen (esikatselu)
 description: Tietojoukon omistajana voit luoda ja jakaa tietojoukkoja, jotta muutkin voivat käyttää niitä. Opi jakamaan niitä.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: chbraun
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/01/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: c490228a1dfa1e6c842db3c41ab077a99f35f975
-ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
+ms.openlocfilehash: ce8a404a53eebb88bbd72998f10fd94a649b8af8
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72021110"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73872480"
 ---
 # <a name="share-a-dataset-preview"></a>Tietojoukon jakaminen (esikatselu)
 
@@ -55,4 +54,4 @@ Kun sinulla on työtilassasi jaettu tietojoukko, sinun täytyy ehkä tietää, m
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
 - [Tietojoukkojen käyttö eri työtiloissa (esikatselu)](service-datasets-across-workspaces.md)
-- Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)
+- Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)

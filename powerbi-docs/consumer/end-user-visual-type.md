@@ -2,7 +2,6 @@
 title: Visualisointityypit kuluttajille Power BI:ssä
 description: Visualisointityypit Power BI -palvelussa
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 08/21/2019
 ms.author: mihart
 LocalizationGroup: Consumer
-ms.openlocfilehash: 875e154dbac063c0e4b9d5dc4208387e6d529a93
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: 1670d3af200c8da672ac7034e4e15f6f460147a7
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "70302539"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73861316"
 ---
 # <a name="visual-types-in-power-bi"></a>Visualisointityypit Power BI:ssä
 Visualisointeja on raporteissa, koontinäytöissä, sovelluksissa ja Q&A:ssa. Jotkin näistä visualisointityypeistä ovat Power BI:hin sisältyviä visualisointeja ja jotkin *mukautettuja visualisointeja*. Mukautetut visualisoinnit luodaan Power BI:n ulkopuolella siten, että *raporttien suunnittelijat* voivat lisätä niitä Power BI:n raportteihin ja koontinäyttöihin. 
@@ -232,4 +231,4 @@ Kun kirjoitat Power BI Q&A:lla kyselyjä luonnollisella kielellä, voit määrit
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 [Visualisointien käyttö raporteissa, koontinäytöissä ja sovelluksissa](end-user-visualizations.md)    
-[Oikealla oleva visuaalinen viite osoitteesta sqlbi.com](http://www.sqlbi.com/wp-content/uploads/videotrainings/dashboarddesign/visuals-reference-may2017-A3.pdf)
+[Oikealla oleva visuaalinen viite osoitteesta sqlbi.com](https://www.sqlbi.com/wp-content/uploads/videotrainings/dashboarddesign/visuals-reference-may2017-A3.pdf)

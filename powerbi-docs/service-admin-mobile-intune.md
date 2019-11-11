@@ -2,7 +2,6 @@
 title: Mobiilisovellusten määrittäminen Microsoft Intunella
 description: Lue Power BI -mobiilisovellusten määritysohjeet, kun käytössä on Microsoft Intune. Tämä sisältää ohjeet sovelluksen lisäämiseen ja käyttöönottoon. Lisäksi opit luomaan mobiilisovelluskäytännön suojauksen hallintaa varten.
 author: mgblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/09/2019
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: b1af8c58e24ff1d95b28ea8a024c29ccdcac56b3
-ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
+ms.openlocfilehash: abbbceb6734ecb70469efa198b6e85fce4c3e840
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71075630"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73857335"
 ---
 # <a name="configure-mobile-apps-with-microsoft-intune"></a>Mobiilisovellusten määrittäminen Microsoft Intunella
 
@@ -191,4 +190,4 @@ Sovellus asennetaan *Yritysportaali*-sovelluksen kautta. Jos et ole vielä asent
 
 [Power BI -sovellukset mobiililaitteille](consumer/mobile/mobile-apps-for-mobile-devices.md)  
 
-Onko sinulla muuta kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)  
+Onko sinulla muuta kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)  

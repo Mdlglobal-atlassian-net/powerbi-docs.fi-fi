@@ -2,7 +2,6 @@
 title: Raporttien kopioiminen muista työtiloista (esikatselu) – Power BI
 description: Lue ohjeet siihen, miten voit jakaa tietojoukon koko organisaation käyttäjien kanssa. Tämän ansiosta he voivat luoda omissa työtiloissaan raportteja, jotka perustuvat sinun tietojoukkoosi.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: chbraun
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 08/12/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: c60c3c29bbf87d7a5e18838dac0baa6157de6437
-ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
+ms.openlocfilehash: 2fc33c8adcaed35dab8fc9d81ab28fa314f42e3b
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72020816"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73881934"
 ---
 # <a name="copy-reports-from-other-workspaces-preview"></a>Raporttien kopioiminen muista työtiloista (esikatselu)
 
@@ -82,4 +81,4 @@ Voit päättää, että et enää halua raporttia ja siihen liittyvää jaettua 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
 - [Tietojoukkojen käyttö eri työtiloissa (esikatselu)](service-datasets-across-workspaces.md)
-- Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)
+- Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)

@@ -3,19 +3,18 @@ title: Power BI:n suorituskykyä parantavat parhaat käytännöt
 description: Tässä artikkelissa annetaan ohjeita nopeiden ja luotettavien raporttien luomiseen Power BI:ssä
 author: Bhavik-MSFT
 ms.author: bhmerc
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 07/30/2018
 LocalizationGroup: Reports
-ms.openlocfilehash: 736c1ee1b1998ec7f991167352313a05061b3f3c
-ms.sourcegitcommit: 226b47f64e6749061cd54bf8d4436f7deaed7691
+ms.openlocfilehash: 2fd0a3d878641264e84a14579901a9685b0f6e8b
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/09/2019
-ms.locfileid: "70841493"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73875094"
 ---
 # <a name="power-bi-performance-best-practices"></a>Power BI:n suorituskykyä parantavat parhaat käytännöt
 
@@ -152,7 +151,7 @@ Paikallinen tietoyhdyskäytävä on erinomainen työkalu, jonka avulla voit yhdi
 
 Verkon viive voi vaikuttaa raportin suorituskykyyn kasvattamalla aikaa, jonka pyynnöt tarvitsevat saavuttaakseen Power BI -palvelun, ja vastausten toimitusaikaa. Vuokraajille nimetään Power BI:ssä tietty alue. Voit tarkastella vuokraajan ”kotialuetta” siirtymällä powerbi.com-palveluun, valitsemalla oikeasta yläkulmasta **?** ja lopuksi **Tietoja Power BI:stä**. Kun vuokraajan käyttäjät käyttävät Power BI -palvelua, heidän pyyntönsä reititetään aina tälle alueelle. Kun pyynnöt saavuttavat Power BI -palvelun, palvelu voi tämän jälkeen lähettää lisäpyyntöjä esimerkiksi taustalla olevaan tietolähteeseen tai yhdyskäytävään, joita verkkoviive koskee myös.
 
-Työkalut, kuten [Azure Speed Test](http://azurespeedtest.azurewebsites.net/), voivat osoittaa verkkoviiveen asiakkaan ja Azure-alueen välillä. Yleensä voit minimoida verkkoviiveen vaikutuksen pyrkimällä pitämään tietolähteet, yhdyskäytävät ja Power BI -klusterin mahdollisimman lähellä. Jos verkkoviive on ongelma, voit kokeilla yhdyskäytävien ja tietolähteiden sijoittamista lähemmäs Power BI -klusteria sijoittamalla ne näennäiskoneisiin.
+Työkalut, kuten [Azure Speed Test](https://azurespeedtest.azurewebsites.net/), voivat osoittaa verkkoviiveen asiakkaan ja Azure-alueen välillä. Yleensä voit minimoida verkkoviiveen vaikutuksen pyrkimällä pitämään tietolähteet, yhdyskäytävät ja Power BI -klusterin mahdollisimman lähellä. Jos verkkoviive on ongelma, voit kokeilla yhdyskäytävien ja tietolähteiden sijoittamista lähemmäs Power BI -klusteria sijoittamalla ne näennäiskoneisiin.
 
 Jos haluat pienentää verkkoviivettä vielä lisää, harkitse [Azure ExpressRoutea](https://azure.microsoft.com/services/expressroute/), joka pystyy luomaan nopeampia ja luotettavampia verkkoyhteyksiä asiakkaiden ja Azure-palvelinkeskusten välillä.
 

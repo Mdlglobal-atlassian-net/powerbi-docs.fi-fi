@@ -2,7 +2,6 @@
 title: Tietolähteiden hallinta
 description: Opi hallitsemaan tietolähteitä Power BI:ssä.
 author: mgblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
@@ -11,12 +10,12 @@ ms.date: 07/15/2019
 ms.author: mblythe
 ms.custom: seodec18
 LocalizationGroup: Gateways
-ms.openlocfilehash: 254c0033dfc64b3a0f44bcda2289fedccf2e9eda
-ms.sourcegitcommit: 4222ebad1a3a32d8040f6a615a0b7f173d7869d0
+ms.openlocfilehash: 1966a9ea38f8ff9d1517b4df5ed0db1254ddf80d
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "71164530"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73881770"
 ---
 # <a name="manage-data-sources"></a>Tietolähteiden hallinta
 
@@ -178,4 +177,4 @@ Paikallinen tietoyhdyskäytävä tukee seuraavia Power BI:n tietolähteitä. Pai
 * [Tietolähteen hallinta – tuonti ja ajoitettu päivitys](service-gateway-enterprise-manage-scheduled-refresh.md)
 * [Tietoyhdyskäytävän käyttöönotto-ohjeet](service-gateway-deployment-guidance.md)
 
-Onko sinulla kysyttävää? Kokeile [Power BI -yhteisöä](http://community.powerbi.com/).
+Onko sinulla kysyttävää? Kokeile [Power BI -yhteisöä](https://community.powerbi.com/).

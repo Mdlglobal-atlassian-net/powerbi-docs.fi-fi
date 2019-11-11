@@ -2,7 +2,6 @@
 title: Puukartat Power BI:ssä
 description: Puukartat Power BI:ssä
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 featuredvideoid: IkJda4O7oGs
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 06/24/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 1de5869bc5b422dc98a13316022f653f62675829
-ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
+ms.openlocfilehash: b70e9611b22f1df20d39cdbd338fd5b6bfe1b43d
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71192658"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73880734"
 ---
 # <a name="treemaps-in-power-bi"></a>Puukartat Power BI:ssä
 
@@ -67,11 +66,11 @@ Puukartat ovat hyvä vaihtoehto seuraaville:
 
 ## <a name="prerequisite"></a>Edellytys
 
-Tässä opetusohjelmassa käytetään [Jälleenmyyntianalyysimallin PBIX-tiedostoa](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix).
+Tässä opetusohjelmassa käytetään [Jälleenmyyntianalyysimallin PBIX-tiedostoa](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix).
 
 1. Valitse valikkorivin vasemmasta yläosasta **Tiedosto** > **Avaa**
    
-2. **Jälleenmyyntianalyysimalli PBIX-tiedoston löytäminen**
+2. **Jälleenmyyntianalyysimallin PBIX-tiedoston löytäminen**
 
 1. Avaa **Jälleenmyyntianalyysimallin PBIX-tiedosto** raporttinäkymässä ![Näyttökuva raporttinäkymän kuvakkeesta.](media/power-bi-visualization-kpi/power-bi-report-view.png).
 

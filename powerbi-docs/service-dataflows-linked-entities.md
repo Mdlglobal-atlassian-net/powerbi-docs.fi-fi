@@ -2,7 +2,6 @@
 title: Entiteettien linkittäminen tietovoiden välillä Power BI:ssä
 description: Lue, miten voit linkittää entiteetit tietovoissa Power BI:ssä
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 04/02/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: d766730185a9064241621d15efc9faf31334fe95
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 31e2e681bc4309e5dce31583e70e669bce5e466f
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61136439"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73877251"
 ---
 # <a name="link-entities-between-dataflows-in-power-bi"></a>Entiteettien linkittäminen tietovoiden välillä Power BI:ssä
 

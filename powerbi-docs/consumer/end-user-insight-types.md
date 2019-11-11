@@ -2,20 +2,19 @@
 title: Power BI:n tukemat merkityksellisten tietojen tyypit
 description: Nopeat merkitykselliset tiedot ja Näytä merkitykselliset tiedot Power BI:llä.
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 10/02/2019
+ms.date: 10/31/2019
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 7f754c1164448be88a3269cb8e3d129b63a6115f
-ms.sourcegitcommit: 5410a17c6325406c9d9364585d7c26de4d9488ae
+ms.openlocfilehash: 75462c2414854d0848254a36b89bcdd1de365ec5
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72379899"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73863478"
 ---
 # <a name="types-of-insights-supported-by-power-bi"></a>Power BI:n tukemat merkityksellisten tietojen tyypit
 
@@ -32,17 +31,17 @@ Seuraavana muutamia käyttämiämme algoritmeja:
 ## <a name="category-outliers-topbottom"></a>Luokan poikkeavat havainnot (ylä/ala)
 Korostaa tapaukset, joissa mallin mittarissa yhdellä tai kahdella dimension jäsenellä on paljon suuremmat arvot kuin muilla dimension jäsenillä.  
 
-![Esimerkki luokan poikkeavista havainnoista](./media/end-user-insight-types/pbi_auto_insight_types_category_outliers.png)
+![Esimerkki luokan poikkeavista havainnoista](./media/end-user-insight-types/pbi-auto-insight-types-category-outliers.png)
 
 ## <a name="change-points-in-a-time-series"></a>Aikasarjan muutospisteet
 Korostaa kohdat, joissa tietojen aikasarjan trendeissä on merkittäviä muutoksia.
 
-![Esimerkki aikasarjan muutospisteistä](./media/end-user-insight-types/pbi_auto_insight_types_changepoint.png)
+![Esimerkki aikasarjan muutospisteistä](./media/end-user-insight-types/pbi-auto-insight-types-changepoint.png)
 
 ## <a name="correlation"></a>Korrelaatio
 Havaitsee tilanteet, joissa usea mittari osoittaa keskinäistä korrelaatiota, kun niitä verrataan tietojoukon dimensioon.
 
-![Esimerkki korrelaatiosta](./media/end-user-insight-types/pbi_auto_insight_types_correlation.png)
+![Esimerkki korrelaatiosta](./media/end-user-insight-types/pbi-auto-insight-types-correlation.png)
 
 ## <a name="low-variance"></a>Pieni varianssi
 Havaitsee tapaukset, jossa arvopisteet eivät eroa keskiarvosta huomattavasti.
@@ -52,30 +51,30 @@ Havaitsee tapaukset, jossa arvopisteet eivät eroa keskiarvosta huomattavasti.
 ## <a name="majority-major-factors"></a>Enemmistö (päätekijät)
 Etsii tapauksia, jossa kokonaisarvon enemmistön voidaan katsoa johtuneen yhdestä tekijästä, kun se jaetaan toisella dimensiolla.  
 
-![Esimerkki päätekijöistä](./media/end-user-insight-types/pbi_auto_insight_types_majority.png)
+![Esimerkki päätekijöistä](./media/end-user-insight-types/pbi-auto-insight-types-majority.png)
 
 ## <a name="overall-trends-in-time-series"></a>Aikasarjan yleiset trendit
 Havaitsee ylöspäin ja alaspäin suuntautuvat trendit aikasarjatiedoissa.
 
-![Esimerkki aikasarjan yleisistä trendeistä](./media/end-user-insight-types/pbi_auto_insight_types_trend.png)
+![Esimerkki aikasarjan yleisistä trendeistä](./media/end-user-insight-types/pbi-auto-insight-types-trend.png)
 
 ## <a name="seasonality-in-time-series"></a>Kausivaihtelu aikasarjassa
 Etsii toistuvia kuvioita aikasarjatiedoissa, kuten viikoittaista, kuukausittaista tai vuosittaista kausivaihtelua.
 
-![Esimerkki kausivaihtelusta](./media/end-user-insight-types/pbi_auto_insight_types_seasonality_new.png)
+![Esimerkki kausivaihtelusta](./media/end-user-insight-types/pbi-auto-insight-types-seasonality-new.png)
 
 ## <a name="steady-share"></a>Vakaa jako
 Korostaa tapaukset, joissa on olemassa pääkohde-alikohde-korrelaatio alikohteen osuudessa suhteessa pääkohteen yleisarvoon jatkuvassa muuttujassa.
 
-![Esimerkki vakaasta jaosta](./media/end-user-insight-types/pbi_auto_insight_types_steadyshare.png)
+![Esimerkki vakaasta jaosta](./media/end-user-insight-types/pbi-auto-insight-types-steadyshare.png)
 
 ## <a name="time-series-outliers"></a>Aikasarjan poikkeavat havainnot
 Tunnistaa aikasarjan tiedoissa erityiset päivämäärät tai ajat, joiden arvot eroavat huomattavasti muista päivä-/aika-arvoista.
 
-![Esimerkki aikasarjan poikkeavista havainnoista](./media/end-user-insight-types/pbi_auto_insight_types_time_series_outliers.png)
+![Esimerkki aikasarjan poikkeavista havainnoista](./media/end-user-insight-types/pbi-auto-insight-types-time-series-outliers.png)
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 [Power BI:n merkitykselliset tiedot](end-user-insights.md)
 
-Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
+Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](https://community.powerbi.com/)
 

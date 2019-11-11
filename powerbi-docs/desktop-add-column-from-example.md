@@ -2,7 +2,6 @@
 title: Sarakkeen lisääminen esimerkistä Power BI Desktopissa
 description: Luo nopeasti uusi sarake Power BI Desktopissa käyttämällä olemassa olevia sarakkeita esimerkkeinä
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 05/07/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: c172ca90a849ca83a1faeed5dbab3bda96698c1a
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: d07cfda18f44a0872c8c9567aa29ac49a98622a7
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65239808"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73869453"
 ---
 # <a name="add-a-column-from-an-example-in-power-bi-desktop"></a>Sarakkeen lisääminen esimerkistä Power BI Desktopissa
 Huhtikuussa 2017 julkaistusta **Power BI Desktop** -versiosta alkaen voit lisätä uusia tietosarakkeita malliin **Kyselyeditorin** avulla antamalla vähintään yksi malliarvo uudelle sarakkeelle. Voit luoda uuden sarakkeen nykyisestä valinnasta tai syöttämällä tietoja perustuen kaikkiin (tai valittuihin) sarakkeisiin tietyssä taulukossa.

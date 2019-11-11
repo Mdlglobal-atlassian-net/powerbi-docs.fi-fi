@@ -2,7 +2,6 @@
 title: Power BI:n suuren käytettävyyden, vikasietoisuuden ja järjestelmäpalautuksen usein kysytyt kysymykset
 description: Lue lisätietoja siitä, miten Power BI -palvelu varmistaa suuren käytettävyyden ja liiketoiminnan jatkuvuuden sekä järjestelmäpalautuksen käyttäjilleen.
 author: mgblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/09/2019
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: b8f98541b70c3573d9f31b5e59196cd37d322bb3
-ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
+ms.openlocfilehash: dd2c94b490cdf31bd383c7100b9a1bc372f8e75f
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71075225"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73873679"
 ---
 # <a name="power-bi-high-availability-failover-and-disaster-recovery-faq"></a>Power BI:n suuren käytettävyyden, vikasietoisuuden ja järjestelmäpalautuksen usein kysytyt kysymykset
 
@@ -23,7 +22,7 @@ Tässä artikkelissa kerrotaan, miten Power BI -palvelu varmistaa suuren käytet
 
 ## <a name="what-does-high-availability-mean-for-power-bi"></a>Mitä suuri käytettävyys tarkoittaa Power BI:ssä?
 
-Power BI on täysin hallittu palveluna tarjottava ohjelmisto eli SaaS-ohjelmisto.  Microsoft on suunnitellut sen siten ja ylläpitää sitä siten, että se on vikasietoinen infrastruktuurivioille, minkä ansiosta käyttäjien raportit ovat aina heidän käytettävissään.  Palvelulle annetaan palvelutasosopimuksessa [99,9 prosentin käytettävyysaikatakuu](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=37).
+Power BI on täysin hallittu palveluna tarjottava ohjelmisto eli SaaS-ohjelmisto.  Microsoft on suunnitellut sen siten ja ylläpitää sitä siten, että se on vikasietoinen infrastruktuurivioille, minkä ansiosta käyttäjien raportit ovat aina heidän käytettävissään.  Palvelulle annetaan palvelutasosopimuksessa [99,9 prosentin käytettävyysaikatakuu](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=37).
 
 ## <a name="what-is-a-power-bi-failover"></a>Mitä Power BI:n vikasietoisuus tarkoittaa?
 
@@ -50,7 +49,7 @@ Kummassakin tapauksessa Power BI:n johtoryhmä tekee päätöksen vikasietoisuud
 
 ## <a name="how-do-i-know-power-bi-is-now-in-failover-mode"></a>Mistä tiedän, jos Power BI on vikasietotilassa?
 
-Power BI -tukisivulla ([https://powerbi.microsoft.com/en-us/support/](https://powerbi.microsoft.com/en-us/support/)) julkaistaan ilmoitus. Ilmoituksessa kerrotaan tärkeimmät toiminnot, jotka eivät ole käytettävissä vikasietoisuuden aikana (esimerkiksi julkaisu, päivitys, koontinäytön luominen ja monistaminen sekä käyttöoikeuksien muutokset).
+Power BI -tukisivulla ([https://powerbi.microsoft.com/support/](https://powerbi.microsoft.com/support/)) julkaistaan ilmoitus. Ilmoituksessa kerrotaan tärkeimmät toiminnot, jotka eivät ole käytettävissä vikasietoisuuden aikana (esimerkiksi julkaisu, päivitys, koontinäytön luominen ja monistaminen sekä käyttöoikeuksien muutokset).
 
 ## <a name="how-long-does-it-take-power-bi-to-fail-over"></a>Kuinka kauan Power BI:n vikasietoisuuden toteutus kestää?
 

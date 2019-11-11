@@ -2,7 +2,6 @@
 title: Johdatus raporttinäkymien ruutuihin Power BI -suunnittelijoille
 description: Tässä artikkelissa kuvataan Power BI:n koontinäyttöruudut. Ne sisältävät ruudut, jotka on luotu SQL Server Reporting Services (SSRS) raporteista.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 ms.custom: seodec18
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/12/2019
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 4577ca5d12002e18406b66036244d895fa7ee5fd
-ms.sourcegitcommit: d12bc6df16be1f1993232898f52eb80d0c9fb04e
+ms.openlocfilehash: 801af5e9c4d5306a3e77d4e82c787cc90e9cac37
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68994867"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73872793"
 ---
 # <a name="intro-to-dashboard-tiles-for-power-bi-designers"></a>Johdatus raporttinäkymien ruutuihin Power BI -suunnittelijoille
 
@@ -99,8 +98,8 @@ Kun valitset ruudun, seuraavaksi tapahtuva asia riippuu siitä, miten ruutu on l
 - [Johdatus raporttinäkymiin Power BI -kehittäjille](service-dashboards.md)  
 - [Tietojen päivittäminen Power BI:ssä](refresh-data.md)
 - [Power BI -palvelun peruskäsitteitä suunnittelijoille](service-basic-concepts.md)
-- [Power BI -ruutujen integrointi Office-tiedostoihin](http://blogs.msdn.com/b/powerbidev/archive/2015/09/28/integrating-power-bi-tiles-into-office-documents.aspx)
+- [Power BI -ruutujen integrointi Office-tiedostoihin](https://blogs.msdn.com/b/powerbidev/archive/2015/09/28/integrating-power-bi-tiles-into-office-documents.aspx)
 - [Reporting Services -kohteiden kiinnittäminen Power BI -koontinäyttöihin](https://msdn.microsoft.com/library/mt604784.aspx)
 
-Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/).
+Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](https://community.powerbi.com/).
 

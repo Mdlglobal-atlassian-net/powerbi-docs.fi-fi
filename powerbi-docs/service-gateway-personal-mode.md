@@ -2,7 +2,6 @@
 title: Henkilökohtaisten yhdyskäytävien käyttö Power BI:ssä
 description: Tämä sisältää tietoja Power BI:n paikallisesta tietoyhdyskäytävästä (henkilökohtainen tila), jota käyttäjät voivat käyttää yhteyden muodostamisessa paikallisiin tietoihin.
 author: mgblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 07/15/2019
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: b910f20935c76f8723d8ca876cb57d811976772b
-ms.sourcegitcommit: 73228d0a9038b8369369c059ad06168d2c5ff062
+ms.openlocfilehash: 5138536fca255638e2cef802b885be1f5dfcbef9
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "68729933"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73881514"
 ---
 # <a name="use-personal-gateways-in-power-bi"></a>Henkilökohtaisten yhdyskäytävien käyttö Power BI:ssä
 
@@ -102,4 +101,4 @@ Henkilökohtaisen yhdyskäytävän nopea yhdistäminen auttaa ohittamaan määri
 
 * [Paikallisen tietoyhdyskäytävän välityspalvelinasetusten määrittäminen](/data-integration/gateway/service-gateway-proxy)  
 
-Onko sinulla kysyttävää? Kokeile [Power BI -yhteisöä](http://community.powerbi.com/).
+Onko sinulla kysyttävää? Kokeile [Power BI -yhteisöä](https://community.powerbi.com/).

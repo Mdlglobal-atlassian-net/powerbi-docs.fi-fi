@@ -2,7 +2,6 @@
 title: Power BI -koontinäyttöjen ja -raporttien jakaminen työtovereiden ja muiden kanssa
 description: Miten voit jakaa Power BI -koontinäytöt ja -raportit työtovereiden kanssa organisaatiosi sisä- ja ulkopuolella ja mitä sinun pitää tietää jakamisesta.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: lukaszp
 featuredvideoid: 0tUwn8DHo3s
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/19/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: da7b8999dfb6185b044960dde7795008d7e716f7
-ms.sourcegitcommit: 4a3afe761d2f4a5bd897fafb36b53961739e8466
+ms.openlocfilehash: 05a134f50f9a09ae5b51578a5e4e5f0a01a95740
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/20/2019
-ms.locfileid: "69655119"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73871523"
 ---
 # <a name="share-power-bi-dashboards-and-reports-with-coworkers-and-others"></a>Power BI -koontinäyttöjen ja -raporttien jakaminen työtovereiden ja muiden kanssa
 *Jakaminen* on kätevä keino myöntää parille henkilölle käyttöoikeus luomiisi koontinäyttöihin ja raportteihin. Power BI tarjoaa myös [useita muita tapoja tehdä yhteistyötä ja jakaa koontinäyttöjä ja raportteja](service-how-to-collaborate-distribute-dashboards-reports.md).
@@ -167,5 +166,5 @@ Jotta voit jakaa koontinäytön tai raportin, tarvitset käyttöoikeuden jakaa u
 * Haluatko antaa palautetta? Anna ehdotuksia siirtymällä [Power BI -yhteisön sivustolle](https://community.powerbi.com/).
 * [Miten voin työstää koontinäyttöjä ja raportteja yhdessä muiden kanssa sekä jakaa niitä?](service-how-to-collaborate-distribute-dashboards-reports.md)
 * [Suodatetun Power BI -raportin jakaminen](service-share-reports.md)
-* Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/).
+* Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](https://community.powerbi.com/).
 

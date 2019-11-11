@@ -2,7 +2,6 @@
 title: Luo mukautettuja Power BI -vastaussivuja Cortanaa varten
 description: Luo mukautettuja vastaussivuja Cortanaa varten Power BI:ssä
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,18 +9,18 @@ ms.topic: conceptual
 ms.date: 05/29/2019
 ms.author: maggies
 LocalizationGroup: Create reports
-ms.openlocfilehash: bb0f6febfaee30c3eab3ce8b8aa618eb09c464bf
-ms.sourcegitcommit: 8bf2419b7cb4bf95fc975d07a329b78db5b19f81
-ms.translationtype: MT
+ms.openlocfilehash: 06f155676dffa7b5f87ce61a8b342708793ef2c6
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66375234"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73853737"
 ---
 # <a name="use-power-bi-service-or-power-bi-desktop-to-create-a-custom-answer-page-for-cortana"></a>Käytä Power BI -palvelua tai Power BI Desktopia luodaksesi mukautettuja vastaussivuja Cortanaa varten
 Hyödynnä Power BI:n kaikkia ominaisuuksia ja luo erityisiä raporttisivuja, joita kutsutaan *Cortana-vastaussivuiksi* (sekä joskus nimellä *Cortana-vastauskortit*), ja jotka on suunniteltu vastaamaan erityisesti Cortana-kysymyksiin.
 
 > [!IMPORTANT]
-> Power BI-ollaan poistamassa Cortanan integrointia tuetaan. Alkaen kesäkuussa 11 Cortana ei enää toimi koontinäytöille ja raporteille.
+> Cortanan integrointi on vanhentumassa Power BI:ssä. 11. kesäkuuta alkaen Cortana ei enää toimi koontinäyttöjen ja raporttien kanssa.
 
 ![](media/service-cortana-answer-cards/power-bi-cortana.png)
 
@@ -96,5 +95,5 @@ Tulokset, joiden vastauksilla on suuri pistemäärä (kuten täydellinen vastaav
 
 Mitä jos Cortana ei vieläkään toimi Power BI:ssä?  Kokeile [Cortanan vianmääritystä](service-cortana-troubleshoot.md).
 
-Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
+Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](https://community.powerbi.com/)
 

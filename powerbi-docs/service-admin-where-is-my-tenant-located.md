@@ -2,7 +2,6 @@
 title: Missä Power BI -vuokraajani sijaitsee?
 description: Saat lisätietoja Power BI -vuokraajan sijainnista ja siitä, miten se valitaan. Tämä on tärkeää oppia, sillä se vaikuttaa vuorovaikutukseen, jota sinulla on palvelun kanssa.
 author: mgblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/09/2019
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 621b15d682cf2992559f76fa9f8f18bfe68ac93b
-ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
+ms.openlocfilehash: 3f12e6f0b54f85ebd626b2bd35bf1a03d513c17a
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71074167"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73873339"
 ---
 # <a name="where-is-my-power-bi-tenant-located"></a>Missä Power BI -vuokraajani sijaitsee?
 
@@ -44,5 +43,5 @@ Power BI valitsee lähimpänä tätä valintaa olevan tietoalueen, joka määrit
 > [!IMPORTANT]
 > Valintaa ei voi muuttaa vuokraajan luomisen jälkeen.
 
-Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
+Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](https://community.powerbi.com/)
 

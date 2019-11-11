@@ -2,7 +2,6 @@
 title: Excel-tiedostoon OneDrivessa linkitetyn koontinäytön jakaminen – Power BI
 description: Lue lisätietoja OneDrive for Businessissa olevaan Excel-työkirjaan yhdistettyjen koontinäyttöjen jakamisesta, kun niihin on kiinnitetty ruutuja kyseisestä työkirjasta.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 7157ddd66c651519f59eb964f5fcf95eb127943c
-ms.sourcegitcommit: 762857c8ca09ce222cc3f8b006fa1b65d11e4ace
+ms.openlocfilehash: ee32d10ffeb22160b054661ca91c46890a877fa3
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66721436"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73871477"
 ---
 # <a name="share-a-power-bi-dashboard-that-links-to-an-excel-file-in-onedrive"></a>Jaa Power BI -koontinäyttö, joka on linkitetty Excel-tiedostoon OneDrivessa
 Voit Power BI:ssä [muodostaa yhteyden Excel-työkirjoihin OneDrive for Businessissa](service-excel-workbook-files.md) ja kiinnittää ruutuja koontinäyttöihin kyseisestä työkirjasta. Kun jakaa tämän koontinäytön tai luot sisältöpaketin, joka sisältää kyseisen koontinäytön:
@@ -57,5 +56,5 @@ Koontinäytön jakaminen Power BI -työtilasta tapahtuu samankaltaisesti kuin ko
 ## <a name="next-steps"></a>Seuraavat vaiheet
 * [Ruudun kiinnittäminen Power BI:n koontinäyttöön Excelistä](service-dashboard-pin-tile-from-excel.md)
 * [Power BI -palvelun peruskäsitteitä suunnittelijoille](service-basic-concepts.md)
-* Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
+* Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](https://community.powerbi.com/)
 
