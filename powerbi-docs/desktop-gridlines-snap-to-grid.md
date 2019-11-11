@@ -2,7 +2,6 @@
 title: Ruudukon ja Kohdista ruudukkoon -toiminnon käyttö Power BI Desktop -raporteissa
 description: Käytä ruudukkoa, Kohdista ruudukkoon, Z-järjestys, tasaus ja jakelu Power BI Desktop-raporteissa
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.custom: seodec18
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: b304a917e2b3e09e93f7f01b3b31d75023777bb2
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: b7be8601a535843fc012cf7ea0f2ae723ea6ba79
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65454306"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73878205"
 ---
 # <a name="use-gridlines-and-snap-to-grid-in-power-bi-desktop-reports"></a>Ruudukon ja Kohdista ruudukkoon -toiminnon käyttö Power BI Desktop -raporteissa
 **Power BI Desktop** -raportin pohja sisältää ruudukoita, joiden avulla voit siististi tasata raporttisivun visualisoinnit. Sen avulla voit käyttää Kohdista ruudukkoon -toimintoa, jolloin raporttisi visualisoinnit näyttävät siisteiltä, ovat tasattuja ja tasaisin välein.

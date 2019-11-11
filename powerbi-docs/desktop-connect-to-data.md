@@ -2,7 +2,6 @@
 title: Tietoihin yhdistäminen Power BI Desktopissa
 description: Tietoihin yhdistäminen Power BI Desktopissa
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.custom: seodec18
 ms.service: powerbi
@@ -11,15 +10,15 @@ ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 0a582eb5c160685784c6db497353f92d2dd3d2cf
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: b9e006cb14d391b82c7a1f48ba760ad9c363062c
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65514129"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73878478"
 ---
 # <a name="connect-to-data-in-power-bi-desktop"></a>Tietoihin yhdistäminen Power BI Desktopissa
-Power BI Desktopilla voit helposti muodostaa yhteyden alati laajenevaan tietomaailmaan. Jos sinulla ei ole Power BI Desktopia, voit [ladata](http://go.microsoft.com/fwlink/?LinkID=521662) ja asentaa sen.
+Power BI Desktopilla voit helposti muodostaa yhteyden alati laajenevaan tietomaailmaan. Jos sinulla ei ole Power BI Desktopia, voit [ladata](https://go.microsoft.com/fwlink/?LinkID=521662) ja asentaa sen.
 
 Power BI Desktopissa on käytössä *monenlaisia* tietolähteitä. Seuraavassa kuvassa näytetään, miten voit yhdistää tietoihin, valitsemalla **Tiedosto**-valintanauhan ja sitten **Nouda tiedot \> Lisää**.
 
@@ -32,7 +31,7 @@ Kuvittele, että jäät eläkkeelle ja haluat asumaan sinne, jossa on paljon aur
 
 Joka tapauksessa löydät verkkoresurssin, joka sisältää kiinnostavaa tietoa näistä ja muista aiheista:
 
-[*http://www.bankrate.com/finance/retirement/best-places-retire-how-state-ranks.aspx*](http://www.bankrate.com/finance/retirement/best-places-retire-how-state-ranks.aspx)
+[*https://www.bankrate.com/finance/retirement/best-places-retire-how-state-ranks.aspx*](https://www.bankrate.com/finance/retirement/best-places-retire-how-state-ranks.aspx)
 
 Valitse **Nouda tiedot \> Verkko**  ja kirjoita osoite.
 
@@ -75,7 +74,7 @@ Voit tehdä kaikenlaista Power BI Desktopilla. Saat lisätietoja sen toiminnoist
 * [Tietojen muotoilu ja yhdistäminen Power BI Desktopissa](desktop-shape-and-combine-data.md)
 * [Yleiset kyselytehtävät Power BI Desktopissa](desktop-common-query-tasks.md)   
 
-Haluatko antaa palautetta? Hienoa – Käytä **Lähetä idea** -valikon kohtaa Power BI Desktopissa tai katso [yhteisön palautetta](http://community.powerbi.com/t5/Community-Feedback/bd-p/community-feedback). Odotamme kuulevamme sinusta!
+Haluatko antaa palautetta? Hienoa – Käytä **Lähetä idea** -valikon kohtaa Power BI Desktopissa tai katso [yhteisön palautetta](https://community.powerbi.com/t5/Community-Feedback/bd-p/community-feedback). Odotamme kuulevamme sinusta!
 
 ![](media/desktop-connect-to-data/sendfeedback.png)
 

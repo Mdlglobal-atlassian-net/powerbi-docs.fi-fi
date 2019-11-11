@@ -3,18 +3,17 @@ title: Nouda enemmän tietoja Power BI:stä
 description: Tässä artikkelissa kuvataan suurten tietojoukkojen segmentoidun noudon ottaminen käyttöön Power BI:n visualisoinneille.
 author: KesemSharabi
 ms.author: kesharab
-manager: rkarlin
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: b67977abd93b3aa605430dd2d7fb516ca33bd51c
-ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
+ms.openlocfilehash: 6c79673e9d4b7edc95bdfe0373bb8a47d9fe587b
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71194062"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73880107"
 ---
 # <a name="fetch-more-data-from-power-bi"></a>Nouda enemmän tietoja Power BI:stä
 

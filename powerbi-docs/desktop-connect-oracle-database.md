@@ -2,7 +2,6 @@
 title: Oracle-tietokantaan yhdistäminen
 description: Ohjeet ja Oracle-tietokannan Power BI Desktopiin yhdistämiseen tarvittavat ladattavat tiedostot
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 08/29/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 3dce16287c9cdcb7882e332e338137f7598b4010
-ms.sourcegitcommit: a00fe5fb545c3df13b7cd13a701fd6a2b2521a17
+ms.openlocfilehash: 7c91095cf321fed56a0cb1c3c6bd1113f380a524
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/31/2019
-ms.locfileid: "70200899"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73878499"
 ---
 # <a name="connect-to-an-oracle-database"></a>Oracle-tietokantaan yhdistäminen
 Yhteyden muodostaminen Oracle-tietokantaan **Power BI Desktopilla** edellyttää, että tietokoneessa on asennettuna Power BI Desktop ja oikea Oracle-asiakasohjelmisto. Oracle-asiakasohjelmiston versio (**32-bittinen** vai **64-bittinen**) määräytyy tietokoneeseen asennetun Power BI Desktop -version mukaan.
@@ -30,11 +29,11 @@ Voit selvittää asennettuna olevan Power BI Desktop -version valitsemalla **Tie
 ## <a name="installing-the-oracle-client"></a>Oracle-asiakasohjelman asentaminen
 **32-bittiset** Power BI Desktop -versiot: Lataa **32-bittinen** Oracle-asiakasohjelma seuraavasta linkistä ja asenna se tietokoneeseen:
 
-* [32-bit Oracle Data Access Components (ODAC) with Oracle Developer Tools for Visual Studio (12.1.0.2.4)](http://www.oracle.com/technetwork/topics/dotnet/utilsoft-086879.html)
+* [32-bit Oracle Data Access Components (ODAC) with Oracle Developer Tools for Visual Studio (12.1.0.2.4)](https://www.oracle.com/technetwork/topics/dotnet/utilsoft-086879.html)
 
 **64-bittiset** Power BI Desktop -versiot: Lataa **64-bittinen** Oracle-asiakasohjelma seuraavasta linkistä ja asenna se tietokoneeseen:
 
-* [64-bit ODAC 12c Release 4 (12.1.0.2.4) for Windows x64](http://www.oracle.com/technetwork/database/windows/downloads/index-090165.html)
+* [64-bit ODAC 12c Release 4 (12.1.0.2.4) for Windows x64](https://www.oracle.com/technetwork/database/windows/downloads/index-090165.html)
 
 ## <a name="connect-to-an-oracle-database"></a>Oracle-tietokantaan yhdistäminen
 Kun tietokoneessa on asennettuna vastaava Oracle-asiakasohjelman ohjain, voit muodostaa yhteyden Oracle-tietokantaan. Voit muodostaa yhteyden seuraavasti:

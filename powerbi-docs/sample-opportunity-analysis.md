@@ -2,7 +2,6 @@
 title: 'Mahdollisuusanalyysimalli Power BI:lle: aloita esittely'
 description: 'Mahdollisuusanalyysimalli Power BI:lle: aloita esittely'
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 07/02/2019
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: 233b4c36b5e59b38c82f5c3ccc1f0b49b70c5ac8
-ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
+ms.openlocfilehash: d871fa15c999e5b6c83b0334d6c978b2ba3c9870
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68523474"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73858698"
 ---
 # <a name="opportunity-analysis-sample-for-power-bi-take-a-tour"></a>Mahdollisuusanalyysimalli Power BI:lle: aloita esittely
 
@@ -63,11 +62,11 @@ Ennen kuin voit käyttää mallia, se on ensin ladattava [sisältöpakettina](#g
 
 ### <a name="get-the-pbix-file-for-this-sample"></a>Hae tämän mallin .pbix-tiedosto
 
-Vaihtoehtoisesti voit ladata mahdollisuusanalyysimallin [.pbix-tiedostona](http://download.microsoft.com/download/9/1/5/915ABCFA-7125-4D85-A7BD-05645BD95BD8/Opportunity%20Analysis%20Sample%20PBIX.pbix), joka on suunniteltu käytettäväksi Power BI Desktopilla.
+Vaihtoehtoisesti voit ladata mahdollisuusanalyysimallin [.pbix-tiedostona](https://download.microsoft.com/download/9/1/5/915ABCFA-7125-4D85-A7BD-05645BD95BD8/Opportunity%20Analysis%20Sample%20PBIX.pbix), joka on suunniteltu käytettäväksi Power BI Desktopilla.
 
 ### <a name="get-the-excel-workbook-for-this-sample"></a>Hae tämän näytteen Excel-työkirja
 
-Jos haluat perehtyä tämän mallin tietolähteeseen, se on saatavana myös [Excel-työkirjana](http://go.microsoft.com/fwlink/?LinkId=529782). Työkirja sisältää Power View -taulukoita, joita voit tarkastella ja muokata. Saat raakatiedot näkyviin ottamalla käyttöön Tietojen analysointi -apuohjelmat ja valitsemalla sitten **Power Pivot > Hallinta**. Voit ottaa Power View- ja Power Pivot -apuohjelmat käyttöön [tutustumalla Excelin sisältämien Excel-mallien](sample-datasets.md#optional-take-a-look-at-the-excel-samples-from-inside-excel-itself) lisätietoihin.
+Jos haluat perehtyä tämän mallin tietolähteeseen, se on saatavana myös [Excel-työkirjana](https://go.microsoft.com/fwlink/?LinkId=529782). Työkirja sisältää Power View -taulukoita, joita voit tarkastella ja muokata. Saat raakatiedot näkyviin ottamalla käyttöön Tietojen analysointi -apuohjelmat ja valitsemalla sitten **Power Pivot > Hallinta**. Voit ottaa Power View- ja Power Pivot -apuohjelmat käyttöön [tutustumalla Excelin sisältämien Excel-mallien](sample-datasets.md#optional-take-a-look-at-the-excel-samples-from-inside-excel-itself) lisätietoihin.
 
 ## <a name="what-is-our-dashboard-telling-us"></a>Mitä koontinäyttö kertoo?
 Myyntipäällikkö on luonut koontinäytön itselleen tärkeimpien arvojen seuraamista varten. Kun hän näkee jotakin mielenkiintoista, hän voi valita ruudun ja perehtyä tietoihin tarkemmin:

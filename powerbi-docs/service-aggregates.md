@@ -2,7 +2,6 @@
 title: Koosteiden (kuten summa ja keskiarvo) käsitteleminen Power BI -palvelussa
 description: Opi muuttamaan kaavion koostetta (kuten summa ja keskiarvo) Power BI -palvelussa.
 author: mgblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -11,12 +10,12 @@ ms.date: 05/03/2019
 ms.author: mblythe
 ms.custom: seodec18
 LocalizationGroup: Reports
-ms.openlocfilehash: 7cee05df6a7d13e18bc31bc1a1f34a5f89711c0d
-ms.sourcegitcommit: b602cdffa80653bc24123726d1d7f1afbd93d77c
+ms.openlocfilehash: 595b5743450aeb8ae6f6e60157742e3563a28fdd
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "65710567"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73873300"
 ---
 # <a name="work-with-aggregates-sum-average-and-so-on-in-the-power-bi-service"></a>Koosteiden (kuten summa ja keskiarvo) käsitteleminen Power BI -palvelussa
 
@@ -50,7 +49,7 @@ Koosteiden käsitteleminen Power BI -palvelussa voi vaikuttaa sekavalta. Sinulla
 
 Yleensä taustalla oleva ongelma on tietojoukon kentän kuvaus. Tietojoukon omistaja on ehkä määrittänyt kentän tekstiksi, mikä selittää, miksi Power BI ei voi laskea sen summaa tai keskiarvoa. Valitettavasti [vain tietojoukon omistaja voi muuttaa kenttien luokittelun tapaa](desktop-measures.md). Jos sinulla on tietojoukkoon omistajan käyttöoikeudet joko Power BI Desktopissa tai ohjelmassa, jolla tietojoukko luotiin (kuten Excel), voit siksi korjata ongelman. Muussa tapauksessa tarvitset muuttamiseen tietojoukon omistajan apua.  
 
-Tämän artikkelin lopussa on erikoisosa nimeltä [**Huomioon otettavat seikat ja vianmääritys**](#considerations-and-troubleshooting). Siinä on vihjeitä ja ohjeita. Jos et löydä vastausta osiosta, julkaise kysymys [Power BI -yhteisön keskustelupalstalla](http://community.powerbi.com). Saat vastauksen pikaisesti suoraan Power BI -tiimiltä.
+Tämän artikkelin lopussa on erikoisosa nimeltä [**Huomioon otettavat seikat ja vianmääritys**](#considerations-and-troubleshooting). Siinä on vihjeitä ja ohjeita. Jos et löydä vastausta osiosta, julkaise kysymys [Power BI -yhteisön keskustelupalstalla](https://community.powerbi.com). Saat vastauksen pikaisesti suoraan Power BI -tiimiltä.
 
 ## <a name="change-how-a-numeric-field-is-aggregated"></a>Numeerisen kentän koostetavan muuttaminen
 
@@ -188,4 +187,4 @@ Kysymys:  En näe **Älä tee yhteenvetoa** -vaihtoehtoa avattavassa luettelossa
 
 Vastaus:  Yritä poistaa kenttä ja lisätä se sitten takaisin.
 
-Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
+Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](https://community.powerbi.com/)

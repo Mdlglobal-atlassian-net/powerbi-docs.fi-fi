@@ -2,19 +2,18 @@
 title: Power BI -raporttipalvelimen selaintuki
 description: Tietoa siitä, mitä selainversioita tuetaan Power BI -raporttipalvelimen ja raporttien katseluohjelman ohjausobjektien hallintaan ja tarkasteluun.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 10/24/2018
 ms.author: maggies
-ms.openlocfilehash: 5a2ca653a06efbde161899602536b05c8f6ab666
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 724bd7a9a11c42520c520019f1c4a67415aa5487
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "64769759"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73874299"
 ---
 # <a name="browser-support-for-power-bi-report-server"></a>Power BI -raporttipalvelimen selaintuki
 Tietoa siitä, mitä selainversioita tuetaan Power BI -raporttipalvelimen ja raporttien katseluohjelman ohjausobjektien hallintaan ja tarkasteluun.
@@ -115,7 +114,7 @@ Käytä selainta, jossa on käytössä komentosarjojen tuki. Jos selain ei voi s
 [Järjestelmänvalvojan yleiskatsaus](admin-handbook-overview.md)  
 [Power BI -raporttipalvelimen asentaminen](install-report-server.md)  
 [Raportin muodostimen lataaminen](https://www.microsoft.com/download/details.aspx?id=53613)  
-[SQL Server Data Tools (SSDT) -työkalujen lataaminen](http://go.microsoft.com/fwlink/?LinkID=616714)
+[SQL Server Data Tools (SSDT) -työkalujen lataaminen](https://go.microsoft.com/fwlink/?LinkID=616714)
 
 Onko sinulla muuta kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
 

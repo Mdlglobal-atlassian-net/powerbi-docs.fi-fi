@@ -2,7 +2,6 @@
 title: Laskettujen sarakkeiden käyttäminen Power BI Desktopissa
 description: Lasketut sarakkeet Power BI Desktopissa
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 05/07/2019
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: 805e052a2d5b493705c604d1817fc03c0a8b5376
-ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
+ms.openlocfilehash: 10c6f9f512c1b8c837842247d9dc928e8e065451
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68522212"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73876623"
 ---
 # <a name="using-calculated-columns-in-power-bi-desktop"></a>Laskettujen sarakkeiden käyttäminen Power BI Desktopissa
 Laskettujen sarakkeiden avulla voit lisätä uutta tietoa taulukkoon, joka on jo mallissasi. Sen sijaan, että hakisit ja lataisit arvoja uuteen sarakkeeseen tietolähteestä, luot Data Analysis Expressions (DAX) -kaavan, joka määrittää sarakkeen arvot. Power BI Desktopissa lasketut sarakkeet luodaan käyttämällä raporttinäkymän Uusi sarake -toimintoa.

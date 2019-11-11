@@ -2,7 +2,6 @@
 title: 10 vinkkiä ohjeiden saamiseen, kun sinulla on Power BI:tä koskevia kysymyksiä
 description: Tässä on 10 tapaa, joilla voit saada ohjeita, kun sinulla on kysyttävää Power BI:n toiminnasta
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 06/28/2018
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: 668df24e8e4df2257a78a5f7a843abc65df3ef8f
-ms.sourcegitcommit: d441d350504f8c6d9e100d229757add6237f0bef
+ms.openlocfilehash: ee272f32dbce4630f8b834187e05fda5739df7be
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73060312"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73876938"
 ---
 # <a name="10-tips-for-getting-help-with-your-power-bi-questions"></a>10 vinkkiä ohjeiden saamiseen, kun sinulla on Power BI:tä koskevia kysymyksiä
 Turhaudutko joskus Power BI:tä käyttäessäsi tai oletko pulassa, koska et saa vastauksia Power BI:tä koskeviin kysymyksiisi juuri silloin kun tarvitset niitä? 
@@ -55,7 +54,7 @@ Voit etsiä verkosta seuraavien kaltaisia lisävaihtoehtoja:
 * Etsi henkilökohtaisia ”**Dashboard in a Day**” -koulutusistuntoja.
 
 ## <a name="7-ask-or-search-in-the-power-bi-community"></a>7 Kysy tai etsi Power BI -yhteisössä
-Voit esittää kysymyksiä ja etsiä vastauksia [Power BI -yhteisössä](http://community.powerbi.com). BI-asiantuntijat ympäri maailman ovat aktiivisia yhteisössä. Voit hyödyntää heidän tietämystään käyttämällä tätä resurssia.
+Voit esittää kysymyksiä ja etsiä vastauksia [Power BI -yhteisössä](https://community.powerbi.com). BI-asiantuntijat ympäri maailman ovat aktiivisia yhteisössä. Voit hyödyntää heidän tietämystään käyttämällä tätä resurssia.
 
 ## <a name="8-join-or-create-a-power-bi-user-group"></a>8 Liity Power BI -käyttäjäryhmään tai luo sellainen
 Liity [Power BI -käyttäjäryhmään](https://community.powerbi.com/t5/Power-BI-User-Groups/ct-p/Groups) ja pyydä ryhmältä vastauksia kysymyksiisi. Vaihtoehtoisesti voit perustaa oman käyttäjäryhmän ja luoda yhteisön, jonka jäsenet auttavat toisiaan, omien tarpeidesi pohjalta: omalla alueellasi, omille tiedoillesi ja omalla aikavyöhykkeelläsi.
@@ -70,5 +69,5 @@ Saatat esimerkiksi miettiä, voitko jakaa koontinäyttöjä käyttöoikeusryhmä
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 * [Mikä on Power BI?](fundamentals/power-bi-overview.md)
-* Voit esittää kysymyksiä [Power BI -yhteisössä](http://community.powerbi.com/)
+* Voit esittää kysymyksiä [Power BI -yhteisössä](https://community.powerbi.com/)
 * Eikö ongelma ratkennut? Käy [Power BI -tukisivulla](https://powerbi.microsoft.com/support/)

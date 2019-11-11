@@ -2,7 +2,6 @@
 title: Raporttiteemojen käyttäminen Power BI Desktopissa
 description: Lue ohjeet mukautetun värivalikoiman käyttöön ja sen käyttöön kokonaisessa raportissa Power BI Desktopissa.
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/26/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 64be68398ffa2ab8323307b45b5bff09ec511090
-ms.sourcegitcommit: e2c5d4561455c3a4806ace85defbc72e4d7573b4
+ms.openlocfilehash: c97316b0509f7d243befa5cfe5310aa0f5826335
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "71327849"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73880003"
 ---
 # <a name="use-report-themes-in-power-bi-desktop"></a>Raporttiteemojen käyttäminen Power BI Desktopissa
 **Raporttiteemojen** avulla voit soveltaa rakennemuutoksia koko raporttiin, esimerkiksi käyttää yrityksen värejä, muuttaa kuvakejoukkoja tai ottaa käyttöön visualisointien uuden oletusarvoisen muotoilun. Kun otat käyttöön **raporttiteeman**, kaikissa raporttisi visualisoinneissa ja muotoiluissa käytetään valitun teeman värejä. Muutamia poikkeuksia on, ja ne kuvataan jäljempänä tässä artikkelissa.

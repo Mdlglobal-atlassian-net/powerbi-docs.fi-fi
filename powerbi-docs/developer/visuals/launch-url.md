@@ -3,18 +3,17 @@ title: URL-käynnistysosoitteen luominen
 description: Tässä artikkelissa kuvataan, miten voit avata URL-osoitteen uudessa väli lehdessä Power BI:n visualisointien avulla.
 author: KesemSharabi
 ms.author: kesharab
-manager: rkarlin
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: 7dff03f0ad192e0598c677d41709447fbdc0688d
-ms.sourcegitcommit: 549401b0e1fad15c3603fe7f14b9494141fbb100
+ms.openlocfilehash: 1bf7bac5631e0d76864620057ba3d95fab3ba3ad
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "72307329"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73879939"
 ---
 # <a name="create-a-launch-url"></a>URL-käynnistysosoitteen luominen
 
@@ -31,12 +30,12 @@ Luomalla URL-käynnistysosoitteen voit avata uuden selainvälilehden (tai ikkuna
 Käytä `host.launchUrl()`-ohjelmointirajapinnan kutsua ja välitä kohde-URL merkkijonoargumenttina:
 
 ```typescript
-this.host.launchUrl('http://some.link.net');
+this.host.launchUrl('https://some.link.net');
 ```
 
 ## <a name="restrictions"></a>Rajoitukset
 
-* Käytä vain absoluuttisia polkuja, älä suhteellisia. Käytä esimerkiksi absoluuttista polkua, kuten `http://some.link.net/subfolder/page.html`. Suhteellista polkua `/page.html`ei avata.
+* Käytä vain absoluuttisia polkuja, älä suhteellisia. Käytä esimerkiksi absoluuttista polkua, kuten `https://some.link.net/subfolder/page.html`. Suhteellista polkua `/page.html`ei avata.
 
 * Tällä hetkellä vain *HTTP*- ja *HTTPS*-protokollat ovat tuettuja. Vältä esimerkiksi protokollia *FTP* ja *mailto*.
 

@@ -2,7 +2,6 @@
 title: Analysis Servicesin taulukkomuotoisten tietojen käyttäminen Power BI Desktopissa
 description: Analysis Servicesin taulukkomuotoiset tiedot Power BI Desktopissa
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 05/07/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 996a65bd001626fd184ac98ee76dc61c22922707
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 6ee7405b7c3d542dd824c70c17459c7078b3f0e1
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65239972"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73878836"
 ---
 # <a name="using-analysis-services-tabular-data-in-power-bi-desktop"></a>Analysis Servicesin taulukkomuotoisten tietojen käyttäminen Power BI Desktopissa
 Power BI Desktopissa on kaksi tapaa muodostaa yhteys SQL Server Analysis Servicesin taulukkomalleihin ja hakea niistä tietoja: Tutustu käyttämällä reaaliaikaista yhteyttä tai Valitse kohteet ja tuo Power BI Desktopiin.

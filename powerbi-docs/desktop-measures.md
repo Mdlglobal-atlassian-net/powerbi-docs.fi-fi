@@ -2,7 +2,6 @@
 title: Käytä mittareita Power BI Desktopissa
 description: Mittarit Power BI Desktopissa
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 07/29/2019
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: d5ada41ef4941f14118b777e37e731337a5282d0
-ms.sourcegitcommit: d04b9e1426b8544ce16ef25864269cc43c2d9f7b
+ms.openlocfilehash: c75300a05b58b82230540a1a61ae503d194d53e0
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "71715389"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73878132"
 ---
 # <a name="measures-in-power-bi-desktop"></a>Mittarit Power BI Desktopissa
 
@@ -87,7 +86,7 @@ Voit myös luoda erikoistaulukon, joka sisältää vain mittareita, jotka näkyv
 ## <a name="learn-more"></a>Lisätietoja
 Olemme antaneet lyhyen esittelyn mittareihin, mutta on olemassa paljon enemmän ohjeistuksia omien mittarien luontia varten. Tutustu [opetusohjelmaan: Omien mittarien luominen Power BI Desktopissa](desktop-tutorial-create-measures.md), josta voi ladata mallitiedoston ja saada vaiheittaiset ohjeet mittarien luomiseen.  
 
-Sukeltaaksesi syvemmälle DAX:n maailmaan, katso [DAX-perusteet Power BI Desktopissa](desktop-quickstart-learn-dax-basics.md). [Data Analysis Expressions -viite](https://msdn.microsoft.com/library/gg413422.aspx) tarjoaa yksityiskohtaisia artikkeleita jokaisesta yksittäisestä funktiosta, syntaksista, operaattoreista sekä nimeämiskäytännöistä. DAX on ollut olemassa Excelin Power Pivotissa sekä SQL Server Analysis Servicessä useita vuosia, joten saatavilla on myös monia muita käteviä resursseja. Tutki esimerkiksi [DAX Resource Center Wikiä](http://social.technet.microsoft.com/wiki/contents/articles/1088.dax-resource-center.aspx), jonne BI-yhteisön vaikutusvaltaiset jäsenet ovat jakaneet DAX-tietojaan.
+Sukeltaaksesi syvemmälle DAX:n maailmaan, katso [DAX-perusteet Power BI Desktopissa](desktop-quickstart-learn-dax-basics.md). [Data Analysis Expressions -viite](https://msdn.microsoft.com/library/gg413422.aspx) tarjoaa yksityiskohtaisia artikkeleita jokaisesta yksittäisestä funktiosta, syntaksista, operaattoreista sekä nimeämiskäytännöistä. DAX on ollut olemassa Excelin Power Pivotissa sekä SQL Server Analysis Servicessä useita vuosia, joten saatavilla on myös monia muita käteviä resursseja. Tutki esimerkiksi [DAX Resource Center Wikiä](https://social.technet.microsoft.com/wiki/contents/articles/1088.dax-resource-center.aspx), jonne BI-yhteisön vaikutusvaltaiset jäsenet ovat jakaneet DAX-tietojaan.
 
 
 

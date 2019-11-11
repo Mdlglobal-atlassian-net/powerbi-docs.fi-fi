@@ -2,19 +2,18 @@
 title: Ohjeita kapasiteetin suunnitteluun Power BI -raporttipalvelimella
 description: Tämä artikkeli tarjoaa ohjeita kapasiteetin suunnitteluun Power BI -raporttipalvelimen avulla jakamalla eri kuormituksille tehtyjen kuormitustestien tuloksia.
 author: parthsha
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 3/5/2018
 ms.author: pashah
-ms.openlocfilehash: 3631c814876c5fbb14fa2bab376b212137858b2a
-ms.sourcegitcommit: b7a9862b6da940ddebe61bc945a353f91cd0e4bd
+ms.openlocfilehash: c286e921c47b46c20cd73d4b32146093adc74d7f
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71946128"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73860134"
 ---
 # <a name="capacity-planning-guidance-for-power-bi-report-server"></a>Ohjeita kapasiteetin suunnitteluun Power BI -raporttipalvelimella
 Power BI -raporttipalvelin on omatoiminen liiketoiminta- ja yritystietojen raportointiratkaisu, jota asiakkaat voivat käyttää paikallisesti yrityksensä palomuurin suojaamana. Siinä yhdistyvät Power BI Desktopin vuorovaikutteinen raportointiominaisuus ja paikallinen SQL Server Reporting Services -palvelinympäristö. Yritysten raskas ja kasvava analytiikan käyttö ja raportointi ja yrityksen käyttäjäkannan skaalaamiseen tarvittavan laitteisto-infrastruktuurin ja ohjelmistolisenssien budjetointi voi olla haastavaa. Tämän artikkelin tarkoituksena on antaa ohjeita kapasiteetin suunnitteluun Power BI -raporttipalvelimen avulla jakamalla eri kuormituksille tehtyjen erilaisten kuormitustestien tuloksia. Organisaatioiden raportit, kyselyt ja käyttötavat vaihtelevat suuresti, mutta tässä artikkelissa esitetyt tulokset yhdessä varsinaisten testien ja niiden suoritustapojen yksityiskohtaisen kuvauksen kanssa toimivat vertailukohtana kaikille, jotka ovat aloittamassa suunnittelua Power BI -raporttipalvelimen käyttöönottamisesta.

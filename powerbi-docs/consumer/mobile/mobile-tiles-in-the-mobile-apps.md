@@ -2,19 +2,18 @@
 title: Tutustu ruutuihin Power BI -mobiilisovelluksissa
 description: Ruudut ovat reaaliaikaisia tilannevedoksia tiedoistasi kiinnitettyinä koontinäyttöön. Lue lisää vuorovaikutuksesta ruutujen kanssa Power BI -mobiilisovelluksissa.
 author: mshenhav
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 06/28/2018
 ms.author: mshenhav
-ms.openlocfilehash: 87c223c8ef0be0eac81bb672bde10023dcf79d71
-ms.sourcegitcommit: d441d350504f8c6d9e100d229757add6237f0bef
+ms.openlocfilehash: 570276b8af2862d6aab6dc806cb0c627be8ff157
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73059769"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73870045"
 ---
 # <a name="explore-tiles-in-the-power-bi-mobile-apps"></a>Tutustu ruutuihin Power BI -mobiilisovelluksissa
 Koskee seuraavia:
@@ -123,5 +122,5 @@ Power BI -mobiilisovelluksissa avaat ruutuja tarkastelutilassa ja olet vuorovaik
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 * [Mikä on Power BI?](../../fundamentals/power-bi-overview.md)
-* Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)
+* Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
 

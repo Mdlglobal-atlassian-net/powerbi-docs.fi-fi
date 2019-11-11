@@ -3,19 +3,18 @@ title: Yrityksen SSL-varmenteeseen ei luoteta -ongelman korjaaminen
 description: Kun kirjaudut sisään Power BI:n Android-sovellukseen, saatat nähdä viestin siitä, ettei todentaminen onnistunut, koska yrityksen SSL-varmenne ei ole luotettava
 .": ''
 author: paulinbar
-manager: rkarlin
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 08/28/2019
 ms.author: mshenhav
-ms.openlocfilehash: 19bcdf08d4eacff5e080bf1a2f987ea848e4bfb9
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: cde8a4bbaed9ef10940b7a102d40a8bc6009e9b9
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "70840910"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73879472"
 ---
 # <a name="fixing-corporate-ssl-certificate-is-untrusted---power-bi"></a>Yrityksen SSL-varmenne ei ole luotettava – Power BI -ongelman korjaaminen
 Kun kirjaudut sisään Microsoft Power BI:n Android-mobiilisovellukseen, saatat nähdä viestin siitä, ettei todentaminen onnistunut, koska laite ei luota yrityksen SSL-varmenteeseen. Ota yhteys yrityksesi IT-järjestelmänvalvojaan. 
@@ -41,9 +40,9 @@ Laitteesi aikavyöhykeasetukset saattavat olla väärin.
 Tarkista ne valitsemalla **Asetukset** > **Järjestelmä** > **Päivämäärä ja kellonaika**.
 
 ## <a name="custom-authentication-server"></a>Mukautettu todennuspalvelin
-Jos käytät mukautettua todennuspalvelinta, yrityksen todennuspalvelimen SSL-varmenne ei ehkä ole kelvollinen. Toimi organisaatiosi IT-osaston kanssa, ja testatkaa yrityksen todennuspalvelimen määritykset noudattamalla [tässä artikkelissa](https://support.microsoft.com/en-us/help/3203929/using-adal-to-authenticate-from-android-devices-fails-if-additional-ce) annettuja ohjeita.
+Jos käytät mukautettua todennuspalvelinta, yrityksen todennuspalvelimen SSL-varmenne ei ehkä ole kelvollinen. Toimi organisaatiosi IT-osaston kanssa, ja testatkaa yrityksen todennuspalvelimen määritykset noudattamalla [tässä artikkelissa](https://support.microsoft.com/help/3203929/using-adal-to-authenticate-from-android-devices-fails-if-additional-ce) annettuja ohjeita.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
-* [Lataa Android-sovellus](http://go.microsoft.com/fwlink/?LinkID=544867) Androidin sovelluskaupasta.
-* Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/) 
+* [Lataa Android-sovellus](https://go.microsoft.com/fwlink/?LinkID=544867) Androidin sovelluskaupasta.
+* Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/) 
 

@@ -2,7 +2,6 @@
 title: 'Asiakkaan tuottavuuden malli Power BI:lle: aloita esittely'
 description: 'Asiakkaan tuottavuuden malli Power BI:lle: aloita esittely'
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 07/05/2019
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: ddda7d6aaacbcde2d71371b316d14a9cd411bd43
-ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
+ms.openlocfilehash: d6368ae61b2813972c3209e2af456ba5aa5fb81b
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68523412"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73874033"
 ---
 # <a name="customer-profitability-sample-for-power-bi-take-a-tour"></a>Asiakkaan tuottavuuden malli Power BI:lle: aloita esittely
 
@@ -53,11 +52,11 @@ Ennen kuin voit käyttää mallia, se on ensin ladattava [sisältöpakettina](#g
 
 ### <a name="get-the-pbix-file-for-this-sample"></a>Hae tämän mallin .pbix-tiedosto
 
-Vaihtoehtoisesti voit ladata Asiakkaan tuottavuuden mallin [.pbix-tiedostona](http://download.microsoft.com/download/6/A/9/6A93FD6E-CBA5-40BD-B42E-4DCAE8CDD059/Customer%20Profitability%20Sample%20PBIX.pbix), joka on suunniteltu käytettäväksi Power BI Desktopilla.
+Vaihtoehtoisesti voit ladata Asiakkaan tuottavuuden mallin [.pbix-tiedostona](https://download.microsoft.com/download/6/A/9/6A93FD6E-CBA5-40BD-B42E-4DCAE8CDD059/Customer%20Profitability%20Sample%20PBIX.pbix), joka on suunniteltu käytettäväksi Power BI Desktopilla.
 
 ### <a name="get-the-excel-workbook-for-this-sample"></a>Hae tämän näytteen Excel-työkirja
 
-Jos haluat perehtyä tämän mallin tietolähteeseen, se on saatavana myös [Excel-työkirjana](http://go.microsoft.com/fwlink/?LinkId=529781). Työkirja sisältää Power View -taulukoita, joita voit tarkastella ja muokata. Saat raakatiedot näkyviin ottamalla käyttöön Tietojen analysointi -apuohjelmat ja valitsemalla sitten **Power Pivot > Hallinta**. Voit ottaa Power View- ja Power Pivot -apuohjelmat käyttöön [tutustumalla Excelin sisältämien Excel-mallien](sample-datasets.md#optional-take-a-look-at-the-excel-samples-from-inside-excel-itself) lisätietoihin.
+Jos haluat perehtyä tämän mallin tietolähteeseen, se on saatavana myös [Excel-työkirjana](https://go.microsoft.com/fwlink/?LinkId=529781). Työkirja sisältää Power View -taulukoita, joita voit tarkastella ja muokata. Saat raakatiedot näkyviin ottamalla käyttöön Tietojen analysointi -apuohjelmat ja valitsemalla sitten **Power Pivot > Hallinta**. Voit ottaa Power View- ja Power Pivot -apuohjelmat käyttöön [tutustumalla Excelin sisältämien Excel-mallien](sample-datasets.md#optional-take-a-look-at-the-excel-samples-from-inside-excel-itself) lisätietoihin.
 
 ## <a name="what-is-our-dashboard-telling-us"></a>Mitä koontinäyttö kertoo?
 

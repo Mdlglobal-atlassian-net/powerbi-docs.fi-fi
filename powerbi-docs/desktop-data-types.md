@@ -2,7 +2,6 @@
 title: Tietotyypit Power BI Desktopissa
 description: Tietotyypit Power BI Desktopissa
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: reference
 ms.date: 09/05/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: ccde7f01968a9fdcdd74903819b7083a552479b0
-ms.sourcegitcommit: c799941c8169cd5b6b6d63f609db66ab2af93891
+ms.openlocfilehash: a3ca4b8ffe709fec7953eb5d4081bdf296504eb1
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70391779"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73868525"
 ---
 # <a name="data-types-in-power-bi-desktop"></a>Tietotyypit Power BI Desktopissa
 Tässä artikkelissa kuvataan tietotyypit, joita Power BI Desktop ja Data Analysis Expressions (DAX) tukevat. 
@@ -71,7 +70,7 @@ Power BI Desktop tukee viittä päivämäärä/aika-tietotyyppiä kyselynäkymä
 **Tosi/epätosi** – totuusarvo tosi tai epätosi.
 
 ### <a name="blanksnulls-type"></a>Tyhjät/nolla-arvot-tyyppi
-**Tyhjä** – DAX-kaavan tietotyyppi, joka vastaa SQL-kielen tyhjäarvoja ja korvaa ne. Voit luoda tyhjän käyttämällä [TYHJÄ](http://msdn.microsoft.com/library/ee634820.aspx)-funktiota ja testata tyhjät käyttämällä loogista funktiota [ONTYHJÄ](https://msdn.microsoft.com/library/ee634204.aspx).
+**Tyhjä** – DAX-kaavan tietotyyppi, joka vastaa SQL-kielen tyhjäarvoja ja korvaa ne. Voit luoda tyhjän käyttämällä [TYHJÄ](https://msdn.microsoft.com/library/ee634820.aspx)-funktiota ja testata tyhjät käyttämällä loogista funktiota [ONTYHJÄ](https://msdn.microsoft.com/library/ee634204.aspx).
 
 ### <a name="table-data-type"></a>Taulukko-tietotyyppi
 DAX käyttää taulukko-tietotyyppiä monissa funktioissa, kuten koostamisissa ja aikatietojen laskutoimituksissa. Jotkin funktiot edellyttävät viittausta taulukkoon. Muut funktiot palauttavat taulukon, jota voidaan käyttää syötteenä muihin funktioihin. Joissakin funktioissa, jotka edellyttävät taulukkoa syötteeksi, voit määrittää lausekkeen, joka antaa taulukkoon arvon. Osa funktioista edellyttää viittausta perustaulukkoon. Lisätietoja tiettyjen funktioiden vaatimuksista saat [DAX Function Reference](https://msdn.microsoft.com/library/ee634396.aspx) -artikkelista.

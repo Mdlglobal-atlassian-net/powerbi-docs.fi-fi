@@ -2,7 +2,6 @@
 title: Porautumisen käyttäminen Power BI Desktopissa
 description: Lue, miten voit porautua tietoihin uudella raporttisivulla Power BI Desktopissa
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 04/10/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 7c9d400b196366609caebe9f79bb9a8130a4ad11
-ms.sourcegitcommit: 8bf2419b7cb4bf95fc975d07a329b78db5b19f81
-ms.translationtype: MT
+ms.openlocfilehash: e093788683d10bc11c09d63ba327611a67f311c0
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66375184"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73879909"
 ---
 # <a name="use-drillthrough-in-power-bi-desktop"></a>Porautumisen käyttäminen Power BI Desktopissa
 **Power BI Desktopin** **porautumisen** avulla voit luoda raporttisivun, jolla keskitytään tiettyyn entiteettiin, kuten toimittajaan, asiakkaaseen tai valmistajaan. Käyttäjä voi napsauttaa hiiren kakkospainikkeella arvopistettä raportin muilla sivuilla. Sen jälkeen hän voi porautua kohdistetulle sivulle saadakseen kyseisen kontekstin mukaisesti suodatettuja lisätietoja.
@@ -81,6 +80,6 @@ Sen enempää ei tarvita, jotta voit käyttää **porautumista** raporteissasi. 
 
 Voit olla kiinnostunut myös seuraavista artikkeleista:
 
-* [Rajat raportin porautumisen käyttäminen Power BI Desktop](desktop-cross-report-drill-through.md)
+* [Raporttien välillä porautumisen käyttäminen Power BI Desktopissa](desktop-cross-report-drill-through.md)
 * [Osittajien käyttäminen Power BI Desktopissa](visuals/power-bi-visualization-slicers.md)
 

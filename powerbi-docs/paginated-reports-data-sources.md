@@ -3,18 +3,17 @@ title: Power BI:n sivutetuissa raporteissa tuetut tietolähteet
 description: Tässä artikkelissa kerrotaan Power BI -palvelun sivutetuissa raporteissa tuetuista tietolähteistä ja siitä, miten yhteys muodostaa yhteyden Microsoft Azuren SQL-tietokannan tietolähteisiin.
 author: onegoodsausage
 ms.author: andremi
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 07/19/2019
-ms.openlocfilehash: f0cc7563fc59a6c1ceeceefcf4b65b0cc1a3aa80
-ms.sourcegitcommit: 9bf3cdcf5d8b8dd12aa1339b8910fcbc40f4cbe4
+ms.openlocfilehash: fcc6e7880a3f27c6b35fe2192e76a0b2cc82abd0
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "71968661"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73874844"
 ---
 # <a name="supported-data-sources-for-power-bi-paginated-reports"></a>Power BI:n sivutetuissa raporteissa tuetut tietolähteet
 
@@ -27,7 +26,7 @@ Sivutetut raportit tukevat suoraan seuraavia tietolähteitä:
 | Tietolähde | Todentaminen | Huomautukset |
 | --- | --- | --- |
 | Azuren SQL-tietokanta <br>Azure SQL Data Warehouse | Perus, kertakirjautuminen (SSO), OAuth2 |   |
-| Azure SQL:n hallittu esiintymä | Perus | julkisen päätepisteen kautta käyttämällä Microsoft Azuren SQL-tietokantalaajennusta  |
+| Azure SQL:n hallittu esiintymä | Perustodennus | julkisen päätepisteen kautta käyttämällä Microsoft Azuren SQL-tietokantalaajennusta  |
 | Azure Analysis Services | SSO, OAuth2 |   |
 | Power BI -tietojoukko | SSO | Power BI:n Premium- ja muut kuin Premium-tietojoukot |
 | Power BI:n Premium-tietojoukko (XMLA) | SSO |   |
@@ -74,4 +73,4 @@ Jotta SSO ja OAuth2 toimivat oikein, [AAD-todennuksen tuen on oltava käytössä
 
 [Sivutetun raportin tarkasteleminen Power BI -palvelussa](paginated-reports-view-power-bi-service.md)
 
-Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
+Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](https://community.powerbi.com/)

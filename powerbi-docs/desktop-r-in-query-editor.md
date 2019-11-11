@@ -2,7 +2,6 @@
 title: R:n käyttö Power-kyselyeditorissa
 description: Käytä R:ää Power BI Desktopin kyselyeditorissa kehittyneeseen analyysiin
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.custom: seodec18
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 09/06/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: b64b4b736291ce1c3bde02010b7e583a0c3dc406
-ms.sourcegitcommit: 226b47f64e6749061cd54bf8d4436f7deaed7691
+ms.openlocfilehash: d2ba33e18701ad147cb38072461804b4528101ea
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/09/2019
-ms.locfileid: "70841518"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73877935"
 ---
 # <a name="use-r-in-query-editor"></a>R:n käyttö kyselyeditorissa
 
@@ -50,7 +49,7 @@ R-ympäristössä on oltava asennettuna [**mice**-kirjasto](https://www.rdocumen
 
 Havainnollistamme **R:n** käyttöä **kyselyeditorissa** käyttämällä esimerkkinä osakemarkkinoiden tietojoukkoa, joka on .csv-tiedostossa. Työstämme sitä seuraavien vaiheiden kautta:
 
-1. [Lataa **EuStockMarkets_NA.csv**-tiedosto](http://download.microsoft.com/download/F/8/A/F8AA9DC9-8545-4AAE-9305-27AD1D01DC03/EuStockMarkets_NA.csv). Muista, mihin tallensit sen.
+1. [Lataa **EuStockMarkets_NA.csv**-tiedosto](https://download.microsoft.com/download/F/8/A/F8AA9DC9-8545-4AAE-9305-27AD1D01DC03/EuStockMarkets_NA.csv). Muista, mihin tallensit sen.
 
 1. Lataa tiedosto **Power BI Desktopiin**: valitse **Aloitus**-valintanauhasta **Nouda tiedot > Teksti/CSV**.
 
@@ -108,7 +107,7 @@ Voimme nyt visualisoida, miten **mice**-kirjastoa käyttävä R-komentosarjakood
 Voit tallentaa kaikki valmiit visualisoinnit yhteen **Power BI Desktopin** .pbix-tiedostoon ja käyttää tietomallia ja sen R-komentosarjoja Power BI -palvelussa.
 
 > [!NOTE]
-> Voit [ladata .pbix-tiedoston](http://download.microsoft.com/download/F/8/A/F8AA9DC9-8545-4AAE-9305-27AD1D01DC03/Complete%20Values%20with%20R%20in%20PQ.pbix), jossa kaikki nämä vaiheet on suoritettu.
+> Voit [ladata .pbix-tiedoston](https://download.microsoft.com/download/F/8/A/F8AA9DC9-8545-4AAE-9305-27AD1D01DC03/Complete%20Values%20with%20R%20in%20PQ.pbix), jossa kaikki nämä vaiheet on suoritettu.
 
 Kun olet ladannut .pbix-tiedoston Power BI -palveluun, sinun on lisätoimien avulla otettava käyttöön tietojen päivitys ja päivitetyt visualisoinnit:  
 

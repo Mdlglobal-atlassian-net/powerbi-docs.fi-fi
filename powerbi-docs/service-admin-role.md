@@ -2,7 +2,6 @@
 title: Power BI -järjestelmänvalvojaroolin kuvaus
 description: Tässä artikkelissa kuvataan Power BI -palvelu järjestelmänvalvojan rooli ja sen käyttö organisaatiossasi.
 author: mgblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/09/2019
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 8b4d2382f89c48f20767cf72bc0468589c366cfe
-ms.sourcegitcommit: 02042995df12cc4e4b97eb8a369e62364eb5af36
+ms.openlocfilehash: 900734a027a0f1af76f93709f80eec8d8e8b3108
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71256434"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73856718"
 ---
 # <a name="understanding-the-power-bi-service-administrator-role"></a>Tietoja Power BI -palvelun järjestelmänvalvojan roolista
 
@@ -111,4 +110,4 @@ Voit määrittää käyttäjiä rooleihin myös PowerShellin avulla. Käyttäji�
 [Power BI:n hallinta organisaatiossa](service-admin-administering-power-bi-in-your-organization.md)  
 [Power BI -hallintaportaali](service-admin-portal.md)  
 
-Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)
+Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)

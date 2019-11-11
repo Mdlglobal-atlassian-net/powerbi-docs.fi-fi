@@ -2,7 +2,6 @@
 title: Analysis Servicesin monidimensionaaliset tiedot Power BI Desktopissa
 description: Analysis Servicesin monidimensionaaliset tiedot Power BI Desktopissa
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 08/29/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: b089c3e51ce80fdb776455519f2569ee8fa24572
-ms.sourcegitcommit: 9665997274301b228f45aa7250ba557e90164a4d
+ms.openlocfilehash: 68ae5b04f951fcc0fa8a067e60a408d1610c3fdd
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70751641"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73879653"
 ---
 # <a name="connect-to-ssas-multidimensional-models-in-power-bi-desktop"></a>Yhteyden muodostaminen SSAS-monidimensiomalleihin Power BI Desktopissa
 Power BI Desktopin kautta on mahdollista käyttää **SSAS-monidimensiomalleja**, jotka tunnetaan myös lyhenteellä **SSAS MD**.

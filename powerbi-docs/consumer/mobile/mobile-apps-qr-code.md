@@ -2,19 +2,18 @@
 title: Power BI:n QR-koodin lukeminen mobiililaitteella
 description: Power BI:n QR-koodien avulla voit yhdistää mitä tahansa todellisesta maailmasta suoraan siihen liittyviin BI-tietoihin iPhone- ja Android-laitteissa toimivissa Power BI ‑mobiilisovelluksissa.
 author: KesemSharabi
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 03/13/2018
 ms.author: mshenhav
-ms.openlocfilehash: 69c0e5279389c186471aa0a6068d88917cf6fc65
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: ba810bf416a913ddb41ab02c0afe7373e5c107f7
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "70236759"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73879201"
 ---
 # <a name="scan-a-power-bi-qr-code-from-your-mobile-device"></a>Power BI:n QR-koodin lukeminen mobiililaitteella
 Koskee seuraavia:
@@ -50,7 +49,7 @@ Jos työtoverisi ei ole jakanut koontinäyttöä tai raporttia sinulle, voit pyy
 
 ### <a name="scan-a-qr-code-from-an-external-scanner-on-your-iphone"></a>QR-koodin lukeminen iPhonella ulkoisen viivakoodinlukijan avulla
 1. Avaa mikä tahansa puhelimeen asennettu viivakoodinlukija ja osoita se kohti haluttua Power BI:n QR-koodia, niin pääset välittömästi siirtymään ruutuun tai raporttiin. 
-2. Jos puhelimeesi ei ole asennettu Power BI ‑sovellusta, sinut ohjataan [Apple App Storeen, josta voit ladata sen](http://go.microsoft.com/fwlink/?LinkId=522062) iPhoneen.
+2. Jos puhelimeesi ei ole asennettu Power BI ‑sovellusta, sinut ohjataan [Apple App Storeen, josta voit ladata sen](https://go.microsoft.com/fwlink/?LinkId=522062) iPhoneen.
 
 ## <a name="scan-a-power-bi-qr-code-on-your-android-device-with-the-power-bi-scanner"></a>Power BI:n QR-koodin lukeminen Android-laitteella Power BI:n viivakoodinlukijan avulla
 1. Valitse Power BI ‑mobiilisovelluksen vasemmasta yläkulmasta yleinen siirtymispainike ![](media/mobile-apps-qr-code/power-bi-android-global-nav-icon.png). 
@@ -67,12 +66,12 @@ Jos työtoverisi ei ole jakanut koontinäyttöä tai raporttia sinulle, voit pyy
 
 ### <a name="scan-a-qr-code-from-an-external-scanner-on-your-android-device"></a>QR-koodin lukeminen Android-laitteella ulkoisen viivakoodinlukijan avulla
 1. Avaa mikä tahansa Android-laitteeseesi asennettu viivakoodinlukija ja osoita se kohti haluttua Power BI:n QR-koodia, niin pääset välittömästi siirtymään ruutuun tai raporttiin. 
-2. Jos laitteeseen ei ole asennettu Power BI ‑sovellusta, sinut ohjataan [Google Play ‑kauppaan, josta voit ladata sen](http://go.microsoft.com/fwlink/?LinkID=544867). 
+2. Jos laitteeseen ei ole asennettu Power BI ‑sovellusta, sinut ohjataan [Google Play ‑kauppaan, josta voit ladata sen](https://go.microsoft.com/fwlink/?LinkID=544867). 
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 * [Power BI:n yhdistäminen reaalimaailman tietoihin](mobile-apps-data-in-real-world-context.md) mobiilisovellusten avulla
 * [Ruudun QR-koodin luominen Power BI -palvelussa](../../service-create-qr-code-for-tile.md)
 * [Raportin QR-koodin luominen Power BI -palvelussa](../../service-create-qr-code-for-report.md)
 * Voit myös [lukea QR-koodin Power BI ja tehostettu todellisuus -sovelluksessa](mobile-mixed-reality-app.md).
-* Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)
+* Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
 

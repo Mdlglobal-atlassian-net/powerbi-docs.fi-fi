@@ -2,19 +2,18 @@
 title: iOS-laitteiden haun integrointi Power BI:n kanssa
 description: Hae ja käytä tarvitsemaasi sisältöä laitteen haun (Spotlight) avulla
 author: michalfo
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 06/03/2019
 ms.author: michalfo
-ms.openlocfilehash: 8f40781bb15b06f894a53f16d4ec6754d88e6b53
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: f89895650bb0b81533aeddbc149f225742dc9d3f
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "66817072"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73879219"
 ---
 # <a name="ios-device-search-spotlight-integration-with-power-bi-mobile-ios-app-preview"></a>iOS-laitteiden haun (Spotlight) integrointi Power BI:n iOS-mobiilisovellukseen (esikatselu)
 Hae ja käytä tarvitsemaasi sisältöä iOS-laitteen haun avulla.
@@ -51,7 +50,7 @@ Laitteen Siri-hakutoiminto sisältää myös ehdotuksia, jotka perustuvat Power 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 Saat lisätietoja Power BI -mobiilisovelluksesta seuraavasti: 
 
-* Lataa [Power BI:n iPhone-mobiilisovellus](http://go.microsoft.com/fwlink/?LinkId=522062)
+* Lataa [Power BI:n iPhone-mobiilisovellus](https://go.microsoft.com/fwlink/?LinkId=522062)
 * Seuraa [@MSPowerBI Twitterissä](https://twitter.com/MSPowerBI)
-* Liity keskusteluun [Power BI -yhteisössä](http://community.powerbi.com/)
+* Liity keskusteluun [Power BI -yhteisössä](https://community.powerbi.com/)
 

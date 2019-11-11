@@ -2,7 +2,6 @@
 title: Power BI Yhdysvaltain valtionhallinnon asiakkaille - Rekisteröityminen
 description: Yhdysvaltain valtionhallinnon asiakkaat voivat nyt tutustua siihen, miten he voivat rekisteröidä Yhdysvaltain valtionhallinnon organisaation Power BI:n Yhdysvaltain valtionhallinnon palveluun
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: ca9233f6373f8732f0996a09d7fe83ea18431f88
-ms.sourcegitcommit: d04b9e1426b8544ce16ef25864269cc43c2d9f7b
+ms.openlocfilehash: c24ed4b605b0e0d8176fc5428d6c30aa2dd131cd
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "71715315"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73872266"
 ---
 # <a name="enroll-your-us-government-organization-in-the-power-bi-service"></a>Rekisteröi Yhdysvaltain valtionhallinnon organisaatio Power BI -palveluun
 **Power BI-palvelulla** on versio, joka on saatavilla Yhdysvaltain valtionhallinnon asiakkaille osana **Office 365 US Government Community** -tilauksia. Tässä artikkelissa kuvattu **Power BI -palvelun** versio on suunniteltu Yhdysvaltain valtionhallinnon asiakkaille ja on erillinen ja erilainen kuin **Power BI -palvelun** kaupallinen versio.

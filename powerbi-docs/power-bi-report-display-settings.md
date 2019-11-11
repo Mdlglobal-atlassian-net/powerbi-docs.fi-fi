@@ -2,7 +2,6 @@
 title: Power BI -raportin sivun näyttöasetukset
 description: Raportin sivun näyttö- ja näkymäasetukset
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/29/2019
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: 97df2d6910f0215bd01875c88ea5d81d5dcc2c7c
-ms.sourcegitcommit: 762857c8ca09ce222cc3f8b006fa1b65d11e4ace
+ms.openlocfilehash: 183ce793342253775f641406620447e7b0f44020
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66720836"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73875132"
 ---
 # <a name="page-display-settings-in-a-power-bi-report"></a>Power BI -raportin sivun näyttöasetukset
 Ymmärrämme, miten tärkeää on pitää raportin asettelu pikselilleen oikeana. Joskus se voi olla hankalaa, koska sinä ja työtoverisi saatatte katsella raportteja erikokoisilta näytöiltä, joissa on erilaiset kuvasuhteet. 
@@ -80,5 +79,5 @@ Lue lisää [Power BI -raporteista](consumer/end-user-reports.md)
 
 [Power BI -palvelun peruskäsitteitä suunnittelijoille](service-basic-concepts.md)
 
-Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
+Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](https://community.powerbi.com/)
 

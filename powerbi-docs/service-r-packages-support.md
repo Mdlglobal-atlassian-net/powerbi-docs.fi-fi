@@ -2,7 +2,6 @@
 title: Lue, mitä R-paketteja tuetaan
 description: R-paketit, joita tuetaan ja joita ei tueta Power BI:ssä
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.custom: seodec18
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/16/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: edbe565d155f0c0623cfef0417cc3861dc515c15
-ms.sourcegitcommit: 4a3afe761d2f4a5bd897fafb36b53961739e8466
+ms.openlocfilehash: 1070cf40fb743fc0d4661bd067b6475ef8dc8217
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/20/2019
-ms.locfileid: "69654181"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73871695"
 ---
 # <a name="r-packages-in-the-power-bi-service"></a>R-paketit Power BI -palvelussa
 Voit käyttää tehokasta [R-ohjelmointikieltä](https://www.r-project.org/) visualisointien luomiseksi Power BI -palvelussa. Monet R-paketit ovat tuettuja Power BI -palvelussa (ja lisää tuetaan jatkuvasti), mutta joitakin paketteja ei tueta.

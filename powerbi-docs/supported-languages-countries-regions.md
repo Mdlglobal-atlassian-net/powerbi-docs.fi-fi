@@ -2,7 +2,6 @@
 title: Power BI:n tuetut kielet ja maat tai alueet
 description: Katso luettelot Power BI -palvelun, Power BI Desktopin ja Power BI:n dokumentaation tuetuista kielistä ja maista tai alueista.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/03/2019
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: efb2ee5ef0ed09cbca1a2bebf6ab3a0f8908efb8
-ms.sourcegitcommit: 9bf3cdcf5d8b8dd12aa1339b8910fcbc40f4cbe4
+ms.openlocfilehash: 951a05247a02e379c56c45176edb622e683af413
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "71968670"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73876908"
 ---
 # <a name="supported-languages-and-countriesregions-for-power-bi"></a>Power BI:n tuetut kielet ja maat tai alueet
 
@@ -126,7 +125,7 @@ Voit hankkia Power BI Desktopin kahdella tavalla: Voit ladata sen erillisenä as
 > Jos olet asentamassa Power BI Desktopia, joka on optimoitu Power BI -raporttipalvelimelle, valitset kielen latauksen yhteydessä. Lisätietoja on kohdassa [Asenna Power BI -raporttipalvelimelle optimoitu Power BI Desktop](report-server/install-powerbi-desktop.md).
 
 ### <a name="choose-a-language-for-power-bi-desktop"></a>Valitse kieli Power BI Desktopia varten 
-1. Asenna Power BI Desktop [Windows-kaupasta](http://aka.ms/pbidesktopstore) tai [erillisenä asennusohjelmana](http://aka.ms/pbiSingleInstaller).
+1. Asenna Power BI Desktop [Windows-kaupasta](https://aka.ms/pbidesktopstore) tai [erillisenä asennusohjelmana](https://aka.ms/pbiSingleInstaller).
 2. Jos haluat vaihtaa kielen, tee tietokoneella haku **Windows-asetukset**. 
 3. Valitse **Aika ja kieli**.
    
@@ -195,6 +194,6 @@ Ohje on lokalisoitu näille 10 kielelle:
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 * Onko käytössäsi jokin Power BI -mobiilisovelluksista? Katso lisätietoja artikkelista [Power BI -mobiilisovelluksissa tuetut kielet](consumer/mobile/mobile-apps-supported-languages.md).
-* Onko sinulla kysyttävää? Voit esittää kysymyksiä [Power BI -yhteisössä](http://community.powerbi.com/).
+* Onko sinulla kysyttävää? Voit esittää kysymyksiä [Power BI -yhteisössä](https://community.powerbi.com/).
 * Eikö ongelma ratkennut? Vieraile [Power BI -tukisivulla](https://powerbi.microsoft.com/support/).
 

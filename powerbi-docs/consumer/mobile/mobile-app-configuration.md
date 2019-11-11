@@ -2,19 +2,18 @@
 title: Power BI:n iOS-sovelluksen määritykset
 description: Power BI:n iOS-sovelluksen toiminnan mukauttaminen MDM-työkalun avulla
 author: paulinbar
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 06/07/2019
 ms.author: mshenhav
-ms.openlocfilehash: bc9c6dd8cd892ab0304cc5a99a3bb780486f32f0
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: c2d619489b042e523c559a16dab249b268389cd5
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "70160147"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73879422"
 ---
 # <a name="remotely-configure-power-bi-ios-app-using-mobile-device-management-mdm-tool"></a>Power BI:n iOS-sovelluksen etämääritys mobiililaitteiden hallintatyökalun (MDM) avulla
 
@@ -61,6 +60,6 @@ Kaikkia MDM-palveluita kuitenkin tuetaan. Jos käytössäsi ei ole Intunea, kats
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
-* Lataa [Power BI iPhone -mobiilisovellus](http://go.microsoft.com/fwlink/?LinkId=522062)
+* Lataa [Power BI iPhone -mobiilisovellus](https://go.microsoft.com/fwlink/?LinkId=522062)
 * Seuraa [@MSPowerBI Twitterissä](https://twitter.com/MSPowerBI)
-* Liity keskusteluun [Power BI -yhteisössä](http://community.powerbi.com/)
+* Liity keskusteluun [Power BI -yhteisössä](https://community.powerbi.com/)

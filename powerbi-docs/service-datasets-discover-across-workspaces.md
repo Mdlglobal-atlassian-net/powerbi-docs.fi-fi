@@ -2,7 +2,6 @@
 title: Eri työtilojen tietojoukkoihin perustuvien raporttien luominen (esikatselu) – Power BI
 description: Lue, miten voit jakaa tietojoukon käyttäjien kanssa koko organisaatiossa. He voivat luoda omissa työtiloissaan raportteja, jotka perustuvat sinun tietojoukollesi.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: chbraun
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 07/03/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: f8229c74a233d8bc44370380bf635527506194f0
-ms.sourcegitcommit: b439ded53bfbbb58be27ecedf93d618f5158df33
+ms.openlocfilehash: 371507eb86e1b68225e9d66ee3a1363b0e163d4f
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/04/2019
-ms.locfileid: "67567449"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73877186"
 ---
 # <a name="create-reports-based-on-datasets-from-different-workspaces-preview"></a>Eri työtilojen tietojoukkoihin perustuvien raporttien luominen (esikatselu)
 
@@ -63,4 +62,4 @@ On kahdenlaisia tuettuja tietojoukkoja. Tietojoukon omistajat voivat *ylentää*
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
 - [Tietojoukkojen käyttö eri työtiloissa (esikatselu)](service-datasets-across-workspaces.md)
-- Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)
+- Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)

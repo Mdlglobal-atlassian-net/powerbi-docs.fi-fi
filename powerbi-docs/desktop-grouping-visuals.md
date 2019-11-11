@@ -2,7 +2,6 @@
 title: Ryhmittely Power BI Desktopissa
 description: Opi visualisointien ryhmittely Power BI Desktopissa
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 08/12/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 6b6266547704077769174c2ae0a9675503f10dca
-ms.sourcegitcommit: a77977a43342db4399a4dffb862b96907d16de35
+ms.openlocfilehash: d67fbacece27ab75a3add89541dad77ce51a91f8
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/14/2019
-ms.locfileid: "69029576"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73867488"
 ---
 # <a name="use-grouping-in-power-bi-desktop"></a>Ryhmittely Power BI Desktopissa
 Kun käytät **ryhmittelyä** **Power BI Desktopissa**, voit ryhmitellä visualisointeja yhteen raporteissa. Voit ryhmitellä esimerkiksi painikkeita, tekstiruutuja, muotoja, kuvia ja luomiasi visualisointeja samalla tavalla kuin PowerPointissa. Raportin visualisointien ryhmittelemisen ansiosta voit käsitellä ryhmää samalla tavalla kuin yksittäistä objektia. Sen myötä siirtäminen, koon muuttaminen ja raportin tasojen käsitteleminen on helpompaa, nopeampaa ja intuitiivisempaa.

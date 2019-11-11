@@ -2,7 +2,6 @@
 title: Ruudun kiinnittäminen Power BI -raporttinäkymään Excelistä
 description: Kiinnitä ruutu Power BI -raporttinäkymään Excelistä OneDrive for Businessissa. Alueiden, kaavioiden ja taulukoiden kiinnittäminen
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 featuredvideoid: l8JoB7w0zJA
 ms.service: powerbi
@@ -11,18 +10,18 @@ ms.topic: conceptual
 ms.date: 05/02/2018
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 273cfbd86573a5eceaf9705ac19b0f7928b59176
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: d0f258af383327fb25c8f0e896677bbd19eca6c4
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61138585"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73877419"
 ---
 # <a name="pin-a-tile-to-a-power-bi-dashboard-from-excel"></a>Ruudun kiinnittäminen Power BI -raporttinäkymään Excelistä
 Ennen kuin voit kiinnittää ruudun Excel-työkirjasta, yhdistät kyseisen työkirjan Power BI -palveluun (app.powerbi.com). Työkirjan yhdistäminen tuo lähinnä tämän työkirjan linkitetyn vain luku -version Power BI -palveluun, ja voit näin kiinnittää alueita raporttinäkymiin. Voit kiinnittää jopa kokonaisen laskentataulukon raporttinäkymään.  
 Jos työkirja on jaettu kanssasi, voit tarkastella omistajan kiinnittämiä ruutuja, mutta et voi luoda raporttinäkymän ruutuja itse. 
 
-Lue lisää siitä, miten Excel ja Power BI toimivat yhdessä, artikkelista [Tietojen noutaminen Excel-työkirjatiedostoista](http://go.microsoft.com/fwlink/?LinkID=521962).
+Lue lisää siitä, miten Excel ja Power BI toimivat yhdessä, artikkelista [Tietojen noutaminen Excel-työkirjatiedostoista](https://go.microsoft.com/fwlink/?LinkID=521962).
 
 Seuraavassa videossa esitetään useita tapoja tuoda tietoja Excel-työkirjoista ja yhdistää tietoja niihin.
 
@@ -81,12 +80,12 @@ Työkirjan ruudun valitseminen avaa linkitetyn työkirjan Power BI:ssä. Koska t
  ![video](media/service-dashboard-pin-tile-from-excel/pin-from-excel.gif)
 
 ## <a name="considerations-and-troubleshooting"></a>Huomioon otettavat seikat ja vianmääritys
-Ominaisuudet, joita ei tueta: Power BI käyttää Excel Servicesiä työkirjan ruutujen noutamiseen. Näin ollen koska joitakin Excelin ominaisuuksia ei tueta Excel Servicesin REST-ohjelmointirajapinnassa, ne eivät näy Power BI:n ruuduissa. Esimerkki: sparkline-kaaviot, kuvakejoukon ehdollinen muotoilu ja aikaosittajat. Täydellinen luettelo ominaisuuksista, joita ei tueta, on artikkelissa [Excel Servicesin REST-ohjelmointirajapinnan ominaisuudet, joita ei tueta](http://msdn.microsoft.com/library/office/ff394477.aspx)
+Ominaisuudet, joita ei tueta: Power BI käyttää Excel Servicesiä työkirjan ruutujen noutamiseen. Näin ollen koska joitakin Excelin ominaisuuksia ei tueta Excel Servicesin REST-ohjelmointirajapinnassa, ne eivät näy Power BI:n ruuduissa. Esimerkki: sparkline-kaaviot, kuvakejoukon ehdollinen muotoilu ja aikaosittajat. Täydellinen luettelo ominaisuuksista, joita ei tueta, on artikkelissa [Excel Servicesin REST-ohjelmointirajapinnan ominaisuudet, joita ei tueta](https://msdn.microsoft.com/library/office/ff394477.aspx)
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 [Excel-työkirjaan linkittävän raporttinäkymän jakaminen](service-share-dashboard-that-links-to-excel-onedrive.md)
 
 [Tietojen noutaminen Excel-työkirjoista](service-excel-workbook-files.md)
 
-Onko sinulla muuta kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
+Onko sinulla muuta kysyttävää? [Kokeile Power BI -yhteisöä](https://community.powerbi.com/)
 

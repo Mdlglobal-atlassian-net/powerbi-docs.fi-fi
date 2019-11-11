@@ -3,18 +3,17 @@ title: Power BI Embeddedin Multi-Geo-tuki
 description: Lue, miten voit ottaa sisältöä käyttöön tietokeskuksissa muilla alueilla kuin Power BI Embeddedin kotialueella.
 author: rkarlin
 ms.author: rkarlin
-manager: kfile
 ms.reviewer: nishalit
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 02/05/2019
-ms.openlocfilehash: 57f01a458bad36c73a01adb1bc62bfd5a055a337
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 093b1e430d59a6060829b63a5bcfe17a7bb43928
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61344915"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73875805"
 ---
 # <a name="multi-geo-support-for-power-bi-embedded"></a>Power BI Embeddedin Multi-Geo-tuki
 
@@ -92,4 +91,4 @@ Lue lisätietoja Power BI Embedded -kapasiteeteista ja kaikkien kapasiteettien M
 
 * [Multi-Geo Power BI Premium -kapasiteeteissa](../service-admin-premium-multi-geo.md)
 
-Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)
+Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)

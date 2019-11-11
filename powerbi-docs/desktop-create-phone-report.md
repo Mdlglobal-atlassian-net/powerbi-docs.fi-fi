@@ -2,7 +2,6 @@
 title: Mobiilisovellusten raporttien optimointi – Power BI
 description: Lue, miten voit optimoida raporttisivuja Power BI -mobiilisovelluksille luomalla raportista erityisesti puhelimiin ja tabletteihin soveltuvan pystysuuntaisen version.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 04/18/2019
 ms.author: maggies
 LocalizationGroup: Create reports
-ms.openlocfilehash: f55d1e518c3c710503bb56539667bb652f287aa7
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 006d0e02f3b0aa7860cade4d8e035ddc299e8ba8
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61310691"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73878397"
 ---
 # <a name="optimize-reports-for-the-power-bi-mobile-apps"></a>Power BI -mobiilisovellusten raporttien optimointi
 Voit parantaa raporttiesi tarkastelua mobiilisovelluksissa luomalla pystysuuntaisen asettelun. Power BI Desktopissa ja Power BI -palvelussa voit järjestellä raporttien visualisointeja uudelleen ja muuttaa niiden kokoa saadaksesi parhaan mahdollisen käyttökokemuksen pystysuuntaisessa tilassa.  
@@ -110,5 +109,5 @@ Raportin lukijat voivat kääntää puhelimen tai tabletin sivuttain ja tarkaste
 * [Koontinäytön puhelinnäkymän luominen Power BI:ssä](service-create-dashboard-mobile-phone-view.md)
 * [Puhelimelle optimoitujen Power BI ‑raporttien tarkastelu](consumer/mobile/mobile-apps-view-phone-report.md)
 * [Mihin tahansa kokoon optimaalisten reagoivien visualisointien luominen](visuals/desktop-create-responsive-visuals.md)
-* Onko sinulla muuta kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)
+* Onko sinulla muuta kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
 

@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: f4043a5a8deac0596b58519183988f6ae574458e
-ms.sourcegitcommit: 226b47f64e6749061cd54bf8d4436f7deaed7691
+ms.openlocfilehash: 4ea1b2141cf9a072f11a3a62789c7c0ec5b500a4
+ms.sourcegitcommit: a5853ef44ed52e80eabee3757bb6887fa400b75b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/09/2019
-ms.locfileid: "70847676"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73799804"
 ---
 Voit luoda DAX:llä kahdenlaisia päälaskelmia:
 
@@ -65,7 +65,7 @@ Lasketun mittarin pakolliset elementit ovat samat kuin lasketussa sarakkeessa:
 * uuden mittarin nimi
 * ainakin yksi funktio tai lauseke.
 
-> Videon sisällön on luonut [Alberto Ferrari, SQLBI](http://www.sqlbi.com/learning-dax).
+> Videon sisällön on luonut [Alberto Ferrari, SQLBI](https://www.sqlbi.com/learning-dax).
 > 
 > 
 

@@ -2,7 +2,6 @@
 title: Koosteiden käyttäminen Power BI Desktopissa
 description: Massadatan vuorovaikutteisen analyysin tekeminen Power BI Desktopissa
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 05/07/2019
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 54264a645160542d7bda6a964164af65bfa45dfd
-ms.sourcegitcommit: fe8a25a79f7c6fe794d1a30224741e5281e82357
+ms.openlocfilehash: ab84795ff5d140f23f19184bbc40e91133854f1f
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "68325179"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73876727"
 ---
 # <a name="aggregations-in-power-bi-desktop"></a>Koosteet Power BI Desktopissa
 
@@ -60,7 +59,7 @@ Malli näkyy seuraavassa kuvassa.
 ![koostetaulukko mallissa](media/desktop-aggregations/aggregations_03.jpg)
 
 > [!NOTE]
-> **Myyntikooste**-taulukko on vain taulukko, joten se voidaan ladata monin tavoin. Koostaminen voidaan suorittaa esimerkiksi lähdetietokannassa ETL/ELT-prosessin avulla tai taulukon [M-lausekkeen](https://msdn.microsoft.com/query-bi/m/power-query-m-reference) mukaan. Se voi käyttää Tuo-tallennustilaa [Power BI Premiumin lisäävän päivityksen](service-premium-incremental-refresh.md) kanssa tai ilman sitä, tai se voi olla DirectQuery ja optimoitu nopeille kyselyille [sarakesäilöindeksejä](https://docs.microsoft.com/sql/relational-databases/indexes/columnstore-indexes-overview) käyttämällä. Joustavuus mahdollistaa tasapainotetut arkkitehtuurit, jotka jakavat kyselyn kuormituksen pullonkaulojen välttämiseksi.
+> **Myyntikooste**-taulukko on vain taulukko, joten se voidaan ladata monin tavoin. Koostaminen voidaan suorittaa esimerkiksi lähdetietokannassa ETL/ELT-prosessin avulla tai taulukon [M-lausekkeen](/powerquery-m/power-query-m-function-reference) mukaan. Se voi käyttää Tuo-tallennustilaa [Power BI Premiumin lisäävän päivityksen](service-premium-incremental-refresh.md) kanssa tai ilman sitä, tai se voi olla DirectQuery ja optimoitu nopeille kyselyille [sarakesäilöindeksejä](https://docs.microsoft.com/sql/relational-databases/indexes/columnstore-indexes-overview) käyttämällä. Joustavuus mahdollistaa tasapainotetut arkkitehtuurit, jotka jakavat kyselyn kuormituksen pullonkaulojen välttämiseksi.
 
 ### <a name="storage-mode"></a>Tallennustilan tila 
 Käytetään aiempaa esimerkkiä. **Myyntikooste**-taulukon tallennustilaksi määritetään **Tuo** kyselyjen nopeuttamiseksi.

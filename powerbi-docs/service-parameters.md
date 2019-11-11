@@ -2,7 +2,6 @@
 title: Parametriasetusten muokkaaminen Power BI -palvelussa
 description: Kyselyparametrit luodaan Power BI Desktopissa, mutta niitä voidaan tarkastella ja päivittää Power BI -palvelussa
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 11/21/2018
 ms.author: maggies
 LocalizationGroup: Create reports
-ms.openlocfilehash: 8db6f106ecc2285cb66ff980bc72fa666456f81a
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 656de2cbf318211bf2fe19f15a3867ab183f3173
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61225979"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73871966"
 ---
 # <a name="edit-parameter-settings-in-the-power-bi-service"></a>Parametriasetusten muokkaaminen Power BI -palvelussa
 Raporttien luojat lisäävät kyselyparametreja raportteihin Power BI Desktopissa. Parametrien avulle he voivat osittaa raportteja yhden tai useamman parametrin *arvon* mukaan. Raportin luoja voi esimerkiksi luoda parametrin, joka rajoittaa tiedot yhteen maahan tai yhdelle alueelle, tai parametrin, joka määrittää hyväksyttävät muodot esimerkiksi päivämäärä-, kellonaika- ja tekstikenttiin.

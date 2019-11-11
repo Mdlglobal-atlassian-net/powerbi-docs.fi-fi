@@ -3,19 +3,18 @@ title: Power BI:n suojaus
 description: Power BI:n suojaus. Miten Power BI liittyy Azure Active Directory- ja muihin Azure-palveluihin. Tässä ohjeaiheessa on myös linkki yksityiskohtaiseen raporttiin.
 author: davidiseminger
 ms.author: davidi
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 09/09/2019
 LocalizationGroup: Administration
-ms.openlocfilehash: a5dac73fd2555b0ae53b0618dbc10f831db1149b
-ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
+ms.openlocfilehash: e856c3afca0578c906a54f636dd58cd9208607a8
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71074727"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73873487"
 ---
 # <a name="power-bi-security"></a>Power BI:n suojaus
 
@@ -46,7 +45,7 @@ Pisteviiva **Back End** -klusterin kuvassa yllä osoittaa käyttäjien käytett�
 
 ## <a name="user-authentication"></a>Käyttäjän todennus
 
-Power BI käyttää Azure Active Directorya ([AAD](http://azure.microsoft.com/services/active-directory/)) Power BI -palveluun kirjautuvien käyttäjien todentamiseen, joka puolestaan käyttää Power BI -kirjautumistunnuksia aina, kun käyttäjä yrittää käyttää resursseja, jotka edellyttävät todennusta. Käyttäjät kirjautuvat Power BI -palveluun käyttämällä Power BI -tilinsä luomiseen käyttämäänsä sähköpostiosoitetta; Power BI käyttää kyseistä kirjautumissähköpostia *käytössä olevana käyttäjänimenä*, joka välitetään resursseille aina, kun käyttäjä yrittää muodostaa yhteyden tietoihin. *Käytössä oleva käyttäjänimi* yhdistetään sitten *täydelliseen käyttäjätunnukseen* ([UPN](https://msdn.microsoft.com/library/windows/desktop/aa380525\(v=vs.85\).aspx) ja ratkaistaan siihen liittyvään Windows-toimialuetilin, jota vastaan todennusta käytetään.
+Power BI käyttää Azure Active Directorya ([AAD](https://azure.microsoft.com/services/active-directory/)) Power BI -palveluun kirjautuvien käyttäjien todentamiseen, joka puolestaan käyttää Power BI -kirjautumistunnuksia aina, kun käyttäjä yrittää käyttää resursseja, jotka edellyttävät todennusta. Käyttäjät kirjautuvat Power BI -palveluun käyttämällä Power BI -tilinsä luomiseen käyttämäänsä sähköpostiosoitetta; Power BI käyttää kyseistä kirjautumissähköpostia *käytössä olevana käyttäjänimenä*, joka välitetään resursseille aina, kun käyttäjä yrittää muodostaa yhteyden tietoihin. *Käytössä oleva käyttäjänimi* yhdistetään sitten *täydelliseen käyttäjätunnukseen* ([UPN](https://msdn.microsoft.com/library/windows/desktop/aa380525\(v=vs.85\).aspx) ja ratkaistaan siihen liittyvään Windows-toimialuetilin, jota vastaan todennusta käytetään.
 
 Organisaatioissa, joissa käytetään työsähköpostiosoitteita Power BI:hin kirjautumiseen (esim. <em>david@contoso.com</em>), *käytössä oleva käyttäjänimi* on helppo yhdistää UPN:ään. Organisaatioissa, joissa ei käytetä työsähköpostiosoitteita Power BI:hin kirjautumiseen (esim. <em>david@contoso.onmicrosoft.com</em>), AAD:n ja paikallisten tunnistetietojen yhdistäminen edellyttää, että [hakemistosynkronointi](https://technet.microsoft.com/library/jj573653.aspx) toimii oikein.
 

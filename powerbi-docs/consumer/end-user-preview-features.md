@@ -2,7 +2,6 @@
 title: Esikatselutoimintojen käyttäminen
 description: Miten voit ottaa käyttöön (ja poistaa käytöstä) ominaisuuksia, jotka ovat esikatselussa.
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 09/18/2019
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: b2d658daade3ab1aa2a1c09dc33c0e7d48636910
-ms.sourcegitcommit: 200291eac5769549ba5c47ef3951e2f3d094426e
+ms.openlocfilehash: 5189c92c9da29b38d9ffaa4bf59e271e08fc4b2c
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71141496"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73862708"
 ---
 # <a name="opt-in-for-power-bi-service-preview-features"></a>Power BI -palvelun esikatselutoimintojen käyttäminen
 ## <a name="what-are-preview-features"></a>Mitä ovat *esikatseluominaisuudet*?
@@ -34,5 +33,5 @@ Kun teemme parannuksia Power B -palveluun, julkaisemme joitakin uusia toimintoja
 4. Poista esikatselutoiminnot käytöstä edellä kuvattujen vaiheiden 1-3 mukaan ja valitse vaiheessa 3 **Pois käytöstä**, tai poista valintamerkki ja valitse **Käytä**.
 
 
-Onko sinulla kysyttävää tai haluatko antaa palautetta? [Käy Power BI -yhteisön keskustelupalstalla](http://community.powerbi.com/t5/Navigation-Preview-Forum/bd-p/NavigationPreview).
+Onko sinulla kysyttävää tai haluatko antaa palautetta? [Käy Power BI -yhteisön keskustelupalstalla](https://community.powerbi.com/t5/Navigation-Preview-Forum/bd-p/NavigationPreview).
 
