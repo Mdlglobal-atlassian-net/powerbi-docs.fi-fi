@@ -2,7 +2,6 @@
 title: Työkaluvihjeiden mukautus Power BI Desktopissa
 description: Luo vetämällä ja pudottamalla mukautettuja työkaluvihjeitä visualisointeihin
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 05/07/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: d5259ba22287a8a2ade3107e4320c39713dcb45e
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: efbae4250b7b3cab18892cf519bfac5da3a88e1b
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65239755"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73868664"
 ---
 # <a name="customizing-tooltips-in-power-bi-desktop"></a>Työkaluvihjeiden mukautus Power BI Desktopissa
 Työkaluvihjeet ovat tyylikäs tapa tarjota tilannekohtaista lisätietoa ja yksityiskohtia visualisoinnin arvopisteistä. Alla olevassa kuvassa näkyy Power BI Desktopissa kaaviossa käytetty työkaluvihje.

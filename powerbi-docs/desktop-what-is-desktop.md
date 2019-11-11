@@ -2,7 +2,6 @@
 title: Mikä on Power BI Desktop?
 description: Lue, mikä Power BI Desktop on ja miten sen käytön voi aloittaa
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: overview
 ms.date: 09/19/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 575d66ad6bb10a4e7faa90f5f658e86115402400
-ms.sourcegitcommit: 200291eac5769549ba5c47ef3951e2f3d094426e
+ms.openlocfilehash: 01e5effcf5f72dd110005815e2ba86c9a6731a70
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71141961"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73865144"
 ---
 # <a name="what-is-power-bi-desktop"></a>Mikä on Power BI Desktop?
 
@@ -100,4 +99,4 @@ Kun napsautat **Julkaise**-painiketta, Power BI Desktop muodostaa yhteyden **Pow
 Jotta voit aloittaa **Power BI Desktopin** käytön, sinun on ensin ladattava ja asennettava sovellus. Saat **Power BI Desktopin** käyttöösi kahdella eri tavalla:
 
 * [Lataa Power BI Desktop verkosta](desktop-get-the-desktop.md)
-* [Lataa Power BI Desktop Windows-kaupasta](http://aka.ms/pbidesktopstore)
+* [Lataa Power BI Desktop Windows-kaupasta](https://aka.ms/pbidesktopstore)

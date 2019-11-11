@@ -3,19 +3,18 @@ title: Upotetut analyysitoiminnot Power BI -sisällön upottamiseksi sovelluksee
 description: Lue, miten voit integroida tai upottaa raportteja, koontinäyttöjä tai ruutuja sovellukseen asiakkaita varten käyttämällä upotetussa analysoinnissa Power BI -ohjelmointirajapintoja. Lue, miten voit integroida Power BI:n sovellukseesi käyttämällä upotetun analysoinnin ohjelmistoa, upotetun analysoinnin työkaluja tai upotetun liiketoimintatiedon työkaluja valtionhallintoa ja kansallisia pilvipalveluita varten.
 author: rkarlin
 ms.author: rkarlin
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: tutorial
 ms.custom: seodec18
 ms.date: 02/05/2019
-ms.openlocfilehash: bc6b9cf92966dd9e86e789169b9b8134dbfcb2ba
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 7ede1678dc6cf0e217eb17dcc28f756031467b84
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61374287"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73875878"
 ---
 # <a name="tutorial-embed-a-power-bi-content-into-your-application-for-national-clouds"></a>Opetusohjelma: Power BI -sisällön upottaminen sovellukseesi kansallisissa pilvipalveluissa
 
@@ -37,7 +36,7 @@ Kansalliset pilvipalvelut:
 
 ![Upotettu koontinäyttö](media/embed-sample-for-customers/powerbi-embed-dashboard.png)
 
-Jotta voit käydä toimia näiden vaiheittaisten ohjeiden mukaisesti, tarvitset **Power BI** -tilin. Jos sinulla ei ole tiliä, voit valita itsellesi sopivan kansallisen pilvipalvelun maasi tai hallintosi perusteella. Voit rekisteröidä esimerkiksi [ U. S. Government Power BI -tilin](../service-govus-signup.md), [Power BI for Germany Cloud -tilin](https://powerbi.microsoft.com/power-bi-germany/?ru=https%3A%2F%2Fapp.powerbi.de%2F%3FnoSignUpCheck%3D1) tai [Power BI for China cloud -tilin](http://www.21vbluecloud.com/powerbi/).
+Jotta voit käydä toimia näiden vaiheittaisten ohjeiden mukaisesti, tarvitset **Power BI** -tilin. Jos sinulla ei ole tiliä, voit valita itsellesi sopivan kansallisen pilvipalvelun maasi tai hallintosi perusteella. Voit rekisteröidä esimerkiksi [ U. S. Government Power BI -tilin](../service-govus-signup.md), [Power BI for Germany Cloud -tilin](https://powerbi.microsoft.com/power-bi-germany/?ru=https%3A%2F%2Fapp.powerbi.de%2F%3FnoSignUpCheck%3D1) tai [Power BI for China cloud -tilin](https://www.21vbluecloud.com/powerbi/).
 
 > [!NOTE]
 > Haluatko sen sijaan upottaa koontinäytön organisaatiolle? Lue ohjeet artikkelista [Koontinäytön integrointi sovellukseen organisaatiolle](integrate-dashboard.md).
@@ -150,7 +149,7 @@ Sinun on hankittava sovelluksessa **käyttöoikeustietue** Azure AD:stä, ennen 
 
 * Government Community Cloud (GCC): ```https://login.microsoftonline.com```
 
-* Military Contractors (DoDCON): ```http://login.microsoftonline.us```
+* Military Contractors (DoDCON): ```https://login.microsoftonline.us```
 
 * Military (DoD): ```https://login.microsoftonline.us```
 
@@ -445,4 +444,4 @@ Sovellusmalli on saatavilla artikkelista [Organisaation mallin upotus](https://g
 
 Huomioitavat asiat ja rajoitukset
 
-Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)
+Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)

@@ -2,7 +2,6 @@
 title: 'Opetusohjelma: Verkkosivun tietojen tuonti ja analysointi'
 description: 'Opetusohjelma: Verkkosivun tietojen tuonti ja analysointi Power BI Desktopissa'
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.custom: seodec18
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: tutorial
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Learn more
-ms.openlocfilehash: d6cdcf47b42be4a9b541aa355efb3dd5e9667204
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: e4a805db851e63a725a866065a774ef8ecc23c24
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65514626"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73879584"
 ---
 # <a name="tutorial-analyze-web-page-data-using-power-bi-desktop"></a>Opetusohjelma: Verkkosivun tietojen analysointi Power BI Desktopissa
 
@@ -29,7 +28,7 @@ Pitkäaikaisena jalkapallofanina haluat raportin UEFA Euroopan mestaruuskisojen 
 
 ## <a name="connect-to-a-web-data-source"></a>Yhteyden muodostaminen verkkotietolähteeseen
 
-Voit saada UEFA voittajatiedot tulostaulukosta UEFA mestaruuskisojen Wikipedia-sivulta osoitteesta http://en.wikipedia.org/wiki/UEFA_European_Football_Championship. 
+Voit saada UEFA voittajatiedot tulostaulukosta UEFA mestaruuskisojen Wikipedia-sivulta osoitteesta https://en.wikipedia.org/wiki/UEFA_European_Football_Championship. 
 
 ![Wikipedian tulostaulukko](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage1.png)
 
@@ -44,7 +43,7 @@ Tietojen tuominen:
    >[!NOTE]
    >Voit myös valita **Nouda tiedot** kohteen itse, tai valita **Nouda tiedot** Power BI:n **Aloita** -valintaikkunasta, valitse sitten **Verkko** ja **Kaikki** tai **Muut** **Nouda tiedot** -valintaikkunasta ja valitse vielä **Yhdistä**.
    
-2. Liitä URL-osoite **Verkosta** `http://en.wikipedia.org/wiki/UEFA_European_Football_Championship`-valintaikkunan **URL** -tekstiruutuun ja valitse sitten **OK**.
+2. Liitä URL-osoite **Verkosta** `https://en.wikipedia.org/wiki/UEFA_European_Football_Championship`-valintaikkunan **URL** -tekstiruutuun ja valitse sitten **OK**.
    
     ![Tietojen noutaminen valintaikkunasta](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/get-data-web2.png)
    
@@ -186,8 +185,8 @@ Jos haluat muuttaa kartan ympyräkaavioksi, valitse kartta ja valitse sitten **Y
 Power BI Desktop tarjoaa saumattoman kokemuksen alusta loppuun. Sen avulla voit hakea tietoja laajasta tietolähteiden joukosta ja muotoilla ne analyysitarpeidesi mukaan ja visualisoida tiedot monipuolisilla ja vuorovaikutteisilla tavoilla. Kun raportti on valmis, voit [ladata sen Power BI:hin](desktop-upload-desktop-files.md) ja luoda siihen perustuvia koontinäyttöjä, joita voit jakaa muiden Power BI -käyttäjien kanssa.
 
 ## <a name="see-also"></a>Katso myös
-* [Lue muita Power BI Desktop -opetusohjelmia](http://go.microsoft.com/fwlink/?LinkID=521937)
-* [Katso Power BI Desktop -videoita](http://go.microsoft.com/fwlink/?LinkID=519322)
-* [Käy Power BI -keskustelupalstalla](http://go.microsoft.com/fwlink/?LinkID=519326)
-* [Lue Power BI -blogia](http://go.microsoft.com/fwlink/?LinkID=519327)
+* [Lue muita Power BI Desktop -opetusohjelmia](https://go.microsoft.com/fwlink/?LinkID=521937)
+* [Katso Power BI Desktop -videoita](https://go.microsoft.com/fwlink/?LinkID=519322)
+* [Käy Power BI -keskustelupalstalla](https://go.microsoft.com/fwlink/?LinkID=519326)
+* [Lue Power BI -blogia](https://go.microsoft.com/fwlink/?LinkID=519327)
 

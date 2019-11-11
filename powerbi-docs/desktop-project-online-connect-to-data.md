@@ -2,7 +2,6 @@
 title: 'Project Online: tietoihin yhdistäminen Power BI Desktopilla'
 description: 'Project Online: tietoihin yhdistäminen Power BI Desktopilla'
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.custom: seodec18
 ms.service: powerbi
@@ -11,18 +10,18 @@ ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: b0dc84d7b2d8da0df8a9e61a43f35898d197c188
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: e3bb5f3527da11f781892fae23ae369edfe4676b
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65513772"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73878010"
 ---
 # <a name="project-online-connect-to-data-through-power-bi-desktop"></a>Project Online: tietoihin yhdistäminen Power BI Desktopilla
 Voit muodostaa Power BI Desktopilla yhteyden Project Onlinessa oleviin tietoihin.
 
 ## <a name="step-1-download-power-bi-desktop"></a>Vaihe 1: Power BI Desktopin lataaminen
-1. Hanki **Power BI Desktop** tietokoneellesi [lataamalla Power BI Desktop](http://go.microsoft.com/fwlink/?LinkID=521662) ja suorittamalla sen asennusohjelma.
+1. Hanki **Power BI Desktop** tietokoneellesi [lataamalla Power BI Desktop](https://go.microsoft.com/fwlink/?LinkID=521662) ja suorittamalla sen asennusohjelma.
 
 ## <a name="step-2-connect-to-project-online-with-odata"></a>Vaihe 2: Yhteyden muodostaminen Project Onlineen ODatan kautta
 1. Käynnistä **Power BI Desktop**.
@@ -41,5 +40,5 @@ Tilillä, jota käytät yhteyden muodostamiseksi OData-syötteeseen, on oltava P
 
 Tästä näkymästä voit valita mihin taulukoihin haluat muodostaa yhteyden ja luoda kyselyn.  Haluatko käsityksen siitä, miten pääset alkuun?  Seuraavassa blogikirjoituksessa kerrotaan, miten Project Online ‑tiedoista voidaan luoda edistymiskäyrä.  Blogikirjoituksessa puhutaan Power Queryn käyttämisestä yhteyden muodostamiseksi Project Onlineen, mutta sama koskee Power BI Desktopiakin.
 
-[Edistymiskäyrien luominen projektille Power Pivot’n ja Power Queryn avulla](http://blogs.office.com/2014/03/24/creating-burndown-charts-for-project-using-power-pivot-and-power-query/)
+[Edistymiskäyrien luominen projektille Power Pivot’n ja Power Queryn avulla](https://blogs.office.com/2014/03/24/creating-burndown-charts-for-project-using-power-pivot-and-power-query/)
 

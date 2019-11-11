@@ -2,7 +2,6 @@
 title: OneDriven .csv-tiedostosta luodun tietojoukon päivittäminen
 description: OneDriven .csv-tiedostosta luodun tietojoukon päivittäminen
 author: mgblythe
-manager: kfile
 ms.reviewer: kayu
 ms.custom: seodec18
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 09/12/2019
 ms.author: mblythe
 LocalizationGroup: Data refresh
-ms.openlocfilehash: 589f34db5009a9203ee33c13dc4931e42d68ddcb
-ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
+ms.openlocfilehash: bfa5d3409db64500b7d9832583026b73cec52b45
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71076080"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73877563"
 ---
 # <a name="refresh-a-dataset-created-from-a-csv-file-on-onedrive-or-sharepoint-online"></a>OneDriven .csv-tiedostosta tai SharePoint Onlinesta luodun tietojoukon päivittäminen
 ## <a name="what-are-the-advantages"></a>Mitkä ovat edut?

@@ -2,7 +2,6 @@
 title: Power BI -videot
 description: Power BI -videoita ja linkki YouTube-kanavalle.
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.custom: seodec18
 ms.service: powerbi
@@ -10,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
-ms.openlocfilehash: 9068c522d2aedf95fc65e9bc4bece04531db478d
-ms.sourcegitcommit: d441d350504f8c6d9e100d229757add6237f0bef
+ms.openlocfilehash: a33efaf4e0ecd871170873df072f24bf8f824cdc
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73060325"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73871163"
 ---
 # <a name="power-bi-videos"></a>Power BI -videot
 Meillä on YouTube-kanava Power BI:lle! Voit käydä [kanavallamme](https://www.youtube.com/user/mspowerbi/videos) ja, jos olet uusi Power BI:n käyttäjä, hyvä aloituspaikka on [Tietojen analysointi ja visualisointi Power BI -soittolistan avulla](https://www.youtube.com/playlist?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP).
@@ -49,5 +48,5 @@ Tutustu seuraavaan lähde- ja sisältökokoelmaan lisävideoiden löytämiseksi.
 ## <a name="next-steps"></a>Seuraavat vaiheet
 [Mikä on Power BI?](fundamentals/power-bi-overview.md)
 
-Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)
+Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
 

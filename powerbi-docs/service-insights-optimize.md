@@ -2,7 +2,6 @@
 title: Tietojen optimointi Power BI:n nopeille merkityksellisille tiedoille
 description: Tietojen optimointi Power BI:n nopeille merkityksellisille tiedoille. Jos Power BI ei löydä tiedoistasi merkityksellisiä tietoja, kokeile näitä neuvoja
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 03/02/2017
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 2d2a0cca984776ea67fca45b39f91e280fe02afa
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 1ed588b0ca183e090d12f9aa0df23460a6037ed4
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61235026"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73872211"
 ---
 # <a name="optimize-your-data-for-power-bi-quick-insights"></a>Tietojen optimointi Power BI:n nopeille merkityksellisille tiedoille
 Haluatko parantaa nopeiden merkityksellisten tietojen tuloksia?  Jos olet tietojoukon omistaja, kokeile seuraavia:
@@ -28,5 +27,5 @@ Haluatko parantaa nopeiden merkityksellisten tietojen tuloksia?  Jos olet tietoj
 ### <a name="next-steps"></a>Seuraavat vaiheet
 [Power BI:n nopeat merkitykselliset tiedot](consumer/end-user-insights.md)
 
-Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
+Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](https://community.powerbi.com/)
 

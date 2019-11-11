@@ -2,7 +2,6 @@
 title: Tekstiruudut ja muodot Power BI -raporteissa
 description: Lisää ja luo tekstiruutuja ja muotoja raporttiin käyttämällä Microsoft Power BI -palvelua.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 featuredvideoid: _3q6VEBhGew
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/29/2019
 ms.author: maggies
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 03157d34e8d3a20ae7b4aadf71a0829d9a88e08d
-ms.sourcegitcommit: d04b9e1426b8544ce16ef25864269cc43c2d9f7b
+ms.openlocfilehash: 3da18269817ef89dfff9524c8875814430bc6cce
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "71715283"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73874435"
 ---
 # <a name="text-boxes-and-shapes-in-power-bi-reports"></a>Tekstiruudut ja muodot Power BI -raporteissa
 Voit lisätä raportteihin tekstiruutuja ja muotoja käyttämällä Power BI -palvelua ja Power BI Desktopia. Kummassakin tapauksessa sinulla on oltava raportin muokkausoikeudet. Jos raportti on jaettu kanssasi Power BI -palvelussa, sinulla ei ole raportin muokkausoikeuksia. 
@@ -68,4 +67,4 @@ Katso, miten Will käyttää Power BI Desktopia ja [lisää staattisia kuvia rap
 
 [Power BI -palvelun peruskäsitteitä suunnittelijoille](service-basic-concepts.md)
 
-Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
+Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](https://community.powerbi.com/)

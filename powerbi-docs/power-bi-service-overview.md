@@ -2,7 +2,6 @@
 title: Mikä Power BI -palvelu on?
 description: Yleiskatsaus Power BI -palvelusta ja siitä, miten se sopii yhteen muiden Power BI:n osien kanssa.
 author: maggiesMSFT
-manager: kfile
 ms.service: powerbi
 ms.subservice: powerbi-service
 featuredvideoid: B2vd4MQrz4M
@@ -10,12 +9,12 @@ ms.topic: overview
 ms.date: 09/05/2019
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: b8a01839da68a276ff136d7068dafac0ce82f102
-ms.sourcegitcommit: d441d350504f8c6d9e100d229757add6237f0bef
+ms.openlocfilehash: 22446936f36074379242bd54af15c9bb2864e4a8
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73060863"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73874979"
 ---
 # <a name="what-is-the-power-bi-service"></a>Mikä Power BI -palvelu on?
 **Power BI** on kokoelma yhdessä toimivia ohjelmistopalveluja, sovelluksia ja liittimiä, joiden avulla voit luoda, jakaa ja hyödyntää merkityksellisiä liiketoimintatietoja mahdollisimman tehokkaasti sinun ja yrityksesi kannalta. Microsoft Power BI *-palvelu* (app.powerbi.com), jota joskus kutsutaan nimellä Power BI online, on Power BI:n SaaS (*Software as a Service*) -osa. Power BI -palvelun *koontinäytöt* auttavat sinua pitämään yrityksesi langat käsissäsi. Koontinäytöissä näytetään *ruutuja*, jotka valitsemalla voit avata *raportteja* tarkempaa tutustumista varten. Koontinäytöt ja raportit yhdistävät *tietojoukkoihin*, jotka keräävät kaikki tarvittavat tiedot samaan paikkaan. 

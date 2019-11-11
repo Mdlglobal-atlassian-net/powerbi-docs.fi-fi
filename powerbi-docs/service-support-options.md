@@ -2,19 +2,18 @@
 title: Power BI Pron ja Power BI Premiumin tukivaihtoehdot
 description: Tässä artikkelissa kuvataan tukivaihtoehtoja, jotka ovat käytettävissä Power BI Pro- ja Power BI Premium -asiakkaille.
 author: mgblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 09/17/2019
 ms.author: mblythe
-ms.openlocfilehash: df14bf127ed6935f9bec445709153a87088f8af0
-ms.sourcegitcommit: 57e45f291714ac99390996a163436fa1f76db427
+ms.openlocfilehash: 4cd007467b2ebd7f08dbb9d9bd3447194aad1f37
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "71305824"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73871399"
 ---
 # <a name="power-bi-pro-and-power-bi-premium-support-options"></a>Power BI Pron ja Power BI Premiumin tukivaihtoehdot
 
@@ -55,4 +54,4 @@ Se tarjoaa täyden yleiskatsauksen Power BI:n toiminnoista ja ominaisuuksista. S
 
   - **WorkshopPLUS – Data AI: Kehittynyt tietoanalytiikka Power BI:llä** Tällä kurssilla saat tarvittavat tiedot Power BI:n tietomallintamisen tärkeimpien ominaisuuksien ymmärtämiseen ja käyttämiseen Power BI Desktopin kaltaisten työkalun avulla sekä hyödyntämällä pilvipalvelua BI-resurssien julkaisemisessa ja käytössä. Kurssi kattaa siis raportin luomisen perusteet, Power BI:n upotetut analyysitoiminnot sisällön upottamiseksi mukautettuihin sovelluksiin, reaaliaikaisen koontinäytön käyttämisen sekä kehittyneen analytiikan, joka sisältää tieteen tietoturvan ja kehityksen Power BI:ssä.
 
-Lisätietoja saat ottamalla yhteyttä Microsoftin Technical Account Manageriin. Jos sinulla ei vielä ole Microsoft Premier -tukisopimusta, lisätietoja on kohdassa [Premier-tuki](https://support.microsoft.com/en-us/premier).
+Lisätietoja saat ottamalla yhteyttä Microsoftin Technical Account Manageriin. Jos sinulla ei vielä ole Microsoft Premier -tukisopimusta, lisätietoja on kohdassa [Premier-tuki](https://support.microsoft.com/premier).

@@ -2,7 +2,6 @@
 title: Excel-työkirjasta luodun tietojoukon päivittäminen – paikallinen
 description: Excel-työkirjasta luodun tietojoukon päivittäminen paikallisessa asemassa
 author: mgblythe
-manager: kfile
 ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 11/28/2018
 ms.author: mblythe
 LocalizationGroup: Data refresh
-ms.openlocfilehash: a71631c0ac8e45c7e268eb11a0539fa8305dfcd7
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: b69e908e378605facbdaea79618aaf5167ff7739
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61414752"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73874403"
 ---
 # <a name="refresh-a-dataset-created-from-an-excel-workbook-on-a-local-drive"></a>Excel-työkirjasta luodun tietojoukon päivittäminen paikallisessa asemassa
 ## <a name="whats-supported"></a>Tuetut toiminnot:
@@ -80,5 +79,5 @@ Joskus tietojen päivittäminen ei mene odotetulla tavalla. Yleensä tämä on y
 [Power BI -yhdyskäytävän vianmääritys – Personal](service-admin-troubleshooting-power-bi-personal-gateway.md)
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
-Onko sinulla muuta kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
+Onko sinulla muuta kysyttävää? [Kokeile Power BI -yhteisöä](https://community.powerbi.com/)
 

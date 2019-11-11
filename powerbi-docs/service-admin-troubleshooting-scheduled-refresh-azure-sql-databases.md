@@ -2,7 +2,6 @@
 title: Azure SQL -tietokantojen ajoitetun päivityksen vianmääritys
 description: Azure SQL -tietokantojen ajoitetun päivityksen vianmääritys Power BI:ssä
 author: mgblythe
-manager: kfile
 ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -11,12 +10,12 @@ ms.date: 09/04/2019
 ms.author: mblythe
 ms.custom: seodec18
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: 6d71a1202ba996b70c7477a33ccab936bebbfc5e
-ms.sourcegitcommit: e5cf19e16112c7dad1591c3b38d232267ffb3ae1
+ms.openlocfilehash: 9846f65951c9cd45f011a2b5ec81852df10b063f
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72542793"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73855852"
 ---
 # <a name="troubleshooting-scheduled-refresh-for-azure-sql-databases-in-power-bi"></a>Azure SQL -tietokantojen ajoitetun päivityksen vianmääritys Power BI:ssä
 
@@ -34,4 +33,4 @@ Jos saat virheilmoituksen virhekoodilla 400 tunnistetietojen muokkaamisen aikana
 
     ![Azuren sallitut palvelut](media/service-admin-troubleshooting-scheduled-refresh-azure-sql-databases/azurerefresh.png)  
 
-Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
+Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](https://community.powerbi.com/)

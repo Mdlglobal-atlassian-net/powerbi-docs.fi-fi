@@ -3,18 +3,17 @@ title: Excel-työkirjojen isännöinti Office Online Serverin (OOS) avulla - Pow
 description: Verkkoportaalissa tapahtuvan Power BI -raporttien tarkastelun lisäksi Power BI -raporttipalvelin voi isännöidä Excel-työkirjoja Office Online Serverin (OOS) avulla.
 author: maggiesMSFT
 ms.author: maggies
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 08/21/2018
-ms.openlocfilehash: 5585750fcd5e6237f3cb00591cf5841f91393b84
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 907e65635424b709ec2c0850e4d0d759f4ba6dd3
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "64769573"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73874097"
 ---
 # <a name="configure-your-report-server-to-host-excel-workbooks-using-office-online-server-oos"></a>Määritä raporttipalvelin Excel-työkirjojen isännäksi Office Online Serverin (OOS) avulla
 
@@ -54,7 +53,7 @@ Suorita nämä toimenpiteet palvelimessa, joka suorittaa Office Online Serverin.
 
 Jos aiot käyttää Excel Onlinen toimintoja, jotka käyttävät ulkoista tietopalvelua (esimerkiksi Power Pivot), ota huomioon, että Office Online Serverin on sijaittava samassa Active Directory -puuryhmässä kuin sen käyttäjät sekä mitkä tahansa ulkoiset tietolähteet, joita aiot käyttää Windows-todentamisella.
 
-1. Lataa Office Online Server [volyymikäyttöoikeuskeskuksesta (VLSC)](http://go.microsoft.com/fwlink/p/?LinkId=256561). Lataustiedosto sijaitsee Office-tuotteiden kohdalla VLSC-portaalissa. Kehitystarkoituksiin voit ladata OOS:n MSDN-tilaajalatauksista.
+1. Lataa Office Online Server [volyymikäyttöoikeuskeskuksesta (VLSC)](https://go.microsoft.com/fwlink/p/?LinkId=256561). Lataustiedosto sijaitsee Office-tuotteiden kohdalla VLSC-portaalissa. Kehitystarkoituksiin voit ladata OOS:n MSDN-tilaajalatauksista.
 2. Suorita Setup.exe.
 3. Valitse **Lue Microsoft-ohjelmiston käyttöoikeussopimuksen ehdot** -sivulla **Hyväksyn tämän sopimuksen ehdot** ja valitse **Jatka**.
 4. Valitse **Valitse tiedoston sijainti** -sivulla kansio, johon haluat asentaa Office Online Server -tiedostot (esimerkiksi C:\Program Files\Microsoft Office Web Apps\*) ja valitse **Asenna nyt**. Jos määritettyä kansiota ei ole, asennusohjelma luo sen puolestasi.
@@ -69,7 +68,7 @@ Office Online Server -kielipakettien avulla käyttäjät voivat tarkastella verk
 
 Jos haluat asentaa kielipaketit, toimi seuraavasti.
 
-1. Lataa Office Online Serverin kielipaketit [Microsoft Download Centeristä](http://go.microsoft.com/fwlink/p/?LinkId=798136).
+1. Lataa Office Online Serverin kielipaketit [Microsoft Download Centeristä](https://go.microsoft.com/fwlink/p/?LinkId=798136).
 2. Suorita **wacserverlanguagepack.exe**.
 3. Ohjatussa Office Online Server -kielipakettitoiminnossa valitse **Lue Microsoft-ohjelmiston käyttöoikeussopimuksen ehdot** -sivulla **Hyväksyn tämän sopimuksen ehdot** ja valitse **Jatka**.
 4. Kun asennusohjelma on asentanut Office Online Serverin, valitse **Sulje**.
@@ -86,7 +85,7 @@ New-OfficeWebAppsFarm -InternalUrl "https://server.contoso.com" -ExternalUrl "ht
 
 **Parametrit**
 
-* **–InternalURL** on Office Online Serverin suorittavan palvelimen täydellinen toimialuenimi (FQDN), kuten `http://servername.contoso.com`.
+* **–InternalURL** on Office Online Serverin suorittavan palvelimen täydellinen toimialuenimi (FQDN), kuten `https://servername.contoso.com`.
 * **–ExternalURL** on täydellinen toimialuenimi, jota voi käyttää Internetissä.
 * **– CertificateName** on varmenteen kutsumanimi.
 
@@ -95,12 +94,12 @@ New-OfficeWebAppsFarm -InternalUrl "https://server.contoso.com" -ExternalUrl "ht
 New-OfficeWebAppsFarm-komennon avulla voit luoda uuden Office Online Server -klusterin, joka koostuu yhdestä palvelimesta, seuraavassa esimerkissä kuvatulla tavalla.
 
 ```powershell
-New-OfficeWebAppsFarm -InternalURL "http://servername" -AllowHttp
+New-OfficeWebAppsFarm -InternalURL "https://servername" -AllowHttp
 ```
 
 **Parametrit**
 
-* **–InternalURL** on Office Online Severin suorittavan palvelimen nimi, kuten `http://servername`.
+* **–InternalURL** on Office Online Severin suorittavan palvelimen nimi, kuten `https://servername`.
 * **–AllowHttp** määrittää klusterin käyttämään HTTP:tä.
 
 ### <a name="verify-that-the-office-online-server-farm-was-created-successfully"></a>Varmista, että Office Online Server -klusterin luonti onnistui
@@ -168,7 +167,7 @@ Palomuuriongelmien välttämiseksi voit joutua avaamaan portit 2382 ja 2383. Voi
 
 ## <a name="configure-power-bi-report-server-to-use-the-oos-server"></a>Määritä Power BI -raporttipalvelin käyttämään OOS-palvelinta
 
-**Sivuston asetukset** -kohdan **Yleiset**-sivulla syötä OOS:n löytö-URL-osoite. OOS:n löytö-URL-osoite on *InternalUrl*, jota käytetään, kun OOS-palvelin otetaan käyttöön, jota seuraa */hosting/discovery*. Esimerkiksi `http://servername/hosting/discovery` HTTP:lle. Ja `https://server.contoso.com/hosting/discovery` HTTPS:lle.
+**Sivuston asetukset** -kohdan **Yleiset**-sivulla syötä OOS:n löytö-URL-osoite. OOS:n löytö-URL-osoite on *InternalUrl*, jota käytetään, kun OOS-palvelin otetaan käyttöön, jota seuraa */hosting/discovery*. Esimerkiksi `https://servername/hosting/discovery` HTTP:lle. Ja `https://server.contoso.com/hosting/discovery` HTTPS:lle.
 
 Avaa **Sivuston asetukset** valitsemalla **hammaspyöräkuvake** oikeassa yläkulmassa ja valitsemalla **Sivuston asetukset**.
 
@@ -187,6 +186,6 @@ Kun olet syöttänyt löytö-URL-osoitteen ja valinnut **Käytä**, Excel-työki
 [Järjestelmänvalvojan yleiskatsaus](admin-handbook-overview.md)  
 [Power BI -raporttipalvelimen asentaminen](install-report-server.md)  
 [Raportin muodostimen lataaminen](https://www.microsoft.com/download/details.aspx?id=53613)  
-[SQL Server Data Tools (SSDT) -työkalujen lataaminen](http://go.microsoft.com/fwlink/?LinkID=616714)
+[SQL Server Data Tools (SSDT) -työkalujen lataaminen](https://go.microsoft.com/fwlink/?LinkID=616714)
 
 Onko sinulla muuta kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)

@@ -2,19 +2,18 @@
 title: Maantieteellisten suodattimien määrittäminen Power BI Desktopissa mobiilisovelluksille
 description: Kun määrität maantieteellisen suodatuksen Power BI Desktopissa olevassa mallissasi, voit suodattaa tietoja sijainnillesi automaattisesti Power BI -mobiilisovelluksissa.
 author: maggiesMSFT
-manager: kfile
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 01/16/2018
 ms.author: maggies
 LocalizationGroup: Model your data
-ms.openlocfilehash: b8887ba39d3c6d3123d3308eddba2994fbfe6485
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: c054bc933cb1eaac7475ac0c7649c7e0f77f503b
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61296036"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73878098"
 ---
 # <a name="set-geographic-filters-in-power-bi-desktop-for-the-mobile-apps"></a>Maantieteellisten suodattimien määrittäminen Power BI Desktopissa mobiilisovelluksille
 Power BI Desktopissa voit [luokitella maantieteellisiä tietoja](desktop-data-categorization.md) saraketta kohden, joten Power BI Desktop tietää, miten käsitellä raportin visualisoinnissa olevia arvoja. Toinen etu on, että kun sinä tai työtoverisi tarkastelevat kyseistä raporttia Power BI -mobiilisovelluksissa, Power BI tarjoaa automaattisesti sijaintianne vastaavat maantieteelliset suodattimet. 
@@ -61,5 +60,5 @@ Lue lisää aiheesta [raportin suodattaminen sijainnin mukaan Power BI -mobiilis
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 * [Tietojen luokittelu Power BI Desktopissa](desktop-data-categorization.md)  
-* Ilmenikö kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)
+* Ilmenikö kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
 

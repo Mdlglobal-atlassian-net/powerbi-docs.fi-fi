@@ -2,7 +2,6 @@
 title: Raporttien vienti PDF-muotoon Power BI Desktopista
 description: Raporttien vienti PDF-tiedostoon Power BI Desktopista ja PDF-raporttien tulostus
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 02/28/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 2f64973650edd951a9a780090426afba3e8471f5
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 28116a4e2b89fe5f8fe719f8d6c0d9eca28310eb
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61303117"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73867685"
 ---
 # <a name="export-reports-to-pdf-from-power-bi-desktop"></a>Raporttien vienti PDF-tiedostoon Power BI Desktopista
 **Power BI Desktopissa** tai Power BI -palvelussa voit viedä raportteja PDF-tiedostoon, ja jakaa tai tulostaa näitä raportteja helposti tästä PDF-tiedostosta.

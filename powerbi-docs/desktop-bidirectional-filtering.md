@@ -2,7 +2,6 @@
 title: Kaksisuuntainen ristiinsuodatus Power BI Desktopissa
 description: Ristiinsuodatuksen ottaminen käyttöön DirectQueryn avulla Power BI Desktopissa
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.custom: seodec18
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/07/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 9930cba0ab2829d1cdb41bd678ef01e5cff78b4f
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: e0b6f3017b69540ea2a95280ceadfe7a05a9c474
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65239419"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73878737"
 ---
 # <a name="bidirectional-cross-filtering-using-directquery-in-power-bi-desktop"></a>Kaksisuuntainen ristiinsuodatus DirectQueryn avulla Power BI Desktopissa
 
@@ -25,9 +24,9 @@ Kun taulukoita suodatetaan tiedoille sopivan näkymän luomiseksi, raportin luoj
 Kaksisuuntaisen ristiinsuodatuksen ansiosta raportin luojat (ja tietojen mallintajat) voivat nyt hallita tarkemmin sitä, miten suodattimia käytetään tällaisia taulukoita käsiteltäessä, koska sen avulla nämä suodattimet voidaan ottaa käyttöön taulukkosuhteen *molemmilla* puolilla. Tämä toteutetaan siten, että suodatinkonteksti välitetään taulukkosuhteen toisella puolella olevaan toiseen, liitettyyn taulukkoon.
 
 ## <a name="detailed-whitepaper-for-bidirectional-cross-filtering"></a>Yksityiskohtainen tekninen raportti kaksisuuntaista ristiinsuodatusta varten
-Saatavilla on [yksityiskohtainen tekninen raportti](http://download.microsoft.com/download/2/7/8/2782DF95-3E0D-40CD-BFC8-749A2882E109/Bidirectional%20cross-filtering%20in%20Analysis%20Services%202016%20and%20Power%20BI.docx), jossa selitetään kaksisuuntainen ristisuodatus Power BI Desktopissa (tekninen raportti kattaa myös SQL Server Analysis Services 2016:n, molemmat toimivat samalla tavalla).
+Saatavilla on [yksityiskohtainen tekninen raportti](https://download.microsoft.com/download/2/7/8/2782DF95-3E0D-40CD-BFC8-749A2882E109/Bidirectional%20cross-filtering%20in%20Analysis%20Services%202016%20and%20Power%20BI.docx), jossa selitetään kaksisuuntainen ristisuodatus Power BI Desktopissa (tekninen raportti kattaa myös SQL Server Analysis Services 2016:n, molemmat toimivat samalla tavalla).
 
-* Lataa [Kaksisuuntainen ristiinsuodatus Power BI Desktopille](http://download.microsoft.com/download/2/7/8/2782DF95-3E0D-40CD-BFC8-749A2882E109/Bidirectional%20cross-filtering%20in%20Analysis%20Services%202016%20and%20Power%20BI.docx) -tekninen raportti
+* Lataa [Kaksisuuntainen ristiinsuodatus Power BI Desktopille](https://download.microsoft.com/download/2/7/8/2782DF95-3E0D-40CD-BFC8-749A2882E109/Bidirectional%20cross-filtering%20in%20Analysis%20Services%202016%20and%20Power%20BI.docx) -tekninen raportti
 
 ## <a name="enabling-bidirectional-cross-filtering-for-directquery"></a>Kaksisuuntaisen ristiinsuodatuksen ottaminen käyttöön DirectQuerylle
 
@@ -41,5 +40,5 @@ Ristisuodatuksen ottamiseksi käyttöön suhteen valintaikkunassa **Suhteen muok
 > [!NOTE]
 > Kun luot ristiinsuodatuksen DAX-kaavoja Power BI Desktopissa, käytä *UserPrincipalNamea* (joka on usein sama kuin käyttäjän kirjautumisnimi, kuten <em>joe@contoso.com</em>) *Käyttäjänimen* sijaan. Siten joudut ehkä luomaan vastaavan taulukon, joka yhdistää *Käyttäjänimen* (tai esimerkiksi työntekijätunnuksen) *UserPrincipalNameen*.
 
-Saat lisätietoja ja esimerkkejä kaksisuuntaisen ristiinsuodatuksen toiminnasta tässä artikkelissa aiemmin mainitusta [teknisestä raportista](http://download.microsoft.com/download/2/7/8/2782DF95-3E0D-40CD-BFC8-749A2882E109/Bidirectional%20cross-filtering%20in%20Analysis%20Services%202016%20and%20Power%20BI.docx).
+Saat lisätietoja ja esimerkkejä kaksisuuntaisen ristiinsuodatuksen toiminnasta tässä artikkelissa aiemmin mainitusta [teknisestä raportista](https://download.microsoft.com/download/2/7/8/2782DF95-3E0D-40CD-BFC8-749A2882E109/Bidirectional%20cross-filtering%20in%20Analysis%20Services%202016%20and%20Power%20BI.docx).
 

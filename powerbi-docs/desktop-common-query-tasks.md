@@ -2,7 +2,6 @@
 title: Yleiset kyselytehtävät Power BI Desktopissa
 description: Yleiset kyselytehtävät Power BI Desktopissa
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 05/07/2019
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: dc6aa42691c7caa2593b28e441f96985b1e3bcda
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 2b1cf2a7f10fd7249dcdec26b5c5f5d12ff15aca
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65239456"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73878659"
 ---
 # <a name="common-query-tasks-in-power-bi-desktop"></a>Yleiset kyselytehtävät Power BI Desktopissa
 Power BI Desktopin **kyselyeditorissa** on muutamia usein käytettyjä tehtäviä. Tässä asiakirjassa kerrotaan näistä yleisistä tehtävistä ja annetaan linkkejä lisätietoihin. 
@@ -31,9 +30,9 @@ Yleisiä kyselytehtäviä ovat seuraavat:
 
 Suoritamme näitä tehtäviä muutamien tietoyhteyksien avulla. Voit ladata tiedot tai muodostaa yhteyden niihin, jos haluat suorittaa tässä ohjeartikkelissa kuvatut toimet itse lukiessasi artikkelia.
 
-Ensimmäinen tietoyhteys on Excel-työkirja, jonka voit ladata [tästä linkistä](http://download.microsoft.com/download/5/7/0/5701F78F-C3C2-450C-BCCE-AAB60C31051D/PBI_Edu_ELSi_Enrollment_v2.xlsx). Toinen on verkkoresurssi, jota käytetään myös muissa Power BI Desktop -ohjesisällöissä ja jota voit käyttää seuraavan osoitteen avulla:
+Ensimmäinen tietoyhteys on Excel-työkirja, jonka voit ladata [tästä linkistä](https://download.microsoft.com/download/5/7/0/5701F78F-C3C2-450C-BCCE-AAB60C31051D/PBI_Edu_ELSi_Enrollment_v2.xlsx). Toinen on verkkoresurssi, jota käytetään myös muissa Power BI Desktop -ohjesisällöissä ja jota voit käyttää seuraavan osoitteen avulla:
 
-[*http://www.bankrate.com/finance/retirement/best-places-retire-how-state-ranks.aspx*](http://www.bankrate.com/finance/retirement/best-places-retire-how-state-ranks.aspx)
+[*https://www.bankrate.com/finance/retirement/best-places-retire-how-state-ranks.aspx*](https://www.bankrate.com/finance/retirement/best-places-retire-how-state-ranks.aspx)
 
 Yleiset kyselytehtävät alkavat yhteyden muodostamisella näihin tietolähteisiin.
 
@@ -142,7 +141,7 @@ Kyselyeditori säilyttää jokaisen kyselyn kaikki käytetyt vaiheet tekstinä, 
 
 ![](media/desktop-common-query-tasks/queryformulas_advancededitorbutton.png)
 
-Tässä on näkymä **laajennetusta editorista**: näet siinä **USA\_StudentEnrollment**-kyselyn vaiheet. Nämä vaiheet on luotu Power Query Formula Language -kielellä, jota kutsutaan usein myös **M**-kieleksi. Saat lisätietoja ohjeartikkelista [Lisätietoja Power Query -kaavoista](https://support.office.com/article/Learn-about-Power-Query-formulas-6bc50988-022b-4799-a709-f8aafdee2b2f). Jos haluat tutustua varsinaisen kielen tietoihin, lue ohjeartikkeli [Excelin Microsoft Power Query -kaavakielestä](http://go.microsoft.com/fwlink/?linkid=320633).
+Tässä on näkymä **laajennetusta editorista**: näet siinä **USA\_StudentEnrollment**-kyselyn vaiheet. Nämä vaiheet on luotu Power Query Formula Language -kielellä, jota kutsutaan usein myös **M**-kieleksi. Saat lisätietoja ohjeartikkelista [Lisätietoja Power Query -kaavoista](https://support.office.com/article/Learn-about-Power-Query-formulas-6bc50988-022b-4799-a709-f8aafdee2b2f). Jos haluat tutustua varsinaisen kielen tietoihin, lue ohjeartikkeli [Excelin Microsoft Power Query -kaavakielestä](/powerquery-m/excel-workbook).
 
 ![](media/desktop-common-query-tasks/queryformulas_advancededitor.png)
 

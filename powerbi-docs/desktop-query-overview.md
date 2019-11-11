@@ -2,7 +2,6 @@
 title: Power BI Desktopin kyselyiden yleiskatsaus
 description: Power BI Desktopin kyselyiden yleiskatsaus
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 56c38a4e42dcdb3fb22e9dc92446c7e963f50e3e
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 3ee7c094972e7251ab99d9092691bf809344a3d5
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65513563"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73876297"
 ---
 # <a name="query-overview-in-power-bi-desktop"></a>Power BI Desktopin kyselyiden yleiskatsaus
 **Power BI Desktopilla** voit muodostaa yhteyden kasvavaan tietomäärään, luoda houkuttelevia ja perustavanlaatuisia raportteja ja jakaa työsi hedelmät muiden kanssa, jotka voivat taas hyödyntää niitä omassa työssään ja laajentaa liiketoimintatietojaan.
@@ -47,7 +46,7 @@ Kun tietoyhteyksiä ei ole, **kyselyeditorin** näkyy tyhjänä ruutuna valmiina
 
 Kun kysely on ladattu, **Kyselyeditori**-näkymästä tulee kiinnostavampi. Jos yhteys muodostetaan seuraavaan verkkotietolähteeseen, **Kyselyeditori** lataa datan tiedot, joiden muotoilemisen voit sitten aloittaa.
 
-[*http://www.bankrate.com/finance/retirement/best-places-retire-how-state-ranks.aspx*](http://www.bankrate.com/finance/retirement/best-places-retire-how-state-ranks.aspx)
+[*https://www.bankrate.com/finance/retirement/best-places-retire-how-state-ranks.aspx*](https://www.bankrate.com/finance/retirement/best-places-retire-how-state-ranks.aspx)
 
 **Kyselyeditori** näyttää seuraavanlaiselta, kun tietoyhteys on muodostettu:
 

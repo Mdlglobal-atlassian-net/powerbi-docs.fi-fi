@@ -2,7 +2,6 @@
 title: Hyperlinkin lisääminen tekstiruutuun raportissa
 description: Hyperlinkin lisääminen tekstiruutuun Power BI Desktopissa ja Power BI -palvelussa
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 07/25/2019
 ms.author: maggies
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 0ceb1749fcbf78ac844ca1c6e4b3f08a6f4c5d3f
-ms.sourcegitcommit: 9665bdabce3bfc31f68dd8256b135bfd56f60589
+ms.openlocfilehash: 2de2cd80dbffc8c65a4577fffd6a8e41bc6116d2
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "68832418"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73873784"
 ---
 # <a name="add-a-hyperlink-to-a-text-box-in-a-report"></a>Hyperlinkin lisääminen tekstiruutuun raportissa
 Voit lisätä tekstiruudun raporttiin Power BI Desktopissa tai Power BI -palvelussa. Voit kiinnittää tekstiruudun raportista koontinäyttöön tai lisätä sellaisen suoraan koontinäyttöön. Voit aina lisätä hyperlinkin tekstiruutuun riippumatta siitä, missä tekstiruutu on. Tässä artikkelissa näytetään, miten hyperlinkin voi lisätä tekstiruutuun raportissa. 
@@ -63,5 +62,5 @@ Lisätietoja hyperlinkkien käytöstä Power BI -taulukoissa ja matriiseissa on 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 [Tekstiruudut ja muodot Power BI -raporteissa](power-bi-reports-add-text-and-shapes.md)
 
-Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/).
+Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](https://community.powerbi.com/).
 
