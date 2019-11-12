@@ -188,6 +188,8 @@
               href: mobile/mobile-annotate-and-share-a-tile-from-the-mobile-apps.md
             - name: Viivakoodin lukeminen iPhone-sovelluksella
               href: mobile/mobile-apps-scan-barcode-iphone.md
+            - name: Määrittäminen mobiililaitteiden hallinnan avulla
+              href: mobile/mobile-app-configuration.md
         - name: iOS
           items:
             - name: iOS-sovelluksen käytön aloittaminen
@@ -202,8 +204,6 @@
               href: mobile/mobile-apps-iOS-search-integration.md
             - name: 'Power BI:n Apple Watch -sovellus'
               href: mobile/mobile-apple-watch.md
-            - name: Määrittäminen mobiililaitteiden hallinnan avulla
-              href: mobile/mobile-app-configuration.md
         - name: Android-laitteet
           items:
             - name: Android-sovelluksen käytön aloittaminen
