@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 10/24/2019
 LocalizationGroup: Conceptual
-ms.openlocfilehash: 075d4ea0c243f77ebf0d29020f25bbca6567c6c0
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: fa9c07be31f5110f44c2f200bbde249c95abe9ed
+ms.sourcegitcommit: 0d7ad791a2d2bef45d5d60e38e0af4c9fc22187b
 ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73870775"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74009823"
 ---
 # <a name="power-bi-security-whitepaper"></a>Power BI:n suojausraportti
 
@@ -334,12 +334,6 @@ Roolitason suojauksen tietolähteitä ja muun kuin roolitason suojauksen tietol�
 
 Jos Riitta käyttäisi jaettua koontinäyttöä tai raporttia, samat toimet suoritettaisiin hänen roolitasonsa perusteella.
 
-## <a name="power-bi-and-expressroute"></a>Power BI ja ExpressRoute
-
-Power BI:n ja ExpressRouten avulla voit luoda yksityisen verkkoyhteyden omasta organisaatiostasi Power BI:hin (tai käyttämällä palveluntarjoajan ulkoistamisominaisuutta), niin että ohitat Internetin ja suojaat entistä paremmin luottamuksellisia Power BI -tietoja ja yhteyksiä.
-
-ExpressRoute on Azure-palvelu, jonka avulla voit luoda yksityisen yhteyden Azure-tietokeskuksen (jossa Power BI sijaitsee) ja paikallisen infrastruktuurin välille tai luoda yksityisiä yhteyksiä Azure-palvelinkeskusten ja colocation-ympäristön välillä. Lisätietoja on artikkelissa [Power BI ja ExpressRoute](service-admin-power-bi-expressroute.md).
-
 ## <a name="power-bi-mobile"></a>Power BI Mobile
 
 Power BI-mobiilisovellus on kokoelma sovelluksia, jotka on suunniteltu kolmelle ensisijaiselle mobiilialustalle: Android, iOS ja Windows Mobile. Power BI Mobile -sovellusten suojausta tulee harkita kahdesta näkökulmasta:
@@ -450,7 +444,7 @@ Seuraavat kysymykset ovat yleisiä Power BI:n suojaukseen liittyviä kysymyksiä
 
 **Lähettävätkö muut Power BI -visualisoinnit tietoja asiakkaan verkon ulkopuolelle?**
 
-* On. Bing Maps- ja ESRI-visualisoinnit siirtävät tietoja Power BI -palvelun ulkopuolelle kyseisiä palveluita käyttäville visualisoinneille. Voit katsoa lisätietoja ja tarkat kuvaukset Power BI:n ulkopuolelle suuntautuvasta vuokraajan liikenteestä artikkelista [ **Power BI ja ExpressRoute**](service-admin-power-bi-expressroute.md).
+* On. Bing Maps- ja ESRI-visualisoinnit siirtävät tietoja Power BI -palvelun ulkopuolelle kyseisiä palveluita käyttäville visualisoinneille.
 
 **Onko Microsoft tehnyt malli sovelluksille tieto turva-tai tieto suoja-arvioinnin malli sovelluksesta ennen kohteiden julkaisemista valikoimaan?**
 * Nro Sovelluksen julkaisija on vastuussa sisällöstä, kun asiakkaan vastuulla on tarkastella ja tarkistaa, luotatko malliin sovelluksen julkaisijaan. 
@@ -487,7 +481,6 @@ Lisää tietoja Power BI -palvelusta on seuraavissa resursseissa.
 - [Power BI REST -ohjelmointirajapinnan yleiskatsaus](https://msdn.microsoft.com/library/dn877544.aspx)
 - [Power BI -ohjelmointirajapinnan viite](https://msdn.microsoft.com/library/mt147898.aspx)
 - [On-premises data gateway (Paikallinen tietoyhdyskäytävä)](service-gateway-onprem.md)
-- [Power BI ja ExpressRoute](service-admin-power-bi-expressroute.md)
 - [Power BI:n kansalliset pilvipalvelut](https://powerbi.microsoft.com/clouds/)
 - [Power BI Premium](https://aka.ms/pbipremiumwhitepaper)
 - [Kerberoksen käyttäminen kertakirjautumista (SSO) varten Power BI:stä paikallisiin tietolähteisiin](service-gateway-sso-overview.md)
