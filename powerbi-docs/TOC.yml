@@ -119,6 +119,8 @@
           items:
             - name: Power BI Desktopin tietolähteet
               href: desktop-data-sources.md
+            - name: Yhdistäminen LinkedIn Sales Navigatoriin (esiversio)
+              href: desktop-connect-linkedin-sales-navigator.md
             - name: Verkkosivuun yhdistäminen esimerkin mukaan (esikatselu)
               href: desktop-connect-to-web-by-example.md
             - name: Tietojoukkoihin yhdistäminen Power BI -palvelussa
@@ -201,6 +203,8 @@
           items:
             - name: Yhdistä binaarit
               href: desktop-combine-binaries.md
+            - name: Tekoälyn merkityksellisten tietojen käyttö Power BI Desktopissa (esiversio)
+              href: desktop-ai-insights.md
         - name: Tietojen mallintaminen
           items:
             - name: Tietojen luokittelu Power BI Desktopissa
@@ -339,6 +343,8 @@
               href: visuals/power-bi-visualization-card.md
             - name: 'Yhdistelmäkaavio Power BI:ssä'
               href: visuals/power-bi-visualization-combo-chart.md
+            - name: 'Hajotuspuu Power BI:ssä (esiversio)'
+              href: visuals/power-bi-visualization-decomposition-tree.md
             - name: 'Rengaskaaviot Power BI:ssä'
               href: visuals/power-bi-visualization-doughnut-charts.md
             - name: 'Täytetyt kartat (koropleettikartat) Power BI:ssä'
@@ -375,8 +381,6 @@
               href: visuals/power-bi-visualization-treemaps.md
             - name: 'Vesiputouskaaviot Power BI:ssä'
               href: visuals/power-bi-visualization-waterfall-charts.md
-            - name: Dynaamisten viiteviivojen luominen
-              href: service-analytics-pane.md
         - name: Luonnollinen kieli
           items:
             - name: 'Johdanto Q&A:han'
@@ -405,6 +409,8 @@
       items:
         - name: Tietotyypit Power BI Desktopissa
           href: desktop-data-types.md
+        - name: Power BI Desktopin (esiversio) päivitetyn valintanauhan käyttäminen
+          href: desktop-ribbon.md
         - name: Power BI Desktopin kaavaeditorin pikanäppäimet
           href: desktop-formula-editor.md
         - name: Power BI Desktopin yksityisyystasot
