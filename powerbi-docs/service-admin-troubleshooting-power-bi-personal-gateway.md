@@ -2,7 +2,6 @@
 title: Power BI -yhdyskäytävän vianmääritys (henkilökohtainen tila)
 description: Power BI -yhdyskäytävän vianmääritys (henkilökohtainen tila)
 author: mgblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: troubleshooting
 ms.date: 5/06/2019
 ms.author: mblythe
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: 8916d92eef86be601ceb21112209ab7daa736c11
-ms.sourcegitcommit: e5cf19e16112c7dad1591c3b38d232267ffb3ae1
+ms.openlocfilehash: 32413c8ae860f5c9e376f8be46290047f67231fc
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72543535"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73873389"
 ---
 # <a name="troubleshooting-power-bi-gateway-personal-mode"></a>Power BI -yhdyskäytävän vianmääritys (henkilökohtainen tila)
 
@@ -111,7 +110,7 @@ Jos näyttöön tulee virhesanoma koontinäytön ruutuja päivitettäessä, lue 
 ### <a name="refresh-history"></a>Päivityshistoria
 **Päivityshistoriasta** näet ilmenneet virheet ja hyödyllisiä tietoja, jos joudut luomaan tukipyynnön. Voit tarkistaa sekä ajoitetut päivitykset että pyynnöstä suoritetut päivitykset. Pääset **Päivityshistoriaan** seuraavasti.
 
-1. Valitse Power BI:n siirtymisruudun **Tietojoukot**-kohdasta tietojoukko. Avaa valikko ja valitse **Ajoita päivitys**.
+1. Valitse yksi tietojoukoista Power BI -siirtymisruudun kohdassa **Tietojoukot**. Avaa valikko ja valitse **Ajoita päivitys**.
 
    ![Ajoita päivityksen valitseminen](media/service-admin-troubleshooting-power-bi-personal-gateway/scheduled-refresh.png)
 1. Valitse **Asetukset kohteelle...** ja **Päivityshistoria**. 
@@ -128,7 +127,7 @@ Saatavilla on useita tapahtumalokeja, jotka voivat antaa tietoja. Kaksi ensimmä
 ![Tiedonhallinnan yhdyskäytävän ja PowerBIGateway-lokit](media/service-admin-troubleshooting-power-bi-personal-gateway/event-logs.png)
 
 ### <a name="fiddler-trace"></a>Fiddler-jäljitys
-[Fiddler](http://www.telerik.com/fiddler) on Telerikin ilmainen työkalu, joka valvoo HTTP-liikennettä. Voit tarkastella Power BI -palvelun tiedonsiirtoa asiakaskoneelta. Tässä tiedonsiirrossa saattaa näkyä virheitä ja muita olennaisia tietoja.
+[Fiddler](https://www.telerik.com/fiddler) on Telerikin ilmainen työkalu, joka valvoo HTTP-liikennettä. Voit tarkastella Power BI -palvelun tiedonsiirtoa asiakaskoneelta. Tässä tiedonsiirrossa saattaa näkyä virheitä ja muita olennaisia tietoja.
 
 ![Fiddler-jäljitys](media/service-admin-troubleshooting-power-bi-personal-gateway/fiddler.png)
 
@@ -154,5 +153,5 @@ Voit myös siirtyä omaan Temp-kansioosi (%temp%) ja etsiä tiedostoja, jotka al
 - [Ruutuvirheiden vianmääritys](refresh-troubleshooting-tile-errors.md)  
 - [Paikallisen tietoyhdyskäytävän vianmääritys](service-gateway-onprem-tshoot.md) 
  
-Onko sinulla kysyttävää? Voit esittää kysymyksiä [Power BI -yhteisössä](http://community.powerbi.com/).
+Onko sinulla kysyttävää? Voit esittää kysymyksiä [Power BI -yhteisössä](https://community.powerbi.com/).
 

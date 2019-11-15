@@ -3,17 +3,16 @@ title: Power BI Embedded -palvelun diagnostiikan kirjaus Azuressa | Microsoft Do
 description: Lue lisätietoja diagnostiikan kirjauksen määrittämisestä Azuren Power BI Embedded -palveluun.
 author: rkarlin
 ms.author: rkarlin
-manager: kfile
 ms.reviewer: ''
 ms.service: power-bi-embedded
 ms.topic: conceptual
 ms.date: 08/13/2018
-ms.openlocfilehash: dc1a034a062ca07fd9f31a847378913fd7ee4002
-ms.sourcegitcommit: 76fadf20c1e19ec43aa8f9c5a5e909b567419ef6
+ms.openlocfilehash: 9065feef76050c6a04e1ecf8ec7907b74be4b0ce
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/17/2019
-ms.locfileid: "68289856"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73875973"
 ---
 # <a name="diagnostic-logging-for-power-bi-embedded-in-azure"></a>Power BI Embedded -palvelun diagnostiikan kirjaus Azuressa
 
@@ -29,7 +28,7 @@ Diagnostiikan avulla voit hoitaa monenlaisia skenaarioita. Voit esimerkiksi
 
 ### <a name="azure-portal"></a>Azure-portaali
 
-1. Valitse [Azure-portaalissa](https://portal.azure.com) Power BI Embedded -resurssin vasemmassa siirtymisruudussa **Diagnostic logs (Diagnostiikan lokit)** ja valitse sitten **Turn on diagnostics (Diagnostiikka käyttöön)** .
+1. Valitse [Azure-portaalissa](https://portal.azure.com) Power BI Embedded -resurssin siirtymisruudussa **Vianmäärityslokit** ja valitse sitten **Ota diagnostiikka käyttöön**.
 
     ![Diagnostiikan kirjauksen käyttöönotto Azure-portaalin Power BI Embedded -palvelussa](media/azure-pbie-diag-logs/azure-pbie-diag-logs-01.png)
 
@@ -177,7 +176,7 @@ Valitse **EventClass\_s** tai jokin tapahtumien nimistä, niin Log Analytics jat
 
 Muista tarkistaa [Log Analytics](https://docs.microsoft.com/azure/log-analytics/), jonka kautta pääset tutkimaan verkkosivustoa, jossa on kerättyihin tietoihin liittyvät parannellut kysely-, raporttinäkymä- ja ilmoitusmahdollisuudet.
 
-### <a name="queries"></a>Kyselyt
+### <a name="queries"></a>kyselyt
 
 Käytettävissä on satoja kyselyitä. Seuraavassa on muutamia, joiden avulla pääset alkuun. Lisätietoja uudesta Log Search -kyselykielestä on artikkelissa [Understanding log searches in Log Analytics (Lokihaut Log Analytics -toiminnossa)](https://docs.microsoft.com/azure/log-analytics/log-analytics-log-search).
 

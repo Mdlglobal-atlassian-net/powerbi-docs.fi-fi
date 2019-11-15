@@ -2,7 +2,6 @@
 title: Yhteyden muodostaminen Project Onlineen Power BI:llä
 description: Project Online Power BI:lle
 author: SarinaJoan
-manager: kfile
 ms.reviewer: maggiesMSFT
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 07/25/2019
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 0978e87167f96b40082819764d7e3ae35e930a4b
-ms.sourcegitcommit: a77977a43342db4399a4dffb862b96907d16de35
+ms.openlocfilehash: 941981e1f84cf3d7a74a156e4f1c88f57e061ad2
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/14/2019
-ms.locfileid: "69023773"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73854652"
 ---
 # <a name="connect-to-project-web-app-with-power-bi"></a>Yhteyden muodostaminen Project Web Appiin Power BI:llä
 Microsoft Project Web App on joustava online-ratkaisu projektisalkun hallintaan (PPM) ja päivittäiseen työhön. Project Web Appin avulla organisaatiot voivat aloittaa ja priorisoida projektisalkun sijoituksia sekä toimittaa suunnitellun liiketoiminta-arvon. Power BI:n Project Web App -mallisovelluksen avulla voit saada merkityksellisiä tietoja Project-verkkosovelluksesta projektien, salkkujen ja resurssien hallinnan helpottamiseksi.
@@ -24,7 +23,7 @@ Muodosta yhteys Power BI:n [Project Web App -mallisovellukseen](https://appsourc
 
 ## <a name="how-to-connect"></a>Yhteyden muodostaminen
 
-1. Valitse **Sovellukset** vasemmanpuoleisessa siirtymisruudussa > valitse **Hanki sovelluksia** oikeassa yläkulmassa.
+1. Valitse **Sovellukset** siirtymisruudussa > valitse **Hanki sovelluksia** oikeassa yläkulmassa.
 
     ![Hanki sovelluksia](media/service-connect-to-project-online/GetApps.png)
 
@@ -52,7 +51,7 @@ Muodosta yhteys Power BI:n [Project Web App -mallisovellukseen](https://appsourc
 
 9. Näet ilmoituksen tietojesi lataamisesta. Lataaminen voi kestää jonkin aikaa tilin koosta riippuen. Kun Power BI on tuonut tiedot, näet uuden työtilasi sisällön. Saatat joutua päivittämään tietojoukon, jotta saat uusimmat päivitykset. 
 
-    Kun Power BI on tuonut tiedot, näet vasemmassa siirtymisruudussa 13-sivuisen raportin ja tietojoukon. 
+    Kun Power BI on tuonut tiedot, näet siirtymisruudussa 13-sivuisen raportin ja tietojoukon. 
 
 10. Kun raportit ovat valmiita, jatka eteenpäin ja aloita Project Web App -tietojesi tarkasteleminen! Mallisovelluksen mukana toimitetaan 13 monipuolista ja yksityiskohtaista raporttia salkun yleiskatsausta varten (6 raporttisivua), resurssin yleiskatsaus (5 raporttisivua) ja projektin tila (2 raporttisivua). 
 

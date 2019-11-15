@@ -6,17 +6,16 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 author: mgblythe
 ms.author: mblythe
-manager: kfile
 ms.reviewer: ''
 ms.custom: ''
 ms.date: 06/20/2018
 LocalizationGroup: Data from databases
-ms.openlocfilehash: aaeda4c2f7c50e41d9b149e33ba49f5eba76eba8
-ms.sourcegitcommit: d441d350504f8c6d9e100d229757add6237f0bef
+ms.openlocfilehash: 2e96b88963250d7ac11cf9690c63b431279d585a
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73060698"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73873259"
 ---
 # <a name="azure-sql-data-warehouse-with-directquery"></a>Azure SQL Data Warehouse ja DirectQuery
 
@@ -54,7 +53,7 @@ Helpoin tapa siirtyä SQL Data Warehousen ja Power BI:n välillä on **Avaa Powe
 
 SQL Data Warehouse näkyy myös Power BI:n Nouda tiedot -sivulla. 
 
-1. Valitse vasemman siirtymisruudun alareunassa **Nouda tiedot**.  
+1. Valitse siirtymisruudun alareunassa **Nouda tiedot**.  
 
     ![Nouda tiedot -painike](media/service-azure-sql-data-warehouse-with-direct-connect/getdatabutton.png)
 
@@ -102,4 +101,4 @@ Täydellinen palvelimen nimi ja tietokannan nimi löytyvät Azure-portaalista. O
 * [Tietojen noutaminen Power BI:hin](service-get-data.md)  
 * [Azure SQL Data Warehouse](/azure/sql-data-warehouse/sql-data-warehouse-overview-what-is/)
 
-Onko sinulla muuta kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
+Onko sinulla muuta kysyttävää? [Kokeile Power BI -yhteisöä](https://community.powerbi.com/)

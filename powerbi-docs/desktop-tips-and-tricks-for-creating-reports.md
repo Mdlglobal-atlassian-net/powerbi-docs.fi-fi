@@ -2,7 +2,6 @@
 title: Vinkkejä raporttien luomiseen Power BI:ssä
 description: Lue parhaista käytännöistä raporttien luomiseksi Power BI -palvelussa ja Power BI Desktopissa
 author: davidiseminger
-manager: kfile
 ms.reviewer: willthom
 ms.custom: seodec18
 ms.service: powerbi
@@ -10,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
-ms.openlocfilehash: 41e5ff75e9b6fd48e3101d30999e8d570f34a270
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: a6d949f95f463cb988958551d825a4eae824fb70
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65514059"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73865832"
 ---
 # <a name="tips-and-tricks-for-creating-reports-in-power-bi-desktop"></a>Vinkkejä raporttien luomiseen Power BI Desktopissa
 Joskus voi tarvita hieman ylimääräistä apua, jotta tiedoista saa kaiken hyödyn irti. Olemme koonneet yhteen muutamia vinkkejä, joita voit hyödyntää, kun luot raportteja Microsoftin Power BI Desktopissa *ja* Microsoft Excel 2016:ssa. Niistä on hyötyä myös Excel 2013 Pro Plus -versioissa, joissa Power Pivot -apuohjelma on otettu käyttöön sekä Power Query asennettuna ja käytössä. 
@@ -28,19 +27,19 @@ Saat lisätietoja myös [Power Query Resource Centeristä](https://support.offic
 Tutustu myös ohjeaiheeseen [Lisätietoja kaavasta](https://support.office.com/Article/Learn-about-Power-Query-formulas-6bc50988-022b-4799-a709-f8aafdee2b2f).
 
 ## <a name="data-types-in-query-editor"></a>Kyselyeditorin tietotyypit
-Kun käytät Power BI Desktopin kyselyeditoria tietojen lataamiseen, tietojen tyyppi pyritään tunnistamaan mahdollisimman tarkasti. Jos käytössä on kaavoja, sarakkeiden tietotyyppiasetuksia ei välttämättä kuitenkaan säilytetä. Varmista, että sarakkeiden tietotyyppi ovat oikein, kun olet tehnyt seuraavat toiminnot:  lataa tiedot alustavasti Kysely-välilehdelle, aseta ensimmäinen rivi otsikoksi, lisää sarake, ryhmitä perusteen mukaan, yhdistä ja liitä. Tarkista tietotyyppi myös ennen tietojen lataamista ensimmäistä kertaa.
+Kun käytät Power BI Desktopin kyselyeditoria tietojen lataamiseen, tietojen tyyppi pyritään tunnistamaan mahdollisimman tarkasti. Jos käytössä on kaavoja, sarakkeiden tietotyyppiasetuksia ei välttämättä kuitenkaan säilytetä. Varmista, että sarakkeiden tietotyyppi on oikein, kun olet ensin tehnyt seuraavat toiminnot:  lataa tiedot alustavasti Kysely-välilehdelle, aseta ensimmäinen rivi otsikoksi, lisää sarake, ryhmitä perusteen mukaan, yhdistä ja liitä. Tarkista tietotyyppi myös ennen tietojen lataamista ensimmäistä kertaa.
 
 Muista myös, että tietoruudukossa näkyvä kursivointi ei tarkoita, että tietotyyppi olisi asetettu oikein. Se tarkoittaa vain, että tietoja ei pidetä tekstinä.
 
 ## <a name="reference-queries-in-the-query-editor"></a>Viittaukset kyselyihin kyselyeditorissa
-Kyselyeditorin siirtymistoiminnossa Power BI Desktop, kun jotakin kyselyä hiiren kakkospainikkeella viittaus-vaihtoehdon ”on käytettävissä. Se on hyödyllinen seuraavasta syystä:
+Kun napsautat Power BI Desktopin kyselyeditorin siirtymistoiminnossa jotakin kyselyä hiiren kakkospainikkeella, näet Viittaus-vaihtoehdon. Se on hyödyllinen seuraavasta syystä:
 
 * Kun käytät tiedostoja kyselyn tietolähteenä, absoluuttinen polku tiedostoon tallennetaan kyselyyn. Kun jaat tai siirrät Power BI Desktop -tiedostoa tai Excel-laskentataulukkoa, säästät aikaa, kun voit päivittää viittaukset kerralla sen sijaan, että päivittäisit yksittäiset polut.
 
-Oletusarvoisesti kaikki kyselyt lataavat joko Excel-laskentataulukkoon tai tietomalliin (tai molempiin). Tietyt kyselyt ovat välivaiheita, eikä sitä ole tarkoitettu loppukäyttäjille. Tästä on usein kyse, kun kyselyihin viitataan edellä mainitulla tavalla. Voit hallita kyselyn lataamistapaa ”Ota lataaminen käyttöön-vaihtoehto ja hiiren kakkospainikkeella siirtymistoiminnossa kyselyn. Kun *Ota lataaminen käyttöön* ei ole valintamerkin vieressä, kysely on yhä käytettävissä kysely-välilehdellä ja voit käyttää sitä muihin kyselyihin. Tämä on erityisen hyödyllinen yhdessä Yhdistä-, Liitä- ja Viittaus-muunnosten kanssa. Koska kyselytuloksia ei kuitenkaan ole ladattu tietomalliin, kysely ei tarpeettomasti täytä raportin kenttäluetteloa tai tietomallia. 
+Oletusarvoisesti kaikki kyselyt lataavat joko Excel-laskentataulukkoon tai tietomalliin (tai molempiin). Tietyt kyselyt ovat välivaiheita, eikä niitä ole tarkoitettu loppukäyttäjille. Tästä on usein kyse, kun kyselyihin viitataan edellä mainitulla tavalla. Voit hallita kyselyn lataamistapaa napsauttamalla kyselyä hiiren kakkospainikkeella siirtymistoiminnossa ja muuttamalla Ota lataaminen käyttöön -asetusta. Kun *Ota lataaminen käyttöön* -asetuksen vieressä ei ole valintamerkkiä, kysely on yhä käytettävissä Kysely-välilehdessä ja voit käyttää sitä muihin kyselyihin. Tämä on erityisen hyödyllinen yhdessä Yhdistä-, Liitä- ja Viittaus-muunnosten kanssa. Koska kyselytuloksia ei kuitenkaan ole ladattu tietomalliin, kysely ei tarpeettomasti täytä raportin kenttäluetteloa tai tietomallia. 
 
 ## <a name="scatter-charts-need-a-point-identifier"></a>Pistekaavio edellyttää pistetunnusta
-Otetaan esimerkiksi yksinkertainen taulukko, joka sisältää lämpötiloja ja niiden mittausaikoja. Jos tiedot piirretään suoraan pistekaavioon, Power BI koostaa kaikki arvot yhdeksi pisteeksi. Voit näyttää yksittäiset arvopisteet, sinun on lisättävä kenttä kentän tiedot-jakaumaan hyvin. Yksinkertainen tapa tehdä tämä Power BI Desktopissa on käyttää Kysely-välilehden Lisää sarake -valintanauhan Lisää indeksisarake -vaihtoehtoa. 
+Otetaan esimerkiksi yksinkertainen taulukko, joka sisältää lämpötiloja ja niiden mittausaikoja. Jos tiedot piirretään suoraan pistekaavioon, Power BI koostaa kaikki arvot yhdeksi pisteeksi. Jotta voit näyttää yksittäiset arvopisteet, sinun täytyy lisätä kenttä kentän Tiedot-jakaumaan. Yksinkertainen tapa tehdä tämä Power BI Desktopissa on käyttää Kysely-välilehden Lisää sarake -valintanauhan Lisää indeksisarake -vaihtoehtoa. 
 
 ## <a name="reference-lines-in-your-report"></a>Viittausrivit raportissa
 Voit määrittää viittausrivin käyttämällä laskettua saraketta Power BI Desktopissa. Määritä taulukko ja sarake, johon haluat luoda viittausrivin. Valitse valintanauhasta Uusi sarake ja kirjoita kaavariville seuraava kaava:
@@ -50,7 +49,7 @@ Voit määrittää viittausrivin käyttämällä laskettua saraketta Power BI De
 Tämä laskettu sarake palauttaa arvon 100 riippumatta siitä, missä sitä käytetään. Uusi sarake näkyy kenttäluettelossa. Lisää laskettu Tavoitearvo-sarake viivakaavioon, niin näet, kuinka monta sarjaa liittyy tähän tiettyyn viittausriviin. 
 
 ## <a name="sort-by-another-column"></a>Lajittelu toisen sarakkeen mukaan
-Kun käytät luokittaista arvoa (merkkijonoa) Power BI:ssä kaavion akseleina tai osittajassa tai suodattimessa, oletusjärjestyksenä on aakkosjärjestys. Jos haluat ohittaa tämän järjestyksen, esimerkiksi esimerkiksi viikonpäivät tai kuukaudet, päivää sitten tiedät Power BI Desktop lajittelun eri sarakkeen mukaan. Lisätietoja on artikkelissa [Power BI Desktop-sarakkeen perusteella lajittelu](desktop-sort-by-column.md).
+Kun käytät luokittaista arvoa (merkkijonoa) Power BI:ssä kaavion akseleina tai osittajassa tai suodattimessa, oletusjärjestyksenä on aakkosjärjestys. Jos haluat ohittaa tämän järjestyksen, kun kyseessä ovat esimerkiksi viikonpäivät tai kuukaudet, voit määrittää Power BI Desktopin lajittelemaan eri sarakkeen mukaan. Lisätietoja on artikkelissa [Sarakkeen perusteella lajittelu Power BI Desktopissa](desktop-sort-by-column.md).
 
 ## <a name="building-maps-more-easily-with-hints-to-bing"></a>Karttojen luominen vaivattomasti Bing-vihjeiden avulla
 Power BI integroituu Bingin kanssa, jotta voit luoda karttoja helposti oletusarvoisten karttakoordinaattien eli sijaintitietojen avulla. Bing yrittää selvittää sijainnin tiettyjen algoritmien ja vihjetietojen perusteella, mutta se on parhaimmillaankin pelkkä arvaus. Voit parantaa oikeiden sijaintitietojen lisäämisen todennäköisyyttä seuraavasti:
@@ -62,7 +61,7 @@ Tietyt kohteet ovat moniselitteisiä, jos niitä ilmenee useiden maiden tai alue
 Voit toki aina antaa tarkat leveys- ja pituusastesijainnit Power BI -palvelussa tai Power BI Desktopissa. Kun teet näin, mukana täytyy olla myös Sijainti-kenttä. Muuten nämä tiedot koostetaan oletusarvoisesti, jolloin leveys- ja pituusasteet eivät toimi odotetusti.
 
 ## <a name="categorizing-geographic-fields-to-hint-bings-geocoding"></a>Maantieteellisten kenttien luokittelu Bingin sijaintitietojen lisäämisen avuksi
-Toinen tapa varmistaa kenttien sijaintitietojen lisääminen oikein on määrittää tietokentille tietoluokka. Valitse haluamasi taulukko Power BI Desktop, siirry Lisäasetukset-valintanauha ja Aseta tietoluokka osoite, kaupunki, maanosa, maa tai alue, maa, postinumero, osavaltio tai provinssi. Nämä tietoluokkien avulla Bing voi lisätä sijaintiedot oikein. Lisätietoja on artikkelissa [Tietojen luokittelu Power BI Desktopissa](desktop-data-categorization.md).
+Toinen tapa varmistaa kenttien sijaintitietojen lisääminen oikein on määrittää tietokentille tietoluokka. Valitse haluamasi taulukko Power BI Desktopissa, valitse Lisäasetukset-valintanauha ja aseta tietoluokaksi Osoite, Kaupunki, Maanosa, Maa/alue, Maa, Postinumero, Osavaltio tai Provinssi. Nämä tietoluokkien avulla Bing voi lisätä sijaintiedot oikein. Lisätietoja on artikkelissa [Tietojen luokittelu Power BI Desktopissa](desktop-data-categorization.md).
 
 ## <a name="better-geocoding-with-more-specific-locations"></a>Entistä parempi sijaintitietojen lisääminen tarkempien sijaintien avulla
 Toisinaan edes tietoluokkien asettaminen ei riitä tietojen maantieteellistä yhdistämistä varten. Muodosta entistä tarkempi sijaintitieto, kuten katuosoite, käyttämällä Power BI Desktopin kyselyeditoria. Luo mukautettu sarake Lisää sarake -toiminnolla. Muodosta sitten haluttu sijainti seuraavasti: 
@@ -86,7 +85,7 @@ Jakaumien määrittäminen histogrammin luomiseksi – Määritä, mikä kysely 
 
 Varmista, että koostesarakkeen tietotyyppi on numero. Nyt voit käyttää yksinkertaisimman histogrammin yhteydessä kuvattua Ryhmittelyperuste-vaihtoehtoa histogrammin muodostamiseen. Tällä asetuksella käsitellään enemmän arvopisteitä, mutta se ei silti tue sivellintoiminnon käyttöä.
 
-Määrittäminen histogrammin, joka tukee sivellintoiminnolla – Sivellintoiminnolla on linkitetyissä visualisoinneissa niin, että kun käyttäjä valitsee yhden tietopisteen yhdessä visualisoinnissa, raporttisivun muissa visualisoinneissa korostetaan tai suodatetaan liittyvät valitun arvopisteen. Koska käsittelemme tietoa kyselyhetkellä, meidän on luotava yhteys taulukoiden välille ja varmistettava, mikä tietokohde liittyy jakaumaan histogrammissa ja päinvastoin.
+Sivellintä tukevan histogrammin määrittäminen – Sivellintoiminnolla tarkoitetaan linkitetyissä visualisoinneissa sitä, että kun käyttäjä valitsee yhden tietopisteen yhdessä visualisoinnissa, raporttisivun muissa visualisoinneissa korostetaan tai suodatetaan valittuun tietopisteeseen liittyvät tietopisteet. Koska käsittelemme tietoa kyselyhetkellä, meidän on luotava yhteys taulukoiden välille ja varmistettava, mikä tietokohde liittyy jakaumaan histogrammissa ja päinvastoin.
 
 Aloita prosessi valitsemalla Viittaus-asetus siinä kyselyssä, jonka pohjalta haluat luoda histogrammin. Anna uudelle kyselylle nimeksi Jakaumat. Tässä esimerkissä annetaan alkuperäiselle kyselylle nimeksi Tiedot. Poista seuraavaksi kaikki sarakkeet lukuun ottamatta sitä, jota käytetään histogrammin jakaumana. Käytä sitten kyselyn Poista kaksoiskappaleet -toimintoa, jolloin sarakkeeseen jää jäljelle vain ainutkertaisia arvoja. Löydät toiminnon napsauttamalla saraketta hiiren kakkospainikkeella. Jos tiedoissa on desimaalilukuja, voit ensin käyttää jakaumien määrittämisen vinkkiä, jonka avulla voit luoda histogrammin helposti hallittavasta jakaumajoukosta. Tarkista nyt kyselyn esikatselussa näkyvät tiedot. Jos näet tyhjiä arvoja tai null-arvoja, ne on korjattava ennen suhteiden muodostamista. Lisätietoja on artikkelissa Suhteen luominen tyhjiä tai null-arvoja sisältävillä tiedoilla. Tämä lähestymistapa voi olla ongelmallinen lajittelutarpeen vuoksi. Jakaumien lajittelemisesta oikein on lisätietoja artikkelissa Lajittelujärjestys: luokkien näkyminen halutussa järjestyksessä. 
 
@@ -161,4 +160,4 @@ DAX on Power BI Desktopissa käytettävä laskutoimitusten kaavakieli. Se on opt
 
 [Data Analysis Expressions (DAX) -viittaukset](https://msdn.microsoft.com/library/gg413422.aspx)
 
-[DAX Resource Center](http://social.technet.microsoft.com/wiki/contents/articles/1088.dax-resource-center.aspx)
+[DAX Resource Center](https://social.technet.microsoft.com/wiki/contents/articles/1088.dax-resource-center.aspx)

@@ -2,7 +2,6 @@
 title: Raporttinäkymä Power BI Desktopissa
 description: Raporttinäkymä Power BI Desktopissa
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/19/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: c76dfc45437fdc2406c89e41a4a076d9ef4e7a44
-ms.sourcegitcommit: 200291eac5769549ba5c47ef3951e2f3d094426e
+ms.openlocfilehash: 06b8c9d0be2ec8bc5b350767263bfc5e0ab4ec81
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71142199"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73877858"
 ---
 # <a name="report-view-in-power-bi-desktop"></a>Raporttinäkymä Power BI Desktopissa
 Jos olet työskennellyt Power BI:lla tiedät, miten helppoa on luoda raportteja, jotka sisältävät dynaamisia perspektiivejä ja merkityksellisiä tietoja tietoihisi. Power BI on sisältää myös kehittyneempiä ominaisuuksia Power BI Desktopissa. Power BI Desktopin avulla voit luoda kehittyneitä kyselyitä, koota tietoja useista lähteistä, luoda taulukoiden välisiä yhteyksiä ja paljon muuta.
@@ -29,7 +28,7 @@ Kun lataat tietoja Power BI Desktopiin ensimmäisen kerran, näkyviin tulee **Ra
 
 ![Power BI Desktop](media/desktop-report-view/pbi_reportviewinpbidesigner_reportview.png)
 
-Voit vaihdella **Raporttinäkymää**, **Tietonäkymää** ja **Suhde-näkymää** valitsemalla vasemmanpuoleisessa siirtymispalkissa olevan kuvakkeen:
+Voit vaihdella **Raporttinäkymää**, **Tietonäkymää** ja **Suhde-näkymää** valitsemalla vasemmanpuoleisessa siirtymisruudussa olevan kuvakkeen:
 
 ![Raporttinäkymäkuvake](media/desktop-report-view/pbi_reportviewinpbidesigner_changeview.png)
 

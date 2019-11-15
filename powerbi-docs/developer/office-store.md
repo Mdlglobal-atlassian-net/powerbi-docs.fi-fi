@@ -3,18 +3,17 @@ title: Power BI -visualisointien julkaiseminen AppSourceen
 description: Lue ohjeet siihen, miten voit julkaista omia visualisointejasi AppSourcessa muiden käyttöön.
 author: KesemSharabi
 ms.author: kesharab
-manager: rkarlin
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 3/27/2019
-ms.openlocfilehash: 1841311e94ca593093fa3104b615328927365880
-ms.sourcegitcommit: 549401b0e1fad15c3603fe7f14b9494141fbb100
+ms.openlocfilehash: f97c38301eb69422c123503364e2e3f11ce5368a
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "72307660"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73880526"
 ---
 # <a name="publish-power-bi-visuals-to-appsource"></a>Power BI -visualisointien julkaiseminen AppSourceen
 
@@ -38,10 +37,10 @@ Kun olet lukenut [Power BI:n visualisointien ohjeet](guidelines-powerbi-visuals.
 | .pbix-raporttitiedostoesimerkki |Kyllä |Auta käyttäjiä tutustumaan visualisointiisi esittelemällä sitä. Korosta arvoa, jota visualisointi tuo käyttäjille, ja anna esimerkkejä käytöstä, muotoiluasetuksista ja niin edelleen. Voit myös lisätä loppuun *vinkkisivun*, jolla annat vinkkejä, kerrot, mitä kannattaa välttää ja niin edelleen.<br>.pbix-raporttitiedostoesimerkin täytyy toimia offline-tilassa ilman mitään ulkoista yhteyttä. |
 | Kuvake |Kyllä |Sisällytä mukaan oman visualisointisi logo, joka näytetään kaupassa. Se voi olla .png-, .jpg-, .jpeg- tai .gif-muodossa. Sen on oltava tarkalleen 300 × 300 kuvapistettä (leveys × korkeus). **Tärkeää!** Lue tämä [lyhyt opas](https://docs.microsoft.com/office/dev/store/craft-effective-appsource-store-images) ennen logon lähettämistä. |
 | Näyttökuvat |Kyllä |Sinun täytyy antaa ainakin yksi näyttökuva. Se voi olla .png-, .jpg-, .jpeg- tai .gif-muodossa. Sen on oltava tarkalleen 1 366 × 768 kuvapistettä (leveys × korkeus). Suurin sallittu tiedostokoko on 1 024 kt. *Käyttäjämäärien kasvattamiseksi suosittelemme, että lisäät näyttökuviin tekstikuplia, jotka tuovat esiin tärkeimpien toimintojen etuja.* |
-| Tuen latauslinkki |Kyllä |Tarjoa URL-osoite, josta asiakkaat voivat hankkia tukea, jos heillä on ongelmia visualisointisi käytössä. Tämä linkki on lisätty osana SellerDashboard-luetteloasi, ja käyttäjät näkevät sen käyttäessään visualisointiluetteloasi AppSourcessa. URL-osoitteen täytyy olla https:// - tai http:// -muodossa. |
-| Tietosuoja-asiakirjan linkki |Kyllä |Tarjoa visualisointiasi käyttäville asiakkaille linkki tietosuojakäytäntöösi. Tämä linkki on lisätty osana SellerDashboard-luetteloasi, ja käyttäjät näkevät sen käyttäessään visualisointiluetteloasi AppSourcessa. Linkin täytyy olla https:// - tai http:// -muodossa. |
+| Tuen latauslinkki |Kyllä |Tarjoa URL-osoite, josta asiakkaat voivat hankkia tukea, jos heillä on ongelmia visualisointisi käytössä. Tämä linkki on lisätty osana SellerDashboard-luetteloasi, ja käyttäjät näkevät sen käyttäessään visualisointiluetteloasi AppSourcessa. URL-osoitteen täytyy olla muodossa, johon kuuluu https:// tai https://. |
+| Tietosuoja-asiakirjan linkki |Kyllä |Tarjoa visualisointiasi käyttäville asiakkaille linkki tietosuojakäytäntöösi. Tämä linkki on lisätty osana SellerDashboard-luetteloasi, ja käyttäjät näkevät sen käyttäessään visualisointiluetteloasi AppSourcessa. Linkin täytyy olla muodossa, johon kuuluu https:// tai https://. |
 | Käyttöoikeussopimus (EULA) |Kyllä |Sinun täytyy ladata palveluun käyttöoikeussopimus. Se voi olla oma käyttöoikeussopimuksesi tai Office-kaupan oletuskäyttöoikeussopimus Power BI -visualisoinneille. Jos haluat käyttää oletuskäyttöoikeussopimusta, liitä seuraava URL-osoite myyjän koontinäytön ”Käyttöoikeussopimus”-tiedoston latauksen valintaikkunaan: [https://visuals.azureedge.net/app-store/Power BI - Default Custom Visual EULA.pdf](https://visuals.azureedge.net/app-store/Power%20BI%20-%20Default%20Custom%20Visual%20EULA.pdf). |
-| Videolinkki |Ei |Voit kasvattaa kiinnostusta visualisointiasi kohtaan antamalla linkin sen esittelyvideoon. URL-osoitteen täytyy olla https:// - tai http:// -muodossa. |
+| Videolinkki |Ei |Voit kasvattaa kiinnostusta visualisointiasi kohtaan antamalla linkin sen esittelyvideoon. URL-osoitteen täytyy olla muodossa, johon kuuluu https:// tai https://. |
 | GitHub-säilö |Ei |Suosittelemme, että annat kelvollisen ja julkisen linkin [GitHub](https://www.github.com)-säilöön, joka sisältää visualisointisi lähteet ja esimerkkitiedot, jotta muut kehittäjät voivat antaa palautetta ja ehdottaa parannuksia koodiisi. |
 
 ## <a name="submitting-to-power-bi"></a>Power BI:hin lähettäminen
@@ -152,4 +151,4 @@ Kun visualisointisi on luotu, voit hankkia sille sertifioinnin. Tämä tarkoitta
 [Mukautetut visualisoinnit Power BI:ssä](../power-bi-custom-visuals.md)  
 [Mukautetun visualisoinnin *sertifioinnin hankkiminen*](../power-bi-custom-visuals-certified.md)
 
-Onko sinulla muuta kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)
+Onko sinulla muuta kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)

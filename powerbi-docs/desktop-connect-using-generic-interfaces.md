@@ -2,7 +2,6 @@
 title: Tietoihin yhdistäminen yleisten liittymien avulla Power BI Desktopissa
 description: Lue, kuinka voit muodostaa yhteyden eri tietolähteisiin yleisten liittymien avulla Power BI Desktopissa
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 6ac121ee5154a9d343a912904b20d3244ebee59c
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: b553d9341723c9b44abce57a384d4c7ba76e00a2
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65513745"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73868990"
 ---
 # <a name="connect-to-data-using-generic-interfaces-in-power-bi-desktop"></a>Tietoihin yhdistäminen yleisten liittymien avulla Power BI Desktopissa
 Voit muodostaa yhteyden moniin eri tietolähteisiin **Power BI Desktopissa** käyttämällä valmiita uusia tietoyhteyksiä, jotka ovat väliltä **Access-tietokannat** ja **Zendesk**-resurssit, kuten **Nouda tiedot** -ikkunassa on esitetty. Voit myös muodostaa yhteyden *muihin* tietolähteisiin laajentaaksesi yhteysvaihtoehtoja, käyttämällä yleisiä liittymiä (kuten **ODBC** tai **REST API**) **Power BI Desktopissa**.
@@ -48,16 +47,16 @@ Seuraavassa luettelossa annetaan muutamia esimerkkejä tietolähteistä, joihin 
 
 | Power BI Desktopin yleinen liitin | Ulkoinen tietolähde | Lisätietoja: |
 | --- | --- | --- |
-| ODBC |Cassandra |[Cassandra ODBC -ohjain](http://www.simba.com/drivers/cassandra-odbc-jdbc/) |
+| ODBC |Cassandra |[Cassandra ODBC -ohjain](https://www.simba.com/drivers/cassandra-odbc-jdbc/) |
 | ODBC |Couchbase DB |[Couchbase ja Power BI](https://powerbi.microsoft.com/blog/visualizing-data-from-couchbase-server-v4-using-power-bi/) |
-| ODBC |DynamoDB |[DynamoDB ODBC-ohjain](http://www.simba.com/drivers/dynamodb-odbc-jdbc/) |
-| ODBC |Google BigQuery |[Bigquery ODBC -ohjain](http://www.simba.com/drivers/bigquery-odbc-jdbc/) |
-| ODBC |HBase |[HBase ODBC-ohjain](http://www.simba.com/drivers/hbase-odbc-jdbc/) |
-| ODBC |Hive |[Hive ODBC -ohjain](http://www.simba.com/drivers/hive-odbc-jdbc/) |
+| ODBC |DynamoDB |[DynamoDB ODBC-ohjain](https://www.simba.com/drivers/dynamodb-odbc-jdbc/) |
+| ODBC |Google BigQuery |[Bigquery ODBC -ohjain](https://www.simba.com/drivers/bigquery-odbc-jdbc/) |
+| ODBC |Hbase |[Hbase ODBC -ohjain](https://www.simba.com/drivers/hbase-odbc-jdbc/) |
+| ODBC |Hive |[Hive ODBC -ohjain](https://www.simba.com/drivers/hive-odbc-jdbc/) |
 | ODBC |IBM Netezza |[IBM Netezza -tiedot](https://www.ibm.com/support/knowledgecenter/SSULQD_7.2.1/com.ibm.nz.datacon.doc/c_datacon_plg_overview.html) |
-| ODBC |Presto |[Presto ODBC -ohjain](http://www.simba.com/drivers/presto-odbc-jdbc/) |
+| ODBC |Presto |[Presto ODBC -ohjain](https://www.simba.com/drivers/presto-odbc-jdbc/) |
 | ODBC |Project Online |[Project Online -artikkeli](desktop-project-online-connect-to-data.md) |
-| ODBC |Progress OpenEdge |[Progress OpenEdge ODBC -ohjaimen blogimerkintä](https://na01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.progress.com%2Fblogs%2Fconnect-microsoft-power-bi-to-openedge-via-odbc-driver&data=02%7C01%7CMatt.Masson%40microsoft.com%7C5e63742e6c454308b58a08d4034b5923%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636137069555329811&sdata=gSu2Rq3vZ0uBVOgjaXxd8Y3uBf%2B8DidX6PG33jwAduY%3D&reserved=0) |
+| ODBC |Progress OpenEdge |[Progress OpenEdge ODBC -ohjaimen blogimerkintä](https://www.progress.com/blogs/connect-microsoft-power-bi-to-openedge-via-odbc-driver) |
 
 ## <a name="data-sources-accessible-through-ole-db"></a>Tietolähteet, joihin pääsee OLE DB:n kautta
 **OLE DB**-liitäntä **Power BI Desktopissa** tuo tietoja mistä tahansa kolmannen osapuolen OLE DB -ohjaimelta määrittämällä *yhteysmerkkijonon*. Vaihtoehtona voit myös määrittää SQL-lausekkeen, jota suoritetaan OLE DB -ohjainta vasten.

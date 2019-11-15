@@ -3,25 +3,24 @@ title: Yhdyskäytävien vianmääritys – Power BI
 description: Tästä artikkelista saat vianmääritysohjeita paikalliselle tietoyhdyskäytävälle ja Power BI:lle. Se tarjoaa ohjeita tunnettujen ongelmien kiertämiseen sekä työkaluja, joista on apua.
 author: mgblythe
 ms.author: mblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: troubleshooting
 ms.date: 07/15/2019
 LocalizationGroup: Gateways
-ms.openlocfilehash: bfb0546771331e13f3703de0afdbcad6c3219f9c
-ms.sourcegitcommit: e5cf19e16112c7dad1591c3b38d232267ffb3ae1
+ms.openlocfilehash: b420c827df3c18796d0d46514f81170f202eafbd
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72543828"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73881566"
 ---
 # <a name="troubleshoot-gateways---power-bi"></a>Yhdyskäytävien vianmääritys – Power BI
 
 [!INCLUDE [gateway-rewrite](includes/gateway-rewrite.md)]
 
-Tässä artikkelissa käsitellään joitakin yleisiä ongelmia käytettäessä paikallista tietoyhdyskäytävää ja Power BI:tä. Jos kohtaat ongelman, jota ei ole lueteltu tässä, voit käyttää Power BI [-yhteisöjen](http://community.powerbi.com) sivustoa. Voit myös luoda [tukipalvelupyynnön](http://powerbi.microsoft.com/support).
+Tässä artikkelissa käsitellään joitakin yleisiä ongelmia käytettäessä paikallista tietoyhdyskäytävää ja Power BI:tä. Jos kohtaat ongelman, jota ei ole lueteltu tässä, voit käyttää Power BI [-yhteisöjen](https://community.powerbi.com) sivustoa. Voit myös luoda [tukipalvelupyynnön](https://powerbi.microsoft.com/support).
 
 ## <a name="configuration"></a>Määrittäminen
 
@@ -227,7 +226,7 @@ Saat 10709-virheen yhteyden epäonnistumisesta, jos delegointia ei ole määrite
 
 Kun käytät yhdyskäytävän ajoitettua päivitystä, **päivityshistoriasta** näet ilmenneet virheet. Se voi myös tarjota hyödyllisiä tietoja, jos sinun täytyy luoda tukipyyntö. Voit tarkistaa ajoitetut päivitykset ja pyynnöstä suoritetut päivitykset. Seuraavissa vaiheissa esitetään, miten pääset päivityshistoriaan.
 
-1. Valitse Power BI:n siirtymisruudun **Tietojoukot**-kohdasta tietojoukko. Avaa valikko ja valitse **Ajoita päivitys**.
+1. Valitse yksi tietojoukoista Power BI -siirtymisruudun kohdasta **Tietojoukot**. Avaa valikko ja valitse **Ajoita päivitys**.
 
     ![Ajoitetun päivityksen valitseminen](media/service-gateway-onprem-tshoot/scheduled-refresh.png)
 
@@ -241,7 +240,7 @@ Lisätietoja päivitystilanteiden vianmäärityksestä on kohdassa [Päivitystil
 
 ## <a name="fiddler-trace"></a>Fiddler-jäljitys
 
-[Fiddler](http://www.telerik.com/fiddler) on Telerikin ilmainen työkalu, joka valvoo HTTP-liikennettä. Voit tarkastella Power BI -palvelun tiedonsiirtoa asiakaskoneelta. Tämä liikenneluettelo saattaa näyttää virheitä ja muita olennaisia tietoja.
+[Fiddler](https://www.telerik.com/fiddler) on Telerikin ilmainen työkalu, joka valvoo HTTP-liikennettä. Voit tarkastella Power BI -palvelun tiedonsiirtoa asiakaskoneelta. Tämä liikenneluettelo saattaa näyttää virheitä ja muita olennaisia tietoja.
 
 ![Fiddler-jäljityksen käyttäminen](media/service-gateway-onprem-tshoot/fiddler.png)
 
@@ -254,4 +253,4 @@ Lisätietoja päivitystilanteiden vianmäärityksestä on kohdassa [Päivitystil
 * [Tietolähteen hallinta – SQL Server](service-gateway-enterprise-manage-sql.md)  
 * [Tietolähteen hallinta – tuonti ja ajoitettu päivitys](service-gateway-enterprise-manage-scheduled-refresh.md)  
 
-Onko sinulla kysyttävää? Kokeile [Power BI -yhteisöä](http://community.powerbi.com/).
+Onko sinulla kysyttävää? Kokeile [Power BI -yhteisöä](https://community.powerbi.com/).

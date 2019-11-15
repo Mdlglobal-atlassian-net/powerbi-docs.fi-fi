@@ -2,7 +2,6 @@
 title: Power BI:n arkistoitu työtila
 description: Power BI arkistoitu työtila Office 365 -vuokraajan hallinnan jälkeen
 author: mgblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/18/2019
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 891ffffd885e2b5d59cba64e6e99ce7fe3cf811b
-ms.sourcegitcommit: a6602d84c86d3959731a8d0ba39a522914f13d1a
+ms.openlocfilehash: 66bf203cad577df0c985fbd73bcab3c6d79f6a95
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/21/2019
-ms.locfileid: "71175585"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73873557"
 ---
 # <a name="power-bi-archived-workspace"></a>Power BI:n arkistoitu työtila
 
@@ -24,7 +23,7 @@ ms.locfileid: "71175585"
 
 Power BI:n avulla kuka tahansa voi rekisteröityä ja aloittaa palvelun käytön muutamassa minuutissa.  Myöhemmin organisaatiosi IT-osasto voi halutessaan ottaa haltuun Power BI:n hallinnan organisaation käyttäjille.  Jos näin tapahtuu, etuna on käyttäjien ja käyttöoikeuksien keskitetty hallinta organisaatiossasi. Saatat myös pystyä hyödyntämään virtaviivaistettua sisäänkirjautumista samalla käyttäjänimellä ja salasanalla, joita käytät organisaation muissakin palveluissa.
 
-Sisältö, jonka loit ennen kuin IT-osastosi aloitti Power BI:n hallinnan, sijoitetaan Power BI:n arkistoituun työtilaan, joka on käytettävissä [Power BI:n](https://app.powerbi.com) vasemmassa siirtymisruudussa. Sinun kannattaa aloittaa luomaan uutta Power BI -sisältöä omassa työtilassa, jota organisaation IT-osasto suojaa ja hallitsee.  Arkistoitu työtila on edelleen olemassa, mutta käytössä on rajoituksia arkistoidun työtilan sisältöön tehtävissä toiminnoissa.  Jos haluat poistaa nämä rajoitukset, sinun on siirrettävä sisältö arkistoidusta työtilasta omaan työtilaasi, jota IT-osastosi hallitsee.
+Sisältö, jonka loit ennen kuin IT-osastosi aloitti Power BI:n hallinnan, sijoitetaan Power BI:n arkistoituun työtilaan, joka on käytettävissä [Power BI:n](https://app.powerbi.com) siirtymisruudussa. Sinun kannattaa aloittaa luomaan uutta Power BI -sisältöä omassa työtilassa, jota organisaation IT-osasto suojaa ja hallitsee.  Arkistoitu työtila on edelleen olemassa, mutta käytössä on rajoituksia arkistoidun työtilan sisältöön tehtävissä toiminnoissa.  Jos haluat poistaa nämä rajoitukset, sinun on siirrettävä sisältö arkistoidusta työtilasta omaan työtilaasi, jota IT-osastosi hallitsee.
 
 ## <a name="restrictions-in-your-archived-workspace"></a>Arkistoidun työtilan rajoitukset
 
@@ -50,5 +49,5 @@ Jotta voit jatkaa Power BI:n käyttämistä, sinun on luotava uutta sisältöä 
 
 * **Raporttinäkymät**: Sisältöpakettien osana asennetut raporttinäkymät luodaan automaattisesti uudelleen, kun yhdistät uudelleen sisältöpakettiin omassa työtilassa. Jos olet luonut omia koontinäyttöjä Power BI -palvelun kautta, sinun on luotava kyseiset koontinäytöt uudelleen omassa työtilassa.
 
-Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)
+Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
 

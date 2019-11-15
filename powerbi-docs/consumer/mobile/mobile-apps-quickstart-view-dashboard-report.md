@@ -2,19 +2,18 @@
 title: 'Pika-aloitus: Raporttinäkymien ja raporttien tarkastelu mobiilisovelluksissa'
 description: Tässä pikaoppaassa kerrotaan raporttinäkymien ja raporttien tarkastelusta Power BI -mobiilisovelluksissa.
 author: mshenhav
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: quickstart
 ms.date: 04/18/2019
 ms.author: mshenhav
-ms.openlocfilehash: 173142d9aaf2b445504028e1f7987abe21806c37
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: 9af245b51fa2520dca1ccca535ec44f14360a54c
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "60975864"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73879267"
 ---
 # <a name="quickstart-explore-dashboards-and-reports-in-the-power-bi-mobile-apps"></a>Pika-aloitus: Raporttinäkymien ja raporttien tarkastelu Power BI -mobiilisovelluksissa
 Tässä pikaoppaassa esitellään esimerkki raporttinäkymästä ja raportista Android-puhelimen Power BI -mobiilisovelluksessa. Voit seurata myös muilla mobiilisovelluksilla. 
@@ -35,7 +34,7 @@ Raporttinäkymät ovat portaali yrityksesi elinkaareen ja prosesseihin. Raportti
 Jos et ole rekisteröitynyt Power BI:hin, [rekisteröidy ilmaiseen kokeiluversioon](https://app.powerbi.com/signupredirect?pbi_source=web) ennen aloittamista.
 
 ### <a name="install-the-power-bi-for-android-app"></a>Power BI:n Android-sovelluksen asentaminen
-[Lataa Power BI for Android -sovellus](http://go.microsoft.com/fwlink/?LinkID=544867) Google Play -kaupasta.
+[Lataa Power BI for Android -sovellus](https://go.microsoft.com/fwlink/?LinkID=544867) Google Play -kaupasta.
 
 Power BI toimii Android-laitteilla, joissa on käytössä Android 5.0 -käyttöjärjestelmä tai uudempi versio. Jos haluat tarkistaa laitteesi, siirry kohtaan **Asetukset** > **Tietoa laitteesta** > **Android -versio**.
 
@@ -44,11 +43,11 @@ Pikaoppaan ensimmäisessä vaiheessa ladataan jälleenmyyntianalyysimalli Power 
 
 1. Avaa Power BI -palvelu (app.powerbi.com) selaimessasi ja kirjaudu sisään.
 
-1. Avaa vasen siirtymisruutu napsauttamalla yleistä siirtymiskuvaketta.
+1. Avaa siirtymisruutu napsauttamalla yleistä siirtymiskuvaketta.
 
     ![yleinen siirtymiskuvake](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-global-nav-icon.png)
 
-2. Valitse vasemmassa siirtymisruudussa **Työtilat** > **Oma työtila**.
+2. Valitse siirtymisruudussa **Työtilat** > **Oma työtila**.
 
     ![Oma työtila](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-my-workspace.png)
 
@@ -135,7 +134,7 @@ Kun olet suorittanut pikaoppaan, voit halutessasi poistaa Jälleenmyyntianalyysi
 
 1. Avaa Power BI -palvelu (app.powerbi.com) ja kirjaudu sisään.
 
-2. Valitse vasemmassa siirtymisruudussa **Työtilat** > **Oma työtila**.
+2. Valitse siirtymisruudussa **Työtilat** > **Oma työtila**.
 
     Keltainen tähti kertoo, että kyse on suosikista.
 

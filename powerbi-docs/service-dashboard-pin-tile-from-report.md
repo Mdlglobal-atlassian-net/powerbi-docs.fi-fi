@@ -2,7 +2,6 @@
 title: Ruudun kiinnittäminen Power BI:n koontinäyttöön raportista
 description: Ruudun kiinnittäminen Power BI:n koontinäyttöön raportista.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 featuredvideoid: lJKgWnvl6bQ
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 07/23/2019
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: b27cf80985dc1789fff5797430e4592fe361b533
-ms.sourcegitcommit: bc688fab9288ab68eaa9f54b9b59cacfdf47aa2e
+ms.openlocfilehash: 24d706108bab274ef6aae8733f1fc11d212f13eb
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68624071"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73852622"
 ---
 # <a name="pin-a-tile-to-a-power-bi-dashboard-from-a-report"></a>Ruudun kiinnittäminen Power BI:n koontinäyttöön raportista
 
@@ -66,5 +65,5 @@ Jos haluat lisätietoja, katso [Koko raportin sivun kiinnittäminen](service-das
 - [Tietojen päivittäminen Power BI:ssä](refresh-data.md)
 - [Power BI -palvelun peruskäsitteitä suunnittelijoille](service-basic-concepts.md)
 
-Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
+Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](https://community.powerbi.com/)
 

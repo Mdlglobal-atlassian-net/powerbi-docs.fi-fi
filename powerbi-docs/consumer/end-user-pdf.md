@@ -2,7 +2,6 @@
 title: Raporttien vieminen PDF-muotoon
 description: Lue ohjeet siihen, miten voit viedä Power BI -raportin PDF-tiedostona.
 author: mihart
-manager: kvivek
 ms.custom: ''
 ms.reviewer: cmfinlan
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 09/14/2019
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: 1d6ddcd11118e0eb9894002c5c97edda134d4635
-ms.sourcegitcommit: 26123c6bb24c8174beb390f4e06fb938d31238ea
+ms.openlocfilehash: 376ecd007e774a153b47df75417621d4233cc4ce
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72716979"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73862858"
 ---
 # <a name="export-reports-from-power-bi-to-pdf"></a>Raporttien vieminen Power BI:stä PDF-muotoon
 
@@ -25,7 +24,7 @@ ms.locfileid: "72716979"
 Power BI:llä voit julkaista raportin PDF-muodossa ja luoda helposti Power BI -raporttiisi perustuvan PDF-tiedoston. Kun viet PDF-muotoon, jokaisesta Power BI -raportin sivusta tulee yksittäinen sivu PDF-tiedostossa.
 
 ## <a name="export-your-power-bi-report-to-pdf"></a>Power BI -raportin vieminen PDF-muotoon
-Valitse Power BI -palvelussa raportti, joka näytetään kankaalla. Voit myös valita raportin **Aloitus**-sivulta, **sovelluksista** tai vasemman siirtymisruudun mistä tahansa muusta säilöstä.
+Valitse Power BI -palvelussa raportti, joka näytetään kankaalla. Voit myös valita raportin **aloitussivulta**, **sovelluksista** tai siirtymisruudun mistä tahansa muusta säilöstä.
 
 1. Valitse valikkopalkista **Vie** > **PDF**.
 

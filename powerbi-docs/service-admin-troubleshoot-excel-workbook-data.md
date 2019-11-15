@@ -2,7 +2,6 @@
 title: 'Virhe: Excel-työkirjasta ei löydy mitään tietoja'
 description: 'Virhe: Excel-työkirjasta ei löydy mitään tietoja'
 author: mgblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -11,12 +10,12 @@ ms.date: 04/30/2019
 ms.author: mblythe
 ms.custom: seodec18
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: c32133a7958c1239337a5f77a92dde098652514e
-ms.sourcegitcommit: e5cf19e16112c7dad1591c3b38d232267ffb3ae1
+ms.openlocfilehash: 08de5051adb420bc2a3b257fcc231730aa505b23
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72542865"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73873395"
 ---
 # <a name="error-we-couldnt-find-any-data-in-your-excel-workbook"></a>Virhe: Excel-työkirjasta ei löydy mitään tietoja
 
@@ -61,7 +60,7 @@ Kun tuot Excel-työkirjan, Power BI etsii taulukot ja tuo ne tietojoukkona. Jos 
    
     ![tiedot muotoiltuna taulukoksi](media/service-admin-troubleshoot-excel-workbook-data/power-bi-troubleshoot-excel-table.png)
 6. Tallenna työkirja.
-7. Palaa Power BI:hin. Valitse vasemman siirtymisruudun alareunassa Nouda tiedot.
+7. Palaa Power BI:hin. Valitse siirtymisruudun alareunassa Nouda tiedot.
    
     ![Nouda tiedot](media/service-admin-troubleshoot-excel-workbook-data/power-bi-get-data.png)
 8. Valitse **Tiedostot**-ruudusta **Nouda**.

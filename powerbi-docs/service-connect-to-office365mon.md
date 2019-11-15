@@ -2,7 +2,6 @@
 title: Yhteyden muodostaminen Office365Moniin Power BI:n avulla
 description: Office365Mon Power BI:lle
 author: teddybercovitz
-manager: kfile
 ms.reviewer: maggiesMSFT
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 8/29/2019
 ms.author: tebercov
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 5d31eccd52164bb4d1ff37532d89dc7e147693d3
-ms.sourcegitcommit: d441d350504f8c6d9e100d229757add6237f0bef
+ms.openlocfilehash: 64e8365a6d4e0c01911de9e69998af4d58d59202
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73060841"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73854729"
 ---
 # <a name="connect-to-office365mon-with-power-bi"></a>Yhteyden muodostaminen Office365Moniin Power BI:n avulla
 Office 365:n käyttökatkosten ja kunnon suorituskyvyn tietojen analysoiminen on helppoa Power BI:n ja Office365Mon-mallisovelluksen avulla. Power BI noutaa tiedot myös käyttökatkoksista ja kunnosta ja luo niiden pohjalta valmiin koontinäytön ja raportit.
@@ -26,7 +25,7 @@ Muodosta yhteys [Office365Mon-mallisovellukseen](https://app.powerbi.com/groups/
 >Office365Mon-järjestelmänvalvojatiliä tarvitaan yhteyden muodostamiseen Power BI -mallisovellukseen ja sen lataamiseen.
 
 ## <a name="how-to-connect"></a>Yhteyden muodostaminen
-1. Valitse vasemman siirtymisruudun alareunassa **Nouda tiedot**.
+1. Valitse siirtymisruudun alareunassa **Nouda tiedot**.
    
    ![](media/service-connect-to-office365mon/pbi_getdata.png)
 2. Valitse **Palvelut**-ruudussa **Nouda**.
@@ -42,7 +41,7 @@ Muodosta yhteys [Office365Mon-mallisovellukseen](https://app.powerbi.com/groups/
    ![](media/service-connect-to-office365mon/creds.png)
    
    ![](media/service-connect-to-office365mon/creds2.png)
-5. Kun Power BI on tuonut tiedot, näet vasemmassa siirtymisruudussa uuden koontinäytön, raportin ja tietojoukon. Uudet kohteet on merkitty keltaisella tähdellä \*, valitse Office365Mon-merkintä.
+5. Kun Power BI on tuonut tiedot, näet siirtymisruudussa uuden koontinäytön, raportin ja tietojoukon. Uudet kohteet on merkitty keltaisella tähdellä \*, valitse Office365Mon-merkintä.
    
    ![](media/service-connect-to-office365mon/dashboard4.png)
 

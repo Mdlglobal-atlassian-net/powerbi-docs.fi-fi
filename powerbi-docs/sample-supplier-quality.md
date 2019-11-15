@@ -2,7 +2,6 @@
 title: 'Toimittajan laatuanalyysimalli Power BI:lle: aloita esittely'
 description: 'Toimittajan laatuanalyysimalli Power BI:lle: aloita esittely'
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 07/19/2019
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: 76e053d34dcd7f1f199f4cbf9f02196e8efc6232
-ms.sourcegitcommit: ba95d4979f1869f49a7d266c591f95e2810fdb29
+ms.openlocfilehash: 156b00c7f7287f12397afea422a38f3870d6c399
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "69621324"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73858421"
 ---
 # <a name="supplier-quality-analysis-sample-for-power-bi-take-a-tour"></a>Toimittajan laatuanalyysimalli Power BI:lle: aloita esittely
 
@@ -59,11 +58,11 @@ Ennen kuin voit käyttää mallia, se on ensin ladattava [sisältöpakettina](#g
   
 ### <a name="get-the-pbix-file-for-this-sample"></a>Hae tämän mallin .pbix-tiedosto
 
-Vaihtoehtoisesti voit ladata toimittajan laatuanalyysimallin [.pbix-tiedostona](http://download.microsoft.com/download/8/C/6/8C661638-C102-4C04-992E-9EA56A5D319B/Supplier-Quality-Analysis-Sample-PBIX.pbix), joka on suunniteltu käytettäväksi Power BI Desktopilla.
+Vaihtoehtoisesti voit ladata toimittajan laatuanalyysimallin [.pbix-tiedostona](https://download.microsoft.com/download/8/C/6/8C661638-C102-4C04-992E-9EA56A5D319B/Supplier-Quality-Analysis-Sample-PBIX.pbix), joka on suunniteltu käytettäväksi Power BI Desktopilla.
 
 ### <a name="get-the-excel-workbook-for-this-sample"></a>Hae tämän näytteen Excel-työkirja
 
-Jos haluat perehtyä tämän mallin tietolähteeseen, se on saatavana myös [Excel-työkirjana](http://go.microsoft.com/fwlink/?LinkId=529779). Työkirja sisältää Power View -taulukoita, joita voit tarkastella ja muokata. Saat raakatiedot näkyviin ottamalla käyttöön Tietojen analysointi -apuohjelmat ja valitsemalla sitten **Power Pivot > Hallinta**. Voit ottaa Power View- ja Power Pivot -apuohjelmat käyttöön [tutustumalla Excelin sisältämien Excel-mallien](sample-datasets.md#optional-take-a-look-at-the-excel-samples-from-inside-excel-itself) lisätietoihin.
+Jos haluat perehtyä tämän mallin tietolähteeseen, se on saatavana myös [Excel-työkirjana](https://go.microsoft.com/fwlink/?LinkId=529779). Työkirja sisältää Power View -taulukoita, joita voit tarkastella ja muokata. Saat raakatiedot näkyviin ottamalla käyttöön Tietojen analysointi -apuohjelmat ja valitsemalla sitten **Power Pivot > Hallinta**. Voit ottaa Power View- ja Power Pivot -apuohjelmat käyttöön [tutustumalla Excelin sisältämien Excel-mallien](sample-datasets.md#optional-take-a-look-at-the-excel-samples-from-inside-excel-itself) lisätietoihin.
 
 ## <a name="downtime-caused-by-defective-materials"></a>Viallisten materiaalien aiheuttamat käyttökatkot
 Analysoidaan viallisten materiaalien aiheuttamia käyttökatkoja ja katsotaan, mitkä toimittajat ovat vastuussa niistä.  
@@ -94,7 +93,7 @@ Analysoidaan viallisten materiaalien aiheuttamia käyttökatkoja ja katsotaan, m
     ![Käyttökatkoaika minuutteina toimittajan mukaan -puukartta](media/sample-supplier-quality/supplier5.png)  
 
    Näemme tässä puukartassa, että kahdeksan parasta toimittajaa ovat kahdeksan lohkoa puukartan vasemmassa reunassa. Näemme myös, että ne aiheuttavat noin 50 % kaikesta käyttökatkoajasta.  
-3. Valitse **Toimittajan laatuanalyysimalli** yläreunan siirtymispalkista ja palaa koontinäyttöön.
+3. Valitse **Toimittajan laatuanalyysimalli** yläreunan siirtymisruudusta ja palaa koontinäyttöön.
 
 ### <a name="comparing-plants"></a>Toimipisteiden vertaileminen
 Seuraavaksi tutustumme siihen, mitkä toimipisteet hallitsevat paremmin viallista materiaalia, jolloin tuloksena on vähemmän käyttökatkoja.  
@@ -113,7 +112,7 @@ Seuraavaksi tutustumme siihen, mitkä toimipisteet hallitsevat paremmin viallist
 3. Valitse kuplakaaviosta **Logistiikka**-kupla ja tutustu toimipisteisiin Illinoisin Springfieldissä ja Napervillessä. Naperville näyttää hallitsevan viallisia toimituksia paljon paremmin, koska siellä hylkäysten määrä on suurempi ja vaikutukset vähäisempiä verrattuna Springfieldin paljon suurempaan vaikutuslukuun.  
 
    ![Valitse Logistiikka](media/sample-supplier-quality/supplier8.png)  
-4. Valitse **Toimittajan laatuanalyysimalli** yläreunan siirtymispalkista ja palaa koontinäyttöön.
+4. Valitse **Toimittajan laatuanalyysimalli** yläreunan siirtymisruudusta ja palaa koontinäyttöön.
 
 ## <a name="which-material-type-is-best-managed"></a>Mitä materiaalityyppiä hallitaan parhaiten?
 Parhaiten hallittu materiaali on materiaali, jossa on vähäisin käyttökatkoaika tai ei vaikutusta vikamäärästä riippumatta.
@@ -138,7 +137,7 @@ Parhaiten hallittu materiaali on materiaali, jossa on vähäisin käyttökatkoai
 
     ![Vikojen kokonaismäärä kuukauden ja vuoden mukaan -kaavio](media/sample-supplier-quality/supplier11.png)  
 3. Aiheuttaako suurempi vikamäärä enemmän käyttökatkoja? Esitä kysymyksiä Q&A-ruudussa asian selvittämiseksi.  
-4. Valitse **Toimittajan laatuanalyysimalli** yläreunan siirtymispalkista ja palaa koontinäyttöön.  
+4. Valitse **Toimittajan laatuanalyysimalli** yläreunan siirtymisruudusta ja palaa koontinäyttöön.  
 5. Koska tiedämme, että raaka-aineissa on eniten vikoja, kirjoita kysymysruutuun *näytä materiaalityypit, vuosi ja vikojen kokonaismäärä*.  
 
     Raaka-ainevikoja ilmeni paljon enemmän vuonna 2014 kuin vuonna 2013.  

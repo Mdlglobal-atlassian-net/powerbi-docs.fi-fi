@@ -2,19 +2,18 @@
 title: Tarkastele SSRS-mobiiliraportteja ja suorituskykymittareita Windows 10 -mobiilisovelluksessa – Power BI
 description: Power BI -mobiilisovellus Windows 10:lle tarjoaa tärkeiden, paikalliseen liiketoimintaan liittyvien tietojen reaaliaikaisen, kosketuskäyttöisten mobiilikäytön.
 author: mshenhav
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 06/28/2018
 ms.author: mshenhav
-ms.openlocfilehash: 114cf65e8abb072ab3f0254cbd4041a43a31d1dc
-ms.sourcegitcommit: d441d350504f8c6d9e100d229757add6237f0bef
+ms.openlocfilehash: 4666e7c0e4901a99867ea72ab404df4cbffe110b
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73059639"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73879365"
 ---
 # <a name="view-reporting-services-ssrs-mobile-reports-and-kpis-in-the-windows-10-power-bi-mobile-app"></a>Tarkastele Reporting Services (SSRS):n mobiiliraportteja ja suorituskykymittareita Windows 10 -laitteiden Power BI -sovelluksella
 Power BI -mobiilisovellus Windows 10:lle tarjoaa tärkeiden, paikalliseen liiketoimintaan liittyvien tietojen reaaliaikaisen, kosketuskäyttöisten mobiilikäytön SQL Server 2016 Reporting Servicesissä. 
@@ -46,11 +45,11 @@ Vaikka sinulla ei olisikaan pääsyä Reporting Services -verkkoportaaliin, voit
 Selaa näytteitä suorituskykymittarien ja mobiiliraporttien käyttämiseksi vuorovaikutteisesti.
 
 ## <a name="connect-to-a-reporting-services-report-server"></a>Muodosta yhteys Reporting Servicesin -raporttien palvelimelle
-1. Napauta **Asetukset** vasemmanpuoleisen siirtymispalkin alaosassa olevasta ![Asetukset-kuvakkeesta](./././media/mobile-app-windows-10-ssrs-kpis-mobile-reports/power-bi-settings-icon.png)
+1. Napauta siirtymisruudun alaosassa **Asetukset** ![Asetukset-kuvake](./././media/mobile-app-windows-10-ssrs-kpis-mobile-reports/power-bi-settings-icon.png)
 2. Napauta **Yhdistä palvelimeen**.
 3. Kirjoita palvelimen osoite ja käyttäjänimesi ja salasanasi. Käytä tätä muotoilua palvelimen osoitteessa:
    
-     `http://<servername>/reports` TAI   `https://<servername>/reports`
+     `https://<servername>/reports` TAI   `https://<servername>/reports`
    
    > [!NOTE]
    > Lisää **http** tai **https** yhteysmerkkijonon alkuun.
@@ -60,9 +59,9 @@ Selaa näytteitä suorituskykymittarien ja mobiiliraporttien käyttämiseksi vuo
     Napauta halutessasi **Lisäasetus**, jos haluat antaa palvelimelle nimen.
 4. Muodosta yhteys napauttamalla valintamerkkiä. 
    
-   Nyt näet palvelimen vasemmassa siirtymispalkissa.
+   Nyt näet palvelimen siirtymissiirtymisruudussa.
    
-   ![Palvelin vasemmassa siirtymispalkissa](./media/mobile-app-windows-10-ssrs-kpis-mobile-reports/power-bi-ssrs-mobile-report-server.png)
+   ![Palvelin siirtymisruudussa](./media/mobile-app-windows-10-ssrs-kpis-mobile-reports/power-bi-ssrs-mobile-report-server.png)
    
    >[!TIP]
    >Voit napauttaa ![Yleinen siirtymisnäkymä -painiketta](././media/mobile-app-windows-10-ssrs-kpis-mobile-reports/powerbi_windows10_options_icon.png) milloin tahansa ja siirtyä Reporting Services -mobiiliraporttien ja Power BI -palvelun koontinäyttöjen välillä. 
@@ -96,7 +95,7 @@ Lue lisää [suosikeista Power BI -mobiilisovelluksissa](mobile-apps-favorites.m
 ## <a name="remove-a-connection-to-a-report-server"></a>Yhteyden poistaminen raporttipalvelimeen
 Voit olla yhdistettynä vain yhteen raporttipalvelimen kerrallaan Power BI -mobiilisovelluksestasi. Jos haluat muodostaa yhteyden eri palvelimeen, sinun on katkaistava yhteys nykyiseen.
 
-1. Napauta **Asetukset** vasemmanpuoleisen siirtymispalkin alaosassa olevasta ![Asetukset-kuvakkeesta](./././media/mobile-app-windows-10-ssrs-kpis-mobile-reports/power-bi-settings-icon.png).
+1. Napauta siirtymisruudun alaosassa **Asetukset** ![Asetukset-kuvake](./././media/mobile-app-windows-10-ssrs-kpis-mobile-reports/power-bi-settings-icon.png).
 2. Napauta ja pidä palvelimen nimeä, johon et halua olla yhteydessä.
 3. Napauta **Poista palvelin**.
    
@@ -111,5 +110,5 @@ Reporting Services -suorituskykymittareita ja mobiiliraportteja ei luoda Power B
 ## <a name="next-steps"></a>Seuraavat vaiheet
 * [Windows 10:n Power BI -mobiilisovelluksen käytön aloittaminen](mobile-windows-10-phone-app-get-started.md)  
 * [Mikä on Power BI?](../../fundamentals/power-bi-overview.md)  
-* Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)
+* Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
 

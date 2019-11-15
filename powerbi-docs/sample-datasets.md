@@ -2,7 +2,6 @@
 title: Esittely Power BI:n käytettävissä olevista malleista
 description: Power BI:n mallit sisältöpaketeista, PBIX-tiedostoista ja Excel-tietojoukoista
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: amac
 ms.custom: seodec18
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 04/05/2019
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: 49c16e083b2119e94f23a78b10ea014efcd70c3c
-ms.sourcegitcommit: 762857c8ca09ce222cc3f8b006fa1b65d11e4ace
+ms.openlocfilehash: d5fcc6866d564367d2a29dc00493a959409ea2ed
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66721492"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73858978"
 ---
 # <a name="what-sample-data-is-available-to-use-with-power-bi"></a>Millaista mallidataa Power BI:tä varten on saatavilla?
 Olet ehkä aloittanut vasta Power BI:n käytön ja haluat kokeilla sen toimintaa, mutta sinulla ei ole vielä tietoja, joilla testata sitä.  Tai ehkäpä sinulla on tietojoukko. Koska et ymmärrä (vielä) Power BI:n toimintaa kovin hyvin, pelkäät aiheuttavasi tietojoukollesi jotakin vahinkoa.
@@ -116,16 +115,16 @@ Nyt kun sinulla on tietoja, olet jo päässyt hyvään alkuun.  Katso joitakin o
 ## <a name="the-power-bi-samples-as-excel-files"></a>Power BI ‑mallit Excel-tiedostoina
 Kaikki mallisisältöpaketit ovat saatavilla myös Excel-työkirjoina. Excel-työkirjat on suunniteltu käytettäväksi yhdessä Power BI -palvelun kanssa.  
 
-1. Lataa tiedostot yksitellen alla olevista linkeistä tai [lataa zip-tiedosto, jossa on mukana kaikki mallitiedostot](http://go.microsoft.com/fwlink/?LinkId=535020). Jos olet kokenut käyttäjä, haluat ehkä ladata Excel-työkirjat päästäksesi tutkimaan tai muokkaamaan tietomalleja.
+1. Lataa tiedostot yksitellen alla olevista linkeistä tai [lataa zip-tiedosto, jossa on mukana kaikki mallitiedostot](https://go.microsoft.com/fwlink/?LinkId=535020). Jos olet kokenut käyttäjä, haluat ehkä ladata Excel-työkirjat päästäksesi tutkimaan tai muokkaamaan tietomalleja.
 
-   * [Jälleenmyyntianalyysimalli](http://go.microsoft.com/fwlink/?LinkId=529778)
-   * [Toimittajan laatuanalyysimalli](http://go.microsoft.com/fwlink/?LinkId=529779)
-   * [Henkilöstöhallintomalli](http://go.microsoft.com/fwlink/?LinkId=529780)
-   * [Asiakkaan tuottavuuden malli](http://go.microsoft.com/fwlink/?LinkId=529781)
-   * [Mahdollisuuksien seurantamalli](http://go.microsoft.com/fwlink/?LinkId=529782)
-   * [IT-kulutusanalyysimalli](http://go.microsoft.com/fwlink/?LinkId=529783)
-   * [Hankinta-analyysimalli](http://go.microsoft.com/fwlink/?LinkId=529784)
-   * [Myynti- ja markkinointimalli](http://go.microsoft.com/fwlink/?LinkId=529785)
+   * [Jälleenmyyntianalyysimalli](https://go.microsoft.com/fwlink/?LinkId=529778)
+   * [Toimittajan laatuanalyysimalli](https://go.microsoft.com/fwlink/?LinkId=529779)
+   * [Henkilöstöhallintomalli](https://go.microsoft.com/fwlink/?LinkId=529780)
+   * [Asiakkaan tuottavuuden malli](https://go.microsoft.com/fwlink/?LinkId=529781)
+   * [Mahdollisuuksien seurantamalli](https://go.microsoft.com/fwlink/?LinkId=529782)
+   * [IT-kulutusanalyysimalli](https://go.microsoft.com/fwlink/?LinkId=529783)
+   * [Hankinta-analyysimalli](https://go.microsoft.com/fwlink/?LinkId=529784)
+   * [Myynti- ja markkinointimalli](https://go.microsoft.com/fwlink/?LinkId=529785)
 2. Tallenna ladattu tiedosto. Sillä on merkitystä, minne tallennat tiedoston.
 
    * ![Paikallisesti](media/sample-datasets/power-bi-local-file2.png) **Paikallisesti** – Jos tallennat tiedoston tietokoneesi paikalliselle asemalle tai muuhun organisaatiosi sijaintiin, voit tuoda Power BI:n kautta tiedostosi Power BI:hin. Todellisuudessa tiedosto säilyy paikallisella kiintolevyllä, joten koko tiedostoa ei tuoda Power BI:hin. Käytännössä Power BI -sivustolle luodaan uusi tietojoukko, johon tiedot – ja joissakin tapauksissa tietomalli – ladataan. Jos tiedostossa on raportteja, ne näkyvät Power BI -sivuston Raportit-kohdassa.
@@ -154,7 +153,7 @@ Kaikki mallisisältöpaketit ovat saatavilla myös Excel-työkirjoina. Excel-ty�
 
     ![Tuo tai Yhdistä](media/sample-datasets/power-bi-import.png)
 9. Jos valitset **Tuo**, Power BI tuo mallityökirjan järjestelmään ja lisää sen uutena tietojoukkona, jonka nimi on **Hankinta-analyysimalli**.  Jos työkirjassa on yhtään Power View ‑taulukoita tai -alueita tai jokin tietomalli, Power BI luo myös samannimisen raportin. Ja ellei sinulla ole vielä koontinäyttöä avattuna, Power BI luo uuden koontinäytön. (Jos sinulla oli koontinäyttö avattuna, kun valitsit **Nouda tiedot**, kyseiseen koontinäyttöön ilmestyy uusi tyhjä ruutu.  Napsauttamalla ruutua siirryt juuri lisäämäsi tietojoukon raporttiin). Uudella sisällöllä on sama nimi kuin mallilla, ja se on merkitty keltaisella tähdellä.
-10. Kun näytölle ilmestyy **Tietojoukkosi on valmiina!** -ikkuna, voit valita **Näytä tietojoukko** tai **Hanki nopeita merkityksellisiä tietoja** tai voit etsiä tietojoukkoon liittyvän raportin tai koontinäytön käyttämällä Power BI:n vasenta siirtymispalkkia.  
+10. Kun näytölle ilmestyy **Tietojoukkosi on valmiina!** -ikkuna, voit valita **Näytä tietojoukko** tai **Hanki nopeita merkityksellisiä tietoja** tai voit etsiä tietojoukkoon liittyvän raportin tai koontinäytön käyttämällä Power BI:n siirtymisruutua.  
 
      ![Näytä tietojoukko](media/sample-datasets/power-bi-ready.png)
 
@@ -176,15 +175,15 @@ Kaikki mallisisältöpaketit ovat saatavilla myös Power BI:n .pbix-tiedostoina.
 
 1. Lataa tiedostot yksitellen alla olevista linkeistä. Näiden linkkien valitseminen tallentaa tiedoston automaattisesti Lataukset-kansioon. 
 
-   * [Jälleenmyyntianalyysimalli PBIX](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix)
-   * [Toimittajan laatuanalyysimalli PBIX](http://download.microsoft.com/download/8/C/6/8C661638-C102-4C04-992E-9EA56A5D319B/Supplier-Quality-Analysis-Sample-PBIX.pbix)
+   * [Jälleenmyyntianalyysimalli PBIX](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix)
+   * [Toimittajan laatuanalyysimalli PBIX](https://download.microsoft.com/download/8/C/6/8C661638-C102-4C04-992E-9EA56A5D319B/Supplier-Quality-Analysis-Sample-PBIX.pbix)
    <!-- Previous link doesn't work -->
-   * [Henkilöstöhallintomalli PBIX](http://download.microsoft.com/download/6/9/5/69503155-05A5-483E-829A-F7B5F3DD5D27/Human%20Resources%20Sample%20PBIX.pbix)
-   * [Asiakkaan tuottavuuden malli PBIX](http://download.microsoft.com/download/6/A/9/6A93FD6E-CBA5-40BD-B42E-4DCAE8CDD059/Customer%20Profitability%20Sample%20PBIX.pbix)
-   * [Mahdollisuuksien seurantamalli PBIX](http://download.microsoft.com/download/9/1/5/915ABCFA-7125-4D85-A7BD-05645BD95BD8/Opportunity%20Analysis%20Sample%20PBIX.pbix)
-   * [IT-kulutusanalyysimalli PBIX](http://download.microsoft.com/download/E/9/8/E98CEB6D-CEBB-41CF-BA2B-1A1D61B27D87/IT%20Spend%20Analysis%20Sample%20PBIX.pbix)
-   * [Hankinta-analyysimalli PBIX](http://download.microsoft.com/download/D/5/3/D5390069-F723-413B-8D27-5888500516EB/Procurement%20Analysis%20Sample%20PBIX.pbix)
-   * [Myynti- ja markkinointimalli PBIX](http://download.microsoft.com/download/9/7/6/9767913A-29DB-40CF-8944-9AC2BC940C53/Sales%20and%20Marketing%20Sample%20PBIX.pbix)
+   * [Henkilöstöhallintomalli PBIX](https://download.microsoft.com/download/6/9/5/69503155-05A5-483E-829A-F7B5F3DD5D27/Human%20Resources%20Sample%20PBIX.pbix)
+   * [Asiakkaan tuottavuuden malli PBIX](https://download.microsoft.com/download/6/A/9/6A93FD6E-CBA5-40BD-B42E-4DCAE8CDD059/Customer%20Profitability%20Sample%20PBIX.pbix)
+   * [Mahdollisuuksien seurantamalli PBIX](https://download.microsoft.com/download/9/1/5/915ABCFA-7125-4D85-A7BD-05645BD95BD8/Opportunity%20Analysis%20Sample%20PBIX.pbix)
+   * [IT-kulutusanalyysimalli PBIX](https://download.microsoft.com/download/E/9/8/E98CEB6D-CEBB-41CF-BA2B-1A1D61B27D87/IT%20Spend%20Analysis%20Sample%20PBIX.pbix)
+   * [Hankinta-analyysimalli PBIX](https://download.microsoft.com/download/D/5/3/D5390069-F723-413B-8D27-5888500516EB/Procurement%20Analysis%20Sample%20PBIX.pbix)
+   * [Myynti- ja markkinointimalli PBIX](https://download.microsoft.com/download/9/7/6/9767913A-29DB-40CF-8944-9AC2BC940C53/Sales%20and%20Marketing%20Sample%20PBIX.pbix)
 
 1. Valitse Power BI Desktopissa **Tiedosto > Avaa** ja siirry sijaintiin, johon tallensit mallin .pbix-tiedoston.
 
@@ -198,4 +197,4 @@ Kaikki mallisisältöpaketit ovat saatavilla myös Power BI:n .pbix-tiedostoina.
 
 [Power BI:n tietolähteet](service-get-data.md)
 
-Onko sinulla muuta kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
+Onko sinulla muuta kysyttävää? [Kokeile Power BI -yhteisöä](https://community.powerbi.com/)

@@ -2,7 +2,6 @@
 title: Muuttujien visualisointi Entä jos -parametrien avulla
 description: Luo oma Entä jos -muuttujasi, jolla voit kuvitella ja visualisoida muuttujia Power BI -raporteissa
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.custom: seodec18
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 2451620c6d4092e5da4605f8e76b0a70e2eecf2b
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 1ad0c7d2a3c3d21d8ccb81354bdc03d845b61f58
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65513475"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73876039"
 ---
 # <a name="create-and-use-a-what-if-parameter-to-visualize-variables-in-power-bi-desktop"></a>Entä jos -parametrin luominen ja käyttäminen muuttujien visualisointiin Power BI Desktopissa
 Elokuussa 2018 julkaistusta **Power BI Desktop** -versiosta lähtien voit luoda raportteihin **Entä jos** -muuttujia, käsitellä muuttujaa osittajana sekä visualisoida ja kvantifioida eri avainarvoja raporteissasi.
@@ -50,7 +49,7 @@ Luodaan seuraavaksi yksinkertainen esimerkki **Entä jos** -parametrin käyttäm
 
 ![](media/desktop-what-if/what-if_05.png)
 
-Uusi mittari on yksinkertaisesti myynnin kokonaismäärä, jossa huomioidaan alennusprosentti. Voit tietenkin luoda monimutkaisia ja mielenkiintoisia mittareita, joiden avulla raporttiesi käyttäjät voivat visualisoida **Entä jos** -parametrin muuttujan. Voit esimerkiksi luoda raportin, jonka avulla myyntihenkilöstölle heidän kompensaationsa Jos tietyt myyntitavoitteet tai-prosentit täyttyvät, tai tulevat voimaan myynnin lisääntymisen alennuksia.
+Uusi mittari on yksinkertaisesti myynnin kokonaismäärä, jossa huomioidaan alennusprosentti. Voit tietenkin luoda monimutkaisia ja mielenkiintoisia mittareita, joiden avulla raporttiesi käyttäjät voivat visualisoida **Entä jos** -parametrin muuttujan. Voit esimerkiksi luoda raportin, joka kertoo myyntihenkilöstölle, mikä heidän kompensaationsa on, jos tietyt myyntitavoitteet tai -prosentit täyttyvät, tai tarkastella myynnin lisääntymisen ja suurempien alennusten suhdetta.
 
 Kun mittarin kaava on kirjoitettu kaavariville ja sille on annettu nimeksi **Myynti alennuksen jälkeen**, lopputulos näyttää tältä:
 

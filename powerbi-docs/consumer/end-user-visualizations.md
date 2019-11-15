@@ -2,7 +2,6 @@
 title: Visualisointien (visuaalien) käsittely kuluttajana
 description: Power BI:n käsitteet ja termit – visualisoinnit Mikä Power BI:n visualisointi on?
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/14/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 7f72e53fe9f017f5f12893711858cc9179b883dd
-ms.sourcegitcommit: 5410a17c6325406c9d9364585d7c26de4d9488ae
+ms.openlocfilehash: fc663f34b5ed95502f84f3858cb54cdb42f6fead
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72379961"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73860978"
 ---
 # <a name="interact-with-visuals-in-reports-dashboards-and-apps"></a>Visualisointien käyttö raporteissa, koontinäytöissä ja sovelluksissa
 
@@ -52,7 +51,7 @@ Monissa näistä vaihtoehdoista järjestelmänvalvoja tai *suunnittelija* voi po
 |[Pyydä Power BI:tä etsimään puolestasi kiinnostavia faktoja tai trendejä](end-user-insights.md) visualisoinnin tiedoista.  Näitä automaattisesti luotuja visualisointeja kutsutaan *merkityksellisiksi tiedoiksi*.     |    kyllä     |  koko raportti, ei yhtä visualisointia kohti       | ei   |
 |[Näytä vain yksi visualisointi kerrallaan *kohdistus*tilaa](end-user-focus.md) käyttämällä.     | kyllä        |   kyllä      | ei  |
 |[Katso, milloin visualisointi on viimeksi päivitetty](end-user-fresh.md).     |  kyllä       |    kyllä     | ei  |
-|[Näytä vain yksi visualisointi kerrallaan ilman reunoja tai siirtymispalkkeja *koko näytön* tai *tarkastelu*tilaa](end-user-focus.md) käyttämällä.     |   kyllä      |  kyllä       | oletus  |
+|[Näytä vain yksi visualisointi kerrallaan ilman reunoja tai siirtymisruutuja *koko näyttöä* tai *tarkastelu*tilaa](end-user-focus.md) käyttämällä.     |   kyllä      |  kyllä       | oletus  |
 |[Tulosta](end-user-print.md).     |  kyllä       |   kyllä      | ei  |
 |[Pureudu syvemmälle visualisointiin lisäämällä ja muokkaamalla visualisoinnin suodattimia.](end-user-report-filter.md)     |    ei     |   kyllä      | ei  |
 |Näytä lisätietoja ja työkaluvihjeitä pitämällä hiiren osoitinta visualisoinnin päällä.     |    kyllä     |   kyllä      | kyllä  |

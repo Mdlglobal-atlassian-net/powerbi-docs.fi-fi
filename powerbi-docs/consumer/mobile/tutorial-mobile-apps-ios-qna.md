@@ -2,19 +2,18 @@
 title: 'Opetusohjelma: Kysymysten esittäminen Q&A:n virtuaalisen analyytikon avulla iOS-sovelluksissa'
 description: Tässä opetusohjelmassa esitetään mallitietoja koskevia kysymyksiä omin sanoin käyttämällä Q&A:n virtuaalista analyytikkoa iOS-laitteen Power BI -mobiilisovelluksessa.
 author: mshenhav
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: tutorial
 ms.date: 11/16/2018
 ms.author: mshenhav
-ms.openlocfilehash: 74949d2b71dbdca46bbda9623a962616a72af45e
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: c7fd216d50f918d96392532ccb82f80d619ce8a3
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "61337404"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73869646"
 ---
 # <a name="tutorial-ask-questions-about-your-data-with-the-qa-virtual-analyst-in-the-power-bi-ios-apps"></a>Opetusohjelma: Tietoja koskevien kysymysten esittäminen Q&A:n virtuaalisen analyytikon avulla Power BI iOS-sovelluksissa
 
@@ -42,7 +41,7 @@ Jos et ole rekisteröitynyt Power BI:hin, [rekisteröidy ilmaiseen kokeiluversio
 ## <a name="prerequisites"></a>Edellytykset
 
 ### <a name="install-the-power-bi-for-ios-app"></a>Power BI:n iOS-sovelluksen asentaminen
-[Lataa iOS-sovellus](http://go.microsoft.com/fwlink/?LinkId=522062 "Lataa iPhone-sovellus") iPadille, iPhonelle tai iPod Touchille Applen App Storesta.
+[Lataa iOS-sovellus](https://go.microsoft.com/fwlink/?LinkId=522062 "Lataa iPhone-sovellus") Apple App Storesta iPhoneen, iPadiin tai iPod Touchiin.
 
 Seuraavat versiot tukevat Power BI:n iOS-sovellusta:
 - iPad, jossa on iOS 10 tai uudempi.
@@ -54,11 +53,11 @@ Opetusohjelman ensimmäisessä vaiheessa ladataan mahdollisuusanalyysimalli Powe
 
 1. Avaa Power BI -palvelu (app.powerbi.com) selaimessasi ja kirjaudu sisään.
 
-1. Avaa vasen siirtymisruutu napsauttamalla yleistä siirtymiskuvaketta.
+1. Avaa siirtymisruutu napsauttamalla yleistä siirtymiskuvaketta.
 
     ![yleinen siirtymiskuvake](./media/tutorial-mobile-apps-ios-qna/power-bi-android-quickstart-global-nav-icon.png)
 
-2. Valitse vasemmassa siirtymisruudussa **Työtilat** > **Oma työtila**.
+2. Valitse siirtymisruudussa **Työtilat** > **Oma työtila**.
 
     ![Oma työtila](./media/tutorial-mobile-apps-ios-qna/power-bi-android-quickstart-my-workspace.png)
 
@@ -117,7 +116,7 @@ Kun olet suorittanut opetusohjelman, voit poistaa Mahdollisuusanalyysimalli-koon
 
 1. Avaa Power BI -palvelu (app.powerbi.com) ja kirjaudu sisään.
 
-2. Valitse vasemmassa siirtymisruudussa **Työtilat** > **Oma työtila**.
+2. Valitse siirtymisruudussa **Työtilat** > **Oma työtila**.
 
 3. Valitse **Koontinäytöt**-välilehdessä Mahdollisuusanalyysi-koontinäytön vieressä oleva **Poista**-roskakorikuvake.
 

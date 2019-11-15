@@ -1,8 +1,7 @@
 ---
-title: Luotettu kolmannen osapuolen liittimien Power BI
-description: Miten voit luottaa allekirjoitettu kolmannen osapuolen liittimen Power BI-
+title: Luotetut kolmansien osapuolten liittimet Power BI:ssä
+description: Luottaminen allekirjoitettuihin kolmansien osapuolten liittimiin Power BI:ssä
 author: cpopell
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,41 +9,41 @@ ms.topic: conceptual
 ms.date: 04/3/2019
 ms.author: gepopell
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 30b7457c6149320c43f24b967a842382821b01b1
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: ac3f795d6a80d5f143daf68436f41f5771b3c2bb
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65607784"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73876174"
 ---
-# <a name="trusting-third-party-connectors"></a>Luottaminen kolmannen osapuolen liittimet
+# <a name="trusting-third-party-connectors"></a>Kolmansien osapuolten liittimiin luottaminen
 
-## <a name="why-do-you-need-trusted-third-party-connectors"></a>Miksi tarvitset luotettua kolmannen osapuolen liittimiä?
+## <a name="why-do-you-need-trusted-third-party-connectors"></a>Miksi luotettuja kolmansien osapuolten liittimiä tarvitaan?
 
-Power BI yleensä suositeltavaa pitäminen 'tietojen laajennuksen suojauksen' tason, ylemmän tason, joka estää lataamista ei niille Microsoftin sertifioinnin koodi. Saatat kuitenkin monissa tapauksissa, johon haluat ladata erityiset liittimet – olet kirjoittanut ne tai konsultti tai Microsoft certification-polku ulkopuolella toimittajan antama ne.
+Suosittelemme, että tietolaajennuksen suojaustaso pidetään Power BI:ssä yleensä korkeana. Siten estetään estää sellaisen koodin lataaminen, jota Microsoft ei ole sertifioinut. Voi kuitenkin olla useita tapauksia, joissa haluat ladata tietyt liittimet, jotka olet itse kirjoittanut tai saanut Microsoftin sertifiointipolun ulkopuoliselta konsultilta tai toimittajalta.
 
-Annetun liittimen developer voit kirjautua sen varmenne ja tietoja, sinun on ladattava turvallisesti ilman, että tietoturva-asetukset.
+Tietyn liittimen kehittäjä voi allekirjoittaa sen varmenteella ja antaa sinulle tiedot, joita tarvitset sen turvalliseen lataamiseen heikentämättä suojausasetuksiasi.
 
-Jos haluat lisätietoja tietoturva-asetukset, voit lukea tietoja ne [tähän](https://docs.microsoft.com/power-bi/desktop-connector-extensibility).
+Jos haluat lisätietoja suojausasetuksista, voit lukea niistä [täällä](https://docs.microsoft.com/power-bi/desktop-connector-extensibility).
 
-## <a name="using-the-registry-to-trust-third-party-connectors"></a>Rekisterin avulla voit luottaa kolmannen osapuolen liittimet
+## <a name="using-the-registry-to-trust-third-party-connectors"></a>Rekisterin käyttäminen kolmannen osapuolen liittimien luotettuudessa
 
-Valitsit Microsoft Power BI-liittimien kolmannen osapuolen tehdään luettelo määritetyn rekisteriarvo luotat varmenteen allekirjoitus. Jos tätä allekirjoitusta vastaa varmenteen liittimeen ladattavan allekirjoitus, voi ladata sen Power BI suositeltu,' tasoa. 
+Kolmansien osapuolten liittimien luotettuus määritetään Power BI:ssä mainitsemalla määritetyssä rekisteriarvossa sen varmenteen allekirjoitus, johon haluat luottaa. Jos tämä allekirjoitus vastaa varmenteen allekirjoitusta siinä liittimessä, jonka haluat ladata, voit ladata sen Power BI:n Suositeltu-suojaustasossa. 
 
-The registry path is HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Power BI Desktop. Varmista, että polku on olemassa, tai luoda sen. Valitsimme vuoksi se pääasiassa valvoo IT-käytännön sekä edellyttää paikallisen tietokoneen järjestelmänvalvojan käyttöoikeudet Muokkaa tähän sijaintiin. 
+Rekisteripolku on HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Power BI Desktop. Varmista, että polku on olemassa, tai luo se. Valitsimme tämän sijainnin, koska sitä hallitaan ensisijaisesti IT-käytännön avulla ja koska sen muokkaaminen edellyttää paikallisen tietokoneen järjestelmänvalvojan oikeuksia. 
 
-![Power BI Desktop rekisterin luotettu kolmannen osapuolen avaimia ei ole asetettu](media/desktop-trusted-third-party-connectors/desktoptrustedthird1.png)
+![Power BI Desktopin rekisteri, kun luotettujen kolmansien osapuolten avaimia ei ole määritetty](media/desktop-trusted-third-party-connectors/desktoptrustedthird1.png)
 
-Lisää uusi yllä määritettyä polkuun. Tyypin on oltava ”Moniosainen arvo” (REG_MULTI_SZ), ja se tulee kutsua ”TrustedCertificateThumbprints” 
+Lisää uusi arvo edellä määritettyyn polkuun. Tyypin on oltava moniosainen arvo (REG_MULTI_SZ), ja sen nimen tule olla TrustedCertificateThumbprints 
 
-![Power BI Desktop rekisterin merkintä luotettu kolmannen osapuolen liittimet, mutta ei ole avaimia](media/desktop-trusted-third-party-connectors/desktoptrustedthird2.png)
+![Power BI Desktop rekisteri, joka sisältää merkinnän luotettavia kolmansien osapuolten liittimiä varten, mutta ei avaimia](media/desktop-trusted-third-party-connectors/desktoptrustedthird2.png)
 
-Lisää luotat varmenteiden thumbprints. Voit lisätä useita varmenteita käyttämällä ”\0” erottimena tai editorissa rekisterin juuri napsauttamalla -> Muokkaa ja sijoittaa kunkin allekirjoitus uudelle riville. Esimerkki allekirjoitus otetaan allekirjoitettua varmennetta. 
+Lisää niiden varmenteiden allekirjoitus, joihin haluat luottaa. Voit lisätä useita varmenteita käyttämällä erotinmerkkiä \0 tai napsauttamalla rekisterieditorissa hiirenkakkospainikkeella -> muokkaamalla jokaista allekirjoitusta ja sijoittamalla jokaisen niistä uudelle riville. Esimerkkiallekirjoitus on peräisin itse allekirjoitetusta varmenteesta. 
 
- ![Power BI Desktop rekisterin käyttämällä Luotetun kolmannen osapuolen avaimia](media/desktop-trusted-third-party-connectors/desktoptrustedthird3.png)
+ ![Power BI Desktopin rekisteri, kun luotetun kolmannen osapuolen avain on määritetty](media/desktop-trusted-third-party-connectors/desktoptrustedthird3.png)
 
-Jos olet seurannut ohjeita oikein ja on annettu oikea allekirjoitus-sovelluskehittäjä, voit nyt pitäisi turvallisesti allekirjoitettu liittyvät varmenteella trust-liittimiin.
+Jos olet noudattanut ohjeita oikein ja olet saanut kehittäjältä asianmukaisen allekirjoituksen, sinun pitäisi nyt pystyä luottamaan turvallisesti liittimiin, jotka on allekirjoitettu liittyvällä varmenteella.
 
-## <a name="how-to-sign-connectors"></a>Miten sen käyttäjäksi liittimet
+## <a name="how-to-sign-connectors"></a>Liittimien allekirjoittaminen
 
-Jos sinulla on liitin tai on kirjauduttava kehittäjä, voit lukea tietoja siitä Power Query-kohdasta [tähän](https://docs.microsoft.com/power-query/handlingconnectorsigning).
+Jos sinulla on liitin, joka sinun tai kehittäjän on allekirjoitettava, voit lukea siitä Power Query -asiakirjoista [täällä](https://docs.microsoft.com/power-query/handlingconnectorsigning).

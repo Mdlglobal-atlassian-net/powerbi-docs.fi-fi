@@ -2,20 +2,19 @@
 title: Muotokarttojen käyttäminen Power BI Desktopissa (esikatselu)
 description: Alueiden suhteellisten vertailujen luominen muotokartoilla Power BI Desktopissa
 author: mihart
-manager: kvivek
-ms.reviewer: ''
+ms.reviewer: amanda
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/24/2019
+ms.date: 11/4/2019
 ms.author: mihart
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 6543263c0e6c3395479169e8b02034e4a9c78f7b
-ms.sourcegitcommit: 3b4de8785d17c9e00b041cff7bd4d39829316437
+ms.openlocfilehash: 800f7d3cd7f930f2c3411c21e94cadb7cda94c8c
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "72164016"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73871112"
 ---
 # <a name="shape-maps-in-power-bi-desktop-preview"></a>Muotokartat Power BI Desktopissa (esikatselu)
 
@@ -61,7 +60,7 @@ Voit luoda **muotokartan** seuraavasti:
 3. Sen jälkeen voit muokata karttaa muotoiluvaihtoehdoilla, kuten **Oletusväri**, **Zoomaus** ja paljon muuta. Voit myös lisätä luokkatietojen sarakkeen **Selite**-säilöön ja luokitella kartta-alueet luokkien perusteella.
 
 ## <a name="use-custom-maps"></a>Mukautettujen karttojen käyttäminen
-Voit käyttää **Muotokartta**-visualisoinnin kanssa mukautettuja karttoja, kunhan ne ovat **TopoJSON**-muodossa. Jos karttasi on muussa muodossa, voit muuntaa *shapefile*- tai *GeoJSON*-karttasi **TopoJSON**-muotoon verkkotyökaluilla, esimerkiksi [**MapShaper**](http://mapshaper.org/)-työkalulla.
+Voit käyttää **Muotokartta**-visualisoinnin kanssa mukautettuja karttoja, kunhan ne ovat **TopoJSON**-muodossa. Jos karttasi on muussa muodossa, voit muuntaa *shapefile*- tai *GeoJSON*-karttasi **TopoJSON**-muotoon verkkotyökaluilla, esimerkiksi [**MapShaper**](https://mapshaper.org/)-työkalulla.
 
 Jos haluat käyttää **TopoJSON**-karttatiedostoasi, lisää Muotokartta-visualisointi raporttiisi ja lisää joitain tietoja *Sijainti*- sekä *Värikylläisyys*-säilöihin. Avaa sitten **Visualisoinnit**-ruudun **Muotoile**-osio (kuten kohdassa (1) seuraavassa kuvassa), laajenna **Muoto**-osio ja valitse **+ Lisää kartta**.
 
@@ -82,7 +81,7 @@ Voit tehdä mielenkiintoisia asioita myös yksittäisten osavaltioiden kartoilla
 
 Jos haluat kokeilla tätä tietojoukkoa ja visualisointia, voit ladata alkuperäisen PBIX-tiedoston, jolla tämä raportti on luotu. Voit ladata sen seuraavan linkin avulla.
 
-* [Mukautetun muotokartan esittelyn .PBIX-tiedosto](http://download.microsoft.com/download/1/2/8/128943FB-9231-42BD-8A5D-5E2362C9D589/DistrictAttorneyFiscalReport.pbix)
+* [Mukautetun muotokartan esittelyn .PBIX-tiedosto](https://download.microsoft.com/download/1/2/8/128943FB-9231-42BD-8A5D-5E2362C9D589/DistrictAttorneyFiscalReport.pbix)
 
 ## <a name="getting-map-data"></a>Karttatietojen hakeminen
 Voit hakea nopeasti tietoja malliin, jotta voit testata **muotokarttaa**. Voit tehdä tämän kopioimalla jonkin tämän artikkelin lopussa olevista taulukoista ja valitsemalla sitten **Aloitus**-valintanauhasta **Anna tiedot**.
@@ -108,7 +107,7 @@ Sinun täytyy ottaa huomioon muutamia seikkoja ja vaatimuksia, kun käytät tät
 * **Muotokartta**-visualisointi on esikatseluvaiheessa. Sen täytyy olla käytössä Power BI Desktopissa. Jos haluat ottaa **Muotokartta**-toiminnon käyttöön, valitse **Tiedosto > Asetukset ja vaihtoehdot > Asetukset > Esiversio-ominaisuudet** ja valitse sitten **Muotokartta-visualisointi**-valintaruutu.
 * Tällä hetkellä myös **Värikylläisyys**-säilön täytyy olla määritettynä, jotta **Selite**-luokittelu toimii oikein.
 * **Muotokartta**-toiminnon lopullisessa julkaisuversiossa on käyttöliittymä, josta näet tällä hetkellä valitun kartan karttatunnukset. (Lopullista julkaisupäivämäärää ei ole vielä päätetty. **Muotokartta**-toiminto on tällä hetkellä edelleen esikatseluvaiheessa.) Tässä esikatseluversiossa voit käyttää kartta-alueiden tunnisteita, jotka löytyvät tämän artikkelin **Aluetunnukset**-osion taulukoista.
-* **Muotokartta**-visualisointi voi näyttää enintään 1 000 arvopistettä.
+* **Muotokartta**-visualisointi voi näyttää enintään 1 500 arvopistettä.
 
 ## <a name="region-keys"></a>Aluetunnukset
 

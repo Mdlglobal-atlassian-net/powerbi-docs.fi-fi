@@ -2,7 +2,6 @@
 title: Raportin lataaminen Power BI -palvelusta Power BI Desktopiin (esikatselu)
 description: Raportin lataaminen Power BI -palvelusta Power BI Desktop -tiedostoon
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 08/12/2019
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: 2c17378c14ef084ad6632e52df2a801832b311d9
-ms.sourcegitcommit: d04b9e1426b8544ce16ef25864269cc43c2d9f7b
+ms.openlocfilehash: de7a01f70d179237c45205447f564b3833db2156
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "71715194"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73881832"
 ---
 # <a name="download-a-report-from-the-power-bi-service-to-power-bi-desktop-preview"></a>Raportin lataaminen Power BI -palvelusta Power BI Desktopiin (esikatselu)
 Voit julkaista Power BI Desktopissa raportin ( *.pbix*-tiedoston) paikallisesta tietokoneesta Power BI -palveluun. Power BI -raportit voivat myös siirtyä toiseen suuntaan: Voit ladata raportin Power BI -palvelusta Power BI Desktop -tiedostoon. Power BI -raportin tiedostotunniste on kummassakin tapauksessa .pbix.
@@ -32,7 +31,7 @@ Lataa .pbix-tiedosto toimimalla seuraavasti:
 
 1. Avaa Power BI -palvelussa raportti, jonka haluat ladata [muokkausnäkymässä](https://docs.microsoft.com/power-bi/service-interact-with-a-report-in-editing-view).
 
-2. Valitse yläreunan siirtymispalkista **Tiedosto > Lataa raportti**.
+2. Valitse yläreunan siirtymisruudusta **Tiedosto > Lataa raportti**.
    
 3. Kun raporttia ladataan, edistyminen näkyy tilapalkissa. Kun tiedosto on valmis, sinua pyydetään valitsemaan .pbix-tiedoston tallennuspaikka. Tiedoston oletusnimi on raportin otsikko.
    
@@ -71,5 +70,5 @@ Kun olet asentanut Power BI Desktopin, seuraavan artikkelin avulla voit aloittaa
 
 * [Power BI Desktopin käytön aloittaminen](desktop-getting-started.md)
 
-Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/).
+Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](https://community.powerbi.com/).
 

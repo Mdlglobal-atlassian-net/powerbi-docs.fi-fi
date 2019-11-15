@@ -2,7 +2,6 @@
 title: 'Jälleenmyyntianalyysimalli Power BI:lle: aloita esittely'
 description: 'Jälleenmyyntianalyysimalli Power BI:lle: aloita esittely'
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 07/02/2019
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: b3adcf3ba97e83875187a11116fdb7b642e5560b
-ms.sourcegitcommit: 0e50ebfa8762e19286566432870ef16d242ac78f
+ms.openlocfilehash: 42e3a95e344e17d1ceba11911fc8aa349ebafd0c
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68962228"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73858560"
 ---
 # <a name="retail-analysis-sample-for-power-bi-take-a-tour"></a>Jälleenmyyntianalyysimalli Power BI:lle: aloita esittely
 
@@ -54,11 +53,11 @@ Et tarvitse Power BI -käyttöoikeutta Power BI Desktopin malleihin tutustumisee
   
 ### <a name="get-the-pbix-file-for-this-sample"></a>Hae tämän mallin .pbix-tiedosto
 
-Vaihtoehtoisesti voit ladata jälleenmyyntianalyysimallin [.pbix-tiedostona](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix), joka on suunniteltu käytettäväksi Power BI Desktopilla. 
+Vaihtoehtoisesti voit ladata jälleenmyyntianalyysimallin [.pbix-tiedostona](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix), joka on suunniteltu käytettäväksi Power BI Desktopilla. 
 
 ### <a name="get-the-excel-workbook-for-this-sample"></a>Hae tämän näytteen Excel-työkirja
 
-Jos haluat perehtyä tämän mallin tietolähteeseen, se on saatavana myös [Excel-työkirjana](http://go.microsoft.com/fwlink/?LinkId=529778). Työkirja sisältää Power View -taulukoita, joita voit tarkastella ja muokata. Saat raakatiedot näkyviin ottamalla käyttöön Tietojen analysointi -apuohjelmat ja valitsemalla sitten **Power Pivot > Hallinta**. Voit ottaa Power View- ja Power Pivot -apuohjelmat käyttöön [tutustumalla Excelin sisältämien Excel-mallien](sample-datasets.md#optional-take-a-look-at-the-excel-samples-from-inside-excel-itself) lisätietoihin.
+Jos haluat perehtyä tämän mallin tietolähteeseen, se on saatavana myös [Excel-työkirjana](https://go.microsoft.com/fwlink/?LinkId=529778). Työkirja sisältää Power View -taulukoita, joita voit tarkastella ja muokata. Saat raakatiedot näkyviin ottamalla käyttöön Tietojen analysointi -apuohjelmat ja valitsemalla sitten **Power Pivot > Hallinta**. Voit ottaa Power View- ja Power Pivot -apuohjelmat käyttöön [tutustumalla Excelin sisältämien Excel-mallien](sample-datasets.md#optional-take-a-look-at-the-excel-samples-from-inside-excel-itself) lisätietoihin.
 
 ## <a name="start-on-the-dashboard-and-open-the-report"></a>Käynnistä raporttinäkymässä ja avaa raportti
 
@@ -78,7 +77,7 @@ Jos haluat perehtyä tämän mallin tietolähteeseen, se on saatavana myös [Exc
 
    **FD-01**-alueella on suurin keskimääräinen **myynti neliöjalkaa kohden**, FD-02-alueella on pienin **kokonaismyynnin variaatioprosentti** viime vuoteen verrattuna. FD-03- ja FD-04-alueiden suorituskyky on yleisesti heikoin.
 4. Valitse yksittäiset kuplat tai muut kaaviot nähdäksesi ristiinkorostuksen, joka osoittaa valintojesi vaikutuksen.
-5. Valitse **Jälleenmyyntianalyysimalli** yläreunan siirtymispalkista koontinäyttöön palaamiseksi.
+5. Kun haluat palata koontinäyttöön, valitse yläreunan siirtymisruudusta  **Jälleenmyyntianalyysimalli**.
 
    ![Siirtymispalkki](media/sample-retail-analysis/power-bi-breadcrumbs.png)
 6. Valitse raporttinäkymässä **Tämän vuoden myynti, uudet ja olemassa olevat myymälät** -ruutu, joka vastaa kysymyksen *Tämän vuoden myynti* kirjoittamista Q&A-kysymysruutuun.

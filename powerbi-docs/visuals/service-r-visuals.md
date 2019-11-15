@@ -2,20 +2,19 @@
 title: Kehittyneen analytiikan ja kehittyneiden visualisointien luominen käyttämällä R-komentosarjoja
 description: Kehittyneen analytiikan ja kehittyneiden visualisointien luominen käyttämällä R-komentosarjoja Power BI:ssä
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 08/16/2019
+ms.date: 10/31/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 93b3be374707b3e49f87d0875795d160f4530410
-ms.sourcegitcommit: 4a3afe761d2f4a5bd897fafb36b53961739e8466
+ms.openlocfilehash: f3b5cd09e77ed3530b9040edec46712171d061dd
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/20/2019
-ms.locfileid: "69655017"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73880669"
 ---
 # <a name="creating-r-visuals-in-the-power-bi-service"></a>R-visualisointien luominen Power BI -palvelussa
 Power BI -palvelu tukee R-komentosarjoilla luotujen visualisointien tarkastelemista ja käsittelemistä. R-komentosarjoilla luodut visualisoinnit, joita kutsutaan yleisesti nimellä *R-visualisoinnit*, voivat esittää kehittynyttä tietojen muotoilemista ja analytiikkaa, kuten ennusteita, hyödyntämällä R:n monipuolisia analytiikka- ja visualisointitaitoja.
@@ -27,23 +26,23 @@ Power BI -palvelu tukee R-komentosarjoilla luotujen visualisointien tarkastelemi
 
 Seuraavassa kuvassa on Power BI -koontinäyttö, jossa on kehittyneessä analyysissä käytettyjen R-visualisointien kokoelma.
 
-![](media/service-r-visuals/r-visuals-service_1.png)
+![Näyttökuva Power BI -palvelun raporttipohjasta](media/service-r-visuals/r-visuals-service_1.png)
 
 R-visualisointeja luodaan [Power BI Desktop -raportissa](../desktop-get-the-desktop.md), kuten seuraavassa kuvassa näkyvässä raportissa.
 
-![](media/service-r-visuals/r-visuals-service_2a.png)
+![Työpöytäraportti ja kaksi visualisointia](media/service-r-visuals/r-visuals-service_2a.png)
 
 Kun raportti luodaan **Power BI Desktopissa**, voit julkaista raportin, joka sisältää vähintään yhden R-visualisoinnin, Power BI -palveluun. R-visualisointeja voidaan tällä hetkellä luoda vain **Power BI Desktopissa**, ja sen jälkeen ne julkaistaan Power BI -palveluun. Katso lisätietoja R-visualisointien luomisesta kohdasta [Power BI -visualisointien luominen R:n avulla (Power BI Desktop)](../desktop-r-visuals.md).
 
 Huomaa, että palvelussa kaikkia R-paketteja ei tueta. Katso tämän artikkelin lopussa olevasta tuettujen pakettien luettelosta tällä hetkellä Power BI -palvelussa tuetut paketit.
 
-Voit ladata tämän [Power BI Desktop -mallitiedoston](http://download.microsoft.com/download/D/9/A/D9A65269-D1FC-49F8-8EC3-1217E3A4390F/RVisual_correlation_plot_sample%20SL.pbix) (.pbix-tiedosto), joka sisältää joitakin R-visualisointeja, nähdäksesi, miten tämä toimii, ja kokeillaksesi sitä.
+Voit ladata tämän [Power BI Desktop -mallitiedoston](https://download.microsoft.com/download/D/9/A/D9A65269-D1FC-49F8-8EC3-1217E3A4390F/RVisual_correlation_plot_sample%20SL.pbix) (.pbix-tiedosto), joka sisältää joitakin R-visualisointeja, nähdäksesi, miten tämä toimii, ja kokeillaksesi sitä.
 
 R-visualisoinnit, jotka on luotu **Power BI Desktopissa** ja sitten julkaistu Power BI -palveluun, toimivat suurelta osin minkä tahansa muun Power BI -palvelun visualisoinnin tavoin: voit olla vuorovaikutuksessa niiden kanssa, suodattaa ja osittaa niitä ja kiinnittää niitä koontinäyttöön tai jakaa niitä muiden kanssa. Katso lisätietoja koontinäyttöjen ja visualisointien jakamisesta kohdasta [Koontinäytön jakaminen työtoverien ja muiden kanssa](../service-share-dashboards.md). Yksi ero muihin visualisointeihin on se, että R-visualisoinneissa ei voi näyttää työkaluvihjeitä eikä niitä voi käyttää muiden visualisointien suodattamiseen.
 
 Kuten näet seuraavasta kuvasta, R-visualisoinnit Power BI -palvelussa, joko koontinäytössä tai raporteissa, näkyvät ja käyttäytyvät pitkälti kuten mikä tahansa muu visualisointi, eikä käyttäjien tarvitse olla tietoisia pohjana olevasta R-komentosarjasta, joka loi visualisoinnin.
 
-![](media/service-r-visuals/r-visuals-service_3a.png)
+![näyttökuva Power BI -palvelun raporttisivusta](media/service-r-visuals/r-visuals-service_3a.png)
 
 ## <a name="r-scripts-security"></a>R-komentosarjojen suojaus
 R-visualisointeja luodaan R-komentosarjoista, joiden koodi voi mahdollisesti sisältää suojaus- tai tietosuojariskejä.
@@ -61,7 +60,7 @@ Kun R-komentosarja havaitsee virheen, R-visualisointia ei piirretä ja näyttö�
 
 Toinen esimerkki on alla olevan kuvan virhesanoma, joka tulee näkyviin, kun R-komentosarjaa ei voitu suorittaa oikein puuttuvan R-paketin vuoksi Azuressa.
 
-![](media/service-r-visuals/r-visuals-service_5.png)
+![Näyttökuva, jossa näkyy suorituksenaikainen virhe](media/service-r-visuals/r-visuals-service_5.png)
 
 ## <a name="licensing"></a>Käyttöoikeudet
 R-visualisoinnit edellyttävät [Power BI Pro](../service-self-service-signup-for-power-bi.md) -käyttöoikeutta hahmontamiseen raporteissa, päivitykseen, suodatukseen ja ristiinsuodatukseen. Katso lisätietoja Power BI Pro -käyttöoikeuksista ja siitä, miten ne eroavat maksuttomista käyttöoikeuksista, kohdasta [Power BI Pro -sisältö – mikä se on?](../service-admin-purchasing-power-bi-pro.md)

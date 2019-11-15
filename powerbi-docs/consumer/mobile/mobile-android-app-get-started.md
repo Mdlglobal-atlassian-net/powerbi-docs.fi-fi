@@ -2,19 +2,18 @@
 title: Android-laitteiden Power BI -mobiilisovelluksen käytön aloittaminen
 description: Lue, miten Android-mobiilisovellus Microsoft Power BI:lle tuo Power BI:n taskuusi, jotta pääset työtietoihisi mobiilisti sekä paikallisesti että pilvipalvelussa.
 author: mshenhav
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 06/28/2018
 ms.author: mshenhav
-ms.openlocfilehash: 5734c62485340417b6327f07df4abd7af3f2f185
-ms.sourcegitcommit: d441d350504f8c6d9e100d229757add6237f0bef
+ms.openlocfilehash: 9a0d15c73ed19990a44ff888b73d9c569d0dfc5f
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73060280"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73876787"
 ---
 # <a name="get-started-with-the-power-bi-mobile-app-on-android-devices"></a>Android-laitteiden Power BI -mobiilisovelluksen käytön aloittaminen
 Android-sovellus Microsoft Power BI:lle tarjoaa BI-mobiilikäyttökokemuksen Power BI:lle, Power BI-raporttipalvelimelle ja Reporting Services -palveluille. Voit tarkastella ja käsitellä yrityksen koontinäyttöjä paikallisesti ja pilvipalvelussa missä tahansa, live-tilassa kosketusnäytöllisessä mobiilikäytössä. Tarkastele tietoja koontinäytöissä ja jaa sähköpostitse tai tekstiviestillä työtovereiden kanssa. 
@@ -34,7 +33,7 @@ Katso [Power BI -mobiilisovellusten uudet ominaisuudet](../../mobile-whats-new-i
 
 ### <a name="get-the-app"></a>Hanki sovellus
 
-[Lataa Power BI Android-käyttöjärjestelmälle -sovellus](http://go.microsoft.com/fwlink/?LinkID=544867) Google Play Kaupasta.
+[Lataa Power BI Android-käyttöjärjestelmälle -sovellus](https://go.microsoft.com/fwlink/?LinkID=544867) Google Play Kaupasta.
   
 Power BI voidaan suorittaa useilla eri Android-laitteilla, joissa on käytössä Android 5.0 -käyttöjärjestelmä tai uudempi versio. Jos haluat tarkistaa laitteesi, siirry kohtaan **Asetukset** > **Tietoa laitteesta** > **Android -versio**. 
 
@@ -44,9 +43,9 @@ Kun avaat sovelluksen, voit myös ilman rekisteröitymistä tai kirjautumista se
 Katso [Power BI -mobiilisovellusten uudet ominaisuudet](../../mobile-whats-new-in-the-mobile-apps.md).
 
 ## <a name="sign-up-for-the-power-bi-service-on-the-web"></a>Rekisteröidy verkossa Power BI -palveluun
-Jos et ole vielä kirjautunut, siirry [Power BI -palveluun (http://powerbi.com/)](http://powerbi.com/) oman tilin luomiseen, jotta voit luoda ja tallentaa koontinäyttöjä ja raportteja sekä koota kaikki tietosi yhteen. Kirjaudu sitten Power BI:hin Android-laitteestasi, niin voit seurata omia koontinäyttöjäsi missä tahansa.
+Jos et ole vielä kirjautunut, siirry [Power BI -palveluun (https://powerbi.com/)](https://powerbi.com/) oman tilin luomiseen, jotta voit luoda ja tallentaa koontinäyttöjä ja raportteja sekä koota kaikki tietosi yhteen. Kirjaudu sitten Power BI:hin Android-laitteestasi, niin voit seurata omia koontinäyttöjäsi missä tahansa.
 
-1. Napauta Power BI- palvelussa [Rekisteröidy](http://go.microsoft.com/fwlink/?LinkID=513879) Power BI -tilin luomiseksi.
+1. Napauta Power BI- palvelussa [Rekisteröidy](https://go.microsoft.com/fwlink/?LinkID=513879) Power BI -tilin luomiseksi.
 2. Aloita [omien koontinäyttöjen ja raporttien luominen](../../service-get-started.md).
 
 ## <a name="get-started-with-the-power-bi-app-on-your-device"></a>Power BI -sovelluksen käytön aloittaminen laitteellasi
@@ -88,14 +87,14 @@ Voit tarkastella ja käsitellä Power BI -koontinäytön malleja, mutta on muuta
 ## <a name="find-your-content-in-the-power-bi-mobile-apps"></a>Sisällön etsiminen Power BI -mobiilisovelluksissa
 Koontinäytöt ja raportit tallennetaan eri paikkoihin Power BI -mobiilisovelluksissa riippuen siitä, mistä ne ovat peräisin. Lue [sisällön etsimisestä mobiilisovelluksissa](../../mobile-apps-quickstart-view-dashboard-report.md). Lisäksi voit aina hakea kaikkea, mitä sinulla on Power BI -mobiilisovelluksissa. 
 
-![Vasen siirtymisruutu](./media/mobile-android-app-get-started/power-bi-mobile-new-nav-no-numbers.png)
+![Siirtymisruutu](./media/mobile-android-app-get-started/power-bi-mobile-new-nav-no-numbers.png)
 
 ## <a name="view-your-favorite-dashboards-kpis-and-reports"></a>Suosikkikoontinäyttöjen, suorituskykyilmaisimien ja raporttien tarkastelu
 Näet mobiilisovellusten Suosikit-sivulta kaikki Power BI -suosikkikoontinäyttösi yhdessä Power BI -raporttipalvelimen ja Reporting Services -suorituskykyilmaisinten ja raporttien kanssa. Kun teet koontinäytöstä *suosikin* Power BI -mobiilisovelluksessa, voit käyttää sitä kaikista laitteistasi käsin, kuten selaimesi Power BI -palvelusta. 
 
 * Napauta **Suosikit**.
   
-   ![Suosikit vasemmanpuoleisessa siirtymisruudussa](./media/mobile-android-app-get-started/power-bi-android-favorite-left-nav.png)
+   ![Suosikit siirtymisruudussa](./media/mobile-android-app-get-started/power-bi-android-favorite-left-nav.png)
   
    Power BI -suosikkisi ja suosikkisi Power BI -raporttipalvelimelta ja Reporting Services -verkkoportaalista ovat kaikki tällä sivulla.
   
@@ -135,8 +134,8 @@ Seuraavassa on mainittu eräitä muita asioita, joita voit tehdä Android-laitte
 * Luo [Power BI Desktop -raportit ja julkaise ne Power BI-raporttipalvelimen](../../report-server/quickstart-create-powerbi-report.md) verkkoportaalissa
 
 ### <a name="see-also"></a>Katso myös
-* [Lataa Android-sovellus](http://go.microsoft.com/fwlink/?LinkID=544867) Androidin sovelluskaupasta.
+* [Lataa Android-sovellus](https://go.microsoft.com/fwlink/?LinkID=544867) Androidin sovelluskaupasta.
 * [Mikä on Power BI?](../../fundamentals/power-bi-overview.md)
-* Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)
+* Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
 
 

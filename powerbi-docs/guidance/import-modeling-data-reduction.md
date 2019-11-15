@@ -2,19 +2,18 @@
 title: Tietojen vähentämisen tekniikat tuonnin mallinnusta varten
 description: Tutustu eri tekniikoihin, joiden avulla voit vähentää tuontimalleihin ladattuja tietoja.
 author: peter-myers
-manager: asaxton
 ms.reviewer: asaxton
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 08/05/2019
 ms.author: v-pemyer
-ms.openlocfilehash: 794ded1bc310cfcecc609f48ee4f0595693ceeb3
-ms.sourcegitcommit: d9755602235ba03594c348571b9102c9bf88d732
+ms.openlocfilehash: c61a21f400de009815ecb685f989b1cdafbcdb22
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69520176"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73875619"
 ---
 # <a name="data-reduction-techniques-for-import-modeling"></a>Tietojen vähentämisen tekniikat tuonnin mallinnusta varten
 
@@ -29,7 +28,7 @@ VertiPaq-säilömoduulin tuottamista tehokkuuseduista huolimatta on tärkeää p
 - Pienemmissä malleissa tietojen päivitys on nopeampaa, joten tuloksena on pienemmät viiveet raportoinnissa, suurempi tietojoukon päivitysnopeus ja vähemmän painetta lähdejärjestelmässä ja kapasiteettiresursseissa.
 - Pienemmät taulukon rivimäärät voivat johtaa nopeampaan laskennan arviointiin, mikä voi tuottaa kyselyssä paremman yleisen suorituskyvyn.
 
-Tässä artikkelissa käsitellään seitsemää erilaista tietojen vähentämisen tekniikkaa. Näitä ovat esimerkiksi seuraavat:
+Tässä artikkelissa käsitellään kahdeksaa erilaista tietojen vähentämisen tekniikkaa. Näitä ovat esimerkiksi seuraavat:
 
 - [Poista tarpeettomat sarakkeet](#remove-unnecessary-columns)
 - [Poista tarpeettomat rivit](#remove-unnecessary-rows)
@@ -37,6 +36,7 @@ Tässä artikkelissa käsitellään seitsemää erilaista tietojen vähentämise
 - [Sarakkeen tietotyyppien optimoiminen](#optimize-column-data-types)
 - [Mukautettujen sarakkeiden asetus](#preference-for-custom-columns)
 - [Poista Power Query -kyselyn lataaminen käytöstä](#disable-power-query-query-load)
+- [Automaattisen päivämäärän ja ajan poistaminen käytöstä](#disable-auto-datetime)
 - [Vaihda yhdistelmätilaan](#switch-to-mixed-mode)
 
 ## <a name="remove-unnecessary-columns"></a>Poista tarpeettomat sarakkeet
@@ -85,6 +85,10 @@ Joissakin tapauksissa mallin lasketut sarakkeet voivat kuitenkin olla parempi va
 Power Query -kyselyitä, joiden tarkoituksena on tukea tietojen integrointia muihin kyselyihin, ei pidä ladata malliin. Jos haluat välttää kyselyn lataamisen malliin, varmista, että poistat kyselyiden lataamisen käytöstä näissä esiintymissä.
 
 ![Power Query -kyselyn lataamisen poistaminen käytöstä](media/import-modeling-data-reduction/power-query-disable-query-load.png)
+
+## <a name="disable-auto-datetime"></a>Automaattisen päivämäärän ja ajan poistaminen käytöstä
+
+Power BI Desktopissa on asetus nimeltä _Automaattinen päivämäärä ja aika_. Kun se on käytössä, se luo piilotetun automaattisen päivämäärä- ja aikataulukon päivämääräsarakkeille, jotka tukevat raportin tekijöitä määritettäessä suodattimia, ryhmittelyä ja porautumista kalenterin aikajaksoille. Piilotetut taulukot ovat itse asiassa laskettuja taulukoita, jotka suurentavat mallin kokoa. Ohjeita tämän asetuksen käyttämiseen on artikkelissa [Power BI Desktopin automaattisen päivämäärän ja ajan ohjeet](../desktop-auto-date-time.md).
 
 ## <a name="switch-to-mixed-mode"></a>Vaihda yhdistelmätilaan
 

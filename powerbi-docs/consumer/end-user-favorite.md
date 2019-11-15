@@ -2,7 +2,6 @@
 title: Suosikit Power BI -palvelussa (koontinäytöt, raportit, sovellukset)
 description: Ohjeet koontinäyttöjen, raporttien ja sovellusten määrittämisestä suosikeiksi Power BI -palvelussa
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 featuredvideoid: G26dr2PsEpk
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 09/19/2019
 ms.author: mihart
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 165f958cabf3eb6f3cc5c0e61b62667f891d1d48
-ms.sourcegitcommit: 02042995df12cc4e4b97eb8a369e62364eb5af36
+ms.openlocfilehash: 48322b554a7b600bc5cadc7c40fe366c64cd8549
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71256376"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73852645"
 ---
 # <a name="favorite-dashboards-reports-and-apps-in-the-power-bi-service"></a>Power BI -palvelun suosikkikoontinäytöt, -raportit ja -sovellukset
 Kun lisäät tietyn sisällön *suosikkeihin*, pääset nopeasti käyttämään sitä **Suosikit**-sisältöluettelosta sekä **Power BI -aloitussivun** > **Suosikeista ja usein käytetyistä**. Suosikit ovat tyypillisesti sisältöä, jota käytät useimmiten, ja ne tunnistetaan keltaisesta tähdestä.
@@ -43,7 +42,7 @@ Voit myös valita yhden koontinäytön Power BI -palvelun [suositelluksi koontin
 
 1. Valitse siirtymisruudusta **Sovellukset**.
 
-   ![Raporttinäkymä](./media/end-user-favorite/power-bi-app.png)
+   ![Koontinäyttö](./media/end-user-favorite/power-bi-app.png)
 
 2. Saat lisätietoja pitämällä hiiren osoitinta sovelluksen päällä. Valitse tähti ![Tähtikuvake](./media/end-user-favorite/power-bi-favorite-icon.png) kuvake ja lisää suosikkeihin.
    
@@ -62,7 +61,7 @@ Voit myös valita yhden koontinäytön Power BI -palvelun [suositelluksi koontin
 ## <a name="unfavorite-content"></a>Sisällön poistaminen suosikeista
 Jos et enää käytä raporttia yhtä usein kuin aiemmin, voi poistaa sen suosikeista. Kun poistat sisällön suosikeista, se poistetaan Suosikit-luettelostasi, mutta ei Power BI:stä.
 
-1. Valitse vasemmassa siirtymisruudussa **Suosikit**, jotta **Suosikit**-näyttö avautuu.
+1. Valitse siirtymisruudussa **Suosikit**, jotta **Suosikit**-näyttö avautuu.
    
    ![Suosikit-näyttö](./media/end-user-favorite/power-bi-un-favorite.png)
 2. Valitse keltainen tähti suosikeista poistettavan sisällön vieressä.
@@ -76,5 +75,5 @@ Nykyisin voit valita suosikiksi sovelluksen, jolloin kaikki tämän sovelluksen 
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 - [Power BI: Peruskäsitteet](end-user-basic-concepts.md)
-- Onko sinulla kysyttävää? Kokeile [Power BI -yhteisöä](http://community.powerbi.com/).
+- Onko sinulla kysyttävää? Kokeile [Power BI -yhteisöä](https://community.powerbi.com/).
 

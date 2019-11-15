@@ -2,7 +2,6 @@
 title: 'Myynti- ja markkinointimalli Power BI:lle: aloita esittely'
 description: 'Myynti- ja markkinointimalli Power BI:lle: aloita esittely'
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 07/19/2019
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: 31f42d7f53b3322717677d586266668fb2c0f26b
-ms.sourcegitcommit: 012f05efc4e97aeb6178fb2fc820b73bcc1ce920
+ms.openlocfilehash: 8085a6c8f5d0e7a2797ef6c5961b6083eb98f346
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68391403"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73873824"
 ---
 # <a name="sales-and-marketing-sample-for-power-bi-take-a-tour"></a>Myynti- ja markkinointimalli Power BI:lle: aloita esittely
 
@@ -56,11 +55,11 @@ Ennen kuin voit käyttää mallia, se on ensin ladattava [sisältöpakettina](#g
   
 ### <a name="get-the-pbix-file-for-this-sample"></a>Hae tämän mallin .pbix-tiedosto
 
-Vaihtoehtoisesti voit ladata myynti- ja markkinointimallin näytteen [.pbix-tiedostona](http://download.microsoft.com/download/9/7/6/9767913A-29DB-40CF-8944-9AC2BC940C53/Sales%20and%20Marketing%20Sample%20PBIX.pbix), joka on suunniteltu käytettäväksi Power BI Desktopilla.
+Vaihtoehtoisesti voit ladata myynti- ja markkinointimallin näytteen [.pbix-tiedostona](https://download.microsoft.com/download/9/7/6/9767913A-29DB-40CF-8944-9AC2BC940C53/Sales%20and%20Marketing%20Sample%20PBIX.pbix), joka on suunniteltu käytettäväksi Power BI Desktopilla.
 
 ### <a name="get-the-excel-workbook-for-this-sample"></a>Hae tämän näytteen Excel-työkirja
 
-Jos haluat perehtyä tämän mallin tietolähteeseen, se on saatavana myös [Excel-työkirjana](http://go.microsoft.com/fwlink/?LinkId=529785). Työkirja sisältää Power View -taulukoita, joita voit tarkastella ja muokata. Saat raakatiedot näkyviin ottamalla käyttöön Tietojen analysointi -apuohjelmat ja valitsemalla sitten **Power Pivot > Hallinta**. Voit ottaa Power View- ja Power Pivot -apuohjelmat käyttöön [tutustumalla Excelin sisältämien Excel-mallien](sample-datasets.md#optional-take-a-look-at-the-excel-samples-from-inside-excel-itself) lisätietoihin.
+Jos haluat perehtyä tämän mallin tietolähteeseen, se on saatavana myös [Excel-työkirjana](https://go.microsoft.com/fwlink/?LinkId=529785). Työkirja sisältää Power View -taulukoita, joita voit tarkastella ja muokata. Saat raakatiedot näkyviin ottamalla käyttöön Tietojen analysointi -apuohjelmat ja valitsemalla sitten **Power Pivot > Hallinta**. Voit ottaa Power View- ja Power Pivot -apuohjelmat käyttöön [tutustumalla Excelin sisältämien Excel-mallien](sample-datasets.md#optional-take-a-look-at-the-excel-samples-from-inside-excel-itself) lisätietoihin.
 
 ## <a name="what-is-our-dashboard-telling-us"></a>Mitä koontinäyttö kertoo?
 Aloitetaan esittelykierros koontinäytöstä ja vilkaistaan ruutuja, jotka CMO on kiinnittänyt sinne. Siellä on tietoja markkinointiosuudestamme, myynnistä ja asenteista. Tiedot on eritelty alueiden, ajan ja kilpailijoiden mukaan.
@@ -82,7 +81,7 @@ Kysymysosion avulla voit syventyä tietoihin tarkemmin.
 
    ![Kysymysosion kysymys: Yksiköiden kokonaismäärä segmentin mukaan: VanArsdel](media/sample-sales-and-marketing/sales2.png)
 3. Osuutemme luokissa **Kohtuus** ja **Kätevyys** on suuri; nämä ovat ne segmentit, joissa olemme kilpailukykyisiä.
-4. Palaa koontinäyttöön valitsemalla **Myynti- ja markkinointimalli** yläreunan siirtymispalkista.
+4. Palaa koontinäyttöön valitsemalla **Myynti- ja markkinointimalli** yläreunan siirtymisruudussa.
 
 ### <a name="what-does-total-unit-market-share-look-like-for-category-versus-region"></a>Miltä yksiköiden kokonaismäärän markkinaosuus näyttää luokan perusteella (vrt. alueen)?
 1. Huomaa ruutu **Yksiköiden kokonaismäärä vuoden alusta valmistajan ja alueen mukaan**. Mikä on yksiköiden kokonaismäärän markkinaosuus luokan mukaan?

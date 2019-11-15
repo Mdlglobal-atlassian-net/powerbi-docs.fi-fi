@@ -2,78 +2,82 @@
 title: X- ja Y-akselin ominaisuuksien muokkaaminen
 description: X- ja Y-akselin ominaisuuksien muokkaaminen
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 featuredvideoid: 9DeAKM4SNJM
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/24/2019
+ms.date: 11/4/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 3bfe84acdf73fcb5ace791c9a84943262d0f73ab
-ms.sourcegitcommit: 1c96b65a03ec0a0612e851dd58c363f4d56bca38
+ms.openlocfilehash: 393f6f25fedddd9ff17d635ae67ce473ab57eea4
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "67390097"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73880913"
 ---
 # <a name="customize-x-axis-and-y-axis-properties"></a>X- ja Y-akselin ominaisuuksien muokkaaminen
 
-Tässä opetusohjelmassa käydään läpi monia tapoja mukauttaa X-akselia ja Y-akselia visualisoinneissa. Kaikilla visualisoinneilla ei ole akseleita. Esimerkiksi ympyräkaaviossa ei ole akseleita. Ja mukautusvaihtoehdot vaihtelevat myös visualisoinnista toiseen. Vaihtoehtoja on niin monta, ettemme voi käsitellä niitä kaikkia tässä yhdessä artikkelissa, joten tutustut tässä useimmin käytettyihin akselien mukautuksiin ja visualisoinnin **Muotoilu**-ruutuun Power BI -raporttipohjassa.  
+[!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
+
+Tässä opetusohjelmassa käydään läpi monia tapoja mukauttaa X-akselia ja Y-akselia visualisoinneissa. Kaikilla visualisoinneilla ei ole akseleita. Esimerkiksi ympyräkaaviossa ei ole akseleita. Ja mukautusvaihtoehdot vaihtelevat myös visualisoinnista toiseen. Vaihtoehtoja on niin monta, ettemme voi käsitellä niitä kaikkia tässä yhdessä artikkelissa, joten tutustumme tässä useimmin käytettyihin mukautuksiin ja visualisoinnin **Muotoilu**-ruutuun Power BI -raporttipohjassa.  
+
+Katso, miten Amanda mukauttaa X- ja Y-akseleitaan. Hän esittelee myös erilaisia tapoja hallita ketjutusta käytettäessä porautumista alaspäin ja porautumista ylöspäin.
 
 > [!NOTE]
-> Tämä sivu koskee sekä Power BI -palvelua että Power BI Desktopia. Nämä mukautukset, jotka ovat käytettävissä, kun **Muotoilu** (maalirullakuvakkeen ![Näyttökuva maalirullakuvakkeesta.](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-paintroller.png)) kuvake on valittuna, ovat myös käytettävissä Power BI Desktopissa.
-
-Katso, miten Amanda mukauttaa X- ja Y-akseleitaan. Hän esittelee erilaisia tapoja hallita ketjutusta käytettäessä porautumista alaspäin ja porautumista ylöspäin.
+> Tässä videossa käytetään Power BI:n vanhempaa versiota.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/9DeAKM4SNJM" frameborder="0" allowfullscreen></iframe>
 
 ## <a name="prerequisites"></a>Edellytykset
 
-- Power BI -palvelu
+- Power BI Desktop
 
-- Jälleenmyyntianalyysimallin raportti
+- [Jälleenmyyntianalyysimalli ](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix)
 
-## <a name="customize-visualization-x--and-y-axes-in-reports"></a>Visualisoinnin X- ja Y-akselien mukauttaminen raporteissa
 
-Seuraa mukana kirjautumalla sisään [Power BI -palveluun](https://app.powerbi.com) ja avaamalla [Jälleenmyyntianalyysimalli](../sample-datasets.md)-raportti [Muokkaa raporttia](../service-interact-with-a-report-in-editing-view.md) -näkymässä.
-
-### <a name="create-a-stacked-column-chart-visualization"></a>Pinotun pylväskaavion visualisoinnin luominen
+## <a name="add-a-new-visualization"></a>Uuden visualisoinnin lisääminen
 
 Ennen kuin voit mukauttaa visualisointia, sinun on luotava se.
 
-1. Laajenna Power BI -palvelussa **Oma työtila** -kohtaa.
+1. Avaa jälleenmyyntianalyysiotos Power BI Desktopissa.  
 
-1. Vieritä alaspäin ja valitse **Jälleenmyyntianalyysimalli** **Tietojoukot**-luettelosta.
+2. Lisää uusi sivu valitsemalla alareunasta keltainen plus-kuvake. 
 
-1. Valitse **Visualisoinnit**-ruudusta pinotun pylväskaavion kuvake.
+    ![keltainen plus-merkki](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-new-page-icon.png)
 
-    ![Näyttökuva Visualisointi-ruudusta ja tyhjästä pinotusta pylväskaaviosta](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-stacked-column-chart.png)
+1. Valitse **Visualisoinnit**-ruudusta pinotun pylväskaavion kuvake. Tämä lisää tyhjän mallin raporttisi pohjaan.
+
+    ![Näyttökuva Visualisointi-ruudusta ja tyhjästä pinotusta pylväskaaviosta](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-column-chart.png)
 
 1. Määritä X-akselin arvot valitsemalla **Kentät**-ruudussa **Aika** > **FiscalMonth**.
 
 1. Määritä Y-akselin arvot valitsemalla **Kentät**-ruudussa **Myynti** > **Viime vuoden myynti** ja **Myynti** > **Tämän vuoden myynti** > **Arvo**.
 
-    ![Näyttökuva täytetystä pinotusta pylväskaaviosta.](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-create-chart.png)
+    ![Näyttökuva täytetystä pinotusta pylväskaaviosta.](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-build-visual.png)
 
-### <a name="customize-the-x-axis"></a>X-akselin mukauttaminen
+    Voit nyt mukauttaa X-akselia. Power BI tarjoaa lähes rajattomat visualisoinnin muotoiluvaihtoehdot. 
 
-Voit nyt mukauttaa X-akselia.
+## <a name="customize-the-x-axis"></a>X-akselin mukauttaminen
+X-akselille on monia mukautettavia ominaisuuksia. Voit lisätä ja muokata arvopisteiden otsikoita ja X-akselin otsikkoa. Luokkien osalta voit muokata palkkien, sarakkeiden, viivojen ja alueiden leveyttä, kokoa ja täyttöä. Arvojen osalta voit muokata näyttöyksiköitä, desimaaleja ja ruudukon viivoja. Seuraavassa esimerkissä näytetään sarakekaavion mukautus. Lisätään muutamia mukautuksia, jotta pääset tutustumaan asetuksiin, sen jälkeen voit kokeilla muita omin neuvoin.
 
-1. Avaa **Visualisoinnit**-ruudusta **Muotoilu** (maalirullakuvake ![Näyttökuva maalirullakuvakkeesta.](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-paintroller.png)) mukautusvaihtoehtojen paljastamiseksi.
+### <a name="customize-the-x-axis-labels"></a>X-akselin selitteiden mukauttaminen
+X-akselin selitteet näkyvät kaavion sarakkeiden alapuolella. Juuri nyt ne ovat vaaleanharmaita, pieniä ja vaikealukuisia. Muutetaan sitä.
 
-1. Laajenna X-akselin vaihtoehtoja.
+1. Avaa **Visualisoinnit**-ruudusta **Muotoilu** (maalirullakuvake ![Näyttökuva maalirullakuvakkeesta.](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-paintroller-icon.png) ) mukautusasetusten paljastamiseksi.
 
-   ![Näyttökuva X-akselin vaihtoehdoista.](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-x-axis.png)
+2. Laajenna X-akselin asetukset.
 
-1. Siirrä **X-akselin** liukusäädin tilaan **Käytössä**.
+   ![Näyttökuva X-akselin vaihtoehdoista.](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-axis-x.png)
 
-    ![Näyttökuva Käytössä-liukusäätimestä.](media/power-bi-visualization-customize-x-axis-and-y-axis/onoffslider.png)
+3. Siirrä **X-akselin** liukusäädin tilaan **Käytössä**.
 
-    X-akselin voi poistaa käytöstä esimerkiksi tilan säästämiseksi uusille tiedoille.
+    ![Näyttökuva Käytössä-liukusäätimestä.](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-slider-on.png)
 
-1. Muotoile tekstin väriä, kokoa ja fonttia:
+    Saatat haluta asettaa X-akselin tilaan **Pois** esimerkiksi silloin, kun visualisointi selittää itse itsensä ilman selitteitä tai jos raporttisivullasi on tungosta ja sinun tarvitsee tehdä tilaa voidaksesi näyttää lisää tietoa.
+
+4. Muotoile tekstin väriä, kokoa ja fonttia:
 
     - **Väri**: Valitse musta
 
@@ -81,137 +85,147 @@ Voit nyt mukauttaa X-akselia.
 
     - **Fonttiperhe**: Valitse **Arial Black**
 
-1. Siirrä **Otsikko**-vaihtoehdon tilaksi **Käytössä** X-akselin nimen näyttämiseksi. Tässä tapauksessa se on **FiscalMonth**.
+    - **Sisempi täyttö**: Syötä *40%*
+
+        ![Näyttökuva, jossa on selitteitä kulmassa](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-formatting-x.png)
+    
+5. Ehkä et pidä siitä, miten X-akselin teksti näytetään lävistäjällä. Sinulla on useita vaihtoehtoja. 
+    - Muuta tekstin koko pienemmäksi kuin 14.
+    - Tee visualisoinnista suurempi. 
+    - Näytä vähemmän sarakkeita ja lisää vierityspalkki suurentamalla **luokan vähimmäisleveyttä**. 
+    
+    Tässä olemme valinneet toisen vaihtoehdon ja tarttuneet yhteen koonmuuttamispalkeista visualisoinnin tekemiseksi leveämmäksi. Siihen mahtuu nyt 14 pisteen teksti ilman tarvetta näyttää tekstiä kulmassa tai vierityspalkilla varustettuna. 
+
+   ![Kaavio- ja muotoiluruutu, jossa selitteet ovat vaakasuunnassa](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-stretch.png)
+
+### <a name="customize-the-x-axis-title"></a>X-akselin otsikon mukauttaminen
+Kun X-akselin otsikko on **Käytössä**, X-akselin otsikko näkyy X-akselin selitteiden alla. 
+
+1. Määritä ensin X-akselin otsikon tilaksi **Käytössä**.  
+
+    ![Otsikon liukusäädin](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-title-on.png)
+
+    Ensimmäiseksi huomaat, että visualisointisi X-akselilla on nyt oletusotsikko.  Tässä tapauksessa se on **FiscalMonth**.
+
+   ![Kaavio, jonka alalaidassa otsikko näkyy](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-x-title.png)
 
 1. Muotoile otsikon tekstin väriä, kokoa ja fonttia:
 
     - **Otsikon väri**: Valitse oranssi
 
-    - **Akselin otsikko**: Syötä *tilikauden kuukausi*
+    - **Akselin otsikko**: Kirjoita *Fiscal Month* (muista välilyönti)
 
-    - **Otsikon tekstin koko**: Syötä *21*
+    - **Otsikon tekstin koko**: Anna *18*
 
-Kun olet suorittanut mukautukset, pinottu pylväskaaviosi näyttää suunnilleen tältä:
+    Kun olet suorittanut mukautukset, pinotun pylväskaaviosi tulisi näyttää suunnilleen tältä:
 
-![Näyttökuva mukautetusta pinotusta pylväskaaviosta.](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-customize-axis.png)
+    ![Näyttökuva mukautetusta pinotusta pylväskaaviosta.](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-x-title-formatted.png)
 
-Tallenna tekemäsi muutokset ja siirry seuraavaan osioon.
+1. Tallenna tekemäsi muutokset ja siirry seuraavaan osioon. Jos haluat palauttaa kaikki muutokset, valitse **Palauta oletusasetukseen** **X-akselin** mukauttamisruudun alareunassa. Seuraavaksi mukautat Y-akselin.
 
-Jos haluat palauttaa kaikki muutokset, valitse **Palauta oletusasetukseen** **X-akselin** mukauttamisruudun alareunassa.
+## <a name="customize-the-y-axis"></a>Y-akselin mukauttaminen
+Y-akselilla on monia mukautettavia ominaisuuksia. Voit lisätä ja muokata arvopisteiden otsikkoja, Y-akselin otsikkoa ja ruudukkoviivoja. Arvojen osalta voit muokata näyttöyksiköitä, desimaaleja, aloituspistettä ja loppupistettä. Luokkien osalta taas voit muokata palkkien, sarakkeiden, viivojen ja alueiden leveyttä, kokoa ja täyttöä. 
 
-### <a name="customize-the-y-axis"></a>Y-akselin mukauttaminen
+Seuraavassa esimerkissä jatkamme pylväskaavion mukauttamista. Tehdään muutamia muutoksia, jotta pääset tutustumaan asetuksiin, sen jälkeen voit kokeilla muita omin neuvoin.
 
-Seuraavaksi mukautat Y-akselin.
+### <a name="customize-the-y-axis-labels"></a>Y-akselin selitteiden mukauttaminen
+Y-akselin selitteet näytetään oletusarvoisesti vasemmalla. Juuri nyt ne ovat vaaleanharmaita, pieniä ja vaikealukuisia. Muutetaan sitä.
 
 1. Laajenna Y-akselin asetukset.
 
-   ![Näyttökuva Y-akselin vaihtoehdoista.](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-y-axis.png)
+   ![Näyttökuva Y-akselin vaihtoehdoista.](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-axis-y.png)
 
 1. Siirrä **Y-akselin** liukusäädin tilaan **Käytössä**.  
 
-    ![Näyttökuva Käytössä-liukusäätimestä.](media/power-bi-visualization-customize-x-axis-and-y-axis/onoffslider.png)
+    ![Näyttökuva Käytössä-liukusäätimestä.](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-y-axis-on.png)
 
-    Y-akselin voi poistaa käytöstä esimerkiksi tilan säästämiseksi lisätiedoille.
-
-1. Siirrä Y-akselin **sijainti** **oikealle**.
+    Haluat ehkä poistaa Y-akselin käytöstä säästääksesi tilaa lisätiedoille.
 
 1. Muotoile tekstin väriä, kokoa ja fonttia:
 
     - **Väri**: Valitse musta
 
-    - **Tekstin koko**: Syötä *14*
+    - **Tekstin koko**: Anna *10*
 
-    - **Fonttiperhe**: Valitse **Arial Black**
+    - **Näytön yksiköt**: Valitse **Miljoonat**
 
-1. Määritä **Näytä yksiköt** -kohdan arvoksi **Miljoonat** ja **Arvon desimaalit** -kohdan arvoksi *0*.
+    ![Kaavio Y-akselin muotoilun jälkeen](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-formatting-y.png)
 
-1. Tämän visualisoinnin tapauksessa Y-akselin otsikko ei paranna visualisointia, joten jätä **Otsikko**-kohdan tilaksi **Pois käytöstä**.  
+### <a name="customize-the-y-axis-title"></a>Y-akselin otsikon mukauttaminen
+Kun Y-akselin otsikko on **Käytössä**, Y-akselin otsikko näkyy Y-akselin selitteiden vierellä. Tämän visualisoinnin tapauksessa Y-akselin otsikko ei paranna visualisointia, joten jätä **Otsikko**-kohdan tilaksi **Pois käytöstä**. Lisäämme Y-akselin otsikon myöhemmin kaksoisakselivisualisointiin tässä opetusohjelmassa. 
 
-1. Varmista, että ruudukko erottuu, muuttamalla väriä ja suurentamalla viivanleveyttä:
+### <a name="customize-the-gridlines"></a>Ruudukkoviivojen mukauttaminen
+Varmista, että ruudukko erottuu, muuttamalla väriä ja suurentamalla viivanleveyttä:
 
-    - **Väri**: Valitse tummanharmaa
+- **Väri**: Valitse oranssi
 
-    - **Viivanleveys**: Syötä *2*
+- **Viivanleveys**: Syötä *2*
 
 Mukautusten jälkeen pylväskaavion pitäisi näyttää suunnilleen tältä:
 
-![Näyttökuva kaaviosta, jossa on mukautettu Y-akseli.](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-y-axis-complete.png)
+![Näyttökuva kaaviosta, jossa on mukautettu Y-akseli.](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-gridline.png)
 
-## <a name="customizing-visualizations-with-dual-y-axes"></a>Visualisointien mukauttaminen kahden Y-akselin kanssa
+## <a name="customizing-visualizations-with-dual-y-axes"></a>Visualisointien mukauttaminen kahdelle Y-akselille
 
-Sinun täytyy ensin luoda yhdistelmäkaavio myymälöiden määrän vaikutuksesta myyntiin. Tämä on sama kaavio, joka luodaan [Yhdistelmäkaavion opetusohjelmassa](power-bi-visualization-combo-chart.md). Muotoile sitten molemmat Y-akselit.
+Eräät visualisoinnit voivat hyötyä kahdesta Y-akselista. Yhdistelmäkaavio on hyvä esimerkki. Ennen kuin voimme muotoilla kaksinkertaisen Y-akselin, luomme yhdistelmäkaavio, joka vertailee myynnin ja käyttökatteen trendejä.  
 
 ### <a name="create-a-chart-with-two-y-axes"></a>Kahden Y-akselin kaavion luominen
 
-1. Luo uusi viivakaavio, joka seuraa **myyntiä > viime vuoden myyntikateprosenttia** **ajan > FiscalMonth** mukaan.
+1. Valitse pylväskaavio ja muuta se *Viivan ja pinotun sarakkeen* muotoiseksi kaavioksi. 
 
-    ![Näyttökuva uudesta viivakaaviosta.](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-line-chart.png)
+    ![Näyttökuva visualisointiruudusta, jossa on korostettu viivan ja pinotun pylväskaavion kuvake.](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-combo.png)
+   
 
-    > [!NOTE]
-    > Lisätietoja lajittelusta kuukauden mukaan on artikkelissa [Lajittelu muilla ehdoilla](../consumer/end-user-change-sort.md#other).
+2. Vedä **Myynti** > **Käyttökate viime vuodelta %** Kentät-ruudusta **Viiva-arvot** -säilöön.
 
-    Käyttökateprosentti oli tammikuussa 35 %, se oli huipussaan 45 % huhtikuussa, se laski heinäkuussa ja se nousi uudelleen elokuussa. Näemmekö samanlaisen kuvion edellisen ja tämän vuoden myynnissä?
+    ![Näyttökuva viivasta ja pinotusta pylväskaaviosta, joissa on esitetty selvästi kaikki kolme arvoa.](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-add-line.png)
 
-1. Lisää **Tämän vuoden myynti > Arvo** ja **Edellisen vuoden myynti** viivakaavioon.
+    
+3. Muotoile visualisointi uudelleen ja poista kulmikkaat X-akselin selitteet. 
 
-    ![Näyttökuva viivakaaviosta, johon on lisätty uusia tietoja.](media/power-bi-visualization-customize-x-axis-and-y-axis/flatline_new.png)
+   ![Yhdistelmäkaavio ja muotoiluruutu, joiden kirjainkoko on pienennetty 12:ksi](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-font-size.png)
 
-    **Edellisen vuoden myyntikateprosentin** asteikko (sininen **0M%** -ruudukkoviiva) on paljon pienempi kuin **myynnin** asteikko, mikä vaikeuttaa vertailua. Y-akselin prosenttiosuudet ovat myös naurettavia.
+   Power BI luo kaksi Y-akselia, jolloin arvot voidaan skaalata eri tavalla. Vasen akseli mittaa dollareita ja oikea akseli mittaa prosenttilukua.
 
-1. Voit helpottaa visualisoinnin tulkitsemista muuntamalla viivakaavion viivaksi ja pinotuksi pylväskaavioksi.
-
-   ![Näyttökuva visualisointiruudusta, jossa on korostettu viivan ja pinotun pylväskaavion kuvake.](media/power-bi-visualization-customize-x-axis-and-y-axis/converttocombo_new.png)
-
-1. Vedä **Edellisen vuoden myyntikateprosentti** **sarakearvoista** **riviarvoihin**.
-
-    ![Näyttökuva viivasta ja pinotusta pylväskaaviosta, joissa on esitetty selvästi kaikki kolme arvoa.](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-dual-axes.png)
-
-    Nyt sinulla on pinottu pylväskaavio, jonka loit ensimmäisessä osiossa ja jonka päällä on viivakaavio. Halutessasi voit käyttää aiemmin oppimaasi ja muokata akselien fonttien väriä ja kokoa.
-
-   ![Näyttökuva mukautetusta viivasta ja pinotusta pylväskaaviosta.](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-dual-axes-new.png)
-
-   Power BI luo kaksi Y-akselia, jolloin tietojoukot voidaan skaalata eri tavalla. Vasen akseli mittaa dollareita ja oikea akseli mittaa prosenttilukua.
-
-### <a name="format-the-secondary-y-axis"></a>Toissijaisen Y-akselin muotoileminen
+### <a name="format-the-second-y-axis"></a>Toisen Y-akselin muotoileminen
+Koska aloitimme visualisoinnilla, jossa oli yksi muotoiltu Y-akseli, Power BI loi toisen Y-akselin samoin asetuksin. Voimme kuitenkin muuttaa sen. 
 
 1. Voit näyttää muotoiluvaihtoehdot valitsemalla maalirullakuvakkeen **Visualisoinnit**-ruudussa.
 
 1. Laajenna Y-akselin asetukset.
 
-1. Vieritä alaspäin, kunnes löydät **Näytä toissijainen** -vaihtoehdon. Tarkista, että se on **Käytössä**.
+1. Vieritä alaspäin, kunnes löydät **Näytä toissijainen** -vaihtoehdon. Tarkista, että se on **Käytössä**. Toissijainen Y-akseli edustaa viivakaaviota.
 
-   ![Näyttökuva Näytä toissijainen -vaihtoehdosta.](media/power-bi-visualization-customize-x-axis-and-y-axis/combo3.png)
+   ![Näyttökuva Näytä toissijainen -vaihtoehdosta.](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-show-secondary.png)
 
-1. (Valinnainen) Mukauta akselit. Jos vaihdat jommankumman akselin **sijaintia**, akselit vaihdetaan päittäin.
+1. (Valinnainen) Mukauta kahden akselin fontin väri, koko ja näytön yksiköt. Jos vaihdat jommankumman akselin **sijaintia**, akselit vaihdetaan päittäin.
 
 ### <a name="add-titles-to-both-axes"></a>Otsikoiden lisääminen molempiin akseleihin
 
-Akselien otsikoiden lisääminen auttaa näin monimutkaisessa visualisoinnissa.  Otsikot auttavat työtovereita ymmärtämään visualisointisi tarinan paremmin.
+Akselien otsikoiden lisääminen auttaa näin mutkikkaassa visualisoinnissa.  Otsikot auttavat työtovereita ymmärtämään visualisoinnin paremmin.
 
 1. Ota sekä **Y-akselin (sarake)** että **Y-akselin (rivi)** **otsikot** **käyttöön**.
 
 1. Määritä **tyylin** arvoksi **Näytä vain otsikko** kummallekin.
 
-   ![Näyttökuva otsikosta ja tyylin vaihtoehdoista.](media/power-bi-visualization-customize-x-axis-and-y-axis/yaxissettings.png)
+   ![Näyttökuva otsikosta ja tyylin vaihtoehdoista.](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-show-title.png)
 
 1. Yhdistelmäkaavio näyttää nyt kaksi akselia otsikoilla.
 
-   ![Näyttökuva mukautetusta kahden Y-akselin kaaviosta.](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-combo-chart.png)
+   ![Näyttökuva mukautetusta kahden Y-akselin kaaviosta.](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-titles-on.png)
 
-Katso lisätietoja artikkelista [Vinkkejä värimuotoiluun Power BI:ssä](service-tips-and-tricks-for-color-formatting.md).
+1. Muotoile otsikot. Tässä esimerkissä olemme lyhentäneet toisen otsikoista ja vähentäneet molempien kirjainkokoa. 
+    - Fonttikoko: **9**
+    - **Akselin otsikko** lyhennetty ensimmäiselle Y-akselille (pylväskaavio): Myynti viime ja tänä vuonna
 
-## <a name="considerations-and-troubleshooting"></a>Huomioon otettavat seikat ja vianmääritys
+    ![Näyttökuva yhdistelmäkaaviosta, jossa otsikot näkyvät kokonaan.](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-dual.png)
 
-Jos raportin omistaja on luokitellut X-akselin päivämääräksi, **Tyyppi**-vaihtoehto on näkyvissä ja voit valita jatkuvan tai luokittaisen välillä.
+
+
+Katso lisätietoja kohdista [Vinkkejä värimuotoiluun Power BI:ssä](service-tips-and-tricks-for-color-formatting.md) ja [Mukauta visualisoinnin otsikoita, selitteitä ja taustoja](power-bi-visualization-customize-title-background-and-legend.md). Etsi myös pian tulevia uusia päivityksiä muotoiluruuduista. 
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
 - [Visualisoinnit Power BI -raporteissa](power-bi-report-visualizations.md)
 
-- [Visualisoinnin otsikoiden, selitteiden ja taustojen mukauttaminen](power-bi-visualization-customize-title-background-and-legend.md)
-
-- [Värimuotoilun ja akseliominaisuuksien käytön aloittaminen](service-getting-started-with-color-formatting-and-axis-properties.md)
-
-- [Peruskäsitteet Power BI -palvelun kuluttajille](../consumer/end-user-basic-concepts.md)
-
-Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
+Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](https://community.powerbi.com/)

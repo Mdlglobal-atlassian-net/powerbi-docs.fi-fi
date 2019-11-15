@@ -2,7 +2,6 @@
 title: 'IT-kulutusanalyysimalli Power BI:lle: aloita esittely'
 description: 'IT-kulutusanalyysimalli Power BI:lle: aloita esittely'
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 07/05/2019
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: bc6b35b6401f4424a3a5120cb7c28437da9a2a48
-ms.sourcegitcommit: 8aa90f662afb7492ffcfc11ef142cdb0ccecc9aa
+ms.openlocfilehash: 6f39f8b5c288c1dbff3cd87c7beee27683cfeae2
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68462257"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73873920"
 ---
 # <a name="it-spend-analysis-sample-for-power-bi-take-a-tour"></a>IT-kulutusanalyysimalli Power BI:lle: aloita esittely
 
@@ -54,11 +53,11 @@ Et tarvitse Power BI -käyttöoikeutta Power BI Desktopin malleihin tutustumisee
   
 ### <a name="get-the-pbix-file-for-this-sample"></a>Hae tämän mallin .pbix-tiedosto
 
-Vaihtoehtoisesti voit ladata IT-kulutusanalyysimallin [.pbix-tiedostona](http://download.microsoft.com/download/E/9/8/E98CEB6D-CEBB-41CF-BA2B-1A1D61B27D87/IT%20Spend%20Analysis%20Sample%20PBIX.pbix), joka on suunniteltu käytettäväksi Power BI Desktopilla.
+Vaihtoehtoisesti voit ladata IT-kulutusanalyysimallin [.pbix-tiedostona](https://download.microsoft.com/download/E/9/8/E98CEB6D-CEBB-41CF-BA2B-1A1D61B27D87/IT%20Spend%20Analysis%20Sample%20PBIX.pbix), joka on suunniteltu käytettäväksi Power BI Desktopilla.
 
 ### <a name="get-the-excel-workbook-for-this-sample"></a>Hae tämän näytteen Excel-työkirja
 
-Jos haluat perehtyä tämän mallin tietolähteeseen, se on saatavana myös [Excel-työkirjana](http://go.microsoft.com/fwlink/?LinkId=529783). Työkirja sisältää Power View -taulukoita, joita voit tarkastella ja muokata. Saat raakatiedot näkyviin ottamalla käyttöön Tietojen analysointi -apuohjelmat ja valitsemalla sitten **Power Pivot > Hallinta**. Voit ottaa Power View- ja Power Pivot -apuohjelmat käyttöön [tutustumalla Excelin sisältämien Excel-mallien](sample-datasets.md#optional-take-a-look-at-the-excel-samples-from-inside-excel-itself) lisätietoihin.
+Jos haluat perehtyä tämän mallin tietolähteeseen, se on saatavana myös [Excel-työkirjana](https://go.microsoft.com/fwlink/?LinkId=529783). Työkirja sisältää Power View -taulukoita, joita voit tarkastella ja muokata. Saat raakatiedot näkyviin ottamalla käyttöön Tietojen analysointi -apuohjelmat ja valitsemalla sitten **Power Pivot > Hallinta**. Voit ottaa Power View- ja Power Pivot -apuohjelmat käyttöön [tutustumalla Excelin sisältämien Excel-mallien](sample-datasets.md#optional-take-a-look-at-the-excel-samples-from-inside-excel-itself) lisätietoihin.
 
 ## <a name="it-spend-analysis-sample-dashboard"></a>IT-kulutusanalyysimallin koontinäyttö
 Koontinäytön vasemman reunan kaksi numeroruutua, **Varianssisuunnitelma %** ja **Varianssin uusin arvio % 3. vuosineljännes**, antavat yleiskuvan siitä, miten yritys on suoriutunut verrattuna suunnitelmaan ja uusimpaan vuosineljännesarvioon (LE3 = uusin arvio 3. vuosineljännes). Yleisesti ero suunnitelmaan on noin 6 prosenttia. Tutkitaanpa, mistä varianssi johtuu – milloin, missä ja missä luokassa.
@@ -78,7 +77,7 @@ Mutta vain tämän kaavion katsominen ja päätelmien tekeminen sen perusteella 
     Katsotaanpa seuraavaksi, mikä luokka Yhdysvalloissa aiheuttaa varianssin.
 
 ## <a name="ask-questions-of-the-data"></a>Kysymysten kysyminen tiedoista
-1. Valitse **IT-kulutusanalyysimalli** yläreunan siirtymispalkista palataksesi mallikoontinäyttöön.
+1. Palaa mallikoontinäyttöön valitsemalla **IT-kulutusanalyysimalli** yläreunan siirtymisruudusta.
 2. Valitse **Kysymysten kysyminen tiedoista**.
 3. Valitse **Kysymyksiä, joiden avulla pääset alkuun** -luettelosta vasemmalla puolella **suunnitelma IT-alueen mukaan**.
 

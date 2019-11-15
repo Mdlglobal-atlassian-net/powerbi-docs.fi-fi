@@ -2,7 +2,6 @@
 title: DirectQueryn käyttö Power BI Desktopissa
 description: DirectQueryn, jota kutsutaan myös reaaliaikaiseksi yhteydeksi, käyttö Power BI Desktopissa
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 08/19/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 6664924a10b89e057765d70499208aede2d7fdad
-ms.sourcegitcommit: 4a3afe761d2f4a5bd897fafb36b53961739e8466
+ms.openlocfilehash: 08b739c5be01efed5abf8258540b5ab66b3b390b
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/20/2019
-ms.locfileid: "69654777"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73876079"
 ---
 # <a name="use-directquery-in-power-bi-desktop"></a>DirectQueryn käyttö Power BI Desktopissa
 Kun muodostat yhteyden tietolähteeseen, voit **Power BI Desktopin** avulla aina tuoda kopion tiedoista **Power BI Desktopiin**. Joillekin tietolähteille on saatavilla vaihtoehtoinen menetelmä: yhteyden muodostaminen suoraan tietolähteeseen **DirectQueryn** avulla.
@@ -70,7 +69,7 @@ Kun käytät **DirectQueryä**, ota huomioon seuraavat kolme seikkaa:
       The resultset of a query to external data source has exceeded
   
   Tällainen tilanne voi ilmetä yksinkertaisen kaavion tapauksessa, kun se sisältää hyvin suuren kardinaliteettisarakkeen, jonka koostevaihtoehdoksi on määritetty *Älä tee yhteenvetoa*. Visualisoinnissa on oltava vain sarakkeita, joiden kardinaliteetti on alle miljoona, tai siihen on sovellettava asianmukaisia suodattimia.
-* **Suojaus** – Kaikki julkaistua raporttia hyödyntävät käyttäjät muodostavat yhteyden taustatietolähteeseen tunnistetiedoilla, jotka annetaan kirjautumisen jälkeen Power BI -palveluun. Tämä on sama tilanne kuin tuotujen tietojen tapauksessa: kaikki käyttäjät näkevät samat tiedot riippumatta taustalähteessä määritetyistä suojaussäännöistä. Asiakkaiden, jotka haluavat soveltaa DirectQuery-lähteisiin käyttäjäkohtaista suojausta, on käytettävä RLS-tasoa. [Lue lisää RLS-tasosta](service-admin-rls.md).
+* **Suojaus** – Oletusarvoisesti kaikki julkaistua raporttia hyödyntävät käyttäjät muodostavat yhteyden taustatietolähteeseen tunnistetiedoilla, jotka annetaan kirjautumisen jälkeen Power BI -palveluun. Tämä on sama tilanne kuin tuotujen tietojen tapauksessa: kaikki käyttäjät näkevät samat tiedot riippumatta taustalähteessä määritetyistä suojaussäännöistä. Asiakkaiden, jotka haluavat käyttää käyttäjäkohtaista suojausta DirectQuery-lähteissä, tulee käyttää joko RLS-protokollaa tai määrittää lähteelle rajoitettu Kerberos-todentaminen. Kerberos ei ole käytettävissä kaikille lähteille. [Lue lisää RLS-tasosta](service-admin-rls.md). [Lisätietoja Kerberosista DirectQueryssa](https://docs.microsoft.com/power-bi/service-gateway-sso-kerberos). 
 * **Tuetut ominaisuudet** – **Power BI Desktopin** kaikkia ominaisuuksia ei tueta **DirectQuery**-tilassa tai niihin liittyy joitakin rajoituksia. Lisäksi Power BI -palvelussa on joitakin ominaisuuksia (kuten *Nopeat merkitykselliset tiedot*), joita eivät ole saatavilla **DirectQueryä** käyttäville tietojoukoille. Käyttäjän olisi siten otettava huomioon tällaiset **DirectQueryn** käyttöön liittyvät ominaisuudet harkitessaan **DirectQueryn** käyttöä.   
 
 ## <a name="publish-to-the-power-bi-service"></a>Power BI -palveluun kirjautuminen
@@ -88,7 +87,7 @@ Power BI näyttää **Asetukset**-ikkunan. Voit täältä valita **Tietojoukot**
 
 Ennen kuin tunnistetiedot on annettu, kirjatun raportin avaaminen, tai tietojoukon, joka on luotu **DirectQuery**-yhteyden avulla tällaisiin tietolähteisiin, tarkasteleminen palauttaa virheen.
 
-Muille tietolähteille kuin **Azure SQL -tietokanta**, **Azure SQL Data Warehouse** ja **Redshift**, jotka käyttävät DirectQueryä **, on asennettava paikallinen tietoyhdyskäytävä**, ja tietolähde on rekisteröitävä tietoyhteyden muodostamiseksi. Voit [lukea lisää paikallisesta tietoyhdyskäytävästä](http://go.microsoft.com/fwlink/p/?LinkID=627094).
+Muille tietolähteille kuin **Azure SQL -tietokanta**, **Azure SQL Data Warehouse** ja **Redshift**, jotka käyttävät DirectQueryä **, on asennettava paikallinen tietoyhdyskäytävä**, ja tietolähde on rekisteröitävä tietoyhteyden muodostamiseksi. Voit [lukea lisää paikallisesta tietoyhdyskäytävästä](https://go.microsoft.com/fwlink/p/?LinkID=627094).
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 Saat lisätietoja **DirectQuerystä** seuraavista resursseista:

@@ -2,7 +2,6 @@
 title: Power BI -koontinäytön luominen raportista
 description: Power BI -koontinäytön luominen raportista
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
@@ -10,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 07/17/2019
 ms.author: maggies
-ms.openlocfilehash: 6d8a6a28d72ce6d0fa6123b15f9e692ed1cc4d44
-ms.sourcegitcommit: e5cf19e16112c7dad1591c3b38d232267ffb3ae1
+ms.openlocfilehash: d67e7acf4309595e8bccac86119ea38f1a97797f
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72543442"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73853419"
 ---
 # <a name="create-a-power-bi-dashboard-from-a-report"></a>Power BI -koontinäytön luominen raportista
 Olet lukenut [Johdatus raporttinäkymiin Power BI:ssä](service-dashboards.md) ja haluat nyt luoda omasi. Koontinäyttö voidaan luoda monin eri tavoin. Voit esimerkiksi luoda uuden alusta alkaen, raportista, tietojoukosta tai kopioimalla aiemmin luotu koontinäyttö.  
@@ -44,11 +43,11 @@ Katso, kun Amanda luo uuden koontinäytön kiinnittämällä visualisointeja rap
 ## <a name="import-a-dataset-with-a-report"></a>Tietojoukon ja raportin tuominen
 Näissä vaiheittaisissa ohjeissa tuomme yhden Power BI -mallitietojoukon ja käytämme sitä uuden koontinäytön luomiseen. Käyttämämme malli on Excel-työkirja, jossa on kaksi PowerView-taulukkoa. Kun Power BI tuo työkirjan, se lisää tietojoukon sekä raportin työtilaasi. Raportti luodaan automaattisesti PowerView-taulukoista.
 
-1. Lataa [hankinta-analyysimallin](http://go.microsoft.com/fwlink/?LinkId=529784) Excel-tiedosto. On suositeltavaa tallentaa se OneDrive for Businessiin.
+1. Lataa [hankinta-analyysimallin](https://go.microsoft.com/fwlink/?LinkId=529784) Excel-tiedosto. On suositeltavaa tallentaa se OneDrive for Businessiin.
 2. Avaa Power BI -palvelu (app.powerbi.com) selaimessasi.
-3. Valitse vasemmasta siirtymisruudusta **Oma työtila** ja valitse sitten **Nouda tiedot**.
+3. Valitse siirtymisruudusta **Oma työtila** ja valitse sitten **Nouda tiedot**.
 
-    ![Vasen siirtymisruutu](media/service-dashboard-create/power-bi-get-data-new-look.png)
+    ![siirtymisruutu](media/service-dashboard-create/power-bi-get-data-new-look.png)
 5. Valitse **Hanki** kohdassa **Tiedostot**.
 
    ![Hae tiedostot](media/service-dashboard-create/power-bi-select-files.png)
@@ -63,7 +62,7 @@ Näissä vaiheittaisissa ohjeissa tuomme yhden Power BI -mallitietojoukon ja kä
    ![Onnistumisilmoitus](media/service-dashboard-create/power-bi-view-datasetnew.png)
 
 > [!TIP]
-> Tiesitkö? Voit kaventaa vasenta siirtymispalkkia valitsemalla yläreunassa olevan kuvakkeen, jossa on kolme riviä ![Siirtymisruudun näytä tai piilota -kuvake](media/service-dashboard-create/power-bi-new-look-hide-nav-pane.png). Näin saat enemmän tilaa itse raportille.
+> Tiesitkö? Voit kaventaa siirtymisruutua valitsemalla yläreunassa olevan kuvakkeen, jossa on kolme riviä ![Siirtymisruudun näytä tai piilota -kuvake](media/service-dashboard-create/power-bi-new-look-hide-nav-pane.png). Näin saat enemmän tilaa itse raportille.
 
 ### <a name="open-the-report-and-pin-tiles-to-your-dashboard"></a>Avaa raportti ja kiinnitä koontinäyttöön ruutuja
 1. Valitse samassa työtilassa **Raportit**-välilehti ja avaa sitten raportti valitsemalla **Hankinta-analyysimalli**.
@@ -118,4 +117,4 @@ Onnittelut ensimmäisen koontinäytön luomisen johdosta! Nyt kun sinulla on koo
 * [Power BI:n peruskäsitteet](service-basic-concepts.md)
 * [Vinkkejä laadukkaiden koontinäyttöjen suunnitteluun](service-dashboards-design-tips.md)
 
-Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/).
+Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](https://community.powerbi.com/).

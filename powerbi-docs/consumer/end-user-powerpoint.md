@@ -2,7 +2,6 @@
 title: Raporttien vieminen Power BI:stä PowerPointiin
 description: Lue, miten voit viedä Power BI -raportin PowerPointiin.
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/18/2019
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: 3215dfab54d1537ec5f7ca32ee4bd39b9ef997e5
-ms.sourcegitcommit: 26123c6bb24c8174beb390f4e06fb938d31238ea
+ms.openlocfilehash: 840f2462ea9fc6b2d748b3803445c5ee4b155bdd
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72717020"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73862903"
 ---
 # <a name="export-reports-from-power-bi-to-powerpoint"></a>Raporttien vieminen Power BI:stä PowerPointiin
 
@@ -31,7 +30,7 @@ Voit julkaista Power BI:llä raportin Microsoft PowerPointiin ja luoda helposti 
 **Power BI -raportin** vieminen **PowerPointiin** on nopeaa. Seuraa seuraavassa osiossa kuvailtuja vaiheita.
 
 ## <a name="export-your-power-bi-report-to-powerpoint"></a>Power BI -raportin vieminen PowerPointiin
-Valitse Power BI -palvelussa raportti, joka näytetään kankaalla. Voit myös valita raportin **Aloitus**-sivulta, **sovelluksista** tai vasemman siirtymisruudun mistä tahansa muusta säilöstä.
+Valitse Power BI -palvelussa raportti, joka näytetään kankaalla. Voit myös valita raportin **aloitussivulta**, **sovelluksista** tai siirtymisruudun mistä tahansa muusta säilöstä.
 
 Kun PowerPointiin vietävä raportti näkyy kankaalla, valitse **Vie** > **PowerPoint** valikkoriviltä.
 
@@ -60,7 +59,7 @@ Kun avaat Power BI:ssä viedyn PowerPoint-tiedoston, löydät siitä muutamia hi
 
 1. Diapinon ensimmäinen sivu sisältää raportin nimen ja linkin, jonka avulla voit **tarkastella Power BI:ssä** raporttia, johon diat perustuvat.
 2. Saat myös joitakin hyödyllisiä tietoja raportista. **Viimeisin tietojen päivitys** ilmaisee päivämäärän ja ajan, joihin viety raportti perustuu. **Ladattu osoitteesta** -kohdassa näkyy päivämäärä ja aika, jolloin Power BI -raportti on viety PowerPoint-tiedostoon.
-3. Jokainen raporttisivu on erillinen dia. Ne näkyvät vasemmassa siirtymisruudussa. 
+3. Jokainen raporttisivu on erillinen dia. Ne näkyvät siirtymisruudussa. 
 4. Julkaistu raportti hahmonnetaan Power BI -asetusten mukaisella kielellä tai muussa tapauksessa selaimen kieliasetuksen mukaan. Jos haluat tarkistaa kieliasetuksesi tai muuttaa sitä, valitse hammasrataskuvake ![Hammasrataskuvake](media/end-user-powerpoint/power-bi-settings-icon.png) > **Asetukset** > **Yleiset** > **Kieli**. Kielialueiden tiedot ovat ohjeartikkelissa [Power BI:n tuetut kielet ja maat tai alueet](../supported-languages-countries-regions.md).
 5. PowerPoint-esitys sisältää kansilehden, jossa viennin kellonaika näytetään oikealla aikavyöhykkeen ajassa.
 

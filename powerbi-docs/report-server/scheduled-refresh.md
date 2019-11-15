@@ -2,19 +2,18 @@
 title: Power BI -raportin ajoitettu päivitys Power BI -raporttipalvelimessa
 description: Power BI -raportteja voi yhdistää eri tietolähteisiin. Käytettävissä on eri tietolähteitä riippuen siitä, miten tietoja käytetään.
 author: mgblythe
-manager: kfile
 ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 11/01/2017
 ms.author: mblythe
-ms.openlocfilehash: ca2c37a93652bf0f622c7154fe8438faf4c70ac1
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: ede44316d9dd188787381b26ee3352af13775c0f
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66051016"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73874005"
 ---
 # <a name="power-bi-report-scheduled-refresh-in-power-bi-report-server"></a>Power BI -raportin ajoitettu päivitys Power BI -raporttipalvelimessa
 Power BI -raporttien ajoitetun päivityksen avulla raportin tiedot pysyvät ajan tasalla.
@@ -34,7 +33,7 @@ Power BI -raporttien ajoitetun päivityksen käyttöön liittyy useita eri osia.
 * Tietomalli ladataan Analysis Services -esiintymään.
 * Jotkin tietolähteet käyttävät Power Queryn -koostemoduulia muodostaessaan yhteyttä tietolähteisiin ja tietoja siirtäessään. Toiset tietolähteet voivat olla suoraan yhteydessä Analysis Services -palvelimeen, jotka ylläpitävät Power BI -raporttipalvelimen tietomalleja.
 * Uudet tiedot ladataan tietomalliin Analysis Services -palvelimessa.
-* Skaalaus kokoonpanossa tietomallin voidaan jäljentää alueelta solmut.
+* Skaalatussa kokoonpanossa tietomalli voidaan replikoida solmujen välillä.
 * Analysis Services prosessoi tietoja ja suorittaa tarvittavat laskutoimitukset.
 
 Power BI -raporttipalvelin ylläpitää tapahtumajonoa kaikista ajoitetuista toiminnoista. Uudet tapahtumat tarkistetaan säännöllisesti jonon kyselyllä. Jono tarkistetaan oletuksena kymmenen sekunnin välein. Voit muuttaa aikaväliä muokkaamalla **PollingInterval**, **IsNotificationService** ja **IsEventService** -asetuksia RSReportServer.config -tiedostossa. **IsDataModelRefreshService** -asetuksen avulla voidaan myös määrittää, käsitteleekö raporttipalvelu ajoitettuja tapahtumia.

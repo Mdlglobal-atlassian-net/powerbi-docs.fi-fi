@@ -3,25 +3,24 @@ title: Power BI -raporttipalvelimen päivittäminen
 description: Opi päivittämään Power BI -raporttipalvelin.
 author: maggiesMSFT
 ms.author: maggies
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 09/05/2017
-ms.openlocfilehash: 52863ea4bd666547a9c63b3add1d2d9c0626adc7
-ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.openlocfilehash: eac019bc31396359b7520e057f2384adce386a96
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "66839684"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73873949"
 ---
 # <a name="upgrade-power-bi-report-server"></a>Power BI -raporttipalvelimen päivittäminen
 
 Opi päivittämään Power BI -raporttipalvelin.
 
- **Lataa** ![lataa](media/upgrade/download.png "lataa")
+ **Lataa** ![lataus](media/upgrade/download.png "lataa")
 
 Lataa Power BI -raporttipalvelin ja Power BI -raporttipalvelimelle optimoitu Power BI Desktop tutustumalla ohjeaiheeseen [Paikallinen raportointi Power BI -raporttipalvelimella](https://powerbi.microsoft.com/report-server/).
 

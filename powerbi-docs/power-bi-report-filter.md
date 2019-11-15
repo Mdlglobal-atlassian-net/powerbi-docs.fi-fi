@@ -2,7 +2,6 @@
 title: Uusi suodatuskokemus Power BI -raporteissa
 description: Power BI -suodattimet saavat uusia toimintoja ja uuden rakenteen.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/06/2019
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: e5e67863888e5bd6d611ded7a58254fe693f4bb6
-ms.sourcegitcommit: 226b47f64e6749061cd54bf8d4436f7deaed7691
+ms.openlocfilehash: ab7d8a34211b9cb8addd90daf2cbce7d22f10e61
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/09/2019
-ms.locfileid: "70841277"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73875159"
 ---
 # <a name="the-new-filter-experience-in-power-bi-reports"></a>Uusi suodatuskokemus Power BI -raporteissa
 
@@ -44,7 +43,7 @@ Uusi suodatuskokemus otetaan käyttöön oletuksena uusissa raporteissa. Voit ot
 ### <a name="turn-on-new-filters-for-an-existing-report-in-power-bi-desktop"></a>Ota käyttöön uudet suodattimet aiemmin luodussa raportissa Power BI Desktopissa
 
 1. Valitse Power BI Desktopin aiemmin luodussa raportissa **Tiedosto** > **Asetukset ja vaihtoehdot** > **Asetukset**
-2. Valitse vasemmasta siirtymispalkista **Nykyinen tiedosto** -kohdan alta **Raportin asetukset**.
+2. Valitse siirtymisruudussa **Nykyinen tiedosto** -kohdassa **Raportin asetukset**.
 3. Valitse **Suodatuskokemus**-kohdan alta **Ota käyttöön päivitetty suodatinruutu ja näytä suodattimet visualisoinnin otsikossa tälle raportille**.
 
 ### <a name="turn-on-new-filters-for-an-existing-report-in-the-service"></a>Ota käyttöön uudet suodattimet aiemmin luodussa raportissa palvelussa
@@ -238,5 +237,5 @@ Kokeile uutta suodatuskokemusta. Anna meille palautetta tästä ominaisuudesta j
 - [Suodattimet ja korostaminen raporteissa](power-bi-reports-filters-and-highlighting.md)
 - [Erilaiset Power BI -suodattimet](power-bi-report-filter-types.md)
 
-Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
+Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](https://community.powerbi.com/)
 

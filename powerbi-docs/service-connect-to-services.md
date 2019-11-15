@@ -2,19 +2,18 @@
 title: Käyttämiesi palveluiden yhdistäminen Power BI:hin
 description: Yhdistä moniin liiketoiminnassasi käyttämiin palveluihin, kuten Salesforce, Microsoft Dynamics CRM ja Google Analytics.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.topic: conceptual
 ms.date: 08/29/2019
 ms.author: maggies
 LocalizationGroup: Connect to services
-ms.openlocfilehash: abecc9b0c5e450d24f29230ad75417b1494e6ce9
-ms.sourcegitcommit: c0f4d00d483121556a1646b413bab75b9f309ae9
+ms.openlocfilehash: 41881c1de66293689439364f3d1049f3d6b40607
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/29/2019
-ms.locfileid: "70159993"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73873013"
 ---
 # <a name="connect-to-the-services-you-use-with-power-bi"></a>Käyttämiesi palveluiden yhdistäminen Power BI:hin
 Power BI:n avulla voit yhdistää moniin liiketoiminnassasi käyttämiin palveluihin, kuten Salesforce, Microsoft Dynamics ja Google Analytics. Power BI käynnistyy käyttäen tunnistetietojasi ja muodostaa yhteyden palveluun. Se luo Power BI *-työtilan*, jossa on koontinäyttö ja Power BI -raportteja, jotka näyttävät automaattisesti tietosi ja antavat visuaalisesti merkityksellisiä tietoja liiketoiminnastasi.
@@ -36,7 +35,7 @@ Kun olet asentanut sovelluksen, voit tarkastella koontinäyttöä ja raportteja 
 ## <a name="edit-the-dashboard-and-reports"></a>Muokkaa koontinäyttöä ja raportteja
 Kun tuonti on valmis, uusi sovellus ilmestyy Sovellukset-sivulle.
 
-1. Valitse vasemmassa siirtymisruudussa **Sovellukset** ja valitse sovellus.
+1. Valitse siirtymisruudussa **Sovellukset** > valitse sovellus.
    
      ![Sovellukset-sivu](media/service-connect-to-services/power-bi-service-apps-open-app.png)
 2. Voit esittää kysymyksen kirjoittamalla kysymysten ja vastausten ruutuun tai napsauttamalla ruutua pohjana olevan raportin avaamiseksi. 
@@ -71,6 +70,6 @@ Jos olet kiinnostunut luomaan mallisovelluksia ja jakamaan niitä itse, katso [M
 ## <a name="next-steps"></a>Seuraavat vaiheet
 * [Jaa sovelluksia työtovereillesi](service-create-distribute-apps.md)
 * [Luo uusia työtiloja Power BI:ssä](service-create-the-new-workspaces.md)
-* Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)
-* Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)
+* Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
+* Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
 

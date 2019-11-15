@@ -2,7 +2,6 @@
 title: 'Henkilöstöhallintomalli: aloita esittely'
 description: 'Power BI:n henkilöstöhallintomalli: aloita esittely'
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 07/05/2019
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: d5670a8077b4de03f6eb866f6177f17cdec7d7f7
-ms.sourcegitcommit: 8aa90f662afb7492ffcfc11ef142cdb0ccecc9aa
+ms.openlocfilehash: 3f0c95673bd6a9a5af2a828869f38d32440b617a
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68462340"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73858854"
 ---
 # <a name="human-resources-sample-for-power-bi-take-a-tour"></a>Power BI:n henkilöstöhallintomalli: aloita esittely
 
@@ -58,11 +57,11 @@ Ennen kuin voit käyttää mallia, se on ensin ladattava [sisältöpakettina](#g
   
 ### <a name="get-the-pbix-file-for-this-sample"></a>Hae tämän mallin .pbix-tiedosto
 
-Vaihtoehtoisesti voit ladata henkilöstöhallintomallin [.pbix-tiedostona](http://download.microsoft.com/download/6/9/5/69503155-05A5-483E-829A-F7B5F3DD5D27/Human%20Resources%20Sample%20PBIX.pbix), joka on suunniteltu käytettäväksi Power BI Desktopilla.
+Vaihtoehtoisesti voit ladata henkilöstöhallintomallin [.pbix-tiedostona](https://download.microsoft.com/download/6/9/5/69503155-05A5-483E-829A-F7B5F3DD5D27/Human%20Resources%20Sample%20PBIX.pbix), joka on suunniteltu käytettäväksi Power BI Desktopilla.
 
 ### <a name="get-the-excel-workbook-for-this-sample"></a>Hae tämän näytteen Excel-työkirja
 
-Jos haluat perehtyä tämän mallin tietolähteeseen, se on saatavana myös [Excel-työkirjana](http://go.microsoft.com/fwlink/?LinkId=529780). Työkirja sisältää Power View -taulukoita, joita voit tarkastella ja muokata. Saat raakatiedot näkyviin ottamalla käyttöön Tietojen analysointi -apuohjelmat ja valitsemalla sitten **Power Pivot > Hallinta**. Voit ottaa Power View- ja Power Pivot -apuohjelmat käyttöön [tutustumalla Excelin sisältämien Excel-mallien](sample-datasets.md#optional-take-a-look-at-the-excel-samples-from-inside-excel-itself) lisätietoihin.
+Jos haluat perehtyä tämän mallin tietolähteeseen, se on saatavana myös [Excel-työkirjana](https://go.microsoft.com/fwlink/?LinkId=529780). Työkirja sisältää Power View -taulukoita, joita voit tarkastella ja muokata. Saat raakatiedot näkyviin ottamalla käyttöön Tietojen analysointi -apuohjelmat ja valitsemalla sitten **Power Pivot > Hallinta**. Voit ottaa Power View- ja Power Pivot -apuohjelmat käyttöön [tutustumalla Excelin sisältämien Excel-mallien](sample-datasets.md#optional-take-a-look-at-the-excel-samples-from-inside-excel-itself) lisätietoihin.
 
 ## <a name="new-hires"></a>Uudet palkkaukset
 Tutustutaan ensin uusiin palkkauksiin.
@@ -87,7 +86,7 @@ Tutustutaan ensin uusiin palkkauksiin.
 
 4. Valitse eri ikäryhmiä ja sukupuolia kaavioissa iän, sukupuolen, alueen ja etisen taustan välisten suhteiden löytämiseksi.
 
-5. Valitse **Henkilöstöhallintomalli** yläreunan siirtymispalkista koontinäyttöön palaamiseksi.
+5. Valitse **Henkilöstöhallintomalli** yläreunan siirtymisruudusta koontinäyttöön palaamiseksi.
 
    ![Palaa koontinäyttöön](media/sample-human-resources/power-bi-breadcrumbs.png)
 
@@ -133,7 +132,7 @@ Tutustutaan raporttiin muokkausnäkymässä. Voit muuttaa ympyräkaavioita näyt
 
 8. Voit toimia samoin myös **Aktiivisten työntekijöiden määrä sukupuolen mukaan** -ympyräkaaviossa ja tarkastella irtisanoutuneita aktiivisten työntekijöiden sijaan. Tutustu vapaaehtoisesti irtisanoutuneiden tietoihin ja katso, löydätkö muita tietoja.
 
-9. Valitse **Henkilöstöhallintomalli** yläreunan siirtymispalkista koontinäyttöön palaamiseksi. Voit halutessasi tallentaa raporttiin tekemäsi muutokset.
+9. Valitse **Henkilöstöhallintomalli** yläreunan siirtymisruudusta koontinäyttöön palaamiseksi. Voit halutessasi tallentaa raporttiin tekemäsi muutokset.
 
 ## <a name="bad-hires"></a>Huonot palkkaukset
 Viimeinen tutustuttava alue ovat huonot palkkaukset. Huonoiksi palkkauksiksi määritellään työntekijät, joiden palkkaus kesti alle 60 päivää. Palkkaamme nopeasti, mutta palkkaammeko hyviä ehdokkaita?
@@ -147,7 +146,7 @@ Viimeinen tutustuttava alue ovat huonot palkkaukset. Huonoiksi palkkauksiksi mä
 
 3. Jos tarkastelet **Huonojen palkkausten määrä sukupuolen mukaan** -rengaskaaviota ja valitset eri alueet **Alue**-osittajassa, huomaat, että Itä-alue on ainoa alue, jossa naispuolisia huonoja palkkauksia on enemmän kuin miespuolisia huonoja palkkauksia.  
 
-4. Valitsemalla koontinäytön nimen yläreunan siirtymispalkista voit palata koontinäyttöön.
+4. Valitsemalla koontinäytön nimen yläreunan siirtymisruudusta voit palata koontinäyttöön.
 
 ## <a name="ask-a-question-in-the-dashboard-qa-box"></a>Esitä kysymys koontinäytön Q&A-ruudussa
 Koontinäytön [Q&A-kysymysruudussa](power-bi-tutorial-q-and-a.md) koontinäytössä voit esittää kysymyksen tiedoista luonnollisen kielen avulla. Q&A tunnistaa kirjoittamasi sanat ja etsii niiden avulla vastauksen tietojoukosta.

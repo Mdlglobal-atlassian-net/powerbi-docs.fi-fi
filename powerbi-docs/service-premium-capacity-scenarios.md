@@ -1,9 +1,8 @@
 ---
-title: Microsoft Power BI Premium-kapasiteetin skenaarioita
-description: Tässä artikkelissa kuvataan Power BI Premium-kapasiteetin yleisiä skenaarioita.
+title: Microsoft Power BI Premium -kapasiteettitilanteet
+description: Kuvaa tavallisia Power BI Premium -kapasiteettitilanteita.
 author: mgblythe
 ms.author: mblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
@@ -11,147 +10,147 @@ ms.topic: conceptual
 ms.date: 04/09/2019
 ms.custom: seodec18
 LocalizationGroup: Premium
-ms.openlocfilehash: 1d666a6702515a935d93549d026f207848f2bca8
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 3190645044c930c1c63fd7c199883d784723d6f0
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65565332"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73881247"
 ---
-# <a name="premium-capacity-scenarios"></a>Premium-kapasiteetin skenaarioita
+# <a name="premium-capacity-scenarios"></a>Premium-kapasiteettitilanteet
 
-Tässä artikkelissa kuvataan todellisia skenaarioita, joissa Power BI premium-kapasiteetteja on toteutettu. Yleisiä ongelmia ja haasteita on kuvattu myös ongelmien tunnistaminen ja korjata ne:
+Tässä artikkelissa kuvataan reaalimaailman tilanteita, joissa Power BI Premium -kapasiteetti on otettu käyttöön. Kuvataan yleisiä ongelmia ja haasteita sekä kerrotaan, miten ne voidaan tunnistaa, ja autetaan ratkaisemaan niitä:
 
-- [Tietojoukot pitäminen ajan tasalla](#keeping-datasets-up-to-date)
-- [Tunnistetaan hidastaa vastaamisen tietojoukot](#identifying-slow-responding-datasets)
-- [Tunnistetaan syitä 0x1E hidastaa-DSR-tietojoukot](#identifying-causes-for-sporadically-slow-responding-datasets)
-- [Selvitettäessä, onko tarpeeksi muistia](#determining-whether-there-is-enough-memory)
-- [Selvitettäessä, onko tarpeeksi Suoritin](#determining-whether-there-is-enough-cpu)
+- [Tietojoukkojen pitäminen ajan tasalla](#keeping-datasets-up-to-date)
+- [Hitaasti vastaavien tietojoukkojen tunnistaminen](#identifying-slow-responding-datasets)
+- [Tietojoukkojen satunnaisen hitaan vastaamisen syiden tunnistaminen](#identifying-causes-for-sporadically-slow-responding-datasets)
+- [Muistin riittävyyden selvittäminen](#determining-whether-there-is-enough-memory)
+- [Suorittimen riittävyyden selvittäminen](#determining-whether-there-is-enough-cpu)
 
-Kaavio ja taulukko esimerkkejä ja ohjeita ovat **Power BI Premium-kapasiteetin Mittaustietoihin sovelluksen** , että Power BI-järjestelmänvalvoja pystyy käyttämään.
+Nämä toimenpiteet sekä kaavio- ja taulukkoesimerkit ovat **Power BI Premium -kapasiteettiarvosovelluksesta**, johon Power BI -järjestelmänvalvojalla on käyttöoikeus.
 
-## <a name="keeping-datasets-up-to-date"></a>Tietojoukot pitäminen ajan tasalla
+## <a name="keeping-datasets-up-to-date"></a>Tietojoukkojen pitäminen ajan tasalla
 
-Tässä skenaariossa tutkimuksen käynnistettiin, kun käyttäjät havaittujen, että raporttitietoja joskus ominaisuudelta vanhojen tai ”vanhentuneiden”.
+Tässä tilanteessa tutkimus käynnistettiin, kun käyttäjät valittivat, että raporttitiedot vaikuttivat joskus vanhoilta tai vanhentuneilta.
 
-Järjestelmänvalvoja vuorovaikutuksessa sovelluksen kanssa **päivittää** visualisoinnin lajittelua tietojoukkojen latautuminen **Max odotusaika** tilastot laskevassa järjestyksessä. Tämä visualisointi auttaa heitä paljastaa tietojoukot on pisimmän Odota-kertaa työtilan nimen mukaan.
+Sovelluksessa järjestelmänvalvoja on yhteydessä **Päivitykset**-visualisointiin ja lajittelee tietojoukkoja **Suurin odotusaika** -tilaston mukaan laskevassa järjestyksessä. Tämä visualisointi auttaa paljastamaan ne tietojoukot, joilla on pisin odotusaika, työtilan nimen mukaan ryhmiteltyinä.
 
-![Lajiteltu laskevaan järjestykseen max Tietojoukkosi päivittyy odotusaika, työtilan Ryhmittelyperuste](media/service-premium-capacity-scenarios/dataset-refreshes.png)
+![Tietojoukkopäivitykset lajitellaan laskevan odotusajan mukaan työtilan mukaan ryhmitellen](media/service-premium-capacity-scenarios/dataset-refreshes.png)
 
-- **Tunneittain keskimääräinen Päivitä Odota kertaa** visualisoinnin, hän Huomaa, että Odota päivitysajat piikin johdonmukaisesti noin 4 PM päivä.
+**Päivityksen keskimääräinen odotusaika tunneittain** -visualisoinneissa huomataan, että päivitysten odotusajat ovat johdonmukaisesti huipussaan kunakin päivänä klo 16.
 
-![Päivitä odottaa piikin säännöllisesti kello 4](media/service-premium-capacity-scenarios/peak-refresh-waits.png)
+![Päivitysten odotusajat säännöllisesti huipussaan klo 16](media/service-premium-capacity-scenarios/peak-refresh-waits.png)
 
-On useita mahdollisia syitä, että nämä tulokset:
+Näille tuloksille on useita mahdollisia selityksiä:
 
-- Liian monta päivityksen yritysten voitu voi suoritetaan samaan aikaan ylitysten määritetty kapasiteetin solmu. Tässä tapauksessa kuusi samanaikaisten päivitykset käyttöön P1 oletusarvon muistin varaaminen kanssa.
+- Liian monta päivitysyritystä samanaikaisesti, niin että kapasiteettisolmun määrittämät rajat ylittyvät. Tässä tapauksessa kuusi yhtaikaista päivitystä P1:llä, jossa on oletusmuistivaraus.
 
-- Tietojoukkoja voi päivittää voi olla liian suuri mahtuu käytettävissä olevaa muistia (vaatia vähintään 2 täydellinen vaatimaa muistia).
-- Tehottomia Power Query-logic saattaa tuloksena muistin käyttö huipussaan tietojoukon päivityksen aikana. Tämä piikki on varattu kapasiteetti toisinaan matkapuhelimessasi fyysinen raja päivitys epäonnistuu, jotka vaikuttavat mahdollisesti muut raportin Näytä toiminnot kapasiteetin.
-- Usein kysellyt tietojoukkoja, jotka on pysy muistissa saattaa vaikuttaa muihin tietojoukkoihin, Päivitä rajoitettu muistia vuoksi.
+- Päivitettävät tietojoukot voivat olla liian suuria mahtuakseen saatavilla olevaan muistiin (vaativat ainakin 2x niin paljon muistia, jotta päivitys onnistuisi).
+- Tehoton Power Query -logiikka voi aiheuttaa muistin käytössä piikin tietojoukon päivityksen aikana. Kun kapasiteettiin kohdistuu paljon käyttötarvetta, tämä piikki voi joskus nousta fyysiseen ylärajaansa, jolloin päivitys epäonnistuu ja muut kapasiteettia tarvitsevat raporttinäkymätoiminnot voivat kärsiä.
+- Usein kyselyn kohteena olevat tietojoukot, joiden on pysyttävä saatavilla muistissa, voivat vaikuttaa muiden tietojoukkojen päivittymiskykyyn saatavilla olevan muistin rajallisuuden vuoksi.
 
-Power BI-järjestelmänvalvoja voi etsiä asiaa, joiden:
+Tutkimuksen tueksi Power BI -järjestelmänvalvoja voi etsiä seuraavia asioita:
 
-- Tietojen milloin käytettävissä muisti päivitetään, kun käytettävissä olevaa muistia on pienempi kuin 2, on päivitettävä tietojoukon koosta x.
-- Tietojoukkoja ei päivitetty ja ole muistissa ennen päivityksen, vielä alkanut näyttämään vuorovaikutteinen liikenteen raskas päivitysajat aikana. Jos haluat nähdä, mitä tietojoukkoja ladataan muistiin milloin tahansa, tietojoukot alueen tarkastella Power BI-järjestelmänvalvojan **tietojoukkoja** välilehti sovelluksessa. Järjestelmänvalvoja voi sitten ristiinsuodatuksen annetun ajaksi napsauttamalla palkkien **tunneittain ladata tietojoukko laskee**. Paikallinen huipussaan, kuvassa alla ilmaisee tunti, kun useita tietojoukkoja ladattiin muistiin, joka saattaa viive ajoitettujen päivitysten alku.
-- Parannettu tietojoukon häätöjä ottaen Sijoita Aloita ajoitettuja tietojen päivityksiä. Häätöjä voi ilmaista on suuri muistipainetta aiheutui käsittelevä liian monta eri vuorovaikutteisia raportteja ennen päivityksen aikana. **Tunneittain tietojoukon Häätöjä ja muistin kulutuksen** visual selvästi ilmaistaan häätöjä piikkarit.
+- Saatavilla olevan muistin vähäisyyttä tietojen päivitysaikana, kun muistia on käytettävissä alle 2x päivitettävän tietojoukon koosta.
+- Tietojoukkoja, joita ei päivitetty ja jotka eivät olleet muistissa ennen päivittämistä, mutta jotka alkoivat näyttää merkkejä vuorovaikutteisesta liikenteestä vilkkaina päivitysaikoina. Kun Power BI -järjestelmänvalvoja haluaa tietää, mitkä tietojoukot ladataan muistiin tietyllä hetkellä, hän voi tarkastella sovelluksen **Tietojoukot**-välilehden tietojoukkoaluetta. Järjestelmänvalvoja voi sitten tehdä ristiinsuodatuksen haluamallaan hetkellä napsauttamalla yhtä palkeista kohdassa **Tunneittain ladattujen tietojoukkojen määrä**. Alla kuvatun kaltainen paikallinen piikki viittaa ajankohtaan, jolloin muistiin ladattiin useita tietojoukkoja. Tämä voi viivyttää ajoitettujen päivitysten käynnistämistä.
+- Lisääntyneet tietojoukkohäädöt juuri sinä aikana, kun tietopäivitykset on ajoitettu käynnistymään. Häädöt voivat viitata siihen, että ennen päivityshetkeä muistiin kohdistui suuri paine, koska se palveli liian monia vuorovaikutteisia raportteja. **Tietojoukkojen häätö ja muistin käyttö tunneittain** -visualisointi voi selvästi ilmaista häätöpiikkejä.
 
-Seuraavassa kuvassa näytetään paikallisen huipussaan ladattujen tietojoukkojen joka ehdottaa vuorovaikutteinen kyselyä viivyttää alkuun päivitykset. Valitsemalla tietyn ajanjakson **tunneittain ladata tietojoukko laskee** visualisointi ristiinsuodatuksen **tietojoukkojen koon** visualisoinnin.
+Seuraava kuva näyttää ladatuissa tietojoukoissa paikallisen piikin, joka antaa ymmärtää, että vuorovaikutteiset kyselyt viivyttivät päivitysten käynnistämistä. Aikajakson valitseminen visualisoinnissa **Tunneittain ladattujen tietojoukkojen määrä** ristiinsuodattaa visualisoinnin **Tietojoukkojen koot**.
 
-![Paikallinen huipussaan ladata tietojoukoissa ehdottaa vuorovaikutteinen kyseltäessä Viivästetty alku päivitykset](media/service-premium-capacity-scenarios/hourly-loaded-dataset-counts.png)
+![Paikallinen piikki ladatuissa tietojoukoissa viittaa siihen, että vuorovaikutteiset kyselyt viivyttivät päivitysten käynnistämistä](media/service-premium-capacity-scenarios/hourly-loaded-dataset-counts.png)
 
-Power BI-järjestelmänvalvoja, voit yrittää ratkaista ongelman noudattamalla ohjeita sen varmistamiseksi, että tarpeeksi muistia on käytettävissä tietojen päivityksiä käynnistäminen:
+Power BI -järjestelmänvalvoja voi seuraavilla tavoilla yrittää ratkaista ongelman varmistamalla, että tietojen päivityksille on saatavilla riittävästi muistia:
 
-- Muodostettaessa yhteyttä tietojoukon omistajat ja jossa heitä lomittaa välilyönti pois tiedot päivittää aikatauluja.
-- Pienentää tietojoukon kyselyn kuormitusta poistamalla tarpeettomat koontinäyttöjä tai koontinäytön ruuduista, etenkin sellaisia, jotka rivitason suojausta.
-- Nopeuttaminen Power Query logic optimoimalla tietojen päivityksiä. Parantaa mallinnus lasketut sarakkeet tai taulukot. Pienentää tietojoukon kokoa tai määritä suurempi tietojoukkoja suorittaa lisäävä tietojen päivittäminen.
+- Ottamalla yhteyttä tietojoukon omistajiin ja pyytämällä heitä porrastamaan ja harventamaan tietojen päivittämisen ajastuksia.
+- Vähentämällä tietojoukkokyselyjen kuormitusta poistamalla tarpeettomia koontinäyttöjä ja koontinäyttöjen ruutuja, erityisesti sellaisia, jotka vaativat rivitason suojausta.
+- Nopeuttamalla tietojen päivityksiä Power Query -logiikan optimoinnilla. Parantamalla mallinnuksen laskettuja sarakkeita tai taulukoita. Pienentämällä tietojoukkojen kokoja tai määrittämällä suurempia tietojoukkoja suorittamaan asteittaista tietojen päivitystä.
 
-## <a name="identifying-slow-responding-datasets"></a>Tunnistetaan hidastaa vastaamisen tietojoukot
+## <a name="identifying-slow-responding-datasets"></a>Hitaasti vastaavien tietojoukkojen tunnistaminen
 
-Tässä skenaariossa käyttäjät havaittujen tiettyjen raporttien kesti liian kauan avata, tutkimuksen alkamisen ja joskus sulkemalla puhelin.
+Tässä tilanteessa aloitettiin tutkinta, kun käyttäjät valittivat, että tiettyjen raporttien avaaminen kesti liian kauan ja että ne jäivät joskus jumiin.
 
-Sovelluksessa on Power BI-järjestelmänvalvoja voi käyttää **kyselyn keston** visual määrittämään huonoiten suoriutuva tietojoukkoja lajittelemalla tietojoukkoja mukaan laskevasti **keskimääräinen kesto**. Tämä visualisointi näkyy myös tietojoukon kyselyn määrää, jotta näet, miten usein tietojoukkoja tehdään kysely.
+Sovelluksessa Power BI -järjestelmänvalvoja voi käyttää visualisointia **Kyselyjen kestot** suorituskyvyltään huonoimpien tietojoukkojen määrittämiseen lajittelemalla tietojoukot laskevaan järjestykseen **Keston keskiarvon** mukaan. Tämä visualisointi näyttää myös tietojoukkokyselyjen määrät, joten pääset näkemään, kuinka usein tietojoukoista tehdään kyselyjä.
 
-![Huonoiten suoriutuva tietojoukot](media/service-premium-capacity-scenarios/worst-performing-datasets.png)
+![Suorituskyvyltään heikoimmat tietojoukot](media/service-premium-capacity-scenarios/worst-performing-datasets.png)
 
-Järjestelmänvalvoja voi viitata **kyselyn keston jakelu** visualisoinnin, joka näyttää tuloksesi kyselyn suorituskyvyn yleisen jakautumisen (< = 30 MS, 0 – 100 millisekunnin yksikköinä) suodatettu ajanjaksolla. Yleensä kyselyt, ota yksi sekunti tai enintään käsittelemien reagoiva useimmat käyttäjille. Kyselyt, jotka kestää kauemmin tapana luoda näkemys virheellinen suorituskyvystä.
+Järjestelmänvalvoja voi viitata **Kyselyjen keston jakauman** visualisointiin, joka näyttää yleisjakauman säilöttyjen kyselyjen suorituskyvylle (<= 30 ms, 0-100 ms) suodatetun aikajakson ajalta. Yleensä kyselyt, joihin menee aikaa sekunti tai vähemmän, ovat useimpien käyttäjien mielestä hyvin reagoivia kyselyjä, kauemmin kestävät synnyttävät mielikuvan huonosta suorituskyvystä.
 
-**Tunneittain kyselyn keston jakelu** visualisoinnin avulla Power BI-järjestelmänvalvoja voi tunnistaa yhden tunnin kun kapasiteetin suorituskyky saattaa olla on valittuna käytetä tarkastellaan kokonaisena niin huono. Mitä suurempi palkin lohkoja edustavat kysely kestot yli yksi sekunti, suurempaa riskin, että käyttäjät näkee heikentää suorituskykyä.
+**Kyselyjen keston jakauma tunneittain** -visualisoinnin avulla Power BI -järjestelmänvalvoja voi tunnistaa sellaiset tunnin mittaiset jaksot, joiden aikana kapasiteettisuorituskyky on voitu mieltää heikoksi. Mitä pitempiä ovat ne palkkisegmentit, jotka edustavat yli sekunnin kestäviä kyselyjä, sitä todennäköisempää on, että käyttäjät ovat mieltäneet suorituskyvyn huonoksi.
 
-Visualisointi on vuorovaikutteinen ja segmentin palkin valittaessa vastaava **kyselyn keston** taulukkovisualisointi raportin sivulla on ristiinsuodatuksia näyttämään se edustaa tietojoukkoja. Tämä ristiinsuodatus avulla Power BI-järjestelmänvalvoja voi helposti joka tietojoukot ovat vastaamisen hitaasti.
+Visualisointi on vuorovaikutteinen, ja kun valitset palkin segmentin, sitä vastaava **Kyselyjen kestot**-taulukkovisualisointi raporttisivulla ristiinsuodatetaan näyttämään sen edustamat tietojoukot. Tämän ristiinsuodatuksen avulla Power BI -järjestelmänvalvoja voi helposti tunnistaa, mitkä tietojoukot reagoivat hitaasti.
 
-Seuraavassa kuvassa näytetään visualisoinnin suodattanut **tunneittain kyselyn keston jaot**, kohdentaminen yhden tunnin säilöjen huonoiten suoriutuva tietojoukoille. 
+Seuraavassa kuvassa näkyy visualisointi, jonka suodatuksen perustana toimii **Kyselyn keston jakauma tunneittain** ja joka keskittyy yhden tunnin säilöjen huonoimmin toimiviin tietojoukkoihin. 
 
-![Suodatettu tunneittain kyselyn keston jaot visual näyttää tietämättäsi suorittamisen tietojoukot](media/service-premium-capacity-scenarios/hourly-query-duration-distributions.png)
+![Suodatettu Kyselyn keston jakauma tunneittain -visualisointi näyttää suorituskyvyltään huonoimmat tietojoukot](media/service-premium-capacity-scenarios/hourly-query-duration-distributions.png)
 
-Kun tunnistetaan tietyn tunnin timespan huono suorittavan tietojoukon, Power BI-järjestelmänvalvoja voi tutkia asiaa heikentää suorituskykyä aiheutuu ylikuormittunut kapasiteetti, onko vuoksi huonosti suunniteltu tietojoukon tai raportin. He voivat viitata **kyselyn Odota kertaa** visualisoinnin ja Lajittele tietojoukkoja mukaan laskevasti kyselyiden keskimääräinen odotusaika. Jos kyselyt suuri prosenttiosuus odottaa, tietojoukon suuren tarvittaessa on todennäköisesti liikaa kyselyn odottaa syyn. Jos kyselyiden keskimääräinen odotusaika on merkittäviä (> 100 ms), se voi olla tarpeen harkita tarkastelet tietojoukon ja raportin nähdäksesi, jos optimointeja voi tehdä. Esimerkiksi vähemmän visualisoinnit annettu raporttisivujen tai DAX-lausekkeen optimoinnin.
+Kun tietyssä tunnin aikavälissä on tunnistettu huonosti toimiva tietojoukko, Power BI -järjestelmänvalvoja voi tutkia, johtuuko huono suorituskyky kapasiteetin ylikuormituksesta vai huonosti suunnitellusta tietojoukosta tai raportista. Voidaan viitata **Kyselyn odotusajat** -visualisointiin ja lajitella tietojoukot keskimääräisen kyselyn odotusajan mukaan laskevassa järjestyksessä. Jos suuri prosenttiosuus kyselyistä odottaa, kyselyjen liiallisiin odotusaikoihin ovat luultavasti syynä tietojoukkoon kohdistetut suuret vaatimukset. Jos kyselyjen keskimääräinen odotusaika on huomattavan pitkä (> 100 ms), voi olla vaivan arvoista tarkastella tietojoukkoa ja raporttia siltä varalta, että optimointeja voi tehdä. Esimerkkejä ovat tiettyjen raporttisivujen visualisointien vähentäminen tai DAX-lausekkeen optimoiminen.
 
-![Kyselyn Odota kertaa visualisointi auttaa paljastaa huonosti suorittavan tietojoukot](media/service-premium-capacity-scenarios/query-wait-times.png)
+![Kyselyodotusaikojen visualisointi auttaa paljastamaan suorituskyvyltään huonot tietojoukot](media/service-premium-capacity-scenarios/query-wait-times.png)
 
-On kyselyn Odota aika kertymisen tietojoukoissa useita mahdollisia syitä:
+On useita mahdollisia syitä siihen, miksi kyselyn odotusaika kasvaa tietojoukoissa:
 
-- Mahdollisimman mallin rakenteen tai jopa raportin suunnittelun - kaikissa tilanteissa, voit itse osallistua measure-lausekkeiden pitkään suoritettavat kyselyt, jotka käyttävät suorittimen korkean. Tämä pakottaa uusien kyselyiden Odota, kunnes suorittimen säikeiden saataville ja luoda convoy voimaan (Kuvittele liikenteen hillot), joka on nähty yleisesti piikin virka-aikana. **Kyselyn odottaa** sivu on tärkein resurssin päätellä, tietojoukot suuren kyselyiden keskimääräinen odotusaika kertaa.
-- Samanaikainen kapasiteetti käyttäjät (satoja tuhansia) määrä kuluttaja saman raportin tai tietojoukon. Jopa hyvin suunniteltu tietojoukot voivat suorittaa virheellisesti asettamiesi samanaikaisuuden raja-arvo. Tämä ilmaistaan yleensä näytetään huomattavasti suurempi arvo-kyselyn laskee kuin muut tietojoukot Näytä yksi tietojoukko (esimerkiksi 300 K kyselyt-yksi tietojoukko verrattuna < 30K kyselyt muihin tietojoukkoihin). Jotkin kohdassa kyselyn odottaa-tämän tietojoukon alkaa lomittaa, joka voi nähdä **kyselyn keston** visualisoinnin.
-- Monta eri tietojoukkoa kysely samanaikaisesti, aiheuttaa tietojen poistaminen, kuten tietojoukot käydä usein uloskirjautuminen muistia. Tämän tuloksena käyttäjät ilmenee hidas, kun tietojoukko ladataan muistiin. Vahvista, Power BI-järjestelmänvalvoja voi viitata **tunneittain tietojoukon Häätöjä ja muistin kulutuksen** visualisoinnin, joka saattaa ilmaista, että suuren määrän tietojoukkoja ladataan muistiin ovat toistuvasti häädettävän.
+- Optimaalista huonompi mallin rakenne, mittauslausekkeet tai myös raportin rakenne ovat kaikki sellaisia tekijöitä, jotka voivat aiheuttaa pitkäkestoisia, suoritinta rasittavia kyselyjä. Tämä pakottaa uudet kyselyt odottamaan, kunnes suoritinsäikeet tulevat ulottuville, ja voi aiheuttaa ruuhkautumista erityisesti silloin, kun liikennettä on paljon. **Kyselyn odotusajat** -sivu on pääasiallinen resurssi selvitettäessä, ovatko tietojoukkojen odotusajat keskimäärin hyvin pitkiä.
+- Suuri määrä kapasiteetin samanaikaisia käyttäjiä (satoja tai tuhansia), jotka käyttävät samaa raporttia tai tietojoukkoa. Jopa hyvin suunnitellut tietojoukot voivat osoittaa huonoa suorituskykyä, jos samanaikaisuuskynnys ylittyy. Tämän ilmaisee yleensä yksittäinen tietojoukko, joka antaa merkittävästi korkeamman arvon kyselyjen määrälle kuin muut tietojoukot (esim. 300 000 kyselyä yhdelle tietojoukolle, kun kaikkien muiden kyselyjen numerot ovat alle 30 000). Jossain kohdassa tämän tietojoukon kyselyjen odotusajat alkavat horjua, mikä näkyy **Kyselyjen kestot** -visualisoinnissa.
+- Moneen eri tietojoukkoon tehdään samanaikaisia kyselyjä, mikä ylirasittaa muistia, kun tietojoukot kiertävät yhtä mittaa muistiin ja muistista ulos. Käyttäjät kokevat suorituskyvyn heikentyvän, kun tietojoukkoa ladataan muistiin. Asian vahvistamiseksi Power BI -järjestelmänvalvoja voi käyttää visualisointia **Tietojoukkojen häätö ja muistin käyttö tunneittain**, josta voi ilmetä, että suuri määrä muistiin ladattuja tietojoukkoja häädetään toistuvasti.
 
-## <a name="identifying-causes-for-sporadically-slow-responding-datasets"></a>Tunnistetaan syitä 0x1E hidastaa-DSR-tietojoukot
+## <a name="identifying-causes-for-sporadically-slow-responding-datasets"></a>Tietojoukkojen satunnaisen hitaan vastaamisen syiden tunnistaminen
 
-Tässä skenaariossa tutkimuksen alkamisen, kun käyttäjät, jotka on kuvattu, että raportin visualisointien joskus on hidas vastaa tai saattaa lopettaa vastaamisen, mutta joskus ne olivat acceptably reagoiva.
+Tässä tilanteessa tutkimus alkoi, kun käyttäjät kertoivat, että raporttien visualisoinnit olivat joskus hitaita reagoimaan tai jumittuivat, vaikka ne muina aikoina reagoivat hyväksyttävän nopeasti.
 
-Sovelluksessa **kyselyn keston** osiossa käytettiin löytää virheen aiheuttaja tietojoukon seuraavalla tavalla:
+Sovelluksen sisällä käytettiin **Kyselyjen kestot** -osaa syyllisen tietojoukon löytämiseen seuraavalla tavalla:
 
-- - **Kyselyn keston** visual järjestelmänvalvoja suodatettu tietojoukon mukaan tietojoukon (alkaen kysely yläreunan tietojoukot) ja tutkia ristisuodatuksen suodatettu palkkien **tunneittain kyselyn jaot** visualisoinnin.
-- Kun yhden tunnin palkin näytimme merkittäviä muutoksia kaikki kyselyn keston ryhmät ja yhden tunnin muita palkkeja tietojoukossa suhde (esimerkiksi värit väliset suhteet muuttuu raporttikyselyt), se tarkoittaa, että tätä tietojoukkoa osoittaa tilapäisiä muutos suorituskyvyn.
-- Näytetään suoriutuvien kyselyiden, epäsäännölliset osan yhden tunnin palkit osoittaa timespan, jossa tietojoukko on vaikuttaa Meluisa naapuri voimassa, jotka muihin tietojoukkoihin.
+- **Kyselyjen kestot** -visualisoinnissa järjestelmänvalvoja suodatti tietojoukon kerrallaan (aloittaen useimpien kyselyjen kohteena olleista tietojoukoista) ja tarkasteli ristiinsuodatettuja palkkeja **Kyselyjakaumat tunneittain** -visualisoinnissa.
+- Kun yksittäisessä yhden tunnin palkissa ilmeni merkittäviä muutoksia kaikkien kyselynkestoryhmien suhteessa tietojoukon muihin yhden tunnin palkkeihin (esimerkiksi värien suhteet muuttuivat huomattavasti), tämä tarkoittaa, että tässä tietojoukossa ilmeni satunnainen suorituskyvyn muutos.
+- Yhden tunnin palkit, joissa näkyi epäsäännöllinen osuus huonosti toimivia kyselyjä, osoittivat aikavälin, jossa muiden tietojoukkojen aktiivisuuden aiheuttama ns. meluisan naapurin ilmiö kohdistui kyseiseen tietojoukkoon.
 
-Kuva alla näkyy tunnin 30. tammikuuta, jos ilmeni merkittäviä aikaisemmin tietojoukon suorituskykyä, merkkinä kokoa ”(3,10s]” suorituksen kesto säilöön. Valitsemalla yhden tunnin rivi paljastaa, että kaikki tietojoukkoja ladataan muistiin tänä aikana henkilöstö voi aiheuttaa Meluisa naapuri voimaan tietojoukkoja.
+Alla oleva kuva näyttää tammikuun 30. päivältä yhden tunnin jakson, jonka aikana tietojoukon suorituskyvyssä ilmeni huomattava heikkeneminen, joka näkyy suorituskestosäilön “(3,10 s]” koossa. Kyseisen yhden tunnin palkin napsauttaminen paljastaa kaikki sinä aikana muistiin ladatut tietojoukot, jotka aiheuttavat meluisan naapurin ilmiön.
 
-![Palkki, joka näyttää pahimmassa suorituskyvyn suuri osa](media/service-premium-capacity-scenarios/worst-performing-queries.png)
+![Palkki, joka näyttää selvästi huonoimman suorituskyvyn](media/service-premium-capacity-scenarios/worst-performing-queries.png)
 
-Kun ongelmallinen timespan tunnistetaan (esimerkiksi aikana tämän 30 yllä olevassa kuvassa) Power BI-järjestelmänvalvoja voi poistaa kaikki tietojoukon suodattimet sitten suodattaminen kyseisen timespan määrittämään, mitä tietojoukkoja on aktiivisesti kyselyitä tänä aikana. Meluisa naapuri tehosteen virheen aiheuttaja-tietojoukko on yleensä yläreunan kysellyt tietojoukon tai jokin pisimpään kyselyiden keskimääräinen kesto.
+Kun ongelmallinen aikajakso on tunnistettu (esimerkiksi yllä olevassa kuvassa tammikuun 30. päivänä), Power BI -järjestelmänvalvoja voi poistaa kaikki tietojoukkosuodattimet ja suodattaa sitten vain kyseisen aikajakson perusteella sen selvittämiseksi, mitkä tietojoukot olivat tähän aikaan aktiivisen kyselyn kohteena. Meluisan naapurin ilmiöön syyllinen tietojoukko on yleensä se, johon kohdistuu eniten kyselyjä, tai se, johon kohdistuneet kyselyt kestävät keskimäärin kauimmin.
 
-Jakaa eri työtilat eri Premium-kapasiteetteja tai jaettuun kapasiteettiin, jos tietojoukon kokoa, vaatimusten ja tietojen päivittäminen mallien kautta tietojoukkoja tuetaan virheen aiheuttaja voi ratkaista tämän ongelman.
+Tämän ongelman ratkaisu voi olla se, että ongelmia aiheuttavat tietojoukot jaetaan eri työtiloille ja eri Premium-kapasiteeteille tai jaetulle kapasiteetille, jos tietojoukon kokoa, kulutustarpeita ja tietojen päivityskuvioita tuetaan.
 
-Vastaavasti voi olla tosi myös. Power BI-järjestelmänvalvoja voi tunnistaa kertaa, kun tietojoukko kyselyn suorituskyvyn raporttikyselyt parantaa ja Etsi mitä katosi. Jos tiettyjä puuttuu kyseisen vaiheessa, sitten, jotka auttavat osoittamaan aiheuttavan ongelma.
+Asiassa voi käydä myös päinvastoin. Power BI -järjestelmänvalvoja voi tunnistaa ajankohdat, jolloin tietojoukkokyselyn suorituskyky yllättäen paranee, ja etsiä sitten, mikä taustatekijä tällöin on kadonnut. Jos jokin tieto puuttuu tässä kohdassa, se voi auttaa tunnistamaan ongelman syyn.
 
-## <a name="determining-whether-there-is-enough-memory"></a>Selvitettäessä, onko tarpeeksi muistia
+## <a name="determining-whether-there-is-enough-memory"></a>Muistin riittävyyden selvittäminen
 
-Voit selvittää, onko tarpeeksi muistia kapasiteetin suorittamiseen sen kuormituksia, Power BI-järjestelmänvalvoja voi viitata **kuluttaa muistia prosenttiosuudet** visualisointia **tietojoukkoja** sovelluksen-välilehdessä. **Kaikki** (yhteensä) muistin edustaa tietojoukkoja ladataan muistiin, riippumatta siitä, ovatko ne aktiivisesti kyselyitä tai käsitellä kuluttaa muistia. **Aktiivinen** muistin edustaa tietojoukkoja, jotka aktiivisesti käsitellään kuluttaa muistia.
+Sen selvittämiseksi, onko kapasiteetilla riittävästi muistia työkuormiensa suorittamiseen, Power BI -järjestelmänvalvoja voi käyttää visualisointia **Kulutetut muistin prosenttiosuudet** sovelluksen välilehdessä **Tietojoukot**. **Kaikki** muisti (yhteensä) tarkoittaa muistiin tallennettujen tietojoukkojen kokonaisuudessaan kuluttamaa muistia riippumatta siitä, ovatko tietojoukot aktiivisten kyselyjen tai käsittelyn kohteena. **Aktiivinen** muisti tarkoittaa aktiivisessa käsittelyssä olevien tietojoukkojen kuluttamaa muistia.
 
-Kunnossa olevaa kapasiteettia visualisointi näyttää tämän, näytetään kaikki (yhteensä) välille välin ja aktiivinen:
+Hyväkuntoisessa kapasiteetissa visualisointi näyttää tältä, niin että kaiken (yhteensä) ja aktiivisen muistin välillä on aukko:
 
-![Kunnossa olevaa kapasiteettia näyttää kaikki (yhteensä) välille välin ja aktiivinen](media/service-premium-capacity-scenarios/memory-healthy-capacity.png)
+![Hyväkuntoisessa kapasiteetissa kaiken (yhteensä) ja aktiivisen muistin välillä näkyy aukko](media/service-premium-capacity-scenarios/memory-healthy-capacity.png)
 
-Muistipainetta ilmenee kapasiteettia samaan visualisointiin näkyvät selvästi, aktiivisen muistin ja muistin kokonaismäärä Yhtyvä, mikä tarkoittaa, että se on mahdotonta muita tietojoukkojen lataaminen muistiin sitten. Tässä tapauksessa Power BI-järjestelmänvalvojan napsauttamalla **kapasiteetin uudelleen** (- **lisäasetukset** hallintaportaalin kapasiteetin asetukset-alueen). Käynnistetään uudelleen kapasiteetin tulokset kaikki tietojoukot on tyhjentää muistista ja sallimalla uudelleen muistiin (jota kyselyitä tai tietojen päivitys).
+Jos kapasiteettiin kohdistuu muistipainetta, sama visualisointi näyttää selkeästi aktiivisen muistin ja kokonaismuistin lähestyvän toisiaan niin, että muistiin on mahdotonta ladata lisää tietojoukkoja. Tässä tapauksessa Power BI -järjestelmänvalvoja voi napsauttaa **Käynnistä kapasiteetti uudelleen** (hallintaportaalin kapasiteettiasetusten alueen **Lisäasetuksissa**). Kapasiteetin uudelleenkäynnistäminen tarkoittaa, että kaikki tietojoukot pyyhitään muistista ja niiden annetaan latautua uudelleen tarpeen mukaan (kyselyjen tai tietojen päivittämisen mukaan).
 
-![** Aktiivinen ** muistin Yhtyvä kanssa ** kaikki ** muisti](media/service-premium-capacity-scenarios/memory-unhealthy-capacity.png)
+![**Aktiivinen** muisti lähestyy **Kaikkea** muistia](media/service-premium-capacity-scenarios/memory-unhealthy-capacity.png)
 
-## <a name="determining-whether-there-is-enough-cpu"></a>Selvitettäessä, onko tarpeeksi Suoritin
+## <a name="determining-whether-there-is-enough-cpu"></a>Suorittimen riittävyyden selvittäminen
 
-Yleensä ostat kapasiteettia keskimääräinen suorittimen käyttöaste pitäisi pysyä 80 prosentin alla. Suurempi kuin tämä arvo tarkoittaa kapasiteetin lähestyy suorittimen kylläisyys.
+Yleensä kapasiteetin keskimääräisen suorittimen käyttötarpeen pitäisi pysyä alle 80 %:ssa. Jos arvo ylittyy, kapasiteetti lähestyy suorittimen kylläisyyttä.
 
-Suorittimen kylläisyys vaikutukset ilmaistaan kauemmin niiden pitäisi vuoksi tiedoillesi monta suorittimen kontekstit valitsinta, kun se yrittää käsitellä kaikki toiminnot kapasiteetin toiminnot. Premium-kapasiteetissa, jonka samanaikaisten kyselyiden määrä Tämä ilmaisee suuren kyselyn Odota kertaa. Suuren kyselyn Odota kertaa seurausta on tavallista hitaammin reagoinnin. Power BI-järjestelmänvalvojan muistat helposti, kun suorittimen on tyydyttyneet tarkastelemalla **tunneittain kyselyn Odota aika jaot** visualisoinnin. Kyselyn kausittaisten päät määrät ilmaista mahdollisen suorittimen kylläisyys odotusaika.
+Suorittimen kylläisyys ilmenee siten, että toiminnot kestävät kauemmin kuin niiden pitäisi, koska kapasiteetti suorittaa useita suoritinkontekstin vaihtoja yrittäessään käsitellä kaikkia toimintoja. Premium-kapasiteetissa, jossa on paljon samanaikaisia kyselyjä, tämä ilmenee siten, että kyselyjen odotusajat pitenevät. Kyselyjen odotusaikojen piteneminen merkitsee reagoinnin hidastumisesta tavanomaiseen verrattuna. Power BI -järjestelmänvalvoja voi helposti tunnistaa, milloin suoritin on kylläinen, tarkastelemalla visualisointia **Kyselyiden odotusajan jakaumat tunneittain**. Kyselyjen odotusaikamäärien kausihuiput ilmaisevat mahdollisen suorittimen kylläisyyden.
 
-![Kyselyn kausittaisten päät odotusaika määrät ilmaista mahdollisen suorittimen kylläisyys](media/service-premium-capacity-scenarios/peak-query-wait-times.png)
+![Kyselyjen odotusaikamäärien kausihuiput ilmaisevat mahdollisen suorittimen kylläisyyden](media/service-premium-capacity-scenarios/peak-query-wait-times.png)
 
-Samanlaisen kuvion joskus voidaan tunnistaa taustan toiminnot, jos ne osallistua suorittimen kylläisyys. Power BI-järjestelmänvalvoja voi etsiä kausittaisten huipussaan päivitysajat, määritetyn tietojoukon, mikä voi ilmaista suorittimen kylläisyys aikaan (todennäköisesti vuoksi muita jatkuvan tietojoukkosi päivittyy ja/tai vuorovaikutteisia kyselyitä). Tässä esiintymässä, viittaavat **järjestelmän** näkymä sovelluksen eivät saa välttämättä paljastaa, että Suoritin on 100 prosenttia. **Järjestelmän** näkymä näyttää tunneittain keskiarvot, mutta Suoritin voi tulla tyydyttyneet muutaman minuutin ajan raskas toiminnoista, joka näkyy kuin piikkarit Odota kertaa.
+Samanlainen kuvio voidaan joskus havaita taustatoiminnoissa, jos ne myötävaikuttavat suorittimen kylläisyyteen. Power BI -järjestelmänvalvoja voi etsiä kausihuippua tietyn tietojoukon päivitysajoissa, koska tämä voi viitata senhetkiseen suorittimen kylläisyyteen (mahdollisesti muiden käynnissä olevien tietojoukkopäivitysten ja/tai vuorovaikutteisten kyselyjen vuoksi). Tässä tapauksessa sovelluksen **Järjestelmä**-näkymä ei välttämättä paljasta suorittimen käytön olevan 100 %:ssa. **Järjestelmä**-näkymä näyttää keskiarvoja tunneittain, mutta suoritin voi tulla kylläiseksi useiden minuuttien ajaksi raskaiden toimintojen aikana, mikä näkyy odotusaikapiikkeinä.
 
-On lisätietoja erityispiirteensä vaikutusta suorittimen kylläisyys tarkastelua. Odota kyselyiden määrä on tärkeää, kyselyn odotusaika aina tapahtuu jossain määrin aiheuttamatta discernable kansiohierarkiassa. Jotkin tietojoukot (jonka unohtui keskimääräinen kyselyn kertaa, joka ilmaisee monimutkaisuutta tai koko) on enemmän jotka altistuvat paketin suorittimen kylläisyys vaikutukset kuin muut. Tunnistamisessa nämä tietojoukot, Power BI-järjestelmänvalvoja voi hakea muutosten väri palkkien **tunneittain Odota aika jakelu** visualisoinnin. Jälkeen spotting harha palkki näyttää tietojoukoille, jotka oli kyselyn odottaa tänä aikana ne myös verrattuna keskimääräinen kesto kyselyn kyselyiden keskimääräinen odotusaika seurantaan. Kun nämä kaksi tiedot ovat samassa moninkertaisesti ja tietojoukon kyselyn kuormitus on muu kuin yksinkertainen, todennäköisesti tilauksista tietojoukko ei ole tarpeeksi suorittimen mukaan.
+Suorittimen kylläisyyden näkymiseen liittyy enemmänkin sävyeroja. Vaikka odottavien kyselyjen lukumäärä onkin tärkeä, kyselyjä joutuu aina jossain määrin odottamaan, eikä se välttämättä merkitse havaittavaa suorituskyvyn huononemista. Eräät tietojoukot (joiden keskimääräinen kyselyaika on pitempi kompleksisuuden tai koon takia) ovat herkempiä suorittimen kylläisyyden vaikutuksille kuin toiset. Tällaisten tietojoukkojen helpoksi tunnistamiseksi Power BI -järjestelmänvalvoja voi etsiä muutoksia visualisoinnin **Odotusajan jakauma tunneittain** -palkkien värikoostumuksessa. Havaittuaan poikkeavan palkin järjestelmänvalvoja voi etsiä tietojoukkoja, joiden kyselyt ovat odotuttaneet itseään kyseisenä aikana, ja tarkastella samalla keskimääräistä kyselyn odotusaikaa verrattuna keskimääräiseen kyselyn kestoon. Kun nämä kaksi mittausarvoa ovat samansuuruisia ja tietojoukon kyselyn työkuorma on vähäpätöistä suurempi, on todennäköistä, että suorittimen riittämättömyys vaikuttaa tietojoukkoon.
 
-Tämä voi olla erityisen selviä, kun tietojoukko on kulutettu lyhyt bursts tiheän käyttövälin kyselyiden useat käyttäjät (esimerkiksi-koulutus istunnossa) tuloksena suorittimen kylläisyys kunkin jaksopyyntöjen aikana. Tässä tapauksessa merkittäviä kyselyn Odota kertaa tälle tietojoukolle voi kohtasi sekä vaikutuksia-kapasiteetti (Meluisa naapuri vaikutus) muihin tietojoukkoihin.
+Tämä vaikutus voi olla erityisen näkyvä silloin, kun joukko käyttäjiä esimerkiksi koulutustilaisuuden yhteydessä suuntaa tietojoukkoon useita lyhyitä suurtaajuisten kyselyjen purskeita, jotka johtavat suorittimen kylläisyyteen kunkin purskeen aikana. Tässä tapauksessa tämän tietojoukon merkittävät kyselyodotusajat voidaan havaita myös vaikutuksena muihin tietojoukkoihin (meluisan naapurin ilmiö).
 
-Joissakin tapauksissa Power BI-järjestelmänvalvoja voi myös pyytää, että tietojoukon omistajat luoda pienempi muuttuvia kyselyn kuormituksen luomalla raportin sijasta (välimuistiin ruutujen Päivitä kyselyt säännöllisesti kaikkien niiden tietojoukkojen kanssa) koontinäytön. Tämä estää piikkarit koontinäytön lataamisen yhteydessä. Tämä ratkaisu ei aina ole mahdollista, että annettu liiketoimintavaatimusten, mutta se voi olla tehokas tapa välttää suorittimen kylläisyys tekemättä muuttaminen tietojoukkoon.
+Eräissä tapauksissa Power BI -järjestelmänvalvojat voivat vaatia tietojoukkojen omistajia ryhdistämään kyselykuormitustaan luomalla kokoomanäytön (joka tekee säännöllisesti kyselyjä aina kun tietojoukko päivitetään välimuistiruutujen osalta) raportin sijasta. Tämä voi auttaa estämään kuormituspiikkejä koontinäytön lataamisen yhteydessä. Tämä ratkaisu ei ehkä ole aina mahdollinen annettujen toimeliaisuusedellytysten puitteissa, mutta se voi olla tehokas tapa välttää suorittimen kylläisyyttä joutumatta tekemään muutoksia tietojoukkoon.
 
-## <a name="acknowledgements"></a>Kuittaussanomien
+## <a name="acknowledgements"></a>Kiitokset
 
-Tämä artikkeli koskee Peter Myers, tietojen Platform MVP ja riippumattoman BI asiantuntijan kanssa [Bitwise ratkaisuja](https://www.bitwisesolutions.com.au/).
+Tämän artikkelin on kirjoittanut Peter Myers, joka on Data Platform MVP ja itsenäinen BI-asiantuntija, yhdessä [Bitwise Solutionsin](https://www.bitwisesolutions.com.au/) kanssa.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
 > [!div class="nextstepaction"]
-> [Valvo sovelluksen Premium-kapasiteetteja](service-admin-premium-monitor-capacity.md)    
+> [Premium-kapasiteettien valvonta sovelluksen avulla](service-admin-premium-monitor-capacity.md)    
 > [!div class="nextstepaction"]
-> [Valvo kapasiteettien hallintaportaalissa](service-admin-premium-monitor-portal.md)   
+> [Kapasiteettien valvonta hallintaportaalissa](service-admin-premium-monitor-portal.md)   
 
 Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
 

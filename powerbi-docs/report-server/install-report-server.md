@@ -3,18 +3,17 @@ title: Power BI -raporttipalvelimen asentaminen
 description: Opi asentamaan Power BI -raporttipalvelin.
 author: maggiesMSFT
 ms.author: maggies
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 05/22/2019
-ms.openlocfilehash: c0e3666a5838ae8e3849f5defd3858c9ea205a42
-ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.openlocfilehash: eecddd9251bbce732e9dc4ef70ad0d855f499d11
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "66839436"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73874150"
 ---
 # <a name="install-power-bi-report-server"></a>Power BI -raporttipalvelimen asentaminen
 
@@ -46,7 +45,7 @@ Lisätietoja on alla.
 
 Jos olet ostanut Power BI Premiumin, löydät Power BI -raporttipalvelimen tuoteavaimen Power BI -hallintaportaalin **Premium-asetukset**-välilehdeltä. Tämä on käytettävissä vain Yleisille järjestelmänvalvojille ja käyttäjille, joille on määritetty Power BI -palvelun järjestelmänvalvojan rooli.
 
-![Premium-asetukset](../report-server/media/install-report-server/pbirs-product-key.png "Power BI -raporttipalvelimen avain Premium-asetuksissa")
+![Premium-asetukset](../report-server/media/install-report-server/pbirs-product-key.png "Power BI -raporttipalvelimen avain Premiumin asetuksissa")
 
 Voit avata tuoteavaimen sisältävän valintaikkunan valitsemalla **Power BI -raporttipalvelimen avain** -kohdan. Voit kopioida avaimen ja käyttää sitä asennuksessa.
 
@@ -127,14 +126,14 @@ URL-varaukset koostuvat etuliitteestä, isäntänimestä, portista ja näennäis
 | Osa | Kuvaus |
 | --- | --- |
 | Etuliite |Oletusarvoinen etuliite on HTTP. Jos olet aiemmin asentanut Secure Sockets Layer (SSL) -varmenteen, asennusohjelma yrittää luoda URL-varaukset, jotka käyttävät HTTPS-etuliitettä. |
-| Isäntänimi |Oletusarvoinen isäntänimi on vahva yleismerkki (+). Se määrittää, että raporttipalvelin hyväksyy minkä tahansa HTTP-pyynnön määritetyssä portissa mille tahansa isäntänimelle, joka viittaa tietokoneeseen, mukaan lukien `http://<computername>/reportserver`, `http://localhost/reportserver` tai `http://<IPAddress>/reportserver.` |
+| Isäntänimi |Oletusarvoinen isäntänimi on vahva yleismerkki (+). Se määrittää, että raporttipalvelin hyväksyy minkä tahansa HTTP-pyynnön määritetyssä portissa mille tahansa isäntänimelle, joka viittaa tietokoneeseen, mukaan lukien `https://<computername>/reportserver`, `https://localhost/reportserver` tai `https://<IPAddress>/reportserver.` |
 | Portti |Oletusportti on 80. Jos käytät mitä tahansa muuta porttia kuin 80, sinun on lisättävä se URL-osoitteeseen eksplisiittisesti, kun avaat verkkoportaalin selainikkunassa. |
 | Näennäishakemisto |Oletusarvon mukaan näennäishakemistot luodaan ReportServer-muodossa raporttipalvelimen verkkopalvelua ja verkkoportaalin raportteja varten. Raporttipalvelimen verkkopalvelun oletusarvoinen näennäishakemisto on **reportserver**. Verkkoportaalin oletusarvoinen näennäishakemisto on **reports**. |
 
 Täydellinen URL-merkkijono voi olla esimerkiksi seuraavanlainen:
 
-* `http://+:80/reportserver`, tarjoaa pääsyn raporttipalvelimeen.
-* `http://+:80/reports`, tarjoaa pääsyn verkkoportaaliin.
+* `https://+:80/reportserver`, tarjoaa pääsyn raporttipalvelimeen.
+* `https://+:80/reports`, tarjoaa pääsyn verkkoportaaliin.
 
 ## <a name="firewall"></a>Palomuuri
 

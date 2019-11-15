@@ -2,20 +2,19 @@
 title: Suuret tietojoukot, arvopisterajat ja tietostrategiat
 description: Visualisointien tietorajat ja tietojen vähentämisen strategiat
 author: mihart
-manager: kvivek
-ms.reviewer: ''
+ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 11/02/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 6b5f2fa44a45cca06f90474d8c76fd6f06cae3ce
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: b45d0fb20dbb9a697e6d079a6b28c0fc86290627
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61276402"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73881069"
 ---
 # <a name="data-point-limits-and-strategies-by-visual-type"></a>Arvopisterajat ja strategiat visualisointityypin mukaan
 
@@ -64,7 +63,7 @@ Katso [viivaotannan toimintaperiaate](../desktop-high-density-sampling.md#how-th
 - Luokittaisessa tilassa
     - Luokat: Virtualisointi käyttämällä 500 rivin ikkunaa yhdellä kertaa
     - Sarja: Ylimmät 60
-    - Skalaaritilassa (tässä voidaan käyttää dynaamisia rajoituksia)
+    - Skalaaritilassa (voidaan käyttää dynaamisia rajoituksia)
         - Maksimipisteet: 10 000
         - Luokat: 500 arvon malli
         - Sarja: Ylimmät 20 arvoa
@@ -113,8 +112,8 @@ Kartassa voi olla määritysten mukaan:
 - Leveysaste, pituusaste: katso [Suuren tiheyden pistekaaviot](desktop-high-density-scatter-charts.md)
 - Leveysaste, pituusaste, koko: Ylimmät 3 500
 - Selite, leveysaste, pituusaste: katso [Suuren tiheyden pistekaaviot](desktop-high-density-scatter-charts.md)
-- Selite, leveysaste, pituusaste, koko: Ylimmät 233 selitettä, ylimmät 15 leveys- ja pituusastetta (tässä voidaan käyttää tilastotietoja tai dynaamisia rajoituksia)
-- Sijainti, selite, pituusaste ja leveysaste koosteina (+/-koko): Ylimmät 233 sijaintia, ylimmät 15 selitettä (tässä voidaan käyttää tilastotietoja tai dynaamisia rajoituksia)
+- Selite, leveysaste, pituusaste, koko: Ylimmät 233 selitettä, ylimmät 15 leveys- ja pituusastetta (voidaan käyttää tilastotietoja tai dynaamisia rajoituksia)
+- Sijainti, selite, pituusaste, leveysaste koosteina (+/-koko): Ylimmät 233 sijaintia, ylimmät 15 selitettä (voidaan käyttää tilastotietoja tai dynaamisia rajoituksia)
 
 ### <a name="matrix"></a>Matriisi
 - Rivit: Virtualisointi käyttämällä 500 rivin ikkunaa yhdellä kertaa
@@ -142,21 +141,21 @@ Rajoitettu 150 000 riviin. Jos valittuna on yli 150 000 riviä, vain ensimmäise
 - Luokittaisessa tilassa
     - Luokat: Virtualisointi (tietojen ikkunointi) käyttämällä 500 rivin ikkunaa yhdellä kertaa
     - Sarja: Ylimmät 60
-    - Skalaaritilassa (tässä voidaan käyttää dynaamisia rajoituksia)
+    - Skalaaritilassa (voidaan käyttää dynaamisia rajoituksia)
         - Maksimipisteet: 10 000
         - Luokat: 500 arvon malli
         - Sarja: Ylimmät 20 arvoa
 
-### <a name="shape-map"></a>Muotokartta
-Täytetyssä kartassa voidaan käyttää tilastotiedot tai dynaamisia rajoja. 
-- Maksimipisteet: 10 000
+### <a name="shape-map-preview"></a>Muotokartta (esikatselu)
+Muotokartassa voidaan käyttää tilastotiedot tai dynaamisia rajoja. 
+- Maksimipisteet: 1 500
 - Luokat: Ylimmät 500
 - Sarja (kun sekä X että Y ovat käytettävissä): Ylimmät 20
 
 ### <a name="table"></a>Taulukko
 - Arvot: Virtualisointi (tietojen ikkunointi) käyttämällä 500 rivin ikkunaa yhdellä kertaa
 
-### <a name="tree-map-this-could-use-statistics-or-dynamic-limits"></a>Puukartta (tässä voidaan käyttää tilastotietoja tai dynaamisia rajoituksia)
+### <a name="tree-map-could-use-statistics-or-dynamic-limits"></a>Puukartta (voidaan käyttää tilastotietoja tai dynaamisia rajoituksia)
 - Maksimipisteet: 3 500
 - Ryhmä: Ylimmät 500
 - Tiedot: Ylimmät 20

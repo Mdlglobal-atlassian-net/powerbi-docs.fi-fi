@@ -2,19 +2,18 @@
 title: Q&A:n virtuaalinen analyytikko iOS-sovelluksissa - Power BI
 description: Esitä mallitietoja koskevia kysymyksiä omin sanoin käyttämällä Q&A:n virtuaalista analyytikkoa iOS-laitteen Power BI -mobiilisovelluksessa.
 author: mshenhav
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 05/05/2018
 ms.author: mshenhav
-ms.openlocfilehash: 0517299240137bf63ace8aca6a1da577a4443d2d
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: 34fe1af53a62c5198cc30625d840321c414be8f7
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "60977228"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73879372"
 ---
 # <a name="qa-virtual-analyst-in-ios-apps---power-bi"></a>Q&A:n virtuaalinen analyytikko iOS-sovelluksissa - Power BI
 
@@ -35,7 +34,7 @@ Jos et ole rekisteröitynyt Power BI:hin, [rekisteröidy ilmaiseen kokeiluversio
 ## <a name="prerequisites"></a>Edellytykset
 
 ### <a name="install-the-power-bi-for-ios-app"></a>Power BI:n iOS-sovelluksen asentaminen
-[Lataa iOS-sovellus](http://go.microsoft.com/fwlink/?LinkId=522062 "Lataa iPhone-sovellus") iPadille, iPhonelle tai iPod Touchille Applen App Storesta.
+[Lataa iOS-sovellus](https://go.microsoft.com/fwlink/?LinkId=522062 "Lataa iPhone-sovellus") Apple App Storesta iPhoneen, iPadiin tai iPod Touchiin.
 
 Seuraavat versiot tukevat Power BI:n iOS-sovellusta:
 - iPad, jossa on iOS 10 tai uudempi.
@@ -49,7 +48,7 @@ Ensimmäinen vaihe on jälleenmyyjän analyysin ja mahdollisuuden analyysin näy
 
 1. Avaa Power BI -palvelu (app.powerbi.com) ja kirjaudu sisään.
 
-2. Valitse vasemmassa siirtymisruudussa **Työtilat**, **Oma työtila**.
+2. Valitse siirtymisruudussa **Työtilat**, **Oma työtila**.
 
 3. Valitse vasemmassa alakulmassa **Nouda tiedot**.
    

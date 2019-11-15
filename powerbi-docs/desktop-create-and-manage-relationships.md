@@ -2,7 +2,6 @@
 title: Suhteiden luominen ja hallinta Power BI Desktopissa
 description: Suhteiden luominen ja hallinta Power BI Desktopissa
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 04/19/2019
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: f2102ad654a056832f7890dc506acc99eb5ef26f
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: f759992c42cc589d21ed51d5d63775bf54518c3f
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61312492"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73869122"
 ---
 # <a name="create-and-manage-relationships-in-power-bi-desktop"></a>Suhteiden luominen ja hallinta Power BI Desktopissa
 Useita taulukoita tuodessa aiotaan todennäköisesti luoda analyyseja käyttäen tietoja kaikista tuotavista taulukoista. Näiden taulukoiden välisiä suhteita tarvitaan tuloksien tarkkaan laskemiseen ja oikeiden tietojen esittämiseen raporteissa. Power BI Desktop tekee näiden suhteiden luomisesta helppoa. Itse asiassa useimmissa tapauksissa sinun ei tarvitse tehdä mitään, automaattinen tunnistus tekee kaiken puolestasi. Joissakin tapauksissa joudut ehkä luomaan suhteita itse tai muokkaamaan joitakin suhteita. Joka tapauksessa on tärkeää ymmärtää Power BI Desktopissa olevia suhteita ja miten niitä voi luoda ja muokata.
@@ -64,9 +63,9 @@ Kun luot tai muokkaat suhteen, voit määrittää lisäasetuksia. Oletusarvon mu
 Katso lisätietoja kardinaliteetin vaihtamisesta tämän artikkelin Tietoja lisäasetuksista -osasta.
 
 ## <a name="cross-filter-direction"></a>Ristisuodatussuunta
-**Molemmat** – Yleisin, oletussuunta tarkoittaa, että suodatuksessa molempia taulukoita käsitellään yhtenä taulukkona. **Molemmat** toimii silloin, kun käsitellään yhtä taulukkoa, jossa on useita ympäröiviä hakutaulukoita. Esimerkkinä myyntitulostaulukko, jossa on osaston hakutaulukko. Tätä kutsutaan usein tähtirakenteeksi (päätaulukko, jolla on useita hakutaulukoita.) Jos kuitenkin haluat käsitellä kahta tai useampaa taulukkoa, joilla on myös hakutaulukoita (joista osa on yhteisiä), niin Molemmat-asetusta ei kannata käyttää. Jos käytetään edellistä esimerkkiä, niin tässä tapauksessa olisi myös budjettitaulukko, jossa on jokaisen osaston tavoitebudjetti. Osastotaulukko liittyy siis sekä myynti- että budjettitaulukkoon. Vältä Molemmat-asetusta tällaisessa tilanteessa.
+**Molemmat** – suodatuksessa molempia taulukoita käsitellään yhtenä taulukkona. **Molemmat** toimii silloin, kun käsitellään yhtä taulukkoa, jossa on useita ympäröiviä hakutaulukoita. Esimerkkinä myyntitulostaulukko, jossa on osaston hakutaulukko. Tätä kutsutaan usein tähtirakenteeksi (päätaulukko, jolla on useita hakutaulukoita.) Jos kuitenkin haluat käsitellä kahta tai useampaa taulukkoa, joilla on myös hakutaulukoita (joista osa on yhteisiä), niin Molemmat-asetusta ei kannata käyttää. Jos käytetään edellistä esimerkkiä, niin tässä tapauksessa olisi myös budjettitaulukko, jossa on jokaisen osaston tavoitebudjetti. Osastotaulukko liittyy siis sekä myynti- että budjettitaulukkoon. Vältä Molemmat-asetusta tällaisessa tilanteessa.
 
-**Yksittäinen** – Yhdistettyjen taulukoiden suodatusvalinnat toimivat siinä taulukossa, johon arvot kerätään. Jos tuot tietomallin Power Pivot Excel 2013:sta aiemmasta versiosta, kaikki suhteet ovat yhteen suuntaan toimivia. 
+**Yksittäinen** – Yleisin, oletussuunta, mikä tarkoittaa, että yhdistettyjen taulukoiden suodatusvalinnat toimivat siinä taulukossa, johon arvot kerätään. Jos tuot tietomallin Power Pivot Excel 2013:sta aiemmasta versiosta, kaikki suhteet ovat yhteen suuntaan toimivia. 
 
 Katso lisätietoja ristisuodatussuunnasta tämän artikkelin Tietoja lisäasetuksista -osasta.
 
