@@ -45,8 +45,10 @@
               href: office-store.md
             - name: 'R:ää hyödyntävien mukautettujen visualisointien käyttö Power BI:ssä'
               href: ../desktop-r-powered-custom-visuals.md
-            - name: Visualisointitoimet
+            - name: Visualisointien keskinäisen vuorovaikutuksen salliminen
               href: visuals/visuals-interactions.md
+            - name: Valintojen lisääminen
+              href: visuals/selection-api.md
             - name: Visualisointien työkaluvihjeiden lisääminen
               href: visuals/add-tooltips.md
             - name: Analytiikkaruudun lisääminen
@@ -57,6 +59,8 @@
               href: visuals/fetch-more-data.md
             - name: Kirjanmerkkituen lisääminen
               href: visuals/bookmarks-support.md
+            - name: Pikavalikon tuen lisäminen
+              href: visuals/context-menu.md
             - name: Tietojen korostaminen visualisoinneissa
               href: visuals/highlight.md
             - name: Suuren kontrastin tilan tuen lisääminen
@@ -65,6 +69,8 @@
               href: visuals/enable-sync-slicers.md
             - name: Power BI -visualisointien vianmääritys
               href: ../power-bi-custom-visuals-troubleshoot.md
+            - name: Uuteen powerbi-visuals-tools-version siirtyminen
+              href: visuals/migrate-to-new-tools.md
         - name: Viittaus
           items:
             - name: Aloitussivu
@@ -77,6 +83,8 @@
               href: visuals/event-service.md
             - name: Lajittelu
               href: visuals/sort-options.md
+            - name: Vuorovaikutteisuuden apuohjelmat
+              href: visuals/utils-interactivity-selections.md
         - name: Resurssit
           items:
             - name: Kehityskeskus
