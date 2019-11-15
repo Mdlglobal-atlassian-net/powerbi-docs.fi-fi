@@ -12,7 +12,7 @@
         - name: Yleiskatsaus
           items:
             - name: 'Visualisoinnit Power BI:ssä'
-              href: ../power-bi-custom-visuals.md
+              href: power-bi-custom-visuals.md
         - name: Opetusohjelmat
           items:
             - name: Power BI -visualisoinnin kehittäminen
@@ -24,11 +24,11 @@
         - name: Käsitteet
           items:
             - name: 'Organisaatioiden visualisoinnit Power BI:ssä'
-              href: ../power-bi-custom-visuals-organization.md
+              href: power-bi-custom-visuals-organization.md
             - name: Power BI -visualisointien ohjeet
               href: guidelines-powerbi-visuals.md
             - name: Visualisointien UKK
-              href: ../power-bi-custom-visuals-faq.md
+              href: power-bi-custom-visuals-faq.md
             - name: Ominaisuuksien käyttö
               href: visuals/capabilities.md
             - name: Tietonäkymän yhdistämismääritykset
@@ -40,12 +40,12 @@
         - name: Ohjeet
           items:
             - name: Visualisoinnin sertifioinnin hankkiminen
-              href: ../power-bi-custom-visuals-certified.md
+              href: power-bi-custom-visuals-certified.md
             - name: Omien visualisointien julkaiseminen AppSourcessa
               href: office-store.md
             - name: 'R:ää hyödyntävien mukautettujen visualisointien käyttö Power BI:ssä'
-              href: ../desktop-r-powered-custom-visuals.md
-            - name: Visualisointien keskinäisen vuorovaikutuksen salliminen
+              href: ../desktop-r-powered-custom-visuals.md?toc=/powerbi-docs/developer/toc.json&bc=/powerbi-docs/developer/breadcrumb/toc.json
+            - name: Visualisointitoimet
               href: visuals/visuals-interactions.md
             - name: Valintojen lisääminen
               href: visuals/selection-api.md
@@ -68,9 +68,7 @@
             - name: Osittajien synkronoinnin käyttöönotto
               href: visuals/enable-sync-slicers.md
             - name: Power BI -visualisointien vianmääritys
-              href: ../power-bi-custom-visuals-troubleshoot.md
-            - name: Uuteen powerbi-visuals-tools-version siirtyminen
-              href: visuals/migrate-to-new-tools.md
+              href: power-bi-custom-visuals-troubleshoot.md
         - name: Viittaus
           items:
             - name: Aloitussivu
