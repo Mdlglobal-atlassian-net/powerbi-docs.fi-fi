@@ -3,18 +3,17 @@ title: Tietojen työntäminen tietojoukkoon
 description: Tietojen työntäminen Power BI -tietojoukkoon
 author: rkarlin
 ms.author: rkarlin
-manager: kfile
 ms.reviewer: madia
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 05/22/2019
-ms.openlocfilehash: 9eb81610044f795b6f9dc5c58aeefad13de06542
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 5db16bfdc1013668be5103f392d6f298c8faf925
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66222149"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73875458"
 ---
 # <a name="push-data-into-a-power-bi-dataset"></a>Tietojen työntäminen Power BI -tietojoukkoon
 
@@ -43,7 +42,7 @@ Seuraavassa luetellaan toiminnot, jotka työntävät tietoja tietojoukkoon:
 * [Julkaise rivit](https://docs.microsoft.com/rest/api/power-bi/pushdatasets/datasets_postrows)
 * [Hae ryhmät](https://docs.microsoft.com/rest/api/power-bi/groups/getgroups)
 
-Voit luoda tietojoukon Power BI:ssä välittämällä JavaScript Object Notation (JSON) -merkkijonon Power BI -palveluun. Lisätietoja JSON:stä on artikkelissa [Esittelyssä JSON](http://json.org/).
+Voit luoda tietojoukon Power BI:ssä välittämällä JavaScript Object Notation (JSON) -merkkijonon Power BI -palveluun. Lisätietoja JSON:stä on artikkelissa [Esittelyssä JSON](https://json.org/).
 
 Tietojoukon JSON-merkkijonossa noudatetaan seuraavaa muotoilua:
 
@@ -112,13 +111,13 @@ Power BI:n taulukon rakenteessa voi käyttää seuraavia tietotyyppejä.
 
 ## <a name="learn-more-about-pushing-data-into-power-bi"></a>Lisätietoja tietojen työntämisestä Power BI:hin
 
-Aloita tietojen työntäminen tietojoukkoon katsomalla vasemman reunan siirtymisruudusta kohta [Vaihe 1: Sovelluksen Azure AD -rekisteröinti](walkthrough-push-data-register-app-with-azure-ad.md).
+Aloita tietojen työntäminen tietojoukkoon katsomalla vasemman reunan siirtymisruudusta kohta [Vaihe 1: Rekisteröi sovelluksen Azure AD:n kanssa](walkthrough-push-data-register-app-with-azure-ad.md) siirtymisruudussa.
 
 [Seuraava vaihe >](walkthrough-push-data-register-app-with-azure-ad.md)
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
 [Rekisteröidy Power BI -palveluun](create-an-azure-active-directory-tenant.md)  
-[Esittelyssä JSON](http://json.org/)  
+[Esittelyssä JSON](https://json.org/)  
 [Power BI REST -ohjelmointirajapinnan yleiskatsaus](overview-of-power-bi-rest-api.md)  
-Onko sinulla muuta kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
+Onko sinulla muuta kysyttävää? [Kokeile Power BI -yhteisöä](https://community.powerbi.com/)

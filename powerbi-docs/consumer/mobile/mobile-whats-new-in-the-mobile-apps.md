@@ -1,20 +1,19 @@
 ---
 title: Power BI -mobiilisovellusten uudet ominaisuudet
 description: Power BI -mobiilisovellusten uudet ominaisuudet
-author: mshenhav
-manager: kfile
+author: paulinbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 04/08/2019
-ms.author: mshenhav
-ms.openlocfilehash: fe8f21bbbd0886b8ff4046f744884e53f8822912
-ms.sourcegitcommit: e2c5d4561455c3a4806ace85defbc72e4d7573b4
+ms.author: painbar
+ms.openlocfilehash: 1741646057137fbfb28a2c0ec42a7fd6428dc86e
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "71327749"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73876754"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Power BI -mobiilisovellusten uudet ominaisuudet
 Lisätietoja aiheeseen liittyvistä uusista ominaisuuksista:
@@ -23,18 +22,36 @@ Lisätietoja aiheeseen liittyvistä uusista ominaisuuksista:
 * [Power BI Desktopin uudet ominaisuudet](../../desktop-latest-update.md)  
 * [Power BI -palvelun uudet ominaisuudet](../../service-whats-new.md)  
 
+## <a name="october-2019"></a>Lokakuu 2019
+
+### <a name="cross-report-drillthrough"></a>Raporttien välillä porautuminen
+
+Tässä kuussa on lisätty tuki raporttien välillä porautumiseen. Voit nyt napauttaa arvopistettä porautuaksesi muihin raportteihin ja raporttisivuihin. Kun siirryt kohdesivulle, kyseisen sivun sisältö suodatetaan porautumisasetusten mukaan.
+
+> [!NOTE]
+> Raporttien välillä porautuminen on käytettävissä vain, jos se on otettu käyttöön raportin luonnin aikana. [Lue lisää raporttien välillä porautumisesta](https://docs.microsoft.com/power-bi/desktop-cross-report-drill-through).
+
+
+### <a name="data-sensitivity-labels"></a>Tietojen luottamuksellisuustunnisteet
+
+Näet nyt luottamuksellisuustunnisteet, jotka sisällön omistajat ovat määrittäneet raporteissa, koontinäytöissä, tietojoukoissa ja tietovuon tiedoissa, jotta näiden tietojen herkkyys voidaan luokitella. Luottamuksellisuustunnisteet määrittävät, miten sisältö voidaan jakaa muiden käyttäjien kanssa. [Luottamuksellisuustunnisteiden käyttö Power BI:ssa](https://docs.microsoft.com/power-bi/admin/service-security-data-protection-overview).
+
+### <a name="support-for-custom-app-navigation-windows"></a>Mukautetun sovelluksen siirtymisen tuki (Windows)
+
+Mukautetun sovelluksen siirtymisen tuki on nyt lisätty Windows-laitteille iOS:n ja Androidin lisäksi (lisätietoja antaa [syyskuun Uudet ominaisuudet ](#september-2019)).
+
 ## <a name="september-2019"></a>Syyskuu 2019
 
 ### <a name="support-for-custom-app-navigation-ios-and-android"></a>Mukautetun sovelluksen siirtymisen tuki (iOS ja Android)
 
 Olemme lisänneet tuen mukautetun sovelluksen siirtymiselle. Kun nyt avaat sovelluksen Power BI -mobiilisovelluksessa, sovelluksen tekijän rakentama mukautettu siirtymiskokemus on käytettävissä. Sovelluksen siirtyminen voidaan järjestää sisällön mukaan, ja se voi sisältää uusia kohteita, kuten linkkejä ja tiivistettäviä osia.
-Lue lisää [mukautetusta siirtymisestä](https://powerbi.microsoft.com/en-us/blog/designing-custom-navigation-for-power-bi-apps-is-now-available/).
+Lue lisää [mukautetusta siirtymisestä](https://powerbi.microsoft.com/blog/designing-custom-navigation-for-power-bi-apps-is-now-available/).
 
 ## <a name="august-2019"></a>Elokuu 2019
 
 ### <a name="introducting-power-bi-mobile-new-look-preview-ios-and-android"></a>Power BI -mobiilisovelluksen uusi ulkoasu (esikatselu) (iOS ja Android)
 
-Olemme päivittäneet sovelluksen ulkoasua, kehittäneet uusia ominaisuuksia, lisänneet usein käytettyä sisältöä tarjoavan aloitussivun sekä uusia siirtymispalkkeja, joiden avulla voit helposti siirtyä paikasta toiseen sovelluksen kautta. Uudet ja päivitetyt ominaisuudet mahdollistavat tarvitsemasi sisällön nopean löytämisen silloin kun niitä eniten tarvitset.
+Olemme päivittäneet sovelluksen ulkoasua, kehittäneet uusia ominaisuuksia, lisänneet usein käytettyä sisältöä tarjoavan aloitussivun sekä uusia siirtymispalkkeja, joiden aruutujalposti siirtyä paikasta toiseen sovelluksen kautta. Uudet ja päivitetyt ominaisuudet mahdollistavat tarvitsemasi sisällön nopean löytämisen silloin kun niitä eniten tarvitset.
 Koska uusi ulkoasu on esikatselussa, sinun on otettava se erikseen käyttöön.
 Lue lisää [Power BI -mobiilisovelluksen uudesta ulkoasusta](https://powerbi.microsoft.com/blog/introducing-power-bi-mobile-apps-new-look-preview/).
 
@@ -42,7 +59,7 @@ Lue lisää [Power BI -mobiilisovelluksen uudesta ulkoasusta](https://powerbi.mi
 
 ### <a name="secured-access-with-azure-active-directory-ad-application-proxy-ios-and-android"></a>Azure Active Directory (AD) -sovellusvälityspalvelimen suojattu käyttö (iOS ja Android)
 
-Olemme yhteistyössä Azure Active Directory -tiimin kanssa integroineet Power BI -mobiilisovelluksia Azure Active Directory (AAD) -sovellusvälityspalvelimeen. Tämän ansiosta voit muodostaa Power BI -mobiilisovelluksesta yhteyden yrityksen sisältä isännöitävään raporttipalvelimeen ilman monimutkaisia paikallisia määrityksiä. Lue lisää artikkelista [Power BI -mobiilisovellusten ja Azure AD -sovellusvälityspalvelimen integrointi](https://powerbi.microsoft.com/blog/access-on-prem-report-server-from-your-power-bi-mobile-app-with-azure-active-directory-application-proxy/). Lue, [miten Azure AD -sovellusvälityspalvelin ja Power BI määritetään](https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/application-proxy-integrate-with-power-bi).
+Olemme yhteistyössä Azure Active Directory -tiimin kanssa integroineet Power BI -mobiilisovelluksia Azure Active Directory (AAD) -sovellusvälityspalvelimeen. Tämän ansiosta voit muodostaa Power BI -mobiilisovelluksesta yhteyden yrityksen sisältä isännöitävään raporttipalvelimeen ilman monimutkaisia paikallisia määrityksiä. Lue lisää artikkelista [Power BI -mobiilisovellusten ja Azure AD -sovellusvälityspalvelimen integrointi](https://powerbi.microsoft.com/blog/access-on-prem-report-server-from-your-power-bi-mobile-app-with-azure-active-directory-application-proxy/). Lue, [miten Azure AD -sovellusvälityspalvelin ja Power BI määritetään](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-integrate-with-power-bi).
 
 ## <a name="july-2019"></a>Heinäkuu 2019
 
@@ -423,7 +440,7 @@ Nyt voit vierittää raportin palkki- ja pylväskaavioita koskettamalla itse kaa
 #### <a name="ios-devices"></a>iOS-laitteet
 **Kysymysten esittäminen tiedoista Q&A:n esikatselulla** 
 
-Q&A:n avulla voit esittää kysymyksiä tiedoistasi omin sanoin ja Power BI antaa vastaukset. Q&A on jo Power BI -palvelussa osoitteessa http://powerbi.com. Nyt se on myös [käytettävissä iPhone- tai iPad-mobiilisovelluksessa](mobile-apps-ios-qna.md).
+Q&A:n avulla voit esittää kysymyksiä tiedoistasi omin sanoin ja Power BI antaa vastaukset. Q&A on jo Power BI -palvelussa osoitteessa https://powerbi.com. Nyt se on myös [käytettävissä iPhone- tai iPad-mobiilisovelluksessa](mobile-apps-ios-qna.md).
 
 **Yhteyden muodostaminen useaan SSRS-palvelimeen** 
 
@@ -695,24 +712,24 @@ Power BI -tiimi päätti vuoden 2015 vahvasti tuoden useita merkittäviä lisäy
 #### <a name="sql-server-2016-reporting-services-mobile-reports-in-ios"></a>SQL Server 2016 Reporting Services -mobiiliraportit iOS:ssä
 Voit nyt tarkastella SQL Server -mobiiliraportteja iOS-laitteesi (iPhone tai iPad) Power BI -sovelluksessa. Lue lisää:
 
-* blogimerkintä [SQL 16 SSRS iOS:n Power BI -sovelluksessa](http://blogs.msdn.com/b/powerbi/archive/2015/12/30/sql-16-ssrs-on-power-bi-app-for-ios.aspx)
+* blogimerkintä [SQL 16 SSRS iOS:n Power BI -sovelluksessa](https://blogs.msdn.com/b/powerbi/archive/2015/12/30/sql-16-ssrs-on-power-bi-app-for-ios.aspx)
 * Katso [SQL Server -mobiiliraporttien ja -suorituskykyilmaisimien iPhone- ja iPad-sovellusten](mobile-app-ssrs-kpis-mobile-on-premises-reports.md) dokumentaatio
 
 #### <a name="power-bi-app-for-windows-10-phones"></a>Power BI -sovellus Windows 10 -puhelimille
 Windows 10 -puhelinten uusi Power BI -sovellus on optimoitu kosketusnäyttöjä ja mobiilituottavuutta varten. Tutustu koontinäyttöihin ja raportteihin, kutsu työtovereita tarkastelemaan tietoja ja jaa merkityksellistä tietoa sähköpostitse tiimin sitouttamiseksi. Voit lisäksi [kiinnittää Power BI -koontinäyttöjä Windows-puhelimesi aloitusnäyttöön](mobile-pin-dashboard-start-screen-windows-10-phone-app.md).
 
-* Lue [Windows 10 -puhelinten Power BI -sovellusta käsittelevä blogimerkintä](http://blogs.msdn.com/b/powerbi/archive/2015/12/30/announcing-the-power-bi-app-for-windows-10-mobile.aspx).
+* Lue [Windows 10 -puhelinten Power BI -sovellusta käsittelevä blogimerkintä](https://blogs.msdn.com/b/powerbi/archive/2015/12/30/announcing-the-power-bi-app-for-windows-10-mobile.aspx).
 * [Aloita Windows 10 -puhelinten Power BI -sovelluksen käyttö](mobile-windows-10-phone-app-get-started.md).
 
 #### <a name="other-additions"></a>Muut lisäykset
-Lue lisätietoja [joulukuun Power BI -mobiilisovellusten blogimerkinnästä](http://blogs.msdn.com/b/powerbi/archive/2015/12/30/power-bi-mobile-apps-update-_2d00_-december-2015.aspx).
+Lue lisätietoja [joulukuun Power BI -mobiilisovellusten blogimerkinnästä](https://blogs.msdn.com/b/powerbi/archive/2015/12/30/power-bi-mobile-apps-update-_2d00_-december-2015.aspx).
 
 * Vastaanota ilmoituksia, kun työtoverisi jakaa koontinäytön kanssasi. (iOS)
 * Tarkastele kiinnitettyjä raporttisivuja kokonaisuudessaan raporttinäkymissä. (iOS ja Android)
-* [Skannaa QR-koodi](http://blogs.msdn.com/b/powerbi/archive/2015/12/08/bridge-the-gap-between-your-physical-world-and-your-bi-using-qr-codes.aspx) ja siirry suoraan asianmukaiseen ruutuun Android-puhelimessa.
+* [Skannaa QR-koodi](https://blogs.msdn.com/b/powerbi/archive/2015/12/08/bridge-the-gap-between-your-physical-world-and-your-bi-using-qr-codes.aspx) ja siirry suoraan asianmukaiseen ruutuun Android-puhelimessa.
 
 ### <a name="november-2015"></a>Marraskuu 2015
-Lue [marraskuun 2015 Power BI -mobiilisovellusten blogimerkintä](http://blogs.msdn.com/b/powerbi/archive/2015/11/24/power-bi-mobile-apps-update-_2d00_-november-2015.aspx).
+Lue [marraskuun 2015 Power BI -mobiilisovellusten blogimerkintä](https://blogs.msdn.com/b/powerbi/archive/2015/11/24/power-bi-mobile-apps-update-_2d00_-november-2015.aspx).
 
 #### <a name="all-power-bi-mobile-apps"></a>Kaikki Power BI -mobiilisovellukset
 * Uusi tervetulokokemus.
@@ -729,7 +746,7 @@ Lue [marraskuun 2015 Power BI -mobiilisovellusten blogimerkintä](http://blogs.m
 * [Linkitä ruudusta suoraan tiettyyn URL-osoitteeseen](../../service-dashboard-edit-tile.md#hyperlink).
 
 ### <a name="october-2015"></a>Lokakuu 2015
-Lue [lokakuun puolivälin Power BI -mobiilisovellusten blogimerkintä](http://blogs.msdn.com/b/powerbi/archive/2015/10/21/power-bi-mobile-mid-october-updates-are-here.aspx).
+Lue [lokakuun puolivälin Power BI -mobiilisovellusten blogimerkintä](https://blogs.msdn.com/b/powerbi/archive/2015/10/21/power-bi-mobile-mid-october-updates-are-here.aspx).
 
 #### <a name="all-power-bi-mobile-apps"></a>Kaikki Power BI -mobiilisovellukset
 * Viivakaavioista, joissa on prosenttipohjainen y-akseli, lasketaan nyt visuaalinen alue todellisten tietojen perusteella. Kaavio alkaa nyt kaavion alimmasta arvopisteestä oletusarvon sijaan.
@@ -741,12 +758,12 @@ Lue [lokakuun puolivälin Power BI -mobiilisovellusten blogimerkintä](http://bl
 * Pysy ajan tasalla ryhmien uusimmilla koontinäytöillä – saat ilmoituksia iPhoneesi aina, kun tiimin jäsen lisää koontinäytön johonkin ryhmääsi.
   
     ![](media/mobile-whats-new-in-the-mobile-apps/pbi_iph_grpdashalertcrop.png)
-* Voit nyt tarkastella koontinäyttöjä vaakasuunnassa kääntämällä puhelimen vaaka-asentoon. Lue lisää [vaakatilasta iPhone-sovelluksessa](http://blogs.msdn.com/b/powerbi/archive/2015/11/02/enjoy-the-landscape-with-the-power-bi-iphone-app.aspx).
+* Voit nyt tarkastella koontinäyttöjä vaakasuunnassa kääntämällä puhelimen vaaka-asentoon. Lue lisää [vaakatilasta iPhone-sovelluksessa](https://blogs.msdn.com/b/powerbi/archive/2015/11/02/enjoy-the-landscape-with-the-power-bi-iphone-app.aspx).
   
     ![](media/mobile-whats-new-in-the-mobile-apps/pbi_iph_landscape.png)
 
 ### <a name="september-2015"></a>Syyskuu 2015
-Parannuksia Power BI -mobiilisovelluksiin: Android, iOS (iPhone ja iPad) ja Windows. Lue [syyskuun puolivälin Power BI -mobiilisovellusten blogimerkintä](http://blogs.msdn.com/b/powerbi/archive/2015/09/23/power-bi-mobile-mid-september-updates-are-here.aspx).
+Parannuksia Power BI -mobiilisovelluksiin: Android, iOS (iPhone ja iPad) ja Windows. Lue [syyskuun puolivälin Power BI -mobiilisovellusten blogimerkintä](https://blogs.msdn.com/b/powerbi/archive/2015/09/23/power-bi-mobile-mid-september-updates-are-here.aspx).
 
 #### <a name="android"></a>Android-
 * Ryhmätyötiloja tuki: tee yhteistyötä työtovereiden kanssa ryhmätyötiloissa. 

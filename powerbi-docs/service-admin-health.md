@@ -2,7 +2,6 @@
 title: Power BI -palvelun kunnon seuraaminen Office 365:ssä
 description: Lue, miten voit tarkastella palvelun ajantasaista ja aikaisempaa kuntoa Microsoft 365 -hallintakeskuksesta.
 author: mgblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/09/2019
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 579950320c3193e9cc1921a06d5b121ff0b58ae0
-ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
+ms.openlocfilehash: 0e944dfa34bec1e1c1816cf80d7dc2df7252b65a
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71075347"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73857697"
 ---
 # <a name="track-power-bi-service-health-in-office-365"></a>Power BI -palvelun kunnon seuraaminen Office 365:ssä
 
@@ -29,7 +28,7 @@ Saat lisätietoja rooleista [Power BI:hin liittyvät järjestelmänvalvojaroolit
 
 1. Kirjaudu [Microsoft 365 -hallintakeskukseen](https://portal.office.com/adminportal).
 
-1. Valitse vasemmasta siirtymispalkista **Näytä kaikki** > **Kunto** > **Palvelun kunto**. Näkyviin tulee Palvelun kunto -sivu:
+1. Valitse siirtymisruudusta **Näytä kaikki** > **Kunto** > **Palvelun kunto**. Näkyviin tulee Palvelun kunto -sivu:
 
     ![Näyttökuva Microsoft 365 -hallintakeskuksesta, jossa Kunto- ja Palvelun kunto -vaihtoehdot ovat valittuina.](media/service-admin-health/service-health-tile.png)
 

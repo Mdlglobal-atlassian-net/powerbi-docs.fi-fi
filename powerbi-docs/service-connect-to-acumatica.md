@@ -2,7 +2,6 @@
 title: Yhteyden muodostaminen Acumaticaan Power BI:n avulla
 description: Acumatica Power BI:lle
 author: SarinaJoan
-manager: kfile
 ms.reviewer: maggiesMSFT
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 08/29/2019
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: d2ee7a338f34e4c29fdbefae6518bede9e94badb
-ms.sourcegitcommit: b53a6f5575f5f8bc443ecdca9c72525ce123518f
+ms.openlocfilehash: 09e55aef3a1167143694c8e26a342cb1b8f0875c
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70186149"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73873210"
 ---
 # <a name="connect-to-acumatica-with-power-bi"></a>Yhteyden muodostaminen Acumaticaan Power BI:n avulla
 Power BI Acumatica -sisältöpaketin avulla saat nopeasti merkityksellisiä tietoja mahdollisuustiedoistasi. Power BI noutaa tiedot, esimerkiksi mahdollisuudet, tilit ja asiakkaat, ja laatii sitten oletuskoontinäytön ja siihen liittyvät raportit kyseisten tietojen perusteella.
@@ -28,7 +27,7 @@ Muodosta yhteys [Acumatica-sisältöpakettiin](https://app.powerbi.com/getdata/s
 >Tämä sisältöpaketti edellyttää Acumatica v5.2:ta tai uudempaa.
 
 ## <a name="how-to-connect"></a>Yhteyden muodostaminen
-1. Valitse vasemman siirtymisruudun alareunassa **Nouda tiedot**.
+1. Valitse siirtymisruudun alareunassa **Nouda tiedot**.
    
    ![](media/service-connect-to-acumatica/getdata3.png)
 2. Valitse **Palvelut**-ruudussa **Nouda**.
@@ -47,7 +46,7 @@ Muodosta yhteys [Acumatica-sisältöpakettiin](https://app.powerbi.com/getdata/s
 5. Valitse todennusmenetelmäksi **Perus**. Anna Acumatica-tilisi käyttäjänimi ja salasana ja valitse sitten **Kirjaudu sisään**.
    
     ![](media/service-connect-to-acumatica/creds2.png)
-6. Kun Power BI on tuonut tiedot, näet vasemmassa siirtymisruudussa uuden koontinäytön, raportin ja tietojoukon. Uudet kohteet merkitään keltaisella tähdellä \*, joka katoaa, kun kohteet valitaan. Esiin tulee seuraavankaltainen koontinäyttö:
+6. Kun Power BI on tuonut tiedot, näet siirtymisruudussa uuden koontinäytön, raportin ja tietojoukon. Uudet kohteet merkitään keltaisella tähdellä \*, joka katoaa, kun kohteet valitaan. Esiin tulee seuraavankaltainen koontinäyttö:
    
     ![](media/service-connect-to-acumatica/dashboard.png)
 

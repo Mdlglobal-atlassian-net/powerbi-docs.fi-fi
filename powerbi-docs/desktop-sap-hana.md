@@ -2,7 +2,6 @@
 title: SAP HANA -käyttö Power BI Desktopissa
 description: SAP HANA -käyttö Power BI Desktopissa
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.custom: seodec18
 ms.service: powerbi
@@ -11,15 +10,15 @@ ms.topic: conceptual
 ms.date: 08/21/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 1932848cb2f8ad7d75e841870265cc22308467c2
-ms.sourcegitcommit: a00fe5fb545c3df13b7cd13a701fd6a2b2521a17
+ms.openlocfilehash: bf258597f6369541fb9a221c8d423e8a9078a3a4
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/31/2019
-ms.locfileid: "70200852"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73879759"
 ---
 # <a name="use-sap-hana-in-power-bi-desktop"></a>SAP HANA -käyttö Power BI Desktopissa
-Voit nyt käyttää **SAP HANA** -tietokantoja Power BI Desktopilla. Jotta voit käyttää **SAP HANA** -tietokantoja, täytyy SAP HANA ODBC -ohjain olla asennettuna paikallisessa asiakastietokoneessa, jotta Power BI Desktopin **SAP HANA** -tietoyhteys toimii oikein. Voit ladata SAP HANA ODBC -ohjaimen [SAP-ohjelmiston latauskeskuksesta](https://support.sap.com/swdc). Etsi sieltä Windows-koneille tarkoitettu SAP HANA CLIENT -asiakasohjelmisto. Koska **SAP-ohjelmiston latauskeskus** muuttaa rakennettaan usein, emme voi antaa tarkempia ohjeita kyseisellä sivulla navigoimiseen.
+Voit nyt käyttää **SAP HANA** -tietokantoja Power BI Desktopilla. Jotta voit käyttää **SAP HANA** -tietokantoja, täytyy SAP HANA ODBC -ohjain olla asennettuna paikallisessa asiakastietokoneessa, jotta Power BI Desktopin **SAP HANA** -tietoyhteys toimii oikein. Voit ladata SAP HANA -asiakastyökalut [SAP Development -työkaluista](https://tools.hana.ondemand.com/#hanatools), joka sisältää tarvittavan ODBC-ohjaimen. Vaihtoehtoisesti voit hankkia sen [SAP Software Download Centeristä](https://support.sap.com/swdc). Etsi sieltä Windows-koneille tarkoitettu SAP HANA CLIENT -asiakasohjelmisto. Koska **SAP-ohjelmiston latauskeskus** muuttaa rakennettaan usein, emme voi antaa tarkempia ohjeita kyseisellä sivulla navigoimiseen.
 
 Muodostaaksesi yhteyden **SAP HANA** -tietokantaan, valitse **Nouda tiedot > Tietokanta > SAP HANA -tietokanta** seuraavassa kuvassa esitetyllä tavalla:
 
@@ -39,7 +38,7 @@ Tässä julkaisussa hyödynnetään monia **SAP HANA** -tietokannan ominaisuuksi
 * Sisältää HANA-mallien optimoidun selaamisen.
 * Power BI tukee **SAP HANA** -muuttujia ja syöttöparametreja.
 * HDI-säilöön perustuvat laskentanäkymät
-  * HDI-säilöön perustuvien laskentanäkymien tuki on julkisessa esikatselussa Power BI Desktopin elokuun 2019 versiossa. Jos haluat käyttää HDI-säilöpohjaisia laskentanäkymiä Power BI:ssä, varmista, että Power BI:n kanssa käyttämiesi HANA-tietokantojen käyttäjillä on oikeus käyttää HDI-suorituspalvelusäilöä, joka sisältää käytettävät näkymät. Jotta voit myöntää tämän oikeuden, sinun on luotava rooli, joka sallii oikeuden HDI-säilöön ja määrittää roolin HANA-tietokantakäyttäjälle, jota käytät Power BI:n kanssa (käyttäjällä on myös oltava oikeudet lukea järjestelmätaulukoita \_SYS\_BI-rakenteessa tavalliseen tapaan). Lisätietoja tietokantaroolien luomisesta ja määrittämisestä on virallisissa SAP-ohjeissa. [Tämä SAP-blogikirjoitus](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fblogs.sap.com%2F2018%2F01%2F24%2Fthe-easy-way-to-make-your-hdi-container-accessible-to-a-classic-database-user%2F&data=02%7C01%7Cv-adbold%40microsoft.com%7Cf7e0a405fe334598ba0608d7096ef5b4%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636988244476739316&sdata=PuRu61GPRYp34mLuGbQk6gdbRikdgbxfqo8q1RBQtm0%3D&reserved=0) voi olla hyvä paikka aloittaa.
+  * HDI-säilöön perustuvien laskentanäkymien tuki on julkisessa esikatselussa Power BI Desktopin elokuun 2019 versiossa. Jos haluat käyttää HDI-säilöpohjaisia laskentanäkymiä Power BI:ssä, varmista, että Power BI:n kanssa käyttämiesi HANA-tietokantojen käyttäjillä on oikeus käyttää HDI-suorituspalvelusäilöä, joka sisältää käytettävät näkymät. Jotta voit myöntää tämän oikeuden, sinun on luotava rooli, joka sallii oikeuden HDI-säilöön ja määrittää roolin HANA-tietokantakäyttäjälle, jota käytät Power BI:n kanssa (käyttäjällä on myös oltava oikeudet lukea järjestelmätaulukoita \_SYS\_BI-rakenteessa tavalliseen tapaan). Lisätietoja tietokantaroolien luomisesta ja määrittämisestä on virallisissa SAP-ohjeissa. [Tämä SAP-blogikirjoitus](https://blogs.sap.com/2018/01/24/the-easy-way-to-make-your-hdi-container-accessible-to-a-classic-database-user/) voi olla hyvä paikka aloittaa.
   * Huomaa, että HDI-pohjaisiin laskentanäkymiin liitetyissä HANA-muuttujissa on tällä hetkellä joitakin rajoituksia. Nämä rajoitukset johtuvat HANA-puolen virheistä, ja ne käsitellään tulevissa SAP HANA -versioissa. HANA-muuttujaa ei ensinnäkään voi käyttää HDI-säilöpohjaisen laskentanäkymän jaetussa sarakkeessa. Tämä rajoitus voidaan korjata päivittämällä HANA 2 -versioon 37.02 tai uudempaan tai HANA 2 -versioon 42 tai uudempaan. Toiseksi muuttujien ja parametrien monimerkintäiset oletusarvot eivät näy tällä hetkellä Power BI:n käyttöliittymässä. Tämä johtuu myös SAP HANA -virheestä; SAP ei ole vielä julkistanut korjausta.
 
 ## <a name="limitations-of-sap-hana"></a>SAP HANA -tietokantojen rajoitukset

@@ -2,7 +2,6 @@
 title: Tietojen vieminen Power BI -visualisoinnista
 description: Tietojen vieminen raportin tai koontinäytön visualisoinnista ja tarkasteleminen Excelissä.
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 featuredvideoid: jtlLGRKBvXY
 ms.service: powerbi
@@ -11,16 +10,16 @@ ms.topic: conceptual
 ms.date: 10/30/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: be85769d8ae2340843a4ebdeb5c88ffc2ca86920
-ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
+ms.openlocfilehash: 6ee1b0aa9ff6e3b0668d208775cbea50534b1572
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73431105"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73880885"
 ---
 # <a name="export-data-from-visualizations"></a>Tietojen vieminen visualisoinneista
 
-Jos haluat nähdä tiedot, joita Power BI käyttää visualisoinnin luomiseksi, [voit näyttää nämä tiedot Power BI:ssä](service-reports-show-data.md). Voit myös viedä nämä tiedot Exceliin *.xlsx*- tai *.csv*-tiedostona. Tietojen vienti edellyttää Pro- tai Premium-käyttöoikeutta ja tietojoukon ja raportin muokkausoikeuksia.
+Jos haluat nähdä tiedot, joita Power BI käyttää visualisoinnin luomiseksi, [voit näyttää nämä tiedot Power BI:ssä](service-reports-show-data.md). Voit myös viedä nämä tiedot Exceliin *.xlsx*- tai *.csv*-tiedostona. Tietojen vienti edellyttää Pro- tai Premium-käyttöoikeutta ja tietojoukon ja raportin muokkausoikeuksia. <!--If you have access to the dashboard or report but the data is classified as *highly confidential*, Power BI will not allow you to export the data.-->
 
 Katso videolta, miten tiedot viedään raportin visualisoinnista, tallennetaan *.xlsx*-tiedostoksi ja avataan Excelissä. Kokeile sitten itse noudattamalla videon alapuolella olevia vaiheittaisia ohjeita.
 
@@ -152,7 +151,7 @@ On tärkeää panna merkille, että jos Power BI:n hallintaportaalin asetukset j
 ## <a name="limitations-and-considerations"></a>Rajoitukset ja huomioitavat asiat
 Nämä rajoitukset ja huomioitavat asiat koskevat Power BI Desktopia ja Power BI -palvelua, mukaan lukien Power BI Prota ja Premiumia.
 
-- Jos haluat viedä tiedot visualisoinnista, sinulla on oltava [pohjana olevan tietojoukon luonnin käyttöoikeus](https://docs.microsoft.com/power-bi/service-datasets-build-permissions#build-permissions-for-shared-datasets).
+- Jos haluat viedä tiedot visualisoinnista, sinulla on oltava [pohjana olevan tietojoukon luonnin käyttöoikeus](https://docs.microsoft.com/power-bi/service-datasets-build-permissions).
 
 -  **Power BI Desktopista** ja **Power BI -palvelusta** voidaan viedä **tuontitilaraportista** *.csv*-tiedostoon korkeintaan 30 000 riviä.
 
@@ -160,13 +159,13 @@ Nämä rajoitukset ja huomioitavat asiat koskevat Power BI Desktopia ja Power BI
 
 - Vienti *pohjana olevien tietojen* avulla ei toimi, jos:
 
-  - Tietolähteenä on reaaliaikainen Analysis Services -yhteys.
+  - tietolähde on Azure Analysis Services -liveyhteys tai SQL Server Analysis Services -liveyhteys.
 
-  - Versio on vanhempi kuin 2016.
+  - versio on vanhempi kuin 2016.
 
-  - Mallin taulukoilla ei ole yksilöivää tunnusta.
+  - mallin taulukoilla ei ole yksilöivää tunnusta.
     
-  -  Jos järjestelmänvalvoja tai raportin suunnittelija on poistanut käytöstä tämän ominaisuuden.
+  -  jos järjestelmänvalvoja tai raportin suunnittelija on poistanut käytöstä tämän ominaisuuden.
 
 - *Pohjana olevien tietojen* vienti ei toimi, jos *Näytä kohteet, joilla ei ole tietoja* -asetus on käytössä visualisoinnissa, jota Power BI on viemässä.
 
@@ -196,4 +195,4 @@ Nämä rajoitukset ja huomioitavat asiat koskevat Power BI Desktopia ja Power BI
 
 - Power BI -järjestelmänvalvojat voivat poistaa tietojen viennin käytöstä.
 
-Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)
+Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)

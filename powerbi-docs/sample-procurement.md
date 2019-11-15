@@ -2,7 +2,6 @@
 title: 'Hankinta-analyysimalli: aloita esittely'
 description: 'Hankinta-analyysimalli Power BI:lle: aloita esittely'
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 07/02/2019
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: 9e27d09414167f9625e046204c14a5fb57112cd9
-ms.sourcegitcommit: 8aa90f662afb7492ffcfc11ef142cdb0ccecc9aa
+ms.openlocfilehash: 0998ebec15a4e02262ab54a3b08593a65f37af4e
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68462268"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73873866"
 ---
 # <a name="procurement-analysis-sample-for-power-bi-take-a-tour"></a>Hankinta-analyysimalli Power BI:lle: aloita esittely
 
@@ -58,11 +57,11 @@ Ennen kuin voit käyttää mallia, se on ensin ladattava [sisältöpakettina](#g
   
 ### <a name="get-the-pbix-file-for-this-sample"></a>Hae tämän mallin .pbix-tiedosto
 
-Vaihtoehtoisesti voit ladata hankinta-analyysimallin [.pbix-tiedostona](http://download.microsoft.com/download/D/5/3/D5390069-F723-413B-8D27-5888500516EB/Procurement%20Analysis%20Sample%20PBIX.pbix), joka on suunniteltu käytettäväksi Power BI Desktopilla. 
+Vaihtoehtoisesti voit ladata hankinta-analyysimallin [.pbix-tiedostona](https://download.microsoft.com/download/D/5/3/D5390069-F723-413B-8D27-5888500516EB/Procurement%20Analysis%20Sample%20PBIX.pbix), joka on suunniteltu käytettäväksi Power BI Desktopilla. 
 
 ### <a name="get-the-excel-workbook-for-this-sample"></a>Hae tämän näytteen Excel-työkirja
 
-Jos haluat perehtyä tämän mallin tietolähteeseen, se on saatavana myös [Excel-työkirjana](http://go.microsoft.com/fwlink/?LinkId=529784). Työkirja sisältää Power View -taulukoita, joita voit tarkastella ja muokata. Saat raakatiedot näkyviin ottamalla käyttöön Tietojen analysointi -apuohjelmat ja valitsemalla sitten **Power Pivot > Hallinta**. Voit ottaa Power View- ja Power Pivot -apuohjelmat käyttöön [tutustumalla Excelin sisältämien Excel-mallien](sample-datasets.md#optional-take-a-look-at-the-excel-samples-from-inside-excel-itself) lisätietoihin.
+Jos haluat perehtyä tämän mallin tietolähteeseen, se on saatavana myös [Excel-työkirjana](https://go.microsoft.com/fwlink/?LinkId=529784). Työkirja sisältää Power View -taulukoita, joita voit tarkastella ja muokata. Saat raakatiedot näkyviin ottamalla käyttöön Tietojen analysointi -apuohjelmat ja valitsemalla sitten **Power Pivot > Hallinta**. Voit ottaa Power View- ja Power Pivot -apuohjelmat käyttöön [tutustumalla Excelin sisältämien Excel-mallien](sample-datasets.md#optional-take-a-look-at-the-excel-samples-from-inside-excel-itself) lisätietoihin.
 
 
 ## <a name="spending-trends"></a>Kulutuksen trendit
@@ -99,7 +98,7 @@ Tutustutaan Meksikon kulutusalueisiin.
       ![Porautuminen Meksikon Epäsuorat hyödykkeet ja palvelut -sarakkeeseen](media/sample-procurement/pbi_procsample_drill_mexico.png)
 3. Kun haluat porautua takaisin ylös, valitse kaavion vasemmassa yläkulmassa näkyvä ylöspäin osoittava nuoli.
 4. Valitse porautumisnuoli uudelleen poistaaksesi porautumisen alaspäin käytöstä.  
-5. Valitse **Hankinta-analyysimalli** yläreunan siirtymispalkista ja palaa koontinäyttöihin.
+5. Valitse **Hankinta-analyysimalli** yläreunan siirtymisruudusta ja palaa koontinäyttöihin.
 
 ## <a name="evaluate-different-cities"></a>Arvioi eri kaupunkeja
 Voimme arvioida eri kaupunkeja korostuksen avulla.

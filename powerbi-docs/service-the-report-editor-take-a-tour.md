@@ -2,7 +2,6 @@
 title: Raporttieditoriin tutustuminen
 description: Power BI Desktopissa ja Power BI -palvelussa voit rakentaa loppukäyttäjien näkemät raportit raporttieditorissa. Se on samankaltainen kummassakin ympäristössä.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 featuredvideoid: IkJda4O7oGs
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/14/2019
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: c3a5454032a4138ce3d93c490fa6b3d5a7fecec5
-ms.sourcegitcommit: a77977a43342db4399a4dffb862b96907d16de35
+ms.openlocfilehash: 800079f20d0c16964b0e5dd5fbac5919e94317f7
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/14/2019
-ms.locfileid: "69023727"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73871351"
 ---
 # <a name="tour-the-report-editor-in-power-bi"></a>Power BI -raporttieditoriin tutustuminen
 
@@ -34,14 +33,14 @@ Power BI -palvelun raporttieditori on saatavilla vain muokkausnäkymässä. Jott
 
 Power BI:n raporttieditori on jaettu useisiin pääosiin:  
 
-1. Yläreunan siirtymispalkki
+1. Yläreunan siirtymisruutu
 1. Raportin pohja
 1. Suodattimet-ruutu
 1. Visualisoinnit-paneeli
 1. Kentät-ruutu
 
-## <a name="1-the-top-navigation-bar"></a>1. Yläreunan siirtymispalkki
-Yläreunan siirtymispalkissa on useita toimintoja, joita lisätään koko ajan. Saat lisätietoja tietystä toiminnosta Power BI -dokumentaation sisällysluettelosta tai hakuruudusta.
+## <a name="1-the-top-nav-pane"></a>1. Yläreunan siirtymisruutu
+Yläreunan siirtymisruudussa on useita toimintoja, joita lisätään koko ajan. Saat lisätietoja tietystä toiminnosta Power BI -dokumentaation sisällysluettelosta tai hakuruudusta.
 
 
 ## <a name="2-the-report-canvas"></a>2. Raportin piirtoalusta
@@ -156,5 +155,5 @@ Lue lisää raporteista [Power BI -palvelussa](service-report-create-new.md), [P
 
 [Peruskäsitteet Power BI -suunnittelijoille](service-basic-concepts.md)
 
-Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
+Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](https://community.powerbi.com/)
 

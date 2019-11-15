@@ -3,64 +3,63 @@ title: Power BI Premium -kapasiteettien valvominen hallintaportaalissa
 description: Power BI -hallintaportaalissa voit valvoa Premium-kapasiteettejasi.
 author: mgblythe
 ms.author: mblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 04/10/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: 36b03a67e7c02702a70b6486880cc8eabf93e823
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 0d1e0da498a7a2c78e86b643b8a86cb87d6d095a
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65564906"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73856859"
 ---
 # <a name="monitor-capacities-in-the-admin-portal"></a>Kapasiteettien valvonta hallintaportaalissa
 
-**Kunnon** välilehdessä **kapasiteettiasetukset** alueella hallintaportaalissa on mittareita, joka on yhteenveto siitä kapasiteetin ja käytössä työnkulut.  
+**Kunto**-välilehti **Kapasiteettiasetusten** alueella hallintaportaalissa antaa yhteenvedon omasta kapasiteetistasi ja käytössä olevista kuormituksista.  
 
-![Kapasiteetin kunnon välilehti-portaalissa](media/service-admin-premium-monitor-portal/admin-portal-health.png)
+![Kapasiteetin kunto -välilehti portaalissa](media/service-admin-premium-monitor-portal/admin-portal-health.png)
 
-Jos haluat kattavamman mittareita, käytä [Power BI Premium-kapasiteetin Mittaustietoihin](service-admin-premium-monitor-capacity.md) sovelluksen. Sovellus tarjoaa ylös ja alas suodatusta ja tarkempi luomiensa lähellä jokaisen osan, joka vaikuttaa kapasiteetin suorituskykyä. Lisätietoja on artikkelissa [valvonnan Premium-kapasiteetteja sovelluksessa](service-admin-premium-monitor-capacity.md).
+Jos tarvitset kattavampia mittareita, käytä [Power BI Premium Capacity Metrics](service-admin-premium-monitor-capacity.md)-sovellusta. Sovellus tarjoaa porautumisen ja suodatuksen sekä yksityiskohtaisimmat mittarit kapasiteetin suorituskykyyn vaikuttavista kaikista seikoista. Lue lisää kohdasta[Premium-kapasiteettien valvonta sovelluksen avulla](service-admin-premium-monitor-capacity.md).
 
 ## <a name="system-metrics"></a>Järjestelmän mittarit
 
-Valitse **kunnon** välilehti ylimmällä tasolla suorittimen käyttö ja anna luettelon tärkeimpiä mittareita kapasiteetti muistinkäyttö. Näiden arvojen tila on koottu, mukaan lukien kaikki käytössä työmääriä kapasiteetti.
+**Kunto**-välilehdellä korkeimmalla tasolla suorittimen ja muistin käyttö tarjoavat nopean näkymän kapasiteetin tärkeimpiin mittareihin. Nämä mittarit ovat kumulatiivisia kaikki kapasiteetin käytössä olevissa kuormitukset huomioiden.
 
 | **Mittausarvo** | **Kuvaus** |
 | --- | --- |
-| SUORITTIMEN KÄYTTÖ | Keskimääräinen suorittimen käyttöaste yhteensä käytettävissä suorittimen prosenttilukuna. |
-| MUISTINKÄYTTÖ | Keskimääräinen muistinkäyttö gigatavuina (gt).|
+| SUORITTIMEN KÄYTTÖ | Suorittimen keskimääräinen käyttöaste prosentteina käytettävissä olevista suorittimista. |
+| MUISTIN KÄYTTÖ | Keskimääräinen muistin käyttö gigatavuina (Gt).|
 
 ## <a name="workload-metrics"></a>Kuormituksen mittarit
 
-Kuormituksen kunkin kapasiteetin käytössä. Suorittimen käyttö ja muistinkäyttö ovat näkyvissä.
+Jokaiselle kuormitukselle, joka on käytössä kapasiteettia varten. Suorittimen ja muistin käyttö tulevat näkyviin.
 
 | **Mittausarvo** | **Kuvaus** |
 | --- | --- |
-| SUORITTIMEN KÄYTTÖ | Keskimääräinen suorittimen käyttöaste yhteensä käytettävissä suorittimen prosenttilukuna. |
-| MUISTINKÄYTTÖ | Keskimääräinen muistinkäyttö gigatavuina (gt).|
+| SUORITTIMEN KÄYTTÖ | Suorittimen keskimääräinen käyttöaste prosentteina käytettävissä olevista suorittimista. |
+| MUISTIN KÄYTTÖ | Keskimääräinen muistin käyttö gigatavuina (Gt).|
 
-### <a name="detailed-workload-metrics"></a>Yksityiskohtaiset kuormituksen mittarit
+### <a name="detailed-workload-metrics"></a>Kuormituksen mittareiden yksityiskohtaiset tiedot
 
-Jokainen kuormitus on lisää mittareita. Näytetään mittareiden määräytyvät kuormitus. Näet yksityiskohtaiset mittareita kuormituksen napsauttamalla Laajenna (ALANUOLI).
+Jokainen kuormitus sisältää lisämittareita. Näytettävien mittarien tyyppi riippuu kuormituksesta. Jos haluat tarkastella kuormituksen yksityiskohtaisia mittareita, napsauta Laajenna-nuolta (alas).
 
-![Laajenna kuormituksen kunto](media/service-admin-premium-monitor-portal/admin-portal-health-expand.png)
+![Työmäärän kunnon laajentaminen](media/service-admin-premium-monitor-portal/admin-portal-health-expand.png)
 
 #### <a name="dataflows"></a>Tietovuot
 
-##### <a name="dataflow-operations"></a>Tietovirrassa toiminnot
+##### <a name="dataflow-operations"></a>Tietovuotoiminnot
 
 | **Mittausarvo** | **Kuvaus** |
 | --- | --- |
 | Kokonaismäärä | Kunkin tietovuon päivitysten kokonaismäärä. |
-| Onnistumisten määrä | Yhteensä onnistui päivitykset kunkin tietovirrassa.|
-| Keskimääräinen kesto (min) | tietovuon päivityksen keskimääräinen kesto minuutteina |
-| Suurin kesto (min) | Tietovuon pitkäkestoisimman päivityksen kesto minuutteina. |
-| Keskimääräinen odotusaika (min) | Keskimääräinen viive ajoitetun ajankohdan ja tietovuon päivityksen alkamisen välillä minuutteina. |
-| Suurin odotusaika (min) | Tietovuon enimmäisodotusaika minuutteina.  |
+| Onnistumisten määrä | Kunkin tietovuon onnistuneiden päivitysten kokonaismäärä.|
+| Keskimääräinen kesto (min.) | tietovuon päivityksen keskimääräinen kesto minuutteina |
+| Enimmäiskesto (min.) | Tietovuon pitkäkestoisimman päivityksen kesto minuutteina. |
+| Keskimääräinen odotusaika (min.) | Keskimääräinen viive ajoitetun ajankohdan ja tietovuon päivityksen alkamisen välillä minuutteina. |
+| Enimmäisodotusaika (min.) | Tietovuon enimmäisodotusaika minuutteina.  |
 
 #### <a name="datasets"></a>Tietojoukot
 
@@ -69,13 +68,13 @@ Jokainen kuormitus on lisää mittareita. Näytetään mittareiden määräytyv�
 | **Mittausarvo** | **Kuvaus** |
 | --- | --- |
 | Kokonaismäärä | Kunkin tietojoukon päivitysten kokonaismäärä. |
-| Onnistumisten määrä | Onnistuneet summa päivittyy kullekin tietojoukolle. |
-| Virheiden määrä | Epäonnistuneet päivitykset yhteensä kullekin tietojoukolle. |
-| Onnistumisprosentti  | Mitata yhteensä päivitykset jaettuna onnistuneiden päivitysten määrä. luotettavuutta. |
-| Keskimääräinen kesto (min) | Tietojoukon päivityksen keskimääräinen kesto minuutteina.  |
-| Suurin kesto (min) | Tietojoukon pitkäkestoisimman päivityksen kesto minuutteina. |
-| Keskimääräinen odotusaika (min) | Keskimääräinen viive ajoitetun ajankohdan ja tietojoukon päivityksen alkamisen välillä minuutteina. |
-| Suurin odotusaika (min) | Tietojoukon enimmäisodotusaika minuutteina. |
+| Onnistumisten määrä | Kunkin tietojoukon onnistuneiden päivitysten kokonaismäärä. |
+| Virheiden määrä | Kunkin tietojoukon epäonnistuneiden päivitysten kokonaismäärä. |
+| Onnistumisprosentti  | Onnistuneiden päivitysten määrä jaettuna päivitysten kokonaismäärällä luotettavuuden mittaamiseksi. |
+| Keskimääräinen kesto (min.) | Tietojoukon päivityksen keskimääräinen kesto minuutteina.  |
+| Enimmäiskesto (min.) | Tietojoukon pitkäkestoisimman päivityksen kesto minuutteina. |
+| Keskimääräinen odotusaika (min.) | Keskimääräinen viive ajoitetun ajankohdan ja tietojoukon päivityksen alkamisen välillä minuutteina. |
+| Enimmäisodotusaika (min.) | Tietojoukon enimmäisodotusaika minuutteina. |
 
 ##### <a name="query"></a>Kysely
 
@@ -85,13 +84,13 @@ Jokainen kuormitus on lisää mittareita. Näytetään mittareiden määräytyv�
 | Keskimääräinen kesto (ms) |tietojoukon kyselyn keskimääräinen kesto millisekunteina|
 | Enimmäiskesto (ms) |Tietojoukon pitkäkestoisimman kyselyn kesto millisekunteina. |
 | Keskimääräinen odotusaika (ms) |Tietojoukon kyselyn keskimääräinen odotusaika millisekunteina. |
-| Suurin odotusaika (ms) |Tietojoukon pisimpään odottaneen kyselyn kesto millisekunteina. |
+| Enimmäisodotusaika (ms) |Tietojoukon pisimpään odottaneen kyselyn kesto millisekunteina. |
 
 ##### <a name="eviction"></a>Häätäminen
 
 | **Mittausarvo** | **Kuvaus** |
 | --- | --- |
-| Mallin määrä | Tietojoukon häätöjä tämän kapasiteetin kokonaismäärä. Kun kapasiteetti kohtaa muistipainetta, solmu häätää yhden tai useamman tietojoukon muistista. Passiiviset tietojoukot (joihin ei kyseisellä hetkellä kohdistu kysely- tai uudelleenlataustoimintoja) häädetään ensin. Seuraavaksi häätöjärjestyksessä sovelletaan ”viimeiseksi käytetyt ensin” -mittaria. |
+| Mallin laskenta | Häädettävien tietojoukkojen kokonaismäärä tälle kapasiteetille. Kun kapasiteetti kohtaa muistipainetta, solmu häätää yhden tai useamman tietojoukon muistista. Passiiviset tietojoukot (joihin ei kyseisellä hetkellä kohdistu kysely- tai uudelleenlataustoimintoja) häädetään ensin. Seuraavaksi häätöjärjestyksessä sovelletaan ”viimeiseksi käytetyt ensin” -mittaria. |
 
 #### <a name="paginated-reports"></a>Sivutetut raportit
 
@@ -99,25 +98,25 @@ Jokainen kuormitus on lisää mittareita. Näytetään mittareiden määräytyv�
 
 | **Mittausarvo** | **Kuvaus** |
 | --- | --- |
-| Suorittaminen määrä  | Montako kertaa raportin suoritettiin käyttäjien.|
+| Suorituslaskenta  | Kuinka monta kertaa käyttäjät ovat katselleet ja suorittaneet raportin.|
 
 ##### <a name="report-usage"></a>Raportin käyttö
 
 | **Mittausarvo** | **Kuvaus** |
 | --- | --- |
-| Onnistumisten määrä | Montako kertaa käyttäjä on tarkasteltu raportin. |
-| Virheiden määrä |Montako kertaa käyttäjä on tarkasteltu raportin.|
+| Onnistumisten määrä | Kuinka monta kertaa käyttäjät ovat katselleet raporttia. |
+| Virheiden määrä |Kuinka monta kertaa käyttäjät ovat katselleet raporttia.|
 | Rivimäärä |Raportin tietorivien määrä. |
-| Tietojen noutaminen kesto (ms) |raportin tietojen noutamiseen keskimääräisesti kuluva aika millisekunteina. Pitkä kesto voi olla osoitus kyselyjen hitaasta suorittamisesta tai muista tietolähteeseen liittyvistä ongelmista.  |
-| Käsittelyn kesto (ms) |Raportin tietojen käsittelemiseen keskimääräisesti kuluva aika millisekunteina. |
-| Hahmontaminen kesto (ms) |Raportin hahmontamiseen selaimessa keskimääräisesti kuluva aika millisekunteina. |
+| Tietojen noutamisen kesto (ms) |raportin tietojen noutamiseen keskimääräisesti kuluva aika millisekunteina. Pitkä kesto voi olla osoitus kyselyjen hitaasta suorittamisesta tai muista tietolähteeseen liittyvistä ongelmista.  |
+| Prosessin kesto (ms) |Raportin tietojen käsittelemiseen keskimääräisesti kuluva aika millisekunteina. |
+| Hahmonnuksen kesto (ms) |Raportin hahmontamiseen selaimessa keskimääräisesti kuluva aika millisekunteina. |
 
 > [!NOTE]
-> Yksityiskohtaiset tiedot **AI** kuormituksen eivät ole vielä käytettävissä.
+> **AI**-kuormituksen yksityiskohtaiset mittarit eivät ole vielä käytettävissä.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
 Nyt kun tiedät, miten voit valvoa Power BI Premium -kapasiteetteja, lue lisätietoja kapasiteettien optimoinnista.
 
 > [!div class="nextstepaction"]
-> [Power BI Premium-kapasiteetteja optimointi](service-premium-capacity-optimize.md)
+> [Power BI Premium -kapasiteettien optimointi](service-premium-capacity-optimize.md)

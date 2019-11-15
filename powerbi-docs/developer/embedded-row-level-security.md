@@ -3,18 +3,17 @@ title: Rivitason suojaus Power BI:n upotetussa sisällössä
 description: Lue ohjeet, miten voit upottaa Power BI -sisältöä sovellukseesi.
 author: KesemSharabi
 ms.author: kesharab
-manager: rkarlin
 ms.reviewer: nishalit
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 06/10/2019
-ms.openlocfilehash: 2e7100db05b6ace0e4d530964f645e120387a8b2
-ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
+ms.openlocfilehash: 3ef9bd001e17c472216e501c6d38907087219959
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71073364"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73875811"
 ---
 # <a name="row-level-security-with-power-bi-embedded"></a>Rivitason suojaus Power BI Embeddedissä
 
@@ -33,7 +32,7 @@ Jotta voit hyödyntää rivitason suojausta, sinun on tärkeää ymmärtää kol
 **Roolit** – Käyttäjät kuuluvat rooleihin. Rooli on sääntöjen säilö. Roolin nimi voi olla esim. *myyntipäällikkö* tai *myyntiedustaja*. Voit luoda rooleja Power BI Desktopissa. Lisätietoja on artikkelissa [Rivitason suojaus (RLS) Power BI Desktopissa](../desktop-rls.md).
 
 **Säännöt** – Rooleilla on sääntöjä, jotka ovat tietoihin sovellettavia todellisia suodattimia. Sääntö voi olla yksinkertainen, esim. ”maa = Yhdysvallat”, tai paljon dynaamisempi.
-Tässä artikkelissa on esimerkki rivitason suojauksen luomisesta ja sen käyttämisestä upotetussa sovelluksessa. Esimerkissämme käytetään [Jälleenmyynnin analyysiesimerkki](http://go.microsoft.com/fwlink/?LinkID=780547) -PBIX-tiedostoa.
+Tässä artikkelissa on esimerkki rivitason suojauksen luomisesta ja sen käyttämisestä upotetussa sovelluksessa. Esimerkissämme käytetään [Jälleenmyynnin analyysiesimerkki](https://go.microsoft.com/fwlink/?LinkID=780547) -PBIX-tiedostoa.
 
 ![Esimerkkiraportti](media/embedded-row-level-security/powerbi-embedded-report-example.png)
 
@@ -73,7 +72,7 @@ Ohjeet:
 
     Raportit näyttävät tiedot nyt ikään kuin olisit kirjautuneena **Antero Ma** -tilillä.
 
-Kun suodatinta käytetään näin, kaikki **Alue-** , **Myymälä-** ja **Myynti**-taulukkojen tietueet suodatetaan. **Myynti-** ja **Aika**-taulukkojen, **Myynti-** ja **Kohde**-taulukkojen ja **Kohde-** ja **Aika**-taulukkojen yhteyksiin käytettyjen suodattimien suunnan vuoksi taulukoita ei suodateta alaspäin. Saat lisätietoja kaksisuuntaisesta ristiinsuodatuksesta lataamalla [Kaksisuuntainen ristiinsuodatus SQL Server Analysis Services 2016:ssa ja Power BI Desktopissa](http://download.microsoft.com/download/2/7/8/2782DF95-3E0D-40CD-BFC8-749A2882E109/Bidirectional%20cross-filtering%20in%20Analysis%20Services%202016%20and%20Power%20BI.docx) -raportin.
+Kun suodatinta käytetään näin, kaikki **Alue-** , **Myymälä-** ja **Myynti**-taulukkojen tietueet suodatetaan. **Myynti-** ja **Aika**-taulukkojen, **Myynti-** ja **Kohde**-taulukkojen ja **Kohde-** ja **Aika**-taulukkojen yhteyksiin käytettyjen suodattimien suunnan vuoksi taulukoita ei suodateta alaspäin. Saat lisätietoja kaksisuuntaisesta ristiinsuodatuksesta lataamalla [Kaksisuuntainen ristiinsuodatus SQL Server Analysis Services 2016:ssa ja Power BI Desktopissa](https://download.microsoft.com/download/2/7/8/2782DF95-3E0D-40CD-BFC8-749A2882E109/Bidirectional%20cross-filtering%20in%20Analysis%20Services%202016%20and%20Power%20BI.docx) -raportin.
 
 ## <a name="applying-user-and-role-to-an-embed-token"></a>Käyttäjän ja roolin käyttäminen upotustunnukseen
 
@@ -241,7 +240,7 @@ Kun päätät suodattaa raportin tietoja, voit käyttää **rivitason suojausta*
 
 [JavaScript-suodattimien](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Filters#page-level-and-visual-level-filters) avulla käyttäjä voi käyttää rajoitettua, kohdennettua tai suodatettua tietonäkymää. Käyttäjällä on kuitenkin yhä pääsy mallin rakenteen taulukoihin, sarakkeisiin ja mittareihin, ja hän voi mahdollisesti käyttää niiden tietoja. Tietojen käyttöoikeuksien rajoitus voidaan ottaa käyttöön vain rivitason suojauksella eikä asiakaspuolen suodatinohjelmointirajapintojen kautta.
 
-## <a name="token-based-identity-with-azure-sql-database-preview"></a>Tunnuspohjaiset käyttäjätiedot Azure SQL -tietokannassa (esikatselu)
+## <a name="token-based-identity-with-azure-sql-database"></a>Tunnuspohjaiset käyttäjätiedot Azure SQL -tietokannassa
 
 Voit **tunnuspohjaisten käyttäjätietojen** avulla määrittää upotetun tunnuksen voimassaolevat käyttäjätiedot **Azure Active Directory (AAD)** -käyttöoikeustietueen avulla **Azure SQL -tietokannalle**.
 
@@ -332,7 +331,7 @@ Tätä oikeutta ei voi määrittää hallintaportaalissa. Sen voi määrittää 
 * Jos pohjana oleva tietojoukko on pilvimalli (välimuistissa oleva tai DirectQuery-malli), käytössä olevien käyttäjätietojen on sisällettävä vähintään yksi rooli. Muussa tapauksessa roolimääritystä ei tehdä.
 * Käyttäjätietojen luettelo mahdollistaa useat käyttäjätietojen tunnukset koontinäyttöjen upotusta varten. Luettelo sisältää yksittäisen käyttäjän tiedot kaikille muille kohdetyypeille.
 
-### <a name="token-based-identity-limitations-preview"></a>Tunnuspohjaisten käyttäjätietojen rajoitukset (esikatselu)
+### <a name="token-based-identity-limitations"></a>Tunnuspohjaisten käyttäjätietojen rajoitukset
 
 * Tämä ominaisuus rajoittaa vain käyttöä Power BI Premiumin kanssa.
 * Tämä ominaisuus ei toimi paikallisen SQL Serverin kanssa.

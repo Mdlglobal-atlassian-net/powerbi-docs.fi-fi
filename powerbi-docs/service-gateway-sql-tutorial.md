@@ -2,7 +2,6 @@
 title: 'Opetusohjelma: Yhteyden muodostaminen paikallisiin tietoihin SQL Serverissä'
 description: Opi käyttämään SQL Serveriä yhdyskäytävän tietolähteenä mm. tietojen päivittämiseen.
 author: mgblythe
-manager: kfile
 ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-gateways
@@ -10,12 +9,12 @@ ms.topic: tutorial
 ms.date: 07/15/2019
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 54ef11b51fb02b6913b4d591967a140c5affc1b8
-ms.sourcegitcommit: 9d13ef7a257b5006fca5f92acf5b611f5cd143a2
+ms.openlocfilehash: 91b6ee8971004a014b188f94142e90914ae3a3b7
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "68307388"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73881541"
 ---
 # <a name="refresh-data-from-an-on-premises-sql-server-database"></a>Tietojen päivittäminen paikallisesta SQL Server -tietokannasta
 
@@ -117,7 +116,7 @@ Yhdistit Power BI Desktopissa suoraan paikalliseen SQL Server -tietokantaan, mut
     | Tietolähteen tyyppi | SQL Server |
     | Palvelin | Tämä on SQL Server -esiintymän nimi, esimerkiksi SQLServer01 (tämän on oltava sama kuin Power BI Desktopissa määritetty nimi). |
     | Tietokanta | Tämä on SQL Server -tietokannan nimi, esimerkiksi AdventureWorksDW (tämän on oltava sama kuin Power BI Desktopissa määritetty nimi). |
-    | Todennusmenetelmä | Tämä on Windows tai Perus (yleensä Windows). |
+    | Todentamismenetelmä | Tämä on Windows tai Perus (yleensä Windows). |
     | Käyttäjänimi | Tämä on käyttäjätili, jolla muodostat yhteyden SQL Serveriin. |
     | Salasana | Tämä on sen tilin salasana, jolla muodostat yhteyden SQL Serveriin. |
 
@@ -131,7 +130,7 @@ Yhdistit Power BI Desktopissa suoraan paikalliseen SQL Server -tietokantaan, mut
 
 Nyt kun olet yhdistänyt Power BI -tietojoukon SQL Server -tietokantaan paikallisesti tietoyhdyskäytävän kautta, määritä päivitysaikataulu näiden ohjeiden mukaisesti. Tietojoukon säännöllinen päivittäminen auttaa varmistamaan, että raporttisi ja koontinäyttösi sisältävät uusimmat tiedot.
 
-1. Valitse vasemmasta siirtymisruudusta **Oma työtila** \> **Tietojoukot**. Valitse kolme pistettä ( **. . .** ) **AdventureWorksProducts**-tietojoukon kohdalla ja valitse sitten **Ajoita päivitys**.
+1. Avaa siirtymisruudusta **Oma työtila** \> **Tietojoukot**. Valitse kolme pistettä ( **. . .** ) **AdventureWorksProducts**-tietojoukon kohdalla ja valitse sitten **Ajoita päivitys**.
 
     > [!NOTE]
     > Muista valita kolme pistettä **AdventureWorksProducts**-tietojoukon kohdalta, ei samannimisen raportin kohdalta. **AdventureWorksProducts**-raportin pikavalikko ei sisällä **Ajoita päivitys** -toimintoa.
@@ -149,7 +148,7 @@ Nyt kun olet yhdistänyt Power BI -tietojoukon SQL Server -tietokantaan paikalli
 
 ## <a name="perform-an-on-demand-refresh"></a>Manuaalisen päivityksen suorittaminen
 
-Nyt kun olet määrittänyt päivitysaikataulun, Power BI päivittää tietojoukkosi aikataulun mukaisesti 15 minuutin tarkkuudella. Jos haluat päivittää tiedot tätä aiemmin esimerkiksi yhdyskäytävän ja tietolähteen määritteiden testaamista varten, suorita päivitys vasemman siirtymisruudun tietojoukko-valikossa olevalla **Päivitä nyt** -toiminnolla. Päivityspyynnöt eivät vaikuta seuraavan ajoitetun päivityksen ajankohtaan, mutta ne kuluttavat päivittäistä päivityskiintiötä (kuten aiemmin mainittiin).
+Nyt kun olet määrittänyt päivitysaikataulun, Power BI päivittää tietojoukkosi aikataulun mukaisesti 15 minuutin tarkkuudella. Jos haluat päivittää tiedot tätä aiemmin esimerkiksi yhdyskäytävän ja tietolähteen määritteiden testaamista varten, suorita päivitys siirtymisruudun tietojoukko-valikossa olevalla **Päivitä nyt** -toiminnolla. Päivityspyynnöt eivät vaikuta seuraavan ajoitetun päivityksen ajankohtaan, mutta ne kuluttavat päivittäistä päivityskiintiötä (kuten aiemmin mainittiin).
 
 Simuloi nyt toimintoa kokeillaksesi muutos mallitietoihin päivittämällä AdventureWorksDW-tietokannan DimProduct-taulukkoa SQL Server Management Studiolla (SSMS).
 
@@ -163,7 +162,7 @@ WHERE EnglishProductName ='Road-250 Red, 58'
 
 Toimi sitten näiden ohjeiden mukaisesti, jotta päivitetyt tiedot lähetetään yhdyskäytäväyhteyden kautta tietojoukkoon ja raportteihin Power BI:ssä.
 
-1. Valitse Power BI -palvelun vasemmasta siirtymisruudusta **Oma työtila** ja laajenna se.
+1. Valitse Power BI -palvelun siirtymisruudusta **Oma työtila** ja laajenna se.
 
 2. Valitse **Tietojoukot**-kohdassa kolme pistettä **(. . .** ) **AdventureWorksProducts**-tietojoukon kohdalla ja valitse sitten **Päivitä nyt**.
 

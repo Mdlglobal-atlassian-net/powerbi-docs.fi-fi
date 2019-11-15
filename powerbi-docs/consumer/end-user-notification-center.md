@@ -2,21 +2,20 @@
 title: Sanomien tarkasteleminen ilmoituskeskuksessa
 description: Ilmoituskeskus tarjoaa säännöllistä tietoa Power BI:n käyttöön liittyvistä asioista.
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 featuredvideoid: bZMSv5KAlcE
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 09/24/2019
+ms.date: 10/31/2019
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: e0ec01eb4d4ee8134a165d438f29baa4aee22841
-ms.sourcegitcommit: 26123c6bb24c8174beb390f4e06fb938d31238ea
+ms.openlocfilehash: c4feda0e502a9363900901ebe76005219587167b
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72716944"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73863022"
 ---
 # <a name="view-power-bi-notifications"></a>Power BI -ilmoitusten näyttäminen
 
@@ -31,7 +30,7 @@ Katso, miten Amanda tarkastelee ja hallitsee ilmoituksia ja reagoi niihin. Kokei
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/bZMSv5KAlcE" frameborder="0" allowfullscreen></iframe>
 
-
+## <a name="view-your-notifications"></a>Tarkastele ilmoituksiasi
 1. Kun kirjaudut Power BI:hin, syötteessäsi lisätään ilmoitukset, jotka on lähetetty ollessasi offline-tilassa. Jos sinulle on tullut uusia ilmoituksia, Power BI:ssa näkyy keltainen kupla, jossa on uusien kohteiden lukumäärä.
    
    ![uusi Ilmoitus-ikkuna](./media/end-user-notification-center/power-bi-new-notification.png)
@@ -43,9 +42,9 @@ Katso, miten Amanda tarkastelee ja hallitsee ilmoituksia ja reagoi niihin. Kokei
    ![Ilmoituskeskus](./media/end-user-notification-center/power-bi-notification-center.png)
 4. Ohita ilmoitus valitsemalla X-kuvake.
 
-### <a name="next-steps"></a>Seuraavat vaiheet
+## <a name="next-steps"></a>Seuraavat vaiheet
 * [Power BI -palvelun tietoilmoitukset](end-user-alerts.md)
 * [Tietoilmoitusten määrittäminen iPhone-sovelluksessa (Power BI iOS:lle)](mobile/mobile-set-data-alerts-in-the-mobile-apps.md)
 * [Tietoilmoitusten määrittäminen Power BI -mobiilisovellukseen Windows 10:ssä](mobile/mobile-set-data-alerts-in-the-mobile-apps.md)
-* Ilmenikö muuta kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
+* Ilmenikö muuta kysyttävää? [Kokeile Power BI -yhteisöä](https://community.powerbi.com/)
 

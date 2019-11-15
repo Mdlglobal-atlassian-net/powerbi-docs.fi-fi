@@ -2,19 +2,18 @@
 title: Julkaise sovellus Power BI:ssä
 description: Lue, miten voit julkaista uusia sovelluksia, jotka ovat koontinäyttöjen ja raporttien kokoelmia, joissa on sisäänrakennetut siirtymiskomennot.
 author: maggiesMSFT
-manager: kfile
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 08/15/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 7aa9ec22eec07632a071b5ffaadfe06f221897d7
-ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
+ms.openlocfilehash: 622d01632b9c9cbe6203090b3ac2149d4bc94474
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72020233"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73853631"
 ---
 # <a name="publish-an-app-in-power-bi"></a>Julkaise sovellus Power BI:ssä
 
@@ -115,7 +114,7 @@ Voit mukauttaa sovelluksessa siirtymistä seuraavilla tavoilla:
 * Kohteiden nimeäminen uudelleen kohdissa **Raportin tiedot**, **Koontinäytön tiedot**, ja **Työkirjan tiedot**.
 * Eräiden kohteiden piilottaminen siirtymisruudusta.
 * **Uusi**-asetuksen käyttäminen **osien** lisäämiseksi ryhmään liittyvään sisältöön.
-* **Uusi**-asetuksen käyttäminen **linkin** lisäämiseksi ulkoiseen resurssiin vasempaan siirtymisruutuun. 
+* **Uusi**-asetuksen käyttäminen **linkin** lisäämiseksi ulkoiseen resurssiin siirtymisruutuun. 
 
 Kun lisäät **linkin** kohdassa **Linkin tiedot**, voit valita, mihin linkki avautuu. Oletuksena linkki avautuu **nykyiseen välilehteen**, mutta voit valita vaihtoehdon **Uusi välilehti** tai **Sisältöalue**. 
 
@@ -187,7 +186,7 @@ Tämä toiminto poistaa sovelluksen asennuksen kaikilta, joille se on julkaistu 
 
 ## <a name="view-your-published-app"></a>Julkaistun sovelluksen tarkasteleminen
 
-Kun sovelluksen kuluttajat avaavat sovelluksesi, he näkevät luomasi siirtymisruudun Power BI:n vasemmassa reunassa olevan tavallisen siirtymisruudun sijaan. Sovelluksen siirtymäruutu luetteloi määrittämiesi osien raportit ja koontinäytöt. Siinä luetellaan myös jokaisen raportin yksittäiset sivut pelkän raportin nimen sijaan.
+Kun sovelluksen kuluttajat avaavat sovelluksesi, he näkevät luomasi siirtymisruudun Power BI:n siirtymisruudun sijaan. Sovelluksen siirtymäruutu luetteloi määrittämiesi osien raportit ja koontinäytöt. Siinä luetellaan myös jokaisen raportin yksittäiset sivut pelkän raportin nimen sijaan.
 
 ![Sovellus, jossa voi siirtyä](media/service-create-distribute-apps/power-bi-new-apps-navigation.png)
 
@@ -203,4 +202,4 @@ Sovellusten julkaisemisessa muistettavat asiat:
 * [Asenna ja käytä sovelluksia Power BI:ssä](consumer/end-user-apps.md)
 * [Power BI -sovellukset ulkoisille palveluille](service-connect-to-services.md)
 * [Power BI -hallintaportaali](https://docs.microsoft.com/power-bi/service-admin-portal)
-* Ilmenikö kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)
+* Ilmenikö kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)

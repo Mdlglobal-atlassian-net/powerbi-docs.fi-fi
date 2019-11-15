@@ -3,19 +3,18 @@ title: SAP-muuttujien muokkaus Power BI -palvelussa (esikatselu)
 description: Azure ja Power BI
 author: Sujata994
 ms.author: sunaraya
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 08/12/2019
 LocalizationGroup: Data from databases
-ms.openlocfilehash: db1d4a8a9734c910514b4952b664bf7ebce324c1
-ms.sourcegitcommit: 4a3afe761d2f4a5bd897fafb36b53961739e8466
+ms.openlocfilehash: d78124045767323cca657fa41d4415ca2e929f3d
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/20/2019
-ms.locfileid: "69654885"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73881922"
 ---
 # <a name="edit-sap-variables-in-the-power-bi-service-preview"></a>SAP-muuttujien muokkaus Power BI -palvelussa (esikatselu)
 
@@ -31,7 +30,7 @@ SAP-muokkausmuuttujien käyttämiseen on joitakin vaatimuksia. Seuraavassa luett
 
 **Uusi suodatuskokemus vaaditaan** – raportissa on oltava käytössä [uusi suodatuskokemus](power-bi-report-filter.md). Voit ottaa sen käyttöön raportissa seuraavasti Power BI Desktopissa:
 - Valitse Power BI Desktopissa **Tiedosto** > **Asetukset ja vaihtoehdot** > **Asetukset**
-- Valitse vasemmasta siirtymispalkista **Nykyinen tiedosto** -kohdan alta **Raportin asetukset**.
+- Valitse siirtymisruudussa **Nykyinen tiedosto** -kohdassa **Raportin asetukset**.
 - Valitse **Suodatuskokemus**-kohdassa **Ota käyttöön päivitetty suodatinruutu**.
 
 **DirectQuery-yhteydet vaaditaan**  – yhteys SAP-tietolähteeseen on muodostettava DirectQueryn avulla. Tuontiyhteyksiä ei tueta.

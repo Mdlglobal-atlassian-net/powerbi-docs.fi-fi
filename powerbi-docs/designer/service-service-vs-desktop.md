@@ -2,7 +2,6 @@
 title: Power BI Desktopin ja Power BI -palvelun vertailu
 description: Power BI Desktop on kattava tietoanalyysien ja raporttien luontityökalu. Power BI -palvelu on pilvipohjainen verkkopalvelu kevyeen raportin muokkaukseen ja yhteistyöhön työryhmille ja yrityksille.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 featuredvideoid: IkJda4O7oGs
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/12/2019
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: e2985f4a27d8471bcfce80d40f2263e2be07d38c
-ms.sourcegitcommit: d441d350504f8c6d9e100d229757add6237f0bef
+ms.openlocfilehash: 39b95708b95144ba77a3b33b8ee15f913ae7ca2b
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73064349"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73879007"
 ---
 # <a name="comparing-power-bi-desktop-and-the-power-bi-service"></a>Power BI Desktopin ja Power BI -palvelun vertailu
 
@@ -38,7 +37,7 @@ Voit sekä sovelluksessa että palvelussa luoda ja muokata *raportteja*. Raporti
 
 Power BI Desktopin ja palvelun raporttieditorit ovat samankaltaisia. Ne koostuvat kolmesta osasta:  
 
-1. Yläosan siirtymispalkit ovat erilaiset Power BI Desktopissa ja palvelussa    
+1. Yläosan siirtymisruudut ovat erilaiset Power BI Desktopissa ja palvelussa    
 2. Raportin piirtoalusta     
 3. **Kentät**-, **Visualisoinnit**- ja **Suodattimet**-ruudut
 

@@ -2,22 +2,21 @@
 title: Power BI -palvelussa liikkuminen
 description: Power BI:n siirtymistoimintojen yleiskatsaus
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 featuredvideoid: G26dr2PsEpk
 ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: quickstart
-ms.date: 10/18/2019
+ms.date: 10/30/2019
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 14c7f88e0bfb822a73a72958f556443260f6ed76
-ms.sourcegitcommit: f34acbf9fb1ab568fd89773aaf412a847f88dd34
+ms.openlocfilehash: e6be58971b265414440041f4667a0b0cc455cdd4
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72589443"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73851518"
 ---
 # <a name="quickstart---getting-around-in-power-bi-service"></a>Pikaopas - Power BI -palveluun tutustuminen
 
@@ -57,7 +56,7 @@ Sisältösi on jaettu omassa työtilassa neljään välilehteen: Raporttinäkym�
 
 ![Oma työtila -näyttö](./media/end-user-experience/power-bi-my-workspace.png)
 
-Valitse työtila vasemmassa siirtymisruudussa (vasen siirtymisruutu) ja siihen liittyvän sisällön välilehdet (koontinäytöt, raportit, työkirjat, tietojoukot) täyttävät oikealla olevan Power BI -pohjan.
+Valitse työtila siirtymisruudusta, ja siihen liittyvän sisällön välilehdet (koontinäytöt, raportit, työkirjat, tietojoukot) täyttävät oikealla olevan Power BI -pohjan.
 
 Jos olet uusi käyttäjä, näet vain yhden työtilan, joka on **Oma työtila**.
 
@@ -82,7 +81,7 @@ Avaa raporttinäkymä valitsemalla raporttinäkymän nimi.
    
    ![Poista suosikeista](./media/end-user-experience/power-bi-unfavorite2.png)
 
-2. Jos haluat nähdä luettelon kaikesta suosikeiksi lisätystä sisällöstä, valitse vasemmassa siirtymisruudussa **Suosikit**-kohdan oikealla puolella oleva nuoli. Vasen siirtymisruutu on Power BI -palvelun pysyvä ominaisuus, joten voit käyttää luetteloa Power BI -palvelun missä tahansa kohdassa.
+2. Jos haluat nähdä luettelon kaikesta suosikeiksi lisätystä sisällöstä, valitse siirtymisruudussa **Suosikit**-kohdan oikealla puolella oleva nuoli. Siirtymisruutu on Power BI -palvelun pysyvä ominaisuus, joten voit käyttää luetteloa Power BI -palvelun missä tahansa kohdassa.
    
     ![suosikit-pikaikkuna](./media/end-user-experience/power-bi-favorite.png)
    
@@ -92,7 +91,7 @@ Avaa raporttinäkymä valitsemalla raporttinäkymän nimi.
    
    ![merkitse suosikiksi](./media/end-user-experience/power-bi-report-favorite.png)
 
-3. Avaa **Suosikit**-*ruutu* valitsemalla **Suosikit** vasemmasta siirtymisruudusta tai valitsemalla tähtikuvake ![](media/end-user-experience/powerbi-star-icon.png).
+3. Avaa **Suosikit**-*ruutu* valitsemalla **Suosikit** siirtymisruudusta tai valitsemalla tähtikuvake ![-näyttökuva, jossa näkyy keltainen tähtikuvake](media/end-user-experience/powerbi-star-icon.png).
    
    ![avaa Suosikit-näyttö](./media/end-user-experience/power-bi-favorite-pane.png)
    
@@ -107,13 +106,13 @@ Katso lisätietoja artikkelista [Suosikit](end-user-favorite.md)
 
 ## <a name="locate-your-most-recent-content"></a>Paikanna uusimmat sisältösi
 
-1. Suosikkien tapaan voit nopeasti tarkastella myös viimeksi käyttämääsi sisältöä missä tahansa Power BI -palvelun kohdassa valitsemalla vasemmasta siirtymisruudusta **Viimeisimmät**-kohdan vieressä olevan nuolen.
+1. Suosikkien tapaan voit nopeasti tarkastella myös viimeksi käyttämääsi sisältöä missä tahansa Power BI -palvelun kohdassa valitsemalla siirtymisruudusta **Viimeisimmät**-kohdan vieressä olevan nuolen.
 
    ![Viimeisimmät-pikaikkuna](./media/end-user-experience/power-bi-recent-flyout.png)
 
     Valitse avattava sisältö pikaikkunasta.
 
-2. Joskus et halua vain avata viimeaikaista sisältöä, mutta haluat tarkastella tietoja tai tehdä muita toimia, kuten tarkastella merkityksellisiä tietoja tai viedä Exceliin. Tällaisissa tilanteissa avaa **Viimeaikaiset**-ruutu valitsemalla **Viimeaikaiset** tai sen kuvake vasemmasta siirtymisruudusta. Jos sinulla olisi useampi kuin yksi työtila, tämä luettelo sisältäisi sisältöä kaikista työtiloistasi.
+2. Joskus et halua vain avata viimeaikaista sisältöä, mutta haluat tarkastella tietoja tai tehdä muita toimia, kuten tarkastella merkityksellisiä tietoja tai viedä Exceliin. Tällaisissa tilanteissa avaa **Viimeaikaiset**-ruutu valitsemalla **Viimeaikaiset** tai sen kuvake siirtymisruudusta. Jos sinulla olisi useampi kuin yksi työtila, tämä luettelo sisältäisi sisältöä kaikista työtiloistasi.
 
    ![Viimeisimmät-ruutu](./media/end-user-experience/power-bi-recent.png)
 
@@ -138,7 +137,7 @@ Lisätietoja on artikkelissa [Power BI -siirtyminen: haku ja lajittelu](end-user
 Kun olet suorittanut pikaoppaan, voit halutessasi poistaa Jälleenmyyntianalyysimallin raporttinäkymän, raportin ja tietojoukon.
 
 1. Avaa Power BI -palvelu (app.powerbi.com) ja kirjaudu sisään.    
-2. Valitse vasemmasta siirtymisruudusta **Työtilat > Oma työtila**.  
+2. Valitse siirtymisruudussa **Työtilat > Oma työtila**.  
     Keltainen tähti kertoo, että kyse on suosikista.    
 3. Valitse **Raporttinäkymät**-välilehdestä Jälleenmyyntianalyysimallin raporttinäkymän vieressä oleva **Poista**-roskakorikuvake.    
 

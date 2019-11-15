@@ -2,7 +2,6 @@
 title: Organisaation sisältöpaketin luominen ja julkaiseminen - Power BI
 description: Tässä opetusohjelmassa luodaan organisaation sisältöpaketti, rajoitetaan käyttö tiettyyn ryhmään ja julkaistaan se organisaatiosi sisältöpakettikirjastossa Power BI:ssä.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 08/06/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: eb1940f7d5a4e809590b5b425b8005776040a5cc
-ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
+ms.openlocfilehash: 25b63db2d77e84fb3fc1a3e844ceb46ef1a9bd82
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72020660"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73872001"
 ---
 # <a name="tutorial-create-and-publish-a-power-bi-organizational-content-pack"></a>Opetusohjelma: Organisaation sisältöpaketin luominen ja julkaiseminen Power BI:ssä
 
@@ -34,7 +33,7 @@ Kuvittele olevasi Release Manager Contosossa ja valmistaudut uuden tuotteen julk
 
 Haluatko seurata mukana? Siirry [Power BI -palvelussa](https://powerbi.com) **omaan työtilaan**. Siirry sitten kohtaan **Nouda tiedot** > **Näytteet** > **Mahdollisuusanalyysimalli**  > **Yhteydet** ja hanki oma kopio.
 
-1. Valitse vasemmassa siirtymisruudussa **Työtilat** > **Oma työtila**.
+1. Valitse siirtymisruudussa **Työtilat** > **Omat työtilat**.
 
 1. Valitse ylälaidan siirtymispalkissa hammasrataskuvake ![Näyttökuva hammasrataskuvakkeesta.](media/service-organizational-content-pack-create-and-publish/cog.png) > **Luo sisältöpaketti**.
 
@@ -100,4 +99,4 @@ Haluatko seurata mukana? Siirry [Power BI -palvelussa](https://powerbi.com) **om
 
 * [Mikä on OneDrive for Business?](https://support.office.com/article/What-is-OneDrive-for-Business-187f90af-056f-47c0-9656-cc0ddca7fdc2)
 
-* Onko sinulla muuta kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
+* Onko sinulla muuta kysyttävää? [Kokeile Power BI -yhteisöä](https://community.powerbi.com/)

@@ -3,18 +3,17 @@ title: Raporttipalvelimen asennuksen siirtäminen
 description: Opi siirtämään aiemmin luotu SQL Server Reporting Services ‑esiintymä esiintymäksi Microsoft Power BI -raporttipalvelimelle.
 author: maggiesMSFT
 ms.author: maggies
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 01/17/2019
-ms.openlocfilehash: 01c87d425b1ada76e322af411188a4a2717562d0
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: bc3b196313266be64e7a63a66f33ef4020574d2a
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "64770178"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73858888"
 ---
 # <a name="migrate-a-report-server-installation"></a>Raporttipalvelimen asennuksen siirtäminen
 
@@ -35,7 +34,7 @@ Tässä yhteydessä siirtämisellä tarkoitetaan sovellusten datatiedostojen sii
 
 Siirtyminen SSRS:n esiintymästä (alkuperäistilassa) Power BI -raporttipalvelimeen edellyttää muutamia vaiheita.
 
-![Siirtyminen alkuperäistilassa olevasta SSRS:stä Power BI -raporttipalvelimeen](media/migrate-report-server/migrate-from-ssrs-native.png "Siirtyminen alkuperäistilassa olevasta SSRS:stä Power BI -raporttipalvelimeen")
+![Alkuperäistilassa olevasta SSRS:stä siirtyminen Power BI -raporttipalvelimeen](media/migrate-report-server/migrate-from-ssrs-native.png "Alkuperäistilassa olevasta SSRS:stä siirtyminen Power BI -raporttipalvelimeen")
 
 > [!NOTE]
 > Siirtämiselle on tuki SQL Server 2008 Reporting Services ‑palvelusta ja sitä uudemmista versioista.
@@ -55,7 +54,7 @@ Siirtyminen SSRS:n esiintymästä (alkuperäistilassa) Power BI -raporttipalveli
 
 Integroidussa SharePoint-tilassa olevasta SSRS:stä ei ole aivan niin yksinkertaista siirtyä Power BI -raporttipalvelimeen kuin alkuperäistilaisesta. Seuraavissa vaiheissa annetaan ohjeita siirtämiseen, mutta sinulla saattaa olla SharePointissa muitakin tiedostoja ja resursseja, joita sinun pitää hallita näiden ohjeiden lisäksi.
 
-![Siirtyminen integroidussa SharePoint-tilassa olevasta SSRS:stä Power BI -raporttipalvelimeen](media/migrate-report-server/migrate-from-ssrs-sharepoint.png "Siirtyminen integroidussa SharePoint-tilassa olevasta SSRS:stä Power BI -raporttipalvelimeen")
+![Power BI-raporttipalvelimeen siirtyminen SSRS:stä integroidussa SharePoint-tilassa](media/migrate-report-server/migrate-from-ssrs-sharepoint.png "Power BI-raporttipalvelimeen siirtyminen SSRS:stä integroidussa SharePoint-tilassa")
 
 Sinun on siirrettävä SharePointista tietty raporttipalvelinsisältö Power BI -raporttipalvelimelle. Sinulla on oltava Power BI -raporttipalvelin asennettuna jonnekin ympäristöösi. Katso lisätietoja Power BI -raporttipalvelimen asentamisesta artikkelista [Power BI -raporttipalvelimen asentaminen](install-report-server.md).
 
@@ -70,10 +69,10 @@ Jos haluat kopioida raporttipalvelimen sisällön SharePoint-ympäristöstä Pow
 Sample Script
 rs.exe
 -i ssrs_migration.rss -e Mgmt2010
--s http://SourceServer/_vti_bin/reportserver
+-s https://SourceServer/_vti_bin/reportserver
 -v st="sites/bi" -v f="Shared Documents“
 -u Domain\User1 -p Password
--v ts=http://TargetServer/reportserver
+-v ts=https://TargetServer/reportserver
 -v tu="Domain\User" -v tp="Password"
 ```
 
@@ -81,7 +80,7 @@ rs.exe
 
 Siirtyminen yhdeltä Power BI -raporttipalvelimelta toiselle noudattaa samaa menetelmää kuin siirtyminen alkuperäistilassa olevasta SSRS:stä.
 
-![Siirtyminen yhdeltä Power BI -raporttipalvelimelta toiselle Power BI -raporttipalvelimelle](media/migrate-report-server/migrate-from-pbirs.png "Siirtyminen yhdeltä Power BI -raporttipalvelimelta toiselle Power BI -raporttipalvelimelle")
+![Siirtyminen Power BI -raporttipalvelimelta Power BI -raporttipalvelimeen](media/migrate-report-server/migrate-from-pbirs.png "Siirtyminen Power BI -raporttipalvelimelta Power BI -raporttipalvelimeen")
 
 * Varmuuskopioi tietokanta, sovellus ja määritystiedostot.
 * Varmuuskopioi salausavain.

@@ -2,7 +2,6 @@
 title: Etsi sisältöä Power BI -palvelusta
 description: Aloita aloitussivulta, paikanna ja avaa raportteja, koontinäyttöjä ja sovelluksia.
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/16/2019
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: d97b5a93060869d65de6652af869b472baf8cd10
-ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
+ms.openlocfilehash: b905b738dc9fa38e390a94fb1b893aba8e45a0db
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71077780"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73863708"
 ---
 # <a name="find-your-dashboards-reports-and-apps"></a>Etsi omat koontinäytöt, raportit ja sovellukset
 Power BI:ssä termi *sisältö* viittaa sovelluksiin, koontinäyttöihin ja raportteihin. Sisällön luovat Power BI:n *suunnittelijat*, jotka jakavat sen kaltaistesi kollegojen kanssa. Sisältösi on käytettävissä ja nähtävissä Power BI-palvelussa, ja paras paikka aloittaa työskentely Power BI:ssä on aloitussivusi.
@@ -28,7 +27,7 @@ Kun kirjaudut sisään, Power BI avautuu ja näyttää aloitussivusi seuraavassa
 Power BI -aloitussivu tarjoaa kolme eri tapaa paikantaa ja tarkastella sisältöäsi. Kaikki kolme voivat käyttää samaa sisältövarantoa, joten ne ovat vain eri tapoja päästä käyttämään sisältöä. Toisinaan haku on helpoin ja nopein tapa löytää jotakin, mutta yleensä *kortin* valitseminen aloitussivulta on paras vaihtoehto.
 
 - Aloitussivu näyttää ja järjestää suosituimman ja viimeisimmän sisältösi sekä sisältösuositukset ja oppimisresurssit. Jokainen sisältökohde näkyy *korttina*, jossa on otsikko ja kuvake. Kortin valitsemalla avaat tämän sisällön.
-- Vasemmalla puolella on siirtymisruutu, jota kutsutaan siirtymispalkiksi. Tässä ruudussa sama sisältö on järjestetty hieman eri tavalla: Suosikit, Viimeisimmät, Sovellukset ja Jaettu kanssani. Täällä voit tarkastella sisältöluetteloita ja valita niistä sen, jonka avaat.
+- Vasemmalla puolella on siirtymisruutu, jota kutsutaan siirtymisruuduksi. Tässä ruudussa sama sisältö on järjestetty hieman eri tavalla: Suosikit, Viimeisimmät, Sovellukset ja Jaettu kanssani. Täällä voit tarkastella sisältöluetteloita ja valita niistä sen, jonka avaat.
 - Oikeassa yläkulmassa olevan yleisen hakuruudun avulla voit hakea sisältöä otsikon, nimen tai avainsanan avulla.
 
 Seuraavissa aiheissa tarkastellaan kaikkia näitä vaihtoehtoja sisällön etsimiseksi ja tarkastelemiseksi.
@@ -65,23 +64,23 @@ Toimintasi ja tiliasetustesi perusteella Power BI näyttää joukon suositeltuja
 ### <a name="learning-resources"></a>Oppimisresurssit
 Aloitussivun alaosassa on joukko oppimisresursseja. Se, mitä resursseja tarkkaan ottaen näkyy, riippuu toiminnastasi, asetuksistasi ja Power BI -järjestelmänvalvojan tahdosta. 
  
-## <a name="explore-the-navigation-pane-nav-bar"></a>Tutustu siirtymisruutuun (siirtymispalkkiin)
+## <a name="explore-the-nav-pane"></a>Siirtymisruutuun tutustuminen
 
-![Näyttökuva Power BI -palvelun siirtymispalkista.](media/end-user-home/power-bi-nav-bar.png)
+![Näyttökuva Power BI -palvelun siirtymisruudusta.](media/end-user-home/power-bi-nav-bar.png)
 
 
-Käytä vasenta siirtymisruutua (siirtymispalkkia) koontinäyttöjen, raporttien ja sovellusten paikantamiseen ja niiden välillä siirtymiseen. Joskus siirtymispalkin käyttäminen on nopein tapa päästä sisältöön.
-Siirtymispalkki on näkyvissä, kun avaat aloitussivusi, ja pysyy muuttumattomana avatessasi muita Power BI -palvelun alueita.
+Käytä siirtymisruutua koontinäyttöjen, raporttien ja sovellusten paikantamiseen ja niiden välillä siirtymiseen. Joskus siirtymisruudun käyttäminen on nopein tapa päästä sisältöön.
+Siirtymisruutu on näkyvissä, kun avaat aloitussivusi, ja pysyy muuttumattomana avatessasi muita Power BI -palvelun alueita.
   
-Siirtymispalkki järjestää sisältösi säilöihin, jotka muistuttavat sitä, mitä olet jo nähnyt aloitussivulla: Suosikit, Viimeisimmät, Sovellukset ja Jaettu kanssani. Pikaikkunoita käyttämällä voit tarkastella vain uusinta sisältöä kussakin näistä säilöistä, tai voit siirtyä sisältöluetteloihin, joista näet kunkin säilöluokan koko sisällön.
+Siirtymisruutu järjestää sisältösi säilöihin, jotka muistuttavat sitä, mitä olet jo nähnyt aloitussivulla: Suosikit, Viimeisimmät, Sovellukset ja Jaettu kanssani. Pikaikkunoita käyttämällä voit tarkastella vain uusinta sisältöä kussakin näistä säilöistä, tai voit siirtyä sisältöluetteloihin, joista näet kunkin säilöluokan koko sisällön.
  
 - Jos haluat avata jonkin näistä sisältöosioista ja näyttää luettelon kaikista kohteista, valitse otsikko.
 - Jos haluat tarkastella kunkin säilön viimeisimpiä tietoja, valitse pikaikkuna ( **>** ).
 
-    ![Video siirtymispalkin käyttämisestä Viimeisimmillä](media/end-user-home/power-bi-nav-bar.gif)
+    ![Video siirtymisruudun käyttämisestä kohdassa Viimeksi käytetyt](media/end-user-home/power-bi-nav-bar.gif)
 
  
-Siirtymispalkki on toinen tapa löytää haluamasi sisältö nopeasti. Sisältö on järjestetty samalla tavalla kuin aloitussivulla, mutta se näkyy luetteloina korttien sijaan. 
+Siirtymisruutu on toinen tapa löytää haluamasi sisältö nopeasti. Sisältö on järjestetty samalla tavalla kuin aloitussivulla, mutta se näkyy luetteloina korttien sijaan. 
 
 ## <a name="search-all-of-your-content"></a>Hae kaikesta sisällöstä
 Joskus haku on nopein tapa löytää sisältösi. Saatat esimerkiksi kaipailla aloitussivulta koontinäyttöä, jota et ole vähään aikaan käyttänyt. Ehkä myös muistat työtoverisi Aaronin jakaneen sen kanssasi, muttet muista, millä nimellä hän sitä kutsui tai minkä tyyppistä sisältöä hän jakoi ja oliko se oikeastaan koontinäyttö vai raportti.

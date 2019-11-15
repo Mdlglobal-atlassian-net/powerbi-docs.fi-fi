@@ -2,7 +2,6 @@
 title: Vinkkejä tyylikkäiden raporttien luomiseen
 description: Vinkkejä tyylikkäiden raporttien luomiseen Power BI -palvelussa ja Power BI Desktopissa
 author: davidiseminger
-manager: kfile
 ms.reviewer: willthom
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 04/13/2018
 ms.author: davidi
 LocalizationGroup: Reports
-ms.openlocfilehash: 4d686a807d9413c15b19ff382e5ac54fb696b10b
-ms.sourcegitcommit: 762857c8ca09ce222cc3f8b006fa1b65d11e4ace
+ms.openlocfilehash: d7f2c83cf1d0f29f2c0d0c6e621a253acdd3ce41
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66721342"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73860880"
 ---
 # <a name="tips-and-tricks-for-creating-reports-in-power-bi-desktop-and-power-bi-service"></a>Vinkkejä tyylikkäiden raporttien luomiseen Power BI Desktopissa ja Power BI -palvelussa
 Joskus voi tarvita hieman ylimääräistä apua, jotta tiedoista saa kaiken hyödyn irti. Olemme koonneet yhteen muutamia vinkkejä, joita voit hyödyntää, kun luot raportteja Microsoftin Power BI Desktopissa, Power BI -palvelussa *ja* Microsoft Excel 2016:ssa. Niistä on hyötyä myös Excel 2013 Pro Plus -versioissa, joissa Power Pivot -apuohjelma on otettu käyttöön sekä Power Query asennettuna ja käytössä.
@@ -163,12 +162,9 @@ DAX on Power BI Desktopissa käytettävä laskutoimitusten kaavakieli.  Se on op
 
 [Data Analysis Expressions (DAX) -viittaukset](https://msdn.microsoft.com/library/gg413422.aspx)
 
-[DAX Resource Center](http://social.technet.microsoft.com/wiki/contents/articles/1088.dax-resource-center.aspx)
+[DAX Resource Center](https://social.technet.microsoft.com/wiki/contents/articles/1088.dax-resource-center.aspx)
 
 ## <a name="power-bi-service-and-power-bi-desktop"></a>Power BI -palvelu *ja* Power BI Desktop
-
-### <a name="read-the-whitepaper-principles-for-designing-power-bi-reportsvisualspower-bi-visualization-best-practicesmd"></a>Lue tekninen raportti: [Power BI -raporttien suunnitteluperiaatteet](visuals/power-bi-visualization-best-practices.md)
-Tästä raportista voit lukea parhaita käytäntöjä raporttien suunnitteluun Power BI:ssä. Raportin alussa käsitellään suunnittelua ja suunnitteluperiaatteita, joita voit noudattaa omissa raporteissasi sekä raporttiin sisältyvissä sivuissa ja yksittäisissä visualisoinneissa. Monet näistä parhaista käytännöistä soveltuvat myös koontinäyttöjen suunnitteluun.
 
 ### <a name="read-andor-watch-how-to-design-visually-stunning-reports-and-dashboards-in-power-bi"></a>Lue ja/tai katso Visuaalisesti upeiden raporttien (ja koontinäyttöjen) suunnittelu Power BI:ssä
 Yhteisön jäsen Miguel Myers on tietojenkäsittelyasiantuntija sekä graafinen suunnittelija.
@@ -226,4 +222,4 @@ Suosittelemiamme teoksia:
 
 [Raportit Power BI:ssä](consumer/end-user-reports.md)
 
-Onko sinulla muuta kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
+Onko sinulla muuta kysyttävää? [Kokeile Power BI -yhteisöä](https://community.powerbi.com/)
