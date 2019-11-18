@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/29/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 1e4d589702bb471a2abc6af9448a6846825adbfe
-ms.sourcegitcommit: c0f4d00d483121556a1646b413bab75b9f309ae9
+ms.openlocfilehash: df3c8b33de32bb9dd42507cc7bb601cee9f6e575
+ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/29/2019
-ms.locfileid: "70160358"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73432028"
 ---
 # <a name="connect-azure-data-lake-storage-gen2-for-dataflow-storage-preview"></a>Yhdistä Azure Data Lake Storage Gen2 tietovuon tallennukseen (esikatselu)
 
@@ -183,7 +183,7 @@ Tähän liittyy myös joitakin tunnettuja ongelmia, kuten tässä osiossa on kuv
 
 Power BI Desktop -asiakkaat eivät voi käyttää **Azure Data Lake Storage -tilille** tallennettuja tietovoita, elleivät ne ole tietovuon omistajia tai niille ei ole myönnetty valtuutta käyttää CDM-kansiota Lake-järjestelmässä. Skenaario on seuraava:
 
-1. Anna on luonut uuden sovellustyötilan ja määrittänyt sen tallentamaan tietovuot organisaation Data Lake -järjestelmään. 
+1. Anna on luonut uuden työtilan ja määrittänyt sen tallentamaan tietovuot organisaation Data Lake -järjestelmään. 
 2. Ben, joka on myös Annan luoman työtilan jäsen, haluaa noutaa tietoja Annan luomasta tietovuosta Power BI Desktopin ja tietovuon liittimen avulla.
 3. Ben saa samankaltaisen virheen, koska häntä ei ole lisätty tietovuon CDM-kansion valtuutetuksi käyttäjäksi Lake-järjestelmässä.
 

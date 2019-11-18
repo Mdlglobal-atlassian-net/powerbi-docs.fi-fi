@@ -2,7 +2,6 @@
 title: Sisällön jakaminen ulkoisille vieraskäyttäjille Azure AD B2B:n avulla
 description: Power BI on integroitu Azure Active Directory Business-to-Businessin (Azure AD B2B) kanssa, jotta Power BI -sisältöä voidaan jakaa turvallisesti organisaation ulkopuolisten vierailevien käyttäjien kanssa.
 author: mgblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/09/2019
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 8b7327a7b32aacd222efc422263187f29285bd73
-ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
+ms.openlocfilehash: bcde2bc456ee48e8dc66d6c0ba6b17d79fbe43a8
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71075763"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73858023"
 ---
 # <a name="distribute-power-bi-content-to-external-guest-users-with-azure-ad-b2b"></a>Power BI -sisällön jakaminen ulkoisille vieraskäyttäjille Azure AD B2B:n avulla
 
@@ -81,7 +80,7 @@ Kun käytät [Salli ulkoisten vieraskäyttäjien muokata ja hallita sisältöä 
 
 ### <a name="use-power-bi-premium"></a>Power BI Premiumia käyttämällä
 
-Sovelluksen työtilan määrittäminen [Power BI Premium -kapasiteettiin](service-premium-what-is.md) sallii vieraskäyttäjän käyttää sovellusta ilman Power BI Pro -käyttöoikeutta. Power BI Premium sallii sovellusten myös hyödyntää muita toimintoja, kuten parannettua päivitystaajuutta, varattua kapasiteettia sekä suuria malleja.
+Työtilan määrittäminen [Power BI Premium -kapasiteettiin](service-premium-what-is.md) sallii vieraskäyttäjän käyttää sovellusta ilman Power BI Pro -käyttöoikeutta. Power BI Premium sallii sovellusten myös hyödyntää muita toimintoja, kuten parannettua päivitystaajuutta, varattua kapasiteettia sekä suuria malleja.
 
 ![Kaavio vieraskäyttäjän käyttökokemuksesta, Power BI Premium.](media/service-admin-azure-ad-b2b/license-approach-1.png)
 
@@ -113,6 +112,8 @@ Auta näitä käyttäjiä kirjautumaan Power BI:hin antamalla heille vuokraajan 
 
 * Ulkoisten Azure AD B2B -vieraiden pääsy on lähtökohtaisesti rajattu pelkkään kuluttajasisältöön. Ulkoiset Azure AD B2B -vieraat voivat tarkastella sovelluksia, koontinäyttöjä ja raportteja, viedä tietoja ja luoda sähköpostitilauksia koontinäytöille ja raporteille. He eivät pääse käsiksi työtilaan tai pysty julkaisemaan omaa sisältöään. Nämä rajoitukset eivät kuitenkaan koske niitä vieraskäyttäjiä, joiden käyttöoikeus perustuu ominaisuuteen [Salli ulkoisten vieraskäyttäjien muokata ja hallita sisältöä organisaatiossa](service-admin-portal.md#allow-external-guest-users-to-edit-and-manage-content-in-the-organization).
 
+* Vieraskäyttäjien kutsumiseen tarvitaan Power BI Pro -käyttöoikeus. Pro-kokeiluversion käyttäjät eivät voi kutsua vieraskäyttäjiä Power BI:ssä.
+
 * Eräät käyttökokemukset eivät ole niiden käyttäjien saatavilla, joiden käyttöoikeus perustuu ominaisuuteen [Salli ulkoisten vieraskäyttäjien muokata ja hallita sisältöä organisaatiossa](service-admin-portal.md#allow-external-guest-users-to-edit-and-manage-content-in-the-organization). Jos he haluavat päivittää tai julkaista raportteja, heidän tulee käyttää Power BI -palvelun verkkokäyttöliittymää, mm. Nouda tiedot, Power Bi Desktop -tiedostojen lataamiseksi verkkoon.  Seuraavia käyttökokemuksia ei tueta:
     * Suorajulkaisu Power BI Desktopista Power BI -palveluun
     * Vieraskäyttäjät eivät voi käyttää Power BI Desktopia yhteyden muodostamiseksi Power BI -palvelussa sijaitseviin palvelutietojoukkoihin
@@ -127,7 +128,12 @@ Auta näitä käyttäjiä kirjautumaan Power BI:hin antamalla heille vuokraajan 
     * Vieraskäyttäjät eivät voi käyttää Analysoi Excelissä -toimintoa.
     * Vieraskäyttäjiä ei voi mainita (@mentioned) kommentoitaessa.
     * Vieraskäyttäjät eivät voi käyttää paketteja.
-    * Vieraskäyttäjillä, jotka käyttävät tätä ominaisuutta, on oltava työpaikan tai oppilaitoksen tili. Vieraskäyttäjät, jotka käyttävät henkilökohtaista tiliä, kokevat enemmän rajoituksia kirjautumisrajoitusten vuoksi.
+    * Vieraskäyttäjillä, jotka käyttävät tätä ominaisuutta, on oltava työpaikan tai oppilaitoksen tili. 
+    
+* Vieraskäyttäjät, jotka käyttävät henkilökohtaista tiliä, kokevat enemmän rajoituksia kirjautumisrajoitusten vuoksi.
+    * He voivat käyttää Power BI -palvelun kulutuskokemuksia verkkoselaimella
+    * He eivät voi käyttää Power BI -mobiilisovelluksia.
+    * He eivät voi kirjautua sisään antamaan tunnistetietoja, jos vaatimuksena on työ-tai koulutili.
 
 * Tämä ominaisuus ei ole tällä hetkellä käytettävissä Power BI:n SharePoint Online -raportin verkko-osiossa.
 

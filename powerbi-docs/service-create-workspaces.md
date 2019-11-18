@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 09/10/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 32b9adc92222e2122aff41d7ef7ef351c3158951
-ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
+ms.openlocfilehash: 1087ac4301a172500c997e78ee3a16695f6b0d73
+ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72020252"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73021124"
 ---
 # <a name="create-classic-workspaces-in-power-bi"></a>Perinteisten työtilojen luominen Power BI:ssä
 
@@ -39,7 +39,7 @@ Kun luot sen, saatat joutua odottamaan noin tunnin verran, että työtila välit
 ### <a name="add-an-image-to-your-office-365-workspace-optional"></a>Kuvan lisääminen Office 365:n työtilaan (valinnainen)
 Oletusarvoisesti Power BI luo sovelluksellesi pienen värillisen ympyrän, jossa näkyy sovelluksen nimikirjaimet. Saatat kuitenkin haluta mukauttaa sitä käyttämällä jotain kuvaa. Kuvan lisäämiseksi tarvitset Exchange Online -käyttöoikeuden.
 
-1. Valitse **Työtilat**, valitse työtilan nimen vierestä kolme pistettä (...), ja valitse sitten **Jäsenet**. 
+1. Valitse **Työtilat**, valitse työtilan nimen vierestä **Enemmän vaihtoehtoja** (...) ja valitse sitten **Jäsenet**. 
    
      ![Työtilan jäsenten valitseminen](media/service-create-workspaces/power-bi-workspace-old-members.png)
    

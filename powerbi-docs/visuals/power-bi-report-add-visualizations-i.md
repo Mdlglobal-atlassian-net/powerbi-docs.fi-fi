@@ -8,61 +8,67 @@ featuredvideoid: IkJda4O7oGs
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/17/2019
+ms.date: 10/28/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: c5838d12351c06d0a76a975c9c473b1c00856d97
-ms.sourcegitcommit: 90aa7ea5fcc7cf0fd7f6c3c1efeff5f27e8ef0dd
+ms.openlocfilehash: e25db5ab57e3a52ffc08020dc980553e515256bf
+ms.sourcegitcommit: 2a61d8b1e2707a24fe1284a8a4034b11c3999842
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "67299149"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73048898"
 ---
 # <a name="part-1-add-visualizations-to-a-power-bi-report"></a>Visualisointien lisääminen Power BI -raporttiin, osa 1
+
+[!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
 Tässä artikkelissa annetaan lyhyt esittely visualisointien lisäämisestä raporttiin. Se koskee sekä Power BI -palvelua että Power BI Desktopia. Katso lisätietoja edistyneemmästä sisällöstä tämän sarjan [osasta 2](power-bi-report-add-visualizations-ii.md). Katso kuinka Amanda esittelee joitakin eri tapoja, joilla raportille voidaan luoda visualisointeja ja kuinka niitä voidaan muokata ja muotoilla. Voit sitten kokeilla itse luomalla oman raportin [Myynti- ja markkinointimallista](../sample-datasets.md).
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/IkJda4O7oGs" frameborder="0" allowfullscreen></iframe>
 
-## <a name="open-a-report-and-add-a-new-page"></a>Raportin avaaminen ja uuden sivun lisääminen
+## <a name="prerequisites"></a>Edellytykset
 
-1. Avaa [raportti muokkausnäkymässä](../service-interact-with-a-report-in-editing-view.md).
+Tässä opetusohjelmassa käytetään [myynti- ja markkinointi -PBIX-tiedostoa](http://download.microsoft.com/download/9/7/6/9767913A-29DB-40CF-8944-9AC2BC940C53/Sales%20and%20Marketing%20Sample%20PBIX.pbix).
 
-    Tässä opetusohjelmassa käytetään [myynti- ja markkinointimallia](../sample-datasets.md).
+1. Valitse Power BI Desktopin valikkorivin vasemmasta yläosasta **Tiedosto** > **Avaa**
+   
+2. Etsi oma **myynti- ja markkinointi -PBIX-tiedostosi**
 
-1. Jos **Kentät**-ruutu ei ole näkyvissä, valitse nuolikuvake sen avaamiseksi.
+1. Avaa **myynti- ja markkinointi -PBIX-tiedosto** raporttinäkymässä ![Näyttökuva raporttinäkymän kuvakkeesta.](media/power-bi-visualization-kpi/power-bi-report-view.png).
 
-   ![](media/power-bi-report-add-visualizations-i/pbi_nancy_fieldsfiltersarrow.png)
-
-1. Lisää raporttiin tyhjä sivu.
+1. Valitse ![Näyttökuva keltaisesta välilehdestä.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) uuden sivun lisäämiseksi.
 
 ## <a name="add-visualizations-to-the-report"></a>Visualisointien lisääminen raporttiin
 
 1. Luo visualisointi vetämällä kenttä **Kentät**-ruudussa.
 
-    Aloita numeerisesta kentästä, kuten **SalesFact** > **Sales $** . Power BI luo pylväskaavion, jossa on yksi pylväs.
+    Aloita numeerisesta kentästä, kuten **Sales** > **TotalSales**. Power BI luo pylväskaavion, jossa on yksi pylväs.
 
-    ![Näyttökuva pylväskaaviosta, jossa on yksi pylväs.](media/power-bi-report-add-visualizations-i/pbi_onecolchart.png)
+    ![Näyttökuva pylväskaaviosta, jossa on yksi pylväs.](media/power-bi-report-add-visualizations-i/power-bi-column-chart.png)
 
     Tai voit aloittaa luokkakentästä, kuten **Nimi** tai **Tuote**. Power BI luo taulukon ja lisää tämän kentän **Arvot**-säilöön.
 
-    ![GIF-kuva henkilöstä valitsemassa tuotetta ja sitten luokkaa taulukon luomiseksi.](media/power-bi-report-add-visualizations-i/pbi_agif_createchart3.gif)
+    ![Näyttökuva taulukosta, jossa on neljä luokkaa](media/power-bi-report-add-visualizations-i/power-bi-product.png)
 
     Tai aloita paikkatietokentästä, kuten **Alue** > **Kaupunki**. Power BI ja Bing Maps luovat karttavisualisoinnin.
 
-    ![Näyttökuva karttavisualisoinnista.](media/power-bi-report-add-visualizations-i/power-bi-map.png)
+    ![Näyttökuva karttavisualisoinnista.](media/power-bi-report-add-visualizations-i/power-bi-maps.png)
 
-1. Luo visualisointi ja muuta sitten sen tyyppiä. Valitse **Tuote** > **Luokka** ja sitten **Tuote** > **Tuotteen määrä** lisätäksesi ne molemmat **Arvot**-säilöön.
+## <a name="change-the-type-of-visualization"></a>Visualisoinnin tyypin vaihtaminen
 
-   ![Näyttökuva Kentät-ruudusta, jossa on korostettu Arvot-säilö.](media/power-bi-report-add-visualizations-i/part1table1.png)
+ Luo visualisointi ja muuta sitten sen tyyppiä. 
+ 
+ 1. Valitse **Tuote** > **Luokka** ja sitten **Tuote** > **Tuotteen määrä** lisätäksesi ne molemmat **Arvot**-säilöön.
+
+    ![Näyttökuva Kentät-ruudusta, jossa on korostettu Arvot-säilö.](media/power-bi-report-add-visualizations-i/power-bi-create-visual.png)
 
 1. Muuta visualisointi pylväskaavioksi valitsemalla **pinotun pylväskaavion kuvake**.
 
-   ![Näyttökuva visualisointiruudusta, jossa on korostettu pinotun pylväskaavion kuvake.](media/power-bi-report-add-visualizations-i/part1converttocolumn.png)
+   ![Näyttökuva visualisointiruudusta, jossa on korostettu pinotun pylväskaavion kuvake.](media/power-bi-report-add-visualizations-i/power-bi-convert.png)
 
-1. Kun olet luonut visualisointeja raporttiin, voit [kiinnittää ne raporttinäkymään](../service-dashboard-pin-tile-from-report.md). Kiinnittääksesi visualisoinnin, valitse kiinnityskuvake ![Näyttökuva kiinnityskuvakkeesta.](media/power-bi-report-add-visualizations-i/pinnooutline.png).
+1. Muuta visualisoinnin lajittelutapaa valitsemalla **Enemmän vaihtoehtoja** (...).  Lajitteluasetusten avulla voit muuttaa lajittelun suuntaa (nouseva tai laskeva) lajitteluperusteena käytettävää saraketta (**Lajitteluperuste**).
 
-   ![Näyttökuva pylväskaaviovisualisoinnista, jossa on korostettu kiinnityskuvake.](media/power-bi-report-add-visualizations-i/part1pin1.png)
+   ![Näyttökuva Lisää toimintoja -valikosta.](media/power-bi-report-add-visualizations-i/power-bi-sort.png)
   
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
@@ -70,8 +76,5 @@ Tässä artikkelissa annetaan lyhyt esittely visualisointien lisäämisestä rap
 
 * [Osa 2: Visualisointien lisääminen Power BI -raporttiin](power-bi-report-add-visualizations-ii.md)
 
-* [Käsittele raportin visualisointeja](../consumer/end-user-reading-view.md).
+* Toimia raportin [visualisointien kanssa](../consumer/end-user-reading-view.md).
 
-* [Luo lisää visualisointeja](power-bi-report-visualizations.md).
-
-* [Tallenna raporttisi](../service-report-save.md).

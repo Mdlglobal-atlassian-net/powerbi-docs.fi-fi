@@ -9,12 +9,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 10/13/2017
 ms.author: mshenhav
-ms.openlocfilehash: a99d18d424421949ede9bacd5642235b04170659
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: 23f2b41b84c387ca772fdda1397a6c5e4fce6acf
+ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "61338875"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73017668"
 ---
 # <a name="explore-your-data-in-the-power-bi-mobile-app-on-your-apple-watch"></a>Power BI -tietojen tarkastelu Apple Watch -mobiilisovelluksessa
 Power BI Apple Watch -sovelluksella voit tarkastella suorituskykymittareita ja korttiruutuja Power BI-raporttinäkymästä omassa kellossasi. Suorituskykymittarit ja korttiruudut sopivat parhaiten sykkeen mittaamiseen pienellä näytöllä. Voit päivittää raporttinäkymän iPhonesta tai itse kellosta.
@@ -52,7 +52,7 @@ Kellon sovellus synkronoi nyt raporttinäkymän Power BI -palvelusta saaduilla t
 Voit myös päivittää Apple Watch -laitteesi raporttinäkymän iPhonesta.
 
 1. Avaa iPhonen Power BI -sovelluksessa raporttinäkymä, jonka haluat synkronoida Apple Watchin kanssa. 
-2. Valitse kolme pistettä (...) > **Synkronoi kellon kanssa**.
+2. Valitse **Lisää vaihtoehtoja** (...) > **Synkronoi kellon kanssa**.
 
 Power BI näyttää ilmaisimen, että raporttinäkymä on synkronoitu kellon kanssa.
 

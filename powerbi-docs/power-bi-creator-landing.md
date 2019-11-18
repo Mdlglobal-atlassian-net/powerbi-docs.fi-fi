@@ -1,21 +1,20 @@
 ---
 title: Power BI raporttien kehittäjille
 description: Muodostatko yhteyden tietoihin, suunnitteletko kyselyjä ja luotko raportteja ja koontinäyttöjä Power BI:ssä? Oletko Power BI -järjestelmänvalvoja?
-author: maggiesMSFT
-manager: kfile
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: landing-page
 ms.date: 10/07/2019
 ms.author: maggies
+author: maggiesMSFT
 layout: LandingPage
 LocalizationGroup: Get started
-ms.openlocfilehash: 4defed78228805a3f61447def82b3c3d406103d3
-ms.sourcegitcommit: d02de4ca33d865aee3e3e764b98f221950cb0a10
+ms.openlocfilehash: cb80bad73a615621ad8a2459e71607900f8d493d
+ms.sourcegitcommit: 01de0b01f66f28ca45b8d309d7864f261d6c9a85
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "72239883"
+ms.lasthandoff: 11/16/2019
+ms.locfileid: "74128327"
 ---
 # <a name="power-bi-for-report-designers"></a>Power BI raporttien suunnittelijoille
 
@@ -37,7 +36,7 @@ Oletko Power BI:n kuluttaja? Myös sinä olet tervetullut. Suosittelemme aloitta
                                           <h3>Aloita luominen Power BI:n avulla</h3> 
                                           <p></p>
                                                <a href="desktop-what-is-desktop.md">Power BI Desktopin käytön aloittaminen</a><br/> 
-                                               <a href="power-bi-overview.md">Power BI -palvelun käytön aloittaminen</a><br/> 
+                                               <a href="fundamentals/power-bi-overview.md">Power BI -palvelun käytön aloittaminen</a><br/> 
                                                <a href="report-server/get-started.md">Mikä on Power BI -raporttipalvelin?</a>
                                     </div> 
                               </div> 
@@ -156,7 +155,7 @@ Oletko Power BI:n kuluttaja? Myös sinä olet tervetullut. Suosittelemme aloitta
                                           <h3>Töiden jakaminen</h3> 
                                           <p></p>
                                                 <a href="service-how-to-collaborate-distribute-dashboards-reports.md">Miten tehdään yhteistyötä ja jaetaan?</a><br/>
-                                                <a href="service-create-workspaces.md">Sovellustyötilat Power BI -palvelussa</a> 
+                                                <a href="service-create-workspaces.md">Työtilat Power BI -palvelussa</a> 
                                     </div> 
                               </div> 
                         </div> 

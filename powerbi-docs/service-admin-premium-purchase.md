@@ -10,12 +10,12 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 03/12/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: a6e37885c5e15dbaaa28fc5cb693089fda747c9e
-ms.sourcegitcommit: a6602d84c86d3959731a8d0ba39a522914f13d1a
+ms.openlocfilehash: 1d2ff47fdbc31598524986742319ab36c8f3e957
+ms.sourcegitcommit: 2b7beec5237a597bab2da8eb6ffe69122a5d2ed9
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/21/2019
-ms.locfileid: "71175232"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "73442897"
 ---
 # <a name="how-to-purchase-power-bi-premium"></a>Ohjeet Power BI Premiumin ostamiseen
 
@@ -30,17 +30,17 @@ Jos Premium-tilaus päättyy, sinulla on täydet käyttöoikeudet kapasiteettiis
 
 ## <a name="create-a-new-tenant-with-power-bi-premium-p1"></a>Luo uusi vuokralainen Power BI Premium P1:llä
 
-Jos sinulla ei ole vuokraajaa ja haluat luoda sellaisen, voit ostaa Power BI Premiumin samaan aikaan. Seuraavat linkit auttavat sinua luomaan uuden vuokraajan ja hankkimaan Power BI Premiumin: [Power BI Premium P1 -tarjous](https://signup.microsoft.com/Signup?OfferId=b3ec5615-cc11-48de-967d-8d79f7cb0af1). Kun luot vuokraajan, sinusta tulee automaattisesti kyseisen vuokraajan Office 365:n yleinen järjestelmänvalvoja.
+Jos sinulla ei ole vuokraajaa ja haluat luoda sellaisen, voit ostaa Power BI Premiumin samaan aikaan. Seuraavat linkit auttavat sinua luomaan uuden vuokraajan ja hankkimaan Power BI Premiumin: [Power BI Premium P1 -tarjous](https://signup.microsoft.com/Signup?OfferId=b3ec5615-cc11-48de-967d-8d79f7cb0af1). Kun luot vuokraajan, sinusta tulee automaattisesti kyseisen vuokraajan Microsoft 365:n yleinen järjestelmänvalvoja.
 
 ## <a name="purchase-a-power-bi-premium-capacity-for-an-existing-organization"></a>Voit ostaa Power BI Premium -kapasiteettia organisaatiolle
 
-Jos sinulla on aiemmin luotu organisaatio (vuokraaja), sinun on oltava joko Office 365:n yleinen järjestelmänvalvoja tai laskutuksen järjestelmänvalvoja, jotta voit ostaa tilauksia ja käyttöoikeuksia. Jos haluat lisätietoja, katso [Tietoja Office 365:n järjestelmänvalvojarooleista](https://support.office.com/article/About-Office-365-admin-roles-da585eea-f576-4f55-a1e0-87090b6aaa9d).
+Jos sinulla on aiemmin luotu organisaatio (vuokraaja), sinun on oltava joko Microsoft 365:n yleinen järjestelmänvalvoja tai laskutuksen järjestelmänvalvoja, jotta voit ostaa tilauksia ja käyttöoikeuksia. Jos haluat lisätietoja, katso [Tietoja Microsoft 365:n järjestelmänvalvojarooleista](https://support.office.com/article/About-Office-365-admin-roles-da585eea-f576-4f55-a1e0-87090b6aaa9d).
 
 Jos haluat ostaa Premium-kapasiteetin, toimi seuraavasti.
 
-1. Valitse Power BI -palvelussa Office 365 -sovellusvalitsin ja sitten **Järjestelmänvalvoja**.
+1. Valitse Power BI -palvelussa Microsoft 365 -sovellusvalitsin ja sitten **Järjestelmänvalvoja**.
 
-    ![Office 365 -sovellusvalitsin](media/service-admin-premium-purchase/o365-app-picker.png)
+    ![Microsoft 365 -sovellusvalitsin](media/service-admin-premium-purchase/o365-app-picker.png)
 
     Voit myös selata Microsoft 365 -hallintakeskuksessa. Pääset siihen siirtymällä osoitteeseen https://portal.office.com ja valitsemalla **Järjestelmänvalvoja**.
 
@@ -66,7 +66,7 @@ Nyt kun sinulla on kapasiteetti, voit ostaa lisää kapasiteettia tarpeidesi muk
 
 1. Etsi lisää ostettava Power BI Premium -tuote kohdasta **Muut palvelupaketit**.
 
-1. Pidä osoitinta **kolmen pisteen (...)** päällä ja valitse sitten **Muuta käyttöoikeuksien määrää**.
+1. Pidä osoitinta **Enemmän vaihtoehtoja** (...) -valikon päällä ja valitse sitten **Muuta käyttöoikeuksien määrää**.
 
     ![Muokkaa käyttöoikeuksien määrää](media/service-admin-premium-purchase/premium-purchase-more.png)
 

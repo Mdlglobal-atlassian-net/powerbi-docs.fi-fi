@@ -1,6 +1,6 @@
 ---
 title: Lisää CDM-kansio Power BI:hin tietovuona
-description: Määritä sovelluksen työtila tallentamaan tietovuon määritys- ja datatiedostot Azure Data Lake Storage Gen2:ssa
+description: Määritä työtila tallentamaan tietovuon määritys- ja datatiedostot Azure Data Lake Storage Gen2:ssa
 author: davidiseminger
 manager: kfile
 ms.reviewer: ''
@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 04/02/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: bf2f9baff753b71563c9b5075d3b15be7ae833f9
-ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
+ms.openlocfilehash: 3adc642d539ab8e1c1f1f60981a61fdc58a460ab
+ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68522759"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73432037"
 ---
 # <a name="add-a-cdm-folder-to-power-bi-as-a-dataflow-preview"></a>Lisää CDM-kansio Power BI:hin tietovuona (esikatselu)
 
@@ -33,7 +33,7 @@ Seuraavissa osissa kuvataan tietovuon luominen CDM-kansiosta.
 
 ## <a name="create-a-dataflow-from-a-cdm-folder"></a>Tietovuon luominen CDM-kansiosta
 
-Aloita tietovuon luominen CDM-kansiosta käynnistämällä **Power BI -palvelu**. Valitse sitten **sovellustyötila** vasemmasta siirtymisruudusta. Voit myös luoda uuden työtilan, jossa voit luoda uuden tietovuon.
+Aloita tietovuon luominen CDM-kansiosta käynnistämällä **Power BI -palvelu**. Valitse sitten **työtila** vasemmasta siirtymisruudusta. Voit myös luoda uuden työtilan, jossa voit luoda uuden tietovuon.
 
 ![Tietovuon luominen Power BI -palvelussa](media/service-dataflows-add-cdm-folder/dataflow-from-cdm-folder_02.jpg)
 
@@ -74,7 +74,7 @@ Muita harkittavia seikkoja on seuraavassa luettelossa:
 
 **Power BI Desktop** -asiakas ei voi käyttää Azure Data Lake Storage Gen2 -tiliin tallennettuja tietovoita, jos hän ei ole tietovuon omistaja tai jos hänelle ei ole myönnetty nimenomaista oikeutta käyttää tietovuon CDM-kansiota. Katso seuraavaa esimerkkiä:
 
-1.  Anna luo uuden sovellustyötilan ja määrittää sen tallentamaan tietovuot CDM-kansioon.
+1.  Anna luo uuden työtilan ja määrittää sen tallentamaan tietovuot CDM-kansioon.
 2.  Ben, joka on myös jäsen Annan luomassa työtilassa, haluaa noutaa tietoja Annan luomasta tietovuosta Power BI Desktopin ja tietovuon liittimen avulla.
 3.  Ben saa virheen, koska häntä ei ole lisätty tietovuon CDM-kansion valtuutetuksi käyttäjäksi Data Lake -järjestelmässä.
 

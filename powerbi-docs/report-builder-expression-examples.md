@@ -1,19 +1,19 @@
 ---
 title: Power BI:n raportin muodostimen lauseke-esimerkit
 description: Lausekkeita käytetään usein Power BI:n sivutettujen raporttien muodostimella luoduissa raporteissa sisällön ja raportin ulkoasun hallintaan.
-ms.date: 06/06/2019
+ms.date: 10/21/2019
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.assetid: 87ddb651-a1d0-4a42-8ea9-04dea3f6afa4
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: 9f3131749a484380a1352d39ae35ea409f6dc697
-ms.sourcegitcommit: bc688fab9288ab68eaa9f54b9b59cacfdf47aa2e
+ms.openlocfilehash: 06847956eae4dfefc7cff75b5a360fbb8b892c39
+ms.sourcegitcommit: d173e22f5a3e76717adfaa573ea391bde0338ffe
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68624136"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72728557"
 ---
 # <a name="expression-examples-in-power-bi-report-builder"></a>Power BI:n raportin muodostimen lauseke-esimerkit
 Lausekkeita käytetään usein Power BI:n sivutettujen raporttien muodostimella luoduissa raporteissa sisällön ja raportin ulkoasun hallintaan. Lausekkeet kirjoitetaan Microsoft Visual Basicilla, ja niissä voidaan käyttää sisäisiä funktioita, mukautettua koodia, raportti- ja ryhmämuuttujia sekä käyttäjän määrittämiä muuttujia. Lausekkeet alkavat yhtäläisyysmerkillä (=).   
@@ -35,7 +35,7 @@ Tässä aiheessa on esimerkkejä lausekkeista, joita voidaan käyttää raportti
 Katso kohdasta [lausekkeet Power BI:n raportin muodostimessa](report-builder-expressions.md) yksinkertaisten ja monimutkaisten lausekkeiden lisätiedot, missä lausekkeita voidaan käyttää ja minkä tyyppisiä viittauksia voit sisällyttää lausekkeeseen. 
   
 ## <a name="functions"></a>Funktiot  
- Monet raporttien lausekkeet sisältävät funktioita. Voit muotoilla tietoja, soveltaa logiikkaa ja käyttää raportin metatietoja näiden funktioiden avulla. Voit kirjoittaa lausekkeita, joissa käytetään Microsoft Visual Basic -suorituskirjaston `xref:System.Convert` ja `xref:System.Math` -nimitilojen funktioita. Voit lisätä viittauksia funktioihin muista kokoonpanoista tai mukautetusta koodista. Voit käyttää myös Microsoft.NET Frameworkin luokkia, kuten `xref:System.Text.RegularExpressions`.  
+ Monet raporttien lausekkeet sisältävät funktioita. Voit muotoilla tietoja, soveltaa logiikkaa ja käyttää raportin metatietoja näiden funktioiden avulla. Voit kirjoittaa lausekkeita, joissa käytetään Microsoft Visual Basic -suorituskirjaston `xref:System.Convert` ja `xref:System.Math` -nimitilojen funktioita. Voit lisätä viittauksia funktioihin mukautettuna koodina. Voit käyttää myös Microsoft.NET Frameworkin luokkia, kuten `xref:System.Text.RegularExpressions`.  
   
 ##  <a name="VisualBasicFunctions"></a> Visual Basic -funktiot  
  Visual Basic -funktioilla voit käsitellä tietoja, jotka näytetään tekstiruuduissa tai joita käytetään parametreissa, ominaisuuksissa tai raportin muissa alueissa. Tämä osio sisältää esimerkkejä joistain tällaisista funktioista. Katso lisätiedot kohdasta [Visual Basic Runtime -kirjaston jäsenet](https://go.microsoft.com/fwlink/?LinkId=198941) MSDN:ssä.  
@@ -476,7 +476,7 @@ Katso kohdasta [lausekkeet Power BI:n raportin muodostimessa](report-builder-exp
     ```  
   
 ##  <a name="CustomCode"></a> Mukautettu koodi  
- Voit käyttää mukautettua koodia raportissa. Mukautettu koodi joko upotetaan raporttiin tai tallennetaan mukautettuun, raportissa käytettävään kokoonpanoon.  
+ Voit käyttää mukautettua koodia upotettuna raporttiin. 
   
 ### <a name="using-group-variables-for-custom-aggregation"></a>Ryhmän muuttujien käyttäminen mukautettuun koostamiseen  
  Voit valmistella tiettyyn ryhmän laajuuteen liittyvän ryhmämuuttujan arvon ja sisällyttää lausekkeisiin viittauksen kyseiseen muuttujaan. Voit käyttää mukautettua koodia sisältävän ryhmän muuttujaa esimerkiksi mukautetun koosteen toteuttamiseen. 

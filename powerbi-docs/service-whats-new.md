@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/28/2019
+ms.date: 10/22/2019
 ms.author: nikhilga
 LocalizationGroup: Get started
-ms.openlocfilehash: 7d45b63d3cd97185ce9be9e0592565a491cf195f
-ms.sourcegitcommit: 4a3afe761d2f4a5bd897fafb36b53961739e8466
+ms.openlocfilehash: a6595389a95cbf434bc9deb9f1560f6157910ceb
+ms.sourcegitcommit: d441d350504f8c6d9e100d229757add6237f0bef
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/20/2019
-ms.locfileid: "69655046"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73061006"
 ---
 # <a name="whats-new-in-the-power-bi-service"></a>Power BI -palvelun uudet toiminnot ja ominaisuudet
 Tarkista tältä sivulta **Power BI -palvelun** tunnetut ongelmat ja hiljattain julkaistut ominaisuudet. Lisätietoja aiheeseen liittyvistä uusista ominaisuuksista:
@@ -30,11 +30,43 @@ Saat lisätietoja uusista toiminnoista ja ominaisuuksista myös YouTube-kanavist
 * [Microsoft Power BI (YouTube)](https://www.youtube.com/channel/UCy--PYvwBwAeuYaR8JLmrfg)
 * [Kaveri kuutiossa (YouTube)](https://www.youtube.com/channel/UCFp1vaKzpfvoGai0vE5VJ0w)
 
-## <a name="may-2019"></a>Toukokuu 2019
-* [Mukautettu siirtyminen](service-create-distribute-apps.md) Power BI -sovelluksissa.
-* Muita liitetiedostotyyppejä (PPTX, XLSX, DOCX, CSV, XML) on saatavana sähköpostitilauksia varten sivutetuissa raporteissa.
+### <a name="october-2019"></a>Lokakuu 2019
+* Uusi Microsoft Flow -toiminto Power BI -tietojoukkojen päivittämiseen.
+* Power BI -palvelun raporttien ja koontinäyttöjen [yhteystietoluettelo](https://powerbi.microsoft.com/en-us/blog/announcing-new-contact-lists-for-reports-and-dashboards-in-the-power-bi-service/).
 
 ## <a name="previous-months-2019"></a>Edelliset kuukaudet (2019)
+### <a name="september-2019"></a>Syyskuu 2019
+* Päivitykset [mallisovellusten](service-template-apps-overview.md) yhteyden määrittämiseen.
+
+### <a name="august-2019"></a>Elokuu 2019
+* Uusia kapasiteettiasetuksia Power BI Premiumille.
+* [Mukautettu tuotemukautus](https://powerbi.microsoft.com/en-us/blog/announcing-custom-branding-for-your-organization/) organisaation käyttöön.
+* Yhteenvedettyjen tietojen vienti muodostamisoikeuksilla.
+* [Sivutettujen raporttien](paginated-reports-report-builder-power-bi.md) URL-parametrien tuki.
+* Kuukausittaisten sähköpostitilausten tuki. 
+
+### <a name="july-2019"></a>Heinäkuu 2019
+* [Sivutettujen raporttien](paginated-reports-report-builder-power-bi.md) muiden kuin Premium-tietojoukkojen tuki.
+* Power BI -[koosteiden](desktop-aggregations.md) yleinen saatavuus.
+* Päivitysilmoitusten lähettäminen muille.
+* [Testaustyökalu](https://powerbi.microsoft.com/en-us/blog/power-bi-premium-know-what-your-premium-capacity-can-handle/) Power BI Premium -kapasiteeteille.
+* [Palvelun käytettävyysilmoitusten](https://powerbi.microsoft.com/en-us/blog/power-bi-introduces-service-availability-notifications/) julkinen esikatselu.
+* Power BI -raporttien [uuden ulkoasun](https://powerbi.microsoft.com/en-us/blog/introducing-the-new-look-for-power-bi-service/) julkinen esikatselu.
+* Uusi Power BI -alue Etelä-Afrikassa.
+
+### <a name="june-2019"></a>Kesäkuu 2019
+* [Jaettujen ja sertifioitujen tietojoukkojen](service-datasets-across-workspaces.md) julkinen esikatselu.
+* [Premium-kapasiteettimittarisovelluksessa](service-admin-premium-monitor-capacity.md) käytettävissä olevat AI-mittarit.
+* [Power BI -mallisovellusten](service-template-apps-overview.md) yleinen saatavuus.
+* [Sivutettujen raporttien](paginated-reports-report-builder-power-bi.md) yleinen saatavuus Power BI:ssä.
+* Bring Your Own Keyn ([BYOK](service-encryption-byok.md)) julkinen esikatselu Power BI Premiumissa.
+* Katselija-rooli [uudelle työtilakokemukselle](service-new-workspaces.md).
+
+### <a name="may-2019"></a>Toukokuu 2019
+* [Mukautettu siirtyminen](service-create-distribute-apps.md) Power BI -sovelluksissa.
+* Muita liitetiedostotyyppejä (PPTX, XLSX, DOCX, CSV, XML) on saatavana sähköpostitilauksia varten sivutetuissa raporteissa.
+* Power BI raporttien [kommentointi](https://powerbi.microsoft.com/en-us/blog/announcing-report-commenting-for-power-bi-service-and-mobile/) palvelussa.
+
 ### <a name="april-2019"></a>Huhtikuu 2019
 * Power BI:n [tietovoiden](service-dataflows-overview.md) yleinen saatavuus.
 * Uuden työtilakokemuksen yleinen saatavuus.
@@ -731,7 +763,7 @@ Saat lisätietoja [blogista](http://blogs.msdn.com/b/powerbi/archive/2015/10/06/
 * OneDrive-päivityksen luotettavuutta on parannettu.  Tilanteet, joissa työkirjoja ei päivitetty OneDrivesta, on ratkaistu.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
-[Mikä on Power BI?](power-bi-overview.md)  
+[Mikä on Power BI?](fundamentals/power-bi-overview.md)  
 
 Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)
 

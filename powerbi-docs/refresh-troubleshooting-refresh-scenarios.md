@@ -2,7 +2,6 @@
 title: Päivitystilanteiden vianmääritys
 description: Päivitystilanteiden vianmääritys
 author: mgblythe
-manager: kfile
 ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,21 +9,27 @@ ms.topic: troubleshooting
 ms.date: 09/13/2019
 ms.author: mblythe
 LocalizationGroup: Data refresh
-ms.openlocfilehash: 564c3d03a7879cd7788e19055d8c11e4de46013f
-ms.sourcegitcommit: e5cf19e16112c7dad1591c3b38d232267ffb3ae1
+ms.openlocfilehash: d79fc47ff30d7f28827290268ba01edf09643032
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72543867"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73860502"
 ---
 # <a name="troubleshooting-refresh-scenarios"></a>Päivitystilanteiden vianmääritys
 
 Täältä löydät eri skenaarioita koskevia tietoja, joita saatat kohdata Power BI -palvelun tietojen päivittämisen yhteydessä.
 
 > [!NOTE]
-> Jos kohtaat skenaarion, joka aiheuttaa ongelmia, etkä löydä sitä luettelossa, voit pyytää apua [yhteisösivustolla](http://community.powerbi.com/) tai luoda [tukipalvelupyynnön](https://powerbi.microsoft.com/support/).
+> Jos kohtaat skenaarion, joka aiheuttaa ongelmia, etkä löydä sitä luettelossa, voit pyytää apua [yhteisösivustolla](https://community.powerbi.com/) tai luoda [tukipalvelupyynnön](https://powerbi.microsoft.com/support/).
 >
 >
+
+## <a name="email-notifications"></a>Sähköposti-ilmoitukset
+
+Jos olet siirtynyt tähän artikkeliin sähköposti-ilmoituksesta etkä halua enää vastaanottaa päivitysongelmia koskevia sähköpostiviestejä, ota yhteyttä Power BI -järjestelmänvalvojaan. Pyydä häntä poistamaan sähköpostiosoitteesi tai tilaamasi postituslista asianmukaisista Power BI:n tietojoukoista. Järjestelmänvalvoja voi tehdä tämän seuraavan Power BI -hallintaportaalin alueen kautta.
+
+![Sähköposti päivitysilmoituksista](media/refresh-troubleshooting-refresh-scenarios/refresh-email.png)
 
 ## <a name="refresh-using-web-connector-doesnt-work-properly"></a>Päivittäminen käyttämällä verkkoyhdistintä ei toimi oikein
 
@@ -86,5 +91,5 @@ Tietojen päivittäminen voi epäonnistua myös vanhentuneiden välimuistissa ol
 - [Paikallisen tietoyhdyskäytävän vianmääritys](service-gateway-onprem-tshoot.md)  
 - [Power BI -yhdyskäytävän vianmääritys – Personal](service-admin-troubleshooting-power-bi-personal-gateway.md)  
 
-Onko sinulla kysyttävää? [Kysy Microsoftin Power BI -yhteisöltä](http://community.powerbi.com/)
+Onko sinulla kysyttävää? [Kysy Microsoftin Power BI -yhteisöltä](https://community.powerbi.com/)
 

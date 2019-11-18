@@ -1,6 +1,6 @@
 ---
 title: Power BI -käyttöoikeudet organisaatiossasi
-description: 'Tutustu eri käyttöoikeustyyppeihin, jotka ovat käytettävissä Power BI:ssä: maksuton käyttöoikeus, Power BI Pro ja Power BI Premium.'
+description: 'Tutustu eri käyttöoikeustyyppeihin, jotka ovat käytettävissä Power BI:ssä: maksuttomat käyttöoikeudet, Power BI Pro ja Power BI Premium.'
 author: mgblythe
 manager: kfile
 ms.reviewer: ''
@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 09/09/2019
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 24cc798814e0c19de4f1dd4d0d6907fc7a0074a6
-ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
+ms.openlocfilehash: e7a851a890fa734c045bb9cee60d429f87a3a602
+ms.sourcegitcommit: 2b7beec5237a597bab2da8eb6ffe69122a5d2ed9
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71075419"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "73442828"
 ---
 # <a name="power-bi-licensing-in-your-organization"></a>Power BI -käyttöoikeudet organisaatiossasi
 
@@ -27,9 +27,9 @@ Tässä artikkelissa keskitytään käyttäjäkohtaiseen käyttöoikeuteen järj
 
 Järjestelmänvalvojana voit ostaa ja määrittää Power BI Pro -käyttöoikeuksia, ja voit myös rekisteröidä Power BI Pro -kokeiluversion organisaatiollesi. Yksittäiset käyttäjät voivat myös rekisteröityä Power BI Pro -kokeiluversion käyttäjäksi.
 
-### <a name="purchase-power-bi-pro"></a>Osta Power BI Pro
+### <a name="purchase-power-bi-pro-licenses"></a>Power BI Pro- käyttöoikeuksien ostaminen
 
-Voit ostaa Power BI Pro -käyttöoikeudet Microsoft Office 365:n tai sertifioidun Microsoft-kumppanin kautta. Kun olet ostanut käyttöoikeudet, voit määrittää ne yksittäisille käyttäjille. Jos haluat lisätietoja, katso kohta [Power BI Pro -käyttöoikeuksien hankinta ja määritys](service-admin-purchasing-power-bi-pro.md).
+Järjestelmänvalvojana voit ostaa Power BI Pro -käyttöoikeudet Microsoft 365:n tai sertifioidun Microsoft-kumppanin kautta. Kun olet ostanut käyttöoikeudet, voit määrittää ne yksittäisille käyttäjille. Jos haluat lisätietoja, katso kohta [Power BI Pro -käyttöoikeuksien hankinta ja määritys](service-admin-purchasing-power-bi-pro.md).
 
 ### <a name="power-bi-pro-license-expiration"></a>Power BI Pro -käyttöoikeuden vanhentuminen
 
@@ -41,7 +41,7 @@ Power BI Pro -tilauksen elinkaari on sama kuin Office 365:llä. Lisätietoja on 
 
 Yksittäiset käyttäjät organisaatiossasi voivat rekisteröityä Power BI Pro -kokeiluversion käyttäjäksi. Jos haluat lisätietoja, katso kohta [Rekisteröityminen Power BI:hin yksityishenkilönä](service-self-service-signup-for-power-bi.md).
 
-Käyttäjät, jotka hyödyntävät tätä tuotekohtaista Power BI Pro -kokeiluversiota, eivät näy Microsoft 365 -hallintakeskuksessa Power BI Pro Trial -käyttäjinä (he näkyvät Power BI:n ilmaiskäyttäjinä). He näkyvät kuitenkin Power BI Pro -kokeiluversion käyttäjinä Power BI:n tallennussivun hallinnassa.
+Käyttäjät, jotka hyödyntävät tätä tuotekohtaista Power BI Pro -kokeiluversiota yksityishenkilöille, eivät näy Microsoft 365 -hallintakeskuksessa Power BI Pro Trial -käyttäjinä (he näkyvät Power BI:n ilmaiskäyttäjinä). He näkyvät kuitenkin Power BI Pro -kokeiluversion käyttäjinä Power BI:n tallennussivun hallinnassa.
 
 ### <a name="power-bi-pro-trial-for-organizations"></a>Power BI Pron kokeiluversio organisaatioille
 
@@ -49,7 +49,7 @@ Jos haluat hankkia ja ottaa käyttöön Power BI -kokeilujakson käyttöoikeudet
 
 Pidä mielessä seuraavat asiat ennen rekisteröitymistä:
 
-* Jotta voit rekisteröityä, sinulla on oltava [ **Yleinen järjestelmänvalvoja**- tai **Laskutuksen järjestelmänvalvoja** ](https://support.office.com/article/about-office-365-admin-roles-da585eea-f576-4f55-a1e0-87090b6aaa9d) -rooli Office 365:ssä.
+* Jotta voit rekisteröityä, sinulla on oltava [ **Yleinen järjestelmänvalvoja**- tai **Laskutuksen järjestelmänvalvoja** ](https://support.office.com/article/about-office-365-admin-roles-da585eea-f576-4f55-a1e0-87090b6aaa9d) -rooli Microsoft 365:ssä.
 
 * Jokaista vuokraajaa kohti on rajattu vain yksi organisaatiokohtainen kokeiluversio. Tämä tarkoittaa sitä, että jos vuokraajallasi on jo käytössä Power BI Pro -kokeiluversio, et voi enää hankkia sitä uudelleen. Jos tarvitset apua, ota yhteyttä [Office 365:n laskutustukeen](https://support.office.microsoft.com/article/contact-support-for-business-products-admin-help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b?CorrelationId=552bbf37-214f-4202-80cb-b94240dcd671).
 
@@ -79,11 +79,11 @@ Organisaatiosi käyttäjät voivat saada pääsyn maksuttomiin Power BI -käytt�
 
 * Voit antaa heille Power BI -lisenssin Microsoft 365 -hallintakeskuksessa.
 
-* Jos käyttäjä [rekisteröityy Power BI Pro -kokeiluversion](service-self-service-signup-for-power-bi.md) käyttäjäksi ja kokeilujakso päättyy, käyttäjälle määritetään maksuton käyttöoikeus.
+* Jos käyttäjä [rekisteröityy Power BI -tilin](service-self-service-signup-for-power-bi.md) käyttäjäksi, käyttäjälle määritetään maksuton käyttöoikeus.
 
 ### <a name="requesting-and-assigning-free-licenses"></a>Maksuttomien käyttöoikeuksien pyytäminen ja määrittäminen
 
-Jos aiot hallita käyttöoikeuspyyntöjä ja määrityksiä keskitetysti, tarkista ensin, onko sinulla jo rajoittamaton Power BI (ilmainen) -käyttöoikeuslohko.
+Jos aiot hallita käyttöoikeuspyyntöjä ja määrityksiä keskitetysti, tarkista ensin, onko sinulla jo rajoittamaton Power BI (ilmainen) -käyttöoikeuslohko vuokraajassasi.
 
 Tämä käyttöoikeuslohko tulee näkyviin sen jälkeen, kun joku rekisteröityy ensimmäistä kertaa Power BI:hin yksittäisenä käyttäjänä. Prosessin aikana tämä käyttöoikeuslohko kiinnittyy organisaatioosi ja käyttöoikeus määritetään rekisteröityvälle käyttäjälle.
 
@@ -125,9 +125,9 @@ Jos rajoittamaton Power BI (ilmainen) -käyttöoikeuslohko ei ole käytettäviss
 
 Voit järjestelmänvalvojana joko ottaa käyttöön yksittäisten käyttäjien rekisteröitymisen tai poistaa sen käytöstä Azure Active Directoryn (AAD) kautta. Tässä artikkelin osassa kerrotaan, miten voit hallita rekisteröitymisiä PowerShell-komennoilla. Katso lisätietoja Azure PowerShellistä kohdasta [Azure PowerShellin yleiskatsaus](/powershell/azure/overview).
 
-Rekisteröitymistä ohjaava Azure AD -asetus on **AllowAdHocSubscriptions**. Useimmissa vuokraajissa tämä asetus on *true* (tosi), mikä tarkoittaa, että se on käytössä. Jos hankit Power BI:n kumppanin kautta, asetuksena saattaa olla *false* (epätosi), mikä tarkoittaa, että se on poistettu käytöstä. Jos muutat asetusta arvosta *true* arvoon *false*, organisaatiosi uusien käyttäjien rekisteröityminen erikseen on estetty. Käyttäjät, jotka rekisteröityivät Power BI:hin ennen asetuksen muutosta, säilyttävät käyttöoikeutensa. Huomaa, että kun asetus on *false* (epätosi), käyttäjät voivat edelleen rekisteröityä Pro-kokeiluversioon.
+Rekisteröitymistä ohjaava Azure Active Directory -asetus on **AllowAdHocSubscriptions**. Useimmissa vuokraajissa tämä asetus on *true* (tosi), mikä tarkoittaa, että se on käytössä. Jos hankit Power BI:n kumppanin kautta, asetuksena saattaa olla *false* (epätosi), mikä tarkoittaa, että se on poistettu käytöstä. Jos muutat asetusta arvosta *true* arvoon *false*, organisaatiosi uusien käyttäjien rekisteröityminen erikseen on estetty. Käyttäjät, jotka rekisteröityivät Power BI:hin ennen asetuksen muutosta, säilyttävät käyttöoikeutensa. Huomaa, että jos asetuksena on *false*, käyttäjät, joilla on Power BI (ilmainen) -käyttöoikeus, voivat yhä rekisteröityä yksityishenkilölle tarkoitettuun Power BI Pro -kokeiluversioon.
 
-1. Kirjaudu Azure Active Directoryyn käyttämällä Office 365 -tunnistetietojasi. PowerShell-komentosarjan ensimmäinen rivi kehottaa antamaan tunnistetiedot. Toinen rivi muodostaa yhteyden Azure Active Directoryyn.
+1. Kirjaudu Azure Active Directoryyn käyttämällä Microsoft 365 -tunnistetietojasi. PowerShell-komentosarjan ensimmäinen rivi kehottaa antamaan tunnistetiedot. Toinen rivi muodostaa yhteyden Azure Active Directoryyn.
 
     ```powershell
      $msolcred = get-credential

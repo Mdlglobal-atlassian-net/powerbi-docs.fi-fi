@@ -8,17 +8,19 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 09/04/2019
+ms.date: 10/22/2019
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: a1dee67279e6f43c0ff8008338f7b8a9f5a2d41a
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: 3217691d68be6a351f87e5011fd5bc5ef347acfc
+ms.sourcegitcommit: 23ad768020a9daf129f69a462a2d46d59d2349d2
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "70841043"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72774790"
 ---
 # <a name="take-a-tour-of-the-report-filters-pane"></a>Aloita raportin Suodattimet-ruudun esittely
+
+[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
 Tässä artikkelissa tutustutaan raportin **Suodattimet**-ruutuun Power BI -palvelussa. Suodattimilla saat tiedoistasi näkyviin uusia merkityksiä.
 
@@ -34,11 +36,14 @@ Kun työtoverisi jakaa raportin kanssasi, etsi **Suodattimet**-ruutu. Joskus se 
 
 **Suodattimet**-ruutu sisältää suodattimia, jotka raportin *suunnittelija* on lisännyt raporttiin. Kaltaisesi *kuluttajat* voivat käyttää olemassa olevia suodattimia ja tallentaa muutokset, mutta ette voi lisätä uusia suodattimia raporttiin. Esimerkiksi yllä olevassa näyttökuvassa suunnittelija on lisännyt kolme sivutason suodatinta: **Segmentti on Kaikki**, **Vuosi on 2014** ja **Alue on Keski**. Voit käyttää ja muuttaa näitä suodattimia, mutta et voi lisätä neljättä sivutason suodatinta.
 
-Power BI-palvelussa raportit säilyttävät muutokset, jotka teet **Suodattimet**-ruudussa. Palvelu siirtää nämä muutokset myös raportin mobiiliversioon.
+Power BI-palvelussa raportit säilyttävät muutokset, jotka teet **Suodattimet**-ruudussa. Palvelu siirtää nämä muutokset myös raportin mobiiliversioon. 
 
 Voit palauttaa **Suodattimet**-ruudun suunnittelijan oletusarvoihin valitsemalla **Palauta oletukset** yläreunan valikkoriviltä.
 
 ![Näyttökuvassa on Palauta oletukset -kuvake.](media/end-user-report-filter/power-bi-reset-icon.png) 
+
+> [!NOTE]
+> Jos et näe **Palauta oletukset** -valintaa, raportin *suunnittelija* on saattanut poistaa sen käytöstä. *Suunnittelija* voi myös lukita tietyt suodattimet niin, että niitä ei voi muuttaa.
 
 ## <a name="view-all-the-filters-for-a-report-page"></a>Raporttisivun kaikkien suodattimien näyttäminen
 

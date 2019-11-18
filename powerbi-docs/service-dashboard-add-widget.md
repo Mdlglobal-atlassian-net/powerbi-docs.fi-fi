@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 07/25/2019
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 042fee1a55728884b3f4d5792a82973b3ea9fcc4
-ms.sourcegitcommit: 9665bdabce3bfc31f68dd8256b135bfd56f60589
+ms.openlocfilehash: 93301625efda52aa69af172b29e7fbcd94b2a4dd
+ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "68832573"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73020431"
 ---
 # <a name="add-images-videos-and-more-to-your-dashboard"></a>Kuvan, videon ja muiden elementtien lisääminen koontinäyttöön
 
@@ -232,7 +232,7 @@ Voit liittää tai kirjoittaa minkä tahansa HTML-sisällön ruutuna raporttiin 
 ## <a name="edit-a-tile"></a>Ruudun muokkaaminen
 Jos haluat tehdä muutoksia aiemmin luotuun ruutuun:
 
-1. Vie hiiren osoitin ruudun oikeaan yläkulmaan ja valitse kolme pistettä (...).
+1. Vie hiiren osoitin ruudun oikeaan yläkulmaan ja valitse **Enemmän vaihtoehtoja** (...).
    
     ![valitse ruudun kolme pistettä](media/service-dashboard-add-widget/pbi_ellipses.png)
 2. Valitse **Muokkaa tietoja**, jos haluat näyttää **Ruudun tiedot** -ikkunan ja tehdä muutoksia.

@@ -9,12 +9,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 04/24/2019
 ms.author: mshenhav
-ms.openlocfilehash: 4e09b10e38b018f8e5572343b343a243ace3bf81
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: ef7766f8783fef08561a70d8ea77212c138e3148
+ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "64906525"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73429912"
 ---
 # <a name="create-a-link-to-a-specific-location-in-the-power-bi-mobile-apps"></a>Linkin luominen tiettyyn sijaintiin Power BI ‑mobiilisovelluksissa
 Linkkien avulla voit käyttää suoraan tiettyjä kohteita Power BI:ssä: raporttia, koontinäyttöä ja ruutua.
@@ -69,7 +69,7 @@ https://app.powerbi.com/Redirect?[**QUERYPARAMS**]
 
 #### <a name="links-of-apps-and-items-in-app"></a>Sovellusten ja kohteiden linkit sovelluksessa
 
-**Sovelluksissa ja raporteissa sekä koontinäytöissä, jotka ovat osa sovellusta**, helpoin tapa saada linkki on siirtyä sovelluksen työtilaan ja valita ”Päivitä sovellus”. Tämä avaa ”Julkaise sovellus” -käyttökokemuksen, ja Käyttöoikeus-välilehdestä löydät **Linkit**-osion. Kun laajennat osion, näet luettelon sovelluksen kaikista sisältölinkeistä, joista sisältöä pääsee käyttämään suoraan.
+**Sovelluksissa ja raporteissa sekä koontinäytöissä, jotka ovat osa sovellusta**, helpoin tapa saada linkki on siirtyä työtilaan ja valita ”Päivitä sovellus”. Tämä avaa ”Julkaise sovellus” -käyttökokemuksen, ja Käyttöoikeus-välilehdestä löydät **Linkit**-osion. Kun laajennat osion, näet luettelon sovelluksen kaikista sisältölinkeistä, joista sisältöä pääsee käyttämään suoraan.
 
 ![Power BI:n julkaisusovelluslinkit ](./media/mobile-apps-links/mobile-link-copy-app-links.png)
 
@@ -118,5 +118,5 @@ Palaute auttaa meitä päättämään, mitä toimintoja otamme käyttöön tulev
 * [Power BI -sovellukset mobiililaitteille](mobile-apps-for-mobile-devices.md)
 * Seuraa käyttäjää @MSPowerBI Twitterissä
 * Liity keskusteluun [Power BI -yhteisössä](http://community.powerbi.com/)
-* [Mikä on Power BI?](../../power-bi-overview.md)
+* [Mikä on Power BI?](../../fundamentals/power-bi-overview.md)
 

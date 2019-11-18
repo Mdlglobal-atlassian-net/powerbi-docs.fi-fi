@@ -11,12 +11,12 @@ ms.topic: tutorial
 ms.date: 08/07/2019
 ms.author: maggies
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 7540083b49e0790bfd9062d28d2655ff024d577f
-ms.sourcegitcommit: cc4b18d55b2dca8fdb1bef00f53a0a808c41432a
+ms.openlocfilehash: 7f7fde7fcabc29238d9558739eff02519ef9cca3
+ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68867181"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73020026"
 ---
 # <a name="tutorial-connect-to-a-github-repo-with-power-bi"></a>Opetusohjelma: Yhteyden muodostaminen GitHub-säilöön Power BI:llä
 Tässä opetusohjelmassa yhdistät Power BI:n GitHub-palvelun oikeisiin tietoihin, jolloin Power BI luo automaattisesti koontinäyttöjä ja raportteja. Muodostat yhteyden Power BI:n sisällön julkiseen säilöön (eli *säilöön*) ja näet vastauksen seuraavanlaisiin kysymyksiin: kuinka moni henkilö osallistuu Power BI:n julkiseen sisältöön? Kuka osallistuu eniten? Minä viikonpäivänä on eniten osallistumisia? Ja muita kysymyksiä. 
@@ -76,7 +76,7 @@ Tarvitset tämän opetusohjelman suorittamiseen GitHub-tilin, jos sinulla ei ole
 
     ![Sovellus vasemmanpuoleisessa siirtymisruudussa](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-left-nav-expanded.png)
 
-10. Valitse kolme pistettä (...) koontinäytön nimen vierestä > **Nimeä uudelleen** > kirjoita **GitHub-koontinäyttö**.
+10. Valitse **Enemmän vaihtoehtoja** (...) koontinäytön nimen vierestä > **Nimeä uudelleen** > kirjoita **GitHub-koontinäyttö**.
  
     ![Power BI GitHub-ruutu](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-left-nav.png) 
 

@@ -2,19 +2,18 @@
 title: Palvelun keskeytymisilmoitukset
 description: Lue tietoja siitä, miten voit vastaanottaa sähköposti-ilmoituksia, kun Power BI -palvelussa häiriöitä tai toiminnan heikkenemistä.
 author: mgblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 09/16/2019
 ms.author: mblythe
-ms.openlocfilehash: 677e2b96da533b62cafc724a2f4498591d91057a
-ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
+ms.openlocfilehash: 90ab6c48465a9b7dc5eecca457953f77c727304c
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71073567"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73872171"
 ---
 # <a name="service-interruption-notifications"></a>Palvelun keskeytymisilmoitukset
 
@@ -28,7 +27,7 @@ Tällä hetkellä lähetämme sähköpostiviestejä seuraavissa _luotettavuustil
 - Mallin päivityksen luotettavuus
 - Kyselyn päivityksen luotettavuus
 
-Näitä ilmoituksia lähetetään esimerkiksi silloin, kun käyttäjillä on pitkä viive toiminnoissa, kuten raporttien avaamisessa, tietojoukon päivityksessä tai kyselyjen suorittamisessa. Kun tapaus on ratkaistu, saat seurantasähköpostiviestin.
+Ilmoituksia lähetetään silloin, kun toiminnoissa, kuten raporttien avaamisessa, tietojoukon päivityksessä tai kyselyjen suorittamisessa, on _pitkä viive_. Kun tapaus on ratkaistu, saat seurantasähköpostiviestin.
 
 > [!NOTE]
 > Tämä ominaisuus on tällä hetkellä käytettävissä vain Power BI Premiumin varatuissa kapasiteeteissa. Se ei ole käytettävissä jaetussa tai upotetussa kapasiteetissa.
@@ -52,4 +51,4 @@ Power BI -vuokraajan järjestelmänvalvoja ottaa ilmoitukset käyttöön hallint
 
 [Power BI Pron ja Power BI Premiumin tukivaihtoehdot](service-support-options.md)
 
-Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
+Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](https://community.powerbi.com/)

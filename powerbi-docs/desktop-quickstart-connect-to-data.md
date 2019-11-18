@@ -10,12 +10,12 @@ ms.topic: quickstart
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: quickstart
-ms.openlocfilehash: 253ecbad775a2f4aa7dd1974c534fdcaa222676c
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 05d8c990b7057ab59515826547a42ce1ee643ac2
+ms.sourcegitcommit: 96217747f07d923d1a9d31f67a853f1ef1d17b20
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65514442"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72891702"
 ---
 # <a name="quickstart-connect-to-data-in-power-bi-desktop"></a>Pikaopas: Tietoihin yhdistäminen Power BI Desktopissa
 
@@ -33,7 +33,7 @@ Tarvitset seuraavat, jotta voit suorittaa tämän artikkelin vaiheet:
 
 ## <a name="launch-power-bi-desktop"></a>Käynnistä Power BI Desktop
 
-Kun olet asentanut **Power BI Desktop** -sovelluksen, käynnistä se paikallisessa tietokoneessa. Tyhjä pohja avautuu. Voit luoda siihen visualisointeja ja raportteja tiedoista, joihin muodostat yhteyden. 
+Kun olet asentanut **Power BI Desktop** -sovelluksen, käynnistä se paikallisessa tietokoneessa. Näet Power BI -opetusohjelman. Seuraa opetusohjelmaa ja tai napsauta se pois ja aloita tyhjältä pohjalta, johon voit luoda visualisointeja ja raportteja tiedoista, joihin muodostat yhteyden. 
 
 ![Power BI Desktop - tyhjä pohja](media/desktop-quickstart-connect-to-data/qs-connect-data_01.png)
 

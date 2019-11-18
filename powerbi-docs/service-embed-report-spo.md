@@ -11,12 +11,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 LocalizationGroup: Share your work
 ms.date: 05/16/2019
-ms.openlocfilehash: c5d35c1e7fef15c72314738c1d67f81656dc3101
-ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
+ms.openlocfilehash: 6fb02a3ea31dd3bed6f1013d5e81237345aef40c
+ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71073606"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73431893"
 ---
 # <a name="embed-with-report-web-part-in-sharepoint-online"></a>Upota raportin verkko-osa SharePoint Onlinessa
 
@@ -79,11 +79,11 @@ Kun raportti upotetaan SharePoint Onlineen, käyttäjät eivät saa automaattise
 > [!IMPORTANT]
 > Katso Power BI -palvelussa, kuka saa nähdä raportin, ja myönnä käyttöoikeudet niille, jotka eivät ole luettelossa.
 
-Raportin käyttöoikeuden voi myöntää Power BI:ssä kahdella tavalla. 1\. tapa: Jos luot SharePoint Online -työryhmäsivuston Office 365 -ryhmän avulla, lisää käyttäjä **Power BI -palvelun sovellustyötilan** ja **SharePoint-sivun** jäseneksi. Jos haluat lisätietoja, katso, miten voit [hallita sovelluksen työtilaa](service-manage-app-workspace-in-power-bi-and-office-365.md).
+Raportin käyttöoikeuden voi myöntää Power BI:ssä kahdella tavalla. 1\. tapa: Jos luot SharePoint Online -työryhmäsivuston Office 365 -ryhmän avulla, lisää käyttäjä **Power BI -palvelun työtilan** ja **SharePoint-sivun** jäseneksi. Jos haluat lisätietoja, katso, miten voit [hallita työtilaa](service-manage-app-workspace-in-power-bi-and-office-365.md).
 
 2\. tapa: Upota raportti sovellukseen ja se suoraan käyttäjien kanssa.  
 
-1. Laatija, jonka täytyy olla Pro-käyttäjä, luo raportin sovellustyötilassa. Jos haluat jakaa *Power BI:n maksuttomien käyttäjien kanssa*, sovellustyötila täytyy määrittää *Premium-työtilaksi*.
+1. Laatija, jonka täytyy olla Pro-käyttäjä, luo raportin työtilassa. Jos haluat jakaa *Power BI:n maksuttomien käyttäjien kanssa*, työtila täytyy määrittää *Premium-työtilaksi*.
 
 2. Laatija julkaisee sovelluksen ja sitten asentaa sen. Hänen täytyy asentaa sovellus, jotta se voi käyttää raportin URL-osoitetta, jota käytetään SharePoint Onlineen upottamisessa.
 
@@ -93,7 +93,7 @@ Raportin käyttöoikeuden voi myöntää Power BI:ssä kahdella tavalla. 1\. tap
 
 4. Laatija avaa sovelluksen ja siirtyy raporttiin.
 
-5. Laatija kopioi upotetun raportin URL-osoitteen sovelluksen asentamasta raportista. Älä käytä alkuperäisen raportin URL-osoitetta sovellustyötilasta.
+5. Laatija kopioi upotetun raportin URL-osoitteen sovelluksen asentamasta raportista. Älä käytä alkuperäisen raportin URL-osoitetta työtilasta.
 
 6. Luo uusi työryhmäsivusto SharePoint Onlinessa.
 

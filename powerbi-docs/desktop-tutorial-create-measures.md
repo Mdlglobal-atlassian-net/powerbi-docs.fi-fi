@@ -2,7 +2,6 @@
 title: 'Opetusohjelma: Omien mittarien luominen Power BI Desktopissa'
 description: 'Opetusohjelma: Omien mittarien luominen Power BI Desktopissa'
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: tutorial
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Learn more
-ms.openlocfilehash: 306738f4df765638c591c9612adf885facdceda0
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: ade9c163c017b13b0524c66f67f7a27378dc4b80
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65513881"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73865957"
 ---
 # <a name="tutorial-create-your-own-measures-in-power-bi-desktop"></a>Opetusohjelma: Omien mittarien luominen Power BI Desktopissa
 Voit luoda tehokkaimpiin kuuluvia tietojen analysointiratkaisuja Power BI Desktopissa käyttämällä mittareita. Mittarit auttavat suorittamalla tiedoillesi laskutoimituksia samalla, kun käsittelet raporttejasi. Tässä opetusohjelmassa kerrotaan Power BI Desktopin mittareista ja siitä, kuinka voit luoda omia perusmittareita.
@@ -23,7 +22,7 @@ Voit luoda tehokkaimpiin kuuluvia tietojen analysointiratkaisuja Power BI Deskto
 ### <a name="prerequisites"></a>Edellytykset
 - Tämä opetusohjelma on tarkoitettu kehittyneempien mallien luomiseen Power BI -käyttäjille, joille Power BI Desktopin käyttö on jo tuttua. Edellytyksenä on, että osaat jo tuoda tietoja Nouda tiedot -toiminnon ja kyselyeditorin avulla, työskennellä useiden toisiinsa liitettyjen taulukoiden kanssa ja lisätä kenttiä raporttipohjaan. Jos olet vasta aloittamassa Power BI Desktopin käyttöä, muista tutustua [Power BI Desktopin käytön aloittaminen](desktop-getting-started.md) -resurssiin.
   
-- Lataa [Contoson Sales Sample Power BI Desktopille](http://download.microsoft.com/download/4/6/A/46AB5E74-50F6-4761-8EDB-5AE077FD603C/Contoso%20Sales%20Sample%20for%20Power%20BI%20Desktop.zip) -tiedosto, joka sisältää fiktiivisen Contoso, Inc. -yrityksen online-myyntitietoja. Nämä tiedot on tuotu tietokannasta, joten et voi muodostaa yhteyttä tietolähteeseen tai tarkastella niitä kyselyeditorissa. Pura tiedosto omalle tietokoneellesi ja avaa se Power BI Desktopissa.
+- Lataa [Contoson Sales Sample Power BI Desktopille](https://download.microsoft.com/download/4/6/A/46AB5E74-50F6-4761-8EDB-5AE077FD603C/Contoso%20Sales%20Sample%20for%20Power%20BI%20Desktop.zip) -tiedosto, joka sisältää fiktiivisen Contoso, Inc. -yrityksen online-myyntitietoja. Nämä tiedot on tuotu tietokannasta, joten et voi muodostaa yhteyttä tietolähteeseen tai tarkastella niitä kyselyeditorissa. Pura tiedosto omalle tietokoneellesi ja avaa se Power BI Desktopissa.
 
 ## <a name="understand-measures"></a>Tietoa mittareista
 
@@ -60,7 +59,7 @@ Kun luot oman mittarin, se lisätään valitsemasi taulukon Kentät-luetteloon, 
 
 Haluat analysoida nettomyyntiäsi vähentämällä alennukset ja palautukset myynnin kokonaismääristä. Olipa visualisointisi konteksti mikä tahansa, tarvitset mittarin, joka vähentää DiscountAmount- ja ReturnAmount-arvojen summan SalesAmount-summasta. Nettomyynnille ei ole kenttää Kentät-luettelossa, mutta käytössäsi on elementtejä, joilla voit luoda oman mittarin nettomyynnin laskemista varten. 
 
-1.  Napsauta Kentät-ruudun **Sales**-taulukkoa hiiren kakkospainikkeella tai pidä hiiren osoitinta taulukon päällä ja valitse **Enemmän vaihtoehtoja** -ellipsi (...) ja sen jälkeen **Uusi mittari**. Tämä tallentaa uuden mittarin Sales-taulukkoon, josta se on helpompi löytää.
+1.  Napsauta Kentät-ruudun **Sales**-taulukkoa hiiren kakkospainikkeella tai pidä hiiren osoitinta taulukon päällä ja valitse **Enemmän vaihtoehtoja** (...) ja sen jälkeen **Uusi mittari**. Tämä tallentaa uuden mittarin Sales-taulukkoon, josta se on helpompi löytää.
     
     ![Uusi mittari](media/desktop-tutorial-create-measures/meastut_netsales_newmeasure.png)
     

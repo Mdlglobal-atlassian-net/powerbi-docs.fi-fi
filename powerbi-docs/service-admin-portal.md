@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 09/25/2019
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: f472ee821d0ccf3bbe8e47697f934b91668cd16d
-ms.sourcegitcommit: 57e45f291714ac99390996a163436fa1f76db427
+ms.openlocfilehash: 8a6e104a6fcb129a6e51d8424a8c2321ea74b49c
+ms.sourcegitcommit: 2b7beec5237a597bab2da8eb6ffe69122a5d2ed9
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "71305886"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "73442866"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>Power BI:n hallinta hallintaportaalissa
 
@@ -169,7 +169,9 @@ Seuraavissa osioissa luodaan yleiskatsaus vuokraaja-asetusten eri tyyppeihin.
 
 Organisaation käyttäjät voivat siirtyä sisäisiin ohje- ja tukiresursseihin Power BI:n ohjevalikosta. Tarkemmin sanottuna nämä parametrit muuttavat Lue-, Yhteisö- ja Hanki apua -valikkokohtien toimintaa.
 
-Voit myös määrittää URL-osoitteen, joka ohjaa käyttäjät käyttöoikeuspyyntöjä koskevaan mukautettuun ratkaisuun. Tämä parametri mukauttaa Päivitä tili -painikkeen URL-kohdeosoitteen, jonka käyttäjä, jolla ei ole Power BI Pro -käyttöoikeutta, voit löytää Päivitä Power BI Pro -valintaikkunasta sekä Hallitse henkilökohtaista tallennustilaa -sivulta.
+    ![Enable except setting](media/service-admin-portal/powerbi-admin-tenant-settings-enabled-except2.png)
+
+Määrittämällä käyttöoikeuspyynnöille URL-osoitteen mukautat **Päivitä tili** -painikkeen URL-kohdeosoitteen, jonka käyttäjä, jolla ei ole Power BI Pro -käyttöoikeutta, voi löytää **Päivitä Power BI Pro** -valintaikkunasta sekä **Hallitse henkilökohtaista tallennustilaa** -sivulta. Power BI ei enää tarjoa **Kokeile Prota ilmaiseksi**-painiketta tässä valintaikkunassa tai tallennussivulla. Näin varmistetaan, että Power BI ohjaa käyttäjäsi luotettavasti organisaatiosi käyttöoikeuksien hallintaratkaisun määrittämien prosessien läpi.
 
 ### <a name="receive-email-notifications-for-service-outages-or-incidents"></a>Ota vastaan sähköposti-ilmoituksia palvelukatkoista tai -tapauksista
 
@@ -179,7 +181,7 @@ Sähköpostia käyttävät käyttöoikeusryhmät saavat sähköposti-ilmoituksia
 
 ### <a name="create-workspaces"></a>Työtilojen luominen
 
-Järjestelmänvalvojat voivat **Luo työtiloja** -asetuksen avulla ilmoittaa, ketkä organisaation käyttäjät voivat luoda sovelluksen työtiloja tehdäkseen yhteistyötä koontinäyttöjen, raporttien ja muun sisällön parissa. Lue lisää [sovelluksen työtiloista](service-create-the-new-workspaces.md).
+Järjestelmänvalvojat voivat **Luo työtiloja** -asetuksen avulla ilmoittaa, ketkä organisaation käyttäjät voivat luoda työtiloja tehdäkseen yhteistyötä koontinäyttöjen, raporttien ja muun sisällön parissa. Lue lisää [työtiloista](service-create-the-new-workspaces.md).
 
 Hallintaportaalissa on toinen asetusosio työtiloista vuokraajassa. Voit tässä osiossa lajitella ja suodattaa työtilojen luetteloja ja näyttää kunkin työtilan tiedot. Katso lisätietoja [Työtilat](#workspaces)-kohdasta.
 

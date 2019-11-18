@@ -10,16 +10,16 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: seodec18
 ms.date: 04/02/2019
-ms.openlocfilehash: 8fd87174a1f94ac8a6472238164298c47aa5691e
-ms.sourcegitcommit: c799941c8169cd5b6b6d63f609db66ab2af93891
+ms.openlocfilehash: e35f4f7bd870e51810d49c43a058e467bd724e6e
+ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70391799"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73429664"
 ---
 # <a name="tutorial-embed-power-bi-content-into-an-application-for-your-customers"></a>Opetusohjelma: Power BI -sisällön upottaminen sovellukseen asiakkaille
 
-**Azuren Power BI Embeddedin** avulla voit upottaa sovellukseen raportteja, raporttinäkymiä tai ruutuja käyttämällä app owns data -hakemiston malleja. **App owns data**-hakemiston malleja käytetään kun kyseessä on sovellus, joka käyttää Power BI:tä upotettuna analyysiympäristönään. **ISV-kehittäjänä** voit luoda Power BI -sisältöä, joka näyttää raportit, raporttinäkymät tai ruudut sovelluksessa, joka on täysin integroitu ja vuorovaikutteinen, edellyttämättä käyttäjiltä Power BI -käyttöoikeutta. Tämä opetusohjelma esittelee, miten raportti integroidaan sovellukseen Power BI .NET SDK:n ja Power BI JavaScript -ohjelmointirajapinnan avulla, kun asiakkaiden käytössä on **Azuren Power BI Embedded**.
+**Azuren Power BI Embeddedin** tai **Officen Power BI -upotuksen** avulla voit upottaa sovellukseen raportteja, raporttinäkymiä tai ruutuja käyttämällä app owns data -hakemiston malleja. **App owns data**-hakemiston malleja käytetään kun kyseessä on sovellus, joka käyttää Power BI:tä upotettuna analyysiympäristönään. **ISV:nä** tai **kehittäjänä** voit luoda Power BI -sisältöä, joka näyttää raportit, raporttinäkymät tai ruudut sovelluksessa, joka on täysin integroitu ja vuorovaikutteinen, edellyttämättä käyttäjiltä Power BI -käyttöoikeutta. Tämä opetusohjelma esittelee, miten raportti integroidaan sovellukseen Power BI .NET SDK:n ja Power BI JavaScript -ohjelmointirajapinnan avulla.
 
 ![Power BI -raportin upottaminen](media/embed-sample-for-customers/embed-sample-for-customers-035.png)
 
@@ -33,12 +33,9 @@ Tässä opetusohjelmassa opit:
 Tarvitset seuraavat:
 
 * Tarvitset [Power BI Pro -tilin](../service-self-service-signup-for-power-bi.md) (päätili, jonka käyttäjänimellä ja salasanalla kirjaudut Power BI Pro -tilille) tai [palvelun päänimen (sovellustunnus)](embed-service-principal.md).
-* Tarvitset [Microsoft Azure](https://azure.microsoft.com/) -tilauksen.
 * Sinulla on oltava oma [Azure Active Directory -vuokraaja ](create-an-azure-active-directory-tenant.md) käyttövalmiina.
 
 Jos et ole rekisteröitynyt **Power BI:hin**, [rekisteröi ilmainen kokeiluversio](https://powerbi.microsoft.com/pricing/) ennen aloittamista.
-
-Jos sinulla ei ole Azure-tilausta, luo [ilmainen tili](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) ennen aloittamista.
 
 ## <a name="set-up-your-embedded-analytics-development-environment"></a>Upotettujen analyysitoimintojen kehitysympäristön määrittäminen
 
@@ -60,13 +57,13 @@ Jos käytät palvelun päänimeä, sinun täytyy rekisteröidä **palvelinpuolen
 
 ## <a name="set-up-your-power-bi-environment"></a>Power BI -ympäristön määrittäminen
 
-### <a name="create-an-app-workspace"></a>Sovelluksen työtilan luominen
+### <a name="create-a-workspace"></a>Luo työtila
 
-Jos upotat asiakkaille raportteja, raporttinäkymiä tai ruutuja, sisältö tulee sijoittaa sovelluksen työtilaan. Voit ottaa käyttöön erityyppisiä työtiloja: [perinteisiä työtiloja](../service-create-workspaces.md) tai [uusia työtiloja](../service-create-the-new-workspaces.md). Jos käytät *päätiliä*, käyttämiesi työtilojen tyypillä ei ole väliä. Jos kirjaudut sovellukseesi *[palvelun päänimellä](embed-service-principal.md)* , sinun täytyy käyttää uusia työtiloja. Molemmissa tapauksissa *päätilin* tai *palvelun päänimen* täytyy olla sovellukseesi liittyvien sovellustyötilojen järjestelmänvalvoja.
+Jos upotat asiakkaille raportteja, raporttinäkymiä tai ruutuja, sisältö tulee sijoittaa työtilaan. Voit ottaa käyttöön erityyppisiä työtiloja: [perinteisiä työtiloja](../service-create-workspaces.md) tai [uusia työtiloja](../service-create-the-new-workspaces.md). Jos käytät *päätiliä*, käyttämiesi työtilojen tyypillä ei ole väliä. Jos kirjaudut sovellukseesi *[palvelun päänimellä](embed-service-principal.md)* , sinun täytyy käyttää uusia työtiloja. Molemmissa tapauksissa *päätilin* tai *palvelun päänimen* täytyy olla sovellukseesi liittyvien työtilojen järjestelmänvalvoja.
 
 ### <a name="create-and-publish-your-reports"></a>Luo ja julkaise raportteja
 
-Voit luoda Power BI Desktopia käyttämällä raportteja ja tietojoukkoja ja julkaista raportit sitten sovellustyötilassa. Voit tehdä tämän kahdella tavalla: Loppukäyttäjänä voit julkaista raportteja perinteiseen sovellustyötilaan päätilillä (Power BI Pro -käyttöoikeutta). Jos käytät palvelun päänimeä, voit julkaista raportteja uusiin työtiloihin [Power BI REST -ohjelmointirajapinnoilla](https://docs.microsoft.com/rest/api/power-bi/imports/postimportingroup).
+Voit luoda Power BI Desktopia käyttämällä raportteja ja tietojoukkoja ja julkaista raportit sitten työtilassa. Voit tehdä tämän kahdella tavalla: Loppukäyttäjänä voit julkaista raportteja perinteiseen työtilaan päätilillä (Power BI Pro -käyttöoikeutta). Jos käytät palvelun päänimeä, voit julkaista raportteja uusiin työtiloihin [Power BI REST -ohjelmointirajapinnoilla](https://docs.microsoft.com/rest/api/power-bi/imports/postimportingroup).
 
 Alla annetaan ohjeet siihen, miten voit julkaista PBIX-raportin Power BI -työtilassasi.
 
@@ -78,7 +75,7 @@ Alla annetaan ohjeet siihen, miten voit julkaista PBIX-raportin Power BI -työti
 
    ![PBI desktop -raportti](media/embed-sample-for-customers/embed-sample-for-customers-027.png)
 
-3. Julkaise **sovellustyötiloihin**. Tämä prosessi on erilainen siitä riippuen, käytätkö päätiliä (Power BI Pro -käyttöoikeus) vai palvelun päänimeä. Jos käytät päätiliä, voit julkaista raportin Power BI Desktopissa.  Jos käytät palvelun päänimeä, sinun täytyy käyttää Power BI REST -ohjelmointirajapintoja.
+3. Julkaise **työtiloihin**. Tämä prosessi on erilainen siitä riippuen, käytätkö päätiliä (Power BI Pro -käyttöoikeus) vai palvelun päänimeä. Jos käytät päätiliä, voit julkaista raportin Power BI Desktopissa.  Jos käytät palvelun päänimeä, sinun täytyy käyttää Power BI REST -ohjelmointirajapintoja.
 
 ## <a name="embed-content-using-the-sample-application"></a>Sisällön upottaminen mallisovelluksen avulla
 
@@ -139,7 +136,7 @@ Saat **ApplicationID**:n seuraavasti:
 
 Tämä määrite on pakollinen molemmilla todennustavoilla (päätili ja [palvelun päänimi](embed-service-principal.md)).
 
-Anna **workspaceId**-kohtaan Power BI:n sovelluksen työtilan GUID. Voit hakea nämä tiedot joko URL-osoitteesta, kun olet kirjautunut Power BI -palveluun, tai PowerShellin avulla.
+Anna **workspaceId**-kohtaan Power BI:n työtilan (ryhmän) GUID. Voit hakea nämä tiedot joko URL-osoitteesta, kun olet kirjautunut Power BI -palveluun, tai PowerShellin avulla.
 
 URL-OSOITE <br>
 
@@ -268,11 +265,23 @@ Report report = reports.Value.FirstOrDefault();
 ```
 
 ### <a name="create-the-embed-token"></a>Upotustunnuksen luominen
+Luo upotustunnus, jota voidaan käyttää JavaScript-ohjelmointirajapinnasta. Ohjelmointirajapintoja on kahdenlaisia: Ensimmäisessä ryhmässä on viisi ohjelmointirajapintaa, joista kukin muodostaa tietyn kohteen upotustunnuksen. Toinen ryhmä, joka sisältää vain yhden ohjelmointirajapinnan, luo tunnuksen, jota voidaan käyttää useiden kohteiden upottamiseen.
 
-Luo upotustunnus, jota voidaan käyttää JavaScript-ohjelmointirajapinnasta. Upotustunnus on yksilöllinen upotettavalle kohteelle. Siten kun upotat tietyn Power BI -sisältökohteen, sinun on luotava sille uusi upotustunnus. Saat lisätietoja tästä ja käytettävästä **käyttöoikeustasosta** artikkelista [GenerateToken-ohjelmointirajapinta](https://msdn.microsoft.com/library/mt784614.aspx).
+**Ohjelmointirajapinnat, jotka on tarkoitettu tietyn kohteen upotustunnuksen luontiin**
 
-*Malli sisältökohteen upotustunnuksen luomisesta sen mukaan, onko upotettava sisältökohde raportti, raporttinäkymä vai ruutu, on saatavilla [mallisovelluksen](https://github.com/Microsoft/PowerBI-Developer-Samples) Services\EmbedService.cs-tiedostosta.*
+Näiden ohjelmointirajapintojen avulla luotu upotustunnus on yksilöllinen upotettavalle kohteelle. Aina, kun upotat Power BI -kohteen (esimerkiksi raportin, koontinäytön tai ruudun) näiden ohjelmointirajapintojen avulla, sinun on luotava sille uusi upotustunnus.
+* [Dashboards GenerateTokenInGroup](https://docs.microsoft.com/rest/api/power-bi/embedtoken/dashboards_generatetokeningroup)
+* [Datasets GenerateTokenInGroup](https://docs.microsoft.com/rest/api/power-bi/embedtoken/datasets_generatetokeningroup)
+* [Reports GenerateTokenForCreateInGroup](https://docs.microsoft.com/rest/api/power-bi/embedtoken/reports_generatetokenforcreateingroup)
+* [Reports GenerateTokenInGroup](https://docs.microsoft.com/rest/api/power-bi/embedtoken/reports_generatetokeningroup)
+* [Tiles GenerateTokenInGroup](https://docs.microsoft.com/rest/api/power-bi/embedtoken/tiles_generatetokeningroup)
 
+Raportin, koontinäytön tai ruudun upotustunnuksen luomisen mallit ovat saatavilla [mallisovelluksen](https://github.com/Microsoft/PowerBI-Developer-Samples) seuraavista tiedostoista.
+* Services\EmbedService.cs
+* Models\EmbedConfig.cs
+* Models\TileEmbedConfig.cs
+
+Alla on koodi esimerkki raporttien generatetokeninengroup upotus Token-ohjelmointi raja pinnan käyttämisestä.
 ```csharp
 using Microsoft.PowerBI.Api.V2;
 using Microsoft.PowerBI.Api.V2.Models;
@@ -290,7 +299,55 @@ var embedConfig = new EmbedConfig()
 };
 ```
 
-Luokka luodaan kohteille **EmbedConfig** ja **TileEmbedConfig**. Malli on saatavilla **Models\EmbedConfig.cs**-tiedostossa ja **Models\TileEmbedConfig.cs-tiedostossa**.
+**Ohjelmointirajapinta, joka on tarkoitettu useiden kohteiden upotustunnuksen luontiin**<a id="multiEmbedToken"></a>
+
+[Generate Token](https://docs.microsoft.com/rest/api/power-bi/embedtoken/generatetoken)-upotusohjelmointirajapinta luo tunnuksen, jota voidaan käyttää useiden kohteiden upottamiseen.
+
+Sitä voidaan käyttää myös tietojoukon dynaamiseen valitsemiseen raportin upottamisen aikana. Lisätietoja tästä ohjelmointirajapinnan käytöstä on kohdassa [dynaaminen sidonta](embed-dynamic-binding.md).
+
+
+Alla on esimerkki tämän ohjelmointirajapinnan käytöstä.
+ 
+```csharp
+using Microsoft.PowerBI.Api.V2;
+using Microsoft.PowerBI.Api.V2.Models;
+
+var reports = new List<GenerateTokenRequestV2Report>()
+{ 
+    new GenerateTokenRequestV2Report()
+    {
+        AllowEdit = false,
+        Id = report1.Id
+    },
+    new GenerateTokenRequestV2Report()
+    {
+        AllowEdit = true,
+        Id = report2.Id
+    }
+};
+
+var datasets= new List<GenerateTokenRequestV2Dataset>()
+{
+    new GenerateTokenRequestV2Dataset(dataset1.Id),
+    new GenerateTokenRequestV2Dataset(dataset2.Id),
+    new GenerateTokenRequestV2Dataset(dataset3.Id),
+};
+
+var targetWorkspaces = new List<GenerateTokenRequestV2TargetWorkspace>()
+{
+    new GenerateTokenRequestV2TargetWorkspace(workspace1.Id),
+    new GenerateTokenRequestV2TargetWorkspace(workspace2.Id),
+};
+
+var request = new GenerateTokenRequestV2()
+{
+    Datasets = datasetsRequestDetails ?? null,
+    Reports = reportsRequestDetails,
+    TargetWorkspaces = targetWSRequestdetials ?? null,
+};
+
+var token = client.GetClient().EmbedToken.GenerateToken(request);
+```
 
 ### <a name="load-an-item-using-javascript"></a>Lataa kohde JavaScriptin avulla
 
@@ -345,35 +402,40 @@ Tässä mallissa käytetään **EmbedConfig**-mallia ja **TileEmbedConfig**-mall
 
 ## <a name="move-to-production"></a>Siirry tuotantoon
 
-Kun olet nyt kehittänyt sovelluksesi, on aika varata sovelluksen työtilalle kapasiteettia. 
+Kun olet nyt kehittänyt sovelluksesi, on aika varata työtilalle kapasiteettia. 
 
 > [!Important]
-> Varattua kapasiteettia tarvitaan kun siirrytään tuotantoon.
+> Varattua kapasiteettia tarvitaan kun siirrytään tuotantoon. Kaikki työtilat (raportit tai koontinäytöt sisältävät ja tietojoukot sisältävät) on määritettävä kapasiteetille.
 
 ### <a name="create-a-dedicated-capacity"></a>Luo varattua kapasiteettia
 
-Luomalla varattua kapasiteettia voit hyötyä siitä, että asiakkaalle varataan tietty resurssi. Voit ostaa varattua kapasiteettia [Microsoft Azure -portaalissa](https://portal.azure.com). Lisätietoa Power BI Embedded ‑kapasiteetin luomisesta saat ohjeaiheesta [Power BI Embedded -kapasiteetin luominen Azure-portaalissa](azure-pbie-create-capacity.md).
+Luomalla varattua kapasiteettia voit hyötyä siitä, että asiakkaalle varataan tietty resurssi. Valittavanasi on kahdentyyppisiä kapasiteetteja:
+* **Power BI Premium** – vuokraajatason Office 356: n tilaus, joka on saatavilla kahdesta SKU- perheestä, *EM* ja *P*. Kun upotat Power BI -sisältöä, tähän ratkaisuun viitataan nimellä *Power BI -upottaminen*. Lisätietoja tästä tilauksesta on kohdassa [Mikä on Power BI Premium?](../service-premium-what-is.md)
+* [Azure Power BI Embedded](https://portal.azure.com) – voit ostaa varattua kapasiteettia **Microsoft Azure -portaalista**. Tämä tilaus käyttää *A*-SKU:ita. Lisätietoa Power BI Embedded ‑kapasiteetin luomisesta saat ohjeaiheesta [Power BI Embedded -kapasiteetin luominen Azure-portaalissa](azure-pbie-create-capacity.md).
+> [!NOTE]
+> A-varastointiyksiköillä et pysty käyttämään Power BI -sisältöä ilmaisella Power BI -käyttöoikeudella.
 
-Seuraavan taulukon avulla voit määrittää, mikä Power BI Embedded -kapasiteetti sopii parhaiten tarpeisiisi.
+Alla olevassa taulukossa kuvataan kunkin SKU:n resurssit ja rajoitukset. Jos haluat tarkistaa, mikä kapasiteetti sopii parhaiten tarpeisiisi, tarkastele [mikä SKU minun tulisi ostaa omaa skenaariotani varten ](https://docs.microsoft.com/power-bi/developer/embedded-faq#power-bi-now-offers-three-skus-for-embedding-a-skus-em-skus-and-p-skus-which-one-should-i-purchase-for-my-scenario)-taulukkoa.
 
-| Kapasiteetin solmu | Ytimiä yhteensä<br/>*(Tausta ja edusta)* | Taustan ytimet | Edustan ytimet | DirectQueryn/live-yhteyden rajoitukset|
-| --- | --- | --- | --- | --- | --- |
-| A1 |1 näennäisydin |0,5 ydintä, 3 Gt RAM |0,5 ydintä |0,5 sekunnissa |
-| A2 |2 näennäisydintä |1 ydin, 5 Gt RAM |1 ydin | 10 sekunnissa |
-| A3 |4 näennäisydintä |2 ydintä, 10 Gt RAM |2 ydintä | 15 sekunnissa |
-| A4 |8 näennäisydintä |4 ydin(tä), 25 Gt RAM |4 ydintä |30 sekunnissa |
-| A5 |16 näennäisydintä |8 ydintä, 50 Gt RAM |8 ydintä |60 sekunnissa |
-| A6 |32 näennäisydintä |16 ydintä, 100 Gt RAM |16 ydintä |120 sekunnissa |
+| Kapasiteetin solmut | V-ytimiä yhteensä | Taustan v-ytimet | RAM (GB) | Edustan v-ytimet | DirectQuery/live-yhteys (sekunnissa) | Mallin uudelleen latauksen parallelisointi |
+| --- | --- | --- | --- | --- | --- | --- |
+| EM1/A1 | 1 | 0.5 | 2.5 | 0.5 | 3.75 | 1 |
+| EM2/A2 | 2 | 1 | 5 | 1 | 7.5 | 2 |
+| EM3/A3 | 4 | 2 | 10 | 2 | 15 | 3 |
+| P1/A4 | 8 | 4 | 25 | 4 | 30 | 6 |
+| P2/A5 | 16 | 8 | 50 | 8 | 60 | 12 |
+| P3/A6 | 32 | 16 | 100 | 16 | 120 | 24 |
+| | | | | | | |
 
-**_A-varastointiyksiköillä et pysty käyttämään Power BI -sisältöä ilmaisella Power BI -käyttöoikeudella._**
+### <a name="development-testing"></a>Kehitystestaus
 
-Upotustunnusten käyttö PRO-käyttöoikeudella on tarkoitettu kehitystestaukseen, joten Power BI -päätili tai palvelun päänimi voi luoda vain rajallisen määrän upotettavia tunnuksia. Hyötykäyttöympäristössä upottamista varten täytyy ostaa varattua kapasiteettia. Varatun kapasiteetin avulla luotavien upotettavien tunnuksien määrää ei ole rajoitettu. Siirry [Käytettävissä olevat ominaisuudet](https://docs.microsoft.com/rest/api/power-bi/availablefeatures/getavailablefeatures) -kohtaan tarkistaaksesi käyttöarvon, joka ilmaisee nykyisen upotetun käytön prosenttilukuna. Käytettävä määrä on päätilikohtainen.
+Upotustunnusten käyttö Pro-käyttöoikeudella on tarkoitettu kehitystestaukseen, joten Power BI -päätili tai palvelun päänimi voi luoda vain rajallisen määrän upotettavia tunnuksia. Hyötykäyttöympäristössä upottamista varten täytyy ostaa varattua kapasiteettia. Varatun kapasiteetin avulla luotavien upotettavien tunnuksien määrää ei ole rajoitettu. Siirry [Käytettävissä olevat ominaisuudet](https://docs.microsoft.com/rest/api/power-bi/availablefeatures/getavailablefeatures) -kohtaan tarkistaaksesi käyttöarvon, joka ilmaisee nykyisen upotetun käytön prosenttilukuna. Käytettävä määrä on päätilikohtainen.
 
 Lisätietoja on ohjeaiheessa [Upotetun analytiikan kapasiteetin suunnittelun tekninen raportti](https://aka.ms/pbiewhitepaper).
 
-### <a name="assign-an-app-workspace-to-a-dedicated-capacity"></a>Määritä sovellustyötila varattuun kapasiteettiin
+### <a name="assign-a-workspace-to-a-dedicated-capacity"></a>Määritä työtila varattuun kapasiteettiin
 
-Kun olet luonut varatun kapasiteetin, voit määrittää sovellustyötilan kyseiselle varatulle kapasiteetille.
+Kun olet luonut varatun kapasiteetin, voit määrittää työtilan kyseiselle varatulle kapasiteetille.
 
 Jos haluat määrittää varatun kapasiteetin työtilalle [palvelun päänimellä](embed-service-principal.md), käytä [Power BI REST -ohjelmointirajapintaa](https://docs.microsoft.com/rest/api/power-bi/capacities/groups_assigntocapacity). Kun käytät Power BI REST -ohjelmointirajapintoja, muista käyttää [palvelun päänimen objektitunnusta](embed-service-principal.md#how-to-get-the-service-principal-object-id).
 
@@ -387,9 +449,9 @@ Voit määrittää varatun kapasiteetin työtilalle **päätilillä** alla annet
 
     ![Määritä varattu kapasiteetti](media/embed-sample-for-customers/embed-sample-for-customers-024.png)
 
-3. **Tallennuksen** jälkeen sovellustyötilan nimen vieressä pitäisi näkyä **vinoneliö**.
+3. **Tallennuksen** jälkeen työtilan nimen vieressä pitäisi näkyä **vinoneliö**.
 
-    ![sovellustyötila sidottuna kapasiteettiin](media/embed-sample-for-customers/embed-sample-for-customers-037.png)
+    ![työtila sidottuna kapasiteettiin](media/embed-sample-for-customers/embed-sample-for-customers-037.png)
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 

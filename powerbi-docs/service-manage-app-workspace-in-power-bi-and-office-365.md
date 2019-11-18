@@ -1,6 +1,6 @@
 ---
-title: Sovellustyötilan hallinta Power BI:ssä ja Office 365:ssä
-description: Power BI:n sovellustyötilat ovat Office 365 -ryhmiin perustuva yhteistyötoiminto. Voit hallita sovellustyötiloja Power BI:ssä sekä Office 365:ssä.
+title: Työtilan hallinta Power BI:ssä ja Office 365:ssä
+description: Power BI:n työtilat ovat Office 365 -ryhmiin perustuva yhteistyötoiminto. Voit hallita työtiloja Power BI:ssä sekä Office 365:ssä.
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: lukasz
@@ -10,43 +10,43 @@ ms.topic: conceptual
 ms.date: 09/26/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 77be33787599cfbb50916093d0445cf586511d90
-ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
+ms.openlocfilehash: 1317d11b11624ca6187eb91d5350a698bf164f63
+ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72020747"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73431817"
 ---
-# <a name="manage-your-app-workspace-in-power-bi-and-office-365"></a>Sovellustyötilan hallinta Power BI:ssä ja Office 365:ssä
+# <a name="manage-your-workspace-in-power-bi-and-office-365"></a>Työtilan hallinta Power BI:ssä ja Office 365:ssä
 
-[Power BI:ssä](service-create-distribute-apps.md) tai Office 365:ssä olevan sovellustyötilan luojana tai järjestelmänvalvojana voit hallita työtilan tiettyjä ominaisuuksia Power BI:ssä. Muita ominaisuuksia hallitaan Office 365:ssä.
+[Power BI:ssä](service-create-distribute-apps.md) tai Office 365:ssä olevan työtilan luojana tai järjestelmänvalvojana voit hallita työtilan tiettyjä ominaisuuksia Power BI:ssä. Muita ominaisuuksia hallitaan Office 365:ssä.
 
 > [!NOTE]
 > Uusi työtilakokemus muuttaa Power BI -työtilojen ja Office 365:n ryhmien välistä suhdetta. Et luo automaattisesti Office 365 -ryhmää aina, kun luot uuden työtilan. Lue tietoja [uusien työtilojen luomisesta](service-create-the-new-workspaces.md).
 
 **Power BI:ssä** suoritettavia toimintoja:
 
-* Lisää tai poista sovellustyötilan jäseniä. Voit myös tehdä työtilan jäsenestä järjestelmänvalvojan.
-* Muokkaa sovellustyötilan nimeä.
-* Poista sovellustyötila.
+* Lisää tai poista työtilan jäseniä. Voit myös tehdä työtilan jäsenestä järjestelmänvalvojan.
+* Muokkaa työtilan nimeä.
+* Poista työtila.
 
 **Office 365:ssä** suoritettavia toimintoja:
 
-* Lisää tai poista sovellustyötilan ryhmän jäseniä. Voit myös tehdä jäsenestä omistajan.
+* Lisää tai poista työtilan ryhmän jäseniä. Voit myös tehdä jäsenestä omistajan.
 * Muokkaa ryhmän nimeä, kuvaa, kuvausta ja muita asetuksia.
 * Tarkastele ryhmän sähköpostiosoitetta.
 * Poista ryhmä.
 
-Tarvitset [Power BI Pro -käyttöoikeuden](service-features-license-type.md), jotta voit olla sovellustyötilan järjestelmänvalvoja tai jäsen. Sovelluksen käyttäjät tarvitsevat niin ikään Power BI Pro -käyttöoikeuden paitsi siinä tapauksessa, että sovellustyötilasi on Power BI Premium -ominaisuus. Lisätietoja on artikkelissa [Mikä on Power BI Premium?](service-premium-what-is.md)
+Tarvitset [Power BI Pro -käyttöoikeuden](service-features-license-type.md), jotta voit olla työtilan järjestelmänvalvoja tai jäsen. Sovelluksen käyttäjät tarvitsevat niin ikään Power BI Pro -käyttöoikeuden paitsi siinä tapauksessa, että työtilasi on Power BI Premium -ominaisuus. Lisätietoja on artikkelissa [Mikä on Power BI Premium?](service-premium-what-is.md)
 
-## <a name="edit-your-app-workspace-in-power-bi"></a>Sovellustyötilan muokkaaminen Power BI:ssä
+## <a name="edit-your-workspace-in-power-bi"></a>Työtilan muokkaaminen Power BI:ssä
 
-1. Valitse Power BI -palvelun **Työtilat**-kohdan vieressä oleva nuoli. Valitse pistekuvake (...) työtilan nimen vieressä ja valitse **Muokkaa työtilaa**.
+1. Valitse Power BI -palvelun **Työtilat**-kohdan vieressä oleva nuoli. Valitse **Lisää vaihtoehtoja** (...) työtilan nimen vieressä ja valitse **Muokkaa työtilaa**.
 
    ![Muokkaa työtilaa Power BI:ssä](media/service-manage-app-workspace-in-power-bi-and-office-365/power-bi-app-ellipsis.png)
 
    > [!NOTE]
-   > Näet **Muokkaa työtilaa** -vaihtoehdon vain, jos olet sovellustyötilan järjestelmänvalvoja.
+   > Näet **Muokkaa työtilaa** -vaihtoehdon vain, jos olet työtilan järjestelmänvalvoja.
 
 1. Täällä voit nimetä työtilan uudelleen, lisätä tai poistaa sen jäseniä tai poistaa työtilan.
 
@@ -54,17 +54,17 @@ Tarvitset [Power BI Pro -käyttöoikeuden](service-features-license-type.md), jo
 
 1. Valitse **Tallenna** tai **Peruuta**.
 
-## <a name="edit-power-bi-app-workspace-properties-in-office-365"></a>Power BI -sovellustyötilan ominaisuuksien muokkaaminen Office 365:ssä
+## <a name="edit-power-bi-workspace-properties-in-office-365"></a>Power BI -työtilan ominaisuuksien muokkaaminen Office 365:ssä
 
-Voit myös muokata sovellustyötilan ominaisuuksia suoraan Outlook for Office 365:ssä.
+Voit myös muokata työtilan ominaisuuksia suoraan Outlook for Office 365:ssä.
 
-### <a name="edit-the-members-of-the-app-workspace-group"></a>Sovellustyötilaryhmän jäsenten muokkaaminen
+### <a name="edit-the-members-of-the-workspace-group"></a>Työtilaryhmän jäsenten muokkaaminen
 
-1. Valitse Power BI -palvelun **Työtilat**-kohdan vieressä oleva nuoli. Valitse pistekuvake (...) työtilan nimen vieressä ja valitse **Jäsenet**.
+1. Valitse Power BI -palvelun **Työtilat**-kohdan vieressä oleva nuoli. Valitse **Lisää vaihtoehtoja** (...) työtilan nimen vieressä ja valitse **Jäsenet**.
 
    ![Muokkaa työtilaa Power BI:ssä](media/service-manage-app-workspace-in-power-bi-and-office-365/power-bi-app-ellipsis-members.png)
 
-   Tämä avaa sovellustyötilan Office 365:n Outlookin ryhmänäkymän. Voit joutua kirjautumaan sisään yritystililläsi.
+   Tämä avaa työtilan Office 365:n Outlookin ryhmänäkymän. Voit joutua kirjautumaan sisään yritystililläsi.
 
 1. Valitse rooli tiimin jäsenen nimen vieressä, jos haluat tehdä hänestä **jäsenen** tai **omistajan**. Valitse **X**, jos haluat poistaa henkilön ryhmästä.
 
@@ -72,9 +72,9 @@ Voit myös muokata sovellustyötilan ominaisuuksia suoraan Outlook for Office 36
 
 ### <a name="add-an-image-and-set-other-workspace-properties"></a>Kuvan lisääminen ja työtilan muiden ominaisuuksien määrittäminen
 
-Kun jakelet sovellustasi sovellustyötilasta, tässä lisäämäsi kuva näkyy sovelluksen kuvana. Lisätietoja on **Uusien työtilojen luominen** -artikkelin osiossa [Kuvan lisääminen Office 365:n uusiin työtiloihin](service-create-workspaces.md#add-an-image-to-your-office-365-workspace-optional).
+Kun jakelet sovellustasi työtilasta, tässä lisäämäsi kuva näkyy sovelluksen kuvana. Lisätietoja on **Uusien työtilojen luominen** -artikkelin osiossa [Kuvan lisääminen Office 365:n uusiin työtiloihin](service-create-workspaces.md#add-an-image-to-your-office-365-workspace-optional).
 
-1. Siirry sovellustyötilasi Outlook for Office 365 -näkymässä **Tietoja**-välilehdelle ja valitse **Muokkaa**.
+1. Siirry työtilasi Outlook for Office 365 -näkymässä **Tietoja**-välilehdelle ja valitse **Muokkaa**.
 
     ![Muokkaa ryhmää -kuvake](media/service-manage-app-workspace-in-power-bi-and-office-365/pbi_editgroupo365.png)
 1. Voit muokata ryhmään liittyvien ilmoitusten nimeä, kuvausta ja kieltä. Voit myös lisätä kuvan ja valita muita ominaisuuksia täällä.

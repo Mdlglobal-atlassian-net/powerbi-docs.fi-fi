@@ -2,7 +2,6 @@
 title: Power BI -koontinäytön kopioiminen
 description: 'Power BI-koontinäytön kaksoiskappaleen tekeminen '
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/02/2018
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 5507356e42c58574a2d7c6787074fb987ddfeaec
-ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
+ms.openlocfilehash: ab629c15f1e1e998c3870b95993cdf7348cb15ff
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68523178"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73872839"
 ---
 # <a name="create-a-copy-of-a-dashboard-in-power-bi-service"></a>Koontinäytön kopion luominen Power BI -palvelussa
 ![koontinäyttö](media/service-dashboard-copy/power-bi-dashboard.png)
@@ -28,7 +27,7 @@ Koontinäyttöjä luodaan (ja kopioidaan) Power BI -palvelun avulla ja niitä vo
 Koontinäytön kopioimiseksi sinun pitää olla kyseisen koontinäytön *luoja*. Koontinäyttöjä, jotka on jaettu kanssasi sovelluksena, ei voida monistaa.
 
 1. Avaa koontinäyttö.
-2. Valitse oikeasta yläkulmasta kolme pistettä (...) ja valitse **Monista koontinäyttö**.
+2. Valitse oikeasta yläkulmasta **Lisää vaihtoehtoja** (...) ja valitse **Monista koontinäyttö**.
    
    ![kolmen pisteen valikko](media/service-dashboard-copy/power-bi-dulicate.png)
 3. Anna koontinäytölle nimi ja valitse **Monista**. 
@@ -40,15 +39,15 @@ Koontinäytön kopioimiseksi sinun pitää olla kyseisen koontinäytön *luoja*.
 
 5.    Avaa uusi koontinäyttö ja muokkaa sitä tarvittaessa. Tässä on joitakin asioita, joita voit tehdä seuraavaksi:    
     a. [Siirrä, nimeä uudelleen, kokoa tai jopa poista ruutuja](service-dashboard-edit-tile.md).  
-    b. Muokkaa ruudun tietoja ja hyperlinkkejä valitsemalla ruudun kolme pistettä (...) ja valitsemalla **Muokkaa tietoja**.  
+    b. Muokkaa ruudun tietoja ja hyperlinkkejä valitsemalla ruudun **Lisää vaihtoehtoja** (...) ja valitsemalla **Muokkaa tietoja**.  
     c. [Lisää uusia ruutuja koontinäytön valikkopalkista](service-dashboard-add-widget.md) (**Lisää ruutu**)  
     d. Kiinnitä uusia ruutuja [kysymyksistä ja vastauksista](service-dashboard-pin-tile-from-q-and-a.md) tai [raporteista](service-dashboard-pin-tile-from-report.md).  
-    e. Nimeä koontinäyttö uudelleen, ota Kysymykset ja vastaukset käyttöön tai poista ne käytöstä, ja määritä ruutujen työvirta koontinäytön Asetukset-ruudusta.  (valitse luetteloruudusta koontinäytön kolme pistettä (...) ja valitse **Asetukset**)  
+    e. Nimeä koontinäyttö uudelleen, ota Kysymykset ja vastaukset käyttöön tai poista ne käytöstä, ja määritä ruutujen työvirta koontinäytön Asetukset-ruudusta.  (valitse luetteloruudusta koontinäytön **Lisää vaihtoehtoja** (...) -valikko ja valitse **Asetukset**)  
     f. Jaa koontinäyttösi työtovereiden kanssa suoraan tai osana Power BI -sovellusta. 
 
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 * [Vinkkejä laadukkaiden koontinäyttöjen suunnitteluun](service-dashboards-design-tips.md) 
 
-Ilmenikö muuta kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
+Ilmenikö muuta kysyttävää? [Kokeile Power BI -yhteisöä](https://community.powerbi.com/)
 

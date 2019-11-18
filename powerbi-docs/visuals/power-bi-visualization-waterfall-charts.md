@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 06/24/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 3ab200194d89eb15892dc4f452079eb56df8a608
-ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
+ms.openlocfilehash: c4def89d7c91186295e4f2b3f07769792a8892e8
+ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71191489"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73017788"
 ---
 # <a name="waterfall-charts-in-power-bi"></a>Vesiputouskaaviot Power BI:ssä
 
@@ -24,7 +24,7 @@ ms.locfileid: "71191489"
 
 Vesiputouskaaviot näyttävät juoksevan kokonaissumman, kun Power BI lisää ja vähentää arvoja. Ne ovat hyödyllisiä sen ymmärtämiseksi, miten positiivisten ja negatiivisten muutosten sarja vaikuttaa alkuarvoon (kuten nettotuloon).
 
-Sarakkeet ovat värikoodattuja, joten huomaat nopeasti nousut ja laskut. Alkuarvon ja lopullisen arvon sarakkeet usein [alkavat vaaka-akselilla](https://support.office.com/article/Create-a-waterfall-chart-in-Office-2016-for-Windows-8de1ece4-ff21-4d37-acd7-546f5527f185#BKMK_Float "alkavat vaaka-akselilla"), kun taas keskitason arvot ovat irrallisia sarakkeita. Tämän tyylin vuoksi vesiputouskaavioita kutsutaan myös siltakaavioiksi.
+Sarakkeet ovat värikoodattuja, joten huomaat nopeasti nousut ja laskut. Alkuarvon ja lopullisen arvon sarakkeet usein [alkavat vaaka-akselilla](https://support.office.com/article/Create-a-waterfall-chart-in-Office-2016-for-Windows-8de1ece4-ff21-4d37-acd7-546f5527f185#BKMK_Float "aloita vaaka-akselilla"), kun taas keskitason arvot ovat irrallisia sarakkeita. Tämän tyylin vuoksi vesiputouskaavioita kutsutaan myös siltakaavioiksi.
 
    > [!NOTE]
    > Tässä videossa käytetään Power BI Desktopin vanhempaa versiota.
@@ -76,7 +76,7 @@ Luot vesiputouskaavion, joka näyttää myynnin vaihtelun (arvioitu myynti vs. t
 
     ![vesiputous](media/power-bi-visualization-waterfall-charts/power-bi-waterfall.png)
 
-1. Varmista, että Power BI lajitteli vesiputouskaavion aikajärjestyksessä. Valitse kaavion oikeassa yläkulmassa olevat kolme pistettä (...).
+1. Varmista, että Power BI lajitteli vesiputouskaavion aikajärjestyksessä. Valitse kaavion oikeasta yläkulmasta **Enemmän vaihtoehtoja** (...).
 
     Tässä esimerkissä valitaan vaihtoehto **Lajittele nousevaan järjestykseen**
 

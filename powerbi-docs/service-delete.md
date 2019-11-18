@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 09/11/2018
 ms.author: maggies
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 087fe859c7b1a8ca732619866d492f143ff413c9
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: b010cfafc15c905cd792b9693777af94149cb1fe
+ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61157546"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73431977"
 ---
 # <a name="delete-almost-anything-in-power-bi-service"></a>Poista melkein mitä tahansa Power BI -palvelussa
 Tässä artikkelissa opetetaan, miten Power BI -palvelussa poistetaan koontinäyttö, raportti, työkirja, tietojoukko, sovellus, visualisointi ja työtila.
@@ -71,7 +71,7 @@ Jos tietojoukko on osa vähintään yhtä [organisaation sisältöpakettia](serv
 
 ### <a name="to-delete-a-dataset"></a>Tietojoukon poistaminen
 1. Valitse työtilassa **Tietojoukot**-välilehti.
-2. Etsi poistettava tietojoukko ja valitse kolme pistettä (...).  
+2. Etsi poistettava tietojoukko ja valitse **Lisää vaihtoehtoja** (...).  
 
     ![Tietojoukot-välilehti](media/service-delete/power-bi-delete-datasetnew.png)
 3. Valitse avattavasta valikosta **Poista**.
@@ -81,40 +81,41 @@ Jos tietojoukko on osa vähintään yhtä [organisaation sisältöpakettia](serv
 
    ![Poista koontinäyttö -valintaikkuna](media/service-delete/power-bi-delete-dataset-confirm.png)
 
-## <a name="delete-an-app-workspace"></a>Sovelluksen työtilan poistaminen
+## <a name="delete-a-workspace"></a>Poista työtila
 > [!WARNING]
-> Kun luot sovelluksen työtilan, luot Office 365 -ryhmän. Ja kun poistat sovelluksen työtilan, poistat kyseisen Office 365 -ryhmän. Tämä tarkoittaa sitä, että ryhmä poistetaan myös muista O365-tuotteista, kuten SharePointista ja Microsoft Teamsista.
+> Kun luot työtilan, luot Office 365 -ryhmän. Ja kun poistat työtilan, poistat kyseisen Office 365 -ryhmän. Tämä tarkoittaa sitä, että ryhmä poistetaan myös muista O365-tuotteista, kuten SharePointista ja Microsoft Teamsista.
 >
 >
 
-Sovelluksen työtilan tekijänä voit poistaa sen. Kun poistat sen, myös siihen liittyvä sovellus poistetaan kaikilta ryhmän jäseniltä ja omasta AppSourcesta, jos sovellus oli julkaistu koko organisaatiolle. Sovelluksen työtilan poistaminen on erilainen kuin sovelluksen työtilasta poistuminen.
+Työtilan tekijänä voit poistaa sen. Kun poistat sen, myös siihen liittyvä sovellus poistetaan kaikilta ryhmän jäseniltä ja omasta AppSourcesta, jos sovellus oli julkaistu koko organisaatiolle. Työtilan poistaminen on eri asia kuin työtilasta poistuminen.
 
-### <a name="to-delete-an-app-workspace---if-you-are-an-admin"></a>Sovelluksen työtilan poistaminen - jos olet järjestelmänvalvoja
+### <a name="to-delete-a-workspace---if-you-are-an-admin"></a>Työtilan poistaminen – jos olet järjestelmänvalvoja
 1. Valitse vasemmassa siirtymispalkissa **Työtilat**
 
-    ![Sovelluksen työtilat](media/service-delete/power-bi-delete-workspace.png)
-2. Valitse poistettavan työtilan oikealta puolelta kolme pistettä (...) ja valitse **Muokkaa työtilaa**.
+2. Valitse poistettavan työtilan oikealta puolelta **Lisää vaihtoehtoja** (...) ja valitse **Muokkaa työtilaa**.
 
-   ![kolme pistettä-valikko > Muokkaa työtilaa](media/service-delete/power-bi-edit-workspace.png)
+    ![työtilat](media/service-delete/power-bi-delete-workspace.png)
+
 3. Valitse **Muokkaa työtilaa** -ikkunasta **Poista työtila** > **Poista**.
 
     ![poista työtila](media/service-delete/power-bi-delete-workspace2.png)
 
-### <a name="to-remove-an-app-workspace-from-your-list"></a>Sovelluksen työtilan poistaminen luettelosta
-Jos et enää halua olla sovelluksen työtilan jäsen, voit ***poistua*** siitä, jolloin se poistetaan luettelostasi. Työtilasta poistuminen jättää sen paikalleen kaikille muille työtilan jäsenille.  
+### <a name="to-remove-a-workspace-from-your-list"></a>Työtilan poistaminen luettelosta
+Jos et enää halua olla työtilan jäsen, voit ***poistua*** siitä, jolloin se poistetaan luettelostasi. Työtilasta poistuminen jättää sen paikalleen kaikille muille työtilan jäsenille.  
 
 > [!IMPORTANT]
-> Jos olet sovelluksen työtilan ainoa järjestelmänvalvoja, Power BI ei salli poistumista.
+> Jos olet työtilan ainoa järjestelmänvalvoja, Power BI ei salli poistumista.
 >
 >
 
-1. Aloita poistettavasta sovelluksen työtilasta.
-2. Valitse oikeasta yläkulmasta kolme pistettä (...) ja valitse **Poistu työtilasta** > **Poistu**.
+1. Aloita siitä työtilasta, jonka haluat poistaa.
+
+2. Valitse oikeasta yläkulmasta **Lisää vaihtoehtoja** (...) ja valitse **Poistu työtilasta** > **Poistu**.
 
       ![poistu työtilasta](media/service-delete/power-bi-leave-workspace.png)
 
    > [!NOTE]
-   > Avattavan valikon vaihtoehdot määräytyvät sen mukaan, oletko sovelluksen työtilan järjestelmänvalvoja vai jäsen.
+   > Avattavan valikon vaihtoehdot määräytyvät sen mukaan, oletko työtilan järjestelmänvalvoja vai jäsen.
    >
    >
 

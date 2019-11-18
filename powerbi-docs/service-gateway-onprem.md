@@ -3,19 +3,18 @@ title: Paikallinen tietoyhdyskäytävä
 description: Tämä artikkeli on yleiskatsaus paikallisesta tietoyhdyskäytävästä Power BI:lle. Voit käyttää tätä yhdyskäytävää DirectQueryn tietolähteiden kanssa. Voit käyttää myös tätä yhdyskäytävää päivittämään pilvipalvelun tietojoukkoja paikallisten tietojen kanssa.
 author: mgblythe
 ms.author: mblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 LocalizationGroup: Gateways
 ms.date: 07/15/2019
-ms.openlocfilehash: 883d5c83019df293628d096f5834c9b5c6d425b6
-ms.sourcegitcommit: 73228d0a9038b8369369c059ad06168d2c5ff062
+ms.openlocfilehash: b01a3ef5832541822aa9311df14289285f601b2b
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "68730286"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73872447"
 ---
 # <a name="what-is-an-on-premises-data-gateway"></a>Mikä paikallinen tietoyhdyskäytävä on?
 
@@ -42,13 +41,13 @@ Yhdyskäytäviä on kahta tyyppiä, joita kumpaakin käytetään eri skenaariois
 Yhdyskäytävän käyttämisessä on neljä päävaihetta.
 
 1. [Lataa ja asenna yhdyskäytävä](/data-integration/gateway/service-gateway-install) paikalliseen tietokoneeseen.
-2. [Määritä](/data-integration/gateway/service-gateway-app) yhdyskäytävä palomuurin ja muiden verkkotarpeiden mukaan.
-3. [Lisää yhdyskäytävän järjestelmänvalvojat](/data-integration/gateway/service-gateway-manage), jotka voivat myös hallita muita verkkovaatimuksia.
-4. [Suorita](service-gateway-onprem-tshoot.md) yhdyskäytävän vianmääritys virheiden varalta.
+1. [Määritä](/data-integration/gateway/service-gateway-app) yhdyskäytävä palomuurin ja muiden verkkotarpeiden mukaan.
+1. [Lisää yhdyskäytävän järjestelmänvalvojat](/data-integration/gateway/service-gateway-manage), jotka voivat myös hallita muita verkkovaatimuksia.
+1. [Käytä yhdyskäytävää](service-gateway-sql-tutorial.md) paikallisen tietolähteen päivittämiseen.
+1. [Suorita](service-gateway-onprem-tshoot.md) yhdyskäytävän vianmääritys virheiden varalta.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
 * [Paikallisen tietoyhdyskäytävän asentaminen](/data-integration/gateway/service-gateway-install)
 
-
-Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
+Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](https://community.powerbi.com/)

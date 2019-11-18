@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 63c10a0507b5e484ac4c104a5a1e83f5dd411d9d
-ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
+ms.openlocfilehash: 00b8ece26a5440128e62d77e3e9100f58f4d584c
+ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68523272"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73430926"
 ---
 # <a name="connect-to-data-created-by-power-bi-dataflows-in-power-bi-desktop-beta"></a>Yhdistäminen Power BI -tietovoissa luotuihin tietoihin Power BI Desktopissa (Beeta)
 **Power BI Desktopissa** voit yhdistää **Power BI -tietovoiden** luomiin tietoihin samaan tapaan kuin muihin tietolähteisiin Power BI Desktopissa.
@@ -40,7 +40,7 @@ Voit parantaa tietovuon tietojen käsittelynopeutta. Jos käsiteltävät tiedot 
 
 Useimmat tietovuot ovat Power BI -palvelun vuokraajassa. **Power BI Desktop** -käyttäjät eivät voi kuitenkaan käyttää Azure Data Lake Storage Gen2 -tiliin tallennettuja tietovoita, elleivät he ole tietovuon omistajia tai heille ei ole myönnetty nimenomaista oikeutta käyttää tietovuon CDM-kansiota. Katso seuraavaa esimerkkiä:
 
-1.  Anna luo uuden sovellustyötilan ja määrittää sen tallentamaan tietovuot organisaation Data Lake -järjestelmään.
+1.  Anna luo uuden työtilan ja määrittää sen tallentamaan tietovuot organisaation Data Lake -järjestelmään.
 2.  Ben, joka on myös jäsen Annan luomassa työtilassa, haluaa noutaa tietoja Annan luomasta tietovuosta Power BI Desktopin ja tietovuon liittimen avulla.
 3.  Ben saa virheen, koska häntä ei ole lisätty tietovuon CDM-kansion valtuutetuksi käyttäjäksi Data Lake -järjestelmässä.
 

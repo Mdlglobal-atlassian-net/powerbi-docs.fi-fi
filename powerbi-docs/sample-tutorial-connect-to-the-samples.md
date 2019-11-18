@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 07/19/2019
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: 3577c19342d9f2dc5b0e3ab9908f47f82430e6db
-ms.sourcegitcommit: 012f05efc4e97aeb6178fb2fc820b73bcc1ce920
+ms.openlocfilehash: 5009e186c801f71c9c1a4b8e156dfefaaeac79f1
+ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68391474"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73020622"
 ---
 #  <a name="connect-to-the-samples-in-the-power-bi-service"></a>Yhteyden muodostaminen malleihin Power BI -palvelussa
 
@@ -91,7 +91,7 @@ Tutustu nyt itsenäisesti koontinäyttöön, tietojoukkoon ja raporttiin. Omiin 
      
    ![Upouusi raportti](media/sample-tutorial-connect-to-the-samples/power-bi-report-editing.png)
 
-1. Toinen tapa tutustua tietojoukkoon on suorittaa [Nopeat merkitykselliset tiedot](consumer/end-user-insights.md) -toiminto. Valitse kolme pistettä (...) ja valitse sitten **Hae nopeat merkitykselliset tiedot**. Kun merkitykselliset tiedot ovat valmiit, valitse **Näytä merkitykselliset tiedot**.
+1. Toinen tapa tutustua tietojoukkoon on suorittaa [Nopeat merkitykselliset tiedot](consumer/end-user-insights.md) -toiminto. Valitse **Enemmän vaihtoehtoja** (...) ja valitse sitten **Hae nopeat merkitykselliset tiedot**. Kun merkitykselliset tiedot ovat valmiit, valitse **Näytä merkitykselliset tiedot**.
      
     ![Merkityksellisiä tietoja -raportti](media/sample-tutorial-connect-to-the-samples/power-bi-insights.png)
 

@@ -1,6 +1,6 @@
 ---
 title: Upota raportteja tai koontinäyttöjä sovelluksista
-description: Opi integroimaan tai upottamaan raportti tai koontinäyttö Power BI -sovelluksesta, tai muualta, työtilaan.
+description: Opi integroimaan tai upottamaan raportti tai koontinäyttö Power BI -sovelluksesta työtilan sijaan.
 author: rkarlin
 ms.author: rkarlin
 ms.topic: conceptual
@@ -9,12 +9,12 @@ ms.subservice: powerbi-developer
 ms.custom: mvc
 manager: kfile
 ms.date: 11/27/2018
-ms.openlocfilehash: 5a988eb160ce772d2c2e70e8cba2c01d3f0a36a9
-ms.sourcegitcommit: 81ba3572531cbe95ea0b887b94e91f94050f3129
+ms.openlocfilehash: 1883d82b47c32f3c7f03e55a177429d09ce337a2
+ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66750889"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73430843"
 ---
 # <a name="embed-reports-or-dashboards-from-apps"></a>Upota raportteja tai koontinäyttöjä sovelluksista
 
@@ -42,7 +42,7 @@ Voit luoda Power BI:ssä sovelluksia, jotka kokoavat toisiinsa liittyvät koonti
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
-Katso, miten voit upottaa sovelluksen työtiloista kolmannen osapuolten asiakkaille ja organisaatiollesi:
+Katso, miten voit upottaa työtiloista kolmannen osapuolten asiakkaille ja organisaatiollesi:
 
 > [!div class="nextstepaction"]
 >[Upottaminen kolmannen osapuolten asiakkaille](embed-sample-for-customers.md)

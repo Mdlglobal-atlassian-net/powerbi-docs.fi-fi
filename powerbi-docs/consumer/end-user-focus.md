@@ -11,14 +11,16 @@ ms.topic: conceptual
 ms.date: 09/23/2019
 ms.author: mihart
 LocalizationGroup: Common tasks
-ms.openlocfilehash: a52fdbefabf84df22c89b0e933d56352fedf5da1
-ms.sourcegitcommit: e2c5d4561455c3a4806ace85defbc72e4d7573b4
+ms.openlocfilehash: 3a4f120ec64376955433faf04e24dd0e8f623419
+ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "71327791"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73019816"
 ---
 # <a name="display-content-in-more-detail-focus-mode-and-full-screen-mode"></a>Näytä sisältö yksityiskohtaisemmin: tarkastelutila ja koko näytön tila
+
+[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]    
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/dtdLul6otYE" frameborder="0" allowfullscreen></iframe>
 
@@ -26,7 +28,7 @@ Tarkastelutila ja koko näytön tila ovat kaksi eri tapaa nähdä visualisoinnit
 
 |Sisältö    | Tarkastelutila  |Koko näytön tila  |
 |---------|---------|----------------------|
-|Raporttinäkymä     |   Ei ole mahdollista     | kyllä |
+|Koontinäyttö     |   Ei ole mahdollista     | kyllä |
 |Raporttisivu   | Ei ole mahdollista  | kyllä|
 |Raportin visualisointi | kyllä    | kyllä |
 |Koontinäytön ruutu | kyllä    | kyllä |
@@ -97,11 +99,11 @@ Tarkastelutilan voi avata kahdella eri tavalla, toinen on tarkoitettu koontinäy
 
 1. Avaa koontinäyttö Power BI -palvelussa.
 
-2. Pidä hiiren osoitinta koontinäytön ruudun tai raportin visualisoinnin päällä, valitse kolme pistettä (...) ja valitse sitten **Avaa tarkastelutilassa**.
+2. Pidä hiiren osoitinta koontinäytön ruudun tai raportin visualisoinnin päällä, valitse **Enemmän vaihtoehtoja** (...) ja valitse **Avaa tarkastelutilassa**.
 
     ![ruudun kolme pistettä -valikko](media/end-user-focus/power-bi-dashboard-focus.png).
 
-2. Ruutu aukeaa ja täyttää koko raportin. Huomaa, että käytettävissäsi on edelleen **Suodattimet**-ruutu, jonka avulla voit käsitellä visualisointia. **Suodatin**-ruutu voidaan kutistaa. 
+2. Ruutu aukeaa ja täyttää koko raportin. Huomaa, että käytettävissäsi on edelleen **Suodattimet**-ruutu, jonka avulla voit käsitellä visualisointia. **Suodatin**-ruutu voidaan kutistaa.
 
    ![ruutu täyttää raportin](media/end-user-focus/power-bi-focus-filter.png)
 

@@ -2,21 +2,20 @@
 title: Tietojen vieminen Power BI -visualisoinnista
 description: Vie tiedot raportin visualisoinnista sekä raporttinäkymän visualisoinnista ja avaa ne Excelissä.
 author: mihart
-manager: kvivek
 ms.reviewer: cmfinlan
 featuredvideoid: jtlLGRKBvXY
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/11/2019
+ms.date: 10/30/2019
 ms.author: mihart
 LocalizationGroup: Consumers
-ms.openlocfilehash: 80033cafbe66303a1d6f55bba61f7d19449dc45b
-ms.sourcegitcommit: f34acbf9fb1ab568fd89773aaf412a847f88dd34
+ms.openlocfilehash: 0e8a3ce01356804aa5dcca21895fa01b5908ebd0
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72589516"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73851326"
 ---
 # <a name="export-data-from-a-visual"></a>Tietojen vieminen visualisoinnista
 
@@ -26,11 +25,11 @@ Jos haluat nähdä visualisoinnin luomiseen käytetyt tiedot, [voit näyttää k
 
 ## <a name="from-a-visual-on-a-power-bi-dashboard"></a>Power BI -raporttinäkymän visualisoinnista
 
-1. Aloita Power BI -raporttinäkymästä. Käytämme ***Markkinointi ja myynti*** -mallisovelluksen raporttinäkymää. Voit [ladata kyseisen sovelluksen osoitteesta AppSource.com](https://appsource.microsoft.com/en-us/product/power-bi/microsoft-retail-analysis-sample.salesandmarketingsample-preview?flightCodes=e2b06c7a-a438-4d99-9eb6-4324ce87f282).
+1. Aloita Power BI -raporttinäkymästä. Käytämme ***Markkinointi ja myynti*** -mallisovelluksen raporttinäkymää. Voit [ladata kyseisen sovelluksen osoitteesta AppSource.com](https://appsource.microsoft.com/product/power-bi/microsoft-retail-analysis-sample.salesandmarketingsample-preview?flightCodes=e2b06c7a-a438-4d99-9eb6-4324ce87f282).
 
     ![Sovelluksen raporttinäkymä](media/end-user-export/power-bi-dashboards.png)
 
-2. Kun viet osoittimen visualisoinnin päälle, näet kolme pistettä (...) sekä napsauttamalla avattavan toimintovalikon.
+2. Kun viet osoittimen visualisoinnin päälle, näet **Enemmän vaihtoehtoja** (...) sekä napsauttamalla avattavan toimintovalikon.
 
     ![Valikko, joka avautuu valitessa kolme pistettä](media/end-user-export/power-bi-action-menu.png)
 

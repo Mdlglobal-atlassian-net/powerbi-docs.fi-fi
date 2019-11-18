@@ -2,19 +2,18 @@
 title: Suosikit Power BI -mobiilisovelluksissa
 description: Miten luot ja selaat suosikkeja Power BI -koontinäytöillä, raporteilla ja sovelluksissa sekä Power BI -raporttipalvelimen ja Raporttipalveluiden raportit ja suorituskyvyn mittarit mobiilisovelluksissa.
 author: mshenhav
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 05/05/2018
 ms.author: mshenhav
-ms.openlocfilehash: 433bfc6298632eb9b999a23fe4b54417add507a3
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: c4fcf7bea8bf458231533efbc88e307d8d9ba2ab
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "61339351"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73870693"
 ---
 # <a name="make-and-view-favorites-in-the-power-bi-mobile-apps"></a>Suosikkien luominen ja selaaminen Power BI -mobiilisovelluksissa
 Koskee seuraavia:
@@ -44,7 +43,7 @@ Voit merkitä suorituskykymittareiden ja raportteja suosikeiksi Power BI -raport
   ![Suosikit-sivu](./media/mobile-apps-favorites/power-bi-ipad-favorites.png)
 
 ## <a name="make-an-app-a-favorite"></a>Sovelluksen lisääminen suosikkeihin
-1. Napsauta mobiilisovelluksen sovellusluettelossa sovelluksen vieressä olevia kolmea pistettä (...) > **Suosikki**.
+1. Napauta mobiilisovelluksen sovellusluettelossa sovelluksen vieressä **Lisää vaihtoehtoja** (...) > **Suosikki**.
    
     ![Suosikkisovellus-valikko](./media/mobile-apps-favorites/power-bi-android-favorite-app-ellipsis.png)
    
@@ -65,7 +64,7 @@ Voit tehdä Power BI -koontinäytöstä tai raportista suosikin koontinäyttö- 
 ## <a name="make-a-dashboard-or-report-a-favorite-in-the-android-mobile-apps"></a>Tee koontinäkymästä tai sovelluksesta suosikki Android-mobiilisovelluksissa
 Voit tehdä koontinäytöstä tai raportista suosikin koontinäyttö- tai raporttiluettelosta tai suoraan koontinäytöltä tai raportilta.
 
-* Napsauta mobiilisovelluksen koontinäyttö- tai raporttilistalla nimen vieressä olevia kolmea päällekkäistä pistettä (...) ja sitten **Suosikki**-painiketta. Nimen viereen ilmestyy keltainen tähti ![Suosikki-kuvake](./././media/mobile-apps-favorites/power-bi-mobile-yes-favorite-icon.png).
+* Napauta mobiilisovelluksen koontinäyttö- tai raporttilistalla nimen vieressä **Lisää vaihtoehtoja** (...) ja sitten **Suosikki**-painiketta. Nimen viereen ilmestyy keltainen tähti ![Suosikki-kuvake](./././media/mobile-apps-favorites/power-bi-mobile-yes-favorite-icon.png).
   
     ![Android-laitteiden Suosikit-valikko](./media/mobile-apps-favorites/power-bi-android-make-favorite.png)
 * Napsauta koontinäytöllä tai raportilla valintanauhan tyhjää tähteä ![Ei suosikki -kuvake](./././media/mobile-apps-favorites/power-bi-mobile-not-favorite-icon.png). Tähti muuttuu keltaiseksi ![Suosikki-kuvake](./media/mobile-apps-favorites/power-bi-android-favorite-icon.png).
@@ -77,5 +76,5 @@ Voit selata suosikkejasi Power BI -raporttipalvelimen ja Reporting Services -rap
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 * [Suosikkikoontinäytöt Power BI -palvelussa](../end-user-favorite.md) 
-* Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)
+* Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
 

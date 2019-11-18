@@ -2,7 +2,6 @@
 title: Tietojen ja tietueiden näyttäminen Power BI Desktop -visualisoinneissa
 description: Power BI Desktopin ominaisuuksien ”Näytä tiedot” ja ”Näytä tietueet” käyttäminen yksityiskohtiin pääsemiseksi
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Learn more
-ms.openlocfilehash: 6e425f146228d0139b9eec914a44ed5dc732fe98
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 66fe4a9eb109565108cd150369b2260a9d3e1d06
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65514781"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73877776"
 ---
 # <a name="use-see-data-and-see-records-in-power-bi-desktop"></a>Power BI Desktopin ominaisuuksien ”Näytä tiedot” ja ”Näytä tietueet” käyttäminen
 **Power BI Desktopissa** voit syventyä minkä tahansa visualisoinnin tietoihin ja nähdä pohjana olevien tietojen tekstiesityksen tai yksittäiset tietueet valituista visualisoinneista. Näitä ominaisuuksia kutsutaan joskus nimellä *napsauttamalla tarkasteltava raportti* tai *alirakenneraportti* tai *alirakenneraporttien yksityiskohtien tiedot*.
@@ -41,7 +40,7 @@ Voit käyttää **Näytä tiedot** -toimintoa yhden valitun tietoelementin pohja
 
 ![Näytä tiedot valintanauhassa](media/desktop-see-data-see-records/see-data1.png)
 
-Näet tiedot myös painamalla hiiren kakkospainiketta visualisoinnissa ja valitsemalla sitten **Näytä tiedot** näkyviin tulevasta valikosta, tai valitsemalla **Lisää vaihtoehtoja** -kohdan kolme pistettä (...) visualisoinnin oikeassa yläkulmassa ja valitsemalla sitten **Näytä tiedot**.
+Näet tiedot myös painamalla hiiren kakkospainiketta visualisoinnissa ja valitsemalla sitten **Näytä tiedot** näkyviin tulevasta valikosta, tai valitsemalla **Lisää vaihtoehtoja** (...) visualisoinnin oikeassa yläkulmassa ja valitsemalla sitten **Näytä tiedot**.
 
 ![Näytä tiedot napsauttamalla hiiren kakkospainikkeella](media/desktop-see-data-see-records/see-data2.png)&nbsp;&nbsp;![Näytä tiedot Lisää vaihtoehtoja](media/desktop-see-data-see-records/see-data3.png)
 

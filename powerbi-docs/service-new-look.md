@@ -2,7 +2,6 @@
 title: Power BI -palvelun uusi ulkoasu
 description: Power BI -palvelulla (app.powerbi.com) on uusi ulkoasu. Tässä artikkelissa kuvataan, miten raporteissa voidaan siirtyä käyttämällä uutta ulkoasua.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/08/2019
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: 11f60ba14734f40849aec47a492f4bf80c4ef3b5
-ms.sourcegitcommit: d02de4ca33d865aee3e3e764b98f221950cb0a10
+ms.openlocfilehash: c69e0247ecde7d6bd1cf158761a2ff9efd31d2d3
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "72239948"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73881381"
 ---
 # <a name="the-new-look-of-the-power-bi-service"></a>Power BI -palvelun uusi ulkoasu
 
@@ -66,7 +65,7 @@ Emme poistaneet mitään toimintoja vanhasta ulkoasusta. Lisäkomennot, kuten Mu
 
 ### <a name="where-are-file-menu-actions"></a>Missä Tiedosto-valikon toiminnot ovat?
 
-Etsitkö **Tiedosto**-valikon toimintoja? Toiminnot, jotka olivat **Tiedosto**-valikossa, ovat nyt myös kolmen pisteen (...) valikossa. 
+Etsitkö **Tiedosto**-valikon toimintoja? Toiminnot, jotka olivat **Tiedosto**-valikossa, ovat myös **Enemmän vaihtoehtoja** (...) -valikossa. 
 
 ![Tiedosto-valikko uudessa ulkoasussa](media/service-new-look/power-bi-file-menu-new-look.gif)
 

@@ -2,71 +2,97 @@
 title: Mukautettujen sarakkeiden lisääminen Power BI Desktopissa
 description: Luo uusi mukautettu sarake nopeasti Power BI Desktopissa
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/07/2019
+ms.date: 10/18/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 5633370259662141296550aa3d5d2343ac4fedaa
-ms.sourcegitcommit: 58c649ec5fd2447a0f9ca4c4d45a0e9fff2f1b6a
+ms.openlocfilehash: 443053bc973005d3e2a655b1222d049a4251e7d7
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "67408568"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73878866"
 ---
 # <a name="add-a-custom-column-in-power-bi-desktop"></a>Mukautettujen sarakkeiden lisääminen Power BI Desktopissa
-Voit helposti lisätä uuden mukautetun tietosarakkeen mallin avulla **Kyselyeditoria** - **Power BI Desktopia**. Voit luoda ja nimetä mukautetun sarakkeen helppokäyttöisten painikkeiden avulla käyttämällä [M-kaavoja](https://msdn.microsoft.com/library/mt270235.aspx) , joka määrittävät mukautetun sarakkeen. M-kaava on [kattavan funktion viittauksen sisältöjoukko](https://msdn.microsoft.com/library/mt779182.aspx). 
 
-![](media/desktop-add-custom-column/add-custom-column_01.png)
+Power BI Desktopissa voit helposti lisätä malliisi uuden mukautetun tietosarakkeen käyttämällä kyselyeditoria. Kyselyeditorin avulla voit luoda ja nimetä uudelleen mukautetun sarakkeen ja luoda näin [PowerQuery M -kaavakyselyitä](https://docs.microsoft.com/powerquery-m/quick-tour-of-the-power-query-m-formula-language) mukautetun sarakkeen määrittämistä varten. PowerQuery M -kaavakyselyillä on [kattava funktion viittauksen sisältöjoukko](https://docs.microsoft.com/powerquery-m/power-query-m-function-reference). 
 
-Mukautetun sarakkeen luominen on toinen **käytetty vaihe** kyselyssä, jonka luot **Kyselyeditorissa**, mikä tarkoittaa, että sitä voidaan muuttaa, siirtää aiemmaksi tai myöhemmäksi tai muokata milloin tahansa.
+Kun luot mukautetun sarakkeen kyselyeditorissa, Power BI Desktop lisää sen **käytössä olevaksi vaiheeksi** kyselyn **kyselyasetuksiin**. Sitä voidaan muuttaa, siirtää tai muokata milloin tahansa.
 
-## <a name="use-query-editor-to-add-a-new-custom-column"></a>Uuden mukautetun sarakkeen lisääminen kyselyeditorin avulla
-Jos haluat luoda uuden mukautetun sarakkeen, käynnistä **Kyselyeditori**. Voit käynnistää Kyselyeditorin valitsemalla **Power BI Desktopin** **Aloitus**-valintanauhasta **Muokkaa kyselyitä**.
+![Lisää mukautettu sarake -sivu](media/desktop-add-custom-column/add-custom-column_01.png)
 
-![](media/desktop-add-custom-column/add-column-from-example_02.png)
+## <a name="use-query-editor-to-add-a-custom-column"></a>Mukautetun sarakkeen lisääminen kyselyeditorin avulla
 
-Kun **Kyselyeditori** on käynnistetty ja sinulla on joitakin ladattuja tietoja, voit lisätä mukautetun sarakkeen valitsemalla **Lisää sarake** -välilehti valintanauhasta ja valitsemalla sitten **Mukautettu sarake** .
+Jos haluat aloittaa mukautetun sarakkeen luomisen, toimi seuraavasti:
 
-![](media/desktop-add-custom-column/add-custom-column_02.png)
+1. Käynnistä Power BI Desktop ja lataa joitakin tietoja.
 
-**Lisää mukautettu sarake** -ikkuna ilmestyy näkyviin. Se kuvaillaan seuraavassa osassa.
+2. Valitse valintanauhan **Aloitus**-välilehdestä **Muokkaa kyselyitä** ja valitse sitten valikosta **Muokkaa kyselyitä**.
+
+   ![Valitse Muokkaa kyselyitä](media/desktop-add-custom-column/add-column-from-example_02.png)
+
+   Näyttöön tulee **Kyselyeditori**-ikkuna. 
+
+2. Valitse valintanauhan **Lisää sarake** -välilehdestä **Mukautettu sarake**.
+
+   ![Valitse mukautettu sarake](media/desktop-add-custom-column/add-custom-column_02.png)
+
+   Näyttöön tulee **Lisää mukautettu sarake** -ikkuna.
 
 ## <a name="the-add-custom-column-window"></a>Lisää mukautettu sarake -ikkuna
-**Lisää mukautettu sarake** -ikkunassa näkyviin ruutuun oikealla ylhäällä tulee luettelo käytettävissä olevista kentistä (voit nimetä sen uudelleen kirjoittamalla uuden nimen kyseiseen tekstiruutuun), sekä [ **M** -kaava](https://msdn.microsoft.com/library/mt779182.aspx), jonka luot (tai kirjoitat) perusteena lisättävät kentät oikealla, lisäämällä operaattorit ja kehittämällä muulla tavoin kaavan, jolle uusi mukautettu sarake määritetään. 
 
-![](media/desktop-add-custom-column/add-custom-column_03.png)
+**Lisää mukautettu sarake** -ikkunassa on seuraavat ominaisuudet: 
+- Käytettävissä olevat sarakkeet oikealla olevassa **Käytettävissä olevat sarakkeet** -luettelossa.
+
+- Mukautetun sarakkeen alkuperäinen nimi **Uuden sarakkeen nimi** -ruudussa. Voit nimetä tämän sarakkeen uudelleen.
+
+- [PowerQuery M -kaavakyselyt](https://docs.microsoft.com/powerquery-m/power-query-m-function-reference) **Mukautettu sarakekaava** -ruudussa. Voit luoda nämä kyselyt luomalla kaavan, johon uusi mukautettu sarakkeesi on määritetty. 
+
+   ![Lisää mukautettu sarake -sivu](media/desktop-add-custom-column/add-custom-column_03.png)
 
 ## <a name="create-formulas-for-your-custom-column"></a>Mukautetun sarakkeen kaavojen luominen
-Voit valita kentän kohdasta **Käytettävissä olevat sarakkeet:** oikeanpuoleisesta luettelosta ja valita **<< Lisää** lisätäksesi ne mukautetun sarakkeen kaavan. Voit yksinkertaisesti kaksoisnapsauttaa luettelon saraketta sen lisäämiseksi.
 
-Kun kirjoitat kaavaa ja muodostat sarakkeen, ikkunan alareunassa näkyy ilmaisin, joka kertoo reaaliaikaisesti (samalla kuin kirjoitat), onko syntaksivirheitä havaittu. Jos kaikki on kunnossa, esiin tulee vihreä valintamerkki.
+1. Valitse oikealla olevasta **Käytettävissä olevat sarakkeet** -luettelosta sarake ja lisää se mukautetun sarakkeen kaavaan valitsemalla luettelon alapuolelta **Lisää**. Voit myös lisätä sarakkeen kaksoisnapsauttamalla sitä luettelossa.
 
-![](media/desktop-add-custom-column/add-custom-column_04.png)
+2. Kun kirjoitat kaavan ja luot sarakkeesi, huomaa ilmaisin **Lisää mukautettu sarake** -ikkunan alaosassa. 
 
-Jos syntaksissa on jonkinlainen virhe, näyttöön tulee keltainen varoituskuvake sekä havaittu virhe ja linkki, joka asettaa kohdistimen (kaavassa) kohtaan, jossa virhe havaitaan.
+   Jos virheitä ei ole, näet vihreän valintamerkin ja viestin *Syntaksi virheitä ei ole havaittu*.
 
-![](media/desktop-add-custom-column/add-custom-column_05.png)
+   ![Onnistunut syntaksin tarkistus Lisää mukautettu sarake -sivulla](media/desktop-add-custom-column/add-custom-column_04.png)
 
-Kun valitset **OK**, mukautettu sarake lisätään malliin ja **Lisätty mukautettu** -vaihe lisätään kyselyn **käytettyihin vaiheisiin**.
+   Syntaksivirheen sattuessa näet keltaisen varoituskuvakkeen sekä linkin, joka ohjaa kaavan kohtaan, jossa virhe ilmeni.
 
-![](media/desktop-add-custom-column/add-custom-column_06.png)
+   ![Virhe Lisää mukautettu sarake -sivulla](media/desktop-add-custom-column/add-custom-column_05.png)
 
-Jos kaksoisnapsautat **Lisätty mukautettu** -vaihetta **Käytetyt vaiheet** -ruudussa, **Lisää mukautettu sarake** -ikkuna tulee uudelleen esiin jo ladatun luomasi mukautetun sarakkeen kaavan kanssa, ja voit muokata sitä tarvittaessa.
+3. Valitse **OK**. 
 
-## <a name="using-the-advanced-editor-for-custom-columns"></a>Laajennetun editorin käyttö mukautettuihin sarakkeisiin
-Voit myös luoda mukautetun sarakkeen (ja muokata mitä tahansa kyselysi vaihetta) käyttämällä **laajennettua editoria**. Valitse **Kyselyeditorissa** **Näkymä**-välilehti ja valitse sitten **Laajennettu editori** nähdäksesi **laajennetun editorin**.
+   Power BI Desktop lisää malliin mukautetun sarakkeen ja lisää **Lisätty mukautettu** -vaiheen kyselyn **Käytössä olevat vaiheet**-luetteloon kohdassa **Kyselyasetukset**.
 
-![](media/desktop-add-custom-column/add-custom-column_07.png)
+   ![Kyselyasetuksiin lisätty mukautettu sarake](media/desktop-add-custom-column/add-custom-column_06.png)
 
-**Laajennettu editori** antaa kyselyyn täydet oikeudet.
+4. Jos haluat muokata mukautettua saraketta, kaksoisnapsauta **Lisätty mukautettu** -vaihetta **Käytössä olevat vaiheet** -luettelossa. 
 
+   **Lisää mukautettu sarake** -ikkuna, jossa on luomasi mukautettu sarakekaava.
+
+## <a name="use-the-advanced-editor-for-custom-columns"></a>Laajennetun editorin käyttö mukautettuihin sarakkeisiin
+
+Kun olet luonut kyselyn, voit myös muokata mitä tahansa kyselyn vaihetta **laajennetun editorin** avulla. Toimi seuraavasti:
+
+1. Valitse **Kyselyeditori**-ikkunassa valintanauhan **Näytä**-välilehti. 
+
+2. Valitse **Laajennettu editori**.
+
+   Näyttöön tulee **Laajennettu editori** -sivu, joka antaa kyselyyn täydet oikeudet. 
+
+   ![Laajennettu editori -sivu](media/desktop-add-custom-column/add-custom-column_07.png)
+
+   
 ## <a name="next-steps"></a>Seuraavat vaiheet
-On olemassa myös muita tapoja luoda mukautettu sarake, mukaan lukien sarakkeen luominen niiden esimerkkien avulla, jotka annat **Kyselyeditoriin**. Katso seuraavasta artikkelista lisätietoja mukautettujen sarakkeiden luomisesta esimerkeistä:
 
-* [Sarakkeen lisääminen esimerkistä Power BI Desktopissa](desktop-add-column-from-example.md)
-* [Power Query M Reference](/powerquery-m/power-query-m-reference)  
+- Voit luoda mukautetun sarakkeen myös muulla tavoin, mukaan lukien sarakkeen luominen niiden esimerkkien avulla, jotka annat kyselyeditoriin. Lisätietoja on kohdassa [Sarakkeen lisääminen esimerkistä Power BI Desktopissa](desktop-add-column-from-example.md).
+
+- Voit lukea Power Query M -viitetiedoista kohdassa [Power Query M -funktion viite](/powerquery-m/power-query-m-function-reference).
 

@@ -10,18 +10,18 @@ ms.topic: conceptual
 ms.date: 04/02/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 4507490fc2986ec7934af4c9e7417585523c7a05
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 38ecb04b45ef45a8345397c5b9ec3e89d9dfd232
+ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61143349"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73432066"
 ---
 # <a name="creating-and-using-dataflows-in-power-bi"></a>Tietovoiden luominen ja käyttäminen Power BI:ssä
 
 **Power BI:n** kehittyneen tietojen valmistelun ansiosta voit luoda tietovuoksi kutsutun tietokokoelman, jonka avulla voit yhdistää eri lähteistä tulevat liiketoimintatiedot, puhdistaa tiedot, muuntaa ne ja ladata ne Power BI -tallennustilaan.
 
-**Tietovuo** on kokoelma *entiteettejä* (entiteetit muistuttavat taulukoita), jotka luodaan ja joita hallitaan sovellustyötiloissa Power BI -palvelussa. Voit lisätä ja muokata entiteettejä tietovuossa, sekä hallita tietojen päivitysaikatauluja suoraan työtilasta, jossa tietovuo luotiin.
+**Tietovuo** on kokoelma *entiteettejä* (entiteetit muistuttavat taulukoita), jotka luodaan ja joita hallitaan työtiloissa Power BI -palvelussa. Voit lisätä ja muokata entiteettejä tietovuossa, sekä hallita tietojen päivitysaikatauluja suoraan työtilasta, jossa tietovuo luotiin.
 
 Kun olet luonut tietovuon, voit luoda **Power BI Desktopin** ja **Power BI -palvelun** avulla tietojoukkoja, raportteja, koontinäyttöjä ja sovelluksia, jotka perustuvat Power BI -tietovoihin lisäämiisi tietoihin ja tarjoavat merkityksellisiä tietoja yritystoiminnastasi.
 
@@ -36,13 +36,13 @@ Tietovuon käyttämisessä on kolme ensisijaista vaihetta:
 Seuraavissa osioissa tarkastellaan näitä vaiheita ja tutustutaan kunkin vaiheen suorittamisessa tarvittaviin työkaluihin. Aloitetaanpa.
 
 ## <a name="creating-a-dataflow"></a>Tietovuon luominen
-Luo tietovuo käynnistämällä Power BI -palvelu selaimessa ja valitsemalla **sovellustyötila** (tietovuot eivät ole käytettävissä *omassa työtilassa* Power BI -palvelussa) vasemmasta siirtymisruudusta seuraavan kuvan mukaisesti. Voit myös luoda uuden työtilan, jossa luot uuden tietovuon. 
+Luo tietovuo käynnistämällä Power BI -palvelu selaimessa ja valitsemalla **työtila** (tietovuot eivät ole käytettävissä *omassa työtilassa* Power BI -palvelussa) vasemmasta siirtymisruudusta seuraavan kuvan mukaisesti. Voit myös luoda uuden työtilan, jossa luot uuden tietovuon. 
 
 ![Luo tietovuo Power BI:ssä](media/service-dataflows-create-use/dataflows-create-use_02a.png)
 
-Kun olet **sovellustyötilassa**, jossa voit luoda tietovuon, **+ Luo** -painike näkyy pohjan oikeassa yläkulmassa. Valitse **+ Luo** -painike, ja valitse sitten avattavasta luettelosta **Tietovuo**. 
+Kun olet **työtilassa**, jossa voit luoda tietovuon, **+ Luo** -painike näkyy pohjan oikeassa yläkulmassa. Valitse **+ Luo** -painike, ja valitse sitten avattavasta luettelosta **Tietovuo**. 
 
-On tärkeää muistaa, että tietovoissa on vain *yksi omistaja*, joka on tietovuon luonut henkilö. Vain omistaja voi muokata tietovuota. Kaikki **sovellustyötilan** jäsenet, joilla on tietovuon luomiseen käytetyn sovellustyötilan luku- tai kirjoitusoikeudet, voivat muodostaa yhteyden tietovuohon **Power BI Desktopista** tässä artikkelissa myöhemmin kuvatulla tavalla.
+On tärkeää muistaa, että tietovoissa on vain *yksi omistaja*, joka on tietovuon luonut henkilö. Vain omistaja voi muokata tietovuota. Kaikki **työtilan** jäsenet, joilla on tietovuon luomiseen käytetyn työtilan luku- tai kirjoitusoikeudet, voivat muodostaa yhteyden tietovuohon **Power BI Desktopista** tässä artikkelissa myöhemmin kuvatulla tavalla.
 
 ![Power BI -palvelun + Luo -painike tietovuon luomiseksi](media/service-dataflows-create-use/dataflows-create-use_03a.png)
 
@@ -111,7 +111,7 @@ Hienoa – nyt olet valmis siirtymään seuraavaan vaiheeseen, joka on tietoläh
 
 Kun tietovuo on tallennettu, voit määrittää yhdistettyjen tietolähteiden päivitystiheyden.
 
-Tietosi pysyvät ajan tasalla Power BI -tietovoiden käyttämän Power BI:n tietojen päivitysprosessin ansiosta. **Power BI -palvelun** **sovellustyötilassa** on alueiden kokoelma, jossa tiedot voidaan luetella, mukaan lukien tietovuot, seuraavan kuvan mukaisesti.
+Tietosi pysyvät ajan tasalla Power BI -tietovoiden käyttämän Power BI:n tietojen päivitysprosessin ansiosta. **Power BI -palvelun** **työtilassa** on alueiden kokoelma, jossa tiedot voidaan luetella, mukaan lukien tietovuot, seuraavan kuvan mukaisesti.
 
 ![Hallitse tietovoita Power BI -palvelussa](media/service-dataflows-create-use/dataflows-create-use_12.png)
 
@@ -134,7 +134,7 @@ Yhdistä tietovuohon Power BI Desktopissa valitsemalla **Nouda tiedot > Power BI
 
 ![Yhdistä tietovoihin Power BI Desktopista](media/service-dataflows-create-use/dataflows-create-use_15.png)
 
-Siirry sieltä **sovellustyötilaan**, johon tallensit tietovuon, valitse tietovuo ja valitse sitten luomasi entiteetit luettelosta.
+Siirry sieltä **työtilaan**, johon tallensit tietovuon, valitse tietovuo ja valitse sitten luomasi entiteetit luettelosta.
 
 Voit myös käyttää ikkunan yläreunassa olevaa **hakupalkkia**, jos haluat löytää nopeasti tietovuon nimen tai entiteetin useiden tietovuon entiteettien joukosta.
 

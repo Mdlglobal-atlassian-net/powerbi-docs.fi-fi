@@ -8,15 +8,15 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 08/30/2019
+ms.date: 10/29/2019
 ms.author: maggies
 LocalizationGroup: Visualizations
-ms.openlocfilehash: b158e968d0fd35859cfd293177a7273e8311d5b2
-ms.sourcegitcommit: d04b9e1426b8544ce16ef25864269cc43c2d9f7b
+ms.openlocfilehash: c53ce84610e68280c915d55466bc7cddd3c0cc92
+ms.sourcegitcommit: d441d350504f8c6d9e100d229757add6237f0bef
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "71715309"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73060744"
 ---
 # <a name="add-hyperlinks-urls-to-a-table"></a>Hyperlinkkien (URL-osoitteiden) lisääminen taulukkoon
 Tässä aiheessa kerrotaan, miten voit lisätä hyperlinkkejä (URL-osoitteita) taulukkoon. Power BI Desktopin avulla voit lisätä hyperlinkkejä (URL-osoitteita) taulukkoihin ja matriiseihin. Lisää kyseiset hyperlinkit sitten raporttisi taulukoihin tai matriiseihin joko Power BI Desktopilla tai Power BI -palvelulla. 
@@ -44,7 +44,7 @@ Hyperlinkin lisäämisen menettely riippuu siitä, oletko tuonut tiedot vai yhdi
     ![Siniset ja alleviivatut linkit](media/power-bi-hyperlinks-in-tables/power-bi-table-with-hyperlinks2.png)
 
     > [!NOTE]
-    > URL-osoitteiden alussa on oltava **http://, https://** tai **www**.
+    > URL-osoitteiden tulee alkaa tietyillä etuliitteillä. Täysi luettelo löytyy alla olevasta [Huomioon otettavat seikat ja vianmääritys](#considerations-and-troubleshooting) -kohdasta.
     >
    
 1. Jos et halua taulukossa näkyvän pitkää URL-osoitetta, voit näyttää sen sijaan  ![Hyperlinkkikuvake](media/power-bi-hyperlinks-in-tables/power-bi-hyperlink-icon.png) hyperlinkkikuvakkeen. Huomaa, matriiseissa ei voi näyttää kuvakkeita.
@@ -80,8 +80,9 @@ Toinen tapa lisätä hyperlinkkejä Power BI -taulukoihin ja -matriiseihin on lu
 4. Aseta kohdistin sarakkeeseen, joka sisältää ne URL-osoitteet, jonka haluaisit muuttaa hyperlinkeiksi Power BI -taulukoissa.
    
    > [!NOTE]
-   > URL-osoitteiden alussa on oltava **http://, https://** tai **www**.
+   > URL-osoitteiden tulee alkaa tietyillä etuliitteillä. Täysi luettelo löytyy alla olevasta [Huomioon otettavat seikat ja vianmääritys](#considerations-and-troubleshooting) -kohdasta.
    > 
+   
 5. Valitse **Raportointiominaisuudet**-ryhmästä avattava **Tietoluokka**-valikko ja valitse **URL-verkko-osoite**. 
    
    ![Tietoluokan avattava valikko Excelissä](media/power-bi-hyperlinks-in-tables/createhyperlinksnew.png)
@@ -92,6 +93,16 @@ Toinen tapa lisätä hyperlinkkejä Power BI -taulukoihin ja -matriiseihin on lu
    ![Luo taulukko Power BI:ssä URL-kentän kanssa](media/power-bi-hyperlinks-in-tables/hyperlinksintables.gif)
 
 ## <a name="considerations-and-troubleshooting"></a>Huomioon otettavat seikat ja vianmääritys
+
+URL-osoitteiden tulee alkaa jollakin seuraavista:
+- http
+- https
+- -mailto
+- file
+- ftp
+- news
+- telnet
+
 Kysymys: Voinko käyttää mukautettua URL-osoitetta taulukon tai matriisin hyperlinkkinä?    
 Vastaus: Ei. Voit käyttää linkkikuvaketta. Jos haluat käyttää mukautettua tekstiä hyperlinkkinä ja URL-osoitteiden luettelo on lyhyt, kokeile käyttää tekstiruutua.
 

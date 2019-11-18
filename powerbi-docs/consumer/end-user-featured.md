@@ -2,7 +2,6 @@
 title: Power BI -palvelun avautuessa näytettävän raporttinäkymän valitseminen
 description: Ohjeita Suositellun koontinäytön luomiseen Power BI -palvelussa
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 featuredvideoid: G26dr2PsEpk
 ms.service: powerbi
@@ -11,14 +10,17 @@ ms.topic: conceptual
 ms.date: 09/14/2019
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 7f7f488891ddbdac1f377d25cf32c2eb0468c291
-ms.sourcegitcommit: 02042995df12cc4e4b97eb8a369e62364eb5af36
+ms.openlocfilehash: 412bcf397d550e002957e7379bf41381e8e3eea8
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71256322"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73852543"
 ---
 # <a name="featured-dashboards-in-the-power-bi-service"></a>Power BI -palvelun suositellut koontinäytöt
+
+[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
+
 Monilla meillä on tietty koontinäyttö, jolla käymme useammin kuin muilla. Se voi olla esimerkiksi koontinäyttö, jota käytämme yrityksemme toiminnassa. Se voi olla myös vaikkapa koontinäyttö, joka sisältää ruutukoosteen monista eri koontinäytöistä ja raporteista.
 
 ## <a name="create-a-featured-dashboard"></a>Suositellun koontinäytön luominen
@@ -37,7 +39,7 @@ Katso video, jossa Amanda luo suositellun koontinäytön. Kokeile sitten itse no
 
 
 1. Avaa koontinäyttö, jonka haluat määrittää suositelluksi. 
-2. Valitse yläreunan valikkoriviltä kolme pistettä (...) ja valitse **Aseta suositelluksi**. 
+2. Valitse yläreunan valikkoriviltä **Enemmän vaihtoehtoja** (...) ja valitse **Aseta suositelluksi**. 
    
     ![Aseta suositelluksi -kuvake](./media/end-user-featured/power-bi-dropdown.png)
 3. Vahvista valinta.
@@ -58,11 +60,11 @@ Jos muutat mielesi myöhemmin, voit määrittää uuden koontinäytön suositell
 Jos et halua asettaa mitään koontinäyttöä suositelluksi, seuraavassa on ohjeet koontinäytön poistamiseksi suositelluista.
 
 1. Avaa parhaillaan suositeltu koontinäyttö.
-2. Valitse yläreunan valikkoriviltä kolme pistettä (...) ja valitse **Poisteta suositeltu käytöstä**.
+2. Valitse yläreunan valikkoriviltä **Enemmän vaihtoehtoja** (...) ja valitse **Poista suositeltu käytöstä**.
 
     ![Suositellun valitun koontinäytön poistaminen käytöstä](./media/end-user-featured/power-bi-unfeature-newer.png)
    
 ## <a name="next-steps"></a>Seuraavat vaiheet
 - [Koontinäytön lisääminen suosikkeihin](end-user-favorite.md)
-- Onko sinulla kysyttävää? Kokeile [Power BI -yhteisöä](http://community.powerbi.com/).
+- Onko sinulla kysyttävää? Kokeile [Power BI -yhteisöä](https://community.powerbi.com/).
 

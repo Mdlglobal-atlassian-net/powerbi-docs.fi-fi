@@ -2,25 +2,24 @@
 title: Aktivoi Cortana Power BI:lle
 description: Käytä Cortanaa Power BI:n kanssa saadaksesi vastauksia tiedoistasi. Aktivoi Cortana kullekin Power BI -tietojoukolle ja ota sitten Cortana käyttöön päästäksesi käsiksi tietojoukkoihisi Windows-laitteilta.
 author: maggiesMSFT
-manager: kfile
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 05/29/2019
 ms.author: maggies
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 584dacbb3823f1a7c2475c780124985992a4b1d4
-ms.sourcegitcommit: 8bf2419b7cb4bf95fc975d07a329b78db5b19f81
-ms.translationtype: MT
+ms.openlocfilehash: a631bc37c193521b2acc367a0c6d8540419e3b79
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66375150"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73872901"
 ---
 # <a name="enable-cortana-to-access-power-bi-reports-and-their-underlying-datasets"></a>Mahdollista Cortanalle Power BI-raporttien (ja niiden taustalla olevien tietojoukkojen) käyttö
 Olet lukenut sivun [Perehdytys Cortanaan ja Power BI:hin](service-cortana-intro.md) (jos et ole, kannattaa se lukea ensin ja palata sitten takaisin). Ja nyt haluat kokeilla sitä itse.  Muutamien vaatimusten on täytyttävä ennen kuin voit esittää luonnollisella ohjelmointikielellä kysymyksiä Cortanassa ja etsiä vastauksia Power BI ***raportit*** -osioon tallennetuista tiedoista. Tarkemmin sanottuna sinun pitää toimia seuraavasti.
 
 > [!IMPORTANT]
-> Power BI-ollaan poistamassa Cortanan integrointia tuetaan. Alkaen kesäkuussa 11 Cortana ei enää toimi koontinäytöille ja raporteille.
+> Cortanan integrointi on vanhentumassa Power BI:ssä. 11. kesäkuuta alkaen Cortana ei enää toimi koontinäyttöjen ja raporttien kanssa.
 
 Power BI -palvelussa
 
@@ -42,7 +41,7 @@ Sinun tulee kirjautua sisään Power BI -palveluun (ei Power BI Desktopiin) ja t
 2. Tähän raporttiin liittyvä tietojoukko on **Contoso Sales**.
    
     ![Contoso Sales -tietojoukko](media/service-cortana-enable/power-bi-identify-dataset.png)
-3. Tietojoukon nimen oikealla puolella, valitse **ellipsit (...) > asetukset**.  
+3. Tietojoukon nimen oikealla puolella, valitse **Enemmän vaihtoehtoja** (...) > Asetukset**.  
    
     ![Valitse asetukset](media/service-cortana-enable/power-bi-settings-cortana.png)
 4. Valitse **Q&A ja Cortana** > **salli Cortanan käyttää tätä tietojoukkoa** > **käytä**.
@@ -84,5 +83,5 @@ Cortana käyttää tätä työ- tai koulutiliä, tarkistaakseen Power BI:stä ma
 
 [Cortanan ja Power BI:n integrointiin liittyvien ongelmien vianmääritys](service-cortana-troubleshoot.md)
 
-Onko sinulla muuta kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
+Onko sinulla muuta kysyttävää? [Kokeile Power BI -yhteisöä](https://community.powerbi.com/)
 

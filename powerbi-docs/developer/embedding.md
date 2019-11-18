@@ -17,16 +17,16 @@ helpviewer_keywords:
 - Power BI APIs
 ms.custom: seodec18
 ms.date: 05/15/2019
-ms.openlocfilehash: d2e52ff986bb2bba0caf5168c5038bb55011144a
-ms.sourcegitcommit: c799941c8169cd5b6b6d63f609db66ab2af93891
+ms.openlocfilehash: 501b43b7a17d60bbb277cd68c1a5d13e09b14bd5
+ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70391519"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73430737"
 ---
 # <a name="embedded-analytics-with-power-bi"></a>Upotettu analysointi Power BI:n avulla
 
-Power BI -palvelu (SaaS) ja Power BI Embedded -palvelu Azuressa (PaaS) sisältävät ohjelmointirajapintoja raporttinäkymien ja raporttien upottamista varten. Sisällön upottamisen ansiosta saat käyttöösi Power BI:n uusimmat toiminnot, esimerkiksi koontinäytöt, yhdyskäytävät ja sovellustyötilat.
+Power BI -palvelu (SaaS) ja Power BI Embedded -palvelu Azuressa (PaaS) sisältävät ohjelmointirajapintoja raporttinäkymien ja raporttien upottamista varten. Sisällön upottamisen ansiosta saat käyttöösi Power BI:n uusimmat toiminnot, esimerkiksi koontinäytöt, yhdyskäytävät ja työtilat.
 
 Voit käyttää [upottamisen määritystyökalua](https://aka.ms/embedsetup) päästäksesi nopeasti alkuun ja ladataksesi mallisovelluksen.
 
@@ -85,7 +85,7 @@ Power BI Embeddedia käyttävät kehittäjät voivat keskittyä kehittämään s
 > [!IMPORTANT]
 > Vaikka upottaminen edellyttää Power BI -palvelua, asiakkaillasi ei tarvitse olla Power BI -tiliä, jotta he voivat käyttää sovelluksesi upotettua sisältöä. 
 
-Kun olet valmis siirtymään tuotantoon, sovellustyötilallesi täytyy määrittää erillinen kapasiteetti. Microsoft Azureen sisältyvä Power BI Embedded tarjoaa sinulle [varattua kapasiteettia](azure-pbie-create-capacity.md) käyttöön sovellustesi kanssa.
+Kun olet valmis siirtymään tuotantoon, työtilallesi täytyy määrittää erillinen kapasiteetti. Microsoft Azureen sisältyvä Power BI Embedded tarjoaa sinulle [varattua kapasiteettia](azure-pbie-create-capacity.md) käyttöön sovellustesi kanssa.
 
 Jos haluat lisätietoja upottamisesta, lue ohjeartikkeli [Power BI -sisällön upottaminen](embed-sample-for-customers.md).
 

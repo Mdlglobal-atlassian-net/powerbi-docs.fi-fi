@@ -1,8 +1,7 @@
 ---
 title: Määritä työtilan tietovuoasetukset
-description: Määritä sovelluksen työtila Power BI:ssä tallentamaan tietovuon määritys- ja datatiedostot Azure Data Lake Storage Gen2:ssa
+description: Määritä työtila Power BI:ssä tallentamaan tietovuon määritys- ja datatiedostot Azure Data Lake Storage Gen2:ssa
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 04/02/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 12f4f24be9189041d5906844ebe71d6ffb023ec5
-ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
+ms.openlocfilehash: fa448dac3e7788639377ce2d73d9c0ed68952fb3
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68523515"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73877337"
 ---
 # <a name="configure-workspace-dataflow-settings-preview"></a>Määritä työtilan tietovuoasetukset (esikatselu)
 
@@ -35,11 +34,11 @@ Kumpaankin vaihtoehtoon perehdytään seuraavissa osioissa.
 
 ## <a name="create-a-new-workspace-configure-its-dataflow-storage"></a>Luo uusi työtila ja määritä sen tietovuon tallennustila
 
-Kun haluat luoda uuden sovellustyötilan Power BI -palvelussa, valitse **Työtilat > Luo sovellustyötila**.
+Kun haluat luoda uuden työtilan Power BI -palvelussa, valitse **Työtilat > Luo työtila**.
 
 ![Lisää uusi työtila](media/service-dataflows-configure-workspace-storage-settings/dataflow-storage-settings_01.jpg)
 
-Luo sovellustyötila -valintaikkunassa saattaa näkyä keltainen ruutu, jonka otsikko on **Esikatsele paranneltuja työtiloja**. Valitse kyseisellä alueella **Kokeile nyt**.
+Luo työtila -valintaikkunassa saattaa näkyä keltainen ruutu, jonka otsikko on **Esikatsele paranneltuja työtiloja**. Valitse kyseisellä alueella **Kokeile nyt**.
 
 ![Esikatsele paranneltuja työtiloja](media/service-dataflows-configure-workspace-storage-settings/dataflow-storage-settings_02.jpg)
 
@@ -47,7 +46,7 @@ Voit antaa uudelle työtilalle yksilöllisen nimen avautuvassa valintaikkunassa.
 
 ![Nimeä uusi työtilasi](media/service-dataflows-configure-workspace-storage-settings/dataflow-storage-settings_03.jpg)
 
-Laajenna seuraavaksi **Luo sovellustyötila** -valintaikkunassa **Lisäasetukset**-alue, jossa voit ottaa käyttöön **Tietovuon tallennustila (esikatselu)** -asetuksen.
+Laajenna seuraavaksi **Luo työtila** -valintaikkunassa **Lisäasetukset**-alue, jossa voit ottaa käyttöön **Tietovuon tallennustila (esikatselu)** -asetuksen.
 
 ![Uuden työtilan lisäasetukset](media/service-dataflows-configure-workspace-storage-settings/dataflow-storage-settings_04.jpg)
 
@@ -57,7 +56,7 @@ Luo uusi työtila valitsemalla **Tallenna**. Jokainen tässä työtilassa luotu 
 
 Voit uuden työtilan luomisen sijasta päivittää olemassa olevan työtilan siten, että sen määritystiedosto ja tiedot tallennetaan organisaatiosi Azure Data Lake Storage Gen2 -tilille. Muista, että tietovuon tallennusasetusta voidaan muuttaa vain, jos työtilassa ei ole yhtäkään tietovuota.
 
-Muokkaa sovellustyötilaa valitsemalla kolme pistettä **(...)** ja valitsemalla sitten **Muokkaa työtilaa**. 
+Muokkaa työtilaa valitsemalla kolme pistettä **(...)** ja valitsemalla sitten **Muokkaa työtilaa**. 
 
 ![Muokkaa työtilaa](media/service-dataflows-configure-workspace-storage-settings/dataflow-storage-settings_05.jpg)
 
@@ -103,7 +102,7 @@ Muita harkittavia seikkoja on seuraavassa luettelossa:
 
 **Power BI Desktop** -asiakas ei voi käyttää Azure Data Lake Storage Gen2 -tiliin tallennettuja tietovoita, jos hän ei ole tietovuon omistaja. Katso seuraavaa esimerkkiä:
 
-1.  Anna luo uuden sovellustyötilan ja määrittää sen tallentamaan tietovuot organisaation Data Lake -järjestelmään.
+1.  Anna luo uuden työtilan ja määrittää sen tallentamaan tietovuot organisaation Data Lake -tallennustilaan.
 2.  Ben, joka on myös jäsen Annan luomassa työtilassa, haluaa noutaa tietoja Annan luomasta tietovuosta Power BI Desktopin ja tietovuon liittimen avulla.
 3.  Ben saa virheen, koska häntä ei ole lisätty tietovuon CDM-kansion valtuutetuksi käyttäjäksi Data Lake -järjestelmässä.
 
@@ -138,4 +137,4 @@ Lisätietoja Common Data Modelista on sen yleiskatsauksen sisältävässä artik
 * [CDM-kansiot](https://go.microsoft.com/fwlink/?linkid=2045304)
 * [CDM-mallitiedoston määritys](https://go.microsoft.com/fwlink/?linkid=2045521)
 
-Voit myös yrittää [esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/).
+Voit myös yrittää [esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/).

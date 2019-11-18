@@ -10,15 +10,15 @@ ms.topic: tutorial
 ms.date: 09/05/2019
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: 49504343b076d7e2371c45005da24e35831bf506
-ms.sourcegitcommit: 9665997274301b228f45aa7250ba557e90164a4d
+ms.openlocfilehash: 681c55f4425729b96860367858273d7eb1ad73b6
+ms.sourcegitcommit: d441d350504f8c6d9e100d229757add6237f0bef
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70751405"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73060408"
 ---
 # <a name="tutorial-get-started-with-the-power-bi-service"></a>Opetusohjelma: Power BI -palvelun käytön aloittaminen
-Tämä opetusohjelma on johdanto joihinkin *Power BI -palvelun* ominaisuuksiin. Sen avulla voit yhdistää tietoihin, luoda raportin ja koontinäytön sekä esittää kysymyksiä tiedoistasi. Voit tehdä paljon muutakin Power BI -palvelussa. Tämä opetusohjelma tarjoaa vain esimakua. Suosittelemme lukemaan [Mikä Power BI on](power-bi-overview.md) -ohjeartikkelin, jotta saat käsityksen, miten Power BI -palvelu sopii yhteen muiden Power BI -tuotteiden kanssa.
+Tämä opetusohjelma on johdanto joihinkin *Power BI -palvelun* ominaisuuksiin. Sen avulla voit yhdistää tietoihin, luoda raportin ja koontinäytön sekä esittää kysymyksiä tiedoistasi. Voit tehdä paljon muutakin Power BI -palvelussa. Tämä opetusohjelma tarjoaa vain esimakua. Suosittelemme lukemaan [Mikä Power BI on](fundamentals/power-bi-overview.md) -ohjeartikkelin, jotta saat käsityksen, miten Power BI -palvelu sopii yhteen muiden Power BI -tuotteiden kanssa.
 
 ![Power BI -palvelun aloitussivu](media/service-get-started/power-bi-service-get-started-home.png)
 
@@ -115,7 +115,7 @@ Nyt kun olet muodostanut yhteyden tietoihin, voit aloittaa tutustumisen.  Kun ol
    
 8. Voit palata raporttiin valitsemalla raporttinäkymän uuden ruudun. Power BI palauttaa sinut raportin lukunäkymään. 
 
-1. Voit palata muokkausnäkymään valitsemalla yläreunan siirtymispalkista kolme pistettä (...) ja **Muokkaa**. Kun olet muokkausnäkymässä, voit jatkaa ruutujen tarkastelemista ja kiinnittämistä.
+1. Voit palata muokkausnäkymään valitsemalla yläreunan siirtymispalkista **Enemmän vaihtoehtoja** (...) > **Muokkaa**. Kun olet muokkausnäkymässä, voit jatkaa ruutujen tarkastelemista ja kiinnittämistä.
 
     ![Muokkaa raporttia valitsemalla Muokkaa](media/service-get-started/power-bi-service-edit-report.png)
 
@@ -200,7 +200,7 @@ Nyt kun olet suorittanut opetusohjelman, voit poistaa tietojoukon, raportin ja k
 
 1. Varmista vasemmasta siirtymispalkista, että olet **Omassa työtilassa**.
 2. Valitse **Tietojoukot**-välilehti ja etsi tätä opetusohjelmaa varten tuotu tietojoukko.  
-3. Valitse kolme pistettä (...) > **Poista**.
+3. Valitse **Enemmän vaihtoehtoja** (...) > **Poista**.
 
     ![Tietojoukon poistaminen](media/service-get-started/power-bi-service-delete-dataset.png)
 

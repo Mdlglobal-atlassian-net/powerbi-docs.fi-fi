@@ -3,18 +3,17 @@ title: Usean palveltavan kohteen hallinta Power BI Embeddedin analyysitoiminnoil
 description: Suunnittele monen vuokraajan sovellus, jossa käytetään upotettuja analyysitoimintoja.
 author: rkarlin
 ms.author: rkarlin
-manager: kfile
 ms.reviewer: nishalit
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 01/11/2019
-ms.openlocfilehash: 3940f677cadc5844cfac9c32781a5586bde0607a
-ms.sourcegitcommit: ba95d4979f1869f49a7d266c591f95e2810fdb29
+ms.openlocfilehash: 0456e1e56db3e291f359f266b1ac12073fb747da
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "69621284"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73864417"
 ---
 # <a name="manage-multi-tenancy-with-power-bi-embedded-analytics"></a>Usean vuokraajan hallinta Power BI Embeddedin analyysitoiminnoilla
 
@@ -37,7 +36,7 @@ Tässä artikkelissa kuvataan eri lähestymistapoja ja analysoidaan niitä erila
 
 **Vuokraaja** – Yksi asiakas (organisaatio), joka käyttää SaaS-sovellusta sekä resursseja tai tietoja, jotka asiakas tuo SaaS-sovellukseen.
 
-**[Power BI](../power-bi-overview.md)**  – Power BI -pilvipalvelu, jossa Power BI Embedded toimii.
+**[Power BI](../fundamentals/power-bi-overview.md)**  – Power BI -pilvipalvelu, jossa Power BI Embedded toimii.
 
 **Power BI -vuokraaja** – Joukko yhteen AAD-vuokraajaan liittyviä Power BI -resursseja.
 
@@ -55,7 +54,7 @@ Tässä artikkelissa kuvataan eri lähestymistapoja ja analysoidaan niitä erila
 
 **Kapasiteetti** – Joukko resursseja, jotka on omistettu Power BI -palvelun suoritukseen. [Power BI Premium -kapasiteetit](../service-premium-what-is.md) – Nämä on tarkoitettu suurille yrityksille, joissa Power BI on sisäisessä käytössä, kun taas [Power BI Embedded -kapasiteetit](azure-pbie-create-capacity.md) on tarkoitettu sovelluskehittäjille, jotka kehittävät SaaS-sovelluksia kolmansille osapuolille.
 
-**[Power BI Pro -käyttöoikeus](../service-admin-purchasing-power-bi-pro.md)** – Käyttäjäkohtainen käyttöoikeus, joka antaa oikeuden julkaista sisältöä sovellusten työtiloihin, kuluttaa sovelluksia ilman Premium-kapasiteettia, jakaa koontinäyttöjä sekä tilata koontinäyttöjä ja raportteja.
+**[Power BI Pro -käyttöoikeus](../service-admin-purchasing-power-bi-pro.md)** – Käyttäjäkohtainen käyttöoikeus, joka antaa oikeuden julkaista sisältöä työtiloihin, kuluttaa sovelluksia ilman Premium-kapasiteettia, jakaa koontinäyttöjä sekä tilata koontinäyttöjä ja raportteja.
 
 **[Tietoyhteystilat](../desktop-directquery-about.md)**  – Tietolähteiden yhdistäminen Power BI:hin voidaan tehdä eri tiloissa:
 

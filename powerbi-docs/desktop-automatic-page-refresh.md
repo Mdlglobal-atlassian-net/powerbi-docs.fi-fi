@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 10/14/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 546dffe20d6840544eca1360945482630a686069
-ms.sourcegitcommit: 549401b0e1fad15c3603fe7f14b9494141fbb100
+ms.openlocfilehash: e694add3fd275cc2d3e9e0e6799adc9a16f32bbd
+ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "72307980"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73429916"
 ---
 # <a name="automatic-page-refresh-in-power-bi-desktop-preview"></a>Automaattinen sivun päivitys Power BI Desktopissa (esiversio)
 
@@ -112,7 +112,7 @@ Selventääksemme tämän toimintaa meidän on syytä käydä läpi hieman taust
 
 Jaetussa kapasiteetissa työnkulut suoritetaan muiden asiakkaiden kanssa jaetuissa laskennallisissa resursseissa. Koska kapasiteetin täytyy jakaa resursseja, käytössä on rajoituksia *tasapuolisuuden* takaamiseksi. Esimerkiksi mallin koko voi olla enintään 1 Gt ja päivittäisiä päivityksiä voi olla enintään kahdeksan.
 
-Power BI **-työtilat** ovat kapasiteeteissa: ne edustavat suojauksen, yhteistyön ja käyttöönoton säilöjä. Kullakin Power BI -käyttäjällä on henkilökohtainen työtila, jota kutsutaan **omaksi työtilaksi**. Yhteistyön ja käyttöönoton mahdollistamiseksi voidaan luoda lisää työtiloja, joita kutsutaan **sovellustyötiloiksi**. Työtilat, mukaan lukien henkilökohtaiset työtilat, luodaan oletusarvoisesti **jaetussa kapasiteetissa**.
+Power BI **-työtilat** ovat kapasiteeteissa: ne edustavat suojauksen, yhteistyön ja käyttöönoton säilöjä. Kullakin Power BI -käyttäjällä on henkilökohtainen työtila, jota kutsutaan **omaksi työtilaksi**. Yhteistyön ja käyttöönoton mahdollistamiseksi voidaan luoda lisää työtiloja, joita kutsutaan **työtiloiksi**. Työtilat, mukaan lukien henkilökohtaiset työtilat, luodaan oletusarvoisesti **jaetussa kapasiteetissa**.
 
 Tässä on joitain tietoja kahdesta työtilojen käyttötilanteesta:
 

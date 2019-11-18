@@ -1,53 +1,53 @@
 ---
 title: Rekisteröityminen Power BI:hin yksityishenkilönä
-description: Ota selvää, miten voit rekisteröityä Power BI:n käyttäjäksi ja aloittaa sen käytön henkilökohtaisiin raportti- ja visualisointitarpeisiisi.
+description: Ota selvää, miten voit rekisteröityä Power BI:n käyttäjäksi ja aloittaa sen käytön tietojen analysoinnin ja visualisoinnin tarpeisiisi.
 author: mgblythe
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/09/2019
+ms.date: 10/31/2019
 ms.author: mblythe
 LocalizationGroup: Get started
-ms.openlocfilehash: f8645daeec1551af59a98058b02cf3eb8972d09a
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 785aad2cb7fe369805d8562eb8e493fb65036ef0
+ms.sourcegitcommit: 2b7beec5237a597bab2da8eb6ffe69122a5d2ed9
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65710766"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "73442862"
 ---
 # <a name="sign-up-for-power-bi-as-an-individual"></a>Rekisteröityminen Power BI:hin yksityishenkilönä
 
-Power BI toimii yhtä sujuvasti henkilökohtaisena raportointi- ja visualisointityökaluna kuin analytiikka- ja päätöksentekovälineenä ryhmäprojekteille, yksiköille ja kokonaisille organisaatioille. Tässä artikkelissa kerrotaan, miten sen yksityishenkilönä Power BI Pro-kokeiluversion käyttäjäksi. Jos olet Power BI-järjestelmänvalvoja, katso [Power BI-käyttöoikeuksien organisaatiosi](service-admin-licensing-organization.md).
+Power BI toimii yhtä sujuvasti henkilökohtaisena tietojen analysoinnin ja visualisoinnin työkaluna kuin analytiikka- ja päätöksentekovälineenä ryhmäprojekteille, yksiköille ja kokonaisille organisaatioille. Tässä artikkelissa kerrotaan, miten voit rekisteröityä Power BI:n käyttäjäksi yksityishenkilönä. Jos olet Power BI -järjestelmänvalvoja, katso [Power BI -käyttöoikeuksien hallinta organisaatiossasi](service-admin-licensing-organization.md).
 
 ![Power BI -koontinäyttö](media/service-self-service-signup-for-power-bi/dashboard.png)
 
 ## <a name="supported-email-addresses"></a>Tuetut sähköpostiosoitteet
 
-Ennen kuin aloitat rekisteröitymisen, on tärkeää Lue minkä tyyppisiä sähköpostiosoitteet, jota voit käyttää Power BI:
+Ennen kuin aloitat rekisteröitymisen, on tärkeää tuntea sähköpostiosoitteet, joita voit käyttää Power BI -rekisteröitymiseen:
 
-* Power BI edellyttää, että käytät rekisteröintiin työpaikan tai oppilaitoksen sähköpostiosoitetta. Et voi rekisteröityä sähköpostin kuluttajapalvelujen tai tietoliikenteen palveluntarjoajien sähköpostiosoitteita. Tämä sisältää outlook.com, hotmail.com, gmail.com ja muiden.
+* Power BI edellyttää, että käytät rekisteröintiin työpaikan tai oppilaitoksen sähköpostiosoitetta. Et voi rekisteröityä käyttämällä sähköpostin kuluttajapalvelujen tai tietoliikenteen palveluntarjoajien sähköpostiosoitteita. Tämä sisältää outlook.com-, hotmail.com- ja gmail.com-osoitteet ja muut vastaavat.
 
 * Kun olet rekisteröitynyt, voit [kutsua vieraskäyttäjiä](https://docs.microsoft.com/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b) tutustumaan Power BI -sisältöösi millä tahansa sähköpostiosoitteella, henkilökohtaiset tilit mukaan lukien.
 
-* Voit rekisteröityä Power BI:hin .gov- tai .mil-osoitteella, mutta prosessi on tällöin erilainen. Katso lisätietoja, [Rekisteröi Yhdysvaltain valtionhallinnon organisaatio Power BI-palvelussa](service-govus-signup.md).
+* Voit rekisteröityä Power BI:hin .gov- tai .mil-osoitteella, mutta prosessi on tällöin erilainen. Katso lisätietoja artikkelista [Rekisteröi Yhdysvaltain valtionhallinnon organisaatio Power BI -palveluun](service-govus-signup.md).
 
-## <a name="sign-up-for-a-trial"></a>Kokeiluversioon rekisteröityminen
+## <a name="sign-up-for-a-power-bi-account"></a>Rekisteröi Power BI -tili
 
-Rekisteröidy Power BI Pro -kokeiluversion käyttäjäksi näiden ohjeiden avulla. Lisätietoja on kohdassa [kokeiluversion vanhentuminen](#trial-expiration), jos haluat lisätietoja asetuksia, kun tämä kokeilu päättyy.
+Rekisteröi Power BI -tili näiden ohjeiden avulla. Kun olet suorittanut tämän prosessin, sinulla on Power BI (ilmainen) -käyttöoikeus, jonka avulla voit kokeilla Power BI:tä käyttämällä Omaa työtilaa, käyttämällä Power BI Premium -kapasiteettiin määritetyn työtilan sisältöä tai aloittamalla erillisen Power BI Pro -kokeiluversion käytön. Jos haluat lisätietoja, katso kohta [Power BI:n ominaisuudet käyttöoikeustyypin mukaan](service-features-license-type.md). 
 
-1. Siirry Power BI:n [rekisteröitymissivulle](https://signup.microsoft.com/signup?sku=a403ebcc-fae0-4ca2-8c8c-7a907fd6c235).
+1. Siirry [rekisteröitymissivulle](https://signup.microsoft.com/signup?sku=a403ebcc-fae0-4ca2-8c8c-7a907fd6c235).
 
 1. Anna sähköpostiosoitteesi ja valitse sitten **Rekisteröidy**.
 
     ![Aloittaminen](media/service-self-service-signup-for-power-bi/get-started.png)
 
-1. Jos näyttöön tulee sanoma, katsomalla, valitse vaihtoehto vahvistuskoodin vastaanottamiseen, ja jatka sitten tämän toimintosarjan seuraavaan vaiheeseen.
+1. Jos näyttöön tulee tämä viesti, valitse vaihtoehto vahvistuskoodin vastaanottamiseen ja jatka sitten tämän ohjeen seuraavaan vaiheeseen.
 
     ![Todista, ettet ole robotti](media/service-self-service-signup-for-power-bi/prove-robot.png)
 
-    Jos näyttöön tulee sanoma, katsomalla, viimeistele vaiheita ja kirjaudu sisään Power BI.
+    Jos näyttöön tulee tämä viesti, suorita kirjautumisvaiheet loppuun ja aloita Power BI:n käyttö.
 
     ![Aiemmin luotu tili](media/service-self-service-signup-for-power-bi/existing-account.png)
 
@@ -55,7 +55,7 @@ Rekisteröidy Power BI Pro -kokeiluversion käyttäjäksi näiden ohjeiden avull
 
     ![Rekisteröidy](media/service-self-service-signup-for-power-bi/sign-up.png)
 
-1. Tarkista sähköpostistasi tällainen viesti.
+1. Tarkista, oletko saanut sähköpostiisi tämän viestin.
 
     ![Sähköpostivahvistus](media/service-self-service-signup-for-power-bi/email-verification.png)
 
@@ -63,25 +63,25 @@ Rekisteröidy Power BI Pro -kokeiluversion käyttäjäksi näiden ohjeiden avull
 
     ![Luo tili](media/service-self-service-signup-for-power-bi/create-account.png)
 
-1. Olet sitten sinut [Power BI-kirjautumissivu](https://powerbi.microsoft.com/landing/signin/), ja voit aloittaa Power BI.
+1. Sinut ohjataan [Power BI:n kirjautumissivulle](https://powerbi.microsoft.com/landing/signin/) ja voit aloittaa Power BI:n käytön.
 
     ![Aiemmin luotu tili](media/service-self-service-signup-for-power-bi/welcome-screen.png)
 
 ## <a name="trial-expiration"></a>Kokeiluversion vanhentuminen
 
-Kun Power BI Pro kokeilujakso loppuu, Power BI (ilmainen) käyttöoikeuden käyttöoikeus tekemäsi muutokset. Kun näin tapahtuu, sinulla ei ole enää käyttää ominaisuuksia, jotka edellyttävät Power BI Pro-käyttöoikeus. Jos haluat lisätietoja, katso kohta [Ominaisuudet käyttöoikeustyypin mukaan](service-features-license-type.md).
+Kun olet suorittanut rekisteröintiprosessin, voit rekisteröityä Power BI Pro -kokeiluversioon Power BI -palvelussa. Kun kokeilujakso päättyy, käyttöoikeutesi muuttuu takaisin Power BI (ilmainen) -käyttöoikeudeksi. Tämän jälkeen sinulla ei ole enää käyttöoikeutta ominaisuuksiin, joihin tarvitaan Power BI Pro -käyttöoikeus. Jos haluat lisätietoja, katso kohta [Ominaisuudet käyttöoikeustyypin mukaan](service-features-license-type.md).
 
-Jos (ilmainen) Power BI-käyttöoikeus riittää, sinun ei tarvitse tehdä mitään muuta. Voit hyödyntää Power BI Pro, pyydä lisätietoja IT-tietoja Power BI Pro-käyttöoikeuden ostamisesta.
+Jos Power BI (ilmainen) -käyttöoikeus riittää, sinun ei tarvitse tehdä mitään muuta. Hyödyntääksesi Power BI Pro -ominaisuuksia ota yhteyttä IT-järjestelmänvalvojaan ja kysy mahdollisuudesta Power BI Pro -käyttöoikeuden ostamiseen.
 
 ## <a name="troubleshooting-the-sign-up-process"></a>Rekisteröitymisen vianmääritys
 
-Useimmissa tapauksissa voit rekisteröityä Power BI-kuvattu prosessin mukaisesti. Osa ongelmista, jotka saattavat estää rekisteröityminen on kuvattu seuraavassa taulukossa mahdollisista kanssa.
+Useimmissa tapauksissa voit rekisteröityä Power BI:hin noudattamalla kuvailtua prosessia. Joitakin ongelmia, jotka saattavat estää rekisteröitymisen, sekä niiden ratkaisuja on kuvattu seuraavassa taulukossa.
 
-| Oire / virhesanoma | Syy ja vaihtoehtoinen menetelmä |
+| Oire/virhesanoma | Syy ja vaihtoehtoinen menetelmä |
 | ----------------------- | -------------------- |
-| <strong>Henkilökohtaiset sähköpostiosoitteet (esimerkiksi nancy@gmail.com)</strong> näyttöön tulee viesti, joka näyttää suunnilleen tältä kirjautumisen aikana seuraavankaltainen ilmoitus: <br /><br /> *Annoit henkilökohtaisen sähköpostiosoitteen: Anna työsähköpostiosoitteesi, jotta voimme turvallisesti tallentaa yrityksesi tiedot.* <br /><br /> tai <br /><br /> *Tämä vaikuttaa henkilökohtaiselta sähköpostiosoitteelta. Anna työosoitteesi, jotta voimme muodostaa yhteyden sinun ja muiden samassa yrityksessä työskentelevien välille. Sinun ei tarvitse huolehtia. Emme jaa osoitettasi kenellekään.* | Power BI ei tue kuluttajapalvelujen palveluntarjoajien sähköpostin kaupallisten sähköpostipalvelujen tai teleyritysten sähköpostiosoitteita. <br /><br /> Viimeistele rekisteröinti, yritä uudelleen käyttämällä työpaikkasi tai oppilaitoksesi antamaa sähköpostiosoitetta. <br /><br /> Jos rekisteröityminen ei edelleenkään onnistu ja haluat suorittaa edistyksellisemmän asennuksen, voit [rekisteröityä uuteen Office 365 -kokeiluversioon ja käyttää rekisteröitymiseen kyseistä sähköpostiosoitetta](service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md). <br /><br /> Voit myös pyytää aiemmin luotua käyttäjää [kutsumaan sinut vieraskäyttäjänä](service-admin-azure-ad-b2b.md). |
-| **Omatoiminen rekisteröinti on poistettu käytöstä**: Näyttöön tulee sanoma, kuten tällä tietojoukolla kirjautumisen aikana seuraavankaltainen ilmoitus: <br /><br /> *Emme voi viimeistellä rekisteröitymistäsi. IT-osastosi on poistanut käytöstä rekisteröitymisen Microsoft Power BI:hin. Ota osastoon yhteyttä rekisteröinnin suorittamiseksi loppuun.* <br /><br /> tai <br /><br /> *Tämä vaikuttaa henkilökohtaiselta sähköpostiosoitteelta. Anna työosoitteesi, jotta voimme muodostaa yhteyden sinun ja muiden samassa yrityksessä työskentelevien välille. Sinun ei tarvitse huolehtia. Emme jaa osoitettasi kenellekään.* | Organisaatiosi IT-järjestelmänvalvojasi on poistanut käytöstä omatoimisen rekisteröitymisen Power BI. <br /><br /> Viimeistele rekisteröinti, ota yhteyttä IT-järjestelmänvalvojaasi ja pyydä häntä [ohjeiden käyttöön Rekisteröidy](service-admin-licensing-organization.md#enable-or-disable-individual-user-sign-up-in-azure-active-directory). <br/><br/> Tämä ongelma saattaa ilmetä myös, jos olet [rekisteröitynyt Office 365:een kumppanin kautta](service-admin-syndication-partner.md). |
-| **Sähköpostiosoite ei ole Office 365-tunnus** näyttöön tulee sanoma, kuten tällä tietojoukolla kirjautumisen aikana seuraavankaltainen ilmoitus: <br /><br /> *Emme löydä sinua osoitteesta contoso.com.  Käytätkö eri tunnusta työpaikalla tai oppilaitoksessa? <br /><br /> Yritä kirjautua sisään sillä, ja jos se ei toimi, ota yhteyttä IT-osastoon.* | Organisaatiosi käyttää Office 365:een ja muihin Microsoft-palveluihin kirjautumiseen tunnuksia, jotka ovat muita kuin sähköpostiosoitteesi.  Sähköpostiosoitteesi saattaa esimerkiksi olla Nancy.Smith@contoso.com, mutta tunnuksesi on nancys@contoso.com. <br /><br /> Viimeistele rekisteröinti käyttämällä tunnusta, jonka organisaatiosi on määrittänyt sinulle Office 365: een tai muihin Microsoft-palveluihin kirjautumista varten.  Jos et tiedä, mistä tässä on, ota yhteyttä IT-järjestelmänvalvojaasi. <br /><br /> Jos rekisteröityminen ei edelleenkään onnistu ja haluat suorittaa edistyksellisemmän asennuksen, voit [rekisteröityä uuteen Office 365 -kokeiluversioon ja käyttää rekisteröitymiseen kyseistä sähköpostiosoitetta](service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md). |
+| <strong>Henkilökohtaiset sähköpostiosoitteet (esimerkiksi nancy@gmail.com)</strong> Näyttöön tulee seuraavankaltainen sanoma rekisteröitymisen yhteydessä: <br /><br /> *Annoit henkilökohtaisen sähköpostiosoitteen: Anna työsähköpostiosoitteesi, jotta voimme turvallisesti tallentaa yrityksesi tiedot.* <br /><br /> tai <br /><br /> *Tämä vaikuttaa henkilökohtaiselta sähköpostiosoitteelta. Anna työosoitteesi, jotta voimme muodostaa yhteyden sinun ja muiden samassa yrityksessä työskentelevien välille. Sinun ei tarvitse huolehtia. Emme jaa osoitettasi kenellekään.* | Power BI ei tue sähköpostin kuluttajapalvelujen tai tietoliikenteen palveluntarjoajien antamia sähköpostiosoitteita. <br /><br /> Viimeistele rekisteröinti yrittämällä uudelleen käyttäen työpaikkasi tai oppilaitoksesi antamaa sähköpostiosoitetta. <br /><br /> Jos rekisteröityminen ei edelleenkään onnistu ja haluat suorittaa edistyksellisemmän asennuksen, voit [rekisteröityä uuteen Office 365 -kokeiluversioon ja käyttää rekisteröitymiseen kyseistä sähköpostiosoitetta](service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md). <br /><br /> Voit myös pyytää aiemmin luotua käyttäjää [kutsumaan sinut vieraskäyttäjänä](service-admin-azure-ad-b2b.md). |
+| **Omatoiminen rekisteröinti on poistettu käytöstä**: Näyttöön tulee kirjautumisen aikana tämä ilmoitus: <br /><br /> *Emme voi viimeistellä rekisteröitymistäsi. IT-osastosi on poistanut käytöstä rekisteröitymisen Microsoft Power BI:hin. Ota osastoon yhteyttä rekisteröinnin suorittamiseksi loppuun.* <br /><br /> tai <br /><br /> *Tämä vaikuttaa henkilökohtaiselta sähköpostiosoitteelta. Anna työosoitteesi, jotta voimme muodostaa yhteyden sinun ja muiden samassa yrityksessä työskentelevien välille. Sinun ei tarvitse huolehtia. Emme jaa osoitettasi kenellekään.* | Organisaatiosi IT-järjestelmänvalvoja on poistanut käytöstä omatoimisen rekisteröitymisen Power BI:hin. <br /><br /> Voit tehdä rekisteröitymisen loppuun ottamalla yhteyttä IT-järjestelmänvalvojaan ja pyytämällä häntä [ottamaan rekisteröitymisen käyttöön noudattamalla ohjeita](service-admin-licensing-organization.md#enable-or-disable-individual-user-sign-up-in-azure-active-directory). <br/><br/> Tämä ongelma saattaa ilmetä myös, jos olet [rekisteröitynyt Office 365:een kumppanin kautta](service-admin-syndication-partner.md). |
+| **Sähköpostiosoite ei ole Office 365 -tunnus** Näyttöön tulee kirjautumisen aikana tämä ilmoitus: <br /><br /> *Emme löydä sinua osoitteesta contoso.com.  Käytätkö eri tunnusta työpaikalla tai oppilaitoksessa? <br /><br /> Yritä kirjautua sisään sillä, ja jos se ei toimi, ota yhteyttä IT-osastoon.* | Organisaatiosi käyttää Office 365:een ja muihin Microsoft-palveluihin kirjautumiseen tunnuksia, jotka ovat muita kuin sähköpostiosoitteesi.  Sähköpostiosoitteesi saattaa esimerkiksi olla Nancy.Smith@contoso.com, mutta tunnuksesi on nancys@contoso.com. <br /><br /> Tee rekisteröinti loppuun käyttämällä tunnusta, jonka organisaatiosi on myöntänyt sinulle Office 365:een tai muihin Microsoft-palveluihin kirjautumista varten.  Jos et tiedä, mistä tässä on kysymys, ota yhteyttä IT-järjestelmänvalvojaan. <br /><br /> Jos rekisteröityminen ei edelleenkään onnistu ja haluat suorittaa edistyksellisemmän asennuksen, voit [rekisteröityä uuteen Office 365 -kokeiluversioon ja käyttää rekisteröitymiseen kyseistä sähköpostiosoitetta](service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md). |
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 

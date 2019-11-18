@@ -2,7 +2,6 @@
 title: Yhdistelmäkaavio Power BI:ssä
 description: Tässä opetusohjelmassa kerrotaan yhdistelmäkaavioiden käytöstä ja luonnista Power BI -palvelussa ja Power BI Desktopissa.
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 featuredvideoid: lnv66cTZ5ho
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/22/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 97c01966750d888f3420d265eb3f252b3a8f57d3
-ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
+ms.openlocfilehash: 03a426947787cbd2720661267cac4601a4b9b13a
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71194805"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73880956"
 ---
 # <a name="combo-chart-in-power-bi"></a>Yhdistelmäkaavio Power BI:ssä
 
@@ -36,11 +35,11 @@ Yhdistelmäkaavio on hyvä vaihtoehto, kun:
 * haluat säästää tilaa piirtoalustalla.
 
 ### <a name="prerequisites"></a>Edellytykset
-Tässä opetusohjelmassa käytetään [Jälleenmyyntianalyysimallin PBIX-tiedostoa](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix).
+Tässä opetusohjelmassa käytetään [Jälleenmyyntianalyysimallin PBIX-tiedostoa](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix).
 
 1. Valitse valikkorivin vasemmasta yläosasta **Tiedosto** > **Avaa**
    
-2. **Jälleenmyyntianalyysimalli PBIX-tiedoston löytäminen**
+2. **Jälleenmyyntianalyysimallin PBIX-tiedoston löytäminen**
 
 1. Avaa **Jälleenmyyntianalyysimallin PBIX-tiedosto** raporttinäkymässä ![Näyttökuva raporttinäkymän kuvakkeesta.](media/power-bi-visualization-kpi/power-bi-report-view.png).
 
@@ -67,7 +66,7 @@ Seuraavassa videossa luodaan yhdistelmäkaavio käyttämällä myynti- ja markki
     c. Valitse **Aika** \> **FiscalMonth** ja lisää se **Akseli**-kohtaan.
 
     ![yhdistelmä opetusohjelma esimerkki](media/power-bi-visualization-combo-chart/combotutorial1new.png)
-5. Valitse kolme pistettä (...) visualisoinnin oikeasta yläkulmasta ja valitse **Lajitteluperuste > FiscalMonth**. Jos haluat muuttaa lajittelujärjestyksen, valitse kolme pistettä uudelleen ja valitse joko **Lajittele nousevaan järjestykseen** tai **Lajittele laskevaan järjestykseen**. Tässä esimerkissä käytetään vaihtoehtoa **Lajittele nousevaan järjestykseen**.
+5. Valitse **Enemmän vaihtoehtoja** (...) visualisoinnin oikeasta yläkulmasta ja valitse **Lajitteluperuste > FiscalMonth**. Jos haluat muuttaa lajittelujärjestyksen, valitse kolme pistettä uudelleen ja valitse joko **Lajittele nousevaan järjestykseen** tai **Lajittele laskevaan järjestykseen**. Tässä esimerkissä käytetään vaihtoehtoa **Lajittele nousevaan järjestykseen**.
 
 6. Muunna pylväskaavio yhdistelmäkaavioksi. Käytettävissä on kaksi erilaista yhdistelmäkaaviota: **viivakaavio ja pinottu pylväskaavio** sekä **viivakaavio ja lohkopylväskaavio**. Pidä pylväskaavio valittuna ja valitse **Visualisoinnit**-ruudussa **Viiva- ja yhdistelmäpylväskaavio**.
 

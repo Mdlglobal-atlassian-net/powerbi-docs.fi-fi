@@ -1,5 +1,5 @@
 ---
-title: Raporttien ja koontinäyttöjen tilaaminen itsellesi ja muille – Power BI
+title: Raporttien ja koontinäyttöjen tilaaminen itsellesi ja muille
 description: Opi tilaamaan tilannevedoksia Power BI:n raporttisivuista, koontinäytöistä ja sivutetuista raporteista.
 author: maggiesMSFT
 manager: kfile
@@ -8,19 +8,19 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 08/29/2019
+ms.date: 10/23/2019
 ms.author: maggies
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 2c08736e23568675af87e7de63092fff3a6a86c5
-ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
+ms.openlocfilehash: e3e22a40b385ab519767eb850617a0506dbfbfd2
+ms.sourcegitcommit: 96217747f07d923d1a9d31f67a853f1ef1d17b20
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71073432"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72891838"
 ---
 # <a name="subscribe-yourself-and-others-to-reports-and-dashboards-in-the-power-bi-service"></a>Power BI -palvelun raporttien ja koontinäyttöjen tilaaminen itsellesi ja muille
 
-Voit tilata itsellesi ja kollegoillesi tärkeimmät raporttisivut, koontinäytöt ja sivutetut raportit. Tällä tavalla Power BI lähettää sinulle sähköpostitse niistä tilannevedoksen. Voit määrittää, miten usein haluat Power BI:n lähettävän sähköpostia: päivittäin, viikoittain, tunneittain, kuukausittain tai tietojen päivittyessä (päivän ensimmäinen päivitys).  Jos tilaat päivittäin, viikoittain, tunneittain tai kuukausittain, voit valita kellonajan, jolloin sähköpostit lähetetään.  Voit määrittää jopa 24 eri tilausta per päivä kullekin raporttisivulle ja koontinäytölle.
+Voit tilata itsellesi ja kollegoillesi tärkeimmät raporttisivut, koontinäytöt ja sivutetut raportit. Tällä tavalla Power BI lähettää sinulle sähköpostitse niistä tilannevedoksen. Voit määrittää, miten usein haluat Power BI:n lähettävän sähköpostia: päivittäin, viikoittain, tunneittain, kuukausittain tai tietojen päivittyessä (päivän ensimmäinen päivitys).  Jos tilaat päivittäin, viikoittain, tunneittain tai kuukausittain, voit valita kellonajan, jolloin sähköpostit lähetetään.  Voit määrittää enintään 24 eri tilausta kullekin raportille tai raporttinäkymälle.
 
 ![sähköpostitilannevedos koontinäytöstä](media/service-report-subscribe/power-bi-dashboard-email-new.jpg) 
 

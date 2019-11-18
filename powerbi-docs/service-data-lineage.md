@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/03/2019
 ms.author: painbar
 LocalizationGroup: ''
-ms.openlocfilehash: e91f1d5084957ee7266161b9a34f916e2902d1f4
-ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
+ms.openlocfilehash: c2cc5f9da8ea12709d8244a1e82d8283f66f2413
+ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72019577"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73021026"
 ---
 # <a name="data-lineage-preview"></a>Tietojen historiatiedot (esiversio)
 Moderneissa liiketoimintatietojen projekteissa tietovirran ymmärtäminen tietolähteestä kohteeseen voi olla haastavaa. Haaste on vieläkin suurempi, jos olet luonut edistyneitä analyysiprojekteja, jotka kattavat useita tietolähteitä, artefakteja ja riippuvuuksia.  Esimerkiksi kysymyksiin ”Mitä tapahtuu, jos muutan näitä tietoja?” tai ”Miksi tämä raportti ei ole ajan tasalla?” voi olla vaikea vastata. Niiden ymmärtäminen voi vaatia asiantuntijaryhmän tai syvällistä tutkintaa. Olemme suunnitelleet tietojen historiatietojen näkymän, jonka avulla näihin kysymyksiin voi vastata.
@@ -55,7 +55,7 @@ Tietojoukoista näet viimeisimmän päivitysajan ja tiedon siitä, onko tietojou
  
 Jos työtilan raportti perustuu toisessa työtilassa olevaan tietojoukkoon, näet lähdetyötilan nimen tietojoukon kortissa. Siirry kyseiseen työtilaan valitsemalla lähdetyötilan nimi.
  
-- Näet asetusvalikon mistä tahansa artefaktista valitsemalla kolme pistettä (...). Se sisältää kaikki samat toiminnot, jotka ovat käytettävissä luettelonäkymässä.
+- Näet asetusvalikon mistä tahansa artefaktista valitsemalla **Enemmän vaihtoehtoja** (...). Se sisältää kaikki samat toiminnot, jotka ovat käytettävissä luettelonäkymässä.
   
 Jos haluat tarkastella lisää tietojoukkojen metatietoja, valitse tietojoukon kortti. Tietojoukon lisätiedot näytetään sivuruudussa.
 
@@ -89,7 +89,8 @@ Tietojen historiatietojen näkymä on vuorovaikutteinen pohja. Voit käyttää h
 
 ## <a name="considerations-and-limitations"></a>Huomioitavat asiat ja rajoitukset
 
-Tietojen historiatietojen näkymä ei ole käytettävissä Internet Explorerissa. Katso lisätietoja kohdasta [Power BI:n tuetut selaimet](power-bi-browsers.md).
+- Tietojen historiatietojen näkymä ei ole käytettävissä Internet Explorerissa. Katso lisätietoja kohdasta [Power BI:n tuetut selaimet](power-bi-browsers.md).
+- Tietojen historiatietojen näkymä ei ole käytettävissä omassa työtilassa.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 

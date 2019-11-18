@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/19/2019
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: ae896fb737eda6f95efa1589f2b3384e7426cf30
-ms.sourcegitcommit: 4a3afe761d2f4a5bd897fafb36b53961739e8466
+ms.openlocfilehash: aef50d58dc11269c2c30010c1ca89843689f45c4
+ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/20/2019
-ms.locfileid: "69654573"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73017670"
 ---
 # <a name="use-composite-models-in-power-bi-desktop"></a>Yhdistelmämallien käyttäminen Power BI Desktopissa
 
@@ -53,7 +53,7 @@ Yhdistelmämalleilla voit esimerkiksi luoda mallin, joka yhdistää seuraavat ti
 Sellaista mallia, johon yhdistetään useamman kuin yhden DirectQuery-lähteen tietoja ja tuotuja tietoja, kutsutaan *yhdistelmämalliksi*.
 
 
-Voit luoda yhteyksiä taulukoiden välille niin kuin ennenkin, vaikka taulukot olisivat peräisin eri lähteistä. Tätä koskee kuitenkin rajoitus: sellaiset ristilähdeyhteyksien kardinaliteetiksi on määritettävä *monta moneen* niiden todellisesta kardinaliteetitista riippumatta. Tällaiset yhteydet toimivat samoin kuin tavalliset *monta moneen* -yhteydet, jotka on kuvattu artikkelissa [Monta moneen -yhteydet Power BI Desktopissa (esikatselu)](desktop-many-to-many-relationships.md). 
+Voit entiseen tapaan luoda suhteita taulukoiden välille, vaikka nämä taulukot olisivat peräisin eri lähteistä. Kaikki eri lähteitä käyttävät suhteet luodaan käyttäen kardinaliteettia *monta moneen* riippumatta niiden todellisesta kardinaliteetista. Voit vaihtaa kardinaliteetiksi yksi moneen, monta yhteen tai yksi yhteen. Riippumatta siitä, minkä kardinaliteetin valitset, eri lähteitä käyttävät suhteet toimivat eri tavalla, sillä et voi käyttää DAX-funktioita arvojen noutamiseen monen puolelta yhden puolelle. Saatat myös huomata suorituskykyeroavaisuuksia verrattuna saman lähteen sisäisiin monta moneen -suhteisiin.
 
 > [!NOTE]
 > Yhdistelmämallien kontekstissa kaikki tuodut taulukot ovat käytännössä yksittäinen tietolähde riippumatta taustalla olevasta tietolähteestä, josta ne tosiasiassa on tuotu.   
@@ -88,7 +88,7 @@ Power BI Desktopin **suhdenäkymässä** voimme vastaavasti nähdä lisätauluko
 
 ![Taulukoiden suhdenäkymä](media/desktop-composite-models/composite-models_08.png)
 
-Meidän on nyt liitettävä nämä taulukot mallin muihin taulukoihin. Kuten aina, luomme suhteen SQL Serverin **Polkupyörä**-taulukon ja tuodun **Tuotepäälliköt**-taulukon välille. Suhde on välillä *Polkupyörä [Tuotenimi]* ja *Tuotepäälliköt [Tuotenimi]* . Aiemmin kuvatulla tavalla kaikissa lähteiden välisissä suhteissa on oltava oletusarvona *monta moneen* -kardinaliteetti. 
+Meidän on nyt liitettävä nämä taulukot mallin muihin taulukoihin. Kuten aina, luomme suhteen SQL Serverin **Polkupyörä**-taulukon ja tuodun **Tuotepäälliköt**-taulukon välille. Suhde on välillä *Polkupyörä [Tuotenimi]* ja *Tuotepäälliköt [Tuotenimi]* . Aiemmin kuvatulla tavalla kaikissa lähteiden välisissä suhteissa on oletusarvona *monta moneen* -kardinaliteetti. 
 
 ![Luo suhde -ikkuna](media/desktop-composite-models/composite-models_09.png)
 

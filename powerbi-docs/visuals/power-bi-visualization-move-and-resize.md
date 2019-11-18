@@ -7,21 +7,24 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 03/23/2018
+ms.date: 10/28/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: cd5026a1bb3bca4781be1e3f61b4a71364190f8a
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: ff46e750d053ead7eb46d57e55e4af96770f0d6e
+ms.sourcegitcommit: ef6de7067ecb2bbc86d912784376a1627acc478d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61135831"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73169122"
 ---
-# <a name="move-and-resize-a-visualization-in-a-report-in-power-bi-service-and-power-bi-desktop"></a>Visualisoinnin siirtäminen ja koon muuttaminen palvelussa ja työpöydällä
-Vain raportin luojat ja omistajat voivat siirtää visualisointeja ja muuttaa niiden kokoa. Power BI -palvelussa (app.powerbi.com) se tarkoittaa raportin avaamista  [Muokkausnäkymässä](../consumer/end-user-reading-view.md).
+# <a name="move-and-resize-a-visualization-in-a-report"></a>Raportin visualisoinnin siirtäminen ja koon muuttaminen
+
+[!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
+
+Raportin luojat ja suunnittelijat voivat siirtää visualisointeja ja muuttaa niiden kokoa. Jos työskentelet Power BI -palvelussa (app.powerbi.com), sinun pitää avata raportti [muokkausnäkymässä](../service-interact-with-a-report-in-editing-view.md). 
 
 ## <a name="open-the-report"></a>Raportin avaaminen
-Avaa Power BI:ssa raportti, jossa on vähintään yksi visualisointi tai [luo uusi visualisointi](power-bi-report-add-visualizations-i.md). 
+Avaa Power BI Desktopissa raportti, jossa on vähintään yksi visualisointi tai [luo uusi visualisointi](power-bi-report-add-visualizations-i.md). 
 
 ## <a name="move-the-visualization"></a>Visualisoinnin siirtäminen
 * Valitse (hiiren ykköspainikkeella) mikä tahansa visualisoinnin alue ja vedä se sitten uuteen paikkaan.
@@ -37,4 +40,6 @@ Avaa Power BI:ssa raportti, jossa on vähintään yksi visualisointi tai [luo uu
 ## <a name="next-steps"></a>Seuraavat vaiheet
 [Visualisoinnin koon muuttaminen raporttinäkymässä](../service-dashboard-edit-tile.md)  
 
-Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
+[Tarkastelutila](../consumer/end-user-focus.md)
+
+Onko sinulla muuta kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)

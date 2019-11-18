@@ -3,18 +3,17 @@ title: Upotetun sovelluksen vianmääritys
 description: Tässä artikkelissa käsitellään joitain yleisiä ongelmia, joita saattaa ilmetä upotettaessa sisältöä Power BI:stä.
 author: rkarlin
 ms.author: rkarlin
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: troubleshooting
 ms.date: 02/05/2019
-ms.openlocfilehash: 08d66df2456917c09b6b0c1d9c40e2de47f53fa5
-ms.sourcegitcommit: e5cf19e16112c7dad1591c3b38d232267ffb3ae1
+ms.openlocfilehash: 4038ffdb9a3218c0b2f04dd524463235fa91b6b7
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72543909"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73864094"
 ---
 # <a name="troubleshoot-your-embedded-application"></a>Upotetun sovelluksen vianmääritys
 
@@ -24,7 +23,7 @@ Tässä artikkelissa käsitellään joitain yleisiä ongelmia, joita saattaa ilm
 
 ### <a name="fiddler-trace"></a>Fiddler-jäljitys
 
-[Fiddler](http://www.telerik.com/fiddler) on Telerikin ilmainen työkalu, joka valvoo HTTP-liikennettä.  Voit tarkastella Power BI -ohjelmointirajapinnan tiedonsiirtoa asiakaskoneelta. Tämä työkalu saattaa näyttää virheitä ja muita olennaisia tietoja.
+[Fiddler](https://www.telerik.com/fiddler) on Telerikin ilmainen työkalu, joka valvoo HTTP-liikennettä.  Voit tarkastella Power BI -ohjelmointirajapinnan tiedonsiirtoa asiakaskoneelta. Tämä työkalu saattaa näyttää virheitä ja muita olennaisia tietoja.
 
 ![Fiddler-jäljitys](media/embedded-troubleshoot/fiddler.png)
 
@@ -78,9 +77,9 @@ Fiddler-sieppaus saattaa vaatia tarkempaa tutkimusta. 403-virheeseen voi olla us
 
 * Käyttäjä on ylittänyt niiden upotettujen tunnusten määrän, jotka voidaan luoda jaettuun kapasiteettiin. Osta Azure-kapasiteetteja upotettujen tunnusten luomiseen ja määritä työtila kyseiselle kapasiteetille. Katso [Power BI Embedded -kapasiteetin luominen Azure-portaalissa](https://docs.microsoft.com/azure/power-bi-embedded/create-capacity).
 * Azure AD:n todennustunnus on vanhentunut.
-* Todennettu käyttäjä ei ole ryhmän jäsen (sovelluksen työtila).
-* Todennettu käyttäjä ei ole ryhmän järjestelmänvalvoja (sovelluksen työtila).
-* Valtuutetulla käyttäjällä ei ole oikeuksia. Voit päivittää oikeudet [refreshUserPermissions-ohjelmointirajapinnan](https://docs.microsoft.com/en-us/rest/api/power-bi/users/refreshuserpermissions) kautta
+* Todennettu käyttäjä ei ole ryhmän (työtila) jäsen.
+* Todennettu käyttäjä ei ole ryhmän (työtila) järjestelmänvalvoja.
+* Valtuutetulla käyttäjällä ei ole oikeuksia. Voit päivittää oikeudet [refreshUserPermissions-ohjelmointirajapinnan](https://docs.microsoft.com/rest/api/power-bi/users/refreshuserpermissions) kautta
 * Käyttöoikeuksien myöntämisen otsikkoa ei ehkä ole lueteltu oikein. Varmista, että kirjoitusvirheitä ei ole.
 
 Sovelluksen taustatietokanta saattaa joutua päivittämään todennustunnuksen ennen GenerateTokenin kutsumista.
@@ -293,7 +292,7 @@ Käyttäessäsi **organisaatiolle tarkoitettu upotus** -mallisovellusta, saat se
 
     AADSTS50011: The reply URL specified in the request doesn't match the reply URLs configured for the application: <client ID>
 
-Tämä virhe johtuu siitä, että verkkopalvelinsovellukselle määritetty uudelleenohjauksen URL-osoite on eri kuin mallisovelluksen URL-osoite. Jos haluat rekisteröidä mallisovelluksen, käytä `http://localhost:13526/`uudelleenohjauksen URL-osoitteena.
+Tämä virhe johtuu siitä, että verkkopalvelinsovellukselle määritetty uudelleenohjauksen URL-osoite on eri kuin mallisovelluksen URL-osoite. Jos haluat rekisteröidä mallisovelluksen, käytä `https://localhost:13526/`uudelleenohjauksen URL-osoitteena.
 
 Jos haluat muokata rekisteröityä sovellusta, opettele [päivittämään Azure AD -rekisteröity sovellus](https://docs.microsoft.com/azure/active-directory/develop/quickstart-v1-update-azure-ad-app), jolloin sovellus tarjoaa pääsyn verkon ohjelmointirajapintoihin.
 
@@ -305,7 +304,7 @@ Jos saat virhesanoman AADSTS50079: käyttäjän pitää käyttää monimenetelm�
 
 Jos haluat lisätietoja, katso [Power BI Embedded - usein kysytyt kysymykset](embedded-faq.md).
 
-Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
+Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](https://community.powerbi.com/)
 
 Jos tarvitset lisäapua, [ota yhteyttä tukeen](https://powerbi.microsoft.com/support/pro/?Type=documentation&q=power+bi+embedded) tai [luo tukipalvelupyyntö Azure-portaalin kautta](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest) ja anna saamasi virhesanomat.
 
@@ -313,4 +312,4 @@ Jos tarvitset lisäapua, [ota yhteyttä tukeen](https://powerbi.microsoft.com/su
 
 Katso lisätietoja [usein kysytyistä kysymyksistä](embedded-faq.md).
 
-Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
+Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](https://community.powerbi.com/)

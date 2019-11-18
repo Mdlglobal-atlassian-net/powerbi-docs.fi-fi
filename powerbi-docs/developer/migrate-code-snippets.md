@@ -3,18 +3,17 @@ title: Koodikatkelmia sisällön siirtämiseen Power BI Embeddedistä
 description: Tässä on joitakin koodikatkelmia perustoimintoihin, joita tarvitaan sisällön siirtämisessä
 author: rkarlin
 ms.author: rkarlin
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 02/05/2019
-ms.openlocfilehash: abf45f5213a10379535d4c6ada3b54ffa625ddc5
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 95c249fe2326d9075d920a415c707811d19e5387
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61269215"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73880507"
 ---
 # <a name="code-snippets-for-migrating-content-from-power-bi-workspace-collection"></a>Koodikatkelmia sisällön siirtämiseen Power BI Workspace Collectionista
 
@@ -167,7 +166,7 @@ Tässä koodikatkelmassa käytetään salaamattomia tunnistetietoja yksinkertais
 
 Joudut luomaan uudelleen luotuun tietojoukkoon perustuvan raportin.
 
-Tässä katkelmassa oletetaan, että push-tietojoukko on jo SaaS-ympäristön sisällä olevassa sovellustyötilassa. Lisätietoja Push API -rajapinnasta löytyy kohdasta [Tietojen siirtäminen Power BI -tietojoukkoon](walkthrough-push-data.md).
+Tässä katkelmassa oletetaan, että push-tietojoukko on jo SaaS-ympäristön sisällä olevassa työtilassa. Lisätietoja Push API -rajapinnasta löytyy kohdasta [Tietojen siirtäminen Power BI -tietojoukkoon](walkthrough-push-data.md).
 
 ```csharp
     var credentials = new TokenCredentials(<Your WSC access key>, "AppKey");
@@ -240,4 +239,4 @@ Tässä katkelmassa oletetaan, että push-tietojoukko on jo SaaS-ympäristön si
 [JavaScript-upotuksen näyte](https://microsoft.github.io/PowerBI-JavaScript/demo/)  
 [Power BI Premiumin tekninen raportti](https://aka.ms/pbipremiumwhitepaper)  
 
-Onko sinulla muuta kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)
+Onko sinulla muuta kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)

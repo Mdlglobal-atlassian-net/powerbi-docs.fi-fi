@@ -2,7 +2,6 @@
 title: 'Organisaation sisältöpaketit: käyttö ja kopiointi'
 description: Lisätietoja kopioiden luomisesta organisaation sisältöpaketeista ja käytön vianmäärityksestä Power BI:ssä
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: lukaszp, kayu
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 86fa7a7845686fd46e9d58ea138bdddd47a0a097
-ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
+ms.openlocfilehash: 905e461c69a898b41b45e48405c3aaaa6e09cfec
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72019638"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73881323"
 ---
 # <a name="organizational-content-packs-copy-refresh-and-get-access"></a>Organisaation sisältöpaketit: kopioiminen, päivittäminen ja käyttöoikeuden hankkiminen
 
@@ -30,7 +29,7 @@ Sisältöpakettien luominen eroaa koontinäyttöjen jakamisesta tai niiden työs
 ## <a name="create-a-copy-of-an-organizational-content-pack"></a>Kopion luominen organisaation sisältöpaketista
 Luo sisältöpaketista oma kopiosi, joka ei näy muille.
 
-1. Valitse kolme pistettä (...) sisältöpaketin koontinäytön vieressä ja valitse Tee kopio.
+1. Valitse **Lisää vaihtoehtoja** (...) sisältöpaketin koontinäytön vieressä ja valitse Tee kopio.
 
     ![](media/service-organizational-content-pack-copy-refresh-access/power-bi-create-copy-organizational-content-pack.png)
 2. Valitse **Tallenna**.  
@@ -58,4 +57,4 @@ Katso [Organisaation sisältöpakettien hallinta, päivitys ja poistaminen](serv
 ## <a name="next-steps"></a>Seuraavat vaiheet
 * [Johdanto organisaation sisältöpaketteihin](service-organizational-content-pack-introduction.md)
 * [Ryhmän luominen Power BI:ssä](service-create-distribute-apps.md)
-* Onko sinulla muuta kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
+* Onko sinulla muuta kysyttävää? [Kokeile Power BI -yhteisöä](https://community.powerbi.com/)

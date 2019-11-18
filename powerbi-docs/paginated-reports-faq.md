@@ -9,18 +9,18 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 10/04/2019
-ms.openlocfilehash: 97b9d68a8fa17a3ce1758eeaa16d2503a38a4743
-ms.sourcegitcommit: 9bf3cdcf5d8b8dd12aa1339b8910fcbc40f4cbe4
+ms.openlocfilehash: 513c6a4a3f5041b7af06e5c1713de3bd417a1354
+ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "71968504"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73431575"
 ---
 # <a name="paginated-reports-in-power-bi-faq"></a>Sivutetut raportit Power BI:ssä: Usein kysytyt kysymykset 
 
 Tässä artikkelissa vastataan usein kysyttyihin kysymyksiin sivutetuista raporteista. Näiden raporttien pitkälle muotoiltu ja pikselintarkka sisältö on optimoitu tulostamista tai PDF:n luontia varten. Niitä kutsutaan ”sivutetuiksi”, koska ne on muotoiltu sopimaan hyvin useille sivuille. Sivutetut raportit perustuvat SQL Server Reporting Servicesin RDL-raporttitekniikkaan. 
 
-Tässä artikkelissa vastataan useisiin yleisiin kysymyksiin, joita käyttäjillä on Power BI Premiumin sivutetuista raporteista ja raportin muodostimesta, sivutettujen raporttien erillisestä luontityökalusta. Tarvitset Power BI Pro -käyttöoikeuden raportin julkaisemiseksi palveluun. Voit julkaista ja jakaa sivutettuja raportteja omassa työtilassasi tai sovelluksen työtiloissa niin kauan kuin työtila on Power BI Premium -kapasiteetissa. 
+Tässä artikkelissa vastataan useisiin yleisiin kysymyksiin, joita käyttäjillä on Power BI Premiumin sivutetuista raporteista ja raportin muodostimesta, sivutettujen raporttien erillisestä luontityökalusta. Tarvitset Power BI Pro -käyttöoikeuden raportin julkaisemiseksi palveluun. Voit julkaista ja jakaa sivutettuja raportteja omassa työtilassasi tai työtiloissa niin kauan kuin työtila on Power BI Premium -kapasiteetissa. 
 
 ## <a name="administration"></a>Hallinta
 
@@ -163,7 +163,7 @@ Kyllä, tuemme kykyä suorittaa koodin raporteissasi samalla tavoin kuin SSRS:ss
 
 ### <a name="can-i-use-power-bi-embedded-to-embed-my-paginated-reports-into-an-app-im-hosting"></a>Voinko käyttää sisäistä Power BI:tä upottamaan sivutetut raportit sovellukseen, jota isännöin?
 
-SaaS-upotusta tuetaan jo. PaaS-upotusta ei tueta tällä hetkellä.
+SaaS-upotus, mukaan lukien suojatun upotuksen tuki, on jo käytettävissä.  PaaS-upottamisen tuki suunnitellaan julkaistavaksi myöhemmin tänä vuonna.
 
 ### <a name="can-i-drill-through-from-a-power-bi-report-to-a-paginated-report"></a>Voinko porautua Power BI -raportista sivutettuun raporttiin?
 
@@ -179,7 +179,7 @@ Tarkoituksenamme on ottaa käyttöön mahdollisimman laajasti raporttien tuki pa
 
 ### <a name="is-a-migration-tool-planned-so-ssrs-customers-can-move-their-existing-reports-and-assets-to-power-bi"></a>Onko suunnitteilla siirtotyökalua, jotta SSRS-asiakkaat voivat siirtää olemassa olevat raporttinsa ja resurssinsa  Power BI:hin?
 
-Arvioimme erilaisia tapoja, joilla sisältöä voi siirtää Power BI:hin automaattisesti, mutta sellainen sisällytetään vasta yleiseen julkaisuversioon.
+GitHubissa olevat projektit tukevat nyt sisällön siirtämistä SQL Server Reporting Servicesistä Power BI:hin.  Tarkastele tietoja ja lataa työkalu täältä: [https://github.com/microsoft/RdlMigration](https://github.com/microsoft/RdlMigration)
 
 ### <a name="is-there-a-report-viewer-control-for-paginated-reports-in-the-power-bi-service"></a>Onko Power BI -palvelussa raporttien katseluohjelman hallinta sivutetuille raporteille?
 

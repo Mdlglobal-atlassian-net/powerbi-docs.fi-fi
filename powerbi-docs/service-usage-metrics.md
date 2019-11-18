@@ -3,20 +3,19 @@ title: Koontinäyttöjen ja raporttien käyttötietojen valvonta
 description: Opi tarkastelemaan, tallentamaan ja käyttämään Power BI:n koontinäyttöjen ja raporttien käyttötietoja.
 author: maggiesMSFT
 ms.author: maggies
-manager: kfile
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 08/15/2019
+ms.date: 10/21/2019
 LocalizationGroup: Dashboards
-ms.openlocfilehash: e77bfdf771e84afbc87335aa77993640d10282b0
-ms.sourcegitcommit: 4d5166944fcc6fe4666cab055ae75e7a0a77866d
+ms.openlocfilehash: 9aa2e11dd2068cae118336268c5c55ead1e25b8b
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69530534"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73871223"
 ---
 # <a name="monitor-usage-metrics-for-power-bi-dashboards-and-reports"></a>Power BI:n koontinäyttöjen ja raporttien käyttötietojen valvonta
 
@@ -86,7 +85,7 @@ Jos haluat syventyä raportin tietoihin tai luoda omia raporttejasi pohjana olev
 
 | Tieto | Koontinäyttö | Raportti | Kuvaus |
 | --- | --- | --- | --- |
-| Jakelutavan osittaja |kyllä |kyllä |Millä tavalla käyttäjä pääsi käyttämään sisältöä? Mahdollisia tapoja on kolme: käyttäjä voi käyttää koontinäyttöä tai raporttia [sovellustyötilan](consumer/end-user-experience.md) jäsenenä, vastaanottamalla sisällön itselleen [jaettuna](service-share-dashboards.md) tai asentamalla sisältöpaketin tai sovelluksen.  Huomaa, että sovelluksen kautta tulleet näyttökerrat lasketaan sisältöpaketiksi. |
+| Jakelutavan osittaja |kyllä |kyllä |Millä tavalla käyttäjä pääsi käyttämään sisältöä? Mahdollisia tapoja on kolme: käyttäjä voi käyttää koontinäyttöä tai raporttia [työtilan](consumer/end-user-experience.md) jäsenenä, vastaanottamalla sisällön itselleen [jaettuna](service-share-dashboards.md) tai asentamalla sisältöpaketin tai sovelluksen.  Huomaa, että sovelluksen kautta tulleet näyttökerrat lasketaan sisältöpaketiksi. |
 | Ympäristöosittaja |kyllä |kyllä |Käytettiinkö koontinäyttöä tai raporttia Power BI -palvelun (powerbi.com) vai mobiililaitteen kautta? Mobiililaitteisiin sisältyvät kaikki iOS-, Android- ja Windows-sovellukset. |
 | Raporttisivuosittaja |ei |kyllä |Jos raportissa on useampia kuin yksi sivu, osita raportti tarkasteltujen sivujen mukaan. Jos näet luettelossa Tyhjä-vaihtoehdon, raporttisivu on lisätty äskettäin (uuden sivun todellinen nimi tulee näkyviin osittajaluetteloon 24 tunnin kuluessa) ja/tai raporttisivuja on poistettu. Tyhjä-arvolla kuvataan tällaiset tilanteet. |
 | Tarkasteluja päivässä |kyllä |kyllä |Päivittäisten näyttökertojen kokonaismäärä. Näyttökerralla tarkoitetaan sitä, kun käyttäjä lataa raporttisivun tai koontinäytön. |
@@ -152,11 +151,18 @@ Power BI on saatavilla erillisissä kansallisissa pilvipalveluissa. Nämä pilvi
 
 ## <a name="considerations-and-limitations"></a>Huomioitavat asiat ja rajoitukset
 
+### <a name="discrepancies-between-audit-logs-and-usage-metrics"></a>Valvontalokien ja käyttömittareiden väliset erot
+
 On tärkeää ymmärtää, että käyttömittareita ja valvontalokeja verrattaessa voi ilmetä eroja, sekä ymmärtää niiden syyt. *Valvontalokit* kerätään käyttämällä tietoja Power BI -palvelusta ja *käyttömittarit* kerätään asiakkaalta. Toimintojen koostemäärät valvontalokeissa eivät välttämättä aina vastaa käyttömittareita seuraavista syistä:
 
 * Käyttömittarit saattavat joskus laskea liian vähän toimintoja vaihtelevien verkkoyhteyksien, mainosten eston tai muiden ongelmien vuoksi, jotka voivat häiritä tapahtumien lähettämistä asiakkaalta.
 * Tietyntyyppiset näkymät eivät sisälly käyttömittareihin aiemmin tässä artikkelissa kuvatun mukaisesti.
 * Käyttötiedot saattavat joskus laskea liian paljon toimintoja tilanteissa, joissa asiakasohjelma päivittyy ilman, että pyyntöä pitää lähettää takaisin Power BI -palveluun.
+
+### <a name="other-considerations"></a>Muuta huomioitavaa
+
+Sinun täytyy tarkastella työtilassasi olevaa sisältöä työtilan sisältä vähintään kerran. Jos sisältöä ei ole tarkasteltu työtilasta itsestään vähintään kerran, tietoja ei liitetä käyttömittariraporttien sovellusnäkymistä. Jos haluat poistaa tämän raportin tietojen käsittelemisen eston, tarkastele vain sisältöä työtilan sisältä vähintään kerran.
+
 
 ## <a name="frequently-asked-questions"></a>Usein kysyttyjä kysymyksiä
 
@@ -188,4 +194,4 @@ Käyttömittareiden ja valvontalokien mahdollisten erojen lisäksi seuraavat kä
 
 [Power BI:n hallinta hallintaportaalissa](service-admin-portal.md)
 
-Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
+Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](https://community.powerbi.com/)

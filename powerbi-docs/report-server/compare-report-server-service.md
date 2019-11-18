@@ -10,12 +10,12 @@ ms.subservice: powerbi-report-server
 manager: kfile
 ms.custom: mvc
 ms.date: 09/13/2019
-ms.openlocfilehash: 104b903e6b7a47b5ce35dc5c0627a43d54c1090a
-ms.sourcegitcommit: 0687908938e4c3b68401fd511ec1c28fb54ddeb3
+ms.openlocfilehash: 877d3590fab67f0aed3c3ab6dc9de9a96ade5dc9
+ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "71691236"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73431457"
 ---
 # <a name="comparing-power-bi-report-server-and-the-power-bi-service"></a>Power BI -raporttipalvelimen ja Power BI -palvelun vertailu
 
@@ -29,7 +29,7 @@ Power BI -raporttipalvelimessa ja Power BI -palvelussa on monia samankaltaisuuks
 | Lähdetiedot | Pilvipalvelu ja/tai paikallinen | Pilvipalvelu ja/tai paikallinen |  |
 | Käyttöoikeus | Power BI Premium tai SQL Server EE SA:lla | Power BI Pro ja/tai Power BI Premium | |  
 | Elinkaari | Moderni elinkaarikäytäntö | Täysin hallittu palvelu |  |
-| Julkaisuaikataulu | 4 kuukauden välein | Kerran kuukaudessa | Uusimmat ominaisuudet ja korjaukset julkaistaan ensin Power BI -palvelussa. Useimmat ydintoiminnot julkaistaan Power BI -raporttipalvelimessa muutaman versiopäivityksen sisällä; eräät ominaisuudet on tarkoitettu vain Power BI -palveluun. |
+| Julkaisuaikataulu | Kolme kertaa vuodessa (tammikuu, toukokuu, syyskuu) | Kerran kuukaudessa | Uusimmat ominaisuudet ja korjaukset julkaistaan ensin Power BI -palvelussa. Useimmat ydintoiminnot julkaistaan Power BI -raporttipalvelimessa muutaman versiopäivityksen sisällä; eräät ominaisuudet on tarkoitettu vain Power BI -palveluun. |
 | Luo Power BI -raportteja Power BI Desktopissa | Kyllä | Kyllä |  |
 | Luo Power BI -raportteja selaimessa | Ei | Kyllä |  |
 | Yhdyskäytävä tarvitaan | Ei | Kyllä (paikalliset tietolähteet) |  |
@@ -49,7 +49,7 @@ Power BI -raporttipalvelimessa ja Power BI -palvelussa on monia samankaltaisuuks
 | Tietoilmoitukset | Ei | Kyllä | [Tietoilmoitukset](../service-set-data-alerts.md) Power BI -palvelussa
 | Rivitason suojaus (RLS) | Kyllä | Kyllä | Käytettävissä sekä DirectQuery- (tietolähde) että tuontitilassa <br><br>Rivitason suojaus [Power BI -palvelussa](../service-admin-rls.md) <br><br>Rivitason suojaus [Power BI -raporttipalvelimessa](row-level-security-report-server.md) |
 | Koko näytön tila | Ei | Kyllä | [Koko näytön tila](../consumer/end-user-focus.md) Power BI -palvelussa |
-| Edistynyt Office 365 -yhteistyö | Ei | Kyllä | [Yhteistyö sovelluksen työtilassa](../service-collaborate-power-bi-workspace.md) Office 365:n kautta |
+| Edistynyt Office 365 -yhteistyö | Ei | Kyllä | [Yhteistyö työtilassa](../service-collaborate-power-bi-workspace.md) Office 365:n kautta |
 | R-visualisoinnit | Ei | Kyllä | [Luo R-visualisoinnit](../desktop-r-visuals.md) Power BI Desktopissa ja julkaise ne Power BI -palvelussa. Et voi tallentaa Power BI -raportteja R-visualisointien kanssa Power BI -raporttipalvelimeen.  |
 | Esikatselutoiminnot | Ei | Kyllä | [Power BI:n esikatseluominaisuuksien käyttäminen](../consumer/end-user-preview-features.md) |
 | Mukautetut visualisoinnit | Kyllä | Kyllä | [Mukautetut visualisoinnit Power BI:ssä](../power-bi-custom-visuals.md) |

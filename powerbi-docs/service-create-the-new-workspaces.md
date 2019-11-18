@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/02/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 7d53acc0dc8c669026665347de9593fa1df84c62
-ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
+ms.openlocfilehash: 2fdc893ac8545df8fc64f45959a418018a189c84
+ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72020113"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73020457"
 ---
 # <a name="create-the-new-workspaces-in-power-bi"></a>Uusien työtilojen luominen Power BI:ssä
 
@@ -74,7 +74,7 @@ Voit määrittää käyttäjät, joille ilmoitetaan työtilassa esiintyneistä o
 
     **Luo työtila** -ruudusta, kun luot sen ensimmäisen kerran.
 
-    Valitse vasemmassa siirtymisruudussa **Työtilat**-kohdan vieressä oleva nuoli. Valitse pistekuvake (...) työtilan nimen vieressä ja valitse **Työtilan asetukset**. **Asetukset**-ruutu avautuu.
+    Valitse vasemmassa siirtymisruudussa **Työtilat**-kohdan vieressä oleva nuoli. Valitse **Enemmän vaihtoehtoja** (...) työtilan nimen vierestä ja valitse **Työtilan asetukset**. **Asetukset**-ruutu avautuu.
 
     ![Työtilan asetukset](media/service-create-the-new-workspaces/power-bi-workspace-new-settings.png)
 
@@ -94,7 +94,7 @@ Power BI ei synkronoi niiden käyttäjien tai ryhmien käyttöoikeuksia, joille 
 
     **Luo työtila** -ruudusta, kun luot sen ensimmäisen kerran.
 
-    Valitse vasemmassa siirtymisruudussa **Työtilat**-kohdan vieressä oleva nuoli. Valitse pistekuvake (...) työtilan nimen vieressä ja valitse **Työtilan asetukset**. **Asetukset**-ruutu avautuu.
+    Valitse vasemmassa siirtymisruudussa **Työtilat**-kohdan vieressä oleva nuoli. Valitse **Enemmän vaihtoehtoja** (...) työtilan nimen vierestä ja valitse **Työtilan asetukset**. **Asetukset**-ruutu avautuu.
 
     ![Työtilan asetukset](media/service-create-the-new-workspaces/power-bi-workspace-new-settings.png)
 

@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 06/26/2019
 ms.author: tebercov
-ms.openlocfilehash: fae3af81540e22b961fcb1d2a79de425fdc1cd8c
-ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
+ms.openlocfilehash: 57d8da8bafb62f1f24598f5f0ef4cb5e3facd59b
+ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71194797"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73432134"
 ---
 # <a name="tips-for-authoring-template-apps-in-power-bi"></a>Vihjeitä mallisovellusten kehittämiseen Power BI:ssä
 
@@ -30,7 +30,7 @@ Nämä voivat olla tuttuja nykyisten Power BI -ominaisuuksien kautta. Kun luot m
 
 <a name="queries"></a>
 
-## <a name="queries"></a>Kyselyt
+## <a name="queries"></a>kyselyt
 Power BI Desktopissa luotuja kyselyitä käytetään mallisovelluksissa tietolähteen yhdistämiseen ja tietojen tuomiseen. Näitä kyselyjä tarvitaan yhtenäisen rakenteen palauttamiseen, ja niitä tuetaan tietojen ajoitetussa päivityksessä (DirectQuery-kyselyitä ei tueta).
 
 ### <a name="connect-to-your-api"></a>Ohjelmointirajapintaan yhdistäminen
@@ -132,7 +132,7 @@ Mallisovellukset tukevat mallitietoja vain sovelluksissa, joten varmista, että 
 * Muista noudattaa [Power BI:n sovelluksen tarjouksen](https://docs.microsoft.com/azure/marketplace/cloud-partner-portal/power-bi/cpp-power-bi-offer) ohjeita.
 * Jos koontinäyttö on osa sovellustasi, varmista, että se ei ole tyhjä.
 * Asenna sovellus sovelluslinkin avulla ennen sen lähettämistä, ja varmista, että voit yhdistää tietojoukon ja sovelluskokemuksen suunnitelmien mukaan.
-* Varmista ennen bpix-tiedoston lataamista mallisovelluksen työtilaan, ettet lataa mitään tarpeettomia yhteyksiä.
+* Varmista ennen bpix-tiedoston lataamista mallityötilaan, ettet lataa mitään tarpeettomia yhteyksiä.
 * Noudata Power BI:n [parhaita suunnittelukäytäntöjä raporteille ja visualisoinneille](https://docs.microsoft.com/power-bi/visuals/power-bi-visualization-best-practices), jotta vaikutat optimaalisesti käyttäjiisi ja saat hyväksynnän jakelulle.
 <!--- * In general, only application with valuable functionality can be approved for general use on AppSource. Application with sample data content only must have either a guidance or statistical value.) -->
 

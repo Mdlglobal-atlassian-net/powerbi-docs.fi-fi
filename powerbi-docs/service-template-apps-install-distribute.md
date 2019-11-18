@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 09/14/2019
 ms.author: tebercov
-ms.openlocfilehash: 660fd7c623e8a195f937a3a2b468f758986411e1
-ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
+ms.openlocfilehash: 4db4fbc0dd34ae558514058e0aa7af0a704d8411
+ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71195278"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73432348"
 ---
 # <a name="install-and-distribute-template-apps-in-your-organization---power-bi"></a>Mallisovellusten asentaminen ja jakaminen organisaatiossa - Power BI
 
@@ -57,7 +57,7 @@ Valitse selaimessa tämä linkki, niin AppSource avautuu ja Power BI -sovellukse
 
 4. Valitse valintaikkunassa **Asenna**.
 
-    ![Asenna sovellus](media/service-template-apps-install-distribute/power-install-dialog.png) Jos sinulla on Power BI Pro -käyttöoikeus, sovellus asennetaan siihen liittyvän sovellustyötilan kanssa. Sovellusta mukautetaan siihen liittyvässä työtilassa.
+    ![Asenna sovellus](media/service-template-apps-install-distribute/power-install-dialog.png) Jos sinulla on Power BI Pro -käyttöoikeus, sovellus asennetaan siihen liittyvän työtilan kanssa. Sovellusta mukautetaan siihen liittyvässä työtilassa.
 
     Kun asennus on valmis, näkyviin tulee ilmoitus, että uusi sovelluksesi on valmis.
 4. Valitse **Siirry sovellukseen**.
@@ -71,7 +71,7 @@ Valitse selaimessa tämä linkki, niin AppSource avautuu ja Power BI -sovellukse
 
     Voit myös ohittaa tämän valintaikkunan ja siirtyä suoraan sovellukseen liittyvään työtilaan käyttämällä vasemman siirtymisruudun **Työtilat**-vaihtoehtoa.
     >[!NOTE]
-    >Mallisovelluksen asennus asentaa sekä *organisaation sovelluksen* että *sovelluksen työtilan*. Lue lisää [sovellusten jakamisesta Power BI:ssä](service-create-distribute-apps.md).
+    >Mallisovelluksen asennus asentaa sekä *organisaation sovelluksen* että *työtilan*. Lue lisää [sovellusten jakamisesta Power BI:ssä](service-create-distribute-apps.md).
  
 6. Ennen kuin mallisovellusta jaetaan työtovereille, kannattaa muodostaa yhteys omiin tietoihin. Haluat ehkä myös muokata raporttia tai koontinäyttöä, niin että se toimii mahdollisimman hyvin organisaatiossasi. Tässä vaiheessa voit myös lisätä muita raportteja tai raporttinäkymiä.
 

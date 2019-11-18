@@ -2,21 +2,19 @@
 title: Vinkkejä kysymysten esittämiseen Q&A-toiminnolla
 description: Vinkkejä kysymysten kysymiseen Power BI:n Q&A-toiminnolla
 author: mihart
-manager: kvivek
-ms.reviewer: ''
-ms.custom: seodec18
+ms.reviewer: Mohammad
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 06/26/2019
+ms.date: 10/23/2019
 ms.author: mihart
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 4f6dc7167d64385182ecbd448b6c400fa7f829df
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: 9fd5375684466eca49582ff9d153fd2533ad7e92
+ms.sourcegitcommit: 08b73af260ded51daaa6749338cb85db2eab587f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "67408184"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "74099012"
 ---
 # <a name="tips-for-asking-questions-in-power-bi-qa"></a>Vihjeitä kysymysten esittämiseen Power BI:n Q&A-toiminnolla
 ## <a name="words-and-terminology-that-qa-recognizes"></a>Q&A-toiminnon tunnistamia sanoja ja termejä
@@ -66,7 +64,7 @@ Alla olevassa luettelossa käytetään preesensiä, mutta useimmissa tapauksissa
 |  |  |
 |**Ylimmät N**     |     (tilaus, luokittelu): ylin, alin, suurin, pienin, ensimmäinen, viimeinen, seuraava, aikaisin, uusin, vanhin, viimeisin            |
 |        |         |
-|**Visualisointityypit**     |  kaikki Power BI:n alkuperäiset visualisointityypit.  Jos visualisointiruudussa on jokin vaihtoehto, voit sisällyttää sen kysymykseen.  Poikkeuksena tähän sääntöön ovat [mukautetut visualisoinnit](../power-bi-custom-visuals.md), jotka olet lisännyt manuaalisesti Visualisointi-ruutuun.  |
+|**Visualisointityypit**     |  kaikki Power BI:n alkuperäiset visualisointityypit.  Jos visualisointiruudussa on jokin vaihtoehto, voit sisällyttää sen kysymykseen.  Poikkeuksena tähän sääntöön ovat [mukautetut visualisoinnit](../developer/power-bi-custom-visuals.md), jotka olet lisännyt manuaalisesti Visualisointi-ruutuun.  |
 |  |  Esimerkki: näytä alueet kuukauden ja kokonaismyynnin mukaan palkkikaaviona               |
 |        |         |
 |**Wh (suhde, määre)**  | milloin, missä, mikä, kuka, kenen, kuinka monta, kuinka paljon, kuinka monta kertaa, kuinka usein, määrä, numero, lukumäärä, miten pitkään, mitä                |
@@ -79,7 +77,9 @@ Q&A-toiminto pyrkii parhaansa mukaan ymmärtämään esitetyn kysymyksen ja vast
 * tarjoaa esikatselun vastauksesta visualisoinnin muodossa. Visualisointi päivittyy kysymystä kirjoittaessasi ja muokatessasi (se ei odota Enterin painamista).
 * ehdottaa vaihtoehtoisia termejä pohjalla olevasta tietojoukosta/tietojoukoista, kun siirrät osoittimen takaisin kysymysruutuun.
 * oikaisee kysymyksen pohjalla olevien tietojoukkojen tietojen perusteella. Q&A korvaa käyttämiäsi sanoja pohjalla olevasta tietojoukosta löytyvillä synonyymeillä. Lukemalla oikaisun saat selville, onko Q&A-toiminto ymmärtänyt kysymyksesi vai ei. 
-* himmentää sanoja, joita toiminto ei ymmärrä.
+* lisää kaksoisalleviivauksen sanoihin, joita se ei ymmärrä.
+* lisää alleviivauksen sanoihin, joita se ei ymmärrä.
+* tämän avulla voit ottaa yhteyttä raportin tai koontinäytön omistajaan, kun termiä ei löydy tai kysymyksesi ei saa vastauksia.
 
 ## <a name="dont-stop-now"></a>Älä lopeta tähän
 Kun Q&A-toiminto näyttää tulokset, jatka keskustelua! Hyödynnä visualisoinnin ja Q&A-toiminnon vuorovaikutteisia toimintoja ja saat vieläkin enemmän merkityksellisiä tietoja.
@@ -89,5 +89,5 @@ Takaisin artikkeliin [Q&A Power BI:ssä](end-user-q-and-a.md)
 
 [Power BI:n peruskäsitteet](end-user-basic-concepts.md)  
 
-Onko sinulla muuta kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
+Onko sinulla muuta kysyttävää? [Kokeile Power BI -yhteisöä](https://community.powerbi.com/)
 

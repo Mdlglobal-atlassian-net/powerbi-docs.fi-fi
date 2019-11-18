@@ -3,22 +3,25 @@ title: Sisällön hakeminen ja lajitteleminen Power BI -palvelussa
 description: Power BI -palvelun Omassa työtilassa olevan sisällön hakemisen ja lajittelemisen ohjeet
 author: mihart
 manager: kvivek
-ms.reviewer: ''
+ms.reviewer: willt
 ms.custom: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 08/21/2019
+ms.date: 10/21/2019
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: e32f0da4c512434fb316c010f2547de3ad5828e5
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: d5bc5638d9f98c1a35f57edd1d5d838c91c8ebf2
+ms.sourcegitcommit: 96217747f07d923d1a9d31f67a853f1ef1d17b20
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "70302826"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72891777"
 ---
 # <a name="navigation-searching-finding-and-sorting-content-in-power-bi-service"></a>Siirtyminen: sisällön hakeminen, löytäminen ja lajitteleminen Power BI -palvelussa
+
+[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
+
 Sisältöön voi siirtyä monella tavalla Power BI -palvelussa. Sisältö on jaettu työtilassasi tyypin mukaan koontinäyttöihin ja raportteihin.  Lisäksi sisältö on järjestetty käytön mukaan suosikkeihin, viimeksi avattuihin, sovelluksiin, kanssani jaettuihin ja esiteltyihin. Kaikki sisältö näkyy Power BI:n *aloitussivulla*, jotta siirtyminen olisi helpompaa. Näiden eri kulkureittien kautta löydät tarvitsemasi sisällön nopeasti Power BI -palvelussa.  
 
 ## <a name="navigation-within-workspaces"></a>Siirtyminen työtiloissa
@@ -41,13 +44,13 @@ Voit lajitella sisällön myös nimen tai omistajan mukaan. Huomaa ylöspäin os
 
 ![lajittele sisältö](./media/end-user-experience/power-bi-sort-new.png)
 
-Kaikki sarakkeet eivät ole lajiteltavissa. Jos haluat tietää, onko jokin sarake lajiteltavissa, pidä hiiren osoitinta kyseisen sarakeotsikon päällä.
+Kaikki sarakkeet eivät ole lajiteltavissa. Jos haluat tietää, voidaanko jokin sarake lajitella, pidä hiiren osoitinta kyseisen sarakeotsikon päällä.
 
 ___________________________________________________________________
-## <a name="navigation-using-the-left-nav-bar"></a>Siirtyminen vasemman siirtymispalkin avulla
-Vasen siirtymispalkki luokittelee sisällön tavoilla, jotka helpottavat ja nopeuttavat tarvittavan sisällön löytämistä.  
+## <a name="navigation-using-the-navigation-pane"></a>Siirtyminen siirtymisruudun avulla
+Siirtymispalkki luokittelee sisällön tavoilla, jotka helpottavat ja nopeuttavat tarvittavan sisällön löytämistä.  
 
-![vasen siirtymispalkki](./media/end-user-search-sort/power-bi-navbar.png)
+![vasen siirtymisruutu](./media/end-user-search-sort/power-bi-navbar.png)
 
 
 - Kanssasi jaettu sisältö on käytettävissä **Jaettu kanssani** -kohdassa.

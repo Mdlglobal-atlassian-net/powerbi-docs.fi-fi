@@ -2,20 +2,19 @@
 title: Power BI Yhdysvaltain valtionhallinnon asiakkaille - Yleiskuvaus
 description: Lisätietoja Yhdysvaltain valtionhallinnon asiakkaille Power BI US Government-palvelun ominaisuuksista ja rajoituksista
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 09/09/2019
+ms.date: 10/24/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 748594dcf9f71677057b8641e44f1408bebd1b89
-ms.sourcegitcommit: d04b9e1426b8544ce16ef25864269cc43c2d9f7b
+ms.openlocfilehash: 225c21693c9f100d9abbfc310b957bee7a909061
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "71715338"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73881372"
 ---
 # <a name="power-bi-for-us-government-customers"></a>Power BI Yhdysvaltain valtionhallinnon asiakkaille
 **Power BI-palvelulla** on versio, joka on saatavilla Yhdysvaltain valtionhallinnon asiakkaille osana **Office 365 US Government Community** -tilauksia. Tässä artikkelissa kuvattu **Power BI -palvelun** versio on suunniteltu erityisesti Yhdysvaltain valtionhallinnon asiakkaille ja on erillinen ja erilainen kuin **Power BI -palvelun** kaupallinen versio.
@@ -60,6 +59,7 @@ Jotkin ominaisuudet, jotka ovat saatavilla **Power BI -palvelun** kaupallisessa 
 * **Ulkoisen käyttäjän kanssa jakaminen** – jakaminen on sallittua Power BI -vuokralaisen sisällä, ja alkaen kesäkuussa 2018 voita jakaa myös Power BI -vuokraajan ulkopuolisten käyttäjien kanssa. Katso artikkeli [Power BI -sisällön jakaminen ulkoisille vieraskäyttäjille Azure AD B2B:n avulla](service-admin-azure-ad-b2b.md).
 * **Raporttinäkymien ja raporttien käyttötilastot** – käyttötilastot eivät ole käytettävissä raporteille ja raporttinäkymille. Asiakkaat voivat käyttää valvontalokitietoja saadakseen organisaation sisäisen sisällön käyttötietoja.
 * **Tietovuot** – Tietovuot eivät ole käytettävissä.
+* **Sivutetut raportit** – sivutetut raportit ovat tällä hetkellä käytettävissä vain USGov Virginiassa.  USGov Texas-tuki on suunnitteilla, mutta sitä ei ole vielä saatavilla.
 
 Jos sinulla on maksuttomia **Power BI** -käyttöoikeuksia määritettynä tilillesi, kyseiset tilit toimivat kaupallisessa**Power BI** -palvelun versiossa, joten ne ovat eivät ole osa **Power BI US Government** -tarjontaa. Voit kohdata seuraavia ongelmia maksuttomissa tileissä:
 

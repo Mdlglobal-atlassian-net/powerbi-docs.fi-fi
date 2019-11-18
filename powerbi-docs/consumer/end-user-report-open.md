@@ -9,14 +9,17 @@ ms.subservice: powerbi-consumer
 ms.topic: conceptual
 ms.date: 09/04/2018
 ms.author: mihart
-ms.openlocfilehash: 2a4c9044f661d9d5b822ba366c3a88c572136b35
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: fab986cbd5c6b0a55c18157d663eea1ca0fd537e
+ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "70903807"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73019459"
 ---
 # <a name="view-a-report-in-the-power-bi-service-for-consumers"></a>Raportin näyttäminen Power BI -palvelussa *kuluttajille*
+
+[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
+
 Raportti sisältää yhden tai useampia visualisointisivuja. Power BI:n *suunnittelijat* luovat raportit ja [jakavat *ne kuluttajille* suoraan](end-user-shared-with-me.md) tai [sovelluksen](end-user-apps.md) osana. 
 
 Raportin voi avata monella eri tavalla ja näytämme nyt niistä kaksi, avaamisen aloitussivulta ja avaamisen koontinäytöstä. 
@@ -52,7 +55,7 @@ Power BI *‑suunnittelijat* voivat jakaa yksittäisen raportin suoraan sinulle 
 
 6. Huomaa oikeassa reunassa oleva **Suodattimet**-ruutu. Siinä näytetään tällä raporttisivulla tai koko raportissa käytetyt suodattimet.
 
-7. Kun viet osoittimen raportin visualisoinnin päälle, näkyviin tulee useita kuvakkeita ja kolme pistettä (...). Jos haluat tarkastella tiettyyn visualisointiin käytettyä suodatinta, valitse suodatinkuvake. Tässä esimerkissä olemme valinneet viivakaavion *Yksiköiden kokonaismäärä jatkuvan jakson ja alueen mukaan* suodatinkuvakkeen.
+7. Kun viet osoittimen raportin visualisoinnin päälle, näkyviin tulee useita kuvakkeita ja **Enemmän vaihtoehtoja** (...). Jos haluat tarkastella tiettyyn visualisointiin käytettyä suodatinta, valitse suodatinkuvake. Tässä esimerkissä olemme valinneet viivakaavion *Yksiköiden kokonaismäärä jatkuvan jakson ja alueen mukaan* suodatinkuvakkeen.
 
    ![raporttisivun välilehdet](./media/end-user-report-open/power-bi-visual-filters.png)
 
@@ -102,6 +105,7 @@ Kun pääset sinuiksi Power BI -palvelun kanssa, löydät itsellesi sopivimmat t
 - Käyttämällä [Näytä aiheeseen liittyvät](end-user-related.md) -toimintoa    
 - Sähköpostiviestistä, jonka joku on [jakanut kanssasi](../service-share-reports.md), tai kun [määrität ilmoituksen](end-user-alerts.md)    
 - [Ilmoituskeskuksen](end-user-notification-center.md) kautta    
+- Työtilasta
 - ja muilla tavoilla
 
 ## <a name="next-steps"></a>Seuraavat vaiheet

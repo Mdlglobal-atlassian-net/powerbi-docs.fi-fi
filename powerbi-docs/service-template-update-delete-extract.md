@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 09/23/2019
 ms.author: tebercov
-ms.openlocfilehash: 2cf655c25bb58ec001bac52b55aea74f887f08d9
-ms.sourcegitcommit: 3885ae11e695f875a82c212ca157e401db8337c4
+ms.openlocfilehash: 8ed27d830e0bc779fc7ecb8e3aa8fde11b8d9c61
+ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71207637"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73432273"
 ---
 # <a name="update-delete-and-extract-template-app"></a>Mallisovelluksen päivittäminen, poistaminen ja purkaminen
 
@@ -65,7 +65,7 @@ Purkutoiminnon ansiosta on nyt entistäkin helpompi palata takaisin mallisovellu
 Uuden työtilan versiotiedot nollataan, ja voit jatkaa mallisovelluksen kehittämistä ja jakamista juuri puretusta työtilasta.
 
 ## <a name="delete-template-app-version"></a>Mallisovellusversion poistaminen
-Mallisovelluksen työtila on aktiivisen hajautetun mallisovelluksen lähde. Mallisovelluksen käyttäjien suojaamiseksi työtilaa ei voida poistaa, ellei työtilasta ole ensin poistettu kaikkia luotuja sovellusversioita.
+Mallityötila on aktiivisen hajautetun mallisovelluksen lähde. Mallisovelluksen käyttäjien suojaamiseksi työtilaa ei voida poistaa, ellei työtilasta ole ensin poistettu kaikkia luotuja sovellusversioita.
 Sovellusversion poistaminen poistaa myös sovelluksen URL-osoitteen, joka ei enää toimi.
 
 1. Paina Julkaisun hallinta -ruudussa kolmea pistettä **(...)**  ja sitten **Poista**.

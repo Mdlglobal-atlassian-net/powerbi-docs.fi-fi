@@ -2,7 +2,6 @@
 title: Tietoja Power BI:n tietovoista
 description: Tietoja tietovoiden toiminnasta Power BI:ssä
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 04/01/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 55571cda4558b5dd9ba28f757f6e11ad4b45f939
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 28be15b1f62f410c14faaa5d3e8c36060596c466
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61136355"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73872599"
 ---
 # <a name="self-service-data-prep-in-power-bi"></a>Omatoiminen tietojen valmisteleminen Power BI:ssä
 
@@ -25,7 +24,7 @@ Tietojen määrä kasvaa jatkuvasti, ja on yhä haasteellisempaa saattaa tiedot 
 
 Power BI:n **tietovoiden** avulla organisaatiot voivat yhdistää eri lähteistä olevia tietoja ja valmistella ne mallinnusta varten. Analyytikot voivat luoda helposti tietovoita tutuilla, omatoimisilla työkaluilla. Tietovoiden avulla voidaan käyttää, muuntaa, yhdistää ja täydentää massadataa määrittämällä tietolähdeyhteyksiä, keräämis-, muuntamis- ja lataamislogiikka, päivitysaikatauluja ja paljon muuta. Lisäksi uusi mallipohjainen laskentamoottori, joka on osa tietovoita, helpottaa tietojen valmistelun hallintaa ja määritystä sekä keventää sekä tietoanalyytikkojen että raporttien luojien työtaakkaa. Samaan tapaan kuin laskentataulukot käsittelevät kaikkien kaavojen uudelleenlaskennat, tietovuot hallitsevat entiteetin tai tietoelementin muutoksia puolestasi automatisoimalla päivitykset ja helpottamalla aiemmin vaivalloisia ja aikaa vieviä logiikan tarkistuksia jopa perustason tietojen päivityksen osalta. Tehtävät, joita valvomaan tarvittiin ennen datatutkijoita (ja lukuisia työtunteja tai -päiviä), voidaan nyt tietovoiden avulla hoitaa muutamalla analyytikon ja raportin luojan tekemällä napsautuksella. 
 
-Tiedot tallennetaan entiteetteinä [**Common Data Modeliin**](https://docs.microsoft.com/powerapps/common-data-model/overview) Azure Data Lake Storage Gen2:ssa. Tietovoita luodaan ja hallitaan sovellustyötiloissa Power BI -palvelun avulla.  
+Tiedot tallennetaan entiteetteinä [**Common Data Modeliin**](https://docs.microsoft.com/powerapps/common-data-model/overview) Azure Data Lake Storage Gen2:ssa. Tietovoita luodaan ja hallitaan työtiloissa Power BI -palvelun avulla.  
  
 **Tietovuot** on suunniteltu käyttämään **Common Data Modelia**, joka on Microsoftin julkaisema standardoitu, modulaarinen ja laajennettava kokoelma tietorakenteita, joiden avulla tietojen luominen, käyttäminen ja analysoiminen on entistä helpompaa. Tämän mallin avulla voit siirtyä tietolähteistä Power BI -raporttinäkymiin vaivattomasti.
 

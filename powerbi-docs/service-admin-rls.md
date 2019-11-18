@@ -11,12 +11,12 @@ ms.author: mblythe
 ms.date: 09/09/2019
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: 04a8c8a08d885427e9de43b719674fce4ac2ebbd
-ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
+ms.openlocfilehash: 7d2bfbfb53914fea43014c78d88ac0c66559466c
+ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71074824"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73431356"
 ---
 # <a name="row-level-security-rls-with-power-bi"></a>Rivitason suojaus (RLS) Power BI:ssä
 
@@ -70,7 +70,7 @@ Voit poistaa jäseniä valitsemalla hänen nimensä vieressä olevan X-merkin.
 
 Voit varmistaa, että määrittämäsi rooli toimii oikein, testaamalla roolin. 
 
-1. Valitse roolin vieressä oleva **ellipsi (...)** .
+1. Valitse **Enemmän vaihtoehtoja** (...) roolin vierestä.
 2. Valitse **Testaa tietoja roolina**.
 
 ![Testaa roolina](media/service-admin-rls/rls-test-role.png)
@@ -89,12 +89,12 @@ Palaa normaaliin näkymään valitsemalla **Takaisin rivitason suojaukseen**.
 
 [!INCLUDE [include-short-name](./includes/rls-usernames.md)]
 
-## <a name="using-rls-with-app-workspaces-in-power-bi"></a>Rivitason suojauksen käyttäminen sovelluksen työtilojen kanssa Power BI:ssä
+## <a name="using-rls-with-workspaces-in-power-bi"></a>Rivitason suojauksen käyttäminen työtilojen kanssa Power BI:ssä
 
-Jos julkaiset Power BI Desktop -raportin sovelluksen työtilassa Power BI -palvelussa, roolit otetaan käyttöön vain luku -jäsenille. Sinun on määritettävä, että jäsenet voivat vain tarkastella Power BI -sisältöä sovelluksen työtilan asetuksissa.
+Jos julkaiset Power BI Desktop -raportin työtilassa Power BI -palvelussa, roolit otetaan käyttöön vain luku -jäsenille. Sinun on määritettävä, että jäsenet voivat vain tarkastella Power BI -sisältöä työtilan asetuksissa.
 
 > [!WARNING]
-> Jos olet määrittänyt sovelluksen työtilan niin, että jäsenillä on muokkausoikeudet, RLS-rooleja ei sovelleta niihin. Käyttäjät voivat nähdä kaikki tiedot.
+> Jos olet määrittänyt työtilan niin, että jäsenillä on muokkausoikeudet, RLS-rooleja ei sovelleta niihin. Käyttäjät voivat nähdä kaikki tiedot.
 
 ![Ryhmän asetukset](media/service-admin-rls/rls-group-settings.png)
 

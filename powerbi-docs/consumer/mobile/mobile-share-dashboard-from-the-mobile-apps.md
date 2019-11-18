@@ -2,19 +2,18 @@
 title: Koontinäytön tai raportin jakaminen Power BI -mobiilisovelluksista
 description: Voit kutsua muita tarkastelemaan koontinäyttöjä ja raportteja jakamalla linkkejä Power BI -mobiilisovellusten kautta. Toimintaohjeet.
 author: mshenhav
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 03/20/2018
 ms.author: mshenhav
-ms.openlocfilehash: 75d315463601110dee61d293a7a41abbf30aaa2d
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: 232d311e876a5fe01eb6c8091eb7a83669592cbf
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "61274436"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73879092"
 ---
 # <a name="share-a-dashboard-or-report-from-the-power-bi-mobile-apps"></a>Koontinäytön tai raportin jakaminen Power BI -mobiilisovelluksista
 Koskee seuraavia:
@@ -86,7 +85,7 @@ Voit poistaa jakamisen vain, jos olet omistaja.
 3. Jaon poistamiseksi on napautettava nimen vieressä olevaa punaista ympyrää ja napautettava sitten **Poista**.
 
 ## <a name="share-from-your-android-device"></a>Jakaminen Android-laitteesta
-1. Napauta koontinäyttöjen tai raporttien kotisivulla kolmea pistettä (...) ja napauta **Kutsu työtoveri**.
+1. Valitse koontinäyttöjen tai raporttien kotisivulla **Enemmän vaihtoehtoja** (...) ja napauta **Kutsu työtoveri**.
    
    ![Kutsu työtoveri](./media/mobile-share-dashboard-from-the-mobile-apps/power-bi-android-tablet-share-dashboard.png)
 2. Tai napauta Kutsu-kuvaketta koontinäytössä tai raportissa ![Kutsu-kuvake](././media/mobile-share-dashboard-from-the-mobile-apps/power-bi-android-invite-icon.png).
@@ -147,5 +146,5 @@ Voit poistaa jakamisen vain, jos olet omistaja.
 ## <a name="next-steps"></a>Seuraavat vaiheet
 * [Jaa tilannevedos ruudusta, raportista tai visualisoinnista ja lisää niihin merkintöjä mobiilisovelluksissa](mobile-annotate-and-share-a-tile-from-the-mobile-apps.md)
 * [Jaa koontinäyttö tai raportti Power BI:ssä](../../service-share-dashboards.md)
-* Ilmenikö kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)
+* Ilmenikö kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
 

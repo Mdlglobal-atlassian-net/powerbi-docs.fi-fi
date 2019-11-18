@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: tutorial
 ms.date: 11/06/2018
-ms.openlocfilehash: 44af74b722e5d21c7475a382f8097f453854230d
-ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.openlocfilehash: 59d3f943ff893024beceff59ce3d0db6bc4d764b
+ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "66839750"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73431676"
 ---
 # <a name="tutorial-create-a-paginated-report-and-upload-it-to-the-power-bi-service"></a>Opetusohjelma: Sivutetun raportin luominen ja lataaminen Power BI -palveluun
 
@@ -44,7 +44,7 @@ Edellytykset sivutetun raportin luomiseen:
 Sivutetun raportin lataaminen Power BI -palveluun edellyttää seuraavia:
 
 - [Power BI Pro -lisenssi](service-admin-power-bi-pro-in-your-organization.md).
-- Sovellustyötila palvelun [Power BI Premium -kapasiteetissa](service-premium-what-is.md). Työtilan nimen vieressä on ![Premium-vinoneliökuvake](media/paginated-reports-quickstart-aw/premium-diamond.png).
+- Työtila palvelun [Power BI Premium -kapasiteetissa](service-premium-what-is.md). Työtilan nimen vieressä on ![Premium-vinoneliökuvake](media/paginated-reports-quickstart-aw/premium-diamond.png).
 
 ## <a name="create-the-matrix-with-a-wizard"></a>Matriisin luominen ohjatun toiminnon avulla
   
@@ -58,7 +58,7 @@ Sivutetun raportin lataaminen Power BI -palveluun edellyttää seuraavia:
   
 4.  Valitse **Valitse tietojoukko** -sivulta **Luo tietojoukko** > **Seuraava**.  
 
-    ![Tietojoukon luominen](media/paginated-reports-quickstart-aw/power-bi-paginated-create-dataset.png)
+    ![Luo tietojoukko](media/paginated-reports-quickstart-aw/power-bi-paginated-create-dataset.png)
   
 5.  Valitse **Valitse yhteys tietolähteeseen** -sivulta **Uusi**. 
 
@@ -287,7 +287,7 @@ Tehdään muotoiluun vielä yksi parannus ennen raportin julkaisemista Power BI 
 
 Nyt kun olet luonut tämän sivutetun raportin, voit ladata sen Power BI -palveluun.
 
-1. Valitse Power BI -palvelussa (http://app.powerbi.com) valitse vasemmasta siirtymisruudusta **Työtilat** > **Luo sovellustyötila**.
+1. Valitse Power BI -palvelussa (http://app.powerbi.com) valitse vasemmasta siirtymisruudusta **Työtilat** > **Luo työtila**.
 
 2. Anna työtilan nimeksi **Azure AW** tai muu yksilöllinen nimi. Olet toistaiseksi ainoa jäsen. 
 

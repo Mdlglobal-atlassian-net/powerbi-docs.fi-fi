@@ -2,20 +2,19 @@
 title: Power BI Desktopin tietolähteet
 description: Power BI Desktopin tietolähteet
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 10/14/2019
+ms.date: 10/25/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 56583c796a8f6e32bed67629dee4fe3bea677bee
-ms.sourcegitcommit: 549401b0e1fad15c3603fe7f14b9494141fbb100
+ms.openlocfilehash: c363e63a7354c2a8c66099a98cb441ce2c94becf
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "72307850"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73878379"
 ---
 # <a name="data-sources-in-power-bi-desktop"></a>Power BI Desktopin tietolähteet
 Power BI Desktopin avulla voit yhdistää tietoja monista eri lähteistä. Täydellinen luettelo käytettävissä olevista tietolähteistä on tämän sivun alareunassa.
@@ -234,7 +233,7 @@ Voit luoda .PBIDS-tiedoston tehostaaksesi **tietojen hakemista** organisaatiossa
 
 Kun tekijä avaa .PBIDS-tiedoston, Power BI Desktop avautuu ja kysyy käyttäjältä tunnistetietoja, joilla todennetaan ja muodostetaan yhteys tiedostossa määritettyyn tietolähteeseen. Näyttöön avautuu siirtymisikkuna, jossa käyttäjän täytyy valita tietolähteestä taulukot, jotka ladataan malliin. Käyttäjien on ehkä myös valittava tietokanta, jos sitä ei ole määritetty PBIDS-tiedostossa. 
 
-Tämän jälkeen käyttäjä voi aloittaa visualisointien luomisen tai käydä uudelleen viimeisimpien lähteiden näkymässä lataamassa malliin uuden joukon taulukoita. 
+Tämän jälkeen käyttäjä voi aloittaa visualisointien luomisen tai käydä uudelleen *Viimeaikaiset lähteet* -näkymässä lataamassa malliin uuden joukon taulukoita. 
 
 Tällä hetkellä .PBIDS-tiedostot tukevat vain yhtä tietolähdettä yhdessä tiedostossa. Jos määrität useita tietolähteitä, tämä aiheuttaa virheen. 
 
@@ -364,21 +363,20 @@ URL-osoitteen täytyy osoittaa itse SharePoint-sivustoon, ei luetteloon sivustos
 **SQL Server**
 ```
 { 
-  “version”: “0.1”, 
-  “connections”: [ 
+  "version": "0.1", 
+  "connections": [ 
     { 
-      “details”: { 
-        “protocol”: “tds”, 
-        “address”: { 
-          “server”: “server-name-here”, 
-          “database”: “db-name-here (optional)” 
+      "details": { 
+        "protocol": "tds", 
+        "address": { 
+          "server": "server-name-here", 
+          "database": "db-name-here (optional) "
         } 
       }, 
-      “options”: {}, 
-      “mode”: “DirectQuery” 
+      "options": {}, 
+      "mode": "DirectQuery" 
     } 
   ] 
-} 
 } 
 ```
  
@@ -419,6 +417,24 @@ URL-osoitteen täytyy osoittaa itse SharePoint-sivustoon, ei luetteloon sivustos
 ```
  
 
+**Tietovuo**
+```
+{
+  "version": "0.1",
+  "connections": [
+    {
+      "details": {
+        "protocol": "powerbi-dataflows",
+        "address": {
+          "workspace":"workspace id (Guid)",
+          "dataflow":"optional dataflow id (Guid)",
+          "entity":"optional entity name"
+        }
+       }
+    }
+  ]
+}
+```
 
 
 ## <a name="next-steps"></a>Seuraavat vaiheet

@@ -11,12 +11,12 @@ ms.date: 09/09/2019
 ms.author: mblythe
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: aef5a8861a42e566086198c924c99d0b73406f60
-ms.sourcegitcommit: e2c5d4561455c3a4806ace85defbc72e4d7573b4
+ms.openlocfilehash: cbb9fa77c529052e32800e0a72a6263b770840d0
+ms.sourcegitcommit: d441d350504f8c6d9e100d229757add6237f0bef
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "71325453"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73060667"
 ---
 # <a name="use-auditing-within-your-organization"></a>Valvonnan käyttö organisaatiossa
 
@@ -162,7 +162,9 @@ Power BI valvoo seuraavia toimia:
 | Järjestelmänvalvoja liitti tietovuon tallennustilin vuokraajaan | AdminAttachedDataflowStorageAccountToTenant | Ei tällä hetkellä käytössä                       |
 | Analysoitu Power BI -tietojoukko                         | AnalyzedByExternalApplication               |                                          |
 | Analysoitu Power BI -raportti                          | AnalyzeInExcel                              |                                          |
+| Liitetty tietovuon tallennustili                 | AttachedDataflowStorageAccount              |                                          |
 | Sidottu Power BI -tietojoukko yhdyskäytävään                | BindToGateway                               |                                          |
+| Peruutettu tietovuon päivitys                        | CancelDataflowRefresh                       |                                          |
 | Muutettu kapasiteetin tila                            | ChangeCapacityState                         |                                          |
 | Muutettu kapasiteetin käyttäjän määritys                  | UpdateCapacityUsersAssignment               |                                          |
 | Muutetut Power BI -tietojoukon yhteydet              | SetAllConnections                           |                                          |
@@ -194,6 +196,7 @@ Power BI valvoo seuraavia toimia:
 | Poistettu Power BI -raportti                           | DeleteReport                                |                                          |
 | Löydetty Power BI -tietojoukon tietolähteet          | GetDatasources                              |                                          |
 | Ladattu Power BI -raportti                        | DownloadReport                              |                                          |
+| Muokatut tietovuon ominaisuudet                        | EditDataflowProperties                      |                                          |
 | Muokattu Power BI -varmenteiden käyttöoikeutta          | EditCertificationPermission                 | Ei tällä hetkellä käytössä                       |
 | Muokattu Power BI -koontinäyttöä                         | EditDashboard                               | Ei tällä hetkellä käytössä                       |
 | Muokattu Power BI -tietojoukkoa                           | EditDataset                                 |                                          |
@@ -213,7 +216,7 @@ Power BI valvoo seuraavia toimia:
 | Tulostettu Power BI -koontinäyttö                        | PrintDashboard                              |                                          |
 | Tulostettu Power BI -raporttisivu                      | PrintReport                                 |                                          |
 | Julkaistu Power BI -raportti verkkoon                  | PublishToWebReport                          |                                          |
-| Vastaanotettu salainen Power BI -tietovuo Key Vaultista  | ReceiveDataflowSecretFromKeyVault           | Ei tällä hetkellä käytössä                       |
+| Vastaanotettu salainen Power BI -tietovuo Key Vaultista  | ReceiveDataflowSecretFromKeyVault           |                                          |
 | Poistettu tietolähde Power BI -yhdyskäytävästä         | RemoveDatasourceFromGateway                 |                                          |
 | Poistettu Power BI -ryhmän jäsenet                    | DeleteGroupMembers                          |                                          |
 | Poistettu työtila kapasiteetista                 | RemoveWorkspacesFromCapacity                |                                          |
@@ -221,6 +224,7 @@ Power BI valvoo seuraavia toimia:
 | Pyydetty Power BI -tietovuon päivitystä               | RequestDataflowRefresh                      | Ei tällä hetkellä käytössä                       |
 | Pyydetty Power BI -tietojoukon päivitystä                | RefreshDataset                              |                                          |
 | Noudettu Power BI -työtilat                     | GetWorkspaces                               |                                          |
+| Määritetty työtilan tietovuon tallennussijainti     | SetDataflowStorageLocationForWorkspace      |                                          |
 | Määritetty ajoitettu päivitys Power BI -tietovuolle        | SetScheduledRefreshOnDataflow               |                                          |
 | Määritetty ajoitettu päivitys Power BI -tietojoukolle         | SetScheduledRefresh                         |                                          |
 | Jaettu Power BI -koontinäyttö                         | ShareDashboard                              |                                          |
@@ -229,10 +233,12 @@ Power BI valvoo seuraavia toimia:
 | Aloitettu Power BI -kokeilujakso                            | OptInForProTrial                            |                                          |
 | Ota haltuun Power BI -tietolähde                   | TakeOverDatasource                          |                                          |
 | Ota haltuun Power BI -tietojoukko                        | TakeOverDataset                             |                                          |
+| Otti haltuun Power BI -tietovuon                     | TookOverDataflow                             |                                          |
 | Julkaisematon Power BI -sovellus                          | UnpublishApp                                |                                          |
 | Päivitä kapasiteetin resurssin hallinnan asetukset      | UpdateCapacityResourceGovernanceSettings    | Ei tällä hetkellä Microsoft 365 -hallintakeskuksessa |
 | Päivitetty kapasiteetin järjestelmänvalvoja                            | UpdateCapacityAdmins                        |                                          |
 | Päivitetty kapasiteetin näyttönimi                     | UpdateCapacityDisplayName                   |                                          |
+| Päivitetyt tietovuon tallennustilan määrityksen käyttöoikeudet   | UpdatedDataflowStorageAssignmentPermissions |                                          |
 | Päivitetyt organisaation Power BI -asetukset          | UpdatedAdminFeatureSwitch                   |                                          |
 | Päivitetty Power BI -sovellus                              | UpdateApp                                   |                                          |
 | Päivitetty Power BI -tietovuo                         | UpdateDataflow                              |                                          |

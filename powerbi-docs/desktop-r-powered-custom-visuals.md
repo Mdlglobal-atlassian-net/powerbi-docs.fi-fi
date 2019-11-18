@@ -3,19 +3,18 @@ title: R:ää hyödyntävien Power BI -visualisointien käyttö Power BI:ssä
 description: R:ää hyödyntävien Power BI -visualisointien käyttö Power BI:ssä
 author: KesemSharabi
 ms.author: kesharab
-manager: rkarlin
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
+ms.subservice: powerbi-custom-visuals
 ms.date: 07/27/2018
 LocalizationGroup: Create reports
-ms.openlocfilehash: ab0c4a7bf529f878796ea4b41177e57d19c79128
-ms.sourcegitcommit: b7a9862b6da940ddebe61bc945a353f91cd0e4bd
+ms.openlocfilehash: 9cc5c40328955f54cb0f37567d7ff91d37a302ce
+ms.sourcegitcommit: 01de0b01f66f28ca45b8d309d7864f261d6c9a85
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71945246"
+ms.lasthandoff: 11/16/2019
+ms.locfileid: "74128237"
 ---
 # <a name="use-r-powered-power-bi-visuals-in-power-bi"></a>R:ää hyödyntävien Power BI -visualisointien käyttö Power BI:ssä
 
@@ -55,7 +54,7 @@ Alla on ohjeet visualisointien selaamiseen ja valitsemiseen verkossa **AppSource
    * [CRAN](https://cran.r-project.org/)
    * [MRO](https://mran.microsoft.com/)
 
-4. Kun visualisointi on ladattu (kuin mikä tahansa selaimesta ladattu tiedosto), siirry **Power BI Desktopiin** ja napsauta kolmea pistettä (...) **Visualisoinnit**-ruudussa ja valitse **Tuo tiedostosta**.
+4. Kun visualisointi on ladattu (kuin mikä tahansa selaimesta ladattu tiedosto), siirry **Power BI Desktopiin** ja napsauta **Enemmän vaihtoehtoja** (...) **Visualisoinnit**-ruudussa ja valitse **Tuo tiedostosta**.
 
    ![R-visualisointi 4a](media/desktop-r-powered-custom-visuals/powerbi-r-powered-custom-viz_4a.png)
 5. Näytössä näkyy varoitus mukautettujen visualisointien tuomisesta seuraavassa kuvassa esitetyllä tavalla:

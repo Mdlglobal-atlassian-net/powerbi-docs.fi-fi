@@ -2,7 +2,6 @@
 title: Näytä tiedot, joita käytettiin visualisoinnin luomiseen
 description: Tässä asiakirjassa kerrotaan, miten Power BI kuluttajat voivat ”nähdä” visualisoinnin luomiseen käytetyt tiedot.
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
@@ -10,14 +9,16 @@ ms.topic: conceptual
 ms.date: 09/12/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: d35cdc6e2c6d2c2632fe8a9776ddc366436cff94
-ms.sourcegitcommit: 02042995df12cc4e4b97eb8a369e62364eb5af36
+ms.openlocfilehash: 83248967f721526f61e63aa92b1e51f22ddbefa9
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71251516"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73861540"
 ---
 # <a name="show-data-with-power-bi-reports"></a>Tietojen näyttäminen Power BI -raporteissa
+
+[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
 Power BI -visualisointi rakentuu pohjana olevien tietojoukkojen tiedoista. Jos olet kiinnostunut taustatoiminnoista, Power BI -palvelun avulla voit *tarkastella* raportin visualisoinnin luomiseen käytettyjä tietoja. Kun valitset **Näytä tiedot**, Power BI näyttää tiedot visualisoinnin alla (tai vieressä).
 
@@ -25,7 +26,7 @@ Jos haluat tarkastella pohjana olevia tietoja koontinäytössä, käytä [Vie Ex
 
 ## <a name="show-the-data-being-used-to-create-a-report-visual"></a>Raportin visualisoinnin luonnissa käytettävien tietojen näyttäminen
 1. [Avaa raportti](end-user-report-open.md) Power BI -palvelussa ja valitse visualisointi.  
-2. Jos haluat tuoda visualisoinnin taustalla olevat tiedot näkyviin, valitse kolme pistettä (...) ja valitse **Näytä tiedot**.
+2. Jos haluat tuoda visualisoinnin taustalla olevat tiedot näkyviin, valitse **Enemmän vaihtoehtoja** (...) ja valitse **Näytä tiedot**.
    
    ![valitse Näytä tiedot](./media/end-user-show-data/power-bi-explore-show-data-newer.png)
 3. Tiedot näkyvät oletusarvoisesti visualisoinnin alla.

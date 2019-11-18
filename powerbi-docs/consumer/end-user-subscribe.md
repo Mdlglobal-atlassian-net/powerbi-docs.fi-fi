@@ -3,23 +3,25 @@ title: Raporttien ja ‑koontinäyttöjen tilaaminen
 description: Opi tilaamaan itsellesi sähköpostitse tilannevedoksia Power BI ‑raportista tai ‑koontinäytöstä.
 author: mihart
 ms.author: mihart
-manager: kvivek
 ms.reviewer: cmfinlan
 featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 08/12/2019
-LocalizationGroup: Common tasks
-ms.openlocfilehash: 2b0554729824b170fecbe6493141c6f3a8354002
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.date: 10/21/2019
+rLocalizationGroup: Common tasks
+ms.openlocfilehash: a9339cc9f61a3a191e8783935c9ec38e119894e9
+ms.sourcegitcommit: 08b73af260ded51daaa6749338cb85db2eab587f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "68961668"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "74099204"
 ---
 # <a name="subscribe-to-a-report-or-dashboard-in-the-power-bi-service"></a>Raportin tai koontinäytön tilaaminen Power BI -palvelussa 
-Ei ole koskaan ollut näin helppoa pysyä ajan tasalla tärkeimmistä koontinäytöistä ja raporteista. Kun tilaat itsellesi tärkeimmät raporttisivut ja koontinäytöt, Power BI lähettää sinulle sähköpostitse niistä tilannevedoksen. Voit määrittää, miten usein haluat Power BI:n lähettävän sähköpostia: päivittäin, viikoittain tai tietojen päivittyessä. Voit myös määrittää tietyn ajankohdan sille, milloin Power BI lähettää sähköpostit, tai voit suorittaa tämän nyt.  
+
+[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
+
+Ei ole koskaan ollut näin helppoa pysyä ajan tasalla tärkeimmistä koontinäytöistä ja raporteista. Kun tilaat itsellesi tärkeimmät raporttisivut ja koontinäytöt, Power BI lähettää sinulle sähköpostitse niistä tilannevedoksen. Voit määrittää, miten usein haluat Power BI:n lähettävän sähköpostia: päivittäin, viikoittain tai tietojen päivittyessä. Voit myös määrittää tietyn ajankohdan sille, milloin Power BI lähettää sähköpostit, tai voit suorittaa tämän nyt.  Voit määrittää enintään 24 eri tilausta kullekin raportille tai koontinäytölle.  
 
 Sähköpostissa ja tilannevedoksessa käytetään samaa kieliasetusta kuin Power BI:ssä (katso [Power BI:ssä tuetut kielet ja maat/alueet](../supported-languages-countries-regions.md)). Jos mitään kieltä ei ole määritetty, Power BI käyttää senhetkisen selaimesi paikka-asetuksen mukaista kieltä. Jos haluat nähdä kieliasetuksesi tai muuttaa sitä, valitse hammasrataskuvake ![hammasrataskuvake](./media/end-user-subscribe/power-bi-settings-icon.png) > **Asetukset > Yleiset > Kieli**. 
 
@@ -78,8 +80,8 @@ Tilaus päättyy, jos Pro-käyttöoikeus umpeutuu, omistaja poistaa koontinäyt�
 * Jos koontinäytön sähköpostitilausten joillakin ruuduilla on käytössä rivitason suojaus (RLS), näitä ruutuja ei näytetä.  Jos raportin sähköpostitilausten tietojoukko käyttää rivitason suojausta (RSL), et pysty luomaan tilausta.
 * Jos sähköpostissa olevat linkit (sisältöön) lakkaavat toimimasta, sisältö on ehkä poistettu. Näyttökuvan alla olevassa sähköpostiviestissä näet, oletko tilannut viestin itse vai onko joku muu tehnyt tilauksen puolestasi. Jos joku muu on tehnyt tilauksen, pyydä työtoveria joko peruuttamaan sähköpostiviestit tai tekemään tilaus uudelleen.
 * Raporttisivujen tilaukset on sidottu raporttisivun nimeen. Jos tilaat raporttisivun ja nimeät sen uudelleen, sinun on luotava myös tilaus uudelleen.
-* Jos et voi käyttää tilaustoimintoa, ota yhteyttä järjestelmänvalvojaasi. Organisaatiosi on ehkä poistanut tämän toiminnon käytöstä todennussyistä tai muista syistä.  
-* Sähköpostitilaukset eivät tue suurinta osaa [mukautetuista visualisoinneista](../power-bi-custom-visuals.md).  Poikkeuksena ovat mukautetut visualisoinnit, jotka on [sertifioitu](../power-bi-custom-visuals-certified.md).  
+* Jos et voi käyttää tilaustoimintoa, ota yhteyttä järjestelmänvalvojaasi. Organisaatiosi on saattanut poistaa tämän ominaisuuden käytöstä.  
+* Sähköpostitilaukset eivät tue suurinta osaa [mukautetuista visualisoinneista](../developer/power-bi-custom-visuals.md).  Poikkeuksena ovat mukautetut visualisoinnit, jotka on [sertifioitu](../developer/power-bi-custom-visuals-certified.md).  
 * Sähköpostitilaukset eivät tue R:ää hyödyntäviä mukautettuja visualisointeja tällä hetkellä.  
 * Erityisesti koontinäyttötilausten osalta tiettyjä ruututyyppejä ei vielä tueta.  Sellaisia ovat esimerkiksi suoratoisto-, video- ja mukautetut verkkosisältöruudut.     
 * Tilaukset voi epäonnistua sähköpostiviestien kokorajoitusten vuoksi, jos koontinäytöissä tai raporteissa on erittäin suuria kuvia.    

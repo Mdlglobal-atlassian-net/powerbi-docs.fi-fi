@@ -3,19 +3,18 @@ title: Kapasiteettien määrittäminen ja hallinta Power BI Premiumissa
 description: Lue, miten voit hallita Power BI Premiumia ja sallia sisällön käytön koko organisaatiossa.
 author: mgblythe
 ms.author: mblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 09/17/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: e9214fbb78b501b49e8c2115423ec1c6f55e65d7
-ms.sourcegitcommit: a6602d84c86d3959731a8d0ba39a522914f13d1a
+ms.openlocfilehash: 04f5b1f639b7abdbbe789a23e5d7a54790ad50a5
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/21/2019
-ms.locfileid: "71175586"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73857092"
 ---
 # <a name="configure-and-manage-capacities-in-power-bi-premium"></a>Kapasiteettien määrittäminen ja hallinta Power BI Premiumissa
 
@@ -98,7 +97,7 @@ Power BI -järjestelmänvalvojat ja Office 365:n yleiset järjestelmänvalvojat 
 
 ### <a name="manage-user-permissions"></a>Käyttäjien käyttöoikeuksien hallinta
 
-Voit määrittää lisää kapasiteetin järjestelmänvalvojia sekä määrittää käyttäjät, joilla on *kapasiteetin määrittämisen* käyttöoikeudet. Käyttäjä, jolla on määrittämisen käyttöoikeudet, voi määrittää kapasiteettiin sovelluksen työtilan, jonka järjestelmänvalvoja hän on. Hän voi myös määrittää *Oman työtilansa*  kapasiteettiin. Käyttäjä, jolla on määrittämisen käyttöoikeudet, ei voi käyttää hallintaportaalia.
+Voit määrittää lisää kapasiteetin järjestelmänvalvojia sekä määrittää käyttäjät, joilla on *kapasiteetin määrittämisen* käyttöoikeudet. Käyttäjä, jolla on määrittämisen käyttöoikeudet, voi määrittää kapasiteettiin työtilan, jonka järjestelmänvalvoja hän on. Hän voi myös määrittää *Oman työtilansa*  kapasiteettiin. Käyttäjä, jolla on määrittämisen käyttöoikeudet, ei voi käyttää hallintaportaalia.
 
 > [!NOTE]
 > Power BI Embeddedin kapasiteetin järjestelmänvalvojat määritetään Microsoft Azure -portaalissa.
@@ -109,7 +108,7 @@ Laajenna **Käyttäjien käyttöoikeudet** -kohdassa oleva **Käyttäjät, joill
 
 ## <a name="assign-a-workspace-to-a-capacity"></a>Työtilan määrittäminen kapasiteettiin
 
-Kapasiteettiin voi määrittää työtilan kahdella tavalla: joko hallintaportaalin tai sovellustyötilan kautta.
+Kapasiteettiin voi määrittää työtilan kahdella tavalla: joko hallintaportaalin tai työtilan kautta.
 
 ### <a name="assign-from-the-admin-portal"></a>Hallintaportaalin kautta määrittäminen
 
@@ -127,22 +126,22 @@ Kapasiteetin järjestelmänvalvojat sekä Power BI -järjestelmänvalvojat ja Of
    | --- | --- |
    | **Työtilat käyttäjien mukaan** | Kun määrität työtiloja käyttäjän tai ryhmän mukaan, kaikki kyseisten käyttäjien omistamat työtilat määritetään Premium-kapasiteettiin, mukaan lukien käyttäjän oma työtila. Kyseiset käyttäjät saavat automaattisesti työtilan määrittämisen käyttöoikeudet.<br>Tämä sisältää työtilat, jotka on jo määritetty eri kapasiteettiin. |
    | **Määritetyt työtilat** | Syötä sen työtilan nimi, joka tullaan määrittämään valitulle kapasiteetille. |
-   | **Koko organisaation työtilat** | Koko organisaation työtilojen määrittäminen Premium-kapasiteettiin määrittää organisaatiosi kaikki sovellustyötilat ja Omat työtilat tähän Premium-kapasiteettiin. Lisäksi kaikki nykyiset ja tulevat käyttäjät voivat määrittää yksittäisiä työtiloja uudelleen tähän kapasiteettiin. |
+   | **Koko organisaation työtilat** | Koko organisaation työtilojen määrittäminen Premium-kapasiteettiin määrittää organisaatiosi kaikki työtilat ja Omat työtilat tähän Premium-kapasiteettiin. Lisäksi kaikki nykyiset ja tulevat käyttäjät voivat määrittää yksittäisiä työtiloja uudelleen tähän kapasiteettiin. |
    | | |
 
 1. Valitse **Käytä**.
 
-### <a name="assign-from-app-workspace-settings"></a>Määrittäminen sovellustyötilan asetuksien kautta
+### <a name="assign-from-workspace-settings"></a>Määrittäminen työtilan asetuksien kautta
 
-Voit myös määrittää sovellustyötilan Premium-kapasiteettiin kyseisen työtilan asetuksista. Jos haluat siirtää työtilan kapasiteettiin, sinulla on oltava kyseisen työtilan järjestelmänvalvojan oikeudet ja kyseisen kapasiteetin määrittämisen käyttöoikeudet. Huomaa, että työtilan järjestelmänvalvojat voivat aina poistaa työtilan Premium-kapasiteetista.
+Voit myös määrittää työtilan Premium-kapasiteettiin kyseisen työtilan asetuksista. Jos haluat siirtää työtilan kapasiteettiin, sinulla on oltava kyseisen työtilan järjestelmänvalvojan oikeudet ja kyseisen kapasiteetin määrittämisen käyttöoikeudet. Huomaa, että työtilan järjestelmänvalvojat voivat aina poistaa työtilan Premium-kapasiteetista.
 
-1. Muokkaa sovellustyötilaa valitsemalla kolme pistettä **(. . .)** ja valitsemalla sitten **Muokkaa työtilaa**.
+1. Muokkaa työtilaa valitsemalla kolme pistettä **(. . .)** ja valitsemalla sitten **Muokkaa työtilaa**.
 
     ![Muokkaa työtilaa kontekstivalikosta](media/service-admin-premium-manage/edit-app-workspace.png)
 
 1. Laajenna **Lisäasetukset** **Muokkaa työtilaa** -osiosta.
 
-1. Valitse kapasiteetti, johon haluat määrittää tämän sovellustyötilan.
+1. Valitse kapasiteetti, johon haluat määrittää tämän työtilan.
 
     ![Kapasiteetin valinnan avattava valikko](media/service-admin-premium-manage/app-workspace-advanced.png)
 
@@ -166,4 +165,4 @@ Katso lisätietoja artikkelista [Power BI -raporttipalvelimen asentaminen](repor
 
 [Premium-kapasiteettien hallinta](service-premium-capacity-manage.md)
 
-Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)
+Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)

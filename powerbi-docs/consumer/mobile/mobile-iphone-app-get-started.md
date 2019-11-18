@@ -2,19 +2,18 @@
 title: iOS:n Power BI -mobiilisovelluksen käytön aloittaminen
 description: Lue, miten iOS:n Microsoft Power BI -mobiilisovellus tuo Power BI:n taskuusi, jotta pääset työtietoihisi mobiilisti paikallisesti ja pilvipalvelussa.
 author: mshenhav
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 06/27/2018
 ms.author: mshenhav
-ms.openlocfilehash: 2de1b866a237a0193c33c552078ca70bd5e632ce
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: dd43df2a01175657b39c1e3dcebe5ae6a9433e42
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "67498998"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73870199"
 ---
 # <a name="get-started-with-the-power-bi-mobile-app-on-ios-devices"></a>iOS-laitteiden Power BI -mobiilisovelluksen käytön aloittaminen
 Microsoft Power BI for iOS -sovellus iPhonella, iPadilla tai iPod Touchilla tarjoaa BI-mobiilikäyttökokemuksen Power BI:lle, Power BI -raporttipalvelimelle ja Reporting Services -palveluille. Voit tarkastella ja käsitellä yrityksen koontinäyttöjä paikallisesti ja pilvipalvelussa missä tahansa, live-tilassa kosketusnäytöllisessä mobiilikäytössä. Tarkastele tietoja koontinäytöissä ja jaa sähköpostitse tai tekstiviestillä työtovereiden kanssa. Pysy ajan tasalla kaikkein ajantasaisimmilla tiedoilla [Apple Watchin](mobile-apple-watch.md) avulla.  
@@ -31,7 +30,7 @@ Voit iOS:n Power BI -mobiilisovelluksessa käsitellä koontinäyttöjä ja rapor
 Katso [Power BI -mobiilisovellusten uudet ominaisuudet](mobile-whats-new-in-the-mobile-apps.md).
 
 ## <a name="download-the-app"></a>Lataa sovellus
-[Lataa iOS-sovellus](http://go.microsoft.com/fwlink/?LinkId=522062 "Lataa iOS-sovellus") Apple-sovelluskaupasta iPhonelle, iPadille tai iPod Touchille.
+[Lataa iOS-sovellus](https://go.microsoft.com/fwlink/?LinkId=522062 "Lataa iOS-sovellus") Apple-sovelluskaupasta iPhonelle, iPadille tai iPod Touchille.
 
 Voit käyttää Power BI for iOS -sovellusta iOS 11:llä ja tätä uudemmilla käyttöjärjestelmillä. 
 
@@ -75,7 +74,7 @@ Voit tarkastella ja käsitellä Power BI -koontinäytön malleja, mutta on muuta
 ## <a name="find-your-content-in-the-power-bi-mobile-apps"></a>Sisällön etsiminen Power BI -mobiilisovelluksissa
 Koontinäytöt ja raportit tallennetaan eri paikkoihin Power BI -mobiilisovelluksissa riippuen siitä, mistä ne ovat peräisin. Lue [sisällön etsimisestä mobiilisovelluksissa](mobile-apps-quickstart-view-dashboard-report.md). Lisäksi voit aina hakea kaikkea, mitä sinulla on Power BI -mobiilisovelluksissa. 
 
-![Vasen siirtymisruutu](./media/mobile-iphone-app-get-started/power-bi-iphone-left-nav.png)
+![Siirtymisruutu](./media/mobile-iphone-app-get-started/power-bi-iphone-left-nav.png)
 
 Lue lisää [sisällön etsimisestä mobiilisovelluksissa](mobile-apps-quickstart-view-dashboard-report.md).
 
@@ -84,7 +83,7 @@ Näet mobiilisovellusten Suosikit-sivulta kaikki Power BI -suosikkikoontinäytt�
 
 * Napauta **Suosikit**.
   
-   ![Suosikit vasemmanpuoleisessa siirtymisruudussa](./media/mobile-iphone-app-get-started/power-bi-iphone-favorites-nav.png)
+   ![Suosikit siirtymisruudussa](./media/mobile-iphone-app-get-started/power-bi-iphone-favorites-nav.png)
   
    Näet kaikki suosikkisi yhdessä tällä sivulla:
   
@@ -109,7 +108,7 @@ Lue lisää [Power BI -mobiilisovellusten päivittämisestä Microsoft Intunella
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
-* [Mikä on Power BI?](../../power-bi-overview.md)
-* Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)
+* [Mikä on Power BI?](../../fundamentals/power-bi-overview.md)
+* Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
 
 

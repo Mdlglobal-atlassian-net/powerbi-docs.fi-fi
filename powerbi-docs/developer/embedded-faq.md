@@ -3,22 +3,21 @@ title: Usein kysyttyjä kysymyksiä – Power BI Embedded
 description: Selaa Power BI Embeddediä koskevien usein kysyttyjen kysymysten ja vastausten luetteloa.
 author: rkarlin
 ms.author: rkarlin
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 05/27/2019
-ms.openlocfilehash: 62b5498558b2c89a23e2ed2caf3dacdf343d3a79
-ms.sourcegitcommit: d9755602235ba03594c348571b9102c9bf88d732
+ms.openlocfilehash: 9e641b70c9fd6c6d378628d34413b14c59eaea23
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69490345"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73864226"
 ---
 # <a name="frequently-asked-questions-about-power-bi-embedded"></a>Usein kysyttyjä kysymyksiä – Power BI Embedded
 
-* Jos sinulla on muita kysymyksiä, [voit esittää niitä Power BI -yhteisössä](http://community.powerbi.com/).
+* Jos sinulla on muita kysymyksiä, [voit esittää niitä Power BI -yhteisössä](https://community.powerbi.com/).
 * Eikö ongelma ratkennut? Vieraile [Power BI -tukisivulla](https://powerbi.microsoft.com/support/).
 
 ## <a name="general"></a>Yleiset
@@ -67,7 +66,7 @@ Tässä on luettelo joistain ominaisuuksien eroista.
 | Ominaisuus | Power BI Embedded | Power BI Premium -kapasiteetti | Power BI Premium -kapasiteetti |
 |----------------------------------------------------------------------------------|-------------------|---------------------------|---------------------------|
 |   | A-varastointiyksiköt – Azure-kapasiteetti | EM-varastointiyksiköt – O365-kapasiteetti | P-varastointiyksiköt – O365-kapasiteetti |
-| Upotusartefaktit Power BI -sovelluksen työtilasta | Kyllä | Kyllä | Kyllä |
+| Upotusartefaktit Power BI -työtilasta | Kyllä | Kyllä | Kyllä |
 | Power BI -raporttien käyttäminen upotetussa sovelluksessa – SaaS | Ei | Kyllä | Kyllä |
 | Power BI -raporttien käyttäminen upotetussa sovelluksessa – PaaS-palvelu | Kyllä | Kyllä | Kyllä |
 | Power BI -raporttien käyttäminen SharePointissa | Ei | Kyllä | Kyllä |
@@ -146,7 +145,7 @@ Kyllä. Voit luoda ja hallita PBIE-resursseja Powershellin cmdlet-komentojen ja 
 
 ### <a name="what-is-the-pbi-embedded-dedicated-capacity-role-in-a-pbi-embedded-solution"></a>Mikä on PBI Embeddedin varatun kapasiteetin rooli PBI Embedded -ratkaisussa?
 
-Jos haluat [viedä ratkaisusi hyötykäyttöön](embed-sample-for-customers.md#move-to-production), sinun on määritettävä sovelluksesi käyttämä Power BI -sisältö (sovellustyötila) Power BI Embedded -kapasiteetille eli SKU:lle.
+Jos haluat [viedä ratkaisusi hyötykäyttöön](embed-sample-for-customers.md#move-to-production), sinun on määritettävä sovelluksesi käyttämä Power BI -sisältö (työtila) Power BI Embedded -kapasiteetille eli SKU:lle.
 
 ### <a name="in-what-azure-regions-is-pbi-embedded-available"></a>Millä Azure-alueilla PBI Embedded on käytettävissä?
 
@@ -362,4 +361,4 @@ Voit oppia muokkaamaan Power BI -tietoja [täällä](https://docs.microsoft.com/
 
 Jos haluat lisätietoja, katso [upotetun sovelluksen vianmääritys](embedded-troubleshoot.md).
 
-Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
+Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](https://community.powerbi.com/)

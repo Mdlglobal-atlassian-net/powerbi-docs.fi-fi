@@ -11,12 +11,12 @@ ms.topic: troubleshooting
 ms.date: 12/06/2018
 ms.author: mblythe
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: f6becb175b8779588ab8d203bb02256945c71ee6
-ms.sourcegitcommit: e5cf19e16112c7dad1591c3b38d232267ffb3ae1
+ms.openlocfilehash: 4ba6b4840a35e00c4b170a6b916bf3877508546a
+ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72544273"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73021549"
 ---
 # <a name="troubleshooting-tile-errors"></a>Ruutuvirheiden vianmääritys
 Seuraavassa on yleisiä virheitä, joita voit kohdata ruutujen kohdalla sekä niiden selitykset.
@@ -69,7 +69,7 @@ Tämä on tavallisesti tilapäinen ongelma. Jos yrität myöhemmin uudelleen ja 
 
 Näin voi käydä, jos taustalla oleva tietojoukko on määritetty käyttämään DirectQuery-tilaa tai reaaliaikaista yhteyttä Analysis Servicesiin paikallisen tietoyhdyskäytävän kautta. Tässä tapauksessa ruudut näyttävät edelleen suodattamattomia tietoja, kun kertakirjautuminen on otettu käyttöön. Niitä näytetään siihen saakka, kunnes ruutu päivitetään seuraavan kerran. Tämän jälkeen Power BI käyttää kertakirjautumista määritetyllä tavalla ja ruuduissa näytetään käyttäjätietojen perusteella suodatettuja tietoja. 
 
-Jos haluat nähdä suodatetut tiedot heti, voit pakottaa ruudun päivityksen valitsemalla kolmen pisteen valikon (...) raporttinäkymän oikeasta yläkulmasta ja valitsemalla **Päivitä raporttinäkymän ruudut**.
+Jos haluat nähdä suodatetut tiedot heti, voit pakottaa ruudun päivityksen valitsemalla **Enemmän vaihtoehtoja** (...) raporttinäkymän oikeasta yläkulmasta ja valitsemalla **Päivitä raporttinäkymän ruudut**.
 
 Tietojoukon omistajana voit myös muokata ruudun päivitysväliä. Jos haluat nopeuttaa ruudun päivitystä, määritä päivitysväliksi 15 minuuttia. Valitse rataskuvake Power BI -palvelun oikeassa yläkulmassa ja valitse sitten **Asetukset**. Valitse **Asetukset**-sivulla **Tietojoukot**-välilehti. Laajenna **Ajoitettu välimuistin päivitys** -kohta ja muokkaa **Päivitystaajuus**-kohdan arvoa. Varmista, että muokkaat määrityksiin takaisin alkuperäisen päivitysvälin, kun Power BI suorittaa seuraavan ruutupäivityksen.
 

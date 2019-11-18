@@ -13,12 +13,12 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 08/30/2019
 ms.author: mihart
-ms.openlocfilehash: ef955f672bc7266979b1e0b9ddbab6e9b6ae1ff7
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: 17a142249abe1162dbbcff79c476f33eb4b80366
+ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "70236981"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73019589"
 ---
 # <a name="quickstart-learn-about-the-power-bi-capabilities-for-consumers"></a>Pikaopas: Tutustu *kuluttajille suunnattuihin* Power BI -ominaisuuksiin
 Tässä pikaoppaassa opit käyttämään Power BI:tä löytääksesi tietopohjaisia merkityksellisiä liiketoimintatietoja. Tämä artikkeli ei ole tarkoitettu syvälliseksi ohjeeksi, vaan se tarjoaa lyhyen katsauksen **kuluttajille** suunnattuihin Power BI -toimintoihin.
@@ -118,7 +118,7 @@ Visualisoinnit koostuvat arvopisteistä, ja pitämällä hiiriosoitinta arvopist
 ### <a name="favorite-a-dashboard"></a>Koontinäytön lisääminen suosikkeihin
 Kun lisäät sisällön *suosikkeihin*, voit käyttää sitä siirtymispalkista. Siirtymispalkki on näkyvissä lähes kaikissa Power BI:n alueissa. Suosikkeja ovat yleensä koontinäytöt, raporttisivut ja sovellukset, joita käytät useimmin.
 
-Valitse Power BI -palvelun oikeassa yläkulmassa **Suosikki** tai, jos se ei ole näkyvissä, valitse kolme pistettä (...) ja valitse avattavasta valikosta **Suosikki**. 
+Valitse Power BI -palvelun oikeassa yläkulmassa **Suosikki** tai, jos se ei ole näkyvissä, valitse **Lisää vaihtoehtoja** (...) ja valitse avattavasta valikosta **Suosikki**. 
    
 ![Suosikki-kuvake](./media/end-user-reading-view/power-bi-favorites.png)
 
@@ -168,7 +168,7 @@ Lisätietoja [kohdistustilasta ja koko näytön tilasta](end-user-focus.md)
 ### <a name="sort-a-visualization"></a>Visualisoinnin lajitteleminen
 Raporttisivun visualisoinnit voidaan lajitella ja muutokset tallentaa. 
 
-Aktivoi visualisointi pitämällä hiiriosoitinta sen kohdalla ja valitse kolme pistettä (...), jolloin lajitteluvaihtoehdot tulevat näkyviin.
+Aktivoi visualisointi pitämällä hiiriosoitinta sen kohdalla ja valitse **Lisää vaihtoehtoja** (...), jolloin lajitteluvaihtoehdot tulevat näkyviin.
 
 ![lajittele kaavio](media/end-user-reading-view/sort.gif) 
 
@@ -177,7 +177,7 @@ Lisätietoja [visualisointien lajittelusta](end-user-search-sort.md)
 ### <a name="show-the-data-used-to-create-a-visualization"></a>Näytä visualisoinnin lähdetiedot
 Power BI:n visualisointi rakentuu pohjana olevien tietojoukkojen tiedoista. Jos olet kiinnostunut taustatoiminnoista, Power BI:n avulla voit *tarkastella* visualisoinnin luomiseen käytettyjä tietoja. Kun valitset **Näytä tiedot**, Power BI näyttää tiedot visualisoinnin alla (tai vieressä).
 
-Kun visualisointi on aktiivisena, valitse kolme pistettä (...) ja valitse **Näytä tiedot**.
+Kun visualisointi on aktiivisena, valitse **Lisää vaihtoehtoja** (...) ja valitse **Näytä tiedot**.
    
    ![valitse Näytä tiedot](./media/end-user-show-data/power-bi-explore-show-data.png)
 

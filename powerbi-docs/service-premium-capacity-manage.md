@@ -3,7 +3,6 @@ title: Microsoft Power BI Premium -kapasiteettien hallinta
 description: Kuvailee Power BI Premium -kapasiteettien hallintatehtäviä.
 author: mgblythe
 ms.author: mblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 04/10/2019
 ms.custom: seodec18
 LocalizationGroup: Premium
-ms.openlocfilehash: 1e8218e19ca3949a96a9c701e4a18f9fb088e2a1
-ms.sourcegitcommit: a6602d84c86d3959731a8d0ba39a522914f13d1a
+ms.openlocfilehash: 5e8becd877165f456793d99951544156a9314290
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/21/2019
-ms.locfileid: "71175217"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73881209"
 ---
 # <a name="managing-premium-capacities"></a>Premium-kapasiteettien hallinta
 
@@ -42,7 +41,7 @@ Vähintään yksi kapasiteetin järjestelmänvalvoja täytyy määrittää. Kapa
 
 Kapasiteetin järjestelmänvalvojat eivät voi käyttää työtilan sisältöä, ellei sitä ole nimenomaisesti määritetty työtilan käyttöoikeuksissa. Heillä ei myöskään ole käyttöoikeuksia kaikkiin Power BI -järjestelmänvalvojien alueisiin (ellei sitä ole nimenomaisesti määritetty), kuten käyttötilastoihin, valvontalokeihin tai vuokraajan asetuksiin. On tärkeää huomata, että kapasiteettien järjestelmänvalvojilla ei ole oikeutta uusien kapasiteettien luomiseen tai olemassa olevien kapasiteettien skaalaamiseen. Järjestelmänvalvojat määritetään kapasiteetin mukaan, jolloin he voivat vain tarkastella ja hallita kapasiteetteja, joihin he ovat määritettyjä.
 
-Kapasiteetin koko valitaan käytettävissä olevasta varastointiyksikköasetusten luettelosta, ja sitä rajoittaa käytettävissä olevien näennäisytimien määrä varannossa. Varannosta on mahdollista luoda useita kapasiteetteja joko yhdestä tai useammasta ostetusta varastointiyksiköstä. Esimerkiksi P3-varastointiyksikköä (32 näennäisydintä) voidaan käyttää kolmen kapasiteetin luomiseen: yksi P2 (16 näennäisydintä) ja kaksi P1:tä (2 x 8 näennäisydintä). Parannettu suorituskyky ja skaalaus voidaan saavuttaa luomalla pienempiä kapasiteetteja [Premium-kapasiteettien optimointi](service-premium-capacity-optimize.md) -artikkelissa kuvatulla tavalla. Seuraavassa kuvassa on mallimääritys kuvitteelliselle Contoso-organisaatiolle. Se sisältää viisi Premium-kapasiteettia (3 x P1 ja 2 x P3), joissa jokaisessa on sovellustyötila, sekä useita työtiloja jaetussa kapasiteetissa.
+Kapasiteetin koko valitaan käytettävissä olevasta varastointiyksikköasetusten luettelosta, ja sitä rajoittaa käytettävissä olevien näennäisytimien määrä varannossa. Varannosta on mahdollista luoda useita kapasiteetteja joko yhdestä tai useammasta ostetusta varastointiyksiköstä. Esimerkiksi P3-varastointiyksikköä (32 näennäisydintä) voidaan käyttää kolmen kapasiteetin luomiseen: yksi P2 (16 näennäisydintä) ja kaksi P1:tä (2 x 8 näennäisydintä). Parannettu suorituskyky ja skaalaus voidaan saavuttaa luomalla pienempiä kapasiteetteja [Premium-kapasiteettien optimointi](service-premium-capacity-optimize.md) -artikkelissa kuvatulla tavalla. Seuraavassa kuvassa on mallimääritys kuvitteelliselle Contoso-organisaatiolle. Se sisältää viisi Premium-kapasiteettia (3 x P1 ja 2 x P3), joissa jokaisessa on työtila, sekä useita työtiloja jaetussa kapasiteetissa.
 
 ![Mallimääritys kuvitteelliselle Contoso-organisaatiolle](media/service-premium-capacity-manage/contoso-organization-example.png)
 
@@ -66,7 +65,7 @@ Premium-kapasiteetin poistaminen on mahdollista, eikä se aiheuta sen työtiloje
 
 ### <a name="assigning-workspaces-to-capacities"></a>Työtilojen määrittäminen kapasiteeteille
 
-Premium-kapasiteetille voidaan määrittää työtiloja Power BI -hallintaportaalissa tai, sovelluksen työtilan kohdalla, **Työtila**-ruudussa.
+Premium-kapasiteetille voidaan määrittää työtiloja Power BI -hallintaportaalissa tai, työtilan kohdalla, **Työtila**-ruudussa.
 
 Kapasiteetin järjestelmänvalvojat, Office 365:n yleiset järjestelmänvalvojat sekä Power BI -palvelun järjestelmänvalvojat voivat joukkomäärittää työtiloja Power BI -hallintaportaalissa. Joukkomääritys voi koskea seuraavia kohteita:
 

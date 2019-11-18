@@ -7,15 +7,15 @@ ms.reviewer: juluczni
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: tutorial
-ms.date: 05/22/2019
+ms.date: 10/22/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 056457d5a90585fd30a0a85f95d28d1097c720b0
-ms.sourcegitcommit: e5cf19e16112c7dad1591c3b38d232267ffb3ae1
+ms.openlocfilehash: b11d2e5ce330c111313ef0d4bd8f2b1f1a89ce43
+ms.sourcegitcommit: 23ad768020a9daf129f69a462a2d46d59d2349d2
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72544079"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72776007"
 ---
 # <a name="key-influencers-visualization"></a>Tärkeiden vaikuttajien visualisointi
 
@@ -58,7 +58,7 @@ Katso tästä videosta, miten voit luoda visualisoinnin tärkeimmistä vaikuttaj
    > 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/fDb5zZ3xmxU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Tuotepäällikkö haluaa selvittää, mitkä tekijät saavat asiakkaat esittämään kielteisiä mielipiteitä pilvipalvelustasi. Jos haluat osallistua, avaa [asiakaspalautteen PBIX-tiedosto](https://github.com/Microsoft/powerbi-desktop-samples/blob/master/2019/customerfeedback.pbix) Power BI Desktopissa. Voit myös ladata [asiakaspalautteen Excel-tiedoston Power BI -palvelulle tai Power BI Desktopille](https://github.com/Microsoft/powerbi-desktop-samples/blob/master/2019/customerfeedback.xlsx). 
+Tuotepäällikkö haluaa selvittää, mitkä tekijät saavat asiakkaat esittämään kielteisiä mielipiteitä pilvipalvelustasi. Jos haluat osallistua, avaa [asiakaspalautteen PBIX-tiedosto](https://github.com/Microsoft/powerbi-desktop-samples/blob/master/2019/customerfeedback.pbix) Power BI Desktopissa. Voit myös ladata [asiakaspalautteen Excel-tiedoston Power BI -palvelulle tai Power BI Desktopille](https://github.com/Microsoft/powerbi-desktop-samples/blob/master/2019/customerfeedback.xlsx). Valitse jompikumpi linkeistä ja valitse sitten **Lataa** avautuvalta GitHub-sivulta.
 
 > [!NOTE]
 > Asiakaspalautteen tietojoukko perustuu seuraavaan julkaisuun: [Moro et al., 2014] S. Moro, P. Cortez ja P. Rita. "A Data-Driven Approach to Predict the Success of Bank Telemarketing." *Decision Support Systems*, Elsevier, 62:22-31, kesäkuu 2014. 
@@ -240,7 +240,7 @@ Numeeristen kohteiden ylimmät segmentit näyttävät ryhmät, joissa talojen hi
 
 ## <a name="analyze-a-metric-that-is-a-measure-or-a-summarized-column"></a>Analysoi arvo, joka on mittari tai yhteenvetosarake
 
-Jos kyseessä on mittari tai yhteenvetosarake, analyysi palautuu oletuksena [edellä](https://docs.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-influencers#analyze-a-metric-that-is-numeric) kuvatuksi **jatkuvaksi analyysityypiksi**. Tätä ei voi muuttaa. Suurin ero mittari/yhteenvetosarakkeen ja yhteenvetämättömän numeerisen sarakkeen analysoinnissa on taso, jolla analyysi suoritetaan.
+Jos kyseessä on mittari tai yhteenvetosarake, analyysi palautuu oletuksena [edellä](https://docs.microsoft.com/power-bi/visuals/power-bi-visualization-influencers#analyze-a-metric-that-is-numeric) kuvatuksi **jatkuvaksi analyysityypiksi**. Tätä ei voi muuttaa. Suurin ero mittari/yhteenvetosarakkeen ja yhteenvetämättömän numeerisen sarakkeen analysoinnissa on taso, jolla analyysi suoritetaan.
 
 Yhteenvetämättömien sarakkeiden tapauksessa analyysi suoritetaan aina taulukon tasolla. Yllä olevassa talon hinnan esimerkissä analysoimme **talon hinnan** arvo, jotta näemme, mikä vaikuttaa talon hintaan nostavasti/laskevasti. Analyysi suoritetaan automaattisesti taulukon tasolla. Taulukossa on yksilöivä tunnus kullekin talolle, joten analyysi suoritetaan talon tasolla.
 
@@ -254,7 +254,7 @@ Mittayksiköt ja yhteenvetosarakkeet analysoidaan automaattisesti käytettyjen *
 
 Tämä analyysi on hyvin tiivistetty, joten regressiomallin on vaikea löytää tiedoista mitään mallia, josta se voisi oppia. Meidän pitäisi suorittaa analyysi yksityiskohtaisemmalla tasolla parempien tulosten saamiseksi. Jos haluamme analysoida talon hintaa talon tasolla, meidän on eksplisiittisesti lisättävä analyysiin **Tunnus**-kenttä. Emme kuitenkaan halua, että talon tunnusta pidetään vaikuttajana. Ei ole hyödyllistä oppia, että talon tunnuksen kasvaessa myös talon hinta nousee. Tässä kohtaa **Laajenna**-kentän asetus on kätevä. Voit **Laajenna**-asetuksen avulla lisätä käytettäviksi haluamasi kentät analyysin tason asettamiseksi etsimättä uusia vaikuttajia.
 
-Tutustu siihen, miltä visualisointi näyttää, kun lisäämme **tunnuksen** **Laajenna**-asetukseen. Kun olet määrittänyt tason, jolla haluat mitata mittayksikköä, vaikuttajat tulkitaan täsmälleen samalla tavalla kuin [yhteenvetämättömissä numeerisissa sarakkeissa](https://docs.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-influencers#analyze-a-metric-that-is-numeric).
+Tutustu siihen, miltä visualisointi näyttää, kun lisäämme **tunnuksen** **Laajenna**-asetukseen. Kun olet määrittänyt tason, jolla haluat mitata mittayksikköä, vaikuttajat tulkitaan täsmälleen samalla tavalla kuin [yhteenvetämättömissä numeerisissa sarakkeissa](https://docs.microsoft.com/power-bi/visuals/power-bi-visualization-influencers#analyze-a-metric-that-is-numeric).
 
 ![Mittayksiköt-taulukko](media/power-bi-visualization-influencers/power-bi-ki-measures-analysis.png)
 

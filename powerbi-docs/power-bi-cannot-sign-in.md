@@ -3,19 +3,18 @@ title: Power BI -tukeen ei saa luotua yhteyttä
 description: Vaihtoehtoisia menetelmiä luoda Power BI -tapaus, jos käyttäjä ei voi kirjautua sisään
 author: mgblythe
 ms.author: mblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 03/12/2019
-ms.openlocfilehash: 830d75aaddd60ce0b678d6abdbeca7cd79a3ab28
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 37bb189f7792410ffdef30e79d36f94cc85478b4
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "64769834"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73874606"
 ---
 # <a name="troubleshooting-sign-in-issues-for-power-bi"></a>Power BI -kirjautumisongelmien vianmääritys
 
@@ -27,7 +26,7 @@ Jos kuitenkin olet organisaatiossasi **vuokraajan järjestelmänvalvoja** etkä 
 
 ## <a name="engage-the-support-team"></a>Käänny tukitiimin puoleen
 
-Yritä ensin luoda tukipalvelupyyntö [Power BI -tukisivulla](https://powerbi.microsoft.com/en-us/support/).
+Yritä ensin luoda tukipalvelupyyntö [Power BI -tukisivulla](https://powerbi.microsoft.com/support/).
 
 Jos et kykene pääsemään Power BI -tukisivulle, koeta luoda tukipalvelupyyntö [Office 365 (O365) -tukisivulla](https://support.office.com/home/contact).
 
@@ -50,9 +49,11 @@ Toinen mahdollisuus saada apua Microsoft-tuelta on ostaa [Microsoft Premier -tuk
 
 Jos et voi luoda viestiä yhteisön sivulle, se johtuu siitä, että myös [Power BI -yhteisöpalsta](https://community.powerbi.com/) edellyttää sinulta kirjautumista.
 
+> [!Note]
+> Lisätietoja saat [yhteisön tuesta](https://community.powerbi.com/t5/Community-Support/ct-p/PBI_CommunitySupport).
+
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
 Tässä on joitakin sivustoja, joilta voit hakea Power BI -lisätukea:
 
 * [Power BI Microsoft docs](https://docs.microsoft.com/power-bi/)
-* [Power BI -tukitapauksen luominen](https://blogs.msdn.microsoft.com/charles_sterling/2017/12/01/creating-power-bi-support-cases/)

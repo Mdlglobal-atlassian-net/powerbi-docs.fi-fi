@@ -1,6 +1,6 @@
 ---
 title: Power BI- palvelun ominaisuudet käyttöoikeustyypin mukaan
-description: 'Power BI -palvelussa käyttäjillä on määritettyjä ominaisuuksia kahdenlaisen käyttöoikeustyypin perusteella: käyttäjäkohtainen käyttöoikeus (maksuton ja Pro) ja kapasiteettipohjainen käyttöoikeus.'
+description: Power BI -palvelun käyttäjät ovat määrittäneet ominaisuuksia, jotka perustuvat käyttäjien käyttöoikeustyyppiin (ilmainen tai Pro) ja siihen, onko heidän käyttämänsä sisältö työtilassa, joka on määritetty Power BI Premium -kapasiteettiin.
 author: mgblythe
 manager: kfile
 ms.reviewer: ''
@@ -11,12 +11,12 @@ ms.date: 12/06/2018
 ms.author: mblythe
 ms.custom: seodec18
 LocalizationGroup: Get started
-ms.openlocfilehash: 6f44f4b382dacf3850cc5b3aa67f712a607468a6
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 38bf9acb76faa3c2d5d04d247edbdc46455d22e1
+ms.sourcegitcommit: 2b7beec5237a597bab2da8eb6ffe69122a5d2ed9
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65554429"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "73442780"
 ---
 # <a name="power-bi-service-features-by-license-type"></a>Power BI- palvelun ominaisuudet käyttöoikeustyypin mukaan
 
@@ -37,7 +37,7 @@ Seuraavassa on luettelo tuetuista ominaisuuksista käyttäjäkohtaisen käyttöo
 | Upota ohjelmointirajapintoja ja ohjausobjekteja |![Ominaisuus ei ole käytettävissä](media/features-license-type/not-available.png) |![Ominaisuus on käytettävissä](media/features-license-type/available.png) |
 | **Yhteistyö** | | |
 | Vertaisten välinen jakaminen |![Ominaisuus ei ole käytettävissä](media/features-license-type/not-available.png) |![Ominaisuus on käytettävissä](media/features-license-type/available.png) |
-| Sovelluksen työtilat |![Ominaisuus ei ole käytettävissä](media/features-license-type/not-available.png) |![Ominaisuus on käytettävissä](media/features-license-type/available.png) |
+| Työtilat |![Ominaisuus ei ole käytettävissä](media/features-license-type/not-available.png) |![Ominaisuus on käytettävissä](media/features-license-type/available.png) |
 | Power BI Desktopin Analysoi Excelissä -toiminto |![Ominaisuus ei ole käytettävissä](media/features-license-type/not-available.png) |![Ominaisuus on käytettävissä](media/features-license-type/available.png) |
 
 ## <a name="next-steps"></a>Seuraavat vaiheet

@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 09/15/2019
 ms.author: tebercov
-ms.openlocfilehash: f936d5df9872d6dec8862709f614b2dc28f2e414
-ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
+ms.openlocfilehash: 836dfcc0569c906b145df3e3f3d14f03c08d4938
+ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71195409"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73432153"
 ---
 # <a name="create-a-template-app-in-power-bi"></a>Mallisovelluksen luominen Power BI:ssä
 
@@ -33,19 +33,19 @@ Mallisovelluksen kehittämistä varten tarvitaan:
 - [Power BI-peruskäsitteiden](service-basic-concepts.md) tuntemus
 - Käyttöoikeudet mallisopimuksen julkiseen jakamiseen. Lisätietoja on Power BI:n [hallintaportaalin kohdassa Mallisovelluksen asetukset](service-admin-portal.md#template-apps-settings).
 
-## <a name="create-the-template-app-workspace"></a>Mallisovelluksen luonnin työtila
+## <a name="create-the-template-workspace"></a>Mallin työtilan luominen
 
-Jotta voisit luoda mallisovelluksen, jonka voi jakaa muille Power BI -vuokraajille, mallisovellus tulee luoda jossakin uusista sovellustyötiloista.
+Jotta voisit luoda mallisovelluksen, jonka voi jakaa muille Power BI -vuokraajille, mallisovellus tulee luoda jossakin uusista työtiloista.
 
-1. Valitse Power BI -palvelussa **Työtilat** > **Luo sovellustyötila**.
+1. Valitse Power BI -palvelussa **Työtilat** > **Luo työtila**.
 
-    ![Luo sovellustyötila](media/service-template-apps-create/power-bi-new-workspace.png)
+    ![Työtilan luominen](media/service-template-apps-create/power-bi-new-workspace.png)
 
-2. Valitse kohdassa **Sovelluksen työtilan luominen** **Päivitä uuteen**.
+2. Valitse kohdassa **Luo työtila** **Päivitä uuteen**.
 
     ![Uusien työtilojen kokeileminen](media/service-template-apps-create/power-bi-upgrade-new.png)
 
-3. Kirjoita sovellustyötilan nimi, kuvaus (valinnainen) ja logokuva (valinnainen).
+3. Kirjoita työtilan nimi, kuvaus (valinnainen) ja logokuva (valinnainen).
 
 4. Laajenna **Lisäasetukset**-osio ja valitse **Kehitä mallisovellus**.
 
@@ -57,9 +57,9 @@ Jotta voisit luoda mallisovelluksen, jonka voi jakaa muille Power BI -vuokraajil
 
 ## <a name="create-the-content-in-your-template-app"></a>Luo mallisovelluksesi sisältö
 
-Kuten tavallisessakin Power BI -sovellustyötilassa, seuraava tehtäväsi on luoda työtilan sisältö.  
+Kuten tavallisessakin Power BI -työtilassa, seuraava tehtäväsi on luoda työtilan sisältö.  
 
-- [Luo oma Power BI -sisältösi](power-bi-creator-landing.md) sovellustyötilassa.
+- [Luo oma Power BI -sisältösi](power-bi-creator-landing.md) työtilassa.
 
 Jos käytät Power Query -parametreja, varmista, että niiden tietolaji on määritelty hyvin (esimerkiksi teksti). Tietolajeja Mikä tahansa ja Binaarinen ei tueta.
 
@@ -69,7 +69,7 @@ Jos käytät Power Query -parametreja, varmista, että niiden tietolaji on mää
 
 Nyt kun työtilassasi on sisältöä, voit pakata sen mallisovellukseksi. Ensimmäiseksi luodaan koemallisovellus, jota voi käyttää vain organisaatiostasi käsin omalla vuokraajallasi.
 
-1. Valitse mallisovellus-työtilassa **Luo sovellus**.
+1. Valitse mallin työtilassa **Luo sovellus**.
 
     ![Luo sovellus](media/service-template-apps-create/power-bi-create-app.png)
 
@@ -133,7 +133,7 @@ URL-osoite ei muutu, kun siirryt julkaisuvaiheiden välillä. Korottaminen ei va
 
 Käydään seuraavaksi vaiheet läpi:
 
-1. Valitse mallisovellus-työtilassa **Julkaisun hallinta**.
+1. Valitse mallin työtilassa **Julkaisun hallinta**.
 
     ![Julkaisun hallinta -kuvake](media/service-template-apps-create/power-bi-release-management-icon.png)
 

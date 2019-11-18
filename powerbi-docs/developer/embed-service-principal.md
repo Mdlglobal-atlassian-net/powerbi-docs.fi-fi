@@ -3,19 +3,18 @@ title: Palvelun päänimi ja Power BI
 description: Lue ohjeet siihen, miten voit rekisteröidä sovelluksen Azure Active Directoryssä palvelun päänimellä Power BI -sisällön upottamiseksi.
 author: KesemSharabi
 ms.author: kesharab
-manager: rkarlin
 ms.reviewer: nishalit
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 03/29/2019
-ms.openlocfilehash: c77d206dbd7fa0604bc60fb4054c09f73cbe442e
-ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
+ms.openlocfilehash: 9bbba47456d9c5bed5c8cd77858b6dbaeefce5a1
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71073094"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73877665"
 ---
 # <a name="service-principal-with-power-bi"></a>Palvelun päänimi ja Power BI
 
@@ -58,8 +57,8 @@ Todentaminen palvelun päänimellä ja tavallisella päätilillä (Power BI Pro 
 |------------------------------------------------------|---------------------|-------------------|
 | Voi kirjautua Power BI -palveluun  | Kyllä | Ei |
 | Käytössä Power BI -hallintaportaalissa | Ei | Kyllä |
-| [Toimii sovellustyötilojen (v1) kanssa](../service-create-workspaces.md) | Kyllä | Ei |
-| [Toimii uusien sovellustyötilojen (v2) kanssa](../service-create-the-new-workspaces.md) | Kyllä | Kyllä |
+| [Toimii työtilojen (v1) kanssa](../service-create-workspaces.md) | Kyllä | Ei |
+| [Toimii uusien työtilojen (v2) kanssa](../service-create-the-new-workspaces.md) | Kyllä | Kyllä |
 | Edellyttää järjestelmänvalvojan oikeuksia työtilaan, jos käytetään Power BI Embeddedin kanssa | Kyllä | Kyllä |
 | Voi käyttää Power BI REST -ohjelmointirajapintoja | Kyllä | Kyllä |
 | Luomiseen edellytetään yleisen järjestelmänvalvojan oikeuksia | Kyllä | Ei |
@@ -166,7 +165,7 @@ Alla on esimerkkikomentosarja, jolla voit hakea palvelun päänimen objektitunnu
 
 ## <a name="considerations-and-limitations"></a>Huomioitavat asiat ja rajoitukset
 
-* Palvelun päänimi toimi vain [uusien sovellustyötilojen](../service-create-the-new-workspaces.md) kanssa.
+* Palvelun päänimi toimii vain [uusien työtilojen](../service-create-the-new-workspaces.md) kanssa.
 * **Omaa työtilaa** ei tueta, kun käytät palvelun päänimeä.
 * Tarvitset varattua kapasiteettia, kun siirryt hyötykäyttöön.
 * Et voi kirjautua Power BI -portaaliin palvelun päänimellä.

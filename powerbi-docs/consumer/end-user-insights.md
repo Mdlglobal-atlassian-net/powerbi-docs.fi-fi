@@ -2,7 +2,6 @@
 title: Merkityksellisten tietojen käyttäminen ja tarkasteleminen koontinäytön ruuduissa
 description: Lue, miten voit Power BI:n loppukäyttäjänä saada merkityksellisiä tietoja koontinäytön ruuduista.
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 featuredvideoid: et_MLSL2sA8
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 9/22/2019
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: c157a486b66180de1299144e670210559a53258a
-ms.sourcegitcommit: 3885ae11e695f875a82c212ca157e401db8337c4
+ms.openlocfilehash: ab37c806aaf3cd666c71dc22ee1f3d4d457647e0
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71207584"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73863394"
 ---
 # <a name="view-data-insights-on-dashboard-tiles-with-power-bi"></a>Merkityksellisten tietojen tarkasteleminen koontinäytön ruuduissa Power BI:n avulla
 Koontinäytön visualisointi[ruutujen](end-user-tiles.md) kautta voit tarkastella tietoja. Kun valitset ruudun, raportti avautuu tai [avaa usein kysytyt kysymykset](end-user-q-and-a.md). Raportissa voit suodattaa ja lajitella raportin taustalla olevaa tietojoukkoa ja perehtyä siihen tarkemmin. Kun suoritat merkityksellisiä tietoja, Power BI tarkastelee tietoja puolestasi.
@@ -31,7 +30,7 @@ Merkityksellisiä tietoja -ominaisuus on perustuu kasvavaan [edistyneiden analyy
 Kun suoritat merkitykselliset tiedot koontinäytön ruudulle, Power BI hakee vain kyseisen koontinäytön ruudun luomiseen käytetyt tiedot. 
 
 1. [Avaa koontinäyttö](end-user-dashboards.md).
-2. Osoita ruutua. Valitse kolme pistettä (...) ja sitten **Näytä merkitykselliset tiedot**. 
+2. Osoita ruutua. Valitse **Enemmän vaihtoehtoja** (...) ja valitse **Näytä merkitykselliset tiedot**. 
 
     ![kolme pistettä -valikkotila](./media/end-user-insights/power-bi-hovers.png)
 

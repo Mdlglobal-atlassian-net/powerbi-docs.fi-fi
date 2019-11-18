@@ -2,7 +2,6 @@
 title: Kommenttien lisääminen koontinäyttöihin ja raportteihin
 description: Tässä asiakirjassa kerrotaan, miten voit lisätä kommentteja koontinäyttöön, raporttiin tai visualisointiin ja miten voit keskustella työtovereiden kanssa kommenttien avulla.
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
@@ -11,14 +10,17 @@ ms.topic: conceptual
 ms.date: 09/18/2019
 ms.author: mihart
 LocalizationGroup: Consumer
-ms.openlocfilehash: f9979a852028e929b626e76534fef073feca3fd8
-ms.sourcegitcommit: 7a0ce2eec5bc7ac8ef94fa94434ee12a9a07705b
+ms.openlocfilehash: da941de8b44f3833a5f80bba648f4a185f35b36e
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71100623"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73852026"
 ---
 # <a name="add-comments-to-a-dashboard-or-report"></a>Kommenttien lisääminen koontinäyttöön tai raporttiin
+
+[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
+
 Lisää henkilökohtainen kommentti tai aloita keskustelu koontinäytöstä tai raportista työtovereidesi kanssa. **Kommentti**-ominaisuus on vain yksi tapa, jolla *kuluttaja* voi tehdä yhteistyötä muiden kanssa. 
 
 ![kommentit video](media/end-user-comment/comment.gif)
@@ -64,7 +66,7 @@ Prosessit kommenttien lisäämiseksi koontinäyttöön tai raporttiin muistuttav
 ### <a name="add-a-comment-to-a-specific-dashboard-or-report-visual"></a>Kommentin lisääminen koontinäytön tai raportin tiettyyn visualisointiin
 Sen lisäksi, että voit lisätä kommentteja koko koontinäyttöön tai koko raporttisivulle, voit lisätä kommentteja koontinäytön yksittäisiin ruutuihin ja raportin yksittäisiin visualisointeihin. Prosessit ovat samankaltaisia, ja tässä esimerkissä käytetään raporttia.
 
-1. Osoita visualisointia ja napsauta kolmea pistettä (...).    
+1. Osoita visualisointia ja valitse **Lisää vaihtoehtoja** (...).    
 2. Valitse avattavasta valikosta **Avaa kommentit**.
 
     ![Lisää kommentti on ensimmäinen vaihtoehto](media/end-user-comment/power-bi-report-comment.png)  

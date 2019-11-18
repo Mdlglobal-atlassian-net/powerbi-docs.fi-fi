@@ -8,15 +8,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 09/17/2019
+ms.date: 10/28/2019
 ms.custom: seodec18
 LocalizationGroup: Premium
-ms.openlocfilehash: c46b58369c334ff5364cee00bb5c3f8cd025adf0
-ms.sourcegitcommit: 57e45f291714ac99390996a163436fa1f76db427
+ms.openlocfilehash: e57df395fd3efe439cb6ef009cb2c7a9f3fe99f9
+ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "71305856"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73431641"
 ---
 # <a name="what-is-power-bi-premium"></a>Mikä on Power BI Premium?
 
@@ -53,7 +53,7 @@ Järjestelmänvalvojat ostavat Power BI Premium -tilaukset Microsoft 365 -hallin
 
 Power BI Premium tarjoaa sinulle *varatut kapasiteetit*. Toisin kuin jaettu kapasiteetti, jossa kuormitukset suoritetaan muiden asiakkaiden kanssa jaetuissa laskennallisissa resursseissa, varattu kapasiteetti on tarkoitettu organisaation yksinoikeudelliseen käyttöön. Se on eristetty varatuilla laskennallisilla resursseilla, jotka tarjoavat luotettavan ja tasalaatuisen suorituskyvyn isännöidylle sisällölle. 
 
-Työtilat sijaitsevat kapasiteeteissa. Kullakin Power BI -käyttäjällä on henkilökohtainen työtila, jota kutsutaan **omaksi työtilaksi**. Yhteistyön mahdollistamiseksi voidaan luoda lisää työtiloja, joita kutsutaan **sovellustyötiloiksi**. Työtilat, mukaan lukien henkilökohtaiset työtilat, luodaan oletusarvoisesti jaetussa kapasiteetissa. Kun sinulla on Premium-kapasiteetteja, sekä omat työtilat että sovellustyötilat voidaan määrittää Premium-kapasiteetteihin.
+Työtilat sijaitsevat kapasiteeteissa. Kullakin Power BI -käyttäjällä on henkilökohtainen työtila, jota kutsutaan **omaksi työtilaksi**. Yhteistyön mahdollistamiseksi voidaan luoda lisää työtiloja, joita kutsutaan **työtiloiksi**. Työtilat, mukaan lukien henkilökohtaiset työtilat, luodaan oletusarvoisesti jaetussa kapasiteetissa. Kun sinulla on Premium-kapasiteetteja, sekä omat työtilat että työtilat voidaan määrittää Premium-kapasiteetteihin.
 
 ### <a name="capacity-nodes"></a>Kapasiteetin solmut
 
@@ -71,7 +71,7 @@ Kunkin Premium-SKU:n (ja yhtä suuren A-SKU:n) resurssit ja rajoitukset on kuvat
 
 | Kapasiteetin solmut | V-ytimiä yhteensä | Taustan v-ytimet | RAM (GB) | Edustan v-ytimet | DirectQuery/live-yhteys (sekunnissa) | Mallin uudelleen latauksen parallelisointi |
 | --- | --- | --- | --- | --- | --- | --- |
-| EM1/A1 | 1 | 0.5 | 2.5 | 0.5 | 3.75 | 1 |
+| EM1/A1 | 1 | 0.5 | 3 | 0.5 | 3.75 | 1 |
 | EM2/A2 | 2 | 1 | 5 | 1 | 7.5 | 2 |
 | EM3/A3 | 4 | 2 | 10 | 2 | 15 | 3 |
 | P1/A4 | 8 | 4 | 25 | 4 | 30 | 6 |

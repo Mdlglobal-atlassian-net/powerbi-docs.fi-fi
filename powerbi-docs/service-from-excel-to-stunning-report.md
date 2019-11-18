@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/12/2019
 ms.author: maggies
 LocalizationGroup: Data from files
-ms.openlocfilehash: ed4bc9d10e3e1512aba559d77ba8729a39cb8a84
-ms.sourcegitcommit: d12bc6df16be1f1993232898f52eb80d0c9fb04e
+ms.openlocfilehash: 6c393611851e05c7c76983674f2e1de7b5454898
+ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68995123"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73020989"
 ---
 # <a name="from-excel-workbook-to-stunning-report-in-the-power-bi-service"></a>Excel-työkirjasta upeaksi raportiksi Power BI -palvelussa
 Esimiehesi haluaa raportin viimeisimmistä myyntiluvuista yhdistettynä viimeisimmän kampanjan näyttökertoihin vielä tämän päivän aikana. Uusimmat tiedot sijaitsevat kuitenkin erilaisissa kolmannen osapuolen järjestelmissä ja kannettavan tietokoneesi tiedostoissa. Aiemmin visualisointien luominen ja raportin muotoilu on vienyt tunteja. Tunnet, kuinka ahdistus alkaa vallata alaa.
@@ -111,7 +111,7 @@ Entäpä visualisointi, joka kuvaa myyntiä tuotteittain ja markkinasegmenteitt�
 
 2. Voit muuttaa kaaviotyyppiä valitsemalla haluamasi kuvakkeen **Visualisoinnit**-valikosta. Voit esimerkiksi muuttaa kaavion **pinotuksi pylväskaavioksi**. 
 
-3. Jos haluat lajitella kaavion, valitse kolme pistettä (...) > **Lajitteluperuste**.
+3. Jos haluat lajitella kaavion, valitse **Enemmän vaihtoehtoja** (...) > **Lajitteluperuste**.
 
    ![Pinottu pylväskaavio raporttieditorissa](media/service-from-excel-to-stunning-report/pbi_barchart-new.png)
 

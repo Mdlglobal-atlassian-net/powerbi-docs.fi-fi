@@ -2,27 +2,44 @@
 title: Q&A Power BI -kuluttajille
 description: Yleiskatsaus aiheeseen Power BI:n Q&A-kyselyt luonnollisella kielellä.
 author: mihart
-manager: kvivek
-ms.reviewer: ''
-ms.custom: seodec18
+ms.reviewer: mohammad ali
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 06/25/2019
+ms.date: 10/22/2019
 ms.author: mihart
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 9960ebe11271eea34245250ef5701e9a94bba744
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: 051803b3d9708289f37271afc02b7802fb52b50e
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "67408480"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73862652"
 ---
 # <a name="qa-for-power-bi-consumers"></a>Q&A Power BI -**kuluttajille**
+
+[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
+
 ## <a name="what-is-qa"></a>Mikä on Q&A?
 Joskus nopein tapa saada vastauksia tiedoista on kysyä kysymyksiä luonnollisella kielellä. Esimerkiksi ”mikä oli viime vuoden kokonaismyynti”.
 
 Q&A-toiminnolla voit tutkia tietojasi intuitiivisesti luonnollisella kielellä sekä saada vastauksia eri kaavioiden muodossa. Q&A eroaa hakukoneesta – Q&A antaa vain tuloksia Power BI:n tiedoista.
+
+## <a name="which-visualization-does-qa-use"></a>Mitä visualisointia Q&A käyttää?
+Q&A valitsee parhaan visualisoinnin näytettyjen tietojen perusteella. Joskus pohjana oleva tietojoukko on määritelty tiettynä tyyppinä tai luokkana, jolloin Q&A tietää missä muodossa tiedot kannattaa näyttää. Esimerkiksi jos tiedot on määritetty päivämäärä-tyypiksi, ne näytetään todennäköisesti viivakaaviona. Kaupungiksi luokitellut tiedot näytetään todennäköisesti karttana.
+
+Voit myös kertoa Q&A:lle, mitä visualisointia haluat käyttää, lisäämällä sen kysymykseen. Muista kuitenkin, että Q&A ei ehkä voi aina näyttää tietoja pyytämästäsi visualisointityypistä. Q&A näyttää sinulle luettelon sopivista visualisointityypeistä.
+
+## <a name="where-can-i-use-qa"></a>Missä voin käyttää Q&A:ta?
+Q&A löytyy Power BI -palvelun koontinäytöistä ja Power BI -mobiilisovelluksen koontinäytön alareunasta. Jos suunnittelija ei ole antanut sinulle muokkausoikeuksia, pystyt ainoastaan tutkimaan tietoja Q&A-toiminnon avulla, mutta et voi tallentaa sen avulla luotuja visualisointeja.
+
+![kysymysruutu](media/end-user-q-and-a/powerbi-qna.png)
+
+Q&A näkyy myös raporteissa, jos raportin *suunnittelija* on lisännyt [Q&A-visualisoinnin](../visuals/power-bi-visualization-q-and-a.md).   
+
+![Q&A-visualisointi](media/end-user-q-and-a/power-bi-q-and-a-default.png)
+
+## <a name="qa-on-dashboards"></a>Q&A koontinäytöissä
 
 **Power BI:n Q&A** on saatavilla Pro- ja Premium-käyttöoikeuksille.  [Q&A-toimintoa Power BI:n mobiilisovelluksissa](mobile/mobile-apps-ios-qna.md) ja [Q&A-toimintoa Power BI Embeddedin kanssa](../developer/qanda.md) käsitellään erillisissä artikkeleissa. Tällä hetkellä **Power BI:n Q&A** tukee vain vastaamista englanniksi luonnollisella kielellä esitettyihin kysymyksiin, tosin käytettävissä on espanjalle esikatselu, jonka Power BI:n järjestelmänvalvoja voi ottaa käyttöön.
 
@@ -33,15 +50,11 @@ Kysymyksen esittäminen on vasta alkua.  Toivottavasti tämä artikkeli auttaa s
 
 Kokemus on todella interaktiivinen … ja nopea! Muistissa oleva tallennustila tarjoaa vastauksen lähes välittömästi.
 
-## <a name="where-can-i-use-qa"></a>Missä voin käyttää Q&A:ta?
-Q&A löytyy Power BI -palvelun koontinäytöistä ja Power BI -mobiilisovelluksen koontinäytön alareunasta. Jos suunnittelija ei ole antanut sinulle muokkausoikeuksia, pystyt ainoastaan tutkimaan tietoja Q&A-toiminnon avulla, mutta et voi tallentaa sen avulla luotuja visualisointeja.
-
-![kysymysruutu](media/end-user-q-and-a/powerbi-qna.png)
 
 ## <a name="use-qa-on-a-dashboard-in-the-power-bi-service"></a>Q&A-toiminnon käyttäminen koontinäytössä Power BI -palvelussa
-Power BI -palvelussa (app.powerbi.com) koontinäyttö sisältää ruutuja, jotka on kiinnitetty yhdestä tai useammasta tietojoukosta. Voit siten esittää kysymyksiä kaikista näiden tietojoukkojen sisältämistä tiedoista. Voit näyttää koontinäytön luomiseen käytetyt raportit ja tietojoukot valitsemalla **Näytä aiheeseen liittyvät** valikkoriviltä.
+Power BI -palvelussa (app.powerbi.com) koontinäyttö sisältää ruutuja, jotka on kiinnitetty yhdestä tai useammasta tietojoukosta. Voit siten esittää kysymyksiä kaikista näiden tietojoukkojen sisältämistä tiedoista. Voit näyttää koontinäytön luomiseen käytetyt raportit ja tietojoukot valitsemalla **Näytä aiheeseen liittyvät** avattavasta **Lisää toimintoja** -valikosta.
 
-![näytä aiheeseen liittyvät -painike yläreunan valikkorivillä](media/end-user-q-and-a/power-bi-view-related.png)
+![näytä liittyvät valikkoriviltä](media/end-user-q-and-a/power-bi-q-and-a-view-related.png)
 
 ## <a name="how-do-i-start"></a>Miten pääsen alkuun?
 Tutustu ensin sisältöön. Tutustu koontinäytön ja raportin visualisointeihin. Selvitä, mitkä tietotyypit ja -alueet ovat käytettävissäsi. 
@@ -56,22 +69,69 @@ Kun olet tutustunut tietoihin, suuntaa takaisin koontinäyttöön ja aseta kohdi
 
 ![Q&A-näyttö](media/end-user-q-and-a/power-bi-screen.png) 
 
-Jo ennen kuin alat kirjoittaa, Q&A näyttää uuden näytön ehdotuksilla, jotka voivat olla avuksi kysymyksen muodostamisessa. Näet lauseet ja kysymykset, jotka sisältävät pohjana olevien tietojoukkojen taulukoiden nimet, ja saatat jopa nähdä tietojoukon omistajan luomat *suositellut** kysymykset.
+Jo ennen kuin alat kirjoittaa, Q&A näyttää uuden näytön ehdotuksilla, jotka voivat olla avuksi kysymyksen muodostamisessa. Näet lauseet ja kysymykset, jotka sisältävät pohjana olevien tietojoukkojen taulukoiden nimet, ja saatat jopa nähdä tietojoukon omistajan luomat *suositellut* kysymykset.
 
 Voit valita näistä minkä tahansa niiden lisäämiseksi kysymysruutuun ja sitten tarkentaa niitä tietyn vastauksen löytämiseksi. 
 
 Q&A käyttää myös kehotteita, automaattista täydennystä ja visuaalisia vihjeitä, kun tarvitset apua kysymysten muodostamisessa. 
 
-![video](media/end-user-q-and-a/qna4.gif) 
+<!-- ![video](../visuals/media/end-user-q-and-a/qna4.gif) -->
 
 
-### <a name="which-visualization-does-qa-use"></a>Mitä visualisointia Q&A käyttää?
-Q&A valitsee parhaan visualisoinnin näytettyjen tietojen perusteella. Joskus pohjana oleva tietojoukko on määritelty tiettynä tyyppinä tai luokkana, jolloin Q&A tietää missä muodossa tiedot kannattaa näyttää. Esimerkiksi jos tiedot on määritetty päivämäärä-tyypiksi, ne näytetään todennäköisesti viivakaaviona. Kaupungiksi luokitellut tiedot näytetään todennäköisesti karttana.
+## <a name="the-qa-visual"></a>Q&A-visualisointi
 
-Voit myös kertoa Q&A:lle, mitä visualisointia haluat käyttää, lisäämällä sen kysymykseen. Muista kuitenkin, että Q&A ei ehkä voi aina näyttää tietoja pyytämästäsi visualisointityypistä. Q&A näyttää sinulle luettelon sopivista visualisointityypeistä.
+Q&A-visualisoinnin avulla voit esittää kysymyksiä käyttämällä luonnollista kieltä ja saada vastauksia visualisoinnin muodossa. Q&A-visualisointi käyttäytyy kuin mikä tahansa muu visualisointi, joten se voidaan ristiinsuodattaa/ristiinkorostaa ja se tukee myös kirjanmerkkejä ja kommentteja. 
+
+Q&A-visualisoinnin tunnistaa sen yläosassa olevasta kysymysruudusta. Siihen voit kirjoittaa kysymyksiä luonnollisella kielellä. Q&A-visualisointia voidaan käyttää toistuvasti tietoihisi liittyvien kysymysten esittämiseen. Kun poistut raportista, Q&A-visualisointi palautuu oletusarvoonsa. 
+
+![Näyttökuva oletusarvoisestaQ&A-visualisoinnista](media/end-user-q-and-a/power-bi-q-and-a-default.png)
+
+
+## <a name="use-the-qa-visual"></a>Q&A-visualisoinnin käyttö
+Jos haluat käyttää Q&A-visualisointia, valitse jokin ehdotetuista kysymyksistä tai kirjoita oma luonnollisen kielen kysymys. 
+
+### <a name="create-a-qa-visual-by-using-a-suggested-question"></a>Luo Q&A-visualisointi käyttämällä ehdotettua kysymystä
+
+Olemme tässä valinneet **suosituimmat maantieteelliset alueet yksiköiden kokonaismäärän mukaan**. Power BI tekee parhaansa valitakseen käytettävän visualisointityypin. Tässä tapauksessa kyseessä on kartta.
+
+![Q&A-visualisoinnin kartta](media/end-user-q-and-a/power-bi-q-and-a-suggested.png)
+
+Voit kuitenkin määrittää Power BI:n käyttämään tiettyä visualisointityyppiä lisäämällä sen luonnollisen kielen kyselyyn. Muista, että kaikki visualisointityypit eivät toimi tai ole järkeviä tietojesi kanssa. Nämä tiedot eivät esimerkiksi tuota mielekästä pistekaaviota. Ne toimivat kuitenkin täytettynä karttana.
+
+![Q&A-visualisointi täytettynä karttana](media/end-user-q-and-a/power-bi-filled-map.png)
+
+### <a name="create-a-qa-visual-by-typing-a-natural-language-query"></a>Q&A-visualisoinnin luominen kirjoittamalla luonnollisen kielen kysely
+
+
+Jos et ole varma, minkä tyyppisiä kysymyksiä haluat esittää tai mitä termejä haluat käyttää, laajenna **Näytä kaikki ehdotukset** tai selaa muita raportin visualisointeja. Näin voit tutustua tietojoukon ehtoihin ja sisältöön.
+
+1. Kirjoita kysymyksesi Q&A-kenttään käyttäen luonnollista kieltä. Power BI:n automaattinen täydennys, ehdotukset ja palaute auttavat kysymyksen kirjoittamisessa.
+
+    - Punaista alleviivausta käytetään sanoille, joita Power BI ei tunnista. Power BI auttaa sinua määrittämään nämä sanat aina, kun se on mahdollista. Jos näet oikean määritelmän, valitse se avattavasta valikosta.  
+
+        ![Punainen alleviivattu termi Q&A-kysymysruudussa](media/end-user-q-and-a/power-bi-q-and-a-red.png)
+
+    - Jos mikään määrityksistä ei ole oikein, kokeile toista termiä tai valitse punainen alleviivattu sana ja pyydä raportin omistajaa lisäämään sana.
+
+        ![Kysymyksen kirjoittaminen Q&A-ruutuun](media/end-user-q-and-a/power-bi-q-and-a-owner.png)
+
+    - Kun kirjoitat kysymystä lisää, Power BI ilmoittaa, ettei se ymmärrä kysymystä, ja yrittää auttaa. Alla olevassa esimerkissä Power BI kysyy "Tarkoititko..." ja ehdottaa eri tapaa esittää kysymys käyttämällä tietojoukkosi terminologiaa. 
+
+        ![Q&A-visualisointi tarjoaa ehdotettuja korjauksia](media/end-user-q-and-a/power-bi-q-and-a-did-you-mean.png)
+
+2. Kun olet valinnut Power BI:n korjauksen, tulokset näytetään viivakaaviona. 
+
+    ![Q&A-visualisoinnin tulokset viivakaaviona](media/end-user-q-and-a/power-bi-q-and-a-line.png)
+
+
+3. Voit kuitenkin muuttaa viivankaavion toiseksi visualisointityypiksi.  
+
+    ![Q&A-visualisointi, jossa kysymykseen on lisätty "pylväskaaviona"](media/end-user-q-and-a/power-bi-q-and-a-specify-type.png)
+
 
 
 ## <a name="considerations-and-troubleshooting"></a>Huomioon otettavat seikat ja vianmääritys
+
 **Kysymys**: En näe Q&A:ta tässä raporttinäkymässä.    
 **Vastaus 1**: Jos kysymysruutua ei näy, tarkista ensin asetuksesi. Valitse hammasrataskuvake Power BI -työkalurivin oikeasta yläkulmasta.   
 ![hammasrataskuvake](media/end-user-q-and-a/power-bi-settings.png)
@@ -80,11 +140,12 @@ Valitse sitten **Asetukset** > **Koontinäytöt**. Varmista, että **Näytä Q&A
 ![Q&A:n koontinäyttöasetukset](media/end-user-q-and-a/power-bi-turn-on.png)  
 
 
-**Vastaus 2**: Raporttinäkymän *suunnittelija* tai järjestelmänvalvoja on saattanut poistaa Q&A:n käytöstä. Kysy, voitko ottaa sen takaisin käyttöön.   
+**Vastaus 2**: Joskus et voi käyttää asetuksia. Jos koontinäytön *suunnittelija* tai järjestelmänvalvojasi on poistanut Q&A:n käytöstä, tiedustele häneltä, voiko sen ottaa uudelleen käyttöön.   
 
 **Kysymys**: En saa haluttuja tuloksia, kun kirjoitan kysymyksen.    
-**Vastaus**: Ota yhteys raporttinäkymän *suunnittelijaan*. Suunnittelija voi auttaa parantamaan Q&A:n tuloksia monin eri tavoin. Suunnittelija voi esimerkiksi muuttaa tietojoukon sarakkeessa käytettäviä termejä helpommin ymmärrettäviksi (`CustFN` --> `CustomerFirstName`). Koska suunnittelija tuntee tietojoukon todella hyvin, hän voi myös keksiä sopivia kysymyksiä ja lisätä ne Q&A-pohjaan.
+**Vastaus**: Valitse, miten haluat ottaa yhteyttä raportin tai koontinäytön omistajaan. Voit tehdä tämän suoraan Q&A-koontinäytön sivulta tai Q&A-visualisoinnista. Voit myös etsiä omistajan Power BI:n otsikosta.  Suunnittelija voi auttaa parantamaan Q&A:n tuloksia monin eri tavoin. Suunnittelija voi esimerkiksi muuttaa tietojoukon sarakkeessa käytettäviä termejä helpommin ymmärrettäviksi (`CustFN` --> `CustomerFirstName`). Koska suunnittelija tuntee tietojoukon todella hyvin, hän voi myös keksiä sopivia kysymyksiä ja lisätä ne Q&A:n ehdotettuihin kysymyksiin.
 
+![Näytä yhteystiedot](media/end-user-q-and-a/power-bi-q-and-a-contact.png)
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
-[Q&A-vinkkejä Power BI:n käyttäjille](end-user-q-and-a.md)
+Lisätietoja siitä, miten raportin *suunnittelija* luo ja hallinnoi Q&A-visualisointeja, on artikkelissa [Q&A-visualisointityyppi](../visuals/power-bi-visualization-q-and-a.md).

@@ -2,7 +2,6 @@
 title: Raportin QR-koodin luominen käytettäväksi Power BI ‑mobiilisovelluksissa
 description: Power BI:n QR-koodien avulla voit yhdistää mitä tahansa todellisesta maailmasta suoraan siihen liittyviin Power BI ‑mobiilisovelluksen BI-tietoihin ilman hakutoimintoja.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 03/13/2018
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: eb2ea1fbb96138e892ed563d5999f5bc9da8e59f
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: c98f06afe2af93e32d98ff1c3147cc15b64fbb57
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61160673"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73853377"
 ---
 # <a name="create-a-qr-code-for-a-report-in-power-bi-to-use-in-the-mobile-apps"></a>Raportin QR-koodin luominen Power BI:ssä käytettäväksi mobiilisovelluksissa
 Power BI:n QR-koodien avulla voit yhdistää mitä tahansa todellisesta maailmasta suoraan siihen liittyviin BI-tietoihin – siirtymis- tai hakutoimintoja ei tarvita.
@@ -26,7 +25,7 @@ Työtoverit, joiden kanssa olet jakanut kyseisen raportin, voivat lukea QR-koodi
 
 ## <a name="create-a-qr-code-for-a-report"></a>Raportin QR-koodin luominen
 1. Avaa raportti Power BI -palvelussa.
-2. Valitse ruudun oikeasta yläkulmasta kolme pistettä (...) ja valitse sitten **Muodosta QR-koodi**. 
+2. Valitse oikeasta yläkulmasta **Enemmän vaihtoehtoja** (...) ja valitse **Muodosta QR-koodi**. 
    
     ![](media/service-create-qr-code-for-report/power-bi-create-qr-code-report.png)
 3. Näytölle avautuu valintaikkuna, jossa on QR-koodi. 
@@ -51,5 +50,5 @@ Power BI luo QR-koodin JPG-tiedostona, joka on valmis tulostettavaksi.
 * [Power BI:n yhdistäminen reaalimaailman tietoihin](consumer/mobile/mobile-apps-data-in-real-world-context.md) mobiilisovellusten avulla
 * [Power BI:n QR-koodin lukeminen mobiililaitteella](consumer/mobile/mobile-apps-qr-code.md)
 * [Ruudun QR-koodin luominen](service-create-qr-code-for-tile.md)
-* Ilmenikö kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)
+* Ilmenikö kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
 

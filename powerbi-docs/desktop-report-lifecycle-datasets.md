@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/29/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: e213bad8e7267abe0b49d1f460717dd817e9832a
-ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
+ms.openlocfilehash: de72cab51a4d43d1a07d6ada0bd77888952817ab
+ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72020488"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73429810"
 ---
 # <a name="connect-to-datasets-in-the-power-bi-service-from-power-bi-desktop"></a>Tietojoukkoihin yhdistäminen Power BI -palvelussa Power BI Desktopista
 Voit muodostaa reaaliaikaisen yhteyden jaettuun tietojoukkoon Power BI -palvelussa ja luoda useita erilaisia raportteja samasta tietojoukkoryhmästä. Tämä tarkoittaa sitä, että voit luoda täydellisen tietomallin Power BI Desktopissa ja julkaista sen Power BI -palvelussa. Sen jälkeen sinä ja muut käyttäjät voitte luoda useita erilaisia raportteja (erillisiin .pbix-tiedostoihin) samasta, yleisestä tietomallista, ja tallentaa ne eri työtiloihin. Tätä ominaisuutta kutsutaan **Power BI -palvelun reaaliaikaiseksi yhteydeksi**.
@@ -37,7 +37,7 @@ Kaikki pitävät Annan raportista ja tietojoukosta, ja tässä ongelma juuri pii
 ### <a name="connect-to-a-power-bi-service-dataset-using-a-live-connection"></a>Yhteyden muodostaminen Power BI -palvelun tietojoukkoon reaaliaikaisen yhteyden avulla
 Anna luo raportin (ja sen perustana olevan tietojoukon) ja sitten julkaisee sen **Power BI -palvelussa**. Raportti näkyy nyt hänen tiiminsä työtilassa Power BI -palvelussa. Jos Anna tallentaa sen *uuden käyttökokemuksen mukaiseen työtilaan*, hän voi määrittää muodostamisoikeudet niin, että kaikki hänen työtilaansa kuuluvat ja sen ulkopuoliset henkilöt voivat nähdä raportin ja käyttää sitä.
 
-Saat lisätietoja uudesta työtilojen käyttökokemuksesta [sovellustyötilat](service-new-workspaces.md)-kohdasta.
+Saat lisätietoja uudesta työtilojen käyttökokemuksesta [työtilat](service-new-workspaces.md)-kohdasta.
 
 Annan työtilaan kuuluvat ja sen ulkopuoliset henkilöt voivat nyt muodostaa reaaliaikaisen yhteyden Annan jaettuun tietomalliin (**Power BI -palvelun reaaliaikaisen yhteyden** avulla) ja luoda *alkuperäisestä tietojoukosta* omia yksilöllisiä raporttejaan *omissa, uuden käyttökokemuksen mukaisissa työtiloissaan*.
 

@@ -2,7 +2,6 @@
 title: Nimeä uudelleen koontinäytöt, raportit, työtilat, raporttisivut ja tietojoukot
 description: Nimeä melkein mitä tahansa uudelleen Power BI -palvelussa.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 03/01/2018
 ms.author: maggies
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 905ef263084cf531e6b38fb4640286e4d78697ce
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: de842b95c8f6e023a5207c07abb2525c5fe45878
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61273595"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73871708"
 ---
 # <a name="rename-almost-anything-in-power-bi-service"></a>Nimeä melkein mitä tahansa uudelleen Power BI -palvelussa
 Tässä artikkelissa opetetaan, miten Power BI -palvelussa nimetään uudelleen koontinäyttö, raportti, raporttisivu, työkirja, tietojoukko, sovellus ja työtila.
@@ -28,9 +27,9 @@ Tässä artikkelissa opetetaan, miten Power BI -palvelussa nimetään uudelleen 
 | Työtilan raportti |Kyllä |Ei |
 | Työtilan työkirja |Kyllä |Ei |
 | Työtilan tietojoukko |Kyllä |Ei |
-| Sovellustyötila |Kyllä, jos olet omistaja tai sinulla on järjestelmänvalvojan oikeudet |Ei |
-| Julkaistut sovellukset |Ei sovellusnäytöltä, mutta sovelluksen nimen voi muuttaa sovellustyötilassa ja julkaista uudelleen uudella nimellä, jos sinulla on järjestelmänvalvojan oikeudet |Ei |
-| Sovelluksen sisältö (koontinäyttö, raportti, työkirja ja tietojoukko) |Ei sovellusnäytöltä, mutta sovelluksen sisällön voi nimetä uudelleen sovellustyötilassa ja julkaista uudelleen uudella nimellä, jos sinulla on järjestelmänvalvojan oikeudet |Ei |
+| työtila |Kyllä, jos olet omistaja tai sinulla on järjestelmänvalvojan oikeudet |Ei |
+| Julkaistut sovellukset |Ei sovellusnäytöltä, mutta sovelluksen nimen voi muuttaa työtilassa ja julkaista uudelleen uudella nimellä, jos sinulla on järjestelmänvalvojan oikeudet |Ei |
+| Sovelluksen sisältö (koontinäyttö, raportti, työkirja ja tietojoukko) |Ei sovellusnäytöltä, mutta sovelluksen sisällön voi nimetä uudelleen työtilassa ja julkaista uudelleen uudella nimellä, jos sinulla on järjestelmänvalvojan oikeudet |Ei |
 | Sisältö **Jaettu kanssani** -kohdissa |Ei |Ei |
 
 ## <a name="rename-a-dashboard-report-or-workbook"></a>Nimeä uudelleen koontinäyttö, raportti tai työkirja
@@ -45,7 +44,7 @@ Tässä artikkelissa opetetaan, miten Power BI -palvelussa nimetään uudelleen 
 1. Aloita työtilasta ja valitse **Tietojoukot**-välilehti.
    
    ![Työtilan Tietojoukot-välilehti](media/service-rename/power-bi-ellipses.png)
-2. Vie hiiren osoitin uudelleen nimettävän kohteen päälle, valitse kolme pistettä (...) ja valitse **Nimeä uudelleen**.  
+2. Vie hiiren osoitin uudelleen nimettävän kohteen päälle, valitse **Enemmän vaihtoehtoja** (...) ja valitse **Nimeä uudelleen**.  
    
       ![Valitse Nimeä uudelleen](media/service-rename/power-bi-rename-datasets.png)
    
@@ -57,11 +56,11 @@ Tässä artikkelissa opetetaan, miten Power BI -palvelussa nimetään uudelleen 
    
      ![Nimeä ruutu uudelleen](media/service-rename/power-bi-rename.png)
 
-## <a name="rename-an-app-workspace"></a>Nimeä sovellustyötila uudelleen
-Sovellustyötilan voi nimetä uudelleen kuka tahansa, jolla on järjestelmänvalvojan oikeudet.
+## <a name="rename-a-workspace"></a>Nimeä työtila uudelleen
+Työtilan voi nimetä uudelleen kuka tahansa, jolla on järjestelmänvalvojan oikeudet.
 
 1. Aloita siitä työtilasta, jonka haluat nimetä uudelleen.
-2. Valitse oikeasta yläkulmasta kolme pistettä (...) ja valitse **Muokkaa työtilaa**. Jos et näe tätä asetusta, sinulla ei ole oikeutta nimetä tätä työtilaa uudelleen. 
+2. Valitse oikeasta yläkulmasta **Enemmän vaihtoehtoja** (...) ja valitse **Muokkaa työtilaa**. Jos et näe tätä asetusta, sinulla ei ole oikeutta nimetä tätä työtilaa uudelleen. 
    
     ![Valitse Muokkaa työtilaa](media/service-rename/power-bi-edit-workspace.png)
 3. Kirjoita uusi työtilan nimi ja valitse **Tallenna**.
@@ -85,7 +84,7 @@ Etkö pidä Power BI -raporttisi sivun nimestä?  Uusi nimi on vain napsautuksen
 
 ## <a name="considerations-and-troubleshooting"></a>Huomioon otettavat seikat ja vianmääritys
 * Jos uudelleen nimettävä kohde on jaettu kanssasi tai kuuluu sisältöpakettiin, et näe hammaspyöräkuvaketta etkä pääse asetuksiin.
-* Jos et näe **Tietojoukot**-välilehdessä kolmea pistettä (...), laajenna selainikkuna.
+* Jos et näe **Tietojoukot**-välilehdessä **Enemmän vaihtoehtoja**  (...), laajenna selainikkuna.
 
-Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
+Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](https://community.powerbi.com/)
 

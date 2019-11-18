@@ -2,19 +2,18 @@
 title: Raporttien tutkiminen Power BI -mobiilisovelluksissa
 description: Lue lisätietoja raporttien tarkastelemisesta ja käsittelemisestä Power BI -mobiilisovelluksissa puhelimella tai tabletilla. Voit luoda raportteja Power BI -palvelussa tai Power BI Desktopissa ja käsitellä niitä sitten mobiilisovelluksissa.
 author: mshenhav
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 08/09/2019
 ms.author: mshenhav
-ms.openlocfilehash: 166b7d88e6ab55481ec56b0cf4f91628cd141bef
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: d4b9a9aeda00dd7f16690d1e92336f5b63adf1da
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "69985754"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73869757"
 ---
 # <a name="explore-reports-in-the-power-bi-mobile-apps"></a>Raporttien tutkiminen Power BI -mobiilisovelluksissa
 Koskee seuraavia:
@@ -45,7 +44,7 @@ Power BI -mobiilisovelluksissa on kaksi kuvaketta raportteja varten:
 > [!NOTE]
 > Kun pidät puhelinta vaaka-asennossa, saat aina vaakasuuntaisen asettelun, vaikka raporttisivulla olisi puhelinasettelu.
 
-Jos haluat päästä raporttiin raporttinäkymästä, napauta kolmea pistettä (...) raporttinäkymän ruudun oikeassa yläkulmassa ja valitse **Avaa raportti**:
+Jos haluat päästä raporttiin raporttinäkymästä, napauta **Enemmän vaihtoehtoja** (...) raporttinäkymän ruudun oikeassa yläkulmassa ja valitse **Avaa raportti**:
   
   ![Raportin avaaminen](./media/mobile-reports-in-the-mobile-apps/power-bi-android-open-report-tile.png)
   
@@ -59,7 +58,7 @@ Napautus on sama kuin napsautus hiirellä. Jos siis haluat ristiinkorostaa rapor
 Kun napautat osittajan arvoa, arvo valitaan ja raportin muut osat ositetaan kyseisen arvon mukaan.
 Kun napautat linkkiä, painiketta tai kirjanmerkkiä, raportin tekijän määrittämä toiminto suoritetaan.
 
-Olet luultavasti huomannut, että kun napautat visualisointia, näkyviin tulee reuna. Reunan oikeassa yläkulmassa on kolme pistettä (...). Jos napautat kolmea pistettä, näkyviin tulee valikko täynnä toimintoja, joita voit käyttää visualisoinnissa:
+Olet luultavasti huomannut, että kun napautat visualisointia, näkyviin tulee reuna. Reunan oikeassa yläkulmassa on **Enemmän vaihtoehtoja** (...). Jos napautat kolmea pistettä, näkyviin tulee valikko täynnä toimintoja, joita voit käyttää visualisoinnissa:
 
 ![Visualisointi ja valikko](./media/mobile-reports-in-the-mobile-apps/report-visual-menu.png)
 
@@ -92,7 +91,7 @@ Lue lisätietoja [porautumisen lisäämisestä Power BI Desktopiin](../../deskto
    
    
 ### <a name="using-the-actions-in-the-report-footer"></a>Raportin alatunnisteessa olevien toimintojen käyttäminen
-Raportin alatunnisteessa on toimintoja, joita voi käyttää nykyisellä raporttisivulla tai koko raportissa. Alatunnisteen kautta pääsee nopeasti yleisimmin käytettyihin toimintoihin. Voit käyttää muita toimintoja napauttamalla kolmea pistettä (...):
+Raportin alatunnisteessa on toimintoja, joita voi käyttää nykyisellä raporttisivulla tai koko raportissa. Alatunnisteen kautta pääsee nopeasti yleisimmin käytettyihin toimintoihin. Voit käyttää muita toimintoja napauttamalla **Enemmän vaihtoehtoja** (...):
 
 ![Raportin alatunniste](./media/mobile-reports-in-the-mobile-apps/report-footer.png)
 
@@ -105,7 +104,7 @@ Voit liikkua raporttisivujen välillä liikkuminen pyyhkäisemällä näytön re
 - Näytä kaikki raportin toiminnot.
 
 #### <a name="all-report-actions"></a>Kaikki raportin toiminnot
-Kun napautat kolmea pistettä (...) raportin alatunnisteessa, näet kaikki toiminnot, jotka voit suorittaa raportissa:
+Kun napautat **Enemmän vaihtoehtoja** (...) raportin alatunnisteessa, näet kaikki toiminnot, jotka voit suorittaa raportissa:
 
 
 ![Kaikki raportin toiminnot](./media/mobile-reports-in-the-mobile-apps/report-all-actions.png)
@@ -124,5 +123,5 @@ Esimerkki:
 ## <a name="next-steps"></a>Seuraavat vaiheet
 * [Puhelimelle optimoitujen Power BI -raporttien tarkasteleminen ja käyttäminen](mobile-apps-view-phone-report.md)
 * [Puhelimille optimoidun raporttiversion luominen](../../desktop-create-phone-report.md)
-* Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)
+* Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
 

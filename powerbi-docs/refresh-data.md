@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/14/2019
 ms.author: mblythe
 LocalizationGroup: Data refresh
-ms.openlocfilehash: f5fe835d2ec423b596460a81ccb2a406b306c3c5
-ms.sourcegitcommit: 549401b0e1fad15c3603fe7f14b9494141fbb100
+ms.openlocfilehash: 948776a12af2d99da2d84d07c9298f9ec0558c7b
+ms.sourcegitcommit: 2b7beec5237a597bab2da8eb6ffe69122a5d2ed9
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "72307928"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "73442939"
 ---
 # <a name="data-refresh-in-power-bi"></a>Tietojen päivittäminen Power BI:ssä
 
@@ -93,14 +93,14 @@ Power BI:n päivitystoiminto voi koostua useista päivitystyypeistä, mukaan luk
 
 #### <a name="data-refresh"></a>Tietojen uudelleenlataus
 
-Power BI -käyttäjille tietojen päivittäminen tarkoittaa yleensä tietojen tuomista alkuperäisistä tietolähteistä tietojoukkoon joko ajoitetun päivityksen perusteella tai pyydettäessä. Voit suorittaa useita tietojoukkojen päivityksiä päivittäin. Tämä saattaa olla tarpeen, jos pohjana olevat tiedot muuttuvat usein. Power BI:ssä jaettujen kapasiteettien tietojoukot voidaan päivittää päivän aikana enintään kahdeksan kertaa. Jos tietojoukko on Premium-kapasiteetissa, voit päivittää sen enintään 48 kertaa päivässä. Katso lisätietoja Ajoitettu päivitys -kohdasta alempana tässä artikkelissa.
+Power BI -käyttäjille tietojen päivittäminen tarkoittaa yleensä tietojen tuomista alkuperäisistä tietolähteistä tietojoukkoon joko ajoitetun päivityksen perusteella tai pyydettäessä. Voit suorittaa useita tietojoukkojen päivityksiä päivittäin. Tämä saattaa olla tarpeen, jos pohjana olevat tiedot muuttuvat usein. Power BI:ssä jaettujen kapasiteettien tietojoukot voidaan päivittää päivän aikana enintään kahdeksan kertaa. Jos tietojoukko on Premium-kapasiteetissa, voit ajoittaa päivityksen enintään 48 kertaa päivässä tietojoukon asetuksissa. Katso lisätietoja Ajoitettu päivitys -kohdasta alempana tässä artikkelissa.
 
-Huomaa, että päivityksen päivärajoitus koskee ajoitettujen ja pyydettyjen päivitysten määrää yhteensä. Voit käynnistää pyydetyn päivityksen valitsemalla **Päivitä nyt** tietojoukon valikosta seuraavassa näyttökuvassa esitetyllä tavalla. Voit myös käynnistää tietojen päivittämisen ohjelmallisesti Power BI:n REST-ohjelmointirajapinnan avulla. Jos olet kiinnostunut oman päivitysratkaisusi kehittämisestä, katso kohta [Tietojoukot – Tietojoukkojen päivittäminen](/rest/api/power-bi/datasets/refreshdataset).
+Huomaa, että päivittäisten päivitysten jaetun kapasiteetin rajoitus koskee ajoitettujen ja ohjelmointirajapintapäivitysten määrää yhteensä. Voit myös käynnistää pyydetyn päivityksen valitsemalla **Päivitä nyt** tietojoukon valikosta seuraavassa näyttökuvassa esitetyllä tavalla. Pyydetyt päivitykset eivät sisälly päivitysrajoitukseen. Huomaathan myös, että Premium-kapasiteetissa olevat tietojoukot eivät aseta rajoituksia ohjelmointirajapintapäivityksille. Jos olet kiinnostunut oman päivitysratkaisusi kehittämisestä Power BI REST API:n avulla, katso kohta [Tietojoukot – Tietojoukkojen päivittäminen](/rest/api/power-bi/datasets/refreshdataset).
 
 ![Päivitä nyt](media/refresh-data/refresh-now.png)
 
 > [!NOTE]
-> Tietojen päivityksen on oltava valmis kahden tunnin kuluessa. Jos tietojoukkosi vaatii tätä pidempää päivitystoimintoa, harkitse tietojoukon siirtämistä Premium-kapasiteettiin. Premiumissa päivityksen enimmäiskesto on viisi tuntia.
+> Tietojen päivityksen on oltava valmis kahden tunnin kuluessa jaetussa kapasiteetissa. Jos tietojoukkosi vaatii tätä pidempää päivitystoimintoa, harkitse tietojoukon siirtämistä Premium-kapasiteettiin. Premiumissa päivityksen enimmäiskesto on viisi tuntia.
 
 #### <a name="onedrive-refresh"></a>OneDrive-päivittäminen
 
@@ -134,7 +134,7 @@ Tietojen päivittämisen jälkeen aiemmat välimuistiin tallennetut kyselytuloks
 
 #### <a name="tile-refresh"></a>Ruudun päivitys
 
-Power BI ylläpitää jokaiselle ruudun visualisoinnille välimuistia raporttinäkymässäsi ja päivittää ruudun välimuistit ennakoivasti tietojen muuttuessa. Toisin sanoen ruutu päivitetään automaattisesti tietojen päivittämisen jälkeen. Tämä pätee sekä ajoitettuihin päivityksiin että pyydettyihin päivityksiin. Voit myös pakottaa ruudun päivityksen valitsemalla kolmen pisteen valikon (...) raporttinäkymän oikeasta yläkulmasta ja valitsemalla **Päivitä raporttinäkymän ruudut**.
+Power BI ylläpitää jokaiselle ruudun visualisoinnille välimuistia raporttinäkymässäsi ja päivittää ruudun välimuistit ennakoivasti tietojen muuttuessa. Toisin sanoen ruutu päivitetään automaattisesti tietojen päivittämisen jälkeen. Tämä pätee sekä ajoitettuihin päivityksiin että pyydettyihin päivityksiin. Voit myös pakottaa ruudun päivityksen valitsemalla **Lisää vaihtoehtoja** (...) raporttinäkymän oikeasta yläkulmasta ja valitsemalla **Päivitä raporttinäkymän ruudut**.
 
 ![Päivitä koontinäytön ruudut](media/refresh-data/refresh-dashboard-tiles.png)
 

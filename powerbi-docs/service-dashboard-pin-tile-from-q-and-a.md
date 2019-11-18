@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/02/2018
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 33598798104d88f3044a6689effa54e9b4256274
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: e75c9b86b20eda2de630f2b27caa6b88a687fbb4
+ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61139223"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73432077"
 ---
 # <a name="pin-a-tile-to-a-dashboard-from-qa"></a>Ruudun kiinnittäminen koontinäyttöön Q&A:sta
 ## <a name="how-to-pin-a-tile-from-qa"></a>Ohjeet ruudun kiinnittämiseen Q&A:sta
@@ -52,7 +52,7 @@ Avaa seuraamista varten [Jälleenmyyntianalyysimalli](sample-retail-analysis.md)
    ![koontinäyttö ja ruudut](media/service-dashboard-pin-tile-from-q-and-a/power-bi-pinned.png)
 
 ## <a name="considerations-and-troubleshooting"></a>Huomioon otettavat seikat ja vianmääritys
-* Kun alat kirjoittaa kysymystä, Q&A alkaa heti hakea parasta vastausta kaikista tietojoukoista, jotka liittyvät nykyiseen koontinäyttöön.  Nykyinen koontinäyttö on yläreunan siirtymispalkissa lueteltu koontinäyttö. Esimerkiksi tämä kysymys esitetään Jälleenmyyntianalyysimalli**Retail Analysis Sample**-koontinäytössä, joka on osa **mihart**-sovellustyötilaa.
+* Kun alat kirjoittaa kysymystä, Q&A alkaa heti hakea parasta vastausta kaikista tietojoukoista, jotka liittyvät nykyiseen koontinäyttöön.  Nykyinen koontinäyttö on yläreunan siirtymispalkissa lueteltu koontinäyttö. Esimerkiksi tämä kysymys esitetään Jälleenmyyntianalyysimalli**Retail Analysis Sample**-koontinäytössä, joka on osa **mihart**-työtilaa.
 
   ![navigointipolut](media/service-dashboard-pin-tile-from-q-and-a/power-bi-navbar.png)
 * **Mistä Q&A tietää, mitä tietojoukkoja pitää käyttää**?  Q&A pääsee käyttämään kaikkia tietojoukkoja, joista on vähintään yksi visualisointi kiinnitettynä kyseiseen koontinäyttöön.

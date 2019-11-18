@@ -2,7 +2,6 @@
 title: Johdanto tietojoukkojen käyttöön eri työtiloissa (esikatselu)
 description: Lue ohjeet siihen, miten voit jakaa tietojoukon koko organisaation käyttäjien kanssa. Tämän ansiosta he voivat luoda omissa työtiloissaan raportteja, jotka perustuvat sinun tietojoukkoosi.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: chbraun
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/01/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: e086cc89a24760bce0c4a45efd558dc47495bd04
-ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
+ms.openlocfilehash: d30a8012161934ada4ff3cb2ce6852fe62f48892
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72020778"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73877188"
 ---
 # <a name="intro-to-datasets-across-workspaces-preview"></a>Johdanto tietojoukkojen käyttöön eri työtiloissa (esikatselu)
 
@@ -62,7 +61,7 @@ Jaettuihin tietojoukkoihin perustuvien toimintojen ja ominaisuuksien käyttöoik
 
 ## <a name="considerations-and-limitations"></a>Huomioitavat asiat ja rajoitukset
 
-- Sovelluksen julkaisijana sinun on varmistettava, että yleisösi voi käyttää sovellustyötilan ulkopuolisia tietojoukkoja. Muussa tapauksessa käyttäjät voivat kohdata ongelmia käyttäessään sovellustasi: raportteja ei voi avata ilman tietojoukon käyttöoikeutta, ja koontinäytön ruudut näkyvät lukittuina. Käyttäjät eivät myöskään pysty avaamaan sovellusta, jos ensimmäinen siirtymiskohde on raportti, jolla ei ole tietojoukon käyttöoikeutta.
+- Sovelluksen julkaisijana sinun on varmistettava, että yleisösi voi käyttää työtilan ulkopuolisia tietojoukkoja. Muussa tapauksessa käyttäjät voivat kohdata ongelmia käyttäessään sovellustasi: raportteja ei voi avata ilman tietojoukon käyttöoikeutta, ja koontinäytön ruudut näkyvät lukittuina. Käyttäjät eivät myöskään pysty avaamaan sovellusta, jos ensimmäinen siirtymiskohde on raportti, jolla ei ole tietojoukon käyttöoikeutta.
 - Raportin luominen eri työtilan tietojoukon pohjalta edellyttää uudenlaisia työtiloja molemmissa päissä: raportin täytyy olla uudessa työtilassa ja tietojoukon täytyy olla uudessa työtilassa.
 - Perinteisessä työtilassa tietojoukkojen etsintätoiminnossa näytetään vain nykyisen työtilan tietojoukot.
 - Julkaise verkkoon -toiminto ei tarkoituksella toimi jaettuun tietojoukkoon perustuvassa raportissa.
@@ -73,4 +72,4 @@ Jaettuihin tietojoukkoihin perustuvien toimintojen ja ominaisuuksien käyttöoik
 - [Tietojoukkojen ylentäminen](service-datasets-promote.md)
 - [Tietojoukkojen sertifioiminen](service-datasets-certify.md)
 - [Tietojoukkojen käytön hallinta eri työtiloissa](service-datasets-admin-across-workspaces.md)
-- Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)
+- Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)

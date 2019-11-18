@@ -1,5 +1,5 @@
 ---
-title: Tietojen muotoilu ja yhdistäminen useista lähteistä
+title: 'Opetusohjelma: Tietojen muotoilu ja yhdistäminen Power BI Desktopissa'
 description: Tässä opetusohjelmassa opit tietojen muotoilun ja yhdistämisen Power BI Desktopissa
 author: davidiseminger
 manager: kfile
@@ -7,234 +7,301 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: tutorial
-ms.date: 05/08/2019
+ms.date: 10/18/2019
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 2835dd34ce5ba2d7bc6be8659b87eb1f550fdc28
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 19e0fa75426cd3e3f72ce9c01712b8d1c52e4abf
+ms.sourcegitcommit: 17f45a81b0dcbf9e3f1fb2a551584170baecd320
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65514585"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72922574"
 ---
 # <a name="tutorial-shape-and-combine-data-in-power-bi-desktop"></a>Opetusohjelma: Tietojen muotoilu ja yhdistäminen Power BI Desktopissa
 
-**Power BI Desktopilla** voit muodostaa yhteyksiä moniin erilaisiin tietolähteisiin ja muotoilla sitten tietoja tarpeidesi mukaisesti. Näin voit luoda visuaalisia raportteja, joita voit jakaa muille. Tietojen *muotoileminen* tarkoittaa tietojen muuntamista, esimerkiksi sarakkeiden tai taulukoiden nimeämistä uudelleen, tekstin muuntamista luvuiksi, rivien poistamista, ensimmäisen rivin määrittämistä otsikoiksi ja niin edelleen. Tietojen *yhdistäminen* tarkoittaa kahden tai useamman tietolähteen yhdistämistä, tietojen muotoilua tarvittaessa ja sitten tietojen yhdistämistä yhdeksi hyödylliseksi kyselyksi.
+Power BI Desktopilla voit muodostaa yhteyksiä moniin erilaisiin tietolähteisiin ja muotoilla sitten tietoja tarpeidesi mukaisesti. Näin voit luoda visuaalisia raportteja, joita voit jakaa muille. Tietojen *muotoileminen* tarkoittaa tietojen muuntamista: sarakkeiden tai taulukoiden nimeämistä uudelleen, tekstin muuntamista luvuiksi, rivien poistamista, ensimmäisen rivin määrittämistä otsikoiksi ja niin edelleen. Tietojen *yhdistäminen* tarkoittaa kahden tai useamman tietolähteen yhdistämistä, tietojen muotoilua tarvittaessa ja sitten tietojen yhdistämistä hyödylliseksi kyselyksi.
 
 Tässä opetusohjelmassa opit:
 
-* Tietojen muotoilun käyttämällä **kyselyeditoria**
-* Yhdistäminen tietolähteeseen
-* Yhdistäminen toiseen tietolähteeseen
-* Kyseisten tietolähteiden yhdistäminen ja tietomallien luominen raportissasi käytettäviksi
+* muotoilemaan tietoja käyttämällä kyselyeditoria
+* yhdistämään eri tietolähteisiin
+* yhdistämään kyseiset tietolähteet ja luomaan tietomallin raportissasi käytettäviksi.
 
-Tässä opetusohjelmassa näytetään, miten voit muotoilla kyselyä Power BI Desktopilla, sekä tuodaan esiin joitain yleisimpiä tehtäviä. Tässä käytetty kysely kuvataan tarkemmin ohjeartikkelissa [Power BI Desktopin käytön aloittaminen](desktop-getting-started.md), josta saat myös ohjeet kyselyn luomiseen kokonaan itse.
+Tässä opetusohjelmassa näytetään, miten voit muotoilla kyselyä Power BI Desktopilla, sekä tuodaan esiin yleisimpiä tehtäviä. Tässä käytetty kysely kuvataan tarkemmin ohjeartikkelissa [Power BI Desktopin käytön aloittaminen](desktop-getting-started.md), josta saat myös ohjeet kyselyn luomiseen kokonaan itse.
 
-Kannattaa huomioida, että Power BI Desktopin **kyselyeditorissa** käytetään runsaasti hiiren kakkospainikkeella avattavien valikoiden toimintoja sekä valintanauhan toimintoja. Useimmat toiminnot, jotka ovat valittavissa **Muunna**-valintanauhassa, ovat käytettävissä myös napsauttamalla kohdetta (esimerkiksi saraketta) hiiren kakkospainikkeella ja valitsemalla sitten toiminto näyttöön avautuvasta valikosta.
+Power BI Desktopin kyselyeditorissa käytetään runsaasti hiiren kakkospainikkeella avattavien valikoiden toimintoja sekä **Muunna**-valintanauhan toimintoja. Useimmat toiminnot, jotka ovat valittavissa valintanauhassa, ovat käytettävissä myös napsauttamalla kohdetta, esimerkiksi saraketta, hiiren kakkospainikkeella ja valitsemalla sitten toiminto näyttöön avautuvasta valikosta.
 
 ## <a name="shape-data"></a>Tietojen muotoileminen
-Kun muotoilet tietoja kyselyeditorissa, annat vaiheittaiset ohjeet (jotka kyselyeditori toteuttaa puolestasi) tietojen muokkaamiseksi, kun kyselyeditori lataa ja näyttää tiedot. Tämä ei vaikuta alkuperäiseen tietolähteeseen, sillä vain tätä tietonäkymää muokataan eli *muotoillaan*.
+Kun muotoilet tietoja kyselyeditorissa, annat kyselyeditorille tietojen muokkaamiseksi vaiheittaiset ohjeet, jotka se toteuttaa puolestasi tietojen lataamiseksi ja näyttämiseksi. Tämä ei vaikuta alkuperäiseen tietolähteeseen, sillä vain tätä tietonäkymää muokataan eli *muotoillaan*.
 
-Määrittämäsi vaiheet (esimerkiksi taulukon nimeäminen uudelleen, tietotyypin muuntaminen tai sarakkeiden poistaminen) kirjataan kyselyeditoriin. Nämä vaiheet suoritetaan sitten aina, kun kysely muodostaa yhteyden tietolähteeseen, jotta tiedot muotoillaan aina määrittämälläsi tavalla. Tämä prosessi suoritetaan aina, kun käytät Power BI Desktopin kyselyeditoria ja kun joku käyttää jaettua kyselyäsi esimerkiksi **Power BI** -palvelussa. Vaiheet kirjataan järjestyksessä **Kyselyasetukset**-ruudun **Käytössä olevat vaiheet** -kohtaan.
+Kyselyeditori kirjaa määrittämäsi vaiheet (esimerkiksi taulukon nimeäminen uudelleen, tietotyypin muuntaminen tai sarakkeen poistaminen). Aina, kun tämä kysely muodostaa yhteyden tietolähteeseen, kyselyeditori suorittaa nämä vaiheet, niin että tiedot muotoillaan aina määrittämälläsi tavalla. Tämä prosessi suoritetaan aina, kun käytät kyselyeditoria ja kun joku käyttää jaettua kyselyäsi esimerkiksi Power BI -palvelussa. Vaiheet kirjataan järjestyksessä **Kyselyasetukset**-ruudun **Käytössä olevat vaiheet** -kohtaan. Käymme läpi jokaisen näistä vaiheista seuraavissa kappaleissa.
 
-Seuraavasta kuvasta näet **Kyselyasetukset**-ruudun kyselylle, jota on muotoiltu. Käymme läpi kaikki nämä vaiheet seuraavissa kappaleissa.
+![Käytössä olevat vaiheet kyselyasetuksissa](media/desktop-shape-and-combine-data/shapecombine_querysettingsfinished2.png)
 
-![](media/desktop-shape-and-combine-data/shapecombine_querysettingsfinished2.png)
+Käytämme tässä esimerkissä [Power BI Desktopin käytön aloittaminen](desktop-getting-started.md) -artikkelista tuttuja eläköitymistietoja, jotka löysimme muodostamalla yhteyden verkkotietolähteeseen. Muotoilemme tässä esimerkissä näitä tietoja omiin tarpeisiimme. Lisäämme mukautetun sarakkeen, jolla lasketaan sijoitus sillä perusteella, että kaikki tiedot ovat yhtä tärkeitä, ja verrataan tätä saraketta olemassa olevaan **Rank**-sarakkeeseen.  
 
-Käytämme tässä esimerkissä [Power BI Desktopin käytön aloittaminen](desktop-getting-started.md) -artikkelista tuttuja eläköitymistietoja, jotka löysimme muodostamalla yhteyden verkkotietolähteeseen. Muotoilemme tässä esimerkissä näitä tietoja omiin tarpeisiimme.
+1. Valitse **Lisää sarake**-valintanauhasta **Mukautettu sarake**, jonka avulla voit lisätä mukautetun sarakkeen.
 
-Aloitetaan lisäämällä mukautettu sarake, jolla lasketaan sijoitus sillä perusteella, että kaikki tiedot ovat yhtä tärkeitä, ja verrataan tätä olemassa olevaan _Rank_-sarakkeeseen.  Tässä on **Lisää sarake** -valintanauha, jossa on **Mukautettu sarake** -painikkeeseen osoittava nuoli. Tällä painikkeella voit lisätä mukautetun sarakkeen.
+    ![Valitse mukautettu sarake](media/desktop-shape-and-combine-data/shapecombine_customcolumn.png)
 
-![](media/desktop-shape-and-combine-data/shapecombine_customcolumn.png)
+1. Kirjoita **Mukautettu sarake** -ikkunan **Uuden sarakkeen nimi** -kohtaan _New Rank_. Lisää **Mukautettu sarakekaava** -kohtaan seuraavat tiedot:
 
-Kirjoita **Mukautettu sarake** -valintaikkunan **Uuden sarakkeen nimi** -kohtaan _New Rank_ ja kirjoita **Mukautettu sarakekaava** -kohtaan seuraava:
-
+    ```
     ([Cost of living] + [Weather] + [Health care quality] + [Crime] + [Tax] + [Culture] + [Senior] + [#"Well-being"]) / 8
+    ```
+ 
+1. Varmista, että tilailmoitus on *Syntaksivirheitä ei ole havaittu*, ja valitse **OK**.
 
-Varmista, että tilailmoituksessa lukee _Syntaksivirheitä ei ole havaittu._ Valitse sitten **OK**.
+    ![Mukautettu sarake -sivu, jossa ei ole syntaksivirheitä](media/desktop-shape-and-combine-data/shapecombine_customcolumndialog.png)
 
-![](media/desktop-shape-and-combine-data/shapecombine_customcolumndialog.png)
+1. Jotta sarakkeiden tiedot pysyvät johdonmukaisena, muunna uudet sarakearvot kokonaisluvuiksi. Voit vaihtaa arvot napsauttamalla sarakeotsikkoa hiiren kakkospainikkeella ja valitsemalla sitten **Muuta tyyppi \> Kokonaisluku**. 
 
-Jotta sarakkeiden tiedot pysyvät johdonmukaisena, muunnamme uudet sarakearvot kokonaisluvuiksi. Voit vaihtaa arvot napsauttamalla sarakeotsikkoa hiiren kakkospainikkeella ja valitsemalla **Muuta tyyppi \> Kokonaisluku**. 
+    Jos haluat valita useita sarakkeita, valitse sarake, paina **VAIHTO**-näppäin pohjaan, valitse vierekkäisiä sarakkeita ja napsauta sitten sarakeotsikkoa hiiren kakkospainikkeella. Painamalla **CTRL**-näppäintä valitessasi voit valita kerralla useita sarakkeita, jotka eivät ole vierekkäin.
 
-Jos haluat valita useita sarakkeita, valitse ensimmäinen sarake, paina **VAIHTO**-näppäin pohjaan, valitse vierekkäisiä sarakkeita ja vaihda sitten kaikki valitut sarakkeet napsauttamalla hiiren kakkospainikkeella jotain valittua sarakeotsikkoa. Painamalla **CTRL**-näppäintä valitessasi voit valita kerralla useita sarakkeita, jotka eivät ole vierekkäin.
+    ![Valitse Kokonaisluku-sarakkeen tiedot](media/desktop-shape-and-combine-data/shapecombine_changetype2.png)
 
-![](media/desktop-shape-and-combine-data/shapecombine_changetype2.png)
+1. Jos haluat *muuntaa* sarakkeen tietotyyppejä, eli muuntaa nykyisen tietotyypin toiseksi, valitse **Tietotyyppi teksti** **Muunna**-valintanauhasta. 
 
-*Muunna*-valintanauhassa voit myös **muuntaa** sarakkeiden tietotyyppejä. Tässä on **Muunna**-valintanauha, jossa on **Tietotyyppi**-painikkeeseen osoittava nuoli. Tällä painikkeella voit muuntaa tietotyypin toiseksi.
+   ![Valitse Tietotyyppi teksti](media/desktop-shape-and-combine-data/queryoverview_transformribbonarrow.png)
 
-![](media/desktop-shape-and-combine-data/queryoverview_transformribbonarrow.png)
+1. Kaikki tietojen muotoiluvaiheet kirjataan **Kyselyasetukset**-ruudun **Käytössä olevat vaiheet** -luetteloon. Jos haluat poistaa vaiheen muotoiluprosessista, valitse haluamasi vaiheen vasemmalta puolelta **X**. 
 
-Ota huomioon, että kaikki tietojen muotoiluvaiheet kirjataan **Kyselyasetukset**-ruudun **Käytössä olevat vaiheet** -kohtaan. Jos haluat poistaa vaiheen muotoiluprosessista, valitse haluamasi vaiheen vasemmalta puolelta **X**. Seuraavassa kuvassa **Käytössä olevat vaiheet** -kohta näyttää tähän mennessä määritetyt vaiheet: yhdistämisen verkkosivustoon (**Source**), taulukon valinnan (**Navigation**) ja sen, että taulukon lataamisen yhteydessä kyselyeditori vaihtoi automaattisesti tekstipohjaisten lukusarakkeiden *Teksti*-tietotyypin *Kokonaisluku*-tietotyypiksi (**Changed Type**). Viimeiset kaksi vaihetta näyttävät edelliset toimintamme, jotka olivat **Added Custom** ja **Changed Type1**. 
+    Seuraavassa kuvassa **Käytössä olevat vaiheet**-luettelo kuvastaa tähän mennessä lisättyjä vaiheita: 
+     - **Lähde**: Yhdistetään verkkosivustoon.
+     - **Siirtyminen**: Valitaan taulukkoa. 
+     - **Muutettu tyyppi**: Tekstipohjaisten lukusarakkeiden muuttaminen *tekstistä* *kokonaisluvuksi*. 
+     - **Lisätty mukautettu**: Mukautetun sarakkeen lisääminen.
+     - **Muutettu tyyppi1**: Viimeisin käyttöön otettu vaihe.
 
-![](media/desktop-shape-and-combine-data/shapecombine_appliedstepsearly2.png)
+       ![Luettelo käytössä olevista vaiheista](media/desktop-shape-and-combine-data/shapecombine_appliedstepsearly2.png)
 
-Ennen kuin voimme käyttää tätä kyselyä, meidän täytyy tehdä muutama muutos, jotta saamme sen tiedot sinne, minne haluamme:
+## <a name="adjust-data"></a>Säädä tietoja
 
-* *Sijoitusten muokkaaminen poistamalla sarake*: Olemme päättäneet, että asuinkustannuksilla eli **Cost of living** -sarakkeella ei ole vaikutusta tuloksissa. Kun poistamme sarakkeen, ongelmana on se, että tiedot pysyvät ennallaan. Tämän korjaaminen on kuitenkin helppoa Power BI Desktopilla. Samalla voimme myös esitellä kyselyn **Käytössä olevat vaiheet** -kohdan erästä kätevää toimintoa.
-* *Muutaman virheen korjaaminen*: Koska poistimme sarakkeen, meidän täytyy muokata **New Rank** -sarakkeen laskelmia. Tämä tarkoittaa myös kaavan muuttamista.
-* *Tietojen lajitteleminen*: tiedot lajitellaan **New Rank**- ja **Rank**-sarakkeiden perusteella. 
-* *Tietojen korvaaminen*: näytämme, miten voit korvata tietyn arvon ja miksi **käytössä oleva vaihe** täytyy lisätä.
-* *Taulukon nimen vaihtaminen*: **Table 0** ei ole kuvaava nimi, mutta nimen vaihtaminen on yksinkertaista.
+Ennen kuin voimme käyttää tätä kyselyä, meidän täytyy säätää sen tietoja tekemällä muutama muutos:
 
-Jos haluat poistaa **Cost of living** -sarakkeen, valitse sarake ja valitse valintanauhan **Aloitus**-välilehdestä **Poista sarakkeet**, kuten seuraavassa kuvassa.
+   - Säädä sijoituksia poistamalla sarake.
 
-![](media/desktop-shape-and-combine-data/shapecombine_removecolumnscostofliving.png)
+       Olemme päättäneet, sarake **Cost of living** ei vaikuta tuloksiimme. Kun tämä sarake on poistettu, tiedot pysyvät muuttumattomina. 
 
-Huomaat, että _New Rank_ -arvot eivät ole muuttuneet. Tämä johtuu vaiheiden järjestyksestä. Koska kyselyeditori kirjaa vaiheet järjestyksessä ja silti toisistaan riippumatta, voit siirtää kutakin **käytössä olevaa vaihetta** järjestyksessä aiemmaksi tai myöhemmäksi. Napsauta vain hiiren oikealla painikkeella mitä tahansa vaihetta, ja kyselyeditori näyttää valikon, jossa voit tehdä seuraavat asiat: **nimeä uudelleen**, **poista**, **poista** **loppuun saakka** (poistaa nykyisen vaiheen ja myös kaikki myöhemmät vaiheet), **siirrä ylös** tai **siirrä alas**. Siirrä nyt viimeinen vaihe eli _Removed Columns_ _Added Custom_ -vaiheen yläpuolelle.
+   - Korjaa muutama virhe.
 
-![](media/desktop-shape-and-combine-data/shapecombine_movestep.png)
+       Koska poistimme sarakkeen, meidän täytyy muokata **New Rank** -sarakkeen laskelmia ja muuttaa kaavaa.
 
-Valitse sitten _Added Custom_ -vaihe. Huomaat, että tiedoissa näkyy nyt _virhe_, joka meidän täytyy korjata. 
+   - Lajittele tiedot.
 
-![](media/desktop-shape-and-combine-data/shapecombine_error2.png)
+       Tiedot lajitellaan **New Rank**- ja **Rank**-sarakkeiden perusteella.
+ 
+   - Korvaa tiedot.
 
-Voit hankkia lisätietoa eri virheistä muutamin tavoin. Voit valita solun (napsauttamatta **Virhe**-sanaa) tai napsauttaa suoraan **Virhe**-sanaa. Jos valitset solun *napsauttamatta* suoraan **Virhe**-sanaa, kyselyeditori näyttää virhetiedot ikkunan alareunassa.
+       Näytämme, miten voit korvata tietyn arvon ja miksi **käytössä oleva vaihe** täytyy lisätä.
 
-![](media/desktop-shape-and-combine-data/shapecombine_errorinfo2.png)
+   - Muuta taulukon nimi. 
 
-Jos napsautat *Virhe*-sanaa suoraan, kyselyeditori luo **käytössä olevan vaiheen** **kyselyasetusten** ruutuun ja näyttää tiedot virheestä. Emme halua toimia näin, joten valitse **Peruuta**.
+       Koska **Table 0** ei kuvaa taulukkoa hyödyllisellä tavalla, muutamme sen nimen.
 
-Voit korjata virheet valitsemalla _New Rank_ -sarakkeen, näyttämällä sarakkeen tiedot avaamalla **Näytä**-valintanauhan ja valitsemalla **Kaavarivi**-valintaruudun. 
+1. Jos haluat poistaa **Cost of living** -sarakkeen, valitse sarake, valitse valintanauhan **Aloitus**-välilehti ja valitse sitten **Poista sarakkeet**.
 
-![](media/desktop-shape-and-combine-data/shapecombine_formulabar.png)
+    ![Valitse Poista sarakkeet](media/desktop-shape-and-combine-data/shapecombine_removecolumnscostofliving.png)
 
-Voit nyt pienentää _Cost of living_ -parametrin ja pienentää jakajan muuttamalla kaavan seuraavaan muotoon: 
+   Huomaat, että **New Rank** -arvot eivät ole muuttuneet. Tämä johtuu vaiheiden järjestyksestä. Koska kyselyeditori kirjaa vaiheet järjestyksessä ja silti toisistaan riippumatta, voit siirtää kutakin **käytössä olevaa vaihetta** järjestyksessä aiemmaksi tai myöhemmäksi. 
 
+1. Napsauta vaihetta hiiren kakkospainikkeella. Kyselyeditori näyttää valikon, jossa voit tehdä seuraavat tehtävät: 
+   - **Nimeä uudelleen**; nimeä vaihe uudelleen.
+   - **Poista**: Poista vaihe.
+   - **Poista** **loppuun saakka**: Poista nykyinen vaihe sekä kaikki seuraavat vaiheet.
+   - **Siirrä ylös**: Siirrä vaihetta ylöspäin luettelossa.
+   - **Siirrä alas**: Siirrä vaihetta alaspäin luettelossa.
+
+1. Siirrä viimeinen vaihe eli **Removed Columns** **Added Custom** -vaiheen yläpuolelle.
+
+   ![Siirrä vaihetta ylöspäin käytössä olevissa vaiheissa](media/desktop-shape-and-combine-data/shapecombine_movestep.png)
+
+1. Valitse **Added Custom** -vaihe. 
+
+   Huomaat, että tiedoissa näkyy nyt _virhe_, joka meidän täytyy korjata.
+
+   ![Virhetulos saraketiedoissa](media/desktop-shape-and-combine-data/shapecombine_error2.png)
+
+   Voit hankkia lisätietoa eri virheistä muutamin tavoin. Jos valitset solun napsauttamatta *Virhe*-sanaa, kyselyeditori näyttää virhetiedot ikkunan alareunassa.
+
+   ![Virhetiedot kyselyeditorissa](media/desktop-shape-and-combine-data/shapecombine_errorinfo2.png)
+
+   Jos valitset *Virhe*-sanan suoraan, kyselyeditori luo **käytössä olevan vaiheen** **kyselyasetusten** ruutuun ja näyttää tiedot virheestä. 
+
+1. Koska meidän ei tarvitse näyttää tietoja virheistä, valitse **Peruuta**.
+
+1. Jos haluat korjata virheet, valitse **New Rank** -sarake ja näytä sarakkeen tiedot valitsemalla **Kaavarivi**-valintaruutu **Näytä**-valintanauhasta. 
+
+   ![Valitse Kaavarivi](media/desktop-shape-and-combine-data/shapecombine_formulabar.png)
+
+1. Poista _Cost of living_ -parametri ja pienennä jakaja muuttamalla kaava seuraavaan muotoon: 
+   ```
     Table.AddColumn(#"Removed Columns", "New Rank", each ([Weather] + [Health care quality] + [Crime] + [Tax] + [Culture] + [Senior] + [#"Well-being"]) / 7)
+   ```
 
-Valitse kaavaruudun vieressä oleva vihreä valintamerkki tai paina **Enteriä**. Tämän pitäisi korvata tiedot muutetuilla arvoilla, jolloin **Added Custom** -vaiheen pitäisi olla valmis *ilman virheitä*.
+1. Valitse kaavaruudun vasemmalla puolella oleva vihreä valintamerkki tai valitse **Enter**.
 
-> [!NOTE]
-> Voit myös **poistaa virheitä** (valintanauhan tai hiiren kakkospainikevalikon avulla). Tämä poistaa kaikki rivit, joilla on virheitä. Tässä tapauksessa tämä olisi poistanut kaikki rivit tiedoistamme, mitä emme halua, sillä haluamme pitää kaikki tiedot taulukossa.
+  Kyselyeditori korvaa tiedot tarkistetuilla arvoilla, ja **Lisätty mukautettu** -vaihe valmistuu ilman virheitä.
 
-Nyt meidän täytyy lajitella tiedot **New Rank**-sarakkeen perusteella. Valitse ensin viimeisin käytetty vaihe eli **Changed Type1**, jotta pääset uusimpiin tietoihin. Valitse sitten avattava valikko **New Rank** -sarakeotsikon vierestä ja valitse **Lajittele nousevaan järjestykseen**.
+   > [!NOTE]
+   > Voit myös valita **Poistaa virheet** käyttämällä valintanauhaa tai hiiren kakkospainiketta. Tämä poistaa kaikki rivit, joilla on virheitä. Emme kuitenkaan halunneet tehdä näin tässä opetusohjelmassa, koska halusimme säilyttää taulukon tiedot.
 
-![](media/desktop-shape-and-combine-data/shapecombine_sort.png)
+1. Lajittele tiedot **New Rank** -sarakkeen perusteella. Valitse ensin viimeisin käytetty vaihe eli **Changed Type1** näyttääksesi uusimmat tiedot. Valitse sitten avattava valikko **New Rank** -sarakeotsikon vierestä ja valitse **Lajittele nousevaan järjestykseen**.
 
-Näet, että tiedot lajitellaan nyt **New Rank** -sarakkeen perusteella.  Jos taas katsot **Rank**-saraketta, näet, että tietoja ei lajitella oikein kohdissa, joissa **New Rank** -arvo on tasapeli. Voit korjata tämän valitsemalla **New Rank** -sarakkeen ja vaihtamalla sitten **kaavarivin** kaavan seuraavaan muotoon:
+   ![Lajittele New Rank -sarakkeen tiedot](media/desktop-shape-and-combine-data/shapecombine_sort.png)
 
+   Tiedot lajitellaan nyt **New Rank** -sarakkeen perusteella. Jos taas katsot **Rank**-saraketta, näet, että tietoja ei lajitella oikein kohdissa, joissa **New Rank** -arvo on tasapeli. Korjaamme tämän seuraavassa vaiheessa.
+
+1. Voit korjata tietojen lajitteluongelman valitsemalla **New Rank** -sarakkeen ja vaihtamalla sitten **kaavarivin** kaavan seuraavaan muotoon:
+
+   ```
     = Table.Sort(#"Changed Type1",{{"New Rank", Order.Ascending},{"Rank", Order.Ascending}})
+   ```
 
-Valitse kaavaruudun vieressä oleva vihreä valintamerkki tai paina **Enteriä**. Rivien pitäisi nyt olla järjestettynä sekä _New Rank_- että _Rank_-sarakkeiden mukaisesti.
+1. Valitse kaavaruudun vasemmalla puolella oleva vihreä valintamerkki tai valitse **Enter**. 
 
-Voit myös valita **käytössä olevan vaiheen** luettelon mistä tahansa kohdasta ja jatkaa tietojen muotoilua järjestyksen tässä kohdassa. Kyselyeditori lisää automaattisti uuden vaiheen tällä hetkellä valitun **käytössä olevan vaiheen** perään. Kokeillaan tätä.
+   Rivit on nyt järjestetty sekä **New Rank**- että **Rank**-sarakkeen mukaisesti. Voit myös valita **käytössä olevan vaiheen** luettelon mistä tahansa kohdasta ja jatkaa tietojen muotoilua järjestyksen tässä kohdassa. Kyselyeditori lisää automaattisti uuden vaiheen tällä hetkellä valitun **käytössä olevan vaiheen** perään. 
 
-Valitse ensin **käytössä oleva vaihe**, joka edeltää mukautetun sarakkeen lisäämistä. Tässä tapauksessa se on _Removed Columns_ -vaihe. Korvaamme tässä _Weather_-sijoituksen arvon Arizonassa. Napsauta hiiren kakkospainikkeella solua, joka sisältää Arizonan _Weather_-sijoituksen. Valitse sitten näyttöön avautuvasta valikosta *Korvaa arvot...* Tarkista, mikä **käytössä oleva vaihe** on tällä hetkellä valittuna (vaihe ennen _Added Custom_ -vaihetta).
+1. Valitse **Käytössä oleva vaihe** -kohdassa mukautettua saraketta edeltävä vaihe, eli **Poistetut sarakkeet** vaihe. Korvaamme tässä **Weather**-sijoituksen arvon Arizonassa. Napsauta hiiren kakkospainikkeella solua, joka sisältää Arizonan **Weather**-sijoituksen. Valitse sitten **Korvaa arvot**. Huomioi, mikä **käytössä oleva vaihe** on valittuna.
 
-![](media/desktop-shape-and-combine-data/shapecombine_replacevalues2.png)
+   ![Valitse sarakkeelle Korvaa arvot](media/desktop-shape-and-combine-data/shapecombine_replacevalues2.png)
 
-Koska lisäämme vaiheen, kyselyeditori varoittaa tämän vaaroista: myöhemmät vaiheet voivat tehdä kyselystä rikkinäisen. Tässä täytyy toimia harkitusti ja varoen! Koska tämä on opetusohjelma ja koska olemme esittelemässä kyselyeditorin kätevää toimintoa, jolla voit luoda, poistaa ja lisätä vaiheita sekä muokata niiden järjestystä, valitsemme tässä nyt **Lisää**.
+1. Valitse **lisää**.
 
-![](media/desktop-shape-and-combine-data/shapecombine_insertstep.png)
+    Koska lisäämme vaiheen, kyselyeditori varoittaa tämän vaaroista: myöhemmät vaiheet voivat tehdä kyselystä rikkinäisen. 
 
-Vaihda arvoksi _51_. Tämä korvaa Arizonan tiedot. Kun luot uutta käytössä olevaa vaihetta, kyselyeditori nimeää sen toiminnon mukaisesti: tässä tapauksessa nimeksi tulee **Replaced Value** Jos sinulla kyselyssä useita vaiheita, joilla on sama nimi, kyselyeditori lisää jokaiseen myöhempään **käytettyyn vaiheeseen** nimen loppuun järjestysnumeron, jotta erotat vaiheet toisistaan.
+    ![Vahvista Lisää vaihe](media/desktop-shape-and-combine-data/shapecombine_insertstep.png)
 
-Valitse nyt viimeinen **käytetty vaihe** (_Sorted Rows_), niin näet, että tiedot muuttuvat Arizonan uuden sijoituksen mukaisesti.  Tämä johtuu siitä, että lisäsimme _Replaced Value_ -vaiheen oikeaan paikkaan ennen _Added Custom_ -vaihetta.
+1. Muuta tietoarvoksi _51_. 
 
-Tämä on hyvä esimerkki siitä, kuinka tehokas ja monipuolinen kyselyeditori voi olla.
+   Kyselyeditori korvaa Arizonan tiedot. Kun luot uutta **käytössä olevaa vaihetta**, kyselyeditori nimeää sen toiminnon mukaisesti: tässä tapauksessa nimeksi tulee **Replaced Value**. Jos sinulla kyselyssä useita vaiheita, joilla on sama nimi, kyselyeditori lisää jokaiseen myöhempään **käytettyyn vaiheeseen** nimen loppuun järjestysnumeron, jotta erotat vaiheet toisistaan.
 
-Lopuksi haluamme vaihtaa taulukon nimeksi paremmin kuvaavan nimen. Kun ryhdyt luomaan raportteja, taulukoiden nimien kannattaa olla kuvaavia. Tämä pätee etenkin silloin, jos muodostat yhteyden useisiin tietolähteisiin ja kaikkien taulukoiden nimet luetellaan **raporttinäkymän** **Kentät**-ruudussa.
+1. Valitse viimeinen **käytössä oleva vaihe**, **Lajiteltu rivit**. 
 
-Taulukon nimen vaihtaminen on helppoa: kirjoita **Kyselyasetukset**-ruudun **Ominaisuudet**-kohdassa uusi nimi taulukolle, kuten seuraavassa kuvassa näytetään, ja paina sitten **Enteriä**. Anna tälle taulukolle nimeksi *RetirementStats*.
+   Huomaa, että tiedot ovat muuttuneet Arizonan uuden sijoituksen suhteen. Muutos johtuu siitä, että lisäsimme **Replaced Value** -vaiheen oikeaan sijaintiin ennen **Added Custom** -vaihetta.
 
-![](media/desktop-shape-and-combine-data/shapecombine_renametable2.png)
+1. Lopuksi haluamme vaihtaa taulukon nimeksi paremmin kuvaavan nimen. Kirjoita **kysely asetukset**-ruudun **ominaisuudet**-kohtaan taulukon uusi nimi ja valitse **Anna**. Anna tälle taulukolle nimeksi *RetirementStats*.
 
-Nyt olemme muotoilleet tietoja tarpeeksi. Seuraavaksi muodostamme yhteyden toiseen tietolähteeseen ja yhdistämme tiedot.
+   ![Nimeä taulukko uudelleen kyselyasetuksissa](media/desktop-shape-and-combine-data/shapecombine_renametable2.png)
+
+   Kun ryhdyt luomaan raportteja, taulukoiden nimien kannattaa olla kuvaavia. Tämä pätee etenkin silloin, jos muodostat yhteyden useisiin tietolähteisiin, jotka on lueteltu **raporttinäkymän** **Kentät**-ruudussa.
+
+   Nyt olemme muotoilleet tietojamme tarpeeksi. Seuraavaksi muodostamme yhteyden toiseen tietolähteeseen ja yhdistämme tiedot.
 
 ## <a name="combine-data"></a>Tietojen yhdistäminen
-Nämä tiedot eri osavaltioista ovat mielenkiintoisia. Niistä on myös hyötyä muidenkin analyysien ja kyselyiden luomisessa. Tässä on kuitenkin yksi ongelma: suurin osa saatavilla olevista tiedoista käyttää kaksikirjaimisia osavaltiolyhenteitä, ei osavaltioiden koko nimiä. Meidän täytyy siis yhdistää osavaltioiden nimet ja niiden lyhenteet.
+Tiedot eri osavaltioista ovat mielenkiintoisia. Niistä on myös hyötyä muidenkin analyysien ja kyselyiden luomisessa. Tässä on kuitenkin yksi ongelma: suurin osa saatavilla olevista tiedoista käyttää kaksikirjaimisia osavaltiolyhenteitä, ei osavaltioiden koko nimiä. Meidän täytyy siis yhdistää osavaltioiden nimet ja niiden lyhenteet.
 
-Meillä on kuitenkin onnea, sillä eräs toinen julkinen tietolähde tekee juuri tämän, mutta sen tiedot vaativat suhteellisen paljon muotoilua, ennen kuin voimme yhdistää ne tähän eläköitymistaulukkoomme. Tässä on osavaltiolyhenteiden verkkoresurssi:
+Meillä on kuitenkin onnea, sillä eräs toinen julkinen tietolähde tekee juuri tämän, mutta sen tiedot vaativat suhteellisen paljon muotoilua, ennen kuin voimme yhdistää ne tähän eläköitymistaulukkoomme. Jos haluat muotoilla tietoja, toimi seuraavasti:
 
-<http://en.wikipedia.org/wiki/List_of_U.S._state_abbreviations>
+1. Valitse kyselyeditorin **Aloitus**-valintanauhasta **Uusi lähde \> Verkko**. 
 
-Valitse kyselyeditorin **Aloitus**-valintanauhasta **Uusi lähde \> Verkko**, kirjoita osoite ja valitse **Yhdistä**. Näin siirtymistoiminto näyttää tiedot, jotka verkkosivulta löytyvät.
+2. Anna osavaltioiden lyhenteet sisältävän sivuston osoite, *http://en.wikipedia.org/wiki/List_of_U.S._state_abbreviations* , ja valitse sitten **Yhdistä**.
 
- ![](media/desktop-shape-and-combine-data/designer_gsg_usstateabbreviationsnavigator2.png)
+   Siirtymistoiminto näyttää verkkosivuston sisällön.
 
-Valitse **Koodit ja lyhenteet...** , koska haluamme käyttää tällaisia tietoja. Tietoja täytyy kuitenkin muotoilla melko paljon, ennen kuin voimme yhdistää taulukon tiedot haluamallamme tavalla.
+    ![Siirtymissivu](media/desktop-shape-and-combine-data/designer_gsg_usstateabbreviationsnavigator2.png)
 
-> [!TIP]
-> Onko alla lueteltujen vaiheiden suorittamiseen jokin nopeampi tai helpompi tapa? Kyllä, voit luoda kahden taulukon välille *suhteen* ja muotoilla tietoja sitten tämän suhteen perusteella. Seuraavista vaiheista on kuitenkin hyötyä, kun opettelet taulukoiden käyttöä, mutta kannattaa muistaa, että suhteiden avulla käyttää nopeasti tietoja useista taulukoista.
+1. Valitse **Koodit ja lyhenteet**. 
+
+   > [!TIP]
+   > Vaatii melko paljon työtä, ennen kuin taulukon tiedot on muotoiltu haluamallamme tavalla. Onko alla lueteltujen vaiheiden suorittamiseen jokin nopeampi tai helpompi tapa? Kyllä, voit luoda kahden taulukon välille *suhteen* ja muotoilla tietoja sitten tämän suhteen perusteella. Seuraavista vaiheista on kuitenkin hyötyä, kun opettelet taulukoiden käyttöä, mutta suhteiden avulla voit käyttää nopeasti tietoja useista taulukoista.
 > 
 > 
 
-Muotoilemme nämä tiedot käyttökelpoiseen muotoon seuraavasti:
+Jos haluat saada tiedot kuntoon, toimi seuraavasti:
 
-* Poista ylin rivi: Se on seurausta tavasta, jolla verkkosivun taulukko on luotu, mutta emme tarvitse ylintä riviä. Valitse **Aloitus**-valintanauhasta **Vähennä rivejä \> Poista rivit \> Poista ylimmät rivit**.
+1. Poista ylin rivi. Ylin rivi on seurausta tavasta, jolla verkkosivun taulukko on luotu, joten emme tarvitse sitä. Valitse **Aloitus**-valintanauhasta **Vähennä rivejä \> Poista rivit \> Poista ylimmät rivit**.
 
-![](media/desktop-shape-and-combine-data/shapecombine_removetoprows.png)
+    ![Valitse Poista ylimmät rivit](media/desktop-shape-and-combine-data/shapecombine_removetoprows.png)
 
-Näyttöön avautuu **Poista ylimmät rivit** ikkuna, jossa voit määrittää, montako riviä haluat poistaa.
+    Näyttöön avautuu **Poista ylimmät rivit** ikkuna, jossa voit määrittää, montako riviä haluat poistaa.
 
->[!NOTE]
->Jos Power BI tuo vahingossa taulukko-otsikot rivinä tietotaulukkoosi, voit korjata taulukkosi valitsemalla valintanauhan **Aloitus**- tai **Muunna**-välilehdestä **Käytä ensimmäistä riviä otsikkoina**.
+    > [!NOTE]
+    > Jos Power BI tuo vahingossa taulukko-otsikot rivinä tietotaulukkoosi, voit korjata taulukkosi valitsemalla valintanauhan **Aloitus**- tai **Muunna**-välilehdestä **Käytä ensimmäistä riviä otsikkoina**.
 
-* Poista alimmat 26 riviä, sillä ne ovat kaikki alueita, joita meidän ei tarvitse sisällyttää mukaan. Valitse **Aloitus**-valintanauhasta **Vähennä rivejä \> Poista rivit \> Poista alimmat rivit**.
+1. Poista alimmat 26 riviä. Nämä rivit ovat Yhdysvaltain alueita, joita meidän ei tarvitse sisällyttää. Valitse **Aloitus**-valintanauhasta **Vähennä rivejä \> Poista rivit \> Poista alimmat rivit**.
 
-![](media/desktop-shape-and-combine-data/shapecombine_removebottomrows.png)
+    ![Valitse Poista alimmat rivit](media/desktop-shape-and-combine-data/shapecombine_removebottomrows.png)
 
-* Koska RetirementStats-taulukko ei sisällä Washington DC:n tietoja, meidän täytyy suodattaa se luettelostamme. Valitse avattavan valikon nuoli Region Status -sarakkeen vierestä ja poista sitten **Federal district** -kohdan valintaruutu.
+1. Koska RetirementStats-taulukko ei sisällä Washington DC:n tietoja, meidän täytyy suodattaa se luettelostamme. Valitse avattava **Region Status** -valikko ja poista sitten valintaruutu **Federal district** -kohdan vierestä.
 
-![](media/desktop-shape-and-combine-data/shapecombine_filterdc.png)
+    ![Tyhjennä Federal District -valintaruutu](media/desktop-shape-and-combine-data/shapecombine_filterdc.png)
 
-* Poista pari tarpeetonta saraketta – meidän täytyy yhdistää vain osavaltio sen viralliseen kaksikirjaimiseen lyhenteeseen, joten voimme poistaa seuraavat sarakkeet: **Column1**, **Column3**, **Column4** ja sitten **Column6**–**Column11**. Valitse ensin **Column1**, paina **CTRL**-näppäin pohjaan ja valitse sitten muut poistettavat sarakkeet (näin voit valita useita sarakkeita, jotka eivät ole kiinni toisissaan). Valitse valintanauhan Aloitus-välilehdestä **Poista sarakkeet \> Poista sarakkeet**.
+1. Poista muutama tarpeeton sarake. Koska meidän täytyy vain yhdistää kukin osavaltio sen viralliseen kaksikirjaimiseen lyhenteeseen, voimme poistaa seuraavat sarakkeet: **Column1**, **Column3**, **Column4** ja **Column6**–**Column11**. Valitse ensin **Column1**, paina **CTRL**-näppäin pohjaan ja valitse sitten muut poistettavat sarakkeet yksitellen. Valitse valintanauhan **Aloitus**-välilehdestä **Poista sarakkeet \> Poista sarakkeet**.
 
-![](media/desktop-shape-and-combine-data/shapecombine_removecolumns.png)
+   ![Poista sarake](media/desktop-shape-and-combine-data/shapecombine_removecolumns.png)
 
->[!NOTE]
->Tämä on hyvä hetki huomauttaa, että kyselyeditorissa käytettyjen vaiheiden *järjestys* on tärkeä. Se voi myös vaikuttaa tietojen muotoiluun. On tärkeää huomioida se, miten yksi vaihe voi vaikuttaa toiseen myöhempään vaiheeseen. Jos poistat vaiheen käytetyistä vaiheista, myöhemmät vaiheet eivät ehkä toimi niin kuin alun perin tarkoitit, koska vaiheen poistaminen kyselyn vaihejärjestyksestä vaikuttaa muihin vaiheisiin.
+   > [!NOTE]
+   > Tämä on hyvä hetki huomauttaa, että kyselyeditorissa käytettyjen vaiheiden *järjestys* on tärkeä. Se voi myös vaikuttaa tietojen muotoiluun. On tärkeää huomioida se, miten yksi vaihe voi vaikuttaa toiseen myöhempään vaiheeseen. Jos poistat vaiheen käytetyistä vaiheista, myöhemmät vaiheet eivät ehkä toimi niin kuin alun perin tarkoitit, koska vaiheen poistaminen kyselyn vaihejärjestyksestä vaikuttaa muihin vaiheisiin.
 
->[!NOTE]
->Kun pienennät kyselyeditorin ikkunaa kapeammaksi, jotkin valintanauhan kohteet tiivistetään, jotta näkyvissä oleva tila on käytössä mahdollisimman tehokkaasti. Kun levennät kyselyeditorin ikkunaa, valintanauhan kohteet laajentuvat, jotta valintanauhan suurempi tila saadaan paremmin käyttöön.
+   > [!NOTE]
+   > Kun pienennät kyselyeditorin ikkunaa kapeammaksi, jotkin valintanauhan kohteet tiivistetään, jotta näkyvissä oleva tila on käytössä mahdollisimman tehokkaasti. Kun levennät kyselyeditorin ikkunaa, valintanauhan kohteet laajentuvat, jotta valintanauhan suurempi tila saadaan paremmin käyttöön.
 
-* Nimeä sarakkeet ja itse taulukko uudelleen. Totuttuun tapaan voit vaihtaa sarakkeen nimeä eri tavoin: valitse ensin sarake ja valitse sitten valintanauhan **Muunna**-välilehdestä **Nimeä uudelleen** tai napsauta saraketta hiiren kakkospainikkeella ja valitse sitten **Nimeä uudelleen...** valikossa, joka näyttöön avautuu. Seuraavassa kuvassa on nuolet, jotka osoittavat molempiin toimintoihin, mutta sinun tarvitsee käyttää vain toista.
+1. Nimeä sarakkeet ja taulukko uudelleen. Sarake voidaan nimetä uudelleen muutamia tavoilla: Valitse ensin sarake ja valitse sitten **Nimeä uudelleen** valintanauhan **Muunna**-välilehdestä tai napsauta hiiren kakkospainikkeella ja valitse **Nimeä uudelleen**. Seuraavassa kuvassa on nuolet, jotka osoittavat molempiin toimintoihin, mutta sinun tarvitsee käyttää vain toista.
 
-![](media/desktop-shape-and-combine-data/shapecombine_rename.png)
+   ![Nimeä sarake uudelleen kyselyeditorissa](media/desktop-shape-and-combine-data/shapecombine_rename.png)
 
-Anna uusiksi nimiksi *State Name* ja *State Code*. Voit vaihtaa taulukon nimeä kirjoittamalla uuden nimen **Kyselyasetukset**-ruudun **Nimi**-ruutuun. Anna tälle taulukolle nimeksi *StateCodes*.
+1. Anna sarakkeiden uusiksi nimiksi *State Name* ja *State Code*. Jos haluat nimetä taulukon uudelleen, anna **nimi** **Kyselyasetukset**-ruudussa. Anna tälle taulukolle nimeksi *StateCodes*.
 
-Nyt kun olemme muotoilleet StateCodes-taulukon haluamallamme tavalla, voimme yhdistää nämä kaksi taulukkoa (tai kyselyä) yhdeksi. Koska taulukot, jotka meillä nyt ovat, ovat tulos kyselyistä, jotka suoritimme tiedoille, niitä kutsutaan usein *kyselyiksi*.
+## <a name="combine-queries"></a>Yhdistä kyselyt
+
+Nyt kun olemme muotoilleet StateCodes-taulukon halutulla tavalla, yhdistetään nämä kaksi taulukkoa tai kyselyä yhdeksi. Koska taulukot, jotka meillä nyt ovat, ovat tulosta tietoihin soveltamistamme kyselyistä, niitä kutsutaan usein *kyselyiksi*.
 
 Kyselyitä voi yhdistää kahdella tavalla: *yhdistämällä* tai *loppuun liittämällä*.
 
-Jos sinulla on sarake tai sarakkeita, jonka tai jotka haluat lisätä toiseen kyselyyn, **yhdistä** kyselyt. Jos sinulla on lisärivejä tietoja, jotka haluat lisätä olemassa olevaan kyselyyn, **liitä ne kyselyn loppuun**.
+- Jos sinulla on sarake tai sarakkeita, jonka tai jotka haluat lisätä toiseen kyselyyn, *yhdistä* kyselyt. 
+- Jos sinulla on lisärivejä tietoja, jotka haluat lisätä olemassa olevaan kyselyyn, *liitä ne kyselyn loppuun*.
 
-Tässä tapauksessa haluamme yhdistää kyselyt. Aloita valitsemalla kyselyeditorin vasemmasta ruudusta kysely, *johon* haluat yhdistää toisen kyselyn. Tässä tapauksessa se on *RetirementStats*. Valitse sitten valintanauhan **Aloitus\>-välilehdestä** Yhdistä  **Yhdistä kyselyt**.
+Tässä tapauksessa haluamme yhdistää kyselyt. Toimi seuraavasti:
+ 
+1. Valitse kyselyeditorin vasemmasta ruudusta kysely, *johon* haluat toisen kyselyn yhdistyvän. Tässä tapauksessa se on **RetirementStats**. 
 
-![](media/desktop-shape-and-combine-data/shapecombine_mergequeries.png)
+1. Valitse valintanauhan **Aloitus\>-välilehdestä** Yhdistä  **Yhdistä kyselyt**.
 
-Sinua saatetaan pyytää määrittämään yksityisyystaso. Näin varmistetaan, että tiedot yhdistetään siten, että sisällytä tai siirrä tietoja, joita et halua.
+   ![Valitse Yhdistä kyselyt](media/desktop-shape-and-combine-data/shapecombine_mergequeries.png)
 
-Seuraavaksi näyttöön avautuu **Yhdistä**-ikkuna, jossa sinulta kysytään, minkä taulukon haluat yhdistää valittuun taulukkoon. Sinua pyydetään myös määrittämään yhdistämisen vastaavat sarakkeet. Valitse *RetirementStats*-taulukosta (kysely) State-sarake ja valitse sitten *StateCodes*-kysely (tämä on tässä tapauksessa helppoa, koska muita kyselyitä on vain yksi, mutta kun yhdistettynä on useita tietolähteitä, valittavissa olevia kyselyitä on paljon). Kun valitsemme oikeat vastaavat sarakkeet (**State**-sarake *RetirementStats*-taulukosta ja **State Name** -sarake *StateCodes*-taulukosta), **Yhdistä**-ikkuna näyttää seuraavankaltaisella. Myös **OK**-painike on käytettävissä.
+   Sinua saatetaan pyytää määrittämään yksityisyystaso. Näin varmistetaan, että tiedot yhdistetään siten, että sisällytä tai siirrä tietoja, joita et halua.
 
-![](media/desktop-shape-and-combine-data/shapecombine_merge2.png)
+   Seuraavaksi näyttöön avautuu **Yhdistä**-ikkuna. Siinä kysytään, minkä taulukon haluat yhdistää valittuun taulukkoon ja pyydetään määrittämään yhdistämisen vastaavat sarakkeet. 
 
-Kyselyn loppuun luodaan **NewColumn**, joka sisältää sen taulukon (kyselyn) sisällön, joka yhdistettiin olemassa olevaan kyselyyn. Kaikki yhdistetyn kyselyn sarakkeet tiivistetään **NewColumn**-sarakkeeseen, mutta voit **laajentaa** taulukon ja sisällyttää haluamasi sarakkeet.
+1. Valitse RetirementStats-taulukosta **State** ja valitse sitten **StateCodes**-kysely. 
 
-![](media/desktop-shape-and-combine-data/shapecombine_mergenewcolumn.png)
+   Kun valitset oikeat vastaavat sarakkeet, **OK**-painike on käytössä.
 
-Jos haluat laajentaa yhdistetyn taulukon ja valita sisällytettävät sarakkeet, valitse laajennuskuvake (![Laajenna](media/desktop-shape-and-combine-data/icon.png)). Näyttöön avautuu **Laajenna**-ikkuna.
+   ![Yhdistä-ikkuna](media/desktop-shape-and-combine-data/shapecombine_merge2.png)
 
-![](media/desktop-shape-and-combine-data/shapecombine_mergeexpand.png)
+1. Valitse **OK**.
 
-Tässä tapauksessa haluamme vain **State Code** -sarakkeen, joten valitse se ja valitse sitten **OK**. Poista Käytä alkuperäisen sarakkeen nimeä etuliitteenä -valintaruudun valinta, koska et halua tätä. Jos jätät tämän valituksi, yhdistetyn sarakkeen nimi olisi **NewColumn.State Code** (alkuperäisen sarakkeen nimi eli **NewColumn**, sitten piste ja sitten kyselyyn tuodun sarakkeen nimi).
+   Kyselyeditori luo kyselyn loppuun sarakkeen **NewColumn**, joka sisältää sen taulukon (kyselyn) sisällön, joka yhdistettiin olemassa olevaan kyselyyn. Kaikki yhdistetyn kyselyn sarakkeet tiivistetään **NewColumn**-sarakkeeseen, mutta voit **laajentaa** taulukon ja sisällyttää haluamasi sarakkeet.
 
->[!NOTE]
->Haluatko kokeilla eri tapoja tuoda tämä **NewColumn**-taulukko? Voit kokeilla eri tapoja. Jos et pidä tuloksista, poista kyseinen vaihe **Kyselyasetukset**-ruudun **käytössä olevien vaiheiden** luettelosta. Tämä palauttaa kyselysi tilaan, jossa se oli ennen tätä **laajennusvaihetta**. Voit siis kokeilla eri tapoja vapaasti niin monta kertaa kuin haluat, kunnes saat laajennusprosessista haluamasi kaltaisen.
+   ![NewColumn-sarake](media/desktop-shape-and-combine-data/shapecombine_mergenewcolumn.png)
 
-Nyt meillä on yksi kysely (taulukko), joka yhdistää kaksi tietolähdettä, jotka kummatkin on muotoiltu tarpeidemme mukaisesti. Tämän kyselyn pohjalta voit luoda paljon muitakin kiinnostavia tietoyhteyksiä, esimerkiksi asumiskuluista, demografisista tiedoista tai työmahdollisuuksista missä tahansa osavaltiossa.
+1. Jos haluat laajentaa yhdistetyn taulukon ja valita sisällytettävät sarakkeet, valitse laajennuskuvake (.![Laajenna-kuvake](media/desktop-shape-and-combine-data/icon.png)). 
 
-Ota muutokset käyttöön ja sulje kyselyeditori valitsemalla valintanauhan **Aloitus**-välilehdeltä **Sulje ja ota käyttöön**. Muunnettu tietojoukko näytetään Power BI Desktopissa, jossa voit luoda raportteja sen pohjalta.
+   Näyttöön avautuu **Laajenna**-ikkuna.
 
-![](media/desktop-shape-and-combine-data/shapecombine_closeandapply.png)
+   ![NewColumn kyselyssä](media/desktop-shape-and-combine-data/shapecombine_mergeexpand.png)
+
+1. Tässä tapauksessa haluamme vain **State Code** -sarakkeen. Valitse sarake, poista kohdan **Käytä alkuperäisen sarakkeen nimeä etuliitteenä** valinta ja valitse sitten **OK**.
+
+   Jos olisimme jättäneet kohdan **Käytä alkuperäisen sarakkeen nimeä etuliitteenä** valintaruudun valituksi, yhdistetyn sarakkeen nimeksi olisi tullut **NewColumn.State Code**.
+
+   > [!NOTE]
+   > Haluatko kokeilla, miten voit tuoda NewColumn-taulukon? Voit kokeilla eri tapoja. Jos et pidä tuloksista, poista kyseinen vaihe **Kyselyasetukset**-ruudun **käytössä olevien vaiheiden** luettelosta. Tämä palauttaa kyselysi tilaan, jossa se oli ennen tätä **laajennusvaihetta**. Voit tehdä näin niin monta kertaa kuin haluat, kunnes saat laajennusprosessista haluamasi kaltaisen.
+
+   Nyt meillä on yksi kysely (taulukko), joka yhdistää kaksi tietolähdettä, jotka kummatkin on muotoiltu tarpeidemme mukaisesti. Tämän kyselyn pohjalta voit luoda useita muitakin kiinnostavia tietoyhteyksiä, esimerkiksi asumiskuluista, demografisista tiedoista tai työmahdollisuuksista missä tahansa osavaltiossa.
+
+1. Ota muutoksesi käyttöön ja sulje kyselyeditori valitsemalla valintanauhan **Aloitus**-välilehdeltä **Sulje ja ota käyttöön**. 
+
+   Muunnettu tietojoukko näytetään Power BI Desktopissa, jossa voit luoda raportteja sen pohjalta.
+
+   ![Valitse Sulje ja ota käyttöön](media/desktop-shape-and-combine-data/shapecombine_closeandapply.png)
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
-Voit tehdä kaikenlaista Power BI Desktopilla. Saat lisätietoja sen toiminnoista seuraavista resursseista:
+Lisää tietoja Power BI Desktopista ja sen toiminnoista on seuraavissa resursseissa:
 
 * [Mikä on Power BI Desktop?](desktop-what-is-desktop.md)
-* [Power BI Desktopin kyselyiden yleiskatsaus](desktop-query-overview.md)
+* [Kyselyn yleiskatsaus Power BI Desktopissa](desktop-query-overview.md)
 * [Power BI Desktopin tietolähteet](desktop-data-sources.md)
 * [Tietoihin yhdistäminen Power BI Desktopissa](desktop-connect-to-data.md)
 * [Yleiset kyselytehtävät Power BI Desktopissa](desktop-common-query-tasks.md)   

@@ -2,7 +2,6 @@
 title: Jaettujen tietojoukkojen muodostamisoikeus (esiversio)
 description: Lue ohjeet siihen, miten voit hallita tietojen käyttöä muodostamisoikeuden avulla.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: chbraun
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/01/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 069ec5e0c767bcfcb0a4a41c2180ae78146800f2
-ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
+ms.openlocfilehash: b17fa4299d2db84f63f0d8f7ed4c17a0c9c437db
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72020943"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73872548"
 ---
 # <a name="build-permission-for-shared-datasets-preview"></a>Jaettujen tietojoukkojen muodostamisoikeus (esiversio)
 
@@ -29,7 +28,7 @@ Tietojoukon muodostamisoikeuden voi antaa muutamalla eri tavalla:
 
 - Työtilan jäsenet, joilla on vähintään Osallistuja-rooli, saavat automaattisesti tietojoukon muodostamisoikeuden kyseiseen työtilaan sekä oikeuden kopioida raportti.
  
-- Tietojoukon sisältävän työtilan jäsenet voivat määrittää oikeuden tietyille käyttäjille tai käyttöoikeusryhmille käyttöoikeuskeskuksessa. Jos olet työtilan jäsen, valitse kolme pistettä (…) tietojoukon vieressä ja valitse sitten **Käyttöoikeuksien hallinta**.
+- Tietojoukon sisältävän työtilan jäsenet voivat määrittää oikeuden tietyille käyttäjille tai käyttöoikeusryhmille käyttöoikeuskeskuksessa. Jos olet työtilan jäsen, valitse **Enemmän vaihtoehtoja** (…) tietojoukon vierestä > **Käyttöoikeuksien hallinta**.
 
     ![Valitse kolme pistettä](media/service-datasets-build-permissions/power-bi-dataset-permissions-new-look.png)
 
@@ -50,11 +49,11 @@ Voit poistaa henkilöltä tietojoukon muodostamisoikeuden. Jos teet näin, käyt
 Jossakin vaiheessa sinun on ehkä poistettava muodostamisoikeus joiltakin jaetun tietojoukon käyttäjiltä. 
 
 1. Siirry työtilassa **Tietojoukot**-luettelosivulle. 
-1. Valitse kolme pistettä (...) tietojoukon vieressä > **Käyttöoikeuksien hallinta**.
+1. Valitse **Enemmän vaihtoehtoja** (...) tietojoukon vierestä > **Käyttöoikeuksien hallinta**.
 
     ![Käyttöoikeuksien hallinta](media/service-datasets-build-permissions/power-bi-dataset-permissions-new-look.png)
 
-1. Valitse kolme pistettä (...) nimen vieressä > **Poista muodostaminen**.
+1. Valitse **Enemmän vaihtoehtoja** (...) nimen vierestä > **Poista muodostaminen**.
 
     ![Poista muodostamisoikeus](media/service-datasets-build-permissions/power-bi-dataset-remove-build-permissions.png)
 
@@ -80,11 +79,11 @@ Oletetaan, että olet jakanut sovelluksen työtilasta ryhmälle henkilöitä. My
 1. Valitse **Päivitä**.
 
 1. Siirry työtilassa **Tietojoukot**-luettelosivulle. 
-1. Valitse kolme pistettä (...) tietojoukon vieressä > **Käyttöoikeuksien hallinta**.
+1. Valitse **Enemmän vaihtoehtoja** (...) tietojoukon vierestä > **Käyttöoikeuksien hallinta**.
 
     ![Käyttöoikeuksien hallinta](media/service-datasets-build-permissions/power-bi-dataset-permissions-new-look.png)
 
-1. Valitse kolme pistettä (...) haluamasi nimen vieressä > **Poista muodostaminen**.
+1. Valitse **Enemmän vaihtoehtoja** (...) haluamasi nimen vierestä > **Poista muodostaminen**.
 
     ![Poista muodostamisoikeus](media/service-datasets-build-permissions/power-bi-dataset-remove-build-permissions.png)
 
@@ -103,4 +102,4 @@ Voit poistaa muodostamisoikeuden. Jos poistat oikeuksia, käyttäjät, joiden oi
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
 - [Tietojoukkojen käyttö eri työtiloissa (esikatselu)](service-datasets-across-workspaces.md)
-- Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)
+- Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)

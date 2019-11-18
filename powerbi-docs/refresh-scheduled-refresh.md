@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 06/06/2019
 ms.author: mblythe
 LocalizationGroup: Data refresh
-ms.openlocfilehash: 46f61d2fcce21e3f8e6dae83c32457414928faee
-ms.sourcegitcommit: 206806d8ddb6bdfc322c1a46fb34a1b0678acba2
+ms.openlocfilehash: 9f1289b5fce74c60e5b3802054cef008dd33ada2
+ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66816630"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73021563"
 ---
 # <a name="configure-scheduled-refresh"></a>Ajoitetun päivityksen määrittäminen
 
@@ -30,7 +30,7 @@ Tässä kuvataan vaihtoehtoja, jotka ovat käytössä vaihtoehdoissa [Paikalline
 
 Pääset **Ajoitettu päivitys** -näkymään seuraavasti.
 
-1. Valitse **kolme pistettä (...)**  tietojoukon vierestä kohdasta **Tietojoukot**.
+1. Valitse **Enemmän vaihtoehtoja** (...) tietojoukon vierestä kohdasta **Tietojoukot**.
 2. Valitse **Ajoita päivitys**.
 
     ![Ajoita päivitys](media/refresh-scheduled-refresh/dataset-menu.png)

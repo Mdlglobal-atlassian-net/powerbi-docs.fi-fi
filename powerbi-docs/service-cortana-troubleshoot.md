@@ -11,12 +11,12 @@ ms.topic: troubleshooting
 ms.date: 05/29/2019
 ms.author: maggies
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 678910000a0062836004b208cb401774c9eb2a9a
-ms.sourcegitcommit: e5cf19e16112c7dad1591c3b38d232267ffb3ae1
+ms.openlocfilehash: 02e79522baa7580b019cec6956593d88260fb95b
+ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72542877"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73432116"
 ---
 # <a name="troubleshoot-cortana-for-power-bi"></a>Cortanan ja Power BI:n vianmääritys
 Tämä artikkeli on osa pidempää sarjaa. 
@@ -39,7 +39,7 @@ Jos sinulla on ongelmia Cortanan integroimisessa Power BI:hin, olet tullut oikea
    * kysymys ”show sales” *ei* palauta tulosta Power BI:ssä.   
    * ”show me sales fy16”, ”sales fy16”, ”show sales fy16” ja ”show me sales f” *palauttavat* tuloksen Power BI:ssä.    
    * sanan ”powerbi” lisääminen lasketaan toiseksi kahdesta vaadittavasta sanasta, joten ”powerbi sales” *palauttaa* tuloksen Power BI:ssä.
-5. Onko sinulla käyttö- tai muokkausoikeuksia mihinkään raportteihin tai koontinäyttöihin? Raporttien osalta sinun on varmistettava, että sisällöllä, jota yrität hakea, on [vastauskortti](service-cortana-answer-cards.md).  Koontinäyttöjen osalta sinun on varmistettava, että sisältö, jota yrität hakea, on joko **Jaettu kanssani** ‑tilassa, sovellustyötilassa tai **Omassa työtilassa**. Yritä tunnistaa ongelma [vianmäärityksen työkalulla](#try-the-cortana-troubleshooting-tool).
+5. Onko sinulla käyttö- tai muokkausoikeuksia mihinkään raportteihin tai koontinäyttöihin? Raporttien osalta sinun on varmistettava, että sisällöllä, jota yrität hakea, on [vastauskortti](service-cortana-answer-cards.md).  Koontinäyttöjen osalta sinun on varmistettava, että sisältö, jota yrität hakea, on joko **Jaettu kanssani** ‑tilassa, työtilassa tai **Omassa työtilassa**. Yritä tunnistaa ongelma [vianmäärityksen työkalulla](#try-the-cortana-troubleshooting-tool).
 6. Käytätkö mobiililaitetta?  Tällä hetkellä Power BI:n ja Cortanan integrointia tuetaan vain Windows-mobiililaitteissa.
 7. Onko Cortanan kieleksi määritetty englanti?  Cortanan ja Power BI:n integrointia tuetaan tällä hetkellä vain englanniksi. Käynnistä Cortana ja avaa asetukset valitsemalla hammasrataskuvake. Selaa alaspäin kohtaan **Cortanan kieli** ja varmista, että kieliasetuksena on jokin englannin varianteista.
 

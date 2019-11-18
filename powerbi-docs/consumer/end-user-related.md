@@ -12,14 +12,17 @@ ms.topic: conceptual
 ms.date: 09/18/2019
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: b52a858d10bb7f508d39e2d4e9678e48e01394f5
-ms.sourcegitcommit: 7a0ce2eec5bc7ac8ef94fa94434ee12a9a07705b
+ms.openlocfilehash: 10fcb7420c261379d596666589a0f6707cf70160
+ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71100327"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73019435"
 ---
 # <a name="view-related-content-in-the-power-bi-service"></a>Tarkastele aiheeseen liittyvää sisältöä Power BI -palvelussa
+
+[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
+
 **Aiheeseen liittyvä sisältö** -ruutu näyttää, miten Power BI -palvelun sisältösi -- koontinäytöt, raportit ja tietojoukot --on yhdistetty toisiinsa. **Aiheeseen liittyvä sisältö** -ruutu on myös paikka, jossa voi käynnistää toiminnon. Täällä voit esimerkiksi avata raporttinäkymän, avata raportin, luoda merkityksellisiä tietoja, analysoida tietoja Excelissä ja paljon muuta.  
 
 Power BI:ssä raporttien perustana ovat tietojoukot; raporttien visualisoinnit on sitten kiinnitetty raporttinäkymään ja raporttinäkymän visualisoinnit linkittyvät takaisin raportteihin. Mutta mistä tiedät mitkä raporttinäkymät isännöivät markkinointiraporttisi visualisointeja? Ja miten löydät ne raporttinäkymät? Onko hankinnan raporttinäkymässäsi käytössä visualisointeja useammasta kuin yhdestä tietojoukosta? Jos näin on, miten ne ovat nimetty ja miten voit avata ja muokata niitä? Käytetäänkö henkilöstöhallinnon tietojoukkoa raporteissa tai raporttinäkymissä ollenkaan? Vai voidaanko sitä siirtää aiheuttamatta rikkinäisiä linkkejä? Näihin kysymyksiin voidaan vastata **Aiheeseen liittyvä sisältö** -ruudussa.  Aiheeseen liittyvän sisällön esittelemisen lisäksi ruutu mahdollistaa sinulle myös toiminnot sisällön kanssa sekä helpon siirtymisen aiheeseen liittyvien sisältöjen välillä.
@@ -36,7 +39,7 @@ Katso kun Will tarkastelee raporttinäkymään liittyvää sisältöä. Kokeile 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/B2vd4MQrz4M#t=3m05s" frameborder="0" allowfullscreen></iframe>
 
-Kun raporttinäkymä tai raportti on avoinna, valitse kolme pistettä (...) valikkopalkissa ja valitse avattavasta luettelosta **Näytä aiheeseen liittyvät**.
+Kun raporttinäkymä tai raportti on avoinna, valitse **Enemmän vaihtoehtoja** (...) valikkopalkissa ja valitse avattavasta luettelosta **Näytä aiheeseen liittyvät**.
 
 ![Kolmen pisteen avattava luettelo](./media/end-user-related/power-bi-dropdown.png)
 

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 04/25/2019
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: f2d9046c907b78ce2c1bb2754007c34199877a08
-ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
+ms.openlocfilehash: 1993ac0b300bb582d7b8a1946ff63cf6316c2d52
+ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68523074"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73432205"
 ---
 # <a name="create-a-report-in-the-power-bi-service-by-importing-a-dataset"></a>Raportin luominen Power BI -palvelussa tuomalla tietojoukko
 Olet lukenut [Power BI -raportit](consumer/end-user-reports.md) ja haluat nyt luoda omasi. Voit luoda raportin eri tavoin. Tässä artikkelissa aloitamme luomalla perusraportin Excel-tietojoukosta Power BI -palvelussa. Kun ymmärrät raportin luomisen perusteet, lopussa olevat [Seuraavat vaiheet](#next-steps) vievät sinut monimutkaisempia raportteja koskevaan aiheisiin.  
@@ -29,7 +29,7 @@ Tämä raporttien luontimenetelmä alkaa tietojoukosta ja tyhjästä raporttipoh
 
 1. Luomme raportin Power BI -palvelun työtilassa, joten valitse aiemmin luotu työtila tai luo uusi.
    
-   ![Luettelo sovellustyötiloista](media/service-report-create-new/power-bi-workspaces2.png)
+   ![Luettelo työtiloista](media/service-report-create-new/power-bi-workspaces2.png)
 2. Valitse vasemman siirtymisruudun alareunasta **Nouda tiedot**.
    
    ![Nouda tiedot](media/service-report-create-new/power-bi-get-data3.png)

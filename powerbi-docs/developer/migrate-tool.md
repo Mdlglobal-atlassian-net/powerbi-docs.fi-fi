@@ -3,18 +3,17 @@ title: Power BI Embedded -siirtotyökalu
 description: Tämän siirtotyökalun avulla voit kopioida raportit Power BI Embedded Azure -palvelusta (PaaS) Power BI -palveluun (SaaS).
 author: rkarlin
 ms.author: rkarlin
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 06/30/2018
-ms.openlocfilehash: 9344a1a3dc4f682925da900cde8accfead783f88
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 2970744f89bf8fdc115be018d00c8f5b73d9ddfc
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61272030"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73880587"
 ---
 # <a name="power-bi-embedded-migration-tool"></a>Power BI Embedded -siirtotyökalu
 
@@ -130,9 +129,9 @@ Polku luodaan automaattisesti puolestasi. Voit halutessasi muuttaa tätä polkua
 > [!NOTE]
 > Tämä ei varsinaisesti suorita latausta palvelusta vaan vain määrittää rakenteen, mistä raportit ladataan.
 
-#### <a name="upload-plan"></a>Lataa suunnitelma palveluun
+#### <a name="upload-plan"></a>Lataa suunnitelma
 
-Voit täällä määrittää etuliitteen, jota käytetään Power BI -palvelussa luotavassa sovelluksen työtilassa. Sen jälkeen etuliitteenä toimii GUID-tunnus työtilalle, joka oli jo olemassa Azuressa.
+Voit täällä määrittää etuliitteen, jota käytetään Power BI -palvelussa luotavassa työtilassa. Sen jälkeen etuliitteenä toimii GUID-tunnus työtilalle, joka oli jo olemassa Azuressa.
 
 ![Lataa suunnitelma](media/migrate-tool/migrate-tool-upload-plan.png)
 
@@ -167,21 +166,21 @@ Kun lataus palvelusta on valmis, valitse **Luo ryhmät** -välilehti.
 
 ## <a name="step-3-create-groups"></a>Vaihe 3: Luo ryhmiä
 
-Kun olet ladannut saatavilla olevat raportit palvelusta, voit siirtyä **Luo ryhmät** -välilehteen. Tämä välilehti luo sovelluksen työtilat Power BI -palvelussa luomasi siirtosuunnitelman mukaan. Se luo sovelluksen työtilan nimellä, jonka annoit **Lataa**-välilehden **Analysoi ja suunnittele siirtoa** -kohdassa.
+Kun olet ladannut saatavilla olevat raportit palvelusta, voit siirtyä **Luo ryhmät** -välilehteen. Tämä välilehti luo työtilat Power BI -palvelussa luomasi siirtosuunnitelman mukaan. Se luo työtilan nimellä, jonka annoit **Lataa**-välilehden **Analysoi ja suunnittele siirtoa** -kohdassa.
 
 ![Luo ryhmiä](media/migrate-tool/migrate-tool-create-groups.png)
 
-Jos haluat luoda sovelluksen työtilat, voit valita joko **Luo valitut ryhmät** tai **Luo kaikki puuttuvat ryhmät**.
+Jos haluat luoda työtilat, voit valita joko **Luo valitut ryhmät** tai **Luo kaikki puuttuvat ryhmät**.
 
-Kun valitset jommankumman näistä vaihtoehdoista, sinua kehotetaan kirjautumaan sisään. *Haluat käyttää tunnistetietojasi Power BI -palvelulle, jonka haluat luoda sovelluksen työtiloissa.*
+Kun valitset jommankumman näistä vaihtoehdoista, sinua kehotetaan kirjautumaan sisään. *Haluat käyttää tunnistetietojasi Power BI -palvelulle, jonka haluat luoda työtiloissa.*
 
 ![Luo ryhmäkirjautuminen](media/migrate-tool/migrate-tool-create-group-sign-in.png)
 
-Tämä luo sovelluksen työtilan Power BI -palvelussa. Tämä ei lataa raportteja sovelluksen työtilaan.
+Tämä luo työtilan Power BI -palvelussa. Tämä ei lataa raportteja työtilaan.
 
-Voit varmistaa, että sovelluksen työtila luotiin kirjautumalla sisään Power BI:hin, ja että työtila on olemassa. Huomaat, että työtilassa ei ole mitään.
+Voit varmistaa, että työtila luotiin kirjautumalla sisään Power BI:hin, ja että työtila on olemassa. Huomaat, että työtilassa ei ole mitään.
 
-![Sovellustyötila](media/migrate-tool/migrate-tool-app-workspace.png)
+![työtila](media/migrate-tool/migrate-tool-app-workspace.png)
 
 Työtilan luomisen jälkeen voit siirtyä **Lataa palveluun** -välilehteen.
 
@@ -235,9 +234,9 @@ Voimme muuttaa epäonnistuneelle kohteelle SaaSTargetReportNamen nimeä.
 
 Voimme sitten avata suunnitelman uudelleen siirtotyökalussa ja ladata epäonnistuneen raportin palveluun.
 
-Kun palaamme takaisin Power BI -palveluun, näemme, että raportit ja tietojoukot on ladattu sovelluksen työtilaan.
+Kun palaamme takaisin Power BI -palveluun, näemme, että raportit ja tietojoukot on ladattu työtilaan.
 
-![Lataa sovellustyötila](media/migrate-tool/migrate-tool-upload-app-workspace.png)
+![Lataa työtila](media/migrate-tool/migrate-tool-upload-app-workspace.png)
 
 <a name="upload-local-file"></a>
 
@@ -264,7 +263,7 @@ Voit sitten päivittää tietojoukon yhteysmerkkijonon Power BI -palvelussa (Saa
 
 ## <a name="embedding"></a>Upottaminen
 
-Kun raportit on nyt siirretty Power BI Embedded Azure -palvelusta Power BI -palveluun, voit nyt päivittää sovelluksesi ja aloittaa raporttien upottamisen tässä sovelluksen työtilassa.
+Kun raportit on nyt siirretty Power BI Embedded Azure -palvelusta Power BI -palveluun, voit nyt päivittää sovelluksesi ja aloittaa raporttien upottamisen tässä työtilassa.
 
 Katso lisätietoja artikkelista [Miten Power BI Embedded -työtilakokoelman sisältö siirretään Power BI -palveluun](migrate-from-powerbi-embedded.md).
 
@@ -278,4 +277,4 @@ Katso lisätietoja artikkelista [Miten Power BI Embedded -työtilakokoelman sis�
 [JavaScript-upotuksen näyte](https://microsoft.github.io/PowerBI-JavaScript/demo/)  
 [Power BI Premiumin tekninen raportti](https://aka.ms/pbipremiumwhitepaper)  
 
-Onko sinulla muuta kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)
+Onko sinulla muuta kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)

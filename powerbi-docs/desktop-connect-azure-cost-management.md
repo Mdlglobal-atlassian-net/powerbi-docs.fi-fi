@@ -1,8 +1,7 @@
 ---
 title: Azure Cost Management -tietoihin yhdistäminen Power BI Desktopissa
-description: Voit yhdistää helposti Azureen ja saada merkityksellisiä tietoja kustannusten hallinnasta Power BI Desktopin avulla
+description: Voit yhdistää helposti Azureen ja saada merkityksellisiä tietoja Azuren kustannuksista ja käytöstä Power BI Desktopin avulla
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.custom: ''
 ms.service: powerbi
@@ -11,21 +10,21 @@ ms.topic: conceptual
 ms.date: 10/14/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 1ef9deac169873d7faee33abdae9f8f38aa09c6d
-ms.sourcegitcommit: 549401b0e1fad15c3603fe7f14b9494141fbb100
+ms.openlocfilehash: 1a09bd706a69156066f077bfb1668dd27448bd40
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "72308003"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73878595"
 ---
-# <a name="connect-to-azure-cost-management-data-in-power-bi-desktop"></a>Azure Cost Management -tietoihin yhdistäminen Power BI Desktopissa
+# <a name="connect-to-azure-cost-management-in-power-bi-desktop"></a>Azure Cost Managementiin yhdistäminen Power BI Desktopissa
 
 Power BI Desktopin Azure Cost Management -liittimellä voit luoda tehokkaita mukautettuja visualisointeja ja raportteja, joilla ymmärrät paremmin Azure-kulujasi. Azure Cost Management -liitin tukee tällä hetkellä asiakkaita, joilla on [Microsoft Customer Agreement](https://azure.microsoft.com/pricing/purchase-options/microsoft-customer-agreement/)- tai [Enterprise Agreement (EA)](https://azure.microsoft.com/pricing/enterprise-agreement/) -sopimus.  
 
-Azure Cost Management -liitin todennetaan Azureen OAuth 2.0:lla. Jos haluat muodostaa yhteyden, sinun täytyy käyttää [yrityksen järjestelmänvalvojan](https://docs.microsoft.com/azure/billing/billing-understand-ea-roles) tiliä (Enterprise Agreement -asiakkaat) tai [laskutustilin omistajan](https://docs.microsoft.com/azure/billing/billing-understand-mca-roles) tiliä (Microsoft Customer Agreement -asiakkaat). 
+Azure Cost Management -liitin käyttää OAuth 2.0 -todennusta Azuren kanssa ja tunnistaa käyttäjät, jotka käyttävät liitintä. Tässä prosessissa luodut tunnukset ovat käytettävissä määritetyn ajan. Power BI säilyttää tunnuksen seuraavaa kirjautumista varten. OAuth 2.0 on vakioprosessi, joka jatkuu taustalla, millä varmistetaan käyttöoikeuksien turvallinen käsittely. Jos haluat muodostaa yhteyden, sinun täytyy käyttää [yrityksen järjestelmänvalvojan](https://docs.microsoft.com/azure/billing/billing-understand-ea-roles) tiliä (Enterprise Agreement -asiakkaat) tai [laskutustilin omistajan](https://docs.microsoft.com/azure/billing/billing-understand-mca-roles) tiliä (Microsoft Customer Agreement -asiakkaat). 
 
 > [!NOTE]
-> Tämä liitin korvaa aiemmin käytössä olleen [Azure Cost Management (beeta)](desktop-connect-azure-consumption-insights.md) liittimen. Kaikki aiemmalla liittimellä luodut raportit täytyy luoda uudelleen tällä liittimellä.
+> Tämä liitin korvaa aiemmin käytössä olleet [ Azure Consumption Insights- ja Azure Cost Management (beeta)](desktop-connect-azure-consumption-insights.md) -liittimet. Kaikki aiemmalla liittimellä luodut raportit täytyy luoda uudelleen tällä liittimellä.
 
 ## <a name="connect-using-azure-cost-management"></a>Yhdistäminen Azure Cost Managementin avulla
 

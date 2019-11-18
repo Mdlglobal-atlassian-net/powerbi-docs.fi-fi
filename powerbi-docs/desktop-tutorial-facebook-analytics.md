@@ -2,7 +2,6 @@
 title: 'Opetusohjelma: Facebook-analytiikka Power BI Desktopin avulla'
 description: 'Opetusohjelma: Facebook-analytiikka Power BI Desktopin avulla'
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: tutorial
 ms.date: 09/06/2019
 ms.author: davidi
 LocalizationGroup: Learn more
-ms.openlocfilehash: 73f5d629806826eed0da51f5b7158d884d1c8725
-ms.sourcegitcommit: 226b47f64e6749061cd54bf8d4436f7deaed7691
+ms.openlocfilehash: 96811a2cfd7d08a210c4efd177e989abce16d25d
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/09/2019
-ms.locfileid: "70841407"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73876286"
 ---
 # <a name="tutorial-facebook-analytics-using-power-bi-desktop"></a>Opetusohjelma: Facebook-analytiikka Power BI Desktopin avulla
 
@@ -147,7 +146,7 @@ Nyt kun olet tuonut tietoja Facebook-sivulta, voit nopeasti ja helposti saada me
    
    ![Palkkikaavio](media/desktop-tutorial-facebook-analytics/barchart1.png)
    
-4. Valitse kolme pistettä (...) visualisoinnin oikeasta yläkulmasta ja lajittele taulukko sitten laskevaan järjestykseen kommenttien määrän mukaan valitsemalla **Lajittele kommenttien määrän mukaan**. 
+4. Valitse **Lisää vaihtoehtoja** (...) visualisoinnin oikeasta yläkulmasta ja lajittele taulukko sitten laskevaan järjestykseen kommenttien määrän mukaan valitsemalla **Lajittele kommenttien määrän mukaan**. 
    
    ![Lajittele kommenttien määrän mukaan](media/desktop-tutorial-facebook-analytics/barchart2.png)
    
@@ -184,7 +183,7 @@ Kaavion X-akselilla (kommenttien määrä) ei näytä tarkkoja arvoja, ja se nä
 
 Näyttää paremmalta, mutta kaikissa arvopisteiden otsikoissa näkyy desimaalin tarkkuus **.0**, joka on häiritsevä ja harhaanjohtava, koska **Julkaisujen määrän** täytyy olla kokonaisluku. Sinun on muutettava **Julkaisujen määrä** -sarakkeen tietotyypiksi kokonaisluku.
 
-1. Muokkaa tietotyyppiä napsauttamalla Kentät-luettelon **Kysely1**-kohtaa hiiren kakkospainikkeella tai siirtämällä hiiren osoitin sen päälle ja valitsemalla **Enemmän vaihtoehtoja** -ellipsi (...) ja sitten **Muokkaa kyselyä**. Voit myös valita **Muokkaa kyselyitä** valintanauhan Aloitus-välilehden **Ulkoiset tiedot** -alueelta ja sitten **Muokkaa kyselyitä** avattavasta luettelosta. Power BI Desktopin **Power Query -editori** avautuu erilliseen ikkunaan.
+1. Muokkaa tietotyyppiä napsauttamalla Kentät-luettelon **Kysely1**-kohtaa hiiren kakkospainikkeella tai siirtämällä hiiren osoitin sen päälle ja valitsemalla **Lisää vaihtoehtoja** (...) ja sitten **Muokkaa kyselyä**. Voit myös valita **Muokkaa kyselyitä** valintanauhan Aloitus-välilehden **Ulkoiset tiedot** -alueelta ja sitten **Muokkaa kyselyitä** avattavasta luettelosta. Power BI Desktopin **Power Query -editori** avautuu erilliseen ikkunaan.
    
    ![Muokkaa kyselyä Kentät-luettelosta](media/desktop-tutorial-facebook-analytics/editquery1.png)     ![Muokkaa kyselyitä valintanauhasta](media/desktop-tutorial-facebook-analytics/t_fb_editquery.png)
    
@@ -241,8 +240,8 @@ Kuten näet, on helppoa mukauttaa raporttiesi visualisointeja ja esittää tiedo
 Power BI Desktop tarjoaa saumattoman kokemuksen alusta loppuun. Sen avulla voit hakea tietoja laajasta tietolähteiden joukosta ja muotoilla ne analyysitarpeidesi mukaan ja visualisoida tiedot monipuolisilla ja vuorovaikutteisilla tavoilla. Kun raportti on valmis, voit [ladata sen Power BI -palveluun](desktop-upload-desktop-files.md) ja luoda siihen perustuvia koontinäyttöjä, joita voit jakaa muiden Power BI -käyttäjien kanssa.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
-* [Lue muita Power BI Desktop -opetusohjelmia](http://go.microsoft.com/fwlink/?LinkID=521937)
-* [Katso Power BI Desktop -videoita](http://go.microsoft.com/fwlink/?LinkID=519322)
-* [Käy Power BI -keskustelupalstalla](http://go.microsoft.com/fwlink/?LinkID=519326)
-* [Lue Power BI -blogia](http://go.microsoft.com/fwlink/?LinkID=519327)
+* [Lue muita Power BI Desktop -opetusohjelmia](https://go.microsoft.com/fwlink/?LinkID=521937)
+* [Katso Power BI Desktop -videoita](https://go.microsoft.com/fwlink/?LinkID=519322)
+* [Käy Power BI -keskustelupalstalla](https://go.microsoft.com/fwlink/?LinkID=519326)
+* [Lue Power BI -blogia](https://go.microsoft.com/fwlink/?LinkID=519327)
 

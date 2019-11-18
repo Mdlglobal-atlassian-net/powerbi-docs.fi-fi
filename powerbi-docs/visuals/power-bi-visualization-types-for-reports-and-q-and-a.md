@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 06/12/2019
+ms.date: 10/21/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: c039f4adc196e619dc81af38fb52cd07e89992f0
-ms.sourcegitcommit: 4ae1257c5d7b33aa2fafd91caf8b353a985c6771
+ms.openlocfilehash: 639ea11eca69eea53968ed702e0524f46a97cdc4
+ms.sourcegitcommit: 23ad768020a9daf129f69a462a2d46d59d2349d2
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "67161201"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72775957"
 ---
 # <a name="visualization-types-in-power-bi"></a>Visualisointityypit Power BI:ssä
 ## <a name="power-bi-visualizations"></a>Visualisoinnit Power BI:ssä
@@ -133,7 +133,7 @@ Lisätietoja on artikkelissa [Täytetyt kartat Power BI:ssä](power-bi-visualiza
 Lisätietoja on artikkelissa [Muotokartat Power BI:ssä](desktop-shape-map.md).
 
 
-### <a name="matrix"></a>Matrix
+### <a name="matrix"></a>Matriisi
 ![matriisi](media/power-bi-visualization-types-for-reports-and-q-and-a/matrix.png)
 
 >[!TIP]
@@ -146,6 +146,14 @@ Lisätietoja on artikkelissa [Matriisivisualisoinnit Power BI:ssä](desktop-matr
 
 >[!TIP]
 >Ympyräkaaviot näyttävät osien suhteen kokonaisuuteen. 
+
+### <a name="qa-visual"></a>Q&A-visualisointi
+![Q&A-visualisoinnit](media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-q-and-a.png)
+
+>[!TIP]
+>Samaan tapaan kuin [koontinäytön Q&A-kokemuksen kanssa](../power-bi-tutorial-q-and-a.md), Q&A-visualisoinnin avulla voit esittää kysymyksiä tiedoistasi käyttämällä luonnollista kieltä. 
+
+Lisätietoja on artikkelissa [Q&A-visualisoinnit Power BI:ssä](power-bi-visualization-q-and-a.md).
 
 ### <a name="r-script-visuals"></a>R-komentosarjavisualisoinnit
 ![R-visualisoinnit](media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-r-visuals.png)

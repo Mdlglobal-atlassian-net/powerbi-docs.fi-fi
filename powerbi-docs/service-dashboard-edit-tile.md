@@ -2,7 +2,6 @@
 title: Koontinäytön yksittäisen ruudun muokkaaminen
 description: Tässä opetusohjelmassa opastetaan ruudun luomisessa ja kiinnittämisessä koontinäyttöön sekä koontinäytön ruudun muokkaamisessa – ruudun siirtämisessä, koon muuttamisessa, nimen vaihtamisessa, kiinnittämisessä, poistamisessa ja hyperlinkin lisäämisessä.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 featuredvideoid: lJKgWnvl6bQ
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/02/2018
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: c1b6f7434724540a9ad5b579030c3ed54b32abed
-ms.sourcegitcommit: 762857c8ca09ce222cc3f8b006fa1b65d11e4ace
+ms.openlocfilehash: bdd2ec136ae741e15e0cb60d141c651cd5fb6749
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66720567"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73877477"
 ---
 # <a name="edit-or-remove-a-dashboard-tile"></a>Koontinäytön ruudun muokkaaminen tai poistaminen
 
@@ -83,9 +82,9 @@ Voit tehdä ruuduista erikokoisia: koko voi olla pienimmillään 1×1 ruutuyksik
 ![video](media/service-dashboard-edit-tile/pbigif_resizetile4.gif)
 
 - - -
-## <a name="the-ellipses--menu"></a>Kolmen pisteen valikko (...)
+## <a name="more-options--menu"></a>**Enemmän vaihtoehtoja** (...) -valikko
 
-1. Valitse ruudun oikeasta yläkulmasta kolme pistettä (...). 
+1. Valitse ruudun oikeasta yläkulmasta **Enemmän vaihtoehtoja** (...). 
    
    ![ruudun kolme pistettä](media/service-dashboard-edit-tile/power-bi-tile.png)
 
@@ -148,5 +147,5 @@ Oletusarvoisesti ruudun valitseminen siirtää käyttäjän raporttiin, josta ru
 
 [Power BI -palvelun peruskäsitteitä suunnittelijoille](service-basic-concepts.md)
 
-Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
+Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](https://community.powerbi.com/)
 

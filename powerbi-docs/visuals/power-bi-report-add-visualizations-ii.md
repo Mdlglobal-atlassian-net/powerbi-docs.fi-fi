@@ -7,53 +7,68 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 08/23/2018
+ms.date: 10/28/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: c42d96fea37a6309908dd357425c3d0504e18397
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: dc50c54f826dd695b0aab459bd3d68d0da792abe
+ms.sourcegitcommit: 2a61d8b1e2707a24fe1284a8a4034b11c3999842
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61410087"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73049160"
 ---
 # <a name="part-2-add-visualizations-to-a-power-bi-report"></a>Visualisointien lisääminen Power BI -raporttiin, osa 2
-[Osassa 1](power-bi-report-add-visualizations-ii.md) opettelit luomaan tavallisia visualisointeja valitsemalla kenttien nimien vieressä olevia valintaruutuja.  Osassa 2 opetetaan luomaan visualisointeja ja muokkaamaan niitä vetämis- ja pudottamistoiminnon avulla sekä hyödyntämällä **Kentät**- ja **Visualisoinnit**-paneeleja.
 
-### <a name="prerequisites"></a>Edellytykset
-- [Osa 1](power-bi-report-add-visualizations-ii.md)
-- Power BI Desktop – Raportteihin voi lisätä visualisointeja käyttämällä joko Power BI -palvelua tai Power BI Desktopia. Tässä opetusohjelmassa käytetään Power BI Desktopia. 
-- [Jälleenmyyntianalyysimalli](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix)
+[!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
+
+[Osassa 1](power-bi-report-add-visualizations-i.md) opettelit luomaan tavallisia visualisointeja valitsemalla kenttien nimien vieressä olevia valintaruutuja.  Osassa 2 opetetaan luomaan visualisointeja ja muokkaamaan niitä vetämis- ja pudottamistoiminnon avulla sekä hyödyntämällä **Kentät**- ja **Visualisoinnit**-paneeleja.
+
 
 ## <a name="create-a-new-visualization"></a>Uuden visualisoinnin luominen
 Tässä opetusohjelmassa perehdymme jälleenmyyntianalyysimallin tietojoukkoon ja luomme siitä muutamia olennaisimpia visualisointeja.
 
-### <a name="open-a-report-and-add-a-new-blank-page"></a>Avaa raportti ja lisää uusi tyhjä sivu.
-1. Avaa jälleenmyyntianalyysin .PBIX-mallitiedosto Power BI Desktop -versiossa. 
-   ![](media/power-bi-report-add-visualizations-ii/power-bi-open-desktop.png)   
+## <a name="prerequisites"></a>Edellytykset
 
-2. Lisää uusi sivu valitsemalla alareunasta keltainen plus-kuvake.
+Tässä opetusohjelmassa käytetään [Jälleenmyyntianalyysimallin PBIX-tiedostoa](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix).
 
-### <a name="add-a-visualization-that-looks-at-this-years-sales-compared-to-last-year"></a>Lisää visualisointi, jossa esitetään tämän vuoden myynti viime vuoteen verrattuna.
-1. Valitse **Myynti**-taulukosta **Myynti tänä vuonna** > **Arvo** ja **Myynti edellisvuonna**. Power BI luo pylväskaavion.  Se näyttää kiinnostavalta, joten haluat perehtyä myyntiin tarkemmin. Miltä myynti näyttää kuukausittain?  
+1. Valitse Power BI Desktopin valikkorivin vasemmasta yläosasta **Tiedosto** > **Avaa**
    
-   ![](media/power-bi-report-add-visualizations-ii/power-bi-barchart.png)
+2. **Jälleenmyyntianalyysimallin PBIX-tiedoston löytäminen**
+
+1. Avaa **Jälleenmyyntianalyysimallin PBIX-tiedosto** raporttinäkymässä ![Näyttökuva raporttinäkymän kuvakkeesta.](media/power-bi-visualization-kpi/power-bi-report-view.png).
+
+1. Valitse ![Näyttökuva keltaisesta välilehdestä.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) uuden sivun lisäämiseksi.
+
+## <a name="add-visualizations-to-the-report"></a>Visualisointien lisääminen raporttiin
+
+Luo visualisointi vetämällä kenttä **Kentät**-ruudussa. Luotavan visualisoinnin tyyppi riippuu valitun kentän tyypistä. Power BI käyttää tietotyyppiä määrittääkseen, mitä visualisointia käytetään tulosten näyttämiseen. Voit muuttaa visualisointia valitsemalla eri kuvakkeen Visualisoinnit-ruudusta. Muista, että kaikki visualisoinnit eivät voi näyttää tietojasi. Esimerkiksi maantieteelliset tiedot eivät näy oikein suppilokaavion tai viivankaavion avulla. 
+
+
+### <a name="add-an-area-chart-that-looks-at-this-years-sales-compared-to-last-year"></a>Lisää aluekaavio, jossa esitetään tämän vuoden myynti viime vuoteen verrattuna
+
+1. Valitse **Myynti**-taulukosta **Myynti tänä vuonna** > **Arvo** ja **Myynti edellisvuonna**. Power BI luo pylväskaavion.  Kaavio on kiinnostava, joten haluat perehtyä myyntiin tarkemmin. Miltä myynti näyttää kuukausittain?  
+   
+   ![Näyttökuva, jossa näkyy pylväskaavio](media/power-bi-report-add-visualizations-ii/power-bi-start.png)
+
 2. Vedä Aika-taulukosta **Akseli**-alueelle **FiscalMonth**.  
-   ![](media/power-bi-report-add-visualizations-ii/power-bi-month.png)
-3. [Vaihda visualisointi](power-bi-report-change-visualization-type.md) aluekaavioksi.  Valittavissa on monenlaisia visualisointityyppejä. Voit päättää, mitä niistä haluat käyttää katsomalla [niiden kuvaukset, vinkit parhaista käytännöistä ja opetusohjelmia](power-bi-visualization-types-for-reports-and-q-and-a.md). Valitse Visualisoinnit-ruudusta aluekaavion kuvake ![](media/power-bi-report-add-visualizations-ii/power-bi-areachart.png).
-4. Lajittele visualisointi valitsemalla kolme pistettä ja valitsemalla **Lajitteluperuste: FiscalMonth**.
+   ![Näyttökuva, jossa näkyy pylväskaavio, jonka akselina on FiscalMonth](media/power-bi-report-add-visualizations-ii/power-bi-fiscalmonth.png)
+
+3. [Vaihda visualisointi](power-bi-report-change-visualization-type.md) aluekaavioksi.  Valittavissa on monenlaisia visualisointityyppejä. Voit päättää, mitä niistä haluat käyttää katsomalla [niiden kuvaukset, vinkit parhaista käytännöistä ja opetusohjelmia](power-bi-visualization-types-for-reports-and-q-and-a.md). Valitse Visualisoinnit-ruudusta aluekaaviokuvake ![Aluekaavio-kuvake Visualisoinnit-ruudussa](media/power-bi-report-add-visualizations-ii/power-bi-area-chart.png).
+
+4. Lajittele visualisointi valitsemalla **Enemmän vaihtoehtoja** (...) ja valitsemalla **Lajitteluperuste** >  **FiscalMonth**.
+
 5. [Muokkaa visualisoinnin kokoa](power-bi-visualization-move-and-resize.md) valitsemalla visualisointi, tarttumalla kiinni yhdestä sen kehyksessä olevista ympyröistä ja vetämällä. Tee visualisoinnista niin suuri, ettei vierityspalkkia enää näy, ja niin pieni, että tilaa jää toisellekin visualisoinnille.
    
    ![](media/power-bi-report-add-visualizations-ii/pbi_part2_7b.png)
 6. [Tallenna raportti](../service-report-save.md).
 
 ### <a name="add-a-map-visualization-that-looks-at-sales-by-location"></a>Lisää karttavisualisointi, joka näyttää myynnin sijainnin mukaan.
-1. Valitse **Kauppa**-taulukosta **Alue**. Power BI tunnistaa, että Alue-arvo tarkoittaa sijaintia, ja luo karttavisualisoinnin.  
-   ![](media/power-bi-report-add-visualizations-ii/power-bi-map.png)
-2. Vedä Koko-alueelle vaihtoehto **Myymälöitä yhteensä**.  
-   ![](media/power-bi-report-add-visualizations-ii/power-bi-map2.png)
-3. Lisää visualisoinnille selite.  Jos haluat nähdä tiedot kaupan nimen mukaan, vedä selitealueelle vaihtoehto **Ketju**.  
-   ![](media/power-bi-report-add-visualizations-ii/power-bi-legend.png)
+
+1. Valitse **Kauppa**-taulukosta **Alue**. Vedä Koko-alueelle vaihtoehto **Myymälöitä yhteensä**. Power BI tunnistaa, että Alue-arvo tarkoittaa sijaintia, ja luo karttavisualisoinnin.  
+   ![Aluekaavio](media/power-bi-report-add-visualizations-ii/power-bi-map1.png)
+
+2. Lisää visualisoinnille selite.  Jos haluat nähdä tiedot kaupan nimen mukaan, vedä **Kauppa** > **Ketju** selitealueelle.  
+   ![](media/power-bi-report-add-visualizations-ii/power-bi-chain.png)
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 * Lisätietoja [Power BI -raporttien visualisoinneista](power-bi-report-visualizations.md).  

@@ -10,12 +10,12 @@ ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.custom: seodec18
 ms.date: 07/29/2019
-ms.openlocfilehash: 15c16e2e065148666eee6c67a511c5e412bc334e
-ms.sourcegitcommit: b602cdffa80653bc24123726d1d7f1afbd93d77c
+ms.openlocfilehash: 9c35d74249516b25a756a8a90ce666092e585a72
+ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70237400"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73431074"
 ---
 # <a name="tutorial-embed-power-bi-content-into-an-application-for-your-organization"></a>Opetusohjelma: Power BI -sisällön upottaminen sovellukseen organisaatiolle
 
@@ -45,7 +45,7 @@ Jos sinulla ei ole Azure-tilausta, luo [ilmainen tili](https://azure.microsoft.c
 
 Ennen kuin ryhdyt upottamaan raportteja, raporttinäkymiä tai ruutuja sovellukseesi, varmista, että ympäristösi sallii upottamisen Power BI:n avulla.
 
-Voit käyttää [upottamisen määritystyökalua](https://aka.ms/embedsetup/UserOwnsData). Sillä pääset nopeasti alkuun ja sillä voit ladata mallisovelluksen, jossa käydään läpi sekä käyttöympäristön luominen että raportin upottaminen. Jos kyseessä on sivutetun raportin upottaminen, sinun on määritettävä vähintään P1-kapasiteetti luodulle sovelluksen työtilalle.
+Voit käyttää [upottamisen määritystyökalua](https://aka.ms/embedsetup/UserOwnsData). Sillä pääset nopeasti alkuun ja sillä voit ladata mallisovelluksen, jossa käydään läpi sekä käyttöympäristön luominen että raportin upottaminen. Jos kyseessä on sivutetun raportin upottaminen, sinun on määritettävä vähintään P1-kapasiteetti luodulle työtilalle.
 
 Jos haluat määrittää ympäristön manuaalisesti, jatka lukemista.
 
@@ -57,13 +57,13 @@ Sinun on suoritettava loppuun **palvelinpuolen verkkosovelluksen** rekisteröint
 
 ## <a name="set-up-your-power-bi-environment"></a>Power BI -ympäristön määrittäminen
 
-### <a name="create-an-app-workspace"></a>Sovelluksen työtilan luominen
+### <a name="create-a-workspace"></a>Luo työtila
 
-Jos upotat asiakkaille raportteja, raporttinäkymiä tai ruutuja, sisältö tulee sijoittaa sovelluksen työtilaan. Voit ottaa käyttöön erityyppisiä työtiloja: [perinteisiä työtiloja](../service-create-workspaces.md) tai [uusia työtiloja](../service-create-the-new-workspaces.md).
+Jos upotat asiakkaille raportteja, raporttinäkymiä tai ruutuja, sisältö tulee sijoittaa työtilaan. Voit ottaa käyttöön erityyppisiä työtiloja: [perinteisiä työtiloja](../service-create-workspaces.md) tai [uusia työtiloja](../service-create-the-new-workspaces.md).
 
 ### <a name="create-and-publish-your-power-bi-reports"></a>Luo ja julkaise Power BI -raportteja
 
-Voit luoda raportteja ja tietojoukkoja käyttämällä Power BI Desktopia. Voit sitten julkaista raportit sovellustyötilassa. Raportit julkaiseva loppukäyttäjä tarvitsee Power BI Pro ‑käyttöoikeudet sovellustyötilassa julkaisemiseen.
+Voit luoda raportteja ja tietojoukkoja käyttämällä Power BI Desktopia. Voit sitten julkaista raportit työtilassa. Raportit julkaiseva loppukäyttäjä tarvitsee Power BI Pro ‑käyttöoikeudet työtilassa julkaisemiseen.
 
 1. Lataa malli [Esittely](https://github.com/Microsoft/powerbi-desktop-samples) GitHubista.
 
@@ -73,7 +73,7 @@ Voit luoda raportteja ja tietojoukkoja käyttämällä Power BI Desktopia. Voit 
 
    ![Power BI Desktop -raportin malli](media/embed-sample-for-your-organization/embed-sample-for-your-organization-027.png)
 
-3. Julkaise sovelluksen työtilassa.
+3. Julkaise työtilassa.
 
    ![Julkaise Power BI Desktop -raportti](media/embed-sample-for-your-organization/embed-sample-for-your-organization-028.png)
 
@@ -83,7 +83,7 @@ Voit luoda raportteja ja tietojoukkoja käyttämällä Power BI Desktopia. Voit 
    
 ### <a name="create-and-publish-your-paginated-reports"></a>Luo ja julkaise sivutettuja raportteja
 
-Voit luoda sivutettuja raportteja käyttämällä [Power BI -raportin muodostinta](../paginated-reports-report-builder-power-bi.md#create-reports-in-power-bi-report-builder). Sen jälkeen voit [ladata raportin](../paginated-reports-quickstart-aw.md#upload-the-report-to-the-service) sovelluksen työtilaan, jolle on määritetty vähintään P1-kapasiteetti. Raportin lataavalla käyttäjällä on oltava Power BI Pro -käyttöoikeus, jotta hän voi julkaista sovelluksen työtilassa.
+Voit luoda sivutettuja raportteja käyttämällä [Power BI -raportin muodostinta](../paginated-reports-report-builder-power-bi.md#create-reports-in-power-bi-report-builder). Sen jälkeen voit [ladata raportin](../paginated-reports-quickstart-aw.md#upload-the-report-to-the-service) työtilaan, jolle on määritetty vähintään P1-kapasiteetti. Raportin lataavalla käyttäjällä on oltava Power BI Pro -käyttöoikeus, jotta hän voi julkaista työtilassa.
    
 ## <a name="embed-your-content-by-using-the-sample-application"></a>Upota sisältöä mallisovelluksen avulla
 
@@ -130,7 +130,7 @@ Saat **ApplicationID**:n seuraavasti:
 
 ### <a name="workspace-id"></a>Työtilan tunnus
 
-Anna **workspaceId**-kohtaan Power BI:n sovelluksen työtilan GUID. Voit hakea nämä tiedot joko URL-osoitteesta, kun olet kirjautunut Power BI -palveluun, tai PowerShellin avulla.
+Anna **workspaceId**-kohtaan Power BI:n työtilan GUID. Voit hakea nämä tiedot joko URL-osoitteesta, kun olet kirjautunut Power BI -palveluun, tai PowerShellin avulla.
 
 URL-OSOITE <br>
 
@@ -376,11 +376,11 @@ function updateEmbedReport() {
 
 ## <a name="using-a-power-bi-premium-dedicated-capacity"></a>Power BI Premiumille varatun kapasiteetin käyttö
 
-Kun olet nyt kehittänyt sovelluksesi, on aika varata sovelluksen työtilalle kapasiteettia.
+Kun olet nyt kehittänyt sovelluksesi, on aika varata työtilalle kapasiteettia.
 
 ### <a name="create-a-dedicated-capacity"></a>Luo varattua kapasiteettia
 
-Luomalla varattua kapasiteettia voit hyödyntää sitä, että sovellustyötilan sisällölle varataan tietty resurssi. Sivutettujen raporttien osalta sovelluksen työtila on varmistettava vähintään P1-kapasiteetilla. Voit luoda varattua kapasiteettia käyttämällä [Power BI Premiumia](../service-premium-what-is.md).
+Luomalla varattua kapasiteettia voit hyödyntää sitä, että työtilan sisällölle varataan tietty resurssi. Sivutettujen raporttien osalta työtila on varmistettava vähintään P1-kapasiteetilla. Voit luoda varattua kapasiteettia käyttämällä [Power BI Premiumia](../service-premium-what-is.md).
 
 Seuraavassa taulukossa esitetään Power BI Premiumin SKU:t, jotka ovat käytettävissä [Microsoft Office 365:ssä](../service-admin-premium-purchase.md):
 
@@ -399,9 +399,9 @@ Seuraavassa taulukossa esitetään Power BI Premiumin SKU:t, jotka ovat käytett
 > - Kun yrität upottaa Microsoft Office -sovelluksilla, EM SKU:iden avulla voit käyttää maksuttoman Power BI -käyttöoikeuden sisältöä. Et kuitenkaan voi käyttää sisältöä maksuttomalla Power BI -käyttöoikeudella, kun käytössäsi on Powerbi.com tai Power BI -mobiilisovellus.
 > - Kun yrität upottaa Microsoft Office -sovelluksilla, Powerbi.comin tai Power BI -mobiilisovellusten avulla voit käyttää maksuttoman Power BI -käyttöoikeuden sisältöä.
 
-### <a name="assign-an-app-workspace-to-a-dedicated-capacity"></a>Määritä sovellustyötila varattuun kapasiteettiin
+### <a name="assign-a-workspace-to-a-dedicated-capacity"></a>Määritä työtila varattuun kapasiteettiin
 
-Kun olet luonut varatun kapasiteetin, voit määrittää sovellustyötilan kyseiselle varatulle kapasiteetille. Seuraa näitä ohjeita:
+Kun olet luonut varatun kapasiteetin, voit määrittää työtilan kyseiselle varatulle kapasiteetille. Seuraa näitä ohjeita:
 
 1. Laajenna Power BI -palvelussa työtiloja ja valitse ellipsikuvake työtilalle, jota käytät sisällön upottamiseen. Valitse **Muokkaa työtiloja**.
 
@@ -411,9 +411,9 @@ Kun olet luonut varatun kapasiteetin, voit määrittää sovellustyötilan kysei
 
     ![Määritä varattu kapasiteetti](media/embed-sample-for-your-organization/embed-sample-for-your-organization-024.png)
 
-3. **Tallennuksen** jälkeen sovellustyötilan nimen vieressä pitäisi näkyä vinoneliö.
+3. **Tallennuksen** jälkeen työtilan nimen vieressä pitäisi näkyä vinoneliö.
 
-    ![Sovellustyötila sidottuna kapasiteettiin](media/embed-sample-for-your-organization/embed-sample-for-your-organization-037.png)
+    ![työtila sidottuna kapasiteettiin](media/embed-sample-for-your-organization/embed-sample-for-your-organization-037.png)
 
 ## <a name="admin-settings"></a>Järjestelmänvalvojan asetukset
 

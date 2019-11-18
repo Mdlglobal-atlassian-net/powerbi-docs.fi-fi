@@ -11,14 +11,17 @@ ms.topic: conceptual
 ms.date: 09/18/2019
 ms.author: mihart
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 4e211677026d66b89631063cf07e38ce1e46ee10
-ms.sourcegitcommit: 7a0ce2eec5bc7ac8ef94fa94434ee12a9a07705b
+ms.openlocfilehash: 928b69bc1f7e8210f66bd1b99e211a7fe28a5a00
+ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71100183"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73019565"
 ---
 # <a name="printing-from-the-power-bi-service"></a>Power BI -palvelusta tulostaminen
+
+[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
+
 Power BI -palvelusta voit tulostaa koko koontinäytön, koontinäytön yksittäisen ruudun, raporttisivun tai raportin visualisoinnin. Raportteja voi tulostaa vain yhden sivun kerrallaan – et voi tulostaa koko raportin kerralla.
 
    > [!NOTE]
@@ -37,7 +40,7 @@ Power BI -palvelusta voit tulostaa koko koontinäytön, koontinäytön yksittäi
 
 ## <a name="print-a-dashboard-tile"></a>Koontinäytön yksittäisen ruudun tulostaminen
 1. Avaa koontinäyttö [koko näytön tilaan](end-user-focus.md) valitsemalla yläreunan valikkopalkista koko näytön kuvake ![koko näytön kuvake](./media/end-user-print/power-bi-full-screen-icon.png).
-3. [Avaa ruutu tarkastelutilassa](end-user-focus.md) kuljettamalla osoitinta sen kohdalla kunnes kolme pistettä (...) tulevat näkyviin ja valitsemalla **Avaa tarkastelutilassa** tai kohdistuskuvake ![Kohdistuskuvake](./media/end-user-print/power-bi-focus-icon.png).
+3. [Avaa ruutu tarkastelutilassa](end-user-focus.md) kuljettamalla osoitinta sen kohdalla kunnes **Enemmän vaihtoehtoja** (...) tulee näkyviin ja valitsemalla **Avaa tarkastelutilassa** tai kohdistuskuvake ![Kohdistuskuvake](./media/end-user-print/power-bi-focus-icon.png).
    
     ![kolmen pisteen valikko](./media/end-user-print/power-bi-menu-options.png)
 4. Vie hiiren osoitin ruudun kohdalle, jolloin näkyviin tulee asetusvalikko.

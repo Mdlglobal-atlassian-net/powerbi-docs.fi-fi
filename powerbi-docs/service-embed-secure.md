@@ -10,12 +10,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 05/20/2019
 LocalizationGroup: Share your work
-ms.openlocfilehash: 3c6dc26ee1cf806ff85a9452c024e7ccbd210a25
-ms.sourcegitcommit: cc4b18d55b2dca8fdb1bef00f53a0a808c41432a
+ms.openlocfilehash: d140e39cdd30f5e2078f24c55fda5ea7040e0ad4
+ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68867100"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73431875"
 ---
 # <a name="embed-a-report-in-a-secure-portal-or-website"></a>Raportin upottaminen turvalliseen portaaliin tai sivustoon
 
@@ -49,7 +49,7 @@ Uuden Power BI -raporttien **Upotus**-ominaisuuden avulla voit antaa käyttäjil
 
 **Upota**-asetus ei automaattisesti salli käyttäjien tarkastella raporttia. Käyttöoikeuksien näyttäminen on määritetty Power BI -palvelussa.
 
-Power BI -palvelussa voit jakaa upotettuja raportteja käyttäjille, jotka tarvitsevat käyttöoikeuksia. Jos käytät Office 365 -ryhmää, voit lisätä käyttäjän sovellustyötilan jäseneksi. Lisätietoja on ohjeaiheessa [Sovellustyötilan hallinta Power BI:ssä ja Office 365:ssä](service-manage-app-workspace-in-power-bi-and-office-365.md).
+Power BI -palvelussa voit jakaa upotettuja raportteja käyttäjille, jotka tarvitsevat käyttöoikeuksia. Jos käytät Office 365 -ryhmää, voit lisätä käyttäjän työtilan jäseneksi. Lisätietoja on ohjeaiheessa [Työtilan hallinta Power BI:ssä ja Office 365:ssä](service-manage-app-workspace-in-power-bi-and-office-365.md).
 
 ## <a name="licensing"></a>Käyttöoikeudet
 

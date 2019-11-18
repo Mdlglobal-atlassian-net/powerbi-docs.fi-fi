@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 06/06/2019
-ms.openlocfilehash: 4dda73794c888d89ad67f1af23bfb8c38eb43f61
-ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
+ms.openlocfilehash: db79c33abe6f9e472dc29db007c4485d7a8d861e
+ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72020790"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73431614"
 ---
 # <a name="create-an-embedded-data-source-for-paginated-reports-in-the-power-bi-service"></a>Upotetun tietolähteen luominen sivutettuun raporttiin Power BI -palvelussa
 
@@ -72,7 +72,7 @@ Katso lisätiedot kohdasta [Raporttitiedot Power BI:n raportin muodostimessa](re
 
 Power BI-tietojoukkoihin yhdistyvät sivutetut raportit noudattavat Power BI:n jaettujen tietojoukkojen sääntöjä pienen muutoksin.  Varmista, että noudatat seuraavia ohjeita, jotta käyttäjät voivat tarkastella sivutettuja raportteja oikein Power BI -tietojoukkoja käyttämällä ja jotta tarkastelijoilla on käytössä ja pakotettuna rivitason suojaus (RLS):
 
-### <a name="classic-apps-and-app-workspaces"></a>Perinteiset sovellukset ja sovelluksen työtilat
+### <a name="classic-apps-and-workspaces"></a>Perinteiset sovellukset ja työtilat
 
 - .rdl samassa työtilassa kuin tietojoukko (sama omistaja): Tuetaan
 - .rdl eri työtilassa kuin tietojoukko (sama omistaja): Tuetaan
@@ -82,7 +82,7 @@ Power BI-tietojoukkoihin yhdistyvät sivutetut raportit noudattavat Power BI:n j
 - .rdl samassa työtilassa kuin tietojoukko (eri omistaja): Jokaiselle raporttia tietojoukon tasolla tarkastelevalle käyttäjälle on määritettävä muodostamisoikeus
 - Roolitason suojaus: Jotta suojaus voidaan pakottaa, jokaiselle raporttia tietojoukon tasolla tarkastelevalle käyttäjälle on määritettävä muodostamisoikeus.
 
-### <a name="new-experience-apps-and-app-workspaces"></a>Uuden käyttökokemuksen sovellukset ja sovelluksen työtilat
+### <a name="new-experience-apps-and-workspaces"></a>Uuden käyttökokemuksen sovellukset ja työtilat
 
 - .rdl samassa työtilassa kuin tietojoukko: Tuetaan
 - .rdl eri työtilassa kuin tietojoukko (sama omistaja): Tuetaan

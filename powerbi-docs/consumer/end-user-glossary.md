@@ -9,12 +9,12 @@ ms.subservice: powerbi-consumer
 ms.topic: conceptual
 ms.date: 09/04/2019
 ms.author: mihart
-ms.openlocfilehash: b9622a08506c6f5ade900296d91b449c64dc374c
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: a48589e6126203856a306de796c964ce6e347c26
+ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "70903667"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73429862"
 ---
 # <a name="glossary-for-power-bi-service"></a>Power BI -palvelun sanasto
 Power BI -palvelussa saattaa olla ennestään tuntematonta tai sekavalta vaikuttavaa terminologiaa. Sanasto on hyvä paikka termien hakuun, joten se on hyvä lisätä suosikkeihin. Toinen hyvä resurssi lisätietojen saamiseen Power BI -palvelun muodostavista rakenneosista ovat [peruskäsitteet](end-user-basic-concepts.md). Peruskäsitteet tarjoavat korkean tason yleiskatsauksen Power BI:n *osiin* ja niiden yhteyksiin.
@@ -37,10 +37,8 @@ Tämä sanasto on yhteisön luoma.  Etkö näe etsimääsi sanaa? Pyydä meitä 
 
 **answer card, answer page (vastauskortti, vastaussivu)** Katso Cortanan vastauskortti.
 
-**app, apps (sovellus, sovellukset)**
+**app, apps (sovellus, sovellukset)** 
 
- 
-**app workspace (sovelluksen työtila)** Kaikki Power BI:n työtilat omaa työtilaa lukuun ottamatta ovat nyt sovelluksen työtiloja. Sisältö voidaan koota Power BI -sovellukseen. Premium-kapasiteettiin tallennettu sisältö voidaan jakaa maksuttoman version käyttäjien kanssa. Henkilökohtaisia työtiloja (Oma työtila -kohdassa) voidaan isännöidä Premium-kapasiteetissa.  
 
 **AppSource** Keskitetty verkkosäilö, jossa voit selata ja tarkastella ladattavia koontinäyttöjä, raportteja, tietojoukkoja ja sovelluksia.
 
@@ -54,7 +52,7 @@ Tämä sanasto on yhteisön luoma.  Etkö näe etsimääsi sanaa? Pyydä meitä 
 
 **bookmark (kirjanmerkki)** Näkymä raportin Kirjanmerkit-ruutuun tallennetuista tiedoista Power BI Desktopissa tai -palvelussa. Desktopissa kirjanmerkit tallennetaan .pbix-raporttitiedostoon raportin jakamista varten Power BI -palvelussa.
   
-**breadcrumbs (navigointipolku)** Ylävasemmalla olevalla navigointipolulla voi siirtyä nopeasti sovelluksen työtilojen välillä.
+**breadcrumbs (navigointipolku)** Ylävasemmalla olevalla navigointipolulla voi siirtyä nopeasti työtilojen välillä.
 
 ## <a name="c"></a>C
 
@@ -177,7 +175,7 @@ Vasemmanpuoleinen tai vasen siirtymisruutu.
 
 **modeling (mallinnus)** [Power BI Desktop] Niiden tietojen valmisteleminen käyttöä varten, joihin olet muodostanut yhteyden Power BI:ssä. Tämä sisältää suhteiden luomisen taulukoiden välillä useissa tietolähteissä, mittarien luomisen ja arvojen määrittämisen.
 
-**My workspace (Oma työtila)** Jokaisen Power BI -asiakkaan työtila sisällön luomiselle. Jos he haluavat niputtaa jotakin täällä luotua sovellukseksi ja heillä on *suunnittelijan* käyttöoikeudet, he lataavat sisällön soveltuvaan sovelluksen työtilaan tai luovat uuden.
+**My workspace (Oma työtila)** Jokaisen Power BI -asiakkaan työtila sisällön luomiselle. Jos he haluavat niputtaa jotakin täällä luotua sovellukseksi ja heillä on *suunnittelijan* käyttöoikeudet, he lataavat sisällön soveltuvaan työtilaan tai luovat uuden.
 
 ## <a name="n"></a>N
 
@@ -223,7 +221,7 @@ Seuraavat maininnat ja ahtaat tilat: siirtymispalkki
 
 **Power BI**, **Power BI -palvelu**, **Power BI Desktop**, **Power BI -mobiilisovellus**, Power BI -palvelutarjonnan osia. *Power BI* on yleinen termi. Sitä käytetään usein tuotteen koko nimen, kuten *Power BI -palvelu* ja *Power BI -mobiilisovellus*, sijaan, tuotteen koko nimen ensimmäisen maininnan jälkeen.
 
-**Power BI Desktop** Kutsutaan myös nimellä *Desktop*. Ilmainen Power BI:n Windows-sovellus, jonka voit asentaa paikalliseen tietokoneeseen ja jonka avulla voit muodostaa yhteyden tietoihin sekä muuntaa ja visualisoida niitä. Raportin suunnittelijat ja järjestelmänvalvojat käyttävät. Lisätietoja on artikkelissa [Mikä on Power BI?](../power-bi-overview.md).
+**Power BI Desktop** Kutsutaan myös nimellä *Desktop*. Ilmainen Power BI:n Windows-sovellus, jonka voit asentaa paikalliseen tietokoneeseen ja jonka avulla voit muodostaa yhteyden tietoihin sekä muuntaa ja visualisoida niitä. Raportin suunnittelijat ja järjestelmänvalvojat käyttävät. Lisätietoja on artikkelissa [Mikä on Power BI?](../fundamentals/power-bi-overview.md).
 
 **Power BI Embedded** Kehittäjien käyttämä tuote Power BI -koontinäyttöjen ja -raporttien upottamiseen omiin sovelluksiin, sivustoihin ja työkaluihin.
 
@@ -233,7 +231,7 @@ Seuraavat maininnat ja ahtaat tilat: siirtymispalkki
 
 **Power BI Report Server (Power BI -raporttipalvelin)** SSRS:n uusi tuotemerkillinen tarjooma, joka julkaistaan Power BI Premiumin kanssa ja jonka avulla organisaatiot voivat luoda hajautettuja BI- yhdistelmäjärjestelmiä (pilvipalvelujen ja paikallisen käyttöönoton yhdistelmä). Embedded tarjoaa lokalisoidun keinon tallentaa ja hallita Power BI -raportteja.
 
-**Power BI service (Power BI -palvelu)** Verkossa oleva SaaS (Software as a service) -palvelu. Lisätietoja on artikkelissa [Mikä on Power BI?](../power-bi-overview.md).
+**Power BI service (Power BI -palvelu)** Verkossa oleva SaaS (Software as a service) -palvelu. Lisätietoja on artikkelissa [Mikä on Power BI?](../fundamentals/power-bi-overview.md).
 
 **Power BI service connector (Power BI -palvelun liitin)** Tämän liittimen avulla Power BI Desktop -käyttäjät voivat muodostaa yhteyden Power BI -palvelun tietojoukkoihin Desktopista. He voivat luoda mallin kerran ja käyttää sitä uudelleen monissa raporteissa ja koontinäytöissä.
 
@@ -326,7 +324,7 @@ Power BI -raporttinäkymät sisältävät raporttiruutuja.
 
 **workbook (työkirja)** Excel-työkirja, jota voidaan käyttää tietolähteenä. Työkirja voi sisältää tietomallin, johon on ladattu yksi tai useampi tietotaulukko käyttämällä linkitettyjä taulukoita, Power Queryä tai Power Pivotia.
 
-**workspace (työtila)** Työtilat ovat Power BI:ssä olevia säilöjä koontinäytöille, raporteille ja tietojoukoille. Katso sovelluksen työtila tässä termikokoelmassa.
+**workspace (työtila)** Työtilat ovat Power BI:ssä olevia säilöjä koontinäytöille, raporteille ja tietojoukoille. Käyttäjät voivat työskennellä yhdessä missä tahansa työtilassa paitsi Omassa työtilassa. Sisältö voidaan koota Power BI -sovellukseen. Premium-kapasiteettiin tallennettu sisältö voidaan jakaa maksuttoman version käyttäjien kanssa. Henkilökohtaisia työtiloja (Oma työtila -kohdassa) voidaan isännöidä Premium-kapasiteetissa.
 
 ## <a name="x"></a>X
 **x-axis (x-akseli)**  

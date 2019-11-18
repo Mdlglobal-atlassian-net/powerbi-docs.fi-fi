@@ -10,14 +10,17 @@ ms.topic: conceptual
 ms.date: 09/18/2019
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 46f9d40b5e556c0d306aa77243a49835fca9d812
-ms.sourcegitcommit: 200291eac5769549ba5c47ef3951e2f3d094426e
+ms.openlocfilehash: 5d81b1e69d9cfbba6e3ed57f678af75dab1698c3
+ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71141721"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73019789"
 ---
 # <a name="your-content-is-up-to-date"></a>Sisältösi on ajan tasalla
+
+[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
+
 *Kuluttajana* olet kosketuksessa sisältöön, jonka ovat luoneet ja jakaneet kanssasi *suunnittelijat*. Saatat ihmetellä, onko sisältö ajan tasalla, tai ehkä haluat vain tietää, milloin sisältö on viimeksi päivitetty. Kun tiedät käsitteleväsi uusinta sisältöä, se antaa sinulle luottamuksen tunteen.  
  
 ![Power BI -koontinäyttö](media/end-user-fresh/power-bi-dashboards.png)
@@ -63,7 +66,7 @@ Jos olet kiinnostunut, voit hakea suurimmalle osalle sisällöstä sen viimeisen
 ### <a name="dashboard-tiles"></a>Koontinäytön ruudut
 Tarkastele koontinäytön ruutua tarkastelutilassa, niin saat nähdä sen viimeisimmän päivityksen aikaleiman.
 
-1. Valitse koontinäytön ruudussa kolme pistettä (...) ja valitse sitten **Avaa tarkastelutilassa**.
+1. Valitse koontinäytön ruudussa **Enemmän vaihtoehtoja** (...) ja valitse sitten **Avaa tarkastelutilassa**.
 
     ![valikko joka tulee näkyviin kun olet valinnut kolme pistettä](media/end-user-fresh/power-bi-focus-mode.png)
 
@@ -72,7 +75,7 @@ Tarkastele koontinäytön ruutua tarkastelutilassa, niin saat nähdä sen viimei
     ![laajennettu selain näyttää viimeisimmän päivityksen](media/end-user-fresh/power-bi-last-refresh2.png)
 
 ### <a name="dashboards-and-reports"></a>Koontinäytöt ja raportit
-Toinen tapa hakea viimeisin päivityspäivämäärä on käyttämällä kohtaa **Näytä aiheeseen liittyvät**.  **Näytä aiheeseen liittyvät** on käytettävissä valitsemalla kolme pistettä (...) Power BI:n ylävalikkorivissä.
+Toinen tapa hakea viimeisin päivityspäivämäärä on käyttämällä kohtaa **Näytä aiheeseen liittyvät**.  **Näytä aiheeseen liittyvät** on käytettävissä valitsemalla **Enemmän vaihtoehtoja** (...) Power BI:n ylävalikkorivistä.
 
 ![Valitse valikosta Näytä aiheeseen liittyvät](media/end-user-fresh/power-bi-view-related-dropdown.png)
 

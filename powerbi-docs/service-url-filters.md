@@ -3,20 +3,19 @@ title: Raportin suodattaminen URL-osoitteen kyselymerkkijonoparametrien avulla
 description: Voit suodattaa raportin käyttämällä URL-osoitteen kyselyparametreja ja jopa suodattaa useamman kuin yhden kentän.
 author: maggiesMSFT
 ms.author: maggies
-manager: kfile
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 07/25/2019
+ms.date: 10/23/2019
 LocalizationGroup: Reports
-ms.openlocfilehash: 9e2b1132e48e824b70ddb0e0d86bfed4efedff2f
-ms.sourcegitcommit: bc688fab9288ab68eaa9f54b9b59cacfdf47aa2e
+ms.openlocfilehash: be45941e67417cbed15433405953cf728fe0aa8d
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68623896"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73876919"
 ---
 # <a name="filter-a-report-using-query-string-parameters-in-the-url"></a>Raportin suodattaminen URL-osoitteen kyselymerkkijonoparametrien avulla
 
@@ -153,7 +152,7 @@ Erikoismerkit ja välilyönnit edellyttävät lisämuotoiluja. Kun kysely sisäl
 |---------|---------|---------|
 |**Taulukon nimi**     | Välilyönti on 0x20        |  Taulukon_x0020_nimi       |
 |**Sarakkeen**@**numero**     |   @ on 0x40     |  Sarakkeen_x0040_numero       |
-|**[Sarake]**     |  [ on 0x0058 ] on 0x0050       |  _x0058_Column_x0050_       |
+|**[Sarake]**     |  [ on 0x005B ] on 0x005D       |  _x005B_Column_x005D_       |
 |**Sarake+Plus**     | + on 0x2B        |  Sarake_x002B_Plus       |
 
 Table_x0020_Name/Column_x002B_Plus eq 3 ![erikoismerkkejä hahmontava taulukkovisualisointi](media/service-url-filters/power-bi-special-characters1.png)
@@ -195,4 +194,4 @@ On muutamia asioita, jotka tulee ottaa huomioon merkkijonon kyselyparametreja k�
 [Visualisoinnin kiinnittäminen koontinäyttöön](service-dashboard-pin-tile-from-report.md)  
 [Rekisteröi ilmainen kokeiluversio](https://powerbi.microsoft.com/get-started/)
 
-Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)
+Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)

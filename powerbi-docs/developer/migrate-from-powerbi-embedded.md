@@ -7,12 +7,12 @@ ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 06/30/2018
-ms.openlocfilehash: 7f05da6d49a1aeddedfe145bebf0324e3af51572
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: d06709f16beec025b99b69d82d5c17c248288004
+ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61270431"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73429105"
 ---
 # <a name="how-to-migrate-power-bi-workspace-collection-content-to-power-bi-embedded"></a>Power BI -työtilakokoelman sisällön siirtäminen Power BI Embedded -palveluun
 
@@ -20,7 +20,7 @@ Opi siirtämään Power BI ‑työtilakokoelma Power BI Embedded ‑palveluun ja
 
 Hiljattain Microsoft [julkisti Power BI Embedded](https://powerbi.microsoft.com/blog/power-bi-embedded-capacity-based-skus-coming-to-azure/) ‑palvelun, uuden kapasiteettiin perustuvan lisensointimallin, joka tekee sisällön käytöstä ja jakamisesta joustavampaa käyttäjille. Lisäksi se tarjoaa lisää skaalautuvuutta ja suorituskykyä.
 
-Power BI Embedded ‑palvelun ansiosta saat yhden ohjelmointirajapinnan, jossa on yhtenäiset ominaisuudet ja mahdollisuus käyttää sisältöjen upottamiseen uusimpia Power BI -toimintoja, kuten koontinäyttöjä, yhdyskäytäviä ja sovellustyötiloja. Tulevaisuudessa voit aloittaa käyttämällä Power BI Desktopia ja siirtyä ottamaan Power BI Embedded ‑palvelun käyttöön.
+Power BI Embedded ‑palvelun ansiosta saat yhden ohjelmointirajapinnan, jossa on yhtenäiset ominaisuudet ja mahdollisuus käyttää sisältöjen upottamiseen uusimpia Power BI -toimintoja, kuten koontinäyttöjä, yhdyskäytäviä ja työtiloja. Tulevaisuudessa voit aloittaa käyttämällä Power BI Desktopia ja siirtyä ottamaan Power BI Embedded ‑palvelun käyttöön.
 
 Nykyinen Power BI ‑työtilakokoelma on saatavilla vielä rajoitetun ajan. Enterprise Agreement -sopimuksen tehneet asiakkaat pystyvät jatkamaan käyttöä nykyisten sopimustensa umpeutumiseen saakka, kun taas Power BI ‑työtilakokoelman suoraan tai pilvipalveluratkaisun kautta hankkineet asiakkaat pystyvät jatkamaan käyttöä vuoden ajan Power BI Embedded ‑palvelun yleisesti saatavilla olevan version julkaisemisesta.  Tässä artikkelissa annetaan ohjeita Power BI ‑työtilakokoelman siirtämiseksi uuteen Power BI Embedded ‑kokemukseen ja kerrotaan, millaisia muutoksia siitä on odotettavissa sovellukseesi.
 
@@ -56,19 +56,19 @@ Sinun on tehtävä joitakin valmistelutoimia, ennen kuin voit siirtää Power BI
 Vuokraajassa on oltava seuraavat tilit.
 
 > [!NOTE]
-> Näillä tileillä on oltava Power BI Pro ‑käyttöoikeudet, jotta ne voivat käyttää sovellustyötiloja.
+> Näillä tileillä on oltava Power BI Pro ‑käyttöoikeudet, jotta ne voivat käyttää työtiloja.
 
 1. Vuokraajan järjestelmänvalvojakäyttäjä.
 
-    On suositeltavaa, että tämä käyttäjä on kaikkien upotustarkoituksia varten luotujen sovellustyötilojen jäsen.
+    On suositeltavaa, että tämä käyttäjä on kaikkien upotustarkoituksia varten luotujen työtilojen jäsen.
 
 2. Tilit sisältöä luoville analyytikoille.
 
-    Nämä käyttäjät määritetään sovellustyötiloihin tarpeen mukaan.
+    Nämä käyttäjät määritetään työtiloihin tarpeen mukaan.
 
 3. Sovelluksen *pääkäyttäjätili* tai Embedded-tili.
 
-    Sovellusten taustapalvelu tallentaa tämän tilin tunnistetiedot ja käyttää tiliä Azure AD ‑tunnuksen hankkimiseen Power BI REST ‑ohjelmointirajapintoja varten. Tiliä käytetään sovelluksen upotettavan tunnuksen luontiin. Lisäksi tämän tilin on oltava upottamista varten luotujen sovellustyötilojen järjestelmänvalvoja.
+    Sovellusten taustapalvelu tallentaa tämän tilin tunnistetiedot ja käyttää tiliä Azure AD ‑tunnuksen hankkimiseen Power BI REST ‑ohjelmointirajapintoja varten. Tiliä käytetään sovelluksen upotettavan tunnuksen luontiin. Lisäksi tämän tilin on oltava upottamista varten luotujen työtilojen järjestelmänvalvoja.
 
 > [!NOTE]
 > Tämä on vain organisaatiosi tavallinen käyttäjätili, jota käytetään upottamistarkoituksiin.
@@ -83,14 +83,14 @@ Sinun on rekisteröitävä sovellus Azure AD:ssä REST-ohjelmointirajapinnan kut
 
 Rekisteröi sovellus käyttämällä sovelluksen **päätiliä**.
 
-## <a name="create-app-workspaces-required"></a>Sovellustyötilojen luominen (pakollinen)
+## <a name="create-workspaces-required"></a>Työtilojen luominen (pakollinen)
 
-Sovellustyötilojen avulla voit tarjota paremman eristyksen sovelluksessasi, jos se palvelee useita asiakkaita. Koontinäytöt ja raportit eristetään asiakkaiden välillä. Voit eristää entisestään sovelluskokemukset asiakkaiden välillä käyttämällä yhtä Power BI ‑tiliä kutakin sovellustyötilaa kohden.
+Työtilojen avulla voit tarjota paremman eristyksen sovelluksessasi, jos se palvelee useita asiakkaita. Koontinäytöt ja raportit eristetään asiakkaiden välillä. Voit eristää entisestään sovelluskokemukset asiakkaiden välillä käyttämällä yhtä Power BI ‑tiliä kutakin työtilaa kohden.
 
 > [!IMPORTANT]
 > Henkilökohtaista työtilaa ei voi käyttää sisältöjen upottamiseen niin, että muutkin kuin Power BI ‑käyttäjät pääsevät hyödyntämään niitä.
 
-Sovellustyötilan luomiseen Power BI:ssä tarvitaan käyttäjän, jolla on Pro-käyttöoikeus. Sovellustyötilan luomiseen käytetystä Power BI ‑käyttäjästä tulee oletusarvoisesti työtilan järjestelmänvalvoja.
+Työtilan luomiseen Power BI:ssä tarvitaan käyttäjän, jolla on Pro-käyttöoikeus. Työtilan luomiseen käytetystä Power BI ‑käyttäjästä tulee oletusarvoisesti työtilan järjestelmänvalvoja.
 
 > [!NOTE]
 > Sovelluksen *päätilin* on oltava työtilan järjestelmänvalvoja.
@@ -163,7 +163,7 @@ Joidenkin vaihtoehtoisten menetelmien avulla on mahdollista siirtää push-ohjel
 
 ## <a name="create-and-upload-new-reports"></a>Uusien raporttien luominen ja lataaminen järjestelmään
 
-Power BI ‑työtilakokoelmien sisällön siirtämisen lisäksi voit luoda raportteja ja tietojoukkoja Power BI Desktopilla ja julkaista sitten raportit sovellustyötilassa. Raportit julkaiseva loppukäyttäjä tarvitsee sovellustyötilassa julkaisemiseen Power BI Pro ‑käyttöoikeudet.
+Power BI ‑työtilakokoelmien sisällön siirtämisen lisäksi voit luoda raportteja ja tietojoukkoja Power BI Desktopilla ja julkaista sitten raportit työtilassa. Raportit julkaiseva loppukäyttäjä tarvitsee työtilassa julkaisemiseen Power BI Pro ‑käyttöoikeudet.
 
 ## <a name="rebuild-your-application"></a>Sovelluksen luominen uudelleen
 
@@ -179,9 +179,9 @@ Sinun on liitettävä sovelluksessasi hallitsemasi käyttäjät sovelluksessa Po
 
 Kun olet valmis siirtymään tuotantoon, sinun on tehtävä seuraavat toimet.
 
-* Jos käytössäsi on kehitystyöhön erillinen vuokraaja, varmista, että sovellustyötilat koontinäyttöineen ja raportteineen ovat käytettävissä tuotantoympäristössäsi. Lisäksi sinun on varmistettava, että olet luonut sovelluksen Azure AD:ssa tuotantovuokraajaan sekä määrittänyt vaiheen 1 mukaisesti oikeat sovelluksen käyttöoikeudet.
+* Jos käytössäsi on kehitystyöhön erillinen vuokraaja, varmista, että työtilat koontinäyttöineen ja raportteineen ovat käytettävissä tuotantoympäristössäsi. Lisäksi sinun on varmistettava, että olet luonut sovelluksen Azure AD:ssa tuotantovuokraajaan sekä määrittänyt vaiheen 1 mukaisesti oikeat sovelluksen käyttöoikeudet.
 * Osta kapasiteettia tarpeidesi mukaan. Jos haluat oppia hahmottamaan paremmin, miten paljon ja minkätyyppistä kapasiteettia tarvitset, katso [Power BI Embedded ‑analyysitoimintojen kapasiteetin suunnittelun tekninen raportti](https://aka.ms/pbiewhitepaper). Voit [ostaa kapasiteettia](https://portal.azure.com/#create/Microsoft.PowerBIDedicated) Azurelta.
-* Muokkaa sovellustyötilaa ja määritä se lisäasetuksista Premium-kapasiteettiin.
+* Muokkaa työtilaa ja määritä se lisäasetuksista Premium-kapasiteettiin.
 
     ![Premium-kapasiteetti](media/migrate-from-powerbi-embedded/powerbi-embedded-premium-capacity02.png)
 

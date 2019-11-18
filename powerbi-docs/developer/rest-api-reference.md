@@ -1,24 +1,28 @@
 ---
 title: Power BI:n REST-ohjelmointirajapinnan viite
 description: Power BI:n REST-ohjelmointirajapinnan viite
-author: rkarlin
-ms.author: rkarlin
-manager: kfile
+author: KesemSharabi
+ms.author: kesharab
+manager: rkarlin
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 05/25/2018
-ms.openlocfilehash: 7677bbc71f141b0ca64bfa9d10d8c5b3c884904c
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 38e04049ad7fb4f2bc9a59f9680d257800e77148
+ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61270116"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73019125"
 ---
 # <a name="power-bi-rest-api-reference"></a>Power BI:n REST-ohjelmointirajapinnan viite
 
-Power BI on pilvipohjainen palvelu, jonka avulla voit luoda mukautettuja koontinäyttösovelluksia. Power BI:n REST-ohjelmointirajapinta tarjoaa **koontinäyttöjen** resurssien, kuten **tietojoukkojen**, **taulukoiden** ja **rivien**, ohjelmallisen käytön Power BI:ssä.
+Power BI on pilvipohjainen palvelu, jonka avulla voit luoda mukautettuja koontinäyttösovelluksia. Power BI REST -ohjelmointirajapinta on REST-pohjainen ohjelmointirajapinta, joka tarjoaa ohjelmallisen käyttöoikeuden kaikkiin palvelun käyttämiin artefakteihin, kuten:
+* Tietojoukot
+* Koontinäytöt
+* Raportit
+* Yhdyskäytävät
 
 [!INCLUDE [GDPR-related guidance](../includes/gdpr-hybrid-note.md)]
 

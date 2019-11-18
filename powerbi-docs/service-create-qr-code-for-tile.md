@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/07/2018
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: cab65ad12255b7a5ff2e37902684437f0e191723
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: e08d37f3db6156de21f00813a90b1c7544345abe
+ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61169020"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73021177"
 ---
 # <a name="create-a-qr-code-for-a-tile-in-power-bi-to-use-in-the-mobile-apps"></a>QR-koodin luominen Power BI:n ruutuun mobiilisovelluksissa käytettäväksi
 Power BI:n QR-koodien avulla voit yhdistää mitä tahansa todellisesta maailmasta suoraan siihen liittyviin BI-tietoihin – siirtymis- tai hakutoimintoja ei tarvita.
@@ -27,8 +27,8 @@ Työtoverit, joiden kanssa olet jakanut kyseisen koontinäytön, voivat [lukea Q
 
 ## <a name="create-a-qr-code-for-a-tile"></a>Ruudun QR-koodin luominen
 1. Avaa Power BI -palvelussa haluamasi koontinäyttö.
-2. Valitse ruudun oikeasta yläkulmasta kolme pistettä (...) ja valitse sitten **tarkastelutila**![](media/service-create-qr-code-for-tile/fullscreen-icon.jpg).
-3. Valitse ruudun oikeasta yläkulmasta kolme pistettä (...) ja valitse sitten **Muodosta QR-koodi**. 
+2. Valitse ruudun oikeasta yläkulmasta **Lisää asetuksia** (...) ja valitse sitten **tarkastelutila** ![](media/service-create-qr-code-for-tile/fullscreen-icon.jpg).
+3. Valitse oikeasta yläkulmasta **Enemmän vaihtoehtoja** (...) ja valitse **Muodosta QR-koodi**. 
    
     ![](media/service-create-qr-code-for-tile/power-bi-create-qr-code-tile.png)
 4. Näytölle avautuu valintaikkuna, jossa on QR-koodi. 

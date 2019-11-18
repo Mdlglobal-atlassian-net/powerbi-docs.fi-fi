@@ -9,12 +9,12 @@ ms.subservice: powerbi-report-server
 ms.topic: tutorial
 ms.date: 05/06/2019
 ms.author: maggies
-ms.openlocfilehash: d30a396eeb4d461d7c36cecf9759306236810cab
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: cd3e032375c5edaba2b0f90f982d0dbe5591c913
+ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65240019"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73021614"
 ---
 # <a name="tutorial-explore-the-power-bi-report-server-web-portal-in-a-vm"></a>Opetusohjelma: Power BI -raporttipalvelimen verkkoportaaliin tutustuminen näennäiskoneella
 Tässä opetusohjelmassa luot Azure-virtuaalikoneen Power BI -raporttipalvelimen ollessa jo asennettu, jotta voit tutustua Power BI- ja sivutettujen näyteraporttien ja suorituskykyilmaisimien tarkasteluun, muokkaamiseen ja hallintaan.
@@ -189,7 +189,7 @@ Voit tarkastella ja hallita sivutettuja raportteja ja käynnistää Raportin muo
 
 ### <a name="manage-a-paginated-report"></a>Sivutetun raportin hallinta
 
-1. Valitse verkkoportaalissa **Myyntitilaus** > **Hallinta** -kohdan viereisestä **Sivutetut raportit** -kohdasta kolme pistettä (...).
+1. Valitse verkkoportaalissa **Myyntitilaus** > **Hallinta** -kohdan viereisestä **Sivutetut raportit** -kohdasta **Enemmän vaihtoehtoja** (...).
 
 1. Valitse **Parametrit**, muuta **SalesOrderNumber**-arvon oletukseksi **SO50689** > **Käytä**.
 
@@ -219,7 +219,7 @@ Voit tarkastella ja hallita sivutettuja raportteja ja käynnistää Raportin muo
 
 Voit muokata sivutettuja raportteja Raportin muodostimessa, jonka voit käynnistää suoraan selaimesta.
 
-1. Valitse verkkoportaalissa **Myyntitilaus** > **Muokkaa raportin muodostimessa** -kohdan vierestä kolme pistettä (...).
+1. Valitse verkkoportaalissa **Myyntitilaus** > **Muokkaa raportin muodostimessa** -kohdan vierestä **Enemmän vaihtoehtoja** (...).
 
 1. Valitse **Salli**, jotta verkkosivusto voidaan avata tietokoneelle asennetulla ohjelmalla.
 

@@ -3,18 +3,17 @@ title: Mitä ovat sivutetut raportit Power BI Premiumissa?
 description: Sivutetut raportit, SQL Server Reporting Servicesin vakioraporttimuoto, ovat nyt käytettävissä Power BI -palvelussa. Nämä raportit voidaan tulostaa tai jakaa. Voit hallita raportin asettelua tarkasti. Ne näyttävät kaikki tiedot taulukossa, esimerkiksi vaikka taulukko käsittää useita sivuja.
 author: maggiesMSFT
 ms.author: maggies
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: overview
 ms.date: 09/24/2019
-ms.openlocfilehash: ca090f7251349c9ed4768b49f1372c14e68f0068
-ms.sourcegitcommit: 57e45f291714ac99390996a163436fa1f76db427
+ms.openlocfilehash: 9e49e8e70e7bc499fbcfe0c263bdd8315f2c7dbe
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "71305694"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73874724"
 ---
 # <a name="what-are-paginated-reports-in-power-bi-premium"></a>Mitä ovat sivutetut raportit Power BI Premiumissa?
 
@@ -26,7 +25,7 @@ Sivutetuissa raporteissa voi olla useita sivuja. Esimerkiksi tässä raportissa 
 
 ![Sivutettu raportti Power BI -palvelussa](media/report-builder-power-bi/report-builder-get-started-paginated-report.png)
 
-Voit esikatsella raporttisi raportin muodostimessa ja julkaista sen Power BI -palvelussa, http://app.powerbi.com. Tarvitset Power BI Pro -käyttöoikeuden raportin julkaisemiseksi palveluun. Voit julkaista ja jakaa sivutettuja raportteja omassa työtilassasi tai sovelluksen työtiloissa niin kauan kuin työtila on Power BI Premium -kapasiteetissa. Lisäksi Power BI -järjestelmänvalvojan on otettava sivutetut raportit käyttöön Power BI -hallintaportaalin [Premium-kapasiteettiosiosta](service-admin-premium-workloads.md#paginated-reports). 
+Voit esikatsella raporttisi raportin muodostimessa ja julkaista sen Power BI -palvelussa, https://app.powerbi.com. Tarvitset Power BI Pro -käyttöoikeuden raportin julkaisemiseksi palveluun. Voit julkaista ja jakaa sivutettuja raportteja omassa työtilassasi tai työtiloissa niin kauan kuin työtila on Power BI Premium -kapasiteetissa. Lisäksi Power BI -järjestelmänvalvojan on otettava sivutetut raportit käyttöön Power BI -hallintaportaalin [Premium-kapasiteettiosiosta](service-admin-premium-workloads.md#paginated-reports). 
 
 ## <a name="create-reports-in-power-bi-report-builder"></a>Raporttien luominen Power BI:n raportin muodostimessa
 
@@ -62,7 +61,7 @@ Koko sivutetun raportin sisällöllä itse raportista jokaiseen tekstiruutuun, k
 
 ## <a name="creating-a-report-definition"></a>Raportin määrityksen luominen
 
-Kun suunnittelet sivutetun raportin, luot tosiasiassa *raportin määrityksen*. Se ei sisällä tietoja. Se määrittää, mistä tiedot haetaan, mitkä tiedot haetaan ja miten tiedot näytetään. Kun raportti suoritetaan, raportin käsittely käyttää määrittämääsi raportin määritystä, noutaa tiedot ja yhdistää ne raportin asetteluun raportin luomiseksi. Lataat raportin määrityksen Power BI -palveluun, http://app.powerbi.com, omaan työtilaasi tai työtovereiden kanssa jakamaasi työtilaan. Jos raportin tietolähde on paikallinen, raportin lataamisen jälkeen ohjaat tietolähdeyhteyden uudelleen yhdyskäytävän kautta. 
+Kun suunnittelet sivutetun raportin, luot tosiasiassa *raportin määrityksen*. Se ei sisällä tietoja. Se määrittää, mistä tiedot haetaan, mitkä tiedot haetaan ja miten tiedot näytetään. Kun raportti suoritetaan, raportin käsittely käyttää määrittämääsi raportin määritystä, noutaa tiedot ja yhdistää ne raportin asetteluun raportin luomiseksi. Lataat raportin määrityksen Power BI -palveluun, https://app.powerbi.com, omaan työtilaasi tai työtovereiden kanssa jakamaasi työtilaan. Jos raportin tietolähde on paikallinen, raportin lataamisen jälkeen ohjaat tietolähdeyhteyden uudelleen yhdyskäytävän kautta. 
 
 ## <a name="view-your-paginated-report"></a>Sivutetun raportin tarkasteleminen
 Voit tarkastella sivutettua raporttia Power BI -palvelussa selaimella ja myös Power BI -mobiilisovelluksissa. Power BI -palvelusta käsin voit viedä raportin eri muodoissa, esimerkiksi HTML:nä, MHTML:nä, PDF:nä, XML:nä, CSV:nä, TIFF:nä, Wordinä ja Excelinä. Voit myös jakaa sen muiden kanssa.  

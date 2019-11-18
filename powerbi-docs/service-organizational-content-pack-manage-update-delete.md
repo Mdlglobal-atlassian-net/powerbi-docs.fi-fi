@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 86b7a5e93183c06d6cac1445cb1702edde5d4bc9
-ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
+ms.openlocfilehash: f2a80b075a56cdeccfa4c3675cdf31504b6a7e5d
+ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72020601"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73431772"
 ---
 # <a name="manage-update-and-delete-organizational-content-packs"></a>Organisaation sisältöpakettien hallinta, päivitys ja poistaminen
 > [!NOTE]
@@ -71,14 +71,14 @@ Toinen sisältöpaketin luojien käytettävissä oleva muokkaustoiminto on sisä
 Sisältöpaketin luojana voit [ajastaa tietojoukkojen päivittymisen](refresh-data.md).  Kun luot sisältöpaketin ja lataat sen järjestelmään, sen mukana ladataan tietojoukkojen päivittymisaikataulu. Jos muutat päivittymisaikataulua, sinun on julkaistava sisältöpaketti uudelleen (katso edellä olevat ohjeet).
 
 ## <a name="delete-an-organizational-content-pack-from-appsource"></a>Organisaation sisältöpaketin poistaminen AppSourcesta
-Voit poistaa sisältöpaketin AppSourcesta vain, jos se olet itse luonut sen. Jos olet luonut organisaation sisältöpaketin sovelluksen työtilaan ja päätät poistaa kyseisen työtilan, muista ensin poistaa sisältöpaketti. Jos poistat työtilan poistamatta ensin sisältöpakettia, menetät kaikki käyttöoikeudet kyseisiin sisältöpaketteihin ja sinun on otettava yhteyttä Microsoftin tukeen. 
+Voit poistaa sisältöpaketin AppSourcesta vain, jos se olet itse luonut sen. Jos olet luonut organisaation sisältöpaketin työtilaan ja päätät poistaa kyseisen työtilan, muista ensin poistaa sisältöpaketti. Jos poistat työtilan poistamatta ensin sisältöpakettia, menetät kaikki käyttöoikeudet kyseisiin sisältöpaketteihin ja sinun on otettava yhteyttä Microsoftin tukeen. 
 
 > [!TIP]
 > Lisäksi voit [poistaa yhteytesi sisältöpakettiin](service-organizational-content-pack-disconnect.md), jota et ole itse luonut. Se ei poista sisältöpakettia AppSourcesta.
 > 
 > 
 
-1. Jos haluat poistaa sisältöpaketin AppSourcesta, siirry sovellustyötilaan, jossa loit sisältöpaketin, valitse hammasrataskuvake ![](media/service-organizational-content-pack-manage-update-delete/cog.png) ja valitse **Näytä sisältöpaketit**.
+1. Jos haluat poistaa sisältöpaketin AppSourcesta, siirry työtilaan, jossa loit sisältöpaketin, valitse hammasrataskuvake ![](media/service-organizational-content-pack-manage-update-delete/cog.png) ja valitse **Näytä sisältöpaketit**.
 2. Valitse **Poista \> Poista**. 
    
    * Jos ryhmän jäsen ei ole mukauttanut sisältöpakettia, sisältöpakettiin liittyvät koontinäyttö ja raportti poistetaan automaattisesti. Ne eivät ole enää käytettävissä, eikä sisältöpakettia näy enää siirtymisruudussa.

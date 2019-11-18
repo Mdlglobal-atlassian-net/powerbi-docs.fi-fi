@@ -2,7 +2,6 @@
 title: Ylennä tietojoukkosi (esikatselu) – Power BI
 description: Lue ohjeet siihen, miten voit ylentää tietojoukkosi ja ohjata yrityskäyttäjiä luotettavien sekä laadukkaiden tietojoukkojen pariin.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: chbraun
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 07/03/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 681cd9f65713738e2b842bfa3404511f9e3a98f4
-ms.sourcegitcommit: b439ded53bfbbb58be27ecedf93d618f5158df33
+ms.openlocfilehash: 379249ac50f61df07c4adaffe53e0df29a311086
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/04/2019
-ms.locfileid: "67567345"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73877124"
 ---
 # <a name="promote-your-dataset-preview"></a>Ylennä tietojoukkosi (esikatselu)
 
@@ -30,7 +29,7 @@ Tietojoukkosi täytyy olla Power BI -palvelun uudessa työtilaympäristössä, k
 
 1. Siirry työtilassa tietojoukkojen luetteloon.
  
-1. Valitse kolme pistettä (...) ja valitse sitten **Asetukset**.
+1. Valitse **Enemmän vaihtoehtoja** (...) ja valitse sitten **Asetukset**.
 
     ![Valitse kolme pistettä tietojoukon vieressä](media/service-datasets-certify-promote/power-bi-dataset-settings.png)
 
@@ -55,4 +54,4 @@ Vuokraajasi järjestelmänvalvoja on määrittänyt organisaatiostasi ihmiset, j
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
 * Lue lisätietoja [tietojoukkojen käytöstä eri työtiloissa](service-datasets-across-workspaces.md)
-* Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)
+* Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)

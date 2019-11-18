@@ -7,15 +7,15 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 08/02/2018
+ms.date: 10/23/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: e54750d928918fd77c2bf93577cf1d3d0634ca97
-ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
+ms.openlocfilehash: c5f56df51a1f18db7c2080afb79f4ac7abfb2444
+ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72020607"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73431731"
 ---
 # <a name="intro-to-organizational-content-packs-in-power-bi"></a>Power BI:n organisaation sisältöpakettien esittely
 > [!NOTE]
@@ -26,7 +26,7 @@ Jaatko säännöllisesti raportteja sähköpostitse työryhmällesi? Kokeile seu
 
 ![](media/service-organizational-content-pack-introduction/power-bi-org-content-packs.png)
 
-Sisältöpakettien luominen eroaa koontinäyttöjen jakamisesta ja niiden työstämisestä sovellustyötilassa. Valitse itsellesi sopivin vaihtoehto lukemalla artikkeli [Miten voin työstää koontinäyttöjä ja raportteja yhdessä muiden kanssa sekä jakaa niitä?](service-how-to-collaborate-distribute-dashboards-reports.md). 
+Sisältöpakettien luominen eroaa koontinäyttöjen jakamisesta tai niiden työstämisestä työtilassa. Valitse itsellesi sopivin vaihtoehto lukemalla artikkeli [Miten voin työstää koontinäyttöjä ja raportteja yhdessä muiden kanssa sekä jakaa niitä?](service-how-to-collaborate-distribute-dashboards-reports.md). 
 
 AppSourcessa voit selata tai hakea sisältöpaketteja, jotka on julkaistu koko organisaatiolle, jakelu- tai käyttöoikeusryhmille tai [Office 365 -ryhmille, joihin kuulut](https://support.office.com/article/Create-a-group-in-Office-365-7124dc4c-1de9-40d4-b096-e8add19209e9). Jos et ole tietyn ryhmän jäsen, et näe kyseisen ryhmän kanssa jaettuja sisältöpaketteja. Kaikilla ryhmän jäsenillä on samat vain luku -käyttöoikeudet sisältöpaketin tietoihin, raportteihin, työkirjoihin ja koontinäyttöihin (ellei se ole SQL Server Analysis Services (SSAS) -tietolähde, jolloin oikeudet periytyvät tietolähteen kanssa).
 
@@ -50,7 +50,7 @@ Elinkaari näyttää suunnilleen tältä:
 1. Käyttäjä luo Power BI Prossa sisältöpaketin ja julkaisee sen markkinoinnin jakeluryhmälle. Päivitysasetukset periytyvät tietojoukon kanssa, ja vain käyttäjä (sisältöpaketin luoja) voi muuttaa niitä.
    
    > [!NOTE]
-   > Jos Nate luo sisältöpaketin [Power BI -sovelluksen työtilassa](service-create-distribute-apps.md), työtilan muut jäsenet voivat saada omistajuuden, jos hän poistuu työtilasta.
+   > Jos Nate luo sisältöpaketin [Power BI -työtilassa](service-create-distribute-apps.md), työtilan muut jäsenet voivat saada omistajuuden, jos hän poistuu työtilasta.
    > 
    > 
 2. Käyttäjä lähettää jakeluryhmälle sähköpostiviestin, jossa hän kertoo uudesta sisältöpaketista.
@@ -58,7 +58,7 @@ Elinkaari näyttää suunnilleen tältä:
 4. Oletetaan, että Jane päättää mukauttaa sitä. Hänellä on nyt oma kopio koontinäytöstä ja raporteista. Janen tekemät muutokset eivät vaikuta lähteeseen, eli alkuperäiseen sisältöpakettiin, eikä jakeluryhmän muiden jäsenten työhön. Kaikki jäsenet voivat työstää omia kopioitaan koontinäytöstä ja raporteista.
 5. Nate päivittää koontinäyttöä ja julkaisee sisältöpaketista uuden version.
    
-   * Toinen jakeluryhmän jäsen ei ole mukauttanut alkuperäistä sisältöpakettia. Uudet muutokset otetaan automaattisesti käyttöön Janen sisältöpakettiversiossa.  
+   * Toinen jakeluryhmän jäsen ei ole mukauttanut alkuperäistä sisältöpakettia. Uudet muutokset otetaan automaattisesti käyttöön Julio sisältöpakettiversiossa.  
    * Tässä esimerkissä yksi poistetuista jäsenistä on kuitenkin muokannut sisältöpakettia. Jane saa ilmoituksen uudesta versiosta.  Hän voi siirtyä AppSourceen ja hakea päivitetyn sisältöpaketin menettämättä omaa mukautettua versiotaan. Janella on nyt kaksi versiota: mukautettu versio ja päivitetty sisältöpaketti.
 6. Sisältöpaketin luoja voi muuttaa sen suojausasetuksia. Tällöin jäsenet eivät enää pääse käyttämään sisältöä. Jäseniä voi myös poistaa jakeluryhmästä.
    

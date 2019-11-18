@@ -10,19 +10,19 @@ ms.topic: conceptual
 ms.date: 04/11/2018
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: 12ee21427f06f0bce373adffa7ef336de144a3a4
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 786357d2861b05c46ffb3c7b827d5c797fb5ea20
+ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61234458"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73431799"
 ---
 # <a name="interact-with-a-report-in-editing-view-in-power-bi-service"></a>Raportin käsittely Power BI -palvelun muokkausnäkymässä
 Raportteja voidaan luoda ja muokata Power BI -palvelussa ja Power BI Desktopissa. Power BI -palvelussa raportteja voidaan luoda ja muokata **muokkausnäkymässä**. Power BI Desktopissa raportteja voidaan luoda ja muokata [**raporttinäkymässä**](desktop-report-view.md). Tässä artikkelissa käsitellään Power BI -palvelun muokkausnäkymää. 
 
 Power BI -palvelussa on kaksi erilaista tilaa raporttien käsittelyyn – [lukunäkymä](consumer/end-user-reading-view.md) on tarkoitettu raporttien *kuluttajille* ja muokkausnäkymä raporttien omistajille ja tekijöille.  Power BI Pro -käyttöoikeus vaaditaan raporttien jakamiseen sekä muiden luomien raporttien muokkaamiseen. Jos sinulla ei ole Pro-käyttöoikeutta, voit edelleen luoda raportteja, mutta et voi [jakaa niitä](service-share-reports.md).    
 
-Raportin muokkausnäkymässä on paljon eri vaihtoehtoja raportin tarkastelemiseen ja suunnitteluun. Kaikki [lukunäkymän](consumer/end-user-reading-view.md) toiminnot ovat käytettävissä, sekä paljon muita. Muokkausnäkymää voi käyttää vain raportin luonut henkilö tai hänen työtoverinsa, jotka [myös omistavat raportin sovellustyötilan jäsenenä tai järjestelmänvalvojana](service-create-distribute-apps.md).
+Raportin muokkausnäkymässä on paljon eri vaihtoehtoja raportin tarkastelemiseen ja suunnitteluun. Kaikki [lukunäkymän](consumer/end-user-reading-view.md) toiminnot ovat käytettävissä, sekä paljon muita. Muokkausnäkymää voi käyttää vain raportin luonut henkilö tai hänen työtoverinsa, jotka [myös omistavat raportin työtilan jäsenenä tai järjestelmänvalvojana](service-create-distribute-apps.md).
 
 ## <a name="functionality-only-available-in-editing-view"></a>Vain muokkausnäkymässä käytettävissä olevat toiminnot
 Tutustu aiheiden luetteloon, joka on sisällysluettelon **Raportit**-otsikon alla vasemmalla puolella. Se on pitkä luettelo ja monet aiheet käsittelevät toimintoja, *jotka ovat käytettävissä vain, jos sinulla on raportin muokkausoikeudet*.  Sisällysluettelon lukemisen helpottamiseksi huomioi, että muokkausnäkymää käytetään seuraavissa toiminnoissa:
