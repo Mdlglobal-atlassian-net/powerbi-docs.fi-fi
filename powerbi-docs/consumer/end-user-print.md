@@ -2,7 +2,6 @@
 title: Tulostaminen Power BI -palvelusta
 description: Koontinäytön, ruudun tai raporttisivun tulostaminen Power BI -palvelusta.
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 09/18/2019
 ms.author: mihart
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 928b69bc1f7e8210f66bd1b99e211a7fe28a5a00
-ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
+ms.openlocfilehash: ec633b5e41936363663736807979dc08f50820b1
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73019565"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73862782"
 ---
 # <a name="printing-from-the-power-bi-service"></a>Power BI -palvelusta tulostaminen
 
@@ -82,5 +81,5 @@ Raportteja voi tulostaa yhden sivun kerrallaan.
 ## <a name="next-steps"></a>Seuraavat vaiheet
 [Koontinäyttöjen ja raporttien jakaminen työtovereiden ja muiden kanssa](../service-share-dashboards.md)
 
-Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
+Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](https://community.powerbi.com/)
 

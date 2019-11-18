@@ -2,7 +2,6 @@
 title: 'Opetusohjelma: Laskettujen sarakkeiden luominen Power BI Desktopissa'
 description: 'Opetusohjelma: Laskettujen sarakkeiden luominen Power BI Desktopissa'
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: tutorial
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Learn more
-ms.openlocfilehash: 92cd402c394fc2f03a9bba3149260c022116e9d7
-ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
+ms.openlocfilehash: 4c1f6985a2ff88fa9ca595ad68456eed7a55c82e
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73017813"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73876134"
 ---
 # <a name="tutorial-create-calculated-columns-in-power-bi-desktop"></a>Opetusohjelma: Laskettujen sarakkeiden luominen Power BI Desktopissa
 
@@ -28,7 +27,7 @@ Tässä opetusohjelmassa kerrotaan Power BI Desktopin lasketuista sarakkeista, n
 ### <a name="prerequisites"></a>Edellytykset
 - Tämä opetusohjelma on tarkoitettu kehittyneempien mallien luomiseen Power BI -käyttäjille, joille Power BI Desktopin käyttö on jo tuttua. Edellytyksenä on, että osaat jo tuoda tietoja **Nouda tiedot** -toiminnon ja **Power Query Editorin** avulla, työskennellä useiden toisiinsa liitettyjen taulukoiden kanssa ja lisätä kenttiä raporttipohjaan. Jos olet vasta aloittamassa Power BI Desktopin käyttöä, muista tutustua [Power BI Desktopin käytön aloittaminen](desktop-getting-started.md) -resurssiin.
   
-- Tämä opetusohjelma käyttää [Contoso Sales Sample for Power BI Desktop](http://download.microsoft.com/download/4/6/A/46AB5E74-50F6-4761-8EDB-5AE077FD603C/Contoso%20Sales%20Sample%20for%20Power%20BI%20Desktop.zip) -näytettä. Kyse on samasta näytteestä, jota käytetään [Omien mittarien luominen Power BI Desktopissa](desktop-tutorial-create-measures.md) -opetusohjelmassa. Kuvitteellisen yrityksen, Contoso, Inc:n, myyntitiedot on tuotu tietokannasta, joten et voi muodostaa yhteyttä tietolähteeseen tai tarkastella niitä Power Query Editorissa. Lataa ja pura tiedosto omalle tietokoneellesi ja avaa se Power BI Desktopissa.
+- Tämä opetusohjelma käyttää [Contoso Sales Sample for Power BI Desktop](https://download.microsoft.com/download/4/6/A/46AB5E74-50F6-4761-8EDB-5AE077FD603C/Contoso%20Sales%20Sample%20for%20Power%20BI%20Desktop.zip) -näytettä. Kyse on samasta näytteestä, jota käytetään [Omien mittarien luominen Power BI Desktopissa](desktop-tutorial-create-measures.md) -opetusohjelmassa. Kuvitteellisen yrityksen, Contoso, Inc:n, myyntitiedot on tuotu tietokannasta, joten et voi muodostaa yhteyttä tietolähteeseen tai tarkastella niitä Power Query Editorissa. Lataa ja pura tiedosto omalle tietokoneellesi ja avaa se Power BI Desktopissa.
 
 ## <a name="create-a-calculated-column-with-values-from-related-tables"></a>Lasketun sarakkeen luominen liittyvien sarakkeiden arvoilla
 

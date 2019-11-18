@@ -2,7 +2,6 @@
 title: Kuvan, videon ja muiden elementtien lisääminen koontinäyttöön
 description: Ohjeet kuvan, videon, tekstiruudun, verkkokoodin ja virtautettavien tietojen ruudun lisäämiseen koontinäyttöön Lisää ruutu -pienoissovelluksen avulla.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 featuredvideoid: e2PD8m1Q0vU
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 07/25/2019
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 93301625efda52aa69af172b29e7fbcd94b2a4dd
-ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
+ms.openlocfilehash: a012320a12d2516cb24dc92f2472e3c49ce9081e
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73020431"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73853529"
 ---
 # <a name="add-images-videos-and-more-to-your-dashboard"></a>Kuvan, videon ja muiden elementtien lisääminen koontinäyttöön
 
@@ -246,5 +245,5 @@ Jos haluat tehdä muutoksia aiemmin luotuun ruutuun:
 ## <a name="next-steps"></a>Seuraavat vaiheet
 [Johdatus raporttinäkymien ruutuihin Power BI -suunnittelijoille](service-dashboard-tiles.md)
 
-Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/).
+Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](https://community.powerbi.com/).
 

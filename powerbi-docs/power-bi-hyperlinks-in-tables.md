@@ -2,7 +2,6 @@
 title: Hyperlinkkien (URL-osoitteiden) lisääminen taulukkoon
 description: Tässä aiheessa kerrotaan, miten voit lisätä hyperlinkkejä (URL-osoitteita) taulukkoon. Power BI Desktopin avulla voit lisätä hyperlinkkejä (URL-osoitteita) taulukkoihin ja matriiseihin. Lisää kyseiset hyperlinkit sitten raporttisi taulukoihin tai matriiseihin joko Power BI Desktopilla tai Power BI -palvelulla.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 ms.custom: seodec18
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/29/2019
 ms.author: maggies
 LocalizationGroup: Visualizations
-ms.openlocfilehash: c53ce84610e68280c915d55466bc7cddd3c0cc92
-ms.sourcegitcommit: d441d350504f8c6d9e100d229757add6237f0bef
+ms.openlocfilehash: e8cad7035e752e5e344d78a22ad5fd8ea0a072ad
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73060744"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73874511"
 ---
 # <a name="add-hyperlinks-urls-to-a-table"></a>Hyperlinkkien (URL-osoitteiden) lisääminen taulukkoon
 Tässä aiheessa kerrotaan, miten voit lisätä hyperlinkkejä (URL-osoitteita) taulukkoon. Power BI Desktopin avulla voit lisätä hyperlinkkejä (URL-osoitteita) taulukkoihin ja matriiseihin. Lisää kyseiset hyperlinkit sitten raporttisi taulukoihin tai matriiseihin joko Power BI Desktopilla tai Power BI -palvelulla. 
@@ -112,5 +111,5 @@ Vastaus: Ei. Voit käyttää linkkikuvaketta. Jos haluat käyttää mukautettua 
 
 [Power BI -palvelun peruskäsitteitä suunnittelijoille](service-basic-concepts.md)
 
-Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
+Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](https://community.powerbi.com/)
 

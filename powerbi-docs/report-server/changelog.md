@@ -3,18 +3,17 @@ title: Power BI -raporttipalvelimen muutosloki
 description: Power BI -raporttipalvelimen muutoslokissa on listattu jokaisen koontiversion uudet ominaisuudet ja ohjelmavirhekorjaukset.
 ms.author: jaimeta
 author: jtarquino
-manager: kfile
 ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 10/25/2019
-ms.openlocfilehash: 0a4aaa5d9fcb3d5dab6cce0b0c8dd6034581aedb
-ms.sourcegitcommit: 17f45a81b0dcbf9e3f1fb2a551584170baecd320
+ms.openlocfilehash: ef85aea957ec470b348676b553248f30d3bf8532
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72922551"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73874287"
 ---
 # <a name="change-log-for-power-bi-report-server"></a>Power BI -raporttipalvelimen muutosloki
 
@@ -29,7 +28,7 @@ Lisätietoja uusista ominaisuuksista on artikkelissa [Power BI -raporttipalvelin
         - Ohjelmavirhekorjauksia
             - .NET Framework 4.7 korjausta ei ole asennettu.
             - Korjaus Teradatan moniarvoisia parametreja sisältäviin sivutettuihin raportteihin, virhe 110083.
-            - Korjattu ongelma, joka esti URLRoot-arvon toiminnan, jos verkkopalvelun URL-sidontoja oli useita ja yksi niistä oli http://+80/reportserver.
+            - Korjattu ongelma, joka esti URLRoot-arvon toiminnan, jos verkkopalvelun URL-sidontoja oli useita ja yksi niistä oli https://+80/reportserver.
           - Korjaus sivutettujen raporttien moniarvoisiin parametriarvoihin, jotka näkyivät raporttialueen ulkopuolella.
           
     - *Versio: 1.6.7221.30698 (koontiversio 15.0.1102.620), julkaistu: 9. lokakuuta 2019*
@@ -305,6 +304,6 @@ Lisätietoja uusista ominaisuuksista on artikkelissa [Power BI -raporttipalvelin
 [Järjestelmänvalvojien yleiskatsaus](admin-handbook-overview.md)  
 [Power BI -raporttipalvelimen asentaminen](install-report-server.md)  
 [Raportin muodostimen lataaminen](https://www.microsoft.com/download/details.aspx?id=53613)  
-[SQL Server Data Tools (SSDT) -työkalujen lataaminen](http://go.microsoft.com/fwlink/?LinkID=616714)
+[SQL Server Data Tools (SSDT) -työkalujen lataaminen](https://go.microsoft.com/fwlink/?LinkID=616714)
 
 Onko sinulla muuta kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)

@@ -2,25 +2,24 @@
 title: Power BI -tietojen selaaminen Apple Watch -mobiilisovelluksessa
 description: Power BI:n Apple Watch -sovellus
 author: mshenhav
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 10/13/2017
 ms.author: mshenhav
-ms.openlocfilehash: 23f2b41b84c387ca772fdda1397a6c5e4fce6acf
-ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
+ms.openlocfilehash: 31db6725c027ed09e900dac7036778004e9e3ff3
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73017668"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73870722"
 ---
 # <a name="explore-your-data-in-the-power-bi-mobile-app-on-your-apple-watch"></a>Power BI -tietojen tarkastelu Apple Watch -mobiilisovelluksessa
 Power BI Apple Watch -sovelluksella voit tarkastella suorituskykymittareita ja korttiruutuja Power BI-raporttinäkymästä omassa kellossasi. Suorituskykymittarit ja korttiruudut sopivat parhaiten sykkeen mittaamiseen pienellä näytöllä. Voit päivittää raporttinäkymän iPhonesta tai itse kellosta.
 
 ## <a name="install-the-apple-watch-app"></a>Asenna Apple Watch -sovellus
-Power BI Apple Watch -sovellus on yhdistetty Power BI for iOS -sovellukseen, joten kun [lataat Power BI -sovelluksen iPhonelle](http://go.microsoft.com/fwlink/?LinkId=522062 "Lataa iPhone-sovellus") Apple App Storesta, lataat automaattisesti myös Power BI Watch -sovelluksen. Apple-oppaassa kerrotaan, miten [Apple Watch -sovellusten asentaminen](https://support.apple.com/HT204784) tapahtuu.
+Power BI Apple Watch -sovellus on yhdistetty Power BI for iOS -sovellukseen, joten kun [lataat Power BI -sovelluksen iPhonelle](https://go.microsoft.com/fwlink/?LinkId=522062 "Lataa iPhone-sovellus") Apple App Storesta, lataat automaattisesti myös Power BI Watch -sovelluksen. Apple-oppaassa kerrotaan, miten [Apple Watch -sovellusten asentaminen](https://support.apple.com/HT204784) tapahtuu.
 
 ## <a name="use-the-power-bi-app-on-the-apple-watch"></a>Power BI -sovelluksen käyttö Apple Watchissa
 Hanki Power BI Apple Watch -sovellus joko kellosta tai napsauttamalla Power BI -pienoisohjelmaa (jos määritetty) suoraan kellotaulusta.
@@ -86,7 +85,7 @@ Koska Apple Watch -kellotaulussa on vain vähän tilaa, Power BI Apple Watch -so
 ## <a name="next-steps"></a>Seuraavat vaiheet
 Palaute auttaa meitä päättämään, mitä toimintoja otamme käyttöön tulevaisuudessa, joten muistathan äänestää muita ominaisuuksia, jotka haluaisit nähdä Power BI ‑mobiilisovelluksissa. 
 
-* Lataa [Power BI iPhone -mobiilisovellus](http://go.microsoft.com/fwlink/?LinkId=522062)
+* Lataa [Power BI iPhone -mobiilisovellus](https://go.microsoft.com/fwlink/?LinkId=522062)
 * Seuraa [@MSPowerBI Twitterissä](https://twitter.com/MSPowerBI)
-* Liity keskusteluun [Power BI -yhteisössä](http://community.powerbi.com/)
+* Liity keskusteluun [Power BI -yhteisössä](https://community.powerbi.com/)
 

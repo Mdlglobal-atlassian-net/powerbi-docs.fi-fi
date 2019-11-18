@@ -2,7 +2,6 @@
 title: Tietoihin yhdistämisen pikaopas
 description: Tietolähteeseen yhdistäminen Power BI Desktopissa
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: quickstart
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: quickstart
-ms.openlocfilehash: 05d8c990b7057ab59515826547a42ce1ee643ac2
-ms.sourcegitcommit: 96217747f07d923d1a9d31f67a853f1ef1d17b20
+ms.openlocfilehash: 1366a5281a36293a484f08c12ab9f8891e29123d
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72891702"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73876201"
 ---
 # <a name="quickstart-connect-to-data-in-power-bi-desktop"></a>Pikaopas: Tietoihin yhdistäminen Power BI Desktopissa
 
@@ -28,8 +27,8 @@ Jos et ole rekisteröitynyt Power BI:hin, [rekisteröidy ilmaiseen kokeiluversio
 ## <a name="prerequisites"></a>Edellytykset
 
 Tarvitset seuraavat, jotta voit suorittaa tämän artikkelin vaiheet:
-* Lataa ja asenna ilmainen **Power BI Desktop** -sovellus, joka suoritetaan paikallisessa tietokoneessa. Voit [ladata **Power BI Desktopin**](https://powerbi.microsoft.com/desktop) suoraan tai hakea sen [**Microsoft-kaupasta**](http://aka.ms/pbidesktopstore).
-* [Lataa tämä Excel-mallityökirja](http://go.microsoft.com/fwlink/?LinkID=521962) ja luo kansio nimeltä *C:\PBID-qs*, johon tallennat kyseisen Excel-tiedoston. Tämän pikaoppaan seuraavissa vaiheissa oletetaan, että ladattu Excel-työkirja sijaitsee kyseisessä paikassa.
+* Lataa ja asenna ilmainen **Power BI Desktop** -sovellus, joka suoritetaan paikallisessa tietokoneessa. Voit [ladata **Power BI Desktopin**](https://powerbi.microsoft.com/desktop) suoraan tai hakea sen [**Microsoft-kaupasta**](https://aka.ms/pbidesktopstore).
+* [Lataa tämä Excel-mallityökirja](https://go.microsoft.com/fwlink/?LinkID=521962) ja luo kansio nimeltä *C:\PBID-qs*, johon tallennat kyseisen Excel-tiedoston. Tämän pikaoppaan seuraavissa vaiheissa oletetaan, että ladattu Excel-työkirja sijaitsee kyseisessä paikassa.
 
 ## <a name="launch-power-bi-desktop"></a>Käynnistä Power BI Desktop
 

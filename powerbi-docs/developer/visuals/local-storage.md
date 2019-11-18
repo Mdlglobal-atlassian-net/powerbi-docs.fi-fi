@@ -3,18 +3,17 @@ title: Paikallisen tallennustilan ohjelmointirajapinta Power BI -visualisoinneis
 description: Artikkelissa kuvataan, miten pääset käyttämään selaimen paikallista tallennustilaa Power BI -visualisointien ohjelmointirajapinnan avulla
 author: uve
 ms.author: v-grniki
-manager: rkarlin
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 10/31/2019
-ms.openlocfilehash: 3b6746b611a41ddfb471008f5aefa4f7dc391456
-ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
+ms.openlocfilehash: f69a3c8928b8079f79b8a6dd5f5b132235a7089c
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73432860"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73879899"
 ---
 # <a name="local-storage-api"></a>Paikallisen tallennustilan ohjelmointirajapinta
 

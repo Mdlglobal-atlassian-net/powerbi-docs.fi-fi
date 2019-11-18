@@ -2,19 +2,18 @@
 title: Yhteyden muodostaminen Power BI -työtilasta OneDrivessa oleviin tiedostoihin
 description: Ohjeet siitä, miten Excel-, CSV- ja Power BI Desktop ‑tiedostot tallennetaan OneDriveen ja miten niihin muodostetaan yhteys Power BI ‑työtilassa käyttöä varten.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: lukasz
 ms.service: powerbi
 ms.topic: conceptual
 ms.date: 04/15/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 2cecd327d76659eb11d81180480cb9be998fd772
-ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
+ms.openlocfilehash: 180fd8d451be794070d8b0f4d37c40965671d23d
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73431629"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73854874"
 ---
 # <a name="connect-to-files-stored-in-onedrive-for-your-power-bi-workspace"></a>Yhteyden muodostaminen Power BI -työtilasta OneDriveen tallennettuihin tiedostoihin
 [Luotuasi Power BI:hin työtilan](service-create-distribute-apps.md) voit tallentaa Excel-, CSV- ja Power BI Desktop ‑tiedostosi OneDrive for Business ‑palveluun ja käyttää niitä sieltä Power BI ‑työtilassa. Voit jatkaa OneDriveen tallentamiesi tiedostojen päivittämistä. Päivitykset tulevat automaattisesti esiin myös kyseisiin tiedostoihin perustuvissa Power BI ‑raporteissa ja koontinäytöissä. 
@@ -53,7 +52,7 @@ Nyt kun tiedostosi ovat työtilasi OneDrive for Business ‑tallennustilassa, vo
 
 ### <a name="import-or-connect-to-the-files-in-your-workspace"></a>Tiedostojen tuonti työtilaan tai yhteyden muodostaminen tiedostoihin
 1. Vaihda Power BI:ssä työtilaan, jolloin työtilan nimi näkyy vasemmassa yläkulmassa. 
-2. Valitse vasemman siirtymisruudun alareunassa **Nouda tiedot**. 
+2. Valitse siirtymisruudun alareunasta **Nouda tiedot**. 
    
    ![](media/service-connect-to-files-in-app-workspace-onedrive-for-business/power-bi-app-get-data-button.png)
 3. Valitse **Tiedostot**-ruudusta **Nouda**.
@@ -80,6 +79,6 @@ Nyt kun tiedostosi ovat työtilasi OneDrive for Business ‑tallennustilassa, vo
 * [Sovellusten ja työtilojen luominen Power BI:ssä](service-create-distribute-apps.md)
 * [Tietojen tuominen Excel-työkirjoista](service-get-data-from-files.md)
 * [Yhteyden muodostaminen kokonaisiin Excel-työkirjoihin](service-excel-workbook-files.md)
-* Onko sinulla muuta kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
+* Onko sinulla muuta kysyttävää? [Kokeile Power BI -yhteisöä](https://community.powerbi.com/)
 * Haluatko antaa palautetta? Siirry [Power BI:n ideasivulle](https://ideas.powerbi.com/forums/265200-power-bi)
 

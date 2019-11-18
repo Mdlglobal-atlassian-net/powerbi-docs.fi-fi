@@ -3,18 +3,17 @@ title: Power BI -käyttöoikeudet
 description: Power BI -käyttöoikeudet
 author: rkarlin
 ms.author: rkarlin
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 10/01/2018
-ms.openlocfilehash: 06901a484ca53881f30cc71d9a7404807ac6cd57
-ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
+ms.openlocfilehash: 14327f09ede41c23fd4fe7cc65fc4f8d3a91b926
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73429133"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73880446"
 ---
 # <a name="power-bi-permissions"></a>Power BI -käyttöoikeudet
 
@@ -46,7 +45,7 @@ Sovellus voi pyytää käyttöoikeuksia, kun se yrittää ensimmäistä kertaa k
 
 ## <a name="requesting-permissions"></a>Käyttöoikeuksien pyytäminen
 
-Voit kutsua API:a suorittamaan todennuksen käyttäjätunnuksella ja salasanalla, mutta toimenpiteiden suorittaminen toisen käyttäjän puolesta edellyttää käyttöoikeuksien pyytämistä ja sitä, että käyttäjä hyväksyy ja sen jälkeen lähettää käyttöoikeustietueen kaikkien tulevien kutsujen yhteydessä. Tässä noudatamme [OAuth 2.0](http://oauth.net/2/) -vakioprotokollaa. Toteutus voi vaihdella, mutta Power BI:n OAuth-työnkulku sisältää seuraavat osat:
+Voit kutsua API:a suorittamaan todennuksen käyttäjätunnuksella ja salasanalla, mutta toimenpiteiden suorittaminen toisen käyttäjän puolesta edellyttää käyttöoikeuksien pyytämistä ja sitä, että käyttäjä hyväksyy ja sen jälkeen lähettää käyttöoikeustietueen kaikkien tulevien kutsujen yhteydessä. Tässä noudatamme [OAuth 2.0](https://oauth.net/2/) -vakioprotokollaa. Toteutus voi vaihdella, mutta Power BI:n OAuth-työnkulku sisältää seuraavat osat:
 
 * **Kirjautumiskäyttöliittymä** – tämä on käyttöliittymä, jonka kehittäjä voi kutsua käyttöoikeuksien pyytämistä varten. Se edellyttää käyttäjältä sisäänkirjautumista, mikäli hän ei vielä ole tehnyt niin. Käyttäjän on myös hyväksyttävä käyttöoikeudet, joita sovellus pyytää. Kirjautumisikkuna antaa takaisin joko käyttökoodin tai virhesanoman koskien annettua uudelleenohjauksen URL-osoitetta.
   * Power BI:n pitäisi toimittaa uudelleenohjauksen vakio-URL-osoite käytettäväksi alkuperäisissä sovelluksissa.
@@ -54,4 +53,4 @@ Voit kutsua API:a suorittamaan todennuksen käyttäjätunnuksella ja salasanalla
 * **Valtuutustunnus** – käytetään API-kutsujen varmentamiseen toisen käyttäjän puolesta. Ne on rajoitettu tiettyyn sovellukseen. Tunnuksilla on elinkaari, ja kun ne vanhenevat, ne on päivitettävä.
 * **Päivitä tunnus** – kun tunnukset vanhenevat, ne päivitetään.
 
-Onko sinulla muuta kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)
+Onko sinulla muuta kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)

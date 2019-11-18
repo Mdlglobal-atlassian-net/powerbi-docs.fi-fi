@@ -2,7 +2,6 @@
 title: Raporttien ja koontinäyttöjen tilaaminen itsellesi ja muille
 description: Opi tilaamaan tilannevedoksia Power BI:n raporttisivuista, koontinäytöistä ja sivutetuista raporteista.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/23/2019
 ms.author: maggies
 LocalizationGroup: Common tasks
-ms.openlocfilehash: e3e22a40b385ab519767eb850617a0506dbfbfd2
-ms.sourcegitcommit: 96217747f07d923d1a9d31f67a853f1ef1d17b20
+ms.openlocfilehash: c8e95a53e0907de86449a91095d2c5afbef5b4c8
+ms.sourcegitcommit: 08b73af260ded51daaa6749338cb85db2eab587f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72891838"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "74099768"
 ---
 # <a name="subscribe-yourself-and-others-to-reports-and-dashboards-in-the-power-bi-service"></a>Power BI -palvelun raporttien ja koontinäyttöjen tilaaminen itsellesi ja muille
 
@@ -97,7 +96,7 @@ Tilaus päättyy, jos Pro-käyttöoikeus umpeutuu, omistaja poistaa koontinäyt�
 * Raporttisivujen tilaukset on sidottu raporttisivun nimeen. Jos tilaat raporttisivun ja nimeät sen uudelleen, sinun on luotava myös tilaus uudelleen.
 * Tietyt organisaatiosi Azure Active Directoryyn määrittämät asetukset voivat rajoittaa sähköpostitilausten käyttämistä Power BI:ssä.  Tällaisia rajoituksia voivat olla esimerkiksi monimenetelmäinen todentaminen tai IP-aluerajoitukset resursseja käytettäessä.
 * Tällä hetkellä raporttien/koontinäyttöjen sähköpostitilauksia, jotka käyttävät reaaliaikaisia tietojoukkoyhteyksiä, ei tueta, kun tilataan muille käyttäjille kuin itsellesi, ellei käytössä ole sivutettu raportti, joka sallii tilauksen lähettämisen muille suojauskontekstin puitteissa. 
-* Sähköpostitilaukset eivät tue suurinta osaa [mukautetuista visualisoinneista](power-bi-custom-visuals.md).  Poikkeuksena ovat mukautetut visualisoinnit, jotka on [sertifioitu](power-bi-custom-visuals-certified.md).  
+* Sähköpostitilaukset eivät tue suurinta osaa [mukautetuista visualisoinneista](developer/power-bi-custom-visuals.md).  Poikkeuksena ovat mukautetut visualisoinnit, jotka on [sertifioitu](developer/power-bi-custom-visuals-certified.md).  
 * Sähköpostitilaukset eivät tällä hetkellä tue R:ää hyödyntäviä mukautettuja visualisointeja.  
 * Sähköpostitilaukset lähetetään käyttäen raportin oletusarvoista suodatin- ja osittajatilaa. Oletusarvoihin tilauksen jälkeen tehdyt muutokset eivät näy sähköpostiviestissä.  Sivutetut raportit tukevat tätä ominaisuutta, ja niiden avulla voit valita kullekin tilaukselle määritetyt parametriarvot.   
 * Erityisesti koontinäyttötilausten osalta tiettyjä ruututyyppejä ei vielä tueta.  Sellaisia ovat esimerkiksi suoratoisto-, video- ja mukautetut verkkosisältöruudut.     
@@ -109,5 +108,5 @@ Tilaus päättyy, jos Pro-käyttöoikeus umpeutuu, omistaja poistaa koontinäyt�
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
 - [Power BI -palvelun sivutettujen raporttien tai koontinäyttöjen tilaaminen itsellesi ja muille](paginated-reports-subscriptions.md)
-- Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)    
+- Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)    
 - [Lue blogimerkintä](https://powerbi.microsoft.com/blog/introducing-dashboard-email-subscriptions-a-360-degree-view-of-your-business-in-your-inbox-every-day/)

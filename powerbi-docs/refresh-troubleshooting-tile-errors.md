@@ -2,7 +2,6 @@
 title: Ruutuvirheiden vianmääritys
 description: Yleisiä virheitä voi ilmetä, kun ruutu yrittää päivittyä Power BI:ssä
 author: mgblythe
-manager: kfile
 ms.reviewer: kayu
 ms.custom: seodec18
 ms.service: powerbi
@@ -11,18 +10,18 @@ ms.topic: troubleshooting
 ms.date: 12/06/2018
 ms.author: mblythe
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: 4ba6b4840a35e00c4b170a6b916bf3877508546a
-ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
+ms.openlocfilehash: dbae4c82fb350242ed0fefadeeec217666fc3005
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73021549"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73877492"
 ---
 # <a name="troubleshooting-tile-errors"></a>Ruutuvirheiden vianmääritys
 Seuraavassa on yleisiä virheitä, joita voit kohdata ruutujen kohdalla sekä niiden selitykset.
 
 > [!NOTE]
-> Jos kohtaat virheen, joka aiheuttaa ongelmia, etkä löydä sitä luettelossa, voit pyytää apua [yhteisösivustolla](http://community.powerbi.com/) tai luoda [tukipalvelupyynnön](https://powerbi.microsoft.com/support/).
+> Jos kohtaat virheen, joka aiheuttaa ongelmia, etkä löydä sitä luettelossa, voit pyytää apua [yhteisösivustolla](https://community.powerbi.com/) tai luoda [tukipalvelupyynnön](https://powerbi.microsoft.com/support/).
 > 
 > 
 
@@ -38,7 +37,7 @@ Ota yhteyttä koontinäytön omistajaan ja varmista, että tietolähteet ja mall
 
 **Järjestelmänvalvojasi on poistanut mukautetut visualisoinnit käytöstä.**
 
-Power BI-järjestelmänvalvojasi on poistanut käytöstä organisaatiosi tai suojausryhmäsi mukautetut visualisoinnit. Et voi käyttää [Microsoft Marketplace](https://appsource.microsoft.com/en-us/marketplace/apps?page=1&product=power-bi-visuals)n mukautettuja visualisointeja etkä tuoda omia visualisointeja tiedostosta. Voi käyttää vain valmiiksi pakattua joukkoa visualisointeja.
+Power BI-järjestelmänvalvojasi on poistanut käytöstä organisaatiosi tai suojausryhmäsi mukautetut visualisoinnit. Et voi käyttää [Microsoft Marketplace](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals)n mukautettuja visualisointeja etkä tuoda omia visualisointeja tiedostosta. Voi käyttää vain valmiiksi pakattua joukkoa visualisointeja.
 
 
 **Tietomuotojen on sisällettävä vähintään yksi ryhmä tai laskutoimitus, joka tulostaa tietoja. Ota yhteyttä koontinäytön omistajaan.**
@@ -82,5 +81,5 @@ Jos sinulla on edelleen ongelma, [ota yhteyttä tukeen](https://support.powerbi.
 ## <a name="next-steps"></a>Seuraavat vaiheet
 [Paikallisen tietoyhdyskäytävän vianmääritys](service-gateway-onprem-tshoot.md)  
 [Vianmääritys, Power BI Personal Gateway](service-admin-troubleshooting-power-bi-personal-gateway.md)  
-Onko sinulla muuta kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
+Onko sinulla muuta kysyttävää? [Kokeile Power BI -yhteisöä](https://community.powerbi.com/)
 

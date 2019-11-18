@@ -2,7 +2,6 @@
 title: Usein kysyttyjä loppukäyttäjää koskevia kysymyksiä Power BI:stä
 description: Selaa usein kysyttyjä kysymyksiä ja vastauksia Power BI -palvelusta ja Power BI -mobiilisovelluksista.
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
@@ -10,16 +9,16 @@ ms.topic: conceptual
 ms.date: 10/03/2019
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 5166c99a66178fb29ecab3d5ed0a660f694f7a61
-ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
+ms.openlocfilehash: 282b10d48efc97c38dae06692964e3ba2a7412b0
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73430050"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73852521"
 ---
 # <a name="frequently-asked-questions-about-power-bi"></a>Usein kysyttyjä kysymyksiä Power BI:stä
 
-* Jos sinulla on muita kysymyksiä, [voit esittää niitä Power BI -yhteisössä](http://community.powerbi.com/).
+* Jos sinulla on muita kysymyksiä, [voit esittää niitä Power BI -yhteisössä](https://community.powerbi.com/).
 * Eikö ongelma ratkennut? Vieraile [Power BI -tukisivulla](https://powerbi.microsoft.com/support/).
 
 ## <a name="what-is-the-microsoft-power-bi-service"></a>Mikä on Microsoft Power BI -palvelu?
@@ -56,9 +55,9 @@ Kyllä, voittoa tavoittelemattomille yhdistyksille on erillinen hinnoittelu suor
 
 Kyllä. Power BI:stä on saatavana alkuperäiset sovellukset Android-puhelimille ja -tableteille, iOS-laitteille ja Windows 10 -laitteille. Lataa haluamasi [Power BI -mobiilisovellus](https://powerbi.microsoft.com/mobile) soveltuvasta kaupasta:  
 
-* [Applen App Store](http://go.microsoft.com/fwlink/?LinkId=526218)
-* [Google Play](http://go.microsoft.com/fwlink/?LinkID=544867&clcid=0x409)
-* [Windows Store](http://go.microsoft.com/fwlink/?LinkId=526478)
+* [Applen App Store](https://go.microsoft.com/fwlink/?LinkId=526218)
+* [Google Play](https://go.microsoft.com/fwlink/?LinkID=544867&clcid=0x409)
+* [Windows Store](https://go.microsoft.com/fwlink/?LinkId=526478)
 
 ## <a name="what-do-i-need-to-install-to-use-power-bi"></a>Mitä minun on asennettava voidakseni käyttää Power BI:tä?
 
@@ -66,15 +65,15 @@ Ilmaisen Power BI -palvelun käyttämiseen tarvitaan vain selain ja sähköposti
 
 Voit ladata Power BI -mobiilisovellukset soveltuvasta kaupasta, myös ilmaiseksi:
 
-* [App Store](http://go.microsoft.com/fwlink/?LinkId=526218)
-* [Google Play](http://go.microsoft.com/fwlink/?LinkID=544867&clcid=0x409)
-* [Windows Store](http://go.microsoft.com/fwlink/?LinkId=526478)
+* [App Store](https://go.microsoft.com/fwlink/?LinkId=526218)
+* [Google Play](https://go.microsoft.com/fwlink/?LinkID=544867&clcid=0x409)
+* [Windows Store](https://go.microsoft.com/fwlink/?LinkId=526478)
 
 ## <a name="where-do-i-get-started-with-power-bi"></a>Miten aloitan Power BI:n käytön?
 
 Seuraavat resurssit ovat käytettävissäsi alkuun pääsemiseksi:
 
-* [Power BI -blogi](http://blogs.msdn.com/b/powerbi/)
+* [Power BI -blogi](https://blogs.msdn.com/b/powerbi/)
 * [Verkkoseminaarit](../webinars.md)
 * [YouTube-kanavamme](https://www.youtube.com/user/mspowerbi) aloitusohjevideot
 * [Aloita Power BI:n käyttäminen *kuluttajana*](power-bi-consumer-landing.md) -artikkeli
@@ -91,19 +90,19 @@ Tässä on täydellinen luettelo [Power BI:n tukemista alueista ja kielistä](..
 
 ## <a name="how-can-i-buy-power-bi-pro-in-my-country"></a>Kuinka voin ostaa Power BI Pron kotimaassani?
 
-Voit ostaa Power BI Pro -käyttöoikeuksia suoraan tai keskustella edustajan kanssa osoitteessa [www.powerbi.com](http://www.powerbi.com).
+Voit ostaa Power BI Pro -käyttöoikeuksia suoraan tai keskustella edustajan kanssa osoitteessa [www.powerbi.com](https://www.powerbi.com).
 
 Voit myös etsiä [Microsoft-kumppanin](https://partner.microsoft.com/), joka auttaa sinua Power BI:n käyttöönotossa.
 
 ## <a name="does-power-bi-meet-national-regional-and-industry-specific-compliance-requirements"></a>Onko Power BI kansallisten, alueellisten ja alakohtaisten vaatimusten mukainen?
 
-Lisätietoja Power BI:n vaatimustenmukaisuudesta on [Microsoft Trust Centerissä](http://go.microsoft.com/fwlink/?LinkId=785324).
+Lisätietoja Power BI:n vaatimustenmukaisuudesta on [Microsoft Trust Centerissä](https://go.microsoft.com/fwlink/?LinkId=785324).
 
 ## <a name="where-can-i-learn-more-about-security"></a>Mistä saan lisätietoja suojauksesta?
 
 Lue lisää Power BI:n suojauksesta, tietosuojasta ja yhteensopivuudesta tästä:
 
-* Tämä [Power BI:n suojauksen](http://go.microsoft.com/fwlink/?LinkId=829185) raportti
+* Tämä [Power BI:n suojauksen](https://go.microsoft.com/fwlink/?LinkId=829185) raportti
 
 * Tämä [Power BI:n suojauksen tuen](../service-admin-power-bi-security.md) artikkeli
 
@@ -117,5 +116,5 @@ Kuten monissa muissakin Microsoft-palveluissa ja -ohjelmistoissa, myös Power BI
 
 * [Mikä Power BI:n kuluttajaversio on?](end-user-consumer.md)
 * [Miten kuluttaja käyttää Power BI:tä?](end-user-reading-view.md)
-* Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)
+* Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
 * Eikö ongelma ratkennut? Vieraile [Power BI -tukisivulla](https://powerbi.microsoft.com/support/)

@@ -2,18 +2,17 @@
 title: Q&A:n optimoimisen parhaat käytännöt
 description: Power BI Q&A:n optimoiminen ja sen toiminnan parantaminen
 author: mohaali
-manager: mohaali
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 10/23/2019
 ms.author: mohaali
-ms.openlocfilehash: 81ef8137b6ca41f898e7802aa294356af7a87fe8
-ms.sourcegitcommit: 96217747f07d923d1a9d31f67a853f1ef1d17b20
+ms.openlocfilehash: e18579d654cb2ab17ed0dbff73fba95f5f9a64ed
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72892294"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73875069"
 ---
 # <a name="best-practices-to-optimize-qa-in-power-bi"></a>Q&A:n optimoimisen parhaat käytännöt Power BI:ssä
 Yleisien lauseiden ja luonnollisen kielen käyttäminen tiedoista esitettävissä kysymyksissä on tehokasta. Vielä tehokkaampaa on, kun tiedot vastaavat, minkä Power BI:n Q&A-toiminto tekee.

@@ -2,21 +2,20 @@
 title: Power BI -hallintaportaali
 description: Hallintaportaalissa voit hallita organisaatiosi Power BI -vuokraajia. Hallintaportaali sisältää esimerkiksi käyttömittareita ja asetuksia. Sen kautta voit käyttää myös Microsoft 365 -hallintakeskusta.
 author: mgblythe
-ms.author: mblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 09/25/2019
+ms.author: mblythe
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: 8a6e104a6fcb129a6e51d8424a8c2321ea74b49c
-ms.sourcegitcommit: 2b7beec5237a597bab2da8eb6ffe69122a5d2ed9
+ms.openlocfilehash: 9970d676019bb253471da48ce3e9019e211ba6c5
+ms.sourcegitcommit: 01de0b01f66f28ca45b8d309d7864f261d6c9a85
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "73442866"
+ms.lasthandoff: 11/16/2019
+ms.locfileid: "74128373"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>Power BI:n hallinta hallintaportaalissa
 
@@ -305,7 +304,7 @@ Organisaation käyttäjät voivat käyttää Azure-hausta riippuvaisia ulkoisia 
 
 ### <a name="add-and-use-custom-visuals"></a>Lisää ja käytä mukautettuja visualisointeja
 
-Organisaation käyttäjät voivat käyttää mukautettuja visualisointeja ja jakaa niitä. [Lue lisää](power-bi-custom-visuals.md)
+Organisaation käyttäjät voivat käyttää mukautettuja visualisointeja ja jakaa niitä. [Lue lisää](developer/power-bi-custom-visuals.md)
 
 > [!NOTE]
 > Tämä asetus voidaan ulottaa koskemaan koko organisaatiota tai rajoittaa määrättyihin ryhmiin.
@@ -457,7 +456,7 @@ Järjestelmänvalvojana voit tarkastella vuokraajatilillesi luotuja upotuskoodej
 
  ## <a name="organizational-visuals">Organisaation visualisoinnit.</a> 
 
-**Organisaation visualisoinnit** -välilehden avulla voit ottaa käyttöön ja hallita organisaatiosi mukautettuja visualisointeja. Organisaation visualisointien avulla voit helposti käyttää omia visualisointeja organisaatiossa, ja raporttien tekijät voivat sitten hakea ja tuoda niitä raportteihinsa Power BI Desktopista. [Lue lisää](power-bi-custom-visuals-organization.md)
+**Organisaation visualisoinnit** -välilehden avulla voit ottaa käyttöön ja hallita organisaatiosi mukautettuja visualisointeja. Organisaation visualisointien avulla voit helposti käyttää omia visualisointeja organisaatiossa, ja raporttien tekijät voivat sitten hakea ja tuoda niitä raportteihinsa Power BI Desktopista. [Lue lisää](developer/power-bi-custom-visuals-organization.md)
 
 > [!WARNING]
 > Mukautettu visualisointi voi sisältää koodia, jolla on tietoturva- tai tietosuojariskejä. Varmista siis, että luotat mukautetun visualisoinnin tekijään ja lähteeseen, ennen kuin otat sen käyttöön organisaation säilössä.
@@ -513,7 +512,7 @@ Jos haluat päivittää visualisoinnin organisaation säilöstä, valitse ratask
 
 Varmista, että visualisoinnin tunnus pysyy samana. Uusi tiedosto korvaa aiemman tiedoston kaikissa organisaation raporteissa. Jos visualisoinnin uusi versio rikkoo minkä tahansa sen aiemman version käyttö- tai tietorakenteen, älä korvaa aiempaa versiota. Lue sen sijaan visualisoinnista uusi versio, joka luetellaan erikseen. Voit esimerkiksi lisätä uuden luetteloidun visualisoinnin nimeen versionumeron (versio X.X). Näin käyttäjät tietävät, että kyseessä on saman visualisoinnin päivitetty versio, ja voivat välttää olemassa olevien raporttien toimintojen virheet sekä ongelmat. Varmista taas, että visualisoinnin tunnus pysyy samana. Kun käyttäjä sitten seuraavan kerran siirtyy organisaatioon säilöön Power BI Desktopista, hän voi tuoda uuden version. Tässä yhteydessä häneltä kysytään, haluaako hän korvata raportissa olevan nykyisen version.
 
-Saat lisätietoja [organisaation mukautettujen visualisointien usein kysytyistä kysymyksistä](https://docs.microsoft.com/power-bi/power-bi-custom-visuals-faq#organizational-custom-visuals).
+Saat lisätietoja [organisaation mukautettujen visualisointien usein kysytyistä kysymyksistä](https://docs.microsoft.com/power-bi/power-bi-custom-visuals-faq#organizational-visuals).
 
 ## <a name="dataflowStorage">Tietovuon tallennustila (esikatselu)</a>
 
@@ -547,7 +546,7 @@ Järjestelmänvalvojana voit mukauttaa Power BI:n ulkoasua koko organisaatiolle.
 * **Valitse teeman väri**: Voit valita teeman heksakoodin tai RGB-arvon perusteella, tai voit valita sen annetusta värivalikoimasta.
 
 
-Katso lisätietoja artikkelista [Organisaation mukautus](http://aka.ms/orgBranding).
+Katso lisätietoja artikkelista [Organisaation mukautus](https://aka.ms/orgBranding).
 
 ![Työtilojen luettelo](media/service-admin-portal/workspaces-list.png)
 ## <a name="next-steps"></a>Seuraavat vaiheet

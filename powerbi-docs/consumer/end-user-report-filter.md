@@ -2,7 +2,6 @@
 title: Raportin Suodattimet-ruutuun tutustuminen
 description: Suodattimen lisääminen raporttiin Power BI -palvelussa kuluttajille
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 ms.custom: seodec18
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/22/2019
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 3217691d68be6a351f87e5011fd5bc5ef347acfc
-ms.sourcegitcommit: 23ad768020a9daf129f69a462a2d46d59d2349d2
+ms.openlocfilehash: af784c772ddbdd895f7e6c576d91d4e2fec8ffeb
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72774790"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73862061"
 ---
 # <a name="take-a-tour-of-the-report-filters-pane"></a>Aloita raportin Suodattimet-ruudun esittely
 

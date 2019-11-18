@@ -2,7 +2,6 @@
 title: Cortanan ja Power BI:n vianmääritys
 description: Jos sinulla on ongelmia Power BI:n käyttämisessä Cortanan avulla, kokeile tämän artikkelin toimia.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: troubleshooting
 ms.date: 05/29/2019
 ms.author: maggies
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 02e79522baa7580b019cec6956593d88260fb95b
-ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
+ms.openlocfilehash: 9d6241659eaa5e6ff9c98b5c25dbfacb0bbac34d
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73432116"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73872888"
 ---
 # <a name="troubleshoot-cortana-for-power-bi"></a>Cortanan ja Power BI:n vianmääritys
 Tämä artikkeli on osa pidempää sarjaa. 
@@ -96,4 +95,4 @@ Etsitkö koontinäyttöä, joka on jaettu sinulle?  Avaa Power BI > **Jaettu kan
 * Kyselyn on oltava vähintään kaksi sanaa pitkä.  Jos kysely on liian lyhyt, lisää sana ”show” (näytä).
 * Kyselymerkkijonot eivät välttämättä toimi, jos niissä on prepositioita, kuten esimerkiksi ilmauksessa ”sales by item” (myynti nimikkeittäin). Kokeile erilaisia kyselytermejä, joissa ei ole prepositioita ja jotka ovat kuvaavia tai yksilöllisiä.
 
-Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
+Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](https://community.powerbi.com/)

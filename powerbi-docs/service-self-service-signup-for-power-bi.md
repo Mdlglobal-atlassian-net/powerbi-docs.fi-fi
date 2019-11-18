@@ -2,7 +2,6 @@
 title: Rekisteröityminen Power BI:hin yksityishenkilönä
 description: Ota selvää, miten voit rekisteröityä Power BI:n käyttäjäksi ja aloittaa sen käytön tietojen analysoinnin ja visualisoinnin tarpeisiisi.
 author: mgblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/31/2019
 ms.author: mblythe
 LocalizationGroup: Get started
-ms.openlocfilehash: 785aad2cb7fe369805d8562eb8e493fb65036ef0
-ms.sourcegitcommit: 2b7beec5237a597bab2da8eb6ffe69122a5d2ed9
+ms.openlocfilehash: b7dae4c3b4ce35ec6af82ae59c374ab31937881a
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "73442862"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73871540"
 ---
 # <a name="sign-up-for-power-bi-as-an-individual"></a>Rekisteröityminen Power BI:hin yksityishenkilönä
 
@@ -88,4 +87,4 @@ Useimmissa tapauksissa voit rekisteröityä Power BI:hin noudattamalla kuvailtua
 [Power BI Pron ostaminen](service-admin-purchasing-power-bi-pro.md)  
 [Yksittäisten käyttäjien Power BI -palvelusopimus](https://powerbi.microsoft.com/terms-of-service/)  
 
-Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)
+Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)

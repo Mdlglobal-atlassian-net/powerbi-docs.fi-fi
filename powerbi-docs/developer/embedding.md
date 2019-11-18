@@ -3,7 +3,6 @@ title: Upotettu analysointi Power BI:n avulla
 description: Power BI tarjoaa ohjelmointirajapintoja, jotka mahdollistavat koontinäyttöjen ja raporttien upotetun analysoinnin käytön sovelluksissa. Lue lisää upottamisesta Power BI:n kanssa sekä PaaS-ympäristössä että SaaS-ympäristössä upotetun analysoinnin ohjelmiston, upotetun analysoinnin työkalujen tai upotetun liiketoimintatiedon työkalujen avulla.
 author: KesemSharabi
 ms.author: kesharab
-manager: rkarlin
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
@@ -17,12 +16,12 @@ helpviewer_keywords:
 - Power BI APIs
 ms.custom: seodec18
 ms.date: 05/15/2019
-ms.openlocfilehash: 501b43b7a17d60bbb277cd68c1a5d13e09b14bd5
-ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
+ms.openlocfilehash: ccd5917b91d9dd0576f0f4607f84f849f6df145d
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73430737"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73875770"
 ---
 # <a name="embedded-analytics-with-power-bi"></a>Upotettu analysointi Power BI:n avulla
 
@@ -102,4 +101,4 @@ Voit nyt kokeilla Power BI -sisällön upottamista sovellukseen tai asiakkailles
 > [!div class="nextstepaction"]
 >[Upottaminen asiakkaillesi](embed-sample-for-customers.md)
 
-Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)
+Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)

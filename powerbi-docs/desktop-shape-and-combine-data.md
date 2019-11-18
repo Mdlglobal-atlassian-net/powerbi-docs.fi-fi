@@ -2,7 +2,6 @@
 title: 'Opetusohjelma: Tietojen muotoilu ja yhdistäminen Power BI Desktopissa'
 description: Tässä opetusohjelmassa opit tietojen muotoilun ja yhdistämisen Power BI Desktopissa
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: tutorial
 ms.date: 10/18/2019
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 19e0fa75426cd3e3f72ce9c01712b8d1c52e4abf
-ms.sourcegitcommit: 17f45a81b0dcbf9e3f1fb2a551584170baecd320
+ms.openlocfilehash: d6a36f8ef3ef5d668fe8d6021758b651cdbf7fd5
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72922574"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73877817"
 ---
 # <a name="tutorial-shape-and-combine-data-in-power-bi-desktop"></a>Opetusohjelma: Tietojen muotoilu ja yhdistäminen Power BI Desktopissa
 
@@ -195,7 +194,7 @@ Meillä on kuitenkin onnea, sillä eräs toinen julkinen tietolähde tekee juuri
 
 1. Valitse kyselyeditorin **Aloitus**-valintanauhasta **Uusi lähde \> Verkko**. 
 
-2. Anna osavaltioiden lyhenteet sisältävän sivuston osoite, *http://en.wikipedia.org/wiki/List_of_U.S._state_abbreviations* , ja valitse sitten **Yhdistä**.
+2. Anna osavaltioiden lyhenteet sisältävän sivuston osoite, *https://en.wikipedia.org/wiki/List_of_U.S._state_abbreviations* , ja valitse sitten **Yhdistä**.
 
    Siirtymistoiminto näyttää verkkosivuston sisällön.
 

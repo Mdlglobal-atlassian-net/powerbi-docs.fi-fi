@@ -2,7 +2,6 @@
 title: Porautuminen alas- ja ylöspäin visualisoinnissa
 description: Tässä artikkelissa kerrotaan, miten voit porautua visualisointiin Microsoft Power BI -palvelussa.
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/17/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 24dbce4d825e51d40fc9a42384561d4608f18035
-ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
+ms.openlocfilehash: 21d663b2f29a8090e6cfb7013d16c739ef0a29b3
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73019891"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73851449"
 ---
 # <a name="drill-mode-in-a-visual-in-power-bi"></a>Visualisointiin porautumistila Power BI:ssä
 
@@ -153,4 +152,4 @@ Oletusarvoisesti poraaminen ei suodata raportin muita visualisointeja. Raportin 
 
 [Power BI:n peruskäsitteet](end-user-basic-concepts.md)
 
-Onko sinulla muuta kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
+Onko sinulla muuta kysyttävää? [Kokeile Power BI -yhteisöä](https://community.powerbi.com/)

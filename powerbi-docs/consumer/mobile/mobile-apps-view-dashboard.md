@@ -2,19 +2,18 @@
 title: Raporttinäkymien ja raporttien tarkastelu Power BI -mobiilisovelluksissa
 description: Luo raporttinäkymiä ja raportteja tai muodosta yhteys niihin Power BI -palvelussa. Sen jälkeen voit tarkastella niitä Power BI -mobiilisovelluksissa.
 author: mshenhav
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 07/05/2019
 ms.author: mshenhav
-ms.openlocfilehash: b4c81e1c83ef53dcb16153b4e9996b259e9eb886
-ms.sourcegitcommit: d441d350504f8c6d9e100d229757add6237f0bef
+ms.openlocfilehash: 1a3450ba4a31679c9e2e4ad844ef1058ebfdf4ee
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73059805"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73870659"
 ---
 # <a name="view-dashboards-and-reports-in-the-power-bi-mobile-apps"></a>Raporttinäkymien ja raporttien tarkastelu Power BI -mobiilisovelluksissa
 Koskee seuraavia:
@@ -40,7 +39,7 @@ Tässä on Power BI -raporttinäkymä Power BI -palvelussa:
 ## <a name="view-dashboards-on-your-iphone"></a>Raporttinäkymien tarkastelu iPhonessa
 1. Avaa iPhonen Power BI -sovellus ja kirjaudu sisään.
    
-   Haluatko [ladata iPhone-sovelluksen](http://go.microsoft.com/fwlink/?LinkId=522062) Applen App Storesta?
+   Haluatko [ladata iPhone-sovelluksen](https://go.microsoft.com/fwlink/?LinkId=522062) Applen App Storesta?
 2. Avaa raporttinäkymä napauttamalla sitä.  
    
     ![Napauta raporttinäkymää](./media/mobile-apps-view-dashboard/power-bi-iphone-dashboard-home.png)
@@ -80,7 +79,7 @@ Voit lähentää ja loitontaa raporttinäkymän eri alueita nipistämällä ja s
 ## <a name="view-dashboards-on-your-ipad"></a>Raporttinäkymien tarkastelu iPadissa
 1. Avaa Power BI -sovellus.
    
-   Haluatko [ladata iPad-sovelluksen](http://go.microsoft.com/fwlink/?LinkId=522062) Applen App Storesta?
+   Haluatko [ladata iPad-sovelluksen](https://go.microsoft.com/fwlink/?LinkId=522062) Applen App Storesta?
 2. Napauta sovelluksen yläosassa **Raporttinäkymät**-kohtaa.  
    
    ![Raporttinäkymän aloitusnäkymä](./media/mobile-apps-view-dashboard/power-bi-ipad-dashboard-home.png)
@@ -103,7 +102,7 @@ Voit lähentää ja loitontaa raporttinäkymän eri alueita nipistämällä ja s
 ## <a name="view-dashboards-on-your-android-phone"></a>Raporttinäkymien tarkastelu Android-puhelimessa
 1. Avaa Android-puhelimen Power BI -sovellus ja kirjaudu sisään.
    
-   Haluatko ensin [ladata Android-sovelluksen](http://go.microsoft.com/fwlink/?LinkID=544867)?
+   Haluatko ensin [ladata Android-sovelluksen](https://go.microsoft.com/fwlink/?LinkID=544867)?
 2. Avaa raporttinäkymä napauttamalla sitä.   
    
    ![Raporttinäkymän aloitusnäkymä](./media/mobile-apps-view-dashboard/power-bi-android-dashboards.png)
@@ -127,7 +126,7 @@ Voit lähentää ja loitontaa raporttinäkymän eri alueita nipistämällä ja s
 ## <a name="view-dashboards-on-your-android-tablet"></a>Raporttinäkymien tarkastelu Android-tabletissa
 1. Avaa Android-tabletin Power BI -sovellus ja kirjaudu sisään.
    
-   Haluatko ensin [ladata Android-sovelluksen](http://go.microsoft.com/fwlink/?LinkID=544867)?
+   Haluatko ensin [ladata Android-sovelluksen](https://go.microsoft.com/fwlink/?LinkID=544867)?
 2. Avaa raporttinäkymä napauttamalla sitä.   
    
    ![Raporttinäkymän aloitusnäkymä](./media/mobile-apps-view-dashboard/power-bi-android-tablet-dashboard-home.png)
@@ -154,8 +153,8 @@ Jos olet raporttinäkymän omistaja, *Power BI -palvelussa* voit luoda raporttin
 Lue lisää [raporttinäkymän puhelinnäkymän luomisesta](../../service-create-dashboard-mobile-phone-view.md).
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
-* [Android-sovelluksen lataaminen](http://go.microsoft.com/fwlink/?LinkID=544867) Google Play Kaupasta  
+* [Android-sovelluksen lataaminen](https://go.microsoft.com/fwlink/?LinkID=544867) Google Play Kaupasta  
 * [Power BI:n Android-sovelluksen käytön aloittaminen](mobile-android-app-get-started.md)  
 * [Mikä on Power BI?](../../fundamentals/power-bi-overview.md)
-* Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)
+* Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
 

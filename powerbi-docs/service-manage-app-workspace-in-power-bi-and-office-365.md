@@ -2,7 +2,6 @@
 title: Työtilan hallinta Power BI:ssä ja Office 365:ssä
 description: Power BI:n työtilat ovat Office 365 -ryhmiin perustuva yhteistyötoiminto. Voit hallita työtiloja Power BI:ssä sekä Office 365:ssä.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: lukasz
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/26/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 1317d11b11624ca6187eb91d5350a698bf164f63
-ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
+ms.openlocfilehash: 7f1d86dd3da6665eb985db17ac3641768ff56947
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73431817"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73872065"
 ---
 # <a name="manage-your-workspace-in-power-bi-and-office-365"></a>Työtilan hallinta Power BI:ssä ja Office 365:ssä
 
@@ -87,4 +86,4 @@ Kun jakelet sovellustasi työtilasta, tässä lisäämäsi kuva näkyy sovelluks
 
 * [Julkaise sovellus Power BI:ssä](service-create-distribute-apps.md)
 
-* Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
+* Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](https://community.powerbi.com/)
