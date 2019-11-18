@@ -100,13 +100,13 @@ Ei käytettävissä
 
 Ei käytettävissä
 
-## <a name="disclaimer"></a>Vastuuvapausilmoitus
+## <a name="disclaimer"></a>Disclaimer
 
-© 2017 Microsoft Corporation. Kaikki oikeudet pidätetään. Tässä asiakirjassa mainittujen todellisten yritysten ja tuotteiden nimet voivat olla omistajiensa tavaramerkkejä. Tämän asiakirjan sisältämät tiedot edustavat Microsoft Corporationin näkemystä käsitellyistä kysymyksistä asiakirjan julkaisuajankohtana. Microsoft ei voi taata julkaisupäivän jälkeen esitettyjen tietojen paikkansapitävyyttä. Microsoft päivittää sivustoihinsa säännöllisesti uudet tuotteiden saatavuutta koskevat tiedot, kun tiedot ovat käytettävissä.
+© 2017 Microsoft Corporation. All rights reserved. The names of actual companies and products mentioned herein may be the trademarks of their respective owners. The information contained in this document represents the current view of Microsoft Corporation on the issues discussed as of the date of publication. Microsoft cannot guarantee the accuracy of any information presented after the date of publication. Microsoft regularly updates its websites with new information about the accessibility of products as that information becomes available.
 
-Tuotteiden mukauttaminen mitätöi tämän Microsoftin määritystenmukaisuuslausekkeen. Pyydä käyttöä helpottavien toimintojen toimittajilta tietoja haluamiesi toimintojen yhteensopivuudesta.
+Customization of the product voids this conformance statement from Microsoft. Please consult with Assistive Technology (AT) vendors for compatibility specifications of specific AT products.
 
-Tämä asiakirja on tarkoitettu vain tiedoksi. MICROSOFT EI MYÖNNÄ TÄSSÄ ASIAKIRJASSA MITÄÄN NIMENOMAISIA TAI EPÄSUORIA TAKUITA.
+This document is for informational purposes only. MICROSOFT MAKES NO WARRANTIES, EXPRESS OR IMPLIED, IN THIS DOCUMENT.
 
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
