@@ -5,15 +5,15 @@ author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
+ms.subservice: powerbi-custom-visuals
 ms.date: 07/16/2019
-ms.openlocfilehash: 84c873c925c7e733c70b309d5cc2476dff2e553b
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: e650b1eb8fd05db54b9d0bf9021eaa881d28832e
+ms.sourcegitcommit: 01de0b01f66f28ca45b8d309d7864f261d6c9a85
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73863948"
+ms.lasthandoff: 11/16/2019
+ms.locfileid: "74128193"
 ---
 # <a name="guidelines-for-power-bi-visuals"></a>Power BI -visualisointien ohjeet
 Varmista ennen kuin [julkaiset](https://docs.microsoft.com/power-bi/developer/office-store) visualisoinnin AppSourcessa muiden käytettäväksi, että noudatat ohjeita, jotta käyttäjäsi saavat erinomaisen käyttökokemuksen. 
@@ -52,7 +52,7 @@ Mahdollisten tietokuvakkeiden tulisi lukutilassa vastata väriltään, kooltaan 
 
 Viime aikoihin asti Marketplace (AppSource) hyväksyi ainoastaan maksuttomia Power BI -visualisointeja. Tämä käytäntö on muuttunut (joulukuussa 2018), joten voit nyt lähettää AppSourceen myös visualisointeja, joissa on ”lisäosto saattaa olla tarpeen” -hintalappu. 
 
-”Lisäosto saattaa olla tarpeen” -visualisoinnit ovat samankaltaisia kuin Office-kaupan apuohjelmien sovelluskohtaiset ostokset. Kehittäjät voivat lähettää visualisointeja myös sertifioitaviksi sen jälkeen, kun AppSource-tiimi on hyväksynyt ne, ja varmistettuaan, että visualisoinnit täyttävät sertifiointivaatimukset. Lisätietoja on artikkelissa [Sertifioidut Power BI -visualisoinnit](../power-bi-custom-visuals-certified.md).
+”Lisäosto saattaa olla tarpeen” -visualisoinnit ovat samankaltaisia kuin Office-kaupan apuohjelmien sovelluskohtaiset ostokset. Kehittäjät voivat lähettää visualisointeja myös sertifioitaviksi sen jälkeen, kun AppSource-tiimi on hyväksynyt ne, ja varmistettuaan, että visualisoinnit täyttävät sertifiointivaatimukset. Lisätietoja on artikkelissa [Sertifioidut Power BI -visualisoinnit](../developer/power-bi-custom-visuals-certified.md).
 
 > [!NOTE]
 > Visualisoinnin sertifiointi edellyttää, ettei siinä käytetä ulkoisia palveluita tai resursseja.

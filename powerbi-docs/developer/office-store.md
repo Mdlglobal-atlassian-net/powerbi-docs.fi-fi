@@ -5,15 +5,15 @@ author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
+ms.subservice: powerbi-custom-visuals
 ms.date: 3/27/2019
-ms.openlocfilehash: f97c38301eb69422c123503364e2e3f11ce5368a
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 8d320b5fa1387ebf21ecd8c3c1db70b9892154e7
+ms.sourcegitcommit: 01de0b01f66f28ca45b8d309d7864f261d6c9a85
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73880526"
+ms.lasthandoff: 11/16/2019
+ms.locfileid: "74128048"
 ---
 # <a name="publish-power-bi-visuals-to-appsource"></a>Power BI -visualisointien julkaiseminen AppSourceen
 
@@ -142,13 +142,13 @@ Kun olet lähettänyt visualisoinnin, voit seurata sen tilaa [sovelluskoontinäy
 
 ## <a name="certify-your-visual"></a>Visualisoinnin sertifioiminen
 
-Kun visualisointisi on luotu, voit hankkia sille sertifioinnin. Tämä tarkoittaa sitä, että se voidaan suorittaa Power BI -palvelussa ja sitä voidaan käyttää palvelun muiden toimintojen kanssa (esimerkiksi PowerPointiin vieminen). Saat lisätietoja ohjeartikkelista [Mukautetun visualisoinnin *sertifioinnin hankkiminen*](../power-bi-custom-visuals-certified.md).
+Kun visualisointisi on luotu, voit hankkia sille sertifioinnin. Tämä tarkoittaa sitä, että se voidaan suorittaa Power BI -palvelussa ja sitä voidaan käyttää palvelun muiden toimintojen kanssa (esimerkiksi PowerPointiin vieminen). Saat lisätietoja ohjeartikkelista [Mukautetun visualisoinnin *sertifioinnin hankkiminen*](../developer/power-bi-custom-visuals-certified.md).
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
 [Power BI:n mukautetun visualisoinnin kehittäminen](visuals/custom-visual-develop-tutorial.md)  
 [Visualisoinnit Power BI:ssä](../visuals/power-bi-report-visualizations.md)  
-[Mukautetut visualisoinnit Power BI:ssä](../power-bi-custom-visuals.md)  
-[Mukautetun visualisoinnin *sertifioinnin hankkiminen*](../power-bi-custom-visuals-certified.md)
+[Mukautetut visualisoinnit Power BI:ssä](../developer/power-bi-custom-visuals.md)  
+[Mukautetun visualisoinnin *sertifioinnin hankkiminen*](../developer/power-bi-custom-visuals-certified.md)
 
 Onko sinulla muuta kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)

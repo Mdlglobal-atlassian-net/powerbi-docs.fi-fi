@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 07/15/2019
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 45a645227a5d7a18fd05738559ed0bccc0e1f7c9
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 4aa3d46741044498846865278db51859980a19b9
+ms.sourcegitcommit: 0d7ad791a2d2bef45d5d60e38e0af4c9fc22187b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73872400"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74010830"
 ---
 # <a name="on-premises-data-gateway-faq---power-bi"></a>Paikallisten tietoyhdyskäytävien usein kysytyt kysymykset – Power BI
 
@@ -41,10 +41,6 @@ ms.locfileid: "73872400"
 **Kysymys:** miksi en saa muodostettua yhteyttä Oracle-palvelimeeni? 
 
 **Vastaus**: Sinun täytyy ehkä asentaa Oracle-asiakasohjelma ja määrittää tnsnames.ora-tiedostoon oikeat palvelintiedot, jotta voit muodostaa yhteyden. Tämä on yhdyskäytävästä erillinen asennus. Saat lisätietoja ohjeartikkelista [Oracle-asiakasohjelman asentaminen](service-gateway-onprem-manage-oracle.md#install-the-oracle-client).
-
-**Kysymys:** toimiiko yhdyskäytävä Azure ExpressRouten kanssa? 
-
-**Vastaus**: Kyllä. Saat lisätietoja [Power BI ja ExpressRoute](service-admin-power-bi-expressroute.md) -ohjeartikkelista
 
 **Kysymys:** Käytän R-komentosarjoja. Tuetaanko sitä?
 

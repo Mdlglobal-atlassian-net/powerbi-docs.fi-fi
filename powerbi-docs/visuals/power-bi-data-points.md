@@ -6,15 +6,15 @@ ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/02/2018
+ms.date: 11/07/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: b45d0fb20dbb9a697e6d079a6b28c0fc86290627
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 1ae0fc339d3837c8fc28cc604b3ddb840807dcd5
+ms.sourcegitcommit: 0d7ad791a2d2bef45d5d60e38e0af4c9fc22187b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73881069"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74011290"
 ---
 # <a name="data-point-limits-and-strategies-by-visual-type"></a>Arvopisterajat ja strategiat visualisointityypin mukaan
 
@@ -150,7 +150,6 @@ Rajoitettu 150 000 riviin. Jos valittuna on yli 150 000 riviä, vain ensimmäise
 Muotokartassa voidaan käyttää tilastotiedot tai dynaamisia rajoja. 
 - Maksimipisteet: 1 500
 - Luokat: Ylimmät 500
-- Sarja (kun sekä X että Y ovat käytettävissä): Ylimmät 20
 
 ### <a name="table"></a>Taulukko
 - Arvot: Virtualisointi (tietojen ikkunointi) käyttämällä 500 rivin ikkunaa yhdellä kertaa

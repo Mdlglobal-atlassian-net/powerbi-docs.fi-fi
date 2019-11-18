@@ -1,19 +1,19 @@
 ---
 title: Sovelluksen rekisteröinti Power BI -sisällön upottamiseksi
 description: Lue, miten voit rekisteröidä sovelluksen Azure Active Directoryssä Power BI -sisällön upottamiseksi.
-author: rkarlin
-ms.author: rkarlin
+author: KesemSharabi
+ms.author: kesharab
 ms.reviewer: nishalit
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 04/02/2019
-ms.openlocfilehash: eb9b5190341b50aa911f5d8aaca07bd7d04ba90d
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 8a2aa135bfa5720763485579b012c13c722637db
+ms.sourcegitcommit: 0d7ad791a2d2bef45d5d60e38e0af4c9fc22187b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73880403"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74009808"
 ---
 # <a name="register-an-azure-ad-application-to-use-with-power-bi"></a>Azure AD -sovelluksen rekisteröinti Power BI:ssä käytettäväksi
 
@@ -104,7 +104,7 @@ Sinun on kirjauduttava sisään joko *päätilillä*, jota käytetään upotukse
 
 ### <a name="using-the-azure-ad-portal"></a>Azure AD -portaalin käyttö
 
-1. Selaa kohtaan [Sovelluksen rekisteröinnit](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ApplicationsListBlade) Azure-portaalissa ja valitse sovellus, jota käytät upottamiseen.
+1. Selaa kohtaan [Sovelluksen rekisteröinnit](https://portal.azure.com/#blade/Microsoft_AAD_RegisteredApps/ApplicationsListBlade/quickStartType//sourceType/) Azure-portaalissa ja valitse sovellus, jota käytät upottamiseen.
 
 2. Valitse **API-oikeudet** kohdassa **Hallinta**.
 

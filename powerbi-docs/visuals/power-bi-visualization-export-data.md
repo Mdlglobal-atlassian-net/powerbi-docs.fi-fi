@@ -2,20 +2,21 @@
 title: Tietojen vieminen Power BI -visualisoinnista
 description: Tietojen vieminen raportin tai koontinäytön visualisoinnista ja tarkasteleminen Excelissä.
 author: mihart
-ms.reviewer: ''
+manager: kvivek
+ms.reviewer: tessa
 featuredvideoid: jtlLGRKBvXY
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/30/2019
+ms.date: 11/13/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 6ee1b0aa9ff6e3b0668d208775cbea50534b1572
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: b2474cd5cc82e1736790f4a352b216dcc8013a6f
+ms.sourcegitcommit: f7b28ecbad3e51f410eff7ee4051de3652e360e8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73880885"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74060471"
 ---
 # <a name="export-data-from-visualizations"></a>Tietojen vieminen visualisoinneista
 
@@ -158,8 +159,6 @@ Nämä rajoitukset ja huomioitavat asiat koskevat Power BI Desktopia ja Power BI
 - Sovellukset voivat viedä **tuontitilaraportista** *.xlsx*-tiedostoon korkeintaan 150 000 riviä.
 
 - Vienti *pohjana olevien tietojen* avulla ei toimi, jos:
-
-  - tietolähde on Azure Analysis Services -liveyhteys tai SQL Server Analysis Services -liveyhteys.
 
   - versio on vanhempi kuin 2016.
 

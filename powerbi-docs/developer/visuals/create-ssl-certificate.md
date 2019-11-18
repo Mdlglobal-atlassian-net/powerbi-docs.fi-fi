@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: tutorial
 ms.date: 06/18/2019
-ms.openlocfilehash: d24135cc55ebc8cdfd2a1279cb2a2a46f8f0bc3e
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 224b6db8fa04a471a1ce7d1fff2b34a838d6fb9d
+ms.sourcegitcommit: f7b28ecbad3e51f410eff7ee4051de3652e360e8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73880194"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74060343"
 ---
 # <a name="create-an-ssl-certificate"></a>SSL-varmenteen luominen
 
@@ -22,20 +22,19 @@ Tässä artikkelissa kuvataan, miten SSL-varmenne luodaan.
 Jos haluat luoda varmenteen käyttämällä PowerShellin cmdlet-komentoa `New-SelfSignedCertificate` Windows 8: ssa tai uudemmassa versiossa, suorita seuraava komento:
 
 ```cmd
-pbiviz --create-cert
+pbiviz --install-cert
 ```
 
 Työkalu edellyttää OpenSSL-asennusta Windows 7:lle. OpenSSL-apuohjelman on oltava käytettävissä komentoriviltä.
 
 Kun haluat asentaa OpenSSL-apuohjelman, siirry [OpenSSL](https://www.openssl.org)- tai [OpenSSL Binaries](https://wiki.openssl.org/index.php/Binaries) -sivustoon.
 
-
-
 ## <a name="create-a-certificate-mac-os-x"></a>Varmenteen luominen (Mac OS X)
 
 Yleensä OpenSSL-apuohjelma on saatavilla Linux-tai Mac OS X-käyttö järjestelmässä.
 
 Voit asentaa apuohjelman myös suorittamalla jommankumman seuraavista komennoista:
+
 * *Brew*-paketinhallinnasta:
 
     ```cmd
@@ -52,7 +51,7 @@ Voit asentaa apuohjelman myös suorittamalla jommankumman seuraavista komennoist
 Kun olet asentanut OpenSSL-apuohjelman uuden varmenteen luomista varten, suorita seuraava komento:
 
 ```cmd
-pbiviz --create-cert
+pbiviz --install-cert
 ```
 
 ## <a name="create-a-certificate-linux"></a>Varmenteen luominen (Linux)
@@ -80,7 +79,7 @@ Jos OpenSSL-apuohjelma ei ole käytettävissä Linux-käyttöjärjestelmässäsi
 Jos OpenSSL-apuohjelma on jo käytettävissä käyttöjärjestelmässäsi, luo uusi varmenne suorittamalla seuraava komento:
 
 ```cmd
-pbiviz --create-cert
+pbiviz --install-cert
 ```
 
 Voit hankkia OpenSSL-apuohjelman myös siirtymällä [OpenSSL](https://www.openssl.org)- tai [OpenSSL Binaries](https://wiki.openssl.org/index.php/Binaries) -sivustoon.
