@@ -80,7 +80,7 @@
         - name: 'Oletusjäsen Power BI:n monidimensiomalleissa'
           href: desktop-default-member-multidimensional-models.md
         - name: Visualisointien UKK
-          href: power-bi-custom-visuals-faq.md
+          href: developer/power-bi-custom-visuals-faq.md
     - name: Ohjeet
       items:
         - name: Power BI Desktopin hankkiminen
@@ -673,6 +673,8 @@
           items:
             - name: Uusien työtilojen luominen
               href: service-create-the-new-workspaces.md
+            - name: Perinteisten työtilojen päivittäminen
+              href: designer/service-upgrade-workspaces.md
             - name: Työtilojen luominen
               href: service-create-workspaces.md
             - name: Sovellusten julkaisu työtiloista
