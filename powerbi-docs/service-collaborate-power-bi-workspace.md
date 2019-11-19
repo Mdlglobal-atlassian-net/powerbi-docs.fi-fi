@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 07/25/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 41aaf33602fc8a895d54666736d775ac53d5aaef
-ms.sourcegitcommit: 9665bdabce3bfc31f68dd8256b135bfd56f60589
+ms.openlocfilehash: 860aa1de5a91d98e6a50773250e89581fc1d9801
+ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "68832441"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73021345"
 ---
 # <a name="collaborate-in-a-classic-workspace"></a>Yhteistyö perinteisessä työtilassa
 Power BI -työtilat on käteviä paikkoja tehdä yhteistyötä työtovereidesi kanssa raporttinäkymässä, raporteissa ja tietojoukoissa *sovellusten* luomiseksi. Tämä artikkeli koskee alkuperäisiä, *perinteisiä* työtiloja.  
@@ -45,7 +45,7 @@ Kun olet luonut Power BI Desktop -tiedoston, voit julkaista sen työtilassa, jol
 ## <a name="collaborate-in-office-365"></a>Tee yhteistyötä Office 365:ssa
 Yhteiskäyttö Office 365:ssa alkaa klassisesta työtilasta Power BI:ssa.
 
-1. Valitse Power BI -palvelussa kohdan **Työtilat** vieressä oleva nuoli > valitse työtilasi nimen vierestä kolme pistettä (…). 
+1. Valitse Power BI -palvelun **Työtilat**-kohdan vieressä oleva nuoli ja valitse **Lisää vaihtoehtoja** (...) työtilan nimen vieressä. 
    
    ![Työtilat-valikko](media/service-collaborate-power-bi-workspace/power-bi-app-ellipsis.png)
 2. Tästä valikosta voit tehdä yhteistyötä ryhmän kanssa muutamalla eri tavalla: 
@@ -56,7 +56,7 @@ Yhteiskäyttö Office 365:ssa alkaa klassisesta työtilasta Power BI:ssa.
    Kun siirryt ryhmän työtilaan Office 365:ssa ensimmäistä kertaa, se saattaa kestää jonkin aikaa. Odota 15-30 minuuttia ja sitten päivitä selaimen sivu.
 
 ## <a name="have-a-group-conversation-in-office-365"></a>Ryhmäkeskustelu Office 365:ssa
-1. Valitse kolme pistettä (...) työtilan nimen vierestä kohdasta \> **Keskustelut**. 
+1. Valitse **Lisää vaihtoehtoja** (...) työtilan nimen vierestä \> **Keskustelut**. 
    
     ![Keskustelut-välilehti](media/service-collaborate-power-bi-workspace/power-bi-app-ellipsis.png)
    
@@ -66,7 +66,7 @@ Yhteiskäyttö Office 365:ssa alkaa klassisesta työtilasta Power BI:ssa.
 2. Lue lisää [ryhmäkeskusteluista Outlook for Office 365:ssa](https://support.office.com/Article/Have-a-group-conversation-a0482e24-a769-4e39-a5ba-a7c56e828b22).
 
 ## <a name="schedule-an-event-on-the-group-workspace-calendar"></a>Tapahtuman ajoittaminen ryhmän työtilan kalenteriin
-1. Valitse kolme pistettä (…) työtilan nimen vierestä kohdasta \> **Kalenteri**. 
+1. Valitse **Lisää vaihtoehtoja** (...) työtilan nimen vierestä \> **Kalenteri**. 
    
    ![Kalenteri-välilehti](media/service-collaborate-power-bi-workspace/power-bi-app-ellipsis.png)
    

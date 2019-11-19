@@ -2,7 +2,6 @@
 title: Tietojen päivittäminen Power BI:ssä
 description: Tässä artikkelissa kuvataan Power BI:n tietojen päivitysominaisuuksia ja niiden riippuvuuksia käsitteellisellä tasolla.
 author: mgblythe
-manager: kfile
 ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/14/2019
 ms.author: mblythe
 LocalizationGroup: Data refresh
-ms.openlocfilehash: 948776a12af2d99da2d84d07c9298f9ec0558c7b
-ms.sourcegitcommit: 2b7beec5237a597bab2da8eb6ffe69122a5d2ed9
+ms.openlocfilehash: 422d742748fc6880b0636bd3a0c5de7011a3ff0a
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "73442939"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73860784"
 ---
 # <a name="data-refresh-in-power-bi"></a>Tietojen päivittäminen Power BI:ssä
 
@@ -277,7 +276,7 @@ Liitettävyyden määrittäminen Power BI:n ja tietolähteiden välillä on haas
 
 ![Ajoitetun päivityksen määrittäminen](media/refresh-data/configure-scheduled-refresh.png)
 
-Kun päivitysaikataulu on määritetty, tietojoukon asetussivulla kerrotaan seuraavan päivityksen ajankohta yllä olevan kuvan mukaisesti. Jos haluat päivittää tiedot tätä aiemmin esimerkiksi yhdyskäytävän ja tietolähteen määritteiden testaamista varten, suorita päivitys vasemman siirtymisruudun tietojoukko-valikossa olevalla **Päivitä nyt** -toiminnolla. Päivityspyynnöt eivät vaikuta seuraavan ajoitetun päivityksen ajankohtaan, mutta ne kuluttavat päivittäistä päivityskiintiötä. Tätä aihetta on käsitelty ylempänä tässä artikkelissa.
+Kun päivitysaikataulu on määritetty, tietojoukon asetussivulla kerrotaan seuraavan päivityksen ajankohta yllä olevan kuvan mukaisesti. Jos haluat päivittää tiedot tätä aiemmin esimerkiksi yhdyskäytävän ja tietolähteen määritteiden testaamista varten, suorita päivitys siirtymisruudun tietojoukko-valikossa olevalla **Päivitä nyt** -toiminnolla. Päivityspyynnöt eivät vaikuta seuraavan ajoitetun päivityksen ajankohtaan, mutta ne kuluttavat päivittäistä päivityskiintiötä. Tätä aihetta on käsitelty ylempänä tässä artikkelissa.
 
 Huomaa myös, että määritetty päivityksen kellonaika ei ole ehdottoman tarkka. Power BI käynnistää ajoitetut päivitykset sopivimmalla hetkellä. Pyrimme siihen, että päivitys alkaa 15 minuutin sisällä suunnitellusta ajankohdasta, mutta viive voi venyä tunninkin mittaiseksi, jos tarvittavat resurssit eivät ole saatavilla aikaisemmin.
 
@@ -339,4 +338,4 @@ Huomioi seuraavat suositukset, jotka koskevat tietojoukkojen luotettavan päivit
 [Välineet päivitysongelmien vianmääritykseen](service-gateway-onprem-tshoot.md)  
 [Päivitystilanteiden vianmääritys](refresh-troubleshooting-refresh-scenarios.md)  
 
-Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)
+Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)

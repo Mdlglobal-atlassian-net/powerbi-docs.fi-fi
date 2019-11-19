@@ -2,19 +2,18 @@
 title: Linkin luominen tiettyyn sijaintiin Power BI ‑mobiilisovelluksissa
 description: Opettele luomaan Power BI ‑mobiilisovelluksessa tarkka linkki tiettyyn koontinäkymään, ruutuun tai raporttiin käyttämällä URI-tunnusta.
 author: mshenhav
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 04/24/2019
 ms.author: mshenhav
-ms.openlocfilehash: ef7766f8783fef08561a70d8ea77212c138e3148
-ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
+ms.openlocfilehash: 427019d831aa02723f17efd3de78081c368717c2
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73429912"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73879282"
 ---
 # <a name="create-a-link-to-a-specific-location-in-the-power-bi-mobile-apps"></a>Linkin luominen tiettyyn sijaintiin Power BI ‑mobiilisovelluksissa
 Linkkien avulla voit käyttää suoraan tiettyjä kohteita Power BI:ssä: raporttia, koontinäyttöä ja ruutua.
@@ -117,6 +116,6 @@ Palaute auttaa meitä päättämään, mitä toimintoja otamme käyttöön tulev
 
 * [Power BI -sovellukset mobiililaitteille](mobile-apps-for-mobile-devices.md)
 * Seuraa käyttäjää @MSPowerBI Twitterissä
-* Liity keskusteluun [Power BI -yhteisössä](http://community.powerbi.com/)
+* Liity keskusteluun [Power BI -yhteisössä](https://community.powerbi.com/)
 * [Mikä on Power BI?](../../fundamentals/power-bi-overview.md)
 

@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/18/2019
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: 840f2462ea9fc6b2d748b3803445c5ee4b155bdd
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 87d9be7a6d82dfc37ba3409b7c5068407671b405
+ms.sourcegitcommit: 08b73af260ded51daaa6749338cb85db2eab587f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73862903"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "74099147"
 ---
 # <a name="export-reports-from-power-bi-to-powerpoint"></a>Raporttien vieminen Power BI:stä PowerPointiin
 
@@ -77,7 +77,7 @@ Edellä olevien vaiheiden jälkeen voit tehdä PowerPoint-esitykselläsi ja sen 
 Ota huomioon seuraavat seikat ja rajoitukset, kun käytät **Vieminen PowerPointiin** -ominaisuutta.
 
 * R-visualisointeja ei tällä hetkellä tueta. Tällaiset visualisoinnit viedään tyhjinä kuvina PowerPointiin mukanaan virhesanoma siitä, ettei visualisointia tueta.
-* Sertifioituja mukautettuja visualisointeja tuetaan. Saat lisätietoja sertifioiduista mukautetuista visualisoinneista, mukaan lukien sertifioinnin hakemisesta visualisoinnille, artikkelista [Mukautetun visualisoinnin sertifiointi](../power-bi-custom-visuals-certified.md). Mukautettuja visualisointeja, joita ei ole sertifioitu, ei tueta. Ne viedään tyhjinä kuvina PowerPointiin mukanaan virhesanoma siitä, ettei visualisointia tueta.
+* Sertifioituja mukautettuja visualisointeja tuetaan. Saat lisätietoja sertifioiduista mukautetuista visualisoinneista, mukaan lukien sertifioinnin hakemisesta visualisoinnille, artikkelista [Mukautetun visualisoinnin sertifiointi](../developer/power-bi-custom-visuals-certified.md). Mukautettuja visualisointeja, joita ei ole sertifioitu, ei tueta. Ne viedään tyhjinä kuvina PowerPointiin mukanaan virhesanoma siitä, ettei visualisointia tueta.
 * Yli 30 raporttisivua sisältäviä raportteja ei tällä hetkellä voi viedä.
 * Raportin vieminen PowerPointiin saattaa kestää muutamia minuutteja. Kestoon vaikuttavat esimerkiksi raportin rakenne ja Power BI -palvelun kulloinenkin kuormitus.
 * Jos **Vie PowerPointiin** -valikkovaihtoehtoa ei ole käytettävissä Power BI -palvelussa, syy on todennäköisesti se, että vuokraajan järjestelmänvalvoja on poistanut toiminnon käytöstä. Saat lisätietoja ottamalla yhteyttä vuokraajan järjestelmänvalvojaan.
