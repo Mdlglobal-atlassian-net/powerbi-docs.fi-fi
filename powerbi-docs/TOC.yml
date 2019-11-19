@@ -477,6 +477,10 @@
               href: service-the-report-editor-take-a-tour.md
             - name: Power BI -tietolähteet
               href: service-get-data.md
+            - name: Power BI -tietojoukkojen ymmärtäminen
+              href: service-datasets-understand.md
+            - name: Power BI -tietojoukkojen tilojen ymmärtäminen
+              href: service-dataset-modes-understand.md
             - name: 'Tietojen päivittäminen Power BI:ssä'
               href: refresh-data.md
         - name: 'Yhteistyö Power BI:ssä'
@@ -1125,31 +1129,3 @@
       items:
         - name: Yhdyskäytävän kuukausittaiset päivitykset
           href: /data-integration/gateway/service-gateway-monthly-updates
-- name: Opas
-  items:
-    - name: Yleiskatsaus
-      href: guidance/overview.md
-    - name: Mikä on tähtirakenne?
-      href: guidance/star-schema.md
-    - name: Tietomallin koon pienentäminen
-      href: guidance/import-modeling-data-reduction.md
-    - name: JAKO-funktion ja jako-operaattorin (/) vertailu
-      href: guidance/dax-divide-function-operator.md
-    - name: Kyselyn lähteeseen delegoinnin tärkeys
-      href: guidance/power-query-folding.md
-    - name: Virhefunktioiden asianmukainen käyttö
-      href: guidance/dax-error-functions.md
-    - name: Tietovoiden parhaat käytännöt
-      href: service-dataflows-best-practices.md
-    - name: Power BI Desktopin DirectQuery-mallin ohjeet
-      href: guidance/directquery-model-guidance.md
-    - name: Raportit
-      items:
-        - name: Raporttien yleiskatsaus
-          href: whitepapers.md
-        - name: 'Power BI:n suojausraportti'
-          href: whitepaper-powerbi-security.md
-        - name: 'Power BI:n premium-käyttöönotto'
-          href: whitepaper-powerbi-premium-deployment.md
-        - name: 'Power BI -sisällön jakaminen ulkoisille käyttäjille Azure Active Directory B2B:n avulla'
-          href: whitepaper-azure-b2b-power-bi.md
