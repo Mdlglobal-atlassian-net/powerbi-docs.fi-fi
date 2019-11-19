@@ -2,7 +2,6 @@
 title: DAX-perusteet Power BI Desktopissa
 description: DAX-perusteet Power BI Desktopissa
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/21/2019
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: 524d04655d01b527707a59b941c84f5254ffea20
-ms.sourcegitcommit: 17f45a81b0dcbf9e3f1fb2a551584170baecd320
+ms.openlocfilehash: fcff0bf1d6c68b9bdb000855f4984b3664b882c1
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72922496"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73877904"
 ---
 # <a name="dax-basics-in-power-bi-desktop"></a>DAX-perusteet Power BI Desktopissa
 Tämä artikkeli on tarkoitettu uusille Power BI Desktopin käyttäjille. Se antaa sinulle helpon ja nopean esittelyn siitä, miten voit käyttää Data Analysis Expression (DAX) -kaavaa ja ratkaista sillä useita peruslaskutoimituksia ja tietojen analysointiongelmia. Artikkeli sisältää käsitteellisiä tietoja, joukon harjoitustehtäviä ja lähtötasotestin, jolla voit testata, mitä olet oppinut. Kun olet käynyt tämän artikkelin läpi, sinulla pitäisi olla hyvä käsitys DAX:n tärkeimmistä peruskäsitteistä.
@@ -33,7 +32,7 @@ Painopisteenä on saada antaa käsitys DAX-kaavoista, joita käytetään laskuto
 
 ### <a name="example-workbook"></a>Esimerkkityökirja
 
-Paras tapa oppia DAX on luoda joitakin peruskaavoja, käyttää niitä todellisten tietojen kanssa ja nähdä tulokset itse. Tässä esitetyissä esimerkeissä ja tehtävissä käytetään [Contoso Sales Sample for Power BI Desktop -tiedostoa](http://download.microsoft.com/download/4/6/A/46AB5E74-50F6-4761-8EDB-5AE077FD603C/Contoso%20Sales%20for%20Power%20BI%20Designer.zip). Mallitiedosto on sama, jota käytetään [Opetusohjelmassa: Omien mittarien luominen Power BI Desktopissa](desktop-tutorial-create-measures.md) -artikkelissa. 
+Paras tapa oppia DAX on luoda joitakin peruskaavoja, käyttää niitä todellisten tietojen kanssa ja nähdä tulokset itse. Tässä esitetyissä esimerkeissä ja tehtävissä käytetään [Contoso Sales Sample for Power BI Desktop -tiedostoa](https://download.microsoft.com/download/4/6/A/46AB5E74-50F6-4761-8EDB-5AE077FD603C/Contoso%20Sales%20for%20Power%20BI%20Designer.zip). Mallitiedosto on sama, jota käytetään [Opetusohjelmassa: Omien mittarien luominen Power BI Desktopissa](desktop-tutorial-create-measures.md) -artikkelissa. 
 
 ## <a name="lets-begin"></a>Aloitetaan!
 Muodostamme ymmärryksemme DAX:ista kolmen peruskäsitteen ympärille: *syntaksi*, *funktiot* ja *konteksti*. DAX sisältää muitakin tärkeitä käsitteitä, mutta näiden kolmen käsitteen ymmärtäminen tarjoaa parhaan perustan DAX-taidoillesi.
@@ -82,7 +81,7 @@ Luodaanpa yksinkertainen kaava. Tämä tehtävä auttaa sinua ymmärtämään pa
 
 ### <a name="task-create-a-measure-formula"></a>Tehtävä: mittarin kaavan luominen
 
-1. [Lataa](http://download.microsoft.com/download/4/6/A/46AB5E74-50F6-4761-8EDB-5AE077FD603C/Contoso%20Sales%20for%20Power%20BI%20Designer.zip) ja avaa Contoso Sales Sample Power BI Desktop -tiedosto. 
+1. [Lataa](https://download.microsoft.com/download/4/6/A/46AB5E74-50F6-4761-8EDB-5AE077FD603C/Contoso%20Sales%20for%20Power%20BI%20Designer.zip) ja avaa Contoso Sales Sample Power BI Desktop -tiedosto. 
     
 2. Napsauta raporttinäkymän kenttäluettelossa hiiren kakkospainikkeella **Sales**-taulukkoa ja valitse sitten **Uusi mittari**.
     
@@ -213,7 +212,7 @@ Vastaukset ovat tämän artikkelin lopussa.
 ## <a name="summary"></a>Yhteenveto
 Nyt kun sinulla on perustietämys DAX-kielen tärkeimmistä käsitteistä, voit aloittaa DAX-kaavojen luomisen mittareille. DAX:n opetteleminen voi olla hieman hankalaa, mutta saatavilla on monia resursseja. Kun olet lukenut tämän artikkelin ja kokeillut muutamia omia kaavoja, voit perehtyä muihin DAX-käsitteisiin ja kaavoihin, jotka voivat auttaa omien liiketoimintaongelmiesi ratkaisemisessa. Saatavilla on useita DAX-resursseja, joista tärkein on [Data Analysis Expressions (DAX) Reference](https://msdn.microsoft.com/library/gg413422.aspx).
 
-Koska DAX on ollut käytössä useita vuosia muissa Microsoftin BI-työkaluissa, kuten Power Pivotin ja Analysis Servicesin taulukkomuotoisissa malleissa, saatavilla on paljon erinomaisia tietolähteitä. Voit etsiä lisätietoja kirjoista, teknisistä raporteista ja blogeista, joita Microsoft ja BI-huippuasiantuntijat ovat kirjoittaneet. [TechNetin DAX Resource Center Wiki ](http://social.technet.microsoft.com/wiki/contents/articles/dax-resource-center.aspx) on myös hyvä paikka aloittaa.
+Koska DAX on ollut käytössä useita vuosia muissa Microsoftin BI-työkaluissa, kuten Power Pivotin ja Analysis Servicesin taulukkomuotoisissa malleissa, saatavilla on paljon erinomaisia tietolähteitä. Voit etsiä lisätietoja kirjoista, teknisistä raporteista ja blogeista, joita Microsoft ja BI-huippuasiantuntijat ovat kirjoittaneet. [TechNetin DAX Resource Center Wiki ](https://social.technet.microsoft.com/wiki/contents/articles/dax-resource-center.aspx) on myös hyvä paikka aloittaa.
 
 ### <a name="quickquiz-answers"></a>Testin vastaukset
 Syntaksi:
