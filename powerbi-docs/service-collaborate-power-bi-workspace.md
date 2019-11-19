@@ -2,7 +2,6 @@
 title: Yhteistyö perinteisessä työtilassa
 description: Lue lisätietoja Power BI Desktop -tiedostojen yhteistyöstä työtilassa sekä Office 365-palveluista kuten tiedostojen jakamisesta OneDrive for Business -palvelussa, keskusteluista Exchange-palvelussa, kalenterista ja tehtävistä.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 07/25/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 860aa1de5a91d98e6a50773250e89581fc1d9801
-ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
+ms.openlocfilehash: cddb55ab85cfd6d8d6a5e49d81b83a80df2f81da
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73021345"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73873181"
 ---
 # <a name="collaborate-in-a-classic-workspace"></a>Yhteistyö perinteisessä työtilassa
 Power BI -työtilat on käteviä paikkoja tehdä yhteistyötä työtovereidesi kanssa raporttinäkymässä, raporteissa ja tietojoukoissa *sovellusten* luomiseksi. Tämä artikkeli koskee alkuperäisiä, *perinteisiä* työtiloja.  
@@ -80,6 +79,6 @@ Jos olet omistaja tai järjestelmänvalvoja työtilassa, voit myös lisätä tai
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 * [Sovellusten julkaiseminen Power BI:ssä](service-create-distribute-apps.md).
-* Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/).
+* Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](https://community.powerbi.com/).
 * Haluatko antaa palautetta? Siirry [Power BI:n ideasivulle](https://ideas.powerbi.com/forums/265200-power-bi).
 

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 09/09/2019
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 4ec7a67b861a747f9f8f654ab9fb3fa5c2951af3
-ms.sourcegitcommit: a6602d84c86d3959731a8d0ba39a522914f13d1a
+ms.openlocfilehash: 6cc29bd1d06e948facf1058411759c15841a8352
+ms.sourcegitcommit: 2b7beec5237a597bab2da8eb6ffe69122a5d2ed9
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/21/2019
-ms.locfileid: "71175197"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "73442916"
 ---
 # <a name="administering-power-bi---frequently-asked-questions-faq"></a>Power BI:n hallinnointi - usein kysytyt kysymykset (UKK)
 
@@ -28,8 +28,8 @@ Tämä artikkeli vastaa Power BI -hallinnoinnista usein kysyttyihin kysymyksiin.
 * [PowerShellin käyttäminen](#using-powershell)
 * [Miten käyttäjät voivat rekisteröityä Power BI:hin?](#how-do-users-sign-up-for-power-bi)
 * [Miten organisaationi yksittäiset käyttäjät rekisteröityvät?](#how-do-individual-users-in-my-organization-sign-up)
-* [Miten voin estää käyttäjiä liittymästä aiemmin luotuun Office 365 -vuokraajaan?](#how-can-i-prevent-users-from-joining-my-existing-office-365-tenant)
-* [Miten voin sallia käyttäjien liittyä aiemmin luotuun Office 365 -vuokraajaan?](#how-can-i-allow-users-to-join-my-existing-office-365-tenant)
+* [Miten voin estää käyttäjiä liittymästä aiemmin luotuun Office 365 -vuokraajaan?](#how-can-i-prevent-users-from-joining-my-existing-microsoft-365-tenant)
+* [Miten voin sallia käyttäjien liittyä aiemmin luotuun Office 365 -vuokraajaan?](#how-can-i-allow-users-to-join-my-existing-microsoft-365-tenant)
 * [Miten voin tarkistaa, onko minulla lohko vuokraajassa?](#how-do-i-check-if-i-have-the-block-on-in-the-tenant)
 * [Miten voin estää olemassa olevilta käyttäjiltä Power BI:n käytön aloittamisen?](#how-can-i-prevent-my-existing-users-from-starting-to-use-power-bi)
 * [Miten voin sallia olemassa oleville käyttäjille Power BI:hin rekisteröitymisen?](#how-can-i-allow-my-existing-users-to-sign-up-for-power-bi)
@@ -39,7 +39,7 @@ Tämä artikkeli vastaa Power BI -hallinnoinnista usein kysyttyihin kysymyksiin.
 * [Miten tämä muuttaa tapaa, jolla hallinnoin tällä hetkellä organisaationi käyttäjien käyttäjätietoja?](#how-will-this-change-the-way-i-manage-identities-for-users-in-my-organization-today)
 * [Miten Power BI:tä hallitaan?](#how-do-we-manage-power-bi)
 * [Millä tavalla voin hallinnoida vuokraajaa, jonka Microsoft on luonut käyttäjiäni varten?](#what-is-the-process-to-manage-a-tenant-created-by-microsoft-for-my-users)
-* [Jos minulla on useita toimialueita, voinko hallinnoida Office 365 -vuokraajaa, johon käyttäjiä lisätään?](#if-i-have-multiple-domains-can-i-control-the-office-365-tenant-that-users-get-added-to)
+* [Jos minulla on useita toimialueita, voinko hallinnoida Microsoft 365 -vuokraajaa, johon käyttäjiä lisätään?](#if-i-have-multiple-domains-can-i-control-the-microsoft-365-tenant-that-users-get-added-to)
 * [Miten voin poistaa Power BI:n käyttäjiltä, jotka ovat jo rekisteröityneet?](#how-do-i-remove-power-bi-for-users-that-already-signed-up)
 * [Mistä tiedän, milloin uudet käyttäjät ovat liittyneet vuokraajaani?](#how-do-i-know-when-new-users-have-joined-my-tenant)
 * [Onko muita asioita, joihin minun kannattaa valmistautua?](#are-there-any-additional-things-i-should-prepare-for)
@@ -60,7 +60,7 @@ Jotkin tämän osion toimintosarjat edellyttävät Windows PowerShell -komentosa
 
 ### <a name="how-do-users-sign-up-for-power-bi"></a>Miten käyttäjät voivat rekisteröityä Power BI:hin?
 
-Järjestelmänvalvojana voit rekisteröityä Power BI:hin [Power BI -sivuston](https://powerbi.microsoft.com) tai Microsoft 365 -hallintakeskuksen[Ostopalvelut](https://admin.microsoft.com/AdminPortal/Home#/catalog)-sivun kautta. Kun järjestelmänvalvoja rekisteröityy Power BI:hin, hän voi määrittää käyttöoikeudet käyttäjille, jotka tarvitsevat käyttöoikeuden.
+Microsoft 365 -järjestelmänvalvojana voit rekisteröityä Power BI:hin [Power BI -sivuston](https://powerbi.microsoft.com) tai Microsoft 365 -hallintakeskuksen[Ostopalvelut](https://admin.microsoft.com/AdminPortal/Home#/catalog)-sivun kautta. Kun Microsoft 365 -järjestelmänvalvoja rekisteröityy Power BI:hin, hän voi määrittää käyttöoikeudet käyttäjille, jotka tarvitsevat käyttöoikeuden.
 
 Lisäksi organisaation yksittäiset käyttäjät voivat ehkä rekisteröityä Power BI:hin [Power BI -sivuston](https://powerbi.microsoft.com) kautta. Kun organisaatiosi käyttäjä rekisteröityy Power BI:hin, palvelu määrittää käyttäjälle automaattisesti Power BI -lisenssin. Lisätietoja on artikkeleissa [Rekisteröityminen Power BI:hin yksityishenkilönä](service-self-service-signup-for-power-bi.md) ja [Power BI -käyttöoikeudet organisaatiossasi](service-admin-licensing-organization.md).
 
@@ -68,21 +68,21 @@ Lisäksi organisaation yksittäiset käyttäjät voivat ehkä rekisteröityä Po
 
 Organisaation käyttäjiin saattaa liittyä kolme tilannetta:
 
-* **Skenaario 1**: Organisaatiolla on jo Office 365 -ympäristö ja Power BI:hin rekisteröityvällä käyttäjällä on jo Office 365 -tili.
-    Jos käyttäjällä on tässä skenaariossa jo työpaikan tai oppilaitoksen tili vuokraajassa (esimerkiksi contoso.com) mutta ei vielä Power BI:tä, Microsoft aktivoi kyseisen tilin sopimuksen. Käyttäjä saa automaattisesti ohjeita Power BI -palvelun käyttämisestä.
+* **Skenaario 1**: Organisaatiolla on jo Microsoft 365 -ympäristö ja Power BI:hin rekisteröityvällä käyttäjällä on jo Microsoft 365 -tili.
+    Jos käyttäjällä on tässä skenaariossa jo työpaikan tai oppilaitoksen tili vuokraajassa (esimerkiksi contoso.com) mutta ei vielä Power BI:tä, Microsoft aktivoi kyseisen Power BI (ilmainen) -tilin sopimuksen. Käyttäjä saa automaattisesti ohjeita Power BI -palvelun käyttämisestä.
 
-* **Skenaario 2**: Organisaatiolla on jo Office 365 -ympäristö, mutta Power BI:hin rekisteröityvällä käyttäjällä ei ole Office 365 -tiliä.
-    Tässä skenaariossa käyttäjällä on sähköpostiosoite organisaatiosi toimialueella (esimerkiksi contoso.com) mutta ei vielä Office 365 -tiliä. Käyttäjä voi tässä tapauksessa rekisteröityä Power BI:hin, ja hän saa automaattisesti tilin. Toiminnon avulla käyttäjä pääsee käyttämään Power BI -palvelua. Esimerkiksi jos työntekijä nimeltä Noora käyttää rekisteröitymisessä työsähköpostiosoitettaan (esimerkiksi nancy@contoso.com), Microsoft lisää Nooran automaattisesti Contoson Office 365 -ympäristön käyttäjäksi ja aktivoi Power BI:n kyseiselle tilille.
+* **Skenaario 2**: Organisaatiolla on jo Microsoft 365 -ympäristö, mutta Power BI:hin rekisteröityvällä käyttäjällä ei ole Microsoft 365 -tiliä.
+    Tässä skenaariossa käyttäjällä on sähköpostiosoite organisaatiosi toimialueella (esimerkiksi contoso.com) mutta ei vielä Microsoft 365 -tiliä. Käyttäjä voi tässä tapauksessa rekisteröityä Power BI:hin, ja hän saa automaattisesti tilin. Toiminnon avulla käyttäjä pääsee käyttämään Power BI -palvelua. Esimerkiksi jos työntekijä nimeltä Noora käyttää rekisteröitymisessä työsähköpostiosoitettaan (esimerkiksi nancy@contoso.com), Microsoft lisää Nooran automaattisesti Contoson Microsoft 365 -ympäristön käyttäjäksi ja aktivoi Power BI:n kyseiselle tilille.
 
-* **Skenaario 3**: Organisaatiolla ei ole sähköpostisi toimialueeseen liitettyä Office 365 -ympäristöä.
-    Organisaatiolla ei ole vaadittavia järjestelmänvalvojan toimintoja, jotta Power BI:tä voidaan hyödyntää. Palvelu lisää käyttäjiä uuteen, vain pilvipalvelussa olevaan käyttäjähakemistoon. Voit myös päättää ryhtyä vuokraajan järjestelmänvalvojaksi ja hallita vuokraajia.
+* **Skenaario 3**: Organisaatiolla ei ole sähköpostisi toimialueeseen liitettyä Microsoft 365 -ympäristöä.
+    Organisaatiolla ei ole vaadittavia järjestelmänvalvojan toimintoja, jotta Power BI:tä voidaan hyödyntää. Palvelu lisää käyttäjiä uuteen, vain pilvipalvelussa olevaan käyttäjähakemistoon. Voit myös päättää ryhtyä vuokraajan Microsoft 365:n yleiseksi järjestelmänvalvojaksi ja hallita vuokraajia.
 
 > [!IMPORTANT]
-> Jos organisaatiossa on useita sähköpostitoimialueita ja haluat kaikkien sähköpostiosoitteiden tunnisteiden olevan samassa vuokraajassa, lisää kaikki sähköpostiosoitteiden toimialueet Azure Active Directory -vuokraajaan ennen kuin käyttäjät rekisteröityvät. Kun olet luonut käyttäjiä, käyttäjien siirtämiseen vuokraajien välillä ei ole olemassa automaattista mekanismia. Lisätietoja tästä prosessista on jäljempänä tämän artikkelin kohdassa [Jos minulla on useita toimialueita, voinko hallinnoida Office 365 -vuokraajaa, johon käyttäjiä lisätään?](#if-i-have-multiple-domains-can-i-control-the-office-365-tenant-that-users-get-added-to) ja artikkelissa [Toimialueen lisääminen Office 365:een](/office365/admin/setup/add-domain/).
+> Jos organisaatiossa on useita sähköpostitoimialueita ja haluat kaikkien sähköpostiosoitteiden tunnisteiden olevan samassa vuokraajassa, lisää kaikki sähköpostiosoitteiden toimialueet Azure Active Directory -vuokraajaan ennen kuin käyttäjät rekisteröityvät. Kun olet luonut käyttäjiä, käyttäjien siirtämiseen vuokraajien välillä ei ole olemassa automaattista mekanismia. Lisätietoja tästä prosessista on jäljempänä tämän artikkelin kohdassa [Jos minulla on useita toimialueita, voinko hallinnoida Microsoft 365 -vuokraajaa, johon käyttäjiä lisätään?](#if-i-have-multiple-domains-can-i-control-the-microsoft-365-tenant-that-users-get-added-to) ja artikkelissa [Toimialueen lisääminen Microsoft 365:een](/office365/admin/setup/add-domain/).
 
-### <a name="how-can-i-prevent-users-from-joining-my-existing-office-365-tenant"></a>Miten voin estää käyttäjiä liittymästä aiemmin luotuun Office 365 -vuokraajaan?
+### <a name="how-can-i-prevent-users-from-joining-my-existing-microsoft-365-tenant"></a>Miten voin estää käyttäjiä liittymästä aiemmin luotuun Microsoft 365 -vuokraajaan?
 
-Näillä toimenpiteillä voit järjestelmänvalvojana estää käyttäjiä liittymästä aiemmin luotuun Office 365 -vuokraajaasi. Jos estät käytön, käyttäjien rekisteröitymisyritykset epäonnistuvat ja he näkevät viestin, jossa pyydetään ottamaan yhteyttä organisaation järjestelmänvalvojaan. Tätä prosessia ei tarvitse toistaa, jos olet jo poistanut automaattisen käyttöoikeuksien jakelun käytöstä (esimerkiksi Office 365 for Education opiskelijoille, opetushenkilöstölle ja muulle henkilöstölle).
+Näillä toimenpiteillä voit Microsoft 365:n yleisenä järjestelmänvalvojana estää käyttäjiä liittymästä aiemmin luotuun Microsoft 365 -vuokraajaasi. Jos estät käytön, käyttäjien rekisteröitymisyritykset epäonnistuvat ja he näkevät viestin, jossa pyydetään ottamaan yhteyttä organisaation järjestelmänvalvojaan. Tätä prosessia ei tarvitse toistaa, jos olet jo poistanut automaattisen käyttöoikeuksien jakelun käytöstä (esimerkiksi Office 365 for Education opiskelijoille, opetushenkilöstölle ja muulle henkilöstölle).
 
 Estä uusia käyttäjiä liittymästä hallittuun vuokraajaan seuraavan PowerShell-komentosarjan avulla. ([Lue lisätietoja PowerShellistä][1].)
 
@@ -96,7 +96,7 @@ Set-MsolCompanySettings -AllowEmailVerifiedUsers $false
 > [!NOTE]
 > Käytön estäminen estää organisaation uusia käyttäjiä rekisteröitymästä Power BI:hin. Käyttäjät, jotka rekisteröityvät Power BI:hin ennen uusien rekisteröitymisten estämistä, säilyttävät käyttöoikeutensa. Jos haluat poistaa käyttäjän, katso kohta [Miten voin poistaa Power BI:n käyttäjiltä, jotka ovat jo rekisteröityneet?](#how-do-i-remove-power-bi-for-users-that-already-signed-up) jäljempänä tässä artikkelissa.
 
-### <a name="how-can-i-allow-users-to-join-my-existing-office-365-tenant"></a>Miten voin sallia käyttäjien liittyä aiemmin luotuun Office 365 -vuokraajaan?
+### <a name="how-can-i-allow-users-to-join-my-existing-microsoft-365-tenant"></a>Miten voin sallia käyttäjien liittyä aiemmin luotuun Microsoft 365 -vuokraajaan?
 
 Salli uusien käyttäjien liittyminen hallittuun vuokraajaan seuraavan PowerShell-komentosarjan avulla. ([Lue lisätietoja PowerShellistä][1].)
 
@@ -124,7 +124,7 @@ Tätä ohjaava Azure AD -asetus on **AllowAdHocSubscriptions**. Useimmissa vuokr
 
 Seuraavan PowerShell-komentosarjan avulla voit poistaa ad-hoc-tilaukset käytöstä.([Lisätietoja PowerShellista][1].)
 
-1. Kirjaudu Azure Active Directoryyn käyttämällä Office 365 -tunnistetietojasi. PowerShell-komentosarjan ensimmäinen rivi kehottaa antamaan tunnistetiedot. Toinen rivi muodostaa yhteyden Azure Active Directoryyn.
+1. Kirjaudu Azure Active Directoryyn käyttämällä Microsoft 365 -tunnistetietojasi. PowerShell-komentosarjan ensimmäinen rivi kehottaa antamaan tunnistetiedot. Toinen rivi muodostaa yhteyden Azure Active Directoryyn.
 
     ```powershell
      $msolcred = get-credential
@@ -146,7 +146,7 @@ Seuraavan PowerShell-komentosarjan avulla voit poistaa ad-hoc-tilaukset käytös
     ```
 
 > [!NOTE]
-> Käytä **AllowAdHocSubscriptions**-lippua useiden käyttäjäominaisuuksien ohjaamiseen organisaatiossa. Sillä ohjataan muun muassa käyttäjien mahdollisuutta rekisteröityä Azure Rights Management -palveluun. Tämän lipun muuttaminen vaikuttaa kaikkiin näihin ominaisuuksiin. Kun asetus on *false* (epätosi), käyttäjät voivat edelleen rekisteröityä Pro-kokeiluversioon.
+> Käytä **AllowAdHocSubscriptions**-lippua useiden käyttäjäominaisuuksien ohjaamiseen organisaatiossa. Sillä ohjataan muun muassa käyttäjien mahdollisuutta rekisteröityä Azure Rights Management -palveluun. Tämän lipun muuttaminen vaikuttaa kaikkiin näihin ominaisuuksiin. Kun asetus on *false* (epätosi), käyttäjät voivat edelleen rekisteröityä yksittäiseen Power BI Pro -kokeiluversioon.
 
 ### <a name="how-can-i-allow-my-existing-users-to-sign-up-for-power-bi"></a>Miten voin sallia olemassa oleville käyttäjille Power BI:hin rekisteröitymisen?
 
@@ -158,21 +158,19 @@ Jos haluat sallia Power BI:hin rekisteröitymisen olemassa oleville käyttäjill
 
 Organisaation käyttäjiin saattaa liittyä kolme tilannetta:
 
-* **Skenaario 1**: Jos organisaatiossasi on jo käytössä Office 365 -ympäristö ja kaikilla käyttäjillä organisaatiossasi on Office 365 -tilit, käyttäjätietojen hallinnointi ei muutu.
+* **Skenaario 1**: Jos organisaatiossasi on jo käytössä Microsoft 365 -ympäristö ja kaikilla käyttäjillä organisaatiossasi on Microsoft 365 -tilit, käyttäjätietojen hallinnointi ei muutu.
 
-* **Skenaario 2**: Jos organisaatiossasi on jo käytössä Office 365 -ympäristö, mutta kaikilla käyttäjillä organisaatiossasi ei ole Office 365 -tiliä, vuokraajaan luodaan käyttäjätili ja käyttöoikeuksia myönnetään käyttäjän työpaikan tai oppilaitoksen sähköpostiosoitteen perusteella.
+* **Skenaario 2**: Jos organisaatiossasi on jo käytössä Microsoft 365 -ympäristö, mutta kaikilla käyttäjillä organisaatiossasi ei ole Microsoft 365 -tiliä, vuokraajaan luodaan käyttäjätili ja käyttöoikeuksia myönnetään käyttäjän työpaikan tai oppilaitoksen sähköpostiosoitteen perusteella.
 
     Tämän takia niiden käyttäjien, joiden tietoja hallinnoit tietyllä hetkellä, lukumäärä kasvaa, kun organisaatiosi käyttäjät rekisteröityvät palveluun.
 
-* **Skenaario 3**: Jos organisaatiollasi ei ole sähköpostisi toimialueeseen liitettyä Office 365 -ympäristöä, käyttäjätietojen hallinnointitapa ei muutu.
+* **Skenaario 3**: Jos organisaatiollasi ei ole sähköpostisi toimialueeseen liitettyä Microsoft 365 -ympäristöä, käyttäjätietojen hallinnointitapa ei muutu.
 
-    Palvelu lisää käyttäjiä uuteen, vain pilvipalvelussa olevaan käyttäjähakemistoon. Voit myös päättää ryhtyä vuokraajan järjestelmänvalvojaksi ja hallita vuokraajia.
+    Palvelu lisää käyttäjiä uuteen, vain pilvipohjaiseen käyttäjähakemistoon, jonka voit halutessasi ottaa haltuun Microsoft 365:n yleisenä järjestelmänvalvojana.
 
 ### <a name="how-do-we-manage-power-bi"></a>Miten Power BI:tä hallitaan?
 
-Power BI sisältää hallintaportaalin, jossa on käyttötilastoja, linkki Microsoft 365 -hallintakeskukseen käyttäjien ja ryhmien hallintaa varten ja mahdollisuus hallita koko vuokraajaa koskevia asetuksia.
-
-Jotta voit käyttää Power BI -hallintaportaalia, tililläsi täytyy olla **yleisen järjestelmänvalvojan** oikeudet Office 365:ssä tai Azure Active Directoryssa tai jonkun on määritettävä käyttäjätilillesi Power BI -palvelun järjestelmänvalvojan rooli. Lisätietoja on artikkeleissa [Power BI -järjestelmänvalvojaroolin kuvaus](service-admin-role.md) ja [Power BI -hallintaportaali](service-admin-portal.md).
+Power BI tarjoaa Power BI -hallintaportaalin käyttäjille, joiden rooli on Microsoft 365:n yleinen järjestelmänvalvoja, ja käyttäjille, joiden rooli on Power BI -palvelun järjestelmänvalvoja. Jotta voit käyttää Power BI -hallintaportaalia, tililläsi täytyy olla **yleisen järjestelmänvalvojan** oikeudet Microsoft 365:ssä tai Azure Active Directoryssa tai jonkun on määritettävä käyttäjätilillesi Power BI -palvelun järjestelmänvalvojan rooli. Lisätietoja on artikkeleissa [Power BI -järjestelmänvalvojaroolin kuvaus](service-admin-role.md) ja [Power BI -hallintaportaali](service-admin-portal.md). Portaali tarjoaa mahdollisuuden hallita koko vuokraajan kattavia asetuksia, tarkastella Power BI:n käyttötilastoja ja linkkiä Microsoft 365 -hallintakeskukseen käyttäjien ja työryhmien hallintaa varten.
 
 ### <a name="what-is-the-process-to-manage-a-tenant-created-by-microsoft-for-my-users"></a>Millä tavalla voin hallinnoida vuokraajaa, jonka Microsoft on luonut käyttäjiäni varten?
 
@@ -180,14 +178,14 @@ Kun omatoiminen käyttäjä rekisteröityy Azure AD:tä käyttävään pilvipalv
 
 * Power BI tukee sisäistä järjestelmänvalvojan haltuunottoprosessia. Kun suoritat hallitsemattoman Azure-hakemiston _sisäisen_ järjestelmänvalvojan haltuunottoprosessin, sinut lisätään hallitsemattoman hakemiston yleiseksi järjestelmänvalvojaksi. Mitään käyttäjiä, toimialueita tai palvelusuunnitelmia ei siirretä mihinkään muuhun hallitsemaasi hakemistoon.
 
-* Power BI ei enää tue ulkoista järjestelmänvalvojan haltuunottoprosessia. Kun suoritat hallitsemattoman Azure-hakemiston _sisäisen_ järjestelmänvalvojan haltuunottoprosessin, lisäät hallitsemattoman hakemiston DNS-toimialueen nimen hallittuun Azure-hakemistoosi. Kun lisäät toimialueen nimen, käyttäjien yhdistäminen resursseihin luodaan hallitussa Azure-hakemistossasi, jotta käyttäjät voivat jatkaa palvelujen käyttöä keskeytyksettä.
+* Power BI ei enää tue ulkoista järjestelmänvalvojan haltuunottoprosessia. Kun suoritat hallitsemattoman Azure-hakemiston _sisäisen_ järjestelmänvalvojan haltuunottoprosessin, lisäät hallitsemattoman hakemiston DNS-toimialueen nimen hallittuun Azure-hakemistoosi. Ulkoinen haltuunotto johtaa kaiken alkuperäisen, hallitsemattoman vuokraajan Power BI -sisällön menettämiseen. Power BI -raportit on julkaistava uudelleen uuteen vuokraajaan, ja Power BI -koontinäytöt ja -sovellukset on luotava uudelleen uudessa vuokraajassa.
 
-### <a name="if-i-have-multiple-domains-can-i-control-the-office-365-tenant-that-users-get-added-to"></a>Jos minulla on useita toimialueita, voinko hallinnoida Office 365 -vuokraajaa, johon käyttäjiä lisätään?
+### <a name="if-i-have-multiple-domains-can-i-control-the-microsoft-365-tenant-that-users-get-added-to"></a>Jos minulla on useita toimialueita, voinko hallinnoida Microsoft 365 -vuokraajaa, johon käyttäjiä lisätään?
 
 Jos et tee mitään, palvelu luo vuokraajan jokaista käyttäjän sähköpostin toimialuetta ja alitoimialuetta varten. Jos haluat, että kaikki käyttäjät sijaitsevat samassa vuokraajassa riippumatta käyttäjien sähköpostiosoitteen tunnisteista: Luo kohdevuokraaja etukäteen tai käytä olemassa olevaa vuokraajaa. Lisää sitten kaikki olemassa olevat toimialueet ja alitoimialueet, jotka haluat yhdistää kyseiseen vuokraajaan. Kaikki käyttäjät, joiden sähköpostiosoitteen pääte viittaa kyseisiin toimialueisiin ja alitoimialueisiin, liittyvät automaattisesti kohdevuokraajaan rekisteröitymisen yhteydessä.
 
 > [!IMPORTANT]
-> Ei ole olemassa tuettua automaattista mekanismia käyttäjien siirtämiseksi vuokraajien välillä, kun ne on luotu. Jos haluat tietää, miten yksittäiseen Office 365 -vuokraajaan lisätään toimialueita, lue ohjeet kohdasta [Käyttäjien ja toimialueen lisääminen Office 365:een](/office365/admin/setup/add-domain/).
+> Ei ole olemassa tuettua automaattista mekanismia käyttäjien siirtämiseksi vuokraajien välillä, kun ne on luotu. Jos haluat tietää, miten yksittäiseen Microsoft 365 -vuokraajaan lisätään toimialueita, lue ohjeet kohdasta [Käyttäjien ja toimialueen lisääminen Office 365:een](/office365/admin/setup/add-domain/).
 
 ### <a name="how-do-i-remove-power-bi-for-users-that-already-signed-up"></a>Miten voin poistaa Power BI:n käyttäjiltä, jotka ovat jo rekisteröityneet?
 
@@ -209,7 +207,7 @@ Jos käyttäjä on rekisteröitynyt Power BI:hin, mutta et enää halua hänen k
 
 ### <a name="how-do-i-know-when-new-users-have-joined-my-tenant"></a>Mistä tiedän, milloin uudet käyttäjät ovat liittyneet vuokraajaani?
 
-Käyttäjille, jotka ovat liittyneet vuokraajaan osana tätä ohjelmaa, määritetään yksilöivä lisenssi, jota voit käyttää suodattimessa järjestelmänvalvojan koontinäytön aktiivisen käyttäjän ruudussa. Luo tämä uusi näkymä seuraavien ohjeiden mukaan.
+Käyttäjille, jotka ovat liittyneet vuokraajaan itsepalvelurekisteröitymisen kautta, määritetään yksilöivä lisenssi, jota voit käyttää suodattimessa järjestelmänvalvojan koontinäytön aktiivisen käyttäjän ruudussa. Luo tämä uusi näkymä seuraavien ohjeiden mukaan.
 
 1. Siirry [Microsoft 365 -hallintakeskukseen](https://admin.microsoft.com/AdminPortal/Home#/homepage).
 
@@ -251,7 +249,7 @@ Lisätietoja Power BI:n vaatimustenmukaisuudesta on [Microsoft Trust Centerissä
 
 ### <a name="how-does-security-work-in-power-bi"></a>Miten suojaus toimii Power BI:ssä?
 
-Microsoftin Power BI perustuu Office 365:een, joka puolestaan perustuu Azure-palveluihin, kuten Azure Active Directoryyn. Yleiskatsaus Power BI -arkkitehtuurista on kohdassa [Power BI:n suojaus](service-admin-power-bi-security.md).
+Microsoftin Power BI perustuu Microsoft 365:een, joka puolestaan perustuu Azure-palveluihin, kuten Azure Active Directoryyn. Yleiskatsaus Power BI -arkkitehtuurista on kohdassa [Power BI:n suojaus](service-admin-power-bi-security.md).
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 

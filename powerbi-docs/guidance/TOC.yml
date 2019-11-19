@@ -1,0 +1,36 @@
+- name: Power BI -ohjedokumentaatio
+  href: index.yml
+  expanded: true
+  items:
+    - name: Yleiskatsaus
+      expanded: true
+      items:
+        - name: Yleiskatsaus
+          href: overview.md
+    - name: Käsitteet
+      expanded: true
+      items:
+        - name: Mikä on tähtirakenne?
+          href: star-schema.md
+        - name: Tietomallin koon pienentäminen
+          href: import-modeling-data-reduction.md
+        - name: JAKO-funktion ja jako-operaattorin (/) vertailu
+          href: dax-divide-function-operator.md
+        - name: Kyselyn lähteeseen delegoinnin tärkeys
+          href: power-query-folding.md
+        - name: Virhefunktioiden asianmukainen käyttö
+          href: dax-error-functions.md
+        - name: Tietovoiden parhaat käytännöt
+          href: ../service-dataflows-best-practices.md
+        - name: Power BI Desktopin DirectQuery-mallin ohjeet
+          href: directquery-model-guidance.md
+    - name: Raportit
+      items:
+        - name: Raporttien yleiskatsaus
+          href: ../whitepapers.md
+        - name: 'Power BI:n suojausraportti'
+          href: ../whitepaper-powerbi-security.md
+        - name: 'Power BI:n premium-käyttöönotto'
+          href: ../whitepaper-powerbi-premium-deployment.md
+        - name: 'Power BI -sisällön jakaminen ulkoisille käyttäjille Azure Active Directory B2B:n avulla'
+          href: ../whitepaper-azure-b2b-power-bi.md

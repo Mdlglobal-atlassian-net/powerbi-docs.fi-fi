@@ -2,18 +2,17 @@
 title: Power BI:n Q&A:n avulla voit tutkia tietojasi käyttäen luonnollista kieltä
 description: Tietojen tutkiminen Power BI Q&A:n avulla
 author: mohaali
-manager: mohaali
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 10/17/2019
 ms.author: mohaali
-ms.openlocfilehash: f55ef489032b05cb748eebcdeddd6c46405f5295
-ms.sourcegitcommit: 26123c6bb24c8174beb390f4e06fb938d31238ea
+ms.openlocfilehash: 139c9cb31ecbb6853228c0d362b61d5a74debac5
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72717783"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73874960"
 ---
 # <a name="intro-to-power-bi-qa"></a>Johdatus Power BI:n Q&A:han
 

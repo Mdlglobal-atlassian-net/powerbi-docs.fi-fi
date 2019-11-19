@@ -1,0 +1,53 @@
+### YamlMime:Landing
+title: Power BI -ohjedokumentaatio
+summary: Power BI -ohjedokumentaatio sisältää parhaita käytäntöjä koskevia tietoja tiimiltä, joka rakentaa Power BI:tä, ja henkilöiltä, jotka työskentelevät suuryritysasiakkaidemme kanssa. Tässä olevilla ohjeilla voit parantaa suorituskykyä ja menestystä Power BI:n avulla. Päivitämme ja lisäämme niitä, kun uusia tietoja on saatavilla.
+metadata:
+  title: Power BI -ohjedokumentaatio
+  description: Power BI -ohjedokumentaatio sisältää parhaita käytäntöjä koskevia tietoja tiimiltä, joka rakentaa Power BI:tä, ja henkilöiltä, jotka työskentelevät suuryritysasiakkaidemme kanssa. Tässä olevilla ohjeilla voit parantaa suorituskykyä ja menestystä Power BI:n avulla. Päivitämme ja lisäämme niitä, kun uusia tietoja on saatavilla.
+  services: powerbi
+  ms.service: powerbi
+  ms.subservice: powerbi
+  ms.topic: landing-page
+  ms.collection: collection
+  author: maggiesMSFT
+  ms.author: maggies
+  ms.date: 11/14/2019
+  ms.openlocfilehash: de1ea8bbc35bc1d2ecc42a8deffc54fd9ac01bc1
+  ms.sourcegitcommit: 01de0b01f66f28ca45b8d309d7864f261d6c9a85
+  ms.translationtype: HT
+  ms.contentlocale: fi-FI
+  ms.lasthandoff: 11/16/2019
+  ms.locfileid: "74133838"
+landingContent:
+- title: Power BI -ohjeet
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Ohjeita Power BI:hin
+      url: overview.md
+    - text: Raporttien yleiskatsaus
+      url: ../whitepapers.md
+- title: Tietojen mallinnus
+  linkLists:
+  - linkListType: concept
+    links:
+    - text: Mikä on tähtirakenne?
+      url: star-schema.md
+    - text: Tietojen vähentämistekniikka
+      url: import-modeling-data-reduction.md
+    - text: Kyselyn lähteeseen delegoinnin tärkeys
+      url: power-query-folding.md
+- title: DAX
+  linkLists:
+  - linkListType: concept
+    links:
+    - text: JAKO-funktion ja jako-operaattorin vertailu
+      url: dax-divide-function-operator.md
+    - text: Virhefunktioiden asianmukainen käyttö
+      url: dax-error-functions.md
+- title: Tietovuot
+  linkLists:
+  - linkListType: concept
+    links:
+    - text: Tietovoiden parhaat käytännöt
+      url: ../service-dataflows-best-practices.md
