@@ -3,19 +3,18 @@ title: Käytä Kerberos-SSO-kertakirjautumista SAP BW:hen CommonCryptoLibin (sap
 description: SAP BW -palvelimen määrittäminen ottamaan kertakirjautuminen käyttöön Power BI -palvelussa CommonCryptoLibin (sapcrypto.dll) avulla
 author: mgblythe
 ms.author: mblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: conceptual
 ms.date: 10/10/2019
 LocalizationGroup: Gateways
-ms.openlocfilehash: 97cae53e102538bba7ed969cefe0541d500c33bc
-ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
+ms.openlocfilehash: 63b5abde7deb5f6d93fb7702f0b1244bd193a47d
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73020896"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73872419"
 ---
 # <a name="use-kerberos-single-sign-on-for-sso-to-sap-bw-using-commoncryptolib-sapcryptodll"></a>Käytä Kerberos-SSO-kertakirjautumista SAP BW:hen CommonCryptoLibin (sapcrypto. dll) avulla
 
@@ -31,7 +30,7 @@ Tässä artikkelissa kerrotaan, miten voit määrittää SAP BW -tietolähteesi 
 
 1. Varmista, että BW-palvelimesi on määritetty oikein Kerberos-kertakirjautumista varten CommonCryptoLibin avulla. Jos näin on, pääset BW-palvelimeen kertakirjautumista käyttämällä (joko suoraan tai SAP BW -viestipalvelimen kautta) SAP GUIn kaltaisella SAP-työkalulla, joka on määritetty käyttämään CommonCryptoLibiä. 
 
-   Lisätietoja asennusvaiheista on kohdassa [SAP-kertakirjautuminen: Todentaminen Kerberosin/SPNEGOn kanssa](https://blogs.sap.com/2017/07/27/sap-single-sign-on-authenticate-with-kerberosspnego/). BW-palvelimesi tulee käyttää CommonCryptoLibiä sen SNC-kirjastona, ja sillä pitää olla SNC-nimi, joka alkaa merkkijonolla *CN=* , esimerkiksi *CN=BW1*. Lisätietoja SNC-nimen vaatimuksista (erityisesti snc/identity/as parameter) on kohdassa [Kerberos-määrityksen SNC-parametrit](https://help.sap.com/viewer/df185fd53bb645b1bd99284ee4e4a750/3.0/en-US/360534094511490d91b9589d20abb49a.html).
+   Lisätietoja asennusvaiheista on kohdassa [SAP-kertakirjautuminen: Todentaminen Kerberosin/SPNEGOn kanssa](https://blogs.sap.com/2017/07/27/sap-single-sign-on-authenticate-with-kerberosspnego/). BW-palvelimesi tulee käyttää CommonCryptoLibiä sen SNC-kirjastona, ja sillä pitää olla SNC-nimi, joka alkaa merkkijonolla *CN=* , esimerkiksi *CN=BW1*. Lisätietoja SNC-nimen vaatimuksista (erityisesti snc/identity/as parameter) on kohdassa [Kerberos-määrityksen SNC-parametrit](https://help.sap.com/viewer/df185fd53bb645b1bd99284ee4e4a750/3.0/360534094511490d91b9589d20abb49a.html).
 
 1. Jos et ole vielä tehnyt niin, asenna [SAP .NET Connectorin](https://support.sap.com/en/product/connectors/msnet.html) x64-versio tietokoneeseen, johon yhdyskäytävä on asennettu. 
    
@@ -102,7 +101,7 @@ Jos et pysty päivittämään raporttia Power BI -palvelussa, voit käyttää on
 
 ### <a name="cpic-tracing"></a>CPIC-jäljitys
 
-1. Jos haluat ottaa CPIC-jäljityksen käyttöön, määritä kaksi ympäristömuuttujaa: **CPIC**TRACE\_ ja \_CPIC**TRACE\_DIR**. 
+1. Jos haluat ottaa CPIC-jäljityksen käyttöön, määritä kaksi ympäristömuuttujaa: **CPIC\_TRACE** ja **CPIC\_TRACE\_DIR**. 
 
    Ensimmäinen muuttuja määrittää jäljitystason, ja toinen muuttuja määrittää jäljitystiedoston hakemiston. Hakemiston on oltava sijainti, johon Todennetut käyttäjät -ryhmän jäsenet voivat kirjoittaa. 
  
