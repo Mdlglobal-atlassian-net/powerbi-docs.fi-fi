@@ -2,20 +2,19 @@
 title: Visualisoinnin siirtäminen, koon muuttaminen ja ponnahduskäyttö
 description: Visualisoinnin siirtäminen ja koon muuttaminen Power BI- palvelussa ja työpöydällä
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 10/28/2018
+ms.date: 10/31/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: ff46e750d053ead7eb46d57e55e4af96770f0d6e
-ms.sourcegitcommit: ef6de7067ecb2bbc86d912784376a1627acc478d
+ms.openlocfilehash: cda52bd8814c409bdc8d8d7e14a30744fc91b9ad
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73169122"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73880783"
 ---
 # <a name="move-and-resize-a-visualization-in-a-report"></a>Raportin visualisoinnin siirtäminen ja koon muuttaminen
 
@@ -31,15 +30,15 @@ Avaa Power BI Desktopissa raportti, jossa on vähintään yksi visualisointi tai
 
 ## <a name="resize-the-visualization"></a>Visualisoinnin koon muuttaminen
 * Valitse visualisointi, jotta reuna tulee näkyviin, ja muuta kokoa napsauttamalla ja vetämällä tummia kehyksen koonmuuttokahvoja.  
-  ![](media/power-bi-visualization-move-and-resize/untitled.gif)
+  ![lyhyt video, jossa näytetään, miten voit muuttaa kokoa](media/power-bi-visualization-move-and-resize/untitled.gif)
 
 ## <a name="select-focus-mode-to-see-more-detail"></a>Valitse tarkastelutila, jotta näet tarkemmin.
 * Osoita visualisointia ja napsauta tarkastelutila-kuvaketta.
-  ![](media/power-bi-visualization-move-and-resize/pbi_popouticon.jpg)
+  ![Tarkastelutila-kuvake](media/power-bi-visualization-move-and-resize/pbi_popouticon.jpg)
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 [Visualisoinnin koon muuttaminen raporttinäkymässä](../service-dashboard-edit-tile.md)  
 
 [Tarkastelutila](../consumer/end-user-focus.md)
 
-Onko sinulla muuta kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
+Onko sinulla muuta kysyttävää? [Kokeile Power BI -yhteisöä](https://community.powerbi.com/)

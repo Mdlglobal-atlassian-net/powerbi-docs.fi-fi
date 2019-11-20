@@ -2,7 +2,6 @@
 title: Visualisointityypin vaihtaminen raportissa
 description: Raportin visualisointityypin vaihtaminen Power BI -palvelun ja Power BI Desktopin välillä
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,16 +9,18 @@ ms.topic: conceptual
 ms.date: 10/28/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: f002237c7417a749506d1343fd50630852286f30
-ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
+ms.openlocfilehash: c9de9031fdbee48fca3b9a025fe2547ec08a5f20
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73019096"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73871035"
 ---
 # <a name="change-the-type-of-visualization-in-a-power-bi-report"></a>Power BI -raportin visualisointityypin vaihtaminen
 
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
+
+## <a name="select-a-new-visualization-type"></a>Valitse uusi visualisointityyppi
 
 Kokeile erityyppisiä visualisointeja Power BI -palvelussa ja Power BI Desktopissa, niin näet, kummassa tiedot kuvataan paremmin. 
 
@@ -33,10 +34,10 @@ Kokeile erityyppisiä visualisointeja Power BI -palvelussa ja Power BI Desktopis
 ## <a name="considerations-and-troubleshooting"></a>Huomioon otettavat seikat ja vianmääritys
 Jos muutat raportin visualisointityyppiä sen jälkeen, kun visualisointi on kiinnitetty koontinäyttöön, koontinäytön ruutu ei päivity automaattisesti. Jos siis olet kiinnittänyt visualisoinnin viivakaaviona Power BI -palvelun avulla ja sitten vaihtanut sen raportissa palkkikaavioon, näiden tietojen jo kiinnitetty versio säilyy viivakaaviossa. Kiinnitä palkkikaavio, niin näet myös sen koontinäytössä.
 
-### <a name="next-steps"></a>Seuraavat vaiheet
+## <a name="next-steps"></a>Seuraavat vaiheet
 Lisätietoja [Power BI -raporttien visualisoinneista](power-bi-report-visualizations.md)
 
 [Power BI:n peruskäsitteet](../consumer/end-user-basic-concepts.md)
 
-Onko sinulla muuta kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
+Onko sinulla muuta kysyttävää? [Kokeile Power BI -yhteisöä](https://community.powerbi.com/)
 

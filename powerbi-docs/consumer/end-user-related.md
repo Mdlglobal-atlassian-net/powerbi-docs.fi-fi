@@ -2,7 +2,6 @@
 title: Tarkastele aiheeseen liittyvää sisältöä raporttinäkymissä, raporteissa ja tietojoukoissa
 description: Siirtymistä on helpotettu, tarkastele aiheeseen liittyvää sisältöä raporttinäkymissä, raporteissa ja tietojoukoissa
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 featuredvideoid: B2vd4MQrz4M
 ms.custom: seodec18
@@ -12,12 +11,12 @@ ms.topic: conceptual
 ms.date: 09/18/2019
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 10fcb7420c261379d596666589a0f6707cf70160
-ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
+ms.openlocfilehash: 9e202d22c2ff42a29eb28a8ee154b09f18097d04
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73019435"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73862273"
 ---
 # <a name="view-related-content-in-the-power-bi-service"></a>Tarkastele aiheeseen liittyvää sisältöä Power BI -palvelussa
 
@@ -54,9 +53,9 @@ Täältä voit tehdä suoria toimintoja aiheeseen liittyvään sisältöön.  Va
 ## <a name="view-related-content-for-a-dataset"></a>Tarkastele tietojoukkoon liittyvää sisältöä
 Avataksesi **Aiheeseen liittyvä sisältö** -ruudun sinun pitää käydä läpi tietojoukkoon liittyvät oikeudet kohdasta *Lue*. Tässä esimerkkinä toimii [Hankinta-analyysimalli](../sample-procurement.md).
 
-Etsi siirtymispalkista **Työtilat**-otsikko ja valitse työtila luettelosta. Jos sinulla on sisältöä työtilassa, se näkyy piirtoalustassa oikealla. 
+Etsi siirtymisruudusta **Työtilat**-otsikko ja valitse työtila luettelosta. Jos sinulla on sisältöä työtilassa, se näkyy piirtoalustassa oikealla. 
 
-![työtilat vasemmassa siirtymispalkissa](./media/end-user-related/power-bi-workspace.png)
+![työtilat siirtymisruudussa](./media/end-user-related/power-bi-workspace.png)
 
 
 Valitse ensin **Tietojoukot**-välilehti työtilassa ja etsi sitten ![Näytä aiheeseen liittyvä kuvake](./media/end-user-related/power-bi-view-related-icon-new.png) kuvakkeesta **Näytä aiheeseen liittyvät**.
@@ -76,5 +75,5 @@ Täältä voit tehdä suoria toimintoja aiheeseen liittyvään sisältöön. Val
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 * [Power BI -palvelun käytön aloittaminen](../service-get-started.md)
-* Onko sinulla muuta kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
+* Onko sinulla muuta kysyttävää? [Kokeile Power BI -yhteisöä](https://community.powerbi.com/)
 

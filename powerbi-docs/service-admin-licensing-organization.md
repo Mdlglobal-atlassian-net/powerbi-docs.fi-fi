@@ -2,7 +2,6 @@
 title: Power BI -käyttöoikeudet organisaatiossasi
 description: 'Tutustu eri käyttöoikeustyyppeihin, jotka ovat käytettävissä Power BI:ssä: maksuttomat käyttöoikeudet, Power BI Pro ja Power BI Premium.'
 author: mgblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/09/2019
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: e7a851a890fa734c045bb9cee60d429f87a3a602
-ms.sourcegitcommit: 2b7beec5237a597bab2da8eb6ffe69122a5d2ed9
+ms.openlocfilehash: 2cbf2498740d26a59ced5652368cf99b8fa5eec1
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "73442828"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73857721"
 ---
 # <a name="power-bi-licensing-in-your-organization"></a>Power BI -käyttöoikeudet organisaatiossasi
 
@@ -55,7 +54,7 @@ Pidä mielessä seuraavat asiat ennen rekisteröitymistä:
 
 1. Siirry [Microsoft 365 -hallintakeskukseen](https://portal.office.com/adminportal/home#/homepage).
 
-1. Valitse vasemmalla olevassa siirtymisruudussa **Laskutus** ja sitten **Tilaukset**.
+1. Valitse siirtymisruudussa **Laskutus** ja sitten **Tilaukset**.
 
    ![Laskutus ja tilaukset](media/service-admin-licensing-organization/service-power-bi-pro-in-your-organization-05.png)
 
@@ -101,7 +100,7 @@ Jos rajoittamaton Power BI (ilmainen) -käyttöoikeuslohko ei ole käytettäviss
 
 1. Siirry [Microsoft 365 -hallintakeskukseen](https://portal.office.com/admin/default.aspx).
 
-1. Valitse vasemmasta siirtymisruudusta **Laskutus** > **Tilaukset**.
+1. Valitse siirtymisruudusta **Laskutus** > **Tilaukset**.
 
 1. Valitse oikealta puolelta **Lisää tilauksia +** .
 
@@ -156,4 +155,4 @@ Rekisteröitymistä ohjaava Azure Active Directory -asetus on **AllowAdHocSubscr
 
 [Power BI Pro -käyttöoikeuksien hankinta ja määritys](service-admin-purchasing-power-bi-pro.md)
 
-Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)
+Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)

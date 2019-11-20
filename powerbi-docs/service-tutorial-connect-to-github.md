@@ -2,7 +2,6 @@
 title: 'Opetusohjelma: Yhteyden muodostaminen GitHub-säilöön Power BI:llä'
 description: Tässä opetusohjelmassa yhdistät Power BI:n GitHub-palvelun oikeisiin tietoihin, jolloin Power BI luo automaattisesti koontinäyttöjä ja raportteja.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: SarinaJoan
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -11,12 +10,12 @@ ms.topic: tutorial
 ms.date: 08/07/2019
 ms.author: maggies
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 7f7fde7fcabc29238d9558739eff02519ef9cca3
-ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
+ms.openlocfilehash: 986f35cd1c4f612b16374107487d0ca20c9c607e
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73020026"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73871262"
 ---
 # <a name="tutorial-connect-to-a-github-repo-with-power-bi"></a>Opetusohjelma: Yhteyden muodostaminen GitHub-säilöön Power BI:llä
 Tässä opetusohjelmassa yhdistät Power BI:n GitHub-palvelun oikeisiin tietoihin, jolloin Power BI luo automaattisesti koontinäyttöjä ja raportteja. Muodostat yhteyden Power BI:n sisällön julkiseen säilöön (eli *säilöön*) ja näet vastauksen seuraavanlaisiin kysymyksiin: kuinka moni henkilö osallistuu Power BI:n julkiseen sisältöön? Kuka osallistuu eniten? Minä viikonpäivänä on eniten osallistumisia? Ja muita kysymyksiä. 
@@ -45,7 +44,7 @@ Tarvitset tämän opetusohjelman suorittamiseen GitHub-tilin, jos sinulla ei ole
 
 ## <a name="how-to-connect"></a>Yhteyden muodostaminen
 1. Kirjaudu sisään Power BI -palveluun (https://app.powerbi.com). 
-2. Valitse vasemmassa siirtymisruudussa **Sovellukset** ja **Hanki sovelluksia**.
+2. Valitse siirtymisruudussa **Sovellukset** ja sitten **Hanki sovelluksia**.
    
    ![Power BI Hanki sovelluksia](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial.png) 
 
@@ -72,15 +71,15 @@ Tarvitset tämän opetusohjelman suorittamiseen GitHub-tilin, jos sinulla ei ole
    Nyt Power BI voi muodostaa yhteyden GitHubiin ja tietoihin.  Tiedot päivitetään kerran päivässä.
 
 8. Kun Power BI on tuonut tiedot, näet uuden GitHub-työtilasi sisällön. 
-9. Valitse vasemmassa siirtymispalkissa työtilan nimen vieressä oleva nuoli. Näet, että työtila sisältää koontinäytön ja raportin. 
+9. Valitse siirtymisruudussa työtilan nimen vieressä oleva nuoli. Näet, että työtila sisältää koontinäytön ja raportin. 
 
-    ![Sovellus vasemmanpuoleisessa siirtymisruudussa](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-left-nav-expanded.png)
+    ![Sovellus siirtymisruudussa](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-left-nav-expanded.png)
 
 10. Valitse **Enemmän vaihtoehtoja** (...) koontinäytön nimen vierestä > **Nimeä uudelleen** > kirjoita **GitHub-koontinäyttö**.
  
     ![Power BI GitHub-ruutu](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-left-nav.png) 
 
-8. Pienennä vasen siirtymisruutu valitsemalla yleinen siirtymiskuvake, jotta saat enemmän tilaa.
+8. Pienennä siirtymisruutu valitsemalla yleinen siirtymiskuvake, jotta saat enemmän tilaa.
 
     ![Yleinen siirtymiskuvake](media/service-tutorial-connect-to-github/power-bi-global-navigation-icon.png)
 
@@ -129,7 +128,7 @@ Tarvitset tämän opetusohjelman suorittamiseen GitHub-tilin, jos sinulla ei ole
 
 Nyt kun olet suorittanut opetusohjelman, voit poistaa GitHub-sovelluksen. 
 
-1. Valitse vasemmassa siirtymispalkissa **Sovellukset**.
+1. Valitse siirtymisruudussa **Sovellukset**.
 2. Siirrä hiiren osoitin GitHub-ruudun päälle ja valitse **Poista**-roskakori.
 
     ![Poista GitHub-sovellus](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-delete.png)

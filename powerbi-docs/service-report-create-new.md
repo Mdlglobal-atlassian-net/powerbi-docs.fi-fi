@@ -2,7 +2,6 @@
 title: Raportin luominen tietojoukosta
 description: Power BI -raportin luominen tietojoukosta.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,19 +9,19 @@ ms.topic: conceptual
 ms.date: 04/25/2019
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: 1993ac0b300bb582d7b8a1946ff63cf6316c2d52
-ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
+ms.openlocfilehash: c3f30206a01dce9cf9fd3ce0600b46b401df2b1f
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73432205"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73871760"
 ---
 # <a name="create-a-report-in-the-power-bi-service-by-importing-a-dataset"></a>Raportin luominen Power BI -palvelussa tuomalla tietojoukko
 Olet lukenut [Power BI -raportit](consumer/end-user-reports.md) ja haluat nyt luoda omasi. Voit luoda raportin eri tavoin. Tässä artikkelissa aloitamme luomalla perusraportin Excel-tietojoukosta Power BI -palvelussa. Kun ymmärrät raportin luomisen perusteet, lopussa olevat [Seuraavat vaiheet](#next-steps) vievät sinut monimutkaisempia raportteja koskevaan aiheisiin.  
 
 ## <a name="prerequisites"></a>Edellytykset
 - [Rekisteröidy Power BI -palveluun](service-self-service-signup-for-power-bi.md). Katso raporttien luominen Power BI Desktopissa kohdasta [Työpöydän raporttinäkymä](desktop-report-view.md). 
-- [Lataa jälleenmyyjän analyysin Excel-tietojoukkoesimerkki](http://go.microsoft.com/fwlink/?LinkId=529778) ja tallenna se OneDrive for Businessiin tai paikallisesti.
+- [Lataa jälleenmyyjän analyysin Excel-tietojoukkoesimerkki](https://go.microsoft.com/fwlink/?LinkId=529778) ja tallenna se OneDrive for Businessiin tai paikallisesti.
 
 ## <a name="import-the-dataset"></a>Tuo tietojoukko
 Tämä raporttien luontimenetelmä alkaa tietojoukosta ja tyhjästä raporttipohjasta. Voit seurata mukana tarkastelemalla Excelin Jälleenmyyntianalyysimalli-tietojoukkoa.
@@ -30,7 +29,7 @@ Tämä raporttien luontimenetelmä alkaa tietojoukosta ja tyhjästä raporttipoh
 1. Luomme raportin Power BI -palvelun työtilassa, joten valitse aiemmin luotu työtila tai luo uusi.
    
    ![Luettelo työtiloista](media/service-report-create-new/power-bi-workspaces2.png)
-2. Valitse vasemman siirtymisruudun alareunasta **Nouda tiedot**.
+2. Valitse siirtymisruudun alareunasta **Nouda tiedot**.
    
    ![Nouda tiedot](media/service-report-create-new/power-bi-get-data3.png)
 3. Valitse **Tiedostot** ja siirry sijaintiin, johon tallensit jälleenmyyntianalyysimallin.
@@ -93,5 +92,5 @@ Jatka tietojen tarkastelemista ja visualisointien lisäämistä. Kun olet löyt�
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
 * Lue, miten [kiinnittää visualisointeja raporttinäkymään](service-dashboard-pin-tile-from-report.md)   
-* Onko sinulla muuta kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
+* Onko sinulla muuta kysyttävää? [Kokeile Power BI -yhteisöä](https://community.powerbi.com/)
 

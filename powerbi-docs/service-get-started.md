@@ -2,7 +2,6 @@
 title: Power BI -palvelun käytön aloittaminen
 description: Power BI -verkkopalvelun (app.powerbi.com) käytön aloittaminen
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: tutorial
 ms.date: 09/05/2019
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: 681c55f4425729b96860367858273d7eb1ad73b6
-ms.sourcegitcommit: d441d350504f8c6d9e100d229757add6237f0bef
+ms.openlocfilehash: 3a9b2a5e7de0a5072b266c7b146488e5d546f616
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73060408"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73872320"
 ---
 # <a name="tutorial-get-started-with-the-power-bi-service"></a>Opetusohjelma: Power BI -palvelun käytön aloittaminen
 Tämä opetusohjelma on johdanto joihinkin *Power BI -palvelun* ominaisuuksiin. Sen avulla voit yhdistää tietoihin, luoda raportin ja koontinäytön sekä esittää kysymyksiä tiedoistasi. Voit tehdä paljon muutakin Power BI -palvelussa. Tämä opetusohjelma tarjoaa vain esimakua. Suosittelemme lukemaan [Mikä Power BI on](fundamentals/power-bi-overview.md) -ohjeartikkelin, jotta saat käsityksen, miten Power BI -palvelu sopii yhteen muiden Power BI -tuotteiden kanssa.
@@ -35,7 +34,7 @@ Tässä opetusohjelmassa käyt läpi seuraavat vaiheet:
 > * Tyhjennä resurssit poistamalla tietojoukko, raportti ja koontinäyttö.
 
 > [!TIP]
-> Haluaisitko mieluummin maksuttoman, omaan tahtiin käytävän harjoituskurssin? [Rekisteröidy Datan analysointi ja visualisointi -kurssille EdX:ssa](http://aka.ms/edxpbi).
+> Haluaisitko mieluummin maksuttoman, omaan tahtiin käytävän harjoituskurssin? [Rekisteröidy Datan analysointi ja visualisointi -kurssille EdX:ssa](https://aka.ms/edxpbi).
 
 ## <a name="sign-up-for-the-power-bi-service"></a>Rekisteröidy Power BI -palveluun
 Jos sinulla ei ole Power BI -tiliä, [rekisteröidy ilmaiseen Power BI Pro -kokeiluversioon](https://app.powerbi.com/signupredirect?pbi_source=web), ennen kuin aloitat.
@@ -46,10 +45,10 @@ Kun sinulla on tili, avaa Power BI -palvelu kirjoittamalla selaimeen *app.powerb
 
 Kun haluat luoda Power BI -raportin, aloitat usein Power BI Desktopista. Tällä kertaa aloitamme alusta alkaen ja luomme raportin Power BI -palvelussa.
 
-Tässä opetusohjelmassa saamme tiedot CSV-tiedostosta. Haluatko seurata mukana? [Lataa talousmallin CSV-tiedosto](http://go.microsoft.com/fwlink/?LinkID=521962).
+Tässä opetusohjelmassa saamme tiedot CSV-tiedostosta. Haluatko seurata mukana? [Lataa talousmallin CSV-tiedosto](https://go.microsoft.com/fwlink/?LinkID=521962).
 
-1. [Kirjaudu sisään Power BI:hin](http://www.powerbi.com/). Eikö sinulla ole tiliä? Ei huolta, voit rekisteröityä ilmaiseen kokeiluversioon.
-2. Power BI avautuu selaimessa. Valitse vasemman siirtymisruudun alareunasta **Nouda tiedot**.
+1. [Kirjaudu sisään Power BI:hin](https://www.powerbi.com/). Eikö sinulla ole tiliä? Ei huolta, voit rekisteröityä ilmaiseen kokeiluversioon.
+2. Power BI avautuu selaimessa. Valitse siirtymisruudun alareunassa **Nouda tiedot**.
 
     **Nouda tiedot** -sivu avautuu.   
 
@@ -73,7 +72,7 @@ Tässä opetusohjelmassa saamme tiedot CSV-tiedostosta. Haluatko seurata mukana?
 
     ![Tyhjä raporttipohja](media/service-get-started/power-bi-service-blank-report.png)
 
-7. Huomaa, että yläreunan siirtymispalkissa on vaihtoehto **lukunäkymää** varten. Koska tämä vaihtoehto on käytettävissä, olet tällä hetkellä muokkausnäkymässä. Voit tutustua raporttieditoriin kätevästi [aloittamalla esittelyn](service-the-report-editor-take-a-tour.md).
+7. Huomaa, että yläreunan siirtymisruudussa on vaihtoehto **lukunäkymää** varten. Koska tämä vaihtoehto on käytettävissä, olet tällä hetkellä muokkausnäkymässä. Voit tutustua raporttieditoriin kätevästi [aloittamalla esittelyn](service-the-report-editor-take-a-tour.md).
 
     ![Lukunäkymä-vaihtoehto](media/service-get-started/power-bi-service-reading-view.png)
 
@@ -115,13 +114,13 @@ Nyt kun olet muodostanut yhteyden tietoihin, voit aloittaa tutustumisen.  Kun ol
    
 8. Voit palata raporttiin valitsemalla raporttinäkymän uuden ruudun. Power BI palauttaa sinut raportin lukunäkymään. 
 
-1. Voit palata muokkausnäkymään valitsemalla yläreunan siirtymispalkista **Enemmän vaihtoehtoja** (...) > **Muokkaa**. Kun olet muokkausnäkymässä, voit jatkaa ruutujen tarkastelemista ja kiinnittämistä.
+1. Voit palata muokkausnäkymään valitsemalla yläreunan siirtymisruudusta **Enemmän vaihtoehtoja** (...) > **Muokkaa**. Kun olet muokkausnäkymässä, voit jatkaa ruutujen tarkastelemista ja kiinnittämistä.
 
     ![Muokkaa raporttia valitsemalla Muokkaa](media/service-get-started/power-bi-service-edit-report.png)
 
 ## <a name="step-3-explore-with-qa"></a>Vaihe 3: Tutki Q&A:n avulla
 
-Voit tutkia tietoja nopeasti esittämällä kysymyksen Q&A-ruutuun. Q&A luo luonnollisen kielen mukaisia kyselyjä tiedoistasi. Q&A-ruutu on koontinäytön yläosassa (**Esitä tietojasi koskeva kysymys**). Raportissa se on yläreunan siirtymispalkissa (**Esitä kysymys**).
+Voit tutkia tietoja nopeasti esittämällä kysymyksen Q&A-ruutuun. Q&A luo luonnollisen kielen mukaisia kyselyjä tiedoistasi. Q&A-ruutu on koontinäytön yläosassa (**Esitä tietojasi koskeva kysymys**). Raportissa se on yläreunan siirtymisruudussa (**Esitä kysymys**).
 
 1. Jos haluat palata koontinäyttöön, valitse **Oma työtila** mustasta **Power BI** -palkista.
 
@@ -198,7 +197,7 @@ Tässä on vielä yksi huomioitava seikka, ennen kuin alat tehdä omia koontinä
 ## <a name="clean-up-resources"></a>Resurssien tyhjentäminen
 Nyt kun olet suorittanut opetusohjelman, voit poistaa tietojoukon, raportin ja koontinäytön. 
 
-1. Varmista vasemmasta siirtymispalkista, että olet **Omassa työtilassa**.
+1. Varmista siirtymisruudussa, että olet **Omassa työtilassa**.
 2. Valitse **Tietojoukot**-välilehti ja etsi tätä opetusohjelmaa varten tuotu tietojoukko.  
 3. Valitse **Enemmän vaihtoehtoja** (...) > **Poista**.
 

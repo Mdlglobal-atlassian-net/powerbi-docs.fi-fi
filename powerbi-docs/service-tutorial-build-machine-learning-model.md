@@ -2,7 +2,6 @@
 title: 'Opetusohjelma: Koneoppimismallin luominen Power BI:ssä'
 description: Tässä opetusohjelmassa luodaan koneoppimismalli Power BI:ssä.
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -11,12 +10,12 @@ ms.topic: tutorial
 ms.date: 03/29/2019
 ms.author: davidi
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 75f6449c4795fd0095c46a33b33fd3ef14045e35
-ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
+ms.openlocfilehash: 78b29a4e71e75793e168da25987b3e9c4a8b13f4
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73432254"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73877016"
 ---
 # <a name="tutorial-build-a-machine-learning-model-in-power-bi"></a>Opetusohjelma: Koneoppimismallin luominen Power BI:ssä
 
@@ -47,7 +46,7 @@ Voit ladata tietojoukon UC Irvine -verkkosivustosta. Tämä on käytettävissä 
 
 Jotta voit luoda entiteetit tietovirrassa, kirjaudu sisään Power BI -palveluun ja siirry varatun kapasiteettisi työtilaan, jossa AI on käytössä.
 
-Jos sinulla ei vielä ole työtilaa, voit luoda sellaisen valitsemalla Power BI -palvelun vasemmanpuoleisesta siirtymisvalikosta **Työtilat** ja valitsemalla sitten alareunan paneelista **Luo työtila**. Tämä avaa oikeaan reunaan ruudun, jossa voit antaa työtilan tiedot. Kirjoita työtilan nimi ja valitse **Lisäasetukset**. Varmista, että työtila käyttää varattua kapasiteettia valintanapin avulla ja että se on määritetty varattuun kapasiteettiesiintymään, jossa on käytössä tekoälyn esikatselu. Valitse **Tallenna**.
+Jos sinulla ei vielä ole työtilaa, voit luoda työtilan valitsemalla Power BI -palvelun siirtymisruudusta **Työtilat** ja valitsemalla sitten alareunan paneelista **Luo työtila**. Tämä avaa oikeaan reunaan ruudun, jossa voit antaa työtilan tiedot. Kirjoita työtilan nimi ja valitse **Lisäasetukset**. Varmista, että työtila käyttää varattua kapasiteettia valintanapin avulla ja että se on määritetty varattuun kapasiteettiesiintymään, jossa on käytössä tekoälyn esikatselu. Valitse **Tallenna**.
 
 ![Luo työtila](media/service-tutorial-build-machine-learning-model/tutorial-machine-learning-model-01.png)
 

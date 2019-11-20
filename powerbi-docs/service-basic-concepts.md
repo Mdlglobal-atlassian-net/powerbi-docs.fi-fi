@@ -1,22 +1,22 @@
 ---
 title: Power BI -palvelun peruskäsitteitä suunnittelijoille
-description: Power BI -palvelun työtilat, koontinäytöt, raportit, tietojoukot ja työkirjat.
+description: Power BI -palvelun kapasiteetit, työtilat, koontinäytöt, raportit, työkirjat, tietojoukot ja tietovuot.
 author: maggiesMSFT
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 featuredvideoid: B2vd4MQrz4M
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/25/2019
+ms.date: 11/14/2019
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: 80d878cc5a8ed0df294b99390fb87d8099bfccb5
-ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
+ms.openlocfilehash: f86b9ae056770240485ff1984be4714faec9dc83
+ms.sourcegitcommit: 01de0b01f66f28ca45b8d309d7864f261d6c9a85
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73431323"
+ms.lasthandoff: 11/16/2019
+ms.locfileid: "74128352"
 ---
 # <a name="basic-concepts-for-designers-in-the-power-bi-service"></a>Power BI -palvelun peruskäsitteitä suunnittelijoille
 
@@ -28,7 +28,7 @@ Jos sinulla ei ole vielä omia raportteja, yritä asentaa [Power BI -mallin sis�
 
 Kun avaat Power BI -palvelun selaimessa, palvelun Aloitussivu avautuu. Saatat nähdä seuraavia elementtejä:
 
-1. Siirtymisruutu (vasen siirtymispalkki)
+1. Siirtymisruutu
 2. Office 365 -sovellusten käynnistystoiminto
 3. Power BI:n aloituspainike
 4. Kuvakepainikkeet, mukaan lukien asetukset, ohjeet ja palautteet
@@ -45,20 +45,36 @@ Tutustumme näihin ominaisuuksiin myöhemmin tarkemmin, mutta käydään ensin l
 
 
 ## <a name="power-bi-concepts"></a>Power BI:n käsitteet
-Power BI:n neljä peruselementtiä ovat: **_koontinäytöt_** , **_raportit_** , **_työkirjat_** ja **_tietojoukot_** . Ne on kaikki järjestetty **_työtiloiksi_** . Työtilojen käsite on tärkeä ymmärtää ennen neljään peruselementtiin tutustumista, joten aloitetaan siitä.
+Power BI:n neljä peruselementtiä ovat: *koontinäytöt*, *raportit*, *työkirjat*, *tietojoukot* ja *tietovuot*. Ne on kaikki järjestetty *työtiloihin*, ja ne on luotu *kapasiteeteille*.  Kapasiteettien ja työtilojen käsite on tärkeä ymmärtää ennen viiteen peruselementtiin tutustumista, joten aloitetaan siitä.
+
+## <a name="capacities"></a>Kapasiteetit
+Kapasiteetit ovat Power BI:n peruskäsite. Ne tarkoittavat joukkoa resursseja (tallennus, suoritin ja muisti), joilla isännöidään ja tarjotaan Power BI -sisältöä. Kapasiteetit ovat joko _jaettuja_ tai _varattuja_. Jaettu kapasiteetti jaetaan muiden Microsoftin asiakkaiden kanssa, kun taas varattu kapasiteetti on varattu täysin yhdelle asiakkaalle. Varatut kapasiteetit edellyttävät [tilausta](service-premium-what-is.md), ja ne on kuvattu täydellisesti artikkelissa [Premium-kapasiteettien hallinta](service-premium-capacity-manage.md).
+
+Oletusarvoisesti työtilat luodaan jaetulle kapasiteetille. Jaetussa kapasiteetissa työnkulut suoritetaan muiden asiakkaiden kanssa jaetuissa laskennallisissa resursseissa. Koska kapasiteetin täytyy jakaa resursseja, käytössä on rajoituksia tasapuolisuuden takaamiseksi. Esimerkiksi mallin koko voi olla enintään 1 Gt ja päivittäisiä päivityksiä voi olla enintään kahdeksan.
 
 ## <a name="workspaces"></a>Työtilat
-Työtilat ovat Power BI:ssä olevia säilöjä koontinäytöille, raporteille, työkirjoille ja tietojoukoille. Työtiloja on kahdenlaisia: *Oma työtila* ja *työtilat*. Entä mitä tarkoitetaan *sovelluksella*? Power BI -*sovellus* on kokoelma koontinäyttöjä ja raportteja, joiden avulla voit kuvata keskeisiä mittalukuja organisaatiosi Power BI -loppukäyttäjille. Sovellukset ovat vuorovaikutteisia, mutta loppukäyttäjät eivät voi muokata niitä.
+Työtilat luodaan kapasiteeteille. Työtilat ovat periaatteessa Power BI:ssä olevia säilöjä koontinäytöille, raporteille, työkirjoille, tietojoukoille ja tietovoille.
+
+Työtiloja on kahdenlaisia: *Oma työtila* ja *työtilat*.
 
 - *Oma työtila* on jokaisen Power BI -asiakkaan henkilökohtainen työtila oman sisällön käsittelyyn. Vain sinulla on käyttöoikeus omaan työtilaasi. Oman työtilan kautta voi jakaa raporttinäkymiä ja raportteja. Jos haluat käsitellä koontinäyttöjä ja raportteja yhteistyössä tai luoda sovelluksen, sinun kannattaa käyttää työtilaa.      
--  *Työtiloja* käytetään yhteistyöhön ja sisällön jakamiseen kollegoiden kanssa. Niissä voi myös luoda, julkaista ja hallita sovelluksia organisaatiollesi. Niitä voi ajatella tietynlaisina valmisteluympäristöinä ja säilöinä sisällölle, josta muodostuu Power BI -sovellus. Voit lisätä kollegoita työtilan käyttäjiksi ja käsitellä koontinäyttöjä, raportteja, työkirjoja ja tietojoukkoja yhteistyössä. Kaikki työtilan jäsenet tarvitsevat Power BI Pro -käyttöoikeudet. Sovelluksen kuluttajilla (sovelluksen käyttöoikeuden saaneilla kollegoilla) ei välttämättä tarvitse olla Pro-käyttöoikeuksia. Lue lisää [uusista työtiloista](service-create-the-new-workspaces.md).  
+-  *Työtiloja* käytetään yhteistyöhön ja sisällön jakamiseen kollegoiden kanssa. Voit lisätä kollegoita työtilan käyttäjiksi ja käsitellä koontinäyttöjä, raportteja, työkirjoja ja tietojoukkoja yhteistyössä. Yhtä poikkeusta lukuun ottamatta kaikki työtilan jäsenet tarvitsevat Power BI Pro -käyttöoikeudet. Lue lisää [uusista työtiloista](service-create-the-new-workspaces.md). 
+
+    Työtiloissa voi myös luoda, julkaista ja hallita organisaatiosi *sovelluksia*. Työtiloja voi ajatella tietynlaisina valmisteluympäristöinä ja säilöinä sisällölle, josta muodostuu Power BI -sovellus. Entä mitä tarkoitetaan *sovelluksella*? Se on kokoelma koontinäyttöjä ja raportteja, joiden avulla voit kuvata keskeisiä mittalukuja organisaatiosi Power BI -kuluttajille. Sovellukset ovat vuorovaikutteisia, mutta kuluttajat eivät voi muokata niitä. Sovelluksen kuluttajilla (sovelluksen käyttöoikeuden saaneilla kollegoilla) ei välttämättä tarvitse olla Pro-käyttöoikeuksia.  
 
 Lisätietoja jakamisesta yleisesti saat artikkelista [Tapoja jakaa koontinäyttöjä töistäsi](service-how-to-collaborate-distribute-dashboards-reports.md).
 
-Siirrytään nyt Power BI:n peruselementteihin. Raporttinäkymiä tai raportteja ei voi olla ilman tietoja – tai tyhjinä niistä ei ainakaan ole hyötyä –, joten aloitetaan **tietojoukoista**.
+Siirrytään nyt Power BI:n peruselementteihin.
+
+## <a name="dataflows"></a>Tietovuot
+*Tietovuon* avulla organisaatiot voivat yhdenmukaistaa erilaisista lähteistä peräisin olevia tietoja. Ne ovat valinnaisia, ja niitä käytetään usein monimutkaisissa tai suurissa projekteissa. Ne edustavat tietojoukkojen käyttöön valmisteltuja ja järjestettyjä tietojoukkoja. Niitä ei kuitenkaan voida käyttää suoraan raportoinnin lähteenä. Ne hyödyntävät Microsoftin laajaa tietoyhdistimien kokoelmaa, mikä mahdollistaa paikallisten ja pilvipohjaisten tietolähteiden tietojen käsittelemisen.
+
+Tietovuot luodaan ja niitä hallitaan vain työtiloissa (ei kuitenkaan *Omassa työtilassa*), ja ne tallennetaan Azure Data Lake Storage Gen2:n Common Data Model (CDM) -entiteeteiksi. Yleensä ne on ajoitettu päivittymään toistuvasti ajantasaisten tietojen tallentamista varten. Ne sopivat erinomaisesti tietojen valmistelemiseen tietojoukkojen käyttöön ja mahdolliseen uudelleenkäyttöön. Lisätietoja on artikkelissa [Omatoiminen tietojen valmisteleminen Power BI:ssä](service-dataflows-overview.md).
+
+Raporttinäkymiä tai raportteja ei voi olla ilman tietoja – tai tyhjinä niistä ei ainakaan ole hyötyä – joten aloitetaan nyt **tietojoukoista**.
 
 ## <a name="datasets"></a>Tietojoukot
-*Tietojoukko* on kokoelma tietoja, jotka voit *tuoda* tai joihin voit *muodostaa yhteyden*. Power BI:n avulla voit koota yhteen kaikenlaisia tietojoukkoja muodostamalla niihin yhteyden ja tuomalla niitä.  
+*Tietojoukko* on kokoelma tietoja, jotka voit *tuoda* tai joihin voit *muodostaa yhteyden*. Power BI:n avulla voit koota yhteen kaikenlaisia tietojoukkoja muodostamalla niihin yhteyden ja tuomalla niitä. Tietojoukkojen tietolähteitä voivat olla myös tietovuot.
 
 Tietojoukot liittyvät *työtiloihin*, ja yksi tietojoukko voi olla osa useita työtiloja. Kun avaat työtilan, siihen liittyvät tietojoukot luetellaan **Tietojoukot**-välilehdellä. Jokainen luettelon tietojoukko edustaa yhtä tietolähdettä, kuten Excel-laskentataulukkoa OneDrivessa, paikallista taulukkomuotoista SSAS-tietojoukkoa tai Salesforce-tietojoukkoa. Tuettuja tietolähteitä on monenlaisia, ja uusia lisätään koko ajan. Katso luettelo [Power BI:n kanssa käytettävistä tietojoukkotyypeistä](service-get-data.md).
 
@@ -74,13 +90,17 @@ Alla olevassa esimerkissä olen valinnut Myynti ja markkinointi -työtilan ja na
 
   ![Tietojoukkokaavio](media/service-basic-concepts/drawing2.png)
 
-Voit [yhdistää tietojoukkoon tai tuoda tietojoukon](service-get-data.md) valitsemalla **Nouda tiedot** vasemman siirtymisruudun alareunassa. Noudata ohjeita yhteyden muodostamiseen tiettyyn lähteeseen tai lähteen tuomiseen. Lisää tietojoukko aktiiviseen työtilaan. Uudet tietojoukot on merkitty keltaisella tähdellä. Power BI:ssä tekemäsi työ ei muuta pohjana olevaa tietojoukkoa.
+Voit [yhdistää tietojoukkoon tai tuoda tietojoukon](service-get-data.md) valitsemalla **Nouda tiedot** siirtymisruudun alareunassa. Noudata ohjeita yhteyden muodostamiseen tiettyyn lähteeseen tai lähteen tuomiseen. Lisää tietojoukko aktiiviseen työtilaan. Uudet tietojoukot on merkitty keltaisella tähdellä. Power BI:ssä tekemäsi työ ei muuta pohjana olevaa tietojoukkoa.
 
 Yhden työtilan jäsenen lisäämät tietojoukot ovat työtilan muiden jäsenten käytettävissä *järjestelmänvalvoja*-, *jäsen*- tai *osallistuja*-rooleille.
 
-Tietojoukkoja voi päivittää, nimetä uudelleen, tarkastella ja poistaa. Tietojoukon avulla voit luoda raportin alusta alkaen tai [Nopeat merkitykselliset tiedot](service-insights.md) -toiminnolla.  Valitsemalla **Näytä aiheeseen liittyvät** voit nähdä, mitkä raportit ja koontinäytöt käyttävät jo tietojoukkoa. Voit tutustua tietojoukkoon valitsemalla sen. Silloin käytännössä avaat tietojoukon raporttieditorissa, jossa voit aloittaa tietoihin pureutumisen ja visualisointien luomisen. Siirrytään siis seuraavaan aiheeseen eli raportteihin.
+Tietojoukkoja voi päivittää, nimetä uudelleen, tarkastella ja poistaa. Tietojoukon avulla voit luoda raportin alusta alkaen tai [Nopeat merkitykselliset tiedot](service-insights.md) -toiminnolla.  Valitsemalla **Näytä aiheeseen liittyvät** voit nähdä, mitkä raportit ja koontinäytöt käyttävät jo tietojoukkoa. Voit tutustua tietojoukkoon valitsemalla sen. Silloin käytännössä avaat tietojoukon raporttieditorissa, jossa voit aloittaa tietojen tutkimisen luomalla visualisointeja.
+
+Siirrytään nyt seuraavaan aiheeseen, eli raportteihin.
 
 ### <a name="dig-deeper"></a>Pureudu syvemmälle
+* [Tietojoukot Power BI -palvelussa](service-datasets-understand.md)
+* [Tietojoukkojen tilat Power BI -palvelussa](service-dataset-modes-understand.md)
 * [Mikä on Power BI Premium?](service-premium-what-is.md)
 * [Tietojen noutaminen Power BI:hin](service-get-data.md)
 * [Mallitietojoukkoja Power BI:lle](sample-datasets.md)
@@ -159,13 +179,13 @@ Olemme nyt käsitelleet työtilat ja Power BI:n elementit. Tuodaanpa ne nyt yhte
 
 ![Power BI -palvelu selaimessa](media/service-basic-concepts/completenewest.png)
 
-### <a name="1-navigation-pane-left-nav"></a>1. **Siirtymisruutu** (vasen siirtymispalkki)
+### <a name="1-navigation-pane"></a>1. **Siirtymisruutu**
 Siirtymisruudun avulla voit etsiä työtiloja ja Power BI:n elementtejä sekä siirtyä niiden välillä. Elementtejä ovat koontinäytöt, raportit, työkirjat ja tietojoukot.  
 
   ![Siirtymisruutu](media/service-basic-concepts/power-bi-navigation.png)
 
 * Valitse **Nouda tiedot**, kun haluat [lisätä tietojoukkoja, raportteja ja koontinäyttöjä Power BI:hin](service-get-data.md).
-* Laajenna ja kutista siirtymisruutua tällä kuvakkeella ![siirtymisruudun kuvake](media/service-basic-concepts/expand-icon.png).
+* Laajenna ja kutista siirtymisruutu tällä kuvakkeella ![siirtymisruutukuvake](media/service-basic-concepts/expand-icon.png).
 * Avaa tai hallitse suosikkisisältöäsi valitsemalla **Suosikit**.
 * Tarkastele ja avaa viimeksi käytettyä sisältöä valitsemalla **Viimeaikaiset**
 * Tarkastele, avaa tai poista sovelluksia valitsemalla **Sovellukset**.
@@ -227,5 +247,4 @@ Tämä näytön alue sisältää lisävaihtoehtoja vuorovaikutukseen sisällön 
 - [Mikä on Power BI?](fundamentals/power-bi-overview.md)  
 - [Power BI -videot](videos.md)  
 - [Raporttieditorin esittely](service-the-report-editor-take-a-tour.md)
-
-Onko sinulla muuta kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)
+- Onko sinulla muuta kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)

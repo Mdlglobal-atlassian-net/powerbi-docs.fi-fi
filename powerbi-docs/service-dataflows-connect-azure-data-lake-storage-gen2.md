@@ -2,7 +2,6 @@
 title: Lue, miten voit yhdistää Azure Data Lake Storage Gen 2:n Power BI:hin tietovuon tallennusta varten
 description: Tuo omat tietosi tietovoihin käyttämällä Azure Data Lake Storage Gen2:ta
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 08/29/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: df3c8b33de32bb9dd42507cc7bb601cee9f6e575
-ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
+ms.openlocfilehash: c48ae0913d0096546c23d22d3e4596fdb21aef82
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73432028"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73872726"
 ---
 # <a name="connect-azure-data-lake-storage-gen2-for-dataflow-storage-preview"></a>Yhdistä Azure Data Lake Storage Gen2 tietovuon tallennukseen (esikatselu)
 
@@ -105,7 +104,7 @@ Jotta voit myöntää käyttöoikeudet tiedostojärjestelmään, sinun on sovell
 
 Etsi vuokraajan sovelluksia seuraavasti:
 
-1. Valitse [Azure-portaalissa](https://portal.azure.com/) **Azure Active Directory** vasemmasta siirtymisruudusta.
+1. Valitse [Azure-portaalissa](https://portal.azure.com/) **Azure Active Directory** siirtymisruudusta.
 2. Valitse Azure **Active Directory** -ruudussa **Yrityssovellukset**.
 3. Valitse avattavasta **Sovellustyyppi**-valikosta **Kaikki sovellukset** ja valitse sitten **Käytä**. Esiin tulee seuraavan kuvan kaltainen vuokraajan sovellusten malli.
 
@@ -223,4 +222,4 @@ Lisätietoja Common Data Modelista on sen yleiskatsauksen sisältävässä artik
 * [CDM-kansiot](https://go.microsoft.com/fwlink/?linkid=2045304)
 * [CDM-mallitiedoston määritys](https://go.microsoft.com/fwlink/?linkid=2045521)
 
-Voit myös yrittää [esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/).
+Voit myös yrittää [esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/).

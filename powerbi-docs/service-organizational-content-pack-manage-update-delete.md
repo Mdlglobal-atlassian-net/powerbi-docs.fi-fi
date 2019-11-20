@@ -2,7 +2,6 @@
 title: 'Organisaation sisältöpaketit: Hallinta ja päivitys'
 description: Lue lisää organisaation sisältöpakettien hallitsemisesta, päivittämisestä ja poistamisesta Power BI:ssä.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: f2a80b075a56cdeccfa4c3675cdf31504b6a7e5d
-ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
+ms.openlocfilehash: 975c219a98f3d03f59df4d1c2a0551718bf213f0
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73431772"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73881259"
 ---
 # <a name="manage-update-and-delete-organizational-content-packs"></a>Organisaation sisältöpakettien hallinta, päivitys ja poistaminen
 > [!NOTE]
@@ -87,5 +86,5 @@ Voit poistaa sisältöpaketin AppSourcesta vain, jos se olet itse luonut sen. Jo
 ## <a name="next-steps"></a>Seuraavat vaiheet
 * [Johdanto organisaation sisältöpaketteihin](service-organizational-content-pack-introduction.md)
 * [Sovelluksen luonti ja jakaminen Power BI:ssä](service-create-distribute-apps.md) 
-* Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
+* Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](https://community.powerbi.com/)
 

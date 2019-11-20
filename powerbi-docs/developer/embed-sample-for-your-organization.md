@@ -3,19 +3,18 @@ title: Upotettu analysointi Power BI:n sisällön upottamiseksi sovellukseen org
 description: Lue, miten voit integroida tai upottaa raportteja (Power BI- tai sivutettuja raportteja), koontinäyttöjä tai ruutuja organisaatiotasi varten käyttämällä upotetussa analysoinnissa Power BI -ohjelmointirajapintoja. Lue, miten voit integroida Power BI:n sovellukseesi käyttämällä upotetun analysoinnin ohjelmistoa, upotetun analysoinnin työkaluja tai upotetun liiketoimintatiedon työkaluja.
 author: rkarlin
 ms.author: rkarlin
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.custom: seodec18
 ms.date: 07/29/2019
-ms.openlocfilehash: 9c35d74249516b25a756a8a90ce666092e585a72
-ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
+ms.openlocfilehash: 3a217ebd1b6450c76ebf25ad5154293566d955f6
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73431074"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73876011"
 ---
 # <a name="tutorial-embed-power-bi-content-into-an-application-for-your-organization"></a>Opetusohjelma: Power BI -sisällön upottaminen sovellukseen organisaatiolle
 
@@ -429,4 +428,4 @@ Tässä opetusohjelmassa olet oppinut, miten voit upottaa Power BI-sisältöä s
 > [!div class="nextstepaction"]
 >[Upottaminen asiakkaillesi](embed-sample-for-customers.md)
 
-Jos sinulla on lisää kysymyksiä, [voit esittää niitä Power BI -yhteisössä](http://community.powerbi.com/).
+Jos sinulla on lisää kysymyksiä, [voit esittää niitä Power BI -yhteisössä](https://community.powerbi.com/).

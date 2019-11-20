@@ -2,7 +2,6 @@
 title: Power BI:n helppokäyttötoimintojen yleiskatsaus
 description: Ominaisuuksia ja ehdotuksia, joilla luot helppokäyttöisiä Power BI Desktop -raportteja
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/28/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 13017fed9a7cd54cde624424894341dc2ced0d9b
-ms.sourcegitcommit: ef6de7067ecb2bbc86d912784376a1627acc478d
+ms.openlocfilehash: e61df101d26dd95a771a64ce7633e40fcd9c9123
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73180972"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73878904"
 ---
 # <a name="overview-of-accessibility-in-power-bi"></a>Power BI:n helppokäyttötoimintojen yleiskatsaus
 Power BI:ssä työskenneltäessä on tärkeää miettiä, millaiset käyttäjät voivat käyttää raportteja. Luotaessa ja esitettäessä raportteja joissa siirtyminen ja joiden ymmärtäminen on helppoa sekä näppäimistön että näytönlukijan käyttäjille, käyttäjät, joilla on näkövamma tai muu fyysinen haitta, saavat samat tiedot.
@@ -30,10 +29,10 @@ Universaalissa suunnittelussa suunnitellaan tuotteita, jotka ovat mahdollisimman
 
 ## <a name="accessibility-standards"></a>Saavutettavuusstandardit
 
-Power BI on noudattaa seuraavia saavutettavuusstandardeja.  Tämä auttaa varmistamaan, että mahdollisimman monet voivat käyttää Power BI -kokemuksiasi.
+Power BI on noudattaa seuraavia helppokäyttöisyysstandardeja.  Tämä auttaa varmistamaan, että mahdollisimman monet voivat käyttää Power BI -kokemuksiasi.
 
 ### <a name="wcag-21"></a>WCAG 2.1
-Power BI noudattaa Web Content Accessibility (WCAG) 2.1 -ohjeita. WCAG:ssa on kolme ensisijaista periaatetta:
+Verkkosisällön saavutettavuus (WCAG) auttaa tekemään verkkosisällöstä helppokäyttöistä toimintarajoitteisille henkilöille. WCAG:ssa on kolme ensisijaista periaatetta:
 
 1. **Havaittavuus** – tietojen ja käyttöliittymän osat esitettävä käyttäjille tavalla, jonka he voivat havaita.
 2. **Hallittavuus** – käyttöliittymän osien ja siirtymisen on oltava hallittavissa.

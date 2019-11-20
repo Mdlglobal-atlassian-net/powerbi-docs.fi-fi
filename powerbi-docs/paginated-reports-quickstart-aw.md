@@ -3,18 +3,17 @@ title: 'Opetusohjelma: Sivutetun raportin luominen ja lataaminen Power BI -palve
 description: Tässä opetusohjelmassa muodostat yhteyden Azure SQL -mallitietokantaan. Sen jälkeen luot sivutetun raportin Raportin muodostimen ohjatun toiminnon avulla. Sen jälkeen lataat sivutetun raportin Power BI -palvelussa olevaan Premium-kapasiteetin työtilaan.
 author: maggiesMSFT
 ms.author: maggies
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: tutorial
 ms.date: 11/06/2018
-ms.openlocfilehash: 59d3f943ff893024beceff59ce3d0db6bc4d764b
-ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
+ms.openlocfilehash: ab4cb14936ceff52a78f713877064d525de4b104
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73431676"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73875423"
 ---
 # <a name="tutorial-create-a-paginated-report-and-upload-it-to-the-power-bi-service"></a>Opetusohjelma: Sivutetun raportin luominen ja lataaminen Power BI -palveluun
 
@@ -287,7 +286,7 @@ Tehdään muotoiluun vielä yksi parannus ennen raportin julkaisemista Power BI 
 
 Nyt kun olet luonut tämän sivutetun raportin, voit ladata sen Power BI -palveluun.
 
-1. Valitse Power BI -palvelussa (http://app.powerbi.com) valitse vasemmasta siirtymisruudusta **Työtilat** > **Luo työtila**.
+1. Valitse Power BI -palvelussa (https://app.powerbi.com) valitse siirtymisruudusta **Työtilat** > **Luo työtila**.
 
 2. Anna työtilan nimeksi **Azure AW** tai muu yksilöllinen nimi. Olet toistaiseksi ainoa jäsen. 
 

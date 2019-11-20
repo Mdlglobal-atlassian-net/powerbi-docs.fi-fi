@@ -2,7 +2,6 @@
 title: Tarkastelutila ja koko näytön tila – lähentäminen yksityiskohtien katsomiseksi
 description: Dokumentaatio Power BI -koontinäytön, koontinäytön ruudun, raportin tai raportin visualisoinnin esittämiseen tarkastelutilassa tai koko näytön tilassa
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 featuredvideoid: dtdLul6otYE
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 09/23/2019
 ms.author: mihart
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 3a4f120ec64376955433faf04e24dd0e8f623419
-ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
+ms.openlocfilehash: 633aaf4bd06634f0b1cc7eb2dd38b56eec0cfaf0
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73019816"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73852735"
 ---
 # <a name="display-content-in-more-detail-focus-mode-and-full-screen-mode"></a>Näytä sisältö yksityiskohtaisemmin: tarkastelutila ja koko näytön tila
 
@@ -38,7 +37,7 @@ Tarkastelutila ja koko näytön tila ovat kaksi eri tapaa nähdä visualisoinnit
 
 ![koontinäytön koko näytön tila ennen ja jälkeen](media/end-user-focus/power-bi-dashboards-focus.png)
 
-Näytä Power BI -palvelun sisältö (koontinäytöt, raporttisivut, ruudut ja visualisoinnit) ilman valikoiden ja siirtymispalkkien aiheuttamia häiriöitä.  Saat sisältösi aidon, koko näytön näkymän yhdellä silmäyksellä keskeytyksettä. Tätä kutsutaan joskus myös TV-tilaksi.   
+Näytä Power BI -palvelun sisältö (koontinäytöt, raporttisivut, ruudut ja visualisoinnit) ilman valikoiden ja siirtymisruutujen aiheuttamia häiriöitä.  Saat sisältösi aidon, koko näytön näkymän yhdellä silmäyksellä keskeytyksettä. Tätä kutsutaan joskus myös TV-tilaksi.   
 
 Avaa koko näytön tila valitsemalla **koko näyttö** -kuvake ![koko näyttö -kuvake ](media/end-user-focus/power-bi-full-screen-icon.png) Power BI -palvelun valikkoriviltä, joka on koontinäytön, raportin, tarkastelutilan ruudun tai tarkastelutilan visualisoinnin yläpuolella.  Valitsemasi sisältö täyttää koko näytön.
 Jos käytät Power BI mobiilisovellusta, [koko näytön tila on käytettävissä Windows 10 -mobiilisovelluksia varten](./mobile/mobile-windows-10-app-presentation-mode.md). 
@@ -60,7 +59,7 @@ Tarkastelutilassa Power BI *-kuluttaja* voi käsitellä tätä visualisointia lu
 
 ## <a name="working-in-full-screen-mode"></a>Työskentely koko näytön tilassa
 
-Jos haluat avata koontinäytön tai raporttisivun koko näytön tilassa, valitse koko näyttö -kuvake ![koko näyttö -kuvake](media/end-user-focus/power-bi-full-screen-icon.png) yläreunan siirtymispalkista. Kun olet koko näytön tilassa, saat pikavalikon näkyviin liikuttamalla hiirtä tai kohdistinta. Koko näytön tila on käytettävissä monissa erilaisissa sisällöissä, joten pikavalikkojen vaihtoehdot eroavat hieman toisistaan, mutta ovat melko itsestään selviä.  Näet määrityksen, kun pidät hiiren osoitinta kuvakkeen päällä.
+Jos haluat avata koontinäytön tai raporttisivun koko näytön tilassa, valitse koko näyttö -kuvake ![koko näyttö -kuvake](media/end-user-focus/power-bi-full-screen-icon.png) yläreunan siirtymisruudusta. Kun olet koko näytön tilassa, saat pikavalikon näkyviin liikuttamalla hiirtä tai kohdistinta. Koko näytön tila on käytettävissä monissa erilaisissa sisällöissä, joten pikavalikkojen vaihtoehdot eroavat hieman toisistaan, mutta ovat melko itsestään selviä.  Näet määrityksen, kun pidät hiiren osoitinta kuvakkeen päällä.
 
 Koontinäyttöjen valikko    
 ![Koontinäyttöjen valikko](media/end-user-focus/power-bi-full-screen-dash.png)    

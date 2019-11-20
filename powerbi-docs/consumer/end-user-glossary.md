@@ -9,12 +9,12 @@ ms.subservice: powerbi-consumer
 ms.topic: conceptual
 ms.date: 09/04/2019
 ms.author: mihart
-ms.openlocfilehash: a48589e6126203856a306de796c964ce6e347c26
-ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
+ms.openlocfilehash: 32a93a881a801ec5dd335f167e69a5b76f53d694
+ms.sourcegitcommit: a5853ef44ed52e80eabee3757bb6887fa400b75b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73429862"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73764710"
 ---
 # <a name="glossary-for-power-bi-service"></a>Power BI -palvelun sanasto
 Power BI -palvelussa saattaa olla ennestään tuntematonta tai sekavalta vaikuttavaa terminologiaa. Sanasto on hyvä paikka termien hakuun, joten se on hyvä lisätä suosikkeihin. Toinen hyvä resurssi lisätietojen saamiseen Power BI -palvelun muodostavista rakenneosista ovat [peruskäsitteet](end-user-basic-concepts.md). Peruskäsitteet tarjoavat korkean tason yleiskatsauksen Power BI:n *osiin* ja niiden yhteyksiin.
@@ -68,7 +68,7 @@ Tämä sanasto on yhteisön luoma.  Etkö näe etsimääsi sanaa? Pyydä meitä 
 
 **connect live (yhdistä reaaliajassa)** Tapa muodostaa yhteys SQL Server Analysis Services -tietomalleihin. Kutsutaan myös live-yhteydeksi.
 
-**säilö** Siirtymispalkin alueita kutsutaan *säilöiksi*. Siirtymispalkissa on seuraavat säilöt: Suosikit, Viimeksi käytetyt, Sovellukset, Jaettu kanssani ja Aloitus. 
+**säilö** Siirtymisruudun alueita kutsutaan *säilöiksi*. Siirtymisruudussa on seuraavat säilöt: Suosikit, Viimeksi käytetyt, Sovellukset, Jaettu kanssani ja Aloitus. 
 
 **sisältö** Power BI -palvelun sisältö koostuu yleensä raporttinäkymistä, raporteista ja sovelluksista. Se voi sisältää myös työkirjoja ja tietojoukkoja.
 
@@ -162,12 +162,12 @@ Power BI -ympäristö (vuokraaja) -termiä voidaan käyttää dokumentaatiossa, 
 
 ## <a name="l"></a>L
 
-**vasen siirtymisruutu (vasen siirtymisruutu)** Tämä on korvattu **siirtymispalkilla**, mutta se saattaa vielä esiintyä joissakin ohjeissa.    
+**vasen siirtymisruutu (vasen siirtymäruutu)** Tämä on korvattu **siirtymisruudulla**, mutta se saattaa vielä esiintyä joissakin ohjeissa.    
 Power BI -palvelun vasemmassa reunassa olevat ohjausobjektit.
 
-Vasemmanpuoleinen tai vasen siirtymisruutu.
+Esimerkki: siirtymisruutu Seuraavat maininnat tai vähäinen tila: siirtymäruutu
 
-**list page (luettelosivu)** tai **sisältöluettelo** Yksi elementtien osan sivuista vasemmassa siirtymisruudussa. Esimerkiksi Suosikit, Viimeisimmät, Oma työtila jne.
+**luettelosivu** tai **sisältöluettelo** Yksi elementtien osan sivuista vasemmassa siirtymisruudussa. Esimerkiksi Suosikit, Viimeisimmät, Oma työtila jne.
 
 ## <a name="m"></a>M
 
@@ -181,12 +181,11 @@ Vasemmanpuoleinen tai vasen siirtymisruutu.
 
 **native (alkuperäinen)** Tulee tuotteen mukana. Esimerkiksi Power BI sisältää joukon *alkuperäisiä* visualisointityyppejä. Voit myös tuoda muita tyyppejä, kuten mukautettuja visualisointeja.
 
-**siirtymispalkki** tai **siirtymäpalkki** Power BI -palvelun vasemmassa reunassa olevat ohjausobjektit.
+**siirtymisruutu**  tai **siirtymäruutu** Power BI -palvelun vasemmassa reunassa olevat ohjausobjektit.
 
-Esimerkki: siirtymispalkki
-Seuraavat maininnat ja ahtaat tilat: siirtymispalkki
+Ensimmäinen esiintymä: siirtymisruutu Seuraavat maininnat tai vähäinen tila: siirtymäruutu
 
-**siirtymisruutu** Katso **siirtymispalkki**
+**siirtymäruutu** Katso **siirtymisruutu**
 
 **notification (ilmoitus)** Viestit, joita Power BI -ilmoituskeskus lähettää ja joita siihen lähetetään.  
 
@@ -261,7 +260,7 @@ Voidaan lisätä URL-osoitteeseen Power BI -raportin tulosten suodattamiseksi. L
 
 **real-time streaming (reaaliaikainen virtauttaminen)** Mahdollisuus virtauttaa tietoja ja päivittää koontinäyttöjä reaaliajassa eri lähteistä, kuten tunnistimista, sosiaalisesta mediasta, käyttötiedoista ja mistä tahansa muusta, mistä voidaan kerätä tai lähettää aikasidonnaisia tietoja.  
 
-**Recent (Viimeisimmät)** Vasemmassa siirtymisruudussa oleva säilö, joka sisältää kaikki yksittäiset artefaktit, joita on viimeksi käytetty.
+**Viimeisimmät** Siirtymisruudussa oleva säilö, joka sisältää kaikki yksittäiset artefaktit, joita on viimeksi käytetty.
 
 **related content (aiheeseen liittyvä sisältö)** Näyttää yksittäiset sisällön osat, jotka vaikuttavat nykyiseen sisältöön. Esimerkiksi koontinäytön kohdalla näet raportit ja tietojoukot, jotka tarjoavat tiedot ja visualisoinnit koontinäytöllä.   
 
@@ -289,7 +288,7 @@ Usean perspektiivin yksittäisen tietojoukon näkymä, jonka visualisoinnit edus
 **share, sharing (jakaa, jakaminen)** Power BI:ssä jakaminen yleensä tarkoittaa yksittäisen artefaktin (koontinäytön tai raportin) jakamista suoraan yhden tai useamman käyttäjän kanssa hänen sähköpostiosoitteensa. Sekä lähettäjällä että vastaanottajalla pitää olla Power BI Pro -käyttöoikeus.
 Mobiililaitteissa jakaminen voi viitata alkuperäiseen käyttöjärjestelmän jakamistoimintoon, kuten ”lisää huomautus ja jaa”.  
 
-**Shared with me (Jaettu kanssani)** Vasemmassa siirtymisruudussa oleva säiliö, joka sisältää kaikki yksittäiset artefaktit, jotka toinen Power BI -käyttäjä jakoi suoraan.
+**Jaettu kanssani** Siirtymisruudussa oleva säiliö, joka sisältää kaikki toisen Power BI -käyttäjän suoraan jakamat yksittäiset artefaktit.
 
 **snapshot (tilannevedos)**
 

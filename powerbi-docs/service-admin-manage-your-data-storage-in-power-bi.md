@@ -2,7 +2,6 @@
 title: Tallennustilan hallinta työtiloissa
 description: Lue, miten voit hallita yksittäisten tai työtilan tallennustilaa ja varmistaa, että voit edelleen julkaista raportteja ja tietojoukkoja.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 ms.custom: seodec18
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 12/21/2018
 ms.author: maggies
 LocalizationGroup: Administration
-ms.openlocfilehash: ea187de55eec2667abe2eed017481180910b7619
-ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
+ms.openlocfilehash: f8e7240b34e20a3d18443cadb5265c5d0d870790
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73431377"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73873650"
 ---
 # <a name="manage-data-storage-in-power-bi-workspaces"></a>Tallennustilan hallinta Power BI -työtiloissa
 
@@ -46,7 +45,7 @@ Jakamasi koontinäytön koko vaihtelee sen mukaan, mitä siihen on kiinnitetty. 
 
 Katso, miten paljon tallennustilaa käytät Power BI -tililläsi ja hallitse tiliäsi.
 
-1. Siirry oman tallennustilan hallintaa varten kohtaan **My Workspace** vasemmassa siirtymisruudussa.
+1. Siirry oman tallennustilan hallintaa varten kohtaan **Oma työtila** siirtymisruudussa.
    
     ![Oma työtila](media/service-admin-manage-your-data-storage-in-power-bi/pbi_myworkspace.png)
 2. Valitse rataskuvake ![rataskuvake](media/service-admin-manage-your-data-storage-in-power-bi/pbi_gearicon.png) oikeasta yläkulmasta \> **Henkilökohtaisen tallennustilan hallinta**.
@@ -104,5 +103,5 @@ Tämä raja on myös ilmoitettu kohdassa **Henkilökohtaisen tallennustilan hall
 
  ![Tallennustilarajoituksesi on ylittynyt](media/service-admin-manage-your-data-storage-in-power-bi/powerbi-pro-over-limit.png)
 
- Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)
+ Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
 

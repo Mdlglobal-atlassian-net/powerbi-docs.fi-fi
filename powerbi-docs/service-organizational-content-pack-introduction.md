@@ -2,7 +2,6 @@
 title: Power BI:n organisaation sisältöpakettien esittely
 description: Lue lisätietoja koontinäyttöjen, raporttien, Excel-työkirjojen ja tietojoukkojen pakkaamisesta organisaation sisältöpaketeiksi, joita voit jakaa työtovereillesi.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/23/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: c5f56df51a1f18db7c2080afb79f4ac7abfb2444
-ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
+ms.openlocfilehash: b766cc4eae71b94a28e12ba989f85542fec2ab83
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73431731"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73871984"
 ---
 # <a name="intro-to-organizational-content-packs-in-power-bi"></a>Power BI:n organisaation sisältöpakettien esittely
 > [!NOTE]
@@ -54,7 +53,7 @@ Elinkaari näyttää suunnilleen tältä:
    > 
    > 
 2. Käyttäjä lähettää jakeluryhmälle sähköpostiviestin, jossa hän kertoo uudesta sisältöpaketista.
-3. Jakeluryhmän jäsen Jane voi Power BI Prossa etsiä sisältöpaketin AppSourcessa ja muodostaa siihen yhteyden. Jane saa sisältöpaketista vain luku -kopion. Jane tietää, että se on vain luku -muodossa, koska vasemmassa siirtymisruudussa näkyy jakamiskuvake koontinäytön nimen ja raportin nimen vasemmalla puolella. Kun Jane valitsee koontinäytön, lukkokuvake kertoo, että kyseessä on sisältöpaketin koontinäyttö. 
+3. Jakeluryhmän jäsen Jane voi Power BI Prossa etsiä sisältöpaketin AppSourcessa ja muodostaa siihen yhteyden. Jane saa sisältöpaketista vain luku -kopion. Jane tietää, että se on vain luku -muodossa, koska siirtymisruudussa näkyy jakamiskuvake koontinäytön nimen ja raportin nimen vasemmalla puolella. Kun Jane valitsee koontinäytön, lukkokuvake kertoo, että kyseessä on sisältöpaketin koontinäyttö. 
 4. Oletetaan, että Jane päättää mukauttaa sitä. Hänellä on nyt oma kopio koontinäytöstä ja raporteista. Janen tekemät muutokset eivät vaikuta lähteeseen, eli alkuperäiseen sisältöpakettiin, eikä jakeluryhmän muiden jäsenten työhön. Kaikki jäsenet voivat työstää omia kopioitaan koontinäytöstä ja raporteista.
 5. Nate päivittää koontinäyttöä ja julkaisee sisältöpaketista uuden version.
    
@@ -63,11 +62,11 @@ Elinkaari näyttää suunnilleen tältä:
 6. Sisältöpaketin luoja voi muuttaa sen suojausasetuksia. Tällöin jäsenet eivät enää pääse käyttämään sisältöä. Jäseniä voi myös poistaa jakeluryhmästä.
    
    * Sisältö poistetaan automaattisesti ryhmästä poistetuilta jäseniltä, elleivät he ole muokanneet alkuperäistä sisältöpakettia. 
-   * Tässä esimerkissä yksi poistetuista jäsenistä on kuitenkin muokannut sisältöpakettia. Seuraavan kerran kun Jane avaa koontinäytön, kaikki alkuperäisen sisältöpaketin ruudut on poistettu, mutta muista raporteista kiinnitetyt ruudut näkyvät edelleen (riippuen toki käyttöoikeuksista). Liittyvät raportit ja tietojoukot eivät ole enää käytettävissä (eivätkä näy vasemmassa siirtymisruudussa).
+   * Tässä esimerkissä yksi poistetuista jäsenistä on kuitenkin muokannut sisältöpakettia. Seuraavan kerran kun Jane avaa koontinäytön, kaikki alkuperäisen sisältöpaketin ruudut on poistettu, mutta muista raporteista kiinnitetyt ruudut näkyvät edelleen (riippuen toki käyttöoikeuksista). Liittyvät raportit ja tietojoukot eivät ole enää käytettävissä (eivätkä näy siirtymisruudussa).
 7. Vaihtoehtoisesti luoja voi poistaa sisältöpaketin.
    
    * Sisältö poistetaan automaattisesti ryhmästä poistetuilta jäseniltä, elleivät he ole muokanneet alkuperäistä sisältöpakettia. 
-   * Tässä esimerkissä yksi poistetuista jäsenistä on kuitenkin muokannut sisältöpakettia. Seuraavan kerran kun Jane avaa koontinäytön, kaikki alkuperäisen sisältöpaketin ruudut on poistettu, mutta muista raporteista kiinnitetyt ruudut näkyvät edelleen. Liittyvät raportit ja tietojoukot eivät ole enää käytettävissä (eivätkä näy vasemmassa siirtymisruudussa).
+   * Tässä esimerkissä yksi poistetuista jäsenistä on kuitenkin muokannut sisältöpakettia. Seuraavan kerran kun Jane avaa koontinäytön, kaikki alkuperäisen sisältöpaketin ruudut on poistettu, mutta muista raporteista kiinnitetyt ruudut näkyvät edelleen. Liittyvät raportit ja tietojoukot eivät ole enää käytettävissä (eivätkä näy siirtymisruudussa).
 
 ## <a name="data-security"></a>Tietosuoja
 Kaikilla jakeluryhmän jäsenillä on samat tietojen käyttöoikeudet kuin sisältöpaketin luojalla. Ainoa poikkeus tähän on paikalliset taulukkomuotoiset SQL Server Analysis Services (SSAS) -tietojoukot. Koska raportit ja koontinäytöt muodostavat reaaliajassa yhteyden paikalliseen SSAS-malliin, tietojen käyttöoikeudet määrittyvät kunkin jakeluryhmän jäsenen tunnistetietojen perusteella.
@@ -76,5 +75,5 @@ Kaikilla jakeluryhmän jäsenillä on samat tietojen käyttöoikeudet kuin sisä
 * [Organisaation sisältöpaketin luominen ja julkaiseminen](service-organizational-content-pack-create-and-publish.md)
 * [Sovelluksen luominen ja jakaminen Power BI:ssä](service-create-distribute-apps.md) 
 * [Power BI -palvelun peruskäsitteitä suunnittelijoille](service-basic-concepts.md)
-* Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
+* Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](https://community.powerbi.com/)
 

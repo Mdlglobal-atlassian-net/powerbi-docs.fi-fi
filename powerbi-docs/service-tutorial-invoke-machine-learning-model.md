@@ -2,7 +2,6 @@
 title: 'Opetusohjelma: Automaattianalyysistudion mallin käynnistys Power BI:ssä (esikatselu)'
 description: Tässä opetusohjelmassa käynnistetään automaattianalyysistudion malli Power BI:ssä.
 author: davidiseminger
-manager: kfile
 ms.reviewer: SarinaJoan
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -11,12 +10,12 @@ ms.topic: tutorial
 ms.date: 03/12/2019
 ms.author: davidi
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 368f860ed064cf3b4ff73496db1fa993fd3b716a
-ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
+ms.openlocfilehash: 3cbe715bc3cff9d2afeefe7c82847f104f4d0835
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73432217"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73876978"
 ---
 # <a name="tutorial-invoke-a-machine-learning-studio-model-in-power-bi-preview"></a>Opetusohjelma: Automaattianalyysistudion mallin käynnistys Power BI:ssä (esikatselu)
 
@@ -44,7 +43,7 @@ Jotta voisit käsitellä Azuren Automaattianalyysistudio-mallia Power BI:stä k�
 
 Seuraavissa vaiheissa oletetaan, että olet sen Azure-tilauksen ja -resurssiryhmän rinnakkaisjärjestelmänvalvoja, johon malli on julkaistu.
 
-Kirjaudu sisään [Azure-portaaliin](https://portal.azure.com) ja siirry **Tilaukset**-sivulle, jonka voit etsiä käyttämällä vasemmanpuoleisen valikon **Kaikki palvelut** -luetteloa.
+Kirjaudu sisään [Azure-portaaliin](https://portal.azure.com) ja siirry **Tilaukset**-sivulle, jonka voit etsiä käyttämällä siirtymisruudun **Kaikki palvelut** -luetteloa.
 
 ![Azure-portaali](media/service-tutorial-invoke-machine-learning-model/tutorial-invoke-machine-learning-model_01.png)
 
@@ -135,7 +134,7 @@ Jos haluat käyttää Azuren automaattianalyysipalveluiden mallia _autojen hinta
 
 ![Muokkaa](media/service-tutorial-invoke-machine-learning-model/tutorial-invoke-machine-learning-model_16.png)
 
-Valitse valintanauhan **Tekoälyn merkitykselliset tiedot** -painike ja valitse sitten vasemmasta siirtymisvalikosta _Azuren koneoppimismallit_ -kansio.
+Valitse valintanauhan **Tekoälyn merkitykselliset tiedot** -painike ja valitse sitten siirtymisruudusta _Azuren koneoppimismallit_ -kansio.
 
 Ne Azuren automaattianalyysipalveluiden mallit, joihin olet saanut käyttöoikeudet, näkyvät Power Query -funktioina etuliitteellä *AzureML*.  Kun napsautat _AutomobilePricePrediction_-mallia vastaavaa funktiota, mallin verkkopalvelun parametrit merkitään funktioparametreiksi.
 

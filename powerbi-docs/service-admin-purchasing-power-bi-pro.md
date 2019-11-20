@@ -2,7 +2,6 @@
 title: Power BI Pro -käyttöoikeuksien hankinta ja määritys
 description: Lue, miten voit ostaa ja määrittää Power BI Pro -käyttöoikeuksia, jotta käyttäjät voivat käyttää sisältöä ja tehdä yhteistyötä työtovereiden kanssa Power BI -palvelussa.
 author: mgblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
@@ -10,12 +9,12 @@ ms.topic: quickstart
 ms.date: 10/29/2019
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 31739cee4371a8991f8c88e6ba67bfb48878a33c
-ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
+ms.openlocfilehash: 72a158e2dca32d2199fcd48e2cc37bf4c90778ea
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73431399"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73873534"
 ---
 # <a name="purchase-and-assign-power-bi-pro-user-licenses"></a>Power BI Pro -käyttöoikeuksien hankinta ja määritys
 
@@ -37,7 +36,7 @@ Näiden ohjeiden avulla voit ostaa Power BI Pro -käyttöoikeuksia Microsoft 365
 
 1. Avaa [Microsoft 365 -hallintakeskus](https://portal.office.com/adminportal/home#/homepage).
 
-2. Valitse vasemmasta siirtymisruudusta **Laskutus** > **Tilaukset**.
+2. Valitse siirtymisruudusta **Laskutus** > **Tilaukset**.
 
     ![Siirtymisruutu](media/service-admin-purchasing-power-bi-pro/service-purchasing-power-bi-pro-01.png)
 
@@ -75,7 +74,7 @@ Voit määrittää Power BI Pro -käyttöoikeuksia yksittäisille käyttäjätil
 
 1. Avaa [Microsoft 365 -hallintakeskus](https://portal.office.com/adminportal/home#/homepage).
 
-2. Laajenna vasemman siirtymisruudun **Käyttäjät**-kohta ja napsauta **Aktiiviset käyttäjät** -kohtaa.
+2. Laajenna siirtymisruudun **Käyttäjät**-kohta ja valitse sitten **Aktiiviset käyttäjät**.
 
     ![Aktiiviset käyttäjät](media/service-admin-purchasing-power-bi-pro/service-assigning-power-bi-pro-licenses-05.png)
 
@@ -97,7 +96,7 @@ Voit määrittää Power BI Pro -käyttöoikeuksia yksittäisille käyttäjätil
 
 1. Avaa [Azure-portaali](https://ms.portal.azure.com/#@microsoft.onmicrosoft.com/dashboard/private/39bc3cf7-31a4-43f6-954c-f2d69ca2f0).
 
-2. Valitse vasemmassa siirtymispalkissa **Azure Active Directory**.
+2. Valitse siirtymisruudussa **Azure Active Directory**.
 
     ![Azure Active Directory](media/service-admin-purchasing-power-bi-pro/service-assigning-power-bi-pro-licenses-01.png)
 

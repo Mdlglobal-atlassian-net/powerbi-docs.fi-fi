@@ -142,7 +142,7 @@
               href: register-app.md
             - name: Azure AD -käyttöoikeustietueen hankkiminen
               href: get-azuread-access-token.md
-            - name: Dynaaminen sidonta
+            - name: Raportin yhdistäminen dynaamisen sidonnan avulla
               href: embed-dynamic-binding.md
             - name: 'Q&A:n upottaminen'
               href: qanda.md

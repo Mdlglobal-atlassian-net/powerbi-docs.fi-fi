@@ -2,7 +2,6 @@
 title: Ohjeet ruudun kiinnittämiseksi koontinäyttöön Q&A:sta
 description: Ohjeet ruudun kiinnittämiseksi Power BI:n koontinäyttöön Q&A-kysymysruudusta
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 03/02/2018
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: e75c9b86b20eda2de630f2b27caa6b88a687fbb4
-ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
+ms.openlocfilehash: 12aa35e37e4382e7fc89fc9e0fe8c2ae564e8eda
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73432077"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73872804"
 ---
 # <a name="pin-a-tile-to-a-dashboard-from-qa"></a>Ruudun kiinnittäminen koontinäyttöön Q&A:sta
 ## <a name="how-to-pin-a-tile-from-qa"></a>Ohjeet ruudun kiinnittämiseen Q&A:sta
@@ -52,9 +51,9 @@ Avaa seuraamista varten [Jälleenmyyntianalyysimalli](sample-retail-analysis.md)
    ![koontinäyttö ja ruudut](media/service-dashboard-pin-tile-from-q-and-a/power-bi-pinned.png)
 
 ## <a name="considerations-and-troubleshooting"></a>Huomioon otettavat seikat ja vianmääritys
-* Kun alat kirjoittaa kysymystä, Q&A alkaa heti hakea parasta vastausta kaikista tietojoukoista, jotka liittyvät nykyiseen koontinäyttöön.  Nykyinen koontinäyttö on yläreunan siirtymispalkissa lueteltu koontinäyttö. Esimerkiksi tämä kysymys esitetään Jälleenmyyntianalyysimalli**Retail Analysis Sample**-koontinäytössä, joka on osa **mihart**-työtilaa.
+* Kun alat kirjoittaa kysymystä, Q&A alkaa heti hakea parasta vastausta kaikista tietojoukoista, jotka liittyvät nykyiseen koontinäyttöön.  Nykyinen koontinäyttö on yläreunan siirtymisruudussa lueteltu koontinäyttö. Esimerkiksi tämä kysymys esitetään Jälleenmyyntianalyysimalli**Retail Analysis Sample**-koontinäytössä, joka on osa **mihart**-työtilaa.
 
-  ![navigointipolut](media/service-dashboard-pin-tile-from-q-and-a/power-bi-navbar.png)
+  ![navigointipolut](media/service-dashboard-pin-tile-from-q-and-a/power-bi-nav pane.png)
 * **Mistä Q&A tietää, mitä tietojoukkoja pitää käyttää**?  Q&A pääsee käyttämään kaikkia tietojoukkoja, joista on vähintään yksi visualisointi kiinnitettynä kyseiseen koontinäyttöön.
 
 * **Eikö kysymysruutu näy**? Ota yhteyttä Power BI -järjestelmänvalvojaasi. Järjestelmänvalvoja voi poistaa Q&A:n käytöstä.
@@ -64,4 +63,4 @@ Avaa seuraamista varten [Jälleenmyyntianalyysimalli](sample-retail-analysis.md)
 [Nimeäminen uudelleen, koon muuttaminen, hyperlinkin lisääminen ja ruudun sijoittaminen uudelleen](service-dashboard-edit-tile.md)    
 [Koontinäytön ruudun näyttäminen tarkastelutilassa](consumer/end-user-focus.md)     
 [Takaisin Q&A:han Power BI:ssä](consumer/end-user-q-and-a.md)  
-Onko sinulla muuta kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
+Onko sinulla muuta kysyttävää? [Kokeile Power BI -yhteisöä](https://community.powerbi.com/)

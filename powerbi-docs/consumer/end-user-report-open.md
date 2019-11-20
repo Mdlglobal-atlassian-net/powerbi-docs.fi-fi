@@ -2,19 +2,18 @@
 title: Näytä raportti
 description: Tässä aiheessa näytetään Power BI -kuluttajille ja -loppukäyttäjille, kuinka Power BI -raportti avataan ja näytetään.
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
 ms.date: 09/04/2018
 ms.author: mihart
-ms.openlocfilehash: fab986cbd5c6b0a55c18157d663eea1ca0fd537e
-ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
+ms.openlocfilehash: b22da2df92c0cc7130c7a5ebf69e2284c12ffef4
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73019459"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73861956"
 ---
 # <a name="view-a-report-in-the-power-bi-service-for-consumers"></a>Raportin näyttäminen Power BI -palvelussa *kuluttajille*
 
@@ -33,11 +32,11 @@ Avataan raportti, joka on jaettu suoraan sinulle, ja avataan sen jälkeen raport
    ![Aloitussivu](./media/end-user-report-open/power-bi-home-canvas.png)
 
 ### <a name="open-a-report-that-has-been-shared-with-you"></a>Sinulle jaetun raportin avaaminen
-Power BI *‑suunnittelijat* voivat jakaa yksittäisen raportin suoraan sinulle sähköpostiviestissä olevan linkin kautta tai lisäämällä sen automaattisesti. Näin jaettu sisältö näkyy **Jaettu kanssani** -säilössä siirtymispalkissa ja aloitussivun **Jaettu kanssani** -osassa.
+Power BI *‑suunnittelijat* voivat jakaa yksittäisen raportin suoraan sinulle sähköpostiviestissä olevan linkin kautta tai lisäämällä sen automaattisesti. Näin jaettu sisältö näkyy **Jaettu kanssani** -säilössä siirtymisruudussa ja aloitussivun **Jaettu kanssani** -osassa.
 
 1. Avaa Power BI -palvelu (app.powerbi.com).
 
-2. Siirry aloitussivulle valitsemalla siirtymispalkista **Aloitussivu**.  
+2. Siirry aloitussivulle valitsemalla siirtymisruudusta **Aloitussivu**.  
 
    ![Aloitussivu](./media/end-user-report-open/power-bi-select-home-new.png)
    
@@ -66,7 +65,7 @@ Power BI *‑suunnittelijat* voivat jakaa yksittäisen raportin suoraan sinulle 
    ![sovita sivulle](./media/end-user-report-open/power-bi-actual.png)
 
 ### <a name="open-a-report-that-is-part-of-an-app"></a>Sovelluksen osana jaetun raportin avaaminen
-Jos olet saanut sovelluksia työtovereilta tai AppSourcesta, kyseiset sovellukset ovat käytettävissä aloitussivulla ja **Sovellukset**-säilössä siirtymispalkissa. [Sovellus](end-user-apps.md) on koontinäyttöjen ja raporttien nippu.
+Jos olet saanut sovelluksia työtovereilta tai AppSourcesta, kyseiset sovellukset ovat käytettävissä aloitussivulla ja **Sovellukset**-säilössä siirtymisruudussa. [Sovellus](end-user-apps.md) on koontinäyttöjen ja raporttien nippu.
 
 ### <a name="prerequisites"></a>Edellytykset
 Lataa Myynti ja markkinointi ‑sovellus, jotta voit seurata ohjeita.
@@ -75,7 +74,7 @@ Lataa Myynti ja markkinointi ‑sovellus, jotta voit seurata ohjeita.
 1. Asenna sovellus sovellussäilöön valitsemalla **Hanki se nyt** > **Jatka** > **Asenna**. 
 
 Voit avata sovelluksen sovellussäilöstä tai etusivulta.
-1. Palaa takaisin aloitussivulle valitsemalla **Aloitussivu** siirtymispalkista.
+1. Palaa takaisin aloitussivulle valitsemalla **Aloitussivu** siirtymisruudusta.
 
 7. Vieritä alaspäin, kunnes näet **Omat sovellukset** -kohdan.
 
@@ -101,7 +100,7 @@ Raportit voidaan avata koontinäytöstä. Useimmat koontinäyttö[ruudut](end-us
 
 ##  <a name="still-more-ways-to-open-a-report"></a>Muita tapoja avata raportti
 Kun pääset sinuiksi Power BI -palvelun kanssa, löydät itsellesi sopivimmat työnkulut. Tässä on vielä muita tapoja raporttien käyttämiseen:
-- Valitsemalla siirtymispalkista **Suosikit** ja **Viimeisimmät**    
+- Valitsemalla siirtymisruudusta **Suosikit** ja **Viimeisimmät**    
 - Käyttämällä [Näytä aiheeseen liittyvät](end-user-related.md) -toimintoa    
 - Sähköpostiviestistä, jonka joku on [jakanut kanssasi](../service-share-reports.md), tai kun [määrität ilmoituksen](end-user-alerts.md)    
 - [Ilmoituskeskuksen](end-user-notification-center.md) kautta    

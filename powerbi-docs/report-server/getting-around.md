@@ -2,19 +2,18 @@
 title: Sisällön hallinta Power BI -raporttipalvelimen verkkoportaalissa
 description: Tutustu sisällön hallintaan Power BI -raporttipalvelimen verkkoportaalissa.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 05/24/2018
 ms.author: maggies
-ms.openlocfilehash: 8a5b04c5b3325a9fd4d3bb11aa1943e62cf2c90c
-ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
+ms.openlocfilehash: ecc33c6176214cb8178e55d716294bf9446a7b1d
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73021471"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73859473"
 ---
 # <a name="manage-content-in-the-web-portal"></a>Hallitse sisältöä verkkoportaalissa 
 Power BI -raporttipalvelimen verkkoportaalissa voi tarkastella, tallentaa ja hallita paikallisia Power BI- ja mobiiliraportteja sekä sivutettuja raportteja ja suorituskykyilmaisimia.
@@ -38,9 +37,9 @@ Verkkoportaalisovellus toimii selaimessa. Kun käynnistät verkkoportaalin, näk
     Katso luettelo [tuetuista selaimista ja versioista](browser-support.md).
 2. Kirjoita verkkoportaalin URL-osoite osoiteriville.
    
-    URL-osoite on oletusarvoisesti <em>http://[ComputerName]/reports</em>.
+    URL-osoite on oletusarvoisesti <em>http://[TietokoneenNimi]/reports</em>.
    
-    Raporttipalvelin on ehkä määritetty käyttämään tiettyä porttia. Esimerkiksi <em>http://[ComputerName]:80/reports</em> tai <em>http://[ComputerName]:8080/reports</em>
+    Raporttipalvelin on ehkä määritetty käyttämään tiettyä porttia. Esimerkiksi <em>http://[TietokoneenNimi]:80/reports</em> tai <em>http://[TietokoneenNimi]:8080/reports</em>
    
     Näet, että verkkoportaali ryhmittelee kohteet seuraaviin luokkiin:
    

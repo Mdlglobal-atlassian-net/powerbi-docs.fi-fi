@@ -3,7 +3,6 @@ title: Mikä on Microsoft Power BI Premium?
 description: Power BI Premium tarjoaa organisaatiollesi varatut kapasiteetit, luotettavamman suorituskyvyn ja suuremmat tietomäärät ilman käyttäjäkohtaisten käyttöoikeuksien hankkimista.
 author: mgblythe
 ms.author: mblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/28/2019
 ms.custom: seodec18
 LocalizationGroup: Premium
-ms.openlocfilehash: e57df395fd3efe439cb6ef009cb2c7a9f3fe99f9
-ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
+ms.openlocfilehash: f62387feebca089b2afbb919419365fd7e09c2d3
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73431641"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73871818"
 ---
 # <a name="what-is-power-bi-premium"></a>Mikä on Power BI Premium?
 
@@ -166,9 +165,9 @@ SKU:sta riippuen Power BI Premium tukee enintään **10 GB:n** kokoisten Power B
 
 ### <a name="size-considerations"></a>Huomioitavaa koosta
 
-Suuret mallit voivat vaatia paljon resursseja. Sinulla tulisi olla vähintään P1 SKU kaikille yli 1 Gt:n malleille. Vaikka suurten mallien julkaiseminen työtiloihin, joita tuetaan A-varastointiyksiköillä A3:een asti, voikin onnistua, niitä ei voida päivittää.
+Suuret tietojoukot voivat vaatia paljon resursseja. Sinulla tulisi olla vähintään P1 SKU kaikille yli 1 Gt:n tietojoukoille. Vaikka suurten tietojoukkojen julkaiseminen työtiloihin, joita tuetaan A-varastointiyksiköillä A3:een asti, voikin onnistua, niitä ei voida päivittää.
 
-Seuraavassa taulukossa kuvataan suositellut varastointiyksiköt eri .pbix-koille:
+Seuraavassa taulukossa on esitetty suositellut SKU:t .pbix-tiedoston palvelimeen lataamista tai Power BI -palveluun julkaisemista varten:
 
    |SKU  |.pbix:n koko   |
    |---------|---------|
@@ -176,9 +175,11 @@ Seuraavassa taulukossa kuvataan suositellut varastointiyksiköt eri .pbix-koille
    |P2    | < 6 Gt        |
    |P3, P4, P5    | enintään 10 Gt   |
 
-Power BI Embedded A4 -varastointiyksikkö vastaa P1-varastointiyksikköä, A5 = P2 ja A6 = P3. Suurten mallien julkaiseminen A- ja EM-varastointiyksiköihin voi palauttaa virheitä, jotka eivät liity erityisesti mallin kokorajoituksen virheeseen jaetussa kapasiteetissa. Suurten mallien päivitysvirheet A- ja EM-varastointiyksiköissä osoittavat todennäköisesti aikakatkaisuihin. 
+Power BI Embedded A4 -varastointiyksikkö vastaa P1-varastointiyksikköä, A5 = P2 ja A6 = P3. Suurten tietojoukkojen julkaiseminen A- ja EM-varastointiyksiköihin voi palauttaa virheitä, jotka eivät liity erityisesti mallin kokorajoituksen virheeseen jaetussa kapasiteetissa. Suurten tietojoukkojen päivitysvirheet A- ja EM-varastointiyksiköissä osoittavat todennäköisesti aikakatkaisuihin.
 
-.pbix-tiedostot kuvaavat tietoja *erittäin tehokkaasti pakatussa tilassa*. Tietoja laajennetaan todennäköisesti useita kertoja, kun ne ladataan muistiin, ja uudelleen useita kertoja tietojen päivittämisen aikana.
+Jos otat tietojoukossa käyttöön [suuret mallit](service-premium-large-models.md).pbix-tiedoston kokorajoitukset koskevat edelleen tiedoston lataamista palvelimeen tai julkaisemista. Kun lisäävä päivitys ja suuret mallit yhdistetään, tietojoukot voivat kuitenkin kasvaa paljon näitä rajoituksia suuremmiksi. Suuria malleja käytettäessä tietojoukon kokoa rajoittaa vain Power BI Premium -kapasiteetin koko.
+
+.pbix-tiedostot kuvaavat tietoja *erittäin tehokkaasti pakatussa tilassa*. Tietoja laajennetaan todennäköisesti, kun ne ladataan muistiin, ja uudelleen useita kertoja tietojen päivittämisen aikana.
 
 Suurten tietojoukkojen ajoitettu päivitys voi kestää kauan ja vaatia paljon resursseja. On tärkeää olla ajoittamatta useita päivityksiä päällekkäin. On suositeltavaa, että määritettynä on [lisäävä päivitys](service-premium-incremental-refresh.md), koska se on nopeampi, luotettavampi ja kuluttaa vähemmän resursseja.
 

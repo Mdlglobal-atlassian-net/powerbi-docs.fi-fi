@@ -2,19 +2,18 @@
 title: Power BI Desktopin DirectQuery-mallin vianmääritys
 description: Tee DirectQuery-mallin ongelmien vianmääritys.
 author: peter-myers
-manager: asaxton
 ms.reviewer: asaxton
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 10/24/2019
 ms.author: v-pemyer
-ms.openlocfilehash: ac585aef180bb852f79ad5135778cec20f35cf2d
-ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
+ms.openlocfilehash: 623a0bbd187a997003ce7b82cc76d5c4fbe9ce44
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73433284"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73868061"
 ---
 # <a name="directquery-model-troubleshooting-in-power-bi-desktop"></a>Power BI Desktopin DirectQuery-mallin vianmääritys
 
@@ -92,7 +91,7 @@ Suosittelemme seuraavaa tapaa mahdollisten suorituskykyongelmien määrittämise
 - Avaa SQL Serverin profilointi ja tutki jäljitystiedostoa aiemmin annettujen ohjeiden mukaisesti. Muista, että jäljitystiedosto poistetaan, kun suljet Power BI Desktopin. Ota huomioon myös se, että Power BI Desktopin toiminnot eivät näy heti: sulje jäljitystiedosto ja avaa se uudelleen nähdäksesi uudet tapahtumat.
 - Pidä yksittäiset istunnot kohtuullisen pieninä (10 sekunnin tapahtumat, ei satojen), jotta jäljitystiedoston lukeminen on helpompaa (ja koska jäljitystiedoston kokoa on rajoitettu, erittäin pitkissä istunnoissa et välttämättä näe jäljitystiedostosta istunnon alun tapahtumia).
 
-## <a name="understand-the-form-of-query-sent-by-power-bi-desktop"></a>Power BI Desktopin lähettämän kyselyn tulkitseminen
+## <a name="understand-queries-sent-to-the-source"></a>Lähteeseen lähetettyjen kyselyjen ymmärtäminen
 
 Power BI Desktopin luomissa ja lähettämissä kyselyissä käytetään yleensä alikyselyjä jokaiselle viitatulle mallitaulukolle: alikysely määritetään Power Query -kyselyn mukaisesti. Otetaan esimerkiksi seuraavat SQL Serverin relaatiotietokannan TPC-DS-taulukot:
 

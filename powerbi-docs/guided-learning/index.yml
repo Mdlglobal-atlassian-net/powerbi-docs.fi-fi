@@ -1,0 +1,171 @@
+### YamlMime:Landing
+metadata:
+  title: 'Microsoft Power BI: Ohjattu oppiminen'
+  description: Aloita oppimisprosessi käymällä läpi kokoelma peräkkäisiä kursseja, joiden avulla opit tuntemaan Microsoft Power BI:n kattavat ja tehokkaat ominaisuudet.
+  layout: LandingPage
+  ms.service: powerbi
+  ms.author: davidiseminger
+  ms.date: 09/20/2019
+  ms.openlocfilehash: bd094c8a4568c7fb05ca49996fb0c8f409c668d3
+  ms.sourcegitcommit: 57ec4d51744b89bd695e6c62184c21342f2eae83
+  ms.translationtype: HT
+  ms.contentlocale: fi-FI
+  ms.lasthandoff: 11/19/2019
+  ms.locfileid: "74178325"
+title: 'Microsoft Power BI: Ohjattu oppiminen'
+summary: Aloita oppimisprosessi käymällä läpi kokoelma peräkkäisiä kursseja, joiden avulla opit tuntemaan Microsoft Power BI:n kattavat ja tehokkaat ominaisuudet.
+landingContent:
+- title: Tutustu siihen, miten Power BI voi auttaa sinua
+  linkLists:
+  - linkListType: learn
+    links:
+    - text: Mitä kuluttajat voivat tehdä Power BI -palvelussa? - 12 min
+      url: https://docs.microsoft.com/learn/modules/explore-power-bi-service/1-why-power-bi
+    - text: Sisällön tarkastelu Power BI -palvelussa - 10 min
+      url: https://docs.microsoft.com/learn/modules/explore-power-bi-service/2-find-content
+    - text: Tutkiminen Power BI:n raporttinäkymien, raporttien ja sovelluksien avulla - 15 min
+      url: https://docs.microsoft.com/learn/modules/explore-power-bi-service/3-navigate-content
+    - text: Yhteiskäyttö ja jakaminen Power BI:ssä - 15 min
+      url: https://docs.microsoft.com/learn/modules/explore-power-bi-service/4-collaborate-and-share
+    - text: Raporttinäkymien ja raporttien etsiminen ja tarkasteleminen - 7 min
+      url: https://docs.microsoft.com/learn/modules/explore-power-bi-service/5-lab-1
+- title: Tietojen analysointi Power BI:llä
+  linkLists:
+  - linkListType: learn
+    links:
+    - text: Tietojen suodattaminen Power BI:llä - 15 min
+      url: https://docs.microsoft.com/learn/modules/analyze-data-power-bi/1-filtering-data
+    - text: Tietojen tarkasteleminen - 5 min
+      url: https://docs.microsoft.com/learn/modules/analyze-data-power-bi/2-exploring-with-numbers
+    - text: Kysymysten kysyminen tiedoistasi - 5 min
+      url: https://docs.microsoft.com/learn/modules/analyze-data-power-bi/3-asking-questions-data
+    - text: Suodattimien käyttö raporteissa - 25 min
+      url: https://docs.microsoft.com/learn/modules/analyze-data-power-bi/4-lab-2
+- title: Luomisen aloittaminen Power BI:ssä
+  linkLists:
+  - linkListType: learn
+    links:
+    - text: Johdanto - 6 min
+      url: https://docs.microsoft.com/learn/modules/get-started-with-power-bi/1-introduction
+    - text: Power BI:n käyttäminen - 2 min
+      url: https://docs.microsoft.com/learn/modules/get-started-with-power-bi/2-using-power-bi
+    - text: Power BI:n osat - 12 min
+      url: https://docs.microsoft.com/learn/modules/get-started-with-power-bi/3-building-blocks-of-power-bi
+    - text: Opastus Power BI -palvelun käyttöön - 12 min
+      url: https://docs.microsoft.com/learn/modules/get-started-with-power-bi/4-exercise-touring-and-using-power-bi
+- title: Tietojen noutaminen Power BI Desktopilla
+  linkLists:
+  - linkListType: learn
+    links:
+    - text: Power BI Desktopin yleiskatsaus - 5 min
+      url: https://docs.microsoft.com/learn/modules/get-data-power-bi/1-overview-power-bi-desktop
+    - text: Tutustuminen Power BI Desktopiin - 10 min
+      url: https://docs.microsoft.com/learn/modules/get-data-power-bi/2-getting-started-power-bi-desktop
+    - text: Yhteyden muodostaminen tietolähteisiin - 10 min
+      url: https://docs.microsoft.com/learn/modules/get-data-power-bi/3-connect-data-sources-power-bi-desktop
+    - text: Tietojen hakeminen Excelistä - 5 min
+      url: https://docs.microsoft.com/learn/modules/get-data-power-bi/3b-data-from-excel
+    - text: Raporttiin sisällytettävien tietojen muuntaminen - 10 min
+      url: https://docs.microsoft.com/learn/modules/get-data-power-bi/4-clean-data-query-editor
+    - text: Tietojen yhdistäminen useista tietolähteistä - 10 min
+      url: https://docs.microsoft.com/learn/modules/get-data-power-bi/5-advanced-data-sources-transformation
+    - text: Raporttiin sisällytettävien tietojen puhdistaminen - 10 min
+      url: https://docs.microsoft.com/learn/modules/get-data-power-bi/6-cleaning-data
+- title: Power BI:n mallitiedot
+  linkLists:
+  - linkListType: learn
+    links:
+    - text: Johdanto tietojen mallinnukseen - 5 min
+      url: https://docs.microsoft.com/learn/modules/model-data-power-bi/1-overview-power-bi
+    - text: Tietosuhteiden hallinta - 8 min
+      url: https://docs.microsoft.com/learn/modules/model-data-power-bi/2-how-to-manage-data-relationships
+    - text: Laskettujen sarakkeiden luominen - 7 min
+      url: https://docs.microsoft.com/learn/modules/model-data-power-bi/3-create-calculated-columns
+    - text: Tietomallien optimointi - 8 min
+      url: https://docs.microsoft.com/learn/modules/model-data-power-bi/4-optimize-data-models
+    - text: Laskettujen mittarien luominen - 15 min
+      url: https://docs.microsoft.com/learn/modules/model-data-power-bi/4b-create-calculated-measures
+    - text: Laskettujen taulukkojen luominen - 4 min
+      url: https://docs.microsoft.com/learn/modules/model-data-power-bi/5-create-calculated-tables
+    - text: Aikaan perustuvien tietojen tutkiminen - 5 min
+      url: https://docs.microsoft.com/learn/modules/model-data-power-bi/6-explore-time-based-data
+- title: Visualisointien käyttö Power BI:ssä
+  linkLists:
+  - linkListType: learn
+    links:
+    - text: Johdatus Power BI:n visualisointeihin - 3 min
+      url: https://docs.microsoft.com/learn/modules/visuals-in-power-bi/1-intro-visuals
+    - text: Yksinkertaisten visualisointien luominen ja mukauttaminen - 9 min
+      url: https://docs.microsoft.com/learn/modules/visuals-in-power-bi/2-create-simple-visuals
+    - text: Osittajien luominen - 9 min
+      url: https://docs.microsoft.com/learn/modules/visuals-in-power-bi/4-create-slicers
+    - text: Kartan visualisoinnit - 5 min
+      url: https://docs.microsoft.com/learn/modules/visuals-in-power-bi/5-map-visualizations
+    - text: Matriisit ja taulukot - 8 min
+      url: https://docs.microsoft.com/learn/modules/visuals-in-power-bi/6-create-matrixes-tables
+    - text: Sironta-, vesiputous- ja suppilokaavioiden luominen - 9 min
+      url: https://docs.microsoft.com/learn/modules/visuals-in-power-bi/7-create-scatter-charts
+    - text: Kaavioiden ja visualisointien värien muokkaaminen - 6 min
+      url: https://docs.microsoft.com/learn/modules/visuals-in-power-bi/10-modify-colors
+    - text: Sivun asettelu ja muotoilu - 12 min
+      url: https://docs.microsoft.com/learn/modules/visuals-in-power-bi/12-formatting
+- title: Tietojen tutkiminen Power BI:ssä
+  linkLists:
+  - linkListType: learn
+    links:
+    - text: Johdanto Power BI -palveluun - 6 min
+      url: https://docs.microsoft.com/learn/modules/explore-data-power-bi/1-introduction-power-bi-service
+    - text: Nopeat merkitykselliset tiedot Power BI:ssä - 7 min
+      url: https://docs.microsoft.com/learn/modules/explore-data-power-bi/2-quick-insights
+    - text: Raporttinäkymän luominen ja määrittäminen - 5 min
+      url: https://docs.microsoft.com/learn/modules/explore-data-power-bi/3-create-configure-dashboard
+    - text: Kysymysten esittäminen tiedoista luonnollisella kielellä - 5 min
+      url: https://docs.microsoft.com/learn/modules/explore-data-power-bi/4-ask-questions
+    - text: Mukautettujen kysymys- ja vastausehdotusten luominen - 4 min
+      url: https://docs.microsoft.com/learn/modules/explore-data-power-bi/5-custom-qa
+    - text: Koontinäyttöjen jakaminen organisaation sisällä - 5 min
+      url: https://docs.microsoft.com/learn/modules/explore-data-power-bi/6-share-dashboards
+    - text: Visualisointien ja ruutujen näyttäminen koko näytössä - 3 min
+      url: https://docs.microsoft.com/learn/modules/explore-data-power-bi/7-display-full-screen
+    - text: Ruudun tietojen muokkaus ja pienoissovellusten lisääminen - 5 min
+      url: https://docs.microsoft.com/learn/modules/explore-data-power-bi/8-edit-tile-details
+    - text: Raporttinäkymän tilan lisääminen - 3 min
+      url: https://docs.microsoft.com/learn/modules/explore-data-power-bi/9-get-more-space-on-dashboard
+- title: Julkaiseminen ja jakaminen Power BI:ssä
+  linkLists:
+  - linkListType: learn
+    links:
+    - text: Johdanto sisältöpaketteihin, tietoturvaan ja ryhmiin - 5 min
+      url: https://docs.microsoft.com/learn/modules/publish-share-power-bi/1-introduction-content-packs
+    - text: Power BI Desktop -raporttien julkaiseminen - 6 min
+      url: https://docs.microsoft.com/learn/modules/publish-share-power-bi/2-publish-reports
+    - text: Raporttinäkymien ja raporttien tulostaminen ja vieminen - 7 min
+      url: https://docs.microsoft.com/learn/modules/publish-share-power-bi/3-print-export-reports
+    - text: Power BI -mobiilisovelluksen esittely - 5 min
+      url: https://docs.microsoft.com/learn/modules/publish-share-power-bi/5-power-bi-mobile
+    - text: Työtilojen luominen Power BI:ssä - 6 min
+      url: https://docs.microsoft.com/learn/modules/publish-share-power-bi/6-create-groups
+    - text: Sovellusten muodostaminen - 7 min
+      url: https://docs.microsoft.com/learn/modules/publish-share-power-bi/7-build-apps
+    - text: Sovellusten käyttö - 6 min
+      url: https://docs.microsoft.com/learn/modules/publish-share-power-bi/8-use-apps
+    - text: OneDrive for Businessin integroiminen Power BI:hin - 7 min
+      url: https://docs.microsoft.com/learn/modules/publish-share-power-bi/10-integrate-onedrive
+    - text: Verkkoon julkaiseminen - 5 min
+      url: https://docs.microsoft.com/learn/modules/publish-share-power-bi/11-publish-web
+- title: Johdanto DAXiin
+  linkLists:
+  - linkListType: learn
+    links:
+    - text: Johdanto DAXiin - 9 min
+      url: introductiontodax.yml?tutorial-step=1
+    - text: DAX-laskentatyypit - 22 min
+      url: introductiontodax.yml?tutorial-step=2
+    - text: DAX-funktiot - 17 min
+      url: introductiontodax.yml?tutorial-step=3
+    - text: Muuttujien käyttäminen DAX-lausekkeissa - 4 min
+      url: introductiontodax.yml?tutorial-step=4
+    - text: Taulukkosuhteet ja DAX - 13 min
+      url: introductiontodax.yml?tutorial-step=5
+    - text: DAX-taulukot ja suodattaminen - 32 min
+      url: introductiontodax.yml?tutorial-step=6

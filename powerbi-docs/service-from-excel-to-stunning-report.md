@@ -2,7 +2,6 @@
 title: Excel-työkirjasta upeaksi raportiksi Power BI -palvelussa
 description: Tässä artikkelissa kerrotaan, miten voit luoda upean raportin Excel-työkirjasta nopeasti.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 08/12/2019
 ms.author: maggies
 LocalizationGroup: Data from files
-ms.openlocfilehash: 6c393611851e05c7c76983674f2e1de7b5454898
-ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
+ms.openlocfilehash: c2a4719a03e37569e40d4247939a9f2c73379e52
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73020989"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73872508"
 ---
 # <a name="from-excel-workbook-to-stunning-report-in-the-power-bi-service"></a>Excel-työkirjasta upeaksi raportiksi Power BI -palvelussa
 Esimiehesi haluaa raportin viimeisimmistä myyntiluvuista yhdistettynä viimeisimmän kampanjan näyttökertoihin vielä tämän päivän aikana. Uusimmat tiedot sijaitsevat kuitenkin erilaisissa kolmannen osapuolen järjestelmissä ja kannettavan tietokoneesi tiedostoissa. Aiemmin visualisointien luominen ja raportin muotoilu on vienyt tunteja. Tunnet, kuinka ahdistus alkaa vallata alaa.
@@ -57,7 +56,7 @@ Power BI -palvelu muodostaa yhteyden useisiin tietolähteisiin, kuten tietokonee
 
    ![Avattava Luo-valikko](media/service-from-excel-to-stunning-report/power-bi-create-dash.png)
 
-4. Valitse vasemman siirtymisruudun alareunasta **Nouda tiedot**. 
+4. Valitse siirtymisruudun alareunassa **Nouda tiedot**. 
 
 5. Valitse **Nouda tiedot** -sivun **Tiedostot**-ruudusta **Luo uutta sisältöä** -kohdan alta **Nouda**.
 
@@ -140,5 +139,5 @@ Oletetaan, että haluat jakaa koontinäytön esimiehellesi. Voit jakaa koontinä
 * [Aloita Power BI Desktopin käyttö](desktop-getting-started.md)
 * [Power BI -palvelun peruskäsitteitä suunnittelijoille](service-basic-concepts.md)
 
-Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/).
+Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](https://community.powerbi.com/).
 

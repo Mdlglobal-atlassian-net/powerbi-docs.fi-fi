@@ -2,19 +2,18 @@
 title: Mallisovellusten luominen Power BI:ssä
 description: Sellaisten mallisovellusten luominen Power BI:ssä, joita voi jakaa kaikille Power BI -asiakkaille.
 author: teddybercovitz
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 09/15/2019
 ms.author: tebercov
-ms.openlocfilehash: 836dfcc0569c906b145df3e3f3d14f03c08d4938
-ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
+ms.openlocfilehash: 4b3158cbe26efe05e3d35c1c6c93027738cc817a
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73432153"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73871486"
 ---
 # <a name="create-a-template-app-in-power-bi"></a>Mallisovelluksen luominen Power BI:ssä
 
@@ -86,7 +85,7 @@ Nyt kun työtilassasi on sisältöä, voit pakata sen mallisovellukseksi. Ensimm
 
     **Siirtyminen**
 
-    Aktivoi **Uusi siirtymisen muodostin**, jossa voit määrittää sovelluksen vasemman siirtymisruudun (lisätietoja on tämän artikkelin kohdassa [Suunnittele siirtymistoiminnot](service-create-distribute-apps.md#design-the-navigation-experience)).
+    Aktivoi **Uusi siirtymisen muodostin**, jossa voit määrittää sovelluksen siirtymisruudun (lisätietoja on tämän artikkelin kohdassa [Suunnittele siirtymistoiminnot](service-create-distribute-apps.md#design-the-navigation-experience)).
 
    ![Määritä sovelluksen aloitussivu](media/service-template-apps-install-distribute/power-bi-install-app-content.png)
     

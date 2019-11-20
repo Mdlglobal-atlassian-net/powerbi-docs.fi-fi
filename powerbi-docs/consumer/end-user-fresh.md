@@ -2,7 +2,6 @@
 title: Miten Power BI varmistaa, että sisältösi on ajan tasalla
 description: Lue, miten Power BI varmistaa, että käytät aina tietojen, raportin, koontinäytön ja sovelluksen uusimpia versioita.
 author: mihart
-manager: kvivek
 ms.service: powerbi
 ms.custom: ''
 ms.subservice: powerbi-consumer
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/18/2019
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 5d81b1e69d9cfbba6e3ed57f678af75dab1698c3
-ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
+ms.openlocfilehash: 92f031ff43bc4d3bd5840e69fec166606b14eb73
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73019789"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73863874"
 ---
 # <a name="your-content-is-up-to-date"></a>Sisältösi on ajan tasalla
 
@@ -43,9 +42,9 @@ Omistajan nimi on näkyvissä koontinäyttöjen ja raporttien otsikkorivillä. N
 
 Sovelluksen näytössä näkyy sekä suunnittelijan nimi että sovelluksen viimeisin päivitysaika.  
 
-1. Valitse vasemmasta siirtymisruudusta **Sovellukset**.
+1. Valitse siirtymisruudusta **Sovellukset**.
 
-    ![vasen siirtymisruutu](media/end-user-fresh/power-bi-nav-app.png)
+    ![siirtymisruutu](media/end-user-fresh/power-bi-nav-app.png)
 
 
 
@@ -85,7 +84,7 @@ Toinen tapa hakea viimeisin päivityspäivämäärä on käyttämällä kohtaa *
 
 ## <a name="what-happens-if-an-app-is-deleted-by-the-designer"></a>Mitä tapahtuu, jos suunnittelija poistaa sovelluksen
 
-Jos suunnittelija poistaa sovelluksen, sovellukseen liittyvät koontinäytöt ja raportit poistuvat automaattisesti myös Power BI -työtilastasi. Ne eivät ole enää käytettävissä, eikä sovellusta näy enää sovellussäilössä tai muualla siirtymispalkissa.
+Jos suunnittelija poistaa sovelluksen, sovellukseen liittyvät koontinäytöt ja raportit poistuvat automaattisesti myös Power BI -työtilastasi. Ne eivät ole enää käytettävissä, eikä sovellusta näy enää sovellussäilössä tai muualla siirtymisruudussa.
 
 
 ## <a name="subscribe-to-see-changes"></a>Tee tilaus, niin näet muutokset

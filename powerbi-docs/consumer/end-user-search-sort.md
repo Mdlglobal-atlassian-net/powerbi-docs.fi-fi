@@ -2,7 +2,6 @@
 title: Sisällön hakeminen ja lajitteleminen Power BI -palvelussa
 description: Power BI -palvelun Omassa työtilassa olevan sisällön hakemisen ja lajittelemisen ohjeet
 author: mihart
-manager: kvivek
 ms.reviewer: willt
 ms.custom: ''
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/21/2019
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: d5bc5638d9f98c1a35f57edd1d5d838c91c8ebf2
-ms.sourcegitcommit: 96217747f07d923d1a9d31f67a853f1ef1d17b20
+ms.openlocfilehash: 5a7848cb5931d983ab434a19c934c9e9cb464724
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72891777"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73861748"
 ---
 # <a name="navigation-searching-finding-and-sorting-content-in-power-bi-service"></a>Siirtyminen: sisällön hakeminen, löytäminen ja lajitteleminen Power BI -palvelussa
 
@@ -47,10 +46,10 @@ Voit lajitella sisällön myös nimen tai omistajan mukaan. Huomaa ylöspäin os
 Kaikki sarakkeet eivät ole lajiteltavissa. Jos haluat tietää, voidaanko jokin sarake lajitella, pidä hiiren osoitinta kyseisen sarakeotsikon päällä.
 
 ___________________________________________________________________
-## <a name="navigation-using-the-navigation-pane"></a>Siirtyminen siirtymisruudun avulla
-Siirtymispalkki luokittelee sisällön tavoilla, jotka helpottavat ja nopeuttavat tarvittavan sisällön löytämistä.  
+## <a name="navigation-using-the-nav-pane"></a>Siirtyminen siirtymisruudun avulla
+Siirtymisruutu luokittelee sisällön tavoilla, jotka helpottavat ja nopeuttavat tarvittavan sisällön löytämistä.  
 
-![vasen siirtymisruutu](./media/end-user-search-sort/power-bi-navbar.png)
+![siirtymisruutu](./media/end-user-search-sort/power-bi-nav pane.png)
 
 
 - Kanssasi jaettu sisältö on käytettävissä **Jaettu kanssani** -kohdassa.
@@ -58,7 +57,7 @@ Siirtymispalkki luokittelee sisällön tavoilla, jotka helpottavat ja nopeuttava
 - Löydät sovelluksesi valitsemalla **Sovellukset**.
 - **Aloitus**-näkymässä tärkein sisältösi, suositeltu sisältö ja oppimislähteet näkyvät yhdellä sivulla.
 
-Voit lisäksi lisätä sisällön [suosikiksi](end-user-favorite.md) ja [esittelyyn](end-user-featured.md). Valitse koontinäyttö tai raportti, jota uskot tarkastelevasi useimmin, ja määritä se *esittelyssä* olevaksi sisällöksi. Aina kun avaat Power BI -palvelun, esittelyssä oleva koontinäyttö näkyy ensimmäisenä. Käytkö usein useissa koontinäytöissä ja sovelluksissa? Kun lisäät ne suosikeiksi, ne ovat aina käytettävissä vasemmassa siirtymispalkissa.
+Voit lisäksi lisätä sisällön [suosikiksi](end-user-favorite.md) ja [esittelyyn](end-user-featured.md). Valitse koontinäyttö tai raportti, jota uskot tarkastelevasi useimmin, ja määritä se *esittelyssä* olevaksi sisällöksi. Aina kun avaat Power BI -palvelun, esittelyssä oleva koontinäyttö näkyy ensimmäisenä. Käytkö usein useissa koontinäytöissä ja sovelluksissa? Kun lisäät ne suosikeiksi, ne ovat aina käytettävissä siirtymisruudussa.
 
 ![Suosikit-pikaikkuna](./media/end-user-search-sort/power-bi-favorite.png).
 
@@ -70,4 +69,4 @@ Voit lisäksi lisätä sisällön [suosikiksi](end-user-favorite.md) ja [esittel
 ## <a name="next-steps"></a>Seuraavat vaiheet
 [Lajittele visualisoinnit raporteissa](end-user-change-sort.md)
 
-Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
+Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](https://community.powerbi.com/)

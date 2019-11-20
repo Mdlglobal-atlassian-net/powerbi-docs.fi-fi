@@ -2,7 +2,6 @@
 title: Lisää CDM-kansio Power BI:hin tietovuona
 description: Määritä työtila tallentamaan tietovuon määritys- ja datatiedostot Azure Data Lake Storage Gen2:ssa
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 04/02/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 3adc642d539ab8e1c1f1f60981a61fdc58a460ab
-ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
+ms.openlocfilehash: 5b6b8658e4480173c32a591c2fc763a238cfd13a
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73432037"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73872705"
 ---
 # <a name="add-a-cdm-folder-to-power-bi-as-a-dataflow-preview"></a>Lisää CDM-kansio Power BI:hin tietovuona (esikatselu)
 
@@ -33,7 +32,7 @@ Seuraavissa osissa kuvataan tietovuon luominen CDM-kansiosta.
 
 ## <a name="create-a-dataflow-from-a-cdm-folder"></a>Tietovuon luominen CDM-kansiosta
 
-Aloita tietovuon luominen CDM-kansiosta käynnistämällä **Power BI -palvelu**. Valitse sitten **työtila** vasemmasta siirtymisruudusta. Voit myös luoda uuden työtilan, jossa voit luoda uuden tietovuon.
+Aloita tietovuon luominen CDM-kansiosta käynnistämällä **Power BI -palvelu**. Valitse sitten **työtila** siirtymisruudusta. Voit myös luoda uuden työtilan, jossa voit luoda uuden tietovuon.
 
 ![Tietovuon luominen Power BI -palvelussa](media/service-dataflows-add-cdm-folder/dataflow-from-cdm-folder_02.jpg)
 
@@ -110,5 +109,5 @@ Lisätietoja Common Data Modelista on sen yleiskatsauksen sisältävässä artik
 * [CDM-kansiot](https://go.microsoft.com/fwlink/?linkid=2045304)
 * [CDM-mallitiedoston määritys](https://go.microsoft.com/fwlink/?linkid=2045521)
 
-Voit myös yrittää [esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/).
+Voit myös yrittää [esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/).
 

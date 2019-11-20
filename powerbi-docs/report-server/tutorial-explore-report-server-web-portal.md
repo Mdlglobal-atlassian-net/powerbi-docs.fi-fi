@@ -2,19 +2,18 @@
 title: 'Opetusohjelma: Tutustu Power BI -raporttipalvelimeen VM:ssä'
 description: Tässä opetusohjelmassa opit luomaan näennäiskoneen Power BI -raporttipalvelimen ollessa jo asennettu sekä tutkimaan verkkoportaalia.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: tutorial
 ms.date: 05/06/2019
 ms.author: maggies
-ms.openlocfilehash: cd3e032375c5edaba2b0f90f982d0dbe5591c913
-ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
+ms.openlocfilehash: 312b86f9e0c0dda0c9c943520c74286e0458acef
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73021614"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73859242"
 ---
 # <a name="tutorial-explore-the-power-bi-report-server-web-portal-in-a-vm"></a>Opetusohjelma: Power BI -raporttipalvelimen verkkoportaaliin tutustuminen näennäiskoneella
 Tässä opetusohjelmassa luot Azure-virtuaalikoneen Power BI -raporttipalvelimen ollessa jo asennettu, jotta voit tutustua Power BI- ja sivutettujen näyteraporttien ja suorituskykyilmaisimien tarkasteluun, muokkaamiseen ja hallintaan.
@@ -72,7 +71,7 @@ Power BI -tiimi on onneksi luonut näennäiskoneen, johon Power BI -raporttipalv
 
 ## <a name="connect-to-your-virtual-machine"></a>Muodosta yhteys näennäiskoneeseen
 
-1. Valitse Azuren vasemmasta siirtymisruudusta **Näennäiskoneet**. 
+1. Valitse Azuren siirtymisruudussa **Näennäiskoneet**. 
 
 2. Kirjoita **Suodata nimen mukaan** -ruutuun ”raportti”. 
 
@@ -108,7 +107,7 @@ Kun näennäiskone avautuu, näet työpöydällä seuraavat kohteet.
 |![Numero 4](media/tutorial-explore-report-server-web-portal/number-4.png) | Avaa Power BI -raporttipalvelimen verkkoportaalin selaimessa |
 |![Numero 5](media/tutorial-explore-report-server-web-portal/number-5.png) | Käynnistää SQL Server Data Tools -työkalun sivutettujen (. RDL) raporttien luomista varten |
 
-Kaksoisnapsauta **Raporttipalvelimen verkkoportaali** -kuvaketta. `http://localhost/reports/browse` avataan selaimella. Verkkoportaalista näet tyypin mukaan ryhmitellyt tiedostot. 
+Kaksoisnapsauta **Raporttipalvelimen verkkoportaali** -kuvaketta. `https://localhost/reports/browse` avataan selaimella. Verkkoportaalista näet tyypin mukaan ryhmitellyt tiedostot. 
 
 ![Power BI -raporttipalvelimen verkkoportaali](media/tutorial-explore-report-server-web-portal/power-bi-report-server-browser-in-vm.png)
 

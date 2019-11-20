@@ -2,7 +2,6 @@
 title: Visualisointien lisääminen Power BI -raporttiin, osa 2
 description: Visualisointien lisääminen Power BI -raporttiin, osa 2
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/28/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: dc50c54f826dd695b0aab459bd3d68d0da792abe
-ms.sourcegitcommit: 2a61d8b1e2707a24fe1284a8a4034b11c3999842
+ms.openlocfilehash: e9759f69668780b450117e5e6255e7f5cb7e67f5
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73049160"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73881010"
 ---
 # <a name="part-2-add-visualizations-to-a-power-bi-report"></a>Visualisointien lisääminen Power BI -raporttiin, osa 2
 
@@ -29,7 +28,7 @@ Tässä opetusohjelmassa perehdymme jälleenmyyntianalyysimallin tietojoukkoon j
 
 ## <a name="prerequisites"></a>Edellytykset
 
-Tässä opetusohjelmassa käytetään [Jälleenmyyntianalyysimallin PBIX-tiedostoa](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix).
+Tässä opetusohjelmassa käytetään [Jälleenmyyntianalyysimallin PBIX-tiedostoa](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix).
 
 1. Valitse Power BI Desktopin valikkorivin vasemmasta yläosasta **Tiedosto** > **Avaa**
    
@@ -59,7 +58,7 @@ Luo visualisointi vetämällä kenttä **Kentät**-ruudussa. Luotavan visualisoi
 
 5. [Muokkaa visualisoinnin kokoa](power-bi-visualization-move-and-resize.md) valitsemalla visualisointi, tarttumalla kiinni yhdestä sen kehyksessä olevista ympyröistä ja vetämällä. Tee visualisoinnista niin suuri, ettei vierityspalkkia enää näy, ja niin pieni, että tilaa jää toisellekin visualisoinnille.
    
-   ![](media/power-bi-report-add-visualizations-ii/pbi_part2_7b.png)
+   ![näyttökuva aluekaavion visualisoinnista](media/power-bi-report-add-visualizations-ii/pbi_part2_7b.png)
 6. [Tallenna raportti](../service-report-save.md).
 
 ### <a name="add-a-map-visualization-that-looks-at-sales-by-location"></a>Lisää karttavisualisointi, joka näyttää myynnin sijainnin mukaan.
@@ -68,9 +67,9 @@ Luo visualisointi vetämällä kenttä **Kentät**-ruudussa. Luotavan visualisoi
    ![Aluekaavio](media/power-bi-report-add-visualizations-ii/power-bi-map1.png)
 
 2. Lisää visualisoinnille selite.  Jos haluat nähdä tiedot kaupan nimen mukaan, vedä **Kauppa** > **Ketju** selitealueelle.  
-   ![](media/power-bi-report-add-visualizations-ii/power-bi-chain.png)
+   ![raporttipohja, jossa on nuoli Chain in fields -luettelosta Chain in Legend -säilöön](media/power-bi-report-add-visualizations-ii/power-bi-chain.png)
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 * Lisätietoja [Power BI -raporttien visualisoinneista](power-bi-report-visualizations.md).  
-* Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](http://community.powerbi.com/)
+* Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](https://community.powerbi.com/)
 

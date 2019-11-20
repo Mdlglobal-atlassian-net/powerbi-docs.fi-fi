@@ -2,7 +2,6 @@
 title: Uusien työtilojen luominen ̶ Power BI
 description: Lue, miten voit luoda uusia työtiloja, raporttinäkymien kokoelmia, raportteja ja sivutettuja raportteja, joiden avulla voit kuvata organisaatiosi keskeisiä mittalukuja.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/02/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 2fdc893ac8545df8fc64f45959a418018a189c84
-ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
+ms.openlocfilehash: bbb5eeee7422670c771f7bbfb4b051de0538a10a
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73020457"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73877528"
 ---
 # <a name="create-the-new-workspaces-in-power-bi"></a>Uusien työtilojen luominen Power BI:ssä
 
@@ -74,7 +73,7 @@ Voit määrittää käyttäjät, joille ilmoitetaan työtilassa esiintyneistä o
 
     **Luo työtila** -ruudusta, kun luot sen ensimmäisen kerran.
 
-    Valitse vasemmassa siirtymisruudussa **Työtilat**-kohdan vieressä oleva nuoli. Valitse **Enemmän vaihtoehtoja** (...) työtilan nimen vierestä ja valitse **Työtilan asetukset**. **Asetukset**-ruutu avautuu.
+    Valitse siirtymisruudussa **Työtilat**-kohdan vieressä oleva nuoli. Valitse **Enemmän vaihtoehtoja** (...) työtilan nimen vierestä ja valitse **Työtilan asetukset**. **Asetukset**-ruutu avautuu.
 
     ![Työtilan asetukset](media/service-create-the-new-workspaces/power-bi-workspace-new-settings.png)
 
@@ -94,7 +93,7 @@ Power BI ei synkronoi niiden käyttäjien tai ryhmien käyttöoikeuksia, joille 
 
     **Luo työtila** -ruudusta, kun luot sen ensimmäisen kerran.
 
-    Valitse vasemmassa siirtymisruudussa **Työtilat**-kohdan vieressä oleva nuoli. Valitse **Enemmän vaihtoehtoja** (...) työtilan nimen vierestä ja valitse **Työtilan asetukset**. **Asetukset**-ruutu avautuu.
+    Valitse siirtymisruudussa **Työtilat**-kohdan vieressä oleva nuoli. Valitse **Enemmän vaihtoehtoja** (...) työtilan nimen vierestä ja valitse **Työtilan asetukset**. **Asetukset**-ruutu avautuu.
 
     ![Työtilan asetukset](media/service-create-the-new-workspaces/power-bi-workspace-new-settings.png)
 
@@ -108,7 +107,7 @@ Power BI ei synkronoi niiden käyttäjien tai ryhmien käyttöoikeuksia, joille 
 
 Kun olet määrittänyt OneDrive-sijainnin, pääset siihen samalla tavalla kuin Power BI -palvelun muihin tietolähteisiin.
 
-1. Valitse vasemman reunan siirtymisruudusta **Nouda tiedot**, ja valitse sitten **Tiedostot**-ruudussa **Nouda**.
+1. Valitse siirtymisruudussa **Nouda tiedot**, ja valitse sitten **Tiedostot**-ruudussa **Nouda**.
 
     ![Nouda tiedot, nouda tiedostot](media/service-create-the-new-workspaces/power-bi-get-data-files.png)
 
@@ -145,4 +144,4 @@ Lisätietoja [sovelluksen julkaisemisesta uuden työtilan kautta](service-create
 * Lue [työn järjestämisestä uusissa työtiloissa Power BI:ssä](service-new-workspaces.md)
 * [Perinteisten työtilojen luominen](service-create-workspaces.md)
 * [Sovelluksen julkaiseminen uusista työtiloista Power BI:ssä](service-create-distribute-apps.md)
-* Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)
+* Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)

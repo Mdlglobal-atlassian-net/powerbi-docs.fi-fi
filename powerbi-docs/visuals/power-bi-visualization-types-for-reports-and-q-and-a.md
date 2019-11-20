@@ -2,26 +2,25 @@
 title: Visualisointityypit Power BI:ssä
 description: Visualisointityypit Power BI:ssä
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/21/2019
+ms.date: 10/31/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 639ea11eca69eea53968ed702e0524f46a97cdc4
-ms.sourcegitcommit: 23ad768020a9daf129f69a462a2d46d59d2349d2
+ms.openlocfilehash: 80fc4f4afe29806077d1bf64a59d8761d7ab1c1d
+ms.sourcegitcommit: 08b73af260ded51daaa6749338cb85db2eab587f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72775957"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "74099924"
 ---
 # <a name="visualization-types-in-power-bi"></a>Visualisointityypit Power BI:ssä
 ## <a name="power-bi-visualizations"></a>Visualisoinnit Power BI:ssä
 Lisäämme uusia visualisointeja, pysy kuulolla!
 
-Tutustu [Microsoft AppSourceen](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals) , josta löydät kasvavan luettelon [mukautetuista visualisoinneista](../power-bi-custom-visuals.md), joita voit ladata ja käyttää omissa raporttinäkymissä ja raporteissa. Oletko luova henkilö? [Lue, miten voit luoda ja lisätä omia visualisointeja tähän yhteisösivustoon](../developer/office-store.md).  
+Tutustu [Microsoft AppSourceen](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals) , josta löydät kasvavan luettelon [mukautetuista visualisoinneista](../developer/power-bi-custom-visuals.md), joita voit ladata ja käyttää omissa raporttinäkymissä ja raporteissa. Oletko luova henkilö? [Lue, miten voit luoda ja lisätä omia visualisointeja tähän yhteisösivustoon](../developer/office-store.md).  
 
 ## <a name="list-of-visualizations-available-in-power-bi"></a>Luettelo visualisoinneista, jotka ovat käytettävissä Power BI:ssa
 Kaikki nämä visualisoinnit voidaan lisätä Power BI-raportteihin, jotka on määritetty Q&A:ssa ja kiinnitetty raporttinäkymään.
@@ -226,8 +225,8 @@ Power BI Q&A:lla kirjoitettaessa kyselyjä luonnollisella kielellä voit määri
 
 ”***myynti osavaltioittain puukarttana***”
 
-![](media/power-bi-visualization-types-for-reports-and-q-and-a/qatreemap.png)
+![Q&A-kysymys ruutu, jossa näkyy määritetty visualisointityyppi](media/power-bi-visualization-types-for-reports-and-q-and-a/qatreemap.png)
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 [Visualisoinnit Power BI -raporteissa](power-bi-report-visualizations.md)    
-[Oikealla oleva visuaalinen viite osoitteesta sqlbi.com](http://www.sqlbi.com/wp-content/uploads/videotrainings/dashboarddesign/visuals-reference-may2017-A3.pdf)
+[Oikealla oleva visuaalinen viite osoitteesta sqlbi.com](https://www.sqlbi.com/wp-content/uploads/videotrainings/dashboarddesign/visuals-reference-may2017-A3.pdf)

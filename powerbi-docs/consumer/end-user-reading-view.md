@@ -4,7 +4,6 @@ description: Tästä pikaoppaasta **kuluttajat** saavat tietoja Power BI:stä, s
 services: powerbi
 documentationcenter: ''
 author: mihart
-manager: kvivek
 editor: ''
 tags: ''
 ms.service: powerbi
@@ -13,12 +12,12 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 08/30/2019
 ms.author: mihart
-ms.openlocfilehash: 17a142249abe1162dbbcff79c476f33eb4b80366
-ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
+ms.openlocfilehash: 09b9bf10c3328ecc4eb9ca9d16460b1bcfab0da5
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73019589"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73862684"
 ---
 # <a name="quickstart-learn-about-the-power-bi-capabilities-for-consumers"></a>Pikaopas: Tutustu *kuluttajille suunnattuihin* Power BI -ominaisuuksiin
 Tässä pikaoppaassa opit käyttämään Power BI:tä löytääksesi tietopohjaisia merkityksellisiä liiketoimintatietoja. Tämä artikkeli ei ole tarkoitettu syvälliseksi ohjeeksi, vaan se tarjoaa lyhyen katsauksen **kuluttajille** suunnattuihin Power BI -toimintoihin.
@@ -50,7 +49,7 @@ Sisältö-termillä tarkoitetaan Power BI:ssä raportteja, koontinäyttöjä ja 
 
 *Sovellus* on Power BI:n sisältötyyppi, joka kokoaa toisiinsa liittyvät koontinäytöt ja raportit yhteen paikkaan. Sovelluksessa voi olla yksi tai useampia koontinäyttöjä ja yksi tai useampia raportteja, jotka on koottu yhteen. Power BI:n *suunnittelijat* luovat sovellukset ja jakavat ne sinun kaltaisillesi *kuluttajille*. 
 
-Yksi tapa tarkastella sovelluksiasi on valita **Sovellukset** siirtymispalkista ja valita avattava sovellus.
+Yksi tapa tarkastella sovelluksiasi on valita **Sovellukset** siirtymisruudusta ja valita avattava sovellus.
 
 ![Hanki sovelluksia -kuvake](./media/end-user-reading-view/power-bi-apps.png)
 
@@ -116,7 +115,7 @@ Visualisoinnit koostuvat arvopisteistä, ja pitämällä hiiriosoitinta arvopist
 ![pidä hiiren osoitin osien päällä nähdäksesi tietoja](media/end-user-reading-view/power-bi-hover.gif)
 
 ### <a name="favorite-a-dashboard"></a>Koontinäytön lisääminen suosikkeihin
-Kun lisäät sisällön *suosikkeihin*, voit käyttää sitä siirtymispalkista. Siirtymispalkki on näkyvissä lähes kaikissa Power BI:n alueissa. Suosikkeja ovat yleensä koontinäytöt, raporttisivut ja sovellukset, joita käytät useimmin.
+Kun lisäät sisällön *suosikkeihin*, voit käyttää sitä siirtymisruudusta. Siirtymisruutu on näkyvissä lähes kaikissa Power BI:n alueissa. Suosikkeja ovat yleensä koontinäytöt, raporttisivut ja sovellukset, joita käytät useimmin.
 
 Valitse Power BI -palvelun oikeassa yläkulmassa **Suosikki** tai, jos se ei ole näkyvissä, valitse **Lisää vaihtoehtoja** (...) ja valitse avattavasta valikosta **Suosikki**. 
    
@@ -194,9 +193,9 @@ Sen lisäksi, että voit näyttää visualisoinnin luomiseen käytettävät tied
 Tämä on vain lyhyt yleiskuvaus siitä, mitä *kuluttajat* voivat tehdä Power BI -palvelussa.  
 
 ## <a name="clean-up-resources"></a>Resurssien tyhjentäminen
-- Jos olet yhdistänyt sovelluksen, avaa Sovellukset-sisällysluettelo valitsemalla vasemmasta siirtymispalkista **Sovellukset**. Pidä osoitinta poistettavan sovelluksen päällä ja valitse roskakorikuvake.
+- Jos olet yhdistänyt sovelluksen, avaa Sovellukset-sisällysluettelo valitsemalla siirtymisruudusta **Sovellukset**. Pidä osoitinta poistettavan sovelluksen päällä ja valitse roskakorikuvake.
 
-- Jos toit tai yhdistit Power BI -näyteraportin, avaa vasemmasta siirtymispalkista **Oma työtila**. Käytä ylhäällä olevia välilehtiä ja etsi koontinäyttö, raportti ja tietojoukko, ja valitse sitten roskakorikuvake kunkin kohdalla.
+- Jos toit tai yhdistit Power BI -näyteraportin, avaa siirtymisruudusta **Oma työtila**. Käytä ylhäällä olevia välilehtiä ja etsi koontinäyttö, raportti ja tietojoukko, ja valitse sitten roskakorikuvake kunkin kohdalla.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 [Power BI kuluttajille](end-user-consumer.md)

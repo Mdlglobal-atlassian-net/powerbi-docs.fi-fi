@@ -2,7 +2,6 @@
 title: Perinteisten työtilojen luominen Power BI:ssä
 description: Lue, miten luodaan työtiloja, raporttinäkymien kokoelmia, raportteja ja sivutettuja raportteja, joiden avulla voit kuvata organisaatiosi keskeisiä mittalukuja.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/10/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 1087ac4301a172500c997e78ee3a16695f6b0d73
-ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
+ms.openlocfilehash: 3153e63685e21a29687c33e702c4ade55324e05c
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73021124"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73853546"
 ---
 # <a name="create-classic-workspaces-in-power-bi"></a>Perinteisten työtilojen luominen Power BI:ssä
 
@@ -75,7 +74,7 @@ Nykyisissä työtiloissa voit myös muodostaa yhteyden käyttämällä organisaa
 
 Jos haluat levittää virallista sisältöä suurelle yleisölle organisaatiossasi, voit julkaista sovelluksen työtilasta.  Kun sisältö on valmis, valitse julkaistaviksi haluamasi raporttinäkymät ja raportit ja julkaise se *sovelluksena*. Voit luoda yhden sovelluksen kustakin työtilasta.
 
-Vasemman navigoinnin sovellusluettelossa näkyvät kaikki asentamasi sovellukset. Työtoverisi voivat saada sovelluksesi käyttöönsä eri tavoin. 
+Siirtymisruudun sovellusluettelossa näkyvät kaikki asentamasi sovellukset. Työtoverisi voivat saada sovelluksesi käyttöönsä eri tavoin. 
 - He voivat etsiä ja asentaa sovelluksen Microsoft AppSourcesta
 - Voit lähettää heille suoran linkin. 
 - Voit asentaa sen automaattisesti työtovereittesi Power BI -tileille, jos Power BI -järjestelmänvalvojasi antaa sinulle luvan. 
@@ -97,4 +96,4 @@ Voit verrata näitä kahta tutustumalla artikkeliin [Miten uudet työtilat eroav
 ## <a name="next-steps"></a>Seuraavat vaiheet
 * [Asenna ja käytä sovelluksia Power BI:ssä](service-create-distribute-apps.md)
 - [Uusien työtilojen luominen](service-create-the-new-workspaces.md)
-* Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)
+* Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
