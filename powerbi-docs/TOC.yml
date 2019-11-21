@@ -279,8 +279,6 @@
               href: desktop-slicer-filter-date-range.md
             - name: Kooltaan muokattavan osittajan luominen
               href: power-bi-slicer-filter-responsive.md
-            - name: Omien vastauskorttien luominen Cortanaan
-              href: service-cortana-answer-cards.md
             - name: Rivitason suojaus
               href: desktop-rls.md
             - name: Työkaluvihjeiden mukauttaminen
@@ -665,10 +663,6 @@
               href: visuals/power-bi-visualization-types-for-reports-and-q-and-a.md
             - name: 'Q&A:n käyttäminen reaaliaikaisten yhteyksien kautta'
               href: service-q-and-a-direct-query.md
-            - name: 'Power BI:n Cortanan esittely'
-              href: service-cortana-intro.md
-            - name: 'Power BI:n Cortanan käyttöönotto'
-              href: service-cortana-enable.md
             - name: 'Nopeat merkitykselliset tiedot Power BI:ssä'
               href: service-insights.md
             - name: Tietojen optimointi nopeille merkityksellisille tiedoille
@@ -801,8 +795,6 @@
               href: desktop-troubleshooting-analyze-in-excel.md
             - name: 'Virhe: Excel-työkirjasta ei löydy mitään tietoja'
               href: service-admin-troubleshoot-excel-workbook-data.md
-            - name: Cortanan vianmääritys
-              href: service-cortana-troubleshoot.md
             - name: 'Xero-sisältöpaketin tunnistetietojen päivitys, jos päivitys epäonnistuu'
               href: service-refresh-xero-credentials.md
         - name: Muut tehtävät
