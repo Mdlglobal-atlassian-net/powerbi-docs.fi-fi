@@ -2,7 +2,6 @@
 title: Luottamuksellisuustunnisteiden käyttöönotto Power BI:ssä
 description: Lue luottamuksellisuustunnisteiden käyttöönotosta Power BI:ssä
 author: paulinbar
-manager: rkarlin
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/25/2019
 ms.author: painbar
 LocalizationGroup: Data from files
-ms.openlocfilehash: a53e06f65f5ef8328a0c27b48f2020228a0570ed
-ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
+ms.openlocfilehash: 024e04bd309080b5b31e43bde7c783255bfc3dba
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73433371"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73851078"
 ---
 # <a name="enable-data-sensitivity-labels-in-power-bi-preview"></a>Luottamuksellisuustunnisteiden käyttöönotto Power BI:ssä (esiversio)
 
@@ -63,7 +62,7 @@ Power BI käyttää Microsoft Information Protectionin luottamuksellisuustunnist
 
 ## <a name="licensing"></a>Käyttöoikeudet
 
-* Jos haluat tarkastella Microsoft Information Protection -tunnisteita Power BI:ssä, käyttäjillä on oltava Azure Information Protection Premium P1- tai Premium P2 -käyttöoikeus. Microsoft Azure Information Protectionin voi ostaa joko erillisenä tuotteena tai jonkin Microsoftin käyttöoikeuspaketin kautta. Lisätietoja on artikkelissa [Azure Information Protectionin hinnoittelu](https://azure.microsoft.com/pricing/details/information-protection/).
+* Jos haluat tarkastella tai käyttää Microsoft Information Protection -tunnisteita Power BI:ssä, käyttäjillä on oltava Azure Information Protection Premium P1- tai Premium P2 -käyttöoikeus. Microsoft Azure Information Protectionin voi ostaa joko erillisenä tuotteena tai jonkin Microsoftin käyttöoikeuspaketin kautta. Lisätietoja on artikkelissa [Azure Information Protectionin hinnoittelu](https://azure.microsoft.com/pricing/details/information-protection/).
 * Käyttäjillä, joiden pitää lisätä tunnisteita Power BI -resursseihin, on oltava Power BI Pro -käyttöoikeus.
 
 
