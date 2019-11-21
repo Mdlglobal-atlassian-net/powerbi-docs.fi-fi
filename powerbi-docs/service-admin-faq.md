@@ -2,7 +2,6 @@
 title: Power BI:n hallinnointi - usein kysytyt kysymykset (UKK)
 description: Lue vastauksia usein kysyttyihin kysymyksiin, jotka liittyvät Power BI:n rekisteröintiin, vuokraajien hallinnointiin ja muihin hallintatehtäviin.
 author: mgblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/09/2019
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 6cc29bd1d06e948facf1058411759c15841a8352
-ms.sourcegitcommit: 2b7beec5237a597bab2da8eb6ffe69122a5d2ed9
+ms.openlocfilehash: 711646009fe79e145a3ab756266a442243c1116e
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "73442916"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73857820"
 ---
 # <a name="administering-power-bi---frequently-asked-questions-faq"></a>Power BI:n hallinnointi - usein kysytyt kysymykset (UKK)
 
@@ -56,7 +55,7 @@ Tämä artikkeli vastaa Power BI -hallinnoinnista usein kysyttyihin kysymyksiin.
 
 ### <a name="using-powershell"></a>PowerShellin käyttäminen
 
-Jotkin tämän osion toimintosarjat edellyttävät Windows PowerShell -komentosarjoja. Jos et ole aiemmin käyttänyt PowerShelliä, sinun kannattaa tutustua [PowerShellin aloitusoppaaseen](http://go.microsoft.com/fwlink/p/?LinkID=286814). Jotta voit suorittaa komentosarjoja, asenna ensin [Azure Active Directory PowerShell for Graphin](/powershell/azure/active-directory/) uusin 64-bittinen versio.
+Jotkin tämän osion toimintosarjat edellyttävät Windows PowerShell -komentosarjoja. Jos et ole aiemmin käyttänyt PowerShelliä, sinun kannattaa tutustua [PowerShellin aloitusoppaaseen](https://go.microsoft.com/fwlink/p/?LinkID=286814). Jotta voit suorittaa komentosarjoja, asenna ensin [Azure Active Directory PowerShell for Graphin](/powershell/azure/active-directory/) uusin 64-bittinen versio.
 
 ### <a name="how-do-users-sign-up-for-power-bi"></a>Miten käyttäjät voivat rekisteröityä Power BI:hin?
 
@@ -193,7 +192,7 @@ Jos käyttäjä on rekisteröitynyt Power BI:hin, mutta et enää halua hänen k
 
 1. Siirry [Microsoft 365 -hallintakeskukseen](https://admin.microsoft.com/AdminPortal/Home#/homepage).
 
-1. Valitse vasemmassa siirtymispalkissa **Käyttäjät** > **Aktiiviset käyttäjä**.
+1. Valitse siirtymisruudusta **Käyttäjät** > **Aktiiviset käyttäjät**.
 
 1. Etsi käyttäjä, jolta haluat poistaa käyttöoikeuden, ja valitse hänen nimensä.
 
@@ -211,7 +210,7 @@ Käyttäjille, jotka ovat liittyneet vuokraajaan itsepalvelurekisteröitymisen k
 
 1. Siirry [Microsoft 365 -hallintakeskukseen](https://admin.microsoft.com/AdminPortal/Home#/homepage).
 
-1. Valitse vasemmassa siirtymispalkissa **Käyttäjät** > **Aktiiviset käyttäjä**.
+1. Valitse siirtymisruudusta **Käyttäjät** > **Aktiiviset käyttäjät**.
 
 1. Valitse **Näkymät**-valikosta **Lisää mukautettu näkymä**.
 
@@ -235,7 +234,7 @@ Lisätietoja siitä, millä tietoalueella Power BI -vuokraajasi sijaitsee, on ko
 
 ### <a name="what-is-the-power-bi-sla"></a>Mikä on Power BI:n palvelutasosopimus?
 
-Lisätietoja Power BI:n palvelutasosopimuksesta on Microsoft Licensing -sivuston [Käyttöoikeusehdot ja -ohjeet](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=37) -artikkelin **käyttöoikeuksia** käsittelevässä kohdassa.
+Lisätietoja Power BI:n palvelutasosopimuksesta on Microsoft Licensing -sivuston [Käyttöoikeusehdot ja -ohjeet](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=37) -artikkelin **käyttöoikeuksia** käsittelevässä kohdassa.
 
 ### <a name="how-does-power-bi-handle-high-availability-and-failover"></a>Miten Power BI takaa suuren käytettävyyden ja vikasietoisuuden?
 
@@ -264,6 +263,6 @@ Microsoftin Power BI perustuu Microsoft 365:een, joka puolestaan perustuu Azure-
 [Office 365:n käyttäjätilien hallinta](/office365/servicedescriptions/office-365-platform-service-description/user-account-management/)  
 [Office 365:n ryhmän hallinta](/office365/admin/email/create-edit-or-delete-a-security-group/)  
 
-Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](http://community.powerbi.com/)
+Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
 
 [1]: https://docs.microsoft.com/powershell/scripting/overview
