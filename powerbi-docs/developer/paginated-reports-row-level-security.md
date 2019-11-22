@@ -28,7 +28,7 @@ Tämä ominaisuus tarjoaa turvallisen tavan näyttää tietojen alijoukko niin, 
 
 Kun otat rivitason suojauksen käyttöön Power BI -sivutetulle raportille, sinun on määritettävä [parametri](../report-builder-parameters.md) **UserID**-määritteelle. Tämä parametri rajoittaa tietojoukosta vedettyjä tietoja ennen raportin upottamista.
 
-Kun olet määrittänyt parametrin UserID:lle, käytä [Reports GenerateTokenForCreateInGroup](https://docs.microsoft.com/rest/api/power-bi/embedtoken/reports_generatetokenforcreateingroup)-ohjelmointirajapintaa upotetun suojaustunnuksen saamiseksi.
+Kun olet määrittänyt parametrin **UserID:lle**, käytä [Reports GenerateTokenForCreateInGroup](https://docs.microsoft.com/rest/api/power-bi/embedtoken/reports_generatetokenforcreateingroup)-ohjelmointirajapintaa upotetun suojaustunnuksen saamiseksi.
 
 ## <a name="use-uderid-as-a-filter-at-report-or-query-level"></a>Käytä UderID-tunnusta suodattimena raportin tai kyselyn tasolla
 
@@ -36,7 +36,7 @@ Voit käyttää **UserId**-tunnusta *suodattimena* tai *kyselynä* tietolähteen
 
 ### <a name="using-the-filter"></a>Suodattimen käyttö
 
-1. Valitse Tietojoukon ominaisuudet -ikkunan vasemmasta ruudusta **Suodatin.
+1. Valitse **Tietojoukon ominaisuudet** -ikkunan vasemmasta ruudusta **Suodatin**.
 
     ![Power BI Report Builder -suodatin](media/embedded-paginated-reports-secure-data/filter.png)
 
@@ -48,7 +48,7 @@ Voit käyttää **UserId**-tunnusta *suodattimena* tai *kyselynä* tietolähteen
 
     ![Power BI Report Builder -arvo](media/embedded-paginated-reports-secure-data/function.png)
 
-4. Valitse Lauseke-ikkunassa **Luokka-luettelosta Sisäiset kentät.
+4. Valitse **Lauseke**-ikkunassa **Luokka**-luettelosta **Sisäiset kentät**.
 
     ![Power BI Report Builder -lausekkeet](media/embedded-paginated-reports-secure-data/built-in-fields.png)
 
