@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 10/15/2019
 ms.author: v-pemyer
-ms.openlocfilehash: c8ad6153ba1fcfb22987c5399bb82a9a8f4e664c
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 8562d0fd5acee2f18576f0a6b6f2e3d613354f92
+ms.sourcegitcommit: 0d7ad791a2d2bef45d5d60e38e0af4c9fc22187b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73879804"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74009627"
 ---
 # <a name="model-relationships-in-power-bi-desktop"></a>Mallien suhteet Power BI Desktopissa
 
@@ -169,7 +169,7 @@ Kyselyn aikana vahvat yhteydet mahdollistavat _taulukon laajentamisen_. Taulukon
 > [!NOTE]
 > Passiiviset yhteydet laajennetaan silloinkin, kun ei ole laskelmaa käyttämässä yhteyttä. Kaksisuuntaisilla yhteyksillä ei ole vaikutusta taulukon laajentamiseen.
 
-Monta moneen -yhteyksillä taululukon laajentaminen tapahtuu “monta”-puolelta “yksi”-puolelle käyttämällä VASEMMANPUOLEISEN ULKOLIITOKSEN semantiikkaa. Kun “monta”-puolen arvolle ei löydy vastaavaa “yksi”-puolen arvoa, “yksi”-puolen taulukkoon lisätään tyhjä virtuaalirivi.
+Yksi moneen -yhteyksillä taululukon laajentaminen tapahtuu “moneen”-puolelta “yksi”-puolelle käyttämällä VASEMMANPUOLEISEN ULKOLIITOKSEN semantiikkaa. Kun “monta”-puolen arvolle ei löydy vastaavaa “yksi”-puolen arvoa, “yksi”-puolen taulukkoon lisätään tyhjä virtuaalirivi.
 
 Taulukon laajentaminen tapahtuu myös saarensisäisissä yksi yhteen -yhteyksissä, mutta tällöin käytetään TÄYDEN ULKOLIITOKSEN semantiikkaa. Se varmistaa, että molemmille puolille lisätään tarpeen mukaan tyhjiä virtuaalirivejä.
 

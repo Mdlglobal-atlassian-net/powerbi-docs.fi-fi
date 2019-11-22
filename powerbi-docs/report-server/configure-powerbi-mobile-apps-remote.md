@@ -1,25 +1,31 @@
 ---
-title: iOS-mobiilisovelluksen käyttöoikeuksien etämäärittäminen raporttipalvelimelle
-description: Lue, miten voit etämäärittää iOS-mobiilisovelluksen raporttipalvelimelle.
-author: maggiesMSFT
+title: Mobiilisovelluksen käyttöoikeuksien etämäärittäminen raporttipalvelimelle
+description: Lue, miten voit etämäärittää mobiilisovellukset raporttipalvelimelle.
+author: paulinbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 08/08/2019
-ms.author: maggies
-ms.openlocfilehash: ab9f7c2559038505b5507d4a87b50933e7b0b041
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.date: 11/07/2019
+ms.author: painbar
+ms.openlocfilehash: b84d7a23cf947b18302c761ff5f78143bf3356aa
+ms.sourcegitcommit: 50c4bebd3432ef9c09eacb1ac30f028ee4e66d61
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73874200"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "73925870"
 ---
-# <a name="configure-power-bi-ios-mobile-app-access-to-a-report-server-remotely"></a>Raporttipalvelimen käyttöoikeuksien etämäärittäminen Power BI -iOS-mobiilisovellukselle
+# <a name="configure-power-bi-mobile-app-access-to-report-server-remotely"></a>Raporttipalvelimen käyttöoikeuksien etämäärittäminen Power BI -mobiilisovellukselle
 
-Tässä artikkelissa kerrotaan, miten voit käyttää organisaatiosi ydintietojen hallintatyökalua määrittääksesi raporttipalvelimen käyttöoikeudet Power BI -iOS-mobiilisovellukselle. Tämän määrittämiseksi IT-järjestelmänvalvojat voivat luoda sovelluksen määrityskäytännön, joka lähettää vaaditut tiedot sovellukseen. 
+Koskee seuraavia:
 
- Power BI:n iOS-mobiilisovelluksen käyttäjät voivat muodostaa yhteyden organisaationsa raporttipalvelimeen helpommin, koska raporttipalvelimen yhteys on jo määritetty. 
+| ![iPhone](./media/configure-powerbi-mobile-apps-remote/ios-logo-40-px.png) | ![Android-puhelin](./media/configure-powerbi-mobile-apps-remote/android-logo-40-px.png) |
+|:--- |:--- |
+| iOS |Android- |
+
+Tässä artikkelissa kerrotaan, miten voit käyttää organisaatiosi ydintietojen hallintatyökalua määrittääksesi raporttipalvelimen käyttöoikeudet Power BI -mobiilisovellukselle. Tämän määrittämiseksi IT-järjestelmänvalvojat voivat luoda sovelluksen määrityskäytännön, joka lähettää vaaditut tiedot sovellukseen. 
+
+ Power BI -mobiilisovelluksen käyttäjät voivat muodostaa yhteyden organisaationsa raporttipalvelimeen helpommin, koska raporttipalvelimen yhteys on jo määritetty. 
 
 ## <a name="create-the-app-configuration-policy-in-mdm-tool"></a>Sovelluksen määrityskäytännön luominen MDM-työkalussa 
 
@@ -43,13 +49,13 @@ Tässä on esimerkki määrityskäytännön asettamisesta Intunen avulla.
 
 ![Intune-määritysasetukset](media/configure-powerbi-mobile-apps-remote/power-bi-ios-remote-configuration-settings.png)
 
-## <a name="end-users-connecting-to-a-report-server"></a>Käyttäjät, jotka muodostavat yhteyttä raporttipalvelimeen
+## <a name="end-users-connecting-to-report-server"></a>Käyttäjät, jotka muodostavat yhteyttä raporttipalvelimeen
 
- Oletetaan, että julkaiset jakeluluettelon sovelluksen määrityskäytännön. Kun tässä jakeluluettelossa olevat käyttäjät ja laitteet käynnistävät iOS-mobiilisovelluksen, toimitaan seuraavasti. 
+ Oletetaan, että julkaiset jakeluluettelon sovelluksen määrityskäytännön. Kun tässä jakeluluettelossa olevat käyttäjät ja laitteet käynnistävät mobiilisovelluksen, toimitaan seuraavasti. 
 
 1. Sanomassa ilmoitetaan mobiilisovelluksen olevan määritetty raporttipalvelimen kanssa. Käyttäjä voi **kirjautua sisään** napauttamalla.
 
-    ![Kirjaudu sisään raporttipalvelimelle](media/configure-powerbi-mobile-apps-remote/power-bi-config-server-sign-in.png)
+    ![Kirjaudu sisään raporttipalvelimeen](media/configure-powerbi-mobile-apps-remote/power-bi-config-server-sign-in.png)
 
 2.  **Muodosta yhteys palvelimeen** -sivulla raporttipalvelimen tiedot on valmiiksi täytetty. Käyttäjä napauttaa **Yhdistä**.
 

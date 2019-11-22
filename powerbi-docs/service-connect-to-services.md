@@ -8,18 +8,18 @@ ms.topic: conceptual
 ms.date: 08/29/2019
 ms.author: maggies
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 41881c1de66293689439364f3d1049f3d6b40607
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 91740d16a91aa8dc1936e8ae1a2812653c45e6a1
+ms.sourcegitcommit: 50c4bebd3432ef9c09eacb1ac30f028ee4e66d61
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73873013"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "73925816"
 ---
 # <a name="connect-to-the-services-you-use-with-power-bi"></a>Käyttämiesi palveluiden yhdistäminen Power BI:hin
 Power BI:n avulla voit yhdistää moniin liiketoiminnassasi käyttämiin palveluihin, kuten Salesforce, Microsoft Dynamics ja Google Analytics. Power BI käynnistyy käyttäen tunnistetietojasi ja muodostaa yhteyden palveluun. Se luo Power BI *-työtilan*, jossa on koontinäyttö ja Power BI -raportteja, jotka näyttävät automaattisesti tietosi ja antavat visuaalisesti merkityksellisiä tietoja liiketoiminnastasi.
 
 >[!IMPORTANT]
->Poistamme useita sisältöpaketteja käytöstä 25. syyskuuta 2019. Kaikki asennetut sisältöpaketit toimivat edelleen, mutta et voi asentaa uutta tämän päivämäärän jälkeen. [Mallisovellukset](https://docs.microsoft.com/power-bi/service-template-apps-overview) korvaavat palvelun sisältöpaketit.
+>Palvelun sisältöpaketit korvataan [mallisovelluksilla](https://docs.microsoft.com/power-bi/service-template-apps-overview). 25. syyskuuta 2019 useat sisältöpaketit ovat jo vanhentuneet. Kaikki vanhentuneet sisältöpaketit, jotka olet asentanut, säilyvät tililläsi, mutta niille ei tarjota dokumentaatiota tai tukea, eikä niitä voi asentaa uudelleen.
 
 Kirjaudu sisään Power BI:hin, niin voit tarkastella kaikkia [palveluja, joihin voit muodostaa yhteyden](https://app.powerbi.com/getdata/services). 
 

@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 07/30/2018
 LocalizationGroup: Reports
-ms.openlocfilehash: 2fd0a3d878641264e84a14579901a9685b0f6e8b
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 52beebb839907a6b4141cec089184fcb693fe817
+ms.sourcegitcommit: 0d7ad791a2d2bef45d5d60e38e0af4c9fc22187b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73875094"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74010696"
 ---
 # <a name="power-bi-performance-best-practices"></a>Power BI:n suorituskykyä parantavat parhaat käytännöt
 
@@ -152,8 +152,6 @@ Paikallinen tietoyhdyskäytävä on erinomainen työkalu, jonka avulla voit yhdi
 Verkon viive voi vaikuttaa raportin suorituskykyyn kasvattamalla aikaa, jonka pyynnöt tarvitsevat saavuttaakseen Power BI -palvelun, ja vastausten toimitusaikaa. Vuokraajille nimetään Power BI:ssä tietty alue. Voit tarkastella vuokraajan ”kotialuetta” siirtymällä powerbi.com-palveluun, valitsemalla oikeasta yläkulmasta **?** ja lopuksi **Tietoja Power BI:stä**. Kun vuokraajan käyttäjät käyttävät Power BI -palvelua, heidän pyyntönsä reititetään aina tälle alueelle. Kun pyynnöt saavuttavat Power BI -palvelun, palvelu voi tämän jälkeen lähettää lisäpyyntöjä esimerkiksi taustalla olevaan tietolähteeseen tai yhdyskäytävään, joita verkkoviive koskee myös.
 
 Työkalut, kuten [Azure Speed Test](https://azurespeedtest.azurewebsites.net/), voivat osoittaa verkkoviiveen asiakkaan ja Azure-alueen välillä. Yleensä voit minimoida verkkoviiveen vaikutuksen pyrkimällä pitämään tietolähteet, yhdyskäytävät ja Power BI -klusterin mahdollisimman lähellä. Jos verkkoviive on ongelma, voit kokeilla yhdyskäytävien ja tietolähteiden sijoittamista lähemmäs Power BI -klusteria sijoittamalla ne näennäiskoneisiin.
-
-Jos haluat pienentää verkkoviivettä vielä lisää, harkitse [Azure ExpressRoutea](https://azure.microsoft.com/services/expressroute/), joka pystyy luomaan nopeampia ja luotettavampia verkkoyhteyksiä asiakkaiden ja Azure-palvelinkeskusten välillä.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 

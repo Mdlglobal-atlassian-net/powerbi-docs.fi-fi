@@ -3,18 +3,18 @@ title: Raporttiparametrit Power BI:n raportin muodostimessa
 description: Tässä aiheessa kuvataan Power BI:n sivutetun raportin muodostimen raporttiparametrien yleisiä käyttötarkoituksia, määritettäviä ominaisuuksia ja paljon muuta.
 ms.service: powerbi
 ms.subservice: report-builder
-ms.custom: ''
 ms.topic: conceptual
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ''
+ms.custom: ''
 ms.date: 06/06/2019
-ms.openlocfilehash: 21fe08c2cba004a6aff77eae12303d0181ab56ec
-ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.openlocfilehash: d31036676a5960f7f6eb0f346c2c02ab979ff9bc
+ms.sourcegitcommit: 01de0b01f66f28ca45b8d309d7864f261d6c9a85
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "66840529"
+ms.lasthandoff: 11/16/2019
+ms.locfileid: "74128432"
 ---
 # <a name="report-parameters-in-power-bi-report-builder"></a>Raporttiparametrit Power BI:n raportin muodostimessa
 
@@ -40,7 +40,7 @@ Tässä aiheessa kuvataan Power BI:n sivutetun raportin muodostimen raporttipara
 
 Kun tarkastelet raporttia, jossa on parametreja, raporttien katseluohjelman työkalurivi näyttää jokaisen parametrin, joten voit määrittää arvot vuorovaikutteisesti. Seuraavassa kuvassa on raportin parametrialue, jossa on parametrit @ReportMonth, @ReportYear, @EmployeeID, @ShowAll, @ExpandTableRows, @CategoryQuota ja @SalesDate.  
 
-![Näytä parametreja sisältävä raportti](media/report-builder-parameters/report-builder-parameters-power-bi-service.png "Näytä parametreja sisältävä raportti")
+![Parametreja sisältävän raportin tarkastelu](media/report-builder-parameters/report-builder-parameters-power-bi-service.png "Parametreja sisältävän raportin tarkastelu")
   
 1. **Parametrit-ruutu** Raporttien katseluohjelman työkalurivi näyttää kehotteen ja kunkin parametrin oletusarvon. Voit mukauttaa parametrien asettelua parametriruudussa.  
   
@@ -65,7 +65,7 @@ Voit luoda raporttiparametreja muutamalla eri tavalla.
   
  Lisää muuttujia sisältävä tietojoukkokysely tai syöteparametreja sisältävä tietojoukon tallennettu toimintosarja. Kullekin muuttujalle sekä syöteparametrille luodaan tietojoukkoparametri ja kullekin tietojoukkoparametrille raporttiparametri.  
   
-![Parametritietojoukon ominaisuudet raportin muodostimessa](media/report-builder-parameters/report-builder-parameter-dataset.png "Parametritietojoukon ominaisuudet raportin muodostimessa")
+![Report Builder -parametritietojoukon ominaisuudet](media/report-builder-parameters/report-builder-parameter-dataset.png "Report Builder -parametritietojoukon ominaisuudet")
 
   
  Raportin muodostimen kuvassa näytetään:  

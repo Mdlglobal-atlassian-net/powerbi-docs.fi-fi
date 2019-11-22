@@ -1,5 +1,5 @@
 ---
-title: SAP-muuttujien muokkaus Power BI -palvelussa (esikatselu)
+title: SAP-muuttujien muokkaus Power BI -palvelussa
 description: Azure ja Power BI
 author: Sujata994
 ms.author: sunaraya
@@ -7,22 +7,22 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 08/12/2019
+ms.date: 11/12/2019
 LocalizationGroup: Data from databases
-ms.openlocfilehash: d78124045767323cca657fa41d4415ca2e929f3d
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: cec8d598713000ec1d2b5a1fb72ebaa7d8932faf
+ms.sourcegitcommit: 0d7ad791a2d2bef45d5d60e38e0af4c9fc22187b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73881922"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74010877"
 ---
-# <a name="edit-sap-variables-in-the-power-bi-service-preview"></a>SAP-muuttujien muokkaus Power BI -palvelussa (esikatselu)
+# <a name="edit-sap-variables-in-the-power-bi-service"></a>SAP-muuttujien muokkaus Power BI -palvelussa
 
-Kun käytössä on SAP Business Warehouse tai SAP HANA ja DirectQuery, raporttien tekijät voivat nyt antaa käyttäjille luvan muokata SAP-muuttujia **Power BI -palvelun** Premium-työtiloissa.
+Kun käytössä on SAP Business Warehouse tai SAP HANA ja DirectQuery, raporttien tekijät voivat nyt antaa käyttäjille luvan muokata SAP-muuttujia **Power BI -palvelun** Premium-työtiloissa ja jaetuissa työtiloissa. Huomaa, että tämä ominaisuus EI toimi oman työtilan Jaettu kanssani -välilehden raporteissa. 
 
 ![Muokkaa muuttujia -valintaikkuna](media/service-edit-sap-variables/sap-edit-variables-dialog.png)
 
-Tässä asiakirjassa kuvataan Power BI -muuttujien muokkaamisvaatimukset, tämän esikatselutoiminnon ottaminen käyttöön ja muuttujien muokkaaminen Power BI -palvelussa.
+Tässä asiakirjassa kuvataan Power BI -muuttujien muokkaamisvaatimukset, tämän toiminnon ottaminen käyttöön ja muuttujien muokkaaminen Power BI -palvelussa.
 
 ## <a name="requirements-for-sap-edit-variables"></a>SAP-muokkausmuuttujien vaatimukset
 
@@ -35,8 +35,6 @@ SAP-muokkausmuuttujien käyttämiseen on joitakin vaatimuksia. Seuraavassa luett
 
 **DirectQuery-yhteydet vaaditaan**  – yhteys SAP-tietolähteeseen on muodostettava DirectQueryn avulla. Tuontiyhteyksiä ei tueta.
 
-**Power BI Premium -tilaus vaaditaan** – SAP-muokkausmuuttujat toimivat tällä hetkellä vain Power BI Premium -tilauksissa.
-
 **Kertakirjautuminen on määritettävä** – tämän toiminnon käyttö edellyttää, että kertakirjautuminen (SSO) on määritettävä. Lisätietoja on [kertakirjautumisen (SSO) yleiskatsauksessa](service-gateway-sso-overview.md).
 
 **Uudet yhdyskäytäväbitit vaaditaan** – lataa uusin yhdyskäytävä ja päivitä nykyinen yhdyskäytäväsi. Lisätietoja on [palvelun yhdyskäytävässä](service-gateway-onprem.md).
@@ -47,7 +45,7 @@ SAP-muokkausmuuttujien käyttämiseen on joitakin vaatimuksia. Seuraavassa luett
 
 ## <a name="how-to-enable-the-feature"></a>Ominaisuuden ottaminen käyttöön
 
-Jotta **SAP-muokkausmuuttujat** voidaan ottaa käyttöön, Power BI Desktop on yhdistettävä SAP HANA- tai SAP BW -tietolähteeseen. Valitse sitten **Tiedosto > Asetukset ja vaihtoehdot > Asetukset** ja valitse vasemmanpuoleisen ruudun Nykyinen tiedosto -osasta **DirectQuery**. Kun valitset tämän, näet oikeanpuoleisessa ruudussa DirectQuery-asetukset ja valintaruudun, jossa voit **antaa käyttäjien muuttaa SAP-muuttujia raportissa (esikatselu)** seuraavan kuvan mukaisesti.
+Jotta **SAP-muokkausmuuttujat** voidaan ottaa käyttöön, Power BI Desktop on yhdistettävä SAP HANA- tai SAP BW -tietolähteeseen. Valitse sitten **Tiedosto > Asetukset ja vaihtoehdot > Asetukset** ja valitse vasemmanpuoleisen ruudun Nykyinen tiedosto -osasta **DirectQuery**. Kun valitset tämän, näet oikeanpuoleisessa ruudussa DirectQuery-asetukset ja valintaruudun, jossa voit **antaa käyttäjien muuttaa SAP-muuttujia raportissa** seuraavan kuvan mukaisesti.
 
 ![DirectQuery-asetukset](media/service-edit-sap-variables/sap-preview-setting-in-desktop.png)
 
@@ -77,10 +75,6 @@ Se onnistuu seuraavasti:
     ![Palauta oletukset](media/service-edit-sap-variables/reset-to-default.png)
 
 Kun julkaistua raporttia käsitellään Power BI -palvelussa, jossa on käytössä SAP HANA tai SAP BW ja **Muokkaa muuttujia** -toiminto, raportin omistaja voi muuttaa kyseisiä oletusarvoja. Raportin omistaja voi muuttaa muuttujia muokkaustilassa ja tallentaa raportin, jotta näistä asetuksista tulee kyseisen raportin *uudet oletusasetukset*. Kuka tahansa muu käyttäjä, joka käyttää raporttia omistajan tekemien muutosten jälkeen, näkee nämä uudet asetukset oletusasetuksina.
-
-## <a name="issues-and-considerations"></a>Ongelmat ja huomioitavat seikat
-
-Tällä hetkellä SAP-muokkausmuuttujia ei tueta sovelluksissa.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
