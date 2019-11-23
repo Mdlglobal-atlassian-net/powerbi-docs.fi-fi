@@ -407,6 +407,8 @@
       items:
         - name: Tietotyypit Power BI Desktopissa
           href: desktop-data-types.md
+        - name: Power BI -tietolähteet
+          href: power-bi-data-sources.md
         - name: Power BI Desktopin (esiversio) päivitetyn valintanauhan käyttäminen
           href: desktop-ribbon.md
         - name: Power BI Desktopin kaavaeditorin pikanäppäimet
