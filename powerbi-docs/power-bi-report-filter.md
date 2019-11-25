@@ -53,7 +53,7 @@ Jos olet ottanut **uuden ulkoasun** käyttöön Power BI -palvelussa ![Uusi ulko
 Jos et ole ottanut uutta ulkoasua käyttöön, voit nähdä uuden suodatuskokemuksen noudattamalla seuraavia vaiheita.
 
 1. Valitse Power BI -palvelussa **Raportit**-välilehti työtilan sisältöluettelosta.
-2. Etsi raportti, jonka haluat ottaa käyttöön, ja valitse kyseisen raportin **Asetukset**-kuvake ](media/power-bi-report-filter/power-bi-settings-icon.png)Raportin asetukset -kuvake![.
+2. Etsi raportti, jonka haluat ottaa käyttöön, ja valitse kyseisen raportin **Asetukset**-kuvake ![Raportin asetukset -kuvake](media/power-bi-report-filter/power-bi-settings-icon.png).
 3. Valitse **Suodatuskokemus**-kohdan alta **Ota käyttöön päivitetty suodatinruutu ja näytä suodattimet visualisoinnin otsikossa tälle raportille**.
 
     ![Ota käyttöön päivitettyjen suodattimien ruutu](media/power-bi-report-filter/power-bi-service-filter-enable.png)
