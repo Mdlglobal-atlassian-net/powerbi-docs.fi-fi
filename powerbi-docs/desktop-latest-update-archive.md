@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 11/11/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 8ae5e8e348c982c7e1dffd469e180f4353910bf3
-ms.sourcegitcommit: 08b73af260ded51daaa6749338cb85db2eab587f
+ms.openlocfilehash: 228bc9a7c6d02b5c2cdf34178c7b023c78fa23ea
+ms.sourcegitcommit: 7f27b9eb0e001034e672050735ab659b834c54a3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "74099491"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74310810"
 ---
 # <a name="previous-monthly-updates-to-power-bi-desktop"></a>Power BI Desktopin aiemmat kuukausipäivitykset
 
@@ -1503,7 +1503,7 @@ Seuraavat päivitykset olivat uutta **Power BI Desktopissa** tässä kuussa:
 ### <a name="reporting"></a>Raportointi:
 
 -   Kirjanmerkkien lisääminen (esikatselu) [[video]](https://youtu.be/jksjtR8GnBE?t=1m47s) [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2017-feature-summary/#bookmarking) [[artikkeli]](desktop-bookmarks.md)
--   Valintaruudun ja visualisointien näyttöohjausobjektit [[video]](https://youtu.be/jksjtR8GnBE?t=7m26s)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2017-feature-summary/#selectionPane) [[artikkeli]](desktop-bookmarks.md#visibility---using-the-selection-pane) 
+-   Valintaruudun ja visualisointien näyttöohjausobjektit [[video]](https://youtu.be/jksjtR8GnBE?t=7m26s)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2017-feature-summary/#selectionPane) [[artikkeli]](desktop-bookmarks.md#visibility-using-the-selection-pane) 
 -   Kirjanmerkkilinkit muodoille ja kuville  [[video]](https://youtu.be/jksjtR8GnBE?t=8m54s)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2017-feature-summary/#links) [[artikkeli]](desktop-bookmarks.md#bookmarks-for-shapes-and-images)
 -   Korostus [[video]](https://youtu.be/jksjtR8GnBE?t=5m39s)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2017-feature-summary/#spotlight) [[artikkeli]](desktop-bookmarks.md#using-spotlight)
 -   Piste- ja kuplakaaviomerkit  [[video]](https://youtu.be/jksjtR8GnBE?t=17m20s)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2017-feature-summary/#markers)  [[artikkeli]](desktop-accessibility.md)

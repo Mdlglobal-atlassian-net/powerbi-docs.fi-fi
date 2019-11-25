@@ -9,12 +9,12 @@ ms.subservice: powerbi-consumer
 ms.topic: conceptual
 ms.date: 09/04/2019
 ms.author: mihart
-ms.openlocfilehash: 32a93a881a801ec5dd335f167e69a5b76f53d694
-ms.sourcegitcommit: a5853ef44ed52e80eabee3757bb6887fa400b75b
+ms.openlocfilehash: 668665bcdbbb4b06a6fd1a2ee6d4af2437be77b3
+ms.sourcegitcommit: c395fe83d63641e0fbd7c98e51bbab224805bbcc
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73764710"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74264869"
 ---
 # <a name="glossary-for-power-bi-service"></a>Power BI -palvelun sanasto
 Power BI -palvelussa saattaa olla ennestään tuntematonta tai sekavalta vaikuttavaa terminologiaa. Sanasto on hyvä paikka termien hakuun, joten se on hyvä lisätä suosikkeihin. Toinen hyvä resurssi lisätietojen saamiseen Power BI -palvelun muodostavista rakenneosista ovat [peruskäsitteet](end-user-basic-concepts.md). Peruskäsitteet tarjoavat korkean tason yleiskatsauksen Power BI:n *osiin* ja niiden yhteyksiin.
@@ -34,8 +34,6 @@ Tämä sanasto on yhteisön luoma.  Etkö näe etsimääsi sanaa? Pyydä meitä 
 **alert, alerts (hälytys, hälytykset)** Ominaisuus, joka ilmoittaa käyttäjille muutoksista tiedoissa heidän asettamissaan rajoissa. Hälytykset voidaan määrittää ruuduille, jotka on kiinnitetty raportin visualisoinneista. Käyttäjät saavat hälytykset palveluun ja mobiilisovellukseensa.
 
 **annotate (lisätä huomautus)** Voit kirjoittaa rivejä, tekstiä tai leimoja ruudun, raportin tai visualisoinnin tilannevedokseen Power BI -mobiilisovelluksessa iOS-ja Android-laitteissa.
-
-**answer card, answer page (vastauskortti, vastaussivu)** Katso Cortanan vastauskortti.
 
 **app, apps (sovellus, sovellukset)** 
 
@@ -77,10 +75,6 @@ Tämä sanasto on yhteisön luoma.  Etkö näe etsimääsi sanaa? Pyydä meitä 
 **content pack (sisältöpaketti)** Kokoelma esipakattuja tietojoukkoja, raportteja ja koontinäyttöjä. Nyt **sovellukset**, lue [uudesta työtilakokemuksesta](https://docs.microsoft.com/power-bi/service-create-the-new-workspaces). 
 
 **content view (sisältönäkymä)**
-
-**Cortana answer card (Cortana-vastauskortti)** Varattu raporttisivu Power BI -raportin sisällyttämiseen mukautettujen Cortana-vastausten luomiseksi.
-
-**Cortana answer page (Cortana-vastaussivu)** Cortana-sivun nimi, joka näytetään asiakkaalle.
 
 **cross filter, cross highlight (ristisuodatus, ristiinkorostus)**
 

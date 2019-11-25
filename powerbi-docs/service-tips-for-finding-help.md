@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 06/28/2018
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: ee272f32dbce4630f8b834187e05fda5739df7be
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 10540ed49064b9e28543ce46b43d8bb2d9ca6cf7
+ms.sourcegitcommit: 57ec4d51744b89bd695e6c62184c21342f2eae83
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73876938"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "74178265"
 ---
 # <a name="10-tips-for-getting-help-with-your-power-bi-questions"></a>10 vinkkiä ohjeiden saamiseen, kun sinulla on Power BI:tä koskevia kysymyksiä
 Turhaudutko joskus Power BI:tä käyttäessäsi tai oletko pulassa, koska et saa vastauksia Power BI:tä koskeviin kysymyksiisi juuri silloin kun tarvitset niitä? 
@@ -44,7 +44,7 @@ Sopivatko videot paremmin oppimistyyliisi? YouTubessa on kaksi Power BI -videojo
 ## <a name="6-attend-training"></a>6 Osallistu koulutukseen
 Käytettävissäsi olevat koulutusvaihtoehdot ovat lähes rajattomat – henkilökohtaisesta laboratoriokoulutuksesta lyhyisiin videoihin.
 
-* [Ohjattu oppiminen](guided-learning/index.md) Power BI -sivustossa.
+* [Ohjattu oppiminen](guided-learning/index.yml) Power BI -sivustossa.
 * Reaaliaikaiset, on-demand-perusteiset [ilmaiset Power BI -verkkoseminaarit](webinars.md) Power BI-sivustossa.
 
 Voit etsiä verkosta seuraavien kaltaisia lisävaihtoehtoja:

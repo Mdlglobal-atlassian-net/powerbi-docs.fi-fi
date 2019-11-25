@@ -10,12 +10,12 @@ ms.date: 09/25/2019
 ms.author: mblythe
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: 9970d676019bb253471da48ce3e9019e211ba6c5
-ms.sourcegitcommit: 01de0b01f66f28ca45b8d309d7864f261d6c9a85
+ms.openlocfilehash: bb842128c26161d2f8da2961c6f014b9ecb45fc5
+ms.sourcegitcommit: c395fe83d63641e0fbd7c98e51bbab224805bbcc
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/16/2019
-ms.locfileid: "74128373"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74265904"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>Power BI:n hallinta hallintaportaalissa
 
@@ -278,13 +278,6 @@ Raporttien luojat voivat jakaa sovelluksia suoraan käyttäjien kanssa ilman ase
 
 ## <a name="integration-settings"></a>Integrointiasetukset
 
-### <a name="ask-questions-about-data-using-cortana"></a>Kysymysten esittäminen tiedoille Cortanan avulla
-
-Organisaation käyttäjät voivat kysyä kysymyksiä tiedoistaan Cortanan avulla. [Lue lisää](service-cortana-enable.md)
-
-> [!NOTE]
-> Tämä asetus koskee koko organisaatiota, joten sitä ei rajoittaa ryhmien avulla.
-
 ### <a name="use-analyze-in-excel-with-on-premises-datasets"></a>Analysoi Excelissä -toiminnon käyttäminen paikallisten tietojoukkojen kanssa
 
 Organisaation käyttäjät voivat käyttää paikallisia Power BI -tietojoukkoja Excelillä. [Lue lisää](service-analyze-in-excel.md)
@@ -298,7 +291,7 @@ Organisaation käyttäjät voivat käyttää Esrin tarjoamaa ArcGIS Maps for Pow
 
 ### <a name="use-global-search-for-power-bi-preview"></a>Power BI:n yleisen haun käyttäminen (esikatselu)
 
-Organisaation käyttäjät voivat käyttää Azure-hausta riippuvaisia ulkoisia hakutoimintoja. Käyttäjät voivat esimerkiksi käyttää Cortanaa avaintietojen noutamiseen suoraan Power BI -koontinäytöistä ja raporteista. [Lue lisää](service-cortana-intro.md)
+Organisaation käyttäjät voivat käyttää Azure-hausta riippuvaisia ulkoisia hakutoimintoja.
 
 ## <a name="custom-visuals-settings"></a>Mukautettujen visualisointien asetukset
 
