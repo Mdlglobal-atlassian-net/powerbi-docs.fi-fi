@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
 ms.date: 05/9/2019
-ms.openlocfilehash: c6ecb2eb2346940a22bbd6b7bff5ca0138faa290
-ms.sourcegitcommit: 08b73af260ded51daaa6749338cb85db2eab587f
+ms.openlocfilehash: 373d57b871953f1afe02212ff0a1bbdb633cac4d
+ms.sourcegitcommit: a21f7f9de32203e3a4057292a24ef9b5ac6ce94b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "74102590"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74565245"
 ---
 # <a name="get-a-power-bi-visual-certified"></a>Sertifioinnin hankkiminen Power BI -visualisoinnille
 
@@ -70,7 +70,7 @@ Mukautetun visualisoinnin [sertifiointi](#get-a-power-bi-visual-certified) edell
 
 * Jos capabilities.json-tiedoston ominaisuuksia muutetaan, varmista, että ne eivät riko olemassa olevan käyttäjän raportteja.
 
-* Varmista, että visualisointi noudattaa [Power BI:n visualisointien ohjeita](./guidelines-powerbi-visuals.md#guidelines-for-power-bi-visuals-with-additional-purchases). **Vesileimoja ei sallita**.
+* Varmista, että visualisointi noudattaa [Power BI:n visualisointien ohjeita](./guidelines-powerbi-visuals.md). **Vesileimoja ei sallita**.
 
 * Visualisointi käyttää vain julkisia, tarkasteltavissa olevia OSS-komponentteja (Julkiset JS-kirjastot tai TypeScript. Lähdekoodi on tarkistettavissa eikä sisällä tunnettuja haavoittuvaisuuksia). Kaupallisia komponentteja käyttäviä mukautettuja visualisointeja ei voi vahvistaa.
 
