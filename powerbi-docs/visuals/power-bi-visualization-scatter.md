@@ -2,20 +2,20 @@
 title: Piste- ja kuplakaaviot Power BI:ssä
 description: Pistekaaviot ja kuplakaaviot Power BI:ssä
 author: mihart
-ms.reviewer: ''
+ms.reviewer: amac
 featuredvideoid: PVcfPoVE3Ys
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/24/2019
+ms.date: 11/21/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 88db87b995f52aa51023bd465d349459e1dd2965
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: a03ac63caf8da96cd7e786c99c8a8dcd36f45a75
+ms.sourcegitcommit: 7f27b9eb0e001034e672050735ab659b834c54a3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73870824"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74311694"
 ---
 # <a name="scatter-charts-bubble-charts-and-dot-plot-charts-in-power-bi"></a>Pistekaaviot ja kuplakaaviot Power BI:ssä
 
@@ -131,13 +131,30 @@ Nyt lisätään kolmas dimensio.
     > [!NOTE]
     > Useammat arvopisteet saattavat merkitä pidempää latausaikaa. Jos haluat julkaista raportteja, joissa on rajat asteikon lopussa, testaa raporttisi myös verkossa ja mobiililaitteessa. Voit näin varmistaa, että kaavion suorituskyky vastaa käyttäjien odotuksia.
 
-1. Voit [muotoilla visualisoinnin värejä, nimiä, otsikoita, taustaa ja muuta](service-getting-started-with-color-formatting-and-axis-properties.md).
-
-    Jos haluat [parantaa helppokäyttöisyyttä](../desktop-accessibility.md), harkitse merkin muotojen lisäämistä kullekin riville. Jos haluat valita merkin muodon, laajenna **Muodot**-kohtaa, valitse **Merkin muoto** ja valitse muoto.
+1. Jatka visualisoinnin värien, selitteiden, otsikoiden, taustan ja muiden muotoilua. Jos haluat [parantaa helppokäyttöisyyttä](../desktop-accessibility.md), harkitse merkin muotojen lisäämistä kullekin riville. Jos haluat valita merkin muodon, laajenna **Muodot**-kohtaa, valitse **Merkin muoto** ja valitse muoto.
 
     ![Näyttökuva avattavasta Muodot-valikosta, jossa on korostettu Merkin muoto -vaihtoehdot.](media/power-bi-visualization-scatter/pbi-scatter-marker.png)
 
-    Voit muuttaa merkin muodon vinoneliöksi, kolmioksi tai neliöksi. Erilaisten merkin muotojen käyttö kullekin riville helpottaa raporttien käyttäjiä erottamaan rivit (tai alueet) toisistaan.
+    Vaihda merkin muoto vinoneliöksi, kolmioksi tai neliöksi. Erilaisten merkin muotojen käyttö kullekin riville helpottaa raporttien käyttäjiä erottamaan rivit (tai alueet) toisistaan.
+
+1. Avaa Analysointi-ruutu ![Näyttökuvassa on Analysointi-ruudun kuvake.](media/power-bi-visualization-scatter/power-bi-analytics.png) lisätäksesi tietoja visualisointiisi.  
+    - Lisää mediaanin viiva. Valitse **Mediaanin viiva** > **Lisää**. Power BI lisää oletusarvoisesti mediaanin viivan *myynnille per neliöjalka*. Tästä ei ole juuri hyötyä, koska näemme, että arvopisteitä on 10, ja tiedämme, että mediaani luodaan siten, että kummallakin puolella on viisi arvopistettä. Vaihda **mittariksi** sen sijaan *Myyntivariaatio-% yhteensä*.  
+
+        ![Näyttökuvassa on kuplakaavio, johon on lisätty mediaanin viiva.](media/power-bi-visualization-scatter/power-bi-analytics-median.png)
+
+    - Lisää symmetriavarjostus näyttääksesi, minkä pisteiden arvo on suurempi x-akselin mittarilla y-akselin mittariin verrattuna ja päinvastoin. Kun otat symmetriavarjostuksen käyttöön Analysointi-ruudussa, Power BI näyttää pistekaavion taustan symmetrisesti nykyisen akselin ylä- ja alarajojen perusteella. Tämä on erittäin nopea tapa nähdä, minkä akselin mittarin puolella arvopiste on, etenkin silloin, jos sinulla on eri akselialueet x- ja y-akseleille.
+
+        a. Vaihda **Myyntivariaatio-% yhteensä** -kenttä **Edellisen vuoden myyntikateprosentti** -kenttään.
+
+        ![Näyttökuvassa on kuplakaavio, johon on lisätty mediaanin viiva.](media/power-bi-visualization-scatter/power-bi-format-symmetry.png)
+
+        b. Valitse Analysointiruudusta **Symmetriavarjostus**. Näemme varjostuksesta, että Sukkatuotteet (vihreä kupla vaaleanpunaisella varjostetulla alueella) on ainoa luokka, joka myyntikateprosentin puolella, ei neliöjalka- ja myymäläkohtaisen myynnin puolella. 
+
+        ![Näyttökuvassa on kuplakaavio, johon on lisätty symmetriavarjostus.](media/power-bi-visualization-scatter/power-bi-symmetry.png)
+
+    - Jatka Analysointi-ruudun tarkastelua ja etsi kiinnostavia oivalluksia tiedoistasi. 
+
+        ![Näyttökuvassa on kuplakaavio, johon on lisätty symmetriavarjostus.](media/power-bi-visualization-scatter/power-bi-analytics-example.png)
 
 ## <a name="create-a-dot-plot-chart"></a>Pistetulostuskaavion luominen
 

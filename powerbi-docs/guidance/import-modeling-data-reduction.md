@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 08/05/2019
 ms.author: v-pemyer
-ms.openlocfilehash: c61a21f400de009815ecb685f989b1cdafbcdb22
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 5560181f2fc52a02eebce274d88dc66517181517
+ms.sourcegitcommit: f1f57c5bc6ea3057007ed8636ede50188ed90ce1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73875619"
+ms.lasthandoff: 11/23/2019
+ms.locfileid: "74410769"
 ---
 # <a name="data-reduction-techniques-for-import-modeling"></a>Tietojen vähentämisen tekniikat tuonnin mallinnusta varten
 
@@ -24,11 +24,11 @@ Tuontimalleihin on ladattu pakattuja ja optimoituja tietoja, jotka VertiPaq-säi
 VertiPaq-säilömoduulin tuottamista tehokkuuseduista huolimatta on tärkeää pyrkiä minimoimaan malleihin ladatut tiedot. Tämä pätee erityisesti suuriin malleihin tai malleihin, joiden odotetaan kasvavan suuriksi ajan mittaan. Neljä vakuuttavaa syytä:
 
 - Kapasiteettisi ei välttämättä tue suurempia mallin kokoja. Jaettu kapasiteetti voi isännöidä enintään 1 gigatavun kokoisia malleja, kun taas Premium-kapasiteetit voivat isännöidä jopa 13 gigatavun kokoisia malleja. Lisätietoja on artikkelissa [Power BI Premiumin suurten tietojoukkojen tuki](../service-premium-large-datasets.md).
-- Pienemmät mallikoot vähentävät kapasiteettiresursseihin, erityisesti muistiin, liittyviä kiistoja. Tämän ansiosta enemmän malleja voidaan ladata samanaikaisesti entistä pidemmän aikaa, joten poistoprosentit putoavat. Jos haluat lisätietoja, tutustu aiheeseen [Miten kapasiteetit toimivat](../whitepaper-powerbi-premium-deployment.md#how-capacities-function) raportissa [Power BI:n premium-käyttöönotto](../whitepaper-powerbi-premium-deployment.md).
+- Pienemmät mallikoot vähentävät kapasiteettiresursseihin, erityisesti muistiin, liittyviä kiistoja. Tämän ansiosta enemmän malleja voidaan ladata samanaikaisesti entistä pidemmän aikaa, joten poistoprosentit putoavat. Katso lisätietoja artikkelista [Premium-kapasiteettien hallinta](../service-premium-capacity-manage.md).
 - Pienemmissä malleissa tietojen päivitys on nopeampaa, joten tuloksena on pienemmät viiveet raportoinnissa, suurempi tietojoukon päivitysnopeus ja vähemmän painetta lähdejärjestelmässä ja kapasiteettiresursseissa.
 - Pienemmät taulukon rivimäärät voivat johtaa nopeampaan laskennan arviointiin, mikä voi tuottaa kyselyssä paremman yleisen suorituskyvyn.
 
-Tässä artikkelissa käsitellään kahdeksaa erilaista tietojen vähentämisen tekniikkaa. Näitä ovat esimerkiksi seuraavat:
+Tässä artikkelissa käsitellään kahdeksaa erilaista tietojen vähentämisen tekniikkaa. Näitä tekniikoita ovat esimerkiksi seuraavat:
 
 - [Poista tarpeettomat sarakkeet](#remove-unnecessary-columns)
 - [Poista tarpeettomat rivit](#remove-unnecessary-rows)
@@ -46,9 +46,9 @@ Mallitaulukon sarakkeilla on kaksi päätarkoitusta:
 - **Raportoinnin** avulla voi luoda raporttimalleja, jotka suodattavat, ryhmittelevät ja vetävät yhteen mallin tiedot asianmukaisesti
 - **Mallin rakenne** tukee mallin yhteyksiä, mallin laskelmia, suojausrooleja ja jopa tietojen värimuotoilua
 
-Sarakkeet, jotka eivät palvele näitä tarkoituksia, poistetaan todennäköisesti. Sarakkeiden poistamista kutsutaan _pystysuuntaiseksi suodatukseksi_.
+Sarakkeet, jotka eivät palvele näitä tarkoituksia, todennäköisesti poistetaan. Sarakkeiden poistamista kutsutaan _pystysuuntaiseksi suodatukseksi_.
 
-Suosittelemme, että suunnittelet malleja, joissa on täsmälleen oikea määrä sarakkeita tunnettujen raportointivaatimusten perusteella. Vaatimukset voivat tietenkin muuttua ajan mittaan, mutta muista, että sarakkeita on helpompi lisätä kuin poistaa. Sarakkeiden poistaminen voi rikkoa raportit tai mallin rakenteen.
+Suosittelemme, että suunnittelet malleja, joissa on täsmälleen oikea määrä sarakkeita tunnettujen raportointivaatimusten perusteella. Vaatimukset voivat muuttua ajan mittaan, mutta muista kuitenkin se, että sarakkeita on helpompi lisätä kuin poistaa. Sarakkeiden poistaminen voi rikkoa raportit tai mallin rakenteen.
 
 ## <a name="remove-unnecessary-rows"></a>Poista tarpeettomat rivit
 
@@ -56,13 +56,13 @@ Mallin taulukoihin tulee ladata mahdollisimman vähän rivejä. Tämä voidaan t
 
 **Suodattamisessa entiteetin mukaan** malliin ladataan lähdetiedoista alijoukko. Esimerkiksi sen sijaan, että ladattaisiin kaikkien myyntialueiden myyntitiedot, ladataan vain yhden alueen tiedot. Tämä rakennelähestymistapa saa aikaan useita pienempiä malleja. Se voi myös poistaa tarpeen määrittää rivitason suojaus (mutta tietyt tietojoukon oikeudet on myönnettävä Power BI -palvelussa ja kuhunkin tietojoukkoon yhteyden muodostavat raporttien kopiot on myös luotava). Voit yksinkertaistaa hallintaa ja julkaisemista käyttämällä Power Query -parametreja ja Power BI:n mallitiedostoja. Lisätietoja on blogikirjoituksessa [Syväkatsaus kyselyparametreihin ja Power BI:n malleihin](https://powerbi.microsoft.com/blog/deep-dive-into-query-parameters-and-power-bi-templates/).
 
-**Suodatuksessa ajan mukaan** rajoitetaan tietotyyppitaulukoihin ladattavan _tietohistorian_ määrää (ja samalla mallin päivämäärätaulukoihin ladattavia päivämäärärivejä). Suosittelemme, ettet lataa automaattisesti kaikkea saatavilla olevaa historiaa, ellei se ole tiedossa oleva raportointivaatimus. On hyödyllistä ymmärtää, että aikaan perustuvia Power Query -suodattimia voidaan parametrisoida ja jopa määrittää käyttämään suhteellisia ajanjaksoja (suhteessa päivityspäivämäärään, esimerkiksi viimeiset viisi vuotta). Muista myös, että aikasuodattimien taannehtivat muutokset eivät riko raportteja. Muutoksen tuloksena raporteissa on käytettävissä vähemmän (tai enemmän) tietoa.
+**Suodatuksessa ajan mukaan** rajoitetaan tietotyyppitaulukoihin ladattavan _tietohistorian_ määrää (ja samalla mallin päivämäärätaulukoihin ladattavia päivämäärärivejä). Suosittelemme, että et lataa automaattisesti kaikkea saatavilla olevaa historiaa, ellei se ole tiedossa oleva raportointivaatimus. On hyödyllistä ymmärtää, että aikaan perustuvia Power Query -suodattimia voidaan parametrisoida ja jopa määrittää käyttämään suhteellisia ajanjaksoja (suhteessa päivityspäivämäärään, esimerkiksi viimeiset viisi vuotta). Muista myös, että aikasuodattimien taannehtivat muutokset eivät riko raportteja. Muutoksen tuloksena raporteissa on käytettävissä vähemmän (tai enemmän) tietoa.
 
 ## <a name="group-by-and-summarize"></a>Ryhmittelyperuste ja yhteenveto
 
 Valmiiksi yhteenvedettyjen tietojen lataaminen on kenties tehokkain tapa pienentää mallin kokoa. Tätä tekniikkaa voidaan käyttää tiedonjyvätyyppisten taulukoiden koostamiseen. Vastakauppana tosin yksityiskohtia menetetään.
 
-Esimerkiksi lähdemyynnin tietotaulukossa tallennetaan yksi rivi tilausriviä kohti. Tietojen määrää voidaan vähentää merkittävästi vetämällä yhteen kaikki myyntimittarit ja ryhmittelemällä päivämäärän, asiakkaan ja tuotteen mukaan. Huomaa, että tätäkin enemmän tietoja voidaan vähentää ryhmittelemällä päivämäärän mukaan _kuukauden tasolla_. Tällä tavalla mallin koko voi pienentyä 99 %, mutta tällöin raportointi päivän tasolla tai yksittäisen tilauksen tasolla ei ole enää mahdollista. Tietotyyppitietojen yhteenvedosta päättäminen edellyttää aina kompromisseja. Tätä kompromissia voidaan lieventää käyttämällä rakenteena yhdistelmämallia. Tätä käsitellään myöhemmin aiheessa [Vaihda yhdistelmätilaan](#switch-to-mixed-mode).
+Esimerkiksi lähdemyynnin tietotaulukossa tallennetaan yksi rivi tilausriviä kohti. Tietojen määrää voidaan vähentää merkittävästi vetämällä yhteen kaikki myyntimittarit ja ryhmittelemällä päivämäärän, asiakkaan ja tuotteen mukaan. Huomaa, että tätäkin enemmän tietoja voidaan vähentää ryhmittelemällä päivämäärän mukaan _kuukauden tasolla_. Tällä tavalla mallin koko voi pienentyä jopa 99 prosenttia, mutta tällöin raportointi päivän tasolla tai yksittäisen tilauksen tasolla ei ole enää mahdollista. Tietotyyppitietojen yhteenvedosta päättäminen edellyttää aina kompromisseja. Tätä kompromissia voidaan lieventää käyttämällä rakenteena yhdistelmämallia. Tätä käsitellään myöhemmin aiheessa [Vaihda yhdistelmätilaan](#switch-to-mixed-mode).
 
 ## <a name="optimize-column-data-types"></a>Sarakkeen tietotyyppien optimoiminen
 
@@ -94,7 +94,7 @@ Power BI Desktopissa on asetus nimeltä _Automaattinen päivämäärä ja aika_.
 
 Power BI Desktopin yhdistelmätilan rakenne tuottaa yhdistelmämallin. Sen avulla voit määrittää tallennustilan tilan _kullekin taulukolle_. Sen takia jokaisessa taulukossa taulukon Tallennustilan tila -ominaisuuden arvoksi voidaan asettaa Tuo tai DirectQuery (Kaksoistaulukko on myös vaihtoehtona).
 
-Tehokas menetelmä pienentää mallin kokoa on määrittää Tallennustilan tila -ominaisuuden arvoksi DirectQuery suuremmissa tietotyyppisissä taulukoissa. Huomaa, että tämä rakennemenetelmä voi toimia hyvin edellä käsitellyn [Ryhmittelyperuste ja yhteenveto](#group-by-and-summarize) -aiheen kanssa. Esimerkiksi myynnin yhteenvetotietoja voidaan käyttää suorituskykyisen yhteenvetoraportoinnin saavuttamiseen. Porautumissivulla voidaan näyttää tarkka myynti tietyllä (ja suppealla) suodatuskontekstilla, jotta kaikki kontekstiin sisältyvät myyntitilaukset näkyvät. Tässä esimerkissä porautumissivu sisältää DirectQuery-taulukkoon perustuvia visualisointeja myyntitilauksen tietojen noutamiseksi.
+Tehokas menetelmä pienentää mallin kokoa on määrittää Tallennustilan tila -ominaisuuden arvoksi DirectQuery suuremmissa tietotyyppisissä taulukoissa. Ota huomioon, että tämä rakennemenetelmä voi toimia hyvin edellä käsitellyn [Ryhmittelyperuste ja yhteenveto](#group-by-and-summarize) -tekniikan kanssa. Esimerkiksi myynnin yhteenvetotietoja voidaan käyttää suorituskykyisen yhteenvetoraportoinnin saavuttamiseen. Porautumissivulla voidaan näyttää tarkka myynti tietyllä (ja suppealla) suodatuskontekstilla, jotta kaikki kontekstiin sisältyvät myyntitilaukset näkyvät. Tässä esimerkissä porautumissivu sisältää DirectQuery-taulukkoon perustuvia visualisointeja myyntitilauksen tietojen noutamiseksi.
 
 Yhdistelmämalleihin liittyy kuitenkin useita tietoturva- ja suorituskykyvaikutuksia. Lisätietoja on artikkelissa [Yhdistelmämallien käyttäminen Power BI Desktopissa](../desktop-composite-models.md).
 
@@ -104,3 +104,4 @@ Lisätietoja Power BI:n tuontimallin rakenteesta on seuraavissa artikkeleissa:
 
 - [Yhdistelmämallien käyttäminen Power BI Desktopissa](../desktop-composite-models.md)
 - [Tallennustilan tila Power BI Desktopissa](../desktop-storage-mode.md)
+- Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)

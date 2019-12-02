@@ -10,18 +10,18 @@ ms.date: 07/15/2019
 ms.author: mblythe
 ms.custom: seodec18
 LocalizationGroup: Gateways
-ms.openlocfilehash: 1966a9ea38f8ff9d1517b4df5ed0db1254ddf80d
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: cb28db10eecdc32f844e29c8beea178f08fbf920
+ms.sourcegitcommit: f1f57c5bc6ea3057007ed8636ede50188ed90ce1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73881770"
+ms.lasthandoff: 11/23/2019
+ms.locfileid: "74410877"
 ---
 # <a name="manage-data-sources"></a>Tietolähteiden hallinta
 
 [!INCLUDE [gateway-rewrite](includes/gateway-rewrite.md)]
 
-Power BI tukee monia paikallisia tietolähteitä, joista jokaisella on omat vaatimuksensa. Yhdyskäytävää voidaan käyttää yksittäisen tietolähteen tai useiden tietolähteiden kanssa. Tässä esimerkissä näytämme, miten voit lisätä SQL Serverin tietolähteeksi. Vaiheet ovat samanlaiset muille tietolähteille.
+Power BI tukee monia [paikallisia tietolähteitä](power-bi-data-sources.md), joista jokaisella on omat vaatimuksensa. Yhdyskäytävää voidaan käyttää yksittäisen tietolähteen tai useiden tietolähteiden kanssa. Tässä esimerkissä näytämme, miten voit lisätä SQL Serverin tietolähteeksi. Vaiheet ovat samanlaiset muille tietolähteille.
 
 Useimmat tietolähteiden hallintatoiminnot voidaan suorittaa myös ohjelmointirajapintojen avulla. Lisätietoja on kohdassa [REST-ohjelmointirajapinnat (yhdyskäytävät)](/rest/api/power-bi/gateways).
 
@@ -117,56 +117,7 @@ Kun lisäät tietolähteen yhdyskäytävään, sinun on annettava tunnistetiedot
 
 ## <a name="list-of-available-data-source-types"></a>Luettelo käytettävissä olevista tietolähdetyypeistä
 
-Paikallinen tietoyhdyskäytävä tukee seuraavia Power BI:n tietolähteitä. Paikallisten tietolähteiden lisäksi palomuurin, VPN-yhteyden tai näennäisverkon takana olevat lähteet saattavat tarvita myös tietoyhdyskäytävää.
-
-| **Tietolähde** | **Reaaliaikainen yhteys / DirectQuery** | **Manuaalinen tai ajoitettu päivitys (käyttäjän määrittämä)** |
-| --- | --- | --- |
-| Amazon Redshift |Kyllä |Kyllä |
-| Analysis Services |Kyllä |Kyllä |
-| AtScale-kuutiot |Kyllä |Kyllä |
-| Azure Active Directory |Ei |Kyllä |
-| Azure-blob-objektitallennus |Ei |Kyllä |
-| Azure DevOps Server |Ei |Kyllä |
-| Azure-taulukkotallennus |Ei |Kyllä |
-| BI-liitin |Kyllä |Kyllä |
-| Denodo |Kyllä |Kyllä |
-| Dremio |Kyllä |Kyllä |
-| EmigoDataSourceConnector |Ei |Kyllä |
-| Essbase |Kyllä |Kyllä |
-| Exasol |Kyllä |Kyllä |
-| Tiedosto |Ei |Kyllä |
-| Kansio |Ei |Kyllä |
-| Paxata |Ei |Kyllä |
-| IBM DB2 |Kyllä |Kyllä |
-| IBM Informix -tietokanta |Ei |Kyllä |
-| IBM Netezza |Kyllä |Kyllä |
-| Impala |Kyllä |Kyllä |
-| Jethro ODBC |Kyllä |Kyllä |
-| Kyligence Enterprise |Kyllä |Kyllä |
-| MarkLogic ODBC |Kyllä |Kyllä |
-| Microsoft Graph Security |Ei |Kyllä |
-| MySQL |Ei |Kyllä |
-| ODBC |Ei |Kyllä |
-| OData |Ei |Kyllä |
-| OLE DB |Ei |Kyllä |
-| Oracle |Kyllä |Kyllä |
-| PostgreSQL |Ei |Kyllä |
-| QubolePresto |Kyllä |Kyllä |
-| Quick Base -liitin |Ei |Kyllä |
-| SAP Business Warehouse -viestipalvelin |Kyllä |Kyllä |
-| SAP Business Warehouse -palvelin |Kyllä |Kyllä |
-| SAP HANA |Kyllä |Kyllä |
-| SQL Server |Kyllä |Kyllä |
-| SharePoint |Ei |Kyllä |
-| Snowflake |Kyllä |Kyllä |
-| Spark |Kyllä |Kyllä |
-| SurveyMonkey |Ei |Kyllä |
-| Sybase |Ei |Kyllä |
-| TeamDesk.Database |Ei |Kyllä |
-| Teradata |Kyllä |Kyllä |
-| Vertica |Kyllä |Kyllä |
-| Verkko |Ei |Kyllä |
-| Työvoiman dimensiot |Ei |Kyllä |
+Saat lisätietoja paikallisen tietoyhdyskäytävän tukemista tietolähteistä [Power BI:n tietolähteiden artikkelista](power-bi-data-sources.md).
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 

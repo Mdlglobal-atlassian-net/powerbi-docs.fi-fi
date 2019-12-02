@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 09/09/2019
 ms.author: v-pemyer
-ms.openlocfilehash: 42da2dd74d80d2a68cf38c8d35ee4e500d6780d8
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 241789dc6255dd461ef6cc62425b732788d7c63d
+ms.sourcegitcommit: f1f57c5bc6ea3057007ed8636ede50188ed90ce1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73875594"
+ms.lasthandoff: 11/23/2019
+ms.locfileid: "74410836"
 ---
 # <a name="understand-star-schema-and-the-importance-for-power-bi"></a>Tutustu tähtirakenteeseen ja sen merkitykseen Power BI:ssä
 
@@ -27,7 +27,7 @@ Tämän artikkelin tarkoituksena ei ole käydä tähtirakenne läpi kokonaisvalt
 
 **Dimensiotaulukot** kuvailevat liiketoiminnan entiteettejä eli mallinnettavia asioita. Entiteetit voivat sisältää tuotteita, henkilöitä, paikkoja ja käsitteitä aika mukaan luettuna. Yhdenmukaisin tähtirakenteesta löytyvä taulukko on päivämäärän dimensiotaulukko. Dimensiotaulukko sisältää avainsarakkeen (tai -sarakkeet), joka toimii yksilöivänä tunnisteena, ja kuvaavia sarakkeita.
 
-**Faktataulukot** tallentavat havaintoja tai tapahtumia. Ne voivat olla myyntitilauksia, varastosaldoja, valuuttakursseja, lämpötiloja jne. Faktataulukko sisältää dimension avainsarakkeita, jotka liittyvät dimensiotaulukoihin, ja numeerisia mittarisarakkeita. Dimension avainsarakkeet määrittävät faktataulukon _dimensiot_, kun taas dimension avainarvot määrittävät faktataulukon _rakeisuuden_. Harkitse esimerkiksi faktataulukkoa, joka on suunniteltu tallentamaan myyntitavoitteet, joissa on kaksi dimension avainsaraketta: **Päivämäärä** ja **Tuoteavain**. On helppo ymmärtää, että taulukossa on kaksi dimensiota. Rakeisuutta ei kuitenkaan voida määrittää ottamatta huomioon dimension avainarvoja. Tässä esimerkissä otetaan huomioon, että **Päivämäärä**-sarakkeeseen tallennetut arvot ovat kunkin kuukauden ensimmäinen päivä. Tässä tapauksessa rakeisuus on kuukauden tuotetasolla.
+**Faktataulukot** sisältävät huomioita tai tapahtumia: ne voivat olla myyntitilauksia, varastosaldoja, valuuttakursseja, lämpötiloja jne. Faktataulukko sisältää dimension avainsarakkeita, jotka liittyvät dimensiotaulukoihin, ja numeerisia mittarisarakkeita. Dimension avainsarakkeet määrittävät faktataulukon _dimensiot_, kun taas dimension avainarvot määrittävät faktataulukon _rakeisuuden_. Harkitse esimerkiksi faktataulukkoa, joka on suunniteltu tallentamaan myyntitavoitteet, joissa on kaksi dimension avainsaraketta: **Päivämäärä** ja **Tuoteavain**. On helppo ymmärtää, että taulukossa on kaksi dimensiota. Rakeisuutta ei kuitenkaan voida määrittää ottamatta huomioon dimension avainarvoja. Tässä esimerkissä otetaan huomioon, että **Päivämäärä**-sarakkeeseen tallennetut arvot ovat kunkin kuukauden ensimmäinen päivä. Tässä tapauksessa rakeisuus on kuukauden tuotetasolla.
 
 Yleensä dimensiotaulukot sisältävät suhteellisen vähän rivejä. Faktataulukoissa voi sen sijaan olla erittäin paljon rivejä ja ne kasvavat ajan mittaan.
 
@@ -37,7 +37,7 @@ Yleensä dimensiotaulukot sisältävät suhteellisen vähän rivejä. Faktataulu
 
 Tähtirakenne ja monet tässä artikkelissa esitetyt liitännäiskäsitteet ovat erittäin merkityksellisiä suorituskyvyn ja käytettävyyden suhteen optimoitujen Power BI -mallien kehittämisessä.
 
-Huomaa, että jokainen Power BI -raportin visualisointi luo kyselyn, joka lähetetään Power BI -malliin (jota Power BI -palvelussa kutsutaan tietojoukoksi). Näitä kyselyitä käytetään mallitietojen suodattamiseen, ryhmittelemiseen ja vetämiseen yhteen. Hyvin suunniteltu malli on siis sellainen, joka tarjoaa taulukoita suodatusta ja ryhmittelyä varten ja taulukoita yhteenvedon tekemistä varten. Tämä sopii hyvin tähtirakenteen periaatteisiin:
+Huomaa, että jokainen Power BI -raportin visualisointi luo kyselyn, joka lähetetään Power BI -malliin (jota Power BI -palvelussa kutsutaan tietojoukoksi). Näitä kyselyitä käytetään mallitietojen suodattamiseen, ryhmittelemiseen ja vetämiseen yhteen. Hyvin suunniteltu malli on siis sellainen, joka tarjoaa taulukoita suodatusta ja ryhmittelyä varten ja taulukoita yhteenvedon tekemistä varten. Tämä malli sopii hyvin tähtirakenteen periaatteisiin:
 
 - Dimensiotaulukot tukevat _suodatusta_ ja _ryhmittelyä_.
 - Faktataulukot tukevat _yhteenvetoa_.
@@ -50,7 +50,7 @@ Hyvin jäsennetyn mallin rakenteen tulee sisältää taulukoita, jotka ovat joko
 
 Lopuksi on tärkeää ymmärtää, että optimaalinen mallin rakenne on osin tiedettä ja osin taidetta. Joskus hyviä ohjeita kannattaa rikkoa, kun siitä on hyötyä.
 
-Tähtirakenteeseen liittyy monia muita käsitteitä, joita voidaan käyttää Power BI -mallissa. Näitä ovat esimerkiksi seuraavat:
+Tähtirakenteeseen liittyy monia muita käsitteitä, joita voidaan käyttää Power BI -mallissa. Näitä käsitteitä ovat esimerkiksi seuraavat:
 
 - [Mittarit](#measures)
 - [Korvaavat avaimet](#surrogate-keys)
@@ -67,14 +67,14 @@ Tähtirakenteessa **mittari** on faktataulukon sarake, johon on tallennettu yhte
 
 Power BI -mallissa **mittarin** määritelmä on samankaltainen, mutta silti erilainen. Se on [Data Analysis Expressions (DAX)](https://docs.microsoft.com/dax/data-analysis-expressions-dax-reference) -kielellä kirjoitettu kaava, joka toteuttaa yhteenvedon. Mittayksikkölausekkeet hyödyntävät usein DAX-koostefunktioita, kuten SUM, MIN, MAX, AVERAGE jne. Niiden avulla tuotetaan skalaariarvotulos, kyselyhetkellä (arvoja ei koskaan tallenneta malliin). Mittayksikkölauseke voi vaihdella yksinkertaisesta sarakekoosteesta kehittyneeseen kaavaan, joka ohittaa suodatinkontekstin ja/tai yhteyden välityksen. Lisätietoja on artikkelissa [DAX-kielen perusteet Power BI Desktopissa](https://docs.microsoft.com/power-bi/desktop-quickstart-learn-dax-basics).
 
-On tärkeää ymmärtää, että Power BI -mallit tukevat toista menetelmää yhteenvedon saavuttamiseksi. Mikä tahansa sarake – ja tyypillisesti numerosarakkeet – voidaan tiivistää raportin visualisoinnin tai Q&A:n avulla. Tästä on hyötyä mallin kehittäjille, koska monissa esiintymissä ei tarvitse luoda mittareita. Esimerkiksi Adventure Works -jälleenmyyjämyynnin sarake **Myynnin summa** voidaan vetää yhteen monella tavalla (summa, määrä, keskiarvo, mediaani, minimi, maksimi jne.) ilman, että tarvitsee luoda mittari jokaiselle mahdolliselle koostamistyypille.
+On tärkeää ymmärtää, että Power BI -mallit tukevat toista menetelmää yhteenvedon saavuttamiseksi. Mikä tahansa sarake – ja tyypillisesti numerosarakkeet – voidaan tiivistää raportin visualisoinnin tai Q&A:n avulla. Näitä sarakkeita kutsutaan _implisiittisiksi mittareiksi_. Niistä on hyötyä mallin kehittäjille, koska monissa esiintymissä ei tarvitse luoda mittareita. Esimerkiksi Adventure Works -jälleenmyyjämyynnin sarake **Myynnin summa** voidaan vetää yhteen monella tavalla (summa, määrä, keskiarvo, mediaani, minimi, maksimi jne.) ilman, että tarvitsee luoda mittari jokaiselle mahdolliselle koostamistyypille.
 
 ![Kuvake-esimerkki kenttäluettelossa](media/star-schema/field-list-example.png)
 
 Mittareiden luomiseen on kuitenkin kaksi vakuuttavaa syytä myös yksinkertaisissa saraketason yhteenvedoissa:
 
-- Kun tiedät, että raportin tekijät tekevät kyselyn malliin käyttämällä [MDX](https://docs.microsoft.com/sql/analysis-services/multidimensional-models/mdx/mdx-query-the-basic-query?view=sql-server-2017)-lauseketta, mallissa on oltava mittareita. MDX ei voi vetää yhteen sarakearvoja. Tämä on erittäin olennaista, kun Power BI -tietojoukkoon tehdään kysely MDX:n avulla, ja näin on käytettäessä [Analysoi Excelissä](https://docs.microsoft.com/power-bi/service-analyze-in-excel) -toimintoa (pivot-taulukot tekevät MDX-kyselyitä).
-- Jos haluat varmistaa, että raportin tekijät voivat tehdä yhteenvedon sarakkeista vain tietyllä tavalla: Esimerkiksi jälleenmyyjämyynnin **Yksikköhinta**-sarakkeesta (joka on yksikkökohtainen hinta) voidaan tehdä yhteenveto, mutta vain käyttämällä määrättyjä koostamisfunktioita. Sitä ei tule koskaan laskea yhteen, mutta se voidaan vetää yhteen käyttämällä muita koostamisfunktioita (minimi, maksimi, keskiarvo jne.). Tässä esiintymässä mallintaja voi piilottaa **Yksikköhinta**-sarakkeen ja luoda mittareita kaikille sopiville koostamisfunktioille.
+- Kun tiedät, että raportin tekijät tekevät kyselyn malliin [MDX](https://docs.microsoft.com/sql/analysis-services/multidimensional-models/mdx/mdx-query-the-basic-query?view=sql-server-2017)-lausekkeella, mallissa on oltava _eksplisiittisiä mittareita_. Eksplisiittiset mittarit määritetään DAX:llä. Tämä mallilähestymistapa on erityisen sovelias, kun Power BI -tietojoukkoon tehdään kyselyitä MDX:llä, koska MDX ei tue sarakearvojen yhteenvetoja. MDX:ää käytetään etenkin [Analysoi Excelissä](https://docs.microsoft.com/power-bi/service-analyze-in-excel) -toimintoa käytettäessä (Pivot-taulukot tekevät MDX-kyselyitä).
+- Jos haluat varmistaa, että raportin tekijät voivat tehdä yhteenvedon sarakkeista vain tietyllä tavalla. Esimerkiksi jälleenmyyjämyynnin **Yksikköhinta**-sarakkeesta (joka on yksikkökohtainen hinta) voidaan tehdä yhteenveto, mutta vain käyttämällä määrättyjä koostamisfunktioita. Sitä ei tule koskaan laskea yhteen, mutta se voidaan vetää yhteen käyttämällä muita koostamisfunktioita (minimi, maksimi, keskiarvo jne.). Tässä esiintymässä mallintaja voi piilottaa **Yksikköhinta**-sarakkeen ja luoda mittareita kaikille sopiville koostamisfunktioille.
 
 Ota huomioon, että tämä rakennemenetelmä toimii hyvin Power BI -palvelussa ja Q&A:ssa laadituille raporteille. Power BI Desktopin live-yhteyksien avulla raporttien tekijät voivat näyttää **Kentät**-ruudussa piilotetut kentät, minkä ansiosta tämä rakennemenetelmä voidaan kiertää.
 
@@ -127,11 +127,11 @@ Power BI -mallin dimensiotyypin taulukon kertapäivitys saa aikaan tyypin 1 hita
 
 Adventure Works esimerkiksi määrittää myyjät myyntialueisiin. Kun myyjä siirtyy toiselle alueelle, myyjästä on luotava uusi versio sen varmistamiseksi, että historialliset tiedot pysyvät liitettynä entiseen alueeseen. Myyjän myyntihistorian tarkan analyysin tukemista varten dimensiotaulukkoon on tallennettava myyjien ja myyjiin liittyvien alueiden versiot. Taulukossa on oltava myös ajan määrittävät alkamis- ja päättymispäivämäärien arvot. Nykyiset versiot voivat määrittää tyhjän päättymispäivämäärän (tai 31.12.9999), mikä osoittaa, että rivi on nykyinen versio. Taulukossa on myös määritettävä korvaava avain, koska liiketoiminta-avain (tässä esiintymässä työntekijän tunnus) ei ole yksilöivä.
 
-On tärkeää ymmärtää, että kun lähdetiedot eivät tallenna versioita, on käytettävä välijärjestelmää (kuten tietovarastoa) muutosten tunnistamiseen ja tallentamiseen. Taulukon lataamisprosessin on säilytettävä olemassa olevat tiedot ja havaittava muutokset. Kun muutos havaitaan, taulukon lataamisprosessin on siirrettävä nykyinen versio vanhentuneeksi. Se tekee tämän päivittämällä **EndDate**-arvon ja lisäämällä uuden version, jonka **StartDate**-arvo alkaa edellisestä **EndDate**-arvosta. Aiheeseen liittyvissä faktoissa on lisäksi käytettävä aikapohjaista hakua dimension faktan päivämäärälle olennaisen avainarvon noutamiseksi. Tämä ei ole mahdollista Power Querya käyttävän Power BI -mallin avulla. Se voi kuitenkin ladata tiedot valmiiksi ladatusta tyypin 2 hitaasti muuttuvan dimension taulukosta.
+On tärkeää ymmärtää, että kun lähdetiedot eivät tallenna versioita, on käytettävä välijärjestelmää (kuten tietovarastoa) muutosten tunnistamiseen ja tallentamiseen. Taulukon lataamisprosessin on säilytettävä olemassa olevat tiedot ja havaittava muutokset. Kun muutos havaitaan, taulukon lataamisprosessin on siirrettävä nykyinen versio vanhentuneeksi. Nämä muutokset tehdään päivittämällä **EndDate**-arvo ja lisäämällä uusi versio, jonka **StartDate**-arvo alkaa edellisestä **EndDate**-arvosta. Aiheeseen liittyvissä faktoissa on lisäksi käytettävä aikapohjaista hakua dimension faktan päivämäärälle olennaisen avainarvon noutamiseksi. Tämä tulos ei ole mahdollinen Power Querya käyttävän Power BI -mallin avulla. Se voi kuitenkin ladata tiedot valmiiksi ladatusta tyypin 2 hitaasti muuttuvan dimension taulukosta.
 
-Power BI -mallin tulee tukea jäsenen historiallisten tietojen kyselyä muutoksesta riippumatta ja jäsenen version kyselyä, mikä edustaa jäsenen kulloistakin tilaa ajan mukaan. Adventure Worksin yhteydessä tämän avulla voi tehdä myyjäkyselyn riippumatta määritetystä myyntialueesta tai kyselyn myyjän tietystä versiosta.
+Power BI -mallin tulee tukea jäsenen historiallisten tietojen kyselyä muutoksesta riippumatta ja jäsenen version kyselyä, mikä edustaa jäsenen kulloistakin tilaa ajan mukaan. Adventure Worksin yhteydessä tämän mallin avulla voi tehdä myyjäkyselyn riippumatta määritetystä myyntialueesta tai kyselyn myyjän tietystä versiosta.
 
-Tämän saavuttamiseksi Power BI -mallin dimensiotyypin taulukossa on oltava sarake myyjän suodatusta varten ja toinen sarake tietyn myyjän version suodattamista varten. On tärkeää, että versiosarake sisältää yksiselitteisen kuvauksen, kuten "Michael Blythe (15.12.2008-26.6.2019)" tai "Michael Blythe (nykyinen)". On myös tärkeää kouluttaa raportin tekijöitä ja käyttäjiä tyypin 2 hitaasti muuttuvan dimension perusteista ja sopivien raporttimallien luomisesta käyttämällä oikeita suodattimia.
+Tämän vaatimuksen saavuttamiseksi Power BI -mallin dimensiotyypin taulukossa on oltava sarake myyjän suodatusta varten ja toinen sarake tietyn myyjän version suodattamista varten. On tärkeää, että versiosarake sisältää yksiselitteisen kuvauksen, esimerkiksi "Michael Blythe (15.12.2008-26.6.2019)" tai "Michael Blythe (nykyinen)". On myös tärkeää kouluttaa raportin tekijöitä ja käyttäjiä tyypin 2 hitaasti muuttuvan dimension perusteista ja sopivien raporttimallien luomisesta käyttämällä oikeita suodattimia.
 
 Hyvä rakennekäytäntö on myös se, että hierarkia sisällytetään siten, että visualisoinneissa voidaan porautua version tasolle.
 
@@ -145,7 +145,7 @@ Hyvä rakennekäytäntö on myös se, että hierarkia sisällytetään siten, et
 
 Tietovarastossa hyväksytty rakennemenettely on yksittäisen päivämäärän dimensiotaulukon määrittäminen. Kyselyhetkellä päivämäärädimension "rooli" määräytyy sen mukaan, mitä faktasaraketta käytetään taulukoiden yhdistämiseen. Kun esimerkiksi myyntiä analysoidaan tilauspäivämäärän mukaan, taulukoiden yhdistäminen liittyy jälleenmyyjän myynnin tilauspäivämäärän sarakkeeseen.
 
-Power BI -mallissa tätä rakennetta voidaan jäljitellä luomalla useita yhteyksiä kahden taulukon välille. Adventure Worksin esimerkissä päivämäärän ja jälleenmyyjän myynnin taulukoissa on kolme yhteyttä. Vaikka se on mahdollista, on tärkeää ymmärtää, että kahden Power BI -mallin taulukon välillä voi olla vain yksi aktiivinen yhteys. Loput yhteydet on asetettava passiivisiksi. Kun aktiivisia yhteyksiä on yksi, käytettävissä on oletusarvoinen suodattimen lisäys päivämäärästä jälleenmyyjän myyntiin. Tässä esiintymässä aktiiviseksi yhteydeksi määritetään yleisin raporteissa käytetty suodatin, joka Adventure Worksissa on tilauspäivämäärän yhteys.
+Power BI -mallissa tätä rakennetta voidaan jäljitellä luomalla useita yhteyksiä kahden taulukon välille. Adventure Worksin esimerkissä päivämäärän ja jälleenmyyjän myynnin taulukoissa on kolme yhteyttä. Vaikka tämä malli on mahdollinen, on tärkeää ymmärtää, että kahden Power BI -mallin taulukon välillä voi olla vain yksi aktiivinen yhteys. Loput yhteydet on asetettava passiivisiksi. Kun aktiivisia yhteyksiä on yksi, käytettävissä on oletusarvoinen suodattimen lisäys päivämäärästä jälleenmyyjän myyntiin. Tässä esiintymässä aktiiviseksi yhteydeksi määritetään yleisin raporteissa käytetty suodatin, joka Adventure Worksissa on tilauspäivämäärän yhteys.
 
 ![Esimerkki yksittäisestä rooliulottuvuudesta ja yhteyksistä](media/star-schema/relationships.png)
 
@@ -207,3 +207,4 @@ Lisätietoja tähtirakenteesta ja Power BI:n mallin rakenteesta on seuraavissa a
 - [Yhteyksien luominen ja hallinta Power BI Desktopissa](../desktop-create-and-manage-relationships.md)
 - [Moni-moneen-kardinaliteetin sisältävät suhteet Power BI Desktopissa](../desktop-many-to-many-relationships.md)
 - [Mallintamisen ohjattu oppimiskokemus](/learn/modules/model-data-power-bi/)
+- Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)

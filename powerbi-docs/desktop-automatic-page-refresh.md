@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/14/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 4c2217495ee8b735bc600c9b803897a408495472
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: b9f7c745ad251fdb81c7898130cd3ca6c5d32af9
+ms.sourcegitcommit: c839ef7437bc8fb8f7eeda23e59d05c7192a7fe8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73878761"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74164143"
 ---
 # <a name="automatic-page-refresh-in-power-bi-desktop-preview"></a>Automaattinen sivun päivitys Power BI Desktopissa (esiversio)
 
@@ -105,9 +105,9 @@ Power BI Desktop ei rajoita päivitysväliä: se voi olla jopa vain yksi sekunti
 
 Power BI -palvelussa automaattisen sivun päivitysrajoitukset ovat voimassa eri tekijöiden perusteella: niitä ovat esimerkiksi työtila ja se, käytetäänkö Premium-palveluita.
 
-Selventääksemme tämän toimintaa meidän on syytä käydä läpi hieman taustaa [kapasiteeteista ja työtiloista](whitepaper-powerbi-premium-deployment.md#capacities).
+Selventääksemme tämän toimintaa meidän on syytä käydä läpi hieman taustaa kapasiteeteista ja työtiloista:
 
-**Kapasiteetti** on Power BI:n peruskäsite. Se tarkoittaa joukkoa resursseja (tallennus, suoritin ja muisti), joilla isännöidään ja tarjotaan Power BI -sisältöä. Kapasiteetit ovat joko jaettuja tai varattuja. **Jaettu kapasiteetti** jaetaan muiden Microsoftin asiakkaiden kanssa, kun taas **varattu kapasiteetti** on varattu täysin yhdelle asiakkaalle. Varatut kapasiteetit esitellään [Premium-kapasiteettien](whitepaper-powerbi-premium-deployment.md#capacities) artikkelissa.
+**Kapasiteetti** on Power BI:n peruskäsite. Se tarkoittaa joukkoa resursseja (tallennus, suoritin ja muisti), joilla isännöidään ja tarjotaan Power BI -sisältöä. Kapasiteetit ovat joko jaettuja tai varattuja. **Jaettu kapasiteetti** jaetaan muiden Microsoftin asiakkaiden kanssa, kun taas **varattu kapasiteetti** on varattu täysin yhdelle asiakkaalle. Varatut kapasiteetit esitellään [Premium-kapasiteettien hallinnan](service-premium-capacity-manage.md) artikkelissa.
 
 Jaetussa kapasiteetissa työnkulut suoritetaan muiden asiakkaiden kanssa jaetuissa laskennallisissa resursseissa. Koska kapasiteetin täytyy jakaa resursseja, käytössä on rajoituksia *tasapuolisuuden* takaamiseksi. Esimerkiksi mallin koko voi olla enintään 1 Gt ja päivittäisiä päivityksiä voi olla enintään kahdeksan.
 
@@ -123,7 +123,7 @@ Tässä on joitain tietoja kahdesta työtilojen käyttötilanteesta:
 
  2. *Pienin sallittu päivitysväli*: Kun kapasiteetin järjestelmänvalvoja ottaa toiminnon käyttöön, hänen täytyy määrittää pienin sallittu päivitysväli. Jos päivitysvälisi on sallittua pienempi, Power BI -palvelu kumoaa päivitysvälisi, jotta kapasiteetin järjestelmänvalvojan määrittämää pienintä sallittua päivitysväliä kunnioitetaan.
 
-Alla olevassa taulukossa kuvataan tarkemmin, missä tämä toiminto on käytettävissä ja millaisia rajoituksia kullakin kapasiteettityypillä sekä [tallennustilalla](whitepaper-powerbi-premium-deployment.md#model-storage-modes) on
+Alla olevassa taulukossa kuvataan tarkemmin, missä tämä toiminto on käytettävissä ja millaisia rajoituksia kullakin kapasiteettityypillä sekä [tallennustilalla](service-dataset-modes-understand.md) on
 
 | Tallennustilan tila | Varattu kapasiteetti | Jaettu kapasiteetti |
 | --- | --- | --- |

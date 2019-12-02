@@ -9,18 +9,18 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 LocalizationGroup: Gateways
 ms.date: 07/15/2019
-ms.openlocfilehash: b01a3ef5832541822aa9311df14289285f601b2b
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: f149b816f7489b6a26e86af6360062d86083a7e5
+ms.sourcegitcommit: c839ef7437bc8fb8f7eeda23e59d05c7192a7fe8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73872447"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74164301"
 ---
 # <a name="what-is-an-on-premises-data-gateway"></a>Mikä paikallinen tietoyhdyskäytävä on?
 
 [!INCLUDE [gateway-rewrite](includes/gateway-rewrite.md)]
 
-Paikallinen tietoyhdyskäytävä toimii siltana tarjoten nopean ja turvallisen tiedonsiirron paikallisten tietojen (eli tietojen, jotka eivät sijaitse pilvipalvelussa) ja useiden Microsoftin pilvipalveluiden välillä. Näitä pilvipalveluita ovat Power BI, PowerApps, Microsoft Flow, Azure Analysis Services ja Azure Logic Apps. Yhdyskäytävän avulla organisaatiot voivat säilyttää tietokannat ja muut tietolähteet paikallisissa verkoissa ja käyttää niitä turvallisesti pilvipalveluissa.
+Paikallinen tietoyhdyskäytävä toimii siltana tarjoten nopean ja turvallisen tiedonsiirron paikallisten tietojen (eli tietojen, jotka eivät sijaitse pilvipalvelussa) ja useiden Microsoftin pilvipalveluiden välillä. Näitä pilvipalveluita ovat esimerkiksi Power BI, PowerApps, Power Automate, Azure Analysis Services ja Azure Logic Apps. Yhdyskäytävän avulla organisaatiot voivat säilyttää tietokannat ja muut tietolähteet paikallisissa verkoissa ja käyttää niitä turvallisesti pilvipalveluissa.
 
 ## <a name="how-the-gateway-works"></a>Yhdyskäytävän toiminta
 

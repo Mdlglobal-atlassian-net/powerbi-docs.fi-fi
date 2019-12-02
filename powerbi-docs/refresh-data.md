@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/14/2019
 ms.author: mblythe
 LocalizationGroup: Data refresh
-ms.openlocfilehash: 422d742748fc6880b0636bd3a0c5de7011a3ff0a
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 28a6aa8659411b829e6982e7c766e03d683871fd
+ms.sourcegitcommit: 982ffaa8eb91897f48221a816970671f4a92e6d9
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73860784"
+ms.lasthandoff: 11/23/2019
+ms.locfileid: "74415445"
 ---
 # <a name="data-refresh-in-power-bi"></a>Tietojen päivittäminen Power BI:ssä
 
@@ -105,7 +105,14 @@ Huomaa, että päivittäisten päivitysten jaetun kapasiteetin rajoitus koskee a
 
 Jos loit tietojoukot ja raportit Power BI Desktop -tiedoston, Excel-työkirjan tai pilkuin eroteltuja arvoja sisältävän tiedoston (.csv) pohjalta OneDriveen tai SharePoint Onlineen, Power BI suorittaa toisentyyppisen päivityksen, jota kutsutaan OneDrive-päivittämiseksi. Katso lisätietoja kohdasta [Tietojen noutaminen tiedostoista Power BI:hin](service-get-data-from-files.md).
 
-Toisin kuin tietojoukon päivityksessä, jolloin Power BI tuo tietoja tietolähteestä tietojoukkoon, OneDrive-päivittäminen synkronoi tietojoukot ja raportit niiden lähdetiedostojen kanssa. Oletusarvoisesti Power BI tarkistaa noin tunnin välein, edellyttääkö OneDrive- tai SharePoint-tiedostoon yhdistetty tietojoukko synkronointia. Voit tarkistaa aiemmat synkronointijaksot päivityshistorian OneDrive-välilehdeltä. Seuraavassa näyttökuvassa esitetään mallitietojoukon valmis synkronointijakso.
+Toisin kuin tietojoukon päivityksessä, jolloin Power BI tuo tietoja tietolähteestä tietojoukkoon, OneDrive-päivittäminen synkronoi tietojoukot ja raportit niiden lähdetiedostojen kanssa. Oletusarvoisesti Power BI tarkistaa noin tunnin välein, edellyttääkö OneDrive- tai SharePoint-tiedostoon yhdistetty tietojoukko synkronointia.
+
+> [!IMPORTANT]
+> Ole varovainen sen suhteen, miten käsittelet tiedostoja OneDrivessa. Kun määrität tietolähteeksi OneDrive-tiedosto, Power BI viittaa tiedoston kohdetunnukseen, kun se suorittaa päivityksen. Tämä voi aiheuttaa ongelmia joissain tilanteissa. Kuvittele tilanne, jossa sinulla on päätiedosto _A_ ja hyötykäytössä oleva kopio tästä tiedostosta _B_ ja määrität OneDrive-päivityksen tiedostolle B. Jos sitten _kopioit_ tiedoston A tiedoston B tilalle, kopiointitoiminto poistaa vanhan tiedoston B ja luo uuden tiedoston B eri kohdetunnuksella. Tämä rikkoo OneDrive-päivityksen toimivuuden. Tässä tilanteessa sinun tulisi sen sijaan ladata ja korvata tiedosto B, jotta sama kohdetunnus säilyy.
+
+Voit siirtää tiedoston toiseen sijaintiin (esimerkiksi vetämällä ja pudottamalla). Tässä tapauksessa päivitys toimii edelleen, koska PBI tietää edelleen tiedostotunnuksen. Jos taas kopioit tämän tiedoston toiseen sijaintiin, tiedostosta luodaan uusi esiintymä ja sille uusi tiedostotunnus. Tässä tapauksessa Power BI -tiedostoviittaus ei ole enää kelvollinen, joten päivitys ei onnistu.
+
+Voit tarkistaa aiemmat synkronointijaksot päivityshistorian OneDrive-välilehdeltä. Seuraavassa näyttökuvassa esitetään mallitietojoukon valmis synkronointijakso.
 
 ![Päivityshistoria](media/refresh-data/refresh-history.png)
 

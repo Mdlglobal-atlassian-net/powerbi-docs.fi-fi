@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/21/2019
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: e26b50d571cfffeae1c93f37e715eca24ff4f12e
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 8f5d11b53526c5d266b96a8f21c42fecc66d3795
+ms.sourcegitcommit: c839ef7437bc8fb8f7eeda23e59d05c7192a7fe8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73871547"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74163759"
 ---
 # <a name="data-alerts-in-the-power-bi-service"></a>Tietoilmoitukset Power BI -palvelussa
 
@@ -23,7 +23,7 @@ Aseta ilmoituksia ilmoittamaan sinulle, kun koontinäyttösi tiedot muuttuvat as
 
 Voit määrittää ilmoituksia ruuduille, jos sinulla on Power BI:n Pro-käyttöoikeus. Voit myös määrittää ilmoituksia, jos joku jakaa koontinäytön, joka on [Premium-kapasiteetissa](service-premium-what-is.md). Ilmoitukset voidaan määrittää vain ruuduille, jotka on kiinnitetty raportin visualisoinneista, ja vain mittareissa, suorituskykyilmaisimissa ja korteissa. Ilmoituksia voidaan määrittää visualisoinneille, jotka on tehty virtautettavista tietojoukoista, jotka kiinnitetään raportista koontinäyttöön. Ilmoituksia ei voi määrittää virtautettaville ruuduille, jotka on tehty suoraan koontinäytössä valitsemalla **Lisää-ruutu** > **Mukautetut virtautettavat tiedot**.
 
-Vain sinä näet asettamasi hälytykset, vaikka jakaisit koontinäyttösi. Edes koontinäytön omistaja ei näe ilmoituksia, jotka määritit koontinäytön näkymälle. Tietoilmoitukset synkronoidaan täysin kaikissa ympäristöissä. Määritä ja tarkastele tietoilmoituksia [Power BI -mobiilisovelluksissa](consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps.md) ja Power BI -palvelussa. Ne eivät ole käytettävissä Power BI Desktopissa. Voit myös automatisoida ja integroida ilmoituksia Microsoft Flow’n avulla. Voit kokeilla sitä itse tässä [Microsoft Flow ja Power BI](service-flow-integration.md) -artikkelissa.
+Vain sinä näet asettamasi hälytykset, vaikka jakaisit koontinäyttösi. Edes koontinäytön omistaja ei näe ilmoituksia, jotka määritit koontinäytön näkymälle. Tietoilmoitukset synkronoidaan täysin kaikissa ympäristöissä. Määritä ja tarkastele tietoilmoituksia [Power BI -mobiilisovelluksissa](consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps.md) ja Power BI -palvelussa. Ne eivät ole käytettävissä Power BI Desktopissa. Voit myös automatisoida ja integroida ilmoituksia Power Automatella. Voit kokeilla tätä itse tässä [Power Automate ja Power BI](service-flow-integration.md) -artikkelissa.
 
 ![ruudut](media/service-set-data-alerts/powerbi-alert-types-new.png)
 
@@ -125,7 +125,7 @@ Voit hallita ilmoituksia usealla tavalla:
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
-* [Luo Microsoft Flow, joka sisältää tietoilmoituksen](service-flow-integration.md).
+* [Luo Power Automate, joka sisältää tietoilmoituksen](service-flow-integration.md).
 
 * [Määritä tietoilmoitukset mobiililaitteellasi](consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps.md).
 

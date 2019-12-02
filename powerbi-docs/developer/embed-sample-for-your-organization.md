@@ -1,20 +1,20 @@
 ---
-title: Upotettu analysointi Power BI:n sisällön upottamiseksi sovellukseen organisaatiollesi
+title: Sisällön upottaminen sovellukseen organisaatiolle
 description: Lue, miten voit integroida tai upottaa raportteja (Power BI- tai sivutettuja raportteja), koontinäyttöjä tai ruutuja organisaatiotasi varten käyttämällä upotetussa analysoinnissa Power BI -ohjelmointirajapintoja. Lue, miten voit integroida Power BI:n sovellukseesi käyttämällä upotetun analysoinnin ohjelmistoa, upotetun analysoinnin työkaluja tai upotetun liiketoimintatiedon työkaluja.
-author: rkarlin
-ms.author: rkarlin
+author: KesemSharabi
+ms.author: kesharab
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.custom: seodec18
 ms.date: 07/29/2019
-ms.openlocfilehash: 3a217ebd1b6450c76ebf25ad5154293566d955f6
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: c67ce4ef9b5b0ac2054d4ecdf76ee3a1a79571d8
+ms.sourcegitcommit: 7f27b9eb0e001034e672050735ab659b834c54a3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73876011"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74311072"
 ---
 # <a name="tutorial-embed-power-bi-content-into-an-application-for-your-organization"></a>Opetusohjelma: Power BI -sisällön upottaminen sovellukseen organisaatiolle
 

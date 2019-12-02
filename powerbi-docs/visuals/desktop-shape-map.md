@@ -2,19 +2,19 @@
 title: Muotokarttojen käyttäminen Power BI Desktopissa (esikatselu)
 description: Alueiden suhteellisten vertailujen luominen muotokartoilla Power BI Desktopissa
 author: mihart
-ms.reviewer: amanda
+ms.reviewer: amanda, justyna, sujata
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/4/2019
+ms.date: 11/14/2019
 ms.author: mihart
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 800f7d3cd7f930f2c3411c21e94cadb7cda94c8c
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: eac0c6fab686a3b5cf63d035ea19b52ab83aa339
+ms.sourcegitcommit: 768e1e4b19fe8c7627010127c2420d63021cb542
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73871112"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74199446"
 ---
 # <a name="shape-maps-in-power-bi-desktop-preview"></a>Muotokartat Power BI Desktopissa (esikatselu)
 
@@ -115,7 +115,7 @@ Kun testaat **muotokarttaa** tässä esikatseluversiossa, käytä **seuraavia al
 
 ### <a name="australia-states"></a>Australia: Osavaltiot
 
-| ID | lyhenne | ISO-koodi | nimi | postinumerotunnus |
+| Tunnus | lyhenne | ISO-koodi | nimi | postinumerotunnus |
 | --- | --- | --- | --- | --- |
 | au-wa |WA |AU-WA |Western Australia |WA |
 | au-vic |Vic |AU-VIC |Victoria |VIC |
@@ -128,7 +128,7 @@ Kun testaat **muotokarttaa** tässä esikatseluversiossa, käytä **seuraavia al
 
 ### <a name="austria-states"></a>Itävalta: Osavaltiot
 
-| ID | ISO-koodi | nimi | englanninkielinen nimi | postinumerotunnus |
+| Tunnus | ISO-koodi | nimi | englanninkielinen nimi | postinumerotunnus |
 | --- | --- | --- | --- | --- |
 | at-wi |AT-9 |Wien |Vienna |WI |
 | at-vo |AT-8 |Vorarlberg |Vorarlberg |VO |
@@ -142,7 +142,7 @@ Kun testaat **muotokarttaa** tässä esikatseluversiossa, käytä **seuraavia al
 
 ### <a name="brazil-states"></a>Brasilia: Osavaltiot
 
-| ID |
+| Tunnus |
 | --- |
 | Tocantins |
 | Pernambuco |
@@ -178,7 +178,7 @@ Kun testaat **muotokarttaa** tässä esikatseluversiossa, käytä **seuraavia al
 
 ### <a name="canada-provinces"></a>Kanada: Provinssit
 
-| ID | ISO-koodi | nimi | postinumerotunnus |
+| Tunnus | ISO-koodi | nimi | postinumerotunnus |
 | --- | --- | --- | --- |
 | ca-nu |CA-NU |Nunavut |NU |
 | ca-nt |CA-NT |Northwest Territories |NT |
@@ -196,34 +196,29 @@ Kun testaat **muotokarttaa** tässä esikatseluversiossa, käytä **seuraavia al
 
 ### <a name="france-regions"></a>Ranska: Alueet
 
-| ID | nimi | englanninkielinen nimi |
+| Tunnus | nimi | englanninkielinen nimi |
 | --- | --- | --- |
-| Alsace |Alsace |Alsace |
-| Rhone-Alpes |Rhône-Alpes |Rhone-Alpes |
-| Provence-Alpes-Cote d'Azur |Provence-Alpes-Côte d'Azur |Provence-Alpes-Cote d'Azur |
-| Poitou-Charentes |Poitou-Charentes |Poitou-Charentes |
-| Picardie |Picardie |Picardy |
-| Pays de la Loire |Pays de la Loire |Pays de la Loire |
-| Nord-Pas-de-Calais |Nord-Pas-de-Calais |Nord-Pas-de-Calais |
-| Midi-Pyrenees |Midi-Pyrénées |Midi-Pyrenees |
-| Lorraine |Lorraine |Lorraine |
-| Limousin |Limousin |Limousin |
-| Languedoc-Roussillon |Languedoc-Roussillon |Languedoc-Roussillon |
-| Ile-del-France |Île-de-France |Ile-de-France |
-| Haute-Normandie |Haute-Normandie |Upper Normandy |
-| Franche-Comte |Franche-Comté |Franche-Comte |
-| Corse |Corse |Corsica |
-| Champagne-Ardenne |Champagne-Ardenne |Champagne-Ardenne |
-| Centre-Val de Loire |Centre-Val de Loire |Centre-Val de Loire |
+| Auvergne-Rhone-Alpes |  |  |
+| Bourgogne-Franche-Comte |  |  |
 | Bretagne |Bretagne |Brittany |
-| Bourgogne |Bourgogne |Burgundy |
-| Basse-Normandie |Basse-Normandie |Lower Normandy |
-| Auvergne |Auvergne |Auvergne |
-| Aquitaine |Aquitaine |Aquitaine |
+| Centre-Val de Loire |Centre-Val de Loire |Centre-Val de Loire |
+| Corse |Corse |Corsica |
+| Grand Est |  |  |
+| Guadeloupe | |   |
+| Hauts-de-France |  |  |
+| Ile-de-France |Île-de-France |Ile-de-France |
+| La Reunion |  |  |
+| Mayotte  |  |  |
+| Normandie |Normandie |  |
+| Nouvelle-Aquitaine |  |  |
+| Occitanie  |  |  |
+| Pays de la Loire |Pays de la Loire |Pays de la Loire |
+| Provence-Alpes-Cote d'Azur |Provence-Alpes-Côte d'Azur |Provence-Alpes-Cote d'Azur |
+|  |  |  |
 
 ### <a name="germany-states"></a>Saksa: Osavaltiot
 
-| ID | ISO-koodi | nimi | englanninkielinen nimi | postinumerotunnus |
+| Tunnus | ISO-koodi | nimi | englanninkielinen nimi | postinumerotunnus |
 | --- | --- | --- | --- | --- |
 | de-be |DE-BE |Berlin |Berlin |BE |
 | de-th |DE-TH |Thüringen |Thuringia |TH |
@@ -244,7 +239,7 @@ Kun testaat **muotokarttaa** tässä esikatseluversiossa, käytä **seuraavia al
 
 ### <a name="ireland-counties"></a>Irlanti: Läänit
 
-| ID |
+| Tunnus |
 | --- |
 | Wicklow |
 | Wexford |
@@ -275,7 +270,7 @@ Kun testaat **muotokarttaa** tässä esikatseluversiossa, käytä **seuraavia al
 
 ### <a name="italy-regions"></a>Italia: Alueet
 
-| ID | ISO-koodi | nimi | englanninkielinen nimi | postinumerotunnus |
+| Tunnus | ISO-koodi | nimi | englanninkielinen nimi | postinumerotunnus |
 | --- | --- | --- | --- | --- |
 | it-vn |IT-34 |Veneto |Veneto |VN |
 | it-vd |IT-23 |Valle d'Aosta |Aosta Valley |VD |
@@ -300,7 +295,7 @@ Kun testaat **muotokarttaa** tässä esikatseluversiossa, käytä **seuraavia al
 
 ### <a name="mexico-states"></a>Meksiko: Osavaltiot
 
-| ID | lyhenne | ISO-koodi | nimi | englanninkielinen nimi | postinumerotunnus |
+| Tunnus | lyhenne | ISO-koodi | nimi | englanninkielinen nimi | postinumerotunnus |
 | --- | --- | --- | --- | --- | --- |
 | mx-zac |Zac. |MX-ZAC |Zacatecas |Zacatecas |ZA |
 | mx-yuc |Yuc. |MX-YUC |Yucatán |Yucatan |YU |
@@ -337,7 +332,7 @@ Kun testaat **muotokarttaa** tässä esikatseluversiossa, käytä **seuraavia al
 
 ### <a name="netherlands-provinces"></a>Alankomaat: Provinssit
 
-| ID | ISO-koodi | nimi | englanninkielinen nimi |
+| Tunnus | ISO-koodi | nimi | englanninkielinen nimi |
 | --- | --- | --- | --- |
 | nl-zh |NL-ZH |Zuid-Holland |South Holland |
 | nl-ze |NL-ZE |Zeeland |Zeeland |
@@ -354,7 +349,7 @@ Kun testaat **muotokarttaa** tässä esikatseluversiossa, käytä **seuraavia al
 
 ### <a name="uk-countries"></a>Yhdistynyt kuningaskunta: Maat
 
-| ID | ISO-koodi | nimi |
+| Tunnus | ISO-koodi | nimi |
 | --- | --- | --- |
 | gb-wls |GB-WLS |Wales |
 | gb-sct |GB-SCT |Scotland |
@@ -363,7 +358,7 @@ Kun testaat **muotokarttaa** tässä esikatseluversiossa, käytä **seuraavia al
 
 ### <a name="usa-states"></a>Yhdysvallat: Osavaltiot
 
-| ID | nimi | postinumerotunnus |
+| Tunnus | nimi | postinumerotunnus |
 | --- | --- | --- |
 | us-mi |Michigan |MI |
 | us-ak |Alaska |AK |

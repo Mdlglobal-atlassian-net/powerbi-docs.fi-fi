@@ -1,18 +1,18 @@
 ---
 title: Power BI -työtilakokoelman sisällön siirtäminen Power BI:hin
 description: Opi siirtämään Power BI ‑työtilakokoelma Power BI Embedded ‑palveluun ja hyödynnä sisällön upottamisesta sovelluksiin syntyvät edut.
-author: rkarlin
-ms.author: rkarlin
+author: KesemSharabi
+ms.author: kesharab
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 06/30/2018
-ms.openlocfilehash: f55a9f1bfc9454c7d5a4ee3755a10f7cde1b0fd6
-ms.sourcegitcommit: a5853ef44ed52e80eabee3757bb6887fa400b75b
+ms.openlocfilehash: 829724fb96b0122bc3bd2b346d8102947b0921f7
+ms.sourcegitcommit: 7f27b9eb0e001034e672050735ab659b834c54a3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73780948"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74311548"
 ---
 # <a name="how-to-migrate-power-bi-workspace-collection-content-to-power-bi-embedded"></a>Power BI -työtilakokoelman sisällön siirtäminen Power BI Embedded -palveluun
 

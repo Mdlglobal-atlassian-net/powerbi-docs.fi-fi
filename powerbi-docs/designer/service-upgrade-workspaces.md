@@ -9,19 +9,19 @@ ms.topic: conceptual
 ms.date: 11/14/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 34b0bd1a59ec66cf7a2e5eb41d2c1ec12a39d1e7
-ms.sourcegitcommit: 01de0b01f66f28ca45b8d309d7864f261d6c9a85
+ms.openlocfilehash: 266a8609123f05f258daee60f6ae17f032ebae29
+ms.sourcegitcommit: f1f57c5bc6ea3057007ed8636ede50188ed90ce1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/16/2019
-ms.locfileid: "74128134"
+ms.lasthandoff: 11/23/2019
+ms.locfileid: "74410809"
 ---
 # <a name="upgrade-classic-workspaces-to-the-new-workspaces-in-power-bi"></a>Perinteisten työtilojen päivittäminen uusiksi työtiloiksi Power BI:ssä
 
 Tässä artikkelissa kerrotaan, miten voit päivittää perinteisen työtilan uudeksi työtilakokemukseksi. Voit päivittää minkä tahansa perinteisen työtilan. Uusissa työtiloissa työtilaroolit ovat entistä hajautetummat, joten sisällön käyttöoikeuksia voi hallita paremmin. Päivitettyjen työtilojen hallinta on aiempaa joustavampaa, koska työtilat on väljästi yhdistetty alkuperäiseen Office 365 -ryhmiinsä. Lue lisätietoja [uudesta työtilakokemuksesta](../service-new-workspaces.md). 
 
 >[!NOTE]
->Tämä dokumentaatio on ennakkoversio, jossa käsitellään ominaisuutta, joka ei vielä ole käytettävissä. Dokumentaatio on julkaistu, jotta voit valmistautua uuteen ominaisuuteen ja hankkia vastauksia mahdollisiin kysymyksiin ennen julkaisua.  
+>Työtilapäivitys on nyt käytettävissä julkisena esiversiona. 
 
 ![Päivittäminen onnistui](media/service-upgrade-workspaces/power-bi-upgrade-success.png)
 
@@ -198,7 +198,15 @@ Jotkin organisaatiot haluavat siirtää useita työtiloja tai kaikki työtilat u
 2. Pyydä yksittäisiä Office 365 -ryhmien omistajia tai Office 365 -järjestelmänvalvojaasi päivittämään työtilat. Jos haluat päivittää työtilan, sinun tulee olla ryhmän omistaja.
 
 Työtilan päivitysominaisuus ei tarjoa työkaluja joukkopäivitykseen tai ohjelmalliseen päivitykseen. Lisäksi organisaatiossasi luodut uudet Office 365 -ryhmät näkyvät jatkossakin Power BI:ssä. 
-    
+   
+   
+## <a name="known-issues"></a>Tunnetut ongelmat
+
+Saatat törmätä useisiin tunnettuihin ongelmiin:
+- Käyttäjät saattavat nähdä päivittämisen jälkeen virheilmoituksen, jonka mukaan mallin lataaminen ei onnistu. Tämä ilmoitus näytetään virheellisesti, joten sen voi ohittaa. 
+- Joidenkin työtilojen nimet muuttuvat päivityksessä. Kun näin käy, työtilan nimi joko vaihdetaan aiempaan nimeen tai tyhjään. Voit ratkaista ongelman nimeämällä työtilan uudelleen haluamallasi nimellä.
+- Kun päivität työtilan, johon oli asennettu sisältöpaketti, saatat nähdä työtilassa uusia koontinäyttöjä, joita ei ollut näkyvissä ennen päivitystä. Näin käy joissain tapauksissa, joissa sisältöpakettia ei ole päivitetty äskettäin. Voit huoletta poistaa nämä koontinäytöt.
+
 
 
 ## <a name="next-steps"></a>Seuraavat vaiheet

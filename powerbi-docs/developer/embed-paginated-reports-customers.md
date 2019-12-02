@@ -1,5 +1,5 @@
 ---
-title: Power BI:n sivutettujen raporttien upottaminen sovellukseen asiakkaitasi varten
+title: Sivutettujen raporttien upottaminen sovellukseen asiakkaitasi varten
 description: Lue, miten voit integroida tai upottaa Power BI:n sivutetun raportin sovellukseen Power BI -ohjelmointirajapintojen avulla.
 author: KesemSharabi
 ms.author: kesharab
@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: seodec18
 ms.date: 11/04/2019
-ms.openlocfilehash: 5611d65ab800c14b2570a12078c08cce5dc58147
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 1493f628ce822afa020e300ff7428da059fcc65d
+ms.sourcegitcommit: 7f27b9eb0e001034e672050735ab659b834c54a3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73877723"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74311439"
 ---
 # <a name="tutorial-embed-power-bi-paginated-reports-into-an-application-for-your-customers-preview"></a>Opetusohjelma: Power BI:n sivutetun raportin upottaminen sovellukseen asiakkaitasi varten (esikatselu)
 
@@ -37,6 +37,11 @@ Tarvitset seuraavat:
 * vähintään A4- tai P1-[kapasiteetti](#create-a-dedicated-capacity) ja [sivutettujen raporttien](../service-admin-premium-workloads.md#paginated-reports) työkuorma otettuna käyttöön.
 
 Jos sinulla ei ole Azure-tilausta, luo [ilmainen tili](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) ennen aloittamista.
+
+> [!IMPORTANT]
+> * Sinun täytyy käyttää **palvelun päänimeä.** Pääkäyttäjiä ei tueta.
+> * Kertakirjautumista edellyttäviä tietolähteitä ei tueta.
+> * Power BI -tietojoukkoa ei tueta [tietolähteenä](../service-get-data.md).
 
 ## <a name="set-up-your-power-bi-environment"></a>Power BI -ympäristön määrittäminen
 

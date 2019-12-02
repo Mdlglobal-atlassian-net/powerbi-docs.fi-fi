@@ -9,15 +9,16 @@ ms.topic: conceptual
 ms.date: 10/25/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: c363e63a7354c2a8c66099a98cb441ce2c94becf
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 88a49af62a26b64d8b913b6df03c82841f31a489
+ms.sourcegitcommit: f1f57c5bc6ea3057007ed8636ede50188ed90ce1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73878379"
+ms.lasthandoff: 11/23/2019
+ms.locfileid: "74410967"
 ---
 # <a name="data-sources-in-power-bi-desktop"></a>Power BI Desktopin tietolähteet
-Power BI Desktopin avulla voit yhdistää tietoja monista eri lähteistä. Täydellinen luettelo käytettävissä olevista tietolähteistä on tämän sivun alareunassa.
+
+Power BI Desktopin avulla voit yhdistää tietoja monista eri lähteistä. Täydellinen luettelo käytettävissä olevista tietolähteistä löytyy [Power BI:n tietolähteiden artikkelista](power-bi-data-sources.md).
 
 Muodosta yhteys tietoihin valitsemalla **Aloitus**-valintanauhassa **Nouda tiedot**. Jos valitset alanuolen tai **Nouda tiedot** -painikkeen, näyttöön tulee **yleisimpien** tietotyyppien valikko, joka näkyy seuraavassa kuvassa:
 

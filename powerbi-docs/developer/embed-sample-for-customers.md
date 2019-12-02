@@ -1,6 +1,6 @@
 ---
-title: Upotetut analyysitoiminnot ja Power BI -sisällön upottaminen sovellukseen asiakkaille
-description: Opi integroimaan tai upottamaan raportteja, raporttinäkymiä tai ruutuja sovellukseen asiakkaita varten käyttämällä upotetuissa analyysitoiminnoissa Power BI -ohjelmointirajapintoja. Lue, miten voit integroida Power BI:n sovellukseesi käyttämällä upotetun analysoinnin ohjelmistoa, upotetun analysoinnin työkaluja tai upotetun liiketoimintatiedon työkaluja.
+title: Sisällön upottaminen sovellukseen asiakkaiden käyttöön
+description: Lue, miten voit integroida tai upottaa raportteja, koontinäyttöjä tai ruutuja sovellukseen asiakkaita varten käyttämällä upotetussa analysoinnissa Power BI -ohjelmointirajapintoja. Lue, miten voit integroida Power BI:n sovellukseesi käyttämällä upotetun analysoinnin ohjelmistoa, upotetun analysoinnin työkaluja tai upotetun liiketoimintatiedon työkaluja.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: rkarlin
@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: seodec18
 ms.date: 04/02/2019
-ms.openlocfilehash: 24a9c0069cb80a20a84823655437a27a4f6c0e9e
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 85b21d95cb992449d3b7a910c619d049237fc9d8
+ms.sourcegitcommit: 7f27b9eb0e001034e672050735ab659b834c54a3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73877708"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74311089"
 ---
 # <a name="tutorial-embed-power-bi-content-into-an-application-for-your-customers"></a>Opetusohjelma: Power BI -sisällön upottaminen sovellukseen asiakkaille
 

@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 11/04/2019
-ms.openlocfilehash: f28ffa89647272306dc9cecb5c93928d36805d2a
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 4db1f887c1dd889a06c02643a0270cc24ab9c45f
+ms.sourcegitcommit: 7f27b9eb0e001034e672050735ab659b834c54a3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73880463"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74311498"
 ---
 # <a name="implementing-row-level-security-in-embedded-paginated-reports-preview"></a>Rivitason suojauksen toteuttaminen upotetuissa sivutetuissa raporteissa (esikatselu)
 
@@ -30,7 +30,7 @@ Kun otat rivitason suojauksen käyttöön Power BI -sivutetulle raportille, sinu
 
 Kun olet määrittänyt parametrin **UserID:lle**, käytä [Reports GenerateTokenForCreateInGroup](https://docs.microsoft.com/rest/api/power-bi/embedtoken/reports_generatetokenforcreateingroup)-ohjelmointirajapintaa upotetun suojaustunnuksen saamiseksi.
 
-## <a name="use-uderid-as-a-filter-at-report-or-query-level"></a>Käytä UderID-tunnusta suodattimena raportin tai kyselyn tasolla
+## <a name="use-userid-as-a-filter-at-report-or-query-level"></a>UserID-tunnuksen käyttäminen suodattimen raportti- tai kyselytasolla
 
 Voit käyttää **UserId**-tunnusta *suodattimena* tai *kyselynä* tietolähteenä[Power BI Paginated Report Builderissa](../report-builder-power-bi.md).
 
@@ -66,7 +66,7 @@ Voit käyttää **UserId**-tunnusta *suodattimena* tai *kyselynä* tietolähteen
 
     ![Power BI Report Builder -parametrit](media/embedded-paginated-reports-secure-data/parameters.png)
 
-2. Anna kohdassa **Parametrin nimi** **@UserID** ja lisää kohtaan **Parametrin arvo** **[&UserID]** .
+2. Anna kohdassa **Parametrin nimi** **\@UserID**ja lisää kohtaan **Parametrin arvo** **[&UserID]** .
 
     ![Power BI Report Builder -parametrin nimi](media/embedded-paginated-reports-secure-data/parameter-name.png) 
 

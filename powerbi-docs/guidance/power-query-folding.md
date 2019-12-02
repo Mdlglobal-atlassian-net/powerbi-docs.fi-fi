@@ -8,22 +8,20 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 09/24/2019
 ms.author: v-pemyer
-ms.openlocfilehash: 1ddcc94e2286c82f7e865a2a8012b9d407b3c171
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 01c3d7ac00ec4aa50373e36e1732d4eda55b280c
+ms.sourcegitcommit: f1f57c5bc6ea3057007ed8636ede50188ed90ce1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73875348"
+ms.lasthandoff: 11/23/2019
+ms.locfileid: "74410806"
 ---
 # <a name="the-importance-of-query-folding"></a>Kyselyn lähteeseen delegoinnin tärkeys
 
 Tämä artikkeli on suunnattu tietomallintajille, jotka kehittävät malleja Power BI Desktopissa. Siinä kuvataan, mitä kyselyn lähteeseen delegointi on ja miksi se on tärkeää. Siinä kuvataan myös tietolähteet ja muunnokset, jotka saattavat suorittaa kyselyn lähteeseen delegoinnin, sekä se, miten voit selvittää, että Power Query -kyselysi voidaan delegoida lähteeseen joko kokonaan tai osittain. Lisäksi se tarjoaa ohjeita parhaisiin käytäntöihin, jotka koskevat sitä, milloin ja miten kyselyn delegointi lähteeseen on mahdollista.
 
-## <a name="background"></a>Tausta
-
 Kyselyn delegointi lähteeseen on Power Query -kyselyn kyky luoda yksittäinen kyselylauseke lähdetietojen noutamista ja muuntamista varten. Power Queryn koostemoduuli pyrkii suorittamaan kyselyn delegoinnin lähteeseen mahdollisuuksien mukaan, koska sen seurauksena on tehokkain polku Power BI -mallitaulukon ja sen pohjana olevan tietolähteen yhdistämiseen.
 
-Kyselyn delegointi lähteeseen on tärkeä aihe tietojen mallinnuksessa monesta syytä:
+Kyselyn delegointi lähteeseen on tärkeä käsite tietojen mallinnuksessa monesta syytä:
 
 - **Tuontimallitaulukot:** Tuontimallitaulukoiden tietojen päivitys tapahtuu tehokkaasti resurssien käytön ja päivityksen keston suhteen
 - **DirectQueryn ja kaksoistallennustilan taulukot:** Kunkin DirectQueryn ja kaksoistallennustilan taulukon on perustuttava Power Query -kyselyyn, joka voidaan delegoida lähteeseen
@@ -35,11 +33,11 @@ Suosittelemme, että tietojen mallintajat pyrkivät tehokkuuteen tuontimallin su
 
 ## <a name="sources-that-support-query-folding"></a>Lähteet, jotka tukevat kyselyn delegointia lähteeseen
 
-Useimmat tietolähteet, joissa on kyselykieli, tukevat kyselyn delegointia lähteeseen. Näitä voivat olla esimerkiksi relaatiotietokannat, OData-syötteet (mukaan lukien SharePoint-luettelot), Exchange ja Active Directory. Kuitenkin tietolähteet, kuten tietuetiedostot, blob-objektit ja verkko, eivät yleensä tue sitä.
+Useimmat tietolähteet, joissa on kyselykieli, tukevat kyselyn delegointia lähteeseen. Näitä tietolähteitä voivat olla esimerkiksi relaatiotietokannat, OData-syötteet (mukaan lukien SharePoint-luettelot), Exchange ja Active Directory. Kuitenkin tietolähteet, kuten tietuetiedostot, blob-objektit ja verkko, eivät yleensä tue sitä.
 
 ## <a name="transformations-that-can-achieve-query-folding"></a>Muunnokset, jotka voivat suorittaa kyselyn delegoinnin lähteeseen
 
-Relaatiotietolähteen muunnokset, joiden kyselyt voidaan delegoida lähteeseen, ovat ne, jotka voidaan kirjoittaa yksittäisenä SELECT-lauseena. SELECT-lause voidaan muodostaa sopivalla WHERE-, GROUP BY- ja JOIN-lauseella. Se voi sisältää myös sarakelausekkeita (laskutoimituksia), jotka käyttävät SQL-tietokantojen tukemia yleisiä sisäisiä funktioita.
+Relaatiotietolähteen muunnokset, joiden kyselyt voidaan delegoida lähteeseen, voidaan kirjoittaa yksittäisenä SELECT-lauseena. SELECT-lause voidaan muodostaa sopivalla WHERE-, GROUP BY- ja JOIN-lauseella. Se voi sisältää myös sarakelausekkeita (laskutoimituksia), jotka käyttävät SQL-tietokantojen tukemia yleisiä sisäisiä funktioita.
 
 Seuraavassa luettelossa kuvataan muunnokset, joiden kysely voidaan yleisesti ottaen delegoida lähteeseen.
 
@@ -73,7 +71,7 @@ Seuraavassa luettelossa kuvataan muunnokset, joiden estävät yleisesti ottaen k
 - Hakemistosarakkeiden lisääminen
 - Sarakkeen tietotyypin muuttaminen
 
-Ota huomioon, että kun Power Query -kysely sisältää useita tietolähteitä, tietolähteen tietosuojatasojen yhteensopimattomuus voi estää kyselyiden delegoimisen lähteeeen. Lisätietoja on artikkelissa [Power BI Desktopin yksityisyystasot](../desktop-privacy-levels.md).
+Kun Power Query -kysely sisältää useita tietolähteitä, tietolähteen tietosuojatasojen yhteensopimattomuus voi estää kyselyiden delegoimisen lähteeseen. Lisätietoja on artikkelissa [Power BI Desktopin yksityisyystasot](../desktop-privacy-levels.md).
 
 ## <a name="determine-when-a-query-can-be-folded"></a>Selvitä, milloin kysely voidaan delegoida lähteeseen
 
@@ -85,7 +83,7 @@ Jos haluat tarkastella lähteeseen delegoitua kyselyä, siirry eteenpäin ja val
 
 ![Esimerkki alkuperäisestä kyselystä](media/power-query-folding/native-query-example.png)
 
-Jos **Näytä alkuperäinen kysely** -asetus ei ole käytössä (harmaa), se on todiste siitä, että kaikkia kyselyvaiheita ei voi delegoida lähteeseen. Se voi kuitenkin tarkoittaa, että vaiheiden alijoukko voidaan edelleen delegoida lähteeseen. Jos siirryt taaksepäin edellisestä vaiheesta, voit tarkistaa kunkin vaiheen nähdäksesi tuleeko **Näytä alkuperäinen kysely** -asetus käyttöön. Jos näin käy, olet selvittänyt, missä kohtaa vaihejärjestyksessä kyselyn delegointi lähteeseen ei ole enää mahdollista.
+Jos **Näytä alkuperäinen kysely** -asetus ei ole käytössä (harmaa), tämä on merkki siitä, että kaikkia kyselyvaiheita ei voi delegoida lähteeseen. Se voi kuitenkin tarkoittaa, että vaiheiden alijoukko voidaan edelleen delegoida lähteeseen. Jos siirryt taaksepäin edellisestä vaiheesta, voit tarkistaa kunkin vaiheen nähdäksesi tuleeko **Näytä alkuperäinen kysely** -asetus käyttöön. Kun näin käy, olet selvittänyt, missä kohtaa vaihejärjestyksessä kyselyn delegointi lähteeseen ei ole enää mahdollista.
 
 ![Esimerkki selvityksestä, jossa Power Queryn ei ole mahdollista delegoida kyselyä lähteeseen](media/power-query-folding/query-folding-not-example.png)
 
@@ -95,7 +93,7 @@ Lyhyesti sanottuna Power Query -kyselyn on onnistuttava kyselyn delegoinnissa l�
 
 Seuraavassa luettelossa annetaan parhaita käytäntöjä koskevia ohjeita.
 
-- **Delegoi mahdollisimman suuri osa käsittelystä tietolähteeseen:** Kun Power Query -kyselyn kaikkia vaiheita ei voida delegoida lähteeseen, selvitä vaihe, joka estää kyselyn delegoimisen lähteeseen. Jos se on mahdollista, siirrä tätä seuraavat vaiheet aiempaan kohtaan järjestyksessä, jotta ne voidaan ottaa mukaan kyselyn lähteeseen delegointiin. Ota huomioon, että Power Queryn koostemoduuli voi olla niin älykäs, että se järjestää kyselyvaiheet uudelleen, kun se luo lähdekyselyn.
+- **Delegoi mahdollisimman suuri osa käsittelystä tietolähteeseen:** Kun Power Query -kyselyn kaikkia vaiheita ei voida delegoida lähteeseen, selvitä vaihe, joka estää kyselyn delegoimisen lähteeseen. Jos se on mahdollista, siirrä tätä seuraavat vaiheet aiempaan kohtaan järjestyksessä, jotta ne voidaan ottaa mukaan kyselyn lähteeseen delegointiin. Power Queryn koostemoduuli voi olla niin älykäs, että se järjestää kyselyvaiheet uudelleen, kun se luo lähdekyselyn.
 
 Jos kyseessä on relaatiotietolähde, jonka kyselyiden delegoinnin lähteeseen estävä vaihe voidaan suorittaa yksittäisellä SELECT-lauseella tai tallennetun toimintosarjan menettelylogiikan puitteissa, harkitse alkuperäisen kyselylausekkeen käyttämistä seuraavassa kuvatulla tavalla.
 
@@ -109,11 +107,11 @@ Jos kyseessä on relaatiotietolähde, jonka kyselyiden delegoinnin lähteeseen e
     > [!IMPORTANT]
     > Alkuperäinen kysely voi mahdollisesti tehdä muutakin kuin hakea tietoja. Mikä tahansa kelvollinen lauseke voidaan suorittaa (ja mahdollisesti useita kertoja), mukaan lukien lauseke, joka muokkaa tai poistaa tietoja. On tärkeää ottaa käyttöön vähimpien oikeuksien periaate, jolla varmistetaan, että tilillä, jota käytetään tietokannan käyttämiseen, on ainoastaan vaadittujen tietojen lukuoikeus.
 
-- **Valmistele ja muunna lähteen tietoja:** Jos huomaat, että joitakin Power Query -kyselyn vaiheita ei voida delegoida lähteeseen, saatat pystyä käyttämään tietolähteessä muunnoksia. Tämä voidaan toteuttaa kirjoittamalla tietokantanäkymä, joka loogisesti muuntaa lähdetiedot, tai valmistelemalla ja muodostamalla tiedot fyysisesti, ennen kuin Power BI kyselee niitä. Relaatiotietovarasto on erinomainen esimerkki valmistelluista tiedoista, jotka koostuvat tavallisesti ennalta integroiduista organisaatiotietojen lähteistä.
+- **Valmistele ja muunna lähteen tietoja:** Jos huomaat, että joitakin Power Query -kyselyn vaiheita ei voida delegoida lähteeseen, saatat pystyä käyttämään tietolähteessä muunnoksia. Tämä voidaan toteuttaa kirjoittamalla tietokantanäkymä, joka muuntaa lähdetiedot loogisesti, tai valmistelemalla ja muodostamalla tiedot fyysisesti, ennen kuin Power BI kyselee niitä. Relaatiotietovarasto on erinomainen esimerkki valmistelluista tiedoista, jotka koostuvat tavallisesti ennalta integroiduista organisaatiotietojen lähteistä.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
-Lisätietoja kyselyn delegoinnista lähteeseen ja siihen liittyvistä aiheista saat seuraavista lähteistä:
+Lisätietoja kyselyn delegoinnista lähteeseen ja siihen liittyvistä artikkeleista saat seuraavista lähteistä:
 
 - [Yhdistelmämallien käyttäminen Power BI Desktopissa](../desktop-composite-models.md)
 - [Lisäävää päivitys Power BI Premiumissa](../service-premium-incremental-refresh.md)

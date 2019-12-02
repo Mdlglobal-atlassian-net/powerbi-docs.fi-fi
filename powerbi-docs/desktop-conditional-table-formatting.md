@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/16/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: b715cd42ea221f62258b66eee71b6525b2015ae1
-ms.sourcegitcommit: 01de0b01f66f28ca45b8d309d7864f261d6c9a85
+ms.openlocfilehash: d28028c7b75bedae958df77c743c52b44c4437d9
+ms.sourcegitcommit: 7f27b9eb0e001034e672050735ab659b834c54a3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/16/2019
-ms.locfileid: "74128161"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74311734"
 ---
 # <a name="conditional-formatting-in-tables"></a>Ehdollinen muotoilu taulukoissa 
 Taulukoiden ehdollisen muotoilun avulla voit määrittää mukautettuja solujen värejä, jotka perustuvat solujen arvoihin tai muihin arvoihin tai kenttiin. Voit käyttää myös liukuvärejä. Voit myös näyttää solun arvot tietopalkeilla. 
@@ -139,7 +139,7 @@ Voit värittää visualisointisi käyttämällä arvoja, jotka on lueteltu CSS-v
 Sinun on huomioitava muutamia seikkoja, kun käsittelet ehdollista taulukkomuotoilua:
 
 * Ehdollista muotoilua käytetään vain **Matriisi**-visualisoinnin arvoissa, eikä se koske välisummia tai kokonaissummia. 
-* Ehdollista muotoilua ei käytetä **Summa**-rivillä
+* Ehdollista muotoilua ei käytetä **Summa**-rivillä.
 * Mikä tahansa taulukko, joka ei näytä ryhmittelyä yhtenä rivinä, ei tue ehdollista muotoilua.
 * Jos käytät liukuvärimuotoa ja automaattisia enimmäis- ja vähimmäisarvoja tai sääntöpohjaista muotoilua prosenttisäännöillä, ehdollista muotoilua ei vi käyttää, kun tiedot sisältävät NaN-arvoja. NaN on akronyymi sanoista Not a Number eli suomeksi Ei numero. Niitä aiheuttavat yleensä nollalla jakamisen virheet. Voit välttää nämä virheet funktiolla [DIVIDE() DAX](https://docs.microsoft.com/dax/divide-function-dax).
 

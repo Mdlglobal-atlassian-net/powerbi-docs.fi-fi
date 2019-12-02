@@ -9,12 +9,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 05/15/2019
 LocalizationGroup: Visualizations
-ms.openlocfilehash: a45566d6fe9f4833ebed91e7c10656a8ca1c6961
-ms.sourcegitcommit: 08b73af260ded51daaa6749338cb85db2eab587f
+ms.openlocfilehash: e68d886564552d1b1cb2dc9e7c018c65a5cca039
+ms.sourcegitcommit: c395fe83d63641e0fbd7c98e51bbab224805bbcc
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "74102061"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74265200"
 ---
 # <a name="visuals-in-power-bi"></a>Visualisoinnit Power BI:ssä
 
@@ -49,7 +49,7 @@ Power BI -järjestelmänvalvojat hyväksyvät Power BI -visualisointeja ja ottav
 
 Yhteisön jäsenet ja Microsoft ovat antaneet Power BI -visualisointinsa yleiseen käyttöön ja julkaisseet ne [AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals) Marketplacessa. Voit ladata näitä visualisointeja ja lisätä niitä Power BI -raportteihisi. Microsoft on testannut ja hyväksynyt kaikkien näiden Power BI -visualisointien toiminnan ja laadun.
 
-Mikä [AppSource](office-store.md) on? Se on paikka, josta löydät sovelluksia, apuohjelmia ja laajennuksia Microsoft-ohjelmistollesi. AppSource yhdistää miljoonat Office 365:n, Azuren, Dynamics 365:n, Cortanan ja Power BI:n kaltaisten tuotteiden käyttäjät ratkaisuihin, joiden avulla he voivat työskennellä entistä tehokkaammin, älykkäämmin ja tyylikkäämmin.
+Mikä [AppSource](office-store.md) on? Se on paikka, josta löydät sovelluksia, apuohjelmia ja laajennuksia Microsoft-ohjelmistollesi. AppSource yhdistää miljoonat Office 365:n, Azuren, Dynamics 365:n ja Power BI:n kaltaisten tuotteiden käyttäjät ratkaisuihin, joiden avulla he voivat työskennellä entistä tehokkaammin, älykkäämmin ja tyylikkäämmin.
 
 ### <a name="certified-visuals"></a>Sertifioidut visualisoinnit
 

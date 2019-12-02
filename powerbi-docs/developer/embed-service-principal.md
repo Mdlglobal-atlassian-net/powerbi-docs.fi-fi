@@ -9,12 +9,12 @@ ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 03/29/2019
-ms.openlocfilehash: 9bbba47456d9c5bed5c8cd77858b6dbaeefce5a1
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 3791e9cdfd44c62e6f9e9b79f5345d6d2476b0db
+ms.sourcegitcommit: c395fe83d63641e0fbd7c98e51bbab224805bbcc
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73877665"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74264199"
 ---
 # <a name="service-principal-with-power-bi"></a>Palvelun päänimi ja Power BI
 
@@ -93,7 +93,7 @@ Palvelun päänimen (sovellustunnus) käyttö eroaa tavallisen päätilin käyt�
    > [!Important]
    > Kun otat palvelun päänimen käyttöön käytettäväksi Power BI:n kanssa, sovelluksen AD-käyttöoikeudet eivät ole enää voimassa. Sovelluksen käyttöoikeuksia hallitaan tässä tapauksessa Power BI -hallintaportaalissa.
 
-2.  **Suositus** - Luo [käyttöoikeusryhmä Azure Active Directoryssa (AAD)](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal) ja lisää luomasi sovellus tähän käyttöoikeusryhmään. Voit luoda AAD-käyttöoikeusryhmän [PowerShellillä](https://docs.microsoft.com/powershell/azure/create-azure-service-principal-azureps?view=azps-1.1.0).
+2.  **Suositus**: luo käyttöoikeusryhmä Azure Active Directoryssa (AAD) ja lisää luomasi [sovellus](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals) tähän käyttöoikeusryhmään. Voit luoda AAD-käyttöoikeusryhmän [PowerShellillä](https://docs.microsoft.com/powershell/azure/create-azure-service-principal-azureps?view=azps-1.1.0).
 
     Alla on esimerkkikomentosarja, jolla luodaan uusi käyttöoikeusryhmä ja lisätään sovellus tähän käyttöoikeusryhmään.
 

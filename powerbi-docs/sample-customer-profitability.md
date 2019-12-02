@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 07/05/2019
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: d6368ae61b2813972c3209e2af456ba5aa5fb81b
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 160c5736bc2894e629f5bb375dd07e993def1e0c
+ms.sourcegitcommit: c395fe83d63641e0fbd7c98e51bbab224805bbcc
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73874033"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74265539"
 ---
 # <a name="customer-profitability-sample-for-power-bi-take-a-tour"></a>Asiakkaan tuottavuuden malli Power BI:lle: aloita esittely
 
@@ -128,7 +128,7 @@ Monet Asiakkaan tuottavuuden mallin koontinäytön ruuduista on kiinnitetty pohj
 
     * **Tiimin tuloskortissa** keskitytään viiden johtajan suoritukseen ja asiakaskokoonpanoon.
     * **Alakateanalyysin** avulla on helppo analysoida kannattavuutta verrattuna koko alan kannattavuuteen.
-    * **Johtajan tuloskortti** tarjoaa kutakin johtajaa koskevan näkymän muodossa, jota voidaan tarkastella Cortanassa.
+    * **Johtajan tuloskortti** tarjoaa kutakin johtajaa koskevan näkymän mukauttavan kokoisella sivulla.
 
 ### <a name="team-scorecard-page"></a>Tiimin tuloskortti -sivu
 ![Tiimin tuloskortti -raporttisivu](media/sample-customer-profitability/customer2.png)
@@ -170,7 +170,7 @@ Tällä raporttisivulla tiedot ovat eri sektorista. Sivulla tarkastellaan koko a
    * Valery, jonka vastuulla on vain yksi tuote, toimii vain viidellä toimialasegmentillä. Valeryn toimialavaikutus on kausittaista, mutta tuloksena on aina suuri kupla, mikä osoittaa, että vaikutus yrityksen tulokseen on merkittävä. Selittyykö hänen negatiivinen suoriutumisensa toimialasegmenteillä?
 
 ### <a name="executive-scorecard"></a>Johtajan tuloskortti
-Tämä sivu on muotoiltu Cortana-vastaussivuksi. Lisätietoja on artikkelissa [Mukautettujen vastaussivujen luominen Cortanalle](service-cortana-answer-cards.md).
+Tällä sivulla on mukautettava koko.
 
 ## <a name="dig-into-the-data-by-asking-questions-with-qa"></a>Tietoihin perehtyminen esittämällä kysymyksiä Q&A:ssa
 Analyysia varten olisi hyödyllistä määrittää, mikä toimiala tuottaa eniten tuloja Valerylle. Käytetään Q&A-toimintoa.

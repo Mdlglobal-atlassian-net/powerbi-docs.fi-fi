@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 09/14/2019
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: 5d26327e41e4236a3ea5e0eca2246c6f66a64be4
-ms.sourcegitcommit: 08b73af260ded51daaa6749338cb85db2eab587f
+ms.openlocfilehash: 8041fee4689c6319f219c26f20701c6062601a64
+ms.sourcegitcommit: c839ef7437bc8fb8f7eeda23e59d05c7192a7fe8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "74099137"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74164193"
 ---
 # <a name="export-reports-from-power-bi-to-pdf"></a>Raporttien vieminen Power BI:stä PDF-muotoon
 
@@ -61,6 +61,7 @@ Ota huomioon seuraavat seikat ja rajoitukset, kun käytät **Vie PDF-muotoon** -
 * Kun PDF-muotoon viedään taustakuvan sisältäviä raportteja, kuva saattaa vääristyä viennissä, jos **Normaali**- tai **Täyttö**-vaihtoehtoa käytetään **Sivun tausta** -asetuksena. Käytä parhaan tuloksen varmistamiseksi **Sovita**-asetusta, jolloin vältetään vietyyn tiedostoon liittyvät ongelmat.
 * Power BI -palvelu käyttää PDF-viennin kielenä Power BI:n kieliasetuksen kieltä. Jos haluat tarkistaa kieliasetuksesi tai muuttaa sitä, valitse hammasrataskuvake ![Hammasrataskuvake](media/end-user-powerpoint/power-bi-settings-icon.png) > **Asetukset** > **Yleiset** > **Kieli**.
 * URL-suodattimia ei oteta tällä hetkellä huomioon, kun valitset viennin kohdalla **Nykyiset arvot**.
+* Raporteissa, joiden sivukoko on poikkeava, saattaa esiintyä ongelmia vietäessä. Saat parhaat tulokset vaihtamalla raportissa käyttöön vakiosivukoon.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 [Raportin tulostaminen](end-user-print.md)
