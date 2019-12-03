@@ -15,7 +15,7 @@
           items:
             - name: 'R:ää hyödyntävien Power BI -visualisointien käyttö Power BI:ssä'
               tocHref: /power-bi/developer/
-              topicHref: /power-bi/desktop-r-powered-custom-visuals/
+              topicHref: /power-bi/developer/index
         - name: Ohjattu oppiminen
           tocHref: /power-bi/guided-learning/
           topicHref: /power-bi/guided-learning/
