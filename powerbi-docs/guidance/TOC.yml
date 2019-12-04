@@ -16,10 +16,18 @@
           href: import-modeling-data-reduction.md
         - name: JAKO-funktion ja jako-operaattorin (/) vertailu
           href: dax-divide-function-operator.md
+        - name: Käytä SELECTEDVALUE-arvoa arvojen sijaan
+          href: dax-selectedvalue.md
         - name: Kyselyn lähteeseen delegoinnin tärkeys
           href: power-query-folding.md
         - name: Virhefunktioiden asianmukainen käyttö
           href: dax-error-functions.md
+        - name: Kaavojen parantaminen muuttujien avulla
+          href: dax-variables.md
+        - name: COUNTROWS-rivit COUNT-kohteen sijaan
+          href: dax-countrows.md
+        - name: Vältä tyhjien arvojen muuntamista arvoiksi
+          href: dax-avoid-converting-blank.md
         - name: Tietovoiden parhaat käytännöt
           href: ../service-dataflows-best-practices.md
         - name: Power BI Desktopin DirectQuery-mallin ohjeet
