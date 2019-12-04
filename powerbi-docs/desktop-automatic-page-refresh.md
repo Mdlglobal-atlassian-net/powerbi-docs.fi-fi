@@ -7,15 +7,15 @@ ms.custom: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 10/14/2019
+ms.date: 11/26/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: b9f7c745ad251fdb81c7898130cd3ca6c5d32af9
-ms.sourcegitcommit: c839ef7437bc8fb8f7eeda23e59d05c7192a7fe8
+ms.openlocfilehash: 50daa90f937a9d1c7081d9b22e3c743da950945c
+ms.sourcegitcommit: fe9253a6021b9e198afa28aa9c670c3bacf59674
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "74164143"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74548574"
 ---
 # <a name="automatic-page-refresh-in-power-bi-desktop-preview"></a>Automaattinen sivun päivitys Power BI Desktopissa (esiversio)
 
@@ -83,7 +83,7 @@ Tutustutaan seuraavaksi siihen, miten voit tunnistaa ja korjata suorituskykyonge
 
 Voit myös määrittää automaattisia sivun päivitysvälejä raporteille, jotka on luotu Power BI Desktopissa ja julkaistu Power BI -palveluun. 
 
-Power BI -palvelun raporttien automaattinen sivun päivitys määritetään samankaltaisella tavalla kuin Power BI Desktopissa. Seuraavassa kuvassa näytetään Power BI -palvelun **sivun päivitysmääritykset**:
+Power BI -palvelun raporttien automaattinen sivun päivitys määritetään samankaltaisella tavalla kuin Power BI Desktopissa. Jos automaattinen sivun päivitys on määritetty Power BI -palvelussa, se tukee myös [upotettua Power BI](developer/embedding.md) -sisältöä. Seuraavassa kuvassa näytetään Power BI -palvelun **sivun päivitysmääritykset**:
 
 ![Automaattinen sivun päivitys Power BI -palvelussa](media/desktop-automatic-page-refresh/automatic-page-refresh-04.png)
 

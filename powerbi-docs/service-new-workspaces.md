@@ -6,15 +6,15 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 09/30/2019
+ms.date: 11/27/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 8a9e2094619d4c6b0e0f6feb2c9767902b4f7b09
-ms.sourcegitcommit: 08b73af260ded51daaa6749338cb85db2eab587f
+ms.openlocfilehash: bdaac078fa106565f7c11b3cc323840b5d10b579
+ms.sourcegitcommit: a21f7f9de32203e3a4057292a24ef9b5ac6ce94b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "74099684"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74565332"
 ---
 # <a name="organize-work-in-the-new-workspaces-in-power-bi"></a>Työn järjestäminen uusiin työtiloihin Power BI:ssä
 
@@ -60,7 +60,7 @@ Roolien avulla voit hallita, kuka voi tehdä mitäkin työtilassa, joten ryhmät
 
 Kun määrität rooleja käyttäjäryhmälle, ryhmän käyttäjät voivat käyttää sisältöä. Jos asetat sisäkkäin käyttäjäryhmiä, kaikilla ryhmien käyttäjillä on käyttöoikeus.
 
-Tässä ovat ominaisuudet neljästä roolista: järjestelmänvalvojat, jäsenet, osallistujat ja katselijat. Kaikki nämä ominaisuudet viimeistä lukuun ottamatta edellyttävät Power BI Pro -käyttöoikeutta.
+Tässä ovat ominaisuudet neljästä roolista: järjestelmänvalvojat, jäsenet, osallistujat ja katselijat. Kaikki nämä ominaisuudet tarkastelua ja käyttämistä lukuun ottamatta edellyttävät Power BI Pro -käyttöoikeutta.
 
 |Ominaisuus   | Järjestelmänvalvoja  | Jäsen  | Osallistuja  | Katselija |
 |---|---|---|---|---|
@@ -72,15 +72,15 @@ Tässä ovat ominaisuudet neljästä roolista: järjestelmänvalvojat, jäsenet,
 | Sallia muille kohteiden jakaminen uudelleen. |  X | X  |   |   |
 | Luoda, muokata ja poistaa työtilan sisältöä.  |  X | X  | X  |   |
 | Julkaista raportteja työtilaan ja poistaa sisältöä.  |  X | X  | X  |   |
-| Luo raportti toisessa työtilassa tämän työtilan tietojoukon perusteella. |  X | X  | X  |   |
-| Kopioi raportti. | X | X | X |  |
-| Tarkastele ja käytä kohdetta. |  X | X  | X  | X  |
+| Luo raportti toisessa työtilassa tämän työtilan tietojoukon perusteella.<sup>1</sup> |  X | X  | X  |   |
+| Kopioi raportti.<sup>1</sup> | X | X | X |  |
+| Tarkastele ja käytä kohdetta.<sup>2</sup> |  X | X  | X  | X  |
 
-> [!NOTE]
->Raportin kopioiminen ja raportin luominen toisessa työtilassa tämän työtilan tietojoukon perusteella edellyttää, että käyttäjät täyttävät seuraavat lisäehdot:
->- Power BI Pro -käyttöoikeus tarvitaan. Lisätietoja on seuraavassa osiossa [Käyttöoikeudet](#licensing).
->- Käyttäjillä on oltava tietojoukon muodostamisen käyttöoikeus. Tämän työtilan tietojoukoissa käyttäjillä, joilla on järjestelmänvalvojan, jäsenen tai osallistujaroolin, on muodostamisen käyttöoikeus työtilaroolin kautta.
- 
+1. Jos haluat kopioida raportin tai luoda raportin toisessa työtilassa tämän työtilan tietojoukon perusteella, seuraavien ehtojen on täytyttävä:
+    - Tarvitset Power BI Pro -käyttöoikeuden. Lisätietoja on seuraavassa osiossa [Käyttöoikeudet](#licensing).
+    - Tarvitset tietojoukon muodostamisen käyttöoikeuden. Tämän työtilan tietojoukoissa käyttäjillä, joilla on järjestelmänvalvojan, jäsenen tai osallistujaroolin, on muodostamisen käyttöoikeus työtilaroolin kautta.
+2. Vaikka sinulla ei olisikaan Power BI Pro -käyttöoikeutta, voit tarkastella ja käyttää Power BI -palvelun kohteita, jos kohteet ovat Premium-kapasiteetin työtilassa.
+
 ## <a name="licensing"></a>Käyttöoikeudet
 Jokainen jäsen, jonka lisäät työtilaan jaetussa kapasiteetissa, tarvitsee Power BI Pro -käyttöoikeuden. Työtilassa nämä käyttäjät voivat tehdä yhteistyötä niiden koontinäyttöjen ja raporttien parissa, jotka aiot julkaista laajemmalle lukijakunnalle tai jopa koko organisaatiolle. 
 

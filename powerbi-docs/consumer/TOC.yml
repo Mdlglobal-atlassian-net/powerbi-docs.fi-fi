@@ -58,6 +58,8 @@
               href: end-user-pdf.md
             - name: "Lisää\_kirjanmerkki raporttiin"
               href: end-user-bookmarks.md
+            - name: Sivutetut raportit
+              href: end-user-paginated-report.md
         - name: Visualisoinnit
           items:
             - name: Mitä visualisointien avulla voi tehdä?

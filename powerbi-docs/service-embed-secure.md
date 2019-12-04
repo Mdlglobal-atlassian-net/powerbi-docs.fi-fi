@@ -7,14 +7,14 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/20/2019
+ms.date: 11/27/2019
 LocalizationGroup: Share your work
-ms.openlocfilehash: 59841cdcfae3bc08e0b6dcacf4bcb6664dfe209c
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: d4495a2021f008326d76c7fd9ff686d639827e90
+ms.sourcegitcommit: a21f7f9de32203e3a4057292a24ef9b5ac6ce94b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73877090"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74565748"
 ---
 # <a name="embed-a-report-in-a-secure-portal-or-website"></a>Raportin upottaminen turvalliseen portaaliin tai sivustoon
 
@@ -118,6 +118,8 @@ report.src = newUrl;
 Voit luoda mukautetun ja helposti koodattavan käyttökokemuksen lisäämällä erilaisia painikkeita. 
 
 ## <a name="considerations-and-limitations"></a>Huomioitavat asiat ja rajoitukset
+
+* Sivutettuja raportteja tuetaan turvatuissa upotustilanteissa, ja myös URL-parametreja sisältäviä sivutettuja raportteja tuetaan. Lue lisää [raporttiparametrien välittämisestä sivutettuun raporttiin URL-osoitteessa](report-builder-url-pass-parameters.md).
 
 * Ulkoisia käyttäjiä ei tueta yritystenvälisen yhteistyön (B2B) Azure-ratkaisuissa.
 

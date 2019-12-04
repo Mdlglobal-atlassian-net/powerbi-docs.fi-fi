@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: overview
-ms.date: 09/24/2019
-ms.openlocfilehash: 9e49e8e70e7bc499fbcfe0c263bdd8315f2c7dbe
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.date: 11/27/2019
+ms.openlocfilehash: 90bc46c484f659994c6a9500865803531fa3cdcc
+ms.sourcegitcommit: a21f7f9de32203e3a4057292a24ef9b5ac6ce94b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73874724"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74565715"
 ---
 # <a name="what-are-paginated-reports-in-power-bi-premium"></a>Mitä ovat sivutetut raportit Power BI Premiumissa?
 
@@ -21,9 +21,9 @@ Sivutetut raportit, SQL Server Reporting Servicesin vakioraporttimuoto, ovat nyt
 
 Sivutetuissa raporteissa voi olla useita sivuja. Esimerkiksi tässä raportissa on 563 sivua. Jokainen sivu on aseteltu tarkasti yksi sivu laskua kohti -muotoon, ja ylä- ja alatunnisteet toistuvat kaikissa.
 
-![Sivutettu](media/paginated-reports-report-builder-power-bi/power-bi-paginated-wwi-report-page.png)
+Kokeile [Käytännön labratyötä: Sivutetun Microsoft Power BI -raportin luominen](https://www.microsoft.com/handsonlabs/selfpacedlabs/details/SQ00208).
 
-![Sivutettu raportti Power BI -palvelussa](media/report-builder-power-bi/report-builder-get-started-paginated-report.png)
+![Sivutettu](media/paginated-reports-report-builder-power-bi/power-bi-paginated-wwi-report-page.png)
 
 Voit esikatsella raporttisi raportin muodostimessa ja julkaista sen Power BI -palvelussa, https://app.powerbi.com. Tarvitset Power BI Pro -käyttöoikeuden raportin julkaisemiseksi palveluun. Voit julkaista ja jakaa sivutettuja raportteja omassa työtilassasi tai työtiloissa niin kauan kuin työtila on Power BI Premium -kapasiteetissa. Lisäksi Power BI -järjestelmänvalvojan on otettava sivutetut raportit käyttöön Power BI -hallintaportaalin [Premium-kapasiteettiosiosta](service-admin-premium-workloads.md#paginated-reports). 
 
@@ -87,6 +87,6 @@ Tässä on joitakin muita ominaisuuksia, joita ei tueta ensimmäisessä julkaisu
 - [Asenna Power BI:n raportin muodostin Microsoft Download Centeristä](https://go.microsoft.com/fwlink/?linkid=2086513)
 - [Opetusohjelma: Luo sivutettu raportti](paginated-reports-quickstart-aw.md)
 - [Anna tiedot suoraan sivutettuun raporttiin](paginated-reports-enter-data.md)
-
+- [Käytännön labratyö: Sivutetun Microsoft Power BI -raportin luominen](https://www.microsoft.com/handsonlabs/selfpacedlabs/details/SQ00208)
   
 

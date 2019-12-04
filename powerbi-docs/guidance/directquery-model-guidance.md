@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 10/24/2019
 ms.author: v-pemyer
-ms.openlocfilehash: d7fcc054ccf0bea1a036eaf24cb9631a2abb3969
-ms.sourcegitcommit: f1f57c5bc6ea3057007ed8636ede50188ed90ce1
+ms.openlocfilehash: bfc1572e31269182e9ca63efbbf6934b90f84b66
+ms.sourcegitcommit: 462ccdd9f79ff698ed0cdfc3165f4ada364dd9ef
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74410890"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "74478631"
 ---
 # <a name="directquery-model-guidance-in-power-bi-desktop"></a>Power BI Desktopin DirectQuery-mallin ohjeet
 
@@ -99,7 +99,7 @@ DirectQuery-tietojoukolle perustuvat raportit voidaan optimoida monella tavalla,
     
 - **Ota suodattimet käyttöön ensin:** Kun suunnittelet raportteja ensimmäistä kertaa, suosittelemme, että otat käyttöön soveltuvat suodattimet – raportti-, sivu- tai visualisointitasolla – ennen kuin yhdistät kenttiä visuaalisiin kenttiin. Sen sijaan, että vetäisit **Maa** ja **Myynti**-mittarit ja suodattaisit sitten tietyn vuoden mukaan, ota suodatin ensin käyttöön **Vuosi**-kentässä. Tämä johtuu siitä, että visualisoinnin luomisen jokainen vaihe lähettää kyselyn. Vaikka voitkin tehdä toisen muutoksen, ennen kuin ensimmäinen kysely on suoritettu, tämä aiheuttaa silti tarpeetonta kuormitusta pohjana olevalle tietolähteelle. Kun otat suodattimet käyttöön aikaisessa vaiheessa, välivaiheen kyselyistä tulee kevyempiä ja nopeampia. Jos suodattimia ei oteta käyttöön ajoissa, tämä voi johtaa miljoonan rivin rajan ylitykseen edellä kuvatulla tavalla.
 - **Rajoita sivun visualisointien määrää:** Kun raporttisivu avataan (ja kun sivusuodattimia otetaan käyttöön) kaikki sivun visualisoinnit päivitetään. Power BI -ympäristön vuoksi ja **Yhteyksien enimmäismäärä tietolähdettä kohden** mallin asetuksen mukaisesti rinnakkain lähetettäviä kyselyitä voidaan kuitenkin lähettää rajoitettu määrä edellä kuvatulla tavalla. Sivun visualisointien määrän kasvaessa on siis suurempi mahdollisuus, että ne päivitetään sarjamaisesti. Tämä pidentää koko sivun päivittämiseen kuluvaa aikaa, ja se lisää myös todennäköisyyttä, että visualisoinnit saattavat näyttää ristiriitaisia tuloksia (muuttuvien tietolähteiden osalta). Tästä syystä suosittelemme, että rajoitat sivujen visualisointien määrää. Voit käyttää sen sijaan useita yksinkertaisempia sivuja. Useiden korttien visualisointien korvaaminen yksittäisellä monirivisen kortin visualisoinnilla voi tuottaa samanlaisen sivun asettelun.
-- **Visualisointien välisen vuorovaikutuksen käytöstä poistaminen:** Ristiinkorostamisen ja ristiinsuodatuksen vuorovaikutukset edellyttävät, että kyselyt lähetetään pohjana olevaan lähteeseen. Elleivät nämä vuorovaikutukset ole välttämättömiä, on suositeltavaa, että ne poistetaan käytöstä, jos käyttäjien valintoihin vastaamiseen kuluva aika olisi kohtuuttoman pitkä. Nämä vuorovaikutukset voi poistaa käytöstä joko koko raportissa (kuten yllä kuvattiin Kyselyn pienentäminen -asetusten kohdassa) tai tapauskohtaisesti artikkelin [Visualisointien ristiinsuodatus keskenään Power BI -raportissa](../consumer/end-user-interactions.md) ohjeiden avulla.
+- **Visualisointien välisen vuorovaikutuksen käytöstä poistaminen:** Ristiinkorostamisen ja ristiinsuodatuksen vuorovaikutukset edellyttävät, että kyselyt lähetetään pohjana olevaan lähteeseen. Elleivät nämä vuorovaikutukset ole välttämättömiä, on suositeltavaa, että ne poistetaan käytöstä, jos käyttäjien valintoihin vastaamiseen kuluva aika olisi kohtuuttoman pitkä. Tämän vuorovaikutuksen voi poistaa käytöstä joko koko raportissa (kuten yllä kuvattiin Kyselyn pienentäminen -asetusten kohdassa) tai tapauskohtaisesti. Lisätietoja on kohdassa [Visualisointien ristiinsuodatus keskenään Power BI -raportissa](../consumer/end-user-interactions.md).
 
 Ota yllä mainittujen optimointitekniikoiden lisäksi huomioon myös se, että kaikki seuraavista raportointitoiminnoista voivat vaikuttaa suorituskykyongelmien syntymiseen:
 
@@ -110,8 +110,8 @@ Ota yllä mainittujen optimointitekniikoiden lisäksi huomioon myös se, että k
     
     Tämä voi aiheuttaa sen, että taustalähteeseen lähetetään kaksi kyselyä:
     
-      - Ensimmäinen kysely hakee luokat, jotka täyttävät ehdon (Myynti > 15 miljoonaa dollaria).
-      - Toinen kysely hakee sitten visualisoinnissa tarvittavat tiedot ja lisää luokat, jotka täyttivät WHERE-lausekkeen ehdon
+    - Ensimmäinen kysely hakee luokat, jotka täyttävät ehdon (Myynti > 15 miljoonaa dollaria).
+    - Toinen kysely hakee sitten visualisoinnissa tarvittavat tiedot ja lisää luokat, jotka täyttivät WHERE-lausekkeen ehdon
     
     Tämä toimii yleensä hyvin, jos luokkia on satoja tai tuhansia, kuten tässä esimerkissä. Suorituskyky voi kuitenkin heikentyä, jos luokkia on paljon enemmän. Itse asiassa kysely epäonnistuu, jos ehdon täyttäviä luokkia on yli miljoona. Tämä johtuu edellä mainitusta miljoonan rivin rajoituksesta.
 - **Ylimmät N -suodattimet:** Lisäsuodatuksen voi määrittää suodattamaan vain ylimmät (tai alimmat) N-arvot, jotka on luokiteltu mittarin mukaan. Voit esimerkiksi näyttää vain viisi ylintä luokkaa yllä olevassa visualisoinnissa. Kuten mittarisuodattimissa, tämän tuloksena on myös kaksi kyselyä, jotka lähetetään pohjana olevaan tietolähteeseen. Ensimmäinen kysely kuitenkin palauttaa kaikki luokat taustalähteestä, kun taas ylimmät N -suodattimella näytettävät arvot määritetään palautettujen tulosten pohjalta. Käytetyn sarakkeen kardinaliteetista riippuen tämä voi johtaa suorituskykyongelmiin (tai kyselyn epäonnistumiseen, jos miljoonan rivin raja ylittyy).
@@ -127,7 +127,7 @@ Voit toteuttaa monia toiminnallisia ja suorituskykyyn liittyviä parannuksia muu
 
 ## <a name="educate-users"></a>Käyttäjien kouluttaminen
 
-On tärkeää kouluttaa käyttäjät käsittelemään DirectQuery-tieto joukoille perustuvia raportteja tehokkaasti. Raportin tekijöiden tulee tuntea [Raportin mallien optimoiminen](#optimize-report-designs) -ohjeartikkelin sisältö.
+On tärkeää kouluttaa käyttäjät käsittelemään DirectQuery-tieto joukoille perustuvia raportteja tehokkaasti. Raportin tekijöiden tulee tuntea [Raportin mallien optimoiminen](#optimize-report-designs section) -ohjeartikkelin sisältö.
 
 Suosittelemme koulutat raporttiesi käyttäjät ymmärtämään DirectQuery-tietojoukkoihin perustuvia raportteja. Se voi auttaa ymmärtämään yleistä tietoarkkitehtuuria, myös tässä artikkelissa kuvattuja tärkeitä rajoituksia. Ilmoita käyttäjillesi, että päivityksen vastaukset ja vuorovaikutteinen suodatus saattavat toisinaan olla hitaita. Kun raportin käyttäjät ymmärtävät, miksi suorituskyky voi heikentyä, he eivät menetä helposti luottamustaan raportteihin ja tietoihin.
 

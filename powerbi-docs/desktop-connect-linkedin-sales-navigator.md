@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 11/11/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 5631e4144cf202591e202fd46405815b38ceb42d
-ms.sourcegitcommit: 0d7ad791a2d2bef45d5d60e38e0af4c9fc22187b
+ms.openlocfilehash: cd952dfa690d079d662f09e1e01c34dadf129b7b
+ms.sourcegitcommit: a21f7f9de32203e3a4057292a24ef9b5ac6ce94b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74016246"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74565635"
 ---
 # <a name="connect-to-linkedin-sales-navigator-in-power-bi-desktop"></a>Yhdistäminen LinkedIn Sales Navigatoriin Power BI Desktopissa
 
@@ -111,6 +111,10 @@ Voit sitten muodostaa yhteyden omiin tietoihisi ja valita, monenko päivän tied
 Mallisovellus päivittää sitten sovelluksen tiedot omilla tiedoillasi. Voit myös määrittää ajoitetun tietojen päivityksen, niin että sovelluksesi tiedot ovat niin ajan tasalla kuin päivitystiheytesi määrittää. 
 
 Kun tiedot ovat päivittyneet, näet sovelluksen täyttyneen omilla tiedoillasi.
+
+## <a name="getting-help"></a>Ohjeiden hakeminen
+
+Jos yhteyden muodostaminen tietoihisi aiheuttaa ongelmia, voit ottaa yhteyttä LinkedIn Sales Navigator -tukeen osoitteessa https://www.linkedin.com/help/sales-navigator. 
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 Power BI Desktopin avulla voit muodostaa yhteyden hyvin monenlaisiin tietoihin. Lisätietoja näistä tietolähteistä saat seuraavista resursseista:

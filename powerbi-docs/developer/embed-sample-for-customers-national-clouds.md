@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: tutorial
 ms.custom: seodec18
 ms.date: 02/05/2019
-ms.openlocfilehash: b469cd4649a7acaef3a64eb0d3d8359e438e796f
-ms.sourcegitcommit: 7f27b9eb0e001034e672050735ab659b834c54a3
+ms.openlocfilehash: 2d8fc35383aa427d8e5c9fd37c6c35f4f3d0a6bb
+ms.sourcegitcommit: a21f7f9de32203e3a4057292a24ef9b5ac6ce94b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74311116"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74565307"
 ---
 # <a name="tutorial-embed-a-power-bi-content-into-your-application-for-national-clouds"></a>Opetusohjelma: Power BI -sisällön upottaminen sovellukseesi kansallisissa pilvipalveluissa
 
@@ -25,6 +25,8 @@ Power BI tukee myös [kansallisia pilvipalveluita](https://docs.microsoft.com/az
 Kansalliset pilvipalvelut:
 
 * U.S. Government Community Cloud (GCC)
+
+* U. S. Government Community Cloud High (GCC High)
 
 * U. S. Military Contractors (DoDCON)
 
@@ -51,8 +53,8 @@ Tässä artikkelissa näytetään koodi, jota käytetään GitHubin [App Owns Da
 
 * Government Community Cloud (GCC):
 
-    > [!Note]
-    > GCC-tilit tukevat vain P- ja EM-kapasiteetteja.
+    > [!NOTE]
+    > Government Community Cloudista (GCC) peräisin olevan Power BI -sisällön upottaminen voidaan tehdä vain Office 356 SKU:n avulla. GCC High -asiakkaat voivat käyttää [Office 356- tai Azure-varastointiyksikköjä](embedded-faq.md#what-is-the-difference-between-the-a-skus-in-azure-and-the-em-skus-in-office-365).
 
 1. Korvaa Cloud.config-tiedosto tiedoston GCCCloud.config sisällöllä.
 

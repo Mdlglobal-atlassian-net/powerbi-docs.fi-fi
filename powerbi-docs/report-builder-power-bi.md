@@ -1,7 +1,7 @@
 ---
 title: Power BI:n sivutetun raportin muodostin
 description: Power BI:n sivutetun raportin muodostin on erillinen työkalu sivutettujen raporttien luomiseen.
-ms.date: 09/16/2019
+ms.date: 11/27/2019
 ms.service: powerbi
 ms.subservice: report-builder
 featuredvideoid: 78TZeiEhveY
@@ -9,16 +9,18 @@ ms.topic: conceptual
 ms.assetid: 55bf4f9c-d037-412f-ae57-3fc39ce32fa5
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: 6d13871ec3ba8a7550a556a8923893a6b7d676ae
-ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
+ms.openlocfilehash: faba36a609abd94b2439006fbbcf01a1d193c585
+ms.sourcegitcommit: a21f7f9de32203e3a4057292a24ef9b5ac6ce94b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71076075"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74565285"
 ---
 # <a name="power-bi-paginated-report-builder"></a>Power BI:n sivutetun raportin muodostin
 
  Power BI:n sivutetun raportin muodostin on erillinen työkalu sivutettujen raporttien luomiseen.  Kun suunnittelet sivutetun raportin, luot raportille määrityksen, joka määrää, mitä tietoja haetaan, mistä ne haetaan ja miten ne näytetään. Kun raportti suoritetaan, raportin käsittely käyttää määrittämääsi raportin määritystä, noutaa tiedot ja yhdistää ne raportin asetteluun raportin luomiseksi. Voit esikatsella raporttia raportin muodostimessa. Julkaise raportti sitten Power BI -palveluun.
+
+Kokeile [Käytännön labratyötä: Sivutetun Microsoft Power BI -raportin luominen](https://www.microsoft.com/handsonlabs/selfpacedlabs/details/SQ00208).
 
 Opetteletko uusia asioita mieluummin videoista? Tutustu YouTubessa Power BI:n sivutetuista raporteista kertovaan videosarjaan, jonka tekijänä on Power BI:n ohjelmajohtaja Chris Finlan.
 
@@ -61,5 +63,5 @@ Seuraavassa sivutetussa raportissa on matriisi, joka sisältää rivi- ja sarake
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
 - [Mitä ovat sivutetut raportit Power BI Premiumissa?](paginated-reports-report-builder-power-bi.md)
-
+- Kokeile [Käytännön labratyötä: Sivutetun Microsoft Power BI -raportin luominen](https://www.microsoft.com/handsonlabs/selfpacedlabs/details/SQ00208)
 - Katso YouTubessa [Power BI:n sivutetuista raporteista kertova videosarja](https://www.youtube.com/watch?v=78TZeiEhveY&list=PLx7LcKtN_gq-JVzM6L8xNNxX7kts-KflJ), jonka tekijänä on Power BI:n ohjelmajohtaja Chris Finlan.

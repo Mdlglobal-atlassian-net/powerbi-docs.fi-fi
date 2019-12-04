@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 06/10/2019
-ms.openlocfilehash: 3ef9bd001e17c472216e501c6d38907087219959
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: cd252572c3080f300592b52ddc0f25cefcf7f084
+ms.sourcegitcommit: 462ccdd9f79ff698ed0cdfc3165f4ada364dd9ef
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73875811"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "74478667"
 ---
 # <a name="row-level-security-with-power-bi-embedded"></a>Rivitason suojaus Power BI Embeddedissä
 
@@ -333,8 +333,7 @@ Tätä oikeutta ei voi määrittää hallintaportaalissa. Sen voi määrittää 
 
 ### <a name="token-based-identity-limitations"></a>Tunnuspohjaisten käyttäjätietojen rajoitukset
 
-* Tämä ominaisuus rajoittaa vain käyttöä Power BI Premiumin kanssa.
-* Tämä ominaisuus ei toimi paikallisen SQL Serverin kanssa.
-* Tämä ominaisuus ei toimi Multi-Geo-toiminnon kanssa.
+* Voit käyttää RLS-toimintoa vain, jos käytössäsi on varattu kapasiteetti.
+* RLS ei toimi paikallisen SQL Serverin kanssa.
 
 Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)

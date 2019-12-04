@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 05/22/2019
-ms.openlocfilehash: eecddd9251bbce732e9dc4ef70ad0d855f499d11
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.date: 11/26/2019
+ms.openlocfilehash: 7297e73dc0e412f75412eb48398ef9c85cda8d6e
+ms.sourcegitcommit: a21f7f9de32203e3a4057292a24ef9b5ac6ce94b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73874150"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74565765"
 ---
 # <a name="install-power-bi-report-server"></a>Power BI -raporttipalvelimen asentaminen
 
@@ -21,9 +21,9 @@ Opi asentamaan Power BI -raporttipalvelin.
 
 ## <a name="download-power-bi-report-server"></a>Power BI -raporttipalvelimen lataaminen
 
-[Lataa Power BI -raporttipalvelin](https://www.microsoft.com/download/details.aspx?id=56722) Microsoft Download Centeristä.
+Valitse [Paikallinen raportointi Power BI -raporttipalvelimella](https://powerbi.microsoft.com/report-server/) -sivulta **Lataa ilmainen kokeiluversio**.
 
-Saatavana on myös maksuton kokeiluversio. Valitse [Paikallinen raportointi Power BI -raporttipalvelimella](https://powerbi.microsoft.com/report-server/) -sivulta **Lataa ilmainen kokeiluversio**.
+Kun suoritat PowerBIReportServer.exe-tiedoston, valitse ilmainen kokeiluversio tai anna tuoteavain. Lisätietoja on alla.
 
 ## <a name="before-you-install"></a>Ennen asentamista
 
@@ -43,7 +43,7 @@ Lisätietoja on alla.
 
 #### <a name="power-bi-premium"></a>Power BI Premium
 
-Jos olet ostanut Power BI Premiumin, löydät Power BI -raporttipalvelimen tuoteavaimen Power BI -hallintaportaalin **Premium-asetukset**-välilehdeltä. Tämä on käytettävissä vain Yleisille järjestelmänvalvojille ja käyttäjille, joille on määritetty Power BI -palvelun järjestelmänvalvojan rooli.
+Jos olet ostanut Power BI Premiumin, Power BI -raporttipalvelimen tuoteavain on Power BI -hallintaportaalin **Premium-asetukset**-välilehdellä. Hallintaportaali on käytettävissä vain Yleisille järjestelmänvalvojille ja käyttäjille, joille on määritetty Power BI -palvelun järjestelmänvalvojan rooli.
 
 ![Premium-asetukset](../report-server/media/install-report-server/pbirs-product-key.png "Power BI -raporttipalvelimen avain Premiumin asetuksissa")
 
@@ -70,7 +70,7 @@ SQL Server -tietokantamoduulin palvelimen ei tarvitse olla käytettävissä asen
 
     ![Valitse versio](media/install-report-server/pbireportserver-choose-edition.png)
 
-    Voit valita avattavasta luettelosta joko Evaluation- tai Developer-version.
+    Valitse joko Evaluation- tai Developer-versio.
 
     ![Versio 2](media/install-report-server/pbireportserver-choose-edition2.png)
 
@@ -78,7 +78,7 @@ SQL Server -tietokantamoduulin palvelimen ei tarvitse olla käytettävissä asen
 4. Lue ja hyväksy käyttöoikeussopimuksen ehdot ja valitse sitten **Seuraava**.
 
     ![Käyttöoikeusehdot](media/install-report-server/pbireportserver-eula.png)
-5. Tietokantamoduulin on oltava käytettävissä raporttipalvelimen tietokannan tallennusta varten. Valitse **Seuraava** asentaaksesi vain raporttipalvelimen.
+5. Tarvitset käytettävissä olevan tietokantamoduulin, johon voit tallentaa raporttipalvelimen tietokannan. Valitse **Seuraava** asentaaksesi vain raporttipalvelimen.
 
     ![Asenna vain tiedostot](media/install-report-server/pbireportserver-install-files-only.png)
 6. Määritä raporttipalvelimen asennuspaikka. Jatka valitsemalla **Asenna**.
@@ -95,11 +95,11 @@ SQL Server -tietokantamoduulin palvelimen ei tarvitse olla käytettävissä asen
 
 Kun valitset asetuksissa **Määritä raporttipalvelin**, näyttöön tulee Reporting Services Configuration Manager. Lisätietoja on artikkelissa [Reporting Services Configuration Manager](https://docs.microsoft.com/sql/reporting-services/install-windows/reporting-services-configuration-manager-native-mode).
 
-Sinun on [luotava raporttipalvelintietokanta](https://docs.microsoft.com/sql/reporting-services/install-windows/ssrs-report-server-create-a-report-server-database) raporttipalvelujen alkumäärityksen viimeistelemiseksi. SQL Server -tietokantapalvelin vaaditaan tämän vaiheen suorittamiseksi.
+[Luo raporttipalvelintietokanta](https://docs.microsoft.com/sql/reporting-services/install-windows/ssrs-report-server-create-a-report-server-database) raporttipalvelujen alkumäärityksen viimeistelemiseksi. SQL Server -tietokantapalvelin vaaditaan tämän vaiheen suorittamiseksi.
 
 ### <a name="creating-a-database-on-a-different-server"></a>Tietokannan luominen eri palvelimessa
 
-Jos olet luomassa raporttipalvelintietokantaa tietokantapalvelimeen, joka sijaitsee eri tietokoneessa, sinun on muutettava raporttipalvelimen palvelutili tunnistetiedoiksi, jotka tunnistetaan tietokantapalvelimessa. 
+Jos olet luomassa raporttipalvelintietokantaa tietokantapalvelimeen, joka sijaitsee eri tietokoneessa, muuta raporttipalvelimen palvelutili tunnistetiedoiksi, jotka tunnistetaan tietokantapalvelimessa. 
 
 Oletusarvon mukaan raporttipalvelin käyttää virtuaalista palvelutiliä. Jos yrität luoda tietokannan eri palvelimessa, näyttöön saattaa tulla seuraava virhe Otetaan yhteysoikeuksia käyttöön -vaiheessa.
 
@@ -137,9 +137,9 @@ Täydellinen URL-merkkijono voi olla esimerkiksi seuraavanlainen:
 
 ## <a name="firewall"></a>Palomuuri
 
-Jos käytät raporttipalvelinta etäkoneesta, sinun tulee varmistaa, että olet määrittänyt palomuurisäännöt, jos palomuuri on käytössä.
+Jos käytät raporttipalvelinta etäkoneesta, varmista, että olet määrittänyt palomuurisäännöt, jos palomuuri on käytössä.
 
-Sinun on avattava TCP-portti, jonka olet määrittänyt verkkopalvelun URL-osoitetta ja verkkoportaalin URL-osoitetta varten. Oletusarvon mukaan näille on määritetty TCP-portti 80.
+Avaa TCP-portti, jonka olet määrittänyt verkkopalvelun URL-osoitetta ja verkkoportaalin URL-osoitetta varten. Oletusarvon mukaan näille on määritetty TCP-portti 80.
 
 ## <a name="additional-configuration"></a>Lisämääritykset
 
