@@ -747,16 +747,6 @@
               href: designer/service-security-apply-data-sensitivity-labels.md
         - name: Tietojen historiatiedot
           href: service-data-lineage.md
-        - name: 'Sivutetut raportit Power BI:ssä'
-          items:
-            - name: Tarkastele sivutettua raporttia
-              href: paginated-reports-view-power-bi-service.md
-            - name: Tuetut tietolähteet
-              href: paginated-reports-data-sources.md
-            - name: Parametrien käsittely
-              href: paginated-reports-view-parameters.md
-            - name: Tilaaminen itselle tai muille
-              href: paginated-reports-subscriptions.md
         - name: Mallisovellukset
           items:
             - name: Mallisovellusten yleiskatsaus
@@ -915,6 +905,8 @@
           href: report-builder-planning-report.md
         - name: Raportin muodostimen tiedot
           href: report-builder-data.md
+        - name: Tuetut tietolähteet
+          href: paginated-reports-data-sources.md
         - name: 'Käytä Power BI:n jaettuja tietojoukkoja'
           href: report-builder-shared-datasets.md
         - name: Suunnitteluvinkkejä

@@ -58,8 +58,16 @@
               href: end-user-pdf.md
             - name: "Lisää\_kirjanmerkki raporttiin"
               href: end-user-bookmarks.md
-            - name: Sivutetut raportit
-              href: end-user-paginated-report.md
+            - name: 'Sivutetut raportit Power BI:ssä'
+              items:
+                - name: Sivutetut raportit
+                  href: end-user-paginated-report.md
+                - name: Tarkastele sivutettua raporttia
+                  href: paginated-reports-view-power-bi-service.md
+                - name: Parametrien käsittely
+                  href: paginated-reports-view-parameters.md
+                - name: Tilaaminen itselle tai muille
+                  href: paginated-reports-subscriptions.md
         - name: Visualisoinnit
           items:
             - name: Mitä visualisointien avulla voi tehdä?
