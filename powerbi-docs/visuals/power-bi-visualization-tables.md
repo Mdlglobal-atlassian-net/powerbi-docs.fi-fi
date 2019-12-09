@@ -2,20 +2,20 @@
 title: Taulukkovisualisoinnit Power BI -raporteissa ja raporttinäkymissä
 description: Opetusohjelma siitä, miten Power BI -raporttien ja raporttinäkymien taulukkovisualisointien kanssa työskennellään ja miten sarakkeiden leveyksiä muutetaan.
 author: mihart
-ms.reviewer: ''
+ms.reviewer: willt
 featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/24/2019
+ms.date: 12/04/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 2bb20b9ecc43e73e85d798416fe0ddaabb98e12b
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 6d2f1eea22f83d90501581be7d2e9b8230962835
+ms.sourcegitcommit: e492895259aa39960063f9b337a144a60c20125a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73870799"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74830881"
 ---
 # <a name="tables-in-power-bi-reports-and-dashboards"></a>Taulukot Power BI -raporteissa ja raporttinäkymissä
 
@@ -130,7 +130,7 @@ Taulukoiden ehdollisen muotoilun avulla voit määrittää mukautettuja solujen 
 
 1. Määritä avautuvassa valintaikkunassa värit **positiiviselle palkille** ja **negatiiviselle palkille**, valitse **Näytä vain palkki** -vaihtoehto ja tee kaikki muut haluamasi muutokset.
 
-    ![Näytä vain palkki -valintamerkki](media/power-bi-visualization-tables/power-bi-data-bars.png)
+    ![Näytä vain palkki -valintamerkki](media/power-bi-visualization-tables/power-bi-data-bar.png)
 
 1. Valitse **OK**.
 
