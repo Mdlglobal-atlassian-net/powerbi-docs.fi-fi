@@ -1,21 +1,21 @@
 ---
 title: Omistautuneet Office 365 -käyttäjät – tunnetut ongelmat
 description: Tukea omistautuneille Office 365 -käyttäjille – tunnetut ongelmat. Tässä aiheessa kuvataan omistautuneita Office 365 -käyttäjiä koskevia ongelmia. Niihin sisältyvät ryhmäominaisuuden rajoitukset sekä iPhone-sovellus henkilökohtaisilla toimialueilla.
-author: mgblythe
+author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 06/28/2017
-ms.author: mblythe
+ms.author: kfollis
 ms.custom: seodec18
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: 010a45c08a3ed27b12b4fca91c64c87a00430f5a
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: a5a9d080205e5f6a047ed820b8b5ed70fa9017d2
+ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73873586"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74699977"
 ---
 # <a name="office-365-dedicated-customers---known-issues"></a>Omistautuneet Office 365 -käyttäjät – tunnetut ongelmat
 Power BI:tä tuetaan nyt omistautuneille Office 365 -käyttäjille.  Jos olet omistautunut O365-käyttäjä, voit kirjautua sisään sen vuokraajan tilillä ja käyttää Power BI:tä. Tällä hetkellä on kaksi tunnettua ongelmaa.
