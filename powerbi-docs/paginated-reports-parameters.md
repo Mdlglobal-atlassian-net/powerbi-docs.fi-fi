@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 06/06/2019
-ms.openlocfilehash: d1f23f52f484ec9e141b4870b50cc1b2758709d9
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.date: 12/03/2019
+ms.openlocfilehash: 8afa43cf9d49286a1ec04f7f60aa4a4c4ca7fd16
+ms.sourcegitcommit: e492895259aa39960063f9b337a144a60c20125a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73874733"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74831192"
 ---
 # <a name="create-parameters-for-paginated-reports-in-the-power-bi-service"></a>Sivutettujen raporttien parametrien luominen Power BI -palvelussa
 
@@ -64,6 +64,6 @@ Seuraavassa kuvassa näkyy Power BI:n raportin muodostimen Suunnittelunäkymä, 
   
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
-Katso [Sivutettujen raporttien parametrien tarkastelu](paginated-reports-view-parameters.md) -artikkelista, miltä parametrit näyttävät Power BI -palvelussa.
+Katso [Sivutettujen raporttien parametrien tarkastelu](consumer/paginated-reports-view-parameters.md) -artikkelista, miltä parametrit näyttävät Power BI -palvelussa.
 
 Katso sivutetut raporttiparametreja koskevat lisätiedot kohdasta [Raporttiparametrit Power BI:n raportin muodostimessa](report-builder-parameters.md).

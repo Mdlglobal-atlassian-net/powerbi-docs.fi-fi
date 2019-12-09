@@ -8,12 +8,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 06/01/2019
 ms.author: v-tatero
-ms.openlocfilehash: b451333aaf93584e7e16dcf24e6b693e9da3eccd
-ms.sourcegitcommit: 462ccdd9f79ff698ed0cdfc3165f4ada364dd9ef
+ms.openlocfilehash: 44da3a20c203bfc50be08b0ed91efa6dfd998204
+ms.sourcegitcommit: 9a265d8117cc202f5f700286b5ff42a631aacdb4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "74478645"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "74882767"
 ---
 # <a name="power-bi-webinars"></a>Power BI -verkkoseminaarit
 
@@ -24,10 +24,6 @@ Rekisteröidy tuleviin reaaliaikaisiin verkkoseminaareihin tai katso nauhoitettu
 **Analytics Azure-virtuaalitapahtumassa: Nopeuta merkityksellisten tietojen saamista Azure Synapse Analyticsin avulla**
 <br>Gayle Sheppard ja John Macintyre
 <br>[Rekisteröidy nyt](https://info.microsoft.com/WW-Analytics-in-Azure-virtual-event-Accelerate-Time-to-Insight-with-Azure-Synapse-Analytics-Registration.html?ocid=AID2482920_QSG_373413)
-
-**Miten Microsoft muuttaa liiketoimintatietojen suojausta**
-<br>Anton Fritz ja Adi Regev
-<br>[Rekisteröidy ja katso joulukuun 4. päivä](https://info.microsoft.com/ww-landing-How-Microsoft-Is-Changing-BI-Data-Protection.html?lcid=EN-US)
 
 **Yhdeksän massadatan tulevaisuutta muovaavaa trendiä**
 <br>– Vijay Gopalakrishnan
@@ -42,6 +38,10 @@ Rekisteröidy tuleviin reaaliaikaisiin verkkoseminaareihin tai katso nauhoitettu
 ## <a name="featured-webinars"></a>Esittelyssä verkkoseminaarit
 
 Aloita näistä suosituista verkkoseminaareista
+
+**Miten Microsoft muuttaa liiketoimintatietojen suojausta**
+<br>Anton Fritz ja Adi Regev
+<br>[Rekisteröidy ja katso nyt](https://info.microsoft.com/ww-landing-How-Microsoft-Is-Changing-BI-Data-Protection.html?lcid=EN-US)
 
 **Power BI sekä modernin ja yritys-BI:n tulevaisuus**
 <br>pitäjät: Arun Ulag ja Amir Netz

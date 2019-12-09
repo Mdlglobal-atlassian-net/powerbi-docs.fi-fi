@@ -1,20 +1,20 @@
 ---
 title: Kuormitusten määrittäminen Power BI Premiumissa
 description: Opi määrittämään Power BI Premium -kapasiteettien kuormituksia.
-author: mgblythe
-ms.author: mblythe
+author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 10/14/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: 8240c4590a5e5bb892c4858ea74aa20e569ecb89
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 7d94c5d3531576cd36688591b55aaf4a49de51aa
+ms.sourcegitcommit: e492895259aa39960063f9b337a144a60c20125a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73856825"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74831290"
 ---
 # <a name="configure-workloads-in-a-premium-capacity"></a>Premium-kapasiteettien kuormitusten määrittäminen
 
@@ -164,7 +164,7 @@ Sivutettujen raporttien kuormituksen avulla voit suorittaa SQL Server Reporting 
 | **Muistin enimmäismäärä (%)** | Sivutettujen raporttien käytettävissä olevan muistin enimmäismäärä prosentteina kapasiteetissa. |
 |  |  |
 
-Sivutetut raportit mahdollistavat mukautetun koodin suorittamisen, kun raporttia hahmonnetaan. Voit esimerkiksi muuttaa tekstin väriä dynaamisesti sisällön perusteella, mikä käyttää enemmän muistia. Power BI Premium suorittaa sivutetut raportit rajoitetussa tilassa kapasiteetin sisällä. Määritetty enimmäismuisti käytetään *riippumatta* siitä, onko kuormitus aktiivinen. Jos muutat muistin enimmäisasetusta oletusarvosta, varmista, että asetat sen niin pieneksi, että se ei vaikuta haitallisesti muihin kuormituksiin.
+Sivutetut raportit mahdollistavat mukautetun koodin suorittamisen, kun raporttia hahmonnetaan. Voit esimerkiksi muuttaa tekstin väriä dynaamisesti sisällön perusteella, mikä käyttää enemmän muistia. Power BI Premium suorittaa sivutetut raportit rajoitetussa tilassa kapasiteetin sisällä. 
 
 Joissakin tapauksissa sivutettujen raporttien kuormitus saattaa lakata toimimasta. Näissä tapauksissa kuormitus näyttää virhetilan hallintaportaalissa ja raportin hahmontaminen aikakatkaistaan käyttäjiltä. Voit ratkaista ongelman poistamalla kuormituksen käytöstä ja ottamalla sen uudelleen käyttöön.
 

@@ -1,19 +1,19 @@
 ---
 title: Ajoitetun päivityksen vianmääritys Power BI -raporttipalvelimessa
 description: Tässä artikkelissa kerrotaan resursseista, joita on saatavilla ajoitetun päivityksen vianmääritykseen Power BI -raporttipalvelimessa.
-author: mgblythe
+author: maggiesMSFT
 ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: troubleshooting
 ms.date: 11/01/2017
-ms.author: mblythe
-ms.openlocfilehash: 37eb5c0e68a6895ac105cc7f12d3353c04641204
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.author: maggies
+ms.openlocfilehash: dd7d6a140dd9828a188f22144e31ea89e342c370
+ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73874043"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74698689"
 ---
 # <a name="troubleshoot-scheduled-refresh-in-power-bi-report-server"></a>Ajoitetun päivityksen vianmääritys Power BI -raporttipalvelimessa
 Tässä artikkelissa kerrotaan resursseista, joita on saatavilla ajoitetun päivityksen vianmääritykseen Power BI -raporttipalvelimessa.

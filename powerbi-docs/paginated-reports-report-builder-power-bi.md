@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: overview
 ms.date: 11/27/2019
-ms.openlocfilehash: 90bc46c484f659994c6a9500865803531fa3cdcc
-ms.sourcegitcommit: a21f7f9de32203e3a4057292a24ef9b5ac6ce94b
+ms.openlocfilehash: 35f50f57f3874bbb87fcdd5fbcf7da987fea1d1a
+ms.sourcegitcommit: e492895259aa39960063f9b337a144a60c20125a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74565715"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74831167"
 ---
 # <a name="what-are-paginated-reports-in-power-bi-premium"></a>Mitä ovat sivutetut raportit Power BI Premiumissa?
 
@@ -70,7 +70,7 @@ Voit tarkastella sivutettua raporttia Power BI -palvelussa selaimella ja myös P
 
 Voit nyt määrittää itsellesi ja muille sivutettujen raporttien sähköpostitilauksia Power BI -palvelussa. Prosessi on yleisesti samanlainen kuin tilatessa raportteja ja raporttinäkymiä Power BI -palvelussa. Kun määrität tilauksia, valitset kuinka usein haluat saada sähköpostiviestejä: päivittäin, viikoittain tai tunneittain. Tilaus sisältää raportin täydelliset tulokset PDF-liitteenä.
 
-Katso lisätiedot ohjeartikkelista [Power BI -palvelun sivutettujen raporttien tilaaminen itsellesi ja muille](paginated-reports-subscriptions.md). 
+Katso lisätiedot ohjeartikkelista [Power BI -palvelun sivutettujen raporttien tilaaminen itsellesi ja muille](consumer/paginated-reports-subscriptions.md). 
 
 ## <a name="limitations-and-considerations"></a>Rajoitukset ja huomioitavat asiat
 
