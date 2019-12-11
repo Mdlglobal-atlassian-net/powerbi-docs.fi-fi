@@ -41,11 +41,11 @@
               href: visuals/advanced-edit-mode.md
         - name: Ohjeet
           items:
-            - name: Visualisoinnin sertifioinnin hankkiminen
+            - name: Sertifioinnin hankkiminen Power BI -visualisoinnille
               href: power-bi-custom-visuals-certified.md
-            - name: Omien visualisointien julkaiseminen AppSourcessa
+            - name: Power BI -visualisointien julkaiseminen AppSourceen
               href: office-store.md
-            - name: 'R:ää hyödyntävien mukautettujen visualisointien käyttö Power BI:ssä'
+            - name: 'R:ää hyödyntävien Power BI -visualisointien käyttö Power BI:ssä'
               href: ../desktop-r-powered-custom-visuals.md?toc=/powerbi-docs/developer/TOC.json&bc=/powerbi-docs/breadcrumb/toc.json
             - name: Visualisointitoimet
               href: visuals/visuals-interactions.md
@@ -69,8 +69,6 @@
               href: visuals/high-contrast-support.md
             - name: Osittajien synkronoinnin käyttöönotto
               href: visuals/enable-sync-slicers.md
-            - name: Lisää alaspäin porautumisen tuki
-              href: visuals/drill-down-support.md
             - name: Power BI -visualisointien vianmääritys
               href: power-bi-custom-visuals-troubleshoot.md
         - name: Viittaus
@@ -85,14 +83,8 @@
               href: visuals/event-service.md
             - name: Lajittelu
               href: visuals/sort-options.md
-            - name: Lokalisointi
-              href: visuals/localization.md
-            - name: Power BI Visual -apuohjelmat
-              items:
-                - name: Vuorovaikutteisuuden apuohjelmat
-                  href: visuals/utils-interactivity-selections.md
-                - name: Muotoilun apuohjelmat
-                  href: visuals/utils-formatting.md
+            - name: Vuorovaikutteisuuden apuohjelmat
+              href: visuals/utils-interactivity-selections.md
         - name: Resurssit
           items:
             - name: Kehityskeskus
