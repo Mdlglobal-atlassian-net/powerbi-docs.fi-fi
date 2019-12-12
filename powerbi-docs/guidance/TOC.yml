@@ -32,10 +32,14 @@
           href: ../service-dataflows-best-practices.md
         - name: Power BI Desktopin DirectQuery-mallin ohjeet
           href: directquery-model-guidance.md
+        - name: Power Query -kyselyihin viittaaminen
+          href: power-query-referenced-queries.md
         - name: Visualisointien laajentaminen raporttisivun työkaluvihjeiden avulla
           href: report-page-tooltips.md
         - name: Raporttisivun porautuminen
           href: report-drillthrough.md
+        - name: Automaattisen päivämäärän/ajan ohjeet Power BI Desktopissa
+          href: auto-date-time.md
     - name: Raportit
       items:
         - name: Raporttien yleiskatsaus
