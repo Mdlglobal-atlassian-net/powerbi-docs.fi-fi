@@ -7,19 +7,19 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 07/22/2019
-ms.openlocfilehash: d0f0abe15348d54f24143d69fcd6c0c2b71e9a34
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.date: 12/03/2019
+ms.openlocfilehash: fced83abab1898724e165154fbc177ccf50ca061
+ms.sourcegitcommit: e492895259aa39960063f9b337a144a60c20125a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73874780"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74831250"
 ---
 # <a name="pagination-in-power-bi-paginated-reports"></a>Sivutus Power BI:n sivutetuissa raporteissa
 
- Sivutus viittaa raportin sivujen määrään ja siihen, miten raporttikohteet järjestetään näille sivuille. Power BI:n sivutettujen raporttien sivutus vaihtelee sen mukaan, mitä hahmontamislaajennusta käytät raportin tarkastelemiseen ja toimittamiseen. Kun raportti suoritetaan raporttipalvelimessa, raportti käyttää HTML-hahmonninta. HTML noudattaa tiettyä sivutussääntöjoukkoa. Esimerkiksi jos viet saman raportin PDF-tiedostoon, käytetään PDF-hahmonninta, ja käytössä on eri sääntöjoukko. Siksi raportti sivuttaa eri tavalla. Jos haluat suunnitella käyttäjille helppolukuisen raportin, joka on optimoitu raportin toimittamisessa käytettävälle hahmontimelle, sinun on ymmärrettävä Power BI:n sivutettujen raporttien sivutusta ohjaavat säännöt.  
+ *Sivutus* viittaa raportin sivujen määrään ja siihen, miten raporttikohteet järjestetään näille sivuille. Power BI:n sivutettujen raporttien sivutus vaihtelee sen mukaan, mitä hahmontamislaajennusta käytät raportin tarkastelemiseen ja toimittamiseen. Kun raportti suoritetaan raporttipalvelimessa, raportti käyttää HTML-hahmonninta. HTML noudattaa tiettyä sivutussääntöjoukkoa. Jos viet saman raportin PDF-tiedostoon, käytät esimerkiksi PDF-hahmonnusta, joka käyttää eri sääntöjoukkoa. Siksi raportti sivuttaa eri tavalla. Sinun on ymmärrettävä sivutetuissa Power BI -raporteissa käytettävät sivutussäännöt. Sen jälkeen voit onnistuneesti suunnitella helposti luettavan raportin, jonka optimoit sille hahmonninkohteelle, jota aiot käyttää raportin toimittamiseen.  
   
- Tässä ohjeaiheessa käsitellään fyysisen sivun koon ja raportin asettelun vaikutusta siihen, miten kiinteän sivunvaihdon hahmontimet hahmontavat raportin. Voit määrittää ominaisuudet fyysisen sivun koon ja reunusten muokkaamiseksi, ja jakaa raportin sarakkeisiin käyttämällä **Raportin ominaisuudet** -ruutua, **Ominaisuudet**-ruutua tai **Sivun asetukset** -valintaikkunaa. Voit käyttää **Raportin ominaisuudet** -ruutua napsauttamalla raportin leipätekstin ulkopuolella olevaa sinistä aluetta. Voit käyttää **Sivun asetukset** -valintaikkunaa valitsemalla Aloitus-välilehdessä **Suorita** ja valitsemalla sitten Suorita-välilehdessä **Sivun asetukset**.  
+ Tässä ohjeaiheessa käsitellään fyysisen sivun koon ja raportin asettelun vaikutusta siihen, miten kiinteän sivunvaihdon hahmontimet hahmontavat raportin. Voit määrittää ominaisuudet fyysisen sivun koon ja reunusten muokkaamiseksi, ja jakaa raportin sarakkeisiin käyttämällä **Raportin ominaisuudet** -ruutua, **Ominaisuudet**-ruutua tai **Sivun asetukset** -valintaikkunaa. Käytä **Raportin ominaisuudet** -ruutua napsauttamalla raportin leipätekstin ulkopuolella olevaa sinistä aluetta. Käytä **Sivun asetukset** -valintaikkunaa valitsemalla Aloitus-välilehdessä **Suorita** ja valitsemalla sitten Suorita-välilehdessä **Sivun asetukset**.  
   
 > [!NOTE]  
 >  Jos olet suunnitellut raportin yhden sivun levyiseksi, mutta se hahmontaa useilla sivuilla, tarkista, että raportin rungon leveys, reunukset mukaan lukien, ei ole suurempi kuin fyysisen sivun koon leveys. Jos haluat estää tyhjien sivujen lisäämisen raporttiin, voit pienentää säilön kokoa vetämällä säilön kulmaa vasemmalle.  
@@ -30,7 +30,7 @@ ms.locfileid: "73874780"
  Voit muotoilla raportin rungon leipätekstiä muokkaamalla reunan väriä, tyyliä ja leveyttä. Voit myös lisätä taustavärin ja taustakuvan.  
   
 ## <a name="the-physical-page"></a>Fyysinen sivu  
- Fyysisen sivun koko on paperikoko. Raportille määrittämäsi paperikoko ohjaa raportin hahmontamista. Kiinteän sivunvaihdon muodoissa hahmonnetut raportit lisäävät sivunvaihtoja vaaka- ja pystysuunnassa fyysisen sivun koon mukaan tarjotakseen optimoidun lukukokemuksen, kun niitä tulostetaan tai tarkastellaan kiinteän sivunvaihdon tiedostomuodossa. Pehmeän sivunvaihdon muodoissa hahmonnetut raportit lisäävät sivunvaihtoja vaakasuunnassa fyysisen koon mukaan tarjotakseen optimoidun lukukokemuksen, kun niitä tarkastellaan verkkoselaimessa.  
+ Fyysisen sivun koko on paperikoko. Raportille määrittämäsi paperikoko ohjaa raportin hahmontamista. Kovan sivunvaihdon muodoissa hahmonnetut raportit lisäävät sivunvaihtoja vaaka-ja pystysuunnassa fyysisen sivun koon mukaan. Nämä sivunvaihdot tarjoavat optimoidun lukukokemuksen, kun niitä tulostetaan tai tarkastellaan kovan sivunvaihdon tiedostomuodossa. Pehmeän sivunvaihdon muodoissa hahmonnetut raportit lisäävät sivunvaihtoja vaakasuunnassa fyysisen koon mukaan. Sivunvaihdot tarjoavat myös optimoidun lukukokemuksen, kun niitä tarkastellaan verkkoselaimessa.  
   
  Sivun oletuskoko on 8,5 x 11 tuumaa, mutta voit muuttaa tätä kokoa **Raportin ominaisuudet** -ruudussa tai **Sivun asetukset** -valintaikkunassa tai muuttamalla sivun PageHeight- tai PageWidth-ominaisuuksia **Ominaisuudet**-ruudussa. Sivun koko ei kasva tai kutistu raportin leipätekstin sisällön mukaan. Jos haluat raportin näkyvän yhdellä sivulla, raportin leipätekstin koko sisällön on sovittava fyysiselle sivulle. Jos se ei sovi ja käytät kiinteän sivunvaihdon muotoa, raportti tarvitsee lisäsivuja. Jos raportin leipäteksti kasvaa fyysisen sivun oikean reunan yli, sivunvaihto lisätään vaakasuunnassa. Jos raportin leipäteksti kasvaa fyysisen sivun alareunan yli, sivunvaihto lisätään pystysuunnassa.  
   
@@ -87,6 +87,6 @@ ms.locfileid: "73874780"
   
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
-[Sivutetun raportin tarkasteleminen Power BI -palvelussa](paginated-reports-view-power-bi-service.md)
+[Sivutetun raportin tarkasteleminen Power BI -palvelussa](consumer/paginated-reports-view-power-bi-service.md)
 
 Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](https://community.powerbi.com/)

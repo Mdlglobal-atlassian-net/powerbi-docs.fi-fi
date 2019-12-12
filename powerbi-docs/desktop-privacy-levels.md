@@ -9,12 +9,12 @@ ms.topic: reference
 ms.date: 09/09/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: b28c56433e27794798f2907f0d780002db96b2f7
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: c6c3ccdc547a8e9fb4e2d471365c9da67f7cf58a
+ms.sourcegitcommit: 90bd747b7c460d17b74cd386d3f5714234b1f6c9
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73878072"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74791306"
 ---
 # <a name="power-bi-desktop-privacy-levels"></a>Power BI Desktopin yksityisyystasot
 **Power BI Desktopissa** yksityisyystasoilla määritetään eristystaso, jolla yksi tietolähde eristetään muista tietolähteistä. Rajoittava eristystaso estää tietojen vaihtamisen tietolähteiden välillä, mutta se voi myös rajoittaa toimintaa ja vaikuttaa suorituskykyyn.
@@ -44,7 +44,7 @@ Määritä tietolähteen yksityisyystaso valitsemalla tietolähde ja sitten **Mu
 > 
 
 ## <a name="configure-privacy-levels"></a>Yksityisyystasojen määrittäminen
-**Yksityisyystasot** on asetus, jonka oletusarvona on **Yhdistä tiedot kunkin lähteen tietosuojatason asetusten mukaisesti**. Se tarkoittaa, että **Yksityisyystasot**-asetusta ei ole otettu käyttöön.
+**Yksityisyystasot** -asetuksen oletusarvona on **Yhdistä tiedot kunkin lähteen tietosuojatason asetusten mukaisesti**. Se tarkoittaa, että **Yksityisyystasot**-asetukset on pakotettu.
 
 | Asetus | Kuvaus |
 | --- | --- |

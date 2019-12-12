@@ -9,17 +9,17 @@ ms.topic: conceptual
 ms.date: 10/14/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 9415365c3846329d5bcf707ec7f41d0bd2cc6f92
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: a4d948e768682aab77708289320914ce3ef0fdc3
+ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73871743"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74699086"
 ---
 # <a name="real-time-streaming-in-power-bi"></a>Reaaliaikainen suoratoisto Power BI:ssä
 Power BI: reaaliaikaisen suoratoiston avulla voit suoratoistaa tietoja ja päivittää koontinäyttöjä reaaliajassa. Kaikki Power BI:ssä luotavat visualisoinnit tai koontinäytöt voidaan luoda myös näyttämään ja päivittämään reaaliaikaisia tietoja ja visualisointeja. Tietojen suoratoistoon käytettävät laitteet ja lähteet voivat olla tehtaiden tunnistimia, sosiaalisen median lähteitä, huoltokäyttötietoja ja mitä tahansa muita, joista voidaan kerätä ja lähettää ajan mukaan määräytyviä tietoja.
 
-![](media/service-real-time-streaming/real-time-streaming_10.jpg)
+![Näyttökuva, joka näyttää reaaliaikaisten ympäristötunnistimien tulokset.](media/service-real-time-streaming/real-time-streaming-10.png)
 
 Tässä artikkelissa kerrotaan, miten reaaliaikaisesti suoratoistava tietojoukko määritetään Power BI:ssä. Ennen siihen ryhtymistä on kuitenkin tärkeää tuntea erityyppiset reaaliaikaiset tietojoukot, jotka on suunniteltu näytettäviksi ruuduissa (ja koontinäytöissä), ja mitä eroja näiden tietojoukkojen välillä on.
 
@@ -198,7 +198,7 @@ Tässä esimerkissä käytämme julkisesti saatavilla olevaa virtaa **PubNubista
    ![](media/service-real-time-streaming/real-time-streaming_9.png)
 5. Palattuasi Power BI -työtilaan luo uusi koontinäyttä ja lisää sitten ruutu (katso tarvittaessa ohjeet edeltä). Tällä kerralla, kun luot ruudun ja valitset **Mukautetut suoratoistettavat tiedot**, sinulla on käytettävissäsi suoratoistettava tietojoukko. Nyt voit kokeilla, miten se toimii. Lisäämällä *numero*kenttiä viivakaavioihin ja lisäämällä sitten muita ruutuja saat reaaliaikaisen koontinäytön, joka näyttää seuraavanlaiselta:
    
-   ![](media/service-real-time-streaming/real-time-streaming_10.jpg)
+   ![Näyttökuva, joka näyttää reaaliaikaisten ympäristötunnistimien tulokset.](media/service-real-time-streaming/real-time-streaming-10.png)
 
 Kokeile sitä nyt ja testaa, miten näytetietojoukko toimii. Sitten voit luoda omia tietojoukkoja ja suoratoistaa reaaliaikaiset tiedot Power BI:hin.
 

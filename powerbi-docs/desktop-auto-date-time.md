@@ -8,20 +8,18 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 10/23/2019
 ms.author: v-pemyer
-ms.openlocfilehash: 7453854376923fbb55376182a8674e5f3d7d1b63
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 8789986e94c860bffc622d903e33b4f1edabdd2d
+ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73878795"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74696160"
 ---
 # <a name="auto-datetime-in-power-bi-desktop"></a>Automaattinen päivämäärä/aika Power BI Desktopissa
 
-Tämä artikkeli on suunnattu tietomallintajille, jotka kehittävät tuonti- tai yhdistelmämalleja Power BI Desktopissa.
+Tämä artikkeli on suunnattu tietomallintajille, jotka kehittävät tuonti- tai yhdistelmämalleja Power BI Desktopissa. Se esittelee ja kuvailee _Automaattinen päivä määrä/aika_ -vaihtoehdon.
 
-## <a name="background"></a>Tausta
-
-_Automaattinen päivämäärä/aika_ on tietojen lataamisen vaihtoehtona Power BI Desktopissa. Tämän vaihtoehdon tarkoituksena on tukea kätevää aikatietojen raportointia malliin ladattujen päivämääräsarakkeiden perusteella. Sen avulla raportin tekijät voivat suodattaa, ryhmitellä ja porautua alaspäin käyttämällä kalenterin ajanjaksoja ilman, että mallintajan tarvitsee erikseen kehittää niitä. Kalenterin aikajaksot sisältävät vuodet, vuosineljännekset, kuukaudet ja päivät.
+Automaattinen päivämäärä/aika on tietojen lataamisen vaihtoehtona Power BI Desktopissa. Tämän vaihtoehdon tarkoituksena on tukea kätevää aikatietojen raportointia malliin ladattujen päivämääräsarakkeiden perusteella. Sen avulla raportin tekijät voivat datamallisi avulla suodattaa, ryhmitellä ja porautua alaspäin käyttämällä kalenterin ajanjaksoja (vuodet, vuosineljännekset, kuukaudet ja päivät). Tärkeää on, että sinun ei tarvitse kehittää näitä aikatietojen ominaisuuksia eksplisiittisesti.
 
 Kun asetus on käytössä, Power BI Desktop luo piilotetun automaattisen päivämäärä- ja aikataulukon kullekin päivämääräsarakkeelle, edellyttäen, että kaikki seuraavat ehdot toteutuvat:
 
@@ -34,11 +32,11 @@ Kun asetus on käytössä, Power BI Desktop luo piilotetun automaattisen päivä
 Jokainen automaattinen päivämäärä/aika-taulukko on itse asiassa [laskettu taulukko](desktop-calculated-tables.md), joka luo tietorivejä DAX [CALENDAR](/dax/calendar-function-dax)-toimintoa käyttämällä. Jokaisessa taulukossa on myös kuusi laskettua saraketta: **Päivä**, **kuukauden numero**, **kuukausi**, **vuosineljänneksen numero**, **vuosineljännes**ja **vuosi**.
 
 > [!NOTE]
-> Sarakkeiden nimet ja arvot käännetään ja muotoillaan [mallin kielen mukaan](supported-languages-countries-regions.md#choose-the-language-for-the-model-in-power-bi-desktop).
+> Power BI kääntää ja muotoilee sarakkeiden nimet ja arvot [mallin kielen](supported-languages-countries-regions.md#choose-the-language-for-the-model-in-power-bi-desktop)mukaan.
 
-Suhde luodaan myös automaattisen päivämäärän/aikataulukon **Päivämäärä** sarakkeen ja mallin päivämääräsarakkeen välillä.
+Power BI Desktop luo myös suhteen automaattisen päivämäärän/ajan taulukon **päivämäärä**-sarakkeen ja mallin päivämääräsarakkeen välille.
 
-Automaattinen päivämäärä/aika-taulukko sisältää täydet kalenterivuodet, jotka kattavat kaikki mallin päivämääräsarakkeeseen tallennetut päivämääräarvot. Jos esimerkiksi päivämääräsarakkeen aikaisin arvo on 20. maaliskuuta 2016 ja uusin arvo on 23. lokakuuta 2019, taulukko sisältää 1 461 riviä. Se tarkoittaa yhtä riviä kullekin päivämäärälle neljänä kalenterivuotena 2016 – 2019. Kun malli päivitetään, myös jokainen automaattinen päivämäärä/aika-taulukko päivitetään sen varmistamiseksi, että se sisältää aina päivämääriä, jotka sisältävät päivämääräsarakkeen arvot.
+Automaattinen päivämäärä/aika-taulukko sisältää täydet kalenterivuodet, jotka kattavat kaikki mallin päivämääräsarakkeeseen tallennetut päivämääräarvot. Jos esimerkiksi päivämääräsarakkeen aikaisin arvo on 20. maaliskuuta 2016 ja uusin arvo on 23. lokakuuta 2019, taulukko sisältää 1 461 riviä. Se tarkoittaa yhtä riviä kullekin päivämäärälle neljänä kalenterivuotena 2016 – 2019. Power BI päivittää mallin, ja myös jokainen automaattinen päivämäärä/aika-taulukko päivitetään sen varmistamiseksi, että se sisältää päivämääriä, jotka sisältävät päivämääräsarakkeen arvot.
 
 Jos automaattinen päivämäärä/aika-taulukon rivit on mahdollista nähdä, ne voivat näyttää tältä:
 
@@ -61,11 +59,11 @@ Kun päivämääräsarakkeelle on määritetty automaattinen päivämäärä/aik
 
 Automaattisen päivämäärän/ajan luoman hierarkian avulla voit määrittää visualisoinnin täsmälleen samalla tavalla kuin tavallisia hierarkioita käytettäessä. Visualisoinnit voidaan määrittää käyttämällä koko **päivämäärähierarkiaa** hierarkiaa tai hierarkian tiettyjä tasoja.
 
-Tavalliset hierarkiat eivät kuitenkaan tue yhtä lisättyä ominaisuutta. Kun automaattinen päivämäärä/aika-hierarkia tai hierarkkinen taso lisätään visualisointiin, raportin tekijä voi vaihdella hierarkian tai päivämääräsarakkeen käyttämisen välillä. Tämä lähestymistapa on järkevää joillekin visualisoinneille, kun tarvitset vain päivämääräsaraketta, et hierarkiaa ja sen tasoja. Aloitat määrittämällä visuaalisen kentän (napsauta hiiren kakkospainikkeella visualisointikenttää tai napsauta alanuolta) ja käytä sitten pikavalikon avulla päivämääräsaraketta tai päivämäärä hierarkiaa.
+Tavalliset hierarkiat eivät kuitenkaan tue yhtä lisättyä ominaisuutta. Kun automaattinen päivämäärä/aika-hierarkia tai hierarkkinen taso lisätään visualisointiin, raportin tekijä voi vaihdella hierarkian tai päivämääräsarakkeen käyttämisen välillä. Tämä lähestymistapa on järkevää joillekin visualisoinneille, kun tarvitset vain päivämääräsaraketta, et hierarkiaa ja sen tasoja. Ne aloitetaan määrittämällä visuaalisen kentän (napsauta hiiren kakkospainikkeella visualisointikenttää tai napsauta alanuolta) ja käytä sitten pikavalikon avulla päivämääräsaraketta tai päivämäärä hierarkiaa.
 
 ![Esimerkki OrderDate-hierarkian visuaalisen kentän kokoonpanosta. Avoin pikavalikko näyttää kaksi vaihtoehtoa, joiden avulla voit käyttää OrderDate-saraketta tai päivämäärähierarkiaa.](media/desktop-auto-date-time/auto-date-time-configure-visuals-fields.png)
 
-DAX:iin kirjoitetut mallilaskelmat voivat viitata päivämääräsarakkeeseen suoraan, tai piilotettuun automaattiseen päivämäärä-ja aikataulukon sarakkeeseen epäsuorasti.
+DAX:iin kirjoitetut mallilaskelmat voivat viitata päivämääräsarakkeeseen _suoraan_, tai piilotettuun automaattiseen päivämäärä-ja aikataulukon sarakkeeseen _epäsuorasti_.
 
 Power BI Desktopiin kirjoitettu kaava voi viitata päivämääräsarakkeeseen tavalliseen tapaan. Automaattiseen päivämäärä-ja aika-taulukon sarakkeisiin on kuitenkin viitattava erityisellä laajennetulla syntaksilla. Aloitat viittaamisen ensin päivämääräsarakkeeseen ja sen jälkeen pisteeseen (.). Kaavarivin automaattinen täydennys antaa sinun valita sarakkeen automaattisen päivämäärän/ajan taulukosta.
 

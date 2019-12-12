@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: cc554bff1cbd248ccd69a80ee47b60af981cdab1
-ms.sourcegitcommit: f7b28ecbad3e51f410eff7ee4051de3652e360e8
+ms.openlocfilehash: 245475feeb43ee544117aaa54969f2de1e207cd5
+ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74061818"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74696278"
 ---
 # <a name="migrate-to-the-new-powerbi-visuals-tools-3xx"></a>Siirtyminen uuteen powerbi-visuals-tools-versioon 3.x.x
 
@@ -95,7 +95,7 @@ Voit myös muuttaa `target`-asetukseksi `ES6`, jos haluat käyttää tulosteena 
 
 ## <a name="update-custom-visuals-utils"></a>Mukautetut visualisoinnit -apuohjelman päivittäminen
 
-Jos käytät jotakin [powerbi-visuals-utils](https://www.npmjs.com/search?q=powerbi-visuals-utils)-kohdetta, päivitä nekin uusimpaan versioon.
+Jos käytät jotakin powerbi-visuals-utils https://www.npmjs.com/search?q=powerbi-visuals-utils) -kohdetta, päivitä nekin uusimpaan versioon.
 
 Suorita komento `npm install powerbi-visuals-utils-<UTILNAME> --save`. (Esim. `npm install powerbi-visuals-utils-dataviewutils --save` ), jos haluat uuden version TypeScript-kohteen ulkoisilla moduuleilla.
 

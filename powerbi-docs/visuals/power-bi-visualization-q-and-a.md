@@ -5,14 +5,14 @@ author: mihart
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/19/2019
+ms.date: 11/19/2019
 ms.author: mohaali
-ms.openlocfilehash: 78a74d2d49ac9eabb7d63f467c9838d370d5c314
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 9805b98df7f606e61412ca9dee7dc0467a1649a3
+ms.sourcegitcommit: 90bd747b7c460d17b74cd386d3f5714234b1f6c9
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73870856"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74791794"
 ---
 # <a name="introduction-to-power-bi-qa-visual"></a>Johdatus Power BI:n Q&A-visualisointiin
 
@@ -93,6 +93,10 @@ Jos et ole varma, minkä tyyppisiä kysymyksiä haluat esittää tai mitä terme
 6. Muutetaan visualisointi pylväskaavioksi. 
 
     ![Q&A-visualisointi, jossa kysymykseen on lisätty "pylväskaaviona"](media/power-bi-visualization-q-and-a/power-bi-specify-visual.png)
+
+7.  Lisää visualisointeja raporttisivulle ja tarkastele, miten Q&A-visualisointi on vuorovaikutuksessa muiden sivulla olevien visualisointien kanssa. Tässä esimerkissä Q&A-visualisointi on ristiinsuodattanut viivakaavion ja kartan sekä korostanut palkkikaaviot ristiin.
+
+    ![Q&A-visualisointi, jossa yksi palkki on valittuna, ja vaikutus muihin kolmeen visualisointiin raporttisivulla](media/power-bi-visualization-q-and-a/power-bi-filters.png)
 
 ## <a name="format-and-customize-the-qa-visual"></a>Q&A-visualisoinnin ulkoasun muotoileminen ja mukauttaminen
 Q&A-visualisointia voidaan mukauttaa käyttämällä muotoiluruutua ja ottamalla käyttöön teema. 

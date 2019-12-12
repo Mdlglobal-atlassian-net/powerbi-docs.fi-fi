@@ -7,15 +7,15 @@ ms.reviewer: cmfinlan
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 09/14/2019
+ms.date: 11/27/2019
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: 8041fee4689c6319f219c26f20701c6062601a64
-ms.sourcegitcommit: c839ef7437bc8fb8f7eeda23e59d05c7192a7fe8
+ms.openlocfilehash: 9e00e68e0a5f6df62072a1d9744276bffbd3beb4
+ms.sourcegitcommit: 90bd747b7c460d17b74cd386d3f5714234b1f6c9
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "74164193"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74791653"
 ---
 # <a name="export-reports-from-power-bi-to-pdf"></a>Raporttien vieminen Power BI:stä PDF-muotoon
 
@@ -62,6 +62,7 @@ Ota huomioon seuraavat seikat ja rajoitukset, kun käytät **Vie PDF-muotoon** -
 * Power BI -palvelu käyttää PDF-viennin kielenä Power BI:n kieliasetuksen kieltä. Jos haluat tarkistaa kieliasetuksesi tai muuttaa sitä, valitse hammasrataskuvake ![Hammasrataskuvake](media/end-user-powerpoint/power-bi-settings-icon.png) > **Asetukset** > **Yleiset** > **Kieli**.
 * URL-suodattimia ei oteta tällä hetkellä huomioon, kun valitset viennin kohdalla **Nykyiset arvot**.
 * Raporteissa, joiden sivukoko on poikkeava, saattaa esiintyä ongelmia vietäessä. Saat parhaat tulokset vaihtamalla raportissa käyttöön vakiosivukoon.
+* Kun viet PDF-tiedostoon, mukautettuja fontteja käyttävien teemojen avulla voit korvata mukautetun fontin oletusfontilla.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 [Raportin tulostaminen](end-user-print.md)

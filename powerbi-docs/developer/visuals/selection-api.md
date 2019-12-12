@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: 5f5e4769c750406a02ead656af551133fbceb738
-ms.sourcegitcommit: f7b28ecbad3e51f410eff7ee4051de3652e360e8
+ms.openlocfilehash: 94a1af90cc7ed08947f65f4ed0d55e981558d049
+ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74061887"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74696438"
 ---
 # <a name="add-interactivity-into-visual-by-power-bi-visuals-selections"></a>Vuorovaikutteisuuden lisääminen visualisointiin Power BI:n visualisointien valinnoilla
 
@@ -37,7 +37,7 @@ export interface ISelectionId {
 
 Visualisoinnin isäntäobjektissa on metodi, jolla luodaan valintojen hallinnan esiintymä. Valintojen hallinta on vastuussa valinnasta, valinnan tyhjentämisestä, pikavalikon näyttämisestä, nykyisten valintojen tallentamisesta ja valintatilan tarkistamisesta. Valintojen hallinnassa on vastaavat menetelmät näille toiminnoille.
 
-### <a name="create-instance-of-selection-manager"></a>Luo valintojen hallinnan esiintymä
+### <a name="create-an-instance-of-the-selection-manager"></a>Luo valintojen hallinnan esiintymä
 
 Jos käytät valintojen hallintaa, sinun on luotava valintojen hallinnan esiintymä. Visualisoinneissa visuaalisen objektin `constructor` luo yleensä valintojen hallinnan esiintymän.
 
@@ -56,7 +56,7 @@ export class Visual implements IVisual {
 }
 ```
 
-### <a name="create-instance-of-selection-builder"></a>Luo valinnanmuodostimen esiintymä
+### <a name="create-an-instance-of-the-selection-builder"></a>Luo valinnanmuodostimen esiintymä
 
 Kun valintojen hallinnan esiintymä luodaan, sinun tulee luoda `selections` kullekin visualisoinnin arvopisteelle. Visualisoinnin isäntäobjekti tarjoaa `createSelectionIdBuilder`-metodin, jolla luodaan valinta kullekin arvopisteelle. Tämä metodi palauttaa objektin esiintymän, jolla on liittymä `powerbi.visuals.ISelectionIdBuilder`:
 
@@ -155,11 +155,11 @@ Visualisointi käyttää seuraavaa tietonäkymämääritystä:
 }
 ```
 
-Esimerkissä `Manafacturer` on `columns` ja `Type` on `rows`. Esimerkissä on sarjoja, jotka `rows` luovat ryhmittelyarvojen perusteella (`Type`).
+Esimerkissä `Manufacturer` on `columns` ja `Type` on `rows`. Esimerkissä on sarjoja, jotka `rows` luovat ryhmittelyarvojen perusteella (`Type`).
 
-Visualisoinnin tulee myös voida osittaa tietoja, niin että perusteina ovat `Manafacturer` ja `Type`.
+Visualisoinnin tulee myös voida osittaa tietoja, niin että perusteina ovat `Manufacturer` ja `Type`.
 
-Jos käyttäjä esimerkiksi valitsee `Manafacturer`-kohteesta vaihtoehdon `Chrysler`, muiden visualisointien tulee näyttää seuraavat tiedot:
+Jos käyttäjä esimerkiksi valitsee `Manufacturer`-kohteesta vaihtoehdon `Chrysler`, muiden visualisointien tulee näyttää seuraavat tiedot:
 
 | Valmistaja | Tyyppi | Arvo |
 | - | - | - |
@@ -185,7 +185,7 @@ Visualisoinnin tietokorit on täytettävä.
 
 ![Visualisoinnin ja valintojen tietokorit](media/visual-selections-databuckets.png)
 
-Luokka on `Manafacturer` (sarakkeet), sarja on `Type` (rivit) ja `Values` on `Value` sarjoille.
+Luokka on `Manufacturer` (sarakkeet), sarja on `Type` (rivit) ja `Values` on `Value` sarjoille.
 
 > [!NOTE]
 > `Values`-tiedot tarvitaan sarjoille, koska tietonäkymämäärityksen mukaan visualisointi odottaa, että `Values` ryhmitellään `Rows`-tietojen mukaan.
@@ -196,7 +196,7 @@ Luokka on `Manafacturer` (sarakkeet), sarja on `Type` (rivit) ja `Values` on `Va
 // categories
 const categories = dataView.categorical.categories;
 
-// create label for 'Manafacturer' column
+// create label for 'Manufacturer' column
 const p = document.createElement("p") as HTMLParagraphElement;
 p.innerText = categories[0].source.displayName.toString();
 this.target.appendChild(p);
@@ -209,7 +209,7 @@ for (let categoryIndex = 0; categoryIndex < categoriesCount; categoryIndex++) {
     const categoryValue: powerbi.PrimitiveValue = categories[0].values[categoryIndex];
 
     const categorySelectionId = this.host.createSelectionIdBuilder()
-        .withCategory(categories[0], categoryIndex) // we have only one category (only one `Manafacturer` column)
+        .withCategory(categories[0], categoryIndex) // we have only one category (only one `Manufacturer` column)
         .createSelectionId();
     this.dataPoints.push({
         value: categoryValue,
@@ -231,7 +231,7 @@ for (let categoryIndex = 0; categoryIndex < categoriesCount; categoryIndex++) {
 
 Mallikoodissa kaikki luokat iteroidaan. Kunkin iteraation yhteydessä kutsutaan `createSelectionIdBuilder` luomaan kullekin luokalle seuraava valinta kutsumalla valintamuodostimen `withCategory`-metodia. Metodia `createSelectionId` käytetään viimeisenä metodina, joka palauttaa luodun `selection`-objektin.
 
-`withCategory`-metodissa välitetään `category`-sarake, joka on esimerkissä `Manafacturer` ja luokkaelementin indeksi.
+`withCategory`-metodissa välitetään `category`-sarake, joka on esimerkissä `Manufacturer` ja luokkaelementin indeksi.
 
 #### <a name="create-selections-for-series"></a>Valintojen luominen sarjoille
 

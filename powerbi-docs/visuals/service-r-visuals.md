@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 11/14/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: b947fe3f2faf423a7b2ced4d0032578ded015f7a
-ms.sourcegitcommit: 08b73af260ded51daaa6749338cb85db2eab587f
+ms.openlocfilehash: efbeda396217c1a715f9a5d7ae4827c5f8d09a25
+ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "74099872"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74698988"
 ---
 # <a name="r-visuals-in-power-bi"></a>R-visualisoinnit Power BI:ssä
 R-visualisointeja voidaan tällä hetkellä luoda vain **Power BI Desktopissa**, ja sen jälkeen ne julkaistaan Power BI -palveluun. Katso lisätietoja R-visualisointien luomisesta kohdasta [Power BI -visualisointien luominen R:n avulla](../desktop-r-visuals.md).
@@ -94,6 +94,11 @@ R-visualisoinneilla Power BI -palvelussa on joitakin rajoituksia:
 * R-visualisoinnit eivät näy käytettäessä **Julkaise verkkoon** -arvoa.
 * R-visualisointeja ei tällä hetkellä voi tulostaa koontinäytön ja raporttien tulostamisella
 * R-visualisointeja ei tueta tällä hetkellä Analysis Servicesin DirectQuery-tilassa
+* R-visualisoinneilla on kyky muuntaa tekstiotsikoita graafisiksi elementeiksi. Power BI-palvelu edellyttää seuraavaa lisävaihetta:
+  
+  * Lisää seuraavaksi seuraava rivi R-komentosarjan alkuun:
+    
+        powerbi_rEnableShowText =  1
 * Kiinan, japanin ja korean fontit edellyttävät kaikkia seuraavia lisätoimia toimiakseen oikein Power BI -palvelussa:
   
   * Asenna ensin R-paketin *showtext* ja kaikki sen riippuvuudet. Voit tehdä tämän suorittamalla seuraavan komentosarjan:

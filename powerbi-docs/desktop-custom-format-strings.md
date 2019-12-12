@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/11/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 1c1f049f8ba8c7808001b8566b1d10424a1b2ed1
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 3ec372a51177e5979cdfbca8408e11801aefb414
+ms.sourcegitcommit: 90bd747b7c460d17b74cd386d3f5714234b1f6c9
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73878340"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74791586"
 ---
 # <a name="use-custom-format-strings-in-power-bi-desktop"></a>Mukautettujen muotoilumerkkijonojen käyttö Power BI Desktopissa
 
@@ -51,7 +51,6 @@ Seuraavassa taulukossa näytetään tuetut **päivämääräsymbolit**:
 | _mm_ | 01–12 (kuukausi, edeltävä nolla, alkaen tammikuusta = 1) |
 | _mmm_ | Näyttää kuukausien lyhennetyt nimet (islamilaisen kalenterin kuukausien nimillä ei ole lyhenteitä) |
 | _mmmm_ | Näyttää kuukausien kokonaiset nimet |
-| _y_ | 1–366 (vuoden päivä) |
 | _yy_ | 00–99 (vuosiluvun kaksi viimeistä merkkiä) |
 | _yyyy_ | 100–9999 (kolme-tai nelinumeroinen vuosiluku) |
 
@@ -79,7 +78,7 @@ Tässä on esimerkkejä eri arvomerkkijonojen eri muotoiluista:
 | --- | --- | --- | --- | --- |
 | **Arvot** | **0.00;-0.0;&quot;Nolla&quot;** | **0.00;;** | **0.00;-0.0;** | **0.00;** |
 | **-1.234** | -1.2 | &quot;&quot; | -1.2 | &quot;&quot; |
-| **0** | &quot;Nolla&quot; | &quot;&quot; | &quot;&quot; | 0.00 |
+| **0** | &quot;Nolla&quot; | &quot;&quot; | &quot;&quot; | 0,00 |
 | **1.234** | 1.23 | 1.23 | 1.23 | 1.23 |
 
 Seuraavassa taulukossa on määritetty esimääritetyt **nimetyt päivämäärän ja kellonajan muodot**:
@@ -121,7 +120,6 @@ Seuraavassa taulukossa on yksilöity merkit, joiden avulla voit luoda **käyttä
 | mm | Näyttää kuukauden lukuna edeltävän nollan kanssa (01–12). Jos m tulee välittömästi h:n tai hh:n jälkeen, näet kuukauden asemesta minuutin. |
 | mmm | Näyttää kuukauden lyhenteenä (Tammi–Joulu). Lokalisoitu. |
 | mmmm | Näyttää kuukauden koko nimen (tammikuu–joulukuu). Lokalisoitu. |
-| y | Näytä vuodenpäivän lukuna (1–366). |
 | yy | Näyttää vuoden kaksinumeroisena lukuna (00–99). |
 | yyyy | Näyttää vuoden nelinumeroisena lukuna (100–9999). |
 | h | Näyttää tunnit ilman edeltävää nollaa (0–23). |
@@ -146,7 +144,7 @@ Seuraavassa taulukossa on yksilöity merkit, joiden avulla voit luoda **käyttä
 | ( **/** ) | Päivämääräerotin. Joillakin alueilla päivämääräerottimena voidaan käyttää myös muita merkkejä. Päivämääräerotin erottaa päivän, kuukauden ja vuoden, kun päivämääräarvot muotoillaan. Järjestelmäasetukset määrittävät merkin, jota käytetään päivämäärän erottimena muotoilluissa tuloksissa. |
 | ( **E- E+ e- e+** ) | Tieteellinen muoto. Jos muotoilulauseke sisältää vähintään yhden numeron paikkamerkin ( **0** tai **#** ) E-, E+-, e- tai e+-merkin oikealla puolella, luku näytetään tieteellisessä muodossa, ja E tai e lisätään luvun ja sen eksponentin väliin. Oikealla olevien numeroiden paikkamerkkien määrä määrittää eksponentissa olevien numeroiden määrän. Aseta miinusmerkki negatiivisten eksponenttien viereen E-:n tai e-:n avulla. Aseta miinusmerkki negatiivisten eksponenttien ja plusmerkki positiivisten eksponenttien viereen E+:n tai e+:n avulla. |
 | **- + $**  ( ) | Näytä literaalimerkki. Jos haluat näyttää muun kuin jonkin luettelossa olevan merkin, kirjoita sen eteen kenoviiva (\) tai kirjoita se kaksinkertaisiin lainausmerkkeihin (&quot; &quot;). |
-| ( * *\** ) | Näytä seuraava merkki muotoilumerkkijonossa. Jos haluat näyttää merkin, jolla on erityinen merkitys literaalimerkkinä, kirjoita sen eteen kenoviiva (\). Kenoviivaa itseään ei näytetä. Kenoviivan käyttäminen vastaa merkin lisäämistä kaksinkertaisiin lainausmerkkeihin. Jos haluat kenoviivan näkyvän, käytä kahta kenoviivaa (\\). Literaalimerkkeinä ei voida näyttää esimerkiksi päivämäärän ja kellonajan muotoilumerkkejä (a, c, d, h, m, n, p, q, s, t, w, y, / ja :), numeromuotoilumerkkejä (#, 0, %, E, e, pilkku ja piste) sekä merkkijonomuotoilun merkkejä (@, &amp;, \&lt;, \&gt; ja !). |
+| ( * *\** ) | Näytä seuraava merkki muotoilumerkkijonossa. Jos haluat näyttää merkin, jolla on erityinen merkitys literaalimerkkinä, kirjoita sen eteen kenoviiva (\). Kenoviivaa itseään ei näytetä. Kenoviivan käyttäminen vastaa merkin lisäämistä kaksinkertaisiin lainausmerkkeihin. Jos haluat kenoviivan näkyvän, käytä kahta kenoviivaa (\\). Literaalimerkkeinä ei voida näyttää esimerkiksi päivämäärän ja kellonajan muotoilumerkkejä (a, c, d, h, m, n, p, q, s, t, w, / ja :), numeromuotoilumerkkejä (#, 0, %, E, e, pilkku ja piste) sekä merkkijonomuotoilun merkkejä (@, &amp;, \&lt;, \&gt; ja !). |
 | (&quot;ABC&quot;) | Näytä merkkijono kaksinkertaisten lainausmerkkien sisällä (&quot; &quot;). |
 
 

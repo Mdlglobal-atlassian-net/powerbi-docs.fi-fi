@@ -1,20 +1,20 @@
 ---
 title: Sisällön jakaminen ulkoisille vieraskäyttäjille Azure AD B2B:n avulla
 description: Power BI on integroitu Azure Active Directory Business-to-Businessin (Azure AD B2B) kanssa, jotta Power BI -sisältöä voidaan jakaa turvallisesti organisaation ulkopuolisten vierailevien käyttäjien kanssa.
-author: mgblythe
+author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 09/09/2019
-ms.author: mblythe
+ms.author: kfollis
 LocalizationGroup: Administration
-ms.openlocfilehash: bcde2bc456ee48e8dc66d6c0ba6b17d79fbe43a8
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: c126b073ac80a470733d7d8dd2638da28a06b265
+ms.sourcegitcommit: 9a265d8117cc202f5f700286b5ff42a631aacdb4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73858023"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "74882836"
 ---
 # <a name="distribute-power-bi-content-to-external-guest-users-with-azure-ad-b2b"></a>Power BI -sisällön jakaminen ulkoisille vieraskäyttäjille Azure AD B2B:n avulla
 
@@ -31,6 +31,8 @@ Voit käyttää myös [Salli ulkoisten vieraskäyttäjien muokata ja hallita sis
 ## <a name="who-can-you-invite"></a>Kenet voi kutsua?
 
 Voit kutsua vieraskäyttäjiä millä tahansa sähköpostiosoitteella, myös henkilökohtaisilla tileillä, kuten gmail.com, outlook.com tai hotmail.com. Azure AD B2B:ssä näitä osoitteita kutsutaan *sosiaalisiksi käyttäjätiedoiksi*.
+
+Et voi kutsua julkishallinnon pilvipalveluun liittyviä käyttäjiä, kuten [Power BI Yhdysvaltain julkishallinnolle](service-govus-overview.md).
 
 ## <a name="invite-guest-users"></a>Vieraskäyttäjien kutsuminen
 

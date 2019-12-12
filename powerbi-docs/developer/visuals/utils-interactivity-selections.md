@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: 8a9218085b0da655d1ce4b3ece0b2666c4826c86
-ms.sourcegitcommit: f7b28ecbad3e51f410eff7ee4051de3652e360e8
+ms.openlocfilehash: e2587140d5436552e26be90c67eb5e6240bf6a1d
+ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74061864"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74696136"
 ---
 # <a name="microsoft-power-bi-visuals-interactivity-utils"></a>Microsoft Power BI -visualisointien vuorovaikutteisuuden apuohjelmat
 
@@ -80,7 +80,7 @@ Yleensä arvopisteet sisältävät valintoja ja arvoja. Liittymä laajentaa `Sel
   specificIdentity?: powerbi.extensibility.ISelectionId;
 ```
 
-Vuorovaikutteisuuden apuohjelmien käyttämisen ensimmäisenä vaiheena on vuorovaikutteisuuden apuohjelmien ja tallentamisen objektin esiintymän tallentaminen visualisoinnin ominaisuutena.
+Vuorovaikutteisuuden apuohjelmien käyttämisen ensimmäisenä vaiheena on vuorovaikutteisuuden apuohjelmien ja tallentamisen objektin esiintymän tallentaminen visualisoinnin ominaisuutena
 
 ```typescript
 export class Visual implements IVisual {
@@ -126,8 +126,8 @@ export interface BaseBehaviorOptions<SelectableDataPointType extends BaseDataPoi
 }
 ```
 
-Määritä luokka kohteelle `visual behaviour`. Luokka, joka vastaa hiiren tapahtumista `click`, `contextmenu`.
-Kun klikkauksia käytetään tietoelementteihin, visuaalisten kutsujen valintakäsittely valitsee arvopisteet. Tai tyhjennä valinta, jos käyttäjä napsauttaa visualisoinnin tausta-osaa. Ja luokalla on vastaavat metodit: `bindClick`, `bindClearCatcher`, `bindContextMenu`.
+Määritä luokka kohteelle `visual behavior`. Luokka vastaa hiiren tapahtumista `click`, `contextmenu`.
+Kun klikkauksia käytetään tietoelementteihin, visuaalisten kutsujen valintakäsittely valitsee arvopisteet. Jos käyttäjä napsauttaa visualisoinnin taustaosaa, se kutsuu selkeää valintakäsittelijää. Ja luokalla on vastaavat metodit: `bindClick`, `bindClearCatcher`, `bindContextMenu`.
 
 ```typescript
 export class Behavior<SelectableDataPointType extends BaseDataPoint> implements IInteractiveBehavior {
@@ -259,9 +259,9 @@ this.interactivity.bind(<BaseBehaviorOptions<VisualDataPoint>>{
 
 * `selectionMerge` on D3-valintaobjekti, joka edustaa visualisoinnin kaikkia valittavissa olevia elementtejä.
 
-* `select(this.target)` on D3-valintaobjekti, joka edustaa visualisoinnin DOM-pääelementtejä.
+* `select(this.target)` on D3-valintaobjekti, joka edustaa visualisoinnin tärkeimpiä DOM-elementtejä.
 
-* `this.categories`-tiedot osoittavat elementeillä, ja liittymä on `VisualDataPoint` (tai `categories: VisualDataPoint[];`)
+* `this.categories` ovat datapisteitä, ja liittymä on `VisualDataPoint` (tai `categories: VisualDataPoint[];`)
 
 * `this.behavior` on uusi `visual behavior` -esiintymä
 

@@ -7,17 +7,17 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/19/2019
+ms.date: 12/05/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 9c35e97fba55230277f9f144a5155071656b6add
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: e7fa98be039093015e1b19ba8bf20f1368658a43
+ms.sourcegitcommit: 212fb4a46af3e434a230331f18456c6a49a408fd
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73870952"
+ms.lasthandoff: 12/07/2019
+ms.locfileid: "74907808"
 ---
-# <a name="filled-maps-choropleths-in-power-bi"></a>Täytetyt kartat (koropleettikartat) Power BI:ssä
+# <a name="filled-maps-choropleth-in-power-bi"></a>Täytetyt kartat (koropleettikartat) Power BI:ssä
 
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
@@ -46,12 +46,12 @@ Täytetyt kartat ovat hyvä vaihtoehto, kun:
 * kun haluat yleiskuvan jakaumasta maantieteellisten sijaintien suhteen.
 
 ### <a name="prerequisites"></a>Edellytykset
-Tässä opetusohjelmassa käytetään [Jälleenmyyntianalyysimallin PBIX-tiedostoa](https://download.microsoft.com/download/9/7/6/9767913A-29DB-40CF-8944-9AC2BC940C53/Sales%20and%20Marketing%20Sample%20PBIX.pbix).
+Tässä opetusohjelmassa käytetään [myynti- ja markkinointimallin](https://download.microsoft.com/download/9/7/6/9767913A-29DB-40CF-8944-9AC2BC940C53/Sales%20and%20Marketing%20Sample%20PBIX.pbix) PBIX-tiedostoa.
 1. Valitse valikkorivin vasemmasta yläosasta **Tiedosto** > **Avaa**
    
-2. **Jälleenmyyntianalyysimallin PBIX-tiedoston löytäminen**
+2. Etsi oma kappaleesi **myynti- ja markkinointiesimerkkitiedostosta**
 
-1. Avaa **Jälleenmyyntianalyysimallin PBIX-tiedosto** raporttinäkymässä ![Näyttökuva raporttinäkymän kuvakkeesta.](media/power-bi-visualization-kpi/power-bi-report-view.png).
+1. Avaa **myynti- ja markkinointi -PBIX-tiedosto** raporttinäkymässä ![Näyttökuva raporttinäkymän kuvakkeesta.](media/power-bi-visualization-kpi/power-bi-report-view.png).
 
 1. Valitse ![Näyttökuva keltaisesta välilehdestä.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) uuden sivun lisäämiseksi.
 
@@ -63,7 +63,7 @@ Tällä videolla Kim luo peruskartan ja muuntaa sen täytetyksi kartaksi.
    > 
    > 
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ajTPGNpthcg" frameborder="0" allowfullscreen></iframe>
+[VIDEO https://www.youtube.com/embed/ajTPGNpthcg ]
 
 ### <a name="create-a-filled-map"></a>Täytetyn kartan luominen
 1. Valitse Kentät-ruudusta **Alue** \> **Osavaltio**.    
@@ -84,22 +84,22 @@ Tällä videolla Kim luo peruskartan ja muuntaa sen täytetyksi kartaksi.
    ![Osavaltion avattava valikko, jossa vaihtoehtoja Kaikki ja AK ei ole valittu](media/power-bi-visualization-filled-maps-choropleths/img005.png)
 4. Avaa Muotoilu-ruutu valitsemalla maalitelakuvake ja valitse **Tietojen värit**.
 
-    ![Muotoiluruutu, jossa näkyy Tietojen värit -vaihtoehto](media/power-bi-visualization-filled-maps-choropleths/power-bi-data-color.png)
+    ![Muotoiluruutu, jossa näkyy Tietojen värit -vaihtoehto](media/power-bi-visualization-filled-maps-choropleths/power-bi-colors-data.png)
 
 5. Valitse **Ehdollinen muotoilu** -vaihtoehto napsauttamalla kolmea päällekkäistä pistettä.
 
-    ![Tietojen värit -vaihtoehdon ehdollisen muotoilun painike](media/power-bi-visualization-filled-maps-choropleths/power-bi-conditional-formatting.png)
+    ![Tietojen värit -vaihtoehdon ehdollisen muotoilun painike](media/power-bi-visualization-filled-maps-choropleths/power-bi-conditional.png)
 
-6. Käytä **Oletusväri - Tietojen värit** -näyttöä määrittääksesi, miten täytetty karttasi sävytetään. Asetukset antavat sinun muun muassa valita, mihin kenttään sävytys perustuu ja miten sävytys lisätään. Tässä esimerkissä käytetään kenttää **Myyntitiedot** > **Asenne**, ja asenteen pienin arvo määritetään punaiseksi ja suurin arvo vihreäksi. Arvot, jotka jäävät maksimi- ja minimiarvon väliin, näkyvät punaisen ja vihreän sävyissä. Käytetyt värit näkyvät näytön alareunassa olevassa kuvassa. 
+6. Käytä **Oletusväri - Tietojen värit** -näyttöä määrittääksesi, miten täytetty karttasi sävytetään. Asetukset antavat sinun muun muassa valita, mihin kenttään sävytys perustuu ja miten sävytys lisätään. Tässä esimerkissä käytetään kenttää **Myyntitiedot** > **Asenne**, ja asenteen pienin arvo määritetään oranssiksi ja suurin arvo siniseksi. Arvot, jotka jäävät maksimi- ja minimiarvon väliin, näkyvät oranssin ja sinisen sävyissä. Käytetyt värit näkyvät näytön alareunassa olevassa kuvassa. 
 
-    ![Oletusarvoinen väriruutu Asenne valittuna](media/power-bi-visualization-filled-maps-choropleths/power-bi-sentiment.png)
+    ![Oletusarvoinen väriruutu Asenne valittuna](media/power-bi-visualization-filled-maps-choropleths/power-bi-sentiment-field.png)
 
-7. Täytetty kartta sävytetään vihreällä ja punaisella niin, että punainen edustaa alempia asennearvoja ja vihreät suurempia, positiivisempia asenteita.  Jos haluat lisätietoja, vedä kenttä työkaluvihjeisiin.  Tässä olen lisännyt **Asenne-eron** ja korostanut tilan Idaho (ID), ja että asenne-ero on pieni, 6.
-   ![täytetty kartta jossa näkyy Idaho-työkaluvihjeet](media/power-bi-visualization-filled-maps-choropleths/power-bi-filled-map-idaho.png)
+7. Täytetty kartta sävytetään vihreällä ja punaisella niin, että punainen edustaa alempia asennearvoja ja vihreät suurempia, positiivisempia asenteita.  Jos haluat lisätietoja, vedä kenttä työkaluvihjeisiin.  Olemme lisänneet **SalesFact** > **Sentiment Gap**. Idahon (ID) tilan korostaminen osoittaa, että asenne-ero on alhainen, 6.
+   ![täytetty kartta jossa näkyy Idaho-työkaluvihjeet](media/power-bi-visualization-filled-maps-choropleths/power-bi-idaho-filled-map.png)
 
 10. [Tallenna raportti](../service-report-save.md).
 
-Power BI:n avulla voit hallita täytetyn kartan ulkoasua vapaasti. Vaihtele tietojen väriohjausobjektien kanssa, kunnes olet tyytyväinen ulkoasuun. 
+Power BI:n avulla voit hallita täytetyn kartan ulkoasua vapaasti. Harjoittele väriasetusten käyttöä, kunnes ulkoasu vastaa odotuksiasi. 
 
 ## <a name="highlighting-and-cross-filtering"></a>Korostaminen ja ristiinsuodatus
 Lisätietoja Suodattimet-paneelin käyttämisestä saat ohjeaiheesta [Suodattimen lisääminen raporttiin](../power-bi-report-add-filter.md).
@@ -118,10 +118,10 @@ Yksittäisen sijainnin korostaminen täytetyssä kartassa ristiinsuodattaa muut 
 
    ![Täytetty kartta lisätään Asenne-sivulle](media/power-bi-visualization-filled-maps-choropleths/power-bi-map.png)
 
-5. Valitse täytetystä kartasta jokin osavaltio.  Tämä ristiinkorostaa ja -suodattaa muut sivulla olevat visualisoinnit. Jos valitset esimerkiksi **Texas**, näet, että Asenne on 75 ja että Texas on keskialueella 23.   
-   ![Texas valittuna](media/power-bi-visualization-filled-maps-choropleths/power-bi-texas.png)
+5. Valitse täytetystä kartasta jokin osavaltio.  Tämä ristiinkorostaa ja -suodattaa muut sivulla olevat visualisoinnit. Valitsemalla **Texas** ristiinsuodatat kortteja ja ristiinkorostat palkkikaaviota. Tästä näet, että Asenne on 75 ja että Texas on keskialueella 23.   
+   ![Texas valittuna](media/power-bi-visualization-filled-maps-choropleths/power-bi-filter.png)
 2. Valitse arvopiste VanArsdel – Asenne kuukauden mukaan -viivakaaviosta. Toiminto suodattaa täytetyn kartan niin, että se näyttää asennearvot VanArsdelista eikä sen kilpailijasta.  
-   ![uusi varjostus](media/power-bi-visualization-filled-maps-choropleths/power-bi-yes.png)
+   ![uusi varjostus](media/power-bi-visualization-filled-maps-choropleths/power-bi-vanarsdel.png)
 
 ## <a name="considerations-and-troubleshooting"></a>Huomioon otettavat seikat ja vianmääritys
 Karttatiedot saattavat olla epäselviä.  Esimerkiksi Ranskassa on Paris (Pariisi) mutta myös Texasissa on Paris. Olet luultavasti tallentanut maantieteelliset tiedot erillisiin sarakkeisiin: oma sarake kaupunkien nimille, oma osavaltion tai provinssin nimille ja niin edelleen. Bing ei välttämättä pysty sen vuoksi päättelemään, kumpi Paris on kyseessä. Jos tietojoukossasi on valmiiksi mukana leveys- ja pituusasteet, Power BI:ssä on erityiskenttiä, joiden avulla voit poistaa kartoista edellä kuvatun kaltaiset epäselvyydet. Vedä leveystiedot sisältävä kenttä Visualisoinnit \> Leveysaste-alue.  Tee sama pituusastetiedoille.    
@@ -130,7 +130,7 @@ Karttatiedot saattavat olla epäselviä.  Esimerkiksi Ranskassa on Paris (Pariis
 
 Jos sinulla on oikeudet muokata tietojoukkoa Power BI Desktopissa, katso seuraava video, jossa käsitellään karttaepäselvyyksien vähentämistä.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Co2z9b-s_yM" frameborder="0" allowfullscreen></iframe>
+[VIDEO https://www.youtube.com/embed/Co2z9b-s_yM ]
 
 Jos sinulla ei käytettävissäsi leveys- ja pituusastetietoja mutta sinulla on tietojoukon käyttöoikeus, [päivitä tietojoukkosi näiden ohjeiden mukaisesti](https://support.office.com/article/Maps-in-Power-View-8A9B2AF3-A055-4131-A327-85CC835271F7).
 

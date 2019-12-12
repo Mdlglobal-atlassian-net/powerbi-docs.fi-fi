@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 10/31/2019
-ms.openlocfilehash: ed1a67168a386838049ec2ca047ec0cd971408fc
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: bf5cd8d8ae649071b3c9cc7243f87ac3cc316c3b
+ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73880023"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74695356"
 ---
 # <a name="highlight-data-points-in-power-bi-visuals"></a>Korosta arvopisteitä Power BI:n visualisoinneissa
 
@@ -26,6 +26,9 @@ Jos määrität `supportsHighlight`-ominaisuuden arvoksi `true` kohteessa `capab
 ![`tietonäkymä` tukee korostamista](./media/highlight-dataview-supports.png)
 
 Tässä esimerkissä huomaat, että 1-palkki on valittuna. Se on korostusmatriisin ainoa arvo. On myös tärkeää huomata, että käytössä voisi olla useita valintoja ja osittaisia korostuksia. Korostetut arvot esitetään tietonäkymässä.
+
+> [!Note]
+> Taulukon tietonäkymän yhdistäminen ei tue korostukset-ominaisuutta.
 
 ## <a name="highlight-data-points-with-categorical-data-view-mapping"></a>Korosta arvopisteet luokittaisella tietonäkymän yhdistämismäärityksellä
 

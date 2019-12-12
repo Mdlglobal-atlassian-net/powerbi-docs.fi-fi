@@ -7,27 +7,22 @@ featuredvideoid: IkJda4O7oGs
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/24/2019
+ms.date: 12/04/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 011e2b6d3bf5cc998f7db76e96536d2ddab09888
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 252e83a543640ec47fbadd00012bf1a4d8074f84
+ms.sourcegitcommit: e492895259aa39960063f9b337a144a60c20125a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73880862"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74831402"
 ---
 # <a name="customize-visualization-titles-legends-and-backgrounds"></a>Mukauta visualisoinnin otsikoita, selitteitä ja taustoja
 
-Tässä opetusohjelmassa opit pari erilaista tapaa mukauttaa visualisointeja. Visualisointien mukauttamiseen on paljon vaihtoehtoja. Paras keino tutustua niihin kaikkiin on tarkastella **Muotoilu**-ruutua (valitse maalirullakuvake). Jotta pääset alkuun, tässä artikkelissa kerrotaan, miten voit mukauttaa visualisoinnin otsikkoa, selitettä ja taustaa.
+Tässä opetusohjelmassa opit pari erilaista tapaa mukauttaa visualisointeja. Visualisointien mukauttamiseen on paljon vaihtoehtoja. Paras keino tutustua niihin kaikkiin on tarkastella **Muotoilu**-ruutua (valitse maalirullakuvake). Jotta pääset alkuun, tässä artikkelissa kerrotaan, miten voit mukauttaa visualisoinnin otsikkoa, selitettä ja taustaa ja lisätä teeman.
 
 Kaikkia visualisointeja ei voi mukauttaa. Katso lisätietoja visualisointien [täydellisestä luettelosta](#visualization-types-that-you-can-customize).
 
-Pikakelaa kohtaan 4:50 videossa, jossa on esittely visualisointien mukauttamisesta:
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/IkJda4O7oGs" frameborder="0" allowfullscreen></iframe>
-
-noudata sitten alla olevia ohjeita ja kokeile samaa itse omilla tiedoillasi.
 
 ## <a name="prerequisites"></a>Edellytykset
 
@@ -37,7 +32,7 @@ noudata sitten alla olevia ohjeita ja kokeile samaa itse omilla tiedoillasi.
 
 ## <a name="customize-visualization-titles-in-reports"></a>Visualisoinnin otsikoiden mukauttaminen raporteissa
 
-Seuraa mukana kirjautumalla sisään [Power BI -palveluun](https://app.powerbi.com)ja avaamalla [Jälleenmyyntianalyysimalli](../sample-datasets.md)-raportti [Muokkaa raporttia](../service-interact-with-a-report-in-editing-view.md) -näkymässä.
+Seuraa mukana kirjautumalla sisään Power BI Desktopiin ja avaamalla [Jälleenmyyntianalyysimalli](../sample-datasets.md)-raportin.
 
 > [!NOTE]
 > Kun kiinnität visualisoinnin raporttinäkymään, siitä tulee raporttinäkymän ruutu. Voit myös mukauttaa itse ruutuja [uusien otsikoiden ja alaotsikoiden sekä hyperlinkkien avulla, ja muuttaa niiden kokoa](../service-dashboard-edit-tile.md).
@@ -50,41 +45,38 @@ Seuraa mukana kirjautumalla sisään [Power BI -palveluun](https://app.powerbi.c
 
 1. Valitse **Otsikko** tämän osion laajentamiseksi.
 
-   ![Näyttökuva Muotoilu-ruudusta, jossa maalirullakuvake on korostettu ja jossa nuoli osoittaa avattavaan Otsikko-valikkoon.](media/power-bi-visualization-customize-title-background-and-legend/power-bi-formatting-menu.png)
+   ![Näyttökuva Muotoilu-ruudusta, jossa maalirullakuvake on korostettu ja jossa nuoli osoittaa avattavaan Otsikko-valikkoon.](media/power-bi-visualization-customize-title-background-and-legend/power-bi-format-menu.png)
 
 1. Siirrä **otsikon** liukusäädin tilaan **Käytössä**.
 
-   ![Näyttökuva Käytössä-liukusäätimestä.](media/power-bi-visualization-customize-title-background-and-legend/onoffslider.png)
-
 1. Voit muuttaa otsikkoa kirjoittamalla *Myymälöiden määrä kuukauden mukaan avattuna* **Otsikon teksti** -kenttään.
 
-1. Muuta **fonttiväri** oranssiksi ja **taustaväri** keltaiseksi.
+    ![Näyttökuva muotoruudusta, jossa on annettu otsikkoteksti.](media/power-bi-visualization-customize-title-background-and-legend/power-bi-title.png)
 
-    1. Valitse avattava luettelo ja valitse väri **teemaväreistä**, **viimeksi käytetyistä väreistä** tai **mukautetuista väreistä**.
+1. Muuta **fonttiväri** valkoiseksi ja **taustaväri** siniseksi.    
 
-        ![Näyttökuva fonttivärin ja taustavärin vaihtoehdoista.](media/power-bi-visualization-customize-title-background-and-legend/customizecolorpicker.png)
+    a. Valitse avattava luettelo ja valitse väri **teemaväreistä**, **viimeksi käytetyistä väreistä** tai **mukautetuista väreistä**.
 
-    1. Valitse avattava luettelo väri-ikkunan sulkemiseksi.
+        ![Screenshot of the Font color and Background color options.](media/power-bi-visualization-customize-title-background-and-legend/power-bi-color.png)
 
-       Tallenna tekemäsi muutokset.
+    b. Valitse avattava luettelo väri-ikkunan sulkemiseksi.
 
-       Jos haluat palauttaa kaikki muutokset, voit siirtyä takaisin oletusväreihin valitsemalla **Palauta oletusasetukseen** väri-ikkunassa.
 
-1. Suurenna tekstikooksi **12 pt**.
+1. Suurenna tekstikooksi **16 pt**.
 
 1. Viimeinen mukautus, jonka teet kaavion otsikkoon, on sen tasaaminen visualisoinnin keskelle.
 
-    ![Näyttökuva tasauksen ohjausobjekteista, joissa Keskitä-vaihtoehto on valittuna.](media/power-bi-visualization-customize-title-background-and-legend/customizealign.png)
+    ![Näyttökuva tasauksen ohjausobjekteista, joissa Keskitä-vaihtoehto on valittuna.](media/power-bi-visualization-customize-title-background-and-legend/power-bi-align.png)
 
-Tässä vaiheessa opetusohjelmaa klusteroidun pylväskaavion otsikon pitäisi näyttää seuraavankaltaiselta:
+    Tässä vaiheessa opetusohjelmaa klusteroidun pylväskaavion otsikon pitäisi näyttää seuraavankaltaiselta:
 
-![Näyttökuva äskettäin määritetystä klusteroidusta pylväskaaviosta.](media/power-bi-visualization-customize-title-background-and-legend/tutorialprogress1.png)
+    ![Näyttökuva äskettäin määritetystä klusteroidusta pylväskaaviosta.](media/power-bi-visualization-customize-title-background-and-legend/power-bi-table.png)
 
 Tallenna tekemäsi muutokset ja siirry seuraavaan osioon.
 
 Jos haluat palauttaa kaikki muutokset, valitse **Palauta oletusasetukseen** **Otsikko**-mukauttamisruudun alareunassa.
 
-![Näyttökuva Palauta oletusasetukseen -vaihtoehdosta.](media/power-bi-visualization-customize-title-background-and-legend/revertall.png)
+![Näyttökuva Palauta oletusasetukseen -vaihtoehdosta.](media/power-bi-visualization-customize-title-background-and-legend/power-bi-revert.png)
 
 ## <a name="customize-visualization-backgrounds"></a>Visualisoinnin taustojen mukauttaminen
 
@@ -98,7 +90,7 @@ Kun sama klusteroitu pylväskaavio on valittuna, laajenna **Tausta**-vaihtoehtoj
 
 Tässä vaiheessa opetusohjelmaa klusteroidun pylväskaavion taustan pitäisi näyttää seuraavankaltaiselta:
 
-![Näyttökuva klusteroidusta pylväskaaviosta, jossa taustaväri on päivitetty.](media/power-bi-visualization-customize-title-background-and-legend/power-bi-customize-background.png)
+![Näyttökuva klusteroidusta pylväskaaviosta, jossa taustaväri on päivitetty.](media/power-bi-visualization-customize-title-background-and-legend/power-bi-background.png)
 
 Tallenna tekemäsi muutokset ja siirry seuraavaan osioon.
 
@@ -112,7 +104,7 @@ Jos haluat palauttaa kaikki muutokset, valitse **Palauta oletusasetukseen** **Ta
 
 1. Laajenna **Selite**-vaihtoehtoja:
 
-      ![Näyttökuva Selite-vaihtoehdosta.](media/power-bi-visualization-customize-title-background-and-legend/legend.png)
+    ![Näyttökuva Selite-kortista.](media/power-bi-visualization-customize-title-background-and-legend/power-bi-legends.png)
 
 1. Siirrä **selitteen** liukusäädin tilaan **Käytössä**.
 
@@ -120,15 +112,22 @@ Jos haluat palauttaa kaikki muutokset, valitse **Palauta oletusasetukseen** **Ta
 
 1. Lisää selitteen otsikko vaihtamalla **otsikon** tilaksi **Käytössä**.
 
-1. Kirjoita *Esimiehet* **Selitteen nimi** -kenttään.
+1. Kirjoita *Esimies* **Selitteen nimi** -kenttään.
 
-Tässä vaiheessa opetusohjelmaa klusteroidun pylväskaavion selitteen pitäisi näyttää seuraavankaltaiselta:
-
-![Näyttökuva päivitetystä selitteestä klusteroidussa pylväskaaviossa.](media/power-bi-visualization-customize-title-background-and-legend/legend-move.png)
+1. Muuta **väri** mustaksi.
 
 Tallenna tekemäsi muutokset ja siirry seuraavaan osioon.
 
 Jos haluat palauttaa kaikki muutokset, valitse **Palauta oletusasetukseen** **Selite**-mukauttamisruudun alareunassa.
+
+## <a name="customize-colors-using-a-theme"></a>Värien mukauttaminen teeman avulla
+
+Raporttiteemojen avulla voit soveltaa rakennemuutoksia koko raporttiin, esimerkiksi käyttää yrityksen värejä, muuttaa kuvakejoukkoja tai ottaa käyttöön visualisointien uuden oletusarvoisen muotoilun. Kun otat käyttöön raporttiteeman, kaikissa raporttisi visualisoinneissa ja muotoiluissa käytetään valitun teeman värejä.
+
+Jos haluat ottaa teeman käyttöön raportissasi, valitse **Vaihda teemaa** valikkoriviltä. Valitse teema.  Alla olevassa raportissa käytetään **Solar**-teemaa.
+
+ 
+![Raportti, jossa käytetään keltaista, oranssia ja punaista Solar-teemaa](media/power-bi-visualization-customize-title-background-and-legend/power-bi-theme.png)
 
 ## <a name="visualization-types-that-you-can-customize"></a>Visualisointityypit, joita voit mukauttaa
 
@@ -146,12 +145,15 @@ Seuraavassa on luettelo visualisointi- ja mukautusvaihtoehdoista, jotka ovat kä
 | Täytetty kartta | kyllä | kyllä | kyllä |
 | Suppilo | kyllä | kyllä | – |
 | Mittari | kyllä | kyllä | – |
+| Tärkein vaikuttaja | kyllä | kyllä | – |
 | Suorituskykyilmaisin | kyllä | kyllä | – |
 | Viiva | kyllä | kyllä | kyllä |
 | Kartta | kyllä | kyllä | kyllä |
 | Matriisi | kyllä | kyllä | – |
 | Ympyrä | kyllä | kyllä | kyllä |
+| Q&A | kyllä | kyllä | – |
 | Piste | kyllä | kyllä | kyllä |
+| Muoto | kyllä | kyllä | kyllä |
 | Osittaja | kyllä | kyllä | – |
 | Taulukko | kyllä | kyllä | – |
 | Tekstiruutu | ei | kyllä | – |
@@ -163,7 +165,5 @@ Seuraavassa on luettelo visualisointi- ja mukautusvaihtoehdoista, jotka ovat kä
 - [X- ja Y-akselin ominaisuuksien muokkaaminen](power-bi-visualization-customize-x-axis-and-y-axis.md)
 
 - [Värimuotoilun ja akseliominaisuuksien käytön aloittaminen](service-getting-started-with-color-formatting-and-axis-properties.md)
-
-- [Peruskäsitteet Power BI -palvelun kuluttajille](../consumer/end-user-basic-concepts.md)
 
 Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](https://community.powerbi.com/)

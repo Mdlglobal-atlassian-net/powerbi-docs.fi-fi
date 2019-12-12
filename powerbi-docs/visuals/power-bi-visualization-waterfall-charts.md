@@ -7,15 +7,15 @@ featuredvideoid: maTzOJSRB3g
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/24/2019
+ms.date: 12/5/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: fedaa811c94a9e955d6ca10646bc546f60dc9b98
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 6abca661a1553bfabc3da35fe714ff9bced5555a
+ms.sourcegitcommit: 212fb4a46af3e434a230331f18456c6a49a408fd
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73881963"
+ms.lasthandoff: 12/07/2019
+ms.locfileid: "74907630"
 ---
 # <a name="waterfall-charts-in-power-bi"></a>Vesiputouskaaviot Power BI:ssä
 
@@ -63,9 +63,11 @@ Tässä opetusohjelmassa käytetään [Jälleenmyyntianalyysimallin PBIX-tiedost
 
 Luot vesiputouskaavion, joka näyttää myynnin vaihtelun (arvioitu myynti vs. todellinen myynti) kuukauden mukaan.
 
+### <a name="build-the-waterfall-chart"></a>Rakenna vesiputouskaavio
+
 1. Valitse **Kentät**-ruudussa **Myynti**  > **Myyntivariaatio yhteensä**.
 
-   ![Näyttökuva, jossa Myynti > Myynnin ero yhteensä on valittuna, ja tulokseksi saatu visualisointi.](media/power-bi-visualization-waterfall-charts/power-bi-first-value.png)
+   ![Näyttökuva, jossa Myynti > Myynnin ero yhteensä on valittuna, ja tulokseksi saatu visualisointi.](media/power-bi-visualization-waterfall-charts/power-bi-bar.png)
 
 1. Valitse Vesiputous-kuvake ![Näyttökuva Vesiputous-kuvakkeesta](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-icon.png)
 
@@ -73,41 +75,45 @@ Luot vesiputouskaavion, joka näyttää myynnin vaihtelun (arvioitu myynti vs. t
 
 1. Valitse **Aika** > **FiscalMonth** sen lisäämiseksi **Luokka**-säilöön.
 
-    ![vesiputous](media/power-bi-visualization-waterfall-charts/power-bi-waterfall.png)
+    ![vesiputous](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-month.png)
 
-1. Varmista, että Power BI lajitteli vesiputouskaavion aikajärjestyksessä. Valitse kaavion oikeasta yläkulmasta **Enemmän vaihtoehtoja** (...).
+### <a name="sort-the-waterfall-chart"></a>Vesiputouskaavion lajittelu
 
-    Tässä esimerkissä valitaan vaihtoehto **Lajittele nousevaan järjestykseen**
+1. Varmista, että Power BI lajittelee vesiputouskaavion kuukausittain. Valitse kaavion oikeasta yläkulmasta **Enemmän vaihtoehtoja** (...).
 
-    Tarkista, että keltainen ilmaisin on **Lajittele nousevaan järjestykseen** -vaihtoehdon vieressä vasemmalla. Tämä ilmaisee, että valitsemasi asetus on käytössä.
+    Valitse tässä esimerkissä **Lajitteluperuste** ja valitse **FiscalMonth**. Valintasi vieressä näkyvä keltainen merkkivalo ilmaisee, kun valinta-asetusta käytetään.
 
-    ![Valitse Lajitteluperuste > Lajittele nousevaan järjestykseen](media/power-bi-visualization-waterfall-charts/power-bi-sort-by.png)
+    ![Valitse Lajitteluperuste > FiscalMonth](media/power-bi-visualization-waterfall-charts/power-bi-sort-by-fiscalmonth.png)
+    
+    Jos haluat näyttää kuukaudet kronologisessa järjestyksessä, valitse **Lajittele nousevasti**. Tarkista, että keltainen ilmaisin on **Lajittele nousevaan järjestykseen** -vaihtoehdon vieressä vasemmalla. Tämä ilmaisee, että valitsemasi asetus on käytössä.
 
-    Seuraavaksi valitaan **Lajitteluperuste** ja valitse **FiscalMonth**. Kuten edellisessä vaiheessa, valintasi vieressä näkyvä keltainen ilmaisin osoittaa, kun valinta-asetuksesi on käytössä.
+    ![Valitse Lajitteluperuste > Lajittele nousevaan järjestykseen](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-ascending.png)
 
-    ![Valitse Lajitteluperuste > FiscalMonth](media/power-bi-visualization-waterfall-charts/power-bi-sort-by-fiscal-month.png)
+    
 
-    Voit myös tarkastella X-akselin arvoja ja näet, että ne ovat järjestyksessä **tammikuusta** **elokuuhun**.
+    Huomaa, että kaaviosi lajitellaan tammikuusta elokuuhun FiscalMonth-kohteelle.  
 
-    Tarkastele hieman enemmän nähdäksesi, mikä aiheuttaa eniten muutoksia kuukausittain.
+### <a name="explore-the-waterfall-chart"></a>Vesiputouskaavion tarkastelu
+
+Tarkastele hieman enemmän nähdäksesi, mikä aiheuttaa eniten muutoksia kuukausittain.
 
 1.  Valitse **Myymälä** > **Alue**, jolloin**Alue** lisätään **Erittely**-säilöön.
 
     ![Näyttää Myymälän Erittely-säilössä](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-breakdown.png)
 
-    Oletusarvon mukaan Power BI lisää viisi suurinta osallistujaa nousuun tai laskuun kuukauden mukaan. Alla olevassa kuvassa visualisointiruutu näkyy laajennettuna lisätietojen näyttämistä varten. 
+    Power BI käyttää **Erittely** arvoa lisätietojen lisäämiseen visualisointiin. Power BI lisää viisi suurinta osallistujaa nousuun tai laskuun tilikuukauden mukaan. Tämä tarkoittaa sitä, että esimerkiksi helmikuussa on nyt kuusi arvopistettä vain yhden sijaan.  
 
-    ![Näyttää Myymälän Erittely-säilössä](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-breakdown-initial.png)
+    ![Näyttää Myymälän Erittely-säilössä](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-breakdown-default.png)
 
-    Olet kiinnostunut vain kahdesta suurimmasta osallistujasta.
+    Olet esimerkiksi kiinnostunut vain kahdesta suurimmasta osallistujasta.
 
 1. Valitse **Muotoilu**-ruudussa **Erittely** ja määritä **Suurimmat erittelyt** arvoksi **2**.
 
-    ![Muotoilu > Erittely](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-breakdown-maximum.png)
+    ![Muotoilu > Erittely](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-breakdown-two.png)
 
     Lyhyestä katsauksesta käy ilmi, että Ohion ja Pennsylvanian alueet ovat vesiputouskaavion suurimmat osallistujat sekä negatiivisessa että positiivisessa liikkeessä.
 
-    ![vesiputouskaavio](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-axis.png)
+    ![vesiputouskaavio](media/power-bi-visualization-waterfall-charts/power-bi-axis-waterfall.png)
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 

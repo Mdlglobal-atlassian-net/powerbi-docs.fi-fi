@@ -1,21 +1,21 @@
 ---
 title: Power BI -hallintaportaali
 description: Hallintaportaalissa voit hallita organisaatiosi Power BI -vuokraajia. Hallintaportaali sisältää esimerkiksi käyttömittareita ja asetuksia. Sen kautta voit käyttää myös Microsoft 365 -hallintakeskusta.
-author: mgblythe
+author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 09/25/2019
-ms.author: mblythe
+ms.author: kfollis
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: bb842128c26161d2f8da2961c6f014b9ecb45fc5
-ms.sourcegitcommit: c395fe83d63641e0fbd7c98e51bbab224805bbcc
+ms.openlocfilehash: 4776e458c778b6bd482106660ab9b8cd978699e5
+ms.sourcegitcommit: 9a265d8117cc202f5f700286b5ff42a631aacdb4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74265904"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "74882893"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>Power BI:n hallinta hallintaportaalissa
 
@@ -247,11 +247,14 @@ Seuraavassa kuvassa näkyy raportin **Tiedosto**-valikko, kun **Tulosta koontin�
 ![Raportin tulostaminen](media/service-admin-portal/powerbi-admin-print-report.png)
 
 ### <a name="allow-external-guest-users-to-edit-and-manage-content-in-the-organization"></a>Salli ulkoisten vieraskäyttäjien muokata ja hallita sisältöä organisaatiossa
-Azuren B2B-vieraskäyttäjät voivat muokata ja hallita sisältöä organisaatiossa. [Lue lisää](service-admin-azure-ad-b2b.md)
+Azure Active Directoryn B2B-vieraskäyttäjät voivat muokata ja hallita sisältöä organisaatiossa. [Lue lisää](service-admin-azure-ad-b2b.md)
 
 Seuraava kuva näyttää asetuksen Salli ulkoisten vieraskäyttäjien muokata ja hallita sisältöä organisaatiossa.
 
 ![Salli ulkoisten vieraskäyttäjien muokata ja hallita sisältöä organisaatiossa](media/service-admin-portal/powerbi-admin-tenant-settings-b2b-guest-edit-manage.png)
+
+> [!IMPORTANT]
+> Kun lisäät ulkoisen käyttäjän Azure AD -vuokraajaan (joko manuaalisesti tai jakamalla raportin kyseisen käyttäjän kanssa), kyseinen käyttäjätili on nyt löydettävissä sisäiseksi tiliksi. Sisäinen käyttäjä voi jakaa muita asioita ulkoisen käyttäjän kanssa, vaikka sisäisellä tilillä ei olisi ulkoisia jakamisoikeuksia.
 
 ### <a name="email-subscriptions"></a>Sähköpostitilaukset
 Organisaatiosi käyttäjät voivat luoda sähköpostitilauksia. Lue lisää [tilauksista](service-report-subscribe.md).

@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 05/07/2019
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: ab84795ff5d140f23f19184bbc40e91133854f1f
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 37cbea42d530f05df1d9f1003554680b80c5b5c3
+ms.sourcegitcommit: 212fb4a46af3e434a230331f18456c6a49a408fd
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73876727"
+ms.lasthandoff: 12/07/2019
+ms.locfileid: "74907939"
 ---
 # <a name="aggregations-in-power-bi-desktop"></a>Koosteet Power BI Desktopissa
 
@@ -92,7 +92,7 @@ Ainoa tapaus, jossa *ristilähde*suhdetta pidetään vahvana, on silloin, jos mo
 
 Tietoa *ristilähde*koosteiden osumista, jotka eivät ole riipu suhteista, on alla olevassa Ryhmittelyperuste-sarakkeisiin perustuvista koosteista kertovassa osassa.
 
-### <a name="aggregation-tables-are-not-addressable"></a>Koostetaulukoihin ei voi osoittaa
+### <a name="aggregation-tables-arent-addressable"></a>Koostetaulukoihin ei voi osoittaa
 Käyttäjät, joilla on tietojoukon vain luku -käyttö, eivät voi luoda kyselyn koostetaulukoita. Näin vältetään suojausongelmat käytettäessä RLS:ää. Käyttäjät ja kyselyt viittaavat tietotaulukkoon eivätkä koostetaulukkoon. Heidän ei tarvitse edes tietää koostetaulukon olemassaolosta.
 
 Tästä syystä **Myyntikooste**-taulukon tulee olla piilotettu. Jos se ei ole, Koosteiden hallinta -valintaikkuna määrittää sen piilotetuksi, kun napsautat Ota kaikki käyttöön -painiketta.
@@ -184,7 +184,7 @@ Joissakin tapauksissa DISTINCTCOUNT-funktio voi hyöytä koosteista. Seuraava ky
 ### <a name="rls"></a>RLS
 Rivitason suojauksen (RLS) lausekkeiden tulee suodattaa sekä koostetaulukko että tietotaulukko, jotta ne toimivat oikein. Seuraavassa esimerkissä **Paikkatieto**-taulukon RLS-lauseke toimii, koska Paikkatieto on yhteyden suodatuspuolella sekä **Myynti**-taulukossa että **Myyntikooste**-taulukossa. Kyselyissä, jotka osuvat koostetaulukkoon, ja niissä, jotka eivät osu siihen, RLS otetaan käyttöön.
 
-![koosteiden roolien hallinta](media/desktop-aggregations/manage-roles.jpg)
+![koosteiden roolien hallinta](media/desktop-aggregations/manage-roles.png)
 
 **Tuote**-taulukossa oleva RLS-lauseke suodattaa vain **Myynti**-taulukon. Se ei suodata **Myyntikooste**-taulukkoa. Tätä ei suositella. Tällä roolilla tietojoukkoa käyttävien käyttäjien lähettämät kyselyt eivät hyödy koosteosumista. Koska koostetaulukko on tietotaulukossa olevien samojen tietojen toinen esitystapa, kyselyihin vastaaminen koostetaulukosta ei olisi turvallista, koska RLS-suodatinta ei voi käyttää.
 

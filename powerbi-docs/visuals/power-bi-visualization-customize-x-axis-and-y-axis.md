@@ -7,16 +7,18 @@ featuredvideoid: 9DeAKM4SNJM
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/4/2019
+ms.date: 12/3/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 393f6f25fedddd9ff17d635ae67ce473ab57eea4
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: bafcf3a754c58a040595279f93d885e8f317195e
+ms.sourcegitcommit: 90bd747b7c460d17b74cd386d3f5714234b1f6c9
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73880913"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74791785"
 ---
+- missä vuoden käyttökateprosentti on? Voin monistaa palkkikaavioita, mutta en useita rivejä.
+
 # <a name="customize-x-axis-and-y-axis-properties"></a>X- ja Y-akselin ominaisuuksien muokkaaminen
 
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
@@ -171,7 +173,7 @@ Eräät visualisoinnit voivat hyötyä kahdesta Y-akselista. Yhdistelmäkaavio o
 
 ### <a name="create-a-chart-with-two-y-axes"></a>Kahden Y-akselin kaavion luominen
 
-1. Valitse pylväskaavio ja muuta se *Viivan ja pinotun sarakkeen* muotoiseksi kaavioksi. 
+1. Valitse pylväskaavio ja muuta se *Viivan ja pinotun sarakkeen* muotoiseksi kaavioksi. Tämä visualisointityyppi tukee yksirivisen kaavion arvoa ja useita pinottavia sarakearvoja. 
 
     ![Näyttökuva visualisointiruudusta, jossa on korostettu viivan ja pinotun pylväskaavion kuvake.](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-combo.png)
    
@@ -185,7 +187,7 @@ Eräät visualisoinnit voivat hyötyä kahdesta Y-akselista. Yhdistelmäkaavio o
 
    ![Yhdistelmäkaavio ja muotoiluruutu, joiden kirjainkoko on pienennetty 12:ksi](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-font-size.png)
 
-   Power BI luo kaksi Y-akselia, jolloin arvot voidaan skaalata eri tavalla. Vasen akseli mittaa dollareita ja oikea akseli mittaa prosenttilukua.
+   Power BI luo kaksi Y-akselia, jolloin arvot voidaan skaalata eri tavalla. Vasen akseli mittaa myyntidollareita ja oikea akseli mittaa voittoprosenttia.
 
 ### <a name="format-the-second-y-axis"></a>Toisen Y-akselin muotoileminen
 Koska aloitimme visualisoinnilla, jossa oli yksi muotoiltu Y-akseli, Power BI loi toisen Y-akselin samoin asetuksin. Voimme kuitenkin muuttaa sen. 
