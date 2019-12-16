@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 06/06/2019
 ms.author: maggies
 LocalizationGroup: Data refresh
-ms.openlocfilehash: e09b3f8579b65bc242cda1dbdb54f187ab6b47d0
-ms.sourcegitcommit: 90bd747b7c460d17b74cd386d3f5714234b1f6c9
+ms.openlocfilehash: 622273ed4c8d6f2faee46d3cc84d981f86bd8c92
+ms.sourcegitcommit: 320d83ab392ded71bfda42c5491acab3d9d357b0
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74791609"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74958398"
 ---
 # <a name="configure-scheduled-refresh"></a>Ajoitetun päivityksen määrittäminen
 
@@ -75,7 +75,7 @@ Jos käytössäsi on paikallinen tietoyhdyskäytävä tietojen päivittämiseen,
 Aseta **Pidä tietosi ajan tasalla** -liukusäätimen asetukseksi **Kyllä**, jotta voit määrittää asetukset.
 
 > [!NOTE]
-> Power BI -palvelu pyrkii aloittamaan tietojen päivittämisen **15 minuutin kuluessa** ajoitetusta päivitysajasta.
+> Pyrimme siihen, että päivitys alkaa 15 minuutin sisällä suunnitellusta ajankohdasta, mutta viive voi venyä tunninkin mittaiseksi, jos tarvittavat resurssit eivät ole saatavilla aikaisemmin.
 
 ![Ajoitettu päivitys -valintaikkuna](media/refresh-scheduled-refresh/scheduled-refresh.png)
 
